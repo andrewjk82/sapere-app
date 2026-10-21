@@ -6,7 +6,7 @@
     {
       "topicId": "y7-5a",
       "code": "6A",
-      "title": "Angles and parallel lines",
+      "title": "Points, lines and planes",
       "questions": [
         {
           "id": "174vTcmPNyrWdudcjXbI",
@@ -769,7 +769,7 @@
     {
       "topicId": "y7-5b",
       "code": "6B",
-      "title": "Angles on straight lines",
+      "title": "Intervals, rays and angles",
       "questions": [
         {
           "id": "sgi-y7-2017-q7d-i",
@@ -827,13 +827,66 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 205\" width=\"100%\" style=\"max-width:340px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Lines DC and EF are parallel, intersected by transversal AG at B and H. Angle BHE is 70 degrees, angle ABC is x.\"><rect width=\"350\" height=\"205\" rx=\"10\" fill=\"#fff\"/><line x1=\"88\" y1=\"143\" x2=\"162\" y2=\"37\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"188\" y1=\"170\" x2=\"262\" y2=\"64\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"67\" x2=\"305\" y2=\"138\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M 96.9 121.9 L 105.0 119.0 L 105.1 127.6\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 196.9 148.9 L 205.0 146.0 L 205.1 154.6\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 101.8 83.8 A 24 24 0 0 1 138.8 70.3\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><text x=\"112\" y=\"58\" font-size=\"15\" font-weight=\"600\" fill=\"#334155\" text-anchor=\"middle\">x°</text><path d=\"M 203.8 111.3 A 22 22 0 0 0 212.4 135.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><text x=\"184\" y=\"130\" font-size=\"14\" font-weight=\"600\" fill=\"#334155\" text-anchor=\"middle\">70°</text><text x=\"26\" y=\"69\" font-size=\"15\" font-weight=\"600\" fill=\"#334155\">A</text><text x=\"131\" y=\"108\" font-size=\"15\" font-weight=\"600\" fill=\"#334155\">B</text><text x=\"165\" y=\"32\" font-size=\"15\" font-weight=\"600\" fill=\"#334155\">C</text><text x=\"73\" y=\"156\" font-size=\"15\" fill=\"#334155\">D</text><text x=\"173\" y=\"183\" font-size=\"15\" fill=\"#334155\">E</text><text x=\"232\" y=\"136\" font-size=\"15\" fill=\"#334155\">H</text><text x=\"266\" y=\"59\" font-size=\"15\" fill=\"#334155\">F</text><text x=\"314\" y=\"143\" font-size=\"15\" fill=\"#334155\">G</text><text x=\"175\" y=\"197\" font-size=\"13\" font-weight=\"500\" fill=\"#64748b\" text-anchor=\"middle\">DC ∥ EF</text></svg>"
           }
+        },
+        {
+          "id": "sgi-y7-2013-t3-geo-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which pair of angles is adjacent in the diagram?",
+          "options": [
+            "∠PQS and ∠SQR",
+            "∠PQS and ∠RQO",
+            "∠PQS and ∠PQR",
+            "∠QSR and ∠SQR"
+          ],
+          "answer": 0,
+          "hint": "Adjacent angles share a vertex and one arm, and their interiors do not overlap.",
+          "keyPoints": [
+            {
+              "text": "pair of angles is adjacent",
+              "note": "Look for two neighbouring sectors with a shared arm."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Both angles have the same vertex, Q.",
+              "work": "\\(\\text{Vertex of both angles: }Q\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 165\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Rays from Q form adjacent angles PQS and SQR\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><line x1=\"52\" y1=\"115\" x2=\"190\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"190\" y1=\"115\" x2=\"328\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"190\" y1=\"115\" x2=\"105\" y2=\"40\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"190\" y1=\"115\" x2=\"270\" y2=\"42\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><path d=\"M 165 115 A 25 25 0 0 0 170 101\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.7\"/><path d=\"M 170 101 A 25 25 0 0 1 210 102\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"45\" y=\"135\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#1e293b\">P</text><text x=\"335\" y=\"135\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#1e293b\">O</text><text x=\"190\" y=\"140\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#1e293b\">Q</text><text x=\"99\" y=\"33\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#1e293b\">S</text><text x=\"278\" y=\"34\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#1e293b\">R</text></g></svg>"
+              }
+            },
+            {
+              "explain": "The two sectors lie next to one another and share the ray QS.",
+              "work": "\\(\\text{Shared arm: }QS\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 165\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Rays from Q form adjacent angles PQS and SQR\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><line x1=\"52\" y1=\"115\" x2=\"190\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"190\" y1=\"115\" x2=\"328\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"190\" y1=\"115\" x2=\"105\" y2=\"40\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"190\" y1=\"115\" x2=\"270\" y2=\"42\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><path d=\"M 165 115 A 25 25 0 0 0 170 101\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><path d=\"M 170 101 A 25 25 0 0 1 210 102\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.7\"/><text x=\"45\" y=\"135\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#1e293b\">P</text><text x=\"335\" y=\"135\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#1e293b\">O</text><text x=\"190\" y=\"140\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#1e293b\">Q</text><text x=\"99\" y=\"33\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#1e293b\">S</text><text x=\"278\" y=\"34\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#1e293b\">R</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Name the pair, keeping Q as the middle letter.",
+              "work": "\\(\\angle PQS\\text{ and }\\angle SQR\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 165\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Rays from Q form adjacent angles PQS and SQR\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><line x1=\"52\" y1=\"115\" x2=\"190\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"190\" y1=\"115\" x2=\"328\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"190\" y1=\"115\" x2=\"105\" y2=\"40\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"190\" y1=\"115\" x2=\"270\" y2=\"42\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><path d=\"M 165 115 A 25 25 0 0 0 170 101\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.7\"/><path d=\"M 170 101 A 25 25 0 0 1 210 102\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.7\"/><text x=\"45\" y=\"135\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#1e293b\">P</text><text x=\"335\" y=\"135\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#1e293b\">O</text><text x=\"190\" y=\"140\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#1e293b\">Q</text><text x=\"99\" y=\"33\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#1e293b\">S</text><text x=\"278\" y=\"34\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#1e293b\">R</text></g></svg>"
+              }
+            }
+          ],
+          "solution": "∠PQS and ∠SQR",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Calculator Geometry Q1"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 165\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Rays from Q form adjacent angles PQS and SQR\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><line x1=\"52\" y1=\"115\" x2=\"190\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"190\" y1=\"115\" x2=\"328\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"190\" y1=\"115\" x2=\"105\" y2=\"40\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"190\" y1=\"115\" x2=\"270\" y2=\"42\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><path d=\"M 165 115 A 25 25 0 0 0 170 101\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.7\"/><path d=\"M 170 101 A 25 25 0 0 1 210 102\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.7\"/><text x=\"45\" y=\"135\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#1e293b\">P</text><text x=\"335\" y=\"135\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#1e293b\">O</text><text x=\"190\" y=\"140\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#1e293b\">Q</text><text x=\"99\" y=\"33\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#1e293b\">S</text><text x=\"278\" y=\"34\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#1e293b\">R</text></g></svg>"
+          }
         }
       ]
     },
     {
       "topicId": "y7-5c",
       "code": "6C",
-      "title": "Angles and a full turn",
+      "title": "Measuring angles",
       "questions": [
         {
           "id": "sgi-y7-2017-q8b-ii",
@@ -891,13 +944,67 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 220\" width=\"100%\" style=\"max-width:220px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Spinner with a yellow sector having probability 1/9\"><rect width=\"220\" height=\"220\" rx=\"12\" fill=\"#fff\"/><path d=\"M 110 105 L 84.3 34.5 A 75 75 0 0 1 135.7 34.5 Z\" fill=\"#fde047\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M 110 105 L 135.7 34.5 A 75 75 0 0 1 184.7 111.5 Z\" fill=\"#86efac\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M 110 105 L 184.7 111.5 A 75 75 0 0 1 78.3 173.0 Z\" fill=\"#fca5a5\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M 110 105 L 78.3 173.0 A 75 75 0 0 1 39.5 92.0 Z\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M 110 105 L 39.5 92.0 A 75 75 0 0 1 84.3 34.5 Z\" fill=\"#d8b4fe\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M 101.8 82.4 A 24 24 0 0 1 118.2 82.4\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"110.0\" y=\"74.0\" font-size=\"11\" font-weight=\"700\" fill=\"#b45309\" text-anchor=\"middle\">?°</text><text x=\"110.0\" y=\"51.0\" font-size=\"11\" font-weight=\"700\" fill=\"#78350f\" text-anchor=\"middle\">Yellow</text><circle cx=\"110\" cy=\"105\" r=\"5\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"1.5\"/><text x=\"110\" y=\"204\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\">P(Yellow) = 1/9</text></svg>"
           }
+        },
+        {
+          "id": "sgi-y7-2013-t3-meas-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Use a protractor to measure the obtuse angle shown. Give your answer to the nearest degree.",
+          "options": [
+            "45°",
+            "125°",
+            "145°",
+            "135°"
+          ],
+          "answer": 3,
+          "hint": "Align the protractor baseline with the horizontal ray and read the scale where the upper-left ray passes.",
+          "keyPoints": [
+            {
+              "text": "obtuse angle",
+              "note": "The marked angle is greater than 90° and less than 180°."
+            },
+            {
+              "text": "nearest degree",
+              "note": "Round the measured reading to a whole degree."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the two rays forming the angle.",
+              "work": "\\(\\text{one ray points right; the other points up-left}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 220\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"An obtuse angle with one horizontal ray pointing right and one ray pointing up-left\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><line x1=\"48\" y1=\"170\" x2=\"330\" y2=\"170\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"140\" y1=\"170\" x2=\"70\" y2=\"92\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><path d=\"M 166 170 A 26 26 0 0 0 122 151\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/></g></svg>"
+              }
+            },
+            {
+              "explain": "Read the obtuse sector from the rightward baseline to the up-left ray.",
+              "work": "\\(\\theta\\approx135^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 220\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"An obtuse angle with one horizontal ray pointing right and one ray pointing up-left\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><line x1=\"48\" y1=\"170\" x2=\"330\" y2=\"170\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"140\" y1=\"170\" x2=\"70\" y2=\"92\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><path d=\"M 166 170 A 26 26 0 0 0 122 151\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.8\"/><text x=\"183\" y=\"143\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#d97706\">135°</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Round to the nearest degree.",
+              "work": "\\(\\boxed{135^\\circ}\\)"
+            }
+          ],
+          "solution": "135°",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Calculator Q3"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 220\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"An obtuse angle with one horizontal ray pointing right and one ray pointing up-left\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><line x1=\"48\" y1=\"170\" x2=\"330\" y2=\"170\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"140\" y1=\"170\" x2=\"70\" y2=\"92\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><path d=\"M 166 170 A 26 26 0 0 0 122 151\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/></g></svg>"
+          }
         }
       ]
     },
     {
       "topicId": "y7-5d",
-      "code": "",
-      "title": "",
+      "code": "6D",
+      "title": "Angles at a point – geometric arguments",
       "questions": [
         {
           "id": "y7-t3-2018-p2-q3",
@@ -926,13 +1033,195 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "sgi-y7-2013-t3-geo-q2",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Find the unknown pronumeral in each angle diagram.",
+          "hint": "Use the angle relationship shown: opposite angles are equal; parts of a right angle sum to 90°.",
+          "keyPoints": [
+            {
+              "text": "unknown pronumeral",
+              "note": "Read each diagram’s angle sectors before choosing a rule."
+            }
+          ],
+          "parts": [
+            {
+              "id": "sgi-y7-2013-t3-geo-q2-a",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "In the intersecting-lines diagram, find a.",
+              "options": [
+                "57°",
+                "33°",
+                "147°",
+                "66°"
+              ],
+              "answer": 1,
+              "hint": "The marked angles are opposite each other where two straight lines cross.",
+              "keyPoints": [
+                {
+                  "text": "find a",
+                  "note": "The 33° angle is vertically opposite a, so the angles are equal."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Locate the two opposite sectors at the crossing.",
+                  "work": "\\(\\angle_{left}=33^\\circ\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 230\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Two straight lines cross; 33 degrees and angle a are opposite angles\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><line x1=\"65\" y1=\"78\" x2=\"315\" y2=\"152\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"65\" y1=\"152\" x2=\"315\" y2=\"78\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><path d=\"M 163 107 A 28 28 0 0 0 163 123\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.7\"/><path d=\"M 217 107 A 28 28 0 0 1 217 123\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.7\"/><text x=\"143\" y=\"117\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">33°</text><text x=\"237\" y=\"117\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">a°</text></g></svg>"
+                  }
+                },
+                {
+                  "explain": "Vertically opposite angles are equal.",
+                  "work": "\\(a=33^\\circ\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 230\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Two straight lines cross; 33 degrees and angle a are opposite angles\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><line x1=\"65\" y1=\"78\" x2=\"315\" y2=\"152\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"65\" y1=\"152\" x2=\"315\" y2=\"78\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><path d=\"M 163 107 A 28 28 0 0 0 163 123\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.7\"/><path d=\"M 217 107 A 28 28 0 0 1 217 123\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.7\"/><text x=\"143\" y=\"117\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">33°</text><text x=\"237\" y=\"117\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">a°</text></g></svg>"
+                  }
+                },
+                {
+                  "explain": "State the angle.",
+                  "work": "\\(\\boxed{a=33^\\circ}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 230\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Two straight lines cross; 33 degrees and angle a are opposite angles\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><line x1=\"65\" y1=\"78\" x2=\"315\" y2=\"152\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"65\" y1=\"152\" x2=\"315\" y2=\"78\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><path d=\"M 163 107 A 28 28 0 0 0 163 123\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.7\"/><path d=\"M 217 107 A 28 28 0 0 1 217 123\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.7\"/><text x=\"143\" y=\"117\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">33°</text><text x=\"237\" y=\"117\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">a°</text></g></svg>"
+                  }
+                }
+              ],
+              "solution": "33°",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+                "sourceQuestion": "Calculator Geometry Q2(a)"
+              }
+            },
+            {
+              "id": "sgi-y7-2013-t3-geo-q2-b",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "A right angle is split into angles x, 33° and 28°. Find x.",
+              "options": [
+                "59°",
+                "31°",
+                "29°",
+                "62°"
+              ],
+              "answer": 2,
+              "hint": "The three adjacent angles add to the right angle, which is 90°.",
+              "keyPoints": [
+                {
+                  "text": "right angle",
+                  "note": "The total is 90°."
+                },
+                {
+                  "text": "x, 33° and 28°",
+                  "note": "Add the adjacent parts and set their sum to 90°."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Write the angle sum within the right angle.",
+                  "work": "\\(x+33^\\circ+28^\\circ=90^\\circ\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 215\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"A right angle is divided into x degrees, 33 degrees and 28 degrees\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><line x1=\"85\" y1=\"178\" x2=\"85\" y2=\"50\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"85\" y1=\"178\" x2=\"148\" y2=\"70\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"85\" y1=\"178\" x2=\"202\" y2=\"143\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"85\" y1=\"178\" x2=\"244\" y2=\"178\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><path d=\"M 85 162 L 101 162 L 101 178\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M 85 153 A 25 25 0 0 1 97 156\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.6\"/><path d=\"M 97 156 A 25 25 0 0 1 107 166\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\"/><path d=\"M 107 166 A 25 25 0 0 1 110 178\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\"/><text x=\"96\" y=\"139\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#d97706\">x°</text><text x=\"126\" y=\"143\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#64748b\">33°</text><text x=\"151\" y=\"166\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#64748b\">28°</text></g></svg>"
+                  }
+                },
+                {
+                  "explain": "Combine the known angles.",
+                  "work": "\\(33^\\circ+28^\\circ=61^\\circ\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 215\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"A right angle is divided into x degrees, 33 degrees and 28 degrees\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><line x1=\"85\" y1=\"178\" x2=\"85\" y2=\"50\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"85\" y1=\"178\" x2=\"148\" y2=\"70\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"85\" y1=\"178\" x2=\"202\" y2=\"143\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"85\" y1=\"178\" x2=\"244\" y2=\"178\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><path d=\"M 85 162 L 101 162 L 101 178\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M 85 153 A 25 25 0 0 1 97 156\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\"/><path d=\"M 97 156 A 25 25 0 0 1 107 166\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.6\"/><path d=\"M 107 166 A 25 25 0 0 1 110 178\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\"/><text x=\"96\" y=\"139\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#64748b\">x°</text><text x=\"126\" y=\"143\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#d97706\">33°</text><text x=\"151\" y=\"166\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#64748b\">28°</text></g></svg>"
+                  }
+                },
+                {
+                  "explain": "Subtract from 90 degrees.",
+                  "work": "\\(x=90^\\circ-61^\\circ=29^\\circ\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 215\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"A right angle is divided into x degrees, 33 degrees and 28 degrees\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><line x1=\"85\" y1=\"178\" x2=\"85\" y2=\"50\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"85\" y1=\"178\" x2=\"148\" y2=\"70\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"85\" y1=\"178\" x2=\"202\" y2=\"143\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"85\" y1=\"178\" x2=\"244\" y2=\"178\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><path d=\"M 85 162 L 101 162 L 101 178\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M 85 153 A 25 25 0 0 1 97 156\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\"/><path d=\"M 97 156 A 25 25 0 0 1 107 166\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\"/><path d=\"M 107 166 A 25 25 0 0 1 110 178\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"96\" y=\"139\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#64748b\">x°</text><text x=\"126\" y=\"143\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#64748b\">33°</text><text x=\"151\" y=\"166\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#d97706\">28°</text></g></svg>"
+                  }
+                }
+              ],
+              "solution": "29°",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+                "sourceQuestion": "Calculator Geometry Q2(b)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Calculator Geometry Q2"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 205\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Two angle diagrams: intersecting lines and a right angle divided into three sectors\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><g transform=\"translate(-38,0) scale(.72)\"><line x1=\"65\" y1=\"78\" x2=\"315\" y2=\"152\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"65\" y1=\"152\" x2=\"315\" y2=\"78\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><path d=\"M 163 107 A 28 28 0 0 0 163 123\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.7\"/><path d=\"M 217 107 A 28 28 0 0 1 217 123\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.7\"/><text x=\"143\" y=\"117\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">33°</text><text x=\"237\" y=\"117\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">a°</text></g><g transform=\"translate(210,18) scale(.70)\"><line x1=\"85\" y1=\"178\" x2=\"85\" y2=\"50\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"85\" y1=\"178\" x2=\"148\" y2=\"70\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"85\" y1=\"178\" x2=\"202\" y2=\"143\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"85\" y1=\"178\" x2=\"244\" y2=\"178\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><path d=\"M 85 162 L 101 162 L 101 178\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M 85 153 A 25 25 0 0 1 97 156\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.6\"/><path d=\"M 97 156 A 25 25 0 0 1 107 166\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\"/><path d=\"M 107 166 A 25 25 0 0 1 110 178\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\"/><text x=\"96\" y=\"139\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#d97706\">x°</text><text x=\"126\" y=\"143\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#64748b\">33°</text><text x=\"151\" y=\"166\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#64748b\">28°</text></g><text x=\"105\" y=\"24\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">(a)</text><text x=\"295\" y=\"24\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">(b)</text></g></svg>"
+          }
+        },
+        {
+          "id": "sgi-y7-2013-t3-geo-q4-iii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "On a straight line, angle e° is adjacent to 120°. Find e.",
+          "options": [
+            "30°",
+            "120°",
+            "60°",
+            "240°"
+          ],
+          "answer": 2,
+          "hint": "Adjacent angles on a straight line add to 180°.",
+          "keyPoints": [
+            {
+              "text": "straight line",
+              "note": "A straight angle measures 180°."
+            },
+            {
+              "text": "adjacent to 120°",
+              "note": "Subtract 120° from 180°."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the supplementary angle equation.",
+              "work": "\\(e+120^\\circ=180^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 210\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"An exterior angle e and an adjacent 120 degree angle lie on a straight line\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><line x1=\"45\" y1=\"155\" x2=\"330\" y2=\"155\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"155\" y1=\"155\" x2=\"96\" y2=\"53\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><path d=\"M 133 155 A 22 22 0 0 1 144 136\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\"/><path d=\"M 177 155 A 22 22 0 0 0 144 136\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"180\" y=\"137\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#d97706\">120°</text><text x=\"126\" y=\"130\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#64748b\">e°</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Subtract 120° from both sides.",
+              "work": "\\(e=180^\\circ-120^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 210\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"An exterior angle e and an adjacent 120 degree angle lie on a straight line\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><line x1=\"45\" y1=\"155\" x2=\"330\" y2=\"155\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"155\" y1=\"155\" x2=\"96\" y2=\"53\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><path d=\"M 133 155 A 22 22 0 0 1 144 136\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.6\"/><path d=\"M 177 155 A 22 22 0 0 0 144 136\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\"/><text x=\"180\" y=\"137\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#64748b\">120°</text><text x=\"126\" y=\"130\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#d97706\">e°</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Evaluate.",
+              "work": "\\(e=60^\\circ\\)"
+            }
+          ],
+          "solution": "60°",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Calculator Geometry Q4(iii)"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 210\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"An exterior angle e and an adjacent 120 degree angle lie on a straight line\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><line x1=\"45\" y1=\"155\" x2=\"330\" y2=\"155\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"155\" y1=\"155\" x2=\"96\" y2=\"53\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><path d=\"M 133 155 A 22 22 0 0 1 144 136\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.6\"/><path d=\"M 177 155 A 22 22 0 0 0 144 136\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"180\" y=\"137\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#d97706\">120°</text><text x=\"126\" y=\"130\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#d97706\">e°</text></g></svg>"
+          }
         }
       ]
     },
     {
       "topicId": "y7-5e",
-      "code": "",
-      "title": "",
+      "code": "6E",
+      "title": "Angles associated with transversals",
       "questions": [
         {
           "id": "y7-t3-2018-p2-q4",
@@ -966,9 +1255,73 @@
     },
     {
       "topicId": "y7-5f",
-      "code": "",
-      "title": "",
+      "code": "6F",
+      "title": "Further problems involving parallel lines",
       "questions": []
+    },
+    {
+      "topicId": "y7-5g",
+      "code": "6G",
+      "title": "Proving that two lines are parallel",
+      "questions": [
+        {
+          "id": "sgi-y7-2013-t3-geo-q5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In the diagram, AC and DF are cut by transversal BE. The same-side interior angles are 123° and 60°. Explain why AC and DF are not parallel.",
+          "options": [
+            "The interior same-side angles add to 180°.",
+            "The corresponding angles are both 60°.",
+            "The alternate angles are equal.",
+            "The interior same-side angles add to 183°, not 180°."
+          ],
+          "answer": 3,
+          "hint": "If the lines were parallel, the same-side interior angles would add to 180°. Check the two marked values.",
+          "keyPoints": [
+            {
+              "text": "123°",
+              "note": "This is one of the same-side interior angles."
+            },
+            {
+              "text": "60°",
+              "note": "Add it to 123° and compare the total with 180°."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the same-side interior angles shown by the transversal.",
+              "work": "\\(\\angle CBE=123^\\circ,\\quad\\angle BEF=60^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 230\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Two horizontal lines AC and DF cut by transversal BE; interior angles 123 degrees and 60 degrees are on the same side\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><line x1=\"45\" y1=\"65\" x2=\"335\" y2=\"65\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"165\" x2=\"335\" y2=\"165\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"205\" x2=\"230\" y2=\"20\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><text x=\"78\" y=\"55\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">A</text><text x=\"205\" y=\"55\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">B</text><text x=\"280\" y=\"55\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">C</text><text x=\"78\" y=\"155\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">D</text><text x=\"153\" y=\"155\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">E</text><text x=\"280\" y=\"155\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">F</text><path d=\"M 220 65 A 14 14 0 0 1 198 77\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.6\"/><path d=\"M 166 165 A 14 14 0 0 0 158 153\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\"/><text x=\"224\" y=\"88\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#d97706\">123°</text><text x=\"177\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#64748b\">60°</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Add the two interior angles.",
+              "work": "\\(123^\\circ+60^\\circ=183^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 230\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Two horizontal lines AC and DF cut by transversal BE; interior angles 123 degrees and 60 degrees are on the same side\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><line x1=\"45\" y1=\"65\" x2=\"335\" y2=\"65\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"165\" x2=\"335\" y2=\"165\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"205\" x2=\"230\" y2=\"20\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><text x=\"78\" y=\"55\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">A</text><text x=\"205\" y=\"55\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">B</text><text x=\"280\" y=\"55\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">C</text><text x=\"78\" y=\"155\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">D</text><text x=\"153\" y=\"155\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">E</text><text x=\"280\" y=\"155\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">F</text><path d=\"M 220 65 A 14 14 0 0 1 198 77\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\"/><path d=\"M 166 165 A 14 14 0 0 0 158 153\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"224\" y=\"88\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#64748b\">123°</text><text x=\"177\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#d97706\">60°</text></g></svg>"
+              }
+            },
+            {
+              "explain": "For parallel lines this sum must be 180°; 183° is different, so the lines are not parallel.",
+              "work": "\\(183^\\circ\\ne180^\\circ\\Rightarrow AC\\not\\parallel DF\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 230\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Two horizontal lines AC and DF cut by transversal BE; interior angles 123 degrees and 60 degrees are on the same side\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><line x1=\"45\" y1=\"65\" x2=\"335\" y2=\"65\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"165\" x2=\"335\" y2=\"165\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"205\" x2=\"230\" y2=\"20\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><text x=\"78\" y=\"55\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">A</text><text x=\"205\" y=\"55\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">B</text><text x=\"280\" y=\"55\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">C</text><text x=\"78\" y=\"155\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">D</text><text x=\"153\" y=\"155\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">E</text><text x=\"280\" y=\"155\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">F</text><path d=\"M 220 65 A 14 14 0 0 1 198 77\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.6\"/><path d=\"M 166 165 A 14 14 0 0 0 158 153\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"224\" y=\"88\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#d97706\">123°</text><text x=\"177\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#d97706\">60°</text></g></svg>"
+              }
+            }
+          ],
+          "solution": "The interior same-side angles add to 183°, not 180°.",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Calculator Geometry Q5"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 230\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Two horizontal lines AC and DF cut by transversal BE; interior angles 123 degrees and 60 degrees are on the same side\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><line x1=\"45\" y1=\"65\" x2=\"335\" y2=\"65\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"165\" x2=\"335\" y2=\"165\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"205\" x2=\"230\" y2=\"20\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linecap=\"round\"/><text x=\"78\" y=\"55\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">A</text><text x=\"205\" y=\"55\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">B</text><text x=\"280\" y=\"55\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">C</text><text x=\"78\" y=\"155\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">D</text><text x=\"153\" y=\"155\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">E</text><text x=\"280\" y=\"155\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">F</text><path d=\"M 220 65 A 14 14 0 0 1 198 77\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.6\"/><path d=\"M 166 165 A 14 14 0 0 0 158 153\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"224\" y=\"88\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#d97706\">123°</text><text x=\"177\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#d97706\">60°</text></g></svg>"
+          }
+        }
+      ]
     }
   ]
 }

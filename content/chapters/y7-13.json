@@ -2025,6 +2025,51 @@
           ],
           "timeLimit": 60,
           "xp": 2
+        },
+        {
+          "id": "sgi-y7-2013-t3-calc-q6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate \\((-2.7)^2\\) - \\(\\sqrt{1.69}\\).",
+          "options": [
+            "7.16",
+            "5.99",
+            "−5.99",
+            "6.0"
+          ],
+          "answer": 1,
+          "hint": "Square the entire negative number in brackets, then subtract the positive square root.",
+          "keyPoints": [
+            {
+              "text": "\\((-2.7)^2\\)",
+              "note": "Squaring a negative number gives a positive result."
+            },
+            {
+              "text": "\\(\\sqrt{1.69}\\)",
+              "note": "Use the positive square root."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Square the bracketed decimal.",
+              "work": "\\((-2.7)^2=2.7^2=7.29\\)"
+            },
+            {
+              "explain": "Find the square root.",
+              "work": "\\(\\sqrt{1.69}=1.3\\)"
+            },
+            {
+              "explain": "Subtract.",
+              "work": "\\(7.29-1.3=5.99\\)"
+            }
+          ],
+          "solution": "5.99",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Calculator Q6"
+          }
         }
       ]
     }

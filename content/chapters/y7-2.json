@@ -4005,6 +4005,47 @@
             "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
             "sourceQuestion": "Q1(a)"
           }
+        },
+        {
+          "id": "sgi-y7-2013-t3-nc-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the second prime number?",
+          "options": [
+            "1",
+            "3",
+            "2",
+            "5"
+          ],
+          "answer": 1,
+          "hint": "List the prime numbers from the smallest upwards. Remember that 1 is not prime.",
+          "keyPoints": [
+            {
+              "text": "second prime number",
+              "note": "A prime number has exactly two positive factors."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The first prime is 2; its only positive factors are 1 and 2.",
+              "work": "\\(2\\text{ is prime}\\)"
+            },
+            {
+              "explain": "The next whole number, 3, has only factors 1 and 3.",
+              "work": "\\(3\\text{ is prime}\\)"
+            },
+            {
+              "explain": "So the second prime number is 3.",
+              "work": "\\(\\boxed{3}\\)"
+            }
+          ],
+          "solution": "3",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Non-calculator Q7"
+          }
         }
       ]
     },
@@ -5769,6 +5810,129 @@
             "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
             "sourceQuestion": "Q7(a)(i)"
           }
+        },
+        {
+          "id": "sgi-y7-2013-t3-nc-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write \\(2\\times2\\times2\\times2\\) as a power of 2.",
+          "options": [
+            "\\(2^3\\)",
+            "\\(4^2\\)",
+            "\\(2\\times4\\)",
+            "\\(2^4\\)"
+          ],
+          "answer": 3,
+          "hint": "The base is 2; the exponent counts how many factors of 2 are multiplied.",
+          "keyPoints": [
+            {
+              "text": "\\(2\\times2\\times2\\times2\\)",
+              "note": "Four factors of 2 equal 16."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the repeated factor.",
+              "work": "\\(\\text{Base}=2\\)"
+            },
+            {
+              "explain": "Count the number of factors of 2.",
+              "work": "\\(2\\times2\\times2\\times2\\text{ has 4 factors}\\)"
+            },
+            {
+              "explain": "Write the base with that count as its exponent.",
+              "work": "\\(2\\times2\\times2\\times2=2^4\\)"
+            }
+          ],
+          "solution": "\\(2^4\\)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Non-calculator Q5"
+          }
+        },
+        {
+          "id": "sgi-y7-2013-t3-nc-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write \\(3\\times10^2\\) as a basic numeral.",
+          "options": [
+            "300",
+            "30",
+            "3,000",
+            "103"
+          ],
+          "answer": 0,
+          "hint": "Evaluate the power of ten first, then multiply by 3.",
+          "keyPoints": [
+            {
+              "text": "\\(3\\times10^2\\)",
+              "note": "Use 10²=100."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Evaluate the power.",
+              "work": "\\(10^2=100\\)"
+            },
+            {
+              "explain": "Multiply by 3.",
+              "work": "\\(3\\times100=300\\)"
+            },
+            {
+              "explain": "Write the basic numeral.",
+              "work": "\\(\\boxed{300}\\)"
+            }
+          ],
+          "solution": "300",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Non-calculator Q6"
+          }
+        },
+        {
+          "id": "sgi-y7-2013-t3-nc-q17",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the cube root of \\(2\\times2\\times2\\times3\\times3\\times3\\).",
+          "options": [
+            "6",
+            "5",
+            "12",
+            "216"
+          ],
+          "answer": 0,
+          "hint": "Group the repeated factors as one cube, then take the cube root.",
+          "keyPoints": [
+            {
+              "text": "\\(2\\times2\\times2\\times3\\times3\\times3\\)",
+              "note": "Group the equal prime factors before multiplying."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Group the factors into cubes.",
+              "work": "\\(2\\times2\\times2=2^3,\\quad 3\\times3\\times3=3^3\\)"
+            },
+            {
+              "explain": "Multiply the cube roots of the two groups.",
+              "work": "\\(\\sqrt[3]{2^3\\times3^3}=2\\times3\\)"
+            },
+            {
+              "explain": "Evaluate.",
+              "work": "\\(2\\times3=6\\)"
+            }
+          ],
+          "solution": "6",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Non-calculator Q17"
+          }
         }
       ]
     },
@@ -7335,6 +7499,51 @@
             "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
             "sourceQuestion": "Q8(c)"
           }
+        },
+        {
+          "id": "sgi-y7-2013-t3-nc-q19",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Draw a factor tree for 24.",
+          "answer": "Sample factor tree: \\(24=2\\times12=2\\times2\\times6=2\\times2\\times2\\times3\\). The prime factors are 2, 2, 2 and 3.",
+          "manual": true,
+          "hint": "Start by splitting 24 into two factors, then keep splitting any composite factor until every end value is prime.",
+          "keyPoints": [
+            {
+              "text": "factor tree for 24",
+              "note": "Every branch must end in a prime number."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Choose a factor pair for 24 and place it below the starting number.",
+              "work": "\\(24=2\\times12\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 215\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Blank factor tree for 24\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><text x=\"190\" y=\"28\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#1e293b\">24</text><line x1=\"190\" y1=\"34\" x2=\"120\" y2=\"80\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"190\" y1=\"34\" x2=\"260\" y2=\"80\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"260\" y1=\"86\" x2=\"220\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"260\" y1=\"86\" x2=\"300\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/></g></svg>"
+              }
+            },
+            {
+              "explain": "Split the composite factor 12, then split 6.",
+              "work": "\\(12=2\\times6,\\quad6=2\\times3\\)"
+            },
+            {
+              "explain": "Stop when each leaf is prime and check the product.",
+              "work": "\\(2\\times2\\times2\\times3=24\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 215\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Completed factor tree for 24\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><text x=\"190\" y=\"26\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#1e293b\">24</text><line x1=\"190\" y1=\"32\" x2=\"130\" y2=\"66\" stroke=\"#d97706\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"190\" y1=\"32\" x2=\"250\" y2=\"66\" stroke=\"#d97706\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"130\" y=\"84\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"400\" fill=\"#d97706\">2</text><text x=\"250\" y=\"84\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"400\" fill=\"#d97706\">12</text><line x1=\"250\" y1=\"89\" x2=\"220\" y2=\"122\" stroke=\"#d97706\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"250\" y1=\"89\" x2=\"280\" y2=\"122\" stroke=\"#d97706\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"220\" y=\"140\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"400\" fill=\"#d97706\">2</text><text x=\"280\" y=\"140\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"400\" fill=\"#d97706\">6</text><line x1=\"280\" y1=\"145\" x2=\"263\" y2=\"176\" stroke=\"#d97706\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"280\" y1=\"145\" x2=\"300\" y2=\"176\" stroke=\"#d97706\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"263\" y=\"194\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"400\" fill=\"#d97706\">2</text><text x=\"300\" y=\"194\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"400\" fill=\"#d97706\">3</text></g></svg>"
+              }
+            }
+          ],
+          "solution": "Sample factor tree: \\(24=2\\times12=2\\times2\\times6=2\\times2\\times2\\times3\\). The prime factors are 2, 2, 2 and 3.",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Non-calculator Q19"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 215\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Blank factor tree for 24\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><text x=\"190\" y=\"28\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#1e293b\">24</text><line x1=\"190\" y1=\"34\" x2=\"120\" y2=\"80\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"190\" y1=\"34\" x2=\"260\" y2=\"80\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"260\" y1=\"86\" x2=\"220\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"260\" y1=\"86\" x2=\"300\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/></g></svg>"
+          }
         }
       ]
     },
@@ -8376,6 +8585,47 @@
             "section": "Calculator Number",
             "marks": 1,
             "origin": "teacher"
+          }
+        },
+        {
+          "id": "sgi-y7-2013-t3-nc-q16",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the basic numeral for \\(\\sqrt{144}\\).",
+          "options": [
+            "11",
+            "14",
+            "72",
+            "12"
+          ],
+          "answer": 3,
+          "hint": "Find the positive number that gives 144 when multiplied by itself.",
+          "keyPoints": [
+            {
+              "text": "\\(\\sqrt{144}\\)",
+              "note": "Find the positive number whose square is 144."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look for a square number equal to 144.",
+              "work": "\\(12^2=12\\times12=144\\)"
+            },
+            {
+              "explain": "Therefore its positive square root is 12.",
+              "work": "\\(\\sqrt{144}=12\\)"
+            },
+            {
+              "explain": "State the basic numeral.",
+              "work": "\\(\\boxed{12}\\)"
+            }
+          ],
+          "solution": "12",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Non-calculator Q16"
           }
         }
       ]
@@ -9572,6 +9822,47 @@
             "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
             "sourceQuestion": "Q9(c)"
           }
+        },
+        {
+          "id": "sgi-y7-2013-t3-nc-q20",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the highest common factor (HCF) of 24 and 36.",
+          "options": [
+            "6",
+            "18",
+            "72",
+            "12"
+          ],
+          "answer": 3,
+          "hint": "List or factorise both numbers, then choose the greatest factor they share.",
+          "keyPoints": [
+            {
+              "text": "24 and 36",
+              "note": "List the common factors and select the greatest."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write prime factorizations.",
+              "work": "\\(24=2^3\\times3,\\quad36=2^2\\times3^2\\)"
+            },
+            {
+              "explain": "Use common prime factors with the smaller powers.",
+              "work": "\\(2^2\\times3=4\\times3=12\\)"
+            },
+            {
+              "explain": "State the greatest common factor.",
+              "work": "\\(\\operatorname{HCF}(24,36)=12\\)"
+            }
+          ],
+          "solution": "12",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Non-calculator Q20"
+          }
         }
       ]
     },
@@ -10543,6 +10834,42 @@
               "note": "Add the digits; a number is divisible by 3 when the digit sum is a multiple of 3."
             }
           ]
+        },
+        {
+          "id": "sgi-y7-2013-t3-nc-q22",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Use a divisibility test to explain why 10,704 is divisible by 3. Do not calculate the division.",
+          "answer": "The digit sum is \\(1+0+7+0+4=12\\). Since 12 is divisible by 3, the divisibility test shows that 10,704 is divisible by 3.",
+          "manual": true,
+          "hint": "Add the digits. A whole number is divisible by 3 exactly when its digit sum is divisible by 3.",
+          "keyPoints": [
+            {
+              "text": "10,704 is divisible by 3",
+              "note": "Use the digit-sum test, not long division."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Add the digits of 10,704.",
+              "work": "\\(1+0+7+0+4=12\\)"
+            },
+            {
+              "explain": "Check the digit sum against 3.",
+              "work": "\\(12=3\\times4\\), so 12 is divisible by 3."
+            },
+            {
+              "explain": "Apply the divisibility test to the original number.",
+              "work": "\\(10{,}704\\text{ is divisible by }3\\)"
+            }
+          ],
+          "solution": "The digit sum is \\(1+0+7+0+4=12\\). Since 12 is divisible by 3, the divisibility test shows that 10,704 is divisible by 3.",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Non-calculator Q22"
+          }
         }
       ]
     },

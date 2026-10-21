@@ -5810,6 +5810,150 @@
             "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
             "sourceQuestion": "Q2(e)(ii)"
           }
+        },
+        {
+          "id": "sgi-y7-2013-t3-alg-q5",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Simplify each algebraic expression.",
+          "hint": "Group terms with identical variable parts, then combine their numerical coefficients.",
+          "keyPoints": [
+            {
+              "text": "each algebraic expression",
+              "note": "The two parts are separate simplification tasks."
+            }
+          ],
+          "parts": [
+            {
+              "id": "sgi-y7-2013-t3-alg-q5-a",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Simplify \\(6p-3q-2p+q\\).",
+              "options": [
+                "8p−4q",
+                "4p−2q",
+                "4p−4q",
+                "−4p−2q"
+              ],
+              "answer": 1,
+              "hint": "Collect the p-terms together and the q-terms together.",
+              "keyPoints": [
+                {
+                  "text": "\\(6p-3q-2p+q\\)",
+                  "note": "Group the p-terms and q-terms separately."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Group like terms.",
+                  "work": "\\((6p-2p)+(-3q+q)\\)"
+                },
+                {
+                  "explain": "Subtract the coefficients of p and q.",
+                  "work": "\\(4p-2q\\)"
+                },
+                {
+                  "explain": "Write the simplified expression.",
+                  "work": "\\(6p-3q-2p+q=4p-2q\\)"
+                }
+              ],
+              "solution": "4p−2q",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+                "sourceQuestion": "Algebra Q5(a)"
+              }
+            },
+            {
+              "id": "sgi-y7-2013-t3-alg-q5-b",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Simplify \\(2a^2b+ab-a^2b\\).",
+              "options": [
+                "3a²b",
+                "a²b−ab",
+                "a²b+ab",
+                "ab"
+              ],
+              "answer": 2,
+              "hint": "The first and third terms are like terms; the middle term has a different power of a.",
+              "keyPoints": [
+                {
+                  "text": "\\(2a^2b+ab-a^2b\\)",
+                  "note": "Only the first and last terms are like terms."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Group the like terms.",
+                  "work": "\\((2a^2b-a^2b)+ab\\)"
+                },
+                {
+                  "explain": "Subtract their coefficients.",
+                  "work": "\\(a^2b+ab\\)"
+                },
+                {
+                  "explain": "Keep the unlike term.",
+                  "work": "\\(2a^2b+ab-a^2b=a^2b+ab\\)"
+                }
+              ],
+              "solution": "a²b+ab",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+                "sourceQuestion": "Algebra Q5(b)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Algebra Q5"
+          }
+        },
+        {
+          "id": "sgi-y7-2013-t3-alg-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(\\frac{6x}{-2}+3x+4\\).",
+          "options": [
+            "6x+4",
+            "4",
+            "−6x+4",
+            "−3x+4"
+          ],
+          "answer": 1,
+          "hint": "Divide the coefficient 6 by −2, then combine the like x-terms.",
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{6x}{-2}+3x+4\\)",
+              "note": "Simplify the quotient first, then collect like terms."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Simplify the division term.",
+              "work": "\\(\\frac{6x}{-2}=-3x\\)"
+            },
+            {
+              "explain": "Combine the like terms.",
+              "work": "\\(-3x+3x=0\\)"
+            },
+            {
+              "explain": "Keep the constant.",
+              "work": "\\(0+4=4\\)"
+            }
+          ],
+          "solution": "4",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Algebra Q8"
+          }
         }
       ]
     },
@@ -7479,6 +7623,47 @@
             "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
             "sourceQuestion": "Q4(c)"
           }
+        },
+        {
+          "id": "sgi-y7-2013-t3-alg-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand and simplify \\(4(1-2a)+3a\\).",
+          "options": [
+            "4−8a",
+            "4−11a",
+            "7−8a",
+            "4−5a"
+          ],
+          "answer": 3,
+          "hint": "Multiply 4 by both terms inside the brackets before collecting a-terms.",
+          "keyPoints": [
+            {
+              "text": "\\(4(1-2a)+3a\\)",
+              "note": "Multiply 4 by both terms inside the bracket."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Expand the brackets.",
+              "work": "\\(4(1-2a)=4-8a\\)"
+            },
+            {
+              "explain": "Add the remaining term.",
+              "work": "\\(4-8a+3a\\)"
+            },
+            {
+              "explain": "Combine like terms.",
+              "work": "\\(4-5a\\)"
+            }
+          ],
+          "solution": "4−5a",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Algebra Q6"
+          }
         }
       ]
     },
@@ -8754,6 +8939,47 @@
           "meta": {
             "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
             "sourceQuestion": "Q7(a)(ii)"
+          }
+        },
+        {
+          "id": "sgi-y7-2013-t3-alg-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(5\\times m\\times m\\times m\\times9\\), using index notation.",
+          "options": [
+            "45m³",
+            "45m²",
+            "14m³",
+            "45+3m"
+          ],
+          "answer": 0,
+          "hint": "Multiply the numerical factors and write the three repeated m factors as a power.",
+          "keyPoints": [
+            {
+              "text": "\\(5\\times m\\times m\\times m\\times9\\)",
+              "note": "Multiply the numerical factors and write repeated m factors as a power."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply the number factors.",
+              "work": "\\(5\\times9=45\\)"
+            },
+            {
+              "explain": "Write the repeated variable factors with an exponent.",
+              "work": "\\(m\\times m\\times m=m^3\\)"
+            },
+            {
+              "explain": "Combine the coefficient and variable power.",
+              "work": "\\(45m^3\\)"
+            }
+          ],
+          "solution": "45m³",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Algebra Q7"
           }
         }
       ]
@@ -10466,6 +10692,252 @@
           "meta": {
             "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
             "sourceQuestion": "Q5(c), related parts combined"
+          }
+        },
+        {
+          "id": "sgi-y7-2013-t3-alg-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the next number in the pattern \\(2, 6, 18, \\ldots\\).",
+          "options": [
+            "54",
+            "36",
+            "48",
+            "72"
+          ],
+          "answer": 0,
+          "hint": "Compare consecutive terms to find the operation that repeats.",
+          "keyPoints": [
+            {
+              "text": "2, 6, 18",
+              "note": "Check how each term changes to the next."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Compare the first two terms.",
+              "work": "\\(6\\div2=3\\)"
+            },
+            {
+              "explain": "Check that the same multiplier gives the third term.",
+              "work": "\\(6\\times3=18\\)"
+            },
+            {
+              "explain": "Multiply the latest term by 3.",
+              "work": "\\(18\\times3=54\\)"
+            }
+          ],
+          "solution": "54",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Algebra Q1"
+          }
+        },
+        {
+          "id": "sgi-y7-2013-t3-alg-q3",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The diagram shows a row of joined matchstick squares. Let \\(m\\) be the number of matches and \\(s\\) the number of squares. (a) Complete the counts for 1, 2 and 3 squares. (b) Find a rule for m in terms of s. (c) Find the number of matches for 25 squares.",
+          "hint": "Look at how many new matches are needed when one square is added to the row.",
+          "keyPoints": [
+            {
+              "text": "row of joined matchstick squares",
+              "note": "A new square shares one side with the previous square."
+            },
+            {
+              "text": "25 squares",
+              "note": "Use the general rule rather than drawing all 25 squares."
+            }
+          ],
+          "parts": [
+            {
+              "id": "sgi-y7-2013-t3-alg-q3-a",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "For 1, 2 and 3 joined squares, how many matches are needed in each case?",
+              "options": [
+                "3, 5, 7",
+                "4, 7, 10",
+                "4, 8, 12",
+                "5, 8, 11"
+              ],
+              "answer": 1,
+              "hint": "The first square uses four matches. Every new square shares one side with the previous square.",
+              "keyPoints": [
+                {
+                  "text": "1, 2 and 3 joined squares",
+                  "note": "Adjacent squares share one matchstick side."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Count the matches for one square.",
+                  "work": "\\(m=4\\text{ when }s=1\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 175\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"4 adjacent unit squares made from matchsticks\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><line x1=\"62\" y1=\"71.0\" x2=\"62\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"71.0\" x2=\"120\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"178\" y1=\"71.0\" x2=\"178\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"236\" y1=\"71.0\" x2=\"236\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"294\" y1=\"71.0\" x2=\"294\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"62\" y1=\"71.0\" x2=\"294\" y2=\"71.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"62\" y1=\"129.0\" x2=\"294\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/></g></svg>"
+                  }
+                },
+                {
+                  "explain": "Each extra square adds three new matches because one side is shared.",
+                  "work": "\\(4+3=7,\\quad7+3=10\\)"
+                },
+                {
+                  "explain": "List the counts for 1, 2 and 3 squares.",
+                  "work": "\\(4,\\;7,\\;10\\)"
+                }
+              ],
+              "solution": "4, 7, 10",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+                "sourceQuestion": "Algebra Q3(a)"
+              }
+            },
+            {
+              "id": "sgi-y7-2013-t3-alg-q3-b",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Which rule gives the number of matches m for s joined squares?",
+              "options": [
+                "m=4s",
+                "m=3s+4",
+                "m=3s+1",
+                "m=s+3"
+              ],
+              "answer": 2,
+              "hint": "Use four matches for the first square, then add three for every additional square.",
+              "keyPoints": [
+                {
+                  "text": "number of matches m",
+                  "note": "The rule must give 4 matches when s=1 and increase by 3 each time."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "The first square uses four matches; each further square adds three.",
+                  "work": "\\(m=4+3(s-1)\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 175\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"4 adjacent unit squares made from matchsticks\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><line x1=\"62\" y1=\"71.0\" x2=\"62\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"71.0\" x2=\"120\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"178\" y1=\"71.0\" x2=\"178\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"236\" y1=\"71.0\" x2=\"236\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"294\" y1=\"71.0\" x2=\"294\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"62\" y1=\"71.0\" x2=\"294\" y2=\"71.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"62\" y1=\"129.0\" x2=\"294\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/></g></svg>"
+                  }
+                },
+                {
+                  "explain": "Expand and simplify the expression.",
+                  "work": "\\(m=4+3s-3=3s+1\\)"
+                },
+                {
+                  "explain": "State the rule.",
+                  "work": "\\(m=3s+1\\)"
+                }
+              ],
+              "solution": "m=3s+1",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+                "sourceQuestion": "Algebra Q3(b)"
+              }
+            },
+            {
+              "id": "sgi-y7-2013-t3-alg-q3-c",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "How many matches are required to construct 25 joined squares?",
+              "options": [
+                "75",
+                "100",
+                "73",
+                "76"
+              ],
+              "answer": 3,
+              "hint": "Use the matches rule from the pattern and substitute 25 for the number of squares.",
+              "keyPoints": [
+                {
+                  "text": "25 joined squares",
+                  "note": "Each new square shares one side with the previous square."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Use the rule for a row of joined squares.",
+                  "work": "\\(m=3s+1\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 175\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"4 adjacent unit squares made from matchsticks\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><line x1=\"62\" y1=\"71.0\" x2=\"62\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"71.0\" x2=\"120\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"178\" y1=\"71.0\" x2=\"178\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"236\" y1=\"71.0\" x2=\"236\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"294\" y1=\"71.0\" x2=\"294\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"62\" y1=\"71.0\" x2=\"294\" y2=\"71.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"62\" y1=\"129.0\" x2=\"294\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/></g></svg>"
+                  }
+                },
+                {
+                  "explain": "Substitute \\(s=25\\).",
+                  "work": "\\(m=3(25)+1\\)"
+                },
+                {
+                  "explain": "Calculate the total.",
+                  "work": "\\(m=75+1=76\\text{ matches}\\)"
+                }
+              ],
+              "solution": "76",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+                "sourceQuestion": "Algebra Q3(c)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Algebra Q3"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 175\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"4 adjacent unit squares made from matchsticks\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><line x1=\"62\" y1=\"71.0\" x2=\"62\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"71.0\" x2=\"120\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"178\" y1=\"71.0\" x2=\"178\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"236\" y1=\"71.0\" x2=\"236\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"294\" y1=\"71.0\" x2=\"294\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"62\" y1=\"71.0\" x2=\"294\" y2=\"71.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"62\" y1=\"129.0\" x2=\"294\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/></g></svg>"
+          }
+        },
+        {
+          "id": "sgi-y7-2013-t3-wm-q4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Beads repeat in the colour order red, blue, yellow, green. What colour is the 182nd bead?",
+          "options": [
+            "Red",
+            "Yellow",
+            "Green",
+            "Blue"
+          ],
+          "answer": 3,
+          "hint": "Divide 182 by 4 to find the position within the repeating four-colour cycle.",
+          "keyPoints": [
+            {
+              "text": "red, blue, yellow, green",
+              "note": "The pattern repeats every four beads."
+            },
+            {
+              "text": "182nd bead",
+              "note": "Use the remainder after dividing by 4."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the repeating block length.",
+              "work": "\\(4\\text{ colours per cycle}\\)"
+            },
+            {
+              "explain": "Divide the bead number into complete cycles and a remainder.",
+              "work": "\\(182=4\\times45+2\\)"
+            },
+            {
+              "explain": "Remainder 2 means the second colour in the cycle.",
+              "work": "\\(\\boxed{\\text{blue}}\\)"
+            }
+          ],
+          "solution": "Blue",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Working Mathematically Q4"
           }
         }
       ]

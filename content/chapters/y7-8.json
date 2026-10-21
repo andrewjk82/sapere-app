@@ -2937,6 +2937,309 @@
             "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
             "sourceQuestion": "Q3(c)(i)"
           }
+        },
+        {
+          "id": "sgi-y7-2013-t3-meas-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Give the volume of liquid shown in the measuring jug.",
+          "options": [
+            "1¼ L",
+            "1 L",
+            "1½ L",
+            "¾ L"
+          ],
+          "answer": 0,
+          "hint": "The liquid is halfway between the 1 L and 1½ L marks.",
+          "keyPoints": [
+            {
+              "text": "volume of liquid",
+              "note": "Read the level of the liquid against the scale."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate the liquid surface between the 1 L and 1½ L graduations.",
+              "work": "\\(1\\text{ L}<V<1.5\\text{ L}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 245\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Measuring jug with liquid between the 1 litre and 1.5 litre marks\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><path d=\"M145 32 L235 32 L228 188 Q190 201 152 188 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M153 103 L229 103 L226 182 Q190 191 155 182 Z\" fill=\"#bfdbfe\" stroke=\"none\"/><line x1=\"230\" y1=\"52\" x2=\"247\" y2=\"52\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"260\" y=\"56\" text-anchor=\"start\" font-size=\"11\" font-weight=\"400\" fill=\"#334155\">2 L</text><line x1=\"230\" y1=\"78\" x2=\"247\" y2=\"78\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"260\" y=\"82\" text-anchor=\"start\" font-size=\"11\" font-weight=\"400\" fill=\"#334155\">1½ L</text><line x1=\"230\" y1=\"104\" x2=\"247\" y2=\"104\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"260\" y=\"108\" text-anchor=\"start\" font-size=\"11\" font-weight=\"400\" fill=\"#334155\">1 L</text><line x1=\"230\" y1=\"130\" x2=\"247\" y2=\"130\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"260\" y=\"134\" text-anchor=\"start\" font-size=\"11\" font-weight=\"400\" fill=\"#334155\">½ L</text><line x1=\"233\" y1=\"65\" x2=\"242\" y2=\"65\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"233\" y1=\"91\" x2=\"242\" y2=\"91\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"233\" y1=\"117\" x2=\"242\" y2=\"117\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"153\" y1=\"103\" x2=\"229\" y2=\"103\" stroke=\"#d97706\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"190\" y=\"225\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#d97706\">liquid level</text></g></svg>"
+              }
+            },
+            {
+              "explain": "There are two equal intervals between 1 L and 1½ L; the surface is at the middle graduation.",
+              "work": "\\(1+\\frac{1}{2}(1.5-1)=1.25\\text{ L}\\)"
+            },
+            {
+              "explain": "Write 1.25 L as a mixed number if needed.",
+              "work": "\\(V=1.25\\text{ L}=1\\frac{1}{4}\\text{ L}\\)"
+            }
+          ],
+          "solution": "1¼ L",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Calculator Q1"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 245\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Measuring jug with liquid between the 1 litre and 1.5 litre marks\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><path d=\"M145 32 L235 32 L228 188 Q190 201 152 188 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M153 103 L229 103 L226 182 Q190 191 155 182 Z\" fill=\"#bfdbfe\" stroke=\"none\"/><line x1=\"230\" y1=\"52\" x2=\"247\" y2=\"52\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"260\" y=\"56\" text-anchor=\"start\" font-size=\"11\" font-weight=\"400\" fill=\"#334155\">2 L</text><line x1=\"230\" y1=\"78\" x2=\"247\" y2=\"78\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"260\" y=\"82\" text-anchor=\"start\" font-size=\"11\" font-weight=\"400\" fill=\"#334155\">1½ L</text><line x1=\"230\" y1=\"104\" x2=\"247\" y2=\"104\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"260\" y=\"108\" text-anchor=\"start\" font-size=\"11\" font-weight=\"400\" fill=\"#334155\">1 L</text><line x1=\"230\" y1=\"130\" x2=\"247\" y2=\"130\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"260\" y=\"134\" text-anchor=\"start\" font-size=\"11\" font-weight=\"400\" fill=\"#334155\">½ L</text><line x1=\"233\" y1=\"65\" x2=\"242\" y2=\"65\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"233\" y1=\"91\" x2=\"242\" y2=\"91\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"233\" y1=\"117\" x2=\"242\" y2=\"117\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"153\" y1=\"103\" x2=\"229\" y2=\"103\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/></g></svg>"
+          }
+        },
+        {
+          "id": "sgi-y7-2013-t3-meas-q2",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Use the car dashboard diagram. The odometer’s final digit measures tenths of a kilometre. (a) How far has the car travelled? (b) At what speed is it travelling?",
+          "hint": "Read the odometer and speedometer separately; note the odometer’s final digit is tenths.",
+          "keyPoints": [
+            {
+              "text": "car dashboard",
+              "note": "Read the odometer and speedometer separately; the small dial gives tenths of a kilometre."
+            }
+          ],
+          "parts": [
+            {
+              "id": "sgi-y7-2013-t3-meas-q2-a",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "The odometer’s last digit measures tenths of a kilometre. How far has the car travelled?",
+              "options": [
+                "8,105.76 km",
+                "81,057.6 km",
+                "810,576 km",
+                "81,057 km"
+              ],
+              "answer": 1,
+              "hint": "Read the odometer digits from left to right; the final digit is tenths because the question says so.",
+              "keyPoints": [
+                {
+                  "text": "last digit measures tenths of a kilometre",
+                  "note": "Read the final wheel as the tenths digit."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Read the digits shown on the odometer.",
+                  "work": "\\(081057.6\\text{ km}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 390 235\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Car dashboard odometer reads 081057.6 kilometres and speedometer needle indicates 30 kilometres per hour\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><rect x=\"20\" y=\"28\" width=\"340\" height=\"185\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"106\" y=\"57\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#64748b\">ODOMETER</text><rect x=\"40\" y=\"68\" width=\"132\" height=\"43\" rx=\"4\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.2\"/><text x=\"49\" y=\"97\" text-anchor=\"start\" font-size=\"18\" font-weight=\"700\" fill=\"#1e293b\">0</text><text x=\"64\" y=\"97\" text-anchor=\"start\" font-size=\"18\" font-weight=\"700\" fill=\"#1e293b\">8</text><text x=\"79\" y=\"97\" text-anchor=\"start\" font-size=\"18\" font-weight=\"700\" fill=\"#1e293b\">1</text><text x=\"94\" y=\"97\" text-anchor=\"start\" font-size=\"18\" font-weight=\"700\" fill=\"#1e293b\">0</text><text x=\"109\" y=\"97\" text-anchor=\"start\" font-size=\"18\" font-weight=\"700\" fill=\"#1e293b\">5</text><text x=\"124\" y=\"97\" text-anchor=\"start\" font-size=\"18\" font-weight=\"700\" fill=\"#1e293b\">7</text><text x=\"139\" y=\"97\" text-anchor=\"start\" font-size=\"18\" font-weight=\"700\" fill=\"#1e293b\">.</text><text x=\"154\" y=\"97\" text-anchor=\"start\" font-size=\"18\" font-weight=\"700\" fill=\"#1e293b\">6</text><text x=\"160\" y=\"124\" text-anchor=\"start\" font-size=\"10\" font-weight=\"400\" fill=\"#64748b\">km</text><text x=\"270\" y=\"57\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#64748b\">SPEED</text><path d=\"M215 160 A58 58 0 0 1 333 160\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"226.0\" y1=\"160.0\" x2=\"219.0\" y2=\"160.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"206.0\" y=\"164.0\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"400\" fill=\"#1e293b\">0</text><line x1=\"240.1\" y1=\"126.1\" x2=\"235.1\" y2=\"121.1\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"225.9\" y=\"115.9\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"400\" fill=\"#1e293b\">20</text><line x1=\"274.0\" y1=\"112.0\" x2=\"274.0\" y2=\"105.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"274.0\" y=\"96.0\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"400\" fill=\"#1e293b\">40</text><line x1=\"307.9\" y1=\"126.1\" x2=\"312.9\" y2=\"121.1\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"322.1\" y=\"115.9\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"400\" fill=\"#1e293b\">60</text><line x1=\"322.0\" y1=\"160.0\" x2=\"329.0\" y2=\"160.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"342.0\" y=\"164.0\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"400\" fill=\"#1e293b\">80</text><line x1=\"274\" y1=\"160\" x2=\"251\" y2=\"110\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><circle cx=\"274\" cy=\"160\" r=\"4\" fill=\"#334155\"/></g></svg>"
+                  }
+                },
+                {
+                  "explain": "The leading zero does not change the value.",
+                  "work": "\\(081057.6=81{,}057.6\\)"
+                },
+                {
+                  "explain": "Include the distance unit.",
+                  "work": "\\(81{,}057.6\\text{ km}\\)"
+                }
+              ],
+              "solution": "81,057.6 km",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+                "sourceQuestion": "Calculator Q2(a)"
+              }
+            },
+            {
+              "id": "sgi-y7-2013-t3-meas-q2-b",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "At what speed is the car travelling?",
+              "options": [
+                "20 km/h",
+                "40 km/h",
+                "30 km/h",
+                "60 km/h"
+              ],
+              "answer": 2,
+              "hint": "Read the pointer value on the speedometer scale.",
+              "keyPoints": [
+                {
+                  "text": "At what speed",
+                  "note": "Use the gauge on the right, not the odometer."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Locate the pointer between the 20 and 40 km/h marks.",
+                  "work": "\\(20< v <40\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 390 235\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Car dashboard odometer reads 081057.6 kilometres and speedometer needle indicates 30 kilometres per hour\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><rect x=\"20\" y=\"28\" width=\"340\" height=\"185\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"106\" y=\"57\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#64748b\">ODOMETER</text><rect x=\"40\" y=\"68\" width=\"132\" height=\"43\" rx=\"4\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.2\"/><text x=\"49\" y=\"97\" text-anchor=\"start\" font-size=\"18\" font-weight=\"700\" fill=\"#1e293b\">0</text><text x=\"64\" y=\"97\" text-anchor=\"start\" font-size=\"18\" font-weight=\"700\" fill=\"#1e293b\">8</text><text x=\"79\" y=\"97\" text-anchor=\"start\" font-size=\"18\" font-weight=\"700\" fill=\"#1e293b\">1</text><text x=\"94\" y=\"97\" text-anchor=\"start\" font-size=\"18\" font-weight=\"700\" fill=\"#1e293b\">0</text><text x=\"109\" y=\"97\" text-anchor=\"start\" font-size=\"18\" font-weight=\"700\" fill=\"#1e293b\">5</text><text x=\"124\" y=\"97\" text-anchor=\"start\" font-size=\"18\" font-weight=\"700\" fill=\"#1e293b\">7</text><text x=\"139\" y=\"97\" text-anchor=\"start\" font-size=\"18\" font-weight=\"700\" fill=\"#1e293b\">.</text><text x=\"154\" y=\"97\" text-anchor=\"start\" font-size=\"18\" font-weight=\"700\" fill=\"#1e293b\">6</text><text x=\"160\" y=\"124\" text-anchor=\"start\" font-size=\"10\" font-weight=\"400\" fill=\"#64748b\">km</text><text x=\"270\" y=\"57\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#64748b\">SPEED</text><path d=\"M215 160 A58 58 0 0 1 333 160\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"226.0\" y1=\"160.0\" x2=\"219.0\" y2=\"160.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"206.0\" y=\"164.0\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"400\" fill=\"#1e293b\">0</text><line x1=\"240.1\" y1=\"126.1\" x2=\"235.1\" y2=\"121.1\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"225.9\" y=\"115.9\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"400\" fill=\"#1e293b\">20</text><line x1=\"274.0\" y1=\"112.0\" x2=\"274.0\" y2=\"105.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"274.0\" y=\"96.0\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"400\" fill=\"#1e293b\">40</text><line x1=\"307.9\" y1=\"126.1\" x2=\"312.9\" y2=\"121.1\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"322.1\" y=\"115.9\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"400\" fill=\"#1e293b\">60</text><line x1=\"322.0\" y1=\"160.0\" x2=\"329.0\" y2=\"160.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"342.0\" y=\"164.0\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"400\" fill=\"#1e293b\">80</text><line x1=\"274\" y1=\"160\" x2=\"251\" y2=\"110\" stroke=\"#d97706\" stroke-width=\"2\" stroke-linecap=\"round\"/><circle cx=\"274\" cy=\"160\" r=\"4\" fill=\"#334155\"/></g></svg>"
+                  }
+                },
+                {
+                  "explain": "The pointer is halfway between those marks.",
+                  "work": "\\(v=20+\\frac{1}{2}(40-20)=30\\)"
+                },
+                {
+                  "explain": "State the speed with units.",
+                  "work": "\\(v=30\\text{ km/h}\\)"
+                }
+              ],
+              "solution": "30 km/h",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+                "sourceQuestion": "Calculator Q2(b)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Calculator Q2"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 390 235\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Car dashboard odometer reads 081057.6 kilometres and speedometer needle indicates 30 kilometres per hour\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><rect x=\"20\" y=\"28\" width=\"340\" height=\"185\" rx=\"14\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"106\" y=\"57\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#64748b\">ODOMETER</text><rect x=\"40\" y=\"68\" width=\"132\" height=\"43\" rx=\"4\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.2\"/><text x=\"49\" y=\"97\" text-anchor=\"start\" font-size=\"18\" font-weight=\"700\" fill=\"#1e293b\">0</text><text x=\"64\" y=\"97\" text-anchor=\"start\" font-size=\"18\" font-weight=\"700\" fill=\"#1e293b\">8</text><text x=\"79\" y=\"97\" text-anchor=\"start\" font-size=\"18\" font-weight=\"700\" fill=\"#1e293b\">1</text><text x=\"94\" y=\"97\" text-anchor=\"start\" font-size=\"18\" font-weight=\"700\" fill=\"#1e293b\">0</text><text x=\"109\" y=\"97\" text-anchor=\"start\" font-size=\"18\" font-weight=\"700\" fill=\"#1e293b\">5</text><text x=\"124\" y=\"97\" text-anchor=\"start\" font-size=\"18\" font-weight=\"700\" fill=\"#1e293b\">7</text><text x=\"139\" y=\"97\" text-anchor=\"start\" font-size=\"18\" font-weight=\"700\" fill=\"#1e293b\">.</text><text x=\"154\" y=\"97\" text-anchor=\"start\" font-size=\"18\" font-weight=\"700\" fill=\"#1e293b\">6</text><text x=\"160\" y=\"124\" text-anchor=\"start\" font-size=\"10\" font-weight=\"400\" fill=\"#64748b\">km</text><text x=\"270\" y=\"57\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#64748b\">SPEED</text><path d=\"M215 160 A58 58 0 0 1 333 160\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"226.0\" y1=\"160.0\" x2=\"219.0\" y2=\"160.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"206.0\" y=\"164.0\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"400\" fill=\"#1e293b\">0</text><line x1=\"240.1\" y1=\"126.1\" x2=\"235.1\" y2=\"121.1\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"225.9\" y=\"115.9\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"400\" fill=\"#1e293b\">20</text><line x1=\"274.0\" y1=\"112.0\" x2=\"274.0\" y2=\"105.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"274.0\" y=\"96.0\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"400\" fill=\"#1e293b\">40</text><line x1=\"307.9\" y1=\"126.1\" x2=\"312.9\" y2=\"121.1\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"322.1\" y=\"115.9\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"400\" fill=\"#1e293b\">60</text><line x1=\"322.0\" y1=\"160.0\" x2=\"329.0\" y2=\"160.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"342.0\" y=\"164.0\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"400\" fill=\"#1e293b\">80</text><line x1=\"274\" y1=\"160\" x2=\"251\" y2=\"110\" stroke=\"#d97706\" stroke-width=\"2\" stroke-linecap=\"round\"/><circle cx=\"274\" cy=\"160\" r=\"4\" fill=\"#334155\"/></g></svg>"
+          }
+        },
+        {
+          "id": "sgi-y7-2013-t3-meas-q4",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Convert each measurement to the requested unit.",
+          "hint": "Use the correct conversion factor for each pair of units, then multiply or divide.",
+          "keyPoints": [
+            {
+              "text": "Convert each measurement",
+              "note": "The target unit tells you which conversion to use."
+            }
+          ],
+          "parts": [
+            {
+              "id": "sgi-y7-2013-t3-meas-q4-a",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Convert 1½ metres to centimetres.",
+              "options": [
+                "150 cm",
+                "15 cm",
+                "1,500 cm",
+                "0.15 cm"
+              ],
+              "answer": 0,
+              "hint": "Use 100 centimetres for every metre.",
+              "keyPoints": [
+                {
+                  "text": "1½ metres",
+                  "note": "Convert metres to centimetres by multiplying by 100."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Use the conversion factor.",
+                  "work": "\\(1\\text{ m}=100\\text{ cm}\\)"
+                },
+                {
+                  "explain": "Convert the mixed number to a decimal and multiply.",
+                  "work": "\\(1.5\\times100=150\\)"
+                },
+                {
+                  "explain": "State the length.",
+                  "work": "\\(1\\frac{1}{2}\\text{ m}=150\\text{ cm}\\)"
+                }
+              ],
+              "solution": "150 cm",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+                "sourceQuestion": "Calculator Q4(a)"
+              }
+            },
+            {
+              "id": "sgi-y7-2013-t3-meas-q4-b",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Convert 9,400 kilograms to tonnes.",
+              "options": [
+                "0.94 t",
+                "9.4 t",
+                "94 t",
+                "940 t"
+              ],
+              "answer": 1,
+              "hint": "Use 1 tonne = 1,000 kilograms and divide by 1,000.",
+              "keyPoints": [
+                {
+                  "text": "9,400 kilograms",
+                  "note": "There are 1,000 kilograms in one tonne, so divide by 1,000."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Use the kilogram-to-tonne relationship.",
+                  "work": "\\(1\\text{ t}=1{,}000\\text{ kg}\\)"
+                },
+                {
+                  "explain": "Divide the number of kilograms by 1,000.",
+                  "work": "\\(9{,}400\\div1{,}000=9.4\\)"
+                },
+                {
+                  "explain": "State the mass.",
+                  "work": "\\(9{,}400\\text{ kg}=9.4\\text{ t}\\)"
+                }
+              ],
+              "solution": "9.4 t",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+                "sourceQuestion": "Calculator Q4(b)"
+              }
+            },
+            {
+              "id": "sgi-y7-2013-t3-meas-q4-c",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Convert 1.25 metres to kilometres.",
+              "options": [
+                "0.0125 km",
+                "1,250 km",
+                "0.00125 km",
+                "0.125 km"
+              ],
+              "answer": 2,
+              "hint": "There are 1,000 metres in one kilometre, so divide by 1,000.",
+              "keyPoints": [
+                {
+                  "text": "1.25 metres",
+                  "note": "Convert metres to kilometres by dividing by 1,000."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Use the length conversion.",
+                  "work": "\\(1\\text{ km}=1{,}000\\text{ m}\\)"
+                },
+                {
+                  "explain": "Divide metres by 1,000.",
+                  "work": "\\(1.25\\div1{,}000=0.00125\\)"
+                },
+                {
+                  "explain": "State the converted length.",
+                  "work": "\\(1.25\\text{ m}=0.00125\\text{ km}\\)"
+                }
+              ],
+              "solution": "0.00125 km",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+                "sourceQuestion": "Calculator Q4(c)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Calculator Q4"
+          }
         }
       ]
     },
@@ -3606,6 +3909,207 @@
             "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
             "sourceQuestion": "Q8(a)"
           }
+        },
+        {
+          "id": "sgi-y7-2013-t3-calc-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Five full buses carried spectators to the NSW Netball finals. Each bus held 100 people including the driver. How many spectators were there?",
+          "options": [
+            "495",
+            "500",
+            "505",
+            "490"
+          ],
+          "answer": 0,
+          "hint": "Subtract one driver from each bus before multiplying by the five buses.",
+          "keyPoints": [
+            {
+              "text": "Five full buses",
+              "note": "Count spectators, so do not include the drivers."
+            },
+            {
+              "text": "100 people including the driver",
+              "note": "Each bus carries 99 spectators."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the spectators on one bus.",
+              "work": "\\(100-1=99\\)"
+            },
+            {
+              "explain": "Multiply by the five buses.",
+              "work": "\\(5\\times99=495\\)"
+            },
+            {
+              "explain": "State the total number of spectators.",
+              "work": "\\(\\boxed{495}\\)"
+            }
+          ],
+          "solution": "495",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Calculator Q2"
+          }
+        },
+        {
+          "id": "sgi-y7-2013-t3-calc-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Petrol costs 137 cents per litre. Annie buys 12 litres. How much does it cost to the nearest cent?",
+          "options": [
+            "$1.64",
+            "$16.44",
+            "$164.40",
+            "$16.40"
+          ],
+          "answer": 1,
+          "hint": "Multiply the cents-per-litre price by 12 litres, then convert cents to dollars.",
+          "keyPoints": [
+            {
+              "text": "137 cents per litre",
+              "note": "Multiply the unit price by the number of litres."
+            },
+            {
+              "text": "12 litres",
+              "note": "There are 100 cents in one dollar."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply the price by the number of litres.",
+              "work": "\\(137\\times12=1{,}644\\text{ cents}\\)"
+            },
+            {
+              "explain": "Convert cents to dollars.",
+              "work": "\\(1{,}644\\div100=16.44\\)"
+            },
+            {
+              "explain": "Give the cost to the nearest cent.",
+              "work": "\\(\\boxed{\\$16.44}\\)"
+            }
+          ],
+          "solution": "$16.44",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Calculator Q3"
+          }
+        },
+        {
+          "id": "sgi-y7-2013-t3-calc-q4",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Each tin of paint covers 100 square metres. John needs to cover 460 square metres. (a) How many full tins are needed? (b) If each tin costs $27.55 and only full tins can be bought, what is the total cost?",
+          "hint": "First find the whole number of tins required. Use that count to calculate the price.",
+          "keyPoints": [
+            {
+              "text": "Each tin of paint covers 100 square metres",
+              "note": "This is the coverage rate."
+            },
+            {
+              "text": "460 square metres",
+              "note": "The required area determines how many tins to buy."
+            }
+          ],
+          "parts": [
+            {
+              "id": "sgi-y7-2013-t3-calc-q4-a",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "How many full tins of paint are needed to cover 460 square metres if each tin covers 100 square metres?",
+              "options": [
+                "4 tins",
+                "4.6 tins",
+                "5 tins",
+                "6 tins"
+              ],
+              "answer": 2,
+              "hint": "Divide the total area by the area covered by one tin, then round up because only full tins can be bought.",
+              "keyPoints": [
+                {
+                  "text": "460 square metres",
+                  "note": "This is the area to cover."
+                },
+                {
+                  "text": "100 square metres",
+                  "note": "This is the coverage from each tin."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Divide the required area by the coverage per tin.",
+                  "work": "\\(460\\div100=4.6\\text{ tins}\\)"
+                },
+                {
+                  "explain": "A fraction of a tin is not enough; round up to the next whole tin.",
+                  "work": "\\(\\lceil4.6\\rceil=5\\)"
+                },
+                {
+                  "explain": "The number of full tins required is 5.",
+                  "work": "\\(\\boxed{5\\text{ tins}}\\)"
+                }
+              ],
+              "solution": "5 tins",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+                "sourceQuestion": "Calculator Q4(a)"
+              }
+            },
+            {
+              "id": "sgi-y7-2013-t3-calc-q4-b",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Each tin costs $27.55. What is the total cost for the full tins required?",
+              "options": [
+                "$110.20",
+                "$126.50",
+                "$165.30",
+                "$137.75"
+              ],
+              "answer": 3,
+              "hint": "Use the five full tins needed, then multiply by the price of one tin.",
+              "keyPoints": [
+                {
+                  "text": "Each tin costs $27.55",
+                  "note": "Multiply this price by the number of whole tins."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Use the full-tin count needed for 460 square metres.",
+                  "work": "\\(5\\text{ tins}\\)"
+                },
+                {
+                  "explain": "Multiply the cost per tin by 5.",
+                  "work": "\\(5\\times\\$27.55=\\$137.75\\)"
+                },
+                {
+                  "explain": "State the total cost.",
+                  "work": "\\(\\boxed{\\$137.75}\\)"
+                }
+              ],
+              "solution": "$137.75",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+                "sourceQuestion": "Calculator Q4(b)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Calculator Q4"
+          }
         }
       ]
     },
@@ -4148,6 +4652,59 @@
           },
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 300\" width=\"100%\" role=\"img\" aria-label=\"Stepped rectilinear shape with sides 7 metres, 6 metres, 10 metres and a 2 metre top step\"><rect width=\"440\" height=\"300\" rx=\"12\" fill=\"#fff\"/><path d=\"M100 235 L340 235 L340 95 L148 95 L148 70 L100 70 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"4\" stroke-linejoin=\"round\"/><text x=\"220\" y=\"265\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">10 m</text><text x=\"360\" y=\"170\" font-size=\"18\" fill=\"#334155\">6 m</text><text x=\"64\" y=\"157\" font-size=\"18\" fill=\"#334155\">7 m</text><text x=\"113\" y=\"58\" font-size=\"18\" fill=\"#334155\">2 m</text><text x=\"240\" y=\"82\" font-size=\"18\" fill=\"#334155\">8 m</text><text x=\"154\" y=\"78\" font-size=\"15\" fill=\"#334155\">1 m</text></svg>"
+          }
+        },
+        {
+          "id": "sgi-y7-2013-t3-meas-q5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the perimeter of the rectilinear shape shown. All angles are right angles and lengths are in centimetres.",
+          "options": [
+            "28 cm",
+            "30 cm",
+            "34 cm",
+            "32 cm"
+          ],
+          "answer": 3,
+          "hint": "Find the two missing boundary lengths from the total width and height, then add every outside edge.",
+          "keyPoints": [
+            {
+              "text": "rectilinear shape",
+              "note": "Add every outside edge. Find missing lengths by subtracting the known parallel segments from the total width or height."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use equal total heights to find the unlabelled inner vertical edge.",
+              "work": "\\(4-2=2\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 190\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Rectilinear shape with 10 centimetre top, 4 centimetre left side, and a rectangular notch\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><path d=\"M65 50 H285 V138 H197 V94 H131 V138 H65 Z\" fill=\"#dbeafe\" stroke=\"none\"/><line x1=\"65\" y1=\"50\" x2=\"285\" y2=\"50\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"285\" y1=\"50\" x2=\"285\" y2=\"138\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"285\" y1=\"138\" x2=\"197\" y2=\"138\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"197\" y1=\"138\" x2=\"197\" y2=\"94\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"197\" y1=\"94\" x2=\"131\" y2=\"94\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"131\" y1=\"94\" x2=\"131\" y2=\"138\" stroke=\"#d97706\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"131\" y1=\"138\" x2=\"65\" y2=\"138\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"65\" y1=\"138\" x2=\"65\" y2=\"50\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><text x=\"175\" y=\"42\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">10</text><text x=\"55\" y=\"94\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">4</text><text x=\"98\" y=\"155\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">3</text><text x=\"164\" y=\"86\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">3</text><text x=\"208\" y=\"116\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#d97706\">2</text><text x=\"119\" y=\"118\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#d97706\">2</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Use the full width to find the unlabelled lower-right edge.",
+              "work": "\\(10-3-3=4\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 190\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Rectilinear shape with 10 centimetre top, 4 centimetre left side, and a rectangular notch\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><path d=\"M65 50 H285 V138 H197 V94 H131 V138 H65 Z\" fill=\"#dbeafe\" stroke=\"none\"/><line x1=\"65\" y1=\"50\" x2=\"285\" y2=\"50\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"285\" y1=\"50\" x2=\"285\" y2=\"138\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"285\" y1=\"138\" x2=\"197\" y2=\"138\" stroke=\"#d97706\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"197\" y1=\"138\" x2=\"197\" y2=\"94\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"197\" y1=\"94\" x2=\"131\" y2=\"94\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"131\" y1=\"94\" x2=\"131\" y2=\"138\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"131\" y1=\"138\" x2=\"65\" y2=\"138\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"65\" y1=\"138\" x2=\"65\" y2=\"50\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><text x=\"175\" y=\"42\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">10</text><text x=\"55\" y=\"94\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">4</text><text x=\"98\" y=\"155\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">3</text><text x=\"164\" y=\"86\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">3</text><text x=\"208\" y=\"116\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">2</text><text x=\"241\" y=\"154\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#d97706\">4</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Add all boundary lengths, including both notch sides.",
+              "work": "\\(10+4+4+2+3+2+3+4=32\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 190\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Rectilinear shape with 10 centimetre top, 4 centimetre left side, and a rectangular notch\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><path d=\"M65 50 H285 V138 H197 V94 H131 V138 H65 Z\" fill=\"#dbeafe\" stroke=\"none\"/><line x1=\"65\" y1=\"50\" x2=\"285\" y2=\"50\" stroke=\"#d97706\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"285\" y1=\"50\" x2=\"285\" y2=\"138\" stroke=\"#d97706\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"285\" y1=\"138\" x2=\"197\" y2=\"138\" stroke=\"#d97706\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"197\" y1=\"138\" x2=\"197\" y2=\"94\" stroke=\"#d97706\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"197\" y1=\"94\" x2=\"131\" y2=\"94\" stroke=\"#d97706\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"131\" y1=\"94\" x2=\"131\" y2=\"138\" stroke=\"#d97706\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"131\" y1=\"138\" x2=\"65\" y2=\"138\" stroke=\"#d97706\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"65\" y1=\"138\" x2=\"65\" y2=\"50\" stroke=\"#d97706\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><text x=\"175\" y=\"42\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#d97706\">10</text><text x=\"55\" y=\"94\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#d97706\">4</text><text x=\"98\" y=\"155\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#d97706\">3</text><text x=\"164\" y=\"86\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#d97706\">3</text><text x=\"208\" y=\"116\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#d97706\">2</text><text x=\"241\" y=\"154\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#d97706\">4</text></g></svg>"
+              }
+            }
+          ],
+          "solution": "32 cm",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Calculator Q5"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 190\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Rectilinear shape with 10 centimetre top, 4 centimetre left side, and a rectangular notch\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><path d=\"M65 50 H285 V138 H197 V94 H131 V138 H65 Z\" fill=\"#dbeafe\" stroke=\"none\"/><line x1=\"65\" y1=\"50\" x2=\"285\" y2=\"50\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"285\" y1=\"50\" x2=\"285\" y2=\"138\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"285\" y1=\"138\" x2=\"197\" y2=\"138\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"197\" y1=\"138\" x2=\"197\" y2=\"94\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"197\" y1=\"94\" x2=\"131\" y2=\"94\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"131\" y1=\"94\" x2=\"131\" y2=\"138\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"131\" y1=\"138\" x2=\"65\" y2=\"138\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"65\" y1=\"138\" x2=\"65\" y2=\"50\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><text x=\"175\" y=\"42\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">10</text><text x=\"55\" y=\"94\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">4</text><text x=\"98\" y=\"155\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">3</text><text x=\"164\" y=\"86\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">3</text><text x=\"208\" y=\"116\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">2</text></g></svg>"
           }
         }
       ]
@@ -5307,6 +5864,139 @@
           "meta": {
             "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
             "sourceQuestion": "Q10(b)"
+          }
+        },
+        {
+          "id": "sgi-y7-2013-t3-meas-q6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What date and time is 7 hours 45 minutes after 10:20 pm on 15 February 2013?",
+          "options": [
+            "6:05 am, 16 February 2013",
+            "5:05 am, 16 February 2013",
+            "6:05 am, 15 February 2013",
+            "10:05 am, 16 February 2013"
+          ],
+          "answer": 0,
+          "hint": "Add the hours first, cross midnight if needed, then add the remaining minutes.",
+          "keyPoints": [
+            {
+              "text": "10:20 pm on 15 February 2013",
+              "note": "Convert 10:20 pm to 22:20 before adding."
+            },
+            {
+              "text": "7 hours 45 minutes after",
+              "note": "The result passes midnight into the following date."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Convert the starting time to 24-hour time.",
+              "work": "\\(10{:}20\\text{ pm}=22{:}20\\)"
+            },
+            {
+              "explain": "Add 7 hours to reach the next morning.",
+              "work": "\\(22{:}20+7{:}00=05{:}20\\text{ on 16 February}\\)"
+            },
+            {
+              "explain": "Add 45 minutes.",
+              "work": "\\(05{:}20+00{:}45=06{:}05\\text{ on 16 February 2013}\\)"
+            }
+          ],
+          "solution": "6:05 am, 16 February 2013",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Calculator Q6"
+          }
+        },
+        {
+          "id": "sgi-y7-2013-t3-meas-q7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If it is 1:30 pm EST in NSW, what time is it in South Australia (SA)?",
+          "options": [
+            "12:30 pm",
+            "1:00 pm",
+            "1:30 pm",
+            "3:30 pm"
+          ],
+          "answer": 1,
+          "hint": "The diagram shows Central time is half an hour behind EST. Subtract 30 minutes.",
+          "keyPoints": [
+            {
+              "text": "1:30 pm EST",
+              "note": "South Australia is 30 minutes behind NSW in daylight-saving time in this question."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the time-zone relationship from the map.",
+              "work": "\\(\\text{Central time} = \\text{EST}-30\\text{ minutes}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 230\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Schematic Australian time-zone map: Western time is two hours behind EST; Central time is half an hour behind EST; SA is in Central time\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><path d=\"M66 65 L102 37 L147 42 L177 25 L207 42 L251 39 L294 66 L315 105 L299 139 L273 154 L252 179 L212 171 L177 187 L151 169 L117 175 L85 152 L67 121 L48 98 Z\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M175 42 L175 170 M235 42 L235 170\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/><text x=\"108\" y=\"100\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#475569\">WESTERN</text><text x=\"108\" y=\"117\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#1e293b\">2 h behind EST</text><text x=\"204\" y=\"99\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#475569\">CENTRAL</text><text x=\"204\" y=\"116\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#d97706\">½ h behind EST</text><text x=\"274\" y=\"99\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#475569\">EST</text><text x=\"204\" y=\"207\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#d97706\">SA is in the Central zone</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Subtract half an hour from 1:30 pm.",
+              "work": "\\(1{:}30\\text{ pm}-0{:}30=1{:}00\\text{ pm}\\)"
+            },
+            {
+              "explain": "State SA local time.",
+              "work": "\\(\\boxed{1{:}00\\text{ pm}}\\)"
+            }
+          ],
+          "solution": "1:00 pm",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Calculator Q7"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 230\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Schematic Australian time-zone map: Western time is two hours behind EST; Central time is half an hour behind EST; SA is in Central time\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><path d=\"M66 65 L102 37 L147 42 L177 25 L207 42 L251 39 L294 66 L315 105 L299 139 L273 154 L252 179 L212 171 L177 187 L151 169 L117 175 L85 152 L67 121 L48 98 Z\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M175 42 L175 170 M235 42 L235 170\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/><text x=\"108\" y=\"100\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#475569\">WESTERN</text><text x=\"108\" y=\"117\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#1e293b\">2 h behind EST</text><text x=\"204\" y=\"99\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#475569\">CENTRAL</text><text x=\"204\" y=\"116\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#d97706\">½ h behind EST</text><text x=\"274\" y=\"99\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#475569\">EST</text><text x=\"204\" y=\"207\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#d97706\">SA is in the Central zone</text></g></svg>"
+          }
+        },
+        {
+          "id": "sgi-y7-2013-t3-meas-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write 1:20 pm in 24-hour time.",
+          "options": [
+            "01:20",
+            "11:20",
+            "13:20",
+            "12:20"
+          ],
+          "answer": 2,
+          "hint": "For a pm time after noon, add 12 to the hour.",
+          "keyPoints": [
+            {
+              "text": "1:20 pm",
+              "note": "Convert the afternoon hour to 24-hour time."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The time is after midday, so add 12 to the hour.",
+              "work": "\\(1+12=13\\)"
+            },
+            {
+              "explain": "Keep the minutes unchanged.",
+              "work": "\\(20\\text{ minutes}\\)"
+            },
+            {
+              "explain": "Write the time using two-digit hours and minutes.",
+              "work": "\\(13{:}20\\)"
+            }
+          ],
+          "solution": "13:20",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Calculator Q8"
           }
         }
       ]

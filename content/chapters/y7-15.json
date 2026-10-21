@@ -1530,6 +1530,47 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "sgi-y7-2013-t3-alg-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve \\(a+213=312\\).",
+          "options": [
+            "525",
+            "109",
+            "99",
+            "−99"
+          ],
+          "answer": 2,
+          "hint": "Undo the addition of 213 by subtracting 213 from both sides.",
+          "keyPoints": [
+            {
+              "text": "a+213=312",
+              "note": "Use the same inverse operation on both sides."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Subtract 213 from both sides.",
+              "work": "\\(a+213-213=312-213\\)"
+            },
+            {
+              "explain": "Simplify each side.",
+              "work": "\\(a=99\\)"
+            },
+            {
+              "explain": "Check the solution in the original equation.",
+              "work": "\\(99+213=312\\)"
+            }
+          ],
+          "solution": "99",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Algebra Q9"
+          }
         }
       ]
     },
@@ -3001,6 +3042,164 @@
               "note": "After finding A + B + C, subtract a pair total to isolate the remaining weight."
             }
           ]
+        },
+        {
+          "id": "sgi-y7-2013-t3-alg-q10",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A number is divided by 5 and then 3 is added to the result to give 7. (a) Write an equation using x for the number. (b) Solve the equation.",
+          "hint": "Write the operations in the order described, then undo them in reverse order.",
+          "keyPoints": [
+            {
+              "text": "divided by 5",
+              "note": "Represent this as x divided by 5."
+            },
+            {
+              "text": "3 is added",
+              "note": "This addition occurs after dividing by 5."
+            }
+          ],
+          "parts": [
+            {
+              "id": "sgi-y7-2013-t3-alg-q10-a",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Let x be the number. Which equation represents “a number is divided by 5 and then 3 is added to give 7”?",
+              "options": [
+                "(x+3)/5=7",
+                "x/5+3=7",
+                "5x+3=7",
+                "x/5−3=7"
+              ],
+              "answer": 1,
+              "hint": "Translate the steps in order: divide the number by 5, then add 3.",
+              "keyPoints": [
+                {
+                  "text": "divided by 5 and then 3 is added",
+                  "note": "Keep the operations in the order stated."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Represent the unknown number by x.",
+                  "work": "\\(x\\)"
+                },
+                {
+                  "explain": "Divide by 5.",
+                  "work": "\\(\\frac{x}{5}\\)"
+                },
+                {
+                  "explain": "Add 3 and set the result equal to 7.",
+                  "work": "\\(\\frac{x}{5}+3=7\\)"
+                }
+              ],
+              "solution": "x/5+3=7",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+                "sourceQuestion": "Algebra Q10(a)"
+              }
+            },
+            {
+              "id": "sgi-y7-2013-t3-alg-q10-b",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Solve the equation \\(\\frac{x}{5}+3=7\\).",
+              "options": [
+                "2",
+                "5",
+                "20",
+                "50"
+              ],
+              "answer": 2,
+              "hint": "Undo the operations in reverse order: subtract 3, then multiply by 5.",
+              "keyPoints": [
+                {
+                  "text": "\\(\\frac{x}{5}+3=7\\)",
+                  "note": "Undo the +3 first, then undo division by 5."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Subtract 3 from both sides.",
+                  "work": "\\(\\frac{x}{5}=7-3=4\\)"
+                },
+                {
+                  "explain": "Multiply both sides by 5.",
+                  "work": "\\(x=4\\times5=20\\)"
+                },
+                {
+                  "explain": "Check: divide 20 by 5, then add 3.",
+                  "work": "\\(20\\div5+3=4+3=7\\)"
+                }
+              ],
+              "solution": "20",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+                "sourceQuestion": "Algebra Q10(b)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Algebra Q10"
+          }
+        },
+        {
+          "id": "sgi-y7-2013-t3-alg-q11",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A parallelogram has opposite sides marked equal. Its top and bottom sides are each \\(3x\\) cm, and its other sides are each \\(x\\) cm. The perimeter is 96 cm. Find x.",
+          "options": [
+            "8 cm",
+            "16 cm",
+            "24 cm",
+            "12 cm"
+          ],
+          "answer": 3,
+          "hint": "Add the four side lengths to form the perimeter equation, then solve for x.",
+          "keyPoints": [
+            {
+              "text": "top and bottom sides are each \\(3x\\) cm",
+              "note": "There are two sides of length 3x."
+            },
+            {
+              "text": "other sides are each \\(x\\) cm",
+              "note": "There are two sides of length x."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the marked equal sides to list the four boundary lengths.",
+              "work": "\\(3x+x+3x+x=96\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 390 225\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Parallelogram with top and bottom each labelled 3x cm and slanted sides each x cm; equal sides have matching ticks\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><polygon points=\"74,60 296,60 340,180 118,180\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linejoin=\"round\"/><path d=\"M180 53 L180 67 M218 173 L218 187\" stroke=\"#d97706\" stroke-width=\"2\"/><path d=\"M91 104 L104 100 M96 111 L109 107 M305 130 L318 126 M310 137 L323 133\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"185\" y=\"47\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">3x cm</text><text x=\"335\" y=\"115\" text-anchor=\"start\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">x cm</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Collect the four x-terms.",
+              "work": "\\(8x=96\\)"
+            },
+            {
+              "explain": "Divide both sides by 8.",
+              "work": "\\(x=96\\div8=12\\text{ cm}\\)"
+            }
+          ],
+          "solution": "12 cm",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Algebra Q11"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 390 225\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Parallelogram with top and bottom each labelled 3x cm and slanted sides each x cm; equal sides have matching ticks\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><polygon points=\"74,60 296,60 340,180 118,180\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2.1\" stroke-linejoin=\"round\"/><path d=\"M180 53 L180 67 M218 173 L218 187\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M91 104 L104 100 M96 111 L109 107 M305 130 L318 126 M310 137 L323 133\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"185\" y=\"47\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">3x cm</text><text x=\"335\" y=\"115\" text-anchor=\"start\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">x cm</text></g></svg>"
+          }
         }
       ]
     }

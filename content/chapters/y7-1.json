@@ -19557,6 +19557,47 @@
               "note": "The question asks what is left after the change."
             }
           ]
+        },
+        {
+          "id": "sgi-y7-2013-t3-nc-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use leading-figure estimation to estimate \\(38,346-16,097\\).",
+          "options": [
+            "2,000",
+            "20,000",
+            "10,000",
+            "22,249"
+          ],
+          "answer": 2,
+          "hint": "Keep the leading figures as in the paper’s estimate, then subtract the rounded ten-thousands.",
+          "keyPoints": [
+            {
+              "text": "\\(38,346-16,097\\)",
+              "note": "Estimate first, then subtract by place value."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Estimate the first number using its leading figure.",
+              "work": "\\(38{,}346\\approx30{,}000\\)"
+            },
+            {
+              "explain": "Estimate the second number to the nearest ten thousand.",
+              "work": "\\(16{,}097\\approx20{,}000\\)"
+            },
+            {
+              "explain": "Subtract the estimates to get the requested leading-figure estimate.",
+              "work": "\\(30{,}000-20{,}000=10{,}000\\)"
+            }
+          ],
+          "solution": "10,000",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Non-calculator Q8"
+          }
         }
       ]
     },
@@ -23782,6 +23823,47 @@
               "note": "× and ÷ have equal priority — work from left to right."
             }
           ]
+        },
+        {
+          "id": "sgi-y7-2013-t3-nc-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the product of 12 and 13.",
+          "options": [
+            "144",
+            "1560",
+            "156",
+            "25"
+          ],
+          "answer": 2,
+          "hint": "Split 13 into 10 and 3, then multiply both parts by 12.",
+          "keyPoints": [
+            {
+              "text": "12 and 13",
+              "note": "The product means multiply the two numbers."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the distributive property to split 13.",
+              "work": "\\(12\\times13=12\\times(10+3)\\)"
+            },
+            {
+              "explain": "Multiply each part.",
+              "work": "\\(120+36=156\\)"
+            },
+            {
+              "explain": "Combine the partial products.",
+              "work": "\\(12\\times13=156\\)"
+            }
+          ],
+          "solution": "156",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Non-calculator Q4"
+          }
         }
       ]
     },
@@ -33366,6 +33448,129 @@
             "section": "Non-calculator Number",
             "marks": 1,
             "origin": "teacher"
+          }
+        },
+        {
+          "id": "sgi-y7-2013-t3-nc-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write six million and ninety thousand as a numeral.",
+          "options": [
+            "6,900,000",
+            "6,009,000",
+            "6,000,090",
+            "6,090,000"
+          ],
+          "answer": 3,
+          "hint": "Split the number into millions and thousands, then place zeroes in the empty place-value columns.",
+          "keyPoints": [
+            {
+              "text": "six million and ninety thousand",
+              "note": "Ninety thousand is 90,000; it does not add hundreds or tens."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the two place-value parts separately.",
+              "work": "\\(6{,}000{,}000+90{,}000\\)"
+            },
+            {
+              "explain": "Add the parts and keep zeroes in the unused places.",
+              "work": "\\(6{,}000{,}000+90{,}000=6{,}090{,}000\\)"
+            },
+            {
+              "explain": "Read the numeral back in groups of three digits.",
+              "work": "\\(6\\mid090\\mid000\\;=\\;6{,}090{,}000\\)"
+            }
+          ],
+          "solution": "6,090,000",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Non-calculator Q1"
+          }
+        },
+        {
+          "id": "sgi-y7-2013-t3-nc-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the value of the digit 9 in 29,010?",
+          "options": [
+            "9",
+            "90",
+            "9,000",
+            "900"
+          ],
+          "answer": 2,
+          "hint": "Find the place occupied by 9, then multiply the digit by that place value.",
+          "keyPoints": [
+            {
+              "text": "digit 9 in 29,010",
+              "note": "The 9 is in the thousands column."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate each place from right to left: ones, tens, hundreds, thousands.",
+              "work": "\\(29{,}010=2\\times10{,}000+9\\times1{,}000+0\\times10+0\\)"
+            },
+            {
+              "explain": "Multiply the digit by its place value.",
+              "work": "\\(9\\times1{,}000=9{,}000\\)"
+            },
+            {
+              "explain": "State the value represented by the digit.",
+              "work": "\\(\\boxed{9{,}000}\\)"
+            }
+          ],
+          "solution": "9,000",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Non-calculator Q2"
+          }
+        },
+        {
+          "id": "sgi-y7-2013-t3-nc-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write 1,024 in expanded notation.",
+          "options": [
+            "\\(1,000+200+4\\)",
+            "\\(1,000+20+4\\)",
+            "\\(100+20+4\\)",
+            "\\(1,000+2+4\\)"
+          ],
+          "answer": 1,
+          "hint": "Break 1,024 into its thousands, hundreds, tens and ones.",
+          "keyPoints": [
+            {
+              "text": "1,024",
+              "note": "The digit 2 represents two tens, not two hundreds."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the digits by place value.",
+              "work": "\\(1{,}024=1\\text{ thousand}+0\\text{ hundreds}+2\\text{ tens}+4\\text{ ones}\\)"
+            },
+            {
+              "explain": "Write the non-zero place-value parts as a sum.",
+              "work": "\\(1{,}024=1{,}000+20+4\\)"
+            },
+            {
+              "explain": "Check that the expanded parts recombine to the original numeral.",
+              "work": "\\(1{,}000+20+4=1{,}024\\)"
+            }
+          ],
+          "solution": "\\(1,000+20+4\\)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Non-calculator Q3"
           }
         }
       ]
@@ -55977,6 +56182,129 @@
             "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
             "sourceQuestion": "Q1(c)"
           }
+        },
+        {
+          "id": "sgi-y7-2013-t3-nc-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\(29+9\\times2\\).",
+          "options": [
+            "76",
+            "38",
+            "56",
+            "47"
+          ],
+          "answer": 3,
+          "hint": "Use the order of operations: multiply before adding.",
+          "keyPoints": [
+            {
+              "text": "\\(29+9\\times2\\)",
+              "note": "Multiply before adding."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply multiplication before addition.",
+              "work": "\\(9\\times2=18\\)"
+            },
+            {
+              "explain": "Add the product to 29.",
+              "work": "\\(29+18=47\\)"
+            },
+            {
+              "explain": "State the value.",
+              "work": "\\(29+9\\times2=47\\)"
+            }
+          ],
+          "solution": "47",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Non-calculator Q9"
+          }
+        },
+        {
+          "id": "sgi-y7-2013-t3-nc-q18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Use order of operations to evaluate \\(11-(8-3)\\times2+25\\div5\\).",
+          "options": [
+            "16",
+            "6",
+            "21",
+            "31"
+          ],
+          "answer": 1,
+          "hint": "Evaluate the bracket first, then multiplication and division, then addition and subtraction from left to right.",
+          "keyPoints": [
+            {
+              "text": "\\(11-(8-3)\\times2+25\\div5\\)",
+              "note": "Evaluate brackets, multiplication and division before addition and subtraction."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Evaluate the bracket.",
+              "work": "\\(8-3=5\\)"
+            },
+            {
+              "explain": "Multiply and divide before adding or subtracting.",
+              "work": "\\(5\\times2=10,\\quad25\\div5=5\\)"
+            },
+            {
+              "explain": "Finish from left to right.",
+              "work": "\\(11-10+5=1+5=6\\)"
+            }
+          ],
+          "solution": "6",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Non-calculator Q18"
+          }
+        },
+        {
+          "id": "sgi-y7-2013-t3-wm-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate \\(1-2+3-4+\\cdots+99-100\\).",
+          "options": [
+            "0",
+            "50",
+            "−50",
+            "−100"
+          ],
+          "answer": 2,
+          "hint": "Pair each positive odd number with the following even number.",
+          "keyPoints": [
+            {
+              "text": "\\(1-2+3-4+\\cdots+99-100\\)",
+              "note": "Pair each positive odd number with the even number immediately after it."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Pair consecutive terms.",
+              "work": "\\((1-2)+(3-4)+\\cdots+(99-100)\\)"
+            },
+            {
+              "explain": "Each pair equals −1.",
+              "work": "\\(1-2=-1,\\quad3-4=-1\\)"
+            },
+            {
+              "explain": "There are 50 pairs, so add −1 fifty times.",
+              "work": "\\(50\\times(-1)=-50\\)"
+            }
+          ],
+          "solution": "−50",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Working Mathematically Q3"
+          }
         }
       ]
     },
@@ -60422,6 +60750,104 @@
             "section": "Non-calculator Number",
             "marks": 2,
             "origin": "teacher"
+          }
+        },
+        {
+          "id": "sgi-y7-2013-t3-nc-q15",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Complete the meanings of the two mathematical symbols in the table.",
+          "hint": "Identify each symbol, including whether its boundary is included.",
+          "keyPoints": [
+            {
+              "text": "two mathematical symbols",
+              "note": "Each row asks for the meaning of one symbol."
+            }
+          ],
+          "parts": [
+            {
+              "id": "sgi-y7-2013-t3-nc-q15-a",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "What does the symbol ∴ mean?",
+              "options": [
+                "Because",
+                "Therefore",
+                "Approximately",
+                "Is parallel to"
+              ],
+              "answer": 1,
+              "hint": "Read ∴ as the symbol that introduces a conclusion.",
+              "keyPoints": [
+                {
+                  "text": "∴",
+                  "note": "This symbol is read as “therefore”."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Recognise the mathematical symbol.",
+                  "work": "\\(\\therefore\\)"
+                },
+                {
+                  "explain": "It indicates a conclusion that follows from previous information.",
+                  "work": "\\(\\therefore\\;=\\;\\text{therefore}\\)"
+                }
+              ],
+              "solution": "Therefore",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+                "sourceQuestion": "Non-calculator Q15(a)"
+              }
+            },
+            {
+              "id": "sgi-y7-2013-t3-nc-q15-b",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "What does the symbol ≥ mean?",
+              "options": [
+                "Less than",
+                "Greater than",
+                "Greater than or equal to",
+                "Not equal to"
+              ],
+              "answer": 2,
+              "hint": "The bar under > means the boundary value is included as well.",
+              "keyPoints": [
+                {
+                  "text": "≥",
+                  "note": "The line beneath the symbol includes equality."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Read the main symbol first.",
+                  "work": "\\(>\\text{ means greater than}\\)"
+                },
+                {
+                  "explain": "The extra line includes “equal to”.",
+                  "work": "\\(\\geq\\;=\\;\\text{greater than or equal to}\\)"
+                }
+              ],
+              "solution": "Greater than or equal to",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+                "sourceQuestion": "Non-calculator Q15(b)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Non-calculator Q15"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 220\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Table with the symbols therefore and greater than or equal to\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><rect x=\"55\" y=\"38\" width=\"270\" height=\"150\" rx=\"5\" fill=\"#f8fafc\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"55\" y1=\"82\" x2=\"325\" y2=\"82\" stroke=\"#94a3b8\"/><line x1=\"55\" y1=\"135\" x2=\"325\" y2=\"135\" stroke=\"#94a3b8\"/><line x1=\"145\" y1=\"38\" x2=\"145\" y2=\"188\" stroke=\"#94a3b8\"/><line x1=\"55\" y1=\"38\" x2=\"325\" y2=\"38\" stroke=\"#94a3b8\"/><line x1=\"55\" y1=\"38\" x2=\"55\" y2=\"188\" stroke=\"#94a3b8\"/><line x1=\"325\" y1=\"38\" x2=\"325\" y2=\"188\" stroke=\"#94a3b8\"/><text x=\"100\" y=\"67\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">Symbol</text><text x=\"230\" y=\"67\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">Meaning</text><text x=\"100\" y=\"117\" text-anchor=\"middle\" font-size=\"22\" font-weight=\"400\" fill=\"#1e293b\">∴</text><text x=\"100\" y=\"170\" text-anchor=\"middle\" font-size=\"22\" font-weight=\"400\" fill=\"#1e293b\">≥</text></g></svg>"
           }
         }
       ]

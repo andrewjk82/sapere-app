@@ -116,6 +116,148 @@
             "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
             "sourceQuestion": "Q10(d)"
           }
+        },
+        {
+          "id": "sgi-y7-2013-t3-wm-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Five people finish a race. Fred finishes first and Noel last. Alan is immediately behind Steve, and Bob finishes ahead of Steve. In what place does Bob finish?",
+          "options": [
+            "2nd",
+            "1st",
+            "3rd",
+            "4th"
+          ],
+          "answer": 0,
+          "hint": "Place Fred first and Noel fifth. Alan must be immediately after Steve, so find which two middle places fit Bob and Steve.",
+          "keyPoints": [
+            {
+              "text": "Five people finish a race",
+              "note": "There are five finishing places."
+            },
+            {
+              "text": "Alan is immediately behind Steve",
+              "note": "Steve’s place is one number before Alan’s."
+            },
+            {
+              "text": "Bob finishes ahead of Steve",
+              "note": "Bob must be placed earlier than Steve."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Fix the places already given.",
+              "work": "\\(\\text{Fred}=1,\\quad\\text{Noel}=5\\)"
+            },
+            {
+              "explain": "Alan is immediately after Steve, so their possible pair is 3rd and 4th.",
+              "work": "\\(\\text{Steve}=3,\\quad\\text{Alan}=4\\)"
+            },
+            {
+              "explain": "Bob must finish ahead of Steve; among the open places, that makes Bob 2nd.",
+              "work": "\\(\\boxed{\\text{Bob is 2nd}}\\)"
+            }
+          ],
+          "solution": "2nd",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Working Mathematically Q1"
+          }
+        },
+        {
+          "id": "sgi-y7-2013-t3-wm-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A meal consists of one choice from 2 dinners, 3 main meals and 2 desserts. How many different meals can be chosen?",
+          "options": [
+            "7",
+            "12",
+            "6",
+            "24"
+          ],
+          "answer": 1,
+          "hint": "For each dinner choice there are 3 main-meal choices, and each of those has 2 dessert choices. Multiply the independent choices.",
+          "keyPoints": [
+            {
+              "text": "2 dinners, 3 main meals and 2 desserts",
+              "note": "Choose one item from each group."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Record the number of choices in each group.",
+              "work": "\\(2,\\quad3,\\quad2\\)"
+            },
+            {
+              "explain": "Multiply because one choice is made from every group.",
+              "work": "\\(2\\times3\\times2=12\\)"
+            },
+            {
+              "explain": "There are 12 possible meals.",
+              "work": "\\(\\boxed{12}\\)"
+            }
+          ],
+          "solution": "12",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Working Mathematically Q2"
+          }
+        },
+        {
+          "id": "sgi-y7-2013-t3-wm-q5",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "The diagram shows four small squares made from 12 matches. Remove two matches so that exactly two squares remain. Draw your sample answer.",
+          "answer": "Sample answer: remove the two horizontal matches forming the top outside edge of the upper row. The two bottom unit squares remain, and the larger outer square is broken.",
+          "manual": true,
+          "hint": "Choose matches that open the top two small squares and break the large outside square, while keeping the two bottom squares closed.",
+          "keyPoints": [
+            {
+              "text": "Remove two matches",
+              "note": "Show clearly which two matches are removed."
+            },
+            {
+              "text": "exactly two squares remain",
+              "note": "Count only complete closed square outlines."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Start with the 2-by-2 grid. There are four small squares and one larger outer square.",
+              "work": "\\(4+1=5\\text{ complete squares}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 190\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Four connected matchstick squares\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><line x1=\"86\" y1=\"62\" x2=\"130\" y2=\"62\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"86\" y1=\"62\" x2=\"86\" y2=\"106\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"62\" x2=\"130\" y2=\"106\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"86\" y1=\"106\" x2=\"130\" y2=\"106\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"62\" x2=\"174\" y2=\"62\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"174\" y1=\"62\" x2=\"174\" y2=\"106\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"106\" x2=\"174\" y2=\"106\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"86\" y1=\"106\" x2=\"86\" y2=\"150\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"106\" x2=\"130\" y2=\"150\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"86\" y1=\"150\" x2=\"130\" y2=\"150\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"174\" y1=\"106\" x2=\"174\" y2=\"150\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"150\" x2=\"174\" y2=\"150\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/></g></svg>"
+              }
+            },
+            {
+              "explain": "Remove the two top horizontal matchsticks. This opens the upper small squares and breaks the outer square.",
+              "work": "\\(\\text{top-left and top-right squares are open}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 190\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Four connected matchstick squares; red dashed top matches are removed in the sample\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><line x1=\"86\" y1=\"62\" x2=\"86\" y2=\"106\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"62\" x2=\"130\" y2=\"106\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"86\" y1=\"106\" x2=\"130\" y2=\"106\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"174\" y1=\"62\" x2=\"174\" y2=\"106\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"106\" x2=\"174\" y2=\"106\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"86\" y1=\"106\" x2=\"86\" y2=\"150\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"106\" x2=\"130\" y2=\"150\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"86\" y1=\"150\" x2=\"130\" y2=\"150\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"174\" y1=\"106\" x2=\"174\" y2=\"150\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"150\" x2=\"174\" y2=\"150\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"86\" y1=\"62\" x2=\"130\" y2=\"62\" stroke=\"#dc2626\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"130\" y1=\"62\" x2=\"174\" y2=\"62\" stroke=\"#dc2626\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"190\" y=\"164\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#dc2626\">red dashed = removed</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Check the two lower unit squares remain closed; no other complete square remains.",
+              "work": "\\(\\text{remaining squares}=2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 190\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Four connected matchstick squares; red dashed top matches are removed in the sample\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><line x1=\"86\" y1=\"62\" x2=\"86\" y2=\"106\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"62\" x2=\"130\" y2=\"106\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"86\" y1=\"106\" x2=\"130\" y2=\"106\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"174\" y1=\"62\" x2=\"174\" y2=\"106\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"106\" x2=\"174\" y2=\"106\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"86\" y1=\"106\" x2=\"86\" y2=\"150\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"106\" x2=\"130\" y2=\"150\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"86\" y1=\"150\" x2=\"130\" y2=\"150\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"174\" y1=\"106\" x2=\"174\" y2=\"150\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"150\" x2=\"174\" y2=\"150\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"86\" y1=\"62\" x2=\"130\" y2=\"62\" stroke=\"#dc2626\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"130\" y1=\"62\" x2=\"174\" y2=\"62\" stroke=\"#dc2626\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"190\" y=\"164\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#dc2626\">red dashed = removed</text></g></svg>"
+              }
+            }
+          ],
+          "solution": "Sample answer: remove the two horizontal matches forming the top outside edge of the upper row. The two bottom unit squares remain, and the larger outer square is broken.",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Working Mathematically Q5"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 190\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Four connected matchstick squares\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><line x1=\"86\" y1=\"62\" x2=\"130\" y2=\"62\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"86\" y1=\"62\" x2=\"86\" y2=\"106\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"62\" x2=\"130\" y2=\"106\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"86\" y1=\"106\" x2=\"130\" y2=\"106\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"62\" x2=\"174\" y2=\"62\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"174\" y1=\"62\" x2=\"174\" y2=\"106\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"106\" x2=\"174\" y2=\"106\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"86\" y1=\"106\" x2=\"86\" y2=\"150\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"106\" x2=\"130\" y2=\"150\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"86\" y1=\"150\" x2=\"130\" y2=\"150\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"174\" y1=\"106\" x2=\"174\" y2=\"150\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"150\" x2=\"174\" y2=\"150\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/></g></svg>"
+          }
         }
       ]
     }

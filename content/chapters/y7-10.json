@@ -4201,6 +4201,95 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "sgi-y7-2013-t3-calc-q5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "At 6 am the temperature is −4°C. It rises by 6°C by noon, then falls by 11°C over the next 8 hours. What is the temperature at 8 pm?",
+          "options": [
+            "−9°C",
+            "3°C",
+            "−1°C",
+            "9°C"
+          ],
+          "answer": 0,
+          "hint": "Represent a rise by addition and a fall by subtraction, starting at −4°C.",
+          "keyPoints": [
+            {
+              "text": "falls by 11°C",
+              "note": "A fall means subtract 11 from the temperature at noon."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Start at the 6 am temperature and add the rise.",
+              "work": "\\(-4+6=2^\\circ\\text{C}\\)"
+            },
+            {
+              "explain": "Subtract the later fall.",
+              "work": "\\(2-11=-9^\\circ\\text{C}\\)"
+            },
+            {
+              "explain": "The temperature at 8 pm is −9°C.",
+              "work": "\\(\\boxed{-9^\\circ\\text{C}}\\)"
+            }
+          ],
+          "solution": "−9°C",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Calculator Q5"
+          }
+        },
+        {
+          "id": "sgi-y7-2013-t3-calc-q7",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Plot the points \\(-2\\), 1 and 5 on the number line.",
+          "answer": "Sample answer: place points at −2, 1 and 5, each directly above its matching tick on the number line.",
+          "manual": true,
+          "hint": "Place the negative point to the left of zero and the positive points to the right. Count equal tick intervals.",
+          "keyPoints": [
+            {
+              "text": "\\(-2\\), 1 and 5",
+              "note": "Place each number at its matching value on the number line."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate zero and count two equal intervals to its left for −2.",
+              "work": "\\(-2<0\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 165\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Number line with integer ticks\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><line x1=\"35\" y1=\"115\" x2=\"345\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"47\" y1=\"109\" x2=\"47\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"47\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">-4</text><line x1=\"75\" y1=\"109\" x2=\"75\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"75\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">-3</text><line x1=\"103\" y1=\"109\" x2=\"103\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"103\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">-2</text><line x1=\"131\" y1=\"109\" x2=\"131\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"131\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">-1</text><line x1=\"159\" y1=\"109\" x2=\"159\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"159\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">0</text><line x1=\"187\" y1=\"109\" x2=\"187\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"187\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">1</text><line x1=\"215\" y1=\"109\" x2=\"215\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"215\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">2</text><line x1=\"243\" y1=\"109\" x2=\"243\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"243\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">3</text><line x1=\"271\" y1=\"109\" x2=\"271\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"271\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">4</text><line x1=\"299\" y1=\"109\" x2=\"299\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"299\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">5</text><line x1=\"327\" y1=\"109\" x2=\"327\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"327\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">6</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Count one unit to the right of zero for 1.",
+              "work": "\\(1>0\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 165\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Number line with integer ticks and plotted points minus two, one and five\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><line x1=\"35\" y1=\"115\" x2=\"345\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"47\" y1=\"109\" x2=\"47\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"47\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">-4</text><line x1=\"75\" y1=\"109\" x2=\"75\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"75\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">-3</text><line x1=\"103\" y1=\"109\" x2=\"103\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"103\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">-2</text><line x1=\"131\" y1=\"109\" x2=\"131\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"131\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">-1</text><line x1=\"159\" y1=\"109\" x2=\"159\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"159\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">0</text><line x1=\"187\" y1=\"109\" x2=\"187\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"187\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">1</text><line x1=\"215\" y1=\"109\" x2=\"215\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"215\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">2</text><line x1=\"243\" y1=\"109\" x2=\"243\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"243\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">3</text><line x1=\"271\" y1=\"109\" x2=\"271\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"271\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">4</text><line x1=\"299\" y1=\"109\" x2=\"299\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"299\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">5</text><line x1=\"327\" y1=\"109\" x2=\"327\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"327\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">6</text><circle cx=\"103\" cy=\"115\" r=\"5\" fill=\"#d97706\"/><text x=\"103\" y=\"92\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#d97706\">-2</text><circle cx=\"187\" cy=\"115\" r=\"5\" fill=\"#d97706\"/><text x=\"187\" y=\"92\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#d97706\">1</text><circle cx=\"299\" cy=\"115\" r=\"5\" fill=\"#d97706\"/><text x=\"299\" y=\"92\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#d97706\">5</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Count five units to the right of zero and mark all three points.",
+              "work": "\\(\\{-2,1,5\\}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 165\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Number line with integer ticks and plotted points minus two, one and five\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><line x1=\"35\" y1=\"115\" x2=\"345\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"47\" y1=\"109\" x2=\"47\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"47\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">-4</text><line x1=\"75\" y1=\"109\" x2=\"75\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"75\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">-3</text><line x1=\"103\" y1=\"109\" x2=\"103\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"103\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">-2</text><line x1=\"131\" y1=\"109\" x2=\"131\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"131\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">-1</text><line x1=\"159\" y1=\"109\" x2=\"159\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"159\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">0</text><line x1=\"187\" y1=\"109\" x2=\"187\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"187\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">1</text><line x1=\"215\" y1=\"109\" x2=\"215\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"215\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">2</text><line x1=\"243\" y1=\"109\" x2=\"243\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"243\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">3</text><line x1=\"271\" y1=\"109\" x2=\"271\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"271\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">4</text><line x1=\"299\" y1=\"109\" x2=\"299\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"299\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">5</text><line x1=\"327\" y1=\"109\" x2=\"327\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"327\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">6</text><circle cx=\"103\" cy=\"115\" r=\"5\" fill=\"#d97706\"/><text x=\"103\" y=\"92\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#d97706\">-2</text><circle cx=\"187\" cy=\"115\" r=\"5\" fill=\"#d97706\"/><text x=\"187\" y=\"92\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#d97706\">1</text><circle cx=\"299\" cy=\"115\" r=\"5\" fill=\"#d97706\"/><text x=\"299\" y=\"92\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#d97706\">5</text></g></svg>"
+              }
+            }
+          ],
+          "solution": "Sample answer: place points at −2, 1 and 5, each directly above its matching tick on the number line.",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
+            "sourceQuestion": "Calculator Q7"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 165\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Number line with integer ticks\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><line x1=\"35\" y1=\"115\" x2=\"345\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"47\" y1=\"109\" x2=\"47\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"47\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">-4</text><line x1=\"75\" y1=\"109\" x2=\"75\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"75\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">-3</text><line x1=\"103\" y1=\"109\" x2=\"103\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"103\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">-2</text><line x1=\"131\" y1=\"109\" x2=\"131\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"131\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">-1</text><line x1=\"159\" y1=\"109\" x2=\"159\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"159\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">0</text><line x1=\"187\" y1=\"109\" x2=\"187\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"187\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">1</text><line x1=\"215\" y1=\"109\" x2=\"215\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"215\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">2</text><line x1=\"243\" y1=\"109\" x2=\"243\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"243\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">3</text><line x1=\"271\" y1=\"109\" x2=\"271\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"271\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">4</text><line x1=\"299\" y1=\"109\" x2=\"299\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"299\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">5</text><line x1=\"327\" y1=\"109\" x2=\"327\" y2=\"121\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"327\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"400\" fill=\"#1e293b\">6</text></g></svg>"
+          }
         }
       ]
     },
