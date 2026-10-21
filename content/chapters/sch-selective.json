@@ -4376,7 +4376,24 @@
             "source": "Selective Trial Test · Mathematical Reasoning",
             "test": "Test 5",
             "number": 3
-          }
+          },
+          "steps": [
+            {
+              "explain": "Calculate the target value 13²",
+              "work": "<p>Compute the exact square of 13:</p><p>\\[13^2 = 13 \\times 13 = \\mathbf{169}\\]</p>"
+            },
+            {
+              "explain": "Evaluate each option numerically",
+              "work": "<p>Convert and compute the value of each option:</p><ul><li>\\(\\frac{168}{100} = 1.68\\) (difference: \\(|169 - 1.68| = 167.32\\))</li><li>\\(168\\frac{4}{10} = 168.4\\) (difference: \\(|169 - 168.4| = \\mathbf{0.6}\\))</li><li>\\(\\frac{126}{10} = 12.6\\) (difference: \\(|169 - 12.6| = 156.4\\))</li><li>\\(2^7 = 128\\) (difference: \\(|169 - 128| = 41\\))</li><li>\\(3^4 = 81\\) (difference: \\(|169 - 81| = 88\\))</li></ul>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 145\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"125\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\"><text x=\"25\" y=\"32\" font-weight=\"700\" fill=\"#0f172a\">Target Value: 13² = 169</text><g transform=\"translate(25, 45)\"><rect x=\"0\" y=\"0\" width=\"105\" height=\"34\" rx=\"5\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.2\"/><text x=\"52\" y=\"18\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e40af\">168 4/10 = 168.4</text><text x=\"52\" y=\"30\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#1d4ed8\">Diff = 0.6</text><rect x=\"115\" y=\"0\" width=\"105\" height=\"34\" rx=\"5\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"167\" y=\"18\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">2⁷ = 128</text><text x=\"167\" y=\"30\" text-anchor=\"middle\" font-weight=\"600\" fill=\"#64748b\">Diff = 41</text><rect x=\"230\" y=\"0\" width=\"100\" height=\"34\" rx=\"5\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"280\" y=\"18\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">3⁴ = 81</text><text x=\"280\" y=\"30\" text-anchor=\"middle\" font-weight=\"600\" fill=\"#64748b\">Diff = 88</text></g><rect x=\"25\" y=\"90\" width=\"330\" height=\"32\" rx=\"5\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1.2\"/><text x=\"190\" y=\"111\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#065f46\">Closest is 168 4/10 with difference of only 0.6</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Compare differences to determine the closest value",
+              "work": "<p>The smallest difference from 169 is <strong>0.6</strong>.</p><p>Therefore, \\(168\\frac{4}{10}\\) is the closest.</p>"
+            }
+          ]
         },
         {
           "id": "sch-sel-m5-q4",
@@ -4394,7 +4411,24 @@
             "source": "Selective Trial Test · Mathematical Reasoning",
             "test": "Test 5",
             "number": 4
-          }
+          },
+          "steps": [
+            {
+              "explain": "Narrow down candidates using angle and symmetry properties",
+              "work": "<p><strong>Clue (i):</strong> Four \\(90^\\circ\\) angles means the shape must be either a <em>rectangle</em> or a <em>square</em>. (Eliminates trapezium, parallelogram, and rhombus).</p><p><strong>Clue (ii):</strong> A standard non-square rectangle only has 2 axes of symmetry (horizontal and vertical). A <strong>square</strong> has 4 axes of symmetry (2 medians + 2 diagonals).</p>"
+            },
+            {
+              "explain": "Confirm using parallel sides and diagonal properties",
+              "work": "<p><strong>Clue (iii):</strong> A square has two pairs of parallel opposite sides.</p><p><strong>Clue (iv):</strong> In a square, the diagonals are perpendicular bisectors of each other (intersecting at right angles).</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 155\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"135\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\"><text x=\"25\" y=\"32\" font-weight=\"700\" fill=\"#0f172a\">Property Checklist for Square:</text><text x=\"25\" y=\"52\" fill=\"#15803d\">✓ i. Four 90° angles (Square &amp; Rectangle)</text><text x=\"25\" y=\"70\" fill=\"#15803d\">✓ ii. 4 axes of symmetry (Square only; Rectangle has only 2)</text><text x=\"25\" y=\"88\" fill=\"#15803d\">✓ iii. 2 pairs of parallel sides</text><text x=\"25\" y=\"106\" fill=\"#15803d\">✓ iv. Diagonals intersect at 90° (Square &amp; Rhombus)</text><rect x=\"25\" y=\"114\" width=\"330\" height=\"22\" rx=\"4\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1\"/><text x=\"190\" y=\"130\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#065f46\">Only a Square satisfies all four conditions</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Conclude the shape identity",
+              "work": "<p>The only shape matching all four geometric properties is the <strong>square</strong>.</p>"
+            }
+          ]
         },
         {
           "id": "sch-sel-m5-q5",
@@ -4410,8 +4444,19 @@
           "answer": 2,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>\\(2.5 \\times 60 = 150\\)km, \\(150 \\div 5 = 30\\)</p></div>"
+              "explain": "Calculate the total distance traveled by the train",
+              "work": "<p>Using \\(\\text{Distance} = \\text{Speed} \\times \\text{Time}\\):</p><p>\\[\\text{Total Distance} = 60\\text{ km/h} \\times 2.5\\text{ hours} = 150\\text{ km}\\]</p>"
+            },
+            {
+              "explain": "Determine the distance between successive passes through the starting point",
+              "work": "<p>The starting point is at the midpoint (\\(2.5\\text{ km}\\)) of the \\(5\\text{ km}\\) line:</p><ul><li>To reach an end and return to the starting point: \\(2.5\\text{ km} + 2.5\\text{ km} = 5\\text{ km}\\)</li><li>Every subsequent pass through the midpoint also requires traveling \\(5\\text{ km}\\) (reaching the other end and returning).</li></ul><p>Therefore, the train passes its starting point exactly <strong>once every 5 km</strong> of travel.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 145\" style=\"max-width: 400px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"380\" height=\"125\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\"><text x=\"25\" y=\"32\" font-weight=\"700\" fill=\"#0f172a\">Total Distance = 60 km/h × 2.5 h = 150 km</text><g transform=\"translate(25, 48)\"><line x1=\"10\" y1=\"20\" x2=\"340\" y2=\"20\" stroke=\"#1e293b\" stroke-width=\"3\"/><circle cx=\"10\" cy=\"20\" r=\"5\" fill=\"#ef4444\"/><text x=\"10\" y=\"38\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#475569\">0 km</text><circle cx=\"175\" cy=\"20\" r=\"6\" fill=\"#2563eb\"/><text x=\"175\" y=\"38\" text-anchor=\"middle\" font-weight=\"700\" font-size=\"11\" fill=\"#1d4ed8\">Start (2.5 km)</text><circle cx=\"340\" cy=\"20\" r=\"5\" fill=\"#ef4444\"/><text x=\"340\" y=\"38\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#475569\">5 km</text></g><rect x=\"25\" y=\"95\" width=\"350\" height=\"28\" rx=\"5\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1.2\"/><text x=\"200\" y=\"114\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#065f46\">Train passes Start once every 5 km: 150 ÷ 5 = 30 times</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Calculate the total number of passes",
+              "work": "<p>Divide the total distance by 5 km:</p><p>\\[\\text{Number of passes} = \\frac{150\\text{ km}}{5\\text{ km}} = \\mathbf{30\\text{ times}}\\]</p>"
             }
           ],
           "meta": {
@@ -4423,7 +4468,7 @@
         {
           "id": "sch-sel-m5-q6",
           "type": "mc",
-          "stem": "Dennis, Neil, and Andrew have a win from a sport's bet, totalling to \\(\\$1305.00\\). If Dennis has three quarters of what Neil has, and Andrew has two thirds of what Neil has, how much did Dennis get?",
+          "stem": "Dennis, Neil, and Andrew have a win from a sport\\'s bet, totalling to \\(\\$1305.00\\). If Dennis has three quarters of what Neil has, and Andrew has two thirds of what Neil has, how much did Dennis get?",
           "options": [
             "\\(\\$420\\)",
             "\\(\\$360\\)",
@@ -4434,8 +4479,19 @@
           "answer": 3,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>Let what Neil has = x</p><p>\\(\\frac{3}{4}x + x + \\frac{2}{3}x = 1305\\)</p><p>\\(x = 540\\)</p><p>Dennis = \\(\\frac{3}{4}x = \\frac{3}{4}\\) multiplied by \\(540 = \\mathbf{405}\\)</p></div>"
+              "explain": "Express Dennis and Andrew's amounts in terms of Neil's share",
+              "work": "<p>Let \\(N\\) be the amount Neil received. Then:</p><ul><li>Dennis: \\(D = \\frac{3}{4}N\\)</li><li>Andrew: \\(A = \\frac{2}{3}N\\)</li></ul>"
+            },
+            {
+              "explain": "Set up the total sum equation and solve for Neil's share",
+              "work": "<p>Sum of all three shares equals \\(\\$1305\\):</p><p>\\[\\frac{3}{4}N + N + \\frac{2}{3}N = 1305\\]</p><p>Find a common denominator of 12:</p><p>\\[\\left(\\frac{9}{12} + \\frac{12}{12} + \\frac{8}{12}\\right)N = 1305 \\implies \\frac{29}{12}N = 1305\\]</p><p>\\[N = 1305 \\times \\frac{12}{29} = 45 \\times 12 = \\$540\\]</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 145\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"125\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\"><text x=\"25\" y=\"32\" font-weight=\"700\" fill=\"#0f172a\">Ratio of Shares (Common base 12 units):</text><rect x=\"25\" y=\"44\" width=\"90\" height=\"34\" rx=\"5\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1\"/><text x=\"70\" y=\"60\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e40af\">Dennis: 3/4</text><text x=\"70\" y=\"73\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#1d4ed8\">9 units</text><rect x=\"125\" y=\"44\" width=\"90\" height=\"34\" rx=\"5\" fill=\"#f1f5f9\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"170\" y=\"60\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">Neil: 1</text><text x=\"170\" y=\"73\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#334155\">12 units</text><rect x=\"225\" y=\"44\" width=\"90\" height=\"34\" rx=\"5\" fill=\"#fef3c7\" stroke=\"#fcd34d\" stroke-width=\"1\"/><text x=\"270\" y=\"60\" text-anchor=\"middle\" font-size=\"11\" fill=\"#92400e\">Andrew: 2/3</text><text x=\"270\" y=\"73\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#b45309\">8 units</text><rect x=\"25\" y=\"90\" width=\"330\" height=\"34\" rx=\"5\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1.2\"/><text x=\"190\" y=\"106\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#065f46\">Total = 29 units = $1305  →  1 unit = $45</text><text x=\"190\" y=\"119\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#047857\">Dennis = 9 × $45 = $405</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Calculate Dennis's share",
+              "work": "<p>Multiply Neil\\'s share by \\(\\frac{3}{4}\\):</p><p>\\[D = \\frac{3}{4} \\times \\$540 = 3 \\times \\$135 = \\mathbf{\\$405}\\]</p>"
             }
           ],
           "meta": {
@@ -4463,8 +4519,15 @@
               "answer": 1,
               "steps": [
                 {
-                  "explain": "Explanation",
-                  "work": "<div style=\"text-align: left;\"><p>\\(48.4 - 26.8 = 21.6\\)</p><p>\\(21.6 \\div (13-5) = 2.7\\)</p><p>\\(48.4 - (2.7 \\times 2) = \\mathbf{43.0}\\)</p></div>"
+                  "explain": "Find the common difference of the arithmetic sequence",
+                  "work": "<p>The sequence progresses from the 5th number (\\(26.8\\)) to the 13th number (\\(48.4\\)) over \\(13 - 5 = 8\\) steps:</p><p>\\[d = \\frac{48.4 - 26.8}{8} = \\frac{21.6}{8} = \\mathbf{2.7}\\]</p>"
+                },
+                {
+                  "explain": "Calculate the eleventh number",
+                  "work": "<p>The 11th number is 2 steps before the 13th number:</p><p>\\[T_{11} = 48.4 - 2 \\times 2.7 = 48.4 - 5.4 = \\mathbf{43.0}\\]</p><p><em>(Or moving forward from the 5th number: \\(26.8 + 6 \\times 2.7 = 26.8 + 16.2 = 43.0\\).)</em></p>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 135\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"115\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\"><text x=\"25\" y=\"32\" font-weight=\"700\" fill=\"#0f172a\">Common Difference: (48.4 − 26.8) ÷ 8 = 2.7</text><g transform=\"translate(25, 45)\"><rect x=\"0\" y=\"0\" width=\"85\" height=\"32\" rx=\"4\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"42\" y=\"20\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#0f172a\">T₅ = 26.8</text><text x=\"100\" y=\"16\" font-size=\"11\" fill=\"#2563eb\">+6×2.7 →</text><rect x=\"145\" y=\"0\" width=\"85\" height=\"32\" rx=\"4\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"187\" y=\"20\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#1d4ed8\">T₁₁ = 43.0</text><text x=\"245\" y=\"16\" font-size=\"11\" fill=\"#2563eb\">+2×2.7 →</text><rect x=\"290\" y=\"0\" width=\"60\" height=\"32\" rx=\"4\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"320\" y=\"20\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#0f172a\">T₁₃ = 48.4</text></g><rect x=\"25\" y=\"88\" width=\"330\" height=\"26\" rx=\"4\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1\"/><text x=\"190\" y=\"106\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#065f46\">T₁₁ = 48.4 − 2(2.7) = 43.0</text></g></svg>"
+                  }
                 }
               ]
             },
@@ -4482,8 +4545,19 @@
               "answer": 4,
               "steps": [
                 {
-                  "explain": "Explanation",
-                  "work": "<div style=\"text-align: left;\"><p>Find by trial and error!</p><p>If the difference from 26.8 or 48.4 is the multiple of 2.7 then it is in the sequence.</p></div>"
+                  "explain": "Understand the condition for a number to belong to the sequence",
+                  "work": "<p>Any number \\(x\\) in the sequence must differ from a known term (such as \\(26.8\\)) by an integer multiple of the common difference \\(d = 2.7\\):</p><p>\\[\\frac{x - 26.8}{2.7} \\in \\mathbb{Z}\\]</p>"
+                },
+                {
+                  "explain": "Test each candidate option",
+                  "work": "<p>Test the options:</p><ul><li>\\(29.5 - 26.8 = 2.7 = 1 \\times 2.7\\) (6th term) \\(\\checkmark\\)</li><li>\\(24.1 - 26.8 = -2.7 = -1 \\times 2.7\\) (4th term) \\(\\checkmark\\)</li><li>\\(51.1 - 48.4 = 2.7 = 1 \\times 2.7\\) (14th term) \\(\\checkmark\\)</li><li>\\(53.8 - 48.4 = 5.4 = 2 \\times 2.7\\) (15th term) \\(\\checkmark\\)</li><li>\\(46.7 - 26.8 = 19.9 \\implies \\frac{19.9}{2.7} \\approx 7.37\\) (Not an integer!)</li></ul>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 145\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"125\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\"><text x=\"25\" y=\"30\" font-weight=\"700\" fill=\"#0f172a\">Checking Terms against Common Difference d = 2.7:</text><text x=\"25\" y=\"48\" fill=\"#15803d\">✓ 29.5 = 26.8 + 2.7 (T₆)</text><text x=\"25\" y=\"65\" fill=\"#15803d\">✓ 24.1 = 26.8 − 2.7 (T₄)</text><text x=\"25\" y=\"82\" fill=\"#15803d\">✓ 51.1 = 48.4 + 2.7 (T₁₄)  |  53.8 = 48.4 + 5.4 (T₁₅)</text><rect x=\"25\" y=\"94\" width=\"330\" height=\"30\" rx=\"5\" fill=\"#fef2f2\" stroke=\"#fca5a5\" stroke-width=\"1.2\"/><text x=\"190\" y=\"114\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#dc2626\">46.7 − 26.8 = 19.9 (19.9 ÷ 2.7 ≈ 7.37, not in sequence!)</text></g></svg>"
+                  }
+                },
+                {
+                  "explain": "Conclude the number not in the sequence",
+                  "work": "<p>Therefore, <strong>46.7</strong> is not a number in the sequence.</p>"
                 }
               ]
             }
@@ -5199,7 +5273,7 @@
           "type": "mc",
           "stem": "The shapes in this sequence follow a rule.\n\nWhat is the rule?",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 785 130\" width=\"100%\" height=\"auto\"><image href=\"/selective/t5-q29.jpg\" x=\"0\" y=\"0\" width=\"785\" height=\"130\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 110\" style=\"max-width: 480px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g fill=\"#1e293b\"><g transform=\"translate(50, 55)\"><circle cx=\"0\" cy=\"0\" r=\"28\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"7\"/><path d=\"M12,12 Q28,28 34,36 Q22,30 8,18 Z\" fill=\"#1e293b\"/></g><g transform=\"translate(150, 55)\"><g transform=\"rotate(45)\"><circle cx=\"0\" cy=\"0\" r=\"28\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"7\"/><path d=\"M12,12 Q28,28 34,36 Q22,30 8,18 Z\" fill=\"#1e293b\"/></g></g><g transform=\"translate(250, 55)\"><g transform=\"rotate(90)\"><circle cx=\"0\" cy=\"0\" r=\"28\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"7\"/><path d=\"M12,12 Q28,28 34,36 Q22,30 8,18 Z\" fill=\"#1e293b\"/></g></g><g transform=\"translate(350, 55)\"><g transform=\"rotate(135)\"><circle cx=\"0\" cy=\"0\" r=\"28\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"7\"/><path d=\"M12,12 Q28,28 34,36 Q22,30 8,18 Z\" fill=\"#1e293b\"/></g></g><g transform=\"translate(450, 55)\"><g transform=\"rotate(180)\"><circle cx=\"0\" cy=\"0\" r=\"28\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"7\"/><path d=\"M12,12 Q28,28 34,36 Q22,30 8,18 Z\" fill=\"#1e293b\"/></g></g></g></svg>"
           },
           "options": [
             "rotate 15° clockwise",
@@ -5211,8 +5285,15 @@
           "answer": 4,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>Rotate 45 degrees clockwise.</p></div>"
+              "explain": "Track the orientation of the tail of the shape",
+              "work": "<p>Look at the position of the tail on the letter-like shape in each consecutive step:</p><ol><li><strong>1st shape:</strong> Tail points down-right (South-East).</li><li><strong>2nd shape:</strong> Tail points straight down (South).</li><li><strong>3rd shape:</strong> Tail points down-left (South-West).</li><li><strong>4th shape:</strong> Tail points straight left (West).</li><li><strong>5th shape:</strong> Tail points up-left (North-West).</li></ol>"
+            },
+            {
+              "explain": "Calculate the degree and direction of rotation",
+              "work": "<p>From South-East to South is an angle of \\(45^\\circ\\) in the <strong>clockwise</strong> direction. Each successive step turns exactly \\(45^\\circ\\) clockwise:</p><p>\\[\\text{Rule} = \\mathbf{\\text{rotate } 45^\\circ\\text{ clockwise}}\\]</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 135\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"115\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\"><text x=\"25\" y=\"32\" font-weight=\"700\" fill=\"#0f172a\">Rotation Rule Analysis:</text><text x=\"25\" y=\"52\" fill=\"#334155\">1st: Tail points South-East (135°)</text><text x=\"25\" y=\"70\" fill=\"#334155\">2nd: Tail points South (180°) → +45° clockwise</text><text x=\"25\" y=\"88\" fill=\"#334155\">3rd: Tail points South-West (225°) → +45° clockwise</text><rect x=\"25\" y=\"96\" width=\"330\" height=\"24\" rx=\"4\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1\"/><text x=\"190\" y=\"113\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#065f46\">Rule: Rotate 45° clockwise</text></g></svg>"
+              }
             }
           ],
           "meta": {
@@ -5235,8 +5316,15 @@
           "answer": 0,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>\\(60L \\times 75\\% = 45L\\)</p><p>\\(45/1.5 = 30\\) minutes</p></div>"
+              "explain": "Calculate the volume of water corresponding to 75% of the bath",
+              "work": "<p>Find 75% of the 60 L total bath capacity:</p><p>\\[\\text{Volume to pump} = 60\\text{ L} \\times 75\\% = 60 \\times \\frac{3}{4} = 45\\text{ litres}\\]</p>"
+            },
+            {
+              "explain": "Divide by the pump rate to find the total time in minutes",
+              "work": "<p>Divide the volume by the pumping rate of 1.5 L per minute:</p><p>\\[\\text{Time} = \\frac{45\\text{ L}}{1.5\\text{ L/min}} = \\frac{45}{\\frac{3}{2}} = 45 \\times \\frac{2}{3} = \\mathbf{30\\text{ minutes}}\\]</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 135\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"115\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\"><rect x=\"25\" y=\"24\" width=\"155\" height=\"42\" rx=\"6\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.2\"/><text x=\"102\" y=\"42\" text-anchor=\"middle\" fill=\"#1e40af\">Water to Pump (75%)</text><text x=\"102\" y=\"58\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#1d4ed8\">60 L × 0.75 = 45 L</text><rect x=\"200\" y=\"24\" width=\"155\" height=\"42\" rx=\"6\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.2\"/><text x=\"277\" y=\"42\" text-anchor=\"middle\" fill=\"#1e40af\">Pumping Rate</text><text x=\"277\" y=\"58\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#1d4ed8\">1.5 L / minute</text><rect x=\"25\" y=\"78\" width=\"330\" height=\"34\" rx=\"6\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1.2\"/><text x=\"190\" y=\"100\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#065f46\">Time = 45 L ÷ 1.5 L/min = 30 minutes</text></g></svg>"
+              }
             }
           ],
           "meta": {
@@ -5259,8 +5347,19 @@
           "answer": 3,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>Let x be number of tests done.</p><p>Total after last test = \\(17 \\times x\\)</p><p>Total before last test = \\((x-1) \\times 18\\)</p><p>Total after last test = \\((x-1) \\times 18 + 13\\)</p><p>\\((x-1) \\times 18 + 13 = 17 \\times x\\)</p><p>\\(18x - 5 = 17x\\)</p><p>\\(x = 5\\)</p></div>"
+              "explain": "Set up the algebraic equation for the total marks",
+              "work": "<p>Let \\(n\\) be the total number of tests Riya sat altogether (including the last exam). Then the number of tests before the last exam was \\(n - 1\\).</p><ul><li>Total marks before last test: \\(18 \\times (n - 1)\\)</li><li>Total marks after last test: \\(17 \\times n\\)</li></ul>"
+            },
+            {
+              "explain": "Form and solve the equation with the last test score of 13",
+              "work": "<p>Adding the last test score (\\(13\\)) to the previous total gives the new total:</p><p>\\[18(n - 1) + 13 = 17n\\]</p><p>\\[18n - 18 + 13 = 17n\\]</p><p>\\[18n - 5 = 17n \\implies 18n - 17n = 5 \\implies \\mathbf{n = 5}\\]</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 145\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"125\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\"><text x=\"25\" y=\"32\" font-weight=\"700\" fill=\"#0f172a\">Average Balance Equation:</text><text x=\"25\" y=\"52\" fill=\"#334155\">Total before: 18 × (n − 1)</text><text x=\"25\" y=\"70\" fill=\"#334155\">Total after adding 13: 18(n − 1) + 13 = 17n</text><text x=\"25\" y=\"88\" fill=\"#334155\">18n − 5 = 17n  →  n = 5</text><rect x=\"25\" y=\"96\" width=\"330\" height=\"26\" rx=\"4\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1\"/><text x=\"190\" y=\"114\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#065f46\">Total tests sat = 5 (Check: 4×18 + 13 = 85; 85÷5 = 17)</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Verify the solution",
+              "work": "<p><strong>Check:</strong></p><ul><li>First 4 tests: \\(4 \\times 18 = 72\\) total marks</li><li>5th test: \\(13\\) marks \\(\\implies\\) total = \\(72 + 13 = 85\\)</li><li>New average: \\(\\frac{85}{5} = 17\\) \\(\\checkmark\\)</li></ul><p>Riya sat <strong>5 tests altogether</strong>.</p>"
             }
           ],
           "meta": {
@@ -5321,8 +5420,19 @@
           "answer": 1,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>\\(\\frac{9}{11} - \\frac{3}{7} = \\frac{30}{77}\\)</p><p>This is equal to 120 L, therefore 1/77 of the total capacity = 4 L</p><p>Total capacity = \\(4 \\times 77 = 308\\)L</p></div>"
+              "explain": "Calculate the fraction represented by the added 120 litres",
+              "work": "<p>Subtract the initial fraction from the final fraction with a common denominator of 77:</p><p>\\[\\Delta f = \\frac{9}{11} - \\frac{3}{7} = \\frac{63 - 33}{77} = \\frac{30}{77}\\]</p>"
+            },
+            {
+              "explain": "Relate this fraction to the added water volume",
+              "work": "<p>The \\(\\frac{30}{77}\\) fraction of the reservoir corresponds to 120 litres:</p><p>\\[\\frac{30}{77} \\times \\text{Capacity} = 120\\text{ L}\\]</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 145\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"125\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\"><text x=\"25\" y=\"32\" font-weight=\"700\" fill=\"#0f172a\">Fraction Difference: 9/11 − 3/7 = 30/77</text><rect x=\"25\" y=\"44\" width=\"330\" height=\"34\" rx=\"5\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1\"/><text x=\"190\" y=\"65\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#1e40af\">30/77 of Capacity = 120 Litres</text><rect x=\"25\" y=\"88\" width=\"330\" height=\"34\" rx=\"5\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1.2\"/><text x=\"190\" y=\"103\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#065f46\">1/77 of Capacity = 120 ÷ 30 = 4 L</text><text x=\"190\" y=\"117\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#047857\">Full Capacity (77/77) = 4 × 77 = 308 Litres</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Solve for the full capacity",
+              "work": "<p>Find \\(\\frac{1}{77}\\) of the capacity:</p><p>\\[120 \\div 30 = 4\\text{ L}\\]</p><p>Multiply by 77 for full capacity:</p><p>\\[\\text{Total Capacity} = 4 \\times 77 = \\mathbf{308\\text{ litres}}\\]</p>"
             }
           ],
           "meta": {
@@ -5350,8 +5460,15 @@
               "answer": 4,
               "steps": [
                 {
-                  "explain": "Explanation",
-                  "work": "<div style=\"text-align: left;\"><p>\\(280 \\times 5/7 = 200\\) men</p><p>half of men score – 100 men scoring</p></div>"
+                  "explain": "Calculate the total number of men in the club",
+                  "work": "<p>Five sevenths (\\(\\frac{5}{7}\\)) of the 280 members are men:</p><p>\\[\\text{Number of men} = 280 \\times \\frac{5}{7} = 40 \\times 5 = 200\\text{ men}\\]</p>"
+                },
+                {
+                  "explain": "Calculate how many men do scoring",
+                  "work": "<p>One half (\\(\\frac{1}{2}\\)) of the men do bowling, which means the other half do scoring:</p><p>\\[\\text{Men doing scoring} = 200 \\times \\left(1 - \\frac{1}{2}\\right) = 200 \\times \\frac{1}{2} = \\mathbf{100\\text{ men}}\\]</p>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 135\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"115\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\"><text x=\"25\" y=\"32\" font-weight=\"700\" fill=\"#0f172a\">Total Men = 280 × 5/7 = 200</text><g transform=\"translate(25, 45)\"><rect x=\"0\" y=\"0\" width=\"160\" height=\"34\" rx=\"5\" fill=\"#f1f5f9\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"80\" y=\"18\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">Men Bowling (1/2)</text><text x=\"80\" y=\"30\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#334155\">100</text><rect x=\"170\" y=\"0\" width=\"160\" height=\"34\" rx=\"5\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.2\"/><text x=\"250\" y=\"18\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e40af\">Men Scoring (1/2)</text><text x=\"250\" y=\"30\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#1d4ed8\">100</text></g><rect x=\"25\" y=\"90\" width=\"330\" height=\"24\" rx=\"4\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1\"/><text x=\"190\" y=\"107\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#065f46\">Men who score = 200 ÷ 2 = 100</text></g></svg>"
+                  }
                 }
               ]
             },
@@ -5369,8 +5486,15 @@
               "answer": 2,
               "steps": [
                 {
-                  "explain": "Explanation",
-                  "work": "<div style=\"text-align: left;\"><p>100 men scoring</p><p>80 women in total, scoring = \\(3/5 \\times 80 = 48\\)</p><p>Total scorers = 148</p><p>Fraction = \\(148/280 = 37/70\\)</p></div>"
+                  "explain": "Calculate the number of women who do scoring",
+                  "work": "<p>Total women in the club: \\(280 - 200 = 80\\text{ women}\\).</p><p>Since \\(\\frac{2}{5}\\) of women do bowling, \\(\\frac{3}{5}\\) of women do scoring:</p><p>\\[\\text{Women doing scoring} = 80 \\times \\frac{3}{5} = 16 \\times 3 = 48\\text{ women}\\]</p>"
+                },
+                {
+                  "explain": "Find total scoring members and express as a simplified fraction",
+                  "work": "<p>Add scoring men and scoring women:</p><p>\\[\\text{Total scoring} = 100\\text{ (men)} + 48\\text{ (women)} = 148\\text{ members}\\]</p><p>Divide by the total club membership (280) and simplify by dividing by 4:</p><p>\\[\\text{Fraction} = \\frac{148}{280} = \\frac{148 \\div 4}{280 \\div 4} = \\mathbf{\\frac{37}{70}}\\]</p>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 145\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"125\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\"><text x=\"25\" y=\"30\" font-weight=\"700\" fill=\"#0f172a\">Total Scorers:</text><text x=\"25\" y=\"50\" fill=\"#334155\">• Men scoring: 100</text><text x=\"25\" y=\"68\" fill=\"#334155\">• Women scoring: 80 × 3/5 = 48</text><text x=\"25\" y=\"86\" font-weight=\"600\" fill=\"#334155\">Total Scorers = 100 + 48 = 148</text><rect x=\"25\" y=\"96\" width=\"330\" height=\"28\" rx=\"5\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1.2\"/><text x=\"190\" y=\"115\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#065f46\">Fraction = 148 / 280 = 37 / 70</text></g></svg>"
+                  }
                 }
               ]
             }
