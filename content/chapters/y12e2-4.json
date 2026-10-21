@@ -105,37 +105,43 @@
           "type": "multipart",
           "difficulty": "hard",
           "timeLimit": 60,
-          "stem": "Consider two straight tunnels in three-dimensional space.",
-          "hint": "Model each tunnel as a line in 3D; find the shared point before measuring the segments.",
+          "stem": "Two tunnels are planned to be dug through Sydney’s Blue Mountains to improve traffic infrastructure.\n\nDigging at one end of the tunnel is to begin at the point \\((-9,\\ 15,\\ 7)\\) at Blackheath and continue in the direction \\(7\\mathbf{i}-5\\mathbf{j}-\\mathbf{k}\\). The digging at the other end of the tunnel will start at the coordinate \\((33,\\ 5,\\ -1)\\) near Springwood and continue in the direction \\(-14\\mathbf{i}+3\\mathbf{k}\\). Both sections are to be straight lines.\n\nThe coordinates are measured relative to a fixed origin \\(O\\), where one unit is 500 metres.",
+          "meta": {
+            "source": "Abbotsleigh 2021 4U Trials & Solutions",
+            "school": "Abbotsleigh",
+            "year": 2021,
+            "number": "13(d)"
+          },
           "parts": [
             {
               "id": "abbotsleigh2021-ext2-q13d-i",
               "type": "mc",
               "difficulty": "hard",
               "timeLimit": 60,
-              "stem": "A tunnel begins at \\((-9,15,7)\\) in direction \\(7\\mathbf i-5\\mathbf j-\\mathbf k\\). A second begins at \\((33,5,-1)\\) in direction \\(-14\\mathbf i+3\\mathbf k\\). Find their intersection point.",
-              "hint": "Write a parametric vector equation for each line and equate the x-, y- and z-coordinates.",
+              "stem": "Show that the two sections of the tunnel will eventually meet at a point near Wentworth Falls and find the coordinates of this point.",
+              "hint": "Equate the components of the two vector equations; solve j and k first, then check i.",
               "steps": [
                 {
-                  "explain": "Write both tunnel lines using parameters λ and μ.",
-                  "work": "\\(\\mathbf r_1=(-9,15,7)+\\lambda(7,-5,-1),\\quad\\mathbf r_2=(33,5,-1)+\\mu(-14,0,3).\\)",
+                  "explain": "Write a vector equation for each section.",
+                  "work": "\\(\\text{Blackheath: }\\ \\mathbf{r}=\\begin{pmatrix}-9\\\\ 15\\\\ 7\\end{pmatrix}+\\lambda\\begin{pmatrix}7\\\\ -5\\\\ -1\\end{pmatrix},\\qquad\\text{Springwood: }\\ \\mathbf{r}=\\begin{pmatrix}33\\\\ 5\\\\ -1\\end{pmatrix}+\\mu\\begin{pmatrix}-14\\\\ 0\\\\ 3\\end{pmatrix}\\)"
+                },
+                {
+                  "explain": "If they meet, all three components are equal for some \\(\\lambda\\) and \\(\\mu\\).",
+                  "work": "\\(\\mathbf{i}:\\ -9+7\\lambda=33-14\\mu,\\qquad\\mathbf{j}:\\ 15-5\\lambda=5,\\qquad\\mathbf{k}:\\ 7-\\lambda=-1+3\\mu\\)"
+                },
+                {
+                  "explain": "Solve the two simple equations first.",
+                  "work": "\\(\\mathbf{j}:\\ 5\\lambda=10\\Rightarrow\\lambda=2;\\qquad\\mathbf{k}:\\ 7-2=-1+3\\mu\\Rightarrow\\mu=2\\)"
+                },
+                {
+                  "explain": "Check the \\(\\mathbf{i}\\) equation with these values. It is satisfied, so the lines really do meet.",
+                  "work": "\\(-9+7(2)=5,\\qquad 33-14(2)=5\\ \\checkmark\\)"
+                },
+                {
+                  "explain": "Substitute \\(\\lambda=2\\) to get the meeting point.",
+                  "work": "\\(\\mathbf{r}=\\begin{pmatrix}-9\\\\ 15\\\\ 7\\end{pmatrix}+2\\begin{pmatrix}7\\\\ -5\\\\ -1\\end{pmatrix}=\\begin{pmatrix}5\\\\ 5\\\\ 5\\end{pmatrix}\\)",
                   "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 370 220\" role=\"img\" aria-label=\"Two straight tunnel lines from Blackheath and Springwood meeting near Wentworth Falls\">\n    <rect width=\"370\" height=\"220\" rx=\"8\" fill=\"white\"/><path d=\"M55 175L176 132L315 75\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><path d=\"M315 175L176 132L218 58\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/>\n    <circle cx=\"55\" cy=\"175\" r=\"4\" fill=\"#ea580c\"/><circle cx=\"315\" cy=\"175\" r=\"4\" fill=\"#ea580c\"/><circle cx=\"176\" cy=\"132\" r=\"5\" fill=\"#16a34a\"/>\n    <g font-family=\"Arial\" font-size=\"11\" fill=\"#334155\"><text x=\"10\" y=\"193\">Blackheath (−9,15,7)</text><text x=\"244\" y=\"194\">Springwood (33,5,−1)</text><text x=\"180\" y=\"127\">(5,5,5)</text><text x=\"272\" y=\"60\">7i−5j−k</text><text x=\"211\" y=\"48\">−14i+3k</text></g></svg>"
-                  }
-                },
-                {
-                  "explain": "Use the y-coordinates to determine λ.",
-                  "work": "\\(15-5\\lambda=5\\Rightarrow\\lambda=2.\\)"
-                },
-                {
-                  "explain": "Substitute λ into the x-coordinates to find μ.",
-                  "work": "\\(-9+7(2)=33-14\\mu\\Rightarrow5=33-14\\mu\\Rightarrow\\mu=2.\\)"
-                },
-                {
-                  "explain": "Substitute the parameters back into either line and verify all coordinates.",
-                  "work": "\\((-9,15,7)+2(7,-5,-1)=(5,5,5),\\quad(33,5,-1)+2(-14,0,3)=(5,5,5).\\)",
-                  "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 370 220\" role=\"img\" aria-label=\"Two straight tunnel lines from Blackheath and Springwood meeting near Wentworth Falls\">\n    <rect width=\"370\" height=\"220\" rx=\"8\" fill=\"white\"/><path d=\"M55 175L176 132L315 75\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2.5\"/><path d=\"M315 175L176 132L218 58\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2.5\"/>\n    <circle cx=\"55\" cy=\"175\" r=\"4\" fill=\"#ea580c\"/><circle cx=\"315\" cy=\"175\" r=\"4\" fill=\"#ea580c\"/><circle cx=\"176\" cy=\"132\" r=\"5\" fill=\"#16a34a\"/>\n    <g font-family=\"Arial\" font-size=\"11\" fill=\"#334155\"><text x=\"10\" y=\"193\">Blackheath (−9,15,7)</text><text x=\"244\" y=\"194\">Springwood (33,5,−1)</text><text x=\"180\" y=\"127\">(5,5,5)</text><text x=\"272\" y=\"60\">7i−5j−k</text><text x=\"211\" y=\"48\">−14i+3k</text></g></svg>"
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 170\" width=\"360\" height=\"170\"><rect width=\"360\" height=\"170\" rx=\"8\" fill=\"white\"/><line x1=\"40.0\" y1=\"50.0\" x2=\"150.0\" y2=\"112.0\" stroke=\"#ea580c\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"320.0\" y1=\"122.0\" x2=\"150.0\" y2=\"112.0\" stroke=\"#7c3aed\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"40.0\" cy=\"50.0\" r=\"4.5\" fill=\"#ea580c\"/><circle cx=\"320.0\" cy=\"122.0\" r=\"4.5\" fill=\"#7c3aed\"/><circle cx=\"150.0\" cy=\"112.0\" r=\"5\" fill=\"#dc2626\"/><text x=\"34.0\" y=\"38.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\" text-anchor=\"start\">Blackheath (−9, 15, 7)</text><text x=\"328.0\" y=\"144.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#7c3aed\" text-anchor=\"end\">Springwood (33, 5, −1)</text><text x=\"158.0\" y=\"100.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\">meet at (5, 5, 5)</text></svg>"
                   }
                 }
               ],
@@ -143,79 +149,73 @@
               "meta": {
                 "source": "Abbotsleigh 2021 4U Trials & Solutions",
                 "school": "Abbotsleigh",
-                "year": 2021
+                "year": 2021,
+                "number": "13(d)(i)"
               },
               "options": [
-                "\\((5,5,5)\\)",
-                "\\((5,5,4)\\)",
-                "\\((5,7,5)\\)",
-                "\\((19,5,5)\\)"
+                "\\((5,\\ 7,\\ 5)\\)",
+                "\\((19,\\ 5,\\ 5)\\)",
+                "\\((5,\\ 5,\\ 5)\\)",
+                "\\((5,\\ 5,\\ 4)\\)"
               ],
-              "answer": 0,
-              "solution": "\\((5,5,5)\\)",
+              "answer": 2,
               "keyPoints": [
                 {
-                  "text": "Find their intersection point",
-                  "note": "Use the y-coordinate equation first, then substitute its parameter into x and z to verify the meeting point."
+                  "text": "will eventually meet",
+                  "note": "Set the two vector equations equal: the j-component gives λ, the k-component gives μ; then check the i-component."
                 }
-              ],
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 370 220\" role=\"img\" aria-label=\"Two straight tunnel lines from Blackheath and Springwood meeting near Wentworth Falls\">\n    <rect width=\"370\" height=\"220\" rx=\"8\" fill=\"white\"/><path d=\"M55 175L176 132L315 75\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><path d=\"M315 175L176 132L218 58\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/>\n    <circle cx=\"55\" cy=\"175\" r=\"4\" fill=\"#ea580c\"/><circle cx=\"315\" cy=\"175\" r=\"4\" fill=\"#ea580c\"/><circle cx=\"176\" cy=\"132\" r=\"5\" fill=\"#16a34a\"/>\n    <g font-family=\"Arial\" font-size=\"11\" fill=\"#334155\"><text x=\"10\" y=\"193\">Blackheath (−9,15,7)</text><text x=\"244\" y=\"194\">Springwood (33,5,−1)</text><text x=\"180\" y=\"127\">(5,5,5)</text><text x=\"272\" y=\"60\">7i−5j−k</text><text x=\"211\" y=\"48\">−14i+3k</text></g></svg>"
-              }
+              ]
             },
             {
               "id": "abbotsleigh2021-ext2-q13d-ii",
               "type": "mc",
               "difficulty": "hard",
               "timeLimit": 60,
-              "stem": "Using the intersection point \\((5,5,5)\\), find the total tunnel length to the nearest kilometre. One coordinate unit is 500 metres.",
-              "hint": "Find each line segment length in coordinate units using 3D distance, add them, then multiply by 0.5 km per unit.",
+              "stem": "Find the total length of the two tunnels to the nearest kilometre.",
+              "hint": "Find each tunnel's length to (5, 5, 5), add them, then convert units (1 unit = 0.5 km).",
               "steps": [
                 {
-                  "explain": "Find the distance from Blackheath to the intersection.",
-                  "work": "\\(d_1=\\sqrt{(5+9)^2+(5-15)^2+(5-7)^2}=\\sqrt{300}.\\)",
-                  "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 370 220\" role=\"img\" aria-label=\"Two straight tunnel lines from Blackheath and Springwood meeting near Wentworth Falls\">\n    <rect width=\"370\" height=\"220\" rx=\"8\" fill=\"white\"/><path d=\"M55 175L176 132L315 75\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2.5\"/><path d=\"M315 175L176 132L218 58\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2.5\"/>\n    <circle cx=\"55\" cy=\"175\" r=\"4\" fill=\"#ea580c\"/><circle cx=\"315\" cy=\"175\" r=\"4\" fill=\"#ea580c\"/><circle cx=\"176\" cy=\"132\" r=\"5\" fill=\"#16a34a\"/>\n    <g font-family=\"Arial\" font-size=\"11\" fill=\"#334155\"><text x=\"10\" y=\"193\">Blackheath (−9,15,7)</text><text x=\"244\" y=\"194\">Springwood (33,5,−1)</text><text x=\"180\" y=\"127\">(5,5,5)</text><text x=\"272\" y=\"60\">7i−5j−k</text><text x=\"211\" y=\"48\">−14i+3k</text></g></svg>"
-                  }
+                  "explain": "Length from Blackheath \\((-9,15,7)\\) to the meeting point \\((5,5,5)\\).",
+                  "work": "\\(\\sqrt{(5+9)^2+(5-15)^2+(5-7)^2}=\\sqrt{196+100+4}=\\sqrt{300}\\approx17.32\\)"
                 },
                 {
-                  "explain": "Find the distance from Springwood to the intersection.",
-                  "work": "\\(d_2=\\sqrt{(5-33)^2+(5-5)^2+(5+1)^2}=\\sqrt{820}.\\)"
+                  "explain": "Length from Springwood \\((33,5,-1)\\) to \\((5,5,5)\\).",
+                  "work": "\\(\\sqrt{(5-33)^2+(5-5)^2+(5+1)^2}=\\sqrt{784+0+36}=\\sqrt{820}\\approx28.64\\)"
                 },
                 {
-                  "explain": "Convert the total from coordinate units to kilometres.",
-                  "work": "\\(L=0.5(\\sqrt{300}+\\sqrt{820})\\approx22.97\\text{ km}\\Rightarrow\\boxed{23\\text{ km}}.\\)"
+                  "explain": "Total in coordinate units:",
+                  "work": "\\(\\sqrt{300}+\\sqrt{820}\\approx45.96\\ \\text{units}\\)"
+                },
+                {
+                  "explain": "Convert: one unit is 500 m = 0.5 km.",
+                  "work": "\\(45.96\\times0.5\\approx22.98\\ \\text{km}\\approx23\\ \\text{km}\\)"
+                },
+                {
+                  "explain": "Forgetting the conversion gives 46; 14 km and 9 km are the two tunnels separately."
                 }
               ],
               "xp": 1,
               "meta": {
                 "source": "Abbotsleigh 2021 4U Trials & Solutions",
                 "school": "Abbotsleigh",
-                "year": 2021
+                "year": 2021,
+                "number": "13(d)(ii)"
               },
               "options": [
-                "\\(46\\text{ km}\\)",
-                "\\(23\\text{ km}\\)",
-                "\\(15\\text{ km}\\)",
-                "\\(22\\text{ km}\\)"
+                "\\(9\\ \\text{km}\\)",
+                "\\(23\\ \\text{km}\\)",
+                "\\(46\\ \\text{km}\\)",
+                "\\(14\\ \\text{km}\\)"
               ],
               "answer": 1,
-              "solution": "\\(23\\text{ km}\\)",
               "keyPoints": [
                 {
-                  "text": "total tunnel length",
-                  "note": "Add both 3D distances and multiply by 0.5 km for each coordinate unit."
+                  "text": "to the nearest kilometre",
+                  "note": "Add the two lengths in coordinate units, then multiply by 0.5 to convert to kilometres."
                 }
               ]
             }
-          ],
-          "xp": 1,
-          "meta": {
-            "source": "Abbotsleigh 2021 4U Trials & Solutions",
-            "school": "Abbotsleigh",
-            "year": 2021,
-            "number": "13(d)"
-          }
+          ]
         }
       ]
     },
@@ -509,48 +509,56 @@
           "type": "multipart",
           "difficulty": "hard",
           "timeLimit": 60,
-          "stem": "Consider three points in three-dimensional space: \\(A=(3,2,9)\\), \\(B=(-5,11,6)\\), and \\(C=(4,0,-8)\\).",
-          "hint": "Build the two vectors from A, then use the dot-product angle formula and the triangle-area formula.",
+          "stem": "Relative to a fixed origin \\(O\\), the respective position vectors of three points \\(A\\), \\(B\\) and \\(C\\) are:\n\n\\(\\begin{pmatrix}3\\\\ 2\\\\ 9\\end{pmatrix},\\ \\begin{pmatrix}-5\\\\ 11\\\\ 6\\end{pmatrix}\\) and \\(\\begin{pmatrix}4\\\\ 0\\\\ -8\\end{pmatrix}.\\)",
+          "meta": {
+            "source": "Abbotsleigh 2021 4U Trials & Solutions",
+            "school": "Abbotsleigh",
+            "year": 2021,
+            "number": "11(d)"
+          },
           "parts": [
             {
               "id": "abbotsleigh2021-ext2-q11d-i",
               "type": "mc",
               "difficulty": "medium",
               "timeLimit": 60,
-              "stem": "The position vectors are \\(A=(3,2,9)\\), \\(B=(-5,11,6)\\), and \\(C=(4,0,-8)\\). Find \\(\\overrightarrow{AB}\\) and \\(\\overrightarrow{AC}\\).",
-              "hint": "For a vector from P to Q, subtract the coordinates of P from the coordinates of Q.",
+              "stem": "Determine, in component form, the vectors \\(\\overrightarrow{AB}\\) and \\(\\overrightarrow{AC}\\).",
+              "hint": "AB = OB − OA (end minus start).",
               "steps": [
                 {
-                  "explain": "A vector from A to another point is found by subtracting A’s coordinates from the endpoint coordinates.",
-                  "work": "\\(\\overrightarrow{AB}=B-A=(-5-3,\\,11-2,\\,6-9).\\)"
+                  "explain": "A vector from \\(A\\) to \\(B\\) is \"end minus start\".",
+                  "work": "\\(\\overrightarrow{AB}=\\overrightarrow{OB}-\\overrightarrow{OA},\\qquad\\overrightarrow{AC}=\\overrightarrow{OC}-\\overrightarrow{OA}\\)"
                 },
                 {
-                  "explain": "Subtract coordinate by coordinate to get the first vector.",
-                  "work": "\\(\\overrightarrow{AB}=(-8,9,-3).\\)"
+                  "explain": "Subtract component by component.",
+                  "work": "\\(\\overrightarrow{AB}=\\begin{pmatrix}-5\\\\ 11\\\\ 6\\end{pmatrix}-\\begin{pmatrix}3\\\\ 2\\\\ 9\\end{pmatrix}=\\begin{pmatrix}-8\\\\ 9\\\\ -3\\end{pmatrix}\\)"
                 },
                 {
-                  "explain": "Repeat the same subtraction for C.",
-                  "work": "\\(\\overrightarrow{AC}=C-A=(4-3,\\,0-2,\\,-8-9)=(1,-2,-17).\\)"
+                  "explain": "Do the same for \\(\\overrightarrow{AC}\\).",
+                  "work": "\\(\\overrightarrow{AC}=\\begin{pmatrix}4\\\\ 0\\\\ -8\\end{pmatrix}-\\begin{pmatrix}3\\\\ 2\\\\ 9\\end{pmatrix}=\\begin{pmatrix}1\\\\ -2\\\\ -17\\end{pmatrix}\\)"
+                },
+                {
+                  "explain": "Subtracting the other way round (\\(\\overrightarrow{OA}-\\overrightarrow{OB}\\)) gives \\(\\overrightarrow{BA}\\) — every sign is reversed."
                 }
               ],
               "xp": 1,
               "meta": {
                 "source": "Abbotsleigh 2021 4U Trials & Solutions",
                 "school": "Abbotsleigh",
-                "year": 2021
+                "year": 2021,
+                "number": "11(d)(i)"
               },
               "options": [
-                "\\(\\overrightarrow{AB}=(8,-9,3),\\;\\overrightarrow{AC}=(-1,2,17)\\)",
-                "\\(\\overrightarrow{AB}=(-8,9,3),\\;\\overrightarrow{AC}=(1,-2,17)\\)",
-                "\\(\\overrightarrow{AB}=(-2,9,-3),\\;\\overrightarrow{AC}=(1,-2,-17)\\)",
-                "\\(\\overrightarrow{AB}=(-8,9,-3),\\;\\overrightarrow{AC}=(1,-2,-17)\\)"
+                "\\(\\overrightarrow{AB}=\\begin{pmatrix}8\\\\ -9\\\\ 3\\end{pmatrix},\\ \\overrightarrow{AC}=\\begin{pmatrix}-1\\\\ 2\\\\ 17\\end{pmatrix}\\)",
+                "\\(\\overrightarrow{AB}=\\begin{pmatrix}-2\\\\ 13\\\\ 15\\end{pmatrix},\\ \\overrightarrow{AC}=\\begin{pmatrix}7\\\\ 2\\\\ 1\\end{pmatrix}\\)",
+                "\\(\\overrightarrow{AB}=\\begin{pmatrix}-8\\\\ 9\\\\ -3\\end{pmatrix},\\ \\overrightarrow{AC}=\\begin{pmatrix}1\\\\ 2\\\\ -17\\end{pmatrix}\\)",
+                "\\(\\overrightarrow{AB}=\\begin{pmatrix}-8\\\\ 9\\\\ -3\\end{pmatrix},\\ \\overrightarrow{AC}=\\begin{pmatrix}1\\\\ -2\\\\ -17\\end{pmatrix}\\)"
               ],
               "answer": 3,
-              "solution": "\\(\\overrightarrow{AB}=(-8,9,-3),\\quad\\overrightarrow{AC}=(1,-2,-17)\\)",
               "keyPoints": [
                 {
-                  "text": "Find \\(\\overrightarrow{AB}\\) and \\(\\overrightarrow{AC}\\)",
-                  "note": "Subtract the starting point A from each endpoint, keeping x, y, z in order."
+                  "text": "Determine, in component form",
+                  "note": "Use end minus start: AB = OB − OA and AC = OC − OA."
                 }
               ]
             },
@@ -559,40 +567,50 @@
               "type": "mc",
               "difficulty": "medium",
               "timeLimit": 60,
-              "stem": "Using the same points, find \\(\\angle BAC\\) to the nearest degree.",
-              "hint": "Use \\(\\cos\\theta=\\frac{\\overrightarrow{AB}\\cdot\\overrightarrow{AC}}{|AB||AC|}\\).",
+              "stem": "Hence find, to the nearest degree, \\(\\angle BAC\\).",
+              "hint": "Use cos θ = (AB · AC) / (|AB||AC|).",
               "steps": [
                 {
-                  "explain": "Find the dot product and both magnitudes.",
-                  "work": "\\(AB\\cdot AC=(-8)(1)+9(-2)+(-3)(-17)=25,\\quad|AB|=\\sqrt{154},\\;|AC|=\\sqrt{294}.\\)"
+                  "explain": "\\(\\angle BAC\\) is the angle between \\(\\overrightarrow{AB}\\) and \\(\\overrightarrow{AC}\\). Use the dot product.",
+                  "work": "\\(\\overrightarrow{AB}\\cdot\\overrightarrow{AC}=\\left|\\overrightarrow{AB}\\right|\\left|\\overrightarrow{AC}\\right|\\cos\\angle BAC\\)"
                 },
                 {
-                  "explain": "Substitute into the cosine formula and solve for the angle.",
-                  "work": "\\(\\cos\\theta=\\frac{25}{\\sqrt{154}\\sqrt{294}}\\Rightarrow\\theta=\\cos^{-1}(\\frac{25}{\\sqrt{45276}})\\approx83.25^\\circ.\\)"
+                  "explain": "Dot product:",
+                  "work": "\\(\\overrightarrow{AB}\\cdot\\overrightarrow{AC}=(-8)(1)+(9)(-2)+(-3)(-17)=-8-18+51=25\\)"
                 },
                 {
-                  "explain": "Round to the nearest degree.",
-                  "work": "\\(\\boxed{\\angle BAC=83^\\circ}.\\)"
+                  "explain": "Magnitudes:",
+                  "work": "\\(\\left|\\overrightarrow{AB}\\right|=\\sqrt{64+81+9}=\\sqrt{154},\\qquad\\left|\\overrightarrow{AC}\\right|=\\sqrt{1+4+289}=\\sqrt{294}\\)"
+                },
+                {
+                  "explain": "Solve for the angle.",
+                  "work": "\\(\\cos\\angle BAC=\\frac{25}{\\sqrt{154}\\,\\sqrt{294}}\\approx0.1175\\ \\Rightarrow\\ \\angle BAC\\approx83.25^\\circ\\approx83^\\circ\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 195\" width=\"320\" height=\"195\"><rect width=\"320\" height=\"195\" rx=\"8\" fill=\"white\"/><path d=\"M60.0 160.0L77.7 16.1L260.0 160.0Z\" fill=\"#e0e7ff\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\" fill-opacity=\"0.45\"/><circle cx=\"60.0\" cy=\"160.0\" r=\"3.5\" fill=\"#1e293b\"/><circle cx=\"77.7\" cy=\"16.1\" r=\"3.5\" fill=\"#1e293b\"/><circle cx=\"260.0\" cy=\"160.0\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"52.0\" y=\"176.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">A(3, 2, 9)</text><text x=\"87.7\" y=\"20.1\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">B(−5, 11, 6)</text><text x=\"274.0\" y=\"178.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">C(4, 0, −8)</text><text x=\"72.0\" y=\"148.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\">83.25°</text><text x=\"60.8\" y=\"88.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\" text-anchor=\"end\">√154</text><text x=\"160.0\" y=\"178.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\" text-anchor=\"middle\">√294</text></svg>"
+                  }
+                },
+                {
+                  "explain": "The dot product is positive, so the angle is acute — \\(97^\\circ\\) would need a negative dot product."
                 }
               ],
               "xp": 1,
               "meta": {
                 "source": "Abbotsleigh 2021 4U Trials & Solutions",
                 "school": "Abbotsleigh",
-                "year": 2021
+                "year": 2021,
+                "number": "11(d)(ii)"
               },
               "options": [
+                "\\(7^\\circ\\)",
                 "\\(83^\\circ\\)",
                 "\\(97^\\circ\\)",
-                "\\(53^\\circ\\)",
-                "\\(127^\\circ\\)"
+                "\\(69^\\circ\\)"
               ],
-              "answer": 0,
-              "solution": "\\(83^\\circ\\)",
+              "answer": 1,
               "keyPoints": [
                 {
-                  "text": "find \\(\\angle BAC\\)",
-                  "note": "The angle at A is between vectors AB and AC; use their dot product and positive magnitudes."
+                  "text": "find, to the nearest degree, \\(\\angle BAC\\)",
+                  "note": "Use the dot product of AB and AC: cos∠BAC = 25 / (√154 √294)."
                 }
               ]
             },
@@ -601,51 +619,47 @@
               "type": "mc",
               "difficulty": "medium",
               "timeLimit": 60,
-              "stem": "Find the area of \\(\\triangle BAC\\) to the nearest square unit.",
-              "hint": "Use \\(Area=\\frac12|AB||AC|\\sin(\\angle BAC)\\), using the angle found in the previous part.",
+              "stem": "Calculate the area of \\(\\Delta BAC\\).",
+              "hint": "Area = ½ |AB| |AC| sin∠BAC.",
               "steps": [
                 {
-                  "explain": "Use the triangle area formula with two side lengths and their included angle.",
-                  "work": "\\(A=\\frac12|AB||AC|\\sin\\theta,\\quad |AB|=\\sqrt{154},~|AC|=\\sqrt{294},~\\theta\\approx83.25^\\circ.\\)"
+                  "explain": "Use the area formula with the two sides from \\(A\\) and the included angle.",
+                  "work": "\\(\\text{Area}=\\frac12\\left|\\overrightarrow{AB}\\right|\\left|\\overrightarrow{AC}\\right|\\sin\\angle BAC\\)"
                 },
                 {
-                  "explain": "Substitute the values from parts (i) and (ii).",
-                  "work": "\\(A=\\frac12\\sqrt{154}\\sqrt{294}\\sin(83.25^\\circ).\\)"
+                  "explain": "Find \\(\\sin\\angle BAC\\) exactly from \\(\\cos\\angle BAC=\\frac{25}{\\sqrt{45276}}\\) (since \\(154\\times294=45276\\)).",
+                  "work": "\\(\\sin\\angle BAC=\\sqrt{1-\\frac{625}{45276}}=\\sqrt{\\frac{44651}{45276}}\\)"
                 },
                 {
-                  "explain": "Evaluate and round to the nearest square unit.",
-                  "work": "\\(A\\approx105.7\\text{ units}^2\\quad\\Longrightarrow\\quad\\boxed{106\\text{ square units}}.\\)"
+                  "explain": "Substitute.",
+                  "work": "\\(\\text{Area}=\\frac12\\sqrt{45276}\\cdot\\sqrt{\\frac{44651}{45276}}=\\frac12\\sqrt{44651}\\approx105.65\\approx106\\ \\text{units}^2\\)"
+                },
+                {
+                  "explain": "Using the rounded angle \\(83^\\circ\\) gives \\(\\frac12\\sqrt{154}\\sqrt{294}\\sin83^\\circ\\approx105.6\\), also \\(106\\ \\text{units}^2\\). Forgetting the \\(\\frac12\\) gives 212."
                 }
               ],
               "xp": 1,
               "meta": {
                 "source": "Abbotsleigh 2021 4U Trials & Solutions",
                 "school": "Abbotsleigh",
-                "year": 2021
+                "year": 2021,
+                "number": "11(d)(iii)"
               },
               "options": [
-                "\\(211\\text{ square units}\\)",
-                "\\(106\\text{ square units}\\)",
-                "\\(53\\text{ square units}\\)",
-                "\\(151\\text{ square units}\\)"
+                "\\(13\\ \\text{units}^2\\)",
+                "\\(25\\ \\text{units}^2\\)",
+                "\\(106\\ \\text{units}^2\\)",
+                "\\(212\\ \\text{units}^2\\)"
               ],
-              "answer": 1,
-              "solution": "\\(106\\text{ square units}\\)",
+              "answer": 2,
               "keyPoints": [
                 {
-                  "text": "area of \\(\\triangle BAC\\)",
-                  "note": "Use half the product of the two side lengths and the sine of the included angle."
+                  "text": "Calculate the area of",
+                  "note": "Use ½ab sin C with a = |AB|, b = |AC| and C = ∠BAC."
                 }
               ]
             }
-          ],
-          "xp": 1,
-          "meta": {
-            "source": "Abbotsleigh 2021 4U Trials & Solutions",
-            "school": "Abbotsleigh",
-            "year": 2021,
-            "number": "11(d)"
-          }
+          ]
         },
         {
           "id": "abbotsleigh2025-ext2-q13d",
@@ -765,54 +779,51 @@
           "type": "mc",
           "difficulty": "medium",
           "timeLimit": 60,
-          "stem": "The adjacent sides of a rhombus are vectors \\(\\mathbf a\\) and \\(\\mathbf b\\). Which statement must be true?",
-          "hint": "A rhombus has equal side lengths, so \\(\\mathbf a\\cdot\\mathbf a=\\mathbf b\\cdot\\mathbf b\\). Expand the dot product in each option.",
+          "stem": "The diagram shows a rhombus.\nAdjacent sides are represented by the two vectors \\(\\mathbf{a}\\) and \\(\\mathbf{b}\\).\n\nIt follows that:",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 215\" width=\"320\" height=\"215\"><defs><marker id=\"ah475569\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#475569\"/></marker></defs><rect width=\"320\" height=\"215\" rx=\"8\" fill=\"white\"/><path d=\"M60.0 180.0L210.0 180.0L250.0 35.4L100.0 35.4Z\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linejoin=\"round\" fill-opacity=\"0.0\"/><line x1=\"60.0\" y1=\"180.0\" x2=\"100.0\" y2=\"35.4\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ah475569)\"/><line x1=\"60.0\" y1=\"180.0\" x2=\"210.0\" y2=\"180.0\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ah475569)\"/><text x=\"68.0\" y=\"107.7\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\" font-style=\"italic\">a</text><text x=\"135.0\" y=\"200.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" font-style=\"italic\">b</text></svg>"
+          },
+          "hint": "Use |a| = |b| and expand the dot product of the two diagonals.",
           "steps": [
             {
-              "explain": "Use the equal side lengths of a rhombus.",
-              "work": "\\(|\\mathbf a|=|\\mathbf b|\\Rightarrow\\mathbf a\\cdot\\mathbf a=\\mathbf b\\cdot\\mathbf b.\\)",
+              "explain": "In a rhombus all sides are equal, so \\(|\\mathbf{a}|=|\\mathbf{b}|\\). But the sides are not perpendicular in general (that would be a square), and \\(\\mathbf{a}\\neq\\mathbf{b}\\) because they point in different directions. So A and B are not true in general.",
+              "work": "\\(|\\mathbf{a}|=|\\mathbf{b}|\\)"
+            },
+            {
+              "explain": "The diagonals of the parallelogram formed by \\(\\mathbf{a}\\) and \\(\\mathbf{b}\\) are \\(\\mathbf{a}+\\mathbf{b}\\) and \\(\\mathbf{a}-\\mathbf{b}\\).",
+              "work": "\\(\\text{diagonals: }\\ \\mathbf{a}+\\mathbf{b}\\) and \\(\\mathbf{a}-\\mathbf{b}\\)",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 190\" role=\"img\" aria-label=\"Rhombus with adjacent vectors a and b\"><rect width=\"340\" height=\"190\" rx=\"8\" fill=\"white\"/><path d=\"M60 145 L105 42 L270 42 L225 145 Z\" fill=\"#eff6ff\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M60 145 L105 42\" stroke=\"#f97316\" stroke-width=\"2.4\" marker-end=\"url(#ar)\"/><path d=\"M60 145 L225 145\" stroke=\"#2563eb\" stroke-width=\"2.4\" marker-end=\"url(#ab)\"/><path d=\"M78 113l10 4 M132 141v9\" stroke=\"#16a34a\" stroke-width=\"2.2\"/><defs><marker id=\"ar\" markerWidth=\"7\" markerHeight=\"7\" refX=\"5\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L7 3.5L0 7Z\" fill=\"#f97316\"/></marker><marker id=\"ab\" markerWidth=\"7\" markerHeight=\"7\" refX=\"5\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L7 3.5L0 7Z\" fill=\"#2563eb\"/></marker></defs><text x=\"70\" y=\"90\" font-family=\"Arial\" font-size=\"14\">a</text><text x=\"142\" y=\"163\" font-family=\"Arial\" font-size=\"14\">b</text></svg>"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 215\" width=\"320\" height=\"215\"><defs><marker id=\"ah475569\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#475569\"/></marker><marker id=\"ah2563eb\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#2563eb\"/></marker><marker id=\"ahdc2626\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#dc2626\"/></marker></defs><rect width=\"320\" height=\"215\" rx=\"8\" fill=\"white\"/><path d=\"M60.0 180.0L210.0 180.0L250.0 35.4L100.0 35.4Z\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linejoin=\"round\" fill-opacity=\"0.35\"/><line x1=\"60.0\" y1=\"180.0\" x2=\"100.0\" y2=\"35.4\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ah475569)\"/><line x1=\"60.0\" y1=\"180.0\" x2=\"210.0\" y2=\"180.0\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ah475569)\"/><text x=\"68.0\" y=\"107.7\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\" font-style=\"italic\">a</text><text x=\"135.0\" y=\"200.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" font-style=\"italic\">b</text><line x1=\"60.0\" y1=\"180.0\" x2=\"250.0\" y2=\"35.4\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\" marker-end=\"url(#ah2563eb)\"/><line x1=\"210.0\" y1=\"180.0\" x2=\"100.0\" y2=\"35.4\" stroke=\"#dc2626\" stroke-width=\"2.2\" stroke-linecap=\"round\" marker-end=\"url(#ahdc2626)\"/><text x=\"258.0\" y=\"51.4\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#2563eb\" text-anchor=\"start\">a + b</text><text x=\"92.0\" y=\"29.4\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"end\">a − b</text></svg>"
               }
             },
             {
-              "explain": "Expand the candidate expression using distributivity.",
-              "work": "\\((\\mathbf a+\\mathbf b)\\cdot(\\mathbf a-\\mathbf b)=\\mathbf a\\cdot\\mathbf a-\\mathbf a\\cdot\\mathbf b+\\mathbf b\\cdot\\mathbf a-\\mathbf b\\cdot\\mathbf b.\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 190\" role=\"img\" aria-label=\"Rhombus with adjacent vectors a and b\"><rect width=\"340\" height=\"190\" rx=\"8\" fill=\"white\"/><path d=\"M60 145 L105 42 L270 42 L225 145 Z\" fill=\"#eff6ff\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M60 145 L105 42\" stroke=\"#f97316\" stroke-width=\"2.4\" marker-end=\"url(#ar)\"/><path d=\"M60 145 L225 145\" stroke=\"#2563eb\" stroke-width=\"2.4\" marker-end=\"url(#ab)\"/><path d=\"M78 113l10 4 M132 141v9\" stroke=\"#16a34a\" stroke-width=\"2.2\"/><path d=\"M105 42L225 145M60 145L270 42\" stroke=\"#8b5cf6\" stroke-width=\"2.3\"/><defs><marker id=\"ar\" markerWidth=\"7\" markerHeight=\"7\" refX=\"5\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L7 3.5L0 7Z\" fill=\"#f97316\"/></marker><marker id=\"ab\" markerWidth=\"7\" markerHeight=\"7\" refX=\"5\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L7 3.5L0 7Z\" fill=\"#2563eb\"/></marker></defs><text x=\"70\" y=\"90\" font-family=\"Arial\" font-size=\"14\">a</text><text x=\"142\" y=\"163\" font-family=\"Arial\" font-size=\"14\">b</text></svg>"
-              }
+              "explain": "Expand their dot product, using \\(\\mathbf{a}\\cdot\\mathbf{b}=\\mathbf{b}\\cdot\\mathbf{a}\\) and \\(\\mathbf{a}\\cdot\\mathbf{a}=|\\mathbf{a}|^2\\).",
+              "work": "\\((\\mathbf{a}+\\mathbf{b})\\cdot(\\mathbf{a}-\\mathbf{b})=\\mathbf{a}\\cdot\\mathbf{a}-\\mathbf{a}\\cdot\\mathbf{b}+\\mathbf{b}\\cdot\\mathbf{a}-\\mathbf{b}\\cdot\\mathbf{b}=|\\mathbf{a}|^2-|\\mathbf{b}|^2=0\\)"
             },
             {
-              "explain": "The cross terms cancel, and equal lengths make the remaining difference zero.",
-              "work": "\\(\\mathbf b\\cdot\\mathbf a=\\mathbf a\\cdot\\mathbf b\\Rightarrow |\\mathbf a|^2-|\\mathbf b|^2=0.\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 190\" role=\"img\" aria-label=\"Rhombus with adjacent vectors a and b\"><rect width=\"340\" height=\"190\" rx=\"8\" fill=\"white\"/><path d=\"M60 145 L105 42 L270 42 L225 145 Z\" fill=\"#eff6ff\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M60 145 L105 42\" stroke=\"#f97316\" stroke-width=\"2.4\" marker-end=\"url(#ar)\"/><path d=\"M60 145 L225 145\" stroke=\"#2563eb\" stroke-width=\"2.4\" marker-end=\"url(#ab)\"/><path d=\"M78 113l10 4 M132 141v9\" stroke=\"#16a34a\" stroke-width=\"2.2\"/><path d=\"M105 42L225 145M60 145L270 42\" stroke=\"#8b5cf6\" stroke-width=\"2.3\"/><defs><marker id=\"ar\" markerWidth=\"7\" markerHeight=\"7\" refX=\"5\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L7 3.5L0 7Z\" fill=\"#f97316\"/></marker><marker id=\"ab\" markerWidth=\"7\" markerHeight=\"7\" refX=\"5\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L7 3.5L0 7Z\" fill=\"#2563eb\"/></marker></defs><text x=\"70\" y=\"90\" font-family=\"Arial\" font-size=\"14\">a</text><text x=\"142\" y=\"163\" font-family=\"Arial\" font-size=\"14\">b</text></svg>"
-              }
+              "explain": "So the diagonals of a rhombus are perpendicular, which is option C. Option D, \\(|\\mathbf{a}+\\mathbf{b}|=|\\mathbf{a}-\\mathbf{b}|\\) (equal diagonals), holds only when \\(\\mathbf{a}\\cdot\\mathbf{b}=0\\), i.e. for a rectangle or square."
             }
           ],
           "xp": 1,
           "meta": {
             "source": "Abbotsleigh 2021 4U Trials & Solutions",
             "school": "Abbotsleigh",
-            "year": 2021
+            "year": 2021,
+            "number": "6"
           },
           "options": [
-            "\\(\\mathbf a\\cdot\\mathbf b=0\\)",
-            "\\((\\mathbf a+\\mathbf b)\\cdot(\\mathbf a-\\mathbf b)=0\\)",
-            "\\(\\mathbf a=\\mathbf b\\)",
-            "\\(|\\mathbf a+\\mathbf b|=|\\mathbf a-\\mathbf b|\\)"
+            "\\(\\mathbf{a}\\cdot\\mathbf{b}=0\\)",
+            "\\(\\mathbf{a}=\\mathbf{b}\\)",
+            "\\((\\mathbf{a}+\\mathbf{b})\\cdot(\\mathbf{a}-\\mathbf{b})=0\\)",
+            "\\(|\\mathbf{a}+\\mathbf{b}|=|\\mathbf{a}-\\mathbf{b}|\\)"
           ],
-          "answer": 1,
-          "solution": "\\((\\mathbf a+\\mathbf b)\\cdot(\\mathbf a-\\mathbf b)=0\\)",
+          "answer": 2,
           "keyPoints": [
             {
-              "text": "adjacent sides of a rhombus are vectors \\(\\mathbf a\\) and \\(\\mathbf b\\)",
-              "note": "Equal side lengths mean the two vectors have equal magnitudes, not equal directions."
+              "text": "Adjacent sides are represented by the two vectors",
+              "note": "A rhombus has |a| = |b|; its diagonals are a + b and a − b."
             }
-          ],
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 190\" role=\"img\" aria-label=\"Rhombus with adjacent vectors a and b\"><rect width=\"340\" height=\"190\" rx=\"8\" fill=\"white\"/><path d=\"M60 145 L105 42 L270 42 L225 145 Z\" fill=\"#eff6ff\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M60 145 L105 42\" stroke=\"#f97316\" stroke-width=\"2.4\" marker-end=\"url(#ar)\"/><path d=\"M60 145 L225 145\" stroke=\"#2563eb\" stroke-width=\"2.4\" marker-end=\"url(#ab)\"/><defs><marker id=\"ar\" markerWidth=\"7\" markerHeight=\"7\" refX=\"5\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L7 3.5L0 7Z\" fill=\"#f97316\"/></marker><marker id=\"ab\" markerWidth=\"7\" markerHeight=\"7\" refX=\"5\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L7 3.5L0 7Z\" fill=\"#2563eb\"/></marker></defs><text x=\"70\" y=\"90\" font-family=\"Arial\" font-size=\"14\">a</text><text x=\"142\" y=\"163\" font-family=\"Arial\" font-size=\"14\">b</text></svg>"
-          }
+          ]
         }
       ]
     },
@@ -879,36 +890,44 @@
           "type": "multipart",
           "difficulty": "hard",
           "timeLimit": 60,
-          "stem": "In parallelogram \\(OABC\\), let \\(\\overrightarrow{OA}=\\mathbf{a}\\) and \\(\\overrightarrow{OC}=\\mathbf{c}\\).",
-          "hint": "Express the diagonal point and midpoint as position vectors from O, then compare their directions.",
+          "stem": "\\(OABC\\) is a parallelogram and the point \\(M\\) is the midpoint of \\(AB\\).\nThe point \\(N\\) lies on the diagonal \\(AC\\) so that \\(AN:NC=1:2\\).\n\nLet \\(\\overrightarrow{OA}=\\mathbf{a}\\) and \\(\\overrightarrow{OC}=\\mathbf{c}\\).",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 230\" width=\"330\" height=\"230\"><defs><marker id=\"ah475569\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#475569\"/></marker></defs><rect width=\"330\" height=\"230\" rx=\"8\" fill=\"white\"/><path d=\"M70.0 190.0L230.0 190.0L260.0 40.0L100.0 40.0Z\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linejoin=\"round\" fill-opacity=\"0.0\"/><line x1=\"70.0\" y1=\"190.0\" x2=\"100.0\" y2=\"40.0\" stroke=\"#475569\" stroke-width=\"2.2\" stroke-linecap=\"round\" marker-end=\"url(#ah475569)\"/><line x1=\"70.0\" y1=\"190.0\" x2=\"230.0\" y2=\"190.0\" stroke=\"#475569\" stroke-width=\"2.2\" stroke-linecap=\"round\" marker-end=\"url(#ah475569)\"/><line x1=\"100.0\" y1=\"40.0\" x2=\"230.0\" y2=\"190.0\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\" marker-end=\"url(#ah475569)\"/><circle cx=\"143.3\" cy=\"90.0\" r=\"3.5\" fill=\"#1e293b\"/><circle cx=\"180.0\" cy=\"40.0\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"62.0\" y=\"204.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">O</text><text x=\"236.0\" y=\"204.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">C</text><text x=\"92.0\" y=\"36.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">A</text><text x=\"266.0\" y=\"36.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">B</text><text x=\"180.0\" y=\"31.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">M</text><text x=\"153.3\" y=\"88.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">N</text><text x=\"75.0\" y=\"115.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\" font-style=\"italic\">a</text><text x=\"150.0\" y=\"210.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" font-style=\"italic\">c</text><text x=\"292.0\" y=\"110.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"middle\">NOT TO</text><text x=\"292.0\" y=\"125.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"middle\">SCALE</text></svg>"
+          },
+          "meta": {
+            "source": "Abbotsleigh 2021 4U Trials & Solutions",
+            "school": "Abbotsleigh",
+            "year": 2021,
+            "number": "13(b)"
+          },
           "parts": [
             {
               "id": "abbotsleigh2021-ext2-q13b-i",
               "type": "mc",
               "difficulty": "hard",
               "timeLimit": 60,
-              "stem": "In parallelogram OABC, \\(\\overrightarrow{OA}=\\mathbf a\\), \\(\\overrightarrow{OC}=\\mathbf c\\), M is the midpoint of AB, and \\(AN:NC=1:2\\) on diagonal AC. Find \\(\\overrightarrow{AC},\\overrightarrow{AN},\\overrightarrow{ON},\\overrightarrow{NM}\\).",
-              "hint": "Use \\(\\overrightarrow{AB}=\\mathbf c\\), divide diagonal AC into three equal parts, and write each point vector from O.",
+              "stem": "Find simplified expressions, in terms of \\(\\mathbf{a}\\) and \\(\\mathbf{c}\\), for each of the vectors \\(\\overrightarrow{AC}\\), \\(\\overrightarrow{AN}\\), \\(\\overrightarrow{ON}\\) and \\(\\overrightarrow{NM}\\).",
+              "hint": "AC = c − a; N is ⅓ of the way from A to C; AB = OC = c.",
               "steps": [
                 {
-                  "explain": "Use the parallelogram to express AC and AN.",
-                  "work": "\\(\\overrightarrow{AC}=\\mathbf c-\\mathbf a,\\quad\\overrightarrow{AN}=\\frac13(\\mathbf c-\\mathbf a).\\)",
+                  "explain": "\\(\\overrightarrow{AC}\\) goes from \\(A\\) to \\(C\\): end minus start. Since \\(AN:NC=1:2\\), \\(N\\) is one third of the way from \\(A\\) to \\(C\\).",
+                  "work": "\\(\\overrightarrow{AC}=\\overrightarrow{OC}-\\overrightarrow{OA}=\\mathbf{c}-\\mathbf{a},\\qquad\\overrightarrow{AN}=\\frac13\\overrightarrow{AC}=\\frac13(\\mathbf{c}-\\mathbf{a})\\)",
                   "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 190\" role=\"img\" aria-label=\"Parallelogram OABC with midpoint M and point N on diagonal AC\">\n    <rect width=\"270\" height=\"190\" rx=\"8\" fill=\"white\"/><path d=\"M45 145L125 40L230 60L150 165Z\" fill=\"#eff6ff\" stroke=\"#475569\" stroke-width=\"1.8\"/>\n    <path d=\"M125 40L150 165\" stroke=\"#16a34a\" stroke-width=\"2.2\" stroke-dasharray=\"4 3\"/>\n    <path d=\"M45 145L125 40L230 60\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n    <circle cx=\"125\" cy=\"40\" r=\"3\" fill=\"#334155\"/><circle cx=\"230\" cy=\"60\" r=\"3\" fill=\"#334155\"/><circle cx=\"45\" cy=\"145\" r=\"3\" fill=\"#334155\"/><circle cx=\"150\" cy=\"165\" r=\"3\" fill=\"#334155\"/>\n    <circle cx=\"177.5\" cy=\"50\" r=\"3.5\" fill=\"#f97316\"/><circle cx=\"133.3\" cy=\"81.7\" r=\"3.5\" fill=\"#8b5cf6\"/>\n    <g font-family=\"Arial\" font-size=\"12\" fill=\"#334155\"><text x=\"30\" y=\"158\">O</text><text x=\"120\" y=\"29\">A</text><text x=\"235\" y=\"62\">B</text><text x=\"153\" y=\"179\">C</text><text x=\"182\" y=\"46\">M</text><text x=\"119\" y=\"77\">N</text></g></svg>"
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 230\" width=\"330\" height=\"230\"><defs><marker id=\"ah475569\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#475569\"/></marker><marker id=\"ahdc2626\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#dc2626\"/></marker></defs><rect width=\"330\" height=\"230\" rx=\"8\" fill=\"white\"/><path d=\"M70.0 190.0L230.0 190.0L260.0 40.0L100.0 40.0Z\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linejoin=\"round\" fill-opacity=\"0.25\"/><line x1=\"70.0\" y1=\"190.0\" x2=\"100.0\" y2=\"40.0\" stroke=\"#475569\" stroke-width=\"2.2\" stroke-linecap=\"round\" marker-end=\"url(#ah475569)\"/><line x1=\"70.0\" y1=\"190.0\" x2=\"230.0\" y2=\"190.0\" stroke=\"#475569\" stroke-width=\"2.2\" stroke-linecap=\"round\" marker-end=\"url(#ah475569)\"/><line x1=\"100.0\" y1=\"40.0\" x2=\"230.0\" y2=\"190.0\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\" marker-end=\"url(#ah475569)\"/><circle cx=\"143.3\" cy=\"90.0\" r=\"3.5\" fill=\"#1e293b\"/><circle cx=\"180.0\" cy=\"40.0\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"62.0\" y=\"204.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">O</text><text x=\"236.0\" y=\"204.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">C</text><text x=\"92.0\" y=\"36.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">A</text><text x=\"266.0\" y=\"36.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">B</text><text x=\"180.0\" y=\"31.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">M</text><text x=\"153.3\" y=\"88.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">N</text><text x=\"75.0\" y=\"115.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\" font-style=\"italic\">a</text><text x=\"150.0\" y=\"210.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" font-style=\"italic\">c</text><line x1=\"100.0\" y1=\"40.0\" x2=\"230.0\" y2=\"190.0\" stroke=\"#dc2626\" stroke-width=\"2.6\" stroke-linecap=\"round\" marker-end=\"url(#ahdc2626)\"/><line x1=\"100.0\" y1=\"40.0\" x2=\"143.3\" y2=\"90.0\" stroke=\"#2563eb\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><text x=\"134.0\" y=\"54.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\" text-anchor=\"start\">1/3 of AC</text></svg>"
                   }
                 },
                 {
-                  "explain": "Find the position vector of N.",
-                  "work": "\\(\\overrightarrow{ON}=\\mathbf a+\\overrightarrow{AN}=\\mathbf a+\\frac13(\\mathbf c-\\mathbf a)=\\frac13(2\\mathbf a+\\mathbf c).\\)",
+                  "explain": "Reach \\(N\\) from \\(O\\) by going to \\(A\\) first, then along \\(\\overrightarrow{AN}\\).",
+                  "work": "\\(\\overrightarrow{ON}=\\overrightarrow{OA}+\\overrightarrow{AN}=\\mathbf{a}+\\frac13(\\mathbf{c}-\\mathbf{a})=\\frac13(2\\mathbf{a}+\\mathbf{c})\\)",
                   "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 190\" role=\"img\" aria-label=\"Parallelogram OABC with midpoint M and point N on diagonal AC\">\n    <rect width=\"270\" height=\"190\" rx=\"8\" fill=\"white\"/><path d=\"M45 145L125 40L230 60L150 165Z\" fill=\"#eff6ff\" stroke=\"#475569\" stroke-width=\"1.8\"/>\n    <path d=\"M125 40L150 165\" stroke=\"#16a34a\" stroke-width=\"2.2\" stroke-dasharray=\"4 3\"/>\n    <path d=\"M45 145L125 40L230 60\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n    <circle cx=\"125\" cy=\"40\" r=\"3\" fill=\"#334155\"/><circle cx=\"230\" cy=\"60\" r=\"3\" fill=\"#334155\"/><circle cx=\"45\" cy=\"145\" r=\"3\" fill=\"#334155\"/><circle cx=\"150\" cy=\"165\" r=\"3\" fill=\"#334155\"/>\n    <circle cx=\"177.5\" cy=\"50\" r=\"3.5\" fill=\"#f97316\"/><circle cx=\"133.3\" cy=\"81.7\" r=\"3.5\" fill=\"#8b5cf6\"/>\n    <g font-family=\"Arial\" font-size=\"12\" fill=\"#334155\"><text x=\"30\" y=\"158\">O</text><text x=\"120\" y=\"29\">A</text><text x=\"235\" y=\"62\">B</text><text x=\"153\" y=\"179\">C</text><text x=\"182\" y=\"46\">M</text><text x=\"119\" y=\"77\">N</text></g></svg>"
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 230\" width=\"330\" height=\"230\"><defs><marker id=\"ah475569\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#475569\"/></marker><marker id=\"ah2563eb\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#2563eb\"/></marker><marker id=\"ahdc2626\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#dc2626\"/></marker></defs><rect width=\"330\" height=\"230\" rx=\"8\" fill=\"white\"/><path d=\"M70.0 190.0L230.0 190.0L260.0 40.0L100.0 40.0Z\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linejoin=\"round\" fill-opacity=\"0.25\"/><line x1=\"70.0\" y1=\"190.0\" x2=\"100.0\" y2=\"40.0\" stroke=\"#475569\" stroke-width=\"2.2\" stroke-linecap=\"round\" marker-end=\"url(#ah475569)\"/><line x1=\"70.0\" y1=\"190.0\" x2=\"230.0\" y2=\"190.0\" stroke=\"#475569\" stroke-width=\"2.2\" stroke-linecap=\"round\" marker-end=\"url(#ah475569)\"/><line x1=\"100.0\" y1=\"40.0\" x2=\"230.0\" y2=\"190.0\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\" marker-end=\"url(#ah475569)\"/><circle cx=\"143.3\" cy=\"90.0\" r=\"3.5\" fill=\"#1e293b\"/><circle cx=\"180.0\" cy=\"40.0\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"62.0\" y=\"204.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">O</text><text x=\"236.0\" y=\"204.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">C</text><text x=\"92.0\" y=\"36.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">A</text><text x=\"266.0\" y=\"36.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">B</text><text x=\"180.0\" y=\"31.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">M</text><text x=\"153.3\" y=\"88.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">N</text><text x=\"75.0\" y=\"115.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\" font-style=\"italic\">a</text><text x=\"150.0\" y=\"210.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" font-style=\"italic\">c</text><line x1=\"70.0\" y1=\"190.0\" x2=\"100.0\" y2=\"40.0\" stroke=\"#2563eb\" stroke-width=\"2.8\" stroke-linecap=\"round\" marker-end=\"url(#ah2563eb)\"/><line x1=\"100.0\" y1=\"40.0\" x2=\"143.3\" y2=\"90.0\" stroke=\"#2563eb\" stroke-width=\"2.8\" stroke-linecap=\"round\" marker-end=\"url(#ah2563eb)\"/><line x1=\"70.0\" y1=\"190.0\" x2=\"143.3\" y2=\"90.0\" stroke=\"#dc2626\" stroke-width=\"2.6\" stroke-linecap=\"round\" marker-end=\"url(#ahdc2626)\"/></svg>"
                   }
                 },
                 {
-                  "explain": "Use the midpoint to find M, then subtract ON.",
-                  "work": "\\(\\overrightarrow{OM}=\\mathbf a+\\frac12\\mathbf c,\\quad\\overrightarrow{NM}=\\overrightarrow{OM}-\\overrightarrow{ON}=\\frac16(2\\mathbf a+\\mathbf c).\\)",
+                  "explain": "In a parallelogram \\(\\overrightarrow{AB}=\\overrightarrow{OC}=\\mathbf{c}\\), so \\(\\overrightarrow{AM}=\\frac12\\mathbf{c}\\). Then go from \\(N\\) back to \\(A\\) and on to \\(M\\).",
+                  "work": "\\(\\overrightarrow{NM}=\\overrightarrow{AM}-\\overrightarrow{AN}=\\frac12\\mathbf{c}-\\frac13(\\mathbf{c}-\\mathbf{a})=\\frac{3\\mathbf{c}-2\\mathbf{c}+2\\mathbf{a}}{6}=\\frac16(2\\mathbf{a}+\\mathbf{c})\\)",
                   "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 190\" role=\"img\" aria-label=\"Parallelogram OABC with midpoint M and point N on diagonal AC\">\n    <rect width=\"270\" height=\"190\" rx=\"8\" fill=\"white\"/><path d=\"M45 145L125 40L230 60L150 165Z\" fill=\"#eff6ff\" stroke=\"#475569\" stroke-width=\"1.8\"/>\n    <path d=\"M125 40L150 165\" stroke=\"#16a34a\" stroke-width=\"2.2\" stroke-dasharray=\"4 3\"/>\n    <path d=\"M45 145L125 40L230 60\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n    <circle cx=\"125\" cy=\"40\" r=\"3\" fill=\"#334155\"/><circle cx=\"230\" cy=\"60\" r=\"3\" fill=\"#334155\"/><circle cx=\"45\" cy=\"145\" r=\"3\" fill=\"#334155\"/><circle cx=\"150\" cy=\"165\" r=\"3\" fill=\"#334155\"/>\n    <circle cx=\"177.5\" cy=\"50\" r=\"3.5\" fill=\"#8b5cf6\"/><circle cx=\"133.3\" cy=\"81.7\" r=\"3.5\" fill=\"#8b5cf6\"/>\n    <g font-family=\"Arial\" font-size=\"12\" fill=\"#334155\"><text x=\"30\" y=\"158\">O</text><text x=\"120\" y=\"29\">A</text><text x=\"235\" y=\"62\">B</text><text x=\"153\" y=\"179\">C</text><text x=\"182\" y=\"46\">M</text><text x=\"119\" y=\"77\">N</text></g></svg>"
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 230\" width=\"330\" height=\"230\"><defs><marker id=\"ah475569\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#475569\"/></marker><marker id=\"ah2563eb\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#2563eb\"/></marker><marker id=\"ahdc2626\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#dc2626\"/></marker></defs><rect width=\"330\" height=\"230\" rx=\"8\" fill=\"white\"/><path d=\"M70.0 190.0L230.0 190.0L260.0 40.0L100.0 40.0Z\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linejoin=\"round\" fill-opacity=\"0.25\"/><line x1=\"70.0\" y1=\"190.0\" x2=\"100.0\" y2=\"40.0\" stroke=\"#475569\" stroke-width=\"2.2\" stroke-linecap=\"round\" marker-end=\"url(#ah475569)\"/><line x1=\"70.0\" y1=\"190.0\" x2=\"230.0\" y2=\"190.0\" stroke=\"#475569\" stroke-width=\"2.2\" stroke-linecap=\"round\" marker-end=\"url(#ah475569)\"/><line x1=\"100.0\" y1=\"40.0\" x2=\"230.0\" y2=\"190.0\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\" marker-end=\"url(#ah475569)\"/><circle cx=\"143.3\" cy=\"90.0\" r=\"3.5\" fill=\"#1e293b\"/><circle cx=\"180.0\" cy=\"40.0\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"62.0\" y=\"204.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">O</text><text x=\"236.0\" y=\"204.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">C</text><text x=\"92.0\" y=\"36.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">A</text><text x=\"266.0\" y=\"36.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">B</text><text x=\"180.0\" y=\"31.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">M</text><text x=\"153.3\" y=\"88.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">N</text><text x=\"75.0\" y=\"115.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\" font-style=\"italic\">a</text><text x=\"150.0\" y=\"210.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" font-style=\"italic\">c</text><line x1=\"100.0\" y1=\"40.0\" x2=\"180.0\" y2=\"40.0\" stroke=\"#2563eb\" stroke-width=\"2.8\" stroke-linecap=\"round\" marker-end=\"url(#ah2563eb)\"/><line x1=\"143.3\" y1=\"90.0\" x2=\"180.0\" y2=\"40.0\" stroke=\"#dc2626\" stroke-width=\"2.6\" stroke-linecap=\"round\" marker-end=\"url(#ahdc2626)\"/><text x=\"126.0\" y=\"32.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\" text-anchor=\"middle\">½c</text></svg>"
                   }
                 }
               ],
@@ -916,53 +935,43 @@
               "meta": {
                 "source": "Abbotsleigh 2021 4U Trials & Solutions",
                 "school": "Abbotsleigh",
-                "year": 2021
+                "year": 2021,
+                "number": "13(b)(i)"
               },
               "options": [
-                "\\(AC=\\mathbf a+\\mathbf c,\\ AN=\\frac12(\\mathbf a+\\mathbf c),\\ ON=\\frac12(\\mathbf a+\\mathbf c),\\ NM=\\frac13(\\mathbf a+\\mathbf c)\\)",
-                "\\(AC=\\mathbf c-\\mathbf a,\\ AN=\\frac13(\\mathbf c-\\mathbf a),\\ ON=\\frac13(2\\mathbf a+\\mathbf c),\\ NM=\\frac16(2\\mathbf a+\\mathbf c)\\)",
-                "\\(AC=\\mathbf c-\\mathbf a,\\ AN=\\frac23(\\mathbf c-\\mathbf a),\\ ON=\\frac13(\\mathbf a+2\\mathbf c),\\ NM=\\frac16(\\mathbf a+2\\mathbf c)\\)",
-                "\\(AC=\\mathbf c-\\mathbf a,\\ AN=\\frac13(\\mathbf c-\\mathbf a),\\ ON=\\frac23(2\\mathbf a+\\mathbf c),\\ NM=\\frac16(2\\mathbf a+\\mathbf c)\\)"
+                "\\(\\overrightarrow{AC}=\\mathbf{a}+\\mathbf{c},\\ \\overrightarrow{AN}=\\frac12(\\mathbf{a}+\\mathbf{c}),\\ \\overrightarrow{ON}=\\frac12(\\mathbf{a}+\\mathbf{c}),\\ \\overrightarrow{NM}=\\frac13(\\mathbf{a}+\\mathbf{c})\\)",
+                "\\(\\overrightarrow{AC}=\\mathbf{c}-\\mathbf{a},\\ \\overrightarrow{AN}=\\frac23(\\mathbf{c}-\\mathbf{a}),\\ \\overrightarrow{ON}=\\frac13(\\mathbf{a}+2\\mathbf{c}),\\ \\overrightarrow{NM}=\\frac16(\\mathbf{a}+2\\mathbf{c})\\)",
+                "\\(\\overrightarrow{AC}=\\mathbf{c}-\\mathbf{a},\\ \\overrightarrow{AN}=\\frac13(\\mathbf{c}-\\mathbf{a}),\\ \\overrightarrow{ON}=\\frac23(2\\mathbf{a}+\\mathbf{c}),\\ \\overrightarrow{NM}=\\frac16(2\\mathbf{a}+\\mathbf{c})\\)",
+                "\\(\\overrightarrow{AC}=\\mathbf{c}-\\mathbf{a},\\ \\overrightarrow{AN}=\\frac13(\\mathbf{c}-\\mathbf{a}),\\ \\overrightarrow{ON}=\\frac13(2\\mathbf{a}+\\mathbf{c}),\\ \\overrightarrow{NM}=\\frac16(2\\mathbf{a}+\\mathbf{c})\\)"
               ],
-              "answer": 1,
-              "solution": "\\(\\overrightarrow{AC}=\\mathbf c-\\mathbf a,\\;\\overrightarrow{AN}=\\frac13(\\mathbf c-\\mathbf a),\\;\\overrightarrow{ON}=\\frac13(2\\mathbf a+\\mathbf c),\\;\\overrightarrow{NM}=\\frac16(2\\mathbf a+\\mathbf c)\\)",
+              "answer": 3,
               "keyPoints": [
                 {
-                  "text": "Find \\(\\overrightarrow{AC},\\overrightarrow{AN},\\overrightarrow{ON},\\overrightarrow{NM}\\)",
-                  "note": "AN is one third of AC, and AB has vector c because opposite sides of a parallelogram are equal and parallel."
+                  "text": "\\(\\overrightarrow{AN}\\)",
+                  "note": "AN:NC = 1:2, so N is one third of the way from A to C, so AN = ⅓ AC = ⅓(c − a)."
                 }
-              ],
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 190\" role=\"img\" aria-label=\"Parallelogram OABC with midpoint M and point N on diagonal AC\">\n    <rect width=\"270\" height=\"190\" rx=\"8\" fill=\"white\"/><path d=\"M45 145L125 40L230 60L150 165Z\" fill=\"#eff6ff\" stroke=\"#475569\" stroke-width=\"1.8\"/>\n    <path d=\"M125 40L150 165\" stroke=\"#94a3b8\" stroke-width=\"2.2\" stroke-dasharray=\"4 3\"/>\n    <path d=\"M45 145L125 40L230 60\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n    <circle cx=\"125\" cy=\"40\" r=\"3\" fill=\"#334155\"/><circle cx=\"230\" cy=\"60\" r=\"3\" fill=\"#334155\"/><circle cx=\"45\" cy=\"145\" r=\"3\" fill=\"#334155\"/><circle cx=\"150\" cy=\"165\" r=\"3\" fill=\"#334155\"/>\n    <circle cx=\"177.5\" cy=\"50\" r=\"3.5\" fill=\"#f97316\"/><circle cx=\"133.3\" cy=\"81.7\" r=\"3.5\" fill=\"#8b5cf6\"/>\n    <g font-family=\"Arial\" font-size=\"12\" fill=\"#334155\"><text x=\"30\" y=\"158\">O</text><text x=\"120\" y=\"29\">A</text><text x=\"235\" y=\"62\">B</text><text x=\"153\" y=\"179\">C</text><text x=\"182\" y=\"46\">M</text><text x=\"119\" y=\"77\">N</text></g></svg>"
-              }
+              ]
             },
             {
               "id": "abbotsleigh2021-ext2-q13b-ii",
-              "type": "mc",
+              "type": "review",
               "difficulty": "medium",
               "timeLimit": 60,
-              "stem": "Which vector relationship shows that O, N and M are collinear?",
-              "hint": "Recalculate ON and NM from the definitions. If both are scalar multiples of the same vector, they are parallel and meet at N.",
+              "stem": "Deduce, showing your reasoning, that \\(O\\), \\(N\\) and \\(M\\) are collinear.",
+              "hint": "Show NM is a scalar multiple of ON and note they share the point N.",
               "steps": [
                 {
-                  "explain": "Find ON from the diagonal ratio.",
-                  "work": "\\(\\overrightarrow{ON}=\\mathbf a+\\frac13(\\mathbf c-\\mathbf a)=\\frac13(2\\mathbf a+\\mathbf c).\\)",
-                  "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 190\" role=\"img\" aria-label=\"Parallelogram OABC with midpoint M and point N on diagonal AC\">\n    <rect width=\"270\" height=\"190\" rx=\"8\" fill=\"white\"/><path d=\"M45 145L125 40L230 60L150 165Z\" fill=\"#eff6ff\" stroke=\"#475569\" stroke-width=\"1.8\"/>\n    <path d=\"M125 40L150 165\" stroke=\"#16a34a\" stroke-width=\"2.2\" stroke-dasharray=\"4 3\"/>\n    <path d=\"M45 145L125 40L230 60\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n    <circle cx=\"125\" cy=\"40\" r=\"3\" fill=\"#334155\"/><circle cx=\"230\" cy=\"60\" r=\"3\" fill=\"#334155\"/><circle cx=\"45\" cy=\"145\" r=\"3\" fill=\"#334155\"/><circle cx=\"150\" cy=\"165\" r=\"3\" fill=\"#334155\"/>\n    <circle cx=\"177.5\" cy=\"50\" r=\"3.5\" fill=\"#f97316\"/><circle cx=\"133.3\" cy=\"81.7\" r=\"3.5\" fill=\"#8b5cf6\"/>\n    <g font-family=\"Arial\" font-size=\"12\" fill=\"#334155\"><text x=\"30\" y=\"158\">O</text><text x=\"120\" y=\"29\">A</text><text x=\"235\" y=\"62\">B</text><text x=\"153\" y=\"179\">C</text><text x=\"182\" y=\"46\">M</text><text x=\"119\" y=\"77\">N</text></g></svg>"
-                  }
+                  "explain": "Compare the two vectors found in part (i).",
+                  "work": "\\(\\overrightarrow{ON}=\\frac13(2\\mathbf{a}+\\mathbf{c}),\\qquad\\overrightarrow{NM}=\\frac16(2\\mathbf{a}+\\mathbf{c})=\\frac12\\overrightarrow{ON}\\)"
                 },
                 {
-                  "explain": "Find NM from the midpoint condition.",
-                  "work": "\\(\\overrightarrow{OM}=\\mathbf a+\\frac12\\mathbf c,\\quad\\overrightarrow{NM}=\\overrightarrow{OM}-\\overrightarrow{ON}=\\frac16(2\\mathbf a+\\mathbf c).\\)",
-                  "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 190\" role=\"img\" aria-label=\"Parallelogram OABC with midpoint M and point N on diagonal AC\">\n    <rect width=\"270\" height=\"190\" rx=\"8\" fill=\"white\"/><path d=\"M45 145L125 40L230 60L150 165Z\" fill=\"#eff6ff\" stroke=\"#475569\" stroke-width=\"1.8\"/>\n    <path d=\"M125 40L150 165\" stroke=\"#16a34a\" stroke-width=\"2.2\" stroke-dasharray=\"4 3\"/>\n    <path d=\"M45 145L125 40L230 60\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n    <circle cx=\"125\" cy=\"40\" r=\"3\" fill=\"#334155\"/><circle cx=\"230\" cy=\"60\" r=\"3\" fill=\"#334155\"/><circle cx=\"45\" cy=\"145\" r=\"3\" fill=\"#334155\"/><circle cx=\"150\" cy=\"165\" r=\"3\" fill=\"#334155\"/>\n    <circle cx=\"177.5\" cy=\"50\" r=\"3.5\" fill=\"#8b5cf6\"/><circle cx=\"133.3\" cy=\"81.7\" r=\"3.5\" fill=\"#8b5cf6\"/>\n    <g font-family=\"Arial\" font-size=\"12\" fill=\"#334155\"><text x=\"30\" y=\"158\">O</text><text x=\"120\" y=\"29\">A</text><text x=\"235\" y=\"62\">B</text><text x=\"153\" y=\"179\">C</text><text x=\"182\" y=\"46\">M</text><text x=\"119\" y=\"77\">N</text></g></svg>"
-                  }
+                  "explain": "Both vectors are scalar multiples of \\(2\\mathbf{a}+\\mathbf{c}\\), so they are parallel.",
+                  "work": "\\(\\overrightarrow{NM}=\\tfrac12\\,\\overrightarrow{ON}\\ \\Rightarrow\\ \\overrightarrow{ON}\\parallel\\overrightarrow{NM}\\)"
                 },
                 {
-                  "explain": "The two vectors are parallel and share the point N.",
-                  "work": "\\(\\overrightarrow{ON}=2\\overrightarrow{NM}\\Rightarrow O,N,M\\text{ lie on one straight line}.\\)",
+                  "explain": "Parallel vectors that share a common point \\(N\\) must lie on the same line. Therefore \\(O\\), \\(N\\) and \\(M\\) are collinear (and \\(ON:NM=2:1\\)).",
                   "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 190\" role=\"img\" aria-label=\"Parallelogram OABC with midpoint M and point N on diagonal AC\">\n    <rect width=\"270\" height=\"190\" rx=\"8\" fill=\"white\"/><path d=\"M45 145L125 40L230 60L150 165Z\" fill=\"#eff6ff\" stroke=\"#475569\" stroke-width=\"1.8\"/>\n    <path d=\"M125 40L150 165\" stroke=\"#16a34a\" stroke-width=\"2.2\" stroke-dasharray=\"4 3\"/>\n    <path d=\"M45 145L125 40L230 60\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n    <circle cx=\"125\" cy=\"40\" r=\"3\" fill=\"#334155\"/><circle cx=\"230\" cy=\"60\" r=\"3\" fill=\"#334155\"/><circle cx=\"45\" cy=\"145\" r=\"3\" fill=\"#334155\"/><circle cx=\"150\" cy=\"165\" r=\"3\" fill=\"#334155\"/>\n    <circle cx=\"177.5\" cy=\"50\" r=\"3.5\" fill=\"#8b5cf6\"/><circle cx=\"133.3\" cy=\"81.7\" r=\"3.5\" fill=\"#8b5cf6\"/>\n    <g font-family=\"Arial\" font-size=\"12\" fill=\"#334155\"><text x=\"30\" y=\"158\">O</text><text x=\"120\" y=\"29\">A</text><text x=\"235\" y=\"62\">B</text><text x=\"153\" y=\"179\">C</text><text x=\"182\" y=\"46\">M</text><text x=\"119\" y=\"77\">N</text></g></svg>"
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 230\" width=\"330\" height=\"230\"><defs><marker id=\"ah475569\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#475569\"/></marker><marker id=\"ahdc2626\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#dc2626\"/></marker></defs><rect width=\"330\" height=\"230\" rx=\"8\" fill=\"white\"/><path d=\"M70.0 190.0L230.0 190.0L260.0 40.0L100.0 40.0Z\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linejoin=\"round\" fill-opacity=\"0.25\"/><line x1=\"70.0\" y1=\"190.0\" x2=\"100.0\" y2=\"40.0\" stroke=\"#475569\" stroke-width=\"2.2\" stroke-linecap=\"round\" marker-end=\"url(#ah475569)\"/><line x1=\"70.0\" y1=\"190.0\" x2=\"230.0\" y2=\"190.0\" stroke=\"#475569\" stroke-width=\"2.2\" stroke-linecap=\"round\" marker-end=\"url(#ah475569)\"/><line x1=\"100.0\" y1=\"40.0\" x2=\"230.0\" y2=\"190.0\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\" marker-end=\"url(#ah475569)\"/><circle cx=\"143.3\" cy=\"90.0\" r=\"3.5\" fill=\"#1e293b\"/><circle cx=\"180.0\" cy=\"40.0\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"62.0\" y=\"204.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">O</text><text x=\"236.0\" y=\"204.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">C</text><text x=\"92.0\" y=\"36.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">A</text><text x=\"266.0\" y=\"36.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">B</text><text x=\"180.0\" y=\"31.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">M</text><text x=\"153.3\" y=\"88.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">N</text><text x=\"75.0\" y=\"115.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\" font-style=\"italic\">a</text><text x=\"150.0\" y=\"210.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" font-style=\"italic\">c</text><line x1=\"70.0\" y1=\"190.0\" x2=\"180.0\" y2=\"40.0\" stroke=\"#dc2626\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><line x1=\"70.0\" y1=\"190.0\" x2=\"143.3\" y2=\"90.0\" stroke=\"#dc2626\" stroke-width=\"2.8\" stroke-linecap=\"round\" marker-end=\"url(#ahdc2626)\"/><line x1=\"143.3\" y1=\"90.0\" x2=\"180.0\" y2=\"40.0\" stroke=\"#dc2626\" stroke-width=\"2.8\" stroke-linecap=\"round\" marker-end=\"url(#ahdc2626)\"/></svg>"
                   }
                 }
               ],
@@ -970,22 +979,49 @@
               "meta": {
                 "source": "Abbotsleigh 2021 4U Trials & Solutions",
                 "school": "Abbotsleigh",
-                "year": 2021
+                "year": 2021,
+                "number": "13(b)(ii)"
               },
-              "options": [
-                "\\(\\overrightarrow{ON}=\\overrightarrow{NM}\\), so O,N,M are collinear.",
-                "\\(\\overrightarrow{ON}=-2\\overrightarrow{NM}\\), so O,N,M are not collinear.",
-                "\\(\\overrightarrow{ON}=2\\overrightarrow{NM}\\), so O,N,M are collinear.",
-                "\\(\\overrightarrow{ON}=\\frac12\\overrightarrow{NM}\\), so O,N,M are not collinear."
-              ],
-              "answer": 2,
-              "solution": "\\(\\overrightarrow{ON}=2\\overrightarrow{NM}\\), so O,N,M are collinear.",
+              "answer": "From (i), \\(\\overrightarrow{ON}=\\frac13(2\\mathbf{a}+\\mathbf{c})\\) and \\(\\overrightarrow{NM}=\\frac16(2\\mathbf{a}+\\mathbf{c})=\\frac12\\overrightarrow{ON}\\). So \\(\\overrightarrow{ON}\\) and \\(\\overrightarrow{NM}\\) are parallel (both are multiples of \\(2\\mathbf{a}+\\mathbf{c}\\)), and they share the point \\(N\\). Hence \\(O\\), \\(N\\) and \\(M\\) lie on one straight line.",
+              "manual": true,
               "keyPoints": [
                 {
-                  "text": "Which vector relationship shows that O, N and M are collinear",
-                  "note": "Show that ON and NM are scalar multiples of the same vector."
+                  "text": "\\(O\\), \\(N\\) and \\(M\\) are collinear",
+                  "note": "Show NM = ½ ON: parallel vectors through the common point N lie on one line."
                 }
               ]
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2021-ext2-q14c",
+          "type": "review",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "A right-angled triangle is shown below, labelled with vectors \\(\\mathbf{a}\\), \\(\\mathbf{b}\\) and \\(\\mathbf{c}\\) where \\(\\mathbf{c}=\\mathbf{a}-\\mathbf{b}\\).\n\nUse these vectors and the dot product to prove Pythagoras’ Theorem.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 200\" width=\"260\" height=\"200\"><defs><marker id=\"ah475569\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#475569\"/></marker></defs><rect width=\"260\" height=\"200\" rx=\"8\" fill=\"white\"/><path d=\"M70.0 160.0L70.0 30.0L200.0 160.0Z\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linejoin=\"round\" fill-opacity=\"0.0\"/><line x1=\"70.0\" y1=\"160.0\" x2=\"70.0\" y2=\"90.0\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ah475569)\"/><line x1=\"70.0\" y1=\"160.0\" x2=\"140.0\" y2=\"160.0\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ah475569)\"/><line x1=\"200.0\" y1=\"160.0\" x2=\"130.0\" y2=\"90.0\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ah475569)\"/><path d=\"M70 148L82 148L82 160\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linejoin=\"round\"/><text x=\"60.0\" y=\"100.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\" font-style=\"italic\">a</text><text x=\"136.0\" y=\"180.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" font-style=\"italic\">b</text><text x=\"158.0\" y=\"78.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\" font-style=\"italic\">c = a − b</text></svg>"
+          },
+          "hint": "Start from |c|² = c·c = (a − b)·(a − b) and use a·b = 0.",
+          "steps": [
+            {
+              "explain": "\\(\\mathbf{a}\\) and \\(\\mathbf{b}\\) are perpendicular (the right angle), so their dot product is zero.",
+              "work": "\\(\\mathbf{a}\\cdot\\mathbf{b}=|\\mathbf{a}||\\mathbf{b}|\\cos90^\\circ=0\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 200\" width=\"260\" height=\"200\"><defs><marker id=\"ah2563eb\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#2563eb\"/></marker><marker id=\"ahdc2626\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#dc2626\"/></marker></defs><rect width=\"260\" height=\"200\" rx=\"8\" fill=\"white\"/><path d=\"M70.0 160.0L70.0 30.0L200.0 160.0Z\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linejoin=\"round\" fill-opacity=\"0.3\"/><line x1=\"70.0\" y1=\"160.0\" x2=\"70.0\" y2=\"90.0\" stroke=\"#2563eb\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ah2563eb)\"/><line x1=\"70.0\" y1=\"160.0\" x2=\"140.0\" y2=\"160.0\" stroke=\"#2563eb\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ah2563eb)\"/><line x1=\"200.0\" y1=\"160.0\" x2=\"130.0\" y2=\"90.0\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ahdc2626)\"/><path d=\"M70 148L82 148L82 160\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linejoin=\"round\"/><text x=\"60.0\" y=\"100.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\" font-style=\"italic\">a</text><text x=\"136.0\" y=\"180.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" font-style=\"italic\">b</text><text x=\"158.0\" y=\"78.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\" font-style=\"italic\">c = a − b</text><text x=\"92.0\" y=\"138.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\">a·b = 0</text></svg>"
+              }
+            },
+            {
+              "explain": "The square of the length of a vector is its dot product with itself.",
+              "work": "\\(|\\mathbf{c}|^2=\\mathbf{c}\\cdot\\mathbf{c}=(\\mathbf{a}-\\mathbf{b})\\cdot(\\mathbf{a}-\\mathbf{b})\\)"
+            },
+            {
+              "explain": "Expand like brackets, using \\(\\mathbf{a}\\cdot\\mathbf{b}=\\mathbf{b}\\cdot\\mathbf{a}\\).",
+              "work": "\\((\\mathbf{a}-\\mathbf{b})\\cdot(\\mathbf{a}-\\mathbf{b})=\\mathbf{a}\\cdot\\mathbf{a}-2\\,\\mathbf{a}\\cdot\\mathbf{b}+\\mathbf{b}\\cdot\\mathbf{b}=|\\mathbf{a}|^2-2(0)+|\\mathbf{b}|^2\\)"
+            },
+            {
+              "explain": "So the square on the hypotenuse equals the sum of the squares on the other two sides.",
+              "work": "\\(|\\mathbf{c}|^2=|\\mathbf{a}|^2+|\\mathbf{b}|^2\\)"
             }
           ],
           "xp": 1,
@@ -993,62 +1029,16 @@
             "source": "Abbotsleigh 2021 4U Trials & Solutions",
             "school": "Abbotsleigh",
             "year": 2021,
-            "number": "13(b)"
-          }
-        },
-        {
-          "id": "abbotsleigh2021-ext2-q14c",
-          "type": "mc",
-          "difficulty": "hard",
-          "timeLimit": 60,
-          "stem": "In the right triangle, \\(\\mathbf c=\\mathbf a-\\mathbf b\\), and \\(\\mathbf a\\perp\\mathbf b\\). Which equation expresses Pythagoras’ theorem using vectors?",
-          "hint": "Expand \\(\\mathbf c\\cdot\\mathbf c\\). The cross terms vanish because the two perpendicular side vectors have dot product zero.",
-          "steps": [
-            {
-              "explain": "Identify the perpendicular sides and the hypotenuse vector.",
-              "work": "\\(\\mathbf a\\cdot\\mathbf b=0,\\quad\\mathbf c=\\mathbf a-\\mathbf b.\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 195\" role=\"img\" aria-label=\"Right triangle with perpendicular vectors a and b and c equals a minus b\">\n    <rect width=\"310\" height=\"195\" rx=\"8\" fill=\"white\"/><path d=\"M68 145L68 55L245 145Z\" fill=\"#eff6ff\" stroke=\"#475569\" stroke-width=\"1.9\"/>\n    <path d=\"M68 55L80 55L80 67L68 67Z\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n    <g font-family=\"Arial\" font-size=\"13\" fill=\"#334155\"><text x=\"51\" y=\"102\">a</text><text x=\"150\" y=\"162\">b</text><text x=\"162\" y=\"91\">c</text></g></svg>"
-              }
-            },
-            {
-              "explain": "Take the dot product of c with itself and expand.",
-              "work": "\\(|\\mathbf c|^2=(\\mathbf a-\\mathbf b)\\cdot(\\mathbf a-\\mathbf b)=|\\mathbf a|^2-2\\mathbf a\\cdot\\mathbf b+|\\mathbf b|^2.\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 195\" role=\"img\" aria-label=\"Right triangle with perpendicular vectors a and b and c equals a minus b\">\n    <rect width=\"310\" height=\"195\" rx=\"8\" fill=\"white\"/><path d=\"M68 145L68 55L245 145Z\" fill=\"#eff6ff\" stroke=\"#475569\" stroke-width=\"1.9\"/><path d=\"M68 145L68 55 M68 145L245 145\" stroke=\"#16a34a\" stroke-width=\"2.4\"/>\n    <path d=\"M68 55L80 55L80 67L68 67Z\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n    <g font-family=\"Arial\" font-size=\"13\" fill=\"#334155\"><text x=\"51\" y=\"102\">a</text><text x=\"150\" y=\"162\">b</text><text x=\"162\" y=\"91\">c</text></g></svg>"
-              }
-            },
-            {
-              "explain": "Use perpendicularity to remove the middle term.",
-              "work": "\\(\\mathbf a\\cdot\\mathbf b=0\\Rightarrow |\\mathbf c|^2=|\\mathbf a|^2+|\\mathbf b|^2.\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 195\" role=\"img\" aria-label=\"Right triangle with perpendicular vectors a and b and c equals a minus b\">\n    <rect width=\"310\" height=\"195\" rx=\"8\" fill=\"white\"/><path d=\"M68 145L68 55L245 145Z\" fill=\"#eff6ff\" stroke=\"#475569\" stroke-width=\"1.9\"/><path d=\"M68 145L68 55 M68 145L245 145\" stroke=\"#16a34a\" stroke-width=\"2.4\"/><path d=\"M68 55L245 145\" stroke=\"#8b5cf6\" stroke-width=\"2.4\"/>\n    <path d=\"M68 55L80 55L80 67L68 67Z\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n    <g font-family=\"Arial\" font-size=\"13\" fill=\"#334155\"><text x=\"51\" y=\"102\">a</text><text x=\"150\" y=\"162\">b</text><text x=\"162\" y=\"91\">c</text></g></svg>"
-              }
-            }
-          ],
-          "xp": 1,
-          "meta": {
-            "source": "Abbotsleigh 2021 4U Trials & Solutions",
-            "school": "Abbotsleigh",
-            "year": 2021
+            "number": "14(c)"
           },
-          "options": [
-            "\\(|\\mathbf c|=|\\mathbf a|+|\\mathbf b|\\)",
-            "\\(|\\mathbf c|^2=|\\mathbf a|^2+|\\mathbf b|^2\\)",
-            "\\(|\\mathbf c|^2=|\\mathbf a|^2-|\\mathbf b|^2\\)",
-            "\\(|\\mathbf a|^2=|\\mathbf b|^2+|\\mathbf c|^2\\)"
-          ],
-          "answer": 1,
-          "solution": "\\(|\\mathbf c|^2=|\\mathbf a|^2+|\\mathbf b|^2\\)",
+          "answer": "Since the angle between \\(\\mathbf{a}\\) and \\(\\mathbf{b}\\) is \\(90^\\circ\\), \\(\\mathbf{a}\\cdot\\mathbf{b}=0\\). Then \\(|\\mathbf{c}|^2=\\mathbf{c}\\cdot\\mathbf{c}=(\\mathbf{a}-\\mathbf{b})\\cdot(\\mathbf{a}-\\mathbf{b})=\\mathbf{a}\\cdot\\mathbf{a}-2\\,\\mathbf{a}\\cdot\\mathbf{b}+\\mathbf{b}\\cdot\\mathbf{b}=|\\mathbf{a}|^2+|\\mathbf{b}|^2\\), which is Pythagoras' theorem.",
+          "manual": true,
           "keyPoints": [
             {
-              "text": "\\(\\mathbf c=\\mathbf a-\\mathbf b\\)",
-              "note": "Expand c·c and use a·b=0 for the right angle."
+              "text": "prove Pythagoras’ Theorem",
+              "note": "Use |c|² = c·c with c = a − b, and a·b = 0 because of the right angle."
             }
-          ],
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 195\" role=\"img\" aria-label=\"Right triangle with perpendicular vectors a and b and c equals a minus b\">\n    <rect width=\"310\" height=\"195\" rx=\"8\" fill=\"white\"/><path d=\"M68 145L68 55L245 145Z\" fill=\"#eff6ff\" stroke=\"#475569\" stroke-width=\"1.9\"/>\n    <path d=\"M68 55L80 55L80 67L68 67Z\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n    <g font-family=\"Arial\" font-size=\"13\" fill=\"#334155\"><text x=\"51\" y=\"102\">a</text><text x=\"150\" y=\"162\">b</text><text x=\"162\" y=\"91\">c</text></g></svg>"
-          }
+          ]
         }
       ]
     },
@@ -1121,51 +1111,47 @@
           "type": "mc",
           "difficulty": "medium",
           "timeLimit": 60,
-          "stem": "In the 3D diagram, \\(A=(0,5,20)\\) and \\(B=(10,12,0)\\). What is the position vector of the midpoint of \\(AB\\)?",
-          "hint": "Average the x-, y- and z-coordinates separately; keep the coordinate order \\((x,y,z)\\).",
+          "stem": "Consider points \\(A\\) and \\(B\\) as shown in the diagram.\nThe position vector representing the midpoint of \\(AB\\) is:",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" width=\"360\" height=\"250\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"360\" height=\"250\" rx=\"8\" fill=\"white\"/><line x1=\"150.0\" y1=\"160.0\" x2=\"72.0\" y2=\"219.8\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"150.0\" y1=\"160.0\" x2=\"336.0\" y2=\"160.0\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"150.0\" y1=\"160.0\" x2=\"150.0\" y2=\"20.5\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"58.0\" y=\"225.8\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\" font-style=\"italic\">x</text><text x=\"342.0\" y=\"165.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\" font-style=\"italic\">y</text><text x=\"157.0\" y=\"24.5\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\" font-style=\"italic\">z</text><text x=\"142.0\" y=\"154.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">O</text><line x1=\"210.0\" y1=\"36.0\" x2=\"210.0\" y2=\"160.0\" stroke=\"#64748b\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"210.0\" y1=\"36.0\" x2=\"150.0\" y2=\"36.0\" stroke=\"#64748b\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"234.0\" y1=\"206.0\" x2=\"90.0\" y2=\"206.0\" stroke=\"#64748b\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"234.0\" y1=\"206.0\" x2=\"294.0\" y2=\"160.0\" stroke=\"#64748b\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"142.0\" y=\"40.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">20</text><text x=\"210.0\" y=\"177.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">5</text><text x=\"298.0\" y=\"153.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">12</text><text x=\"82.0\" y=\"210.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">10</text><circle cx=\"210.0\" cy=\"36.0\" r=\"3.5\" fill=\"#1e293b\"/><circle cx=\"234.0\" cy=\"206.0\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"218.0\" y=\"32.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">A</text><text x=\"238.0\" y=\"224.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">B</text></svg>"
+          },
+          "hint": "Write A and B as (x, y, z) first, then average each coordinate.",
           "steps": [
             {
-              "explain": "Read the endpoints in the stated coordinate order (x,y,z).",
-              "work": "\\(A=(0,5,20),\\qquad B=(10,12,0).\\)",
+              "explain": "Read the coordinates from the diagram. \\(A\\) is directly above \\(y=5\\) on the \\(y\\)-axis at height \\(20\\); \\(B\\) lies in the \\(xy\\)-plane with \\(x=10\\) and \\(y=12\\).",
+              "work": "\\(A=(0,\\,5,\\,20),\\qquad B=(10,\\,12,\\,0)\\)",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" role=\"img\" aria-label=\"Three-dimensional coordinate axes and points A and B\"><rect width=\"360\" height=\"250\" rx=\"10\" fill=\"white\"/><path d=\"M100 205 L190 160 M100 205 L275 205 M100 205 L100 35\" stroke=\"#475569\" stroke-width=\"1.8\"/><g font-family=\"Arial\" font-size=\"12\" fill=\"#334155\"><text x=\"193\" y=\"158\">x</text><text x=\"281\" y=\"209\">y</text><text x=\"103\" y=\"31\">z</text><text x=\"86\" y=\"219\">O</text></g><path d=\"M100 205 L160 175 L256 175\" fill=\"none\" stroke=\"#94a3b8\" stroke-dasharray=\"4 3\"/><path d=\"M100 205 L140 205 L140 105\" fill=\"none\" stroke=\"#94a3b8\" stroke-dasharray=\"4 3\"/><circle cx=\"140\" cy=\"105\" r=\"4\" fill=\"#ea580c\"/><text x=\"147\" y=\"99\" font-family=\"Arial\" font-size=\"13\" fill=\"#1e293b\">A</text><circle cx=\"256\" cy=\"175\" r=\"4\" fill=\"#ea580c\"/><text x=\"263\" y=\"169\" font-family=\"Arial\" font-size=\"13\" fill=\"#1e293b\">B</text></svg>"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" width=\"360\" height=\"250\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"360\" height=\"250\" rx=\"8\" fill=\"white\"/><line x1=\"150.0\" y1=\"160.0\" x2=\"72.0\" y2=\"219.8\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"150.0\" y1=\"160.0\" x2=\"336.0\" y2=\"160.0\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"150.0\" y1=\"160.0\" x2=\"150.0\" y2=\"20.5\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"58.0\" y=\"225.8\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\" font-style=\"italic\">x</text><text x=\"342.0\" y=\"165.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\" font-style=\"italic\">y</text><text x=\"157.0\" y=\"24.5\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\" font-style=\"italic\">z</text><text x=\"142.0\" y=\"154.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">O</text><line x1=\"210.0\" y1=\"36.0\" x2=\"210.0\" y2=\"160.0\" stroke=\"#64748b\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"210.0\" y1=\"36.0\" x2=\"150.0\" y2=\"36.0\" stroke=\"#64748b\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"234.0\" y1=\"206.0\" x2=\"90.0\" y2=\"206.0\" stroke=\"#64748b\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"234.0\" y1=\"206.0\" x2=\"294.0\" y2=\"160.0\" stroke=\"#64748b\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"142.0\" y=\"40.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">20</text><text x=\"210.0\" y=\"177.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">5</text><text x=\"298.0\" y=\"153.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">12</text><text x=\"82.0\" y=\"210.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">10</text><circle cx=\"210.0\" cy=\"36.0\" r=\"3.5\" fill=\"#1e293b\"/><circle cx=\"234.0\" cy=\"206.0\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"218.0\" y=\"32.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\" text-anchor=\"start\">A(0, 5, 20)</text><text x=\"224.0\" y=\"226.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\" text-anchor=\"start\">B(10, 12, 0)</text><line x1=\"210.0\" y1=\"36.0\" x2=\"234.0\" y2=\"206.0\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"222.0\" cy=\"121.0\" r=\"4.5\" fill=\"#dc2626\"/><text x=\"232.0\" y=\"123.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\">M(5, 8.5, 10)</text></svg>"
               }
             },
             {
-              "explain": "The midpoint lies halfway along the segment, so average matching coordinates separately.",
-              "work": "\\(M=\\left(\\frac{x_A+x_B}{2},\\frac{y_A+y_B}{2},\\frac{z_A+z_B}{2}\\right).\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" role=\"img\" aria-label=\"Three-dimensional coordinate axes and points A and B\"><rect width=\"360\" height=\"250\" rx=\"10\" fill=\"white\"/><path d=\"M100 205 L190 160 M100 205 L275 205 M100 205 L100 35\" stroke=\"#475569\" stroke-width=\"1.8\"/><g font-family=\"Arial\" font-size=\"12\" fill=\"#334155\"><text x=\"193\" y=\"158\">x</text><text x=\"281\" y=\"209\">y</text><text x=\"103\" y=\"31\">z</text><text x=\"86\" y=\"219\">O</text></g><path d=\"M100 205 L160 175 L256 175\" fill=\"none\" stroke=\"#94a3b8\" stroke-dasharray=\"4 3\"/><path d=\"M100 205 L140 205 L140 105\" fill=\"none\" stroke=\"#94a3b8\" stroke-dasharray=\"4 3\"/><circle cx=\"140\" cy=\"105\" r=\"4\" fill=\"#ea580c\"/><text x=\"147\" y=\"99\" font-family=\"Arial\" font-size=\"13\" fill=\"#1e293b\">A</text><circle cx=\"256\" cy=\"175\" r=\"4\" fill=\"#ea580c\"/><text x=\"263\" y=\"169\" font-family=\"Arial\" font-size=\"13\" fill=\"#1e293b\">B</text><path d=\"M140 105L256 175\" stroke=\"#8b5cf6\" stroke-width=\"2.4\"/><circle cx=\"140\" cy=\"105\" r=\"5\" fill=\"#f97316\"/><circle cx=\"256\" cy=\"175\" r=\"5\" fill=\"#2563eb\"/><circle cx=\"198.0\" cy=\"140\" r=\"5\" fill=\"#16a34a\"/><text x=\"204.0\" y=\"134\" font-family=\"Arial\" font-size=\"12\" fill=\"#15803d\">M (5, 8.5, 10)</text></svg>"
-              }
+              "explain": "The midpoint is the average of each coordinate.",
+              "work": "\\(M=\\left(\\frac{0+10}{2},\\ \\frac{5+12}{2},\\ \\frac{20+0}{2}\\right)=(5,\\ 8.5,\\ 10)\\)"
             },
             {
-              "explain": "Substitute the endpoint values and simplify each coordinate.",
-              "work": "\\(M=\\left(\\frac{0+10}{2},\\frac{5+12}{2},\\frac{20+0}{2}\\right)=(5,\\frac{17}{2},10)=\\boxed{(5,8.5,10)}.\\)"
+              "explain": "So the midpoint has position vector \\(5\\mathbf{i}+8.5\\mathbf{j}+10\\mathbf{k}\\), which is option A. Options B–D contain the right numbers in the wrong coordinate positions — keep the order \\((x,y,z)\\)."
             }
           ],
           "xp": 1,
           "meta": {
             "source": "Abbotsleigh 2021 4U Trials & Solutions",
             "school": "Abbotsleigh",
-            "year": 2021
+            "year": 2021,
+            "number": "3"
           },
           "options": [
-            "\\((5,10,8.5)\\)",
-            "\\((10,8.5,5)\\)",
-            "\\((5,8.5,10)\\)",
-            "\\((10,5,8.5)\\)"
+            "\\((5,\\ 8.5,\\ 10)\\)",
+            "\\((5,\\ 10,\\ 8.5)\\)",
+            "\\((10,\\ 8.5,\\ 5)\\)",
+            "\\((10,\\ 5,\\ 8.5)\\)"
           ],
-          "answer": 2,
-          "solution": "\\((5,8.5,10)\\)",
+          "answer": 0,
           "keyPoints": [
             {
               "text": "midpoint of \\(AB\\)",
-              "note": "Find the midpoint by averaging x with x, y with y, and z with z."
+              "note": "Average the x-, y- and z-coordinates separately: A = (0, 5, 20), B = (10, 12, 0)."
             }
-          ],
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" role=\"img\" aria-label=\"Three-dimensional coordinate axes and points A and B\"><rect width=\"360\" height=\"250\" rx=\"10\" fill=\"white\"/><path d=\"M100 205 L190 160 M100 205 L275 205 M100 205 L100 35\" stroke=\"#475569\" stroke-width=\"1.8\"/><g font-family=\"Arial\" font-size=\"12\" fill=\"#334155\"><text x=\"193\" y=\"158\">x</text><text x=\"281\" y=\"209\">y</text><text x=\"103\" y=\"31\">z</text><text x=\"86\" y=\"219\">O</text></g><path d=\"M100 205 L160 175 L256 175\" fill=\"none\" stroke=\"#94a3b8\" stroke-dasharray=\"4 3\"/><path d=\"M100 205 L140 205 L140 105\" fill=\"none\" stroke=\"#94a3b8\" stroke-dasharray=\"4 3\"/><circle cx=\"140\" cy=\"105\" r=\"4\" fill=\"#ea580c\"/><text x=\"147\" y=\"99\" font-family=\"Arial\" font-size=\"13\" fill=\"#1e293b\">A</text><circle cx=\"256\" cy=\"175\" r=\"4\" fill=\"#ea580c\"/><text x=\"263\" y=\"169\" font-family=\"Arial\" font-size=\"13\" fill=\"#1e293b\">B</text></svg>"
-          }
+          ]
         }
       ]
     },

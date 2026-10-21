@@ -240,47 +240,42 @@
         },
         {
           "id": "abbotsleigh2021-ext2-q12e",
-          "type": "mc",
+          "type": "review",
           "difficulty": "hard",
           "timeLimit": 60,
-          "stem": "Which statement explains why \\(x^2 - 4y = 2\\) has no integer solutions?",
-          "hint": "Rearrange to \\(x^2 = 4y + 2\\) and consider the possible remainders when an integer square is divided by 4.",
+          "stem": "Prove if \\(x,y\\in\\mathbb{Z}\\), then \\(x^2-4y\\neq2\\).",
+          "hint": "Assume x² − 4y = 2 and show x must be even; then reach a non-integer.",
           "steps": [
             {
-              "explain": "Assume for contradiction that integer solutions exist and rearrange the equation.",
-              "work": "Suppose there exist integers \\(x, y \\in \\mathbb{Z}\\) such that \\(x^2 - 4y = 2\\).\nRearranging gives:\n\\[x^2 = 4y + 2\\]"
+              "explain": "Use proof by contradiction: assume the opposite of what is to be proved.",
+              "work": "\\(\\text{Suppose }\\exists\\,x,y\\in\\mathbb Z\\text{ such that }x^2-4y=2\\)"
             },
             {
-              "explain": "Analyze the remainder of the right-hand side when divided by 4.",
-              "work": "Since \\(y\\) is an integer, \\(4y + 2 = 4(y) + 2\\), which leaves a remainder of 2 when divided by 4."
+              "explain": "Rearrange to see that \\(x^2\\) is even.",
+              "work": "\\(x^2=4y+2=2(2y+1)\\ \\Rightarrow\\ x^2\\text{ is even}\\ \\Rightarrow\\ x\\text{ is even}\\)"
             },
             {
-              "explain": "Determine the possible remainders of an integer square when divided by 4.",
-              "work": "Any integer \\(x\\) is either even or odd:\n- If \\(x = 2k\\) (even):\n  \\[x^2 = (2k)^2 = 4k^2 = 4(k^2)\\]\n  which leaves a remainder of 0 when divided by 4.\n- If \\(x = 2k + 1\\) (odd):\n  \\[x^2 = (2k + 1)^2 = 4k^2 + 4k + 1 = 4(k^2 + k) + 1\\]\n  which leaves a remainder of 1 when divided by 4.\nHence, the square of any integer can only leave a remainder of 0 or 1 when divided by 4."
+              "explain": "(If \\(x\\) were odd, \\(x^2\\) would be odd.) So write \\(x=2c\\) for some integer \\(c\\) and substitute.",
+              "work": "\\((2c)^2-4y=2\\ \\Rightarrow\\ 4c^2-4y=2\\ \\Rightarrow\\ c^2-y=\\frac12\\)"
             },
             {
-              "explain": "Reach a contradiction and conclude that no integer solutions exist.",
-              "work": "An integer square can never leave a remainder of 2 when divided by 4.\nTherefore, \\(x^2 = 4y + 2\\) is impossible for any integers \\(x, y\\).\n\\[\\therefore x^2 - 4y \\ne 2 \\quad \\text{for all } x, y \\in \\mathbb{Z}.\\]"
+              "explain": "\\(c\\) and \\(y\\) are integers, so \\(c^2-y\\) is an integer and cannot equal \\(\\frac12\\). This contradiction shows the assumption is false.",
+              "work": "\\(\\therefore\\ x^2-4y\\neq2\\ \\text{ for all } x,y\\in\\mathbb Z\\)"
             }
           ],
           "xp": 1,
           "meta": {
             "source": "Abbotsleigh 2021 4U Trials & Solutions",
             "school": "Abbotsleigh",
-            "year": 2021
+            "year": 2021,
+            "number": "12(e)"
           },
-          "options": [
-            "The square of any integer leaves a remainder of 0 or 1 when divided by 4, but \\(4y+2\\) leaves a remainder of 2.",
-            "The square of any even integer leaves a remainder of 2 when divided by 4.",
-            "The square of any integer leaves a remainder of 3 when divided by 4, so the equation is impossible.",
-            "The square of every integer is a multiple of 4, so \\(x^2 - 4y\\) must equal 0."
-          ],
-          "answer": 0,
-          "solution": "The square of any integer leaves a remainder of 0 or 1 when divided by 4, but \\(4y+2\\) leaves a remainder of 2, so no integer solutions exist.",
+          "answer": "Proof by contradiction. Suppose there are integers \\(x,y\\) with \\(x^2-4y=2\\). Then \\(x^2=4y+2=2(2y+1)\\) is even, so \\(x\\) is even; write \\(x=2c\\) with \\(c\\in\\mathbb Z\\). Then \\(4c^2-4y=2\\), so \\(c^2-y=\\frac12\\). But \\(c^2-y\\) is an integer, which is a contradiction. Hence \\(x^2-4y\\neq2\\) for all integers \\(x,y\\).",
+          "manual": true,
           "keyPoints": [
             {
-              "text": "Which statement explains why \\(x^2 - 4y = 2\\) has no integer solutions",
-              "note": "Test the remainder of x² when divided by 4: an integer square can only leave a remainder of 0 or 1, never 2."
+              "text": "then \\(x^2-4y\\neq2\\)",
+              "note": "Assume x² − 4y = 2. Then x² is even, so x = 2c, which leads to c² − y = ½."
             }
           ]
         }
@@ -527,54 +522,50 @@
           "type": "mc",
           "difficulty": "hard",
           "timeLimit": 60,
-          "stem": "The rule is: “If a picture of a tree is on a card, then the other side is yellow.” The tree card must be checked. Which logical test and card turns are needed to check the rule?",
-          "hint": "To test “if P then Q”, check P and also check not-Q. Turn the tree card and the card whose visible side is not yellow.",
+          "stem": "Four cards, each with a picture on one face and a plain colour on the other, are shown.\n\nYou are given the rule which states:\n\nIf a picture of a tree is on a card, then the colour yellow is on its other side.\n\nThe card showing the tree needs to be checked to prove this rule. Which of the following represents the best course to determine which other card (or cards) need to be turned over to check whether the rule holds?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 140\" width=\"420\" height=\"140\"><rect width=\"420\" height=\"140\" rx=\"8\" fill=\"white\"/><rect x=\"20\" y=\"14\" width=\"80\" height=\"90\" rx=\"4\" fill=\"white\" stroke=\"#475569\" stroke-width=\"1.6\"/><rect x=\"120\" y=\"14\" width=\"80\" height=\"90\" rx=\"4\" fill=\"white\" stroke=\"#475569\" stroke-width=\"1.6\"/><rect x=\"220\" y=\"14\" width=\"80\" height=\"90\" rx=\"4\" fill=\"#38bdf8\" stroke=\"#475569\" stroke-width=\"1.6\"/><rect x=\"320\" y=\"14\" width=\"80\" height=\"90\" rx=\"4\" fill=\"#fde047\" stroke=\"#475569\" stroke-width=\"1.6\"/><rect x=\"56\" y=\"62\" width=\"8\" height=\"30\" fill=\"#92400e\"/><circle cx=\"60\" cy=\"50\" r=\"20\" fill=\"#16a34a\"/><circle cx=\"48\" cy=\"58\" r=\"13\" fill=\"#16a34a\"/><circle cx=\"72\" cy=\"58\" r=\"13\" fill=\"#16a34a\"/><circle cx=\"60\" cy=\"36\" r=\"13\" fill=\"#16a34a\"/><ellipse cx=\"160\" cy=\"66\" rx=\"26\" ry=\"16\" fill=\"#f97316\"/><circle cx=\"160\" cy=\"42\" r=\"14\" fill=\"#f97316\"/><circle cx=\"150\" cy=\"30\" r=\"5\" fill=\"#f97316\"/><circle cx=\"170\" cy=\"30\" r=\"5\" fill=\"#f97316\"/><line x1=\"146\" y1=\"54\" x2=\"143\" y2=\"78\" stroke=\"#1e293b\" stroke-width=\"3\"/><line x1=\"156\" y1=\"54\" x2=\"153\" y2=\"78\" stroke=\"#1e293b\" stroke-width=\"3\"/><line x1=\"166\" y1=\"54\" x2=\"163\" y2=\"78\" stroke=\"#1e293b\" stroke-width=\"3\"/><line x1=\"176\" y1=\"54\" x2=\"173\" y2=\"78\" stroke=\"#1e293b\" stroke-width=\"3\"/><circle cx=\"155\" cy=\"40\" r=\"2\" fill=\"#1e293b\"/><circle cx=\"165\" cy=\"40\" r=\"2\" fill=\"#1e293b\"/><text x=\"60.0\" y=\"124.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"middle\">tree</text><text x=\"160.0\" y=\"124.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"middle\">tiger</text><text x=\"260.0\" y=\"124.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"middle\">blue</text><text x=\"360.0\" y=\"124.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"middle\">yellow</text></svg>"
+          },
+          "hint": "Write the rule as P ⇒ Q and think about which statement is logically equivalent to it.",
           "steps": [
             {
-              "explain": "Identify the implication and its contrapositive.",
-              "work": "\\(P\\Rightarrow Q\\text{ is equivalent to }\\neg Q\\Rightarrow\\neg P.\\)",
+              "explain": "Write the rule as an implication \\(P\\Rightarrow Q\\).",
+              "work": "\\(P:\\ \\text{the card shows a tree},\\qquad Q:\\ \\text{the other side is yellow}\\)"
+            },
+            {
+              "explain": "The contrapositive \\(\\neg Q\\Rightarrow\\neg P\\) is logically equivalent to the rule: if the colour is not yellow, then the picture is not a tree.",
+              "work": "\\(P\\Rightarrow Q\\ \\ \\equiv\\ \\ \\neg Q\\Rightarrow\\neg P\\)"
+            },
+            {
+              "explain": "So the other card that must be turned over is the blue (not yellow) card — if it has a tree on the back, the rule is broken. The yellow card does not need checking (that would test the converse \\(Q\\Rightarrow P\\)), and the tiger card says nothing about trees.",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 110\" role=\"img\" aria-label=\"Four cards showing a tree, a tiger, blue and yellow\">\n    <rect width=\"360\" height=\"110\" fill=\"white\"/><g font-family=\"Arial\" text-anchor=\"middle\">\n    <rect x=\"8\" y=\"10\" width=\"76\" height=\"80\" fill=\"#fff\" stroke=\"#16a34a\" stroke-width=\"3\"/><circle cx=\"46\" cy=\"38\" r=\"18\" fill=\"#22c55e\"/><path d=\"M46 48V75M36 68H56\" stroke=\"#854d0e\" stroke-width=\"5\"/><text x=\"46\" y=\"105\" font-size=\"10\">Tree</text>\n    <rect x=\"98\" y=\"10\" width=\"76\" height=\"80\" fill=\"#fff\" stroke=\"#475569\"/><ellipse cx=\"136\" cy=\"49\" rx=\"23\" ry=\"19\" fill=\"#fb923c\" stroke=\"#475569\"/><path d=\"M118 39l8 5m28-5l-8 5m-28 12l8-4m28 4l-8-4\" stroke=\"#334155\" stroke-width=\"3\"/><circle cx=\"128\" cy=\"47\" r=\"2\"/><circle cx=\"144\" cy=\"47\" r=\"2\"/><path d=\"M132 56q4 4 8 0\" fill=\"none\" stroke=\"#334155\"/><text x=\"136\" y=\"105\" font-size=\"10\">Tiger</text>\n    <rect x=\"188\" y=\"10\" width=\"76\" height=\"80\" fill=\"#0ea5e9\" stroke=\"#475569\" stroke-width=\"1\"/><text x=\"226\" y=\"105\" font-size=\"10\">Blue</text>\n    <rect x=\"278\" y=\"10\" width=\"76\" height=\"80\" fill=\"#fde047\" stroke=\"#475569\"/><text x=\"316\" y=\"105\" font-size=\"10\">Yellow</text></g></svg>"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 140\" width=\"420\" height=\"140\"><rect width=\"420\" height=\"140\" rx=\"8\" fill=\"white\"/><rect x=\"20\" y=\"14\" width=\"80\" height=\"90\" rx=\"4\" fill=\"white\" stroke=\"#475569\" stroke-width=\"1.6\"/><rect x=\"120\" y=\"14\" width=\"80\" height=\"90\" rx=\"4\" fill=\"white\" stroke=\"#475569\" stroke-width=\"1.6\"/><rect x=\"220\" y=\"14\" width=\"80\" height=\"90\" rx=\"4\" fill=\"#38bdf8\" stroke=\"#dc2626\" stroke-width=\"3\"/><rect x=\"320\" y=\"14\" width=\"80\" height=\"90\" rx=\"4\" fill=\"#fde047\" stroke=\"#475569\" stroke-width=\"1.6\"/><rect x=\"56\" y=\"62\" width=\"8\" height=\"30\" fill=\"#92400e\"/><circle cx=\"60\" cy=\"50\" r=\"20\" fill=\"#16a34a\"/><circle cx=\"48\" cy=\"58\" r=\"13\" fill=\"#16a34a\"/><circle cx=\"72\" cy=\"58\" r=\"13\" fill=\"#16a34a\"/><circle cx=\"60\" cy=\"36\" r=\"13\" fill=\"#16a34a\"/><ellipse cx=\"160\" cy=\"66\" rx=\"26\" ry=\"16\" fill=\"#f97316\"/><circle cx=\"160\" cy=\"42\" r=\"14\" fill=\"#f97316\"/><circle cx=\"150\" cy=\"30\" r=\"5\" fill=\"#f97316\"/><circle cx=\"170\" cy=\"30\" r=\"5\" fill=\"#f97316\"/><line x1=\"146\" y1=\"54\" x2=\"143\" y2=\"78\" stroke=\"#1e293b\" stroke-width=\"3\"/><line x1=\"156\" y1=\"54\" x2=\"153\" y2=\"78\" stroke=\"#1e293b\" stroke-width=\"3\"/><line x1=\"166\" y1=\"54\" x2=\"163\" y2=\"78\" stroke=\"#1e293b\" stroke-width=\"3\"/><line x1=\"176\" y1=\"54\" x2=\"173\" y2=\"78\" stroke=\"#1e293b\" stroke-width=\"3\"/><circle cx=\"155\" cy=\"40\" r=\"2\" fill=\"#1e293b\"/><circle cx=\"165\" cy=\"40\" r=\"2\" fill=\"#1e293b\"/><text x=\"60.0\" y=\"124.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"middle\">tree</text><text x=\"160.0\" y=\"124.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"middle\">tiger</text><text x=\"260.0\" y=\"124.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">blue</text><text x=\"360.0\" y=\"124.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"middle\">yellow</text></svg>"
               }
             },
             {
-              "explain": "The tree card checks the case where P is true. The blue card checks whether a non-yellow reverse can hide a tree.",
-              "work": "\\(P=\\text{tree},\\quad Q=\\text{yellow};\\quad\\neg Q=\\text{blue}.\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 110\" role=\"img\" aria-label=\"Four cards showing a tree, a tiger, blue and yellow\">\n    <rect width=\"360\" height=\"110\" fill=\"white\"/><g font-family=\"Arial\" text-anchor=\"middle\">\n    <rect x=\"8\" y=\"10\" width=\"76\" height=\"80\" fill=\"#fff\" stroke=\"#16a34a\" stroke-width=\"3\"/><circle cx=\"46\" cy=\"38\" r=\"18\" fill=\"#22c55e\"/><path d=\"M46 48V75M36 68H56\" stroke=\"#854d0e\" stroke-width=\"5\"/><text x=\"46\" y=\"105\" font-size=\"10\">Tree</text>\n    <rect x=\"98\" y=\"10\" width=\"76\" height=\"80\" fill=\"#fff\" stroke=\"#475569\"/><ellipse cx=\"136\" cy=\"49\" rx=\"23\" ry=\"19\" fill=\"#fb923c\" stroke=\"#475569\"/><path d=\"M118 39l8 5m28-5l-8 5m-28 12l8-4m28 4l-8-4\" stroke=\"#334155\" stroke-width=\"3\"/><circle cx=\"128\" cy=\"47\" r=\"2\"/><circle cx=\"144\" cy=\"47\" r=\"2\"/><path d=\"M132 56q4 4 8 0\" fill=\"none\" stroke=\"#334155\"/><text x=\"136\" y=\"105\" font-size=\"10\">Tiger</text>\n    <rect x=\"188\" y=\"10\" width=\"76\" height=\"80\" fill=\"#0ea5e9\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"226\" y=\"105\" font-size=\"10\">Blue</text>\n    <rect x=\"278\" y=\"10\" width=\"76\" height=\"80\" fill=\"#fde047\" stroke=\"#475569\"/><text x=\"316\" y=\"105\" font-size=\"10\">Yellow</text></g></svg>"
-              }
-            },
-            {
-              "explain": "This is the contrapositive test for the rule.",
-              "work": "\\(\\text{Turn the tree and blue cards; the method is proof by contrapositive.}\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 110\" role=\"img\" aria-label=\"Four cards showing a tree, a tiger, blue and yellow\">\n    <rect width=\"360\" height=\"110\" fill=\"white\"/><g font-family=\"Arial\" text-anchor=\"middle\">\n    <rect x=\"8\" y=\"10\" width=\"76\" height=\"80\" fill=\"#fff\" stroke=\"#16a34a\" stroke-width=\"3\"/><circle cx=\"46\" cy=\"38\" r=\"18\" fill=\"#22c55e\"/><path d=\"M46 48V75M36 68H56\" stroke=\"#854d0e\" stroke-width=\"5\"/><text x=\"46\" y=\"105\" font-size=\"10\">Tree</text>\n    <rect x=\"98\" y=\"10\" width=\"76\" height=\"80\" fill=\"#fff\" stroke=\"#475569\"/><ellipse cx=\"136\" cy=\"49\" rx=\"23\" ry=\"19\" fill=\"#fb923c\" stroke=\"#475569\"/><path d=\"M118 39l8 5m28-5l-8 5m-28 12l8-4m28 4l-8-4\" stroke=\"#334155\" stroke-width=\"3\"/><circle cx=\"128\" cy=\"47\" r=\"2\"/><circle cx=\"144\" cy=\"47\" r=\"2\"/><path d=\"M132 56q4 4 8 0\" fill=\"none\" stroke=\"#334155\"/><text x=\"136\" y=\"105\" font-size=\"10\">Tiger</text>\n    <rect x=\"188\" y=\"10\" width=\"76\" height=\"80\" fill=\"#0ea5e9\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"226\" y=\"105\" font-size=\"10\">Blue</text>\n    <rect x=\"278\" y=\"10\" width=\"76\" height=\"80\" fill=\"#fde047\" stroke=\"#475569\"/><text x=\"316\" y=\"105\" font-size=\"10\">Yellow</text></g></svg>"
-              }
+              "explain": "The reasoning used is the contrapositive, which is option D."
             }
           ],
           "xp": 1,
           "meta": {
             "source": "Abbotsleigh 2021 4U Trials & Solutions",
             "school": "Abbotsleigh",
-            "year": 2021
+            "year": 2021,
+            "number": "8"
           },
           "options": [
-            "Contrapositive; turn the tree and yellow cards.",
-            "Converse; turn the yellow and blue cards.",
-            "Counterexample; turn the tiger and blue cards.",
-            "Contrapositive; turn the tree and blue cards."
+            "Using proof by induction.",
+            "Using proof by contradiction.",
+            "Using proof by counterexample.",
+            "Using proof by contrapositive."
           ],
           "answer": 3,
-          "solution": "Using proof by contrapositive; turn the tree and blue cards.",
           "keyPoints": [
             {
-              "text": "If a picture of a tree is on a card",
-              "note": "To test an implication, check its antecedent and the case where its consequent is false."
+              "text": "If a picture of a tree is on a card, then the colour yellow is on its other side",
+              "note": "Equivalent form (contrapositive): if the colour is not yellow, the picture is not a tree — so check the blue card."
             }
-          ],
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 110\" role=\"img\" aria-label=\"Four cards showing a tree, a tiger, blue and yellow\">\n    <rect width=\"360\" height=\"110\" fill=\"white\"/><g font-family=\"Arial\" text-anchor=\"middle\">\n    <rect x=\"8\" y=\"10\" width=\"76\" height=\"80\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1\"/><circle cx=\"46\" cy=\"38\" r=\"18\" fill=\"#22c55e\"/><path d=\"M46 48V75M36 68H56\" stroke=\"#854d0e\" stroke-width=\"5\"/><text x=\"46\" y=\"105\" font-size=\"10\">Tree</text>\n    <rect x=\"98\" y=\"10\" width=\"76\" height=\"80\" fill=\"#fff\" stroke=\"#475569\"/><ellipse cx=\"136\" cy=\"49\" rx=\"23\" ry=\"19\" fill=\"#fb923c\" stroke=\"#475569\"/><path d=\"M118 39l8 5m28-5l-8 5m-28 12l8-4m28 4l-8-4\" stroke=\"#334155\" stroke-width=\"3\"/><circle cx=\"128\" cy=\"47\" r=\"2\"/><circle cx=\"144\" cy=\"47\" r=\"2\"/><path d=\"M132 56q4 4 8 0\" fill=\"none\" stroke=\"#334155\"/><text x=\"136\" y=\"105\" font-size=\"10\">Tiger</text>\n    <rect x=\"188\" y=\"10\" width=\"76\" height=\"80\" fill=\"#0ea5e9\" stroke=\"#475569\" stroke-width=\"1\"/><text x=\"226\" y=\"105\" font-size=\"10\">Blue</text>\n    <rect x=\"278\" y=\"10\" width=\"76\" height=\"80\" fill=\"#fde047\" stroke=\"#475569\"/><text x=\"316\" y=\"105\" font-size=\"10\">Yellow</text></g></svg>"
-          }
+          ]
         }
       ]
     },
@@ -698,47 +689,42 @@
         },
         {
           "id": "abbotsleigh2021-ext2-q15c",
-          "type": "mc",
+          "type": "review",
           "difficulty": "hard",
           "timeLimit": 60,
-          "stem": "Assume \\(a,b,c>0\\), \\(a^2+b^2\\ge2ab\\), and \\(a+b+c=1\\). Which inequality follows from these conditions?",
-          "hint": "Use the sum condition to rewrite the left side as \\((b+c)(a+c)(a+b)\\). Apply \\(a+b\\ge2\\sqrt{ab}\\) to each pair.",
+          "stem": "Given \\(a^2+b^2\\ge2ab\\) and \\(a+b+c=1\\), prove:\n\n\\((1-a)(1-b)(1-c)\\ge8abc.\\)",
+          "hint": "Replace 1 − a by b + c, etc., expand, then use x² + y² ≥ 2xy three times.",
           "steps": [
             {
-              "explain": "Use a+b+c=1 to replace each 1−variable factor with the sum of the other two positive variables.",
-              "work": "\\(1-a=b+c,\\qquad1-b=a+c,\\qquad1-c=a+b.\\)"
+              "explain": "Use \\(a+b+c=1\\) to rewrite each bracket. (As intended in the question, \\(a\\), \\(b\\), \\(c\\) are positive.)",
+              "work": "\\(1-a=b+c,\\qquad1-b=a+c,\\qquad1-c=a+b\\)\n\\(\\text{LHS}=(b+c)(a+c)(a+b)\\)"
             },
             {
-              "explain": "For any positive pair, AM–GM gives the sum at least twice the geometric mean. Write this for all three pairs.",
-              "work": "\\(a+b\\ge2\\sqrt{ab},\\quad b+c\\ge2\\sqrt{bc},\\quad c+a\\ge2\\sqrt{ca}.\\)"
+              "explain": "Expand.",
+              "work": "\\((b+c)(a+c)=ab+bc+ac+c^2\\)\n\\((ab+bc+ac+c^2)(a+b)=a^2b+ab^2+abc+b^2c+a^2c+abc+ac^2+bc^2\\)"
             },
             {
-              "explain": "Multiply the three inequalities; all factors are positive, so the inequality direction is preserved.",
-              "work": "\\((a+b)(b+c)(c+a)\\ge(2\\sqrt{ab})(2\\sqrt{bc})(2\\sqrt{ca}).\\)"
+              "explain": "Group the terms so that each pair \\(x^2+y^2\\) appears.",
+              "work": "\\(\\text{LHS}=b\\left(a^2+c^2\\right)+c\\left(a^2+b^2\\right)+a\\left(b^2+c^2\\right)+2abc\\)"
             },
             {
-              "explain": "Collect the factors under the radical and substitute the equal pair sums from step 1.",
-              "work": "\\((2\\sqrt{ab})(2\\sqrt{bc})(2\\sqrt{ca})=8\\sqrt{a^2b^2c^2}=8abc,\\quad(1-a)(1-b)(1-c)\\ge8abc.\\)"
+              "explain": "Apply \\(x^2+y^2\\ge2xy\\) to each bracket (multiplying by the positive numbers \\(a,b,c\\) keeps the direction of the inequality).",
+              "work": "\\(\\text{LHS}\\ge b(2ac)+c(2ab)+a(2bc)+2abc=8abc\\)"
             }
           ],
           "xp": 1,
           "meta": {
             "source": "Abbotsleigh 2021 4U Trials & Solutions",
             "school": "Abbotsleigh",
-            "year": 2021
+            "year": 2021,
+            "number": "15(c)"
           },
-          "options": [
-            "\\((1-a)(1-b)(1-c)\\ge4abc\\)",
-            "\\((1-a)(1-b)(1-c)\\le8abc\\)",
-            "\\((1-a)(1-b)(1-c)\\ge2abc\\)",
-            "\\((1-a)(1-b)(1-c)\\ge8abc\\)"
-          ],
-          "answer": 3,
-          "solution": "\\((1-a)(1-b)(1-c)\\ge8abc\\)",
+          "answer": "(Here \\(a,b,c\\) are positive.) Since \\(a+b+c=1\\): \\(1-a=b+c\\), \\(1-b=a+c\\), \\(1-c=a+b\\). So LHS \\(=(b+c)(a+c)(a+b)=a^2b+a^2c+ab^2+b^2c+ac^2+bc^2+2abc=b(a^2+c^2)+c(a^2+b^2)+a(b^2+c^2)+2abc\\ge b(2ac)+c(2ab)+a(2bc)+2abc=8abc\\).",
+          "manual": true,
           "keyPoints": [
             {
-              "text": "Assume \\(a,b,c>0\\)",
-              "note": "The positivity condition is needed to multiply AM-GM inequalities; the supplied paper omits it, so it is stated here to make the claim valid."
+              "text": "\\((1-a)(1-b)(1-c)\\ge8abc.\\)",
+              "note": "Use a + b + c = 1 to write 1 − a = b + c, etc., then expand and apply x² + y² ≥ 2xy."
             }
           ]
         },
@@ -747,105 +733,101 @@
           "type": "multipart",
           "difficulty": "hard",
           "timeLimit": 60,
-          "stem": "Consider telescoping inequalities and the sum \\(\\sum_{k=1}^{80}\\frac{1}{\\sqrt{k}}\\).",
-          "hint": "Turn each reciprocal square root into a difference of consecutive square roots so the sums telescope.",
-          "parts": [
-            {
-              "id": "abbotsleigh2021-ext2-q16a-i",
-              "type": "mc",
-              "difficulty": "medium",
-              "timeLimit": 60,
-              "stem": "For \\(k\\in\\mathbb R^+\\), which strict inequality is true?",
-              "hint": "Compare the denominators after noting \\(\\sqrt{k+1}>\\sqrt{k}\\).",
-              "steps": [
-                {
-                  "explain": "Since k>0, both square roots are defined and positive. Increasing the number under a square root increases its value.",
-                  "work": "\\(k+1>k>0\\quad\\Longrightarrow\\quad\\sqrt{k+1}>\\sqrt{k}>0.\\)"
-                },
-                {
-                  "explain": "Add √k to each side to compare the complete denominators.",
-                  "work": "\\(\\sqrt{k+1}+\\sqrt{k}>2\\sqrt{k}.\\)"
-                },
-                {
-                  "explain": "Both denominators are positive, so taking reciprocals reverses the inequality; multiplying by 2 keeps its direction.",
-                  "work": "\\(\\frac1{\\sqrt{k+1}+\\sqrt{k}}<\\frac1{2\\sqrt{k}}\\quad\\Longrightarrow\\quad\\boxed{\\frac2{\\sqrt{k+1}+\\sqrt{k}}<\\frac1{\\sqrt{k}}}.\\)"
-                }
-              ],
-              "xp": 1,
-              "meta": {
-                "source": "Abbotsleigh 2021 4U Trials & Solutions",
-                "school": "Abbotsleigh",
-                "year": 2021
-              },
-              "options": [
-                "\\(\\frac{2}{\\sqrt{k+1}+\\sqrt{k}}<\\frac1{\\sqrt{k}}\\)",
-                "\\(\\frac{2}{\\sqrt{k+1}+\\sqrt{k}}>\\frac1{\\sqrt{k}}\\)",
-                "\\(\\frac{1}{\\sqrt{k+1}+\\sqrt{k}}<\\frac2{\\sqrt{k}}\\)",
-                "\\(\\frac{2}{\\sqrt{k+1}-\\sqrt{k}}<\\frac1{\\sqrt{k}}\\)"
-              ],
-              "answer": 0,
-              "solution": "\\(\\frac{2}{\\sqrt{k+1}+\\sqrt{k}}<\\frac1{\\sqrt{k}}\\)",
-              "keyPoints": [
-                {
-                  "text": "which strict inequality is true",
-                  "note": "First compare the positive denominators; taking reciprocals reverses the inequality."
-                }
-              ]
-            },
-            {
-              "id": "abbotsleigh2021-ext2-q16a-ii",
-              "type": "mc",
-              "difficulty": "hard",
-              "timeLimit": 60,
-              "stem": "Which strict bounds can be proved for \\(\\sum_{k=1}^{80}\\frac1{\\sqrt{k}}\\)?",
-              "hint": "Use telescoping bounds based on \\(2(\\sqrt{k+1}-\\sqrt{k})\\) and \\(2(\\sqrt{k}-\\sqrt{k-1})\\).",
-              "steps": [
-                {
-                  "explain": "For the lower bound, rationalise the difference of square roots.",
-                  "work": "\\(\\frac1{\\sqrt{k}}>\\frac2{\\sqrt{k+1}+\\sqrt{k}}=2(\\sqrt{k+1}-\\sqrt{k}).\\)"
-                },
-                {
-                  "explain": "Sum from k=1 to 80; the terms telescope.",
-                  "work": "\\(\\sum_{k=1}^{80}\\frac1{\\sqrt{k}}>2(\\sqrt{81}-\\sqrt1)=2(9-1)=16.\\)"
-                },
-                {
-                  "explain": "For the upper bound, use the matching backward difference.",
-                  "work": "\\(\\frac1{\\sqrt{k}}<2(\\sqrt{k}-\\sqrt{k-1})\\quad(k\\ge2).\\)"
-                },
-                {
-                  "explain": "Sum the bound and simplify.",
-                  "work": "\\(\\sum_{k=1}^{80}\\frac1{\\sqrt{k}}<1+2(\\sqrt{80}-1)=2\\sqrt{80}-1<17.\\)"
-                }
-              ],
-              "xp": 1,
-              "meta": {
-                "source": "Abbotsleigh 2021 4U Trials & Solutions",
-                "school": "Abbotsleigh",
-                "year": 2021
-              },
-              "options": [
-                "\\(15<\\sum_{k=1}^{80}\\frac1{\\sqrt{k}}<16\\)",
-                "\\(16<\\sum_{k=1}^{80}\\frac1{\\sqrt{k}}<17\\)",
-                "\\(16<\\sum_{k=1}^{80}\\frac1{\\sqrt{k}}<18\\)",
-                "\\(17<\\sum_{k=1}^{80}\\frac1{\\sqrt{k}}<18\\)"
-              ],
-              "answer": 1,
-              "solution": "\\(16<\\sum_{k=1}^{80}\\frac1{\\sqrt{k}}<17\\)",
-              "keyPoints": [
-                {
-                  "text": "Which strict bounds can be proved for",
-                  "note": "Create lower and upper telescoping sums by rationalising consecutive square-root differences."
-                }
-              ]
-            }
-          ],
-          "xp": 1,
+          "stem": "",
           "meta": {
             "source": "Abbotsleigh 2021 4U Trials & Solutions",
             "school": "Abbotsleigh",
             "year": 2021,
             "number": "16(a)"
-          }
+          },
+          "parts": [
+            {
+              "id": "abbotsleigh2021-ext2-q16a-i",
+              "type": "review",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Prove for \\(k\\in\\mathbb{R}^+\\): \\(\\frac{2}{\\sqrt{k+1}+\\sqrt{k}}<\\frac{1}{\\sqrt{k}}\\).",
+              "hint": "Start from √k < √(k + 1) and add √k to both sides.",
+              "steps": [
+                {
+                  "explain": "Start from a true statement. The square-root function is increasing, so for \\(k>0\\)",
+                  "work": "\\(\\sqrt{k}<\\sqrt{k+1}\\)"
+                },
+                {
+                  "explain": "Add \\(\\sqrt k\\) to both sides.",
+                  "work": "\\(2\\sqrt{k}<\\sqrt{k+1}+\\sqrt{k}\\)"
+                },
+                {
+                  "explain": "Both sides are positive, so taking reciprocals reverses the inequality.",
+                  "work": "\\(\\frac{1}{2\\sqrt k}>\\frac{1}{\\sqrt{k+1}+\\sqrt{k}}\\)"
+                },
+                {
+                  "explain": "Multiply both sides by 2.",
+                  "work": "\\(\\frac{2}{\\sqrt{k+1}+\\sqrt{k}}<\\frac{1}{\\sqrt{k}}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Abbotsleigh 2021 4U Trials & Solutions",
+                "school": "Abbotsleigh",
+                "year": 2021,
+                "number": "16(a)(i)"
+              },
+              "answer": "For \\(k>0\\), \\(\\sqrt k<\\sqrt{k+1}\\). Adding \\(\\sqrt k\\): \\(2\\sqrt k<\\sqrt{k+1}+\\sqrt k\\). Both sides are positive, so taking reciprocals reverses the inequality: \\(\\frac{1}{2\\sqrt k}>\\frac{1}{\\sqrt{k+1}+\\sqrt k}\\), i.e. \\(\\frac{2}{\\sqrt{k+1}+\\sqrt k}<\\frac{1}{\\sqrt k}\\).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Prove for \\(k\\in\\mathbb{R}^+\\)",
+                  "note": "Begin with √k < √(k + 1), add √k, then take reciprocals (which reverses the inequality)."
+                }
+              ]
+            },
+            {
+              "id": "abbotsleigh2021-ext2-q16a-ii",
+              "type": "review",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Hence prove \\(16<\\sum_{k=1}^{80}\\frac{1}{\\sqrt{k}}<17\\).",
+              "hint": "Rationalise (i) to get 1/√k > 2(√(k+1) − √k) and sum — it telescopes. For the upper bound start from √(k−1) < √k.",
+              "steps": [
+                {
+                  "explain": "Rationalise the left side of (i).",
+                  "work": "\\(\\frac{2}{\\sqrt{k+1}+\\sqrt{k}}\\times\\frac{\\sqrt{k+1}-\\sqrt{k}}{\\sqrt{k+1}-\\sqrt{k}}=\\frac{2\\left(\\sqrt{k+1}-\\sqrt{k}\\right)}{(k+1)-k}=2\\left(\\sqrt{k+1}-\\sqrt{k}\\right)\\)\n\\(\\therefore\\ \\frac{1}{\\sqrt k}>2\\left(\\sqrt{k+1}-\\sqrt k\\right)\\)"
+                },
+                {
+                  "explain": "Lower bound: add these inequalities for \\(k=1,2,\\dots,80\\). The sum telescopes.",
+                  "work": "\\(\\sum_{k=1}^{80}\\frac{1}{\\sqrt k}>2\\left[(\\sqrt2-\\sqrt1)+(\\sqrt3-\\sqrt2)+\\dots+(\\sqrt{81}-\\sqrt{80})\\right]=2\\left(\\sqrt{81}-1\\right)=16\\)"
+                },
+                {
+                  "explain": "Upper bound: the same argument starting from \\(\\sqrt{k-1}<\\sqrt k\\) (for \\(k\\ge2\\)) gives the inequality the other way.",
+                  "work": "\\(2\\sqrt k>\\sqrt k+\\sqrt{k-1}\\ \\Rightarrow\\ \\frac{1}{\\sqrt k}<\\frac{2}{\\sqrt k+\\sqrt{k-1}}=2\\left(\\sqrt k-\\sqrt{k-1}\\right)\\)"
+                },
+                {
+                  "explain": "Add for \\(k=2,\\dots,80\\) (telescoping again), then add the \\(k=1\\) term separately.",
+                  "work": "\\(\\sum_{k=2}^{80}\\frac{1}{\\sqrt k}<2\\left(\\sqrt{80}-\\sqrt1\\right)\\ \\Rightarrow\\ \\sum_{k=1}^{80}\\frac{1}{\\sqrt k}<1+2\\sqrt{80}-2=2\\sqrt{80}-1\\approx16.89\\)"
+                },
+                {
+                  "explain": "Combine the two bounds.",
+                  "work": "\\(16<\\sum_{k=1}^{80}\\frac{1}{\\sqrt k}<17\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Abbotsleigh 2021 4U Trials & Solutions",
+                "school": "Abbotsleigh",
+                "year": 2021,
+                "number": "16(a)(ii)"
+              },
+              "answer": "Rationalising, \\(\\frac{2}{\\sqrt{k+1}+\\sqrt k}=2(\\sqrt{k+1}-\\sqrt k)\\), so by (i) \\(\\frac1{\\sqrt k}>2(\\sqrt{k+1}-\\sqrt k)\\). Summing for \\(k=1\\) to \\(80\\) (telescoping): \\(\\sum\\frac1{\\sqrt k}>2(\\sqrt{81}-\\sqrt1)=16\\). Similarly, from \\(\\sqrt{k-1}<\\sqrt k\\) we get \\(\\frac{2}{\\sqrt k+\\sqrt{k-1}}>\\frac1{\\sqrt k}\\), i.e. \\(\\frac1{\\sqrt k}<2(\\sqrt k-\\sqrt{k-1})\\). Summing for \\(k=2\\) to \\(80\\): \\(\\sum_{k=2}^{80}\\frac1{\\sqrt k}<2(\\sqrt{80}-1)\\), so \\(\\sum_{k=1}^{80}\\frac1{\\sqrt k}<1+2\\sqrt{80}-2=2\\sqrt{80}-1\\approx16.89<17\\).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Hence prove",
+                  "note": "Rationalising gives 1/√k > 2(√(k+1) − √k); summing from 1 to 80 telescopes to 16."
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1015,90 +997,87 @@
           "type": "mc",
           "difficulty": "medium",
           "timeLimit": 60,
-          "stem": "For induction, which expression must be proved divisible by \\(3\\) in the step from \\(n=k\\) to \\(n=k+1\\) for \\(n(2n-1)(2n+1)\\)?",
-          "hint": "Replace every occurrence of \\(n\\) by \\(k+1\\) in the statement you want to establish.",
+          "stem": "Mathematical induction is to be used to show \\(n(2n-1)(2n+1)\\) is divisible by \\(3\\ \\forall\\,n\\in\\mathbb{N}\\).\nThe inductive step that requires proving is:",
+          "hint": "Substitute n = k + 1 into every factor, including inside 2n − 1 and 2n + 1.",
           "steps": [
             {
-              "explain": "Let P(n)=n(2n−1)(2n+1) be divisible by 3. In the inductive step, substitute n=k+1 into the statement.",
-              "work": "\\(P(k+1)=(k+1)\\bigl(2(k+1)-1\\bigr)\\bigl(2(k+1)+1\\bigr).\\)"
+              "explain": "In the inductive step we assume the statement for \\(n=k\\) and must prove it for \\(n=k+1\\). So replace every \\(n\\) by \\(k+1\\).",
+              "work": "\\(n(2n-1)(2n+1)\\ \\xrightarrow{\\;n\\,=\\,k+1\\;}\\ (k+1)\\bigl(2(k+1)-1\\bigr)\\bigl(2(k+1)+1\\bigr)\\)"
             },
             {
-              "explain": "Simplify each bracket before deciding which factor is divisible by 3.",
-              "work": "\\(P(k+1)=(k+1)(2k+1)(2k+3).\\)"
+              "explain": "Simplify each bracket carefully: \\(2(k+1)=2k+2\\).",
+              "work": "\\(2(k+1)-1=2k+1,\\qquad 2(k+1)+1=2k+3\\)"
             },
             {
-              "explain": "Consider the three possible cases when k is divided by 3; one factor is always a multiple of 3.",
-              "work": "Any integer \\(k\\) can be written in the form \\(3m\\), \\(3m+1\\), or \\(3m+2\\) for some integer \\(m\\):\n- If \\(k = 3m\\): \\(2k+3 = 6m+3 = 3(2m+1)\\) is divisible by 3.\n- If \\(k = 3m+1\\): \\(2k+1 = 2(3m+1)+1 = 6m+3 = 3(2m+1)\\) is divisible by 3.\n- If \\(k = 3m+2\\): \\(k+1 = 3m+3 = 3(m+1)\\) is divisible by 3.\nIn all cases, at least one factor is divisible by 3."
+              "explain": "So the expression to be proved divisible by 3 is \\((k+1)(2k+1)(2k+3)\\), which is option D.",
+              "work": "\\((k+1)(2k+1)(2k+3)\\ \\text{is divisible by }3\\)"
             },
             {
-              "explain": "Thus the displayed product is divisible by 3 for every integer k, which is the factor required in the induction step.",
-              "work": "\\(3\\mid(k+1)(2k+1)(2k+3)=P(k+1).\\)"
+              "explain": "Common slip: substituting \\(n=k+1\\) only in the first factor, or replacing \\(2n\\) by \\(2k\\) instead of \\(2k+2\\). Those slips give options A–C."
             }
           ],
           "xp": 1,
           "meta": {
             "source": "Abbotsleigh 2021 4U Trials & Solutions",
             "school": "Abbotsleigh",
-            "year": 2021
+            "year": 2021,
+            "number": "2"
           },
           "options": [
-            "\\((k+1)(2k)(2k+2)\\)",
-            "\\((k+1)(2k+1)(2k+3)\\)",
-            "\\((k+1)(2k)(2k+3)\\)",
-            "\\((k+1)(2k+1)(2k+2)\\)"
+            "\\((k+1)(2k)(2k+2)\\) is divisible by 3.",
+            "\\((k+1)(2k)(2k+3)\\) is divisible by 3.",
+            "\\((k+1)(2k+1)(2k+2)\\) is divisible by 3.",
+            "\\((k+1)(2k+1)(2k+3)\\) is divisible by 3."
           ],
-          "answer": 1,
-          "solution": "\\((k+1)(2k+1)(2k+3)\\)",
+          "answer": 3,
           "keyPoints": [
             {
-              "text": "from \\(n=k\\) to \\(n=k+1\\)",
-              "note": "Substitute k+1 into the entire expression, not just its first factor."
+              "text": "The inductive step that requires proving",
+              "note": "Replace every n by k + 1: 2(k+1) − 1 = 2k + 1 and 2(k+1) + 1 = 2k + 3."
             }
           ]
         },
         {
           "id": "abbotsleigh2021-ext2-q14b",
-          "type": "mc",
+          "type": "review",
           "difficulty": "hard",
           "timeLimit": 60,
-          "stem": "Let \\(a_1=1\\), \\(a_2=3\\), and \\(a_k=a_{k-1}+a_{k-2}\\) for \\(k\\ge3\\). Which inequality completes the inductive step for \\(a_n\\le(\\frac74)^n\\)?",
-          "hint": "The recurrence uses two previous terms, so check n=1 and 2, then assume the bound for both k and k−1 before proving k+1.",
+          "stem": "Suppose that \\(a_n\\ (n\\ge1)\\) is a sequence defined by:\n\n\\(a_1=1,\\quad a_2=3\\) and \\(a_k=a_{k-1}+a_{k-2}\\ \\ \\forall\\,k\\ge3.\\)\n\nProve that \\(\\forall\\,n\\ge1\\), we have \\(a_n\\le\\left(\\frac74\\right)^n\\).",
+          "hint": "Check n = 1 and n = 2, assume true for all n ≤ k, then use a_{k+1} = a_k + a_{k−1}.",
           "steps": [
             {
-              "explain": "Check the first two values.",
-              "work": "\\(a_1=1\\le\\frac74,\\qquad a_2=3\\le(\\frac74)^2=\\frac{49}{16}.\\)"
+              "explain": "Each term depends on the two previous terms, so use strong induction with two base cases.",
+              "work": "\\(n=1:\\ a_1=1\\le\\tfrac74,\\qquad n=2:\\ a_2=3\\le\\left(\\tfrac74\\right)^2=\\tfrac{49}{16}=3\\tfrac1{16}\\)"
             },
             {
-              "explain": "Assume the claim holds for two consecutive indices.",
-              "work": "\\(a_k\\le(\\frac74)^k,\\quad a_{k-1}\\le(\\frac74)^{k-1}.\\)"
+              "explain": "Inductive hypothesis: assume the result holds for every \\(n\\le k\\), where \\(k\\ge2\\). In particular,",
+              "work": "\\(a_k\\le\\left(\\tfrac74\\right)^k\\) and \\(a_{k-1}\\le\\left(\\tfrac74\\right)^{k-1}\\)"
             },
             {
-              "explain": "Apply the recurrence and factor out the smaller power.",
-              "work": "\\(a_{k+1}=a_k+a_{k-1}\\le(\\frac74)^k+(\\frac74)^{k-1}=(\\frac74)^{k-1}\\cdot\\frac{11}{4}.\\)"
+              "explain": "Use the recurrence for \\(a_{k+1}\\), then factor out \\(\\left(\\frac74\\right)^{k-1}\\).",
+              "work": "\\(a_{k+1}=a_k+a_{k-1}\\le\\left(\\tfrac74\\right)^k+\\left(\\tfrac74\\right)^{k-1}=\\left(\\tfrac74\\right)^{k-1}\\left(\\tfrac74+1\\right)=\\left(\\tfrac74\\right)^{k-1}\\cdot\\tfrac{11}{4}\\)"
             },
             {
-              "explain": "Compare the factor with the target power.",
-              "work": "\\(\\frac{11}{4}<\\frac{49}{16}=(\\frac74)^2\\Rightarrow a_{k+1}<(\\frac74)^{k+1}.\\) Thus the claim follows by induction."
+              "explain": "Compare with \\(\\left(\\frac74\\right)^2=\\frac{49}{16}\\). Write \\(\\frac{11}{4}=\\frac{44}{16}<\\frac{49}{16}\\).",
+              "work": "\\(a_{k+1}\\le\\left(\\tfrac74\\right)^{k-1}\\cdot\\tfrac{44}{16}<\\left(\\tfrac74\\right)^{k-1}\\cdot\\left(\\tfrac74\\right)^2=\\left(\\tfrac74\\right)^{k+1}\\)"
+            },
+            {
+              "explain": "So the result for \\(n\\le k\\) implies it for \\(n=k+1\\). With the base cases, it holds for all \\(n\\ge1\\) by mathematical induction."
             }
           ],
           "xp": 1,
           "meta": {
             "source": "Abbotsleigh 2021 4U Trials & Solutions",
             "school": "Abbotsleigh",
-            "year": 2021
+            "year": 2021,
+            "number": "14(b)"
           },
-          "options": [
-            "\\(a_{k+1}\\le(\\frac74)^{k-1}\\cdot\\frac{11}{4}<(\\frac74)^{k+1}\\)",
-            "\\(a_{k+1}\\le(\\frac74)^{k+1}\\cdot\\frac{11}{4}<(\\frac74)^k\\)",
-            "\\(a_{k+1}\\le(\\frac74)^{k-1}\\cdot\\frac{7}{4}<(\\frac74)^{k-1}\\)",
-            "\\(a_{k+1}\\le(\\frac74)^k+(\\frac74)^{k+1}<(\\frac74)^{k+1}\\)"
-          ],
-          "answer": 0,
-          "solution": "\\(a_{k+1}\\le(\\frac74)^{k-1}\\cdot\\frac{11}{4}<(\\frac74)^{k+1}\\)",
+          "answer": "Strong induction. Base cases: \\(a_1=1\\le\\frac74\\) and \\(a_2=3\\le\\frac{49}{16}=3\\tfrac1{16}\\). Inductive step: assume \\(a_n\\le\\left(\\frac74\\right)^n\\) for all \\(n\\le k\\) (\\(k\\ge2\\)). Then \\(a_{k+1}=a_k+a_{k-1}\\le\\left(\\frac74\\right)^k+\\left(\\frac74\\right)^{k-1}=\\left(\\frac74\\right)^{k-1}\\cdot\\frac{11}{4}=\\left(\\frac74\\right)^{k-1}\\cdot\\frac{44}{16}<\\left(\\frac74\\right)^{k-1}\\cdot\\frac{49}{16}=\\left(\\frac74\\right)^{k+1}\\). Hence the result is true for all \\(n\\ge1\\) by induction.",
+          "manual": true,
           "keyPoints": [
             {
-              "text": "Which inequality completes the inductive step",
-              "note": "Use strong induction with two consecutive hypotheses because each term depends on the previous two."
+              "text": "Prove that \\(\\forall\\,n\\ge1\\)",
+              "note": "Use strong induction: two base cases, then a_{k+1} = a_k + a_{k−1} ≤ (7/4)^{k−1}(11/4) < (7/4)^{k+1}."
             }
           ]
         }

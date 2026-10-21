@@ -125,43 +125,42 @@
           "difficulty": "medium",
           "timeLimit": 60,
           "stem": "Given \\(z=2-2i\\) and \\(w=-3+i\\), calculate \\(z^2-\\overline{w}\\).",
-          "hint": "Square \\(2-2i\\) using \\(i^2=-1\\), and remember that \\(\\overline{-3+i}=-3-i\\).",
+          "hint": "Find z² (remember i² = −1) and the conjugate of w separately, then subtract.",
           "steps": [
             {
-              "explain": "First square z by applying (a+b)²=a²+2ab+b², then replace i² with −1.",
-              "work": "\\((2-2i)^2=2^2+2(2)(-2i)+(-2i)^2=4-8i+4i^2=4-8i-4=-8i.\\)"
+              "explain": "Square \\(z\\) using \\((a-b)^2=a^2-2ab+b^2\\) and \\(i^2=-1\\).",
+              "work": "\\(z^2=(2-2i)^2=4-8i+4i^2=4-8i-4=-8i\\)"
             },
             {
-              "explain": "The conjugate changes the sign of the imaginary part, while the real part stays the same.",
-              "work": "\\(w=-3+i\\quad\\Longrightarrow\\quad\\overline w=-3-i.\\)"
+              "explain": "The conjugate changes the sign of the imaginary part.",
+              "work": "\\(\\overline{w}=\\overline{-3+i}=-3-i\\)"
             },
             {
-              "explain": "Subtract the conjugate by distributing the minus sign to both terms.",
-              "work": "\\(z^2-\\overline w=-8i-(-3-i)=-8i+3+i.\\)"
+              "explain": "Subtract, taking care with the double negative.",
+              "work": "\\(z^2-\\overline{w}=-8i-(-3-i)=-8i+3+i=3-7i\\)"
             },
             {
-              "explain": "Combine real parts and imaginary parts separately.",
-              "work": "\\(3+(-8i+i)=3-7i.\\) Therefore the answer is \\(\\boxed{3-7i}\\)."
+              "explain": "Answer B. Using \\(w\\) instead of \\(\\overline w\\) gives \\(3-9i\\) (A); writing \\(4i^2=+4\\) gives \\(z^2=8-8i\\) and leads to \\(11-7i\\) (D)."
             }
           ],
           "xp": 1,
           "meta": {
             "source": "Abbotsleigh 2021 4U Trials & Solutions",
             "school": "Abbotsleigh",
-            "year": 2021
+            "year": 2021,
+            "number": "4"
           },
           "options": [
             "\\(3-9i\\)",
+            "\\(3-7i\\)",
             "\\(11-9i\\)",
-            "\\(11-7i\\)",
-            "\\(3-7i\\)"
+            "\\(11-7i\\)"
           ],
-          "answer": 3,
-          "solution": "\\(3-7i\\)",
+          "answer": 1,
           "keyPoints": [
             {
               "text": "calculate \\(z^2-\\overline{w}\\)",
-              "note": "Conjugate w first: change the sign of its imaginary part."
+              "note": "Use i² = −1 in z², and change the sign of the imaginary part of w for the conjugate."
             }
           ]
         },
@@ -170,48 +169,59 @@
           "type": "multipart",
           "difficulty": "hard",
           "timeLimit": 60,
-          "stem": "Consider the complex number \\(z=\\frac{2-3i}{1+i}\\).",
-          "hint": "Rationalise the denominator first; then use the real and imaginary parts to find the modulus.",
+          "stem": "Let \\(z=\\frac{2-3i}{1+i}\\).",
+          "meta": {
+            "source": "Abbotsleigh 2021 4U Trials & Solutions",
+            "school": "Abbotsleigh",
+            "year": 2021,
+            "number": "11(a)"
+          },
           "parts": [
             {
               "id": "abbotsleigh2021-ext2-q11a-i",
               "type": "mc",
               "difficulty": "medium",
               "timeLimit": 60,
-              "stem": "Let \\(z=\\frac{2-3i}{1+i}\\). Find \\(z\\) in the form \\(x+iy\\).",
-              "hint": "Multiply the numerator and denominator by the conjugate \\(1-i\\), then use \\(i^2=-1\\).",
+              "stem": "Find \\(\\overline{z}\\) in the form \\(x+iy\\).",
+              "hint": "Realise the denominator (multiply by 1 − i over 1 − i), then change the sign of the imaginary part.",
               "steps": [
                 {
-                  "explain": "Multiply top and bottom by the conjugate of the denominator.",
-                  "work": "\\(z=\\frac{2-3i}{1+i}\\cdot\\frac{1-i}{1-i}=\\frac{(2-3i)(1-i)}{1-i^2}.\\)"
+                  "explain": "First write \\(z\\) in the form \\(x+iy\\): multiply numerator and denominator by the conjugate of the denominator, \\(1-i\\).",
+                  "work": "\\(z=\\frac{2-3i}{1+i}\\times\\frac{1-i}{1-i}=\\frac{(2-3i)(1-i)}{1-i^2}\\)"
                 },
                 {
-                  "explain": "Expand and simplify the numerator and denominator.",
-                  "work": "\\((2-3i)(1-i)=2-2i-3i+3i^2=-1-5i,\\quad1-i^2=2.\\)"
+                  "explain": "Expand the numerator (using \\(i^2=-1\\)) and the denominator.",
+                  "work": "\\((2-3i)(1-i)=2-2i-3i+3i^2=2-5i-3=-1-5i,\\qquad 1-i^2=2\\)\n\\(z=\\frac{-1-5i}{2}=-\\frac12-\\frac52i\\)"
                 },
                 {
-                  "explain": "Separate the real and imaginary parts.",
-                  "work": "\\(z=-\\frac12-\\frac52i.\\)"
+                  "explain": "The conjugate keeps the real part and changes the sign of the imaginary part — a reflection in the real axis.",
+                  "work": "\\(\\overline{z}=-\\frac12+\\frac52i\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 250\" width=\"260\" height=\"250\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"260\" height=\"250\" rx=\"8\" fill=\"white\"/><line x1=\"20.0\" y1=\"125.0\" x2=\"245.0\" y2=\"125.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"150.0\" y1=\"240.0\" x2=\"150.0\" y2=\"10.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"243.0\" y=\"117.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\" font-style=\"italic\">Re</text><text x=\"156.0\" y=\"20.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\" font-style=\"italic\">Im</text><line x1=\"133.0\" y1=\"210.0\" x2=\"133.0\" y2=\"40.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><circle cx=\"133.0\" cy=\"210.0\" r=\"4\" fill=\"#64748b\"/><circle cx=\"133.0\" cy=\"40.0\" r=\"4.5\" fill=\"#2563eb\"/><text x=\"125.0\" y=\"214.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">z = −½ − (5/2)i</text><text x=\"125.0\" y=\"44.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\" text-anchor=\"end\">z̄ = −½ + (5/2)i</text><text x=\"156.0\" y=\"141.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\">O</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Note \\(-\\frac12-\\frac52i\\) is \\(z\\) itself, not \\(\\overline z\\) — read the question carefully."
                 }
               ],
               "xp": 1,
               "meta": {
                 "source": "Abbotsleigh 2021 4U Trials & Solutions",
                 "school": "Abbotsleigh",
-                "year": 2021
+                "year": 2021,
+                "number": "11(a)(i)"
               },
               "options": [
-                "\\(-\\frac12+\\frac52i\\)",
-                "\\(\\frac12-\\frac52i\\)",
                 "\\(-\\frac12-\\frac52i\\)",
-                "\\(-1-5i\\)"
+                "\\(\\frac52+\\frac12i\\)",
+                "\\(\\frac12+\\frac52i\\)",
+                "\\(-\\frac12+\\frac52i\\)"
               ],
-              "answer": 2,
-              "solution": "\\(-\\frac12-\\frac52i\\)",
+              "answer": 3,
               "keyPoints": [
                 {
-                  "text": "Find \\(z\\) in the form \\(x+iy\\)",
-                  "note": "For division by 1+i, multiply by 1−i and simplify the denominator to 2."
+                  "text": "Find \\(\\overline{z}\\)",
+                  "note": "Find z first by multiplying by (1 − i)/(1 − i), then take the conjugate (flip the sign of the imaginary part)."
                 }
               ]
             },
@@ -220,51 +230,43 @@
               "type": "mc",
               "difficulty": "medium",
               "timeLimit": 60,
-              "stem": "Using \\(z=\\frac{2-3i}{1+i}\\), evaluate \\(|z|\\).",
-              "hint": "Use the result in the form \\(x+iy\\), then calculate \\(|z|=\\sqrt{x^2+y^2}\\).",
+              "stem": "Evaluate \\(|z|\\).",
+              "hint": "|z| = √(x² + y²), or |2 − 3i| ÷ |1 + i|.",
               "steps": [
                 {
-                  "explain": "Use the Cartesian form found in part (i), so the real and imaginary components are explicit.",
-                  "work": "\\(z=-\\frac12-\\frac52i,\\qquad x=-\\frac12,\\quad y=-\\frac52.\\)"
+                  "explain": "From part (i), \\(z=-\\frac12-\\frac52i\\). Use \\(|x+iy|=\\sqrt{x^2+y^2}\\).",
+                  "work": "\\(|z|=\\sqrt{\\left(-\\tfrac12\\right)^2+\\left(-\\tfrac52\\right)^2}=\\sqrt{\\tfrac14+\\tfrac{25}{4}}=\\sqrt{\\tfrac{26}{4}}=\\frac{\\sqrt{26}}{2}\\)"
                 },
                 {
-                  "explain": "The modulus is the distance from the origin, so square both components and add them.",
-                  "work": "\\(|z|=\\sqrt{x^2+y^2}=\\sqrt{\\left(-\\frac12\\right)^2+\\left(-\\frac52\\right)^2}=\\sqrt{\\frac14+\\frac{25}{4}}.\\)"
+                  "explain": "Check using \\(\\left|\\frac{z_1}{z_2}\\right|=\\frac{|z_1|}{|z_2|}\\) on the original fraction.",
+                  "work": "\\(\\frac{|2-3i|}{|1+i|}=\\frac{\\sqrt{4+9}}{\\sqrt{1+1}}=\\frac{\\sqrt{13}}{\\sqrt2}=\\frac{\\sqrt{26}}{2}\\)"
                 },
                 {
-                  "explain": "Add the fractions and simplify the square root.",
-                  "work": "\\(|z|=\\sqrt{\\frac{26}{4}}=\\frac{\\sqrt{26}}2.\\)"
+                  "explain": "Common slips: forgetting the square root gives \\(\\frac{13}{2}\\); using \\(|1+i|=2\\) gives \\(\\frac{\\sqrt{13}}{2}\\)."
                 }
               ],
               "xp": 1,
               "meta": {
                 "source": "Abbotsleigh 2021 4U Trials & Solutions",
                 "school": "Abbotsleigh",
-                "year": 2021
+                "year": 2021,
+                "number": "11(a)(ii)"
               },
               "options": [
-                "\\(\\frac{\\sqrt{24}}2\\)",
-                "\\(\\frac{\\sqrt{26}}4\\)",
-                "\\(\\frac{\\sqrt{29}}2\\)",
-                "\\(\\frac{\\sqrt{26}}2\\)"
+                "\\(\\sqrt{26}\\)",
+                "\\(\\frac{\\sqrt{13}}{2}\\)",
+                "\\(\\frac{\\sqrt{26}}{2}\\)",
+                "\\(\\frac{13}{2}\\)"
               ],
-              "answer": 3,
-              "solution": "\\(\\frac{\\sqrt{26}}2\\)",
+              "answer": 2,
               "keyPoints": [
                 {
-                  "text": "evaluate \\(|z|\\)",
-                  "note": "The modulus is the distance from the origin: square both components, add, and take the positive square root."
+                  "text": "Evaluate \\(|z|\\)",
+                  "note": "Use |z| = √(x² + y²) with z = −½ − (5/2)i, or divide the moduli |2 − 3i| / |1 + i|."
                 }
               ]
             }
-          ],
-          "xp": 1,
-          "meta": {
-            "source": "Abbotsleigh 2021 4U Trials & Solutions",
-            "school": "Abbotsleigh",
-            "year": 2021,
-            "number": "11(a)"
-          }
+          ]
         }
       ]
     },
@@ -439,379 +441,96 @@
           "type": "mc",
           "difficulty": "hard",
           "timeLimit": 60,
-          "stem": "Which Argand diagram represents \\(\\arg(z+i-1)+\\frac{\\pi}{4}=0\\)?",
-          "hint": "Rewrite the argument as \\(\\arg(z-(1-i))=-\\frac{\\pi}{4}\\). The ray starts at \\(1-i\\) and points at angle \\(-\\pi/4\\).",
+          "stem": "The Argand diagram representing \\(\\arg(z+i-1)+\\frac{\\pi}{4}=0\\) is:",
+          "hint": "Rewrite as arg(z − (1 − i)) = −π/4: a ray from 1 − i at angle −π/4.",
           "steps": [
             {
-              "explain": "Rewrite the expression inside arg as a displacement from the fixed point 1−i.",
-              "work": "\\(z+i-1=z-(1-i).\\)"
+              "explain": "Write the expression inside the argument as \\(z\\) minus a fixed point.",
+              "work": "\\(z+i-1=z-(1-i)\\qquad\\Rightarrow\\qquad\\arg\\bigl(z-(1-i)\\bigr)=-\\frac{\\pi}{4}\\)"
             },
             {
-              "explain": "The equation makes the argument equal to −π/4, so the displacement points down and right.",
-              "work": "\\(\\arg(z-(1-i))+\\frac\\pi4=0\\quad\\Longrightarrow\\quad\\arg(z-(1-i))=-\\frac\\pi4.\\)"
+              "explain": "\\(\\arg(z-z_1)=\\alpha\\) is a ray that starts at \\(z_1\\) (not included, since \\(\\arg 0\\) is undefined) and makes angle \\(\\alpha\\) with the positive real direction. Here \\(z_1=1-i\\), i.e. the point \\((1,-1)\\), and \\(\\alpha=-\\frac\\pi4\\).",
+              "work": "\\(\\text{start }(1,-1)\\ (\\text{open circle}),\\qquad\\text{direction angle }-\\tfrac{\\pi}{4}\\ (\\text{down and to the right})\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 230\" width=\"300\" height=\"230\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker><marker id=\"ah2563eb\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#2563eb\"/></marker></defs><rect width=\"300\" height=\"230\" rx=\"8\" fill=\"white\"/><line x1=\"14.0\" y1=\"115.0\" x2=\"286.0\" y2=\"115.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"150.0\" y1=\"220.0\" x2=\"150.0\" y2=\"12.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"284.0\" y=\"131.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\" font-style=\"italic\">Re(z)</text><text x=\"144.0\" y=\"22.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\" font-style=\"italic\">Im(z)</text><text x=\"144.0\" y=\"130.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">O</text><line x1=\"116.0\" y1=\"111.0\" x2=\"116.0\" y2=\"119.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"146.0\" y1=\"149.0\" x2=\"154.0\" y2=\"149.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"184.0\" y1=\"111.0\" x2=\"184.0\" y2=\"119.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"146.0\" y1=\"81.0\" x2=\"154.0\" y2=\"81.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"184.0\" y=\"107.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"middle\">1</text><text x=\"116.0\" y=\"107.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"middle\">−1</text><text x=\"158.0\" y=\"153.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\">−1</text><line x1=\"184.0\" y1=\"149.0\" x2=\"256.1\" y2=\"221.1\" stroke=\"#2563eb\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ah2563eb)\"/><circle cx=\"184.0\" cy=\"149.0\" r=\"4\" fill=\"white\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"184.0\" y1=\"149.0\" x2=\"258.8\" y2=\"149.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"188.0\" y=\"139.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\">(1, −1)</text><text x=\"236.7\" y=\"170.1\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\">−π/4</text></svg>"
+              }
             },
             {
-              "explain": "The fixed point 1−i has Argand coordinates (1,−1). From that point, draw the ray with direction vector (cos(−π/4), sin(−π/4)); the matching diagram is B.",
-              "work": "\\((x,y)=(1,-1)+t\\left(\\frac1{\\sqrt2},-\\frac1{\\sqrt2}\\right),\\quad t>0.\\)"
+              "explain": "The starting point \\((1,-1)\\) is in the fourth quadrant, which rules out C and D. A ray at angle \\(-\\frac\\pi4\\) goes down-right with gradient \\(-1\\), which rules out A (it goes up-right, angle \\(+\\frac\\pi4\\)). So the answer is B."
             }
           ],
           "xp": 1,
           "meta": {
             "source": "Abbotsleigh 2021 4U Trials & Solutions",
             "school": "Abbotsleigh",
-            "year": 2021
+            "year": 2021,
+            "number": "5"
           },
           "options": [
             {
-              "text": "",
+              "text": "A",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 150\" role=\"img\" aria-label=\"Argand diagram ray\">\n    <rect width=\"220\" height=\"150\" rx=\"8\" fill=\"white\"/><path d=\"M28 75H202 M110 135V15\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <path d=\"M142 104 L197 159\" stroke=\"#334155\" stroke-width=\"2.4\"/>\n    <circle cx=\"142\" cy=\"104\" r=\"3.5\" fill=\"white\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n    <path d=\"M197 159 l-8 2 l4 7 Z\" fill=\"#334155\"/>\n    <g font-family=\"Arial\" font-size=\"11\" fill=\"#334155\"><text x=\"194\" y=\"69\">Re(z)</text><text x=\"115\" y=\"22\">Im(z)</text></g></svg>"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 210 170\" width=\"210\" height=\"170\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker><marker id=\"ah1e293b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#1e293b\"/></marker></defs><rect width=\"210\" height=\"170\" rx=\"8\" fill=\"white\"/><line x1=\"14.0\" y1=\"85.0\" x2=\"196.0\" y2=\"85.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"105.0\" y1=\"160.0\" x2=\"105.0\" y2=\"12.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"194.0\" y=\"101.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\" font-style=\"italic\">Re(z)</text><text x=\"99.0\" y=\"22.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\" font-style=\"italic\">Im(z)</text><text x=\"99.0\" y=\"100.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">O</text><line x1=\"79.0\" y1=\"81.0\" x2=\"79.0\" y2=\"89.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"101.0\" y1=\"111.0\" x2=\"109.0\" y2=\"111.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"131.0\" y1=\"81.0\" x2=\"131.0\" y2=\"89.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"101.0\" y1=\"59.0\" x2=\"109.0\" y2=\"59.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"131.0\" y1=\"111.0\" x2=\"172.4\" y2=\"69.6\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><circle cx=\"131.0\" cy=\"111.0\" r=\"4\" fill=\"white\" stroke=\"#1e293b\" stroke-width=\"1.8\"/></svg>"
               }
             },
             {
-              "text": "",
+              "text": "B",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 150\" role=\"img\" aria-label=\"Argand diagram ray\">\n    <rect width=\"220\" height=\"150\" rx=\"8\" fill=\"white\"/><path d=\"M28 75H202 M110 135V15\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <path d=\"M142 104 L197 49\" stroke=\"#334155\" stroke-width=\"2.4\"/>\n    <circle cx=\"142\" cy=\"104\" r=\"3.5\" fill=\"white\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n    <path d=\"M197 49 l-8 2 l4 7 Z\" fill=\"#334155\"/>\n    <g font-family=\"Arial\" font-size=\"11\" fill=\"#334155\"><text x=\"194\" y=\"69\">Re(z)</text><text x=\"115\" y=\"22\">Im(z)</text></g></svg>"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 210 170\" width=\"210\" height=\"170\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker><marker id=\"ah1e293b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#1e293b\"/></marker></defs><rect width=\"210\" height=\"170\" rx=\"8\" fill=\"white\"/><line x1=\"14.0\" y1=\"85.0\" x2=\"196.0\" y2=\"85.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"105.0\" y1=\"160.0\" x2=\"105.0\" y2=\"12.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"194.0\" y=\"101.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\" font-style=\"italic\">Re(z)</text><text x=\"99.0\" y=\"22.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\" font-style=\"italic\">Im(z)</text><text x=\"99.0\" y=\"100.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">O</text><line x1=\"79.0\" y1=\"81.0\" x2=\"79.0\" y2=\"89.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"101.0\" y1=\"111.0\" x2=\"109.0\" y2=\"111.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"131.0\" y1=\"81.0\" x2=\"131.0\" y2=\"89.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"101.0\" y1=\"59.0\" x2=\"109.0\" y2=\"59.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"131.0\" y1=\"111.0\" x2=\"172.4\" y2=\"152.4\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><circle cx=\"131.0\" cy=\"111.0\" r=\"4\" fill=\"white\" stroke=\"#1e293b\" stroke-width=\"1.8\"/></svg>"
               }
             },
             {
-              "text": "",
+              "text": "C",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 150\" role=\"img\" aria-label=\"Argand diagram ray\">\n    <rect width=\"220\" height=\"150\" rx=\"8\" fill=\"white\"/><path d=\"M28 75H202 M110 135V15\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <path d=\"M78 104 L23 49\" stroke=\"#334155\" stroke-width=\"2.4\"/>\n    <circle cx=\"78\" cy=\"104\" r=\"3.5\" fill=\"white\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n    <path d=\"M23 49 l-8 2 l4 7 Z\" fill=\"#334155\"/>\n    <g font-family=\"Arial\" font-size=\"11\" fill=\"#334155\"><text x=\"194\" y=\"69\">Re(z)</text><text x=\"115\" y=\"22\">Im(z)</text></g></svg>"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 210 170\" width=\"210\" height=\"170\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker><marker id=\"ah1e293b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#1e293b\"/></marker></defs><rect width=\"210\" height=\"170\" rx=\"8\" fill=\"white\"/><line x1=\"14.0\" y1=\"85.0\" x2=\"196.0\" y2=\"85.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"105.0\" y1=\"160.0\" x2=\"105.0\" y2=\"12.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"194.0\" y=\"101.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\" font-style=\"italic\">Re(z)</text><text x=\"99.0\" y=\"22.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\" font-style=\"italic\">Im(z)</text><text x=\"99.0\" y=\"100.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">O</text><line x1=\"79.0\" y1=\"81.0\" x2=\"79.0\" y2=\"89.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"101.0\" y1=\"111.0\" x2=\"109.0\" y2=\"111.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"131.0\" y1=\"81.0\" x2=\"131.0\" y2=\"89.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"101.0\" y1=\"59.0\" x2=\"109.0\" y2=\"59.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"79.0\" y1=\"59.0\" x2=\"120.4\" y2=\"17.6\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><circle cx=\"79.0\" cy=\"59.0\" r=\"4\" fill=\"white\" stroke=\"#1e293b\" stroke-width=\"1.8\"/></svg>"
               }
             },
             {
-              "text": "",
+              "text": "D",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 150\" role=\"img\" aria-label=\"Argand diagram ray\">\n    <rect width=\"220\" height=\"150\" rx=\"8\" fill=\"white\"/><path d=\"M28 75H202 M110 135V15\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <path d=\"M78 46 L133 101\" stroke=\"#334155\" stroke-width=\"2.4\"/>\n    <circle cx=\"78\" cy=\"46\" r=\"3.5\" fill=\"white\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n    <path d=\"M133 101 l-8 2 l4 7 Z\" fill=\"#334155\"/>\n    <g font-family=\"Arial\" font-size=\"11\" fill=\"#334155\"><text x=\"194\" y=\"69\">Re(z)</text><text x=\"115\" y=\"22\">Im(z)</text></g></svg>"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 210 170\" width=\"210\" height=\"170\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker><marker id=\"ah1e293b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#1e293b\"/></marker></defs><rect width=\"210\" height=\"170\" rx=\"8\" fill=\"white\"/><line x1=\"14.0\" y1=\"85.0\" x2=\"196.0\" y2=\"85.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"105.0\" y1=\"160.0\" x2=\"105.0\" y2=\"12.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"194.0\" y=\"101.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\" font-style=\"italic\">Re(z)</text><text x=\"99.0\" y=\"22.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\" font-style=\"italic\">Im(z)</text><text x=\"99.0\" y=\"100.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">O</text><line x1=\"79.0\" y1=\"81.0\" x2=\"79.0\" y2=\"89.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"101.0\" y1=\"111.0\" x2=\"109.0\" y2=\"111.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"131.0\" y1=\"81.0\" x2=\"131.0\" y2=\"89.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"101.0\" y1=\"59.0\" x2=\"109.0\" y2=\"59.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"95.9\" y1=\"75.9\" x2=\"137.3\" y2=\"117.3\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><circle cx=\"95.9\" cy=\"75.9\" r=\"4\" fill=\"white\" stroke=\"#1e293b\" stroke-width=\"1.8\"/></svg>"
               }
             }
           ],
-          "answer": 0,
-          "solution": "",
+          "answer": 1,
           "keyPoints": [
             {
               "text": "\\arg(z+i-1)+\\frac{\\pi}{4}=0",
-              "note": "The argument gives a ray beginning at 1−i with direction −π/4."
+              "note": "Rearrange to arg(z − (1 − i)) = −π/4: the ray starts at (1, −1) and points down-right."
             }
           ]
         },
         {
-          "id": "abbotsleigh2021-ext2-q12a-c",
-          "type": "multipart",
+          "id": "abbotsleigh2021-ext2-q12a",
+          "type": "review",
           "difficulty": "hard",
           "timeLimit": 60,
-          "stem": "Consider the following problems on loci and arguments in the complex plane.",
-          "hint": "Use the centre and radius for the region, then apply argument rules to the circle.",
-          "parts": [
+          "stem": "Sketch the region in the complex plane where the inequalities \\(1\\le|z-i|\\le2\\) and \\(\\operatorname{Im}(z)\\ge0\\) hold simultaneously.\n\nClearly mark in all \\(x\\) and \\(y\\) intercepts.",
+          "hint": "|z − i| is the distance from (0, 1); draw circles of radius 1 and 2 about that point, then keep y ≥ 0.",
+          "steps": [
             {
-              "id": "abbotsleigh2021-ext2-q12a",
-              "type": "review",
-              "difficulty": "hard",
-              "timeLimit": 60,
-              "stem": "Sketch the region satisfying \\(1\\le |z-i|\\le2\\) and \\(\\operatorname{Im}(z)\\ge0\\). Mark all x- and y-axis intersections.",
-              "hint": "The inequalities describe the upper half of an annulus centred at \\((0,1)\\), between radii 1 and 2. Include both circular boundaries.",
-              "steps": [
-                {
-                  "explain": "Interpret the modulus inequalities geometrically as two concentric circles forming an annulus.",
-                  "work": "Let \\(z = x + iy\\). Then \\(|z-i| = |x + i(y-1)| = \\sqrt{x^2 + (y-1)^2}\\).\n- Inner circle: \\(|z-i| = 1 \\implies x^2 + (y-1)^2 = 1\\) with centre \\((0,1)\\) and radius \\(r=1\\).\n- Outer circle: \\(|z-i| = 2 \\implies x^2 + (y-1)^2 = 4\\) with centre \\((0,1)\\) and radius \\(R=2\\).\nThe inequality \\(1 \\le |z-i| \\le 2\\) represents the closed annulus between and including both circles.",
-                  "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 225\" role=\"img\" aria-label=\"Concentric circles centered at (0,1) with radii 1 and 2\"><rect width=\"320\" height=\"225\" rx=\"8\" fill=\"white\"/><defs><pattern id=\"hatch_s1\" width=\"8\" height=\"8\" patternTransform=\"rotate(45 0 0)\" patternUnits=\"userSpaceOnUse\"><line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"8\" stroke=\"#94a3b8\" stroke-width=\"1\" opacity=\"0.4\"/></pattern></defs><circle cx=\"160\" cy=\"120\" r=\"80\" fill=\"#f8fafc\"/><circle cx=\"160\" cy=\"120\" r=\"80\" fill=\"url(#hatch_s1)\"/><circle cx=\"160\" cy=\"120\" r=\"40\" fill=\"white\"/><path d=\"M30 160H290M160 215V25\" stroke=\"#64748b\" stroke-width=\"1.4\"/><polygon points=\"290,160 282,156 282,164\" fill=\"#64748b\"/><polygon points=\"160,25 156,33 164,33\" fill=\"#64748b\"/><text x=\"294\" y=\"164\" font-family=\"Arial\" font-size=\"11\" font-weight=\"600\" fill=\"#475569\">Re</text><text x=\"165\" y=\"22\" font-family=\"Arial\" font-size=\"11\" font-weight=\"600\" fill=\"#475569\">Im</text><circle cx=\"160\" cy=\"120\" r=\"80\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><circle cx=\"160\" cy=\"120\" r=\"40\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><circle cx=\"160\" cy=\"120\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"126\" y=\"123\" font-family=\"Arial\" font-size=\"11\" font-weight=\"bold\" fill=\"#2563eb\">(0,1)</text><line x1=\"160\" y1=\"120\" x2=\"200\" y2=\"120\" stroke=\"#2563eb\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"172\" y=\"113\" font-family=\"Arial\" font-size=\"10\" font-weight=\"bold\" fill=\"#2563eb\">r=1</text><line x1=\"200\" y1=\"120\" x2=\"240\" y2=\"120\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"212\" y=\"113\" font-family=\"Arial\" font-size=\"10\" font-weight=\"bold\" fill=\"#334155\">R=2</text><text x=\"148\" y=\"175\" font-family=\"Arial\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">O</text></svg>"
-                  }
-                },
-                {
-                  "explain": "Determine all intersections of both circular boundaries with the real and imaginary axes.",
-                  "work": "Real-axis intersections (\\(y = 0\\)):\n- Outer circle: \\(x^2 + (0-1)^2 = 4 \\implies x^2 + 1 = 4 \\implies x^2 = 3 \\implies x = \\pm\\sqrt{3}\\).\n- Inner circle: \\(x^2 + (0-1)^2 = 1 \\implies x^2 + 1 = 1 \\implies x^2 = 0 \\implies x = 0\\) (tangent to real axis at origin \\(O\\)).\nImaginary-axis intersections (\\(x = 0\\)):\n- Outer circle: \\((0)^2 + (y-1)^2 = 4 \\implies y-1 = \\pm 2 \\implies y = 3\\) or \\(y = -1\\).\n- Inner circle: \\((0)^2 + (y-1)^2 = 1 \\implies y-1 = \\pm 1 \\implies y = 2\\) or \\(y = 0\\).",
-                  "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 225\" role=\"img\" aria-label=\"Concentric circles with real and imaginary axis intersections marked\"><rect width=\"320\" height=\"225\" rx=\"8\" fill=\"white\"/><path d=\"M30 160H290M160 215V25\" stroke=\"#64748b\" stroke-width=\"1.4\"/><polygon points=\"290,160 282,156 282,164\" fill=\"#64748b\"/><polygon points=\"160,25 156,33 164,33\" fill=\"#64748b\"/><text x=\"294\" y=\"164\" font-family=\"Arial\" font-size=\"11\" font-weight=\"600\" fill=\"#475569\">Re</text><text x=\"165\" y=\"22\" font-family=\"Arial\" font-size=\"11\" font-weight=\"600\" fill=\"#475569\">Im</text><circle cx=\"160\" cy=\"120\" r=\"80\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><circle cx=\"160\" cy=\"120\" r=\"40\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><circle cx=\"160\" cy=\"120\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"126\" y=\"123\" font-family=\"Arial\" font-size=\"11\" font-weight=\"bold\" fill=\"#2563eb\">(0,1)</text><circle cx=\"90.7\" cy=\"160\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"70\" y=\"176\" font-family=\"Arial\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">−√3</text><circle cx=\"229.3\" cy=\"160\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"225\" y=\"176\" font-family=\"Arial\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">√3</text><circle cx=\"160\" cy=\"160\" r=\"3\" fill=\"#334155\"/><text x=\"148\" y=\"175\" font-family=\"Arial\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">O</text><circle cx=\"160\" cy=\"40\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"166\" y=\"44\" font-family=\"Arial\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">3</text><circle cx=\"160\" cy=\"80\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"166\" y=\"84\" font-family=\"Arial\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">2</text><circle cx=\"160\" cy=\"200\" r=\"3\" fill=\"#64748b\"/><text x=\"166\" y=\"204\" font-family=\"Arial\" font-size=\"10\" fill=\"#64748b\">−1</text></svg>"
-                  }
-                },
-                {
-                  "explain": "Apply the condition \\(\\operatorname{Im}(z)\\ge 0\\) to restrict to the upper half-plane and shade the final locus.",
-                  "work": "Apply \\(\\operatorname{Im}(z) \\ge 0 \\iff y \\ge 0\\) (on or above the real axis):\n- Outer boundary: circular arc of \\(|z-i|=2\\) from \\(x=-\\sqrt{3}\\) through \\((0,3)\\) to \\(x=\\sqrt{3}\\).\n- Inner boundary: circle \\(|z-i|=1\\) touching \\((0,0)\\) and reaching \\((0,2)\\) (interior is unshaded).\n- Real-axis boundary: line segment \\([-\\sqrt{3}, \\sqrt{3}]\\) along \\(y=0\\).\nAll boundaries are solid lines because the inequalities are non-strict (\\(\\le, \\ge\\)).\nMarked axis intersections:\n- Real axis: \\([-\\sqrt{3}, \\sqrt{3}]\\)\n- Imaginary axis: \\(y=0\\) and the segment \\(2 \\le y \\le 3\\).",
-                  "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 225\" role=\"img\" aria-label=\"Upper half of annulus centered at (0,1), radii 1 and 2, with axis intercepts marked\"><rect width=\"320\" height=\"225\" rx=\"8\" fill=\"white\"/><defs><pattern id=\"hatch_s3\" width=\"8\" height=\"8\" patternTransform=\"rotate(45 0 0)\" patternUnits=\"userSpaceOnUse\"><line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"8\" stroke=\"#16a34a\" stroke-width=\"1.2\" opacity=\"0.45\"/></pattern></defs><path d=\"M 90.7 160 A 80 80 0 1 1 229.3 160 Z\" fill=\"#dcfce7\"/><path d=\"M 90.7 160 A 80 80 0 1 1 229.3 160 Z\" fill=\"url(#hatch_s3)\"/><circle cx=\"160\" cy=\"120\" r=\"40\" fill=\"#ffffff\"/><path d=\"M 90.7 160 A 80 80 0 0 0 229.3 160\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3,3\"/><path d=\"M30 160H290M160 215V25\" stroke=\"#64748b\" stroke-width=\"1.4\"/><polygon points=\"290,160 282,156 282,164\" fill=\"#64748b\"/><polygon points=\"160,25 156,33 164,33\" fill=\"#64748b\"/><text x=\"294\" y=\"164\" font-family=\"Arial\" font-size=\"11\" font-weight=\"600\" fill=\"#475569\">Re</text><text x=\"165\" y=\"22\" font-family=\"Arial\" font-size=\"11\" font-weight=\"600\" fill=\"#475569\">Im</text><path d=\"M 90.7 160 A 80 80 0 1 1 229.3 160\" fill=\"none\" stroke=\"#166534\" stroke-width=\"2\"/><circle cx=\"160\" cy=\"120\" r=\"40\" fill=\"none\" stroke=\"#166534\" stroke-width=\"2\"/><line x1=\"90.7\" y1=\"160\" x2=\"229.3\" y2=\"160\" stroke=\"#166534\" stroke-width=\"2.6\"/><circle cx=\"160\" cy=\"120\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"126\" y=\"123\" font-family=\"Arial\" font-size=\"11\" font-weight=\"bold\" fill=\"#2563eb\">(0,1)</text><circle cx=\"90.7\" cy=\"160\" r=\"3.5\" fill=\"#15803d\"/><text x=\"70\" y=\"176\" font-family=\"Arial\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">−√3</text><circle cx=\"229.3\" cy=\"160\" r=\"3.5\" fill=\"#15803d\"/><text x=\"225\" y=\"176\" font-family=\"Arial\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">√3</text><circle cx=\"160\" cy=\"160\" r=\"3\" fill=\"#334155\"/><text x=\"148\" y=\"175\" font-family=\"Arial\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">O</text><circle cx=\"160\" cy=\"40\" r=\"3.5\" fill=\"#15803d\"/><text x=\"166\" y=\"44\" font-family=\"Arial\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">3</text><circle cx=\"160\" cy=\"80\" r=\"3.5\" fill=\"#15803d\"/><text x=\"166\" y=\"84\" font-family=\"Arial\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">2</text><circle cx=\"160\" cy=\"200\" r=\"2.5\" fill=\"#94a3b8\"/><text x=\"166\" y=\"204\" font-family=\"Arial\" font-size=\"10\" fill=\"#94a3b8\">−1</text></svg>"
-                  }
-                }
-              ],
-              "xp": 1,
-              "meta": {
-                "source": "Abbotsleigh 2021 4U Trials & Solutions",
-                "school": "Abbotsleigh",
-                "year": 2021
-              },
-              "manual": true,
-              "answer": "Sample answer: Shade the upper half of the annulus centred at (0,1), between inner radius 1 and outer radius 2, lying on or above the real axis (y≥0). The real-axis intersection is the closed segment [−√3, √3]. The imaginary-axis intersections are the origin y=0 and the segment 2≤y≤3.",
-              "keyPoints": [
-                {
-                  "text": "\\(1\\le |z-i|\\le2\\)",
-                  "note": "Draw two circles centred at (0,1), shade between them, and then retain only y≥0."
-                }
-              ]
+              "explain": "\\(|z-i|\\) is the distance from \\(z\\) to the point \\(i=(0,1)\\). So \\(1\\le|z-i|\\le2\\) is a closed annulus (ring) centred at \\((0,1)\\) between the circles of radius 1 and 2.",
+              "work": "\\(|z-i|=1:\\ x^2+(y-1)^2=1,\\qquad |z-i|=2:\\ x^2+(y-1)^2=4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 250\" width=\"320\" height=\"250\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"320\" height=\"250\" rx=\"8\" fill=\"white\"/><line x1=\"14.0\" y1=\"190.0\" x2=\"306.0\" y2=\"190.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"160.0\" y1=\"244.0\" x2=\"160.0\" y2=\"10.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"304.0\" y=\"182.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\" font-style=\"italic\">Re</text><text x=\"166.0\" y=\"20.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\" font-style=\"italic\">Im</text><circle cx=\"160.0\" cy=\"146.0\" r=\"88.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/><circle cx=\"160.0\" cy=\"146.0\" r=\"44.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/><circle cx=\"160.0\" cy=\"146.0\" r=\"3\" fill=\"#2563eb\"/><text x=\"166.0\" y=\"150.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#2563eb\" text-anchor=\"start\">(0,1)</text></svg>"
+              }
             },
             {
-              "id": "abbotsleigh2021-ext2-q12c",
-              "type": "multipart",
-              "difficulty": "hard",
-              "timeLimit": 60,
-              "stem": "Let \\(z\\) be a complex number on the circle \\(|z|=2\\) such that \\(0 < \\arg z = \\theta < \\frac{\\pi}{2}\\).",
-              "hint": "Use argument rules for powers and quotients, and use the circle geometry to find chord directions.",
-              "parts": [
-                {
-                  "id": "abbotsleigh2021-ext2-q12c-i",
-                  "type": "review",
-                  "difficulty": "hard",
-                  "timeLimit": 60,
-                  "stem": "Sketch an Argand diagram for \\(|z|=2\\) and \\(0<\\arg z=\\theta<\\frac{\\pi}{2}\\).",
-                  "hint": "Draw a circle of radius 2 centred at the origin. The point z must lie on its first-quadrant arc.",
-                  "steps": [
-                    {
-                      "explain": "Mark the origin and draw the circle with radius 2.",
-                      "work": "\\(|z|=2\\text{ is a circle centred at }O\\text{ with radius }2.\\)",
-                      "figure": {
-                        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 220\" role=\"img\" aria-label=\"Argand diagram circle of radius 2 and point z at argument theta\">\n    <rect width=\"300\" height=\"220\" rx=\"8\" fill=\"white\"/><path d=\"M30 110H270M160 195V25\" stroke=\"#64748b\" stroke-width=\"1.4\"/><circle cx=\"160\" cy=\"110\" r=\"40\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M160 110L188.3 81.7\" stroke=\"#2563eb\" stroke-width=\"2.3\"/><circle cx=\"188.3\" cy=\"81.7\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"191\" y=\"78\" font-family=\"Arial\" font-size=\"12\">z</text><text x=\"172\" y=\"103\" font-family=\"Arial\" font-size=\"12\">θ</text><text x=\"204\" y=\"126\" font-family=\"Arial\" font-size=\"11\">2</text><g font-family=\"Arial\" font-size=\"11\" fill=\"#334155\"><text x=\"272\" y=\"106\">Re</text><text x=\"165\" y=\"22\">Im</text></g></svg>"
-                      }
-                    },
-                    {
-                      "explain": "Place z in the first quadrant and label its angle from the positive real axis.",
-                      "work": "\\(0<\\theta<\\frac{\\pi}{2}.\\)",
-                      "figure": {
-                        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 220\" role=\"img\" aria-label=\"Argand diagram circle of radius 2 and point z at argument theta\">\n    <rect width=\"300\" height=\"220\" rx=\"8\" fill=\"white\"/><path d=\"M30 110H270M160 195V25\" stroke=\"#64748b\" stroke-width=\"1.4\"/><path d=\"M160 110L200 110A40 40 0 0 0 160 70Z\" fill=\"#dcfce7\" stroke=\"none\"/><text x=\"198\" y=\"74\" font-family=\"Arial\" font-size=\"9\" fill=\"#15803d\">0&lt;θ&lt;π/2</text><circle cx=\"160\" cy=\"110\" r=\"40\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M160 110L188.3 81.7\" stroke=\"#2563eb\" stroke-width=\"2.3\"/><circle cx=\"188.3\" cy=\"81.7\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"191\" y=\"78\" font-family=\"Arial\" font-size=\"12\">z</text><text x=\"172\" y=\"103\" font-family=\"Arial\" font-size=\"12\">θ</text><text x=\"204\" y=\"126\" font-family=\"Arial\" font-size=\"11\">2</text><g font-family=\"Arial\" font-size=\"11\" fill=\"#334155\"><text x=\"272\" y=\"106\">Re</text><text x=\"165\" y=\"22\">Im</text></g></svg>"
-                      }
-                    }
-                  ],
-                  "xp": 1,
-                  "meta": {
-                    "source": "Abbotsleigh 2021 4U Trials & Solutions",
-                    "school": "Abbotsleigh",
-                    "year": 2021
-                  },
-                  "manual": true,
-                  "answer": "Sample diagram: a circle of radius 2 centred at O, with z on the first-quadrant arc and the directed angle θ measured counterclockwise from the positive real axis.",
-                  "keyPoints": [
-                    {
-                      "text": "Sketch an Argand diagram",
-                      "note": "Use a radius-2 circle centred at the origin and place z strictly in the first quadrant."
-                    }
-                  ]
-                },
-                {
-                  "id": "abbotsleigh2021-ext2-q12c-ii",
-                  "type": "mc",
-                  "difficulty": "medium",
-                  "timeLimit": 60,
-                  "stem": "Given \\(\\arg z=\\theta\\), find \\(\\arg(z^2)\\).",
-                  "hint": "When complex numbers are multiplied, their arguments add. Since \\(0<2\\theta<\\pi\\), no extra adjustment is needed.",
-                  "steps": [
-                    {
-                      "explain": "Write z in polar form; its modulus is 2 and its argument is θ.",
-                      "work": "\\(z=2\\operatorname{cis}\\theta.\\)",
-                      "figure": {
-                        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 220\" role=\"img\" aria-label=\"Argand diagram circle of radius 2 and point z at argument theta\">\n    <rect width=\"300\" height=\"220\" rx=\"8\" fill=\"white\"/><path d=\"M30 110H270M160 195V25\" stroke=\"#64748b\" stroke-width=\"1.4\"/><circle cx=\"160\" cy=\"110\" r=\"40\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M160 110L188.3 81.7\" stroke=\"#2563eb\" stroke-width=\"2.3\"/><circle cx=\"188.3\" cy=\"81.7\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"191\" y=\"78\" font-family=\"Arial\" font-size=\"12\">z</text><text x=\"172\" y=\"103\" font-family=\"Arial\" font-size=\"12\">θ</text><text x=\"204\" y=\"126\" font-family=\"Arial\" font-size=\"11\">2</text><g font-family=\"Arial\" font-size=\"11\" fill=\"#334155\"><text x=\"272\" y=\"106\">Re</text><text x=\"165\" y=\"22\">Im</text></g></svg>"
-                      }
-                    },
-                    {
-                      "explain": "When complex numbers are multiplied, multiply the moduli and add the arguments.",
-                      "work": "\\(z^2=(2\\operatorname{cis}\\theta)(2\\operatorname{cis}\\theta)=2\\cdot2\\operatorname{cis}(\\theta+\\theta)=4\\operatorname{cis}(2\\theta).\\)",
-                      "figure": {
-                        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 220\" role=\"img\" aria-label=\"Argand diagram circle of radius 2 and point z at argument theta\">\n    <rect width=\"300\" height=\"220\" rx=\"8\" fill=\"white\"/><path d=\"M30 110H270M160 195V25\" stroke=\"#64748b\" stroke-width=\"1.4\"/><path d=\"M160 110L200 110A40 40 0 0 0 160 70Z\" fill=\"#dcfce7\" stroke=\"none\"/><text x=\"198\" y=\"74\" font-family=\"Arial\" font-size=\"9\" fill=\"#15803d\">0&lt;θ&lt;π/2</text><circle cx=\"160\" cy=\"110\" r=\"40\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M160 110L188.3 81.7\" stroke=\"#2563eb\" stroke-width=\"2.3\"/><circle cx=\"188.3\" cy=\"81.7\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"191\" y=\"78\" font-family=\"Arial\" font-size=\"12\">z</text><text x=\"172\" y=\"103\" font-family=\"Arial\" font-size=\"12\">θ</text><text x=\"204\" y=\"126\" font-family=\"Arial\" font-size=\"11\">2</text><g font-family=\"Arial\" font-size=\"11\" fill=\"#334155\"><text x=\"272\" y=\"106\">Re</text><text x=\"165\" y=\"22\">Im</text></g></svg>"
-                      }
-                    },
-                    {
-                      "explain": "The given range keeps 2θ between 0 and π, so this is already the argument in the required range.",
-                      "work": "\\(0<\\theta<\\frac\\pi2\\;\\Longrightarrow\\;0<2\\theta<\\pi,\\quad\\boxed{\\arg(z^2)=2\\theta}.\\)"
-                    }
-                  ],
-                  "xp": 1,
-                  "meta": {
-                    "source": "Abbotsleigh 2021 4U Trials & Solutions",
-                    "school": "Abbotsleigh",
-                    "year": 2021
-                  },
-                  "options": [
-                    "\\(\\theta^2\\)",
-                    "\\(\\pi-2\\theta\\)",
-                    "\\(2\\theta\\)",
-                    "\\(\\frac{\\theta}{2}\\)"
-                  ],
-                  "answer": 2,
-                  "solution": "\\(2\\theta\\)",
-                  "keyPoints": [
-                    {
-                      "text": "find \\(\\arg(z^2)\\)",
-                      "note": "Arguments add under multiplication, so double θ; the given range keeps it between 0 and π."
-                    }
-                  ],
-                  "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 220\" role=\"img\" aria-label=\"Argand diagram circle of radius 2 and point z at argument theta\">\n    <rect width=\"300\" height=\"220\" rx=\"8\" fill=\"white\"/><path d=\"M30 110H270M160 195V25\" stroke=\"#64748b\" stroke-width=\"1.4\"/><circle cx=\"160\" cy=\"110\" r=\"40\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M160 110L188.3 81.7\" stroke=\"#2563eb\" stroke-width=\"2.3\"/><circle cx=\"188.3\" cy=\"81.7\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"191\" y=\"78\" font-family=\"Arial\" font-size=\"12\">z</text><text x=\"172\" y=\"103\" font-family=\"Arial\" font-size=\"12\">θ</text><text x=\"204\" y=\"126\" font-family=\"Arial\" font-size=\"11\">2</text><g font-family=\"Arial\" font-size=\"11\" fill=\"#334155\"><text x=\"272\" y=\"106\">Re</text><text x=\"165\" y=\"22\">Im</text></g></svg>"
-                  }
-                },
-                {
-                  "id": "abbotsleigh2021-ext2-q12c-iii-A",
-                  "type": "mc",
-                  "difficulty": "medium",
-                  "timeLimit": 60,
-                  "stem": "Find \\(\\arg(z+2)\\) in terms of \\(\\theta\\).",
-                  "hint": "On the circle, \\(z+2\\) is the chord vector from \\(-2\\) to z. The isosceles triangle formed by the two radii splits its angle at the chord into equal halves.",
-                  "steps": [
-                    {
-                      "explain": "Highlight the chord from −2 to z. The two radii make an isosceles triangle.",
-                      "work": "\\(O(-2)=Oz=2,\\quad\\angle(-2)Oz=\\pi-\\theta.\\)",
-                      "figure": {
-                        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 220\" role=\"img\" aria-label=\"Argand circle with highlighted chord direction\">\n    <rect width=\"300\" height=\"220\" rx=\"8\" fill=\"white\"/><path d=\"M30 110H270M160 195V25\" stroke=\"#64748b\" stroke-width=\"1.4\"/><circle cx=\"160\" cy=\"110\" r=\"40\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M160 110L188.3 81.7\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><circle cx=\"188.3\" cy=\"81.7\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"192\" y=\"78\" font-family=\"Arial\" font-size=\"11\">z</text><text x=\"171\" y=\"91\" font-family=\"Arial\" font-size=\"10\">θ</text><path d=\"M120 110L188.3 81.7\" stroke=\"#16a34a\" stroke-width=\"2.4\"/><circle cx=\"120\" cy=\"110\" r=\"3.5\" fill=\"#16a34a\"/><text x=\"112\" y=\"128\" font-family=\"Arial\" font-size=\"10\" fill=\"#15803d\">−2</text><path d=\"M160 110L180.3 101.6\" stroke=\"#16a34a\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/><path d=\"M182 110 A22 22 0 0 0 180.3 101.6\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"2.2\"/><text x=\"177\" y=\"109\" font-family=\"Arial\" font-size=\"8\" fill=\"#7c3aed\">φ</text><g font-family=\"Arial\" font-size=\"10\" fill=\"#334155\"><text x=\"271\" y=\"106\">Re</text><text x=\"164\" y=\"20\">Im</text></g></svg>"
-                      }
-                    },
-                    {
-                      "explain": "The base angles of the isosceles triangle are equal; the chord from −2 to z makes angle θ/2 with the positive real axis.",
-                      "work": "\\(\\arg(z+2)=\\frac{\\pi-(\\pi-\\theta)}2=\\boxed{\\frac\\theta2}.\\)",
-                      "figure": {
-                        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 220\" role=\"img\" aria-label=\"Argand circle with highlighted chord direction\">\n    <rect width=\"300\" height=\"220\" rx=\"8\" fill=\"white\"/><path d=\"M30 110H270M160 195V25\" stroke=\"#64748b\" stroke-width=\"1.4\"/><circle cx=\"160\" cy=\"110\" r=\"40\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M160 110L188.3 81.7\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><circle cx=\"188.3\" cy=\"81.7\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"192\" y=\"78\" font-family=\"Arial\" font-size=\"11\">z</text><text x=\"171\" y=\"91\" font-family=\"Arial\" font-size=\"10\">θ</text><path d=\"M120 110L188.3 81.7\" stroke=\"#16a34a\" stroke-width=\"2.4\"/><circle cx=\"120\" cy=\"110\" r=\"3.5\" fill=\"#16a34a\"/><text x=\"112\" y=\"128\" font-family=\"Arial\" font-size=\"10\" fill=\"#15803d\">−2</text><path d=\"M160 110L180.3 101.6\" stroke=\"#16a34a\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/><path d=\"M182 110 A22 22 0 0 0 180.3 101.6\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"2.2\"/><text x=\"177\" y=\"109\" font-family=\"Arial\" font-size=\"8\" fill=\"#7c3aed\">φ</text><g font-family=\"Arial\" font-size=\"10\" fill=\"#334155\"><text x=\"271\" y=\"106\">Re</text><text x=\"164\" y=\"20\">Im</text></g></svg>"
-                      }
-                    },
-                    {
-                      "explain": "State the direction measured from the positive real axis.",
-                      "work": "\\(\\boxed{\\arg(z+2)=\\frac\\theta2}.\\)",
-                      "figure": {
-                        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 220\" role=\"img\" aria-label=\"Argand circle with highlighted chord direction\">\n    <rect width=\"300\" height=\"220\" rx=\"8\" fill=\"white\"/><path d=\"M30 110H270M160 195V25\" stroke=\"#64748b\" stroke-width=\"1.4\"/><circle cx=\"160\" cy=\"110\" r=\"40\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M160 110L188.3 81.7\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><circle cx=\"188.3\" cy=\"81.7\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"192\" y=\"78\" font-family=\"Arial\" font-size=\"11\">z</text><text x=\"171\" y=\"91\" font-family=\"Arial\" font-size=\"10\">θ</text><path d=\"M120 110L188.3 81.7\" stroke=\"#16a34a\" stroke-width=\"2.4\"/><circle cx=\"120\" cy=\"110\" r=\"3.5\" fill=\"#16a34a\"/><text x=\"112\" y=\"128\" font-family=\"Arial\" font-size=\"10\" fill=\"#15803d\">−2</text><path d=\"M160 110L180.3 101.6\" stroke=\"#16a34a\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/><path d=\"M182 110 A22 22 0 0 0 180.3 101.6\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"2.2\"/><text x=\"177\" y=\"109\" font-family=\"Arial\" font-size=\"8\" fill=\"#7c3aed\">φ</text><g font-family=\"Arial\" font-size=\"10\" fill=\"#334155\"><text x=\"271\" y=\"106\">Re</text><text x=\"164\" y=\"20\">Im</text></g></svg>"
-                      }
-                    }
-                  ],
-                  "xp": 1,
-                  "meta": {
-                    "source": "Abbotsleigh 2021 4U Trials & Solutions",
-                    "school": "Abbotsleigh",
-                    "year": 2021
-                  },
-                  "options": [
-                    "\\(\\frac\\pi2+\\frac\\theta2\\)",
-                    "\\(\\pi-\\theta\\)",
-                    "\\(\\theta\\)",
-                    "\\(\\frac\\theta2\\)"
-                  ],
-                  "answer": 3,
-                  "solution": "\\(\\frac\\theta2\\)",
-                  "keyPoints": [
-                    {
-                      "text": "\\(\\arg(z+2)\\)",
-                      "note": "Use the isosceles triangle formed by the radii to see that the chord direction bisects the angle."
-                    }
-                  ],
-                  "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 220\" role=\"img\" aria-label=\"Argand circle with highlighted chord direction\">\n    <rect width=\"300\" height=\"220\" rx=\"8\" fill=\"white\"/><path d=\"M30 110H270M160 195V25\" stroke=\"#64748b\" stroke-width=\"1.4\"/><circle cx=\"160\" cy=\"110\" r=\"40\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M160 110L188.3 81.7\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><circle cx=\"188.3\" cy=\"81.7\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"192\" y=\"78\" font-family=\"Arial\" font-size=\"11\">z</text><text x=\"171\" y=\"91\" font-family=\"Arial\" font-size=\"10\">θ</text><path d=\"M120 110L188.3 81.7\" stroke=\"#16a34a\" stroke-width=\"2.4\"/><circle cx=\"120\" cy=\"110\" r=\"3.5\" fill=\"#16a34a\"/><text x=\"112\" y=\"128\" font-family=\"Arial\" font-size=\"10\" fill=\"#15803d\">−2</text><path d=\"M160 110L180.3 101.6\" stroke=\"#16a34a\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/><path d=\"M182 110 A22 22 0 0 0 180.3 101.6\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"2.2\"/><text x=\"177\" y=\"109\" font-family=\"Arial\" font-size=\"8\" fill=\"#7c3aed\">φ</text><g font-family=\"Arial\" font-size=\"10\" fill=\"#334155\"><text x=\"271\" y=\"106\">Re</text><text x=\"164\" y=\"20\">Im</text></g></svg>"
-                  }
-                },
-                {
-                  "id": "abbotsleigh2021-ext2-q12c-iii-B",
-                  "type": "mc",
-                  "difficulty": "medium",
-                  "timeLimit": 60,
-                  "stem": "Find \\(\\arg(z-2)\\) in terms of \\(\\theta\\).",
-                  "hint": "The vector z−2 is the chord from the point 2 on the real axis to z. Use the right triangle formed by the centre and the chord endpoints.",
-                  "steps": [
-                    {
-                      "explain": "Highlight the chord from 2 to z; its horizontal component points left and its vertical component points up.",
-                      "work": "\\(z=2\\cos\\theta+2i\\sin\\theta,\\quad z-2=2(\\cos\\theta-1)+2i\\sin\\theta.\\)",
-                      "figure": {
-                        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 220\" role=\"img\" aria-label=\"Argand circle with highlighted chord direction\">\n    <rect width=\"300\" height=\"220\" rx=\"8\" fill=\"white\"/><path d=\"M30 110H270M160 195V25\" stroke=\"#64748b\" stroke-width=\"1.4\"/><circle cx=\"160\" cy=\"110\" r=\"40\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M160 110L188.3 81.7\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><circle cx=\"188.3\" cy=\"81.7\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"192\" y=\"78\" font-family=\"Arial\" font-size=\"11\">z</text><text x=\"171\" y=\"91\" font-family=\"Arial\" font-size=\"10\">θ</text><path d=\"M200 110L188.3 81.7\" stroke=\"#f97316\" stroke-width=\"2.4\"/><circle cx=\"200\" cy=\"110\" r=\"3.5\" fill=\"#f97316\"/><text x=\"197\" y=\"128\" font-family=\"Arial\" font-size=\"10\" fill=\"#c2410c\">2</text><path d=\"M160 110L151.6 89.7\" stroke=\"#f97316\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/><path d=\"M182 110 A22 22 0 0 0 151.6 89.7\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"2.2\"/><text x=\"171\" y=\"107\" font-family=\"Arial\" font-size=\"9\" fill=\"#7c3aed\">φ</text><g font-family=\"Arial\" font-size=\"10\" fill=\"#334155\"><text x=\"271\" y=\"106\">Re</text><text x=\"164\" y=\"20\">Im</text></g></svg>"
-                      }
-                    },
-                    {
-                      "explain": "Factor using half-angle identities.",
-                      "work": "\\(z-2=4\\sin(\\frac\\theta2)\\left(-\\sin(\\frac\\theta2)+i\\cos(\\frac\\theta2)\\right).\\)",
-                      "figure": {
-                        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 220\" role=\"img\" aria-label=\"Argand circle with highlighted chord direction\">\n    <rect width=\"300\" height=\"220\" rx=\"8\" fill=\"white\"/><path d=\"M30 110H270M160 195V25\" stroke=\"#64748b\" stroke-width=\"1.4\"/><circle cx=\"160\" cy=\"110\" r=\"40\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M160 110L188.3 81.7\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><circle cx=\"188.3\" cy=\"81.7\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"192\" y=\"78\" font-family=\"Arial\" font-size=\"11\">z</text><text x=\"171\" y=\"91\" font-family=\"Arial\" font-size=\"10\">θ</text><path d=\"M200 110L188.3 81.7\" stroke=\"#f97316\" stroke-width=\"2.4\"/><circle cx=\"200\" cy=\"110\" r=\"3.5\" fill=\"#f97316\"/><text x=\"197\" y=\"128\" font-family=\"Arial\" font-size=\"10\" fill=\"#c2410c\">2</text><path d=\"M160 110L151.6 89.7\" stroke=\"#f97316\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/><path d=\"M182 110 A22 22 0 0 0 151.6 89.7\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"2.2\"/><text x=\"171\" y=\"107\" font-family=\"Arial\" font-size=\"9\" fill=\"#7c3aed\">φ</text><g font-family=\"Arial\" font-size=\"10\" fill=\"#334155\"><text x=\"271\" y=\"106\">Re</text><text x=\"164\" y=\"20\">Im</text></g></svg>"
-                      }
-                    },
-                    {
-                      "explain": "The vector points into quadrant II, giving its direction angle.",
-                      "work": "\\(\\boxed{\\arg(z-2)=\\frac\\pi2+\\frac\\theta2}.\\)",
-                      "figure": {
-                        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 220\" role=\"img\" aria-label=\"Argand circle with highlighted chord direction\">\n    <rect width=\"300\" height=\"220\" rx=\"8\" fill=\"white\"/><path d=\"M30 110H270M160 195V25\" stroke=\"#64748b\" stroke-width=\"1.4\"/><circle cx=\"160\" cy=\"110\" r=\"40\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M160 110L188.3 81.7\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><circle cx=\"188.3\" cy=\"81.7\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"192\" y=\"78\" font-family=\"Arial\" font-size=\"11\">z</text><text x=\"171\" y=\"91\" font-family=\"Arial\" font-size=\"10\">θ</text><path d=\"M200 110L188.3 81.7\" stroke=\"#f97316\" stroke-width=\"2.4\"/><circle cx=\"200\" cy=\"110\" r=\"3.5\" fill=\"#f97316\"/><text x=\"197\" y=\"128\" font-family=\"Arial\" font-size=\"10\" fill=\"#c2410c\">2</text><path d=\"M160 110L151.6 89.7\" stroke=\"#f97316\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/><path d=\"M182 110 A22 22 0 0 0 151.6 89.7\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"2.2\"/><text x=\"171\" y=\"107\" font-family=\"Arial\" font-size=\"9\" fill=\"#7c3aed\">φ</text><g font-family=\"Arial\" font-size=\"10\" fill=\"#334155\"><text x=\"271\" y=\"106\">Re</text><text x=\"164\" y=\"20\">Im</text></g></svg>"
-                      }
-                    }
-                  ],
-                  "xp": 1,
-                  "meta": {
-                    "source": "Abbotsleigh 2021 4U Trials & Solutions",
-                    "school": "Abbotsleigh",
-                    "year": 2021
-                  },
-                  "options": [
-                    "\\(\\frac\\pi2+\\frac\\theta2\\)",
-                    "\\(\\frac\\theta2\\)",
-                    "\\(\\pi-\\frac\\theta2\\)",
-                    "\\(\\pi-\\theta\\)"
-                  ],
-                  "answer": 0,
-                  "solution": "\\(\\frac\\pi2+\\frac\\theta2\\)",
-                  "keyPoints": [
-                    {
-                      "text": "\\(\\arg(z-2)\\)",
-                      "note": "Subtract the point 2 from z and use the signs of the real and imaginary components to choose quadrant II."
-                    }
-                  ],
-                  "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 220\" role=\"img\" aria-label=\"Argand circle with highlighted chord direction\">\n    <rect width=\"300\" height=\"220\" rx=\"8\" fill=\"white\"/><path d=\"M30 110H270M160 195V25\" stroke=\"#64748b\" stroke-width=\"1.4\"/><circle cx=\"160\" cy=\"110\" r=\"40\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M160 110L188.3 81.7\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><circle cx=\"188.3\" cy=\"81.7\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"192\" y=\"78\" font-family=\"Arial\" font-size=\"11\">z</text><text x=\"171\" y=\"91\" font-family=\"Arial\" font-size=\"10\">θ</text><path d=\"M200 110L188.3 81.7\" stroke=\"#f97316\" stroke-width=\"2.4\"/><circle cx=\"200\" cy=\"110\" r=\"3.5\" fill=\"#f97316\"/><text x=\"197\" y=\"128\" font-family=\"Arial\" font-size=\"10\" fill=\"#c2410c\">2</text><path d=\"M160 110L151.6 89.7\" stroke=\"#f97316\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/><path d=\"M182 110 A22 22 0 0 0 151.6 89.7\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"2.2\"/><text x=\"171\" y=\"107\" font-family=\"Arial\" font-size=\"9\" fill=\"#7c3aed\">φ</text><g font-family=\"Arial\" font-size=\"10\" fill=\"#334155\"><text x=\"271\" y=\"106\">Re</text><text x=\"164\" y=\"20\">Im</text></g></svg>"
-                  }
-                },
-                {
-                  "id": "abbotsleigh2021-ext2-q12c-iii-C",
-                  "type": "mc",
-                  "difficulty": "medium",
-                  "timeLimit": 60,
-                  "stem": "Find \\(\\arg\\left(\\frac{z-2}{z+2}\\right)\\) in terms of \\(\\theta\\).",
-                  "hint": "The argument of a quotient is the argument of the numerator minus that of the denominator.",
-                  "steps": [
-                    {
-                      "explain": "Use the argument rule for a quotient: subtract the denominator argument from the numerator argument.",
-                      "work": "\\(\\arg\\left(\\frac{z-2}{z+2}\\right)=\\arg(z-2)-\\arg(z+2).\\)",
-                      "figure": {
-                        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 220\" role=\"img\" aria-label=\"Argand circle with highlighted chord direction\">\n    <rect width=\"300\" height=\"220\" rx=\"8\" fill=\"white\"/><path d=\"M30 110H270M160 195V25\" stroke=\"#64748b\" stroke-width=\"1.4\"/><circle cx=\"160\" cy=\"110\" r=\"40\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M160 110L188.3 81.7\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><circle cx=\"188.3\" cy=\"81.7\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"192\" y=\"78\" font-family=\"Arial\" font-size=\"11\">z</text><text x=\"171\" y=\"91\" font-family=\"Arial\" font-size=\"10\">θ</text><path d=\"M120 110L188.3 81.7\" stroke=\"#16a34a\" stroke-width=\"2.4\"/><circle cx=\"120\" cy=\"110\" r=\"3.5\" fill=\"#16a34a\"/><text x=\"112\" y=\"128\" font-family=\"Arial\" font-size=\"10\" fill=\"#15803d\">−2</text><path d=\"M160 110L180.3 101.6\" stroke=\"#16a34a\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/><path d=\"M200 110L188.3 81.7\" stroke=\"#f97316\" stroke-width=\"2.4\"/><circle cx=\"200\" cy=\"110\" r=\"3.5\" fill=\"#f97316\"/><text x=\"197\" y=\"128\" font-family=\"Arial\" font-size=\"10\" fill=\"#c2410c\">2</text><path d=\"M160 110L151.6 89.7\" stroke=\"#f97316\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/><g font-family=\"Arial\" font-size=\"10\" fill=\"#334155\"><text x=\"271\" y=\"106\">Re</text><text x=\"164\" y=\"20\">Im</text></g></svg>"
-                      }
-                    },
-                    {
-                      "explain": "Substitute the chord directions established in parts A and B.",
-                      "work": "\\(\\arg(z-2)=\\frac\\pi2+\\frac\\theta2,\\qquad\\arg(z+2)=\\frac\\theta2.\\)",
-                      "figure": {
-                        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 220\" role=\"img\" aria-label=\"Argand circle with highlighted chord direction\">\n    <rect width=\"300\" height=\"220\" rx=\"8\" fill=\"white\"/><path d=\"M30 110H270M160 195V25\" stroke=\"#64748b\" stroke-width=\"1.4\"/><circle cx=\"160\" cy=\"110\" r=\"40\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M160 110L188.3 81.7\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><circle cx=\"188.3\" cy=\"81.7\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"192\" y=\"78\" font-family=\"Arial\" font-size=\"11\">z</text><text x=\"171\" y=\"91\" font-family=\"Arial\" font-size=\"10\">θ</text><path d=\"M120 110L188.3 81.7\" stroke=\"#16a34a\" stroke-width=\"2.4\"/><circle cx=\"120\" cy=\"110\" r=\"3.5\" fill=\"#16a34a\"/><text x=\"112\" y=\"128\" font-family=\"Arial\" font-size=\"10\" fill=\"#15803d\">−2</text><path d=\"M160 110L180.3 101.6\" stroke=\"#16a34a\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/><path d=\"M200 110L188.3 81.7\" stroke=\"#f97316\" stroke-width=\"2.4\"/><circle cx=\"200\" cy=\"110\" r=\"3.5\" fill=\"#f97316\"/><text x=\"197\" y=\"128\" font-family=\"Arial\" font-size=\"10\" fill=\"#c2410c\">2</text><path d=\"M160 110L151.6 89.7\" stroke=\"#f97316\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/><g font-family=\"Arial\" font-size=\"10\" fill=\"#334155\"><text x=\"271\" y=\"106\">Re</text><text x=\"164\" y=\"20\">Im</text></g></svg>"
-                      }
-                    },
-                    {
-                      "explain": "Cancel the equal θ/2 terms.",
-                      "work": "\\(\\arg\\left(\\frac{z-2}{z+2}\\right)=\\left(\\frac\\pi2+\\frac\\theta2\\right)-\\frac\\theta2=\\boxed{\\frac\\pi2}.\\)"
-                    }
-                  ],
-                  "xp": 1,
-                  "meta": {
-                    "source": "Abbotsleigh 2021 4U Trials & Solutions",
-                    "school": "Abbotsleigh",
-                    "year": 2021
-                  },
-                  "options": [
-                    "\\(0\\)",
-                    "\\(\\frac\\pi2\\)",
-                    "\\(\\frac\\theta2\\)",
-                    "\\(\\pi-\\theta\\)"
-                  ],
-                  "answer": 1,
-                  "solution": "\\(\\frac\\pi2\\)",
-                  "keyPoints": [
-                    {
-                      "text": "\\arg\\left(\\frac{z-2}{z+2}\\right)",
-                      "note": "For a quotient, subtract the denominator argument from the numerator argument."
-                    }
-                  ],
-                  "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 220\" role=\"img\" aria-label=\"Argand circle with highlighted chord direction\">\n    <rect width=\"300\" height=\"220\" rx=\"8\" fill=\"white\"/><path d=\"M30 110H270M160 195V25\" stroke=\"#64748b\" stroke-width=\"1.4\"/><circle cx=\"160\" cy=\"110\" r=\"40\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M160 110L188.3 81.7\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><circle cx=\"188.3\" cy=\"81.7\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"192\" y=\"78\" font-family=\"Arial\" font-size=\"11\">z</text><text x=\"171\" y=\"91\" font-family=\"Arial\" font-size=\"10\">θ</text><path d=\"M120 110L188.3 81.7\" stroke=\"#16a34a\" stroke-width=\"2.4\"/><circle cx=\"120\" cy=\"110\" r=\"3.5\" fill=\"#16a34a\"/><text x=\"112\" y=\"128\" font-family=\"Arial\" font-size=\"10\" fill=\"#15803d\">−2</text><path d=\"M160 110L180.3 101.6\" stroke=\"#16a34a\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/><path d=\"M200 110L188.3 81.7\" stroke=\"#f97316\" stroke-width=\"2.4\"/><circle cx=\"200\" cy=\"110\" r=\"3.5\" fill=\"#f97316\"/><text x=\"197\" y=\"128\" font-family=\"Arial\" font-size=\"10\" fill=\"#c2410c\">2</text><path d=\"M160 110L151.6 89.7\" stroke=\"#f97316\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/><g font-family=\"Arial\" font-size=\"10\" fill=\"#334155\"><text x=\"271\" y=\"106\">Re</text><text x=\"164\" y=\"20\">Im</text></g></svg>"
-                  }
-                }
-              ],
-              "xp": 1,
-              "meta": {
-                "source": "Abbotsleigh 2021 4U Trials & Solutions",
-                "school": "Abbotsleigh",
-                "year": 2021,
-                "number": "12(c)"
+              "explain": "Find the intercepts with the real axis (\\(y=0\\)).",
+              "work": "\\(\\text{outer: }x^2+1=4\\Rightarrow x=\\pm\\sqrt3,\\qquad\\text{inner: }x^2+1=1\\Rightarrow x=0\\ (\\text{touches at }O)\\)"
+            },
+            {
+              "explain": "Find the intercepts with the imaginary axis (\\(x=0\\)).",
+              "work": "\\(\\text{outer: }(y-1)^2=4\\Rightarrow y=3\\) or \\(y=-1,\\qquad\\text{inner: }(y-1)^2=1\\Rightarrow y=2\\) or \\(y=0\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 250\" width=\"320\" height=\"250\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"320\" height=\"250\" rx=\"8\" fill=\"white\"/><line x1=\"14.0\" y1=\"190.0\" x2=\"306.0\" y2=\"190.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"160.0\" y1=\"244.0\" x2=\"160.0\" y2=\"10.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"304.0\" y=\"182.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\" font-style=\"italic\">Re</text><text x=\"166.0\" y=\"20.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\" font-style=\"italic\">Im</text><circle cx=\"160.0\" cy=\"146.0\" r=\"88.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/><circle cx=\"160.0\" cy=\"146.0\" r=\"44.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/><circle cx=\"160.0\" cy=\"146.0\" r=\"3\" fill=\"#2563eb\"/><text x=\"166.0\" y=\"150.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#2563eb\" text-anchor=\"start\">(0,1)</text><circle cx=\"83.8\" cy=\"190.0\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"79.8\" y=\"206.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"end\">−√3</text><circle cx=\"236.2\" cy=\"190.0\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"240.2\" y=\"206.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\">√3</text><circle cx=\"160.0\" cy=\"58.0\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"166.0\" y=\"52.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\">3</text><circle cx=\"160.0\" cy=\"102.0\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"166.0\" y=\"97.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\">2</text><circle cx=\"160.0\" cy=\"190.0\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"154.0\" y=\"206.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"end\">0</text><circle cx=\"160.0\" cy=\"234.0\" r=\"3.5\" fill=\"#64748b\"/><text x=\"166.0\" y=\"248.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\">−1 (y&lt;0)</text></svg>"
+              }
+            },
+            {
+              "explain": "\\(\\operatorname{Im}(z)\\ge0\\) keeps only the part on or above the real axis, so \\(y=-1\\) is removed. Shade the annulus above the real axis; all boundaries are solid because every inequality includes equality.",
+              "work": "\\(\\text{intercepts: }x=-\\sqrt3,\\ 0,\\ \\sqrt3;\\qquad y=0,\\ 2,\\ 3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 250\" width=\"320\" height=\"250\"><defs><clipPath id=\"up\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"190.0\"/></clipPath><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"320\" height=\"250\" rx=\"8\" fill=\"white\"/><g clip-path=\"url(#up)\"><path d=\"M72.0 146.0a88 88 0 1 0 176 0a88 88 0 1 0 -176 0ZM116.0 146.0a44 44 0 1 1 88 0a44 44 0 1 1 -88 0Z\" fill=\"#93c5fd\" fill-opacity=\"0.55\" fill-rule=\"evenodd\"/></g><line x1=\"14.0\" y1=\"190.0\" x2=\"306.0\" y2=\"190.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"160.0\" y1=\"244.0\" x2=\"160.0\" y2=\"10.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"304.0\" y=\"182.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\" font-style=\"italic\">Re</text><text x=\"166.0\" y=\"20.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\" font-style=\"italic\">Im</text><circle cx=\"160.0\" cy=\"146.0\" r=\"88.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.3\" stroke-dasharray=\"4 3\"/><circle cx=\"160.0\" cy=\"146.0\" r=\"44.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/><path d=\"M83.8 190.0A88 88 0 1 1 236.2 190.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><line x1=\"83.8\" y1=\"190.0\" x2=\"236.2\" y2=\"190.0\" stroke=\"#475569\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"160.0\" cy=\"146.0\" r=\"3\" fill=\"#2563eb\"/><text x=\"166.0\" y=\"150.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\" text-anchor=\"start\" font-style=\"italic\">i</text><circle cx=\"83.8\" cy=\"190.0\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"79.8\" y=\"206.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"end\">−√3</text><circle cx=\"236.2\" cy=\"190.0\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"240.2\" y=\"206.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\">√3</text><circle cx=\"160.0\" cy=\"58.0\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"166.0\" y=\"52.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\">3</text><circle cx=\"160.0\" cy=\"102.0\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"166.0\" y=\"97.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\">2</text><circle cx=\"160.0\" cy=\"190.0\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"154.0\" y=\"206.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"end\">0</text></svg>"
               }
             }
           ],
@@ -820,8 +539,248 @@
             "source": "Abbotsleigh 2021 4U Trials & Solutions",
             "school": "Abbotsleigh",
             "year": 2021,
-            "number": "12(a), (c)"
-          }
+            "number": "12(a)"
+          },
+          "answer": "The region is the part of the annulus centred at \\(i=(0,1)\\) with radii 1 and 2 (both circles included) that lies on or above the real axis. The outer circle meets the real axis at \\(x=\\pm\\sqrt3\\); the inner circle touches it at the origin. On the imaginary axis the boundary points are \\(y=0\\), \\(y=2\\) and \\(y=3\\) (the point \\(y=-1\\) is excluded because \\(\\operatorname{Im}(z)\\ge0\\)). The segment \\(-\\sqrt3\\le x\\le\\sqrt3\\) of the real axis is part of the boundary.",
+          "manual": true,
+          "keyPoints": [
+            {
+              "text": "\\(1\\le|z-i|\\le2\\)",
+              "note": "This is a ring centred at (0, 1) with radii 1 and 2; then keep only the part with y ≥ 0."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2021-ext2-q12c",
+          "type": "multipart",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "In an Argand diagram \\(z\\) is a point on the circle \\(|z|=2\\).\n\nGiven that \\(\\arg z=\\theta\\) and \\(0<\\theta<\\frac{\\pi}{2}\\).",
+          "meta": {
+            "source": "Abbotsleigh 2021 4U Trials & Solutions",
+            "school": "Abbotsleigh",
+            "year": 2021,
+            "number": "12(c)"
+          },
+          "parts": [
+            {
+              "id": "abbotsleigh2021-ext2-q12c-i",
+              "type": "review",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Draw a diagram to represent this information.",
+              "hint": "|z| = 2 is a circle of radius 2 about O; 0 < θ < π/2 is the first quadrant.",
+              "steps": [
+                {
+                  "explain": "\\(|z|=2\\) means \\(z\\) is 2 units from the origin, so \\(z\\) lies on the circle centred at \\(O\\) with radius 2. It crosses the axes at \\(\\pm2\\) and \\(\\pm2i\\).",
+                  "work": "\\(|z|=2\\ \\Leftrightarrow\\ x^2+y^2=4\\)"
+                },
+                {
+                  "explain": "\\(0<\\arg z<\\frac\\pi2\\) puts \\(z\\) in the first quadrant. Draw \\(Oz\\) and mark \\(\\theta\\) between the positive real axis and \\(Oz\\).",
+                  "work": "\\(z=2\\operatorname{cis}\\theta,\\qquad 0<\\theta<\\tfrac{\\pi}{2}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 230\" width=\"330\" height=\"230\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"330\" height=\"230\" rx=\"8\" fill=\"white\"/><line x1=\"14.0\" y1=\"140.0\" x2=\"318.0\" y2=\"140.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"130.0\" y1=\"226.0\" x2=\"130.0\" y2=\"10.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"316.0\" y=\"132.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\" font-style=\"italic\">Re</text><text x=\"136.0\" y=\"20.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\" font-style=\"italic\">Im</text><circle cx=\"130.0\" cy=\"140.0\" r=\"92.0\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.3\" stroke-dasharray=\"4 3\"/><text x=\"124.0\" y=\"156.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">O</text><line x1=\"130.0\" y1=\"140.0\" x2=\"170.3\" y2=\"57.3\" stroke=\"#2563eb\" stroke-width=\"2.3\" stroke-linecap=\"round\"/><circle cx=\"170.3\" cy=\"57.3\" r=\"4\" fill=\"#2563eb\"/><text x=\"178.3\" y=\"51.3\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#2563eb\" text-anchor=\"start\" font-style=\"italic\">z</text><text x=\"158.5\" y=\"125.3\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\" font-style=\"italic\">θ</text><text x=\"142.2\" y=\"98.7\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\" text-anchor=\"end\">2</text><text x=\"226.0\" y=\"156.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\">2</text><text x=\"34.0\" y=\"156.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">−2</text><text x=\"136.0\" y=\"42.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\">2i</text></svg>"
+                  }
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Abbotsleigh 2021 4U Trials & Solutions",
+                "school": "Abbotsleigh",
+                "year": 2021,
+                "number": "12(c)(i)"
+              },
+              "answer": "A circle centred at the origin with radius 2 (crossing the axes at \\(\\pm2\\) and \\(\\pm2i\\)), with the point \\(z\\) on the arc in the first quadrant, joined to \\(O\\), and the angle \\(\\theta\\) marked between the positive real axis and \\(Oz\\).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Draw a diagram",
+                  "note": "Draw the circle of radius 2 about O and put z in the first quadrant with angle θ from the positive real axis."
+                }
+              ]
+            },
+            {
+              "id": "abbotsleigh2021-ext2-q12c-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Find, in terms of \\(\\theta\\), an expression for \\(\\arg z^2\\).",
+              "hint": "arg(z²) = 2 arg z.",
+              "steps": [
+                {
+                  "explain": "Write \\(z\\) in modulus-argument form.",
+                  "work": "\\(z=2\\operatorname{cis}\\theta\\)"
+                },
+                {
+                  "explain": "By de Moivre's theorem the modulus is squared and the argument is doubled.",
+                  "work": "\\(z^2=2^2\\operatorname{cis}2\\theta=4\\operatorname{cis}2\\theta\\)"
+                },
+                {
+                  "explain": "Since \\(0<\\theta<\\frac\\pi2\\), we have \\(0<2\\theta<\\pi\\), which is already a principal argument.",
+                  "work": "\\(\\arg z^2=2\\arg z=2\\theta\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Abbotsleigh 2021 4U Trials & Solutions",
+                "school": "Abbotsleigh",
+                "year": 2021,
+                "number": "12(c)(ii)"
+              },
+              "options": [
+                "\\(\\theta+\\pi\\)",
+                "\\(2\\theta\\)",
+                "\\(\\theta^2\\)",
+                "\\(\\frac{\\theta}{2}\\)"
+              ],
+              "answer": 1,
+              "keyPoints": [
+                {
+                  "text": "\\(\\arg z^2\\)",
+                  "note": "Multiplying complex numbers adds arguments, so arg(z²) = 2 arg z."
+                }
+              ]
+            },
+            {
+              "id": "abbotsleigh2021-ext2-q12c-iii-A",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Find, in terms of \\(\\theta\\), giving brief reasons, an expression for:\n\n(A) \\(\\arg(z+2)\\)",
+              "hint": "z + 2 is the diagonal of a rhombus with sides z and 2.",
+              "steps": [
+                {
+                  "explain": "Add \\(z\\) and \\(2\\) as vectors: they are adjacent sides of a parallelogram with vertices \\(O\\), \\(2\\), \\(z+2\\), \\(z\\).",
+                  "work": "\\(|z|=2=|2|\\ \\Rightarrow\\ \\text{the parallelogram is a rhombus}\\)"
+                },
+                {
+                  "explain": "In a rhombus the diagonal bisects the angle between the sides. The sides from \\(O\\) make angles \\(0\\) and \\(\\theta\\) with the real axis.",
+                  "work": "\\(\\arg(z+2)=\\frac{0+\\theta}{2}=\\frac{\\theta}{2}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 230\" width=\"330\" height=\"230\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker><marker id=\"ahdc2626\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#dc2626\"/></marker></defs><rect width=\"330\" height=\"230\" rx=\"8\" fill=\"white\"/><line x1=\"14.0\" y1=\"140.0\" x2=\"318.0\" y2=\"140.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"130.0\" y1=\"226.0\" x2=\"130.0\" y2=\"10.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"316.0\" y=\"132.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\" font-style=\"italic\">Re</text><text x=\"136.0\" y=\"20.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\" font-style=\"italic\">Im</text><circle cx=\"130.0\" cy=\"140.0\" r=\"92.0\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.3\" stroke-dasharray=\"4 3\"/><text x=\"124.0\" y=\"156.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">O</text><path d=\"M130.0 140.0L222.0 140.0L262.3 57.3L170.3 57.3Z\" fill=\"#fef3c7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linejoin=\"round\" fill-opacity=\"0.55\"/><line x1=\"130.0\" y1=\"140.0\" x2=\"262.3\" y2=\"57.3\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ahdc2626)\"/><circle cx=\"170.3\" cy=\"57.3\" r=\"4\" fill=\"#2563eb\"/><circle cx=\"222.0\" cy=\"140.0\" r=\"4\" fill=\"#2563eb\"/><circle cx=\"262.3\" cy=\"57.3\" r=\"4\" fill=\"#dc2626\"/><text x=\"164.3\" y=\"49.3\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#2563eb\" text-anchor=\"end\" font-style=\"italic\">z</text><text x=\"224.0\" y=\"158.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\" text-anchor=\"start\">2</text><text x=\"270.3\" y=\"59.3\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\" font-style=\"italic\">z + 2</text><text x=\"180.9\" y=\"129.4\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">θ/2</text><text x=\"165.4\" y=\"104.7\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">θ/2</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Algebraic check using double-angle formulas.",
+                  "work": "\\(z+2=2(1+\\cos\\theta)+2i\\sin\\theta=4\\cos\\tfrac{\\theta}{2}\\left(\\cos\\tfrac{\\theta}{2}+i\\sin\\tfrac{\\theta}{2}\\right)\\ \\Rightarrow\\ \\arg(z+2)=\\tfrac{\\theta}{2}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Abbotsleigh 2021 4U Trials & Solutions",
+                "school": "Abbotsleigh",
+                "year": 2021,
+                "number": "12(c)(iii)(A)"
+              },
+              "options": [
+                "\\(2\\theta\\)",
+                "\\(\\frac{\\pi}{2}-\\frac{\\theta}{2}\\)",
+                "\\(\\frac{\\theta}{2}\\)",
+                "\\(\\theta\\)"
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "\\(\\arg(z+2)\\)",
+                  "note": "O, 2, z + 2, z form a rhombus (|z| = |2| = 2); its diagonal bisects the angle θ."
+                }
+              ]
+            },
+            {
+              "id": "abbotsleigh2021-ext2-q12c-iii-B",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Find, in terms of \\(\\theta\\), giving brief reasons, an expression for:\n\n(B) \\(\\arg(z-2)\\)",
+              "hint": "Triangle O, 2, z is isosceles with apex angle θ at O.",
+              "steps": [
+                {
+                  "explain": "\\(z-2\\) is the vector from the point \\(2\\) to the point \\(z\\). The triangle with vertices \\(O\\), \\(2\\), \\(z\\) is isosceles, because \\(|z|=2\\) and the distance from \\(O\\) to \\(2\\) is 2.",
+                  "work": "\\(\\text{apex angle at }O=\\theta\\)"
+                },
+                {
+                  "explain": "The base angles of an isosceles triangle are equal, so the angle \\(\\beta\\) at the point 2 is",
+                  "work": "\\(\\beta=\\frac{\\pi-\\theta}{2}=\\frac{\\pi}{2}-\\frac{\\theta}{2}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 230\" width=\"330\" height=\"230\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker><marker id=\"ahdc2626\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#dc2626\"/></marker></defs><rect width=\"330\" height=\"230\" rx=\"8\" fill=\"white\"/><line x1=\"14.0\" y1=\"140.0\" x2=\"318.0\" y2=\"140.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"130.0\" y1=\"226.0\" x2=\"130.0\" y2=\"10.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"316.0\" y=\"132.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\" font-style=\"italic\">Re</text><text x=\"136.0\" y=\"20.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\" font-style=\"italic\">Im</text><circle cx=\"130.0\" cy=\"140.0\" r=\"92.0\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.3\" stroke-dasharray=\"4 3\"/><text x=\"124.0\" y=\"156.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">O</text><path d=\"M130.0 140.0L222.0 140.0L170.3 57.3Z\" fill=\"#e0e7ff\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linejoin=\"round\" fill-opacity=\"0.5\"/><line x1=\"222.0\" y1=\"140.0\" x2=\"170.3\" y2=\"57.3\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ahdc2626)\"/><line x1=\"222.0\" y1=\"140.0\" x2=\"277.2\" y2=\"140.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><circle cx=\"170.3\" cy=\"57.3\" r=\"4\" fill=\"#2563eb\"/><circle cx=\"222.0\" cy=\"140.0\" r=\"4\" fill=\"#2563eb\"/><text x=\"164.3\" y=\"49.3\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#2563eb\" text-anchor=\"end\" font-style=\"italic\">z</text><text x=\"228.0\" y=\"158.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\" text-anchor=\"start\">2</text><text x=\"149.3\" y=\"132.6\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" font-style=\"italic\">θ</text><text x=\"226.2\" y=\"100.7\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\" font-style=\"italic\">z − 2</text><text x=\"202.7\" y=\"130.8\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" font-style=\"italic\">β</text><text x=\"250.5\" y=\"111.5\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\">π/2 + θ/2</text><text x=\"142.2\" y=\"98.7\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">2</text></svg>"
+                  }
+                },
+                {
+                  "explain": "At the point 2, \\(\\beta\\) is measured from the direction pointing back towards \\(O\\) (argument \\(\\pi\\)). So the direction of \\(z-2\\) makes angle \\(\\pi-\\beta\\) with the positive real direction.",
+                  "work": "\\(\\arg(z-2)=\\pi-\\left(\\frac{\\pi}{2}-\\frac{\\theta}{2}\\right)=\\frac{\\pi}{2}+\\frac{\\theta}{2}\\)"
+                },
+                {
+                  "explain": "Algebraic check.",
+                  "work": "\\(z-2=2(\\cos\\theta-1)+2i\\sin\\theta=4\\sin\\tfrac{\\theta}{2}\\left(-\\sin\\tfrac{\\theta}{2}+i\\cos\\tfrac{\\theta}{2}\\right)=4\\sin\\tfrac{\\theta}{2}\\operatorname{cis}\\left(\\tfrac{\\pi}{2}+\\tfrac{\\theta}{2}\\right)\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Abbotsleigh 2021 4U Trials & Solutions",
+                "school": "Abbotsleigh",
+                "year": 2021,
+                "number": "12(c)(iii)(B)"
+              },
+              "options": [
+                "\\(\\frac{\\pi}{2}-\\frac{\\theta}{2}\\)",
+                "\\(\\pi-\\theta\\)",
+                "\\(\\frac{\\theta}{2}\\)",
+                "\\(\\frac{\\pi}{2}+\\frac{\\theta}{2}\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "\\(\\arg(z-2)\\)",
+                  "note": "z − 2 is the vector from 2 to z. Triangle O-2-z is isosceles, so the base angles are (π − θ)/2."
+                }
+              ]
+            },
+            {
+              "id": "abbotsleigh2021-ext2-q12c-iii-C",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Find, in terms of \\(\\theta\\), giving brief reasons, an expression for:\n\n(C) \\(\\left|\\frac{z-2}{z+2}\\right|\\)",
+              "hint": "The diagonals z + 2 and z − 2 of the rhombus are perpendicular.",
+              "steps": [
+                {
+                  "explain": "From (A) and (B), the angle between \\(z+2\\) and \\(z-2\\) is a right angle. These are the two diagonals of the rhombus, and the diagonals of a rhombus are perpendicular.",
+                  "work": "\\(\\arg(z-2)-\\arg(z+2)=\\left(\\frac{\\pi}{2}+\\frac{\\theta}{2}\\right)-\\frac{\\theta}{2}=\\frac{\\pi}{2}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 230\" width=\"330\" height=\"230\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker><marker id=\"ah2563eb\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#2563eb\"/></marker><marker id=\"ahdc2626\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#dc2626\"/></marker></defs><rect width=\"330\" height=\"230\" rx=\"8\" fill=\"white\"/><line x1=\"14.0\" y1=\"140.0\" x2=\"318.0\" y2=\"140.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"130.0\" y1=\"226.0\" x2=\"130.0\" y2=\"10.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"316.0\" y=\"132.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\" font-style=\"italic\">Re</text><text x=\"136.0\" y=\"20.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\" font-style=\"italic\">Im</text><circle cx=\"130.0\" cy=\"140.0\" r=\"92.0\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.3\" stroke-dasharray=\"4 3\"/><text x=\"124.0\" y=\"156.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">O</text><path d=\"M130.0 140.0L222.0 140.0L262.3 57.3L170.3 57.3Z\" fill=\"#fef3c7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linejoin=\"round\" fill-opacity=\"0.45\"/><line x1=\"130.0\" y1=\"140.0\" x2=\"262.3\" y2=\"57.3\" stroke=\"#2563eb\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ah2563eb)\"/><line x1=\"222.0\" y1=\"140.0\" x2=\"170.3\" y2=\"57.3\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ahdc2626)\"/><path d=\"M203.8 93.9L199.0 86.3L191.4 91.0\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linejoin=\"round\"/><circle cx=\"170.3\" cy=\"57.3\" r=\"4\" fill=\"#2563eb\"/><circle cx=\"222.0\" cy=\"140.0\" r=\"4\" fill=\"#2563eb\"/><circle cx=\"262.3\" cy=\"57.3\" r=\"4\" fill=\"#2563eb\"/><text x=\"164.3\" y=\"49.3\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#2563eb\" text-anchor=\"end\" font-style=\"italic\">z</text><text x=\"224.0\" y=\"158.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\" text-anchor=\"start\">2</text><text x=\"270.3\" y=\"59.3\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#2563eb\" text-anchor=\"start\" font-style=\"italic\">z + 2</text><text x=\"208.0\" y=\"160.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"end\" font-style=\"italic\">z − 2</text></svg>"
+                  }
+                },
+                {
+                  "explain": "The diagonals bisect each other, so they cut the rhombus into right-angled triangles. In the triangle at \\(O\\) the angle is \\(\\frac\\theta2\\); the opposite side is half of \\(|z-2|\\) and the adjacent side is half of \\(|z+2|\\).",
+                  "work": "\\(\\tan\\frac{\\theta}{2}=\\frac{\\tfrac12|z-2|}{\\tfrac12|z+2|}=\\frac{|z-2|}{|z+2|}\\)"
+                },
+                {
+                  "explain": "So the required modulus is \\(\\tan\\frac\\theta2\\). Check with the moduli from the algebra in (A) and (B):",
+                  "work": "\\(\\left|\\frac{z-2}{z+2}\\right|=\\frac{4\\sin\\tfrac{\\theta}{2}}{4\\cos\\tfrac{\\theta}{2}}=\\tan\\frac{\\theta}{2}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Abbotsleigh 2021 4U Trials & Solutions",
+                "school": "Abbotsleigh",
+                "year": 2021,
+                "number": "12(c)(iii)(C)"
+              },
+              "options": [
+                "\\(\\sin\\frac{\\theta}{2}\\)",
+                "\\(\\tan\\frac{\\theta}{2}\\)",
+                "\\(\\cot\\frac{\\theta}{2}\\)",
+                "\\(\\tan\\theta\\)"
+              ],
+              "answer": 1,
+              "keyPoints": [
+                {
+                  "text": "\\left|\\frac{z-2}{z+2}\\right|",
+                  "note": "z + 2 and z − 2 are perpendicular diagonals of the rhombus; use tan(θ/2) in the right-angled triangle."
+                }
+              ]
+            }
+          ]
         }
       ]
     },

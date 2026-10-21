@@ -54,31 +54,32 @@
           "type": "mc",
           "difficulty": "medium",
           "timeLimit": 60,
-          "stem": "The number \\(1+2i\\) is a root of \\(z^3-z^2+qz+5=0\\), where q is real. Find q.",
-          "hint": "Because the coefficients are real, \\(1-2i\\) is also a root. Use the product of all three roots, then the sum of pairwise products.",
+          "stem": "\\(1+2i\\) is a root of the equation \\(z^3-z^2+qz+5=0\\). The value of \\(q\\) is:",
+          "hint": "Use the conjugate root, find the third root from the product of roots, then use the sum of pairwise products.",
           "steps": [
             {
-              "explain": "Because the polynomial has real coefficients, the conjugate of the non-real root is also a root.",
-              "work": "\\(1+2i\\text{ root}\\quad\\Longrightarrow\\quad1-2i\\text{ root}.\\)"
+              "explain": "The coefficients are real, so by the conjugate root theorem \\(1-2i\\) is also a root. Call the third root \\(\\alpha\\).",
+              "work": "\\(\\text{roots: }\\ 1+2i,\\ \\ 1-2i,\\ \\ \\alpha\\)"
             },
             {
-              "explain": "Use the product of the three roots. For a monic cubic with constant term 5, the product is −5.",
-              "work": "\\((1+2i)(1-2i)\\alpha=-5.\\)"
+              "explain": "Product of the roots of \\(az^3+bz^2+cz+d=0\\) is \\(-\\frac da\\).",
+              "work": "\\((1+2i)(1-2i)\\,\\alpha=-5\\ \\Rightarrow\\ (1+4)\\alpha=-5\\ \\Rightarrow\\ \\alpha=-1\\)"
             },
             {
-              "explain": "Multiply the conjugate pair and solve for the third root α.",
-              "work": "\\((1+2i)(1-2i)=1-(2i)^2=1+4=5,\\quad5\\alpha=-5,\\quad\\alpha=-1.\\)"
+              "explain": "Sum of the roots taken two at a time is \\(\\frac ca=q\\).",
+              "work": "\\(q=(1+2i)(1-2i)+(1+2i)(-1)+(1-2i)(-1)=5-1-2i-1+2i=3\\)"
             },
             {
-              "explain": "For a monic cubic, q is the sum of the pairwise products of its roots. Substitute all three roots.",
-              "work": "\\(q=(1+2i)(1-2i)+(1+2i)(-1)+(1-2i)(-1)=5-1-2i-1+2i=3.\\) Hence \\(\\boxed{q=3}\\)."
+              "explain": "Check: with \\(q=3\\), \\(z=-1\\) gives \\(-1-1-3+5=0\\) ✓. So \\(q=3\\), option C.",
+              "work": "\\((-1)^3-(-1)^2+3(-1)+5=0\\)"
             }
           ],
           "xp": 1,
           "meta": {
             "source": "Abbotsleigh 2021 4U Trials & Solutions",
             "school": "Abbotsleigh",
-            "year": 2021
+            "year": 2021,
+            "number": "7"
           },
           "options": [
             "\\(-3\\)",
@@ -87,11 +88,10 @@
             "\\(1\\)"
           ],
           "answer": 2,
-          "solution": "\\(q=3\\)",
           "keyPoints": [
             {
               "text": "\\(1+2i\\) is a root",
-              "note": "A real-coefficient polynomial also has the conjugate root 1−2i."
+              "note": "Real coefficients ⇒ 1 − 2i is also a root. Then use product of roots and sum of products in pairs."
             }
           ]
         }
@@ -259,105 +259,104 @@
           "type": "multipart",
           "difficulty": "hard",
           "timeLimit": 60,
-          "stem": "Let \\(w=-\\sqrt{3}+i\\). Answer the following questions regarding powers of \\(w\\).",
-          "hint": "Use modulus and argument carefully. Verify that the source value of w is consistent with the claimed power identity.",
+          "stem": "Consider \\(w=-\\sqrt{3}+i\\).",
+          "meta": {
+            "source": "Abbotsleigh 2021 4U Trials & Solutions",
+            "school": "Abbotsleigh",
+            "year": 2021,
+            "number": "11(c)"
+          },
           "parts": [
             {
               "id": "abbotsleigh2021-ext2-q11c-i",
               "type": "mc",
               "difficulty": "hard",
               "timeLimit": 60,
-              "stem": "Let \\(w=-\\sqrt3+i\\). Express \\(w\\) in modulus-argument form.",
-              "hint": "Find the modulus first. Since \\(w\\) lies in quadrant II and \\(\\tan\\alpha=1/\\sqrt3\\), use the quadrant to select the argument.",
+              "stem": "Express \\(w\\) in modulus-argument form.",
+              "hint": "Find |w|, then locate the quadrant before choosing the argument.",
               "steps": [
                 {
-                  "explain": "The modulus is the distance from the origin, found from the real and imaginary components.",
-                  "work": "\\(|w|=\\sqrt{(-\\sqrt3)^2+1^2}=\\sqrt{3+1}=2.\\)"
+                  "explain": "Modulus:",
+                  "work": "\\(|w|=\\sqrt{\\left(-\\sqrt3\\right)^2+1^2}=\\sqrt{3+1}=2\\)"
                 },
                 {
-                  "explain": "The point (−√3,1) lies in quadrant II. Its reference angle has tangent |1/(−√3)|=1/√3, hence α=π/6.",
-                  "work": "\\(\\tan\\alpha=\\frac{|1|}{|{-\\sqrt3}|}=\\frac1{\\sqrt3}\\quad\\Longrightarrow\\quad\\alpha=\\frac\\pi6.\\)"
+                  "explain": "\\(w\\) has negative real part and positive imaginary part, so it lies in the second quadrant. Find the related acute angle \\(\\alpha\\).",
+                  "work": "\\(\\tan\\alpha=\\frac{1}{\\sqrt3}\\ \\Rightarrow\\ \\alpha=\\frac{\\pi}{6}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 190\" width=\"280\" height=\"190\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"280\" height=\"190\" rx=\"8\" fill=\"white\"/><line x1=\"20.0\" y1=\"140.0\" x2=\"265.0\" y2=\"140.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"170.0\" y1=\"180.0\" x2=\"170.0\" y2=\"12.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"263.0\" y=\"132.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\" font-style=\"italic\">Re</text><text x=\"176.0\" y=\"22.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\" font-style=\"italic\">Im</text><line x1=\"170.0\" y1=\"140.0\" x2=\"83.4\" y2=\"90.0\" stroke=\"#2563eb\" stroke-width=\"2.3\" stroke-linecap=\"round\"/><line x1=\"83.4\" y1=\"90.0\" x2=\"83.4\" y2=\"140.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><circle cx=\"83.4\" cy=\"90.0\" r=\"4.5\" fill=\"#2563eb\"/><text x=\"79.4\" y=\"80.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\" text-anchor=\"middle\">w = −√3 + i</text><text x=\"83.4\" y=\"157.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"middle\">−√3</text><text x=\"122.5\" y=\"134.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">π/6</text><text x=\"130.7\" y=\"107.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\" text-anchor=\"start\">2</text><text x=\"176.0\" y=\"156.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\">O</text></svg>"
+                  }
                 },
                 {
-                  "explain": "In quadrant II, the principal argument is π−α. Attach this angle to modulus 2.",
-                  "work": "\\(\\theta=\\pi-\\frac\\pi6=\\frac{5\\pi}6,\\qquad\\boxed{w=2\\,\\mathrm{cis}\\left(\\frac{5\\pi}6\\right)}.\\)"
+                  "explain": "In the second quadrant the argument is \\(\\pi-\\alpha\\).",
+                  "work": "\\(\\arg w=\\pi-\\frac{\\pi}{6}=\\frac{5\\pi}{6}\\ \\Rightarrow\\ w=2\\operatorname{cis}\\frac{5\\pi}{6}\\)"
+                },
+                {
+                  "explain": "Check: \\(2\\left(\\cos\\frac{5\\pi}{6}+i\\sin\\frac{5\\pi}{6}\\right)=2\\left(-\\frac{\\sqrt3}{2}+\\frac12i\\right)=-\\sqrt3+i\\) ✓. A calculator \\(\\tan^{-1}\\!\\left(\\frac{1}{-\\sqrt3}\\right)=-\\frac\\pi6\\) gives the wrong quadrant."
                 }
               ],
               "xp": 1,
               "meta": {
                 "source": "Abbotsleigh 2021 4U Trials & Solutions",
                 "school": "Abbotsleigh",
-                "year": 2021
+                "year": 2021,
+                "number": "11(c)(i)"
               },
               "options": [
-                "\\(2\\,\\mathrm{cis}(\\frac{\\pi}{6})\\)",
-                "\\(2\\,\\mathrm{cis}(\\frac{5\\pi}{6})\\)",
-                "\\(4\\,\\mathrm{cis}(\\frac{5\\pi}{6})\\)",
-                "\\(2\\,\\mathrm{cis}(\\frac{7\\pi}{6})\\)"
+                "\\(w=2\\operatorname{cis}\\frac{2\\pi}{3}\\)",
+                "\\(w=4\\operatorname{cis}\\frac{5\\pi}{6}\\)",
+                "\\(w=2\\operatorname{cis}\\frac{5\\pi}{6}\\)",
+                "\\(w=2\\operatorname{cis}\\left(-\\frac{\\pi}{6}\\right)\\)"
               ],
-              "answer": 1,
-              "solution": "\\(2\\,\\mathrm{cis}(\\frac{5\\pi}{6})\\)",
+              "answer": 2,
               "keyPoints": [
                 {
                   "text": "Express \\(w\\) in modulus-argument form",
-                  "note": "The point −√3+i is in quadrant II; its modulus is 2 and its reference angle is π/6."
+                  "note": "|w| = 2; w is in the 2nd quadrant, so arg w = π − π/6."
                 }
               ]
             },
             {
               "id": "abbotsleigh2021-ext2-q11c-ii",
-              "type": "mc",
+              "type": "review",
               "difficulty": "hard",
               "timeLimit": 60,
-              "stem": "Which statement gives the result of simplifying \\(w^7+64w\\)?",
-              "hint": "Use the modulus-argument form of w. Compare the modulus and argument of \\(w^7\\) and \\(64w\\), then use their opposite directions.",
+              "stem": "Hence or otherwise show that \\(w^7+64w=0\\).",
+              "hint": "Use de Moivre's theorem on w = 2 cis(5π/6), then reduce the argument.",
               "steps": [
                 {
-                  "explain": "Use the polar form from part (i), with modulus 2 and argument 5π/6.",
-                  "work": "\\(w=2\\,\\mathrm{cis}\\left(\\frac{5\\pi}6\\right).\\)"
+                  "explain": "Use the result of part (i) and de Moivre's theorem \\((r\\operatorname{cis}\\theta)^n=r^n\\operatorname{cis}n\\theta\\).",
+                  "work": "\\(w^7=\\left(2\\operatorname{cis}\\frac{5\\pi}{6}\\right)^7=2^7\\operatorname{cis}\\frac{35\\pi}{6}=128\\operatorname{cis}\\frac{35\\pi}{6}\\)"
                 },
                 {
-                  "explain": "Apply de Moivre: raise the modulus to the seventh power and multiply the argument by 7.",
-                  "work": "\\(w^7=2^7\\,\\mathrm{cis}\\left(7\\cdot\\frac{5\\pi}6\\right)=128\\,\\mathrm{cis}\\left(\\frac{35\\pi}6\\right).\\)"
+                  "explain": "Bring the argument into \\((-\\pi,\\pi]\\) by subtracting a multiple of \\(2\\pi\\).",
+                  "work": "\\(\\frac{35\\pi}{6}-6\\pi=-\\frac{\\pi}{6}\\ \\Rightarrow\\ w^7=128\\operatorname{cis}\\left(-\\frac{\\pi}{6}\\right)=128\\left(\\frac{\\sqrt3}{2}-\\frac12i\\right)=64\\sqrt3-64i\\)"
                 },
                 {
-                  "explain": "Reduce the angle by 4π=24π/6 to put it in a standard revolution.",
-                  "work": "\\(\\frac{35\\pi}6-\\frac{24\\pi}6=\\frac{11\\pi}6,\\qquad w^7=128\\,\\mathrm{cis}\\left(\\frac{11\\pi}6\\right).\\)"
+                  "explain": "Now add \\(64w\\).",
+                  "work": "\\(64w=64\\left(-\\sqrt3+i\\right)=-64\\sqrt3+64i\\)\n\\(w^7+64w=\\left(64\\sqrt3-64i\\right)+\\left(-64\\sqrt3+64i\\right)=0\\)"
                 },
                 {
-                  "explain": "Write 64w with the same modulus, then note the two arguments differ by π, so the values are opposites.",
-                  "work": "\\(64w=128\\,\\mathrm{cis}\\left(\\frac{5\\pi}6\\right),\\quad\\frac{11\\pi}6=\\frac{5\\pi}6+\\pi\\Rightarrow w^7=-64w.\\) Thus \\(\\boxed{w^7+64w=0}.\\)"
+                  "explain": "A shorter route: factor out \\(w\\) and use \\(w^6\\).",
+                  "work": "\\(w^6=2^6\\operatorname{cis}\\frac{30\\pi}{6}=64\\operatorname{cis}5\\pi=-64\\ \\Rightarrow\\ w^7+64w=w\\left(w^6+64\\right)=w\\cdot0=0\\)"
                 }
               ],
               "xp": 1,
               "meta": {
                 "source": "Abbotsleigh 2021 4U Trials & Solutions",
                 "school": "Abbotsleigh",
-                "year": 2021
+                "year": 2021,
+                "number": "11(c)(ii)"
               },
-              "options": [
-                "\\(w^7-64w=0\\)",
-                "\\(w^7+128w=0\\)",
-                "\\(w^7+64w=0\\)",
-                "\\(w^7=64w\\)"
-              ],
-              "answer": 2,
-              "solution": "\\(w^7+64w=0\\)",
+              "answer": "Using \\(w=2\\operatorname{cis}\\frac{5\\pi}{6}\\) and de Moivre's theorem: \\(w^7=2^7\\operatorname{cis}\\frac{35\\pi}{6}=128\\operatorname{cis}\\left(\\frac{35\\pi}{6}-6\\pi\\right)=128\\operatorname{cis}\\left(-\\frac{\\pi}{6}\\right)=128\\left(\\frac{\\sqrt3}{2}-\\frac12i\\right)=64\\sqrt3-64i\\). Also \\(64w=-64\\sqrt3+64i\\). Adding, \\(w^7+64w=0\\). (Alternatively \\(w^6=64\\operatorname{cis}5\\pi=-64\\), so \\(w^7+64w=w(w^6+64)=0\\).)",
+              "manual": true,
               "keyPoints": [
                 {
-                  "text": "result of simplifying \\(w^7+64w\\)",
-                  "note": "Use De Moivre’s theorem and reduce the argument 35π/6 to 11π/6."
+                  "text": "show that \\(w^7+64w=0\\)",
+                  "note": "Apply de Moivre to 2 cis(5π/6); 35π/6 − 6π = −π/6."
                 }
               ]
             }
-          ],
-          "xp": 1,
-          "meta": {
-            "source": "Abbotsleigh 2021 4U Trials & Solutions",
-            "school": "Abbotsleigh",
-            "year": 2021,
-            "number": "11(c)"
-          }
+          ]
         }
       ]
     },
@@ -448,8 +447,13 @@
           "type": "multipart",
           "difficulty": "hard",
           "timeLimit": 60,
-          "stem": "Consider multiple-angle tangent identities and the equation \\(\\tan 4\\theta = 1\\).",
-          "hint": "Use tangent’s period and the double-angle formula, then connect the roots to the quartic.",
+          "stem": "",
+          "meta": {
+            "source": "Abbotsleigh 2021 4U Trials & Solutions",
+            "school": "Abbotsleigh",
+            "year": 2021,
+            "number": "16(b)"
+          },
           "parts": [
             {
               "id": "abbotsleigh2021-ext2-q16b-i",
@@ -457,39 +461,39 @@
               "difficulty": "medium",
               "timeLimit": 60,
               "stem": "Solve \\(\\tan4\\theta=1\\) for \\(0\\le\\theta\\le\\pi\\).",
-              "hint": "The reference angle for tangent 1 is π/4. List all solutions for 4θ in the interval [0,4π].",
+              "hint": "Solve for 4θ in [0, 4π] first, using tan's period π, then divide by 4.",
               "steps": [
                 {
-                  "explain": "Tangent has period π, so the general solution for 4θ is π/4+nπ.",
-                  "work": "\\(4\\theta=\\frac\\pi4+n\\pi,\\qquad n\\in\\mathbb Z.\\)"
+                  "explain": "If \\(0\\le\\theta\\le\\pi\\) then \\(0\\le4\\theta\\le4\\pi\\), so look for all solutions of \\(\\tan(4\\theta)=1\\) in that range.",
+                  "work": "\\(0\\le4\\theta\\le4\\pi\\)"
                 },
                 {
-                  "explain": "Use 0≤θ≤π to obtain 0≤4θ≤4π; this allows n=0,1,2,3.",
-                  "work": "\\(0\\le\\frac\\pi4+n\\pi\\le4\\pi\\quad\\Longrightarrow\\quad n=0,1,2,3.\\)"
+                  "explain": "The basic angle is \\(\\frac\\pi4\\), and \\(\\tan\\) repeats every \\(\\pi\\).",
+                  "work": "\\(4\\theta=\\frac{\\pi}{4},\\ \\frac{5\\pi}{4},\\ \\frac{9\\pi}{4},\\ \\frac{13\\pi}{4}\\quad\\left(\\text{next is }\\tfrac{17\\pi}{4}>4\\pi\\right)\\)"
                 },
                 {
-                  "explain": "Divide each solution by 4 and list all four values in the interval.",
-                  "work": "\\(\\theta=\\frac{\\pi/4+n\\pi}{4}=\\frac\\pi{16}+\\frac{n\\pi}4\\quad\\Longrightarrow\\quad\\boxed{\\frac\\pi{16},\\frac{5\\pi}{16},\\frac{9\\pi}{16},\\frac{13\\pi}{16}}.\\)"
+                  "explain": "Divide by 4.",
+                  "work": "\\(\\theta=\\frac{\\pi}{16},\\ \\frac{5\\pi}{16},\\ \\frac{9\\pi}{16},\\ \\frac{13\\pi}{16}\\)"
                 }
               ],
               "xp": 1,
               "meta": {
                 "source": "Abbotsleigh 2021 4U Trials & Solutions",
                 "school": "Abbotsleigh",
-                "year": 2021
+                "year": 2021,
+                "number": "16(b)(i)"
               },
               "options": [
-                "\\(\\frac{\\pi}{4},\\frac{\\pi}{2},\\frac{3\\pi}{4},\\pi\\)",
-                "\\(\\frac{\\pi}{16},\\frac{5\\pi}{16},\\frac{9\\pi}{16}\\)",
-                "\\(\\frac{\\pi}{16},\\frac{5\\pi}{16},\\frac{9\\pi}{16},\\frac{13\\pi}{16}\\)",
-                "\\(\\frac{\\pi}{8},\\frac{3\\pi}{8},\\frac{5\\pi}{8},\\frac{7\\pi}{8}\\)"
+                "\\(\\theta=\\frac{\\pi}{16},\\ \\frac{3\\pi}{16},\\ \\frac{5\\pi}{16},\\ \\frac{7\\pi}{16}\\)",
+                "\\(\\theta=\\frac{\\pi}{4},\\ \\frac{5\\pi}{4},\\ \\frac{9\\pi}{4},\\ \\frac{13\\pi}{4}\\)",
+                "\\(\\theta=\\frac{\\pi}{16},\\ \\frac{5\\pi}{16},\\ \\frac{9\\pi}{16},\\ \\frac{13\\pi}{16}\\)",
+                "\\(\\theta=\\frac{\\pi}{16},\\ \\frac{9\\pi}{16}\\)"
               ],
               "answer": 2,
-              "solution": "\\(\\frac{\\pi}{16},\\frac{5\\pi}{16},\\frac{9\\pi}{16},\\frac{13\\pi}{16}\\)",
               "keyPoints": [
                 {
                   "text": "Solve \\(\\tan4\\theta=1\\)",
-                  "note": "Use the π-period of tangent over 0≤4θ≤4π, then divide each solution by four."
+                  "note": "Find every 4θ in [0, 4π] with tan = 1 (period π), then divide by 4."
                 }
               ]
             },
@@ -499,127 +503,116 @@
               "difficulty": "medium",
               "timeLimit": 60,
               "stem": "Express \\(\\tan2\\theta\\) in terms of \\(\\tan\\theta\\).",
-              "hint": "Use \\(\\tan(A+B)=\\frac{\\tan A+\\tan B}{1-\\tan A\\tan B}\\) with A=B=θ.",
+              "hint": "Put A = B = θ in tan(A + B).",
               "steps": [
                 {
-                  "explain": "Start with the tangent addition identity and set both angles equal to θ.",
-                  "work": "\\(\\tan2\\theta=\\tan(\\theta+\\theta)=\\frac{\\tan\\theta+\\tan\\theta}{1-\\tan\\theta\\tan\\theta}.\\)"
+                  "explain": "Use the compound angle formula with \\(A=B=\\theta\\).",
+                  "work": "\\(\\tan(A+B)=\\frac{\\tan A+\\tan B}{1-\\tan A\\tan B}\\ \\Rightarrow\\ \\tan2\\theta=\\frac{\\tan\\theta+\\tan\\theta}{1-\\tan\\theta\\tan\\theta}=\\frac{2\\tan\\theta}{1-\\tan^2\\theta}\\)"
                 },
                 {
-                  "explain": "Combine the like terms in the numerator and the product in the denominator.",
-                  "work": "\\(\\tan2\\theta=\\frac{2\\tan\\theta}{1-\\tan^2\\theta}.\\)"
-                },
-                {
-                  "explain": "This gives the required double-angle expression (where the denominator is non-zero).",
-                  "work": "\\(\\boxed{\\tan2\\theta=\\frac{2\\tan\\theta}{1-\\tan^2\\theta}}.\\)"
+                  "explain": "Note \\(\\frac{2\\tan\\theta}{1+\\tan^2\\theta}\\) is \\(\\sin2\\theta\\), not \\(\\tan2\\theta\\)."
                 }
               ],
               "xp": 1,
               "meta": {
                 "source": "Abbotsleigh 2021 4U Trials & Solutions",
                 "school": "Abbotsleigh",
-                "year": 2021
+                "year": 2021,
+                "number": "16(b)(ii)"
               },
               "options": [
-                "\\(\\frac{2\\tan\\theta}{1+\\tan^2\\theta}\\)",
-                "\\(\\frac{\\tan\\theta}{1-2\\tan^2\\theta}\\)",
-                "\\(\\frac{1-\\tan^2\\theta}{2\\tan\\theta}\\)",
-                "\\(\\frac{2\\tan\\theta}{1-\\tan^2\\theta}\\)"
+                "\\(\\tan2\\theta=\\frac{2\\tan\\theta}{1-2\\tan^2\\theta}\\)",
+                "\\(\\tan2\\theta=\\frac{2\\tan\\theta}{1-\\tan^2\\theta}\\)",
+                "\\(\\tan2\\theta=\\frac{2\\tan\\theta}{1+\\tan^2\\theta}\\)",
+                "\\(\\tan2\\theta=\\frac{\\tan\\theta}{1-\\tan^2\\theta}\\)"
               ],
-              "answer": 3,
-              "solution": "\\(\\frac{2\\tan\\theta}{1-\\tan^2\\theta}\\)",
+              "answer": 1,
               "keyPoints": [
                 {
                   "text": "Express \\(\\tan2\\theta\\)",
-                  "note": "Use tangent addition with the same angle twice; the denominator is 1−tan²θ."
+                  "note": "Use tan(A + B) = (tan A + tan B)/(1 − tan A tan B) with A = B = θ."
                 }
               ]
             },
             {
               "id": "abbotsleigh2021-ext2-q16b-iii",
-              "type": "mc",
+              "type": "review",
               "difficulty": "medium",
               "timeLimit": 60,
-              "stem": "Which expression is equal to \\(\\tan4\\theta\\)?",
-              "hint": "Set \\(t=\\tan\\theta\\), apply the double-angle formula to 2θ, then simplify the resulting fraction.",
+              "stem": "Hence show \\(\\tan4\\theta=\\frac{4\\tan\\theta-4\\tan^3\\theta}{1-6\\tan^2\\theta+\\tan^4\\theta}\\).",
+              "hint": "Apply the tan 2θ formula to 4θ = 2(2θ), then clear the fractions.",
               "steps": [
                 {
-                  "explain": "Apply the double-angle formula to 2θ.",
-                  "work": "\\(\\tan4\\theta=\\frac{2\\tan2\\theta}{1-\\tan^22\\theta}.\\)"
+                  "explain": "Apply the double-angle formula to \\(4\\theta=2(2\\theta)\\). Write \\(t=\\tan\\theta\\).",
+                  "work": "\\(\\tan4\\theta=\\frac{2\\tan2\\theta}{1-\\tan^22\\theta},\\qquad\\tan2\\theta=\\frac{2t}{1-t^2}\\)"
                 },
                 {
-                  "explain": "Substitute the expression for tan 2θ.",
-                  "work": "\\(=\\frac{4t/(1-t^2)}{1-[2t/(1-t^2)]^2}.\\)"
+                  "explain": "Substitute.",
+                  "work": "\\(\\tan4\\theta=\\frac{2\\cdot\\frac{2t}{1-t^2}}{1-\\left(\\frac{2t}{1-t^2}\\right)^2}=\\frac{\\frac{4t}{1-t^2}}{\\frac{(1-t^2)^2-4t^2}{(1-t^2)^2}}\\)"
                 },
                 {
-                  "explain": "Multiply numerator and denominator by (1−t²)².",
-                  "work": "\\(=\\frac{4t(1-t^2)}{(1-t^2)^2-4t^2}=\\frac{4t-4t^3}{1-6t^2+t^4}.\\)"
+                  "explain": "Multiply top and bottom by \\((1-t^2)^2\\).",
+                  "work": "\\(=\\frac{4t(1-t^2)}{(1-t^2)^2-4t^2}\\)"
                 },
                 {
-                  "explain": "Replace t with tan θ.",
-                  "work": "\\(\\boxed{\\tan4\\theta=\\frac{4\\tan\\theta-4\\tan^3\\theta}{1-6\\tan^2\\theta+\\tan^4\\theta}}.\\)"
+                  "explain": "Expand.",
+                  "work": "\\(=\\frac{4t-4t^3}{1-2t^2+t^4-4t^2}=\\frac{4\\tan\\theta-4\\tan^3\\theta}{1-6\\tan^2\\theta+\\tan^4\\theta}\\)"
                 }
               ],
               "xp": 1,
               "meta": {
                 "source": "Abbotsleigh 2021 4U Trials & Solutions",
                 "school": "Abbotsleigh",
-                "year": 2021
+                "year": 2021,
+                "number": "16(b)(iii)"
               },
-              "options": [
-                "\\(\\frac{4\\tan\\theta-4\\tan^3\\theta}{1-6\\tan^2\\theta+\\tan^4\\theta}\\)",
-                "\\(\\frac{4\\tan\\theta+4\\tan^3\\theta}{1+6\\tan^2\\theta+\\tan^4\\theta}\\)",
-                "\\(\\frac{2\\tan\\theta-2\\tan^3\\theta}{1-4\\tan^2\\theta+\\tan^4\\theta}\\)",
-                "\\(\\frac{4\\tan\\theta}{1-6\\tan^2\\theta+\\tan^4\\theta}\\)"
-              ],
-              "answer": 0,
-              "solution": "\\(\\frac{4\\tan\\theta-4\\tan^3\\theta}{1-6\\tan^2\\theta+\\tan^4\\theta}\\)",
+              "answer": "Let \\(t=\\tan\\theta\\). Then \\(\\tan4\\theta=\\frac{2\\tan2\\theta}{1-\\tan^22\\theta}=\\frac{\\frac{4t}{1-t^2}}{1-\\frac{4t^2}{(1-t^2)^2}}=\\frac{4t(1-t^2)}{(1-t^2)^2-4t^2}=\\frac{4t-4t^3}{1-2t^2+t^4-4t^2}=\\frac{4t-4t^3}{1-6t^2+t^4}\\).",
+              "manual": true,
               "keyPoints": [
                 {
-                  "text": "Which expression is equal to \\(\\tan4\\theta\\)",
-                  "note": "Use tan4θ=2tan2θ/(1−tan²2θ), then clear the squared denominator."
+                  "text": "Hence show \\(\\tan4\\theta",
+                  "note": "Use tan 4θ = 2 tan 2θ / (1 − tan²2θ) and substitute tan 2θ = 2t/(1 − t²)."
                 }
               ]
             },
             {
               "id": "abbotsleigh2021-ext2-q16b-iv",
-              "type": "mc",
+              "type": "review",
               "difficulty": "hard",
               "timeLimit": 60,
-              "stem": "Which set lists the roots of \\(x^4+4x^3-6x^2-4x+1=0\\)?",
-              "hint": "Set \\(x=\\tan\\theta\\) in the four-angle identity and use the solutions of \\(\\tan4\\theta=1\\).",
+              "stem": "Hence show \\(x^4+4x^3-6x^2-4x+1=0\\) has roots\n\n\\(\\tan\\frac{\\pi}{16},\\ \\tan\\frac{5\\pi}{16},\\ \\tan\\frac{9\\pi}{16}\\) and \\(\\tan\\frac{13\\pi}{16}\\).",
+              "hint": "Put x = tan θ in (iii) with tan 4θ = 1, then use the solutions from (i).",
               "steps": [
                 {
-                  "explain": "Substitute x=tan θ into the four-angle identity from part (iii). The equation becomes tan 4θ=1.",
-                  "work": "\\(1=\\frac{4x-4x^3}{1-6x^2+x^4}.\\)"
+                  "explain": "Let \\(x=\\tan\\theta\\) and use (iii) with \\(\\tan4\\theta=1\\).",
+                  "work": "\\(\\frac{4x-4x^3}{1-6x^2+x^4}=1\\)"
                 },
                 {
-                  "explain": "Cross-multiply, then bring every term to the left-hand side.",
-                  "work": "\\(1-6x^2+x^4=4x-4x^3\\quad\\Longrightarrow\\quad x^4+4x^3-6x^2-4x+1=0.\\)"
+                  "explain": "Multiply out and collect all terms on one side.",
+                  "work": "\\(1-6x^2+x^4=4x-4x^3\\ \\Rightarrow\\ x^4+4x^3-6x^2-4x+1=0\\)"
                 },
                 {
-                  "explain": "The solutions of tan 4θ=1 for 0≤θ≤π were found in part (i). Each gives a root x=tan θ.",
-                  "work": "\\(\\theta=\\frac\\pi{16},\\frac{5\\pi}{16},\\frac{9\\pi}{16},\\frac{13\\pi}{16}\\quad\\Longrightarrow\\quad\\boxed{x=\\tan\\frac\\pi{16},\\tan\\frac{5\\pi}{16},\\tan\\frac{9\\pi}{16},\\tan\\frac{13\\pi}{16}}.\\)"
+                  "explain": "So every \\(\\theta\\) with \\(\\tan4\\theta=1\\) gives a root \\(x=\\tan\\theta\\). From (i) there are four such \\(\\theta\\) in \\([0,\\pi]\\).",
+                  "work": "\\(\\theta=\\frac{\\pi}{16},\\ \\frac{5\\pi}{16},\\ \\frac{9\\pi}{16},\\ \\frac{13\\pi}{16}\\)"
+                },
+                {
+                  "explain": "These four tangents are all different (two are positive, from the first quadrant; two are negative, from the second), and a quartic has at most four roots. So they are exactly the roots.",
+                  "work": "\\(x=\\tan\\frac{\\pi}{16},\\ \\tan\\frac{5\\pi}{16},\\ \\tan\\frac{9\\pi}{16},\\ \\tan\\frac{13\\pi}{16}\\)"
                 }
               ],
               "xp": 1,
               "meta": {
                 "source": "Abbotsleigh 2021 4U Trials & Solutions",
                 "school": "Abbotsleigh",
-                "year": 2021
+                "year": 2021,
+                "number": "16(b)(iv)"
               },
-              "options": [
-                "\\(\\tan\\frac{\\pi}{8},\\tan\\frac{3\\pi}{8},\\tan\\frac{5\\pi}{8},\\tan\\frac{7\\pi}{8}\\)",
-                "\\(\\tan\\frac{\\pi}{16},\\tan\\frac{5\\pi}{16},\\tan\\frac{9\\pi}{16},\\tan\\frac{13\\pi}{16}\\)",
-                "\\(\\tan\\frac{\\pi}{16},\\tan\\frac{5\\pi}{16},\\tan\\frac{9\\pi}{16}\\)",
-                "\\(\\tan\\frac{\\pi}{4},\\tan\\frac{3\\pi}{4},\\tan\\frac{5\\pi}{4},\\tan\\frac{7\\pi}{4}\\)"
-              ],
-              "answer": 1,
-              "solution": "\\(\\tan\\frac{\\pi}{16},\\tan\\frac{5\\pi}{16},\\tan\\frac{9\\pi}{16},\\tan\\frac{13\\pi}{16}\\)",
+              "answer": "Let \\(x=\\tan\\theta\\) where \\(\\tan4\\theta=1\\). By (iii), \\(\\frac{4x-4x^3}{1-6x^2+x^4}=1\\), so \\(1-6x^2+x^4=4x-4x^3\\), i.e. \\(x^4+4x^3-6x^2-4x+1=0\\). By (i) the solutions of \\(\\tan4\\theta=1\\) in \\([0,\\pi]\\) are \\(\\theta=\\frac\\pi{16},\\frac{5\\pi}{16},\\frac{9\\pi}{16},\\frac{13\\pi}{16}\\); their tangents are four different numbers, so they are the four roots of the quartic.",
+              "manual": true,
               "keyPoints": [
                 {
-                  "text": "Which set lists the roots of \\(x^4+4x^3-6x^2-4x+1=0\\)",
-                  "note": "Set x=tanθ, equate the numerator and denominator when tan4θ=1, then use the four angles."
+                  "text": "Hence show \\(x^4+4x^3-6x^2-4x+1=0\\)",
+                  "note": "Set x = tan θ and tan 4θ = 1 in (iii); the θ values from (i) give the four roots."
                 }
               ]
             },
@@ -628,97 +621,88 @@
               "type": "mc",
               "difficulty": "medium",
               "timeLimit": 60,
-              "stem": "Evaluate \\(\\tan\\frac{\\pi}{16}\\tan\\frac{5\\pi}{16}\\tan\\frac{9\\pi}{16}\\tan\\frac{13\\pi}{16}\\).",
-              "hint": "These four tangent values are the roots of the monic quartic in part (iv). Use the product-of-roots relation.",
+              "stem": "Hence evaluate \\(\\tan\\frac{\\pi}{16}\\tan\\frac{5\\pi}{16}\\tan\\frac{9\\pi}{16}\\tan\\frac{13\\pi}{16}\\).",
+              "hint": "Product of the roots of a quartic is e/a.",
               "steps": [
                 {
-                  "explain": "The four tangent values in the question are exactly the four roots found in part (iv).",
-                  "work": "\\(r_1=\\tan\\frac{\\pi}{16},~r_2=\\tan\\frac{5\\pi}{16},~r_3=\\tan\\frac{9\\pi}{16},~r_4=\\tan\\frac{13\\pi}{16}.\\)"
+                  "explain": "The four numbers are the roots of \\(x^4+4x^3-6x^2-4x+1=0\\) from (iv).",
+                  "work": "\\(a=1,\\ b=4,\\ c=-6,\\ d=-4,\\ e=1\\)"
                 },
                 {
-                  "explain": "For a monic quartic x⁴+Ax³+Bx²+Cx+D, the product of the four roots is D because (−1)⁴D=D. Here D=1.",
-                  "work": "\\(x^4+4x^3-6x^2-4x+1=0\\quad\\Longrightarrow\\quad r_1r_2r_3r_4=1.\\)"
+                  "explain": "For a quartic \\(ax^4+bx^3+cx^2+dx+e=0\\), the product of the roots is \\(+\\frac ea\\).",
+                  "work": "\\(\\tan\\frac{\\pi}{16}\\tan\\frac{5\\pi}{16}\\tan\\frac{9\\pi}{16}\\tan\\frac{13\\pi}{16}=\\frac{e}{a}=\\frac11=1\\)"
                 },
                 {
-                  "explain": "Substitute the four roots into that product relation.",
-                  "work": "\\(\\boxed{\\tan\\frac{\\pi}{16}\\tan\\frac{5\\pi}{16}\\tan\\frac{9\\pi}{16}\\tan\\frac{13\\pi}{16}=1}.\\)"
+                  "explain": "Check with complementary angles: \\(\\tan\\frac{9\\pi}{16}=-\\cot\\frac{\\pi}{16}\\) and \\(\\tan\\frac{13\\pi}{16}=-\\cot\\frac{5\\pi}{16}\\), so the product is \\((-1)(-1)\\cdot1\\cdot1=1\\).",
+                  "work": "\\(\\tan\\tfrac{\\pi}{16}\\cdot\\tan\\tfrac{5\\pi}{16}\\cdot\\left(-\\cot\\tfrac{\\pi}{16}\\right)\\cdot\\left(-\\cot\\tfrac{5\\pi}{16}\\right)=1\\)"
                 }
               ],
               "xp": 1,
               "meta": {
                 "source": "Abbotsleigh 2021 4U Trials & Solutions",
                 "school": "Abbotsleigh",
-                "year": 2021
+                "year": 2021,
+                "number": "16(b)(v)"
               },
               "options": [
                 "\\(-1\\)",
-                "\\(0\\)",
-                "\\(1\\)",
-                "\\(4\\)"
+                "\\(4\\)",
+                "\\(-4\\)",
+                "\\(1\\)"
               ],
-              "answer": 2,
-              "solution": "\\(1\\)",
+              "answer": 3,
               "keyPoints": [
                 {
-                  "text": "Evaluate \\(\\tan\\frac{\\pi}{16}\\tan\\frac{5\\pi}{16}\\tan\\frac{9\\pi}{16}\\tan\\frac{13\\pi}{16}\\)",
-                  "note": "Use the constant term of the monic quartic; the product is positive for a quartic."
+                  "text": "Hence evaluate",
+                  "note": "These are the roots of the quartic in (iv); for a quartic the product of roots is e/a."
                 }
               ]
             },
             {
               "id": "abbotsleigh2021-ext2-q16b-vi",
-              "type": "mc",
+              "type": "review",
               "difficulty": "hard",
               "timeLimit": 60,
-              "stem": "Use \\(u=x-\\frac1x\\) to evaluate \\(\\tan\\frac{\\pi}{16}-\\cot\\frac{\\pi}{16}\\).",
-              "hint": "Divide the quartic by x², group \\(x^2+x^{-2}\\) as \\(u^2+2\\), and use the fact that tan(π/16) is the small positive root.",
+              "stem": "Reduce the quartic equation in (iv) to a quadratic equation in terms of \\(u\\) where \\(u=x-\\frac{1}{x}\\) to then show:\n\n\\(\\tan\\frac{\\pi}{16}-\\cot\\frac{\\pi}{16}=-2-2\\sqrt2.\\)",
+              "hint": "Divide by x², use x² + 1/x² = u² + 2, then decide the sign of u for x = tan(π/16).",
               "steps": [
                 {
-                  "explain": "Divide the quartic by x² and introduce u.",
-                  "work": "\\(x^2+4x-6-\\frac4x+\\frac1{x^2}=0\\Rightarrow (x-\\frac1x)^2+4(x-\\frac1x)-4=0.\\)"
+                  "explain": "Divide the quartic by \\(x^2\\) (\\(x\\neq0\\), since 0 is not a root).",
+                  "work": "\\(x^2+4x-6-\\frac{4}{x}+\\frac{1}{x^2}=0\\ \\Rightarrow\\ \\left(x^2+\\frac{1}{x^2}\\right)+4\\left(x-\\frac{1}{x}\\right)-6=0\\)"
                 },
                 {
-                  "explain": "Solve the resulting quadratic.",
-                  "work": "\\(u^2+4u-4=0\\Rightarrow u=-2\\pm2\\sqrt2.\\)"
+                  "explain": "Express \\(x^2+\\frac1{x^2}\\) in terms of \\(u=x-\\frac1x\\).",
+                  "work": "\\(u^2=x^2-2+\\frac{1}{x^2}\\ \\Rightarrow\\ x^2+\\frac{1}{x^2}=u^2+2\\)"
                 },
                 {
-                  "explain": "Select the correct root using x=tan(π/16).",
-                  "work": "\\(x-\\frac1x<0\\text{ since }0<x<1,\\text{ so }u=-2-2\\sqrt2.\\)"
+                  "explain": "Substitute and solve the quadratic.",
+                  "work": "\\(u^2+2+4u-6=0\\ \\Rightarrow\\ u^2+4u-4=0\\ \\Rightarrow\\ u=\\frac{-4\\pm\\sqrt{16+16}}{2}=-2\\pm2\\sqrt2\\)"
                 },
                 {
-                  "explain": "Substitute x=tan(π/16).",
-                  "work": "\\(\\boxed{\\tan\\frac{\\pi}{16}-\\cot\\frac{\\pi}{16}=-2-2\\sqrt2}.\\)"
+                  "explain": "Choose the right root for \\(x=\\tan\\frac\\pi{16}\\). Since \\(0<\\frac\\pi{16}<\\frac\\pi4\\), we have \\(0<x<1\\), so \\(\\frac1x>1>x\\) and \\(u=x-\\frac1x<0\\). Of the two roots, \\(-2+2\\sqrt2\\approx0.83\\) is positive, so",
+                  "work": "\\(\\tan\\frac{\\pi}{16}-\\frac{1}{\\tan\\frac{\\pi}{16}}=-2-2\\sqrt2\\ \\Rightarrow\\ \\tan\\frac{\\pi}{16}-\\cot\\frac{\\pi}{16}=-2-2\\sqrt2\\)"
+                },
+                {
+                  "explain": "Numerical check: \\(\\tan\\frac\\pi{16}\\approx0.1989\\) and \\(\\cot\\frac\\pi{16}\\approx5.0273\\); the difference is \\(\\approx-4.828=-2-2\\sqrt2\\) ✓."
                 }
               ],
               "xp": 1,
               "meta": {
                 "source": "Abbotsleigh 2021 4U Trials & Solutions",
                 "school": "Abbotsleigh",
-                "year": 2021
+                "year": 2021,
+                "number": "16(b)(vi)"
               },
-              "options": [
-                "\\(-2+2\\sqrt2\\)",
-                "\\(2-2\\sqrt2\\)",
-                "\\(2+2\\sqrt2\\)",
-                "\\(-2-2\\sqrt2\\)"
-              ],
-              "answer": 3,
-              "solution": "\\(-2-2\\sqrt2\\)",
+              "answer": "Divide the quartic by \\(x^2\\ (\\neq0)\\): \\(x^2+\\frac1{x^2}+4\\left(x-\\frac1x\\right)-6=0\\). Since \\(x^2+\\frac1{x^2}=u^2+2\\), this is \\(u^2+4u-4=0\\), so \\(u=-2\\pm2\\sqrt2\\). For \\(x=\\tan\\frac\\pi{16}\\), \\(0<x<1\\) so \\(u=x-\\frac1x<0\\); the only negative root is \\(-2-2\\sqrt2\\). Hence \\(\\tan\\frac\\pi{16}-\\cot\\frac\\pi{16}=-2-2\\sqrt2\\).",
+              "manual": true,
               "keyPoints": [
                 {
-                  "text": "evaluate \\(\\tan\\frac{\\pi}{16}-\\cot\\frac{\\pi}{16}\\)",
-                  "note": "The substitution u=x−1/x turns the reciprocal quartic into a quadratic; choose the negative root because tan(π/16)<1."
+                  "text": "Reduce the quartic equation",
+                  "note": "Divide by x² and use x² + 1/x² = (x − 1/x)² + 2 to get u² + 4u − 4 = 0."
                 }
               ]
             }
-          ],
-          "xp": 1,
-          "meta": {
-            "source": "Abbotsleigh 2021 4U Trials & Solutions",
-            "school": "Abbotsleigh",
-            "year": 2021,
-            "number": "16(b)"
-          }
+          ]
         }
       ]
     },
@@ -846,40 +830,42 @@
           "type": "mc",
           "difficulty": "hard",
           "timeLimit": 60,
-          "stem": "What is the principal value of \\(e^{i\\frac{\\pi}{8}}\\) in radical notation?",
-          "hint": "Raise each candidate fourth root to the fourth power, or write \\(i=e^{i\\frac{\\pi}{2}}\\) and divide its argument by \\(4\\).",
+          "stem": "The exact value of \\(e^{\\left(\\frac{i\\pi}{8}\\right)}\\) is:",
+          "hint": "Raise e^(iπ/8) to the 4th power and see which number you get.",
           "steps": [
             {
-              "explain": "Write \\(i\\) in exponential form using its principal argument \\(\\frac{\\pi}{2}\\).",
-              "work": "\\[i = e^{i\\frac{\\pi}{2}}\\]"
+              "explain": "Raise \\(e^{i\\pi/8}\\) to the fourth power using index laws.",
+              "work": "\\(\\left(e^{\\frac{i\\pi}{8}}\\right)^4=e^{\\frac{i\\pi}{2}}=\\cos\\frac{\\pi}{2}+i\\sin\\frac{\\pi}{2}=i\\)"
             },
             {
-              "explain": "A fourth root has one quarter of the argument; the principal root uses the principal angle \\(\\frac{\\pi}{8}\\).",
-              "work": "\\[\\sqrt[4]{i} = \\left(e^{i\\frac{\\pi}{2}}\\right)^{\\frac{1}{4}} = e^{i\\frac{\\pi}{8}}\\]"
+              "explain": "So \\(e^{i\\pi/8}\\) is a fourth root of \\(i\\). It is the principal fourth root, because its argument \\(\\frac\\pi8\\) is the argument of \\(i\\) divided by 4.",
+              "work": "\\(e^{\\frac{i\\pi}{8}}=\\sqrt[4]{i}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 230\" width=\"260\" height=\"230\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"260\" height=\"230\" rx=\"8\" fill=\"white\"/><line x1=\"18.0\" y1=\"125.0\" x2=\"245.0\" y2=\"125.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"120.0\" y1=\"220.0\" x2=\"120.0\" y2=\"14.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"243.0\" y=\"117.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\" font-style=\"italic\">Re</text><text x=\"126.0\" y=\"24.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\" font-style=\"italic\">Im</text><circle cx=\"120.0\" cy=\"125.0\" r=\"85.0\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.3\" stroke-dasharray=\"4 3\"/><line x1=\"120.0\" y1=\"125.0\" x2=\"198.5\" y2=\"92.5\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"198.5\" cy=\"92.5\" r=\"4\" fill=\"#2563eb\"/><circle cx=\"120.0\" cy=\"40.0\" r=\"4\" fill=\"#dc2626\"/><text x=\"196.5\" y=\"80.5\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\" text-anchor=\"middle\">e^(iπ/8)</text><text x=\"111.0\" y=\"34.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"end\" font-style=\"italic\">i</text><text x=\"172.7\" y=\"119.9\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#2563eb\" text-anchor=\"start\">π/8</text><text x=\"112.0\" y=\"141.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">O</text></svg>"
+              }
             },
             {
-              "explain": "Convert the exponential to trigonometric form, then apply the exact half-angle values.",
-              "work": "\\[e^{i\\frac{\\pi}{8}} = \\cos\\left(\\frac{\\pi}{8}\\right) + i\\sin\\left(\\frac{\\pi}{8}\\right) = \\frac{\\sqrt{2+\\sqrt{2}}}{2} + i\\frac{\\sqrt{2-\\sqrt{2}}}{2}\\]<p>This is the principal fourth root \\(\\mathbf{\\sqrt[4]{i}}\\).</p>"
+              "explain": "Check the others: \\((e^{i\\pi/8})^8=e^{i\\pi}=-1\\), so it is an eighth root of \\(-1\\), not of \\(i\\) or \\(-i\\); and \\(\\sqrt[4]{-i}\\) has argument \\(-\\frac\\pi8\\). The answer is D."
             }
           ],
           "xp": 1,
           "meta": {
             "source": "Abbotsleigh 2021 4U Trials & Solutions",
             "school": "Abbotsleigh",
-            "year": 2021
+            "year": 2021,
+            "number": "10"
           },
           "options": [
             "\\(\\sqrt[8]{i}\\)",
-            "\\(\\sqrt[4]{i}\\)",
             "\\(\\sqrt[8]{-i}\\)",
-            "\\(\\sqrt[4]{-i}\\)"
+            "\\(\\sqrt[4]{-i}\\)",
+            "\\(\\sqrt[4]{i}\\)"
           ],
-          "answer": 1,
-          "solution": "\\(\\sqrt[4]{i}\\)",
+          "answer": 3,
           "keyPoints": [
             {
-              "text": "principal value",
-              "note": "Use the principal argument of \\(i\\), which is \\(\\frac{\\pi}{2}\\), then divide by \\(4\\)."
+              "text": "The exact value of",
+              "note": "Compute (e^(iπ/8))⁴ = e^(iπ/2) = i, so e^(iπ/8) is the principal 4th root of i."
             }
           ]
         }

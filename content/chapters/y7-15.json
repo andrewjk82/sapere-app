@@ -3047,7 +3047,7 @@
           "id": "sgi-y7-2013-t3-alg-q10",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "A number is divided by 5 and then 3 is added to the result to give 7. (a) Write an equation using x for the number. (b) Solve the equation.",
+          "stem": "A number is divided by 5 and then 3 is added to the result to give 7.",
           "hint": "Write the operations in the order described, then undo them in reverse order.",
           "keyPoints": [
             {
@@ -3064,12 +3064,12 @@
               "id": "sgi-y7-2013-t3-alg-q10-a",
               "type": "mc",
               "difficulty": "easy",
-              "stem": "Let x be the number. Which equation represents “a number is divided by 5 and then 3 is added to give 7”?",
+              "stem": "Write this problem as an equation using \\(x\\) for the number.",
               "options": [
-                "(x+3)/5=7",
-                "x/5+3=7",
-                "5x+3=7",
-                "x/5−3=7"
+                "\\(\\dfrac{x+3}{5}=7\\)",
+                "\\(\\dfrac{x}{5}+3=7\\)",
+                "\\(5x+3=7\\)",
+                "\\(\\dfrac{x}{5}-3=7\\)"
               ],
               "answer": 1,
               "hint": "Translate the steps in order: divide the number by 5, then add 3.",
@@ -3081,19 +3081,19 @@
               ],
               "steps": [
                 {
-                  "explain": "Represent the unknown number by x.",
+                  "explain": "Represent the unknown number by \\(x\\).",
                   "work": "\\(x\\)"
                 },
                 {
-                  "explain": "Divide by 5.",
-                  "work": "\\(\\frac{x}{5}\\)"
+                  "explain": "The number is divided by 5.",
+                  "work": "\\(\\dfrac{x}{5}\\)"
                 },
                 {
-                  "explain": "Add 3 and set the result equal to 7.",
-                  "work": "\\(\\frac{x}{5}+3=7\\)"
+                  "explain": "Add 3 to the result and set equal to 7.",
+                  "work": "\\(\\dfrac{x}{5}+3=7\\)"
                 }
               ],
-              "solution": "x/5+3=7",
+              "solution": "\\(\\dfrac{x}{5}+3=7\\)",
               "timeLimit": 60,
               "xp": 1,
               "meta": {
@@ -3105,7 +3105,7 @@
               "id": "sgi-y7-2013-t3-alg-q10-b",
               "type": "mc",
               "difficulty": "easy",
-              "stem": "Solve the equation \\(\\frac{x}{5}+3=7\\).",
+              "stem": "Solve this equation to find the number.",
               "options": [
                 "2",
                 "5",
@@ -3122,8 +3122,12 @@
               ],
               "steps": [
                 {
+                  "explain": "Start with the equation from part (a).",
+                  "work": "\\(\\dfrac{x}{5}+3=7\\)"
+                },
+                {
                   "explain": "Subtract 3 from both sides.",
-                  "work": "\\(\\frac{x}{5}=7-3=4\\)"
+                  "work": "\\(\\dfrac{x}{5}=7-3=4\\)"
                 },
                 {
                   "explain": "Multiply both sides by 5.",
@@ -3131,7 +3135,7 @@
                 },
                 {
                   "explain": "Check: divide 20 by 5, then add 3.",
-                  "work": "\\(20\\div5+3=4+3=7\\)"
+                  "work": "\\(20\\div5+3=4+3=7\\quad\\checkmark\\)"
                 }
               ],
               "solution": "20",
