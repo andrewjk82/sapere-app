@@ -4339,8 +4339,19 @@
           "answer": 2,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>From 4am to 1pm, there is 9 hours. \\(9/3 \\times 1\\text{min } 20\\text{ sec} = 3 \\times 1\\text{ min } 20\\text{ sec} = 4\\text{ min}\\). Therefore the grandfather clock will show 1:04pm.</p></div>"
+              "explain": "Calculate the total time elapsed between 4:00am and 1:00pm",
+              "work": "<p>From 4:00am to 1:00pm:</p><p>\\[\\text{Elapsed Time} = 12:00 - 4:00 + 1:00 = 8 + 1 = 9\\text{ hours}\\]</p>"
+            },
+            {
+              "explain": "Determine the number of 3-hour intervals and total time gained",
+              "work": "<p>The clock gains 1 minute and 20 seconds every 3 hours. Divide 9 hours by 3 hours:</p><p>\\[\\text{Number of intervals} = \\frac{9\\text{ hours}}{3\\text{ hours}} = 3\\text{ intervals}\\]</p><p>Multiply the gain per interval by 3:</p><p>\\[\\text{Total gain} = 3 \\times (1\\text{ min } 20\\text{ s}) = 3\\text{ min } + 60\\text{ s} = 4\\text{ minutes}\\]</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 145\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"125\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\"><text x=\"25\" y=\"32\" font-weight=\"700\" fill=\"#0f172a\">Time Elapsed: 4:00am to 1:00pm = 9 hours</text><g transform=\"translate(25, 45)\"><rect x=\"0\" y=\"0\" width=\"95\" height=\"36\" rx=\"5\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1\"/><text x=\"47\" y=\"18\" text-anchor=\"middle\" font-weight=\"600\" fill=\"#1e40af\">4am → 7am</text><text x=\"47\" y=\"30\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#2563eb\">+1 min 20 s</text><rect x=\"110\" y=\"0\" width=\"95\" height=\"36\" rx=\"5\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1\"/><text x=\"157\" y=\"18\" text-anchor=\"middle\" font-weight=\"600\" fill=\"#1e40af\">7am → 10am</text><text x=\"157\" y=\"30\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#2563eb\">+1 min 20 s</text><rect x=\"220\" y=\"0\" width=\"95\" height=\"36\" rx=\"5\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1\"/><text x=\"267\" y=\"18\" text-anchor=\"middle\" font-weight=\"600\" fill=\"#1e40af\">10am → 1pm</text><text x=\"267\" y=\"30\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#2563eb\">+1 min 20 s</text></g><rect x=\"25\" y=\"92\" width=\"330\" height=\"30\" rx=\"5\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1.2\"/><text x=\"190\" y=\"112\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#065f46\">Total Gain = 3 × 1m 20s = 4 min  →  Shows 1:04pm</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Add the gained time to the actual time",
+              "work": "<p>Add 4 minutes to 1:00pm:</p><p>\\[1:00\\text{pm} + 4\\text{ minutes} = \\mathbf{1:04\\text{pm}}\\]</p>"
             }
           ],
           "meta": {
@@ -4559,7 +4570,7 @@
         {
           "id": "sch-sel-m5-q11",
           "type": "mc",
-          "stem": "The interest on my saving was 4% p.a. when I first made the account. It then fell back to normal rates of 2.5%.\nWhat would the difference in a year's worth of interest be if my savings was originally at \\(\\$6000\\)?",
+          "stem": "The interest on my savings was 4% p.a. when I first made the account. It then fell back to normal rates of 2.5%.\\nWhat would the difference in a year\\'s worth of interest be if my savings was originally at \\(\\$6000\\)?",
           "options": [
             "\\(\\$210\\)",
             "\\(\\$180\\)",
@@ -4570,8 +4581,19 @@
           "answer": 4,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>\\(4\\%-2.5\\% = 1.5\\% \\Rightarrow 1.5\\%\\) difference in interest</p><p>\\(6000 \\times 1.5/100 = 90\\)</p></div>"
+              "explain": "Calculate the difference in interest rate",
+              "work": "<p>Subtract the new interest rate from the original rate:</p><p>\\[\\text{Rate difference} = 4\\% - 2.5\\% = 1.5\\%\\]</p>"
+            },
+            {
+              "explain": "Calculate 1.5% of the $6000 principal",
+              "work": "<p>Multiply the principal by \\(1.5\\%\\):</p><p>\\[\\text{Difference} = \\$6000 \\times \\frac{1.5}{100} = \\$60 \\times 1.5 = \\mathbf{\\$90}\\]</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 135\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"115\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\"><rect x=\"25\" y=\"24\" width=\"155\" height=\"44\" rx=\"6\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1\"/><text x=\"102\" y=\"42\" text-anchor=\"middle\" fill=\"#1e40af\">Rate at 4% p.a.</text><text x=\"102\" y=\"58\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#1d4ed8\">$6000 × 4% = $240</text><rect x=\"200\" y=\"24\" width=\"155\" height=\"44\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"277\" y=\"42\" text-anchor=\"middle\" fill=\"#475569\">Rate at 2.5% p.a.</text><text x=\"277\" y=\"58\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#334155\">$6000 × 2.5% = $150</text><rect x=\"25\" y=\"78\" width=\"330\" height=\"34\" rx=\"6\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1.2\"/><text x=\"190\" y=\"100\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#065f46\">Difference = $240 − $150 = $90 (or $6000 × 1.5% = $90)</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Verify by comparing individual annual interest earnings",
+              "work": "<p><strong>Original earnings (at 4%):</strong> \\(\\$6000 \\times 0.04 = \\$240\\)</p><p><strong>New earnings (at 2.5%):</strong> \\(\\$6000 \\times 0.025 = \\$150\\)</p><p>\\[\\text{Difference} = \\$240 - \\$150 = \\mathbf{\\$90}\\]</p>"
             }
           ],
           "meta": {
@@ -4585,17 +4607,28 @@
           "type": "mc",
           "stem": "Samantha is ten years younger than her brother Michael. 40 times Samantha's age plus 20 times Michael's age is equal to 680. How old is Michael?",
           "options": [
-            "13",
-            "9",
-            "18",
-            "16",
-            "14"
+            "\\(13\\)",
+            "\\(9\\)",
+            "\\(18\\)",
+            "\\(16\\)",
+            "\\(14\\)"
           ],
           "answer": 2,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>\\(M = S + 10\\)</p><p>\\(40S + 20(S+10) = 680\\)</p><p>\\(40S + 20S + 200 = 680\\)</p><p>\\(60S = 480\\)</p><p>\\(S = 8\\)</p><p>\\(M = 18\\)</p></div>"
+              "explain": "Express Michael and Samantha's ages algebraically",
+              "work": "<p>Let \\(S\\) be Samantha\\'s age and \\(M\\) be Michael\\'s age. Since Samantha is \\(10\\) years younger than Michael:</p><p>\\[M = S + 10\\]</p>"
+            },
+            {
+              "explain": "Set up and solve the linear equation for Samantha's age",
+              "work": "<p>The problem states that \\(40S + 20M = 680\\). Substitute \\(M = S + 10\\):</p><p>\\[40S + 20(S + 10) = 680\\]</p><p>\\[40S + 20S + 200 = 680\\]</p><p>\\[60S = 680 - 200 = 480\\]</p><p>\\[S = \\frac{480}{60} = 8\\text{ years}\\]</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 145\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"125\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\"><rect x=\"25\" y=\"22\" width=\"330\" height=\"30\" rx=\"5\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1\"/><text x=\"190\" y=\"42\" text-anchor=\"middle\" font-weight=\"600\" fill=\"#1e40af\">Michael is 10 years older: M = S + 10</text><text x=\"25\" y=\"72\" font-weight=\"600\" fill=\"#334155\">40S + 20(S + 10) = 680</text><text x=\"25\" y=\"90\" font-weight=\"600\" fill=\"#334155\">60S + 200 = 680  →  60S = 480  →  S = 8</text><rect x=\"25\" y=\"102\" width=\"330\" height=\"24\" rx=\"4\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1\"/><text x=\"190\" y=\"119\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#065f46\">Michael's Age = S + 10 = 8 + 10 = 18</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Find Michael's age and verify",
+              "work": "<p>Substitute \\(S = 8\\) to find Michael\\'s age:</p><p>\\[M = 8 + 10 = \\mathbf{18\\text{ years old}}\\]</p><p><strong>Check:</strong> \\(40(8) + 20(18) = 320 + 360 = 680\\) \\(\\checkmark\\)</p>"
             }
           ],
           "meta": {
@@ -4618,8 +4651,19 @@
           "answer": 0,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>Land: \\(8.64 \\times \\frac{3}{4} = 6.48\\) °C</p><p>Water: \\(2.87+3.35 = 6.22\\)°C</p><p>Diff = \\(6.48°C - 6.22°C=0.26°C\\)</p></div>"
+              "explain": "Calculate the afternoon sand temperature",
+              "work": "<p>The morning sand temperature was \\(8.64^\\circ\\text{C}\\). Falling by a quarter (\\(\\frac{1}{4}\\)) means \\(\\frac{3}{4}\\) remains:</p><p>\\[\\text{Afternoon Sand} = 8.64 \\times \\left(1 - \\frac{1}{4}\\right) = 8.64 \\times \\frac{3}{4} = 6.48^\\circ\\text{C}\\]</p>"
+            },
+            {
+              "explain": "Calculate the afternoon water temperature",
+              "work": "<p>The morning water temperature was \\(2.87^\\circ\\text{C}\\). Add the \\(3.35^\\circ\\text{C}\\) rise:</p><p>\\[\\text{Afternoon Water} = 2.87 + 3.35 = 6.22^\\circ\\text{C}\\]</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 145\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"125\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\"><rect x=\"25\" y=\"22\" width=\"155\" height=\"52\" rx=\"6\" fill=\"#fef3c7\" stroke=\"#fcd34d\" stroke-width=\"1\"/><text x=\"102\" y=\"40\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#92400e\">Sand (Afternoon)</text><text x=\"102\" y=\"55\" text-anchor=\"middle\" font-size=\"11\" fill=\"#78350f\">Fell by 1/4: 8.64 × 3/4</text><text x=\"102\" y=\"69\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#b45309\">= 6.48°C</text><rect x=\"200\" y=\"22\" width=\"155\" height=\"52\" rx=\"6\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1\"/><text x=\"277\" y=\"40\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#1e40af\">Water (Afternoon)</text><text x=\"277\" y=\"55\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1d4ed8\">Rose by 3.35: 2.87 + 3.35</text><text x=\"277\" y=\"69\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#1e40af\">= 6.22°C</text><rect x=\"25\" y=\"84\" width=\"330\" height=\"34\" rx=\"6\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1.2\"/><text x=\"190\" y=\"106\" text-anchor=\"middle\" font-weight=\"800\" font-size=\"13\" fill=\"#065f46\">Difference = 6.48°C − 6.22°C = 0.26°C</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Find the temperature difference",
+              "work": "<p>Subtract the water temperature from the sand temperature:</p><p>\\[\\text{Difference} = 6.48^\\circ\\text{C} - 6.22^\\circ\\text{C} = \\mathbf{0.26^\\circ\\text{C}}\\]</p>"
             }
           ],
           "meta": {
@@ -4642,8 +4686,19 @@
           "answer": 4,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>Total rainfall = \\(115 + 121 + 340 = 576\\)</p><p>Total days = \\(31 + 31 +30 = 92\\)</p><p>Average rainfall per day = \\(6.26\\ldots.. = 6.3\\) approx</p></div>"
+              "explain": "Calculate the total rainfall across the three months",
+              "work": "<p>Sum the rainfall amounts for October, November, and December:</p><p>\\[\\text{Total Rainfall} = 115 + 121 + 340 = 576\\text{ ml}\\]</p>"
+            },
+            {
+              "explain": "Calculate the total number of days in the 3-month period",
+              "work": "<p>Count the days in each month:</p><ul><li>October: \\(31\\text{ days}\\)</li><li>November: \\(30\\text{ days}\\)</li><li>December: \\(31\\text{ days}\\)</li></ul><p>\\[\\text{Total Days} = 31 + 30 + 31 = 92\\text{ days}\\]</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 145\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"125\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\"><rect x=\"25\" y=\"22\" width=\"100\" height=\"44\" rx=\"5\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"75\" y=\"40\" text-anchor=\"middle\" fill=\"#64748b\">October</text><text x=\"75\" y=\"56\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#0f172a\">115 ml (31 d)</text><rect x=\"140\" y=\"22\" width=\"100\" height=\"44\" rx=\"5\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"190\" y=\"40\" text-anchor=\"middle\" fill=\"#64748b\">November</text><text x=\"190\" y=\"56\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#0f172a\">121 ml (30 d)</text><rect x=\"255\" y=\"22\" width=\"100\" height=\"44\" rx=\"5\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"305\" y=\"40\" text-anchor=\"middle\" fill=\"#64748b\">December</text><text x=\"305\" y=\"56\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#0f172a\">340 ml (31 d)</text><rect x=\"25\" y=\"78\" width=\"330\" height=\"40\" rx=\"6\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1.2\"/><text x=\"190\" y=\"96\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#065f46\">Total Rainfall = 576 ml  |  Total Days = 92 days</text><text x=\"190\" y=\"111\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#047857\">Average = 576 ÷ 92 ≈ 6.26... ≈ 6.3 ml/day</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Calculate the average daily rainfall",
+              "work": "<p>Divide total rainfall by total days:</p><p>\\[\\text{Average Daily Rainfall} = \\frac{576\\text{ ml}}{92\\text{ days}} = 6.2608...\\text{ ml/day} \\approx \\mathbf{6.3\\text{ ml}}\\]</p>"
             }
           ],
           "meta": {
@@ -4657,17 +4712,28 @@
           "type": "mc",
           "stem": "In Dennis' room, there are 144 dolls and 60 doll houses.\nWhat number should you divide each number by to find the ratio of dolls to doll houses most quickly?",
           "options": [
-            "8",
-            "24",
-            "6",
-            "12",
-            "7"
+            "\\(8\\)",
+            "\\(24\\)",
+            "\\(6\\)",
+            "\\(12\\)",
+            "\\(7\\)"
           ],
           "answer": 3,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>\\(\\mathbf{12}\\) is the highest common factor between 144 and 60</p></div>"
+              "explain": "Identify the mathematical property needed to simplify a ratio in one step",
+              "work": "<p>To simplify a ratio to its lowest integer terms most quickly (in a single division step), both quantities must be divided by their <strong>Highest Common Factor (HCF / GCD)</strong>.</p>"
+            },
+            {
+              "explain": "Find the prime factorisation of 144 and 60",
+              "work": "<p>Break both numbers into prime factors:</p><p>\\[144 = 2^4 \\times 3^2\\]</p><p>\\[60 = 2^2 \\times 3^1 \\times 5\\]</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 145\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"125\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\"><rect x=\"25\" y=\"22\" width=\"155\" height=\"44\" rx=\"6\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"102\" y=\"40\" text-anchor=\"middle\" fill=\"#64748b\">Prime Factors of 144</text><text x=\"102\" y=\"56\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#0f172a\">2⁴ × 3² = 12 × 12</text><rect x=\"200\" y=\"22\" width=\"155\" height=\"44\" rx=\"6\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"277\" y=\"40\" text-anchor=\"middle\" fill=\"#64748b\">Prime Factors of 60</text><text x=\"277\" y=\"56\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#0f172a\">2² × 3 × 5 = 12 × 5</text><rect x=\"25\" y=\"78\" width=\"330\" height=\"40\" rx=\"6\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1.2\"/><text x=\"190\" y=\"96\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#065f46\">Highest Common Factor (HCF) = 12</text><text x=\"190\" y=\"111\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#047857\">144 ÷ 12 : 60 ÷ 12 = 12 : 5</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Compute the HCF and verify the simplified ratio",
+              "work": "<p>Take the lowest power of all common prime factors:</p><p>\\[\\text{HCF}(144, 60) = 2^2 \\times 3^1 = 4 \\times 3 = \\mathbf{12}\\]</p><p>Dividing both by 12 yields the ratio in simplest form:</p><p>\\[\\frac{144}{12} : \\frac{60}{12} = 12 : 5\\]</p>"
             }
           ],
           "meta": {
@@ -4681,7 +4747,7 @@
           "type": "multipart",
           "stem": "Questions 16 – 18 use the following information.\n\nThe graph shows the comparison in average monthly rainfall between Perth and Adelaide.",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1119 516\" width=\"100%\" height=\"auto\"><image href=\"/selective/t5-q16-18.jpg\" x=\"0\" y=\"0\" width=\"1119\" height=\"516\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 280\" style=\"max-width: 580px; width: 100%; height: auto; display: block; margin: 0 auto;\"><text x=\"300\" y=\"24\" font-family=\"system-ui, sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"middle\">Perth vs Adelaide - Average Monthly Rainfall</text><text x=\"18\" y=\"130\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#475569\" transform=\"rotate(-90 18 130)\" text-anchor=\"middle\">Rainfall (mm)</text><line x1=\"42\" y1=\"220.0\" x2=\"585\" y2=\"220.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"36\" y=\"224.0\" font-family=\"system-ui, sans-serif\" font-size=\"10.5\" fill=\"#64748b\" text-anchor=\"end\">0</text><line x1=\"42\" y1=\"190.0\" x2=\"585\" y2=\"190.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"36\" y=\"194.0\" font-family=\"system-ui, sans-serif\" font-size=\"10.5\" fill=\"#64748b\" text-anchor=\"end\">20</text><line x1=\"42\" y1=\"160.0\" x2=\"585\" y2=\"160.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"36\" y=\"164.0\" font-family=\"system-ui, sans-serif\" font-size=\"10.5\" fill=\"#64748b\" text-anchor=\"end\">40</text><line x1=\"42\" y1=\"130.0\" x2=\"585\" y2=\"130.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"36\" y=\"134.0\" font-family=\"system-ui, sans-serif\" font-size=\"10.5\" fill=\"#64748b\" text-anchor=\"end\">60</text><line x1=\"42\" y1=\"100.0\" x2=\"585\" y2=\"100.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"36\" y=\"104.0\" font-family=\"system-ui, sans-serif\" font-size=\"10.5\" fill=\"#64748b\" text-anchor=\"end\">80</text><line x1=\"42\" y1=\"70.0\" x2=\"585\" y2=\"70.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"36\" y=\"74.0\" font-family=\"system-ui, sans-serif\" font-size=\"10.5\" fill=\"#64748b\" text-anchor=\"end\">100</text><line x1=\"42\" y1=\"40.0\" x2=\"585\" y2=\"40.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"36\" y=\"44.0\" font-family=\"system-ui, sans-serif\" font-size=\"10.5\" fill=\"#64748b\" text-anchor=\"end\">120</text><line x1=\"42\" y1=\"10.0\" x2=\"585\" y2=\"10.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"36\" y=\"14.0\" font-family=\"system-ui, sans-serif\" font-size=\"10.5\" fill=\"#64748b\" text-anchor=\"end\">140</text><rect x=\"50\" y=\"160.0\" width=\"16\" height=\"60.0\" fill=\"#1e293b\"/><rect x=\"68\" y=\"130.0\" width=\"16\" height=\"90.0\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><text x=\"67\" y=\"238\" font-family=\"system-ui, sans-serif\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">Jan</text><rect x=\"94\" y=\"145.0\" width=\"16\" height=\"75.0\" fill=\"#1e293b\"/><rect x=\"112\" y=\"130.0\" width=\"16\" height=\"90.0\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><text x=\"111\" y=\"238\" font-family=\"system-ui, sans-serif\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">Feb</text><rect x=\"138\" y=\"145.0\" width=\"16\" height=\"75.0\" fill=\"#1e293b\"/><rect x=\"156\" y=\"100.0\" width=\"16\" height=\"120.0\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><text x=\"155\" y=\"238\" font-family=\"system-ui, sans-serif\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">Mar</text><rect x=\"182\" y=\"130.0\" width=\"16\" height=\"90.0\" fill=\"#1e293b\"/><rect x=\"200\" y=\"70.0\" width=\"16\" height=\"150.0\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><text x=\"199\" y=\"238\" font-family=\"system-ui, sans-serif\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">Apr</text><rect x=\"226\" y=\"115.0\" width=\"16\" height=\"105.0\" fill=\"#1e293b\"/><rect x=\"244\" y=\"40.0\" width=\"16\" height=\"180.0\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><text x=\"243\" y=\"238\" font-family=\"system-ui, sans-serif\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">May</text><rect x=\"270\" y=\"145.0\" width=\"16\" height=\"75.0\" fill=\"#1e293b\"/><rect x=\"288\" y=\"70.0\" width=\"16\" height=\"150.0\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><text x=\"287\" y=\"238\" font-family=\"system-ui, sans-serif\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">Jun</text><rect x=\"314\" y=\"145.0\" width=\"16\" height=\"75.0\" fill=\"#1e293b\"/><rect x=\"332\" y=\"115.0\" width=\"16\" height=\"105.0\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><text x=\"331\" y=\"238\" font-family=\"system-ui, sans-serif\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">Jul</text><rect x=\"358\" y=\"160.0\" width=\"16\" height=\"60.0\" fill=\"#1e293b\"/><rect x=\"376\" y=\"130.0\" width=\"16\" height=\"90.0\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><text x=\"375\" y=\"238\" font-family=\"system-ui, sans-serif\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">Aug</text><rect x=\"402\" y=\"175.0\" width=\"16\" height=\"45.0\" fill=\"#1e293b\"/><rect x=\"420\" y=\"145.0\" width=\"16\" height=\"75.0\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><text x=\"419\" y=\"238\" font-family=\"system-ui, sans-serif\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">Sep</text><rect x=\"446\" y=\"190.0\" width=\"16\" height=\"30.0\" fill=\"#1e293b\"/><rect x=\"464\" y=\"145.0\" width=\"16\" height=\"75.0\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><text x=\"463\" y=\"238\" font-family=\"system-ui, sans-serif\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">Oct</text><rect x=\"490\" y=\"190.0\" width=\"16\" height=\"30.0\" fill=\"#1e293b\"/><rect x=\"508\" y=\"160.0\" width=\"16\" height=\"60.0\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><text x=\"507\" y=\"238\" font-family=\"system-ui, sans-serif\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">Nov</text><rect x=\"534\" y=\"175.0\" width=\"16\" height=\"45.0\" fill=\"#1e293b\"/><rect x=\"552\" y=\"160.0\" width=\"16\" height=\"60.0\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><text x=\"551\" y=\"238\" font-family=\"system-ui, sans-serif\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">Dec</text><g transform=\"translate(230, 260)\"><rect x=\"0\" y=\"0\" width=\"14\" height=\"12\" fill=\"#1e293b\"/><text x=\"20\" y=\"10\" font-family=\"system-ui, sans-serif\" font-size=\"11\" fill=\"#0f172a\">Perth</text><rect x=\"75\" y=\"0\" width=\"14\" height=\"12\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><text x=\"95\" y=\"10\" font-family=\"system-ui, sans-serif\" font-size=\"11\" fill=\"#0f172a\">Adelaide</text></g></svg>"
           },
           "parts": [
             {
@@ -4689,17 +4755,24 @@
               "type": "mc",
               "stem": "By how much was the average rainfall higher in Adelaide compared to Perth in November?",
               "options": [
-                "2 m",
-                "0.2 m",
-                "2 cm",
-                "0.02 cm",
-                "20 cm"
+                "\\(2\\text{ m}\\)",
+                "\\(0.2\\text{ m}\\)",
+                "\\(2\\text{ cm}\\)",
+                "\\(0.02\\text{ cm}\\)",
+                "\\(20\\text{ cm}\\)"
               ],
               "answer": 2,
               "steps": [
                 {
-                  "explain": "Explanation",
-                  "work": "<div style=\"text-align: left;\"><p>\\(20\\ mm = 2cm\\)</p></div>"
+                  "explain": "Read the November rainfall values from the chart",
+                  "work": "<p>From the bar chart for <strong>November</strong>:</p><ul><li>Adelaide (white bar) = \\(40\\text{ mm}\\)</li><li>Perth (black bar) = \\(20\\text{ mm}\\)</li></ul>"
+                },
+                {
+                  "explain": "Calculate the difference in millimetres and convert to centimetres",
+                  "work": "<p>Subtract Perth\\'s rainfall from Adelaide\\'s rainfall:</p><p>\\[\\text{Difference} = 40\\text{ mm} - 20\\text{ mm} = 20\\text{ mm}\\]</p><p>Convert millimetres to centimetres (\\(1\\text{ cm} = 10\\text{ mm}\\)):</p><p>\\[20\\text{ mm} = \\frac{20}{10}\\text{ cm} = \\mathbf{2\\text{ cm}}\\]</p>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 130\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"110\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\"><text x=\"25\" y=\"32\" font-weight=\"700\" fill=\"#0f172a\">November Rainfall:</text><text x=\"25\" y=\"52\" fill=\"#334155\">Adelaide = 40 mm  |  Perth = 20 mm</text><text x=\"25\" y=\"70\" fill=\"#334155\">Difference = 40 mm − 20 mm = 20 mm</text><rect x=\"25\" y=\"80\" width=\"330\" height=\"28\" rx=\"5\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1.2\"/><text x=\"190\" y=\"99\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#065f46\">20 mm = 20 ÷ 10 cm = 2 cm</text></g></svg>"
+                  }
                 }
               ]
             },
@@ -4708,17 +4781,24 @@
               "type": "mc",
               "stem": "What was the range in the average monthly rainfall for Adelaide?",
               "options": [
-                "90 mm",
-                "0.8 m",
-                "0.9 m",
-                "8 cm",
-                "8 m"
+                "\\(90\\text{ mm}\\)",
+                "\\(0.8\\text{ m}\\)",
+                "\\(0.9\\text{ m}\\)",
+                "\\(8\\text{ cm}\\)",
+                "\\(8\\text{ m}\\)"
               ],
               "answer": 3,
               "steps": [
                 {
-                  "explain": "Explanation",
-                  "work": "<div style=\"text-align: left;\"><p>From May to December is \\(120mm - 40mm = 8cm\\)</p></div>"
+                  "explain": "Identify the maximum and minimum monthly rainfall for Adelaide",
+                  "work": "<p>Looking at the Adelaide (white) bars across all 12 months:</p><ul><li><strong>Maximum:</strong> May = \\(120\\text{ mm}\\)</li><li><strong>Minimum:</strong> November &amp; December = \\(40\\text{ mm}\\)</li></ul>"
+                },
+                {
+                  "explain": "Calculate the range and convert the unit",
+                  "work": "<p>The range is the difference between maximum and minimum:</p><p>\\[\\text{Range} = 120\\text{ mm} - 40\\text{ mm} = 80\\text{ mm}\\]</p><p>Convert to centimetres (\\(1\\text{ cm} = 10\\text{ mm}\\)):</p><p>\\[80\\text{ mm} = \\frac{80}{10}\\text{ cm} = \\mathbf{8\\text{ cm}}\\]</p>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 130\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"110\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\"><text x=\"25\" y=\"32\" font-weight=\"700\" fill=\"#0f172a\">Adelaide Rainfall Range:</text><text x=\"25\" y=\"52\" fill=\"#334155\">Maximum: May = 120 mm</text><text x=\"25\" y=\"70\" fill=\"#334155\">Minimum: November &amp; December = 40 mm</text><rect x=\"25\" y=\"80\" width=\"330\" height=\"28\" rx=\"5\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1.2\"/><text x=\"190\" y=\"99\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#065f46\">Range = 120 mm − 40 mm = 80 mm = 8 cm</text></g></svg>"
+                  }
                 }
               ]
             },
@@ -4727,17 +4807,24 @@
               "type": "mc",
               "stem": "What is the difference in the average monthly rainfall between Perth and Adelaide?\nGive your answer to the nearest whole number.",
               "options": [
-                "27 mm",
-                "29 mm",
-                "32 mm",
-                "34 mm",
-                "36 mm"
+                "\\(27\\text{ mm}\\)",
+                "\\(29\\text{ mm}\\)",
+                "\\(32\\text{ mm}\\)",
+                "\\(34\\text{ mm}\\)",
+                "\\(36\\text{ mm}\\)"
               ],
               "answer": 0,
               "steps": [
                 {
-                  "explain": "Explanation",
-                  "work": "<div style=\"text-align: left;\"><p>Average the total difference.</p><p>Total difference: \\(830 - 510 = 320mm\\)</p><p>Average: \\(320/12 = 26.7\\)</p></div>"
+                  "explain": "Calculate the annual total rainfall for Adelaide and Perth",
+                  "work": "<p>Sum the 12 months for each city:</p><p>\\[\\text{Adelaide} = 60+60+80+100+120+100+70+60+50+50+40+40 = 830\\text{ mm}\\]</p><p>\\[\\text{Perth} = 40+50+50+60+70+50+50+40+30+20+20+30 = 510\\text{ mm}\\]</p>"
+                },
+                {
+                  "explain": "Find the difference and calculate the monthly average",
+                  "work": "<p>Subtract the totals to find the annual difference:</p><p>\\[\\text{Annual Difference} = 830\\text{ mm} - 510\\text{ mm} = 320\\text{ mm}\\]</p><p>Divide by 12 months to get the average monthly difference:</p><p>\\[\\text{Average Monthly Difference} = \\frac{320\\text{ mm}}{12} \\approx 26.67\\text{ mm}\\]</p><p>Rounding to the nearest whole number gives <strong>27 mm</strong>.</p>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 135\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"115\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\"><text x=\"25\" y=\"32\" font-weight=\"700\" fill=\"#0f172a\">Annual Totals:</text><text x=\"25\" y=\"52\" fill=\"#334155\">Adelaide = 830 mm  |  Perth = 510 mm</text><text x=\"25\" y=\"70\" fill=\"#334155\">Total Difference = 830 − 510 = 320 mm</text><rect x=\"25\" y=\"82\" width=\"330\" height=\"30\" rx=\"5\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1.2\"/><text x=\"190\" y=\"102\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#065f46\">Monthly Difference = 320 ÷ 12 ≈ 26.7 mm ≈ 27 mm</text></g></svg>"
+                  }
                 }
               ]
             }
@@ -4825,17 +4912,28 @@
           "type": "mc",
           "stem": "Calculate the surface area of a cube with sides measuring 11 cm.",
           "options": [
-            "\\(822\\ cm^2\\)",
-            "\\(784\\ cm^2\\)",
-            "\\(1\\,331\\ cm^2\\)",
-            "\\(363\\ cm^3\\)",
-            "\\(726\\ cm^2\\)"
+            "\\(822\\text{ cm}^2\\)",
+            "\\(784\\text{ cm}^2\\)",
+            "\\(1\\,331\\text{ cm}^2\\)",
+            "\\(363\\text{ cm}^3\\)",
+            "\\(726\\text{ cm}^2\\)"
           ],
           "answer": 4,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>Surface area = \\(11 \\times 11\\) (area of one face) \\(\\times 6\\) (number of faces on a cube) = \\(726\\ cm^2\\)</p></div>"
+              "explain": "Recall the surface area formula for a cube",
+              "work": "<p>A cube consists of 6 identical square faces. For a side length \\(s = 11\\text{ cm}\\):</p><p>\\[\\text{Surface Area} = 6 \\times s^2\\]</p>"
+            },
+            {
+              "explain": "Calculate the area of one face",
+              "work": "<p>Multiply side length by side length:</p><p>\\[\\text{Area of 1 face} = 11\\text{ cm} \\times 11\\text{ cm} = 121\\text{ cm}^2\\]</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 150\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"130\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\"><text x=\"25\" y=\"32\" font-weight=\"700\" fill=\"#0f172a\">Cube Net (6 identical square faces, side = 11 cm):</text><g transform=\"translate(40, 45)\"><rect x=\"0\" y=\"24\" width=\"24\" height=\"24\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.2\"/><rect x=\"24\" y=\"0\" width=\"24\" height=\"24\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.2\"/><rect x=\"24\" y=\"24\" width=\"24\" height=\"24\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.2\"/><rect x=\"24\" y=\"48\" width=\"24\" height=\"24\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.2\"/><rect x=\"48\" y=\"24\" width=\"24\" height=\"24\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.2\"/><rect x=\"72\" y=\"24\" width=\"24\" height=\"24\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.2\"/></g><g transform=\"translate(160, 48)\"><text x=\"0\" y=\"16\" fill=\"#334155\">Area of 1 face = 11 × 11 = 121 cm²</text><text x=\"0\" y=\"34\" fill=\"#334155\">Total faces = 6</text><text x=\"0\" y=\"54\" font-weight=\"800\" font-size=\"13\" fill=\"#1d4ed8\">Surface Area = 6 × 121 = 726 cm²</text></g><rect x=\"25\" y=\"112\" width=\"330\" height=\"20\" rx=\"4\" fill=\"#fef2f2\" stroke=\"#fca5a5\" stroke-width=\"1\"/><text x=\"190\" y=\"127\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" fill=\"#b91c1c\">(Note: 11³ = 1331 cm³ is the volume, not surface area!)</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Multiply by 6 faces to find total surface area",
+              "work": "<p>Multiply the single face area by 6:</p><p>\\[\\text{Total Surface Area} = 6 \\times 121\\text{ cm}^2 = \\mathbf{726\\text{ cm}^2}\\]</p>"
             }
           ],
           "meta": {
@@ -4885,9 +4983,9 @@
         {
           "id": "sch-sel-m5-q23",
           "type": "mc",
-          "stem": "If ⬡ = 6, ⬠ = \\(\\frac{3}{4}\\), □ = \\(\\frac{1}{2}\\), △ = 2\n\nWhat does ⬡ ÷ △ − ⬠ + □ equal?",
+          "stem": "If ⬡ = 6, ⬠ = \\(\\frac{3}{4}\\), □ = \\(\\frac{1}{2}\\), △ = 2\n\nWhat does ⬡ ÷ △ − ⬠ + □ equal?",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 773 142\" width=\"100%\" height=\"auto\"><image href=\"/selective/t5-q23.jpg\" x=\"0\" y=\"0\" width=\"773\" height=\"142\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 90\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#0f172a\"><text x=\"15\" y=\"32\">If</text><polygon points=\"45,22 55,22 60,30 55,38 45,38 40,30\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"68\" y=\"32\">= 6,</text><polygon points=\"120,20 128,26 125,36 115,36 112,26\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"136\" y=\"32\">= 3/4,</text><rect x=\"195\" y=\"22\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"218\" y=\"32\">= 1/2,</text><polygon points=\"275,21 267,37 283,37\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"290\" y=\"32\">= 2</text><text x=\"15\" y=\"70\">What does</text><polygon points=\"100,60 110,60 115,68 110,76 100,76 95,68\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"122\" y=\"70\">÷</text><polygon points=\"144,59 136,75 152,75\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"158\" y=\"70\">−</text><polygon points=\"182,58 190,64 187,74 177,74 174,64\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"198\" y=\"70\">+</text><rect x=\"215\" y=\"60\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"238\" y=\"70\">equal?</text></g></svg>"
           },
           "options": [
             "\\(3\\frac{1}{4}\\)",
@@ -4899,8 +4997,19 @@
           "answer": 2,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>This is basic operations as long as you substitute the correct numbers into the correct shapes.</p></div>"
+              "explain": "Substitute the numerical values into the expression",
+              "work": "<p>Substitute the given value for each shape:</p><ul><li>Hexagon (⬡) = \\(6\\)</li><li>Triangle (△) = \\(2\\)</li><li>Pentagon (⬠) = \\(\\frac{3}{4}\\)</li><li>Square (□) = \\(\\frac{1}{2}\\)</li></ul><p>This gives the numerical expression:</p><p>\\[6 \\div 2 - \\frac{3}{4} + \\frac{1}{2}\\]</p>"
+            },
+            {
+              "explain": "Perform division first following the order of operations",
+              "work": "<p>Following BODMAS/PEMDAS, division has higher priority than addition and subtraction:</p><p>\\[6 \\div 2 = 3\\]</p><p>Now the expression is:</p><p>\\[3 - \\frac{3}{4} + \\frac{1}{2}\\]</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 125\" style=\"max-width: 420px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"400\" height=\"105\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\"><text x=\"25\" y=\"32\" font-weight=\"700\" fill=\"#0f172a\">Order of Operations (BODMAS / PEMDAS):</text><text x=\"25\" y=\"54\" fill=\"#334155\">1. Division first: 6 ÷ 2 = 3</text><text x=\"25\" y=\"74\" fill=\"#334155\">2. Substitute: 3 − 3/4 + 1/2</text><rect x=\"25\" y=\"82\" width=\"370\" height=\"25\" rx=\"4\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1\"/><text x=\"210\" y=\"99\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#065f46\">3 − 3/4 + 2/4 = 3 − 1/4 = 2 3/4</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Calculate the fraction operations using common denominators",
+              "work": "<p>Express all terms with a common denominator of 4:</p><p>\\[3 = \\frac{12}{4}, \\quad \\frac{1}{2} = \\frac{2}{4}\\]</p><p>\\[\\frac{12}{4} - \\frac{3}{4} + \\frac{2}{4} = \\frac{12 - 3 + 2}{4} = \\frac{11}{4} = \\mathbf{2\\frac{3}{4}}\\]</p>"
             }
           ],
           "meta": {
@@ -4914,17 +5023,28 @@
           "type": "mc",
           "stem": "In a certain country there are 3 different cultures: Ooga, Booga, Wooga. There are 2000 Oogas, 8000 Boogas and 4000 Woogas. Half of the Oogas are woogas and 1000 of the Boogas are Woogas. However none of the Boogas are Oogas. How many Woogas exist such that they are only Wooga and not Booga or Ooga?",
           "options": [
-            "1000",
-            "2000",
-            "3000",
-            "4000",
-            "5000"
+            "\\(1000\\)",
+            "\\(2000\\)",
+            "\\(3000\\)",
+            "\\(4000\\)",
+            "\\(5000\\)"
           ],
           "answer": 1,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>!000 woogas are oogas and 1000 woogas are boogas. Since boogas cant be oogas therefore there are 2000 woogas that are not booga or ooga</p></div>"
+              "explain": "Find the number of Woogas who are also Oogas",
+              "work": "<p>We are told that half of the 2000 Oogas are Woogas:</p><p>\\[\\text{Ooga-Woogas} = \\frac{1}{2} \\times 2000 = 1000\\]</p>"
+            },
+            {
+              "explain": "Find the number of Woogas who are also Boogas",
+              "work": "<p>We are told that \\(1000\\) Boogas are Woogas:</p><p>\\[\\text{Booga-Woogas} = 1000\\]</p>"
+            },
+            {
+              "explain": "Use the disjoint culture condition to calculate \"Only Wooga\"",
+              "work": "<p>Since <em>none of the Boogas are Oogas</em>, the overlap between Boogas and Oogas is \\(0\\). Therefore, no one can belong to all three cultures.</p><p>Subtract both overlapping groups from the total Wooga population (\\(4000\\)):</p><p>\\[\\text{Only Wooga} = 4000 - 1000 (\\text{Ooga}) - 1000 (\\text{Booga}) = \\mathbf{2000}\\]</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 180\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"160\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><ellipse cx=\"120\" cy=\"85\" rx=\"70\" ry=\"50\" fill=\"rgba(59, 130, 246, 0.12)\" stroke=\"#3b82f6\" stroke-width=\"1.6\"/><ellipse cx=\"260\" cy=\"85\" rx=\"70\" ry=\"50\" fill=\"rgba(245, 158, 11, 0.12)\" stroke=\"#f59e0b\" stroke-width=\"1.6\"/><ellipse cx=\"190\" cy=\"105\" rx=\"75\" ry=\"50\" fill=\"rgba(16, 185, 129, 0.15)\" stroke=\"#10b981\" stroke-width=\"1.8\"/><g font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\"><text x=\"85\" y=\"75\" fill=\"#1d4ed8\">Ooga (2000)</text><text x=\"135\" y=\"105\" fill=\"#1e40af\">1000</text><text x=\"295\" y=\"75\" fill=\"#b45309\">Booga (8000)</text><text x=\"245\" y=\"105\" fill=\"#b45309\">1000</text><text x=\"190\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#047857\">Wooga Total = 4000</text><text x=\"190\" y=\"112\" text-anchor=\"middle\" font-size=\"13\" fill=\"#065f46\">Only Wooga = 2000</text></g><rect x=\"25\" y=\"152\" width=\"330\" height=\"18\" rx=\"3\" fill=\"#f0fdf4\" stroke=\"#86efac\" stroke-width=\"1\"/><text x=\"190\" y=\"165\" font-family=\"system-ui, sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#15803d\" text-anchor=\"middle\">Only Wooga = 4000 − 1000 − 1000 = 2000</text></svg>"
+              }
             }
           ],
           "meta": {
@@ -5018,8 +5138,19 @@
           "answer": 0,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>\\(4x + 3y = 25.4\\)</p><p>\\(4y + 3x = 26.4\\)</p><p>\\(y-x = 1\\)</p></div>"
+              "explain": "Set up equations for Albert's and Dennis's purchases",
+              "work": "<p>Let \\(J\\) be the price of a juice box and \\(C\\) be the price of a packet of chips.</p><ul><li>Albert: \\(4J + 3C = \\$25.40\\) --- (1)</li><li>Dennis: \\(3J + 4C = \\$26.40\\) (\\(\\$1\\) more) --- (2)</li></ul>"
+            },
+            {
+              "explain": "Subtract Equation (1) from Equation (2)",
+              "work": "<p>Subtract Albert\\'s equation directly from Dennis\\'s equation:</p><p>\\[(3J + 4C) - (4J + 3C) = \\$26.40 - \\$25.40\\]</p><p>\\[(4C - 3C) + (3J - 4J) = \\$1.00\\]</p><p>\\[C - J = \\mathbf{\\$1.00}\\]</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 145\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"125\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\"><rect x=\"25\" y=\"22\" width=\"330\" height=\"30\" rx=\"5\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1\"/><text x=\"35\" y=\"42\" fill=\"#1e40af\" font-weight=\"600\">Dennis: 4 Chips + 3 Juices = $26.40</text><rect x=\"25\" y=\"58\" width=\"330\" height=\"30\" rx=\"5\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"35\" y=\"78\" fill=\"#334155\" font-weight=\"600\">Albert: 3 Chips + 4 Juices = $25.40</text><rect x=\"25\" y=\"96\" width=\"330\" height=\"30\" rx=\"5\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1.2\"/><text x=\"35\" y=\"116\" font-weight=\"800\" fill=\"#065f46\">Subtracting: 1 Chip − 1 Juice = $26.40 − $25.40 = $1.00</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Conclude the cost difference",
+              "work": "<p>The expression \\(C - J\\) directly represents the cost difference between a packet of chips and a juice box.</p><p>Therefore, the difference is <strong>\\(\\$1\\)</strong>.</p>"
             }
           ],
           "meta": {
@@ -5042,8 +5173,19 @@
           "answer": 2,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>The numbers are decreasing by 0.9 each time, so \\(6.8-0.9=5.9\\)</p></div>"
+              "explain": "Find the common difference between consecutive terms",
+              "work": "<p>Subtract consecutive numbers in the sequence:</p><p>\\[8.6 - 7.7 = 0.9\\]</p><p>\\[7.7 - 6.8 = 0.9\\]</p><p>Each term decreases by \\(0.9\\) (common difference \\(d = -0.9\\)).</p>"
+            },
+            {
+              "explain": "Calculate the missing fourth term",
+              "work": "<p>Subtract \\(0.9\\) from the third term (\\(6.8\\)):</p><p>\\[6.8 - 0.9 = \\mathbf{5.9}\\]</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 135\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"115\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\"><text x=\"25\" y=\"32\" font-weight=\"700\" fill=\"#0f172a\">Sequence Pattern: −0.9 each step</text><g transform=\"translate(25, 45)\"><rect x=\"0\" y=\"0\" width=\"55\" height=\"32\" rx=\"4\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"27\" y=\"20\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#0f172a\">8.6</text><text x=\"63\" y=\"14\" font-size=\"10.5\" fill=\"#ef4444\">−0.9</text><rect x=\"75\" y=\"0\" width=\"55\" height=\"32\" rx=\"4\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"102\" y=\"20\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#0f172a\">7.7</text><text x=\"138\" y=\"14\" font-size=\"10.5\" fill=\"#ef4444\">−0.9</text><rect x=\"150\" y=\"0\" width=\"55\" height=\"32\" rx=\"4\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"177\" y=\"20\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#0f172a\">6.8</text><text x=\"213\" y=\"14\" font-size=\"10.5\" fill=\"#ef4444\">−0.9</text><rect x=\"225\" y=\"0\" width=\"55\" height=\"32\" rx=\"4\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"252\" y=\"20\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#1d4ed8\">5.9</text><text x=\"288\" y=\"14\" font-size=\"10.5\" fill=\"#ef4444\">−0.9</text><rect x=\"300\" y=\"0\" width=\"50\" height=\"32\" rx=\"4\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"325\" y=\"20\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#0f172a\">5.0</text></g><rect x=\"25\" y=\"88\" width=\"330\" height=\"26\" rx=\"4\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1\"/><text x=\"190\" y=\"105\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#065f46\">Missing Number = 6.8 − 0.9 = 5.9</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Verify with the final term",
+              "work": "<p>Subtract \\(0.9\\) from \\(5.9\\):</p><p>\\[5.9 - 0.9 = 5.0\\quad \\checkmark\\]</p><p>The sequence is confirmed: \\(8.6, 7.7, 6.8, 5.9, 5.0\\).</p>"
             }
           ],
           "meta": {
