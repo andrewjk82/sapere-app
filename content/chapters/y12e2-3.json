@@ -469,7 +469,7 @@
                 },
                 {
                   "explain": "The basic angle is \\(\\frac\\pi4\\), and \\(\\tan\\) repeats every \\(\\pi\\).",
-                  "work": "\\(4\\theta=\\frac{\\pi}{4},\\ \\frac{5\\pi}{4},\\ \\frac{9\\pi}{4},\\ \\frac{13\\pi}{4}\\quad\\left(\\text{next is }\\tfrac{17\\pi}{4}>4\\pi\\right)\\)"
+                  "work": "\\(4\\theta=\\frac{\\pi}{4},\\ \\frac{5\\pi}{4},\\ \\frac{9\\pi}{4},\\ \\frac{13\\pi}{4}\\quad\\left(\\text{next is }\\tfrac{17\\pi}{4} \\gt 4\\pi\\right)\\)"
                 },
                 {
                   "explain": "Divide by 4.",
@@ -679,7 +679,7 @@
                   "work": "\\(u^2+2+4u-6=0\\ \\Rightarrow\\ u^2+4u-4=0\\ \\Rightarrow\\ u=\\frac{-4\\pm\\sqrt{16+16}}{2}=-2\\pm2\\sqrt2\\)"
                 },
                 {
-                  "explain": "Choose the right root for \\(x=\\tan\\frac\\pi{16}\\). Since \\(0<\\frac\\pi{16}<\\frac\\pi4\\), we have \\(0<x<1\\), so \\(\\frac1x>1>x\\) and \\(u=x-\\frac1x<0\\). Of the two roots, \\(-2+2\\sqrt2\\approx0.83\\) is positive, so",
+                  "explain": "Choose the right root for \\(x=\\tan\\frac\\pi{16}\\). Since \\(0 \\lt \\frac\\pi{16} \\lt \\frac\\pi4\\), we have \\(0 \\lt x \\lt 1\\), so \\(\\frac1x \\gt 1 \\gt x\\) and \\(u=x-\\frac1x \\lt 0\\). Of the two roots, \\(-2+2\\sqrt2\\approx0.83\\) is positive, so",
                   "work": "\\(\\tan\\frac{\\pi}{16}-\\frac{1}{\\tan\\frac{\\pi}{16}}=-2-2\\sqrt2\\ \\Rightarrow\\ \\tan\\frac{\\pi}{16}-\\cot\\frac{\\pi}{16}=-2-2\\sqrt2\\)"
                 },
                 {
@@ -693,7 +693,7 @@
                 "year": 2021,
                 "number": "16(b)(vi)"
               },
-              "answer": "Divide the quartic by \\(x^2\\ (\\neq0)\\): \\(x^2+\\frac1{x^2}+4\\left(x-\\frac1x\\right)-6=0\\). Since \\(x^2+\\frac1{x^2}=u^2+2\\), this is \\(u^2+4u-4=0\\), so \\(u=-2\\pm2\\sqrt2\\). For \\(x=\\tan\\frac\\pi{16}\\), \\(0<x<1\\) so \\(u=x-\\frac1x<0\\); the only negative root is \\(-2-2\\sqrt2\\). Hence \\(\\tan\\frac\\pi{16}-\\cot\\frac\\pi{16}=-2-2\\sqrt2\\).",
+              "answer": "Divide the quartic by \\(x^2\\ (\\neq0)\\): \\(x^2+\\frac1{x^2}+4\\left(x-\\frac1x\\right)-6=0\\). Since \\(x^2+\\frac1{x^2}=u^2+2\\), this is \\(u^2+4u-4=0\\), so \\(u=-2\\pm2\\sqrt2\\). For \\(x=\\tan\\frac\\pi{16}\\), \\(0 \\lt x \\lt 1\\) so \\(u=x-\\frac1x \\lt 0\\); the only negative root is \\(-2-2\\sqrt2\\). Hence \\(\\tan\\frac\\pi{16}-\\cot\\frac\\pi{16}=-2-2\\sqrt2\\).",
               "manual": true,
               "keyPoints": [
                 {

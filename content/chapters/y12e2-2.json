@@ -746,24 +746,24 @@
               "type": "review",
               "difficulty": "medium",
               "timeLimit": 60,
-              "stem": "Prove for \\(k\\in\\mathbb{R}^+\\): \\(\\frac{2}{\\sqrt{k+1}+\\sqrt{k}}<\\frac{1}{\\sqrt{k}}\\).",
+              "stem": "Prove for \\(k\\in\\mathbb{R}^+\\): \\(\\frac{2}{\\sqrt{k+1}+\\sqrt{k}} \\lt \\frac{1}{\\sqrt{k}}\\).",
               "hint": "Start from √k < √(k + 1) and add √k to both sides.",
               "steps": [
                 {
-                  "explain": "Start from a true statement. The square-root function is increasing, so for \\(k>0\\)",
-                  "work": "\\(\\sqrt{k}<\\sqrt{k+1}\\)"
+                  "explain": "Start from a true statement. The square-root function is increasing, so for \\(k \\gt 0\\)",
+                  "work": "\\(\\sqrt{k} \\lt \\sqrt{k+1}\\)"
                 },
                 {
                   "explain": "Add \\(\\sqrt k\\) to both sides.",
-                  "work": "\\(2\\sqrt{k}<\\sqrt{k+1}+\\sqrt{k}\\)"
+                  "work": "\\(2\\sqrt{k} \\lt \\sqrt{k+1}+\\sqrt{k}\\)"
                 },
                 {
                   "explain": "Both sides are positive, so taking reciprocals reverses the inequality.",
-                  "work": "\\(\\frac{1}{2\\sqrt k}>\\frac{1}{\\sqrt{k+1}+\\sqrt{k}}\\)"
+                  "work": "\\(\\frac{1}{2\\sqrt k} \\gt \\frac{1}{\\sqrt{k+1}+\\sqrt{k}}\\)"
                 },
                 {
                   "explain": "Multiply both sides by 2.",
-                  "work": "\\(\\frac{2}{\\sqrt{k+1}+\\sqrt{k}}<\\frac{1}{\\sqrt{k}}\\)"
+                  "work": "\\(\\frac{2}{\\sqrt{k+1}+\\sqrt{k}} \\lt \\frac{1}{\\sqrt{k}}\\)"
                 }
               ],
               "xp": 1,
@@ -773,7 +773,7 @@
                 "year": 2021,
                 "number": "16(a)(i)"
               },
-              "answer": "For \\(k>0\\), \\(\\sqrt k<\\sqrt{k+1}\\). Adding \\(\\sqrt k\\): \\(2\\sqrt k<\\sqrt{k+1}+\\sqrt k\\). Both sides are positive, so taking reciprocals reverses the inequality: \\(\\frac{1}{2\\sqrt k}>\\frac{1}{\\sqrt{k+1}+\\sqrt k}\\), i.e. \\(\\frac{2}{\\sqrt{k+1}+\\sqrt k}<\\frac{1}{\\sqrt k}\\).",
+              "answer": "For \\(k \\gt 0\\), \\(\\sqrt k \\lt \\sqrt{k+1}\\). Adding \\(\\sqrt k\\): \\(2\\sqrt k \\lt \\sqrt{k+1}+\\sqrt k\\). Both sides are positive, so taking reciprocals reverses the inequality: \\(\\frac{1}{2\\sqrt k} \\gt \\frac{1}{\\sqrt{k+1}+\\sqrt k}\\), i.e. \\(\\frac{2}{\\sqrt{k+1}+\\sqrt k} \\lt \\frac{1}{\\sqrt k}\\).",
               "manual": true,
               "keyPoints": [
                 {
@@ -787,28 +787,28 @@
               "type": "review",
               "difficulty": "hard",
               "timeLimit": 60,
-              "stem": "Hence prove \\(16<\\sum_{k=1}^{80}\\frac{1}{\\sqrt{k}}<17\\).",
+              "stem": "Hence prove \\(16 \\lt \\sum_{k=1}^{80}\\frac{1}{\\sqrt{k}} \\lt 17\\).",
               "hint": "Rationalise (i) to get 1/√k > 2(√(k+1) − √k) and sum — it telescopes. For the upper bound start from √(k−1) < √k.",
               "steps": [
                 {
                   "explain": "Rationalise the left side of (i).",
-                  "work": "\\(\\frac{2}{\\sqrt{k+1}+\\sqrt{k}}\\times\\frac{\\sqrt{k+1}-\\sqrt{k}}{\\sqrt{k+1}-\\sqrt{k}}=\\frac{2\\left(\\sqrt{k+1}-\\sqrt{k}\\right)}{(k+1)-k}=2\\left(\\sqrt{k+1}-\\sqrt{k}\\right)\\)\n\\(\\therefore\\ \\frac{1}{\\sqrt k}>2\\left(\\sqrt{k+1}-\\sqrt k\\right)\\)"
+                  "work": "\\(\\frac{2}{\\sqrt{k+1}+\\sqrt{k}}\\times\\frac{\\sqrt{k+1}-\\sqrt{k}}{\\sqrt{k+1}-\\sqrt{k}}=\\frac{2\\left(\\sqrt{k+1}-\\sqrt{k}\\right)}{(k+1)-k}=2\\left(\\sqrt{k+1}-\\sqrt{k}\\right)\\)\n\\(\\therefore\\ \\frac{1}{\\sqrt k} \\gt 2\\left(\\sqrt{k+1}-\\sqrt k\\right)\\)"
                 },
                 {
                   "explain": "Lower bound: add these inequalities for \\(k=1,2,\\dots,80\\). The sum telescopes.",
-                  "work": "\\(\\sum_{k=1}^{80}\\frac{1}{\\sqrt k}>2\\left[(\\sqrt2-\\sqrt1)+(\\sqrt3-\\sqrt2)+\\dots+(\\sqrt{81}-\\sqrt{80})\\right]=2\\left(\\sqrt{81}-1\\right)=16\\)"
+                  "work": "\\(\\sum_{k=1}^{80}\\frac{1}{\\sqrt k} \\gt 2\\left[(\\sqrt2-\\sqrt1)+(\\sqrt3-\\sqrt2)+\\dots+(\\sqrt{81}-\\sqrt{80})\\right]=2\\left(\\sqrt{81}-1\\right)=16\\)"
                 },
                 {
-                  "explain": "Upper bound: the same argument starting from \\(\\sqrt{k-1}<\\sqrt k\\) (for \\(k\\ge2\\)) gives the inequality the other way.",
-                  "work": "\\(2\\sqrt k>\\sqrt k+\\sqrt{k-1}\\ \\Rightarrow\\ \\frac{1}{\\sqrt k}<\\frac{2}{\\sqrt k+\\sqrt{k-1}}=2\\left(\\sqrt k-\\sqrt{k-1}\\right)\\)"
+                  "explain": "Upper bound: the same argument starting from \\(\\sqrt{k-1} \\lt \\sqrt k\\) (for \\(k\\ge2\\)) gives the inequality the other way.",
+                  "work": "\\(2\\sqrt k \\gt \\sqrt k+\\sqrt{k-1}\\ \\Rightarrow\\ \\frac{1}{\\sqrt k} \\lt \\frac{2}{\\sqrt k+\\sqrt{k-1}}=2\\left(\\sqrt k-\\sqrt{k-1}\\right)\\)"
                 },
                 {
                   "explain": "Add for \\(k=2,\\dots,80\\) (telescoping again), then add the \\(k=1\\) term separately.",
-                  "work": "\\(\\sum_{k=2}^{80}\\frac{1}{\\sqrt k}<2\\left(\\sqrt{80}-\\sqrt1\\right)\\ \\Rightarrow\\ \\sum_{k=1}^{80}\\frac{1}{\\sqrt k}<1+2\\sqrt{80}-2=2\\sqrt{80}-1\\approx16.89\\)"
+                  "work": "\\(\\sum_{k=2}^{80}\\frac{1}{\\sqrt k} \\lt 2\\left(\\sqrt{80}-\\sqrt1\\right)\\ \\Rightarrow\\ \\sum_{k=1}^{80}\\frac{1}{\\sqrt k} \\lt 1+2\\sqrt{80}-2=2\\sqrt{80}-1\\approx16.89\\)"
                 },
                 {
                   "explain": "Combine the two bounds.",
-                  "work": "\\(16<\\sum_{k=1}^{80}\\frac{1}{\\sqrt k}<17\\)"
+                  "work": "\\(16 \\lt \\sum_{k=1}^{80}\\frac{1}{\\sqrt k} \\lt 17\\)"
                 }
               ],
               "xp": 1,
@@ -818,7 +818,7 @@
                 "year": 2021,
                 "number": "16(a)(ii)"
               },
-              "answer": "Rationalising, \\(\\frac{2}{\\sqrt{k+1}+\\sqrt k}=2(\\sqrt{k+1}-\\sqrt k)\\), so by (i) \\(\\frac1{\\sqrt k}>2(\\sqrt{k+1}-\\sqrt k)\\). Summing for \\(k=1\\) to \\(80\\) (telescoping): \\(\\sum\\frac1{\\sqrt k}>2(\\sqrt{81}-\\sqrt1)=16\\). Similarly, from \\(\\sqrt{k-1}<\\sqrt k\\) we get \\(\\frac{2}{\\sqrt k+\\sqrt{k-1}}>\\frac1{\\sqrt k}\\), i.e. \\(\\frac1{\\sqrt k}<2(\\sqrt k-\\sqrt{k-1})\\). Summing for \\(k=2\\) to \\(80\\): \\(\\sum_{k=2}^{80}\\frac1{\\sqrt k}<2(\\sqrt{80}-1)\\), so \\(\\sum_{k=1}^{80}\\frac1{\\sqrt k}<1+2\\sqrt{80}-2=2\\sqrt{80}-1\\approx16.89<17\\).",
+              "answer": "Rationalising, \\(\\frac{2}{\\sqrt{k+1}+\\sqrt k}=2(\\sqrt{k+1}-\\sqrt k)\\), so by (i) \\(\\frac1{\\sqrt k} \\gt 2(\\sqrt{k+1}-\\sqrt k)\\). Summing for \\(k=1\\) to \\(80\\) (telescoping): \\(\\sum\\frac1{\\sqrt k} \\gt 2(\\sqrt{81}-\\sqrt1)=16\\). Similarly, from \\(\\sqrt{k-1} \\lt \\sqrt k\\) we get \\(\\frac{2}{\\sqrt k+\\sqrt{k-1}} \\gt \\frac1{\\sqrt k}\\), i.e. \\(\\frac1{\\sqrt k} \\lt 2(\\sqrt k-\\sqrt{k-1})\\). Summing for \\(k=2\\) to \\(80\\): \\(\\sum_{k=2}^{80}\\frac1{\\sqrt k} \\lt 2(\\sqrt{80}-1)\\), so \\(\\sum_{k=1}^{80}\\frac1{\\sqrt k} \\lt 1+2\\sqrt{80}-2=2\\sqrt{80}-1\\approx16.89 \\lt 17\\).",
               "manual": true,
               "keyPoints": [
                 {
@@ -1058,8 +1058,8 @@
               "work": "\\(a_{k+1}=a_k+a_{k-1}\\le\\left(\\tfrac74\\right)^k+\\left(\\tfrac74\\right)^{k-1}=\\left(\\tfrac74\\right)^{k-1}\\left(\\tfrac74+1\\right)=\\left(\\tfrac74\\right)^{k-1}\\cdot\\tfrac{11}{4}\\)"
             },
             {
-              "explain": "Compare with \\(\\left(\\frac74\\right)^2=\\frac{49}{16}\\). Write \\(\\frac{11}{4}=\\frac{44}{16}<\\frac{49}{16}\\).",
-              "work": "\\(a_{k+1}\\le\\left(\\tfrac74\\right)^{k-1}\\cdot\\tfrac{44}{16}<\\left(\\tfrac74\\right)^{k-1}\\cdot\\left(\\tfrac74\\right)^2=\\left(\\tfrac74\\right)^{k+1}\\)"
+              "explain": "Compare with \\(\\left(\\frac74\\right)^2=\\frac{49}{16}\\). Write \\(\\frac{11}{4}=\\frac{44}{16} \\lt \\frac{49}{16}\\).",
+              "work": "\\(a_{k+1}\\le\\left(\\tfrac74\\right)^{k-1}\\cdot\\tfrac{44}{16} \\lt \\left(\\tfrac74\\right)^{k-1}\\cdot\\left(\\tfrac74\\right)^2=\\left(\\tfrac74\\right)^{k+1}\\)"
             },
             {
               "explain": "So the result for \\(n\\le k\\) implies it for \\(n=k+1\\). With the base cases, it holds for all \\(n\\ge1\\) by mathematical induction."
@@ -1072,7 +1072,7 @@
             "year": 2021,
             "number": "14(b)"
           },
-          "answer": "Strong induction. Base cases: \\(a_1=1\\le\\frac74\\) and \\(a_2=3\\le\\frac{49}{16}=3\\tfrac1{16}\\). Inductive step: assume \\(a_n\\le\\left(\\frac74\\right)^n\\) for all \\(n\\le k\\) (\\(k\\ge2\\)). Then \\(a_{k+1}=a_k+a_{k-1}\\le\\left(\\frac74\\right)^k+\\left(\\frac74\\right)^{k-1}=\\left(\\frac74\\right)^{k-1}\\cdot\\frac{11}{4}=\\left(\\frac74\\right)^{k-1}\\cdot\\frac{44}{16}<\\left(\\frac74\\right)^{k-1}\\cdot\\frac{49}{16}=\\left(\\frac74\\right)^{k+1}\\). Hence the result is true for all \\(n\\ge1\\) by induction.",
+          "answer": "Strong induction. Base cases: \\(a_1=1\\le\\frac74\\) and \\(a_2=3\\le\\frac{49}{16}=3\\tfrac1{16}\\). Inductive step: assume \\(a_n\\le\\left(\\frac74\\right)^n\\) for all \\(n\\le k\\) (\\(k\\ge2\\)). Then \\(a_{k+1}=a_k+a_{k-1}\\le\\left(\\frac74\\right)^k+\\left(\\frac74\\right)^{k-1}=\\left(\\frac74\\right)^{k-1}\\cdot\\frac{11}{4}=\\left(\\frac74\\right)^{k-1}\\cdot\\frac{44}{16} \\lt \\left(\\frac74\\right)^{k-1}\\cdot\\frac{49}{16}=\\left(\\frac74\\right)^{k+1}\\). Hence the result is true for all \\(n\\ge1\\) by induction.",
           "manual": true,
           "keyPoints": [
             {

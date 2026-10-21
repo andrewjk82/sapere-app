@@ -111,7 +111,7 @@
           "hint": "Multiply by √(5 − x)/√(5 − x) to get (5 − x)/√(25 − x²), then split.",
           "steps": [
             {
-              "explain": "Multiply top and bottom by \\(\\sqrt{5-x}\\) to make the numerator rational (valid for \\(-5<x<5\\)).",
+              "explain": "Multiply top and bottom by \\(\\sqrt{5-x}\\) to make the numerator rational (valid for \\(-5 \\lt x \\lt 5\\)).",
               "work": "\\(\\sqrt{\\frac{5-x}{5+x}}=\\frac{\\sqrt{5-x}}{\\sqrt{5+x}}\\times\\frac{\\sqrt{5-x}}{\\sqrt{5-x}}=\\frac{5-x}{\\sqrt{25-x^2}}\\)"
             },
             {
@@ -161,7 +161,7 @@
           "hint": "Let x = 2 sin θ; the integral becomes ¼∫cosec²θ dθ.",
           "steps": [
             {
-              "explain": "\\(\\sqrt{4-x^2}\\) suggests \\(x=2\\sin\\theta\\), with \\(-\\frac\\pi2<\\theta<\\frac\\pi2\\) so that \\(\\cos\\theta>0\\).",
+              "explain": "\\(\\sqrt{4-x^2}\\) suggests \\(x=2\\sin\\theta\\), with \\(-\\frac\\pi2 \\lt \\theta \\lt \\frac\\pi2\\) so that \\(\\cos\\theta \\gt 0\\).",
               "work": "\\(x=2\\sin\\theta,\\quad dx=2\\cos\\theta\\,d\\theta,\\quad\\sqrt{4-x^2}=\\sqrt{4-4\\sin^2\\theta}=2\\cos\\theta\\)"
             },
             {
@@ -268,8 +268,8 @@
                   "work": "\\(f(x)=\\left(2-x^{\\frac12}\\right)^{\\frac12}\\ \\Rightarrow\\ f'(x)=\\tfrac12\\left(2-\\sqrt x\\right)^{-\\frac12}\\cdot\\left(-\\tfrac12x^{-\\frac12}\\right)=\\frac{-1}{4\\sqrt{x}\\,\\sqrt{2-\\sqrt{x}}}\\)"
                 },
                 {
-                  "explain": "For \\(0<x<4\\) both roots in the denominator are positive, so \\(f'(x)<0\\). Hence \\(f\\) is decreasing on its domain.",
-                  "work": "\\(f'(x)<0\\ \\text{ for }\\ 0<x<4\\)"
+                  "explain": "For \\(0 \\lt x \\lt 4\\) both roots in the denominator are positive, so \\(f'(x) \\lt 0\\). Hence \\(f\\) is decreasing on its domain.",
+                  "work": "\\(f'(x) \\lt 0\\ \\text{ for }\\ 0 \\lt x \\lt 4\\)"
                 },
                 {
                   "explain": "A decreasing function takes its largest value at the left end of the domain and its smallest at the right end.",
@@ -471,7 +471,7 @@
             },
             {
               "explain": "Second integral: the numerator is half the derivative of the denominator, since \\(\\frac{d}{dx}(4+x^2)=2x\\).",
-              "work": "\\(\\int\\frac{x}{4+x^2}\\,dx=\\frac12\\int\\frac{2x}{4+x^2}\\,dx=\\frac12\\ln\\left(4+x^2\\right)\\quad(4+x^2>0)\\)"
+              "work": "\\(\\int\\frac{x}{4+x^2}\\,dx=\\frac12\\int\\frac{2x}{4+x^2}\\,dx=\\frac12\\ln\\left(4+x^2\\right)\\quad(4+x^2 \\gt 0)\\)"
             },
             {
               "explain": "Add the two results.",
