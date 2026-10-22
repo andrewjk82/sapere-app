@@ -1,0 +1,236 @@
+{
+  "chapterId": "y12e1-17",
+  "title": "Chapter 17: Binomial distributions",
+  "year": "Year 12",
+  "topics": [
+    {
+      "topicId": "y12e1-17B",
+      "code": "17B",
+      "title": "Binomial distributions",
+      "questions": [
+        {
+          "id": "bhhs2020e1-q12a",
+          "type": "multipart",
+          "stem": "The following table is the distribution of a random variable \\(X\\) where \\(X\\sim\\operatorname{Bin}(4,p)\\).\n\n| \\(x\\) | 0 | 1 | 2 | 3 | 4 |\n|---|---|---|---|---|---|\n| \\(P(X=x)\\) | 0.2401 | \\(a\\) | \\(b\\) | 0.0756 | 0.0081 |",
+          "meta": {
+            "source": "Baulkham Hills 2020 3U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "12(a)"
+          },
+          "parts": [
+            {
+              "id": "bhhs2020e1-q12a-i",
+              "type": "mc",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Use the known entries in the probability distribution table to calculate the value of \\(p\\).",
+              "hint": "Use P(X = 4) = p⁴.",
+              "steps": [
+                {
+                  "explain": "\\(P(X=4)\\) means all 4 trials succeed.",
+                  "work": "\\(P(X=4)=\\binom44p^4(1-p)^0=p^4=0.0081\\)"
+                },
+                {
+                  "explain": "Take the fourth root.",
+                  "work": "\\(p=\\sqrt[4]{0.0081}=0.3\\)"
+                },
+                {
+                  "explain": "Check with \\(P(X=0)=(0.7)^4=0.2401\\) ✓."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 3U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "12(a)(i)"
+              },
+              "options": [
+                "\\(p=0.7\\)",
+                "\\(p=0.0081\\)",
+                "\\(p=0.09\\)",
+                "\\(p=0.3\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "calculate the value of \\(p\\)",
+                  "note": "P(X = 4) = p⁴ = 0.0081."
+                }
+              ]
+            },
+            {
+              "id": "bhhs2020e1-q12a-ii",
+              "type": "mc",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Find the values of \\(a\\) and \\(b\\)",
+              "hint": "Use P(X = k) = C(4,k) pᵏ(1 − p)^(4−k) with p = 0.3.",
+              "steps": [
+                {
+                  "explain": "\\(a=P(X=1)\\).",
+                  "work": "\\(a=\\binom41(0.3)^1(0.7)^3=4\\times0.3\\times0.343=0.4116\\)"
+                },
+                {
+                  "explain": "\\(b=P(X=2)\\).",
+                  "work": "\\(b=\\binom42(0.3)^2(0.7)^2=6\\times0.09\\times0.49=0.2646\\)"
+                },
+                {
+                  "explain": "Check: the probabilities add to 1.",
+                  "work": "\\(0.2401+0.4116+0.2646+0.0756+0.0081=1\\ \\checkmark\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 3U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "12(a)(ii)"
+              },
+              "options": [
+                "\\(a=0.1029,\\ b=0.0441\\)",
+                "\\(a=0.4116,\\ b=0.2744\\)",
+                "\\(a=0.4116,\\ b=0.2646\\)",
+                "\\(a=0.2646,\\ b=0.4116\\)"
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "Find the values of \\(a\\) and \\(b\\)",
+                  "note": "a = P(X = 1), b = P(X = 2); don't forget the binomial coefficients 4 and 6."
+                }
+              ]
+            },
+            {
+              "id": "bhhs2020e1-q12a-iii",
+              "type": "mc",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Calculate \\(\\operatorname{Var}(X)\\).",
+              "hint": "Var(X) = np(1 − p).",
+              "steps": [
+                {
+                  "explain": "For a binomial distribution \\(\\operatorname{Var}(X)=np(1-p)\\).",
+                  "work": "\\(\\operatorname{Var}(X)=4\\times0.3\\times0.7=0.84\\)"
+                },
+                {
+                  "explain": "1.2 is the mean \\(np\\); 0.9165 is the standard deviation \\(\\sqrt{0.84}\\)."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 3U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "12(a)(iii)"
+              },
+              "options": [
+                "\\(0.9165\\)",
+                "\\(0.84\\)",
+                "\\(1.2\\)",
+                "\\(0.21\\)"
+              ],
+              "answer": 1,
+              "keyPoints": [
+                {
+                  "text": "\\(\\operatorname{Var}(X)\\)",
+                  "note": "For Bin(n, p): variance = npq."
+                }
+              ]
+            },
+            {
+              "id": "bhhs2020e1-q12a-iv",
+              "type": "mc",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Find \\(P(X\\ge3)\\).",
+              "hint": "Add P(X = 3) and P(X = 4).",
+              "steps": [
+                {
+                  "explain": "\\(X\\ge3\\) means \\(X=3\\) or \\(X=4\\). Add those entries.",
+                  "work": "\\(P(X\\ge3)=0.0756+0.0081=0.0837\\)"
+                },
+                {
+                  "explain": "0.9163 is \\(P(X\\le2)\\), the complement."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 3U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "12(a)(iv)"
+              },
+              "options": [
+                "\\(0.0756\\)",
+                "\\(0.3483\\)",
+                "\\(0.9163\\)",
+                "\\(0.0837\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "\\(P(X\\ge3)\\)",
+                  "note": "'At least 3' means 3 or 4."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y12e1-17D",
+      "code": "17D",
+      "title": "Sample proportions",
+      "questions": [
+        {
+          "id": "bhhs2020e1-q4",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "In a large population, the probability that a person is left-handed is 0.3. Let \\(\\hat{p}\\) be the random variable that represents the sample proportion of left-handed people from a sample size of \\(n\\), drawn from the population.\n\nWhat is the smallest value of \\(n\\) such that the standard deviation of \\(\\hat{p}\\) is less than or equal to 0.07?",
+          "hint": "σ of p̂ is √(p(1 − p)/n); solve √(0.21/n) ≤ 0.07 and round up.",
+          "steps": [
+            {
+              "explain": "The standard deviation of a sample proportion is",
+              "work": "\\(\\sigma_{\\hat p}=\\sqrt{\\frac{p(1-p)}{n}},\\qquad p=0.3,\\ 1-p=0.7\\)"
+            },
+            {
+              "explain": "Set up the inequality.",
+              "work": "\\(\\sqrt{\\frac{0.3\\times0.7}{n}}\\le0.07\\ \\Rightarrow\\ \\frac{0.21}{n}\\le0.0049\\)"
+            },
+            {
+              "explain": "Solve for \\(n\\) (multiplying by positive numbers keeps the direction).",
+              "work": "\\(n\\ge\\frac{0.21}{0.0049}=42.857\\dots\\)"
+            },
+            {
+              "explain": "\\(n\\) must be a whole number, so round UP: the smallest \\(n\\) is 43. (\\(n=42\\) gives \\(\\sigma\\approx0.0707\\gt0.07\\).)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills 2020 3U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "4"
+          },
+          "options": [
+            "\\(n=42\\)",
+            "\\(n=43\\)",
+            "\\(n=61\\)",
+            "\\(n=62\\)"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "the standard deviation of",
+              "note": "Use σ = √(pq/n) with p = 0.3, q = 0.7, then round n up."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -50,6 +50,57 @@
           ]
         }
       ]
+    },
+    {
+      "topicId": "y12e1-2B",
+      "code": "2B",
+      "title": "Proving divisibility by mathematical induction",
+      "questions": [
+        {
+          "id": "bhhs2020e1-q13a",
+          "type": "review",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "Prove using mathematical induction that \\(2^{n+2}+3^{2n+1}\\) is divisible by 7 for all positive integers \\(n\\).",
+          "hint": "Write 2^(k+3) = 2·2^(k+2) and 3^(2k+3) = 9·3^(2k+1), then substitute the assumption.",
+          "steps": [
+            {
+              "explain": "Base case \\(n=1\\).",
+              "work": "\\(2^{3}+3^{3}=8+27=35=7\\times5\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Assume true for \\(n=k\\).",
+              "work": "\\(2^{k+2}+3^{2k+1}=7M,\\ M\\in\\mathbb{Z}\\ \\Rightarrow\\ 2^{k+2}=7M-3^{2k+1}\\)"
+            },
+            {
+              "explain": "Write the \\(n=k+1\\) expression in terms of the \\(n=k\\) pieces.",
+              "work": "\\(2^{k+3}+3^{2k+3}=2\\cdot2^{k+2}+3^2\\cdot3^{2k+1}\\)"
+            },
+            {
+              "explain": "Substitute the assumption.",
+              "work": "\\(=2\\left(7M-3^{2k+1}\\right)+9\\cdot3^{2k+1}=14M+7\\cdot3^{2k+1}=7\\left(2M+3^{2k+1}\\right)\\)"
+            },
+            {
+              "explain": "\\(2M+3^{2k+1}\\) is an integer, so the expression is divisible by 7. By induction the result holds for all positive integers \\(n\\)."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills 2020 3U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "13(a)"
+          },
+          "answer": "n = 1: 2³ + 3³ = 35 = 7 × 5. Assume \\(2^{k+2}+3^{2k+1}=7M\\). Then \\(2^{k+3}+3^{2k+3}=2\\cdot2^{k+2}+9\\cdot3^{2k+1}=2(7M-3^{2k+1})+9\\cdot3^{2k+1}=14M+7\\cdot3^{2k+1}=7(2M+3^{2k+1})\\). True by induction.",
+          "manual": true,
+          "keyPoints": [
+            {
+              "text": "Prove using mathematical induction",
+              "note": "Make 2^(k+2) the subject of the assumption and substitute."
+            }
+          ]
+        }
+      ]
     }
   ]
 }

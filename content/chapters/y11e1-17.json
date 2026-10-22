@@ -4,6 +4,55 @@
   "year": "Year 11",
   "topics": [
     {
+      "topicId": "y11e1-17B",
+      "code": "17B",
+      "title": "The binomial theorem",
+      "questions": [
+        {
+          "id": "ascham2020e1-q8",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "The coefficient of the fourth term in the expansion of \\((3x-4)^6\\) is:",
+          "hint": "Fourth term means k = 3 in C(6,k)(3x)^(6−k)(−4)^k.",
+          "steps": [
+            {
+              "explain": "The general term is \\(\\binom{6}{k}(3x)^{6-k}(-4)^k\\). The fourth term has \\(k=3\\) (the first term has \\(k=0\\)).",
+              "work": "\\(T_4=\\binom63(3x)^3(-4)^3\\)"
+            },
+            {
+              "explain": "Compute the coefficient.",
+              "work": "\\(\\binom63\\cdot3^3\\cdot(-4)^3=20\\times27\\times(-64)=-34560\\)"
+            },
+            {
+              "explain": "Watch the sign: \\((-4)^3\\) is negative. Using \\(k=4\\) (the fifth term) gives 25920."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 3U Trial",
+            "examPaper": "Ascham 2020 3U Trial & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "8"
+          },
+          "options": [
+            "34560",
+            "−34560",
+            "25920",
+            "−25920"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "fourth term",
+              "note": "The 4th term uses k = 3 (counting from k = 0). Keep the sign of (−4)³."
+            }
+          ]
+        }
+      ]
+    },
+    {
       "topicId": "y11e1-17C",
       "code": "17C",
       "title": "Ordered selections — three more principles",
@@ -135,6 +184,195 @@
               "note": "Glue them into one unit (9 units round the table) and multiply by 2! for their order."
             }
           ]
+        },
+        {
+          "id": "bhhs2020e1-q5",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Given that \\(n\\) students are to be placed into 4 classrooms, what is the minimum number of students to guarantee that there are at least two students born in the same month in each of the 4 classrooms?",
+          "hint": "Pigeonhole: 13 students guarantee a shared month in one room; you need that in all 4 rooms.",
+          "steps": [
+            {
+              "explain": "Think of the worst case. A classroom can hold 12 students all born in different months without any repeat.",
+              "work": "\\(12\\ \\text{months}\\Rightarrow\\text{up to }12\\text{ students with no shared month}\\)"
+            },
+            {
+              "explain": "To force a shared month, a classroom needs 13 students (pigeonhole principle: 13 students, 12 months)."
+            },
+            {
+              "explain": "Every one of the 4 classrooms must have this, and in the worst case the students are spread so each room has as few as possible. So we need 13 in each room.",
+              "work": "\\(4\\times13=52\\)"
+            },
+            {
+              "explain": "With 51 students one room could have only 12 (all different months), so 52 is the minimum."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills 2020 3U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "5"
+          },
+          "options": [
+            "48",
+            "49",
+            "52",
+            "53"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "in each of the 4 classrooms",
+              "note": "Each classroom needs 12 + 1 = 13 students to force a repeated month."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y11e1-17D",
+      "code": "17D",
+      "title": "Ordered selections with identical elements",
+      "questions": [
+        {
+          "id": "bhhs2020e1-q8",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "In how many ways can the letters of the word EXTENSION be arranged if the letter E’s are to be together?",
+          "hint": "Treat EE as one block (8 objects) and divide by 2! for the repeated N.",
+          "steps": [
+            {
+              "explain": "EXTENSION has 9 letters: E, X, T, E, N, S, I, O, N — two E's and two N's.",
+              "work": "\\(\\text{E}\\times2,\\ \\text{N}\\times2\\)"
+            },
+            {
+              "explain": "Glue the two E's into one block 'EE'. Now arrange 8 objects: (EE), X, T, N, S, I, O, N.",
+              "work": "\\(8\\ \\text{objects}\\)"
+            },
+            {
+              "explain": "Divide by \\(2!\\) for the two identical N's. The E's inside the block are identical, so swapping them gives nothing new — no extra factor.",
+              "work": "\\(\\frac{8!}{2!}\\)"
+            },
+            {
+              "explain": "Option D. Dividing by another \\(2!\\) for the E's double-counts (they are already one block)."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills 2020 3U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "8"
+          },
+          "options": [
+            "\\(\\frac{9!}{2!2!}\\)",
+            "\\(\\frac{9!}{2!}\\)",
+            "\\(\\frac{8!}{2!2!}\\)",
+            "\\(\\frac{8!}{2!}\\)"
+          ],
+          "answer": 3,
+          "keyPoints": [
+            {
+              "text": "the letter E’s are to be together",
+              "note": "Glue EE into one block; the only repeat left is the two N's."
+            }
+          ]
+        },
+        {
+          "id": "bhhs2020e1-q14c",
+          "type": "multipart",
+          "stem": "Suppose there are \\(n\\) different books, and there are \\(p\\) identical copies of each of these \\(n\\) books. (You may assume \\(n\\) and \\(p\\) are non-zero integers by definition.)",
+          "meta": {
+            "source": "Baulkham Hills 2020 3U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "14(c)"
+          },
+          "parts": [
+            {
+              "id": "bhhs2020e1-q14c-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "If all the books are to be placed in a line on one shelf, in how many ways can this be done?",
+              "hint": "Arrangements with repeats: total! ÷ (repeat!) for each group.",
+              "steps": [
+                {
+                  "explain": "There are \\(np\\) books in total. If they were all different there would be \\((np)!\\) arrangements.",
+                  "work": "\\((np)!\\)"
+                },
+                {
+                  "explain": "Each title has \\(p\\) identical copies; swapping those copies changes nothing, so divide by \\(p!\\) for each of the \\(n\\) titles.",
+                  "work": "\\(\\frac{(np)!}{\\underbrace{p!\\times p!\\times\\dots\\times p!}_{n}}=\\frac{(np)!}{(p!)^n}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 3U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "14(c)(i)"
+              },
+              "options": [
+                "\\((np)!\\)",
+                "\\(\\frac{(np)!}{n!\\,p!}\\)",
+                "\\(n!\\,(p!)^n\\)",
+                "\\(\\frac{(np)!}{(p!)^n}\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "in how many ways can this be done",
+                  "note": "np books in total; divide by p! for each of the n groups of identical copies."
+                }
+              ]
+            },
+            {
+              "id": "bhhs2020e1-q14c-ii",
+              "type": "mc",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Consider now a library with \\(n\\) different books, where there are \\(p\\) identical copies of each of these \\(n\\) books on one shelf. The library barcodes each book differently to keep track of each book in its catalogue.\n\nSuppose you want to borrow at least one book from the shelf, but you do not want to borrow multiple copies of the same book (despite the different barcodes). In how many ways can this be done?\n\n(To clarify: At the borrowing desk, the librarian will scan out copy 1 of Book A differently to copy 2 of Book A because they have different barcodes.)",
+              "hint": "Each title: one of p copies or none (p + 1 choices). Then remove the 'borrow nothing' case.",
+              "steps": [
+                {
+                  "explain": "For each of the \\(n\\) titles, decide what to do: take copy 1, copy 2, …, copy \\(p\\) (different barcodes), or take none of that title.",
+                  "work": "\\(p+1\\ \\text{choices per title}\\)"
+                },
+                {
+                  "explain": "The choices for different titles are independent, so multiply.",
+                  "work": "\\((p+1)\\times(p+1)\\times\\dots\\times(p+1)=(p+1)^n\\)"
+                },
+                {
+                  "explain": "This includes the one case where no book is taken at all. You must borrow at least one, so subtract it.",
+                  "work": "\\((p+1)^n-1\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 3U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "14(c)(ii)"
+              },
+              "options": [
+                "\\(p^n\\)",
+                "\\((p+1)^n\\)",
+                "\\((p+1)^n-1\\)",
+                "\\(2^n-1\\)"
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "at least one book",
+                  "note": "For each title there are p + 1 choices (a specific copy or none); subtract the empty choice."
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -192,55 +430,6 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 240 180\" style=\"display:block;margin:0 auto;font-family:system-ui,sans-serif\"><rect width=\"240\" height=\"180\" fill=\"white\"/><line x1=\"30\" y1=\"135\" x2=\"150\" y2=\"135\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><circle cx=\"45\" cy=\"135\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><circle cx=\"75\" cy=\"135\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><circle cx=\"105\" cy=\"135\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><circle cx=\"135\" cy=\"135\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><circle cx=\"70\" cy=\"90\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><circle cx=\"110\" cy=\"75\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><circle cx=\"160\" cy=\"105\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><circle cx=\"190\" cy=\"70\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><circle cx=\"165\" cy=\"45\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><text x=\"20\" y=\"160\" font-size=\"11\">Four points lie on one line</text></svg>"
           }
-        }
-      ]
-    },
-    {
-      "topicId": "y11e1-17B",
-      "code": "17B",
-      "title": "The binomial theorem",
-      "questions": [
-        {
-          "id": "ascham2020e1-q8",
-          "type": "mc",
-          "difficulty": "medium",
-          "timeLimit": 60,
-          "stem": "The coefficient of the fourth term in the expansion of \\((3x-4)^6\\) is:",
-          "hint": "Fourth term means k = 3 in C(6,k)(3x)^(6−k)(−4)^k.",
-          "steps": [
-            {
-              "explain": "The general term is \\(\\binom{6}{k}(3x)^{6-k}(-4)^k\\). The fourth term has \\(k=3\\) (the first term has \\(k=0\\)).",
-              "work": "\\(T_4=\\binom63(3x)^3(-4)^3\\)"
-            },
-            {
-              "explain": "Compute the coefficient.",
-              "work": "\\(\\binom63\\cdot3^3\\cdot(-4)^3=20\\times27\\times(-64)=-34560\\)"
-            },
-            {
-              "explain": "Watch the sign: \\((-4)^3\\) is negative. Using \\(k=4\\) (the fifth term) gives 25920."
-            }
-          ],
-          "xp": 1,
-          "meta": {
-            "source": "Ascham 2020 3U Trial",
-            "examPaper": "Ascham 2020 3U Trial & Solutions",
-            "school": "Ascham",
-            "year": 2020,
-            "number": "8"
-          },
-          "options": [
-            "34560",
-            "−34560",
-            "25920",
-            "−25920"
-          ],
-          "answer": 1,
-          "keyPoints": [
-            {
-              "text": "fourth term",
-              "note": "The 4th term uses k = 3 (counting from k = 0). Keep the sign of (−4)³."
-            }
-          ]
         }
       ]
     }

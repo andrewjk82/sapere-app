@@ -930,6 +930,52 @@
               "note": "Use the auxiliary-angle form R cos(3x + α): R = 5, so you need cos(3x + α) = 1."
             }
           ]
+        },
+        {
+          "id": "bhhs2020e1-q13c",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "By first expressing \\(\\cos x-\\sin x\\) in the form \\(R\\cos(x+\\alpha)\\), determine the maximum value of \\(2+\\cos x-\\sin x\\) and the smallest positive angle, in radians, at which this maximum value occurs.",
+          "hint": "cos x − sin x = √2 cos(x + π/4); the maximum is when the cosine equals 1.",
+          "steps": [
+            {
+              "explain": "Expand \\(R\\cos(x+\\alpha)\\) and match coefficients.",
+              "work": "\\(R\\cos x\\cos\\alpha-R\\sin x\\sin\\alpha=\\cos x-\\sin x\\ \\Rightarrow\\ R\\cos\\alpha=1,\\ R\\sin\\alpha=1\\)"
+            },
+            {
+              "explain": "Find \\(R\\) and \\(\\alpha\\).",
+              "work": "\\(R=\\sqrt{1^2+1^2}=\\sqrt2,\\qquad\\tan\\alpha=1\\Rightarrow\\alpha=\\frac{\\pi}{4}\\ \\Rightarrow\\ \\cos x-\\sin x=\\sqrt2\\cos\\left(x+\\tfrac{\\pi}{4}\\right)\\)"
+            },
+            {
+              "explain": "The cosine is at most 1, so",
+              "work": "\\(2+\\cos x-\\sin x=2+\\sqrt2\\cos\\left(x+\\tfrac\\pi4\\right)\\le2+\\sqrt2\\)"
+            },
+            {
+              "explain": "The maximum happens when \\(\\cos(x+\\frac\\pi4)=1\\), i.e. \\(x+\\frac\\pi4=2\\pi\\) for the smallest positive \\(x\\) (\\(x+\\frac\\pi4=0\\) gives a negative \\(x\\)).",
+              "work": "\\(x=2\\pi-\\frac{\\pi}{4}=\\frac{7\\pi}{4}\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills 2020 3U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "13(c)"
+          },
+          "options": [
+            "Maximum \\(2+\\sqrt2\\) at \\(x=\\frac{\\pi}{4}\\)",
+            "Maximum \\(3\\) at \\(x=2\\pi\\)",
+            "Maximum \\(2+\\sqrt2\\) at \\(x=\\frac{3\\pi}{4}\\)",
+            "Maximum \\(2+\\sqrt2\\) at \\(x=\\frac{7\\pi}{4}\\)"
+          ],
+          "answer": 3,
+          "keyPoints": [
+            {
+              "text": "in the form \\(R\\cos(x+\\alpha)\\)",
+              "note": "R = √(1² + 1²), tan α = 1. Max when cos(x + α) = 1."
+            }
+          ]
         }
       ]
     },
@@ -1171,6 +1217,55 @@
             {
               "text": "\\(\\tan\\frac{\\theta}{2}\\)",
               "note": "Let t = tan(θ/2) and use the t-formulae to get a quadratic in t."
+            }
+          ]
+        },
+        {
+          "id": "bhhs2020e1-q11c",
+          "type": "mc",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "By letting \\(t=\\tan\\frac{x}{2}\\), solve \\(\\sin x+\\cos x=-1\\) in the domain \\(0\\le x\\le2\\pi\\).",
+          "hint": "After solving for t, always check x = π separately — the t-formula misses it.",
+          "steps": [
+            {
+              "explain": "Use the \\(t\\)-formulae.",
+              "work": "\\(\\sin x=\\frac{2t}{1+t^2},\\qquad\\cos x=\\frac{1-t^2}{1+t^2}\\)"
+            },
+            {
+              "explain": "Substitute and multiply by \\(1+t^2\\).",
+              "work": "\\(2t+1-t^2=-1-t^2\\ \\Rightarrow\\ 2t=-2\\ \\Rightarrow\\ t=-1\\)"
+            },
+            {
+              "explain": "Solve \\(\\tan\\frac x2=-1\\) with \\(0\\le\\frac x2\\le\\pi\\).",
+              "work": "\\(\\frac{x}{2}=\\frac{3\\pi}{4}\\ \\Rightarrow\\ x=\\frac{3\\pi}{2}\\)"
+            },
+            {
+              "explain": "The \\(t\\)-formula cannot represent \\(x=\\pi\\) (\\(\\tan\\frac\\pi2\\) is undefined), so check it separately.",
+              "work": "\\(\\sin\\pi+\\cos\\pi=0+(-1)=-1\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Solutions: \\(x=\\pi\\) and \\(x=\\frac{3\\pi}{2}\\)."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills 2020 3U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "11(c)"
+          },
+          "options": [
+            "\\(x=\\frac{3\\pi}{4},\\ \\frac{3\\pi}{2}\\)",
+            "\\(x=\\pi,\\ \\frac{3\\pi}{2}\\)",
+            "\\(x=\\frac{3\\pi}{2}\\) only",
+            "\\(x=\\pi\\) only"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "By letting \\(t=\\tan\\frac{x}{2}\\)",
+              "note": "The t-substitution misses x = π (where tan(x/2) is undefined) — check it by hand."
             }
           ]
         }

@@ -60,6 +60,58 @@
               "note": "The rope, the 6 m drop and the horizontal distance form a right triangle: r² = x² + 36."
             }
           ]
+        },
+        {
+          "id": "bhhs2020e1-q11e",
+          "type": "mc",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "A plane flies horizontally at an altitude of 10 km. It passes directly over a tracking telescope on the ground. When the angle of elevation from the telescope to the plane is \\(\\frac{\\pi}{3}\\) radians, the angle of elevation is decreasing at a rate of \\(\\frac{\\pi}{6}\\) rad/min . How fast is the plane travelling at the time of measurement?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 210\" width=\"300\" height=\"210\"><rect width=\"300\" height=\"210\" rx=\"8\" fill=\"white\"/><line x1=\"80.0\" y1=\"180.0\" x2=\"230.0\" y2=\"40.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"230.0\" y1=\"40.0\" x2=\"230.0\" y2=\"180.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"80.0\" y1=\"180.0\" x2=\"230.0\" y2=\"180.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M220 180L220 170L230 170\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><path d=\"M204 36L256 36L260 40L256 43L204 43Z\" fill=\"#1e293b\"/><path d=\"M226 38L214 24L222 24L236 38Z\" fill=\"#1e293b\"/><text x=\"106.0\" y=\"172.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"15.7\" fill=\"#1e293b\" font-style=\"italic\">θ</text><text x=\"238.0\" y=\"110.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">10 km</text><text x=\"140.8\" y=\"200.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">x</text><text x=\"148.5\" y=\"200.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"13.0\" fill=\"#1e293b\"> km</text><circle cx=\"80.0\" cy=\"180.0\" r=\"4\" fill=\"#1e293b\"/></svg>"
+          },
+          "hint": "x = 10 cot θ; dx/dt = (dx/dθ)(dθ/dt) with dθ/dt = −π/6.",
+          "steps": [
+            {
+              "explain": "Let \\(x\\) be the horizontal distance and \\(\\theta\\) the angle of elevation. In the right triangle the opposite side is 10.",
+              "work": "\\(\\tan\\theta=\\frac{10}{x}\\ \\Rightarrow\\ x=10\\cot\\theta\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 210\" width=\"300\" height=\"210\"><rect width=\"300\" height=\"210\" rx=\"8\" fill=\"white\"/><line x1=\"80.0\" y1=\"180.0\" x2=\"230.0\" y2=\"40.0\" stroke=\"#dc2626\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"230.0\" y1=\"40.0\" x2=\"230.0\" y2=\"180.0\" stroke=\"#ea580c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"80.0\" y1=\"180.0\" x2=\"230.0\" y2=\"180.0\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M220 180L220 170L230 170\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><path d=\"M204 36L256 36L260 40L256 43L204 43Z\" fill=\"#1e293b\"/><path d=\"M226 38L214 24L222 24L236 38Z\" fill=\"#1e293b\"/><text x=\"106.0\" y=\"172.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"15.7\" fill=\"#dc2626\" font-style=\"italic\">θ</text><text x=\"238.0\" y=\"110.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\" text-anchor=\"start\">10 km</text><text x=\"140.8\" y=\"200.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#2563eb\" font-style=\"italic\">x</text><text x=\"148.5\" y=\"200.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"13.0\" fill=\"#2563eb\"> km</text><circle cx=\"80.0\" cy=\"180.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"36.0\" y=\"30.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"13.0\" fill=\"#1e293b\">tan </text><text x=\"57.5\" y=\"30.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">θ</text><text x=\"65.7\" y=\"30.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"13.0\" fill=\"#1e293b\"> = </text><text x=\"82.2\" y=\"23.5\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"9.4\" fill=\"#1e293b\">10</text><text x=\"84.5\" y=\"34.9\" font-family=\"Times New Roman,Times,serif\" font-size=\"10.5\" fill=\"#1e293b\" font-style=\"italic\">x</text><line x1=\"81.2\" y1=\"26.1\" x2=\"93.7\" y2=\"26.1\" stroke=\"#1e293b\" stroke-width=\"1.00\"/></svg>"
+              }
+            },
+            {
+              "explain": "Differentiate with respect to \\(\\theta\\).",
+              "work": "\\(\\frac{dx}{d\\theta}=-10\\operatorname{cosec}^2\\theta\\)"
+            },
+            {
+              "explain": "Chain rule; \\(\\theta\\) is decreasing, so \\(\\frac{d\\theta}{dt}=-\\frac{\\pi}{6}\\).",
+              "work": "\\(\\frac{dx}{dt}=\\frac{dx}{d\\theta}\\cdot\\frac{d\\theta}{dt}=-10\\operatorname{cosec}^2\\theta\\cdot\\left(-\\frac{\\pi}{6}\\right)\\)"
+            },
+            {
+              "explain": "At \\(\\theta=\\frac\\pi3\\): \\(\\operatorname{cosec}\\frac\\pi3=\\frac{2}{\\sqrt3}\\), so \\(\\operatorname{cosec}^2=\\frac43\\).",
+              "work": "\\(\\frac{dx}{dt}=10\\cdot\\frac43\\cdot\\frac{\\pi}{6}=\\frac{40\\pi}{18}=\\frac{20\\pi}{9}\\approx6.98\\ \\text{km/min}\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills 2020 3U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "11(e)"
+          },
+          "options": [
+            "\\(\\frac{10\\pi}{9}\\approx3.49\\) km/min",
+            "\\(\\frac{40\\pi}{9}\\approx13.96\\) km/min",
+            "\\(\\frac{20\\pi}{9}\\approx6.98\\) km/min",
+            "\\(\\frac{5\\pi}{3}\\approx5.24\\) km/min"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "How fast is the plane travelling",
+              "note": "Relate x and θ with tan θ = 10/x, then use the chain rule."
+            }
+          ]
         }
       ]
     }

@@ -438,6 +438,197 @@
               ]
             }
           ]
+        },
+        {
+          "id": "bhhs2020e1-q13b",
+          "type": "multipart",
+          "stem": "A ball is struck by a racquet from a point \\(A\\) which has position vector \\(21\\mathbf{j}\\) metres relative to a fixed origin \\(O\\). Initially, the velocity vector of the ball is \\((5\\mathbf{i}+8\\mathbf{j})\\) m/s, where \\(\\mathbf{i}\\) and \\(\\mathbf{j}\\) are the unit vectors in the horizontal and vertical directions respectively.\n\nAfter being struck, the ball undergoes projectile motion under the influence of gravity only, that is, the acceleration vector of the ball \\(\\mathbf{a}=-10\\mathbf{j}\\). The ball will hit the ground at point \\(B\\), a point that is on the same horizontal level as the origin.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 240\" width=\"320\" height=\"240\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker><marker id=\"ahdc2626\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#dc2626\"/></marker></defs><rect width=\"320\" height=\"240\" rx=\"8\" fill=\"white\"/><line x1=\"40.0\" y1=\"210.0\" x2=\"324.4\" y2=\"210.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"40.0\" y1=\"210.0\" x2=\"40.0\" y2=\"28.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><path d=\"M40.0 63.0L41.4 62.2L42.7 61.4L44.0 60.6L45.4 59.8L46.8 59.0L48.1 58.2L49.5 57.5L50.8 56.8L52.1 56.1L53.5 55.4L54.9 54.7L56.2 54.1L57.5 53.4L58.9 52.8L60.2 52.2L61.6 51.6L63.0 51.0L64.3 50.4L65.7 49.9L67.0 49.3L68.3 48.8L69.7 48.3L71.0 47.8L72.4 47.4L73.8 46.9L75.1 46.5L76.4 46.1L77.8 45.7L79.2 45.3L80.5 44.9L81.8 44.5L83.2 44.2L84.6 43.9L85.9 43.5L87.2 43.2L88.6 43.0L89.9 42.7L91.3 42.5L92.7 42.2L94.0 42.0L95.3 41.8L96.7 41.6L98.1 41.4L99.4 41.3L100.8 41.1L102.1 41.0L103.4 40.9L104.8 40.8L106.1 40.7L107.5 40.7L108.9 40.6L110.2 40.6L111.5 40.6L112.9 40.6L114.2 40.6L115.6 40.7L117.0 40.7L118.3 40.8L119.6 40.9L121.0 41.0L122.4 41.1L123.7 41.2L125.0 41.3L126.4 41.5L127.8 41.7L129.1 41.9L130.4 42.1L131.8 42.3L133.1 42.5L134.5 42.8L135.9 43.1L137.2 43.3L138.6 43.6L139.9 44.0L141.2 44.3L142.6 44.6L143.9 45.0L145.3 45.4L146.6 45.8L148.0 46.2L149.4 46.6L150.7 47.1L152.1 47.5L153.4 48.0L154.8 48.5L156.1 49.0L157.4 49.5L158.8 50.1L160.1 50.6L161.5 51.2L162.9 51.8L164.2 52.4L165.6 53.0L166.9 53.6L168.2 54.3L169.6 54.9L171.0 55.6L172.3 56.3L173.7 57.0L175.0 57.8L176.3 58.5L177.7 59.3L179.0 60.0L180.4 60.8L181.8 61.6L183.1 62.4L184.5 63.3L185.8 64.1L187.2 65.0L188.5 65.9L189.8 66.8L191.2 67.7L192.5 68.6L193.9 69.6L195.2 70.5L196.6 71.5L198.0 72.5L199.3 73.5L200.7 74.6L202.0 75.6L203.3 76.7L204.7 77.7L206.0 78.8L207.4 79.9L208.8 81.0L210.1 82.2L211.5 83.3L212.8 84.5L214.2 85.7L215.5 86.9L216.8 88.1L218.2 89.3L219.5 90.6L220.9 91.8L222.2 93.1L223.6 94.4L225.0 95.7L226.3 97.1L227.7 98.4L229.0 99.8L230.3 101.1L231.7 102.5L233.0 103.9L234.4 105.3L235.8 106.8L237.1 108.2L238.5 109.7L239.8 111.2L241.2 112.7L242.5 114.2L243.8 115.7L245.2 117.3L246.5 118.8L247.9 120.4L249.2 122.0L250.6 123.6L252.0 125.2L253.3 126.9L254.7 128.5L256.0 130.2L257.4 131.9L258.7 133.6L260.0 135.3L261.4 137.0L262.8 138.8L264.1 140.6L265.5 142.3L266.8 144.1L268.1 146.0L269.5 147.8L270.9 149.6L272.2 151.5L273.5 153.4L274.9 155.3L276.2 157.2L277.6 159.1L279.0 161.0L280.3 163.0L281.6 165.0L283.0 167.0L284.4 169.0L285.7 171.0L287.0 173.0L288.4 175.1L289.8 177.1L291.1 179.2L292.5 181.3L293.8 183.4L295.1 185.5L296.5 187.7L297.8 189.8L299.2 192.0L300.6 194.2L301.9 196.4L303.2 198.6L304.6 200.9L305.9 203.1L307.3 205.4L308.7 207.7L310.0 210.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><circle cx=\"40.0\" cy=\"63.0\" r=\"4\" fill=\"#1e293b\"/><circle cx=\"310.0\" cy=\"210.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"22.1\" y=\"67.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"305.0\" y=\"228.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"20.3\" y=\"224.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">O</text><line x1=\"40.0\" y1=\"63.0\" x2=\"65.0\" y2=\"27.0\" stroke=\"#dc2626\" stroke-width=\"2.2\" stroke-linecap=\"round\" marker-end=\"url(#ahdc2626)\"/><text x=\"68.0\" y=\"23.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#dc2626\">5</text><text x=\"74.8\" y=\"23.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#dc2626\" font-weight=\"bold\">i</text><text x=\"78.3\" y=\"23.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#dc2626\"> + 8</text><text x=\"98.5\" y=\"23.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#dc2626\" font-weight=\"bold\">j</text><text x=\"20.0\" y=\"85.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"11.0\" fill=\"#64748b\">21</text></svg>"
+          },
+          "meta": {
+            "source": "Baulkham Hills 2020 3U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "13(b)"
+          },
+          "parts": [
+            {
+              "id": "bhhs2020e1-q13b-i",
+              "type": "review",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Show that the velocity vector of the ball \\(t\\) seconds after being struck is \\(\\mathbf{v}=5\\mathbf{i}+(8-10t)\\mathbf{j}\\).",
+              "hint": "Integrate a = −10j and use v(0) = 5i + 8j.",
+              "steps": [
+                {
+                  "explain": "Integrate the acceleration component by component.",
+                  "work": "\\(\\mathbf{a}=0\\mathbf{i}-10\\mathbf{j}\\ \\Rightarrow\\ \\mathbf{v}=c_1\\mathbf{i}+(-10t+c_2)\\mathbf{j}\\)"
+                },
+                {
+                  "explain": "Use \\(\\mathbf v(0)=5\\mathbf i+8\\mathbf j\\).",
+                  "work": "\\(c_1=5,\\qquad c_2=8\\)"
+                },
+                {
+                  "explain": "So",
+                  "work": "\\(\\mathbf{v}=5\\mathbf{i}+(8-10t)\\mathbf{j}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 3U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "13(b)(i)"
+              },
+              "answer": "Integrate \\(\\mathbf a=-10\\mathbf j\\): \\(\\mathbf v=c_1\\mathbf i+(-10t+c_2)\\mathbf j\\). At t = 0, \\(\\mathbf v=5\\mathbf i+8\\mathbf j\\) ⇒ c₁ = 5, c₂ = 8. So \\(\\mathbf v=5\\mathbf i+(8-10t)\\mathbf j\\).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Show that the velocity vector",
+                  "note": "Integrate each component of the acceleration, then use the initial velocity."
+                }
+              ]
+            },
+            {
+              "id": "bhhs2020e1-q13b-ii",
+              "type": "mc",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Find an expression for the position vector \\(\\mathbf{r}\\) of the ball relative to \\(O\\) at a time \\(t\\) seconds after it was struck.",
+              "hint": "Integrate v and use r(0) = 21j.",
+              "steps": [
+                {
+                  "explain": "Integrate the velocity.",
+                  "work": "\\(\\mathbf{r}=(5t+c_3)\\mathbf{i}+\\left(8t-5t^2+c_4\\right)\\mathbf{j}\\)"
+                },
+                {
+                  "explain": "At \\(t=0\\) the ball is at \\(A\\): \\(\\mathbf r(0)=21\\mathbf j\\).",
+                  "work": "\\(c_3=0,\\qquad c_4=21\\)"
+                },
+                {
+                  "explain": "So",
+                  "work": "\\(\\mathbf{r}=5t\\,\\mathbf{i}+\\left(21+8t-5t^2\\right)\\mathbf{j}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 3U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "13(b)(ii)"
+              },
+              "options": [
+                "\\(\\mathbf{r}=5t\\,\\mathbf{i}+\\left(8t-5t^2\\right)\\mathbf{j}\\)",
+                "\\(\\mathbf{r}=5t\\,\\mathbf{i}+\\left(21+8t-10t^2\\right)\\mathbf{j}\\)",
+                "\\(\\mathbf{r}=\\left(5t+21\\right)\\mathbf{i}+\\left(8t-5t^2\\right)\\mathbf{j}\\)",
+                "\\(\\mathbf{r}=5t\\,\\mathbf{i}+\\left(21+8t-5t^2\\right)\\mathbf{j}\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "Find an expression for the position vector",
+                  "note": "The starting position is 21j: the 21 goes in the j-component."
+                }
+              ]
+            },
+            {
+              "id": "bhhs2020e1-q13b-iii",
+              "type": "mc",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Find the maximum height that the ball reaches.",
+              "hint": "Vertical velocity is zero at the top.",
+              "steps": [
+                {
+                  "explain": "At the maximum height the vertical velocity is zero.",
+                  "work": "\\(8-10t=0\\ \\Rightarrow\\ t=0.8\\ \\text{s}\\)"
+                },
+                {
+                  "explain": "Substitute into the vertical position.",
+                  "work": "\\(y(0.8)=21+8(0.8)-5(0.8)^2=21+6.4-3.2=24.2\\ \\text{m}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 240\" width=\"320\" height=\"240\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker><marker id=\"ahdc2626\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#dc2626\"/></marker><marker id=\"ahea580c\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#ea580c\"/></marker></defs><rect width=\"320\" height=\"240\" rx=\"8\" fill=\"white\"/><line x1=\"40.0\" y1=\"210.0\" x2=\"324.4\" y2=\"210.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"40.0\" y1=\"210.0\" x2=\"40.0\" y2=\"28.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><path d=\"M40.0 63.0L41.4 62.2L42.7 61.4L44.0 60.6L45.4 59.8L46.8 59.0L48.1 58.2L49.5 57.5L50.8 56.8L52.1 56.1L53.5 55.4L54.9 54.7L56.2 54.1L57.5 53.4L58.9 52.8L60.2 52.2L61.6 51.6L63.0 51.0L64.3 50.4L65.7 49.9L67.0 49.3L68.3 48.8L69.7 48.3L71.0 47.8L72.4 47.4L73.8 46.9L75.1 46.5L76.4 46.1L77.8 45.7L79.2 45.3L80.5 44.9L81.8 44.5L83.2 44.2L84.6 43.9L85.9 43.5L87.2 43.2L88.6 43.0L89.9 42.7L91.3 42.5L92.7 42.2L94.0 42.0L95.3 41.8L96.7 41.6L98.1 41.4L99.4 41.3L100.8 41.1L102.1 41.0L103.4 40.9L104.8 40.8L106.1 40.7L107.5 40.7L108.9 40.6L110.2 40.6L111.5 40.6L112.9 40.6L114.2 40.6L115.6 40.7L117.0 40.7L118.3 40.8L119.6 40.9L121.0 41.0L122.4 41.1L123.7 41.2L125.0 41.3L126.4 41.5L127.8 41.7L129.1 41.9L130.4 42.1L131.8 42.3L133.1 42.5L134.5 42.8L135.9 43.1L137.2 43.3L138.6 43.6L139.9 44.0L141.2 44.3L142.6 44.6L143.9 45.0L145.3 45.4L146.6 45.8L148.0 46.2L149.4 46.6L150.7 47.1L152.1 47.5L153.4 48.0L154.8 48.5L156.1 49.0L157.4 49.5L158.8 50.1L160.1 50.6L161.5 51.2L162.9 51.8L164.2 52.4L165.6 53.0L166.9 53.6L168.2 54.3L169.6 54.9L171.0 55.6L172.3 56.3L173.7 57.0L175.0 57.8L176.3 58.5L177.7 59.3L179.0 60.0L180.4 60.8L181.8 61.6L183.1 62.4L184.5 63.3L185.8 64.1L187.2 65.0L188.5 65.9L189.8 66.8L191.2 67.7L192.5 68.6L193.9 69.6L195.2 70.5L196.6 71.5L198.0 72.5L199.3 73.5L200.7 74.6L202.0 75.6L203.3 76.7L204.7 77.7L206.0 78.8L207.4 79.9L208.8 81.0L210.1 82.2L211.5 83.3L212.8 84.5L214.2 85.7L215.5 86.9L216.8 88.1L218.2 89.3L219.5 90.6L220.9 91.8L222.2 93.1L223.6 94.4L225.0 95.7L226.3 97.1L227.7 98.4L229.0 99.8L230.3 101.1L231.7 102.5L233.0 103.9L234.4 105.3L235.8 106.8L237.1 108.2L238.5 109.7L239.8 111.2L241.2 112.7L242.5 114.2L243.8 115.7L245.2 117.3L246.5 118.8L247.9 120.4L249.2 122.0L250.6 123.6L252.0 125.2L253.3 126.9L254.7 128.5L256.0 130.2L257.4 131.9L258.7 133.6L260.0 135.3L261.4 137.0L262.8 138.8L264.1 140.6L265.5 142.3L266.8 144.1L268.1 146.0L269.5 147.8L270.9 149.6L272.2 151.5L273.5 153.4L274.9 155.3L276.2 157.2L277.6 159.1L279.0 161.0L280.3 163.0L281.6 165.0L283.0 167.0L284.4 169.0L285.7 171.0L287.0 173.0L288.4 175.1L289.8 177.1L291.1 179.2L292.5 181.3L293.8 183.4L295.1 185.5L296.5 187.7L297.8 189.8L299.2 192.0L300.6 194.2L301.9 196.4L303.2 198.6L304.6 200.9L305.9 203.1L307.3 205.4L308.7 207.7L310.0 210.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><circle cx=\"40.0\" cy=\"63.0\" r=\"4\" fill=\"#1e293b\"/><circle cx=\"310.0\" cy=\"210.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"22.1\" y=\"67.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"305.0\" y=\"228.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"20.3\" y=\"224.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">O</text><line x1=\"40.0\" y1=\"63.0\" x2=\"65.0\" y2=\"27.0\" stroke=\"#dc2626\" stroke-width=\"2.2\" stroke-linecap=\"round\" marker-end=\"url(#ahdc2626)\"/><text x=\"68.0\" y=\"23.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#dc2626\">5</text><text x=\"74.8\" y=\"23.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#dc2626\" font-weight=\"bold\">i</text><text x=\"78.3\" y=\"23.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#dc2626\"> + 8</text><text x=\"98.5\" y=\"23.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#dc2626\" font-weight=\"bold\">j</text><circle cx=\"112.0\" cy=\"40.6\" r=\"4\" fill=\"#16a34a\"/><line x1=\"112.0\" y1=\"40.6\" x2=\"112.0\" y2=\"210.0\" stroke=\"#16a34a\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"120.0\" y=\"34.6\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"11.0\" fill=\"#16a34a\">max 24.2 m at </text><text x=\"192.0\" y=\"34.6\" font-family=\"Times New Roman,Times,serif\" font-size=\"12.3\" fill=\"#16a34a\" font-style=\"italic\">t</text><text x=\"196.7\" y=\"34.6\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"11.0\" fill=\"#16a34a\"> = 0.8</text><line x1=\"310.0\" y1=\"210.0\" x2=\"322.0\" y2=\"210.0\" stroke=\"#64748b\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"166.0\" x2=\"310.0\" y2=\"210.0\" stroke=\"#ea580c\" stroke-width=\"2.2\" stroke-linecap=\"round\" marker-end=\"url(#ahea580c)\"/><text x=\"255.2\" y=\"164.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#ea580c\">5</text><text x=\"261.9\" y=\"164.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#ea580c\" font-weight=\"bold\">i</text><text x=\"265.4\" y=\"164.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#ea580c\"> − 22</text><text x=\"292.4\" y=\"164.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#ea580c\" font-weight=\"bold\">j</text><text x=\"282.0\" y=\"204.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\" text-anchor=\"end\">77°</text><text x=\"20.0\" y=\"85.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"11.0\" fill=\"#64748b\">21</text></svg>"
+                  }
+                },
+                {
+                  "explain": "3.2 m is only the rise above \\(A\\)."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 3U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "13(b)(iii)"
+              },
+              "options": [
+                "\\(21\\) m",
+                "\\(26.6\\) m",
+                "\\(24.2\\) m",
+                "\\(3.2\\) m"
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "maximum height",
+                  "note": "Set the j-component of velocity to zero, then find the j-component of position."
+                }
+              ]
+            },
+            {
+              "id": "bhhs2020e1-q13b-iv",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Find the speed of the ball when it lands at \\(B\\) and the angle at which the ball strikes the ground.",
+              "hint": "Solve y = 0 for t, then use the velocity at that time.",
+              "steps": [
+                {
+                  "explain": "The ball lands when the vertical position is 0.",
+                  "work": "\\(21+8t-5t^2=0\\ \\Rightarrow\\ 5t^2-8t-21=0\\ \\Rightarrow\\ (5t+7)(t-3)=0\\ \\Rightarrow\\ t=3\\)"
+                },
+                {
+                  "explain": "Velocity at \\(t=3\\).",
+                  "work": "\\(\\mathbf{v}(3)=5\\mathbf{i}+(8-30)\\mathbf{j}=5\\mathbf{i}-22\\mathbf{j}\\)"
+                },
+                {
+                  "explain": "Speed is the magnitude.",
+                  "work": "\\(|\\mathbf{v}|=\\sqrt{5^2+22^2}=\\sqrt{509}\\approx22.56\\ \\text{m/s}\\)"
+                },
+                {
+                  "explain": "The angle with the ground: \\(\\tan\\alpha=\\frac{\\text{vertical}}{\\text{horizontal}}\\).",
+                  "work": "\\(\\tan\\alpha=\\frac{22}{5}\\ \\Rightarrow\\ \\alpha\\approx77^\\circ\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 240\" width=\"320\" height=\"240\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker><marker id=\"ahdc2626\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#dc2626\"/></marker><marker id=\"ahea580c\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#ea580c\"/></marker></defs><rect width=\"320\" height=\"240\" rx=\"8\" fill=\"white\"/><line x1=\"40.0\" y1=\"210.0\" x2=\"324.4\" y2=\"210.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"40.0\" y1=\"210.0\" x2=\"40.0\" y2=\"28.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><path d=\"M40.0 63.0L41.4 62.2L42.7 61.4L44.0 60.6L45.4 59.8L46.8 59.0L48.1 58.2L49.5 57.5L50.8 56.8L52.1 56.1L53.5 55.4L54.9 54.7L56.2 54.1L57.5 53.4L58.9 52.8L60.2 52.2L61.6 51.6L63.0 51.0L64.3 50.4L65.7 49.9L67.0 49.3L68.3 48.8L69.7 48.3L71.0 47.8L72.4 47.4L73.8 46.9L75.1 46.5L76.4 46.1L77.8 45.7L79.2 45.3L80.5 44.9L81.8 44.5L83.2 44.2L84.6 43.9L85.9 43.5L87.2 43.2L88.6 43.0L89.9 42.7L91.3 42.5L92.7 42.2L94.0 42.0L95.3 41.8L96.7 41.6L98.1 41.4L99.4 41.3L100.8 41.1L102.1 41.0L103.4 40.9L104.8 40.8L106.1 40.7L107.5 40.7L108.9 40.6L110.2 40.6L111.5 40.6L112.9 40.6L114.2 40.6L115.6 40.7L117.0 40.7L118.3 40.8L119.6 40.9L121.0 41.0L122.4 41.1L123.7 41.2L125.0 41.3L126.4 41.5L127.8 41.7L129.1 41.9L130.4 42.1L131.8 42.3L133.1 42.5L134.5 42.8L135.9 43.1L137.2 43.3L138.6 43.6L139.9 44.0L141.2 44.3L142.6 44.6L143.9 45.0L145.3 45.4L146.6 45.8L148.0 46.2L149.4 46.6L150.7 47.1L152.1 47.5L153.4 48.0L154.8 48.5L156.1 49.0L157.4 49.5L158.8 50.1L160.1 50.6L161.5 51.2L162.9 51.8L164.2 52.4L165.6 53.0L166.9 53.6L168.2 54.3L169.6 54.9L171.0 55.6L172.3 56.3L173.7 57.0L175.0 57.8L176.3 58.5L177.7 59.3L179.0 60.0L180.4 60.8L181.8 61.6L183.1 62.4L184.5 63.3L185.8 64.1L187.2 65.0L188.5 65.9L189.8 66.8L191.2 67.7L192.5 68.6L193.9 69.6L195.2 70.5L196.6 71.5L198.0 72.5L199.3 73.5L200.7 74.6L202.0 75.6L203.3 76.7L204.7 77.7L206.0 78.8L207.4 79.9L208.8 81.0L210.1 82.2L211.5 83.3L212.8 84.5L214.2 85.7L215.5 86.9L216.8 88.1L218.2 89.3L219.5 90.6L220.9 91.8L222.2 93.1L223.6 94.4L225.0 95.7L226.3 97.1L227.7 98.4L229.0 99.8L230.3 101.1L231.7 102.5L233.0 103.9L234.4 105.3L235.8 106.8L237.1 108.2L238.5 109.7L239.8 111.2L241.2 112.7L242.5 114.2L243.8 115.7L245.2 117.3L246.5 118.8L247.9 120.4L249.2 122.0L250.6 123.6L252.0 125.2L253.3 126.9L254.7 128.5L256.0 130.2L257.4 131.9L258.7 133.6L260.0 135.3L261.4 137.0L262.8 138.8L264.1 140.6L265.5 142.3L266.8 144.1L268.1 146.0L269.5 147.8L270.9 149.6L272.2 151.5L273.5 153.4L274.9 155.3L276.2 157.2L277.6 159.1L279.0 161.0L280.3 163.0L281.6 165.0L283.0 167.0L284.4 169.0L285.7 171.0L287.0 173.0L288.4 175.1L289.8 177.1L291.1 179.2L292.5 181.3L293.8 183.4L295.1 185.5L296.5 187.7L297.8 189.8L299.2 192.0L300.6 194.2L301.9 196.4L303.2 198.6L304.6 200.9L305.9 203.1L307.3 205.4L308.7 207.7L310.0 210.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><circle cx=\"40.0\" cy=\"63.0\" r=\"4\" fill=\"#1e293b\"/><circle cx=\"310.0\" cy=\"210.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"22.1\" y=\"67.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"305.0\" y=\"228.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"20.3\" y=\"224.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">O</text><line x1=\"40.0\" y1=\"63.0\" x2=\"65.0\" y2=\"27.0\" stroke=\"#dc2626\" stroke-width=\"2.2\" stroke-linecap=\"round\" marker-end=\"url(#ahdc2626)\"/><text x=\"68.0\" y=\"23.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#dc2626\">5</text><text x=\"74.8\" y=\"23.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#dc2626\" font-weight=\"bold\">i</text><text x=\"78.3\" y=\"23.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#dc2626\"> + 8</text><text x=\"98.5\" y=\"23.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#dc2626\" font-weight=\"bold\">j</text><circle cx=\"112.0\" cy=\"40.6\" r=\"4\" fill=\"#16a34a\"/><line x1=\"112.0\" y1=\"40.6\" x2=\"112.0\" y2=\"210.0\" stroke=\"#16a34a\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"120.0\" y=\"34.6\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"11.0\" fill=\"#16a34a\">max 24.2 m at </text><text x=\"192.0\" y=\"34.6\" font-family=\"Times New Roman,Times,serif\" font-size=\"12.3\" fill=\"#16a34a\" font-style=\"italic\">t</text><text x=\"196.7\" y=\"34.6\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"11.0\" fill=\"#16a34a\"> = 0.8</text><line x1=\"310.0\" y1=\"210.0\" x2=\"322.0\" y2=\"210.0\" stroke=\"#64748b\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"166.0\" x2=\"310.0\" y2=\"210.0\" stroke=\"#ea580c\" stroke-width=\"2.2\" stroke-linecap=\"round\" marker-end=\"url(#ahea580c)\"/><text x=\"255.2\" y=\"164.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#ea580c\">5</text><text x=\"261.9\" y=\"164.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#ea580c\" font-weight=\"bold\">i</text><text x=\"265.4\" y=\"164.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#ea580c\"> − 22</text><text x=\"292.4\" y=\"164.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#ea580c\" font-weight=\"bold\">j</text><text x=\"282.0\" y=\"204.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\" text-anchor=\"end\">77°</text><text x=\"20.0\" y=\"85.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"11.0\" fill=\"#64748b\">21</text></svg>"
+                  }
+                },
+                {
+                  "explain": "13° would be the angle with the vertical; \\(\\sqrt{89}\\) is the launch speed."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 3U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "13(b)(iv)"
+              },
+              "options": [
+                "\\(\\sqrt{89}\\approx9.43\\) m/s at about \\(58^\\circ\\) to the horizontal",
+                "\\(\\sqrt{509}\\approx22.56\\) m/s at about \\(77^\\circ\\) to the horizontal",
+                "\\(\\sqrt{509}\\approx22.56\\) m/s at about \\(13^\\circ\\) to the horizontal",
+                "\\(27\\) m/s at about \\(77^\\circ\\) to the horizontal"
+              ],
+              "answer": 1,
+              "keyPoints": [
+                {
+                  "text": "the angle at which the ball strikes the ground",
+                  "note": "Find t when the height is 0, then tan α = |vertical| / horizontal velocity."
+                }
+              ]
+            }
+          ]
         }
       ]
     }

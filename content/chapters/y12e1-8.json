@@ -353,6 +353,180 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 360 250\" style=\"display:block;margin:0 auto;font-family:system-ui,sans-serif\"><rect width=\"360\" height=\"250\" fill=\"white\"/><path d=\"M55 185 L300 185 L175 52 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M292 185 L292 177 L300 177\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"177\" cy=\"118\" r=\"4\" fill=\"#f97316\"/><text x=\"43\" y=\"202\" font-size=\"14\">A</text><text x=\"301\" y=\"202\" font-size=\"14\">B</text><text x=\"174\" y=\"46\" font-size=\"14\">C</text><text x=\"179\" y=\"112\" font-size=\"14\" fill=\"#c2410c\">M</text><text x=\"15\" y=\"230\" font-size=\"12\">M is the midpoint of AC; ∠B=90°</text></svg>"
           }
+        },
+        {
+          "id": "bhhs2020e1-q14a",
+          "type": "multipart",
+          "stem": "In the diagram, \\(OABC\\) and \\(ODEF\\) are two non-overlapping squares. \\(W\\) and \\(X\\) are the centres of these two squares respectively.\n\nPoints \\(Y\\) and \\(Z\\) are the midpoints on the intervals \\(CD\\) and \\(AF\\) respectively, as shown in the diagram, making \\(WYXZ\\) a parallelogram (\\(W\\), \\(Y\\), \\(X\\) and \\(Z\\) are the midpoints of the sides of quadrilateral \\(ACDF\\)).\n\nLet \\(A\\), \\(C\\), \\(D\\) and \\(F\\) have position vectors \\(2\\mathbf{a}\\), \\(2\\mathbf{c}\\), \\(2\\mathbf{d}\\) and \\(2\\mathbf{f}\\) respectively.\n\nIt can be shown that the interval joining the midpoint of two sides of a triangle is parallel to the third side and is half the length of this third side. You may use this result without proving it.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 270\" width=\"360\" height=\"270\"><defs><marker id=\"ah1e293b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#1e293b\"/></marker></defs><rect width=\"360\" height=\"270\" rx=\"8\" fill=\"white\"/><path d=\"M140.0 175.0L93.5 212.2L56.3 165.7L102.8 128.5Z\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linejoin=\"round\" fill-opacity=\"0.25\"/><path d=\"M140.0 175.0L177.2 72.7L279.5 109.9L242.3 212.2Z\" fill=\"#fef3c7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linejoin=\"round\" fill-opacity=\"0.3\"/><line x1=\"102.8\" y1=\"128.5\" x2=\"177.2\" y2=\"72.7\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><line x1=\"93.5\" y1=\"212.2\" x2=\"242.3\" y2=\"212.2\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><line x1=\"140.0\" y1=\"175.0\" x2=\"93.5\" y2=\"212.2\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><line x1=\"140.0\" y1=\"175.0\" x2=\"102.8\" y2=\"128.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><line x1=\"140.0\" y1=\"175.0\" x2=\"177.2\" y2=\"72.7\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><line x1=\"140.0\" y1=\"175.0\" x2=\"242.3\" y2=\"212.2\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><text x=\"77.5\" y=\"226.2\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"38.3\" y=\"169.7\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"83.8\" y=\"124.5\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">C</text><text x=\"171.3\" y=\"64.7\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">D</text><text x=\"287.5\" y=\"113.9\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">E</text><text x=\"250.3\" y=\"224.2\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">F</text><text x=\"144.0\" y=\"193.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">O</text><circle cx=\"98.2\" cy=\"170.3\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"75.0\" y=\"174.3\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">W</text><circle cx=\"209.8\" cy=\"142.4\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"217.8\" y=\"146.4\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">X</text><circle cx=\"140.0\" cy=\"100.6\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"122.8\" y=\"94.6\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">Y</text><circle cx=\"167.9\" cy=\"212.2\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"163.3\" y=\"230.2\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">Z</text><text x=\"132.2\" y=\"146.5\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#dc2626\" font-style=\"italic\">θ</text></svg>"
+          },
+          "meta": {
+            "source": "Baulkham Hills 2020 3U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "14(a)"
+          },
+          "parts": [
+            {
+              "id": "bhhs2020e1-q14a-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Consider \\(\\Delta ACF\\), express \\(\\overrightarrow{WZ}\\) in terms of \\(\\mathbf{c}\\) and \\(\\mathbf{f}\\). Similarly, find an expression for \\(\\overrightarrow{WY}\\) in terms of \\(\\mathbf{a}\\) and \\(\\mathbf{d}\\) using \\(\\Delta ACD\\).",
+              "hint": "Use the midpoint theorem: WZ = ½CF and WY = ½AD.",
+              "steps": [
+                {
+                  "explain": "\\(W\\) is the midpoint of \\(AC\\) (the centre of a square is the midpoint of its diagonal) and \\(Z\\) is the midpoint of \\(AF\\). In \\(\\triangle ACF\\), the midpoint theorem gives \\(WZ\\parallel CF\\), half as long, same direction (\\(C\\to F\\)).",
+                  "work": "\\(\\overrightarrow{WZ}=\\frac12\\overrightarrow{CF}=\\frac12\\left(\\overrightarrow{OF}-\\overrightarrow{OC}\\right)=\\frac12(2\\mathbf{f}-2\\mathbf{c})=\\mathbf{f}-\\mathbf{c}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 270\" width=\"360\" height=\"270\"><defs><marker id=\"ah1e293b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#1e293b\"/></marker><marker id=\"ahdc2626\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#dc2626\"/></marker><marker id=\"ah2563eb\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#2563eb\"/></marker></defs><rect width=\"360\" height=\"270\" rx=\"8\" fill=\"white\"/><path d=\"M140.0 175.0L93.5 212.2L56.3 165.7L102.8 128.5Z\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linejoin=\"round\" fill-opacity=\"0.25\"/><path d=\"M140.0 175.0L177.2 72.7L279.5 109.9L242.3 212.2Z\" fill=\"#fef3c7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linejoin=\"round\" fill-opacity=\"0.3\"/><line x1=\"102.8\" y1=\"128.5\" x2=\"177.2\" y2=\"72.7\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><line x1=\"93.5\" y1=\"212.2\" x2=\"242.3\" y2=\"212.2\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><line x1=\"140.0\" y1=\"175.0\" x2=\"93.5\" y2=\"212.2\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><line x1=\"140.0\" y1=\"175.0\" x2=\"102.8\" y2=\"128.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><line x1=\"140.0\" y1=\"175.0\" x2=\"177.2\" y2=\"72.7\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><line x1=\"140.0\" y1=\"175.0\" x2=\"242.3\" y2=\"212.2\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><text x=\"77.5\" y=\"226.2\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"38.3\" y=\"169.7\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"83.8\" y=\"124.5\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">C</text><text x=\"171.3\" y=\"64.7\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">D</text><text x=\"287.5\" y=\"113.9\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">E</text><text x=\"250.3\" y=\"224.2\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">F</text><text x=\"144.0\" y=\"193.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">O</text><circle cx=\"98.2\" cy=\"170.3\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"75.0\" y=\"174.3\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">W</text><circle cx=\"209.8\" cy=\"142.4\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"217.8\" y=\"146.4\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">X</text><circle cx=\"140.0\" cy=\"100.6\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"122.8\" y=\"94.6\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">Y</text><circle cx=\"167.9\" cy=\"212.2\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"163.3\" y=\"230.2\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">Z</text><text x=\"132.2\" y=\"146.5\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#dc2626\" font-style=\"italic\">θ</text><line x1=\"102.8\" y1=\"128.5\" x2=\"242.3\" y2=\"212.2\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"98.2\" y1=\"170.3\" x2=\"167.9\" y2=\"212.2\" stroke=\"#dc2626\" stroke-width=\"2.6\" stroke-linecap=\"round\" marker-end=\"url(#ahdc2626)\"/><line x1=\"93.5\" y1=\"212.2\" x2=\"177.2\" y2=\"72.7\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"98.2\" y1=\"170.3\" x2=\"140.0\" y2=\"100.6\" stroke=\"#2563eb\" stroke-width=\"2.6\" stroke-linecap=\"round\" marker-end=\"url(#ah2563eb)\"/></svg>"
+                  }
+                },
+                {
+                  "explain": "Similarly in \\(\\triangle ACD\\): \\(W\\) is the midpoint of \\(AC\\), \\(Y\\) the midpoint of \\(CD\\), so \\(WY\\parallel AD\\) (direction \\(A\\to D\\)).",
+                  "work": "\\(\\overrightarrow{WY}=\\frac12\\overrightarrow{AD}=\\frac12(2\\mathbf{d}-2\\mathbf{a})=\\mathbf{d}-\\mathbf{a}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 3U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "14(a)(i)"
+              },
+              "options": [
+                "\\(\\overrightarrow{WZ}=\\mathbf{c}-\\mathbf{f},\\ \\overrightarrow{WY}=\\mathbf{a}-\\mathbf{d}\\)",
+                "\\(\\overrightarrow{WZ}=2(\\mathbf{f}-\\mathbf{c}),\\ \\overrightarrow{WY}=2(\\mathbf{d}-\\mathbf{a})\\)",
+                "\\(\\overrightarrow{WZ}=\\mathbf{f}+\\mathbf{c},\\ \\overrightarrow{WY}=\\mathbf{d}+\\mathbf{a}\\)",
+                "\\(\\overrightarrow{WZ}=\\mathbf{f}-\\mathbf{c},\\ \\overrightarrow{WY}=\\mathbf{d}-\\mathbf{a}\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "express \\(\\overrightarrow{WZ}\\)",
+                  "note": "W is the midpoint of AC. The segment joining two midpoints is half the third side."
+                }
+              ]
+            },
+            {
+              "id": "bhhs2020e1-q14a-ii",
+              "type": "review",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "\\(\\Delta ADO\\) and \\(\\Delta CFO\\) are congruent triangles. By considering the lengths of \\(AD\\) and \\(CF\\), show that \\(\\left|\\overrightarrow{WY}\\right|=\\left|\\overrightarrow{WZ}\\right|\\).",
+              "hint": "AD = CF from the congruent triangles; WY and WZ are half of these.",
+              "steps": [
+                {
+                  "explain": "Congruent triangles have equal corresponding sides.",
+                  "work": "\\(\\triangle ADO\\equiv\\triangle CFO\\ \\Rightarrow\\ AD=CF\\)"
+                },
+                {
+                  "explain": "From (i), each of \\(WY\\) and \\(WZ\\) is half of these.",
+                  "work": "\\(\\left|\\overrightarrow{WY}\\right|=\\tfrac12\\left|\\overrightarrow{AD}\\right|=\\tfrac12\\left|\\overrightarrow{CF}\\right|=\\left|\\overrightarrow{WZ}\\right|\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 3U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "14(a)(ii)"
+              },
+              "answer": "Since △ADO ≅ △CFO, AD = CF. From (i), \\(|\\overrightarrow{WY}|=\\frac12|\\overrightarrow{AD}|\\) and \\(|\\overrightarrow{WZ}|=\\frac12|\\overrightarrow{CF}|\\), so \\(|\\overrightarrow{WY}|=|\\overrightarrow{WZ}|\\).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "show that",
+                  "note": "Use AD = CF and the halving result from (i)."
+                }
+              ]
+            },
+            {
+              "id": "bhhs2020e1-q14a-iii",
+              "type": "review",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Let \\(\\angle COD=\\theta\\) as shown above, show that \\(\\mathbf{a}\\cdot\\mathbf{f}=-\\mathbf{c}\\cdot\\mathbf{d}\\).",
+              "hint": "∠AOF = 180° − θ; use cos(180° − θ) = −cos θ and equal sides of the squares.",
+              "steps": [
+                {
+                  "explain": "Angles at \\(O\\) add to \\(360^\\circ\\). \\(\\angle AOC=\\angle DOF=90^\\circ\\) (square corners).",
+                  "work": "\\(\\angle AOF=360^\\circ-90^\\circ-90^\\circ-\\theta=180^\\circ-\\theta\\)"
+                },
+                {
+                  "explain": "Write \\(\\overrightarrow{OA}\\cdot\\overrightarrow{OF}\\) with the angle formula, using \\(\\cos(180^\\circ-\\theta)=-\\cos\\theta\\).",
+                  "work": "\\(2\\mathbf{a}\\cdot2\\mathbf{f}=|2\\mathbf{a}||2\\mathbf{f}|\\cos(180^\\circ-\\theta)=-|2\\mathbf{a}||2\\mathbf{f}|\\cos\\theta\\)"
+                },
+                {
+                  "explain": "Sides of a square are equal: \\(|2\\mathbf a|=|2\\mathbf c|\\) and \\(|2\\mathbf f|=|2\\mathbf d|\\).",
+                  "work": "\\(-|2\\mathbf{a}||2\\mathbf{f}|\\cos\\theta=-|2\\mathbf{c}||2\\mathbf{d}|\\cos\\theta=-\\,2\\mathbf{c}\\cdot2\\mathbf{d}\\)"
+                },
+                {
+                  "explain": "Divide both sides by 4.",
+                  "work": "\\(\\mathbf{a}\\cdot\\mathbf{f}=-\\mathbf{c}\\cdot\\mathbf{d}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 3U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "14(a)(iii)"
+              },
+              "answer": "∠AOC = ∠DOF = 90°, so ∠AOF = 360° − 90° − 90° − θ = 180° − θ. Then \\(2\\mathbf a\\cdot2\\mathbf f=|2\\mathbf a||2\\mathbf f|\\cos(180°-\\theta)=-|2\\mathbf a||2\\mathbf f|\\cos\\theta\\). As |2a| = |2c| and |2f| = |2d| (sides of squares), this equals \\(-|2\\mathbf c||2\\mathbf d|\\cos\\theta=-2\\mathbf c\\cdot2\\mathbf d\\). Dividing by 4: \\(\\mathbf a\\cdot\\mathbf f=-\\mathbf c\\cdot\\mathbf d\\).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "show that",
+                  "note": "Find ∠AOF in terms of θ, then compare OA·OF with OC·OD."
+                }
+              ]
+            },
+            {
+              "id": "bhhs2020e1-q14a-iv",
+              "type": "review",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "By considering the dot product of vectors \\(\\overrightarrow{WY}\\) and \\(\\overrightarrow{WZ}\\), as well as the results from parts (ii) and (iii), show that \\(WYXZ\\) is a square.",
+              "hint": "Expand (d − a)·(f − c), use (iii), and remember a·c = d·f = 0.",
+              "steps": [
+                {
+                  "explain": "Use (i).",
+                  "work": "\\(\\overrightarrow{WY}\\cdot\\overrightarrow{WZ}=(\\mathbf{d}-\\mathbf{a})\\cdot(\\mathbf{f}-\\mathbf{c})=\\mathbf{d}\\cdot\\mathbf{f}-\\mathbf{d}\\cdot\\mathbf{c}-\\mathbf{a}\\cdot\\mathbf{f}+\\mathbf{a}\\cdot\\mathbf{c}\\)"
+                },
+                {
+                  "explain": "By (iii), \\(-\\mathbf a\\cdot\\mathbf f=\\mathbf c\\cdot\\mathbf d\\), which cancels \\(-\\mathbf d\\cdot\\mathbf c\\).",
+                  "work": "\\(=\\mathbf{d}\\cdot\\mathbf{f}+\\mathbf{a}\\cdot\\mathbf{c}\\)"
+                },
+                {
+                  "explain": "\\(OD\\perp OF\\) and \\(OA\\perp OC\\) (square corners), so both dot products are 0.",
+                  "work": "\\(\\mathbf{d}\\cdot\\mathbf{f}=0,\\quad\\mathbf{a}\\cdot\\mathbf{c}=0\\ \\Rightarrow\\ \\overrightarrow{WY}\\cdot\\overrightarrow{WZ}=0\\)"
+                },
+                {
+                  "explain": "So \\(WY\\perp WZ\\). With \\(|WY|=|WZ|\\) from (ii), the parallelogram \\(WYXZ\\) has a pair of equal, perpendicular adjacent sides, so it is a square.",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 270\" width=\"360\" height=\"270\"><defs><marker id=\"ah1e293b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#1e293b\"/></marker></defs><rect width=\"360\" height=\"270\" rx=\"8\" fill=\"white\"/><path d=\"M140.0 175.0L93.5 212.2L56.3 165.7L102.8 128.5Z\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linejoin=\"round\" fill-opacity=\"0.25\"/><path d=\"M140.0 175.0L177.2 72.7L279.5 109.9L242.3 212.2Z\" fill=\"#fef3c7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linejoin=\"round\" fill-opacity=\"0.3\"/><line x1=\"102.8\" y1=\"128.5\" x2=\"177.2\" y2=\"72.7\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><line x1=\"93.5\" y1=\"212.2\" x2=\"242.3\" y2=\"212.2\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><line x1=\"140.0\" y1=\"175.0\" x2=\"93.5\" y2=\"212.2\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><line x1=\"140.0\" y1=\"175.0\" x2=\"102.8\" y2=\"128.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><line x1=\"140.0\" y1=\"175.0\" x2=\"177.2\" y2=\"72.7\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><line x1=\"140.0\" y1=\"175.0\" x2=\"242.3\" y2=\"212.2\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><text x=\"77.5\" y=\"226.2\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"38.3\" y=\"169.7\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"83.8\" y=\"124.5\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">C</text><text x=\"171.3\" y=\"64.7\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">D</text><text x=\"287.5\" y=\"113.9\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">E</text><text x=\"250.3\" y=\"224.2\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">F</text><text x=\"144.0\" y=\"193.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">O</text><circle cx=\"98.2\" cy=\"170.3\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"75.0\" y=\"174.3\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">W</text><circle cx=\"209.8\" cy=\"142.4\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"217.8\" y=\"146.4\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">X</text><circle cx=\"140.0\" cy=\"100.6\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"122.8\" y=\"94.6\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">Y</text><circle cx=\"167.9\" cy=\"212.2\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"163.3\" y=\"230.2\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">Z</text><text x=\"132.2\" y=\"146.5\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#dc2626\" font-style=\"italic\">θ</text><path d=\"M98.2 170.3L140.0 100.6L209.8 142.4L167.9 212.2Z\" fill=\"#bbf7d0\" stroke=\"#16a34a\" stroke-width=\"2.4\" stroke-linejoin=\"round\" fill-opacity=\"0.5\"/></svg>"
+                  }
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 3U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "14(a)(iv)"
+              },
+              "answer": "\\(\\overrightarrow{WY}\\cdot\\overrightarrow{WZ}=(\\mathbf d-\\mathbf a)\\cdot(\\mathbf f-\\mathbf c)=\\mathbf d\\cdot\\mathbf f-\\mathbf d\\cdot\\mathbf c-\\mathbf a\\cdot\\mathbf f+\\mathbf a\\cdot\\mathbf c=\\mathbf d\\cdot\\mathbf f+\\mathbf a\\cdot\\mathbf c\\) (using (iii)) = 0, because OD ⊥ OF and OA ⊥ OC. So WY ⊥ WZ, and with |WY| = |WZ| from (ii), the parallelogram WYXZ has two equal perpendicular adjacent sides: it is a square.",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "show that \\(WYXZ\\) is a square",
+                  "note": "Show WY·WZ = 0 (perpendicular) and use |WY| = |WZ| from (ii)."
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -511,6 +685,51 @@
               ]
             }
           ]
+        },
+        {
+          "id": "bhhs2020e1-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "If \\(\\mathbf{u}=2\\mathbf{i}+3\\mathbf{j}\\), the unit vector in the direction of \\(\\mathbf{u}\\) is:",
+          "hint": "Divide the vector by its magnitude √(2² + 3²).",
+          "steps": [
+            {
+              "explain": "A unit vector in the direction of \\(\\mathbf u\\) is \\(\\mathbf u\\) divided by its length.",
+              "work": "\\(\\hat{\\mathbf{u}}=\\frac{\\mathbf{u}}{|\\mathbf{u}|}\\)"
+            },
+            {
+              "explain": "Find the length using Pythagoras.",
+              "work": "\\(|\\mathbf{u}|=\\sqrt{2^2+3^2}=\\sqrt{4+9}=\\sqrt{13}\\)"
+            },
+            {
+              "explain": "Divide.",
+              "work": "\\(\\hat{\\mathbf{u}}=\\frac{1}{\\sqrt{13}}\\left(2\\mathbf{i}+3\\mathbf{j}\\right)\\)"
+            },
+            {
+              "explain": "Option A divides by \\(|\\mathbf u|^2=13\\) and option B adds the components (\\(2+3\\)) — both wrong. Check: \\(\\left|\\frac{1}{\\sqrt{13}}(2,3)\\right|=\\frac{\\sqrt{13}}{\\sqrt{13}}=1\\) ✓."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills 2020 3U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "1"
+          },
+          "options": [
+            "\\(\\frac{1}{13}\\left(2\\mathbf{i}+3\\mathbf{j}\\right)\\)",
+            "\\(\\frac{1}{5}\\left(2\\mathbf{i}+3\\mathbf{j}\\right)\\)",
+            "\\(\\frac{1}{\\sqrt{13}}\\left(2\\mathbf{i}+3\\mathbf{j}\\right)\\)",
+            "\\(\\sqrt{13}\\left(2\\mathbf{i}+3\\mathbf{j}\\right)\\)"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "the unit vector in the direction of",
+              "note": "Unit vector = vector ÷ its length. The length is √(2² + 3²)."
+            }
+          ]
         }
       ]
     },
@@ -658,6 +877,50 @@
                   "note": "v minus its projection onto u is always perpendicular to u — check u·w."
                 }
               ]
+            }
+          ]
+        },
+        {
+          "id": "bhhs2020e1-q9",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "If \\(\\mathbf{u}\\) and \\(\\mathbf{v}\\) are two non-zero vectors on the Cartesian plane, which of the following statements is NOT ALWAYS CORRECT ?",
+          "hint": "The length of proj_v u is |u||cos θ|. Which statement compares it with the wrong vector?",
+          "steps": [
+            {
+              "explain": "The projection of \\(\\mathbf u\\) onto \\(\\mathbf v\\) is the 'shadow' of \\(\\mathbf u\\) on the line of \\(\\mathbf v\\). Its length is \\(|\\mathbf u||\\cos\\theta|\\le|\\mathbf u|\\), so A is always true.",
+              "work": "\\(\\left|\\operatorname{proj}_{\\mathbf{v}}\\mathbf{u}\\right|=|\\mathbf{u}|\\,|\\cos\\theta|\\)"
+            },
+            {
+              "explain": "The signed length is \\(\\mathbf u\\cdot\\hat{\\mathbf v}=\\frac{\\mathbf u\\cdot\\mathbf v}{|\\mathbf v|}\\), so C and D are always true."
+            },
+            {
+              "explain": "B compares with the length of \\(\\mathbf v\\), which has nothing to do with the shadow. Counterexample: \\(\\mathbf u=2\\mathbf i+2\\mathbf j\\), \\(\\mathbf v=\\mathbf i\\).",
+              "work": "\\(\\operatorname{proj}_{\\mathbf{v}}\\mathbf{u}=2\\mathbf{i},\\quad|2\\mathbf{i}|=2\\gt1=|\\mathbf{v}|\\)"
+            },
+            {
+              "explain": "So B is not always correct."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills 2020 3U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "9"
+          },
+          "options": [
+            "\\(\\left|\\operatorname{proj}_{\\mathbf{v}}\\mathbf{u}\\right|\\le|\\mathbf{u}|\\)",
+            "\\(\\left|\\operatorname{proj}_{\\mathbf{v}}\\mathbf{u}\\right|\\le|\\mathbf{v}|\\)",
+            "\\(\\left|\\operatorname{proj}_{\\mathbf{v}}\\mathbf{u}\\right|=\\frac{|\\mathbf{u}\\cdot\\mathbf{v}|}{|\\mathbf{v}|}\\)",
+            "\\(\\left|\\operatorname{proj}_{\\mathbf{v}}\\mathbf{u}\\right|=\\left|\\mathbf{u}\\cdot\\hat{\\mathbf{v}}\\right|\\)"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "NOT ALWAYS CORRECT",
+              "note": "Look for the statement that can fail: try a long u and a short v."
             }
           ]
         }

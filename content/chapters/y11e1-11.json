@@ -153,6 +153,51 @@
               "note": "α and −α cancel in the sum, so β = 4 straight away."
             }
           ]
+        },
+        {
+          "id": "bhhs2020e1-q14b",
+          "type": "mc",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "If \\(\\alpha\\) and \\(\\beta\\) are the roots of the equation \\(x^2+mx+n=0\\), find the roots of \\(nx^2-mx+1=0\\) in terms of \\(\\alpha\\) and \\(\\beta\\).",
+          "hint": "Use α + β = −m, αβ = n, then compare sum and product of the new roots.",
+          "steps": [
+            {
+              "explain": "Sum and product of roots of \\(x^2+mx+n=0\\).",
+              "work": "\\(\\alpha+\\beta=-m,\\qquad\\alpha\\beta=n\\)"
+            },
+            {
+              "explain": "Divide \\(nx^2-mx+1=0\\) by \\(n\\) and substitute.",
+              "work": "\\(x^2-\\frac{m}{n}x+\\frac1n=0\\ \\Rightarrow\\ x^2+\\frac{\\alpha+\\beta}{\\alpha\\beta}x+\\frac{1}{\\alpha\\beta}=0\\)"
+            },
+            {
+              "explain": "Guess \\(-\\frac1\\alpha\\) and \\(-\\frac1\\beta\\): check their sum and product.",
+              "work": "\\(-\\frac1\\alpha-\\frac1\\beta=-\\frac{\\alpha+\\beta}{\\alpha\\beta},\\qquad\\left(-\\frac1\\alpha\\right)\\left(-\\frac1\\beta\\right)=\\frac{1}{\\alpha\\beta}\\)"
+            },
+            {
+              "explain": "The sum must be \\(-\\frac{\\alpha+\\beta}{\\alpha\\beta}\\) (= minus the \\(x\\)-coefficient) and the product \\(\\frac{1}{\\alpha\\beta}\\) — both match. So the roots are \\(-\\frac1\\alpha\\) and \\(-\\frac1\\beta\\)."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills 2020 3U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "14(b)"
+          },
+          "options": [
+            "\\(-\\alpha\\) and \\(-\\beta\\)",
+            "\\(\\alpha\\beta\\) and \\(\\alpha+\\beta\\)",
+            "\\(-\\frac{1}{\\alpha}\\) and \\(-\\frac{1}{\\beta}\\)",
+            "\\(\\frac{1}{\\alpha}\\) and \\(\\frac{1}{\\beta}\\)"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "find the roots of \\(nx^2-mx+1=0\\)",
+              "note": "Write m and n using α and β; the new equation's sum is m/n and product 1/n."
+            }
+          ]
         }
       ]
     }
