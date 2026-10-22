@@ -10538,7 +10538,7 @@
           "difficulty": "medium",
           "stem": "The area of the trapezium shown below is 45 cm². Calculate the value of h.",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><polygon points=\"65,160 105,55 280,55 320,160\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M65 160H320\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><path d=\"M80 160V120H120\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"1.6\"/><text x=\"142\" y=\"45\" font-size=\"11\">h + 2 cm</text><text x=\"152\" y=\"178\" font-size=\"11\">3h − 4 cm</text><text x=\"73\" y=\"143\" font-size=\"11\">h cm</text></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"400\" height=\"250\" viewBox=\"0 0 400 250\"><polygon points=\"120,65 280,65 330,190 70,190\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M120 65H280\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M70 190H330\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M120 65V190\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\"/><path d=\"M120 174V190H136V174Z\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"1.6\"/><g fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\"><text x=\"169\" y=\"51\">h + 2 cm</text><text x=\"165\" y=\"213\">3h − 4 cm</text><text x=\"140\" y=\"132\">h cm</text></g></svg>"
           },
           "options": [
             "5 cm",
@@ -10550,21 +10550,30 @@
           "hint": "Use the trapezium area formula: half the sum of the parallel sides times the perpendicular height.",
           "steps": [
             {
-              "explain": "Identify the parallel sides and the height from the diagram.",
-              "work": "Parallel sides: (h+2) cm and (3h−4) cm; height = h cm"
+              "explain": "The top and bottom sides are parallel. The perpendicular height is h cm; the right-angle marker shows it is perpendicular to both bases.",
+              "work": "\\(\\text{parallel sides: }(h+2)\\text{ cm and }(3h-4)\\text{ cm},\\quad \\text{height}=h\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"400\" height=\"250\" viewBox=\"0 0 400 250\"><polygon points=\"120,65 280,65 330,190 70,190\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M120 65H280\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"2.8\"/><path d=\"M70 190H330\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"2.8\"/><path d=\"M120 65V190\" fill=\"none\" stroke=\"#0284c7\" stroke-width=\"2.8\"/><path d=\"M120 174V190H136V174Z\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"1.6\"/><g fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\"><text x=\"169\" y=\"51\">h + 2 cm</text><text x=\"165\" y=\"213\">3h − 4 cm</text><text x=\"140\" y=\"132\">h cm</text></g></svg>"
+              }
             },
             {
-              "explain": "Substitute the area into the trapezium formula.",
-              "work": "45 = 1/2[(h+2)+(3h−4)]h"
+              "explain": "Substitute the two parallel sides and perpendicular height into the trapezium area formula.",
+              "work": "\\(45=\\frac{1}{2}\\big[(h+2)+(3h-4)\\big]h\\)\n\\(90=(4h-2)h\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"400\" height=\"250\" viewBox=\"0 0 400 250\"><polygon points=\"120,65 280,65 330,190 70,190\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M120 65H280\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"2.8\"/><path d=\"M70 190H330\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"2.8\"/><path d=\"M120 65V190\" fill=\"none\" stroke=\"#0284c7\" stroke-width=\"2.8\"/><path d=\"M120 174V190H136V174Z\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"1.6\"/><g fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\"><text x=\"169\" y=\"51\">h + 2 cm</text><text x=\"165\" y=\"213\">3h − 4 cm</text><text x=\"140\" y=\"132\">h cm</text></g></svg>"
+              }
             },
             {
-              "explain": "Simplify and solve the quadratic.",
-              "work": "90 = (4h−2)h\n2h² − h − 45 = 0\n(2h+9)(h−5)=0; h=5 cm since h>0"
+              "explain": "Expand and factor the quadratic. Since h is a length, reject the negative root.",
+              "work": "\\(2h^2-h-45=0=(2h+9)(h-5)\\)\n\\(h=-\\frac{9}{2}\\text{ or }h=5;\\quad h>0\\Rightarrow h=5\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"400\" height=\"250\" viewBox=\"0 0 400 250\"><polygon points=\"120,65 280,65 330,190 70,190\" fill=\"#a7f3d0\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M120 65H280\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M70 190H330\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M120 65V190\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\"/><path d=\"M120 174V190H136V174Z\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"1.6\"/><g fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\"><text x=\"169\" y=\"51\">h + 2 cm</text><text x=\"165\" y=\"213\">3h − 4 cm</text><text x=\"140\" y=\"132\">h cm</text></g></svg>"
+              }
             }
           ],
           "keyPoints": [
             {
-              "text": "45 cm²",
+              "text": "\\(45\\text{ cm}^2\\)",
               "note": "Use the trapezium area formula: half the sum of the parallel sides times the perpendicular height."
             }
           ],
