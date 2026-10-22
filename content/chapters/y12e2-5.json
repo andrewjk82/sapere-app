@@ -7,7 +7,104 @@
       "topicId": "y12e2-5A",
       "code": "5A",
       "title": "Products to Sums",
-      "questions": []
+      "questions": [
+        {
+          "id": "bbhs2020-ext2-q12d",
+          "type": "multipart",
+          "stem": "",
+          "meta": {
+            "source": "Blacktown Boys 2020 4U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "12(d)"
+          },
+          "parts": [
+            {
+              "id": "bbhs2020-ext2-q12d-i",
+              "type": "review",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Show that \\(\\sin(A+B)+\\sin(A-B)=2\\sin A\\cos B\\)",
+              "hint": "Expand both compound angles and add.",
+              "steps": [
+                {
+                  "explain": "Expand both with the compound angle formulas.",
+                  "work": "\\(\\sin(A+B)=\\sin A\\cos B+\\cos A\\sin B,\\qquad\\sin(A-B)=\\sin A\\cos B-\\cos A\\sin B\\)"
+                },
+                {
+                  "explain": "Add: the \\(\\cos A\\sin B\\) terms cancel.",
+                  "work": "\\(\\sin(A+B)+\\sin(A-B)=2\\sin A\\cos B\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 4U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "12(d)(i)"
+              },
+              "answer": "\\(\\sin(A+B)+\\sin(A-B)=(\\sin A\\cos B+\\cos A\\sin B)+(\\sin A\\cos B-\\cos A\\sin B)=2\\sin A\\cos B\\).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Show that",
+                  "note": "Use sin(A ± B) = sin A cos B ± cos A sin B."
+                }
+              ]
+            },
+            {
+              "id": "bbhs2020-ext2-q12d-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Hence evaluate \\(\\int_0^{\\frac{\\pi}{2}}\\sin9x\\cos6x\\,dx\\)",
+              "hint": "Turn the product into ½(sin 15x + sin 3x) using (i).",
+              "steps": [
+                {
+                  "explain": "Use (i) with \\(A=9x\\), \\(B=6x\\): \\(\\sin9x\\cos6x=\\frac12\\left(\\sin15x+\\sin3x\\right)\\).",
+                  "work": "\\(\\int_0^{\\frac\\pi2}\\sin9x\\cos6x\\,dx=\\frac12\\int_0^{\\frac\\pi2}\\left(\\sin15x+\\sin3x\\right)dx\\)"
+                },
+                {
+                  "explain": "Integrate each sine: \\(\\int\\sin kx\\,dx=-\\frac1k\\cos kx\\).",
+                  "work": "\\(=\\frac12\\left[-\\frac{\\cos15x}{15}-\\frac{\\cos3x}{3}\\right]_0^{\\frac\\pi2}\\)"
+                },
+                {
+                  "explain": "Upper limit: \\(\\cos\\frac{15\\pi}{2}=0\\) and \\(\\cos\\frac{3\\pi}{2}=0\\).",
+                  "work": "\\(\\left[\\dots\\right]_{x=\\frac\\pi2}=0\\)"
+                },
+                {
+                  "explain": "Lower limit: \\(\\cos0=1\\).",
+                  "work": "\\(\\left[\\dots\\right]_{x=0}=-\\frac{1}{15}-\\frac13=-\\frac{6}{15}\\)"
+                },
+                {
+                  "explain": "Subtract and multiply by \\(\\frac12\\).",
+                  "work": "\\(\\frac12\\left(0-\\left(-\\frac{6}{15}\\right)\\right)=\\frac{3}{15}=\\frac15\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 4U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "12(d)(ii)"
+              },
+              "options": [
+                "\\(0\\)",
+                "\\(\\frac15\\)",
+                "\\(\\frac25\\)",
+                "\\(\\frac{1}{15}\\)"
+              ],
+              "answer": 1,
+              "keyPoints": [
+                {
+                  "text": "Hence evaluate",
+                  "note": "With A = 9x, B = 6x, part (i) turns the product into a sum."
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "topicId": "y12e2-5B",

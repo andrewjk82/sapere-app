@@ -716,6 +716,146 @@
               "note": "Write tan x = sin x/cos x and multiply through by cos x to see du/u."
             }
           ]
+        },
+        {
+          "id": "bbhs2020-ext2-q6",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Using a suitable substitution \\(\\int_a^bx^9e^{3x^{10}}dx\\), where \\(a\\) and \\(b\\) are real constants, can be written as",
+          "hint": "Let u = x¹⁰; then x⁹ dx = du/10. Change the limits too.",
+          "steps": [
+            {
+              "explain": "The power \\(x^{10}\\) appears inside the exponential, and \\(x^9\\) is (a multiple of) its derivative. So let \\(u=x^{10}\\).",
+              "work": "\\(u=x^{10},\\qquad\\frac{du}{dx}=10x^9\\ \\Rightarrow\\ x^9\\,dx=\\frac{1}{10}\\,du\\)"
+            },
+            {
+              "explain": "Change the limits: when \\(x=a\\), \\(u=a^{10}\\); when \\(x=b\\), \\(u=b^{10}\\).",
+              "work": "\\(x=a\\Rightarrow u=a^{10},\\qquad x=b\\Rightarrow u=b^{10}\\)"
+            },
+            {
+              "explain": "Substitute everything: \\(e^{3x^{10}}=e^{3u}\\).",
+              "work": "\\(\\int_a^bx^9e^{3x^{10}}\\,dx=\\frac{1}{10}\\int_{a^{10}}^{b^{10}}e^{3u}\\,du\\)"
+            },
+            {
+              "explain": "That is option B. (Option D uses \\(u=3x^{10}\\) but then the factor should be \\(\\frac{1}{30}\\), not \\(\\frac13\\).)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys 2020 4U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "6"
+          },
+          "options": [
+            "\\(\\int_a^be^{3u}\\,du\\)",
+            "\\(\\frac{1}{10}\\int_{a^{10}}^{b^{10}}e^{3u}\\,du\\)",
+            "\\(\\frac{1}{30}\\int_{30a^9}^{30b^9}e^u\\,du\\)",
+            "\\(\\frac13\\int_{3a^{10}}^{3b^{10}}e^u\\,du\\)"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "Using a suitable substitution",
+              "note": "x⁹ is part of the derivative of x¹⁰ — substitute u = x¹⁰."
+            }
+          ]
+        },
+        {
+          "id": "bbhs2020-ext2-q12b",
+          "type": "review",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Use integration to show that\n\n\\(\\int\\frac{e^{2x}-e^{-2x}}{e^{2x}+e^{-2x}}\\,dx=\\log_e\\sqrt{e^{4x}+1}-x+c\\)",
+          "hint": "Let u = e^(2x) + e^(−2x); the numerator is half of du/dx.",
+          "steps": [
+            {
+              "explain": "The numerator is half the derivative of the denominator. Let \\(u=e^{2x}+e^{-2x}\\).",
+              "work": "\\(\\frac{du}{dx}=2e^{2x}-2e^{-2x}=2\\left(e^{2x}-e^{-2x}\\right)\\)"
+            },
+            {
+              "explain": "So the integral becomes \\(\\frac12\\int\\frac{du}{u}\\).",
+              "work": "\\(\\int\\frac{e^{2x}-e^{-2x}}{e^{2x}+e^{-2x}}\\,dx=\\frac12\\ln\\left(e^{2x}+e^{-2x}\\right)+c\\)"
+            },
+            {
+              "explain": "Rewrite the inside with a common denominator \\(e^{2x}\\).",
+              "work": "\\(e^{2x}+e^{-2x}=\\frac{e^{4x}+1}{e^{2x}}\\)"
+            },
+            {
+              "explain": "Use the log laws \\(\\ln\\frac AB=\\ln A-\\ln B\\) and \\(\\ln e^{2x}=2x\\).",
+              "work": "\\(\\frac12\\ln\\frac{e^{4x}+1}{e^{2x}}=\\frac12\\ln\\left(e^{4x}+1\\right)-\\frac12(2x)\\)"
+            },
+            {
+              "explain": "Finally \\(\\frac12\\ln A=\\ln\\sqrt A\\).",
+              "work": "\\(=\\log_e\\sqrt{e^{4x}+1}-x+c\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys 2020 4U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "12(b)"
+          },
+          "answer": "Let u = e^{2x} + e^{−2x}, du = 2(e^{2x} − e^{−2x})dx. Integral = ½∫du/u = ½ln(e^{2x}+e^{−2x}) = ½ln((e^{4x}+1)/e^{2x}) = ½ln(e^{4x}+1) − ½(2x) = ln√(e^{4x}+1) − x + c.",
+          "manual": true,
+          "keyPoints": [
+            {
+              "text": "Use integration to show that",
+              "note": "Spot f′(x)/f(x): the numerator is half the derivative of the denominator."
+            }
+          ]
+        },
+        {
+          "id": "bbhs2020-ext2-q15b",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Use the substitution \\(t=\\tan\\frac{x}{2}\\) to find the value of \\(a\\), given that\n\n\\(\\int_0^{\\frac{\\pi}{2}}\\frac{a}{5+3\\sin x+4\\cos x}\\,dx=1\\)",
+          "hint": "After the t-substitution the denominator becomes (t + 3)².",
+          "steps": [
+            {
+              "explain": "\\(t\\)-substitution: \\(dx=\\frac{2\\,dt}{1+t^2}\\), \\(\\sin x=\\frac{2t}{1+t^2}\\), \\(\\cos x=\\frac{1-t^2}{1+t^2}\\). Limits: \\(x=0\\to t=0\\); \\(x=\\frac\\pi2\\to t=\\tan\\frac\\pi4=1\\).",
+              "work": "\\(t=\\tan\\tfrac{x}{2}\\)"
+            },
+            {
+              "explain": "Substitute and multiply the denominator through by \\(1+t^2\\).",
+              "work": "\\(a\\int_0^1\\frac{2\\,dt}{5(1+t^2)+3(2t)+4(1-t^2)}=1\\)"
+            },
+            {
+              "explain": "Simplify the denominator.",
+              "work": "\\(5+5t^2+6t+4-4t^2=t^2+6t+9=(t+3)^2\\)"
+            },
+            {
+              "explain": "Integrate \\((t+3)^{-2}\\).",
+              "work": "\\(2a\\int_0^1(t+3)^{-2}\\,dt=2a\\left[-\\frac{1}{t+3}\\right]_0^1=2a\\left(-\\frac14+\\frac13\\right)=2a\\cdot\\frac{1}{12}=\\frac{a}{6}\\)"
+            },
+            {
+              "explain": "Set equal to 1.",
+              "work": "\\(\\frac{a}{6}=1\\ \\Rightarrow\\ a=6\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys 2020 4U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "15(b)"
+          },
+          "options": [
+            "\\(a=3\\)",
+            "\\(a=\\frac16\\)",
+            "\\(a=6\\)",
+            "\\(a=12\\)"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "Use the substitution \\(t=\\tan\\frac{x}{2}\\)",
+              "note": "Change limits to t = 0 and t = 1; the denominator simplifies to a perfect square."
+            }
+          ]
         }
       ]
     },
@@ -1182,6 +1322,118 @@
               ]
             }
           ]
+        },
+        {
+          "id": "bbhs2020-ext2-q12c",
+          "type": "multipart",
+          "stem": "",
+          "meta": {
+            "source": "Blacktown Boys 2020 4U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "12(c)"
+          },
+          "parts": [
+            {
+              "id": "bbhs2020-ext2-q12c-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Find the values of \\(A,B\\) and \\(C\\) such that \\(\\frac{6x^2+7x-3}{(x-5)\\left(x^2+1\\right)}=\\frac{A}{x-5}+\\frac{Bx+C}{x^2+1}\\)",
+              "hint": "Multiply through; x = 5 gives A; x = 0 gives C; x² coefficients give B.",
+              "steps": [
+                {
+                  "explain": "Multiply both sides by \\((x-5)(x^2+1)\\).",
+                  "work": "\\(6x^2+7x-3=A\\left(x^2+1\\right)+(Bx+C)(x-5)\\)"
+                },
+                {
+                  "explain": "\\(x=5\\) removes the second term.",
+                  "work": "\\(150+35-3=26A\\ \\Rightarrow\\ 182=26A\\ \\Rightarrow\\ A=7\\)"
+                },
+                {
+                  "explain": "\\(x=0\\):",
+                  "work": "\\(-3=A-5C=7-5C\\ \\Rightarrow\\ C=2\\)"
+                },
+                {
+                  "explain": "Compare \\(x^2\\) coefficients.",
+                  "work": "\\(6=A+B=7+B\\ \\Rightarrow\\ B=-1\\)"
+                },
+                {
+                  "explain": "Check with \\(x=1\\): LHS \\(10\\); RHS \\(2A+(B+C)(-4)=14-4=10\\) ✓."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 4U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "12(c)(i)"
+              },
+              "options": [
+                "\\(A=7,\\ B=1,\\ C=-2\\)",
+                "\\(A=6,\\ B=0,\\ C=2\\)",
+                "\\(A=7,\\ B=-1,\\ C=-2\\)",
+                "\\(A=7,\\ B=-1,\\ C=2\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "Find the values of \\(A,B\\) and \\(C\\)",
+                  "note": "Substitute x = 5 and x = 0, then compare x² coefficients."
+                }
+              ]
+            },
+            {
+              "id": "bbhs2020-ext2-q12c-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Hence find \\(\\int\\frac{6x^2+7x-3}{(x-5)\\left(x^2+1\\right)}\\,dx\\)",
+              "hint": "Split (−x + 2)/(x² + 1) into a log part and an inverse-tan part.",
+              "steps": [
+                {
+                  "explain": "Use (i) and split the second fraction into two parts.",
+                  "work": "\\(\\int\\left(\\frac{7}{x-5}+\\frac{-x}{x^2+1}+\\frac{2}{x^2+1}\\right)dx\\)"
+                },
+                {
+                  "explain": "First part: a log.",
+                  "work": "\\(\\int\\frac{7}{x-5}\\,dx=7\\ln|x-5|\\)"
+                },
+                {
+                  "explain": "Second part: \\(-x\\) is \\(-\\frac12\\) of the derivative of \\(x^2+1\\).",
+                  "work": "\\(\\int\\frac{-x}{x^2+1}\\,dx=-\\frac12\\int\\frac{2x}{x^2+1}\\,dx=-\\frac12\\ln\\left(x^2+1\\right)\\)"
+                },
+                {
+                  "explain": "Third part: inverse tan.",
+                  "work": "\\(\\int\\frac{2}{x^2+1}\\,dx=2\\tan^{-1}x\\)"
+                },
+                {
+                  "explain": "Combine.",
+                  "work": "\\(7\\ln|x-5|-\\frac12\\ln\\left(x^2+1\\right)+2\\tan^{-1}x+c\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 4U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "12(c)(ii)"
+              },
+              "options": [
+                "\\(7\\ln|x-5|-\\ln\\left(x^2+1\\right)+2\\tan^{-1}x+c\\)",
+                "\\(7\\ln|x-5|-\\frac12\\ln\\left(x^2+1\\right)-2\\tan^{-1}x+c\\)",
+                "\\(7\\ln|x-5|-\\frac12\\ln\\left(x^2+1\\right)+2\\tan^{-1}x+c\\)",
+                "\\(7\\ln|x-5|+\\frac12\\ln\\left(x^2+1\\right)+2\\tan^{-1}x+c\\)"
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "Hence find",
+                  "note": "Use A = 7, B = −1, C = 2 and integrate each piece."
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1381,6 +1633,113 @@
                 {
                   "text": "Hence find",
                   "note": "Use A = 4, B = 2; then split (2x + 1)/(x² + 2x + 5) into a log part and an inverse-tan part."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bbhs2020-ext2-q12a",
+          "type": "multipart",
+          "stem": "Find",
+          "meta": {
+            "source": "Blacktown Boys 2020 4U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "12(a)"
+          },
+          "parts": [
+            {
+              "id": "bbhs2020-ext2-q12a-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "\\(\\int\\frac{2\\,dx}{x^2-8x+21}\\)",
+              "hint": "Complete the square: (x − 4)² + 5.",
+              "steps": [
+                {
+                  "explain": "The denominator has no real factors, so complete the square: half of \\(-8\\) is \\(-4\\).",
+                  "work": "\\(x^2-8x+21=(x^2-8x+16)+5=(x-4)^2+5\\)"
+                },
+                {
+                  "explain": "Now it matches \\(\\int\\frac{du}{u^2+a^2}=\\frac{1}{a}\\tan^{-1}\\frac{u}{a}\\) with \\(u=x-4\\) and \\(a=\\sqrt5\\).",
+                  "work": "\\(2\\int\\frac{dx}{(x-4)^2+\\left(\\sqrt5\\right)^2}\\)"
+                },
+                {
+                  "explain": "Integrate.",
+                  "work": "\\(=2\\cdot\\frac{1}{\\sqrt5}\\tan^{-1}\\left(\\frac{x-4}{\\sqrt5}\\right)+c=\\frac{2}{\\sqrt5}\\tan^{-1}\\left(\\frac{x-4}{\\sqrt5}\\right)+c\\)"
+                },
+                {
+                  "explain": "Remember \\(a=\\sqrt5\\), not 5."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 4U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "12(a)(i)"
+              },
+              "options": [
+                "\\(\\frac{1}{\\sqrt5}\\tan^{-1}\\left(\\frac{x-4}{\\sqrt5}\\right)+c\\)",
+                "\\(2\\tan^{-1}\\left(\\frac{x-4}{\\sqrt5}\\right)+c\\)",
+                "\\(\\frac{2}{5}\\tan^{-1}\\left(\\frac{x-4}{5}\\right)+c\\)",
+                "\\(\\frac{2}{\\sqrt5}\\tan^{-1}\\left(\\frac{x-4}{\\sqrt5}\\right)+c\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "\\(\\int\\frac{2\\,dx}{x^2-8x+21}\\)",
+                  "note": "Complete the square in the denominator, then use the inverse-tan standard integral."
+                }
+              ]
+            },
+            {
+              "id": "bbhs2020-ext2-q12a-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "\\(\\int x^2\\log_ex\\,dx\\)",
+              "hint": "Parts with u = ln x, v′ = x².",
+              "steps": [
+                {
+                  "explain": "Integration by parts \\(\\int uv'\\,dx=uv-\\int u'v\\,dx\\). Choose \\(u=\\log_ex\\) because its derivative is simpler.",
+                  "work": "\\(u=\\log_ex,\\ u'=\\frac1x,\\qquad v'=x^2,\\ v=\\frac{x^3}{3}\\)"
+                },
+                {
+                  "explain": "Apply the formula.",
+                  "work": "\\(\\int x^2\\log_ex\\,dx=\\frac{x^3}{3}\\log_ex-\\int\\frac1x\\cdot\\frac{x^3}{3}\\,dx\\)"
+                },
+                {
+                  "explain": "Simplify the remaining integrand: \\(\\frac1x\\cdot\\frac{x^3}{3}=\\frac{x^2}{3}\\).",
+                  "work": "\\(=\\frac{x^3}{3}\\log_ex-\\frac13\\int x^2\\,dx\\)"
+                },
+                {
+                  "explain": "Integrate.",
+                  "work": "\\(=\\frac{x^3}{3}\\log_ex-\\frac{x^3}{9}+c\\)"
+                },
+                {
+                  "explain": "Check by differentiating: \\(x^2\\log_ex+\\frac{x^3}{3}\\cdot\\frac1x-\\frac{x^2}{3}=x^2\\log_ex\\) ✓."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 4U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "12(a)(ii)"
+              },
+              "options": [
+                "\\(\\frac{x^3}{3}\\log_ex-\\frac{x^3}{3}+c\\)",
+                "\\(2x\\log_ex+x+c\\)",
+                "\\(\\frac{x^3}{3}\\log_ex-\\frac{x^3}{9}+c\\)",
+                "\\(\\frac{x^3}{3}\\log_ex+\\frac{x^3}{9}+c\\)"
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "\\(\\int x^2\\log_ex\\,dx\\)",
+                  "note": "Differentiate the log, integrate the power."
                 }
               ]
             }
@@ -2293,6 +2652,142 @@
                 {
                   "text": "By setting up a suitable inequality",
                   "note": "Use I_n ≥ 0 and (ii) to get I_n ≤ √2/n."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bbhs2020-ext2-q15d",
+          "type": "multipart",
+          "stem": "",
+          "meta": {
+            "source": "Blacktown Boys 2020 4U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "15(d)"
+          },
+          "parts": [
+            {
+              "id": "bbhs2020-ext2-q15d-i",
+              "type": "review",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Show that \\(\\left(1-\\sqrt{x}\\right)^{n-1}\\sqrt{x}=\\left(1-\\sqrt{x}\\right)^{n-1}-\\left(1-\\sqrt{x}\\right)^n\\)",
+              "hint": "Factor (1 − √x)^(n−1) out of the right side.",
+              "steps": [
+                {
+                  "explain": "Start from the right side and factor out \\((1-\\sqrt x)^{n-1}\\).",
+                  "work": "\\(\\left(1-\\sqrt{x}\\right)^{n-1}-\\left(1-\\sqrt{x}\\right)^n=\\left(1-\\sqrt{x}\\right)^{n-1}\\left[1-\\left(1-\\sqrt{x}\\right)\\right]\\)"
+                },
+                {
+                  "explain": "Simplify the bracket.",
+                  "work": "\\(1-1+\\sqrt{x}=\\sqrt{x}\\ \\Rightarrow\\ \\text{RHS}=\\left(1-\\sqrt{x}\\right)^{n-1}\\sqrt{x}=\\text{LHS}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 4U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "15(d)(i)"
+              },
+              "answer": "RHS = (1−√x)^{n−1}[1 − (1−√x)] = (1−√x)^{n−1}√x = LHS.",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Show that",
+                  "note": "Take out the common factor on the right-hand side."
+                }
+              ]
+            },
+            {
+              "id": "bbhs2020-ext2-q15d-ii",
+              "type": "review",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "If \\(I_n=\\int_0^1\\left(1-\\sqrt{x}\\right)^ndx\\) for \\(n\\ge0\\), show that\n\\(I_n=\\frac{n}{n+2}I_{n-1}\\), for \\(n\\ge1\\)",
+              "hint": "Parts with v′ = 1, then use part (i) to write the new integral as I_{n−1} − I_n.",
+              "steps": [
+                {
+                  "explain": "Integrate by parts with \\(u=(1-\\sqrt x)^n\\) and \\(v'=1\\).",
+                  "work": "\\(u'=n\\left(1-\\sqrt{x}\\right)^{n-1}\\cdot\\left(-\\frac{1}{2\\sqrt{x}}\\right),\\qquad v=x\\)"
+                },
+                {
+                  "explain": "Apply the formula.",
+                  "work": "\\(I_n=\\Bigl[x\\left(1-\\sqrt{x}\\right)^n\\Bigr]_0^1+\\frac{n}{2}\\int_0^1\\frac{x}{\\sqrt{x}}\\left(1-\\sqrt{x}\\right)^{n-1}dx\\)"
+                },
+                {
+                  "explain": "The bracket is 0 at both ends (at \\(x=1\\), \\(1-\\sqrt1=0\\)). Also \\(\\frac{x}{\\sqrt x}=\\sqrt x\\).",
+                  "work": "\\(I_n=\\frac{n}{2}\\int_0^1\\sqrt{x}\\left(1-\\sqrt{x}\\right)^{n-1}dx\\)"
+                },
+                {
+                  "explain": "Use (i) to split the integrand.",
+                  "work": "\\(I_n=\\frac{n}{2}\\int_0^1\\left[\\left(1-\\sqrt{x}\\right)^{n-1}-\\left(1-\\sqrt{x}\\right)^n\\right]dx=\\frac{n}{2}\\left(I_{n-1}-I_n\\right)\\)"
+                },
+                {
+                  "explain": "Collect \\(I_n\\) on the left.",
+                  "work": "\\(I_n+\\frac{n}{2}I_n=\\frac{n}{2}I_{n-1}\\ \\Rightarrow\\ \\frac{n+2}{2}I_n=\\frac{n}{2}I_{n-1}\\ \\Rightarrow\\ I_n=\\frac{n}{n+2}I_{n-1}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 4U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "15(d)(ii)"
+              },
+              "answer": "By parts (u = (1−√x)^n, v′ = 1): I_n = [x(1−√x)^n]_0^1 + (n/2)∫x·x^{−1/2}(1−√x)^{n−1}dx = 0 + (n/2)∫√x(1−√x)^{n−1}dx = (n/2)(I_{n−1} − I_n) by (i). So (1 + n/2)I_n = (n/2)I_{n−1}, I_n = n/(n+2) I_{n−1}.",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "show that",
+                  "note": "Integrate by parts (v′ = 1); part (i) turns the result into I_{n−1} − I_n."
+                }
+              ]
+            },
+            {
+              "id": "bbhs2020-ext2-q15d-iii",
+              "type": "mc",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Hence evaluate \\(I_4\\)",
+              "hint": "Start from I₀ = 1 and use the formula four times.",
+              "steps": [
+                {
+                  "explain": "Start with \\(I_0\\).",
+                  "work": "\\(I_0=\\int_0^1dx=1\\)"
+                },
+                {
+                  "explain": "Apply the formula repeatedly.",
+                  "work": "\\(I_1=\\frac13I_0=\\frac13,\\qquad I_2=\\frac24I_1=\\frac16\\)"
+                },
+                {
+                  "explain": "Two more steps.",
+                  "work": "\\(I_3=\\frac35I_2=\\frac{1}{10},\\qquad I_4=\\frac46I_3=\\frac{1}{15}\\)"
+                },
+                {
+                  "explain": "Check: \\(I_4=\\int_0^1(1-\\sqrt x)^4dx\\approx0.0667\\) ✓."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 4U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "15(d)(iii)"
+              },
+              "options": [
+                "\\(\\frac{2}{15}\\)",
+                "\\(\\frac{1}{5}\\)",
+                "\\(\\frac{1}{15}\\)",
+                "\\(\\frac{1}{10}\\)"
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "Hence evaluate \\(I_4\\)",
+                  "note": "I₀ = 1; then I_n = n/(n+2) · I_{n−1}."
                 }
               ]
             }

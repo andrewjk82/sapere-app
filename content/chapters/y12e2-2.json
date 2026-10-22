@@ -498,6 +498,50 @@
               "note": "Negate both parts and swap them. 'a < b < c' means a < b AND b < c, whose negation is an OR."
             }
           ]
+        },
+        {
+          "id": "bbhs2020-ext2-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "The following slogan is used at a particular swimming centre.\n“If you are a strong swimmer, then you are unlikely to drown.”\nWhich of the following statements is logically equivalent to the above slogan?",
+          "hint": "Logically equivalent = contrapositive.",
+          "steps": [
+            {
+              "explain": "Label the slogan \\(P\\Rightarrow Q\\).",
+              "work": "\\(P:\\ \\text{strong swimmer},\\qquad Q:\\ \\text{unlikely to drown}\\)"
+            },
+            {
+              "explain": "Only the contrapositive \\(\\neg Q\\Rightarrow\\neg P\\) is always logically equivalent to \\(P\\Rightarrow Q\\).",
+              "work": "\\(P\\Rightarrow Q\\ \\equiv\\ \\neg Q\\Rightarrow\\neg P\\)"
+            },
+            {
+              "explain": "\\(\\neg Q\\): likely to drown. \\(\\neg P\\): not a strong swimmer. So: if you are likely to drown, then you are not a strong swimmer — D."
+            },
+            {
+              "explain": "A is the converse \\(Q\\Rightarrow P\\), C is the inverse \\(\\neg P\\Rightarrow\\neg Q\\); neither is equivalent. B contradicts the slogan."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys 2020 4U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "5"
+          },
+          "options": [
+            "If you are unlikely to drown, then you are a strong swimmer.",
+            "If you are a strong swimmer, then you are likely to drown.",
+            "If you are not a strong swimmer, then you are likely to drown.",
+            "If you are likely to drown, then you are not a strong swimmer."
+          ],
+          "answer": 3,
+          "keyPoints": [
+            {
+              "text": "logically equivalent",
+              "note": "Swap and negate both parts of the slogan."
+            }
+          ]
         }
       ]
     },
@@ -583,6 +627,54 @@
             {
               "text": "If this statement is not true",
               "note": "Negate 'every day' to 'some day', and 'at least one' to 'none'."
+            }
+          ]
+        },
+        {
+          "id": "bbhs2020-ext2-q4",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Which of the following statement is true?",
+          "hint": "Test each statement with a counterexample; watch the order of ∀ and ∃.",
+          "steps": [
+            {
+              "explain": "A says every real \\(x\\) has a \\(y\\) with \\(xy=10\\). Test \\(x=0\\): \\(0\\cdot y=0\\neq10\\) for every \\(y\\). So A is false (one counterexample is enough).",
+              "work": "\\(x=0:\\ 0\\times y=0\\neq10\\)"
+            },
+            {
+              "explain": "B says every real \\(x\\) has a real \\(y\\) equal to \\(x^2\\). That is always possible: just choose \\(y=x^2\\), which is a real number. So B is true.",
+              "work": "\\(\\text{choose }y=x^2\\in\\mathbb{R}\\)"
+            },
+            {
+              "explain": "C says one fixed \\(x\\) makes \\(xy=10\\) for EVERY \\(y\\). Impossible: \\(y=0\\) gives \\(xy=0\\).",
+              "work": "\\(y=0:\\ x\\cdot0=0\\neq10\\)"
+            },
+            {
+              "explain": "D says one fixed \\(x\\) has every real \\(y\\) equal to \\(x^2\\) — but \\(x^2\\) is a single number, so it cannot equal every \\(y\\). False."
+            },
+            {
+              "explain": "Only B is true. Notice how the ORDER of \\(\\forall\\) and \\(\\exists\\) changes the meaning: in B, \\(y\\) may depend on \\(x\\)."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys 2020 4U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "4"
+          },
+          "options": [
+            "\\(\\forall x\\in R,\\exists y\\in R\\) such that \\(xy=10\\)",
+            "\\(\\forall x\\in R,\\exists y\\in R\\) such that \\(y=x^2\\)",
+            "\\(\\exists x\\in R\\), such that \\(\\forall y\\in R,xy=10\\)",
+            "\\(\\exists x\\in R\\), such that \\(\\forall y\\in R,y=x^2\\)"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "Which of the following statement is true?",
+              "note": "'∀x ∃y' lets y depend on x; '∃x ∀y' needs one x that works for every y."
             }
           ]
         }
@@ -1121,6 +1213,45 @@
               ]
             }
           ]
+        },
+        {
+          "id": "bbhs2020-ext2-q14c",
+          "type": "review",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Prove that \\(\\log_514\\) is irrational.",
+          "hint": "Assume log₅14 = p/q and rewrite as 14^q = 5^p.",
+          "steps": [
+            {
+              "explain": "Proof by contradiction: suppose \\(\\log_514\\) is rational. Since \\(14\\gt5\\), it is positive.",
+              "work": "\\(\\log_514=\\frac{p}{q},\\qquad p,q\\in\\mathbb{Z}^+\\)"
+            },
+            {
+              "explain": "Convert the log to index form.",
+              "work": "\\(5^{\\frac pq}=14\\ \\Rightarrow\\ 14^q=5^p\\)"
+            },
+            {
+              "explain": "\\(14^q\\) is even (14 is even) but \\(5^p\\) is odd (a product of odd numbers). An even number cannot equal an odd number."
+            },
+            {
+              "explain": "This contradiction shows the assumption is false: \\(\\log_514\\) is irrational."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys 2020 4U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "14(c)"
+          },
+          "answer": "Suppose log₅14 = p/q with p, q positive integers. Then 5^{p/q} = 14, so 14^q = 5^p. The left side is even, the right side is odd — contradiction. So log₅14 is irrational.",
+          "manual": true,
+          "keyPoints": [
+            {
+              "text": "is irrational",
+              "note": "Use contradiction: an even number can't equal an odd number."
+            }
+          ]
         }
       ]
     },
@@ -1585,6 +1716,89 @@
             {
               "text": "Show that the triangle of maximum area",
               "note": "AM–GM on (s − x), (s − y), (s − z); equality when they are equal."
+            }
+          ]
+        },
+        {
+          "id": "bbhs2020-ext2-q16a",
+          "type": "multipart",
+          "stem": "",
+          "meta": {
+            "source": "Blacktown Boys 2020 4U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "16(a)"
+          },
+          "parts": [
+            {
+              "id": "bbhs2020-ext2-q16a-i",
+              "type": "review",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "If \\(p\\gt 0\\) and \\(q\\gt 0\\), show that \\(p+q\\ge2\\sqrt{pq}\\)",
+              "hint": "Start from (√p − √q)² ≥ 0.",
+              "steps": [
+                {
+                  "explain": "A square of a real number is never negative (\\(\\sqrt p\\), \\(\\sqrt q\\) are real since \\(p,q\\gt0\\)).",
+                  "work": "\\(\\left(\\sqrt{p}-\\sqrt{q}\\right)^2\\ge0\\)"
+                },
+                {
+                  "explain": "Expand.",
+                  "work": "\\(p-2\\sqrt{pq}+q\\ge0\\ \\Rightarrow\\ p+q\\ge2\\sqrt{pq}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 4U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "16(a)(i)"
+              },
+              "answer": "\\((\\sqrt p-\\sqrt q)^2\\ge0\\Rightarrow p-2\\sqrt{pq}+q\\ge0\\Rightarrow p+q\\ge2\\sqrt{pq}\\).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "show that",
+                  "note": "Expand (√p − √q)² ≥ 0."
+                }
+              ]
+            },
+            {
+              "id": "bbhs2020-ext2-q16a-ii",
+              "type": "review",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "If \\(p+q=1\\), show that \\(\\frac1p+\\frac1q\\ge4\\)",
+              "hint": "1/p + 1/q = 1/(pq); use (i) to bound pq.",
+              "steps": [
+                {
+                  "explain": "Combine the fractions.",
+                  "work": "\\(\\frac1p+\\frac1q=\\frac{p+q}{pq}=\\frac{1}{pq}\\quad(\\text{since }p+q=1)\\)"
+                },
+                {
+                  "explain": "From (i) with \\(p+q=1\\).",
+                  "work": "\\(1\\ge2\\sqrt{pq}\\ \\Rightarrow\\ \\sqrt{pq}\\le\\frac12\\ \\Rightarrow\\ pq\\le\\frac14\\)"
+                },
+                {
+                  "explain": "Take reciprocals of positive numbers (this reverses the inequality).",
+                  "work": "\\(\\frac{1}{pq}\\ge4\\ \\Rightarrow\\ \\frac1p+\\frac1q\\ge4\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 4U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "16(a)(ii)"
+              },
+              "answer": "\\(\\frac1p+\\frac1q=\\frac{p+q}{pq}=\\frac{1}{pq}\\). From (i), 1 = p + q ≥ 2√(pq) ⇒ √(pq) ≤ ½ ⇒ pq ≤ ¼ ⇒ 1/(pq) ≥ 4.",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "show that",
+                  "note": "Write 1/p + 1/q = (p + q)/(pq), then use part (i)."
+                }
+              ]
             }
           ]
         }
@@ -2160,6 +2374,54 @@
                   "note": "(ii) guarantees the condition of (i); then use the inductive assumption."
                 }
               ]
+            }
+          ]
+        },
+        {
+          "id": "bbhs2020-ext2-q14d",
+          "type": "review",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "Prove using mathematical induction for integers \\(n\\ge2\\),\n\n\\(n^{n+1}\\gt n(n+1)^{n-1}\\)",
+          "hint": "Rewrite the assumption as (k+1)^(k−1)/k^k < 1 and use it to bound (k+1)^(k+1)/(k+2)^k from below.",
+          "steps": [
+            {
+              "explain": "Base case \\(n=2\\).",
+              "work": "\\(2^3=8,\\qquad2\\times3^{1}=6,\\qquad8\\gt6\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Assume true for \\(n=k\\ge2\\). Divide both sides by \\(k\\gt0\\).",
+              "work": "\\(k^{k+1}\\gt k(k+1)^{k-1}\\ \\Rightarrow\\ k^k\\gt(k+1)^{k-1}\\ \\Rightarrow\\ \\frac{(k+1)^{k-1}}{k^k}\\lt1\\)"
+            },
+            {
+              "explain": "Goal for \\(n=k+1\\): \\((k+1)^{k+2}\\gt(k+1)(k+2)^k\\). Divide by \\(k+1\\): we need",
+              "work": "\\(\\frac{(k+1)^{k+1}}{(k+2)^k}\\gt1\\)"
+            },
+            {
+              "explain": "Multiply the goal's left side by \\(\\frac{(k+1)^{k-1}}{k^k}\\), which is less than 1 — this makes it SMALLER. So if the smaller quantity is above 1, the original is too.",
+              "work": "\\(\\frac{(k+1)^{k+1}}{(k+2)^k}\\gt\\frac{(k+1)^{k+1}}{(k+2)^k}\\cdot\\frac{(k+1)^{k-1}}{k^k}=\\frac{(k+1)^{2k}}{\\left[k(k+2)\\right]^k}\\)"
+            },
+            {
+              "explain": "Simplify using \\((k+1)^2=k^2+2k+1\\) and \\(k(k+2)=k^2+2k\\).",
+              "work": "\\(\\frac{(k+1)^{2k}}{\\left[k(k+2)\\right]^k}=\\left(\\frac{k^2+2k+1}{k^2+2k}\\right)^k=\\left(1+\\frac{1}{k^2+2k}\\right)^k\\gt1\\)"
+            },
+            {
+              "explain": "So \\(\\frac{(k+1)^{k+1}}{(k+2)^k}\\gt1\\), which is the statement for \\(n=k+1\\). By induction it holds for all integers \\(n\\ge2\\)."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys 2020 4U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "14(d)"
+          },
+          "answer": "n = 2: 8 > 6. Assume k^{k+1} > k(k+1)^{k−1}, i.e. k^k > (k+1)^{k−1}. Need (k+1)^{k+1} > (k+1)(k+2)^k, i.e. (k+1)^k > (k+2)^k... equivalently (k+1)^{k+1}/(k+2)^k > 1. Using (k+1)^{k−1} < k^k: (k+1)^{k+1}/(k+2)^k > (k+1)^{2k}/(k(k+2))^k = ((k²+2k+1)/(k²+2k))^k = (1 + 1/(k²+2k))^k > 1.",
+          "manual": true,
+          "keyPoints": [
+            {
+              "text": "Prove using mathematical induction",
+              "note": "Divide out the common factors first: show (k+1)^(k+1)/(k+2)^k > 1."
             }
           ]
         }

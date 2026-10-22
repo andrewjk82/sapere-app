@@ -632,6 +632,240 @@
               ]
             }
           ]
+        },
+        {
+          "id": "bbhs2020-ext2-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "Which of the following is equivalent to \\(i^{2020}\\) ?",
+          "hint": "Powers of i repeat every 4: find each exponent's remainder when divided by 4.",
+          "steps": [
+            {
+              "explain": "Powers of \\(i\\) repeat in a cycle of 4, so only the remainder of the power when divided by 4 matters.",
+              "work": "\\(i^1=i,\\quad i^2=-1,\\quad i^3=-i,\\quad i^4=1\\)"
+            },
+            {
+              "explain": "Find the remainder of 2020 on division by 4.",
+              "work": "\\(2020=4\\times505+0\\ \\Rightarrow\\ i^{2020}=\\left(i^4\\right)^{505}=1^{505}=1\\)"
+            },
+            {
+              "explain": "Now evaluate each option the same way.",
+              "work": "\\(i^{100}:\\ 100=4\\times25\\Rightarrow1;\\qquad\\left(i^{11}\\right)^5=i^{55}:\\ 55=4\\times13+3\\Rightarrow-i\\)"
+            },
+            {
+              "explain": "Continue with C and D.",
+              "work": "\\(\\left(i^{21}\\right)^5=i^{105}:\\ 105=4\\times26+1\\Rightarrow i;\\qquad i^{10}:\\ 10=4\\times2+2\\Rightarrow-1\\)"
+            },
+            {
+              "explain": "Only \\(i^{100}\\) also equals 1, so the answer is A."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys 2020 4U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "1"
+          },
+          "options": [
+            "\\(i^{100}\\)",
+            "\\(\\left(i^{11}\\right)^5\\)",
+            "\\(\\left(i^{21}\\right)^5\\)",
+            "\\(i^{10}\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "\\(i^{2020}\\)",
+              "note": "Divide 2020 by 4 — a remainder of 0 means the value is 1."
+            }
+          ]
+        },
+        {
+          "id": "bbhs2020-ext2-q11a",
+          "type": "multipart",
+          "stem": "Let \\(z_1=1-2i\\) and \\(z_2=3+4i\\). Express the following in the form \\(a+bi\\) where \\(a\\) and \\(b\\) are real numbers.",
+          "meta": {
+            "source": "Blacktown Boys 2020 4U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "11(a)"
+          },
+          "parts": [
+            {
+              "id": "bbhs2020-ext2-q11a-i",
+              "type": "mc",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "\\(z_1-z_2\\)",
+              "hint": "Subtract real from real, imaginary from imaginary.",
+              "steps": [
+                {
+                  "explain": "Subtract real parts and imaginary parts separately.",
+                  "work": "\\(z_1-z_2=(1-2i)-(3+4i)=(1-3)+(-2-4)i\\)"
+                },
+                {
+                  "explain": "Simplify.",
+                  "work": "\\(=-2-6i\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 4U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "11(a)(i)"
+              },
+              "options": [
+                "\\(4+2i\\)",
+                "\\(-2+2i\\)",
+                "\\(2+6i\\)",
+                "\\(-2-6i\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "\\(z_1-z_2\\)",
+                  "note": "Careful with −(3 + 4i) = −3 − 4i."
+                }
+              ]
+            },
+            {
+              "id": "bbhs2020-ext2-q11a-ii",
+              "type": "mc",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "\\(z_1\\times\\overline{z_2}\\)",
+              "hint": "Conjugate z₂ first, then expand and use i² = −1.",
+              "steps": [
+                {
+                  "explain": "First the conjugate of \\(z_2\\).",
+                  "work": "\\(\\overline{z_2}=3-4i\\)"
+                },
+                {
+                  "explain": "Expand the product like brackets.",
+                  "work": "\\((1-2i)(3-4i)=3-4i-6i+8i^2\\)"
+                },
+                {
+                  "explain": "Use \\(i^2=-1\\) and collect.",
+                  "work": "\\(=3-10i-8=-5-10i\\)"
+                },
+                {
+                  "explain": "Using \\(z_2\\) instead of \\(\\overline{z_2}\\) gives \\(11-2i\\)."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 4U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "11(a)(ii)"
+              },
+              "options": [
+                "\\(-5+10i\\)",
+                "\\(11+10i\\)",
+                "\\(-5-10i\\)",
+                "\\(11-2i\\)"
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "\\(z_1\\times\\overline{z_2}\\)",
+                  "note": "Remember the bar: use 3 − 4i, not 3 + 4i."
+                }
+              ]
+            },
+            {
+              "id": "bbhs2020-ext2-q11a-iii",
+              "type": "review",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Show that \\(\\frac{2+i}{z_2}-\\frac{z_1}{5i}\\) is a real number.",
+              "hint": "Realise each denominator separately, then subtract.",
+              "steps": [
+                {
+                  "explain": "First fraction: multiply top and bottom by the conjugate \\(3-4i\\).",
+                  "work": "\\(\\frac{2+i}{3+4i}\\times\\frac{3-4i}{3-4i}=\\frac{(2+i)(3-4i)}{3^2+4^2}\\)"
+                },
+                {
+                  "explain": "Expand the numerator.",
+                  "work": "\\((2+i)(3-4i)=6-8i+3i-4i^2=6-5i+4=10-5i\\ \\Rightarrow\\ \\frac{10-5i}{25}\\)"
+                },
+                {
+                  "explain": "Second fraction: multiply top and bottom by \\(-i\\) (since \\(i\\times(-i)=1\\)).",
+                  "work": "\\(\\frac{1-2i}{5i}\\times\\frac{-i}{-i}=\\frac{-i+2i^2}{5}=\\frac{-2-i}{5}=\\frac{-10-5i}{25}\\)"
+                },
+                {
+                  "explain": "Subtract; the imaginary parts cancel.",
+                  "work": "\\(\\frac{10-5i}{25}-\\frac{-10-5i}{25}=\\frac{10-5i+10+5i}{25}=\\frac{20}{25}=\\frac45\\)"
+                },
+                {
+                  "explain": "The result \\(\\frac45\\) has no imaginary part, so it is real."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 4U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "11(a)(iii)"
+              },
+              "answer": "\\(\\frac{2+i}{3+4i}=\\frac{(2+i)(3-4i)}{25}=\\frac{10-5i}{25}\\); \\(\\frac{1-2i}{5i}=\\frac{(1-2i)(-i)}{5}=\\frac{-2-i}{5}=\\frac{-10-5i}{25}\\). Difference: \\(\\frac{10-5i+10+5i}{25}=\\frac{20}{25}=\\frac45\\), which is real.",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "is a real number",
+                  "note": "Show the imaginary parts cancel after realising both denominators."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bbhs2020-ext2-q11b",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "Let \\(z=x+yi\\), where \\(x\\) and \\(y\\) are real numbers, and \\(2z+\\overline{z}=21-8i\\). Find the values of \\(x\\) and \\(y\\).",
+          "hint": "Write z̄ = x − yi, collect parts, and equate.",
+          "steps": [
+            {
+              "explain": "Substitute \\(z=x+yi\\) and \\(\\overline z=x-yi\\).",
+              "work": "\\(2(x+yi)+(x-yi)=21-8i\\)"
+            },
+            {
+              "explain": "Expand and collect real and imaginary parts.",
+              "work": "\\(2x+2yi+x-yi=3x+yi\\)"
+            },
+            {
+              "explain": "Equate real parts and imaginary parts.",
+              "work": "\\(3x=21\\Rightarrow x=7,\\qquad y=-8\\)"
+            },
+            {
+              "explain": "Check: \\(z=7-8i\\): \\(2z+\\overline z=14-16i+7+8i=21-8i\\) ✓."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys 2020 4U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "11(b)"
+          },
+          "options": [
+            "\\(x=7,\\ y=8\\)",
+            "\\(x=21,\\ y=-8\\)",
+            "\\(x=7,\\ y=-\\frac83\\)",
+            "\\(x=7,\\ y=-8\\)"
+          ],
+          "answer": 3,
+          "keyPoints": [
+            {
+              "text": "\\(2z+\\overline{z}=21-8i\\)",
+              "note": "z̄ = x − yi; then 2z + z̄ = 3x + yi."
+            }
+          ]
         }
       ]
     },
@@ -719,6 +953,121 @@
             {
               "text": "Find \\(\\sqrt{15-8i}\\)",
               "note": "Set (a + ib)² = 15 − 8i: a² − b² = 15 and ab = −4."
+            }
+          ]
+        },
+        {
+          "id": "bbhs2020-ext2-q11d",
+          "type": "multipart",
+          "stem": "",
+          "meta": {
+            "source": "Blacktown Boys 2020 4U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "11(d)"
+          },
+          "parts": [
+            {
+              "id": "bbhs2020-ext2-q11d-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Solve for \\(x\\) and \\(y\\), where \\(x\\) and \\(y\\) are real numbers, given that\n\\((x+iy)^2=9-40i\\)",
+              "hint": "Expand (x + iy)², equate parts, solve the quartic in x² .",
+              "steps": [
+                {
+                  "explain": "Expand the left side.",
+                  "work": "\\((x+iy)^2=x^2-y^2+2xyi\\)"
+                },
+                {
+                  "explain": "Equate real and imaginary parts.",
+                  "work": "\\(x^2-y^2=9\\quad(1),\\qquad2xy=-40\\Rightarrow y=-\\frac{20}{x}\\quad(2)\\)"
+                },
+                {
+                  "explain": "Substitute (2) into (1) and multiply by \\(x^2\\).",
+                  "work": "\\(x^2-\\frac{400}{x^2}=9\\ \\Rightarrow\\ x^4-9x^2-400=0\\)"
+                },
+                {
+                  "explain": "Factorise as a quadratic in \\(x^2\\).",
+                  "work": "\\(\\left(x^2-25\\right)\\left(x^2+16\\right)=0\\ \\Rightarrow\\ x^2=25\\quad(x^2=-16\\text{ is impossible for real }x)\\)"
+                },
+                {
+                  "explain": "So \\(x=\\pm5\\) and \\(y=-\\frac{20}{x}=\\mp4\\).",
+                  "work": "\\(x=5,\\ y=-4\\) or \\( x=-5,\\ y=4\\)"
+                },
+                {
+                  "explain": "Check: \\((5-4i)^2=25-40i-16=9-40i\\) ✓."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 4U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "11(d)(i)"
+              },
+              "options": [
+                "\\(x=5,\\ y=4\\) or \\(x=-5,\\ y=-4\\)",
+                "\\(x=4,\\ y=-5\\) or \\(x=-4,\\ y=5\\)",
+                "\\(x=3,\\ y=-\\frac{20}{3}\\)",
+                "\\(x=5,\\ y=-4\\) or \\(x=-5,\\ y=4\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "\\((x+iy)^2=9-40i\\)",
+                  "note": "x² − y² = 9 and 2xy = −40. Substitute y = −20/x."
+                }
+              ]
+            },
+            {
+              "id": "bbhs2020-ext2-q11d-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Hence or otherwise, solve \\(z^2-7z+10+10i=0\\).",
+              "hint": "Quadratic formula: the discriminant is 9 − 40i, whose square root you found in (i).",
+              "steps": [
+                {
+                  "explain": "Use the quadratic formula with \\(a=1\\), \\(b=-7\\), \\(c=10+10i\\).",
+                  "work": "\\(z=\\frac{7\\pm\\sqrt{49-4(10+10i)}}{2}=\\frac{7\\pm\\sqrt{9-40i}}{2}\\)"
+                },
+                {
+                  "explain": "From (i), the square roots of \\(9-40i\\) are \\(\\pm(5-4i)\\).",
+                  "work": "\\(\\sqrt{9-40i}=\\pm(5-4i)\\)"
+                },
+                {
+                  "explain": "Plus sign.",
+                  "work": "\\(z=\\frac{7+5-4i}{2}=\\frac{12-4i}{2}=6-2i\\)"
+                },
+                {
+                  "explain": "Minus sign.",
+                  "work": "\\(z=\\frac{7-5+4i}{2}=\\frac{2+4i}{2}=1+2i\\)"
+                },
+                {
+                  "explain": "Check with sum and product: \\((6-2i)+(1+2i)=7\\) ✓ and \\((6-2i)(1+2i)=6+12i-2i+4=10+10i\\) ✓."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 4U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "11(d)(ii)"
+              },
+              "options": [
+                "\\(z=5-4i\\) or \\(z=2+4i\\)",
+                "\\(z=\\frac{7\\pm\\sqrt{9}}{2}\\)",
+                "\\(z=6-2i\\) or \\(z=1+2i\\)",
+                "\\(z=6+2i\\) or \\(z=1-2i\\)"
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "Hence or otherwise",
+                  "note": "The discriminant 49 − 4(10 + 10i) = 9 − 40i comes from part (i)."
+                }
+              ]
             }
           ]
         }
@@ -855,6 +1204,55 @@
             {
               "text": "Which of the following could be the complex number \\(z\\)?",
               "note": "z is in the 3rd quadrant, so arg z = −2π/3. Evaluate each option to check its quadrant."
+            }
+          ]
+        },
+        {
+          "id": "bbhs2020-ext2-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "Given that \\(z=5e^{\\frac{i\\pi}{6}}\\), which expression is equal to \\((\\overline{z})^{-1}\\) ?",
+          "hint": "Conjugate flips the argument; reciprocal flips it again and inverts the modulus.",
+          "steps": [
+            {
+              "explain": "Read off the modulus and argument of \\(z\\).",
+              "work": "\\(z=5e^{\\frac{i\\pi}{6}}:\\qquad|z|=5,\\quad\\arg z=\\frac{\\pi}{6}\\)"
+            },
+            {
+              "explain": "The conjugate keeps the modulus and changes the sign of the argument.",
+              "work": "\\(\\overline{z}=5e^{-\\frac{i\\pi}{6}}\\)"
+            },
+            {
+              "explain": "Taking the reciprocal (power \\(-1\\)) inverts the modulus and changes the sign of the argument again.",
+              "work": "\\((\\overline{z})^{-1}=\\frac{1}{5}e^{+\\frac{i\\pi}{6}}\\)"
+            },
+            {
+              "explain": "Write it in cos–sin form.",
+              "work": "\\((\\overline{z})^{-1}=\\frac15\\left(\\cos\\frac{\\pi}{6}+i\\sin\\frac{\\pi}{6}\\right)\\)"
+            },
+            {
+              "explain": "Both the conjugate and the reciprocal flip the argument, so the two sign changes cancel. Option C forgets that the reciprocal flips it back."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys 2020 4U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "2"
+          },
+          "options": [
+            "\\(\\frac15\\left(\\cos\\frac{\\pi}{6}+i\\sin\\frac{\\pi}{6}\\right)\\)",
+            "\\(5\\left(\\cos\\frac{\\pi}{6}+i\\sin\\frac{\\pi}{6}\\right)\\)",
+            "\\(\\frac15\\left(\\cos\\frac{\\pi}{6}-i\\sin\\frac{\\pi}{6}\\right)\\)",
+            "\\(5\\left(\\cos\\frac{\\pi}{6}-i\\sin\\frac{\\pi}{6}\\right)\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "\\((\\overline{z})^{-1}\\)",
+              "note": "Two operations: conjugate (arg → −arg) then reciprocal (|z| → 1/|z|, arg → −arg)."
             }
           ]
         }
@@ -1086,6 +1484,244 @@
                 {
                   "text": "Explain why",
                   "note": "a − c and b − d are the diagonals CA and DB; diagonals of a rhombus are perpendicular."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bbhs2020-ext2-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "The Argand diagram shows the complex number \\(e^{i\\theta}\\).\n\nWhich of the following diagrams best shows the complex number \\(ie^{-i\\theta}\\) ?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 170\" width=\"220\" height=\"170\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"220\" height=\"170\" rx=\"8\" fill=\"white\"/><line x1=\"20.0\" y1=\"95.0\" x2=\"206.0\" y2=\"95.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"110.0\" y1=\"162.0\" x2=\"110.0\" y2=\"10.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"93.0\" y=\"111.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#64748b\" font-style=\"italic\">O</text><line x1=\"110.0\" y1=\"95.0\" x2=\"86.8\" y2=\"37.5\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><circle cx=\"86.8\" cy=\"37.5\" r=\"4\" fill=\"#1e293b\"/><text x=\"59.9\" y=\"29.5\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">e</text><text x=\"68.1\" y=\"24.1\" font-family=\"Times New Roman,Times,serif\" font-size=\"9.9\" fill=\"#1e293b\" font-style=\"italic\">i</text><text x=\"72.1\" y=\"24.1\" font-family=\"Times New Roman,Times,serif\" font-size=\"9.9\" fill=\"#1e293b\" font-style=\"italic\">θ</text></svg>"
+          },
+          "hint": "Reflect e^(iθ) in the real axis to get e^(−iθ), then rotate 90° anticlockwise for the factor i.",
+          "steps": [
+            {
+              "explain": "From the diagram, \\(e^{i\\theta}\\) is in the second quadrant, a little past the imaginary axis: \\(\\frac\\pi2\\lt\\theta\\lt\\pi\\). All the options have modulus 1, so only the argument matters.",
+              "work": "\\(\\frac{\\pi}{2}\\lt\\theta\\lt\\pi\\)"
+            },
+            {
+              "explain": "\\(e^{-i\\theta}\\) has argument \\(-\\theta\\): it is the reflection of \\(e^{i\\theta}\\) in the real axis, so it lands in the third quadrant.",
+              "work": "\\(\\arg e^{-i\\theta}=-\\theta\\)"
+            },
+            {
+              "explain": "Multiplying by \\(i\\) rotates a point \\(90^\\circ\\) anticlockwise (adds \\(\\frac\\pi2\\) to the argument).",
+              "work": "\\(\\arg\\left(ie^{-i\\theta}\\right)=\\frac{\\pi}{2}-\\theta\\)"
+            },
+            {
+              "explain": "Since \\(\\frac\\pi2\\lt\\theta\\lt\\pi\\), the new argument is between \\(-\\frac\\pi2\\) and 0: the fourth quadrant, close to the positive real axis (because \\(\\theta\\) is only a little more than \\(\\frac\\pi2\\)).",
+              "work": "\\(-\\frac{\\pi}{2}\\lt\\frac{\\pi}{2}-\\theta\\lt0\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 200\" width=\"260\" height=\"200\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"260\" height=\"200\" rx=\"8\" fill=\"white\"/><line x1=\"20.0\" y1=\"110.0\" x2=\"246.0\" y2=\"110.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"130.0\" y1=\"192.0\" x2=\"130.0\" y2=\"10.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"113.0\" y=\"126.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#64748b\" font-style=\"italic\">O</text><line x1=\"130.0\" y1=\"110.0\" x2=\"106.8\" y2=\"52.5\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><circle cx=\"106.8\" cy=\"52.5\" r=\"4\" fill=\"#64748b\"/><text x=\"79.9\" y=\"44.5\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">e</text><text x=\"88.1\" y=\"39.1\" font-family=\"Times New Roman,Times,serif\" font-size=\"9.9\" fill=\"#64748b\" font-style=\"italic\">i</text><text x=\"92.1\" y=\"39.1\" font-family=\"Times New Roman,Times,serif\" font-size=\"9.9\" fill=\"#64748b\" font-style=\"italic\">θ</text><line x1=\"130.0\" y1=\"110.0\" x2=\"106.8\" y2=\"167.5\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><circle cx=\"106.8\" cy=\"167.5\" r=\"4\" fill=\"#2563eb\"/><text x=\"74.9\" y=\"159.5\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#2563eb\" font-style=\"italic\">e</text><text x=\"83.1\" y=\"154.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.8\" fill=\"#2563eb\">−</text><text x=\"88.1\" y=\"154.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"9.9\" fill=\"#2563eb\" font-style=\"italic\">i</text><text x=\"92.1\" y=\"154.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"9.9\" fill=\"#2563eb\" font-style=\"italic\">θ</text><line x1=\"130.0\" y1=\"110.0\" x2=\"187.5\" y2=\"133.2\" stroke=\"#dc2626\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><circle cx=\"187.5\" cy=\"133.2\" r=\"4\" fill=\"#dc2626\"/><text x=\"195.5\" y=\"125.2\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#dc2626\" font-style=\"italic\">i</text><text x=\"200.7\" y=\"125.2\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#dc2626\" font-style=\"italic\">e</text><text x=\"208.9\" y=\"119.8\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.8\" fill=\"#dc2626\">−</text><text x=\"213.9\" y=\"119.8\" font-family=\"Times New Roman,Times,serif\" font-size=\"9.9\" fill=\"#dc2626\" font-style=\"italic\">i</text><text x=\"217.8\" y=\"119.8\" font-family=\"Times New Roman,Times,serif\" font-size=\"9.9\" fill=\"#dc2626\" font-style=\"italic\">θ</text></svg>"
+              }
+            },
+            {
+              "explain": "That is diagram C."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys 2020 4U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "3"
+          },
+          "options": [
+            {
+              "text": "A",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 170\" width=\"220\" height=\"170\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"220\" height=\"170\" rx=\"8\" fill=\"white\"/><line x1=\"20.0\" y1=\"95.0\" x2=\"206.0\" y2=\"95.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"110.0\" y1=\"162.0\" x2=\"110.0\" y2=\"10.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"93.0\" y=\"111.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#64748b\" font-style=\"italic\">O</text><line x1=\"110.0\" y1=\"95.0\" x2=\"51.7\" y2=\"73.8\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><circle cx=\"51.7\" cy=\"73.8\" r=\"4\" fill=\"#1e293b\"/></svg>"
+              }
+            },
+            {
+              "text": "B",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 170\" width=\"220\" height=\"170\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"220\" height=\"170\" rx=\"8\" fill=\"white\"/><line x1=\"20.0\" y1=\"95.0\" x2=\"206.0\" y2=\"95.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"110.0\" y1=\"162.0\" x2=\"110.0\" y2=\"10.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"93.0\" y=\"111.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#64748b\" font-style=\"italic\">O</text><line x1=\"110.0\" y1=\"95.0\" x2=\"51.7\" y2=\"116.2\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><circle cx=\"51.7\" cy=\"116.2\" r=\"4\" fill=\"#1e293b\"/></svg>"
+              }
+            },
+            {
+              "text": "C",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 170\" width=\"220\" height=\"170\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"220\" height=\"170\" rx=\"8\" fill=\"white\"/><line x1=\"20.0\" y1=\"95.0\" x2=\"206.0\" y2=\"95.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"110.0\" y1=\"162.0\" x2=\"110.0\" y2=\"10.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"93.0\" y=\"111.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#64748b\" font-style=\"italic\">O</text><line x1=\"110.0\" y1=\"95.0\" x2=\"167.5\" y2=\"118.2\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><circle cx=\"167.5\" cy=\"118.2\" r=\"4\" fill=\"#1e293b\"/></svg>"
+              }
+            },
+            {
+              "text": "D",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 170\" width=\"220\" height=\"170\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"220\" height=\"170\" rx=\"8\" fill=\"white\"/><line x1=\"20.0\" y1=\"95.0\" x2=\"206.0\" y2=\"95.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"110.0\" y1=\"162.0\" x2=\"110.0\" y2=\"10.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"93.0\" y=\"111.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#64748b\" font-style=\"italic\">O</text><line x1=\"110.0\" y1=\"95.0\" x2=\"167.5\" y2=\"71.8\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><circle cx=\"167.5\" cy=\"71.8\" r=\"4\" fill=\"#1e293b\"/></svg>"
+              }
+            }
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "\\(ie^{-i\\theta}\\)",
+              "note": "arg(ie^(−iθ)) = π/2 − θ. With θ just over π/2 this is a small negative angle."
+            }
+          ]
+        },
+        {
+          "id": "bbhs2020-ext2-q13d",
+          "type": "multipart",
+          "stem": "Let \\(z=\\cos\\alpha+i\\sin\\alpha\\), where \\(\\alpha\\) is an angle in the first quadrant. On the Argand diagram the point \\(P\\) represents \\(z\\), the point \\(Q\\) represents \\(i\\sqrt3z\\) and the point \\(R\\) represents \\(z+i\\sqrt3z\\).",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 230\" width=\"300\" height=\"230\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"300\" height=\"230\" rx=\"8\" fill=\"white\"/><line x1=\"20.0\" y1=\"190.0\" x2=\"290.0\" y2=\"190.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"190.0\" y1=\"222.0\" x2=\"190.0\" y2=\"8.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><path d=\"M190.0 190.0L222.9 128.2L115.8 71.3L82.9 133.1Z\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\" fill-opacity=\"0.35\"/><line x1=\"190.0\" y1=\"190.0\" x2=\"115.8\" y2=\"71.3\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M194.7 181.2L185.9 176.5L181.2 185.3\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><text x=\"230.9\" y=\"132.2\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">P</text><text x=\"63.2\" y=\"137.1\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">Q</text><text x=\"99.9\" y=\"65.3\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">R</text><text x=\"196.0\" y=\"206.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">O</text><text x=\"214.4\" y=\"165.1\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#2563eb\">1</text><path d=\"M134.5 175.7L136.3 174.7L138.6 181.0L141.1 169.1L149.8 169.1\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.00\" stroke-linejoin=\"round\"/><text x=\"142.1\" y=\"179.5\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#2563eb\">3</text><text x=\"165.2\" y=\"150.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#dc2626\">2</text></svg>"
+          },
+          "meta": {
+            "source": "Blacktown Boys 2020 4U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "13(d)"
+          },
+          "parts": [
+            {
+              "id": "bbhs2020-ext2-q13d-i",
+              "type": "review",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Explain why \\(OPRQ\\) is a rectangle.",
+              "hint": "R = P + Q gives a parallelogram; multiplying by i gives a right angle.",
+              "steps": [
+                {
+                  "explain": "\\(R\\) represents \\(z+i\\sqrt3z\\), the sum of the complex numbers at \\(P\\) and \\(Q\\). By the parallelogram rule of addition, \\(OPRQ\\) is a parallelogram.",
+                  "work": "\\(\\overrightarrow{OR}=\\overrightarrow{OP}+\\overrightarrow{OQ}\\)"
+                },
+                {
+                  "explain": "\\(Q\\) is \\(z\\) multiplied by \\(i\\sqrt3\\). Multiplying by \\(i\\) rotates \\(90^\\circ\\) anticlockwise; multiplying by \\(\\sqrt3\\) only stretches.",
+                  "work": "\\(\\arg\\left(i\\sqrt3z\\right)=\\arg z+\\frac{\\pi}{2}\\ \\Rightarrow\\ \\angle POQ=90^\\circ\\)"
+                },
+                {
+                  "explain": "A parallelogram with one right angle is a rectangle."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 4U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "13(d)(i)"
+              },
+              "answer": "R = z + i√3z = P + Q, so OPRQ is a parallelogram (vector addition). Q = i√3 z is z multiplied by i (rotation 90° anticlockwise) and by √3, so OQ ⊥ OP. A parallelogram with a right angle is a rectangle.",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Explain why \\(OPRQ\\) is a rectangle",
+                  "note": "Use the parallelogram rule for addition and 'multiply by i = rotate 90°'."
+                }
+              ]
+            },
+            {
+              "id": "bbhs2020-ext2-q13d-ii",
+              "type": "review",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Show that \\(\\left|z+i\\sqrt3z\\right|=2\\)",
+              "hint": "OR is the diagonal of a 1 × √3 rectangle.",
+              "steps": [
+                {
+                  "explain": "Side lengths of the rectangle.",
+                  "work": "\\(OP=|z|=1,\\qquad OQ=\\left|i\\sqrt3z\\right|=|i|\\cdot\\sqrt3\\cdot|z|=\\sqrt3\\)"
+                },
+                {
+                  "explain": "\\(OR\\) is the diagonal, so use Pythagoras in the right triangle \\(OPR\\) (\\(PR=OQ=\\sqrt3\\)).",
+                  "work": "\\(\\left|z+i\\sqrt3z\\right|=OR=\\sqrt{1^2+\\left(\\sqrt3\\right)^2}=\\sqrt4=2\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 4U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "13(d)(ii)"
+              },
+              "answer": "OP = |z| = 1, OQ = |i√3 z| = √3. OR is the diagonal of rectangle OPRQ: |z + i√3z| = √(1² + (√3)²) = 2.",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Show that",
+                  "note": "Find OP and OQ, then use Pythagoras for the diagonal OR."
+                }
+              ]
+            },
+            {
+              "id": "bbhs2020-ext2-q13d-iii",
+              "type": "review",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Show that \\(\\arg\\left(z+i\\sqrt3z\\right)=\\alpha+\\frac{\\pi}{3}\\)",
+              "hint": "Factor out z: z(1 + i√3).",
+              "steps": [
+                {
+                  "explain": "Factor out \\(z\\).",
+                  "work": "\\(z+i\\sqrt3z=z\\left(1+i\\sqrt3\\right)\\)"
+                },
+                {
+                  "explain": "Argument of \\(1+i\\sqrt3\\) (first quadrant).",
+                  "work": "\\(\\tan^{-1}\\frac{\\sqrt3}{1}=\\frac{\\pi}{3}\\)"
+                },
+                {
+                  "explain": "When multiplying complex numbers, arguments add.",
+                  "work": "\\(\\arg\\left(z+i\\sqrt3z\\right)=\\arg z+\\arg\\left(1+i\\sqrt3\\right)=\\alpha+\\frac{\\pi}{3}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 4U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "13(d)(iii)"
+              },
+              "answer": "\\(z+i\\sqrt3z=z(1+i\\sqrt3)\\). arg(1 + i√3) = π/3 (tan⁻¹√3). Arguments add when multiplying: arg = α + π/3.",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Show that",
+                  "note": "Write z + i√3z = z(1 + i√3) and add the arguments."
+                }
+              ]
+            },
+            {
+              "id": "bbhs2020-ext2-q13d-iv",
+              "type": "review",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "By considering the imaginary part of \\(z+i\\sqrt3z\\), deduce that\n\n\\(\\sin\\alpha+\\sqrt3\\cos\\alpha=2\\sin\\left(\\alpha+\\frac{\\pi}{3}\\right)\\)",
+              "hint": "Find Im(z + i√3z) two ways: from 2cis(α + π/3), and by expanding.",
+              "steps": [
+                {
+                  "explain": "From (ii) and (iii), in mod-arg form:",
+                  "work": "\\(z+i\\sqrt3z=2\\left(\\cos\\left(\\alpha+\\tfrac\\pi3\\right)+i\\sin\\left(\\alpha+\\tfrac\\pi3\\right)\\right)\\ \\Rightarrow\\ \\operatorname{Im}=2\\sin\\left(\\alpha+\\tfrac\\pi3\\right)\\)"
+                },
+                {
+                  "explain": "Directly from \\(z=\\cos\\alpha+i\\sin\\alpha\\):",
+                  "work": "\\(i\\sqrt3z=i\\sqrt3\\cos\\alpha+i^2\\sqrt3\\sin\\alpha=-\\sqrt3\\sin\\alpha+i\\sqrt3\\cos\\alpha\\)"
+                },
+                {
+                  "explain": "Add and take the imaginary part.",
+                  "work": "\\(\\operatorname{Im}\\left(z+i\\sqrt3z\\right)=\\sin\\alpha+\\sqrt3\\cos\\alpha\\)"
+                },
+                {
+                  "explain": "The same number written two ways, so",
+                  "work": "\\(\\sin\\alpha+\\sqrt3\\cos\\alpha=2\\sin\\left(\\alpha+\\frac{\\pi}{3}\\right)\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 4U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "13(d)(iv)"
+              },
+              "answer": "From (ii), (iii): z + i√3z = 2cis(α + π/3), imaginary part 2sin(α + π/3). Directly: z + i√3z = cos α + i sin α + i√3cos α − √3 sin α, imaginary part sin α + √3 cos α. Equate.",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "By considering the imaginary part",
+                  "note": "Compute the imaginary part directly and from the mod-arg form, then equate."
                 }
               ]
             }
@@ -1781,6 +2417,49 @@
                   "note": "|z − w| is the distance between a point in each disc: centres 5 apart, minus radii 2 and 1."
                 }
               ]
+            }
+          ]
+        },
+        {
+          "id": "bbhs2020-ext2-q13c",
+          "type": "review",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "Sketch the region in the complex plane showing the inequalities\n\n\\(1\\le|z-1+i|\\le2\\) and \\(\\frac{3\\pi}{4}\\le\\arg(z-1+i)\\le\\pi\\)",
+          "hint": "Both conditions are measured from the point 1 − i.",
+          "steps": [
+            {
+              "explain": "Rewrite with the centre visible: \\(z-1+i=z-(1-i)\\). So both conditions are measured from the point \\(1-i\\), i.e. \\((1,-1)\\).",
+              "work": "\\(|z-(1-i)|,\\qquad\\arg\\left(z-(1-i)\\right)\\)"
+            },
+            {
+              "explain": "\\(1\\le|z-(1-i)|\\le2\\): the ring between circles of radius 1 and 2 centred at \\((1,-1)\\), boundaries included (solid).",
+              "work": "\\(\\text{radius }1\\text{ to }2\\)"
+            },
+            {
+              "explain": "\\(\\frac{3\\pi}{4}\\le\\arg\\le\\pi\\): from \\((1,-1)\\), the region between the ray pointing up-left at \\(135^\\circ\\) and the ray pointing straight left at \\(180^\\circ\\).",
+              "work": "\\(135^\\circ\\le\\theta\\le180^\\circ\\)"
+            },
+            {
+              "explain": "Shade the part of the ring inside that sector (centre point excluded).",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 280\" width=\"320\" height=\"280\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"320\" height=\"280\" rx=\"8\" fill=\"white\"/><path d=\"M132.6 102.6L131.4 103.8L130.3 105.0L129.2 106.2L128.1 107.4L127.1 108.7L126.0 110.0L125.0 111.3L124.0 112.6L123.1 114.0L122.2 115.3L121.3 116.7L120.4 118.1L119.5 119.5L118.7 121.0L117.9 122.4L117.2 123.9L116.4 125.3L115.7 126.8L115.0 128.3L114.4 129.9L113.8 131.4L113.2 132.9L112.6 134.5L112.1 136.0L111.6 137.6L111.2 139.2L110.7 140.8L110.3 142.4L110.0 144.0L109.6 145.6L109.3 147.2L109.0 148.9L108.8 150.5L108.6 152.1L108.4 153.8L108.3 155.4L108.1 157.1L108.1 158.7L108.0 160.4L108.0 162.0L150.0 162.0L150.0 161.2L150.0 160.4L150.1 159.5L150.1 158.7L150.2 157.9L150.3 157.1L150.4 156.2L150.5 155.4L150.7 154.6L150.8 153.8L151.0 153.0L151.2 152.2L151.4 151.4L151.6 150.6L151.8 149.8L152.1 149.0L152.3 148.2L152.6 147.5L152.9 146.7L153.2 145.9L153.5 145.2L153.9 144.4L154.2 143.7L154.6 142.9L155.0 142.2L155.4 141.5L155.8 140.8L156.2 140.1L156.6 139.4L157.1 138.7L157.5 138.0L158.0 137.3L158.5 136.7L159.0 136.0L159.5 135.4L160.1 134.7L160.6 134.1L161.2 133.5L161.7 132.9L162.3 132.3Z\" fill=\"#93c5fd\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linejoin=\"round\" fill-opacity=\"0.6\"/><line x1=\"40.8\" y1=\"120.0\" x2=\"305.4\" y2=\"120.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"150.0\" y1=\"267.0\" x2=\"150.0\" y2=\"10.8\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"293.7\" y=\"112.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">x</text><text x=\"158.0\" y=\"22.8\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">y</text><line x1=\"192.0\" y1=\"116.0\" x2=\"192.0\" y2=\"124.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"188.6\" y=\"138.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">1</text><line x1=\"108.0\" y1=\"116.0\" x2=\"108.0\" y2=\"124.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"101.1\" y=\"138.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">−1</text><line x1=\"234.0\" y1=\"116.0\" x2=\"234.0\" y2=\"124.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"230.6\" y=\"138.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">2</text><line x1=\"146.0\" y1=\"78.0\" x2=\"154.0\" y2=\"78.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"135.2\" y=\"82.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">1</text><line x1=\"146.0\" y1=\"162.0\" x2=\"154.0\" y2=\"162.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"128.2\" y=\"166.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">−1</text><text x=\"144.0\" y=\"136.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">O</text><circle cx=\"192.0\" cy=\"162.0\" r=\"42.0\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><circle cx=\"192.0\" cy=\"162.0\" r=\"84.0\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><line x1=\"192.0\" y1=\"162.0\" x2=\"82.8\" y2=\"162.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"192.0\" y1=\"162.0\" x2=\"91.6\" y2=\"61.6\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><circle cx=\"192.0\" cy=\"162.0\" r=\"4\" fill=\"#dc2626\"/><text x=\"200.0\" y=\"178.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#dc2626\">1 − </text><text x=\"220.2\" y=\"178.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#dc2626\" font-style=\"italic\">i</text><text x=\"200.0\" y=\"126.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#dc2626\">3π</text><text x=\"203.0\" y=\"136.6\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#dc2626\">4</text><line x1=\"199.0\" y1=\"128.4\" x2=\"211.8\" y2=\"128.4\" stroke=\"#dc2626\" stroke-width=\"1.00\"/></svg>"
+              }
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys 2020 4U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "13(c)"
+          },
+          "answer": "Annulus centred at 1 − i (point (1, −1)) between radii 1 and 2 (boundaries included), restricted to the sector between the ray at angle 3π/4 and the ray at angle π from (1, −1) (the horizontal ray to the left). Shade that part of the ring.",
+          "manual": true,
+          "keyPoints": [
+            {
+              "text": "Sketch the region",
+              "note": "z − 1 + i = z − (1 − i): a ring and a sector centred at (1, −1)."
             }
           ]
         }

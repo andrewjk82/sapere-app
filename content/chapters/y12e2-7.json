@@ -232,6 +232,105 @@
               "note": "Distance (not time) is given, so use ẍ = v dv/dx."
             }
           ]
+        },
+        {
+          "id": "bbhs2020-ext2-q9",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "A particle is moving in a straight line with velocity at any particular time given by\n\\(v=2\\tan^{-1}x\\)\nWhich of the following represents the acceleration of the particle?",
+          "hint": "v is a function of x, so ẍ = v dv/dx.",
+          "steps": [
+            {
+              "explain": "Velocity is given as a function of displacement \\(x\\), so use the acceleration formula in terms of \\(x\\).",
+              "work": "\\(\\ddot x=v\\frac{dv}{dx}\\)"
+            },
+            {
+              "explain": "Differentiate \\(v\\) with respect to \\(x\\).",
+              "work": "\\(\\frac{dv}{dx}=\\frac{2}{1+x^2}\\)"
+            },
+            {
+              "explain": "Multiply by \\(v\\).",
+              "work": "\\(\\ddot x=2\\tan^{-1}x\\times\\frac{2}{1+x^2}=\\frac{4\\tan^{-1}x}{1+x^2}\\)"
+            },
+            {
+              "explain": "Option B is only \\(\\frac{dv}{dx}\\) doubled — it forgets the factor \\(v\\)."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys 2020 4U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "9"
+          },
+          "options": [
+            "\\(\\frac{2}{\\sqrt{1-x^2}}\\)",
+            "\\(\\frac{4}{1+x^2}\\)",
+            "\\(\\frac{4\\tan^{-1}x}{1+x^2}\\)",
+            "\\(-2\\operatorname{cosec}^2x\\)"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "velocity at any particular time given by",
+              "note": "v is given in terms of x, not t: use ẍ = v dv/dx."
+            }
+          ]
+        },
+        {
+          "id": "bbhs2020-ext2-q14a",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "A particle moving in a straight line has an acceleration given by \\(\\ddot{x}=x^2-5\\) where its displacement is \\(x\\) metres from the origin. Initially the particle is at the origin and has velocity \\(5\\ \\text{ms}^{-1}\\). Find the velocity of this particle when it is 3 metres to the right of the origin.",
+          "hint": "Use ẍ = d/dx(½v²), integrate, then use x = 0, v = 5.",
+          "steps": [
+            {
+              "explain": "Acceleration depends on \\(x\\), so use \\(\\ddot x=\\frac{d}{dx}\\left(\\frac12v^2\\right)\\).",
+              "work": "\\(\\frac{d}{dx}\\left(\\tfrac12v^2\\right)=x^2-5\\)"
+            },
+            {
+              "explain": "Integrate with respect to \\(x\\).",
+              "work": "\\(\\tfrac12v^2=\\frac{x^3}{3}-5x+c\\)"
+            },
+            {
+              "explain": "Initial condition \\(x=0\\), \\(v=5\\).",
+              "work": "\\(\\tfrac12(25)=0-0+c\\ \\Rightarrow\\ c=\\frac{25}{2}\\)"
+            },
+            {
+              "explain": "Multiply by 2.",
+              "work": "\\(v^2=\\frac{2x^3}{3}-10x+25\\)"
+            },
+            {
+              "explain": "Put \\(x=3\\).",
+              "work": "\\(v^2=\\frac{2(27)}{3}-30+25=18-30+25=13\\)"
+            },
+            {
+              "explain": "The velocity started positive and \\(v^2\\) never reaches 0 on the way from 0 to 3 (its minimum there is about 10.1), so it stays positive: \\(v=\\sqrt{13}\\).",
+              "work": "\\(v=\\sqrt{13}\\ \\text{ms}^{-1}\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys 2020 4U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "14(a)"
+          },
+          "options": [
+            "\\(13\\ \\text{ms}^{-1}\\)",
+            "\\(\\sqrt{19}\\ \\text{ms}^{-1}\\)",
+            "\\(-\\sqrt{13}\\ \\text{ms}^{-1}\\)",
+            "\\(\\sqrt{13}\\ \\text{ms}^{-1}\\)"
+          ],
+          "answer": 3,
+          "keyPoints": [
+            {
+              "text": "Find the velocity",
+              "note": "ẍ is in terms of x, so write ẍ = d/dx(½v²)."
+            }
+          ]
         }
       ]
     },
@@ -448,6 +547,62 @@
                   "note": "Solve cos(πt/7) = −1/2 in the first cycle, then add the times to 8:00 am."
                 }
               ]
+            }
+          ]
+        },
+        {
+          "id": "bbhs2020-ext2-q16b",
+          "type": "mc",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "The tide can be modelled using simple harmonic motion.\nThe depth of water in a harbour on a particular day is 7.8 metres at low tide and 12.4 metres at high tide. Low tide is at 8:15 am and high tide is at 2:30 pm on the same day.\n\nIf a ship requires a minimum of 9.1 metres to leave the harbour safely. Find between what times the ship can leave safely on that day.",
+          "hint": "Period 12.5 h, centre 10.1, amplitude 2.3; start at low tide with x = 10.1 − 2.3cos(nt).",
+          "steps": [
+            {
+              "explain": "Half a cycle (low to high) takes 6 h 15 min, so the period is 12.5 h. The amplitude is half the range and the centre is the average.",
+              "work": "\\(T=12.5\\ \\text{h},\\quad a=\\frac{12.4-7.8}{2}=2.3,\\quad\\text{centre}=\\frac{12.4+7.8}{2}=10.1\\)"
+            },
+            {
+              "explain": "\\(n=\\frac{2\\pi}{T}\\). Start the clock at low tide (8:15 am), so the depth starts at its minimum: use \\(-\\cos\\).",
+              "work": "\\(n=\\frac{2\\pi}{12.5}=\\frac{4\\pi}{25},\\qquad x=10.1-2.3\\cos\\left(\\frac{4\\pi}{25}t\\right)\\)"
+            },
+            {
+              "explain": "Set the depth to 9.1 m.",
+              "work": "\\(9.1=10.1-2.3\\cos\\left(\\tfrac{4\\pi}{25}t\\right)\\ \\Rightarrow\\ \\cos\\left(\\tfrac{4\\pi}{25}t\\right)=\\frac{10}{23}\\)"
+            },
+            {
+              "explain": "Solve within one cycle (two solutions, symmetric about high tide).",
+              "work": "\\(\\frac{4\\pi}{25}t=\\cos^{-1}\\frac{10}{23}\\) or \\(2\\pi-\\cos^{-1}\\frac{10}{23}\\ \\Rightarrow\\ t\\approx2.230\\ \\text{h},\\ 10.270\\ \\text{h}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 260\" width=\"340\" height=\"260\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"340\" height=\"260\" rx=\"8\" fill=\"white\"/><path d=\"M89.1 122.0L89.1 122.0L92.0 117.8L95.0 113.4L97.9 108.9L100.9 104.4L103.8 99.8L106.8 95.2L109.7 90.5L112.6 85.9L115.6 81.3L118.5 76.7L121.5 72.2L124.4 67.8L127.4 63.5L130.3 59.3L133.3 55.3L136.2 51.5L139.2 47.8L142.1 44.3L145.1 41.1L148.0 38.1L151.0 35.3L153.9 32.8L156.9 30.5L159.8 28.6L162.8 26.9L165.7 25.5L168.7 24.4L171.6 23.6L174.6 23.2L177.5 23.0L180.4 23.2L183.4 23.6L186.3 24.4L189.3 25.5L192.2 26.9L195.2 28.6L198.1 30.5L201.1 32.8L204.0 35.3L207.0 38.1L209.9 41.1L212.9 44.3L215.8 47.8L218.8 51.5L221.7 55.3L224.7 59.3L227.6 63.5L230.6 67.8L233.5 72.2L236.5 76.7L239.4 81.3L242.4 85.9L245.3 90.5L248.2 95.2L251.2 99.8L254.1 104.4L257.1 108.9L260.0 113.4L263.0 117.8L265.9 122.0L265.9 122.0Z\" fill=\"#bbf7d0\" stroke=\"none\" stroke-width=\"0\" stroke-linejoin=\"round\" fill-opacity=\"0.6\"/><line x1=\"33.4\" y1=\"215.0\" x2=\"339.2\" y2=\"215.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"40.0\" y1=\"224.0\" x2=\"40.0\" y2=\"-1.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"330.0\" y=\"207.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">t</text><text x=\"48.0\" y=\"11.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">y</text><line x1=\"177.5\" y1=\"211.0\" x2=\"177.5\" y2=\"219.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"165.8\" y=\"233.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">6.25</text><line x1=\"315.0\" y1=\"211.0\" x2=\"315.0\" y2=\"219.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"303.2\" y=\"233.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">12.5</text><text x=\"34.0\" y=\"165.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">7.8</text><text x=\"34.0\" y=\"126.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">9.1</text><text x=\"34.0\" y=\"27.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">12.4</text><path d=\"M40.0 161.0L41.4 161.0L42.8 160.9L44.1 160.7L45.5 160.5L46.9 160.2L48.2 159.8L49.6 159.3L51.0 158.8L52.4 158.3L53.8 157.6L55.1 156.9L56.5 156.2L57.9 155.3L59.2 154.4L60.6 153.5L62.0 152.5L63.4 151.4L64.8 150.3L66.1 149.1L67.5 147.8L68.9 146.5L70.2 145.2L71.6 143.8L73.0 142.3L74.4 140.8L75.8 139.2L77.1 137.6L78.5 136.0L79.9 134.3L81.2 132.6L82.6 130.8L84.0 129.0L85.4 127.1L86.8 125.2L88.1 123.3L89.5 121.4L90.9 119.4L92.2 117.4L93.6 115.4L95.0 113.3L96.4 111.3L97.8 109.2L99.1 107.1L100.5 104.9L101.9 102.8L103.2 100.6L104.6 98.5L106.0 96.3L107.4 94.2L108.8 92.0L110.1 89.8L111.5 87.7L112.9 85.5L114.2 83.4L115.6 81.2L117.0 79.1L118.4 76.9L119.8 74.8L121.1 72.7L122.5 70.7L123.9 68.6L125.2 66.6L126.6 64.6L128.0 62.6L129.4 60.7L130.8 58.8L132.1 56.9L133.5 55.0L134.9 53.2L136.2 51.4L137.6 49.7L139.0 48.0L140.4 46.4L141.8 44.8L143.1 43.2L144.5 41.7L145.9 40.2L147.2 38.8L148.6 37.5L150.0 36.2L151.4 34.9L152.8 33.7L154.1 32.6L155.5 31.5L156.9 30.5L158.2 29.6L159.6 28.7L161.0 27.8L162.4 27.1L163.8 26.4L165.1 25.7L166.5 25.2L167.9 24.7L169.2 24.2L170.6 23.8L172.0 23.5L173.4 23.3L174.8 23.1L176.1 23.0L177.5 23.0L178.9 23.0L180.2 23.1L181.6 23.3L183.0 23.5L184.4 23.8L185.8 24.2L187.1 24.7L188.5 25.2L189.9 25.7L191.2 26.4L192.6 27.1L194.0 27.8L195.4 28.7L196.8 29.6L198.1 30.5L199.5 31.5L200.9 32.6L202.2 33.7L203.6 34.9L205.0 36.2L206.4 37.5L207.8 38.8L209.1 40.2L210.5 41.7L211.9 43.2L213.2 44.8L214.6 46.4L216.0 48.0L217.4 49.7L218.8 51.4L220.1 53.2L221.5 55.0L222.9 56.9L224.2 58.8L225.6 60.7L227.0 62.6L228.4 64.6L229.8 66.6L231.1 68.6L232.5 70.7L233.9 72.7L235.2 74.8L236.6 76.9L238.0 79.1L239.4 81.2L240.8 83.4L242.1 85.5L243.5 87.7L244.9 89.8L246.2 92.0L247.6 94.2L249.0 96.3L250.4 98.5L251.8 100.6L253.1 102.8L254.5 104.9L255.9 107.1L257.2 109.2L258.6 111.3L260.0 113.3L261.4 115.4L262.8 117.4L264.1 119.4L265.5 121.4L266.9 123.3L268.2 125.2L269.6 127.1L271.0 129.0L272.4 130.8L273.8 132.6L275.1 134.3L276.5 136.0L277.9 137.6L279.2 139.2L280.6 140.8L282.0 142.3L283.4 143.8L284.8 145.2L286.1 146.5L287.5 147.8L288.9 149.1L290.2 150.3L291.6 151.4L293.0 152.5L294.4 153.5L295.8 154.4L297.1 155.3L298.5 156.2L299.9 156.9L301.2 157.6L302.6 158.3L304.0 158.8L305.4 159.3L306.8 159.8L308.1 160.2L309.5 160.5L310.9 160.7L312.2 160.9L313.6 161.0L315.0 161.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><line x1=\"40.0\" y1=\"122.0\" x2=\"330.4\" y2=\"122.0\" stroke=\"#dc2626\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><circle cx=\"89.1\" cy=\"122.0\" r=\"4\" fill=\"#dc2626\"/><line x1=\"89.1\" y1=\"215.0\" x2=\"89.1\" y2=\"122.0\" stroke=\"#16a34a\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><circle cx=\"265.9\" cy=\"122.0\" r=\"4\" fill=\"#dc2626\"/><line x1=\"265.9\" y1=\"215.0\" x2=\"265.9\" y2=\"122.0\" stroke=\"#16a34a\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><text x=\"74.1\" y=\"245.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"11.0\" fill=\"#16a34a\">2.23 h</text><text x=\"247.9\" y=\"245.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"11.0\" fill=\"#16a34a\">10.27 h</text><text x=\"34.0\" y=\"231.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">8:15</text></svg>"
+              }
+            },
+            {
+              "explain": "Convert to clock times: \\(2.230\\) h ≈ 2 h 14 min, \\(10.270\\) h ≈ 10 h 16 min after 8:15 am.",
+              "work": "\\(8{:}15+2{:}14=10{:}29\\ \\text{am},\\qquad8{:}15+10{:}16=6{:}31\\ \\text{pm}\\)"
+            },
+            {
+              "explain": "Between these times the depth is above 9.1 m, so the ship can leave between about 10:29 am and 6:31 pm."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys 2020 4U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "16(b)"
+          },
+          "options": [
+            "Between about 9:15 am and 7:45 pm",
+            "Between about 10:29 am and 2:30 pm",
+            "Between about 11:00 am and 6:00 pm",
+            "Between about 10:29 am and 6:31 pm"
+          ],
+          "answer": 3,
+          "keyPoints": [
+            {
+              "text": "Find between what times the ship can leave safely",
+              "note": "Build the SHM model from low tide (t = 0), then solve depth = 9.1."
             }
           ]
         }
@@ -798,6 +953,253 @@
                 {
                   "text": "maximum speed",
                   "note": "v_max = na with n = 2 and a = √17."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bbhs2020-ext2-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "A particle undergoing simple harmonic motion in a straight line has an acceleration of \\(\\ddot{x}=100-25x\\), where \\(x\\) is the displacement after \\(t\\) seconds.\nWhere is the centre of motion?",
+          "hint": "Write ẍ = −n²(x − c), or set ẍ = 0.",
+          "steps": [
+            {
+              "explain": "SHM with centre \\(c\\) has the form",
+              "work": "\\(\\ddot x=-n^2(x-c)\\)"
+            },
+            {
+              "explain": "Factor \\(-25\\) out of the given acceleration.",
+              "work": "\\(\\ddot x=100-25x=-25(x-4)\\)"
+            },
+            {
+              "explain": "Compare: \\(n^2=25\\) and \\(c=4\\). The centre is where the acceleration is zero: \\(100-25x=0\\Rightarrow x=4\\).",
+              "work": "\\(c=4\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys 2020 4U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "8"
+          },
+          "options": [
+            "\\(x=10\\)",
+            "\\(x=5\\)",
+            "\\(x=4\\)",
+            "\\(x=2\\)"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "Where is the centre of motion?",
+              "note": "The centre is where the acceleration is zero."
+            }
+          ]
+        },
+        {
+          "id": "bbhs2020-ext2-q14b",
+          "type": "multipart",
+          "stem": "A particle is moving in a straight line. Initially, the particle is 9 metres to the right of the origin, moving with a velocity of \\(-8\\sqrt3\\ \\text{ms}^{-1}\\). The displacement \\(x\\) is given by \\(x=A\\cos(2t+\\alpha)+5\\), for some constants \\(A\\) and \\(\\alpha\\).",
+          "meta": {
+            "source": "Blacktown Boys 2020 4U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "14(b)"
+          },
+          "parts": [
+            {
+              "id": "bbhs2020-ext2-q14b-i",
+              "type": "review",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Prove that the particle is undergoing simple harmonic motion.",
+              "hint": "Differentiate twice and write ẍ in terms of x.",
+              "steps": [
+                {
+                  "explain": "Differentiate once.",
+                  "work": "\\(\\dot x=-2A\\sin(2t+\\alpha)\\)"
+                },
+                {
+                  "explain": "Differentiate again.",
+                  "work": "\\(\\ddot x=-4A\\cos(2t+\\alpha)\\)"
+                },
+                {
+                  "explain": "From the given equation, \\(A\\cos(2t+\\alpha)=x-5\\).",
+                  "work": "\\(\\ddot x=-4(x-5)=-2^2(x-5)\\)"
+                },
+                {
+                  "explain": "This is \\(\\ddot x=-n^2(x-c)\\) with \\(n=2\\), centre \\(c=5\\): SHM."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 4U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "14(b)(i)"
+              },
+              "answer": "\\(\\dot x=-2A\\sin(2t+\\alpha)\\), \\(\\ddot x=-4A\\cos(2t+\\alpha)=-4(x-5)\\), which has the form \\(\\ddot x=-n^2(x-c)\\) with n = 2, c = 5: SHM.",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Prove that the particle is undergoing simple harmonic motion",
+                  "note": "Show ẍ = −n²(x − c)."
+                }
+              ]
+            },
+            {
+              "id": "bbhs2020-ext2-q14b-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Find the values of \\(A\\) and \\(\\alpha\\) where \\(A\\gt 0\\) and \\(0\\lt\\alpha\\lt\\frac{\\pi}{2}\\).",
+              "hint": "Use x(0) = 9 and ẋ(0) = −8√3 to get A cos α and A sin α.",
+              "steps": [
+                {
+                  "explain": "At \\(t=0\\), \\(x=9\\).",
+                  "work": "\\(9=A\\cos\\alpha+5\\ \\Rightarrow\\ A\\cos\\alpha=4\\quad(1)\\)"
+                },
+                {
+                  "explain": "At \\(t=0\\), \\(\\dot x=-8\\sqrt3\\).",
+                  "work": "\\(-8\\sqrt3=-2A\\sin\\alpha\\ \\Rightarrow\\ A\\sin\\alpha=4\\sqrt3\\quad(2)\\)"
+                },
+                {
+                  "explain": "Square and add (1) and (2).",
+                  "work": "\\(A^2\\left(\\cos^2\\alpha+\\sin^2\\alpha\\right)=16+48=64\\ \\Rightarrow\\ A=8\\)"
+                },
+                {
+                  "explain": "Divide (2) by (1).",
+                  "work": "\\(\\tan\\alpha=\\sqrt3\\ \\Rightarrow\\ \\alpha=\\frac{\\pi}{3}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 4U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "14(b)(ii)"
+              },
+              "options": [
+                "\\(A=8,\\ \\alpha=\\frac{\\pi}{6}\\)",
+                "\\(A=4,\\ \\alpha=\\frac{\\pi}{3}\\)",
+                "\\(A=64,\\ \\alpha=\\frac{\\pi}{3}\\)",
+                "\\(A=8,\\ \\alpha=\\frac{\\pi}{3}\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "Find the values of \\(A\\) and \\(\\alpha\\)",
+                  "note": "Two equations at t = 0: one from x, one from ẋ."
+                }
+              ]
+            },
+            {
+              "id": "bbhs2020-ext2-q14b-iii",
+              "type": "mc",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Find the period of this motion.",
+              "hint": "T = 2π/n.",
+              "steps": [
+                {
+                  "explain": "Period \\(T=\\frac{2\\pi}{n}\\) with \\(n=2\\).",
+                  "work": "\\(T=\\frac{2\\pi}{2}=\\pi\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 4U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "14(b)(iii)"
+              },
+              "options": [
+                "\\(\\frac{\\pi}{2}\\) seconds",
+                "\\(4\\pi\\) seconds",
+                "\\(\\pi\\) seconds",
+                "\\(2\\pi\\) seconds"
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "period",
+                  "note": "n = 2 from cos(2t + α)."
+                }
+              ]
+            },
+            {
+              "id": "bbhs2020-ext2-q14b-iv",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "When does the particle first reach the centre of motion.",
+              "hint": "Set x = 5.",
+              "steps": [
+                {
+                  "explain": "The centre is \\(x=5\\), so \\(8\\cos(2t+\\frac\\pi3)=0\\).",
+                  "work": "\\(\\cos\\left(2t+\\tfrac{\\pi}{3}\\right)=0\\)"
+                },
+                {
+                  "explain": "The first positive solution: \\(2t+\\frac\\pi3=\\frac\\pi2\\).",
+                  "work": "\\(2t=\\frac{\\pi}{2}-\\frac{\\pi}{3}=\\frac{\\pi}{6}\\ \\Rightarrow\\ t=\\frac{\\pi}{12}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 4U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "14(b)(iv)"
+              },
+              "options": [
+                "\\(t=\\frac{\\pi}{3}\\) s",
+                "\\(t=\\frac{\\pi}{12}\\) s",
+                "\\(t=\\frac{\\pi}{6}\\) s",
+                "\\(t=\\frac{\\pi}{4}\\) s"
+              ],
+              "answer": 1,
+              "keyPoints": [
+                {
+                  "text": "centre of motion",
+                  "note": "The centre is x = 5, where the cosine term is zero."
+                }
+              ]
+            },
+            {
+              "id": "bbhs2020-ext2-q14b-v",
+              "type": "mc",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Find the maximum speed of this particle.",
+              "hint": "v_max = nA.",
+              "steps": [
+                {
+                  "explain": "\\(\\dot x=-16\\sin(2t+\\frac\\pi3)\\), and \\(|\\sin|\\le1\\).",
+                  "work": "\\(v_{\\max}=nA=2\\times8=16\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 4U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "14(b)(v)"
+              },
+              "options": [
+                "\\(8\\ \\text{ms}^{-1}\\)",
+                "\\(8\\sqrt3\\ \\text{ms}^{-1}\\)",
+                "\\(32\\ \\text{ms}^{-1}\\)",
+                "\\(16\\ \\text{ms}^{-1}\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "maximum speed",
+                  "note": "Maximum speed = n × amplitude."
                 }
               ]
             }

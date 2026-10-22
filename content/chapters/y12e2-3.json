@@ -652,6 +652,110 @@
               "note": "Capital-A Arg is the principal argument: it must be in (−π, π]."
             }
           ]
+        },
+        {
+          "id": "bbhs2020-ext2-q11c",
+          "type": "multipart",
+          "stem": "",
+          "meta": {
+            "source": "Blacktown Boys 2020 4U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "11(c)"
+          },
+          "parts": [
+            {
+              "id": "bbhs2020-ext2-q11c-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Write \\(-\\sqrt3+3i\\) in modulus argument form.",
+              "hint": "Find the modulus, then the quadrant before the argument.",
+              "steps": [
+                {
+                  "explain": "Modulus.",
+                  "work": "\\(\\left|-\\sqrt3+3i\\right|=\\sqrt{3+9}=\\sqrt{12}=2\\sqrt3\\)"
+                },
+                {
+                  "explain": "The point \\((-\\sqrt3,3)\\) is in the second quadrant. Related acute angle:",
+                  "work": "\\(\\tan\\alpha=\\frac{3}{\\sqrt3}=\\sqrt3\\ \\Rightarrow\\ \\alpha=\\frac{\\pi}{3}\\)"
+                },
+                {
+                  "explain": "Second quadrant: argument \\(=\\pi-\\alpha\\).",
+                  "work": "\\(\\arg=\\pi-\\frac{\\pi}{3}=\\frac{2\\pi}{3}\\ \\Rightarrow\\ -\\sqrt3+3i=2\\sqrt3\\operatorname{cis}\\frac{2\\pi}{3}\\)"
+                },
+                {
+                  "explain": "Check: \\(2\\sqrt3\\left(-\\frac12+\\frac{\\sqrt3}{2}i\\right)=-\\sqrt3+3i\\) ✓. A calculator \\(\\tan^{-1}(-\\sqrt3)=-\\frac\\pi3\\) is the wrong quadrant."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 4U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "11(c)(i)"
+              },
+              "options": [
+                "\\(12\\operatorname{cis}\\frac{2\\pi}{3}\\)",
+                "\\(2\\sqrt3\\operatorname{cis}\\frac{5\\pi}{6}\\)",
+                "\\(2\\sqrt3\\operatorname{cis}\\frac{2\\pi}{3}\\)",
+                "\\(2\\sqrt3\\operatorname{cis}\\left(-\\frac{\\pi}{3}\\right)\\)"
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "modulus argument form",
+                  "note": "Second quadrant: arg = π − (related acute angle)."
+                }
+              ]
+            },
+            {
+              "id": "bbhs2020-ext2-q11c-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Hence express \\(\\left(-\\sqrt3+3i\\right)^5\\) in the form \\(a+bi\\), where \\(a\\) and \\(b\\) are real numbers.",
+              "hint": "Use de Moivre: (2√3)⁵ cis(10π/3), then reduce the angle.",
+              "steps": [
+                {
+                  "explain": "De Moivre's theorem: raise the modulus to the 5th power and multiply the argument by 5.",
+                  "work": "\\(\\left(2\\sqrt3\\operatorname{cis}\\tfrac{2\\pi}{3}\\right)^5=\\left(2\\sqrt3\\right)^5\\operatorname{cis}\\frac{10\\pi}{3}\\)"
+                },
+                {
+                  "explain": "Modulus: \\((2\\sqrt3)^5=32\\times9\\sqrt3=288\\sqrt3\\).",
+                  "work": "\\(\\left(2\\sqrt3\\right)^5=2^5\\left(\\sqrt3\\right)^5=32\\times9\\sqrt3=288\\sqrt3\\)"
+                },
+                {
+                  "explain": "Argument: subtract \\(2\\pi\\) to bring it into range.",
+                  "work": "\\(\\frac{10\\pi}{3}-2\\pi=\\frac{4\\pi}{3}\\ \\Rightarrow\\ \\cos\\frac{4\\pi}{3}=-\\frac12,\\quad\\sin\\frac{4\\pi}{3}=-\\frac{\\sqrt3}{2}\\)"
+                },
+                {
+                  "explain": "Multiply out.",
+                  "work": "\\(288\\sqrt3\\left(-\\frac12-\\frac{\\sqrt3}{2}i\\right)=-144\\sqrt3-144\\times3\\,i=-144\\sqrt3-432i\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 4U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "11(c)(ii)"
+              },
+              "options": [
+                "\\(-432-144\\sqrt3\\,i\\)",
+                "\\(-144\\sqrt3-432i\\)",
+                "\\(144\\sqrt3-432i\\)",
+                "\\(-144\\sqrt3+432i\\)"
+              ],
+              "answer": 1,
+              "keyPoints": [
+                {
+                  "text": "Hence express",
+                  "note": "Use the mod-arg form from (i) with de Moivre's theorem."
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1657,6 +1761,217 @@
             {
               "text": "\\(z^3=\\frac{i}{\\overline{z}}\\)",
               "note": "Multiply by z̄: z³z̄ = r⁴e^(2iθ). Compare with i = e^(iπ/2)."
+            }
+          ]
+        },
+        {
+          "id": "bbhs2020-ext2-q16c",
+          "type": "multipart",
+          "stem": "Let \\(\\omega\\) be the complex root of the polynomial \\(z^7=1\\) with the smallest possible argument.",
+          "meta": {
+            "source": "Blacktown Boys 2020 4U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "16(c)"
+          },
+          "parts": [
+            {
+              "id": "bbhs2020-ext2-q16c-i",
+              "type": "review",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Explain why \\(\\omega^7=1\\) and \\(1+\\omega+\\omega^2+\\omega^3+\\omega^4+\\omega^5+\\omega^6=0\\).",
+              "hint": "Factorise z⁷ − 1 = (z − 1)(z⁶ + … + 1).",
+              "steps": [
+                {
+                  "explain": "\\(\\omega\\) is a root of \\(z^7=1\\), so substituting gives \\(\\omega^7=1\\).",
+                  "work": "\\(\\omega^7=1\\)"
+                },
+                {
+                  "explain": "Factorise \\(z^7-1\\).",
+                  "work": "\\(z^7-1=(z-1)\\left(z^6+z^5+z^4+z^3+z^2+z+1\\right)\\)"
+                },
+                {
+                  "explain": "\\(\\omega\\) is a non-real (complex) root, so \\(\\omega\\neq1\\) and the first factor is not zero. Therefore the second factor is zero.",
+                  "work": "\\(1+\\omega+\\omega^2+\\omega^3+\\omega^4+\\omega^5+\\omega^6=0\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 4U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "16(c)(i)"
+              },
+              "answer": "ω is a root of z⁷ = 1, so ω⁷ = 1. z⁷ − 1 = (z − 1)(z⁶ + z⁵ + … + 1). ω is complex so ω ≠ 1, hence ω is a root of the second factor: 1 + ω + … + ω⁶ = 0.",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Explain why",
+                  "note": "ω ≠ 1, so ω must make the second factor zero."
+                }
+              ]
+            },
+            {
+              "id": "bbhs2020-ext2-q16c-ii",
+              "type": "review",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Let \\(\\alpha=\\omega+\\omega^2+\\omega^4\\) and \\(\\beta=\\omega^3+\\omega^5+\\omega^6\\).\nShow that \\(\\alpha+\\beta=-1\\) and \\(\\alpha\\beta=2\\).",
+              "hint": "Expand αβ and reduce powers with ω⁷ = 1.",
+              "steps": [
+                {
+                  "explain": "Add: \\(\\alpha+\\beta\\) contains each power \\(\\omega,\\dots,\\omega^6\\) exactly once.",
+                  "work": "\\(\\alpha+\\beta=\\omega+\\omega^2+\\omega^3+\\omega^4+\\omega^5+\\omega^6=-1\\quad\\text{(by (i))}\\)"
+                },
+                {
+                  "explain": "Multiply out all 9 products.",
+                  "work": "\\(\\alpha\\beta=\\left(\\omega+\\omega^2+\\omega^4\\right)\\left(\\omega^3+\\omega^5+\\omega^6\\right)=\\omega^4+\\omega^6+\\omega^7+\\omega^5+\\omega^7+\\omega^8+\\omega^7+\\omega^9+\\omega^{10}\\)"
+                },
+                {
+                  "explain": "Reduce powers using \\(\\omega^7=1\\): \\(\\omega^8=\\omega\\), \\(\\omega^9=\\omega^2\\), \\(\\omega^{10}=\\omega^3\\).",
+                  "work": "\\(\\alpha\\beta=\\omega^4+\\omega^6+1+\\omega^5+1+\\omega+1+\\omega^2+\\omega^3\\)"
+                },
+                {
+                  "explain": "Group.",
+                  "work": "\\(\\alpha\\beta=3+\\left(\\omega+\\omega^2+\\omega^3+\\omega^4+\\omega^5+\\omega^6\\right)=3+(-1)=2\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 4U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "16(c)(ii)"
+              },
+              "answer": "α + β = ω + … + ω⁶ = −1 by (i). αβ = ω⁴ + ω⁶ + ω⁷ + ω⁵ + ω⁷ + ω⁸ + ω⁷ + ω⁹ + ω¹⁰ = 3 + (ω + ω² + … + ω⁶) using ω⁷ = 1 (ω⁸ = ω, ω⁹ = ω², ω¹⁰ = ω³) = 3 − 1 = 2.",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Show that",
+                  "note": "α + β uses (i); for αβ expand all 9 terms and use ω⁷ = 1."
+                }
+              ]
+            },
+            {
+              "id": "bbhs2020-ext2-q16c-iii",
+              "type": "mc",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Hence write a quadratic equation whose roots are \\(\\alpha\\) and \\(\\beta\\).",
+              "hint": "x² − (sum)x + (product) = 0.",
+              "steps": [
+                {
+                  "explain": "A monic quadratic with roots \\(\\alpha,\\beta\\) is \\(x^2-(\\alpha+\\beta)x+\\alpha\\beta=0\\).",
+                  "work": "\\(x^2-(-1)x+2=0\\)"
+                },
+                {
+                  "explain": "So",
+                  "work": "\\(x^2+x+2=0\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 4U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "16(c)(iii)"
+              },
+              "options": [
+                "\\(x^2-x+2=0\\)",
+                "\\(x^2+x-2=0\\)",
+                "\\(x^2+2x+1=0\\)",
+                "\\(x^2+x+2=0\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "a quadratic equation whose roots are",
+                  "note": "Use x² − (α + β)x + αβ = 0."
+                }
+              ]
+            },
+            {
+              "id": "bbhs2020-ext2-q16c-iv",
+              "type": "review",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Show that \\(\\alpha=-\\frac12+\\frac{\\sqrt7}{2}i\\) and \\(\\beta=-\\frac12-\\frac{\\sqrt7}{2}i\\)",
+              "hint": "Solve the quadratic; decide the sign using Im(α) > 0.",
+              "steps": [
+                {
+                  "explain": "Quadratic formula on \\(x^2+x+2=0\\).",
+                  "work": "\\(x=\\frac{-1\\pm\\sqrt{1-8}}{2}=\\frac{-1\\pm\\sqrt7\\,i}{2}\\)"
+                },
+                {
+                  "explain": "Decide which is \\(\\alpha\\). With \\(\\omega=\\operatorname{cis}\\frac{2\\pi}{7}\\), the imaginary part of \\(\\alpha\\) is",
+                  "work": "\\(\\sin\\frac{2\\pi}{7}+\\sin\\frac{4\\pi}{7}+\\sin\\frac{8\\pi}{7}=\\sin\\frac{2\\pi}{7}+\\sin\\frac{4\\pi}{7}-\\sin\\frac{\\pi}{7}\\)"
+                },
+                {
+                  "explain": "\\(\\sin\\frac{2\\pi}{7}\\gt\\sin\\frac{\\pi}{7}\\), so this is positive. Hence \\(\\alpha\\) takes the \\(+\\) sign.",
+                  "work": "\\(\\alpha=-\\frac12+\\frac{\\sqrt7}{2}i,\\qquad\\beta=-\\frac12-\\frac{\\sqrt7}{2}i\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 4U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "16(c)(iv)"
+              },
+              "answer": "Solve x² + x + 2 = 0: x = (−1 ± √(1 − 8))/2 = −½ ± (√7/2)i. Im α = sin(2π/7) + sin(4π/7) + sin(8π/7) = sin(2π/7) + sin(4π/7) − sin(π/7) > 0, so α has the + sign.",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Show that",
+                  "note": "Solve x² + x + 2 = 0, then check the sign of Im(α)."
+                }
+              ]
+            },
+            {
+              "id": "bbhs2020-ext2-q16c-v",
+              "type": "review",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Write down \\(\\omega\\) in modulus-argument form, and show that\n\n\\(\\cos\\frac{4\\pi}{7}+\\cos\\frac{2\\pi}{7}-\\cos\\frac{\\pi}{7}=-\\frac12\\) and \\(\\sin\\frac{4\\pi}{7}+\\sin\\frac{2\\pi}{7}-\\sin\\frac{\\pi}{7}=\\frac{\\sqrt7}{2}\\)",
+              "hint": "ω = cis(2π/7); write α in cis form and equate with (iv).",
+              "steps": [
+                {
+                  "explain": "The 7th roots of unity are \\(\\operatorname{cis}\\frac{2k\\pi}{7}\\). The complex root with the smallest positive argument is \\(k=1\\).",
+                  "work": "\\(\\omega=\\cos\\frac{2\\pi}{7}+i\\sin\\frac{2\\pi}{7}\\)"
+                },
+                {
+                  "explain": "By de Moivre, \\(\\omega^2=\\operatorname{cis}\\frac{4\\pi}{7}\\) and \\(\\omega^4=\\operatorname{cis}\\frac{8\\pi}{7}\\).",
+                  "work": "\\(\\alpha=\\operatorname{cis}\\frac{2\\pi}{7}+\\operatorname{cis}\\frac{4\\pi}{7}+\\operatorname{cis}\\frac{8\\pi}{7}\\)"
+                },
+                {
+                  "explain": "Use \\(\\frac{8\\pi}{7}=\\pi+\\frac\\pi7\\): \\(\\cos(\\pi+\\theta)=-\\cos\\theta\\), \\(\\sin(\\pi+\\theta)=-\\sin\\theta\\).",
+                  "work": "\\(\\cos\\frac{8\\pi}{7}=-\\cos\\frac{\\pi}{7},\\qquad\\sin\\frac{8\\pi}{7}=-\\sin\\frac{\\pi}{7}\\)"
+                },
+                {
+                  "explain": "Equate real parts with \\(\\alpha=-\\frac12+\\frac{\\sqrt7}{2}i\\).",
+                  "work": "\\(\\cos\\frac{2\\pi}{7}+\\cos\\frac{4\\pi}{7}-\\cos\\frac{\\pi}{7}=-\\frac12\\)"
+                },
+                {
+                  "explain": "Equate imaginary parts.",
+                  "work": "\\(\\sin\\frac{2\\pi}{7}+\\sin\\frac{4\\pi}{7}-\\sin\\frac{\\pi}{7}=\\frac{\\sqrt7}{2}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 4U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "16(c)(v)"
+              },
+              "answer": "ω = cis(2π/7). α = cis(2π/7) + cis(4π/7) + cis(8π/7); cos(8π/7) = −cos(π/7), sin(8π/7) = −sin(π/7). Equate with α = −½ + (√7/2)i.",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Write down \\(\\omega\\) in modulus-argument form",
+                  "note": "ω = cis(2π/7); then α = ω + ω² + ω⁴, and 8π/7 = π + π/7."
+                }
+              ]
             }
           ]
         }
