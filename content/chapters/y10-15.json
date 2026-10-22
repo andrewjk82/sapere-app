@@ -7262,21 +7262,21 @@
           "steps": [
             {
               "explain": "Gemma can pick red or green first. Because the apple is eaten, only 16 apples remain for Mary.",
-              "work": "P(R first)=9/17; P(G first)=8/17",
+              "work": "\\(P(R\\text{ first})=\\frac{9}{17}; \\quad P(G\\text{ first})=\\frac{8}{17}\\)",
               "figure": {
                 "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><circle cx=\"34\" cy=\"112\" r=\"3\" fill=\"#334155\"/><path d=\"M37 112L115 62M37 112L115 162M115 62L225 35M115 62L225 82M115 162L225 132M115 162L225 182\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"1.5\"/><g fill=\"#334155\" font-size=\"9\"><text x=\"8\" y=\"106\">Start</text><text x=\"120\" y=\"58\">R</text><text x=\"120\" y=\"169\">G</text><text x=\"230\" y=\"38\">R</text><text x=\"230\" y=\"85\">G</text><text x=\"230\" y=\"135\">R</text><text x=\"230\" y=\"185\">G</text><text x=\"60\" y=\"78\">9/17</text><text x=\"60\" y=\"151\">8/17</text><text x=\"157\" y=\"44\">8/16</text><text x=\"157\" y=\"79\">8/16</text><text x=\"157\" y=\"126\">9/16</text><text x=\"157\" y=\"178\">7/16</text></g></svg>"
               }
             },
             {
               "explain": "For the red-red path, multiply the branch probabilities. For green-green, do the same.",
-              "work": "P(RR)=9/17×8/16=9/34\nP(GG)=8/17×7/16=7/34",
+              "work": "\\(P(RR)=\\frac{9}{17}\\times\\frac{8}{16}=\\frac{9}{34}\\)\n\\(P(GG)=\\frac{8}{17}\\times\\frac{7}{16}=\\frac{7}{34}\\)",
               "figure": {
                 "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><circle cx=\"34\" cy=\"112\" r=\"3\" fill=\"#334155\"/><path d=\"M37 112L115 62M37 112L115 162M115 62L225 35M115 62L225 82M115 162L225 132M115 162L225 182\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"1.5\"/><g fill=\"#334155\" font-size=\"9\"><text x=\"8\" y=\"106\">Start</text><text x=\"120\" y=\"58\">R</text><text x=\"120\" y=\"169\">G</text><text x=\"230\" y=\"38\">R</text><text x=\"230\" y=\"85\">G</text><text x=\"230\" y=\"135\">R</text><text x=\"230\" y=\"185\">G</text><text x=\"60\" y=\"78\">9/17</text><text x=\"60\" y=\"151\">8/17</text><text x=\"157\" y=\"44\">8/16</text><text x=\"157\" y=\"79\">8/16</text><text x=\"157\" y=\"126\">9/16</text><text x=\"157\" y=\"178\">7/16</text></g></svg>"
               }
             },
             {
               "explain": "“Same colour” means RR or GG. Add these disjoint path probabilities.",
-              "work": "P(same)=9/34+7/34=16/34=8/17",
+              "work": "\\(P(\\text{same})=\\frac{9}{34}+\\frac{7}{34}=\\frac{16}{34}=\\frac{8}{17}\\)",
               "figure": {
                 "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><circle cx=\"34\" cy=\"112\" r=\"3\" fill=\"#334155\"/><path d=\"M37 112L115 62M37 112L115 162M115 62L225 35M115 62L225 82M115 162L225 132M115 162L225 182\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"1.5\"/><g fill=\"#334155\" font-size=\"9\"><text x=\"8\" y=\"106\">Start</text><text x=\"120\" y=\"58\">R</text><text x=\"120\" y=\"169\">G</text><text x=\"230\" y=\"38\">R</text><text x=\"230\" y=\"85\">G</text><text x=\"230\" y=\"135\">R</text><text x=\"230\" y=\"185\">G</text><text x=\"60\" y=\"78\">9/17</text><text x=\"60\" y=\"151\">8/17</text><text x=\"157\" y=\"44\" fill=\"#047857\">8/16 RR</text><text x=\"157\" y=\"79\">8/16</text><text x=\"157\" y=\"126\">9/16</text><text x=\"157\" y=\"178\" fill=\"#047857\">7/16 GG</text><text x=\"258\" y=\"109\" fill=\"#047857\">9/34+7/34=8/17</text></g></svg>"
               }
