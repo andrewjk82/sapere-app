@@ -2001,80 +2001,98 @@
           }
         },
         {
-          "id": "abb-y10-2025-t4-e2-q5a",
-          "type": "review",
+          "id": "abb-y10-2025-t4-e2-q5",
+          "type": "multipart",
           "difficulty": "medium",
-          "stem": "Prove that ABCD is a trapezium.",
-          "answer": "Sample answer is shown in the final solution step.",
-          "hint": "Show one pair of opposite sides is parallel by comparing gradients.",
-          "steps": [
-            {
-              "explain": "Find the gradient of AD from its equation.",
-              "work": "2x−y−1=0 → y=2x−1; m_AD=2"
-            },
-            {
-              "explain": "Find the gradient of BC.",
-              "work": "m_BC=(5−3)/(1−0)=2"
-            },
-            {
-              "explain": "Equal gradients prove AD is parallel to BC.",
-              "work": "AD∥BC, so ABCD is a trapezium.",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M30 20V195M70 20V195M110 20V195M150 20V195M190 20V195M230 20V195M270 20V195M310 20V195M25 30H335M25 70H335M25 110H335M25 150H335M25 190H335\"/></g><g stroke=\"#334155\" stroke-width=\"1.5\"><path d=\"M25 150H335M90 195V20\"/></g><path d=\"M90 170L90 70L130 30L250 30M90 170L130 30M90 70L250 30\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2\"/><circle cx=\"90\" cy=\"170\" r=\"3\" fill=\"#ef4444\"/><circle cx=\"90\" cy=\"70\" r=\"3\" fill=\"#ef4444\"/><circle cx=\"130\" cy=\"30\" r=\"3\" fill=\"#ef4444\"/><circle cx=\"250\" cy=\"30\" r=\"3\" fill=\"#ef4444\"/><text x=\"56\" y=\"185\" font-size=\"9\">A(0,−1)</text><text x=\"95\" y=\"68\" font-size=\"9\">B(0,3)</text><text x=\"118\" y=\"44\" font-size=\"9\">C(1,5)</text><text x=\"252\" y=\"27\" font-size=\"9\">D(3,5)</text><text x=\"183\" y=\"101\" font-size=\"9\">AD: 2x−y−1=0</text></svg>"
-              }
-            }
-          ],
-          "keyPoints": [
-            {
-              "text": "Prove that ABCD is a trapezium.",
-              "note": "Show one pair of opposite sides is parallel by comparing gradients."
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "manual": true,
-          "meta": {
-            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
-            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
-          },
+          "stem": "The diagram shows quadrilateral \\(ABCD\\), with \\(A(0,-1)\\), \\(B(0,3)\\), \\(C(1,5)\\), and side \\(AD\\) on the line \\(2x-y-1=0\\).",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M30 20V195M70 20V195M110 20V195M150 20V195M190 20V195M230 20V195M270 20V195M310 20V195M25 30H335M25 70H335M25 110H335M25 150H335M25 190H335\"/></g><g stroke=\"#334155\" stroke-width=\"1.5\"><path d=\"M25 150H335M90 195V20\"/></g><path d=\"M90 170L90 70L130 30L250 30M90 170L130 30M90 70L250 30\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2\"/><circle cx=\"90\" cy=\"170\" r=\"3\" fill=\"#ef4444\"/><circle cx=\"90\" cy=\"70\" r=\"3\" fill=\"#ef4444\"/><circle cx=\"130\" cy=\"30\" r=\"3\" fill=\"#ef4444\"/><circle cx=\"250\" cy=\"30\" r=\"3\" fill=\"#ef4444\"/><text x=\"56\" y=\"185\" font-size=\"9\">A(0,−1)</text><text x=\"95\" y=\"68\" font-size=\"9\">B(0,3)</text><text x=\"118\" y=\"44\" font-size=\"9\">C(1,5)</text><text x=\"252\" y=\"27\" font-size=\"9\">D(3,5)</text><text x=\"183\" y=\"101\" font-size=\"9\">AD: 2x−y−1=0</text></svg>"
-          }
-        },
-        {
-          "id": "abb-y10-2025-t4-e2-q5b",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "The line CD is parallel to the x-axis. Find the coordinates of the point D.",
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M30 20V195M70 20V195M110 20V195M150 20V195M190 20V195M230 20V195M270 20V195M310 20V195M25 30H335M25 70H335M25 110H335M25 150H335M25 190H335\"/></g><g stroke=\"#334155\" stroke-width=\"1.5\"><path d=\"M25 150H335M90 195V20\"/></g><path d=\"M90 170L90 70L130 30L250 30M90 170L130 30M90 70L250 30\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2\"/><circle cx=\"90\" cy=\"170\" r=\"3\" fill=\"#ef4444\"/><circle cx=\"90\" cy=\"70\" r=\"3\" fill=\"#ef4444\"/><circle cx=\"130\" cy=\"30\" r=\"3\" fill=\"#ef4444\"/><circle cx=\"250\" cy=\"30\" r=\"3\" fill=\"#ef4444\"/><text x=\"56\" y=\"185\" font-size=\"9\">A(0,−1)</text><text x=\"95\" y=\"68\" font-size=\"9\">B(0,3)</text><text x=\"118\" y=\"44\" font-size=\"9\">C(1,5)</text><text x=\"252\" y=\"27\" font-size=\"9\">D(3,5)</text><text x=\"183\" y=\"101\" font-size=\"9\">AD: 2x−y−1=0</text></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"520\" height=\"300\" viewBox=\"0 0 520 300\" style=\"font-family:Arial,sans-serif\"><rect width=\"520\" height=\"300\" fill=\"white\"/><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M35 215H480M100 270V28\"/></g><g stroke=\"#64748b\" stroke-width=\"1.6\"><path d=\"M35 215H480M100 270V28\"/></g><path d=\"M480 215l-8-4v8zM100 28l-4 8h8z\" fill=\"#64748b\"/><text x=\"486\" y=\"220\" font-size=\"12\" fill=\"#334155\">x</text><text x=\"94\" y=\"20\" font-size=\"12\" fill=\"#334155\">y</text><text x=\"84\" y=\"231\" font-size=\"11\" fill=\"#64748b\">O</text><path d=\"M100 235L100 145\" stroke=\"#64748b\" stroke-width=\"2.1\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M100 145L150 100\" stroke=\"#64748b\" stroke-width=\"2.1\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M150 100L280 100\" stroke=\"#64748b\" stroke-width=\"2.1\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M100 235L280 100\" stroke=\"#64748b\" stroke-width=\"2.1\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M209 210l7 5-7 5M209 95l7 5-7 5\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\"/><circle cx=\"100\" cy=\"235\" r=\"3.3\" fill=\"#334155\"/><circle cx=\"100\" cy=\"145\" r=\"3.3\" fill=\"#334155\"/><circle cx=\"150\" cy=\"100\" r=\"3.3\" fill=\"#334155\"/><circle cx=\"280\" cy=\"100\" r=\"3.3\" fill=\"#334155\"/><text x=\"25\" y=\"253\" font-size=\"12\" fill=\"#334155\">A (0, −1)</text><text x=\"20\" y=\"142\" font-size=\"12\" fill=\"#334155\">B (0, 3)</text><text x=\"153\" y=\"87\" font-size=\"12\" fill=\"#334155\">C (1, 5)</text><text x=\"286\" y=\"104\" font-size=\"12\" fill=\"#334155\">D</text><rect x=\"293\" y=\"179\" width=\"166\" height=\"25\" rx=\"5\" fill=\"white\" stroke=\"#e2e8f0\"/><text x=\"301\" y=\"196\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\">AD: 2x − y − 1 = 0</text><text x=\"374\" y=\"270\" font-size=\"10\" fill=\"#64748b\">NOT TO SCALE</text></svg>"
           },
-          "options": [
-            "(3,5)",
-            "(5,3)",
-            "(3,−5)",
-            "(2,5)"
-          ],
-          "answer": 0,
-          "hint": "A horizontal line has a constant y-coordinate. Substitute y=5 into AD’s equation.",
-          "steps": [
+          "parts": [
             {
-              "explain": "Because CD is horizontal, D has the same y-coordinate as C.",
-              "work": "y_D=5"
+              "id": "abb-y10-2025-t4-e2-q5a",
+              "type": "review",
+              "difficulty": "medium",
+              "stem": "Prove that \\(ABCD\\) is a trapezium.",
+              "answer": "Sample answer is shown in the final solution step.",
+              "manual": true,
+              "hint": "A trapezium has one pair of opposite sides parallel. Rearrange the equation of \\(AD\\) to find its gradient, then calculate the gradient of \\(BC\\) from points \\(B\\) and \\(C\\).",
+              "steps": [
+                {
+                  "explain": "Use the equation printed beside side \\(AD\\). Rearrange it into \\(y=mx+c\\); the coefficient of \\(x\\) is the gradient of \\(AD\\).",
+                  "work": "\\(2x-y-1=0\\)\\n\\(-y=-2x+1\\)\\n\\(y=2x-1\\)\\n\\(m_{AD}=2\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"520\" height=\"300\" viewBox=\"0 0 520 300\" style=\"font-family:Arial,sans-serif\"><rect width=\"520\" height=\"300\" fill=\"white\"/><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M35 215H480M100 270V28\"/></g><g stroke=\"#64748b\" stroke-width=\"1.6\"><path d=\"M35 215H480M100 270V28\"/></g><path d=\"M480 215l-8-4v8zM100 28l-4 8h8z\" fill=\"#64748b\"/><text x=\"486\" y=\"220\" font-size=\"12\" fill=\"#334155\">x</text><text x=\"94\" y=\"20\" font-size=\"12\" fill=\"#334155\">y</text><text x=\"84\" y=\"231\" font-size=\"11\" fill=\"#64748b\">O</text><path d=\"M100 235L100 145\" stroke=\"#64748b\" stroke-width=\"2.1\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M100 145L150 100\" stroke=\"#94a3b8\" stroke-width=\"2.1\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M150 100L280 100\" stroke=\"#64748b\" stroke-width=\"2.1\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M100 235L280 100\" stroke=\"#f97316\" stroke-width=\"3.7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M209 210l7 5-7 5M209 95l7 5-7 5\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\"/><circle cx=\"100\" cy=\"235\" r=\"3.3\" fill=\"#334155\"/><circle cx=\"100\" cy=\"145\" r=\"3.3\" fill=\"#334155\"/><circle cx=\"150\" cy=\"100\" r=\"3.3\" fill=\"#334155\"/><circle cx=\"280\" cy=\"100\" r=\"3.3\" fill=\"#334155\"/><text x=\"25\" y=\"253\" font-size=\"12\" fill=\"#334155\">A (0, −1)</text><text x=\"20\" y=\"142\" font-size=\"12\" fill=\"#334155\">B (0, 3)</text><text x=\"153\" y=\"87\" font-size=\"12\" fill=\"#334155\">C (1, 5)</text><text x=\"286\" y=\"104\" font-size=\"12\" fill=\"#334155\">D</text><rect x=\"293\" y=\"179\" width=\"166\" height=\"25\" rx=\"5\" fill=\"white\" stroke=\"#e2e8f0\"/><text x=\"301\" y=\"196\" font-size=\"12\" font-weight=\"600\" fill=\"#c2410c\">AD: 2x − y − 1 = 0</text><text x=\"335\" y=\"224\" font-size=\"11\" fill=\"#c2410c\">Use the equation of AD</text></svg>"
+                  }
+                },
+                {
+                  "explain": "For side \\(BC\\), use the coordinates \\(B(0,3)\\) and \\(C(1,5)\\). Gradient is change in \\(y\\) divided by change in \\(x\\).",
+                  "work": "\\(m_{BC}=\\frac{y_C-y_B}{x_C-x_B}\\)\\n\\(=\\frac{5-3}{1-0}=\\frac{2}{1}=2\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"520\" height=\"300\" viewBox=\"0 0 520 300\" style=\"font-family:Arial,sans-serif\"><rect width=\"520\" height=\"300\" fill=\"white\"/><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M35 215H480M100 270V28\"/></g><g stroke=\"#64748b\" stroke-width=\"1.6\"><path d=\"M35 215H480M100 270V28\"/></g><path d=\"M480 215l-8-4v8zM100 28l-4 8h8z\" fill=\"#64748b\"/><text x=\"486\" y=\"220\" font-size=\"12\" fill=\"#334155\">x</text><text x=\"94\" y=\"20\" font-size=\"12\" fill=\"#334155\">y</text><text x=\"84\" y=\"231\" font-size=\"11\" fill=\"#64748b\">O</text><path d=\"M100 235L100 145\" stroke=\"#64748b\" stroke-width=\"2.1\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M100 145L150 100\" stroke=\"#0ea5e9\" stroke-width=\"3.7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M150 100L280 100\" stroke=\"#64748b\" stroke-width=\"2.1\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M100 235L280 100\" stroke=\"#94a3b8\" stroke-width=\"2.1\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M209 210l7 5-7 5M209 95l7 5-7 5\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\"/><circle cx=\"100\" cy=\"235\" r=\"3.3\" fill=\"#334155\"/><circle cx=\"100\" cy=\"145\" r=\"3.3\" fill=\"#334155\"/><circle cx=\"150\" cy=\"100\" r=\"3.3\" fill=\"#334155\"/><circle cx=\"280\" cy=\"100\" r=\"3.3\" fill=\"#334155\"/><text x=\"25\" y=\"253\" font-size=\"12\" fill=\"#334155\">A (0, −1)</text><text x=\"20\" y=\"142\" font-size=\"12\" fill=\"#334155\">B (0, 3)</text><text x=\"153\" y=\"87\" font-size=\"12\" fill=\"#334155\">C (1, 5)</text><text x=\"286\" y=\"104\" font-size=\"12\" fill=\"#334155\">D</text><rect x=\"293\" y=\"179\" width=\"166\" height=\"25\" rx=\"5\" fill=\"white\" stroke=\"#e2e8f0\"/><text x=\"301\" y=\"196\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\">AD: 2x − y − 1 = 0</text><text x=\"224\" y=\"119\" font-size=\"11\" fill=\"#0369a1\">Use B(0,3) and C(1,5)</text></svg>"
+                  }
+                },
+                {
+                  "explain": "The opposite sides \\(AD\\) and \\(BC\\) have equal gradients, so they are parallel. Since the quadrilateral has a pair of opposite sides parallel, it is a trapezium.",
+                  "work": "\\(m_{AD}=m_{BC}=2\\)\\n\\(AD\\parallel BC\\)\\n\\(\\therefore\\ ABCD\\text{ is a trapezium}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"520\" height=\"300\" viewBox=\"0 0 520 300\" style=\"font-family:Arial,sans-serif\"><rect width=\"520\" height=\"300\" fill=\"white\"/><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M35 215H480M100 270V28\"/></g><g stroke=\"#64748b\" stroke-width=\"1.6\"><path d=\"M35 215H480M100 270V28\"/></g><path d=\"M480 215l-8-4v8zM100 28l-4 8h8z\" fill=\"#64748b\"/><text x=\"486\" y=\"220\" font-size=\"12\" fill=\"#334155\">x</text><text x=\"94\" y=\"20\" font-size=\"12\" fill=\"#334155\">y</text><text x=\"84\" y=\"231\" font-size=\"11\" fill=\"#64748b\">O</text><path d=\"M100 235L100 145\" stroke=\"#64748b\" stroke-width=\"2.1\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M100 145L150 100\" stroke=\"#0ea5e9\" stroke-width=\"3.7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M150 100L280 100\" stroke=\"#64748b\" stroke-width=\"2.1\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M100 235L280 100\" stroke=\"#f97316\" stroke-width=\"3.7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M209 210l7 5-7 5M209 95l7 5-7 5\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\"/><circle cx=\"100\" cy=\"235\" r=\"3.3\" fill=\"#334155\"/><circle cx=\"100\" cy=\"145\" r=\"3.3\" fill=\"#334155\"/><circle cx=\"150\" cy=\"100\" r=\"3.3\" fill=\"#334155\"/><circle cx=\"280\" cy=\"100\" r=\"3.3\" fill=\"#334155\"/><text x=\"25\" y=\"253\" font-size=\"12\" fill=\"#334155\">A (0, −1)</text><text x=\"20\" y=\"142\" font-size=\"12\" fill=\"#334155\">B (0, 3)</text><text x=\"153\" y=\"87\" font-size=\"12\" fill=\"#334155\">C (1, 5)</text><text x=\"286\" y=\"104\" font-size=\"12\" fill=\"#334155\">D</text><rect x=\"293\" y=\"179\" width=\"166\" height=\"25\" rx=\"5\" fill=\"white\" stroke=\"#e2e8f0\"/><text x=\"301\" y=\"196\" font-size=\"12\" font-weight=\"600\" fill=\"#c2410c\">AD: 2x − y − 1 = 0</text><text x=\"337\" y=\"224\" font-size=\"11\" fill=\"#c2410c\">equal gradients ⇒ parallel</text><text x=\"374\" y=\"270\" font-size=\"10\" fill=\"#64748b\">NOT TO SCALE</text></svg>"
+                  }
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "Prove that ABCD is a trapezium.",
+                  "note": "Compare gradients of the opposite sides \\(AD\\) and \\(BC\\). Equal gradients mean the sides are parallel."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
             },
             {
-              "explain": "Substitute into the equation of AD.",
-              "work": "2x−5−1=0; 2x=6; x=3"
-            },
-            {
-              "explain": "Write the ordered pair.",
-              "work": "D=(3,5)"
-            }
-          ],
-          "keyPoints": [
-            {
-              "text": "parallel to the x-axis",
-              "note": "A horizontal line keeps y constant."
+              "id": "abb-y10-2025-t4-e2-q5b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The line \\(CD\\) is parallel to the \\(x\\)-axis. Find the coordinates of the point \\(D\\).",
+              "options": [
+                "\\((3,5)\\)",
+                "\\((5,3)\\)",
+                "\\((3,-5)\\)",
+                "\\((2,5)\\)"
+              ],
+              "answer": 0,
+              "hint": "A line parallel to the \\(x\\)-axis is horizontal, so \\(D\\) has the same \\(y\\)-coordinate as \\(C(1,5)\\). Substitute that value into the equation of \\(AD\\).",
+              "steps": [
+                {
+                  "explain": "Because \\(CD\\parallel x\\text{-axis}\\), side \\(CD\\) is horizontal. Therefore \\(D\\) and \\(C\\) have the same height (the same \\(y\\)-coordinate).",
+                  "work": "\\(y_D=y_C=5\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"520\" height=\"300\" viewBox=\"0 0 520 300\" style=\"font-family:Arial,sans-serif\"><rect width=\"520\" height=\"300\" fill=\"white\"/><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M35 215H480M100 270V28\"/></g><g stroke=\"#64748b\" stroke-width=\"1.6\"><path d=\"M35 215H480M100 270V28\"/></g><path d=\"M480 215l-8-4v8zM100 28l-4 8h8z\" fill=\"#64748b\"/><text x=\"486\" y=\"220\" font-size=\"12\" fill=\"#334155\">x</text><text x=\"94\" y=\"20\" font-size=\"12\" fill=\"#334155\">y</text><text x=\"84\" y=\"231\" font-size=\"11\" fill=\"#64748b\">O</text><path d=\"M100 235L100 145\" stroke=\"#64748b\" stroke-width=\"2.1\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M100 145L150 100\" stroke=\"#64748b\" stroke-width=\"2.1\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M150 100L280 100\" stroke=\"#16a34a\" stroke-width=\"3.7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M100 235L280 100\" stroke=\"#64748b\" stroke-width=\"2.1\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M209 210l7 5-7 5M209 95l7 5-7 5\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\"/><circle cx=\"100\" cy=\"235\" r=\"3.3\" fill=\"#334155\"/><circle cx=\"100\" cy=\"145\" r=\"3.3\" fill=\"#334155\"/><circle cx=\"150\" cy=\"100\" r=\"3.3\" fill=\"#334155\"/><circle cx=\"280\" cy=\"100\" r=\"3.3\" fill=\"#334155\"/><text x=\"25\" y=\"253\" font-size=\"12\" fill=\"#334155\">A (0, −1)</text><text x=\"20\" y=\"142\" font-size=\"12\" fill=\"#334155\">B (0, 3)</text><text x=\"153\" y=\"87\" font-size=\"12\" fill=\"#334155\">C (1, 5)</text><text x=\"286\" y=\"104\" font-size=\"12\" fill=\"#334155\">D</text><rect x=\"293\" y=\"179\" width=\"166\" height=\"25\" rx=\"5\" fill=\"white\" stroke=\"#e2e8f0\"/><text x=\"301\" y=\"196\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\">AD: 2x − y − 1 = 0</text><text x=\"290\" y=\"82\" font-size=\"11\" fill=\"#15803d\">CD is horizontal: y stays constant</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Point \\(D\\) also lies on line \\(AD\\), whose equation is \\(2x-y-1=0\\). Substitute \\(y=5\\), then solve for \\(x\\).",
+                  "work": "\\(2x-5-1=0\\)\\n\\(2x-6=0\\)\\n\\(2x=6\\)\\n\\(x=3\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"520\" height=\"300\" viewBox=\"0 0 520 300\" style=\"font-family:Arial,sans-serif\"><rect width=\"520\" height=\"300\" fill=\"white\"/><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M35 215H480M100 270V28\"/></g><g stroke=\"#64748b\" stroke-width=\"1.6\"><path d=\"M35 215H480M100 270V28\"/></g><path d=\"M480 215l-8-4v8zM100 28l-4 8h8z\" fill=\"#64748b\"/><text x=\"486\" y=\"220\" font-size=\"12\" fill=\"#334155\">x</text><text x=\"94\" y=\"20\" font-size=\"12\" fill=\"#334155\">y</text><text x=\"84\" y=\"231\" font-size=\"11\" fill=\"#64748b\">O</text><path d=\"M100 235L100 145\" stroke=\"#64748b\" stroke-width=\"2.1\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M100 145L150 100\" stroke=\"#64748b\" stroke-width=\"2.1\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M150 100L280 100\" stroke=\"#64748b\" stroke-width=\"2.1\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M100 235L280 100\" stroke=\"#c2410c\" stroke-width=\"3.7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M209 210l7 5-7 5M209 95l7 5-7 5\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\"/><circle cx=\"100\" cy=\"235\" r=\"3.3\" fill=\"#334155\"/><circle cx=\"100\" cy=\"145\" r=\"3.3\" fill=\"#334155\"/><circle cx=\"150\" cy=\"100\" r=\"3.3\" fill=\"#334155\"/><circle cx=\"280\" cy=\"100\" r=\"3.3\" fill=\"#334155\"/><text x=\"25\" y=\"253\" font-size=\"12\" fill=\"#334155\">A (0, −1)</text><text x=\"20\" y=\"142\" font-size=\"12\" fill=\"#334155\">B (0, 3)</text><text x=\"153\" y=\"87\" font-size=\"12\" fill=\"#334155\">C (1, 5)</text><text x=\"286\" y=\"104\" font-size=\"12\" fill=\"#334155\">D</text><rect x=\"293\" y=\"179\" width=\"166\" height=\"25\" rx=\"5\" fill=\"white\" stroke=\"#e2e8f0\"/><text x=\"301\" y=\"196\" font-size=\"12\" font-weight=\"600\" fill=\"#c2410c\">AD: 2x − y − 1 = 0</text><path d=\"M150 100H280\" stroke=\"#16a34a\" stroke-width=\"4\" stroke-linecap=\"round\"/></svg>"
+                  }
+                },
+                {
+                  "explain": "Combine the calculated \\(x\\)-coordinate with the known \\(y\\)-coordinate. The ordered pair gives the position of \\(D\\).",
+                  "work": "\\(D=(x,y)=(3,5)\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"520\" height=\"300\" viewBox=\"0 0 520 300\" style=\"font-family:Arial,sans-serif\"><rect width=\"520\" height=\"300\" fill=\"white\"/><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M35 215H480M100 270V28\"/></g><g stroke=\"#64748b\" stroke-width=\"1.6\"><path d=\"M35 215H480M100 270V28\"/></g><path d=\"M480 215l-8-4v8zM100 28l-4 8h8z\" fill=\"#64748b\"/><text x=\"486\" y=\"220\" font-size=\"12\" fill=\"#334155\">x</text><text x=\"94\" y=\"20\" font-size=\"12\" fill=\"#334155\">y</text><text x=\"84\" y=\"231\" font-size=\"11\" fill=\"#64748b\">O</text><path d=\"M100 235L100 145\" stroke=\"#64748b\" stroke-width=\"2.1\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M100 145L150 100\" stroke=\"#64748b\" stroke-width=\"2.1\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M150 100L280 100\" stroke=\"#64748b\" stroke-width=\"2.1\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M100 235L280 100\" stroke=\"#c2410c\" stroke-width=\"3.7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M209 210l7 5-7 5M209 95l7 5-7 5\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\"/><circle cx=\"100\" cy=\"235\" r=\"3.3\" fill=\"#334155\"/><circle cx=\"100\" cy=\"145\" r=\"3.3\" fill=\"#334155\"/><circle cx=\"150\" cy=\"100\" r=\"3.3\" fill=\"#334155\"/><circle cx=\"280\" cy=\"100\" r=\"3.3\" fill=\"#334155\"/><text x=\"25\" y=\"253\" font-size=\"12\" fill=\"#334155\">A (0, −1)</text><text x=\"20\" y=\"142\" font-size=\"12\" fill=\"#334155\">B (0, 3)</text><text x=\"153\" y=\"87\" font-size=\"12\" fill=\"#334155\">C (1, 5)</text><text x=\"286\" y=\"104\" font-size=\"12\" fill=\"#334155\">D</text><rect x=\"293\" y=\"179\" width=\"166\" height=\"25\" rx=\"5\" fill=\"white\" stroke=\"#e2e8f0\"/><text x=\"301\" y=\"196\" font-size=\"12\" font-weight=\"600\" fill=\"#c2410c\">AD: 2x − y − 1 = 0</text><path d=\"M150 100H280\" stroke=\"#16a34a\" stroke-width=\"4\" stroke-linecap=\"round\"/><circle cx=\"280\" cy=\"100\" r=\"5\" fill=\"#7c3aed\" stroke=\"white\" stroke-width=\"1.4\"/><text x=\"288\" y=\"126\" font-size=\"11\" font-weight=\"700\" fill=\"#6d28d9\">D = (3, 5)</text></svg>"
+                  }
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "Find the coordinates of the point D.",
+                  "note": "Use the horizontal side to get \\(y_D=5\\), then substitute into \\(2x-y-1=0\\) to find \\(x_D\\)."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
             }
           ],
           "timeLimit": 60,
