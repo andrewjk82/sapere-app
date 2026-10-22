@@ -9113,7 +9113,7 @@
             },
             {
               "explain": "Apply the sine rule and isolate x.",
-              "work": "x/sin 40° = 8/sin 110°\nx = 8 sin 40° / sin 110°",
+              "work": "\\(\\frac{x}{\\sin 40^\\circ} = \\frac{8}{\\sin 110^\\circ}\\)\n\\(x = \\frac{8\\sin 40^\\circ}{\\sin 110^\\circ}\\)",
               "figure": {
                 "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><polygon points=\"55,170 300,170 177,50\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.7\"/><path d=\"M80 170 A25 25 0 0 1 74 154\" fill=\"none\" stroke=\"#ef8a00\" stroke-width=\"1.6\"/><path d=\"M161 65 A22 22 0 0 1 193 65\" fill=\"none\" stroke=\"#ef8a00\" stroke-width=\"1.6\"/><text x=\"83\" y=\"158\" font-size=\"11\">40°</text><text x=\"166\" y=\"82\" font-size=\"11\">110°</text><text x=\"169\" y=\"184\" font-size=\"11\">8</text><text x=\"250\" y=\"106\" font-size=\"11\">x</text></svg>"
               }

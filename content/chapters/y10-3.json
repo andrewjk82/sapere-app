@@ -5360,15 +5360,15 @@
           "steps": [
             {
               "explain": "Subtract 3 from both sides.",
-              "work": "−x/5 ≤ 5"
+              "work": "\\(−\\frac{x}{5} \\le 5\\)"
             },
             {
               "explain": "Multiply by 5, then by −1. Reverse the inequality when multiplying by −1.",
-              "work": "−x ≤ 25\nx ≥ −25"
+              "work": "\\(−x \\le 25\\)\n\\(x \\ge −25\\)"
             },
             {
               "explain": "The inequality is now isolated.",
-              "work": "x ≥ −25"
+              "work": "\\(x \\ge −25\\)"
             }
           ],
           "keyPoints": [
@@ -16094,15 +16094,15 @@
           "steps": [
             {
               "explain": "Factor the difference of squares.",
-              "work": "x² − 4 = (x − 2)(x + 2)"
+              "work": "\\(x^2 − 4 = (x − 2)(x + 2)\\)"
             },
             {
               "explain": "Rewrite division as multiplication by the reciprocal.",
-              "work": "(x + 2)/x × 2x/[(x − 2)(x + 2)]"
+              "work": "\\(\\frac{x + 2}{x} \\times \\frac{2x}{(x − 2)(x + 2)}\\)"
             },
             {
               "explain": "Cancel common factors.",
-              "work": "= 2/(x − 2)"
+              "work": "\\(= \\frac{2}{x − 2}\\)"
             }
           ],
           "keyPoints": [
