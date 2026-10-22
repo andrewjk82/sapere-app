@@ -2990,7 +2990,7 @@
           "id": "abb-y10-2025-t4-d-q3a",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "If log_a x = 2.4 and log_a y = 3, calculate log_a(xy).",
+          "stem": "If \\(\\log_{a} x = 2.4\\) and \\(\\log_{a} y = 3\\), calculate \\(\\log_{a}(xy)\\).",
           "options": [
             "5.4",
             "0.6",
@@ -3002,20 +3002,20 @@
           "steps": [
             {
               "explain": "Recall the product rule.",
-              "work": "log_a(xy) = log_a x + log_a y"
+              "work": "\\(\\log_{a}(xy) = \\log_{a} x + \\log_{a} y\\)"
             },
             {
               "explain": "Substitute the given logarithms.",
-              "work": "log_a(xy) = 2.4 + 3"
+              "work": "\\(\\log_{a}(xy) = 2.4 + 3\\)"
             },
             {
               "explain": "Add.",
-              "work": "log_a(xy) = 5.4"
+              "work": "\\(\\log_{a}(xy) = 5.4\\)"
             }
           ],
           "keyPoints": [
             {
-              "text": "log_a x = 2.4",
+              "text": "\\(\\log_{a} x = 2.4\\)",
               "note": "For a product inside a logarithm, add the logarithms."
             }
           ],
@@ -3031,7 +3031,7 @@
           "id": "abb-y10-2025-t4-d-q3b",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "If log_a x = 2.4 and log_a y = 3, calculate log_a √(x/y).",
+          "stem": "If \\(\\log_{a} x = 2.4\\) and \\(\\log_{a} y = 3\\), calculate \\(\\log_{a}\\sqrt{\\frac{x}{y}}\\).",
           "options": [
             "−0.3",
             "0.3",
@@ -3043,20 +3043,20 @@
           "steps": [
             {
               "explain": "Rewrite the square root as a power of one half.",
-              "work": "log_a √(x/y) = 1/2 log_a(x/y)"
+              "work": "\\(\\log_{a}\\sqrt{\\frac{x}{y}} = \\frac{1}{2}\\log_{a}\\left(\\frac{x}{y}\\right)\\)"
             },
             {
               "explain": "Apply the quotient rule and substitute.",
-              "work": "= 1/2(log_a x − log_a y)\n= 1/2(2.4 − 3)"
+              "work": "\\(= \\frac{1}{2}(\\log_{a} x - \\log_{a} y)\\)\n\\(= \\frac{1}{2}(2.4 - 3)\\)"
             },
             {
               "explain": "Evaluate.",
-              "work": "= 1/2(−0.6) = −0.3"
+              "work": "\\(= \\frac{1}{2}(-0.6) = -0.3\\)"
             }
           ],
           "keyPoints": [
             {
-              "text": "√(x/y)",
+              "text": "\\(\\sqrt{\\frac{x}{y}}\\)",
               "note": "Use the quotient rule inside the logarithm and multiply by one half."
             }
           ],
