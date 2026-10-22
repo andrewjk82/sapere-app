@@ -629,6 +629,55 @@
               ]
             }
           ]
+        },
+        {
+          "id": "chs2020e1-q13b",
+          "type": "review",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "A vertical tower of height \\(h\\) metres stands with its base at a point \\(O\\) on horizonal ground. At the same instant, stone A is projected from \\(O\\) with speed \\(V\\ \\text{ms}^{-1}\\) at an angle \\(\\alpha\\) above the horizontal and stone B is projected from the top of the tower with speed \\(U\\ \\text{ms}^{-1}\\) at an angle \\(\\beta\\) above the horizontal, where \\(\\alpha\\gt\\beta\\). The two stones move in the same vertical plane under gravity, where the acceleration due to gravity is \\(g\\ \\text{ms}^{-2}\\), and collide after \\(T\\) seconds. At time t seconds after firing, the position vectors of the two stones are\n\n\\(\\mathbf{r}_A(t)=(Vt\\cos\\alpha)\\mathbf{i}+\\left(-\\frac12gt^2+Vt\\sin\\alpha\\right)\\mathbf{j}\\)\n\\(\\mathbf{r}_B(t)=(Ut\\cos\\beta)\\mathbf{i}+\\left(h-\\frac12gt^2+Ut\\sin\\beta\\right)\\mathbf{j}\\) . (DO NOT PROVE THIS)\n\nShow that \\(T=\\frac{h\\cos\\alpha}{U\\sin(\\alpha-\\beta)}\\) .",
+          "hint": "Equate the i and j components at time T, then eliminate V.",
+          "steps": [
+            {
+              "explain": "They collide at time \\(T\\), so the position vectors are equal. Equate the \\(\\mathbf{i}\\) components and cancel \\(T\\).",
+              "work": "\\(VT\\cos\\alpha=UT\\cos\\beta\\ \\Rightarrow\\ V\\cos\\alpha=U\\cos\\beta\\quad(1)\\)"
+            },
+            {
+              "explain": "Equate the \\(\\mathbf{j}\\) components; the \\(-\\frac12gT^2\\) terms cancel.",
+              "work": "\\(-\\tfrac12gT^2+VT\\sin\\alpha=h-\\tfrac12gT^2+UT\\sin\\beta\\ \\Rightarrow\\ VT\\sin\\alpha=h+UT\\sin\\beta\\quad(2)\\)"
+            },
+            {
+              "explain": "Eliminate \\(V\\). Multiply (1) by \\(T\\sin\\alpha\\).",
+              "work": "\\(VT\\sin\\alpha\\cos\\alpha=UT\\cos\\beta\\sin\\alpha\\quad(3)\\)"
+            },
+            {
+              "explain": "Multiply (2) by \\(\\cos\\alpha\\).",
+              "work": "\\(VT\\sin\\alpha\\cos\\alpha=h\\cos\\alpha+UT\\sin\\beta\\cos\\alpha\\quad(4)\\)"
+            },
+            {
+              "explain": "The left sides of (3) and (4) are equal, so the right sides are equal.",
+              "work": "\\(UT\\cos\\beta\\sin\\alpha-UT\\sin\\beta\\cos\\alpha=h\\cos\\alpha\\)"
+            },
+            {
+              "explain": "Use \\(\\sin\\alpha\\cos\\beta-\\cos\\alpha\\sin\\beta=\\sin(\\alpha-\\beta)\\) and solve for \\(T\\).",
+              "work": "\\(UT\\sin(\\alpha-\\beta)=h\\cos\\alpha\\ \\Rightarrow\\ T=\\frac{h\\cos\\alpha}{U\\sin(\\alpha-\\beta)}\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 3U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "13(b)"
+          },
+          "answer": "At T, r_A = r_B. i: \\(V\\cos\\alpha=U\\cos\\beta\\) (1). j: \\(VT\\sin\\alpha=h+UT\\sin\\beta\\) (2). (1)×T sin α: \\(VT\\sin\\alpha\\cos\\alpha=UT\\cos\\beta\\sin\\alpha\\). (2)×cos α: \\(VT\\sin\\alpha\\cos\\alpha=h\\cos\\alpha+UT\\sin\\beta\\cos\\alpha\\). Subtract: \\(UT(\\sin\\alpha\\cos\\beta-\\cos\\alpha\\sin\\beta)=h\\cos\\alpha\\), i.e. \\(UT\\sin(\\alpha-\\beta)=h\\cos\\alpha\\), so \\(T=\\frac{h\\cos\\alpha}{U\\sin(\\alpha-\\beta)}\\).",
+          "manual": true,
+          "keyPoints": [
+            {
+              "text": "Show that",
+              "note": "At the collision r_A(T) = r_B(T): two equations, one from i and one from j."
+            }
+          ]
         }
       ]
     }

@@ -1,0 +1,63 @@
+{
+  "chapterId": "y12e1-1",
+  "title": "Chapter 1: Sequences and series",
+  "year": "Year 12",
+  "topics": [
+    {
+      "topicId": "y12e1-1H",
+      "code": "1H",
+      "title": "The limiting sum of a geometric series",
+      "questions": [
+        {
+          "id": "chs2020e1-q9",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "A geometric series \\(1-\\frac1x+\\frac{1}{x^2}-\\frac{1}{x^3}+\\dots\\) has limiting sum \\(S\\).\nFor what values of \\(x\\) is \\(S\\lt 1\\)?",
+          "hint": "First require |r| < 1, then compare S = x/(x + 1) with 1.",
+          "steps": [
+            {
+              "explain": "First term \\(a=1\\), ratio \\(r=-\\frac1x\\). A limiting sum exists only if \\(|r|\\lt1\\).",
+              "work": "\\(\\left|\\frac1x\\right|\\lt1\\ \\Rightarrow\\ |x|\\gt1\\)"
+            },
+            {
+              "explain": "Limiting sum.",
+              "work": "\\(S=\\frac{a}{1-r}=\\frac{1}{1+\\frac1x}=\\frac{x}{x+1}\\)"
+            },
+            {
+              "explain": "For \\(x\\gt1\\): \\(\\frac{x}{x+1}\\lt1\\) because the numerator is smaller than the denominator.",
+              "work": "\\(x=2:\\ S=\\tfrac23\\lt1\\ \\checkmark\\)"
+            },
+            {
+              "explain": "For \\(x\\lt-1\\): both \\(x\\) and \\(x+1\\) are negative and \\(|x|\\gt|x+1|\\), so \\(S\\gt1\\).",
+              "work": "\\(x=-2:\\ S=\\frac{-2}{-1}=2\\gt1\\)"
+            },
+            {
+              "explain": "So \\(S\\lt1\\) exactly when \\(x\\gt1\\): option D."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 3U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "9"
+          },
+          "options": [
+            "\\(x\\gt -1\\)",
+            "\\(x\\gt -1,\\ x\\neq0\\)",
+            "\\(x\\gt 0\\)",
+            "\\(x\\gt 1\\)"
+          ],
+          "answer": 3,
+          "keyPoints": [
+            {
+              "text": "has limiting sum",
+              "note": "A limiting sum needs |r| = |1/x| < 1, so |x| > 1."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

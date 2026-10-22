@@ -1,0 +1,55 @@
+{
+  "chapterId": "y11e1-18",
+  "title": "Chapter 18: The binomial theorem and Pascal’s triangle",
+  "year": "Year 11",
+  "topics": [
+    {
+      "topicId": "y11e1-18E",
+      "code": "18E",
+      "title": "Identities in Pascal’s triangle",
+      "questions": [
+        {
+          "id": "chs2020e1-q12d",
+          "type": "review",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "By using the fact that \\((1+x)^{11}=(1+x)^3(1+x)^8\\). Show that\n\n\\(\\binom{11}{5}=\\binom85+\\binom31\\binom84+\\binom32\\binom83+\\binom82\\)",
+          "hint": "Equate the coefficient of x⁵ on both sides.",
+          "steps": [
+            {
+              "explain": "Compare the coefficient of \\(x^5\\) on both sides. On the left, by the binomial theorem:",
+              "work": "\\(\\text{coefficient of }x^5\\text{ in }(1+x)^{11}=\\binom{11}{5}\\)"
+            },
+            {
+              "explain": "On the right, write both expansions.",
+              "work": "\\((1+x)^3=\\binom30+\\binom31x+\\binom32x^2+\\binom33x^3,\\qquad(1+x)^8=\\sum_{r=0}^{8}\\binom8rx^r\\)"
+            },
+            {
+              "explain": "An \\(x^5\\) term comes from \\(x^j\\) in the first times \\(x^{5-j}\\) in the second, for \\(j=0,1,2,3\\).",
+              "work": "\\(\\binom30\\binom85+\\binom31\\binom84+\\binom32\\binom83+\\binom33\\binom82\\)"
+            },
+            {
+              "explain": "Since \\(\\binom30=\\binom33=1\\), equating coefficients gives",
+              "work": "\\(\\binom{11}{5}=\\binom85+\\binom31\\binom84+\\binom32\\binom83+\\binom82\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 3U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "12(d)"
+          },
+          "answer": "Coefficient of x⁵ on the left: \\(\\binom{11}{5}\\). On the right, x⁵ arises from x^j (from (1+x)³) times x^{5−j} (from (1+x)⁸), j = 0…3: \\(\\binom30\\binom85+\\binom31\\binom84+\\binom32\\binom83+\\binom33\\binom82\\). Since \\(\\binom30=\\binom33=1\\), equating gives the result.",
+          "manual": true,
+          "keyPoints": [
+            {
+              "text": "Show that",
+              "note": "Find the x⁵ coefficient on each side of (1 + x)¹¹ = (1 + x)³(1 + x)⁸."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

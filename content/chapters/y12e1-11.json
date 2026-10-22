@@ -352,6 +352,139 @@
               "note": "Sums to products: sin 7x + sin x = 2 sin 4x cos 3x. Factor, don't divide."
             }
           ]
+        },
+        {
+          "id": "chs2020e1-q13c",
+          "type": "multipart",
+          "stem": "",
+          "meta": {
+            "source": "Caringbah 2020 3U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "13(c)"
+          },
+          "parts": [
+            {
+              "id": "chs2020e1-q13c-i",
+              "type": "review",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Prove the trigonometric identity \\(\\tan3\\theta=\\frac{3\\tan\\theta-\\tan^3\\theta}{1-3\\tan^2\\theta}\\) using the compound angle formula.",
+              "hint": "tan 3θ = tan(2θ + θ), then use the tan 2θ formula.",
+              "steps": [
+                {
+                  "explain": "Write \\(3\\theta=2\\theta+\\theta\\) and use the compound angle formula.",
+                  "work": "\\(\\tan3\\theta=\\frac{\\tan2\\theta+\\tan\\theta}{1-\\tan2\\theta\\tan\\theta}\\)"
+                },
+                {
+                  "explain": "Let \\(t=\\tan\\theta\\) and use \\(\\tan2\\theta=\\frac{2t}{1-t^2}\\).",
+                  "work": "\\(\\tan3\\theta=\\frac{\\frac{2t}{1-t^2}+t}{1-\\frac{2t}{1-t^2}\\cdot t}\\)"
+                },
+                {
+                  "explain": "Multiply numerator and denominator by \\(1-t^2\\).",
+                  "work": "\\(=\\frac{2t+t(1-t^2)}{(1-t^2)-2t^2}\\)"
+                },
+                {
+                  "explain": "Simplify.",
+                  "work": "\\(=\\frac{3t-t^3}{1-3t^2}=\\frac{3\\tan\\theta-\\tan^3\\theta}{1-3\\tan^2\\theta}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 3U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "13(c)(i)"
+              },
+              "answer": "\\(\\tan3\\theta=\\tan(2\\theta+\\theta)=\\frac{\\tan2\\theta+\\tan\\theta}{1-\\tan2\\theta\\tan\\theta}\\); substitute \\(\\tan2\\theta=\\frac{2t}{1-t^2}\\) (t = tan θ) and multiply top and bottom by \\(1-t^2\\): \\(\\frac{2t+t(1-t^2)}{1-t^2-2t^2}=\\frac{3t-t^3}{1-3t^2}\\).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Prove the trigonometric identity",
+                  "note": "Split 3θ = 2θ + θ."
+                }
+              ]
+            },
+            {
+              "id": "chs2020e1-q13c-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Hence find expressions for the exact values of the solutions to the equation \\(\\frac{3x-x^3}{1-3x^2}=\\sqrt3\\).",
+              "hint": "Put x = tan θ so the equation is tan 3θ = √3.",
+              "steps": [
+                {
+                  "explain": "Let \\(x=\\tan\\theta\\). By (i) the left side is \\(\\tan3\\theta\\).",
+                  "work": "\\(\\tan3\\theta=\\sqrt3\\)"
+                },
+                {
+                  "explain": "\\(\\tan\\) has period \\(\\pi\\): \\(3\\theta=\\frac\\pi3+k\\pi\\).",
+                  "work": "\\(3\\theta=\\frac{\\pi}{3},\\ \\frac{4\\pi}{3},\\ \\frac{7\\pi}{3}\\ \\Rightarrow\\ \\theta=\\frac{\\pi}{9},\\ \\frac{4\\pi}{9},\\ \\frac{7\\pi}{9}\\)"
+                },
+                {
+                  "explain": "These give three different values of \\(\\tan\\theta\\) (a cubic has at most three roots).",
+                  "work": "\\(x=\\tan\\frac{\\pi}{9},\\ \\tan\\frac{4\\pi}{9},\\ \\tan\\frac{7\\pi}{9}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 3U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "13(c)(ii)"
+              },
+              "options": [
+                "\\(x=\\tan\\frac{\\pi}{3},\\ \\tan\\frac{4\\pi}{3},\\ \\tan\\frac{7\\pi}{3}\\)",
+                "\\(x=\\tan\\frac{\\pi}{9},\\ \\tan\\frac{2\\pi}{9},\\ \\tan\\frac{4\\pi}{9}\\)",
+                "\\(x=\\sqrt3\\) only",
+                "\\(x=\\tan\\frac{\\pi}{9},\\ \\tan\\frac{4\\pi}{9},\\ \\tan\\frac{7\\pi}{9}\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "Hence find",
+                  "note": "With x = tan θ, the left side is tan 3θ by part (i)."
+                }
+              ]
+            },
+            {
+              "id": "chs2020e1-q13c-iii",
+              "type": "review",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Hence show that \\(\\tan\\frac{\\pi}{9}\\times\\tan\\frac{4\\pi}{9}\\times\\tan\\frac{7\\pi}{9}=-\\sqrt3\\).",
+              "hint": "Turn the equation into a cubic and use the product of roots.",
+              "steps": [
+                {
+                  "explain": "Rearrange the equation into a cubic.",
+                  "work": "\\(3x-x^3=\\sqrt3\\left(1-3x^2\\right)\\ \\Rightarrow\\ x^3-3\\sqrt3x^2-3x+\\sqrt3=0\\)"
+                },
+                {
+                  "explain": "Its three roots are the values from (ii).",
+                  "work": "\\(\\tan\\tfrac{\\pi}{9},\\ \\tan\\tfrac{4\\pi}{9},\\ \\tan\\tfrac{7\\pi}{9}\\)"
+                },
+                {
+                  "explain": "Product of the roots of \\(ax^3+bx^2+cx+d\\) is \\(-\\frac da\\).",
+                  "work": "\\(\\tan\\frac{\\pi}{9}\\times\\tan\\frac{4\\pi}{9}\\times\\tan\\frac{7\\pi}{9}=-\\frac{\\sqrt3}{1}=-\\sqrt3\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 3U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "13(c)(iii)"
+              },
+              "answer": "\\(\\frac{3x-x^3}{1-3x^2}=\\sqrt3\\Rightarrow3x-x^3=\\sqrt3-3\\sqrt3x^2\\Rightarrow x^3-3\\sqrt3x^2-3x+\\sqrt3=0\\). Its roots are the three values from (ii), so their product is \\(-\\frac da=-\\sqrt3\\).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Hence show that",
+                  "note": "The three tangents are the roots of the cubic from (ii)."
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1069,6 +1202,51 @@
               ]
             }
           ]
+        },
+        {
+          "id": "chs2020e1-q4",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "What is the number of distinct solutions of the equation \\(3\\cos\\theta+4\\sin\\theta=5\\) for \\(0\\le\\theta\\le2\\pi\\) ?",
+          "hint": "R = 5, so the equation says the expression reaches its maximum value.",
+          "steps": [
+            {
+              "explain": "Write the left side as \\(R\\cos(\\theta-\\alpha)\\).",
+              "work": "\\(R=\\sqrt{3^2+4^2}=5,\\qquad\\cos\\alpha=\\frac35,\\ \\sin\\alpha=\\frac45\\)"
+            },
+            {
+              "explain": "So the equation becomes",
+              "work": "\\(5\\cos(\\theta-\\alpha)=5\\ \\Rightarrow\\ \\cos(\\theta-\\alpha)=1\\)"
+            },
+            {
+              "explain": "\\(\\cos\\) equals 1 only at multiples of \\(2\\pi\\). In \\(0\\le\\theta\\le2\\pi\\), \\(\\theta-\\alpha\\) runs from \\(-\\alpha\\) to \\(2\\pi-\\alpha\\) (\\(\\alpha\\approx0.93\\)), which contains only 0.",
+              "work": "\\(\\theta-\\alpha=0\\ \\Rightarrow\\ \\theta=\\alpha\\approx0.93\\)"
+            },
+            {
+              "explain": "Exactly one solution. The value 5 is the MAXIMUM of the left side, which happens once per cycle."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 3U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "4"
+          },
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "\\(3\\cos\\theta+4\\sin\\theta=5\\)",
+              "note": "R = √(3² + 4²) = 5 is the maximum of the left side."
+            }
+          ]
         }
       ]
     },
@@ -1396,6 +1574,59 @@
             {
               "text": "to show that",
               "note": "After simplifying you get (1 + t)/(1 − t); compare with tan(A + B)."
+            }
+          ]
+        },
+        {
+          "id": "chs2020e1-q11d",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Use the substitution \\(t=\\tan\\frac{x}{2}\\) to find the solutions of the equation \\(\\cos x-3\\sin x+3=0\\) for \\(0\\le x\\le2\\pi\\) correct to 2 decimal places",
+          "hint": "Use the t-formulae, solve the quadratic in t, and check x = π separately.",
+          "steps": [
+            {
+              "explain": "\\(t\\)-formulae.",
+              "work": "\\(\\cos x=\\frac{1-t^2}{1+t^2},\\qquad\\sin x=\\frac{2t}{1+t^2}\\)"
+            },
+            {
+              "explain": "Substitute and multiply every term by \\(1+t^2\\).",
+              "work": "\\((1-t^2)-6t+3(1+t^2)=0\\)"
+            },
+            {
+              "explain": "Collect terms.",
+              "work": "\\(1-t^2-6t+3+3t^2=0\\ \\Rightarrow\\ 2t^2-6t+4=0\\ \\Rightarrow\\ t^2-3t+2=0\\)"
+            },
+            {
+              "explain": "Factorise.",
+              "work": "\\((t-1)(t-2)=0\\ \\Rightarrow\\ t=1\\) or \\(t=2\\)"
+            },
+            {
+              "explain": "Convert back; \\(0\\le\\frac x2\\le\\pi\\).",
+              "work": "\\(\\tan\\tfrac{x}{2}=1\\Rightarrow\\tfrac x2=\\tfrac\\pi4\\Rightarrow x=\\tfrac\\pi2\\approx1.57;\\qquad\\tan\\tfrac x2=2\\Rightarrow\\tfrac x2\\approx1.107\\Rightarrow x\\approx2.21\\)"
+            },
+            {
+              "explain": "Check \\(x=\\pi\\) separately (the \\(t\\)-formula misses it): \\(\\cos\\pi-3\\sin\\pi+3=-1+3=2\\neq0\\). So only \\(x\\approx1.57\\) and \\(2.21\\)."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 3U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "11(d)"
+          },
+          "options": [
+            "\\(x=0.79\\) or \\(x=1.11\\)",
+            "\\(x=1.57\\) only",
+            "\\(x=1.57,\\ 2.21\\) or \\(x=\\pi\\)",
+            "\\(x=1.57\\) or \\(x=2.21\\)"
+          ],
+          "answer": 3,
+          "keyPoints": [
+            {
+              "text": "Use the substitution \\(t=\\tan\\frac{x}{2}\\)",
+              "note": "After solving, always test x = π, which the t-substitution cannot represent."
             }
           ]
         }

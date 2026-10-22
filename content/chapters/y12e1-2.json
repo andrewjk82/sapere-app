@@ -143,6 +143,54 @@
               "note": "Make 2^(k+2) the subject of the assumption and substitute."
             }
           ]
+        },
+        {
+          "id": "chs2020e1-q11f",
+          "type": "review",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "Use the mathematical induction to prove that \\(3^{2n+4}-2^{2n}\\) is divisible by 5 for integers \\(n\\ge1\\).",
+          "hint": "Write 3^(2k+6) = 9·3^(2k+4) and substitute the assumption.",
+          "steps": [
+            {
+              "explain": "Base case \\(n=1\\).",
+              "work": "\\(3^{6}-2^{2}=729-4=725=5\\times145\\)"
+            },
+            {
+              "explain": "Assume true for \\(n=k\\) and make \\(3^{2k+4}\\) the subject.",
+              "work": "\\(3^{2k+4}-2^{2k}=5M\\ \\Rightarrow\\ 3^{2k+4}=5M+2^{2k}\\)"
+            },
+            {
+              "explain": "For \\(n=k+1\\) the powers go up by 2: \\(3^{2k+6}=9\\cdot3^{2k+4}\\), \\(2^{2k+2}=4\\cdot2^{2k}\\).",
+              "work": "\\(3^{2k+6}-2^{2k+2}=9\\cdot3^{2k+4}-4\\cdot2^{2k}\\)"
+            },
+            {
+              "explain": "Substitute the assumption.",
+              "work": "\\(=9\\left(5M+2^{2k}\\right)-4\\cdot2^{2k}=45M+9\\cdot2^{2k}-4\\cdot2^{2k}=45M+5\\cdot2^{2k}\\)"
+            },
+            {
+              "explain": "Factor out 5.",
+              "work": "\\(=5\\left(9M+2^{2k}\\right)\\)"
+            },
+            {
+              "explain": "\\(9M+2^{2k}\\) is an integer, so the expression is divisible by 5. By induction the result holds for all \\(n\\ge1\\)."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 3U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "11(f)"
+          },
+          "answer": "\\(n=1\\): \\(3^6-2^2=729-4=725=5\\times145\\). Assume \\(3^{2k+4}-2^{2k}=5M\\). Then \\(3^{2k+6}-2^{2k+2}=9\\cdot3^{2k+4}-4\\cdot2^{2k}=9(5M+2^{2k})-4\\cdot2^{2k}=45M+5\\cdot2^{2k}=5(9M+2^{2k})\\), divisible by 5. True for all \\(n\\ge1\\) by induction.",
+          "manual": true,
+          "keyPoints": [
+            {
+              "text": "divisible by 5",
+              "note": "Replace 3^(2k+4) by 5M + 2^(2k) from the assumption."
+            }
+          ]
         }
       ]
     }

@@ -523,6 +523,48 @@
               "note": "Multiply both sides by the square of the denominator so the sign doesn't flip."
             }
           ]
+        },
+        {
+          "id": "chs2020e1-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "Solve the inequality \\(\\frac{x^2-4}{x}\\ge0\\).",
+          "hint": "Critical values −2, 0, 2; test each interval; exclude x = 0.",
+          "steps": [
+            {
+              "explain": "Critical values: numerator zero at \\(x=\\pm2\\); denominator zero at \\(x=0\\) (excluded).",
+              "work": "\\(x=-2,\\ 0,\\ 2\\)"
+            },
+            {
+              "explain": "Test a value in each interval.",
+              "work": "\\(x=-3:\\ \\frac{5}{-3}\\lt 0;\\quad x=-1:\\ \\frac{-3}{-1}\\gt 0;\\quad x=1:\\ \\frac{-3}{1}\\lt 0;\\quad x=3:\\ \\frac{5}{3}\\gt 0\\)"
+            },
+            {
+              "explain": "Keep the intervals where the expression is \\(\\ge0\\). Include \\(x=\\pm2\\) (value 0) but not \\(x=0\\) (undefined).",
+              "work": "\\(-2\\le x\\lt 0\\) or \\(x\\ge2\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 3U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "5"
+          },
+          "options": [
+            "\\(-2\\le x\\lt 0\\) or \\(x\\ge2\\)",
+            "\\(-2\\ge x\\gt 0\\) or \\(x\\le2\\)",
+            "\\(-4\\le x\\lt 0\\) or \\(x\\ge4\\)",
+            "\\(-4\\ge x\\gt 0\\) or \\(x\\le4\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{x^2-4}{x}\\ge0\\)",
+              "note": "Use the critical values x = ±2 and x = 0, then test signs."
+            }
+          ]
         }
       ]
     },
@@ -625,6 +667,103 @@
             {
               "text": "dilated horizontally by a dilation factor of 4",
               "note": "Replace x by x/4 (not 4x), then add 3 outside the inverse cosine."
+            }
+          ]
+        },
+        {
+          "id": "chs2020e1-q12a",
+          "type": "multipart",
+          "stem": "",
+          "meta": {
+            "source": "Caringbah 2020 3U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "12(a)"
+          },
+          "parts": [
+            {
+              "id": "chs2020e1-q12a-i",
+              "type": "review",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Sketch the graph of the function \\(y=\\tan^{-1}\\frac12(x-2)\\) showing clearly the intercepts on the axes and the equations of the asymptotes.",
+              "hint": "Shift tan⁻¹x right 2 and stretch horizontally by 2; asymptotes stay ±π/2.",
+              "steps": [
+                {
+                  "explain": "Start from \\(y=\\tan^{-1}x\\): increasing, through \\(O\\), asymptotes \\(y=\\pm\\frac\\pi2\\)."
+                },
+                {
+                  "explain": "\\(\\frac12(x-2)\\): shift right 2 and stretch horizontally by 2. The asymptotes don't change.",
+                  "work": "\\(y=\\pm\\frac{\\pi}{2}\\)"
+                },
+                {
+                  "explain": "Intercepts.",
+                  "work": "\\(y=0\\Rightarrow x=2;\\qquad x=0\\Rightarrow y=\\tan^{-1}(-1)=-\\frac{\\pi}{4}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 220\" width=\"340\" height=\"220\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"340\" height=\"220\" rx=\"8\" fill=\"white\"/><line x1=\"6.0\" y1=\"110.0\" x2=\"339.0\" y2=\"110.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"150.0\" y1=\"210.0\" x2=\"150.0\" y2=\"10.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"327.3\" y=\"102.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">x</text><text x=\"158.0\" y=\"22.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">y</text><line x1=\"186.0\" y1=\"106.0\" x2=\"186.0\" y2=\"114.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"182.6\" y=\"128.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">2</text><line x1=\"6.0\" y1=\"31.5\" x2=\"330.0\" y2=\"31.5\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><line x1=\"6.0\" y1=\"188.5\" x2=\"330.0\" y2=\"188.5\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M6.0 178.7L7.6 178.6L9.2 178.5L10.9 178.4L12.5 178.3L14.1 178.2L15.7 178.1L17.3 178.0L19.0 177.9L20.6 177.8L22.2 177.7L23.8 177.6L25.4 177.5L27.1 177.4L28.7 177.3L30.3 177.2L31.9 177.1L33.5 176.9L35.2 176.8L36.8 176.7L38.4 176.6L40.0 176.5L41.6 176.3L43.3 176.2L44.9 176.1L46.5 175.9L48.1 175.8L49.7 175.6L51.4 175.5L53.0 175.3L54.6 175.2L56.2 175.0L57.8 174.8L59.5 174.7L61.1 174.5L62.7 174.3L64.3 174.2L65.9 174.0L67.6 173.8L69.2 173.6L70.8 173.4L72.4 173.2L74.0 173.0L75.7 172.8L77.3 172.6L78.9 172.3L80.5 172.1L82.1 171.9L83.8 171.6L85.4 171.4L87.0 171.1L88.6 170.8L90.2 170.6L91.9 170.3L93.5 170.0L95.1 169.7L96.7 169.4L98.3 169.1L100.0 168.7L101.6 168.4L103.2 168.0L104.8 167.7L106.4 167.3L108.1 166.9L109.7 166.5L111.3 166.1L112.9 165.7L114.5 165.2L116.2 164.7L117.8 164.3L119.4 163.8L121.0 163.2L122.6 162.7L124.3 162.1L125.9 161.6L127.5 161.0L129.1 160.3L130.7 159.7L132.4 159.0L134.0 158.3L135.6 157.5L137.2 156.8L138.8 155.9L140.5 155.1L142.1 154.2L143.7 153.3L145.3 152.3L146.9 151.3L148.6 150.3L150.2 149.1L151.8 148.0L153.4 146.8L155.0 145.5L156.7 144.2L158.3 142.8L159.9 141.4L161.5 139.9L163.1 138.3L164.8 136.7L166.4 134.9L168.0 133.2L169.6 131.4L171.2 129.5L172.9 127.5L174.5 125.5L176.1 123.4L177.7 121.3L179.3 119.1L181.0 117.0L182.6 114.7L184.2 112.5L185.8 110.2L187.4 108.0L189.1 105.8L190.7 103.5L192.3 101.3L193.9 99.2L195.5 97.0L197.2 95.0L198.8 92.9L200.4 91.0L202.0 89.1L203.6 87.2L205.3 85.4L206.9 83.7L208.5 82.1L210.1 80.5L211.7 79.0L213.4 77.5L215.0 76.1L216.6 74.8L218.2 73.5L219.8 72.3L221.5 71.1L223.1 70.0L224.7 68.9L226.3 67.9L227.9 66.9L229.6 66.0L231.2 65.1L232.8 64.2L234.4 63.4L236.0 62.6L237.7 61.9L239.3 61.2L240.9 60.5L242.5 59.8L244.1 59.2L245.8 58.6L247.4 58.0L249.0 57.4L250.6 56.9L252.2 56.4L253.9 55.8L255.5 55.4L257.1 54.9L258.7 54.4L260.3 54.0L262.0 53.6L263.6 53.2L265.2 52.8L266.8 52.4L268.4 52.0L270.1 51.7L271.7 51.3L273.3 51.0L274.9 50.7L276.5 50.4L278.2 50.1L279.8 49.8L281.4 49.5L283.0 49.2L284.6 49.0L286.3 48.7L287.9 48.4L289.5 48.2L291.1 48.0L292.7 47.7L294.4 47.5L296.0 47.3L297.6 47.1L299.2 46.9L300.8 46.6L302.5 46.5L304.1 46.3L305.7 46.1L307.3 45.9L308.9 45.7L310.6 45.5L312.2 45.4L313.8 45.2L315.4 45.0L317.0 44.9L318.7 44.7L320.3 44.6L321.9 44.4L323.5 44.3L325.1 44.1L326.8 44.0L328.4 43.8L330.0 43.7\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><circle cx=\"186.0\" cy=\"110.0\" r=\"4\" fill=\"#dc2626\"/><circle cx=\"150.0\" cy=\"149.3\" r=\"4\" fill=\"#dc2626\"/><text x=\"126.0\" y=\"153.3\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#dc2626\">−</text><text x=\"135.0\" y=\"147.2\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#dc2626\">π</text><text x=\"135.6\" y=\"157.8\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#dc2626\">4</text><line x1=\"134.0\" y1=\"149.7\" x2=\"142.0\" y2=\"149.7\" stroke=\"#dc2626\" stroke-width=\"1.00\"/><text x=\"294.7\" y=\"25.5\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#64748b\" font-style=\"italic\">y</text><text x=\"301.9\" y=\"25.5\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\"> = </text><text x=\"317.4\" y=\"19.4\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#64748b\">π</text><text x=\"318.0\" y=\"30.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#64748b\">2</text><line x1=\"316.4\" y1=\"21.9\" x2=\"324.4\" y2=\"21.9\" stroke=\"#64748b\" stroke-width=\"1.00\"/><text x=\"287.7\" y=\"206.5\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#64748b\" font-style=\"italic\">y</text><text x=\"294.9\" y=\"206.5\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\"> = −</text><text x=\"317.4\" y=\"200.5\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#64748b\">π</text><text x=\"318.0\" y=\"211.1\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#64748b\">2</text><line x1=\"316.4\" y1=\"202.9\" x2=\"324.4\" y2=\"202.9\" stroke=\"#64748b\" stroke-width=\"1.00\"/></svg>"
+                  }
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 3U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "12(a)(i)"
+              },
+              "answer": "Increasing S-shaped curve through (2, 0), y-intercept \\(\\tan^{-1}(-1)=-\\frac{\\pi}{4}\\), horizontal asymptotes \\(y=\\pm\\frac{\\pi}{2}\\).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Sketch the graph",
+                  "note": "Find where the inside is 0 (x-intercept) and the value at x = 0."
+                }
+              ]
+            },
+            {
+              "id": "chs2020e1-q12a-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "The graph of the function \\(y=\\tan^{-1}\\frac12(x-2)\\) is transformed by a translation left by 1 unit, then a horizontal dilation with a scale factor 2.\n\nFind the equation of the transformed graph.",
+              "hint": "Left 1: x → x + 1. Then dilation ×2: x → x/2.",
+              "steps": [
+                {
+                  "explain": "Translation left by 1: replace \\(x\\) by \\(x+1\\).",
+                  "work": "\\(y=\\tan^{-1}\\tfrac12(x+1-2)=\\tan^{-1}\\tfrac12(x-1)\\)"
+                },
+                {
+                  "explain": "Horizontal dilation by factor 2: replace \\(x\\) by \\(\\frac x2\\).",
+                  "work": "\\(y=\\tan^{-1}\\tfrac12\\left(\\tfrac x2-1\\right)\\)"
+                },
+                {
+                  "explain": "Simplify.",
+                  "work": "\\(\\tfrac12\\left(\\tfrac x2-1\\right)=\\tfrac x4-\\tfrac12=\\tfrac14(x-2)\\ \\Rightarrow\\ y=\\tan^{-1}\\tfrac14(x-2)\\)"
+                },
+                {
+                  "explain": "The order matters: doing the dilation first would give a different answer."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 3U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "12(a)(ii)"
+              },
+              "options": [
+                "\\(y=\\tan^{-1}\\frac12(x-1)\\)",
+                "\\(y=\\tan^{-1}(x-1)\\)",
+                "\\(y=\\tan^{-1}\\frac14(x-1)\\)",
+                "\\(y=\\tan^{-1}\\frac14(x-2)\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "translation left by 1 unit, then a horizontal dilation",
+                  "note": "Apply the replacements in the stated order."
+                }
+              ]
             }
           ]
         }

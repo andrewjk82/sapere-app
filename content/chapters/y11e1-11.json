@@ -337,6 +337,149 @@
               "note": "Find the product (−d/a) and the sum (−b/a) separately, then multiply."
             }
           ]
+        },
+        {
+          "id": "chs2020e1-q12c",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "The polynomial equation \\(4x^3-12x^2+5x+6=0\\) has roots \\(\\alpha,\\beta\\) and \\(\\gamma\\). It is known that one of the roots is the sum of the other two. Find \\(\\alpha,\\beta\\) and \\(\\gamma\\).",
+          "hint": "Let α = β + γ; the sum of roots then gives α directly.",
+          "steps": [
+            {
+              "explain": "Let \\(\\alpha=\\beta+\\gamma\\). Sum of roots \\(=-\\frac ba=3\\).",
+              "work": "\\(\\alpha+\\beta+\\gamma=3\\ \\Rightarrow\\ \\alpha+\\alpha=3\\ \\Rightarrow\\ \\alpha=\\frac32\\)"
+            },
+            {
+              "explain": "Product of roots \\(=-\\frac da=-\\frac64=-\\frac32\\).",
+              "work": "\\(\\tfrac32\\beta\\gamma=-\\tfrac32\\ \\Rightarrow\\ \\beta\\gamma=-1\\)"
+            },
+            {
+              "explain": "Also \\(\\beta+\\gamma=\\alpha=\\frac32\\). So \\(\\beta,\\gamma\\) are roots of a quadratic.",
+              "work": "\\(t^2-\\tfrac32t-1=0\\ \\Rightarrow\\ 2t^2-3t-2=0\\ \\Rightarrow\\ (2t+1)(t-2)=0\\)"
+            },
+            {
+              "explain": "So the roots are",
+              "work": "\\(\\alpha=\\frac32,\\quad\\beta=2,\\quad\\gamma=-\\frac12\\)"
+            },
+            {
+              "explain": "Check: \\(4(2)^3-12(2)^2+5(2)+6=32-48+10+6=0\\) ✓."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 3U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "12(c)"
+          },
+          "options": [
+            "\\(3,\\ 1,\\ -\\frac12\\)",
+            "\\(\\frac32,\\ 1,\\ \\frac12\\)",
+            "\\(\\frac32,\\ 2,\\ -\\frac12\\)",
+            "\\(\\frac32,\\ -2,\\ \\frac12\\)"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "one of the roots is the sum of the other two",
+              "note": "If α = β + γ, then α + β + γ = 2α."
+            }
+          ]
+        },
+        {
+          "id": "chs2020e1-q14a",
+          "type": "multipart",
+          "stem": "The cubic equation \\(2x^3-x^2+x-1=0\\) has roots \\(\\alpha\\), \\(\\beta\\) and \\(\\gamma\\).\nShow without finding each individual root that",
+          "meta": {
+            "source": "Caringbah 2020 3U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "14(a)"
+          },
+          "parts": [
+            {
+              "id": "chs2020e1-q14a-i",
+              "type": "review",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "\\(\\alpha^2+\\beta^2+\\gamma^2=-\\frac34\\)",
+              "hint": "Use (α + β + γ)² − 2(αβ + βγ + γα).",
+              "steps": [
+                {
+                  "explain": "Sum and pair-sum from the coefficients \\(a=2,b=-1,c=1,d=-1\\).",
+                  "work": "\\(\\alpha+\\beta+\\gamma=-\\frac ba=\\frac12,\\qquad\\alpha\\beta+\\beta\\gamma+\\gamma\\alpha=\\frac ca=\\frac12\\)"
+                },
+                {
+                  "explain": "Use the identity for a sum of squares.",
+                  "work": "\\(\\alpha^2+\\beta^2+\\gamma^2=(\\alpha+\\beta+\\gamma)^2-2(\\alpha\\beta+\\beta\\gamma+\\gamma\\alpha)\\)"
+                },
+                {
+                  "explain": "Substitute.",
+                  "work": "\\(=\\left(\\tfrac12\\right)^2-2\\left(\\tfrac12\\right)=\\tfrac14-1=-\\frac34\\)"
+                },
+                {
+                  "explain": "A negative sum of squares means some roots are not real."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 3U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "14(a)(i)"
+              },
+              "answer": "\\(\\alpha+\\beta+\\gamma=\\frac12\\), \\(\\alpha\\beta+\\beta\\gamma+\\gamma\\alpha=\\frac12\\). \\(\\alpha^2+\\beta^2+\\gamma^2=(\\alpha+\\beta+\\gamma)^2-2(\\alpha\\beta+\\beta\\gamma+\\gamma\\alpha)=\\frac14-1=-\\frac34\\).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "\\(\\alpha^2+\\beta^2+\\gamma^2=-\\frac34\\)",
+                  "note": "Expand (α + β + γ)² and subtract twice the pair-sum."
+                }
+              ]
+            },
+            {
+              "id": "chs2020e1-q14a-ii",
+              "type": "review",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "\\(\\alpha^3+\\beta^3+\\gamma^3=\\frac78\\)",
+              "hint": "Substitute each root into the equation and add.",
+              "steps": [
+                {
+                  "explain": "Each root satisfies the equation, so \\(2\\alpha^3=\\alpha^2-\\alpha+1\\), and likewise for \\(\\beta\\), \\(\\gamma\\).",
+                  "work": "\\(2\\alpha^3-\\alpha^2+\\alpha-1=0\\)"
+                },
+                {
+                  "explain": "Add the three equations.",
+                  "work": "\\(2\\left(\\alpha^3+\\beta^3+\\gamma^3\\right)-\\left(\\alpha^2+\\beta^2+\\gamma^2\\right)+(\\alpha+\\beta+\\gamma)-3=0\\)"
+                },
+                {
+                  "explain": "Substitute (i) and the sum of roots.",
+                  "work": "\\(2\\left(\\alpha^3+\\beta^3+\\gamma^3\\right)+\\frac34+\\frac12-3=0\\ \\Rightarrow\\ 2\\left(\\alpha^3+\\beta^3+\\gamma^3\\right)=\\frac74\\)"
+                },
+                {
+                  "explain": "Divide by 2.",
+                  "work": "\\(\\alpha^3+\\beta^3+\\gamma^3=\\frac78\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 3U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "14(a)(ii)"
+              },
+              "answer": "Each root satisfies \\(2x^3=x^2-x+1\\). Adding for α, β, γ: \\(2\\sum\\alpha^3=\\sum\\alpha^2-\\sum\\alpha+3=-\\frac34-\\frac12+3=\\frac74\\), so \\(\\sum\\alpha^3=\\frac78\\).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "\\(\\alpha^3+\\beta^3+\\gamma^3=\\frac78\\)",
+                  "note": "Each root satisfies 2x³ − x² + x − 1 = 0; add the three versions."
+                }
+              ]
+            }
+          ]
         }
       ]
     }

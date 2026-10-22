@@ -474,6 +474,63 @@
           }
         }
       ]
+    },
+    {
+      "topicId": "y11e1-17F",
+      "code": "17F",
+      "title": "Using counting in probability",
+      "questions": [
+        {
+          "id": "chs2020e1-q10",
+          "type": "mc",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "Three fair dice of different colours are rolled together. What is the probability that the product of the three scores is a perfect square?",
+          "hint": "Count cases: all squares (1, 4); a matching pair of non-squares; and 2, 3, 6 together.",
+          "steps": [
+            {
+              "explain": "There are \\(6^3=216\\) equally likely outcomes. Count those whose product is a perfect square. Work with prime factors: 4 is already a square; 2, 3, 5, 6 contribute primes.",
+              "work": "\\(\\text{squares: }1,4;\\quad\\text{others: }2,3,5,6=2\\times3\\)"
+            },
+            {
+              "explain": "All three from \\(\\{1,4\\}\\): product is a square.",
+              "work": "\\(2^3=8\\ \\text{outcomes}\\)"
+            },
+            {
+              "explain": "Exactly two dice show the same non-square value from \\(\\{2,3,5,6\\}\\) and the third is 1 or 4: choose the value (4), the position of the odd die (3), the odd die's value (2).",
+              "work": "\\(4\\times3\\times2=24\\ \\text{outcomes}\\)"
+            },
+            {
+              "explain": "Three dice \\(2,3,6\\) in any order: \\(2\\times3\\times6=36\\), a square.",
+              "work": "\\(3!=6\\ \\text{outcomes}\\)"
+            },
+            {
+              "explain": "No other combinations work (e.g. three equal non-squares give an odd power). Total:",
+              "work": "\\(8+24+6=38\\ \\Rightarrow\\ P=\\frac{38}{216}\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 3U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "10"
+          },
+          "options": [
+            "\\(\\frac{6}{216}\\)",
+            "\\(\\frac{13}{216}\\)",
+            "\\(\\frac{32}{216}\\)",
+            "\\(\\frac{38}{216}\\)"
+          ],
+          "answer": 3,
+          "keyPoints": [
+            {
+              "text": "perfect square",
+              "note": "Think in prime factors: every prime must appear an even number of times."
+            }
+          ]
+        }
+      ]
     }
   ]
 }

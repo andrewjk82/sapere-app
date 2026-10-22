@@ -194,6 +194,47 @@
               ]
             }
           ]
+        },
+        {
+          "id": "chs2020e1-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "Which of the following vectors is perpendicular to the vector \\(\\begin{pmatrix}4\\\\ -2\\end{pmatrix}\\)?",
+          "hint": "Perpendicular ⇔ dot product 0.",
+          "steps": [
+            {
+              "explain": "Perpendicular vectors have dot product 0. Test each option.",
+              "work": "\\(\\text{A: }4(-4)+(-2)(2)=-20\\qquad\\text{B: }4(2)+(-2)(-4)=16\\)"
+            },
+            {
+              "explain": "Continue.",
+              "work": "\\(\\text{C: }4(-2)+(-2)(4)=-16\\qquad\\text{D: }4(-2)+(-2)(-4)=-8+8=0\\)"
+            },
+            {
+              "explain": "Only D gives 0. (A is parallel to the given vector, pointing the opposite way.)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 3U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "6"
+          },
+          "options": [
+            "\\(\\begin{pmatrix}-4\\\\ 2\\end{pmatrix}\\)",
+            "\\(\\begin{pmatrix}2\\\\ -4\\end{pmatrix}\\)",
+            "\\(\\begin{pmatrix}-2\\\\ 4\\end{pmatrix}\\)",
+            "\\(\\begin{pmatrix}-2\\\\ -4\\end{pmatrix}\\)"
+          ],
+          "answer": 3,
+          "keyPoints": [
+            {
+              "text": "perpendicular",
+              "note": "Compute the dot product with each option."
+            }
+          ]
         }
       ]
     },
@@ -765,6 +806,58 @@
               "note": "The arrows c, b, a lead from Q to P. PQ goes the other way."
             }
           ]
+        },
+        {
+          "id": "chs2020e1-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "In the diagram, \\(OABC\\) is parallelogram. The vector \\(\\overrightarrow{OA}=\\mathbf{a}\\) and \\(\\overrightarrow{OC}=\\mathbf{c}\\). \\(M\\) is the midpoint of \\(OA\\). Which of the following expressions is represented by the vector \\(\\overrightarrow{MB}\\)?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 190\" width=\"320\" height=\"190\"><defs><marker id=\"ah1e293b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#1e293b\"/></marker></defs><rect width=\"320\" height=\"190\" rx=\"8\" fill=\"white\"/><path d=\"M50.0 160.0L210.0 130.0L280.0 10.0L120.0 40.0Z\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linejoin=\"round\" fill-opacity=\"0\"/><line x1=\"50.0\" y1=\"160.0\" x2=\"210.0\" y2=\"130.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><line x1=\"50.0\" y1=\"160.0\" x2=\"120.0\" y2=\"40.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><text x=\"30.3\" y=\"174.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">O</text><text x=\"218.0\" y=\"144.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"288.0\" y=\"10.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"101.0\" y=\"36.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">C</text><text x=\"123.4\" y=\"135.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">M</text><circle cx=\"130.0\" cy=\"145.0\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"140.0\" y=\"167.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"14.0\" fill=\"#1e293b\" font-weight=\"bold\">a</text><text x=\"67.0\" y=\"100.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"14.0\" fill=\"#1e293b\" font-weight=\"bold\">c</text></svg>"
+          },
+          "hint": "MB = MA + AB, and AB = OC in a parallelogram.",
+          "steps": [
+            {
+              "explain": "Go from \\(M\\) to \\(B\\) through \\(A\\).",
+              "work": "\\(\\overrightarrow{MB}=\\overrightarrow{MA}+\\overrightarrow{AB}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 190\" width=\"320\" height=\"190\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker><marker id=\"ah2563eb\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#2563eb\"/></marker><marker id=\"ahdc2626\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#dc2626\"/></marker><marker id=\"ah16a34a\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#16a34a\"/></marker></defs><rect width=\"320\" height=\"190\" rx=\"8\" fill=\"white\"/><path d=\"M50.0 160.0L210.0 130.0L280.0 10.0L120.0 40.0Z\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linejoin=\"round\" fill-opacity=\"0.2\"/><line x1=\"50.0\" y1=\"160.0\" x2=\"210.0\" y2=\"130.0\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"50.0\" y1=\"160.0\" x2=\"120.0\" y2=\"40.0\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"30.3\" y=\"174.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">O</text><text x=\"218.0\" y=\"144.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"288.0\" y=\"10.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"101.0\" y=\"36.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">C</text><text x=\"123.4\" y=\"135.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">M</text><circle cx=\"130.0\" cy=\"145.0\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"140.0\" y=\"167.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"14.0\" fill=\"#1e293b\" font-weight=\"bold\">a</text><text x=\"67.0\" y=\"100.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"14.0\" fill=\"#1e293b\" font-weight=\"bold\">c</text><line x1=\"130.0\" y1=\"145.0\" x2=\"210.0\" y2=\"130.0\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linecap=\"round\" marker-end=\"url(#ah2563eb)\"/><line x1=\"210.0\" y1=\"130.0\" x2=\"280.0\" y2=\"10.0\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\" marker-end=\"url(#ahdc2626)\"/><line x1=\"130.0\" y1=\"145.0\" x2=\"280.0\" y2=\"10.0\" stroke=\"#16a34a\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\" marker-end=\"url(#ah16a34a)\"/><text x=\"163.6\" y=\"121.5\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#2563eb\">1</text><text x=\"163.6\" y=\"132.1\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#2563eb\">2</text><line x1=\"162.6\" y1=\"123.9\" x2=\"169.3\" y2=\"123.9\" stroke=\"#2563eb\" stroke-width=\"1.00\"/><text x=\"171.3\" y=\"127.5\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#2563eb\" font-weight=\"bold\">a</text><text x=\"255.0\" y=\"74.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"13.0\" fill=\"#dc2626\" font-weight=\"bold\">c</text></svg>"
+              }
+            },
+            {
+              "explain": "\\(M\\) is the midpoint of \\(OA\\), so \\(\\overrightarrow{MA}\\) is half of \\(\\mathbf{a}\\).",
+              "work": "\\(\\overrightarrow{MA}=\\frac12\\mathbf{a}\\)"
+            },
+            {
+              "explain": "In a parallelogram opposite sides are equal and parallel, so \\(\\overrightarrow{AB}=\\overrightarrow{OC}\\).",
+              "work": "\\(\\overrightarrow{AB}=\\mathbf{c}\\)"
+            },
+            {
+              "explain": "Add.",
+              "work": "\\(\\overrightarrow{MB}=\\frac12\\mathbf{a}+\\mathbf{c}\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 3U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "3"
+          },
+          "options": [
+            "\\(\\frac12\\mathbf{a}-\\mathbf{c}\\)",
+            "\\(\\frac12\\mathbf{a}+\\mathbf{c}\\)",
+            "\\(\\mathbf{a}-\\frac12\\mathbf{c}\\)",
+            "\\(\\mathbf{a}+\\frac12\\mathbf{c}\\)"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "\\(\\overrightarrow{MB}\\)",
+              "note": "Travel M → A → B: half of a, then c."
+            }
+          ]
         }
       ]
     },
@@ -1102,6 +1195,102 @@
             {
               "text": "NOT ALWAYS CORRECT",
               "note": "Look for the statement that can fail: try a long u and a short v."
+            }
+          ]
+        },
+        {
+          "id": "chs2020e1-q11c",
+          "type": "multipart",
+          "stem": "",
+          "meta": {
+            "source": "Caringbah 2020 3U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "11(c)"
+          },
+          "parts": [
+            {
+              "id": "chs2020e1-q11c-i",
+              "type": "mc",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Find the unit vector in the direction of the vector \\(\\left(4\\mathbf{i}+3\\mathbf{j}\\right)\\).",
+              "hint": "Divide by the length √(4² + 3²) = 5.",
+              "steps": [
+                {
+                  "explain": "Length of the vector.",
+                  "work": "\\(\\sqrt{4^2+3^2}=5\\)"
+                },
+                {
+                  "explain": "Divide by the length.",
+                  "work": "\\(\\frac15(4\\mathbf{i}+3\\mathbf{j})=\\frac45\\mathbf{i}+\\frac35\\mathbf{j}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 3U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "11(c)(i)"
+              },
+              "options": [
+                "\\(\\frac47\\mathbf{i}+\\frac37\\mathbf{j}\\)",
+                "\\(\\frac{4}{25}\\mathbf{i}+\\frac{3}{25}\\mathbf{j}\\)",
+                "\\(5\\left(4\\mathbf{i}+3\\mathbf{j}\\right)\\)",
+                "\\(\\frac45\\mathbf{i}+\\frac35\\mathbf{j}\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "unit vector",
+                  "note": "Unit vector = vector ÷ length."
+                }
+              ]
+            },
+            {
+              "id": "chs2020e1-q11c-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "A particle is moving with velocity \\(\\mathbf{v}=(15\\mathbf{i}+20\\mathbf{j})\\ \\text{ms}^{-1}\\).\nFind the component of \\(\\mathbf{v}\\) in the direction of the vector \\(\\left(4\\mathbf{i}+3\\mathbf{j}\\right)\\).",
+              "hint": "Project v onto the unit vector from (i): (v·û)û.",
+              "steps": [
+                {
+                  "explain": "The component in a direction is the projection onto the unit vector \\(\\hat{\\mathbf{u}}=\\frac45\\mathbf{i}+\\frac35\\mathbf{j}\\) from (i).",
+                  "work": "\\((\\mathbf{v}\\cdot\\hat{\\mathbf{u}})\\,\\hat{\\mathbf{u}}\\)"
+                },
+                {
+                  "explain": "Dot product.",
+                  "work": "\\(\\mathbf{v}\\cdot\\hat{\\mathbf{u}}=15\\cdot\\frac45+20\\cdot\\frac35=12+12=24\\)"
+                },
+                {
+                  "explain": "Multiply back by the unit vector.",
+                  "work": "\\(24\\left(\\frac45\\mathbf{i}+\\frac35\\mathbf{j}\\right)=\\frac{96}{5}\\mathbf{i}+\\frac{72}{5}\\mathbf{j}\\)"
+                },
+                {
+                  "explain": "24 is only the size (scalar component); the question's marking scheme expects the vector."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 3U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "11(c)(ii)"
+              },
+              "options": [
+                "\\(\\frac{72}{5}\\mathbf{i}+\\frac{96}{5}\\mathbf{j}\\)",
+                "\\(12\\mathbf{i}+12\\mathbf{j}\\)",
+                "\\(\\frac{96}{5}\\mathbf{i}+\\frac{72}{5}\\mathbf{j}\\)",
+                "\\(24\\)"
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "component of",
+                  "note": "Use the unit vector from (i): component = (v · û) û."
+                }
+              ]
             }
           ]
         }

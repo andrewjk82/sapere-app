@@ -284,6 +284,51 @@
               ]
             }
           ]
+        },
+        {
+          "id": "chs2020e1-q11e",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "The discrete random variable X has a binomial distribution with \\(n\\) independent trials with probability of success \\(p\\). If its mean is 6 and its standard deviation is 2, find the values of \\(n\\) and \\(p\\).",
+          "hint": "np = 6 and np(1 − p) = 2² = 4; divide.",
+          "steps": [
+            {
+              "explain": "Binomial mean and variance.",
+              "work": "\\(np=6\\quad(1),\\qquad np(1-p)=\\sigma^2=4\\quad(2)\\)"
+            },
+            {
+              "explain": "Divide (2) by (1).",
+              "work": "\\(1-p=\\frac46=\\frac23\\ \\Rightarrow\\ p=\\frac13\\)"
+            },
+            {
+              "explain": "Back into (1).",
+              "work": "\\(n\\cdot\\frac13=6\\ \\Rightarrow\\ n=18\\)"
+            },
+            {
+              "explain": "Remember to square the standard deviation: variance \\(=4\\), not 2."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 3U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "11(e)"
+          },
+          "options": [
+            "\\(n=12,\\ p=\\frac12\\)",
+            "\\(n=18,\\ p=\\frac23\\)",
+            "\\(n=18,\\ p=\\frac13\\)",
+            "\\(n=9,\\ p=\\frac23\\)"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "standard deviation is 2",
+              "note": "Variance = σ² = 4 = np(1 − p)."
+            }
+          ]
         }
       ]
     },
@@ -334,6 +379,102 @@
             {
               "text": "the standard deviation of",
               "note": "Use σ = √(pq/n) with p = 0.3, q = 0.7, then round n up."
+            }
+          ]
+        },
+        {
+          "id": "chs2020e1-q12b",
+          "type": "multipart",
+          "stem": "",
+          "meta": {
+            "source": "Caringbah 2020 3U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "12(b)"
+          },
+          "parts": [
+            {
+              "id": "chs2020e1-q12b-i",
+              "type": "review",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Records show that 64% of students at a school travelled to and from school by bus. Samples of 100 students at the school are taken to determine the proportion who travel to and from school by bus. Show that the distribution of such sample proportions has mean 0.64 and standard deviation 0.048.",
+              "hint": "E(p̂) = p and σ = √(p(1 − p)/n).",
+              "steps": [
+                {
+                  "explain": "The number in a sample who travel by bus is binomial, and the sample proportion is that number divided by 100.",
+                  "work": "\\(X\\sim B(100,\\ 0.64),\\qquad\\hat{p}=\\frac{X}{100}\\)"
+                },
+                {
+                  "explain": "Mean of a sample proportion equals \\(p\\).",
+                  "work": "\\(E(\\hat p)=\\frac{np}{n}=p=0.64\\)"
+                },
+                {
+                  "explain": "Standard deviation.",
+                  "work": "\\(\\sigma_{\\hat p}=\\sqrt{\\frac{p(1-p)}{n}}=\\sqrt{\\frac{0.64\\times0.36}{100}}=\\frac{\\sqrt{0.2304}}{10}=\\frac{0.48}{10}=0.048\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 3U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "12(b)(i)"
+              },
+              "answer": "X ~ B(100, 0.64), p̂ = X/100. \\(E(\\hat p)=p=0.64\\); \\(\\sigma=\\sqrt{\\frac{p(1-p)}{n}}=\\sqrt{\\frac{0.64\\times0.36}{100}}=\\frac{0.48}{10}=0.048\\).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Show that",
+                  "note": "Use the sample proportion formulas with p = 0.64, n = 100."
+                }
+              ]
+            },
+            {
+              "id": "chs2020e1-q12b-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Use the table (shown below) of \\(P(Z\\lt z)\\), where \\(Z\\) has a standard normal distribution, to estimate the probability that a sample of 100 students will contain at least 58 and at most 64 students who travel to and from school by bus.\n\n| z | 0.00 | 0.01 | 0.02 | 0.03 | 0.04 | 0.05 | 0.06 | 0.07 | 0.08 | 0.09 |\n|---|---|---|---|---|---|---|---|---|---|---|\n| 1.1 | 0.8643 | 0.8665 | 0.8686 | 0.8708 | 0.8729 | 0.8749 | 0.8770 | 0.8790 | 0.8810 | 0.8830 |\n| 1.2 | 0.8849 | 0.8869 | 0.8888 | 0.8907 | 0.8925 | 0.8944 | 0.8962 | 0.8980 | 0.8997 | 0.9015 |\n| 1.3 | 0.9032 | 0.9049 | 0.9066 | 0.9082 | 0.9099 | 0.9115 | 0.9131 | 0.9147 | 0.9162 | 0.9177 |",
+              "hint": "Convert 0.58 and 0.64 to z-scores, then use symmetry and the table.",
+              "steps": [
+                {
+                  "explain": "58 to 64 students means a sample proportion from 0.58 to 0.64.",
+                  "work": "\\(P(0.58\\le\\hat p\\le0.64)\\)"
+                },
+                {
+                  "explain": "Convert to \\(z\\)-scores with mean 0.64 and SD 0.048.",
+                  "work": "\\(z=\\frac{0.58-0.64}{0.048}=-1.25,\\qquad z=\\frac{0.64-0.64}{0.048}=0\\)"
+                },
+                {
+                  "explain": "By symmetry of the normal curve, \\(P(-1.25\\le Z\\le0)=P(0\\le Z\\le1.25)\\).",
+                  "work": "\\(P(0\\le Z\\le1.25)=P(Z\\lt1.25)-0.5\\)"
+                },
+                {
+                  "explain": "Read \\(P(Z\\lt1.25)\\) from row 1.2, column 0.05.",
+                  "work": "\\(P(Z\\lt1.25)=0.8944\\ \\Rightarrow\\ 0.8944-0.5=0.3944\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 3U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "12(b)(ii)"
+              },
+              "options": [
+                "\\(0.8944\\)",
+                "\\(0.1056\\)",
+                "\\(0.4\\)",
+                "\\(0.3944\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "at least 58 and at most 64",
+                  "note": "Work with proportions 0.58 and 0.64; z = (p̂ − 0.64)/0.048."
+                }
+              ]
             }
           ]
         }

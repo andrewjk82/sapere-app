@@ -1,0 +1,56 @@
+{
+  "chapterId": "y12e1-16",
+  "title": "Chapter 16: Continuous probability distributions",
+  "year": "Year 12",
+  "topics": [
+    {
+      "topicId": "y12e1-16B",
+      "code": "16B",
+      "title": "Continuous distributions",
+      "questions": [
+        {
+          "id": "chs2020e1-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "What is the value of \\(k\\) such that the function \\(f(x)=\\frac{k}{1+x^2}\\), \\(-1\\le x\\le1\\) is a probability density function?",
+          "hint": "Total area under a pdf is 1.",
+          "steps": [
+            {
+              "explain": "A probability density function must have total area 1.",
+              "work": "\\(\\int_{-1}^{1}\\frac{k}{1+x^2}\\,dx=1\\)"
+            },
+            {
+              "explain": "Integrate: \\(\\int\\frac{dx}{1+x^2}=\\tan^{-1}x\\).",
+              "work": "\\(k\\Bigl[\\tan^{-1}x\\Bigr]_{-1}^{1}=k\\left(\\frac{\\pi}{4}-\\left(-\\frac{\\pi}{4}\\right)\\right)=k\\cdot\\frac{\\pi}{2}\\)"
+            },
+            {
+              "explain": "Set equal to 1.",
+              "work": "\\(\\frac{k\\pi}{2}=1\\ \\Rightarrow\\ k=\\frac{2}{\\pi}\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 3U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "8"
+          },
+          "options": [
+            "\\(k=\\frac{\\pi}{4}\\)",
+            "\\(k=\\frac{\\pi}{2}\\)",
+            "\\(k=\\frac{2}{\\pi}\\)",
+            "\\(k=\\frac{4}{\\pi}\\)"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "probability density function",
+              "note": "The integral over −1 ≤ x ≤ 1 must equal 1."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
