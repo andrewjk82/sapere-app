@@ -770,22 +770,23 @@
           "difficulty": "medium",
           "timeLimit": 60,
           "stem": "What is the value of \\(\\frac{d}{dx}\\sin^{-1}\\sqrt{1-x^2}\\) ?",
-          "hint": "Chain rule; note 1 − (√(1 − x²))² = x².",
+          "hint": "Let \\(u=\\sqrt{1-x^2}\\), use the chain rule, and remember \\(\\sqrt{x^2}=|x|\\). Check whether the question gives a domain restriction.",
           "steps": [
             {
-              "explain": "Chain rule with \\(u=\\sqrt{1-x^2}\\).",
-              "work": "\\(\\frac{d}{dx}\\sin^{-1}u=\\frac{u'}{\\sqrt{1-u^2}},\\qquad u'=\\frac{-2x}{2\\sqrt{1-x^2}}=\\frac{-x}{\\sqrt{1-x^2}}\\)"
+              "explain": "Let \\(u=\\sqrt{1-x^2}\\). Apply the chain rule for \\(\\sin^{-1}u\\), then differentiate the inner square root.",
+              "work": "\\(y=\\sin^{-1}u,\\quad \\frac{dy}{dx}=\\frac{u\\prime}{\\sqrt{1-u^2}},\\qquad u\\prime=\\frac{-2x}{2\\sqrt{1-x^2}}=-\\frac{x}{\\sqrt{1-x^2}}\\)"
             },
             {
-              "explain": "Simplify \\(1-u^2\\).",
-              "work": "\\(1-u^2=1-(1-x^2)=x^2\\ \\Rightarrow\\ \\sqrt{1-u^2}=|x|\\)"
+              "explain": "Simplify the denominator carefully: the principal square root of \\(x^2\\) is \\(|x|\\), not always \\(x\\).",
+              "work": "\\(1-u^2=1-(1-x^2)=x^2,\\qquad \\sqrt{1-u^2}=|x|\\)"
             },
             {
-              "explain": "Combine (taking \\(x\\gt0\\), as in the marking scheme).",
-              "work": "\\(\\frac{dy}{dx}=\\frac{-x}{\\sqrt{1-x^2}}\\cdot\\frac{1}{x}=\\frac{-1}{\\sqrt{1-x^2}}\\)"
+              "explain": "For \\(0<x<1\\), \\(|x|=x\\), so the factors of \\(x\\) cancel. This is the answer assumed by the paper’s keyed option.",
+              "work": "\\(\\frac{dy}{dx}=-\\frac{x}{\\sqrt{1-x^2}}\\cdot\\frac1x=-\\frac1{\\sqrt{1-x^2}}\\)"
             },
             {
-              "explain": "So option B. (Strictly, for \\(x\\lt0\\) the sign flips because \\(\\sqrt{x^2}=|x|\\).)"
+              "explain": "For \\(-1<x<0\\), \\(|x|=-x\\), so the derivative has the opposite sign. At \\(x=0\\), the left and right derivatives differ, so the derivative does not exist there. Thus the original question needs an \\(x>0\\) condition to have one answer; as written it is ambiguous.",
+              "work": "\\(\\frac{dy}{dx}=\\begin{cases}\\frac1{\\sqrt{1-x^2}},&-1<x<0,\\\\-\\frac1{\\sqrt{1-x^2}},&0<x<1\\end{cases};\\quad x=0:\\text{ not differentiable}\\)"
             }
           ],
           "xp": 1,

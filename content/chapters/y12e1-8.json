@@ -204,15 +204,16 @@
           "hint": "Perpendicular ⇔ dot product 0.",
           "steps": [
             {
-              "explain": "Perpendicular vectors have dot product 0. Test each option.",
-              "work": "\\(\\text{A: }4(-4)+(-2)(2)=-20\\qquad\\text{B: }4(2)+(-2)(-4)=16\\)"
+              "explain": "Use the dot-product test: vectors \\((a,b)\\) and \\((c,d)\\) are perpendicular exactly when \\(ac+bd=0\\). Test A and B.",
+              "work": "\\(\\text{A: }4(-4)+(-2)(2)=-20\\ne0,\\qquad\\text{B: }4(2)+(-2)(-4)=16\\ne0\\)"
             },
             {
-              "explain": "Continue.",
-              "work": "\\(\\text{C: }4(-2)+(-2)(4)=-16\\qquad\\text{D: }4(-2)+(-2)(-4)=-8+8=0\\)"
+              "explain": "Test the remaining two choices using the same dot product.",
+              "work": "\\(\\text{C: }4(-2)+(-2)(4)=-16\\ne0,\\qquad\\text{D: }4(-2)+(-2)(-4)=-8+8=0\\)"
             },
             {
-              "explain": "Only D gives 0. (A is parallel to the given vector, pointing the opposite way.)"
+              "explain": "Only choice D has dot product zero, so it is perpendicular to the given vector.",
+              "work": "\\(\\begin{pmatrix}4\\\\-2\\end{pmatrix}\\cdot\\begin{pmatrix}-2\\\\-4\\end{pmatrix}=0\\quad\\Rightarrow\\quad\\text{D}\\)"
             }
           ],
           "xp": 1,
@@ -1268,7 +1269,8 @@
                   "work": "\\(24\\left(\\frac45\\mathbf{i}+\\frac35\\mathbf{j}\\right)=\\frac{96}{5}\\mathbf{i}+\\frac{72}{5}\\mathbf{j}\\)"
                 },
                 {
-                  "explain": "24 is only the size (scalar component); the question's marking scheme expects the vector."
+                  "explain": "24 is only the size (scalar component); the question's marking scheme expects the vector.",
+                  "work": "\\(24\\left(\\frac45\\mathbf{i}+\\frac35\\mathbf{j}\\right)=\\frac{96}{5}\\mathbf{i}+\\frac{72}{5}\\mathbf{j}\\), while \\(24\\) alone is only the scalar component."
                 }
               ],
               "xp": 1,

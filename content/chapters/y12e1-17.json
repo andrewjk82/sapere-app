@@ -294,19 +294,24 @@
           "hint": "np = 6 and np(1 − p) = 2² = 4; divide.",
           "steps": [
             {
-              "explain": "Binomial mean and variance.",
-              "work": "\\(np=6\\quad(1),\\qquad np(1-p)=\\sigma^2=4\\quad(2)\\)"
+              "explain": "For a binomial variable, the mean is \\(np\\) and the variance is \\(np(1-p)\\). Square the given standard deviation to get the variance.",
+              "work": "\\(np=6\\quad(1),\\qquad np(1-p)=\\sigma^2=2^2=4\\quad(2)\\)"
             },
             {
-              "explain": "Divide (2) by (1).",
-              "work": "\\(1-p=\\frac46=\\frac23\\ \\Rightarrow\\ p=\\frac13\\)"
+              "explain": "Divide the variance equation by the mean equation to eliminate \\(n\\).",
+              "work": "\\(\\frac{np(1-p)}{np}=\\frac46\\Rightarrow1-p=\\frac23\\Rightarrow p=\\frac13\\)"
             },
             {
-              "explain": "Back into (1).",
-              "work": "\\(n\\cdot\\frac13=6\\ \\Rightarrow\\ n=18\\)"
+              "explain": "Substitute \\(p=\\frac13\\) into the mean equation.",
+              "work": "\\(n\\cdot\\frac13=6\\Rightarrow n=18\\)"
             },
             {
-              "explain": "Remember to square the standard deviation: variance \\(=4\\), not 2."
+              "explain": "Check both parameters in the original mean and standard-deviation formulas.",
+              "work": "\\(np=18\\cdot\\frac13=6,\\qquad\\sqrt{np(1-p)}=\\sqrt{18\\cdot\\frac13\\cdot\\frac23}=\\sqrt4=2\\)"
+            },
+            {
+              "explain": "Thus the parameters are the pair in option C.",
+              "work": "\\(\\boxed{n=18,\\ p=\\frac13}\\)"
             }
           ],
           "xp": 1,

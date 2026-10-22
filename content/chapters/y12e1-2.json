@@ -173,7 +173,8 @@
               "work": "\\(=5\\left(9M+2^{2k}\\right)\\)"
             },
             {
-              "explain": "\\(9M+2^{2k}\\) is an integer, so the expression is divisible by 5. By induction the result holds for all \\(n\\ge1\\)."
+              "explain": "\\(9M+2^{2k}\\) is an integer, so the expression is divisible by 5. By induction the result holds for all \\(n\\ge1\\).",
+              "work": "\\(3^{2(k+1)+4}-2^{2(k+1)}=5(9M+2^{2k})\\), an integer multiple of 5; hence the induction step is complete."
             }
           ],
           "xp": 1,

@@ -363,7 +363,8 @@
               "work": "\\(\\alpha=\\frac32,\\quad\\beta=2,\\quad\\gamma=-\\frac12\\)"
             },
             {
-              "explain": "Check: \\(4(2)^3-12(2)^2+5(2)+6=32-48+10+6=0\\) ✓."
+              "explain": "Verify each value in the original cubic, then state the ordered roots.",
+              "work": "\\(P(2)=4(8)-12(4)+5(2)+6=32-48+10+6=0;\\quad P(-\\frac12)=4(-\\frac18)-12(\\frac14)+5(-\\frac12)+6=-\\frac12-3-\\frac52+6=0;\\quad (\\alpha,\\beta,\\gamma)=(\\frac32,2,-\\frac12)\\)"
             }
           ],
           "xp": 1,
@@ -407,19 +408,16 @@
               "hint": "Use (α + β + γ)² − 2(αβ + βγ + γα).",
               "steps": [
                 {
-                  "explain": "Sum and pair-sum from the coefficients \\(a=2,b=-1,c=1,d=-1\\).",
-                  "work": "\\(\\alpha+\\beta+\\gamma=-\\frac ba=\\frac12,\\qquad\\alpha\\beta+\\beta\\gamma+\\gamma\\alpha=\\frac ca=\\frac12\\)"
+                  "explain": "Use Vieta’s formulas for \\(2x^3-x^2+x-1=0\\): the sum of roots is \\(-b/a\\), and the sum of pairwise products is \\(c/a\\).",
+                  "work": "\\(\\alpha+\\beta+\\gamma=-\\frac{-1}{2}=\\frac12,\\qquad\\alpha\\beta+\\beta\\gamma+\\gamma\\alpha=\\frac12\\)"
                 },
                 {
-                  "explain": "Use the identity for a sum of squares.",
-                  "work": "\\(\\alpha^2+\\beta^2+\\gamma^2=(\\alpha+\\beta+\\gamma)^2-2(\\alpha\\beta+\\beta\\gamma+\\gamma\\alpha)\\)"
+                  "explain": "Expand the square of the sum and rearrange to isolate the sum of squares.",
+                  "work": "\\((\\alpha+\\beta+\\gamma)^2=\\alpha^2+\\beta^2+\\gamma^2+2(\\alpha\\beta+\\beta\\gamma+\\gamma\\alpha)\\)"
                 },
                 {
-                  "explain": "Substitute.",
-                  "work": "\\(=\\left(\\tfrac12\\right)^2-2\\left(\\tfrac12\\right)=\\tfrac14-1=-\\frac34\\)"
-                },
-                {
-                  "explain": "A negative sum of squares means some roots are not real."
+                  "explain": "Substitute the Vieta values.",
+                  "work": "\\(\\alpha^2+\\beta^2+\\gamma^2=\\left(\\frac12\\right)^2-2\\left(\\frac12\\right)=\\frac14-1=-\\frac34\\)"
                 }
               ],
               "xp": 1,

@@ -489,24 +489,24 @@
           "hint": "Count cases: all squares (1, 4); a matching pair of non-squares; and 2, 3, 6 together.",
           "steps": [
             {
-              "explain": "There are \\(6^3=216\\) equally likely outcomes. Count those whose product is a perfect square. Work with prime factors: 4 is already a square; 2, 3, 5, 6 contribute primes.",
-              "work": "\\(\\text{squares: }1,4;\\quad\\text{others: }2,3,5,6=2\\times3\\)"
+              "explain": "There are \\(6^3\\) ordered outcomes because the dice have different colours. For square products, track the prime factors with odd exponents; equivalently, replace each score by its square-free part.",
+              "work": "\\(216\\text{ outcomes};\\quad 1,4\\mapsto1,\\quad 2\\mapsto2,\\quad3\\mapsto3,\\quad5\\mapsto5,\\quad6\\mapsto6\\)"
             },
             {
-              "explain": "All three from \\(\\{1,4\\}\\): product is a square.",
-              "work": "\\(2^3=8\\ \\text{outcomes}\\)"
+              "explain": "If all three square-free parts are 1 (each die shows 1 or 4), the product is a square.",
+              "work": "\\(2\\cdot2\\cdot2=8\\text{ ordered outcomes}\\)"
             },
             {
-              "explain": "Exactly two dice show the same non-square value from \\(\\{2,3,5,6\\}\\) and the third is 1 or 4: choose the value (4), the position of the odd die (3), the odd die's value (2).",
-              "work": "\\(4\\times3\\times2=24\\ \\text{outcomes}\\)"
+              "explain": "A pair of equal non-square-free parts cancels its odd prime exponents; the third die must have square-free part 1. Choose the repeated value, the position of the other die, and whether that die shows 1 or 4.",
+              "work": "\\(4\\cdot3\\cdot2=24\\text{ outcomes}\\)"
             },
             {
-              "explain": "Three dice \\(2,3,6\\) in any order: \\(2\\times3\\times6=36\\), a square.",
-              "work": "\\(3!=6\\ \\text{outcomes}\\)"
+              "explain": "The remaining square-free triple with all three non-1 parts that makes every prime exponent even is 2, 3, 6, since \\(2\\cdot3\\cdot6=36\\). The three differently coloured dice can be arranged in all orders.",
+              "work": "\\(3!=6\\text{ outcomes}\\)"
             },
             {
-              "explain": "No other combinations work (e.g. three equal non-squares give an odd power). Total:",
-              "work": "\\(8+24+6=38\\ \\Rightarrow\\ P=\\frac{38}{216}\\)"
+              "explain": "These cases are disjoint and exhaust the triples whose prime exponents are all even. Add the favourable outcomes and divide by the total.",
+              "work": "\\(8+24+6=38,\\qquad P=\\frac{38}{216}=\\frac{19}{108}\\quad\\text{(option D)}\\)"
             }
           ],
           "xp": 1,

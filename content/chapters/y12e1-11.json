@@ -411,19 +411,19 @@
               "difficulty": "medium",
               "timeLimit": 60,
               "stem": "Hence find expressions for the exact values of the solutions to the equation \\(\\frac{3x-x^3}{1-3x^2}=\\sqrt3\\).",
-              "hint": "Put x = tan θ so the equation is tan 3θ = √3.",
+              "hint": "Set \\(x=\\tan\\theta\\) with \\(-\\frac\\pi2<\\theta<\\frac\\pi2\\), use part (i), then list the tangent solutions that fit the resulting range of \\(3\\theta\\).",
               "steps": [
                 {
-                  "explain": "Let \\(x=\\tan\\theta\\). By (i) the left side is \\(\\tan3\\theta\\).",
+                  "explain": "Put \\(x=\\tan\\theta\\), choosing the unique \\(\\theta\\in(-\\frac\\pi2,\\frac\\pi2)\\) for each real \\(x\\). By part (i), the left side is \\(\\tan3\\theta\\).",
                   "work": "\\(\\tan3\\theta=\\sqrt3\\)"
                 },
                 {
-                  "explain": "\\(\\tan\\) has period \\(\\pi\\): \\(3\\theta=\\frac\\pi3+k\\pi\\).",
-                  "work": "\\(3\\theta=\\frac{\\pi}{3},\\ \\frac{4\\pi}{3},\\ \\frac{7\\pi}{3}\\ \\Rightarrow\\ \\theta=\\frac{\\pi}{9},\\ \\frac{4\\pi}{9},\\ \\frac{7\\pi}{9}\\)"
+                  "explain": "Tangent has period \\(\\pi\\), so \\(3\\theta=\\frac\\pi3+k\\pi\\). Since \\(-\\frac{3\\pi}{2}<3\\theta<\\frac{3\\pi}{2}\\), only \\(k=-1,0,1\\) are possible.",
+                  "work": "\\(3\\theta=-\\frac{2\\pi}{3},\\ \\frac\\pi3,\\ \\frac{4\\pi}{3}\\Rightarrow\\theta=-\\frac{2\\pi}{9},\\ \\frac\\pi9,\\ \\frac{4\\pi}{9}\\)"
                 },
                 {
-                  "explain": "These give three different values of \\(\\tan\\theta\\) (a cubic has at most three roots).",
-                  "work": "\\(x=\\tan\\frac{\\pi}{9},\\ \\tan\\frac{4\\pi}{9},\\ \\tan\\frac{7\\pi}{9}\\)"
+                  "explain": "Take the tangent of each angle. Since \\(\\tan(7\\pi/9)=\\tan(-2\\pi/9)\\), this matches option D.",
+                  "work": "\\(x=\\tan\\!\\left(-\\frac{2\\pi}{9}\\right),\\ \\tan\\frac\\pi9,\\ \\tan\\frac{4\\pi}{9};\\quad\\tan\\!\\left(-\\frac{2\\pi}{9}\\right)=\\tan\\frac{7\\pi}{9}\\)"
                 }
               ],
               "xp": 1,
@@ -1212,19 +1212,20 @@
           "hint": "R = 5, so the equation says the expression reaches its maximum value.",
           "steps": [
             {
-              "explain": "Write the left side as \\(R\\cos(\\theta-\\alpha)\\).",
-              "work": "\\(R=\\sqrt{3^2+4^2}=5,\\qquad\\cos\\alpha=\\frac35,\\ \\sin\\alpha=\\frac45\\)"
+              "explain": "Write the left side in the form \\(R\\cos(\\theta-\\alpha)\\). Match coefficients using \\(R\\cos(\\theta-\\alpha)=R\\cos\\theta\\cos\\alpha+R\\sin\\theta\\sin\\alpha\\).",
+              "work": "\\(R=\\sqrt{3^2+4^2}=5,\\qquad\\cos\\alpha=\\frac35,\\quad\\sin\\alpha=\\frac45\\quad(\\alpha\\approx0.93)\\)"
             },
             {
-              "explain": "So the equation becomes",
-              "work": "\\(5\\cos(\\theta-\\alpha)=5\\ \\Rightarrow\\ \\cos(\\theta-\\alpha)=1\\)"
+              "explain": "Substitute these values; the equation asks when the cosine reaches its maximum value 1.",
+              "work": "\\(3\\cos\\theta+4\\sin\\theta=5\\cos(\\theta-\\alpha)=5\\Rightarrow\\cos(\\theta-\\alpha)=1\\)"
             },
             {
-              "explain": "\\(\\cos\\) equals 1 only at multiples of \\(2\\pi\\). In \\(0\\le\\theta\\le2\\pi\\), \\(\\theta-\\alpha\\) runs from \\(-\\alpha\\) to \\(2\\pi-\\alpha\\) (\\(\\alpha\\approx0.93\\)), which contains only 0.",
-              "work": "\\(\\theta-\\alpha=0\\ \\Rightarrow\\ \\theta=\\alpha\\approx0.93\\)"
+              "explain": "Cosine is 1 when its angle is an integer multiple of \\(2\\pi\\). As \\(0\\le\\theta\\le2\\pi\\), the angle \\(\\theta-\\alpha\\) runs from \\(-\\alpha\\) to \\(2\\pi-\\alpha\\), and the only multiple of \\(2\\pi\\) in that interval is 0.",
+              "work": "\\(-\\alpha\\le\\theta-\\alpha\\le2\\pi-\\alpha,\\quad 0\\text{ is the only included value }2k\\pi\\Rightarrow\\theta=\\alpha\\approx0.93\\)"
             },
             {
-              "explain": "Exactly one solution. The value 5 is the MAXIMUM of the left side, which happens once per cycle."
+              "explain": "There is one value of θ in the stated interval, so the equation has exactly one distinct solution.",
+              "work": "\\(\\boxed{1\\text{ solution}}\\)"
             }
           ],
           "xp": 1,
@@ -1606,7 +1607,8 @@
               "work": "\\(\\tan\\tfrac{x}{2}=1\\Rightarrow\\tfrac x2=\\tfrac\\pi4\\Rightarrow x=\\tfrac\\pi2\\approx1.57;\\qquad\\tan\\tfrac x2=2\\Rightarrow\\tfrac x2\\approx1.107\\Rightarrow x\\approx2.21\\)"
             },
             {
-              "explain": "Check \\(x=\\pi\\) separately (the \\(t\\)-formula misses it): \\(\\cos\\pi-3\\sin\\pi+3=-1+3=2\\neq0\\). So only \\(x\\approx1.57\\) and \\(2.21\\)."
+              "explain": "Check \\(x=\\pi\\) separately (the \\(t\\)-formula misses it): \\(\\cos\\pi-3\\sin\\pi+3=-1+3=2\\neq0\\). So only \\(x\\approx1.57\\) and \\(2.21\\).",
+              "work": "\\(\\cos\\pi-3\\sin\\pi+3=-1-0+3=2\\ne0\\)"
             }
           ],
           "xp": 1,

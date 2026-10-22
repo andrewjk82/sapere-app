@@ -17,23 +17,24 @@
           "hint": "First require |r| < 1, then compare S = x/(x + 1) with 1.",
           "steps": [
             {
-              "explain": "First term \\(a=1\\), ratio \\(r=-\\frac1x\\). A limiting sum exists only if \\(|r|\\lt1\\).",
-              "work": "\\(\\left|\\frac1x\\right|\\lt1\\ \\Rightarrow\\ |x|\\gt1\\)"
+              "explain": "Identify the first term and common ratio. A limiting sum exists only when \\(|r|<1\\).",
+              "work": "\\(a=1,\\quad r=-\\frac1x,\\quad |r|<1\\Rightarrow\\left|\\frac1x\\right|<1\\Rightarrow |x|>1\\)"
             },
             {
-              "explain": "Limiting sum.",
-              "work": "\\(S=\\frac{a}{1-r}=\\frac{1}{1+\\frac1x}=\\frac{x}{x+1}\\)"
+              "explain": "Use the convergent geometric-series formula.",
+              "work": "\\(S=\\frac{a}{1-r}=\\frac{1}{1+\\frac1x}=\\frac{x}{x+1}\\quad (|x|>1)\\)"
             },
             {
-              "explain": "For \\(x\\gt1\\): \\(\\frac{x}{x+1}\\lt1\\) because the numerator is smaller than the denominator.",
-              "work": "\\(x=2:\\ S=\\tfrac23\\lt1\\ \\checkmark\\)"
+              "explain": "Compare \\(S\\) with 1 by subtracting 1.",
+              "work": "\\(S-1=\\frac{x}{x+1}-1=-\\frac1{x+1}\\)"
             },
             {
-              "explain": "For \\(x\\lt-1\\): both \\(x\\) and \\(x+1\\) are negative and \\(|x|\\gt|x+1|\\), so \\(S\\gt1\\).",
-              "work": "\\(x=-2:\\ S=\\frac{-2}{-1}=2\\gt1\\)"
+              "explain": "On the allowed domain \\(|x|>1\\), if \\(x>1\\), then \\(x+1>0\\), so \\(S-1<0\\). If \\(x<-1\\), then \\(x+1<0\\), so \\(S-1>0\\).",
+              "work": "\\(x>1\\Rightarrow S<1;\\qquad x<-1\\Rightarrow S>1\\)"
             },
             {
-              "explain": "So \\(S\\lt1\\) exactly when \\(x\\gt1\\): option D."
+              "explain": "Therefore only the positive part of the convergence domain satisfies the inequality.",
+              "work": "\\(\\boxed{x>1}\\quad\\text{(option D)}\\)"
             }
           ],
           "xp": 1,
