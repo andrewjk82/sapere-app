@@ -4828,11 +4828,11 @@
             },
             {
               "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(A tree where each throw branches Win (W)/Lose (W'); play continues only on the \"lose\" branches: Bo \\(\\frac{1}{20}\\), Cara \\(\\frac{1}{25}\\), Bo \\(\\frac{1}{20}\\), Cara \\(\\frac{1}{25}\\).\\)"
+              "work": "A tree where each throw branches Win (W)/Lose (W'); play continues only on the \"lose\" branches: Bo \\(\\frac{1}{20}\\), Cara \\(\\frac{1}{25}\\), Bo \\(\\frac{1}{20}\\), Cara \\(\\frac{1}{25}\\)."
             },
             {
               "explain": "Final answer: A tree where each throw branches Win (W)/Lose (W'); play continues only on the \"lose\" branches: Bo \\(\\frac{1}{20}\\), Cara \\(\\frac{1}{25}\\), Bo \\(\\frac{1}{20}\\), Cara \\(\\frac{1}{25}\\).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(A tree where each throw branches Win (W)/Lose (W'); play continues only on the \"lose\" branches: Bo \\(\\frac{1}{20}\\), Cara \\(\\frac{1}{25}\\), Bo \\(\\frac{1}{20}\\), Cara \\(\\frac{1}{25}\\).\\)"
+              "work": "A tree where each throw branches Win (W)/Lose (W'); play continues only on the \"lose\" branches: Bo \\(\\frac{1}{20}\\), Cara \\(\\frac{1}{25}\\), Bo \\(\\frac{1}{20}\\), Cara \\(\\frac{1}{25}\\)."
             }
           ],
           "manual": true,
