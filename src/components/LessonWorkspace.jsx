@@ -20,14 +20,15 @@ const headBtn = { display: 'inline-flex', alignItems: 'center', gap: 6, border: 
 const primaryBtn = { ...headBtn, background: '#4f46e5', color: '#fff', border: 0, padding: '10px 18px' };
 
 // A curriculum topic's Drive worksheet: cached on this device after the first download (see useWorksheetPdf).
-const DrivePane = ({ record }) => {
+const DrivePane = ({ record, studentId }) => {
   const worksheet = useWorksheetPdf(record.url);
   return (
     <PdfViewer
       src={worksheet.src}
       loading={worksheet.loading}
       fallback={worksheet.fallback}
-      storageKey={worksheet.fileId || `lesson-topic:${record.topicId}`}
+      // The pen / highlighter marks are kept per student: the same worksheet opened for another student starts clean.
+      storageKey={`lesson:${studentId}:${worksheet.fileId || record.topicId}`}
       style={{ flex: 1, minWidth: 0, minHeight: 0, width: '100%', maxWidth: '100%' }}
     />
   );
@@ -183,7 +184,7 @@ const LessonWorkspace = ({ session, students: profiles = [], onClose }) => {
 
   const pdfPane = (
     <div style={{ flex: 1, minWidth: 0, minHeight: 0, overflow: 'hidden', display: 'flex', position: 'relative', background: '#f1f5f9' }}>
-      {status === 'ready' && isDrive && <DrivePane key={record.url} record={record} />}
+      {status === 'ready' && isDrive && <DrivePane key={`${active.id}:${record.url}`} record={record} studentId={active.id} />}
       {status === 'ready' && !isDrive && (
         <PdfViewer
           key={pdf.url}
