@@ -1747,7 +1747,7 @@
           "difficulty": "medium",
           "stem": "Consider the diagram below. What is the true bearing of A from B?",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><line x1=\"45\" y1=\"48\" x2=\"45\" y2=\"10\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"45\" y1=\"48\" x2=\"112\" y2=\"48\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"45\" y1=\"48\" x2=\"103\" y2=\"75\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"38\" y=\"13\" font-size=\"13\">N</text><text x=\"32\" y=\"45\" font-size=\"13\">A</text><text x=\"105\" y=\"86\" font-size=\"13\">B</text><path d=\"M65 48 A20 20 0 0 1 64 56\" fill=\"none\" stroke=\"#ef8a00\" stroke-width=\"2\"/><text x=\"70\" y=\"63\" font-size=\"12\">25°</text></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\" role=\"img\" aria-label=\"Bearing diagram showing north, east, and line AB at 25 degrees south of east\"><rect width=\"360\" height=\"220\" fill=\"#fff\"/><path d=\"M120 95V15\" stroke=\"#334155\" stroke-width=\"2.2\"/><path d=\"M120 95H320\" stroke=\"#334155\" stroke-width=\"2.2\"/><path d=\"M120 95L285 172\" stroke=\"#334155\" stroke-width=\"2.5\"/><path d=\"M157 95 A37 37 0 0 1 153.5 110.6\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"2.2\"/><g fill=\"#26344a\" font-family=\"Arial,sans-serif\" font-size=\"13\"><text x=\"112\" y=\"13\">N</text><text x=\"106\" y=\"92\">A</text><text x=\"289\" y=\"181\">B</text><text x=\"326\" y=\"100\">E</text></g><text x=\"166\" y=\"113\" fill=\"#26344a\" font-family=\"Arial,sans-serif\" font-size=\"11\">25°</text></svg>"
           },
           "options": [
             "025°",
@@ -1756,25 +1756,31 @@
             "295°"
           ],
           "answer": 3,
-          "hint": "The 25° shown is measured south of east from A to B. Reverse the direction, then express the bearing clockwise from north.",
+          "hint": "The 25° angle is measured clockwise from east to the route from A to B. First find that bearing from north, then reverse it to get the bearing of A from B.",
           "steps": [
             {
-              "explain": "From A to B, the direction is 25° south of east. The bearing from A to B is therefore 090° + 25° = 115°.",
-              "work": "Bearing A→B = 115°"
+              "explain": "At A, the north line is the starting direction for a bearing. East is 090°. The diagram gives a further 25° clockwise from east to line AB, so add these two angles to find the bearing from A to B.",
+              "work": "\\text{Bearing }A\\to B=90^\\circ+25^\\circ=115^\\circ",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\" role=\"img\" aria-label=\"Bearing diagram showing north, east, and line AB at 25 degrees south of east\"><rect width=\"360\" height=\"220\" fill=\"#fff\"/><path d=\"M120 95V15\" stroke=\"#334155\" stroke-width=\"2.2\"/><path d=\"M120 95H320\" stroke=\"#f97316\" stroke-width=\"2.2\"/><path d=\"M120 95L285 172\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/><path d=\"M157 95 A37 37 0 0 1 153.5 110.6\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"2.2\"/><g fill=\"#26344a\" font-family=\"Arial,sans-serif\" font-size=\"13\"><text x=\"112\" y=\"13\">N</text><text x=\"106\" y=\"92\">A</text><text x=\"289\" y=\"181\">B</text><text x=\"326\" y=\"100\">E</text></g><text x=\"166\" y=\"113\" fill=\"#26344a\" font-family=\"Arial,sans-serif\" font-size=\"11\">25°</text></svg>"
+              }
             },
             {
-              "explain": "The reverse bearing differs by 180°.",
-              "work": "Bearing B→A = 115° + 180° = 295°"
+              "explain": "The question asks for A from B, so reverse the direction along the same line AB. Reverse bearings differ by 180°; add 180° to the bearing just found.",
+              "work": "\\text{Bearing }B\\to A=115^\\circ+180^\\circ=295^\\circ",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\" role=\"img\" aria-label=\"Bearing diagram showing north, east, and line AB at 25 degrees south of east\"><rect width=\"360\" height=\"220\" fill=\"#fff\"/><path d=\"M120 95V15\" stroke=\"#334155\" stroke-width=\"2.2\"/><path d=\"M120 95H320\" stroke=\"#334155\" stroke-width=\"2.2\"/><path d=\"M120 95L285 172\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/><path d=\"M157 95 A37 37 0 0 1 153.5 110.6\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><path d=\"M209 136L186 125M192 120L186 125L195 129\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#26344a\" font-family=\"Arial,sans-serif\" font-size=\"13\"><text x=\"112\" y=\"13\">N</text><text x=\"106\" y=\"92\">A</text><text x=\"289\" y=\"181\">B</text><text x=\"326\" y=\"100\">E</text></g><text x=\"166\" y=\"113\" fill=\"#26344a\" font-family=\"Arial,sans-serif\" font-size=\"11\">25°</text></svg>"
+              }
             },
             {
-              "explain": "Write the true bearing using three digits.",
-              "work": "The true bearing of A from B is 295°."
+              "explain": "A true bearing is written as three digits, including a leading zero when required. The reverse bearing is already between 000° and 360°.",
+              "work": "\\boxed{295^\\circ}"
             }
           ],
           "keyPoints": [
             {
-              "text": "true bearing of A from B",
-              "note": "Reverse the shown direction and measure clockwise from north."
+              "text": "25° clockwise from east along AB",
+              "note": "East is 090°. Add the 25° at A to get A→B, then add 180° to reverse the direction."
             }
           ],
           "timeLimit": 60,

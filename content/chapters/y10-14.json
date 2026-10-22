@@ -2949,33 +2949,33 @@
           "id": "abb-y10-2025-t4-a-q14",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Which of the following expressions is equivalent to a = log_c b?",
+          "stem": "Which of the following expressions is equivalent to \\(a=\\log_{c} b\\)?",
           "options": [
-            "c = a^b",
-            "c = b^a",
-            "b = c^a",
-            "b = a^c"
+            "\\(c=a^{b}\\)",
+            "\\(c=b^{a}\\)",
+            "\\(b=c^{a}\\)",
+            "\\(b=a^{c}\\)"
           ],
           "answer": 2,
           "hint": "Translate the logarithm into an exponential statement: log base c of b equals a means c raised to a equals b.",
           "steps": [
             {
-              "explain": "Use the definition of a logarithm.",
-              "work": "log_c b = a ⇔ c^a = b"
+              "explain": "Use the definition of a logarithm: \\(\\log_c b=a\\) means that the base \\(c\\), raised to the exponent \\(a\\), gives the value \\(b\\).",
+              "work": "\\log_c b=a\\iff c^a=b"
             },
             {
-              "explain": "Match this with the options.",
-              "work": "b = c^a"
+              "explain": "Compare this exponential equation with the answer choices. The base remains c, the exponent is a, and the result is b.",
+              "work": "c^a=b\\iff b=c^a"
             },
             {
-              "explain": "State the result after completing the calculation.",
-              "work": "2"
+              "explain": "Therefore the equivalent statement is \\(b=c^a\\).",
+              "work": "\\boxed{b=c^a}"
             }
           ],
           "keyPoints": [
             {
-              "text": "a = log_c b",
-              "note": "Convert between logarithmic and exponential form."
+              "text": "\\(a=\\log_c b\\)",
+              "note": "Convert from logarithmic form to exponential form: base^exponent = value."
             }
           ],
           "timeLimit": 60,
