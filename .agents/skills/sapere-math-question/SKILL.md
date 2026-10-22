@@ -523,3 +523,80 @@ single-part question). Before finishing any batch that creates composite
 questions, check every doc for this exact condition (non-empty top-level
 `solutionSteps` AND every `subQuestions[]` entry also has its own non-empty
 `solutionSteps`) and clear the top-level one wherever both are true.
+
+---
+
+## 14. Standing Past-Paper Import QA Checklist — Apply Before Every New Batch
+
+The following checks are persistent user requirements. Apply them to every
+new question batch and every later repair; do not wait for the user to find
+the defects in the student UI.
+
+### Preserve source content and question identity
+- Keep the original question wording and mathematical data. Do not paraphrase,
+  silently omit sub-parts, or merge separate source questions unless the source
+  itself makes them one dependent multipart question.
+- Keep each source question/sub-part identifiable with a stable, searchable ID.
+  Check the final ID list against the source paper so no question is missing,
+  duplicated, or accidentally joined to its neighbour.
+- Use multiple choice whenever the task has one objectively gradable answer.
+  Keep proof, open construction, and genuine sketching tasks in review format
+  when converting them would change what the source asks.
+
+### Write complete student-facing support
+- Every question needs a specific, useful hint that points to the right idea or
+  first action without giving away the answer. Never leave `hint` empty or copy
+  one generic hint across unrelated questions.
+- Give every step a reason and explicit mathematical working. Do not skip
+  substitutions, rearrangements, cancellations, rounding, units, or the
+  operation that changes an inequality direction. A step must add progress;
+  do not repeat the same unchanged diagram or merely restate a result.
+- For geometry/trigonometry, name the exact sides and angles used, show which
+  side is opposite which angle, and mark those same elements in that step's
+  diagram. Each solution diagram must highlight the feature being used in that
+  step, then progress toward the completed reasoning.
+- Match each question to the correct year and topic profile. Set timer and XP
+  from the user's instruction; when specified, apply them consistently to
+  every item in the batch (e.g. 60 seconds and 1 XP).
+
+### LaTeX and answer correctness
+- Wrap every mathematical expression in `stem`, each `options[]` string, and
+  every mathematical line in `steps[].work` in `\(...\)`. Use `\frac{a}{b}`
+  for fractions, `\sqrt{...}` for roots, `\sin`/`\cos` etc. for functions,
+  and `^\circ` for degree symbols. Do not leave slash fractions such as
+  `a/b`, raw trig equations, or bare LaTeX commands that render as prose.
+- Wrap each separate math line individually, including multiline working.
+  Check radicals and nested fractions for balanced braces and delimiters.
+- Recalculate the answer independently. Confirm exactly one correct option,
+  that `answer` points to it, and that every distractor is distinct and reflects
+  a plausible error. Avoid duplicate choices (including algebraically
+  equivalent expressions), unsimplified arithmetic, and mismatched units.
+- Preview the rendered question and solution, not only the JSON source. Confirm
+  math typesets, line breaks remain readable, and no part labels such as `(i)`
+  leak into newly split standalone questions when the source labels should be
+  removed from the wording.
+
+### Diagram and graph visual QA
+- Draw diagrams at a consistent, moderate size; use thin, legible strokes.
+  Check visual scale against the project's accepted reference examples before
+  finalizing oversized figures.
+- Place every label clear of edges, vertices, angle arcs, and other labels.
+  For each angle, verify the arc joins the two rays and lies in the intended
+  angle region; choose the SVG arc sweep/large-arc flags deliberately. Inspect
+  acute, obtuse, reflex, and exterior angles separately rather than assuming
+  one arc command works for all.
+- For graphs, check the curve shape and end behaviour against the function
+  (e.g. a cubic must remain a smooth cubic, not turn sharply at its endpoints),
+  axis orientation, plotted points, and choice-graph uniqueness. Tables and
+  plots must fit fully inside their viewBox without clipping.
+- Review all step figures as well as the question figure; copied SVGs can
+  preserve a defect across every step. Make each changed diagram visually
+  distinct only where it communicates the next reasoning step.
+
+### Final batch gate
+- Search every newly added ID and scan all of its math-bearing fields for
+  missing or unbalanced delimiters; inspect nested multipart parts too.
+- Run `npm run content:validate`, review the targeted `git diff`, and open or
+  render representative items in the student-facing UI to catch layout issues
+  the schema validator cannot see.
+- Only then commit and push the canonical `content/chapters/*.json` changes.
