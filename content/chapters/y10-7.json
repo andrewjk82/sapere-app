@@ -3966,118 +3966,147 @@
           }
         },
         {
-          "id": "abb-y10-2025-t4-e2-q4a",
-          "type": "review",
+          "id": "abb-y10-2025-t4-e2-q4",
+          "type": "multipart",
           "difficulty": "medium",
-          "stem": "The height of a drone above the ground is given by the formula h = 8t − 2t². (a) Sketch the parabola that shows the flight path of the drone.",
-          "answer": "Sample answer is shown in the final solution step.",
-          "hint": "Find the zeros and vertex. The negative leading coefficient means the parabola opens downward.",
-          "steps": [
-            {
-              "explain": "Factor to find when the drone is at ground level.",
-              "work": "h=−2t(t−4); zeros t=0,4"
-            },
-            {
-              "explain": "Find the vertex halfway between the zeros and evaluate h.",
-              "work": "t=2; h(2)=16−8=8"
-            },
-            {
-              "explain": "Sketch a downward parabola through (0,0),(4,0) with vertex (2,8).",
-              "work": "Completed flight-path sketch.",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M45 25V185M100 25V185M155 25V185M210 25V185M265 25V185M320 25V185M40 25H330M40 55H330M40 85H330M40 115H330M40 145H330M40 175H330\"/></g><g stroke=\"#334155\" stroke-width=\"1.5\"><path d=\"M40 175H330M45 190V20\"/></g><path d=\"M45 175 Q182 20 318 175\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2.1\"/><circle cx=\"182\" cy=\"55\" r=\"3\" fill=\"#ef4444\"/><text x=\"187\" y=\"50\" font-size=\"10\">(2,8)</text><text x=\"310\" y=\"190\" font-size=\"9\">t</text><text x=\"29\" y=\"24\" font-size=\"9\">h</text></svg>"
-              }
-            }
-          ],
-          "keyPoints": [
-            {
-              "text": "The height of a drone above the ground is ",
-              "note": "Find the zeros and vertex. The negative leading coefficient means the parabola opens downward."
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "manual": true,
-          "meta": {
-            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
-            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
-          },
+          "stem": "The height of a drone above the ground is given by the formula \\(h=8t-2t^2\\).",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#dbe3ed\" stroke-width=\"1\"><path d=\"M45 25V185M100 25V185M155 25V185M210 25V185M265 25V185M320 25V185M40 25H330M40 55H330M40 85H330M40 115H330M40 145H330M40 175H330\"/></g><g stroke=\"#334155\" stroke-width=\"1.4\"><path d=\"M40 175H330M45 190V20\"/></g><text x=\"321\" y=\"190\" font-size=\"9\">t (minutes)</text><text x=\"28\" y=\"25\" font-size=\"9\">h (m)</text></svg>"
-          }
-        },
-        {
-          "id": "abb-y10-2025-t4-e2-q4b",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "The height of a drone above the ground is given by the formula h = 8t − 2t². (b) What is the maximum height of the drone?",
-          "options": [
-            "8 m",
-            "4 m",
-            "16 m",
-            "2 m"
-          ],
-          "answer": 0,
-          "hint": "The vertex is halfway between the two ground-level times.",
-          "steps": [
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"520\" height=\"330\" viewBox=\"0 0 520 330\" style=\"font-family:Arial,sans-serif\"><rect width=\"520\" height=\"330\" fill=\"white\"/><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M70 270V46\"/><path d=\"M115 270V46\"/><path d=\"M160 270V46\"/><path d=\"M205 270V46\"/><path d=\"M250 270V46\"/><path d=\"M295 270V46\"/><path d=\"M340 270V46\"/><path d=\"M385 270V46\"/><path d=\"M430 270V46\"/><path d=\"M70 270H430\"/><path d=\"M70 242H430\"/><path d=\"M70 214H430\"/><path d=\"M70 186H430\"/><path d=\"M70 158H430\"/><path d=\"M70 130H430\"/><path d=\"M70 102H430\"/><path d=\"M70 74H430\"/><path d=\"M70 46H430\"/></g><g stroke=\"#475569\" stroke-width=\"1.7\"><path d=\"M70 270H438\"/><path d=\"M70 54V272\"/></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"middle\"><text x=\"70\" y=\"286\">0</text><text x=\"160\" y=\"286\">1</text><text x=\"250\" y=\"286\">2</text><text x=\"340\" y=\"286\">3</text><text x=\"430\" y=\"286\">4</text></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"end\"><text x=\"62\" y=\"273\">0</text><text x=\"62\" y=\"245\">1</text><text x=\"62\" y=\"217\">2</text><text x=\"62\" y=\"189\">3</text><text x=\"62\" y=\"161\">4</text><text x=\"62\" y=\"133\">5</text><text x=\"62\" y=\"105\">6</text><text x=\"62\" y=\"77\">7</text><text x=\"62\" y=\"49\">8</text></g><text x=\"447\" y=\"274\" font-size=\"12\" fill=\"#334155\">t (minutes)</text><text x=\"62\" y=\"18\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\">h (m)</text></svg>"
+          },
+          "parts": [
             {
-              "explain": "The zeros are t=0 and t=4, so the symmetry time is 2.",
-              "work": "t_vertex=(0+4)/2=2"
+              "id": "abb-y10-2025-t4-e2-q4a",
+              "type": "review",
+              "difficulty": "medium",
+              "stem": "Sketch the parabola that shows the flight path of the drone.",
+              "manual": true,
+              "hint": "Set the height to zero to find when the drone is on the ground. The two ground times are symmetric about the vertex; use that midpoint to find the maximum height.",
+              "steps": [
+                {
+                  "explain": "The drone is on the ground when its height is zero. Factor the height formula, then set each factor equal to zero to find the two time-axis intercepts.",
+                  "work": "\\(h=8t-2t^2=-2t(t-4)\\)\\n\\(h=0\\Rightarrow -2t(t-4)=0\\)\\n\\(t=0\\text{ or }t=4\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"520\" height=\"330\" viewBox=\"0 0 520 330\" style=\"font-family:Arial,sans-serif\"><rect width=\"520\" height=\"330\" fill=\"white\"/><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M70 270V46\"/><path d=\"M115 270V46\"/><path d=\"M160 270V46\"/><path d=\"M205 270V46\"/><path d=\"M250 270V46\"/><path d=\"M295 270V46\"/><path d=\"M340 270V46\"/><path d=\"M385 270V46\"/><path d=\"M430 270V46\"/><path d=\"M70 270H430\"/><path d=\"M70 242H430\"/><path d=\"M70 214H430\"/><path d=\"M70 186H430\"/><path d=\"M70 158H430\"/><path d=\"M70 130H430\"/><path d=\"M70 102H430\"/><path d=\"M70 74H430\"/><path d=\"M70 46H430\"/></g><g stroke=\"#475569\" stroke-width=\"1.7\"><path d=\"M70 270H438\"/><path d=\"M70 54V272\"/></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"middle\"><text x=\"70\" y=\"286\">0</text><text x=\"160\" y=\"286\">1</text><text x=\"250\" y=\"286\">2</text><text x=\"340\" y=\"286\">3</text><text x=\"430\" y=\"286\">4</text></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"end\"><text x=\"62\" y=\"273\">0</text><text x=\"62\" y=\"245\">1</text><text x=\"62\" y=\"217\">2</text><text x=\"62\" y=\"189\">3</text><text x=\"62\" y=\"161\">4</text><text x=\"62\" y=\"133\">5</text><text x=\"62\" y=\"105\">6</text><text x=\"62\" y=\"77\">7</text><text x=\"62\" y=\"49\">8</text></g><text x=\"447\" y=\"274\" font-size=\"12\" fill=\"#334155\">t (minutes)</text><text x=\"62\" y=\"18\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\">h (m)</text><circle cx=\"70\" cy=\"270\" r=\"5\" fill=\"#f97316\" stroke=\"white\" stroke-width=\"1.5\"/><circle cx=\"430\" cy=\"270\" r=\"5\" fill=\"#f97316\" stroke=\"white\" stroke-width=\"1.5\"/><text x=\"78\" y=\"262\" font-size=\"11\" fill=\"#c2410c\">(0,0)</text><text x=\"423\" y=\"262\" text-anchor=\"end\" font-size=\"11\" fill=\"#c2410c\">(4,0)</text></svg>"
+                  }
+                },
+                {
+                  "explain": "A parabola is symmetric. The vertex lies halfway between the two intercept times. Substitute that time into the given height formula to find the vertex height.",
+                  "work": "\\(t_{\\mathrm{vertex}}=\\frac{0+4}{2}=2\\)\\n\\(h(2)=8(2)-2(2)^2=16-8=8\\)\\n\\(\\text{vertex}=(2,8)\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"520\" height=\"330\" viewBox=\"0 0 520 330\" style=\"font-family:Arial,sans-serif\"><rect width=\"520\" height=\"330\" fill=\"white\"/><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M70 270V46\"/><path d=\"M115 270V46\"/><path d=\"M160 270V46\"/><path d=\"M205 270V46\"/><path d=\"M250 270V46\"/><path d=\"M295 270V46\"/><path d=\"M340 270V46\"/><path d=\"M385 270V46\"/><path d=\"M430 270V46\"/><path d=\"M70 270H430\"/><path d=\"M70 242H430\"/><path d=\"M70 214H430\"/><path d=\"M70 186H430\"/><path d=\"M70 158H430\"/><path d=\"M70 130H430\"/><path d=\"M70 102H430\"/><path d=\"M70 74H430\"/><path d=\"M70 46H430\"/></g><g stroke=\"#475569\" stroke-width=\"1.7\"><path d=\"M70 270H438\"/><path d=\"M70 54V272\"/></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"middle\"><text x=\"70\" y=\"286\">0</text><text x=\"160\" y=\"286\">1</text><text x=\"250\" y=\"286\">2</text><text x=\"340\" y=\"286\">3</text><text x=\"430\" y=\"286\">4</text></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"end\"><text x=\"62\" y=\"273\">0</text><text x=\"62\" y=\"245\">1</text><text x=\"62\" y=\"217\">2</text><text x=\"62\" y=\"189\">3</text><text x=\"62\" y=\"161\">4</text><text x=\"62\" y=\"133\">5</text><text x=\"62\" y=\"105\">6</text><text x=\"62\" y=\"77\">7</text><text x=\"62\" y=\"49\">8</text></g><text x=\"447\" y=\"274\" font-size=\"12\" fill=\"#334155\">t (minutes)</text><text x=\"62\" y=\"18\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\">h (m)</text><path d=\"M70 270 C130 120.20000000000002 190 46 250 46 C310 46 370 120.20000000000002 430 270\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M250 270V46\" stroke=\"#8b5cf6\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><text x=\"257\" y=\"262\" font-size=\"11\" fill=\"#6d28d9\">axis: t = 2</text><circle cx=\"70\" cy=\"270\" r=\"5\" fill=\"#f97316\" stroke=\"white\" stroke-width=\"1.5\"/><circle cx=\"430\" cy=\"270\" r=\"5\" fill=\"#f97316\" stroke=\"white\" stroke-width=\"1.5\"/><text x=\"78\" y=\"262\" font-size=\"11\" fill=\"#c2410c\">(0,0)</text><text x=\"423\" y=\"262\" text-anchor=\"end\" font-size=\"11\" fill=\"#c2410c\">(4,0)</text><circle cx=\"250\" cy=\"46\" r=\"5.5\" fill=\"#f97316\" stroke=\"white\" stroke-width=\"1.5\"/><text x=\"259\" y=\"38\" font-size=\"11\" font-weight=\"700\" fill=\"#c2410c\">maximum (2,8)</text></svg>"
+                  }
+                },
+                {
+                  "explain": "The coefficient of \\(t^2\\) is negative, so the parabola opens downward. Draw a smooth curve through both ground intercepts and the maximum point, symmetric about \\(t=2\\).",
+                  "work": "\\(\\text{ground intercepts: }(0,0),(4,0)\\)\\n\\(\\text{maximum point: }(2,8)\\)\\n\\(\\text{axis of symmetry: }t=2\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"520\" height=\"330\" viewBox=\"0 0 520 330\" style=\"font-family:Arial,sans-serif\"><rect width=\"520\" height=\"330\" fill=\"white\"/><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M70 270V46\"/><path d=\"M115 270V46\"/><path d=\"M160 270V46\"/><path d=\"M205 270V46\"/><path d=\"M250 270V46\"/><path d=\"M295 270V46\"/><path d=\"M340 270V46\"/><path d=\"M385 270V46\"/><path d=\"M430 270V46\"/><path d=\"M70 270H430\"/><path d=\"M70 242H430\"/><path d=\"M70 214H430\"/><path d=\"M70 186H430\"/><path d=\"M70 158H430\"/><path d=\"M70 130H430\"/><path d=\"M70 102H430\"/><path d=\"M70 74H430\"/><path d=\"M70 46H430\"/></g><g stroke=\"#475569\" stroke-width=\"1.7\"><path d=\"M70 270H438\"/><path d=\"M70 54V272\"/></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"middle\"><text x=\"70\" y=\"286\">0</text><text x=\"160\" y=\"286\">1</text><text x=\"250\" y=\"286\">2</text><text x=\"340\" y=\"286\">3</text><text x=\"430\" y=\"286\">4</text></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"end\"><text x=\"62\" y=\"273\">0</text><text x=\"62\" y=\"245\">1</text><text x=\"62\" y=\"217\">2</text><text x=\"62\" y=\"189\">3</text><text x=\"62\" y=\"161\">4</text><text x=\"62\" y=\"133\">5</text><text x=\"62\" y=\"105\">6</text><text x=\"62\" y=\"77\">7</text><text x=\"62\" y=\"49\">8</text></g><text x=\"447\" y=\"274\" font-size=\"12\" fill=\"#334155\">t (minutes)</text><text x=\"62\" y=\"18\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\">h (m)</text><path d=\"M70 270 C130 120.20000000000002 190 46 250 46 C310 46 370 120.20000000000002 430 270\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M250 270V46\" stroke=\"#8b5cf6\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><text x=\"257\" y=\"262\" font-size=\"11\" fill=\"#6d28d9\">axis: t = 2</text><circle cx=\"70\" cy=\"270\" r=\"5\" fill=\"#f97316\" stroke=\"white\" stroke-width=\"1.5\"/><circle cx=\"430\" cy=\"270\" r=\"5\" fill=\"#f97316\" stroke=\"white\" stroke-width=\"1.5\"/><text x=\"78\" y=\"262\" font-size=\"11\" fill=\"#c2410c\">(0,0)</text><text x=\"423\" y=\"262\" text-anchor=\"end\" font-size=\"11\" fill=\"#c2410c\">(4,0)</text><circle cx=\"250\" cy=\"46\" r=\"5.5\" fill=\"#f97316\" stroke=\"white\" stroke-width=\"1.5\"/><text x=\"259\" y=\"38\" font-size=\"11\" font-weight=\"700\" fill=\"#c2410c\">maximum (2,8)</text></svg>"
+                  }
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "Sketch the parabola that shows the flight path of the drone.",
+                  "note": "Mark the ground intercepts and the vertex, then draw a smooth downward-opening parabola symmetric about the vertex time."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "answer": "Sample answer is shown in the final solution step."
             },
             {
-              "explain": "Evaluate the height at t=2.",
-              "work": "h(2)=8(2)−2(2²)=16−8=8"
+              "id": "abb-y10-2025-t4-e2-q4b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What is the maximum height of the drone?",
+              "options": [
+                "\\(8\\text{ m}\\)",
+                "\\(4\\text{ m}\\)",
+                "\\(16\\text{ m}\\)",
+                "\\(2\\text{ m}\\)"
+              ],
+              "answer": 0,
+              "hint": "The quadratic opens downward, so its vertex gives the maximum. Find the vertex time, then substitute it into the height formula.",
+              "steps": [
+                {
+                  "explain": "Write the formula in standard quadratic form \\(h=at^2+bt+c\\). Here \\(a=-2\\) and \\(b=8\\); because \\(a<0\\), the vertex is the maximum.",
+                  "work": "\\(h=-2t^2+8t\\)\\n\\(a=-2,\\quad b=8\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"520\" height=\"330\" viewBox=\"0 0 520 330\" style=\"font-family:Arial,sans-serif\"><rect width=\"520\" height=\"330\" fill=\"white\"/><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M70 270V46\"/><path d=\"M115 270V46\"/><path d=\"M160 270V46\"/><path d=\"M205 270V46\"/><path d=\"M250 270V46\"/><path d=\"M295 270V46\"/><path d=\"M340 270V46\"/><path d=\"M385 270V46\"/><path d=\"M430 270V46\"/><path d=\"M70 270H430\"/><path d=\"M70 242H430\"/><path d=\"M70 214H430\"/><path d=\"M70 186H430\"/><path d=\"M70 158H430\"/><path d=\"M70 130H430\"/><path d=\"M70 102H430\"/><path d=\"M70 74H430\"/><path d=\"M70 46H430\"/></g><g stroke=\"#475569\" stroke-width=\"1.7\"><path d=\"M70 270H438\"/><path d=\"M70 54V272\"/></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"middle\"><text x=\"70\" y=\"286\">0</text><text x=\"160\" y=\"286\">1</text><text x=\"250\" y=\"286\">2</text><text x=\"340\" y=\"286\">3</text><text x=\"430\" y=\"286\">4</text></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"end\"><text x=\"62\" y=\"273\">0</text><text x=\"62\" y=\"245\">1</text><text x=\"62\" y=\"217\">2</text><text x=\"62\" y=\"189\">3</text><text x=\"62\" y=\"161\">4</text><text x=\"62\" y=\"133\">5</text><text x=\"62\" y=\"105\">6</text><text x=\"62\" y=\"77\">7</text><text x=\"62\" y=\"49\">8</text></g><text x=\"447\" y=\"274\" font-size=\"12\" fill=\"#334155\">t (minutes)</text><text x=\"62\" y=\"18\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\">h (m)</text><path d=\"M70 270 C130 120.20000000000002 190 46 250 46 C310 46 370 120.20000000000002 430 270\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"2.8\" stroke-linecap=\"round\"/></svg>"
+                  }
+                },
+                {
+                  "explain": "Use the vertex formula to find the time coordinate of the maximum. The highlighted vertical line marks this symmetry time on the graph.",
+                  "work": "\\(t_{\\mathrm{vertex}}=-\\frac{b}{2a}\\)\\n\\(=-\\frac{8}{2(-2)}=2\\text{ minutes}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"520\" height=\"330\" viewBox=\"0 0 520 330\" style=\"font-family:Arial,sans-serif\"><rect width=\"520\" height=\"330\" fill=\"white\"/><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M70 270V46\"/><path d=\"M115 270V46\"/><path d=\"M160 270V46\"/><path d=\"M205 270V46\"/><path d=\"M250 270V46\"/><path d=\"M295 270V46\"/><path d=\"M340 270V46\"/><path d=\"M385 270V46\"/><path d=\"M430 270V46\"/><path d=\"M70 270H430\"/><path d=\"M70 242H430\"/><path d=\"M70 214H430\"/><path d=\"M70 186H430\"/><path d=\"M70 158H430\"/><path d=\"M70 130H430\"/><path d=\"M70 102H430\"/><path d=\"M70 74H430\"/><path d=\"M70 46H430\"/></g><g stroke=\"#475569\" stroke-width=\"1.7\"><path d=\"M70 270H438\"/><path d=\"M70 54V272\"/></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"middle\"><text x=\"70\" y=\"286\">0</text><text x=\"160\" y=\"286\">1</text><text x=\"250\" y=\"286\">2</text><text x=\"340\" y=\"286\">3</text><text x=\"430\" y=\"286\">4</text></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"end\"><text x=\"62\" y=\"273\">0</text><text x=\"62\" y=\"245\">1</text><text x=\"62\" y=\"217\">2</text><text x=\"62\" y=\"189\">3</text><text x=\"62\" y=\"161\">4</text><text x=\"62\" y=\"133\">5</text><text x=\"62\" y=\"105\">6</text><text x=\"62\" y=\"77\">7</text><text x=\"62\" y=\"49\">8</text></g><text x=\"447\" y=\"274\" font-size=\"12\" fill=\"#334155\">t (minutes)</text><text x=\"62\" y=\"18\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\">h (m)</text><path d=\"M70 270 C130 120.20000000000002 190 46 250 46 C310 46 370 120.20000000000002 430 270\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M250 270V46\" stroke=\"#8b5cf6\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><text x=\"257\" y=\"262\" font-size=\"11\" fill=\"#6d28d9\">axis: t = 2</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Substitute \\(t=2\\) into the height formula. The highlighted vertex gives the maximum height, with units in metres.",
+                  "work": "\\(h(2)=8(2)-2(2)^2\\)\\n\\(=16-8=8\\)\\n\\(\\boxed{h_{\\max}=8\\text{ m}}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"520\" height=\"330\" viewBox=\"0 0 520 330\" style=\"font-family:Arial,sans-serif\"><rect width=\"520\" height=\"330\" fill=\"white\"/><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M70 270V46\"/><path d=\"M115 270V46\"/><path d=\"M160 270V46\"/><path d=\"M205 270V46\"/><path d=\"M250 270V46\"/><path d=\"M295 270V46\"/><path d=\"M340 270V46\"/><path d=\"M385 270V46\"/><path d=\"M430 270V46\"/><path d=\"M70 270H430\"/><path d=\"M70 242H430\"/><path d=\"M70 214H430\"/><path d=\"M70 186H430\"/><path d=\"M70 158H430\"/><path d=\"M70 130H430\"/><path d=\"M70 102H430\"/><path d=\"M70 74H430\"/><path d=\"M70 46H430\"/></g><g stroke=\"#475569\" stroke-width=\"1.7\"><path d=\"M70 270H438\"/><path d=\"M70 54V272\"/></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"middle\"><text x=\"70\" y=\"286\">0</text><text x=\"160\" y=\"286\">1</text><text x=\"250\" y=\"286\">2</text><text x=\"340\" y=\"286\">3</text><text x=\"430\" y=\"286\">4</text></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"end\"><text x=\"62\" y=\"273\">0</text><text x=\"62\" y=\"245\">1</text><text x=\"62\" y=\"217\">2</text><text x=\"62\" y=\"189\">3</text><text x=\"62\" y=\"161\">4</text><text x=\"62\" y=\"133\">5</text><text x=\"62\" y=\"105\">6</text><text x=\"62\" y=\"77\">7</text><text x=\"62\" y=\"49\">8</text></g><text x=\"447\" y=\"274\" font-size=\"12\" fill=\"#334155\">t (minutes)</text><text x=\"62\" y=\"18\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\">h (m)</text><path d=\"M70 270 C130 120.20000000000002 190 46 250 46 C310 46 370 120.20000000000002 430 270\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M250 270V46\" stroke=\"#8b5cf6\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><text x=\"257\" y=\"262\" font-size=\"11\" fill=\"#6d28d9\">axis: t = 2</text><circle cx=\"70\" cy=\"270\" r=\"5\" fill=\"#f97316\" stroke=\"white\" stroke-width=\"1.5\"/><circle cx=\"430\" cy=\"270\" r=\"5\" fill=\"#f97316\" stroke=\"white\" stroke-width=\"1.5\"/><text x=\"78\" y=\"262\" font-size=\"11\" fill=\"#c2410c\">(0,0)</text><text x=\"423\" y=\"262\" text-anchor=\"end\" font-size=\"11\" fill=\"#c2410c\">(4,0)</text><circle cx=\"250\" cy=\"46\" r=\"5.5\" fill=\"#f97316\" stroke=\"white\" stroke-width=\"1.5\"/><text x=\"259\" y=\"38\" font-size=\"11\" font-weight=\"700\" fill=\"#c2410c\">maximum (2,8)</text></svg>"
+                  }
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "maximum height of the drone",
+                  "note": "For a downward-opening quadratic, calculate the height at the vertex."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
             },
             {
-              "explain": "State the maximum height.",
-              "work": "8 m"
-            }
-          ],
-          "keyPoints": [
-            {
-              "text": "maximum height",
-              "note": "Evaluate the height at the vertex."
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
-            "school": "Abbotsleigh",
-            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
-          }
-        },
-        {
-          "id": "abb-y10-2025-t4-e2-q4c",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "The height of a drone above the ground is given by the formula h = 8t − 2t². (c) At what time(s) is the drone at a height of 6 m?",
-          "options": [
-            "1 minute and 3 minutes",
-            "1 minute only",
-            "3 minutes only",
-            "2 minutes and 4 minutes"
-          ],
-          "answer": 0,
-          "hint": "Set h equal to 6 and solve the resulting quadratic.",
-          "steps": [
-            {
-              "explain": "Set the height to 6.",
-              "work": "6=8t−2t²"
-            },
-            {
-              "explain": "Rearrange and factor.",
-              "work": "2t²−8t+6=0\nt²−4t+3=0\n(t−1)(t−3)=0"
-            },
-            {
-              "explain": "Both positive times satisfy the situation.",
-              "work": "t=1 or 3 minutes"
-            }
-          ],
-          "keyPoints": [
-            {
-              "text": "height of 6 m",
-              "note": "Set h=6 and solve for t."
+              "id": "abb-y10-2025-t4-e2-q4c",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "At what time(s) is the drone at a height of \\(6\\text{ m}\\)?",
+              "options": [
+                "\\(1\\text{ minute and }3\\text{ minutes}\\)",
+                "\\(1\\text{ minute only}\\)",
+                "\\(3\\text{ minutes only}\\)",
+                "\\(2\\text{ minutes and }4\\text{ minutes}\\)"
+              ],
+              "answer": 0,
+              "hint": "Set \\(h=6\\), rearrange to a quadratic equal to zero, and factor. The two times appear where the horizontal line \\(h=6\\) meets the parabola.",
+              "steps": [
+                {
+                  "explain": "A height of \\(6\\text{ m}\\) means set \\(h=6\\). The dashed horizontal line shows this height; its intersections with the flight path are the required times.",
+                  "work": "\\(6=8t-2t^2\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"520\" height=\"330\" viewBox=\"0 0 520 330\" style=\"font-family:Arial,sans-serif\"><rect width=\"520\" height=\"330\" fill=\"white\"/><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M70 270V46\"/><path d=\"M115 270V46\"/><path d=\"M160 270V46\"/><path d=\"M205 270V46\"/><path d=\"M250 270V46\"/><path d=\"M295 270V46\"/><path d=\"M340 270V46\"/><path d=\"M385 270V46\"/><path d=\"M430 270V46\"/><path d=\"M70 270H430\"/><path d=\"M70 242H430\"/><path d=\"M70 214H430\"/><path d=\"M70 186H430\"/><path d=\"M70 158H430\"/><path d=\"M70 130H430\"/><path d=\"M70 102H430\"/><path d=\"M70 74H430\"/><path d=\"M70 46H430\"/></g><g stroke=\"#475569\" stroke-width=\"1.7\"><path d=\"M70 270H438\"/><path d=\"M70 54V272\"/></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"middle\"><text x=\"70\" y=\"286\">0</text><text x=\"160\" y=\"286\">1</text><text x=\"250\" y=\"286\">2</text><text x=\"340\" y=\"286\">3</text><text x=\"430\" y=\"286\">4</text></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"end\"><text x=\"62\" y=\"273\">0</text><text x=\"62\" y=\"245\">1</text><text x=\"62\" y=\"217\">2</text><text x=\"62\" y=\"189\">3</text><text x=\"62\" y=\"161\">4</text><text x=\"62\" y=\"133\">5</text><text x=\"62\" y=\"105\">6</text><text x=\"62\" y=\"77\">7</text><text x=\"62\" y=\"49\">8</text></g><text x=\"447\" y=\"274\" font-size=\"12\" fill=\"#334155\">t (minutes)</text><text x=\"62\" y=\"18\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\">h (m)</text><path d=\"M70 102H430\" stroke=\"#f97316\" stroke-width=\"2.5\" stroke-dasharray=\"7 4\"/><text x=\"78\" y=\"95\" font-size=\"11\" font-weight=\"700\" fill=\"#c2410c\">h = 6 m</text><path d=\"M70 270 C130 120.20000000000002 190 46 250 46 C310 46 370 120.20000000000002 430 270\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"2.8\" stroke-linecap=\"round\"/></svg>"
+                  }
+                },
+                {
+                  "explain": "Move every term to one side, then divide by \\(2\\) to make the quadratic easier to factor.",
+                  "work": "\\(2t^2-8t+6=0\\)\\n\\(t^2-4t+3=0\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"520\" height=\"330\" viewBox=\"0 0 520 330\" style=\"font-family:Arial,sans-serif\"><rect width=\"520\" height=\"330\" fill=\"white\"/><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M70 270V46\"/><path d=\"M115 270V46\"/><path d=\"M160 270V46\"/><path d=\"M205 270V46\"/><path d=\"M250 270V46\"/><path d=\"M295 270V46\"/><path d=\"M340 270V46\"/><path d=\"M385 270V46\"/><path d=\"M430 270V46\"/><path d=\"M70 270H430\"/><path d=\"M70 242H430\"/><path d=\"M70 214H430\"/><path d=\"M70 186H430\"/><path d=\"M70 158H430\"/><path d=\"M70 130H430\"/><path d=\"M70 102H430\"/><path d=\"M70 74H430\"/><path d=\"M70 46H430\"/></g><g stroke=\"#475569\" stroke-width=\"1.7\"><path d=\"M70 270H438\"/><path d=\"M70 54V272\"/></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"middle\"><text x=\"70\" y=\"286\">0</text><text x=\"160\" y=\"286\">1</text><text x=\"250\" y=\"286\">2</text><text x=\"340\" y=\"286\">3</text><text x=\"430\" y=\"286\">4</text></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"end\"><text x=\"62\" y=\"273\">0</text><text x=\"62\" y=\"245\">1</text><text x=\"62\" y=\"217\">2</text><text x=\"62\" y=\"189\">3</text><text x=\"62\" y=\"161\">4</text><text x=\"62\" y=\"133\">5</text><text x=\"62\" y=\"105\">6</text><text x=\"62\" y=\"77\">7</text><text x=\"62\" y=\"49\">8</text></g><text x=\"447\" y=\"274\" font-size=\"12\" fill=\"#334155\">t (minutes)</text><text x=\"62\" y=\"18\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\">h (m)</text><path d=\"M70 102H430\" stroke=\"#f97316\" stroke-width=\"2.5\" stroke-dasharray=\"7 4\"/><text x=\"78\" y=\"95\" font-size=\"11\" font-weight=\"700\" fill=\"#c2410c\">h = 6 m</text><path d=\"M70 270 C130 120.20000000000002 190 46 250 46 C310 46 370 120.20000000000002 430 270\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M250 270V46\" stroke=\"#8b5cf6\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><text x=\"257\" y=\"262\" font-size=\"11\" fill=\"#6d28d9\">axis: t = 2</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Factor the quadratic and use the zero-product rule. These roots match the two highlighted intersections at height \\(6\\text{ m}\\).",
+                  "work": "\\((t-1)(t-3)=0\\)\\n\\(t-1=0\\quad\\text{or}\\quad t-3=0\\)\\n\\(t=1\\quad\\text{or}\\quad t=3\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"520\" height=\"330\" viewBox=\"0 0 520 330\" style=\"font-family:Arial,sans-serif\"><rect width=\"520\" height=\"330\" fill=\"white\"/><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M70 270V46\"/><path d=\"M115 270V46\"/><path d=\"M160 270V46\"/><path d=\"M205 270V46\"/><path d=\"M250 270V46\"/><path d=\"M295 270V46\"/><path d=\"M340 270V46\"/><path d=\"M385 270V46\"/><path d=\"M430 270V46\"/><path d=\"M70 270H430\"/><path d=\"M70 242H430\"/><path d=\"M70 214H430\"/><path d=\"M70 186H430\"/><path d=\"M70 158H430\"/><path d=\"M70 130H430\"/><path d=\"M70 102H430\"/><path d=\"M70 74H430\"/><path d=\"M70 46H430\"/></g><g stroke=\"#475569\" stroke-width=\"1.7\"><path d=\"M70 270H438\"/><path d=\"M70 54V272\"/></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"middle\"><text x=\"70\" y=\"286\">0</text><text x=\"160\" y=\"286\">1</text><text x=\"250\" y=\"286\">2</text><text x=\"340\" y=\"286\">3</text><text x=\"430\" y=\"286\">4</text></g><g fill=\"#475569\" font-size=\"10\" text-anchor=\"end\"><text x=\"62\" y=\"273\">0</text><text x=\"62\" y=\"245\">1</text><text x=\"62\" y=\"217\">2</text><text x=\"62\" y=\"189\">3</text><text x=\"62\" y=\"161\">4</text><text x=\"62\" y=\"133\">5</text><text x=\"62\" y=\"105\">6</text><text x=\"62\" y=\"77\">7</text><text x=\"62\" y=\"49\">8</text></g><text x=\"447\" y=\"274\" font-size=\"12\" fill=\"#334155\">t (minutes)</text><text x=\"62\" y=\"18\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\">h (m)</text><path d=\"M70 102H430\" stroke=\"#f97316\" stroke-width=\"2.5\" stroke-dasharray=\"7 4\"/><text x=\"78\" y=\"95\" font-size=\"11\" font-weight=\"700\" fill=\"#c2410c\">h = 6 m</text><path d=\"M70 270 C130 120.20000000000002 190 46 250 46 C310 46 370 120.20000000000002 430 270\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M250 270V46\" stroke=\"#8b5cf6\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><text x=\"257\" y=\"262\" font-size=\"11\" fill=\"#6d28d9\">axis: t = 2</text><circle cx=\"160\" cy=\"102\" r=\"5\" fill=\"#c2410c\" stroke=\"white\" stroke-width=\"1.5\"/><circle cx=\"340\" cy=\"102\" r=\"5\" fill=\"#c2410c\" stroke=\"white\" stroke-width=\"1.5\"/><text x=\"156\" y=\"92\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#c2410c\">(1,6)</text><text x=\"345\" y=\"92\" font-size=\"11\" font-weight=\"700\" fill=\"#c2410c\">(3,6)</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Both times are positive and occur during the drone’s flight, so keep both solutions.",
+                  "work": "\\(\\boxed{t=1\\text{ minute and }t=3\\text{ minutes}}\\)"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "time(s) at a height of 6 m",
+                  "note": "Solve \\(8t-2t^2=6\\); the two roots are both valid flight times."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
             }
           ],
           "timeLimit": 60,
