@@ -112,6 +112,100 @@
               "note": "Relate x and θ with tan θ = 10/x, then use the chain rule."
             }
           ]
+        },
+        {
+          "id": "bbhs2020e1-q14c",
+          "type": "multipart",
+          "stem": "An open flat topped water trough in the shape of a triangular prism is being emptied through a hole in its base at a constant rate of 18000 cm³ per second. Its top measures 1.5 metres by 4 metres and its triangular end has a vertical height of 25 centimetres. When the water depth is \\(h\\) centimetres the water surface measures \\(x\\) centimetres by 4 metres.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 225\" width=\"300\" height=\"225\"><rect width=\"300\" height=\"225\" rx=\"8\" fill=\"white\"/><path d=\"M50.0 40.0L250.0 40.0L150.0 180.0Z\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\" fill-opacity=\"1\"/><path d=\"M70.0 68.0L230.0 68.0L150.0 180.0Z\" fill=\"#93c5fd\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linejoin=\"round\" fill-opacity=\"0.6\"/><text x=\"150.0\" y=\"32.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">150 cm</text><line x1=\"270.0\" y1=\"40.0\" x2=\"270.0\" y2=\"180.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"276.0\" y=\"115.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">25</text><line x1=\"30.0\" y1=\"68.0\" x2=\"30.0\" y2=\"180.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"15.6\" y=\"128.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">h</text><text x=\"146.2\" y=\"62.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">x</text></svg>"
+          },
+          "meta": {
+            "source": "Blacktown Boys 2020 3U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "14(c)"
+          },
+          "parts": [
+            {
+              "id": "bbhs2020e1-q14c-i",
+              "type": "review",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Show that when the water depth is \\(h\\) centimetres, the volume \\(V\\) cm³ of water in the trough is given by \\(V=1200h^2\\)",
+              "hint": "Similar triangles give x = 6h; then V = ½xh × 400.",
+              "steps": [
+                {
+                  "explain": "Work in cm: top width 150 cm, height 25 cm, length 400 cm. The water's triangle is similar to the end triangle.",
+                  "work": "\\(\\frac{x}{150}=\\frac{h}{25}\\ \\Rightarrow\\ x=6h\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 225\" width=\"300\" height=\"225\"><rect width=\"300\" height=\"225\" rx=\"8\" fill=\"white\"/><path d=\"M50.0 40.0L250.0 40.0L150.0 180.0Z\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\" fill-opacity=\"1\"/><path d=\"M70.0 68.0L230.0 68.0L150.0 180.0Z\" fill=\"#93c5fd\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linejoin=\"round\" fill-opacity=\"0.6\"/><text x=\"150.0\" y=\"32.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\" text-anchor=\"middle\">150 cm</text><line x1=\"270.0\" y1=\"40.0\" x2=\"270.0\" y2=\"180.0\" stroke=\"#ea580c\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"276.0\" y=\"115.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\" text-anchor=\"start\">25</text><line x1=\"30.0\" y1=\"68.0\" x2=\"30.0\" y2=\"180.0\" stroke=\"#2563eb\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"15.6\" y=\"128.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#2563eb\" font-style=\"italic\">h</text><text x=\"146.2\" y=\"62.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#2563eb\" font-style=\"italic\">x</text><text x=\"152.8\" y=\"190.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"9.7\" fill=\"#1e293b\" font-style=\"italic\">x</text><text x=\"148.4\" y=\"200.6\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#1e293b\">150</text><line x1=\"147.4\" y1=\"192.4\" x2=\"163.6\" y2=\"192.4\" stroke=\"#1e293b\" stroke-width=\"1.00\"/><text x=\"165.6\" y=\"196.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#1e293b\"> = </text><text x=\"182.8\" y=\"190.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"9.7\" fill=\"#1e293b\" font-style=\"italic\">h</text><text x=\"181.1\" y=\"200.6\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#1e293b\">25</text><line x1=\"180.1\" y1=\"192.4\" x2=\"191.6\" y2=\"192.4\" stroke=\"#1e293b\" stroke-width=\"1.00\"/></svg>"
+                  }
+                },
+                {
+                  "explain": "Volume of a prism = area of the end × length.",
+                  "work": "\\(V=\\tfrac12\\cdot x\\cdot h\\cdot400=\\tfrac12\\cdot6h\\cdot h\\cdot400=1200h^2\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 3U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "14(c)(i)"
+              },
+              "answer": "Similar triangles: \\(\\frac{x}{150}=\\frac{h}{25}\\Rightarrow x=6h\\). V = (area of triangular end) × length = ½ · x · h · 400 = ½ · 6h · h · 400 = 1200h².",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Show that",
+                  "note": "Convert metres to cm and use similar triangles: x/150 = h/25."
+                }
+              ]
+            },
+            {
+              "id": "bbhs2020e1-q14c-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Find the rate at which the depth of water is changing when \\(h=20\\) cm.",
+              "hint": "dh/dt = (dV/dt) / (dV/dh).",
+              "steps": [
+                {
+                  "explain": "\\(\\frac{dV}{dt}=-18000\\) (water is leaving), and \\(V=1200h^2\\).",
+                  "work": "\\(\\frac{dV}{dh}=2400h\\)"
+                },
+                {
+                  "explain": "Chain rule.",
+                  "work": "\\(\\frac{dh}{dt}=\\frac{dV}{dt}\\div\\frac{dV}{dh}=\\frac{-18000}{2400h}\\)"
+                },
+                {
+                  "explain": "At \\(h=20\\).",
+                  "work": "\\(\\frac{dh}{dt}=\\frac{-18000}{48000}=-\\frac38=-0.375\\ \\text{cm/s}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 3U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "14(c)(ii)"
+              },
+              "options": [
+                "\\(-0.0375\\) cm/s",
+                "\\(-375\\) cm/s",
+                "\\(-0.375\\) cm/s (falling at 0.375 cm/s)",
+                "\\(-0.75\\) cm/s"
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "the rate at which the depth of water is changing",
+                  "note": "Use dV/dt = −18000 and dV/dh = 2400h."
+                }
+              ]
+            }
+          ]
         }
       ]
     }

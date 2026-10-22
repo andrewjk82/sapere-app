@@ -976,6 +976,99 @@
               "note": "R = √(1² + 1²), tan α = 1. Max when cos(x + α) = 1."
             }
           ]
+        },
+        {
+          "id": "bbhs2020e1-q13c",
+          "type": "multipart",
+          "stem": "",
+          "meta": {
+            "source": "Blacktown Boys 2020 3U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "13(c)"
+          },
+          "parts": [
+            {
+              "id": "bbhs2020e1-q13c-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Given that \\(5\\cos\\theta-5\\sqrt3\\sin\\theta=A\\cos(\\theta+\\alpha)\\), find values of \\(A\\) and \\(\\alpha\\) where \\(A\\gt 0\\) and \\(0\\lt\\alpha\\lt\\frac{\\pi}{2}\\).",
+              "hint": "A cos α = 5, A sin α = 5√3.",
+              "steps": [
+                {
+                  "explain": "Expand and match.",
+                  "work": "\\(A\\cos\\theta\\cos\\alpha-A\\sin\\theta\\sin\\alpha\\ \\Rightarrow\\ A\\cos\\alpha=5,\\quad A\\sin\\alpha=5\\sqrt3\\)"
+                },
+                {
+                  "explain": "Square and add.",
+                  "work": "\\(A^2=25+75=100\\ \\Rightarrow\\ A=10\\)"
+                },
+                {
+                  "explain": "Divide.",
+                  "work": "\\(\\tan\\alpha=\\frac{5\\sqrt3}{5}=\\sqrt3\\ \\Rightarrow\\ \\alpha=\\frac{\\pi}{3}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 3U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "13(c)(i)"
+              },
+              "options": [
+                "\\(A=10,\\ \\alpha=\\frac{\\pi}{6}\\)",
+                "\\(A=100,\\ \\alpha=\\frac{\\pi}{3}\\)",
+                "\\(A=5\\sqrt3,\\ \\alpha=\\frac{\\pi}{3}\\)",
+                "\\(A=10,\\ \\alpha=\\frac{\\pi}{3}\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "find values of \\(A\\) and \\(\\alpha\\)",
+                  "note": "Match coefficients after expanding A cos(θ + α)."
+                }
+              ]
+            },
+            {
+              "id": "bbhs2020e1-q13c-ii",
+              "type": "mc",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Hence find the maximum value of \\(5\\cos\\theta-5\\sqrt3\\sin\\theta+15\\).",
+              "hint": "Max of A cos(·) is A.",
+              "steps": [
+                {
+                  "explain": "From (i).",
+                  "work": "\\(5\\cos\\theta-5\\sqrt3\\sin\\theta+15=10\\cos\\left(\\theta+\\tfrac{\\pi}{3}\\right)+15\\)"
+                },
+                {
+                  "explain": "The cosine is at most 1.",
+                  "work": "\\(\\max=10+15=25\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 3U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "13(c)(ii)"
+              },
+              "options": [
+                "\\(10\\)",
+                "\\(5\\)",
+                "\\(25\\)",
+                "\\(15\\)"
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "maximum value",
+                  "note": "10cos(θ + π/3) is at most 10."
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1266,6 +1359,43 @@
             {
               "text": "By letting \\(t=\\tan\\frac{x}{2}\\)",
               "note": "The t-substitution misses x = π (where tan(x/2) is undefined) — check it by hand."
+            }
+          ]
+        },
+        {
+          "id": "bbhs2020e1-q12c",
+          "type": "review",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "Use the substitution \\(t=\\tan\\frac{x}{2}\\) to show that \\(\\sec x+\\tan x=\\tan\\left(\\frac{\\pi}{4}+\\frac{x}{2}\\right)\\)",
+          "hint": "Use the t-formulae, factorise to (1 + t)/(1 − t), then write 1 = tan(π/4).",
+          "steps": [
+            {
+              "explain": "\\(t\\)-formulae: \\(\\cos x=\\frac{1-t^2}{1+t^2}\\), so \\(\\sec x=\\frac{1+t^2}{1-t^2}\\); and \\(\\tan x=\\frac{2t}{1-t^2}\\).",
+              "work": "\\(\\sec x+\\tan x=\\frac{1+t^2+2t}{1-t^2}\\)"
+            },
+            {
+              "explain": "Factorise numerator and denominator.",
+              "work": "\\(=\\frac{(1+t)^2}{(1-t)(1+t)}=\\frac{1+t}{1-t}\\)"
+            },
+            {
+              "explain": "Write \\(1=\\tan\\frac\\pi4\\) and recognise \\(\\tan(A+B)\\).",
+              "work": "\\(\\frac{1+t}{1-t}=\\frac{\\tan\\frac{\\pi}{4}+\\tan\\frac{x}{2}}{1-\\tan\\frac{\\pi}{4}\\tan\\frac{x}{2}}=\\tan\\left(\\frac{\\pi}{4}+\\frac{x}{2}\\right)\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys 2020 3U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "12(c)"
+          },
+          "answer": "\\(\\sec x+\\tan x=\\frac{1+t^2}{1-t^2}+\\frac{2t}{1-t^2}=\\frac{(1+t)^2}{(1-t)(1+t)}=\\frac{1+t}{1-t}=\\frac{\\tan\\frac\\pi4+\\tan\\frac x2}{1-\\tan\\frac\\pi4\\tan\\frac x2}=\\tan\\left(\\frac\\pi4+\\frac x2\\right)\\).",
+          "manual": true,
+          "keyPoints": [
+            {
+              "text": "to show that",
+              "note": "After simplifying you get (1 + t)/(1 − t); compare with tan(A + B)."
             }
           ]
         }

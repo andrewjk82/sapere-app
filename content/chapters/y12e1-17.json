@@ -4,6 +4,113 @@
   "year": "Year 12",
   "topics": [
     {
+      "topicId": "y12e1-17A",
+      "code": "17A",
+      "title": "Binomial probability",
+      "questions": [
+        {
+          "id": "bbhs2020e1-q12a",
+          "type": "multipart",
+          "stem": "Bags of lollipops are supposed to contain 50 lollipops. Production records indicate that 92% of bags contain 50 lollipops. A batch of 15 bags is sampled. If more than 2 bags do not contain exactly 50 lollipops, production is stopped.",
+          "meta": {
+            "source": "Blacktown Boys 2020 3U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "12(a)"
+          },
+          "parts": [
+            {
+              "id": "bbhs2020e1-q12a-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Find the probability, correct to four decimal places, that exactly 2 of the 15 bags selected do not contain 50 lollipops.",
+              "hint": "X ~ Bin(15, 0.08); P(X = 2) = C(15,2)(0.08)²(0.92)¹³.",
+              "steps": [
+                {
+                  "explain": "Let \\(X\\) be the number of bags NOT containing 50. Each bag fails with probability \\(1-0.92=0.08\\).",
+                  "work": "\\(X\\sim\\operatorname{Bin}(15,\\ 0.08)\\)"
+                },
+                {
+                  "explain": "Binomial probability.",
+                  "work": "\\(P(X=2)=\\binom{15}{2}(0.08)^2(0.92)^{13}=105\\times0.0064\\times0.33838\\dots\\)"
+                },
+                {
+                  "explain": "Evaluate.",
+                  "work": "\\(P(X=2)\\approx0.2273\\)"
+                },
+                {
+                  "explain": "Make sure \\(p=0.08\\) (the 'failure' you are counting), not 0.92."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 3U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "12(a)(i)"
+              },
+              "options": [
+                "\\(0.0064\\)",
+                "\\(0.1130\\)",
+                "\\(0.0315\\)",
+                "\\(0.2273\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "do not contain 50 lollipops",
+                  "note": "Count the bags that fail: p = 1 − 0.92 = 0.08."
+                }
+              ]
+            },
+            {
+              "id": "bbhs2020e1-q12a-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Find the probability, correct to four decimal places, that production is stopped.",
+              "hint": "Use the complement: 1 − P(X ≤ 2).",
+              "steps": [
+                {
+                  "explain": "Stopped when more than 2 bags fail: \\(P(X\\gt2)=1-P(X\\le2)\\).",
+                  "work": "\\(P(X\\gt2)=1-\\left[P(0)+P(1)+P(2)\\right]\\)"
+                },
+                {
+                  "explain": "Each term.",
+                  "work": "\\(P(0)=0.92^{15}\\approx0.2863,\\quad P(1)=15(0.08)(0.92)^{14}\\approx0.3734,\\quad P(2)\\approx0.2273\\)"
+                },
+                {
+                  "explain": "Subtract.",
+                  "work": "\\(P(X\\gt2)\\approx1-0.8870=0.1130\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 3U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "12(a)(ii)"
+              },
+              "options": [
+                "\\(0.2273\\)",
+                "\\(0.3403\\)",
+                "\\(0.1130\\)",
+                "\\(0.8870\\)"
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "production is stopped",
+                  "note": "'More than 2' = 1 − P(0) − P(1) − P(2)."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "topicId": "y12e1-17B",
       "code": "17B",
       "title": "Binomial distributions",

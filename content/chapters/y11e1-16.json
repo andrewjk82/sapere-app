@@ -50,6 +50,44 @@
             "school": "Abbotsleigh",
             "year": 2020
           }
+        },
+        {
+          "id": "bbhs2020e1-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "Which expression is equivalent to \\(\\frac{\\tan5x-\\tan4x}{1+\\tan5x\\tan4x}\\) ?",
+          "hint": "Recognise tan(A − B).",
+          "steps": [
+            {
+              "explain": "Compare with the compound angle formula.",
+              "work": "\\(\\tan(A-B)=\\frac{\\tan A-\\tan B}{1+\\tan A\\tan B}\\)"
+            },
+            {
+              "explain": "Here \\(A=5x\\), \\(B=4x\\).",
+              "work": "\\(\\frac{\\tan5x-\\tan4x}{1+\\tan5x\\tan4x}=\\tan(5x-4x)=\\tan x\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys 2020 3U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "6"
+          },
+          "options": [
+            "\\(\\frac{\\tan x}{1+\\tan20x}\\)",
+            "\\(\\frac{\\tan5x}{1+\\tan5x}\\)",
+            "\\(\\tan9x\\)",
+            "\\(\\tan x\\)"
+          ],
+          "answer": 3,
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{\\tan5x-\\tan4x}{1+\\tan5x\\tan4x}\\)",
+              "note": "This is exactly the tan(A − B) expansion."
+            }
+          ]
         }
       ]
     },

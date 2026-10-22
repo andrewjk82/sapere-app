@@ -60,6 +60,140 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 330 220\" style=\"display:block;margin:0 auto;font-family:system-ui,sans-serif\"><rect width=\"330\" height=\"220\" fill=\"white\"/><path d=\"M70 170 L220 170 L220 50 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M207 170 L207 157 L220 157\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"55\" y=\"185\" font-size=\"13\">O</text><text x=\"225\" y=\"185\" font-size=\"13\">Q</text><text x=\"226\" y=\"47\" font-size=\"13\">P</text><text x=\"135\" y=\"193\" font-size=\"13\">OQ=4</text><text x=\"230\" y=\"110\" font-size=\"13\">PQ=4</text></svg>"
           }
+        },
+        {
+          "id": "bbhs2020e1-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "What is the angle between the vectors \\(\\begin{pmatrix}-3\\\\ 2\\end{pmatrix}\\) and \\(\\begin{pmatrix}1\\\\ 18\\end{pmatrix}\\) ?",
+          "hint": "cos θ = (a·b)/(|a||b|). Watch the sign of (−3)(1).",
+          "steps": [
+            {
+              "explain": "Use \\(\\cos\\theta=\\frac{\\mathbf{a}\\cdot\\mathbf{b}}{|\\mathbf{a}||\\mathbf{b}|}\\).",
+              "work": "\\(\\mathbf{a}\\cdot\\mathbf{b}=(-3)(1)+(2)(18)=-3+36=33\\)"
+            },
+            {
+              "explain": "Magnitudes.",
+              "work": "\\(|\\mathbf{a}|=\\sqrt{9+4}=\\sqrt{13},\\qquad|\\mathbf{b}|=\\sqrt{1+324}=\\sqrt{325}=5\\sqrt{13}\\)"
+            },
+            {
+              "explain": "So",
+              "work": "\\(\\cos\\theta=\\frac{33}{\\sqrt{13}\\cdot5\\sqrt{13}}=\\frac{33}{65}\\ \\Rightarrow\\ \\theta=\\cos^{-1}\\left(\\frac{33}{65}\\right)\\)"
+            },
+            {
+              "explain": "39 comes from adding \\(3+36\\) — the first product is \\(-3\\), not \\(+3\\)."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys 2020 3U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "3"
+          },
+          "options": [
+            "\\(\\theta=\\cos^{-1}\\left(\\frac{39}{65}\\right)\\)",
+            "\\(\\theta=\\cos^{-1}\\left(-\\frac{39}{65}\\right)\\)",
+            "\\(\\theta=\\cos^{-1}\\left(\\frac{33}{65}\\right)\\)",
+            "\\(\\theta=\\cos^{-1}\\left(-\\frac{33}{65}\\right)\\)"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "What is the angle between the vectors",
+              "note": "Dot product over the product of the lengths."
+            }
+          ]
+        },
+        {
+          "id": "bbhs2020e1-q12b",
+          "type": "multipart",
+          "stem": "Two vectors are given by \\(\\mathbf{a}=3\\mathbf{i}+m\\mathbf{j}\\) and \\(\\mathbf{b}=-10\\mathbf{i}+n\\mathbf{j}\\) where \\(m,n\\gt 0\\).",
+          "meta": {
+            "source": "Blacktown Boys 2020 3U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "12(b)"
+          },
+          "parts": [
+            {
+              "id": "bbhs2020e1-q12b-i",
+              "type": "mc",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "If \\(|\\mathbf{a}|=5\\) and \\(\\mathbf{a}\\) is perpendicular to \\(\\mathbf{b}\\), find the values of \\(m\\) and \\(n\\).",
+              "hint": "|a| = 5 gives m; a·b = 0 gives n.",
+              "steps": [
+                {
+                  "explain": "Use the length of \\(\\mathbf{a}\\).",
+                  "work": "\\(3^2+m^2=5^2\\ \\Rightarrow\\ m^2=16\\ \\Rightarrow\\ m=4\\quad(m\\gt 0)\\)"
+                },
+                {
+                  "explain": "Perpendicular: dot product zero.",
+                  "work": "\\(\\mathbf{a}\\cdot\\mathbf{b}=3(-10)+4n=0\\ \\Rightarrow\\ 4n=30\\ \\Rightarrow\\ n=\\frac{15}{2}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 3U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "12(b)(i)"
+              },
+              "options": [
+                "\\(m=4,\\ n=\\frac{40}{3}\\)",
+                "\\(m=16,\\ n=\\frac{15}{8}\\)",
+                "\\(m=4,\\ n=-\\frac{15}{2}\\)",
+                "\\(m=4,\\ n=\\frac{15}{2}\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "perpendicular",
+                  "note": "Use |a|² = 3² + m² = 25, then a·b = 0."
+                }
+              ]
+            },
+            {
+              "id": "bbhs2020e1-q12b-ii",
+              "type": "mc",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Hence find the unit vector \\(\\hat{\\mathbf{b}}\\).",
+              "hint": "b̂ = b / |b| with |b| = 25/2.",
+              "steps": [
+                {
+                  "explain": "With \\(n=\\frac{15}{2}\\), find the length of \\(\\mathbf{b}\\).",
+                  "work": "\\(|\\mathbf{b}|=\\sqrt{(-10)^2+\\left(\\tfrac{15}{2}\\right)^2}=\\sqrt{100+\\tfrac{225}{4}}=\\sqrt{\\tfrac{625}{4}}=\\frac{25}{2}\\)"
+                },
+                {
+                  "explain": "Divide.",
+                  "work": "\\(\\hat{\\mathbf{b}}=\\frac{2}{25}\\left(-10\\mathbf{i}+\\tfrac{15}{2}\\mathbf{j}\\right)=-\\frac45\\mathbf{i}+\\frac35\\mathbf{j}=\\frac15\\left(-4\\mathbf{i}+3\\mathbf{j}\\right)\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 3U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "12(b)(ii)"
+              },
+              "options": [
+                "\\(\\frac{1}{10}\\left(-4\\mathbf{i}+3\\mathbf{j}\\right)\\)",
+                "\\(\\frac{1}{25}\\left(-4\\mathbf{i}+3\\mathbf{j}\\right)\\)",
+                "\\(\\frac15\\left(-4\\mathbf{i}+3\\mathbf{j}\\right)\\)",
+                "\\(\\frac15\\left(4\\mathbf{i}-3\\mathbf{j}\\right)\\)"
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "\\(\\hat{\\mathbf{b}}\\)",
+                  "note": "Divide b by its length 25/2."
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -582,6 +716,53 @@
             {
               "text": "Which of the following statements is",
               "note": "Write AB − BC as DC + CB and follow the arrows."
+            }
+          ]
+        },
+        {
+          "id": "bbhs2020e1-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "Express the vector \\(\\overrightarrow{PQ}\\) in terms of \\(\\mathbf{a},\\mathbf{b}\\) and \\(\\mathbf{c}\\).",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 230\" width=\"300\" height=\"230\"><defs><marker id=\"ah1e293b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#1e293b\"/></marker></defs><rect width=\"300\" height=\"230\" rx=\"8\" fill=\"white\"/><line x1=\"60.0\" y1=\"190.0\" x2=\"150.0\" y2=\"190.0\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><line x1=\"150.0\" y1=\"190.0\" x2=\"210.0\" y2=\"30.0\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><line x1=\"210.0\" y1=\"30.0\" x2=\"270.0\" y2=\"100.0\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><line x1=\"270.0\" y1=\"100.0\" x2=\"60.0\" y2=\"190.0\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><text x=\"101.0\" y=\"210.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"14.0\" fill=\"#1e293b\" font-weight=\"bold\">c</text><text x=\"177.2\" y=\"120.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"14.0\" fill=\"#1e293b\" font-weight=\"bold\">b</text><text x=\"250.0\" y=\"61.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"14.0\" fill=\"#1e293b\" font-weight=\"bold\">a</text><text x=\"39.3\" y=\"194.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"15.7\" fill=\"#1e293b\" font-style=\"italic\">Q</text><text x=\"278.0\" y=\"104.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"15.7\" fill=\"#1e293b\" font-style=\"italic\">P</text></svg>"
+          },
+          "hint": "Go from Q to P along c, b, a; then reverse.",
+          "steps": [
+            {
+              "explain": "Follow the arrows from \\(Q\\) to \\(P\\): first \\(\\mathbf{c}\\), then \\(\\mathbf{b}\\), then \\(\\mathbf{a}\\).",
+              "work": "\\(\\overrightarrow{QP}=\\mathbf{c}+\\mathbf{b}+\\mathbf{a}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 230\" width=\"300\" height=\"230\"><defs><marker id=\"ah2563eb\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#2563eb\"/></marker><marker id=\"ah16a34a\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#16a34a\"/></marker><marker id=\"ahea580c\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#ea580c\"/></marker><marker id=\"ahdc2626\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#dc2626\"/></marker></defs><rect width=\"300\" height=\"230\" rx=\"8\" fill=\"white\"/><line x1=\"60.0\" y1=\"190.0\" x2=\"150.0\" y2=\"190.0\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\" marker-end=\"url(#ah2563eb)\"/><line x1=\"150.0\" y1=\"190.0\" x2=\"210.0\" y2=\"30.0\" stroke=\"#16a34a\" stroke-width=\"2.2\" stroke-linecap=\"round\" marker-end=\"url(#ah16a34a)\"/><line x1=\"210.0\" y1=\"30.0\" x2=\"270.0\" y2=\"100.0\" stroke=\"#ea580c\" stroke-width=\"2.2\" stroke-linecap=\"round\" marker-end=\"url(#ahea580c)\"/><line x1=\"270.0\" y1=\"100.0\" x2=\"60.0\" y2=\"190.0\" stroke=\"#dc2626\" stroke-width=\"2.2\" stroke-linecap=\"round\" marker-end=\"url(#ahdc2626)\"/><text x=\"101.0\" y=\"210.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"14.0\" fill=\"#2563eb\" font-weight=\"bold\">c</text><text x=\"177.2\" y=\"120.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"14.0\" fill=\"#16a34a\" font-weight=\"bold\">b</text><text x=\"250.0\" y=\"61.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"14.0\" fill=\"#ea580c\" font-weight=\"bold\">a</text><text x=\"39.3\" y=\"194.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"15.7\" fill=\"#1e293b\" font-style=\"italic\">Q</text><text x=\"278.0\" y=\"104.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"15.7\" fill=\"#1e293b\" font-style=\"italic\">P</text><text x=\"20.0\" y=\"26.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#1e293b\" font-style=\"italic\">Q</text><text x=\"30.9\" y=\"26.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#1e293b\"> → </text><text x=\"49.5\" y=\"26.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#1e293b\" font-weight=\"bold\">c</text><text x=\"56.5\" y=\"26.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#1e293b\"> → </text><text x=\"75.0\" y=\"26.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#1e293b\" font-weight=\"bold\">b</text><text x=\"82.5\" y=\"26.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#1e293b\"> → </text><text x=\"101.0\" y=\"26.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#1e293b\" font-weight=\"bold\">a</text><text x=\"108.1\" y=\"26.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#1e293b\"> → </text><text x=\"126.6\" y=\"26.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#1e293b\" font-style=\"italic\">P</text></svg>"
+              }
+            },
+            {
+              "explain": "\\(\\overrightarrow{PQ}\\) is the same journey reversed.",
+              "work": "\\(\\overrightarrow{PQ}=-\\overrightarrow{QP}=-\\mathbf{a}-\\mathbf{b}-\\mathbf{c}\\)"
+            },
+            {
+              "explain": "\\(\\mathbf{a}+\\mathbf{b}+\\mathbf{c}\\) is \\(\\overrightarrow{QP}\\), the opposite direction."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys 2020 3U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "4"
+          },
+          "options": [
+            "\\(-\\mathbf{a}-\\mathbf{b}-\\mathbf{c}\\)",
+            "\\(\\mathbf{a}+\\mathbf{b}+\\mathbf{c}\\)",
+            "\\(-\\mathbf{a}+\\mathbf{b}+\\mathbf{c}\\)",
+            "\\(\\mathbf{a}-\\mathbf{b}-\\mathbf{c}\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "Express the vector \\(\\overrightarrow{PQ}\\)",
+              "note": "The arrows c, b, a lead from Q to P. PQ goes the other way."
             }
           ]
         }

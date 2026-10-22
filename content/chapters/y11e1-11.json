@@ -100,6 +100,103 @@
             "school": "Abbotsleigh",
             "year": 2020
           }
+        },
+        {
+          "id": "bbhs2020e1-q12d",
+          "type": "multipart",
+          "stem": "The polynomial \\(P(x)=2x^3+ax^2+b\\) has a double zero at \\(x=-5\\).",
+          "meta": {
+            "source": "Blacktown Boys 2020 3U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "12(d)"
+          },
+          "parts": [
+            {
+              "id": "bbhs2020e1-q12d-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Find the values of \\(a\\) and \\(b\\).",
+              "hint": "Double zero ⇒ P(−5) = 0 and P′(−5) = 0.",
+              "steps": [
+                {
+                  "explain": "A double zero at \\(x=-5\\) means \\(P(-5)=0\\) and \\(P'(-5)=0\\).",
+                  "work": "\\(P'(x)=6x^2+2ax\\)"
+                },
+                {
+                  "explain": "Use the derivative.",
+                  "work": "\\(P'(-5)=150-10a=0\\ \\Rightarrow\\ a=15\\)"
+                },
+                {
+                  "explain": "Use \\(P(-5)=0\\).",
+                  "work": "\\(2(-125)+15(25)+b=0\\ \\Rightarrow\\ -250+375+b=0\\ \\Rightarrow\\ b=-125\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 3U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "12(d)(i)"
+              },
+              "options": [
+                "\\(a=-15,\\ b=125\\)",
+                "\\(a=15,\\ b=125\\)",
+                "\\(a=10,\\ b=0\\)",
+                "\\(a=15,\\ b=-125\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "Find the values of \\(a\\) and \\(b\\)",
+                  "note": "A double zero is also a zero of the derivative."
+                }
+              ]
+            },
+            {
+              "id": "bbhs2020e1-q12d-ii",
+              "type": "mc",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Hence factorise \\(P(x)\\) completely.",
+              "hint": "Divide by (x + 5)² or compare constant terms.",
+              "steps": [
+                {
+                  "explain": "\\(P(x)=2x^3+15x^2-125\\) has factor \\((x+5)^2=x^2+10x+25\\). The remaining factor is linear: \\((2x+c)\\).",
+                  "work": "\\(2x^3+15x^2-125=(x^2+10x+25)(2x+c)\\)"
+                },
+                {
+                  "explain": "Compare constant terms.",
+                  "work": "\\(25c=-125\\ \\Rightarrow\\ c=-5\\)"
+                },
+                {
+                  "explain": "So",
+                  "work": "\\(P(x)=(x+5)^2(2x-5)\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Blacktown Boys 2020 3U Trials & Solutions",
+                "school": "Blacktown Boys' High School",
+                "year": 2020,
+                "number": "12(d)(ii)"
+              },
+              "options": [
+                "\\((x+5)(2x-5)\\)",
+                "\\((x+5)^2(x-5)\\)",
+                "\\((x+5)^2(2x-5)\\)",
+                "\\((x-5)^2(2x+5)\\)"
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "factorise",
+                  "note": "(x + 5)² is a factor; find the remaining linear factor."
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -196,6 +293,48 @@
             {
               "text": "find the roots of \\(nx^2-mx+1=0\\)",
               "note": "Write m and n using α and β; the new equation's sum is m/n and product 1/n."
+            }
+          ]
+        },
+        {
+          "id": "bbhs2020e1-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "The polynomial \\(2x^3-5x^2-16x+24\\) has zeroes \\(\\alpha,\\beta\\) and \\(\\gamma\\).\n\nWhat is the value of \\(\\alpha\\beta\\gamma(\\alpha+\\beta+\\gamma)\\) ?",
+          "hint": "Sum = −b/a, product = −d/a for a cubic.",
+          "steps": [
+            {
+              "explain": "For \\(ax^3+bx^2+cx+d\\): sum of zeroes \\(=-\\frac ba\\), product \\(=-\\frac da\\).",
+              "work": "\\(a=2,\\ b=-5,\\ c=-16,\\ d=24\\)"
+            },
+            {
+              "explain": "Sum and product.",
+              "work": "\\(\\alpha+\\beta+\\gamma=-\\frac{-5}{2}=\\frac52,\\qquad\\alpha\\beta\\gamma=-\\frac{24}{2}=-12\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\(\\alpha\\beta\\gamma(\\alpha+\\beta+\\gamma)=-12\\times\\frac52=-30\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys 2020 3U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "2"
+          },
+          "options": [
+            "\\(-30\\)",
+            "\\(-20\\)",
+            "\\(20\\)",
+            "\\(30\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "\\(\\alpha\\beta\\gamma(\\alpha+\\beta+\\gamma)\\)",
+              "note": "Find the product (−d/a) and the sum (−b/a) separately, then multiply."
             }
           ]
         }

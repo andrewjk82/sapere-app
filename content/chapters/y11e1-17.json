@@ -228,6 +228,48 @@
               "note": "Each classroom needs 12 + 1 = 13 students to force a repeated month."
             }
           ]
+        },
+        {
+          "id": "bbhs2020e1-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "A private institution course regulation requires that the same number of students achieve each grade from A to E where possible. What is the smallest number of students required to ensure at least one particular grade is awarded 7 times?",
+          "hint": "Pigeonhole: 5 grades × 6 each, plus one more.",
+          "steps": [
+            {
+              "explain": "There are 5 grades (A, B, C, D, E). Grades are spread as evenly as possible.",
+              "work": "\\(5\\ \\text{grades}\\)"
+            },
+            {
+              "explain": "With 30 students each grade could get exactly 6 — no grade reaches 7.",
+              "work": "\\(5\\times6=30\\)"
+            },
+            {
+              "explain": "One more student must make some grade get a 7th (pigeonhole principle).",
+              "work": "\\(5\\times6+1=31\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys 2020 3U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "9"
+          },
+          "options": [
+            "30",
+            "31",
+            "35",
+            "36"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "at least one particular grade is awarded 7 times",
+              "note": "With 5 grades, 6 each is the most you can have without a 7th."
+            }
+          ]
         }
       ]
     },

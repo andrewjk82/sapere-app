@@ -48,6 +48,50 @@
               "note": "Step k → k + 1: add the next term ar^(k+1) and use a common denominator r − 1."
             }
           ]
+        },
+        {
+          "id": "bbhs2020e1-q13a",
+          "type": "review",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "Using mathematical induction, prove the following is true for all positive integers \\(n\\)\n\n\\(1+6+11+\\dots+(5n-4)=\\frac12n(5n-3)\\)",
+          "hint": "Add the (k+1)th term 5k + 1 and factorise.",
+          "steps": [
+            {
+              "explain": "Base case \\(n=1\\).",
+              "work": "\\(\\text{LHS}=1,\\qquad\\text{RHS}=\\tfrac12(1)(5-3)=1\\)"
+            },
+            {
+              "explain": "Assume true for \\(n=k\\).",
+              "work": "\\(1+6+\\dots+(5k-4)=\\tfrac12k(5k-3)\\)"
+            },
+            {
+              "explain": "Add the next term \\(5(k+1)-4=5k+1\\).",
+              "work": "\\(\\tfrac12k(5k-3)+(5k+1)=\\tfrac12\\left(5k^2-3k+10k+2\\right)=\\tfrac12\\left(5k^2+7k+2\\right)\\)"
+            },
+            {
+              "explain": "Factorise and compare with the formula for \\(n=k+1\\).",
+              "work": "\\(=\\tfrac12(k+1)(5k+2)=\\tfrac12(k+1)\\bigl(5(k+1)-3\\bigr)\\)"
+            },
+            {
+              "explain": "So the result holds for all positive integers by induction."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys 2020 3U Trials & Solutions",
+            "school": "Blacktown Boys' High School",
+            "year": 2020,
+            "number": "13(a)"
+          },
+          "answer": "n = 1: LHS 1, RHS ½(2) = 1. Assume \\(1+\\dots+(5k-4)=\\frac12k(5k-3)\\). Then adding 5(k+1) − 4 = 5k + 1: \\(\\frac12k(5k-3)+(5k+1)=\\frac12(5k^2+7k+2)=\\frac12(k+1)(5k+2)=\\frac12(k+1)(5(k+1)-3)\\). True by induction.",
+          "manual": true,
+          "keyPoints": [
+            {
+              "text": "Using mathematical induction",
+              "note": "The (k+1)th term is 5(k+1) − 4 = 5k + 1."
+            }
+          ]
         }
       ]
     },
