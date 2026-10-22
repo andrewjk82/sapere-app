@@ -1797,40 +1797,40 @@
           "difficulty": "medium",
           "stem": "A surveyor stands at a point A, which is due south of a tower T of height h m. The angle of elevation of the top of the tower from A is 45°. The surveyor then walks 100 m due east to point B, from where the angle of elevation of the top of the tower is 30°. Express the length of TB in terms of h.",
           "options": [
-            "h√3 m",
-            "h/√3 m",
-            "2h m",
-            "h m"
+            "\\(h\\sqrt{3}\\text{ m}\\)",
+            "\\(\\frac{h}{\\sqrt{3}}\\text{ m}\\)",
+            "\\(2h\\text{ m}\\)",
+            "\\(h\\text{ m}\\)"
           ],
-          "answer": 0,
-          "hint": "In right triangle TOB, OT=h is opposite the 30° angle at B and OB is adjacent.",
+          "answer": 2,
+          "hint": "In right triangle \\(TOB\\), \\(OT=h\\) is opposite \\(30^\\circ\\), and \\(TB\\) is the hypotenuse. Use sine to relate these sides.",
           "steps": [
             {
-              "explain": "In right triangle TOB, identify the sides relative to the 30° angle.",
-              "work": "opposite=OT=h; adjacent=OB",
+              "explain": "Focus on the right triangle formed by the tower, the ground, and the line of sight from B. Relative to the \\(30^\\circ\\) angle at \\(B\\), \\(OT=h\\) is the opposite side and \\(TB\\) is the hypotenuse. The \\(45^\\circ\\) angle at A and the \\(100\\text{ m}\\) walk are not needed to find \\(TB\\).",
+              "work": "\\(\\angle TOB=90^\\circ,\\quad \\angle TBO=30^\\circ\\)\n\\(\\text{opposite}=OT=h,\\quad \\text{hypotenuse}=TB\\)",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><path d=\"M75 150V40M68 150H82M75 150H270M75 40L270 150\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><path d=\"M240 150 A30 30 0 0 0 244 135\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"1.6\"/><text x=\"62\" y=\"36\" font-size=\"10\">T</text><text x=\"62\" y=\"164\" font-size=\"10\">O</text><text x=\"274\" y=\"160\" font-size=\"10\">B</text><text x=\"80\" y=\"95\" font-size=\"9\">OT=h</text><text x=\"202\" y=\"166\" font-size=\"9\">OB</text><text x=\"225\" y=\"139\" font-size=\"9\">30°</text><path d=\"M75 138H87V150\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.3\"/></svg>"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><path d=\"M78 177V40M78 177H285M78 40L285 177\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M78 161H94V177\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.3\"/><path d=\"M258 177 A27 27 0 0 0 262 162\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"1.7\"/><path d=\"M78 40V177\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><path d=\"M78 40L285 177\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\"/><text x=\"64\" y=\"35\" font-size=\"12\" fill=\"#334155\">T</text><text x=\"64\" y=\"194\" font-size=\"12\" fill=\"#334155\">O</text><text x=\"291\" y=\"193\" font-size=\"12\" fill=\"#334155\">B</text><text x=\"41\" y=\"112\" font-size=\"12\" fill=\"#1d4ed8\">OT = h</text><text x=\"170\" y=\"91\" font-size=\"12\" fill=\"#6d28d9\">TB</text><text x=\"229\" y=\"157\" font-size=\"12\" fill=\"#c2410c\">30°</text></svg>"
               }
             },
             {
-              "explain": "Use tangent and isolate OB.",
-              "work": "tan30°=h/OB\nOB=h/tan30°",
+              "explain": "Use the sine ratio because it connects the opposite side \\(OT\\) to the hypotenuse \\(TB\\). Substitute the known height and the angle of elevation.",
+              "work": "\\(\\sin 30^\\circ=\\frac{\\text{opposite}}{\\text{hypotenuse}}=\\frac{OT}{TB}=\\frac{h}{TB}\\)",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><path d=\"M75 150V40M68 150H82M75 150H270M75 40L270 150\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><path d=\"M240 150 A30 30 0 0 0 244 135\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"1.6\"/><text x=\"62\" y=\"36\" font-size=\"10\">T</text><text x=\"62\" y=\"164\" font-size=\"10\">O</text><text x=\"274\" y=\"160\" font-size=\"10\">B</text><text x=\"80\" y=\"95\" font-size=\"9\">OT=h</text><text x=\"202\" y=\"166\" font-size=\"9\">OB</text><text x=\"225\" y=\"139\" font-size=\"9\">30°</text><path d=\"M75 138H87V150\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.3\"/></svg>"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><path d=\"M78 177V40M78 177H285M78 40L285 177\" fill=\"none\" stroke=\"#cbd5e1\" stroke-width=\"1.6\"/><path d=\"M78 161H94V177\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.3\"/><path d=\"M258 177 A27 27 0 0 0 262 162\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"2\"/><path d=\"M78 40V177\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3.2\"/><path d=\"M78 40L285 177\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3.2\"/><text x=\"64\" y=\"35\" font-size=\"12\" fill=\"#334155\">T</text><text x=\"64\" y=\"194\" font-size=\"12\" fill=\"#334155\">O</text><text x=\"291\" y=\"193\" font-size=\"12\" fill=\"#334155\">B</text><text x=\"41\" y=\"112\" font-size=\"12\" fill=\"#1d4ed8\">OT = h</text><text x=\"170\" y=\"91\" font-size=\"12\" fill=\"#6d28d9\">TB</text><text x=\"229\" y=\"157\" font-size=\"12\" fill=\"#c2410c\">30°</text></svg>"
               }
             },
             {
-              "explain": "Use tan30°=1/√3 and simplify.",
-              "work": "OB=h÷(1/√3)=h√3",
+              "explain": "Rearrange to make \\(TB\\) the subject, then use \\(\\sin 30^\\circ=\\frac12\\). This confirms the required line of sight is twice the tower height.",
+              "work": "\\(TB=\\frac{h}{\\sin 30^\\circ}\\)\n\\(TB=\\frac{h}{\\frac12}=2h\\)\n\\(\\therefore TB=2h\\text{ m}\\)",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><path d=\"M75 150V40M68 150H82M75 150H270M75 40L270 150\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><path d=\"M240 150 A30 30 0 0 0 244 135\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"1.6\"/><text x=\"62\" y=\"36\" font-size=\"10\">T</text><text x=\"62\" y=\"164\" font-size=\"10\">O</text><text x=\"274\" y=\"160\" font-size=\"10\">B</text><text x=\"80\" y=\"95\" font-size=\"9\">OT=h</text><text x=\"202\" y=\"166\" font-size=\"9\">OB</text><text x=\"225\" y=\"139\" font-size=\"9\">30°</text><path d=\"M75 138H87V150\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.3\"/></svg>"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><path d=\"M78 177V40M78 177H285M78 40L285 177\" fill=\"none\" stroke=\"#cbd5e1\" stroke-width=\"1.6\"/><path d=\"M78 161H94V177\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.3\"/><path d=\"M258 177 A27 27 0 0 0 262 162\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"1.7\"/><path d=\"M78 40V177\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><path d=\"M78 40L285 177\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"3.4\"/><text x=\"64\" y=\"35\" font-size=\"12\" fill=\"#334155\">T</text><text x=\"64\" y=\"194\" font-size=\"12\" fill=\"#334155\">O</text><text x=\"291\" y=\"193\" font-size=\"12\" fill=\"#334155\">B</text><text x=\"41\" y=\"112\" font-size=\"12\" fill=\"#1d4ed8\">OT = h</text><text x=\"170\" y=\"91\" font-size=\"12\" fill=\"#15803d\">TB = 2h</text><text x=\"229\" y=\"157\" font-size=\"12\" fill=\"#c2410c\">30°</text></svg>"
               }
             }
           ],
           "keyPoints": [
             {
               "text": "A surveyor stands at a point A",
-              "note": "In right triangle TOB, OT=h is opposite the 30° angle at B and OB is adjacent."
+              "note": "In right triangle \\(TOB\\), \\(OT=h\\) is opposite the \\(30^\\circ\\) angle at \\(B\\), and \\(TB\\) is the hypotenuse. Use the sine ratio."
             }
           ],
           "timeLimit": 60,
@@ -1839,9 +1839,6 @@
             "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
             "school": "Abbotsleigh",
             "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
-          },
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><path d=\"M75 150V40M68 150H82M75 150H270M75 40L270 150\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><path d=\"M240 150 A30 30 0 0 0 244 135\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"1.6\"/><text x=\"62\" y=\"36\" font-size=\"10\">T</text><text x=\"62\" y=\"164\" font-size=\"10\">O</text><text x=\"274\" y=\"160\" font-size=\"10\">B</text><text x=\"80\" y=\"95\" font-size=\"9\">OT=h</text><text x=\"202\" y=\"166\" font-size=\"9\">OB</text><text x=\"225\" y=\"139\" font-size=\"9\">30°</text><path d=\"M75 138H87V150\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.3\"/><path d=\"M75 138H87V150\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.3\"/></svg>"
           }
         },
         {
