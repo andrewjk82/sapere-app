@@ -7214,25 +7214,25 @@
           "difficulty": "medium",
           "stem": "Calculate the probability of drawing out a blue ball and a white ball from a bag containing 7 blue and 5 white balls if the first ball is not replaced before taking out the second ball.",
           "options": [
-            "70/121",
-            "70/144",
-            "1225/17424",
-            "35/66"
+            "\\(\\frac{70}{121}\\)",
+            "\\(\\frac{70}{144}\\)",
+            "\\(\\frac{1225}{17424}\\)",
+            "\\(\\frac{35}{66}\\)"
           ],
           "answer": 3,
           "hint": "“Not replaced” means the second draw has 11 balls left. Count both possible orders: blue then white, or white then blue.",
           "steps": [
             {
-              "explain": "There are 12 balls initially. For blue then white, the conditional second-draw denominator becomes 11.",
-              "work": "P(B then W) = 7/12 × 5/11 = 35/132"
+              "explain": "There are 12 balls in total. First find the probability of drawing a blue ball, then a white ball without replacement.",
+              "work": "\\(P(BW)=\\frac{7}{12}\\times\\frac{5}{11}=\\frac{35}{132}\\)"
             },
             {
-              "explain": "For white then blue, the white ball is removed first, so 7 blue remain out of 11.",
-              "work": "P(W then B) = 5/12 × 7/11 = 35/132"
+              "explain": "The reverse order also gives one blue and one white. After taking a white ball first, 11 balls remain, including all 7 blue balls.",
+              "work": "\\(P(WB)=\\frac{5}{12}\\times\\frac{7}{11}=\\frac{35}{132}\\)"
             },
             {
-              "explain": "The two orders are separate ways to get one ball of each colour, so add them.",
-              "work": "P(one blue and one white) = 35/132 + 35/132 = 70/132 = 35/66"
+              "explain": "These two orders cannot happen at the same time, so add their probabilities and simplify the fraction.",
+              "work": "\\(P(\\text{one blue and one white})=P(BW)+P(WB)\\)\\n\\(=\\frac{35}{132}+\\frac{35}{132}=\\frac{70}{132}=\\boxed{\\frac{35}{66}}\\)"
             }
           ],
           "keyPoints": [
