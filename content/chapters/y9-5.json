@@ -7032,7 +7032,7 @@
           "id": "yr9t3-2023-alg-q4i",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Solve each of the following equations: (i) \\(\\frac{3}{4x}-\\frac{2}{3x}=\\frac{1}{24}\\)",
+          "stem": "Solve: \\(\\frac{3}{4x}-\\frac{2}{3x}=\\frac{1}{24}\\)",
           "options": [
             "\\(x=\\frac12\\)",
             "\\(x=2\\)",
@@ -7075,7 +7075,7 @@
           "id": "yr9t3-2023-alg-q4ii",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Solve each of the following equations: (ii) \\(\\frac{4}{x+2}=\\frac{5}{2x-5}\\)",
+          "stem": "Solve: \\(\\frac{4}{x+2}=\\frac{5}{2x-5}\\)",
           "options": [
             "\\(x=2\\)",
             "\\(x=-10\\)",
@@ -9310,7 +9310,7 @@
           "id": "yr9t3-2023-alg-q5i",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Kate cycles two different bush tracks training for a cross country mountain bike competition. She averages 24 km/h on the first track and 20 km/h for the second track, taking a total time of 2 hours 45 minutes. The length of the second track is 4 km more than double the length of the first track. (i) Define the variables and write equations that link these variables. Then write an equation in one variable and solve it.",
+          "stem": "Kate cycles two different bush tracks training for a cross country mountain bike competition. She averages 24 km/h on the first track and 20 km/h for the second track, taking a total time of 2 hours 45 minutes. The length of the second track is 4 km more than double the length of the first track.<br><br>Define the variables and write equations that link these variables. Then write an equation in one variable and solve it.",
           "options": [
             "\\(x=24\\text{ km};\\;\\frac{x}{24}+\\frac{2x+4}{20}=2.75\\)",
             "\\(x=18\\text{ km};\\;\\frac{x}{24}+\\frac{2x+4}{20}=2.45\\)",
@@ -9353,7 +9353,7 @@
           "id": "yr9t3-2023-alg-q5ii",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Kate cycles two different bush tracks training for a cross country mountain bike competition. She averages 24 km/h on the first track and 20 km/h for the second track, taking a total time of 2 hours 45 minutes. The length of the second track is 4 km more than double the length of the first track. (ii) Hence, determine the length of each bush track and the time Kate takes to ride each track.",
+          "stem": "Kate cycles two different bush tracks training for a cross country mountain bike competition. She averages 24 km/h on the first track and 20 km/h for the second track, taking a total time of 2 hours 45 minutes. The length of the second track is 4 km more than double the length of the first track.<br><br>Determine the length of each bush track and the time Kate takes to ride each track.",
           "options": [
             "First: \\(18\\text{ km}, 45\\text{ min}\\); second: \\(40\\text{ km}, 2\\text{ h}\\).",
             "First: \\(18\\text{ km}, 1\\text{ h}\\); second: \\(40\\text{ km}, 1\\text{ h }45\\text{ min}\\).",

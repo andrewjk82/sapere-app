@@ -3239,7 +3239,7 @@
           "id": "yr9t3-2023-alg-q2i",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Factorise each of the following expressions: (i) \\(x^2-14x+49\\)",
+          "stem": "Factorise: \\(x^2-14x+49\\)",
           "options": [
             "\\((x+7)^2\\)",
             "\\((x-7)(x+7)\\)",
@@ -3926,7 +3926,7 @@
           "id": "yr9t3-2023-alg-q2ii",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Factorise each of the following expressions: (ii) \\(x^2+3x-4\\)",
+          "stem": "Factorise: \\(x^2+3x-4\\)",
           "options": [
             "\\((x+4)(x-1)\\)",
             "\\((x-4)(x+1)\\)",
@@ -3969,7 +3969,7 @@
           "id": "yr9t3-2023-alg-q2iii",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Factorise each of the following expressions: (iii) \\(6x^2+20x+14\\)",
+          "stem": "Factorise: \\(6x^2+20x+14\\)",
           "options": [
             "\\(2(3x+1)(x+7)\\)",
             "\\(2(3x+7)(x+1)\\)",
