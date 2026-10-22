@@ -4430,93 +4430,107 @@
           }
         },
         {
-          "id": "yr9t3-2023-fm-q5i",
-          "type": "mc",
-          "difficulty": "easy",
-          "stem": "Mary earned $42,000 last year with allowable deductions of $3427. Find her taxable income.",
-          "options": [
-            "\\(\\$45,427\\)",
-            "\\(\\$3,427\\)",
-            "\\(\\$38,573\\)",
-            "\\(\\$42,000\\)"
-          ],
-          "answer": 2,
-          "hint": "Taxable income equals gross income minus allowable deductions.",
-          "steps": [
-            {
-              "explain": "Identify income and allowable deductions.",
-              "work": "\\(42,000\\text{ dollars income},\\quad 3,427\\text{ dollars deductions}\\)"
-            },
-            {
-              "explain": "Subtract deductions from income.",
-              "work": "\\(42,000-3,427=38,573\\)"
-            },
-            {
-              "explain": "State taxable income.",
-              "work": "\\(\\boxed{\\$38,573}\\)"
-            }
-          ],
-          "keyPoints": [
-            {
-              "text": "$42,000",
-              "note": "Taxable income equals gross income minus allowable deductions."
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
-            "school": "Year 9 Mathematics 5.3",
-            "examType": "Task 3",
-            "grade": "9",
-            "sourceQuestion": "fm-q5i"
-          }
-        },
-        {
-          "id": "yr9t3-2023-fm-q5ii",
-          "type": "mc",
+          "id": "yr9t3-2023-fm-q5",
+          "type": "multipart",
           "difficulty": "medium",
-          "stem": "Mary earned $42,000 last year with allowable deductions of $3427. Find her tax payable using the table above.",
-          "options": [
-            "\\(\\$3,572.00\\)",
-            "\\(\\$5,007.73\\)",
-            "\\(\\$12,536.23\\)",
-            "\\(\\$4,083.23\\)"
-          ],
-          "answer": 3,
-          "hint": "Mary's taxable income is $38,573. Identify the tax bracket containing that amount, then apply its base tax and marginal rate.",
-          "steps": [
-            {
-              "explain": "Calculate taxable income and select its tax-table bracket.",
-              "work": "\\(42,000-3,427=38,573\\), which is in the \\(37,001\\text{–}90,000\\) bracket."
-            },
-            {
-              "explain": "Find the amount above $37,000 and multiply by $0.325.",
-              "work": "\\(38,573-37,000=1,573;\\quad 1,573(0.325)=511.225\\)"
-            },
-            {
-              "explain": "Add the base tax and round to the nearest cent.",
-              "work": "\\(3,572+511.225=\\boxed{\\$4,083.23}\\)"
-            }
-          ],
+          "stem": "Mary earned \\(\\$42,000\\) last year with allowable deductions of \\(\\$3,427\\).",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"150\" viewBox=\"0 0 380 150\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><rect x=\"12\" y=\"12\" width=\"356\" height=\"126\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\"/><text x=\"24\" y=\"42\" font-family=\"Arial\" font-size=\"14\" fill=\"#334155\">$37,001–$90,000: $3,572 + 32.5c per $1 over $37,000</text><text x=\"24\" y=\"72\" font-family=\"Arial\" font-size=\"13\" fill=\"#64748b\">Use this row for taxable income $38,573.</text><text x=\"24\" y=\"108\" font-family=\"Arial\" font-size=\"12\" fill=\"#64748b\">Source tax-table row reproduced from the exam.</text></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 540 160\" width=\"100%\" height=\"auto\" style=\"max-width:540px;display:block;margin:0 auto;\" role=\"img\" aria-label=\"Tax Table\">\n  <rect x=\"1\" y=\"1\" width=\"538\" height=\"158\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.2\"/>\n  <line x1=\"1\" y1=\"32\" x2=\"539\" y2=\"32\" stroke=\"#1e293b\" stroke-width=\"1\"/>\n  <line x1=\"1\" y1=\"64\" x2=\"539\" y2=\"64\" stroke=\"#1e293b\" stroke-width=\"1\"/>\n  <line x1=\"1\" y1=\"96\" x2=\"539\" y2=\"96\" stroke=\"#1e293b\" stroke-width=\"1\"/>\n  <line x1=\"1\" y1=\"128\" x2=\"539\" y2=\"128\" stroke=\"#1e293b\" stroke-width=\"1\"/>\n  <line x1=\"165\" y1=\"1\" x2=\"165\" y2=\"159\" stroke=\"#1e293b\" stroke-width=\"1\"/>\n  <text x=\"12\" y=\"16\" dominant-baseline=\"central\" font-family=\"system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif\" font-size=\"13\" fill=\"#1e293b\">$0 - $18,200</text>\n  <text x=\"175\" y=\"16\" dominant-baseline=\"central\" font-family=\"system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif\" font-size=\"13\" fill=\"#1e293b\">Nil</text>\n  <text x=\"12\" y=\"48\" dominant-baseline=\"central\" font-family=\"system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif\" font-size=\"13\" fill=\"#1e293b\">$18,201 - $37,000</text>\n  <text x=\"175\" y=\"48\" dominant-baseline=\"central\" font-family=\"system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif\" font-size=\"13\" fill=\"#1e293b\">19c for each $1 over $18,200</text>\n  <text x=\"12\" y=\"80\" dominant-baseline=\"central\" font-family=\"system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif\" font-size=\"13\" fill=\"#1e293b\">$37,001 - $90,000</text>\n  <text x=\"175\" y=\"80\" dominant-baseline=\"central\" font-family=\"system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif\" font-size=\"13\" fill=\"#1e293b\">$3,572 plus 32.5c for each $1 over $37,000</text>\n  <text x=\"12\" y=\"112\" dominant-baseline=\"central\" font-family=\"system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif\" font-size=\"13\" fill=\"#1e293b\">$90,001 - $180,000</text>\n  <text x=\"175\" y=\"112\" dominant-baseline=\"central\" font-family=\"system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif\" font-size=\"13\" fill=\"#1e293b\">$20,797 plus 37c for each $1 over $90,000</text>\n  <text x=\"12\" y=\"144\" dominant-baseline=\"central\" font-family=\"system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif\" font-size=\"13\" fill=\"#1e293b\">$180,001 and over</text>\n  <text x=\"175\" y=\"144\" dominant-baseline=\"central\" font-family=\"system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif\" font-size=\"13\" fill=\"#1e293b\">$54,097 plus 45c for every $1 over $180,000</text>\n</svg>"
           },
-          "keyPoints": [
-            {
-              "text": "$42,000",
-              "note": "Use $38,573 from the taxable-income calculation to find the matching tax-table row."
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
           "meta": {
             "source": "Year 9 Mathematics 5.3 Task 3, 2023",
             "school": "Year 9 Mathematics 5.3",
             "examType": "Task 3",
             "grade": "9",
-            "sourceQuestion": "fm-q5ii"
-          }
+            "sourceQuestion": "fm-q5"
+          },
+          "parts": [
+            {
+              "id": "yr9t3-2023-fm-q5i",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Find her taxable income.",
+              "options": [
+                "\\(\\$45,427\\)",
+                "\\(\\$3,427\\)",
+                "\\(\\$38,573\\)",
+                "\\(\\$42,000\\)"
+              ],
+              "answer": 2,
+              "hint": "Taxable income equals gross income minus allowable deductions.",
+              "steps": [
+                {
+                  "explain": "Identify gross income and allowable deductions.",
+                  "work": "\\(\\text{Gross income}=\\$42,000,\\quad\\text{Deductions}=\\$3,427\\)"
+                },
+                {
+                  "explain": "Subtract deductions from gross income to find taxable income.",
+                  "work": "\\(42,000-3,427=\\boxed{\\$38,573}\\)"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "$42,000",
+                  "note": "Taxable income equals gross income minus allowable deductions."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+                "school": "Year 9 Mathematics 5.3",
+                "examType": "Task 3",
+                "grade": "9",
+                "sourceQuestion": "fm-q5i"
+              }
+            },
+            {
+              "id": "yr9t3-2023-fm-q5ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find her tax payable using the table.",
+              "options": [
+                "\\(\\$3,572.00\\)",
+                "\\(\\$5,007.73\\)",
+                "\\(\\$12,536.23\\)",
+                "\\(\\$4,083.23\\)"
+              ],
+              "answer": 3,
+              "hint": "Mary's taxable income is $38,573. Identify the tax bracket containing that amount, then apply its base tax and marginal rate.",
+              "steps": [
+                {
+                  "explain": "Locate Mary's taxable income ($38,573) in the tax table.",
+                  "work": "\\(\\$38,573\\text{ falls in the }\\$37,001\\text{ to }\\$90,000\\text{ tax bracket.}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 540 160\" width=\"100%\" height=\"auto\" style=\"max-width:540px;display:block;margin:0 auto;\" role=\"img\" aria-label=\"Tax Table with highlighted row\">\n  <rect x=\"1\" y=\"1\" width=\"538\" height=\"158\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.2\"/>\n  <!-- Highlight $37,001 - $90,000 row -->\n  <rect x=\"1\" y=\"65\" width=\"538\" height=\"31\" fill=\"#fef3c7\"/>\n  <line x1=\"1\" y1=\"32\" x2=\"539\" y2=\"32\" stroke=\"#1e293b\" stroke-width=\"1\"/>\n  <line x1=\"1\" y1=\"64\" x2=\"539\" y2=\"64\" stroke=\"#1e293b\" stroke-width=\"1\"/>\n  <line x1=\"1\" y1=\"96\" x2=\"539\" y2=\"96\" stroke=\"#1e293b\" stroke-width=\"1\"/>\n  <line x1=\"1\" y1=\"128\" x2=\"539\" y2=\"128\" stroke=\"#1e293b\" stroke-width=\"1\"/>\n  <line x1=\"165\" y1=\"1\" x2=\"165\" y2=\"159\" stroke=\"#1e293b\" stroke-width=\"1\"/>\n  <text x=\"12\" y=\"16\" dominant-baseline=\"central\" font-family=\"system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif\" font-size=\"13\" fill=\"#1e293b\">$0 - $18,200</text>\n  <text x=\"175\" y=\"16\" dominant-baseline=\"central\" font-family=\"system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif\" font-size=\"13\" fill=\"#1e293b\">Nil</text>\n  <text x=\"12\" y=\"48\" dominant-baseline=\"central\" font-family=\"system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif\" font-size=\"13\" fill=\"#1e293b\">$18,201 - $37,000</text>\n  <text x=\"175\" y=\"48\" dominant-baseline=\"central\" font-family=\"system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif\" font-size=\"13\" fill=\"#1e293b\">19c for each $1 over $18,200</text>\n  <text x=\"12\" y=\"80\" dominant-baseline=\"central\" font-family=\"system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#b45309\">$37,001 - $90,000</text>\n  <text x=\"175\" y=\"80\" dominant-baseline=\"central\" font-family=\"system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#b45309\">$3,572 plus 32.5c for each $1 over $37,000</text>\n  <text x=\"12\" y=\"112\" dominant-baseline=\"central\" font-family=\"system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif\" font-size=\"13\" fill=\"#1e293b\">$90,001 - $180,000</text>\n  <text x=\"175\" y=\"112\" dominant-baseline=\"central\" font-family=\"system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif\" font-size=\"13\" fill=\"#1e293b\">$20,797 plus 37c for each $1 over $90,000</text>\n  <text x=\"12\" y=\"144\" dominant-baseline=\"central\" font-family=\"system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif\" font-size=\"13\" fill=\"#1e293b\">$180,001 and over</text>\n  <text x=\"175\" y=\"144\" dominant-baseline=\"central\" font-family=\"system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif\" font-size=\"13\" fill=\"#1e293b\">$54,097 plus 45c for every $1 over $180,000</text>\n</svg>"
+                  }
+                },
+                {
+                  "explain": "Calculate tax on the excess over $37,000 at 32.5 cents per dollar ($0.325).",
+                  "work": "\\(3,572+0.325(38,573-37,000)=3,572+0.325(1,573)=3,572+511.225\\)"
+                },
+                {
+                  "explain": "Round to the nearest cent and state the tax payable.",
+                  "work": "\\(\\boxed{\\$4,083.23}\\)"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "37,001–90,000",
+                  "note": "Use $38,573 from the taxable-income calculation to find the matching tax-table row."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+                "school": "Year 9 Mathematics 5.3",
+                "examType": "Task 3",
+                "grade": "9",
+                "sourceQuestion": "fm-q5ii"
+              }
+            }
+          ]
         },
         {
           "id": "yr9t3-2023-fm-q6i",

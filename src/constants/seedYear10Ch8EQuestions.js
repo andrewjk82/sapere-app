@@ -2468,33 +2468,30 @@ export const Y10_CH8E_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 180,
-    "question": "Analyze the congruent triangles in the symmetric figure shown.\na) Prove that \\(\\Delta DFB \\equiv \\Delta EFB\\).",
-    "answer": "",
-    "hint": "Write a full structured solution for the teacher to mark.",
+    "question": "Analyze the congruent triangles in the symmetric figure shown.<br><br>Prove that \\(\\Delta DFB \\equiv \\Delta EFB\\).",
+    "answer": "In \\(\\Delta DFB\\) and \\(\\Delta EFB\\):\n1. \\(FB = FB\\) (common side)\n2. \\(\\angle DFB = \\angle EFB = 90^\\circ\\) (given \\(BF \\perp AC\\) at \\(F\\))\n3. \\(DF = EF\\) (by symmetry of the figure)\n\n\\(\\therefore \\Delta DFB \\equiv \\Delta EFB\\) by the SAS congruence test.",
+    "hint": "Identify the shared side FB, the right angles at F, and the equal segments DF and EF by symmetry.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "State the triangles: Identify the triangles you are comparing, e.g., \\(\\Delta ABC\\) and \\(\\Delta DEF\\).",
-        "workingOut": "\\text{In } \\Delta ABC \\text{ and } \\Delta DEF:",
+        "explanation": "Identify the shared side and right angles.",
+        "workingOut": "\\(FB\\text{ is common to both triangles, and }\\angle DFB = \\angle EFB = 90^\\circ\\text{ (since }BF \\perp AC\\text{ at }F\\).\\)",
         "graphData": null
       },
       {
-        "explanation": "List conditions or set up the ratio: State the three matching parts (with reasons) or the similarity ratio fraction.",
-        "workingOut": "\\text{Identify SSS, SAS, AAS, RHS, or set up } \\frac{x}{a} = \\frac{y}{b}",
+        "explanation": "Identify the equal base segments by symmetry.",
+        "workingOut": "\\(\\text{By the symmetry of the figure about line }FB,\\; DF = EF.\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve or Conclude: Conclude congruence/similarity with the appropriate test or solve for the unknown.",
-        "workingOut": "\\text{Therefore, } \\Delta ABC \\equiv \\Delta DEF \\text{ (Test)} \\text{ or } x = \\dots",
-        "graphData": null
-      },
-      {
-        "explanation": "Final Answer & Pitfall: Always ensure the vertices in your congruence or similarity statement are listed in exactly the matching order!",
-        "workingOut": "\\text{Final answer}",
+        "explanation": "Apply the SAS congruence test.",
+        "workingOut": "\\(\\text{Since }FB = FB,\\; \\angle DFB = \\angle EFB = 90^\\circ,\\text{ and }DF = EF,\\;\\therefore \\Delta DFB \\equiv \\Delta EFB\\text{ (SAS)}.\\)",
         "graphData": null
       }
     ],
-    "graphData": null,
+    "graphData": {
+      "svg": "<svg viewBox=\"-20 0 340 230\" width=\"100%\" height=\"auto\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Symmetric geometric figure with triangles\">\n  <polygon points=\"50,180 250,180 150,40\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <line x1=\"150\" y1=\"40\" x2=\"150\" y2=\"180\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <line x1=\"150\" y1=\"40\" x2=\"110\" y2=\"180\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <line x1=\"150\" y1=\"40\" x2=\"190\" y2=\"180\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <polyline points=\"140,180 140,170 150,170\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"93\" y1=\"111\" x2=\"101\" y2=\"117\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <line x1=\"99\" y1=\"103\" x2=\"107\" y2=\"109\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <line x1=\"193\" y1=\"109\" x2=\"201\" y2=\"103\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <line x1=\"199\" y1=\"117\" x2=\"207\" y2=\"111\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <line x1=\"80\" y1=\"174\" x2=\"80\" y2=\"186\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <line x1=\"220\" y1=\"174\" x2=\"220\" y2=\"186\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <circle cx=\"150\" cy=\"40\" r=\"3\" fill=\"#1e293b\"/>\n  <circle cx=\"50\" cy=\"180\" r=\"3\" fill=\"#1e293b\"/>\n  <circle cx=\"250\" cy=\"180\" r=\"3\" fill=\"#1e293b\"/>\n  <circle cx=\"110\" cy=\"180\" r=\"3\" fill=\"#1e293b\"/>\n  <circle cx=\"190\" cy=\"180\" r=\"3\" fill=\"#1e293b\"/>\n  <circle cx=\"150\" cy=\"180\" r=\"3\" fill=\"#1e293b\"/>\n  <text x=\"150\" y=\"26\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-weight=\"bold\" font-size=\"14\" fill=\"#1e293b\">B</text>\n  <text x=\"35\" y=\"195\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-weight=\"bold\" font-size=\"14\" fill=\"#1e293b\">A</text>\n  <text x=\"265\" y=\"195\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-weight=\"bold\" font-size=\"14\" fill=\"#1e293b\">C</text>\n  <text x=\"110\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-weight=\"bold\" font-size=\"14\" fill=\"#1e293b\">D</text>\n  <text x=\"190\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-weight=\"bold\" font-size=\"14\" fill=\"#1e293b\">E</text>\n  <text x=\"150\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-weight=\"bold\" font-size=\"14\" fill=\"#1e293b\">F</text>\n</svg>"
+    },
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -2506,33 +2503,31 @@ export const Y10_CH8E_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 180,
-    "question": "Analyze the congruent triangles in the symmetric figure shown.\nb) Prove that \\(\\Delta ABD \\equiv \\Delta CBE\\).",
-    "answer": "",
-    "hint": "Write a full structured solution for the teacher to mark.",
+    "question": "Analyze the congruent triangles in the symmetric figure shown.<br><br>Prove that \\(\\Delta ABD \\equiv \\Delta CBE\\).",
+    "answer": "In \\(\\Delta ABD\\) and \\(\\Delta CBE\\):\n1. \\(AB = CB\\) (given)\n2. \\(\\angle A = \\angle C\\) (base angles of isosceles \\(\\Delta ABC\\))\n3. \\(AD = CE\\) (given)\n\n\\(\\therefore \\Delta ABD \\equiv \\Delta CBE\\) by the SAS congruence test.",
+    "hint": "Use the fact that triangle ABC is isosceles with AB = CB, so the base angles opposite them are equal.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "State the triangles: Identify the triangles you are comparing, e.g., \\(\\Delta ABC\\) and \\(\\Delta DEF\\).",
-        "workingOut": "\\text{In } \\Delta ABC \\text{ and } \\Delta DEF:",
+        "explanation": "Identify given equal sides from the tick marks.",
+        "workingOut": "\\(AB = CB\\text{ (given by double ticks) and }AD = CE\\text{ (given by single ticks)}.\\)",
         "graphData": null
       },
       {
-        "explanation": "List conditions or set up the ratio: State the three matching parts (with reasons) or the similarity ratio fraction.",
-        "workingOut": "\\text{Identify SSS, SAS, AAS, RHS, or set up } \\frac{x}{a} = \\frac{y}{b}",
+        "explanation": "Identify equal angles in the isosceles triangle.",
+        "work": "\\(\\text{Since }AB = CB,\\; \\Delta ABC\\text{ is isosceles, so base angles opposite them are equal: }\\angle A = \\angle C.\\)",
+        "workingOut": "\\(\\text{Since }AB = CB,\\; \\Delta ABC\\text{ is isosceles, so base angles opposite them are equal: }\\angle A = \\angle C.\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve or Conclude: Conclude congruence/similarity with the appropriate test or solve for the unknown.",
-        "workingOut": "\\text{Therefore, } \\Delta ABC \\equiv \\Delta DEF \\text{ (Test)} \\text{ or } x = \\dots",
-        "graphData": null
-      },
-      {
-        "explanation": "Final Answer & Pitfall: Always ensure the vertices in your congruence or similarity statement are listed in exactly the matching order!",
-        "workingOut": "\\text{Final answer}",
+        "explanation": "Apply the SAS congruence test.",
+        "workingOut": "\\(\\text{In }\\Delta ABD\\text{ and }\\Delta CBE:\\; AB = CB,\\; \\angle A = \\angle C,\\; AD = CE.\\;\\therefore \\Delta ABD \\equiv \\Delta CBE\\text{ (SAS)}\\)",
         "graphData": null
       }
     ],
-    "graphData": null,
+    "graphData": {
+      "svg": "<svg viewBox=\"-20 0 340 230\" width=\"100%\" height=\"auto\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Symmetric geometric figure with triangles\">\n  <polygon points=\"50,180 250,180 150,40\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <line x1=\"150\" y1=\"40\" x2=\"150\" y2=\"180\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <line x1=\"150\" y1=\"40\" x2=\"110\" y2=\"180\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <line x1=\"150\" y1=\"40\" x2=\"190\" y2=\"180\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <polyline points=\"140,180 140,170 150,170\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"93\" y1=\"111\" x2=\"101\" y2=\"117\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <line x1=\"99\" y1=\"103\" x2=\"107\" y2=\"109\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <line x1=\"193\" y1=\"109\" x2=\"201\" y2=\"103\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <line x1=\"199\" y1=\"117\" x2=\"207\" y2=\"111\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <line x1=\"80\" y1=\"174\" x2=\"80\" y2=\"186\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <line x1=\"220\" y1=\"174\" x2=\"220\" y2=\"186\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <circle cx=\"150\" cy=\"40\" r=\"3\" fill=\"#1e293b\"/>\n  <circle cx=\"50\" cy=\"180\" r=\"3\" fill=\"#1e293b\"/>\n  <circle cx=\"250\" cy=\"180\" r=\"3\" fill=\"#1e293b\"/>\n  <circle cx=\"110\" cy=\"180\" r=\"3\" fill=\"#1e293b\"/>\n  <circle cx=\"190\" cy=\"180\" r=\"3\" fill=\"#1e293b\"/>\n  <circle cx=\"150\" cy=\"180\" r=\"3\" fill=\"#1e293b\"/>\n  <text x=\"150\" y=\"26\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-weight=\"bold\" font-size=\"14\" fill=\"#1e293b\">B</text>\n  <text x=\"35\" y=\"195\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-weight=\"bold\" font-size=\"14\" fill=\"#1e293b\">A</text>\n  <text x=\"265\" y=\"195\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-weight=\"bold\" font-size=\"14\" fill=\"#1e293b\">C</text>\n  <text x=\"110\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-weight=\"bold\" font-size=\"14\" fill=\"#1e293b\">D</text>\n  <text x=\"190\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-weight=\"bold\" font-size=\"14\" fill=\"#1e293b\">E</text>\n  <text x=\"150\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-weight=\"bold\" font-size=\"14\" fill=\"#1e293b\">F</text>\n</svg>"
+    },
     "isNew": true,
     "requiresManualGrading": true
   },
