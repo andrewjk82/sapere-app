@@ -207,33 +207,45 @@
           "id": "abb-y10-2025-t4-e2-q7",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "If P(x)=3x³−7x²+2x+4, divide P(x) by x−3. Give your answer in the form P(x)=Q(x)(x−3)+R(x).",
+          "stem": "If \\(P(x)=3x^3-7x^2+2x+4\\), divide \\(P(x)\\) by \\(x-3\\). Give your answer in the form \\(P(x)=Q(x)(x-3)+R(x)\\).",
           "options": [
-            "P(x)=(3x²+2x+8)(x−3)+28",
-            "P(x)=(3x²−2x+8)(x−3)+28",
-            "P(x)=(3x²+2x+8)(x−3)−28",
-            "P(x)=(3x²+2x−8)(x−3)+28"
+            "\\(P(x)=(3x^2+2x+8)(x-3)+28\\)",
+            "\\(P(x)=(3x^2-2x+8)(x-3)+28\\)",
+            "\\(P(x)=(3x^2+2x+8)(x-3)-28\\)",
+            "\\(P(x)=(3x^2+2x-8)(x-3)+28\\)"
           ],
           "answer": 0,
-          "hint": "Use synthetic division with 3; the final value is the remainder.",
+          "hint": "Set the divisor \\(x-3\\) equal to zero to find the synthetic value. Bring down the first coefficient, then multiply by \\(3\\) and add at each column. The last result is the remainder.",
           "steps": [
             {
-              "explain": "Use the coefficients 3,−7,2,4 and synthetic value 3.",
-              "work": "3 | 3  −7  2  4"
+              "explain": "For synthetic division, first find the value that makes the divisor zero. Then write the coefficients of the dividend in descending powers of \\(x\\), including a coefficient for every power.",
+              "work": "\\(x-3=0\\Rightarrow x=3\\)\n\\(P(x)=3x^3-7x^2+2x+4\\)\n\\(\\text{coefficients: }3,\\,-7,\\,2,\\,4\\)"
             },
             {
-              "explain": "Bring down and multiply-add across.",
-              "work": "3; then 2; then 8; remainder 28"
+              "explain": "Bring down the leading coefficient \\(3\\). Multiply it by the synthetic value \\(3\\), then add that product to the next coefficient \\(-7\\).",
+              "work": "\\(\\text{bring down: }3\\)\n\\(3\\times3=9\\)\n\\(-7+9=2\\)"
             },
             {
-              "explain": "Read quotient and remainder.",
-              "work": "Q(x)=3x²+2x+8; R=28"
+              "explain": "Use the new bottom value \\(2\\). Multiply it by \\(3\\), then add the product to the next original coefficient \\(2\\).",
+              "work": "\\(2\\times3=6\\)\n\\(2+6=8\\)"
+            },
+            {
+              "explain": "Multiply the latest bottom value \\(8\\) by \\(3\\), then add the product to the final original coefficient \\(4\\). The final bottom value is the remainder.",
+              "work": "\\(8\\times3=24\\)\n\\(4+24=28\\)\n\\(R(x)=28\\)"
+            },
+            {
+              "explain": "The bottom row before the final number gives the quotient coefficients, in descending powers. The final number is the remainder.",
+              "work": "\\(Q(x)=3x^2+2x+8\\)\n\\(R(x)=28\\)\n\\(P(x)=Q(x)(x-3)+R(x)\\)\n\\(P(x)=(3x^2+2x+8)(x-3)+28\\)"
+            },
+            {
+              "explain": "Check by multiplying out the quotient times the divisor and then adding the remainder. The result must match the original polynomial.",
+              "work": "\\((3x^2+2x+8)(x-3)+28\\)\n\\(=3x^3-9x^2+2x^2-6x+8x-24+28\\)\n\\(=3x^3-7x^2+2x+4\\)\n\\(=P(x)\\)"
             }
           ],
           "keyPoints": [
             {
-              "text": "divide P(x) by x−3",
-              "note": "Use 3 in synthetic division because x−3=0 at x=3."
+              "text": "divide \\(P(x)\\) by \\(x-3\\)",
+              "note": "Use synthetic value \\(3\\) because \\(x-3=0\\) when \\(x=3\\). The final synthetic-division result is the remainder."
             }
           ],
           "timeLimit": 60,
