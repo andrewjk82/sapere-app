@@ -16005,7 +16005,7 @@
           "difficulty": "medium",
           "stem": "The area of the triangle shown is 250 cm². What is the value of x, correct to the nearest whole number?",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><polygon points=\"55,165 300,165 182,45\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M164 63 A28 28 0 0 1 197 63\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"1.8\"/><text x=\"103\" y=\"99\" font-size=\"12\">30 cm</text><text x=\"207\" y=\"103\" font-size=\"12\">x cm</text><text x=\"165\" y=\"80\" font-size=\"11\">44°</text><text x=\"165\" y=\"183\" font-size=\"12\">28 cm</text></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><rect width=\"360\" height=\"220\" fill=\"#fff\"/><polygon points=\"55,165 300,165 182,45\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M55 165L182 45\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M182 45L300 165\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M163.8 62.2 A25 25 0 0 0 199.5 62.8\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><text x=\"169\" y=\"91\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#111827\">44°</text><text x=\"64\" y=\"104\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#111827\">30 cm</text><text x=\"257\" y=\"104\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#111827\">x cm</text><text x=\"161\" y=\"184\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#111827\">28 cm</text></svg>"
           },
           "options": [
             "11",
@@ -16017,16 +16017,25 @@
           "hint": "Use the area formula with the two sides that include the 44° angle. The 28 cm base is not needed for this calculation.",
           "steps": [
             {
-              "explain": "The 30 cm side and the unknown side x meet at the given 44° angle. The triangle-area formula uses that included angle.",
-              "work": "Area = 1/2 × a × b × sin(C)"
+              "explain": "Identify the two sides enclosing the 44° angle: 30 cm and x. The 28 cm side is opposite the angle, so it is not used in the area formula.",
+              "work": "Area = 1/2 × a × b × sin(C)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><rect width=\"360\" height=\"220\" fill=\"#fff\"/><polygon points=\"55,165 300,165 182,45\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M55 165L182 45\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"3\"/><path d=\"M182 45L300 165\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\"/><path d=\"M163.8 62.2 A25 25 0 0 0 199.5 62.8\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"2.2\"/><text x=\"169\" y=\"91\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#111827\">44°</text><text x=\"64\" y=\"104\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#111827\">30 cm</text><text x=\"257\" y=\"104\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#111827\">x cm</text><text x=\"161\" y=\"184\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#111827\">28 cm</text><text x=\"112\" y=\"202\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#9a3412\">Use 30 cm, x and included 44°</text></svg>"
+              }
             },
             {
-              "explain": "Substitute the known area, the 30 cm side, and the included angle, then isolate x.",
-              "work": "250 = 1/2 × 30 × x × sin(44°)\nx = 500 ÷ (30 sin 44°)"
+              "explain": "Use the triangle area formula with the included angle between 30 cm and x, then substitute the known area.",
+              "work": "250 = 1/2 × 30 × x × sin(44°)\nx = 500 ÷ (30 sin 44°)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><rect width=\"360\" height=\"220\" fill=\"#fff\"/><polygon points=\"55,165 300,165 182,45\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M55 165L182 45\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"3\"/><path d=\"M182 45L300 165\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\"/><path d=\"M163.8 62.2 A25 25 0 0 0 199.5 62.8\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"2.2\"/><text x=\"169\" y=\"91\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#111827\">44°</text><text x=\"64\" y=\"104\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#111827\">30 cm</text><text x=\"257\" y=\"104\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#111827\">x cm</text><text x=\"161\" y=\"184\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#111827\">28 cm</text><text x=\"116\" y=\"202\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#9a3412\">Area = ½ab sin C</text></svg>"
+              }
             },
             {
               "explain": "Evaluate and round to the nearest whole centimetre.",
-              "work": "x ≈ 24.0 cm\nNearest whole number: 24 cm"
+              "work": "x ≈ 24.0 cm\nNearest whole number: 24 cm",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><rect width=\"360\" height=\"220\" fill=\"#fff\"/><polygon points=\"55,165 300,165 182,45\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M55 165L182 45\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M182 45L300 165\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\"/><path d=\"M163.8 62.2 A25 25 0 0 0 199.5 62.8\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><text x=\"169\" y=\"91\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#111827\">44°</text><text x=\"64\" y=\"104\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#111827\">30 cm</text><text x=\"257\" y=\"104\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#111827\">x cm</text><text x=\"161\" y=\"184\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#111827\">28 cm</text><text x=\"155\" y=\"202\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#6d28d9\">x ≈ 24 cm</text></svg>"
+              }
             }
           ],
           "keyPoints": [
