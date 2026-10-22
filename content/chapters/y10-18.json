@@ -2578,34 +2578,43 @@
           "difficulty": "medium",
           "stem": "Year 10 students were surveyed about the time they usually spend on the internet over a weekend. The year group consists of 124 boys and 96 girls. What percentage of boys usually spend 6 or less hours on the internet over a weekend?",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#dbe3ed\" stroke-width=\"1\"><path d=\"M58 27V124M88 27V124M118 27V124M148 27V124M178 27V124M208 27V124M238 27V124M268 27V124\"/></g><g fill=\"#334155\" font-size=\"10\"><text x=\"12\" y=\"53\">Boys</text><text x=\"12\" y=\"98\">Girls</text></g><g stroke=\"#334155\" stroke-width=\"1.5\" fill=\"#dbeafe\"><path d=\"M58 48H268M58 93H238\"/><rect x=\"118\" y=\"38\" width=\"60\" height=\"20\"/><path d=\"M208 38V58\"/><rect x=\"118\" y=\"83\" width=\"60\" height=\"20\"/><path d=\"M148 83V103\"/></g><g fill=\"#475569\" font-size=\"8\"><text x=\"55\" y=\"137\">0</text><text x=\"85\" y=\"137\">1</text><text x=\"115\" y=\"137\">2</text><text x=\"145\" y=\"137\">3</text><text x=\"175\" y=\"137\">4</text><text x=\"205\" y=\"137\">5</text><text x=\"235\" y=\"137\">6</text><text x=\"265\" y=\"137\">7</text></g><text x=\"160\" y=\"155\" font-size=\"9\">Time (hours)</text></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"580\" height=\"190\" viewBox=\"0 0 580 190\"><rect width=\"580\" height=\"190\" fill=\"white\"/><g font-family=\"Arial,sans-serif\" fill=\"#334155\"><text x=\"20\" y=\"59\" font-size=\"13\" font-weight=\"700\">Boys</text><text x=\"20\" y=\"108\" font-size=\"13\">Girls</text></g><g stroke=\"#cbd5e1\" stroke-width=\"1\"><path d=\"M105 135H489\"/><path d=\"M105 131V140\"/><path d=\"M153 131V140\"/><path d=\"M201 131V140\"/><path d=\"M249 131V140\"/><path d=\"M297 131V140\"/><path d=\"M345 131V140\"/><path d=\"M393 131V140\"/><path d=\"M441 131V140\"/><path d=\"M489 131V140\"/></g><g font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#475569\" text-anchor=\"middle\"><text x=\"105\" y=\"153\">0</text><text x=\"153\" y=\"153\">1</text><text x=\"201\" y=\"153\">2</text><text x=\"249\" y=\"153\">3</text><text x=\"297\" y=\"153\">4</text><text x=\"345\" y=\"153\">5</text><text x=\"393\" y=\"153\">6</text><text x=\"441\" y=\"153\">7</text><text x=\"489\" y=\"153\">8</text></g><text x=\"297\" y=\"176\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">Time (hours)</text><g stroke=\"#334155\" stroke-width=\"1.8\" fill=\"none\"><path d=\"M153 53H201M393 53H441M153 43V63M441 43V63\"/><rect x=\"201\" y=\"42\" width=\"192\" height=\"22\" rx=\"1\" fill=\"#dbeafe\"/><path d=\"M345 42V64\"/></g><g stroke=\"#64748b\" stroke-width=\"1.6\" fill=\"none\"><path d=\"M105 102H201M345 102H393M105 92V112M393 92V112\"/><rect x=\"201\" y=\"91\" width=\"144\" height=\"22\" rx=\"1\" fill=\"#e2e8f0\"/><path d=\"M249 91V113\"/></g></svg>"
           },
           "options": [
-            "75%",
-            "25%",
-            "50%",
-            "100%"
+            "\\(75\\%\\)",
+            "\\(25\\%\\)",
+            "\\(50\\%\\)",
+            "\\(100\\%\\)"
           ],
           "answer": 0,
-          "hint": "On the boys’ box plot, 6 hours is the upper quartile.",
+          "hint": "On the boys’ box plot, find the right-hand edge of the box. It marks the upper quartile \\(Q_3\\), the value below which about three quarters of the data lie.",
           "steps": [
             {
-              "explain": "Read the boys’ upper quartile.",
-              "work": "Q₃=6 hours"
+              "explain": "Use the boys’ row of the box-and-whisker plot. The box shows the middle half of the data; its right-hand edge is the upper quartile \\(Q_3\\).",
+              "work": "\\(\\text{Boys: right edge of the box}=Q_3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"580\" height=\"190\" viewBox=\"0 0 580 190\"><rect width=\"580\" height=\"190\" fill=\"white\"/><rect x=\"12\" y=\"32\" width=\"496\" height=\"42\" rx=\"8\" fill=\"#eef2ff\"/><g font-family=\"Arial,sans-serif\" fill=\"#334155\"><text x=\"20\" y=\"59\" font-size=\"13\" font-weight=\"700\">Boys</text><text x=\"20\" y=\"108\" font-size=\"13\">Girls</text></g><g stroke=\"#cbd5e1\" stroke-width=\"1\"><path d=\"M105 135H489\"/><path d=\"M105 131V140\"/><path d=\"M153 131V140\"/><path d=\"M201 131V140\"/><path d=\"M249 131V140\"/><path d=\"M297 131V140\"/><path d=\"M345 131V140\"/><path d=\"M393 131V140\"/><path d=\"M441 131V140\"/><path d=\"M489 131V140\"/></g><g font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#475569\" text-anchor=\"middle\"><text x=\"105\" y=\"153\">0</text><text x=\"153\" y=\"153\">1</text><text x=\"201\" y=\"153\">2</text><text x=\"249\" y=\"153\">3</text><text x=\"297\" y=\"153\">4</text><text x=\"345\" y=\"153\">5</text><text x=\"393\" y=\"153\">6</text><text x=\"441\" y=\"153\">7</text><text x=\"489\" y=\"153\">8</text></g><text x=\"297\" y=\"176\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">Time (hours)</text><g stroke=\"#4f46e5\" stroke-width=\"1.8\" fill=\"none\"><path d=\"M153 53H201M393 53H441M153 43V63M441 43V63\"/><rect x=\"201\" y=\"42\" width=\"192\" height=\"22\" rx=\"1\" fill=\"#c7d2fe\"/><path d=\"M345 42V64\"/></g><g stroke=\"#64748b\" stroke-width=\"1.6\" fill=\"none\"><path d=\"M105 102H201M345 102H393M105 92V112M393 92V112\"/><rect x=\"201\" y=\"91\" width=\"144\" height=\"22\" rx=\"1\" fill=\"#e2e8f0\"/><path d=\"M249 91V113\"/></g></svg>"
+              }
             },
             {
-              "explain": "Three quarters of observations are at or below the upper quartile.",
-              "work": "Proportion=3/4"
+              "explain": "Read the scale at the right edge of the boys’ box. It is at \\(6\\) hours, so the question’s “6 or less” is the proportion at or below \\(Q_3\\).",
+              "work": "\\(Q_3=6\\text{ hours}\\)\n\\(\\text{6 hours or less}=\\text{at or below }Q_3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"580\" height=\"190\" viewBox=\"0 0 580 190\"><rect width=\"580\" height=\"190\" fill=\"white\"/><rect x=\"12\" y=\"32\" width=\"496\" height=\"42\" rx=\"8\" fill=\"#eef2ff\"/><g font-family=\"Arial,sans-serif\" fill=\"#334155\"><text x=\"20\" y=\"59\" font-size=\"13\" font-weight=\"700\">Boys</text><text x=\"20\" y=\"108\" font-size=\"13\">Girls</text></g><g stroke=\"#cbd5e1\" stroke-width=\"1\"><path d=\"M105 135H489\"/><path d=\"M105 131V140\"/><path d=\"M153 131V140\"/><path d=\"M201 131V140\"/><path d=\"M249 131V140\"/><path d=\"M297 131V140\"/><path d=\"M345 131V140\"/><path d=\"M393 131V140\"/><path d=\"M441 131V140\"/><path d=\"M489 131V140\"/></g><g font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#475569\" text-anchor=\"middle\"><text x=\"105\" y=\"153\">0</text><text x=\"153\" y=\"153\">1</text><text x=\"201\" y=\"153\">2</text><text x=\"249\" y=\"153\">3</text><text x=\"297\" y=\"153\">4</text><text x=\"345\" y=\"153\">5</text><text x=\"393\" y=\"153\">6</text><text x=\"441\" y=\"153\">7</text><text x=\"489\" y=\"153\">8</text></g><text x=\"297\" y=\"176\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">Time (hours)</text><g stroke=\"#4f46e5\" stroke-width=\"1.8\" fill=\"none\"><path d=\"M153 53H201M393 53H441M153 43V63M441 43V63\"/><rect x=\"201\" y=\"42\" width=\"192\" height=\"22\" rx=\"1\" fill=\"#c7d2fe\"/><path d=\"M345 42V64\"/></g><g stroke=\"#64748b\" stroke-width=\"1.6\" fill=\"none\"><path d=\"M105 102H201M345 102H393M105 92V112M393 92V112\"/><rect x=\"201\" y=\"91\" width=\"144\" height=\"22\" rx=\"1\" fill=\"#e2e8f0\"/><path d=\"M249 91V113\"/></g><circle cx=\"393\" cy=\"53\" r=\"5\" fill=\"#f97316\" stroke=\"white\" stroke-width=\"1.5\"/><path d=\"M393 45V27H437\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"1.7\"/><text x=\"441\" y=\"31\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#c2410c\">Q₃ = 6 h</text></svg>"
+              }
             },
             {
-              "explain": "Convert to a percentage.",
-              "work": "3/4×100%=75%"
+              "explain": "The upper quartile is the 75th percentile. Convert that proportion to a percentage to answer the question.",
+              "work": "\\(\\text{proportion}=\\frac{3}{4}\\)\n\\(\\text{percentage}=\\frac{3}{4}\\times100\\%=75\\%\\)\n\\(\\boxed{75\\%}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"580\" height=\"190\" viewBox=\"0 0 580 190\"><rect width=\"580\" height=\"190\" fill=\"white\"/><rect x=\"12\" y=\"32\" width=\"496\" height=\"42\" rx=\"8\" fill=\"#eef2ff\"/><g font-family=\"Arial,sans-serif\" fill=\"#334155\"><text x=\"20\" y=\"59\" font-size=\"13\" font-weight=\"700\">Boys</text><text x=\"20\" y=\"108\" font-size=\"13\">Girls</text></g><g stroke=\"#cbd5e1\" stroke-width=\"1\"><path d=\"M105 135H489\"/><path d=\"M105 131V140\"/><path d=\"M153 131V140\"/><path d=\"M201 131V140\"/><path d=\"M249 131V140\"/><path d=\"M297 131V140\"/><path d=\"M345 131V140\"/><path d=\"M393 131V140\"/><path d=\"M441 131V140\"/><path d=\"M489 131V140\"/></g><g font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#475569\" text-anchor=\"middle\"><text x=\"105\" y=\"153\">0</text><text x=\"153\" y=\"153\">1</text><text x=\"201\" y=\"153\">2</text><text x=\"249\" y=\"153\">3</text><text x=\"297\" y=\"153\">4</text><text x=\"345\" y=\"153\">5</text><text x=\"393\" y=\"153\">6</text><text x=\"441\" y=\"153\">7</text><text x=\"489\" y=\"153\">8</text></g><text x=\"297\" y=\"176\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">Time (hours)</text><g stroke=\"#4f46e5\" stroke-width=\"1.8\" fill=\"none\"><path d=\"M153 53H201M393 53H441M153 43V63M441 43V63\"/><rect x=\"201\" y=\"42\" width=\"192\" height=\"22\" rx=\"1\" fill=\"#c7d2fe\"/><path d=\"M345 42V64\"/></g><g stroke=\"#64748b\" stroke-width=\"1.6\" fill=\"none\"><path d=\"M105 102H201M345 102H393M105 92V112M393 92V112\"/><rect x=\"201\" y=\"91\" width=\"144\" height=\"22\" rx=\"1\" fill=\"#e2e8f0\"/><path d=\"M249 91V113\"/></g><circle cx=\"393\" cy=\"53\" r=\"5\" fill=\"#f97316\" stroke=\"white\" stroke-width=\"1.5\"/><path d=\"M393 45V27H437\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"1.7\"/><text x=\"441\" y=\"31\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#c2410c\">Q₃ = 6 h</text><text x=\"393\" y=\"76\" font-family=\"Arial,sans-serif\" font-size=\"10\" text-anchor=\"middle\" fill=\"#c2410c\">75% at or below</text></svg>"
+              }
             }
           ],
           "keyPoints": [
             {
               "text": "6 or less hours",
-              "note": "The upper quartile leaves about 75% of data below it."
+              "note": "The boys’ upper quartile is \\(Q_3=6\\) hours; about \\(75\\%\\) of observations are at or below it."
             }
           ],
           "timeLimit": 60,
