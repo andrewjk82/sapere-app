@@ -67,6 +67,65 @@
               "note": "Perpendicular: N = mg cos θ. Along: F_net = T − μN − mg sin θ."
             }
           ]
+        },
+        {
+          "id": "barker2025-ext2-q16d",
+          "type": "review",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "An object of mass \\(m\\) rests on a plane inclined at a variable angle \\(\\theta\\) from the horizontal. It experiences a friction force, \\(F\\), and a normal force, \\(N\\). The friction force is \\(F=\\mu N\\) where \\(\\mu\\) is constant. The normal force, \\(N\\), is equal in magnitude to the force the object exerts on the plane perpendicular to the plane. Let \\(\\alpha\\) be the maximal angle that the plane can be tilted before the object begins to slide down the plane.\n\nFor some \\(\\theta\\gt\\alpha\\), a horizontal force \\(H\\) is applied to the object so that if \\(H\\) is sufficiently large, then the object will slide up the plane and if \\(H\\) is sufficiently small, then the object will slide down the plane.\n\nShow that, for the object to remain motionless, \\(H\\) must satisfy \\(mg\\tan(\\theta-\\alpha)\\le H\\le mg\\tan(\\theta+\\alpha)\\)",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 250\" width=\"340\" height=\"250\"><defs><marker id=\"ah1e293b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#1e293b\"/></marker></defs><rect width=\"340\" height=\"250\" rx=\"8\" fill=\"white\"/><line x1=\"30.0\" y1=\"220.0\" x2=\"320.0\" y2=\"220.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"220.0\" x2=\"312.5\" y2=\"69.8\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M162.4 149.6L197.8 130.8L179.0 95.5L143.7 114.3Z\" fill=\"white\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linejoin=\"round\" fill-opacity=\"1\"/><circle cx=\"170.7\" cy=\"122.5\" r=\"3\" fill=\"#1e293b\"/><text x=\"80.0\" y=\"214.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"15.7\" fill=\"#1e293b\" font-style=\"italic\">θ</text><line x1=\"170.7\" y1=\"122.5\" x2=\"141.6\" y2=\"67.8\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><text x=\"124.7\" y=\"63.8\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">N</text><line x1=\"170.7\" y1=\"122.5\" x2=\"170.7\" y2=\"184.5\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><text x=\"176.7\" y=\"196.5\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">mg</text><line x1=\"170.7\" y1=\"122.5\" x2=\"225.5\" y2=\"93.4\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><text x=\"229.5\" y=\"87.4\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">F</text></svg>"
+          },
+          "hint": "μ = tan α from the limiting case; then N = H sin θ + mg cos θ, and write the 'no slide up' and 'no slide down' inequalities.",
+          "steps": [
+            {
+              "explain": "First find \\(\\mu\\). At the maximal angle \\(\\alpha\\) (no \\(H\\)), friction is at its limit and balances the slope component of gravity.",
+              "work": "\\(F=mg\\sin\\alpha,\\quad N=mg\\cos\\alpha\\ \\Rightarrow\\ \\mu=\\frac{F}{N}=\\tan\\alpha\\)"
+            },
+            {
+              "explain": "Now apply \\(H\\) horizontally at angle \\(\\theta\\). Resolve perpendicular to the plane: both \\(H\\) and gravity push into the plane.",
+              "work": "\\(N=H\\sin\\theta+mg\\cos\\theta\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 250\" width=\"340\" height=\"250\"><defs><marker id=\"ah16a34a\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#16a34a\"/></marker><marker id=\"ah1e293b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#1e293b\"/></marker><marker id=\"ah2563eb\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#2563eb\"/></marker><marker id=\"ahdc2626\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#dc2626\"/></marker></defs><rect width=\"340\" height=\"250\" rx=\"8\" fill=\"white\"/><line x1=\"30.0\" y1=\"220.0\" x2=\"320.0\" y2=\"220.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"220.0\" x2=\"312.5\" y2=\"69.8\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M162.4 149.6L197.8 130.8L179.0 95.5L143.7 114.3Z\" fill=\"white\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linejoin=\"round\" fill-opacity=\"1\"/><circle cx=\"170.7\" cy=\"122.5\" r=\"3\" fill=\"#1e293b\"/><text x=\"80.0\" y=\"214.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"15.7\" fill=\"#1e293b\" font-style=\"italic\">θ</text><line x1=\"170.7\" y1=\"122.5\" x2=\"141.6\" y2=\"67.8\" stroke=\"#16a34a\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ah16a34a)\"/><text x=\"124.7\" y=\"63.8\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#16a34a\" font-style=\"italic\">N</text><line x1=\"170.7\" y1=\"122.5\" x2=\"170.7\" y2=\"184.5\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><text x=\"176.7\" y=\"196.5\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">mg</text><line x1=\"170.7\" y1=\"122.5\" x2=\"240.7\" y2=\"122.5\" stroke=\"#2563eb\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ah2563eb)\"/><text x=\"246.7\" y=\"126.5\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#2563eb\" font-style=\"italic\">H</text><line x1=\"170.7\" y1=\"122.5\" x2=\"221.9\" y2=\"95.3\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ahdc2626)\"/><text x=\"204.0\" y=\"85.3\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#dc2626\" font-style=\"italic\">F</text><text x=\"20.0\" y=\"26.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#1e293b\">Along: </text><text x=\"57.5\" y=\"26.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#1e293b\" font-style=\"italic\">H</text><text x=\"68.5\" y=\"26.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#1e293b\"> cos </text><text x=\"93.7\" y=\"26.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#1e293b\" font-style=\"italic\">θ</text><text x=\"101.7\" y=\"26.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#1e293b\">,  </text><text x=\"111.4\" y=\"26.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#1e293b\" font-style=\"italic\">mg</text><text x=\"129.1\" y=\"26.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#1e293b\"> sin </text><text x=\"151.1\" y=\"26.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#1e293b\" font-style=\"italic\">θ</text><text x=\"159.0\" y=\"26.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#1e293b\">,  </text><text x=\"168.8\" y=\"26.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#1e293b\" font-style=\"italic\">F</text><text x=\"178.2\" y=\"26.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#1e293b\"> = </text><text x=\"191.7\" y=\"26.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#1e293b\" font-style=\"italic\">μN</text><text x=\"20.0\" y=\"46.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#1e293b\">Perp: </text><text x=\"52.0\" y=\"46.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#1e293b\" font-style=\"italic\">N</text><text x=\"62.2\" y=\"46.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#1e293b\"> = </text><text x=\"75.7\" y=\"46.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#1e293b\" font-style=\"italic\">H</text><text x=\"86.7\" y=\"46.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#1e293b\"> sin </text><text x=\"108.7\" y=\"46.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#1e293b\" font-style=\"italic\">θ</text><text x=\"116.6\" y=\"46.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#1e293b\"> + </text><text x=\"130.1\" y=\"46.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#1e293b\" font-style=\"italic\">mg</text><text x=\"147.8\" y=\"46.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#1e293b\"> cos </text><text x=\"173.1\" y=\"46.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#1e293b\" font-style=\"italic\">θ</text></svg>"
+              }
+            },
+            {
+              "explain": "No sliding up: the up-slope push \\(H\\cos\\theta\\) must not beat gravity plus maximum friction (friction acts down-slope).",
+              "work": "\\(H\\cos\\theta\\le mg\\sin\\theta+\\tan\\alpha\\left(H\\sin\\theta+mg\\cos\\theta\\right)\\)"
+            },
+            {
+              "explain": "Divide by \\(\\cos\\theta\\) and collect \\(H\\).",
+              "work": "\\(H\\left(1-\\tan\\theta\\tan\\alpha\\right)\\le mg\\left(\\tan\\theta+\\tan\\alpha\\right)\\ \\Rightarrow\\ H\\le mg\\,\\frac{\\tan\\theta+\\tan\\alpha}{1-\\tan\\theta\\tan\\alpha}=mg\\tan(\\theta+\\alpha)\\)"
+            },
+            {
+              "explain": "No sliding down: gravity's slope component must not beat \\(H\\cos\\theta\\) plus maximum friction (now acting up-slope).",
+              "work": "\\(mg\\sin\\theta\\le H\\cos\\theta+\\tan\\alpha\\left(H\\sin\\theta+mg\\cos\\theta\\right)\\)"
+            },
+            {
+              "explain": "Divide by \\(\\cos\\theta\\) and collect \\(H\\).",
+              "work": "\\(mg\\left(\\tan\\theta-\\tan\\alpha\\right)\\le H\\left(1+\\tan\\theta\\tan\\alpha\\right)\\ \\Rightarrow\\ H\\ge mg\\tan(\\theta-\\alpha)\\)"
+            },
+            {
+              "explain": "Together:",
+              "work": "\\(mg\\tan(\\theta-\\alpha)\\le H\\le mg\\tan(\\theta+\\alpha)\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Barker 2025 4U Trials & Solutions",
+            "school": "Barker College",
+            "year": 2025,
+            "number": "16(d)"
+          },
+          "answer": "At angle α (limiting): F = mg sin α, N = mg cos α ⇒ μ = tan α. With H at angle θ: N = H sin θ + mg cos θ. No sliding up: H cos θ ≤ mg sin θ + μN = mg sin θ + tan α(H sin θ + mg cos θ); dividing by cos θ: H(1 − tan θ tan α) ≤ mg(tan θ + tan α) ⇒ H ≤ mg tan(θ + α). No sliding down: mg sin θ ≤ H cos θ + tan α(H sin θ + mg cos θ) ⇒ mg(tan θ − tan α) ≤ H(1 + tan θ tan α) ⇒ H ≥ mg tan(θ − α).",
+          "manual": true,
+          "keyPoints": [
+            {
+              "text": "Show that, for the object to remain motionless",
+              "note": "First get μ = tan α. Then friction can act either way: write one inequality for each direction."
+            }
+          ]
         }
       ]
     },
@@ -74,13 +133,280 @@
       "topicId": "y12e2-7C",
       "code": "7C",
       "title": "Forces and Acceleration",
-      "questions": []
+      "questions": [
+        {
+          "id": "barker2025-ext2-q14c",
+          "type": "mc",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "A body of mass 1 kg is moving in a horizontal straight line and is acted on by a force \\(F=8x^3+36x\\) newtons, where \\(x\\) is the displacement of the body in metres, measured from the origin.\nIf the body is initially one metre to the right of the origin with velocity of 11 m/s, find the displacement function \\(x(t)\\).",
+          "hint": "v² turns out to be a perfect square, (2x² + 9)²; then integrate dt/dx = 1/(2x² + 9).",
+          "steps": [
+            {
+              "explain": "Mass 1 kg, so \\(\\ddot x=8x^3+36x\\). Use \\(\\ddot x=\\frac{d}{dx}(\\frac12v^2)\\).",
+              "work": "\\(\\tfrac12v^2=2x^4+18x^2+c\\)"
+            },
+            {
+              "explain": "At \\(x=1\\), \\(v=11\\).",
+              "work": "\\(\\tfrac{121}{2}=2+18+c\\Rightarrow c=\\tfrac{81}{2}\\ \\Rightarrow\\ v^2=4x^4+36x^2+81=\\left(2x^2+9\\right)^2\\)"
+            },
+            {
+              "explain": "Take the positive root, since \\(v=11\\gt 0\\) at \\(x=1\\) (and \\(2x^2+9\\) is never 0).",
+              "work": "\\(\\frac{dx}{dt}=2x^2+9\\)"
+            },
+            {
+              "explain": "Separate and integrate. Write \\(2x^2+9=2\\left(x^2+\\frac92\\right)\\), with \\(a=\\frac{3}{\\sqrt2}\\).",
+              "work": "\\(t=\\int\\frac{dx}{2x^2+9}=\\frac12\\cdot\\frac{\\sqrt2}{3}\\tan^{-1}\\frac{\\sqrt2x}{3}+C=\\frac{1}{3\\sqrt2}\\tan^{-1}\\frac{\\sqrt2x}{3}+C\\)"
+            },
+            {
+              "explain": "At \\(t=0\\), \\(x=1\\).",
+              "work": "\\(C=-\\frac{1}{3\\sqrt2}\\tan^{-1}\\frac{\\sqrt2}{3}\\ \\Rightarrow\\ 3\\sqrt2\\,t=\\tan^{-1}\\frac{\\sqrt2x}{3}-\\tan^{-1}\\frac{\\sqrt2}{3}\\)"
+            },
+            {
+              "explain": "Make \\(x\\) the subject.",
+              "work": "\\(x=\\frac{3}{\\sqrt2}\\tan\\left(3\\sqrt2\\,t+\\tan^{-1}\\frac{\\sqrt2}{3}\\right)\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Barker 2025 4U Trials & Solutions",
+            "school": "Barker College",
+            "year": 2025,
+            "number": "14(c)"
+          },
+          "options": [
+            "\\(x=\\frac{3}{\\sqrt2}\\tan\\left(t+\\tan^{-1}\\frac{\\sqrt2}{3}\\right)\\)",
+            "\\(x=\\frac{3}{\\sqrt2}\\tan\\left(\\frac{\\sqrt2}{3}t+\\tan^{-1}\\frac{\\sqrt2}{3}\\right)\\)",
+            "\\(x=\\frac{3}{\\sqrt2}\\tan\\left(3\\sqrt2\\,t+\\tan^{-1}\\frac{\\sqrt2}{3}\\right)\\)",
+            "\\(x=\\frac{3}{\\sqrt2}\\tan\\left(3\\sqrt2\\,t\\right)+1\\)"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "find the displacement function",
+              "note": "Use ẍ = d/dx(½v²); v² = (2x² + 9)². Then separate dx/dt = 2x² + 9."
+            }
+          ]
+        }
+      ]
     },
     {
       "topicId": "y12e2-7D",
       "code": "7D",
       "title": "Simple Harmonic Motion and Time",
-      "questions": []
+      "questions": [
+        {
+          "id": "barker2025-ext2-q12a",
+          "type": "multipart",
+          "stem": "Assume that the tides rise and fall in simple harmonic motion. At low tide the depth of water in a harbour was 6 m deep, and at high tide it was 10 m deep. Low tide was at 8:00 am and the high tide following it was at 3:00 pm.",
+          "meta": {
+            "source": "Barker 2025 4U Trials & Solutions",
+            "school": "Barker College",
+            "year": 2025,
+            "number": "12(a)"
+          },
+          "parts": [
+            {
+              "id": "barker2025-ext2-q12a-i",
+              "type": "mc",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "What is the amplitude of the motion?",
+              "hint": "Amplitude = half of (high − low).",
+              "steps": [
+                {
+                  "explain": "The amplitude is half the distance between the lowest and highest positions.",
+                  "work": "\\(a=\\frac{10-6}{2}=2\\ \\text{m}\\)"
+                },
+                {
+                  "explain": "4 m is the full range (high minus low), not the amplitude."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Barker 2025 4U Trials & Solutions",
+                "school": "Barker College",
+                "year": 2025,
+                "number": "12(a)(i)"
+              },
+              "options": [
+                "\\(4\\) m",
+                "\\(8\\) m",
+                "\\(10\\) m",
+                "\\(2\\) m"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "amplitude",
+                  "note": "Amplitude is half the range between low and high tide."
+                }
+              ]
+            },
+            {
+              "id": "barker2025-ext2-q12a-ii",
+              "type": "mc",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "What is the period of the motion?",
+              "hint": "Low to high is half a period.",
+              "steps": [
+                {
+                  "explain": "From low tide (8:00 am) to the next high tide (3:00 pm) is 7 hours — that is half a cycle.",
+                  "work": "\\(\\frac{T}{2}=7\\ \\text{h}\\)"
+                },
+                {
+                  "explain": "So the full period is",
+                  "work": "\\(T=14\\ \\text{hours}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Barker 2025 4U Trials & Solutions",
+                "school": "Barker College",
+                "year": 2025,
+                "number": "12(a)(ii)"
+              },
+              "options": [
+                "\\(12\\) hours",
+                "\\(3.5\\) hours",
+                "\\(14\\) hours",
+                "\\(7\\) hours"
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "period",
+                  "note": "Low tide to the next high tide is only half a cycle."
+                }
+              ]
+            },
+            {
+              "id": "barker2025-ext2-q12a-iii",
+              "type": "mc",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "What was the depth of the harbour at 11:30 am?",
+              "hint": "11:30 am is halfway between low and high tide.",
+              "steps": [
+                {
+                  "explain": "11:30 am is 3.5 hours after low tide — exactly halfway between low (8:00) and high (3:00).",
+                  "work": "\\(\\frac{7}{2}=3.5\\ \\text{h}\\)"
+                },
+                {
+                  "explain": "Halfway in time between an extreme and the next extreme, an SHM particle is at the centre of motion.",
+                  "work": "\\(\\text{centre}=\\frac{6+10}{2}=8\\ \\text{m}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Barker 2025 4U Trials & Solutions",
+                "school": "Barker College",
+                "year": 2025,
+                "number": "12(a)(iii)"
+              },
+              "options": [
+                "\\(6\\) m",
+                "\\(8\\) m",
+                "\\(7\\) m",
+                "\\(9\\) m"
+              ],
+              "answer": 1,
+              "keyPoints": [
+                {
+                  "text": "11:30 am",
+                  "note": "Halfway in time between low and high tide is the centre of the motion."
+                }
+              ]
+            },
+            {
+              "id": "barker2025-ext2-q12a-iv",
+              "type": "review",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Starting with \\(y=a\\cos(nt+\\alpha)+c\\) and by using your answers from parts (i), (ii) and (iii), show that the depth \\(y\\) m of the water in the harbour is given by \\(y=8-2\\cos\\left(\\frac{\\pi}{7}t\\right)\\) where \\(t\\) is the number of hours after 8:00 am.",
+              "hint": "a = 2, c = 8, n = 2π/14; find α from y = 6 at t = 0.",
+              "steps": [
+                {
+                  "explain": "From (i) and (iii): \\(a=2\\), \\(c=8\\). From (ii): period \\(\\frac{2\\pi}{n}=14\\).",
+                  "work": "\\(n=\\frac{2\\pi}{14}=\\frac{\\pi}{7}\\ \\Rightarrow\\ y=2\\cos\\left(\\frac{\\pi}{7}t+\\alpha\\right)+8\\)"
+                },
+                {
+                  "explain": "At \\(t=0\\) (8:00 am) it is low tide, \\(y=6\\).",
+                  "work": "\\(6=2\\cos\\alpha+8\\ \\Rightarrow\\ \\cos\\alpha=-1\\ \\Rightarrow\\ \\alpha=\\pi\\)"
+                },
+                {
+                  "explain": "Use \\(\\cos(A+\\pi)=-\\cos A\\).",
+                  "work": "\\(y=2\\cos\\left(\\frac{\\pi}{7}t+\\pi\\right)+8=8-2\\cos\\left(\\frac{\\pi}{7}t\\right)\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Barker 2025 4U Trials & Solutions",
+                "school": "Barker College",
+                "year": 2025,
+                "number": "12(a)(iv)"
+              },
+              "answer": "a = 2 (amplitude), c = 8 (centre), and \\(\\frac{2\\pi}{n}=14\\Rightarrow n=\\frac{\\pi}{7}\\). So \\(y=2\\cos\\left(\\frac{\\pi}{7}t+\\alpha\\right)+8\\). At t = 0 (low tide) y = 6: \\(6=2\\cos\\alpha+8\\Rightarrow\\cos\\alpha=-1\\Rightarrow\\alpha=\\pi\\). Then \\(y=2\\cos\\left(\\frac{\\pi}{7}t+\\pi\\right)+8=8-2\\cos\\left(\\frac{\\pi}{7}t\\right)\\).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "show that the depth",
+                  "note": "Use a = 2, centre c = 8, n = 2π/period, and low tide (y = 6) at t = 0 to find α."
+                }
+              ]
+            },
+            {
+              "id": "barker2025-ext2-q12a-v",
+              "type": "mc",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "A boat needs at least 9 m of water to pass through the harbour. Between which times after 8:00 am on this day could the ship navigate safely through the harbour?",
+              "hint": "Solve 8 − 2cos(πt/7) = 9, then convert hours to clock times.",
+              "steps": [
+                {
+                  "explain": "Set the depth equal to 9.",
+                  "work": "\\(9=8-2\\cos\\left(\\frac{\\pi}{7}t\\right)\\ \\Rightarrow\\ \\cos\\left(\\frac{\\pi}{7}t\\right)=-\\frac12\\)"
+                },
+                {
+                  "explain": "Within the first cycle \\(0\\le\\frac{\\pi}{7}t\\le2\\pi\\), \\(\\cos=-\\frac12\\) at \\(\\frac{2\\pi}{3}\\) and \\(\\frac{4\\pi}{3}\\).",
+                  "work": "\\(\\frac{\\pi}{7}t=\\frac{2\\pi}{3},\\ \\frac{4\\pi}{3}\\ \\Rightarrow\\ t=\\frac{14}{3},\\ \\frac{28}{3}\\)"
+                },
+                {
+                  "explain": "Convert to clock times: \\(\\frac{14}{3}\\) h = 4 h 40 min, \\(\\frac{28}{3}\\) h = 9 h 20 min after 8:00 am.",
+                  "work": "\\(8{:}00+4\\text{ h }40\\text{ min}=12{:}40\\ \\text{pm},\\qquad8{:}00+9\\text{ h }20\\text{ min}=5{:}20\\ \\text{pm}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 255\" width=\"340\" height=\"255\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"340\" height=\"255\" rx=\"8\" fill=\"white\"/><line x1=\"30.0\" y1=\"210.0\" x2=\"336.0\" y2=\"210.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"40.0\" y1=\"219.0\" x2=\"40.0\" y2=\"8.4\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"326.8\" y=\"202.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">t</text><text x=\"48.0\" y=\"20.4\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">y</text><line x1=\"180.0\" y1=\"206.0\" x2=\"180.0\" y2=\"214.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"176.6\" y=\"228.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">7</text><line x1=\"320.0\" y1=\"206.0\" x2=\"320.0\" y2=\"214.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"313.2\" y=\"228.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">14</text><line x1=\"36.0\" y1=\"102.0\" x2=\"44.0\" y2=\"102.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"25.2\" y=\"106.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">6</text><line x1=\"36.0\" y1=\"66.0\" x2=\"44.0\" y2=\"66.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"25.2\" y=\"70.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">8</text><line x1=\"36.0\" y1=\"30.0\" x2=\"44.0\" y2=\"30.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"18.5\" y=\"34.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">10</text><text x=\"34.0\" y=\"226.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">O</text><path d=\"M133.3 48.0L133.3 48.0L134.9 46.9L136.4 45.9L138.0 44.8L139.6 43.8L141.1 42.9L142.7 41.9L144.2 41.0L145.8 40.1L147.3 39.2L148.9 38.4L150.4 37.6L152.0 36.9L153.6 36.2L155.1 35.5L156.7 34.8L158.2 34.2L159.8 33.6L161.3 33.1L162.9 32.6L164.4 32.2L166.0 31.8L167.6 31.4L169.1 31.1L170.7 30.8L172.2 30.5L173.8 30.4L175.3 30.2L176.9 30.1L178.4 30.0L180.0 30.0L181.6 30.0L183.1 30.1L184.7 30.2L186.2 30.4L187.8 30.5L189.3 30.8L190.9 31.1L192.4 31.4L194.0 31.8L195.6 32.2L197.1 32.6L198.7 33.1L200.2 33.6L201.8 34.2L203.3 34.8L204.9 35.5L206.4 36.2L208.0 36.9L209.6 37.6L211.1 38.4L212.7 39.2L214.2 40.1L215.8 41.0L217.3 41.9L218.9 42.9L220.4 43.8L222.0 44.8L223.6 45.9L225.1 46.9L226.7 48.0L226.7 48.0Z\" fill=\"#bbf7d0\" stroke=\"none\" stroke-width=\"0\" stroke-linejoin=\"round\" fill-opacity=\"0.6\"/><path d=\"M40.0 102.0L41.4 102.0L42.8 101.9L44.2 101.8L45.6 101.7L47.0 101.6L48.4 101.4L49.8 101.1L51.2 100.9L52.6 100.6L54.0 100.2L55.4 99.9L56.8 99.5L58.2 99.0L59.6 98.6L61.0 98.1L62.4 97.5L63.8 97.0L65.2 96.4L66.6 95.8L68.0 95.1L69.4 94.4L70.8 93.7L72.2 93.0L73.6 92.2L75.0 91.5L76.4 90.6L77.8 89.8L79.2 88.9L80.6 88.1L82.0 87.2L83.4 86.2L84.8 85.3L86.2 84.3L87.6 83.3L89.0 82.3L90.4 81.3L91.8 80.3L93.2 79.3L94.6 78.2L96.0 77.1L97.4 76.0L98.8 75.0L100.2 73.9L101.6 72.7L103.0 71.6L104.4 70.5L105.8 69.4L107.2 68.3L108.6 67.1L110.0 66.0L111.4 64.9L112.8 63.7L114.2 62.6L115.6 61.5L117.0 60.4L118.4 59.3L119.8 58.1L121.2 57.0L122.6 56.0L124.0 54.9L125.4 53.8L126.8 52.7L128.2 51.7L129.6 50.7L131.0 49.7L132.4 48.7L133.8 47.7L135.2 46.7L136.6 45.8L138.0 44.8L139.4 43.9L140.8 43.1L142.2 42.2L143.6 41.4L145.0 40.5L146.4 39.8L147.8 39.0L149.2 38.3L150.6 37.6L152.0 36.9L153.4 36.2L154.8 35.6L156.2 35.0L157.6 34.5L159.0 33.9L160.4 33.4L161.8 33.0L163.2 32.5L164.6 32.1L166.0 31.8L167.4 31.4L168.8 31.1L170.2 30.9L171.6 30.6L173.0 30.4L174.4 30.3L175.8 30.2L177.2 30.1L178.6 30.0L180.0 30.0L181.4 30.0L182.8 30.1L184.2 30.2L185.6 30.3L187.0 30.4L188.4 30.6L189.8 30.9L191.2 31.1L192.6 31.4L194.0 31.8L195.4 32.1L196.8 32.5L198.2 33.0L199.6 33.4L201.0 33.9L202.4 34.5L203.8 35.0L205.2 35.6L206.6 36.2L208.0 36.9L209.4 37.6L210.8 38.3L212.2 39.0L213.6 39.8L215.0 40.5L216.4 41.4L217.8 42.2L219.2 43.1L220.6 43.9L222.0 44.8L223.4 45.8L224.8 46.7L226.2 47.7L227.6 48.7L229.0 49.7L230.4 50.7L231.8 51.7L233.2 52.7L234.6 53.8L236.0 54.9L237.4 56.0L238.8 57.0L240.2 58.1L241.6 59.3L243.0 60.4L244.4 61.5L245.8 62.6L247.2 63.7L248.6 64.9L250.0 66.0L251.4 67.1L252.8 68.3L254.2 69.4L255.6 70.5L257.0 71.6L258.4 72.7L259.8 73.9L261.2 75.0L262.6 76.0L264.0 77.1L265.4 78.2L266.8 79.3L268.2 80.3L269.6 81.3L271.0 82.3L272.4 83.3L273.8 84.3L275.2 85.3L276.6 86.2L278.0 87.2L279.4 88.1L280.8 88.9L282.2 89.8L283.6 90.6L285.0 91.5L286.4 92.2L287.8 93.0L289.2 93.7L290.6 94.4L292.0 95.1L293.4 95.8L294.8 96.4L296.2 97.0L297.6 97.5L299.0 98.1L300.4 98.6L301.8 99.0L303.2 99.5L304.6 99.9L306.0 100.2L307.4 100.6L308.8 100.9L310.2 101.1L311.6 101.4L313.0 101.6L314.4 101.7L315.8 101.8L317.2 101.9L318.6 102.0L320.0 102.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><line x1=\"40.0\" y1=\"48.0\" x2=\"326.0\" y2=\"48.0\" stroke=\"#dc2626\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"298.6\" y=\"42.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#dc2626\" font-style=\"italic\">y</text><text x=\"305.8\" y=\"42.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#dc2626\"> = 9</text><line x1=\"133.3\" y1=\"210.0\" x2=\"133.3\" y2=\"48.0\" stroke=\"#16a34a\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><circle cx=\"133.3\" cy=\"48.0\" r=\"4\" fill=\"#dc2626\"/><text x=\"128.1\" y=\"234.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#16a34a\">14</text><text x=\"130.5\" y=\"244.6\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#16a34a\">3</text><line x1=\"127.1\" y1=\"236.4\" x2=\"138.6\" y2=\"236.4\" stroke=\"#16a34a\" stroke-width=\"1.00\"/><line x1=\"226.7\" y1=\"210.0\" x2=\"226.7\" y2=\"48.0\" stroke=\"#16a34a\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><circle cx=\"226.7\" cy=\"48.0\" r=\"4\" fill=\"#dc2626\"/><text x=\"221.4\" y=\"234.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#16a34a\">28</text><text x=\"223.8\" y=\"244.6\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#16a34a\">3</text><line x1=\"220.4\" y1=\"236.4\" x2=\"231.9\" y2=\"236.4\" stroke=\"#16a34a\" stroke-width=\"1.00\"/><text x=\"244.0\" y=\"130.8\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#2563eb\" font-style=\"italic\">y</text><text x=\"251.2\" y=\"130.8\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#2563eb\"> = 8 − 2cos</text><text x=\"312.4\" y=\"124.8\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#2563eb\">π</text><text x=\"318.4\" y=\"124.8\" font-family=\"Times New Roman,Times,serif\" font-size=\"9.7\" fill=\"#2563eb\" font-style=\"italic\">t</text><text x=\"315.1\" y=\"135.4\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#2563eb\">7</text><line x1=\"311.4\" y1=\"127.2\" x2=\"323.4\" y2=\"127.2\" stroke=\"#2563eb\" stroke-width=\"1.00\"/></svg>"
+                  }
+                },
+                {
+                  "explain": "The depth is at least 9 m between these times (the top of the curve)."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Barker 2025 4U Trials & Solutions",
+                "school": "Barker College",
+                "year": 2025,
+                "number": "12(a)(v)"
+              },
+              "options": [
+                "Between 11:30 am and 6:30 pm",
+                "Between 12:20 pm and 5:40 pm",
+                "Between 1:00 pm and 5:00 pm",
+                "Between 12:40 pm and 5:20 pm"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "at least 9 m of water",
+                  "note": "Solve cos(πt/7) = −1/2 in the first cycle, then add the times to 8:00 am."
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "topicId": "y12e2-7E",
@@ -129,6 +455,139 @@
             {
               "text": "\\(\\ddot{x}=-12(x+3)\\)",
               "note": "Centre x = −3 and n² = 12. At the centre v² = n²a²."
+            }
+          ]
+        },
+        {
+          "id": "barker2025-ext2-q13c",
+          "type": "multipart",
+          "stem": "The acceleration of a particle \\(P\\) moving along the \\(x\\)-axis is given by \\(\\ddot{x}=4x^3-12x\\).",
+          "meta": {
+            "source": "Barker 2025 4U Trials & Solutions",
+            "school": "Barker College",
+            "year": 2025,
+            "number": "13(c)"
+          },
+          "parts": [
+            {
+              "id": "barker2025-ext2-q13c-i",
+              "type": "review",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "If \\(P\\) is initially at the origin with velocity \\(u\\), show that its velocity is given by \\(v^2=2x^4-12x^2+u^2\\).",
+              "hint": "Use ẍ = d/dx(½v²) and integrate.",
+              "steps": [
+                {
+                  "explain": "Use \\(\\ddot x=\\frac{d}{dx}\\left(\\frac12v^2\\right)\\).",
+                  "work": "\\(\\frac{d}{dx}\\left(\\tfrac12v^2\\right)=4x^3-12x\\)"
+                },
+                {
+                  "explain": "Integrate with respect to \\(x\\).",
+                  "work": "\\(\\tfrac12v^2=x^4-6x^2+c\\)"
+                },
+                {
+                  "explain": "At \\(x=0\\), \\(v=u\\).",
+                  "work": "\\(\\tfrac12u^2=c\\ \\Rightarrow\\ v^2=2x^4-12x^2+u^2\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Barker 2025 4U Trials & Solutions",
+                "school": "Barker College",
+                "year": 2025,
+                "number": "13(c)(i)"
+              },
+              "answer": "\\(\\frac{d}{dx}\\left(\\tfrac12v^2\\right)=4x^3-12x\\Rightarrow\\tfrac12v^2=x^4-6x^2+c\\). At x = 0, v = u: \\(c=\\tfrac12u^2\\). So \\(v^2=2x^4-12x^2+u^2\\).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "show that its velocity is given by",
+                  "note": "Write ẍ as d/dx(½v²), integrate, then use v = u at x = 0."
+                }
+              ]
+            },
+            {
+              "id": "barker2025-ext2-q13c-ii",
+              "type": "review",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "If \\(u=4\\), show that the particle oscillates within the interval \\(-\\sqrt2\\le x\\le\\sqrt2\\).",
+              "hint": "Factorise v² = 2(x² − 4)(x² − 2) and use v² ≥ 0.",
+              "steps": [
+                {
+                  "explain": "Substitute \\(u=4\\) and factorise.",
+                  "work": "\\(v^2=2x^4-12x^2+16=2\\left(x^4-6x^2+8\\right)=2\\left(x^2-4\\right)\\left(x^2-2\\right)\\)"
+                },
+                {
+                  "explain": "Since \\(v^2\\ge0\\), the particle can only be where the right side is non-negative: \\(|x|\\le\\sqrt2\\) or \\(|x|\\ge2\\). It starts at \\(x=0\\), and between \\(\\sqrt2\\) and 2 we would have \\(v^2\\lt 0\\), so it can never get past \\(\\pm\\sqrt2\\).",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 230\" width=\"330\" height=\"230\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"330\" height=\"230\" rx=\"8\" fill=\"white\"/><path d=\"M91.5 150.0L91.5 150.0L93.9 146.1L96.4 141.9L98.8 137.3L101.3 132.6L103.7 127.7L106.2 122.6L108.6 117.4L111.1 112.2L113.5 106.9L116.0 101.6L118.4 96.4L120.9 91.2L123.3 86.2L125.8 81.3L128.2 76.5L130.7 71.9L133.1 67.6L135.6 63.4L138.0 59.6L140.5 56.0L142.9 52.7L145.4 49.7L147.8 47.0L150.3 44.6L152.7 42.6L155.2 41.0L157.6 39.7L160.1 38.7L162.5 38.2L165.0 38.0L167.5 38.2L169.9 38.7L172.4 39.7L174.8 41.0L177.3 42.6L179.7 44.6L182.2 47.0L184.6 49.7L187.1 52.7L189.5 56.0L192.0 59.6L194.4 63.4L196.9 67.6L199.3 71.9L201.8 76.5L204.2 81.3L206.7 86.2L209.1 91.2L211.6 96.4L214.0 101.6L216.5 106.9L218.9 112.2L221.4 117.4L223.8 122.6L226.3 127.7L228.7 132.6L231.2 137.3L233.6 141.9L236.1 146.1L238.5 150.0L238.5 150.0Z\" fill=\"#bbf7d0\" stroke=\"none\" stroke-width=\"0\" stroke-linejoin=\"round\" fill-opacity=\"0.6\"/><line x1=\"14.2\" y1=\"150.0\" x2=\"315.8\" y2=\"150.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"165.0\" y1=\"174.5\" x2=\"165.0\" y2=\"27.5\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"304.1\" y=\"142.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">x</text><text x=\"173.0\" y=\"39.5\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">y</text><path d=\"M37.6 37.8L38.9 47.6L40.1 57.0L41.4 65.9L42.7 74.3L44.0 82.2L45.2 89.7L46.5 96.8L47.8 103.4L49.1 109.6L50.3 115.5L51.6 120.9L52.9 126.0L54.2 130.7L55.4 135.0L56.7 139.0L58.0 142.6L59.3 146.0L60.5 149.0L61.8 151.7L63.1 154.1L64.4 156.2L65.6 158.0L66.9 159.6L68.2 160.9L69.4 162.0L70.7 162.8L72.0 163.4L73.3 163.8L74.5 164.0L75.8 164.0L77.1 163.7L78.4 163.3L79.6 162.7L80.9 161.9L82.2 161.0L83.5 159.9L84.7 158.7L86.0 157.3L87.3 155.8L88.6 154.1L89.8 152.4L91.1 150.5L92.4 148.6L93.7 146.5L94.9 144.4L96.2 142.1L97.5 139.8L98.8 137.5L100.0 135.0L101.3 132.5L102.6 130.0L103.8 127.4L105.1 124.8L106.4 122.1L107.7 119.4L108.9 116.7L110.2 114.0L111.5 111.2L112.8 108.5L114.0 105.8L115.3 103.0L116.6 100.3L117.9 97.6L119.1 94.9L120.4 92.2L121.7 89.5L123.0 86.9L124.2 84.3L125.5 81.8L126.8 79.3L128.1 76.8L129.3 74.4L130.6 72.1L131.9 69.8L133.1 67.5L134.4 65.4L135.7 63.3L137.0 61.2L138.2 59.3L139.5 57.4L140.8 55.5L142.1 53.8L143.3 52.2L144.6 50.6L145.9 49.1L147.2 47.7L148.4 46.4L149.7 45.2L151.0 44.0L152.3 43.0L153.5 42.1L154.8 41.2L156.1 40.5L157.4 39.8L158.6 39.3L159.9 38.8L161.2 38.5L162.5 38.2L163.7 38.1L165.0 38.0L166.3 38.1L167.5 38.2L168.8 38.5L170.1 38.8L171.4 39.3L172.6 39.8L173.9 40.5L175.2 41.2L176.5 42.1L177.7 43.0L179.0 44.0L180.3 45.2L181.6 46.4L182.8 47.7L184.1 49.1L185.4 50.6L186.7 52.2L187.9 53.8L189.2 55.5L190.5 57.4L191.8 59.3L193.0 61.2L194.3 63.3L195.6 65.4L196.8 67.5L198.1 69.8L199.4 72.1L200.7 74.4L201.9 76.8L203.2 79.3L204.5 81.8L205.8 84.3L207.0 86.9L208.3 89.5L209.6 92.2L210.9 94.9L212.1 97.6L213.4 100.3L214.7 103.0L216.0 105.8L217.2 108.5L218.5 111.2L219.8 114.0L221.1 116.7L222.3 119.4L223.6 122.1L224.9 124.8L226.2 127.4L227.4 130.0L228.7 132.5L230.0 135.0L231.2 137.5L232.5 139.8L233.8 142.1L235.1 144.4L236.3 146.5L237.6 148.6L238.9 150.5L240.2 152.4L241.4 154.1L242.7 155.8L244.0 157.3L245.3 158.7L246.5 159.9L247.8 161.0L249.1 161.9L250.4 162.7L251.6 163.3L252.9 163.7L254.2 164.0L255.5 164.0L256.7 163.8L258.0 163.4L259.3 162.8L260.6 162.0L261.8 160.9L263.1 159.6L264.4 158.0L265.6 156.2L266.9 154.1L268.2 151.7L269.5 149.0L270.7 146.0L272.0 142.6L273.3 139.0L274.6 135.0L275.8 130.7L277.1 126.0L278.4 120.9L279.7 115.5L280.9 109.6L282.2 103.4L283.5 96.8L284.8 89.7L286.0 82.2L287.3 74.3L288.6 65.9L289.9 57.0L291.1 47.6L292.4 37.8\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><circle cx=\"61.0\" cy=\"150.0\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"54.1\" y=\"170.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#dc2626\">−2</text><circle cx=\"91.5\" cy=\"150.0\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"79.8\" y=\"170.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#dc2626\">−</text><path d=\"M86.8 166.2L88.6 165.2L90.9 171.4L93.4 159.6L102.1 159.6\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.00\" stroke-linejoin=\"round\"/><text x=\"94.4\" y=\"170.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#dc2626\">2</text><circle cx=\"238.5\" cy=\"150.0\" r=\"3.5\" fill=\"#dc2626\"/><path d=\"M230.4 166.2L232.2 165.2L234.5 171.4L237.0 159.6L245.7 159.6\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.00\" stroke-linejoin=\"round\"/><text x=\"238.0\" y=\"170.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#dc2626\">2</text><circle cx=\"269.0\" cy=\"150.0\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"265.6\" y=\"170.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#dc2626\">2</text><circle cx=\"165.0\" cy=\"38.0\" r=\"4\" fill=\"#dc2626\"/><text x=\"143.5\" y=\"42.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#dc2626\">16</text><text x=\"177.6\" y=\"198.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#2563eb\" font-style=\"italic\">v</text><text x=\"185.3\" y=\"193.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.2\" fill=\"#2563eb\">2</text><text x=\"190.3\" y=\"198.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#2563eb\"> = 2(</text><text x=\"214.5\" y=\"198.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#2563eb\" font-style=\"italic\">x</text><text x=\"222.2\" y=\"193.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.2\" fill=\"#2563eb\">2</text><text x=\"227.2\" y=\"198.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#2563eb\"> − 4)(</text><text x=\"255.5\" y=\"198.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#2563eb\" font-style=\"italic\">x</text><text x=\"263.2\" y=\"193.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.2\" fill=\"#2563eb\">2</text><text x=\"268.2\" y=\"198.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#2563eb\"> − 2)</text><text x=\"148.8\" y=\"108.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#16a34a\" font-style=\"italic\">v</text><text x=\"156.5\" y=\"103.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.2\" fill=\"#16a34a\">2</text><text x=\"161.5\" y=\"108.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#16a34a\"> ≥ 0</text></svg>"
+                  }
+                },
+                {
+                  "explain": "At \\(x=\\pm\\sqrt2\\) the particle stops (\\(v=0\\)). Check the acceleration there.",
+                  "work": "\\(\\ddot x=4x\\left(x^2-3\\right):\\quad x=\\sqrt2\\Rightarrow\\ddot x=-4\\sqrt2,\\qquad x=-\\sqrt2\\Rightarrow\\ddot x=4\\sqrt2\\)"
+                },
+                {
+                  "explain": "The acceleration points back towards the origin at each end, so the particle turns around. Hence it oscillates in \\(-\\sqrt2\\le x\\le\\sqrt2\\)."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Barker 2025 4U Trials & Solutions",
+                "school": "Barker College",
+                "year": 2025,
+                "number": "13(c)(ii)"
+              },
+              "answer": "With u = 4: \\(v^2=2x^4-12x^2+16=2(x^2-4)(x^2-2)\\). \\(v^2\\ge0\\) for \\(|x|\\le\\sqrt2\\) or \\(|x|\\ge2\\). Starting at x = 0 the particle is in \\(-\\sqrt2\\le x\\le\\sqrt2\\) and cannot pass beyond ±√2 (v² < 0 for √2 < |x| < 2). At x = ±√2, v = 0 and \\(\\ddot x=4x(x^2-3)=\\mp4\\sqrt2\\neq0\\), pointing back towards the origin, so it turns around and oscillates in \\(-\\sqrt2\\le x\\le\\sqrt2\\).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "oscillates within the interval",
+                  "note": "v² ≥ 0 restricts x; check v = 0 and the direction of ẍ at ±√2."
+                }
+              ]
+            },
+            {
+              "id": "barker2025-ext2-q13c-iii",
+              "type": "mc",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Is the motion referred to in part (ii) simple harmonic motion?\nGive a reason for your answer.",
+              "hint": "SHM needs ẍ = −n²(x − c) exactly.",
+              "steps": [
+                {
+                  "explain": "SHM requires the acceleration to be a negative constant times the displacement from a fixed centre.",
+                  "work": "\\(\\ddot x=-n^2(x-c)\\)"
+                },
+                {
+                  "explain": "Here the acceleration is cubic in \\(x\\).",
+                  "work": "\\(\\ddot x=4x^3-12x=4x\\left(x^2-3\\right)\\)"
+                },
+                {
+                  "explain": "It is not linear in \\(x\\), so the motion is not SHM — even though the particle does oscillate. Oscillating is not enough on its own."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Barker 2025 4U Trials & Solutions",
+                "school": "Barker College",
+                "year": 2025,
+                "number": "13(c)(iii)"
+              },
+              "options": [
+                "Yes: \\(\\ddot x\\) is zero at the centre \\(x=0\\).",
+                "No: the particle never comes to rest.",
+                "No: \\(\\ddot x=4x\\left(x^2-3\\right)\\) is not of the form \\(-n^2(x-c)\\).",
+                "Yes: the particle oscillates between two points."
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "simple harmonic motion",
+                  "note": "SHM means ẍ = −n²(x − c), a linear relationship. Is 4x³ − 12x linear?"
+                }
+              ]
             }
           ]
         }
@@ -181,6 +640,175 @@
             {
               "text": "\\(\\frac{dQ}{dt}=k(Q-A)\\)",
               "note": "Separate variables: ln|Q − A| = kt + c, so Q − A is an exponential in t."
+            }
+          ]
+        },
+        {
+          "id": "barker2025-ext2-q14a",
+          "type": "multipart",
+          "stem": "When an aircraft touches down on a runway, two different retarding forces combine to ultimately bring the aircraft to rest. There is a constant frictional force of \\(\\frac{-1}{5}M\\) newtons, where the mass of the aircraft is \\(M\\) kg. There is also a force of \\(\\frac{-1}{125}Mv^2\\) newtons, where \\(v\\) is the aircraft’s velocity in m/s, due to the reverse thrust of the engines. The reverse thrust of the engines is applied from 10 seconds after touchdown until the plane stops.",
+          "meta": {
+            "source": "Barker 2025 4U Trials & Solutions",
+            "school": "Barker College",
+            "year": 2025,
+            "number": "14(a)"
+          },
+          "parts": [
+            {
+              "id": "barker2025-ext2-q14a-i",
+              "type": "review",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "The aircraft’s speed at touchdown is 80 m/s.\nShow that, at the instant the reverse thrust of the engines takes effect, \\(v=78\\) m/s and the aircraft’s displacement from its touchdown point \\(x=790\\) m.",
+              "hint": "Before t = 10 only friction acts: ẍ = −0.2.",
+              "steps": [
+                {
+                  "explain": "For the first 10 seconds only friction acts.",
+                  "work": "\\(M\\ddot x=-\\tfrac15M\\ \\Rightarrow\\ \\ddot x=-0.2\\)"
+                },
+                {
+                  "explain": "Integrate with \\(v=80\\) at \\(t=0\\).",
+                  "work": "\\(v=-0.2t+80\\)"
+                },
+                {
+                  "explain": "Integrate again with \\(x=0\\) at \\(t=0\\).",
+                  "work": "\\(x=80t-0.1t^2\\)"
+                },
+                {
+                  "explain": "Substitute \\(t=10\\).",
+                  "work": "\\(v=80-2=78\\ \\text{m/s},\\qquad x=800-10=790\\ \\text{m}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Barker 2025 4U Trials & Solutions",
+                "school": "Barker College",
+                "year": 2025,
+                "number": "14(a)(i)"
+              },
+              "answer": "For 0 ≤ t ≤ 10 only friction acts: \\(M\\ddot x=-\\frac15M\\Rightarrow\\ddot x=-0.2\\). So \\(v=80-0.2t\\) and \\(x=80t-0.1t^2\\) (v = 80, x = 0 at t = 0). At t = 10: v = 80 − 2 = 78 m/s and x = 800 − 10 = 790 m.",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "at the instant the reverse thrust of the engines takes effect",
+                  "note": "For 0 ≤ t ≤ 10 only friction acts, giving constant deceleration 0.2 m/s²."
+                }
+              ]
+            },
+            {
+              "id": "barker2025-ext2-q14a-ii",
+              "type": "review",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Show that for \\(t\\gt 10\\), and until the aircraft stops, \\(\\frac{d^2x}{dt^2}=\\frac{-1}{125}\\left(25+v^2\\right)\\).",
+              "hint": "Add both forces in F = Ma and divide by M.",
+              "steps": [
+                {
+                  "explain": "After 10 s both retarding forces act. Newton's second law:",
+                  "work": "\\(M\\ddot x=-\\tfrac15M-\\tfrac{1}{125}Mv^2\\)"
+                },
+                {
+                  "explain": "Divide by \\(M\\) and use \\(\\frac15=\\frac{25}{125}\\).",
+                  "work": "\\(\\ddot x=-\\frac{25}{125}-\\frac{v^2}{125}=\\frac{-1}{125}\\left(25+v^2\\right)\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Barker 2025 4U Trials & Solutions",
+                "school": "Barker College",
+                "year": 2025,
+                "number": "14(a)(ii)"
+              },
+              "answer": "For t > 10 both forces act: \\(M\\ddot x=-\\frac15M-\\frac1{125}Mv^2\\Rightarrow\\ddot x=-\\frac15-\\frac{v^2}{125}=-\\frac{1}{125}(25+v^2)\\).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "for \\(t\\gt 10\\)",
+                  "note": "Now both the friction and the reverse-thrust force act."
+                }
+              ]
+            },
+            {
+              "id": "barker2025-ext2-q14a-iii",
+              "type": "review",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Show that when \\(t\\gt 10\\), \\(x=790+62.5\\left[\\ln6109-\\ln\\left(25+v^2\\right)\\right]\\).",
+              "hint": "Use ẍ = v dv/dx, flip to dx/dv, integrate, and use x = 790 at v = 78.",
+              "steps": [
+                {
+                  "explain": "Since the answer relates \\(x\\) and \\(v\\), use \\(\\ddot x=v\\frac{dv}{dx}\\).",
+                  "work": "\\(v\\frac{dv}{dx}=-\\frac{25+v^2}{125}\\ \\Rightarrow\\ \\frac{dx}{dv}=-\\frac{125v}{25+v^2}\\)"
+                },
+                {
+                  "explain": "Integrate: the numerator is a multiple of the derivative of \\(25+v^2\\).",
+                  "work": "\\(x=-\\frac{125}{2}\\int\\frac{2v}{25+v^2}\\,dv=-62.5\\ln\\left(25+v^2\\right)+c\\)"
+                },
+                {
+                  "explain": "Use \\(x=790\\) when \\(v=78\\) from (i): \\(25+78^2=6109\\).",
+                  "work": "\\(790=-62.5\\ln6109+c\\ \\Rightarrow\\ c=790+62.5\\ln6109\\)"
+                },
+                {
+                  "explain": "So",
+                  "work": "\\(x=790+62.5\\left[\\ln6109-\\ln\\left(25+v^2\\right)\\right]\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Barker 2025 4U Trials & Solutions",
+                "school": "Barker College",
+                "year": 2025,
+                "number": "14(a)(iii)"
+              },
+              "answer": "Use \\(\\ddot x=v\\frac{dv}{dx}\\): \\(v\\frac{dv}{dx}=-\\frac{25+v^2}{125}\\Rightarrow\\frac{dx}{dv}=-\\frac{125v}{25+v^2}\\Rightarrow x=-62.5\\ln(25+v^2)+c\\). At x = 790, v = 78 (25 + 78² = 6109): c = 790 + 62.5 ln 6109. So \\(x=790+62.5[\\ln6109-\\ln(25+v^2)]\\).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Show that when",
+                  "note": "The answer links x and v, so write ẍ = v dv/dx."
+                }
+              ]
+            },
+            {
+              "id": "barker2025-ext2-q14a-iv",
+              "type": "mc",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Calculate how far from the touchdown point the aircraft travels before it comes to rest. Answer to the nearest metre.",
+              "hint": "Put v = 0 into the formula from (iii).",
+              "steps": [
+                {
+                  "explain": "At rest \\(v=0\\), so \\(25+v^2=25\\).",
+                  "work": "\\(x=790+62.5\\left[\\ln6109-\\ln25\\right]=790+62.5\\ln\\frac{6109}{25}\\)"
+                },
+                {
+                  "explain": "Evaluate.",
+                  "work": "\\(\\ln\\frac{6109}{25}=\\ln244.36\\approx5.4986\\ \\Rightarrow\\ x\\approx790+343.67=1133.67\\)"
+                },
+                {
+                  "explain": "To the nearest metre: 1134 m. (344 m is only the distance after the reverse thrust starts.)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Barker 2025 4U Trials & Solutions",
+                "school": "Barker College",
+                "year": 2025,
+                "number": "14(a)(iv)"
+              },
+              "options": [
+                "\\(790\\) m",
+                "\\(1133\\) m",
+                "\\(344\\) m",
+                "\\(1134\\) m"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "before it comes to rest",
+                  "note": "At rest v = 0, so ln(25 + v²) = ln 25."
+                }
+              ]
             }
           ]
         }

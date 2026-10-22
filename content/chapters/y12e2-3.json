@@ -140,6 +140,114 @@
               "note": "Real coefficients ⇒ 3 − i and 1 + 2i are roots too; E is the product of all four roots."
             }
           ]
+        },
+        {
+          "id": "barker2025-ext2-q12b",
+          "type": "multipart",
+          "stem": "\\(P(z)=z^4-10z^3+117z^2-412z+1460\\).\n\\(P(z)\\) has zeroes \\(2a+bi\\) and \\(3a+2bi\\), where \\(a\\) and \\(b\\) are integers.",
+          "meta": {
+            "source": "Barker 2025 4U Trials & Solutions",
+            "school": "Barker College",
+            "year": 2025,
+            "number": "12(b)"
+          },
+          "parts": [
+            {
+              "id": "barker2025-ext2-q12b-i",
+              "type": "mc",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Find the values of \\(a\\) and \\(b\\) and hence find all the zeroes of \\(P(z)\\).",
+              "hint": "Use the sum of zeroes for a, then the product of zeroes for b.",
+              "steps": [
+                {
+                  "explain": "Real coefficients, so the conjugates are zeroes too.",
+                  "work": "\\(2a\\pm bi,\\qquad3a\\pm2bi\\)"
+                },
+                {
+                  "explain": "Sum of the zeroes \\(=-\\frac ba=10\\). The imaginary parts cancel.",
+                  "work": "\\(2(2a)+2(3a)=10a=10\\ \\Rightarrow\\ a=1\\)"
+                },
+                {
+                  "explain": "Product of the zeroes \\(=\\frac ea=1460\\). Multiply conjugate pairs: \\((p+qi)(p-qi)=p^2+q^2\\).",
+                  "work": "\\(\\left(4+b^2\\right)\\left(9+4b^2\\right)=1460\\ \\Rightarrow\\ 4b^4+25b^2+36=1460\\ \\Rightarrow\\ 4b^4+25b^2-1424=0\\)"
+                },
+                {
+                  "explain": "Solve as a quadratic in \\(b^2\\).",
+                  "work": "\\(b^2=\\frac{-25\\pm\\sqrt{625+22784}}{8}=\\frac{-25\\pm153}{8}=16\\) or \\(-\\tfrac{89}{4}\\)"
+                },
+                {
+                  "explain": "\\(b\\) is an integer, so \\(b^2=16\\), \\(b=\\pm4\\). The zeroes are \\(2\\pm4i\\) and \\(3\\pm8i\\).",
+                  "work": "\\(P(2+4i)=0,\\ P(3+8i)=0\\ \\checkmark\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Barker 2025 4U Trials & Solutions",
+                "school": "Barker College",
+                "year": 2025,
+                "number": "12(b)(i)"
+              },
+              "options": [
+                "\\(a=2,\\ b=\\pm2\\); zeroes \\(4\\pm2i,\\ 6\\pm4i\\)",
+                "\\(a=1,\\ b=\\pm16\\); zeroes \\(2\\pm16i,\\ 3\\pm32i\\)",
+                "\\(a=1,\\ b=\\pm4\\); zeroes \\(2\\pm4i,\\ 3\\pm8i\\)",
+                "\\(a=1,\\ b=\\pm4\\); zeroes \\(2\\pm4i,\\ 3\\pm4i\\)"
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "Find the values of \\(a\\) and \\(b\\)",
+                  "note": "Include the conjugates. Sum of zeroes gives a; product of zeroes gives a quadratic in b²."
+                }
+              ]
+            },
+            {
+              "id": "barker2025-ext2-q12b-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Factorise \\(P(z)\\) into its quadratic factors with real coefficients.",
+              "hint": "Each conjugate pair p ± qi gives z² − 2pz + (p² + q²).",
+              "steps": [
+                {
+                  "explain": "A conjugate pair \\(p\\pm qi\\) gives the factor \\(z^2-(\\text{sum})z+(\\text{product})=z^2-2pz+(p^2+q^2)\\)."
+                },
+                {
+                  "explain": "For \\(2\\pm4i\\): sum 4, product \\(4+16=20\\).",
+                  "work": "\\(z^2-4z+20\\)"
+                },
+                {
+                  "explain": "For \\(3\\pm8i\\): sum 6, product \\(9+64=73\\).",
+                  "work": "\\(z^2-6z+73\\)"
+                },
+                {
+                  "explain": "So",
+                  "work": "\\(P(z)=\\left(z^2-4z+20\\right)\\left(z^2-6z+73\\right)\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Barker 2025 4U Trials & Solutions",
+                "school": "Barker College",
+                "year": 2025,
+                "number": "12(b)(ii)"
+              },
+              "options": [
+                "\\(\\left(z^2-2z+20\\right)\\left(z^2-3z+73\\right)\\)",
+                "\\(\\left(z^2-4z+20\\right)\\left(z^2-6z+73\\right)\\)",
+                "\\(\\left(z^2+4z+20\\right)\\left(z^2+6z+73\\right)\\)",
+                "\\(\\left(z^2-4z+16\\right)\\left(z^2-6z+64\\right)\\)"
+              ],
+              "answer": 1,
+              "keyPoints": [
+                {
+                  "text": "quadratic factors with real coefficients",
+                  "note": "Pair each zero with its conjugate: z² − (sum)z + (product)."
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -401,6 +509,51 @@
                   "note": "Apply de Moivre to 2 cis(5π/6); 35π/6 − 6π = −π/6."
                 }
               ]
+            }
+          ]
+        },
+        {
+          "id": "barker2025-ext2-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "The argument of a complex number \\(z\\) is \\(\\frac{\\pi}{7}\\).\nWhat is \\(\\operatorname{Arg}\\left(z^{10}\\right)\\) equal to?",
+          "hint": "Multiply the argument by 10, then bring it into (−π, π] by subtracting 2π.",
+          "steps": [
+            {
+              "explain": "Write \\(z\\) in modulus–argument form.",
+              "work": "\\(z=r\\operatorname{cis}\\frac{\\pi}{7}\\)"
+            },
+            {
+              "explain": "By de Moivre's theorem, raising to the 10th power multiplies the argument by 10.",
+              "work": "\\(z^{10}=r^{10}\\operatorname{cis}\\frac{10\\pi}{7}\\)"
+            },
+            {
+              "explain": "\\(\\operatorname{Arg}\\) (capital A) means the principal argument, which must lie in \\((-\\pi,\\pi]\\). \\(\\frac{10\\pi}{7}\\gt\\pi\\), so subtract \\(2\\pi\\).",
+              "work": "\\(\\frac{10\\pi}{7}-2\\pi=\\frac{10\\pi-14\\pi}{7}=-\\frac{4\\pi}{7}\\)"
+            },
+            {
+              "explain": "So \\(\\operatorname{Arg}(z^{10})=\\frac{-4\\pi}{7}\\), option D. (\\(\\frac{3\\pi}{7}\\) comes from subtracting only \\(\\pi\\).)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Barker 2025 4U Trials & Solutions",
+            "school": "Barker College",
+            "year": 2025,
+            "number": "1"
+          },
+          "options": [
+            "\\(\\frac{3\\pi}{7}\\)",
+            "\\(\\frac{-3\\pi}{7}\\)",
+            "\\(\\frac{4\\pi}{7}\\)",
+            "\\(\\frac{-4\\pi}{7}\\)"
+          ],
+          "answer": 3,
+          "keyPoints": [
+            {
+              "text": "\\(\\operatorname{Arg}\\left(z^{10}\\right)\\)",
+              "note": "Capital-A Arg is the principal argument: it must be in (−π, π]."
             }
           ]
         }
@@ -886,6 +1039,135 @@
               ]
             }
           ]
+        },
+        {
+          "id": "barker2025-ext2-q11b",
+          "type": "multipart",
+          "stem": "",
+          "meta": {
+            "source": "Barker 2025 4U Trials & Solutions",
+            "school": "Barker College",
+            "year": 2025,
+            "number": "11(b)"
+          },
+          "parts": [
+            {
+              "id": "barker2025-ext2-q11b-i",
+              "type": "mc",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Using Euler’s formula, \\(e^{i\\theta}=\\cos\\theta+i\\sin\\theta\\), find an expression for \\(e^{-i\\theta}\\) in terms of \\(\\cos\\theta\\) and \\(\\sin\\theta\\).",
+              "hint": "Put −θ into Euler's formula; cos is even, sin is odd.",
+              "steps": [
+                {
+                  "explain": "Replace \\(\\theta\\) by \\(-\\theta\\) in Euler's formula.",
+                  "work": "\\(e^{-i\\theta}=\\cos(-\\theta)+i\\sin(-\\theta)\\)"
+                },
+                {
+                  "explain": "\\(\\cos\\) is even and \\(\\sin\\) is odd.",
+                  "work": "\\(\\cos(-\\theta)=\\cos\\theta,\\quad\\sin(-\\theta)=-\\sin\\theta\\ \\Rightarrow\\ e^{-i\\theta}=\\cos\\theta-i\\sin\\theta\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Barker 2025 4U Trials & Solutions",
+                "school": "Barker College",
+                "year": 2025,
+                "number": "11(b)(i)"
+              },
+              "options": [
+                "\\(e^{-i\\theta}=\\sin\\theta-i\\cos\\theta\\)",
+                "\\(e^{-i\\theta}=\\cos\\theta-i\\sin\\theta\\)",
+                "\\(e^{-i\\theta}=-\\cos\\theta-i\\sin\\theta\\)",
+                "\\(e^{-i\\theta}=\\cos\\theta+i\\sin\\theta\\)"
+              ],
+              "answer": 1,
+              "keyPoints": [
+                {
+                  "text": "find an expression for \\(e^{-i\\theta}\\)",
+                  "note": "Substitute −θ for θ, then use cos(−θ) = cos θ and sin(−θ) = −sin θ."
+                }
+              ]
+            },
+            {
+              "id": "barker2025-ext2-q11b-ii",
+              "type": "review",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Hence show that \\(\\sin\\theta=\\frac{1}{2i}\\left(e^{i\\theta}-e^{-i\\theta}\\right)\\).",
+              "hint": "Subtract e^(−iθ) from e^(iθ): the cosines cancel.",
+              "steps": [
+                {
+                  "explain": "Subtract the result of (i) from Euler's formula.",
+                  "work": "\\(e^{i\\theta}-e^{-i\\theta}=(\\cos\\theta+i\\sin\\theta)-(\\cos\\theta-i\\sin\\theta)\\)"
+                },
+                {
+                  "explain": "The cosines cancel.",
+                  "work": "\\(e^{i\\theta}-e^{-i\\theta}=2i\\sin\\theta\\)"
+                },
+                {
+                  "explain": "Divide by \\(2i\\).",
+                  "work": "\\(\\sin\\theta=\\frac{1}{2i}\\left(e^{i\\theta}-e^{-i\\theta}\\right)\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Barker 2025 4U Trials & Solutions",
+                "school": "Barker College",
+                "year": 2025,
+                "number": "11(b)(ii)"
+              },
+              "answer": "\\(e^{i\\theta}-e^{-i\\theta}=(\\cos\\theta+i\\sin\\theta)-(\\cos\\theta-i\\sin\\theta)=2i\\sin\\theta\\), so \\(\\sin\\theta=\\frac{1}{2i}\\left(e^{i\\theta}-e^{-i\\theta}\\right)\\).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Hence show that",
+                  "note": "Subtract the two Euler expressions so the cos θ terms cancel."
+                }
+              ]
+            },
+            {
+              "id": "barker2025-ext2-q11b-iii",
+              "type": "review",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Use the result from part (ii) to show that \\(\\sin^3\\theta=\\frac34\\sin\\theta-\\frac14\\sin3\\theta\\).",
+              "hint": "Cube both sides of (ii), expand the binomial, then regroup into sin 3θ and sin θ.",
+              "steps": [
+                {
+                  "explain": "Cube the result of (ii). Note \\((2i)^3=8i^3=-8i\\).",
+                  "work": "\\(\\sin^3\\theta=\\frac{\\left(e^{i\\theta}-e^{-i\\theta}\\right)^3}{(2i)^3}=\\frac{\\left(e^{i\\theta}-e^{-i\\theta}\\right)^3}{-8i}\\)"
+                },
+                {
+                  "explain": "Expand with the binomial pattern \\((p-q)^3=p^3-3p^2q+3pq^2-q^3\\), using \\(e^{i\\theta}e^{-i\\theta}=1\\).",
+                  "work": "\\(\\left(e^{i\\theta}-e^{-i\\theta}\\right)^3=e^{3i\\theta}-3e^{i\\theta}+3e^{-i\\theta}-e^{-3i\\theta}\\)"
+                },
+                {
+                  "explain": "Group into pairs that match (ii) with \\(\\theta\\) and \\(3\\theta\\).",
+                  "work": "\\(=\\left(e^{3i\\theta}-e^{-3i\\theta}\\right)-3\\left(e^{i\\theta}-e^{-i\\theta}\\right)=2i\\sin3\\theta-6i\\sin\\theta\\)"
+                },
+                {
+                  "explain": "Divide by \\(-8i\\).",
+                  "work": "\\(\\sin^3\\theta=\\frac{2i\\sin3\\theta-6i\\sin\\theta}{-8i}=\\frac{6\\sin\\theta-2\\sin3\\theta}{8}=\\frac34\\sin\\theta-\\frac14\\sin3\\theta\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Barker 2025 4U Trials & Solutions",
+                "school": "Barker College",
+                "year": 2025,
+                "number": "11(b)(iii)"
+              },
+              "answer": "\\(\\sin^3\\theta=\\frac{(e^{i\\theta}-e^{-i\\theta})^3}{(2i)^3}=\\frac{e^{3i\\theta}-3e^{i\\theta}+3e^{-i\\theta}-e^{-3i\\theta}}{-8i}=\\frac{(e^{3i\\theta}-e^{-3i\\theta})-3(e^{i\\theta}-e^{-i\\theta})}{-8i}=\\frac{2i\\sin3\\theta-6i\\sin\\theta}{-8i}=\\frac34\\sin\\theta-\\frac14\\sin3\\theta\\).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Use the result from part (ii)",
+                  "note": "Cube (e^(iθ) − e^(−iθ))/(2i); remember (2i)³ = −8i."
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1189,6 +1471,51 @@
             {
               "text": "complex cube root of unity",
               "note": "ω³ = 1 and ω ≠ 1 give 1 + ω + ω² = 0. Consider the remainder of n on division by 3."
+            }
+          ]
+        },
+        {
+          "id": "barker2025-ext2-q8",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Let \\(z\\) be a complex number such that \\(z^3=\\frac{i}{\\overline{z}}\\).\nWhich of the following is a possible value for \\(z\\)?",
+          "hint": "Multiply by z̄ and use z = re^(iθ): you get r⁴e^(2iθ) = i.",
+          "steps": [
+            {
+              "explain": "Multiply both sides by \\(\\overline z\\).",
+              "work": "\\(z^3\\overline{z}=i\\)"
+            },
+            {
+              "explain": "Write \\(z=re^{i\\theta}\\), so \\(\\overline z=re^{-i\\theta}\\).",
+              "work": "\\(r^3e^{3i\\theta}\\cdot re^{-i\\theta}=r^4e^{2i\\theta}=i=e^{i\\frac{\\pi}{2}}\\)"
+            },
+            {
+              "explain": "Compare moduli and arguments.",
+              "work": "\\(r^4=1\\Rightarrow r=1,\\qquad2\\theta=\\frac{\\pi}{2}+2k\\pi\\Rightarrow\\theta=\\frac{\\pi}{4}+k\\pi\\)"
+            },
+            {
+              "explain": "So \\(z=e^{i\\pi/4}\\) (or \\(e^{-3i\\pi/4}\\)). Check A: \\(z^3\\overline z=e^{3i\\pi/4}e^{-i\\pi/4}=e^{i\\pi/2}=i\\) ✓. The others give \\(-i\\), \\(e^{2i\\pi/3}\\), \\(e^{-2i\\pi/3}\\)."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Barker 2025 4U Trials & Solutions",
+            "school": "Barker College",
+            "year": 2025,
+            "number": "8"
+          },
+          "options": [
+            "\\(e^{i\\frac{\\pi}{4}}\\)",
+            "\\(e^{-i\\frac{\\pi}{4}}\\)",
+            "\\(e^{i\\frac{\\pi}{3}}\\)",
+            "\\(e^{-i\\frac{\\pi}{3}}\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "\\(z^3=\\frac{i}{\\overline{z}}\\)",
+              "note": "Multiply by z̄: z³z̄ = r⁴e^(2iθ). Compare with i = e^(iπ/2)."
             }
           ]
         }

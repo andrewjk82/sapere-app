@@ -316,6 +316,102 @@
               "note": "Collect real parts (x + 2y) and imaginary parts (−3x + 4y), then equate each with 5 and 15."
             }
           ]
+        },
+        {
+          "id": "barker2025-ext2-q11a",
+          "type": "multipart",
+          "stem": "Let \\(z=a-2bi\\). Find complex numbers for the following, in the form \\(x+iy\\).",
+          "meta": {
+            "source": "Barker 2025 4U Trials & Solutions",
+            "school": "Barker College",
+            "year": 2025,
+            "number": "11(a)"
+          },
+          "parts": [
+            {
+              "id": "barker2025-ext2-q11a-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "\\(\\frac{1}{\\overline{z}}\\)",
+              "hint": "Find z̄ = a + 2bi, then multiply top and bottom by a − 2bi.",
+              "steps": [
+                {
+                  "explain": "Conjugate: change the sign of the imaginary part.",
+                  "work": "\\(\\overline{z}=a+2bi\\)"
+                },
+                {
+                  "explain": "Realise the denominator: multiply top and bottom by its conjugate \\(a-2bi\\).",
+                  "work": "\\(\\frac{1}{a+2bi}\\times\\frac{a-2bi}{a-2bi}=\\frac{a-2bi}{(a+2bi)(a-2bi)}\\)"
+                },
+                {
+                  "explain": "The denominator is \\(a^2-(2bi)^2=a^2+4b^2\\) (since \\(i^2=-1\\)).",
+                  "work": "\\(\\frac{a-2bi}{a^2+4b^2}=\\frac{a}{a^2+4b^2}-\\frac{2b}{a^2+4b^2}i\\)"
+                },
+                {
+                  "explain": "Common slip: writing \\(a^2-4b^2\\) — remember \\((2bi)^2=-4b^2\\)."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Barker 2025 4U Trials & Solutions",
+                "school": "Barker College",
+                "year": 2025,
+                "number": "11(a)(i)"
+              },
+              "options": [
+                "\\(\\frac{a}{a^2+4b^2}+\\frac{2b}{a^2+4b^2}i\\)",
+                "\\(\\frac{a}{a^2-4b^2}-\\frac{2b}{a^2-4b^2}i\\)",
+                "\\(\\frac{1}{a}+\\frac{1}{2b}i\\)",
+                "\\(\\frac{a}{a^2+4b^2}-\\frac{2b}{a^2+4b^2}i\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "\\(\\frac{1}{\\overline{z}}\\)",
+                  "note": "z̄ = a + 2bi. Multiply by the conjugate of the denominator."
+                }
+              ]
+            },
+            {
+              "id": "barker2025-ext2-q11a-ii",
+              "type": "mc",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "\\(z^2\\)",
+              "hint": "Expand (a − 2bi)² and use i² = −1.",
+              "steps": [
+                {
+                  "explain": "Expand \\((a-2bi)^2\\) like \\((p-q)^2=p^2-2pq+q^2\\).",
+                  "work": "\\((a-2bi)^2=a^2-2(a)(2bi)+(2bi)^2=a^2-4abi+4b^2i^2\\)"
+                },
+                {
+                  "explain": "Use \\(i^2=-1\\) and group real and imaginary parts.",
+                  "work": "\\(z^2=a^2-4b^2-4abi\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Barker 2025 4U Trials & Solutions",
+                "school": "Barker College",
+                "year": 2025,
+                "number": "11(a)(ii)"
+              },
+              "options": [
+                "\\(a^2-4b^2+4abi\\)",
+                "\\(a^2-4b^2-2abi\\)",
+                "\\(a^2-4b^2-4abi\\)",
+                "\\(a^2+4b^2-4abi\\)"
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "\\(z^2\\)",
+                  "note": "(2bi)² = 4b²i² = −4b²."
+                }
+              ]
+            }
+          ]
         }
       ]
     },
