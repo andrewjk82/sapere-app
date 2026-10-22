@@ -11661,7 +11661,7 @@
           "difficulty": "medium",
           "stem": "Calculate the area of triangle ABC, as shown below. Give your answer correct to the nearest square metre.",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><polygon points=\"70,55 285,90 205,175\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M183 151 A23 23 0 0 1 205 153\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"1.6\"/><text x=\"154\" y=\"52\" font-size=\"11\">83 m</text><text x=\"100\" y=\"111\" font-size=\"11\">50 m</text><text x=\"240\" y=\"134\" font-size=\"11\">40 m</text><text x=\"55\" y=\"49\" font-size=\"10\">A</text><text x=\"290\" y=\"88\" font-size=\"10\">B</text><text x=\"202\" y=\"192\" font-size=\"10\">C</text><text x=\"185\" y=\"145\" font-size=\"9\">C</text></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><polygon points=\"105,91 309,164 205,175\" fill=\"#dbeafe\" stroke=\"none\"/><path d=\"M105 91L309 164\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M105 91L205 175\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M309 164L205 175\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M188.1 160.9 A22 22 0 0 1 226.9 172.7\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"2\"/><g fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\"><text x=\"77\" y=\"85\">A</text><text x=\"318\" y=\"158\">B</text><text x=\"199\" y=\"203\">C</text><text x=\"211\" y=\"112\">83 m</text><text x=\"139\" y=\"149\">50 m</text><text x=\"259\" y=\"188\">40 m</text></g></svg>"
           },
           "options": [
             "717 m²",
@@ -11673,16 +11673,25 @@
           "hint": "Use the cosine rule first to find the included angle between the 50 m and 40 m sides. Then use area = ½ab sin C.",
           "steps": [
             {
-              "explain": "The sides are 50 m, 40 m and 83 m. The angle C is opposite the 83 m side.",
-              "work": "cos C = (50² + 40² − 83²)/(2 × 50 × 40) = −2789/4000"
+              "explain": "The side opposite angle C is AB = 83 m. Use the cosine rule with AC = 50 m and BC = 40 m to find the included angle.",
+              "work": "\\(\\cos C = \\frac{50^2 + 40^2 - 83^2}{2(50)(40)} = -\\frac{2789}{4000}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><polygon points=\"105,91 309,164 205,175\" fill=\"#dbeafe\" stroke=\"none\"/><path d=\"M105 91L309 164\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"2.8\"/><path d=\"M105 91L205 175\" fill=\"none\" stroke=\"#0284c7\" stroke-width=\"2.8\"/><path d=\"M309 164L205 175\" fill=\"none\" stroke=\"#0284c7\" stroke-width=\"2.8\"/><path d=\"M188.1 160.9 A22 22 0 0 1 226.9 172.7\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"2\"/><g fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\"><text x=\"77\" y=\"85\">A</text><text x=\"318\" y=\"158\">B</text><text x=\"199\" y=\"203\">C</text><text x=\"211\" y=\"112\">83 m</text><text x=\"139\" y=\"149\">50 m</text><text x=\"259\" y=\"188\">40 m</text></g></svg>"
+              }
             },
             {
-              "explain": "Find C, then use the two sides that enclose C for area.",
-              "work": "C = cos⁻¹(−2789/4000) ≈ 134.2°\nArea = 1/2 × 50 × 40 × sin C"
+              "explain": "Take the inverse cosine to find angle C. The highlighted angle is between the 50 m and 40 m sides.",
+              "work": "\\(C = \\cos^{-1}\\!\\left(-\\frac{2789}{4000}\\right) \\approx 134.2^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><polygon points=\"105,91 309,164 205,175\" fill=\"#dbeafe\" stroke=\"none\"/><path d=\"M105 91L309 164\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M105 91L205 175\" fill=\"none\" stroke=\"#0284c7\" stroke-width=\"2.8\"/><path d=\"M309 164L205 175\" fill=\"none\" stroke=\"#0284c7\" stroke-width=\"2.8\"/><path d=\"M188.1 160.9 A22 22 0 0 1 226.9 172.7\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"2\"/><g fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\"><text x=\"77\" y=\"85\">A</text><text x=\"318\" y=\"158\">B</text><text x=\"199\" y=\"203\">C</text><text x=\"211\" y=\"112\">83 m</text><text x=\"139\" y=\"149\">50 m</text><text x=\"259\" y=\"188\">40 m</text></g></svg>"
+              }
             },
             {
-              "explain": "Evaluate and round to the nearest square metre.",
-              "work": "Area ≈ 1 000 sin(134.2°) ≈ 717 m²"
+              "explain": "Use the two sides enclosing angle C in the triangle area formula, then round to the nearest square metre.",
+              "work": "\\(A = \\frac{1}{2}(50)(40)\\sin 134.2^\\circ\\)\n\\(A \\approx 716.9\\text{ m}^2 \\approx 717\\text{ m}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><polygon points=\"105,91 309,164 205,175\" fill=\"#bfdbfe\" stroke=\"none\"/><path d=\"M105 91L309 164\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M105 91L205 175\" fill=\"none\" stroke=\"#0284c7\" stroke-width=\"2.8\"/><path d=\"M309 164L205 175\" fill=\"none\" stroke=\"#0284c7\" stroke-width=\"2.8\"/><path d=\"M188.1 160.9 A22 22 0 0 1 226.9 172.7\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"2\"/><g fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\"><text x=\"77\" y=\"85\">A</text><text x=\"318\" y=\"158\">B</text><text x=\"199\" y=\"203\">C</text><text x=\"211\" y=\"112\">83 m</text><text x=\"139\" y=\"149\">50 m</text><text x=\"259\" y=\"188\">40 m</text></g></svg>"
+              }
             }
           ],
           "keyPoints": [
