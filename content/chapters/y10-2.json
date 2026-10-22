@@ -6015,6 +6015,47 @@
           ],
           "answer": 2,
           "solution": "Correct answer: \\(-5\\sqrt7\\)"
+        },
+        {
+          "id": "abb-y10-2025-t4-a-q6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which of the following is equal to √(9a) − √(4a)?",
+          "options": [
+            "5a",
+            "√a",
+            "√(5a)",
+            "a"
+          ],
+          "answer": 1,
+          "hint": "Take the square root of each perfect-square factor, then combine like surds.",
+          "steps": [
+            {
+              "explain": "Separate each radicand into a perfect square times a.",
+              "work": "√(9a) − √(4a) = 3√a − 2√a"
+            },
+            {
+              "explain": "These are like surds, so subtract their coefficients.",
+              "work": "(3 − 2)√a = √a"
+            },
+            {
+              "explain": "State the result after completing the calculation.",
+              "work": "1"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "√(9a) − √(4a)",
+              "note": "Simplify the two roots before subtracting."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
         }
       ]
     },
@@ -17994,6 +18035,47 @@
           "answer": "The expression is rational and equals \\(-\\frac6{11}\\).",
           "manual": true,
           "solution": "The expression is rational and equals \\(-\\frac6{11}\\)."
+        },
+        {
+          "id": "abb-y10-2025-t4-c-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Showing all working, rationalise the denominator and fully simplify: (15a + √5)/√10.",
+          "options": [
+            "(3a√10 + √2)/2",
+            "(15a + √5)√10/10",
+            "(3a√10 + 5√2)/2",
+            "(15a√10 + √2)/10"
+          ],
+          "answer": 0,
+          "hint": "Multiply numerator and denominator by √10. Then simplify each radical and factor out any common factor.",
+          "steps": [
+            {
+              "explain": "Multiply top and bottom by √10 so the denominator becomes rational.",
+              "work": "(15a+√5)/√10 × √10/√10 = (15a√10+√50)/10"
+            },
+            {
+              "explain": "Simplify √50 and factor 5 from the numerator.",
+              "work": "√50=5√2\n(15a√10+5√2)/10 = 5(3a√10+√2)/10"
+            },
+            {
+              "explain": "Cancel the common factor 5.",
+              "work": "(3a√10+√2)/2"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "rationalise the denominator",
+              "note": "Multiplying by √10/√10 turns the denominator into 10."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
         }
       ]
     },

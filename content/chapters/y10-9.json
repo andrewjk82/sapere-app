@@ -3599,6 +3599,47 @@
           "answer": "\\(\\frac{6^{n+1}+6^n}{7}=6^n\\).",
           "manual": true,
           "solution": "\\(\\frac{6^{n+1}+6^n}{7}=6^n\\)."
+        },
+        {
+          "id": "abb-y10-2025-t4-a-q8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is the value of p so that \\(\\frac{a^2a^{-3}}{\\sqrt{a}}=a^p\\)?",
+          "options": [
+            "−3",
+            "−3/2",
+            "−1/2",
+            "12"
+          ],
+          "answer": 1,
+          "hint": "Rewrite the square root as a fractional index and add/subtract exponents for the same base.",
+          "steps": [
+            {
+              "explain": "Combine the powers in the numerator first.",
+              "work": "\\(a^2a^{-3}=a^{2-3}=a^{-1}\\)"
+            },
+            {
+              "explain": "Rewrite √a as a^(1/2), then subtract its exponent when dividing.",
+              "work": "\\(a^{-1}\\div a^{1/2}=a^{-1-1/2}=a^{-3/2}\\)"
+            },
+            {
+              "explain": "Compare with aᵖ.",
+              "work": "\\(p=-\\frac32\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "a^2a^{-3}",
+              "note": "Apply the product and quotient laws for powers with the same base."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
         }
       ]
     },
@@ -4097,6 +4138,88 @@
             "grade": "10"
           },
           "xp": 1
+        },
+        {
+          "id": "abb-y10-2025-t4-c-q6a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The number of penguins, P, in a new colony after t years can be found using the following formula: P = a × 2^t. If there are 24 penguins after 2 years, find the value of a.",
+          "options": [
+            "a = 6",
+            "a = 12",
+            "a = 24",
+            "a = 96"
+          ],
+          "answer": 0,
+          "hint": "Substitute P = 24 and t = 2 into the model, then isolate a.",
+          "steps": [
+            {
+              "explain": "Write down the model and substitute the given values.",
+              "work": "P = a × 2^t\n24 = a × 2²"
+            },
+            {
+              "explain": "Evaluate the power of 2.",
+              "work": "24 = 4a"
+            },
+            {
+              "explain": "Divide both sides by 4.",
+              "work": "a = 24/4 = 6"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "24 penguins after 2 years",
+              "note": "Substitute the population and time into the exponential model."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-c-q6b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The number of penguins, P, in a new colony after t years can be found using P = a × 2^t. If there are 24 penguins after 2 years, how many years will it take for the number of penguins to first exceed 1500? You must show the use of the change of base calculation in your solution.",
+          "options": [
+            "8 years",
+            "7 years",
+            "9 years",
+            "10 years"
+          ],
+          "answer": 0,
+          "hint": "Use a = 6 from part (a). Solve 6×2^t > 1500 using logarithms, then check the first whole year above the threshold.",
+          "steps": [
+            {
+              "explain": "Substitute a = 6 and find when the population reaches 1500.",
+              "work": "6 × 2^t > 1500;  2^t > 250"
+            },
+            {
+              "explain": "Use change of base to estimate the threshold time.",
+              "work": "t > log(250)/log(2) ≈ 7.966"
+            },
+            {
+              "explain": "The population first exceeds the threshold at the next whole year. Check t = 7 and t = 8.",
+              "work": "6 × 2⁷ = 768 < 1500;  6 × 2⁸ = 1 536 > 1 500\nAnswer: 8 years"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "first exceed 1500",
+              "note": "Take logarithms, use change of base, then check consecutive whole-number years."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
         }
       ]
     }

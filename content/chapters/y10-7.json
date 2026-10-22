@@ -2890,6 +2890,156 @@
               "xp": 2
             }
           ]
+        },
+        {
+          "id": "abb-y10-2025-t4-a-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which diagram best shows the graph of the parabola y = 3 − (x − 2)²?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g font-family=\"sans-serif\" font-size=\"12\" fill=\"#1e293b\"><text x=\"32\" y=\"28\">A</text><text x=\"190\" y=\"28\">B</text><text x=\"32\" y=\"130\">C</text><text x=\"190\" y=\"130\">D</text></g><g stroke=\"#cbd5e1\" stroke-width=\"1\"><path d=\"M38 80H150M94 35V110M196 80H310M253 35V110M38 180H150M94 140V210M196 180H310M253 140V210\"/></g><g fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"><path d=\"M50 60 Q94 105 138 55\"/><path d=\"M205 97 Q272 32 302 96\"/><path d=\"M50 155 Q94 205 138 155\"/><path d=\"M205 205 Q253 145 302 205\"/></g><circle cx=\"272\" cy=\"48\" r=\"2.5\" fill=\"#ef8a00\"/><text x=\"277\" y=\"44\" font-size=\"8\">(2,3)</text></svg>"
+          },
+          "options": [
+            "Diagram A",
+            "Diagram B",
+            "Diagram C",
+            "Diagram D"
+          ],
+          "answer": 1,
+          "hint": "Write the equation in vertex form: identify whether it opens up or down and locate its turning point.",
+          "steps": [
+            {
+              "explain": "The equation is already in vertex form y = a(x − h)² + k.",
+              "work": "y = 3 − (x − 2)² = −(x − 2)² + 3"
+            },
+            {
+              "explain": "The negative coefficient means the parabola opens downward; h = 2 and k = 3 give the vertex.",
+              "work": "a = −1 < 0\nVertex = (2, 3)"
+            },
+            {
+              "explain": "Choose the diagram opening downward with its maximum at (2, 3).",
+              "work": "The correct diagram is B: downward opening, vertex to the right of the y-axis at height 3."
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "y = 3 − (x − 2)²",
+              "note": "Identify the sign of the squared term and the vertex before choosing a sketch."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-b-q1a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The graph shows the curve with equation y = x² − 7x + 10. The curve intersects the x-axis at points A and B. The point C on the curve has the same y-coordinate as the y-intercept of the curve. (a) Find the x-coordinates of points A and B.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M75 35V175M108 35V175M141 35V175M174 35V175M207 35V175M240 35V175M273 35V175M306 35V175M40 42H330M40 72H330M40 102H330M40 132H330M40 162H330\"/></g><g stroke=\"#334155\" stroke-width=\"1.4\"><path d=\"M40 132H330M75 180V25\"/></g><path d=\"M75 62 Q190 182 306 62\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M75 62H306\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><circle cx=\"141\" cy=\"132\" r=\"3.2\" fill=\"#f97316\"/><circle cx=\"240\" cy=\"132\" r=\"3.2\" fill=\"#f97316\"/><circle cx=\"75\" cy=\"62\" r=\"3.2\" fill=\"#6366f1\"/><circle cx=\"306\" cy=\"62\" r=\"3.2\" fill=\"#6366f1\"/><text x=\"130\" y=\"150\" font-size=\"9\">A(2,0)</text><text x=\"242\" y=\"150\" font-size=\"9\">B(5,0)</text><text x=\"80\" y=\"58\" font-size=\"9\">(0,10)</text><text x=\"274\" y=\"58\" font-size=\"9\">C(7,10)</text><text x=\"324\" y=\"145\" font-size=\"9\">x</text><text x=\"68\" y=\"25\" font-size=\"9\">y</text></svg>"
+          },
+          "options": [
+            "2 and 5",
+            "−2 and −5",
+            "−2 and 5",
+            "2 and −5"
+          ],
+          "answer": 0,
+          "hint": "At an x-intercept, y = 0. Factor the quadratic to find the two x-values.",
+          "steps": [
+            {
+              "explain": "Set the equation equal to zero to find where the graph crosses the x-axis.",
+              "work": "x² − 7x + 10 = 0",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M75 35V175M108 35V175M141 35V175M174 35V175M207 35V175M240 35V175M273 35V175M306 35V175M40 42H330M40 72H330M40 102H330M40 132H330M40 162H330\"/></g><g stroke=\"#334155\" stroke-width=\"1.4\"><path d=\"M40 132H330M75 180V25\"/></g><path d=\"M75 62 Q190 182 306 62\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M75 62H306\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><circle cx=\"141\" cy=\"132\" r=\"3.2\" fill=\"#f97316\"/><circle cx=\"240\" cy=\"132\" r=\"3.2\" fill=\"#f97316\"/><circle cx=\"75\" cy=\"62\" r=\"3.2\" fill=\"#6366f1\"/><circle cx=\"306\" cy=\"62\" r=\"3.2\" fill=\"#6366f1\"/><text x=\"130\" y=\"150\" font-size=\"9\">A(2,0)</text><text x=\"242\" y=\"150\" font-size=\"9\">B(5,0)</text><text x=\"80\" y=\"58\" font-size=\"9\">(0,10)</text><text x=\"274\" y=\"58\" font-size=\"9\">C(7,10)</text><text x=\"324\" y=\"145\" font-size=\"9\">x</text><text x=\"68\" y=\"25\" font-size=\"9\">y</text></svg>"
+              }
+            },
+            {
+              "explain": "Find two numbers whose product is 10 and sum is −7.",
+              "work": "(x − 2)(x − 5) = 0",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M75 35V175M108 35V175M141 35V175M174 35V175M207 35V175M240 35V175M273 35V175M306 35V175M40 42H330M40 72H330M40 102H330M40 132H330M40 162H330\"/></g><g stroke=\"#334155\" stroke-width=\"1.4\"><path d=\"M40 132H330M75 180V25\"/></g><path d=\"M75 62 Q190 182 306 62\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M75 62H306\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><circle cx=\"141\" cy=\"132\" r=\"3.2\" fill=\"#f97316\"/><circle cx=\"240\" cy=\"132\" r=\"3.2\" fill=\"#f97316\"/><circle cx=\"75\" cy=\"62\" r=\"3.2\" fill=\"#6366f1\"/><circle cx=\"306\" cy=\"62\" r=\"3.2\" fill=\"#6366f1\"/><text x=\"130\" y=\"150\" font-size=\"9\">A(2,0)</text><text x=\"242\" y=\"150\" font-size=\"9\">B(5,0)</text><text x=\"80\" y=\"58\" font-size=\"9\">(0,10)</text><text x=\"274\" y=\"58\" font-size=\"9\">C(7,10)</text><text x=\"324\" y=\"145\" font-size=\"9\">x</text><text x=\"68\" y=\"25\" font-size=\"9\">y</text></svg>"
+              }
+            },
+            {
+              "explain": "Set each factor to zero; x-intercepts have y = 0.",
+              "work": "x = 2 or x = 5\nA and B are (2, 0) and (5, 0).",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M75 35V175M108 35V175M141 35V175M174 35V175M207 35V175M240 35V175M273 35V175M306 35V175M40 42H330M40 72H330M40 102H330M40 132H330M40 162H330\"/></g><g stroke=\"#334155\" stroke-width=\"1.4\"><path d=\"M40 132H330M75 180V25\"/></g><path d=\"M75 62 Q190 182 306 62\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M75 62H306\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><circle cx=\"141\" cy=\"132\" r=\"3.2\" fill=\"#f97316\"/><circle cx=\"240\" cy=\"132\" r=\"3.2\" fill=\"#f97316\"/><circle cx=\"75\" cy=\"62\" r=\"3.2\" fill=\"#6366f1\"/><circle cx=\"306\" cy=\"62\" r=\"3.2\" fill=\"#6366f1\"/><text x=\"130\" y=\"150\" font-size=\"9\">A(2,0)</text><text x=\"242\" y=\"150\" font-size=\"9\">B(5,0)</text><text x=\"80\" y=\"58\" font-size=\"9\">(0,10)</text><text x=\"274\" y=\"58\" font-size=\"9\">C(7,10)</text><text x=\"324\" y=\"145\" font-size=\"9\">x</text><text x=\"68\" y=\"25\" font-size=\"9\">y</text></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "intersects the x-axis at points A and B",
+              "note": "At each x-intercept, set y=0."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-b-q1b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The graph shows the curve with equation y = x² − 7x + 10. The curve intersects the x-axis at points A and B. The point C on the curve has the same y-coordinate as the y-intercept of the curve. (b) Find the coordinates of point C.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M75 35V175M108 35V175M141 35V175M174 35V175M207 35V175M240 35V175M273 35V175M306 35V175M40 42H330M40 72H330M40 102H330M40 132H330M40 162H330\"/></g><g stroke=\"#334155\" stroke-width=\"1.4\"><path d=\"M40 132H330M75 180V25\"/></g><path d=\"M75 62 Q190 182 306 62\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M75 62H306\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><circle cx=\"141\" cy=\"132\" r=\"3.2\" fill=\"#f97316\"/><circle cx=\"240\" cy=\"132\" r=\"3.2\" fill=\"#f97316\"/><circle cx=\"75\" cy=\"62\" r=\"3.2\" fill=\"#6366f1\"/><circle cx=\"306\" cy=\"62\" r=\"3.2\" fill=\"#6366f1\"/><text x=\"130\" y=\"150\" font-size=\"9\">A(2,0)</text><text x=\"242\" y=\"150\" font-size=\"9\">B(5,0)</text><text x=\"80\" y=\"58\" font-size=\"9\">(0,10)</text><text x=\"274\" y=\"58\" font-size=\"9\">C(7,10)</text><text x=\"324\" y=\"145\" font-size=\"9\">x</text><text x=\"68\" y=\"25\" font-size=\"9\">y</text></svg>"
+          },
+          "options": [
+            "(0,10)",
+            "(7,10)",
+            "(5,10)",
+            "(10,7)"
+          ],
+          "answer": 1,
+          "hint": "First find the y-intercept by setting x = 0. Then solve the quadratic for the points with that same y-value.",
+          "steps": [
+            {
+              "explain": "The y-intercept occurs at x = 0.",
+              "work": "y = 0² − 7(0) + 10 = 10",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M75 35V175M108 35V175M141 35V175M174 35V175M207 35V175M240 35V175M273 35V175M306 35V175M40 42H330M40 72H330M40 102H330M40 132H330M40 162H330\"/></g><g stroke=\"#334155\" stroke-width=\"1.4\"><path d=\"M40 132H330M75 180V25\"/></g><path d=\"M75 62 Q190 182 306 62\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M75 62H306\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><circle cx=\"141\" cy=\"132\" r=\"3.2\" fill=\"#f97316\"/><circle cx=\"240\" cy=\"132\" r=\"3.2\" fill=\"#f97316\"/><circle cx=\"75\" cy=\"62\" r=\"3.2\" fill=\"#6366f1\"/><circle cx=\"306\" cy=\"62\" r=\"3.2\" fill=\"#6366f1\"/><text x=\"130\" y=\"150\" font-size=\"9\">A(2,0)</text><text x=\"242\" y=\"150\" font-size=\"9\">B(5,0)</text><text x=\"80\" y=\"58\" font-size=\"9\">(0,10)</text><text x=\"274\" y=\"58\" font-size=\"9\">C(7,10)</text><text x=\"324\" y=\"145\" font-size=\"9\">x</text><text x=\"68\" y=\"25\" font-size=\"9\">y</text></svg>"
+              }
+            },
+            {
+              "explain": "Set the curve equal to this y-value and simplify.",
+              "work": "x² − 7x + 10 = 10\nx² − 7x = 0\nx(x − 7) = 0",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M75 35V175M108 35V175M141 35V175M174 35V175M207 35V175M240 35V175M273 35V175M306 35V175M40 42H330M40 72H330M40 102H330M40 132H330M40 162H330\"/></g><g stroke=\"#334155\" stroke-width=\"1.4\"><path d=\"M40 132H330M75 180V25\"/></g><path d=\"M75 62 Q190 182 306 62\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M75 62H306\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><circle cx=\"141\" cy=\"132\" r=\"3.2\" fill=\"#f97316\"/><circle cx=\"240\" cy=\"132\" r=\"3.2\" fill=\"#f97316\"/><circle cx=\"75\" cy=\"62\" r=\"3.2\" fill=\"#6366f1\"/><circle cx=\"306\" cy=\"62\" r=\"3.2\" fill=\"#6366f1\"/><text x=\"130\" y=\"150\" font-size=\"9\">A(2,0)</text><text x=\"242\" y=\"150\" font-size=\"9\">B(5,0)</text><text x=\"80\" y=\"58\" font-size=\"9\">(0,10)</text><text x=\"274\" y=\"58\" font-size=\"9\">C(7,10)</text><text x=\"324\" y=\"145\" font-size=\"9\">x</text><text x=\"68\" y=\"25\" font-size=\"9\">y</text></svg>"
+              }
+            },
+            {
+              "explain": "The two x-values are 0 and 7. C is the other point, not the y-intercept itself.",
+              "work": "C = (7, 10)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M75 35V175M108 35V175M141 35V175M174 35V175M207 35V175M240 35V175M273 35V175M306 35V175M40 42H330M40 72H330M40 102H330M40 132H330M40 162H330\"/></g><g stroke=\"#334155\" stroke-width=\"1.4\"><path d=\"M40 132H330M75 180V25\"/></g><path d=\"M75 62 Q190 182 306 62\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M75 62H306\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><circle cx=\"141\" cy=\"132\" r=\"3.2\" fill=\"#f97316\"/><circle cx=\"240\" cy=\"132\" r=\"3.2\" fill=\"#f97316\"/><circle cx=\"75\" cy=\"62\" r=\"3.2\" fill=\"#6366f1\"/><circle cx=\"306\" cy=\"62\" r=\"3.2\" fill=\"#6366f1\"/><text x=\"130\" y=\"150\" font-size=\"9\">A(2,0)</text><text x=\"242\" y=\"150\" font-size=\"9\">B(5,0)</text><text x=\"80\" y=\"58\" font-size=\"9\">(0,10)</text><text x=\"274\" y=\"58\" font-size=\"9\">C(7,10)</text><text x=\"324\" y=\"145\" font-size=\"9\">x</text><text x=\"68\" y=\"25\" font-size=\"9\">y</text></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "same y-coordinate as the y-intercept",
+              "note": "Find the y-intercept, then find the other point on the curve at that height."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
         }
       ]
     },
@@ -3628,6 +3778,296 @@
           "meta": {
             "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
             "sourceYear": 2024
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-a-q17",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If the quadratic function ax² + bx + c > 0 for all x, which of the following correctly defines the values of a, b and c?",
+          "options": [
+            "a < 0, b² − 4ac > 0",
+            "a < 0, b² − 4ac < 0",
+            "a > 0, b² − 4ac > 0",
+            "a > 0, b² − 4ac < 0"
+          ],
+          "answer": 3,
+          "hint": "The parabola must open upward and never meet the x-axis. Translate these two graph facts into conditions on a and the discriminant.",
+          "steps": [
+            {
+              "explain": "For the graph to remain above zero at both ends, it must open upward.",
+              "work": "a > 0"
+            },
+            {
+              "explain": "For it to stay strictly above the x-axis, it has no real roots. Thus the discriminant is negative.",
+              "work": "Δ = b² − 4ac < 0"
+            },
+            {
+              "explain": "Combine both necessary conditions.",
+              "work": "a > 0 and b² − 4ac < 0"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "> 0 for all x",
+              "note": "Relate the opening direction and x-intercepts to a and the discriminant."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-a-q20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which of the following could represent the graph of y = −x² + bx + 1, where b > 0?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#94a3b8\" stroke-width=\"1\"><path d=\"M35 80H155M95 25V140M205 80H325M265 25V140M35 170H155M95 145V205M205 170H325M265 145V205\"/></g><g fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"><path d=\"M45 120 Q95 35 145 120\"/><path d=\"M215 120 Q265 35 315 120\"/><path d=\"M45 190 Q105 130 145 190\"/><path d=\"M215 190 Q265 145 315 190\"/></g><circle cx=\"95\" cy=\"145\" r=\"3\" fill=\"#ef8a00\"/><g fill=\"#334155\" font-size=\"11\"><text x=\"35\" y=\"20\">A</text><text x=\"205\" y=\"20\">B</text><text x=\"35\" y=\"205\">C</text><text x=\"205\" y=\"205\">D</text></g></svg>"
+          },
+          "options": [
+            "Diagram A",
+            "Diagram B",
+            "Diagram C",
+            "Diagram D"
+          ],
+          "answer": 2,
+          "hint": "The negative x² coefficient means the graph opens downward. Its axis of symmetry is x = b/2, which is positive.",
+          "steps": [
+            {
+              "explain": "The coefficient of x² is −1, so the parabola opens down. The constant term gives the y-intercept.",
+              "work": "a = −1 < 0;  y(0) = 1"
+            },
+            {
+              "explain": "The axis of symmetry for ax² + bx + c is x = −b/(2a).",
+              "work": "x = −b/[2(−1)] = b/2 > 0"
+            },
+            {
+              "explain": "Choose a downward-opening graph with y-intercept 1 and vertex to the right of the y-axis.",
+              "work": "Diagram C satisfies all three features."
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "b > 0",
+              "note": "Use the opening direction, y-intercept, and sign of the vertex x-coordinate."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-e1-q4a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The height of a toy plane is described by the equation h = 7 + 12t − 4t², where h is the height in metres above the ground and t is the time in minutes. Determine the coordinates of the vertex of this equation.",
+          "options": [
+            "(3/2,16)",
+            "(−3/2,16)",
+            "(3/2,7)",
+            "(−12,16)"
+          ],
+          "answer": 0,
+          "hint": "For h=at²+bt+c, the vertex time is t=−b/(2a). Substitute it back into h.",
+          "steps": [
+            {
+              "explain": "Identify a=−4 and b=12; calculate the vertex time.",
+              "work": "t=−12/[2(−4)]=3/2"
+            },
+            {
+              "explain": "Substitute t=3/2.",
+              "work": "h=7+12(3/2)−4(3/2)²=7+18−9=16"
+            },
+            {
+              "explain": "Write (time,height).",
+              "work": "Vertex=(3/2,16)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "coordinates of the vertex",
+              "note": "Find t=−b/(2a), then substitute to find the corresponding height."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-e1-q4b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The height of a toy plane is described by the equation h = 7 + 12t − 4t². When does the plane hit the ground?",
+          "options": [
+            "3.5 minutes",
+            "2.0 minutes",
+            "4.0 minutes",
+            "−0.5 minutes"
+          ],
+          "answer": 0,
+          "hint": "Set h=0, solve the quadratic, and reject negative time.",
+          "steps": [
+            {
+              "explain": "Set the height to zero.",
+              "work": "7+12t−4t²=0"
+            },
+            {
+              "explain": "Rearrange and factor.",
+              "work": "4t²−12t−7=0\n(2t+1)(2t−7)=0"
+            },
+            {
+              "explain": "Choose the physically possible time.",
+              "work": "t=−1/2 or 7/2; so t=3.5 minutes"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "hit the ground",
+              "note": "The ground corresponds to height h=0."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-e2-q4a",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "The height of a drone above the ground is given by the formula h = 8t − 2t². (a) Sketch the parabola that shows the flight path of the drone.",
+          "answer": "Sample answer is shown in the final solution step.",
+          "hint": "Find the zeros and vertex. The negative leading coefficient means the parabola opens downward.",
+          "steps": [
+            {
+              "explain": "Factor to find when the drone is at ground level.",
+              "work": "h=−2t(t−4); zeros t=0,4"
+            },
+            {
+              "explain": "Find the vertex halfway between the zeros and evaluate h.",
+              "work": "t=2; h(2)=16−8=8"
+            },
+            {
+              "explain": "Sketch a downward parabola through (0,0),(4,0) with vertex (2,8).",
+              "work": "Completed flight-path sketch.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M45 25V185M100 25V185M155 25V185M210 25V185M265 25V185M320 25V185M40 25H330M40 55H330M40 85H330M40 115H330M40 145H330M40 175H330\"/></g><g stroke=\"#334155\" stroke-width=\"1.5\"><path d=\"M40 175H330M45 190V20\"/></g><path d=\"M45 175 Q182 20 318 175\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2.1\"/><circle cx=\"182\" cy=\"55\" r=\"3\" fill=\"#ef4444\"/><text x=\"187\" y=\"50\" font-size=\"10\">(2,8)</text><text x=\"310\" y=\"190\" font-size=\"9\">t</text><text x=\"29\" y=\"24\" font-size=\"9\">h</text></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "The height of a drone above the ground is ",
+              "note": "Find the zeros and vertex. The negative leading coefficient means the parabola opens downward."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "manual": true,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#dbe3ed\" stroke-width=\"1\"><path d=\"M45 25V185M100 25V185M155 25V185M210 25V185M265 25V185M320 25V185M40 25H330M40 55H330M40 85H330M40 115H330M40 145H330M40 175H330\"/></g><g stroke=\"#334155\" stroke-width=\"1.4\"><path d=\"M40 175H330M45 190V20\"/></g><text x=\"321\" y=\"190\" font-size=\"9\">t (minutes)</text><text x=\"28\" y=\"25\" font-size=\"9\">h (m)</text></svg>"
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-e2-q4b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The height of a drone above the ground is given by the formula h = 8t − 2t². (b) What is the maximum height of the drone?",
+          "options": [
+            "8 m",
+            "4 m",
+            "16 m",
+            "2 m"
+          ],
+          "answer": 0,
+          "hint": "The vertex is halfway between the two ground-level times.",
+          "steps": [
+            {
+              "explain": "The zeros are t=0 and t=4, so the symmetry time is 2.",
+              "work": "t_vertex=(0+4)/2=2"
+            },
+            {
+              "explain": "Evaluate the height at t=2.",
+              "work": "h(2)=8(2)−2(2²)=16−8=8"
+            },
+            {
+              "explain": "State the maximum height.",
+              "work": "8 m"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "maximum height",
+              "note": "Evaluate the height at the vertex."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-e2-q4c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The height of a drone above the ground is given by the formula h = 8t − 2t². (c) At what time(s) is the drone at a height of 6 m?",
+          "options": [
+            "1 minute and 3 minutes",
+            "1 minute only",
+            "3 minutes only",
+            "2 minutes and 4 minutes"
+          ],
+          "answer": 0,
+          "hint": "Set h equal to 6 and solve the resulting quadratic.",
+          "steps": [
+            {
+              "explain": "Set the height to 6.",
+              "work": "6=8t−2t²"
+            },
+            {
+              "explain": "Rearrange and factor.",
+              "work": "2t²−8t+6=0\nt²−4t+3=0\n(t−1)(t−3)=0"
+            },
+            {
+              "explain": "Both positive times satisfy the situation.",
+              "work": "t=1 or 3 minutes"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "height of 6 m",
+              "note": "Set h=6 and solve for t."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
           }
         }
       ]

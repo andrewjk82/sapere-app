@@ -1740,6 +1740,185 @@
             "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
             "sourceYear": 2024
           }
+        },
+        {
+          "id": "abb-y10-2025-t4-a-q11",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Consider the diagram below. What is the true bearing of A from B?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><line x1=\"45\" y1=\"48\" x2=\"45\" y2=\"10\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"45\" y1=\"48\" x2=\"112\" y2=\"48\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"45\" y1=\"48\" x2=\"103\" y2=\"75\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"38\" y=\"13\" font-size=\"13\">N</text><text x=\"32\" y=\"45\" font-size=\"13\">A</text><text x=\"105\" y=\"86\" font-size=\"13\">B</text><path d=\"M65 48 A20 20 0 0 1 64 56\" fill=\"none\" stroke=\"#ef8a00\" stroke-width=\"2\"/><text x=\"70\" y=\"63\" font-size=\"12\">25°</text></svg>"
+          },
+          "options": [
+            "025°",
+            "065°",
+            "115°",
+            "295°"
+          ],
+          "answer": 3,
+          "hint": "The 25° shown is measured south of east from A to B. Reverse the direction, then express the bearing clockwise from north.",
+          "steps": [
+            {
+              "explain": "From A to B, the direction is 25° south of east. The bearing from A to B is therefore 090° + 25° = 115°.",
+              "work": "Bearing A→B = 115°"
+            },
+            {
+              "explain": "The reverse bearing differs by 180°.",
+              "work": "Bearing B→A = 115° + 180° = 295°"
+            },
+            {
+              "explain": "Write the true bearing using three digits.",
+              "work": "The true bearing of A from B is 295°."
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "true bearing of A from B",
+              "note": "Reverse the shown direction and measure clockwise from north."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-d-q7a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A surveyor stands at a point A, which is due south of a tower T of height h m. The angle of elevation of the top of the tower from A is 45°. The surveyor then walks 100 m due east to point B, from where the angle of elevation of the top of the tower is 30°. Express the length of TB in terms of h.",
+          "options": [
+            "h√3 m",
+            "h/√3 m",
+            "2h m",
+            "h m"
+          ],
+          "answer": 0,
+          "hint": "In right triangle TOB, OT=h is opposite the 30° angle at B and OB is adjacent.",
+          "steps": [
+            {
+              "explain": "In right triangle TOB, identify the sides relative to the 30° angle.",
+              "work": "opposite=OT=h; adjacent=OB",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><path d=\"M75 150V40M68 150H82M75 150H270M75 40L270 150\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><path d=\"M240 150 A30 30 0 0 0 244 135\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"1.6\"/><text x=\"62\" y=\"36\" font-size=\"10\">T</text><text x=\"62\" y=\"164\" font-size=\"10\">O</text><text x=\"274\" y=\"160\" font-size=\"10\">B</text><text x=\"80\" y=\"95\" font-size=\"9\">OT=h</text><text x=\"202\" y=\"166\" font-size=\"9\">OB</text><text x=\"225\" y=\"139\" font-size=\"9\">30°</text><path d=\"M75 138H87V150\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.3\"/></svg>"
+              }
+            },
+            {
+              "explain": "Use tangent and isolate OB.",
+              "work": "tan30°=h/OB\nOB=h/tan30°",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><path d=\"M75 150V40M68 150H82M75 150H270M75 40L270 150\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><path d=\"M240 150 A30 30 0 0 0 244 135\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"1.6\"/><text x=\"62\" y=\"36\" font-size=\"10\">T</text><text x=\"62\" y=\"164\" font-size=\"10\">O</text><text x=\"274\" y=\"160\" font-size=\"10\">B</text><text x=\"80\" y=\"95\" font-size=\"9\">OT=h</text><text x=\"202\" y=\"166\" font-size=\"9\">OB</text><text x=\"225\" y=\"139\" font-size=\"9\">30°</text><path d=\"M75 138H87V150\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.3\"/></svg>"
+              }
+            },
+            {
+              "explain": "Use tan30°=1/√3 and simplify.",
+              "work": "OB=h÷(1/√3)=h√3",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><path d=\"M75 150V40M68 150H82M75 150H270M75 40L270 150\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><path d=\"M240 150 A30 30 0 0 0 244 135\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"1.6\"/><text x=\"62\" y=\"36\" font-size=\"10\">T</text><text x=\"62\" y=\"164\" font-size=\"10\">O</text><text x=\"274\" y=\"160\" font-size=\"10\">B</text><text x=\"80\" y=\"95\" font-size=\"9\">OT=h</text><text x=\"202\" y=\"166\" font-size=\"9\">OB</text><text x=\"225\" y=\"139\" font-size=\"9\">30°</text><path d=\"M75 138H87V150\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.3\"/></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "A surveyor stands at a point A",
+              "note": "In right triangle TOB, OT=h is opposite the 30° angle at B and OB is adjacent."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><path d=\"M75 150V40M68 150H82M75 150H270M75 40L270 150\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><path d=\"M240 150 A30 30 0 0 0 244 135\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"1.6\"/><text x=\"62\" y=\"36\" font-size=\"10\">T</text><text x=\"62\" y=\"164\" font-size=\"10\">O</text><text x=\"274\" y=\"160\" font-size=\"10\">B</text><text x=\"80\" y=\"95\" font-size=\"9\">OT=h</text><text x=\"202\" y=\"166\" font-size=\"9\">OB</text><text x=\"225\" y=\"139\" font-size=\"9\">30°</text><path d=\"M75 138H87V150\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.3\"/><path d=\"M75 138H87V150\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.3\"/></svg>"
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-d-q7b",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "A surveyor stands at a point A, which is due south of a tower OT of height h m. The angle of elevation of the top of the tower from A is 45°. The surveyor then walks 100 m due east to point B, from where she measures the angle of elevation of the top of the tower to be 30°. (b) Show that h = 50√2.",
+          "answer": "Sample answer is shown in the final solution step.",
+          "hint": "First use the 45° triangle to show OA=h. Then use part (a), OB=h√3, in the ground-plane right triangle AOB.",
+          "steps": [
+            {
+              "explain": "In right triangle AOT, tan45°=OT/OA. Since OT=h, this gives OA=h.",
+              "work": "tan45°=h/OA; 1=h/OA; OA=h"
+            },
+            {
+              "explain": "Triangle AOB is right-angled at A, with AB=100 and OB=h√3 from part (a). Apply Pythagoras.",
+              "work": "(h√3)² = h² + 100²\n3h² = h² + 10 000"
+            },
+            {
+              "explain": "Solve for the positive tower height.",
+              "work": "2h²=10 000; h²=5 000\nh=√5 000=50√2 m"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "(b) Show that h = 50√2.",
+              "note": "First use the 45° triangle to show OA=h. Then use part (a), OB=h√3, in the ground-plane right triangle AOB."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "manual": true,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><path d=\"M80 55V25M80 55V165M80 165H245M80 55L245 165\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><path d=\"M80 55L92 63M80 55L88 44\" stroke=\"#334155\" stroke-width=\"1.4\"/><path d=\"M80 55V35\" stroke=\"#334155\" stroke-width=\"1.3\"/><path d=\"M80 143H102V165\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"1.4\"/><path d=\"M80 78 A25 25 0 0 1 100 69\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"1.6\"/><text x=\"73\" y=\"20\" font-size=\"10\">N</text><text x=\"63\" y=\"52\" font-size=\"9\">O</text><text x=\"63\" y=\"178\" font-size=\"9\">A</text><text x=\"249\" y=\"174\" font-size=\"9\">B</text><text x=\"123\" y=\"181\" font-size=\"8\">100 m east</text><text x=\"54\" y=\"112\" font-size=\"8\">OA=h south</text><text x=\"93\" y=\"88\" font-size=\"8\">bearing</text></svg>"
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-d-q7c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A surveyor stands at a point A, which is due south of a tower OT of height h m. The angle of elevation of the top of the tower from A is 45°. The surveyor then walks 100 m due east to point B, from where she measures the angle of elevation of the top of the tower to be 30°. (c) Calculate the bearing of B from the base of the tower.",
+          "options": [
+            "125.3°",
+            "054.7°",
+            "234.7°",
+            "305.3°"
+          ],
+          "answer": 0,
+          "hint": "From the tower base O, B is east and south. Use the ground triangle with east distance 100 m and south distance OA=50√2 m, then express the direction clockwise from north.",
+          "steps": [
+            {
+              "explain": "The horizontal displacement is 100 m east and h=50√2 m south. Find the angle east of south.",
+              "work": "tan α = 100/(50√2)\nα ≈ 54.74°"
+            },
+            {
+              "explain": "A bearing is measured clockwise from north. South is 180°, so subtract α.",
+              "work": "Bearing = 180°−54.74°"
+            },
+            {
+              "explain": "Write the bearing to one decimal place.",
+              "work": "Bearing of B from O ≈ 125.3°"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "bearing of B from the base of the tower",
+              "note": "Measure clockwise from north; convert the angle found from south."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><path d=\"M80 55V25M80 55V165M80 165H245M80 55L245 165\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><path d=\"M80 55L92 63M80 55L88 44\" stroke=\"#334155\" stroke-width=\"1.4\"/><path d=\"M80 55V35\" stroke=\"#334155\" stroke-width=\"1.3\"/><path d=\"M80 143H102V165\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"1.4\"/><path d=\"M80 78 A25 25 0 0 1 100 69\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"1.6\"/><text x=\"73\" y=\"20\" font-size=\"10\">N</text><text x=\"63\" y=\"52\" font-size=\"9\">O</text><text x=\"63\" y=\"178\" font-size=\"9\">A</text><text x=\"249\" y=\"174\" font-size=\"9\">B</text><text x=\"123\" y=\"181\" font-size=\"8\">100 m east</text><text x=\"54\" y=\"112\" font-size=\"8\">OA=h south</text><text x=\"93\" y=\"88\" font-size=\"8\">bearing</text></svg>"
+          }
         }
       ]
     },
@@ -8901,6 +9080,59 @@
             "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
             "sourceYear": 2024
           }
+        },
+        {
+          "id": "abb-y10-2025-t4-b-q6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the length of side marked x. Give your answer correct to 1 decimal place.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><polygon points=\"55,170 300,170 177,50\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.7\"/><path d=\"M80 170 A25 25 0 0 1 74 154\" fill=\"none\" stroke=\"#ef8a00\" stroke-width=\"1.6\"/><path d=\"M161 65 A22 22 0 0 1 193 65\" fill=\"none\" stroke=\"#ef8a00\" stroke-width=\"1.6\"/><text x=\"83\" y=\"158\" font-size=\"11\">40°</text><text x=\"166\" y=\"82\" font-size=\"11\">110°</text><text x=\"169\" y=\"184\" font-size=\"11\">8</text><text x=\"250\" y=\"106\" font-size=\"11\">x</text></svg>"
+          },
+          "options": [
+            "4.7",
+            "5.5",
+            "6.8",
+            "8.3"
+          ],
+          "answer": 1,
+          "hint": "The side opposite 40° is 8. The side x is opposite 110°. Use the sine rule.",
+          "steps": [
+            {
+              "explain": "Match each side to its opposite angle in the triangle.",
+              "work": "x is opposite 40°; 8 is opposite 110°",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><polygon points=\"55,170 300,170 177,50\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.7\"/><path d=\"M80 170 A25 25 0 0 1 74 154\" fill=\"none\" stroke=\"#ef8a00\" stroke-width=\"1.6\"/><path d=\"M161 65 A22 22 0 0 1 193 65\" fill=\"none\" stroke=\"#ef8a00\" stroke-width=\"1.6\"/><text x=\"83\" y=\"158\" font-size=\"11\">40°</text><text x=\"166\" y=\"82\" font-size=\"11\">110°</text><text x=\"169\" y=\"184\" font-size=\"11\">8</text><text x=\"250\" y=\"106\" font-size=\"11\">x</text></svg>"
+              }
+            },
+            {
+              "explain": "Apply the sine rule and isolate x.",
+              "work": "x/sin 40° = 8/sin 110°\nx = 8 sin 40° / sin 110°",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><polygon points=\"55,170 300,170 177,50\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.7\"/><path d=\"M80 170 A25 25 0 0 1 74 154\" fill=\"none\" stroke=\"#ef8a00\" stroke-width=\"1.6\"/><path d=\"M161 65 A22 22 0 0 1 193 65\" fill=\"none\" stroke=\"#ef8a00\" stroke-width=\"1.6\"/><text x=\"83\" y=\"158\" font-size=\"11\">40°</text><text x=\"166\" y=\"82\" font-size=\"11\">110°</text><text x=\"169\" y=\"184\" font-size=\"11\">8</text><text x=\"250\" y=\"106\" font-size=\"11\">x</text></svg>"
+              }
+            },
+            {
+              "explain": "Evaluate and round to one decimal place.",
+              "work": "x ≈ 5.47 ≈ 5.5 (to 1 d.p.)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><polygon points=\"55,170 300,170 177,50\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.7\"/><path d=\"M80 170 A25 25 0 0 1 74 154\" fill=\"none\" stroke=\"#ef8a00\" stroke-width=\"1.6\"/><path d=\"M161 65 A22 22 0 0 1 193 65\" fill=\"none\" stroke=\"#ef8a00\" stroke-width=\"1.6\"/><text x=\"83\" y=\"158\" font-size=\"11\">40°</text><text x=\"166\" y=\"82\" font-size=\"11\">110°</text><text x=\"169\" y=\"184\" font-size=\"11\">8</text><text x=\"250\" y=\"106\" font-size=\"11\">x</text></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "side marked x",
+              "note": "Pair each side with its opposite angle before using the sine rule."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
         }
       ]
     },
@@ -11415,6 +11647,50 @@
           "meta": {
             "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
             "sourceYear": 2024
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-c-q5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the area of triangle ABC, as shown below. Give your answer correct to the nearest square metre.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><polygon points=\"70,55 285,90 205,175\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M183 151 A23 23 0 0 1 205 153\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"1.6\"/><text x=\"154\" y=\"52\" font-size=\"11\">83 m</text><text x=\"100\" y=\"111\" font-size=\"11\">50 m</text><text x=\"240\" y=\"134\" font-size=\"11\">40 m</text><text x=\"55\" y=\"49\" font-size=\"10\">A</text><text x=\"290\" y=\"88\" font-size=\"10\">B</text><text x=\"202\" y=\"192\" font-size=\"10\">C</text><text x=\"185\" y=\"145\" font-size=\"9\">C</text></svg>"
+          },
+          "options": [
+            "717 m²",
+            "800 m²",
+            "1 000 m²",
+            "1 660 m²"
+          ],
+          "answer": 0,
+          "hint": "Use the cosine rule first to find the included angle between the 50 m and 40 m sides. Then use area = ½ab sin C.",
+          "steps": [
+            {
+              "explain": "The sides are 50 m, 40 m and 83 m. The angle C is opposite the 83 m side.",
+              "work": "cos C = (50² + 40² − 83²)/(2 × 50 × 40) = −2789/4000"
+            },
+            {
+              "explain": "Find C, then use the two sides that enclose C for area.",
+              "work": "C = cos⁻¹(−2789/4000) ≈ 134.2°\nArea = 1/2 × 50 × 40 × sin C"
+            },
+            {
+              "explain": "Evaluate and round to the nearest square metre.",
+              "work": "Area ≈ 1 000 sin(134.2°) ≈ 717 m²"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "nearest square metre",
+              "note": "Find the included angle with the cosine rule before using the triangle-area formula."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
           }
         }
       ]
@@ -15721,6 +15997,50 @@
           "meta": {
             "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
             "sourceYear": 2024
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-a-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The area of the triangle shown is 250 cm². What is the value of x, correct to the nearest whole number?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><polygon points=\"55,165 300,165 182,45\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M164 63 A28 28 0 0 1 197 63\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"1.8\"/><text x=\"103\" y=\"99\" font-size=\"12\">30 cm</text><text x=\"207\" y=\"103\" font-size=\"12\">x cm</text><text x=\"165\" y=\"80\" font-size=\"11\">44°</text><text x=\"165\" y=\"183\" font-size=\"12\">28 cm</text></svg>"
+          },
+          "options": [
+            "11",
+            "18",
+            "22",
+            "24"
+          ],
+          "answer": 3,
+          "hint": "Use the area formula with the two sides that include the 44° angle. The 28 cm base is not needed for this calculation.",
+          "steps": [
+            {
+              "explain": "The 30 cm side and the unknown side x meet at the given 44° angle. The triangle-area formula uses that included angle.",
+              "work": "Area = 1/2 × a × b × sin(C)"
+            },
+            {
+              "explain": "Substitute the known area, the 30 cm side, and the included angle, then isolate x.",
+              "work": "250 = 1/2 × 30 × x × sin(44°)\nx = 500 ÷ (30 sin 44°)"
+            },
+            {
+              "explain": "Evaluate and round to the nearest whole centimetre.",
+              "work": "x ≈ 24.0 cm\nNearest whole number: 24 cm"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "250 cm²",
+              "note": "Use the given area as the left side of the included-angle area formula."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
           }
         }
       ]

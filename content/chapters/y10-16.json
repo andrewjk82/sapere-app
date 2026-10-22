@@ -1529,6 +1529,91 @@
           "hint": "Use a known pair to find \\(k\\), then fill in the blanks.",
           "solution": "See sub-questions.",
           "timeLimit": 60
+        },
+        {
+          "id": "abb-y10-2025-t4-c-q3a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The relationship between British Pounds (p) and Australian Dollars (d) on a particular day is shown in the graph below. Write the direct variation equation relating British Pounds to Australian Dollars in the form p = md. Leave m as a fraction.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M45 25V190M85 25V190M125 25V190M165 25V190M205 25V190M245 25V190M285 25V190M325 25V190M40 30H330M40 65H330M40 100H330M40 135H330M40 170H330\"/></g><g stroke=\"#334155\" stroke-width=\"1.6\"><path d=\"M40 190H330M45 195V20\"/></g><path d=\"M45 48L315 153\" stroke=\"#0ea5e9\" stroke-width=\"2\"/><path d=\"M45 91L315 144\" stroke=\"#ef4444\" stroke-width=\"2\"/><circle cx=\"270\" cy=\"135\" r=\"4\" fill=\"#16a34a\"/><text x=\"274\" y=\"130\" font-size=\"10\">(250,70)</text><text x=\"8\" y=\"18\" font-size=\"10\">y ($)</text><text x=\"300\" y=\"205\" font-size=\"10\">x (months)</text></svg>"
+          },
+          "options": [
+            "p = 4d/7",
+            "p = 7d/4",
+            "p = d + 4/7",
+            "p = 4/7"
+          ],
+          "answer": 0,
+          "hint": "For direct variation, the graph passes through the origin and the constant is p ÷ d. Read one clear point from the graph.",
+          "steps": [
+            {
+              "explain": "A direct variation has the form p = md, so m is the ratio p/d.",
+              "work": "m = p/d"
+            },
+            {
+              "explain": "Read a point on the graph, for example d = 350 gives p = 200.",
+              "work": "m = 200/350 = 4/7"
+            },
+            {
+              "explain": "Substitute m into the direct-variation form.",
+              "work": "p = (4/7)d"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "form p = md",
+              "note": "The multiplier m is the ratio of pounds to Australian dollars."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-c-q3b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The relationship between Japanese Yen (y) and Australian Dollars (d) on the same day is given by the equation y = 76d. Convert 93 100 Japanese Yen to British Pounds.",
+          "options": [
+            "£700",
+            "£1 225",
+            "£1 330",
+            "£12 250"
+          ],
+          "answer": 0,
+          "hint": "First convert Yen to Australian dollars using y = 76d. Then use the graph’s pound-to-dollar rate.",
+          "steps": [
+            {
+              "explain": "Use the Yen conversion to find the Australian-dollar amount.",
+              "work": "93 100 = 76d;  d = 93 100/76 = 1 225"
+            },
+            {
+              "explain": "Use the direct variation from part (a).",
+              "work": "p = (4/7)(1 225) = 4 × 175 = 700"
+            },
+            {
+              "explain": "Include the currency unit.",
+              "work": "93 100 Yen = £700"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "93 100 Japanese Yen",
+              "note": "Convert to Australian dollars first, then convert dollars to pounds."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
         }
       ]
     },

@@ -1034,6 +1034,47 @@
             "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
             "sourceYear": 2024
           }
+        },
+        {
+          "id": "abb-y10-2025-t4-d-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Consider the set of data 1, 5, 9, 10, 15. Suppose a new value, x, is added to this set of data, giving 1, 5, 9, 10, 15, x. It is known that x is greater than 15. The difference between the means of the two sets is equal to 10 times the difference between their medians. Calculate x.",
+          "options": [
+            "38",
+            "35",
+            "40",
+            "45"
+          ],
+          "answer": 0,
+          "hint": "Since x > 15, the new median is the average of 9 and 10. Find both means and form the stated difference equation.",
+          "steps": [
+            {
+              "explain": "Find the original median and mean.",
+              "work": "Median₁ = 9\nMean₁ = (1+5+9+10+15)/5 = 40/5 = 8"
+            },
+            {
+              "explain": "Since x is largest, the new median is (9+10)/2. Write the new mean.",
+              "work": "Median₂ = 9.5\nMean₂ = (40+x)/6"
+            },
+            {
+              "explain": "Use difference in means = 10 × difference in medians and solve.",
+              "work": "(40+x)/6 − 8 = 10(9.5−9)\n(40+x)/6 = 13\n40+x = 78; x = 38"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "x is greater than 15",
+              "note": "Use the ordered positions to determine the new median, then compare the means."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
         }
       ]
     },
@@ -2530,6 +2571,94 @@
             "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
             "sourceYear": 2024
           }
+        },
+        {
+          "id": "abb-y10-2025-t4-e2-q3a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Year 10 students were surveyed about the time they usually spend on the internet over a weekend. The year group consists of 124 boys and 96 girls. What percentage of boys usually spend 6 or less hours on the internet over a weekend?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#dbe3ed\" stroke-width=\"1\"><path d=\"M58 27V124M88 27V124M118 27V124M148 27V124M178 27V124M208 27V124M238 27V124M268 27V124\"/></g><g fill=\"#334155\" font-size=\"10\"><text x=\"12\" y=\"53\">Boys</text><text x=\"12\" y=\"98\">Girls</text></g><g stroke=\"#334155\" stroke-width=\"1.5\" fill=\"#dbeafe\"><path d=\"M58 48H268M58 93H238\"/><rect x=\"118\" y=\"38\" width=\"60\" height=\"20\"/><path d=\"M208 38V58\"/><rect x=\"118\" y=\"83\" width=\"60\" height=\"20\"/><path d=\"M148 83V103\"/></g><g fill=\"#475569\" font-size=\"8\"><text x=\"55\" y=\"137\">0</text><text x=\"85\" y=\"137\">1</text><text x=\"115\" y=\"137\">2</text><text x=\"145\" y=\"137\">3</text><text x=\"175\" y=\"137\">4</text><text x=\"205\" y=\"137\">5</text><text x=\"235\" y=\"137\">6</text><text x=\"265\" y=\"137\">7</text></g><text x=\"160\" y=\"155\" font-size=\"9\">Time (hours)</text></svg>"
+          },
+          "options": [
+            "75%",
+            "25%",
+            "50%",
+            "100%"
+          ],
+          "answer": 0,
+          "hint": "On the boys’ box plot, 6 hours is the upper quartile.",
+          "steps": [
+            {
+              "explain": "Read the boys’ upper quartile.",
+              "work": "Q₃=6 hours"
+            },
+            {
+              "explain": "Three quarters of observations are at or below the upper quartile.",
+              "work": "Proportion=3/4"
+            },
+            {
+              "explain": "Convert to a percentage.",
+              "work": "3/4×100%=75%"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "6 or less hours",
+              "note": "The upper quartile leaves about 75% of data below it."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-e2-q3b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Year 10 students were surveyed about the time they usually spend on the internet over a weekend. There are 124 boys and 96 girls. How many more boys than girls usually spend more than 5 hours on the internet over a weekend?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#dbe3ed\" stroke-width=\"1\"><path d=\"M58 27V124M88 27V124M118 27V124M148 27V124M178 27V124M208 27V124M238 27V124M268 27V124\"/></g><g fill=\"#334155\" font-size=\"10\"><text x=\"12\" y=\"53\">Boys</text><text x=\"12\" y=\"98\">Girls</text></g><g stroke=\"#334155\" stroke-width=\"1.5\" fill=\"#dbeafe\"><path d=\"M58 48H268M58 93H238\"/><rect x=\"118\" y=\"38\" width=\"60\" height=\"20\"/><path d=\"M208 38V58\"/><rect x=\"118\" y=\"83\" width=\"60\" height=\"20\"/><path d=\"M148 83V103\"/></g><g fill=\"#475569\" font-size=\"8\"><text x=\"55\" y=\"137\">0</text><text x=\"85\" y=\"137\">1</text><text x=\"115\" y=\"137\">2</text><text x=\"145\" y=\"137\">3</text><text x=\"175\" y=\"137\">4</text><text x=\"205\" y=\"137\">5</text><text x=\"235\" y=\"137\">6</text><text x=\"265\" y=\"137\">7</text></g><text x=\"160\" y=\"155\" font-size=\"9\">Time (hours)</text></svg>"
+          },
+          "options": [
+            "38",
+            "24",
+            "62",
+            "86"
+          ],
+          "answer": 0,
+          "hint": "Five hours is the boys’ median and the girls’ upper quartile. Convert these proportions to counts.",
+          "steps": [
+            {
+              "explain": "Half of 124 boys spend more than the median of 5 hours.",
+              "work": "0.5×124=62 boys"
+            },
+            {
+              "explain": "One quarter of 96 girls spend more than the upper quartile of 5 hours.",
+              "work": "0.25×96=24 girls"
+            },
+            {
+              "explain": "Subtract to find how many more boys.",
+              "work": "62−24=38"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "more than 5 hours",
+              "note": "Use 50% for the boys and 25% for the girls."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
         }
       ]
     },
@@ -3212,6 +3341,59 @@
             "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
             "sourceYear": 2024
           }
+        },
+        {
+          "id": "abb-y10-2025-t4-a-q5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Two groups of people were surveyed about their weekly wages. The results are shown in the box-and-whisker plots below. Which of the following statements is true for the people surveyed?",
+          "options": [
+            "The same percentage of people in each group earned more than $325 per week.",
+            "Approximately 75% of people under 21 years earned less than $350 per week.",
+            "Approximately 75% of people 21 years and older earned more than $350 per week.",
+            "Approximately 50% of people in each group earned between $325 and $350 per week."
+          ],
+          "answer": 1,
+          "hint": "On a box plot, the right edge of the box is the upper quartile; about 75% of observations are at or below it.",
+          "steps": [
+            {
+              "explain": "Read the upper quartile for the under-21 group from the right edge of its box.",
+              "work": "Q₃(under 21) ≈ $350",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g font-family=\"sans-serif\" fill=\"#334155\" font-size=\"9\"><text x=\"5\" y=\"57\">Under 21</text><text x=\"5\" y=\"104\">21+ years</text></g><g stroke=\"#94a3b8\" stroke-width=\"1\"><path d=\"M55 25V125M95 25V125M135 25V125M175 25V125M215 25V125M255 25V125M295 25V125M335 25V125\"/></g><g stroke=\"#334155\" stroke-width=\"1.5\" fill=\"#dbeafe\"><path d=\"M55 55H255M55 100H255\"/><rect x=\"95\" y=\"45\" width=\"80\" height=\"20\"/><path d=\"M155 45V65M175 45V65\"/><rect x=\"155\" y=\"90\" width=\"20\" height=\"20\"/><path d=\"M165 90V110\"/></g><g fill=\"#475569\" font-size=\"8\"><text x=\"52\" y=\"138\">200</text><text x=\"92\" y=\"138\">250</text><text x=\"132\" y=\"138\">300</text><text x=\"152\" y=\"150\">325</text><text x=\"172\" y=\"138\">350</text><text x=\"212\" y=\"138\">400</text><text x=\"252\" y=\"138\">450</text></g><text x=\"165\" y=\"170\" font-size=\"9\">Weekly wages ($)</text></svg>"
+              }
+            },
+            {
+              "explain": "By definition, about three quarters of the data are less than or equal to Q₃.",
+              "work": "75% of the group have wages ≤ Q₃",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g font-family=\"sans-serif\" fill=\"#334155\" font-size=\"9\"><text x=\"5\" y=\"57\">Under 21</text><text x=\"5\" y=\"104\">21+ years</text></g><g stroke=\"#94a3b8\" stroke-width=\"1\"><path d=\"M55 25V125M95 25V125M135 25V125M175 25V125M215 25V125M255 25V125M295 25V125M335 25V125\"/></g><g stroke=\"#334155\" stroke-width=\"1.5\" fill=\"#dbeafe\"><path d=\"M55 55H255M55 100H255\"/><rect x=\"95\" y=\"45\" width=\"80\" height=\"20\"/><path d=\"M155 45V65M175 45V65\"/><rect x=\"155\" y=\"90\" width=\"20\" height=\"20\"/><path d=\"M165 90V110\"/></g><g fill=\"#475569\" font-size=\"8\"><text x=\"52\" y=\"138\">200</text><text x=\"92\" y=\"138\">250</text><text x=\"132\" y=\"138\">300</text><text x=\"152\" y=\"150\">325</text><text x=\"172\" y=\"138\">350</text><text x=\"212\" y=\"138\">400</text><text x=\"252\" y=\"138\">450</text></g><text x=\"165\" y=\"170\" font-size=\"9\">Weekly wages ($)</text></svg>"
+              }
+            },
+            {
+              "explain": "Compare the statement with the plotted quartile.",
+              "work": "About 75% of people under 21 earned less than approximately $350 per week.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g font-family=\"sans-serif\" fill=\"#334155\" font-size=\"9\"><text x=\"5\" y=\"57\">Under 21</text><text x=\"5\" y=\"104\">21+ years</text></g><g stroke=\"#94a3b8\" stroke-width=\"1\"><path d=\"M55 25V125M95 25V125M135 25V125M175 25V125M215 25V125M255 25V125M295 25V125M335 25V125\"/></g><g stroke=\"#334155\" stroke-width=\"1.5\" fill=\"#dbeafe\"><path d=\"M55 55H255M55 100H255\"/><rect x=\"95\" y=\"45\" width=\"80\" height=\"20\"/><path d=\"M155 45V65M175 45V65\"/><rect x=\"155\" y=\"90\" width=\"20\" height=\"20\"/><path d=\"M165 90V110\"/></g><g fill=\"#475569\" font-size=\"8\"><text x=\"52\" y=\"138\">200</text><text x=\"92\" y=\"138\">250</text><text x=\"132\" y=\"138\">300</text><text x=\"152\" y=\"150\">325</text><text x=\"172\" y=\"138\">350</text><text x=\"212\" y=\"138\">400</text><text x=\"252\" y=\"138\">450</text></g><text x=\"165\" y=\"170\" font-size=\"9\">Weekly wages ($)</text></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "box-and-whisker plots",
+              "note": "Use the quartile markers to interpret the proportion of observations."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g font-family=\"sans-serif\" fill=\"#334155\" font-size=\"9\"><text x=\"5\" y=\"57\">Under 21</text><text x=\"5\" y=\"104\">21+ years</text></g><g stroke=\"#94a3b8\" stroke-width=\"1\"><path d=\"M55 25V125M95 25V125M135 25V125M175 25V125M215 25V125M255 25V125M295 25V125M335 25V125\"/></g><g stroke=\"#334155\" stroke-width=\"1.5\" fill=\"#dbeafe\"><path d=\"M55 55H255M55 100H255\"/><rect x=\"95\" y=\"45\" width=\"80\" height=\"20\"/><path d=\"M155 45V65M175 45V65\"/><rect x=\"155\" y=\"90\" width=\"20\" height=\"20\"/><path d=\"M165 90V110\"/></g><g fill=\"#475569\" font-size=\"8\"><text x=\"52\" y=\"138\">200</text><text x=\"92\" y=\"138\">250</text><text x=\"132\" y=\"138\">300</text><text x=\"152\" y=\"150\">325</text><text x=\"172\" y=\"138\">350</text><text x=\"212\" y=\"138\">400</text><text x=\"252\" y=\"138\">450</text></g><text x=\"165\" y=\"170\" font-size=\"9\">Weekly wages ($)</text></svg>"
+          }
         }
       ]
     },
@@ -3343,6 +3525,50 @@
           "meta": {
             "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
             "sourceYear": 2024
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-a-q15",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A grouped data frequency table is shown below: What is the mean for this set of data?",
+          "options": [
+            "6.5",
+            "10.5",
+            "11.9",
+            "12.4"
+          ],
+          "answer": 3,
+          "hint": "Use each class midpoint as the representative value, multiply by its frequency, then divide by the total frequency.",
+          "steps": [
+            {
+              "explain": "Find the midpoint of each interval.",
+              "work": "1–5 → 3; 6–10 → 8; 11–15 → 13; 16–20 → 18"
+            },
+            {
+              "explain": "Multiply each midpoint by its frequency and add.",
+              "work": "Σfx = 3(3) + 8(6) + 13(8) + 18(9) = 9 + 48 + 104 + 162 = 323"
+            },
+            {
+              "explain": "Divide the weighted total by the total frequency.",
+              "work": "Σf = 3 + 6 + 8 + 9 = 26\nMean = 323/26 ≈ 12.42 ≈ 12.4"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "A grouped data frequency table is shown below",
+              "note": "Read each class interval and its matching frequency. Use the class midpoint as the representative value for each group."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 270\" role=\"img\" aria-label=\"Grouped data frequency table\"><rect width=\"440\" height=\"270\" rx=\"14\" fill=\"#fff\"/><rect x=\"52\" y=\"40\" width=\"336\" height=\"54\" fill=\"#e8eef8\"/><g stroke=\"#34445e\" stroke-width=\"2\" fill=\"none\"><path d=\"M52 40h336v190H52zM220 40v190M52 94h336M52 128h336M52 162h336M52 196h336\"/></g><g font-family=\"Arial,sans-serif\" font-size=\"21\" fill=\"#26344a\" text-anchor=\"middle\"><text x=\"136\" y=\"74\" font-weight=\"700\">Class interval</text><text x=\"304\" y=\"74\" font-weight=\"700\">Frequency</text><text x=\"136\" y=\"119\">1–5</text><text x=\"304\" y=\"119\">3</text><text x=\"136\" y=\"153\">6–10</text><text x=\"304\" y=\"153\">6</text><text x=\"136\" y=\"187\">11–15</text><text x=\"304\" y=\"187\">8</text><text x=\"136\" y=\"221\">16–20</text><text x=\"304\" y=\"221\">9</text></g></svg>"
           }
         }
       ]
@@ -7205,6 +7431,165 @@
           "meta": {
             "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
             "sourceYear": 2024
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-b-q2a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Eight year 10 students were selected and had their height (in cm) and foot length (in cm) recorded and displayed in the scatterplot below. A line of best fit has been fitted to the data as shown. (a) Determine the predicted foot length of a student who is 176 cm tall.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#dbe3ed\" stroke-width=\"1\"><path d=\"M45 25V190M80 25V190M115 25V190M150 25V190M185 25V190M220 25V190M255 25V190M290 25V190M325 25V190M40 30H330M40 55H330M40 80H330M40 105H330M40 130H330M40 155H330M40 180H330\"/></g><g stroke=\"#334155\" stroke-width=\"1.3\"><path d=\"M40 190H330M45 195V20\"/></g><path d=\"M45 153L325 37\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.7\"/><g fill=\"#334155\"><circle cx=\"54\" cy=\"130\" r=\"2.8\"/><circle cx=\"106\" cy=\"163\" r=\"2.8\"/><circle cx=\"106\" cy=\"149\" r=\"2.8\"/><circle cx=\"129\" cy=\"85\" r=\"2.8\"/><circle cx=\"133\" cy=\"127\" r=\"2.8\"/><circle cx=\"220\" cy=\"63\" r=\"2.8\"/><circle cx=\"255\" cy=\"30\" r=\"2.8\"/><circle cx=\"308\" cy=\"80\" r=\"2.8\"/></g><circle cx=\"115\" cy=\"124\" r=\"3\" fill=\"#f97316\"/><circle cx=\"290\" cy=\"52\" r=\"3\" fill=\"#f97316\"/><g fill=\"#475569\" font-size=\"8\"><text x=\"42\" y=\"204\">20</text><text x=\"112\" y=\"204\">24</text><text x=\"182\" y=\"204\">28</text><text x=\"252\" y=\"204\">32</text><text x=\"316\" y=\"204\">36</text><text x=\"14\" y=\"182\">160</text><text x=\"14\" y=\"127\">170</text><text x=\"14\" y=\"72\">180</text><text x=\"14\" y=\"31\">190</text></g><text x=\"147\" y=\"218\" font-size=\"9\">Foot length (cm)</text><text x=\"2\" y=\"18\" font-size=\"9\">Height (cm)</text><text x=\"118\" y=\"119\" font-size=\"8\">B(24,172)</text><text x=\"292\" y=\"48\" font-size=\"8\">A(34,185)</text></svg>"
+          },
+          "options": [
+            "21 cm",
+            "22 cm",
+            "27 cm",
+            "31 cm"
+          ],
+          "answer": 2,
+          "hint": "Use x for foot length and y for height; read the fitted line where y = 176 cm.",
+          "steps": [
+            {
+              "explain": "Use the vertical axis for height, which is the y-coordinate.",
+              "work": "y = 176 cm",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#dbe3ed\" stroke-width=\"1\"><path d=\"M45 25V190M80 25V190M115 25V190M150 25V190M185 25V190M220 25V190M255 25V190M290 25V190M325 25V190M40 30H330M40 55H330M40 80H330M40 105H330M40 130H330M40 155H330M40 180H330\"/></g><g stroke=\"#334155\" stroke-width=\"1.3\"><path d=\"M40 190H330M45 195V20\"/></g><path d=\"M45 153L325 37\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.7\"/><g fill=\"#334155\"><circle cx=\"54\" cy=\"130\" r=\"2.8\"/><circle cx=\"106\" cy=\"163\" r=\"2.8\"/><circle cx=\"106\" cy=\"149\" r=\"2.8\"/><circle cx=\"129\" cy=\"85\" r=\"2.8\"/><circle cx=\"133\" cy=\"127\" r=\"2.8\"/><circle cx=\"220\" cy=\"63\" r=\"2.8\"/><circle cx=\"255\" cy=\"30\" r=\"2.8\"/><circle cx=\"308\" cy=\"80\" r=\"2.8\"/></g><circle cx=\"115\" cy=\"124\" r=\"3\" fill=\"#f97316\"/><circle cx=\"290\" cy=\"52\" r=\"3\" fill=\"#f97316\"/><g fill=\"#475569\" font-size=\"8\"><text x=\"42\" y=\"204\">20</text><text x=\"112\" y=\"204\">24</text><text x=\"182\" y=\"204\">28</text><text x=\"252\" y=\"204\">32</text><text x=\"316\" y=\"204\">36</text><text x=\"14\" y=\"182\">160</text><text x=\"14\" y=\"127\">170</text><text x=\"14\" y=\"72\">180</text><text x=\"14\" y=\"31\">190</text></g><text x=\"147\" y=\"218\" font-size=\"9\">Foot length (cm)</text><text x=\"2\" y=\"18\" font-size=\"9\">Height (cm)</text><text x=\"118\" y=\"119\" font-size=\"8\">B(24,172)</text><text x=\"292\" y=\"48\" font-size=\"8\">A(34,185)</text></svg>"
+              }
+            },
+            {
+              "explain": "Move horizontally from y = 176 to the fitted line, then down to the x-axis.",
+              "work": "x ≈ (176 − 140.8)/1.3 ≈ 27.1 cm",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#dbe3ed\" stroke-width=\"1\"><path d=\"M45 25V190M80 25V190M115 25V190M150 25V190M185 25V190M220 25V190M255 25V190M290 25V190M325 25V190M40 30H330M40 55H330M40 80H330M40 105H330M40 130H330M40 155H330M40 180H330\"/></g><g stroke=\"#334155\" stroke-width=\"1.3\"><path d=\"M40 190H330M45 195V20\"/></g><path d=\"M45 153L325 37\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.7\"/><g fill=\"#334155\"><circle cx=\"54\" cy=\"130\" r=\"2.8\"/><circle cx=\"106\" cy=\"163\" r=\"2.8\"/><circle cx=\"106\" cy=\"149\" r=\"2.8\"/><circle cx=\"129\" cy=\"85\" r=\"2.8\"/><circle cx=\"133\" cy=\"127\" r=\"2.8\"/><circle cx=\"220\" cy=\"63\" r=\"2.8\"/><circle cx=\"255\" cy=\"30\" r=\"2.8\"/><circle cx=\"308\" cy=\"80\" r=\"2.8\"/></g><circle cx=\"115\" cy=\"124\" r=\"3\" fill=\"#f97316\"/><circle cx=\"290\" cy=\"52\" r=\"3\" fill=\"#f97316\"/><g fill=\"#475569\" font-size=\"8\"><text x=\"42\" y=\"204\">20</text><text x=\"112\" y=\"204\">24</text><text x=\"182\" y=\"204\">28</text><text x=\"252\" y=\"204\">32</text><text x=\"316\" y=\"204\">36</text><text x=\"14\" y=\"182\">160</text><text x=\"14\" y=\"127\">170</text><text x=\"14\" y=\"72\">180</text><text x=\"14\" y=\"31\">190</text></g><text x=\"147\" y=\"218\" font-size=\"9\">Foot length (cm)</text><text x=\"2\" y=\"18\" font-size=\"9\">Height (cm)</text><text x=\"118\" y=\"119\" font-size=\"8\">B(24,172)</text><text x=\"292\" y=\"48\" font-size=\"8\">A(34,185)</text></svg>"
+              }
+            },
+            {
+              "explain": "Round the prediction to the nearest centimetre.",
+              "work": "Predicted foot length ≈ 27 cm",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#dbe3ed\" stroke-width=\"1\"><path d=\"M45 25V190M80 25V190M115 25V190M150 25V190M185 25V190M220 25V190M255 25V190M290 25V190M325 25V190M40 30H330M40 55H330M40 80H330M40 105H330M40 130H330M40 155H330M40 180H330\"/></g><g stroke=\"#334155\" stroke-width=\"1.3\"><path d=\"M40 190H330M45 195V20\"/></g><path d=\"M45 153L325 37\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.7\"/><g fill=\"#334155\"><circle cx=\"54\" cy=\"130\" r=\"2.8\"/><circle cx=\"106\" cy=\"163\" r=\"2.8\"/><circle cx=\"106\" cy=\"149\" r=\"2.8\"/><circle cx=\"129\" cy=\"85\" r=\"2.8\"/><circle cx=\"133\" cy=\"127\" r=\"2.8\"/><circle cx=\"220\" cy=\"63\" r=\"2.8\"/><circle cx=\"255\" cy=\"30\" r=\"2.8\"/><circle cx=\"308\" cy=\"80\" r=\"2.8\"/></g><circle cx=\"115\" cy=\"124\" r=\"3\" fill=\"#f97316\"/><circle cx=\"290\" cy=\"52\" r=\"3\" fill=\"#f97316\"/><g fill=\"#475569\" font-size=\"8\"><text x=\"42\" y=\"204\">20</text><text x=\"112\" y=\"204\">24</text><text x=\"182\" y=\"204\">28</text><text x=\"252\" y=\"204\">32</text><text x=\"316\" y=\"204\">36</text><text x=\"14\" y=\"182\">160</text><text x=\"14\" y=\"127\">170</text><text x=\"14\" y=\"72\">180</text><text x=\"14\" y=\"31\">190</text></g><text x=\"147\" y=\"218\" font-size=\"9\">Foot length (cm)</text><text x=\"2\" y=\"18\" font-size=\"9\">Height (cm)</text><text x=\"118\" y=\"119\" font-size=\"8\">B(24,172)</text><text x=\"292\" y=\"48\" font-size=\"8\">A(34,185)</text></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "176 cm tall",
+              "note": "Use the fitted line to estimate the response at the given height."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-b-q2b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Eight year 10 students were selected and had their height (in cm) and foot length (in cm) recorded and displayed in the scatterplot below. A line of best fit has been fitted to the data as shown. (b) Show that the gradient of the line of best fit is 1.3 (correct to 1 decimal place).",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#dbe3ed\" stroke-width=\"1\"><path d=\"M45 25V190M80 25V190M115 25V190M150 25V190M185 25V190M220 25V190M255 25V190M290 25V190M325 25V190M40 30H330M40 55H330M40 80H330M40 105H330M40 130H330M40 155H330M40 180H330\"/></g><g stroke=\"#334155\" stroke-width=\"1.3\"><path d=\"M40 190H330M45 195V20\"/></g><path d=\"M45 153L325 37\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.7\"/><g fill=\"#334155\"><circle cx=\"54\" cy=\"130\" r=\"2.8\"/><circle cx=\"106\" cy=\"163\" r=\"2.8\"/><circle cx=\"106\" cy=\"149\" r=\"2.8\"/><circle cx=\"129\" cy=\"85\" r=\"2.8\"/><circle cx=\"133\" cy=\"127\" r=\"2.8\"/><circle cx=\"220\" cy=\"63\" r=\"2.8\"/><circle cx=\"255\" cy=\"30\" r=\"2.8\"/><circle cx=\"308\" cy=\"80\" r=\"2.8\"/></g><circle cx=\"115\" cy=\"124\" r=\"3\" fill=\"#f97316\"/><circle cx=\"290\" cy=\"52\" r=\"3\" fill=\"#f97316\"/><g fill=\"#475569\" font-size=\"8\"><text x=\"42\" y=\"204\">20</text><text x=\"112\" y=\"204\">24</text><text x=\"182\" y=\"204\">28</text><text x=\"252\" y=\"204\">32</text><text x=\"316\" y=\"204\">36</text><text x=\"14\" y=\"182\">160</text><text x=\"14\" y=\"127\">170</text><text x=\"14\" y=\"72\">180</text><text x=\"14\" y=\"31\">190</text></g><text x=\"147\" y=\"218\" font-size=\"9\">Foot length (cm)</text><text x=\"2\" y=\"18\" font-size=\"9\">Height (cm)</text><text x=\"118\" y=\"119\" font-size=\"8\">B(24,172)</text><text x=\"292\" y=\"48\" font-size=\"8\">A(34,185)</text></svg>"
+          },
+          "options": [
+            "1.1",
+            "1.2",
+            "1.3",
+            "1.5"
+          ],
+          "answer": 2,
+          "hint": "Use two points on the fitted line, for example (24, 172) and (34, 185), then calculate rise divided by run.",
+          "steps": [
+            {
+              "explain": "Read two points from the fitted line: (24,172) and (34,185), where x is foot length and y is height.",
+              "work": "(x₁,y₁)=(24,172), (x₂,y₂)=(34,185)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#dbe3ed\" stroke-width=\"1\"><path d=\"M45 25V190M80 25V190M115 25V190M150 25V190M185 25V190M220 25V190M255 25V190M290 25V190M325 25V190M40 30H330M40 55H330M40 80H330M40 105H330M40 130H330M40 155H330M40 180H330\"/></g><g stroke=\"#334155\" stroke-width=\"1.3\"><path d=\"M40 190H330M45 195V20\"/></g><path d=\"M45 153L325 37\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.7\"/><g fill=\"#334155\"><circle cx=\"54\" cy=\"130\" r=\"2.8\"/><circle cx=\"106\" cy=\"163\" r=\"2.8\"/><circle cx=\"106\" cy=\"149\" r=\"2.8\"/><circle cx=\"129\" cy=\"85\" r=\"2.8\"/><circle cx=\"133\" cy=\"127\" r=\"2.8\"/><circle cx=\"220\" cy=\"63\" r=\"2.8\"/><circle cx=\"255\" cy=\"30\" r=\"2.8\"/><circle cx=\"308\" cy=\"80\" r=\"2.8\"/></g><circle cx=\"115\" cy=\"124\" r=\"3\" fill=\"#f97316\"/><circle cx=\"290\" cy=\"52\" r=\"3\" fill=\"#f97316\"/><g fill=\"#475569\" font-size=\"8\"><text x=\"42\" y=\"204\">20</text><text x=\"112\" y=\"204\">24</text><text x=\"182\" y=\"204\">28</text><text x=\"252\" y=\"204\">32</text><text x=\"316\" y=\"204\">36</text><text x=\"14\" y=\"182\">160</text><text x=\"14\" y=\"127\">170</text><text x=\"14\" y=\"72\">180</text><text x=\"14\" y=\"31\">190</text></g><text x=\"147\" y=\"218\" font-size=\"9\">Foot length (cm)</text><text x=\"2\" y=\"18\" font-size=\"9\">Height (cm)</text><text x=\"118\" y=\"119\" font-size=\"8\">B(24,172)</text><text x=\"292\" y=\"48\" font-size=\"8\">A(34,185)</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculate change in height divided by change in foot length.",
+              "work": "m=(185−172)/(34−24)=13/10=1.3",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#dbe3ed\" stroke-width=\"1\"><path d=\"M45 25V190M80 25V190M115 25V190M150 25V190M185 25V190M220 25V190M255 25V190M290 25V190M325 25V190M40 30H330M40 55H330M40 80H330M40 105H330M40 130H330M40 155H330M40 180H330\"/></g><g stroke=\"#334155\" stroke-width=\"1.3\"><path d=\"M40 190H330M45 195V20\"/></g><path d=\"M45 153L325 37\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.7\"/><g fill=\"#334155\"><circle cx=\"54\" cy=\"130\" r=\"2.8\"/><circle cx=\"106\" cy=\"163\" r=\"2.8\"/><circle cx=\"106\" cy=\"149\" r=\"2.8\"/><circle cx=\"129\" cy=\"85\" r=\"2.8\"/><circle cx=\"133\" cy=\"127\" r=\"2.8\"/><circle cx=\"220\" cy=\"63\" r=\"2.8\"/><circle cx=\"255\" cy=\"30\" r=\"2.8\"/><circle cx=\"308\" cy=\"80\" r=\"2.8\"/></g><circle cx=\"115\" cy=\"124\" r=\"3\" fill=\"#f97316\"/><circle cx=\"290\" cy=\"52\" r=\"3\" fill=\"#f97316\"/><g fill=\"#475569\" font-size=\"8\"><text x=\"42\" y=\"204\">20</text><text x=\"112\" y=\"204\">24</text><text x=\"182\" y=\"204\">28</text><text x=\"252\" y=\"204\">32</text><text x=\"316\" y=\"204\">36</text><text x=\"14\" y=\"182\">160</text><text x=\"14\" y=\"127\">170</text><text x=\"14\" y=\"72\">180</text><text x=\"14\" y=\"31\">190</text></g><text x=\"147\" y=\"218\" font-size=\"9\">Foot length (cm)</text><text x=\"2\" y=\"18\" font-size=\"9\">Height (cm)</text><text x=\"118\" y=\"119\" font-size=\"8\">B(24,172)</text><text x=\"292\" y=\"48\" font-size=\"8\">A(34,185)</text></svg>"
+              }
+            },
+            {
+              "explain": "The gradient to one decimal place is 1.3.",
+              "work": "m = 1.3",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#dbe3ed\" stroke-width=\"1\"><path d=\"M45 25V190M80 25V190M115 25V190M150 25V190M185 25V190M220 25V190M255 25V190M290 25V190M325 25V190M40 30H330M40 55H330M40 80H330M40 105H330M40 130H330M40 155H330M40 180H330\"/></g><g stroke=\"#334155\" stroke-width=\"1.3\"><path d=\"M40 190H330M45 195V20\"/></g><path d=\"M45 153L325 37\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.7\"/><g fill=\"#334155\"><circle cx=\"54\" cy=\"130\" r=\"2.8\"/><circle cx=\"106\" cy=\"163\" r=\"2.8\"/><circle cx=\"106\" cy=\"149\" r=\"2.8\"/><circle cx=\"129\" cy=\"85\" r=\"2.8\"/><circle cx=\"133\" cy=\"127\" r=\"2.8\"/><circle cx=\"220\" cy=\"63\" r=\"2.8\"/><circle cx=\"255\" cy=\"30\" r=\"2.8\"/><circle cx=\"308\" cy=\"80\" r=\"2.8\"/></g><circle cx=\"115\" cy=\"124\" r=\"3\" fill=\"#f97316\"/><circle cx=\"290\" cy=\"52\" r=\"3\" fill=\"#f97316\"/><g fill=\"#475569\" font-size=\"8\"><text x=\"42\" y=\"204\">20</text><text x=\"112\" y=\"204\">24</text><text x=\"182\" y=\"204\">28</text><text x=\"252\" y=\"204\">32</text><text x=\"316\" y=\"204\">36</text><text x=\"14\" y=\"182\">160</text><text x=\"14\" y=\"127\">170</text><text x=\"14\" y=\"72\">180</text><text x=\"14\" y=\"31\">190</text></g><text x=\"147\" y=\"218\" font-size=\"9\">Foot length (cm)</text><text x=\"2\" y=\"18\" font-size=\"9\">Height (cm)</text><text x=\"118\" y=\"119\" font-size=\"8\">B(24,172)</text><text x=\"292\" y=\"48\" font-size=\"8\">A(34,185)</text></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "gradient of the line of best fit",
+              "note": "Gradient is change in vertical value divided by change in horizontal value."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-b-q2c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Eight year 10 students were selected and had their height (in cm) and foot length (in cm) recorded and displayed in the scatterplot below. A line of best fit has been fitted to the data as shown. (c) Determine the equation of the line of best fit in the form y = mx + b.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#dbe3ed\" stroke-width=\"1\"><path d=\"M45 25V190M80 25V190M115 25V190M150 25V190M185 25V190M220 25V190M255 25V190M290 25V190M325 25V190M40 30H330M40 55H330M40 80H330M40 105H330M40 130H330M40 155H330M40 180H330\"/></g><g stroke=\"#334155\" stroke-width=\"1.3\"><path d=\"M40 190H330M45 195V20\"/></g><path d=\"M45 153L325 37\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.7\"/><g fill=\"#334155\"><circle cx=\"54\" cy=\"130\" r=\"2.8\"/><circle cx=\"106\" cy=\"163\" r=\"2.8\"/><circle cx=\"106\" cy=\"149\" r=\"2.8\"/><circle cx=\"129\" cy=\"85\" r=\"2.8\"/><circle cx=\"133\" cy=\"127\" r=\"2.8\"/><circle cx=\"220\" cy=\"63\" r=\"2.8\"/><circle cx=\"255\" cy=\"30\" r=\"2.8\"/><circle cx=\"308\" cy=\"80\" r=\"2.8\"/></g><circle cx=\"115\" cy=\"124\" r=\"3\" fill=\"#f97316\"/><circle cx=\"290\" cy=\"52\" r=\"3\" fill=\"#f97316\"/><g fill=\"#475569\" font-size=\"8\"><text x=\"42\" y=\"204\">20</text><text x=\"112\" y=\"204\">24</text><text x=\"182\" y=\"204\">28</text><text x=\"252\" y=\"204\">32</text><text x=\"316\" y=\"204\">36</text><text x=\"14\" y=\"182\">160</text><text x=\"14\" y=\"127\">170</text><text x=\"14\" y=\"72\">180</text><text x=\"14\" y=\"31\">190</text></g><text x=\"147\" y=\"218\" font-size=\"9\">Foot length (cm)</text><text x=\"2\" y=\"18\" font-size=\"9\">Height (cm)</text><text x=\"118\" y=\"119\" font-size=\"8\">B(24,172)</text><text x=\"292\" y=\"48\" font-size=\"8\">A(34,185)</text></svg>"
+          },
+          "options": [
+            "y = 1.3x + 140.8",
+            "y = 1.3x − 140.8",
+            "y = 0.77x + 140.8",
+            "y = 1.3x + 172"
+          ],
+          "answer": 0,
+          "hint": "Use y = mx + b with the gradient from part (b), then substitute a point on the line to find b.",
+          "steps": [
+            {
+              "explain": "The gradient is approximately 1.3. Use point (24, 172) from the line.",
+              "work": "y = 1.3x + b",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#dbe3ed\" stroke-width=\"1\"><path d=\"M45 25V190M80 25V190M115 25V190M150 25V190M185 25V190M220 25V190M255 25V190M290 25V190M325 25V190M40 30H330M40 55H330M40 80H330M40 105H330M40 130H330M40 155H330M40 180H330\"/></g><g stroke=\"#334155\" stroke-width=\"1.3\"><path d=\"M40 190H330M45 195V20\"/></g><path d=\"M45 153L325 37\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.7\"/><g fill=\"#334155\"><circle cx=\"54\" cy=\"130\" r=\"2.8\"/><circle cx=\"106\" cy=\"163\" r=\"2.8\"/><circle cx=\"106\" cy=\"149\" r=\"2.8\"/><circle cx=\"129\" cy=\"85\" r=\"2.8\"/><circle cx=\"133\" cy=\"127\" r=\"2.8\"/><circle cx=\"220\" cy=\"63\" r=\"2.8\"/><circle cx=\"255\" cy=\"30\" r=\"2.8\"/><circle cx=\"308\" cy=\"80\" r=\"2.8\"/></g><circle cx=\"115\" cy=\"124\" r=\"3\" fill=\"#f97316\"/><circle cx=\"290\" cy=\"52\" r=\"3\" fill=\"#f97316\"/><g fill=\"#475569\" font-size=\"8\"><text x=\"42\" y=\"204\">20</text><text x=\"112\" y=\"204\">24</text><text x=\"182\" y=\"204\">28</text><text x=\"252\" y=\"204\">32</text><text x=\"316\" y=\"204\">36</text><text x=\"14\" y=\"182\">160</text><text x=\"14\" y=\"127\">170</text><text x=\"14\" y=\"72\">180</text><text x=\"14\" y=\"31\">190</text></g><text x=\"147\" y=\"218\" font-size=\"9\">Foot length (cm)</text><text x=\"2\" y=\"18\" font-size=\"9\">Height (cm)</text><text x=\"118\" y=\"119\" font-size=\"8\">B(24,172)</text><text x=\"292\" y=\"48\" font-size=\"8\">A(34,185)</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute the point (24,172) on the fitted line, then solve for b.",
+              "work": "172 = 1.3(24) + b\nb = 172 − 31.2 = 140.8",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#dbe3ed\" stroke-width=\"1\"><path d=\"M45 25V190M80 25V190M115 25V190M150 25V190M185 25V190M220 25V190M255 25V190M290 25V190M325 25V190M40 30H330M40 55H330M40 80H330M40 105H330M40 130H330M40 155H330M40 180H330\"/></g><g stroke=\"#334155\" stroke-width=\"1.3\"><path d=\"M40 190H330M45 195V20\"/></g><path d=\"M45 153L325 37\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.7\"/><g fill=\"#334155\"><circle cx=\"54\" cy=\"130\" r=\"2.8\"/><circle cx=\"106\" cy=\"163\" r=\"2.8\"/><circle cx=\"106\" cy=\"149\" r=\"2.8\"/><circle cx=\"129\" cy=\"85\" r=\"2.8\"/><circle cx=\"133\" cy=\"127\" r=\"2.8\"/><circle cx=\"220\" cy=\"63\" r=\"2.8\"/><circle cx=\"255\" cy=\"30\" r=\"2.8\"/><circle cx=\"308\" cy=\"80\" r=\"2.8\"/></g><circle cx=\"115\" cy=\"124\" r=\"3\" fill=\"#f97316\"/><circle cx=\"290\" cy=\"52\" r=\"3\" fill=\"#f97316\"/><g fill=\"#475569\" font-size=\"8\"><text x=\"42\" y=\"204\">20</text><text x=\"112\" y=\"204\">24</text><text x=\"182\" y=\"204\">28</text><text x=\"252\" y=\"204\">32</text><text x=\"316\" y=\"204\">36</text><text x=\"14\" y=\"182\">160</text><text x=\"14\" y=\"127\">170</text><text x=\"14\" y=\"72\">180</text><text x=\"14\" y=\"31\">190</text></g><text x=\"147\" y=\"218\" font-size=\"9\">Foot length (cm)</text><text x=\"2\" y=\"18\" font-size=\"9\">Height (cm)</text><text x=\"118\" y=\"119\" font-size=\"8\">B(24,172)</text><text x=\"292\" y=\"48\" font-size=\"8\">A(34,185)</text></svg>"
+              }
+            },
+            {
+              "explain": "Round the intercept consistently with the graph.",
+              "work": "y = 1.3x + 140.8",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#dbe3ed\" stroke-width=\"1\"><path d=\"M45 25V190M80 25V190M115 25V190M150 25V190M185 25V190M220 25V190M255 25V190M290 25V190M325 25V190M40 30H330M40 55H330M40 80H330M40 105H330M40 130H330M40 155H330M40 180H330\"/></g><g stroke=\"#334155\" stroke-width=\"1.3\"><path d=\"M40 190H330M45 195V20\"/></g><path d=\"M45 153L325 37\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.7\"/><g fill=\"#334155\"><circle cx=\"54\" cy=\"130\" r=\"2.8\"/><circle cx=\"106\" cy=\"163\" r=\"2.8\"/><circle cx=\"106\" cy=\"149\" r=\"2.8\"/><circle cx=\"129\" cy=\"85\" r=\"2.8\"/><circle cx=\"133\" cy=\"127\" r=\"2.8\"/><circle cx=\"220\" cy=\"63\" r=\"2.8\"/><circle cx=\"255\" cy=\"30\" r=\"2.8\"/><circle cx=\"308\" cy=\"80\" r=\"2.8\"/></g><circle cx=\"115\" cy=\"124\" r=\"3\" fill=\"#f97316\"/><circle cx=\"290\" cy=\"52\" r=\"3\" fill=\"#f97316\"/><g fill=\"#475569\" font-size=\"8\"><text x=\"42\" y=\"204\">20</text><text x=\"112\" y=\"204\">24</text><text x=\"182\" y=\"204\">28</text><text x=\"252\" y=\"204\">32</text><text x=\"316\" y=\"204\">36</text><text x=\"14\" y=\"182\">160</text><text x=\"14\" y=\"127\">170</text><text x=\"14\" y=\"72\">180</text><text x=\"14\" y=\"31\">190</text></g><text x=\"147\" y=\"218\" font-size=\"9\">Foot length (cm)</text><text x=\"2\" y=\"18\" font-size=\"9\">Height (cm)</text><text x=\"118\" y=\"119\" font-size=\"8\">B(24,172)</text><text x=\"292\" y=\"48\" font-size=\"8\">A(34,185)</text></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "in the form y = mx + b",
+              "note": "Substitute the gradient and one point on the fitted line."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
           }
         }
       ]

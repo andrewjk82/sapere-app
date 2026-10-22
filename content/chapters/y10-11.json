@@ -2394,6 +2394,88 @@
             "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
             "sourceYear": 2024
           }
+        },
+        {
+          "id": "abb-y10-2025-t4-e1-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "By completing the square for both x and y, determine the radius and centre of the circle with equation x² − 6x + y² + 4y − 3 = 0.",
+          "options": [
+            "Radius 4, centre (3,−2)",
+            "Radius 16, centre (3,−2)",
+            "Radius 4, centre (−3,2)",
+            "Radius 2, centre (3,−2)"
+          ],
+          "answer": 0,
+          "hint": "Complete the square separately in x and y.",
+          "steps": [
+            {
+              "explain": "Group the x-terms and y-terms.",
+              "work": "(x²−6x)+(y²+4y)=3"
+            },
+            {
+              "explain": "Complete each square.",
+              "work": "(x−3)²−9+(y+2)²−4=3\n(x−3)²+(y+2)²=16"
+            },
+            {
+              "explain": "Read the centre and radius.",
+              "work": "Centre=(3,−2); radius=√16=4"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "By completing the square for both x and y",
+              "note": "Complete the square separately in x and y."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-e2-q2",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Sketch the graph of the equation x² + (y−2)² = 4, showing all important features.",
+          "answer": "Sample answer is shown in the final solution step.",
+          "hint": "Compare with the standard circle equation to find the centre and radius; mark the four extreme points.",
+          "steps": [
+            {
+              "explain": "Read the centre and radius.",
+              "work": "Centre=(0,2); r=2"
+            },
+            {
+              "explain": "Find the four extreme points.",
+              "work": "(0,4),(0,0),(−2,2),(2,2)"
+            },
+            {
+              "explain": "Draw the circle through those points, centred at (0,2).",
+              "work": "The complete sample circle is shown in the final diagram.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M30 20V195M70 20V195M110 20V195M150 20V195M190 20V195M230 20V195M270 20V195M310 20V195M25 30H335M25 70H335M25 110H335M25 150H335M25 190H335\"/></g><g stroke=\"#334155\" stroke-width=\"1.4\"><path d=\"M25 170H335M170 195V20\"/></g><circle cx=\"170\" cy=\"90\" r=\"80\" fill=\"#dbeafe\" fill-opacity=\".25\" stroke=\"#6366f1\" stroke-width=\"1.8\"/><circle cx=\"170\" cy=\"90\" r=\"3\" fill=\"#ef4444\"/><line x1=\"170\" y1=\"90\" x2=\"250\" y2=\"90\" stroke=\"#ef4444\" stroke-width=\"1.6\"/><text x=\"174\" y=\"83\" font-size=\"10\">(0,2)</text><text x=\"205\" y=\"106\" font-size=\"10\">r=2</text></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Sketch the graph of the equation x² + (y−2",
+              "note": "Compare with the standard circle equation to find the centre and radius; mark the four extreme points."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "manual": true,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M30 20V195M70 20V195M110 20V195M150 20V195M190 20V195M230 20V195M270 20V195M310 20V195M25 30H335M25 70H335M25 110H335M25 150H335M25 190H335\"/></g><g stroke=\"#334155\" stroke-width=\"1.4\"><path d=\"M25 170H335M170 195V20\"/></g><circle cx=\"170\" cy=\"90\" r=\"80\" fill=\"#dbeafe\" fill-opacity=\".25\" stroke=\"#6366f1\" stroke-width=\"1.8\"/><circle cx=\"170\" cy=\"90\" r=\"3\" fill=\"#ef4444\"/><line x1=\"170\" y1=\"90\" x2=\"250\" y2=\"90\" stroke=\"#ef4444\" stroke-width=\"1.6\"/><text x=\"174\" y=\"83\" font-size=\"10\">(0,2)</text><text x=\"205\" y=\"106\" font-size=\"10\">r=2</text></svg>"
+          }
         }
       ]
     },
@@ -5240,6 +5322,47 @@
           "meta": {
             "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
             "sourceYear": 2024
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-d-q2",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Sketch the graph of the function y = 1 + 1/(x − 2). Show all asymptotes and intercepts.",
+          "answer": "Sample answer is shown in the final solution step.",
+          "hint": "Rewrite the fraction as 1 + 1/(x − 2). This reveals the vertical and horizontal asymptotes; then find both intercepts.",
+          "steps": [
+            {
+              "explain": "Divide or rearrange to expose the translated reciprocal graph.",
+              "work": "y = 1 + 1/(x−2)"
+            },
+            {
+              "explain": "Mark the asymptotes and calculate intercepts.",
+              "work": "Vertical asymptote: x = 2\nHorizontal asymptote: y = 1\nx-intercept: x=1 → (1,0)\ny-intercept: x=0 → (0,1/2)"
+            },
+            {
+              "explain": "Draw the two branches approaching both asymptotes and passing through the intercepts.",
+              "work": "Sample graph: asymptotes x=2 and y=1; intercepts (1,0) and (0,1/2).",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M35 25V185M75 25V185M115 25V185M155 25V185M195 25V185M235 25V185M275 25V185M315 25V185M30 30H330M30 70H330M30 110H330M30 150H330M30 180H330\"/></g><g stroke=\"#334155\" stroke-width=\"1.4\"><path d=\"M30 150H330M100 190V20\"/></g><path d=\"M35 109 C60 111 80 117 91 127 C97 134 99 142 99.5 148M100.5 20 C101 45 105 78 115 98 C130 119 164 129 205 134 C250 139 290 139 328 140\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\"/><path d=\"M180 20V188M30 110H330\" stroke=\"#ef4444\" stroke-width=\"1.3\" stroke-dasharray=\"5 4\"/><circle cx=\"100\" cy=\"130\" r=\"3\" fill=\"#f97316\"/><circle cx=\"140\" cy=\"150\" r=\"3\" fill=\"#f97316\"/><text x=\"183\" y=\"18\" font-size=\"9\">x=2</text><text x=\"300\" y=\"106\" font-size=\"9\">y=1</text><text x=\"101\" y=\"125\" font-size=\"9\">(0,½)</text><text x=\"143\" y=\"162\" font-size=\"9\">(1,0)</text></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Sketch the graph of the function y = 1 + 1",
+              "note": "Rewrite the fraction as 1 + 1/(x − 2). This reveals the vertical and horizontal asymptotes; then find both intercepts."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "manual": true,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M45 25V185M85 25V185M125 25V185M165 25V185M205 25V185M245 25V185M285 25V185M325 25V185M40 30H330M40 65H330M40 100H330M40 135H330M40 170H330\"/></g><g stroke=\"#334155\" stroke-width=\"1.5\"><path d=\"M40 185H330M45 190V20\"/></g><text x=\"325\" y=\"204\" font-size=\"10\">x</text><text x=\"30\" y=\"22\" font-size=\"10\">y</text></svg>"
           }
         }
       ]

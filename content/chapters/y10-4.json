@@ -1958,6 +1958,132 @@
             "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
             "sourceYear": 2024
           }
+        },
+        {
+          "id": "abb-y10-2025-t4-a-q4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The linear function with equation 4x − 2y + 3 = 0 has:",
+          "options": [
+            "gradient −2, y-intercept −3/2",
+            "gradient 1/2, y-intercept 3/2",
+            "gradient 2, y-intercept 3/2",
+            "gradient 4, y-intercept 3"
+          ],
+          "answer": 2,
+          "hint": "Rearrange into y = mx + c. The coefficient of x is the gradient and c is the y-intercept.",
+          "steps": [
+            {
+              "explain": "Isolate y so the equation is in gradient-intercept form.",
+              "work": "4x − 2y + 3 = 0\n−2y = −4x − 3"
+            },
+            {
+              "explain": "Divide every term by −2.",
+              "work": "y = 2x + 3/2"
+            },
+            {
+              "explain": "Read the gradient and y-intercept from y = mx + c.",
+              "work": "m = 2, c = 3/2"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "4x − 2y + 3 = 0",
+              "note": "Rearrange to y = mx + c to read both values."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-e2-q5a",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Prove that ABCD is a trapezium.",
+          "answer": "Sample answer is shown in the final solution step.",
+          "hint": "Show one pair of opposite sides is parallel by comparing gradients.",
+          "steps": [
+            {
+              "explain": "Find the gradient of AD from its equation.",
+              "work": "2x−y−1=0 → y=2x−1; m_AD=2"
+            },
+            {
+              "explain": "Find the gradient of BC.",
+              "work": "m_BC=(5−3)/(1−0)=2"
+            },
+            {
+              "explain": "Equal gradients prove AD is parallel to BC.",
+              "work": "AD∥BC, so ABCD is a trapezium.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M30 20V195M70 20V195M110 20V195M150 20V195M190 20V195M230 20V195M270 20V195M310 20V195M25 30H335M25 70H335M25 110H335M25 150H335M25 190H335\"/></g><g stroke=\"#334155\" stroke-width=\"1.5\"><path d=\"M25 150H335M90 195V20\"/></g><path d=\"M90 170L90 70L130 30L250 30M90 170L130 30M90 70L250 30\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2\"/><circle cx=\"90\" cy=\"170\" r=\"3\" fill=\"#ef4444\"/><circle cx=\"90\" cy=\"70\" r=\"3\" fill=\"#ef4444\"/><circle cx=\"130\" cy=\"30\" r=\"3\" fill=\"#ef4444\"/><circle cx=\"250\" cy=\"30\" r=\"3\" fill=\"#ef4444\"/><text x=\"56\" y=\"185\" font-size=\"9\">A(0,−1)</text><text x=\"95\" y=\"68\" font-size=\"9\">B(0,3)</text><text x=\"118\" y=\"44\" font-size=\"9\">C(1,5)</text><text x=\"252\" y=\"27\" font-size=\"9\">D(3,5)</text><text x=\"183\" y=\"101\" font-size=\"9\">AD: 2x−y−1=0</text></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove that ABCD is a trapezium.",
+              "note": "Show one pair of opposite sides is parallel by comparing gradients."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "manual": true,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M30 20V195M70 20V195M110 20V195M150 20V195M190 20V195M230 20V195M270 20V195M310 20V195M25 30H335M25 70H335M25 110H335M25 150H335M25 190H335\"/></g><g stroke=\"#334155\" stroke-width=\"1.5\"><path d=\"M25 150H335M90 195V20\"/></g><path d=\"M90 170L90 70L130 30L250 30M90 170L130 30M90 70L250 30\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2\"/><circle cx=\"90\" cy=\"170\" r=\"3\" fill=\"#ef4444\"/><circle cx=\"90\" cy=\"70\" r=\"3\" fill=\"#ef4444\"/><circle cx=\"130\" cy=\"30\" r=\"3\" fill=\"#ef4444\"/><circle cx=\"250\" cy=\"30\" r=\"3\" fill=\"#ef4444\"/><text x=\"56\" y=\"185\" font-size=\"9\">A(0,−1)</text><text x=\"95\" y=\"68\" font-size=\"9\">B(0,3)</text><text x=\"118\" y=\"44\" font-size=\"9\">C(1,5)</text><text x=\"252\" y=\"27\" font-size=\"9\">D(3,5)</text><text x=\"183\" y=\"101\" font-size=\"9\">AD: 2x−y−1=0</text></svg>"
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-e2-q5b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The line CD is parallel to the x-axis. Find the coordinates of the point D.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M30 20V195M70 20V195M110 20V195M150 20V195M190 20V195M230 20V195M270 20V195M310 20V195M25 30H335M25 70H335M25 110H335M25 150H335M25 190H335\"/></g><g stroke=\"#334155\" stroke-width=\"1.5\"><path d=\"M25 150H335M90 195V20\"/></g><path d=\"M90 170L90 70L130 30L250 30M90 170L130 30M90 70L250 30\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2\"/><circle cx=\"90\" cy=\"170\" r=\"3\" fill=\"#ef4444\"/><circle cx=\"90\" cy=\"70\" r=\"3\" fill=\"#ef4444\"/><circle cx=\"130\" cy=\"30\" r=\"3\" fill=\"#ef4444\"/><circle cx=\"250\" cy=\"30\" r=\"3\" fill=\"#ef4444\"/><text x=\"56\" y=\"185\" font-size=\"9\">A(0,−1)</text><text x=\"95\" y=\"68\" font-size=\"9\">B(0,3)</text><text x=\"118\" y=\"44\" font-size=\"9\">C(1,5)</text><text x=\"252\" y=\"27\" font-size=\"9\">D(3,5)</text><text x=\"183\" y=\"101\" font-size=\"9\">AD: 2x−y−1=0</text></svg>"
+          },
+          "options": [
+            "(3,5)",
+            "(5,3)",
+            "(3,−5)",
+            "(2,5)"
+          ],
+          "answer": 0,
+          "hint": "A horizontal line has a constant y-coordinate. Substitute y=5 into AD’s equation.",
+          "steps": [
+            {
+              "explain": "Because CD is horizontal, D has the same y-coordinate as C.",
+              "work": "y_D=5"
+            },
+            {
+              "explain": "Substitute into the equation of AD.",
+              "work": "2x−5−1=0; 2x=6; x=3"
+            },
+            {
+              "explain": "Write the ordered pair.",
+              "work": "D=(3,5)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "parallel to the x-axis",
+              "note": "A horizontal line keeps y constant."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
         }
       ]
     },
@@ -3046,6 +3172,132 @@
           "meta": {
             "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
             "sourceYear": 2024
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-a-q13",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The graph of the line with equation y = 6 − 2x is shown below. When the graph of the line with equation y = x + 3 is also drawn on this number plane, what will be the point of intersection of the two lines?",
+          "options": [
+            "(0, 6)",
+            "(2, 2)",
+            "(3, 0)",
+            "(1, 4)"
+          ],
+          "answer": 3,
+          "hint": "At the intersection both equations have the same y-value. Set their expressions for y equal.",
+          "steps": [
+            {
+              "explain": "Equate the two expressions for y.",
+              "work": "6 − 2x = x + 3"
+            },
+            {
+              "explain": "Solve for x by collecting like terms.",
+              "work": "3 = 3x\nx = 1"
+            },
+            {
+              "explain": "Substitute x = 1 into either line equation.",
+              "work": "y = 1 + 3 = 4\nIntersection = (1, 4)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "point of intersection",
+              "note": "Set the two y-expressions equal, then find the matching y-coordinate."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-d-q6a",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Ariana’s parents have given her an interest free loan of $4800 to buy a car. She will pay them back by paying $x immediately and $y every month until the loan has been paid back in full. After 10 months Ariana has paid back $950, and after 20 months she has paid back $1650. These relationships are represented by the equations x + 10y = 950 and x + 20y = 1650. Graph the equations below to determine the values of x and y.",
+          "answer": "Sample answer is shown in the final solution step.",
+          "hint": "Graph both linear equations on the same axes. Their intersection is the pair satisfying both payment totals.",
+          "steps": [
+            {
+              "explain": "Rearrange each equation to y = mx + c so each line can be drawn.",
+              "work": "y=−x/10+95\ny=−x/20+82.5"
+            },
+            {
+              "explain": "Read the intersection of the two lines.",
+              "work": "x=$250, y=$70",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M50 25V185M95 25V185M140 25V185M185 25V185M230 25V185M275 25V185M320 25V185M45 30H330M45 60H330M45 90H330M45 120H330M45 150H330M45 180H330\"/></g><g stroke=\"#334155\" stroke-width=\"1.4\"><path d=\"M45 185H330M50 190V20\"/></g><path d=\"M50 37.5L306.5 180\" fill=\"none\" stroke=\"#0ea5e9\" stroke-width=\"1.8\"/><path d=\"M50 56.25L320 131.25\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.8\"/><circle cx=\"117.5\" cy=\"75\" r=\"4\" fill=\"#10b981\"/><text x=\"120\" y=\"87\" font-size=\"8\">(250,70)</text><text x=\"240\" y=\"174\" font-size=\"8\">x immediate ($)</text><text x=\"3\" y=\"18\" font-size=\"8\">y monthly ($)</text><text x=\"45\" y=\"199\" font-size=\"8\">0</text><text x=\"300\" y=\"199\" font-size=\"8\">1000</text><text x=\"31\" y=\"34\" font-size=\"8\">100</text><text x=\"31\" y=\"184\" font-size=\"8\">0</text></svg>"
+              }
+            },
+            {
+              "explain": "Check both values in the original equations.",
+              "work": "250+10(70)=950\n250+20(70)=1 650",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M50 25V185M95 25V185M140 25V185M185 25V185M230 25V185M275 25V185M320 25V185M45 30H330M45 60H330M45 90H330M45 120H330M45 150H330M45 180H330\"/></g><g stroke=\"#334155\" stroke-width=\"1.4\"><path d=\"M45 185H330M50 190V20\"/></g><path d=\"M50 37.5L306.5 180\" fill=\"none\" stroke=\"#0ea5e9\" stroke-width=\"1.8\"/><path d=\"M50 56.25L320 131.25\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.8\"/><circle cx=\"117.5\" cy=\"75\" r=\"4\" fill=\"#10b981\"/><text x=\"120\" y=\"87\" font-size=\"8\">(250,70)</text><text x=\"240\" y=\"174\" font-size=\"8\">x immediate ($)</text><text x=\"3\" y=\"18\" font-size=\"8\">y monthly ($)</text><text x=\"45\" y=\"199\" font-size=\"8\">0</text><text x=\"300\" y=\"199\" font-size=\"8\">1000</text><text x=\"31\" y=\"34\" font-size=\"8\">100</text><text x=\"31\" y=\"184\" font-size=\"8\">0</text></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Ariana’s parents have given her an interes",
+              "note": "Graph both linear equations on the same axes. Their intersection is the pair satisfying both payment totals."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "manual": true,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M45 25V185M85 25V185M125 25V185M165 25V185M205 25V185M245 25V185M285 25V185M325 25V185M40 30H330M40 65H330M40 100H330M40 135H330M40 170H330\"/></g><g stroke=\"#334155\" stroke-width=\"1.5\"><path d=\"M40 185H330M45 190V20\"/></g><text x=\"325\" y=\"204\" font-size=\"10\">x</text><text x=\"30\" y=\"22\" font-size=\"10\">y</text></svg>"
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-d-q6b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "How many months will it take Ariana to repay the loan in full?",
+          "options": [
+            "65 months",
+            "60 months",
+            "70 months",
+            "80 months"
+          ],
+          "answer": 0,
+          "hint": "The loan is $4 800. Subtract the initial payment, then divide the remaining balance by the monthly payment.",
+          "steps": [
+            {
+              "explain": "From part (a), the initial payment is $250 and the monthly payment is $70.",
+              "work": "Remaining balance = 4 800−250 = $4 550"
+            },
+            {
+              "explain": "Divide the remaining balance by the monthly payment.",
+              "work": "Balance after the immediate payment = 4 800−250 = 4 550\nMonths = 4 550/70 = 65"
+            },
+            {
+              "explain": "Check the total repaid after 65 monthly payments.",
+              "work": "The $70 monthly payments take 65 months to clear the remaining $4 550. Total including the initial $250 is $4 800."
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "repay the loan in full",
+              "note": "Subtract the immediate payment before dividing by the monthly payment."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
           }
         }
       ]

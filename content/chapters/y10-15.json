@@ -2920,6 +2920,144 @@
             "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
             "sourceYear": 2024
           }
+        },
+        {
+          "id": "abb-y10-2025-t4-a-q16",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A group of 485 people was surveyed. The people were asked whether or not they could ride a bike. The results are recorded in the table below: A person is selected at random from the group. What is the approximate probability that the person selected is a Bike rider OR is male?",
+          "options": [
+            "33%",
+            "18%",
+            "68%",
+            "87%"
+          ],
+          "answer": 2,
+          "hint": "For “bike rider OR male”, include both groups but count male bike riders only once. The complement is “female and not a bike rider”.",
+          "steps": [
+            {
+              "explain": "The event “bike rider OR male” includes the Bike rider column and the Male row. The 88 male bike riders appear in both groups, so count that overlap only once.",
+              "work": "n(B ∪ M) = n(B) + n(M) − n(B ∩ M)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"470\" height=\"235\" viewBox=\"0 0 470 235\"><rect width=\"470\" height=\"235\" fill=\"white\"/><text x=\"235\" y=\"28\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#26344a\">Bike riding survey (people)</text><rect x=\"115\" y=\"90\" width=\"120\" height=\"34\" fill=\"#fde68a\"/><rect x=\"235\" y=\"90\" width=\"120\" height=\"34\" fill=\"#fde68a\"/><rect x=\"115\" y=\"124\" width=\"120\" height=\"34\" fill=\"#bfdbfe\"/><rect x=\"115\" y=\"48\" width=\"360\" height=\"120\" fill=\"#e8eef8\"/><rect x=\"115\" y=\"90\" width=\"360\" height=\"78\" fill=\"white\"/><rect x=\"115\" y=\"90\" width=\"120\" height=\"34\" fill=\"#fde68a\"/><rect x=\"235\" y=\"90\" width=\"120\" height=\"34\" fill=\"#fde68a\"/><rect x=\"115\" y=\"124\" width=\"120\" height=\"34\" fill=\"#bfdbfe\"/><g stroke=\"#334155\" stroke-width=\"1.4\" fill=\"none\"><path d=\"M115 48h360v120H115zM235 48v120M355 48v120M115 90h360M115 124h360M115 168h360\"/><path d=\"M115 48h360v42H115z\"/></g><g font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#26344a\" text-anchor=\"middle\"><text x=\"175\" y=\"75\" font-weight=\"700\">Bike rider</text><text x=\"295\" y=\"75\" font-weight=\"700\">Not rider</text><text x=\"415\" y=\"75\" font-weight=\"700\">Total</text><text x=\"90\" y=\"113\" text-anchor=\"end\">Male</text><text x=\"90\" y=\"147\" text-anchor=\"end\">Female</text><text x=\"90\" y=\"191\" text-anchor=\"end\" font-size=\"12\">Total</text><text x=\"175\" y=\"113\">88</text><text x=\"295\" y=\"113\">176</text><text x=\"415\" y=\"113\">264</text><text x=\"175\" y=\"147\">68</text><text x=\"295\" y=\"147\">153</text><text x=\"415\" y=\"147\">221</text><text x=\"175\" y=\"191\">156</text><text x=\"295\" y=\"191\">329</text><text x=\"415\" y=\"191\">485</text></g><text x=\"236\" y=\"221\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#9a3412\" font-weight=\"600\">Gold = selected people in Bike rider OR Male</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute the table counts.",
+              "work": "n(B ∪ M) = 156 + 264 − 88 = 332",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"470\" height=\"235\" viewBox=\"0 0 470 235\"><rect width=\"470\" height=\"235\" fill=\"white\"/><text x=\"235\" y=\"28\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#26344a\">Bike riding survey (people)</text><rect x=\"115\" y=\"90\" width=\"120\" height=\"34\" fill=\"#fde68a\"/><rect x=\"235\" y=\"90\" width=\"120\" height=\"34\" fill=\"#fde68a\"/><rect x=\"115\" y=\"124\" width=\"120\" height=\"34\" fill=\"#bfdbfe\"/><rect x=\"115\" y=\"48\" width=\"360\" height=\"120\" fill=\"#e8eef8\"/><rect x=\"115\" y=\"90\" width=\"360\" height=\"78\" fill=\"white\"/><rect x=\"115\" y=\"90\" width=\"120\" height=\"34\" fill=\"#fde68a\"/><rect x=\"235\" y=\"90\" width=\"120\" height=\"34\" fill=\"#fde68a\"/><rect x=\"115\" y=\"124\" width=\"120\" height=\"34\" fill=\"#bfdbfe\"/><g stroke=\"#334155\" stroke-width=\"1.4\" fill=\"none\"><path d=\"M115 48h360v120H115zM235 48v120M355 48v120M115 90h360M115 124h360M115 168h360\"/><path d=\"M115 48h360v42H115z\"/></g><g font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#26344a\" text-anchor=\"middle\"><text x=\"175\" y=\"75\" font-weight=\"700\">Bike rider</text><text x=\"295\" y=\"75\" font-weight=\"700\">Not rider</text><text x=\"415\" y=\"75\" font-weight=\"700\">Total</text><text x=\"90\" y=\"113\" text-anchor=\"end\">Male</text><text x=\"90\" y=\"147\" text-anchor=\"end\">Female</text><text x=\"90\" y=\"191\" text-anchor=\"end\" font-size=\"12\">Total</text><text x=\"175\" y=\"113\">88</text><text x=\"295\" y=\"113\">176</text><text x=\"415\" y=\"113\">264</text><text x=\"175\" y=\"147\">68</text><text x=\"295\" y=\"147\">153</text><text x=\"415\" y=\"147\">221</text><text x=\"175\" y=\"191\">156</text><text x=\"295\" y=\"191\">329</text><text x=\"415\" y=\"191\">485</text></g><text x=\"236\" y=\"221\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#9a3412\" font-weight=\"600\">Gold = selected people in Bike rider OR Male</text></svg>"
+              }
+            },
+            {
+              "explain": "Convert the favourable count to a percentage.",
+              "work": "P(B ∪ M) = 332/485 ≈ 0.6845 ≈ 68%",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"470\" height=\"235\" viewBox=\"0 0 470 235\"><rect width=\"470\" height=\"235\" fill=\"white\"/><text x=\"235\" y=\"28\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#26344a\">Bike riding survey (people)</text><rect x=\"115\" y=\"90\" width=\"120\" height=\"34\" fill=\"#fde68a\"/><rect x=\"235\" y=\"90\" width=\"120\" height=\"34\" fill=\"#fde68a\"/><rect x=\"115\" y=\"124\" width=\"120\" height=\"34\" fill=\"#bfdbfe\"/><rect x=\"115\" y=\"48\" width=\"360\" height=\"120\" fill=\"#e8eef8\"/><rect x=\"115\" y=\"90\" width=\"360\" height=\"78\" fill=\"white\"/><rect x=\"115\" y=\"90\" width=\"120\" height=\"34\" fill=\"#fde68a\"/><rect x=\"235\" y=\"90\" width=\"120\" height=\"34\" fill=\"#fde68a\"/><rect x=\"115\" y=\"124\" width=\"120\" height=\"34\" fill=\"#bfdbfe\"/><g stroke=\"#334155\" stroke-width=\"1.4\" fill=\"none\"><path d=\"M115 48h360v120H115zM235 48v120M355 48v120M115 90h360M115 124h360M115 168h360\"/><path d=\"M115 48h360v42H115z\"/></g><g font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#26344a\" text-anchor=\"middle\"><text x=\"175\" y=\"75\" font-weight=\"700\">Bike rider</text><text x=\"295\" y=\"75\" font-weight=\"700\">Not rider</text><text x=\"415\" y=\"75\" font-weight=\"700\">Total</text><text x=\"90\" y=\"113\" text-anchor=\"end\">Male</text><text x=\"90\" y=\"147\" text-anchor=\"end\">Female</text><text x=\"90\" y=\"191\" text-anchor=\"end\" font-size=\"12\">Total</text><text x=\"175\" y=\"113\">88</text><text x=\"295\" y=\"113\">176</text><text x=\"415\" y=\"113\">264</text><text x=\"175\" y=\"147\">68</text><text x=\"295\" y=\"147\">153</text><text x=\"415\" y=\"147\">221</text><text x=\"175\" y=\"191\">156</text><text x=\"295\" y=\"191\">329</text><text x=\"415\" y=\"191\">485</text></g><text x=\"236\" y=\"221\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#9a3412\" font-weight=\"600\">Gold = selected people in Bike rider OR Male</text></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Bike rider OR is male",
+              "note": "The OR event includes both groups. Include the overlapping male bike riders only once."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"470\" height=\"235\" viewBox=\"0 0 470 235\"><rect width=\"470\" height=\"235\" fill=\"white\"/><text x=\"235\" y=\"28\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#26344a\">Bike riding survey (people)</text><rect x=\"115\" y=\"48\" width=\"360\" height=\"120\" fill=\"#e8eef8\"/><rect x=\"115\" y=\"90\" width=\"360\" height=\"78\" fill=\"white\"/><g stroke=\"#334155\" stroke-width=\"1.4\" fill=\"none\"><path d=\"M115 48h360v120H115zM235 48v120M355 48v120M115 90h360M115 124h360M115 168h360\"/><path d=\"M115 48h360v42H115z\"/></g><g font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#26344a\" text-anchor=\"middle\"><text x=\"175\" y=\"75\" font-weight=\"700\">Bike rider</text><text x=\"295\" y=\"75\" font-weight=\"700\">Not rider</text><text x=\"415\" y=\"75\" font-weight=\"700\">Total</text><text x=\"90\" y=\"113\" text-anchor=\"end\">Male</text><text x=\"90\" y=\"147\" text-anchor=\"end\">Female</text><text x=\"90\" y=\"191\" text-anchor=\"end\" font-size=\"12\">Total</text><text x=\"175\" y=\"113\">88</text><text x=\"295\" y=\"113\">176</text><text x=\"415\" y=\"113\">264</text><text x=\"175\" y=\"147\">68</text><text x=\"295\" y=\"147\">153</text><text x=\"415\" y=\"147\">221</text><text x=\"175\" y=\"191\">156</text><text x=\"295\" y=\"191\">329</text><text x=\"415\" y=\"191\">485</text></g></svg>"
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-b-q5b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For a group of 40 students, 7 study neither History nor Geography, 20 study History and 18 study Geography. A student is chosen at random. Determine the probability that the student studies both History and Geography.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><circle cx=\"140\" cy=\"100\" r=\"54\" fill=\"#dbeafe\" fill-opacity=\".7\" stroke=\"#334155\" stroke-width=\"1.8\"/><circle cx=\"220\" cy=\"100\" r=\"54\" fill=\"#dbeafe\" fill-opacity=\".7\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"115\" y=\"45\" font-size=\"12\">History</text><text x=\"210\" y=\"45\" font-size=\"12\">Geography</text><text x=\"115\" y=\"104\" font-size=\"14\">15</text><text x=\"173\" y=\"104\" font-size=\"14\" fill=\"#d97706\">5</text><text x=\"233\" y=\"104\" font-size=\"14\">13</text><text x=\"320\" y=\"105\" font-size=\"12\">Neither: 7</text><text x=\"173\" y=\"175\" font-size=\"11\">Total: 40</text></svg>"
+          },
+          "options": [
+            "5/40",
+            "13/40",
+            "18/40",
+            "25/40"
+          ],
+          "answer": 0,
+          "hint": "Complete the Venn counts: Geography-only is 18 minus the overlap, and the total inside the circles is 40 minus 7.",
+          "steps": [
+            {
+              "explain": "There are 40 students total and 7 study neither subject.",
+              "work": "n(H ∪ G) = 40 − 7 = 33"
+            },
+            {
+              "explain": "Let x be the overlap. History-only is 20−x and Geography-only is 18−x. The union total is 33.",
+              "work": "(20−x)+x+(18−x)=33\n38−x=33\nx=5"
+            },
+            {
+              "explain": "Divide the overlap count by the total group.",
+              "work": "P(H ∩ G) = 5/40 = 1/8"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "studies both History and Geography",
+              "note": "Use the total who study at least one subject to find the overlap."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-b-q5a",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "History and Geography are two of the subjects students may decide to study. For a group of 40 students, 7 students study neither subject and 20 study History and 18 study Geography. Complete the Venn diagram below to show this information.",
+          "answer": "Sample answer is shown in the final solution step.",
+          "hint": "First find the number studying at least one subject. Use the two set totals to determine the overlap, then subtract it from each subject total.",
+          "steps": [
+            {
+              "explain": "Find the union count by removing those who study neither.",
+              "work": "n(H∪G)=40−7=33"
+            },
+            {
+              "explain": "Use n(H∪G)=n(H)+n(G)−n(H∩G) to find the overlap.",
+              "work": "33=20+18−x\nx=5"
+            },
+            {
+              "explain": "Fill the Venn regions: History only 20−5=15; Geography only 18−5=13; neither 7.",
+              "work": "Completed Venn diagram: H-only 15, overlap 5, G-only 13, neither 7.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><circle cx=\"140\" cy=\"100\" r=\"54\" fill=\"#dbeafe\" fill-opacity=\".7\" stroke=\"#334155\" stroke-width=\"1.8\"/><circle cx=\"220\" cy=\"100\" r=\"54\" fill=\"#dbeafe\" fill-opacity=\".7\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"115\" y=\"45\" font-size=\"12\">History</text><text x=\"210\" y=\"45\" font-size=\"12\">Geography</text><text x=\"115\" y=\"104\" font-size=\"14\">15</text><text x=\"173\" y=\"104\" font-size=\"14\" fill=\"#d97706\">5</text><text x=\"233\" y=\"104\" font-size=\"14\">13</text><text x=\"320\" y=\"105\" font-size=\"12\">Neither: 7</text><text x=\"173\" y=\"175\" font-size=\"11\">Total: 40</text></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "History and Geography are two of the subje",
+              "note": "First find the number studying at least one subject. Use the two set totals to determine the overlap, then subtract it from each subject total."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "manual": true,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><circle cx=\"130\" cy=\"96\" r=\"50\" fill=\"#dbeafe\" fill-opacity=\".35\" stroke=\"#334155\" stroke-width=\"1.6\"/><circle cx=\"208\" cy=\"96\" r=\"50\" fill=\"#dbeafe\" fill-opacity=\".35\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"100\" y=\"43\" font-size=\"10\">History</text><text x=\"196\" y=\"43\" font-size=\"10\">Geography</text><text x=\"165\" y=\"175\" font-size=\"10\">Neither: ____</text></svg>"
+          }
         }
       ]
     },
@@ -4448,6 +4586,50 @@
           "meta": {
             "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
             "sourceYear": 2024
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-b-q5c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "History and Geography are two of the subjects students may decide to study. For a group of 40 students, 7 study neither subject, 20 study History and 18 study Geography. A Geography student is chosen at random. What is the probability that the student does NOT study History?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><circle cx=\"140\" cy=\"100\" r=\"54\" fill=\"#dbeafe\" fill-opacity=\".7\" stroke=\"#334155\" stroke-width=\"1.8\"/><circle cx=\"220\" cy=\"100\" r=\"54\" fill=\"#dbeafe\" fill-opacity=\".7\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"115\" y=\"45\" font-size=\"12\">History</text><text x=\"210\" y=\"45\" font-size=\"12\">Geography</text><text x=\"115\" y=\"104\" font-size=\"14\">15</text><text x=\"173\" y=\"104\" font-size=\"14\" fill=\"#d97706\">5</text><text x=\"233\" y=\"104\" font-size=\"14\">13</text><text x=\"320\" y=\"105\" font-size=\"12\">Neither: 7</text><text x=\"173\" y=\"175\" font-size=\"11\">Total: 40</text></svg>"
+          },
+          "options": [
+            "5/18",
+            "13/18",
+            "13/40",
+            "7/18"
+          ],
+          "answer": 1,
+          "hint": "Restrict the sample space to Geography students. Of those, count the Geography-only region.",
+          "steps": [
+            {
+              "explain": "There are 18 Geography students in total.",
+              "work": "n(G) = 18"
+            },
+            {
+              "explain": "The Geography-only region contains 13 students who do not study History.",
+              "work": "n(G ∩ not H) = 13"
+            },
+            {
+              "explain": "Conditional probability uses the restricted total of Geography students.",
+              "work": "P(not H | G) = 13/18"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "A Geography student is chosen",
+              "note": "Use Geography students as the denominator, not all 40 students."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
           }
         }
       ]
@@ -7025,6 +7207,95 @@
             "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
             "sourceYear": 2024
           }
+        },
+        {
+          "id": "abb-y10-2025-t4-a-q7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the probability of drawing out a blue ball and a white ball from a bag containing 7 blue and 5 white balls if the first ball is not replaced before taking out the second ball.",
+          "options": [
+            "70/121",
+            "70/144",
+            "1225/17424",
+            "35/66"
+          ],
+          "answer": 3,
+          "hint": "“Not replaced” means the second draw has 11 balls left. Count both possible orders: blue then white, or white then blue.",
+          "steps": [
+            {
+              "explain": "There are 12 balls initially. For blue then white, the conditional second-draw denominator becomes 11.",
+              "work": "P(B then W) = 7/12 × 5/11 = 35/132"
+            },
+            {
+              "explain": "For white then blue, the white ball is removed first, so 7 blue remain out of 11.",
+              "work": "P(W then B) = 5/12 × 7/11 = 35/132"
+            },
+            {
+              "explain": "The two orders are separate ways to get one ball of each colour, so add them.",
+              "work": "P(one blue and one white) = 35/132 + 35/132 = 70/132 = 35/66"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "not replaced",
+              "note": "Reduce the total number of balls by one for the second draw and include both orders."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-c-q4",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "A bowl of fruit contains 17 apples of which 9 are red and 8 are green. Gemma takes one apple at random and eats it. Mary also takes an apple at random and eats it. By drawing a probability tree diagram, and showing the probability of appropriate outcomes, calculate the probability that Gemma and Mary eat apples of the same colour.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><circle cx=\"34\" cy=\"112\" r=\"3\" fill=\"#334155\"/><path d=\"M37 112L115 62M37 112L115 162M115 62L225 35M115 62L225 82M115 162L225 132M115 162L225 182\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/><g fill=\"#334155\" font-size=\"9\"><text x=\"8\" y=\"106\">Start</text><text x=\"120\" y=\"58\">R</text><text x=\"120\" y=\"169\">G</text><text x=\"230\" y=\"38\">R</text><text x=\"230\" y=\"85\">G</text><text x=\"230\" y=\"135\">R</text><text x=\"230\" y=\"185\">G</text></g></svg>"
+          },
+          "answer": "Sample probability tree and calculation are shown in the solution.",
+          "hint": "Because the first apple is eaten, the second draw is without replacement. Add the red-red and green-green paths.",
+          "steps": [
+            {
+              "explain": "Gemma can pick red or green first. Because the apple is eaten, only 16 apples remain for Mary.",
+              "work": "P(R first)=9/17; P(G first)=8/17",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><circle cx=\"34\" cy=\"112\" r=\"3\" fill=\"#334155\"/><path d=\"M37 112L115 62M37 112L115 162M115 62L225 35M115 62L225 82M115 162L225 132M115 162L225 182\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"1.5\"/><g fill=\"#334155\" font-size=\"9\"><text x=\"8\" y=\"106\">Start</text><text x=\"120\" y=\"58\">R</text><text x=\"120\" y=\"169\">G</text><text x=\"230\" y=\"38\">R</text><text x=\"230\" y=\"85\">G</text><text x=\"230\" y=\"135\">R</text><text x=\"230\" y=\"185\">G</text><text x=\"60\" y=\"78\">9/17</text><text x=\"60\" y=\"151\">8/17</text><text x=\"157\" y=\"44\">8/16</text><text x=\"157\" y=\"79\">8/16</text><text x=\"157\" y=\"126\">9/16</text><text x=\"157\" y=\"178\">7/16</text></g></svg>"
+              }
+            },
+            {
+              "explain": "For the red-red path, multiply the branch probabilities. For green-green, do the same.",
+              "work": "P(RR)=9/17×8/16=9/34\nP(GG)=8/17×7/16=7/34",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><circle cx=\"34\" cy=\"112\" r=\"3\" fill=\"#334155\"/><path d=\"M37 112L115 62M37 112L115 162M115 62L225 35M115 62L225 82M115 162L225 132M115 162L225 182\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"1.5\"/><g fill=\"#334155\" font-size=\"9\"><text x=\"8\" y=\"106\">Start</text><text x=\"120\" y=\"58\">R</text><text x=\"120\" y=\"169\">G</text><text x=\"230\" y=\"38\">R</text><text x=\"230\" y=\"85\">G</text><text x=\"230\" y=\"135\">R</text><text x=\"230\" y=\"185\">G</text><text x=\"60\" y=\"78\">9/17</text><text x=\"60\" y=\"151\">8/17</text><text x=\"157\" y=\"44\">8/16</text><text x=\"157\" y=\"79\">8/16</text><text x=\"157\" y=\"126\">9/16</text><text x=\"157\" y=\"178\">7/16</text></g></svg>"
+              }
+            },
+            {
+              "explain": "“Same colour” means RR or GG. Add these disjoint path probabilities.",
+              "work": "P(same)=9/34+7/34=16/34=8/17",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><circle cx=\"34\" cy=\"112\" r=\"3\" fill=\"#334155\"/><path d=\"M37 112L115 62M37 112L115 162M115 62L225 35M115 62L225 82M115 162L225 132M115 162L225 182\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"1.5\"/><g fill=\"#334155\" font-size=\"9\"><text x=\"8\" y=\"106\">Start</text><text x=\"120\" y=\"58\">R</text><text x=\"120\" y=\"169\">G</text><text x=\"230\" y=\"38\">R</text><text x=\"230\" y=\"85\">G</text><text x=\"230\" y=\"135\">R</text><text x=\"230\" y=\"185\">G</text><text x=\"60\" y=\"78\">9/17</text><text x=\"60\" y=\"151\">8/17</text><text x=\"157\" y=\"44\" fill=\"#047857\">8/16 RR</text><text x=\"157\" y=\"79\">8/16</text><text x=\"157\" y=\"126\">9/16</text><text x=\"157\" y=\"178\" fill=\"#047857\">7/16 GG</text><text x=\"258\" y=\"109\" fill=\"#047857\">9/34+7/34=8/17</text></g></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "By drawing a probability tree diagram",
+              "note": "Draw both first-pick branches and update the second-pick probabilities because the apple is eaten."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          },
+          "manual": true
         }
       ]
     }

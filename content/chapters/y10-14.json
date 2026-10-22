@@ -2944,6 +2944,170 @@
             "grade": "10"
           },
           "xp": 2
+        },
+        {
+          "id": "abb-y10-2025-t4-a-q14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which of the following expressions is equivalent to a = log_c b?",
+          "options": [
+            "c = a^b",
+            "c = b^a",
+            "b = c^a",
+            "b = a^c"
+          ],
+          "answer": 2,
+          "hint": "Translate the logarithm into an exponential statement: log base c of b equals a means c raised to a equals b.",
+          "steps": [
+            {
+              "explain": "Use the definition of a logarithm.",
+              "work": "log_c b = a ⇔ c^a = b"
+            },
+            {
+              "explain": "Match this with the options.",
+              "work": "b = c^a"
+            },
+            {
+              "explain": "State the result after completing the calculation.",
+              "work": "2"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "a = log_c b",
+              "note": "Convert between logarithmic and exponential form."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-d-q3a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If log_a x = 2.4 and log_a y = 3, calculate log_a(xy).",
+          "options": [
+            "5.4",
+            "0.6",
+            "7.2",
+            "1.25"
+          ],
+          "answer": 0,
+          "hint": "Use the product rule for logarithms: the logarithm of a product is the sum of the logarithms.",
+          "steps": [
+            {
+              "explain": "Recall the product rule.",
+              "work": "log_a(xy) = log_a x + log_a y"
+            },
+            {
+              "explain": "Substitute the given logarithms.",
+              "work": "log_a(xy) = 2.4 + 3"
+            },
+            {
+              "explain": "Add.",
+              "work": "log_a(xy) = 5.4"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "log_a x = 2.4",
+              "note": "For a product inside a logarithm, add the logarithms."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-d-q3b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If log_a x = 2.4 and log_a y = 3, calculate log_a √(x/y).",
+          "options": [
+            "−0.3",
+            "0.3",
+            "−1.2",
+            "1.2"
+          ],
+          "answer": 0,
+          "hint": "Use the quotient rule, then the power rule for the square root.",
+          "steps": [
+            {
+              "explain": "Rewrite the square root as a power of one half.",
+              "work": "log_a √(x/y) = 1/2 log_a(x/y)"
+            },
+            {
+              "explain": "Apply the quotient rule and substitute.",
+              "work": "= 1/2(log_a x − log_a y)\n= 1/2(2.4 − 3)"
+            },
+            {
+              "explain": "Evaluate.",
+              "work": "= 1/2(−0.6) = −0.3"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "√(x/y)",
+              "note": "Use the quotient rule inside the logarithm and multiply by one half."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-e1-q7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given log₃ x = a, find an expression for log₃(x⁴/27) in terms of a. Give your answer in its simplest form.",
+          "options": [
+            "4a−3",
+            "4a+3",
+            "a/4−3",
+            "4a−1"
+          ],
+          "answer": 0,
+          "hint": "Use the quotient and power rules; write 27 as 3³.",
+          "steps": [
+            {
+              "explain": "Apply the quotient rule.",
+              "work": "log₃(x⁴/27)=log₃(x⁴)−log₃27"
+            },
+            {
+              "explain": "Apply the power rule and use 27=3³.",
+              "work": "=4log₃x−log₃(3³)"
+            },
+            {
+              "explain": "Substitute log₃x=a.",
+              "work": "=4a−3"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "log₃ x = a",
+              "note": "Use the quotient and power rules."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
         }
       ]
     },

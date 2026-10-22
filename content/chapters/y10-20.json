@@ -42,6 +42,88 @@
             "grade": "10"
           },
           "xp": 3
+        },
+        {
+          "id": "abb-y10-2025-t4-a-q9",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which of the following equations does NOT result in a graph that is a function?",
+          "options": [
+            "y = x²",
+            "y = x³",
+            "y = −3/x",
+            "x² + y² = 25"
+          ],
+          "answer": 3,
+          "hint": "Use the vertical-line test: a function gives only one y-value for each allowed x-value.",
+          "steps": [
+            {
+              "explain": "The first three equations assign one y-value to each allowed x. For the circle, solve for y.",
+              "work": "x² + y² = 25 ⇒ y = ±√(25 − x²)"
+            },
+            {
+              "explain": "For most x-values between −5 and 5, the circle has both a positive and a negative y-value.",
+              "work": "For example, x = 0 gives y = 5 or y = −5"
+            },
+            {
+              "explain": "A vertical line through x = 0 meets the circle twice, so it fails the vertical-line test.",
+              "work": "The circle relation is not a function of x."
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "NOT result in a graph that is a function",
+              "note": "Check whether one x-value can give two different y-values."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
+        },
+        {
+          "id": "abb-y10-2025-t4-e1-q6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the inverse function of the following function: f(x) = 3x/(x + 2).",
+          "options": [
+            "f⁻¹(x)=2x/(3−x)",
+            "f⁻¹(x)=3x/(x−2)",
+            "f⁻¹(x)=(x+2)/(3x)",
+            "f⁻¹(x)=2x/(x+3)"
+          ],
+          "answer": 0,
+          "hint": "Set y=f(x), swap x and y, then isolate y.",
+          "steps": [
+            {
+              "explain": "Write the function as y.",
+              "work": "y=3x/(x+2)"
+            },
+            {
+              "explain": "Swap x and y; clear the denominator.",
+              "work": "x=3y/(y+2)\nxy+2x=3y"
+            },
+            {
+              "explain": "Collect y and solve.",
+              "work": "y(3−x)=2x; y=2x/(3−x)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the inverse function",
+              "note": "Swap input and output, then solve for the new output."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
+            "school": "Abbotsleigh",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
         }
       ]
     }
