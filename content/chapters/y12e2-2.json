@@ -2069,7 +2069,7 @@
                 "year": 2020,
                 "number": "16(b)(i)"
               },
-              "answer": "\\((k+1)(A_{k+1}-G_{k+1})-k(A_k-G_k)=a_{k+1}+kG_k-(k+1)G_{k+1}=G_k\\left[\\frac{a_{k+1}}{G_k}+k-(k+1)\\frac{G_{k+1}}{G_k}\\right]\\). Now \\(\\frac{a_{k+1}}{G_k}=\\lambda_k^{k+1}\\) and \\(\\frac{G_{k+1}}{G_k}=\\frac{(a_1\\cdots a_{k+1})^{1/(k+1)}}{(a_1\\cdots a_k)^{1/k}}=\\left(\\frac{a_{k+1}}{G_k}\\right)^{1/(k+1)}=\\lambda_k\\). So the difference is \\(G_k[\\lambda_k^{k+1}-(k+1)\\lambda_k+k]\\ge0\\) since G_k > 0.",
+              "answer": "\\((k+1)(A_{k+1}-G_{k+1})-k(A_k-G_k)=a_{k+1}+kG_k-(k+1)G_{k+1}=G_k\\left[\\frac{a_{k+1}}{G_k}+k-(k+1)\\frac{G_{k+1}}{G_k}\\right]\\). Now \\(\\frac{a_{k+1}}{G_k}=\\lambda_k^{k+1}\\) and \\(\\frac{G_{k+1}}{G_k}=\\frac{(a_1\\cdots a_{k+1})^{\\frac{1}{k+1}}}{(a_1\\cdots a_k)^{\\frac{1}{k}}}=\\left(\\frac{a_{k+1}}{G_k}\\right)^{\\frac{1}{k+1}}=\\lambda_k\\). So the difference is \\(G_k[\\lambda_k^{k+1}-(k+1)\\lambda_k+k]\\ge0\\) since \\(G_k > 0\\).",
               "manual": true,
               "keyPoints": [
                 {
@@ -2109,7 +2109,7 @@
                 "year": 2020,
                 "number": "16(b)(ii)"
               },
-              "answer": "\\(f'(x)=(k+1)x^k-(k+1)=0\\Rightarrow x^k=1\\Rightarrow x=1\\) (x > 0). \\(f''(x)=k(k+1)x^{k-1}\\gt0\\), so x = 1 is the only stationary point and it is a minimum, with f(1) = 1 − (k+1) + k = 0. Hence f(x) ≥ 0 for x > 0.",
+              "answer": "\\(f'(x)=(k+1)x^k-(k+1)=0 \\Rightarrow x^k=1 \\Rightarrow x=1\\) (for \\(x > 0\\)). Since \\(f''(x)=k(k+1)x^{k-1}\\gt0\\), \\(x = 1\\) is the only stationary point and it is a minimum with \\(f(1) = 1 - (k+1) + k = 0\\). Hence \\(f(x) \\ge 0\\) for all \\(x > 0\\).",
               "manual": true,
               "keyPoints": [
                 {
@@ -2152,7 +2152,7 @@
                 "year": 2020,
                 "number": "16(b)(iii)"
               },
-              "answer": "n = 1: A₁ = a₁ = G₁. Assume A_k ≥ G_k. By (ii) with x = λ_k > 0, λ_k^{k+1} − (k+1)λ_k + k ≥ 0, so by (i) (k+1)(A_{k+1} − G_{k+1}) ≥ k(A_k − G_k) ≥ 0, giving A_{k+1} ≥ G_{k+1}. True for all positive integers by induction.",
+              "answer": "Base case \\(n = 1\\): \\(A_1 = a_1 = G_1\\). Assume true for \\(n = k\\): \\(A_k \\ge G_k\\). By (ii) with \\(x = \\lambda_k > 0\\), we have \\(\\lambda_k^{k+1} - (k+1)\\lambda_k + k = f(\\lambda_k) \\ge 0\\). Thus by (i), \\((k+1)(A_{k+1} - G_{k+1}) \\ge k(A_k - G_k) \\ge 0\\), which gives \\(A_{k+1} \\ge G_{k+1}\\). Therefore \\(A_n \\ge G_n\\) holds for all positive integers \\(n\\) by mathematical induction.",
               "manual": true,
               "keyPoints": [
                 {

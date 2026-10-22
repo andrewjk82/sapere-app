@@ -347,8 +347,9 @@ const toDisplayText = (value, fallback = '', { currencyHtml = false } = {}) => {
       if (inner) {
         inner = healProseInMath(inner);
         // We convert A / (B) into \frac{A}{B} WITHOUT wrapping in $, because we are already inside a block!
-        inner = inner.replace(/([a-zA-Z0-9\.\,\{\}\[\]][a-zA-Z0-9\.\,\{\}\[\]\\]*)\s*\/\s*\(([^()]+)\)/g, '\\frac{$1}{$2}');
-        inner = inner.replace(/\(([^()]+)\)\s*\/\s*([a-zA-Z0-9\.\,\{\}\[\]\\]*[a-zA-Z0-9\.\,\{\}\[\]])/g, '\\frac{$1}{$2}');
+        // Braces { and } are excluded so group-enclosed powers like ^{1/(k+1)} don't have their opening brace swallowed
+        inner = inner.replace(/([a-zA-Z0-9\.\,\[\]][a-zA-Z0-9\.\,\[\]\\]*)\s*\/\s*\(([^()]+)\)/g, '\\frac{$1}{$2}');
+        inner = inner.replace(/\(([^()]+)\)\s*\/\s*([a-zA-Z0-9\.\,\[\]\\]*[a-zA-Z0-9\.\,\[\]])/g, '\\frac{$1}{$2}');
         inner = inner.replace(/\(([^()]+)\)\s*\/\s*\(([^()]+)\)/g, '\\frac{$1}{$2}');
         // Convert simple numerical fractions like 5/2 into \frac{5}{2}
         inner = inner.replace(/\b(\d+)\s*\/\s*(\d+)\b/g, '\\frac{$1}{$2}');
