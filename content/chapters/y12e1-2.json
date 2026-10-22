@@ -40,7 +40,7 @@
             "year": 2020,
             "number": "13(a)"
           },
-          "answer": "n = 1: LHS = a + ar; RHS = a(r² − 1)/(r − 1) = a(r + 1) = a + ar. Assume true for n = k. For n = k + 1: LHS = a(r^{k+1} − 1)/(r − 1) + ar^{k+1} = [a r^{k+1} − a + a r^{k+2} − a r^{k+1}]/(r − 1) = a(r^{k+2} − 1)/(r − 1) = RHS. Hence true for all n ≥ 1 by induction.",
+          "answer": "\\(\\text{LHS}=a+ar,\\qquad\\text{RHS}=\\frac{a(r^2-1)}{r-1}=\\frac{a(r-1)(r+1)}{r-1}=a+ar\\)\n\\(a+ar+\\dots+ar^k=\\frac{a(r^{k+1}-1)}{r-1}\\)\n\\(\\frac{a(r^{k+1}-1)}{r-1}+ar^{k+1}=\\frac{ar^{k+1}-a+ar^{k+1}(r-1)}{r-1}=\\frac{ar^{k+2}-a}{r-1}=\\frac{a(r^{k+2}-1)}{r-1}\\)",
           "manual": true,
           "keyPoints": [
             {

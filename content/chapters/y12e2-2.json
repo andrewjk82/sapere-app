@@ -1244,7 +1244,7 @@
             "year": 2020,
             "number": "14(c)"
           },
-          "answer": "Suppose log₅14 = p/q with p, q positive integers. Then 5^{p/q} = 14, so 14^q = 5^p. The left side is even, the right side is odd — contradiction. So log₅14 is irrational.",
+          "answer": "\\(\\log_514=\\frac{p}{q},\\qquad p,q\\in\\mathbb{Z}^+\\)\n\\(5^{\\frac pq}=14\\ \\Rightarrow\\ 14^q=5^p\\)",
           "manual": true,
           "keyPoints": [
             {
@@ -2416,7 +2416,7 @@
             "year": 2020,
             "number": "14(d)"
           },
-          "answer": "n = 2: 8 > 6. Assume k^{k+1} > k(k+1)^{k−1}, i.e. k^k > (k+1)^{k−1}. Need (k+1)^{k+1} > (k+1)(k+2)^k, i.e. (k+1)^k > (k+2)^k... equivalently (k+1)^{k+1}/(k+2)^k > 1. Using (k+1)^{k−1} < k^k: (k+1)^{k+1}/(k+2)^k > (k+1)^{2k}/(k(k+2))^k = ((k²+2k+1)/(k²+2k))^k = (1 + 1/(k²+2k))^k > 1.",
+          "answer": "\\(2^3=8,\\qquad2\\times3^{1}=6,\\qquad8\\gt6\\ \\checkmark\\)\n\\(k^{k+1}\\gt k(k+1)^{k-1}\\ \\Rightarrow\\ k^k\\gt(k+1)^{k-1}\\ \\Rightarrow\\ \\frac{(k+1)^{k-1}}{k^k}\\lt1\\)\n\\(\\frac{(k+1)^{k+1}}{(k+2)^k}\\gt1\\)\n\\(\\frac{(k+1)^{k+1}}{(k+2)^k}\\gt\\frac{(k+1)^{k+1}}{(k+2)^k}\\cdot\\frac{(k+1)^{k-1}}{k^k}=\\frac{(k+1)^{2k}}{\\left[k(k+2)\\right]^k}\\)\n\\(\\frac{(k+1)^{2k}}{\\left[k(k+2)\\right]^k}=\\left(\\frac{k^2+2k+1}{k^2+2k}\\right)^k=\\left(1+\\frac{1}{k^2+2k}\\right)^k\\gt1\\)",
           "manual": true,
           "keyPoints": [
             {

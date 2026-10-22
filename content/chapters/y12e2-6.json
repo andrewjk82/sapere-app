@@ -798,7 +798,7 @@
             "year": 2020,
             "number": "12(b)"
           },
-          "answer": "Let u = e^{2x} + e^{−2x}, du = 2(e^{2x} − e^{−2x})dx. Integral = ½∫du/u = ½ln(e^{2x}+e^{−2x}) = ½ln((e^{4x}+1)/e^{2x}) = ½ln(e^{4x}+1) − ½(2x) = ln√(e^{4x}+1) − x + c.",
+          "answer": "\\(\\frac{du}{dx}=2e^{2x}-2e^{-2x}=2\\left(e^{2x}-e^{-2x}\\right)\\)\n\\(\\int\\frac{e^{2x}-e^{-2x}}{e^{2x}+e^{-2x}}\\,dx=\\frac12\\ln\\left(e^{2x}+e^{-2x}\\right)+c\\)\n\\(e^{2x}+e^{-2x}=\\frac{e^{4x}+1}{e^{2x}}\\)\n\\(\\frac12\\ln\\frac{e^{4x}+1}{e^{2x}}=\\frac12\\ln\\left(e^{4x}+1\\right)-\\frac12(2x)\\)\n\\(=\\log_e\\sqrt{e^{4x}+1}-x+c\\)",
           "manual": true,
           "keyPoints": [
             {
@@ -2442,7 +2442,7 @@
                 "year": 2025,
                 "number": "15(b)(i)"
               },
-              "answer": "Take u = (1 + x²)^{−n}, v′ = 1, so u′ = −2nx(1 + x²)^{−n−1}, v = x. Then \\(I_n=\\left[\\frac{x}{(1+x^2)^n}\\right]_0^1+2n\\int_0^1\\frac{x^2}{(1+x^2)^{n+1}}dx=\\frac{1}{2^n}+2n\\int_0^1\\frac{x^2}{(1+x^2)^{n+1}}dx\\).",
+              "answer": "\\(u=\\left(1+x^2\\right)^{-n},\\quad u'=-n\\left(1+x^2\\right)^{-n-1}\\cdot2x;\\qquad v'=1,\\quad v=x\\)\n\\(I_n=\\left[\\frac{x}{\\left(1+x^2\\right)^n}\\right]_0^1+2n\\int_0^1\\frac{x^2}{\\left(1+x^2\\right)^{n+1}}\\,dx\\)\n\\(\\left[\\frac{x}{\\left(1+x^2\\right)^n}\\right]_0^1=\\frac{1}{2^n}-0\\)",
               "manual": true,
               "keyPoints": [
                 {
@@ -2609,7 +2609,7 @@
                 "year": 2020,
                 "number": "14(c)(ii)"
               },
-              "answer": "By parts with u = x^{n−1}, v′ = x/√(1+x²) (v = √(1+x²)): \\(I_n=[x^{n-1}\\sqrt{1+x^2}]_0^1-(n-1)\\int_0^1x^{n-2}\\sqrt{1+x^2}dx=\\sqrt2-(n-1)\\int_0^1\\frac{x^{n-2}(1+x^2)}{\\sqrt{1+x^2}}dx=\\sqrt2-(n-1)(I_{n-2}+I_n)\\). So \\(nI_n=\\sqrt2-(n-1)I_{n-2}\\).",
+              "answer": "\\(I_n=\\Bigl[x^{n-1}\\sqrt{1+x^2}\\Bigr]_0^1-(n-1)\\int_0^1x^{n-2}\\sqrt{1+x^2}\\,dx\\)\n\\(\\int_0^1x^{n-2}\\sqrt{1+x^2}\\,dx=\\int_0^1\\frac{x^{n-2}+x^n}{\\sqrt{1+x^2}}\\,dx=I_{n-2}+I_n\\)\n\\(I_n=\\sqrt2-(n-1)\\left(I_{n-2}+I_n\\right)\\ \\Rightarrow\\ nI_n=\\sqrt2-(n-1)I_{n-2}\\ \\Rightarrow\\ I_n=\\frac{\\sqrt2-(n-1)I_{n-2}}{n}\\)",
               "manual": true,
               "keyPoints": [
                 {
@@ -2692,7 +2692,7 @@
                 "year": 2020,
                 "number": "15(d)(i)"
               },
-              "answer": "RHS = (1−√x)^{n−1}[1 − (1−√x)] = (1−√x)^{n−1}√x = LHS.",
+              "answer": "\\(\\left(1-\\sqrt{x}\\right)^{n-1}-\\left(1-\\sqrt{x}\\right)^n=\\left(1-\\sqrt{x}\\right)^{n-1}\\left[1-\\left(1-\\sqrt{x}\\right)\\right]\\)\n\\(1-1+\\sqrt{x}=\\sqrt{x}\\ \\Rightarrow\\ \\text{RHS}=\\left(1-\\sqrt{x}\\right)^{n-1}\\sqrt{x}=\\text{LHS}\\)",
               "manual": true,
               "keyPoints": [
                 {
@@ -2737,7 +2737,7 @@
                 "year": 2020,
                 "number": "15(d)(ii)"
               },
-              "answer": "By parts (u = (1−√x)^n, v′ = 1): I_n = [x(1−√x)^n]_0^1 + (n/2)∫x·x^{−1/2}(1−√x)^{n−1}dx = 0 + (n/2)∫√x(1−√x)^{n−1}dx = (n/2)(I_{n−1} − I_n) by (i). So (1 + n/2)I_n = (n/2)I_{n−1}, I_n = n/(n+2) I_{n−1}.",
+              "answer": "\\(u'=n\\left(1-\\sqrt{x}\\right)^{n-1}\\cdot\\left(-\\frac{1}{2\\sqrt{x}}\\right),\\qquad v=x\\)\n\\(I_n=\\Bigl[x\\left(1-\\sqrt{x}\\right)^n\\Bigr]_0^1+\\frac{n}{2}\\int_0^1\\frac{x}{\\sqrt{x}}\\left(1-\\sqrt{x}\\right)^{n-1}dx\\)\n\\(I_n=\\frac{n}{2}\\int_0^1\\sqrt{x}\\left(1-\\sqrt{x}\\right)^{n-1}dx\\)\n\\(I_n=\\frac{n}{2}\\int_0^1\\left[\\left(1-\\sqrt{x}\\right)^{n-1}-\\left(1-\\sqrt{x}\\right)^n\\right]dx=\\frac{n}{2}\\left(I_{n-1}-I_n\\right)\\)\n\\(I_n+\\frac{n}{2}I_n=\\frac{n}{2}I_{n-1}\\ \\Rightarrow\\ \\frac{n+2}{2}I_n=\\frac{n}{2}I_{n-1}\\ \\Rightarrow\\ I_n=\\frac{n}{n+2}I_{n-1}\\)",
               "manual": true,
               "keyPoints": [
                 {
