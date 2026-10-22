@@ -10939,6 +10939,56 @@
             "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
             "sourceQuestion": "Working Mathematically Q4"
           }
+        },
+        {
+          "id": "hghs-y7-t4-2021-q7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The value of the \\(x\\) in the sequence \\(\\frac{2}{5},\\frac{6}{10},\\frac{16}{20},1,\\frac{x}{10},\\frac{28}{20}\\) is:",
+          "options": [
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "answer": 3,
+          "hint": "Write each term with denominator 5 to reveal the constant increase in the numerators.",
+          "steps": [
+            {
+              "explain": "Rewrite the terms with denominator 5 where needed to see the pattern.",
+              "work": "\\(\\frac{2}{5},\\;\\frac{6}{10}=\\frac{3}{5},\\;\\frac{16}{20}=\\frac{4}{5},\\;1=\\frac{5}{5}\\)"
+            },
+            {
+              "explain": "The numerator increases by 1 each time, so the next term is \\(\\frac{6}{5}\\). Match it with \\(\\frac{x}{10}\\).",
+              "work": "\\(\\frac{x}{10}=\\frac{6}{5}\\)"
+            },
+            {
+              "explain": "Multiply both sides by 10 to solve for x.",
+              "work": "\\(x=10\\times\\frac{6}{5}=12\\)"
+            },
+            {
+              "explain": "Check the next term: \\(\\frac{28}{20}=\\frac{7}{5}\\), which follows \\(\\frac{6}{5}\\).",
+              "work": "\\(\\frac{2}{5},\\frac{3}{5},\\frac{4}{5},\\frac{5}{5},\\frac{6}{5},\\frac{7}{5}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School Year 7 Mathematics Assessment 4 Term 4 2021",
+            "school": "Hornsby Girls High School",
+            "year": 2021,
+            "page": 3,
+            "question": 7,
+            "section": "Multiple Choice",
+            "marks": 1,
+            "origin": "teacher"
+          },
+          "keyPoints": [
+            {
+              "text": "sequence",
+              "note": "Rewrite the fractions with a common denominator to compare the change from one term to the next."
+            }
+          ]
         }
       ]
     },

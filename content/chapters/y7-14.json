@@ -118,71 +118,6 @@
           "xp": 1
         },
         {
-          "id": "hghs-y7-t4-2021-q3",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "\\(\\dfrac{2}{3}\\) written as a percentage is:",
-          "options": [
-            "\\(60\\%\\)",
-            "\\(66\\dfrac{2}{3}\\%\\)",
-            "\\(66\\%\\)",
-            "\\(66\\dfrac{1}{3}\\%\\)"
-          ],
-          "answer": 1,
-          "solution": "1",
-          "steps": [
-            {
-              "explain": "To convert a fraction to a percentage, multiply by 100%.",
-              "work": "\\dfrac{2}{3} \\times 100\\% = \\dfrac{200}{3}\\%"
-            },
-            {
-              "explain": "Divide 200 by 3 to get the mixed-numeral percentage.",
-              "work": "200 \\div 3 = 66 \\text{ remainder } 2 \\implies 66\\dfrac{2}{3}\\%"
-            },
-            {
-              "explain": "Pitfall: rounding to a plain 66% or misplacing the remainder as \\(66\\dfrac{1}{3}\\%\\) both lose the exact value — keep it as an exact fraction unless told to round.",
-              "work": "\\text{Answer: } 66\\dfrac{2}{3}\\%"
-            }
-          ],
-          "meta": {
-            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          },
-          "xp": 2
-        },
-        {
-          "id": "hghs-y7-t4-2021-q6",
-          "type": "mc",
-          "difficulty": "hard",
-          "stem": "52%, 0.5, 60%, 0.06, 5%, placed in ascending order, is:",
-          "options": [
-            "\\(5\\%\\), \\(0.06\\), \\(0.5\\), \\(52\\%\\), \\(60\\%\\)",
-            "\\(0.06\\), \\(5\\%\\), \\(0.5\\), \\(0.52\\), \\(60\\%\\)",
-            "\\(0.06\\), \\(0.5\\), \\(5\\%\\), \\(0.52\\), \\(60\\%\\)",
-            "\\(5\\%\\), \\(0.5\\), \\(0.06\\), \\(52\\%\\), \\(60\\%\\)"
-          ],
-          "answer": 0,
-          "solution": "0",
-          "steps": [
-            {
-              "explain": "Convert every value to a percentage so they can be compared directly.",
-              "work": "52\\%,\\ 0.5 = 50\\%,\\ 60\\%,\\ 0.06 = 6\\%,\\ 5\\%"
-            },
-            {
-              "explain": "Order the percentages from smallest to largest.",
-              "work": "5\\% < 6\\% < 50\\% < 52\\% < 60\\%"
-            },
-            {
-              "explain": "Pitfall: comparing digits without converting to the same form (e.g. treating 0.06 as bigger than 5% because \"6 > 5\") gives a scrambled order — always convert to one common form first.",
-              "work": "\\text{Answer: } 5\\%,\\ 0.06,\\ 0.5,\\ 52\\%,\\ 60\\%"
-            }
-          ],
-          "timeLimit": 150,
-          "meta": {
-            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          },
-          "xp": 2
-        },
-        {
           "id": "0CucQgkcFzUNh3sNOPDZ",
           "type": "mc",
           "difficulty": "easy",
@@ -3087,6 +3022,102 @@
             "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
             "sourceQuestion": "Non-calculator Q14"
           }
+        },
+        {
+          "id": "hghs-y7-t4-2021-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "\\(\\frac{2}{3}\\) written as a percentage is:",
+          "options": [
+            "60%",
+            "\\(66\\frac{2}{3}\\)%",
+            "66%",
+            "\\(66\\frac{1}{3}\\)%"
+          ],
+          "answer": 1,
+          "hint": "A percentage is a fraction out of 100. Multiply the fraction by 100%.",
+          "steps": [
+            {
+              "explain": "Convert the fraction to a percentage by multiplying by 100%.",
+              "work": "\\(\\frac{2}{3}\\times100\\%=\\frac{200}{3}\\%\\)"
+            },
+            {
+              "explain": "Divide 200 by 3 to express the result as a mixed number.",
+              "work": "\\(200\\div3=66\\text{ remainder }2\\)"
+            },
+            {
+              "explain": "Write the quotient and remainder as the percentage.",
+              "work": "\\(\\frac{200}{3}\\%=66\\frac{2}{3}\\%\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School Year 7 Mathematics Assessment 4 Term 4 2021",
+            "school": "Hornsby Girls High School",
+            "year": 2021,
+            "page": 3,
+            "question": 3,
+            "section": "Multiple Choice",
+            "marks": 1,
+            "origin": "teacher"
+          },
+          "keyPoints": [
+            {
+              "text": "written as a percentage",
+              "note": "Multiply the fraction by 100% and keep the fractional remainder exact."
+            }
+          ]
+        },
+        {
+          "id": "hghs-y7-t4-2021-q6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "\\(52\\%\\), \\(0.5\\), \\(60\\%\\), \\(0.06\\), \\(5\\%\\) placed in ascending order, is:",
+          "options": [
+            "5%, 0.06, 0.5, 52%, 60%",
+            "0.06, 5%, 0.5, 0.52, 60%",
+            "0.06, 0.5, 5%, 0.52, 60%",
+            "5%, 0.5, 0.06, 52%, 60%"
+          ],
+          "answer": 0,
+          "hint": "Rewrite every value as a decimal so all five quantities use the same format before comparing.",
+          "steps": [
+            {
+              "explain": "Convert the percentages to decimals by dividing by 100.",
+              "work": "\\(52\\%=0.52,\\quad60\\%=0.60,\\quad5\\%=0.05\\)"
+            },
+            {
+              "explain": "List every value as a decimal.",
+              "work": "\\(0.52,\\;0.5,\\;0.60,\\;0.06,\\;0.05\\)"
+            },
+            {
+              "explain": "Compare place values from left to right, padding with zeros where useful.",
+              "work": "\\(0.05<0.06<0.50<0.52<0.60\\)"
+            },
+            {
+              "explain": "Replace each decimal with its original form in the sorted list.",
+              "work": "\\(5\\%,\\;0.06,\\;0.5,\\;52\\%,\\;60\\%\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School Year 7 Mathematics Assessment 4 Term 4 2021",
+            "school": "Hornsby Girls High School",
+            "year": 2021,
+            "page": 3,
+            "question": 6,
+            "section": "Multiple Choice",
+            "marks": 1,
+            "origin": "teacher"
+          },
+          "keyPoints": [
+            {
+              "text": "ascending order",
+              "note": "Change percentages to decimals first; ascending means smallest to largest."
+            }
+          ]
         }
       ]
     },
@@ -3095,76 +3126,6 @@
       "code": "15C",
       "title": "Percentage of a quantity",
       "questions": [
-        {
-          "id": "hghs-y7-t4-2021-q9",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "\\(12\\dfrac{1}{2}\\%\\) of $680 can be found by:",
-          "options": [
-            "\\(12.5 \\times 680\\)",
-            "\\(680 \\div 4\\)",
-            "\\(680 \\times \\dfrac{3}{4}\\)",
-            "\\(680 \\div 8\\)"
-          ],
-          "answer": 3,
-          "solution": "3",
-          "steps": [
-            {
-              "explain": "Write \\(12\\dfrac{1}{2}\\%\\) as a fraction of 100.",
-              "work": "12\\dfrac{1}{2}\\% = \\dfrac{12.5}{100} = \\dfrac{125}{1000}"
-            },
-            {
-              "explain": "Simplify the fraction to its simplest form.",
-              "work": "\\dfrac{125}{1000} = \\dfrac{1}{8}"
-            },
-            {
-              "explain": "Pitfall: forgetting the % ÷100 step and using \"12.5 × 680\" leaves the answer 100 times too big — finding \\(\\dfrac{1}{8}\\) of 680 (i.e. \\(680 \\div 8\\)) is the efficient mental-strategy route.",
-              "work": "\\text{Answer: } 680 \\div 8"
-            }
-          ],
-          "meta": {
-            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          },
-          "xp": 2
-        },
-        {
-          "id": "hghs-y7-t4-2021-q21a",
-          "type": "mc",
-          "difficulty": "hard",
-          "stem": "Sarah had 55 cards. She gave 20% of them to her sister, 25% of the remaining to her brother, and the rest to her best friend. What percentage of the cards did she give to her best friend?",
-          "options": [
-            "55%",
-            "60%",
-            "75%",
-            "80%"
-          ],
-          "answer": 1,
-          "hint": "Work out how many cards are left after each gift, then convert the final leftover amount to a percentage of the original 55.",
-          "solution": "60\\%",
-          "steps": [
-            {
-              "explain": "Find 20% of the original 55 cards, given to her sister, then find how many remain.",
-              "work": "20\\% \\text{ of } 55 = 11 \\implies 55 - 11 = 44 \\text{ left}"
-            },
-            {
-              "explain": "Find 25% of the 44 remaining cards, given to her brother, then find how many remain.",
-              "work": "25\\% \\text{ of } 44 = 11 \\implies 44 - 11 = 33 \\text{ left}"
-            },
-            {
-              "explain": "The 33 leftover cards go to her best friend. Express 33 as a percentage of the ORIGINAL 55, not of 44 — that is the key pitfall in this question.",
-              "work": "\\dfrac{33}{55} \\times 100 = \\dfrac{3}{5} \\times 100 = 60"
-            },
-            {
-              "explain": "Pitfall: a very common mistake is to compute 33 as a percentage of 44 instead of the original 55, giving 75% (option C); forgetting the second gift entirely and reporting the 44 left after just the first gift as a percentage of 55 gives 80% (option D); wrongly adding the two given percentages (20%+25%=45%) and subtracting from 100% gives 55% (option A) — this ignores that the 25% is of the REMAINING amount, not the original.",
-              "work": "\\text{Answer: } 60\\%"
-            }
-          ],
-          "timeLimit": 180,
-          "meta": {
-            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          },
-          "xp": 2
-        },
         {
           "id": "sgs2020-y7-q1f",
           "type": "mc",
@@ -3312,6 +3273,107 @@
             "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
             "sourceQuestion": "Q4(b)"
           }
+        },
+        {
+          "id": "hghs-y7-t4-2021-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "\\(12\\frac{1}{2}\\%\\) of $680 can be found by:",
+          "options": [
+            "\\(12.5\\times680\\)",
+            "\\(680\\div4\\)",
+            "\\(680\\times\\frac{3}{4}\\)",
+            "\\(680\\div8\\)"
+          ],
+          "answer": 3,
+          "hint": "Convert \\(12\\frac12\\%\\) to a fraction of 1, then apply it to $680.",
+          "steps": [
+            {
+              "explain": "Convert the mixed-number percentage to a decimal percentage.",
+              "work": "\\(12\\frac{1}{2}\\%=12.5\\%\\)"
+            },
+            {
+              "explain": "A percent means “out of 100”; write 12.5% as a fraction and simplify.",
+              "work": "\\(12.5\\%=\\frac{12.5}{100}=0.125=\\frac18\\)"
+            },
+            {
+              "explain": "Find one eighth of the amount $680 by dividing 680 by 8.",
+              "work": "\\(680\\times\\frac18=680\\div8=85\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School Year 7 Mathematics Assessment 4 Term 4 2021",
+            "school": "Hornsby Girls High School",
+            "year": 2021,
+            "page": 4,
+            "question": 9,
+            "section": "Multiple Choice",
+            "marks": 1,
+            "origin": "teacher"
+          },
+          "keyPoints": [
+            {
+              "text": "of $680",
+              "note": "The word “of” means multiply the amount by the percentage written as a fraction."
+            }
+          ]
+        },
+        {
+          "id": "hghs-y7-t4-2021-q21a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Sarah had 55 cards. She gave 20% of them to her sister, 25% of the remaining to her brother and the rest to her best friend. What percentage of the cards did she give to her best friend?",
+          "options": [
+            "60%",
+            "55%",
+            "80%",
+            "40%"
+          ],
+          "answer": 0,
+          "hint": "Calculate the first gift, then take 25% of the cards that remain. The best friend receives what is left from the original 55.",
+          "steps": [
+            {
+              "explain": "Find 20% of the original 55 cards and subtract this from 55.",
+              "work": "\\(0.20\\times55=11\\quad;\\quad55-11=44\\text{ cards remain}\\)"
+            },
+            {
+              "explain": "Find 25% of the 44 cards remaining. Since 25% is one quarter, divide by 4.",
+              "work": "\\(0.25\\times44=44\\div4=11\\text{ cards}\\)"
+            },
+            {
+              "explain": "Subtract the brother’s 11 cards from the 44 remaining after the sister’s gift.",
+              "work": "\\(44-11=33\\text{ cards go to her best friend}\\)"
+            },
+            {
+              "explain": "Convert 33 of the original 55 cards to a percentage.",
+              "work": "\\(\\frac{33}{55}\\times100\\%=\\frac35\\times100\\%=60\\%\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School Year 7 Mathematics Assessment 4 Term 4 2021",
+            "school": "Hornsby Girls High School",
+            "year": 2021,
+            "page": 6,
+            "question": 1,
+            "section": "Multiple Choice",
+            "marks": 3,
+            "origin": "teacher",
+            "part": "(a)"
+          },
+          "keyPoints": [
+            {
+              "text": "25% of the remaining",
+              "note": "The second percentage is applied to the 44 cards left after the sister receives her share."
+            },
+            {
+              "text": "What percentage of the cards",
+              "note": "Use the original total of 55 as the denominator when converting the best friend’s share to a percentage."
+            }
+          ]
         }
       ]
     }

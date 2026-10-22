@@ -1440,6 +1440,52 @@
             "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
             "sourceQuestion": "Q6(b)"
           }
+        },
+        {
+          "id": "hghs-y7-t4-2021-q11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The solution to the equation \\(2x-5=1\\) is:",
+          "options": [
+            "−2",
+            "3",
+            "2",
+            "−3"
+          ],
+          "answer": 1,
+          "hint": "Undo subtracting 5 by adding 5 to both sides, then divide by 2.",
+          "steps": [
+            {
+              "explain": "Add 5 to both sides to undo the subtraction.",
+              "work": "\\(2x-5+5=1+5\\quad\\Rightarrow\\quad2x=6\\)"
+            },
+            {
+              "explain": "Divide both sides by 2.",
+              "work": "\\(x=\\frac{6}{2}=3\\)"
+            },
+            {
+              "explain": "Check by substituting 3 into the original equation.",
+              "work": "\\(2(3)-5=6-5=1\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School Year 7 Mathematics Assessment 4 Term 4 2021",
+            "school": "Hornsby Girls High School",
+            "year": 2021,
+            "page": 4,
+            "question": 11,
+            "section": "Multiple Choice",
+            "marks": 1,
+            "origin": "teacher"
+          },
+          "keyPoints": [
+            {
+              "text": "\\(2x-5=1\\)",
+              "note": "Keep the equation balanced by doing the same operation to both sides."
+            }
+          ]
         }
       ]
     },
@@ -1448,38 +1494,6 @@
       "code": "16B",
       "title": "Equivalent equations",
       "questions": [
-        {
-          "id": "hghs-y7-t4-2021-q12",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Equation A: \\(x - 3 = 10\\) is equivalent to Equation B: \\(4x - 12 = 40\\) because:",
-          "options": [
-            "both sides of equation A have been multiplied by 4 to give equation B.",
-            "both sides of equation A have been divided by 4 to give equation B.",
-            "both sides of equation A have had 15 subtracted to give equation B.",
-            "the two equations are not equivalent"
-          ],
-          "answer": 0,
-          "solution": "0",
-          "steps": [
-            {
-              "explain": "Multiply every term of equation A by 4 and see if it matches equation B.",
-              "work": "4(x-3) = 4(10) \\implies 4x - 12 = 40"
-            },
-            {
-              "explain": "Compare the result to equation B — they match exactly.",
-              "work": "4x - 12 = 40 \\;\\checkmark"
-            },
-            {
-              "explain": "Pitfall: assuming the equations are unrelated (option D) just because they look different — always test a transformation (×, ÷, +, −) on the whole equation before concluding they are not equivalent.",
-              "work": "\\text{Answer: both sides of A multiplied by 4}"
-            }
-          ],
-          "meta": {
-            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          },
-          "xp": 2
-        },
         {
           "id": "hghs2026-e2",
           "type": "mc",
@@ -1571,6 +1585,56 @@
             "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
             "sourceQuestion": "Algebra Q9"
           }
+        },
+        {
+          "id": "hghs-y7-t4-2021-q12",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Equation A: \\(x-3=10\\) is equivalent to Equation B: \\(4x-12=40\\) because:",
+          "options": [
+            "both sides of equation A have been multiplied by 4 to give equation B.",
+            "both sides of equation A have been divided by 4 to give equation B.",
+            "both sides of equation A have had 15 subtracted to give equation B.",
+            "the two equations are not equivalent."
+          ],
+          "answer": 0,
+          "hint": "Apply the stated operation to both sides of Equation A and see whether it produces Equation B.",
+          "steps": [
+            {
+              "explain": "Start with Equation A.",
+              "work": "\\(x-3=10\\)"
+            },
+            {
+              "explain": "Multiply every term on both sides by 4.",
+              "work": "\\(4(x-3)=4(10)\\)"
+            },
+            {
+              "explain": "Expand the left side and simplify the right side.",
+              "work": "\\(4x-12=40\\)"
+            },
+            {
+              "explain": "This matches Equation B exactly, so both equations have the same solution.",
+              "work": "\\(\\text{Equation B is obtained by multiplying both sides by }4.\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School Year 7 Mathematics Assessment 4 Term 4 2021",
+            "school": "Hornsby Girls High School",
+            "year": 2021,
+            "page": 4,
+            "question": 12,
+            "section": "Multiple Choice",
+            "marks": 1,
+            "origin": "teacher"
+          },
+          "keyPoints": [
+            {
+              "text": "equivalent to Equation B",
+              "note": "Equivalent equations have the same solution set and can be formed by applying the same non-zero operation to both sides."
+            }
+          ]
         }
       ]
     },
@@ -1579,141 +1643,6 @@
       "code": "16C",
       "title": "Solving equations involving more than one step",
       "questions": [
-        {
-          "id": "hghs-y7-t4-2021-q10",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "When solving the equation \\(\\dfrac{21+4x}{3} = 18\\), which step should be performed last?",
-          "options": [
-            "Dividing both sides by 4",
-            "Adding 21 to both sides",
-            "Subtracting 21 from both sides",
-            "Multiplying both sides by 3"
-          ],
-          "answer": 0,
-          "solution": "0",
-          "steps": [
-            {
-              "explain": "To undo the operations in the correct order, work from the outside in: first undo the division by 3, then the addition of 21, then the multiplication by 4.",
-              "work": "\\dfrac{21+4x}{3} = 18 \\;\\xrightarrow{\\times 3}\\; 21+4x = 54"
-            },
-            {
-              "explain": "Next undo the \"+21\" by subtracting 21 from both sides.",
-              "work": "21+4x = 54 \\;\\xrightarrow{-21}\\; 4x = 33"
-            },
-            {
-              "explain": "The last step left to undo the \"\\(\\times 4\\)\" is to divide both sides by 4. Pitfall: doing \"÷4\" too early (before removing the ÷3 and +21) breaks the order of operations and gives a wrong value of x.",
-              "work": "\\text{Last step: } \\div 4 \\text{ on both sides}"
-            }
-          ],
-          "meta": {
-            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          },
-          "xp": 2
-        },
-        {
-          "id": "hghs-y7-t4-2021-q11",
-          "type": "mc",
-          "difficulty": "easy",
-          "stem": "The solution to the equation \\(2x - 5 = 1\\) is:",
-          "options": [
-            "-2",
-            "3",
-            "2",
-            "-3"
-          ],
-          "answer": 1,
-          "solution": "1",
-          "steps": [
-            {
-              "explain": "Add 5 to both sides to isolate the term with \\(x\\).",
-              "work": "2x - 5 = 1 \\implies 2x = 6"
-            },
-            {
-              "explain": "Divide both sides by 2.",
-              "work": "x = 3"
-            },
-            {
-              "explain": "Pitfall: a sign slip when moving the \"-5\" (e.g. writing \\(2x = 1 - 5 = -4\\)) leads to \\(x = -2\\) instead — always add the opposite operation to both sides.",
-              "work": "\\text{Answer: } x = 3"
-            }
-          ],
-          "timeLimit": 90,
-          "meta": {
-            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          },
-          "xp": 1
-        },
-        {
-          "id": "hghs-y7-t4-2021-q22a-iii",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Solve the equation: \\(\\dfrac{2x-1}{3} = 4\\)",
-          "options": [
-            "\\(6\\dfrac{1}{2}\\)",
-            "\\(6\\)",
-            "\\(5\\dfrac{1}{2}\\)",
-            "\\(13\\)"
-          ],
-          "answer": 0,
-          "hint": "Multiply both sides by 3 first to clear the fraction.",
-          "solution": "x = 6\\dfrac{1}{2}",
-          "steps": [
-            {
-              "explain": "Multiply both sides by 3 to remove the denominator.",
-              "work": "\\(\\dfrac{2x-1}{3} = 4 \\implies 2x - 1 = 12\\)"
-            },
-            {
-              "explain": "Add 1 to both sides. A common mistake is ignoring the \\(-1\\) and solving \\(2x=12\\) directly (giving 6), or subtracting instead of adding (giving 2x=11).",
-              "work": "\\(2x = 13\\)"
-            },
-            {
-              "explain": "Divide both sides by 2. Forgetting this final division leaves the wrong answer of 13.",
-              "work": "\\(x = \\dfrac{13}{2} = 6\\dfrac{1}{2}\\)"
-            }
-          ],
-          "meta": {
-            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          },
-          "xp": 2
-        },
-        {
-          "id": "hghs-y7-t4-2021-q22a-iv",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Solve the equation: \\(2x^2 = 8\\)",
-          "options": [
-            "\\(x = 2\\)",
-            "\\(x = \\pm 2\\)",
-            "\\(x = \\pm 4\\)",
-            "\\(x = \\pm\\sqrt{8}\\)"
-          ],
-          "answer": 1,
-          "hint": "Divide both sides by 2 first, then take the square root of both sides — remember there are two roots.",
-          "solution": "x = \\pm 2",
-          "steps": [
-            {
-              "explain": "Divide both sides by 2 to isolate \\(x^2\\).",
-              "work": "2x^2 = 8 \\implies x^2 = 4"
-            },
-            {
-              "explain": "Take the square root of both sides.",
-              "work": "x = \\pm\\sqrt{4}"
-            },
-            {
-              "explain": "Pitfall: giving only the positive root (\\(x=2\\), option A) forgets that squaring a negative number also gives a positive result — \\((-2)^2 = 4\\) too, so both roots must be stated.",
-              "work": "\\text{Answer: } x = \\pm 2"
-            },
-            {
-              "explain": "Other pitfalls: taking the square root of both sides of the ORIGINAL equation before dividing by 2 gives the un-simplified \\(x=\\pm\\sqrt{8}\\) (option D); simply halving 8 without ever square-rooting gives \\(x=\\pm4\\) (option C).",
-              "work": "2x^2 = 8 \\implies x = \\pm\\sqrt{8} \\quad \\text{(divide-by-2 step skipped, not simplified)}"
-            }
-          ],
-          "meta": {
-            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          },
-          "xp": 2
-        },
         {
           "id": "hghs-y7-t4-2024-eq-1c",
           "type": "mc",
@@ -2263,6 +2192,237 @@
             "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
             "sourceQuestion": "Q9(b)(iii)"
           }
+        },
+        {
+          "id": "hghs-y7-t4-2021-q10",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "When solving the equation \\(\\frac{21+4x}{3}=18\\), which step should be performed last?",
+          "options": [
+            "Dividing both sides by 4",
+            "Adding 21 to both sides",
+            "Subtracting 21 from both sides",
+            "Multiplying both sides by 3"
+          ],
+          "answer": 0,
+          "hint": "Undo the operations in reverse order: first clear the denominator, then remove 21, and finally isolate x.",
+          "steps": [
+            {
+              "explain": "First multiply both sides by 3 to clear the denominator.",
+              "work": "\\(\\frac{21+4x}{3}=18\\quad\\Rightarrow\\quad21+4x=54\\)"
+            },
+            {
+              "explain": "Subtract 21 from both sides to leave the x-term.",
+              "work": "\\(4x=54-21=33\\)"
+            },
+            {
+              "explain": "The final operation is to divide both sides by 4.",
+              "work": "\\(x=\\frac{33}{4}\\)"
+            },
+            {
+              "explain": "Therefore the last step is dividing both sides by 4.",
+              "work": "\\(\\boxed{\\text{Divide both sides by }4}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School Year 7 Mathematics Assessment 4 Term 4 2021",
+            "school": "Hornsby Girls High School",
+            "year": 2021,
+            "page": 4,
+            "question": 10,
+            "section": "Multiple Choice",
+            "marks": 1,
+            "origin": "teacher"
+          },
+          "keyPoints": [
+            {
+              "text": "which step should be performed last",
+              "note": "Undo the division first, then the addition; the coefficient of x is removed last."
+            }
+          ]
+        },
+        {
+          "id": "hghs-y7-t4-2021-q22a",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Solve the following equations:",
+          "parts": [
+            {
+              "id": "hghs-y7-t4-2021-q22a-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "\\(3(x+12)=5-2x\\)",
+              "options": [
+                "\\(-\\frac{31}{5}\\)",
+                "\\(-\\frac{29}{5}\\)",
+                "\\(\\frac{31}{5}\\)",
+                "\\(-\\frac{31}{3}\\)"
+              ],
+              "answer": 0,
+              "hint": "Expand the left bracket, collect the x-terms on one side, and keep the equation balanced.",
+              "steps": [
+                {
+                  "explain": "Expand the bracket by multiplying 3 by both terms inside it.",
+                  "work": "\\(3x+36=5-2x\\)"
+                },
+                {
+                  "explain": "Add \\(2x\\) to both sides to collect variable terms on the left.",
+                  "work": "\\(5x+36=5\\)"
+                },
+                {
+                  "explain": "Subtract 36 from both sides.",
+                  "work": "\\(5x=-31\\)"
+                },
+                {
+                  "explain": "Divide by 5 and check the result in the original equation.",
+                  "work": "\\(x=-\\frac{31}{5}=-6\\frac15\\quad;\\quad3(-\\frac{31}{5}+12)=\\frac{87}{5}=5-2(-\\frac{31}{5})\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Hornsby Girls High School Year 7 Mathematics Assessment 4 Term 4 2021",
+                "school": "Hornsby Girls High School",
+                "year": 2021,
+                "page": 7,
+                "question": 2,
+                "section": "Short Answer Questions",
+                "marks": 2,
+                "origin": "teacher",
+                "part": "(a)(ii)"
+              },
+              "keyPoints": [
+                {
+                  "text": "\\(3(x+12)=5-2x\\)",
+                  "note": "Apply the same inverse operation to both sides and retain every solution."
+                }
+              ]
+            },
+            {
+              "id": "hghs-y7-t4-2021-q22a-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "\\(\\frac{2x-1}{3}=4\\)",
+              "options": [
+                "\\(\\frac{13}{2}\\)",
+                "\\(\\frac{11}{2}\\)",
+                "\\(\\frac{13}{3}\\)",
+                "\\(\\frac{5}{2}\\)"
+              ],
+              "answer": 0,
+              "hint": "Multiply both sides by 3 to clear the denominator, then isolate x.",
+              "steps": [
+                {
+                  "explain": "Multiply both sides by 3 so the denominator cancels.",
+                  "work": "\\(2x-1=4\\times3=12\\)"
+                },
+                {
+                  "explain": "Add 1 to both sides.",
+                  "work": "\\(2x=13\\)"
+                },
+                {
+                  "explain": "Divide both sides by 2.",
+                  "work": "\\(x=\\frac{13}{2}\\)"
+                },
+                {
+                  "explain": "Substitute \\(\\frac{13}{2}\\) back into the left side.",
+                  "work": "\\(\\frac{2(13/2)-1}{3}=\\frac{13-1}{3}=4\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Hornsby Girls High School Year 7 Mathematics Assessment 4 Term 4 2021",
+                "school": "Hornsby Girls High School",
+                "year": 2021,
+                "page": 7,
+                "question": 2,
+                "section": "Short Answer Questions",
+                "marks": 2,
+                "origin": "teacher",
+                "part": "(a)(iii)"
+              },
+              "keyPoints": [
+                {
+                  "text": "\\(\\frac{2x-1}{3}=4\\)",
+                  "note": "Apply the same inverse operation to both sides and retain every solution."
+                }
+              ]
+            },
+            {
+              "id": "hghs-y7-t4-2021-q22a-iv",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "\\(2x^2=8\\)",
+              "options": [
+                "\\(x=\\pm2\\)",
+                "\\(x=2\\) only",
+                "\\(x=-2\\) only",
+                "\\(x=\\pm4\\)"
+              ],
+              "answer": 0,
+              "hint": "Divide by 2 first. When solving an equation of the form x²=4, remember both the positive and negative square roots.",
+              "steps": [
+                {
+                  "explain": "Divide both sides by 2.",
+                  "work": "\\(x^2=4\\)"
+                },
+                {
+                  "explain": "Take both square roots because both numbers square to 4.",
+                  "work": "\\(x=\\pm\\sqrt4\\)"
+                },
+                {
+                  "explain": "Evaluate the square root.",
+                  "work": "\\(x=2\\text{ or }x=-2\\)"
+                },
+                {
+                  "explain": "Check each value in \\(2x^2=8\\).",
+                  "work": "\\(2(2^2)=8,\\quad2((-2)^2)=8\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Hornsby Girls High School Year 7 Mathematics Assessment 4 Term 4 2021",
+                "school": "Hornsby Girls High School",
+                "year": 2021,
+                "page": 7,
+                "question": 2,
+                "section": "Short Answer Questions",
+                "marks": 2,
+                "origin": "teacher",
+                "part": "(a)(iv)"
+              },
+              "keyPoints": [
+                {
+                  "text": "\\(2x^2=8\\)",
+                  "note": "Apply the same inverse operation to both sides and retain every solution."
+                }
+              ]
+            }
+          ],
+          "hint": "Clear brackets or denominators first. Then undo operations in reverse order; for a squared variable include both square-root solutions.",
+          "steps": [],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School Year 7 Mathematics Assessment 4 Term 4 2021",
+            "school": "Hornsby Girls High School",
+            "year": 2021,
+            "page": 7,
+            "question": 2,
+            "section": "Short Answer Questions",
+            "marks": 6,
+            "origin": "teacher"
+          },
+          "keyPoints": [
+            {
+              "text": "Solve the following equations:",
+              "note": "Each subpart is a separate equation; show a balanced operation at every line."
+            }
+          ]
         }
       ]
     },
@@ -2271,44 +2431,6 @@
       "code": "16D",
       "title": "Equations with negative solutions",
       "questions": [
-        {
-          "id": "hghs-y7-t4-2021-q22b",
-          "type": "mc",
-          "difficulty": "hard",
-          "stem": "A rectangle (not to scale) has one side labelled 10 and the OPPOSITE side labelled \\(4-2x\\). Since opposite sides of a rectangle are equal, write an equation and find the value of \\(x\\).",
-          "options": [
-            "3",
-            "7",
-            "-3",
-            "-7"
-          ],
-          "answer": 2,
-          "hint": "Opposite sides of a rectangle are equal in length, so set the two expressions equal to each other: \\(4-2x=10\\).",
-          "solution": "x = -3",
-          "steps": [
-            {
-              "explain": "Since it is a rectangle, opposite sides are equal in length. Set the two expressions for the pair of opposite sides equal to each other.",
-              "work": "4 - 2x = 10"
-            },
-            {
-              "explain": "Subtract 4 from both sides to isolate the \\(x\\) term.",
-              "work": "-2x = 6"
-            },
-            {
-              "explain": "Divide both sides by \\(-2\\). Pitfall: dividing 6 by \\(-2\\) but forgetting to keep the negative sign (giving \\(x=3\\), option A, instead of \\(x=-3\\)) — a negative divided by a negative only gives a positive when BOTH numbers are negative; here only the divisor is.",
-              "work": "x = \\dfrac{6}{-2} = -3"
-            },
-            {
-              "explain": "Other pitfalls: moving the \"4\" to the wrong side (adding instead of subtracting) gives \\(-2x=14 \\implies x=-7\\) (option D); flipping which side is subtracted from which gives \\(x=7\\) (option B).",
-              "work": "\\text{Answer: } x = -3"
-            }
-          ],
-          "timeLimit": 150,
-          "meta": {
-            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          },
-          "xp": 2
-        },
         {
           "id": "y7-ep2-q6d",
           "type": "mc",
@@ -2447,6 +2569,63 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "hghs-y7-t4-2021-q22b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Consider the rectangle shown below, write an equation and find the value of x by solving the equation.",
+          "options": [
+            "−3",
+            "3",
+            "−7",
+            "7"
+          ],
+          "answer": 0,
+          "hint": "The top and bottom sides of a rectangle have equal lengths. Set the two expressions equal before solving.",
+          "steps": [
+            {
+              "explain": "Opposite horizontal sides of a rectangle are equal. The top is 10 and the bottom is \\(4-2x\\).",
+              "work": "\\(4-2x=10\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 210\" width=\"100%\" height=\"auto\" role=\"img\"><rect width=\"360\" height=\"210\" fill=\"#fff\"/><rect x=\"100\" y=\"45\" width=\"160\" height=\"115\" fill=\"#dbeafe\" fill-opacity=\".65\" stroke=\"#334155\" stroke-width=\"2.6\"/><path d=\"M100 57h12v-12 M248 45v12h12 M100 148h12v12 M248 160v-12h12\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"170\" y1=\"45\" x2=\"190\" y2=\"45\" stroke=\"#f97316\" stroke-width=\"2.5\"/><line x1=\"170\" y1=\"160\" x2=\"190\" y2=\"160\" stroke=\"#f97316\" stroke-width=\"2.5\"/><text x=\"180\" y=\"31\" text-anchor=\"middle\" font-size=\"17\" fill=\"#1e293b\">10</text><text x=\"180\" y=\"190\" text-anchor=\"middle\" font-size=\"17\" fill=\"#1e293b\">4 − 2x</text><text x=\"280\" y=\"95\" font-size=\"13\" fill=\"#64748b\">not to scale</text></svg>"
+              }
+            },
+            {
+              "explain": "Subtract 4 from both sides to isolate the term containing x.",
+              "work": "\\(-2x=10-4=6\\)"
+            },
+            {
+              "explain": "Divide both sides by −2.",
+              "work": "\\(x=\\frac{6}{-2}=-3\\)"
+            },
+            {
+              "explain": "Check: substituting −3 makes the bottom side equal 10.",
+              "work": "\\(4-2(-3)=4+6=10\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School Year 7 Mathematics Assessment 4 Term 4 2021",
+            "school": "Hornsby Girls High School",
+            "year": 2021,
+            "page": 7,
+            "question": 2,
+            "section": "Short Answer Questions",
+            "marks": 2,
+            "origin": "teacher",
+            "part": "(b)"
+          },
+          "keyPoints": [
+            {
+              "text": "rectangle shown below",
+              "note": "The single tick marks identify the equal top and bottom sides; equate their labelled lengths."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 210\" width=\"100%\" height=\"auto\" role=\"img\"><rect width=\"360\" height=\"210\" fill=\"#fff\"/><rect x=\"100\" y=\"45\" width=\"160\" height=\"115\" fill=\"#dbeafe\" fill-opacity=\".65\" stroke=\"#334155\" stroke-width=\"2.6\"/><path d=\"M100 57h12v-12 M248 45v12h12 M100 148h12v12 M248 160v-12h12\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"170\" y1=\"45\" x2=\"190\" y2=\"45\" stroke=\"#f97316\" stroke-width=\"2.5\"/><line x1=\"170\" y1=\"160\" x2=\"190\" y2=\"160\" stroke=\"#f97316\" stroke-width=\"2.5\"/><text x=\"180\" y=\"31\" text-anchor=\"middle\" font-size=\"17\" fill=\"#1e293b\">10</text><text x=\"180\" y=\"190\" text-anchor=\"middle\" font-size=\"17\" fill=\"#1e293b\">4 − 2x</text><text x=\"280\" y=\"95\" font-size=\"13\" fill=\"#64748b\">not to scale</text></svg>"
+          }
         }
       ]
     },
@@ -2455,38 +2634,6 @@
       "code": "16E",
       "title": "Expanding brackets and solving equations",
       "questions": [
-        {
-          "id": "hghs-y7-t4-2021-q13",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "The solution to the equation \\(5 - 2(x-3) = 6\\) is:",
-          "options": [
-            "\\(\\dfrac{5}{2}\\)",
-            "\\(-\\dfrac{5}{2}\\)",
-            "\\(-\\dfrac{7}{2}\\)",
-            "\\(\\dfrac{7}{2}\\)"
-          ],
-          "answer": 0,
-          "solution": "0",
-          "steps": [
-            {
-              "explain": "Expand the bracket first, being careful with the negative sign in front of it.",
-              "work": "5 - 2(x-3) = 6 \\implies 5 - 2x + 6 = 6"
-            },
-            {
-              "explain": "Simplify the left side, then isolate the \\(x\\)-term.",
-              "work": "11 - 2x = 6 \\implies -2x = -5"
-            },
-            {
-              "explain": "Divide both sides by \\(-2\\). Pitfall: expanding \\(-2(x-3)\\) as \\(-2x - 6\\) instead of \\(-2x + 6\\) (sign error on the second term) leads to \\(x = -\\dfrac{7}{2}\\) instead of the correct answer.",
-              "work": "x = \\dfrac{-5}{-2} = \\dfrac{5}{2}"
-            }
-          ],
-          "meta": {
-            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          },
-          "xp": 2
-        },
         {
           "id": "hghs2026-e1d",
           "type": "mc",
@@ -2511,6 +2658,56 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "hghs-y7-t4-2021-q13",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The solution to equation \\(5-2(x-3)=6\\) is:",
+          "options": [
+            "\\(\\frac{5}{2}\\)",
+            "\\(-\\frac{5}{2}\\)",
+            "\\(-\\frac{7}{2}\\)",
+            "\\(\\frac{7}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand the bracket carefully: the outside factor −2 multiplies both x and −3.",
+          "steps": [
+            {
+              "explain": "Distribute −2 to both terms inside the bracket.",
+              "work": "\\(5-2(x-3)=5-2x+6\\)"
+            },
+            {
+              "explain": "Combine the constant terms.",
+              "work": "\\(11-2x=6\\)"
+            },
+            {
+              "explain": "Subtract 11 from both sides.",
+              "work": "\\(-2x=6-11=-5\\)"
+            },
+            {
+              "explain": "Divide both sides by −2 and check the result.",
+              "work": "\\(x=\\frac{-5}{-2}=\\frac52\\quad;\\quad5-2(\\frac52-3)=5-2(-\\frac12)=6\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School Year 7 Mathematics Assessment 4 Term 4 2021",
+            "school": "Hornsby Girls High School",
+            "year": 2021,
+            "page": 4,
+            "question": 13,
+            "section": "Multiple Choice",
+            "marks": 1,
+            "origin": "teacher"
+          },
+          "keyPoints": [
+            {
+              "text": "-2(x-3)",
+              "note": "The negative factor −2 multiplies each term in the bracket; track both resulting signs."
+            }
+          ]
         }
       ]
     },
@@ -2548,44 +2745,6 @@
       "code": "16G",
       "title": "Equations with pronumerals on both sides",
       "questions": [
-        {
-          "id": "hghs-y7-t4-2021-q22a-ii",
-          "type": "mc",
-          "difficulty": "hard",
-          "stem": "Solve the equation: \\(3(x+12) = 5 - 2x\\)",
-          "options": [
-            "\\(x = -1\\dfrac{2}{5}\\)",
-            "\\(x = -31\\)",
-            "\\(x = -6\\dfrac{1}{5}\\)",
-            "\\(x = 8\\dfrac{1}{5}\\)"
-          ],
-          "answer": 2,
-          "hint": "Expand the bracket, collect the x terms on one side and the numbers on the other.",
-          "solution": "x = -6\\dfrac{1}{5}",
-          "steps": [
-            {
-              "explain": "Expand the bracket on the left side.",
-              "work": "3(x+12) = 5 - 2x \\implies 3x + 36 = 5 - 2x"
-            },
-            {
-              "explain": "Add \\(2x\\) to both sides to collect all the \\(x\\) terms on the left, then subtract 36 from both sides to isolate the \\(x\\) term.",
-              "work": "3x + 2x = 5 - 36 \\implies 5x = -31"
-            },
-            {
-              "explain": "Divide both sides by 5. Pitfall: forgetting to move BOTH the \\(x\\) term and the constant (e.g. only moving one of them) leaves an equation that still has terms on both sides.",
-              "work": "x = \\dfrac{-31}{5} = -6\\dfrac{1}{5}"
-            },
-            {
-              "explain": "Other pitfalls: expanding the bracket incorrectly as \\(3x+12\\) (only multiplying the first term, forgetting \\(3\\times12=36\\)) leads to \\(x=-1\\dfrac{2}{5}\\) (option A); stopping after \\(5x=-31\\) without dividing gives \\(x=-31\\) (option B); a sign slip moving 36 across (adding instead of subtracting) gives \\(x=8\\dfrac{1}{5}\\) (option D).",
-              "work": "\\text{Answer: } x = -6\\dfrac{1}{5}"
-            }
-          ],
-          "timeLimit": 150,
-          "meta": {
-            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          },
-          "xp": 2
-        },
         {
           "id": "hghs-y7-t4-2024-eq-1e",
           "type": "mc",
@@ -2684,39 +2843,6 @@
       "code": "16H",
       "title": "Solving problems using equations",
       "questions": [
-        {
-          "id": "hghs-y7-t4-2021-q14",
-          "type": "mc",
-          "difficulty": "hard",
-          "stem": "Alison is \\(a\\) years old and Brendan is \\(b\\) years old. In 10 years' time their combined age will be 40. An equation that represents this scenario is:",
-          "options": [
-            "\\(a + b + 10 = 40\\)",
-            "\\(a + b + 20 = 40\\)",
-            "\\(10(a+b) = 40\\)",
-            "\\(10(a-b) = 40\\)"
-          ],
-          "answer": 1,
-          "solution": "1",
-          "steps": [
-            {
-              "explain": "In 10 years, Alison will be \\(a+10\\) years old and Brendan will be \\(b+10\\) years old.",
-              "work": "\\text{Alison: } a+10, \\quad \\text{Brendan: } b+10"
-            },
-            {
-              "explain": "Their combined age in 10 years is the sum of these two expressions, which equals 40.",
-              "work": "(a+10) + (b+10) = 40"
-            },
-            {
-              "explain": "Simplify by collecting the constant terms. Pitfall: adding only one lot of 10 (giving \\(a+b+10=40\\)) forgets that BOTH people age 10 years, not just their combined total.",
-              "work": "a + b + 20 = 40"
-            }
-          ],
-          "timeLimit": 150,
-          "meta": {
-            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          },
-          "xp": 2
-        },
         {
           "id": "hghs2026-e3",
           "type": "mc",
@@ -3204,6 +3330,52 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 220\" width=\"100%\" style=\"max-width:390px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Parallelogram with top labelled 3x cm, right side labelled x cm, and opposite sides marked equal with matching ticks\"><g font-family=\"system-ui,-apple-system,Segoe UI,Roboto,sans-serif\"><polygon points=\"60,50 320,50 375,180 115,180\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><line x1=\"190\" y1=\"42\" x2=\"190\" y2=\"58\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"245\" y1=\"172\" x2=\"245\" y2=\"188\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"92.6\" y1=\"109.1\" x2=\"79.7\" y2=\"114.5\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"95.3\" y1=\"115.5\" x2=\"82.4\" y2=\"121.0\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"352.6\" y1=\"109.1\" x2=\"339.7\" y2=\"114.5\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"355.3\" y1=\"115.5\" x2=\"342.4\" y2=\"121.0\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><text x=\"190\" y=\"34\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">3x cm</text><text x=\"372\" y=\"120\" text-anchor=\"start\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">x cm</text></g></svg>"
           }
+        },
+        {
+          "id": "hghs-y7-t4-2021-q14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Alison is \\(a\\) years old and Brendan is \\(b\\) years old. In 10 years’ time their combined age will be 40. An equation that represents this scenario is:",
+          "options": [
+            "\\(a+b+10=40\\)",
+            "\\(a+b+20=40\\)",
+            "\\(10(a+b)=40\\)",
+            "\\(10(a-b)=40\\)"
+          ],
+          "answer": 1,
+          "hint": "In 10 years, add 10 to each person’s current age, then add their future ages together.",
+          "steps": [
+            {
+              "explain": "Write Alison’s age in 10 years and Brendan’s age in 10 years.",
+              "work": "\\(a+10\\quad\\text{and}\\quad b+10\\)"
+            },
+            {
+              "explain": "Add these two future ages to represent their combined age.",
+              "work": "\\((a+10)+(b+10)\\)"
+            },
+            {
+              "explain": "Combine like terms and set the total equal to 40.",
+              "work": "\\(a+b+20=40\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School Year 7 Mathematics Assessment 4 Term 4 2021",
+            "school": "Hornsby Girls High School",
+            "year": 2021,
+            "page": 4,
+            "question": 14,
+            "section": "Multiple Choice",
+            "marks": 1,
+            "origin": "teacher"
+          },
+          "keyPoints": [
+            {
+              "text": "In 10 years’ time",
+              "note": "Add 10 to each person’s present age before combining their ages."
+            }
+          ]
         }
       ]
     }

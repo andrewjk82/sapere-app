@@ -3139,40 +3139,6 @@
           "xp": 2
         },
         {
-          "id": "hghs-y7-t4-2021-q21b-ii",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Simplify: \\(\\dfrac{3ab}{4} \\times \\dfrac{2a}{3b}\\)",
-          "options": [
-            "\\(\\dfrac{a^2}{2}\\)",
-            "\\(\\dfrac{a}{2}\\)",
-            "\\(2a^2\\)",
-            "\\(\\dfrac{a^2b}{2}\\)"
-          ],
-          "answer": 0,
-          "hint": "Multiply numerators and denominators first, then cancel common factors — the b terms cancel completely.",
-          "solution": "\\dfrac{a^2}{2}",
-          "steps": [
-            {
-              "explain": "Multiply the numerators together, and the denominators together.",
-              "work": "\\dfrac{3ab \\times 2a}{4 \\times 3b} = \\dfrac{6a^2b}{12b}"
-            },
-            {
-              "explain": "Cancel the common factor of \\(b\\) (top and bottom), then cancel the common factor of 6 into 12.",
-              "work": "\\dfrac{6a^2b}{12b} = \\dfrac{6a^2}{12} = \\dfrac{a^2}{2}"
-            },
-            {
-              "explain": "Pitfall: forgetting to cancel the \\(b\\) terms (leaving \\(\\dfrac{a^2b}{2}\\), option D, unsimplified) or cancelling only part of the numeric factor — always cancel every common factor, including pronumerals.",
-              "work": "\\text{Answer: } \\dfrac{a^2}{2}"
-            },
-            {
-              "explain": "Other pitfalls: losing a factor of \\(a\\) somewhere in the multiplication gives just \\(\\dfrac{a}{2}\\) (option B, only one \\(a\\) instead of \\(a^2\\)); simplifying \\(\\dfrac{6}{3}\\) instead of \\(\\dfrac{6}{12}\\) (using only the second denominator, forgetting the 4) gives \\(2a^2\\) (option C).",
-              "work": "6a^2b \\div 12b = \\dfrac{a^2}{2} \\;\\; (\\text{not } 2a^2)"
-            }
-          ],
-          "xp": 2
-        },
-        {
           "id": "sgi-y7-2017-q3b",
           "type": "mc",
           "difficulty": "medium",
@@ -4729,41 +4695,6 @@
           "xp": 2
         },
         {
-          "id": "hghs-y7-t4-2021-q21b-iii",
-          "type": "mc",
-          "difficulty": "hard",
-          "stem": "Simplify: \\(\\dfrac{3m^3}{8n} \\div \\dfrac{6m}{4n^2}\\)",
-          "options": [
-            "\\(\\dfrac{9m^4}{16n^3}\\)",
-            "\\(\\dfrac{4}{m^2n}\\)",
-            "\\(\\dfrac{m^2n}{4}\\)",
-            "\\(\\dfrac{m^2}{4}\\)"
-          ],
-          "answer": 2,
-          "hint": "To divide by a fraction, multiply by its reciprocal, then cancel common factors.",
-          "solution": "\\dfrac{m^2n}{4}",
-          "steps": [
-            {
-              "explain": "To divide by a fraction, multiply by its reciprocal (flip the second fraction).",
-              "work": "\\dfrac{3m^3}{8n} \\div \\dfrac{6m}{4n^2} = \\dfrac{3m^3}{8n} \\times \\dfrac{4n^2}{6m}"
-            },
-            {
-              "explain": "Cancel common factors before multiplying: 4 and 8 share a factor of 4; \\(m^3\\) and \\(m\\) share a factor of \\(m\\); \\(n\\) and \\(n^2\\) share a factor of \\(n\\); 3 and 6 share a factor of 3.",
-              "work": "\\dfrac{3m^3}{8n} \\times \\dfrac{4n^2}{6m} = \\dfrac{m^2 \\cdot n}{2 \\cdot 2} = \\dfrac{m^2n}{4}"
-            },
-            {
-              "explain": "Pitfall: dividing straight across instead of flipping and multiplying (multiplying \\(\\dfrac{3m^3}{8n}\\) by \\(\\dfrac{6m}{4n^2}\\) directly) gives \\(\\dfrac{9m^4}{16n^3}\\) (option A) — a completely different, incorrect expression.",
-              "work": "\\text{Answer: } \\dfrac{m^2n}{4}"
-            },
-            {
-              "explain": "Other pitfalls: flipping the FIRST fraction instead of the second gives the reciprocal of the correct answer, \\(\\dfrac{4}{m^2n}\\) (option B); losing the \\(n\\) somewhere during cancelling gives \\(\\dfrac{m^2}{4}\\) (option D).",
-              "work": "\\text{Always flip the SECOND (divisor) fraction, not the first.}"
-            }
-          ],
-          "timeLimit": 150,
-          "xp": 2
-        },
-        {
           "id": "hghs2026-q3c",
           "type": "mc",
           "difficulty": "medium",
@@ -5158,38 +5089,177 @@
           "xp": 1
         },
         {
-          "id": "hghs-y7-t4-2021-q21b-i",
-          "type": "mc",
+          "id": "hghs-y7-t4-2021-q21b",
+          "type": "multipart",
           "difficulty": "medium",
-          "stem": "Simplify: \\(\\dfrac{x}{5} + \\dfrac{x}{3}\\)",
-          "options": [
-            "\\(\\dfrac{x}{4}\\)",
-            "\\(\\dfrac{8x}{15}\\)",
-            "\\(\\dfrac{2x}{15}\\)",
-            "\\(\\dfrac{4x}{15}\\)"
-          ],
-          "answer": 1,
-          "hint": "Find the lowest common denominator of 5 and 3 (which is 15) before adding.",
-          "solution": "\\dfrac{8x}{15}",
-          "steps": [
+          "stem": "Simplify:",
+          "parts": [
             {
-              "explain": "The lowest common denominator of 5 and 3 is 15. Rewrite each fraction with denominator 15.",
-              "work": "\\dfrac{x}{5} = \\dfrac{3x}{15}, \\qquad \\dfrac{x}{3} = \\dfrac{5x}{15}"
+              "id": "hghs-y7-t4-2021-q21b-i",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Simplify \\(\\frac{x}{5}+\\frac{x}{3}\\).",
+              "options": [
+                "\\(\\frac{8x}{15}\\)",
+                "\\(\\frac{2x}{8}\\)",
+                "\\(\\frac{8x}{8}\\)",
+                "\\(\\frac{x}{15}\\)"
+              ],
+              "answer": 0,
+              "hint": "Use the lowest common denominator of 5 and 3. Rewrite each fraction without changing its value, then add the numerators.",
+              "steps": [
+                {
+                  "explain": "The denominators are 5 and 3. Their lowest common denominator is 15.",
+                  "work": "\\(\\operatorname{LCM}(5,3)=15\\)"
+                },
+                {
+                  "explain": "Multiply \\(\\frac{x}{5}\\) by \\(\\frac33\\) to make denominator 15. Multiply \\(\\frac{x}{3}\\) by \\(\\frac55\\).",
+                  "work": "\\(\\frac{x}{5}=\\frac{3x}{15},\\quad\\frac{x}{3}=\\frac{5x}{15}\\)"
+                },
+                {
+                  "explain": "Add the numerators and keep the shared denominator.",
+                  "work": "\\(\\frac{3x}{15}+\\frac{5x}{15}=\\frac{8x}{15}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Hornsby Girls High School Year 7 Mathematics Assessment 4 Term 4 2021",
+                "school": "Hornsby Girls High School",
+                "year": 2021,
+                "page": 6,
+                "question": 1,
+                "section": "Short Answer Questions",
+                "marks": 2,
+                "origin": "teacher",
+                "part": "(b)(i)"
+              },
+              "keyPoints": [
+                {
+                  "text": "Simplify",
+                  "note": "For fraction addition, first create a common denominator; do not add the denominators."
+                }
+              ]
             },
             {
-              "explain": "Now that both fractions share a denominator, add the numerators.",
-              "work": "\\dfrac{3x}{15} + \\dfrac{5x}{15} = \\dfrac{8x}{15}"
+              "id": "hghs-y7-t4-2021-q21b-ii",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Simplify \\(\\frac{3ab}{4}\\times\\frac{2a}{3b}\\).",
+              "options": [
+                "\\(\\frac{a^2}{4}\\)",
+                "\\(\\frac{a^2}{2}\\)",
+                "\\(\\frac{6a^2}{12b^2}\\)",
+                "\\(\\frac{2a}{3}\\)"
+              ],
+              "answer": 1,
+              "hint": "Multiply the numerators together and the denominators together. Then cancel common factors in the product.",
+              "steps": [
+                {
+                  "explain": "Multiply the numerators and denominators.",
+                  "work": "\\(\\frac{3ab}{4}\\times\\frac{2a}{3b}=\\frac{6a^2b}{12b}\\)"
+                },
+                {
+                  "explain": "Cancel the common factor 6 from numerator and denominator, and cancel b (where \\(b\\ne0\\)).",
+                  "work": "\\(\\frac{6a^2b}{12b}=\\frac{a^2}{2}\\)"
+                },
+                {
+                  "explain": "The simplified result has no remaining factor b.",
+                  "work": "\\(\\boxed{\\frac{a^2}{2}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Hornsby Girls High School Year 7 Mathematics Assessment 4 Term 4 2021",
+                "school": "Hornsby Girls High School",
+                "year": 2021,
+                "page": 6,
+                "question": 1,
+                "section": "Short Answer Questions",
+                "marks": 2,
+                "origin": "teacher",
+                "part": "(b)(i), second item printed with the same label"
+              },
+              "keyPoints": [
+                {
+                  "text": "Simplify",
+                  "note": "Multiply first, then cancel common factors; cancel factors only, not terms joined by addition."
+                }
+              ]
             },
             {
-              "explain": "Pitfall: adding numerators and denominators straight across (\\(\\dfrac{x}{5}+\\dfrac{x}{3} = \\dfrac{2x}{8}=\\dfrac{x}{4}\\), option A) is not valid — fractions can only be added once they share a common denominator.",
-              "work": "\\text{Answer: } \\dfrac{8x}{15}"
-            },
-            {
-              "explain": "Other pitfalls: converting to the common denominator 15 but forgetting to scale the numerators too (keeping them as \\(x\\) each) gives \\(\\dfrac{2x}{15}\\) (option C); scaling only one of the two numerators correctly gives \\(\\dfrac{4x}{15}\\) (option D).",
-              "work": "\\dfrac{x}{5}+\\dfrac{x}{3} \\neq \\dfrac{x+x}{15}"
+              "id": "hghs-y7-t4-2021-q21b-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Simplify \\(\\frac{3m^3}{8n}\\div\\frac{6m}{4n^2}\\).",
+              "options": [
+                "\\(\\frac{m^2n}{4}\\)",
+                "\\(\\frac{m^2}{4n}\\)",
+                "\\(\\frac{m^3n}{4}\\)",
+                "\\(\\frac{m^2n}{2}\\)"
+              ],
+              "answer": 0,
+              "hint": "Change division by a fraction into multiplication by its reciprocal, then cancel common factors.",
+              "steps": [
+                {
+                  "explain": "Keep the first fraction and multiply by the reciprocal of the second fraction.",
+                  "work": "\\(\\frac{3m^3}{8n}\\div\\frac{6m}{4n^2}=\\frac{3m^3}{8n}\\times\\frac{4n^2}{6m}\\)"
+                },
+                {
+                  "explain": "Multiply numerators and denominators.",
+                  "work": "\\(\\frac{3m^3\\cdot4n^2}{8n\\cdot6m}=\\frac{12m^3n^2}{48mn}\\)"
+                },
+                {
+                  "explain": "Simplify the numerical coefficient and cancel matching powers of m and n.",
+                  "work": "\\(\\frac{12}{48}\\times\\frac{m^3}{m}\\times\\frac{n^2}{n}=\\frac14\\times m^2\\times n\\)"
+                },
+                {
+                  "explain": "Write the simplified result.",
+                  "work": "\\(\\frac{m^2n}{4}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Hornsby Girls High School Year 7 Mathematics Assessment 4 Term 4 2021",
+                "school": "Hornsby Girls High School",
+                "year": 2021,
+                "page": 6,
+                "question": 1,
+                "section": "Short Answer Questions",
+                "marks": 2,
+                "origin": "teacher",
+                "part": "(b)(ii)"
+              },
+              "keyPoints": [
+                {
+                  "text": "\\div",
+                  "note": "When dividing by a fraction, multiply by the reciprocal of the divisor."
+                }
+              ]
             }
           ],
-          "xp": 2
+          "hint": "For each part, identify the operation first: addition needs a common denominator, multiplication combines numerators and denominators, and division uses a reciprocal.",
+          "steps": [],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School Year 7 Mathematics Assessment 4 Term 4 2021",
+            "school": "Hornsby Girls High School",
+            "year": 2021,
+            "page": 6,
+            "question": 1,
+            "section": "Short Answer Questions",
+            "marks": 6,
+            "origin": "teacher"
+          },
+          "keyPoints": [
+            {
+              "text": "Simplify:",
+              "note": "Choose the fraction rule that matches the operation shown in each expression."
+            }
+          ]
         }
       ]
     }
