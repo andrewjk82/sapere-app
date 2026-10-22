@@ -2385,7 +2385,7 @@
           "id": "yr9t3-2023-si-q9i",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Simplify each of the following expressions involving surds: (i) \\(\\sqrt{20}+\\sqrt{45}-\\sqrt5\\)",
+          "stem": "Simplify the surd expression: \\(\\sqrt{20}+\\sqrt{45}-\\sqrt5\\)",
           "options": [
             "\\(8\\sqrt5\\)",
             "\\(4\\sqrt{10}\\)",
@@ -2428,7 +2428,7 @@
           "id": "yr9t3-2023-si-q9ii",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Simplify each of the following expressions involving surds: (ii) \\(\\frac{\\sqrt5}{6}+\\frac{5\\sqrt5}{8}\\)",
+          "stem": "Simplify the surd expression: \\(\\frac{\\sqrt5}{6}+\\frac{5\\sqrt5}{8}\\)",
           "options": [
             "\\(\\frac{6\\sqrt5}{14}\\)",
             "\\(\\frac{19\\sqrt5}{14}\\)",

@@ -19516,7 +19516,7 @@
           "id": "yr9t3-2023-alg-q1ii",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Expand and simplify each of the following: (ii) \\(6x-5)(2x-5)\\",
+          "stem": "Expand and simplify: \\((6x-5)(2x-5)\\)",
           "options": [
             "\\(12x^2-20x+25\\)",
             "\\(12x^2-40x+25\\)",
@@ -22333,7 +22333,7 @@
           "id": "yr9t3-2023-alg-q1i",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Expand and simplify each of the following: (i) \\(3x+2)(3x-2)\\",
+          "stem": "Expand and simplify: \\((3x+2)(3x-2)\\)",
           "options": [
             "\\(9x^2-4\\)",
             "\\(9x^2+4\\)",
@@ -22376,7 +22376,7 @@
           "id": "yr9t3-2023-alg-q1iii",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Expand and simplify each of the following: (iii) \\(x+4)^2\\",
+          "stem": "Expand and simplify: \\((x+4)^2\\)",
           "options": [
             "\\(x^2+16\\)",
             "\\(x^2+4x+16\\)",

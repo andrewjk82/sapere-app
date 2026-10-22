@@ -313,7 +313,7 @@
           "id": "yr9t3-2023-par-q5i",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "For the equation \\(y=-4+(x-2)^2\\), state: (i) the transformations compared to \\(y=x^2\\).",
+          "stem": "For \\(y=-4+(x-2)^2\\), state the transformations compared with \\(y=x^2\\).",
           "options": [
             "Translated 2 units left and 4 units down",
             "Translated 4 units right and 2 units down",
@@ -356,7 +356,7 @@
           "id": "yr9t3-2023-par-q5ii",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "For the equation \\(y=-4+(x-2)^2\\), state: (ii) the coordinates of the turning point and its type.",
+          "stem": "For \\(y=-4+(x-2)^2\\), state the coordinates and type of the turning point.",
           "options": [
             "\\((2,-4)\\), minimum",
             "\\((-2,-4)\\), minimum",
@@ -399,7 +399,7 @@
           "id": "yr9t3-2023-par-q6i",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Write the rule after each set of transformations: (i) The graph of \\(y=x^2\\) is translated 4 units to the left, then 5 units up.",
+          "stem": "Write the rule after translating the graph of \\(y=x^2\\) 4 units left, then 5 units up.",
           "options": [
             "\\(y=(x-4)^2+5\\)",
             "\\(y=(x+4)^2+5\\)",
@@ -442,7 +442,7 @@
           "id": "yr9t3-2023-par-q6iii",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Write the rule after each set of transformations: (iii) The graph of \\(y=x^2\\) is reflected in the x-axis, translated 2 units to the right and then 3 units down.",
+          "stem": "Write the rule after reflecting the graph of \\(y=x^2\\) in the x-axis, translating it 2 units right, then 3 units down.",
           "options": [
             "\\(y=(x-2)^2-3\\)",
             "\\(y=-(x+2)^2-3\\)",
@@ -729,7 +729,7 @@
           "id": "yr9t3-2023-par-q8iii",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "A ball is dropped from a clifftop. The ball’s height, h metres, above the ground after t seconds is given by the equation \\(h=-4.9t^2+19.6\\). (iii) Explain the real world meaning of the h-axis intercept.",
+          "stem": "A ball is dropped from a clifftop. Its height, \\(h\\) metres, above the ground after \\(t\\) seconds is given by \\(h=-4.9t^2+19.6\\). Explain the real-world meaning of the h-axis intercept.",
           "options": [
             "It is the time taken for the ball to hit the ground, 19.6 seconds.",
             "It is the height when the ball hits the ground, 0 metres.",
@@ -772,7 +772,7 @@
           "id": "yr9t3-2023-par-q8iv",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "A ball is dropped from a clifftop. The ball’s height, h metres, above the ground after t seconds is given by the equation \\(h=-4.9t^2+19.6\\). (iv) Determine when the ball is 14.7 metres above the ground.",
+          "stem": "A ball is dropped from a clifftop. Its height, \\(h\\) metres, above the ground after \\(t\\) seconds is given by \\(h=-4.9t^2+19.6\\). Determine when the ball is 14.7 metres above the ground.",
           "options": [
             "\\(t=0.5\\text{ seconds}\\)",
             "\\(t=2\\text{ seconds}\\)",
@@ -1423,7 +1423,7 @@
           "id": "yr9t3-2023-par-q3i",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Solve each of the following quadratic equations. Give exact answers where appropriate: (i) \\(x^2-12x=0\\)",
+          "stem": "Solve the quadratic equation, giving an exact answer where appropriate: \\(x^2-12x=0\\)",
           "options": [
             "\\(x=0\\text{ or }x=-12\\)",
             "\\(x=12\\)",
@@ -1466,7 +1466,7 @@
           "id": "yr9t3-2023-par-q3ii",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Solve each of the following quadratic equations. Give exact answers where appropriate: (ii) \\(x^2-81=0\\)",
+          "stem": "Solve the quadratic equation, giving an exact answer where appropriate: \\(x^2-81=0\\)",
           "options": [
             "\\(x=\\pm9\\)",
             "\\(x=81\\text{ or }x=-81\\)",
@@ -1509,7 +1509,7 @@
           "id": "yr9t3-2023-par-q3iii",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Solve each of the following quadratic equations. Give exact answers where appropriate: (iii) \\(5x^2-50=0\\)",
+          "stem": "Solve the quadratic equation, giving an exact answer where appropriate: \\(5x^2-50=0\\)",
           "options": [
             "\\(x=\\pm10\\)",
             "\\(x=\\pm\\sqrt{10}\\)",
@@ -1552,7 +1552,7 @@
           "id": "yr9t3-2023-par-q3iv",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Solve each of the following quadratic equations. Give exact answers where appropriate: (iv) \\(4x(x+1)-x=3(x+3)\\)",
+          "stem": "Solve the quadratic equation, giving an exact answer where appropriate: \\(4x(x+1)-x=3(x+3)\\)",
           "options": [
             "\\(x=\\frac32\\)",
             "\\(x=\\pm3\\)",
@@ -1595,7 +1595,7 @@
           "id": "yr9t3-2023-par-q3v",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Solve each of the following quadratic equations. Give exact answers where appropriate: (v) \\(x^2-6x-16=0\\)",
+          "stem": "Solve the quadratic equation, giving an exact answer where appropriate: \\(x^2-6x-16=0\\)",
           "options": [
             "\\(x=-8\\text{ or }x=2\\)",
             "\\(x=8\\text{ or }x=2\\)",
@@ -1638,7 +1638,7 @@
           "id": "yr9t3-2023-par-q3vi",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Solve each of the following quadratic equations. Give exact answers where appropriate: (vi) \\(2(x-3)^2-32=0\\)",
+          "stem": "Solve the quadratic equation, giving an exact answer where appropriate: \\(2(x-3)^2-32=0\\)",
           "options": [
             "\\(x=7\\text{ or }x=-1\\)",
             "\\(x=5\\text{ or }x=1\\)",
@@ -1681,7 +1681,7 @@
           "id": "yr9t3-2023-par-q4i",
           "type": "review",
           "difficulty": "medium",
-          "stem": "Sketch the graphs of these rules plotting and labelling the y-intercept, the exact x-intercepts and the coordinates of the turning point. (i) \\(y=x^2-3\\)",
+          "stem": "Sketch the graph of \\(y=x^2-3\\), plotting and labelling its y-intercept, exact x-intercepts and turning point.",
           "answer": "Sample answer: The parabola opens upward, has y-intercept and turning point \\((0,-3)\\), and x-intercepts \\(( -\\sqrt3,0)\\) and \\((\\sqrt3,0)\\).",
           "hint": "Set \\(y=0\\) to find the x-intercepts; substitute \\(x=0\\) for the y-intercept. The vertex form shows the turning point.",
           "steps": [
@@ -1728,7 +1728,7 @@
           "id": "yr9t3-2023-par-q4ii",
           "type": "review",
           "difficulty": "medium",
-          "stem": "Sketch the graphs of these rules plotting and labelling the y-intercept, the exact x-intercepts and the coordinates of the turning point. (ii) \\(y=-2(x+1)^2-2\\)",
+          "stem": "Sketch the graph of \\(y=-2(x+1)^2-2\\), plotting and labelling its y-intercept, exact x-intercepts and turning point.",
           "answer": "Sample answer: The parabola opens downward, has turning point \\((-1,-2)\\), y-intercept \\((0,-4)\\), and no real x-intercepts.",
           "hint": "Read the turning point from vertex form, substitute x = 0 for the y-intercept, and test whether y can equal zero.",
           "steps": [
@@ -1775,7 +1775,7 @@
           "id": "yr9t3-2023-par-q8i",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "A ball is dropped from a clifftop. The ball’s height, h metres, above the ground after t seconds is given by the equation \\(h=-4.9t^2+19.6\\). (i) Find the intercepts for the graph of the equation \\(h=-4.9t^2+19.6\\), for \\(t\\ge0\\).",
+          "stem": "A ball is dropped from a clifftop. Its height, \\(h\\) metres, above the ground after \\(t\\) seconds is given by \\(h=-4.9t^2+19.6\\). Find the intercepts of the graph for \\(t\\ge0\\).",
           "options": [
             "h-axis: \\((0,19.6)\\); t-axis: \\((2,0)\\)",
             "h-axis: \\((0,0)\\); t-axis: \\((0,19.6)\\)",
@@ -1818,7 +1818,7 @@
           "id": "yr9t3-2023-par-q8ii",
           "type": "review",
           "difficulty": "medium",
-          "stem": "A ball is dropped from a clifftop. The ball’s height, h metres, above the ground after t seconds is given by the equation \\(h=-4.9t^2+19.6\\). (ii) Sketch the graph of \\(h=-4.9t^2+19.6\\) labelling the axis intercepts and turning point.",
+          "stem": "A ball is dropped from a clifftop. Its height, \\(h\\) metres, above the ground after \\(t\\) seconds is given by \\(h=-4.9t^2+19.6\\). Sketch the graph, labelling the axis intercepts and turning point.",
           "answer": "Sample answer: A downward-opening curve for \\(t\\ge0\\) from \\((0,19.6)\\) to \\((2,0)\\), with turning point \\((0,19.6)\\).",
           "hint": "Use the intercepts from the equation and note that the coefficient of t² is negative. The physical domain begins at t=0.",
           "steps": [

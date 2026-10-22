@@ -4484,7 +4484,7 @@
             "\\(\\$4,083.23\\)"
           ],
           "answer": 3,
-          "hint": "First calculate taxable income, then use the matching $37,001–$90,000 tax-table row.",
+          "hint": "Mary's taxable income is $38,573. Identify the tax bracket containing that amount, then apply its base tax and marginal rate.",
           "steps": [
             {
               "explain": "Calculate taxable income and select its tax-table bracket.",
@@ -4505,7 +4505,7 @@
           "keyPoints": [
             {
               "text": "$42,000",
-              "note": "First calculate taxable income, then use the matching $37,001–$90,000 tax-table row."
+              "note": "Use $38,573 from the taxable-income calculation to find the matching tax-table row."
             }
           ],
           "timeLimit": 60,
@@ -4695,7 +4695,7 @@
           "id": "yr9t3-2023-fm-q1i",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Find the interest earned on an investment of $45,000 if it is invested at: (i) 3.5% pa simple interest for 5 years",
+          "stem": "Find the interest earned on an investment of $45,000 if it is invested at 3.5% pa simple interest for 5 years.",
           "options": [
             "\\(\\$7,875\\)",
             "\\(\\$1,575\\)",
@@ -4915,7 +4915,7 @@
           "id": "yr9t3-2023-fm-q1ii",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Find the interest earned on an investment of $45,000 if it is invested at: (ii) 3.5% compound interest for 5 years, compounding annually",
+          "stem": "Find the interest earned on an investment of $45,000 if it is invested at 3.5% compound interest for 5 years, compounding annually.",
           "options": [
             "\\(\\$7,875.00\\)",
             "\\(\\$8,445.88\\)",

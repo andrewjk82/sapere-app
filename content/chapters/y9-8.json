@@ -6137,7 +6137,7 @@
           "id": "yr9t3-2023-si-q1i",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Simplify the following expressions: (i) \\(6x^2y^5\\times7x^3y^4\\)",
+          "stem": "Simplify: \\(6x^2y^5\\times7x^3y^4\\)",
           "options": [
             "\\(42x^5y^9\\)",
             "\\(42x^6y^9\\)",
@@ -6180,7 +6180,7 @@
           "id": "yr9t3-2023-si-q1ii",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Simplify the following expressions: (ii) \\(\\frac{72x^4y^4z^3}{8x^3y^2z}\\)",
+          "stem": "Simplify: \\(\\frac{72x^4y^4z^3}{8x^3y^2z}\\)",
           "options": [
             "\\(9x y^2z^3\\)",
             "\\(9xy^2z^2\\)",
@@ -6223,7 +6223,7 @@
           "id": "yr9t3-2023-si-q1iii",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Simplify the following expressions: (iii) \\(2m^2n^6\\div\\frac{6m^2}{n^2}\\)",
+          "stem": "Simplify: \\(2m^2n^6\\div\\frac{6m^2}{n^2}\\)",
           "options": [
             "\\(\\frac{n^4}{3}\\)",
             "\\(3n^8\\)",
@@ -6266,7 +6266,7 @@
           "id": "yr9t3-2023-si-q1iv",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Simplify the following expressions: (iv) \\(\\left(\\frac{m^3}{n^2}\\right)^{-3}\\times m^2\\)",
+          "stem": "Simplify: \\(\\left(\\frac{m^3}{n^2}\\right)^{-3}\\times m^2\\)",
           "options": [
             "\\(\\frac{m^{11}}{n^6}\\)",
             "\\(\\frac{n^6}{m^9}\\)",
@@ -6309,7 +6309,7 @@
           "id": "yr9t3-2023-si-q1v",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Simplify the following expressions: (v) \\(\\frac{(y^3)^0}{3}\\)",
+          "stem": "Simplify: \\(\\frac{(y^3)^0}{3}\\)",
           "options": [
             "\\(\\frac13\\)",
             "\\(0\\)",
@@ -6352,7 +6352,7 @@
           "id": "yr9t3-2023-si-q1vi",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Simplify the following expressions: (vi) \\(\\frac{-3(2^4b^3)^3}{(-2^3b)^4}\\)",
+          "stem": "Simplify: \\(\\frac{-3(2^4b^3)^3}{(-2^3b)^4}\\)",
           "options": [
             "\\(3b^5\\)",
             "\\(-3b^5\\)",
@@ -6395,7 +6395,7 @@
           "id": "yr9t3-2023-si-q8i",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Solve each of the following, show all working: (i) \\(2^x=64\\)",
+          "stem": "Solve the equation, showing all working: \\(2^x=64\\)",
           "options": [
             "\\(x=6\\)",
             "\\(x=5\\)",
@@ -6438,7 +6438,7 @@
           "id": "yr9t3-2023-si-q8ii",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Solve each of the following, show all working: (ii) \\(9^x=27\\)",
+          "stem": "Solve the equation, showing all working: \\(9^x=27\\)",
           "options": [
             "\\(x=3\\)",
             "\\(x=\\frac32\\)",
@@ -6553,7 +6553,7 @@
           "id": "yr9t3-2023-si-q2i",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Express using positive indices only: (i) \\(\\frac{9h^{-2}}{b}\\)",
+          "stem": "Express using positive indices only: \\(\\frac{9h^{-2}}{b}\\)",
           "options": [
             "\\(\\frac{9h^2}{b}\\)",
             "\\(\\frac{9b}{h^2}\\)",
@@ -6596,7 +6596,7 @@
           "id": "yr9t3-2023-si-q2ii",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Express using positive indices only: (ii) \\(\\frac{4h^2k^5}{5^{-1}h^{-3}k^4}\\)",
+          "stem": "Express using positive indices only: \\(\\frac{4h^2k^5}{5^{-1}h^{-3}k^4}\\)",
           "options": [
             "\\(\\frac{4h^5k}{5}\\)",
             "\\(20h^{-1}k\\)",
@@ -6789,7 +6789,7 @@
           "id": "yr9t3-2023-si-q6i",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Evaluate without the use of a calculator, show all working: (i) \\(27^{2/3}\\)",
+          "stem": "Evaluate without a calculator, showing all working: \\(27^{2/3}\\)",
           "options": [
             "\\(6\\)",
             "\\(9\\)",
@@ -6832,7 +6832,7 @@
           "id": "yr9t3-2023-si-q6ii",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Evaluate without the use of a calculator, show all working: (ii) \\(\\left(\\frac94\\right)^{-1/2}\\)",
+          "stem": "Evaluate without a calculator, showing all working: \\(\\left(\\frac94\\right)^{-1/2}\\)",
           "options": [
             "\\(\\frac32\\)",
             "\\(\\frac49\\)",
@@ -7114,7 +7114,7 @@
           "id": "yr9t3-2023-si-q3i",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Express each of the following in scientific notation rounded to 3 significant figures: (i) 45 864 000",
+          "stem": "Express in scientific notation, rounded to 3 significant figures: \\(45\\,864\\,000\\)",
           "options": [
             "\\(4.59\\times10^7\\)",
             "\\(4.58\\times10^7\\)",
@@ -7157,7 +7157,7 @@
           "id": "yr9t3-2023-si-q3ii",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Express each of the following in scientific notation rounded to 3 significant figures: (ii) 0.004998",
+          "stem": "Express in scientific notation, rounded to 3 significant figures: \\(0.004998\\)",
           "options": [
             "\\(4.99\\times10^{-3}\\)",
             "\\(5.00\\times10^{-3}\\)",
@@ -7200,7 +7200,7 @@
           "id": "yr9t3-2023-si-q4i",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Express each of the following as a basic numeral: (i) \\(9.3\\times10^{-7}\\)",
+          "stem": "Express as a basic numeral: \\(9.3\\times10^{-7}\\)",
           "options": [
             "\\(0.0000093\\)",
             "\\(0.000000093\\)",
@@ -7243,7 +7243,7 @@
           "id": "yr9t3-2023-si-q4ii",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Express each of the following as a basic numeral: (ii) \\(1.523\\times10^9\\)",
+          "stem": "Express as a basic numeral: \\(1.523\\times10^9\\)",
           "options": [
             "\\(152,300,000\\)",
             "\\(15,230,000,000\\)",

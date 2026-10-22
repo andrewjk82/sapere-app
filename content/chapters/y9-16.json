@@ -3572,7 +3572,7 @@
           "id": "yr9t3-2023-meas-q1i",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Find the surface area of each the following closed solids, correct to 2 decimal places where necessary: (i)",
+          "stem": "Find the surface area of the closed solid, correct to 2 decimal places where necessary.",
           "options": [
             "\\(276\\text{ cm}^2\\)",
             "\\(326\\text{ cm}^3\\)",
@@ -3627,7 +3627,7 @@
           "id": "yr9t3-2023-meas-q1iii",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Find the surface area of each the following closed solids, correct to 2 decimal places where necessary: (iii)",
+          "stem": "Find the surface area of the closed solid, correct to 2 decimal places where necessary.",
           "options": [
             "\\(564\\text{ cm}^2\\)",
             "\\(384\\text{ cm}^2\\)",
@@ -4366,7 +4366,7 @@
           "id": "yr9t3-2023-meas-q1ii",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Find the surface area of each the following closed solids, correct to 2 decimal places where necessary: (ii)",
+          "stem": "Find the surface area of the closed solid, correct to 2 decimal places where necessary.",
           "options": [
             "\\(1,879.16\\text{ m}^2\\)",
             "\\(1,154.54\\text{ cm}^2\\)",
@@ -10594,7 +10594,7 @@
           "id": "yr9t3-2023-meas-q2i",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Find the volume of the following solids, correct to 1 decimal place where necessary: (i)",
+          "stem": "Find the volume of the solid, correct to 1 decimal place where necessary.",
           "options": [
             "\\(4,368\\text{ cm}^3\\)",
             "\\(2,184\\text{ cm}^3\\)",
@@ -10649,7 +10649,7 @@
           "id": "yr9t3-2023-meas-q2ii",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Find the volume of the following solids, correct to 1 decimal place where necessary: (ii)",
+          "stem": "Find the volume of the solid, correct to 1 decimal place where necessary.",
           "options": [
             "\\(5,899.5\\text{ cm}^3\\)",
             "\\(2,314.2\\text{ cm}^3\\)",
