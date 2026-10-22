@@ -3887,33 +3887,33 @@
           "id": "abb-y10-2025-t4-e1-q4a",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "The height of a toy plane is described by the equation h = 7 + 12t − 4t², where h is the height in metres above the ground and t is the time in minutes. Determine the coordinates of the vertex of this equation.",
+          "stem": "The height of a toy plane is described by the equation \\(h=7+12t-4t^2\\), where \\(h\\) is the height in metres above the ground and \\(t\\) is the time in minutes. Determine the coordinates of the vertex of this equation.",
           "options": [
-            "(3/2,16)",
-            "(−3/2,16)",
-            "(3/2,7)",
-            "(−12,16)"
+            "\\((\\frac{3}{2},16)\\)",
+            "\\((-\\frac{3}{2},16)\\)",
+            "\\((\\frac{3}{2},7)\\)",
+            "\\((-12,16)\\)"
           ],
           "answer": 0,
-          "hint": "For h=at²+bt+c, the vertex time is t=−b/(2a). Substitute it back into h.",
+          "hint": "For \\(h=at^2+bt+c\\), the vertex time is \\(t=-\\frac{b}{2a}\\). Substitute this value back into \\(h\\).",
           "steps": [
             {
-              "explain": "Identify a=−4 and b=12; calculate the vertex time.",
-              "work": "t=−12/[2(−4)]=3/2"
+              "explain": "Identify \\(a=-4\\) and \\(b=12\\); calculate the vertex time.",
+              "work": "\\(t=-\\frac{b}{2a}=-\\frac{12}{2(-4)}=\\frac{3}{2}\\)"
             },
             {
-              "explain": "Substitute t=3/2.",
-              "work": "h=7+12(3/2)−4(3/2)²=7+18−9=16"
+              "explain": "Substitute \\(t=\\frac{3}{2}\\) into the height equation.",
+              "work": "\\(h=7+12\\left(\\frac{3}{2}\\right)-4\\left(\\frac{3}{2}\\right)^2\\)\n\\(=7+18-9=16\\)"
             },
             {
-              "explain": "Write (time,height).",
-              "work": "Vertex=(3/2,16)"
+              "explain": "Write the vertex as (time, height).",
+              "work": "\\(\\text{Vertex}=\\left(\\frac{3}{2},16\\right)\\)"
             }
           ],
           "keyPoints": [
             {
               "text": "coordinates of the vertex",
-              "note": "Find t=−b/(2a), then substitute to find the corresponding height."
+              "note": "Find \\(t=-\\frac{b}{2a}\\), then substitute that time to find the corresponding height."
             }
           ],
           "timeLimit": 60,

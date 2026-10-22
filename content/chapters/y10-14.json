@@ -3072,32 +3072,32 @@
           "id": "abb-y10-2025-t4-e1-q7",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Given log₃ x = a, find an expression for log₃(x⁴/27) in terms of a. Give your answer in its simplest form.",
+          "stem": "Given \\(\\log_3 x=a\\), find an expression for \\(\\log_3\\left(\\frac{x^4}{27}\\right)\\) in terms of \\(a\\). Give your answer in its simplest form.",
           "options": [
-            "4a−3",
-            "4a+3",
-            "a/4−3",
-            "4a−1"
+            "\\(4a-3\\)",
+            "\\(4a+3\\)",
+            "\\(\\frac{a}{4}-3\\)",
+            "\\(4a-1\\)"
           ],
           "answer": 0,
-          "hint": "Use the quotient and power rules; write 27 as 3³.",
+          "hint": "Use the quotient and power rules; write \\(27=3^3\\).",
           "steps": [
             {
-              "explain": "Apply the quotient rule.",
-              "work": "log₃(x⁴/27)=log₃(x⁴)−log₃27"
+              "explain": "Apply the quotient rule to separate the numerator and denominator.",
+              "work": "\\(\\log_3\\left(\\frac{x^4}{27}\\right)=\\log_3(x^4)-\\log_3(27)\\)"
             },
             {
-              "explain": "Apply the power rule and use 27=3³.",
-              "work": "=4log₃x−log₃(3³)"
+              "explain": "Apply the power rule and rewrite \\(27\\) as \\(3^3\\).",
+              "work": "\\(=4\\log_3(x)-\\log_3(3^3)\\)"
             },
             {
-              "explain": "Substitute log₃x=a.",
-              "work": "=4a−3"
+              "explain": "Substitute \\(\\log_3 x=a\\) and simplify.",
+              "work": "\\(=4a-3\\)"
             }
           ],
           "keyPoints": [
             {
-              "text": "log₃ x = a",
+              "text": "Given \\(\\log_3 x=a\\)",
               "note": "Use the quotient and power rules."
             }
           ],

@@ -285,32 +285,32 @@
           "id": "abb-y10-2025-t4-e1-q5",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "If f(θ) = 2√3 cosθ tanθ + √3 tanθ − 2 cosθ − 1, solve f(θ)=0 for 0° ≤ θ ≤ 360°, by initially factorising f(θ).",
+          "stem": "If \\(f(\\theta)=2\\sqrt3\\cos\\theta\\tan\\theta+\\sqrt3\\tan\\theta-2\\cos\\theta-1\\), solve \\(f(\\theta)=0\\) for \\(0^\\circ\\leq\\theta\\leq360^\\circ\\), by initially factorising \\(f(\\theta)\\).",
           "options": [
-            "θ=30°,120°,210°,240°",
-            "θ=30°,150°,210°,330°",
-            "θ=60°,120°,240°,300°",
-            "θ=30°,120°"
+            "\\(\\theta=30^\\circ,120^\\circ,210^\\circ,240^\\circ\\)",
+            "\\(\\theta=30^\\circ,150^\\circ,210^\\circ,330^\\circ\\)",
+            "\\(\\theta=60^\\circ,120^\\circ,240^\\circ,300^\\circ\\)",
+            "\\(\\theta=30^\\circ,120^\\circ\\)"
           ],
           "answer": 0,
-          "hint": "Group terms to expose the factor 2cosθ+1, then solve both factors.",
+          "hint": "Group terms to expose the factor \\(2\\cos\\theta+1\\), then solve each factor over the full interval.",
           "steps": [
             {
-              "explain": "Group the terms.",
-              "work": "f(θ)=√3tanθ(2cosθ+1)−(2cosθ+1)"
+              "explain": "Group the first two terms and the last two terms to reveal a common factor.",
+              "work": "\\(f(\\theta)=(2\\sqrt3\\cos\\theta\\tan\\theta+\\sqrt3\\tan\\theta)-(2\\cos\\theta+1)\\)\n\\(=\\sqrt3\\tan\\theta(2\\cos\\theta+1)-(2\\cos\\theta+1)\\)"
             },
             {
-              "explain": "Factor and set each factor to zero.",
-              "work": "(2cosθ+1)(√3tanθ−1)=0"
+              "explain": "Factor out the common bracket, then use the zero-product rule.",
+              "work": "\\(f(\\theta)=(2\\cos\\theta+1)(\\sqrt3\\tan\\theta-1)\\)\n\\((2\\cos\\theta+1)(\\sqrt3\\tan\\theta-1)=0\\)"
             },
             {
-              "explain": "List solutions in the interval.",
-              "work": "cosθ=−1/2: θ=120°,240°; tanθ=1/√3: θ=30°,210°"
+              "explain": "Solve each factor and list only angles in \\(0^\\circ\\leq\\theta\\leq360^\\circ\\).",
+              "work": "\\(2\\cos\\theta+1=0\\Rightarrow\\cos\\theta=-\\frac12\\Rightarrow\\theta=120^\\circ,240^\\circ\\)\n\\(\\sqrt3\\tan\\theta-1=0\\Rightarrow\\tan\\theta=\\frac1{\\sqrt3}\\Rightarrow\\theta=30^\\circ,210^\\circ\\)\n\\(\\therefore\\theta=30^\\circ,120^\\circ,210^\\circ,240^\\circ\\)"
             }
           ],
           "keyPoints": [
             {
-              "text": "initially factorising f(θ)",
+              "text": "initially factorising \\(f(\\theta)\\)",
               "note": "Factor first, then solve each trigonometric equation over the full interval."
             }
           ],
@@ -326,33 +326,33 @@
           "id": "abb-y10-2025-t4-e2-q1",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Solve sin θ = √3/2, for 0 ≤ θ ≤ 360.",
+          "stem": "Solve \\(\\sin\\theta=\\frac{\\sqrt3}{2}\\), for \\(0^\\circ\\leq\\theta\\leq360^\\circ\\).",
           "options": [
-            "θ=60° or 120°",
-            "θ=60° or 300°",
-            "θ=120° or 240°",
-            "θ=240° only"
+            "\\(\\theta=60^\\circ\\text{ or }120^\\circ\\)",
+            "\\(\\theta=60^\\circ\\text{ or }300^\\circ\\)",
+            "\\(\\theta=120^\\circ\\text{ or }240^\\circ\\)",
+            "\\(\\theta=240^\\circ\\text{ only}\\)"
           ],
           "answer": 0,
-          "hint": "The reference angle is 60°. Sine is positive in Quadrants I and II.",
+          "hint": "The reference angle is \\(60^\\circ\\). Sine is positive in Quadrants I and II.",
           "steps": [
             {
-              "explain": "Identify the reference angle.",
-              "work": "sin60°=√3/2"
+              "explain": "Identify the reference angle from the exact sine value.",
+              "work": "\\(\\sin60^\\circ=\\frac{\\sqrt3}{2}\\quad\\Rightarrow\\quad\\text{reference angle}=60^\\circ\\)"
             },
             {
-              "explain": "Use the positive-sine quadrants.",
-              "work": "QI: θ=60°; QII: θ=180°−60°=120°"
+              "explain": "Sine is positive in Quadrants I and II. Use the reference angle in both quadrants.",
+              "work": "\\(\\text{QI: }\\theta=60^\\circ\\)\n\\(\\text{QII: }\\theta=180^\\circ-60^\\circ=120^\\circ\\)"
             },
             {
-              "explain": "State both solutions.",
-              "work": "θ=60° or 120°"
+              "explain": "State both solutions in the given interval.",
+              "work": "\\(\\theta=60^\\circ\\text{ or }120^\\circ\\)"
             }
           ],
           "keyPoints": [
             {
-              "text": "0 ≤ θ ≤ 360",
-              "note": "The reference angle is 60°. Sine is positive in Quadrants I and II."
+              "text": "\\(0^\\circ\\leq\\theta\\leq360^\\circ\\)",
+              "note": "The reference angle is \\(60^\\circ\\). Sine is positive in Quadrants I and II."
             }
           ],
           "timeLimit": 60,
