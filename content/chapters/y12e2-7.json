@@ -187,6 +187,51 @@
               "note": "Use ẍ = d/dx(½v²); v² = (2x² + 9)². Then separate dx/dt = 2x² + 9."
             }
           ]
+        },
+        {
+          "id": "bhhs2020-ext2-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "A constant force of magnitude \\(F\\) Newtons accelerates a particle of mass 2 kg in a straight line from rest to 12 m/s over a distance of 16 metres.\nIt follows that;",
+          "hint": "Use ẍ = v dv/dx since distance is given; F = ma.",
+          "steps": [
+            {
+              "explain": "Newton's second law with \\(\\ddot x=v\\frac{dv}{dx}\\) (the data involve distance, not time).",
+              "work": "\\(m\\ddot x=F\\ \\Rightarrow\\ v\\frac{dv}{dx}=\\frac{F}{2}\\)"
+            },
+            {
+              "explain": "Separate and integrate from rest (\\(x=0\\), \\(v=0\\)) to \\(x=16\\), \\(v=12\\).",
+              "work": "\\(\\int_0^{12}v\\,dv=\\frac{F}{2}\\int_0^{16}dx\\ \\Rightarrow\\ \\frac{144}{2}=\\frac{F}{2}\\cdot16\\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\(72=8F\\ \\Rightarrow\\ F=9\\)"
+            },
+            {
+              "explain": "Check: acceleration \\(4.5\\) m/s², and \\(v^2=2\\times4.5\\times16=144\\) ✓. 4.5 is the acceleration, not the force."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills 2020 4U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "5"
+          },
+          "options": [
+            "\\(F=4.5\\)",
+            "\\(F=9\\)",
+            "\\(F=12\\)",
+            "\\(F=18\\)"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "over a distance of 16 metres",
+              "note": "Distance (not time) is given, so use ẍ = v dv/dx."
+            }
+          ]
         }
       ]
     },
@@ -586,6 +631,173 @@
                 {
                   "text": "simple harmonic motion",
                   "note": "SHM means ẍ = −n²(x − c), a linear relationship. Is 4x³ − 12x linear?"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bhhs2020-ext2-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "Which of the following statements is true when an object performs simple harmonic motion about a central point \\(O\\)?",
+          "hint": "SHM: ẍ = −n²x. What kind of graph is that?",
+          "steps": [
+            {
+              "explain": "SHM about \\(O\\) means",
+              "work": "\\(\\ddot x=-n^2x\\)"
+            },
+            {
+              "explain": "This is a linear function of \\(x\\) (gradient \\(-n^2\\), through the origin), so the graph of acceleration against displacement is a straight line: D."
+            },
+            {
+              "explain": "The minus sign means the acceleration always points towards \\(O\\) (opposite to the displacement), so A and C are false. Velocity and acceleration are opposite only while moving away from \\(O\\), not always, so B is false."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills 2020 4U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "2"
+          },
+          "options": [
+            "the acceleration is always directed away from \\(O\\)",
+            "the acceleration and velocity are always in opposite directions",
+            "the acceleration and displacement from \\(O\\) are always in the same direction",
+            "the graph of acceleration against displacement is a straight line"
+          ],
+          "answer": 3,
+          "keyPoints": [
+            {
+              "text": "simple harmonic motion about a central point \\(O\\)",
+              "note": "ẍ = −n²x: linear in x and always directed towards O."
+            }
+          ]
+        },
+        {
+          "id": "bhhs2020-ext2-q12d",
+          "type": "multipart",
+          "stem": "A particle is travelling in simple harmonic motion such that\n\\(\\ddot{x}=-4x\\)\nwhere \\(x\\) represents the displacement from the origin in metres.",
+          "meta": {
+            "source": "Baulkham Hills 2020 4U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "12(d)"
+          },
+          "parts": [
+            {
+              "id": "bhhs2020-ext2-q12d-i",
+              "type": "review",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Show that \\(x=\\alpha\\cos(2t+\\beta)\\) is a possible equation for the displacement of the particle, where \\(\\alpha\\) and \\(\\beta\\) are constants and \\(t\\) represents time in seconds.",
+              "hint": "Differentiate twice and compare with −4x.",
+              "steps": [
+                {
+                  "explain": "Differentiate once.",
+                  "work": "\\(\\dot x=-2\\alpha\\sin(2t+\\beta)\\)"
+                },
+                {
+                  "explain": "Differentiate again.",
+                  "work": "\\(\\ddot x=-4\\alpha\\cos(2t+\\beta)=-4x\\)"
+                },
+                {
+                  "explain": "This is the given equation, so \\(x=\\alpha\\cos(2t+\\beta)\\) is a possible displacement."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "12(d)(i)"
+              },
+              "answer": "\\(\\dot x=-2\\alpha\\sin(2t+\\beta)\\), \\(\\ddot x=-4\\alpha\\cos(2t+\\beta)=-4x\\), so it satisfies ẍ = −4x.",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Show that",
+                  "note": "Differentiate x twice and show ẍ = −4x."
+                }
+              ]
+            },
+            {
+              "id": "bhhs2020-ext2-q12d-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "The particle is initially observed to have a velocity of 2 m/s at a displacement of 4 metres from the origin. Find the amplitude of the motion.",
+              "hint": "Use v² = n²(a² − x²) with n = 2, x = 4, v = 2.",
+              "steps": [
+                {
+                  "explain": "At \\(t=0\\): \\(x=4\\) and \\(\\dot x=2\\).",
+                  "work": "\\(4=\\alpha\\cos\\beta,\\qquad2=-2\\alpha\\sin\\beta\\Rightarrow-1=\\alpha\\sin\\beta\\)"
+                },
+                {
+                  "explain": "Square and add to remove \\(\\beta\\).",
+                  "work": "\\(\\alpha^2\\cos^2\\beta+\\alpha^2\\sin^2\\beta=16+1\\ \\Rightarrow\\ \\alpha^2=17\\)"
+                },
+                {
+                  "explain": "So the amplitude is \\(\\sqrt{17}\\) m. Check with \\(v^2=n^2(a^2-x^2)\\): \\(4=4(a^2-16)\\Rightarrow a^2=17\\) ✓."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "12(d)(ii)"
+              },
+              "options": [
+                "\\(4\\) m",
+                "\\(\\sqrt{20}\\) m",
+                "\\(5\\) m",
+                "\\(\\sqrt{17}\\) m"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "Find the amplitude of the motion",
+                  "note": "v² = n²(a² − x²) with n² = 4."
+                }
+              ]
+            },
+            {
+              "id": "bhhs2020-ext2-q12d-iii",
+              "type": "mc",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Determine the maximum speed of the particle.",
+              "hint": "Maximum speed = n × amplitude.",
+              "steps": [
+                {
+                  "explain": "\\(|\\dot x|=2\\sqrt{17}|\\sin(2t+\\beta)|\\le2\\sqrt{17}\\).",
+                  "work": "\\(v_{\\max}=n\\alpha=2\\sqrt{17}\\ \\text{m/s}\\)"
+                },
+                {
+                  "explain": "Maximum speed occurs at the centre \\(x=0\\)."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "12(d)(iii)"
+              },
+              "options": [
+                "\\(4\\sqrt{17}\\) m/s",
+                "\\(2\\) m/s",
+                "\\(2\\sqrt{17}\\) m/s",
+                "\\(\\sqrt{17}\\) m/s"
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "maximum speed",
+                  "note": "v_max = na with n = 2 and a = √17."
                 }
               ]
             }
@@ -1015,6 +1227,101 @@
               "note": "Substitute \\(v=V/2\\) into the speed-distance relation and solve the exponential equation."
             }
           ]
+        },
+        {
+          "id": "bhhs2020-ext2-q14b",
+          "type": "multipart",
+          "stem": "A particle of mass \\(m\\) kg is projected vertically with an initial velocity of \\(u\\) m/s.\nIt experiences a force due to air resistance that is equal to \\(\\frac{mv^2g}{u^2}\\) Newtons, where \\(v\\) is the velocity of the particle and \\(g\\) is the acceleration due to gravity.",
+          "meta": {
+            "source": "Baulkham Hills 2020 4U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "14(b)"
+          },
+          "parts": [
+            {
+              "id": "bhhs2020-ext2-q14b-i",
+              "type": "mc",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Find the time taken for the particle to reach its maximum height in terms of \\(u\\) and \\(g\\).",
+              "hint": "Up positive: dv/dt = −(g/u²)(u² + v²); integrate from v = u to v = 0.",
+              "steps": [
+                {
+                  "explain": "On the way up both gravity and resistance act downwards (up is positive).",
+                  "work": "\\(m\\ddot x=-mg-\\frac{mv^2g}{u^2}\\ \\Rightarrow\\ \\frac{dv}{dt}=-\\frac{g}{u^2}\\left(u^2+v^2\\right)\\)"
+                },
+                {
+                  "explain": "Separate: time from \\(v=u\\) to \\(v=0\\).",
+                  "work": "\\(T=\\int_0^Tdt=-\\frac{u^2}{g}\\int_u^0\\frac{dv}{u^2+v^2}\\)"
+                },
+                {
+                  "explain": "Integrate.",
+                  "work": "\\(T=-\\frac{u^2}{g}\\left[\\frac1u\\tan^{-1}\\frac{v}{u}\\right]_u^0=-\\frac{u}{g}\\left(0-\\frac{\\pi}{4}\\right)=\\frac{\\pi u}{4g}\\)"
+                },
+                {
+                  "explain": "Check: this is less than \\(\\frac ug\\) (no resistance), as expected."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "14(b)(i)"
+              },
+              "options": [
+                "\\(\\frac{u}{g}\\)",
+                "\\(\\frac{\\pi u}{2g}\\)",
+                "\\(\\frac{u\\ln2}{g}\\)",
+                "\\(\\frac{\\pi u}{4g}\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "time taken for the particle to reach its maximum height",
+                  "note": "Both forces act downwards on the way up. Integrate dt = dv / (dv/dt) from v = u to 0."
+                }
+              ]
+            },
+            {
+              "id": "bhhs2020-ext2-q14b-ii",
+              "type": "review",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Show that the maximum height reached by the particle is given by\n\n\\(H=\\frac{u^2\\ln2}{2g}\\)",
+              "hint": "Use ẍ = v dv/dx and integrate from v = u to v = 0.",
+              "steps": [
+                {
+                  "explain": "For height (distance), use \\(\\ddot x=v\\frac{dv}{dx}\\).",
+                  "work": "\\(v\\frac{dv}{dx}=-\\frac{g}{u^2}\\left(u^2+v^2\\right)\\ \\Rightarrow\\ dx=-\\frac{u^2}{g}\\cdot\\frac{v\\,dv}{u^2+v^2}\\)"
+                },
+                {
+                  "explain": "Integrate from \\(v=u\\) (\\(x=0\\)) to \\(v=0\\) (\\(x=H\\)).",
+                  "work": "\\(H=-\\frac{u^2}{2g}\\int_u^0\\frac{2v\\,dv}{u^2+v^2}=-\\frac{u^2}{2g}\\Bigl[\\ln\\left(u^2+v^2\\right)\\Bigr]_u^0\\)"
+                },
+                {
+                  "explain": "Evaluate.",
+                  "work": "\\(H=-\\frac{u^2}{2g}\\left(\\ln u^2-\\ln2u^2\\right)=-\\frac{u^2}{2g}\\ln\\frac12=\\frac{u^2\\ln2}{2g}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "14(b)(ii)"
+              },
+              "answer": "\\(v\\frac{dv}{dx}=-\\frac{g}{u^2}(u^2+v^2)\\Rightarrow H=-\\frac{u^2}{g}\\int_u^0\\frac{v\\,dv}{u^2+v^2}=-\\frac{u^2}{2g}\\left[\\ln(u^2+v^2)\\right]_u^0=-\\frac{u^2}{2g}(\\ln u^2-\\ln2u^2)=\\frac{u^2\\ln2}{2g}\\).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Show that the maximum height",
+                  "note": "Height involves distance, so use ẍ = v dv/dx."
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1068,6 +1375,136 @@
             {
               "text": "from a height 1.8 m above ground",
               "note": "Start y at 1.8 (not 0). Use θ = 45° and the landing point x = 1.5, y = 0."
+            }
+          ]
+        },
+        {
+          "id": "bhhs2020-ext2-q15d",
+          "type": "multipart",
+          "stem": "The points \\(O\\) and \\(B\\) lie in a horizontal field. The point \\(B\\) lies 50 metres east of \\(O\\).\nA particle is projected from \\(B\\) at speed 25 m/s at an angle \\(\\alpha=\\tan^{-1}\\frac12\\) above the horizontal and on a bearing of \\(330^\\circ\\) from \\(B\\); it passes to the north of \\(O\\).\n\nIn this question you may assume the trajectory of a projectile fired with speed \\(V\\) m/s at an angle of \\(\\theta\\) to the horizontal is represented by the parametric equations\n\\(x=Vt\\cos\\theta\\) and \\(y=Vt\\sin\\theta-5t^2\\)\n(Do NOT prove these results)",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 260\" width=\"320\" height=\"260\"><defs><marker id=\"ah1e293b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#1e293b\"/></marker></defs><rect width=\"320\" height=\"260\" rx=\"8\" fill=\"white\"/><line x1=\"30.0\" y1=\"220.0\" x2=\"300.0\" y2=\"220.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><line x1=\"60.0\" y1=\"238.0\" x2=\"160.0\" y2=\"80.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><text x=\"162.0\" y=\"80.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">N</text><text x=\"42.3\" y=\"214.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">O</text><text x=\"225.0\" y=\"238.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"150.0\" y=\"238.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">50 metres</text><line x1=\"230.0\" y1=\"220.0\" x2=\"145.0\" y2=\"72.8\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"190.0\" y=\"210.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">60°</text><path d=\"M230.0 220.0Q190.0 -97.2 145.0 72.8\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><line x1=\"230.0\" y1=\"220.0\" x2=\"212.0\" y2=\"70.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/></svg>"
+          },
+          "meta": {
+            "source": "Baulkham Hills 2020 4U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "15(d)"
+          },
+          "parts": [
+            {
+              "id": "bhhs2020-ext2-q15d-i",
+              "type": "review",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Taking unit vectors \\(\\mathbf{i}\\), \\(\\mathbf{j}\\) and \\(\\mathbf{k}\\) in the directions east, north and vertically upwards, show that the position vector, \\(\\overrightarrow{OP}\\), of the particle is given by\n\n\\(\\left(50-5\\sqrt5\\,t\\right)\\mathbf{i}+5\\sqrt{15}\\,t\\,\\mathbf{j}+\\left(5\\sqrt5\\,t-5t^2\\right)\\mathbf{k}\\)",
+              "hint": "Find cos α, sin α; resolve the horizontal distance at bearing 330° into west and north parts.",
+              "steps": [
+                {
+                  "explain": "From \\(\\tan\\alpha=\\frac12\\): \\(\\cos\\alpha=\\frac{2}{\\sqrt5}\\), \\(\\sin\\alpha=\\frac{1}{\\sqrt5}\\).",
+                  "work": "\\(\\text{horizontal}=25t\\cdot\\tfrac{2}{\\sqrt5}=10\\sqrt5\\,t,\\qquad\\text{vertical}=25t\\cdot\\tfrac{1}{\\sqrt5}-5t^2=5\\sqrt5\\,t-5t^2\\)"
+                },
+                {
+                  "explain": "A bearing of \\(330^\\circ\\) points \\(30^\\circ\\) west of north, i.e. \\(60^\\circ\\) from the westward direction. Split the horizontal distance into west and north parts.",
+                  "work": "\\(\\text{west}=10\\sqrt5\\,t\\cos60^\\circ=5\\sqrt5\\,t,\\qquad\\text{north}=10\\sqrt5\\,t\\sin60^\\circ=5\\sqrt{15}\\,t\\)"
+                },
+                {
+                  "explain": "Measure from \\(O\\): \\(B\\) is 50 m east, and moving west reduces the east coordinate.",
+                  "work": "\\(\\overrightarrow{OP}=\\left(50-5\\sqrt5\\,t\\right)\\mathbf{i}+5\\sqrt{15}\\,t\\,\\mathbf{j}+\\left(5\\sqrt5\\,t-5t^2\\right)\\mathbf{k}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "15(d)(i)"
+              },
+              "answer": "tan α = 1/2 ⇒ cos α = 2/√5, sin α = 1/√5. Horizontal distance 25t cos α = 10√5 t; height 25t sin α − 5t² = 5√5 t − 5t². Bearing 330° from B is 60° west of north… i.e. the horizontal direction makes 60° with the westward direction: west component 10√5 t cos 60° = 5√5 t, north component 10√5 t sin 60° = 5√15 t. From O: x = 50 − 5√5 t, y = 5√15 t, z = 5√5 t − 5t².",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "show that the position vector",
+                  "note": "Bearing 330° is 60° from due west: west part × cos 60°, north part × sin 60°."
+                }
+              ]
+            },
+            {
+              "id": "bhhs2020-ext2-q15d-ii",
+              "type": "review",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Show that \\(\\left|\\overrightarrow{OP}\\right|=5\\left(t^2-\\sqrt5\\,t+10\\right)\\)",
+              "hint": "Compute |OP|² and recognise it as 25(t² − √5t + 10)².",
+              "steps": [
+                {
+                  "explain": "Take out the common factor 5 from each component.",
+                  "work": "\\(\\left|\\overrightarrow{OP}\\right|^2=25\\left[\\left(10-\\sqrt5t\\right)^2+15t^2+\\left(\\sqrt5t-t^2\\right)^2\\right]\\)"
+                },
+                {
+                  "explain": "Expand inside the bracket.",
+                  "work": "\\(=25\\left[100-20\\sqrt5t+5t^2+15t^2+5t^2-2\\sqrt5t^3+t^4\\right]=25\\left[t^4-2\\sqrt5t^3+25t^2-20\\sqrt5t+100\\right]\\)"
+                },
+                {
+                  "explain": "Recognise a perfect square.",
+                  "work": "\\(\\left(t^2-\\sqrt5t+10\\right)^2=t^4-2\\sqrt5t^3+25t^2-20\\sqrt5t+100\\)"
+                },
+                {
+                  "explain": "\\(t^2-\\sqrt5t+10\\) has discriminant \\(5-40\\lt 0\\), so it is always positive. Taking the square root:",
+                  "work": "\\(\\left|\\overrightarrow{OP}\\right|=5\\left(t^2-\\sqrt5t+10\\right)\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "15(d)(ii)"
+              },
+              "answer": "\\(|\\overrightarrow{OP}|^2=(50-5\\sqrt5t)^2+(5\\sqrt{15}t)^2+(5\\sqrt5t-5t^2)^2=25[(10-\\sqrt5t)^2+15t^2+(\\sqrt5t-t^2)^2]=25[t^4-2\\sqrt5t^3+25t^2-20\\sqrt5t+100]=25(t^2-\\sqrt5t+10)^2\\). Since t² − √5t + 10 > 0, \\(|\\overrightarrow{OP}|=5(t^2-\\sqrt5t+10)\\).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Show that",
+                  "note": "Square each component, add, and spot a perfect square."
+                }
+              ]
+            },
+            {
+              "id": "bhhs2020-ext2-q15d-iii",
+              "type": "review",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Show that the particle reaches its maximum height when it is closest to the point \\(O\\).",
+              "hint": "Find when |OP| is least (vertex of the quadratic) and when ż = 0.",
+              "steps": [
+                {
+                  "explain": "\\(|\\overrightarrow{OP}|\\) is an upward parabola in \\(t\\); its minimum is at the vertex.",
+                  "work": "\\(t=-\\frac{-\\sqrt5}{2}=\\frac{\\sqrt5}{2}\\)"
+                },
+                {
+                  "explain": "Maximum height when the vertical velocity is zero.",
+                  "work": "\\(z=5\\sqrt5t-5t^2\\ \\Rightarrow\\ \\dot z=5\\sqrt5-10t=0\\ \\Rightarrow\\ t=\\frac{\\sqrt5}{2}\\)"
+                },
+                {
+                  "explain": "Both occur at the same time \\(t=\\frac{\\sqrt5}{2}\\), so the particle is highest exactly when it is closest to \\(O\\)."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "15(d)(iii)"
+              },
+              "answer": "|OP| = 5(t² − √5t + 10) is a quadratic in t with minimum at t = √5/2. The vertical velocity is \\(\\dot z=5\\sqrt5-10t\\), which is 0 at t = √5/2, i.e. maximum height. So both happen at t = √5/2.",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "closest to the point \\(O\\)",
+                  "note": "Minimise the quadratic 5(t² − √5t + 10) and compare with the time of maximum height."
+                }
+              ]
             }
           ]
         }

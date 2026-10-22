@@ -412,6 +412,226 @@
               ]
             }
           ]
+        },
+        {
+          "id": "bhhs2020-ext2-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Let \\(z=a+ib\\), where \\(a\\) and \\(b\\) are real non-zero numbers.\nIf \\(z+\\frac{1}{z}\\in\\mathbb{R}\\), which of the following must be true?",
+          "hint": "Write 1/z = z̄/|z|² and set the imaginary part of z + 1/z to zero.",
+          "steps": [
+            {
+              "explain": "Write \\(\\frac1z\\) using the conjugate.",
+              "work": "\\(\\frac{1}{z}=\\frac{\\overline{z}}{z\\overline{z}}=\\frac{a-ib}{a^2+b^2}\\)"
+            },
+            {
+              "explain": "Add and collect the imaginary part.",
+              "work": "\\(z+\\frac1z=a+\\frac{a}{a^2+b^2}+i\\left(b-\\frac{b}{a^2+b^2}\\right)\\)"
+            },
+            {
+              "explain": "For a real result the imaginary part must be 0. Since \\(b\\neq0\\), divide by \\(b\\).",
+              "work": "\\(1-\\frac{1}{a^2+b^2}=0\\ \\Rightarrow\\ a^2+b^2=1\\ \\Rightarrow\\ |z|=1\\)"
+            },
+            {
+              "explain": "So D must be true. A, B, C are particular cases, not forced (e.g. \\(z=\\frac12+\\frac{\\sqrt3}{2}i\\) works but has \\(a\\neq\\pm b\\))."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills 2020 4U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "1"
+          },
+          "options": [
+            "\\(\\arg z=\\frac{\\pi}{4}\\)",
+            "\\(a=-b\\)",
+            "\\(a=b\\)",
+            "\\(|z|=1\\)"
+          ],
+          "answer": 3,
+          "keyPoints": [
+            {
+              "text": "\\(z+\\frac{1}{z}\\in\\mathbb{R}\\)",
+              "note": "1/z = z̄/|z|². The imaginary part b − b/|z|² must be 0."
+            }
+          ]
+        },
+        {
+          "id": "bhhs2020-ext2-q8",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "What is the value of \\(i^{1!}+i^{2!}+i^{3!}+\\dots+i^{2020!}\\) ?",
+          "hint": "For n ≥ 4, n! is a multiple of 4, so i^(n!) = 1.",
+          "steps": [
+            {
+              "explain": "Powers of \\(i\\) repeat every 4: \\(i^{4k}=1\\).",
+              "work": "\\(i^1=i,\\quad i^2=-1,\\quad i^3=-i,\\quad i^4=1\\)"
+            },
+            {
+              "explain": "Work out the first three terms.",
+              "work": "\\(i^{1!}=i^1=i,\\qquad i^{2!}=i^2=-1,\\qquad i^{3!}=i^6=i^2=-1\\)"
+            },
+            {
+              "explain": "For \\(n\\ge4\\), \\(n!\\) contains the factor 4, so \\(i^{n!}=1\\). There are \\(2020-3=2017\\) such terms.",
+              "work": "\\(i^{4!}=i^{24}=1,\\ \\dots\\)"
+            },
+            {
+              "explain": "Add up.",
+              "work": "\\(i-1-1+2017\\times1=2015+i\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills 2020 4U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "8"
+          },
+          "options": [
+            "\\(2016\\)",
+            "\\(2015+i\\)",
+            "\\(2014+2i\\)",
+            "\\(2018+2i\\)"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "\\(i^{1!}+i^{2!}+i^{3!}+\\dots+i^{2020!}\\)",
+              "note": "Only the first three terms are special; from 4! on every power is a multiple of 4."
+            }
+          ]
+        },
+        {
+          "id": "bhhs2020-ext2-q11a",
+          "type": "multipart",
+          "stem": "Let \\(z=5+2i\\) and \\(w=\\overline{z}\\). Find ;",
+          "meta": {
+            "source": "Baulkham Hills 2020 4U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "11(a)"
+          },
+          "parts": [
+            {
+              "id": "bhhs2020-ext2-q11a-i",
+              "type": "mc",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "\\(w\\)",
+              "hint": "Conjugate: flip the sign of the imaginary part.",
+              "steps": [
+                {
+                  "explain": "The conjugate changes the sign of the imaginary part only.",
+                  "work": "\\(w=\\overline{5+2i}=5-2i\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "11(a)(i)"
+              },
+              "options": [
+                "\\(-5+2i\\)",
+                "\\(-5-2i\\)",
+                "\\(2+5i\\)",
+                "\\(5-2i\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "\\(w\\)",
+                  "note": "w = z̄: keep 5, change +2i to −2i."
+                }
+              ]
+            },
+            {
+              "id": "bhhs2020-ext2-q11a-ii",
+              "type": "mc",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "\\(w-z\\)",
+              "hint": "Subtract real parts and imaginary parts separately.",
+              "steps": [
+                {
+                  "explain": "Subtract.",
+                  "work": "\\(w-z=(5-2i)-(5+2i)=-4i\\)"
+                },
+                {
+                  "explain": "In general \\(\\overline z-z=-2i\\operatorname{Im}(z)\\)."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "11(a)(ii)"
+              },
+              "options": [
+                "\\(10\\)",
+                "\\(0\\)",
+                "\\(-4i\\)",
+                "\\(4i\\)"
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "\\(w-z\\)",
+                  "note": "The real parts cancel; −2i − 2i = −4i."
+                }
+              ]
+            },
+            {
+              "id": "bhhs2020-ext2-q11a-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "\\(\\frac{w}{z}\\)",
+              "hint": "Multiply numerator and denominator by 5 − 2i.",
+              "steps": [
+                {
+                  "explain": "Multiply top and bottom by the conjugate of the denominator, \\(5-2i\\).",
+                  "work": "\\(\\frac{5-2i}{5+2i}\\times\\frac{5-2i}{5-2i}=\\frac{(5-2i)^2}{25+4}\\)"
+                },
+                {
+                  "explain": "Expand the numerator.",
+                  "work": "\\((5-2i)^2=25-20i+4i^2=21-20i\\)"
+                },
+                {
+                  "explain": "So",
+                  "work": "\\(\\frac{w}{z}=\\frac{21-20i}{29}=\\frac{21}{29}-\\frac{20}{29}i\\)"
+                },
+                {
+                  "explain": "Check: \\(\\left|\\frac wz\\right|=1\\) since \\(|w|=|z|\\): \\(\\frac{21^2+20^2}{29^2}=\\frac{841}{841}=1\\) ✓."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "11(a)(iii)"
+              },
+              "options": [
+                "\\(1\\)",
+                "\\(\\frac{21}{29}-\\frac{20}{29}i\\)",
+                "\\(\\frac{21}{29}+\\frac{20}{29}i\\)",
+                "\\(\\frac{25}{29}-\\frac{20}{29}i\\)"
+              ],
+              "answer": 1,
+              "keyPoints": [
+                {
+                  "text": "\\(\\frac{w}{z}\\)",
+                  "note": "Realise the denominator: multiply by (5 − 2i)/(5 − 2i)."
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -508,7 +728,79 @@
       "topicId": "y12e2-1C",
       "code": "1C",
       "title": "The Argand Diagram",
-      "questions": []
+      "questions": [
+        {
+          "id": "bhhs2020-ext2-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "The complex number \\(z\\), where \\(|z|=1\\) is represented in the following diagram\n\nWhich of the following diagrams would best represent the complex number \\(-\\overline{z}\\) ?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 170\" width=\"220\" height=\"170\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"220\" height=\"170\" rx=\"8\" fill=\"white\"/><line x1=\"20.0\" y1=\"85.0\" x2=\"200.0\" y2=\"85.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"100.0\" y1=\"160.0\" x2=\"100.0\" y2=\"14.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"170.1\" y=\"103.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">Re(</text><text x=\"189.6\" y=\"103.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#64748b\" font-style=\"italic\">z</text><text x=\"196.0\" y=\"103.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">)</text><text x=\"66.3\" y=\"24.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">Im(</text><text x=\"83.5\" y=\"24.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#64748b\" font-style=\"italic\">z</text><text x=\"90.0\" y=\"24.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">)</text><text x=\"83.0\" y=\"101.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#64748b\" font-style=\"italic\">O</text><circle cx=\"127.9\" cy=\"120.1\" r=\"4.5\" fill=\"#1e293b\"/></svg>"
+          },
+          "hint": "z̄ reflects in the real axis; the minus sign then rotates by π.",
+          "steps": [
+            {
+              "explain": "\\(z\\) is in the fourth quadrant (positive real part, negative imaginary part).",
+              "work": "\\(z=x+iy,\\quad x\\gt 0,\\ y\\lt 0\\)"
+            },
+            {
+              "explain": "\\(\\overline z=x-iy\\) reflects \\(z\\) in the real axis: it moves to the first quadrant.",
+              "work": "\\(\\overline{z}=x-iy\\quad(x\\gt 0,\\ -y\\gt 0)\\)"
+            },
+            {
+              "explain": "\\(-\\overline z=-x+iy\\) reflects through the origin (a rotation by \\(\\pi\\)): it moves to the third quadrant, at the same distance from \\(O\\).",
+              "work": "\\(-\\overline{z}=-x+iy\\quad(-x\\lt 0,\\ y\\lt 0)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 210\" width=\"260\" height=\"210\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"260\" height=\"210\" rx=\"8\" fill=\"white\"/><line x1=\"20.0\" y1=\"105.0\" x2=\"240.0\" y2=\"105.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"120.0\" y1=\"200.0\" x2=\"120.0\" y2=\"14.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"210.1\" y=\"123.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">Re(</text><text x=\"229.6\" y=\"123.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#64748b\" font-style=\"italic\">z</text><text x=\"236.0\" y=\"123.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">)</text><text x=\"86.3\" y=\"24.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">Im(</text><text x=\"103.5\" y=\"24.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#64748b\" font-style=\"italic\">z</text><text x=\"110.0\" y=\"24.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">)</text><text x=\"103.0\" y=\"121.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#64748b\" font-style=\"italic\">O</text><circle cx=\"154.1\" cy=\"147.9\" r=\"4.5\" fill=\"#64748b\"/><text x=\"162.1\" y=\"163.9\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">z</text><circle cx=\"154.1\" cy=\"62.1\" r=\"4.5\" fill=\"#2563eb\"/><text x=\"162.1\" y=\"54.1\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#2563eb\" font-style=\"italic\">z</text><line x1=\"163.1\" y1=\"43.3\" x2=\"169.0\" y2=\"43.3\" stroke=\"#2563eb\" stroke-width=\"1.00\"/><circle cx=\"85.9\" cy=\"147.9\" r=\"4.5\" fill=\"#dc2626\"/><text x=\"93.9\" y=\"163.9\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"13.0\" fill=\"#dc2626\">−</text><text x=\"101.4\" y=\"163.9\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#dc2626\" font-style=\"italic\">z</text><line x1=\"102.4\" y1=\"153.1\" x2=\"108.4\" y2=\"153.1\" stroke=\"#dc2626\" stroke-width=\"1.00\"/></svg>"
+              }
+            },
+            {
+              "explain": "So the answer is (C): the point in the third quadrant, the mirror of \\(z\\) in the imaginary axis."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills 2020 4U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "4"
+          },
+          "options": [
+            {
+              "text": "(A)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 170\" width=\"220\" height=\"170\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"220\" height=\"170\" rx=\"8\" fill=\"white\"/><line x1=\"20.0\" y1=\"85.0\" x2=\"200.0\" y2=\"85.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"100.0\" y1=\"160.0\" x2=\"100.0\" y2=\"14.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"170.1\" y=\"103.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">Re(</text><text x=\"189.6\" y=\"103.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#64748b\" font-style=\"italic\">z</text><text x=\"196.0\" y=\"103.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">)</text><text x=\"66.3\" y=\"24.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">Im(</text><text x=\"83.5\" y=\"24.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#64748b\" font-style=\"italic\">z</text><text x=\"90.0\" y=\"24.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">)</text><text x=\"83.0\" y=\"101.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#64748b\" font-style=\"italic\">O</text><circle cx=\"127.9\" cy=\"49.9\" r=\"4.5\" fill=\"#1e293b\"/></svg>"
+              }
+            },
+            {
+              "text": "(B)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 170\" width=\"220\" height=\"170\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"220\" height=\"170\" rx=\"8\" fill=\"white\"/><line x1=\"20.0\" y1=\"85.0\" x2=\"200.0\" y2=\"85.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"100.0\" y1=\"160.0\" x2=\"100.0\" y2=\"14.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"170.1\" y=\"103.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">Re(</text><text x=\"189.6\" y=\"103.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#64748b\" font-style=\"italic\">z</text><text x=\"196.0\" y=\"103.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">)</text><text x=\"66.3\" y=\"24.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">Im(</text><text x=\"83.5\" y=\"24.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#64748b\" font-style=\"italic\">z</text><text x=\"90.0\" y=\"24.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">)</text><text x=\"83.0\" y=\"101.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#64748b\" font-style=\"italic\">O</text><circle cx=\"72.1\" cy=\"49.9\" r=\"4.5\" fill=\"#1e293b\"/></svg>"
+              }
+            },
+            {
+              "text": "(C)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 170\" width=\"220\" height=\"170\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"220\" height=\"170\" rx=\"8\" fill=\"white\"/><line x1=\"20.0\" y1=\"85.0\" x2=\"200.0\" y2=\"85.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"100.0\" y1=\"160.0\" x2=\"100.0\" y2=\"14.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"170.1\" y=\"103.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">Re(</text><text x=\"189.6\" y=\"103.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#64748b\" font-style=\"italic\">z</text><text x=\"196.0\" y=\"103.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">)</text><text x=\"66.3\" y=\"24.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">Im(</text><text x=\"83.5\" y=\"24.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#64748b\" font-style=\"italic\">z</text><text x=\"90.0\" y=\"24.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">)</text><text x=\"83.0\" y=\"101.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#64748b\" font-style=\"italic\">O</text><circle cx=\"72.1\" cy=\"120.1\" r=\"4.5\" fill=\"#1e293b\"/></svg>"
+              }
+            },
+            {
+              "text": "(D)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 170\" width=\"220\" height=\"170\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"220\" height=\"170\" rx=\"8\" fill=\"white\"/><line x1=\"20.0\" y1=\"85.0\" x2=\"200.0\" y2=\"85.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"100.0\" y1=\"160.0\" x2=\"100.0\" y2=\"14.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"170.1\" y=\"103.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">Re(</text><text x=\"189.6\" y=\"103.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#64748b\" font-style=\"italic\">z</text><text x=\"196.0\" y=\"103.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">)</text><text x=\"66.3\" y=\"24.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">Im(</text><text x=\"83.5\" y=\"24.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#64748b\" font-style=\"italic\">z</text><text x=\"90.0\" y=\"24.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">)</text><text x=\"83.0\" y=\"101.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#64748b\" font-style=\"italic\">O</text><circle cx=\"136.3\" cy=\"106.1\" r=\"4.5\" fill=\"#1e293b\"/></svg>"
+              }
+            }
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "\\(-\\overline{z}\\)",
+              "note": "−z̄ = −x + iy: it is the reflection of z in the imaginary axis."
+            }
+          ]
+        }
+      ]
     },
     {
       "topicId": "y12e2-1D",
@@ -1254,6 +1546,241 @@
             {
               "text": "\\(|z+2|=1\\)",
               "note": "This is a circle centre −2, radius 1. The maximum argument is along the tangent from O."
+            }
+          ]
+        },
+        {
+          "id": "bhhs2020-ext2-q11b",
+          "type": "multipart",
+          "stem": "The sketch below shows the region \\(\\{z:|z|\\le4\\sqrt2\\}\\cap\\left\\{z:\\frac{\\pi}{4}\\le\\arg z\\le\\frac{\\pi}{3}\\right\\}\\)",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 260\" width=\"300\" height=\"260\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"300\" height=\"260\" rx=\"8\" fill=\"white\"/><path d=\"M60.0 230.0L196.0 94.0L194.8 92.8L193.6 91.6L192.4 90.5L191.2 89.3L189.9 88.2L188.7 87.1L187.4 86.0L186.2 84.8L184.9 83.7L183.6 82.7L182.3 81.6L181.0 80.5L179.7 79.5L178.4 78.4L177.1 77.4L175.7 76.4L174.4 75.4L173.1 74.4L171.7 73.4L170.3 72.4L168.9 71.5L167.6 70.5L166.2 69.6L164.8 68.7L163.3 67.8L161.9 66.9L160.5 66.0L159.1 65.1L157.6 64.3L156.2 63.4Z\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linejoin=\"round\" fill-opacity=\"0.35\"/><line x1=\"20.0\" y1=\"230.0\" x2=\"290.0\" y2=\"230.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"60.0\" y1=\"255.0\" x2=\"60.0\" y2=\"12.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"288.0\" y=\"248.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">Re</text><text x=\"68.0\" y=\"24.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\">Im</text><circle cx=\"60.0\" cy=\"230.0\" r=\"3.5\" fill=\"white\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"43.0\" y=\"246.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#64748b\" font-style=\"italic\">O</text><text x=\"204.0\" y=\"98.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">P</text><text x=\"138.5\" y=\"57.4\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">Q</text></svg>"
+          },
+          "meta": {
+            "source": "Baulkham Hills 2020 4U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "11(b)"
+          },
+          "parts": [
+            {
+              "id": "bhhs2020-ext2-q11b-i",
+              "type": "mc",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Find in mod-arg form, the complex number represented by the point \\(P\\).",
+              "hint": "P is on the outer arc and the lower ray.",
+              "steps": [
+                {
+                  "explain": "\\(P\\) is the corner of the region on the lower ray \\(\\arg z=\\frac\\pi4\\), on the circle \\(|z|=4\\sqrt2\\).",
+                  "work": "\\(|P|=4\\sqrt2,\\qquad\\arg P=\\frac{\\pi}{4}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 260\" width=\"300\" height=\"260\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"300\" height=\"260\" rx=\"8\" fill=\"white\"/><path d=\"M60.0 230.0L196.0 94.0L194.8 92.8L193.6 91.6L192.4 90.5L191.2 89.3L189.9 88.2L188.7 87.1L187.4 86.0L186.2 84.8L184.9 83.7L183.6 82.7L182.3 81.6L181.0 80.5L179.7 79.5L178.4 78.4L177.1 77.4L175.7 76.4L174.4 75.4L173.1 74.4L171.7 73.4L170.3 72.4L168.9 71.5L167.6 70.5L166.2 69.6L164.8 68.7L163.3 67.8L161.9 66.9L160.5 66.0L159.1 65.1L157.6 64.3L156.2 63.4Z\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linejoin=\"round\" fill-opacity=\"0.6\"/><line x1=\"20.0\" y1=\"230.0\" x2=\"290.0\" y2=\"230.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"60.0\" y1=\"255.0\" x2=\"60.0\" y2=\"12.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"288.0\" y=\"248.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">Re</text><text x=\"68.0\" y=\"24.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\">Im</text><circle cx=\"60.0\" cy=\"230.0\" r=\"3.5\" fill=\"white\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"43.0\" y=\"246.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#64748b\" font-style=\"italic\">O</text><text x=\"204.0\" y=\"98.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">P</text><text x=\"138.5\" y=\"57.4\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">Q</text><text x=\"114.0\" y=\"193.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#dc2626\">π</text><text x=\"114.6\" y=\"203.6\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#dc2626\">4</text><line x1=\"113.0\" y1=\"195.4\" x2=\"121.0\" y2=\"195.4\" stroke=\"#dc2626\" stroke-width=\"1.00\"/><text x=\"80.4\" y=\"160.4\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#dc2626\">π</text><text x=\"81.0\" y=\"171.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#dc2626\">3</text><line x1=\"79.4\" y1=\"162.8\" x2=\"87.4\" y2=\"162.8\" stroke=\"#dc2626\" stroke-width=\"1.00\"/><text x=\"150.0\" y=\"172.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#2563eb\">4</text><path d=\"M156.8 168.2L158.6 167.2L160.8 173.4L163.3 161.6L172.1 161.6\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.00\" stroke-linejoin=\"round\"/><text x=\"164.3\" y=\"172.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#2563eb\">2</text><circle cx=\"162.0\" cy=\"60.0\" r=\"4.5\" fill=\"#ea580c\"/><text x=\"170.0\" y=\"58.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#ea580c\">3 + 5</text><text x=\"197.0\" y=\"58.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#ea580c\" font-style=\"italic\">i</text></svg>"
+                  }
+                },
+                {
+                  "explain": "So",
+                  "work": "\\(P=4\\sqrt2\\left(\\cos\\frac{\\pi}{4}+i\\sin\\frac{\\pi}{4}\\right)=4\\sqrt2\\operatorname{cis}\\frac{\\pi}{4}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "11(b)(i)"
+              },
+              "options": [
+                "\\(4\\sqrt2\\operatorname{cis}\\frac{\\pi}{3}\\)",
+                "\\(4\\operatorname{cis}\\frac{\\pi}{4}\\)",
+                "\\(32\\operatorname{cis}\\frac{\\pi}{4}\\)",
+                "\\(4\\sqrt2\\operatorname{cis}\\frac{\\pi}{4}\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "the point \\(P\\)",
+                  "note": "P lies on |z| = 4√2 and on arg z = π/4 (the lower boundary ray)."
+                }
+              ]
+            },
+            {
+              "id": "bhhs2020-ext2-q11b-ii",
+              "type": "mc",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Find, in the form \\(x+iy\\), the complex number represented by \\(Q\\).",
+              "hint": "Q = 4√2 cis(π/3); expand with cos and sin of π/3.",
+              "steps": [
+                {
+                  "explain": "\\(Q\\) is on the upper ray \\(\\arg z=\\frac\\pi3\\) and the circle \\(|z|=4\\sqrt2\\).",
+                  "work": "\\(Q=4\\sqrt2\\operatorname{cis}\\frac{\\pi}{3}\\)"
+                },
+                {
+                  "explain": "Convert using \\(\\cos\\frac\\pi3=\\frac12\\), \\(\\sin\\frac\\pi3=\\frac{\\sqrt3}{2}\\).",
+                  "work": "\\(Q=4\\sqrt2\\left(\\frac12+\\frac{\\sqrt3}{2}i\\right)=2\\sqrt2+2\\sqrt6\\,i\\)"
+                },
+                {
+                  "explain": "\\(4+4i\\) is \\(P\\), not \\(Q\\)."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "11(b)(ii)"
+              },
+              "options": [
+                "\\(4+4i\\)",
+                "\\(2+2\\sqrt3\\,i\\)",
+                "\\(2\\sqrt2+2\\sqrt6\\,i\\)",
+                "\\(2\\sqrt6+2\\sqrt2\\,i\\)"
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "represented by \\(Q\\)",
+                  "note": "Q is on the upper ray arg z = π/3 at distance 4√2."
+                }
+              ]
+            },
+            {
+              "id": "bhhs2020-ext2-q11b-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Determine whether \\(3+5i\\) lies within this region.",
+              "hint": "Check both conditions: the argument AND the modulus.",
+              "steps": [
+                {
+                  "explain": "Check the argument: \\(\\tan^{-1}\\frac53\\approx59.0^\\circ\\), which IS between \\(45^\\circ\\) and \\(60^\\circ\\).",
+                  "work": "\\(\\frac{\\pi}{4}\\lt\\arg(3+5i)\\approx1.03\\lt\\frac{\\pi}{3}\\)"
+                },
+                {
+                  "explain": "Check the modulus.",
+                  "work": "\\(|3+5i|=\\sqrt{9+25}=\\sqrt{34},\\qquad4\\sqrt2=\\sqrt{32}\\)"
+                },
+                {
+                  "explain": "\\(\\sqrt{34}\\gt\\sqrt{32}\\), so the point is just outside the circle — not in the region (both conditions must hold).",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 260\" width=\"300\" height=\"260\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"300\" height=\"260\" rx=\"8\" fill=\"white\"/><path d=\"M60.0 230.0L196.0 94.0L194.8 92.8L193.6 91.6L192.4 90.5L191.2 89.3L189.9 88.2L188.7 87.1L187.4 86.0L186.2 84.8L184.9 83.7L183.6 82.7L182.3 81.6L181.0 80.5L179.7 79.5L178.4 78.4L177.1 77.4L175.7 76.4L174.4 75.4L173.1 74.4L171.7 73.4L170.3 72.4L168.9 71.5L167.6 70.5L166.2 69.6L164.8 68.7L163.3 67.8L161.9 66.9L160.5 66.0L159.1 65.1L157.6 64.3L156.2 63.4Z\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linejoin=\"round\" fill-opacity=\"0.6\"/><line x1=\"20.0\" y1=\"230.0\" x2=\"290.0\" y2=\"230.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"60.0\" y1=\"255.0\" x2=\"60.0\" y2=\"12.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"288.0\" y=\"248.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">Re</text><text x=\"68.0\" y=\"24.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\">Im</text><circle cx=\"60.0\" cy=\"230.0\" r=\"3.5\" fill=\"white\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"43.0\" y=\"246.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#64748b\" font-style=\"italic\">O</text><text x=\"204.0\" y=\"98.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">P</text><text x=\"138.5\" y=\"57.4\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">Q</text><text x=\"114.0\" y=\"193.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#dc2626\">π</text><text x=\"114.6\" y=\"203.6\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#dc2626\">4</text><line x1=\"113.0\" y1=\"195.4\" x2=\"121.0\" y2=\"195.4\" stroke=\"#dc2626\" stroke-width=\"1.00\"/><text x=\"80.4\" y=\"160.4\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#dc2626\">π</text><text x=\"81.0\" y=\"171.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#dc2626\">3</text><line x1=\"79.4\" y1=\"162.8\" x2=\"87.4\" y2=\"162.8\" stroke=\"#dc2626\" stroke-width=\"1.00\"/><text x=\"150.0\" y=\"172.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#2563eb\">4</text><path d=\"M156.8 168.2L158.6 167.2L160.8 173.4L163.3 161.6L172.1 161.6\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.00\" stroke-linejoin=\"round\"/><text x=\"164.3\" y=\"172.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#2563eb\">2</text><circle cx=\"162.0\" cy=\"60.0\" r=\"4.5\" fill=\"#ea580c\"/><text x=\"170.0\" y=\"58.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#ea580c\">3 + 5</text><text x=\"197.0\" y=\"58.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#ea580c\" font-style=\"italic\">i</text></svg>"
+                  }
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "11(b)(iii)"
+              },
+              "options": [
+                "Yes: \\(|3+5i|=8\\lt4\\sqrt2\\).",
+                "No: \\(|3+5i|=\\sqrt{34}\\gt4\\sqrt2=\\sqrt{32}\\), so it is outside.",
+                "Yes: its argument \\(\\tan^{-1}\\frac53\\approx59^\\circ\\) is between \\(45^\\circ\\) and \\(60^\\circ\\).",
+                "No: its argument is greater than \\(\\frac{\\pi}{3}\\)."
+              ],
+              "answer": 1,
+              "keyPoints": [
+                {
+                  "text": "lies within this region",
+                  "note": "A point must satisfy both |z| ≤ 4√2 and π/4 ≤ arg z ≤ π/3."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bhhs2020-ext2-q12b",
+          "type": "multipart",
+          "stem": "Two complex numbers \\(z\\) and \\(w\\), satisfy the inequalities;\n\\(|z-3-2i|\\le2\\) and \\(|w-7-5i|\\le1\\)",
+          "meta": {
+            "source": "Baulkham Hills 2020 4U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "12(b)"
+          },
+          "parts": [
+            {
+              "id": "bhhs2020-ext2-q12b-i",
+              "type": "review",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Sketch both regions on the same Argand diagram.",
+              "hint": "|z − a| ≤ r is a disc centre a radius r.",
+              "steps": [
+                {
+                  "explain": "\\(|z-(3+2i)|\\le2\\): all points within 2 of \\(3+2i\\) — a closed disc centre \\((3,2)\\), radius 2.",
+                  "work": "\\(\\text{centre }(3,2),\\ r=2\\)"
+                },
+                {
+                  "explain": "\\(|w-(7+5i)|\\le1\\): a closed disc centre \\((7,5)\\), radius 1. Shade both, boundaries solid.",
+                  "work": "\\(\\text{centre }(7,5),\\ r=1\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 240\" width=\"320\" height=\"240\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker><marker id=\"ah1e293b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#1e293b\"/></marker></defs><rect width=\"320\" height=\"240\" rx=\"8\" fill=\"white\"/><line x1=\"14.0\" y1=\"210.0\" x2=\"312.0\" y2=\"210.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"40.0\" y1=\"232.0\" x2=\"40.0\" y2=\"12.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"302.3\" y=\"228.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">x</text><text x=\"48.0\" y=\"24.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">y</text><circle cx=\"130.0\" cy=\"150.0\" r=\"60.0\" fill=\"#93c5fd\" stroke=\"#2563eb\" stroke-width=\"2\" fill-opacity=\"0.5\"/><circle cx=\"250.0\" cy=\"60.0\" r=\"30.0\" fill=\"#bbf7d0\" stroke=\"#16a34a\" stroke-width=\"2\" fill-opacity=\"0.6\"/><circle cx=\"130.0\" cy=\"150.0\" r=\"3\" fill=\"#1e293b\"/><circle cx=\"250.0\" cy=\"60.0\" r=\"3\" fill=\"#1e293b\"/><text x=\"130.0\" y=\"226.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"middle\">3</text><text x=\"250.0\" y=\"226.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"middle\">7</text><text x=\"34.0\" y=\"154.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">2</text><text x=\"34.0\" y=\"64.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">5</text><line x1=\"130.0\" y1=\"150.0\" x2=\"172.6\" y2=\"192.6\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><text x=\"160.0\" y=\"172.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">2</text><line x1=\"250.0\" y1=\"60.0\" x2=\"271.3\" y2=\"38.7\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><text x=\"264.0\" y=\"56.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">1</text></svg>"
+                  }
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "12(b)(i)"
+              },
+              "answer": "Two closed discs: centre (3, 2) radius 2 (for z), and centre (7, 5) radius 1 (for w), boundaries included.",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Sketch both regions",
+                  "note": "Each inequality is a closed disc: read the centre and radius."
+                }
+              ]
+            },
+            {
+              "id": "bhhs2020-ext2-q12b-ii",
+              "type": "mc",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Find the least possible value of \\(|z-w|\\)",
+              "hint": "Distance between centres minus both radii.",
+              "steps": [
+                {
+                  "explain": "Distance between the centres.",
+                  "work": "\\(\\sqrt{(7-3)^2+(5-2)^2}=\\sqrt{16+9}=5\\)"
+                },
+                {
+                  "explain": "The closest points lie on the line joining the centres. Subtract both radii.",
+                  "work": "\\(|z-w|_{\\min}=5-2-1=2\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 240\" width=\"320\" height=\"240\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"320\" height=\"240\" rx=\"8\" fill=\"white\"/><line x1=\"14.0\" y1=\"210.0\" x2=\"312.0\" y2=\"210.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"40.0\" y1=\"232.0\" x2=\"40.0\" y2=\"12.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"302.3\" y=\"228.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">x</text><text x=\"48.0\" y=\"24.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">y</text><circle cx=\"130.0\" cy=\"150.0\" r=\"60.0\" fill=\"#93c5fd\" stroke=\"#2563eb\" stroke-width=\"2\" fill-opacity=\"0.5\"/><circle cx=\"250.0\" cy=\"60.0\" r=\"30.0\" fill=\"#bbf7d0\" stroke=\"#16a34a\" stroke-width=\"2\" fill-opacity=\"0.6\"/><circle cx=\"130.0\" cy=\"150.0\" r=\"3\" fill=\"#1e293b\"/><circle cx=\"250.0\" cy=\"60.0\" r=\"3\" fill=\"#1e293b\"/><text x=\"130.0\" y=\"226.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"middle\">3</text><text x=\"250.0\" y=\"226.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"middle\">7</text><text x=\"34.0\" y=\"154.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">2</text><text x=\"34.0\" y=\"64.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">5</text><line x1=\"130.0\" y1=\"150.0\" x2=\"250.0\" y2=\"60.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"178.0\" y1=\"114.0\" x2=\"226.0\" y2=\"78.0\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"178.0\" cy=\"114.0\" r=\"4\" fill=\"#dc2626\"/><circle cx=\"226.0\" cy=\"78.0\" r=\"4\" fill=\"#dc2626\"/><line x1=\"130.0\" y1=\"150.0\" x2=\"250.0\" y2=\"150.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><line x1=\"250.0\" y1=\"150.0\" x2=\"250.0\" y2=\"60.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><text x=\"190.0\" y=\"166.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"middle\">4</text><text x=\"256.0\" y=\"109.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\">3</text><text x=\"93.5\" y=\"86.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#dc2626\">min = 5 − 2 − 1 = 2</text></svg>"
+                  }
+                },
+                {
+                  "explain": "5 is the distance between the centres, not between the regions."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "12(b)(ii)"
+              },
+              "options": [
+                "\\(5\\)",
+                "\\(3\\)",
+                "\\(1\\)",
+                "\\(2\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "\\(|z-w|\\)",
+                  "note": "|z − w| is the distance between a point in each disc: centres 5 apart, minus radii 2 and 1."
+                }
+              ]
             }
           ]
         }

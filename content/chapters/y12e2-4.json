@@ -522,6 +522,104 @@
               ]
             }
           ]
+        },
+        {
+          "id": "bhhs2020-ext2-q11d",
+          "type": "multipart",
+          "stem": "The equations of two lines are; \\(\\mathbf{r}=\\begin{pmatrix}2\\\\ -3\\\\ 1\\end{pmatrix}+\\lambda\\begin{pmatrix}1\\\\ 4\\\\ 1\\end{pmatrix}\\) and \\(\\mathbf{r}=\\begin{pmatrix}-4\\\\ 6\\\\ -2\\end{pmatrix}+\\mu\\begin{pmatrix}4\\\\ -11\\\\ 3\\end{pmatrix}\\)",
+          "meta": {
+            "source": "Baulkham Hills 2020 4U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "11(d)"
+          },
+          "parts": [
+            {
+              "id": "bhhs2020-ext2-q11d-i",
+              "type": "mc",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Explain why these lines are not parallel.",
+              "hint": "Parallel ⇔ direction vectors are scalar multiples.",
+              "steps": [
+                {
+                  "explain": "Lines are parallel exactly when their direction vectors are multiples of each other."
+                },
+                {
+                  "explain": "If \\((4,-11,3)=k(1,4,1)\\) then \\(k=4\\) from the first component, but \\(4\\times4=16\\neq-11\\). No such \\(k\\).",
+                  "work": "\\(4=k,\\quad-11=4k=16\\ \\text{✗}\\)"
+                },
+                {
+                  "explain": "So the lines are not parallel. (Different position vectors or lengths don't decide it; a non-zero dot product only shows they aren't perpendicular.)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "11(d)(i)"
+              },
+              "options": [
+                "Their position vectors are different.",
+                "Their direction vectors have different lengths.",
+                "The dot product of the direction vectors is not zero.",
+                "The direction vectors \\(\\begin{pmatrix}1\\\\ 4\\\\ 1\\end{pmatrix}\\) and \\(\\begin{pmatrix}4\\\\ -11\\\\ 3\\end{pmatrix}\\) are not scalar multiples of each other."
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "not parallel",
+                  "note": "Check whether (4, −11, 3) is a multiple of (1, 4, 1)."
+                }
+              ]
+            },
+            {
+              "id": "bhhs2020-ext2-q11d-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Determine whether these lines are skew or whether they intersect.",
+              "hint": "Solve two component equations for λ and μ, then test the third.",
+              "steps": [
+                {
+                  "explain": "Equate the components.",
+                  "work": "\\(2+\\lambda=-4+4\\mu,\\qquad-3+4\\lambda=6-11\\mu,\\qquad1+\\lambda=-2+3\\mu\\)"
+                },
+                {
+                  "explain": "From the first and third: \\(\\lambda-4\\mu=-6\\) and \\(\\lambda-3\\mu=-3\\). Subtract.",
+                  "work": "\\(\\mu=3,\\qquad\\lambda=6\\)"
+                },
+                {
+                  "explain": "Check the second equation.",
+                  "work": "\\(-3+4(6)=21,\\qquad6-11(3)=-27\\ \\Rightarrow\\ 21\\neq-27\\)"
+                },
+                {
+                  "explain": "No common point, and from (i) they are not parallel, so the lines are skew."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "11(d)(ii)"
+              },
+              "options": [
+                "They intersect at \\((-4,6,-2)\\).",
+                "They are parallel, so they never meet.",
+                "They are skew: the values from two component equations do not satisfy the third.",
+                "They intersect at \\((8,21,7)\\)."
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "skew or whether they intersect",
+                  "note": "Find λ, μ from two components; if the third fails, the lines are skew."
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -817,6 +915,96 @@
                 {
                   "text": "Hence, show that",
                   "note": "Compute (R(λ) − c) · b using λ = b·(c − a)/|b|²."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bhhs2020-ext2-q15c",
+          "type": "multipart",
+          "stem": "",
+          "meta": {
+            "source": "Baulkham Hills 2020 4U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "15(c)"
+          },
+          "parts": [
+            {
+              "id": "bhhs2020-ext2-q15c-i",
+              "type": "review",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Show that the line \\(\\mathbf{r}=\\mathbf{b}+\\lambda\\mathbf{m}\\), where \\(\\mathbf{m}\\) is a unit vector, intersects the sphere with centre \\(O\\) and radius \\(a\\) units at two points if\n\n\\(a^2\\gt\\mathbf{b}\\cdot\\mathbf{b}-(\\mathbf{b}\\cdot\\mathbf{m})^2\\)",
+              "hint": "Substitute r = b + λm into r·r = a² and use the discriminant.",
+              "steps": [
+                {
+                  "explain": "Points on the sphere satisfy \\(|\\mathbf{r}|=a\\), i.e. \\(\\mathbf{r}\\cdot\\mathbf{r}=a^2\\). Substitute the line.",
+                  "work": "\\((\\mathbf{b}+\\lambda\\mathbf{m})\\cdot(\\mathbf{b}+\\lambda\\mathbf{m})=a^2\\)"
+                },
+                {
+                  "explain": "Expand; \\(\\mathbf{m}\\cdot\\mathbf{m}=1\\) because \\(\\mathbf{m}\\) is a unit vector.",
+                  "work": "\\(\\lambda^2+2\\lambda\\,(\\mathbf{b}\\cdot\\mathbf{m})+\\left(\\mathbf{b}\\cdot\\mathbf{b}-a^2\\right)=0\\)"
+                },
+                {
+                  "explain": "Two intersection points means two distinct real \\(\\lambda\\): discriminant \\(\\gt 0\\).",
+                  "work": "\\(4(\\mathbf{b}\\cdot\\mathbf{m})^2-4\\left(\\mathbf{b}\\cdot\\mathbf{b}-a^2\\right)\\gt 0\\ \\Leftrightarrow\\ a^2\\gt\\mathbf{b}\\cdot\\mathbf{b}-(\\mathbf{b}\\cdot\\mathbf{m})^2\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "15(c)(i)"
+              },
+              "answer": "Intersection: \\(\\mathbf{r}\\cdot\\mathbf{r}=a^2\\Rightarrow(\\mathbf{b}+\\lambda\\mathbf{m})\\cdot(\\mathbf{b}+\\lambda\\mathbf{m})=a^2\\Rightarrow\\lambda^2+2\\lambda\\,\\mathbf{b}\\cdot\\mathbf{m}+\\mathbf{b}\\cdot\\mathbf{b}-a^2=0\\) (since m·m = 1). Two intersections ⇔ Δ > 0: \\(4(\\mathbf{b}\\cdot\\mathbf{m})^2-4(\\mathbf{b}\\cdot\\mathbf{b}-a^2)\\gt0\\Leftrightarrow a^2\\gt\\mathbf{b}\\cdot\\mathbf{b}-(\\mathbf{b}\\cdot\\mathbf{m})^2\\).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "intersects the sphere",
+                  "note": "Substitute the line into r·r = a² to get a quadratic in λ; two points ⇔ Δ > 0."
+                }
+              ]
+            },
+            {
+              "id": "bhhs2020-ext2-q15c-ii",
+              "type": "review",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Prove that a tangent to the sphere will always be perpendicular to the sphere’s radius at the point of contact.",
+              "hint": "For a tangent the quadratic has a repeated root λ = −b·m; then check m·p = 0.",
+              "steps": [
+                {
+                  "explain": "For a tangent there is exactly one intersection: \\(\\Delta=0\\), so \\(\\mathbf{b}\\cdot\\mathbf{b}-a^2=(\\mathbf{b}\\cdot\\mathbf{m})^2\\). The quadratic from (i) becomes a perfect square.",
+                  "work": "\\(\\lambda^2+2\\lambda(\\mathbf{b}\\cdot\\mathbf{m})+(\\mathbf{b}\\cdot\\mathbf{m})^2=0\\ \\Rightarrow\\ (\\lambda+\\mathbf{b}\\cdot\\mathbf{m})^2=0\\ \\Rightarrow\\ \\lambda=-\\mathbf{b}\\cdot\\mathbf{m}\\)"
+                },
+                {
+                  "explain": "The point of contact (which is also the radius vector, since the centre is \\(O\\)):",
+                  "work": "\\(\\mathbf{p}=\\mathbf{b}-(\\mathbf{b}\\cdot\\mathbf{m})\\mathbf{m}\\)"
+                },
+                {
+                  "explain": "Dot with the tangent's direction \\(\\mathbf{m}\\), using \\(\\mathbf{m}\\cdot\\mathbf{m}=1\\).",
+                  "work": "\\(\\mathbf{m}\\cdot\\mathbf{p}=\\mathbf{m}\\cdot\\mathbf{b}-(\\mathbf{b}\\cdot\\mathbf{m})(\\mathbf{m}\\cdot\\mathbf{m})=0\\)"
+                },
+                {
+                  "explain": "So the radius is perpendicular to the tangent."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "15(c)(ii)"
+              },
+              "answer": "For a tangent Δ = 0, i.e. \\(a^2=\\mathbf{b}\\cdot\\mathbf{b}-(\\mathbf{b}\\cdot\\mathbf{m})^2\\); the quadratic becomes \\((\\lambda+\\mathbf{b}\\cdot\\mathbf{m})^2=0\\), so λ = −b·m. The contact point is \\(\\mathbf{p}=\\mathbf{b}-(\\mathbf{b}\\cdot\\mathbf{m})\\mathbf{m}\\). Then \\(\\mathbf{m}\\cdot\\mathbf{p}=\\mathbf{m}\\cdot\\mathbf{b}-(\\mathbf{b}\\cdot\\mathbf{m})(\\mathbf{m}\\cdot\\mathbf{m})=0\\). So the radius p is perpendicular to the tangent direction m.",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Prove that a tangent to the sphere",
+                  "note": "Δ = 0 gives a repeated root λ = −b·m; the radius is p = b + λm."
                 }
               ]
             }
@@ -1397,6 +1585,51 @@
               "note": "Perpendicular ⇔ dot product = 0. Find b − a first."
             }
           ]
+        },
+        {
+          "id": "bhhs2020-ext2-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "Given the vectors \\(\\mathbf{u}=3\\mathbf{i}-4\\mathbf{j}+12\\mathbf{k}\\) and \\(\\mathbf{v}=2\\mathbf{i}+2\\mathbf{j}-\\mathbf{k}\\), the vector projection of \\(\\mathbf{u}\\) on \\(\\mathbf{v}\\) is;",
+          "hint": "proj_v u = (u·v / v·v) v — it points along v.",
+          "steps": [
+            {
+              "explain": "The projection of \\(\\mathbf{u}\\) onto \\(\\mathbf{v}\\) is a multiple of \\(\\mathbf{v}\\).",
+              "work": "\\(\\operatorname{proj}_{\\mathbf{v}}\\mathbf{u}=\\frac{\\mathbf{u}\\cdot\\mathbf{v}}{\\mathbf{v}\\cdot\\mathbf{v}}\\,\\mathbf{v}\\)"
+            },
+            {
+              "explain": "Dot products.",
+              "work": "\\(\\mathbf{u}\\cdot\\mathbf{v}=6-8-12=-14,\\qquad\\mathbf{v}\\cdot\\mathbf{v}=4+4+1=9\\)"
+            },
+            {
+              "explain": "So",
+              "work": "\\(\\operatorname{proj}_{\\mathbf{v}}\\mathbf{u}=-\\frac{14}{9}\\left(2\\mathbf{i}+2\\mathbf{j}-\\mathbf{k}\\right)\\)"
+            },
+            {
+              "explain": "A divides by \\(|\\mathbf{v}|=3\\) instead of \\(|\\mathbf{v}|^2\\); C and D project onto \\(\\mathbf{u}\\) instead."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills 2020 4U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "3"
+          },
+          "options": [
+            "\\(-\\frac{14}{3}\\left(2\\mathbf{i}+2\\mathbf{j}-\\mathbf{k}\\right)\\)",
+            "\\(-\\frac{14}{9}\\left(2\\mathbf{i}+2\\mathbf{j}-\\mathbf{k}\\right)\\)",
+            "\\(-\\frac{14}{13}\\left(3\\mathbf{i}-4\\mathbf{j}+12\\mathbf{k}\\right)\\)",
+            "\\(-\\frac{14}{169}\\left(3\\mathbf{i}-4\\mathbf{j}+12\\mathbf{k}\\right)\\)"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "the vector projection of",
+              "note": "Projection of u ON v is a multiple of v: divide by v·v = |v|²."
+            }
+          ]
         }
       ]
     },
@@ -1659,6 +1892,48 @@
               "note": "Bisecting means AM = MC and DM = MB as vectors, i.e. both equal p and q respectively."
             }
           ]
+        },
+        {
+          "id": "bhhs2020-ext2-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "\\(P\\), \\(Q\\) and \\(R\\) are three collinear points with position vectors \\(\\mathbf{p}\\), \\(\\mathbf{q}\\) and \\(\\mathbf{r}\\) respectively, where \\(Q\\) lies between \\(P\\) and \\(R\\).\nIf \\(\\left|\\overrightarrow{QR}\\right|=\\frac12\\left|\\overrightarrow{PQ}\\right|\\), then \\(\\mathbf{r}=\\)",
+          "hint": "Same direction and half the length: QR = ½PQ as vectors.",
+          "steps": [
+            {
+              "explain": "\\(Q\\) is between \\(P\\) and \\(R\\), so \\(\\overrightarrow{QR}\\) points the same way as \\(\\overrightarrow{PQ}\\) and is half as long.",
+              "work": "\\(\\overrightarrow{QR}=\\frac12\\overrightarrow{PQ}\\)"
+            },
+            {
+              "explain": "Write each as end minus start.",
+              "work": "\\(\\mathbf{r}-\\mathbf{q}=\\frac12(\\mathbf{q}-\\mathbf{p})\\)"
+            },
+            {
+              "explain": "Solve for \\(\\mathbf{r}\\).",
+              "work": "\\(\\mathbf{r}=\\mathbf{q}+\\frac12\\mathbf{q}-\\frac12\\mathbf{p}=\\frac32\\mathbf{q}-\\frac12\\mathbf{p}\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills 2020 4U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "9"
+          },
+          "options": [
+            "\\(\\frac32\\mathbf{q}-\\frac12\\mathbf{p}\\)",
+            "\\(\\frac32\\mathbf{p}-\\frac12\\mathbf{q}\\)",
+            "\\(\\frac12\\mathbf{q}-\\frac32\\mathbf{p}\\)",
+            "\\(\\frac12\\mathbf{p}-\\frac32\\mathbf{q}\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "where \\(Q\\) lies between \\(P\\) and \\(R\\)",
+              "note": "Q between P and R means QR and PQ point the same way: r − q = ½(q − p)."
+            }
+          ]
         }
       ]
     },
@@ -1780,6 +2055,109 @@
                 {
                   "text": "Find the coordinates of \\(F\\)",
                   "note": "F is 1 unit from O, D and E. Subtracting the distance equations gives x, then y, then z."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bhhs2020-ext2-q13d",
+          "type": "multipart",
+          "stem": "A rectangular prism with square base \\(OADB\\) is shown below.\n\n\\(O\\) is the origin and points \\(A\\), \\(B\\) and \\(C\\) have position vectors of \\(\\begin{pmatrix}4\\\\ 0\\\\ 0\\end{pmatrix},\\ \\begin{pmatrix}0\\\\ 4\\\\ 0\\end{pmatrix}\\) and \\(\\begin{pmatrix}0\\\\ 0\\\\ 8\\end{pmatrix}\\) respectively.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 300\" width=\"340\" height=\"300\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker><marker id=\"ah1e293b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#1e293b\"/></marker></defs><rect width=\"340\" height=\"300\" rx=\"8\" fill=\"white\"/><line x1=\"150.0\" y1=\"185.0\" x2=\"47.4\" y2=\"276.8\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\" marker-end=\"url(#ah64748b)\"/><line x1=\"150.0\" y1=\"185.0\" x2=\"326.8\" y2=\"185.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"150.0\" y1=\"185.0\" x2=\"150.0\" y2=\"32.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"49.7\" y=\"278.8\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">x</text><text x=\"322.8\" y=\"177.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">y</text><text x=\"156.0\" y=\"34.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">z</text><line x1=\"74.0\" y1=\"253.0\" x2=\"210.0\" y2=\"253.0\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"210.0\" y1=\"253.0\" x2=\"286.0\" y2=\"185.0\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"74.0\" y1=\"253.0\" x2=\"74.0\" y2=\"117.0\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"210.0\" y1=\"253.0\" x2=\"210.0\" y2=\"117.0\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"286.0\" y1=\"185.0\" x2=\"286.0\" y2=\"49.0\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"49.0\" x2=\"74.0\" y2=\"117.0\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"74.0\" y1=\"117.0\" x2=\"210.0\" y2=\"117.0\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"210.0\" y1=\"117.0\" x2=\"286.0\" y2=\"49.0\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"286.0\" y1=\"49.0\" x2=\"150.0\" y2=\"49.0\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"74.0\" y1=\"253.0\" x2=\"286.0\" y2=\"49.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><line x1=\"286.0\" y1=\"185.0\" x2=\"74.0\" y2=\"117.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><line x1=\"180.0\" y1=\"151.0\" x2=\"150.0\" y2=\"185.0\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><line x1=\"180.0\" y1=\"151.0\" x2=\"74.0\" y2=\"253.0\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"180.0\" y1=\"151.0\" x2=\"210.0\" y2=\"253.0\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"180.0\" y1=\"151.0\" x2=\"286.0\" y2=\"185.0\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"158.0\" y=\"199.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">O</text><text x=\"58.0\" y=\"269.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"294.0\" y=\"197.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"216.0\" y=\"269.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">D</text><text x=\"131.1\" y=\"45.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">C</text><text x=\"52.3\" y=\"117.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">G</text><text x=\"294.0\" y=\"45.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">E</text><text x=\"194.1\" y=\"109.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">F</text><text x=\"188.0\" y=\"147.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#dc2626\" font-style=\"italic\">V</text></svg>"
+          },
+          "meta": {
+            "source": "Baulkham Hills 2020 4U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "13(d)"
+          },
+          "parts": [
+            {
+              "id": "bhhs2020-ext2-q13d-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Determine the vector equation of the line containing \\(A\\) and \\(E\\).",
+              "hint": "E = (0, 4, 8); direction = E − A.",
+              "steps": [
+                {
+                  "explain": "\\(E\\) is the top corner above \\(B\\): \\(E=(0,4,8)\\).",
+                  "work": "\\(\\overrightarrow{AE}=\\begin{pmatrix}0\\\\ 4\\\\ 8\\end{pmatrix}-\\begin{pmatrix}4\\\\ 0\\\\ 0\\end{pmatrix}=\\begin{pmatrix}-4\\\\ 4\\\\ 8\\end{pmatrix}=4\\begin{pmatrix}-1\\\\ 1\\\\ 2\\end{pmatrix}\\)"
+                },
+                {
+                  "explain": "A line through \\(A\\) with direction \\(\\overrightarrow{AE}\\) (any multiple will do).",
+                  "work": "\\(\\mathbf{r}=\\begin{pmatrix}4\\\\ 0\\\\ 0\\end{pmatrix}+\\lambda\\begin{pmatrix}-1\\\\ 1\\\\ 2\\end{pmatrix}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "13(d)(i)"
+              },
+              "options": [
+                "\\(\\mathbf{r}=\\begin{pmatrix}4\\\\ 0\\\\ 0\\end{pmatrix}+\\lambda\\begin{pmatrix}0\\\\ 4\\\\ 8\\end{pmatrix}\\)",
+                "\\(\\mathbf{r}=\\begin{pmatrix}0\\\\ 4\\\\ 8\\end{pmatrix}+\\lambda\\begin{pmatrix}4\\\\ 0\\\\ 0\\end{pmatrix}\\)",
+                "\\(\\mathbf{r}=\\begin{pmatrix}4\\\\ 0\\\\ 0\\end{pmatrix}+\\lambda\\begin{pmatrix}1\\\\ 1\\\\ 2\\end{pmatrix}\\)",
+                "\\(\\mathbf{r}=\\begin{pmatrix}4\\\\ 0\\\\ 0\\end{pmatrix}+\\lambda\\begin{pmatrix}-1\\\\ 1\\\\ 2\\end{pmatrix}\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "the line containing \\(A\\) and \\(E\\)",
+                  "note": "E is directly above B at height 8: E = (0, 4, 8)."
+                }
+              ]
+            },
+            {
+              "id": "bhhs2020-ext2-q13d-ii",
+              "type": "mc",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "The vectors \\(\\overrightarrow{AE}\\) and \\(\\overrightarrow{BG}\\) intersect at \\(V\\). \\(V\\) is joined to \\(O\\), \\(A\\), \\(D\\) and \\(B\\) to create a square pyramid.\nUsing vectors, calculate the angle that one of the triangular faces of the pyramid makes with the base, to the nearest degree.",
+              "hint": "Use vectors from the midpoint of a base edge: one up the face to V, one across the base to the centre.",
+              "steps": [
+                {
+                  "explain": "The diagonals of the box meet at its centre.",
+                  "work": "\\(V=(2,2,4)\\)"
+                },
+                {
+                  "explain": "Take face \\(VBD\\). Its base edge \\(BD\\) has midpoint \\(M=(2,4,0)\\). \\(VM\\) (in the face) and \\(NM\\) (in the base, from the base centre \\(N=(2,2,0)\\)) are both perpendicular to \\(BD\\), so the angle between them is the angle between the face and the base.",
+                  "work": "\\(\\overrightarrow{MV}=\\begin{pmatrix}0\\\\ -2\\\\ 4\\end{pmatrix},\\qquad\\overrightarrow{MN}=\\begin{pmatrix}0\\\\ -2\\\\ 0\\end{pmatrix}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 300\" width=\"340\" height=\"300\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker><marker id=\"ah1e293b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#1e293b\"/></marker></defs><rect width=\"340\" height=\"300\" rx=\"8\" fill=\"white\"/><line x1=\"150.0\" y1=\"185.0\" x2=\"47.4\" y2=\"276.8\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\" marker-end=\"url(#ah64748b)\"/><line x1=\"150.0\" y1=\"185.0\" x2=\"326.8\" y2=\"185.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"150.0\" y1=\"185.0\" x2=\"150.0\" y2=\"32.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"49.7\" y=\"278.8\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">x</text><text x=\"322.8\" y=\"177.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">y</text><text x=\"156.0\" y=\"34.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">z</text><line x1=\"74.0\" y1=\"253.0\" x2=\"210.0\" y2=\"253.0\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"210.0\" y1=\"253.0\" x2=\"286.0\" y2=\"185.0\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"74.0\" y1=\"253.0\" x2=\"74.0\" y2=\"117.0\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"210.0\" y1=\"253.0\" x2=\"210.0\" y2=\"117.0\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"286.0\" y1=\"185.0\" x2=\"286.0\" y2=\"49.0\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"49.0\" x2=\"74.0\" y2=\"117.0\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"74.0\" y1=\"117.0\" x2=\"210.0\" y2=\"117.0\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"210.0\" y1=\"117.0\" x2=\"286.0\" y2=\"49.0\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"286.0\" y1=\"49.0\" x2=\"150.0\" y2=\"49.0\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"74.0\" y1=\"253.0\" x2=\"286.0\" y2=\"49.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><line x1=\"286.0\" y1=\"185.0\" x2=\"74.0\" y2=\"117.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><line x1=\"180.0\" y1=\"151.0\" x2=\"150.0\" y2=\"185.0\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><line x1=\"180.0\" y1=\"151.0\" x2=\"74.0\" y2=\"253.0\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"180.0\" y1=\"151.0\" x2=\"210.0\" y2=\"253.0\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"180.0\" y1=\"151.0\" x2=\"286.0\" y2=\"185.0\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"158.0\" y=\"199.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">O</text><text x=\"58.0\" y=\"269.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"294.0\" y=\"197.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"216.0\" y=\"269.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">D</text><text x=\"131.1\" y=\"45.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">C</text><text x=\"52.3\" y=\"117.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">G</text><text x=\"294.0\" y=\"45.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">E</text><text x=\"194.1\" y=\"109.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">F</text><text x=\"188.0\" y=\"147.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#dc2626\" font-style=\"italic\">V</text><line x1=\"180.0\" y1=\"151.0\" x2=\"248.0\" y2=\"219.0\" stroke=\"#dc2626\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"180.0\" y1=\"219.0\" x2=\"248.0\" y2=\"219.0\" stroke=\"#2563eb\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"180.0\" y1=\"151.0\" x2=\"180.0\" y2=\"219.0\" stroke=\"#16a34a\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><circle cx=\"248.0\" cy=\"219.0\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"180.0\" cy=\"219.0\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"256.0\" y=\"233.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"12.3\" fill=\"#dc2626\" font-style=\"italic\">M</text><text x=\"267.4\" y=\"233.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"11.0\" fill=\"#dc2626\">(2, 4, 0)</text><text x=\"134.5\" y=\"235.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"11.0\" fill=\"#2563eb\">(2, 2, 0)</text><text x=\"217.8\" y=\"209.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#dc2626\" font-style=\"italic\">θ</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Dot product.",
+                  "work": "\\(\\cos\\theta=\\frac{\\overrightarrow{MV}\\cdot\\overrightarrow{MN}}{|\\overrightarrow{MV}||\\overrightarrow{MN}|}=\\frac{0+4+0}{\\sqrt{20}\\cdot2}=\\frac{1}{\\sqrt5}\\)"
+                },
+                {
+                  "explain": "So",
+                  "work": "\\(\\theta=\\cos^{-1}\\frac{1}{\\sqrt5}\\approx63.4^\\circ\\approx63^\\circ\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "13(d)(ii)"
+              },
+              "options": [
+                "\\(70^\\circ\\)",
+                "\\(45^\\circ\\)",
+                "\\(63^\\circ\\)",
+                "\\(27^\\circ\\)"
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "the angle that one of the triangular faces of the pyramid makes with the base",
+                  "note": "Use two vectors perpendicular to a base edge at its midpoint: one in the face, one in the base."
                 }
               ]
             }

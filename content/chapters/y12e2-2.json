@@ -545,6 +545,46 @@
               "note": "Swap ∀ ↔ ∃ in order, then change xy = 1 to xy ≠ 1."
             }
           ]
+        },
+        {
+          "id": "bhhs2020-ext2-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "Consider the statement;\n“Every day next week, Max will do at least one maths problem”\nIf this statement is not true, which of the following statements is certainly true?",
+          "hint": "Negation of 'every day … at least one' is 'some day … none'.",
+          "steps": [
+            {
+              "explain": "The statement is 'for every day, at least one problem'. Its negation is 'there exists a day without at least one problem'.",
+              "work": "\\(\\neg\\left(\\forall\\,\\text{day}:\\ \\ge1\\right)\\ \\equiv\\ \\exists\\,\\text{day}:\\ \\lt 1\\)"
+            },
+            {
+              "explain": "'Fewer than one problem' means no problems. So some day next week Max does no maths problems: A."
+            },
+            {
+              "explain": "D is too strong (it claims every day), and B, C don't follow."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills 2020 4U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "6"
+          },
+          "options": [
+            "Some day next week, Max will do no maths problems",
+            "Some day next week, Max will do more than one maths problem",
+            "On no day next week will Max do more than one maths problem",
+            "Every day next week, Max will do no maths problems"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "If this statement is not true",
+              "note": "Negate 'every day' to 'some day', and 'at least one' to 'none'."
+            }
+          ]
         }
       ]
     },
@@ -992,6 +1032,95 @@
               "note": "Assume √n is rational, write it as a/b, square, and see what that says about n."
             }
           ]
+        },
+        {
+          "id": "bhhs2020-ext2-q12a",
+          "type": "multipart",
+          "stem": "Consider this statement about two positive integers \\(a\\) and \\(b\\);\n“ If \\(a^2+b^2\\) is even then either both \\(a\\) and \\(b\\) are even or both \\(a\\) and \\(b\\) are odd ”",
+          "meta": {
+            "source": "Baulkham Hills 2020 4U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "12(a)"
+          },
+          "parts": [
+            {
+              "id": "bhhs2020-ext2-q12a-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Write down the contrapositive of the statement.",
+              "hint": "Contrapositive: not Q ⇒ not P. 'Not (both even or both odd)' means one even and one odd.",
+              "steps": [
+                {
+                  "explain": "The statement is \\(X\\Rightarrow(Y\\vee Z)\\): \\(X\\): \\(a^2+b^2\\) even; \\(Y\\): both even; \\(Z\\): both odd."
+                },
+                {
+                  "explain": "The contrapositive is \\(\\neg(Y\\vee Z)\\Rightarrow\\neg X\\), i.e. \\((\\neg Y\\wedge\\neg Z)\\Rightarrow\\neg X\\).",
+                  "work": "\\(\\neg Y\\wedge\\neg Z:\\ \\text{one even and one odd},\\qquad\\neg X:\\ a^2+b^2\\ \\text{odd}\\)"
+                },
+                {
+                  "explain": "So: if one of \\(a,b\\) is even and the other is odd, then \\(a^2+b^2\\) is odd. (Option B is the converse; C is the inverse.)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "12(a)(i)"
+              },
+              "options": [
+                "If both \\(a\\) and \\(b\\) are even or both are odd, then \\(a^2+b^2\\) is even.",
+                "If \\(a^2+b^2\\) is odd, then one of \\(a\\), \\(b\\) is even and the other is odd.",
+                "If \\(a\\) and \\(b\\) are both odd, then \\(a^2+b^2\\) is odd.",
+                "If one of \\(a\\), \\(b\\) is even and the other is odd, then \\(a^2+b^2\\) is odd."
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "contrapositive",
+                  "note": "Negate both parts and swap them; 'not (Y or Z)' is 'not Y and not Z'."
+                }
+              ]
+            },
+            {
+              "id": "bhhs2020-ext2-q12a-ii",
+              "type": "review",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Prove the original statement by contraposition.",
+              "hint": "Prove the contrapositive with a = 2m, b = 2n + 1.",
+              "steps": [
+                {
+                  "explain": "Prove the contrapositive from (i). Suppose one is even and the other odd; without loss of generality \\(a\\) even, \\(b\\) odd.",
+                  "work": "\\(a=2m,\\qquad b=2n+1,\\qquad m,n\\in\\mathbb{Z}\\)"
+                },
+                {
+                  "explain": "Compute \\(a^2+b^2\\).",
+                  "work": "\\(a^2+b^2=4m^2+4n^2+4n+1=2\\left(2m^2+2n^2+2n\\right)+1\\)"
+                },
+                {
+                  "explain": "This is one more than an even number, so it is odd. The contrapositive is true, so the original statement is true."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "12(a)(ii)"
+              },
+              "answer": "Prove the contrapositive: let a be even and b odd (WLOG), a = 2m, b = 2n + 1. Then \\(a^2+b^2=4m^2+4n^2+4n+1=2(2m^2+2n^2+2n)+1\\), which is odd. So if one is even and the other odd, a² + b² is odd; hence by contraposition, if a² + b² is even then a, b are both even or both odd.",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "by contraposition",
+                  "note": "Assume one even, one odd (a = 2m, b = 2n + 1) and show a² + b² is odd."
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1379,6 +1508,83 @@
                   "note": "Apply part (ii) to the numbers a², b², c²."
                 }
               ]
+            }
+          ]
+        },
+        {
+          "id": "bhhs2020-ext2-q15a",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "Under what condition will the arithmetic mean of any set of numbers equal the geometric mean?",
+          "hint": "Try two numbers, e.g. 2 and 8, then 4 and 4.",
+          "steps": [
+            {
+              "explain": "For positive numbers \\(A_n\\ge G_n\\) (the AM–GM inequality).",
+              "work": "\\(\\frac{a_1+a_2+\\dots+a_n}{n}\\ge\\left(a_1a_2\\cdots a_n\\right)^{\\frac1n}\\)"
+            },
+            {
+              "explain": "Equality holds exactly when all the numbers are equal: \\(a_1=a_2=\\dots=a_n\\). E.g. 2 and 8: AM = 5, GM = 4; 4 and 4: AM = GM = 4."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills 2020 4U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "15(a)"
+          },
+          "options": [
+            "When the numbers are all positive",
+            "When there are exactly two numbers",
+            "When the numbers form a geometric sequence",
+            "When all the numbers are equal"
+          ],
+          "answer": 3,
+          "keyPoints": [
+            {
+              "text": "arithmetic mean of any set of numbers equal the geometric mean",
+              "note": "Equality in AM ≥ GM happens only in one special case."
+            }
+          ]
+        },
+        {
+          "id": "bhhs2020-ext2-q15b",
+          "type": "review",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "Heron’s formula states that the area of a triangle is given by\n\n\\(A=\\sqrt{s(s-x)(s-y)(s-z)}\\)\n\nwhere \\(x\\), \\(y\\) and \\(z\\) are the lengths of the sides of the triangle and \\(s\\) is the semi-perimeter.\n\nShow that the triangle of maximum area with constant perimeter is an equilateral triangle.",
+          "hint": "Apply AM ≥ GM to s − x, s − y, s − z; their sum is s.",
+          "steps": [
+            {
+              "explain": "Apply AM–GM to the three positive numbers \\(s-x\\), \\(s-y\\), \\(s-z\\).",
+              "work": "\\(\\frac{(s-x)+(s-y)+(s-z)}{3}\\ge\\sqrt[3]{(s-x)(s-y)(s-z)}\\)"
+            },
+            {
+              "explain": "The perimeter is \\(x+y+z=2s\\), so the left side simplifies.",
+              "work": "\\(\\frac{3s-(x+y+z)}{3}=\\frac{3s-2s}{3}=\\frac{s}{3}\\ \\Rightarrow\\ (s-x)(s-y)(s-z)\\le\\frac{s^3}{27}\\)"
+            },
+            {
+              "explain": "Multiply by \\(s\\) and take the square root.",
+              "work": "\\(A=\\sqrt{s(s-x)(s-y)(s-z)}\\le\\sqrt{\\frac{s^4}{27}}=\\frac{s^2}{3\\sqrt3}\\)"
+            },
+            {
+              "explain": "With constant perimeter this bound is a constant, reached exactly when AM = GM, i.e. \\(s-x=s-y=s-z\\), so \\(x=y=z\\): the triangle is equilateral."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills 2020 4U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "15(b)"
+          },
+          "answer": "By AM ≥ GM on s − x, s − y, s − z (all positive): \\(\\frac{(s-x)+(s-y)+(s-z)}{3}\\ge\\sqrt[3]{(s-x)(s-y)(s-z)}\\). The left side is \\(\\frac{3s-2s}{3}=\\frac s3\\), so \\((s-x)(s-y)(s-z)\\le\\frac{s^3}{27}\\) and \\(A\\le\\sqrt{\\frac{s^4}{27}}=\\frac{s^2}{3\\sqrt3}\\), a constant. Equality (maximum area) holds when s − x = s − y = s − z, i.e. x = y = z: equilateral.",
+          "manual": true,
+          "keyPoints": [
+            {
+              "text": "Show that the triangle of maximum area",
+              "note": "AM–GM on (s − x), (s − y), (s − z); equality when they are equal."
             }
           ]
         }
@@ -1818,6 +2024,142 @@
             {
               "text": "use mathematical induction",
               "note": "Prove divisibility by 30. Rewrite k² + k + 1 = (k − 1)(k + 2) + 3 to get 4 consecutive numbers."
+            }
+          ]
+        },
+        {
+          "id": "bhhs2020-ext2-q16b",
+          "type": "multipart",
+          "stem": "The real numbers \\(a_1,a_2,a_3,\\dots\\) are all positive. For each positive \\(n\\), \\(A_n\\) and \\(G_n\\) are defined by\n\\(A_n=\\frac{a_1+a_2+\\dots+a_n}{n}\\) and \\(G_n=(a_1a_2\\dots a_n)^{\\frac{1}{n}}\\)",
+          "meta": {
+            "source": "Baulkham Hills 2020 4U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "16(b)"
+          },
+          "parts": [
+            {
+              "id": "bhhs2020-ext2-q16b-i",
+              "type": "review",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Show that, for any given positive integer \\(k\\),\n\nif \\((\\lambda_k)^{k+1}-(k+1)\\lambda_k+k\\ge0\\), where \\(\\lambda_k=\\left(\\frac{a_{k+1}}{G_k}\\right)^{\\frac{1}{k+1}}\\)\n\nthen \\((k+1)\\left(A_{k+1}-G_{k+1}\\right)\\ge k\\left(A_k-G_k\\right)\\)",
+              "hint": "Reduce the difference to a_{k+1} + kG_k − (k+1)G_{k+1}, factor out G_k and write everything with λ_k.",
+              "steps": [
+                {
+                  "explain": "Simplify the difference using \\((k+1)A_{k+1}=a_1+\\dots+a_{k+1}\\) and \\(kA_k=a_1+\\dots+a_k\\).",
+                  "work": "\\((k+1)\\left(A_{k+1}-G_{k+1}\\right)-k\\left(A_k-G_k\\right)=a_{k+1}+kG_k-(k+1)G_{k+1}\\)"
+                },
+                {
+                  "explain": "Factor out \\(G_k\\gt 0\\).",
+                  "work": "\\(=G_k\\left[\\frac{a_{k+1}}{G_k}+k-(k+1)\\frac{G_{k+1}}{G_k}\\right]\\)"
+                },
+                {
+                  "explain": "Express both ratios with \\(\\lambda_k\\). Using \\(G_{k+1}^{k+1}=G_k^k\\,a_{k+1}\\):",
+                  "work": "\\(\\frac{a_{k+1}}{G_k}=\\lambda_k^{k+1},\\qquad\\left(\\frac{G_{k+1}}{G_k}\\right)^{k+1}=\\frac{G_k^ka_{k+1}}{G_k^{k+1}}=\\frac{a_{k+1}}{G_k}\\ \\Rightarrow\\ \\frac{G_{k+1}}{G_k}=\\lambda_k\\)"
+                },
+                {
+                  "explain": "So the difference is \\(G_k\\left[\\lambda_k^{k+1}-(k+1)\\lambda_k+k\\right]\\), which is \\(\\ge0\\) under the given condition."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "16(b)(i)"
+              },
+              "answer": "\\((k+1)(A_{k+1}-G_{k+1})-k(A_k-G_k)=a_{k+1}+kG_k-(k+1)G_{k+1}=G_k\\left[\\frac{a_{k+1}}{G_k}+k-(k+1)\\frac{G_{k+1}}{G_k}\\right]\\). Now \\(\\frac{a_{k+1}}{G_k}=\\lambda_k^{k+1}\\) and \\(\\frac{G_{k+1}}{G_k}=\\frac{(a_1\\cdots a_{k+1})^{1/(k+1)}}{(a_1\\cdots a_k)^{1/k}}=\\left(\\frac{a_{k+1}}{G_k}\\right)^{1/(k+1)}=\\lambda_k\\). So the difference is \\(G_k[\\lambda_k^{k+1}-(k+1)\\lambda_k+k]\\ge0\\) since G_k > 0.",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Show that, for any given positive integer",
+                  "note": "Use (k+1)A_{k+1} − kA_k = a_{k+1} and G_{k+1}/G_k = λ_k."
+                }
+              ]
+            },
+            {
+              "id": "bhhs2020-ext2-q16b-ii",
+              "type": "review",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Let \\(f(x)=x^{k+1}-(k+1)x+k\\), where \\(x\\gt 0\\) and \\(k\\in\\mathbb{Z}^+\\)\nShow that \\(f(x)\\ge0\\)",
+              "hint": "Find the stationary point (x = 1) and show it is a minimum with value 0.",
+              "steps": [
+                {
+                  "explain": "Differentiate and find stationary points (for \\(x\\gt0\\)).",
+                  "work": "\\(f'(x)=(k+1)x^k-(k+1)=0\\ \\Rightarrow\\ x^k=1\\ \\Rightarrow\\ x=1\\)"
+                },
+                {
+                  "explain": "Second derivative test.",
+                  "work": "\\(f''(x)=k(k+1)x^{k-1}\\gt 0\\ \\Rightarrow\\ \\text{minimum at }x=1\\)"
+                },
+                {
+                  "explain": "The minimum value:",
+                  "work": "\\(f(1)=1-(k+1)+k=0\\)"
+                },
+                {
+                  "explain": "It is the only stationary point and a minimum, so \\(f(x)\\ge0\\) for all \\(x\\gt 0\\)."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "16(b)(ii)"
+              },
+              "answer": "\\(f'(x)=(k+1)x^k-(k+1)=0\\Rightarrow x^k=1\\Rightarrow x=1\\) (x > 0). \\(f''(x)=k(k+1)x^{k-1}\\gt0\\), so x = 1 is the only stationary point and it is a minimum, with f(1) = 1 − (k+1) + k = 0. Hence f(x) ≥ 0 for x > 0.",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Show that \\(f(x)\\ge0\\)",
+                  "note": "Use calculus: f′(x) = 0 only at x = 1, where f has its minimum value 0."
+                }
+              ]
+            },
+            {
+              "id": "bhhs2020-ext2-q16b-iii",
+              "type": "review",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Hence prove by mathematical induction\n\n\\(A_n\\ge G_n\\ \\forall\\ n:n\\in\\mathbb{Z}^+\\)",
+              "hint": "Base case n = 1; in the step use (ii) to meet the condition in (i).",
+              "steps": [
+                {
+                  "explain": "Base case \\(n=1\\).",
+                  "work": "\\(A_1=a_1,\\quad G_1=a_1^1=a_1\\ \\Rightarrow\\ A_1=G_1\\)"
+                },
+                {
+                  "explain": "Assume true for \\(n=k\\): \\(A_k\\ge G_k\\)."
+                },
+                {
+                  "explain": "\\(\\lambda_k\\gt0\\), so by (ii) with \\(x=\\lambda_k\\), the condition in (i) holds.",
+                  "work": "\\(\\lambda_k^{k+1}-(k+1)\\lambda_k+k=f(\\lambda_k)\\ge0\\)"
+                },
+                {
+                  "explain": "Then by (i) and the assumption:",
+                  "work": "\\((k+1)\\left(A_{k+1}-G_{k+1}\\right)\\ge k\\left(A_k-G_k\\right)\\ge0\\ \\Rightarrow\\ A_{k+1}\\ge G_{k+1}\\)"
+                },
+                {
+                  "explain": "So the result holds for all positive integers \\(n\\) by mathematical induction."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "16(b)(iii)"
+              },
+              "answer": "n = 1: A₁ = a₁ = G₁. Assume A_k ≥ G_k. By (ii) with x = λ_k > 0, λ_k^{k+1} − (k+1)λ_k + k ≥ 0, so by (i) (k+1)(A_{k+1} − G_{k+1}) ≥ k(A_k − G_k) ≥ 0, giving A_{k+1} ≥ G_{k+1}. True for all positive integers by induction.",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Hence prove by mathematical induction",
+                  "note": "(ii) guarantees the condition of (i); then use the inductive assumption."
+                }
+              ]
             }
           ]
         }
@@ -2317,6 +2659,143 @@
             {
               "text": "By forming a series of \\(n\\) inequalities",
               "note": "Write the inequality for x = 1 to n and add them all."
+            }
+          ]
+        },
+        {
+          "id": "bhhs2020-ext2-q16a",
+          "type": "multipart",
+          "stem": "In the diagram below, the graph of \\(y=\\frac{1}{\\sqrt{x}}\\) has been drawn, and \\(n\\) rectangles have been constructed between \\(x=n\\) and \\(x=2n\\), each of width 1 unit",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 230\" width=\"360\" height=\"230\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"360\" height=\"230\" rx=\"8\" fill=\"white\"/><path d=\"M90.0 200.0L150.0 200.0L150.0 70.0L90.0 70.0Z\" fill=\"white\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linejoin=\"round\" fill-opacity=\"0\"/><line x1=\"90.0\" y1=\"108.1\" x2=\"150.0\" y2=\"108.1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"2 3\"/><path d=\"M150.0 200.0L210.0 200.0L210.0 108.1L150.0 108.1Z\" fill=\"white\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linejoin=\"round\" fill-opacity=\"0\"/><line x1=\"150.0\" y1=\"124.9\" x2=\"210.0\" y2=\"124.9\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"2 3\"/><path d=\"M289.8 200.0L349.8 200.0L349.8 137.5L289.8 137.5Z\" fill=\"white\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linejoin=\"round\" fill-opacity=\"0\"/><line x1=\"289.8\" y1=\"143.7\" x2=\"349.8\" y2=\"143.7\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"2 3\"/><line x1=\"14.0\" y1=\"200.0\" x2=\"352.0\" y2=\"200.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"40.0\" y1=\"224.0\" x2=\"40.0\" y2=\"10.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><path d=\"M63.0 24.7L64.5 28.6L66.0 32.2L67.5 35.7L69.1 38.9L70.6 41.9L72.1 44.8L73.6 47.5L75.1 50.1L76.6 52.5L78.2 54.9L79.7 57.1L81.2 59.2L82.7 61.3L84.2 63.2L85.7 65.1L87.2 66.9L88.8 68.6L90.3 70.3L91.8 71.9L93.3 73.4L94.8 74.9L96.3 76.4L97.8 77.7L99.4 79.1L100.9 80.4L102.4 81.6L103.9 82.9L105.4 84.0L106.9 85.2L108.5 86.3L110.0 87.4L111.5 88.4L113.0 89.5L114.5 90.5L116.0 91.4L117.5 92.4L119.1 93.3L120.6 94.2L122.1 95.1L123.6 95.9L125.1 96.7L126.6 97.6L128.1 98.4L129.7 99.1L131.2 99.9L132.7 100.6L134.2 101.4L135.7 102.1L137.2 102.8L138.8 103.4L140.3 104.1L141.8 104.8L143.3 105.4L144.8 106.0L146.3 106.6L147.8 107.2L149.4 107.8L150.9 108.4L152.4 109.0L153.9 109.5L155.4 110.1L156.9 110.6L158.4 111.1L160.0 111.7L161.5 112.2L163.0 112.7L164.5 113.2L166.0 113.7L167.5 114.1L169.1 114.6L170.6 115.1L172.1 115.5L173.6 116.0L175.1 116.4L176.6 116.8L178.1 117.3L179.7 117.7L181.2 118.1L182.7 118.5L184.2 118.9L185.7 119.3L187.2 119.7L188.7 120.1L190.3 120.5L191.8 120.8L193.3 121.2L194.8 121.6L196.3 121.9L197.8 122.3L199.3 122.6L200.9 123.0L202.4 123.3L203.9 123.6L205.4 124.0L206.9 124.3L208.4 124.6L210.0 124.9L211.5 125.2L213.0 125.6L214.5 125.9L216.0 126.2L217.5 126.5L219.0 126.8L220.6 127.1L222.1 127.3L223.6 127.6L225.1 127.9L226.6 128.2L228.1 128.5L229.6 128.7L231.2 129.0L232.7 129.3L234.2 129.5L235.7 129.8L237.2 130.0L238.7 130.3L240.3 130.6L241.8 130.8L243.3 131.0L244.8 131.3L246.3 131.5L247.8 131.8L249.3 132.0L250.9 132.2L252.4 132.5L253.9 132.7L255.4 132.9L256.9 133.2L258.4 133.4L260.0 133.6L261.5 133.8L263.0 134.0L264.5 134.2L266.0 134.5L267.5 134.7L269.0 134.9L270.6 135.1L272.1 135.3L273.6 135.5L275.1 135.7L276.6 135.9L278.1 136.1L279.6 136.3L281.2 136.5L282.7 136.7L284.2 136.8L285.7 137.0L287.2 137.2L288.7 137.4L290.2 137.6L291.8 137.8L293.3 137.9L294.8 138.1L296.3 138.3L297.8 138.5L299.3 138.6L300.9 138.8L302.4 139.0L303.9 139.2L305.4 139.3L306.9 139.5L308.4 139.7L309.9 139.8L311.5 140.0L313.0 140.1L314.5 140.3L316.0 140.5L317.5 140.6L319.0 140.8L320.6 140.9L322.1 141.1L323.6 141.2L325.1 141.4L326.6 141.5L328.1 141.7L329.6 141.8L331.2 142.0L332.7 142.1L334.2 142.3L335.7 142.4L337.2 142.5L338.7 142.7L340.2 142.8L341.8 143.0L343.3 143.1L344.8 143.2L346.3 143.4L347.8 143.5L349.3 143.6L350.9 143.8L352.4 143.9L353.9 144.0L355.4 144.2L356.9 144.3L358.4 144.4L359.9 144.6L361.5 144.7L363.0 144.8L364.5 144.9L366.0 145.1\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><text x=\"86.3\" y=\"218.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"12.3\" fill=\"#1e293b\" font-style=\"italic\">n</text><text x=\"137.0\" y=\"218.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"12.3\" fill=\"#1e293b\" font-style=\"italic\">n</text><text x=\"144.5\" y=\"218.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"11.0\" fill=\"#1e293b\"> + 1</text><text x=\"197.0\" y=\"218.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"12.3\" fill=\"#1e293b\" font-style=\"italic\">n</text><text x=\"204.5\" y=\"218.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"11.0\" fill=\"#1e293b\"> + 2</text><text x=\"273.8\" y=\"218.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"11.0\" fill=\"#1e293b\">2</text><text x=\"279.8\" y=\"218.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"12.3\" fill=\"#1e293b\" font-style=\"italic\">n</text><text x=\"287.3\" y=\"218.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"11.0\" fill=\"#1e293b\"> − 1</text><text x=\"343.1\" y=\"218.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"11.0\" fill=\"#1e293b\">2</text><text x=\"349.1\" y=\"218.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"12.3\" fill=\"#1e293b\" font-style=\"italic\">n</text><text x=\"249.0\" y=\"192.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">…</text><text x=\"21.6\" y=\"68.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#1e293b\">1</text><path d=\"M17.0 77.5L18.4 76.8L20.0 81.3L21.8 72.8L30.0 72.8\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.00\" stroke-linejoin=\"round\"/><text x=\"22.8\" y=\"80.3\" font-family=\"Times New Roman,Times,serif\" font-size=\"9.7\" fill=\"#1e293b\" font-style=\"italic\">n</text><line x1=\"16.0\" y1=\"70.4\" x2=\"32.0\" y2=\"70.4\" stroke=\"#1e293b\" stroke-width=\"1.00\"/><text x=\"89.0\" y=\"26.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#2563eb\" font-style=\"italic\">y</text><text x=\"96.7\" y=\"26.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"13.0\" fill=\"#2563eb\"> = </text><text x=\"117.6\" y=\"19.5\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"9.4\" fill=\"#2563eb\">1</text><path d=\"M113.2 29.8L114.6 29.1L116.4 33.9L118.3 24.7L126.3 24.7\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.00\" stroke-linejoin=\"round\"/><text x=\"119.3\" y=\"32.8\" font-family=\"Times New Roman,Times,serif\" font-size=\"10.5\" fill=\"#2563eb\" font-style=\"italic\">x</text><line x1=\"112.2\" y1=\"22.1\" x2=\"128.3\" y2=\"22.1\" stroke=\"#2563eb\" stroke-width=\"1.00\"/><text x=\"342.3\" y=\"192.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">x</text><text x=\"48.0\" y=\"22.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">y</text></svg>"
+          },
+          "meta": {
+            "source": "Baulkham Hills 2020 4U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "16(a)"
+          },
+          "parts": [
+            {
+              "id": "bhhs2020-ext2-q16a-i",
+              "type": "review",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Show that \\(\\int_n^{2n}\\frac{dx}{\\sqrt{x}}=2\\sqrt n\\left(\\sqrt2-1\\right)\\)",
+              "hint": "∫x^(−1/2) dx = 2√x.",
+              "steps": [
+                {
+                  "explain": "Integrate \\(x^{-\\frac12}\\).",
+                  "work": "\\(\\int_n^{2n}x^{-\\frac12}\\,dx=\\Bigl[2\\sqrt{x}\\Bigr]_n^{2n}\\)"
+                },
+                {
+                  "explain": "Evaluate and factor.",
+                  "work": "\\(=2\\sqrt{2n}-2\\sqrt{n}=2\\sqrt{n}\\left(\\sqrt2-1\\right)\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "16(a)(i)"
+              },
+              "answer": "\\(\\int_n^{2n}x^{-1/2}dx=\\left[2\\sqrt x\\right]_n^{2n}=2\\sqrt{2n}-2\\sqrt n=2\\sqrt n(\\sqrt2-1)\\).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Show that",
+                  "note": "The primitive of 1/√x is 2√x; then √(2n) = √2·√n."
+                }
+              ]
+            },
+            {
+              "id": "bhhs2020-ext2-q16a-ii",
+              "type": "review",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Let \\(S_n=\\frac{1}{\\sqrt{n+1}}+\\frac{1}{\\sqrt{n+2}}+\\dots+\\frac{1}{\\sqrt{2n}}\\), show that;\n\n\\(2\\sqrt n\\left(\\sqrt2-1\\right)+\\frac{1-\\sqrt2}{\\sqrt{2n}}\\lt S_n\\lt2\\sqrt n\\left(\\sqrt2-1\\right)\\)",
+              "hint": "Compare S_n with the area under the curve using lower and upper rectangles.",
+              "steps": [
+                {
+                  "explain": "Since \\(\\frac1{\\sqrt x}\\) is decreasing, rectangles using the right-end height lie under the curve; their total area is \\(S_n\\).",
+                  "work": "\\(S_n\\lt\\int_n^{2n}\\frac{dx}{\\sqrt{x}}=2\\sqrt{n}\\left(\\sqrt2-1\\right)\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 230\" width=\"360\" height=\"230\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"360\" height=\"230\" rx=\"8\" fill=\"white\"/><path d=\"M90.0 200.0L150.0 200.0L150.0 70.0L90.0 70.0Z\" fill=\"#fde68a\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linejoin=\"round\" fill-opacity=\"0.6\"/><line x1=\"90.0\" y1=\"108.1\" x2=\"150.0\" y2=\"108.1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"2 3\"/><path d=\"M150.0 200.0L210.0 200.0L210.0 108.1L150.0 108.1Z\" fill=\"#fde68a\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linejoin=\"round\" fill-opacity=\"0.6\"/><line x1=\"150.0\" y1=\"124.9\" x2=\"210.0\" y2=\"124.9\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"2 3\"/><path d=\"M289.8 200.0L349.8 200.0L349.8 137.5L289.8 137.5Z\" fill=\"#fde68a\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linejoin=\"round\" fill-opacity=\"0.6\"/><line x1=\"289.8\" y1=\"143.7\" x2=\"349.8\" y2=\"143.7\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"2 3\"/><path d=\"M90.0 200.0L90.0 70.0L94.3 74.5L98.7 78.5L103.0 82.1L107.3 85.5L111.7 88.6L116.0 91.4L120.3 94.0L124.6 96.5L129.0 98.8L133.3 100.9L137.6 102.9L142.0 104.8L146.3 106.6L150.6 108.3L154.9 109.9L159.3 111.4L163.6 112.9L167.9 114.3L172.3 115.6L176.6 116.8L180.9 118.0L185.3 119.2L189.6 120.3L193.9 121.3L198.2 122.4L202.6 123.3L206.9 124.3L211.2 125.2L215.6 126.1L219.9 126.9L224.2 127.7L228.6 128.5L232.9 129.3L237.2 130.0L241.6 130.8L245.9 131.5L250.2 132.1L254.5 132.8L258.9 133.4L263.2 134.1L267.5 134.7L271.9 135.3L276.2 135.8L280.5 136.4L284.9 136.9L289.2 137.5L293.5 138.0L297.8 138.5L302.2 139.0L306.5 139.4L310.8 139.9L315.2 140.4L319.5 140.8L323.8 141.3L328.1 141.7L332.5 142.1L336.8 142.5L341.1 142.9L345.5 143.3L349.8 143.7L349.8 200.0Z\" fill=\"#93c5fd\" stroke=\"none\" stroke-width=\"0\" stroke-linejoin=\"round\" fill-opacity=\"0.5\"/><line x1=\"14.0\" y1=\"200.0\" x2=\"352.0\" y2=\"200.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"40.0\" y1=\"224.0\" x2=\"40.0\" y2=\"10.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><path d=\"M63.0 24.7L64.5 28.6L66.0 32.2L67.5 35.7L69.1 38.9L70.6 41.9L72.1 44.8L73.6 47.5L75.1 50.1L76.6 52.5L78.2 54.9L79.7 57.1L81.2 59.2L82.7 61.3L84.2 63.2L85.7 65.1L87.2 66.9L88.8 68.6L90.3 70.3L91.8 71.9L93.3 73.4L94.8 74.9L96.3 76.4L97.8 77.7L99.4 79.1L100.9 80.4L102.4 81.6L103.9 82.9L105.4 84.0L106.9 85.2L108.5 86.3L110.0 87.4L111.5 88.4L113.0 89.5L114.5 90.5L116.0 91.4L117.5 92.4L119.1 93.3L120.6 94.2L122.1 95.1L123.6 95.9L125.1 96.7L126.6 97.6L128.1 98.4L129.7 99.1L131.2 99.9L132.7 100.6L134.2 101.4L135.7 102.1L137.2 102.8L138.8 103.4L140.3 104.1L141.8 104.8L143.3 105.4L144.8 106.0L146.3 106.6L147.8 107.2L149.4 107.8L150.9 108.4L152.4 109.0L153.9 109.5L155.4 110.1L156.9 110.6L158.4 111.1L160.0 111.7L161.5 112.2L163.0 112.7L164.5 113.2L166.0 113.7L167.5 114.1L169.1 114.6L170.6 115.1L172.1 115.5L173.6 116.0L175.1 116.4L176.6 116.8L178.1 117.3L179.7 117.7L181.2 118.1L182.7 118.5L184.2 118.9L185.7 119.3L187.2 119.7L188.7 120.1L190.3 120.5L191.8 120.8L193.3 121.2L194.8 121.6L196.3 121.9L197.8 122.3L199.3 122.6L200.9 123.0L202.4 123.3L203.9 123.6L205.4 124.0L206.9 124.3L208.4 124.6L210.0 124.9L211.5 125.2L213.0 125.6L214.5 125.9L216.0 126.2L217.5 126.5L219.0 126.8L220.6 127.1L222.1 127.3L223.6 127.6L225.1 127.9L226.6 128.2L228.1 128.5L229.6 128.7L231.2 129.0L232.7 129.3L234.2 129.5L235.7 129.8L237.2 130.0L238.7 130.3L240.3 130.6L241.8 130.8L243.3 131.0L244.8 131.3L246.3 131.5L247.8 131.8L249.3 132.0L250.9 132.2L252.4 132.5L253.9 132.7L255.4 132.9L256.9 133.2L258.4 133.4L260.0 133.6L261.5 133.8L263.0 134.0L264.5 134.2L266.0 134.5L267.5 134.7L269.0 134.9L270.6 135.1L272.1 135.3L273.6 135.5L275.1 135.7L276.6 135.9L278.1 136.1L279.6 136.3L281.2 136.5L282.7 136.7L284.2 136.8L285.7 137.0L287.2 137.2L288.7 137.4L290.2 137.6L291.8 137.8L293.3 137.9L294.8 138.1L296.3 138.3L297.8 138.5L299.3 138.6L300.9 138.8L302.4 139.0L303.9 139.2L305.4 139.3L306.9 139.5L308.4 139.7L309.9 139.8L311.5 140.0L313.0 140.1L314.5 140.3L316.0 140.5L317.5 140.6L319.0 140.8L320.6 140.9L322.1 141.1L323.6 141.2L325.1 141.4L326.6 141.5L328.1 141.7L329.6 141.8L331.2 142.0L332.7 142.1L334.2 142.3L335.7 142.4L337.2 142.5L338.7 142.7L340.2 142.8L341.8 143.0L343.3 143.1L344.8 143.2L346.3 143.4L347.8 143.5L349.3 143.6L350.9 143.8L352.4 143.9L353.9 144.0L355.4 144.2L356.9 144.3L358.4 144.4L359.9 144.6L361.5 144.7L363.0 144.8L364.5 144.9L366.0 145.1\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><text x=\"86.3\" y=\"218.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"12.3\" fill=\"#1e293b\" font-style=\"italic\">n</text><text x=\"137.0\" y=\"218.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"12.3\" fill=\"#1e293b\" font-style=\"italic\">n</text><text x=\"144.5\" y=\"218.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"11.0\" fill=\"#1e293b\"> + 1</text><text x=\"197.0\" y=\"218.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"12.3\" fill=\"#1e293b\" font-style=\"italic\">n</text><text x=\"204.5\" y=\"218.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"11.0\" fill=\"#1e293b\"> + 2</text><text x=\"273.8\" y=\"218.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"11.0\" fill=\"#1e293b\">2</text><text x=\"279.8\" y=\"218.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"12.3\" fill=\"#1e293b\" font-style=\"italic\">n</text><text x=\"287.3\" y=\"218.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"11.0\" fill=\"#1e293b\"> − 1</text><text x=\"343.1\" y=\"218.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"11.0\" fill=\"#1e293b\">2</text><text x=\"349.1\" y=\"218.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"12.3\" fill=\"#1e293b\" font-style=\"italic\">n</text><text x=\"249.0\" y=\"192.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">…</text><text x=\"21.6\" y=\"68.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#1e293b\">1</text><path d=\"M17.0 77.5L18.4 76.8L20.0 81.3L21.8 72.8L30.0 72.8\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.00\" stroke-linejoin=\"round\"/><text x=\"22.8\" y=\"80.3\" font-family=\"Times New Roman,Times,serif\" font-size=\"9.7\" fill=\"#1e293b\" font-style=\"italic\">n</text><line x1=\"16.0\" y1=\"70.4\" x2=\"32.0\" y2=\"70.4\" stroke=\"#1e293b\" stroke-width=\"1.00\"/><text x=\"89.0\" y=\"26.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#2563eb\" font-style=\"italic\">y</text><text x=\"96.7\" y=\"26.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"13.0\" fill=\"#2563eb\"> = </text><text x=\"117.6\" y=\"19.5\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"9.4\" fill=\"#2563eb\">1</text><path d=\"M113.2 29.8L114.6 29.1L116.4 33.9L118.3 24.7L126.3 24.7\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.00\" stroke-linejoin=\"round\"/><text x=\"119.3\" y=\"32.8\" font-family=\"Times New Roman,Times,serif\" font-size=\"10.5\" fill=\"#2563eb\" font-style=\"italic\">x</text><line x1=\"112.2\" y1=\"22.1\" x2=\"128.3\" y2=\"22.1\" stroke=\"#2563eb\" stroke-width=\"1.00\"/><text x=\"342.3\" y=\"192.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">x</text><text x=\"48.0\" y=\"22.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">y</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Rectangles using the left-end height lie above the curve.",
+                  "work": "\\(\\int_n^{2n}\\frac{dx}{\\sqrt{x}}\\lt\\frac{1}{\\sqrt{n}}+\\frac{1}{\\sqrt{n+1}}+\\dots+\\frac{1}{\\sqrt{2n-1}}=S_n+\\frac{1}{\\sqrt{n}}-\\frac{1}{\\sqrt{2n}}\\)"
+                },
+                {
+                  "explain": "Rearrange and simplify \\(-\\frac{1}{\\sqrt n}+\\frac{1}{\\sqrt{2n}}=\\frac{-\\sqrt2+1}{\\sqrt{2n}}\\).",
+                  "work": "\\(S_n\\gt2\\sqrt{n}\\left(\\sqrt2-1\\right)+\\frac{1-\\sqrt2}{\\sqrt{2n}}\\)"
+                },
+                {
+                  "explain": "Combining both inequalities gives the result."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "16(a)(ii)"
+              },
+              "answer": "Lower rectangles (heights at right ends) lie under the curve: \\(S_n\\lt\\int_n^{2n}\\frac{dx}{\\sqrt x}=2\\sqrt n(\\sqrt2-1)\\). Upper rectangles (heights at left ends) lie above: \\(\\int_n^{2n}\\frac{dx}{\\sqrt x}\\lt\\frac1{\\sqrt n}+\\frac1{\\sqrt{n+1}}+\\dots+\\frac1{\\sqrt{2n-1}}=S_n+\\frac1{\\sqrt n}-\\frac1{\\sqrt{2n}}\\). So \\(S_n\\gt2\\sqrt n(\\sqrt2-1)-\\frac{1}{\\sqrt n}+\\frac{1}{\\sqrt{2n}}=2\\sqrt n(\\sqrt2-1)+\\frac{1-\\sqrt2}{\\sqrt{2n}}\\).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "show that;",
+                  "note": "Right-end heights give rectangles below the curve; left-end heights give rectangles above."
+                }
+              ]
+            },
+            {
+              "id": "bhhs2020-ext2-q16a-iii",
+              "type": "mc",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Hence find, correct to three decimal places\n\n\\(\\frac{1}{\\sqrt{1000000}}+\\frac{1}{\\sqrt{1000001}}+\\frac{1}{\\sqrt{1000002}}+\\dots+\\frac{1}{\\sqrt{2000000}}\\)",
+              "hint": "Use n = 10⁶ in (ii), then add the extra term 1/√1000000 = 0.001.",
+              "steps": [
+                {
+                  "explain": "With \\(n=1\\,000\\,000\\), the sum from \\(\\frac{1}{\\sqrt{1000001}}\\) to \\(\\frac{1}{\\sqrt{2000000}}\\) is \\(S_n\\). Evaluate the bounds from (ii).",
+                  "work": "\\(2\\sqrt{10^6}(\\sqrt2-1)=2000(\\sqrt2-1)\\approx828.4271,\\qquad\\frac{1-\\sqrt2}{\\sqrt{2\\times10^6}}\\approx-0.0003\\)"
+                },
+                {
+                  "explain": "So \\(828.4268\\lt S_n\\lt828.4271\\): to 3 d.p. \\(S_n=828.427\\).",
+                  "work": "\\(S_n\\approx828.427\\)"
+                },
+                {
+                  "explain": "The required sum also includes the first term \\(\\frac{1}{\\sqrt{1000000}}=0.001\\).",
+                  "work": "\\(0.001+828.427\\approx828.428\\)"
+                },
+                {
+                  "explain": "828.427 forgets the extra first term."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "16(a)(iii)"
+              },
+              "options": [
+                "\\(828.427\\)",
+                "\\(828.418\\)",
+                "\\(1000.000\\)",
+                "\\(828.428\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "Hence find, correct to three decimal places",
+                  "note": "S_n starts at 1/√(n + 1); the given sum also has 1/√n = 0.001."
+                }
+              ]
             }
           ]
         }

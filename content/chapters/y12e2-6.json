@@ -587,6 +587,135 @@
               "note": "√(4x² − 1) suggests 2x = sec θ, since sec²θ − 1 = tan²θ."
             }
           ]
+        },
+        {
+          "id": "bhhs2020-ext2-q10",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "When the substitution \\(x=5\\sin\\theta\\) is used, the integral equivalent to\n\\(\\int\\frac{x^2}{(25-x^2)\\sqrt{25-x^2}}\\,dx\\) is;",
+          "hint": "Replace x, dx and √(25 − x²) = 5cos θ, then cancel.",
+          "steps": [
+            {
+              "explain": "Substitute \\(x=5\\sin\\theta\\), \\(dx=5\\cos\\theta\\,d\\theta\\), and \\(25-x^2=25\\cos^2\\theta\\).",
+              "work": "\\(\\sqrt{25-x^2}=5\\cos\\theta\\)"
+            },
+            {
+              "explain": "Replace every piece.",
+              "work": "\\(\\int\\frac{25\\sin^2\\theta\\cdot5\\cos\\theta\\,d\\theta}{25\\cos^2\\theta\\cdot5\\cos\\theta}\\)"
+            },
+            {
+              "explain": "Cancel.",
+              "work": "\\(=\\int\\frac{125\\sin^2\\theta\\cos\\theta}{125\\cos^3\\theta}\\,d\\theta=\\int\\frac{\\sin^2\\theta}{\\cos^2\\theta}\\,d\\theta=\\int\\tan^2\\theta\\,d\\theta\\)"
+            },
+            {
+              "explain": "Option A forgets the \\(\\cos\\theta\\) from \\(dx\\)."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills 2020 4U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "10"
+          },
+          "options": [
+            "\\(\\int\\frac{\\sin^2\\theta}{\\cos^3\\theta}\\,d\\theta\\)",
+            "\\(\\int5\\tan^2\\theta\\,d\\theta\\)",
+            "\\(\\int\\sqrt5\\tan^2\\theta\\,d\\theta\\)",
+            "\\(\\int\\tan^2\\theta\\,d\\theta\\)"
+          ],
+          "answer": 3,
+          "keyPoints": [
+            {
+              "text": "When the substitution \\(x=5\\sin\\theta\\) is used",
+              "note": "Don't forget dx = 5cos θ dθ; 25 − x² = 25cos²θ."
+            }
+          ]
+        },
+        {
+          "id": "bhhs2020-ext2-q13b",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Evaluate \\(\\int_0^{\\frac{2\\pi}{3}}\\frac{dx}{5+4\\cos x}\\)",
+          "hint": "Use t = tan(x/2); the denominator becomes 9 + t².",
+          "steps": [
+            {
+              "explain": "Use \\(t=\\tan\\frac x2\\): \\(dx=\\frac{2\\,dt}{1+t^2}\\), \\(\\cos x=\\frac{1-t^2}{1+t^2}\\). Limits: \\(x=0\\Rightarrow t=0\\); \\(x=\\frac{2\\pi}{3}\\Rightarrow t=\\tan\\frac\\pi3=\\sqrt3\\).",
+              "work": "\\(t=\\tan\\tfrac{x}{2}\\)"
+            },
+            {
+              "explain": "Substitute and multiply top and bottom by \\(1+t^2\\).",
+              "work": "\\(\\int_0^{\\sqrt3}\\frac{2\\,dt}{5(1+t^2)+4(1-t^2)}=\\int_0^{\\sqrt3}\\frac{2\\,dt}{9+t^2}\\)"
+            },
+            {
+              "explain": "Inverse-tan with \\(a=3\\).",
+              "work": "\\(=\\frac{2}{3}\\left[\\tan^{-1}\\frac{t}{3}\\right]_0^{\\sqrt3}=\\frac23\\tan^{-1}\\frac{\\sqrt3}{3}=\\frac23\\cdot\\frac{\\pi}{6}=\\frac{\\pi}{9}\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills 2020 4U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "13(b)"
+          },
+          "options": [
+            "\\(\\frac{2\\pi}{9}\\)",
+            "\\(\\frac{\\pi}{18}\\)",
+            "\\(\\frac{\\pi}{9}\\)",
+            "\\(\\frac{\\pi}{3}\\)"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "\\(\\int_0^{\\frac{2\\pi}{3}}\\frac{dx}{5+4\\cos x}\\)",
+              "note": "t-substitution: 5(1 + t²) + 4(1 − t²) = 9 + t². Change the limits too."
+            }
+          ]
+        },
+        {
+          "id": "bhhs2020-ext2-q13c",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Use the substitution \\(u=x\\sin x+\\cos x\\) to find \\(\\int\\frac{x\\,dx}{x\\tan x+1}\\)",
+          "hint": "Multiply top and bottom by cos x; du = x cos x dx.",
+          "steps": [
+            {
+              "explain": "Differentiate \\(u\\) with the product rule.",
+              "work": "\\(\\frac{du}{dx}=x\\cos x+\\sin x-\\sin x=x\\cos x\\ \\Rightarrow\\ du=x\\cos x\\,dx\\)"
+            },
+            {
+              "explain": "Rewrite the integrand: multiply top and bottom by \\(\\cos x\\).",
+              "work": "\\(\\frac{x}{x\\tan x+1}=\\frac{x}{\\frac{x\\sin x}{\\cos x}+1}=\\frac{x\\cos x}{x\\sin x+\\cos x}\\)"
+            },
+            {
+              "explain": "Now it is exactly \\(\\frac{du}{u}\\).",
+              "work": "\\(\\int\\frac{x\\cos x\\,dx}{x\\sin x+\\cos x}=\\int\\frac{du}{u}=\\ln|u|+c=\\ln\\left|x\\sin x+\\cos x\\right|+c\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills 2020 4U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "13(c)"
+          },
+          "options": [
+            "\\(x\\ln\\left|x\\sin x+\\cos x\\right|+c\\)",
+            "\\(\\ln\\left|x\\sin x+\\cos x\\right|+c\\)",
+            "\\(\\ln\\left|x\\tan x+1\\right|+c\\)",
+            "\\(\\frac{1}{x\\sin x+\\cos x}+c\\)"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "Use the substitution",
+              "note": "Write tan x = sin x/cos x and multiply through by cos x to see du/u."
+            }
+          ]
         }
       ]
     },
@@ -907,6 +1036,148 @@
                 {
                   "text": "Hence evaluate",
                   "note": "With a + b = π/2 the integral turns cos²x into sin²x; adding gives ∫dx/(x(π − 2x)) from (ii)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bhhs2020-ext2-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "The algebraic fraction \\(\\frac{x}{3(x+c)^2}\\), where \\(c\\) is a non-zero real number, can be written in partial fraction form, where \\(A\\) and \\(B\\) are real numbers, as;",
+          "hint": "A repeated factor (x + c)² needs A/(x + c) + B/(x + c)².",
+          "steps": [
+            {
+              "explain": "The 3 is just a constant factor; take it out.",
+              "work": "\\(\\frac{x}{3(x+c)^2}=\\frac{\\tfrac{x}{3}}{(x+c)^2}\\)"
+            },
+            {
+              "explain": "A repeated linear factor \\((x+c)^2\\) needs one term for each power.",
+              "work": "\\(\\frac{A}{x+c}+\\frac{B}{(x+c)^2}\\)"
+            },
+            {
+              "explain": "Check it works: \\(\\frac{x}{3}=A(x+c)+B\\) gives \\(A=\\frac13\\), \\(B=-\\frac c3\\). So option C. The \\(3x+c\\) options use a factor that isn't in the denominator."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills 2020 4U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "7"
+          },
+          "options": [
+            "\\(\\frac{A}{3x+c}+\\frac{B}{(x+c)^2}\\)",
+            "\\(\\frac{A}{3x+c}+\\frac{B}{x+c}\\)",
+            "\\(\\frac{A}{x+c}+\\frac{B}{(x+c)^2}\\)",
+            "\\(\\frac{A}{3(x+c)}+\\frac{B}{x+c}\\)"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "partial fraction form",
+              "note": "The denominator has the repeated factor (x + c)²; the 3 is only a constant."
+            }
+          ]
+        },
+        {
+          "id": "bhhs2020-ext2-q11c",
+          "type": "multipart",
+          "stem": "",
+          "meta": {
+            "source": "Baulkham Hills 2020 4U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "11(c)"
+          },
+          "parts": [
+            {
+              "id": "bhhs2020-ext2-q11c-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Find \\(A\\), \\(B\\) and \\(C\\) such that; \\(\\frac{A}{(x-3)^2}+\\frac{B}{x-3}+\\frac{C}{x+2}\\equiv\\frac{16x-43}{(x-3)^2(x+2)}\\)",
+              "hint": "Substitute x = 3 and x = −2, then compare x² coefficients.",
+              "steps": [
+                {
+                  "explain": "Multiply through by \\((x-3)^2(x+2)\\).",
+                  "work": "\\(16x-43=A(x+2)+B(x+2)(x-3)+C(x-3)^2\\)"
+                },
+                {
+                  "explain": "\\(x=3\\):",
+                  "work": "\\(48-43=5A\\ \\Rightarrow\\ A=1\\)"
+                },
+                {
+                  "explain": "\\(x=-2\\):",
+                  "work": "\\(-32-43=25C\\ \\Rightarrow\\ C=-3\\)"
+                },
+                {
+                  "explain": "Coefficient of \\(x^2\\): the left side has none.",
+                  "work": "\\(0=B+C\\ \\Rightarrow\\ B=3\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "11(c)(i)"
+              },
+              "options": [
+                "\\(A=1,\\ B=-3,\\ C=3\\)",
+                "\\(A=5,\\ B=3,\\ C=-3\\)",
+                "\\(A=1,\\ B=3,\\ C=3\\)",
+                "\\(A=1,\\ B=3,\\ C=-3\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "Find \\(A\\), \\(B\\) and \\(C\\)",
+                  "note": "x = 3 gives A, x = −2 gives C, and the x² coefficient gives B."
+                }
+              ]
+            },
+            {
+              "id": "bhhs2020-ext2-q11c-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Find \\(\\int\\frac{16x-43}{(x-3)^2(x+2)}\\,dx\\)",
+              "hint": "Integrate each partial fraction; ∫(x − 3)⁻² dx = −1/(x − 3).",
+              "steps": [
+                {
+                  "explain": "Use (i).",
+                  "work": "\\(\\int\\left(\\frac{1}{(x-3)^2}+\\frac{3}{x-3}-\\frac{3}{x+2}\\right)dx\\)"
+                },
+                {
+                  "explain": "\\(\\int(x-3)^{-2}dx=-(x-3)^{-1}\\); the other two are logs.",
+                  "work": "\\(=-\\frac{1}{x-3}+3\\ln|x-3|-3\\ln|x+2|+c\\)"
+                },
+                {
+                  "explain": "Combine the logs.",
+                  "work": "\\(=-\\frac{1}{x-3}+3\\ln\\left|\\frac{x-3}{x+2}\\right|+c\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "11(c)(ii)"
+              },
+              "options": [
+                "\\(\\ln(x-3)^2+3\\ln\\left|\\frac{x-3}{x+2}\\right|+c\\)",
+                "\\(-\\frac{1}{x-3}+3\\ln|(x-3)(x+2)|+c\\)",
+                "\\(-\\frac{1}{x-3}+3\\ln\\left|\\frac{x-3}{x+2}\\right|+c\\)",
+                "\\(\\frac{1}{x-3}+3\\ln\\left|\\frac{x-3}{x+2}\\right|+c\\)"
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "Find",
+                  "note": "The (x − 3)⁻² term is a power, not a log."
                 }
               ]
             }
@@ -1426,6 +1697,48 @@
               "note": "Write the integrand as 1 · cos⁻¹x and integrate by parts with v′ = 1."
             }
           ]
+        },
+        {
+          "id": "bhhs2020-ext2-q12c",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Find \\(\\int x^2\\ln x\\,dx\\)",
+          "hint": "Integration by parts with u = ln x, v′ = x².",
+          "steps": [
+            {
+              "explain": "Integrate by parts with \\(u=\\ln x\\) (easy to differentiate) and \\(v'=x^2\\).",
+              "work": "\\(u=\\ln x,\\ u'=\\frac1x,\\qquad v'=x^2,\\ v=\\frac{x^3}{3}\\)"
+            },
+            {
+              "explain": "Apply the formula.",
+              "work": "\\(\\int x^2\\ln x\\,dx=\\frac{x^3}{3}\\ln x-\\int\\frac{x^3}{3}\\cdot\\frac1x\\,dx=\\frac{x^3}{3}\\ln x-\\frac13\\int x^2\\,dx\\)"
+            },
+            {
+              "explain": "Finish.",
+              "work": "\\(=\\frac13x^3\\ln x-\\frac19x^3+c\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills 2020 4U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "12(c)"
+          },
+          "options": [
+            "\\(\\frac13x^3\\ln x-\\frac13x^3+c\\)",
+            "\\(2x\\ln x+x+c\\)",
+            "\\(\\frac13x^3\\ln x-\\frac19x^3+c\\)",
+            "\\(\\frac13x^3\\ln x+\\frac19x^3+c\\)"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "\\(\\int x^2\\ln x\\,dx\\)",
+              "note": "Choose u = ln x (it simplifies when differentiated) and v′ = x²."
+            }
+          ]
         }
       ]
     },
@@ -1855,6 +2168,131 @@
                 {
                   "text": "Evaluate",
                   "note": "Recognise the integral as I₂, then use the reduction formula with n = 1."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bhhs2020-ext2-q14c",
+          "type": "multipart",
+          "stem": "Let \\(I_n=\\int_0^1\\frac{x^n\\,dx}{\\sqrt{1+x^2}}\\), where \\(n\\in\\mathbb{Z}\\wedge n\\ge0\\)",
+          "meta": {
+            "source": "Baulkham Hills 2020 4U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "14(c)"
+          },
+          "parts": [
+            {
+              "id": "bhhs2020-ext2-q14c-i",
+              "type": "mc",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Find the value of \\(I_1\\)",
+              "hint": "d/dx √(1 + x²) = x/√(1 + x²).",
+              "steps": [
+                {
+                  "explain": "\\(x\\) is half the derivative of \\(1+x^2\\), and \\(\\frac{d}{dx}\\sqrt{1+x^2}=\\frac{x}{\\sqrt{1+x^2}}\\).",
+                  "work": "\\(I_1=\\int_0^1\\frac{x\\,dx}{\\sqrt{1+x^2}}=\\Bigl[\\sqrt{1+x^2}\\Bigr]_0^1\\)"
+                },
+                {
+                  "explain": "Evaluate.",
+                  "work": "\\(=\\sqrt2-1\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "14(c)(i)"
+              },
+              "options": [
+                "\\(\\sqrt2\\)",
+                "\\(\\ln\\left(1+\\sqrt2\\right)\\)",
+                "\\(\\frac{\\sqrt2-1}{2}\\)",
+                "\\(\\sqrt2-1\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "Find the value of \\(I_1\\)",
+                  "note": "The integrand is exactly the derivative of √(1 + x²)."
+                }
+              ]
+            },
+            {
+              "id": "bhhs2020-ext2-q14c-ii",
+              "type": "review",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Show that \\(I_n=\\frac{\\sqrt2-(n-1)I_{n-2}}{n}\\ \\forall\\ n\\gt1\\)",
+              "hint": "Parts with u = x^(n−1), v′ = x/√(1 + x²); then write √(1 + x²) = (1 + x²)/√(1 + x²).",
+              "steps": [
+                {
+                  "explain": "Integrate by parts with \\(u=x^{n-1}\\) and \\(v'=\\frac{x}{\\sqrt{1+x^2}}\\), so \\(v=\\sqrt{1+x^2}\\).",
+                  "work": "\\(I_n=\\Bigl[x^{n-1}\\sqrt{1+x^2}\\Bigr]_0^1-(n-1)\\int_0^1x^{n-2}\\sqrt{1+x^2}\\,dx\\)"
+                },
+                {
+                  "explain": "The bracket is \\(\\sqrt2\\) (for \\(n\\gt1\\) it is 0 at \\(x=0\\)). Write \\(\\sqrt{1+x^2}=\\frac{1+x^2}{\\sqrt{1+x^2}}\\).",
+                  "work": "\\(\\int_0^1x^{n-2}\\sqrt{1+x^2}\\,dx=\\int_0^1\\frac{x^{n-2}+x^n}{\\sqrt{1+x^2}}\\,dx=I_{n-2}+I_n\\)"
+                },
+                {
+                  "explain": "Substitute and collect \\(I_n\\).",
+                  "work": "\\(I_n=\\sqrt2-(n-1)\\left(I_{n-2}+I_n\\right)\\ \\Rightarrow\\ nI_n=\\sqrt2-(n-1)I_{n-2}\\ \\Rightarrow\\ I_n=\\frac{\\sqrt2-(n-1)I_{n-2}}{n}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "14(c)(ii)"
+              },
+              "answer": "By parts with u = x^{n−1}, v′ = x/√(1+x²) (v = √(1+x²)): \\(I_n=[x^{n-1}\\sqrt{1+x^2}]_0^1-(n-1)\\int_0^1x^{n-2}\\sqrt{1+x^2}dx=\\sqrt2-(n-1)\\int_0^1\\frac{x^{n-2}(1+x^2)}{\\sqrt{1+x^2}}dx=\\sqrt2-(n-1)(I_{n-2}+I_n)\\). So \\(nI_n=\\sqrt2-(n-1)I_{n-2}\\).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Show that",
+                  "note": "Split xⁿ = x^(n−1)·x so v′ = x/√(1 + x²) integrates to √(1 + x²)."
+                }
+              ]
+            },
+            {
+              "id": "bhhs2020-ext2-q14c-iii",
+              "type": "review",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "By setting up a suitable inequality, prove that \\(\\lim_{n\\to\\infty}I_n=0\\)",
+              "hint": "Show 0 ≤ I_n ≤ √2/n and squeeze.",
+              "steps": [
+                {
+                  "explain": "The integrand is non-negative on \\([0,1]\\), so every \\(I_n\\ge0\\).",
+                  "work": "\\(I_n\\ge0\\)"
+                },
+                {
+                  "explain": "From (ii), since \\((n-1)I_{n-2}\\ge0\\):",
+                  "work": "\\(nI_n=\\sqrt2-(n-1)I_{n-2}\\le\\sqrt2\\ \\Rightarrow\\ I_n\\le\\frac{\\sqrt2}{n}\\)"
+                },
+                {
+                  "explain": "Squeeze: \\(0\\le I_n\\le\\frac{\\sqrt2}{n}\\) and \\(\\frac{\\sqrt2}{n}\\to0\\) as \\(n\\to\\infty\\).",
+                  "work": "\\(\\lim_{n\\to\\infty}I_n=0\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "14(c)(iii)"
+              },
+              "answer": "For 0 ≤ x ≤ 1 the integrand is ≥ 0, so \\(I_n\\ge0\\) for all n. From (ii), \\(nI_n=\\sqrt2-(n-1)I_{n-2}\\le\\sqrt2\\), so \\(0\\le I_n\\le\\frac{\\sqrt2}{n}\\). As n → ∞, √2/n → 0, so by the squeeze theorem \\(\\lim_{n\\to\\infty}I_n=0\\).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "By setting up a suitable inequality",
+                  "note": "Use I_n ≥ 0 and (ii) to get I_n ≤ √2/n."
                 }
               ]
             }

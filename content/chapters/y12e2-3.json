@@ -248,6 +248,102 @@
               ]
             }
           ]
+        },
+        {
+          "id": "bhhs2020-ext2-q14a",
+          "type": "multipart",
+          "stem": "",
+          "meta": {
+            "source": "Baulkham Hills 2020 4U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "14(a)"
+          },
+          "parts": [
+            {
+              "id": "bhhs2020-ext2-q14a-i",
+              "type": "mc",
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Explain why \\(z^4=(z-1)^4\\) does not have four roots.",
+              "hint": "Expand: the z⁴ terms cancel.",
+              "steps": [
+                {
+                  "explain": "Move everything to one side and expand.",
+                  "work": "\\(z^4-(z-1)^4=z^4-\\left(z^4-4z^3+6z^2-4z+1\\right)=4z^3-6z^2+4z-1\\)"
+                },
+                {
+                  "explain": "The \\(z^4\\) terms cancel, leaving a polynomial of degree 3. A degree-3 polynomial has at most 3 roots."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "14(a)(i)"
+              },
+              "options": [
+                "Because \\(z=0\\) and \\(z=1\\) are not roots.",
+                "Because the equation only has real roots.",
+                "Because \\(z^4\\) and \\((z-1)^4\\) are never equal.",
+                "Expanding, \\(z^4-(z-1)^4\\) is a cubic (the \\(z^4\\) terms cancel), so it has at most 3 roots."
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "does not have four roots",
+                  "note": "Subtract: z⁴ − (z − 1)⁴ — what is its degree?"
+                }
+              ]
+            },
+            {
+              "id": "bhhs2020-ext2-q14a-ii",
+              "type": "mc",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Solve \\(z^4=(z-1)^4\\)",
+              "hint": "Let x = z/(z − 1) so x⁴ = 1; solve each case for z.",
+              "steps": [
+                {
+                  "explain": "\\(z=1\\) is not a solution, so divide by \\((z-1)^4\\) and let \\(x=\\frac{z}{z-1}\\).",
+                  "work": "\\(\\left(\\frac{z}{z-1}\\right)^4=1\\ \\Rightarrow\\ x^4=1\\ \\Rightarrow\\ x=1,\\ -1,\\ i,\\ -i\\)"
+                },
+                {
+                  "explain": "\\(x=1\\): \\(z=z-1\\) — impossible. \\(x=-1\\): \\(z=1-z\\Rightarrow z=\\frac12\\).",
+                  "work": "\\(\\frac{z}{z-1}=-1\\ \\Rightarrow\\ z=\\frac12\\)"
+                },
+                {
+                  "explain": "\\(x=i\\): solve \\(z=i(z-1)\\).",
+                  "work": "\\(z(1-i)=-i\\ \\Rightarrow\\ z=\\frac{-i}{1-i}\\times\\frac{1+i}{1+i}=\\frac{-i+1}{2}=\\frac12-\\frac12i\\)"
+                },
+                {
+                  "explain": "The cubic has real coefficients, so the conjugate is also a root (it comes from \\(x=-i\\)).",
+                  "work": "\\(z=\\frac12,\\ \\frac12-\\frac12i,\\ \\frac12+\\frac12i\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Baulkham Hills 2020 4U Trials & Solutions",
+                "school": "Baulkham Hills High School",
+                "year": 2020,
+                "number": "14(a)(ii)"
+              },
+              "options": [
+                "\\(z=0,\\ 1,\\ \\frac12\\)",
+                "\\(z=\\frac12,\\ \\frac12\\pm\\frac{\\sqrt3}{2}i\\)",
+                "\\(z=\\frac12,\\ \\frac12+\\frac12i,\\ \\frac12-\\frac12i\\)",
+                "\\(z=\\frac12\\) only"
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "Solve \\(z^4=(z-1)^4\\)",
+                  "note": "Divide by (z − 1)⁴: (z/(z − 1))⁴ = 1, so z/(z − 1) is a fourth root of unity."
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1166,6 +1262,51 @@
                   "note": "Cube (e^(iθ) − e^(−iθ))/(2i); remember (2i)³ = −8i."
                 }
               ]
+            }
+          ]
+        },
+        {
+          "id": "bhhs2020-ext2-q13a",
+          "type": "mc",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "Solve \\(e^{2i\\theta}-e^{-2i\\theta}=i\\sqrt3\\) where \\(-\\pi\\lt\\theta\\le\\pi\\)",
+          "hint": "e^(2iθ) − e^(−2iθ) = 2i sin 2θ; solve over 2θ ∈ (−2π, 2π].",
+          "steps": [
+            {
+              "explain": "Use Euler's formula: \\(e^{2i\\theta}-e^{-2i\\theta}=2i\\sin2\\theta\\).",
+              "work": "\\(2i\\sin2\\theta=i\\sqrt3\\ \\Rightarrow\\ \\sin2\\theta=\\frac{\\sqrt3}{2}\\)"
+            },
+            {
+              "explain": "With \\(-\\pi\\lt\\theta\\le\\pi\\), \\(2\\theta\\) runs over \\((-2\\pi,2\\pi]\\).",
+              "work": "\\(2\\theta=\\frac{\\pi}{3},\\ \\frac{2\\pi}{3},\\ -\\frac{5\\pi}{3},\\ -\\frac{4\\pi}{3}\\)"
+            },
+            {
+              "explain": "Halve.",
+              "work": "\\(\\theta=\\frac{\\pi}{6},\\ \\frac{\\pi}{3},\\ -\\frac{5\\pi}{6},\\ -\\frac{2\\pi}{3}\\)"
+            },
+            {
+              "explain": "Remember to double the interval for \\(2\\theta\\) — otherwise you miss the two negative solutions."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills 2020 4U Trials & Solutions",
+            "school": "Baulkham Hills High School",
+            "year": 2020,
+            "number": "13(a)"
+          },
+          "options": [
+            "\\(\\theta=\\frac{\\pi}{6},\\ \\frac{\\pi}{3}\\)",
+            "\\(\\theta=-\\frac{5\\pi}{6},\\ \\frac{\\pi}{6}\\)",
+            "\\(\\theta=\\frac{\\pi}{3},\\ \\frac{2\\pi}{3}\\)",
+            "\\(\\theta=-\\frac{5\\pi}{6},\\ -\\frac{2\\pi}{3},\\ \\frac{\\pi}{6},\\ \\frac{\\pi}{3}\\)"
+          ],
+          "answer": 3,
+          "keyPoints": [
+            {
+              "text": "\\(e^{2i\\theta}-e^{-2i\\theta}=i\\sqrt3\\)",
+              "note": "Use Euler: the left side is 2i sin 2θ. Then 2θ runs over a doubled interval."
             }
           ]
         }
