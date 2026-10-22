@@ -1889,33 +1889,49 @@
           "id": "abb-y10-2025-t4-d-q7c",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "A surveyor stands at a point A, which is due south of a tower OT of height h m. The angle of elevation of the top of the tower from A is 45°. The surveyor then walks 100 m due east to point B, from where she measures the angle of elevation of the top of the tower to be 30°. (c) Calculate the bearing of B from the base of the tower.",
+          "stem": "A surveyor stands at a point A, which is due south of a tower OT of height \\(h\\text{ m}\\). The angle of elevation of the top of the tower from A is \\(45^\\circ\\). The surveyor then walks \\(100\\text{ m}\\) due east to point B, from where she measures the angle of elevation of the top of the tower to be \\(30^\\circ\\). Calculate the bearing of B from the base of the tower.",
           "options": [
-            "125.3°",
-            "054.7°",
-            "234.7°",
-            "305.3°"
+            "\\(125.3^\\circ\\)",
+            "\\(054.7^\\circ\\)",
+            "\\(234.7^\\circ\\)",
+            "\\(305.3^\\circ\\)"
           ],
           "answer": 0,
-          "hint": "From the tower base O, B is east and south. Use the ground triangle with east distance 100 m and south distance OA=50√2 m, then express the direction clockwise from north.",
+          "hint": "First use the elevation angles to determine the southward ground distance \\(OA\\). In the ground view, \\(AB=100\\text{ m}\\) is due east; use the right triangle to find the angle from south, then convert it to a bearing measured clockwise from north.",
           "steps": [
             {
-              "explain": "The horizontal displacement is 100 m east and h=50√2 m south. Find the angle east of south.",
-              "work": "tan α = 100/(50√2)\nα ≈ 54.74°"
+              "explain": "In the vertical right triangle \\(AOT\\), the angle at \\(A\\) is \\(45^\\circ\\). The opposite side is the tower height \\(OT=h\\), and the adjacent side is the southward ground distance \\(OA\\). Use tangent to relate them.",
+              "work": "\\(\\tan45^\\circ=\\frac{OT}{OA}=\\frac{h}{OA}\\)\n\\(1=\\frac{h}{OA}\\quad\\Rightarrow\\quad OA=h\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"210\" viewBox=\"0 0 360 210\"><path d=\"M70 165V45M70 165H190M70 45L190 165\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M70 151H84V165\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.3\"/><path d=\"M170 165 A28 28 0 0 1 170 145\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"1.8\"/><path d=\"M70 45V165\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><path d=\"M70 165H190\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\"/><text x=\"54\" y=\"40\" font-size=\"12\" fill=\"#334155\">T</text><text x=\"53\" y=\"183\" font-size=\"12\" fill=\"#334155\">O</text><text x=\"194\" y=\"183\" font-size=\"12\" fill=\"#334155\">A</text><text x=\"31\" y=\"108\" font-size=\"12\" fill=\"#1d4ed8\">OT = h</text><text x=\"111\" y=\"187\" font-size=\"12\" fill=\"#6d28d9\">OA</text><text x=\"143\" y=\"153\" font-size=\"12\" fill=\"#c2410c\">45°</text></svg>"
+              }
             },
             {
-              "explain": "A bearing is measured clockwise from north. South is 180°, so subtract α.",
-              "work": "Bearing = 180°−54.74°"
+              "explain": "Use the elevation at \\(B\\) in the vertical right triangle \\(TOB\\). Relative to \\(30^\\circ\\), \\(OT=h\\) is opposite and \\(OB\\) is adjacent. Then use the ground right triangle \\(AOB\\): \\(AB=100\\text{ m}\\), \\(OA=h\\), and \\(OB\\) is its hypotenuse. This determines \\(h\\), and therefore \\(OA\\).",
+              "work": "\\(\\tan30^\\circ=\\frac{OT}{OB}=\\frac{h}{OB}\\quad\\Rightarrow\\quad OB=\\frac{h}{\\tan30^\\circ}=h\\sqrt3\\)\n\\(OB^2=OA^2+AB^2\\)\n\\((h\\sqrt3)^2=h^2+100^2\\)\n\\(3h^2=h^2+10\\,000\\quad\\Rightarrow\\quad h=50\\sqrt2\\text{ m}\\)\n\\(OA=h=50\\sqrt2\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"210\" viewBox=\"0 0 360 210\"><path d=\"M70 160V45M70 160H265M70 45L265 160\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M70 145H85V160\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.3\"/><path d=\"M70 160V45\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><path d=\"M70 160H265\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\"/><path d=\"M70 45L265 160\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"3\"/><text x=\"53\" y=\"40\" font-size=\"12\" fill=\"#334155\">O</text><text x=\"52\" y=\"178\" font-size=\"12\" fill=\"#334155\">A</text><text x=\"270\" y=\"178\" font-size=\"12\" fill=\"#334155\">B</text><text x=\"30\" y=\"105\" font-size=\"12\" fill=\"#1d4ed8\">OA = h</text><text x=\"127\" y=\"184\" font-size=\"12\" fill=\"#6d28d9\">AB = 100 m</text><text x=\"144\" y=\"72\" font-size=\"12\" fill=\"#15803d\">OB = h√3</text></svg>"
+              }
             },
             {
-              "explain": "Write the bearing to one decimal place.",
-              "work": "Bearing of B from O ≈ 125.3°"
+              "explain": "In the ground-plane triangle, \\(OA=50\\sqrt2\\text{ m}\\) is due south and \\(AB=100\\text{ m}\\) is due east. Let \\(\\alpha\\) be the angle east of south at \\(O\\). Relative to \\(\\alpha\\), \\(AB\\) is opposite and \\(OA\\) is adjacent. Calculate \\(\\alpha\\) with tangent.",
+              "work": "\\(\\tan\\alpha=\\frac{AB}{OA}=\\frac{100}{50\\sqrt2}\\)\n\\(\\alpha=\\tan^{-1}\\!\\left(\\frac{100}{50\\sqrt2}\\right)\\approx54.7^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><path d=\"M75 50V165M75 165H260M75 50L260 165\" fill=\"none\" stroke=\"#cbd5e1\" stroke-width=\"1.6\"/><path d=\"M75 50V165\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><path d=\"M75 165H260\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\"/><path d=\"M75 50L260 165\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"3\"/><path d=\"M75 150H90V165\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.3\"/><path d=\"M75 20V50\" stroke=\"#2563eb\" stroke-width=\"1.7\"/><path d=\"M75 83 A33 33 0 0 0 103 67\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"1.8\"/><text x=\"61\" y=\"45\" font-size=\"12\" fill=\"#334155\">O</text><text x=\"58\" y=\"183\" font-size=\"12\" fill=\"#334155\">A</text><text x=\"265\" y=\"180\" font-size=\"12\" fill=\"#334155\">B</text><text x=\"84\" y=\"112\" font-size=\"11\" fill=\"#1d4ed8\">OA = 50√2</text><text x=\"139\" y=\"188\" font-size=\"12\" fill=\"#6d28d9\">AB = 100</text><text x=\"158\" y=\"78\" font-size=\"12\" fill=\"#15803d\">OB</text><text x=\"87\" y=\"75\" font-size=\"12\" fill=\"#c2410c\">α</text><text x=\"64\" y=\"15\" font-size=\"11\" fill=\"#2563eb\">N</text></svg>"
+              }
+            },
+            {
+              "explain": "A bearing is measured clockwise from north. The south direction is \\(180^\\circ\\), and \\(\\alpha\\) is measured east from south, so subtract \\(\\alpha\\) from \\(180^\\circ\\). State the bearing using three figures.",
+              "work": "\\(\\text{bearing of }B\\text{ from }O=180^\\circ-54.7^\\circ\\)\n\\(\\boxed{125.3^\\circ}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><path d=\"M95 75V30M95 75H300M95 75L235 175\" fill=\"none\" stroke=\"#cbd5e1\" stroke-width=\"1.6\"/><path d=\"M95 75V30\" stroke=\"#2563eb\" stroke-width=\"2.8\"/><path d=\"M95 75L235 175\" stroke=\"#16a34a\" stroke-width=\"3.2\"/><path d=\"M95 45 A30 30 0 0 1 119.5 91.4\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"1.8\"/><text x=\"83\" y=\"25\" font-size=\"12\" fill=\"#2563eb\">N</text><text x=\"83\" y=\"94\" font-size=\"12\" fill=\"#334155\">O</text><text x=\"240\" y=\"181\" font-size=\"12\" fill=\"#334155\">B</text><text x=\"130\" y=\"68\" font-size=\"12\" fill=\"#c2410c\">125.3°</text><text x=\"305\" y=\"80\" font-size=\"11\" fill=\"#64748b\">E</text></svg>"
+              }
             }
           ],
           "keyPoints": [
             {
-              "text": "bearing of B from the base of the tower",
-              "note": "Measure clockwise from north; convert the angle found from south."
+              "text": "Calculate the bearing of B from the base of the tower.",
+              "note": "A bearing is measured clockwise from north. Here the ground direction to B is southeast; first find the angle east of south, then subtract it from \\(180^\\circ\\)."
             }
           ],
           "timeLimit": 60,
@@ -1924,9 +1940,6 @@
             "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
             "school": "Abbotsleigh",
             "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
-          },
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><path d=\"M80 55V25M80 55V165M80 165H245M80 55L245 165\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><path d=\"M80 55L92 63M80 55L88 44\" stroke=\"#334155\" stroke-width=\"1.4\"/><path d=\"M80 55V35\" stroke=\"#334155\" stroke-width=\"1.3\"/><path d=\"M80 143H102V165\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"1.4\"/><path d=\"M80 78 A25 25 0 0 1 100 69\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"1.6\"/><text x=\"73\" y=\"20\" font-size=\"10\">N</text><text x=\"63\" y=\"52\" font-size=\"9\">O</text><text x=\"63\" y=\"178\" font-size=\"9\">A</text><text x=\"249\" y=\"174\" font-size=\"9\">B</text><text x=\"123\" y=\"181\" font-size=\"8\">100 m east</text><text x=\"54\" y=\"112\" font-size=\"8\">OA=h south</text><text x=\"93\" y=\"88\" font-size=\"8\">bearing</text></svg>"
           }
         }
       ]
