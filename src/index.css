@@ -736,6 +736,28 @@ math-field::part(virtual-keyboard-toggle) {
   vertical-align: middle;
 }
 
+/* Markdown tables in question stems (for example, normal-distribution
+   lookup tables) must stay inside the question card. The scroll wrapper
+   contains genuinely narrow-screen tables; fixed layout keeps ordinary
+   wide-screen tables fitted to the card instead of their intrinsic width. */
+.math-view-markdown-table-scroll {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.math-view-markdown-table {
+  width: 100%;
+  table-layout: fixed;
+  font-size: clamp(10px, 0.9vw, 14px);
+}
+.math-view-markdown-table th,
+.math-view-markdown-table td {
+  box-sizing: border-box;
+  padding: 4px 5px !important;
+  overflow-wrap: anywhere;
+}
+
 /* Worksheet / notes split: panes ease in when the layout switches (two identical keyframes so the animation can restart). */
 @keyframes padHistoryFlash {
   0% { opacity: 0; transform: translate(-50%, -50%) scale(0.92); }

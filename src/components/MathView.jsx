@@ -37,10 +37,10 @@ const convertMarkdownTables = (str) => {
         rows.push(parseCells(rawLines[i]));
         i++;
       }
-      let html = '<div style="overflow-x:auto;max-width:100%;margin:8px 0"><table style="border-collapse:collapse;margin:0 auto;font-family:inherit">';
-      html += '<thead><tr>' + headers.map(h => `<th style="border:1px solid #cbd5e1;padding:6px 12px;background:#f1f5f9;text-align:center;white-space:nowrap">${h}</th>`).join('') + '</tr></thead>';
+      let html = '<div class="math-view-markdown-table-scroll" style="width:100%;min-width:0;max-width:100%;box-sizing:border-box;overflow-x:auto;margin:8px 0"><table class="math-view-markdown-table" style="width:100%;table-layout:fixed;border-collapse:collapse;margin:0 auto;font-family:inherit">';
+      html += '<thead><tr>' + headers.map(h => `<th style="border:1px solid #cbd5e1;padding:4px 5px;background:#f1f5f9;text-align:center;white-space:normal">${h}</th>`).join('') + '</tr></thead>';
       if (rows.length) {
-        html += '<tbody>' + rows.map(r => '<tr>' + r.map(c => `<td style="border:1px solid #cbd5e1;padding:6px 12px;min-width:40px;text-align:center;white-space:nowrap">${c}</td>`).join('') + '</tr>').join('') + '</tbody>';
+        html += '<tbody>' + rows.map(r => '<tr>' + r.map(c => `<td style="border:1px solid #cbd5e1;padding:4px 5px;min-width:0;text-align:center;white-space:normal">${c}</td>`).join('') + '</tr>').join('') + '</tbody>';
       }
       html += '</table></div>';
       out.push(html);
@@ -345,6 +345,8 @@ const MathView = ({ content, graphData: rawGraphData, style, align, keyPoints, o
     <div style={{
       display: 'flex',
       flexDirection: 'column',
+      minWidth: 0,
+      boxSizing: 'border-box',
       minHeight: outerMinHeight,
       height: outerHeight,
       maxHeight: outerMaxHeight,
@@ -361,7 +363,7 @@ const MathView = ({ content, graphData: rawGraphData, style, align, keyPoints, o
       {hasText && (
         <div
           ref={containerRef}
-          style={textStyle}
+          style={{ ...textStyle, width: '100%', minWidth: 0, maxWidth: '100%', boxSizing: 'border-box' }}
           onClick={onKeyPointClick ? (e) => {
             const mark = e.target.closest?.('mark.sapere-kp');
             if (mark) onKeyPointClick(Number(mark.dataset.kp), mark);
