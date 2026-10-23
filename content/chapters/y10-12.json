@@ -1617,7 +1617,7 @@
           "difficulty": "easy",
           "stem": "In the right-angled triangle shown, the hypotenuse is 13 and the side opposite \\(\\theta\\) is 5. Correct to 2 decimal places, \\(\\tan\\theta=\\)",
           "figure": {
-            "svg": "fig:56fe5f1b30"
+            "svg": "fig:1d6718a6c0"
           },
           "options": [
             "\\(0.38\\)",
@@ -1632,14 +1632,14 @@
               "explain": "The adjacent side is missing. The hypotenuse (13) and the opposite side (5) give it by Pythagoras.",
               "work": "\\(\\text{adj}=\\sqrt{13^2-5^2}=\\sqrt{169-25}=\\sqrt{144}=12\\)",
               "figure": {
-                "svg": "fig:a346b29698"
+                "svg": "fig:c1726a514b"
               }
             },
             {
               "explain": "Now use the opposite side (5) and the adjacent side (12) — the two sides touching the tangent ratio.",
               "work": "\\(\\tan\\theta=\\dfrac{5}{12}=0.41\\overline{6}\\approx0.42\\)",
               "figure": {
-                "svg": "fig:d788cab4c8"
+                "svg": "fig:835834af2a"
               }
             },
             {
@@ -6616,7 +6616,7 @@
           "difficulty": "hard",
           "stem": "In the rectangular prism shown, \\(AB=4\\text{ m}\\), \\(BF=2\\text{ m}\\) and \\(FG=3\\text{ m}\\). The size of \\(\\angle BHF\\), to the nearest minute, is",
           "figure": {
-            "svg": "fig:aed691c9cf"
+            "svg": "fig:cc16ce4c0d"
           },
           "options": [
             "\\(21^\\circ48'\\)",
@@ -6631,14 +6631,14 @@
               "explain": "HF is the diagonal of the base rectangle. In right triangle \\(HGF\\), \\(HG=AB=4\\) and \\(GF=3\\).",
               "work": "\\(HF=\\sqrt{4^2+3^2}=\\sqrt{25}=5\\text{ m}\\)",
               "figure": {
-                "svg": "fig:0114dae743"
+                "svg": "fig:537cb1b085"
               }
             },
             {
               "explain": "BF is vertical, so it is perpendicular to the base: triangle \\(BFH\\) has its right angle at F. Relative to \\(\\angle BHF\\), BF is opposite and HF is adjacent.",
               "work": "\\(\\tan\\angle BHF=\\dfrac{BF}{HF}=\\dfrac{2}{5}\\)",
               "figure": {
-                "svg": "fig:c91264bbc7"
+                "svg": "fig:e5b49d84cd"
               }
             },
             {
@@ -15950,7 +15950,7 @@
           "difficulty": "medium",
           "stem": "Find the exact area of the parallelogram with sides 6 cm and 8 cm and an angle of \\(60^\\circ\\) between them.",
           "figure": {
-            "svg": "fig:02b69fa94e"
+            "svg": "fig:3a5f349871"
           },
           "options": [
             "\\(48\\text{ cm}^2\\)",
@@ -15965,14 +15965,14 @@
               "explain": "The perpendicular height \\(h\\) is opposite the 60° angle in the right triangle whose hypotenuse is the 6 cm side.",
               "work": "\\(h=6\\sin60^\\circ=6\\times\\tfrac{\\sqrt3}{2}=3\\sqrt3\\text{ cm}\\)",
               "figure": {
-                "svg": "fig:e723cc6730"
+                "svg": "fig:dc1c81d7ba"
               }
             },
             {
               "explain": "Area = base × height. (Using 6 cm as the height gives 48 — the slanted side is not the height.)",
               "work": "\\(A=8\\times3\\sqrt3=24\\sqrt3\\text{ cm}^2\\)",
               "figure": {
-                "svg": "fig:0df274e850"
+                "svg": "fig:5c8dc1438b"
               }
             }
           ],
@@ -17662,7 +17662,7 @@
           "difficulty": "medium",
           "stem": "Boat A sails 9 km from port P on a bearing of 035°. Boat B sails 7 km from port P on a bearing of 160°.",
           "figure": {
-            "svg": "fig:76ae367e64"
+            "svg": "fig:a4c06c4d40"
           },
           "meta": {
             "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
@@ -17689,14 +17689,14 @@
                   "explain": "Both bearings are measured clockwise from north, so the angle between the two paths is their difference.",
                   "work": "\\(\\angle APB=160^\\circ-35^\\circ=125^\\circ\\)",
                   "figure": {
-                    "svg": "fig:036ae90e55"
+                    "svg": "fig:5819127bb4"
                   }
                 },
                 {
                   "explain": "Two sides and the included angle are known: use the cosine rule for the third side.",
                   "work": "\\(AB^2=9^2+7^2-2(9)(7)\\cos125^\\circ=130+72.27=202.27\\)",
                   "figure": {
-                    "svg": "fig:4d824fe22b"
+                    "svg": "fig:d576e2f0ec"
                   }
                 },
                 {
@@ -17724,7 +17724,7 @@
                   "explain": "The side opposite \\(\\angle PAB\\) is PB = 7, and the side opposite \\(\\angle APB=125^\\circ\\) is AB ≈ 14.22.",
                   "work": "\\(\\dfrac{\\sin\\angle PAB}{7}=\\dfrac{\\sin125^\\circ}{14.22}\\)",
                   "figure": {
-                    "svg": "fig:456614cc37"
+                    "svg": "fig:787fa92569"
                   }
                 },
                 {
@@ -17756,7 +17756,7 @@
                   "explain": "Standing at A facing P (215°), B lies \\(24^\\circ\\) anticlockwise from that direction (towards south). Subtract.",
                   "work": "\\(215^\\circ-24^\\circ=191^\\circ\\)",
                   "figure": {
-                    "svg": "fig:3f06073ee2"
+                    "svg": "fig:c7f1af0d10"
                   }
                 }
               ],
