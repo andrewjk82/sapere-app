@@ -978,9 +978,9 @@
           "id": "fsh-y8-2020-q5c",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "(c) If the square in the shape below has an area of 289 cm², find the area of the shaded region to one decimal place.",
+          "stem": "If the square in the shape below has an area of 289 cm², find the area of the shaded region to one decimal place.",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 250\" width=\"100%\" height=\"220\" style=\"max-width:300px;display:block;margin:auto;background:#fff\"><rect x=\"45\" y=\"20\" width=\"210\" height=\"210\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2.5\"/><circle cx=\"150\" cy=\"125\" r=\"105\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2.5\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 300\" width=\"85%\" height=\"275\" style=\"max-width:360px;display:block;margin:0 auto;background:#fff\">\n<rect width=\"360\" height=\"300\" fill=\"#fff\"/>\n<rect x=\"85\" y=\"55\" width=\"190\" height=\"190\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/>\n<circle cx=\"180\" cy=\"150\" r=\"95\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"3\"/>\nnone\n<text x=\"180\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\">square area = 289 cm²</text>\n\n</svg>"
           },
           "options": [
             "\\(62.0\\text{ cm}^2\\)",
@@ -989,29 +989,41 @@
             "\\(144.5\\text{ cm}^2\\)"
           ],
           "answer": 0,
-          "hint": "Find the square side from its area; this is also the circle diameter.",
+          "hint": "First find the square side, which is also the circle diameter. Halve it to get the radius, then subtract the circle area from the square area.",
           "keyPoints": [
             {
-              "text": "area of 289 cm²",
-              "note": "The shaded area is square area minus the area of the inscribed circle."
+              "text": "square has an area of 289 cm²",
+              "note": "The circle is inscribed in the square, so shaded area = square area − circle area."
             }
           ],
           "steps": [
             {
-              "explain": "Find the square side length.",
-              "work": "\\(s^2=289\\text{ cm}^2\\)\n\\(s=\\sqrt{289}=17\\text{ cm}\\)"
+              "explain": "A square has four equal sides, so its area is side × side. Take the square root of 289 to find one side; the diagram shows the inscribed circle has the same diameter as this side.",
+              "work": "\\(s^2=289\\text{ cm}^2\\)\n\\(s=\\sqrt{289}=17\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 300\" width=\"85%\" height=\"275\" style=\"max-width:360px;display:block;margin:0 auto;background:#fff\">\n<rect width=\"360\" height=\"300\" fill=\"#fff\"/>\n<rect x=\"85\" y=\"55\" width=\"190\" height=\"190\" fill=\"#bfdbfe\" stroke=\"#334155\" stroke-width=\"3\"/>\n<circle cx=\"180\" cy=\"150\" r=\"95\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"3\"/>\nnone\n<text x=\"180\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\">17 cm</text>\n<text x=\"180\" y=\"279\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#475569\">Square side = √289 = 17 cm</text>\n</svg>"
+              }
             },
             {
-              "explain": "The circle fits exactly across the square, so its diameter is (17) cm and radius is half of that.",
-              "work": "\\(r=\\frac{17}{2}=8.5\\text{ cm}\\)"
+              "explain": "The circle touches both opposite sides of the square, so its diameter is 17 cm. The radius is half of the diameter.",
+              "work": "\\(d=17\\text{ cm}\\)\n\\(r=\\frac{d}{2}=\\frac{17}{2}=8.5\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 300\" width=\"85%\" height=\"275\" style=\"max-width:360px;display:block;margin:0 auto;background:#fff\">\n<rect width=\"360\" height=\"300\" fill=\"#fff\"/>\n<rect x=\"85\" y=\"55\" width=\"190\" height=\"190\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/>\n<circle cx=\"180\" cy=\"150\" r=\"95\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"3\"/>\n<line x1=\"180\" y1=\"130\" x2=\"275\" y2=\"130\" stroke=\"#7c3aed\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"130\" r=\"5\" fill=\"#7c3aed\"/>\n<text x=\"180\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\">17 cm</text>\n<text x=\"180\" y=\"279\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#475569\">Diameter = 17 cm, so radius = 8.5 cm</text>\n</svg>"
+              }
             },
             {
-              "explain": "Calculate circle area.",
-              "work": "\\(A_{\\text{circle}}=\\pi(8.5)^2=72.25\\pi\\approx226.98\\text{ cm}^2\\)"
+              "explain": "Use the circle area formula with radius 8.5 cm. Keep the unrounded value until subtracting.",
+              "work": "\\(A_{\\text{circle}}=\\pi r^2=\\pi(8.5)^2=72.25\\pi\\)\n\\(A_{\\text{circle}}\\approx226.98\\text{ cm}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 300\" width=\"85%\" height=\"275\" style=\"max-width:360px;display:block;margin:0 auto;background:#fff\">\n<rect width=\"360\" height=\"300\" fill=\"#fff\"/>\n<rect x=\"85\" y=\"55\" width=\"190\" height=\"190\" fill=\"#bfdbfe\" stroke=\"#334155\" stroke-width=\"3\"/>\n<circle cx=\"180\" cy=\"150\" r=\"95\" fill=\"#ddd6fe\" stroke=\"#475569\" stroke-width=\"3\"/>\n<line x1=\"180\" y1=\"130\" x2=\"275\" y2=\"130\" stroke=\"#7c3aed\" stroke-width=\"3\"/><circle cx=\"180\" cy=\"130\" r=\"4\" fill=\"#7c3aed\"/>\n<text x=\"180\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\">17 cm</text>\n<text x=\"180\" y=\"279\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#475569\">Circle area = π × 8.5² ≈ 226.98 cm²</text>\n</svg>"
+              }
             },
             {
-              "explain": "Subtract from the square and round to one decimal place.",
-              "work": "\\(A_{\\text{shaded}}=289-226.98=62.02\\approx\\boxed{62.0\\text{ cm}^2}\\)"
+              "explain": "The blue shaded parts are the square outside the inscribed circle. Subtract the circle area from the square area, then round to one decimal place.",
+              "work": "\\(A_{\\text{shaded}}=289-226.98=62.02\\text{ cm}^2\\)\n\\(A_{\\text{shaded}}\\approx\\boxed{62.0\\text{ cm}^2}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 300\" width=\"85%\" height=\"275\" style=\"max-width:360px;display:block;margin:0 auto;background:#fff\">\n<rect width=\"360\" height=\"300\" fill=\"#fff\"/>\n<rect x=\"85\" y=\"55\" width=\"190\" height=\"190\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"3\"/>\n<circle cx=\"180\" cy=\"150\" r=\"95\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"3\"/>\n<line x1=\"180\" y1=\"130\" x2=\"275\" y2=\"130\" stroke=\"#7c3aed\" stroke-width=\"3\"/><circle cx=\"180\" cy=\"130\" r=\"4\" fill=\"#7c3aed\"/>\n<text x=\"180\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\">17 cm</text>\n<text x=\"180\" y=\"279\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#475569\">Shaded area = square area − circle area</text>\n</svg>"
+              }
             }
           ],
           "timeLimit": 60,
