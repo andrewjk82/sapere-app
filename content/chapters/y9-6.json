@@ -4013,7 +4013,7 @@
           "id": "nsb-y9-2019-t4-q7b",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Change the subject of the formula to \\(x\\): \\(y=\\dfrac{-2+\\sqrt{5x-6}}{5}\\).",
+          "stem": "Change the subject of the formula to \\(x\\): \\(y=\\dfrac{-2\\pm\\sqrt{5x-6}}{5}\\)",
           "options": [
             "\\(x=5y^2-4y+2\\)",
             "\\(x=25y^2+20y+10\\)",
@@ -4021,29 +4021,41 @@
             "\\(x=5y^2+4y+2\\)"
           ],
           "answer": 3,
-          "hint": "Undo the operations around the square root in reverse order: multiply by 5, add 2, square, then isolate x.",
+          "hint": "Undo the operations in reverse order: multiply by 5, add 2, then SQUARE both sides (squaring removes the ± as well), then solve for \\(x\\).",
           "keyPoints": [
             {
-              "text": "Change the subject of the formula to ",
-              "note": "Undo the operations around the square root in reverse order: multiply by 5, add 2, square, then isolate x."
+              "text": "\\(y=\\dfrac{-2\\pm\\sqrt{5x-6}}{5}\\)",
+              "note": "Squaring both sides removes both the square root and the ± sign, because \\((\\pm a)^2=a^2\\)."
             }
           ],
           "steps": [
             {
-              "explain": "Multiply both sides by 5 to remove the denominator.",
-              "work": "\\((5y=-2+\\sqrt{5x-6})\\)"
+              "explain": "Multiply both sides by 5.",
+              "work": "\\(5y=-2\\pm\\sqrt{5x-6}\\)"
             },
             {
-              "explain": "Add 2 to both sides to isolate the square root.",
-              "work": "\\((5y+2=\\sqrt{5x-6})\\)"
+              "explain": "Add 2 to both sides to isolate the square root term.",
+              "work": "\\(5y+2=\\pm\\sqrt{5x-6}\\)"
             },
             {
-              "explain": "Square both sides, then add 6.",
-              "work": "\\(((5y+2)^2=5x-6\\quad\\Rightarrow\\quad(5y+2)^2+6=5x)\\)"
+              "explain": "Square both sides. Squaring a positive or negative value gives the same result, so the ± disappears.",
+              "work": "\\((5y+2)^2=5x-6\\)"
             },
             {
-              "explain": "Divide by 5 and expand the numerator.",
-              "work": "\\((x=\\dfrac{(5y+2)^2+6}{5}=\\dfrac{25y^2+20y+10}{5}=\\boxed{5y^2+4y+2})\\)"
+              "explain": "Expand the left side.",
+              "work": "\\(25y^2+20y+4=5x-6\\)"
+            },
+            {
+              "explain": "Add 6 to both sides.",
+              "work": "\\(25y^2+20y+10=5x\\)"
+            },
+            {
+              "explain": "Divide every term by 5.",
+              "work": "\\(\\boxed{x=5y^2+4y+2}\\)"
+            },
+            {
+              "explain": "Check with \\(y=0\\): formula gives \\(x=2\\); original: \\(\\sqrt{5(2)-6}=2\\), and \\(\\dfrac{-2+2}{5}=0\\) ✓.",
+              "work": "\\(\\text{Answer: }x=5y^2+4y+2\\)"
             }
           ],
           "timeLimit": 60,

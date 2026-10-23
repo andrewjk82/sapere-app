@@ -2112,7 +2112,7 @@
           "id": "nsb-y9-2019-t4-q2ai",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Given \\(A(1,1)\\) and \\(B(-2,3)\\), find the distance of \\(AB\\).",
+          "stem": "Given \\(A(1,1)\\) and \\(B(-2,3)\\), find the distance of \\(AB\\)",
           "options": [
             "\\(\\sqrt{5}\\)",
             "\\(5\\)",
@@ -2120,25 +2120,37 @@
             "\\(13\\)"
           ],
           "answer": 2,
-          "hint": "Use the distance formula with the horizontal and vertical coordinate differences.",
+          "hint": "Distance formula \\(d=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}\\). Square the differences BEFORE adding.",
           "keyPoints": [
             {
-              "text": "find the distance of ",
-              "note": "Use the distance formula with the horizontal and vertical coordinate differences."
+              "text": "find the distance of \\(AB\\)",
+              "note": "Distance = length of the segment, so it is always positive; it comes from Pythagoras."
             }
           ],
           "steps": [
             {
-              "explain": "Write the distance formula and substitute the two coordinates.",
-              "work": "\\((AB=\\sqrt{(-2-1)^2+(3-1)^2})\\)"
+              "explain": "Label the points: \\((x_1,y_1)=(1,1)\\) and \\((x_2,y_2)=(-2,3)\\).",
+              "work": "\\(x_1=1,\\ y_1=1,\\ x_2=-2,\\ y_2=3\\)"
             },
             {
-              "explain": "Calculate the coordinate differences, square them, and add.",
-              "work": "\\((AB=\\sqrt{(-3)^2+2^2}=\\sqrt{9+4})\\)"
+              "explain": "Find the horizontal change (run). Watch the double sign.",
+              "work": "\\(x_2-x_1=-2-1=-3\\)"
             },
             {
-              "explain": "Take the square root; it is already in simplest exact form.",
-              "work": "\\((\\boxed{AB=\\sqrt{13}})\\)"
+              "explain": "Find the vertical change (rise).",
+              "work": "\\(y_2-y_1=3-1=2\\)"
+            },
+            {
+              "explain": "Substitute into the distance formula. Squaring makes both changes positive.",
+              "work": "\\(d=\\sqrt{(-3)^2+2^2}=\\sqrt{9+4}\\)"
+            },
+            {
+              "explain": "Simplify. 13 has no square factor, so leave it as a surd.",
+              "work": "\\(d=\\boxed{\\sqrt{13}}\\)"
+            },
+            {
+              "explain": "Common errors: forgetting the square root gives 13; adding before squaring gives \\(\\sqrt{(-3+2)^2}=1\\).",
+              "work": "\\(\\text{Answer: }\\sqrt{13}\\)"
             }
           ],
           "timeLimit": 60,
@@ -4379,7 +4391,7 @@
           "id": "nsb-y9-2019-t4-q2aii",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Given \\(A(1,1)\\) and \\(B(-2,3)\\), find the midpoint of \\(AB\\).",
+          "stem": "Given \\(A(1,1)\\) and \\(B(-2,3)\\), find the midpoint of \\(AB\\)",
           "options": [
             "\\((-\\tfrac12,2)\\)",
             "\\((\\tfrac12,2)\\)",
@@ -4387,25 +4399,33 @@
             "\\((1,-2)\\)"
           ],
           "answer": 0,
-          "hint": "Average the x-coordinates and average the y-coordinates separately.",
+          "hint": "Midpoint = average of the x-coordinates, average of the y-coordinates: \\(\\left(\\dfrac{x_1+x_2}{2},\\dfrac{y_1+y_2}{2}\\right)\\).",
           "keyPoints": [
             {
-              "text": "find the midpoint of ",
-              "note": "Average the x-coordinates and average the y-coordinates separately."
+              "text": "find the midpoint of \\(AB\\)",
+              "note": "ADD the coordinates and halve them — do not subtract."
             }
           ],
           "steps": [
             {
-              "explain": "Use the midpoint formula: average the matching coordinates.",
-              "work": "\\((M=\\left(\\dfrac{1+(-2)}2,\\dfrac{1+3}2\\right))\\)"
+              "explain": "Write the midpoint formula.",
+              "work": "\\(M=\\left(\\dfrac{x_1+x_2}{2},\\ \\dfrac{y_1+y_2}{2}\\right)\\)"
             },
             {
-              "explain": "Evaluate each coordinate average.",
-              "work": "\\((M=\\left(-\\dfrac12,2\\right))\\)"
+              "explain": "Average the x-coordinates.",
+              "work": "\\(\\dfrac{1+(-2)}{2}=\\dfrac{-1}{2}=-\\dfrac12\\)"
             },
             {
-              "explain": "State the ordered pair.",
-              "work": "\\((\\boxed{(-\\tfrac12,2)})\\)"
+              "explain": "Average the y-coordinates.",
+              "work": "\\(\\dfrac{1+3}{2}=\\dfrac42=2\\)"
+            },
+            {
+              "explain": "Write the midpoint.",
+              "work": "\\(M=\\boxed{\\left(-\\tfrac12,\\ 2\\right)}\\)"
+            },
+            {
+              "explain": "Sanity check: \\(-\\tfrac12\\) lies between 1 and −2, and 2 lies between 1 and 3. ✓",
+              "work": "\\(-2\\lt-\\tfrac12\\lt1,\\qquad1\\lt2\\lt3\\)"
             }
           ],
           "timeLimit": 60,
@@ -6646,7 +6666,7 @@
           "id": "nsb-y9-2019-t4-q2aiii",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Given \\(A(1,1)\\) and \\(B(-2,3)\\), find the gradient of \\(AB\\).",
+          "stem": "Given \\(A(1,1)\\) and \\(B(-2,3)\\), find the gradient of \\(AB\\)",
           "options": [
             "\\(-\\dfrac23\\)",
             "\\(\\dfrac23\\)",
@@ -6654,25 +6674,33 @@
             "\\(\\dfrac32\\)"
           ],
           "answer": 0,
-          "hint": "Use rise over run: subtract the y-coordinates in the same order as the x-coordinates.",
+          "hint": "Gradient \\(m=\\dfrac{y_2-y_1}{x_2-x_1}\\) = rise over run. Subtract in the SAME order on top and bottom.",
           "keyPoints": [
             {
-              "text": "find the gradient of ",
-              "note": "Use rise over run: subtract the y-coordinates in the same order as the x-coordinates."
+              "text": "find the gradient of \\(AB\\)",
+              "note": "Moving from A to B: x goes DOWN (left) while y goes UP, so the gradient must be negative."
             }
           ],
           "steps": [
             {
-              "explain": "Set up the gradient formula using the coordinates of A and B.",
-              "work": "\\((m=\\dfrac{3-1}{-2-1})\\)"
+              "explain": "Write the gradient formula.",
+              "work": "\\(m=\\dfrac{y_2-y_1}{x_2-x_1}\\)"
             },
             {
-              "explain": "Calculate rise and run.",
-              "work": "\\((m=\\dfrac{2}{-3})\\)"
+              "explain": "Rise: subtract the y-coordinates (B minus A).",
+              "work": "\\(y_2-y_1=3-1=2\\)"
             },
             {
-              "explain": "Write the simplified gradient.",
-              "work": "\\((\\boxed{-\\dfrac23})\\)"
+              "explain": "Run: subtract the x-coordinates in the same order (B minus A).",
+              "work": "\\(x_2-x_1=-2-1=-3\\)"
+            },
+            {
+              "explain": "Divide rise by run.",
+              "work": "\\(m=\\dfrac{2}{-3}=\\boxed{-\\dfrac23}\\)"
+            },
+            {
+              "explain": "Common errors: flipping it to run/rise gives \\(-\\tfrac32\\); mixing the order (B − A on top but A − B on the bottom) gives \\(+\\tfrac23\\).",
+              "work": "\\(\\text{Answer: }-\\tfrac23\\)"
             }
           ],
           "timeLimit": 60,
@@ -17687,7 +17715,7 @@
           "id": "nsb-y9-2019-t4-q2b",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Find the equation of the straight line parallel to \\(2x+y-7=0\\) which has y-intercept of \\(2\\).",
+          "stem": "Find the equation of the straight line parallel to \\(2x+y-7=0\\) which has \\(y\\)-intercept of 2.",
           "options": [
             "\\(y=2x+2\\)",
             "\\(y=-\\tfrac12x+2\\)",
@@ -17695,25 +17723,41 @@
             "\\(y=-2x-7\\)"
           ],
           "answer": 2,
-          "hint": "Rearrange the given line to identify its gradient. A parallel line has the same gradient.",
+          "hint": "Parallel lines have the SAME gradient. Rearrange \\(2x+y-7=0\\) into \\(y=mx+c\\) to read off \\(m\\), then use \\(c=2\\).",
           "keyPoints": [
             {
-              "text": "parallel to",
-              "note": "Rearrange the given line to identify its gradient. A parallel line has the same gradient."
+              "text": "parallel",
+              "note": "Parallel → same gradient \\(m\\)."
+            },
+            {
+              "text": "\\(y\\)-intercept of 2",
+              "note": "This is \\(c\\) in \\(y=mx+c\\)."
             }
           ],
           "steps": [
             {
-              "explain": "Rearrange the given line into gradient-intercept form.",
-              "work": "\\((2x+y-7=0\\quad\\Rightarrow\\quad y=-2x+7)\\)"
+              "explain": "Rearrange the given line into gradient–intercept form by making \\(y\\) the subject.",
+              "work": "\\(2x+y-7=0\\ \\Rightarrow\\ y=-2x+7\\)"
             },
             {
-              "explain": "A parallel line keeps gradient (-2), and the stated y-intercept gives (c=2).",
-              "work": "\\((y=mx+c=-2x+2)\\)"
+              "explain": "Read off the gradient: the coefficient of \\(x\\).",
+              "work": "\\(m=-2\\)"
             },
             {
-              "explain": "The required line is.",
-              "work": "\\((\\boxed{y=-2x+2})\\)"
+              "explain": "A parallel line has the same gradient.",
+              "work": "\\(m_{\\text{new}}=-2\\)"
+            },
+            {
+              "explain": "The y-intercept is given as 2, so \\(c=2\\).",
+              "work": "\\(c=2\\)"
+            },
+            {
+              "explain": "Write the equation \\(y=mx+c\\).",
+              "work": "\\(\\boxed{y=-2x+2}\\)"
+            },
+            {
+              "explain": "Common errors: using \\(m=2\\) (sign lost when rearranging), or \\(m=\\tfrac12\\) / \\(-\\tfrac12\\) (that is the perpendicular rule, not parallel).",
+              "work": "\\(\\text{Answer: }y=-2x+2\\)"
             }
           ],
           "timeLimit": 60,
@@ -17741,29 +17785,41 @@
             "\\(y=\\dfrac23x+\\dfrac{17}3\\)"
           ],
           "answer": 1,
-          "hint": "The perpendicular gradient is the negative reciprocal of \\(\\frac23\\). Then use the given point.",
+          "hint": "Perpendicular gradients multiply to −1: flip the fraction and change the sign. Then use point–gradient form \\(y-y_1=m(x-x_1)\\).",
           "keyPoints": [
             {
-              "text": "perpendicular to",
-              "note": "The perpendicular gradient is the negative reciprocal of (\frac23). Then use the given point."
+              "text": "perpendicular",
+              "note": "\\(m_1\\times m_2=-1\\): negative reciprocal."
+            },
+            {
+              "text": "\\((-1,5)\\)",
+              "note": "Use this point in \\(y-y_1=m(x-x_1)\\); careful with \\(x-(-1)=x+1\\)."
             }
           ],
           "steps": [
             {
-              "explain": "The given line has gradient \\(\\frac23\\); a perpendicular line has negative reciprocal gradient.",
-              "work": "\\((m_1=\\dfrac23\\quad\\Rightarrow\\quad m_2=-\\dfrac32)\\)"
+              "explain": "Read the gradient of the given line from \\(y=\\dfrac{2x}{3}+5\\).",
+              "work": "\\(m_1=\\dfrac23\\)"
             },
             {
-              "explain": "Use point-gradient form with point ((-1,5)).",
-              "work": "\\((y-5=-\\dfrac32(x-(-1))=-\\dfrac32(x+1))\\)"
+              "explain": "The perpendicular gradient is the negative reciprocal (flip and change sign).",
+              "work": "\\(m_2=-\\dfrac32\\qquad\\left(\\text{check: }\\dfrac23\\times\\left(-\\dfrac32\\right)=-1\\right)\\)"
             },
             {
-              "explain": "Expand and simplify.",
-              "work": "\\((y=-\\dfrac32x-\\dfrac32+5=-\\dfrac32x+\\dfrac72)\\)"
+              "explain": "Substitute the point \\((-1,5)\\) and \\(m_2\\) into point–gradient form.",
+              "work": "\\(y-5=-\\dfrac32\\big(x-(-1)\\big)=-\\dfrac32(x+1)\\)"
             },
             {
-              "explain": "Therefore.",
-              "work": "\\((\\boxed{y=-\\dfrac32x+\\dfrac72})\\)"
+              "explain": "Expand the right-hand side.",
+              "work": "\\(y-5=-\\dfrac32x-\\dfrac32\\)"
+            },
+            {
+              "explain": "Add 5 to both sides. Write 5 as \\(\\dfrac{10}{2}\\) to combine with \\(-\\dfrac32\\).",
+              "work": "\\(y=-\\dfrac32x-\\dfrac32+\\dfrac{10}{2}=-\\dfrac32x+\\dfrac72\\)"
+            },
+            {
+              "explain": "Final equation. Check: at \\(x=-1\\), \\(y=\\dfrac32+\\dfrac72=5\\). ✓",
+              "work": "\\(\\boxed{y=-\\dfrac32x+\\dfrac72}\\)"
             }
           ],
           "timeLimit": 60,
@@ -17783,7 +17839,7 @@
           "id": "nsb-y9-2019-t4-q2d",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Find the equation of the straight line through the point \\((2,-7)\\) perpendicular to the y-axis.",
+          "stem": "Find the equation of the straight line through the point \\((2,-7)\\) perpendicular to the \\(y\\)-axis.",
           "options": [
             "\\(y=-7\\)",
             "\\(x=2\\)",
@@ -17791,25 +17847,37 @@
             "\\(x=-7\\)"
           ],
           "answer": 0,
-          "hint": "A line perpendicular to the y-axis is horizontal; use the point’s y-coordinate.",
+          "hint": "The y-axis is vertical. A line perpendicular to a vertical line is HORIZONTAL, and a horizontal line has equation \\(y=\\) constant.",
           "keyPoints": [
             {
-              "text": "perpendicular to the y-axis",
-              "note": "A line perpendicular to the y-axis is horizontal; use the point’s y-coordinate."
+              "text": "perpendicular to the \\(y\\)-axis",
+              "note": "Perpendicular to the (vertical) y-axis means horizontal — so the equation is y = something."
             }
           ],
           "steps": [
             {
-              "explain": "The y-axis is vertical, so a perpendicular line is horizontal and has equation (y=c).",
-              "work": "\\((y=c)\\)"
+              "explain": "The \\(y\\)-axis is a vertical line.",
+              "work": "\\(y\\text{-axis: }x=0\\ (\\text{vertical})\\)"
             },
             {
-              "explain": "The line passes through ((2,-7)), so its constant y-value is (-7).",
-              "work": "\\((c=-7)\\)"
+              "explain": "A line perpendicular to a vertical line is horizontal.",
+              "work": "\\(\\text{new line is horizontal}\\)"
             },
             {
-              "explain": "State the equation.",
-              "work": "\\((\\boxed{y=-7})\\)"
+              "explain": "Every point on a horizontal line has the same y-coordinate, so its equation is \\(y=k\\).",
+              "work": "\\(y=k\\)"
+            },
+            {
+              "explain": "The line passes through \\((2,-7)\\), so the y-value is −7 everywhere on it.",
+              "work": "\\(k=-7\\)"
+            },
+            {
+              "explain": "Write the equation.",
+              "work": "\\(\\boxed{y=-7}\\)"
+            },
+            {
+              "explain": "Common error: \\(x=2\\) is the line through the point PARALLEL to the y-axis (vertical), not perpendicular.",
+              "work": "\\(\\text{Answer: }y=-7\\)"
             }
           ],
           "timeLimit": 60,

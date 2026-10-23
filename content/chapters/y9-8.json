@@ -6481,7 +6481,7 @@
           "id": "nsb-y9-2019-t4-q6ai",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Simplify \\(y^5\\times3y^7\\times2y^3\\).",
+          "stem": "Simplify \\(y^5\\times3y^7\\times2y^3\\)",
           "options": [
             "\\(6y^{105}\\)",
             "\\(6y^{15}\\)",
@@ -6489,25 +6489,33 @@
             "\\(6y^{10}\\)"
           ],
           "answer": 1,
-          "hint": "Multiply the numerical coefficients and add exponents of the common base y.",
+          "hint": "Multiply the coefficients (3 × 2) and ADD the indices of \\(y\\) (\\(a^m\\times a^n=a^{m+n}\\)).",
           "keyPoints": [
             {
-              "text": "Simplify",
-              "note": "Multiply the numerical coefficients and add exponents of the common base y."
+              "text": "\\(y^5\\times3y^7\\times2y^3\\)",
+              "note": "Multiplying powers of the same base → add the indices (do not multiply them)."
             }
           ],
           "steps": [
             {
+              "explain": "Group the numbers and the powers of \\(y\\). The first term \\(y^5\\) has coefficient 1.",
+              "work": "\\((1\\times3\\times2)\\times(y^5\\times y^7\\times y^3)\\)"
+            },
+            {
               "explain": "Multiply the coefficients.",
-              "work": "\\((1\\times3\\times2=6)\\)"
+              "work": "\\(1\\times3\\times2=6\\)"
             },
             {
-              "explain": "For products with the same base y, add the exponents.",
-              "work": "\\((y^5y^7y^3=y^{5+7+3}=y^{15})\\)"
+              "explain": "Index law: same base multiplied → add the indices.",
+              "work": "\\(y^5\\times y^7\\times y^3=y^{5+7+3}=y^{15}\\)"
             },
             {
-              "explain": "Combine the coefficient and power.",
-              "work": "\\((\\boxed{6y^{15}})\\)"
+              "explain": "Combine.",
+              "work": "\\(\\boxed{6y^{15}}\\)"
+            },
+            {
+              "explain": "Common error: multiplying the indices \\(5\\times7\\times3=105\\) gives \\(6y^{105}\\).",
+              "work": "\\(\\text{Answer: }6y^{15}\\)"
             }
           ],
           "timeLimit": 60,
@@ -6527,7 +6535,7 @@
           "id": "nsb-y9-2019-t4-q6aii",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Simplify \\(12w^4\\div4w^3\\).",
+          "stem": "Simplify \\(12w^4\\div4w^3\\)",
           "options": [
             "\\(3w\\)",
             "\\(3w^7\\)",
@@ -6535,25 +6543,33 @@
             "\\(3w^{-1}\\)"
           ],
           "answer": 0,
-          "hint": "Divide the coefficients and subtract the exponent in the denominator from the exponent in the numerator.",
+          "hint": "Divide the coefficients (12 ÷ 4) and SUBTRACT the indices of \\(w\\) (\\(a^m\\div a^n=a^{m-n}\\)).",
           "keyPoints": [
             {
-              "text": "Simplify",
-              "note": "Divide the coefficients and subtract the exponent in the denominator from the exponent in the numerator."
+              "text": "\\(12w^4\\div4w^3\\)",
+              "note": "Dividing powers of the same base → subtract the indices."
             }
           ],
           "steps": [
             {
-              "explain": "Divide the numerical coefficients.",
-              "work": "\\((12\\div4=3)\\)"
+              "explain": "Write the division as a fraction to see the parts clearly.",
+              "work": "\\(\\dfrac{12w^4}{4w^3}\\)"
             },
             {
-              "explain": "For division with the same base w, subtract exponents.",
-              "work": "\\((w^4\\div w^3=w^{4-3}=w)\\)"
+              "explain": "Divide the coefficients.",
+              "work": "\\(12\\div4=3\\)"
             },
             {
-              "explain": "Combine the results.",
-              "work": "\\((\\boxed{3w})\\)"
+              "explain": "Index law: same base divided → subtract the indices.",
+              "work": "\\(w^4\\div w^3=w^{4-3}=w^1=w\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(\\boxed{3w}\\)"
+            },
+            {
+              "explain": "Common errors: adding the indices gives \\(3w^7\\); subtracting the coefficients gives \\(8w\\).",
+              "work": "\\(\\text{Answer: }3w\\)"
             }
           ],
           "timeLimit": 60,
@@ -6573,7 +6589,7 @@
           "id": "nsb-y9-2019-t4-q6aiii",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Simplify \\(12(x^2y^3)^4\\).",
+          "stem": "Simplify \\(12(x^2y^3)^4\\)",
           "options": [
             "\\(12x^6y^7\\)",
             "\\(12x^8y^7\\)",
@@ -6581,25 +6597,29 @@
             "\\(12x^8y^{12}\\)"
           ],
           "answer": 3,
-          "hint": "Raise every factor inside the brackets to the fourth power, multiplying each exponent by 4.",
+          "hint": "The power 4 applies to every factor INSIDE the bracket (multiply each index by 4). The 12 is outside the bracket, so it is NOT raised to the power.",
           "keyPoints": [
             {
-              "text": "Simplify",
-              "note": "Raise every factor inside the brackets to the fourth power, multiplying each exponent by 4."
+              "text": "\\(12(x^2y^3)^4\\)",
+              "note": "\\((a^m)^n=a^{mn}\\): multiply indices. The coefficient 12 sits outside the bracket."
             }
           ],
           "steps": [
             {
-              "explain": "Apply the power to each factor inside the bracket.",
-              "work": "\\(((x^2y^3)^4=(x^2)^4(y^3)^4)\\)"
+              "explain": "Apply the power of a power law to each factor in the bracket.",
+              "work": "\\((x^2y^3)^4=x^{2\\times4}\\,y^{3\\times4}\\)"
             },
             {
-              "explain": "Use the power-of-a-power rule: multiply exponents.",
-              "work": "\\(((x^2)^4=x^{2\\times4}=x^8,\\qquad(y^3)^4=y^{3\\times4}=y^{12})\\)"
+              "explain": "Multiply the indices.",
+              "work": "\\(x^8y^{12}\\)"
             },
             {
-              "explain": "The outside coefficient 12 is unchanged.",
-              "work": "\\((\\boxed{12x^8y^{12}})\\)"
+              "explain": "Multiply by the coefficient 12 (it is outside the bracket, so it is unchanged).",
+              "work": "\\(12(x^2y^3)^4=\\boxed{12x^8y^{12}}\\)"
+            },
+            {
+              "explain": "Common errors: adding indices (\\(2+4=6\\), \\(3+4=7\\)) gives \\(12x^6y^7\\); raising 12 to the power or multiplying 12 by 4 gives \\(48x^8y^{12}\\).",
+              "work": "\\(\\text{Answer: }12x^8y^{12}\\)"
             }
           ],
           "timeLimit": 60,
@@ -6619,37 +6639,45 @@
           "id": "nsb-y9-2019-t4-q7c",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Simplify \\(\\dfrac{7^{x-1}\\times(7^{x+1})^2}{7^{2x-3}\\times7^{x+2}}\\).",
+          "stem": "Simplify \\(\\dfrac{7^{x-1}\\times(7^{x+1})^2}{7^{2x-3}\\times7^{x+2}}\\)",
           "options": [
             "\\(7\\)",
             "\\(1\\)",
             "\\(49\\)",
-            "\\(7^2x\\)"
+            "\\(7^{2x}\\)"
           ],
           "answer": 2,
-          "hint": "Use the power-of-a-power rule first, then combine exponents in the numerator and denominator separately.",
+          "hint": "Everything is a power of 7. Simplify the top (power of a power, then add), simplify the bottom (add), then subtract bottom index from top index.",
           "keyPoints": [
             {
-              "text": "Simplify",
-              "note": "Use the power-of-a-power rule first, then combine exponents in the numerator and denominator separately."
+              "text": "\\(\\dfrac{7^{x-1}\\times(7^{x+1})^2}{7^{2x-3}\\times7^{x+2}}\\)",
+              "note": "Power of a power: multiply the WHOLE index \\(x+1\\) by 2 → \\(2x+2\\)."
             }
           ],
           "steps": [
             {
-              "explain": "Apply the power-of-a-power rule to the squared power in the numerator.",
-              "work": "\\(((7^{x+1})^2=7^{2x+2})\\)"
+              "explain": "Power of a power in the numerator: multiply the index \\(x+1\\) by 2.",
+              "work": "\\((7^{x+1})^2=7^{2(x+1)}=7^{2x+2}\\)"
             },
             {
-              "explain": "Add exponents when multiplying powers with base 7.",
-              "work": "\\((7^{x-1}\\times7^{2x+2}=7^{3x+1})\\)"
+              "explain": "Numerator: same base multiplied → add indices.",
+              "work": "\\(7^{x-1}\\times7^{2x+2}=7^{(x-1)+(2x+2)}=7^{3x+1}\\)"
             },
             {
-              "explain": "Combine the denominator powers.",
-              "work": "\\((7^{2x-3}\\times7^{x+2}=7^{3x-1})\\)"
+              "explain": "Denominator: add indices.",
+              "work": "\\(7^{2x-3}\\times7^{x+2}=7^{(2x-3)+(x+2)}=7^{3x-1}\\)"
             },
             {
-              "explain": "Subtract the denominator exponent from the numerator exponent.",
-              "work": "\\((\\dfrac{7^{3x+1}}{7^{3x-1}}=7^{(3x+1)-(3x-1)}=7^2=\\boxed{49})\\)"
+              "explain": "Divide: subtract the indices (use brackets — the minus applies to both terms of \\(3x-1\\)).",
+              "work": "\\(\\dfrac{7^{3x+1}}{7^{3x-1}}=7^{(3x+1)-(3x-1)}=7^{2}\\)"
+            },
+            {
+              "explain": "Evaluate.",
+              "work": "\\(7^2=\\boxed{49}\\)"
+            },
+            {
+              "explain": "Common error: \\((3x+1)-3x-1=0\\) (bracket dropped) gives \\(7^0=1\\).",
+              "work": "\\(\\text{Answer: }49\\)"
             }
           ],
           "timeLimit": 60,
@@ -6827,7 +6855,7 @@
           "id": "nsb-y9-2019-t4-q6b",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Simplify and write without negative indices \\(\\left(\\dfrac{3x^2y^{-3}}{y^2}\\right)^{-5}\\).",
+          "stem": "Simplify and write without negative indices \\(\\left(\\dfrac{3x^2y^{-3}}{y^2}\\right)^{-5}\\)",
           "options": [
             "\\(\\dfrac{243x^{10}}{y^{25}}\\)",
             "\\(\\dfrac{y^{25}}{243x^{10}}\\)",
@@ -6835,29 +6863,37 @@
             "\\(\\dfrac{1}{243x^{10}y^{25}}\\)"
           ],
           "answer": 1,
-          "hint": "First combine the powers of y inside the fraction. The outside exponent is negative, so invert the resulting power before applying 5.",
+          "hint": "Simplify inside the bracket first (combine the \\(y\\) terms). Then a negative outer power FLIPS the fraction: \\(\\left(\\dfrac{a}{b}\\right)^{-n}=\\left(\\dfrac{b}{a}\\right)^{n}\\).",
           "keyPoints": [
             {
-              "text": "Simplify and write without negative indices",
-              "note": "First combine the powers of y inside the fraction. The outside exponent is negative, so invert the resulting power before applying 5."
+              "text": "write without negative indices",
+              "note": "Final answer: every index positive. \\(a^{-n}=\\dfrac{1}{a^n}\\)."
             }
           ],
           "steps": [
             {
-              "explain": "Combine the y-powers in the fraction by subtracting exponents.",
-              "work": "\\((\\dfrac{3x^2y^{-3}}{y^2}=3x^2y^{-3-2}=3x^2y^{-5})\\)"
+              "explain": "Simplify the \\(y\\) terms inside the bracket: \\(y^{-3}\\div y^2=y^{-3-2}=y^{-5}\\).",
+              "work": "\\(\\dfrac{3x^2y^{-3}}{y^2}=3x^2y^{-5}=\\dfrac{3x^2}{y^5}\\)"
             },
             {
-              "explain": "A negative power of the whole product takes its reciprocal and changes the exponent to positive.",
-              "work": "\\(((3x^2y^{-5})^{-5}=3^{-5}x^{-10}y^{25})\\)"
+              "explain": "A negative outer index flips the fraction and makes the index positive.",
+              "work": "\\(\\left(\\dfrac{3x^2}{y^5}\\right)^{-5}=\\left(\\dfrac{y^5}{3x^2}\\right)^{5}\\)"
             },
             {
-              "explain": "Rewrite all negative powers in the denominator.",
-              "work": "\\((3^{-5}=\\dfrac1{243},\\quad x^{-10}=\\dfrac1{x^{10}})\\)"
+              "explain": "Raise the numerator to the power 5: \\((y^5)^5=y^{25}\\).",
+              "work": "\\((y^5)^5=y^{25}\\)"
             },
             {
-              "explain": "State the expression with no negative indices.",
-              "work": "\\((\\boxed{\\dfrac{y^{25}}{243x^{10}}})\\)"
+              "explain": "Raise every factor of the denominator to the power 5: \\(3^5=243\\) and \\((x^2)^5=x^{10}\\).",
+              "work": "\\((3x^2)^5=243x^{10}\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(\\boxed{\\dfrac{y^{25}}{243x^{10}}}\\)"
+            },
+            {
+              "explain": "Common error: forgetting to flip gives \\(\\dfrac{243x^{10}}{y^{25}}\\) — that is the answer to a power of +5, not −5.",
+              "work": "\\(\\text{Answer: }\\dfrac{y^{25}}{243x^{10}}\\)"
             }
           ],
           "timeLimit": 60,

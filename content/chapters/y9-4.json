@@ -3462,7 +3462,7 @@
           "id": "nsb-y9-2019-t4-q1di",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Factorise fully \\(4x^2-100\\).",
+          "stem": "Factorise fully \\(4x^2-100\\)",
           "options": [
             "\\((2x-10)^2\\)",
             "\\(4(x-25)(x+1)\\)",
@@ -3470,25 +3470,33 @@
             "\\(4(x-5)(x+5)\\)"
           ],
           "answer": 3,
-          "hint": "Take out the common factor 4, then factor the difference of two squares.",
+          "hint": "Take out the highest common factor first, then look for a difference of two squares \\(a^2-b^2=(a-b)(a+b)\\).",
           "keyPoints": [
             {
               "text": "Factorise fully",
-              "note": "Take out the common factor 4, then factor the difference of two squares."
+              "note": "'Fully' means after the first factorisation, check whether any bracket can be factorised again."
             }
           ],
           "steps": [
             {
-              "explain": "Both terms have a common factor of 4.",
-              "work": "\\((4x^2-100=4(x^2-25))\\)"
+              "explain": "Find the HCF of the two terms. Both 4 and 100 are divisible by 4.",
+              "work": "\\(4x^2-100=4(x^2-25)\\)"
             },
             {
-              "explain": "The remaining bracket is a difference of squares: (x^2-5^2).",
-              "work": "\\((x^2-25=(x-5)(x+5))\\)"
+              "explain": "Recognise the bracket as a difference of two squares: \\(x^2=(x)^2\\) and \\(25=5^2\\).",
+              "work": "\\(x^2-25=x^2-5^2\\)"
             },
             {
-              "explain": "Combine the common factor with the two factors.",
-              "work": "\\((\\boxed{4(x-5)(x+5)})\\)"
+              "explain": "Apply \\(a^2-b^2=(a-b)(a+b)\\) with \\(a=x\\), \\(b=5\\).",
+              "work": "\\(x^2-5^2=(x-5)(x+5)\\)"
+            },
+            {
+              "explain": "Write the complete factorisation with the HCF in front.",
+              "work": "\\(4x^2-100=\\boxed{4(x-5)(x+5)}\\)"
+            },
+            {
+              "explain": "Check by expanding: \\(4(x-5)(x+5)=4(x^2-25)=4x^2-100\\). ✓ Note that \\((2x-10)^2=4x^2-40x+100\\) is a different expression, and \\(4(x-25)(x+1)\\) does not expand back to the original.",
+              "work": "\\(4(x-5)(x+5)=4x^2-100\\)"
             }
           ],
           "timeLimit": 60,
@@ -4058,7 +4066,7 @@
           "id": "nsb-y9-2019-t4-q1diii",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Factorise fully \\(x^2-5x-6\\).",
+          "stem": "Factorise fully \\(x^2-5x-6\\)",
           "options": [
             "\\((x-6)(x+1)\\)",
             "\\((x-3)(x-2)\\)",
@@ -4066,29 +4074,29 @@
             "\\((x-6)(x-1)\\)"
           ],
           "answer": 0,
-          "hint": "Find two integers whose product is (-6) and whose sum is (-5).",
+          "hint": "Find two numbers that MULTIPLY to −6 and ADD to −5.",
           "keyPoints": [
             {
-              "text": "Factorise fully",
-              "note": "Find two integers whose product is (-6) and whose sum is (-5)."
+              "text": "\\(x^2-5x-6\\)",
+              "note": "Product −6 (negative → the two numbers have opposite signs), sum −5 (the bigger one is negative)."
             }
           ],
           "steps": [
             {
-              "explain": "For a monic quadratic, choose numbers that multiply to the constant term and add to the coefficient of (x).",
-              "work": "\\(((-6)(1)=-6,\\qquad -6+1=-5)\\)"
+              "explain": "For \\(x^2+bx+c\\) we need two numbers with product \\(c=-6\\) and sum \\(b=-5\\).",
+              "work": "\\(\\text{product}=-6,\\qquad\\text{sum}=-5\\)"
             },
             {
-              "explain": "Use those two numbers as the constants in the brackets.",
-              "work": "\\((x^2-5x-6=(x-6)(x+1))\\)"
+              "explain": "List factor pairs of −6 and their sums: (1, −6) sum −5 ✓; (−1, 6) sum 5; (2, −3) sum −1; (−2, 3) sum 1.",
+              "work": "\\(1\\times(-6)=-6,\\qquad1+(-6)=-5\\)"
             },
             {
-              "explain": "Expand briefly to check the middle term and constant.",
-              "work": "\\(((x-6)(x+1)=x^2-5x-6)\\)"
+              "explain": "Use the pair 1 and −6 to write the brackets.",
+              "work": "\\(x^2-5x-6=(x+1)(x-6)\\)"
             },
             {
-              "explain": "Therefore the factorisation is.",
-              "work": "\\((\\boxed{(x-6)(x+1)})\\)"
+              "explain": "Check by expanding: \\(x^2-6x+x-6=x^2-5x-6\\). ✓",
+              "work": "\\(\\boxed{(x-6)(x+1)}\\)"
             }
           ],
           "timeLimit": 60,

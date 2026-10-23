@@ -2238,7 +2238,7 @@
           "id": "nsb-y9-2019-t4-q1a",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Evaluate \\(\\dfrac{3.5+\\sqrt{2.7^2-2}}{3}\\) correct to 3 significant figures.",
+          "stem": "Evaluate \\(\\dfrac{3.5+\\sqrt{2.7^2-2}}{3}\\) correct to 3 significant figures",
           "options": [
             "\\(1.93\\)",
             "\\(1.05\\)",
@@ -2246,25 +2246,41 @@
             "\\(1.72\\)"
           ],
           "answer": 0,
-          "hint": "Evaluate the exponent and the expression under the square root first, then divide the whole numerator by 3.",
+          "hint": "Work from the inside out: square 2.7 first, subtract 2, take the square root, add 3.5, and only then divide the WHOLE numerator by 3.",
           "keyPoints": [
             {
               "text": "correct to 3 significant figures",
-              "note": "Evaluate the exponent and the expression under the square root first, then divide the whole numerator by 3."
+              "note": "Count significant figures from the first non-zero digit: 1.933… has 1, 9, 3 as its first three, so look at the 4th digit to decide rounding."
             }
           ],
           "steps": [
             {
-              "explain": "Follow the order of operations: evaluate the power inside the radical, then subtract.",
-              "work": "\\((2.7^2-2=7.29-2=5.29)\\)"
+              "explain": "Start inside the square root. The index (power) is done before subtraction, so square 2.7 first.",
+              "work": "\\(2.7^2=2.7\\times2.7=7.29\\)"
             },
             {
-              "explain": "Take the square root and add it to 3.5.",
-              "work": "\\((\\sqrt{5.29}=2.3,\\qquad3.5+2.3=5.8)\\)"
+              "explain": "Now do the subtraction that is still under the square root sign.",
+              "work": "\\(7.29-2=5.29\\)"
             },
             {
-              "explain": "Divide the complete numerator by 3 and round to three significant figures.",
-              "work": "\\((\\dfrac{5.8}{3}=1.9333\\ldots\\approx\\boxed{1.93})\\)"
+              "explain": "Take the square root. 5.29 is a perfect square because \\(23^2=529\\), so \\(2.3^2=5.29\\).",
+              "work": "\\(\\sqrt{5.29}=2.3\\)"
+            },
+            {
+              "explain": "Add 3.5 to finish the numerator (the fraction bar acts like brackets around the whole top line).",
+              "work": "\\(3.5+2.3=5.8\\)"
+            },
+            {
+              "explain": "Divide the whole numerator by 3.",
+              "work": "\\(\\dfrac{5.8}{3}=1.93333\\ldots\\)"
+            },
+            {
+              "explain": "Round to 3 significant figures. The first three significant digits are 1, 9, 3; the next digit is 3, which is less than 5, so we round down.",
+              "work": "\\(1.93333\\ldots\\approx\\boxed{1.93}\\)"
+            },
+            {
+              "explain": "Common error: dividing only \\(\\sqrt{5.29}\\) by 3 gives \\(3.5+0.77=4.27\\); dividing only 3.5 by 3 gives \\(1.17+2.3=3.47\\). The fraction bar means the whole top is divided.",
+              "work": "\\(\\text{Answer: }1.93\\)"
             }
           ],
           "timeLimit": 60,
@@ -2284,7 +2300,7 @@
           "id": "nsb-y9-2019-t4-q1bi",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Simplify \\(\\sqrt{250}\\).",
+          "stem": "Simplify \\(\\sqrt{250}\\)",
           "options": [
             "\\(25\\sqrt{2}\\)",
             "\\(10\\sqrt{5}\\)",
@@ -2292,25 +2308,33 @@
             "\\(125\\sqrt{2}\\)"
           ],
           "answer": 2,
-          "hint": "Factor 250 as the largest perfect square times a remaining factor.",
+          "hint": "Look for the LARGEST perfect square that divides 250 (try 4, 9, 16, 25, …). Then split the root: \\(\\sqrt{ab}=\\sqrt a\\times\\sqrt b\\).",
           "keyPoints": [
             {
-              "text": "Simplify",
-              "note": "Factor 250 as the largest perfect square times a remaining factor."
+              "text": "\\(\\sqrt{250}\\)",
+              "note": "250 = 25 × 10 and 25 is a perfect square — that is the factor to pull out."
             }
           ],
           "steps": [
             {
-              "explain": "Look for the greatest perfect-square factor of 250.",
-              "work": "\\((250=25\\times10)\\)"
+              "explain": "List perfect squares and test which divide 250: 4 (no, 250 ÷ 4 = 62.5), 9 (no), 16 (no), 25 (yes, 250 ÷ 25 = 10), 100 (no, 2.5), 225 (no).",
+              "work": "\\(250=25\\times10\\)"
             },
             {
-              "explain": "Separate the square root across the product and evaluate the perfect square.",
-              "work": "\\((\\sqrt{250}=\\sqrt{25}\\sqrt{10}=5\\sqrt{10})\\)"
+              "explain": "Use the rule \\(\\sqrt{ab}=\\sqrt a\\times\\sqrt b\\) to split the root into the perfect-square part and the rest.",
+              "work": "\\(\\sqrt{250}=\\sqrt{25\\times10}=\\sqrt{25}\\times\\sqrt{10}\\)"
             },
             {
-              "explain": "The factor 10 has no square factor greater than 1, so this is simplified.",
-              "work": "\\((\\boxed{5\\sqrt{10}})\\)"
+              "explain": "Evaluate the perfect square root.",
+              "work": "\\(\\sqrt{25}=5\\)"
+            },
+            {
+              "explain": "Combine. 10 = 2 × 5 has no square factor, so \\(\\sqrt{10}\\) cannot be simplified further.",
+              "work": "\\(\\sqrt{250}=\\boxed{5\\sqrt{10}}\\)"
+            },
+            {
+              "explain": "Check by squaring: \\((5\\sqrt{10})^2=25\\times10=250\\). ✓",
+              "work": "\\((5\\sqrt{10})^2=250\\)"
             }
           ],
           "timeLimit": 60,
@@ -2685,7 +2709,7 @@
           "id": "nsb-y9-2019-t4-q1bii",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Simplify \\(3\\sqrt{8}\\times\\sqrt{10}\\).",
+          "stem": "Simplify \\(3\\sqrt{8}\\times\\sqrt{10}\\)",
           "options": [
             "\\(6\\sqrt{5}\\)",
             "\\(12\\sqrt{2}\\)",
@@ -2693,25 +2717,33 @@
             "\\(12\\sqrt{5}\\)"
           ],
           "answer": 3,
-          "hint": "Multiply the radicals first, then extract the largest square factor.",
+          "hint": "Multiply the numbers under the roots together (\\(\\sqrt a\\times\\sqrt b=\\sqrt{ab}\\)), keep the 3 outside, then simplify the new surd.",
           "keyPoints": [
             {
-              "text": "Simplify",
-              "note": "Multiply the radicals first, then extract the largest square factor."
+              "text": "\\(3\\sqrt{8}\\times\\sqrt{10}\\)",
+              "note": "The 3 is a coefficient outside the root — it is NOT multiplied into the 8 or the 10."
             }
           ],
           "steps": [
             {
-              "explain": "Keep the coefficient 3 outside and combine the square roots.",
-              "work": "\\((3\\sqrt{8}\\sqrt{10}=3\\sqrt{80})\\)"
+              "explain": "Multiply the surd parts together using \\(\\sqrt a\\times\\sqrt b=\\sqrt{ab}\\). The coefficient 3 stays in front.",
+              "work": "\\(3\\sqrt{8}\\times\\sqrt{10}=3\\sqrt{8\\times10}=3\\sqrt{80}\\)"
             },
             {
-              "explain": "Factor 80 into a perfect square and a square-free factor.",
-              "work": "\\((80=16\\times5)\\)"
+              "explain": "Find the largest perfect square factor of 80: 4 divides it, 16 divides it (80 = 16 × 5), 25 and 36 do not.",
+              "work": "\\(80=16\\times5\\)"
             },
             {
-              "explain": "Take the square root of 16 and multiply by 3.",
-              "work": "\\((3\\sqrt{80}=3(4\\sqrt5)=\\boxed{12\\sqrt5})\\)"
+              "explain": "Split the root and evaluate \\(\\sqrt{16}\\).",
+              "work": "\\(\\sqrt{80}=\\sqrt{16}\\times\\sqrt5=4\\sqrt5\\)"
+            },
+            {
+              "explain": "Multiply by the coefficient 3 that was waiting in front.",
+              "work": "\\(3\\times4\\sqrt5=\\boxed{12\\sqrt5}\\)"
+            },
+            {
+              "explain": "Common error: using only 4 as the square factor gives \\(3\\times2\\sqrt{20}=6\\sqrt{20}\\), which is not fully simplified.",
+              "work": "\\(\\text{Answer: }12\\sqrt5\\)"
             }
           ],
           "timeLimit": 60,
@@ -3000,7 +3032,7 @@
           "id": "nsb-y9-2019-t4-q1biii",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Simplify \\((\\sqrt{3}-5)(2-\\sqrt{5})\\).",
+          "stem": "Simplify \\((\\sqrt{3}-5)(2-\\sqrt{5})\\)",
           "options": [
             "\\(2\\sqrt3+\\sqrt{15}-10-5\\sqrt5\\)",
             "\\(2\\sqrt3-\\sqrt{15}-10+5\\sqrt5\\)",
@@ -3008,21 +3040,41 @@
             "\\(2\\sqrt3-5\\sqrt5-10+\\sqrt{15}\\)"
           ],
           "answer": 1,
-          "hint": "Multiply each term in the first bracket by both terms in the second bracket.",
+          "hint": "Expand with FOIL — four products: First, Outer, Inner, Last. Keep track of every negative sign; \\(\\sqrt3\\times\\sqrt5=\\sqrt{15}\\).",
           "keyPoints": [
             {
-              "text": "Simplify",
-              "note": "Multiply each term in the first bracket by both terms in the second bracket."
+              "text": "\\((\\sqrt{3}-5)(2-\\sqrt{5})\\)",
+              "note": "The two brackets contain DIFFERENT surds (√3 and √5), so nothing will cancel — you should finish with four terms."
             }
           ],
           "steps": [
             {
-              "explain": "Use the distributive law to create four products.",
-              "work": "\\(((\\sqrt3-5)(2-\\sqrt5)=2\\sqrt3-\\sqrt{15}-10+5\\sqrt5)\\)"
+              "explain": "Write out all four products. Each term of the first bracket multiplies each term of the second.",
+              "work": "\\((\\sqrt3-5)(2-\\sqrt5)=\\sqrt3(2)+\\sqrt3(-\\sqrt5)+(-5)(2)+(-5)(-\\sqrt5)\\)"
             },
             {
-              "explain": "Check each cross product: (sqrt3cdot(-sqrt5)=-sqrt{15}) and ((-5)(-sqrt5)=+5sqrt5).",
-              "work": "\\((\\boxed{2\\sqrt3-\\sqrt{15}-10+5\\sqrt5})\\)"
+              "explain": "First: \\(\\sqrt3\\times2\\).",
+              "work": "\\(2\\sqrt3\\)"
+            },
+            {
+              "explain": "Outer: \\(\\sqrt3\\times(-\\sqrt5)\\). Multiply under the roots and keep the negative sign.",
+              "work": "\\(-\\sqrt{15}\\)"
+            },
+            {
+              "explain": "Inner: \\((-5)\\times2\\).",
+              "work": "\\(-10\\)"
+            },
+            {
+              "explain": "Last: \\((-5)\\times(-\\sqrt5)\\). Negative times negative is positive.",
+              "work": "\\(+5\\sqrt5\\)"
+            },
+            {
+              "explain": "Collect the four terms. They are all unlike (√3, √15, a whole number, √5), so none can be combined.",
+              "work": "\\(\\boxed{2\\sqrt3-\\sqrt{15}-10+5\\sqrt5}\\)"
+            },
+            {
+              "explain": "Common error: writing the Last term as \\(-5\\sqrt5\\) (forgetting that two negatives multiply to a positive).",
+              "work": "\\((-5)(-\\sqrt5)=+5\\sqrt5\\)"
             }
           ],
           "timeLimit": 60,
@@ -3353,7 +3405,7 @@
           "id": "nsb-y9-2019-t4-q1ci",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Rationalise the denominator of \\(\\dfrac{3}{5\\sqrt{2}}\\).",
+          "stem": "Rationalise the denominator \\(\\dfrac{3}{5\\sqrt{2}}\\)",
           "options": [
             "\\(\\dfrac{3}{10\\sqrt2}\\)",
             "\\(\\dfrac{3\\sqrt2}{5}\\)",
@@ -3361,25 +3413,33 @@
             "\\(\\dfrac{5\\sqrt2}{6}\\)"
           ],
           "answer": 2,
-          "hint": "Multiply the numerator and denominator by (sqrt2), which keeps the fraction unchanged.",
+          "hint": "Multiply top and bottom by \\(\\sqrt2\\) only (not by \\(5\\sqrt2\\) — that also works but makes bigger numbers). Remember \\(\\sqrt2\\times\\sqrt2=2\\).",
           "keyPoints": [
             {
               "text": "Rationalise the denominator",
-              "note": "Multiply the numerator and denominator by (sqrt2), which keeps the fraction unchanged."
+              "note": "'Rationalise' means: the final answer must have NO surd in the denominator."
             }
           ],
           "steps": [
             {
-              "explain": "The denominator contains (sqrt2), so multiply top and bottom by (sqrt2).",
-              "work": "\\((\\dfrac{3}{5\\sqrt2}\\times\\dfrac{\\sqrt2}{\\sqrt2}=\\dfrac{3\\sqrt2}{5\\sqrt4})\\)"
+              "explain": "The denominator contains the surd \\(\\sqrt2\\). Multiplying by \\(\\dfrac{\\sqrt2}{\\sqrt2}\\) (which equals 1) does not change the value.",
+              "work": "\\(\\dfrac{3}{5\\sqrt2}\\times\\dfrac{\\sqrt2}{\\sqrt2}\\)"
             },
             {
-              "explain": "Evaluate the denominator and simplify.",
-              "work": "\\((5\\sqrt4=5\\times2=10)\\)"
+              "explain": "Multiply the numerators.",
+              "work": "\\(3\\times\\sqrt2=3\\sqrt2\\)"
             },
             {
-              "explain": "The denominator is now rational.",
-              "work": "\\((\\boxed{\\dfrac{3\\sqrt2}{10}})\\)"
+              "explain": "Multiply the denominators. \\(\\sqrt2\\times\\sqrt2=2\\).",
+              "work": "\\(5\\sqrt2\\times\\sqrt2=5\\times2=10\\)"
+            },
+            {
+              "explain": "Write the result. 3 and 10 share no common factor, so it is fully simplified.",
+              "work": "\\(\\dfrac{3}{5\\sqrt2}=\\boxed{\\dfrac{3\\sqrt2}{10}}\\)"
+            },
+            {
+              "explain": "Check with a calculator: \\(3\\div(5\\times1.4142)=0.4243\\) and \\(3\\times1.4142\\div10=0.4243\\). ✓",
+              "work": "\\(0.4243=0.4243\\)"
             }
           ],
           "timeLimit": 60,
@@ -3399,7 +3459,7 @@
           "id": "nsb-y9-2019-t4-q1cii",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Rationalise the denominator of \\(\\dfrac{5}{\\sqrt{3}-4}\\).",
+          "stem": "Rationalise the denominator \\(\\dfrac{5}{\\sqrt{3}-4}\\)",
           "options": [
             "\\(\\dfrac{5(\\sqrt3-4)}{13}\\)",
             "\\(-\\dfrac{5(\\sqrt3+4)}{13}\\)",
@@ -3407,25 +3467,33 @@
             "\\(\\dfrac{5(\\sqrt3+4)}{13}\\)"
           ],
           "answer": 1,
-          "hint": "Use the conjugate of the denominator, (sqrt3+4), so the radical terms form a difference of squares.",
+          "hint": "The denominator is a binomial, so multiply top and bottom by its CONJUGATE \\(\\sqrt3+4\\). Then use \\((a-b)(a+b)=a^2-b^2\\).",
           "keyPoints": [
             {
-              "text": "Rationalise the denominator",
-              "note": "Use the conjugate of the denominator, (sqrt3+4), so the radical terms form a difference of squares."
+              "text": "\\(\\dfrac{5}{\\sqrt{3}-4}\\)",
+              "note": "Two-term denominator → use the conjugate (same terms, opposite sign in the middle)."
             }
           ],
           "steps": [
             {
-              "explain": "Multiply numerator and denominator by the conjugate (sqrt3+4).",
-              "work": "\\((\\dfrac{5}{\\sqrt3-4}\\times\\dfrac{\\sqrt3+4}{\\sqrt3+4}=\\dfrac{5(\\sqrt3+4)}{(\\sqrt3-4)(\\sqrt3+4)})\\)"
+              "explain": "The conjugate of \\(\\sqrt3-4\\) is \\(\\sqrt3+4\\). Multiply by \\(\\dfrac{\\sqrt3+4}{\\sqrt3+4}\\) (equal to 1).",
+              "work": "\\(\\dfrac{5}{\\sqrt3-4}\\times\\dfrac{\\sqrt3+4}{\\sqrt3+4}\\)"
             },
             {
-              "explain": "Use ((a-b)(a+b)=a^2-b^2) in the denominator.",
-              "work": "\\(((\\sqrt3)^2-4^2=3-16=-13)\\)"
+              "explain": "Numerator: distribute the 5 (or leave it factored).",
+              "work": "\\(5(\\sqrt3+4)\\)"
             },
             {
-              "explain": "Write the rationalised result with a positive denominator.",
-              "work": "\\((\\boxed{-\\dfrac{5(\\sqrt3+4)}{13}})\\)"
+              "explain": "Denominator: difference of two squares \\((a-b)(a+b)=a^2-b^2\\) with \\(a=\\sqrt3\\), \\(b=4\\).",
+              "work": "\\((\\sqrt3-4)(\\sqrt3+4)=(\\sqrt3)^2-4^2=3-16=-13\\)"
+            },
+            {
+              "explain": "Put it together. Move the negative sign of the denominator to the front of the fraction.",
+              "work": "\\(\\dfrac{5(\\sqrt3+4)}{-13}=\\boxed{-\\dfrac{5(\\sqrt3+4)}{13}}\\)"
+            },
+            {
+              "explain": "Check: \\(5\\div(1.732-4)=-2.2046\\) and \\(-5(5.732)\\div13=-2.2046\\). ✓ A positive answer would be wrong because \\(\\sqrt3-4\\) is negative.",
+              "work": "\\(-2.2046=-2.2046\\)"
             }
           ],
           "timeLimit": 60,

@@ -6801,7 +6801,7 @@
           "id": "nsb-y9-2019-t4-q4d",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Solve the following equations simultaneously: \\(5x+7y=29\\) and \\(2x+3y=12\\).",
+          "stem": "Solve the following equations simultaneously: \\(5x+7y=29\\) and \\(2x+3y=12\\)",
           "options": [
             "\\(x=2,\\ y=3\\)",
             "\\(x=3,\\ y=2\\)",
@@ -6809,29 +6809,37 @@
             "\\(x=4,\\ y=1\\)"
           ],
           "answer": 1,
-          "hint": "Use elimination: make the x-coefficients equal, then subtract the equations.",
+          "hint": "Elimination: multiply the first equation by 2 and the second by 5 so both have \\(10x\\), then subtract to remove \\(x\\).",
           "keyPoints": [
             {
-              "text": "Solve the following equations simultaneously",
-              "note": "Use elimination: make the x-coefficients equal, then subtract the equations."
+              "text": "simultaneously",
+              "note": "The answer is ONE pair \\((x,y)\\) that makes both equations true at the same time."
             }
           ],
           "steps": [
             {
-              "explain": "Write the equations and choose elimination. Multiply the first equation by 2 and the second by 5 so both have coefficient 10 for x.",
-              "work": "\\((2(5x+7y=29):\\quad10x+14y=58)\\)\n\\((5(2x+3y=12):\\quad10x+15y=60)\\)"
+              "explain": "Label the equations.",
+              "work": "\\(5x+7y=29\\ \\ (1),\\qquad2x+3y=12\\ \\ (2)\\)"
             },
             {
-              "explain": "Subtract the first new equation from the second to eliminate x.",
-              "work": "\\(((10x+15y)-(10x+14y)=60-58\\quad\\Rightarrow\\quad y=2)\\)"
+              "explain": "Make the \\(x\\) coefficients equal: multiply (1) by 2 and (2) by 5.",
+              "work": "\\(10x+14y=58\\ \\ (3),\\qquad10x+15y=60\\ \\ (4)\\)"
             },
             {
-              "explain": "Substitute (y=2) into the simpler original equation.",
-              "work": "\\((2x+3(2)=12\\quad\\Rightarrow\\quad2x=6\\quad\\Rightarrow\\quad x=3)\\)"
+              "explain": "Subtract (3) from (4) to eliminate \\(x\\).",
+              "work": "\\((10x+15y)-(10x+14y)=60-58\\ \\Rightarrow\\ y=2\\)"
             },
             {
-              "explain": "Check in the other equation: (5(3)+7(2)=29).",
-              "work": "\\((\\boxed{x=3, y=2})\\)"
+              "explain": "Substitute \\(y=2\\) into (2).",
+              "work": "\\(2x+3(2)=12\\ \\Rightarrow\\ 2x=6\\ \\Rightarrow\\ x=3\\)"
+            },
+            {
+              "explain": "Check in (1): \\(5(3)+7(2)=15+14=29\\) ✓.",
+              "work": "\\(\\boxed{x=3,\\ y=2}\\)"
+            },
+            {
+              "explain": "Common error: swapping the values (\\(x=2,\\ y=3\\)) — that gives \\(10+21=31\\ne29\\).",
+              "work": "\\(\\text{Answer: }x=3,\\ y=2\\)"
             }
           ],
           "timeLimit": 60,

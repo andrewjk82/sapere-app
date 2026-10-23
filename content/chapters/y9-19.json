@@ -269,7 +269,7 @@
           "id": "nsb-y9-2019-t4-q3ci",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Given the following frequency distribution, find the mean.\n\nScores and frequencies: 20: 4, 30: 12, 40: 18, 50: 14, 60: 0, 70: 2. Give your answer correct to 2 decimal places.",
+          "stem": "Given the following frequency distribution. Find correct to 2 decimal places the mean",
           "options": [
             "\\(40.00\\)",
             "\\(42.00\\)",
@@ -277,29 +277,41 @@
             "\\(50.00\\)"
           ],
           "answer": 0,
-          "hint": "Multiply each score by its frequency, add those products, then divide by the total frequency.",
+          "hint": "Mean \\(=\\dfrac{\\sum fx}{\\sum f}\\): multiply each score by its frequency, add these products, and divide by the total frequency.",
           "keyPoints": [
             {
+              "text": "Given the following frequency distribution",
+              "note": "A frequency table lists each score once with how many times it occurs — 4 students scored 20, 12 scored 30, and so on."
+            },
+            {
               "text": "the mean",
-              "note": "Multiply each score by its frequency, add those products, then divide by the total frequency."
+              "note": "Divide by the number of SCORES (total frequency 50), not by the number of rows (6)."
             }
           ],
           "steps": [
             {
-              "explain": "Find the total number of observations by adding the frequencies.",
-              "work": "\\((n=4+12+18+14+0+2=50)\\)"
+              "explain": "Find the total frequency (how many scores there are altogether).",
+              "work": "\\(\\sum f=4+12+18+14+0+2=50\\)"
             },
             {
-              "explain": "Calculate the weighted total of all scores.",
-              "work": "\\((sum xf=20(4)+30(12)+40(18)+50(14)+60(0)+70(2)=2000)\\)"
+              "explain": "Multiply each score by its frequency (the \\(fx\\) column).",
+              "work": "\\(20\\times4=80,\\ \\ 30\\times12=360,\\ \\ 40\\times18=720,\\ \\ 50\\times14=700,\\ \\ 60\\times0=0,\\ \\ 70\\times2=140\\)"
             },
             {
-              "explain": "Divide the total score by the number of observations.",
-              "work": "\\((\\bar{x}=\\dfrac{2000}{50}=40)\\)"
+              "explain": "Add the \\(fx\\) column.",
+              "work": "\\(\\sum fx=80+360+720+700+0+140=2000\\)"
             },
             {
-              "explain": "Write to two decimal places as requested.",
-              "work": "\\((\\boxed{40.00})\\)"
+              "explain": "Divide the sum of the scores by the total frequency.",
+              "work": "\\(\\bar x=\\dfrac{\\sum fx}{\\sum f}=\\dfrac{2000}{50}=40\\)"
+            },
+            {
+              "explain": "Write the answer to 2 decimal places.",
+              "work": "\\(\\bar x=\\boxed{40.00}\\)"
+            },
+            {
+              "explain": "Common error: averaging the six score values \\(\\tfrac{20+30+40+50+60+70}{6}=45\\) ignores the frequencies.",
+              "work": "\\(\\text{Answer: }40.00\\)"
             }
           ],
           "timeLimit": 60,
@@ -322,7 +334,7 @@
           "id": "nsb-y9-2019-t4-q3cii",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Given the following frequency distribution, find the median.\n\nScores and frequencies: 20: 4, 30: 12, 40: 18, 50: 14, 60: 0, 70: 2. Give your answer correct to 2 decimal places.",
+          "stem": "Given the following frequency distribution. Find correct to 2 decimal places the median",
           "options": [
             "\\(30.00\\)",
             "\\(35.00\\)",
@@ -330,25 +342,37 @@
             "\\(50.00\\)"
           ],
           "answer": 2,
-          "hint": "There are 50 values, so locate the 25th and 26th positions using cumulative frequencies.",
+          "hint": "There are 50 scores, so the median is the average of the 25th and 26th scores. Build a cumulative frequency column to see which score each position falls in.",
           "keyPoints": [
             {
+              "text": "Given the following frequency distribution",
+              "note": "A frequency table lists each score once with how many times it occurs — 4 students scored 20, 12 scored 30, and so on."
+            },
+            {
               "text": "the median",
-              "note": "There are 50 values, so locate the 25th and 26th positions using cumulative frequencies."
+              "note": "Even number of scores (50): median = average of the 25th and 26th scores."
             }
           ],
           "steps": [
             {
-              "explain": "The total frequency is 50, an even number, so average the 25th and 26th ordered values.",
-              "work": "\\((\\text{middle positions}=\\dfrac{50}{2}=25\\text{ and }26)\\)"
+              "explain": "Total frequency (from the table).",
+              "work": "\\(n=4+12+18+14+0+2=50\\)"
             },
             {
-              "explain": "Cumulative frequencies place scores 20 in positions 1–4, 30 in 5–16, and 40 in 17–34.",
-              "work": "\\((x_{25}=40,\\qquad x_{26}=40)\\)"
+              "explain": "With an even number of scores, the median is midway between the two middle positions.",
+              "work": "\\(\\dfrac{50}{2}=25\\), so positions \\(25\\) and \\(26\\)"
             },
             {
-              "explain": "Average these two middle values.",
-              "work": "\\((\\text{Median}=\\dfrac{40+40}{2}=\\boxed{40.00})\\)"
+              "explain": "Build the cumulative frequency (running total) for each score.",
+              "work": "\\(20{:}\\ 4,\\quad30{:}\\ 4+12=16,\\quad40{:}\\ 16+18=34,\\quad50{:}\\ 48,\\quad60{:}\\ 48,\\quad70{:}\\ 50\\)"
+            },
+            {
+              "explain": "Scores in positions 1–4 are 20, positions 5–16 are 30, positions 17–34 are 40. Both the 25th and 26th positions lie in 17–34.",
+              "work": "\\(25\\text{th}=40,\\qquad26\\text{th}=40\\)"
+            },
+            {
+              "explain": "Average the two middle scores.",
+              "work": "\\(\\text{median}=\\dfrac{40+40}{2}=\\boxed{40.00}\\)"
             }
           ],
           "timeLimit": 60,
@@ -371,7 +395,7 @@
           "id": "nsb-y9-2019-t4-q3ciii",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Given the following frequency distribution, find the mode.\n\nScores and frequencies: 20: 4, 30: 12, 40: 18, 50: 14, 60: 0, 70: 2. Give your answer correct to 2 decimal places.",
+          "stem": "Given the following frequency distribution. Find correct to 2 decimal places the mode",
           "options": [
             "\\(50.00\\)",
             "\\(30.00\\)",
@@ -379,25 +403,33 @@
             "\\(40.00\\)"
           ],
           "answer": 3,
-          "hint": "The mode is the score with the greatest frequency.",
+          "hint": "The mode is the SCORE with the highest frequency — read across from the biggest number in the Frequency column.",
           "keyPoints": [
             {
+              "text": "Given the following frequency distribution",
+              "note": "A frequency table lists each score once with how many times it occurs — 4 students scored 20, 12 scored 30, and so on."
+            },
+            {
               "text": "the mode",
-              "note": "The mode is the score with the greatest frequency."
+              "note": "The answer is a score (20, 30, 40, …), not the frequency itself."
             }
           ],
           "steps": [
             {
-              "explain": "Compare the frequencies in the table.",
-              "work": "\\((4,12,18,14,0,2)\\)"
+              "explain": "Look down the Frequency column for the largest value.",
+              "work": "\\(4,\\ 12,\\ 18,\\ 14,\\ 0,\\ 2\\ \\Rightarrow\\ \\text{largest}=18\\)"
             },
             {
-              "explain": "The greatest frequency is 18, paired with score 40.",
-              "work": "\\((f_{40}=18=max(f))\\)"
+              "explain": "Read across to find which score has that frequency.",
+              "work": "\\(\\text{frequency }18\\ \\leftrightarrow\\ \\text{score }40\\)"
             },
             {
-              "explain": "Write the mode to the requested precision.",
-              "work": "\\((\\boxed{40.00})\\)"
+              "explain": "The mode is the score that occurs most often.",
+              "work": "\\(\\text{mode}=\\boxed{40.00}\\)"
+            },
+            {
+              "explain": "Common error: answering 18 (the frequency) or 70 (the largest score).",
+              "work": "\\(\\text{Answer: }40.00\\)"
             }
           ],
           "timeLimit": 60,
@@ -420,7 +452,7 @@
           "id": "nsb-y9-2019-t4-q3civ",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Given the following frequency distribution, find the interquartile range.\n\nScores and frequencies: 20: 4, 30: 12, 40: 18, 50: 14, 60: 0, 70: 2. Give your answer correct to 2 decimal places.",
+          "stem": "Given the following frequency distribution. Find correct to 2 decimal places the interquartile range",
           "options": [
             "\\(10.00\\)",
             "\\(20.00\\)",
@@ -428,29 +460,45 @@
             "\\(40.00\\)"
           ],
           "answer": 1,
-          "hint": "Split the 50 ordered observations into lower and upper halves, then find each half’s median.",
+          "hint": "Split the 50 scores into a lower half (positions 1–25) and upper half (26–50). \\(Q_1\\) is the median of the lower half (13th score), \\(Q_3\\) the median of the upper half (38th score). IQR \\(=Q_3-Q_1\\).",
           "keyPoints": [
             {
+              "text": "Given the following frequency distribution",
+              "note": "A frequency table lists each score once with how many times it occurs — 4 students scored 20, 12 scored 30, and so on."
+            },
+            {
               "text": "the interquartile range",
-              "note": "Split the 50 ordered observations into lower and upper halves, then find each half’s median."
+              "note": "IQR = upper quartile − lower quartile; it measures the spread of the middle 50% of scores."
             }
           ],
           "steps": [
             {
-              "explain": "The lower half contains positions 1–25; its middle observation is position 13. The upper half contains positions 26–50; its middle observation is position 38.",
-              "work": "\\((Q_1=x_{13},\\qquad Q_3=x_{38})\\)"
+              "explain": "Cumulative frequencies (running totals).",
+              "work": "\\(20{:}\\ 4,\\quad30{:}\\ 16,\\quad40{:}\\ 34,\\quad50{:}\\ 48,\\quad60{:}\\ 48,\\quad70{:}\\ 50\\)"
             },
             {
-              "explain": "Use cumulative frequencies: positions 5–16 have score 30, and positions 35–48 have score 50.",
-              "work": "\\((Q_1=30,\\qquad Q_3=50)\\)"
+              "explain": "Lower half = positions 1 to 25. Its median is the 13th score.",
+              "work": "\\(Q_1=13\\text{th score}\\)"
             },
             {
-              "explain": "Subtract the lower quartile from the upper quartile.",
-              "work": "\\((\\mathrm{IQR}=Q_3-Q_1=50-30=20)\\)"
+              "explain": "Positions 5–16 are all 30, so the 13th score is 30.",
+              "work": "\\(Q_1=30\\)"
             },
             {
-              "explain": "Write the answer to two decimal places.",
-              "work": "\\((\\boxed{20.00})\\)"
+              "explain": "Upper half = positions 26 to 50 (25 scores). Its median is the 13th of those, i.e. position \\(25+13=38\\).",
+              "work": "\\(Q_3=38\\text{th score}\\)"
+            },
+            {
+              "explain": "Positions 35–48 are all 50, so the 38th score is 50.",
+              "work": "\\(Q_3=50\\)"
+            },
+            {
+              "explain": "Subtract.",
+              "work": "\\(\\text{IQR}=Q_3-Q_1=50-30=\\boxed{20.00}\\)"
+            },
+            {
+              "explain": "Common error: the RANGE is \\(70-20=50\\); the IQR ignores the extreme quarter of scores at each end.",
+              "work": "\\(\\text{Answer: }20.00\\)"
             }
           ],
           "timeLimit": 60,
