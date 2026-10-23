@@ -6697,8 +6697,8 @@
         {
           "id": "y11a-4d-q3",
           "type": "multipart",
-          "difficulty": "easy",
           "stem": "Let \\(3x^2 - 4x + 2 = a(x-1)^2 + b(x-1) + c\\). Complete the sub-questions.",
+          "difficulty": "easy",
           "parts": [
             {
               "id": "y11a-4d-q3a",
@@ -6724,8 +6724,7 @@
                   "explain": "Equate the coefficients of the quadratic term from both sides.",
                   "work": "a = 3"
                 }
-              ],
-              "xp": 2
+              ]
             },
             {
               "id": "y11a-4d-q3b",
@@ -6751,8 +6750,7 @@
                   "explain": "Evaluate the right-hand side, noting that the terms with \\(a\\) and \\(b\\) become zero.",
                   "work": "c = 1"
                 }
-              ],
-              "xp": 2
+              ]
             },
             {
               "id": "y11a-4d-q3c",
@@ -6778,8 +6776,7 @@
                   "explain": "Solve the linear equation for \\(b\\).",
                   "work": "b = 2"
                 }
-              ],
-              "xp": 2
+              ]
             },
             {
               "id": "y11a-4d-q3d",
@@ -6805,12 +6802,10 @@
                   "explain": "Using this value simplifies the expanded terms \\((x-1)^2\\) and \\((x-1)\\) to 1, leaving a very simple equation to solve for \\(b\\).",
                   "work": "\\mathrm{Simplifies\\:arithmetic\\:to\\:1}"
                 }
-              ],
-              "xp": 3
+              ]
             }
           ],
           "solution": "See detailed steps below.",
-          "manual": true,
           "timeLimit": 180,
           "meta": {
             "origin": "teacher"
