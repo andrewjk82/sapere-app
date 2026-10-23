@@ -1129,6 +1129,110 @@
             "gridConfig": null
           },
           "xp": 1
+        },
+        {
+          "id": "chs2023ass2-q03",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Murray has 36 red plums and 18 purple plums. What fraction of the plums are red?",
+          "options": [
+            "\\(\\frac{1}{36}\\)",
+            "\\(\\frac{1}{2}\\)",
+            "\\(\\frac{9}{11}\\)",
+            "\\(\\frac{2}{3}\\)"
+          ],
+          "answer": 3,
+          "hint": "Add the red and purple plums to find the total, then write red plums over total plums.",
+          "steps": [
+            {
+              "explain": "There are \\(36\\) red plums and \\(18\\) purple plums, so first find the total.",
+              "work": "\\(36+18=54\\text{ plums}\\)"
+            },
+            {
+              "explain": "The fraction that are red is red plums divided by all plums.",
+              "work": "\\(\\frac{36}{54}\\)"
+            },
+            {
+              "explain": "Divide the numerator and denominator by \\(18\\) to simplify.",
+              "work": "\\(\\frac{36\\div18}{54\\div18}=\\frac{2}{3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+            "school": "Chatswood High School",
+            "year": 2023,
+            "page": 2,
+            "question": 3,
+            "section": "Fractions and Decimals",
+            "origin": "teacher"
+          },
+          "keyPoints": [
+            {
+              "text": "36 red plums",
+              "note": "This is the number of favourable plums, so it is the numerator."
+            },
+            {
+              "text": "18 purple plums",
+              "note": "Add these to the red plums to get the total number of plums."
+            }
+          ]
+        },
+        {
+          "id": "chs2023ass2-q06",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which diagram does NOT have \\(\\frac{2}{3}\\) of area shaded?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 3,
+          "hint": "Treat each diagram as six equal-area triangular parts. Two-thirds means four of the six parts are shaded.",
+          "steps": [
+            {
+              "explain": "Each hexagon is divided into \\(6\\) equal-area triangles. To represent \\(\\frac{2}{3}\\), convert the fraction to sixths.",
+              "work": "\\(\\frac{2}{3}=\\frac{2\\times2}{3\\times2}=\\frac{4}{6}\\)"
+            },
+            {
+              "explain": "In diagrams A, B and C, count \\(4\\) shaded parts out of \\(6\\). In diagram D, count only \\(3\\) shaded parts.",
+              "work": "\\(A=B=C=\\frac{4}{6},\\qquad D=\\frac{3}{6}\\)"
+            },
+            {
+              "explain": "Since \\(\\frac{3}{6}=\\frac{1}{2}\\), diagram D does not have \\(\\frac{2}{3}\\) shaded.",
+              "work": "\\(\\boxed{D:\\;\\frac{3}{6}=\\frac{1}{2}\\ne\\frac{2}{3}}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 315\" width=\"100%\" height=\"auto\"><polygon points=\"155,82 212.0,82.0 183.5,32.6\" fill=\"#49c6a5\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"155,82 183.5,32.6 126.5,32.6\" fill=\"#49c6a5\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"155,82 126.5,32.6 98.0,82.0\" fill=\"#49c6a5\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"155,82 98.0,82.0 126.5,131.4\" fill=\"#49c6a5\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"155,82 126.5,131.4 183.5,131.4\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"155,82 183.5,131.4 212.0,82.0\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"212.0,82.0 183.5,32.6 126.5,32.6 98.0,82.0 126.5,131.4 183.5,131.4\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"64\" y=\"86\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\">A</text><text x=\"218\" y=\"87\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f766e\">4/6</text><polygon points=\"445,82 502.0,82.0 473.5,32.6\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"445,82 473.5,32.6 416.5,32.6\" fill=\"#49c6a5\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"445,82 416.5,32.6 388.0,82.0\" fill=\"#49c6a5\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"445,82 388.0,82.0 416.5,131.4\" fill=\"#49c6a5\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"445,82 416.5,131.4 473.5,131.4\" fill=\"#49c6a5\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"445,82 473.5,131.4 502.0,82.0\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"502.0,82.0 473.5,32.6 416.5,32.6 388.0,82.0 416.5,131.4 473.5,131.4\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"354\" y=\"86\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\">B</text><text x=\"518\" y=\"87\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f766e\">4/6</text><polygon points=\"155,232 212.0,232.0 183.5,182.6\" fill=\"#49c6a5\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"155,232 183.5,182.6 126.5,182.6\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"155,232 126.5,182.6 98.0,232.0\" fill=\"#49c6a5\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"155,232 98.0,232.0 126.5,281.4\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"155,232 126.5,281.4 183.5,281.4\" fill=\"#49c6a5\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"155,232 183.5,281.4 212.0,232.0\" fill=\"#49c6a5\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"212.0,232.0 183.5,182.6 126.5,182.6 98.0,232.0 126.5,281.4 183.5,281.4\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"64\" y=\"236\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\">C</text><text x=\"218\" y=\"237\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f766e\">4/6</text><polygon points=\"445,232 502.0,232.0 473.5,182.6\" fill=\"#49c6a5\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"445,232 473.5,182.6 416.5,182.6\" fill=\"#49c6a5\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"445,232 416.5,182.6 388.0,232.0\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"445,232 388.0,232.0 416.5,281.4\" fill=\"#49c6a5\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"445,232 416.5,281.4 473.5,281.4\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"445,232 473.5,281.4 502.0,232.0\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"502.0,232.0 473.5,182.6 416.5,182.6 388.0,232.0 416.5,281.4 473.5,281.4\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><circle cx=\"445\" cy=\"232\" r=\"67\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"3\"/><text x=\"354\" y=\"236\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\">D</text><text x=\"520\" y=\"237\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#ea580c\">3/6</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 315\" width=\"100%\" height=\"auto\"><polygon points=\"155,82 212.0,82.0 183.5,32.6\" fill=\"#49c6a5\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"155,82 183.5,32.6 126.5,32.6\" fill=\"#49c6a5\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"155,82 126.5,32.6 98.0,82.0\" fill=\"#49c6a5\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"155,82 98.0,82.0 126.5,131.4\" fill=\"#49c6a5\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"155,82 126.5,131.4 183.5,131.4\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"155,82 183.5,131.4 212.0,82.0\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"212.0,82.0 183.5,32.6 126.5,32.6 98.0,82.0 126.5,131.4 183.5,131.4\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"78\" y=\"86\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\">A</text><polygon points=\"445,82 502.0,82.0 473.5,32.6\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"445,82 473.5,32.6 416.5,32.6\" fill=\"#49c6a5\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"445,82 416.5,32.6 388.0,82.0\" fill=\"#49c6a5\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"445,82 388.0,82.0 416.5,131.4\" fill=\"#49c6a5\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"445,82 416.5,131.4 473.5,131.4\" fill=\"#49c6a5\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"445,82 473.5,131.4 502.0,82.0\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"502.0,82.0 473.5,32.6 416.5,32.6 388.0,82.0 416.5,131.4 473.5,131.4\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"368\" y=\"86\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\">B</text><polygon points=\"155,232 212.0,232.0 183.5,182.6\" fill=\"#49c6a5\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"155,232 183.5,182.6 126.5,182.6\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"155,232 126.5,182.6 98.0,232.0\" fill=\"#49c6a5\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"155,232 98.0,232.0 126.5,281.4\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"155,232 126.5,281.4 183.5,281.4\" fill=\"#49c6a5\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"155,232 183.5,281.4 212.0,232.0\" fill=\"#49c6a5\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"212.0,232.0 183.5,182.6 126.5,182.6 98.0,232.0 126.5,281.4 183.5,281.4\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"78\" y=\"236\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\">C</text><polygon points=\"445,232 502.0,232.0 473.5,182.6\" fill=\"#49c6a5\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"445,232 473.5,182.6 416.5,182.6\" fill=\"#49c6a5\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"445,232 416.5,182.6 388.0,232.0\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"445,232 388.0,232.0 416.5,281.4\" fill=\"#49c6a5\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"445,232 416.5,281.4 473.5,281.4\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"445,232 473.5,281.4 502.0,232.0\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.4\"/><polygon points=\"502.0,232.0 473.5,182.6 416.5,182.6 388.0,232.0 416.5,281.4 473.5,281.4\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"368\" y=\"236\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\">D</text></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+            "school": "Chatswood High School",
+            "year": 2023,
+            "page": 3,
+            "question": 6,
+            "section": "Fractions and Decimals",
+            "origin": "teacher"
+          },
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{2}{3}\\) of area shaded",
+              "note": "Rewrite two-thirds as four-sixths so it can be compared with six equal pieces."
+            },
+            {
+              "text": "Which diagram",
+              "note": "Count shaded equal-area pieces in each option, rather than comparing the outlines."
+            }
+          ]
         }
       ]
     },
@@ -2148,6 +2252,172 @@
               "note": "Equivalent fractions have the same value even when their numerators and denominators differ."
             }
           ]
+        },
+        {
+          "id": "chs2023ass2-q09",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "For each pair of equivalent fractions, find the missing number.",
+          "parts": [
+            {
+              "id": "chs2023ass2-q09a",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "\\(\\frac{5}{8}=\\frac{a}{24}\\)",
+              "options": [
+                "\\(10\\)",
+                "\\(20\\)",
+                "\\(15\\)",
+                "\\(12\\)"
+              ],
+              "answer": 2,
+              "hint": "Find the factor that changes the denominator 8 into 24, then use the same factor on the numerator.",
+              "steps": [
+                {
+                  "explain": "The denominator changes from \\(8\\) to \\(24\\). Find the scale factor.",
+                  "work": "\\(24\\div8=3\\)"
+                },
+                {
+                  "explain": "Equivalent fractions are made by multiplying top and bottom by the same number, so multiply \\(5\\) by \\(3\\).",
+                  "work": "\\(a=5\\times3=15\\)"
+                },
+                {
+                  "explain": "The missing numerator is \\(15\\).",
+                  "work": "\\(\\boxed{a=15}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+                "school": "Chatswood High School",
+                "year": 2023,
+                "page": 4,
+                "question": 9,
+                "section": "Fractions and Decimals",
+                "origin": "teacher",
+                "part": "a",
+                "topic": "Equivalent fractions"
+              },
+              "keyPoints": [
+                {
+                  "text": "\\(\\frac{5}{8}=\\frac{a}{24}\\)",
+                  "note": "The denominator is multiplied by 3, so the numerator must also be multiplied by 3."
+                }
+              ]
+            },
+            {
+              "id": "chs2023ass2-q09b",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "\\(\\frac{8}{b}=\\frac{12}{45}\\)",
+              "options": [
+                "\\(20\\)",
+                "\\(30\\)",
+                "\\(45\\)",
+                "\\(15\\)"
+              ],
+              "answer": 1,
+              "hint": "Simplify \\(\\frac{12}{45}\\), then make its numerator equal to 8 using the same scale factor on the denominator.",
+              "steps": [
+                {
+                  "explain": "Simplify the right-hand fraction by dividing numerator and denominator by \\(3\\).",
+                  "work": "\\(\\frac{12}{45}=\\frac{4}{15}\\)"
+                },
+                {
+                  "explain": "To change numerator \\(4\\) into \\(8\\), multiply by \\(2\\). Multiply the denominator by \\(2\\) as well.",
+                  "work": "\\(\\frac{4\\times2}{15\\times2}=\\frac{8}{30}\\)"
+                },
+                {
+                  "explain": "Therefore \\(b=30\\).",
+                  "work": "\\(\\boxed{b=30}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+                "school": "Chatswood High School",
+                "year": 2023,
+                "page": 4,
+                "question": 9,
+                "section": "Fractions and Decimals",
+                "origin": "teacher",
+                "part": "b",
+                "topic": "Equivalent fractions"
+              },
+              "keyPoints": [
+                {
+                  "text": "\\(\\frac{8}{b}=\\frac{12}{45}\\)",
+                  "note": "Equivalent fractions keep the same value when the numerator and denominator are scaled together."
+                }
+              ]
+            }
+          ],
+          "hint": "Use the same multiplier or divisor on the numerator and denominator of an equivalent fraction.",
+          "keyPoints": [
+            {
+              "text": "equivalent fractions",
+              "note": "Equivalent fractions have the same value, even when their numerators and denominators differ."
+            }
+          ],
+          "steps": [],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+            "school": "Chatswood High School",
+            "year": 2023,
+            "page": 4,
+            "question": 9,
+            "section": "Fractions and Decimals",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "chs2023ass2-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(\\frac{35}{60}\\).",
+          "options": [
+            "\\(\\frac{5}{12}\\)",
+            "\\(\\frac{7}{12}\\)",
+            "\\(\\frac{7}{10}\\)",
+            "\\(\\frac{5}{6}\\)"
+          ],
+          "answer": 0,
+          "hint": "Find a common factor of 35 and 60, then divide the numerator and denominator by it.",
+          "steps": [
+            {
+              "explain": "Both \\(35\\) and \\(60\\) are divisible by \\(5\\).",
+              "work": "\\(\\gcd(35,60)=5\\)"
+            },
+            {
+              "explain": "Divide the numerator and denominator by \\(5\\).",
+              "work": "\\(\\frac{35}{60}=\\frac{35\\div5}{60\\div5}=\\frac{7}{12}\\)"
+            },
+            {
+              "explain": "There is no common factor greater than 1 between 7 and 12, so the fraction is simplified.",
+              "work": "\\(\\boxed{\\frac{7}{12}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+            "school": "Chatswood High School",
+            "year": 2023,
+            "page": 4,
+            "question": 10,
+            "section": "Fractions and Decimals",
+            "origin": "teacher"
+          },
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{35}{60}\\)",
+              "note": "Divide both parts of the fraction by their greatest common factor."
+            }
+          ]
         }
       ]
     },
@@ -2550,6 +2820,96 @@
             {
               "text": "\\(\\frac{200}{24}\\)",
               "note": "The denominator 24 fits into 200 eight whole times, with a remainder to place over 24."
+            }
+          ]
+        },
+        {
+          "id": "chs2023ass2-q07",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\(3\\frac{5}{9}\\) to an improper fraction.",
+          "options": [
+            "\\(\\frac{32}{9}\\)",
+            "\\(\\frac{29}{9}\\)",
+            "\\(\\frac{27}{9}\\)",
+            "\\(\\frac{35}{9}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the whole number by the denominator, add the numerator, and keep the same denominator.",
+          "steps": [
+            {
+              "explain": "The mixed number has \\(3\\) whole units and \\(\\frac{5}{9}\\). Each whole is \\(\\frac{9}{9}\\).",
+              "work": "\\(3=\\frac{27}{9}\\)"
+            },
+            {
+              "explain": "Add the fractional part to the \\(27\\) ninths.",
+              "work": "\\(\\frac{27}{9}+\\frac{5}{9}=\\frac{32}{9}\\)"
+            },
+            {
+              "explain": "Therefore \\(3\\frac{5}{9}\\) as an improper fraction is \\(\\frac{32}{9}\\).",
+              "work": "\\(\\boxed{\\frac{32}{9}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+            "school": "Chatswood High School",
+            "year": 2023,
+            "page": 4,
+            "question": 7,
+            "section": "Fractions and Decimals",
+            "origin": "teacher"
+          },
+          "keyPoints": [
+            {
+              "text": "\\(3\\frac{5}{9}\\)",
+              "note": "Convert the three whole units into ninths before adding the remaining five ninths."
+            }
+          ]
+        },
+        {
+          "id": "chs2023ass2-q08",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\(\\frac{33}{4}\\) to a mixed numeral.",
+          "options": [
+            "\\(8\\frac{1}{4}\\)",
+            "\\(8\\frac{1}{3}\\)",
+            "\\(7\\frac{1}{4}\\)",
+            "\\(8\\frac{3}{4}\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide 33 by 4. The quotient is the whole-number part and the remainder stays over 4.",
+          "steps": [
+            {
+              "explain": "Divide the numerator by the denominator to separate full groups of four.",
+              "work": "\\(33\\div4=8\\text{ remainder }1\\)"
+            },
+            {
+              "explain": "The quotient gives \\(8\\) wholes. The remainder \\(1\\) is the numerator of the leftover fraction, with denominator \\(4\\).",
+              "work": "\\(\\frac{33}{4}=8+\\frac{1}{4}\\)"
+            },
+            {
+              "explain": "So the mixed numeral is \\(8\\frac{1}{4}\\).",
+              "work": "\\(\\boxed{8\\frac{1}{4}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+            "school": "Chatswood High School",
+            "year": 2023,
+            "page": 4,
+            "question": 8,
+            "section": "Fractions and Decimals",
+            "origin": "teacher"
+          },
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{33}{4}\\)",
+              "note": "Use division to find the number of complete groups of four and the leftover amount."
             }
           ]
         }
@@ -3114,6 +3474,104 @@
             {
               "text": "smallest fraction",
               "note": "Simplify \\(\\frac{4}{32}\\) and compare the resulting value with the other fractions."
+            }
+          ]
+        },
+        {
+          "id": "chs2023ass2-q04",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Matt and Libby both bought the same sized box of chocolates. Matt ate \\(\\frac{3}{4}\\) of his box. Libby ate more chocolates than Matt. What fraction of her chocolates could Libby have eaten?",
+          "options": [
+            "\\(\\frac{3}{5}\\)",
+            "\\(\\frac{2}{3}\\)",
+            "\\(\\frac{5}{6}\\)",
+            "\\(\\frac{8}{11}\\)"
+          ],
+          "answer": 2,
+          "hint": "Choose a fraction that is greater than \\(\\frac{3}{4}\\) but still less than one whole box.",
+          "steps": [
+            {
+              "explain": "Libby ate more than Matt, so her fraction must be greater than \\(\\frac{3}{4}\\). Compare each choice with \\(\\frac{3}{4}\\).",
+              "work": "\\(\\frac{3}{4}=0.75\\)"
+            },
+            {
+              "explain": "For \\(\\frac{5}{6}\\), cross-multiply: \\(5\\times4=20\\) and \\(3\\times6=18\\). Since \\(20>18\\), \\(\\frac{5}{6}>\\frac{3}{4}\\).",
+              "work": "\\(\\frac{5}{6}>\\frac{3}{4}\\)"
+            },
+            {
+              "explain": "The other choices are less than \\(\\frac{3}{4}\\): \\(\\frac{3}{5}=0.6\\), \\(\\frac{2}{3}\\approx0.667\\), and \\(\\frac{8}{11}\\approx0.727\\). So \\(\\frac{5}{6}\\) could be Libby’s amount.",
+              "work": "\\(\\boxed{\\frac{5}{6}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+            "school": "Chatswood High School",
+            "year": 2023,
+            "page": 3,
+            "question": 4,
+            "section": "Fractions and Decimals",
+            "origin": "teacher"
+          },
+          "keyPoints": [
+            {
+              "text": "Libby ate more chocolates than Matt.",
+              "note": "Her fraction must be greater than Matt’s \\(\\frac{3}{4}\\)."
+            }
+          ]
+        },
+        {
+          "id": "chs2023ass2-q21",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Tom completed two exams. His score on his Mathematics exam was 15 out of 20. His score on his Science exam was 24 out of 30. Which test did Tom score better in? Justify your answer with calculations.",
+          "options": [
+            "Mathematics, because \\(\\frac{15}{20}=0.75\\) and \\(\\frac{24}{30}=0.80\\).",
+            "Science, because \\(\\frac{15}{20}=0.75\\) and \\(\\frac{24}{30}=0.80\\).",
+            "Science, because 24 marks is greater than 15 marks.",
+            "Mathematics, because 20 is less than 30."
+          ],
+          "answer": 1,
+          "hint": "Convert both scores to equivalent fractions or percentages, then compare the results.",
+          "steps": [
+            {
+              "explain": "Write each exam score as a fraction of the total marks.",
+              "work": "\\(\\text{Mathematics}=\\frac{15}{20},\\qquad\\text{Science}=\\frac{24}{30}\\)"
+            },
+            {
+              "explain": "Simplify and convert to decimals: \\(\\frac{15}{20}=\\frac{3}{4}=0.75\\); \\(\\frac{24}{30}=\\frac{4}{5}=0.80\\).",
+              "work": "\\(\\frac{15}{20}=75\\%,\\qquad\\frac{24}{30}=80\\%\\)"
+            },
+            {
+              "explain": "Since \\(0.80>0.75\\), Tom scored better in Science.",
+              "work": "\\(\\boxed{\\text{Science}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+            "school": "Chatswood High School",
+            "year": 2023,
+            "page": 8,
+            "question": 21,
+            "section": "Problem Solving",
+            "origin": "teacher"
+          },
+          "keyPoints": [
+            {
+              "text": "15 out of 20",
+              "note": "Compare this score as a fraction of the Mathematics exam total."
+            },
+            {
+              "text": "24 out of 30",
+              "note": "Compare this score as a fraction of the Science exam total."
+            },
+            {
+              "text": "Justify your answer with calculations.",
+              "note": "Compare percentages or decimals, not the raw marks."
             }
           ]
         }
@@ -4344,6 +4802,412 @@
             "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
             "sourceQuestion": "Q1(f)(i)–(ii)"
           }
+        },
+        {
+          "id": "chs2023ass2-q12",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Simplify each fraction.",
+          "parts": [
+            {
+              "id": "chs2023ass2-q12a",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "\\(\\frac{7}{10}+\\frac{2}{10}\\)",
+              "options": [
+                "\\(\\frac{7}{10}\\)",
+                "\\(\\frac{9}{20}\\)",
+                "\\(\\frac{9}{10}\\)",
+                "\\(\\frac{5}{10}\\)"
+              ],
+              "answer": 2,
+              "hint": "The denominators are already equal, so add only the numerators.",
+              "steps": [
+                {
+                  "explain": "Both fractions are tenths, so keep the denominator \\(10\\).",
+                  "work": "\\(\\frac{7}{10}+\\frac{2}{10}=\\frac{7+2}{10}\\)"
+                },
+                {
+                  "explain": "Add the numerators.",
+                  "work": "\\(\\frac{9}{10}\\)"
+                },
+                {
+                  "explain": "The result is already simplified.",
+                  "work": "\\(\\boxed{\\frac{9}{10}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+                "school": "Chatswood High School",
+                "year": 2023,
+                "page": 5,
+                "question": 12,
+                "section": "Fractions and Decimals",
+                "origin": "teacher",
+                "part": "a",
+                "topic": "Addition and subtraction of fractions"
+              },
+              "keyPoints": [
+                {
+                  "text": "\\(\\frac{7}{10}+\\frac{2}{10}\\)",
+                  "note": "Keep the denominator the same when possible; otherwise convert both fractions to a common denominator."
+                }
+              ]
+            },
+            {
+              "id": "chs2023ass2-q12b",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "\\(\\frac{11}{15}-\\frac{4}{15}\\)",
+              "options": [
+                "\\(\\frac{1}{3}\\)",
+                "\\(\\frac{7}{15}\\)",
+                "\\(\\frac{7}{11}\\)",
+                "\\(\\frac{5}{15}\\)"
+              ],
+              "answer": 1,
+              "hint": "The denominators are both 15. Subtract the numerators and keep the denominator.",
+              "steps": [
+                {
+                  "explain": "The fractions have the same denominator, so subtract the numerators.",
+                  "work": "\\(\\frac{11}{15}-\\frac{4}{15}=\\frac{11-4}{15}\\)"
+                },
+                {
+                  "explain": "Subtract \\(4\\) from \\(11\\).",
+                  "work": "\\(\\frac{7}{15}\\)"
+                },
+                {
+                  "explain": "Seven and fifteen share no common factor greater than 1.",
+                  "work": "\\(\\boxed{\\frac{7}{15}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+                "school": "Chatswood High School",
+                "year": 2023,
+                "page": 5,
+                "question": 12,
+                "section": "Fractions and Decimals",
+                "origin": "teacher",
+                "part": "b",
+                "topic": "Addition and subtraction of fractions"
+              },
+              "keyPoints": [
+                {
+                  "text": "\\(\\frac{11}{15}-\\frac{4}{15}\\)",
+                  "note": "Keep the denominator the same when possible; otherwise convert both fractions to a common denominator."
+                }
+              ]
+            },
+            {
+              "id": "chs2023ass2-q12c",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "\\(\\frac{4}{9}+\\frac{1}{18}\\)",
+              "options": [
+                "\\(\\frac{1}{2}\\)",
+                "\\(\\frac{5}{18}\\)",
+                "\\(\\frac{5}{9}\\)",
+                "\\(\\frac{9}{27}\\)"
+              ],
+              "answer": 0,
+              "hint": "Change \\(\\frac{4}{9}\\) to eighteenths before adding.",
+              "steps": [
+                {
+                  "explain": "The denominators are 9 and 18. Convert ninths to eighteenths by multiplying top and bottom by 2.",
+                  "work": "\\(\\frac{4}{9}=\\frac{8}{18}\\)"
+                },
+                {
+                  "explain": "Now add the numerators and keep denominator 18.",
+                  "work": "\\(\\frac{8}{18}+\\frac{1}{18}=\\frac{9}{18}\\)"
+                },
+                {
+                  "explain": "Simplify by dividing top and bottom by 9.",
+                  "work": "\\(\\frac{9}{18}=\\frac{1}{2}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+                "school": "Chatswood High School",
+                "year": 2023,
+                "page": 5,
+                "question": 12,
+                "section": "Fractions and Decimals",
+                "origin": "teacher",
+                "part": "c",
+                "topic": "Addition and subtraction of fractions"
+              },
+              "keyPoints": [
+                {
+                  "text": "\\(\\frac{4}{9}+\\frac{1}{18}\\)",
+                  "note": "Keep the denominator the same when possible; otherwise convert both fractions to a common denominator."
+                }
+              ]
+            },
+            {
+              "id": "chs2023ass2-q12d",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "\\(\\frac{7}{8}-\\frac{1}{9}\\)",
+              "options": [
+                "\\(\\frac{56}{72}\\)",
+                "\\(\\frac{55}{64}\\)",
+                "\\(\\frac{6}{72}\\)",
+                "\\(\\frac{55}{72}\\)"
+              ],
+              "answer": 3,
+              "hint": "Use the lowest common denominator of 8 and 9, then subtract the numerators.",
+              "steps": [
+                {
+                  "explain": "The lowest common denominator of 8 and 9 is \\(72\\). Convert each fraction to seventy-secondths.",
+                  "work": "\\(\\frac{7}{8}=\\frac{63}{72},\\qquad\\frac{1}{9}=\\frac{8}{72}\\)"
+                },
+                {
+                  "explain": "Subtract the numerators and keep denominator 72.",
+                  "work": "\\(\\frac{63}{72}-\\frac{8}{72}=\\frac{55}{72}\\)"
+                },
+                {
+                  "explain": "Since 55 and 72 have no common factor greater than 1, this is simplest form.",
+                  "work": "\\(\\boxed{\\frac{55}{72}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+                "school": "Chatswood High School",
+                "year": 2023,
+                "page": 5,
+                "question": 12,
+                "section": "Fractions and Decimals",
+                "origin": "teacher",
+                "part": "d",
+                "topic": "Addition and subtraction of fractions"
+              },
+              "keyPoints": [
+                {
+                  "text": "\\(\\frac{7}{8}-\\frac{1}{9}\\)",
+                  "note": "Keep the denominator the same when possible; otherwise convert both fractions to a common denominator."
+                }
+              ]
+            }
+          ],
+          "hint": "Check whether the denominators match. If not, make equivalent fractions with a common denominator before calculating.",
+          "keyPoints": [
+            {
+              "text": "Simplify each fraction.",
+              "note": "After adding or subtracting, check whether the result can be reduced."
+            }
+          ],
+          "steps": [],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+            "school": "Chatswood High School",
+            "year": 2023,
+            "page": 5,
+            "question": 12,
+            "section": "Fractions and Decimals",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "chs2023ass2-q20",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Lauren’s school bag weighed \\(4\\frac{5}{8}\\) kg. Amy’s weighed \\(3\\frac{1}{6}\\) kg.",
+          "parts": [
+            {
+              "id": "chs2023ass2-q20a",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "How much heavier was Lauren’s bag? Leave your answer as an improper fraction.",
+              "options": [
+                "\\(\\frac{19}{24}\\text{ kg}\\)",
+                "\\(\\frac{35}{48}\\text{ kg}\\)",
+                "\\(\\frac{11}{24}\\text{ kg}\\)",
+                "\\(\\frac{35}{24}\\text{ kg}\\)"
+              ],
+              "answer": 3,
+              "hint": "Convert both mixed numbers to improper fractions, then use denominator 24 to subtract.",
+              "steps": [
+                {
+                  "explain": "Convert the mixed numbers: \\(4\\frac{5}{8}=\\frac{37}{8}\\) and \\(3\\frac{1}{6}=\\frac{19}{6}\\).",
+                  "work": "\\(4\\frac{5}{8}=\\frac{4\\times8+5}{8}=\\frac{37}{8},\\quad3\\frac{1}{6}=\\frac{3\\times6+1}{6}=\\frac{19}{6}\\)"
+                },
+                {
+                  "explain": "The lowest common denominator of 8 and 6 is 24. Rewrite both fractions.",
+                  "work": "\\(\\frac{37}{8}=\\frac{111}{24},\\quad\\frac{19}{6}=\\frac{76}{24}\\)"
+                },
+                {
+                  "explain": "Subtract Amy’s mass from Lauren’s and keep the improper-fraction form.",
+                  "work": "\\(\\frac{111}{24}-\\frac{76}{24}=\\boxed{\\frac{35}{24}\\text{ kg}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+                "school": "Chatswood High School",
+                "year": 2023,
+                "page": 7,
+                "question": 20,
+                "section": "Fractions and Decimals",
+                "origin": "teacher",
+                "part": "a",
+                "topic": "Subtraction of mixed numerals"
+              },
+              "keyPoints": [
+                {
+                  "text": "How much heavier",
+                  "note": "Subtract Amy’s mass from Lauren’s mass."
+                },
+                {
+                  "text": "improper fraction",
+                  "note": "Keep the final answer as an improper fraction, not a mixed numeral."
+                }
+              ]
+            },
+            {
+              "id": "chs2023ass2-q20b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "How much did the two bags weigh together? Leave your answer as an improper fraction.",
+              "options": [
+                "\\(\\frac{187}{24}\\text{ kg}\\)",
+                "\\(\\frac{187}{48}\\text{ kg}\\)",
+                "\\(\\frac{56}{24}\\text{ kg}\\)",
+                "\\(\\frac{19}{6}\\text{ kg}\\)"
+              ],
+              "answer": 0,
+              "hint": "Convert both mixed numbers to improper fractions and add using a common denominator.",
+              "steps": [
+                {
+                  "explain": "Use the improper fractions from the shared information: \\(4\\frac{5}{8}=\\frac{37}{8}\\) and \\(3\\frac{1}{6}=\\frac{19}{6}\\).",
+                  "work": "\\(\\frac{37}{8}+\\frac{19}{6}\\)"
+                },
+                {
+                  "explain": "Rewrite them with denominator 24.",
+                  "work": "\\(\\frac{37}{8}=\\frac{111}{24},\\quad\\frac{19}{6}=\\frac{76}{24}\\)"
+                },
+                {
+                  "explain": "Add the numerators. The question requests an improper fraction.",
+                  "work": "\\(\\frac{111}{24}+\\frac{76}{24}=\\boxed{\\frac{187}{24}\\text{ kg}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+                "school": "Chatswood High School",
+                "year": 2023,
+                "page": 7,
+                "question": 20,
+                "section": "Fractions and Decimals",
+                "origin": "teacher",
+                "part": "b",
+                "topic": "Addition of fractions"
+              },
+              "keyPoints": [
+                {
+                  "text": "weigh together",
+                  "note": "Add the two bag masses."
+                },
+                {
+                  "text": "improper fraction",
+                  "note": "Leave the sum as a single fraction greater than one."
+                }
+              ]
+            }
+          ],
+          "hint": "For each part, first convert both mixed numerals to improper fractions, then use a common denominator.",
+          "keyPoints": [
+            {
+              "text": "\\(4\\frac{5}{8}\\) kg",
+              "note": "Lauren’s bag mass is the first mixed number to convert."
+            },
+            {
+              "text": "\\(3\\frac{1}{6}\\) kg",
+              "note": "Amy’s bag mass is the second mixed number to convert."
+            }
+          ],
+          "steps": [],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+            "school": "Chatswood High School",
+            "year": 2023,
+            "page": 7,
+            "question": 20,
+            "section": "Fractions and Decimals",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "chs2023ass2-q24",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which fraction is exactly halfway between \\(\\frac{1}{5}\\) and \\(\\frac{1}{2}\\) on a number line?",
+          "options": [
+            "\\(\\frac{7}{20}\\)",
+            "\\(\\frac{3}{10}\\)",
+            "\\(\\frac{7}{10}\\)",
+            "\\(\\frac{9}{20}\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the distance between the two fractions, take half that distance, and add it to the smaller endpoint.",
+          "steps": [
+            {
+              "explain": "Rewrite the endpoints with denominator 10: \\(\\frac{1}{5}=\\frac{2}{10}\\) and \\(\\frac{1}{2}=\\frac{5}{10}\\).",
+              "work": "\\(\\frac{1}{5}=\\frac{2}{10},\\quad\\frac{1}{2}=\\frac{5}{10}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 100\" width=\"100%\" height=\"auto\"><line x1=\"55\" y1=\"45\" x2=\"445\" y2=\"45\" stroke=\"#475569\" stroke-width=\"2\"/><path d=\"M 55 45 l 10 -5 v 10 z M 445 45 l -10 -5 v 10 z\" fill=\"#475569\"/><circle cx=\"100\" cy=\"45\" r=\"5\" fill=\"#334155\"/><circle cx=\"250\" cy=\"45\" r=\"5\" fill=\"#334155\"/><circle cx=\"400\" cy=\"45\" r=\"5\" fill=\"#334155\"/><text x=\"83\" y=\"78\" font-family=\"Arial,sans-serif\" font-size=\"18\" fill=\"#1e293b\">1/5</text><text x=\"237\" y=\"83\" font-family=\"Arial,sans-serif\" font-size=\"20\" fill=\"#f97316\">?</text><text x=\"380\" y=\"78\" font-family=\"Arial,sans-serif\" font-size=\"18\" fill=\"#1e293b\">1/2</text><path d=\"M 250 66 L 250 53\" stroke=\"#f97316\" stroke-width=\"2\"/><path d=\"M 250 53 l -5 7 h 10 z\" fill=\"#f97316\"/></svg>"
+              }
+            },
+            {
+              "explain": "The distance is \\(\\frac{5}{10}-\\frac{2}{10}=\\frac{3}{10}\\). Half of that interval is \\(\\frac{3}{20}\\).",
+              "work": "\\(\\frac{3}{10}\\div2=\\frac{3}{20}\\)"
+            },
+            {
+              "explain": "Add half the interval to \\(\\frac{1}{5}=\\frac{4}{20}\\). This places the point exactly in the middle.",
+              "work": "\\(\\frac{4}{20}+\\frac{3}{20}=\\boxed{\\frac{7}{20}}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 100\" width=\"100%\" height=\"auto\"><line x1=\"55\" y1=\"45\" x2=\"445\" y2=\"45\" stroke=\"#475569\" stroke-width=\"2\"/><path d=\"M 55 45 l 10 -5 v 10 z M 445 45 l -10 -5 v 10 z\" fill=\"#475569\"/><circle cx=\"100\" cy=\"45\" r=\"5\" fill=\"#334155\"/><circle cx=\"250\" cy=\"45\" r=\"5\" fill=\"#334155\"/><circle cx=\"400\" cy=\"45\" r=\"5\" fill=\"#334155\"/><circle cx=\"250\" cy=\"45\" r=\"12\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"2.5\"/><line x1=\"100\" y1=\"28\" x2=\"250\" y2=\"28\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"250\" y1=\"28\" x2=\"400\" y2=\"28\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"83\" y=\"78\" font-family=\"Arial,sans-serif\" font-size=\"18\" fill=\"#1e293b\">1/5</text><text x=\"237\" y=\"83\" font-family=\"Arial,sans-serif\" font-size=\"20\" fill=\"#f97316\">?</text><text x=\"380\" y=\"78\" font-family=\"Arial,sans-serif\" font-size=\"18\" fill=\"#1e293b\">1/2</text><path d=\"M 250 66 L 250 53\" stroke=\"#f97316\" stroke-width=\"2\"/><path d=\"M 250 53 l -5 7 h 10 z\" fill=\"#f97316\"/></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 100\" width=\"100%\" height=\"auto\"><line x1=\"55\" y1=\"45\" x2=\"445\" y2=\"45\" stroke=\"#475569\" stroke-width=\"2\"/><path d=\"M 55 45 l 10 -5 v 10 z M 445 45 l -10 -5 v 10 z\" fill=\"#475569\"/><circle cx=\"100\" cy=\"45\" r=\"5\" fill=\"#334155\"/><circle cx=\"250\" cy=\"45\" r=\"5\" fill=\"#334155\"/><circle cx=\"400\" cy=\"45\" r=\"5\" fill=\"#334155\"/><text x=\"83\" y=\"78\" font-family=\"Arial,sans-serif\" font-size=\"18\" fill=\"#1e293b\">1/5</text><text x=\"237\" y=\"83\" font-family=\"Arial,sans-serif\" font-size=\"20\" fill=\"#f97316\">?</text><text x=\"380\" y=\"78\" font-family=\"Arial,sans-serif\" font-size=\"18\" fill=\"#1e293b\">1/2</text><path d=\"M 250 66 L 250 53\" stroke=\"#f97316\" stroke-width=\"2\"/><path d=\"M 250 53 l -5 7 h 10 z\" fill=\"#f97316\"/></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+            "school": "Chatswood High School",
+            "year": 2023,
+            "page": 9,
+            "question": 24,
+            "section": "Problem Solving",
+            "origin": "teacher"
+          },
+          "keyPoints": [
+            {
+              "text": "exactly halfway",
+              "note": "The unknown point is the same distance from both endpoints."
+            },
+            {
+              "text": "\\(\\frac{1}{5}\\) and \\(\\frac{1}{2}\\)",
+              "note": "Use a common denominator to find the interval between these endpoints."
+            }
+          ]
         }
       ]
     },

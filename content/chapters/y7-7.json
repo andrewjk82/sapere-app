@@ -2341,6 +2341,96 @@
             "section": "Section 3 (Decimals)",
             "marks": 1
           }
+        },
+        {
+          "id": "chs2023ass2-q02",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of these numbers has a 3 in the thousandths place?",
+          "options": [
+            "\\(0.3244\\)",
+            "\\(2.8309\\)",
+            "\\(7.8231\\)",
+            "\\(23\\,082.915\\)"
+          ],
+          "answer": 2,
+          "hint": "Count three places to the right of the decimal point: tenths, hundredths, then thousandths.",
+          "steps": [
+            {
+              "explain": "The thousandths digit is the third digit after the decimal point.",
+              "work": "\\(\\text{tenths},\\;\\text{hundredths},\\;\\text{thousandths}\\)"
+            },
+            {
+              "explain": "In \\(7.8231\\), the digits after the decimal point are \\(8,2,3,1\\). The third digit is \\(3\\).",
+              "work": "\\(7.\\underbrace{8}_{\\text{tenths}}\\underbrace{2}_{\\text{hundredths}}\\underbrace{3}_{\\text{thousandths}}1\\)"
+            },
+            {
+              "explain": "Therefore the number with \\(3\\) in the thousandths place is \\(7.8231\\).",
+              "work": "\\(\\boxed{7.8231}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+            "school": "Chatswood High School",
+            "year": 2023,
+            "page": 2,
+            "question": 2,
+            "section": "Fractions and Decimals",
+            "origin": "teacher"
+          },
+          "keyPoints": [
+            {
+              "text": "3 in the thousandths place",
+              "note": "The thousandths place is the third digit immediately after the decimal point."
+            }
+          ]
+        },
+        {
+          "id": "chs2023ass2-q16",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write in descending order: \\(0.4,\\;\\frac{3}{5},\\;\\frac{1}{3},\\;0.\\overline{5},\\;\\frac{5}{6}\\).",
+          "options": [
+            "\\(\\frac{5}{6}>\\frac{3}{5}>0.\\overline{5}>0.4>\\frac{1}{3}\\)",
+            "\\(\\frac{5}{6}>0.\\overline{5}>\\frac{3}{5}>0.4>\\frac{1}{3}\\)",
+            "\\(\\frac{3}{5}>\\frac{5}{6}>0.\\overline{5}>0.4>\\frac{1}{3}\\)",
+            "\\(\\frac{5}{6}>\\frac{3}{5}>0.4>0.\\overline{5}>\\frac{1}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Convert each value to a decimal so the five numbers can be compared directly.",
+          "steps": [
+            {
+              "explain": "Convert the fractions to decimals: \\(\\frac{3}{5}=0.6\\), \\(\\frac{1}{3}=0.333\\ldots\\), and \\(\\frac{5}{6}=0.8333\\ldots\\).",
+              "work": "\\(\\frac{3}{5}=0.6,\\quad\\frac{1}{3}=0.333\\ldots,\\quad\\frac{5}{6}=0.8333\\ldots\\)"
+            },
+            {
+              "explain": "The recurring decimal \\(0.\\overline{5}=0.555\\ldots\\). Compare all values: \\(0.8333\\ldots>0.6>0.555\\ldots>0.4>0.333\\ldots\\).",
+              "work": "\\(0.8333\\ldots>0.6>0.555\\ldots>0.4>0.333\\ldots\\)"
+            },
+            {
+              "explain": "Replace the decimals with the original forms to state the descending order.",
+              "work": "\\(\\boxed{\\frac{5}{6}>\\frac{3}{5}>0.\\overline{5}>0.4>\\frac{1}{3}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+            "school": "Chatswood High School",
+            "year": 2023,
+            "page": 6,
+            "question": 16,
+            "section": "Fractions and Decimals",
+            "origin": "teacher"
+          },
+          "keyPoints": [
+            {
+              "text": "descending order",
+              "note": "Write the values from greatest to least; convert them to decimals to compare."
+            }
+          ]
         }
       ]
     },
@@ -3257,6 +3347,100 @@
             "section": "Section 3 (Decimals)",
             "marks": 2
           }
+        },
+        {
+          "id": "chs2023ass2-q11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write 0.0029 as a fraction.",
+          "options": [
+            "\\(\\frac{29}{1000}\\)",
+            "\\(\\frac{29}{10000}\\)",
+            "\\(\\frac{29}{100}\\)",
+            "\\(\\frac{29}{100000}\\)"
+          ],
+          "answer": 1,
+          "hint": "Count the decimal places to choose the denominator, then simplify if possible.",
+          "steps": [
+            {
+              "explain": "There are four digits after the decimal point, so the place value denominator is \\(10\\,000\\).",
+              "work": "\\(0.0029=\\frac{29}{10\\,000}\\)"
+            },
+            {
+              "explain": "The numerator and denominator have no common factor greater than 1.",
+              "work": "\\(\\gcd(29,10\\,000)=1\\)"
+            },
+            {
+              "explain": "The fraction is already in simplest form.",
+              "work": "\\(\\boxed{\\frac{29}{10\\,000}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+            "school": "Chatswood High School",
+            "year": 2023,
+            "page": 4,
+            "question": 11,
+            "section": "Fractions and Decimals",
+            "origin": "teacher"
+          },
+          "keyPoints": [
+            {
+              "text": "0.0029",
+              "note": "Four decimal places mean the first denominator is 10,000."
+            }
+          ]
+        },
+        {
+          "id": "chs2023ass2-q22",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The fraction \\(\\frac{3}{8}\\) equals 0.375 as a decimal. What does \\(\\frac{3}{16}\\) equal as a decimal?",
+          "options": [
+            "\\(0.1875\\)",
+            "\\(0.375\\)",
+            "\\(0.01875\\)",
+            "\\(0.815\\)"
+          ],
+          "answer": 2,
+          "hint": "Since 16 is twice 8, compare \\(\\frac{3}{16}\\) with the given decimal for \\(\\frac{3}{8}\\).",
+          "steps": [
+            {
+              "explain": "The denominator 16 is twice 8, so \\(\\frac{3}{16}\\) is half of \\(\\frac{3}{8}\\).",
+              "work": "\\(\\frac{3}{16}=\\frac{1}{2}\\times\\frac{3}{8}\\)"
+            },
+            {
+              "explain": "Take half of the given decimal value.",
+              "work": "\\(0.375\\div2=0.1875\\)"
+            },
+            {
+              "explain": "Therefore \\(\\frac{3}{16}=0.1875\\).",
+              "work": "\\(\\boxed{0.1875}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+            "school": "Chatswood High School",
+            "year": 2023,
+            "page": 8,
+            "question": 22,
+            "section": "Problem Solving",
+            "origin": "teacher"
+          },
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{3}{8}\\) equals 0.375",
+              "note": "Use the known decimal and the fact that 16 is twice 8."
+            },
+            {
+              "text": "\\(\\frac{3}{16}\\)",
+              "note": "This fraction is half of \\(\\frac{3}{8}\\)."
+            }
+          ]
         }
       ]
     },
@@ -3788,6 +3972,221 @@
           "meta": {
             "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
             "sourceQuestion": "Non-calculator Q10"
+          }
+        },
+        {
+          "id": "chs2023ass2-q17",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Calculate:",
+          "parts": [
+            {
+              "id": "chs2023ass2-q17a",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "\\(19.4+8.71\\)",
+              "options": [
+                "\\(27.21\\)",
+                "\\(28.11\\)",
+                "\\(28.01\\)",
+                "\\(27.15\\)"
+              ],
+              "answer": 1,
+              "hint": "Line up the decimal points and add zeros if needed.",
+              "steps": [
+                {
+                  "explain": "Write both numbers with two decimal places so the place values line up.",
+                  "work": "\\(19.40+8.71\\)"
+                },
+                {
+                  "explain": "Add hundredths, tenths and whole-number columns.",
+                  "work": "\\(19.40+8.71=28.11\\)"
+                },
+                {
+                  "explain": "The sum is \\(28.11\\).",
+                  "work": "\\(\\boxed{28.11}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+                "school": "Chatswood High School",
+                "year": 2023,
+                "page": 6,
+                "question": 17,
+                "section": "Fractions and Decimals",
+                "origin": "teacher",
+                "part": "a",
+                "topic": "Addition and subtraction of decimals"
+              },
+              "keyPoints": [
+                {
+                  "text": "\\(19.4+8.71\\)",
+                  "note": "Addition and subtraction of decimals. Keep the decimal places aligned or account for them after multiplying."
+                }
+              ]
+            },
+            {
+              "id": "chs2023ass2-q17b",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "\\(4.092-3.94\\)",
+              "options": [
+                "\\(0.248\\)",
+                "\\(0.158\\)",
+                "\\(0.152\\)",
+                "\\(0.052\\)"
+              ],
+              "answer": 2,
+              "hint": "Write \\(3.94\\) as \\(3.940\\), then subtract by place value.",
+              "steps": [
+                {
+                  "explain": "Pad \\(3.94\\) with a zero so both numbers have three decimal places.",
+                  "work": "\\(4.092-3.940\\)"
+                },
+                {
+                  "explain": "Subtract the aligned decimals.",
+                  "work": "\\(4.092-3.940=0.152\\)"
+                },
+                {
+                  "explain": "The difference is \\(0.152\\).",
+                  "work": "\\(\\boxed{0.152}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+                "school": "Chatswood High School",
+                "year": 2023,
+                "page": 6,
+                "question": 17,
+                "section": "Fractions and Decimals",
+                "origin": "teacher",
+                "part": "b",
+                "topic": "Addition and subtraction of decimals"
+              },
+              "keyPoints": [
+                {
+                  "text": "\\(4.092-3.94\\)",
+                  "note": "Addition and subtraction of decimals. Keep the decimal places aligned or account for them after multiplying."
+                }
+              ]
+            },
+            {
+              "id": "chs2023ass2-q17c",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "\\(4.102\\times10000\\)",
+              "options": [
+                "\\(4102\\)",
+                "\\(410200\\)",
+                "\\(41.02\\)",
+                "\\(41020\\)"
+              ],
+              "answer": 3,
+              "hint": "Multiplying by \\(10\\,000\\) moves the decimal point four places to the right.",
+              "steps": [
+                {
+                  "explain": "The multiplier \\(10\\,000\\) has four zeros, so the decimal point moves four places right.",
+                  "work": "\\(4.102\\to4102\\)"
+                },
+                {
+                  "explain": "Track the digits: \\(4.102\\to41.02\\to410.2\\to4102\\to41020\\).",
+                  "work": "\\(4.102\\times10\\,000=41\\,020\\)"
+                },
+                {
+                  "explain": "The product is \\(41\\,020\\).",
+                  "work": "\\(\\boxed{41\\,020}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+                "school": "Chatswood High School",
+                "year": 2023,
+                "page": 6,
+                "question": 17,
+                "section": "Fractions and Decimals",
+                "origin": "teacher",
+                "part": "c",
+                "topic": "Multiplication and division by powers of 10"
+              },
+              "keyPoints": [
+                {
+                  "text": "\\(4.102\\times10000\\)",
+                  "note": "Multiplication and division by powers of 10. Keep the decimal places aligned or account for them after multiplying."
+                }
+              ]
+            },
+            {
+              "id": "chs2023ass2-q17d",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "\\(7.14\\times5.3\\)",
+              "options": [
+                "\\(37.842\\)",
+                "\\(378.42\\)",
+                "\\(3.7842\\)",
+                "\\(37.42\\)"
+              ],
+              "answer": 0,
+              "hint": "Multiply as whole numbers first, then place three decimal places in the product.",
+              "steps": [
+                {
+                  "explain": "Ignore the decimal points temporarily and multiply \\(714\\times53\\).",
+                  "work": "\\(714\\times53=714\\times50+714\\times3=35\\,700+2\\,142=37\\,842\\)"
+                },
+                {
+                  "explain": "There are two decimal places in \\(7.14\\) and one in \\(5.3\\), so the product needs three decimal places.",
+                  "work": "\\(7.14\\times5.3=37.842\\)"
+                },
+                {
+                  "explain": "The product is \\(37.842\\).",
+                  "work": "\\(\\boxed{37.842}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+                "school": "Chatswood High School",
+                "year": 2023,
+                "page": 6,
+                "question": 17,
+                "section": "Fractions and Decimals",
+                "origin": "teacher",
+                "part": "d",
+                "topic": "Multiplication of one decimal by another"
+              },
+              "keyPoints": [
+                {
+                  "text": "\\(7.14\\times5.3\\)",
+                  "note": "Multiplication of one decimal by another. Keep the decimal places aligned or account for them after multiplying."
+                }
+              ]
+            }
+          ],
+          "hint": "For addition or subtraction, align decimal points. For multiplication, multiply the whole-number digits first and then place the decimal point.",
+          "keyPoints": [
+            {
+              "text": "Calculate:",
+              "note": "Use the operation shown and keep the decimal place values aligned."
+            }
+          ],
+          "steps": [],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+            "school": "Chatswood High School",
+            "year": 2023,
+            "page": 6,
+            "question": 17,
+            "section": "Fractions and Decimals",
+            "origin": "teacher"
           }
         }
       ]
@@ -5312,6 +5711,55 @@
             "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
             "sourceQuestion": "Non-calculator Q11"
           }
+        },
+        {
+          "id": "chs2023ass2-q05",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Jamie buys a 200 gram bag of pumpkin seeds at the market for making muesli. Each pumpkin seed has a mass of 0.19 grams. Which of these is the best estimate for the number of seeds in the 200 gram bag?",
+          "options": [
+            "\\(100\\)",
+            "\\(500\\)",
+            "\\(1000\\)",
+            "\\(5000\\)"
+          ],
+          "answer": 2,
+          "hint": "Round the mass of one seed to a convenient value close to \\(0.19\\text{ g}\\), then divide the total mass by it.",
+          "steps": [
+            {
+              "explain": "A seed has mass \\(0.19\\text{ g}\\), which is close to \\(0.2\\text{ g}\\). Use \\(0.2\\text{ g}\\) for an estimate.",
+              "work": "\\(0.19\\text{ g}\\approx0.2\\text{ g}\\)"
+            },
+            {
+              "explain": "Estimate the number of seeds by dividing the bag mass by the estimated mass per seed.",
+              "work": "\\(200\\div0.2=1000\\)"
+            },
+            {
+              "explain": "So the best estimate is about \\(1000\\) seeds.",
+              "work": "\\(\\boxed{1000\\text{ seeds}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+            "school": "Chatswood High School",
+            "year": 2023,
+            "page": 3,
+            "question": 5,
+            "section": "Fractions and Decimals",
+            "origin": "teacher"
+          },
+          "keyPoints": [
+            {
+              "text": "200 gram bag",
+              "note": "This is the total mass to divide by the mass of one seed."
+            },
+            {
+              "text": "0.19 grams",
+              "note": "Round this to \\(0.2\\) grams to estimate the number of seeds."
+            }
+          ]
         }
       ]
     },
@@ -5904,6 +6352,51 @@
             {
               "text": "\\(0.\\dot{6}\\)",
               "note": "The dot over 6 means the digit 6 repeats forever."
+            }
+          ]
+        },
+        {
+          "id": "chs2023ass2-q15",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express 0.4231423142... as a recurring decimal.",
+          "options": [
+            "\\(0.\\overline{423}\\)",
+            "\\(0.4\\overline{2314}\\)",
+            "\\(0.\\overline{4231}\\)",
+            "\\(0.\\overline{4213}\\)"
+          ],
+          "answer": 2,
+          "hint": "Look for the shortest digit block that repeats from the start of the decimal.",
+          "steps": [
+            {
+              "explain": "Read the digits after the decimal point in blocks: \\(4231\\,4231\\,42\\ldots\\).",
+              "work": "\\(4231\\;|\\;4231\\;|\\;42\\ldots\\)"
+            },
+            {
+              "explain": "The same four digits, \\(4231\\), repeat again and again.",
+              "work": "\\(0.4231423142\\ldots=0.4231\\,4231\\,4231\\ldots\\)"
+            },
+            {
+              "explain": "Place a recurring bar over the repeating block.",
+              "work": "\\(\\boxed{0.\\overline{4231}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+            "school": "Chatswood High School",
+            "year": 2023,
+            "page": 5,
+            "question": 15,
+            "section": "Fractions and Decimals",
+            "origin": "teacher"
+          },
+          "keyPoints": [
+            {
+              "text": "0.4231423142...",
+              "note": "Compare consecutive groups of digits to identify the repeating block."
             }
           ]
         }

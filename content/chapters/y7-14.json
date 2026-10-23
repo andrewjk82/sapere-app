@@ -3118,6 +3118,67 @@
               "note": "Change percentages to decimals first; ascending means smallest to largest."
             }
           ]
+        },
+        {
+          "id": "chs2023ass2-q25",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In autumn a tree starts to shed its leaves. 0.4 of the leaves fall off in the first week, half of those remaining fall off in the second week, and \\(0.\\dot{6}\\) of those remaining fall off in the third week. 85 leaves now remain. How many leaves did the tree have to start with?",
+          "options": [
+            "\\(850 leaves\\)",
+            "\\(680 leaves\\)",
+            "\\(8500 leaves\\)",
+            "\\(425 leaves\\)"
+          ],
+          "answer": 1,
+          "hint": "Work out the fraction remaining after each week. The recurring decimal \\(0.\\dot{6}\\) means \\(\\frac{2}{3}\\) falls in week 3.",
+          "steps": [
+            {
+              "explain": "Let the initial number of leaves be \\(N\\). After \\(0.4\\) fall in week 1, the remaining fraction is \\(1-0.4=0.6=\\frac{3}{5}\\).",
+              "work": "\\(\\text{after week 1}=\\frac{3}{5}N\\)"
+            },
+            {
+              "explain": "Half of the remaining leaves fall in week 2, so half remain: \\(\\frac{1}{2}\\times\\frac{3}{5}N=\\frac{3}{10}N\\).",
+              "work": "\\(\\text{after week 2}=\\frac{3}{10}N\\)"
+            },
+            {
+              "explain": "In week 3, \\(0.\\dot{6}=\\frac{2}{3}\\) of those leaves fall, so \\(\\frac{1}{3}\\) remain. Thus \\(\\frac{1}{3}\\times\\frac{3}{10}N=\\frac{1}{10}N=85\\).",
+              "work": "\\(\\text{after week 3}=\\frac{1}{10}N=85\\)"
+            },
+            {
+              "explain": "Multiply both sides by 10 to find the starting number.",
+              "work": "\\(N=85\\times10=\\boxed{850\\text{ leaves}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+            "school": "Chatswood High School",
+            "year": 2023,
+            "page": 9,
+            "question": 25,
+            "section": "Problem Solving",
+            "origin": "teacher"
+          },
+          "keyPoints": [
+            {
+              "text": "0.4 of the leaves",
+              "note": "Subtract 0.4 from 1 to find the fraction that remains after the first week."
+            },
+            {
+              "text": "half of those remaining",
+              "note": "In the second week, half remain after half fall."
+            },
+            {
+              "text": "\\(0.\\dot{6}\\) of those remaining",
+              "note": "The recurring decimal \\(0.\\dot{6}\\) is \\(\\frac{2}{3}\\), so one third remains."
+            },
+            {
+              "text": "85 leaves now remain",
+              "note": "Set the final remaining fraction equal to 85 and solve for the starting amount."
+            }
+          ]
         }
       ]
     },

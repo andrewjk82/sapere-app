@@ -3257,6 +3257,61 @@
               "note": "Use the metric scale in two stages: km to m, then m to mm."
             }
           ]
+        },
+        {
+          "id": "chs2023ass2-q01",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Riley threw a shotput in the school athletics carnival and landed it where the arrow marker is shown below. Which of these is closest to the length of his throw?",
+          "options": [
+            "\\(4\\frac{2}{3}\\text{ m}\\)",
+            "\\(5\\frac{1}{3}\\text{ m}\\)",
+            "\\(5\\frac{1}{2}\\text{ m}\\)",
+            "\\(5\\frac{2}{3}\\text{ m}\\)"
+          ],
+          "answer": 1,
+          "hint": "Read the arrow’s position on the metre scale, then compare it with the four mixed-number estimates.",
+          "steps": [
+            {
+              "explain": "The arrow is a little less than halfway from \\(5\\text{ m}\\) to \\(6\\text{ m}\\), so the throw is about \\(5.4\\text{ m}\\).",
+              "work": "\\(5.4\\text{ m}\\)"
+            },
+            {
+              "explain": "Compare nearby choices: \\(5\\frac{1}{3}=5.333\\ldots\\), \\(5\\frac{1}{2}=5.5\\), and \\(5\\frac{2}{3}=5.666\\ldots\\).",
+              "work": "\\(|5.4-5\\frac{1}{3}|\\approx0.067,\\quad |5.4-5\\frac{1}{2}|=0.1,\\quad |5.4-5\\frac{2}{3}|\\approx0.267\\)"
+            },
+            {
+              "explain": "The closest estimate is \\(5\\frac{1}{3}\\text{ m}\\).",
+              "work": "\\(\\boxed{5\\frac{1}{3}\\text{ m}}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 470 145\" width=\"100%\" height=\"auto\"><polygon points=\"48,34 426,34 400,105 25,105\" fill=\"#e8f4ec\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"48.0\" y1=\"34\" x2=\"25.0\" y2=\"105\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"18.0\" y=\"126\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">0 m</text><line x1=\"102.0\" y1=\"34\" x2=\"78.6\" y2=\"105\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"71.6\" y=\"126\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">1 m</text><line x1=\"156.0\" y1=\"34\" x2=\"132.1\" y2=\"105\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"125.1\" y=\"126\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">2 m</text><line x1=\"210.0\" y1=\"34\" x2=\"185.7\" y2=\"105\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"178.7\" y=\"126\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">3 m</text><line x1=\"264.0\" y1=\"34\" x2=\"239.3\" y2=\"105\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"232.3\" y=\"126\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">4 m</text><line x1=\"318.0\" y1=\"34\" x2=\"292.9\" y2=\"105\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"285.9\" y=\"126\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">5 m</text><line x1=\"372.0\" y1=\"34\" x2=\"346.4\" y2=\"105\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"339.4\" y=\"126\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">6 m</text><line x1=\"426.0\" y1=\"34\" x2=\"400.0\" y2=\"105\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"393.0\" y=\"126\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">7 m</text><line x1=\"314.3\" y1=\"13\" x2=\"314.3\" y2=\"105\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><line x1=\"314.3\" y1=\"14\" x2=\"314.3\" y2=\"29\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><path d=\"M 309.3 20 L 314.3 11 L 319.3 20\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"314.3\" cy=\"99\" r=\"5\" fill=\"#2563eb\"/></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 470 145\" width=\"100%\" height=\"auto\"><polygon points=\"48,34 426,34 400,105 25,105\" fill=\"#e8f4ec\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"48.0\" y1=\"34\" x2=\"25.0\" y2=\"105\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"18.0\" y=\"126\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">0 m</text><line x1=\"102.0\" y1=\"34\" x2=\"78.6\" y2=\"105\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"71.6\" y=\"126\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">1 m</text><line x1=\"156.0\" y1=\"34\" x2=\"132.1\" y2=\"105\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"125.1\" y=\"126\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">2 m</text><line x1=\"210.0\" y1=\"34\" x2=\"185.7\" y2=\"105\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"178.7\" y=\"126\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">3 m</text><line x1=\"264.0\" y1=\"34\" x2=\"239.3\" y2=\"105\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"232.3\" y=\"126\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">4 m</text><line x1=\"318.0\" y1=\"34\" x2=\"292.9\" y2=\"105\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"285.9\" y=\"126\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">5 m</text><line x1=\"372.0\" y1=\"34\" x2=\"346.4\" y2=\"105\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"339.4\" y=\"126\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">6 m</text><line x1=\"426.0\" y1=\"34\" x2=\"400.0\" y2=\"105\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"393.0\" y=\"126\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">7 m</text><line x1=\"314.3\" y1=\"13\" x2=\"314.3\" y2=\"105\" stroke=\"#f97316\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><line x1=\"314.3\" y1=\"14\" x2=\"314.3\" y2=\"29\" stroke=\"#f97316\" stroke-width=\"2.5\"/><path d=\"M 309.3 20 L 314.3 11 L 319.3 20\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+            "school": "Chatswood High School",
+            "year": 2023,
+            "page": 2,
+            "question": 1,
+            "section": "Fractions and Decimals",
+            "origin": "teacher"
+          },
+          "keyPoints": [
+            {
+              "text": "arrow marker",
+              "note": "Project the marker down to the scale to estimate the distance in metres."
+            },
+            {
+              "text": "closest to the length",
+              "note": "Choose the listed mixed number with the smallest distance from the measured position."
+            }
+          ]
         }
       ]
     },
@@ -4140,6 +4195,55 @@
             "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
             "sourceQuestion": "Calculator Q4"
           }
+        },
+        {
+          "id": "chs2023ass2-q18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Sarah wants to split the bill for a meal equally between herself and her three friends. If the bill is $57.60, how much should each person pay?",
+          "options": [
+            "\\(\\$12.40\\)",
+            "\\(\\$14.40\\)",
+            "\\(\\$19.20\\)",
+            "\\(\\$57.60\\)"
+          ],
+          "answer": 1,
+          "hint": "Count the people sharing the bill, then divide the total equally among them.",
+          "steps": [
+            {
+              "explain": "Sarah and her three friends make \\(4\\) people altogether.",
+              "work": "\\(1+3=4\\)"
+            },
+            {
+              "explain": "Divide the total bill by 4.",
+              "work": "\\(\\$57.60\\div4=\\$14.40\\)"
+            },
+            {
+              "explain": "Each person should pay \\(\\$14.40\\).",
+              "work": "\\(\\boxed{\\$14.40}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+            "school": "Chatswood High School",
+            "year": 2023,
+            "page": 6,
+            "question": 18,
+            "section": "Fractions and Decimals",
+            "origin": "teacher"
+          },
+          "keyPoints": [
+            {
+              "text": "herself and her three friends",
+              "note": "Count Sarah as well as the three friends: four people share the bill."
+            },
+            {
+              "text": "$57.60",
+              "note": "Divide the total bill equally by the number of people."
+            }
+          ]
         }
       ]
     },
@@ -4708,7 +4812,7 @@
           "difficulty": "medium",
           "stem": "The perimeter of the shape shown, is:",
           "figure": {
-            "svg": "<svg viewBox=\"0 0 260 220\" xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\"><rect x=\"40\" y=\"30\" width=\"180\" height=\"70\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/><rect x=\"40\" y=\"100\" width=\"90\" height=\"70\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/><path d=\"M40 30 L220 30 L220 100 L130 100 L130 170 L40 170 Z\" fill=\"#dbeafe\" opacity=\"0.4\"/><text x=\"128\" y=\"22\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">a</text><text x=\"32\" y=\"100\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">c</text><text x=\"84\" y=\"188\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">b</text><text x=\"140\" y=\"135\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">d</text><rect x=\"40\" y=\"30\" width=\"8\" height=\"8\" fill=\"none\" stroke=\"#475569\"/><rect x=\"212\" y=\"30\" width=\"8\" height=\"8\" fill=\"none\" stroke=\"#475569\"/><rect x=\"40\" y=\"162\" width=\"8\" height=\"8\" fill=\"none\" stroke=\"#475569\"/><rect x=\"122\" y=\"92\" width=\"8\" height=\"8\" fill=\"none\" stroke=\"#475569\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 390 285\" width=\"50%\" height=\"auto\" role=\"img\"><rect x=\"0\" y=\"0\" width=\"390\" height=\"285\" fill=\"#fff\"/><path d=\"M 80,55 300,55 300,130 205,130 205,220 80,220 Z\" fill=\"#dbeafe\" fill-opacity=\".65\" stroke=\"none\"/><line x1=\"80\" y1=\"55\" x2=\"300\" y2=\"55\" stroke=\"#f97316\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"300\" y1=\"55\" x2=\"300\" y2=\"130\" stroke=\"#f97316\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"205\" y1=\"130\" x2=\"300\" y2=\"130\" stroke=\"#f97316\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"205\" y1=\"130\" x2=\"205\" y2=\"220\" stroke=\"#f97316\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"80\" y1=\"220\" x2=\"205\" y2=\"220\" stroke=\"#f97316\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"80\" y1=\"55\" x2=\"80\" y2=\"220\" stroke=\"#f97316\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"188\" y=\"42\" font-size=\"18\" text-anchor=\"middle\" fill=\"#1e293b\">a</text><text x=\"63\" y=\"142\" font-size=\"18\" text-anchor=\"middle\" fill=\"#1e293b\">c</text><text x=\"142\" y=\"245\" font-size=\"18\" text-anchor=\"middle\" fill=\"#1e293b\">b</text><text x=\"188\" y=\"183\" font-size=\"18\" text-anchor=\"middle\" fill=\"#1e293b\">d</text><text x=\"322\" y=\"95\" font-size=\"13\" fill=\"#64748b\">a − b</text><text x=\"222\" y=\"112\" font-size=\"13\" fill=\"#64748b\">c − d</text></svg>"
           },
           "options": [
             "\\(a+b+c+d\\)",
@@ -4762,10 +4866,7 @@
               "text": "perimeter of the shape shown",
               "note": "Perimeter is the sum of every outside edge; infer the missing step lengths from total width a and height c."
             }
-          ],
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 390 285\" width=\"50%\" height=\"auto\" role=\"img\"><rect x=\"0\" y=\"0\" width=\"390\" height=\"285\" fill=\"#fff\"/><path d=\"M 80,55 300,55 300,130 205,130 205,220 80,220 Z\" fill=\"#dbeafe\" fill-opacity=\".65\" stroke=\"none\"/><line x1=\"80\" y1=\"55\" x2=\"300\" y2=\"55\" stroke=\"#f97316\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"300\" y1=\"55\" x2=\"300\" y2=\"130\" stroke=\"#f97316\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"205\" y1=\"130\" x2=\"300\" y2=\"130\" stroke=\"#f97316\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"205\" y1=\"130\" x2=\"205\" y2=\"220\" stroke=\"#f97316\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"80\" y1=\"220\" x2=\"205\" y2=\"220\" stroke=\"#f97316\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"80\" y1=\"55\" x2=\"80\" y2=\"220\" stroke=\"#f97316\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"188\" y=\"42\" font-size=\"18\" text-anchor=\"middle\" fill=\"#1e293b\">a</text><text x=\"63\" y=\"142\" font-size=\"18\" text-anchor=\"middle\" fill=\"#1e293b\">c</text><text x=\"142\" y=\"245\" font-size=\"18\" text-anchor=\"middle\" fill=\"#1e293b\">b</text><text x=\"188\" y=\"183\" font-size=\"18\" text-anchor=\"middle\" fill=\"#1e293b\">d</text><text x=\"322\" y=\"95\" font-size=\"13\" fill=\"#64748b\">a − b</text><text x=\"222\" y=\"112\" font-size=\"13\" fill=\"#64748b\">c − d</text></svg>"
-          }
+          ]
         }
       ]
     },
@@ -6314,6 +6415,51 @@
             "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
             "sourceQuestion": "Calculator Q8"
           }
+        },
+        {
+          "id": "chs2023ass2-q14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express 8 min of 3 h as a simplified fraction.",
+          "options": [
+            "\\(\\frac{1}{30}\\)",
+            "\\(\\frac{2}{45}\\)",
+            "\\(\\frac{8}{60}\\)",
+            "\\(\\frac{3}{8}\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert the 3 hours to minutes first so both amounts use the same unit.",
+          "steps": [
+            {
+              "explain": "The whole amount is \\(3\\) hours. Convert hours to minutes using \\(1\\text{ h}=60\\text{ min}\\).",
+              "work": "\\(3\\times60=180\\text{ min}\\)"
+            },
+            {
+              "explain": "Write the 8 minutes as a fraction of the total 180 minutes.",
+              "work": "\\(\\frac{8}{180}\\)"
+            },
+            {
+              "explain": "Divide the numerator and denominator by 4 to simplify.",
+              "work": "\\(\\frac{8}{180}=\\frac{2}{45}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Chatswood High School Year 7 Assessment Task 2 (2023)",
+            "school": "Chatswood High School",
+            "year": 2023,
+            "page": 5,
+            "question": 14,
+            "section": "Fractions and Decimals",
+            "origin": "teacher"
+          },
+          "keyPoints": [
+            {
+              "text": "8 min of 3 h",
+              "note": "Convert the hours to minutes before forming the fraction."
+            }
+          ]
         }
       ]
     }
