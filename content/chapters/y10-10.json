@@ -38,6 +38,48 @@
             "grade": "10"
           },
           "xp": 1
+        },
+        {
+          "id": "sth2013-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A car is travelling at a speed of \\(v\\) kilometres per hour. This speed can be converted to metres per second by using the expression",
+          "options": [
+            "\\(\\dfrac{1000\\times v}{60\\times60}\\)",
+            "\\(\\dfrac{60\\times60\\times v}{1000}\\)",
+            "\\(1000\\times60\\times60\\times v\\)",
+            "\\(\\dfrac{v}{1000\\times60\\times60}\\)"
+          ],
+          "answer": 0,
+          "hint": "Convert kilometres to metres (the number gets bigger) and hours to seconds (dividing by more seconds makes it smaller).",
+          "steps": [
+            {
+              "explain": "Distance: \\(1\\text{ km}=1000\\text{ m}\\), so \\(v\\) km is \\(1000v\\) metres.",
+              "work": "\\(v\\text{ km}=1000v\\text{ m}\\)"
+            },
+            {
+              "explain": "Time: \\(1\\text{ hour}=60\\times60=3600\\) seconds.",
+              "work": "\\(1\\text{ h}=3600\\text{ s}\\)"
+            },
+            {
+              "explain": "Speed is distance ÷ time, so divide the metres by the seconds.",
+              "work": "\\(v\\text{ km/h}=\\dfrac{1000\\times v}{60\\times60}\\text{ m/s}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          },
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "A car is travelling at a speed of \\(v\\) kilometres per hour. This speed can be converted to metres per second by using the expression",
+              "note": "Substitute each given value into the formula using brackets, then evaluate in the correct order and include the units."
+            }
+          ],
+          "timeLimit": 60
         }
       ]
     },
@@ -123,7 +165,14 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 3
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "Bottles are packed into a box with a piece of packing between each pai",
+              "note": "Count the gaps in each direction separately."
+            }
+          ]
         },
         {
           "id": "jr2013-qFc",

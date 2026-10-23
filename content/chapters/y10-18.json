@@ -3595,6 +3595,48 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 270\" width=\"50%\" style=\"display:block;width:50%;height:auto;margin:0 auto\" role=\"img\" aria-label=\"Grouped data frequency table\"><rect width=\"440\" height=\"270\" rx=\"14\" fill=\"#fff\"/><rect x=\"52\" y=\"40\" width=\"336\" height=\"54\" fill=\"#e8eef8\"/><g stroke=\"#34445e\" stroke-width=\"2\" fill=\"none\"><path d=\"M52 40h336v190H52zM220 40v190M52 94h336M52 128h336M52 162h336M52 196h336\"/></g><g font-family=\"Arial,sans-serif\" font-size=\"21\" fill=\"#26344a\" text-anchor=\"middle\"><text x=\"136\" y=\"74\" font-weight=\"700\">Class interval</text><text x=\"304\" y=\"74\" font-weight=\"700\">Frequency</text><text x=\"136\" y=\"119\">1–5</text><text x=\"304\" y=\"119\">3</text><text x=\"136\" y=\"153\">6–10</text><text x=\"304\" y=\"153\">6</text><text x=\"136\" y=\"187\">11–15</text><text x=\"304\" y=\"187\">8</text><text x=\"136\" y=\"221\">16–20</text><text x=\"304\" y=\"221\">9</text></g></svg>"
           }
+        },
+        {
+          "id": "sth2013-q14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For the two sets of scores, Set A: 4, 6, 7, 17, 18, 20 and Set B: 2, 8, 9, 15, 16, 22, consider these statements: I. Both sets have the same mean. II. Both sets have the same standard deviation. Which is correct?",
+          "options": [
+            "I only",
+            "II only",
+            "Both I and II",
+            "Neither I nor II"
+          ],
+          "answer": 2,
+          "hint": "Find both means, then compare how far each score sits from its mean.",
+          "steps": [
+            {
+              "explain": "Find each mean.",
+              "work": "\\(\\bar x_A=\\dfrac{72}{6}=12,\\qquad \\bar x_B=\\dfrac{72}{6}=12\\)"
+            },
+            {
+              "explain": "Deviations from 12 — Set A: \\(-8,-6,-5,+5,+6,+8\\). Set B: \\(-10,-4,-3,+3,+4,+10\\).",
+              "work": "\\(\\textstyle\\sum(x-\\bar x)^2:\\ \\ A=64+36+25+25+36+64=250,\\ \\ B=100+16+9+9+16+100=250\\)"
+            },
+            {
+              "explain": "Equal sums of squared deviations over the same number of scores give equal standard deviations. Both statements are true.",
+              "work": "\\(\\sigma_A=\\sigma_B=\\sqrt{\\tfrac{250}{6}}\\approx6.45\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          },
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "same standard deviation",
+              "note": "Compare the spread using deviations from the common mean."
+            }
+          ]
         }
       ]
     },
@@ -4220,41 +4262,6 @@
             "origin": "teacher",
             "examPaper": "nbsc2021-y10-t4"
           }
-        },
-        {
-          "id": "sth2013-q14",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "For the two sets of scores, Set A: 4, 6, 7, 17, 18, 20 and Set B: 2, 8, 9, 15, 16, 22, consider these statements: I. Both sets have the same mean. II. Both sets have the same standard deviation. Which is correct?",
-          "options": [
-            "I only",
-            "II only",
-            "Both I and II",
-            "Neither I nor II"
-          ],
-          "answer": 2,
-          "hint": "Find both means, then compare how far each score sits from its mean.",
-          "steps": [
-            {
-              "explain": "Find each mean.",
-              "work": "\\(\\bar x_A=\\dfrac{72}{6}=12,\\qquad \\bar x_B=\\dfrac{72}{6}=12\\)"
-            },
-            {
-              "explain": "Deviations from 12 — Set A: \\(-8,-6,-5,+5,+6,+8\\). Set B: \\(-10,-4,-3,+3,+4,+10\\).",
-              "work": "\\(\\textstyle\\sum(x-\\bar x)^2:\\ \\ A=64+36+25+25+36+64=250,\\ \\ B=100+16+9+9+16+100=250\\)"
-            },
-            {
-              "explain": "Equal sums of squared deviations over the same number of scores give equal standard deviations. Both statements are true.",
-              "work": "\\(\\sigma_A=\\sigma_B=\\sqrt{\\tfrac{250}{6}}\\approx6.45\\)"
-            }
-          ],
-          "meta": {
-            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
-            "school": "Sydney Technical High School",
-            "examType": "Yearly Examination",
-            "grade": "10"
-          },
-          "xp": 2
         }
       ]
     },

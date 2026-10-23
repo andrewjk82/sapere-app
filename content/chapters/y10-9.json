@@ -3739,7 +3739,14 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 2
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "scientific notation",
+              "note": "The first factor must be at least 1 and less than 10."
+            }
+          ]
         }
       ]
     },
@@ -3847,7 +3854,14 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 1
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "between 0 and 1",
+              "note": "Compare how positive, zero, and negative powers behave on this interval."
+            }
+          ]
         },
         {
           "id": "y10-53pp-q6b",
@@ -4137,7 +4151,14 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 1
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "3^x",
+              "note": "Rewrite both sides using the same base."
+            }
+          ]
         },
         {
           "id": "abb-y10-2025-t4-c-q6a",

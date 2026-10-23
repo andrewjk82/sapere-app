@@ -38,44 +38,6 @@ export const Y8_CH14E_QUESTIONS = [
     "requiresManualGrading": true
   },
   {
-    "id": "y8-14e-q1b",
-    "topicId": "y8-14e",
-    "c": "14E",
-    "t": "Review",
-    "type": "teacher_review",
-    "difficulty": "easy",
-    "timeLimit": 180,
-    "question": "Use your compasses, ruler and protractor to draw a sector of a circle with a radius of \\(5\\text{ cm}\\) and containing an angle of \\(75^\\circ\\).",
-    "answer": "A sector with a radius of \\(5\\text{ cm}\\) and an angle of \\(75^\\circ\\).",
-    "hint": "The radius is already given as \\(5\\text{ cm}\\). Use a protractor to measure \\(75^\\circ\\).",
-    "solution": "A sector with a radius of \\(5\\text{ cm}\\) and an angle of \\(75^\\circ\\).",
-    "solutionSteps": [
-      {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(r = 5\\text{ cm}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(\\theta = 75^\\circ\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Radius} = 5\\text{ cm}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: A sector with a radius of \\(5\\text{ cm}\\) and an angle of \\(75^\\circ\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(A sector with a radius of \\(5\\text{ cm}\\) and an angle of \\(75^\\circ\\).\\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "isNew": true,
-    "requiresManualGrading": true
-  },
-  {
     "id": "y8-14e-q1c",
     "topicId": "y8-14e",
     "c": "14E",

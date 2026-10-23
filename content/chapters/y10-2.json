@@ -14912,7 +14912,7 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 2,
+          "xp": 1,
           "keyPoints": [
             {
               "text": "Expand and simplify",
@@ -14922,7 +14922,8 @@
               "text": "\\((3-2\\sqrt3)^2\\)",
               "note": "Expand using \\(A^2\\pm2AB+B^2\\). The middle term is twice the product of the two terms, with the sign from the binomial."
             }
-          ]
+          ],
+          "timeLimit": 60
         },
         {
           "id": "y10-53pp-q12b",
@@ -17860,13 +17861,14 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 2,
+          "xp": 1,
           "keyPoints": [
             {
               "text": "\\(\\dfrac{\\sqrt2-\\sqrt3}{\\sqrt2}=a+b\\sqrt6\\)",
               "note": "Multiply the numerator and denominator by the denominator’s conjugate so the denominator becomes a difference of squares."
             }
-          ]
+          ],
+          "timeLimit": 60
         },
         {
           "id": "cgs-y10-2024-s1-q8",

@@ -14922,7 +14922,7 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 2,
+          "xp": 1,
           "keyPoints": [
             {
               "text": "88",
@@ -14940,7 +14940,8 @@
               "text": "How much did Chris save",
               "note": "Keep the changes in order: apply the markup first, then discount the new price."
             }
-          ]
+          ],
+          "timeLimit": 60
         }
       ]
     },

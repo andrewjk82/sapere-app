@@ -3303,7 +3303,14 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 2
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "correct to 2 decimal places",
+              "note": "Round both solutions only after evaluating the exact roots."
+            }
+          ]
         }
       ]
     },
@@ -3580,7 +3587,14 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 2
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "simplest exact form",
+              "note": "Simplify the discriminant radical before stating the roots."
+            }
+          ]
         }
       ]
     },

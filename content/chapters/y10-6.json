@@ -2154,7 +2154,14 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 2
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "radius 7 mm",
+              "note": "Convert the radius to centimetres before comparing volumes."
+            }
+          ]
         },
         {
           "id": "abb-y10-2025-t4-d-q5",
@@ -2289,7 +2296,14 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 2
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "similar regular octagon",
+              "note": "Use the square of the corresponding side ratio to compare areas."
+            }
+          ]
         },
         {
           "id": "sth2013-q19a",
@@ -2320,7 +2334,14 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 2
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "similar cylinders",
+              "note": "Use a cubic scale factor for volume."
+            }
+          ]
         }
       ]
     },
@@ -4019,7 +4040,14 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 2
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "volume of the frustum",
+              "note": "Subtract the small pyramid’s volume from the large pyramid’s volume."
+            }
+          ]
         }
       ]
     }

@@ -2778,7 +2778,14 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 1
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Use the quotient rule and retain the logarithm’s domain."
+            }
+          ]
         },
         {
           "id": "sth2013-q18f",
@@ -2815,7 +2822,14 @@
                   "work": "\\(0.43+0.68=1.11\\)"
                 }
               ],
-              "xp": 1
+              "xp": 1,
+              "timeLimit": 60,
+              "keyPoints": [
+                {
+                  "text": "Evaluate",
+                  "note": "Write 6 as 2×3 and apply the product rule."
+                }
+              ]
             },
             {
               "id": "sth2013-q18f-ii",
@@ -2840,7 +2854,23 @@
                   "work": "\\(0.43+\\tfrac12(0.68)=0.43+0.34=0.77\\)"
                 }
               ],
-              "xp": 2
+              "xp": 1,
+              "timeLimit": 60,
+              "keyPoints": [
+                {
+                  "text": "Evaluate",
+                  "note": "Rewrite the square root as a power of one half."
+                }
+              ]
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Use the logarithm product rule, and convert the square root to a power of one half.",
+          "keyPoints": [
+            {
+              "text": "Given \\(\\log_b2=0.43\\)",
+              "note": "Use both supplied logarithms directly in the product-rule expressions."
             }
           ]
         },
@@ -2873,7 +2903,14 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 1
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "Evaluate",
+              "note": "Express the argument as a power of the base."
+            }
+          ]
         },
         {
           "id": "sth2013-q19f",
@@ -2904,7 +2941,14 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 1
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "Simplify fully",
+              "note": "Combine the subtraction before evaluating the logarithm."
+            }
+          ]
         },
         {
           "id": "sth2013-q20e",
@@ -2943,7 +2987,14 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 2
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "Solve for",
+              "note": "Combine the logarithms using the quotient rule, then convert to exponential form."
+            }
+          ]
         },
         {
           "id": "abb-y10-2025-t4-a-q14",
@@ -4050,33 +4101,37 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 2
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "correct to 2 decimal places",
+              "note": "Use logarithms to solve when the exponent is unknown."
+            }
+          ]
         },
         {
           "id": "sth2013-q20f",
-          "type": "mc",
+          "type": "review",
           "difficulty": "hard",
-          "stem": "Let \\(x=\\log_ba\\) and \\(y=\\log_ab\\). Which statement is true?",
-          "options": [
-            "\\(x=y\\) for all valid \\(a\\) and \\(b\\)",
-            "\\(xy=1\\), so \\(\\log_ba\\cdot\\log_ab=1\\)",
-            "\\(x+y=1\\)",
-            "\\(xy=ab\\)"
-          ],
-          "answer": 1,
-          "hint": "Write both statements in index form: \\(b^x=a\\) and \\(a^y=b\\).",
+          "stem": "Let \\(x=\\log_ba\\) and \\(y=\\log_ab\\), and hence prove \\(\\log_ba\\cdot\\log_ab=1\\).",
+          "hint": "Rewrite each logarithmic definition in exponential form, then substitute one equation into the other.",
           "steps": [
             {
-              "explain": "Convert each log statement to index form.",
-              "work": "\\(b^x=a,\\qquad a^y=b\\)"
+              "explain": "Translate each logarithm into an exponential equation.",
+              "work": "\\(b^x=a,\\quad a^y=b\\)"
             },
             {
-              "explain": "Substitute \\(a=b^x\\) into the second statement.",
-              "work": "\\((b^x)^y=b\\ \\Rightarrow\\ b^{xy}=b^1\\)"
+              "explain": "Substitute \\(a=b^x\\) into \\(a^y=b\\).",
+              "work": "\\((b^x)^y=b\\)"
             },
             {
-              "explain": "Equate the indices.",
-              "work": "\\(xy=1\\ \\Rightarrow\\ \\log_ba\\cdot\\log_ab=1\\)"
+              "explain": "Use the power-of-a-power law and compare powers with the same base.",
+              "work": "\\(b^{xy}=b^1\\Rightarrow xy=1\\)"
+            },
+            {
+              "explain": "Replace x and y with the original logarithms.",
+              "work": "\\(\\boxed{\\log_ba\\cdot\\log_ab=1}\\)"
             }
           ],
           "meta": {
@@ -4085,7 +4140,15 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 3
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "prove",
+              "note": "Use index laws after expressing the logarithms as exponents."
+            }
+          ],
+          "answer": "See the worked solution."
         }
       ]
     },
@@ -4871,7 +4934,14 @@
                   }
                 }
               ],
-              "xp": 2
+              "xp": 1,
+              "timeLimit": 60,
+              "keyPoints": [
+                {
+                  "text": "coordinates of C",
+                  "note": "C lies on the logarithm curve and shares D’s y-coordinate."
+                }
+              ]
             },
             {
               "id": "sth2013-q20c-ii",
@@ -4899,7 +4969,23 @@
                   }
                 }
               ],
-              "xp": 2
+              "xp": 1,
+              "timeLimit": 60,
+              "keyPoints": [
+                {
+                  "text": "area of rectangle ABCD",
+                  "note": "Find the horizontal and vertical side lengths from the coordinates."
+                }
+              ]
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Use D=(0,-1) and the curve y=log_3 x to locate C. For the rectangle, find A from y=5^x at x=0, then use the horizontal and vertical side lengths.",
+          "keyPoints": [
+            {
+              "text": "coordinates of D are",
+              "note": "D fixes the bottom-left corner; use the logarithm curve to locate C."
             }
           ]
         }

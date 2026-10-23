@@ -8167,7 +8167,8 @@
               "text": "Solve for \\(x\\): \\(x+1=\\dfrac{x+2}{3}\\)",
               "note": "Multiply every term by the lowest common multiple of the numerical denominators, then solve the resulting linear equation."
             }
-          ]
+          ],
+          "timeLimit": 60
         }
       ]
     },
@@ -10455,47 +10456,6 @@
           ]
         },
         {
-          "id": "sth2013-q2",
-          "type": "mc",
-          "difficulty": "easy",
-          "stem": "A car is travelling at a speed of \\(v\\) kilometres per hour. This speed can be converted to metres per second by using the expression",
-          "options": [
-            "\\(\\dfrac{1000\\times v}{60\\times60}\\)",
-            "\\(\\dfrac{60\\times60\\times v}{1000}\\)",
-            "\\(1000\\times60\\times60\\times v\\)",
-            "\\(\\dfrac{v}{1000\\times60\\times60}\\)"
-          ],
-          "answer": 0,
-          "hint": "Convert kilometres to metres (the number gets bigger) and hours to seconds (dividing by more seconds makes it smaller).",
-          "steps": [
-            {
-              "explain": "Distance: \\(1\\text{ km}=1000\\text{ m}\\), so \\(v\\) km is \\(1000v\\) metres.",
-              "work": "\\(v\\text{ km}=1000v\\text{ m}\\)"
-            },
-            {
-              "explain": "Time: \\(1\\text{ hour}=60\\times60=3600\\) seconds.",
-              "work": "\\(1\\text{ h}=3600\\text{ s}\\)"
-            },
-            {
-              "explain": "Speed is distance ÷ time, so divide the metres by the seconds.",
-              "work": "\\(v\\text{ km/h}=\\dfrac{1000\\times v}{60\\times60}\\text{ m/s}\\)"
-            }
-          ],
-          "meta": {
-            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
-            "school": "Sydney Technical High School",
-            "examType": "Yearly Examination",
-            "grade": "10"
-          },
-          "xp": 1,
-          "keyPoints": [
-            {
-              "text": "A car is travelling at a speed of \\(v\\) kilometres per hour. This speed can be converted to metres per second by using the expression",
-              "note": "Substitute each given value into the formula using brackets, then evaluate in the correct order and include the units."
-            }
-          ]
-        },
-        {
           "id": "sth2013-q13",
           "type": "mc",
           "difficulty": "easy",
@@ -10530,7 +10490,8 @@
               "text": "\\(y=2\\sqrt{x}\\)",
               "note": "Isolate the square-root expression before squaring both sides, then solve and use the stated positivity conditions."
             }
-          ]
+          ],
+          "timeLimit": 60
         },
         {
           "id": "abb-y10-2025-t4-d-q4",
@@ -12881,7 +12842,8 @@
               "text": "Factorise fully: \\(2x^2-72\\)",
               "note": "Factor out any common factor first, then use A² − B² = (A − B)(A + B); confirm both terms are squares."
             }
-          ]
+          ],
+          "timeLimit": 60
         },
         {
           "id": "cgs-y10-2024-s1-q10a",
@@ -15274,13 +15236,14 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 2,
+          "xp": 1,
           "keyPoints": [
             {
               "text": "Factorise fully: \\(15x^2-x-2\\)",
               "note": "Factor out any common factor first, then use A² − B² = (A − B)(A + B); confirm both terms are squares."
             }
-          ]
+          ],
+          "timeLimit": 60
         },
         {
           "id": "sth2013-q16e-ii",
@@ -15311,13 +15274,14 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 2,
+          "xp": 1,
           "keyPoints": [
             {
               "text": "Factorise fully: \\(x^3-3x^2+x-3\\)",
               "note": "For ax² + bx + c, find two numbers with product ac and sum b, split the middle term, then factor by grouping."
             }
-          ]
+          ],
+          "timeLimit": 60
         },
         {
           "id": "cgs-y10-2024-s1-q10b",
@@ -15653,13 +15617,14 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 2,
+          "xp": 1,
           "keyPoints": [
             {
               "text": "Write as a single fraction: \\(\\dfrac{m+n}{2}-\\dfrac{m-n}{3}\\)",
               "note": "Find the lowest common denominator, rewrite each fraction with it, then combine the numerators."
             }
-          ]
+          ],
+          "timeLimit": 60
         },
         {
           "id": "sth2013-q16f",
@@ -15694,13 +15659,14 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 2,
+          "xp": 1,
           "keyPoints": [
             {
               "text": "Simplify \\(\\dfrac{x^2-81}{x^2-10x+9}\\)",
               "note": "Factor the numerator and denominator completely before cancelling common factors; keep the original denominator restrictions."
             }
-          ]
+          ],
+          "timeLimit": 60
         },
         {
           "id": "cgs-y10-2024-s1-q2",

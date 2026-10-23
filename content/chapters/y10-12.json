@@ -1653,7 +1653,14 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 1
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "side opposite \\(\\theta\\) is 5",
+              "note": "Use Pythagoras to find the adjacent side before calculating tangent."
+            }
+          ]
         },
         {
           "id": "cgs-y10-2024-s2-q18a",
@@ -6652,7 +6659,14 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 3
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "In the rectangular prism shown, \\(AB=4\\text{ m}\\), \\(BF=2\\text{ m}\\) a",
+              "note": "Find the base diagonal first, then use the vertical right triangle at H."
+            }
+          ]
         },
         {
           "id": "cgs-y10-2024-s2-q19a",
@@ -15982,7 +15996,14 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 2
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "angle of \\(60^\\circ\\) between them",
+              "note": "Use base times perpendicular height; the height comes from sine of the included angle."
+            }
+          ]
         },
         {
           "id": "cgs-y10-2024-s2-q17b",
@@ -17661,9 +17682,6 @@
           "type": "multipart",
           "difficulty": "medium",
           "stem": "Boat A sails 9 km from port P on a bearing of 035°. Boat B sails 7 km from port P on a bearing of 160°.",
-          "figure": {
-            "svg": "fig:7756ed070e"
-          },
           "meta": {
             "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
             "school": "Sydney Technical High School",
@@ -17704,7 +17722,14 @@
                   "work": "\\(AB=\\sqrt{202.27}\\approx14.2\\text{ km}\\)"
                 }
               ],
-              "xp": 2
+              "xp": 1,
+              "timeLimit": 60,
+              "keyPoints": [
+                {
+                  "text": "distance",
+                  "note": "Find the included angle from the bearings, then use the cosine rule."
+                }
+              ]
             },
             {
               "id": "sth2013-q20a-ii",
@@ -17732,7 +17757,14 @@
                   "work": "\\(\\sin\\angle PAB=\\dfrac{7\\sin125^\\circ}{14.22}\\approx0.403\\ \\Rightarrow\\ \\angle PAB\\approx24^\\circ\\)"
                 }
               ],
-              "xp": 2
+              "xp": 1,
+              "timeLimit": 60,
+              "keyPoints": [
+                {
+                  "text": "angle",
+                  "note": "Use the sine rule with the side opposite the angle you are finding."
+                }
+              ]
             },
             {
               "id": "sth2013-q20a-iii",
@@ -17760,9 +17792,25 @@
                   }
                 }
               ],
-              "xp": 3
+              "xp": 1,
+              "timeLimit": 60,
+              "keyPoints": [
+                {
+                  "text": "bearing of B from A",
+                  "note": "Find the back bearing from A to P, then turn toward B."
+                }
+              ]
             }
-          ]
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Boat A sails 9 km",
+              "note": "Bearings are measured clockwise from north; use the angle between the two paths."
+            }
+          ],
+          "hint": "Both bearings start at north at P. Find the included angle between the two routes, then use the sine rule and back bearing."
         }
       ]
     }

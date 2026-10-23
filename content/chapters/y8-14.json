@@ -1077,36 +1077,6 @@
           "xp": 1
         },
         {
-          "id": "y8-14e-q1b",
-          "type": "review",
-          "difficulty": "easy",
-          "stem": "Use your compasses, ruler and protractor to draw a sector of a circle with a radius of \\(5\\text{ cm}\\) and containing an angle of \\(75^\\circ\\).",
-          "answer": "A sector with a radius of \\(5\\text{ cm}\\) and an angle of \\(75^\\circ\\).",
-          "hint": "The radius is already given as \\(5\\text{ cm}\\). Use a protractor to measure \\(75^\\circ\\).",
-          "solution": "A sector with a radius of \\(5\\text{ cm}\\) and an angle of \\(75^\\circ\\).",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-              "work": "\\(r = 5\\text{ cm}\\)"
-            },
-            {
-              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-              "work": "\\(\\theta = 75^\\circ\\)"
-            },
-            {
-              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-              "work": "\\(\\text{Radius} = 5\\text{ cm}\\)"
-            },
-            {
-              "explain": "Final answer: A sector with a radius of \\(5\\text{ cm}\\) and an angle of \\(75^\\circ\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-              "work": "\\(A sector with a radius of \\(5\\text{ cm}\\) and an angle of \\(75^\\circ\\).\\)"
-            }
-          ],
-          "manual": true,
-          "timeLimit": 180,
-          "xp": 1
-        },
-        {
           "id": "y8-14e-q1c",
           "type": "review",
           "difficulty": "easy",

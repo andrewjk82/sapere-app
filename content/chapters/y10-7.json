@@ -2835,7 +2835,14 @@
                   }
                 }
               ],
-              "xp": 1
+              "xp": 1,
+              "timeLimit": 60,
+              "keyPoints": [
+                {
+                  "text": "vertex",
+                  "note": "The equation is in vertex form; read the horizontal and vertical shifts."
+                }
+              ]
             },
             {
               "id": "sth2013-q19d-ii",
@@ -2859,7 +2866,14 @@
                   }
                 }
               ],
-              "xp": 1
+              "xp": 1,
+              "timeLimit": 60,
+              "keyPoints": [
+                {
+                  "text": "y-intercept",
+                  "note": "Set x=0, then substitute into the equation."
+                }
+              ]
             },
             {
               "id": "sth2013-q19d-iii",
@@ -2887,7 +2901,23 @@
                   }
                 }
               ],
-              "xp": 2
+              "xp": 1,
+              "timeLimit": 60,
+              "keyPoints": [
+                {
+                  "text": "x-intercepts",
+                  "note": "Set y=0 and solve the squared equation, keeping both roots."
+                }
+              ]
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Use vertex form for the vertex; substitute x=0 for the y-intercept and y=0 for the x-intercepts.",
+          "keyPoints": [
+            {
+              "text": "For the curve \\(y=4-(x+1)^2\\)",
+              "note": "The equation is already in vertex form."
             }
           ]
         },
@@ -3653,29 +3683,22 @@
         },
         {
           "id": "sth2013-q19b-ii",
-          "type": "mc",
+          "type": "review",
           "difficulty": "easy",
-          "stem": "Which description matches the graph of \\(y=x^2-x\\)?",
-          "options": [
-            "A concave-up parabola cutting the x-axis at \\(x=0\\) and \\(x=-1\\), and the y-axis at \\(y=0\\)",
-            "A concave-up parabola cutting the x-axis at \\(x=0\\) and \\(x=1\\), and the y-axis at \\(y=0\\)",
-            "A concave-down parabola cutting the x-axis at \\(x=0\\) and \\(x=1\\)",
-            "A concave-up parabola cutting the x-axis at \\(x=\\pm1\\), and the y-axis at \\(y=-1\\)"
-          ],
-          "answer": 1,
-          "hint": "Factorise to find the x-intercepts, and look at the sign of \\(x^2\\) for concavity.",
+          "stem": "Make a neat sketch of \\(y=x^2-x\\) on a number plane. Show where the curve cuts the x- and y-axes.",
+          "hint": "Factor to find the x-intercepts, then find the turning point to shape the upward-opening parabola.",
           "steps": [
             {
-              "explain": "The coefficient of \\(x^2\\) is positive, so the parabola is concave up.",
-              "work": "\\(a=1>0\\)"
+              "explain": "Factor the quadratic and find the x-intercepts.",
+              "work": "\\(y=x(x-1)=0\\Rightarrow x=0\\text{ or }x=1\\)"
             },
             {
-              "explain": "Factorise to find the x-intercepts.",
-              "work": "\\(x(x-1)=0\\ \\Rightarrow\\ x=0\\text{ or }x=1\\)"
+              "explain": "Set x=0 for the y-intercept. The axis of symmetry lies halfway between the roots.",
+              "work": "\\(y(0)=0;\\quad x_{\\text{axis}}=\\frac{0+1}{2}=\\frac12\\)"
             },
             {
-              "explain": "The y-intercept: substitute \\(x=0\\). The vertex lies midway between the roots.",
-              "work": "\\(y=0;\\quad\\text{vertex }\\left(\\tfrac12,-\\tfrac14\\right)\\)",
+              "explain": "Evaluate y at the axis of symmetry, then sketch the upward-opening curve through both intercepts and the vertex.",
+              "work": "\\(y(\\tfrac12)=\\tfrac14-\\tfrac12=-\\tfrac14\\)",
               "figure": {
                 "svg": "fig:f59b77eb17"
               }
@@ -3687,7 +3710,18 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 1
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "Show where the curve cuts the x- and y-axes.",
+              "note": "Calculate the intercepts before drawing."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 300\" width=\"50%\" height=\"150\" style=\"max-width:180px;display:block;margin:auto;background:#fff\"><line x1=\"40\" y1=\"30\" x2=\"40\" y2=\"270\" stroke=\"#dbe4ef\" stroke-width=\"0.5\"/><line x1=\"40\" y1=\"30\" x2=\"320\" y2=\"30\" stroke=\"#dbe4ef\" stroke-width=\"0.5\"/><text x=\"40\" y=\"166\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">-3</text><text x=\"35\" y=\"34\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">3</text><line x1=\"80\" y1=\"30\" x2=\"80\" y2=\"270\" stroke=\"#dbe4ef\" stroke-width=\"0.5\"/><line x1=\"40\" y1=\"70\" x2=\"320\" y2=\"70\" stroke=\"#dbe4ef\" stroke-width=\"0.5\"/><text x=\"80\" y=\"166\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">-2</text><text x=\"35\" y=\"74\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">2</text><line x1=\"120\" y1=\"30\" x2=\"120\" y2=\"270\" stroke=\"#dbe4ef\" stroke-width=\"0.5\"/><line x1=\"40\" y1=\"110\" x2=\"320\" y2=\"110\" stroke=\"#dbe4ef\" stroke-width=\"0.5\"/><text x=\"120\" y=\"166\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">-1</text><text x=\"35\" y=\"114\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">1</text><line x1=\"160\" y1=\"30\" x2=\"160\" y2=\"270\" stroke=\"#dbe4ef\" stroke-width=\"0.5\"/><line x1=\"40\" y1=\"150\" x2=\"320\" y2=\"150\" stroke=\"#dbe4ef\" stroke-width=\"0.5\"/><line x1=\"200\" y1=\"30\" x2=\"200\" y2=\"270\" stroke=\"#dbe4ef\" stroke-width=\"0.5\"/><line x1=\"40\" y1=\"190\" x2=\"320\" y2=\"190\" stroke=\"#dbe4ef\" stroke-width=\"0.5\"/><text x=\"200\" y=\"166\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">1</text><text x=\"35\" y=\"194\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">-1</text><line x1=\"240\" y1=\"30\" x2=\"240\" y2=\"270\" stroke=\"#dbe4ef\" stroke-width=\"0.5\"/><line x1=\"40\" y1=\"230\" x2=\"320\" y2=\"230\" stroke=\"#dbe4ef\" stroke-width=\"0.5\"/><text x=\"240\" y=\"166\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">2</text><text x=\"35\" y=\"234\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">-2</text><line x1=\"280\" y1=\"30\" x2=\"280\" y2=\"270\" stroke=\"#dbe4ef\" stroke-width=\"0.5\"/><line x1=\"40\" y1=\"270\" x2=\"320\" y2=\"270\" stroke=\"#dbe4ef\" stroke-width=\"0.5\"/><text x=\"280\" y=\"166\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">3</text><text x=\"35\" y=\"274\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">-3</text><line x1=\"40\" y1=\"150\" x2=\"320\" y2=\"150\" stroke=\"#334155\" stroke-width=\"0.9\"/><line x1=\"160\" y1=\"30\" x2=\"160\" y2=\"270\" stroke=\"#334155\" stroke-width=\"0.9\"/><text x=\"326\" y=\"154\" font-size=\"12\" fill=\"#334155\">x</text><text x=\"164\" y=\"25\" font-size=\"12\" fill=\"#334155\">y</text></svg>"
+          },
+          "answer": "See the worked solution."
         },
         {
           "id": "cgs-y10-2024-s2-q22a",

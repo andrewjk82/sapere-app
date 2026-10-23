@@ -1922,7 +1922,14 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 1
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "gradient",
+              "note": "Read the coefficient of x only after isolating y."
+            }
+          ]
         },
         {
           "id": "cgs-y10-2024-s1-q3a",
@@ -2631,7 +2638,14 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 2
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "equidistant",
+              "note": "The set of equidistant points forms a perpendicular bisector."
+            }
+          ]
         }
       ]
     },
@@ -3146,7 +3160,14 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 1
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "Solve simultaneously",
+              "note": "Make one variable the subject and substitute into the other equation."
+            }
+          ]
         },
         {
           "id": "cgs-y10-2024-s1-q3b",
@@ -5850,7 +5871,14 @@
                   "work": "\\(AC=\\sqrt{3^2+(-8)^2}=\\sqrt{9+64}=\\sqrt{73}\\)"
                 }
               ],
-              "xp": 1
+              "xp": 1,
+              "timeLimit": 60,
+              "keyPoints": [
+                {
+                  "text": "exact length",
+                  "note": "Use the coordinate differences as the perpendicular legs of a right triangle."
+                }
+              ]
             },
             {
               "id": "sth2013-q17a-ii",
@@ -5878,7 +5906,14 @@
                   "work": "\\(m_{AC}=-\\tfrac83\\)"
                 }
               ],
-              "xp": 1
+              "xp": 1,
+              "timeLimit": 60,
+              "keyPoints": [
+                {
+                  "text": "gradient",
+                  "note": "Gradient is change in y divided by change in x."
+                }
+              ]
             },
             {
               "id": "sth2013-q17a-iii",
@@ -5910,7 +5945,14 @@
                   "work": "\\(8x+3y-29=0\\)"
                 }
               ],
-              "xp": 2
+              "xp": 1,
+              "timeLimit": 60,
+              "keyPoints": [
+                {
+                  "text": "general form",
+                  "note": "Rearrange so one side is zero."
+                }
+              ]
             },
             {
               "id": "sth2013-q17a-iv",
@@ -5942,7 +5984,23 @@
                   "work": "\\(D(6,1)\\)"
                 }
               ],
-              "xp": 2
+              "xp": 1,
+              "timeLimit": 60,
+              "keyPoints": [
+                {
+                  "text": "parallelogram",
+                  "note": "Use the vertex order A-B-C-D when matching opposite side vectors."
+                }
+              ]
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Plot each ordered pair by moving along x first and then y.",
+          "keyPoints": [
+            {
+              "text": "points",
+              "note": "Use the given coordinates to calculate the distance and gradient of AC."
             }
           ]
         }

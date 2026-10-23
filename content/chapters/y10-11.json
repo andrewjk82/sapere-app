@@ -2320,25 +2320,22 @@
         },
         {
           "id": "sth2013-q19b-i",
-          "type": "mc",
+          "type": "review",
           "difficulty": "easy",
-          "stem": "Which description matches the graph of \\(x^2+y^2=4\\)?",
-          "options": [
-            "A circle with centre \\((0,0)\\) and radius 4, cutting the axes at \\((\\pm4,0)\\) and \\((0,\\pm4)\\)",
-            "A circle with centre \\((2,2)\\) and radius 2",
-            "A parabola with vertex \\((0,4)\\)",
-            "A circle with centre \\((0,0)\\) and radius 2, cutting the axes at \\((\\pm2,0)\\) and \\((0,\\pm2)\\)"
-          ],
-          "answer": 3,
-          "hint": "Compare with the circle equation \\(x^2+y^2=r^2\\).",
+          "stem": "Make a neat sketch of \\(x^2+y^2=4\\) on a number plane. Show where the curve cuts the x- and y-axes.",
+          "hint": "Compare with \\(x^2+y^2=r^2\\); the equation gives the centre and radius directly.",
           "steps": [
             {
-              "explain": "Compare with \\(x^2+y^2=r^2\\): the centre is the origin and \\(r^2=4\\).",
-              "work": "\\(r=\\sqrt4=2\\)"
+              "explain": "Read the centre and radius from the standard circle equation.",
+              "work": "\\(x^2+y^2=4=2^2\\Rightarrow\\text{centre }(0,0),\\ r=2\\)"
             },
             {
-              "explain": "Intercepts: \\(y=0\\Rightarrow x=\\pm2\\), and \\(x=0\\Rightarrow y=\\pm2\\). (Radius 4 is the mistake of forgetting the square root.)",
-              "work": "\\((\\pm2,0),\\ (0,\\pm2)\\)",
+              "explain": "Set one coordinate to zero at a time to find the intercepts.",
+              "work": "\\(y=0\\Rightarrow x=\\pm2;\\quad x=0\\Rightarrow y=\\pm2\\)"
+            },
+            {
+              "explain": "Draw a circle of radius 2 through the four intercepts; the completed sketch highlights those points.",
+              "work": "\\((-2,0),(2,0),(0,-2),(0,2)\\)",
               "figure": {
                 "svg": "fig:68280cc063"
               }
@@ -2350,7 +2347,18 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 1
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "Show where the curve cuts the x- and y-axes.",
+              "note": "Calculate the intercepts before drawing."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 300\" width=\"50%\" height=\"150\" style=\"max-width:180px;display:block;margin:auto;background:#fff\"><line x1=\"40\" y1=\"30\" x2=\"40\" y2=\"270\" stroke=\"#dbe4ef\" stroke-width=\"0.5\"/><line x1=\"40\" y1=\"30\" x2=\"320\" y2=\"30\" stroke=\"#dbe4ef\" stroke-width=\"0.5\"/><text x=\"40\" y=\"166\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">-3</text><text x=\"35\" y=\"34\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">3</text><line x1=\"80\" y1=\"30\" x2=\"80\" y2=\"270\" stroke=\"#dbe4ef\" stroke-width=\"0.5\"/><line x1=\"40\" y1=\"70\" x2=\"320\" y2=\"70\" stroke=\"#dbe4ef\" stroke-width=\"0.5\"/><text x=\"80\" y=\"166\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">-2</text><text x=\"35\" y=\"74\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">2</text><line x1=\"120\" y1=\"30\" x2=\"120\" y2=\"270\" stroke=\"#dbe4ef\" stroke-width=\"0.5\"/><line x1=\"40\" y1=\"110\" x2=\"320\" y2=\"110\" stroke=\"#dbe4ef\" stroke-width=\"0.5\"/><text x=\"120\" y=\"166\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">-1</text><text x=\"35\" y=\"114\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">1</text><line x1=\"160\" y1=\"30\" x2=\"160\" y2=\"270\" stroke=\"#dbe4ef\" stroke-width=\"0.5\"/><line x1=\"40\" y1=\"150\" x2=\"320\" y2=\"150\" stroke=\"#dbe4ef\" stroke-width=\"0.5\"/><line x1=\"200\" y1=\"30\" x2=\"200\" y2=\"270\" stroke=\"#dbe4ef\" stroke-width=\"0.5\"/><line x1=\"40\" y1=\"190\" x2=\"320\" y2=\"190\" stroke=\"#dbe4ef\" stroke-width=\"0.5\"/><text x=\"200\" y=\"166\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">1</text><text x=\"35\" y=\"194\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">-1</text><line x1=\"240\" y1=\"30\" x2=\"240\" y2=\"270\" stroke=\"#dbe4ef\" stroke-width=\"0.5\"/><line x1=\"40\" y1=\"230\" x2=\"320\" y2=\"230\" stroke=\"#dbe4ef\" stroke-width=\"0.5\"/><text x=\"240\" y=\"166\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">2</text><text x=\"35\" y=\"234\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">-2</text><line x1=\"280\" y1=\"30\" x2=\"280\" y2=\"270\" stroke=\"#dbe4ef\" stroke-width=\"0.5\"/><line x1=\"40\" y1=\"270\" x2=\"320\" y2=\"270\" stroke=\"#dbe4ef\" stroke-width=\"0.5\"/><text x=\"280\" y=\"166\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">3</text><text x=\"35\" y=\"274\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">-3</text><line x1=\"40\" y1=\"150\" x2=\"320\" y2=\"150\" stroke=\"#334155\" stroke-width=\"0.9\"/><line x1=\"160\" y1=\"30\" x2=\"160\" y2=\"270\" stroke=\"#334155\" stroke-width=\"0.9\"/><text x=\"326\" y=\"154\" font-size=\"12\" fill=\"#334155\">x</text><text x=\"164\" y=\"25\" font-size=\"12\" fill=\"#334155\">y</text></svg>"
+          },
+          "answer": "See the worked solution."
         },
         {
           "id": "cgs-y10-2024-s2-q14",
@@ -5269,7 +5277,14 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 1
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "vertical asymptote",
+              "note": "Set the denominator equal to zero."
+            }
+          ]
         },
         {
           "id": "cgs-y10-2024-s2-q15",
@@ -9021,7 +9036,14 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 2
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "shaded region",
+              "note": "Use one test point from the shaded wedge to decide each inequality."
+            }
+          ]
         }
       ]
     },

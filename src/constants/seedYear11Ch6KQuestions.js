@@ -627,38 +627,39 @@ export const Y11_CH6K_QUESTIONS = [
     "topicId": "y11a-6k",
     "c": "6K",
     "t": "Revision",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Show that \\(\\sin \\theta \\text{ cosec } \\theta = 1\\).",
-    "answer": "\\(\\sin \\theta \\times \\frac{1}{\\sin \\theta} = 1\\)",
+    "question": "Simplify the expression: \\(\\sin \\theta \\text{ cosec } \\theta\\)",
+    "options": [
+      "\\(\\cos \\theta\\)",
+      "\\(1\\)",
+      "\\(\\tan \\theta\\)",
+      "\\(\\sin^2 \\theta\\)"
+    ],
+    "answer": 1,
     "hint": "Express cosecant as the reciprocal of sine.",
-    "solution": "\\(\\sin \\theta \\times \\frac{1}{\\sin \\theta} = 1\\)",
+    "solution": "\\(1\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "explanation": "Recall the reciprocal identity for cosecant.",
         "workingOut": "\\(\\text{cosec } \\theta = \\frac{1}{\\sin \\theta}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\sin \\theta \\times \\frac{1}{\\sin \\theta} = 1\\)",
+        "explanation": "Substitute this into the expression.",
+        "workingOut": "\\(\\sin \\theta \\times \\frac{1}{\\sin \\theta}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\sin \\theta \\times \\frac{1}{\\sin \\theta} = 1\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: \\sin \\theta \\times \\frac{1}{\\sin \\theta} = 1. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(\\sin \\theta \\times \\frac{1}{\\sin \\theta} = 1\\)",
+        "explanation": "Cancel out the common term \\(\\sin \\theta\\).",
+        "workingOut": "\\(1\\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": true
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-6k-q3b",

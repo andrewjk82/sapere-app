@@ -3285,12 +3285,18 @@
         },
         {
           "id": "y8-6h-q1d",
-          "type": "review",
+          "type": "mc",
           "difficulty": "easy",
           "stem": "Evaluate the expression for \\(a=3\\), \\(b=2\\) and \\(c=5\\):\n\n\\(\\frac{a+b}{c}\\)",
-          "answer": "1",
+          "options": [
+            "\\(0\\)",
+            "\\(1\\)",
+            "\\(2\\)",
+            "\\(5\\)"
+          ],
+          "answer": 1,
           "hint": "Calculate the numerator first.",
-          "solution": "1",
+          "solution": "Substitute the values: \\(\\frac{3 + 2}{5} = \\frac{5}{5} = 1\\).",
           "steps": [
             {
               "explain": "Substitute values",
@@ -3301,7 +3307,6 @@
               "work": "\\frac{5}{5} = 1"
             }
           ],
-          "manual": true,
           "xp": 1
         },
         {

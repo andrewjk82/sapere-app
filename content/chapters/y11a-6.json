@@ -27329,16 +27329,16 @@
         },
         {
           "id": "y11a-6k-q3a",
-          "type": "review",
+          "type": "mc",
           "difficulty": "medium",
-          "stem": "Simplify the expression: \\\\(\\\\sin \\\\theta \\\\text{ cosec } \\\\theta\\\\)",
-          "answer": "\\(1\\)",
+          "stem": "Simplify the expression: \\(\\sin \\theta \\text{ cosec } \\theta\\)",
           "options": [
             "\\(\\cos \\theta\\)",
             "\\(1\\)",
             "\\(\\tan \\theta\\)",
             "\\(\\sin^2 \\theta\\)"
           ],
+          "answer": 1,
           "hint": "Express cosecant as the reciprocal of sine.",
           "solution": "\\(1\\)",
           "steps": [
@@ -27355,7 +27355,6 @@
               "work": "\\(1\\)"
             }
           ],
-          "manual": true,
           "timeLimit": 90,
           "xp": 2
         },

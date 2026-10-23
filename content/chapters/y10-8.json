@@ -1139,7 +1139,14 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 3
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "rhombus",
+              "note": "Its diagonals bisect opposite angles; adjacent interior angles sum to 180°."
+            }
+          ]
         },
         {
           "id": "y10-53pp-q17a",
@@ -1557,7 +1564,14 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 3
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "Triangles LMN and PQR",
+              "note": "Match vertices using the angle marks before comparing sides."
+            }
+          ]
         }
       ]
     },
@@ -1662,7 +1676,14 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 2
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "width of the river",
+              "note": "Use the parallel segments to identify the corresponding sides."
+            }
+          ]
         },
         {
           "id": "sth2013-q17e",
@@ -1681,17 +1702,10 @@
           "parts": [
             {
               "id": "sth2013-q17e-i",
-              "type": "mc",
+              "type": "review",
               "difficulty": "medium",
-              "stem": "Which test proves that \\(\\triangle XPQ\\sim\\triangle XWY\\)?",
-              "options": [
-                "SAS: \\(XP:XW=XQ:XY\\) with the included angle equal",
-                "SSS: all three pairs of sides are in the same ratio",
-                "Equiangular (AA): \\(\\angle X\\) is common and \\(\\angle XPQ=\\angle XWY\\) (corresponding angles, \\(PQ\\parallel WY\\))",
-                "RHS: both triangles are right-angled"
-              ],
-              "answer": 2,
-              "hint": "Look for two pairs of equal angles. One angle is shared; the parallel lines give another.",
+              "stem": "Prove that \\(\\triangle XPQ\\) is similar to \\(\\triangle XWY\\).",
+              "hint": "Identify the common angle at X and a second equal angle from the parallel lines \\(PQ\\parallel WY\\).",
               "steps": [
                 {
                   "explain": "\\(\\angle X\\) belongs to both triangles, so it is common.",
@@ -1712,7 +1726,15 @@
                   "work": "\\(\\triangle XPQ\\sim\\triangle XWY\\ (\\text{equiangular})\\)"
                 }
               ],
-              "xp": 2
+              "xp": 1,
+              "timeLimit": 60,
+              "keyPoints": [
+                {
+                  "text": "Prove",
+                  "note": "Use the common angle and one corresponding-angle pair from the parallel sides."
+                }
+              ],
+              "answer": "The triangles are similar by AA."
             },
             {
               "id": "sth2013-q17e-ii",
@@ -1740,7 +1762,14 @@
                   "work": "\\(5(8+x)=64\\ \\Rightarrow\\ 5x=24\\ \\Rightarrow\\ x=\\tfrac{24}5=4.8\\)"
                 }
               ],
-              "xp": 2
+              "xp": 1,
+              "timeLimit": 60,
+              "keyPoints": [
+                {
+                  "text": "value of",
+                  "note": "Use the whole lengths XW=XP+PW and XY=XQ+QY in the scale ratio."
+                }
+              ]
             },
             {
               "id": "sth2013-q17e-iii",
@@ -1768,7 +1797,23 @@
                   "work": "\\(5y=48\\ \\Rightarrow\\ y=\\tfrac{48}5=9.6\\)"
                 }
               ],
-              "xp": 2
+              "xp": 1,
+              "timeLimit": 60,
+              "keyPoints": [
+                {
+                  "text": "value of",
+                  "note": "Use the same small-to-large scale factor for the parallel sides PQ and WY."
+                }
+              ]
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Use the marked parallel sides to identify equal corresponding angles, then form side ratios.",
+          "keyPoints": [
+            {
+              "text": "PQ",
+              "note": "Use the parallel sides to show the smaller and larger triangles are similar."
             }
           ]
         },
@@ -1814,7 +1859,14 @@
             "examType": "Yearly Examination",
             "grade": "10"
           },
-          "xp": 2
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "Find",
+              "note": "The parallel lines create a pair of similar triangles; match corresponding sides before forming a proportion."
+            }
+          ]
         }
       ]
     },
