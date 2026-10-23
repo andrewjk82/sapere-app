@@ -4485,7 +4485,7 @@
           "id": "fsh-y8-2020-q8c",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "(c) Find the equation of a straight line which is parallel to \\(y=-3x+7\\) and passes through the point (−3, 4).",
+          "stem": "Find the equation of a straight line which is parallel to \\(y=-3x+7\\) and passes through the point (−3, 4).",
           "options": [
             "\\(y=-3x-5\\)",
             "\\(y=3x+13\\)",

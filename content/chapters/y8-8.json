@@ -847,7 +847,7 @@
           "id": "fsh-y8-2020-q9a",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "(a) A support bracket is to be placed under a shelf as shown in the diagram below. If AB = AC = 12 cm, find, correct to the nearest millimetre, the length of BC.",
+          "stem": "A support bracket is to be placed under a shelf as shown in the diagram below. If AB = AC = 12 cm, find, correct to the nearest millimetre, the length of BC.",
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 230\" width=\"100%\" height=\"210\" style=\"max-width:330px;display:block;margin:auto;background:#fff\"><path d=\"M70 55 L250 55 L70 190 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2.5\"/><path d=\"M70 55 h18 v18 h-18\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"54\" y=\"51\" font-size=\"14\" fill=\"#334155\">A</text><text x=\"254\" y=\"60\" font-size=\"14\" fill=\"#334155\">B</text><text x=\"53\" y=\"207\" font-size=\"14\" fill=\"#334155\">C</text><text x=\"140\" y=\"47\" font-size=\"14\" fill=\"#334155\">AB = 12 cm</text><text x=\"28\" y=\"128\" font-size=\"14\" fill=\"#334155\" transform=\"rotate(-90 28 128)\">AC = 12 cm</text><text x=\"143\" y=\"137\" font-size=\"14\" font-weight=\"700\" fill=\"#312e81\">BC = ?</text></svg>"
           },
@@ -900,15 +900,15 @@
           "id": "fsh-y8-2020-q9b",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "(b) The diagram below features a prism whose cross-section is a right-angled triangle.",
+          "stem": "The diagram below features a prism whose cross-section is a right-angled triangle.",
           "parts": [
             {
               "id": "fsh-y8-2020-q9bi",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "(i) Find SU in metres correct to one decimal place.",
+              "stem": "Find SU in metres correct to one decimal place.",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 410 225\" width=\"100%\" height=\"210\" style=\"max-width:410px;display:block;margin:auto;background:#fff\"><line x1=\"62\" y1=\"150\" x2=\"120\" y2=\"190\" stroke=\"#f59e0b\" stroke-width=\"3.2\"/><line x1=\"62\" y1=\"150\" x2=\"270\" y2=\"50\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"270\" y1=\"50\" x2=\"270\" y2=\"100\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"270\" y1=\"100\" x2=\"345\" y2=\"100\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"345\" y1=\"100\" x2=\"345\" y2=\"145\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"345\" y1=\"145\" x2=\"120\" y2=\"190\" stroke=\"#10b981\" stroke-width=\"3.2\"/><line x1=\"62\" y1=\"150\" x2=\"270\" y2=\"100\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"120\" y1=\"190\" x2=\"270\" y2=\"100\" stroke=\"#7c3aed\" stroke-width=\"3.2\"/><line x1=\"270\" y1=\"100\" x2=\"345\" y2=\"145\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"270\" y1=\"50\" x2=\"345\" y2=\"100\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"270\" y1=\"50\" x2=\"120\" y2=\"190\" stroke=\"#334155\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><path d=\"M331 100 h-13 v13 h13\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><text x=\"52\" y=\"164\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">T</text><text x=\"110\" y=\"204\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">U</text><text x=\"260\" y=\"114\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">S</text><text x=\"260\" y=\"43\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">P</text><text x=\"335\" y=\"93\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">Q</text><text x=\"335\" y=\"159\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">R</text><text x=\"76\" y=\"177\" font-size=\"13\" fill=\"#047857\">4.9 m</text><text x=\"223\" y=\"183\" font-size=\"13\" fill=\"#047857\">7.8 m</text><text x=\"350\" y=\"128\" font-size=\"13\" fill=\"#047857\">2.5 m</text></svg>"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 260\" width=\"100%\" height=\"250\" style=\"max-width:440px;display:block;margin:auto;background:#fff\"><polygon points=\"55,145 160,210 375,155 270,90\" fill=\"#eff6ff\"/><polygon points=\"270,30 375,95 375,155 270,90\" fill=\"#f8fafc\"/><polygon points=\"55,145 270,90 270,30\" fill=\"#f1f5f9\"/><line x1=\"55\" y1=\"145\" x2=\"270\" y2=\"30\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"55\" y1=\"145\" x2=\"270\" y2=\"90\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"270\" y1=\"90\" x2=\"270\" y2=\"30\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"160\" y1=\"210\" x2=\"375\" y2=\"95\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"160\" y1=\"210\" x2=\"375\" y2=\"155\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"375\" y1=\"155\" x2=\"375\" y2=\"95\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"55\" y1=\"145\" x2=\"160\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"270\" y1=\"90\" x2=\"375\" y2=\"155\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"270\" y1=\"30\" x2=\"375\" y2=\"95\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"270\" y1=\"90\" x2=\"160\" y2=\"210\" stroke=\"#7c3aed\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"37\" y=\"147\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">T</text><text x=\"151\" y=\"232\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">U</text><text x=\"258\" y=\"88\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">S</text><text x=\"260\" y=\"22\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">P</text><text x=\"383\" y=\"91\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">Q</text><text x=\"383\" y=\"171\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">R</text><text x=\"92\" y=\"196\" font-size=\"14\" font-weight=\"600\" fill=\"#047857\">4.9 m</text><text x=\"286\" y=\"165\" font-size=\"14\" font-weight=\"600\" fill=\"#047857\">7.8 m</text><text x=\"388\" y=\"132\" font-size=\"14\" font-weight=\"600\" fill=\"#047857\">2.5 m</text><text x=\"207\" y=\"145\" font-size=\"14\" font-weight=\"700\" fill=\"#7c3aed\">SU</text></svg>"
               },
               "options": [
                 "\\(9.2\\text{ m}\\)",
@@ -917,29 +917,29 @@
                 "\\(2.9\\text{ m}\\)"
               ],
               "answer": 0,
-              "hint": "The rectangle on the prism has perpendicular sides 4.9 m and 7.8 m; SU is its diagonal.",
+              "hint": "Use rectangle TURS: TU=4.9 m, and the opposite side TS has the same length as UR=7.8 m. SU is the rectangle diagonal.",
               "keyPoints": [
                 {
-                  "text": "SU",
-                  "note": "Use the right triangle with legs 4.9 m and 7.8 m, then round to one decimal place."
+                  "text": "Right triangle TUS inside rectangle TURS.",
+                  "note": "Its perpendicular sides are TU=4.9 m and TS=UR=7.8 m; SU is the hypotenuse."
                 }
               ],
               "steps": [
                 {
-                  "explain": "Identify the right triangle for diagonal (SU). The perpendicular sides are (4.9) m and (7.8) m.",
-                  "work": "\\(TU=4.9\\text{ m},\\quad UR=7.8\\text{ m}\\)"
+                  "explain": "Focus on the highlighted rectangle TURS. Its opposite sides are equal, so the top side TS equals the labelled side UR.",
+                  "work": "\\(TU=4.9\\text{ m},\\quad TS=UR=7.8\\text{ m}\\)"
                 },
                 {
-                  "explain": "Apply Pythagoras to the diagonal.",
-                  "work": "\\(SU^2=4.9^2+7.8^2\\)"
+                  "explain": "The diagonal SU splits rectangle TURS into right triangle TUS. The perpendicular sides are TU and TS; SU is opposite the right angle.",
+                  "work": "\\(SU^2=TU^2+TS^2\\)"
                 },
                 {
-                  "explain": "Calculate and round to one decimal place.",
-                  "work": "\\(SU=\\sqrt{24.01+60.84}=\\sqrt{84.85}\\approx9.211\\text{ m}\\)"
+                  "explain": "Substitute both lengths, then square and add.",
+                  "work": "\\(SU^2=4.9^2+7.8^2=24.01+60.84=84.85\\)"
                 },
                 {
-                  "explain": "Therefore.",
-                  "work": "\\(\\boxed{SU=9.2\\text{ m}}\\)"
+                  "explain": "Take the positive square root because a length is positive, then round to one decimal place.",
+                  "work": "\\(SU=\\sqrt{84.85}\\approx9.211\\text{ m}\\approx\\boxed{9.2\\text{ m}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -959,9 +959,9 @@
               "id": "fsh-y8-2020-q9bii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "(ii) Hence, or otherwise, find PU in metres correct to one decimal place.",
+              "stem": "Hence, or otherwise, find PU in metres correct to one decimal place.",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 410 225\" width=\"100%\" height=\"210\" style=\"max-width:410px;display:block;margin:auto;background:#fff\"><line x1=\"62\" y1=\"150\" x2=\"120\" y2=\"190\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"62\" y1=\"150\" x2=\"270\" y2=\"50\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"270\" y1=\"50\" x2=\"270\" y2=\"100\" stroke=\"#10b981\" stroke-width=\"3.2\"/><line x1=\"270\" y1=\"100\" x2=\"345\" y2=\"100\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"345\" y1=\"100\" x2=\"345\" y2=\"145\" stroke=\"#f59e0b\" stroke-width=\"3.2\"/><line x1=\"345\" y1=\"145\" x2=\"120\" y2=\"190\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"62\" y1=\"150\" x2=\"270\" y2=\"100\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"120\" y1=\"190\" x2=\"270\" y2=\"100\" stroke=\"#7c3aed\" stroke-width=\"3.2\"/><line x1=\"270\" y1=\"100\" x2=\"345\" y2=\"145\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"270\" y1=\"50\" x2=\"345\" y2=\"100\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"270\" y1=\"50\" x2=\"120\" y2=\"190\" stroke=\"#ef4444\" stroke-width=\"3.2\" stroke-dasharray=\"5 4\"/><path d=\"M331 100 h-13 v13 h13\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><text x=\"52\" y=\"164\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">T</text><text x=\"110\" y=\"204\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">U</text><text x=\"260\" y=\"114\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">S</text><text x=\"260\" y=\"43\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">P</text><text x=\"335\" y=\"93\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">Q</text><text x=\"335\" y=\"159\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">R</text><text x=\"76\" y=\"177\" font-size=\"13\" fill=\"#047857\">4.9 m</text><text x=\"223\" y=\"183\" font-size=\"13\" fill=\"#047857\">7.8 m</text><text x=\"350\" y=\"128\" font-size=\"13\" fill=\"#047857\">2.5 m</text></svg>"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 260\" width=\"100%\" height=\"250\" style=\"max-width:440px;display:block;margin:auto;background:#fff\"><polygon points=\"55,145 160,210 375,155 270,90\" fill=\"#eff6ff\"/><polygon points=\"270,30 375,95 375,155 270,90\" fill=\"#f8fafc\"/><polygon points=\"55,145 270,90 270,30\" fill=\"#f1f5f9\"/><line x1=\"55\" y1=\"145\" x2=\"270\" y2=\"30\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"55\" y1=\"145\" x2=\"270\" y2=\"90\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"270\" y1=\"90\" x2=\"270\" y2=\"30\" stroke=\"#f59e0b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"160\" y1=\"210\" x2=\"375\" y2=\"95\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"160\" y1=\"210\" x2=\"375\" y2=\"155\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"375\" y1=\"155\" x2=\"375\" y2=\"95\" stroke=\"#f59e0b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"55\" y1=\"145\" x2=\"160\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"270\" y1=\"90\" x2=\"375\" y2=\"155\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"270\" y1=\"30\" x2=\"375\" y2=\"95\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"270\" y1=\"90\" x2=\"160\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"270\" y1=\"30\" x2=\"160\" y2=\"210\" stroke=\"#dc2626\" stroke-width=\"3.5\" stroke-dasharray=\"7 5\" stroke-linecap=\"round\"/><text x=\"37\" y=\"147\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">T</text><text x=\"151\" y=\"232\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">U</text><text x=\"258\" y=\"88\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">S</text><text x=\"260\" y=\"22\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">P</text><text x=\"383\" y=\"91\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">Q</text><text x=\"383\" y=\"171\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">R</text><text x=\"92\" y=\"196\" font-size=\"14\" font-weight=\"600\" fill=\"#047857\">4.9 m</text><text x=\"286\" y=\"165\" font-size=\"14\" font-weight=\"600\" fill=\"#047857\">7.8 m</text><text x=\"388\" y=\"132\" font-size=\"14\" font-weight=\"600\" fill=\"#047857\">2.5 m</text><text x=\"166\" y=\"104\" font-size=\"14\" font-weight=\"700\" fill=\"#dc2626\">PU</text></svg>"
               },
               "options": [
                 "\\(9.5\\text{ m}\\)",
@@ -970,29 +970,29 @@
                 "\\(7.0\\text{ m}\\)"
               ],
               "answer": 0,
-              "hint": "Use the right triangle USP: the perpendicular sides are SU and SP=QR=2.5 m.",
+              "hint": "Use right triangle PSU. The perpendicular side SP equals QR=2.5 m, and SU is the diagonal found in the previous calculation.",
               "keyPoints": [
                 {
-                  "text": "find PU",
-                  "note": "The equal parallel edges of the prism give SP=QR=2.5 m."
+                  "text": "Right triangle PSU.",
+                  "note": "The perpendicular sides are SP=QR=2.5 m and SU≈9.2 m. PU is the hypotenuse."
                 }
               ],
               "steps": [
                 {
-                  "explain": "Use the right triangle (USP). Its perpendicular sides are (SU=9.2) m (from part i) and (SP=QR=2.5) m.",
-                  "work": "\\(SP=2.5\\text{ m}\\)"
+                  "explain": "Look at the highlighted right triangle PSU. The prism has equal, parallel cross-section edges, so SP equals QR. Use SU from the previous calculation.",
+                  "work": "\\(SP=QR=2.5\\text{ m},\\quad SU\\approx9.2\\text{ m}\\)"
                 },
                 {
-                  "explain": "Apply Pythagoras to the hypotenuse (PU).",
-                  "work": "\\(PU^2=SU^2+SP^2\\)"
+                  "explain": "The right angle is at S, so SP and SU are the perpendicular legs. PU is opposite the right angle and is the hypotenuse.",
+                  "work": "\\(PU^2=SP^2+SU^2\\)"
                 },
                 {
-                  "explain": "Substitute and calculate.",
-                  "work": "\\(PU=\\sqrt{9.2^2+2.5^2}=\\sqrt{84.64+6.25}=\\sqrt{90.89}\\approx9.533\\)"
+                  "explain": "Substitute the lengths and evaluate each square.",
+                  "work": "\\(PU^2=2.5^2+9.2^2=6.25+84.64=90.89\\)"
                 },
                 {
-                  "explain": "Round to one decimal place.",
-                  "work": "\\(\\boxed{PU=9.5\\text{ m}}\\)"
+                  "explain": "Take the positive square root and round to one decimal place.",
+                  "work": "\\(PU=\\sqrt{90.89}\\approx9.533\\text{ m}\\approx\\boxed{9.5\\text{ m}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -1012,8 +1012,8 @@
           "hint": "Find the first right-triangle diagonal, then use that result in the second right triangle.",
           "keyPoints": [
             {
-              "text": "right-angled triangle",
-              "note": "Use the marked perpendicular lengths; for the prism, corresponding parallel edges have equal lengths."
+              "text": "The prism has two matching right-triangle ends.",
+              "note": "Use the diagram labels: TU=4.9 m, UR=7.8 m, and QR=2.5 m. Matching prism edges give TS=UR and SP=QR."
             }
           ],
           "timeLimit": 60,
@@ -1028,7 +1028,7 @@
             "origin": "exam-import"
           },
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 410 225\" width=\"100%\" height=\"210\" style=\"max-width:410px;display:block;margin:auto;background:#fff\"><line x1=\"62\" y1=\"150\" x2=\"120\" y2=\"190\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"62\" y1=\"150\" x2=\"270\" y2=\"50\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"270\" y1=\"50\" x2=\"270\" y2=\"100\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"270\" y1=\"100\" x2=\"345\" y2=\"100\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"345\" y1=\"100\" x2=\"345\" y2=\"145\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"345\" y1=\"145\" x2=\"120\" y2=\"190\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"62\" y1=\"150\" x2=\"270\" y2=\"100\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"120\" y1=\"190\" x2=\"270\" y2=\"100\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"270\" y1=\"100\" x2=\"345\" y2=\"145\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"270\" y1=\"50\" x2=\"345\" y2=\"100\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"270\" y1=\"50\" x2=\"120\" y2=\"190\" stroke=\"#334155\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><path d=\"M331 100 h-13 v13 h13\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><text x=\"52\" y=\"164\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">T</text><text x=\"110\" y=\"204\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">U</text><text x=\"260\" y=\"114\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">S</text><text x=\"260\" y=\"43\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">P</text><text x=\"335\" y=\"93\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">Q</text><text x=\"335\" y=\"159\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">R</text><text x=\"76\" y=\"177\" font-size=\"13\" fill=\"#047857\">4.9 m</text><text x=\"223\" y=\"183\" font-size=\"13\" fill=\"#047857\">7.8 m</text><text x=\"350\" y=\"128\" font-size=\"13\" fill=\"#047857\">2.5 m</text></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 260\" width=\"100%\" height=\"250\" style=\"max-width:440px;display:block;margin:auto;background:#fff\"><polygon points=\"55,145 160,210 375,155 270,90\" fill=\"#eff6ff\"/><polygon points=\"270,30 375,95 375,155 270,90\" fill=\"#f8fafc\"/><polygon points=\"55,145 270,90 270,30\" fill=\"#f1f5f9\"/><line x1=\"55\" y1=\"145\" x2=\"270\" y2=\"30\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"55\" y1=\"145\" x2=\"270\" y2=\"90\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"270\" y1=\"90\" x2=\"270\" y2=\"30\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"160\" y1=\"210\" x2=\"375\" y2=\"95\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"160\" y1=\"210\" x2=\"375\" y2=\"155\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"375\" y1=\"155\" x2=\"375\" y2=\"95\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"55\" y1=\"145\" x2=\"160\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"270\" y1=\"90\" x2=\"375\" y2=\"155\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"270\" y1=\"30\" x2=\"375\" y2=\"95\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"270\" y1=\"90\" x2=\"160\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><text x=\"37\" y=\"147\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">T</text><text x=\"151\" y=\"232\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">U</text><text x=\"258\" y=\"88\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">S</text><text x=\"260\" y=\"22\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">P</text><text x=\"383\" y=\"91\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">Q</text><text x=\"383\" y=\"171\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">R</text><text x=\"92\" y=\"196\" font-size=\"14\" font-weight=\"600\" fill=\"#047857\">4.9 m</text><text x=\"286\" y=\"165\" font-size=\"14\" font-weight=\"600\" fill=\"#047857\">7.8 m</text><text x=\"388\" y=\"132\" font-size=\"14\" font-weight=\"600\" fill=\"#047857\">2.5 m</text></svg>"
           }
         }
       ]
