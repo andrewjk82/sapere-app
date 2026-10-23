@@ -842,6 +842,194 @@
             "\\(5:3\\)"
           ],
           "answer": 2
+        },
+        {
+          "id": "fsh-y8-2020-q9a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "(a) A support bracket is to be placed under a shelf as shown in the diagram below. If AB = AC = 12 cm, find, correct to the nearest millimetre, the length of BC.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 230\" width=\"100%\" height=\"210\" style=\"max-width:330px;display:block;margin:auto;background:#fff\"><path d=\"M70 55 L250 55 L70 190 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2.5\"/><path d=\"M70 55 h18 v18 h-18\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"54\" y=\"51\" font-size=\"14\" fill=\"#334155\">A</text><text x=\"254\" y=\"60\" font-size=\"14\" fill=\"#334155\">B</text><text x=\"53\" y=\"207\" font-size=\"14\" fill=\"#334155\">C</text><text x=\"140\" y=\"47\" font-size=\"14\" fill=\"#334155\">AB = 12 cm</text><text x=\"28\" y=\"128\" font-size=\"14\" fill=\"#334155\" transform=\"rotate(-90 28 128)\">AC = 12 cm</text><text x=\"143\" y=\"137\" font-size=\"14\" font-weight=\"700\" fill=\"#312e81\">BC = ?</text></svg>"
+          },
+          "options": [
+            "\\(170\\text{ mm}\\)",
+            "\\(16.97\\text{ mm}\\)",
+            "\\(120\\text{ mm}\\)",
+            "\\(240\\text{ mm}\\)"
+          ],
+          "answer": 0,
+          "hint": "The right angle is at A, so AB and AC are the perpendicular legs and BC is the hypotenuse.",
+          "keyPoints": [
+            {
+              "text": "AB = AC = 12 cm",
+              "note": "Use Pythagoras, then convert the result from centimetres to millimetres."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "From the right-angle square at A, (AB) and (AC) are the legs and (BC) is opposite the right angle.",
+              "work": "\\(AB=AC=12\\text{ cm}\\)"
+            },
+            {
+              "explain": "Apply Pythagoras to find the hypotenuse.",
+              "work": "\\(BC^2=12^2+12^2=288\\)"
+            },
+            {
+              "explain": "Take the positive square root.",
+              "work": "\\(BC=\\sqrt{288}=12\\sqrt2\\approx16.9706\\text{ cm}\\)"
+            },
+            {
+              "explain": "Convert centimetres to millimetres and round to the nearest millimetre.",
+              "work": "\\(16.9706\\times10=169.706\\text{ mm}\\approx\\boxed{170\\text{ mm}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2020 Yr 8 yearly",
+            "school": "Fort Street High School",
+            "year": 2020,
+            "page": 14,
+            "question": "9(a)",
+            "marks": 2,
+            "part": "",
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "fsh-y8-2020-q9b",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "(b) The diagram below features a prism whose cross-section is a right-angled triangle.",
+          "parts": [
+            {
+              "id": "fsh-y8-2020-q9bi",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(i) Find SU in metres correct to one decimal place.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 410 225\" width=\"100%\" height=\"210\" style=\"max-width:410px;display:block;margin:auto;background:#fff\"><line x1=\"62\" y1=\"150\" x2=\"120\" y2=\"190\" stroke=\"#f59e0b\" stroke-width=\"3.2\"/><line x1=\"62\" y1=\"150\" x2=\"270\" y2=\"50\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"270\" y1=\"50\" x2=\"270\" y2=\"100\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"270\" y1=\"100\" x2=\"345\" y2=\"100\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"345\" y1=\"100\" x2=\"345\" y2=\"145\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"345\" y1=\"145\" x2=\"120\" y2=\"190\" stroke=\"#10b981\" stroke-width=\"3.2\"/><line x1=\"62\" y1=\"150\" x2=\"270\" y2=\"100\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"120\" y1=\"190\" x2=\"270\" y2=\"100\" stroke=\"#7c3aed\" stroke-width=\"3.2\"/><line x1=\"270\" y1=\"100\" x2=\"345\" y2=\"145\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"270\" y1=\"50\" x2=\"345\" y2=\"100\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"270\" y1=\"50\" x2=\"120\" y2=\"190\" stroke=\"#334155\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><path d=\"M331 100 h-13 v13 h13\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><text x=\"52\" y=\"164\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">T</text><text x=\"110\" y=\"204\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">U</text><text x=\"260\" y=\"114\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">S</text><text x=\"260\" y=\"43\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">P</text><text x=\"335\" y=\"93\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">Q</text><text x=\"335\" y=\"159\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">R</text><text x=\"76\" y=\"177\" font-size=\"13\" fill=\"#047857\">4.9 m</text><text x=\"223\" y=\"183\" font-size=\"13\" fill=\"#047857\">7.8 m</text><text x=\"350\" y=\"128\" font-size=\"13\" fill=\"#047857\">2.5 m</text></svg>"
+              },
+              "options": [
+                "\\(9.2\\text{ m}\\)",
+                "\\(8.9\\text{ m}\\)",
+                "\\(12.7\\text{ m}\\)",
+                "\\(2.9\\text{ m}\\)"
+              ],
+              "answer": 0,
+              "hint": "The rectangle on the prism has perpendicular sides 4.9 m and 7.8 m; SU is its diagonal.",
+              "keyPoints": [
+                {
+                  "text": "SU",
+                  "note": "Use the right triangle with legs 4.9 m and 7.8 m, then round to one decimal place."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Identify the right triangle for diagonal (SU). The perpendicular sides are (4.9) m and (7.8) m.",
+                  "work": "\\(TU=4.9\\text{ m},\\quad UR=7.8\\text{ m}\\)"
+                },
+                {
+                  "explain": "Apply Pythagoras to the diagonal.",
+                  "work": "\\(SU^2=4.9^2+7.8^2\\)"
+                },
+                {
+                  "explain": "Calculate and round to one decimal place.",
+                  "work": "\\(SU=\\sqrt{24.01+60.84}=\\sqrt{84.85}\\approx9.211\\text{ m}\\)"
+                },
+                {
+                  "explain": "Therefore.",
+                  "work": "\\(\\boxed{SU=9.2\\text{ m}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 15,
+                "question": "9(b)(i)",
+                "marks": 1,
+                "part": "",
+                "origin": "exam-import"
+              }
+            },
+            {
+              "id": "fsh-y8-2020-q9bii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(ii) Hence, or otherwise, find PU in metres correct to one decimal place.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 410 225\" width=\"100%\" height=\"210\" style=\"max-width:410px;display:block;margin:auto;background:#fff\"><line x1=\"62\" y1=\"150\" x2=\"120\" y2=\"190\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"62\" y1=\"150\" x2=\"270\" y2=\"50\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"270\" y1=\"50\" x2=\"270\" y2=\"100\" stroke=\"#10b981\" stroke-width=\"3.2\"/><line x1=\"270\" y1=\"100\" x2=\"345\" y2=\"100\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"345\" y1=\"100\" x2=\"345\" y2=\"145\" stroke=\"#f59e0b\" stroke-width=\"3.2\"/><line x1=\"345\" y1=\"145\" x2=\"120\" y2=\"190\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"62\" y1=\"150\" x2=\"270\" y2=\"100\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"120\" y1=\"190\" x2=\"270\" y2=\"100\" stroke=\"#7c3aed\" stroke-width=\"3.2\"/><line x1=\"270\" y1=\"100\" x2=\"345\" y2=\"145\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"270\" y1=\"50\" x2=\"345\" y2=\"100\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"270\" y1=\"50\" x2=\"120\" y2=\"190\" stroke=\"#ef4444\" stroke-width=\"3.2\" stroke-dasharray=\"5 4\"/><path d=\"M331 100 h-13 v13 h13\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><text x=\"52\" y=\"164\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">T</text><text x=\"110\" y=\"204\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">U</text><text x=\"260\" y=\"114\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">S</text><text x=\"260\" y=\"43\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">P</text><text x=\"335\" y=\"93\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">Q</text><text x=\"335\" y=\"159\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">R</text><text x=\"76\" y=\"177\" font-size=\"13\" fill=\"#047857\">4.9 m</text><text x=\"223\" y=\"183\" font-size=\"13\" fill=\"#047857\">7.8 m</text><text x=\"350\" y=\"128\" font-size=\"13\" fill=\"#047857\">2.5 m</text></svg>"
+              },
+              "options": [
+                "\\(9.5\\text{ m}\\)",
+                "\\(11.7\\text{ m}\\)",
+                "\\(6.7\\text{ m}\\)",
+                "\\(7.0\\text{ m}\\)"
+              ],
+              "answer": 0,
+              "hint": "Use the right triangle USP: the perpendicular sides are SU and SP=QR=2.5 m.",
+              "keyPoints": [
+                {
+                  "text": "find PU",
+                  "note": "The equal parallel edges of the prism give SP=QR=2.5 m."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Use the right triangle (USP). Its perpendicular sides are (SU=9.2) m (from part i) and (SP=QR=2.5) m.",
+                  "work": "\\(SP=2.5\\text{ m}\\)"
+                },
+                {
+                  "explain": "Apply Pythagoras to the hypotenuse (PU).",
+                  "work": "\\(PU^2=SU^2+SP^2\\)"
+                },
+                {
+                  "explain": "Substitute and calculate.",
+                  "work": "\\(PU=\\sqrt{9.2^2+2.5^2}=\\sqrt{84.64+6.25}=\\sqrt{90.89}\\approx9.533\\)"
+                },
+                {
+                  "explain": "Round to one decimal place.",
+                  "work": "\\(\\boxed{PU=9.5\\text{ m}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 15,
+                "question": "9(b)(ii)",
+                "marks": 2,
+                "part": "",
+                "origin": "exam-import"
+              }
+            }
+          ],
+          "hint": "Find the first right-triangle diagonal, then use that result in the second right triangle.",
+          "keyPoints": [
+            {
+              "text": "right-angled triangle",
+              "note": "Use the marked perpendicular lengths; for the prism, corresponding parallel edges have equal lengths."
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "sourcePaper": "Task 4 2020 Yr 8 yearly",
+            "school": "Fort Street High School",
+            "year": 2020,
+            "page": 15,
+            "question": "Question 9(b)",
+            "marks": 3,
+            "part": "",
+            "origin": "exam-import"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 410 225\" width=\"100%\" height=\"210\" style=\"max-width:410px;display:block;margin:auto;background:#fff\"><line x1=\"62\" y1=\"150\" x2=\"120\" y2=\"190\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"62\" y1=\"150\" x2=\"270\" y2=\"50\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"270\" y1=\"50\" x2=\"270\" y2=\"100\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"270\" y1=\"100\" x2=\"345\" y2=\"100\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"345\" y1=\"100\" x2=\"345\" y2=\"145\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"345\" y1=\"145\" x2=\"120\" y2=\"190\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"62\" y1=\"150\" x2=\"270\" y2=\"100\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"120\" y1=\"190\" x2=\"270\" y2=\"100\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"270\" y1=\"100\" x2=\"345\" y2=\"145\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"270\" y1=\"50\" x2=\"345\" y2=\"100\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"270\" y1=\"50\" x2=\"120\" y2=\"190\" stroke=\"#334155\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><path d=\"M331 100 h-13 v13 h13\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><text x=\"52\" y=\"164\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">T</text><text x=\"110\" y=\"204\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">U</text><text x=\"260\" y=\"114\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">S</text><text x=\"260\" y=\"43\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">P</text><text x=\"335\" y=\"93\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">Q</text><text x=\"335\" y=\"159\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">R</text><text x=\"76\" y=\"177\" font-size=\"13\" fill=\"#047857\">4.9 m</text><text x=\"223\" y=\"183\" font-size=\"13\" fill=\"#047857\">7.8 m</text><text x=\"350\" y=\"128\" font-size=\"13\" fill=\"#047857\">2.5 m</text></svg>"
+          }
         }
       ]
     },

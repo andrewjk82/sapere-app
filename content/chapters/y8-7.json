@@ -3818,6 +3818,174 @@
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
           },
           "xp": 2
+        },
+        {
+          "id": "fsh-y8-2020-q7a",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "(a) A shirt is being sold for $18 at Shop A.",
+          "parts": [
+            {
+              "id": "fsh-y8-2020-q7ai",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(i) During a sale, 15% is taken off the price of the shirt. How much do you pay?",
+              "options": [
+                "\\(\\text{\\$}15.30\\)",
+                "\\(\\text{\\$}2.70\\)",
+                "\\(\\text{\\$}16.50\\)",
+                "\\(\\text{\\$}13.50\\)"
+              ],
+              "answer": 0,
+              "hint": "Find 85% of the original $18 price, or subtract the 15% discount.",
+              "keyPoints": [
+                {
+                  "text": "15% is taken off",
+                  "note": "A 15% discount means paying 100%−15%=85%."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Find 15% of the original price.",
+                  "work": "\\(0.15\\times18=\\$2.70\\)"
+                },
+                {
+                  "explain": "Subtract the discount from the original price.",
+                  "work": "\\(18-2.70=\\boxed{\\$15.30}\\)"
+                },
+                {
+                  "explain": "Check using the remaining percentage.",
+                  "work": "\\(0.85\\times18=\\$15.30\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 11,
+                "question": "7(a)(i)",
+                "marks": 2,
+                "part": "",
+                "origin": "exam-import"
+              }
+            },
+            {
+              "id": "fsh-y8-2020-q7aii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(ii) Having decided to buy the shirt, you are told that your loyalty card allows you to take a further 10% off the sale price for the shirt. How much do you now pay?",
+              "options": [
+                "\\(\\text{\\$}13.77\\)",
+                "\\(\\text{\\$}12.24\\)",
+                "\\(\\text{\\$}14.58\\)",
+                "\\(\\text{\\$}15.30\\)"
+              ],
+              "answer": 0,
+              "hint": "Apply the further 10% discount to the sale price from part (i), not to $18.",
+              "keyPoints": [
+                {
+                  "text": "further 10% off the sale price",
+                  "note": "The new discount is calculated from $15.30."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Use the sale price from part (i).",
+                  "work": "\\(\\text{Sale price}=\\$15.30\\)"
+                },
+                {
+                  "explain": "A further 10% off means paying 90% of that price.",
+                  "work": "\\(0.90\\times15.30=13.77\\)"
+                },
+                {
+                  "explain": "State the price after both discounts.",
+                  "work": "\\(\\boxed{\\$13.77}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 11,
+                "question": "7(a)(ii)",
+                "marks": 2,
+                "part": "",
+                "origin": "exam-import"
+              }
+            },
+            {
+              "id": "fsh-y8-2020-q7aiii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(iii) The same shirt is being sold at Shop B for $18. They are offering a 25% discount off this price. Would it have been better to buy the shirt here? Explain your answer using a calculation.",
+              "options": [
+                "Yes; Shop B costs $13.50, which is $0.27 less than $13.77.",
+                "No; Shop B costs $15.30, which is more than $13.77.",
+                "Yes; Shop B costs $13.77, the same as Shop A.",
+                "No; Shop B costs $18.00 after the discount."
+              ],
+              "answer": 0,
+              "hint": "Calculate 75% of $18 and compare it with the final Shop A price.",
+              "keyPoints": [
+                {
+                  "text": "$18. They are offering a 25% discount",
+                  "note": "Compare both final prices after all discounts."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Find Shop B’s price after a 25% discount.",
+                  "work": "\\(18(1-0.25)=18(0.75)=\\$13.50\\)"
+                },
+                {
+                  "explain": "Recall the final Shop A price after the loyalty discount.",
+                  "work": "\\(\\text{Shop A}=\\$13.77\\)"
+                },
+                {
+                  "explain": "Compare the amounts.",
+                  "work": "\\(13.77-13.50=\\$0.27\\)"
+                },
+                {
+                  "explain": "Shop B is cheaper by $0.27, so the answer is yes.",
+                  "work": "\\(\\boxed{\\text{Yes; Shop B costs }\\$13.50.}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 11,
+                "question": "7(a)(iii)",
+                "marks": 2,
+                "part": "",
+                "origin": "exam-import"
+              }
+            }
+          ],
+          "hint": "For successive discounts, apply each percentage to the price that remains after the previous discount.",
+          "keyPoints": [
+            {
+              "text": "$18 at Shop A",
+              "note": "Keep the original price and the reduced price distinct."
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "sourcePaper": "Task 4 2020 Yr 8 yearly",
+            "school": "Fort Street High School",
+            "year": 2020,
+            "page": 11,
+            "question": "Question 7(a)",
+            "marks": 6,
+            "part": "",
+            "origin": "exam-import"
+          }
         }
       ]
     },
@@ -5514,6 +5682,174 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "fsh-y8-2020-q7b",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "(b) Sammy is seeking to buy the new PlayStation 5 for $600.",
+          "parts": [
+            {
+              "id": "fsh-y8-2020-q7bi",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(i) This price includes GST. Calculate the pre-GST price of the PlayStation 5.",
+              "options": [
+                "\\(\\text{\\$}545.45\\)",
+                "$540.00",
+                "$600.00",
+                "$660.00"
+              ],
+              "answer": 0,
+              "hint": "Australian GST is 10%, so the inclusive price is 110% of the pre-GST price.",
+              "keyPoints": [
+                {
+                  "text": "includes GST",
+                  "note": "Divide the GST-inclusive price by 1.10; do not subtract 10% of $600."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "The price including 10% GST is 110% of the original price.",
+                  "work": "\\(1.10P=600\\)"
+                },
+                {
+                  "explain": "Divide by (1.10) to find the pre-GST price.",
+                  "work": "\\(P=\\frac{600}{1.10}=545.4545\\ldots\\)"
+                },
+                {
+                  "explain": "Round to the nearest cent.",
+                  "work": "\\(\\boxed{\\$545.45}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 11,
+                "question": "7(b)(i)",
+                "marks": 2,
+                "part": "",
+                "origin": "exam-import"
+              }
+            },
+            {
+              "id": "fsh-y8-2020-q7bii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(ii) How much in total would Sammy need to pay back if he took a loan of $600 from a bank at a simple interest rate of 4.5% p.a. for 3.5 years?",
+              "options": [
+                "\\(\\text{\\$}694.50\\)",
+                "$94.50",
+                "$720.00",
+                "$694.05"
+              ],
+              "answer": 0,
+              "hint": "Use simple interest I=Prt, then add the interest to the $600 principal.",
+              "keyPoints": [
+                {
+                  "text": "simple interest rate of 4.5% p.a.",
+                  "note": "Convert 4.5% to 0.045 and use time in years."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "List the values for simple interest.",
+                  "work": "\\(P=600,\\quad r=0.045,\\quad t=3.5\\)"
+                },
+                {
+                  "explain": "Calculate the interest.",
+                  "work": "\\(I=Prt=600\\times0.045\\times3.5=\\$94.50\\)"
+                },
+                {
+                  "explain": "Add interest to the principal for the total repayment.",
+                  "work": "\\(600+94.50=\\boxed{\\$694.50}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 12,
+                "question": "7(b)(ii)",
+                "marks": 2,
+                "part": "",
+                "origin": "exam-import"
+              }
+            },
+            {
+              "id": "fsh-y8-2020-q7biii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(iii) Another bank tells Sammy that he only needs to pay $120 in interest for the PlayStation 5 in addition to the principle cost if he takes a loan from them. Should Sammy take the loan from the bank in (ii) or this new bank? Explain your answer.",
+              "options": [
+                "He should take the loan in (ii): the total is $694.50, compared with $720 at the new bank.",
+                "He should take the new bank: $120 is less than $94.50.",
+                "He should take the loan in (ii): $694.50 is less than $600.",
+                "Either bank costs $720 in total."
+              ],
+              "answer": 0,
+              "hint": "Compare the total repayment from (ii) with $600 plus $120 at the new bank.",
+              "keyPoints": [
+                {
+                  "text": "only needs to pay $120 in interest",
+                  "note": "Compare total amounts owed, not just interest amounts."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Use the total from part (ii).",
+                  "work": "\\(\\text{Bank (ii) total}=\\$694.50\\)"
+                },
+                {
+                  "explain": "Find the new bank’s total repayment.",
+                  "work": "\\(600+120=\\$720\\)"
+                },
+                {
+                  "explain": "Compare the totals.",
+                  "work": "\\(694.50<720\\)"
+                },
+                {
+                  "explain": "The first bank costs $25.50 less.",
+                  "work": "\\(720-694.50=\\$25.50\\quad\\boxed{\\text{Choose bank (ii).}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 12,
+                "question": "7(b)(iii)",
+                "marks": 1,
+                "part": "",
+                "origin": "exam-import"
+              }
+            }
+          ],
+          "hint": "For an inclusive tax price, divide by the full multiplier. For a loan, calculate interest then compare total repayments.",
+          "keyPoints": [
+            {
+              "text": "$600",
+              "note": "Distinguish the pre-tax price from the final amount repaid on a loan."
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "sourcePaper": "Task 4 2020 Yr 8 yearly",
+            "school": "Fort Street High School",
+            "year": 2020,
+            "page": 11,
+            "question": "Question 7(b)",
+            "marks": 5,
+            "part": "",
+            "origin": "exam-import"
+          }
         }
       ]
     }

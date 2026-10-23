@@ -4114,6 +4114,402 @@
             "exam:year8ch18i"
           ],
           "xp": 2
+        },
+        {
+          "id": "fsh-y8-2020-q8a",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "(a) Consider the two points (2, 4) and (−1, −2).",
+          "parts": [
+            {
+              "id": "fsh-y8-2020-q8ai",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(i) Find the gradient between these two points.",
+              "options": [
+                "\\(2\\)",
+                "\\(-2\\)",
+                "\\(\\frac{1}{2}\\)",
+                "\\(3\\)"
+              ],
+              "answer": 0,
+              "hint": "Use rise over run: subtract the y-coordinates, then the x-coordinates.",
+              "keyPoints": [
+                {
+                  "text": "(i) Find the gradient betw",
+                  "note": "Keep the coordinate order consistent in numerator and denominator."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Label the points ((x_1,y_1)=(2,4)) and ((x_2,y_2)=(-1,-2)).",
+                  "work": ""
+                },
+                {
+                  "explain": "Use the gradient formula.",
+                  "work": "\\(m=\\frac{y_2-y_1}{x_2-x_1}\\)"
+                },
+                {
+                  "explain": "Substitute the coordinates.",
+                  "work": "\\(m=\\frac{-2-4}{-1-2}=\\frac{-6}{-3}=2\\)"
+                },
+                {
+                  "explain": "The gradient is.",
+                  "work": "\\(\\boxed{2}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 12,
+                "question": "8(a)(i)",
+                "marks": 1,
+                "part": "",
+                "origin": "exam-import"
+              }
+            },
+            {
+              "id": "fsh-y8-2020-q8aii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(ii) Find the midpoint of the line segment between these two points.",
+              "options": [
+                "\\((\\frac12,1)\\)",
+                "\\((1,\\frac12)\\)",
+                "\\((\\frac32,3)\\)",
+                "\\(( -\\frac12,1)\\)"
+              ],
+              "answer": 0,
+              "hint": "Average the x-coordinates and average the y-coordinates separately.",
+              "keyPoints": [
+                {
+                  "text": "midpoint",
+                  "note": "Do not swap the x- and y-coordinate averages."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Use the midpoint formula by averaging corresponding coordinates.",
+                  "work": "\\(M=\\left(\\frac{x_1+x_2}{2},\\frac{y_1+y_2}{2}\\right)\\)"
+                },
+                {
+                  "explain": "Average the x-coordinates.",
+                  "work": "\\(\\frac{2+(-1)}{2}=\\frac12\\)"
+                },
+                {
+                  "explain": "Average the y-coordinates.",
+                  "work": "\\(\\frac{4+(-2)}{2}=1\\)"
+                },
+                {
+                  "explain": "Write the ordered pair.",
+                  "work": "\\(\\boxed{(\\frac12,1)}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 12,
+                "question": "8(a)(ii)",
+                "marks": 1,
+                "part": "",
+                "origin": "exam-import"
+              }
+            },
+            {
+              "id": "fsh-y8-2020-q8aiii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(iii) Find the length of the line segment between these two points (in exact form).",
+              "options": [
+                "\\(3\\sqrt5\\)",
+                "\\(\\sqrt{45}\\text{ only}\\)",
+                "\\(5\\sqrt3\\)",
+                "\\(3\\sqrt2\\)"
+              ],
+              "answer": 0,
+              "hint": "Find the horizontal and vertical changes, then use the distance formula.",
+              "keyPoints": [
+                {
+                  "text": "length of the line segment",
+                  "note": "Give the exact simplified surd, not a rounded decimal."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Find coordinate differences.",
+                  "work": "\\(\\Delta x=-1-2=-3,\\quad\\Delta y=-2-4=-6\\)"
+                },
+                {
+                  "explain": "Apply the distance formula.",
+                  "work": "\\(d=\\sqrt{(\\Delta x)^2+(\\Delta y)^2}\\)"
+                },
+                {
+                  "explain": "Substitute and simplify.",
+                  "work": "\\(d=\\sqrt{(-3)^2+(-6)^2}=\\sqrt{9+36}=\\sqrt{45}\\)"
+                },
+                {
+                  "explain": "Take out the square factor.",
+                  "work": "\\(\\sqrt{45}=\\sqrt{9\\times5}=\\boxed{3\\sqrt5}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 13,
+                "question": "8(a)(iii)",
+                "marks": 1,
+                "part": "",
+                "origin": "exam-import"
+              }
+            }
+          ],
+          "hint": "For coordinate questions, use the ordered pairs consistently: x-values with x-values and y-values with y-values.",
+          "keyPoints": [
+            {
+              "text": "(2, 4) and (−1, −2)",
+              "note": "The gradient uses differences; the midpoint uses averages; distance uses the Pythagoras formula."
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "sourcePaper": "Task 4 2020 Yr 8 yearly",
+            "school": "Fort Street High School",
+            "year": 2020,
+            "page": 12,
+            "question": "Question 8(a)",
+            "marks": 3,
+            "part": "",
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "fsh-y8-2020-q8b",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "(b) Consider the following equation of a straight line: 4x = 2y − 10.",
+          "parts": [
+            {
+              "id": "fsh-y8-2020-q8bi",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(i) Rearrange the equation into the form \\(y=mx+b\\).",
+              "options": [
+                "\\(y=2x+5\\)",
+                "\\(y=2x-5\\)",
+                "\\(y=-2x+5\\)",
+                "\\(y=\\frac12x+5\\)"
+              ],
+              "answer": 0,
+              "hint": "Add 10 to both sides, then divide every term by 2.",
+              "keyPoints": [
+                {
+                  "text": "\\(y=mx+b\\)",
+                  "note": "Isolate y while preserving equality on both sides."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Start from the given equation.",
+                  "work": "\\(4x=2y-10\\)"
+                },
+                {
+                  "explain": "Add (10) to both sides.",
+                  "work": "\\(4x+10=2y\\)"
+                },
+                {
+                  "explain": "Divide each term by (2).",
+                  "work": "\\(y=2x+5\\)"
+                },
+                {
+                  "explain": "Read off (m) and (b).",
+                  "work": "\\(m=2,\\quad b=5\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 13,
+                "question": "8(b)(i)",
+                "marks": 1,
+                "part": "",
+                "origin": "exam-import"
+              }
+            },
+            {
+              "id": "fsh-y8-2020-q8bii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(ii) State the gradient, x-intercept and y-intercept of the straight line.",
+              "options": [
+                "Gradient 2; x-intercept (−2.5, 0); y-intercept (0, 5).",
+                "Gradient 5; x-intercept (0, 5); y-intercept (−2.5, 0).",
+                "Gradient 2; x-intercept (2.5, 0); y-intercept (0, −5).",
+                "Gradient −2; x-intercept (−2.5, 0); y-intercept (0, 5)."
+              ],
+              "answer": 0,
+              "hint": "Use y=2x+5. Set y=0 for the x-intercept and x=0 for the y-intercept.",
+              "keyPoints": [
+                {
+                  "text": "gradient, x-intercept and y-intercept",
+                  "note": "The y-intercept comes from x=0; the x-intercept comes from y=0."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "From (y=2x+5), the gradient is the coefficient of x.",
+                  "work": "\\(m=2\\)"
+                },
+                {
+                  "explain": "For the y-intercept, set (x=0).",
+                  "work": "\\(y=2(0)+5=5\\quad\\Rightarrow\\quad(0,5)\\)"
+                },
+                {
+                  "explain": "For the x-intercept, set (y=0) and solve.",
+                  "work": "\\(0=2x+5\\Rightarrow x=-\\frac52=-2.5\\quad\\Rightarrow\\quad(-2.5,0)\\)"
+                },
+                {
+                  "explain": "State all three values.",
+                  "work": "\\(\\boxed{m=2,\\;x\\text{-int}=(-2.5,0),\\;y\\text{-int}=(0,5)}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 13,
+                "question": "8(b)(ii)",
+                "marks": 2,
+                "part": "",
+                "origin": "exam-import"
+              }
+            },
+            {
+              "id": "fsh-y8-2020-q8biii",
+              "type": "review",
+              "difficulty": "medium",
+              "stem": "(iii) Hence, or otherwise, sketch the line indicating intercepts.",
+              "answer": "The line is y=2x+5. It crosses the y-axis at (0,5) and the x-axis at (−2.5,0). Plot both intercepts and draw the straight line through them.",
+              "hint": "Plot the intercepts first: (0, 5) and (−2.5, 0). Join them with a straight line.",
+              "keyPoints": [
+                {
+                  "text": "indicating intercepts",
+                  "note": "The line must pass through both intercepts and rise 2 for every 1 step right."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Use the equation from part (i).",
+                  "work": "\\(y=2x+5\\)"
+                },
+                {
+                  "explain": "The intercepts found in part (ii) are.",
+                  "work": "\\((0,5)\\quad\\text{and}\\quad(-2.5,0)\\)"
+                },
+                {
+                  "explain": "Plot both points and draw one straight line through them. Label each intercept.",
+                  "work": "\\(\\text{The line has gradient }2\\text{ and y-intercept }5.\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "manual": true,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 13,
+                "question": "8(b)(iii)",
+                "marks": 2,
+                "part": "",
+                "origin": "exam-import"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 330\" width=\"100%\" height=\"280\" style=\"max-width:360px;display:block;margin:auto;background:#fff\"><line x1=\"65\" y1=\"20\" x2=\"65\" y2=\"295\" stroke=\"#dbe4ef\"/><line x1=\"65\" y1=\"295\" x2=\"335\" y2=\"295\" stroke=\"#dbe4ef\"/><line x1=\"92\" y1=\"20\" x2=\"92\" y2=\"295\" stroke=\"#dbe4ef\"/><line x1=\"65\" y1=\"270\" x2=\"335\" y2=\"270\" stroke=\"#dbe4ef\"/><line x1=\"119\" y1=\"20\" x2=\"119\" y2=\"295\" stroke=\"#dbe4ef\"/><line x1=\"65\" y1=\"245\" x2=\"335\" y2=\"245\" stroke=\"#dbe4ef\"/><line x1=\"146\" y1=\"20\" x2=\"146\" y2=\"295\" stroke=\"#dbe4ef\"/><line x1=\"65\" y1=\"220\" x2=\"335\" y2=\"220\" stroke=\"#dbe4ef\"/><line x1=\"173\" y1=\"20\" x2=\"173\" y2=\"295\" stroke=\"#dbe4ef\"/><line x1=\"65\" y1=\"195\" x2=\"335\" y2=\"195\" stroke=\"#dbe4ef\"/><line x1=\"200\" y1=\"20\" x2=\"200\" y2=\"295\" stroke=\"#dbe4ef\"/><line x1=\"65\" y1=\"170\" x2=\"335\" y2=\"170\" stroke=\"#dbe4ef\"/><line x1=\"227\" y1=\"20\" x2=\"227\" y2=\"295\" stroke=\"#dbe4ef\"/><line x1=\"65\" y1=\"145\" x2=\"335\" y2=\"145\" stroke=\"#dbe4ef\"/><line x1=\"254\" y1=\"20\" x2=\"254\" y2=\"295\" stroke=\"#dbe4ef\"/><line x1=\"65\" y1=\"120\" x2=\"335\" y2=\"120\" stroke=\"#dbe4ef\"/><line x1=\"281\" y1=\"20\" x2=\"281\" y2=\"295\" stroke=\"#dbe4ef\"/><line x1=\"65\" y1=\"95\" x2=\"335\" y2=\"95\" stroke=\"#dbe4ef\"/><line x1=\"308\" y1=\"20\" x2=\"308\" y2=\"295\" stroke=\"#dbe4ef\"/><line x1=\"65\" y1=\"70\" x2=\"335\" y2=\"70\" stroke=\"#dbe4ef\"/><line x1=\"335\" y1=\"20\" x2=\"335\" y2=\"295\" stroke=\"#dbe4ef\"/><line x1=\"65\" y1=\"45\" x2=\"335\" y2=\"45\" stroke=\"#dbe4ef\"/><line x1=\"362\" y1=\"20\" x2=\"362\" y2=\"295\" stroke=\"#dbe4ef\"/><line x1=\"65\" y1=\"20\" x2=\"335\" y2=\"20\" stroke=\"#dbe4ef\"/><line x1=\"65\" y1=\"170\" x2=\"335\" y2=\"170\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"200\" y1=\"20\" x2=\"200\" y2=\"295\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"65\" y1=\"295\" x2=\"348.5\" y2=\"-230\" stroke=\"#7c3aed\" stroke-width=\"3\"/><circle cx=\"132.5\" cy=\"170\" r=\"5\" fill=\"#7c3aed\"/><circle cx=\"200\" cy=\"45\" r=\"5\" fill=\"#7c3aed\"/><text x=\"120.5\" y=\"190\" font-size=\"12\">(-2.5,0)</text><text x=\"208\" y=\"39\" font-size=\"12\">(0,5)</text><text x=\"330\" y=\"162\" font-size=\"12\">x</text><text x=\"208\" y=\"27\" font-size=\"12\">y</text></svg>"
+              }
+            }
+          ],
+          "hint": "Rearrange to y=mx+b first. Then read the gradient and set each coordinate to zero in turn to find intercepts.",
+          "keyPoints": [
+            {
+              "text": "4x = 2y − 10",
+              "note": "Keep gradient and intercept coordinates distinct."
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "sourcePaper": "Task 4 2020 Yr 8 yearly",
+            "school": "Fort Street High School",
+            "year": 2020,
+            "page": 13,
+            "question": "Question 8(b)",
+            "marks": 5,
+            "part": "",
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "fsh-y8-2020-q8c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "(c) Find the equation of a straight line which is parallel to \\(y=-3x+7\\) and passes through the point (−3, 4).",
+          "options": [
+            "\\(y=-3x-5\\)",
+            "\\(y=3x+13\\)",
+            "\\(y=-3x+5\\)",
+            "\\(y=3x-5\\)"
+          ],
+          "answer": 0,
+          "hint": "Parallel lines have the same gradient. Substitute (−3,4) to find the intercept.",
+          "keyPoints": [
+            {
+              "text": "\\(y=-3x+7\\)",
+              "note": "Keep the gradient −3, then solve for the new y-intercept."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the gradient of the given parallel line.",
+              "work": "\\(m=-3\\)"
+            },
+            {
+              "explain": "Use the form (y=-3x+b) and substitute the point ((-3,4)).",
+              "work": "\\(4=-3(-3)+b\\)"
+            },
+            {
+              "explain": "Solve for the intercept.",
+              "work": "\\(4=9+b\\Rightarrow b=-5\\)"
+            },
+            {
+              "explain": "Write the required equation.",
+              "work": "\\(\\boxed{y=-3x-5}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2020 Yr 8 yearly",
+            "school": "Fort Street High School",
+            "year": 2020,
+            "page": 14,
+            "question": "8(c)",
+            "marks": 2,
+            "part": "",
+            "origin": "exam-import"
+          }
         }
       ]
     }

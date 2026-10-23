@@ -1882,6 +1882,262 @@
             "\\(2x^4\\)"
           ],
           "answer": 1
+        },
+        {
+          "id": "fsh-y8-2020-q4",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Question 4 – Indices. (a) Fully simplify the following. Leave your answers with positive indices only:",
+          "parts": [
+            {
+              "id": "fsh-y8-2020-q4i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(i) \\(\\frac{3y}{9y^2}\\)",
+              "options": [
+                "\\(\\frac{1}{3y}\\)",
+                "\\(\\frac{1}{3y^2}\\)",
+                "\\(\\frac{y}{3}\\)",
+                "\\(\\frac{1}{3}y\\)"
+              ],
+              "answer": 0,
+              "hint": "Simplify the coefficients and subtract the powers of y.",
+              "keyPoints": [
+                {
+                  "text": "\\(\\frac{3y}{9y^2}\\)",
+                  "note": "When dividing like bases, subtract exponents: 1−2=−1."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Simplify the numerical coefficient.",
+                  "work": "\\(\\frac{3}{9}=\\frac{1}{3}\\)"
+                },
+                {
+                  "explain": "Apply the quotient law to (y).",
+                  "work": "\\(\\frac{y^1}{y^2}=y^{1-2}=y^{-1}\\)"
+                },
+                {
+                  "explain": "Rewrite with positive indices.",
+                  "work": "\\(\\frac{1}{3}y^{-1}=\\boxed{\\frac{1}{3y}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 6,
+                "question": "4(a)(i)",
+                "marks": 1,
+                "part": "",
+                "origin": "exam-import"
+              }
+            },
+            {
+              "id": "fsh-y8-2020-q4ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(ii) \\(2x^0\\)",
+              "options": [
+                "\\(2\\)",
+                "\\(0\\)",
+                "\\(2x\\)",
+                "\\(2x^0\\)"
+              ],
+              "answer": 0,
+              "hint": "Any non-zero base raised to power zero equals 1.",
+              "keyPoints": [
+                {
+                  "text": "\\(2x^0\\)",
+                  "note": "Keep the coefficient 2 after replacing x⁰ by 1."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Use the zero-index rule, assuming (x\\ne0).",
+                  "work": "\\(x^0=1\\)"
+                },
+                {
+                  "explain": "Multiply by the coefficient.",
+                  "work": "\\(2x^0=2\\times1=\\boxed{2}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 6,
+                "question": "4(a)(ii)",
+                "marks": 1,
+                "part": "",
+                "origin": "exam-import"
+              }
+            },
+            {
+              "id": "fsh-y8-2020-q4iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(iii) \\(\\left(\\frac{3x^2}{2x^3y^{-2}}\\right)^0\\)",
+              "options": [
+                "\\(1\\)",
+                "\\(0\\)",
+                "\\(\\frac{3}{2}\\)",
+                "\\(\\frac{1}{x}\\)"
+              ],
+              "answer": 0,
+              "hint": "Apply the zero-index law to the entire bracket.",
+              "keyPoints": [
+                {
+                  "text": "\\(\\left(\\frac{3x^2}{2x^3y^{-2}}\\right)^0\\)",
+                  "note": "The whole non-zero bracket, not just one factor, is raised to zero."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Identify the entire fraction as the base.",
+                  "work": "\\(\\left(\\frac{3x^2}{2x^3y^{-2}}\\right)^0\\)"
+                },
+                {
+                  "explain": "A non-zero base to power zero equals 1.",
+                  "work": "\\(A^0=1\\quad (A\\ne0)\\)"
+                },
+                {
+                  "explain": "Therefore the expression simplifies to.",
+                  "work": "\\(\\boxed{1}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 6,
+                "question": "4(a)(iii)",
+                "marks": 1,
+                "part": "",
+                "origin": "exam-import"
+              }
+            },
+            {
+              "id": "fsh-y8-2020-q4iv",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(iv) \\(\\frac{xy^{-2}}{2^{-1}x^{-2}}\\)",
+              "options": [
+                "\\(\\frac{2x^3}{y^2}\\)",
+                "\\(\\frac{x^3}{2y^2}\\)",
+                "\\(\\frac{2}{xy^2}\\)",
+                "\\(2x^{-1}y^{-2}\\)"
+              ],
+              "answer": 0,
+              "hint": "Rewrite negative powers as reciprocals, or subtract exponents carefully.",
+              "keyPoints": [
+                {
+                  "text": "\\(\\frac{xy^{-2}}{2^{-1}x^{-2}}\\)",
+                  "note": "Dividing by 2⁻¹ multiplies by 2."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Rewrite (2^{-1}) and (y^{-2}) as reciprocals.",
+                  "work": "\\(\\frac{x/y^2}{(1/2)x^{-2}}\\)"
+                },
+                {
+                  "explain": "Dividing by (1/2) is multiplying by (2).",
+                  "work": "\\(\\frac{x/y^2}{(1/2)x^{-2}}=\\frac{2x}{y^2}\\times x^2\\)"
+                },
+                {
+                  "explain": "Multiply powers of (x) by adding exponents.",
+                  "work": "\\(2x^{1+2}y^{-2}=\\frac{2x^3}{y^2}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 6,
+                "question": "4(a)(iv)",
+                "marks": 2,
+                "part": "",
+                "origin": "exam-import"
+              }
+            },
+            {
+              "id": "fsh-y8-2020-q4v",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(v) \\(\\frac{(4x^2y^2)^2}{10x^7y^3}\\times\\left(\\frac{y^2}{2x^3}\\right)^3\\)",
+              "options": [
+                "\\(\\frac{y^7}{5x^{12}}\\)",
+                "\\(\\frac{y^5}{5x^{12}}\\)",
+                "\\(\\frac{y^7}{5x^6}\\)",
+                "\\(\\frac{5y^7}{x^{12}}\\)"
+              ],
+              "answer": 0,
+              "hint": "Apply the power to every factor first, then combine coefficients and exponents.",
+              "keyPoints": [
+                {
+                  "text": "\\(\\frac{(4x^2y^2)^2}{10x^7y^3}\\times\\left(\\frac{y^2}{2x^3}\\right)^3\\)",
+                  "note": "When raising a power to a power, multiply the exponents."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Raise each factor in the first bracket to power 2.",
+                  "work": "\\((4x^2y^2)^2=16x^4y^4\\)"
+                },
+                {
+                  "explain": "Raise numerator and denominator in the second bracket to power 3.",
+                  "work": "\\(\\left(\\frac{y^2}{2x^3}\\right)^3=\\frac{y^6}{8x^9}\\)"
+                },
+                {
+                  "explain": "Multiply the fractions and combine powers.",
+                  "work": "\\(\\frac{16x^4y^4}{10x^7y^3}\\times\\frac{y^6}{8x^9}=\\frac{16x^4y^{10}}{80x^{16}y^3}\\)"
+                },
+                {
+                  "explain": "Simplify the coefficient and subtract exponents.",
+                  "work": "\\(\\frac{16}{80}x^{-12}y^7=\\boxed{\\frac{y^7}{5x^{12}}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 7,
+                "question": "4(a)(v)",
+                "marks": 3,
+                "part": "",
+                "origin": "exam-import"
+              }
+            }
+          ],
+          "hint": "Use the index laws one at a time: power of a power, product/quotient rules, and the zero-index rule.",
+          "keyPoints": [
+            {
+              "text": "positive indices only",
+              "note": "Convert any negative exponents into denominator factors in the final answer."
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "sourcePaper": "Task 4 2020 Yr 8 yearly",
+            "school": "Fort Street High School",
+            "year": 2020,
+            "page": 6,
+            "question": "Question 4(a)",
+            "marks": 8,
+            "part": "",
+            "origin": "exam-import"
+          }
         }
       ]
     },

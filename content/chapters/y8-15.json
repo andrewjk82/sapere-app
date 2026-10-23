@@ -1638,6 +1638,130 @@
           "meta": {
             "source": "Task 3 2022.pdf"
           }
+        },
+        {
+          "id": "fsh-y8-2020-q5a",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Question 5(a) – A basketball court 14 m by 28 m is surrounded by a grassed area 5 m wide as shown below:",
+          "parts": [
+            {
+              "id": "fsh-y8-2020-q5ai",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(i) Find the area of the grass.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 230\" width=\"100%\" height=\"220\" style=\"max-width:400px;display:block;margin:auto;background:#fff\"><rect x=\"55\" y=\"28\" width=\"290\" height=\"175\" fill=\"#dcfce7\" stroke=\"#10b981\" stroke-width=\"4\"/><rect x=\"95\" y=\"64\" width=\"210\" height=\"103\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"200\" y=\"117\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">28 m</text><text x=\"78\" y=\"119\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\" transform=\"rotate(-90 78 119)\">14 m</text><text x=\"326\" y=\"53\" text-anchor=\"middle\" font-size=\"14\" fill=\"#047857\">5 m</text><text x=\"200\" y=\"220\" text-anchor=\"middle\" font-size=\"13\" fill=\"#64748b\">grass surrounds all four sides</text></svg>"
+              },
+              "options": [
+                "\\(520\\text{ m}^2\\)",
+                "\\(470\\text{ m}^2\\)",
+                "\\(760\\text{ m}^2\\)",
+                "\\(140\\text{ m}^2\\)"
+              ],
+              "answer": 0,
+              "hint": "Add 5 m on both sides of each court dimension, then subtract the court area.",
+              "keyPoints": [
+                {
+                  "text": "Find the area of the grass.",
+                  "note": "The grass area is outer rectangle minus inner court."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "The 5 m grass border adds (10) m to each full dimension.",
+                  "work": "\\(\\text{Outer length}=28+5+5=38\\text{ m}\\)\n\\(\\text{Outer width}=14+5+5=24\\text{ m}\\)"
+                },
+                {
+                  "explain": "Find the outer rectangle area.",
+                  "work": "\\(38\\times24=912\\text{ m}^2\\)"
+                },
+                {
+                  "explain": "Find and subtract the court area.",
+                  "work": "\\(14\\times28=392\\text{ m}^2\\)\n\\(912-392=\\boxed{520\\text{ m}^2}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 7,
+                "question": "5(a)(i)",
+                "marks": 2,
+                "part": "",
+                "origin": "exam-import"
+              }
+            },
+            {
+              "id": "fsh-y8-2020-q5aii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(ii) If the cost of the grass is $5.70 per square metre, find the cost of laying the grass.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 230\" width=\"100%\" height=\"220\" style=\"max-width:400px;display:block;margin:auto;background:#fff\"><rect x=\"55\" y=\"28\" width=\"290\" height=\"175\" fill=\"#dcfce7\" stroke=\"#f59e0b\" stroke-width=\"2\"/><rect x=\"95\" y=\"64\" width=\"210\" height=\"103\" fill=\"#fff\" stroke=\"#f59e0b\" stroke-width=\"4\"/><text x=\"200\" y=\"117\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">28 m</text><text x=\"78\" y=\"119\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\" transform=\"rotate(-90 78 119)\">14 m</text><text x=\"326\" y=\"53\" text-anchor=\"middle\" font-size=\"14\" fill=\"#047857\">5 m</text><text x=\"200\" y=\"220\" text-anchor=\"middle\" font-size=\"13\" fill=\"#64748b\">grass surrounds all four sides</text></svg>"
+              },
+              "options": [
+                "\\(\\text{\\$}2,964.00\\)",
+                "\\(\\text{\\$}2,964\\)",
+                "\\(\\text{\\$}2,964.70\\)",
+                "\\(\\text{\\$}296.40\\)"
+              ],
+              "answer": 0,
+              "hint": "Use the grass area from part (i) and multiply by $5.70 per square metre.",
+              "keyPoints": [
+                {
+                  "text": "$5.70 per square metre",
+                  "note": "Multiply the cost per square metre by the area, not by the court dimensions."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Use the grass area from part (i).",
+                  "work": "\\(A=520\\text{ m}^2\\)"
+                },
+                {
+                  "explain": "Multiply area by cost per square metre.",
+                  "work": "\\(520\\times\\$5.70=\\$2,964\\)"
+                },
+                {
+                  "explain": "State the total cost in dollars.",
+                  "work": "\\(\\boxed{\\$2,964.00}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 7,
+                "question": "5(a)(ii)",
+                "marks": 1,
+                "part": "",
+                "origin": "exam-import"
+              }
+            }
+          ],
+          "hint": "For the grass, calculate the whole outer rectangle and subtract the inner court.",
+          "keyPoints": [
+            {
+              "text": "14 m by 28 m",
+              "note": "Each 5 m border contributes to both sides of each dimension."
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "sourcePaper": "Task 4 2020 Yr 8 yearly",
+            "school": "Fort Street High School",
+            "year": 2020,
+            "page": 7,
+            "question": "Question 5(a)",
+            "marks": 3,
+            "part": "",
+            "origin": "exam-import"
+          }
         }
       ]
     },
@@ -2096,6 +2220,55 @@
             "\\(\\frac{15}{8}\\text{ m}^3\\)"
           ],
           "answer": 2
+        },
+        {
+          "id": "fsh-y8-2020-q5b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "(b) Find the volume of this solid.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 220\" width=\"100%\" height=\"210\" style=\"max-width:380px;display:block;margin:auto;background:#fff\"><g fill=\"#dbeafe\" fill-opacity=\".4\" stroke=\"#334155\" stroke-width=\"2\"><path d=\"M65 155 L135 155 L135 85 Z\"/><path d=\"M225 100 L295 100 L295 30 Z\"/><path d=\"M65 155 L225 100 M135 155 L295 100 M135 85 L295 30\"/></g><path d=\"M123 155 h-12 v-12\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"2\"/><path d=\"M65 155 L225 100\" stroke-dasharray=\"5 4\" stroke=\"#64748b\"/><text x=\"86\" y=\"178\" font-size=\"14\" fill=\"#334155\">7 cm</text><text x=\"143\" y=\"126\" font-size=\"14\" fill=\"#334155\">6 cm</text><text x=\"186\" y=\"112\" font-size=\"14\" fill=\"#334155\">25 cm</text></svg>"
+          },
+          "options": [
+            "\\(525\\text{ cm}^3\\)",
+            "\\(210\\text{ cm}^3\\)",
+            "\\(1,050\\text{ cm}^3\\)",
+            "\\(87.5\\text{ cm}^3\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the triangular cross-sectional area, then multiply by the prism length.",
+          "keyPoints": [
+            {
+              "text": "(b) Find the volume of this solid.",
+              "note": "A prism volume is cross-section area × prism length."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The triangular cross-section is right-angled, with perpendicular sides (6) cm and (7) cm.",
+              "work": "\\(A_{\\triangle}=\\frac12\\times7\\times6=21\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "The prism length is (25) cm.",
+              "work": "\\(V=A_{\\triangle}\\times25\\)"
+            },
+            {
+              "explain": "Multiply and include cubic units.",
+              "work": "\\(V=21\\times25=\\boxed{525\\text{ cm}^3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2020 Yr 8 yearly",
+            "school": "Fort Street High School",
+            "year": 2020,
+            "page": 8,
+            "question": "5(b)",
+            "marks": 2,
+            "part": "",
+            "origin": "exam-import"
+          }
         }
       ]
     },

@@ -973,6 +973,59 @@
           "meta": {
             "source": "Task 3 2022.pdf"
           }
+        },
+        {
+          "id": "fsh-y8-2020-q5c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "(c) If the square in the shape below has an area of 289 cm², find the area of the shaded region to one decimal place.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 250\" width=\"100%\" height=\"220\" style=\"max-width:300px;display:block;margin:auto;background:#fff\"><rect x=\"45\" y=\"20\" width=\"210\" height=\"210\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2.5\"/><circle cx=\"150\" cy=\"125\" r=\"105\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2.5\"/></svg>"
+          },
+          "options": [
+            "\\(62.0\\text{ cm}^2\\)",
+            "\\(226.9\\text{ cm}^2\\)",
+            "\\(62.1\\text{ cm}^2\\)",
+            "\\(144.5\\text{ cm}^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the square side from its area; this is also the circle diameter.",
+          "keyPoints": [
+            {
+              "text": "area of 289 cm²",
+              "note": "The shaded area is square area minus the area of the inscribed circle."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the square side length.",
+              "work": "\\(s^2=289\\text{ cm}^2\\)\n\\(s=\\sqrt{289}=17\\text{ cm}\\)"
+            },
+            {
+              "explain": "The circle fits exactly across the square, so its diameter is (17) cm and radius is half of that.",
+              "work": "\\(r=\\frac{17}{2}=8.5\\text{ cm}\\)"
+            },
+            {
+              "explain": "Calculate circle area.",
+              "work": "\\(A_{\\text{circle}}=\\pi(8.5)^2=72.25\\pi\\approx226.98\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "Subtract from the square and round to one decimal place.",
+              "work": "\\(A_{\\text{shaded}}=289-226.98=62.02\\approx\\boxed{62.0\\text{ cm}^2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2020 Yr 8 yearly",
+            "school": "Fort Street High School",
+            "year": 2020,
+            "page": 8,
+            "question": "5(c)",
+            "marks": 2,
+            "part": "",
+            "origin": "exam-import"
+          }
         }
       ]
     },

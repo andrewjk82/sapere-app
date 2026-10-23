@@ -1873,6 +1873,266 @@
             "\\(18(1+6x)\\)"
           ],
           "answer": 2
+        },
+        {
+          "id": "fsh-y8-2020-q2b",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Question 2(b) – Factorise the following fully:",
+          "parts": [
+            {
+              "id": "fsh-y8-2020-q2bi",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(i) \\(2x^2y-8xy^2\\)",
+              "options": [
+                "\\(2xy(x-4y)\\)",
+                "\\(2xy(x-8y)\\)",
+                "\\(2xy(x-4)\\)",
+                "\\(2x(xy-4y^2)\\)"
+              ],
+              "answer": 0,
+              "hint": "Find the greatest common factor shared by both terms.",
+              "keyPoints": [
+                {
+                  "text": "\\(2x^2y-8xy^2\\)",
+                  "note": "Take the smallest power of each common variable."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Find the highest common factor of (2x^2y) and (-8xy^2): it is (2xy).",
+                  "work": ""
+                },
+                {
+                  "explain": "Divide each term by (2xy).",
+                  "work": "\\(2x^2y-8xy^2=2xy(x-4y)\\)"
+                },
+                {
+                  "explain": "Check by expanding.",
+                  "work": "\\(2xy(x-4y)=2x^2y-8xy^2\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 4,
+                "question": "2(b)(i)",
+                "marks": 2,
+                "part": "",
+                "origin": "exam-import"
+              }
+            },
+            {
+              "id": "fsh-y8-2020-q2bii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(ii) \\(x^2-2x-35\\)",
+              "options": [
+                "\\((x-7)(x+5)\\)",
+                "\\((x+7)(x-5)\\)",
+                "\\((x-5)(x+7)\\)",
+                "\\((x-35)(x+1)\\)"
+              ],
+              "answer": 0,
+              "hint": "Find two numbers that multiply to −35 and add to −2.",
+              "keyPoints": [
+                {
+                  "text": "\\(x^2-2x-35\\)",
+                  "note": "The two numbers must have opposite signs."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Find two factors of (-35) whose sum is (-2).",
+                  "work": "\\(-7\\times 5=-35\\)\n\\(-7+5=-2\\)"
+                },
+                {
+                  "explain": "Use those numbers as the constants in two brackets.",
+                  "work": "\\(x^2-2x-35=(x-7)(x+5)\\)"
+                },
+                {
+                  "explain": "Expand to verify the middle term and constant.",
+                  "work": "\\((x-7)(x+5)=x^2-2x-35\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 4,
+                "question": "2(b)(ii)",
+                "marks": 2,
+                "part": "",
+                "origin": "exam-import"
+              }
+            },
+            {
+              "id": "fsh-y8-2020-q2biii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(iii) \\(3(x+y)-z(x+y)\\)",
+              "options": [
+                "\\((x+y)(3-z)\\)",
+                "\\((x+y)(3+z)\\)",
+                "\\((3+x)(y-z)\\)",
+                "\\((x+y)(z-3)\\)"
+              ],
+              "answer": 0,
+              "hint": "Both terms contain the same bracket (x+y).",
+              "keyPoints": [
+                {
+                  "text": "3(x+y)",
+                  "note": "Factor out the shared bracket without changing the order of terms."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Identify the common factor ((x+y)) in both terms.",
+                  "work": ""
+                },
+                {
+                  "explain": "Factor it out; the remaining factors are (3) and (-z).",
+                  "work": "\\(3(x+y)-z(x+y)=(x+y)(3-z)\\)"
+                },
+                {
+                  "explain": "Expand to check.",
+                  "work": "\\(3x+3y-xz-yz\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 4,
+                "question": "2(b)(iii)",
+                "marks": 1,
+                "part": "",
+                "origin": "exam-import"
+              }
+            },
+            {
+              "id": "fsh-y8-2020-q2biv",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(iv) \\(64x^2-9a^2\\)",
+              "options": [
+                "\\((8x-3a)(8x+3a)\\)",
+                "\\((8x-3a)^2\\)",
+                "\\((64x-9a)(x+a)\\)",
+                "\\((8x+3a)^2\\)"
+              ],
+              "answer": 0,
+              "hint": "Recognise a difference of two squares.",
+              "keyPoints": [
+                {
+                  "text": "\\(64x^2-9a^2\\)",
+                  "note": "Write each term as a square before applying A²−B²=(A−B)(A+B)."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Rewrite both terms as squares.",
+                  "work": "\\(64x^2=(8x)^2\\)\n\\(9a^2=(3a)^2\\)"
+                },
+                {
+                  "explain": "Apply the difference-of-squares identity.",
+                  "work": "\\((8x)^2-(3a)^2=(8x-3a)(8x+3a)\\)"
+                },
+                {
+                  "explain": "The two factors differ only in the sign between them.",
+                  "work": "\\((8x-3a)(8x+3a)\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 4,
+                "question": "2(b)(iv)",
+                "marks": 2,
+                "part": "",
+                "origin": "exam-import"
+              }
+            },
+            {
+              "id": "fsh-y8-2020-q2bv",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(v) \\(x^2(2y+3)-(8y+12)\\)",
+              "options": [
+                "\\((2y+3)(x-2)(x+2)\\)",
+                "\\((2y+3)(x^2+4)\\)",
+                "\\((2y+3)(x-4)(x+2)\\)",
+                "\\((x^2-4)(2y-3)\\)"
+              ],
+              "answer": 0,
+              "hint": "First rewrite 8y+12 as 4(2y+3), then factor the common bracket.",
+              "keyPoints": [
+                {
+                  "text": "\\(x^2(2y+3)-(8y+12)\\)",
+                  "note": "After taking out (2y+3), factor x²−4 as a difference of squares."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Rewrite the second term using the same bracket.",
+                  "work": "\\(8y+12=4(2y+3)\\)"
+                },
+                {
+                  "explain": "Factor out ((2y+3)).",
+                  "work": "\\(x^2(2y+3)-4(2y+3)=(2y+3)(x^2-4)\\)"
+                },
+                {
+                  "explain": "Factor the difference of squares.",
+                  "work": "\\(x^2-4=(x-2)(x+2)\\)"
+                },
+                {
+                  "explain": "Combine the factors.",
+                  "work": "\\((2y+3)(x-2)(x+2)\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 4,
+                "question": "2(b)(v)",
+                "marks": 2,
+                "part": "",
+                "origin": "exam-import"
+              }
+            }
+          ],
+          "hint": "Look for the greatest common factor first; then check for familiar identities such as a difference of squares.",
+          "keyPoints": [
+            {
+              "text": "Factorise the following fully",
+              "note": "Factorise every remaining expression completely."
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "sourcePaper": "Task 4 2020 Yr 8 yearly",
+            "school": "Fort Street High School",
+            "year": 2020,
+            "page": 4,
+            "question": "Question 2(b)",
+            "marks": 9,
+            "part": "",
+            "origin": "exam-import"
+          }
         }
       ]
     },

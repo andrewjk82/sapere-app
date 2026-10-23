@@ -3961,6 +3961,423 @@
           ],
           "manual": true,
           "answer": "Sample proof: In square ABCD, \\(DA=CD\\) and \\(DA\\perp AB\\), \\(CD\\perp AD\\). Thus \\(\\angle DAY=\\angle CDX=90^\\circ\\). As \\(DY\\perp CX\\), the angle between DY and DA equals that between CX and CD, so \\(\\angle ADY=\\angle DCX=\\alpha\\). Therefore \\(\\triangle DAY\\cong\\triangle CDX\\) by AAS."
+        },
+        {
+          "id": "fsh-y8-2020-q6a",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Consider a triangle ABC whose vertices have coordinates A(−4,4), B(−4,1) and C(−1,1).",
+          "parts": [
+            {
+              "id": "fsh-y8-2020-q6ai",
+              "type": "review",
+              "difficulty": "medium",
+              "stem": "(i) Draw the image after the triangle is translated 1 unit down and 5 units right.",
+              "answer": "Sample image vertices: A′(1, 3), B′(1, 0), C′(4, 0). Translate every vertex by the same vector; preserve the triangle shape and orientation.",
+              "hint": "For each point, add 5 to x and subtract 1 from y.",
+              "keyPoints": [
+                {
+                  "text": "1 unit down",
+                  "note": "The vertical coordinate decreases by 1; the horizontal coordinate increases by 5."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Use the translation vector ((+5,-1)). Apply it to each original vertex.",
+                  "work": "\\(A(-4,4)\\to A'(-4+5,4-1)=(1,3)\\)"
+                },
+                {
+                  "explain": "Translate the second vertex the same way.",
+                  "work": "\\(B(-4,1)\\to B'(-4+5,1-1)=(1,0)\\)"
+                },
+                {
+                  "explain": "Translate the third vertex and plot all three image points.",
+                  "work": "\\(C(-1,1)\\to C'(-1+5,1-1)=(4,0)\\)"
+                },
+                {
+                  "explain": "Join the image vertices in the same order. Each side and angle is preserved.",
+                  "work": "\\(A'(1,3),\\quad B'(1,0),\\quad C'(4,0)\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "manual": true,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 8,
+                "question": "6(a)(i)",
+                "marks": 1,
+                "part": "",
+                "origin": "exam-import"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 390\" width=\"100%\" height=\"300\" style=\"max-width:420px;display:block;margin:auto;background:#fff\"><line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"350\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"190\" x2=\"380\" y2=\"190\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"92\" y1=\"30\" x2=\"92\" y2=\"350\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"158\" x2=\"380\" y2=\"158\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"124\" y1=\"30\" x2=\"124\" y2=\"350\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"126\" x2=\"380\" y2=\"126\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"156\" y1=\"30\" x2=\"156\" y2=\"350\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"94\" x2=\"380\" y2=\"94\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"188\" y1=\"30\" x2=\"188\" y2=\"350\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"62\" x2=\"380\" y2=\"62\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"220\" y1=\"30\" x2=\"220\" y2=\"350\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"30\" x2=\"380\" y2=\"30\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"252\" y1=\"30\" x2=\"252\" y2=\"350\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"-2\" x2=\"380\" y2=\"-2\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"284\" y1=\"30\" x2=\"284\" y2=\"350\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"-34\" x2=\"380\" y2=\"-34\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"316\" y1=\"30\" x2=\"316\" y2=\"350\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"-66\" x2=\"380\" y2=\"-66\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"348\" y1=\"30\" x2=\"348\" y2=\"350\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"-98\" x2=\"380\" y2=\"-98\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"380\" y1=\"30\" x2=\"380\" y2=\"350\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"-130\" x2=\"380\" y2=\"-130\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"30\" x2=\"380\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"220\" y1=\"30\" x2=\"220\" y2=\"350\" stroke=\"#475569\" stroke-width=\"1.8\"/><text x=\"60\" y=\"47\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">-5</text><text x=\"211\" y=\"194\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">-5</text><text x=\"92\" y=\"47\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">-4</text><text x=\"211\" y=\"162\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">-4</text><text x=\"124\" y=\"47\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">-3</text><text x=\"211\" y=\"130\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">-3</text><text x=\"156\" y=\"47\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">-2</text><text x=\"211\" y=\"98\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">-2</text><text x=\"188\" y=\"47\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">-1</text><text x=\"211\" y=\"66\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">-1</text><text x=\"252\" y=\"47\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">1</text><text x=\"211\" y=\"2\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">1</text><text x=\"284\" y=\"47\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">2</text><text x=\"211\" y=\"-30\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">2</text><text x=\"316\" y=\"47\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">3</text><text x=\"211\" y=\"-62\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">3</text><text x=\"348\" y=\"47\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">4</text><text x=\"211\" y=\"-94\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">4</text><text x=\"380\" y=\"47\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">5</text><text x=\"211\" y=\"-126\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">5</text><line x1=\"252\" y1=\"-66\" x2=\"252\" y2=\"30\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"252\" y1=\"30\" x2=\"348\" y2=\"30\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"348\" y1=\"30\" x2=\"252\" y2=\"-66\" stroke=\"#334155\" stroke-width=\"2\" /><circle cx=\"252\" cy=\"-66\" r=\"3.5\" fill=\"#7c3aed\"/><text x=\"259\" y=\"-73\" font-size=\"12\" fill=\"#312e81\" font-weight=\"700\">A</text><circle cx=\"252\" cy=\"30\" r=\"3.5\" fill=\"#7c3aed\"/><text x=\"259\" y=\"23\" font-size=\"12\" fill=\"#312e81\" font-weight=\"700\">B</text><circle cx=\"348\" cy=\"30\" r=\"3.5\" fill=\"#7c3aed\"/><text x=\"355\" y=\"23\" font-size=\"12\" fill=\"#312e81\" font-weight=\"700\">C</text><text x=\"256.8\" y=\"-70.80000000000001\" font-size=\"13\" fill=\"#7c3aed\" font-weight=\"700\">A</text><text x=\"256.8\" y=\"25.19999999999999\" font-size=\"13\" fill=\"#7c3aed\" font-weight=\"700\">B</text><text x=\"352.8\" y=\"25.19999999999999\" font-size=\"13\" fill=\"#7c3aed\" font-weight=\"700\">C</text></svg>"
+              }
+            },
+            {
+              "id": "fsh-y8-2020-q6aii",
+              "type": "review",
+              "difficulty": "medium",
+              "stem": "(ii) Draw the image after the triangle is reflected about the x-axis.",
+              "answer": "Sample image vertices: A′(−4, −4), B′(−4, −1), C′(−1, −1). Each point is the same distance below the x-axis as its original is above it.",
+              "hint": "For a reflection in the x-axis, keep x and change the sign of y.",
+              "keyPoints": [
+                {
+                  "text": "reflected about the x-axis",
+                  "note": "Use (x, y) → (x, −y), then plot and connect the three image points."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "The x-axis reflection rule is ((x,y)\\mapsto(x,-y)).",
+                  "work": "\\(A(-4,4)\\to A'(-4,-4)\\)"
+                },
+                {
+                  "explain": "Apply the same rule to B and C.",
+                  "work": "\\(B(-4,1)\\to B'(-4,-1)\\)\n\\(C(-1,1)\\to C'(-1,-1)\\)"
+                },
+                {
+                  "explain": "Plot the three reflected vertices and connect them in order.",
+                  "work": "\\(A'(-4,-4),\\quad B'(-4,-1),\\quad C'(-1,-1)\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "manual": true,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 8,
+                "question": "6(a)(ii)",
+                "marks": 1,
+                "part": "",
+                "origin": "exam-import"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 390\" width=\"100%\" height=\"300\" style=\"max-width:420px;display:block;margin:auto;background:#fff\"><line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"350\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"190\" x2=\"380\" y2=\"190\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"92\" y1=\"30\" x2=\"92\" y2=\"350\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"158\" x2=\"380\" y2=\"158\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"124\" y1=\"30\" x2=\"124\" y2=\"350\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"126\" x2=\"380\" y2=\"126\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"156\" y1=\"30\" x2=\"156\" y2=\"350\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"94\" x2=\"380\" y2=\"94\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"188\" y1=\"30\" x2=\"188\" y2=\"350\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"62\" x2=\"380\" y2=\"62\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"220\" y1=\"30\" x2=\"220\" y2=\"350\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"30\" x2=\"380\" y2=\"30\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"252\" y1=\"30\" x2=\"252\" y2=\"350\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"-2\" x2=\"380\" y2=\"-2\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"284\" y1=\"30\" x2=\"284\" y2=\"350\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"-34\" x2=\"380\" y2=\"-34\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"316\" y1=\"30\" x2=\"316\" y2=\"350\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"-66\" x2=\"380\" y2=\"-66\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"348\" y1=\"30\" x2=\"348\" y2=\"350\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"-98\" x2=\"380\" y2=\"-98\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"380\" y1=\"30\" x2=\"380\" y2=\"350\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"-130\" x2=\"380\" y2=\"-130\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"30\" x2=\"380\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"220\" y1=\"30\" x2=\"220\" y2=\"350\" stroke=\"#475569\" stroke-width=\"1.8\"/><text x=\"60\" y=\"47\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">-5</text><text x=\"211\" y=\"194\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">-5</text><text x=\"92\" y=\"47\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">-4</text><text x=\"211\" y=\"162\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">-4</text><text x=\"124\" y=\"47\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">-3</text><text x=\"211\" y=\"130\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">-3</text><text x=\"156\" y=\"47\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">-2</text><text x=\"211\" y=\"98\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">-2</text><text x=\"188\" y=\"47\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">-1</text><text x=\"211\" y=\"66\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">-1</text><text x=\"252\" y=\"47\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">1</text><text x=\"211\" y=\"2\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">1</text><text x=\"284\" y=\"47\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">2</text><text x=\"211\" y=\"-30\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">2</text><text x=\"316\" y=\"47\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">3</text><text x=\"211\" y=\"-62\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">3</text><text x=\"348\" y=\"47\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">4</text><text x=\"211\" y=\"-94\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">4</text><text x=\"380\" y=\"47\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">5</text><text x=\"211\" y=\"-126\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">5</text><line x1=\"92\" y1=\"158\" x2=\"92\" y2=\"62\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"92\" y1=\"62\" x2=\"188\" y2=\"62\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"188\" y1=\"62\" x2=\"92\" y2=\"158\" stroke=\"#334155\" stroke-width=\"2\" /><circle cx=\"92\" cy=\"158\" r=\"3.5\" fill=\"#7c3aed\"/><text x=\"99\" y=\"151\" font-size=\"12\" fill=\"#312e81\" font-weight=\"700\">A</text><circle cx=\"92\" cy=\"62\" r=\"3.5\" fill=\"#7c3aed\"/><text x=\"99\" y=\"55\" font-size=\"12\" fill=\"#312e81\" font-weight=\"700\">B</text><circle cx=\"188\" cy=\"62\" r=\"3.5\" fill=\"#7c3aed\"/><text x=\"195\" y=\"55\" font-size=\"12\" fill=\"#312e81\" font-weight=\"700\">C</text><text x=\"96.8\" y=\"153.2\" font-size=\"13\" fill=\"#7c3aed\" font-weight=\"700\">A</text><text x=\"96.8\" y=\"57.19999999999999\" font-size=\"13\" fill=\"#7c3aed\" font-weight=\"700\">B</text><text x=\"192.8\" y=\"57.19999999999999\" font-size=\"13\" fill=\"#7c3aed\" font-weight=\"700\">C</text></svg>"
+              }
+            },
+            {
+              "id": "fsh-y8-2020-q6aiii",
+              "type": "review",
+              "difficulty": "medium",
+              "stem": "(iii) Draw the image after the triangle is rotated 90° clockwise around the origin.",
+              "answer": "Sample image vertices: A′(4, 4), B′(1, 4), C′(1, 1). A quarter-turn clockwise about the origin preserves all lengths and angles.",
+              "hint": "Use the 90° clockwise rule (x, y) → (y, −x).",
+              "keyPoints": [
+                {
+                  "text": "90° clockwise",
+                  "note": "Swap the coordinates and make the new y-coordinate the negative of the original x-coordinate."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "For a (90^\\circ) clockwise rotation about the origin, use ((x,y)\\mapsto(y,-x)).",
+                  "work": "\\(A(-4,4)\\to A'(4,4)\\)"
+                },
+                {
+                  "explain": "Apply the rule to the other vertices.",
+                  "work": "\\(B(-4,1)\\to B'(1,4)\\)\n\\(C(-1,1)\\to C'(1,1)\\)"
+                },
+                {
+                  "explain": "Plot the new vertices and connect in the same order.",
+                  "work": "\\(A'(4,4),\\quad B'(1,4),\\quad C'(1,1)\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "manual": true,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 9,
+                "question": "6(a)(iii)",
+                "marks": 1,
+                "part": "",
+                "origin": "exam-import"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 390\" width=\"100%\" height=\"300\" style=\"max-width:420px;display:block;margin:auto;background:#fff\"><line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"350\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"190\" x2=\"380\" y2=\"190\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"92\" y1=\"30\" x2=\"92\" y2=\"350\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"158\" x2=\"380\" y2=\"158\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"124\" y1=\"30\" x2=\"124\" y2=\"350\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"126\" x2=\"380\" y2=\"126\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"156\" y1=\"30\" x2=\"156\" y2=\"350\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"94\" x2=\"380\" y2=\"94\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"188\" y1=\"30\" x2=\"188\" y2=\"350\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"62\" x2=\"380\" y2=\"62\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"220\" y1=\"30\" x2=\"220\" y2=\"350\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"30\" x2=\"380\" y2=\"30\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"252\" y1=\"30\" x2=\"252\" y2=\"350\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"-2\" x2=\"380\" y2=\"-2\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"284\" y1=\"30\" x2=\"284\" y2=\"350\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"-34\" x2=\"380\" y2=\"-34\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"316\" y1=\"30\" x2=\"316\" y2=\"350\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"-66\" x2=\"380\" y2=\"-66\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"348\" y1=\"30\" x2=\"348\" y2=\"350\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"-98\" x2=\"380\" y2=\"-98\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"380\" y1=\"30\" x2=\"380\" y2=\"350\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"-130\" x2=\"380\" y2=\"-130\" stroke=\"#dbe4ef\" stroke-width=\"1\"/><line x1=\"60\" y1=\"30\" x2=\"380\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"220\" y1=\"30\" x2=\"220\" y2=\"350\" stroke=\"#475569\" stroke-width=\"1.8\"/><text x=\"60\" y=\"47\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">-5</text><text x=\"211\" y=\"194\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">-5</text><text x=\"92\" y=\"47\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">-4</text><text x=\"211\" y=\"162\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">-4</text><text x=\"124\" y=\"47\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">-3</text><text x=\"211\" y=\"130\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">-3</text><text x=\"156\" y=\"47\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">-2</text><text x=\"211\" y=\"98\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">-2</text><text x=\"188\" y=\"47\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">-1</text><text x=\"211\" y=\"66\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">-1</text><text x=\"252\" y=\"47\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">1</text><text x=\"211\" y=\"2\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">1</text><text x=\"284\" y=\"47\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">2</text><text x=\"211\" y=\"-30\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">2</text><text x=\"316\" y=\"47\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">3</text><text x=\"211\" y=\"-62\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">3</text><text x=\"348\" y=\"47\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">4</text><text x=\"211\" y=\"-94\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">4</text><text x=\"380\" y=\"47\" text-anchor=\"middle\" font-size=\"11\" fill=\"#64748b\">5</text><text x=\"211\" y=\"-126\" text-anchor=\"end\" font-size=\"11\" fill=\"#64748b\">5</text><line x1=\"348\" y1=\"-98\" x2=\"252\" y2=\"-98\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"252\" y1=\"-98\" x2=\"252\" y2=\"-2\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"252\" y1=\"-2\" x2=\"348\" y2=\"-98\" stroke=\"#334155\" stroke-width=\"2\" /><circle cx=\"348\" cy=\"-98\" r=\"3.5\" fill=\"#7c3aed\"/><text x=\"355\" y=\"-105\" font-size=\"12\" fill=\"#312e81\" font-weight=\"700\">A</text><circle cx=\"252\" cy=\"-98\" r=\"3.5\" fill=\"#7c3aed\"/><text x=\"259\" y=\"-105\" font-size=\"12\" fill=\"#312e81\" font-weight=\"700\">B</text><circle cx=\"252\" cy=\"-2\" r=\"3.5\" fill=\"#7c3aed\"/><text x=\"259\" y=\"-9\" font-size=\"12\" fill=\"#312e81\" font-weight=\"700\">C</text><text x=\"352.8\" y=\"-102.80000000000001\" font-size=\"13\" fill=\"#7c3aed\" font-weight=\"700\">A</text><text x=\"256.8\" y=\"-102.80000000000001\" font-size=\"13\" fill=\"#7c3aed\" font-weight=\"700\">B</text><text x=\"256.8\" y=\"-6.800000000000011\" font-size=\"13\" fill=\"#7c3aed\" font-weight=\"700\">C</text></svg>"
+              }
+            }
+          ],
+          "hint": "Write the coordinate rule first, then apply it separately to A, B, and C.",
+          "keyPoints": [
+            {
+              "text": "coordinates",
+              "note": "Keep the original vertex labels attached to the transformed coordinates."
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "sourcePaper": "Task 4 2020 Yr 8 yearly",
+            "school": "Fort Street High School",
+            "year": 2020,
+            "page": 9,
+            "question": "Question 6(a)",
+            "marks": 3,
+            "part": "",
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "fsh-y8-2020-q6b",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "(b) Name the congruency test you would use to show that the following pairs of triangles of triangles are congruent.",
+          "parts": [
+            {
+              "id": "fsh-y8-2020-q6bi",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(i) Name the congruency test for the two right-angled triangles.",
+              "options": [
+                "RHS",
+                "SSS",
+                "SAS",
+                "ASA"
+              ],
+              "answer": 0,
+              "hint": "Both triangles are right-angled, share the hypotenuse RS, and have one equal leg.",
+              "keyPoints": [
+                {
+                  "text": "right-angled triangles",
+                  "note": "Look for a right angle, equal hypotenuses, and one more corresponding side."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "The two triangles are (\\triangle RLS) and (\\triangle RMS). Both have a right angle, at (L) and (M).",
+                  "work": ""
+                },
+                {
+                  "explain": "The hypotenuse (RS) is shared by both triangles.",
+                  "work": "\\(RS=RS\\quad\\text{(common hypotenuse)}\\)"
+                },
+                {
+                  "explain": "The marked sides are equal.",
+                  "work": "\\(RL=RM\\)"
+                },
+                {
+                  "explain": "Right angle, hypotenuse, and one side give the RHS congruence test.",
+                  "work": "\\(\\boxed{\\text{RHS}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 10,
+                "question": "6(b)(i)",
+                "marks": 1,
+                "part": "",
+                "origin": "exam-import"
+              }
+            },
+            {
+              "id": "fsh-y8-2020-q6bii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(ii) Name the congruency test for the two triangles.",
+              "options": [
+                "ASA",
+                "AAS",
+                "RHS",
+                "SSS"
+              ],
+              "answer": 0,
+              "hint": "Find the third angle in each triangle, then use the marked corresponding side.",
+              "keyPoints": [
+                {
+                  "text": "Name the congruency test for the tw",
+                  "note": "The 30° angle in each triangle follows from the triangle angle sum."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "In (\\triangle QOF), the missing angle is.",
+                  "work": "\\(180^\\circ-80^\\circ-30^\\circ=70^\\circ\\)"
+                },
+                {
+                  "explain": "In (\\triangle APH), the missing angle is.",
+                  "work": "\\(180^\\circ-70^\\circ-80^\\circ=30^\\circ\\)"
+                },
+                {
+                  "explain": "The marked sides (QF) and (AH) correspond and lie between the equal (80^\\circ) and (30^\\circ) angles.",
+                  "work": ""
+                },
+                {
+                  "explain": "Two angles and the included side establish.",
+                  "work": "\\(\\boxed{\\text{ASA}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 10,
+                "question": "6(b)(ii)",
+                "marks": 1,
+                "part": "",
+                "origin": "exam-import"
+              }
+            }
+          ],
+          "hint": "Check exactly which matching sides and angles are marked; do not use SSA as a congruence test.",
+          "keyPoints": [
+            {
+              "text": "congruency test",
+              "note": "Use the named test only when all its required matching measurements are present."
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "sourcePaper": "Task 4 2020 Yr 8 yearly",
+            "school": "Fort Street High School",
+            "year": 2020,
+            "page": 10,
+            "question": "Question 6(b)",
+            "marks": 2,
+            "part": "",
+            "origin": "exam-import"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 235\" width=\"100%\" height=\"220\" style=\"max-width:440px;display:block;margin:auto;background:#fff\"><g fill=\"#dbeafe\" fill-opacity=\".4\" stroke=\"#334155\" stroke-width=\"2\"><path d=\"M55 45 L75 165 L190 45 Z\"/><path d=\"M250 165 L355 45 L375 165 Z\"/></g><path d=\"M55 45 L190 45 M250 165 L375 165\" stroke=\"#f59e0b\" stroke-width=\"3\"/><path d=\"M55 45 h14 v14 M375 165 h-14 v-14\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"2\"/><path d=\"M70 52 Q82 57 84 70 M175 46 Q171 58 161 62 M353 60 Q365 70 366 83 M264 154 Q275 143 287 139\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/><text x=\"43\" y=\"40\" font-size=\"13\">Q</text><text x=\"68\" y=\"184\" font-size=\"13\">O</text><text x=\"194\" y=\"40\" font-size=\"13\">F</text><text x=\"238\" y=\"184\" font-size=\"13\">A</text><text x=\"352\" y=\"40\" font-size=\"13\">P</text><text x=\"379\" y=\"184\" font-size=\"13\">H</text><text x=\"92\" y=\"80\" font-size=\"12\">80°</text><text x=\"151\" y=\"72\" font-size=\"12\">30°</text><text x=\"316\" y=\"103\" font-size=\"12\">70°</text><text x=\"336\" y=\"157\" font-size=\"12\">80°</text><path d=\"M120 38 l5 14 M309 158 l5 14\" stroke=\"#f59e0b\" stroke-width=\"2\"/></svg>"
+          }
+        },
+        {
+          "id": "fsh-y8-2020-q6c",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "(c) Consider triangles ABC and ACD as shown:",
+          "parts": [
+            {
+              "id": "fsh-y8-2020-q6ci",
+              "type": "review",
+              "difficulty": "medium",
+              "stem": "(i) Prove that the two triangles are congruent.",
+              "answer": "In △ABC and △ADC: BC = DC (given by matching tick marks); ∠BCA = ∠DCA (given by matching angle marks); AC = AC (common side). Therefore △ABC ≅ △ADC by SAS.",
+              "hint": "Compare triangles ABC and ADC. Identify the equal side pair, the included angle pair, and the shared side.",
+              "keyPoints": [
+                {
+                  "text": "Prove that the two triangles are co",
+                  "note": "State each matching fact and its reason, then name the congruence test."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Compare (\\triangle ABC) and (\\triangle ADC). The tick marks show the first equal side pair.",
+                  "work": "\\(BC=DC\\quad\\text{(given by matching ticks)}\\)"
+                },
+                {
+                  "explain": "The matching angle marks at C show the included angles are equal.",
+                  "work": "\\(\\angle BCA=\\angle ACD\\quad\\text{(given by matching angle marks)}\\)"
+                },
+                {
+                  "explain": "The triangles share side AC.",
+                  "work": "\\(AC=AC\\quad\\text{(common side)}\\)"
+                },
+                {
+                  "explain": "The equal angle lies between the two corresponding equal sides, so the test is SAS.",
+                  "work": "\\(\\triangle ABC\\cong\\triangle ADC\\quad\\text{(SAS)}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "manual": true,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 10,
+                "question": "6(c)(i)",
+                "marks": 2,
+                "part": "",
+                "origin": "exam-import"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 260\" width=\"100%\" height=\"240\" style=\"max-width:300px;display:block;margin:auto;background:#fff\"><path d=\"M150 30 L75 125 L150 230 L225 125 Z M150 30 L150 230\" fill=\"#dbeafe\" fill-opacity=\".55\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"150\" y1=\"30\" x2=\"75\" y2=\"125\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"150\" y1=\"30\" x2=\"225\" y2=\"125\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"75\" y1=\"125\" x2=\"150\" y2=\"230\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"225\" y1=\"125\" x2=\"150\" y2=\"230\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"230\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M143 207 Q150 192 157 207\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"3\"/><path d=\"M142 211 Q150 222 158 211\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"3\"/><text x=\"150\" y=\"20\" text-anchor=\"middle\" font-size=\"13\">A</text><text x=\"62\" y=\"128\" font-size=\"13\">B</text><text x=\"150\" y=\"248\" text-anchor=\"middle\" font-size=\"13\">C</text><text x=\"229\" y=\"128\" font-size=\"13\">D</text><text x=\"90\" y=\"68\" font-size=\"12\">23 mm</text><text x=\"191\" y=\"68\" font-size=\"12\">x</text></svg>"
+              }
+            },
+            {
+              "id": "fsh-y8-2020-q6cii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(ii) Hence, find the value of \\(x\\).",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 260\" width=\"100%\" height=\"240\" style=\"max-width:300px;display:block;margin:auto;background:#fff\"><path d=\"M150 30 L75 125 L150 230 L225 125 Z M150 30 L150 230\" fill=\"#dbeafe\" fill-opacity=\".55\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"150\" y1=\"30\" x2=\"75\" y2=\"125\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"150\" y1=\"30\" x2=\"225\" y2=\"125\" stroke=\"#f59e0b\" stroke-width=\"4\"/><line x1=\"75\" y1=\"125\" x2=\"150\" y2=\"230\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"225\" y1=\"125\" x2=\"150\" y2=\"230\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"230\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M143 207 Q150 192 157 207\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M142 211 Q150 222 158 211\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"150\" y=\"20\" text-anchor=\"middle\" font-size=\"13\">A</text><text x=\"62\" y=\"128\" font-size=\"13\">B</text><text x=\"150\" y=\"248\" text-anchor=\"middle\" font-size=\"13\">C</text><text x=\"229\" y=\"128\" font-size=\"13\">D</text><text x=\"90\" y=\"68\" font-size=\"12\">23 mm</text><text x=\"191\" y=\"68\" font-size=\"12\">x</text></svg>"
+              },
+              "options": [
+                "\\(23\\text{ mm}\\)",
+                "\\(46\\text{ mm}\\)",
+                "\\(11.5\\text{ mm}\\)",
+                "\\(x\\) cannot be determined"
+              ],
+              "answer": 0,
+              "hint": "Use the corresponding sides from the congruent triangles.",
+              "keyPoints": [
+                {
+                  "text": "\\(x\\)",
+                  "note": "The side AB corresponds to AD in the congruence statement."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "From (\\triangle ABC\\cong\\triangle ADC), corresponding sides are equal.",
+                  "work": "\\(AB=AD\\)"
+                },
+                {
+                  "explain": "The diagram gives (AB=23\\text{ mm}) and labels (AD=x).",
+                  "work": "\\(23=x\\text{ mm}\\)"
+                },
+                {
+                  "explain": "Therefore.",
+                  "work": "\\(\\boxed{x=23\\text{ mm}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 10,
+                "question": "6(c)(ii)",
+                "marks": 1,
+                "part": "",
+                "origin": "exam-import"
+              }
+            }
+          ],
+          "hint": "Match each fact in one triangle with the corresponding fact in the other.",
+          "keyPoints": [
+            {
+              "text": "triangles ABC and ACD",
+              "note": "The shared side is AC; the equal marks identify BC=CD and equal angles at C."
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "sourcePaper": "Task 4 2020 Yr 8 yearly",
+            "school": "Fort Street High School",
+            "year": 2020,
+            "page": 10,
+            "question": "Question 6(c)",
+            "marks": 3,
+            "part": "",
+            "origin": "exam-import"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 260\" width=\"100%\" height=\"240\" style=\"max-width:300px;display:block;margin:auto;background:#fff\"><path d=\"M150 30 L75 125 L150 230 L225 125 Z M150 30 L150 230\" fill=\"#dbeafe\" fill-opacity=\".55\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"150\" y1=\"30\" x2=\"75\" y2=\"125\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"150\" y1=\"30\" x2=\"225\" y2=\"125\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"75\" y1=\"125\" x2=\"150\" y2=\"230\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"225\" y1=\"125\" x2=\"150\" y2=\"230\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"230\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M143 207 Q150 192 157 207\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"3\"/><path d=\"M142 211 Q150 222 158 211\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"3\"/><text x=\"150\" y=\"20\" text-anchor=\"middle\" font-size=\"13\">A</text><text x=\"62\" y=\"128\" font-size=\"13\">B</text><text x=\"150\" y=\"248\" text-anchor=\"middle\" font-size=\"13\">C</text><text x=\"229\" y=\"128\" font-size=\"13\">D</text><text x=\"90\" y=\"68\" font-size=\"12\">23 mm</text><text x=\"191\" y=\"68\" font-size=\"12\">x</text></svg>"
+          }
         }
       ]
     },

@@ -2246,6 +2246,52 @@
           "meta": {
             "source": "Task 3 2022.pdf"
           }
+        },
+        {
+          "id": "fsh-y8-2020-q11b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "(b) Usain Bolt holds the world record for running a 100m sprint in 9.58 seconds. Convert this to kilometres per hour, correct to one decimal place.",
+          "options": [
+            "\\(37.6\\text{ km/h}\\)",
+            "\\(10.4\\text{ km/h}\\)",
+            "\\(3.76\\text{ km/h}\\)",
+            "\\(104.4\\text{ km/h}\\)"
+          ],
+          "answer": 0,
+          "hint": "Find metres per second first, then multiply by 3.6 to convert to km/h.",
+          "keyPoints": [
+            {
+              "text": "100m sprint in 9.58 seconds",
+              "note": "One hour has 3600 seconds and one kilometre has 1000 metres."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the speed in metres per second.",
+              "work": "\\(v=\\frac{100}{9.58}\\approx10.4384\\text{ m/s}\\)"
+            },
+            {
+              "explain": "Convert metres per second to kilometres per hour.",
+              "work": "\\(10.4384\\times3.6=37.578\\text{ km/h}\\)"
+            },
+            {
+              "explain": "Round to one decimal place.",
+              "work": "\\(\\boxed{37.6\\text{ km/h}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2020 Yr 8 yearly",
+            "school": "Fort Street High School",
+            "year": 2020,
+            "page": 18,
+            "question": "11(b)",
+            "marks": 2,
+            "part": "",
+            "origin": "exam-import"
+          }
         }
       ]
     },
@@ -2889,6 +2935,170 @@
           "meta": {
             "source": "Task 3 2022.pdf"
           }
+        },
+        {
+          "id": "fsh-y8-2020-q11a",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "(a) Simplify the following ratios:",
+          "parts": [
+            {
+              "id": "fsh-y8-2020-q11ai",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(i) \\(16:56\\)",
+              "options": [
+                "\\(2:7\\)",
+                "\\(4:14\\)",
+                "\\(7:2\\)",
+                "\\(8:28\\)"
+              ],
+              "answer": 0,
+              "hint": "Divide both parts of the ratio by their highest common factor.",
+              "keyPoints": [
+                {
+                  "text": "16:56",
+                  "note": "Divide both numbers by 8 to reach simplest form."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Find the highest common factor of 16 and 56.",
+                  "work": "\\(\\operatorname{HCF}(16,56)=8\\)"
+                },
+                {
+                  "explain": "Divide each part by 8.",
+                  "work": "\\(16:56=2:7\\)"
+                },
+                {
+                  "explain": "The ratio is now in simplest form.",
+                  "work": "\\(\\boxed{2:7}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 18,
+                "question": "11(a)(i)",
+                "marks": 1,
+                "part": "",
+                "origin": "exam-import"
+              }
+            },
+            {
+              "id": "fsh-y8-2020-q11aii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(ii) \\(156:312:444\\)",
+              "options": [
+                "\\(13:26:37\\)",
+                "\\(1:2:3\\)",
+                "\\(39:78:111\\)",
+                "\\(13:25:37\\)"
+              ],
+              "answer": 0,
+              "hint": "Find the highest common factor shared by all three numbers.",
+              "keyPoints": [
+                {
+                  "text": "156:312:444",
+                  "note": "Check that one common divisor reduces every term."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Find a common factor for all terms.",
+                  "work": "\\(156=12\\times13,\\quad312=12\\times26,\\quad444=12\\times37\\)"
+                },
+                {
+                  "explain": "Divide each part by 12.",
+                  "work": "\\(156:312:444=13:26:37\\)"
+                },
+                {
+                  "explain": "No integer greater than 1 divides all three new terms.",
+                  "work": "\\(\\boxed{13:26:37}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 18,
+                "question": "11(a)(ii)",
+                "marks": 2,
+                "part": "",
+                "origin": "exam-import"
+              }
+            },
+            {
+              "id": "fsh-y8-2020-q11aiii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(iii) \\(2\\frac13:3\\frac12\\)",
+              "options": [
+                "\\(2:3\\)",
+                "\\(7:10\\)",
+                "\\(14:21\\)",
+                "\\(3:2\\)"
+              ],
+              "answer": 0,
+              "hint": "Convert both mixed numbers to improper fractions, then multiply by a common denominator.",
+              "keyPoints": [
+                {
+                  "text": "\\(2\\frac13:3\\frac12\\)",
+                  "note": "Do not treat the mixed numbers as whole-number ratio terms."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Convert each mixed number to an improper fraction.",
+                  "work": "\\(2\\frac13=\\frac73,\\quad3\\frac12=\\frac72\\)"
+                },
+                {
+                  "explain": "Clear denominators by multiplying both terms by 6.",
+                  "work": "\\(\\frac73:\\frac72=14:21\\)"
+                },
+                {
+                  "explain": "Divide both terms by 7.",
+                  "work": "\\(14:21=\\boxed{2:3}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 18,
+                "question": "11(a)(iii)",
+                "marks": 2,
+                "part": "",
+                "origin": "exam-import"
+              }
+            }
+          ],
+          "hint": "For whole-number ratios, divide by the common factor. For mixed-number ratios, convert to fractions first.",
+          "keyPoints": [
+            {
+              "text": "Simplify the following ratios",
+              "note": "The ratio is in simplest form only when all terms have no further common factor."
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "sourcePaper": "Task 4 2020 Yr 8 yearly",
+            "school": "Fort Street High School",
+            "year": 2020,
+            "page": 18,
+            "question": "Question 11(a)",
+            "marks": 5,
+            "part": "",
+            "origin": "exam-import"
+          }
         }
       ]
     },
@@ -3141,6 +3351,56 @@
           "xp": 1,
           "meta": {
             "source": "Task 3 2022.pdf"
+          }
+        },
+        {
+          "id": "fsh-y8-2020-q11c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "(c) Consider a piece of string where four points A, B, C and D are marked in order such that AB : AC = 2 : 3 and BC : CD = 5 : 2. If BC is 10 cm long find the length of AD.",
+          "options": [
+            "\\(34\\text{ cm}\\)",
+            "\\(24\\text{ cm}\\)",
+            "\\(30\\text{ cm}\\)",
+            "\\(40\\text{ cm}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use BC:CD first to find CD. Then use AB:AC with AC=AB+BC.",
+          "keyPoints": [
+            {
+              "text": "AB : AC = 2 : 3",
+              "note": "Because A, B, C are in order, AC=AB+BC."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use (BC:CD=5:2) and (BC=10) cm. One ratio part is (10\\div5=2) cm.",
+              "work": "\\(CD=2\\times2=4\\text{ cm}\\)"
+            },
+            {
+              "explain": "Let (AB=2k) and (AC=3k), because (AB:AC=2:3). Also (AC=AB+BC).",
+              "work": "\\(3k=2k+10\\)"
+            },
+            {
+              "explain": "Solve for (k), then find AB and AC.",
+              "work": "\\(k=10\\text{ cm},\\quad AB=20\\text{ cm},\\quad AC=30\\text{ cm}\\)"
+            },
+            {
+              "explain": "Add the consecutive lengths from A to D.",
+              "work": "\\(AD=AB+BC+CD=20+10+4=\\boxed{34\\text{ cm}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2020 Yr 8 yearly",
+            "school": "Fort Street High School",
+            "year": 2020,
+            "page": 19,
+            "question": "11(c)",
+            "marks": 4,
+            "part": "",
+            "origin": "exam-import"
           }
         }
       ]
