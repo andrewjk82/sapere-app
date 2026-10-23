@@ -40,3 +40,13 @@ export const savePadSettings = (settings, storage = globalThis.localStorage) => 
     storage.setItem(KEY, JSON.stringify(next));
   } catch { /* private mode: not remembered */ }
 };
+
+// "A pen has been used on this device": a new pad (next question, next page) then starts in pen mode — fingers do not draw
+// and one finger can slide the page — instead of only after the first pen stroke on that pad.
+const PEN_KEY = 'sapere:penDevice:v1';
+export const loadPenDevice = (storage = globalThis.localStorage) => {
+  try { return storage.getItem(PEN_KEY) === '1'; } catch { return false; }
+};
+export const savePenDevice = (on, storage = globalThis.localStorage) => {
+  try { if (on) storage.setItem(PEN_KEY, '1'); else storage.removeItem(PEN_KEY); } catch { /* private mode: not remembered */ }
+};

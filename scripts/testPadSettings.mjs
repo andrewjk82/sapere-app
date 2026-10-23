@@ -1,10 +1,10 @@
 /** Notepad pen settings memory. Run via npm run test:homework. */
 import assert from 'node:assert';
-import { loadPadSettings, savePadSettings, cleanPadSettings, DEFAULT_PAD_SETTINGS } from '../src/utils/padSettings.js';
+import { loadPadSettings, savePadSettings, cleanPadSettings, DEFAULT_PAD_SETTINGS, loadPenDevice, savePenDevice } from '../src/utils/padSettings.js';
 
 let passed = 0;
 const test = (name, fn) => { fn(); passed += 1; console.log(`  ✓ ${name}`); };
-const memory = () => { const m = new Map(); return { getItem: (k) => m.get(k) ?? null, setItem: (k, v) => m.set(k, v) }; };
+const memory = () => { const m = new Map(); return { getItem: (k) => m.get(k) ?? null, setItem: (k, v) => m.set(k, v), removeItem: (k) => m.delete(k) }; };
 
 test('nothing saved → defaults', () => assert.deepEqual(loadPadSettings(memory()), DEFAULT_PAD_SETTINGS));
 
@@ -34,6 +34,16 @@ test('storage that throws is harmless', () => {
   const broken = { getItem() { throw new Error('x'); }, setItem() { throw new Error('x'); } };
   assert.deepEqual(loadPadSettings(broken), DEFAULT_PAD_SETTINGS);
   savePadSettings(DEFAULT_PAD_SETTINGS, broken);
+});
+
+test('a pen used on this device is remembered, and can be forgotten', () => {
+  const s = memory();
+  assert.equal(loadPenDevice(s), false);
+  savePenDevice(true, s);
+  assert.equal(loadPenDevice(s), true);
+  savePenDevice(false, s);
+  assert.equal(loadPenDevice(s), false);
+  assert.equal(loadPenDevice({ getItem() { throw new Error('x'); } }), false);
 });
 
 console.log(`\npad settings: ${passed} passed`);

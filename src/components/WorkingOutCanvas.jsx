@@ -9,14 +9,14 @@ import { eraseStrokesAlong, STROKE_ERASE_RADIUS } from '../utils/strokeErase';
 import { isScribbleEraseOn, scribbleTargets } from '../utils/scribbleErase';
 import { recognizeShape, isHoldToShapeOn, HOLD_MS, HOLD_MOVE } from '../utils/shapeSnap';
 import { snapAngle } from '../utils/lassoSelect';
-import { loadPadSettings, savePadSettings } from '../utils/padSettings';
+import { loadPadSettings, savePadSettings, loadPenDevice, savePenDevice } from '../utils/padSettings';
 import { newGridSticker, cleanStickerPages, drawGridSticker, stickerBox, STICKER_MAX_PER_PAGE } from '../utils/canvasStickers';
 import {
   PAGE_W, PAGE_H, EXPORT_SCALE, SNAP_ZOOM, fitScale, clampPos, zoomAt, pageCentre, viewForCentre, backingScale, classifyTwoFinger, classifyMultiTap,
 } from '../utils/padView';
 
 // ⬆ Bump this every time you modify the canvas so you can confirm the deployed version
-const CANVAS_VERSION = 'v10.11-finger-scroll';
+const CANVAS_VERSION = 'v10.12-finger-scroll2';
 
 // Minimum squared distance between captured points (~1.4px).
 const MIN_DIST_SQ = 2;
@@ -219,7 +219,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   const rectRef = useRef(null);        // { left, top, sx, sy } cached at pointerdown: screen px → page units
   const lastSampleRef = useRef({ x: 0, y: 0, t: 0 });
   const smoothWRef = useRef(3);        // low-pass-filtered line width
-  const penSeenRef = useRef(false);    // a pen/stylus has been used → reject palm
+  const penSeenRef = useRef(loadPenDevice());    // a pen/stylus has been used (here, ever) → reject palm
   const lastPenAtRef = useRef(0);      // last time a pen touched or hovered the screen (a resting palm is not a scroll)
   const rafIdRef = useRef(0);          // pending requestAnimationFrame id for live render
   const canceledPenStrokeRef = useRef(null);
@@ -282,7 +282,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   const [activeTool, setActiveTool] = useState(remembered.tool);
   const [eraserMode, setEraserMode] = useState(remembered.eraserMode);
   const [confirmClear, setConfirmClear] = useState(false);
-  const [palmGuard, setPalmGuard] = useState(false); // default: accept all input
+  const [palmGuard, setPalmGuard] = useState(() => loadPenDevice()); // fingers draw until a pen has been used on this device
   const [strokeColor, setStrokeColor] = useState(remembered.color);
   const [highlighterColor, setHighlighterColor] = useState(remembered.highlighter);
   const [strokeWidth, setStrokeWidth] = useState(remembered.width);
@@ -863,6 +863,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     // First pen/stylus contact → auto-enable palm rejection.
     if (isPen && !penSeenRef.current) {
       penSeenRef.current = true;
+      savePenDevice(true);
       setPalmGuard(true);
     }
     // Palm rejection: ignore finger input once a pen is in use (or toggled on).
@@ -1355,8 +1356,8 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
       oneFinger = null;
       if (e.touches.length === 1 && e.changedTouches.length === 1 && !pageNavRef.current.isSubmitted) {
         const t = e.changedTouches[0];
-        const fingerTip = t.touchType !== 'stylus' && (t.radiusX || 0) < 22 && (t.radiusY || 0) < 22;
-        const onPage = displayCanvasRef.current?.contains(e.target) && !e.target?.closest?.('button, a, label, select, input, [data-lasso-handle]');
+        const fingerTip = t.touchType !== 'stylus' && Math.max(t.radiusX || 0, t.radiusY || 0) < 50;   // iPad fingertips report ~15–35; a resting palm is far bigger
+        const onPage = viewportRef.current?.contains(e.target) && !e.target?.closest?.('button, a, label, select, input, [data-lasso-handle]');
         if ((penSeenRef.current || palmGuardRef.current) && fingerTip && onPage && performance.now() - lastPenAtRef.current > 500) {
           oneFinger = { id: t.identifier, x0: t.clientX, y0: t.clientY, base: pagePosRef.current, fired: false };
         }
@@ -1414,7 +1415,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     };
 
     const onPointerMove = (e) => {
-      if (e.pointerType === 'pen') { lastPenAtRef.current = performance.now(); return; }   // also while the pencil only hovers
+      if (e.pointerType === 'pen') { if (e.buttons > 0) lastPenAtRef.current = performance.now(); return; }   // pen on the screen — a hovering pencil does not count
       if (e.pointerType !== 'touch') return;
       if (!activeTouches.has(e.pointerId)) return;
       activeTouches.set(e.pointerId, { x: e.clientX, y: e.clientY });
@@ -1675,7 +1676,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
                 <span style={{ fontSize: '0.6rem', fontWeight: 700, color: '#a5b4fc', background: '#eef2ff', borderRadius: '4px', padding: '1px 5px', letterSpacing: '0.05em' }}>{CANVAS_VERSION}</span>
               </span>
             )}
-            <button onClick={() => setPalmGuard(v => { if (v) penSeenRef.current = false; return !v; })} title={palmGuard ? 'Pen Only — tap to allow finger drawing' : 'All Touch — tap to draw with the pen only'} aria-label={palmGuard ? 'Pen Only' : 'All Touch'} style={{ height: '30px', padding: hideTitle ? '0 8px' : '0 10px', borderRadius: '8px', border: 'none', cursor: 'pointer', background: palmGuard ? '#ecfdf5' : '#f1f5f9', color: palmGuard ? '#047857' : '#64748b', fontSize: '0.72rem', fontWeight: 900, display: 'flex', alignItems: 'center', gap: '4px' }}>
+            <button onClick={() => setPalmGuard(v => { if (v) { penSeenRef.current = false; savePenDevice(false); } return !v; })} title={palmGuard ? 'Pen Only — tap to allow finger drawing' : 'All Touch — tap to draw with the pen only'} aria-label={palmGuard ? 'Pen Only' : 'All Touch'} style={{ height: '30px', padding: hideTitle ? '0 8px' : '0 10px', borderRadius: '8px', border: 'none', cursor: 'pointer', background: palmGuard ? '#ecfdf5' : '#f1f5f9', color: palmGuard ? '#047857' : '#64748b', fontSize: '0.72rem', fontWeight: 900, display: 'flex', alignItems: 'center', gap: '4px' }}>
               <MousePointer2 size={14} />
               {!hideTitle && (palmGuard ? 'Pen Only' : 'All Touch')}
             </button>
