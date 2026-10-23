@@ -9,6 +9,7 @@ import { db } from '../firebase/config';
 import { doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
+import { withTimeout } from '../utils/withTimeout';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { localCache } from '../services/localCacheService';
 import { toThumbnailUrl, getChapterCheatSheets } from '../utils/cheatSheetUtils';
@@ -176,7 +177,9 @@ const LearningPath = ({ profile }) => {
 
     const loadCurriculum = async () => {
       try {
-        const metaSnap = await getDoc(doc(db, 'sync_meta', 'curriculum'));
+        // A read that gets no answer (offline, blocked network, stuck local cache) must not leave the page loading forever:
+        // after 8 s the catch below falls back to the saved / built-in curriculum.
+        const metaSnap = await withTimeout(getDoc(doc(db, 'sync_meta', 'curriculum')));
         const remoteVersion = Number(metaSnap.data()?.version || metaSnap.data()?.updatedAt?.toMillis?.() || 0);
         if (cached?.chapters?.length > 0 && cached?.version === remoteVersion && remoteVersion > 0) {
           // Curriculum unchanged. Question content freshness is no longer
@@ -185,7 +188,7 @@ const LearningPath = ({ profile }) => {
           // (chapterQuestionsCache), so there's nothing to pre-invalidate.
           return;
         }
-        const snap = await getDoc(doc(db, 'curriculum', docId));
+        const snap = await withTimeout(getDoc(doc(db, 'curriculum', docId)));
         if (cancelled) return;
         if (snap.exists() && snap.data().chapters?.length > 0) {
           const chapters = normalizeCurriculumTopics(snap.data().chapters);
@@ -199,8 +202,9 @@ const LearningPath = ({ profile }) => {
           setCurriculum(resolveFallbackCurriculum());
         }
       } catch (e) {
-        console.warn('LearningPath curriculum load failed, using fallback:', e?.code || e);
-        if (!cancelled) setCurriculum(resolveFallbackCurriculum());
+        console.warn('LearningPath curriculum load failed, using fallback:', e?.code || e?.message || e);
+        // Keep what is already on screen (the saved copy); only a first-ever load with nothing saved uses the built-in list.
+        if (!cancelled && !(Array.isArray(cached?.chapters) && cached.chapters.length > 0)) setCurriculum(resolveFallbackCurriculum());
       } finally {
         if (!cancelled) setLoading(false);
       }

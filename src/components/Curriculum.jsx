@@ -9,6 +9,7 @@ import { auth, db } from '../firebase/config';
 import { doc, onSnapshot, collection, updateDoc, setDoc, deleteDoc, getDocs, getDoc, query, where, getCountFromServer, serverTimestamp } from 'firebase/firestore';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
+import { withTimeout } from '../utils/withTimeout';
 import { useProfile } from '../context/ProfileContext';
 import { useToast } from '../context/ToastContext';
 import { hasLesson, getLesson } from '../lessons/registry';
@@ -303,10 +304,11 @@ const Curriculum = ({ initialSearchId = null, onInitialSearchConsumed } = {}) =>
 
     const fetchCurriculumIfChanged = async () => {
       try {
-        const metaSnap = await getDoc(doc(db, 'sync_meta', 'curriculum'));
+        // No answer from Firestore within 8 s → stop waiting (the finally below ends the loading state).
+        const metaSnap = await withTimeout(getDoc(doc(db, 'sync_meta', 'curriculum')));
         const remoteVersion = Number(metaSnap.data()?.version || metaSnap.data()?.updatedAt?.toMillis?.() || 0);
         if (cached?.records && cached?.version === remoteVersion && remoteVersion > 0) return;
-        const snap = await getDocs(collection(db, 'curriculum'));
+        const snap = await withTimeout(getDocs(collection(db, 'curriculum')), 15000);
         if (cancelled) return;
         const records = snap.docs.map(d => ({ id: d.id, ...d.data() }));
         const version = remoteVersion || Date.now();
