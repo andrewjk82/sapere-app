@@ -1567,13 +1567,13 @@
           "id": "fsh-y8-2020-q10",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "Question 10 – Data Representation & Analysis (6 marks)\n\n(a) The number of siblings from a group of eighth grade students is shown below:\n\n\\(1, 0, 2, 1, 6, 0, 2, 0, 1, 4, 3, 2, 2, 0, 1, 1, 4\\)",
+          "stem": "The number of siblings from a group of eighth grade students is shown below:\n\n\\(1, 0, 2, 1, 6, 0, 2, 0, 1, 4, 3, 2, 2, 0, 1, 1, 4\\)",
           "parts": [
             {
               "id": "fsh-y8-2020-q10ai",
               "type": "review",
               "difficulty": "medium",
-              "stem": "(i) Draw a dot plot for the data.",
+              "stem": "Draw a dot plot for the data.",
               "answer": "A correct dot plot has 4 dots above 0, 5 above 1, 4 above 2, 1 above 3, 2 above 4, no dot above 5, and 1 above 6. The completed plot is shown in the final solution step.",
               "solution": "A correct dot plot has 4 dots above 0, 5 above 1, 4 above 2, 1 above 3, 2 above 4, no dot above 5, and 1 above 6. The completed plot is shown in the final solution step.",
               "hint": "Tally how many times each value from 0 to 6 occurs. Then place one dot above that value for every occurrence.",
@@ -1618,7 +1618,7 @@
               "id": "fsh-y8-2020-q10aii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "(ii) Calculate the mean.",
+              "stem": "Calculate the mean.",
               "options": [
                 "\\(\\frac{30}{16}\\)",
                 "\\(\\frac{30}{17}\\approx1.76\\)",
@@ -1664,7 +1664,7 @@
               "id": "fsh-y8-2020-q10aiii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "(iii) State the median.",
+              "stem": "State the median.",
               "options": [
                 "\\(1\\)",
                 "\\(2\\)",
@@ -1710,7 +1710,7 @@
               "id": "fsh-y8-2020-q10aiv",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "(iv) State the range.",
+              "stem": "State the range.",
               "options": [
                 "\\(6\\)",
                 "\\(5\\)",
@@ -1747,84 +1747,14 @@
                 "part": "10(a)(iv)",
                 "origin": "exam-import"
               }
-            },
-            {
-              "id": "fsh-y8-2020-q10b",
-              "type": "mc",
-              "difficulty": "medium",
-              "stem": "(b) The maths results of twelve students are displayed in the stem-and-leaf plot below. All students received whole number marks (i.e. no half marks). However, three of the results are missing (indicated by the black boxes). Given that the mean is 30.75, state the possible missing test results.",
-              "options": [
-                "\\(\\{(18,21,26),(18,22,25),(18,23,24),(19,21,25),(19,22,24),(19,23,23)\\}\\)",
-                "\\(\\{(18,22,25),(18,23,24),(19,21,25),(19,22,24)\\}\\)",
-                "\\(\\{(18,22,25),(18,23,24),(19,21,25),(19,22,23),(19,23,23)\\}\\)",
-                "\\(\\{(18,22,25),(18,23,24),(19,21,25),(19,22,24),(19,23,23)\\}\\)"
-              ],
-              "answer": 3,
-              "hint": "Multiply the mean by 12 to find the total marks. Subtract the visible marks, then use the ascending leaf order to restrict the missing values.",
-              "keyPoints": [
-                {
-                  "text": "Given that the mean is 30.75",
-                  "note": "The blanks occur after 18 and before 25 in their respective ordered rows."
-                }
-              ],
-              "steps": [
-                {
-                  "explain": "Use the key of a stem-and-leaf plot: the stem is the tens digit and the leaf is the units digit. The visible value on the first row is 18. Call the three missing results \\(a\\), \\(b\\), and \\(c\\), in the order of their rows.",
-                  "work": "\\(1\\mid8=18\\quad\\text{(key)}\\)",
-                  "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 265\" width=\"100%\" height=\"240\" style=\"max-width:360px;display:block;margin:auto;background:#fff\"><text x=\"95\" y=\"28\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">Stem</text><text x=\"220\" y=\"28\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">Leaves</text><line x1=\"140\" y1=\"38\" x2=\"140\" y2=\"225\" stroke=\"#64748b\" stroke-width=\"1.7\"/><text x=\"98\" y=\"73\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">1</text><text x=\"170\" y=\"73\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">8</text><rect x=\"197\" y=\"52\" width=\"24\" height=\"25\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"98\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">2</text><rect x=\"158\" y=\"94\" width=\"24\" height=\"25\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><rect x=\"197\" y=\"94\" width=\"24\" height=\"25\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"248\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">5</text><text x=\"287\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">6</text><text x=\"98\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">3</text><text x=\"170\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">1</text><text x=\"209\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">4</text><text x=\"248\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">9</text><text x=\"98\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">4</text><text x=\"170\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">2</text><text x=\"209\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">3</text><text x=\"248\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">6</text><text x=\"180\" y=\"246\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#7c3aed\">Key: 1 | 8 = 18</text></svg>"
-                  }
-                },
-                {
-                  "explain": "Find the total marks represented by all 12 students. Mean equals total divided by the number of results, so multiply the given mean by 12.",
-                  "work": "\\(\\text{Total}=30.75\\times12=369\\)"
-                },
-                {
-                  "explain": "Add the nine visible marks from the plot. Group by stem to avoid missing a leaf.",
-                  "work": "\\(18+(25+26)+(31+34+39)+(42+43+46)=304\\)"
-                },
-                {
-                  "explain": "Subtract the visible total from the total for all students. This is the sum of the three missing results.",
-                  "work": "\\(a+b+c=369-304=65\\)",
-                  "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 265\" width=\"100%\" height=\"240\" style=\"max-width:360px;display:block;margin:auto;background:#fff\"><text x=\"95\" y=\"28\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">Stem</text><text x=\"220\" y=\"28\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">Leaves</text><line x1=\"140\" y1=\"38\" x2=\"140\" y2=\"225\" stroke=\"#64748b\" stroke-width=\"1.7\"/><text x=\"98\" y=\"73\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">1</text><text x=\"170\" y=\"73\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">8</text><rect x=\"197\" y=\"52\" width=\"24\" height=\"25\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"98\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">2</text><rect x=\"158\" y=\"94\" width=\"24\" height=\"25\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><rect x=\"197\" y=\"94\" width=\"24\" height=\"25\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"248\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">5</text><text x=\"287\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">6</text><text x=\"98\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">3</text><text x=\"170\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">1</text><text x=\"209\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">4</text><text x=\"248\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">9</text><text x=\"98\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">4</text><text x=\"170\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">2</text><text x=\"209\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">3</text><text x=\"248\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">6</text><text x=\"180\" y=\"246\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#7c3aed\">Key: 1 | 8 = 18</text></svg>"
-                  }
-                },
-                {
-                  "explain": "Apply the leaf order shown in each row. In the 1-stem row, the missing leaf follows 8, so \\(a\\) is 18 or 19. In the 2-stem row, both missing leaves are at or before 5 and remain in ascending order, so \\(20\\le b\\le c\\le25\\).",
-                  "work": "\\(18\\le a\\le19,\\qquad20\\le b\\le c\\le25\\)"
-                },
-                {
-                  "explain": "Check each possible value of \\(a\\). If \\(a=18\\), then \\(b+c=47\\), giving \\(22+25\\) or \\(23+24\\). If \\(a=19\\), then \\(b+c=46\\), giving \\(21+25\\), \\(22+24\\), or \\(23+23\\). Each triple totals 65 and fits the ordered blanks.",
-                  "work": "\\(\\boxed{(18,22,25),\\ (18,23,24),\\ (19,21,25),\\ (19,22,24),\\ (19,23,23)}\\)",
-                  "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 265\" width=\"100%\" height=\"240\" style=\"max-width:360px;display:block;margin:auto;background:#fff\"><text x=\"95\" y=\"28\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">Stem</text><text x=\"220\" y=\"28\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">Leaves</text><line x1=\"140\" y1=\"38\" x2=\"140\" y2=\"225\" stroke=\"#64748b\" stroke-width=\"1.7\"/><text x=\"98\" y=\"73\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">1</text><text x=\"170\" y=\"73\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">8</text><rect x=\"197\" y=\"52\" width=\"24\" height=\"25\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"98\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">2</text><rect x=\"158\" y=\"94\" width=\"24\" height=\"25\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><rect x=\"197\" y=\"94\" width=\"24\" height=\"25\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"248\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">5</text><text x=\"287\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">6</text><text x=\"98\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">3</text><text x=\"170\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">1</text><text x=\"209\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">4</text><text x=\"248\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">9</text><text x=\"98\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">4</text><text x=\"170\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">2</text><text x=\"209\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">3</text><text x=\"248\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">6</text><text x=\"180\" y=\"246\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#7c3aed\">Key: 1 | 8 = 18</text></svg>"
-                  }
-                }
-              ],
-              "timeLimit": 60,
-              "xp": 1,
-              "meta": {
-                "sourcePaper": "Task 4 2020 Yr 8 yearly",
-                "school": "Fort Street High School",
-                "year": 2020,
-                "page": 17,
-                "question": "10",
-                "marks": 2,
-                "part": "10(b)",
-                "origin": "exam-import"
-              },
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 265\" width=\"100%\" height=\"240\" style=\"max-width:360px;display:block;margin:auto;background:#fff\"><text x=\"95\" y=\"28\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">Stem</text><text x=\"220\" y=\"28\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">Leaves</text><line x1=\"140\" y1=\"38\" x2=\"140\" y2=\"225\" stroke=\"#64748b\" stroke-width=\"1.7\"/><text x=\"98\" y=\"73\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">1</text><text x=\"170\" y=\"73\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">8</text><rect x=\"197\" y=\"52\" width=\"24\" height=\"25\" fill=\"#fff\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"98\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">2</text><rect x=\"158\" y=\"94\" width=\"24\" height=\"25\" fill=\"#fff\" stroke=\"#dc2626\" stroke-width=\"2\"/><rect x=\"197\" y=\"94\" width=\"24\" height=\"25\" fill=\"#fff\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"248\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">5</text><text x=\"287\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">6</text><text x=\"98\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">3</text><text x=\"170\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">1</text><text x=\"209\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">4</text><text x=\"248\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">9</text><text x=\"98\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">4</text><text x=\"170\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">2</text><text x=\"209\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">3</text><text x=\"248\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">6</text></svg>"
-              }
             }
           ],
           "answer": "See sub-questions for individual answers.",
-          "hint": "For each part, identify the data representation or statistic requested. When a mean and missing values are given, use mean × number of values to find the complete total first.",
+          "hint": "For each part, identify the data representation or statistic requested.",
           "keyPoints": [
             {
-              "text": "Data Representation & Analysis",
-              "note": "Select the correct data/statistical method for each sub-question."
+              "text": "The number of siblings",
+              "note": "Use the discrete data set to construct plots and calculate summary statistics."
             }
           ],
           "timeLimit": 60,
@@ -1834,8 +1764,78 @@
             "year": 2020,
             "page": 16,
             "question": "10",
-            "marks": 6,
-            "part": "",
+            "marks": 4,
+            "part": "10(a)",
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "fsh-y8-2020-q10b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The maths results of twelve students are displayed in the stem-and-leaf plot below. All students received whole number marks (i.e. no half marks). However, three of the results are missing (indicated by the black boxes). Given that the mean is 30.75, state the possible missing test results.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 265\" width=\"100%\" height=\"240\" style=\"max-width:360px;display:block;margin:auto;background:#fff\"><text x=\"95\" y=\"28\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">Stem</text><text x=\"220\" y=\"28\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">Leaves</text><line x1=\"140\" y1=\"38\" x2=\"140\" y2=\"225\" stroke=\"#64748b\" stroke-width=\"1.7\"/><text x=\"98\" y=\"73\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">1</text><text x=\"170\" y=\"73\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">8</text><rect x=\"197\" y=\"52\" width=\"24\" height=\"25\" fill=\"#fff\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"98\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">2</text><rect x=\"158\" y=\"94\" width=\"24\" height=\"25\" fill=\"#fff\" stroke=\"#dc2626\" stroke-width=\"2\"/><rect x=\"197\" y=\"94\" width=\"24\" height=\"25\" fill=\"#fff\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"248\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">5</text><text x=\"287\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">6</text><text x=\"98\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">3</text><text x=\"170\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">1</text><text x=\"209\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">4</text><text x=\"248\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">9</text><text x=\"98\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">4</text><text x=\"170\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">2</text><text x=\"209\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">3</text><text x=\"248\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">6</text></svg>"
+          },
+          "options": [
+            "\\(\\{(18,21,26),(18,22,25),(18,23,24),(19,21,25),(19,22,24),(19,23,23)\\}\\)",
+            "\\(\\{(18,22,25),(18,23,24),(19,21,25),(19,22,24)\\}\\)",
+            "\\(\\{(18,22,25),(18,23,24),(19,21,25),(19,22,23),(19,23,23)\\}\\)",
+            "\\(\\{(18,22,25),(18,23,24),(19,21,25),(19,22,24),(19,23,23)\\}\\)"
+          ],
+          "answer": 3,
+          "hint": "Multiply the mean by 12 to find the total marks. Subtract the visible marks, then use the ascending leaf order to restrict the missing values.",
+          "keyPoints": [
+            {
+              "text": "Given that the mean is 30.75",
+              "note": "The blanks occur after 18 and before 25 in their respective ordered rows."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the key of a stem-and-leaf plot: the stem is the tens digit and the leaf is the units digit. The visible value on the first row is 18. Call the three missing results \\(a\\), \\(b\\), and \\(c\\), in the order of their rows.",
+              "work": "\\(1\\mid8=18\\quad\\text{(key)}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 265\" width=\"100%\" height=\"240\" style=\"max-width:360px;display:block;margin:auto;background:#fff\"><text x=\"95\" y=\"28\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">Stem</text><text x=\"220\" y=\"28\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">Leaves</text><line x1=\"140\" y1=\"38\" x2=\"140\" y2=\"225\" stroke=\"#64748b\" stroke-width=\"1.7\"/><text x=\"98\" y=\"73\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">1</text><text x=\"170\" y=\"73\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">8</text><rect x=\"197\" y=\"52\" width=\"24\" height=\"25\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"98\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">2</text><rect x=\"158\" y=\"94\" width=\"24\" height=\"25\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><rect x=\"197\" y=\"94\" width=\"24\" height=\"25\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"248\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">5</text><text x=\"287\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">6</text><text x=\"98\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">3</text><text x=\"170\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">1</text><text x=\"209\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">4</text><text x=\"248\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">9</text><text x=\"98\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">4</text><text x=\"170\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">2</text><text x=\"209\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">3</text><text x=\"248\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">6</text><text x=\"180\" y=\"246\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#7c3aed\">Key: 1 | 8 = 18</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the total marks represented by all 12 students. Mean equals total divided by the number of results, so multiply the given mean by 12.",
+              "work": "\\(\\text{Total}=30.75\\times12=369\\)"
+            },
+            {
+              "explain": "Add the nine visible marks from the plot. Group by stem to avoid missing a leaf.",
+              "work": "\\(18+(25+26)+(31+34+39)+(42+43+46)=304\\)"
+            },
+            {
+              "explain": "Subtract the visible total from the total for all students. This is the sum of the three missing results.",
+              "work": "\\(a+b+c=369-304=65\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 265\" width=\"100%\" height=\"240\" style=\"max-width:360px;display:block;margin:auto;background:#fff\"><text x=\"95\" y=\"28\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">Stem</text><text x=\"220\" y=\"28\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">Leaves</text><line x1=\"140\" y1=\"38\" x2=\"140\" y2=\"225\" stroke=\"#64748b\" stroke-width=\"1.7\"/><text x=\"98\" y=\"73\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">1</text><text x=\"170\" y=\"73\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">8</text><rect x=\"197\" y=\"52\" width=\"24\" height=\"25\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"98\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">2</text><rect x=\"158\" y=\"94\" width=\"24\" height=\"25\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><rect x=\"197\" y=\"94\" width=\"24\" height=\"25\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"248\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">5</text><text x=\"287\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">6</text><text x=\"98\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">3</text><text x=\"170\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">1</text><text x=\"209\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">4</text><text x=\"248\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">9</text><text x=\"98\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">4</text><text x=\"170\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">2</text><text x=\"209\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">3</text><text x=\"248\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">6</text><text x=\"180\" y=\"246\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#7c3aed\">Key: 1 | 8 = 18</text></svg>"
+              }
+            },
+            {
+              "explain": "Apply the leaf order shown in each row. In the 1-stem row, the missing leaf follows 8, so \\(a\\) is 18 or 19. In the 2-stem row, both missing leaves are at or before 5 and remain in ascending order, so \\(20\\le b\\le c\\le25\\).",
+              "work": "\\(18\\le a\\le19,\\qquad20\\le b\\le c\\le25\\)"
+            },
+            {
+              "explain": "Check each possible value of \\(a\\). If \\(a=18\\), then \\(b+c=47\\), giving \\(22+25\\) or \\(23+24\\). If \\(a=19\\), then \\(b+c=46\\), giving \\(21+25\\), \\(22+24\\), or \\(23+23\\). Each triple totals 65 and fits the ordered blanks.",
+              "work": "\\(\\boxed{(18,22,25),\\ (18,23,24),\\ (19,21,25),\\ (19,22,24),\\ (19,23,23)}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 265\" width=\"100%\" height=\"240\" style=\"max-width:360px;display:block;margin:auto;background:#fff\"><text x=\"95\" y=\"28\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">Stem</text><text x=\"220\" y=\"28\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">Leaves</text><line x1=\"140\" y1=\"38\" x2=\"140\" y2=\"225\" stroke=\"#64748b\" stroke-width=\"1.7\"/><text x=\"98\" y=\"73\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">1</text><text x=\"170\" y=\"73\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">8</text><rect x=\"197\" y=\"52\" width=\"24\" height=\"25\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"98\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">2</text><rect x=\"158\" y=\"94\" width=\"24\" height=\"25\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><rect x=\"197\" y=\"94\" width=\"24\" height=\"25\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"248\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">5</text><text x=\"287\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">6</text><text x=\"98\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">3</text><text x=\"170\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">1</text><text x=\"209\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">4</text><text x=\"248\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">9</text><text x=\"98\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">4</text><text x=\"170\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">2</text><text x=\"209\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">3</text><text x=\"248\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">6</text><text x=\"180\" y=\"246\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#7c3aed\">Key: 1 | 8 = 18</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2020 Yr 8 yearly",
+            "school": "Fort Street High School",
+            "year": 2020,
+            "page": 17,
+            "question": "10",
+            "marks": 2,
+            "part": "10(b)",
             "origin": "exam-import"
           }
         }

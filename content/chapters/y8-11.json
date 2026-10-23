@@ -2125,165 +2125,139 @@
           "answer": 3
         },
         {
-          "id": "fsh-y8-2020-q2a",
-          "type": "multipart",
+          "id": "fsh-y8-2020-q2ai",
+          "type": "mc",
           "difficulty": "medium",
-          "stem": "Question 2(a) – Expand and simplify the following:",
-          "parts": [
-            {
-              "id": "fsh-y8-2020-q2ai",
-              "type": "mc",
-              "difficulty": "medium",
-              "stem": "(i) \\(-2(16p-20)\\)",
-              "options": [
-                "\\(-32p+40\\)",
-                "\\(-32p-40\\)",
-                "\\(-18p+20\\)",
-                "\\(32p-40\\)"
-              ],
-              "answer": 0,
-              "hint": "Multiply −2 by each term inside the bracket.",
-              "keyPoints": [
-                {
-                  "text": "\\(-2(16p-20)\\)",
-                  "note": "A negative times a negative gives a positive."
-                }
-              ],
-              "steps": [
-                {
-                  "explain": "Distribute (-2) to both terms inside the bracket.",
-                  "work": "\\((-2)(16p)+(-2)(-20)\\)"
-                },
-                {
-                  "explain": "Multiply each pair.",
-                  "work": "\\(-32p+40\\)"
-                },
-                {
-                  "explain": "The expression is already simplified.",
-                  "work": "\\(\\boxed{-32p+40}\\)"
-                }
-              ],
-              "timeLimit": 60,
-              "xp": 1,
-              "meta": {
-                "sourcePaper": "Task 4 2020 Yr 8 yearly",
-                "school": "Fort Street High School",
-                "year": 2020,
-                "page": 3,
-                "question": "2(a)(i)",
-                "marks": 2,
-                "part": "",
-                "origin": "exam-import"
-              }
-            },
-            {
-              "id": "fsh-y8-2020-q2aii",
-              "type": "mc",
-              "difficulty": "medium",
-              "stem": "(ii) \\((x+3)(5-x)\\)",
-              "options": [
-                "\\(-x^2+2x+15\\)",
-                "\\(-x^2+8x+15\\)",
-                "\\(x^2+2x-15\\)",
-                "\\(-x^2-2x+15\\)"
-              ],
-              "answer": 0,
-              "hint": "Multiply each term in the first bracket by each term in the second bracket.",
-              "keyPoints": [
-                {
-                  "text": "\\((x+3)(5-x)\\)",
-                  "note": "Check the sign of the product 3(−x)."
-                }
-              ],
-              "steps": [
-                {
-                  "explain": "Expand term by term using the distributive law.",
-                  "work": "\\(x(5-x)+3(5-x)\\)"
-                },
-                {
-                  "explain": "Multiply each term.",
-                  "work": "\\(5x-x^2+15-3x\\)"
-                },
-                {
-                  "explain": "Collect the like terms.",
-                  "work": "\\(-x^2+2x+15\\)"
-                }
-              ],
-              "timeLimit": 60,
-              "xp": 1,
-              "meta": {
-                "sourcePaper": "Task 4 2020 Yr 8 yearly",
-                "school": "Fort Street High School",
-                "year": 2020,
-                "page": 3,
-                "question": "2(a)(ii)",
-                "marks": 2,
-                "part": "",
-                "origin": "exam-import"
-              }
-            },
-            {
-              "id": "fsh-y8-2020-q2aiii",
-              "type": "mc",
-              "difficulty": "medium",
-              "stem": "(iii) \\((5x-3y)^2\\)",
-              "options": [
-                "\\(25x^2-30xy+9y^2\\)",
-                "\\(25x^2+9y^2\\)",
-                "\\(25x^2-15xy+9y^2\\)",
-                "\\(25x^2-30xy-9y^2\\)"
-              ],
-              "answer": 0,
-              "hint": "Use (A−B)² = A²−2AB+B².",
-              "keyPoints": [
-                {
-                  "text": "\\((5x-3y)^2\\)",
-                  "note": "The middle term is twice the product of both terms, with a negative sign."
-                }
-              ],
-              "steps": [
-                {
-                  "explain": "Write the square as a product of two identical brackets.",
-                  "work": "\\((5x-3y)(5x-3y)\\)"
-                },
-                {
-                  "explain": "Multiply all pairs of terms.",
-                  "work": "\\(25x^2-15xy-15xy+9y^2\\)"
-                },
-                {
-                  "explain": "Combine the two middle terms.",
-                  "work": "\\(25x^2-30xy+9y^2\\)"
-                }
-              ],
-              "timeLimit": 60,
-              "xp": 1,
-              "meta": {
-                "sourcePaper": "Task 4 2020 Yr 8 yearly",
-                "school": "Fort Street High School",
-                "year": 2020,
-                "page": 3,
-                "question": "2(a)(iii)",
-                "marks": 2,
-                "part": "",
-                "origin": "exam-import"
-              }
-            }
+          "stem": "Expand and simplify \\(-2(16p-20)\\).",
+          "options": [
+            "\\(-32p+40\\)",
+            "\\(-32p-40\\)",
+            "\\(-18p+20\\)",
+            "\\(32p-40\\)"
           ],
-          "hint": "Distribute each term in the first bracket across every term in the second.",
+          "answer": 0,
+          "hint": "Multiply −2 by each term inside the bracket.",
           "keyPoints": [
             {
-              "text": "Expand and simplify",
-              "note": "After expanding, combine only like terms."
+              "text": "\\(-2(16p-20)\\)",
+              "note": "A negative times a negative gives a positive."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Distribute (-2) to both terms inside the bracket.",
+              "work": "\\((-2)(16p)+(-2)(-20)\\)"
+            },
+            {
+              "explain": "Multiply each pair.",
+              "work": "\\(-32p+40\\)"
+            },
+            {
+              "explain": "The expression is already simplified.",
+              "work": "\\(\\boxed{-32p+40}\\)"
             }
           ],
           "timeLimit": 60,
+          "xp": 1,
           "meta": {
             "sourcePaper": "Task 4 2020 Yr 8 yearly",
             "school": "Fort Street High School",
             "year": 2020,
             "page": 3,
-            "question": "Question 2(a)",
-            "marks": 6,
+            "question": "2(a)(i)",
+            "marks": 2,
+            "part": "",
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "fsh-y8-2020-q2aii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify \\((x+3)(5-x)\\).",
+          "options": [
+            "\\(-x^2+2x+15\\)",
+            "\\(-x^2+8x+15\\)",
+            "\\(x^2+2x-15\\)",
+            "\\(-x^2-2x+15\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply each term in the first bracket by each term in the second bracket.",
+          "keyPoints": [
+            {
+              "text": "\\((x+3)(5-x)\\)",
+              "note": "Check the sign of the product 3(−x)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Expand term by term using the distributive law.",
+              "work": "\\(x(5-x)+3(5-x)\\)"
+            },
+            {
+              "explain": "Multiply each term.",
+              "work": "\\(5x-x^2+15-3x\\)"
+            },
+            {
+              "explain": "Collect the like terms.",
+              "work": "\\(-x^2+2x+15\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2020 Yr 8 yearly",
+            "school": "Fort Street High School",
+            "year": 2020,
+            "page": 3,
+            "question": "2(a)(ii)",
+            "marks": 2,
+            "part": "",
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "fsh-y8-2020-q2aiii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify \\((5x-3y)^2\\).",
+          "options": [
+            "\\(25x^2-30xy+9y^2\\)",
+            "\\(25x^2+9y^2\\)",
+            "\\(25x^2-15xy+9y^2\\)",
+            "\\(25x^2-30xy-9y^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Use (A−B)² = A²−2AB+B².",
+          "keyPoints": [
+            {
+              "text": "\\((5x-3y)^2\\)",
+              "note": "The middle term is twice the product of both terms, with a negative sign."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the square as a product of two identical brackets.",
+              "work": "\\((5x-3y)(5x-3y)\\)"
+            },
+            {
+              "explain": "Multiply all pairs of terms.",
+              "work": "\\(25x^2-15xy-15xy+9y^2\\)"
+            },
+            {
+              "explain": "Combine the two middle terms.",
+              "work": "\\(25x^2-30xy+9y^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2020 Yr 8 yearly",
+            "school": "Fort Street High School",
+            "year": 2020,
+            "page": 3,
+            "question": "2(a)(iii)",
+            "marks": 2,
             "part": "",
             "origin": "exam-import"
           }
