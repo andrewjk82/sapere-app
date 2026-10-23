@@ -4119,13 +4119,13 @@
           "id": "fsh-y8-2020-q8a",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "(a) Consider the two points (2, 4) and (−1, −2).",
+          "stem": "Consider the two points (2, 4) and (−1, −2).",
           "parts": [
             {
               "id": "fsh-y8-2020-q8ai",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "(i) Find the gradient between these two points.",
+              "stem": "Find the gradient between these two points.",
               "options": [
                 "\\(2\\)",
                 "\\(-2\\)",
@@ -4133,29 +4133,29 @@
                 "\\(3\\)"
               ],
               "answer": 0,
-              "hint": "Use rise over run: subtract the y-coordinates, then the x-coordinates.",
+              "hint": "Gradient is rise divided by run: subtract the y-values in one order and the x-values in that same order.",
               "keyPoints": [
                 {
-                  "text": "(i) Find the gradient betw",
-                  "note": "Keep the coordinate order consistent in numerator and denominator."
+                  "text": "Gradient = change in y ÷ change in x",
+                  "note": "Using the second point minus the first gives (−2 − 4) ÷ (−1 − 2)."
                 }
               ],
               "steps": [
                 {
-                  "explain": "Label the points ((x_1,y_1)=(2,4)) and ((x_2,y_2)=(-1,-2)).",
-                  "work": ""
+                  "explain": "Call the points A = (2, 4) and B = (−1, −2). The first coordinate is x and the second is y, so x₁ = 2, y₁ = 4, x₂ = −1, and y₂ = −2.",
+                  "work": "\\((x_1,y_1)=(2,4),\\quad(x_2,y_2)=(-1,-2)\\)"
                 },
                 {
-                  "explain": "Use the gradient formula.",
-                  "work": "\\(m=\\frac{y_2-y_1}{x_2-x_1}\\)"
+                  "explain": "Gradient measures the vertical change (rise) for each horizontal change (run). Use the same order, second point minus first point, in the top and bottom.",
+                  "work": "\\(m=\\frac{\\text{change in }y}{\\text{change in }x}=\\frac{y_2-y_1}{x_2-x_1}\\)"
                 },
                 {
-                  "explain": "Substitute the coordinates.",
-                  "work": "\\(m=\\frac{-2-4}{-1-2}=\\frac{-6}{-3}=2\\)"
+                  "explain": "Substitute the y-coordinates in the numerator and the x-coordinates in the denominator.",
+                  "work": "\\(m=\\frac{-2-4}{-1-2}=\\frac{-6}{-3}\\)"
                 },
                 {
-                  "explain": "The gradient is.",
-                  "work": "\\(\\boxed{2}\\)"
+                  "explain": "A negative divided by a negative is positive. Divide 6 by 3 to get the gradient.",
+                  "work": "\\(m=\\frac{-6}{-3}=\\boxed{2}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -4175,7 +4175,7 @@
               "id": "fsh-y8-2020-q8aii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "(ii) Find the midpoint of the line segment between these two points.",
+              "stem": "Find the midpoint of the line segment between these two points.",
               "options": [
                 "\\((\\frac12,1)\\)",
                 "\\((1,\\frac12)\\)",
@@ -4183,29 +4183,29 @@
                 "\\(( -\\frac12,1)\\)"
               ],
               "answer": 0,
-              "hint": "Average the x-coordinates and average the y-coordinates separately.",
+              "hint": "Average the x-coordinates to get the midpoint x-coordinate, then average the y-coordinates to get its y-coordinate.",
               "keyPoints": [
                 {
-                  "text": "midpoint",
-                  "note": "Do not swap the x- and y-coordinate averages."
+                  "text": "Average corresponding coordinates",
+                  "note": "Calculate the x-average first and the y-average second; write the result as (x, y)."
                 }
               ],
               "steps": [
                 {
-                  "explain": "Use the midpoint formula by averaging corresponding coordinates.",
+                  "explain": "The midpoint is halfway between the endpoints. Average the x-values for its x-coordinate and average the y-values for its y-coordinate.",
                   "work": "\\(M=\\left(\\frac{x_1+x_2}{2},\\frac{y_1+y_2}{2}\\right)\\)"
                 },
                 {
-                  "explain": "Average the x-coordinates.",
-                  "work": "\\(\\frac{2+(-1)}{2}=\\frac12\\)"
+                  "explain": "Substitute the x-coordinates 2 and −1, then simplify their sum.",
+                  "work": "\\(x_M=\\frac{2+(-1)}{2}=\\frac{1}{2}\\)"
                 },
                 {
-                  "explain": "Average the y-coordinates.",
-                  "work": "\\(\\frac{4+(-2)}{2}=1\\)"
+                  "explain": "Substitute the y-coordinates 4 and −2, then simplify their sum.",
+                  "work": "\\(y_M=\\frac{4+(-2)}{2}=\\frac{2}{2}=1\\)"
                 },
                 {
-                  "explain": "Write the ordered pair.",
-                  "work": "\\(\\boxed{(\\frac12,1)}\\)"
+                  "explain": "Write the x-coordinate first and the y-coordinate second to form the midpoint.",
+                  "work": "\\(M=\\boxed{\\left(\\frac12,1\\right)}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -4225,7 +4225,7 @@
               "id": "fsh-y8-2020-q8aiii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "(iii) Find the length of the line segment between these two points (in exact form).",
+              "stem": "Find the exact length of the line segment between these two points.",
               "options": [
                 "\\(3\\sqrt5\\)",
                 "\\(\\sqrt{45}\\text{ only}\\)",
@@ -4233,28 +4233,28 @@
                 "\\(3\\sqrt2\\)"
               ],
               "answer": 0,
-              "hint": "Find the horizontal and vertical changes, then use the distance formula.",
+              "hint": "Find the horizontal and vertical changes between the points. Square both changes, add them, and take the square root; simplify the surd.",
               "keyPoints": [
                 {
-                  "text": "length of the line segment",
-                  "note": "Give the exact simplified surd, not a rounded decimal."
+                  "text": "Exact distance between two points",
+                  "note": "Use the Pythagorean distance formula and simplify √45 to 3√5."
                 }
               ],
               "steps": [
                 {
-                  "explain": "Find coordinate differences.",
+                  "explain": "Find the horizontal and vertical changes from A = (2, 4) to B = (−1, −2), using B minus A in both coordinates.",
                   "work": "\\(\\Delta x=-1-2=-3,\\quad\\Delta y=-2-4=-6\\)"
                 },
                 {
-                  "explain": "Apply the distance formula.",
+                  "explain": "The segment is the hypotenuse of a right triangle whose horizontal and vertical legs have lengths |Δx| and |Δy|. Apply Pythagoras.",
                   "work": "\\(d=\\sqrt{(\\Delta x)^2+(\\Delta y)^2}\\)"
                 },
                 {
-                  "explain": "Substitute and simplify.",
+                  "explain": "Substitute the coordinate changes. Squaring makes each contribution positive. Add the squares inside the radical.",
                   "work": "\\(d=\\sqrt{(-3)^2+(-6)^2}=\\sqrt{9+36}=\\sqrt{45}\\)"
                 },
                 {
-                  "explain": "Take out the square factor.",
+                  "explain": "Factor 45 as 9 × 5. Since √9 = 3, take 3 outside the square root to give the exact simplified length.",
                   "work": "\\(\\sqrt{45}=\\sqrt{9\\times5}=\\boxed{3\\sqrt5}\\)"
                 }
               ],
@@ -4272,11 +4272,11 @@
               }
             }
           ],
-          "hint": "For coordinate questions, use the ordered pairs consistently: x-values with x-values and y-values with y-values.",
+          "hint": "Use the same two coordinate pairs in each calculation: gradient uses changes, midpoint uses coordinate averages, and distance uses the Pythagoras formula.",
           "keyPoints": [
             {
-              "text": "(2, 4) and (−1, −2)",
-              "note": "The gradient uses differences; the midpoint uses averages; distance uses the Pythagoras formula."
+              "text": "Two points: (2, 4) and (−1, −2)",
+              "note": "For each formula, keep x-coordinates with x-coordinates and y-coordinates with y-coordinates."
             }
           ],
           "timeLimit": 60,
