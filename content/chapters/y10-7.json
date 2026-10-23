@@ -2831,7 +2831,7 @@
                   "explain": "The vertex is the maximum turning point (the parabola is concave down).",
                   "work": "\\((-1,4)\\)",
                   "figure": {
-                    "svg": "fig:9f1540d399"
+                    "svg": "fig:b9e37f405e"
                   }
                 }
               ],
@@ -2855,7 +2855,7 @@
                   "explain": "Substitute \\(x=0\\).",
                   "work": "\\(y=4-(0+1)^2=4-1=3\\)",
                   "figure": {
-                    "svg": "fig:11c6740fb8"
+                    "svg": "fig:b87ca269a5"
                   }
                 }
               ],
@@ -2883,7 +2883,7 @@
                   "explain": "Take the square root of both sides — remember both signs.",
                   "work": "\\(x+1=\\pm2\\ \\Rightarrow\\ x=1\\text{ or }x=-3\\)",
                   "figure": {
-                    "svg": "fig:84357f3110"
+                    "svg": "fig:957f34faa4"
                   }
                 }
               ],
@@ -3677,7 +3677,7 @@
               "explain": "The y-intercept: substitute \\(x=0\\). The vertex lies midway between the roots.",
               "work": "\\(y=0;\\quad\\text{vertex }\\left(\\tfrac12,-\\tfrac14\\right)\\)",
               "figure": {
-                "svg": "fig:0892516668"
+                "svg": "fig:f59b77eb17"
               }
             }
           ],

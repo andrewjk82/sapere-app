@@ -87,7 +87,7 @@
           "difficulty": "hard",
           "stem": "Bottles are packed into a box with a piece of packing between each pair of neighbouring bottles, as shown (\\(n=4\\), \\(k=3\\)). How many pieces of packing are needed to pack a rectangular box fully, if the box has \\(n\\) bottles along the length and \\(k\\) bottles across the breadth?",
           "figure": {
-            "svg": "fig:621e7897d5"
+            "svg": "fig:2485275679"
           },
           "options": [
             "\\(nk\\)",
@@ -102,14 +102,14 @@
               "explain": "Each row of \\(n\\) bottles has \\(n-1\\) gaps, and there are \\(k\\) rows.",
               "work": "\\(\\text{side-by-side pieces}=k(n-1)\\quad(3\\times3=9)\\)",
               "figure": {
-                "svg": "fig:91f02326df"
+                "svg": "fig:c91017fbea"
               }
             },
             {
               "explain": "Each column of \\(k\\) bottles has \\(k-1\\) gaps, and there are \\(n\\) columns.",
               "work": "\\(\\text{front-to-back pieces}=n(k-1)\\quad(4\\times2=8)\\)",
               "figure": {
-                "svg": "fig:fefae3cc49"
+                "svg": "fig:f2e7dd2e32"
               }
             },
             {

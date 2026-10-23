@@ -4833,7 +4833,7 @@
           "difficulty": "medium",
           "stem": "The diagram shows \\(y=5^x\\) and \\(y=\\log_3x\\). ABCD is a rectangle, and the coordinates of D are \\((0,-1)\\).",
           "figure": {
-            "svg": "fig:0d4f68e6da"
+            "svg": "fig:8a94e40804"
           },
           "meta": {
             "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
@@ -4860,14 +4860,14 @@
                   "explain": "DC is horizontal, so C has the same y-coordinate as D: \\(y=-1\\). C lies on \\(y=\\log_3x\\).",
                   "work": "\\(\\log_3x=-1\\)",
                   "figure": {
-                    "svg": "fig:8d37806886"
+                    "svg": "fig:d0e51b420b"
                   }
                 },
                 {
                   "explain": "Convert to index form.",
                   "work": "\\(x=3^{-1}=\\tfrac13\\ \\Rightarrow\\ C\\left(\\tfrac13,-1\\right)\\)",
                   "figure": {
-                    "svg": "fig:e9216c27bb"
+                    "svg": "fig:48f9098ed8"
                   }
                 }
               ],
@@ -4895,7 +4895,7 @@
                   "explain": "Width \\(=\\tfrac13\\) (from C) and height \\(=1-(-1)=2\\).",
                   "work": "\\(\\text{Area}=\\tfrac13\\times2=\\tfrac23\\text{ units}^2\\)",
                   "figure": {
-                    "svg": "fig:0b0c5d7a32"
+                    "svg": "fig:016c5b091a"
                   }
                 }
               ],

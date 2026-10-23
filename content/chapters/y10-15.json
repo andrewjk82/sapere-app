@@ -2842,7 +2842,7 @@
                   "explain": "There are only 26 students, so the extra \\(37-26\\) students were double-counted — they take both subjects.",
                   "work": "\\(37-26=11\\)",
                   "figure": {
-                    "svg": "fig:03db2ec004"
+                    "svg": "fig:ed8543d042"
                   }
                 }
               ],
@@ -2866,7 +2866,7 @@
                   "explain": "History-only students: take the ones doing both out of the History total.",
                   "work": "\\(20-11=9\\)",
                   "figure": {
-                    "svg": "fig:285c0ac198"
+                    "svg": "fig:c7bb413be6"
                   }
                 },
                 {

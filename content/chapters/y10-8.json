@@ -1100,7 +1100,7 @@
           "difficulty": "hard",
           "stem": "PQRS is a rhombus (not to scale). T lies on PS, \\(\\angle QSR=36^\\circ\\) and \\(\\angle PRT=30^\\circ\\). Find the value of \\(x\\), where \\(x^\\circ=\\angle PTR\\).",
           "figure": {
-            "svg": "fig:5fd9bbdecd"
+            "svg": "fig:3994497533"
           },
           "options": [
             "\\(90\\)",
@@ -1115,21 +1115,21 @@
               "explain": "The diagonal SQ bisects \\(\\angle PSR\\), so \\(\\angle PSQ=\\angle QSR=36^\\circ\\).",
               "work": "\\(\\angle PSR=2\\times36^\\circ=72^\\circ\\)",
               "figure": {
-                "svg": "fig:ccbaeb52b7"
+                "svg": "fig:b76335f74f"
               }
             },
             {
               "explain": "Co-interior angles of the rhombus add to 180°, so \\(\\angle SRQ=108^\\circ\\). The diagonal PR bisects it, giving \\(\\angle PRS=54^\\circ\\), so \\(\\angle TRS=54^\\circ-30^\\circ=24^\\circ\\).",
               "work": "\\(\\angle TRS=54^\\circ-30^\\circ=24^\\circ\\)",
               "figure": {
-                "svg": "fig:533c56b18a"
+                "svg": "fig:c1c0d8ef1e"
               }
             },
             {
               "explain": "In triangle STR, \\(x^\\circ\\) is the exterior angle at T, so it equals the sum of the two interior opposite angles.",
               "work": "\\(x=\\angle TSR+\\angle TRS=72+24=96\\)",
               "figure": {
-                "svg": "fig:513a99b0d6"
+                "svg": "fig:714f3313b1"
               }
             }
           ],
@@ -1521,7 +1521,7 @@
           "difficulty": "hard",
           "stem": "In triangles \\(LMN\\) and \\(PQR\\) (not to scale), \\(\\angle L=\\angle P=\\alpha\\), \\(\\angle M=\\angle Q=\\beta\\), and \\(LN=QR\\) (marked). Consider these statements: I. Triangles LMN and PQR are congruent. II. Triangles LMN and PQR are similar. Which is always correct?",
           "figure": {
-            "svg": "fig:59f14e2b50"
+            "svg": "fig:cecb2371db"
           },
           "options": [
             "I only",
@@ -1536,14 +1536,14 @@
               "explain": "Two pairs of angles are equal, so the third pair is equal too (angle sum 180°). That is the AA test, so the triangles are always similar.",
               "work": "\\(\\triangle LMN\\sim\\triangle PQR\\ \\ (\\text{AA})\\)",
               "figure": {
-                "svg": "fig:fe20385b13"
+                "svg": "fig:d980b7e4dc"
               }
             },
             {
               "explain": "Matching sides sit opposite equal angles. LN is opposite \\(\\beta\\), but QR is opposite \\(\\alpha\\). So the equal sides are not corresponding sides.",
               "work": "\\(LN\\leftrightarrow PR,\\ \\ QR\\leftrightarrow MN\\)",
               "figure": {
-                "svg": "fig:a2218d96e5"
+                "svg": "fig:ce1c3393af"
               }
             },
             {
@@ -1626,7 +1626,7 @@
           "difficulty": "medium",
           "stem": "A student uses the diagram (not to scale) to find the width of the river, \\(w\\). The sides marked 15 m and \\(w\\) are parallel. The value of \\(w\\) is",
           "figure": {
-            "svg": "fig:eae8d1900d"
+            "svg": "fig:2f5b7fd11d"
           },
           "options": [
             "\\(18\\)",
@@ -1641,14 +1641,14 @@
               "explain": "The two triangles meeting at O have vertically opposite angles at O. Because the marked sides are parallel, their alternate angles are equal too. So the triangles are similar (AA).",
               "work": "\\(\\text{small }\\triangle\\sim\\text{large }\\triangle\\)",
               "figure": {
-                "svg": "fig:0da0599f58"
+                "svg": "fig:349ebf7a0f"
               }
             },
             {
               "explain": "Corresponding sides: 18 m (along the sight line) matches 30 m, and 15 m (a parallel side) matches \\(w\\).",
               "work": "\\(\\dfrac{w}{15}=\\dfrac{30}{18}\\)",
               "figure": {
-                "svg": "fig:71ff7f53d1"
+                "svg": "fig:c1c732fcbd"
               }
             },
             {
@@ -1670,7 +1670,7 @@
           "difficulty": "medium",
           "stem": "In the diagram, \\(PQ\\parallel WY\\), \\(XP=5\\text{ cm}\\), \\(PW=3\\text{ cm}\\), \\(XQ=8\\text{ cm}\\), \\(QY=x\\text{ cm}\\), \\(PQ=6\\text{ cm}\\) and \\(WY=y\\text{ cm}\\).",
           "figure": {
-            "svg": "fig:1560f9924a"
+            "svg": "fig:4d7f863e64"
           },
           "meta": {
             "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
@@ -1697,14 +1697,14 @@
                   "explain": "\\(\\angle X\\) belongs to both triangles, so it is common.",
                   "work": "\\(\\angle PXQ=\\angle WXY\\ (\\text{common})\\)",
                   "figure": {
-                    "svg": "fig:9533d89950"
+                    "svg": "fig:2fdbf2d84b"
                   }
                 },
                 {
                   "explain": "PQ ∥ WY, and XW is a transversal, so the angles at P and W are corresponding angles.",
                   "work": "\\(\\angle XPQ=\\angle XWY\\ (\\text{corresp., }PQ\\parallel WY)\\)",
                   "figure": {
-                    "svg": "fig:95630f18c2"
+                    "svg": "fig:acba57e5e5"
                   }
                 },
                 {
@@ -1732,7 +1732,7 @@
                   "explain": "Match the sides from the common vertex X: XP with XW, and XQ with XY.",
                   "work": "\\(\\dfrac{XP}{XW}=\\dfrac{XQ}{XY}\\ \\Rightarrow\\ \\dfrac58=\\dfrac{8}{8+x}\\)",
                   "figure": {
-                    "svg": "fig:a0411d4219"
+                    "svg": "fig:7792a57429"
                   }
                 },
                 {
@@ -1760,7 +1760,7 @@
                   "explain": "PQ corresponds to WY, with the same scale factor \\(\\tfrac{XP}{XW}=\\tfrac58\\).",
                   "work": "\\(\\dfrac{PQ}{WY}=\\dfrac{XP}{XW}\\ \\Rightarrow\\ \\dfrac6y=\\dfrac58\\)",
                   "figure": {
-                    "svg": "fig:50f1e00cfd"
+                    "svg": "fig:39bd8cea01"
                   }
                 },
                 {
@@ -1778,7 +1778,7 @@
           "difficulty": "medium",
           "stem": "In the diagram, \\(AB\\parallel DE\\), with \\(AE\\) and \\(BD\\) meeting at C. \\(AC=4\\), \\(CB=3\\), \\(DC=6\\) and \\(CE=x\\). Find \\(x\\).",
           "figure": {
-            "svg": "fig:1279b7145e"
+            "svg": "fig:61f3cd7853"
           },
           "options": [
             "\\(4.5\\)",
@@ -1793,14 +1793,14 @@
               "explain": "\\(\\angle BAC=\\angle DEC\\) (alternate angles, AB ∥ DE) and \\(\\angle ACB=\\angle ECD\\) (vertically opposite). So \\(\\triangle ABC\\sim\\triangle EDC\\), with A↔E and B↔D.",
               "work": "\\(\\triangle ABC\\sim\\triangle EDC\\ (\\text{equiangular})\\)",
               "figure": {
-                "svg": "fig:68925da109"
+                "svg": "fig:6497a95f02"
               }
             },
             {
               "explain": "Corresponding sides: AC ↔ EC, and BC ↔ DC.",
               "work": "\\(\\dfrac{EC}{AC}=\\dfrac{DC}{BC}\\ \\Rightarrow\\ \\dfrac x4=\\dfrac63\\)",
               "figure": {
-                "svg": "fig:ffc55e5221"
+                "svg": "fig:e7c2f36fce"
               }
             },
             {

@@ -2253,7 +2253,7 @@
           "difficulty": "medium",
           "stem": "This shape is made by cutting a small regular octagon from the centre of a larger similar regular octagon. Corresponding sides are in the ratio \\(3:4\\). What fraction of the larger octagon has been cut out?",
           "figure": {
-            "svg": "fig:ff15c2f67d"
+            "svg": "fig:f193e0bade"
           },
           "options": [
             "\\(\\tfrac14\\)",
@@ -2268,14 +2268,14 @@
               "explain": "The octagons are similar with side lengths in the ratio 3 : 4.",
               "work": "\\(\\text{length ratio}=3:4\\)",
               "figure": {
-                "svg": "fig:6120eaae32"
+                "svg": "fig:c98d3a8492"
               }
             },
             {
               "explain": "Area scales by the square of the length ratio. The cut-out part is the small octagon.",
               "work": "\\(\\dfrac{\\text{small area}}{\\text{large area}}=\\left(\\dfrac34\\right)^2=\\dfrac9{16}\\)",
               "figure": {
-                "svg": "fig:0283bc093e"
+                "svg": "fig:ed04c5b61b"
               }
             },
             {
@@ -3980,7 +3980,7 @@
           "difficulty": "medium",
           "stem": "A square pyramid with base edge 16 cm and height 12 cm has another square pyramid with base edge 8 cm and height 6 cm removed from its top. Find the volume of the frustum that is formed.",
           "figure": {
-            "svg": "fig:fe34ba595c"
+            "svg": "fig:125d7ec3a7"
           },
           "options": [
             "\\(2688\\text{ cm}^3\\)",
@@ -3995,21 +3995,21 @@
               "explain": "Volume of the large pyramid (base 16 cm, height 12 cm).",
               "work": "\\(V_L=\\tfrac13\\times16^2\\times12=\\tfrac13\\times256\\times12=1024\\text{ cm}^3\\)",
               "figure": {
-                "svg": "fig:9898be71f0"
+                "svg": "fig:a1dc47c58b"
               }
             },
             {
               "explain": "Volume of the small pyramid that was removed (base 8 cm, height 6 cm).",
               "work": "\\(V_S=\\tfrac13\\times8^2\\times6=\\tfrac13\\times64\\times6=128\\text{ cm}^3\\)",
               "figure": {
-                "svg": "fig:9650c9785a"
+                "svg": "fig:c962f572be"
               }
             },
             {
               "explain": "The frustum is what remains. (Forgetting the \\(\\tfrac13\\) gives 2688.)",
               "work": "\\(V=1024-128=896\\text{ cm}^3\\)",
               "figure": {
-                "svg": "fig:cb683c731e"
+                "svg": "fig:e1703e7b8b"
               }
             }
           ],

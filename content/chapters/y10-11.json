@@ -2340,7 +2340,7 @@
               "explain": "Intercepts: \\(y=0\\Rightarrow x=\\pm2\\), and \\(x=0\\Rightarrow y=\\pm2\\). (Radius 4 is the mistake of forgetting the square root.)",
               "work": "\\((\\pm2,0),\\ (0,\\pm2)\\)",
               "figure": {
-                "svg": "fig:2d2aceda7a"
+                "svg": "fig:68280cc063"
               }
             }
           ],
@@ -8982,7 +8982,7 @@
           "difficulty": "medium",
           "stem": "Which pair of inequalities could represent the shaded region?",
           "figure": {
-            "svg": "fig:91f9d503fe"
+            "svg": "fig:dc8a81e5eb"
           },
           "options": [
             "\\(y\\le\\tfrac13x,\\ \\ y\\le3x\\)",
@@ -8997,21 +8997,21 @@
               "explain": "Choose a test point inside the shaded region: \\((-4,-4)\\). Test it against the shallow line \\(y=\\tfrac13x\\).",
               "work": "\\(-4\\ \\le\\ \\tfrac13(-4)=-1.\\overline{3}\\ \\ \\checkmark\\ \\Rightarrow\\ y\\le\\tfrac13x\\)",
               "figure": {
-                "svg": "fig:7ec36dd8e5"
+                "svg": "fig:1690e9bd62"
               }
             },
             {
               "explain": "Now test the same point against the steep line \\(y=3x\\).",
               "work": "\\(-4\\ \\ge\\ 3(-4)=-12\\ \\ \\checkmark\\ \\Rightarrow\\ y\\ge3x\\)",
               "figure": {
-                "svg": "fig:8448ab7af7"
+                "svg": "fig:24df91631e"
               }
             },
             {
               "explain": "The shaded region is the overlap of both conditions — below \\(y=\\tfrac13x\\) and above \\(y=3x\\).",
               "work": "\\(y\\le\\tfrac13x\\ \\text{ and }\\ y\\ge3x\\)",
               "figure": {
-                "svg": "fig:b2d0445dda"
+                "svg": "fig:7d3df27abd"
               }
             }
           ],
