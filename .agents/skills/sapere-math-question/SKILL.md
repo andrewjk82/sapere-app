@@ -94,6 +94,12 @@ Distractors (오답) must reflect **real student mistakes**:
 ### Persistent User Requirements for Exam Imports
 For any batch of exam questions, first read `profiles/Question_Batch_Quality_Profile.md` and apply its checklist in addition to the target chapter profile. Treat the user's explicit settings for the current batch (such as year, timer, and XP) as authoritative.
 
+Also run `profiles/Exam_Import_Regression_Checklist.md` for every exam import.
+It captures recurring defects reported by this user: altered source wording,
+missing or incorrectly grouped subparts, stray part labels, shallow solutions,
+generic hints, broken LaTeX, incorrect/overlapping diagram labels, and
+unverified imports. Check every nested leaf, not only multipart parents.
+
 ### Structure: 3~5 Steps
 
 Each step is an object (canonical field names — see `content/schema.js` / CLAUDE.md's field
