@@ -4151,13 +4151,13 @@
           "id": "fsh-y8-2020-q6b",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "(b) Name the congruency test you would use to show that the following pairs of triangles of triangles are congruent.",
+          "stem": "Name the congruency test that proves each pair of triangles is congruent.",
           "parts": [
             {
               "id": "fsh-y8-2020-q6bi",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "(i) Name the congruency test for the two right-angled triangles.",
+              "stem": "Name the congruency test for the two right-angled triangles.",
               "options": [
                 "RHS",
                 "SSS",
@@ -4165,29 +4165,41 @@
                 "ASA"
               ],
               "answer": 0,
-              "hint": "Both triangles are right-angled, share the hypotenuse RS, and have one equal leg.",
+              "hint": "Compare triangles RLS and RMS: identify both right angles, the shared hypotenuse RS, and the pair of equal marked legs.",
               "keyPoints": [
                 {
-                  "text": "right-angled triangles",
-                  "note": "Look for a right angle, equal hypotenuses, and one more corresponding side."
+                  "text": "Right angle, hypotenuse, side",
+                  "note": "The right angles are at L and M, RS is the common hypotenuse, and the matching tick marks show RL = RM."
                 }
               ],
               "steps": [
                 {
-                  "explain": "The two triangles are (\\triangle RLS) and (\\triangle RMS). Both have a right angle, at (L) and (M).",
-                  "work": ""
+                  "explain": "First identify the two triangles being compared: △RLS and △RMS. The small square markers show that each is right-angled, at L and M respectively.",
+                  "work": "\\(\\angle RLS=\\angle RMS=90^\\circ\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 290\" width=\"100%\" height=\"270\" style=\"max-width:440px;display:block;margin:auto;background:#fff\">\n<rect width=\"440\" height=\"290\" fill=\"#fff\"/>\n<path d=\"M220 34 L142 68 L220 256 Z M220 34 L298 68 L220 256 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/>\n<path d=\"M142 68 L220 256 M298 68 L220 256\" stroke=\"#334155\" stroke-width=\"3\"/>\n<path d=\"M220 34 L220 256\" stroke=\"#475569\" stroke-width=\"3\"/>\n<path d=\"M142 68 l9 -4 l4 9 l-9 4 M298 68 l-9 -4 l-4 9 l9 4\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"3\"/>\n<path d=\"M183 45 l-7 11 M257 45 l7 11\" stroke=\"#475569\" stroke-width=\"3\"/>\n<g font-family=\"Arial,sans-serif\" font-size=\"18\" fill=\"#172554\" font-weight=\"600\"><text x=\"220\" y=\"25\" text-anchor=\"middle\">R</text><text x=\"126\" y=\"66\" text-anchor=\"end\">L</text><text x=\"314\" y=\"66\">M</text><text x=\"220\" y=\"280\" text-anchor=\"middle\">S</text></g>\n\n</svg>"
+                  }
                 },
                 {
-                  "explain": "The hypotenuse (RS) is shared by both triangles.",
-                  "work": "\\(RS=RS\\quad\\text{(common hypotenuse)}\\)"
+                  "explain": "In each right-angled triangle, the side opposite the 90° angle is the hypotenuse. Both triangles use the same segment RS, so the hypotenuses are equal.",
+                  "work": "\\(RS=RS\\quad\\text{(common hypotenuse)}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 290\" width=\"100%\" height=\"270\" style=\"max-width:440px;display:block;margin:auto;background:#fff\">\n<rect width=\"440\" height=\"290\" fill=\"#fff\"/>\n<path d=\"M220 34 L142 68 L220 256 Z M220 34 L298 68 L220 256 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/>\n<path d=\"M142 68 L220 256 M298 68 L220 256\" stroke=\"#334155\" stroke-width=\"3\"/>\n<path d=\"M220 34 L220 256\" stroke=\"#7c3aed\" stroke-width=\"5\"/>\n<path d=\"M142 68 l9 -4 l4 9 l-9 4 M298 68 l-9 -4 l-4 9 l9 4\" fill=\"none\" stroke=\"#475569\" stroke-width=\"3\"/>\n<path d=\"M183 45 l-7 11 M257 45 l7 11\" stroke=\"#475569\" stroke-width=\"3\"/>\n<g font-family=\"Arial,sans-serif\" font-size=\"18\" fill=\"#172554\" font-weight=\"600\"><text x=\"220\" y=\"25\" text-anchor=\"middle\">R</text><text x=\"126\" y=\"66\" text-anchor=\"end\">L</text><text x=\"314\" y=\"66\">M</text><text x=\"220\" y=\"280\" text-anchor=\"middle\">S</text></g>\n\n</svg>"
+                  }
                 },
                 {
-                  "explain": "The marked sides are equal.",
-                  "work": "\\(RL=RM\\)"
+                  "explain": "The single matching tick on RL and RM marks those two legs as equal. This is the extra side required, in addition to the equal hypotenuse.",
+                  "work": "\\(RL=RM\\quad\\text{(matching tick marks)}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 290\" width=\"100%\" height=\"270\" style=\"max-width:440px;display:block;margin:auto;background:#fff\">\n<rect width=\"440\" height=\"290\" fill=\"#fff\"/>\n<path d=\"M220 34 L142 68 L220 256 Z M220 34 L298 68 L220 256 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/>\n<path d=\"M142 68 L220 256 M298 68 L220 256\" stroke=\"#334155\" stroke-width=\"3\"/>\n<path d=\"M220 34 L220 256\" stroke=\"#475569\" stroke-width=\"3\"/>\n<path d=\"M142 68 l9 -4 l4 9 l-9 4 M298 68 l-9 -4 l-4 9 l9 4\" fill=\"none\" stroke=\"#475569\" stroke-width=\"3\"/>\n<path d=\"M183 45 l-7 11 M257 45 l7 11\" stroke=\"#f59e0b\" stroke-width=\"3\"/>\n<g font-family=\"Arial,sans-serif\" font-size=\"18\" fill=\"#172554\" font-weight=\"600\"><text x=\"220\" y=\"25\" text-anchor=\"middle\">R</text><text x=\"126\" y=\"66\" text-anchor=\"end\">L</text><text x=\"314\" y=\"66\">M</text><text x=\"220\" y=\"280\" text-anchor=\"middle\">S</text></g>\n\n</svg>"
+                  }
                 },
                 {
-                  "explain": "Right angle, hypotenuse, and one side give the RHS congruence test.",
-                  "work": "\\(\\boxed{\\text{RHS}}\\)"
+                  "explain": "We now have two right-angled triangles, equal hypotenuses, and one pair of equal corresponding sides. That is exactly the RHS congruency test.",
+                  "work": "\\(\\text{right angle + hypotenuse + side}\\Rightarrow\\boxed{\\text{RHS}}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 290\" width=\"100%\" height=\"270\" style=\"max-width:440px;display:block;margin:auto;background:#fff\">\n<rect width=\"440\" height=\"290\" fill=\"#fff\"/>\n<path d=\"M220 34 L142 68 L220 256 Z M220 34 L298 68 L220 256 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/>\n<path d=\"M142 68 L220 256 M298 68 L220 256\" stroke=\"#334155\" stroke-width=\"3\"/>\n<path d=\"M220 34 L220 256\" stroke=\"#7c3aed\" stroke-width=\"5\"/>\n<path d=\"M142 68 l9 -4 l4 9 l-9 4 M298 68 l-9 -4 l-4 9 l9 4\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"3\"/>\n<path d=\"M183 45 l-7 11 M257 45 l7 11\" stroke=\"#f59e0b\" stroke-width=\"3\"/>\n<g font-family=\"Arial,sans-serif\" font-size=\"18\" fill=\"#172554\" font-weight=\"600\"><text x=\"220\" y=\"25\" text-anchor=\"middle\">R</text><text x=\"126\" y=\"66\" text-anchor=\"end\">L</text><text x=\"314\" y=\"66\">M</text><text x=\"220\" y=\"280\" text-anchor=\"middle\">S</text></g>\n\n</svg>"
+                  }
                 }
               ],
               "timeLimit": 60,
@@ -4201,13 +4213,16 @@
                 "marks": 1,
                 "part": "",
                 "origin": "exam-import"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 290\" width=\"100%\" height=\"270\" style=\"max-width:440px;display:block;margin:auto;background:#fff\">\n<rect width=\"440\" height=\"290\" fill=\"#fff\"/>\n<path d=\"M220 34 L142 68 L220 256 Z M220 34 L298 68 L220 256 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/>\n<path d=\"M142 68 L220 256 M298 68 L220 256\" stroke=\"#334155\" stroke-width=\"3\"/>\n<path d=\"M220 34 L220 256\" stroke=\"#7c3aed\" stroke-width=\"5\"/>\n<path d=\"M142 68 l9 -4 l4 9 l-9 4 M298 68 l-9 -4 l-4 9 l9 4\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"3\"/>\n<path d=\"M183 45 l-7 11 M257 45 l7 11\" stroke=\"#f59e0b\" stroke-width=\"3\"/>\n<g font-family=\"Arial,sans-serif\" font-size=\"18\" fill=\"#172554\" font-weight=\"600\"><text x=\"220\" y=\"25\" text-anchor=\"middle\">R</text><text x=\"126\" y=\"66\" text-anchor=\"end\">L</text><text x=\"314\" y=\"66\">M</text><text x=\"220\" y=\"280\" text-anchor=\"middle\">S</text></g>\n\n</svg>"
               }
             },
             {
               "id": "fsh-y8-2020-q6bii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "(ii) Name the congruency test for the two triangles.",
+              "stem": "Name the congruency test for triangles QOF and APH.",
               "options": [
                 "ASA",
                 "AAS",
@@ -4215,29 +4230,41 @@
                 "SSS"
               ],
               "answer": 0,
-              "hint": "Find the third angle in each triangle, then use the marked corresponding side.",
+              "hint": "Use the 180° angle sum to find ∠O and ∠A. Then match the two equal angles at the ends of the ticked sides QF and AH.",
               "keyPoints": [
                 {
-                  "text": "Name the congruency test for the tw",
-                  "note": "The 30° angle in each triangle follows from the triangle angle sum."
+                  "text": "Find missing angles and match the included side",
+                  "note": "∠O = 70° and ∠A = 30°. The ticked sides QF and AH lie between the corresponding 80° and 30° angles."
                 }
               ],
               "steps": [
                 {
-                  "explain": "In (\\triangle QOF), the missing angle is.",
-                  "work": "\\(180^\\circ-80^\\circ-30^\\circ=70^\\circ\\)"
+                  "explain": "In △QOF, the interior angles add to 180°. The diagram gives ∠Q = 80° and ∠F = 30°, so subtract both known angles to find the third angle at O.",
+                  "work": "\\(\\angle O=180^\\circ-80^\\circ-30^\\circ=70^\\circ\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 560 270\" width=\"100%\" height=\"250\" style=\"max-width:560px;display:block;margin:auto;background:#fff\">\n<rect width=\"560\" height=\"270\" fill=\"#fff\"/>\n<path d=\"M70 48 L84 126 L218 48 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/>\n<path d=\"M342 194 L485 112 L500 194 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/>\n<path d=\"M70 48 L218 48 M342 194 L500 194\" stroke=\"#475569\" stroke-width=\"4\"/>\n<path d=\"M141 42 l4 12 M417 188 l4 12\" stroke=\"#475569\" stroke-width=\"3\"/>\n<path d=\"M90 48 Q91 61 74 68 M198 48 Q197 56 201 58 M468 122 Q478 126 489 132 M480 194 Q483 178 496 174\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"3.5\"/>\n<g font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#172554\" font-weight=\"600\"><text x=\"57\" y=\"43\">Q</text><text x=\"65\" y=\"145\">O</text><text x=\"224\" y=\"43\">F</text><text x=\"326\" y=\"216\">A</text><text x=\"477\" y=\"103\">P</text><text x=\"504\" y=\"216\">H</text></g>\n<g font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#0f172a\"><text x=\"95\" y=\"87\">80°</text><text x=\"148\" y=\"70\">30°</text><text x=\"448\" y=\"139\">70°</text><text x=\"442\" y=\"171\">80°</text></g>\n<path d=\"M81 107 Q93 100 101 116 M361 194 Q362 182 358 184\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"4\"/><text x=\"45\" y=\"128\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#7c3aed\" font-weight=\"700\">70°</text><text x=\"344\" y=\"174\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#7c3aed\" font-weight=\"700\">30°</text>\n</svg>"
+                  }
                 },
                 {
-                  "explain": "In (\\triangle APH), the missing angle is.",
-                  "work": "\\(180^\\circ-70^\\circ-80^\\circ=30^\\circ\\)"
+                  "explain": "In △APH, the angles also add to 180°. The diagram gives ∠P = 70° and ∠H = 80°. Subtract these to find the angle at A.",
+                  "work": "\\(\\angle A=180^\\circ-70^\\circ-80^\\circ=30^\\circ\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 560 270\" width=\"100%\" height=\"250\" style=\"max-width:560px;display:block;margin:auto;background:#fff\">\n<rect width=\"560\" height=\"270\" fill=\"#fff\"/>\n<path d=\"M70 48 L84 126 L218 48 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/>\n<path d=\"M342 194 L485 112 L500 194 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/>\n<path d=\"M70 48 L218 48 M342 194 L500 194\" stroke=\"#475569\" stroke-width=\"4\"/>\n<path d=\"M141 42 l4 12 M417 188 l4 12\" stroke=\"#475569\" stroke-width=\"3\"/>\n<path d=\"M90 48 Q91 61 74 68 M198 48 Q197 56 201 58 M468 122 Q478 126 489 132 M480 194 Q483 178 496 174\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"3.5\"/>\n<g font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#172554\" font-weight=\"600\"><text x=\"57\" y=\"43\">Q</text><text x=\"65\" y=\"145\">O</text><text x=\"224\" y=\"43\">F</text><text x=\"326\" y=\"216\">A</text><text x=\"477\" y=\"103\">P</text><text x=\"504\" y=\"216\">H</text></g>\n<g font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#0f172a\"><text x=\"95\" y=\"87\">80°</text><text x=\"148\" y=\"70\">30°</text><text x=\"448\" y=\"139\">70°</text><text x=\"442\" y=\"171\">80°</text></g>\n<path d=\"M81 107 Q93 100 101 116 M361 194 Q362 182 358 184\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"4\"/><text x=\"45\" y=\"128\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#7c3aed\" font-weight=\"700\">70°</text><text x=\"344\" y=\"174\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#7c3aed\" font-weight=\"700\">30°</text>\n</svg>"
+                  }
                 },
                 {
-                  "explain": "The marked sides (QF) and (AH) correspond and lie between the equal (80^\\circ) and (30^\\circ) angles.",
-                  "work": ""
+                  "explain": "Match the vertices by their equal angles: Q (80°) ↔ H (80°), O (70°) ↔ P (70°), and F (30°) ↔ A (30°). The matching tick marks show that side QF equals side HA. Notice that each marked side is between the 80° and 30° angles.",
+                  "work": "\\(\\angle Q=\\angle H=80^\\circ,\\quad\\angle F=\\angle A=30^\\circ,\\quad QF=HA\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 560 270\" width=\"100%\" height=\"250\" style=\"max-width:560px;display:block;margin:auto;background:#fff\">\n<rect width=\"560\" height=\"270\" fill=\"#fff\"/>\n<path d=\"M70 48 L84 126 L218 48 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/>\n<path d=\"M342 194 L485 112 L500 194 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/>\n<path d=\"M70 48 L218 48 M342 194 L500 194\" stroke=\"#f59e0b\" stroke-width=\"4\"/>\n<path d=\"M141 42 l4 12 M417 188 l4 12\" stroke=\"#f59e0b\" stroke-width=\"3\"/>\n<path d=\"M90 48 Q91 61 74 68 M198 48 Q197 56 201 58 M468 122 Q478 126 489 132 M480 194 Q483 178 496 174\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"3.5\"/>\n<g font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#172554\" font-weight=\"600\"><text x=\"57\" y=\"43\">Q</text><text x=\"65\" y=\"145\">O</text><text x=\"224\" y=\"43\">F</text><text x=\"326\" y=\"216\">A</text><text x=\"477\" y=\"103\">P</text><text x=\"504\" y=\"216\">H</text></g>\n<g font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#0f172a\"><text x=\"95\" y=\"87\">80°</text><text x=\"148\" y=\"70\">30°</text><text x=\"448\" y=\"139\">70°</text><text x=\"442\" y=\"171\">80°</text></g>\n\n</svg>"
+                  }
                 },
                 {
-                  "explain": "Two angles and the included side establish.",
-                  "work": "\\(\\boxed{\\text{ASA}}\\)"
+                  "explain": "Two corresponding angles and the included corresponding side are equal. Therefore the valid congruency test is Angle–Side–Angle, abbreviated ASA.",
+                  "work": "\\(\\text{angle + included side + angle}\\Rightarrow\\boxed{\\text{ASA}}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 560 270\" width=\"100%\" height=\"250\" style=\"max-width:560px;display:block;margin:auto;background:#fff\">\n<rect width=\"560\" height=\"270\" fill=\"#fff\"/>\n<path d=\"M70 48 L84 126 L218 48 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/>\n<path d=\"M342 194 L485 112 L500 194 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/>\n<path d=\"M70 48 L218 48 M342 194 L500 194\" stroke=\"#f59e0b\" stroke-width=\"4\"/>\n<path d=\"M141 42 l4 12 M417 188 l4 12\" stroke=\"#f59e0b\" stroke-width=\"3\"/>\n<path d=\"M90 48 Q91 61 74 68 M198 48 Q197 56 201 58 M468 122 Q478 126 489 132 M480 194 Q483 178 496 174\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3.5\"/>\n<g font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#172554\" font-weight=\"600\"><text x=\"57\" y=\"43\">Q</text><text x=\"65\" y=\"145\">O</text><text x=\"224\" y=\"43\">F</text><text x=\"326\" y=\"216\">A</text><text x=\"477\" y=\"103\">P</text><text x=\"504\" y=\"216\">H</text></g>\n<g font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#0f172a\"><text x=\"95\" y=\"87\">80°</text><text x=\"148\" y=\"70\">30°</text><text x=\"448\" y=\"139\">70°</text><text x=\"442\" y=\"171\">80°</text></g>\n\n</svg>"
+                  }
                 }
               ],
               "timeLimit": 60,
@@ -4251,14 +4278,17 @@
                 "marks": 1,
                 "part": "",
                 "origin": "exam-import"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 560 270\" width=\"100%\" height=\"250\" style=\"max-width:560px;display:block;margin:auto;background:#fff\">\n<rect width=\"560\" height=\"270\" fill=\"#fff\"/>\n<path d=\"M70 48 L84 126 L218 48 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/>\n<path d=\"M342 194 L485 112 L500 194 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/>\n<path d=\"M70 48 L218 48 M342 194 L500 194\" stroke=\"#f59e0b\" stroke-width=\"4\"/>\n<path d=\"M141 42 l4 12 M417 188 l4 12\" stroke=\"#f59e0b\" stroke-width=\"3\"/>\n<path d=\"M90 48 Q91 61 74 68 M198 48 Q197 56 201 58 M468 122 Q478 126 489 132 M480 194 Q483 178 496 174\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3.5\"/>\n<g font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#172554\" font-weight=\"600\"><text x=\"57\" y=\"43\">Q</text><text x=\"65\" y=\"145\">O</text><text x=\"224\" y=\"43\">F</text><text x=\"326\" y=\"216\">A</text><text x=\"477\" y=\"103\">P</text><text x=\"504\" y=\"216\">H</text></g>\n<g font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#0f172a\"><text x=\"95\" y=\"87\">80°</text><text x=\"148\" y=\"70\">30°</text><text x=\"448\" y=\"139\">70°</text><text x=\"442\" y=\"171\">80°</text></g>\n\n</svg>"
               }
             }
           ],
-          "hint": "Check exactly which matching sides and angles are marked; do not use SSA as a congruence test.",
+          "hint": "For each pair, list the equal angles and sides that are given or can be deduced. Match corresponding vertices before naming a test.",
           "keyPoints": [
             {
-              "text": "congruency test",
-              "note": "Use the named test only when all its required matching measurements are present."
+              "text": "Choose a valid congruency test",
+              "note": "RHS uses a right angle, equal hypotenuse and one equal side. ASA uses two equal angles and the included equal side."
             }
           ],
           "timeLimit": 60,
@@ -4271,9 +4301,6 @@
             "marks": 2,
             "part": "",
             "origin": "exam-import"
-          },
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 235\" width=\"100%\" height=\"220\" style=\"max-width:440px;display:block;margin:auto;background:#fff\"><g fill=\"#dbeafe\" fill-opacity=\".4\" stroke=\"#334155\" stroke-width=\"2\"><path d=\"M55 45 L75 165 L190 45 Z\"/><path d=\"M250 165 L355 45 L375 165 Z\"/></g><path d=\"M55 45 L190 45 M250 165 L375 165\" stroke=\"#f59e0b\" stroke-width=\"3\"/><path d=\"M55 45 h14 v14 M375 165 h-14 v-14\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"2\"/><path d=\"M70 52 Q82 57 84 70 M175 46 Q171 58 161 62 M353 60 Q365 70 366 83 M264 154 Q275 143 287 139\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/><text x=\"43\" y=\"40\" font-size=\"13\">Q</text><text x=\"68\" y=\"184\" font-size=\"13\">O</text><text x=\"194\" y=\"40\" font-size=\"13\">F</text><text x=\"238\" y=\"184\" font-size=\"13\">A</text><text x=\"352\" y=\"40\" font-size=\"13\">P</text><text x=\"379\" y=\"184\" font-size=\"13\">H</text><text x=\"92\" y=\"80\" font-size=\"12\">80°</text><text x=\"151\" y=\"72\" font-size=\"12\">30°</text><text x=\"316\" y=\"103\" font-size=\"12\">70°</text><text x=\"336\" y=\"157\" font-size=\"12\">80°</text><path d=\"M120 38 l5 14 M309 158 l5 14\" stroke=\"#f59e0b\" stroke-width=\"2\"/></svg>"
           }
         },
         {
