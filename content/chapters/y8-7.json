@@ -5695,13 +5695,13 @@
           "id": "fsh-y8-2020-q7b",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "(b) Sammy is seeking to buy the new PlayStation 5 for $600.",
+          "stem": "Sammy is seeking to buy the new PlayStation 5 for $600.",
           "parts": [
             {
               "id": "fsh-y8-2020-q7bi",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "(i) This price includes GST. Calculate the pre-GST price of the PlayStation 5.",
+              "stem": "This price includes GST. Calculate the pre-GST price of the PlayStation 5.",
               "options": [
                 "\\(\\text{\\$}545.45\\)",
                 "$540.00",
@@ -5709,25 +5709,25 @@
                 "$660.00"
               ],
               "answer": 0,
-              "hint": "Australian GST is 10%, so the inclusive price is 110% of the pre-GST price.",
+              "hint": "A 10% GST addition makes the final price 110% of the pre-GST price. Set 1.10 × the pre-GST price equal to $600, then divide by 1.10.",
               "keyPoints": [
                 {
-                  "text": "includes GST",
-                  "note": "Divide the GST-inclusive price by 1.10; do not subtract 10% of $600."
+                  "text": "Undo the 10% GST increase",
+                  "note": "The inclusive price is 110% of the pre-GST price. Divide $600 by 1.10 rather than subtracting 10% of $600."
                 }
               ],
               "steps": [
                 {
-                  "explain": "The price including 10% GST is 110% of the original price.",
-                  "work": "\\(1.10P=600\\)"
+                  "explain": "Let P be the pre-GST price. GST is 10% of P, so the GST-inclusive price is the original 100% plus another 10%, which is 110% of P.",
+                  "work": "\\(100\\%+10\\%=110\\%=1.10,\\quad1.10P=600\\)"
                 },
                 {
-                  "explain": "Divide by (1.10) to find the pre-GST price.",
+                  "explain": "To recover the original price P, divide both sides by 1.10. This reverses the multiplication by 1.10.",
                   "work": "\\(P=\\frac{600}{1.10}=545.4545\\ldots\\)"
                 },
                 {
-                  "explain": "Round to the nearest cent.",
-                  "work": "\\(\\boxed{\\$545.45}\\)"
+                  "explain": "Money is written to the nearest cent. The third decimal place is 4, so the cents remain 45.",
+                  "work": "\\(P=\\boxed{\\$545.45}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -5747,7 +5747,7 @@
               "id": "fsh-y8-2020-q7bii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "(ii) How much in total would Sammy need to pay back if he took a loan of $600 from a bank at a simple interest rate of 4.5% p.a. for 3.5 years?",
+              "stem": "How much in total would Sammy need to pay back if he took a loan of $600 from a bank at a simple interest rate of 4.5% p.a. for 3.5 years?",
               "options": [
                 "\\(\\text{\\$}694.50\\)",
                 "$94.50",
@@ -5755,25 +5755,29 @@
                 "$694.05"
               ],
               "answer": 0,
-              "hint": "Use simple interest I=Prt, then add the interest to the $600 principal.",
+              "hint": "Use simple interest I = Prt. Convert 4.5% to 0.045, use t = 3.5 years, then add the interest to the $600 loan.",
               "keyPoints": [
                 {
-                  "text": "simple interest rate of 4.5% p.a.",
-                  "note": "Convert 4.5% to 0.045 and use time in years."
+                  "text": "Simple interest over 3.5 years",
+                  "note": "The annual interest is 4.5% of $600. Multiply that yearly interest by 3.5, then add the result to the principal."
                 }
               ],
               "steps": [
                 {
-                  "explain": "List the values for simple interest.",
-                  "work": "\\(P=600,\\quad r=0.045,\\quad t=3.5\\)"
+                  "explain": "Identify the principal, annual interest rate, and time. Since the rate is a percentage, convert it to a decimal before using the formula.",
+                  "work": "\\(P=600,\\quad r=4.5\\%=\\frac{4.5}{100}=0.045,\\quad t=3.5\\text{ years}\\)"
                 },
                 {
-                  "explain": "Calculate the interest.",
-                  "work": "\\(I=Prt=600\\times0.045\\times3.5=\\$94.50\\)"
+                  "explain": "Simple interest is principal multiplied by rate per year and time in years.",
+                  "work": "\\(I=Prt=600\\times0.045\\times3.5\\)"
                 },
                 {
-                  "explain": "Add interest to the principal for the total repayment.",
-                  "work": "\\(600+94.50=\\boxed{\\$694.50}\\)"
+                  "explain": "First calculate the interest for one year, then multiply by 3.5 years.",
+                  "work": "\\(600\\times0.045=27,\\quad27\\times3.5=94.50\\quad\\Rightarrow\\quad I=\\$94.50\\)"
+                },
+                {
+                  "explain": "The total repayment includes the original $600 principal and all $94.50 interest. Add these amounts.",
+                  "work": "\\(\\text{total}=600+94.50=\\boxed{\\$694.50}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -5793,37 +5797,37 @@
               "id": "fsh-y8-2020-q7biii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "(iii) Another bank tells Sammy that he only needs to pay $120 in interest for the PlayStation 5 in addition to the principle cost if he takes a loan from them. Should Sammy take the loan from the bank in (ii) or this new bank? Explain your answer.",
+              "stem": "Another bank tells Sammy that he only needs to pay $120 in interest for the PlayStation 5 in addition to the principal cost if he takes a loan from them. Should Sammy take the loan from the first bank or this new bank? Explain your answer.",
               "options": [
-                "He should take the loan in (ii): the total is $694.50, compared with $720 at the new bank.",
+                "He should take the first bank loan: the total is $694.50, compared with $720 at the new bank.",
                 "He should take the new bank: $120 is less than $94.50.",
-                "He should take the loan in (ii): $694.50 is less than $600.",
+                "He should take the first bank loan: $694.50 is less than $600.",
                 "Either bank costs $720 in total."
               ],
               "answer": 0,
-              "hint": "Compare the total repayment from (ii) with $600 plus $120 at the new bank.",
+              "hint": "Find each total repayment: add the interest to the $600 principal for each bank. Compare the totals, not just the interest amounts.",
               "keyPoints": [
                 {
-                  "text": "only needs to pay $120 in interest",
-                  "note": "Compare total amounts owed, not just interest amounts."
+                  "text": "Compare full repayment amounts",
+                  "note": "One bank charges $94.50 interest and the other $120. Add each interest amount to the $600 principal before deciding."
                 }
               ],
               "steps": [
                 {
-                  "explain": "Use the total from part (ii).",
-                  "work": "\\(\\text{Bank (ii) total}=\\$694.50\\)"
+                  "explain": "The first bank’s total repayment is the $600 principal plus the $94.50 simple interest calculated above.",
+                  "work": "\\(600+94.50=\\$694.50\\)"
                 },
                 {
-                  "explain": "Find the new bank’s total repayment.",
+                  "explain": "The new bank charges $120 interest on the same $600 principal. Add these to find its total repayment.",
                   "work": "\\(600+120=\\$720\\)"
                 },
                 {
-                  "explain": "Compare the totals.",
-                  "work": "\\(694.50<720\\)"
+                  "explain": "Compare the total repayments. The first bank’s amount is lower. Calculate how much lower it is.",
+                  "work": "\\(720-694.50=\\$25.50\\)"
                 },
                 {
-                  "explain": "The first bank costs $25.50 less.",
-                  "work": "\\(720-694.50=\\$25.50\\quad\\boxed{\\text{Choose bank (ii).}}\\)"
+                  "explain": "The first bank costs $25.50 less overall, so Sammy should choose the first bank.",
+                  "work": "\\(\\boxed{\\text{Choose the first bank.}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -5840,11 +5844,11 @@
               }
             }
           ],
-          "hint": "For an inclusive tax price, divide by the full multiplier. For a loan, calculate interest then compare total repayments.",
+          "hint": "For the GST question, undo the 10% increase by dividing by 1.10. For the loans, calculate each total repayment and compare the totals.",
           "keyPoints": [
             {
-              "text": "$600",
-              "note": "Distinguish the pre-tax price from the final amount repaid on a loan."
+              "text": "GST-inclusive price and loan repayments",
+              "note": "The GST is part of the $600 ticket price. For each loan, compare the principal plus interest that Sammy must repay."
             }
           ],
           "timeLimit": 60,
