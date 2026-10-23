@@ -1643,16 +1643,16 @@
           "id": "fsh-y8-2020-q5a",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "Question 5(a) – A basketball court 14 m by 28 m is surrounded by a grassed area 5 m wide as shown below:",
+          "stem": "A basketball court 14 m by 28 m is surrounded by a grassed area 5 m wide as shown below:",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 230\" width=\"100%\" height=\"220\" style=\"max-width:400px;display:block;margin:auto;background:#fff\"><rect x=\"55\" y=\"28\" width=\"290\" height=\"175\" fill=\"#dcfce7\" stroke=\"#10b981\" stroke-width=\"4\"/><rect x=\"95\" y=\"64\" width=\"210\" height=\"103\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"200\" y=\"117\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">28 m</text><text x=\"78\" y=\"119\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\" transform=\"rotate(-90 78 119)\">14 m</text><text x=\"326\" y=\"53\" text-anchor=\"middle\" font-size=\"14\" fill=\"#047857\">5 m</text><text x=\"200\" y=\"220\" text-anchor=\"middle\" font-size=\"13\" fill=\"#64748b\">grass surrounds all four sides</text></svg>"
+          },
           "parts": [
             {
               "id": "fsh-y8-2020-q5ai",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "(i) Find the area of the grass.",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 230\" width=\"100%\" height=\"220\" style=\"max-width:400px;display:block;margin:auto;background:#fff\"><rect x=\"55\" y=\"28\" width=\"290\" height=\"175\" fill=\"#dcfce7\" stroke=\"#10b981\" stroke-width=\"4\"/><rect x=\"95\" y=\"64\" width=\"210\" height=\"103\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"200\" y=\"117\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">28 m</text><text x=\"78\" y=\"119\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\" transform=\"rotate(-90 78 119)\">14 m</text><text x=\"326\" y=\"53\" text-anchor=\"middle\" font-size=\"14\" fill=\"#047857\">5 m</text><text x=\"200\" y=\"220\" text-anchor=\"middle\" font-size=\"13\" fill=\"#64748b\">grass surrounds all four sides</text></svg>"
-              },
+              "stem": "Find the area of the grass.",
               "options": [
                 "\\(520\\text{ m}^2\\)",
                 "\\(470\\text{ m}^2\\)",
@@ -1669,16 +1669,25 @@
               ],
               "steps": [
                 {
-                  "explain": "The 5 m grass border adds (10) m to each full dimension.",
-                  "work": "\\(\\text{Outer length}=28+5+5=38\\text{ m}\\)\n\\(\\text{Outer width}=14+5+5=24\\text{ m}\\)"
+                  "explain": "The grass is 5 m wide on both opposite sides. Add the two 5 m strips to each court dimension to get the outside dimensions.",
+                  "work": "\\(\\text{Outer length}=28+5+5=38\\text{ m}\\)\n\\(\\text{Outer width}=14+5+5=24\\text{ m}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 230\" width=\"90%\" height=\"205\" style=\"max-width:400px;display:block;margin:auto;background:#fff\"><rect width=\"400\" height=\"230\" fill=\"#fff\"/><rect x=\"55\" y=\"28\" width=\"290\" height=\"175\" rx=\"2\" fill=\"#bbf7d0\" stroke=\"#334155\" stroke-width=\"3\"/><rect x=\"95\" y=\"64\" width=\"210\" height=\"103\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"2\"/><text x=\"200\" y=\"119\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">court 28 m</text><text x=\"78\" y=\"119\" text-anchor=\"middle\" font-size=\"14\" fill=\"#334155\" transform=\"rotate(-90 78 119)\">14 m</text><text x=\"200\" y=\"51\" text-anchor=\"middle\" font-size=\"14\" fill=\"#047857\">5 m grass border</text><text x=\"200\" y=\"193\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">outer: 38 m by 24 m</text></svg>"
+                  }
                 },
                 {
-                  "explain": "Find the outer rectangle area.",
-                  "work": "\\(38\\times24=912\\text{ m}^2\\)"
+                  "explain": "Multiply the outside length by the outside width to find the area of the whole rectangle, including the court and grass.",
+                  "work": "\\(A_{\\text{outer}}=38\\times24=912\\text{ m}^2\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 230\" width=\"90%\" height=\"205\" style=\"max-width:400px;display:block;margin:auto;background:#fff\"><rect width=\"400\" height=\"230\" fill=\"#fff\"/><rect x=\"55\" y=\"28\" width=\"290\" height=\"175\" rx=\"2\" fill=\"#86efac\" stroke=\"#047857\" stroke-width=\"3\"/><rect x=\"95\" y=\"64\" width=\"210\" height=\"103\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"2\"/><text x=\"200\" y=\"45\" text-anchor=\"middle\" font-size=\"15\" fill=\"#065f46\">38 m</text><text x=\"68\" y=\"119\" text-anchor=\"middle\" font-size=\"14\" fill=\"#065f46\" transform=\"rotate(-90 68 119)\">24 m</text><text x=\"200\" y=\"119\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\">whole area = 912 m²</text></svg>"
+                  }
                 },
                 {
-                  "explain": "Find and subtract the court area.",
-                  "work": "\\(14\\times28=392\\text{ m}^2\\)\n\\(912-392=\\boxed{520\\text{ m}^2}\\)"
+                  "explain": "The inner rectangle is the basketball court. Subtract its area from the whole outer area; the remaining area is the grass.",
+                  "work": "\\(A_{\\text{court}}=14\\times28=392\\text{ m}^2\\)\n\\(A_{\\text{grass}}=912-392=\\boxed{520\\text{ m}^2}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 230\" width=\"90%\" height=\"205\" style=\"max-width:400px;display:block;margin:auto;background:#fff\"><rect width=\"400\" height=\"230\" fill=\"#fff\"/><rect x=\"55\" y=\"28\" width=\"290\" height=\"175\" rx=\"2\" fill=\"#bbf7d0\" stroke=\"#047857\" stroke-width=\"3\"/><rect x=\"95\" y=\"64\" width=\"210\" height=\"103\" fill=\"#fed7aa\" stroke=\"#c2410c\" stroke-width=\"2\"/><text x=\"200\" y=\"47\" text-anchor=\"middle\" font-size=\"14\" fill=\"#065f46\">whole area: 912 m²</text><text x=\"200\" y=\"119\" text-anchor=\"middle\" font-size=\"14\" fill=\"#9a3412\">court: 392 m²</text><text x=\"200\" y=\"193\" text-anchor=\"middle\" font-size=\"13\" fill=\"#166534\">grass = outer area − court area</text></svg>"
+                  }
                 }
               ],
               "timeLimit": 60,
@@ -1698,18 +1707,15 @@
               "id": "fsh-y8-2020-q5aii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "(ii) If the cost of the grass is $5.70 per square metre, find the cost of laying the grass.",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 230\" width=\"100%\" height=\"220\" style=\"max-width:400px;display:block;margin:auto;background:#fff\"><rect x=\"55\" y=\"28\" width=\"290\" height=\"175\" fill=\"#dcfce7\" stroke=\"#f59e0b\" stroke-width=\"2\"/><rect x=\"95\" y=\"64\" width=\"210\" height=\"103\" fill=\"#fff\" stroke=\"#f59e0b\" stroke-width=\"4\"/><text x=\"200\" y=\"117\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">28 m</text><text x=\"78\" y=\"119\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\" transform=\"rotate(-90 78 119)\">14 m</text><text x=\"326\" y=\"53\" text-anchor=\"middle\" font-size=\"14\" fill=\"#047857\">5 m</text><text x=\"200\" y=\"220\" text-anchor=\"middle\" font-size=\"13\" fill=\"#64748b\">grass surrounds all four sides</text></svg>"
-              },
+              "stem": "If the cost of the grass is $5.70 per square metre, find the cost of laying the grass.",
               "options": [
                 "\\(\\text{\\$}2,964.00\\)",
-                "\\(\\text{\\$}2,964\\)",
+                "\\(\\text{\\$}2,234.40\\)",
                 "\\(\\text{\\$}2,964.70\\)",
                 "\\(\\text{\\$}296.40\\)"
               ],
               "answer": 0,
-              "hint": "Use the grass area from part (i) and multiply by $5.70 per square metre.",
+              "hint": "Use the grass area you calculated, then multiply by the cost for each square metre.",
               "keyPoints": [
                 {
                   "text": "$5.70 per square metre",
@@ -1718,15 +1724,18 @@
               ],
               "steps": [
                 {
-                  "explain": "Use the grass area from part (i).",
-                  "work": "\\(A=520\\text{ m}^2\\)"
+                  "explain": "Use the area of the grass calculated above. The highlighted green border is the part being priced.",
+                  "work": "\\(A_{\\text{grass}}=520\\text{ m}^2\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 230\" width=\"90%\" height=\"205\" style=\"max-width:400px;display:block;margin:auto;background:#fff\"><rect width=\"400\" height=\"230\" fill=\"#fff\"/><rect x=\"55\" y=\"28\" width=\"290\" height=\"175\" rx=\"2\" fill=\"#86efac\" stroke=\"#047857\" stroke-width=\"3\"/><rect x=\"95\" y=\"64\" width=\"210\" height=\"103\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"2\"/><text x=\"200\" y=\"119\" text-anchor=\"middle\" font-size=\"14\" fill=\"#334155\">court</text><text x=\"200\" y=\"193\" text-anchor=\"middle\" font-size=\"13\" fill=\"#166534\">highlighted grass area: 520 m²</text></svg>"
+                  }
                 },
                 {
-                  "explain": "Multiply area by cost per square metre.",
-                  "work": "\\(520\\times\\$5.70=\\$2,964\\)"
+                  "explain": "A rate of $5.70 per square metre means multiply $5.70 by each of the 520 square metres.",
+                  "work": "\\(520\\times\\$5.70=520\\times(5+0.70)\\)\n\\(=2,600+364=\\$2,964.00\\)"
                 },
                 {
-                  "explain": "State the total cost in dollars.",
+                  "explain": "Write the total to the nearest cent, using two decimal places for money.",
                   "work": "\\(\\boxed{\\$2,964.00}\\)"
                 }
               ],
