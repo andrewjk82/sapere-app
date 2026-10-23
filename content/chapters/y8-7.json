@@ -3823,13 +3823,13 @@
           "id": "fsh-y8-2020-q7a",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "(a) A shirt is being sold for $18 at Shop A.",
+          "stem": "A shirt is being sold for $18 at Shop A.",
           "parts": [
             {
               "id": "fsh-y8-2020-q7ai",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "(i) During a sale, 15% is taken off the price of the shirt. How much do you pay?",
+              "stem": "During a sale, 15% is taken off the price of the shirt. How much do you pay?",
               "options": [
                 "\\(\\text{\\$}15.30\\)",
                 "\\(\\text{\\$}2.70\\)",
@@ -3837,25 +3837,29 @@
                 "\\(\\text{\\$}13.50\\)"
               ],
               "answer": 0,
-              "hint": "Find 85% of the original $18 price, or subtract the 15% discount.",
+              "hint": "Calculate 15% of the original $18 price and subtract that discount from $18. As a check, the amount paid is the remaining 85%.",
               "keyPoints": [
                 {
-                  "text": "15% is taken off",
-                  "note": "A 15% discount means paying 100%−15%=85%."
+                  "text": "15% discount from $18",
+                  "note": "The discount amount is 0.15 × $18; subtract it from the original price to find the amount paid."
                 }
               ],
               "steps": [
                 {
-                  "explain": "Find 15% of the original price.",
-                  "work": "\\(0.15\\times18=\\$2.70\\)"
+                  "explain": "The original price is $18. A 15% discount means the discount is 15 out of every 100 parts of that price. Convert the percentage to a decimal before multiplying.",
+                  "work": "\\(15\\%=\\frac{15}{100}=0.15\\)"
                 },
                 {
-                  "explain": "Subtract the discount from the original price.",
-                  "work": "\\(18-2.70=\\boxed{\\$15.30}\\)"
+                  "explain": "Multiply the original price by 0.15 to find the money taken off.",
+                  "work": "\\(\\text{discount}=0.15\\times18=\\$2.70\\)"
                 },
                 {
-                  "explain": "Check using the remaining percentage.",
-                  "work": "\\(0.85\\times18=\\$15.30\\)"
+                  "explain": "Subtract the discount from the original price. This is the amount the customer pays.",
+                  "work": "\\(\\text{amount paid}=18-2.70=\\boxed{\\$15.30}\\)"
+                },
+                {
+                  "explain": "Check by finding the percentage left after the discount: 100% − 15% = 85%. It gives the same final price.",
+                  "work": "\\(85\\%=0.85,\\quad0.85\\times18=\\$15.30\\)"
                 }
               ],
               "timeLimit": 60,
@@ -3875,7 +3879,7 @@
               "id": "fsh-y8-2020-q7aii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "(ii) Having decided to buy the shirt, you are told that your loyalty card allows you to take a further 10% off the sale price for the shirt. How much do you now pay?",
+              "stem": "Having decided to buy the shirt, you are told that your loyalty card allows you to take a further 10% off the sale price for the shirt. How much do you now pay?",
               "options": [
                 "\\(\\text{\\$}13.77\\)",
                 "\\(\\text{\\$}12.24\\)",
@@ -3883,25 +3887,29 @@
                 "\\(\\text{\\$}15.30\\)"
               ],
               "answer": 0,
-              "hint": "Apply the further 10% discount to the sale price from part (i), not to $18.",
+              "hint": "Start with the reduced sale price of $15.30. The extra 10% is taken off that amount, so you pay the remaining 90%.",
               "keyPoints": [
                 {
-                  "text": "further 10% off the sale price",
-                  "note": "The new discount is calculated from $15.30."
+                  "text": "A further 10% discount",
+                  "note": "Apply 10% to $15.30, the price after the first discount; do not calculate it from $18."
                 }
               ],
               "steps": [
                 {
-                  "explain": "Use the sale price from part (i).",
-                  "work": "\\(\\text{Sale price}=\\$15.30\\)"
+                  "explain": "After the first discount, the shirt costs $15.30. This is now the starting price for the loyalty-card discount.",
+                  "work": "\\(\\text{sale price after first discount}=\\$15.30\\)"
                 },
                 {
-                  "explain": "A further 10% off means paying 90% of that price.",
-                  "work": "\\(0.90\\times15.30=13.77\\)"
+                  "explain": "The loyalty card takes off another 10%. Find 10% of $15.30 to calculate the second discount.",
+                  "work": "\\(\\text{second discount}=0.10\\times15.30=\\$1.53\\)"
                 },
                 {
-                  "explain": "State the price after both discounts.",
-                  "work": "\\(\\boxed{\\$13.77}\\)"
+                  "explain": "Subtract the second discount from the current sale price to find the amount paid.",
+                  "work": "\\(15.30-1.53=\\boxed{\\$13.77}\\)"
+                },
+                {
+                  "explain": "Check by calculating the 90% that remains after taking 10% off.",
+                  "work": "\\(100\\%-10\\%=90\\%,\\quad0.90\\times15.30=\\$13.77\\)"
                 }
               ],
               "timeLimit": 60,
@@ -3921,7 +3929,7 @@
               "id": "fsh-y8-2020-q7aiii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "(iii) The same shirt is being sold at Shop B for $18. They are offering a 25% discount off this price. Would it have been better to buy the shirt here? Explain your answer using a calculation.",
+              "stem": "The same shirt is being sold at Shop B for $18. They are offering a 25% discount off this price. Would it have been better to buy the shirt here? Explain your answer using a calculation.",
               "options": [
                 "Yes; Shop B costs $13.50, which is $0.27 less than $13.77.",
                 "No; Shop B costs $15.30, which is more than $13.77.",
@@ -3929,29 +3937,29 @@
                 "No; Shop B costs $18.00 after the discount."
               ],
               "answer": 0,
-              "hint": "Calculate 75% of $18 and compare it with the final Shop A price.",
+              "hint": "For Shop B, calculate 25% of $18 and subtract it. Compare Shop B’s final price with Shop A’s final price after both discounts.",
               "keyPoints": [
                 {
-                  "text": "$18. They are offering a 25% discount",
-                  "note": "Compare both final prices after all discounts."
+                  "text": "Compare the final prices",
+                  "note": "Shop B’s 25% discount applies to $18. Compare that result with Shop A’s price of $13.77 after the loyalty discount."
                 }
               ],
               "steps": [
                 {
-                  "explain": "Find Shop B’s price after a 25% discount.",
-                  "work": "\\(18(1-0.25)=18(0.75)=\\$13.50\\)"
+                  "explain": "At Shop B, the original price is $18 and the discount rate is 25%. Calculate the amount taken off.",
+                  "work": "\\(\\text{Shop B discount}=0.25\\times18=\\$4.50\\)"
                 },
                 {
-                  "explain": "Recall the final Shop A price after the loyalty discount.",
-                  "work": "\\(\\text{Shop A}=\\$13.77\\)"
+                  "explain": "Subtract the $4.50 discount from Shop B’s original price.",
+                  "work": "\\(\\text{Shop B final price}=18-4.50=\\$13.50\\)"
                 },
                 {
-                  "explain": "Compare the amounts.",
+                  "explain": "Shop A’s final price after the sale discount and loyalty discount is $13.77. Find the difference between the two final prices.",
                   "work": "\\(13.77-13.50=\\$0.27\\)"
                 },
                 {
-                  "explain": "Shop B is cheaper by $0.27, so the answer is yes.",
-                  "work": "\\(\\boxed{\\text{Yes; Shop B costs }\\$13.50.}\\)"
+                  "explain": "Shop B is $0.27 cheaper than Shop A, so it would have been better to buy the shirt at Shop B.",
+                  "work": "\\(\\boxed{\\text{Yes. Shop B is cheaper by }\\$0.27.}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -3968,11 +3976,11 @@
               }
             }
           ],
-          "hint": "For successive discounts, apply each percentage to the price that remains after the previous discount.",
+          "hint": "Apply each discount to the price that remains at that stage. After calculating each final price, compare the two shops.",
           "keyPoints": [
             {
-              "text": "$18 at Shop A",
-              "note": "Keep the original price and the reduced price distinct."
+              "text": "Successive percentage discounts",
+              "note": "A second discount is calculated from the already reduced sale price, while a separate shop discount is calculated from that shop’s original price."
             }
           ],
           "timeLimit": 60,
