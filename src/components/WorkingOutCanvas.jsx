@@ -16,7 +16,7 @@ import {
 } from '../utils/padView';
 
 // ⬆ Bump this every time you modify the canvas so you can confirm the deployed version
-const CANVAS_VERSION = 'v10.12-finger-scroll2';
+const CANVAS_VERSION = 'v10.13-finger-scroll3';
 
 // Minimum squared distance between captured points (~1.4px).
 const MIN_DIST_SQ = 2;
@@ -220,7 +220,8 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   const lastSampleRef = useRef({ x: 0, y: 0, t: 0 });
   const smoothWRef = useRef(3);        // low-pass-filtered line width
   const penSeenRef = useRef(loadPenDevice());    // a pen/stylus has been used (here, ever) → reject palm
-  const lastPenAtRef = useRef(0);      // last time a pen touched or hovered the screen (a resting palm is not a scroll)
+  const lastPenAtRef = useRef(0);      // last time a pen touched the screen (a resting palm is not a scroll)
+  const penDownRef = useRef(false);    // a pen is on the screen right now: nothing else on the page may scroll it
   const rafIdRef = useRef(0);          // pending requestAnimationFrame id for live render
   const canceledPenStrokeRef = useRef(null);
   const canvasWrapperRef = useRef(null);
@@ -1237,6 +1238,8 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     const activeTouches = new Map();
     let boardActive = false; // at least one touch/pointer started inside wrapper
     let oneFinger = null;    // a single finger sliding the page: { id, x0, y0, base: page position at the start, fired }
+    // A pen is on the screen (a lost pointerup must not block scrolling for ever: the claim expires after 2 s without pen movement).
+    const penOnScreen = () => penDownRef.current && performance.now() - lastPenAtRef.current < 2000;
 
     const isInsideBoard = (target) =>
       !!(target && (wrapper === target || wrapper.contains(target)));
@@ -1356,9 +1359,9 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
       oneFinger = null;
       if (e.touches.length === 1 && e.changedTouches.length === 1 && !pageNavRef.current.isSubmitted) {
         const t = e.changedTouches[0];
-        const fingerTip = t.touchType !== 'stylus' && Math.max(t.radiusX || 0, t.radiusY || 0) < 50;   // iPad fingertips report ~15–35; a resting palm is far bigger
+        const fingerTip = t.touchType !== 'stylus' && Math.max(t.radiusX || 0, t.radiusY || 0) < 40;   // iPad fingertips report ~15–35; a resting palm is bigger
         const onPage = viewportRef.current?.contains(e.target) && !e.target?.closest?.('button, a, label, select, input, [data-lasso-handle]');
-        if ((penSeenRef.current || palmGuardRef.current) && fingerTip && onPage && performance.now() - lastPenAtRef.current > 500) {
+        if ((penSeenRef.current || palmGuardRef.current) && fingerTip && onPage && !penOnScreen() && performance.now() - lastPenAtRef.current > 500) {
           oneFinger = { id: t.identifier, x0: t.clientX, y0: t.clientY, base: pagePosRef.current, fired: false };
         }
       }
@@ -1374,6 +1377,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     const onTouchMove = (e) => {
       if (boardActive) tapMoved(e.changedTouches);
       for (const t of e.changedTouches) if (t.touchType === 'stylus') lastPenAtRef.current = performance.now();
+      if (oneFinger && (penOnScreen() || performance.now() - lastPenAtRef.current < 150)) oneFinger = null;   // writing: a hand resting on the glass must not move the page
       if (oneFinger && e.touches.length === 1) {
         const t = Array.from(e.touches).find((x) => x.identifier === oneFinger.id);
         if (!t) { oneFinger = null; return; }
@@ -1407,6 +1411,10 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     // ── Pointer path (when first finger is pointer-captured on canvas,
     // touch events can be flaky — track multi-touch via pointers too) ───
     const onPointerDown = (e) => {
+      if (e.pointerType === 'pen') {                       // fires before the touch events of the same contact
+        penDownRef.current = true; lastPenAtRef.current = performance.now(); oneFinger = null;
+        return;
+      }
       if (e.pointerType !== 'touch') return;
       if (!isInsideBoard(e.target)) return;
       boardActive = true;
@@ -1415,7 +1423,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     };
 
     const onPointerMove = (e) => {
-      if (e.pointerType === 'pen') { if (e.buttons > 0) lastPenAtRef.current = performance.now(); return; }   // pen on the screen — a hovering pencil does not count
+      if (e.pointerType === 'pen') { if (e.buttons > 0) { penDownRef.current = true; lastPenAtRef.current = performance.now(); } return; }   // a hovering pencil does not count
       if (e.pointerType !== 'touch') return;
       if (!activeTouches.has(e.pointerId)) return;
       activeTouches.set(e.pointerId, { x: e.clientX, y: e.clientY });
@@ -1425,6 +1433,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     };
 
     const onPointerUp = (e) => {
+      if (e.pointerType === 'pen') { penDownRef.current = false; lastPenAtRef.current = performance.now(); return; }
       if (e.pointerType !== 'touch') return;
       activeTouches.delete(e.pointerId);
       if (activeTouches.size < 2) {
