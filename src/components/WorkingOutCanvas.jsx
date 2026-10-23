@@ -16,7 +16,7 @@ import {
 } from '../utils/padView';
 
 // ⬆ Bump this every time you modify the canvas so you can confirm the deployed version
-const CANVAS_VERSION = 'v10.10-pen-memory';
+const CANVAS_VERSION = 'v10.11-finger-scroll';
 
 // Minimum squared distance between captured points (~1.4px).
 const MIN_DIST_SQ = 2;
@@ -220,6 +220,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   const lastSampleRef = useRef({ x: 0, y: 0, t: 0 });
   const smoothWRef = useRef(3);        // low-pass-filtered line width
   const penSeenRef = useRef(false);    // a pen/stylus has been used → reject palm
+  const lastPenAtRef = useRef(0);      // last time a pen touched or hovered the screen (a resting palm is not a scroll)
   const rafIdRef = useRef(0);          // pending requestAnimationFrame id for live render
   const canceledPenStrokeRef = useRef(null);
   const canvasWrapperRef = useRef(null);
@@ -1234,6 +1235,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     // pointerId → { x, y } for touch pointers that began on this board
     const activeTouches = new Map();
     let boardActive = false; // at least one touch/pointer started inside wrapper
+    let oneFinger = null;    // a single finger sliding the page: { id, x0, y0, base: page position at the start, fired }
 
     const isInsideBoard = (target) =>
       !!(target && (wrapper === target || wrapper.contains(target)));
@@ -1345,8 +1347,23 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
       if (isInsideBoard(e.target) || e.touches.length >= 2) boardActive = true;
       if (!boardActive) return;
       tapStart(e);
+      for (const t of e.changedTouches) if (t.touchType === 'stylus') lastPenAtRef.current = performance.now();
+
+      // One finger slides the page up / down (pen in use, so a finger is never drawing): zoomed in it pans, at fit
+      // size a vertical slide changes page — the same as two fingers do. Palms are not fingertips: a big contact
+      // area, or a pen that touched / hovered a moment ago, is ignored.
+      oneFinger = null;
+      if (e.touches.length === 1 && e.changedTouches.length === 1 && !pageNavRef.current.isSubmitted) {
+        const t = e.changedTouches[0];
+        const fingerTip = t.touchType !== 'stylus' && (t.radiusX || 0) < 22 && (t.radiusY || 0) < 22;
+        const onPage = displayCanvasRef.current?.contains(e.target) && !e.target?.closest?.('button, a, label, select, input, [data-lasso-handle]');
+        if ((penSeenRef.current || palmGuardRef.current) && fingerTip && onPage && performance.now() - lastPenAtRef.current > 500) {
+          oneFinger = { id: t.identifier, x0: t.clientX, y0: t.clientY, base: pagePosRef.current, fired: false };
+        }
+      }
 
       if (e.touches.length >= 2) {
+        oneFinger = null;
         gestureStart(touchPoints(e.touches));
         // Stop parent scroll containers (Secret Note left column, etc.)
         if (e.cancelable !== false) e.preventDefault();
@@ -1355,12 +1372,31 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
 
     const onTouchMove = (e) => {
       if (boardActive) tapMoved(e.changedTouches);
+      for (const t of e.changedTouches) if (t.touchType === 'stylus') lastPenAtRef.current = performance.now();
+      if (oneFinger && e.touches.length === 1) {
+        const t = Array.from(e.touches).find((x) => x.identifier === oneFinger.id);
+        if (!t) { oneFinger = null; return; }
+        const dx = t.clientX - oneFinger.x0;
+        const dy = t.clientY - oneFinger.y0;
+        if (Math.hypot(dx, dy) < 6) return;                      // a tap or a wobble, not a slide
+        if (e.cancelable !== false) e.preventDefault();
+        const cur = viewRef.current;
+        if (cur.zoom > SNAP_ZOOM) {
+          const vs = viewSizeRef.current;
+          setView({ zoom: cur.zoom, pos: clampPos({ x: oneFinger.base.x + dx, y: oneFinger.base.y + dy }, fitScale(vs.w, vs.h) * cur.zoom, vs.w, vs.h) });
+        } else if (!oneFinger.fired && Math.abs(dy) > 70 && Math.abs(dy) > Math.abs(dx) * 1.5) {
+          oneFinger.fired = true;
+          if (dy < 0) goNext(); else goPrev();
+        }
+        return;
+      }
       if (!boardActive || !gesture || e.touches.length < 2) return;
       if (e.cancelable !== false) e.preventDefault();
       gestureMove(touchPoints(e.touches));
     };
 
     const onTouchEnd = (e) => {
+      if (e.touches.length === 0) oneFinger = null;
       if (e.touches.length < 2) {
         gesture = null;
       }
@@ -1378,6 +1414,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     };
 
     const onPointerMove = (e) => {
+      if (e.pointerType === 'pen') { lastPenAtRef.current = performance.now(); return; }   // also while the pencil only hovers
       if (e.pointerType !== 'touch') return;
       if (!activeTouches.has(e.pointerId)) return;
       activeTouches.set(e.pointerId, { x: e.clientX, y: e.clientY });
