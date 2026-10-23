@@ -4,7 +4,7 @@ Apply this checklist whenever adding questions from an exam or worksheet. It rec
 
 ## Source and topic mapping
 - Read both the exam and its solutions. Match each sub-question to the existing year/topic taxonomy before adding it.
-- Preserve the source question wording verbatim; do not paraphrase or silently alter the prompt. When a multipart source is split for independent grading, keep the original wording and identify only the original part (a, b, i, ii, etc.).
+- Preserve the source question wording verbatim; do not paraphrase or silently alter the prompt. Remove redundant source numbering markers such as `(a)`, `(b)`, `(i)`, `(ii)` from student-facing stems, including multipart children, when the user has asked to remove them. Keep source numbering in internal metadata/IDs as needed; do not duplicate it in the visible wording.
 - Preserve the source question's mathematical meaning and include all relevant parts. Count every parent and sub-question against the source before and after import; do not duplicate a source part or omit a sub-question.
 - Verify answer keys against the mathematics, even when the supplied key or diagram seems inconsistent.
 
@@ -18,6 +18,7 @@ Apply this checklist whenever adding questions from an exam or worksheet. It rec
 - Add `keyPoints` for useful parts of the stem with concise, question-specific English tips. Each highlighted `text` must exactly match a substring of the stem.
 - Give each question a clear, detailed step-by-step solution with mathematical working, not generic prose. Show substitutions, intermediate calculations, units, and the final result.
 - For drawing/construction tasks, keep the learner's question diagram unfinished and include a complete, clearly labelled sample in the final solution step.
+- If a source diagram is needed in the solution, use step figures to explain the actual calculation: identify and highlight the exact sides/angles/data at that step, and show the substitutions/calculations alongside. Do not hide the only useful diagram in the question card when the requested task is to construct/draw it.
 
 ## Diagrams and rendering
 - Include the diagram or graph needed to solve the source problem. Use the matching geometry and label every relevant point, side, angle, axis, and unit.
@@ -25,6 +26,8 @@ Apply this checklist whenever adding questions from an exam or worksheet. It rec
 - In solution diagrams, highlight the exact sides, angles, graph features, or data used in that step. Keep angle arcs within the two rays they describe and put angle labels inside the correct sectors, close to the arcs without overlap.
 - Check that equal-side marks sit on the sides, right-angle marks are at the correct vertices, and coordinates/labels do not overlap or clip. Do not leave a requested sample diagram blank.
 - Render and visually inspect authored SVGs at their intended size; correct layout issues before completing the batch.
+- Always compare imported/redrawn diagrams directly with the source PDF. Check vertex correspondence, dimension-to-edge attachment, angle sectors, visible/hidden edges, and whether the solid's projected geometry communicates the stated shape. Never infer a 3D diagram from the intended answer alone.
+- After moving any label to fix overlap, render again and re-check that it still clearly identifies its intended edge/angle and remains inside the viewBox.
 
 ## Final checks
 - Check question count and IDs against the source, correct options against the worked solution, topic placement, hints, exact highlight substrings, step figures, timer, and XP.

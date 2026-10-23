@@ -99,6 +99,12 @@ It captures recurring defects reported by this user: altered source wording,
 missing or incorrectly grouped subparts, stray part labels, shallow solutions,
 generic hints, broken LaTeX, incorrect/overlapping diagram labels, and
 unverified imports. Check every nested leaf, not only multipart parents.
+Also read and apply `profiles/User_Reported_Regression_Lessons.md` on every
+past-paper import or repair. It consolidates the user's repeated corrections
+about visible part markers, source-matched diagrams, step figures, detailed
+calculations, LaTeX rendering, hints, and layout. When the user specifies a
+standing preference that differs from another checklist, the user's explicit
+preference takes precedence.
 
 ### Structure: 3~5 Steps
 

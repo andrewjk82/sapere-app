@@ -12,10 +12,10 @@ the user and prevents them from returning in later imports.
   rewrite what the question asks.
 - Account for every question and subquestion in the source before finishing.
   Track source page, question number, and subpart for each imported item.
-- When source subparts are grouped into one multipart card, show each original
-  subpart label exactly once. When a source subpart becomes its own question
-  card, remove only the redundant label marker such as `(i)` or `(b)` from the
-  displayed stem; keep the question wording intact.
+- Remove source numbering markers such as `(a)`, `(b)`, `(i)`, and `(ii)` from
+  student-facing stems, including multipart children. The multipart structure
+  or question ID provides the organization; do not leave a visible duplicate
+  marker in the wording. Preserve all mathematical wording after the marker.
 - Keep related subparts together when they depend on earlier answers or are
   explicitly presented as parts of one source question.
 - Match each leaf to the target year, chapter, and topic profile before writing
@@ -69,6 +69,11 @@ the user and prevents them from returning in later imports.
   source. Use dashed lines for genuinely hidden edges, solid lines for visible
   edges, and distinguish given dimensions from lengths being found. For
   step-by-step geometry, highlight the exact sides/angles used at that step.
+- Directly compare every imported or redrawn figure with the source PDF. Verify
+  which side each length labels, which vertex owns each angle, all vertex
+  correspondences in 3D solids, and whether each visible/hidden edge is drawn
+  correctly. Do not accept a plausible-looking sketch without matching the
+  original geometry.
 - Remove unnecessary diagrams from questions that are text/algebra only. Do not
   leave source subpart labels duplicated in stems or rendered solution text.
 
