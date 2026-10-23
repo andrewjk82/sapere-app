@@ -6796,6 +6796,56 @@
             "topic": "y9-14c"
           },
           "xp": 2
+        },
+        {
+          "id": "nsb-y9-2019-t4-q4d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the following equations simultaneously: \\(5x+7y=29\\) and \\(2x+3y=12\\).",
+          "options": [
+            "\\(x=2,\\ y=3\\)",
+            "\\(x=3,\\ y=2\\)",
+            "\\(x=1,\\ y=4\\)",
+            "\\(x=4,\\ y=1\\)"
+          ],
+          "answer": 1,
+          "hint": "Use elimination: make the x-coefficients equal, then subtract the equations.",
+          "keyPoints": [
+            {
+              "text": "Solve the following equations simultaneously",
+              "note": "Use elimination: make the x-coefficients equal, then subtract the equations."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the equations and choose elimination. Multiply the first equation by 2 and the second by 5 so both have coefficient 10 for x.",
+              "work": "\\((2(5x+7y=29):\\quad10x+14y=58)\\)\n\\((5(2x+3y=12):\\quad10x+15y=60)\\)"
+            },
+            {
+              "explain": "Subtract the first new equation from the second to eliminate x.",
+              "work": "\\(((10x+15y)-(10x+14y)=60-58\\quad\\Rightarrow\\quad y=2)\\)"
+            },
+            {
+              "explain": "Substitute (y=2) into the simpler original equation.",
+              "work": "\\((2x+3(2)=12\\quad\\Rightarrow\\quad2x=6\\quad\\Rightarrow\\quad x=3)\\)"
+            },
+            {
+              "explain": "Check in the other equation: (5(3)+7(2)=29).",
+              "work": "\\((\\boxed{x=3, y=2})\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2019 Yr 9 yearly-2",
+            "school": "North Sydney Boys' High School",
+            "year": 2019,
+            "page": 4,
+            "question": "4",
+            "part": "4(d)",
+            "marks": 3,
+            "origin": "exam-import"
+          }
         }
       ]
     },

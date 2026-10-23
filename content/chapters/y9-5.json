@@ -2985,6 +2985,56 @@
             "grade": "9"
           },
           "xp": 2
+        },
+        {
+          "id": "nsb-y9-2019-t4-q4ai",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve \\(3x+2=9x-34\\).",
+          "options": [
+            "\\(x=6\\)",
+            "\\(x=-6\\)",
+            "\\(x=4\\)",
+            "\\(x=36\\)"
+          ],
+          "answer": 0,
+          "hint": "Collect the x-terms on one side and constants on the other, applying each operation to both sides.",
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "Collect the x-terms on one side and constants on the other, applying each operation to both sides."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Subtract (3x) from both sides.",
+              "work": "\\((2=6x-34)\\)"
+            },
+            {
+              "explain": "Add 34 to both sides.",
+              "work": "\\((36=6x)\\)"
+            },
+            {
+              "explain": "Divide both sides by 6.",
+              "work": "\\((x=6)\\)"
+            },
+            {
+              "explain": "Check: both sides equal 20 when (x=6).",
+              "work": "\\((3(6)+2=20=9(6)-34\\quad\\Rightarrow\\quad\\boxed{x=6})\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2019 Yr 9 yearly-2",
+            "school": "North Sydney Boys' High School",
+            "year": 2019,
+            "page": 4,
+            "question": "4",
+            "part": "4(a)(i)",
+            "marks": 2,
+            "origin": "exam-import"
+          }
         }
       ]
     },
@@ -7113,6 +7163,106 @@
               "note": "Cross-multiply, then collect the x-terms. Exclude values that make either denominator zero."
             }
           ]
+        },
+        {
+          "id": "nsb-y9-2019-t4-q4aii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve \\(\\dfrac{2x-5}{3}=\\dfrac{4x-11}{2}\\).",
+          "options": [
+            "\\(x=-\\dfrac{23}{8}\\)",
+            "\\(x=\\dfrac{23}{8}\\)",
+            "\\(x=\\dfrac{13}{8}\\)",
+            "\\(x=\\dfrac{23}{4}\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply both sides by the lowest common denominator 6, then expand.",
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "Multiply both sides by the lowest common denominator 6, then expand."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The denominators are 3 and 2; multiply both sides by 6, equivalently cross-multiply.",
+              "work": "\\((2(2x-5)=3(4x-11))\\)"
+            },
+            {
+              "explain": "Expand both sides.",
+              "work": "\\((4x-10=12x-33)\\)"
+            },
+            {
+              "explain": "Add 33 and subtract 4x on both sides.",
+              "work": "\\((23=8x)\\)"
+            },
+            {
+              "explain": "Divide by 8 and check the denominator-cleared equation.",
+              "work": "\\((\\boxed{x=\\dfrac{23}{8}})\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2019 Yr 9 yearly-2",
+            "school": "North Sydney Boys' High School",
+            "year": 2019,
+            "page": 4,
+            "question": "4",
+            "part": "4(a)(ii)",
+            "marks": 2,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "nsb-y9-2019-t4-q4aiv",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve \\(\\dfrac{3-x}{3}-\\dfrac{x+1}{4}=\\dfrac{x}{6}\\).",
+          "options": [
+            "\\(x=-1\\)",
+            "\\(x=9\\)",
+            "\\(x=\\dfrac19\\)",
+            "\\(x=1\\)"
+          ],
+          "answer": 3,
+          "hint": "The lowest common denominator is 12. Multiply every term by 12.",
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "The lowest common denominator is 12. Multiply every term by 12."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the common denominator of 3, 4, and 6.",
+              "work": "\\((\\mathrm{LCD}=12)\\)"
+            },
+            {
+              "explain": "Multiply every term by 12, including the right-hand side.",
+              "work": "\\((4(3-x)-3(x+1)=2x)\\)"
+            },
+            {
+              "explain": "Expand, keeping the minus sign before the second bracket.",
+              "work": "\\((12-4x-3x-3=2x\\quad\\Rightarrow\\quad9-7x=2x)\\)"
+            },
+            {
+              "explain": "Add (7x) to both sides and divide by 9.",
+              "work": "\\((9=9x\\quad\\Rightarrow\\quad\\boxed{x=1})\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2019 Yr 9 yearly-2",
+            "school": "North Sydney Boys' High School",
+            "year": 2019,
+            "page": 4,
+            "question": "4",
+            "part": "4(a)(iv)",
+            "marks": 3,
+            "origin": "exam-import"
+          }
         }
       ]
     },
@@ -13614,6 +13764,56 @@
             "topic": "y9-5h"
           },
           "xp": 2
+        },
+        {
+          "id": "nsb-y9-2019-t4-q4aiii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve \\(3-\\dfrac{2x}{5}\\geq27\\).",
+          "options": [
+            "\\(x\\leq-60\\)",
+            "\\(x\\geq-60\\)",
+            "\\(x\\leq60\\)",
+            "\\(x\\geq60\\)"
+          ],
+          "answer": 0,
+          "hint": "Isolate the x-term. When multiplying or dividing an inequality by a negative number, reverse the inequality sign.",
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "Isolate the x-term. When multiplying or dividing an inequality by a negative number, reverse the inequality sign."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Subtract 3 from both sides.",
+              "work": "\\((-\\dfrac{2x}{5}\\geq24)\\)"
+            },
+            {
+              "explain": "Multiply both sides by 5.",
+              "work": "\\((-2x\\geq120)\\)"
+            },
+            {
+              "explain": "Divide by (-2); reverse the inequality because the divisor is negative.",
+              "work": "\\((x\\leq-60)\\)"
+            },
+            {
+              "explain": "State the solution set.",
+              "work": "\\((\\boxed{x\\leq-60})\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2019 Yr 9 yearly-2",
+            "school": "North Sydney Boys' High School",
+            "year": 2019,
+            "page": 4,
+            "question": "4",
+            "part": "4(a)(iii)",
+            "marks": 2,
+            "origin": "exam-import"
+          }
         }
       ]
     },

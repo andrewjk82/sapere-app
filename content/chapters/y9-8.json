@@ -6476,6 +6476,194 @@
               "note": "Rewrite both 9 and 27 as powers of 3, then equate exponents."
             }
           ]
+        },
+        {
+          "id": "nsb-y9-2019-t4-q6ai",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(y^5\\times3y^7\\times2y^3\\).",
+          "options": [
+            "\\(6y^{105}\\)",
+            "\\(6y^{15}\\)",
+            "\\(5y^{15}\\)",
+            "\\(6y^{10}\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply the numerical coefficients and add exponents of the common base y.",
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Multiply the numerical coefficients and add exponents of the common base y."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply the coefficients.",
+              "work": "\\((1\\times3\\times2=6)\\)"
+            },
+            {
+              "explain": "For products with the same base y, add the exponents.",
+              "work": "\\((y^5y^7y^3=y^{5+7+3}=y^{15})\\)"
+            },
+            {
+              "explain": "Combine the coefficient and power.",
+              "work": "\\((\\boxed{6y^{15}})\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2019 Yr 9 yearly-2",
+            "school": "North Sydney Boys' High School",
+            "year": 2019,
+            "page": 6,
+            "question": "6",
+            "part": "6(a)(i)",
+            "marks": 1,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "nsb-y9-2019-t4-q6aii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(12w^4\\div4w^3\\).",
+          "options": [
+            "\\(3w\\)",
+            "\\(3w^7\\)",
+            "\\(8w\\)",
+            "\\(3w^{-1}\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide the coefficients and subtract the exponent in the denominator from the exponent in the numerator.",
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Divide the coefficients and subtract the exponent in the denominator from the exponent in the numerator."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Divide the numerical coefficients.",
+              "work": "\\((12\\div4=3)\\)"
+            },
+            {
+              "explain": "For division with the same base w, subtract exponents.",
+              "work": "\\((w^4\\div w^3=w^{4-3}=w)\\)"
+            },
+            {
+              "explain": "Combine the results.",
+              "work": "\\((\\boxed{3w})\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2019 Yr 9 yearly-2",
+            "school": "North Sydney Boys' High School",
+            "year": 2019,
+            "page": 6,
+            "question": "6",
+            "part": "6(a)(ii)",
+            "marks": 1,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "nsb-y9-2019-t4-q6aiii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(12(x^2y^3)^4\\).",
+          "options": [
+            "\\(12x^6y^7\\)",
+            "\\(12x^8y^7\\)",
+            "\\(48x^8y^{12}\\)",
+            "\\(12x^8y^{12}\\)"
+          ],
+          "answer": 3,
+          "hint": "Raise every factor inside the brackets to the fourth power, multiplying each exponent by 4.",
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Raise every factor inside the brackets to the fourth power, multiplying each exponent by 4."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the power to each factor inside the bracket.",
+              "work": "\\(((x^2y^3)^4=(x^2)^4(y^3)^4)\\)"
+            },
+            {
+              "explain": "Use the power-of-a-power rule: multiply exponents.",
+              "work": "\\(((x^2)^4=x^{2\\times4}=x^8,\\qquad(y^3)^4=y^{3\\times4}=y^{12})\\)"
+            },
+            {
+              "explain": "The outside coefficient 12 is unchanged.",
+              "work": "\\((\\boxed{12x^8y^{12}})\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2019 Yr 9 yearly-2",
+            "school": "North Sydney Boys' High School",
+            "year": 2019,
+            "page": 6,
+            "question": "6",
+            "part": "6(a)(iii)",
+            "marks": 1,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "nsb-y9-2019-t4-q7c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify \\(\\dfrac{7^{x-1}\\times(7^{x+1})^2}{7^{2x-3}\\times7^{x+2}}\\).",
+          "options": [
+            "\\(7\\)",
+            "\\(1\\)",
+            "\\(49\\)",
+            "\\(7^2x\\)"
+          ],
+          "answer": 2,
+          "hint": "Use the power-of-a-power rule first, then combine exponents in the numerator and denominator separately.",
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Use the power-of-a-power rule first, then combine exponents in the numerator and denominator separately."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the power-of-a-power rule to the squared power in the numerator.",
+              "work": "\\(((7^{x+1})^2=7^{2x+2})\\)"
+            },
+            {
+              "explain": "Add exponents when multiplying powers with base 7.",
+              "work": "\\((7^{x-1}\\times7^{2x+2}=7^{3x+1})\\)"
+            },
+            {
+              "explain": "Combine the denominator powers.",
+              "work": "\\((7^{2x-3}\\times7^{x+2}=7^{3x-1})\\)"
+            },
+            {
+              "explain": "Subtract the denominator exponent from the numerator exponent.",
+              "work": "\\((\\dfrac{7^{3x+1}}{7^{3x-1}}=7^{(3x+1)-(3x-1)}=7^2=\\boxed{49})\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2019 Yr 9 yearly-2",
+            "school": "North Sydney Boys' High School",
+            "year": 2019,
+            "page": 7,
+            "question": "7",
+            "part": "7(c)",
+            "marks": 2,
+            "origin": "exam-import"
+          }
         }
       ]
     },
@@ -6634,6 +6822,56 @@
               "note": "Dividing by \\(5^{-1}\\) multiplies by 5; subtract exponents for the matching h and k bases."
             }
           ]
+        },
+        {
+          "id": "nsb-y9-2019-t4-q6b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Simplify and write without negative indices \\(\\left(\\dfrac{3x^2y^{-3}}{y^2}\\right)^{-5}\\).",
+          "options": [
+            "\\(\\dfrac{243x^{10}}{y^{25}}\\)",
+            "\\(\\dfrac{y^{25}}{243x^{10}}\\)",
+            "\\(\\dfrac{y^{5}}{243x^{10}}\\)",
+            "\\(\\dfrac{1}{243x^{10}y^{25}}\\)"
+          ],
+          "answer": 1,
+          "hint": "First combine the powers of y inside the fraction. The outside exponent is negative, so invert the resulting power before applying 5.",
+          "keyPoints": [
+            {
+              "text": "Simplify and write without negative indices",
+              "note": "First combine the powers of y inside the fraction. The outside exponent is negative, so invert the resulting power before applying 5."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Combine the y-powers in the fraction by subtracting exponents.",
+              "work": "\\((\\dfrac{3x^2y^{-3}}{y^2}=3x^2y^{-3-2}=3x^2y^{-5})\\)"
+            },
+            {
+              "explain": "A negative power of the whole product takes its reciprocal and changes the exponent to positive.",
+              "work": "\\(((3x^2y^{-5})^{-5}=3^{-5}x^{-10}y^{25})\\)"
+            },
+            {
+              "explain": "Rewrite all negative powers in the denominator.",
+              "work": "\\((3^{-5}=\\dfrac1{243},\\quad x^{-10}=\\dfrac1{x^{10}})\\)"
+            },
+            {
+              "explain": "State the expression with no negative indices.",
+              "work": "\\((\\boxed{\\dfrac{y^{25}}{243x^{10}}})\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2019 Yr 9 yearly-2",
+            "school": "North Sydney Boys' High School",
+            "year": 2019,
+            "page": 6,
+            "question": "6",
+            "part": "6(b)",
+            "marks": 2,
+            "origin": "exam-import"
+          }
         }
       ]
     },

@@ -480,6 +480,106 @@
             "grade": "9",
             "sourceQuestion": "par-q6iii"
           }
+        },
+        {
+          "id": "nsb-y9-2019-t4-q4bi",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve \\(x^2-6x-27=0\\).",
+          "options": [
+            "\\(x=3\\text{ or }x=-9\\)",
+            "\\(x=9\\text{ or }x=3\\)",
+            "\\(x=-9\\text{ or }x=-3\\)",
+            "\\(x=9\\text{ or }x=-3\\)"
+          ],
+          "answer": 3,
+          "hint": "Find two numbers with product (-27) and sum (-6), then use the zero-product rule.",
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "Find two numbers with product (-27) and sum (-6), then use the zero-product rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Factor the quadratic using two numbers that multiply to (-27) and add to (-6).",
+              "work": "\\((x^2-6x-27=(x-9)(x+3)=0)\\)"
+            },
+            {
+              "explain": "Set each factor equal to zero.",
+              "work": "\\((x-9=0\\quad\\text{or}\\quad x+3=0)\\)"
+            },
+            {
+              "explain": "Solve both linear equations.",
+              "work": "\\((x=9\\quad\\text{or}\\quad x=-3)\\)"
+            },
+            {
+              "explain": "Both values satisfy the original quadratic.",
+              "work": "\\((\\boxed{x=9\\text{ or }x=-3})\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2019 Yr 9 yearly-2",
+            "school": "North Sydney Boys' High School",
+            "year": 2019,
+            "page": 4,
+            "question": "4",
+            "part": "4(b)(i)",
+            "marks": 2,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "nsb-y9-2019-t4-q4biii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve \\((x+3)^2=25\\).",
+          "options": [
+            "\\(x=2\\) only",
+            "\\(x=8\\text{ or }x=-2\\)",
+            "\\(x=-3\\text{ or }x=5\\)",
+            "\\(x=2\\text{ or }x=-8\\)"
+          ],
+          "answer": 3,
+          "hint": "Take both square roots: a square equal to 25 gives values 5 and -5.",
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "Take both square roots: a square equal to 25 gives values 5 and -5."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Take the positive and negative square roots of both sides.",
+              "work": "\\((x+3=\\pm5)\\)"
+            },
+            {
+              "explain": "Solve the two resulting equations separately.",
+              "work": "\\((x+3=5\\Rightarrow x=2,\\qquad x+3=-5\\Rightarrow x=-8)\\)"
+            },
+            {
+              "explain": "Check both by substitution into the squared expression.",
+              "work": "\\(((2+3)^2=25,\\quad(-8+3)^2=25)\\)"
+            },
+            {
+              "explain": "Include both solutions.",
+              "work": "\\((\\boxed{x=2\\text{ or }x=-8})\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2019 Yr 9 yearly-2",
+            "school": "North Sydney Boys' High School",
+            "year": 2019,
+            "page": 4,
+            "question": "4",
+            "part": "4(b)(iii)",
+            "marks": 2,
+            "origin": "exam-import"
+          }
         }
       ]
     },
@@ -525,6 +625,56 @@
             "grade": "9"
           },
           "xp": 2
+        },
+        {
+          "id": "nsb-y9-2019-t4-q4bii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve \\(3x^2-16x-35=0\\).",
+          "options": [
+            "\\(x=7\\text{ or }x=-\\dfrac53\\)",
+            "\\(x=-7\\text{ or }x=\\dfrac53\\)",
+            "\\(x=5\\text{ or }x=-\\dfrac73\\)",
+            "\\(x=7\\text{ or }x=\\dfrac53\\)"
+          ],
+          "answer": 0,
+          "hint": "Factor the non-monic quadratic; the factors must multiply to (3x^2-16x-35).",
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "Factor the non-monic quadratic; the factors must multiply to (3x^2-16x-35)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find factors of the quadratic.",
+              "work": "\\((3x^2-16x-35=(3x+5)(x-7))\\)"
+            },
+            {
+              "explain": "Apply the zero-product rule.",
+              "work": "\\((3x+5=0\\quad\\text{or}\\quad x-7=0)\\)"
+            },
+            {
+              "explain": "Solve each factor equation.",
+              "work": "\\((x=-\\dfrac53\\quad\\text{or}\\quad x=7)\\)"
+            },
+            {
+              "explain": "State both roots.",
+              "work": "\\((\\boxed{x=7\\text{ or }x=-\\dfrac53})\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2019 Yr 9 yearly-2",
+            "school": "North Sydney Boys' High School",
+            "year": 2019,
+            "page": 4,
+            "question": "4",
+            "part": "4(b)(ii)",
+            "marks": 3,
+            "origin": "exam-import"
+          }
         }
       ]
     },
@@ -1858,6 +2008,57 @@
             "examType": "Task 3",
             "grade": "9",
             "sourceQuestion": "par-q8ii"
+          }
+        },
+        {
+          "id": "nsb-y9-2019-t4-q4c",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Graph, clearly showing the vertex, y-intercept and x-intercepts. \\(y=3x^2-12x-36\\).",
+          "manual": true,
+          "answer": "Sample graph: vertex \\((2,-48)\\), y-intercept \\((0,-36)\\), x-intercepts \\((-2,0)\\) and \\((6,0)\\).",
+          "hint": "First factor the quadratic to find the x-intercepts. Then find the vertex using symmetry and calculate the y-intercept.",
+          "keyPoints": [
+            {
+              "text": "Graph, clearly showing the vertex, y-intercept and x-intercepts.",
+              "note": "First factor the quadratic to find the x-intercepts. Then find the vertex using symmetry and calculate the y-intercept."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Factor the quadratic and set y equal to zero to find the x-intercepts.",
+              "work": "\\(y=3x^2-12x-36=3(x^2-4x-12)=3(x-6)(x+2)\\quad\\Rightarrow\\quad x=6,-2\\)"
+            },
+            {
+              "explain": "The axis of symmetry is halfway between the two roots. Substitute that x-value to find the vertex.",
+              "work": "\\(x_v=\\dfrac{6+(-2)}2=2,\\qquad y_v=3(2)^2-12(2)-36=-48\\)"
+            },
+            {
+              "explain": "Set x equal to zero and calculate the corresponding y-value.",
+              "work": "\\(y=3(0)^2-12(0)-36=-36\\)"
+            },
+            {
+              "explain": "Plot the intercepts and vertex, then draw a smooth upward-opening parabola through them.",
+              "work": "\\(\\text{Vertex }(2,-48);\\quad y\\text{-intercept }(0,-36);\\quad x\\text{-intercepts }(-2,0),(6,0)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 280\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:12px auto;background:#fff\"><line x1=\"35\" y1=\"105\" x2=\"380\" y2=\"105\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><line x1=\"205\" y1=\"22\" x2=\"205\" y2=\"238\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><line x1=\"90\" y1=\"101\" x2=\"90\" y2=\"109\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><line x1=\"113\" y1=\"101\" x2=\"113\" y2=\"109\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"113\" y=\"123\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"400\" fill=\"#64748b\">-4</text><line x1=\"136\" y1=\"101\" x2=\"136\" y2=\"109\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><line x1=\"159\" y1=\"101\" x2=\"159\" y2=\"109\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"159\" y=\"123\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"400\" fill=\"#64748b\">-2</text><line x1=\"182\" y1=\"101\" x2=\"182\" y2=\"109\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><line x1=\"205\" y1=\"101\" x2=\"205\" y2=\"109\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"205\" y=\"123\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"400\" fill=\"#64748b\">0</text><line x1=\"228\" y1=\"101\" x2=\"228\" y2=\"109\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><line x1=\"251\" y1=\"101\" x2=\"251\" y2=\"109\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"251\" y=\"123\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"400\" fill=\"#64748b\">2</text><line x1=\"274\" y1=\"101\" x2=\"274\" y2=\"109\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><line x1=\"297\" y1=\"101\" x2=\"297\" y2=\"109\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"297\" y=\"123\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"400\" fill=\"#64748b\">4</text><line x1=\"320\" y1=\"101\" x2=\"320\" y2=\"109\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><line x1=\"343\" y1=\"101\" x2=\"343\" y2=\"109\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"343\" y=\"123\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"400\" fill=\"#64748b\">6</text><line x1=\"366\" y1=\"101\" x2=\"366\" y2=\"109\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><line x1=\"389\" y1=\"101\" x2=\"389\" y2=\"109\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"389\" y=\"123\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"400\" fill=\"#64748b\">8</text><line x1=\"202\" y1=\"217.5\" x2=\"208\" y2=\"217.5\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"195\" y=\"220.5\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9\" font-weight=\"400\" fill=\"#64748b\">-50</text><line x1=\"202\" y1=\"195\" x2=\"208\" y2=\"195\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"195\" y=\"198\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9\" font-weight=\"400\" fill=\"#64748b\">-40</text><line x1=\"202\" y1=\"172.5\" x2=\"208\" y2=\"172.5\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"195\" y=\"175.5\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9\" font-weight=\"400\" fill=\"#64748b\">-30</text><line x1=\"202\" y1=\"150\" x2=\"208\" y2=\"150\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"195\" y=\"153\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9\" font-weight=\"400\" fill=\"#64748b\">-20</text><line x1=\"202\" y1=\"127.5\" x2=\"208\" y2=\"127.5\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"195\" y=\"130.5\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9\" font-weight=\"400\" fill=\"#64748b\">-10</text><line x1=\"202\" y1=\"105\" x2=\"208\" y2=\"105\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"195\" y=\"108\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9\" font-weight=\"400\" fill=\"#64748b\">0</text><line x1=\"202\" y1=\"82.5\" x2=\"208\" y2=\"82.5\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"195\" y=\"85.5\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9\" font-weight=\"400\" fill=\"#64748b\">10</text><line x1=\"202\" y1=\"60\" x2=\"208\" y2=\"60\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"195\" y=\"63\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9\" font-weight=\"400\" fill=\"#64748b\">20</text><text x=\"385\" y=\"110\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"400\" fill=\"#334155\">x</text><text x=\"212\" y=\"19\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"400\" fill=\"#334155\">y</text><polyline points=\"136.0,44.3 138.3,50.9 140.6,57.5 142.9,63.9 145.2,70.2 147.5,76.3 149.8,82.3 152.1,88.2 154.4,93.9 156.7,99.5 159.0,105.0 161.3,110.3 163.6,115.5 165.9,120.6 168.2,125.5 170.5,130.3 172.8,135.0 175.1,139.5 177.4,143.9 179.7,148.1 182.0,152.3 184.3,156.2 186.6,160.1 188.9,163.8 191.2,167.4 193.5,170.8 195.8,174.1 198.1,177.3 200.4,180.3 202.7,183.2 205.0,186.0 207.3,188.6 209.6,191.1 211.9,193.5 214.2,195.7 216.5,197.8 218.8,199.8 221.1,201.6 223.4,203.3 225.7,204.8 228.0,206.3 230.3,207.5 232.6,208.7 234.9,209.7 237.2,210.6 239.5,211.3 241.8,211.9 244.1,212.4 246.4,212.7 248.7,212.9 251.0,213.0 253.3,212.9 255.6,212.7 257.9,212.4 260.2,211.9 262.5,211.3 264.8,210.6 267.1,209.7 269.4,208.7 271.7,207.5 274.0,206.2 276.3,204.8 278.6,203.3 280.9,201.6 283.2,199.8 285.5,197.8 287.8,195.7 290.1,193.5 292.4,191.1 294.7,188.6 297.0,186.0 299.3,183.2 301.6,180.3 303.9,177.3 306.2,174.1 308.5,170.8 310.8,167.4 313.1,163.8 315.4,160.1 317.7,156.2 320.0,152.3 322.3,148.1 324.6,143.9 326.9,139.5 329.2,135.0 331.5,130.3 333.8,125.5 336.1,120.6 338.4,115.5 340.7,110.3 343.0,105.0 345.3,99.5 347.6,93.9 349.9,88.2 352.2,82.3 354.5,76.3 356.8,70.2 359.1,63.9 361.4,57.5 363.7,50.9 366.0,44.3\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"2.6\"/><circle cx=\"159\" cy=\"105\" r=\"4\" fill=\"#f97316\"/><text x=\"159\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\" fill=\"#f97316\">(-2,0)</text><circle cx=\"343\" cy=\"105\" r=\"4\" fill=\"#f97316\"/><text x=\"343\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\" fill=\"#f97316\">(6,0)</text><circle cx=\"205\" cy=\"186\" r=\"4\" fill=\"#f97316\"/><text x=\"205\" y=\"178\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\" fill=\"#f97316\">(0,-36)</text><circle cx=\"251\" cy=\"213\" r=\"4\" fill=\"#f97316\"/><text x=\"278\" y=\"228\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\" fill=\"#f97316\">(2,-48)</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2019 Yr 9 yearly-2",
+            "school": "North Sydney Boys' High School",
+            "year": 2019,
+            "page": 4,
+            "question": "4",
+            "part": "4(c)",
+            "marks": 3,
+            "origin": "exam-import"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 280\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:12px auto;background:#fff\"><line x1=\"35\" y1=\"105\" x2=\"380\" y2=\"105\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><line x1=\"205\" y1=\"22\" x2=\"205\" y2=\"238\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><line x1=\"90\" y1=\"101\" x2=\"90\" y2=\"109\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><line x1=\"113\" y1=\"101\" x2=\"113\" y2=\"109\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"113\" y=\"123\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"400\" fill=\"#64748b\">-4</text><line x1=\"136\" y1=\"101\" x2=\"136\" y2=\"109\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><line x1=\"159\" y1=\"101\" x2=\"159\" y2=\"109\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"159\" y=\"123\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"400\" fill=\"#64748b\">-2</text><line x1=\"182\" y1=\"101\" x2=\"182\" y2=\"109\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><line x1=\"205\" y1=\"101\" x2=\"205\" y2=\"109\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"205\" y=\"123\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"400\" fill=\"#64748b\">0</text><line x1=\"228\" y1=\"101\" x2=\"228\" y2=\"109\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><line x1=\"251\" y1=\"101\" x2=\"251\" y2=\"109\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"251\" y=\"123\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"400\" fill=\"#64748b\">2</text><line x1=\"274\" y1=\"101\" x2=\"274\" y2=\"109\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><line x1=\"297\" y1=\"101\" x2=\"297\" y2=\"109\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"297\" y=\"123\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"400\" fill=\"#64748b\">4</text><line x1=\"320\" y1=\"101\" x2=\"320\" y2=\"109\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><line x1=\"343\" y1=\"101\" x2=\"343\" y2=\"109\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"343\" y=\"123\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"400\" fill=\"#64748b\">6</text><line x1=\"366\" y1=\"101\" x2=\"366\" y2=\"109\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><line x1=\"389\" y1=\"101\" x2=\"389\" y2=\"109\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"389\" y=\"123\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"400\" fill=\"#64748b\">8</text><line x1=\"202\" y1=\"217.5\" x2=\"208\" y2=\"217.5\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"195\" y=\"220.5\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9\" font-weight=\"400\" fill=\"#64748b\">-50</text><line x1=\"202\" y1=\"195\" x2=\"208\" y2=\"195\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"195\" y=\"198\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9\" font-weight=\"400\" fill=\"#64748b\">-40</text><line x1=\"202\" y1=\"172.5\" x2=\"208\" y2=\"172.5\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"195\" y=\"175.5\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9\" font-weight=\"400\" fill=\"#64748b\">-30</text><line x1=\"202\" y1=\"150\" x2=\"208\" y2=\"150\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"195\" y=\"153\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9\" font-weight=\"400\" fill=\"#64748b\">-20</text><line x1=\"202\" y1=\"127.5\" x2=\"208\" y2=\"127.5\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"195\" y=\"130.5\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9\" font-weight=\"400\" fill=\"#64748b\">-10</text><line x1=\"202\" y1=\"105\" x2=\"208\" y2=\"105\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"195\" y=\"108\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9\" font-weight=\"400\" fill=\"#64748b\">0</text><line x1=\"202\" y1=\"82.5\" x2=\"208\" y2=\"82.5\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"195\" y=\"85.5\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9\" font-weight=\"400\" fill=\"#64748b\">10</text><line x1=\"202\" y1=\"60\" x2=\"208\" y2=\"60\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"195\" y=\"63\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9\" font-weight=\"400\" fill=\"#64748b\">20</text><text x=\"385\" y=\"110\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"400\" fill=\"#334155\">x</text><text x=\"212\" y=\"19\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"400\" fill=\"#334155\">y</text><text x=\"210\" y=\"258\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"400\" fill=\"#64748b\">Sketch the parabola on these axes.</text></svg>"
           }
         }
       ]

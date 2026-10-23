@@ -2233,6 +2233,98 @@
               "note": "For a square, side length is the square root of its area. Simplify the resulting surd."
             }
           ]
+        },
+        {
+          "id": "nsb-y9-2019-t4-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\(\\dfrac{3.5+\\sqrt{2.7^2-2}}{3}\\) correct to 3 significant figures.",
+          "options": [
+            "\\(1.93\\)",
+            "\\(1.05\\)",
+            "\\(2.90\\)",
+            "\\(1.72\\)"
+          ],
+          "answer": 0,
+          "hint": "Evaluate the exponent and the expression under the square root first, then divide the whole numerator by 3.",
+          "keyPoints": [
+            {
+              "text": "correct to 3 significant figures",
+              "note": "Evaluate the exponent and the expression under the square root first, then divide the whole numerator by 3."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Follow the order of operations: evaluate the power inside the radical, then subtract.",
+              "work": "\\((2.7^2-2=7.29-2=5.29)\\)"
+            },
+            {
+              "explain": "Take the square root and add it to 3.5.",
+              "work": "\\((\\sqrt{5.29}=2.3,\\qquad3.5+2.3=5.8)\\)"
+            },
+            {
+              "explain": "Divide the complete numerator by 3 and round to three significant figures.",
+              "work": "\\((\\dfrac{5.8}{3}=1.9333\\ldots\\approx\\boxed{1.93})\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2019 Yr 9 yearly-2",
+            "school": "North Sydney Boys' High School",
+            "year": 2019,
+            "page": 2,
+            "question": "1",
+            "part": "1(a)",
+            "marks": 2,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "nsb-y9-2019-t4-q1bi",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(\\sqrt{250}\\).",
+          "options": [
+            "\\(25\\sqrt{2}\\)",
+            "\\(10\\sqrt{5}\\)",
+            "\\(5\\sqrt{10}\\)",
+            "\\(125\\sqrt{2}\\)"
+          ],
+          "answer": 2,
+          "hint": "Factor 250 as the largest perfect square times a remaining factor.",
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Factor 250 as the largest perfect square times a remaining factor."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look for the greatest perfect-square factor of 250.",
+              "work": "\\((250=25\\times10)\\)"
+            },
+            {
+              "explain": "Separate the square root across the product and evaluate the perfect square.",
+              "work": "\\((\\sqrt{250}=\\sqrt{25}\\sqrt{10}=5\\sqrt{10})\\)"
+            },
+            {
+              "explain": "The factor 10 has no square factor greater than 1, so this is simplified.",
+              "work": "\\((\\boxed{5\\sqrt{10}})\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2019 Yr 9 yearly-2",
+            "school": "North Sydney Boys' High School",
+            "year": 2019,
+            "page": 2,
+            "question": "1",
+            "part": "1(b)(i)",
+            "marks": 1,
+            "origin": "exam-import"
+          }
         }
       ]
     },
@@ -2588,6 +2680,52 @@
             "school": "Ballarat High School",
             "year": "2023"
           }
+        },
+        {
+          "id": "nsb-y9-2019-t4-q1bii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify \\(3\\sqrt{8}\\times\\sqrt{10}\\).",
+          "options": [
+            "\\(6\\sqrt{5}\\)",
+            "\\(12\\sqrt{2}\\)",
+            "\\(24\\sqrt{5}\\)",
+            "\\(12\\sqrt{5}\\)"
+          ],
+          "answer": 3,
+          "hint": "Multiply the radicals first, then extract the largest square factor.",
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Multiply the radicals first, then extract the largest square factor."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Keep the coefficient 3 outside and combine the square roots.",
+              "work": "\\((3\\sqrt{8}\\sqrt{10}=3\\sqrt{80})\\)"
+            },
+            {
+              "explain": "Factor 80 into a perfect square and a square-free factor.",
+              "work": "\\((80=16\\times5)\\)"
+            },
+            {
+              "explain": "Take the square root of 16 and multiply by 3.",
+              "work": "\\((3\\sqrt{80}=3(4\\sqrt5)=\\boxed{12\\sqrt5})\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2019 Yr 9 yearly-2",
+            "school": "North Sydney Boys' High School",
+            "year": 2019,
+            "page": 2,
+            "question": "1",
+            "part": "1(b)(ii)",
+            "marks": 2,
+            "origin": "exam-import"
+          }
         }
       ]
     },
@@ -2856,6 +2994,48 @@
             "source": "2023 Year 9 Mathematics 5.3 Task 4A",
             "school": "Ballarat High School",
             "year": "2023"
+          }
+        },
+        {
+          "id": "nsb-y9-2019-t4-q1biii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify \\((\\sqrt{3}-5)(2-\\sqrt{5})\\).",
+          "options": [
+            "\\(2\\sqrt3+\\sqrt{15}-10-5\\sqrt5\\)",
+            "\\(2\\sqrt3-\\sqrt{15}-10+5\\sqrt5\\)",
+            "\\(2\\sqrt3-\\sqrt{15}+10-5\\sqrt5\\)",
+            "\\(2\\sqrt3-5\\sqrt5-10+\\sqrt{15}\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply each term in the first bracket by both terms in the second bracket.",
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Multiply each term in the first bracket by both terms in the second bracket."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the distributive law to create four products.",
+              "work": "\\(((\\sqrt3-5)(2-\\sqrt5)=2\\sqrt3-\\sqrt{15}-10+5\\sqrt5)\\)"
+            },
+            {
+              "explain": "Check each cross product: (sqrt3cdot(-sqrt5)=-sqrt{15}) and ((-5)(-sqrt5)=+5sqrt5).",
+              "work": "\\((\\boxed{2\\sqrt3-\\sqrt{15}-10+5\\sqrt5})\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2019 Yr 9 yearly-2",
+            "school": "North Sydney Boys' High School",
+            "year": 2019,
+            "page": 2,
+            "question": "1",
+            "part": "1(b)(iii)",
+            "marks": 2,
+            "origin": "exam-import"
           }
         }
       ]
@@ -3167,6 +3347,98 @@
             "source": "2023 Year 9 Mathematics 5.3 Task 4A",
             "school": "Ballarat High School",
             "year": "2023"
+          }
+        },
+        {
+          "id": "nsb-y9-2019-t4-q1ci",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Rationalise the denominator of \\(\\dfrac{3}{5\\sqrt{2}}\\).",
+          "options": [
+            "\\(\\dfrac{3}{10\\sqrt2}\\)",
+            "\\(\\dfrac{3\\sqrt2}{5}\\)",
+            "\\(\\dfrac{3\\sqrt2}{10}\\)",
+            "\\(\\dfrac{5\\sqrt2}{6}\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply the numerator and denominator by (sqrt2), which keeps the fraction unchanged.",
+          "keyPoints": [
+            {
+              "text": "Rationalise the denominator",
+              "note": "Multiply the numerator and denominator by (sqrt2), which keeps the fraction unchanged."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The denominator contains (sqrt2), so multiply top and bottom by (sqrt2).",
+              "work": "\\((\\dfrac{3}{5\\sqrt2}\\times\\dfrac{\\sqrt2}{\\sqrt2}=\\dfrac{3\\sqrt2}{5\\sqrt4})\\)"
+            },
+            {
+              "explain": "Evaluate the denominator and simplify.",
+              "work": "\\((5\\sqrt4=5\\times2=10)\\)"
+            },
+            {
+              "explain": "The denominator is now rational.",
+              "work": "\\((\\boxed{\\dfrac{3\\sqrt2}{10}})\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2019 Yr 9 yearly-2",
+            "school": "North Sydney Boys' High School",
+            "year": 2019,
+            "page": 2,
+            "question": "1",
+            "part": "1(c)(i)",
+            "marks": 1,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "nsb-y9-2019-t4-q1cii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Rationalise the denominator of \\(\\dfrac{5}{\\sqrt{3}-4}\\).",
+          "options": [
+            "\\(\\dfrac{5(\\sqrt3-4)}{13}\\)",
+            "\\(-\\dfrac{5(\\sqrt3+4)}{13}\\)",
+            "\\(-\\dfrac{5(\\sqrt3-4)}{13}\\)",
+            "\\(\\dfrac{5(\\sqrt3+4)}{13}\\)"
+          ],
+          "answer": 1,
+          "hint": "Use the conjugate of the denominator, (sqrt3+4), so the radical terms form a difference of squares.",
+          "keyPoints": [
+            {
+              "text": "Rationalise the denominator",
+              "note": "Use the conjugate of the denominator, (sqrt3+4), so the radical terms form a difference of squares."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply numerator and denominator by the conjugate (sqrt3+4).",
+              "work": "\\((\\dfrac{5}{\\sqrt3-4}\\times\\dfrac{\\sqrt3+4}{\\sqrt3+4}=\\dfrac{5(\\sqrt3+4)}{(\\sqrt3-4)(\\sqrt3+4)})\\)"
+            },
+            {
+              "explain": "Use ((a-b)(a+b)=a^2-b^2) in the denominator.",
+              "work": "\\(((\\sqrt3)^2-4^2=3-16=-13)\\)"
+            },
+            {
+              "explain": "Write the rationalised result with a positive denominator.",
+              "work": "\\((\\boxed{-\\dfrac{5(\\sqrt3+4)}{13}})\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2019 Yr 9 yearly-2",
+            "school": "North Sydney Boys' High School",
+            "year": 2019,
+            "page": 2,
+            "question": "1",
+            "part": "1(c)(ii)",
+            "marks": 2,
+            "origin": "exam-import"
           }
         }
       ]

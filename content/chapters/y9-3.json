@@ -4652,6 +4652,56 @@
             "grade": "9",
             "sourceQuestion": "fm-q6iii"
           }
+        },
+        {
+          "id": "nsb-y9-2019-t4-q6c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A TV set is advertised as follows: cash price \\(\\$760\\), or terms of a 15% deposit and \\(\\$37.50\\) per month for two years. How much extra is paid for the TV set if it is purchased on terms?",
+          "options": [
+            "\\(\\$114\\)",
+            "\\(\\$900\\)",
+            "\\(\\$254\\)",
+            "\\(\\$1014\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the deposit as 15% of $760, add 24 monthly payments, then subtract the cash price.",
+          "keyPoints": [
+            {
+              "text": "How much extra is paid for the TV set if it is purchased on terms?",
+              "note": "Find the deposit as 15% of $760, add 24 monthly payments, then subtract the cash price."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the deposit from the cash price.",
+              "work": "\\((0.15\\times\\$760=\\$114)\\)"
+            },
+            {
+              "explain": "Two years contain 24 monthly payments. Find their total.",
+              "work": "\\((24\\times\\$37.50=\\$900)\\)"
+            },
+            {
+              "explain": "Add the deposit and instalments to get the total terms price.",
+              "work": "\\((\\$114+\\$900=\\$1014)\\)"
+            },
+            {
+              "explain": "Compare the terms price with the cash price.",
+              "work": "\\((\\$1014-\\$760=\\boxed{\\$254}) extra\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2019 Yr 9 yearly-2",
+            "school": "North Sydney Boys' High School",
+            "year": 2019,
+            "page": 6,
+            "question": "6",
+            "part": "6(c)",
+            "marks": 3,
+            "origin": "exam-import"
+          }
         }
       ]
     },
@@ -4833,6 +4883,56 @@
             "grade": "9",
             "sourceQuestion": "fm-q6iv"
           }
+        },
+        {
+          "id": "nsb-y9-2019-t4-q6d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Brian borrowed \\(\\$500\\) from a bank for 3 years. He was charged simple interest on the loan. Altogether he repaid \\(\\$657.50\\). What was the rate of interest charged per annum?",
+          "options": [
+            "\\(5.25\\%\\)",
+            "\\(15.75\\%\\)",
+            "\\(10.5\\%\\)",
+            "\\(31.5\\%\\)"
+          ],
+          "answer": 2,
+          "hint": "Subtract the principal from the total repayment to find interest, then use (I=Prt).",
+          "keyPoints": [
+            {
+              "text": "What was the rate of interest charged per annum?",
+              "note": "Subtract the principal from the total repayment to find interest, then use (I=Prt)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the interest by subtracting the borrowed principal from the total repaid.",
+              "work": "\\((I=657.50-500=\\$157.50)\\)"
+            },
+            {
+              "explain": "Use the simple-interest formula and substitute principal and time.",
+              "work": "\\((I=Prt\\quad\\Rightarrow\\quad157.50=500(r)(3))\\)"
+            },
+            {
+              "explain": "Isolate the annual rate r.",
+              "work": "\\((r=\\dfrac{157.50}{1500}=0.105)\\)"
+            },
+            {
+              "explain": "Convert the decimal rate to a percentage.",
+              "work": "\\((0.105\\times100%=\\boxed{10.5%\\text{ p.a.}})\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2019 Yr 9 yearly-2",
+            "school": "North Sydney Boys' High School",
+            "year": 2019,
+            "page": 6,
+            "question": "6",
+            "part": "6(d)",
+            "marks": 2,
+            "origin": "exam-import"
+          }
         }
       ]
     },
@@ -4966,6 +5066,56 @@
             "examType": "Task 3",
             "grade": "9",
             "sourceQuestion": "fm-q1ii"
+          }
+        },
+        {
+          "id": "nsb-y9-2019-t4-q6e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Theo invested \\(\\$3000\\) for a period of 2 years to earn compound interest of 8% per annum. Find the amount of interest that Theo will earn.",
+          "options": [
+            "\\(\\$480.00\\)",
+            "\\(\\$3499.20\\)",
+            "\\(\\$519.20\\)",
+            "\\(\\$499.20\\)"
+          ],
+          "answer": 3,
+          "hint": "Calculate the compound amount for two years, then subtract the original investment because the question asks for interest only.",
+          "keyPoints": [
+            {
+              "text": "Find the amount of interest that Theo will earn.",
+              "note": "Calculate the compound amount for two years, then subtract the original investment because the question asks for interest only."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify principal, annual rate, and number of compounding years.",
+              "work": "\\((P=3000,\\quad r=0.08,\\quad n=2)\\)"
+            },
+            {
+              "explain": "Calculate the final amount using compound growth.",
+              "work": "\\((A=P(1+r)^n=3000(1.08)^2)\\)"
+            },
+            {
+              "explain": "Evaluate the growth factor.",
+              "work": "\\(((1.08)^2=1.1664\\quad\\Rightarrow\\quad A=\\$3499.20)\\)"
+            },
+            {
+              "explain": "Interest is the final amount minus the original principal.",
+              "work": "\\((I=A-P=3499.20-3000=\\boxed{\\$499.20})\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2019 Yr 9 yearly-2",
+            "school": "North Sydney Boys' High School",
+            "year": 2019,
+            "page": 6,
+            "question": "6",
+            "part": "6(e)",
+            "marks": 2,
+            "origin": "exam-import"
           }
         }
       ]

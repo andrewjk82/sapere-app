@@ -3457,6 +3457,52 @@
             "school": "Ballarat High School",
             "year": "2023"
           }
+        },
+        {
+          "id": "nsb-y9-2019-t4-q1di",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise fully \\(4x^2-100\\).",
+          "options": [
+            "\\((2x-10)^2\\)",
+            "\\(4(x-25)(x+1)\\)",
+            "\\(2(2x-5)(2x+5)\\)",
+            "\\(4(x-5)(x+5)\\)"
+          ],
+          "answer": 3,
+          "hint": "Take out the common factor 4, then factor the difference of two squares.",
+          "keyPoints": [
+            {
+              "text": "Factorise fully",
+              "note": "Take out the common factor 4, then factor the difference of two squares."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Both terms have a common factor of 4.",
+              "work": "\\((4x^2-100=4(x^2-25))\\)"
+            },
+            {
+              "explain": "The remaining bracket is a difference of squares: (x^2-5^2).",
+              "work": "\\((x^2-25=(x-5)(x+5))\\)"
+            },
+            {
+              "explain": "Combine the common factor with the two factors.",
+              "work": "\\((\\boxed{4(x-5)(x+5)})\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2019 Yr 9 yearly-2",
+            "school": "North Sydney Boys' High School",
+            "year": 2019,
+            "page": 2,
+            "question": "1",
+            "part": "1(d)(i)",
+            "marks": 2,
+            "origin": "exam-import"
+          }
         }
       ]
     },
@@ -4007,6 +4053,56 @@
               "note": "Take out the common factor 2 first, then factor the monic quadratic."
             }
           ]
+        },
+        {
+          "id": "nsb-y9-2019-t4-q1diii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise fully \\(x^2-5x-6\\).",
+          "options": [
+            "\\((x-6)(x+1)\\)",
+            "\\((x-3)(x-2)\\)",
+            "\\((x+6)(x-1)\\)",
+            "\\((x-6)(x-1)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find two integers whose product is (-6) and whose sum is (-5).",
+          "keyPoints": [
+            {
+              "text": "Factorise fully",
+              "note": "Find two integers whose product is (-6) and whose sum is (-5)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "For a monic quadratic, choose numbers that multiply to the constant term and add to the coefficient of (x).",
+              "work": "\\(((-6)(1)=-6,\\qquad -6+1=-5)\\)"
+            },
+            {
+              "explain": "Use those two numbers as the constants in the brackets.",
+              "work": "\\((x^2-5x-6=(x-6)(x+1))\\)"
+            },
+            {
+              "explain": "Expand briefly to check the middle term and constant.",
+              "work": "\\(((x-6)(x+1)=x^2-5x-6)\\)"
+            },
+            {
+              "explain": "Therefore the factorisation is.",
+              "work": "\\((\\boxed{(x-6)(x+1)})\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Task 4 2019 Yr 9 yearly-2",
+            "school": "North Sydney Boys' High School",
+            "year": 2019,
+            "page": 2,
+            "question": "1",
+            "part": "1(d)(iii)",
+            "marks": 2,
+            "origin": "exam-import"
+          }
         }
       ]
     }
