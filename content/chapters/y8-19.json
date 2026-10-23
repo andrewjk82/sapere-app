@@ -1562,6 +1562,282 @@
             "origin": "teacher"
           },
           "xp": 2
+        },
+        {
+          "id": "fsh-y8-2020-q10",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Question 10 – Data Representation & Analysis (6 marks)\n\n(a) The number of siblings from a group of eighth grade students is shown below:\n\n\\(1, 0, 2, 1, 6, 0, 2, 0, 1, 4, 3, 2, 2, 0, 1, 1, 4\\)",
+          "parts": [
+            {
+              "id": "fsh-y8-2020-q10ai",
+              "type": "review",
+              "difficulty": "medium",
+              "stem": "(i) Draw a dot plot for the data.",
+              "answer": "A correct dot plot has 4 dots above 0, 5 above 1, 4 above 2, 1 above 3, 2 above 4, no dot above 5, and 1 above 6. The completed plot is shown in the final solution step.",
+              "solution": "A correct dot plot has 4 dots above 0, 5 above 1, 4 above 2, 1 above 3, 2 above 4, no dot above 5, and 1 above 6. The completed plot is shown in the final solution step.",
+              "hint": "Tally how many times each value from 0 to 6 occurs. Then place one dot above that value for every occurrence.",
+              "keyPoints": [
+                {
+                  "text": "Draw a dot plot",
+                  "note": "The number of dots above a value must equal its frequency."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Count the frequency of each sibling count in the list. Keep a tally for every value from 0 through 6.",
+                  "work": "\\(\\begin{array}{c|rrrrrrr}\\text{Siblings }x&0&1&2&3&4&5&6\\\\\\hline\\text{Frequency }f&4&5&4&1&2&0&1\\end{array}\\)"
+                },
+                {
+                  "explain": "Draw an evenly spaced horizontal number line and label it with the values 0 to 6. Stack one dot above a value for each student with that number of siblings.",
+                  "work": "\\(f(0)=4,\\ f(1)=5,\\ f(2)=4,\\ f(3)=1,\\ f(4)=2,\\ f(5)=0,\\ f(6)=1\\)"
+                },
+                {
+                  "explain": "Check that every observation is represented by one dot and that the full plot contains 17 dots.",
+                  "work": "\\(4+5+4+1+2+0+1=17\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 390 210\" width=\"100%\" height=\"210\" style=\"max-width:390px;display:block;margin:auto;background:#fff\"><line x1=\"35\" y1=\"160\" x2=\"365\" y2=\"160\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"54\" y1=\"157\" x2=\"54\" y2=\"163\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"54\" y=\"181\" text-anchor=\"middle\" font-size=\"13\" fill=\"#334155\">0</text><circle cx=\"54\" cy=\"150\" r=\"5.2\" fill=\"#7c3aed\" stroke=\"#5b21b6\" stroke-width=\".7\"/><circle cx=\"54\" cy=\"136\" r=\"5.2\" fill=\"#7c3aed\" stroke=\"#5b21b6\" stroke-width=\".7\"/><circle cx=\"54\" cy=\"122\" r=\"5.2\" fill=\"#7c3aed\" stroke=\"#5b21b6\" stroke-width=\".7\"/><circle cx=\"54\" cy=\"108\" r=\"5.2\" fill=\"#7c3aed\" stroke=\"#5b21b6\" stroke-width=\".7\"/><line x1=\"100\" y1=\"157\" x2=\"100\" y2=\"163\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"100\" y=\"181\" text-anchor=\"middle\" font-size=\"13\" fill=\"#334155\">1</text><circle cx=\"100\" cy=\"150\" r=\"5.2\" fill=\"#7c3aed\" stroke=\"#5b21b6\" stroke-width=\".7\"/><circle cx=\"100\" cy=\"136\" r=\"5.2\" fill=\"#7c3aed\" stroke=\"#5b21b6\" stroke-width=\".7\"/><circle cx=\"100\" cy=\"122\" r=\"5.2\" fill=\"#7c3aed\" stroke=\"#5b21b6\" stroke-width=\".7\"/><circle cx=\"100\" cy=\"108\" r=\"5.2\" fill=\"#7c3aed\" stroke=\"#5b21b6\" stroke-width=\".7\"/><circle cx=\"100\" cy=\"94\" r=\"5.2\" fill=\"#7c3aed\" stroke=\"#5b21b6\" stroke-width=\".7\"/><line x1=\"146\" y1=\"157\" x2=\"146\" y2=\"163\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"146\" y=\"181\" text-anchor=\"middle\" font-size=\"13\" fill=\"#334155\">2</text><circle cx=\"146\" cy=\"150\" r=\"5.2\" fill=\"#7c3aed\" stroke=\"#5b21b6\" stroke-width=\".7\"/><circle cx=\"146\" cy=\"136\" r=\"5.2\" fill=\"#7c3aed\" stroke=\"#5b21b6\" stroke-width=\".7\"/><circle cx=\"146\" cy=\"122\" r=\"5.2\" fill=\"#7c3aed\" stroke=\"#5b21b6\" stroke-width=\".7\"/><circle cx=\"146\" cy=\"108\" r=\"5.2\" fill=\"#7c3aed\" stroke=\"#5b21b6\" stroke-width=\".7\"/><line x1=\"192\" y1=\"157\" x2=\"192\" y2=\"163\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"192\" y=\"181\" text-anchor=\"middle\" font-size=\"13\" fill=\"#334155\">3</text><circle cx=\"192\" cy=\"150\" r=\"5.2\" fill=\"#7c3aed\" stroke=\"#5b21b6\" stroke-width=\".7\"/><line x1=\"238\" y1=\"157\" x2=\"238\" y2=\"163\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"238\" y=\"181\" text-anchor=\"middle\" font-size=\"13\" fill=\"#334155\">4</text><circle cx=\"238\" cy=\"150\" r=\"5.2\" fill=\"#7c3aed\" stroke=\"#5b21b6\" stroke-width=\".7\"/><circle cx=\"238\" cy=\"136\" r=\"5.2\" fill=\"#7c3aed\" stroke=\"#5b21b6\" stroke-width=\".7\"/><line x1=\"284\" y1=\"157\" x2=\"284\" y2=\"163\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"284\" y=\"181\" text-anchor=\"middle\" font-size=\"13\" fill=\"#334155\">5</text><line x1=\"330\" y1=\"157\" x2=\"330\" y2=\"163\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"330\" y=\"181\" text-anchor=\"middle\" font-size=\"13\" fill=\"#334155\">6</text><circle cx=\"330\" cy=\"150\" r=\"5.2\" fill=\"#7c3aed\" stroke=\"#5b21b6\" stroke-width=\".7\"/><text x=\"200\" y=\"204\" text-anchor=\"middle\" font-size=\"13\" fill=\"#334155\">Number of siblings</text></svg>"
+                  }
+                }
+              ],
+              "manual": true,
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 16,
+                "question": "10",
+                "marks": 1,
+                "part": "10(a)(i)",
+                "origin": "exam-import"
+              }
+            },
+            {
+              "id": "fsh-y8-2020-q10aii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(ii) Calculate the mean.",
+              "options": [
+                "\\(\\frac{30}{16}\\)",
+                "\\(\\frac{30}{17}\\approx1.76\\)",
+                "\\(\\frac{17}{30}\\)",
+                "\\(\\frac{29}{17}\\)"
+              ],
+              "answer": 1,
+              "hint": "Count the 17 students, find the total number of siblings, and divide the total by 17.",
+              "keyPoints": [
+                {
+                  "text": "Calculate the mean.",
+                  "note": "For frequency data, multiply each value by its frequency before adding."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "There are 17 sibling counts. The mean is the total of all sibling counts divided by 17.",
+                  "work": "\\(n=17,\\qquad \\text{mean}=\\frac{\\text{total siblings}}{17}\\)"
+                },
+                {
+                  "explain": "Use the frequencies from the data: four zeroes, five ones, four twos, one three, two fours, no fives and one six. Multiply each value by its frequency and add.",
+                  "work": "\\(0(4)+1(5)+2(4)+3(1)+4(2)+5(0)+6(1)=30\\)"
+                },
+                {
+                  "explain": "Divide the total by the number of students.",
+                  "work": "\\(\\text{mean}=\\frac{30}{17}=1.7647\\ldots\\approx1.76\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 16,
+                "question": "10",
+                "marks": 1,
+                "part": "10(a)(ii)",
+                "origin": "exam-import"
+              }
+            },
+            {
+              "id": "fsh-y8-2020-q10aiii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(iii) State the median.",
+              "options": [
+                "\\(1\\)",
+                "\\(2\\)",
+                "\\(1.5\\)",
+                "\\(0\\)"
+              ],
+              "answer": 0,
+              "hint": "Arrange the counts in order, or use the dot-plot frequencies to locate the middle observation.",
+              "keyPoints": [
+                {
+                  "text": "State the median.",
+                  "note": "There are 17 observations, so the median is the 9th value in the ordered list."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Count the observations. Since there are 17, an odd number, the median is the value in position \\(\\frac{17+1}{2}=9\\).",
+                  "work": "\\(\\text{Median position}=9\\)"
+                },
+                {
+                  "explain": "Read the ordered frequencies. The four zeroes occupy positions 1–4. The five ones occupy positions 5–9.",
+                  "work": "\\(0: 1\text{st–}4\text{th},\\qquad1:5\text{th–}9\text{th}\\)"
+                },
+                {
+                  "explain": "The 9th observation is therefore 1.",
+                  "work": "\\(\\boxed{\\text{Median}=1}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 16,
+                "question": "10",
+                "marks": 1,
+                "part": "10(a)(iii)",
+                "origin": "exam-import"
+              }
+            },
+            {
+              "id": "fsh-y8-2020-q10aiv",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(iv) State the range.",
+              "options": [
+                "\\(6\\)",
+                "\\(5\\)",
+                "\\(7\\)",
+                "\\(0\\)"
+              ],
+              "answer": 0,
+              "hint": "Find the smallest and largest sibling counts, then subtract the smaller from the larger.",
+              "keyPoints": [
+                {
+                  "text": "State the range.",
+                  "note": "The range is maximum minus minimum."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Identify the smallest and largest values in the data.",
+                  "work": "\\(\\min=0,\\qquad\\max=6\\)"
+                },
+                {
+                  "explain": "Subtract the minimum from the maximum.",
+                  "work": "\\(\\text{Range}=6-0=\\boxed{6}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 16,
+                "question": "10",
+                "marks": 1,
+                "part": "10(a)(iv)",
+                "origin": "exam-import"
+              }
+            },
+            {
+              "id": "fsh-y8-2020-q10b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(b) The maths results of twelve students are displayed in the stem-and-leaf plot below. All students received whole number marks (i.e. no half marks). However, three of the results are missing (indicated by the black boxes). Given that the mean is 30.75, state the possible missing test results.",
+              "options": [
+                "\\(\\{(18,21,26),(18,22,25),(18,23,24),(19,21,25),(19,22,24),(19,23,23)\\}\\)",
+                "\\(\\{(18,22,25),(18,23,24),(19,21,25),(19,22,24)\\}\\)",
+                "\\(\\{(18,22,25),(18,23,24),(19,21,25),(19,22,23),(19,23,23)\\}\\)",
+                "\\(\\{(18,22,25),(18,23,24),(19,21,25),(19,22,24),(19,23,23)\\}\\)"
+              ],
+              "answer": 3,
+              "hint": "Multiply the mean by 12 to find the total marks. Subtract the visible marks, then use the ascending leaf order to restrict the missing values.",
+              "keyPoints": [
+                {
+                  "text": "Given that the mean is 30.75",
+                  "note": "The blanks occur after 18 and before 25 in their respective ordered rows."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Use the key of a stem-and-leaf plot: the stem is the tens digit and the leaf is the units digit. The visible value on the first row is 18. Call the three missing results \\(a\\), \\(b\\), and \\(c\\), in the order of their rows.",
+                  "work": "\\(1\\mid8=18\\quad\\text{(key)}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 265\" width=\"100%\" height=\"240\" style=\"max-width:360px;display:block;margin:auto;background:#fff\"><text x=\"95\" y=\"28\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">Stem</text><text x=\"220\" y=\"28\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">Leaves</text><line x1=\"140\" y1=\"38\" x2=\"140\" y2=\"225\" stroke=\"#64748b\" stroke-width=\"1.7\"/><text x=\"98\" y=\"73\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">1</text><text x=\"170\" y=\"73\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">8</text><rect x=\"197\" y=\"52\" width=\"24\" height=\"25\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"98\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">2</text><rect x=\"158\" y=\"94\" width=\"24\" height=\"25\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><rect x=\"197\" y=\"94\" width=\"24\" height=\"25\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"248\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">5</text><text x=\"287\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">6</text><text x=\"98\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">3</text><text x=\"170\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">1</text><text x=\"209\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">4</text><text x=\"248\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">9</text><text x=\"98\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">4</text><text x=\"170\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">2</text><text x=\"209\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">3</text><text x=\"248\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">6</text><text x=\"180\" y=\"246\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#7c3aed\">Key: 1 | 8 = 18</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Find the total marks represented by all 12 students. Mean equals total divided by the number of results, so multiply the given mean by 12.",
+                  "work": "\\(\\text{Total}=30.75\\times12=369\\)"
+                },
+                {
+                  "explain": "Add the nine visible marks from the plot. Group by stem to avoid missing a leaf.",
+                  "work": "\\(18+(25+26)+(31+34+39)+(42+43+46)=304\\)"
+                },
+                {
+                  "explain": "Subtract the visible total from the total for all students. This is the sum of the three missing results.",
+                  "work": "\\(a+b+c=369-304=65\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 265\" width=\"100%\" height=\"240\" style=\"max-width:360px;display:block;margin:auto;background:#fff\"><text x=\"95\" y=\"28\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">Stem</text><text x=\"220\" y=\"28\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">Leaves</text><line x1=\"140\" y1=\"38\" x2=\"140\" y2=\"225\" stroke=\"#64748b\" stroke-width=\"1.7\"/><text x=\"98\" y=\"73\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">1</text><text x=\"170\" y=\"73\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">8</text><rect x=\"197\" y=\"52\" width=\"24\" height=\"25\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"98\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">2</text><rect x=\"158\" y=\"94\" width=\"24\" height=\"25\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><rect x=\"197\" y=\"94\" width=\"24\" height=\"25\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"248\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">5</text><text x=\"287\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">6</text><text x=\"98\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">3</text><text x=\"170\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">1</text><text x=\"209\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">4</text><text x=\"248\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">9</text><text x=\"98\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">4</text><text x=\"170\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">2</text><text x=\"209\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">3</text><text x=\"248\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">6</text><text x=\"180\" y=\"246\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#7c3aed\">Key: 1 | 8 = 18</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Apply the leaf order shown in each row. In the 1-stem row, the missing leaf follows 8, so \\(a\\) is 18 or 19. In the 2-stem row, both missing leaves are at or before 5 and remain in ascending order, so \\(20\\le b\\le c\\le25\\).",
+                  "work": "\\(18\\le a\\le19,\\qquad20\\le b\\le c\\le25\\)"
+                },
+                {
+                  "explain": "Check each possible value of \\(a\\). If \\(a=18\\), then \\(b+c=47\\), giving \\(22+25\\) or \\(23+24\\). If \\(a=19\\), then \\(b+c=46\\), giving \\(21+25\\), \\(22+24\\), or \\(23+23\\). Each triple totals 65 and fits the ordered blanks.",
+                  "work": "\\(\\boxed{(18,22,25),\\ (18,23,24),\\ (19,21,25),\\ (19,22,24),\\ (19,23,23)}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 265\" width=\"100%\" height=\"240\" style=\"max-width:360px;display:block;margin:auto;background:#fff\"><text x=\"95\" y=\"28\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">Stem</text><text x=\"220\" y=\"28\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">Leaves</text><line x1=\"140\" y1=\"38\" x2=\"140\" y2=\"225\" stroke=\"#64748b\" stroke-width=\"1.7\"/><text x=\"98\" y=\"73\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">1</text><text x=\"170\" y=\"73\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">8</text><rect x=\"197\" y=\"52\" width=\"24\" height=\"25\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"98\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">2</text><rect x=\"158\" y=\"94\" width=\"24\" height=\"25\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><rect x=\"197\" y=\"94\" width=\"24\" height=\"25\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"248\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">5</text><text x=\"287\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">6</text><text x=\"98\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">3</text><text x=\"170\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">1</text><text x=\"209\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">4</text><text x=\"248\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">9</text><text x=\"98\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">4</text><text x=\"170\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">2</text><text x=\"209\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">3</text><text x=\"248\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">6</text><text x=\"180\" y=\"246\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#7c3aed\">Key: 1 | 8 = 18</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Task 4 2020 Yr 8 yearly",
+                "school": "Fort Street High School",
+                "year": 2020,
+                "page": 17,
+                "question": "10",
+                "marks": 2,
+                "part": "10(b)",
+                "origin": "exam-import"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 265\" width=\"100%\" height=\"240\" style=\"max-width:360px;display:block;margin:auto;background:#fff\"><text x=\"95\" y=\"28\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">Stem</text><text x=\"220\" y=\"28\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">Leaves</text><line x1=\"140\" y1=\"38\" x2=\"140\" y2=\"225\" stroke=\"#64748b\" stroke-width=\"1.7\"/><text x=\"98\" y=\"73\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">1</text><text x=\"170\" y=\"73\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">8</text><rect x=\"197\" y=\"52\" width=\"24\" height=\"25\" fill=\"#fff\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"98\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">2</text><rect x=\"158\" y=\"94\" width=\"24\" height=\"25\" fill=\"#fff\" stroke=\"#dc2626\" stroke-width=\"2\"/><rect x=\"197\" y=\"94\" width=\"24\" height=\"25\" fill=\"#fff\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"248\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">5</text><text x=\"287\" y=\"115\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">6</text><text x=\"98\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">3</text><text x=\"170\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">1</text><text x=\"209\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">4</text><text x=\"248\" y=\"157\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">9</text><text x=\"98\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">4</text><text x=\"170\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">2</text><text x=\"209\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">3</text><text x=\"248\" y=\"199\" text-anchor=\"middle\" font-size=\"19\" fill=\"#334155\">6</text></svg>"
+              }
+            }
+          ],
+          "answer": "See sub-questions for individual answers.",
+          "hint": "For each part, identify the data representation or statistic requested. When a mean and missing values are given, use mean × number of values to find the complete total first.",
+          "keyPoints": [
+            {
+              "text": "Data Representation & Analysis",
+              "note": "Select the correct data/statistical method for each sub-question."
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "sourcePaper": "Task 4 2020 Yr 8 yearly",
+            "school": "Fort Street High School",
+            "year": 2020,
+            "page": 16,
+            "question": "10",
+            "marks": 6,
+            "part": "",
+            "origin": "exam-import"
+          }
         }
       ]
     }
