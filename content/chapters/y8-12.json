@@ -4307,37 +4307,49 @@
           "id": "fsh-y8-2020-q6c",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "(c) Consider triangles ABC and ACD as shown:",
+          "stem": "Consider triangles ABC and ADC as shown.",
           "parts": [
             {
               "id": "fsh-y8-2020-q6ci",
               "type": "review",
               "difficulty": "medium",
-              "stem": "(i) Prove that the two triangles are congruent.",
-              "answer": "In △ABC and △ADC: BC = DC (given by matching tick marks); ∠BCA = ∠DCA (given by matching angle marks); AC = AC (common side). Therefore △ABC ≅ △ADC by SAS.",
-              "hint": "Compare triangles ABC and ADC. Identify the equal side pair, the included angle pair, and the shared side.",
+              "stem": "Prove that triangles ABC and ADC are congruent.",
+              "answer": "In △ABC and △ADC, BC = DC (matching tick marks), ∠BCA = ∠ACD (matching angle marks), and AC = AC (common side). Therefore △ABC ≅ △ADC by SAS.",
+              "hint": "Write one fact at a time: match the ticked sides, match the marked angles at C, then use AC as the common side. Identify the test from these three facts.",
               "keyPoints": [
                 {
-                  "text": "Prove that the two triangles are co",
-                  "note": "State each matching fact and its reason, then name the congruence test."
+                  "text": "State each equality and its reason",
+                  "note": "BC = DC (matching ticks), ∠BCA = ∠ACD (matching angle marks), and AC = AC (common side)."
                 }
               ],
               "steps": [
                 {
-                  "explain": "Compare (\\triangle ABC) and (\\triangle ADC). The tick marks show the first equal side pair.",
-                  "work": "\\(BC=DC\\quad\\text{(given by matching ticks)}\\)"
+                  "explain": "Start with the two triangles being compared: △ABC on the left and △ADC on the right. The single tick on BC matches the single tick on DC, so these corresponding sides are equal.",
+                  "work": "\\(BC=DC\\quad\\text{(matching tick marks)}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 310\" width=\"100%\" height=\"290\" style=\"max-width:360px;display:block;margin:auto;background:#fff\">\n<rect width=\"360\" height=\"310\" fill=\"#fff\"/>\n<path d=\"M180 30 L80 135 L180 265 Z\" fill=\"#dbeafe\" fill-opacity=\".65\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n<path d=\"M180 30 L280 135 L180 265 Z\" fill=\"#dbeafe\" fill-opacity=\".45\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n<path d=\"M180 30 L80 135 M180 30 L280 135 M80 135 L180 265 M280 135 L180 265\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n<path d=\"M180 30 L180 265\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/>\n\n<path d=\"M133 192 l-7 7 M227 192 l-7 7\" stroke=\"#f59e0b\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n<path d=\"M180 239 Q166 231 159 251 M180 239 Q194 231 201 251\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<g font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"600\" fill=\"#172554\"><text x=\"180\" y=\"20\" text-anchor=\"middle\">A</text><text x=\"61\" y=\"141\" text-anchor=\"end\">B</text><text x=\"292\" y=\"141\">D</text><text x=\"180\" y=\"291\" text-anchor=\"middle\">C</text></g>\n<g font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#0f172a\"><text x=\"74\" y=\"83\">23 mm</text><text x=\"260\" y=\"83\">x</text></g>\n</svg>"
+                  }
                 },
                 {
-                  "explain": "The matching angle marks at C show the included angles are equal.",
-                  "work": "\\(\\angle BCA=\\angle ACD\\quad\\text{(given by matching angle marks)}\\)"
+                  "explain": "At C, the purple angle marks sit on the two angles made on either side of AC. They show that the included angles between BC and AC, and between AC and DC, are equal.",
+                  "work": "\\(\\angle BCA=\\angle ACD\\quad\\text{(matching angle marks)}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 310\" width=\"100%\" height=\"290\" style=\"max-width:360px;display:block;margin:auto;background:#fff\">\n<rect width=\"360\" height=\"310\" fill=\"#fff\"/>\n<path d=\"M180 30 L80 135 L180 265 Z\" fill=\"#dbeafe\" fill-opacity=\".65\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n<path d=\"M180 30 L280 135 L180 265 Z\" fill=\"#dbeafe\" fill-opacity=\".45\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n<path d=\"M180 30 L80 135 M180 30 L280 135 M80 135 L180 265 M280 135 L180 265\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n<path d=\"M180 30 L180 265\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/>\n\n<path d=\"M133 192 l-7 7 M227 192 l-7 7\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<path d=\"M180 239 Q166 231 159 251 M180 239 Q194 231 201 251\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n<g font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"600\" fill=\"#172554\"><text x=\"180\" y=\"20\" text-anchor=\"middle\">A</text><text x=\"61\" y=\"141\" text-anchor=\"end\">B</text><text x=\"292\" y=\"141\">D</text><text x=\"180\" y=\"291\" text-anchor=\"middle\">C</text></g>\n<g font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#0f172a\"><text x=\"74\" y=\"83\">23 mm</text><text x=\"260\" y=\"83\">x</text></g>\n</svg>"
+                  }
                 },
                 {
-                  "explain": "The triangles share side AC.",
-                  "work": "\\(AC=AC\\quad\\text{(common side)}\\)"
+                  "explain": "AC is the side shared by both triangles. A side is equal to itself, so this supplies the second pair of equal sides around the marked angle.",
+                  "work": "\\(AC=AC\\quad\\text{(common side)}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 310\" width=\"100%\" height=\"290\" style=\"max-width:360px;display:block;margin:auto;background:#fff\">\n<rect width=\"360\" height=\"310\" fill=\"#fff\"/>\n<path d=\"M180 30 L80 135 L180 265 Z\" fill=\"#dbeafe\" fill-opacity=\".65\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n<path d=\"M180 30 L280 135 L180 265 Z\" fill=\"#dbeafe\" fill-opacity=\".45\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n<path d=\"M180 30 L80 135 M180 30 L280 135 M80 135 L180 265 M280 135 L180 265\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n<path d=\"M180 30 L180 265\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"4\"/>\n\n<path d=\"M133 192 l-7 7 M227 192 l-7 7\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<path d=\"M180 239 Q166 231 159 251 M180 239 Q194 231 201 251\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<g font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"600\" fill=\"#172554\"><text x=\"180\" y=\"20\" text-anchor=\"middle\">A</text><text x=\"61\" y=\"141\" text-anchor=\"end\">B</text><text x=\"292\" y=\"141\">D</text><text x=\"180\" y=\"291\" text-anchor=\"middle\">C</text></g>\n<g font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#0f172a\"><text x=\"74\" y=\"83\">23 mm</text><text x=\"260\" y=\"83\">x</text></g>\n</svg>"
+                  }
                 },
                 {
-                  "explain": "The equal angle lies between the two corresponding equal sides, so the test is SAS.",
-                  "work": "\\(\\triangle ABC\\cong\\triangle ADC\\quad\\text{(SAS)}\\)"
+                  "explain": "We have two equal sides, BC = DC and AC = AC, and the equal angle at C lies between those sides in each triangle. This is the Side–Angle–Side test. Keep the vertex order matched as A ↔ A, B ↔ D, and C ↔ C.",
+                  "work": "\\(\\triangle ABC\\cong\\triangle ADC\\quad\\text{(SAS)}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 310\" width=\"100%\" height=\"290\" style=\"max-width:360px;display:block;margin:auto;background:#fff\">\n<rect width=\"360\" height=\"310\" fill=\"#fff\"/>\n<path d=\"M180 30 L80 135 L180 265 Z\" fill=\"#dbeafe\" fill-opacity=\".65\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n<path d=\"M180 30 L280 135 L180 265 Z\" fill=\"#dbeafe\" fill-opacity=\".45\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n<path d=\"M180 30 L80 135 M180 30 L280 135 M80 135 L180 265 M280 135 L180 265\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n<path d=\"M180 30 L180 265\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"4\"/>\n\n<path d=\"M133 192 l-7 7 M227 192 l-7 7\" stroke=\"#f59e0b\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n<path d=\"M180 239 Q166 231 159 251 M180 239 Q194 231 201 251\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n<g font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"600\" fill=\"#172554\"><text x=\"180\" y=\"20\" text-anchor=\"middle\">A</text><text x=\"61\" y=\"141\" text-anchor=\"end\">B</text><text x=\"292\" y=\"141\">D</text><text x=\"180\" y=\"291\" text-anchor=\"middle\">C</text></g>\n<g font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#0f172a\"><text x=\"74\" y=\"83\">23 mm</text><text x=\"260\" y=\"83\">x</text></g>\n</svg>"
+                  }
                 }
               ],
               "timeLimit": 60,
@@ -4354,16 +4366,16 @@
                 "origin": "exam-import"
               },
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 260\" width=\"100%\" height=\"240\" style=\"max-width:300px;display:block;margin:auto;background:#fff\"><path d=\"M150 30 L75 125 L150 230 L225 125 Z M150 30 L150 230\" fill=\"#dbeafe\" fill-opacity=\".55\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"150\" y1=\"30\" x2=\"75\" y2=\"125\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"150\" y1=\"30\" x2=\"225\" y2=\"125\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"75\" y1=\"125\" x2=\"150\" y2=\"230\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"225\" y1=\"125\" x2=\"150\" y2=\"230\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"230\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M143 207 Q150 192 157 207\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"3\"/><path d=\"M142 211 Q150 222 158 211\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"3\"/><text x=\"150\" y=\"20\" text-anchor=\"middle\" font-size=\"13\">A</text><text x=\"62\" y=\"128\" font-size=\"13\">B</text><text x=\"150\" y=\"248\" text-anchor=\"middle\" font-size=\"13\">C</text><text x=\"229\" y=\"128\" font-size=\"13\">D</text><text x=\"90\" y=\"68\" font-size=\"12\">23 mm</text><text x=\"191\" y=\"68\" font-size=\"12\">x</text></svg>"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 310\" width=\"100%\" height=\"290\" style=\"max-width:360px;display:block;margin:auto;background:#fff\">\n<rect width=\"360\" height=\"310\" fill=\"#fff\"/>\n<path d=\"M180 30 L80 135 L180 265 Z\" fill=\"#dbeafe\" fill-opacity=\".65\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n<path d=\"M180 30 L280 135 L180 265 Z\" fill=\"#dbeafe\" fill-opacity=\".45\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n<path d=\"M180 30 L80 135 M180 30 L280 135 M80 135 L180 265 M280 135 L180 265\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n<path d=\"M180 30 L180 265\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/>\n\n<path d=\"M133 192 l-7 7 M227 192 l-7 7\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<path d=\"M180 239 Q166 231 159 251 M180 239 Q194 231 201 251\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<g font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"600\" fill=\"#172554\"><text x=\"180\" y=\"20\" text-anchor=\"middle\">A</text><text x=\"61\" y=\"141\" text-anchor=\"end\">B</text><text x=\"292\" y=\"141\">D</text><text x=\"180\" y=\"291\" text-anchor=\"middle\">C</text></g>\n<g font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#0f172a\"><text x=\"74\" y=\"83\">23 mm</text><text x=\"260\" y=\"83\">x</text></g>\n</svg>"
               }
             },
             {
               "id": "fsh-y8-2020-q6cii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "(ii) Hence, find the value of \\(x\\).",
+              "stem": "Hence, find the value of \\(x\\).",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 260\" width=\"100%\" height=\"240\" style=\"max-width:300px;display:block;margin:auto;background:#fff\"><path d=\"M150 30 L75 125 L150 230 L225 125 Z M150 30 L150 230\" fill=\"#dbeafe\" fill-opacity=\".55\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"150\" y1=\"30\" x2=\"75\" y2=\"125\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"150\" y1=\"30\" x2=\"225\" y2=\"125\" stroke=\"#f59e0b\" stroke-width=\"4\"/><line x1=\"75\" y1=\"125\" x2=\"150\" y2=\"230\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"225\" y1=\"125\" x2=\"150\" y2=\"230\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"230\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M143 207 Q150 192 157 207\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M142 211 Q150 222 158 211\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"150\" y=\"20\" text-anchor=\"middle\" font-size=\"13\">A</text><text x=\"62\" y=\"128\" font-size=\"13\">B</text><text x=\"150\" y=\"248\" text-anchor=\"middle\" font-size=\"13\">C</text><text x=\"229\" y=\"128\" font-size=\"13\">D</text><text x=\"90\" y=\"68\" font-size=\"12\">23 mm</text><text x=\"191\" y=\"68\" font-size=\"12\">x</text></svg>"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 310\" width=\"100%\" height=\"290\" style=\"max-width:360px;display:block;margin:auto;background:#fff\">\n<rect width=\"360\" height=\"310\" fill=\"#fff\"/>\n<path d=\"M180 30 L80 135 L180 265 Z\" fill=\"#dbeafe\" fill-opacity=\".65\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n<path d=\"M180 30 L280 135 L180 265 Z\" fill=\"#dbeafe\" fill-opacity=\".45\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n<path d=\"M180 30 L80 135 M180 30 L280 135 M80 135 L180 265 M280 135 L180 265\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n<path d=\"M180 30 L180 265\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/>\n\n<path d=\"M133 192 l-7 7 M227 192 l-7 7\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<path d=\"M180 239 Q166 231 159 251 M180 239 Q194 231 201 251\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<g font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"600\" fill=\"#172554\"><text x=\"180\" y=\"20\" text-anchor=\"middle\">A</text><text x=\"61\" y=\"141\" text-anchor=\"end\">B</text><text x=\"292\" y=\"141\">D</text><text x=\"180\" y=\"291\" text-anchor=\"middle\">C</text></g>\n<g font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#0f172a\"><text x=\"74\" y=\"83\">23 mm</text><text x=\"260\" y=\"83\">x</text></g>\n</svg>"
               },
               "options": [
                 "\\(23\\text{ mm}\\)",
@@ -4372,25 +4384,34 @@
                 "\\(x\\) cannot be determined"
               ],
               "answer": 0,
-              "hint": "Use the corresponding sides from the congruent triangles.",
+              "hint": "Use the congruence statement to match side AB with side AD. Then substitute the side lengths shown in the diagram.",
               "keyPoints": [
                 {
-                  "text": "\\(x\\)",
-                  "note": "The side AB corresponds to AD in the congruence statement."
+                  "text": "Corresponding sides of congruent triangles are equal",
+                  "note": "From △ABC ≅ △ADC, AB corresponds to AD."
                 }
               ],
               "steps": [
                 {
-                  "explain": "From (\\triangle ABC\\cong\\triangle ADC), corresponding sides are equal.",
-                  "work": "\\(AB=AD\\)"
+                  "explain": "From △ABC ≅ △ADC, match the vertices in order: A corresponds to A, B corresponds to D, and C corresponds to C. Therefore side AB corresponds to side AD.",
+                  "work": "\\(AB\\leftrightarrow AD\\quad\\Rightarrow\\quad AB=AD\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 310\" width=\"100%\" height=\"290\" style=\"max-width:360px;display:block;margin:auto;background:#fff\">\n<rect width=\"360\" height=\"310\" fill=\"#fff\"/>\n<path d=\"M180 30 L80 135 L180 265 Z\" fill=\"#dbeafe\" fill-opacity=\".65\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n<path d=\"M180 30 L280 135 L180 265 Z\" fill=\"#dbeafe\" fill-opacity=\".45\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n<path d=\"M180 30 L80 135 M180 30 L280 135 M80 135 L180 265 M280 135 L180 265\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n<path d=\"M180 30 L180 265\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/>\n<path d=\"M180 30 L80 135 M180 30 L280 135\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"4.5\"/>\n<path d=\"M133 192 l-7 7 M227 192 l-7 7\" stroke=\"#f59e0b\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n<path d=\"M180 239 Q166 231 159 251 M180 239 Q194 231 201 251\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<g font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"600\" fill=\"#172554\"><text x=\"180\" y=\"20\" text-anchor=\"middle\">A</text><text x=\"61\" y=\"141\" text-anchor=\"end\">B</text><text x=\"292\" y=\"141\">D</text><text x=\"180\" y=\"291\" text-anchor=\"middle\">C</text></g>\n<g font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#0f172a\"><text x=\"74\" y=\"83\">23 mm</text><text x=\"260\" y=\"83\">x</text></g>\n</svg>"
+                  }
                 },
                 {
-                  "explain": "The diagram gives (AB=23\\text{ mm}) and labels (AD=x).",
-                  "work": "\\(23=x\\text{ mm}\\)"
+                  "explain": "Read the two corresponding side labels from the diagram: AB is 23 mm and AD is labelled x. Substitute these values into AB = AD.",
+                  "work": "\\(23\\text{ mm}=x\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 310\" width=\"100%\" height=\"290\" style=\"max-width:360px;display:block;margin:auto;background:#fff\">\n<rect width=\"360\" height=\"310\" fill=\"#fff\"/>\n<path d=\"M180 30 L80 135 L180 265 Z\" fill=\"#dbeafe\" fill-opacity=\".65\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n<path d=\"M180 30 L280 135 L180 265 Z\" fill=\"#dbeafe\" fill-opacity=\".45\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n<path d=\"M180 30 L80 135 M180 30 L280 135 M80 135 L180 265 M280 135 L180 265\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n<path d=\"M180 30 L180 265\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/>\n<path d=\"M180 30 L80 135 M180 30 L280 135\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"4.5\"/>\n<path d=\"M133 192 l-7 7 M227 192 l-7 7\" stroke=\"#f59e0b\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n<path d=\"M180 239 Q166 231 159 251 M180 239 Q194 231 201 251\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<g font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"600\" fill=\"#172554\"><text x=\"180\" y=\"20\" text-anchor=\"middle\">A</text><text x=\"61\" y=\"141\" text-anchor=\"end\">B</text><text x=\"292\" y=\"141\">D</text><text x=\"180\" y=\"291\" text-anchor=\"middle\">C</text></g>\n<g font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#0f172a\"><text x=\"74\" y=\"83\">23 mm</text><text x=\"260\" y=\"83\">x</text></g>\n</svg>"
+                  }
                 },
                 {
-                  "explain": "Therefore.",
-                  "work": "\\(\\boxed{x=23\\text{ mm}}\\)"
+                  "explain": "The side lengths are equal, so x has the same value and units as AB.",
+                  "work": "\\(\\boxed{x=23\\text{ mm}}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 310\" width=\"100%\" height=\"290\" style=\"max-width:360px;display:block;margin:auto;background:#fff\">\n<rect width=\"360\" height=\"310\" fill=\"#fff\"/>\n<path d=\"M180 30 L80 135 L180 265 Z\" fill=\"#dbeafe\" fill-opacity=\".65\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n<path d=\"M180 30 L280 135 L180 265 Z\" fill=\"#dbeafe\" fill-opacity=\".45\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n<path d=\"M180 30 L80 135 M180 30 L280 135 M80 135 L180 265 M280 135 L180 265\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n<path d=\"M180 30 L180 265\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"4\"/>\n\n<path d=\"M133 192 l-7 7 M227 192 l-7 7\" stroke=\"#f59e0b\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n<path d=\"M180 239 Q166 231 159 251 M180 239 Q194 231 201 251\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n<g font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"600\" fill=\"#172554\"><text x=\"180\" y=\"20\" text-anchor=\"middle\">A</text><text x=\"61\" y=\"141\" text-anchor=\"end\">B</text><text x=\"292\" y=\"141\">D</text><text x=\"180\" y=\"291\" text-anchor=\"middle\">C</text></g>\n<g font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#0f172a\"><text x=\"74\" y=\"83\">23 mm</text><text x=\"260\" y=\"83\">x</text></g>\n</svg>"
+                  }
                 }
               ],
               "timeLimit": 60,
@@ -4407,11 +4428,11 @@
               }
             }
           ],
-          "hint": "Match each fact in one triangle with the corresponding fact in the other.",
+          "hint": "Compare the two triangles in order. Look for the marked equal sides BC and DC, the equal angles at C, and the shared side AC.",
           "keyPoints": [
             {
-              "text": "triangles ABC and ACD",
-              "note": "The shared side is AC; the equal marks identify BC=CD and equal angles at C."
+              "text": "Use the marked information and shared side",
+              "note": "BC = DC, the marked angles at C are equal, and AC is common. The equal angle is between the equal sides, so the triangles satisfy SAS."
             }
           ],
           "timeLimit": 60,
@@ -4426,7 +4447,7 @@
             "origin": "exam-import"
           },
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 260\" width=\"100%\" height=\"240\" style=\"max-width:300px;display:block;margin:auto;background:#fff\"><path d=\"M150 30 L75 125 L150 230 L225 125 Z M150 30 L150 230\" fill=\"#dbeafe\" fill-opacity=\".55\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"150\" y1=\"30\" x2=\"75\" y2=\"125\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"150\" y1=\"30\" x2=\"225\" y2=\"125\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"75\" y1=\"125\" x2=\"150\" y2=\"230\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"225\" y1=\"125\" x2=\"150\" y2=\"230\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"230\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M143 207 Q150 192 157 207\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"3\"/><path d=\"M142 211 Q150 222 158 211\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"3\"/><text x=\"150\" y=\"20\" text-anchor=\"middle\" font-size=\"13\">A</text><text x=\"62\" y=\"128\" font-size=\"13\">B</text><text x=\"150\" y=\"248\" text-anchor=\"middle\" font-size=\"13\">C</text><text x=\"229\" y=\"128\" font-size=\"13\">D</text><text x=\"90\" y=\"68\" font-size=\"12\">23 mm</text><text x=\"191\" y=\"68\" font-size=\"12\">x</text></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 310\" width=\"100%\" height=\"290\" style=\"max-width:360px;display:block;margin:auto;background:#fff\">\n<rect width=\"360\" height=\"310\" fill=\"#fff\"/>\n<path d=\"M180 30 L80 135 L180 265 Z\" fill=\"#dbeafe\" fill-opacity=\".65\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n<path d=\"M180 30 L280 135 L180 265 Z\" fill=\"#dbeafe\" fill-opacity=\".45\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n<path d=\"M180 30 L80 135 M180 30 L280 135 M80 135 L180 265 M280 135 L180 265\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n<path d=\"M180 30 L180 265\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/>\n\n<path d=\"M133 192 l-7 7 M227 192 l-7 7\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<path d=\"M180 239 Q166 231 159 251 M180 239 Q194 231 201 251\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<g font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"600\" fill=\"#172554\"><text x=\"180\" y=\"20\" text-anchor=\"middle\">A</text><text x=\"61\" y=\"141\" text-anchor=\"end\">B</text><text x=\"292\" y=\"141\">D</text><text x=\"180\" y=\"291\" text-anchor=\"middle\">C</text></g>\n<g font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#0f172a\"><text x=\"74\" y=\"83\">23 mm</text><text x=\"260\" y=\"83\">x</text></g>\n</svg>"
           }
         }
       ]
