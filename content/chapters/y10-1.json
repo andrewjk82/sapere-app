@@ -14893,7 +14893,7 @@
           "id": "sth2013-q5",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "The local sports store advertised a 45% discount on all tennis racquets. Chris bought a racquet and paid \\$88 after discount. How much did Chris save?",
+          "stem": "The local sports store advertised a 45% discount on all tennis racquets. Chris bought a racquet and paid \\(\\$88\\) after discount. How much did Chris save?",
           "options": [
             "\\(\\$16.00\\)",
             "\\(\\$39.60\\)",
@@ -14912,7 +14912,7 @@
               "work": "\\(\\text{original}=\\dfrac{88}{0.55}=\\$160\\)"
             },
             {
-              "explain": "The saving is the difference. (\\$39.60 is 45% of \\$88 — the common mistake of taking the discount off the sale price.)",
+              "explain": "The saving is the difference. (\\(\\$39.60\\) is 45% of \\(\\$88\\) — the common mistake of taking the discount off the sale price.)",
               "work": "\\(160-88=\\$72.00\\)"
             }
           ],
