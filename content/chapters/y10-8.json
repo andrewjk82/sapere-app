@@ -1100,7 +1100,7 @@
           "difficulty": "hard",
           "stem": "PQRS is a rhombus (not to scale). T lies on PS, \\(\\angle QSR=36^\\circ\\) and \\(\\angle PRT=30^\\circ\\). Find the value of \\(x\\), where \\(x^\\circ=\\angle PTR\\).",
           "figure": {
-            "svg": "fig:3994497533"
+            "svg": "fig:938cc0d1c5"
           },
           "options": [
             "\\(90\\)",
@@ -1115,21 +1115,21 @@
               "explain": "The diagonal SQ bisects \\(\\angle PSR\\), so \\(\\angle PSQ=\\angle QSR=36^\\circ\\).",
               "work": "\\(\\angle PSR=2\\times36^\\circ=72^\\circ\\)",
               "figure": {
-                "svg": "fig:b76335f74f"
+                "svg": "fig:963b09c999"
               }
             },
             {
               "explain": "Co-interior angles of the rhombus add to 180°, so \\(\\angle SRQ=108^\\circ\\). The diagonal PR bisects it, giving \\(\\angle PRS=54^\\circ\\), so \\(\\angle TRS=54^\\circ-30^\\circ=24^\\circ\\).",
               "work": "\\(\\angle TRS=54^\\circ-30^\\circ=24^\\circ\\)",
               "figure": {
-                "svg": "fig:c1c0d8ef1e"
+                "svg": "fig:0471fd83e7"
               }
             },
             {
               "explain": "In triangle STR, \\(x^\\circ\\) is the exterior angle at T, so it equals the sum of the two interior opposite angles.",
               "work": "\\(x=\\angle TSR+\\angle TRS=72+24=96\\)",
               "figure": {
-                "svg": "fig:714f3313b1"
+                "svg": "fig:ca80dd8041"
               }
             }
           ],
