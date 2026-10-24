@@ -1191,10 +1191,7 @@
                   "text": "Find the perimeter of the shaded region.",
                   "note": "Include only the outer boundary, and work out the missing bottom and right sides."
                 }
-              ],
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 235\" width=\"50%\" height=\"auto\"><path d=\"M55 175 H255 V55 H185 V105 H55 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"195\" y=\"43\" font-family=\"STIX Two Math, Cambria Math, serif\" font-size=\"14\" fill=\"#334155\"><tspan font-style=\"italic\">x</tspan><tspan font-style=\"normal\"> cm</tspan></text><text x=\"94\" y=\"95\" font-family=\"STIX Two Math, Cambria Math, serif\" font-size=\"14\" fill=\"#334155\">2<tspan font-style=\"italic\">x</tspan><tspan font-style=\"normal\"> cm</tspan></text><text x=\"6\" y=\"146\" font-family=\"STIX Two Math, Cambria Math, serif\" font-size=\"14\" fill=\"#334155\">3 cm</text><text x=\"140\" y=\"82\" font-family=\"STIX Two Math, Cambria Math, serif\" font-size=\"14\" fill=\"#334155\">3 cm</text><text x=\"263\" y=\"118\" font-family=\"STIX Two Math, Cambria Math, serif\" font-size=\"14\" fill=\"#334155\">6 cm</text><text x=\"155\" y=\"198\" font-family=\"STIX Two Math, Cambria Math, serif\" font-size=\"14\" fill=\"#334155\">3<tspan font-style=\"italic\">x</tspan><tspan font-style=\"normal\"> cm</tspan></text></svg>"
-              }
+              ]
             },
             {
               "id": "y8-53entry-lshape-area",
@@ -1242,10 +1239,7 @@
                   "text": "Find the area of the shaded region.",
                   "note": "Split the L into two rectangles and add their areas."
                 }
-              ],
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 235\" width=\"50%\" height=\"auto\"><path d=\"M55 175 H255 V55 H185 V105 H55 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"195\" y=\"43\" font-family=\"STIX Two Math, Cambria Math, serif\" font-size=\"14\" fill=\"#334155\"><tspan font-style=\"italic\">x</tspan><tspan font-style=\"normal\"> cm</tspan></text><text x=\"94\" y=\"95\" font-family=\"STIX Two Math, Cambria Math, serif\" font-size=\"14\" fill=\"#334155\">2<tspan font-style=\"italic\">x</tspan><tspan font-style=\"normal\"> cm</tspan></text><text x=\"6\" y=\"146\" font-family=\"STIX Two Math, Cambria Math, serif\" font-size=\"14\" fill=\"#334155\">3 cm</text><text x=\"140\" y=\"82\" font-family=\"STIX Two Math, Cambria Math, serif\" font-size=\"14\" fill=\"#334155\">3 cm</text><text x=\"263\" y=\"118\" font-family=\"STIX Two Math, Cambria Math, serif\" font-size=\"14\" fill=\"#334155\">6 cm</text><text x=\"155\" y=\"198\" font-family=\"STIX Two Math, Cambria Math, serif\" font-size=\"14\" fill=\"#334155\">3<tspan font-style=\"italic\">x</tspan><tspan font-style=\"normal\"> cm</tspan></text></svg>"
-              }
+              ]
             }
           ],
           "hint": "Use the labelled dimensions to find any missing full side first. For area, split the shape into rectangles; for perimeter, trace only the outside edge.",

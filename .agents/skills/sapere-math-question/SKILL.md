@@ -41,6 +41,8 @@ Coordinate labels must also stay close to the point they identify; add viewBox s
 
 **Standing user requirement — diagram math:** Format mathematical labels inside diagrams with proper math typography (italic variables, upright units, raised exponents, structured fractions/roots); do not leave raw algebra in plain SVG text. Use MathJax when the renderer supports it, otherwise format SVG text/tspans to preserve the same conventions.
 
+For multipart questions, show a shared figure once on the parent card. Do not repeat the same figure on each sub-question unless a child requires a different annotated view; place worked diagrams in the relevant solution steps.
+
 ### Quick Reference — Key Fields (canonical, `content/chapters/*.json`)
 
 | Field | Type | Description |
