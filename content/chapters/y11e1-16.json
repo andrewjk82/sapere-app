@@ -88,6 +88,54 @@
               "note": "This is exactly the tan(A − B) expansion."
             }
           ]
+        },
+        {
+          "id": "cgs2020e1-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is the value of \\(\\sin 2x\\) given that \\(\\sin x=\\frac{2\\sqrt3}{4}\\) and \\(x\\) is obtuse?",
+          "options": [
+            "\\(\\frac{\\sqrt3}{4}\\)",
+            "\\(\\frac{\\sqrt3}{2}\\)",
+            "\\(-\\frac{\\sqrt3}{4}\\)",
+            "\\(-\\frac{\\sqrt3}{2}\\)"
+          ],
+          "answer": 3,
+          "hint": "Use the double-angle identity, then use the fact that an obtuse angle has a negative cosine.",
+          "keyPoints": [
+            {
+              "text": "\\(x\\) is obtuse",
+              "note": "This fixes the sign of \\(\\cos x\\)."
+            },
+            {
+              "text": "\\(\\sin 2x\\)",
+              "note": "Start from \\(\\sin 2x=2\\sin x\\cos x\\)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the given sine value to find the reference triangle side ratio.",
+              "work": "\\(\\sin x=\\frac{2\\sqrt3}{4}=\\frac{\\sqrt3}{2}\\quad\\Rightarrow\\quad |\\cos x|=\\sqrt{1-\\sin^2x}=\\frac12\\)"
+            },
+            {
+              "explain": "Because x is obtuse, it lies in quadrant II, where cosine is negative.",
+              "work": "\\(\\cos x=-\\frac12\\)"
+            },
+            {
+              "explain": "Substitute both trigonometric values into the double-angle identity.",
+              "work": "\\(\\sin 2x=2\\sin x\\cos x=2\\left(\\frac{\\sqrt3}{2}\\right)\\left(-\\frac12\\right)=-\\frac{\\sqrt3}{2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls 2020 3U Trials & Solutions",
+            "school": "Cheltenham Girls' High School",
+            "year": 2020,
+            "number": "1",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Trail E1/Cheltenham Girls 2020 3U Trials & Solutions.pdf",
+            "sourcePages": "2"
+          }
         }
       ]
     },
@@ -192,6 +240,54 @@
             "sourceFile": "/Users/andrewkim/Downloads/Abbotsleigh 2020.pdf",
             "school": "Abbotsleigh",
             "year": 2020
+          }
+        },
+        {
+          "id": "cgs2020e1-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the expression \\(y=\\sin x+\\sqrt3\\cos x\\) in the form \\(R\\sin(x+\\alpha)\\).",
+          "options": [
+            "\\(2\\sin\\left(x+\\frac{\\pi}{4}\\right)\\)",
+            "\\(\\sin\\left(x+\\frac{\\pi}{3}\\right)\\)",
+            "\\(2\\sin\\left(x+\\frac{\\pi}{3}\\right)\\)",
+            "\\(2\\sin\\left(x-\\frac{\\pi}{3}\\right)\\)"
+          ],
+          "answer": 2,
+          "hint": "Expand R sin(x+α) and match the coefficients of sin x and cos x.",
+          "keyPoints": [
+            {
+              "text": "\\(y=\\sin x+\\sqrt3\\cos x\\)",
+              "note": "Focus on this information from the question when choosing the method and carrying out the calculation."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Expand the target form using the sine addition identity.",
+              "work": "\\(R\\sin(x+\\alpha)=R\\sin x\\cos\\alpha+R\\cos x\\sin\\alpha\\)"
+            },
+            {
+              "explain": "Match coefficients with \\(\\sin x+\\sqrt3\\cos x\\).",
+              "work": "\\(R\\cos\\alpha=1,\\qquad R\\sin\\alpha=\\sqrt3\\)"
+            },
+            {
+              "explain": "Find the amplitude and phase, checking both coefficient signs.",
+              "work": "\\(R=\\sqrt{1^2+(\\sqrt3)^2}=2,\\quad \\cos\\alpha=\\frac12,\\quad \\sin\\alpha=\\frac{\\sqrt3}{2}\\Rightarrow\\alpha=\\frac{\\pi}{3}\\)"
+            },
+            {
+              "explain": "Write the expression in the requested form.",
+              "work": "\\(y=2\\sin\\left(x+\\frac{\\pi}{3}\\right)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls 2020 3U Trials & Solutions",
+            "school": "Cheltenham Girls' High School",
+            "year": 2020,
+            "number": "3",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Trail E1/Cheltenham Girls 2020 3U Trials & Solutions.pdf",
+            "sourcePages": "3"
           }
         }
       ]

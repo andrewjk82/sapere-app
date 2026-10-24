@@ -92,6 +92,52 @@
               "note": "The (k+1)th term is 5(k+1) − 4 = 5k + 1."
             }
           ]
+        },
+        {
+          "id": "cgs2020e1-q12c",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Use mathematical induction to prove that \\(4+7+10+\\cdots +(3n+1)=\\frac{n(3n+5)}2\\) for all integers \\(n\\ge1\\).",
+          "answer": "\\(Base n=1: 4=1(8)/2. Assume the formula for n=k. Add the next term 3k+4 and simplify to (k+1)(3(k+1)+5)/2, completing induction.\\)",
+          "hint": "Check n=1 first. For the induction step, add the next term in the sequence, which is 3k+4.",
+          "keyPoints": [
+            {
+              "text": "Use mathematical induction",
+              "note": "Focus on this information from the question when choosing the method and carrying out the calculation."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Base case: substitute \\(n=1\\) into both sides.",
+              "work": "\\(\\text{LHS}=4,\\qquad\\text{RHS}=\\frac{1(3(1)+5)}2=\\frac82=4\\quad\\therefore P(1)\\text{ is true}\\)"
+            },
+            {
+              "explain": "Induction hypothesis: assume the statement is true for an arbitrary integer \\(k\\ge1\\).",
+              "work": "\\(4+7+10+\\cdots +(3k+1)=\\frac{k(3k+5)}2\\)"
+            },
+            {
+              "explain": "For \\(k+1\\), append the next term to the assumed sum.",
+              "work": "\\(4+7+\\cdots +(3k+1)+(3(k+1)+1)=\\frac{k(3k+5)}2+(3k+4)\\)"
+            },
+            {
+              "explain": "Use a common denominator and factor the numerator.",
+              "work": "\\(\\frac{3k^2+5k+6k+8}{2}=\\frac{3k^2+11k+8}{2}=\\frac{(k+1)(3k+8)}2=\\frac{(k+1)(3(k+1)+5)}2\\)"
+            },
+            {
+              "explain": "This is the required formula at n=k+1. Together with the base case, induction proves the result for every integer n≥1.",
+              "work": "\\(P(1)\\text{ true and }P(k)\\Rightarrow P(k+1)\\quad\therefore P(n)\\text{ true for all }n\\ge1\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls 2020 3U Trials & Solutions",
+            "school": "Cheltenham Girls' High School",
+            "year": 2020,
+            "number": "12(c)",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Trail E1/Cheltenham Girls 2020 3U Trials & Solutions.pdf",
+            "sourcePages": "10"
+          }
         }
       ]
     },
@@ -190,6 +236,107 @@
             {
               "text": "divisible by 5",
               "note": "Replace 3^(2k+4) by 5M + 2^(2k) from the assumption."
+            }
+          ]
+        },
+        {
+          "id": "cgs2020e1-q13a",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "Melinda aims to prove that \\(7^n-3^n\\) is divisible by 4 for all positive integral values of \\(n\\). Part of her proof is shown below: assume true for \\(n=k\\) i.e. \\(7^k-3^k=4p\\); show that \\(7^{k+1}-3^{k+1}=4q\\); LHS = \\(7^{k+1}-3^{k+1}\\); and, if true for \\(n=k\\), also true for \\(n=k+1\\), therefore by induction it is true for all positive integral values of n.",
+          "hint": "Use the induction hypothesis to complete the k+1 algebra, and separately verify the base case n=1.",
+          "keyPoints": [
+            {
+              "text": "\\(7^n-3^n\\)",
+              "note": "The claim is that each value is an integer multiple of 4."
+            },
+            {
+              "text": "\\(7^k-3^k=4p\\)",
+              "note": "Use this assumption only inside the k+1 algebra."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls 2020 3U Trials & Solutions",
+            "school": "Cheltenham Girls' High School",
+            "year": 2020,
+            "number": "13(a)",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Trail E1/Cheltenham Girls 2020 3U Trials & Solutions.pdf",
+            "sourcePages": "11"
+          },
+          "parts": [
+            {
+              "id": "cgs2020e1-q13a-i",
+              "type": "review",
+              "difficulty": "hard",
+              "stem": "Melinda spilled some ink on her work. Write what you think Melinda might have written in those unreadable lines.",
+              "answer": "\\(7^{k+1}-3^{k+1}=7^k(7-3)+3(7^k-3^k)=4(7^k+3p), which is divisible by 4.\\)",
+              "hint": "Use the induction hypothesis 7^k−3^k=4p. Rewrite 7 as 4+3 so that the assumed difference appears.",
+              "keyPoints": [
+                {
+                  "text": "unreadable lines",
+                  "note": "Fill the algebra between the displayed left-hand side and 4q."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Start from the left-hand side at k+1 and factor out the kth powers.",
+                  "work": "\\(7^{k+1}-3^{k+1}=7\\cdot7^k-3\\cdot3^k\\)"
+                },
+                {
+                  "explain": "Write \\(7=4+3\\) so the induction hypothesis can be used.",
+                  "work": "\\(7\\cdot7^k-3\\cdot3^k=4\\cdot7^k+3(7^k-3^k)\\)"
+                },
+                {
+                  "explain": "Substitute the hypothesis \\(7^k-3^k=4p\\).",
+                  "work": "\\(4\\cdot7^k+3(4p)=4(7^k+3p)=4q,\\quad q=7^k+3p\\in\\mathbb Z\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Cheltenham Girls 2020 3U Trials & Solutions",
+                "school": "Cheltenham Girls' High School",
+                "year": 2020,
+                "number": "13(a)(i)",
+                "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Trail E1/Cheltenham Girls 2020 3U Trials & Solutions.pdf",
+                "sourcePages": "11"
+              }
+            },
+            {
+              "id": "cgs2020e1-q13a-ii",
+              "type": "review",
+              "difficulty": "hard",
+              "stem": "Apart from the obscured lines, another step has been left out of the proof. Write the missing step.",
+              "answer": "\\(Verify the base case n=1: 7^1−3^1=4, which is divisible by 4.\\)",
+              "hint": "The induction proof also needs a base case before the assumption for n=k.",
+              "keyPoints": [
+                {
+                  "text": "another step has been left out",
+                  "note": "Induction requires an initial value as well as the k to k+1 step."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Check the first positive integer in the claim, \\(n=1\\).",
+                  "work": "\\(7^1-3^1=7-3=4\\)"
+                },
+                {
+                  "explain": "Since 4 is divisible by 4, the proposition is true at n=1.",
+                  "work": "\\(7^1-3^1=4(1)\\quad\therefore P(1)\\text{ is true}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Cheltenham Girls 2020 3U Trials & Solutions",
+                "school": "Cheltenham Girls' High School",
+                "year": 2020,
+                "number": "13(a)(ii)",
+                "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Trail E1/Cheltenham Girls 2020 3U Trials & Solutions.pdf",
+                "sourcePages": "11"
+              }
             }
           ]
         }

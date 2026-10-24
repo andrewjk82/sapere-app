@@ -12,13 +12,27 @@ Use this prompt after extracting the past-paper PDF to text or images. Paste the
 
 ---
 
+## Persistent user requirements for past-paper imports
+
+- Preserve each source question's wording, values, units, conditions, and mathematical meaning. Do not rewrite, simplify, or add a generated variant unless the user explicitly asks for one. Remove only a redundant leading source part marker such as `(a)`, `(b)`, `(i)`, or `(ii)` when it is not part of the actual question; preserve meaningful cross-references within the question.
+- Match questions to existing Year 11/12 Extension 1 curriculum topics using the repository's topic files and profiles.
+- Convert each question with a single objectively markable answer to four-option multiple choice where this does not change what is being assessed. Keep genuine proofs, explanations, constructions, and sketches as review questions.
+- Set every question and multipart child to `timeLimit: 60` and `xp: 1`.
+- Give each question a useful, question-specific hint and exact-text `keyPoints` where a phrase, condition, calculation datum, diagram side/angle, or graph feature can be explained. Check each highlight against its own stem.
+- Write complete, student-friendly solution steps. Explain why each method applies, state the relevant side/angle/graph feature, substitute the given values, show intermediate arithmetic/algebra, and state units/rounding. Do not skip reasoning or repeat an unchanged diagram across steps; include a figure only where it helps with that step.
+- Put an answer diagram in the solution progression for draw/sketch questions, not in the question prompt. For other questions, include a prompt diagram only when it is needed to state or solve the problem.
+- Render authored diagrams at about 50% of the previously oversized presentation size. Keep every label near the feature it names, prevent label/line/angle overlap, and use proper mathematical notation in diagrams. Inspect the final rendered figures at their intended display size after edits.
+- Validate LaTeX in every stem, option, hint, and solution step, and run `npm run content:validate` after import.
+
+---
+
 ## [PROMPT]
 
 You are converting an NSW HSC past-paper PDF into Sapere's canonical question content.
 
 ### Goal
 
-Convert the supplied extracted paper into question objects that can be integrated into `content/chapters/<chapterId>.json`. Follow the repository's current instructions in `CLAUDE.md`, `content/README.md`, `content/schema.js`, and `.agents/skills/sapere-math-question/SKILL.md`. If any instruction here conflicts with those sources, follow the repository source of truth.
+Convert the supplied extracted paper into question objects that can be integrated into `content/chapters/<chapterId>.json`. Follow the repository's current instructions in `CLAUDE.md`, `content/README.md`, `content/schema.js`, and `.agents/skills/sapere-math-question/SKILL.md`. Use repository sources for schema and curriculum IDs. The explicit user requirements in this prompt govern question fidelity, pedagogy, visuals, and assessment settings when generic repository guidance differs.
 
 Do not edit legacy `src/constants/seed*.js` files, use the retired seed schema, or write questions to Firestore. Content is stored in git under `content/chapters/*.json`.
 

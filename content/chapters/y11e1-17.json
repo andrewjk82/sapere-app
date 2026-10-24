@@ -529,6 +529,54 @@
               "note": "Think in prime factors: every prime must appear an even number of times."
             }
           ]
+        },
+        {
+          "id": "cgs2020e1-q10",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A four-digit security code is to be created for a building alarm, using any selection of the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. The code must be entered in the correct order to disarm the alarm when entering the building. Digits may be repeated. It has been decided that the code will contain exactly two different digits, for example 4224 or 7177. If an intruder, who knew about this restriction, tried to guess the alarm code, what is the probability they would get it correct?",
+          "options": [
+            "\\(\\frac{1}{10\\,000}\\)",
+            "\\(\\frac{1}{5\\,040}\\)",
+            "\\(\\frac{1}{2\\,100}\\)",
+            "\\(\\frac{1}{630}\\)"
+          ],
+          "answer": 3,
+          "hint": "Count only codes that use exactly two distinct digits, keeping track of the order of the four positions.",
+          "keyPoints": [
+            {
+              "text": "four-digit security code",
+              "note": "There are four ordered positions."
+            },
+            {
+              "text": "exactly two different digits",
+              "note": "Choose the two symbols first, then subtract the two strings that use only one symbol."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Choose the two distinct digits from the ten available.",
+              "work": "\\(\\binom{10}{2}=45\\)"
+            },
+            {
+              "explain": "For one chosen pair, each of four positions can use either digit, giving \\(2^4\\) strings. Remove the two constant strings that fail to use both digits.",
+              "work": "\\(2^4-2=16-2=14\\text{ valid strings per pair}\\)"
+            },
+            {
+              "explain": "Count the restricted sample space and take the reciprocal because one code is correct.",
+              "work": "\\(45\\times14=630\\text{ possible codes}\\quad\\Rightarrow\\quad P=\\frac{1}{630}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls 2020 3U Trials & Solutions",
+            "school": "Cheltenham Girls' High School",
+            "year": 2020,
+            "number": "10",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Trail E1/Cheltenham Girls 2020 3U Trials & Solutions.pdf",
+            "sourcePages": "7"
+          }
         }
       ]
     }

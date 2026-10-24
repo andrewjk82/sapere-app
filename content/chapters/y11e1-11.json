@@ -197,6 +197,54 @@
               ]
             }
           ]
+        },
+        {
+          "id": "cgs2020e1-q11d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The polynomial \\(x^4+ax^3-3x^2+bx-2\\) has roots \\(-1\\) and \\(2\\), one of which is a triple root. Find the values of \\(a\\) and \\(b\\).",
+          "options": [
+            "\\(a=1,\\ b=-5\\)",
+            "\\(a=-1,\\ b=5\\)",
+            "\\(a=1,\\ b=5\\)",
+            "\\(a=-1,\\ b=-5\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the constant term to rule out which stated root can occur three times, then expand the required factorisation.",
+          "keyPoints": [
+            {
+              "text": "one of which is a triple root",
+              "note": "A triple root appears as a cubed factor."
+            },
+            {
+              "text": "\\(x^4+ax^3-3x^2+bx-2\\)",
+              "note": "The constant term helps identify which root is repeated."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "If 2 were a triple root, the constant term of a monic quartic with roots 2,2,2 and −1 would be \\(2^3(-1)=-8\\), not −2. So −1 must be the triple root.",
+              "work": "\\(P(x)=(x+1)^3(x-2)\\)"
+            },
+            {
+              "explain": "Expand the factors carefully.",
+              "work": "\\((x+1)^3=x^3+3x^2+3x+1\\)"
+            },
+            {
+              "explain": "Multiply by \\((x-2)\\) and compare coefficients.",
+              "work": "\\((x^3+3x^2+3x+1)(x-2)=x^4+x^3-3x^2-5x-2\\Rightarrow a=1,\\ b=-5\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls 2020 3U Trials & Solutions",
+            "school": "Cheltenham Girls' High School",
+            "year": 2020,
+            "number": "11(d)",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Trail E1/Cheltenham Girls 2020 3U Trials & Solutions.pdf",
+            "sourcePages": "8"
+          }
         }
       ]
     },

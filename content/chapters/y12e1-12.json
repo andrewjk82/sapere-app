@@ -847,6 +847,285 @@
               "note": "Outer: d/du tan⁻¹u = 1/(1 + u²). Inner: d/dx ln x = 1/x."
             }
           ]
+        },
+        {
+          "id": "cgs2020e1-q6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If \\(y=\\sin^{-1}\\left(\\frac{a}{x}\\right)\\) then \\(\\frac{dy}{dx}\\) equals:",
+          "options": [
+            "\\(-\\frac{a}{x^2\\sqrt{x^2-a^2}}\\)",
+            "\\(\\frac{x}{\\sqrt{x^2-a^2}}\\)",
+            "\\(-\\frac{x}{\\sqrt{x^2-a^2}}\\)",
+            "\\(-\\frac{a}{|x|\\sqrt{x^2-a^2}}\\)"
+          ],
+          "answer": 3,
+          "hint": "Apply the derivative of arcsin(u) and the chain rule to u=a/x. Keep the absolute value when simplifying the square root.",
+          "keyPoints": [
+            {
+              "text": "\\(y=\\sin^{-1}\\left(\\frac{a}{x}\\right)\\)",
+              "note": "Focus on this information from the question when choosing the method and carrying out the calculation."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set \\(u=\\frac{a}{x}\\). Differentiate the outside inverse-sine function and multiply by \\(u′\\).",
+              "work": "\\(\\frac{dy}{dx}=\\frac{u'}{\\sqrt{1-u^2}},\\qquad u'=-\\frac{a}{x^2}\\)"
+            },
+            {
+              "explain": "Substitute the inner derivative and simplify the expression under the square root.",
+              "work": "\\(\\frac{dy}{dx}=\\frac{-a/x^2}{\\sqrt{1-a^2/x^2}}=\\frac{-a/x^2}{\\sqrt{(x^2-a^2)/x^2}}\\)"
+            },
+            {
+              "explain": "Since \\(\\sqrt{x^2}=|x|\\), simplify without assuming x is positive.",
+              "work": "\\(\\frac{dy}{dx}=-\\frac{a}{|x|\\sqrt{x^2-a^2}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls 2020 3U Trials & Solutions",
+            "school": "Cheltenham Girls' High School",
+            "year": 2020,
+            "number": "6",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Trail E1/Cheltenham Girls 2020 3U Trials & Solutions.pdf",
+            "sourcePages": "4",
+            "sourceOptionCorrection": "The source intended the usual x>0 simplification. The answer choice was corrected to the general derivative because the stem states no sign restriction on x."
+          }
+        },
+        {
+          "id": "cgs2020e1-q11a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find \\(\\frac{d}{dx}\\left(e^x\\tan^{-1}x\\right)\\).",
+          "answer": 0,
+          "hint": "Use the product rule: differentiate the exponential factor once, then differentiate arctan x once.",
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{d}{dx}\\left(e^x\\tan^{-1}x\\right)\\)",
+              "note": "Focus on this information from the question when choosing the method and carrying out the calculation."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Let \\(u=e^x\\) and \\(v=\\tan^{-1}x\\). Apply \\((uv)′=u′v+uv′\\).",
+              "work": "\\(\\frac{d}{dx}(e^x\\tan^{-1}x)=e^x\\tan^{-1}x+e^x\\frac{d}{dx}(\\tan^{-1}x)\\)"
+            },
+            {
+              "explain": "Use \\(\\frac{d}{dx}(\\tan^{-1}x)=\\frac{1}{1+x^2}\\) and factor out \\(e^x\\).",
+              "work": "\\(\\boxed{\\frac{d}{dx}(e^x\\tan^{-1}x)=e^x\\left(\\tan^{-1}x+\\frac{1}{1+x^2}\\right)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls 2020 3U Trials & Solutions",
+            "school": "Cheltenham Girls' High School",
+            "year": 2020,
+            "number": "11(a)",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Trail E1/Cheltenham Girls 2020 3U Trials & Solutions.pdf",
+            "sourcePages": "8"
+          },
+          "options": [
+            "\\(e^x\\left(\\tan^{-1}x+\\frac{1}{1+x^2}\\right)\\)",
+            "\\(e^x\\tan^{-1}x+\\frac{1}{1+x^2}\\)",
+            "\\(e^x\\left(\\tan^{-1}x+\\frac{1}{1+x}\\right)\\)",
+            "\\(\\frac{e^x}{1+x^2}\\)"
+          ]
+        },
+        {
+          "id": "cgs2020e1-q13b",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "Consider the function \\(y=\\cos^{-1}(\\sin x)\\).",
+          "hint": "Differentiate with the chain rule, use the principal range of arccos, then evaluate the function at key points across the given interval.",
+          "keyPoints": [
+            {
+              "text": "\\(y=\\cos^{-1}(\\sin x)\\)",
+              "note": "Focus on this information from the question when choosing the method and carrying out the calculation."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls 2020 3U Trials & Solutions",
+            "school": "Cheltenham Girls' High School",
+            "year": 2020,
+            "number": "13(b)",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Trail E1/Cheltenham Girls 2020 3U Trials & Solutions.pdf",
+            "sourcePages": "11"
+          },
+          "parts": [
+            {
+              "id": "cgs2020e1-q13b-i",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "For \\(y=\\cos^{-1}(\\sin x)\\), find \\(\\frac{dy}{dx}\\).",
+              "options": [
+                "\\(-1\\)",
+                "\\(\\frac{\\cos x}{\\sqrt{1-\\sin^2x}}\\)",
+                "\\(-\\frac{\\cos x}{\\sqrt{1-\\sin^2x}}\\)",
+                "\\(-\\frac{\\sin x}{\\sqrt{1-\\cos^2x}}\\)"
+              ],
+              "answer": 2,
+              "hint": "Apply the derivative rule for arccos(u), with u=sin x, and use the chain rule.",
+              "keyPoints": [
+                {
+                  "text": "\\(y=\\cos^{-1}(\\sin x)\\)",
+                  "note": "The outer function is inverse cosine and the inner function is sine."
+                },
+                {
+                  "text": "\\(\\frac{dy}{dx}\\)",
+                  "note": "For arccos(u), the derivative is \\(-u\\prime/\\sqrt{1-u^2\\) ."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Set \\(u=\\sin x\\). The chain rule for inverse cosine gives \\(dy/dx=-u′/\\sqrt{1-u^2}\\).",
+                  "work": "\\(u\\prime=\\cos x,\\qquad\\frac{dy}{dx}=-\\frac{\\cos x}{\\sqrt{1-\\sin^2x}}\\)"
+                },
+                {
+                  "explain": "This expression is defined when \\(\\cos x\\ne0\\). Do not replace the denominator by \\(\\cos x\\) without accounting for the absolute value.",
+                  "work": "\\(\\sqrt{1-\\sin^2x}=\\sqrt{\\cos^2x}=|\\cos x|\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Cheltenham Girls 2020 3U Trials & Solutions",
+                "school": "Cheltenham Girls' High School",
+                "year": 2020,
+                "number": "13(b)(i)",
+                "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Trail E1/Cheltenham Girls 2020 3U Trials & Solutions.pdf",
+                "sourcePages": "11"
+              }
+            },
+            {
+              "id": "cgs2020e1-q13b-ii",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "What does the derivative tell you about stationary points for this function?",
+              "options": [
+                "There are no stationary points; the derivative is never zero, although it is undefined at the turning points.",
+                "There is one stationary point at every integer multiple of π.",
+                "There are stationary points whenever sin x=0.",
+                "The function has no turning points because it is periodic."
+              ],
+              "answer": 0,
+              "hint": "A stationary point requires a defined derivative equal to zero. Check the derivative on intervals where cos x is nonzero.",
+              "keyPoints": [
+                {
+                  "text": "stationary points",
+                  "note": "Check where the derivative is zero, and distinguish this from where it is undefined."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Where \\(\\cos x\\ne0\\), simplify the derivative using \\(\\sqrt{1-\\sin^2x}=|\\cos x|\\).",
+                  "work": "\\(\\frac{dy}{dx}=-\\frac{\\cos x}{|\\cos x|}=\\begin{cases}-1,&\\cos x>0,\\\\+1,&\\cos x<0\\end{cases}\\)"
+                },
+                {
+                  "explain": "The derivative is either −1 or +1, never 0. At \\(x=\\frac\\pi2+k\\pi\\) it is undefined, corresponding to sharp turning points, not stationary points.",
+                  "work": "\\(\\text{No stationary points;}\\quad dy/dx\\ne0\\text{ wherever it exists.}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Cheltenham Girls 2020 3U Trials & Solutions",
+                "school": "Cheltenham Girls' High School",
+                "year": 2020,
+                "number": "13(b)(ii)",
+                "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Trail E1/Cheltenham Girls 2020 3U Trials & Solutions.pdf",
+                "sourcePages": "11"
+              }
+            },
+            {
+              "id": "cgs2020e1-q13b-iii",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "State the domain and range for this function.",
+              "options": [
+                "\\(\\text{Domain }\\mathbb R,\\quad\\text{range }[0,\\pi]\\)",
+                "\\(\\text{Domain }[0,2\\pi],\\quad\\text{range }[-1,1]\\)",
+                "\\(\\text{Domain }\\mathbb R,\\quad\\text{range }[-\\pi/2,\\pi/2]\\)",
+                "\\(\\text{Domain }[0,\\pi],\\quad\\text{range }[0,\\pi]\\)"
+              ],
+              "answer": 0,
+              "hint": "Sine is defined for every real x, and arccos always returns an angle from 0 to π.",
+              "keyPoints": [
+                {
+                  "text": "domain and range",
+                  "note": "Focus on this information from the question when choosing the method and carrying out the calculation."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "The inner function \\(\\sin x\\) is defined for every real x and always lies from −1 to 1.",
+                  "work": "\\(-1\\le\\sin x\\le1\\quad\text{for all }x\\in\\mathbb R\\)"
+                },
+                {
+                  "explain": "Every value in [−1,1] is an allowed input to arccos, whose principal range is [0,π].",
+                  "work": "\\(\\operatorname{Dom}(y)=\\mathbb R,\\qquad\\operatorname{Range}(y)=[0,\\pi]\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Cheltenham Girls 2020 3U Trials & Solutions",
+                "school": "Cheltenham Girls' High School",
+                "year": 2020,
+                "number": "13(b)(iii)",
+                "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Trail E1/Cheltenham Girls 2020 3U Trials & Solutions.pdf",
+                "sourcePages": "11"
+              }
+            },
+            {
+              "id": "cgs2020e1-q13b-iv",
+              "type": "review",
+              "difficulty": "hard",
+              "stem": "Sketch the function over the domain \\(0\\le x\\le2\\pi\\).",
+              "answer": "\\(Join (0,π/2), (π/2,0), (π,π/2), (3π/2,π), and (2π,π/2) with straight segments. The minima/maxima at π/2 and 3π/2 are sharp corners.\\)",
+              "hint": "Evaluate sin x at the quarter-turns 0, π/2, π, 3π/2, 2π, then apply arccos to each value.",
+              "keyPoints": [
+                {
+                  "text": "\\(0\\le x\\le2\\pi\\)",
+                  "note": "Mark both endpoints and the three quarter-turns."
+                },
+                {
+                  "text": "Sketch",
+                  "note": "Use the exact key points; the corners are not smooth stationary points."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Evaluate the inner sine at key inputs and apply inverse cosine.",
+                  "work": "\\(y(0)=\\cos^{-1}(0)=\\frac\\pi2,\\quad y(\\frac\\pi2)=\\cos^{-1}(1)=0\\)"
+                },
+                {
+                  "explain": "Continue at the remaining key points.",
+                  "work": "\\(y(\\pi)=\\frac\\pi2,\\quad y(\\frac{3\\pi}2)=\\pi,\\quad y(2\\pi)=\\frac\\pi2\\)"
+                },
+                {
+                  "explain": "Plot the five points and connect them with straight segments. The slope alternates between −1 and +1, giving sharp corners at the minimum and maximum.",
+                  "work": "\\((0,\\frac\\pi2),\\ (\\frac\\pi2,0),\\ (\\pi,\\frac\\pi2),\\ (\\frac{3\\pi}2,\\pi),\\ (2\\pi,\\frac\\pi2)\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 230\" style=\"display:block;margin:0 auto;font-family:system-ui,sans-serif\"><rect width=\"440\" height=\"230\" rx=\"8\" fill=\"#fff\"/><line x1=\"38\" y1=\"184.8350816931162\" x2=\"426\" y2=\"184.8350816931162\" stroke=\"#64748b\"/><path d=\"M38,105L39.2125,105.99793852116395L40.425,106.9958770423279L41.6375,107.99381556349185L42.85,108.99175408465581L44.0625,109.98969260581977L45.275,110.98763112698371L46.4875,111.98556964814767L47.7,112.98350816931163L48.9125,113.98144669047556L50.125,114.97938521163954L51.3375,115.97732373280347L52.55,116.97526225396743L53.7625,117.97320077513137L54.974999999999994,118.97113929629532L56.1875,119.96907781745928L57.400000000000006,120.96701633862324L58.6125,121.9649548597872L59.825,122.96289338095116L61.037499999999994,123.96083190211509L62.25,124.95877042327905L63.462500000000006,125.956708944443L64.675,126.95464746560695L65.8875,127.95258598677091L67.1,128.95052450793486L68.3125,129.94846302909883L69.525,130.94640155026275L70.73750000000001,131.94434007142672L71.94999999999999,132.94227859259064L73.1625,133.9402171137546L74.375,134.93815563491856L75.5875,135.9360941560825L76.80000000000001,136.93403267724648L78.01249999999999,137.93197119841045L79.225,138.92990971957437L80.4375,139.92784824073834L81.65,140.9257867619023L82.86250000000001,141.92372528306623L84.07499999999999,142.9216638042302L85.2875,143.91960232539415L86.5,144.91754084655813L87.7125,145.91547936772204L88.92500000000001,146.91341788888602L90.13749999999999,147.91135641004996L91.35,148.9092949312139L92.5625,149.90723345237785L93.775,150.9051719735418L94.98750000000001,151.90311049470577L96.19999999999999,152.90104901586972L97.4125,153.89898753703366L98.625,154.89692605819764L99.8375,155.89486457936158L101.05000000000001,156.89280310052553L102.2625,157.8907416216895L103.47500000000001,158.88868014285345L104.68750000000001,159.8866186640174L105.89999999999999,160.88455718518136L107.1125,161.88249570634528L108.325,162.88043422750923L109.5375,163.8783727486732L110.75,164.87631126983715L111.9625,165.87424979100112L113.175,166.8721883121651L114.3875,167.870126833329L115.60000000000001,168.86806535449296L116.81249999999999,169.8660038756569L118.02499999999999,170.86394239682087L119.2375,171.86188091798482L120.45,172.85981943914877L121.66250000000001,173.85775796031274L122.875,174.85569648147668L124.0875,175.85363500264066L125.3,176.8515735238046L126.5125,177.84951204496855L127.72500000000001,178.84745056613247L128.9375,179.8453890872964L130.14999999999998,180.8433276084604L131.3625,181.8412661296244L132.575,182.83920465078828L133.78750000000002,183.83714317195216L135,184.8350816931162L136.21249999999998,183.83714317195216L137.425,182.83920465078828L138.6375,181.8412661296244L139.85000000000002,180.8433276084604L141.0625,179.84538908729647L142.27499999999998,178.84745056613247L143.4875,177.84951204496855L144.7,176.8515735238046L145.91250000000002,175.85363500264063L147.125,174.85569648147668L148.33749999999998,173.85775796031274L149.55,172.85981943914882L150.7625,171.86188091798485L151.97500000000002,170.86394239682087L153.1875,169.8660038756569L154.39999999999998,168.86806535449296L155.6125,167.870126833329L156.825,166.8721883121651L158.03750000000002,165.87424979100112L159.25,164.87631126983715L160.46250000000003,163.8783727486732L161.675,162.88043422750926L162.8875,161.8824957063453L164.10000000000002,160.88455718518136L165.3125,159.8866186640174L166.525,158.88868014285345L167.73749999999998,157.8907416216895L168.95000000000002,156.89280310052553L170.1625,155.8948645793616L171.37500000000003,154.89692605819764L172.5875,153.8989875370337L173.79999999999998,152.90104901586972L175.01250000000002,151.90311049470577L176.225,150.90517197354185L177.43750000000003,149.90723345237785L178.65,148.9092949312139L179.8625,147.91135641004996L181.075,146.91341788888602L182.2875,145.91547936772204L183.5,144.91754084655813L184.7125,143.91960232539415L185.925,142.9216638042302L187.1375,141.92372528306623L188.35,140.9257867619023L189.56249999999997,139.92784824073837L190.775,138.92990971957437L191.98749999999998,137.93197119841045L193.20000000000002,136.93403267724648L194.4125,135.9360941560825L195.62499999999997,134.9381556349186L196.8375,133.9402171137546L198.04999999999998,132.9422785925907L199.26250000000002,131.94434007142672L200.475,130.94640155026278L201.6875,129.94846302909883L202.9,128.95052450793486L204.1125,127.95258598677091L205.32500000000002,126.95464746560695L206.5375,125.95670894444301L207.75,124.95877042327905L208.96249999999998,123.96083190211513L210.175,122.96289338095114L211.3875,121.9649548597872L212.6,120.96701633862324L213.8125,119.96907781745928L215.025,118.97113929629533L216.2375,117.97320077513137L217.45000000000002,116.97526225396743L218.6625,115.97732373280347L219.87499999999997,114.97938521163954L221.0875,113.98144669047556L222.29999999999998,112.98350816931163L223.51250000000002,111.98556964814767L224.725,110.98763112698371L225.9375,109.98969260581977L227.15,108.99175408465581L228.36249999999998,107.99381556349188L229.57500000000002,106.9958770423279L230.7875,105.99793852116396L232,105L233.2125,104.00206147883604L234.42499999999998,103.00412295767211L235.63750000000002,102.00618443650815L236.85,101.00824591534422L238.0625,100.01030739418026L239.275,99.01236887301627L240.48750000000004,98.01443035185231L241.70000000000002,97.01649183068838L242.91250000000002,96.01855330952442L244.125,95.02061478836046L245.33749999999998,94.02267626719653L246.54999999999998,93.02473774603257L247.76249999999996,92.02679922486864L248.975,91.02886070370467L250.1875,90.03092218254072L251.39999999999998,89.03298366137678L252.61249999999998,88.0350451402128L253.82500000000002,87.03710661904884L255.03750000000002,86.03916809788488L256.25,85.04122957672094L257.4625,84.04329105555699L258.67499999999995,83.04535253439305L259.88750000000005,82.0474140132291L261.1,81.04947549206514L262.3125,80.0515369709012L263.525,79.05359844973725L264.73750000000007,78.05565992857326L265.95000000000005,77.0577214074093L267.1625,76.05978288624539L268.375,75.06184436508141L269.5875,74.06390584391748L270.79999999999995,73.06596732275352L272.01250000000005,72.06802880158955L273.225,71.07009028042563L274.4375,70.07215175926166L275.65,69.07421323809774L276.86249999999995,68.07627471693377L278.07500000000005,67.0783361957698L279.2875,66.08039767460582L280.5,65.0824591534419L281.7125,64.08452063227793L282.92500000000007,63.08658211111398L284.13750000000005,62.088643589950046L285.35,61.090705068786114L286.5625,60.09276654762215L287.775,59.09482802645819L288.98749999999995,58.096889505294236L290.20000000000005,57.09895098413027L291.4125,56.10101246296632L292.625,55.10307394180236L293.8375,54.1051354206384L295.05,53.10719689947444L296.2625,52.10925837831053L297.47499999999997,51.11131985714657L298.6875,50.11338133598261L299.90000000000003,49.11544281481865L301.1125,48.1175042936547L302.325,47.11956577249078L303.5375,46.12162725132678L304.75000000000006,45.123688730162826L305.96250000000003,44.12575020899886L307.175,43.12781168783495L308.3875,42.12987316667099L309.59999999999997,41.13193464550703L310.8125,40.13399612434307L312.02500000000003,39.13605760317911L313.23749999999995,38.1381190820152L314.45,37.14018056085124L315.66249999999997,36.14224203968731L316.87500000000006,35.14430351852329L318.0875,34.14636499735937L319.3,33.14842647619543L320.5125,32.15048795503145L321.725,31.152549433867495L322.9375,30.154610912703536L324.15,29.1566723915396L325.3625,28.158733870375713L326.575,27.16079534921173L327.78749999999997,26.162856828047836L329,25.16491830688379L330.21250000000003,26.162856828047836L331.425,27.16079534921173L332.6375,28.158733870375595L333.85,29.1566723915396L335.0625,30.154610912703536L336.275,31.152549433867495L337.4875,32.15048795503145L338.7,33.14842647619538L339.9125,34.14636499735934L341.12499999999994,35.14430351852326L342.33750000000003,36.14224203968726L343.55,37.14018056085122L344.76250000000005,38.1381190820152L345.97499999999997,39.1360576031791L347.1875,40.13399612434307L348.40000000000003,41.13193464550701L349.6125,42.12987316667097L350.825,43.12781168783493L352.03749999999997,44.12575020899886L353.24999999999994,45.123688730162826L354.4625,46.12162725132678L355.675,47.11956577249076L356.8875,48.11750429365467L358.09999999999997,49.11544281481863L359.3125,50.11338133598259L360.52500000000003,51.11131985714657L361.7375,52.10925837831053L362.95,53.10719689947444L364.16249999999997,54.105135420638376L365.375,55.103073941802336L366.5875,56.101012462966295L367.8,57.098950984130255L369.0125,58.09688950529421L370.225,59.09482802645817L371.4375,60.09276654762213L372.65000000000003,61.09070506878608L373.8625,62.088643589949996L375.075,63.08658211111398L376.28749999999997,64.08452063227791L377.5,65.08245915344187L378.71250000000003,66.08039767460582L379.92499999999995,67.07833619576977L381.1375,68.07627471693375L382.35,69.07421323809774L383.56250000000006,70.07215175926166L384.775,71.0700902804256L385.9875,72.06802880158955L387.2,73.0659673227535L388.4125,74.06390584391748L389.625,75.06184436508143L390.8375,76.05978288624533L392.05,77.05772140740928L393.2625,78.05565992857325L394.475,79.05359844973725L395.6875,80.05153697090115L396.90000000000003,81.04947549206511L398.1125,82.04741401322907L399.325,83.04535253439303L400.5375,84.043291055557L401.74999999999994,85.04122957672091L402.9625,86.03916809788487L404.175,87.03710661904881L405.3875,88.03504514021279L406.59999999999997,89.03298366137675L407.8125,90.03092218254069L409.02500000000003,91.02886070370467L410.2375,92.02679922486863L411.45,93.02473774603259L412.66249999999997,94.0226762671965L413.875,95.02061478836045L415.0875,96.0185533095244L416.3,97.01649183068837L417.5125,98.01443035185233L418.72499999999997,99.01236887301624L419.9375,100.01030739418024L421.15000000000003,101.0082459153442L422.3625,102.00618443650815L423.575,103.00412295767207L424.78749999999997,104.00206147883603L426,104.99999999999999\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"2.5\"/><circle cx=\"38\" cy=\"105\" r=\"3.5\" fill=\"#7c3aed\"/><text x=\"38\" y=\"97\" font-size=\"9\" fill=\"#5b21b6\" text-anchor=\"middle\" >(0, π/2)</text><circle cx=\"135\" cy=\"184.8350816931162\" r=\"3.5\" fill=\"#7c3aed\"/><text x=\"160\" y=\"202\" font-size=\"9\" fill=\"#5b21b6\" text-anchor=\"middle\" >(π/2, 0)</text><circle cx=\"232\" cy=\"105\" r=\"3.5\" fill=\"#7c3aed\"/><text x=\"232\" y=\"97\" font-size=\"9\" fill=\"#5b21b6\" text-anchor=\"middle\" >(π, π/2)</text><circle cx=\"329\" cy=\"25.16491830688379\" r=\"3.5\" fill=\"#7c3aed\"/><text x=\"329\" y=\"25\" font-size=\"9\" fill=\"#5b21b6\" text-anchor=\"middle\" >(3π/2, π)</text><circle cx=\"426\" cy=\"105\" r=\"3.5\" fill=\"#7c3aed\"/><text x=\"426\" y=\"132\" font-size=\"9\" fill=\"#5b21b6\" text-anchor=\"end\" >(2π, π/2)</text><text x=\"38\" y=\"220\" font-size=\"10\" fill=\"#475569\" text-anchor=\"middle\" >0</text><text x=\"135\" y=\"220\" font-size=\"10\" fill=\"#475569\" text-anchor=\"middle\" >π/2</text><text x=\"232\" y=\"220\" font-size=\"10\" fill=\"#475569\" text-anchor=\"middle\" >π</text><text x=\"329\" y=\"220\" font-size=\"10\" fill=\"#475569\" text-anchor=\"middle\" >3π/2</text><text x=\"426\" y=\"220\" font-size=\"10\" fill=\"#475569\" text-anchor=\"middle\" >2π</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Cheltenham Girls 2020 3U Trials & Solutions",
+                "school": "Cheltenham Girls' High School",
+                "year": 2020,
+                "number": "13(b)(iv)",
+                "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Trail E1/Cheltenham Girls 2020 3U Trials & Solutions.pdf",
+                "sourcePages": "11"
+              }
+            }
+          ]
         }
       ]
     },
@@ -1085,6 +1364,230 @@
             {
               "text": "\\(\\int\\cos^26x\\,dx\\)",
               "note": "Replace cos²6x by ½(1 + cos 12x) first."
+            }
+          ]
+        },
+        {
+          "id": "cgs2020e1-q11b",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "Write an expression for \\(\\sin5x\\sin x\\) in terms of \\(\\cos4x\\) and \\(\\cos6x\\). Hence, find \\(\\int_0^{\\pi/4}\\sin5x\\sin x\\,dx\\).",
+          "hint": "First convert the product of sines into a difference of cosines; then integrate those terms.",
+          "keyPoints": [
+            {
+              "text": "\\(\\cos4x\\) and \\(\\cos6x\\)",
+              "note": "The product-to-sum identity produces these two cosine terms."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls 2020 3U Trials & Solutions",
+            "school": "Cheltenham Girls' High School",
+            "year": 2020,
+            "number": "11(b)",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Trail E1/Cheltenham Girls 2020 3U Trials & Solutions.pdf",
+            "sourcePages": "8"
+          },
+          "parts": [
+            {
+              "id": "cgs2020e1-q11b-i",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "Write an expression for \\(\\sin 5x\\sin x\\) in terms of \\(\\cos 4x\\) and \\(\\cos 6x\\).",
+              "options": [
+                "\\(\\frac12(\\cos4x-\\cos6x)\\)",
+                "\\(\\frac12(\\cos6x-\\cos4x)\\)",
+                "\\(\\cos4x-\\cos6x\\)",
+                "\\(\\frac12(\\sin6x+\\sin4x)\\)"
+              ],
+              "answer": 0,
+              "hint": "Use the product-to-sum identity for sine multiplied by sine.",
+              "keyPoints": [
+                {
+                  "text": "\\(\\sin 5x\\sin x\\)",
+                  "note": "For \\(\\sin A\\sin B\\), use half the difference of two cosines."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Apply \\(\\sin A\\sin B=\\frac12[\\cos(A-B)-\\cos(A+B)]\\) with \\(A=5x\\) and \\(B=x\\).",
+                  "work": "\\(\\sin5x\\sin x=\\frac12[\\cos(5x-x)-\\cos(5x+x)]\\)"
+                },
+                {
+                  "explain": "Simplify the two angles.",
+                  "work": "\\(\\sin5x\\sin x=\\frac12(\\cos4x-\\cos6x)\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Cheltenham Girls 2020 3U Trials & Solutions",
+                "school": "Cheltenham Girls' High School",
+                "year": 2020,
+                "number": "11(b)(i)",
+                "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Trail E1/Cheltenham Girls 2020 3U Trials & Solutions.pdf",
+                "sourcePages": "8"
+              }
+            },
+            {
+              "id": "cgs2020e1-q11b-ii",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "Hence, find \\(\\int_0^{\\pi/4}\\sin5x\\sin x\\,dx\\).",
+              "options": [
+                "\\(\\frac{1}{12}\\)",
+                "\\(\\frac{\\sqrt2}{16}+\\frac{1}{12}\\)",
+                "\\(\\frac{1}{6}\\)",
+                "\\(\\frac{\\sqrt2}{8}-\\frac{1}{12}\\)"
+              ],
+              "answer": 0,
+              "hint": "Use the product-to-sum expression, then integrate each cosine term separately and substitute both bounds.",
+              "keyPoints": [
+                {
+                  "text": "Hence, find",
+                  "note": "Use the identity established immediately before this integral."
+                },
+                {
+                  "text": "\\(\\int_0^{\\pi/4}\\sin5x\\sin x\\,dx\\)",
+                  "note": "Integrate the cosine terms and evaluate at both limits."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Replace the product using \\(\\sin5x\\sin x=\\frac12(\\cos4x-\\cos6x)\\).",
+                  "work": "\\(I=\\frac12\\int_0^{\\pi/4}(\\cos4x-\\cos6x)\\,dx\\)"
+                },
+                {
+                  "explain": "Integrate using \\(\\int\\cos(kx)\\,dx=\\frac{\\sin(kx)}{k}\\).",
+                  "work": "\\(I=\\frac12\\left[\\frac{\\sin4x}{4}-\\frac{\\sin6x}{6}\\right]_0^{\\pi/4}\\)"
+                },
+                {
+                  "explain": "Substitute the upper and lower bounds.",
+                  "work": "\\(I=\\frac12\\left(\\frac{\\sin\\pi}{4}-\\frac{\\sin(3\\pi/2)}{6}-\\left[\\frac{\\sin0}{4}-\\frac{\\sin0}{6}\\right]\\right)=\\frac12\\left(0-\\frac{-1}{6}-0\\right)=\\frac{1}{12}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Cheltenham Girls 2020 3U Trials & Solutions",
+                "school": "Cheltenham Girls' High School",
+                "year": 2020,
+                "number": "11(b)(ii)",
+                "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Trail E1/Cheltenham Girls 2020 3U Trials & Solutions.pdf",
+                "sourcePages": "8"
+              }
+            }
+          ]
+        },
+        {
+          "id": "cgs2020e1-q12d",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "Show that \\(\\sin(A+B)+\\sin(A-B)=2\\sin A\\cos B\\). Hence, find \\(\\int_0^\\pi\\sin(mx)\\cos(nx)\\,dx\\) where \\(m\\) and \\(n\\) are both positive, even integers and \\(m\\ne n\\).",
+          "hint": "First establish the compound-angle identity, then use it to rewrite the integrand as a sum of sine functions.",
+          "keyPoints": [
+            {
+              "text": "\\(\\sin(A+B)+\\sin(A-B)=2\\sin A\\cos B\\)",
+              "note": "Expand each compound-angle expression, then use cancellation."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls 2020 3U Trials & Solutions",
+            "school": "Cheltenham Girls' High School",
+            "year": 2020,
+            "number": null,
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Trail E1/Cheltenham Girls 2020 3U Trials & Solutions.pdf",
+            "sourcePages": "12(d)"
+          },
+          "parts": [
+            {
+              "id": "cgs2020e1-q12d-proof",
+              "type": "review",
+              "difficulty": "hard",
+              "stem": "Show that \\(\\sin(A+B)+\\sin(A-B)=2\\sin A\\cos B\\).",
+              "answer": "\\(Expand both compound-angle terms: sinAcosB+cosAsinB+sinAcosB−cosAsinB=2sinAcosB.\\)",
+              "hint": "Expand both sine compound-angle expressions; the cosine-sine terms cancel.",
+              "keyPoints": [
+                {
+                  "text": "\\(\\sin(A+B)+\\sin(A-B)=2\\sin A\\cos B\\)",
+                  "note": "Expand each compound-angle expression, then use cancellation."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Write the addition and subtraction identities separately.",
+                  "work": "\\(\\sin(A+B)=\\sin A\\cos B+\\cos A\\sin B,\\quad\\sin(A-B)=\\sin A\\cos B-\\cos A\\sin B\\)"
+                },
+                {
+                  "explain": "Add the expressions and combine like terms; the opposite terms cancel.",
+                  "work": "\\(\\sin(A+B)+\\sin(A-B)=2\\sin A\\cos B+0=2\\sin A\\cos B\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Cheltenham Girls 2020 3U Trials & Solutions",
+                "school": "Cheltenham Girls' High School",
+                "year": 2020,
+                "number": "12(d) proof",
+                "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Trail E1/Cheltenham Girls 2020 3U Trials & Solutions.pdf",
+                "sourcePages": "10"
+              }
+            },
+            {
+              "id": "cgs2020e1-q12d-integral",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "Hence, find \\(\\int_0^\\pi\\sin(mx)\\cos(nx)\\,dx\\) where \\(m\\) and \\(n\\) are both positive, even integers and \\(m\\ne n\\).",
+              "options": [
+                "\\(0\\)",
+                "\\(\\frac{2m}{m^2-n^2}\\)",
+                "\\(\\frac{2n}{m^2-n^2}\\)",
+                "\\(\\frac{1}{m+n}+\\)\\(\\frac{1}{m-n}\\)"
+              ],
+              "answer": 0,
+              "hint": "Use the proven identity with A=mx and B=nx. Both resulting sine terms complete an integer number of half-turns on [0,π].",
+              "keyPoints": [
+                {
+                  "text": "Hence, find",
+                  "note": "Use the identity proved immediately before this part."
+                },
+                {
+                  "text": "\\(m\\) and \\(n\\) are both positive, even integers",
+                  "note": "Then \\(m+n\\) and \\(m-n\\) are nonzero even integers."
+                },
+                {
+                  "text": "\\(m\\ne n\\)",
+                  "note": "This ensures the difference-frequency term is not \\(\\sin0\\)."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Apply the identity with \\(A=mx\\) and \\(B=nx\\).",
+                  "work": "\\(\\sin(mx)\\cos(nx)=\\frac12[\\sin((m+n)x)+\\sin((m-n)x)]\\)"
+                },
+                {
+                  "explain": "Integrate each sine term. Since \\(m\\ne n\\), both denominators are nonzero.",
+                  "work": "\\(I=\\frac12\\left[-\\frac{\\cos((m+n)x)}{m+n}-\\frac{\\cos((m-n)x)}{m-n}\\right]_0^\\pi\\)"
+                },
+                {
+                  "explain": "Because m and n are even, m+n and m−n are even. Thus each cosine equals 1 at x=0 and x=π, so each definite-integral difference is zero.",
+                  "work": "\\(\\cos((m\\pm n)\\pi)=1=\\cos0\\quad\\Rightarrow\\quad I=0\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Cheltenham Girls 2020 3U Trials & Solutions",
+                "school": "Cheltenham Girls' High School",
+                "year": 2020,
+                "number": "12(d) integral",
+                "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Trail E1/Cheltenham Girls 2020 3U Trials & Solutions.pdf",
+                "sourcePages": "10"
+              }
             }
           ]
         }
@@ -1596,6 +2099,50 @@
               ]
             }
           ]
+        },
+        {
+          "id": "cgs2020e1-q11c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate \\(\\int_{-8}^{0}\\frac{x}{\\sqrt{1-x}}\\,dx\\) using the substitution \\(u=1-x\\).",
+          "options": [
+            "\\(-\\frac{40}{3}\\)",
+            "\\(-\\frac{32}{3}\\)",
+            "\\(\\frac{40}{3}\\)",
+            "\\(-\\frac{14}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Change the limits when u=1−x, and replace both x and dx before integrating.",
+          "keyPoints": [
+            {
+              "text": "using the substitution",
+              "note": "Focus on this information from the question when choosing the method and carrying out the calculation."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Differentiate the substitution and solve for x.",
+              "work": "\\(u=1-x\\Rightarrow du=-dx,\\qquad x=1-u\\)"
+            },
+            {
+              "explain": "Transform the limits: when \\(x=-8,u=9\\); when \\(x=0,u=1\\). Reverse the resulting bounds to remove the negative differential.",
+              "work": "\\(\\int_{-8}^{0}\\frac{x}{\\sqrt{1-x}}dx=\\int_9^1\\frac{1-u}{\\sqrt u}(-du)=\\int_1^9(u^{-1/2}-u^{1/2})du\\)"
+            },
+            {
+              "explain": "Integrate each power and substitute 1 and 9.",
+              "work": "\\(\\left[2u^{1/2}-\\frac23u^{3/2}\\right]_1^9=(6-18)-(2-\\frac23)=-\\frac{40}{3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls 2020 3U Trials & Solutions",
+            "school": "Cheltenham Girls' High School",
+            "year": 2020,
+            "number": "11(c)",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Trail E1/Cheltenham Girls 2020 3U Trials & Solutions.pdf",
+            "sourcePages": "8"
+          }
         }
       ]
     }

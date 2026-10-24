@@ -80,6 +80,62 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 480 300\" style=\"display:block;margin:0 auto;font-family:system-ui,sans-serif\"><rect width=\"480\" height=\"300\" fill=\"white\"/><line x1=\"40\" y1=\"145\" x2=\"440\" y2=\"145\" stroke=\"#64748b\"/><line x1=\"240\" y1=\"20\" x2=\"240\" y2=\"270\" stroke=\"#64748b\"/><path d=\"M246 258C253 199 263 167 280 145C305 112 354 90 420 78\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><text x=\"432\" y=\"150\" font-size=\"13\">x</text><text x=\"245\" y=\"20\" font-size=\"13\">y</text><text x=\"286\" y=\"142\" font-size=\"12\">(1,0)</text><text x=\"45\" y=\"20\" font-size=\"13\">Given curve: vertical asymptote x=0, zero x=1</text></svg>"
           }
+        },
+        {
+          "id": "cgs2020e1-q12b",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "The diagram below shows the graph of \\(y=f(x)\\), sketch the graph of \\(y=\\frac1{f(x)}\\). Show all important features.",
+          "answer": "\\(The zero of f becomes a vertical asymptote of 1/f; the horizontal asymptote y=2 becomes y=1/2; since f(0)=2, the reciprocal passes through (0,1/2); the local maximum (1,4) becomes a local minimum (1,1/4).\\)",
+          "hint": "Zeros of f become vertical asymptotes of 1/f. Reciprocal the horizontal asymptote and any labelled nonzero point.",
+          "keyPoints": [
+            {
+              "text": "\\(y=f(x)\\)",
+              "note": "Read the zero, sign, horizontal asymptote, and marked turning point from this graph."
+            },
+            {
+              "text": "\\(y=\\frac1{f(x)}\\)",
+              "note": "A zero of the denominator creates a vertical asymptote."
+            },
+            {
+              "text": "Show all important features",
+              "note": "Include asymptotes, the reciprocal intercept/turning point, and correct branch signs."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Mark the x-intercept of f as x=α. Since 1/f is undefined wherever f=0, this x-value becomes a vertical asymptote.",
+              "work": "\\(f(\\alpha)=0\\Rightarrow\\frac1{f(x)}\\text{ has vertical asymptote }x=\\alpha\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 500 300\" style=\"display:block;margin:0 auto;font-family:system-ui,sans-serif\"><rect width=\"500\" height=\"300\" rx=\"8\" fill=\"#fff\"/><defs><marker id=\"arr\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L0,6 L7,3 z\" fill=\"#4f46e5\"/></marker></defs><line x1=\"35\" y1=\"220\" x2=\"476\" y2=\"220\" stroke=\"#64748b\"/><line x1=\"180\" y1=\"26\" x2=\"180\" y2=\"282\" stroke=\"#64748b\"/><line x1=\"35\" y1=\"125\" x2=\"474\" y2=\"125\" stroke=\"#94a3b8\" stroke-dasharray=\"5 4\"/><text x=\"462\" y=\"116\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"end\">y = 2</text><text x=\"482\" y=\"225\" font-size=\"12\" fill=\"#334155\">x</text><text x=\"185\" y=\"28\" font-size=\"12\" fill=\"#334155\">y</text><path d=\"M38,278 C79,275 108,253 140,220 C155,181 168,139 180,125 C199,107 215,75 230,75 C298,75 345,116 398,123 C430,126 451,125 470,125\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"3\" marker-start=\"url(#arr)\" marker-end=\"url(#arr)\"/><circle cx=\"140\" cy=\"220\" r=\"6\" fill=\"#ef4444\"/><circle cx=\"180\" cy=\"125\" r=\"4\" fill=\"#4f46e5\"/><circle cx=\"230\" cy=\"75\" r=\"4\" fill=\"#4f46e5\"/><line x1=\"230\" y1=\"220\" x2=\"230\" y2=\"75\" stroke=\"#94a3b8\" stroke-dasharray=\"4 4\"/><line x1=\"226\" y1=\"220\" x2=\"234\" y2=\"220\" stroke=\"#64748b\"/><line x1=\"176\" y1=\"125\" x2=\"184\" y2=\"125\" stroke=\"#64748b\"/><text x=\"166\" y=\"129\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">2</text><text x=\"230\" y=\"243\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">1</text><text x=\"190\" y=\"145\" font-size=\"11\" fill=\"#334155\">(0, 2)</text><text x=\"245\" y=\"64\" font-size=\"11\" fill=\"#334155\">maximum (1, 4)</text><text x=\"70\" y=\"38\" font-size=\"12\" fill=\"#4f46e5\">f(α) = 0</text><line x1=\"140\" y1=\"35\" x2=\"140\" y2=\"279\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><text x=\"150\" y=\"268\" font-size=\"11\" fill=\"#b91c1c\">denominator is zero</text></svg>"
+              }
+            },
+            {
+              "explain": "Reciprocal the finite key values and the horizontal asymptote: the source maximum (1,4) maps to (1,1/4), and the source y-intercept (0,2) maps to (0,1/2). As f approaches 2, 1/f approaches 1/2.",
+              "work": "\\(f(1)=4\\Rightarrow\\frac1{f(1)}=\\frac14,\\qquad f(0)=2\\Rightarrow\\frac1{f(0)}=\\frac12,\\qquad y=2\\Rightarrow y=\\frac12\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 500 300\" style=\"display:block;margin:0 auto;font-family:system-ui,sans-serif\"><rect width=\"500\" height=\"300\" rx=\"8\" fill=\"#fff\"/><defs><marker id=\"up\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L0,6 L7,3 z\" fill=\"#4f46e5\"/></marker><marker id=\"down\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L0,6 L7,3 z\" fill=\"#4f46e5\"/></marker></defs><line x1=\"35\" y1=\"245\" x2=\"476\" y2=\"245\" stroke=\"#64748b\"/><line x1=\"180\" y1=\"25\" x2=\"180\" y2=\"270\" stroke=\"#64748b\"/><line x1=\"140\" y1=\"25\" x2=\"140\" y2=\"270\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><line x1=\"180\" y1=\"180\" x2=\"474\" y2=\"180\" stroke=\"#16a34a\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><path d=\"M38,250 C80,250 116,258 137,293\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\" marker-end=\"url(#down)\"/><path d=\"M143,28 C147,66 163,145 180,180 C198,204 216,213 230,212.5 C282,211 335,184 395,180 C429,178 451,180 470,180\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\" marker-start=\"url(#up)\"/><circle cx=\"180\" cy=\"180\" r=\"5\" fill=\"#f59e0b\" stroke=\"#fff\" stroke-width=\"1.5\"/><circle cx=\"230\" cy=\"212.5\" r=\"5\" fill=\"#f59e0b\" stroke=\"#fff\" stroke-width=\"1.5\"/><line x1=\"230\" y1=\"245\" x2=\"230\" y2=\"212.5\" stroke=\"#94a3b8\" stroke-dasharray=\"4 4\"/><text x=\"140\" y=\"18\" font-size=\"12\" fill=\"#b91c1c\" text-anchor=\"middle\">x = α</text><text x=\"460\" y=\"171\" font-size=\"12\" fill=\"#15803d\" text-anchor=\"end\">y = 1/2</text><text x=\"187\" y=\"169\" font-size=\"11\" fill=\"#92400e\">(0, 1/2)</text><text x=\"235\" y=\"235\" font-size=\"11\" fill=\"#92400e\">(1, 1/4)</text><text x=\"484\" y=\"250\" font-size=\"12\" fill=\"#334155\">x</text><text x=\"185\" y=\"28\" font-size=\"12\" fill=\"#334155\">y</text><text x=\"130\" y=\"263\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">α</text><text x=\"230\" y=\"263\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">1</text><text x=\"58\" y=\"28\" font-size=\"12\" fill=\"#4f46e5\">y = 1/f(x)</text><text x=\"48\" y=\"271\" font-size=\"10\" fill=\"#4f46e5\">1/f &lt; 0</text></svg>"
+              }
+            },
+            {
+              "explain": "Sketch the negative branch to the left of α and the positive branch to the right. The reciprocal has no x-intercept because its numerator is 1; it approaches 0 from below on the far left and 1/2 on the far right.",
+              "work": "\\(x=\\alpha\\text{ is a vertical asymptote};\\quad \\frac1{f(x)}\\to0^{-}\\text{ as }x\\to-\\infty;\\quad \\frac1{f(x)}\\to\\frac12\\text{ as }x\\to\\infty;\\quad (0,\\frac12),\\ (1,\\frac14)\\text{ are key points}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls 2020 3U Trials & Solutions",
+            "school": "Cheltenham Girls' High School",
+            "year": 2020,
+            "number": "12(b)",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Trail E1/Cheltenham Girls 2020 3U Trials & Solutions.pdf",
+            "sourcePages": "10",
+            "reconstructedFigure": "Source graph redrawn from the scanned PDF; exact intercept location is qualitative and represented as α."
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 500 300\" style=\"display:block;margin:0 auto;font-family:system-ui,sans-serif\"><rect width=\"500\" height=\"300\" rx=\"8\" fill=\"#fff\"/><defs><marker id=\"arr\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L0,6 L7,3 z\" fill=\"#4f46e5\"/></marker></defs><line x1=\"35\" y1=\"220\" x2=\"476\" y2=\"220\" stroke=\"#64748b\"/><line x1=\"180\" y1=\"26\" x2=\"180\" y2=\"282\" stroke=\"#64748b\"/><line x1=\"35\" y1=\"125\" x2=\"474\" y2=\"125\" stroke=\"#94a3b8\" stroke-dasharray=\"5 4\"/><text x=\"462\" y=\"116\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"end\">y = 2</text><text x=\"482\" y=\"225\" font-size=\"12\" fill=\"#334155\">x</text><text x=\"185\" y=\"28\" font-size=\"12\" fill=\"#334155\">y</text><path d=\"M38,278 C79,275 108,253 140,220 C155,181 168,139 180,125 C199,107 215,75 230,75 C298,75 345,116 398,123 C430,126 451,125 470,125\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\" marker-start=\"url(#arr)\" marker-end=\"url(#arr)\"/><circle cx=\"140\" cy=\"220\" r=\"4\" fill=\"#4f46e5\"/><circle cx=\"180\" cy=\"125\" r=\"4\" fill=\"#4f46e5\"/><circle cx=\"230\" cy=\"75\" r=\"4\" fill=\"#4f46e5\"/><line x1=\"230\" y1=\"220\" x2=\"230\" y2=\"75\" stroke=\"#94a3b8\" stroke-dasharray=\"4 4\"/><line x1=\"226\" y1=\"220\" x2=\"234\" y2=\"220\" stroke=\"#64748b\"/><line x1=\"176\" y1=\"125\" x2=\"184\" y2=\"125\" stroke=\"#64748b\"/><text x=\"166\" y=\"129\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">2</text><text x=\"140\" y=\"243\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">α</text><text x=\"230\" y=\"243\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">1</text><text x=\"190\" y=\"145\" font-size=\"11\" fill=\"#334155\">(0, 2)</text><text x=\"245\" y=\"64\" font-size=\"11\" fill=\"#334155\">maximum (1, 4)</text><text x=\"70\" y=\"38\" font-size=\"12\" fill=\"#4f46e5\">y = f(x)</text></svg>"
+          }
         }
       ]
     },
@@ -506,6 +562,50 @@
               ]
             }
           ]
+        },
+        {
+          "id": "cgs2020e1-q5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given that \\(f(x)=e^x-1\\) and \\(y=f^{-1}(x)\\), find an expression for \\(\\frac{dy}{dx}\\).",
+          "options": [
+            "\\(\\frac{1}{e^x-1}\\)",
+            "\\(\\frac{1}{x+1}\\)",
+            "\\(\\ln x\\)",
+            "\\(\\ln(x+1)\\)"
+          ],
+          "answer": 1,
+          "hint": "First find the inverse by swapping x and y in y=e^x−1, then differentiate the inverse.",
+          "keyPoints": [
+            {
+              "text": "\\(y=f^{-1}(x)\\)",
+              "note": "Focus on this information from the question when choosing the method and carrying out the calculation."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set \\(y=e^x-1\\) and swap x and y to find the inverse relation.",
+              "work": "\\(x=e^y-1\\)"
+            },
+            {
+              "explain": "Isolate y by adding 1 and taking the natural logarithm.",
+              "work": "\\(x+1=e^y\\quad\\Rightarrow\\quad y=\\ln(x+1)\\)"
+            },
+            {
+              "explain": "Differentiate with respect to x using the chain rule.",
+              "work": "\\(\\frac{dy}{dx}=\\frac{1}{x+1}\\cdot\\frac{d}{dx}(x+1)=\\frac{1}{x+1}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls 2020 3U Trials & Solutions",
+            "school": "Cheltenham Girls' High School",
+            "year": 2020,
+            "number": "5",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Trail E1/Cheltenham Girls 2020 3U Trials & Solutions.pdf",
+            "sourcePages": "4"
+          }
         }
       ]
     },

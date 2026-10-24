@@ -248,6 +248,169 @@
               "note": "Use V = (4/3)πr³ and the chain rule dV/dt = (dV/dr)(dr/dt)."
             }
           ]
+        },
+        {
+          "id": "cgs2020e1-q9",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A body of still water has suffered an oil spill and a circular oil slick is floating on the surface of the water. The area of the oil slick is increasing by \\(0.1\\,\\text{m}^2/\\text{minute}\\). At what rate is the radius increasing when the area is \\(0.3\\,\\text{m}^2\\)?",
+          "options": [
+            "\\(0.0098\\,\\text{m/min}\\)",
+            "\\(0.03\\,\\text{m/min}\\)",
+            "\\(0.0515\\,\\text{m/min}\\)",
+            "\\(0.0531\\,\\text{m/min}\\)"
+          ],
+          "answer": 2,
+          "hint": "Differentiate A=πr² with respect to time, then use A=0.3 to find r at that instant.",
+          "keyPoints": [
+            {
+              "text": "circular oil slick",
+              "note": "Use the circle area relationship \\(A=\\pi r^2\\)."
+            },
+            {
+              "text": "increasing by \\(0.1\\,\\text{m}^2/\\text{minute}\\)",
+              "note": "This gives \\(dA/dt=0.1\\)."
+            },
+            {
+              "text": "when the area is \\(0.3\\,\\text{m}^2\\)",
+              "note": "Find the radius from the area at this instant, after differentiating."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the area equation and differentiate both sides with respect to time.",
+              "work": "\\(A=\\pi r^2\\quad\\Rightarrow\\quad\\frac{dA}{dt}=2\\pi r\\frac{dr}{dt}\\)"
+            },
+            {
+              "explain": "Find the radius when \\(A=0.3\\,\\text{m}^2\\).",
+              "work": "\\(0.3=\\pi r^2\\Rightarrow r=\\sqrt{\\frac{0.3}{\\pi}}\\,\\text{m}\\)"
+            },
+            {
+              "explain": "Substitute the instantaneous area rate and radius, then solve for the radius rate.",
+              "work": "\\(0.1=2\\pi\\sqrt{\\frac{0.3}{\\pi}}\\frac{dr}{dt}\\Rightarrow\\frac{dr}{dt}=\\frac{0.1}{2\\sqrt{0.3\\pi}}\\approx0.0515\\,\\text{m/min}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls 2020 3U Trials & Solutions",
+            "school": "Cheltenham Girls' High School",
+            "year": 2020,
+            "number": "9",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Trail E1/Cheltenham Girls 2020 3U Trials & Solutions.pdf",
+            "sourcePages": "7"
+          }
+        },
+        {
+          "id": "cgs2020e1-q11e",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "A particle is moving such that, at time \\(t\\) seconds, its displacement, \\(x\\) metres, satisfies the equation \\(t=2-\\frac{1}{e^{3x}}\\). Show that the velocity of the particle can be represented by \\(\\frac{dx}{dt}=\\frac{e^{3x}}{3}\\,\\text{m s}^{-1}\\).",
+          "hint": "Differentiate the given relation with respect to x to find velocity; then use the one-second condition to evaluate acceleration.",
+          "keyPoints": [
+            {
+              "text": "\\(t=2-\\frac{1}{e^{3x}}\\)",
+              "note": "This relation connects the given time to displacement."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls 2020 3U Trials & Solutions",
+            "school": "Cheltenham Girls' High School",
+            "year": 2020,
+            "number": "11(e)",
+            "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Trail E1/Cheltenham Girls 2020 3U Trials & Solutions.pdf",
+            "sourcePages": "9"
+          },
+          "parts": [
+            {
+              "id": "cgs2020e1-q11e-i",
+              "type": "review",
+              "difficulty": "hard",
+              "stem": "A particle is moving such that, at time \\(t\\) seconds, its displacement, \\(x\\) metres, satisfies the equation \\(t=2-\\frac{1}{e^{3x}}\\). Show that the velocity of the particle can be represented by \\(\\frac{dx}{dt}=\\frac{e^{3x}}{3}\\,\\text{m s}^{-1}\\).",
+              "answer": "\\(\\frac{dt}{dx}=3e^{-3x};\\quad\\frac{dx}{dt}=\\frac{1}{3e^{-3x}}=\\frac{e^{3x}}{3}\\,\\text{m s}^{-1}\\)",
+              "hint": "Differentiate t with respect to x first, then take the reciprocal to obtain dx/dt.",
+              "keyPoints": [
+                {
+                  "text": "Show that",
+                  "note": "Focus on this information from the question when choosing the method and carrying out the calculation."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Rewrite the relation with a negative exponent and differentiate with respect to displacement x.",
+                  "work": "\\(t=2-e^{-3x}\\quad\\Rightarrow\\quad\\frac{dt}{dx}=3e^{-3x}\\)"
+                },
+                {
+                  "explain": "Since \\(dx/dt=1/(dt/dx)\\), invert the derivative.",
+                  "work": "\\(\\frac{dx}{dt}=\\frac{1}{3e^{-3x}}=\\frac{e^{3x}}{3}\\)"
+                },
+                {
+                  "explain": "Attach the velocity units: displacement is measured in metres and time in seconds.",
+                  "work": "\\(v=\\frac{dx}{dt}=\\frac{e^{3x}}{3}\\,\\text{m s}^{-1}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Cheltenham Girls 2020 3U Trials & Solutions",
+                "school": "Cheltenham Girls' High School",
+                "year": 2020,
+                "number": "11(e)(i)",
+                "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Trail E1/Cheltenham Girls 2020 3U Trials & Solutions.pdf",
+                "sourcePages": "9"
+              }
+            },
+            {
+              "id": "cgs2020e1-q11e-ii",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "Using the formula \\(a=\\frac{d}{dx}\\left(\\frac12v^2\\right)\\), or otherwise, find the acceleration of the particle after 1 second.",
+              "options": [
+                "\\(\\frac13\\,\\text{m s}^{-2}\\)",
+                "\\(\\frac{e^3}{3}\\,\\text{m s}^{-2}\\)",
+                "\\(3\\,\\text{m s}^{-2}\\)",
+                "\\(0\\,\\text{m s}^{-2}\\)"
+              ],
+              "answer": 0,
+              "hint": "Use the velocity from the previous part, find x when t=1, then evaluate a=d(½v²)/dx.",
+              "keyPoints": [
+                {
+                  "text": "after 1 second",
+                  "note": "Substitute \\(t=1\\) into the given displacement-time relation."
+                },
+                {
+                  "text": "\\(a=\\frac{d}{dx}\\left(\\frac12v^2\\right)\\)",
+                  "note": "Express \\(v\\) as a function of \\(x\\) before differentiating."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Use the relation from the previous part and substitute \\(t=1\\) to find the displacement.",
+                  "work": "\\(1=2-e^{-3x}\\Rightarrow e^{-3x}=1\\Rightarrow x=0\\)"
+                },
+                {
+                  "explain": "The velocity is \\(v=e^{3x}/3\\). Differentiate the kinetic-energy expression with respect to x.",
+                  "work": "\\(a=\\frac{d}{dx}\\left(\\frac12\\left(\\frac{e^{3x}}3\\right)^2\\right)=\\frac{d}{dx}\\left(\\frac{e^{6x}}{18}\\right)=\\frac{e^{6x}}3\\)"
+                },
+                {
+                  "explain": "Evaluate at \\(x=0\\).",
+                  "work": "\\(a=\\frac{e^0}{3}=\\frac13\\,\\text{m s}^{-2}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Cheltenham Girls 2020 3U Trials & Solutions",
+                "school": "Cheltenham Girls' High School",
+                "year": 2020,
+                "number": "11(e)(ii)",
+                "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Trail E1/Cheltenham Girls 2020 3U Trials & Solutions.pdf",
+                "sourcePages": "9"
+              }
+            }
+          ]
         }
       ]
     }
