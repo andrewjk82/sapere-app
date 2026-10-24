@@ -15859,33 +15859,33 @@
           "id": "amity2020-ma-q05",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "It is given that \\(\\sin x=\\frac{1}{3}\\) for \\(\\frac{\\pi}{2}<x<\\pi\\). What is the value of \\(\\tan x\\)?",
+          "stem": "It is given that \\(\\sin x = \\frac{1}{3}\\) for \\(\\frac{\\pi}{2} < x < \\pi\\). What is the value of \\(\\tan x\\)?",
           "options": [
-            "\\(-\\frac{1}{2\\sqrt2}\\)",
-            "\\(\\frac{1}{2\\sqrt2}\\)",
-            "\\(-\\frac{2\\sqrt2}{3}\\)",
-            "\\(-2\\sqrt2\\)"
+            "\\(-\\frac{1}{2\\sqrt{2}}\\)",
+            "\\(\\frac{1}{2\\sqrt{2}}\\)",
+            "\\(-\\frac{2\\sqrt{2}}{3}\\)",
+            "\\(-2\\sqrt{2}\\)"
           ],
           "answer": 0,
-          "hint": "In quadrant II, sine is positive and cosine is negative. Use sin²x+cos²x=1.",
+          "hint": "In quadrant II, sine is positive and cosine is negative. Use \\(\\sin^2 x + \\cos^2 x = 1\\).",
           "keyPoints": [
             {
-              "text": "It is given that \\(\\sin x=\\frac{1}{3}\\) for \\(\\frac{\\pi}{2}<x<\\pi\\). What is the value of \\(\\tan x\\)?",
-              "note": "Identify the given information in this exact phrase first, then connect it to the rule or calculation shown in the solution."
+              "text": "\\sin x = \\frac{1}{3}",
+              "note": "In quadrant II, sine is positive and cosine is negative. Use the interval to choose the sign of cosine."
             }
           ],
           "steps": [
             {
               "explain": "The interval places x in quadrant II, so cos x is negative.",
-              "work": "\\(\\cos x=-\\sqrt{1-\\sin^2x}=-\\sqrt{1-\\frac19}=-\\frac{2\\sqrt2}{3}\\)"
+              "work": "\\(\\cos x = -\\sqrt{1 - \\sin^2 x} = -\\sqrt{1 - \\frac{1}{9}} = -\\frac{2\\sqrt{2}}{3}\\)"
             },
             {
               "explain": "Use tangent as sine divided by cosine.",
-              "work": "\\(\\tan x=\\frac{\\sin x}{\\cos x}=\\frac{1/3}{-2\\sqrt2/3}=-\\frac{1}{2\\sqrt2}\\)"
+              "work": "\\(\\tan x = \\frac{\\sin x}{\\cos x} = \\frac{\\frac{1}{3}}{-\\frac{2\\sqrt{2}}{3}} = -\\frac{1}{2\\sqrt{2}}\\)"
             },
             {
               "explain": "State the exact value with its quadrant-consistent negative sign.",
-              "work": "\\(\\boxed{\\tan x=-\\frac{1}{2\\sqrt2}}\\)"
+              "work": "\\(\\boxed{\\tan x = -\\frac{1}{2\\sqrt{2}}}\\)"
             }
           ]
         }

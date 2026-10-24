@@ -508,7 +508,7 @@
           "steps": [
             {
               "explain": "Differentiate the density on \\(0\\le x\\le 2\\).",
-              "work": "\\(f′(x)=\\frac34(2-2x)\\)"
+              "work": "\\(f'(x)=\\frac{3}{4}(2-2x)\\)"
             },
             {
               "explain": "Set the derivative to zero to locate the interior maximum.",

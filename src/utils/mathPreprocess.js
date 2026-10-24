@@ -135,6 +135,8 @@ const toDisplayText = (value, fallback = '', { currencyHtml = false } = {}) => {
   str = str.replace(/±/g, '\\pm');
   str = str.replace(/×/g, '\\times');
   str = str.replace(/÷/g, '\\div');
+  // Unicode prime (′ U+2032, ‵ U+2035) -> standard ASCII ' for KaTeX derivatives
+  str = str.replace(/[′‵]/g, "'");
   // Fix unrecognized \Colon macro from MathLive/DB
   str = str.replace(/\\Colon\b/g, '\\colon');
   // Replace \hexagon with \text{⬡} so KaTeX renders it as a white hexagon
@@ -346,6 +348,8 @@ const toDisplayText = (value, fallback = '', { currencyHtml = false } = {}) => {
 
       if (inner) {
         inner = healProseInMath(inner);
+        // Prevent '<' from being treated as an HTML tag by browser innerHTML
+        inner = inner.replace(/<([a-zA-Z])/g, '< $1');
         // We convert A / (B) into \frac{A}{B} WITHOUT wrapping in $, because we are already inside a block!
         // Braces { and } are excluded so group-enclosed powers like ^{1/(k+1)} don't have their opening brace swallowed
         inner = inner.replace(/([a-zA-Z0-9\.\,\[\]][a-zA-Z0-9\.\,\[\]\\]*)\s*\/\s*\(([^()]+)\)/g, '\\frac{$1}{$2}');
