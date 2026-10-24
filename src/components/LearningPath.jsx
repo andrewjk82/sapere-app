@@ -24,6 +24,7 @@ import { useCurriculumNote } from '../utils/useCurriculumNote';
 import { noteKeyForTopic } from '../utils/curriculumLocalNotes';
 import { loadLastStudy, saveLastStudy, shortChapterLabel, peekContinueStudy, consumeContinueStudy, peekOpenTopic, consumeOpenTopic } from '../utils/lastStudy';
 import { findTopicAfter } from '../utils/lessonTopics';
+import { recordTopicWriting } from '../utils/lessonWriting';
 import './learning-path.css';
 import { useSplitLayout } from '../utils/useSplitLayout';
 import { SplitPanes, SplitLayoutToggle } from './SplitPanes';
@@ -338,6 +339,12 @@ const LearningPath = ({ profile }) => {
     }
   };
 
+  // Writing on a topic's worksheet: autosave, and log the topic for today (Dashboard "Last lesson").
+  const onCurriculumInk = () => {
+    handleCurriculumInkChange();
+    recordTopicWriting(user?.uid, pdfPreview?.topicId);
+  };
+
   // Previous / next worksheet without closing: every topic with a PDF in the open chapters of this track, in path order.
   const worksheetSequence = useMemo(() => nodes
     .filter((n) => n.state !== 'locked' && Array.isArray(n.topics))
@@ -422,7 +429,7 @@ const LearningPath = ({ profile }) => {
     const hit = openTopicRequest.mode === 'next'
       ? findTopicAfter(nodes, openTopicRequest.topicIds)
       : nodes.flatMap((n) => (n.topics || []).map((t) => ({ chapter: n, topic: t })))
-        .find((e) => e.topic.id === openTopicRequest.topicIds[0]) || null;
+        .find((e) => openTopicRequest.topicIds.includes(e.topic.id)) || null;
     if (!hit) {
       const nextTrack = tracks.find((t) => !tried.keys.has(t.key));
       if (nextTrack) { setSelectedTrackKey(nextTrack.key); return; }
@@ -825,7 +832,7 @@ const LearningPath = ({ profile }) => {
                 second={(
                   <section aria-label="Personal working notes" style={{ flex: 1, minWidth: 0, minHeight: 0, overflow: 'hidden', display: 'flex', flexDirection: 'column', background: '#f8fafc' }}>
                     <div style={{ flex: 1, minHeight: 0, display: 'flex', position: 'relative', pointerEvents: curriculumNoteReady ? 'auto' : 'none' }}>
-                      <WorkingOutCanvas ref={curriculumCanvasRef} isSubmitted={false} hideTitle onInkChange={handleCurriculumInkChange} />
+                      <WorkingOutCanvas ref={curriculumCanvasRef} isSubmitted={false} hideTitle onInkChange={onCurriculumInk} />
                       {!curriculumNoteReady && (
                         <span style={{ position: 'absolute', right: 14, bottom: 12, fontSize: '0.72rem', fontWeight: 700, color: '#64748b' }}>Loading notes…</span>
                       )}

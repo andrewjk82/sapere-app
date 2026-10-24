@@ -87,7 +87,7 @@ export const consumeContinueStudy = (storage = session()) => {
 };
 
 // One-shot hand-off from the Dashboard's Next Lesson card: open a topic's worksheet (with this device's notes).
-// { topicIds, mode }: 'first' opens topicIds[0] (last lesson), 'next' the topic after the furthest of them (this lesson).
+// { topicIds, mode }: 'first' opens the earliest of them in curriculum order (last lesson), 'next' the topic after the furthest of them (this lesson).
 const OPEN_TOPIC_FLAG = 'sapere:openTopic:v1';
 export const requestOpenTopic = (topicIds, mode = 'first', storage = session()) => {
   try { storage.setItem(OPEN_TOPIC_FLAG, JSON.stringify({ topicIds, mode })); } catch { /* storage blocked: the tab still opens */ }

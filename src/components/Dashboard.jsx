@@ -27,6 +27,8 @@ import SprintDashboardCard from './sprint/SprintDashboardCard';
 import OnlineStudySessionCard from './OnlineStudySessionCard';
 import { getHomeworkItems, curriculumDocIdsForProfile } from '../utils/homework';
 import { findTopicAfter } from '../utils/lessonTopics';
+import { loadTopicWriting, mergeNoteDates, pickLastLessonTopics } from '../utils/lessonWriting';
+import { listTopicNoteDates } from '../utils/curriculumLocalNotes';
 import { loadLastStudy, continueCaption, requestContinueStudy, requestOpenTopic } from '../utils/lastStudy';
 
 // 카드에 마우스를 올리면 살짝 떠오르는 hover 효과 (Journey Map 카드와 동일한 느낌).
@@ -501,32 +503,48 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
     return rows;
   }, [isAdmin, weekPractice, calcEnabled, calcToday, studentSessions, profile?.examPrepEnabled, nextTermExam, setActiveTab]);
 
-  // Next Lesson card buttons. "Last lesson" = the most recent past lesson that
-  // recorded covered topics (e.g. 3A + 3B); its first topic's worksheet opens in
-  // Curriculum with this device's notes. "This lesson" = the topic after them (3C).
-  const lastLessonTopics = useMemo(() => {
+  // Next Lesson card buttons, from what the student wrote on this device: "Last lesson" = the topics
+  // they wrote notes on during their most recent lesson day (e.g. 3A + 3B); the earliest one's worksheet
+  // opens in Curriculum with those notes. "This lesson" = the topic after them (3C).
+  const lessonDates = useMemo(() => {
     const today = new Date().toLocaleDateString('en-CA');
-    const last = studentSessions
-      .filter((s) => s.date && s.date <= today && s.id !== nextLesson?.id
-        && Array.isArray(s.learnedTopics) && s.learnedTopics.some((t) => t?.id))
-      .sort((a, b) => b.date.localeCompare(a.date))[0];
-    return last ? last.learnedTopics.filter((t) => t?.id) : [];
+    return studentSessions.filter((s) => s.date && s.date <= today && s.id !== nextLesson?.id).map((s) => s.date);
   }, [studentSessions, nextLesson?.id]);
-  const topicCode = (t) => t.code || String(t.label || t.title || t.id).split(' · ')[0];
-  const lastLessonCaption = lastLessonTopics.map(topicCode).join(', ');
-  // Caption only — read from the curriculum Curriculum already saved on this device (no reads).
+  const [noteDates, setNoteDates] = useState([]);
+  useEffect(() => {
+    if (isAdmin || !user?.uid) return undefined;
+    let cancelled = false;
+    listTopicNoteDates().then((dates) => { if (!cancelled) setNoteDates(dates); });
+    return () => { cancelled = true; };
+  }, [isAdmin, user?.uid]);
+  const lastLessonTopicIds = useMemo(() => {
+    if (isAdmin || !user?.uid) return [];
+    const picked = pickLastLessonTopics(mergeNoteDates(loadTopicWriting(user.uid), noteDates), lessonDates);
+    return picked ? picked.topicIds : [];
+  }, [isAdmin, user?.uid, noteDates, lessonDates]);
+  // Captions only — from the curriculum Curriculum already saved on this device (no reads).
+  const cachedChapters = useMemo(() => curriculumDocIdsForProfile(profile || {})
+    .map((docId) => localCache.get(`curriculum-doc:v1:${docId}`)?.chapters)
+    .filter(Array.isArray), [profile]);
+  const lastLessonCaption = useMemo(() => {
+    if (lastLessonTopicIds.length === 0) return '';
+    const codes = new Map(cachedChapters.flat().flatMap((c) => c?.topics || []).map((t) => [t.id, t.code || t.title]));
+    const known = lastLessonTopicIds.map((id) => codes.get(id)).filter(Boolean);
+    return known.length === lastLessonTopicIds.length
+      ? known.join(', ')
+      : `${lastLessonTopicIds.length} topic${lastLessonTopicIds.length === 1 ? '' : 's'}`;
+  }, [lastLessonTopicIds, cachedChapters]);
   const thisLessonCaption = useMemo(() => {
-    if (lastLessonTopics.length === 0) return '';
-    const ids = lastLessonTopics.map((t) => t.id);
-    for (const docId of curriculumDocIdsForProfile(profile || {})) {
-      const hit = findTopicAfter(localCache.get(`curriculum-doc:v1:${docId}`)?.chapters, ids);
+    if (lastLessonTopicIds.length === 0) return '';
+    for (const chapters of cachedChapters) {
+      const hit = findTopicAfter(chapters, lastLessonTopicIds);
       if (hit) return hit.topic.code || hit.topic.title || '';
     }
-    return `After ${topicCode(lastLessonTopics[lastLessonTopics.length - 1])}`;
-  }, [lastLessonTopics, profile]);
+    return 'Next topic';
+  }, [lastLessonTopicIds, cachedChapters]);
   const openLessonTopic = (mode) => (e) => {
     e.stopPropagation();
-    requestOpenTopic(lastLessonTopics.map((t) => t.id), mode);
+    requestOpenTopic(lastLessonTopicIds, mode);
     setActiveTab?.('Curriculum');
   };
 
@@ -610,27 +628,27 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                   <div style={{ position: 'relative', display: 'flex', gap: 8, marginTop: 12 }}>
                     <button
                       type="button"
-                      disabled={lastLessonTopics.length === 0}
+                      disabled={lastLessonTopicIds.length === 0}
                       onClick={openLessonTopic('first')}
                       aria-label="Last lesson notes and PDF"
-                      style={{ flex: 1, minWidth: 0, display: 'flex', alignItems: 'center', gap: 8, minHeight: 44, padding: '6px 12px', borderRadius: 14, background: 'rgba(255,255,255,0.16)', border: '1px solid rgba(255,255,255,0.3)', color: '#fff', cursor: lastLessonTopics.length ? 'pointer' : 'default', opacity: lastLessonTopics.length ? 1 : 0.6, textAlign: 'left' }}
+                      style={{ flex: 1, minWidth: 0, display: 'flex', alignItems: 'center', gap: 8, minHeight: 44, padding: '6px 12px', borderRadius: 14, background: 'rgba(255,255,255,0.16)', border: '1px solid rgba(255,255,255,0.3)', color: '#fff', cursor: lastLessonTopicIds.length ? 'pointer' : 'default', opacity: lastLessonTopicIds.length ? 1 : 0.6, textAlign: 'left' }}
                     >
                       <FileText size={18} style={{ flexShrink: 0 }} />
                       <span style={{ minWidth: 0 }}>
                         <span style={{ display: 'block', fontWeight: 800, fontSize: '0.78rem', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>Last lesson notes</span>
-                        <span style={{ display: 'block', fontSize: '0.66rem', fontWeight: 600, color: 'rgba(255,255,255,0.8)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{lastLessonTopics.length ? `${lastLessonCaption} · Notes + PDF` : 'No lesson yet'}</span>
+                        <span style={{ display: 'block', fontSize: '0.66rem', fontWeight: 600, color: 'rgba(255,255,255,0.8)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{lastLessonTopicIds.length ? `${lastLessonCaption} · Notes + PDF` : 'No lesson yet'}</span>
                       </span>
                     </button>
                     <button
                       type="button"
-                      onClick={lastLessonTopics.length ? openLessonTopic('next') : goContinueStudying}
+                      onClick={lastLessonTopicIds.length ? openLessonTopic('next') : goContinueStudying}
                       aria-label={thisLessonCaption ? `This lesson: ${thisLessonCaption}` : 'Open curriculum'}
                       style={{ flex: 1, minWidth: 0, display: 'flex', alignItems: 'center', gap: 8, minHeight: 44, padding: '6px 12px', borderRadius: 14, border: 0, background: 'rgba(255,255,255,0.95)', color: '#4f46e5', cursor: 'pointer', boxShadow: '0 2px 8px rgba(30,27,75,0.2)', textAlign: 'left' }}
                     >
                       <BookOpen size={18} style={{ flexShrink: 0 }} />
                       <span style={{ minWidth: 0 }}>
                         <span style={{ display: 'block', fontWeight: 800, fontSize: '0.78rem', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>This lesson</span>
-                        <span style={{ display: 'block', fontSize: '0.66rem', fontWeight: 600, color: '#6366f1', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{lastLessonTopics.length ? thisLessonCaption : (continueLabel || 'Curriculum')}</span>
+                        <span style={{ display: 'block', fontSize: '0.66rem', fontWeight: 600, color: '#6366f1', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{lastLessonTopicIds.length ? thisLessonCaption : (continueLabel || 'Curriculum')}</span>
                       </span>
                     </button>
                   </div>

@@ -147,6 +147,30 @@ export const migrateExt2Notes = () => {
   return ext2NotesPromise;
 };
 
+// Every `topic:<id>` note on this device with the local date it was last saved → [{ topicId, date }].
+export const listTopicNoteDates = async () => {
+  try {
+    const db = await openDb();
+    return await new Promise((resolve, reject) => {
+      const tx = db.transaction(STORE, 'readonly');
+      const out = [];
+      const cursorRequest = tx.objectStore(STORE).openCursor();
+      cursorRequest.onsuccess = () => {
+        const cursor = cursorRequest.result;
+        if (!cursor) { resolve(out); return; }
+        const updatedAt = Number(cursor.value?.updatedAt) || 0;
+        if (String(cursor.key).startsWith('topic:') && updatedAt > 0) {
+          out.push({ topicId: String(cursor.key).slice('topic:'.length), date: new Date(updatedAt).toLocaleDateString('en-CA') });
+        }
+        cursor.continue();
+      };
+      cursorRequest.onerror = () => reject(cursorRequest.error);
+    });
+  } catch {
+    return [];
+  }
+};
+
 export const loadCurriculumNote = read;
 export const loadLegacyCurriculumNote = findLegacyNote;
 export const loadCurriculumNoteChecked = readChecked;
