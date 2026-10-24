@@ -67,3 +67,20 @@ recurring student-facing problems the user has reported across Years 7–10.
 - For imports with explicit settings, apply the requested timer and XP to every
   leaf question. If the standing request is 60 seconds and 1 XP, enforce that
   consistently across parents and children as appropriate.
+
+## Scanned assessment imports
+
+- When a source PDF is scanned or combines question pages and worked-solution
+  pages, inspect each page image and its matching solution page; OCR is only a
+  locator. Preserve source page/question/part metadata so repeated printed
+  question numbers cannot collide.
+- Recalculate every answer independently from the printed data. Treat a worked
+  solution as supporting evidence, not ground truth; correct arithmetic and
+  percentage-language interpretation when the source solution is wrong.
+- If a source graph or figure is genuinely missing from the scan, reconstruct it
+  only when the surviving prompt and worked solution uniquely determine it.
+  Mark the reconstruction in metadata and tell the user which figure was
+  reconstructed.
+- Place each item in the closest matching existing topic. Do not group
+  unrelated subparts from different topics into one multipart parent simply
+  because the source labels them with the same question number.
