@@ -5,18 +5,13 @@ import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { getManifest } from '../services/contentLoader';
 import { enabledScholarshipExams } from '../utils/scholarshipExams';
 import { useAuth } from '../context/AuthContext';
-import TopicPracticeSession, { lsTopicKey } from './TopicPracticeSession';
-
-const progressOf = (uid, chapterId, topicId) => {
-  try {
-    const meta = JSON.parse(localStorage.getItem(`${lsTopicKey(uid, chapterId, topicId)}:meta`));
-    return Number(meta?.progress) || 0;
-  } catch { return 0; }
-};
+import ScholarshipTest from './ScholarshipTest';
+import { loadTestState } from '../utils/scholarshipTest';
 
 /**
- * Scholarship practice (ACER, Selective…): untimed practice topic by topic, with answers and explanations after
- * each question. Turned on per student by the teacher (`scholarshipEnabled`); separate from Daily Practice and Exam Prep.
+ * Scholarship (ACER, Selective…): 10-question timed tests per topic from questions the student hasn't done, with
+ * answers, solutions and scores kept on the device for review (ScholarshipTest). Turned on per student by the teacher
+ * (`scholarshipEnabled`); separate from Daily Practice and Exam Prep.
  */
 const Scholarship = ({ profile }) => {
   const { user } = useAuth();
@@ -48,7 +43,7 @@ const Scholarship = ({ profile }) => {
   if (selected) {
     return (
       <AnimatePresence mode="wait">
-        <TopicPracticeSession
+        <ScholarshipTest
           key={selected.topic.id}
           topic={selected.topic}
           chapter={selected.chapter}
@@ -70,7 +65,7 @@ const Scholarship = ({ profile }) => {
         <h2 style={{ margin: 0, fontSize: '1.5rem', fontWeight: 900, color: '#1e1b4b', fontFamily: 'var(--font-heading)' }}>Scholarship</h2>
       </div>
       <p style={{ margin: '0 0 22px', color: '#64748b', fontWeight: 600, fontSize: '0.92rem' }}>
-        Practise at your own pace — no timer. You see the answer and the explanation after every question.
+        Tests of 10 questions you haven&apos;t done yet, 12 minutes each. See your score, answers and solutions after you submit.
       </p>
 
       {exams.map((exam) => (
@@ -79,7 +74,9 @@ const Scholarship = ({ profile }) => {
           {(exam.topics || []).map((topic) => {
             const count = counts ? (counts[exam.id]?.[topic.id] ?? 0) : null;
             const empty = count === 0;
-            const pct = user?.uid ? progressOf(user.uid, exam.id, topic.id) : 0;
+            const test = user?.uid ? loadTestState(user.uid, exam.id, topic.id) : null;
+            const done = test ? Math.min(test.done.length, count || 0) : 0;
+            const last = test?.attempts?.[test.attempts.length - 1];
             return (
               <button
                 key={topic.id}
@@ -94,7 +91,7 @@ const Scholarship = ({ profile }) => {
                 <div style={{ flex: 1, minWidth: 0 }}>
                   <div style={{ fontWeight: 800, color: '#1e1b4b', fontSize: '0.98rem' }}>{topic.title}</div>
                   <div style={{ fontSize: '0.76rem', fontWeight: 700, color: '#94a3b8', marginTop: 2 }}>
-                    {count === null ? 'Loading…' : empty ? 'Coming soon' : `${count} question${count === 1 ? '' : 's'}${pct > 0 ? ` · ${pct}% done` : ''}`}
+                    {count === null ? 'Loading…' : empty ? 'Coming soon' : `${count} question${count === 1 ? '' : 's'}${done > 0 ? ` · ${done} done` : ''}${(test?.round || 1) > 1 ? ` · Round ${test.round}` : ''}${last ? ` · last ${last.marks}/${last.total}` : ''}`}
                   </div>
                 </div>
                 {empty ? <Lock size={16} color="#cbd5e1" /> : count !== null && <ChevronRight size={18} color="#a78bfa" />}
