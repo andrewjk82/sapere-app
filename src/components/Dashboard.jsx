@@ -25,9 +25,9 @@ import JourneyMapSnapshot from './JourneyMapSnapshot';
 import MedalShelf from './MedalShelf';
 import SprintDashboardCard from './sprint/SprintDashboardCard';
 import OnlineStudySessionCard from './OnlineStudySessionCard';
-import { getHomeworkItems, toDriveOpenUrl } from '../utils/homework';
-import { loadTopicPdfMap } from '../services/homeworkService';
-import { loadLastStudy, continueCaption, requestContinueStudy } from '../utils/lastStudy';
+import { getHomeworkItems, curriculumDocIdsForProfile } from '../utils/homework';
+import { findTopicAfter } from '../utils/lessonTopics';
+import { loadLastStudy, continueCaption, requestContinueStudy, requestOpenTopic } from '../utils/lastStudy';
 
 // 카드에 마우스를 올리면 살짝 떠오르는 hover 효과 (Journey Map 카드와 동일한 느낌).
 const liftHover = {
@@ -501,35 +501,34 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
     return rows;
   }, [isAdmin, weekPractice, calcEnabled, calcToday, studentSessions, profile?.examPrepEnabled, nextTermExam, setActiveTab]);
 
-  // Next Lesson card: the most recent past lesson that recorded topics or notes
-  // ("Last lesson notes" opens it in the lesson modal, with its topic PDFs).
-  const lastLesson = useMemo(() => {
+  // Next Lesson card buttons. "Last lesson" = the most recent past lesson that
+  // recorded covered topics (e.g. 3A + 3B); its first topic's worksheet opens in
+  // Curriculum with this device's notes. "This lesson" = the topic after them (3C).
+  const lastLessonTopics = useMemo(() => {
     const today = new Date().toLocaleDateString('en-CA');
-    return studentSessions
+    const last = studentSessions
       .filter((s) => s.date && s.date <= today && s.id !== nextLesson?.id
-        && ((Array.isArray(s.learnedTopics) && s.learnedTopics.length > 0) || String(s.notes || '').trim()))
-      .sort((a, b) => b.date.localeCompare(a.date))[0] || null;
+        && Array.isArray(s.learnedTopics) && s.learnedTopics.some((t) => t?.id))
+      .sort((a, b) => b.date.localeCompare(a.date))[0];
+    return last ? last.learnedTopics.filter((t) => t?.id) : [];
   }, [studentSessions, nextLesson?.id]);
-  const lastLessonCaption = useMemo(() => {
-    const topics = (lastLesson?.learnedTopics || [])
-      .map((t) => (typeof t === 'string' ? t : (t?.label || t?.title || '')))
-      .filter(Boolean);
-    if (topics.length === 0) return lastLesson ? lastLesson.date : '';
-    return topics.length > 1 ? `${topics[0]} +${topics.length - 1}` : topics[0];
-  }, [lastLesson]);
-
-  // Topic worksheet PDFs for the lesson modal — 1–2 curriculum reads, only when
-  // a lesson with covered topics is opened, then kept for this visit.
-  const [topicPdfMap, setTopicPdfMap] = useState(null);
-  const modalHasTopics = Array.isArray(selectedViewSession?.learnedTopics) && selectedViewSession.learnedTopics.length > 0;
-  useEffect(() => {
-    if (isAdmin || !modalHasTopics || topicPdfMap || !profile) return undefined;
-    let cancelled = false;
-    loadTopicPdfMap(profile)
-      .then((map) => { if (!cancelled) setTopicPdfMap(map || {}); })
-      .catch((err) => console.warn('topic pdf map failed:', err?.code || err));
-    return () => { cancelled = true; };
-  }, [isAdmin, modalHasTopics, topicPdfMap, profile]);
+  const topicCode = (t) => t.code || String(t.label || t.title || t.id).split(' · ')[0];
+  const lastLessonCaption = lastLessonTopics.map(topicCode).join(', ');
+  // Caption only — read from the curriculum Curriculum already saved on this device (no reads).
+  const thisLessonCaption = useMemo(() => {
+    if (lastLessonTopics.length === 0) return '';
+    const ids = lastLessonTopics.map((t) => t.id);
+    for (const docId of curriculumDocIdsForProfile(profile || {})) {
+      const hit = findTopicAfter(localCache.get(`curriculum-doc:v1:${docId}`)?.chapters, ids);
+      if (hit) return hit.topic.code || hit.topic.title || '';
+    }
+    return `After ${topicCode(lastLessonTopics[lastLessonTopics.length - 1])}`;
+  }, [lastLessonTopics, profile]);
+  const openLessonTopic = (mode) => (e) => {
+    e.stopPropagation();
+    requestOpenTopic(lastLessonTopics.map((t) => t.id), mode);
+    setActiveTab?.('Curriculum');
+  };
 
   const getGreeting = () => {
     const hour = new Date().getHours();
@@ -611,27 +610,27 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                   <div style={{ position: 'relative', display: 'flex', gap: 8, marginTop: 12 }}>
                     <button
                       type="button"
-                      disabled={!lastLesson}
-                      onClick={(e) => { e.stopPropagation(); if (lastLesson) setSelectedViewSession(lastLesson); }}
+                      disabled={lastLessonTopics.length === 0}
+                      onClick={openLessonTopic('first')}
                       aria-label="Last lesson notes and PDF"
-                      style={{ flex: 1, minWidth: 0, display: 'flex', alignItems: 'center', gap: 8, minHeight: 44, padding: '6px 12px', borderRadius: 14, background: 'rgba(255,255,255,0.16)', border: '1px solid rgba(255,255,255,0.3)', color: '#fff', cursor: lastLesson ? 'pointer' : 'default', opacity: lastLesson ? 1 : 0.6, textAlign: 'left' }}
+                      style={{ flex: 1, minWidth: 0, display: 'flex', alignItems: 'center', gap: 8, minHeight: 44, padding: '6px 12px', borderRadius: 14, background: 'rgba(255,255,255,0.16)', border: '1px solid rgba(255,255,255,0.3)', color: '#fff', cursor: lastLessonTopics.length ? 'pointer' : 'default', opacity: lastLessonTopics.length ? 1 : 0.6, textAlign: 'left' }}
                     >
                       <FileText size={18} style={{ flexShrink: 0 }} />
                       <span style={{ minWidth: 0 }}>
                         <span style={{ display: 'block', fontWeight: 800, fontSize: '0.78rem', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>Last lesson notes</span>
-                        <span style={{ display: 'block', fontSize: '0.66rem', fontWeight: 600, color: 'rgba(255,255,255,0.8)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{lastLesson ? `${lastLessonCaption} · Notes + PDF` : 'No lesson yet'}</span>
+                        <span style={{ display: 'block', fontSize: '0.66rem', fontWeight: 600, color: 'rgba(255,255,255,0.8)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{lastLessonTopics.length ? `${lastLessonCaption} · Notes + PDF` : 'No lesson yet'}</span>
                       </span>
                     </button>
                     <button
                       type="button"
-                      onClick={goContinueStudying}
-                      aria-label={continueLabel ? `This lesson: ${continueLabel}` : 'Open curriculum'}
+                      onClick={lastLessonTopics.length ? openLessonTopic('next') : goContinueStudying}
+                      aria-label={thisLessonCaption ? `This lesson: ${thisLessonCaption}` : 'Open curriculum'}
                       style={{ flex: 1, minWidth: 0, display: 'flex', alignItems: 'center', gap: 8, minHeight: 44, padding: '6px 12px', borderRadius: 14, border: 0, background: 'rgba(255,255,255,0.95)', color: '#4f46e5', cursor: 'pointer', boxShadow: '0 2px 8px rgba(30,27,75,0.2)', textAlign: 'left' }}
                     >
                       <BookOpen size={18} style={{ flexShrink: 0 }} />
                       <span style={{ minWidth: 0 }}>
                         <span style={{ display: 'block', fontWeight: 800, fontSize: '0.78rem', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>This lesson</span>
-                        <span style={{ display: 'block', fontSize: '0.66rem', fontWeight: 600, color: '#6366f1', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{continueLabel || 'Curriculum'}</span>
+                        <span style={{ display: 'block', fontSize: '0.66rem', fontWeight: 600, color: '#6366f1', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{lastLessonTopics.length ? thisLessonCaption : (continueLabel || 'Curriculum')}</span>
                       </span>
                     </button>
                   </div>
@@ -915,16 +914,10 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                       {selectedViewSession.learnedTopics.map((t, i) => {
                         const text = typeof t === 'string' ? t : (t.label || t.title || t.topicTitle || '');
                         if (!text) return null;
-                        const pdfUrl = typeof t === 'object' && t?.id ? topicPdfMap?.[t.id] : null;
                         return (
                           <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', background: '#f0fdf4', border: '1px solid #dcfce7', borderRadius: '12px', padding: '10px 14px' }}>
                             <CheckCircle2 size={18} style={{ color: '#16a34a', flexShrink: 0 }} />
-                            <span style={{ flex: 1, fontWeight: 700, color: '#1e1b4b', fontSize: '0.92rem', lineHeight: 1.4 }}>{text}</span>
-                            {pdfUrl && (
-                              <a href={toDriveOpenUrl(pdfUrl)} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: 4, padding: '4px 10px', borderRadius: 999, background: '#fff', border: '1px solid #bbf7d0', color: '#15803d', fontWeight: 800, fontSize: '0.75rem', textDecoration: 'none', flexShrink: 0 }}>
-                                <FileText size={13} /> PDF
-                              </a>
-                            )}
+                            <span style={{ fontWeight: 700, color: '#1e1b4b', fontSize: '0.92rem', lineHeight: 1.4 }}>{text}</span>
                           </div>
                         );
                       })}

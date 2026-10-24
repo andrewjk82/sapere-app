@@ -80,6 +80,17 @@ export const findNextTopic = (options = [], previousTopics = [], selectedIds = n
   return null;
 };
 
+// The topic right after the furthest of `topicIds` in one track's chapters
+// (curriculum order), e.g. last lesson covered 3A + 3B → 3C. → { chapter, topic } | null
+export const findTopicAfter = (chapters = [], topicIds = []) => {
+  const flat = (Array.isArray(chapters) ? chapters : [])
+    .flatMap((chapter) => (Array.isArray(chapter?.topics) ? chapter.topics : []).map((topic) => ({ chapter, topic })));
+  const wanted = new Set(topicIds);
+  let last = -1;
+  flat.forEach((e, i) => { if (wanted.has(e.topic?.id)) last = i; });
+  return last >= 0 && flat[last + 1] ? flat[last + 1] : null;
+};
+
 // The session's `homework` text is still what emails and the weekly report
 // show, so it is composed on save: one line per covered topic, then the
 // teacher's extra note. Opening a session splits it back apart.

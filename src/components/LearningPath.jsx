@@ -22,7 +22,8 @@ import PdfViewer from './PdfViewer';
 import WorkingOutCanvas from './WorkingOutCanvas';
 import { useCurriculumNote } from '../utils/useCurriculumNote';
 import { noteKeyForTopic } from '../utils/curriculumLocalNotes';
-import { loadLastStudy, saveLastStudy, shortChapterLabel, peekContinueStudy, consumeContinueStudy } from '../utils/lastStudy';
+import { loadLastStudy, saveLastStudy, shortChapterLabel, peekContinueStudy, consumeContinueStudy, peekOpenTopic, consumeOpenTopic } from '../utils/lastStudy';
+import { findTopicAfter } from '../utils/lessonTopics';
 import './learning-path.css';
 import { useSplitLayout } from '../utils/useSplitLayout';
 import { SplitPanes, SplitLayoutToggle } from './SplitPanes';
@@ -406,6 +407,32 @@ const LearningPath = ({ profile }) => {
     consumeContinueStudy();
     if (canContinue) continueStudying();
   }, [continueRequested, loading, user?.uid, lastStudy, canContinue]); // eslint-disable-line react-hooks/exhaustive-deps -- runs once; continueStudying is rebuilt every render
+
+  // Dashboard Next Lesson buttons: open last lesson's first topic, or the topic after it, as a worksheet
+  // (this device's notes come with it). The topic may sit in another track: try each track once.
+  const [openTopicRequest] = useState(peekOpenTopic);
+  const openTopicHandledRef = useRef(false);
+  const openTopicTriedRef = useRef({ keys: new Set(), curriculum: null });
+  useEffect(() => {
+    if (!openTopicRequest || openTopicHandledRef.current || loading) return;
+    const tried = openTopicTriedRef.current;
+    if (tried.curriculum === curriculum) return; // this track's chapters not loaded yet
+    tried.curriculum = curriculum;
+    tried.keys.add(activeTrack.key);
+    const hit = openTopicRequest.mode === 'next'
+      ? findTopicAfter(nodes, openTopicRequest.topicIds)
+      : nodes.flatMap((n) => (n.topics || []).map((t) => ({ chapter: n, topic: t })))
+        .find((e) => e.topic.id === openTopicRequest.topicIds[0]) || null;
+    if (!hit) {
+      const nextTrack = tracks.find((t) => !tried.keys.has(t.key));
+      if (nextTrack) { setSelectedTrackKey(nextTrack.key); return; }
+    }
+    openTopicHandledRef.current = true;
+    consumeOpenTopic();
+    if (!hit) return;
+    if (toDrivePreviewUrl(hit.topic.homeworkPdfUrl)) openWorksheet(activeTrack.key, hit.chapter, hit.topic);
+    else if (hit.chapter.state !== 'locked') setSelectedChapter({ chapter: hit.chapter, state: hit.chapter.state });
+  }, [openTopicRequest, loading, curriculum, nodes, tracks, activeTrack.key]); // eslint-disable-line react-hooks/exhaustive-deps -- openWorksheet is rebuilt every render
 
   if (loading) return <div className="app-loading"><div className="app-spinner" /></div>;
 

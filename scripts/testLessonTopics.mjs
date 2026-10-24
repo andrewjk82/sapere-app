@@ -4,7 +4,7 @@
 import assert from 'node:assert';
 import {
   groupMeta, groupTopicOptions, topicChipLabel, findPreviousCoveredSession, findNextTopic,
-  splitHomeworkExtra, composeHomework,
+  splitHomeworkExtra, composeHomework, findTopicAfter,
 } from '../src/utils/lessonTopics.js';
 
 let passed = 0;
@@ -54,6 +54,19 @@ test('next topic skips completed and picked ones, stays in the group', () => {
   assert.equal(findNextTopic(options, [{ id: 'y7-1A' }], new Set(['y7-1C'])).id, 'y7-2A');
   assert.equal(findNextTopic(options, [{ id: 'y7-2A' }]), null);
   assert.equal(findNextTopic(options, [{ id: 'gone' }]), null);
+});
+
+test('topic after the last lesson: next in curriculum order, across chapters', () => {
+  const chapters = [
+    { id: 'c3', topics: [{ id: '3A' }, { id: '3B' }, { id: '3C' }] },
+    { id: 'c4', topics: [{ id: '4A' }] },
+  ];
+  assert.equal(findTopicAfter(chapters, ['3A', '3B']).topic.id, '3C');
+  assert.equal(findTopicAfter(chapters, ['3B', '3A']).topic.id, '3C');
+  assert.equal(findTopicAfter(chapters, ['3C']).chapter.id, 'c4');
+  assert.equal(findTopicAfter(chapters, ['4A']), null);
+  assert.equal(findTopicAfter(chapters, ['gone']), null);
+  assert.equal(findTopicAfter(undefined, ['3A']), null);
 });
 
 test('homework text: topic lines + extra note, and split back apart', () => {

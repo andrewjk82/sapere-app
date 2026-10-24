@@ -2,7 +2,7 @@
  * "Continue studying" storage helpers. Run via npm run test:last-study.
  */
 import assert from 'node:assert';
-import { loadLastStudy, saveLastStudy, mergeLastStudy, shortChapterLabel, continueCaption, requestContinueStudy, peekContinueStudy, consumeContinueStudy } from '../src/utils/lastStudy.js';
+import { loadLastStudy, saveLastStudy, mergeLastStudy, shortChapterLabel, continueCaption, requestContinueStudy, peekContinueStudy, consumeContinueStudy, requestOpenTopic, peekOpenTopic, consumeOpenTopic } from '../src/utils/lastStudy.js';
 
 let passed = 0;
 const test = (name, fn) => { fn(); passed += 1; console.log(`  ✓ ${name}`); };
@@ -98,6 +98,21 @@ test('continue flag: one shot, survives a peek, safe without storage', () => {
   const broken = { getItem: () => { throw new Error('x'); }, setItem: () => { throw new Error('x'); }, removeItem: () => { throw new Error('x'); } };
   assert.doesNotThrow(() => requestContinueStudy(broken));
   assert.equal(consumeContinueStudy(broken), false);
+});
+
+test('open-topic hand-off: one-shot, ids + mode, survives blocked storage', () => {
+  const data = {};
+  const store = { getItem: (k) => (k in data ? data[k] : null), setItem: (k, v) => { data[k] = String(v); }, removeItem: (k) => { delete data[k]; } };
+  assert.equal(peekOpenTopic(store), null);
+  requestOpenTopic(['3A', '3B'], 'next', store);
+  assert.deepEqual(peekOpenTopic(store), { topicIds: ['3A', '3B'], mode: 'next' });
+  assert.deepEqual(consumeOpenTopic(store), { topicIds: ['3A', '3B'], mode: 'next' });
+  assert.equal(consumeOpenTopic(store), null);
+  requestOpenTopic([], 'first', store);
+  assert.equal(peekOpenTopic(store), null);
+  const broken = { getItem: () => { throw new Error('x'); }, setItem: () => { throw new Error('x'); }, removeItem: () => { throw new Error('x'); } };
+  assert.doesNotThrow(() => requestOpenTopic(['3A'], 'first', broken));
+  assert.equal(consumeOpenTopic(broken), null);
 });
 
 console.log(`\nlast study: ${passed} passed`);

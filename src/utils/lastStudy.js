@@ -85,3 +85,24 @@ export const consumeContinueStudy = (storage = session()) => {
   try { storage.removeItem(CONTINUE_FLAG); } catch { /* nothing to clear */ }
   return wanted;
 };
+
+// One-shot hand-off from the Dashboard's Next Lesson card: open a topic's worksheet (with this device's notes).
+// { topicIds, mode }: 'first' opens topicIds[0] (last lesson), 'next' the topic after the furthest of them (this lesson).
+const OPEN_TOPIC_FLAG = 'sapere:openTopic:v1';
+export const requestOpenTopic = (topicIds, mode = 'first', storage = session()) => {
+  try { storage.setItem(OPEN_TOPIC_FLAG, JSON.stringify({ topicIds, mode })); } catch { /* storage blocked: the tab still opens */ }
+};
+export const peekOpenTopic = (storage = session()) => {
+  try {
+    const raw = JSON.parse(storage.getItem(OPEN_TOPIC_FLAG));
+    const topicIds = Array.isArray(raw?.topicIds) ? raw.topicIds.filter((id) => typeof id === 'string' && id) : [];
+    return topicIds.length ? { topicIds, mode: raw.mode === 'next' ? 'next' : 'first' } : null;
+  } catch {
+    return null;
+  }
+};
+export const consumeOpenTopic = (storage = session()) => {
+  const wanted = peekOpenTopic(storage);
+  try { storage.removeItem(OPEN_TOPIC_FLAG); } catch { /* nothing to clear */ }
+  return wanted;
+};
