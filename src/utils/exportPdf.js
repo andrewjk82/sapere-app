@@ -112,6 +112,26 @@ const stripSvgSize = (svg) =>
     openingTag.replace(/\s+(?:width|height)\s*=\s*(?:"[^"]*"|'[^']*')/gi, ''));
 
 /**
+ * Scanned-figure questions (ACER / Selective) wrap one picture in an SVG:
+ * <svg viewBox…><image href="/acer/m-q1.jpg"/></svg>. The print window is
+ * about:blank, so the site-relative href resolves to nothing, and html2canvas
+ * draws an inline SVG as an image that may not load external files anyway —
+ * the figure printed as a blank box (2026-10). Print such a figure as a plain
+ * <img> with an absolute URL instead.
+ */
+const SINGLE_IMAGE_SVG = /^\s*<svg\b[^>]*>\s*<image\b[^>]*\bhref="([^"]+)"[^>]*\/>\s*<\/svg>\s*$/i;
+const absoluteUrl = (href) => {
+  if (/^(data:|https?:)/i.test(href)) return href;
+  const origin = typeof window !== 'undefined' && window.location ? window.location.origin : '';
+  return origin + (href.startsWith('/') ? href : `/${href}`);
+};
+export const diagramHtml = (svg) => {
+  const single = svg.match(SINGLE_IMAGE_SVG);
+  if (single) return `<img class="diagram-img" src="${absoluteUrl(single[1])}" alt="">`;
+  return stripSvgSize(svg);
+};
+
+/**
  * Build the option letter (A, B, C, D …)
  */
 const optLetter = (i) => String.fromCharCode(65 + i);
@@ -176,7 +196,7 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, rea
     }
     const diagramSvg = graphData?.svg || graphData?.diagramSvg || graphData?.svgSnapshot;
     if (typeof diagramSvg === 'string' && diagramSvg.trim().startsWith('<svg')) {
-      questionsHtml += `<div class="question-diagram">${stripSvgSize(diagramSvg)}</div>`;
+      questionsHtml += `<div class="question-diagram">${diagramHtml(diagramSvg)}</div>`;
     }
 
     // Sub-questions
@@ -725,6 +745,12 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, rea
     .question-diagram {
       margin: 4px 0 16px;
       text-align: center;
+    }
+
+    .question-diagram .diagram-img {
+      max-width: 100%;
+      max-height: 420px;
+      height: auto;
     }
 
     .question-diagram svg {

@@ -20,3 +20,13 @@ const t = splitMarkdownTables(q.stem).find((s) => s.type === 'table');
 assert.ok(t, 'table parsed');
 assert.equal(t.headers.length, 3);
 console.log('markdown tables: passed', t.rows.length, 'rows');
+
+// Scanned-figure SVGs print as a plain <img> with an absolute URL.
+globalThis.window = { location: { origin: 'https://sapere-app.vercel.app' } };
+const { diagramHtml } = await import('../src/utils/exportPdf.js');
+assert.equal(
+  diagramHtml('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 593" width="100%" height="auto"><image href="/acer/m-q1.jpg" x="0" y="0" width="1200" height="593"/></svg>'),
+  '<img class="diagram-img" src="https://sapere-app.vercel.app/acer/m-q1.jpg" alt="">',
+);
+assert.ok(diagramHtml('<svg viewBox="0 0 10 10"><line x1="0" y1="0" x2="1" y2="1"/></svg>').startsWith('<svg'));
+console.log('diagram images: passed');
