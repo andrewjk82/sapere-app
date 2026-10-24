@@ -4737,24 +4737,26 @@
           "meta": {
             "source": "Amity 2020 Mathematics Advanced HSC Trial",
             "school": "Amity",
-            "sourceYear": 2020
+            "sourceYear": 2020,
+            "sourcePage": "4",
+            "sourceQuestion": 1
           },
           "id": "amity2020-ma-q01",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Solve \\(4^{3x+1}=8^x\\).",
+          "stem": "What is the value of \\(x\\) for which \\(4^{3x+1}=8^x\\)?",
           "options": [
+            "\\(x=-\\frac23\\)",
             "\\(x=2\\)",
             "\\(x=\\frac32\\)",
-            "\\(x=-\\frac23\\)",
             "\\(x=-\\frac32\\)"
           ],
-          "answer": 2,
+          "answer": 0,
           "hint": "Rewrite 4 and 8 as powers of 2, then equate exponents.",
           "keyPoints": [
             {
-              "text": "\\(4^{3x+1}=8^x\\)",
-              "note": "Make the exponential bases the same before comparing powers."
+              "text": "What is the value of \\(x\\) for which \\(4^{3x+1}=8^x\\)?",
+              "note": "Identify the given information in this exact phrase first, then connect it to the rule or calculation shown in the solution."
             }
           ],
           "steps": [
@@ -4920,7 +4922,9 @@
           "meta": {
             "source": "Amity 2020 Mathematics Advanced HSC Trial",
             "school": "Amity",
-            "sourceYear": 2020
+            "sourceYear": 2020,
+            "sourcePage": "16",
+            "sourceQuestion": 24
           },
           "id": "amity2020-ma-q24",
           "type": "mc",
@@ -4929,15 +4933,15 @@
           "options": [
             "\\(x=-1\\)",
             "\\(x=1\\)",
-            "\\(x=3\\)",
-            "\\(x=-1\\text{ or }3\\)"
+            "\\(x=-1\\text{ or }3\\)",
+            "\\(x=3\\)"
           ],
-          "answer": 2,
+          "answer": 3,
           "hint": "First note x>0, then combine 2 ln x as ln(x²).",
           "keyPoints": [
             {
-              "text": "\\ln(2x+3)=2\\ln x",
-              "note": "Reject any algebraic root that is outside the logarithm’s domain."
+              "text": "Solve \\(\\ln(2x+3)=2\\ln x\\).",
+              "note": "Identify the given information in this exact phrase first, then connect it to the rule or calculation shown in the solution."
             }
           ],
           "steps": [
@@ -5049,24 +5053,26 @@
           "meta": {
             "source": "Amity 2020 Mathematics Advanced HSC Trial",
             "school": "Amity",
-            "sourceYear": 2020
+            "sourceYear": 2020,
+            "sourcePage": "5",
+            "sourceQuestion": 6
           },
           "id": "amity2020-ma-q06",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Find the range of \\(f(x)=4-e^{2x-2}\\).",
+          "stem": "What is the range of the function \\(f(x)=4-e^{2x-2}\\)?",
           "options": [
-            "\\((-\\infty,4)\\)",
             "\\((-\\infty,4]\\)",
             "\\((4,\\infty)\\)",
+            "\\((-\\infty,4)\\)",
             "\\([4,\\infty)\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "An exponential is always positive, but it can get arbitrarily close to zero.",
           "keyPoints": [
             {
-              "text": "\\(f(x)=4-e^{2x-2}\\)",
-              "note": "Check whether the endpoint 4 can actually be reached."
+              "text": "What is the range of the function \\(f(x)=4-e^{2x-2}\\)?",
+              "note": "Identify the given information in this exact phrase first, then connect it to the rule or calculation shown in the solution."
             }
           ],
           "steps": [
