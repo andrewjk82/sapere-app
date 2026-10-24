@@ -2632,10 +2632,7 @@
             },
             {
               "explain": "Values outside the fences are approximate outliers.",
-              "work": "\\(\\boxed{z\\lt -2.68\\text{ or }z\\gt 2.68}\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"50%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif;height:auto;max-width:100%\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"65\" y1=\"260\" x2=\"545\" y2=\"260\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><path d=\"M75 255 C125 244 155 205 195 141 C225 93 255 70 300 68 C345 70 375 93 405 141 C445 205 475 244 535 255\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M300 68 C345 70 375 93 405 141 L405 260 L300 260 Z\" fill=\"#6366f1\" fill-opacity=\".22\"/><line x1=\"300\" y1=\"68\" x2=\"300\" y2=\"260\" stroke=\"#64748b\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"405\" y1=\"141\" x2=\"405\" y2=\"260\" stroke=\"#6366f1\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"300\" y=\"284\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0</text><text x=\"405\" y=\"284\" fill=\"#4f46e5\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0.67</text><text x=\"356\" y=\"213\" fill=\"#4f46e5\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">area ≈ 0.25</text><text x=\"522\" y=\"248\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">z</text></svg>"
-              }
+              "work": "\\(\\boxed{z\\lt -2.68\\text{ or }z\\gt 2.68}\\)"
             }
           ],
           "figure": {
