@@ -1712,7 +1712,7 @@
             }
           ],
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 230\" width=\"100%\" height=\"auto\"><g fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.5\"><path d=\"M55 45h60l-5 28H60z\"/><path d=\"M57 72h60l-5 28H62z\"/><path d=\"M59 99h60l-5 28H64z\"/><path d=\"M61 126h60l-5 28H66z\"/><path d=\"M190 32h60l-5 28h-50z\"/><path d=\"M192 58h60l-5 28h-50z\"/><path d=\"M194 84h60l-5 28h-50z\"/><path d=\"M196 110h60l-5 28h-50z\"/><path d=\"M198 136h60l-5 28h-50z\"/><path d=\"M200 162h60l-5 18h-50z\"/></g><text x=\"68\" y=\"174\" font-size=\"12\">4 cups: 20 cm</text><text x=\"201\" y=\"210\" font-size=\"12\">6 cups: 26 cm</text></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 230\" width=\"50%\" height=\"auto\"><g fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.5\"><path d=\"M55 45h60l-5 28H60z\"/><path d=\"M57 72h60l-5 28H62z\"/><path d=\"M59 99h60l-5 28H64z\"/><path d=\"M61 126h60l-5 28H66z\"/><path d=\"M190 32h60l-5 28h-50z\"/><path d=\"M192 58h60l-5 28h-50z\"/><path d=\"M194 84h60l-5 28h-50z\"/><path d=\"M196 110h60l-5 28h-50z\"/><path d=\"M198 136h60l-5 28h-50z\"/><path d=\"M200 162h60l-5 18h-50z\"/></g><text x=\"68\" y=\"174\" font-size=\"12\">4 cups: 20 cm</text><text x=\"201\" y=\"210\" font-size=\"12\">6 cups: 26 cm</text></svg>"
           }
         },
         {

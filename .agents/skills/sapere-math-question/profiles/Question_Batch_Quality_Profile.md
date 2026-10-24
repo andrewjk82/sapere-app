@@ -34,6 +34,7 @@ Apply this checklist whenever adding questions from an exam or worksheet. It rec
 - Run `npm run content:validate` and `git diff --check`; stage only files for the requested task.
 
 ### SVG sizing and geometry-specific visual QA (standing corrections)
+- **Default figure size (standing user requirement):** set every new question and solution-step diagram to `width="50%"` of its available content width by default, preserving its `viewBox` and aspect ratio. Do not stretch an illustration to `100%` just to fill the card. Only enlarge beyond 50% when the diagram would otherwise be unreadable (for example, a dense table or multi-panel graph); check the rendered student-facing size and keep it within the card. Apply the same 50% rule when revising existing imported question figures.
 - Keep geometry strokes light and consistent: usually `1.6–2.2` SVG units for outlines and `1.3–1.8` for angle arcs at a `380×240`-style viewBox. Avoid heavy `3+` unit outlines unless a mark needs deliberate emphasis.
 - Keep the drawn shape compact and consistent with the user's smaller reference diagrams. Use viewBox whitespace or a smaller SVG drawing scale so a single shape does not dominate the whole question card; paired diagrams may use more width, but should still leave visible margins.
 - Every solution-step diagram must show the exact angle, side, length, or graph feature used in that step with a clear highlight. Progress the annotations as the reasoning advances; never repeat the same unannotated diagram in every step.

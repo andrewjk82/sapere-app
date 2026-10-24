@@ -34,6 +34,8 @@ the two ever disagree).
 See `references/svg_label_rules.md` for rules on preventing label overlaps in graphs.
 See `references/svg_3d_geometry_rules.md` for CRITICAL rules on 3D projections, hidden lines, and dimension formatting.
 
+**Standing user requirement — figure size:** New question and solution diagrams default to `width="50%"` of available content width, preserving aspect ratio. Do not use `100%` width unless a dense figure needs extra room for legibility; visually check it at student-facing size. See `profiles/Question_Batch_Quality_Profile.md`.
+
 ### Quick Reference — Key Fields (canonical, `content/chapters/*.json`)
 
 | Field | Type | Description |
