@@ -781,26 +781,6 @@
   position: relative;
 }
 
-.no-top-padding-mobile {
-  gap: 0 !important;
-}
-
-@media (max-width: 920px) {
-  .no-top-padding-mobile {
-    margin-top: -70px !important;
-    margin-left: -20px !important;
-    margin-right: -20px !important;
-  }
-}
-
-@media (max-width: 720px) {
-  .no-top-padding-mobile {
-    margin-top: -10px !important;
-    margin-left: -16px !important;
-    margin-right: -16px !important;
-  }
-}
-
 @media (min-width: 768px) {
   .app-shell__main {
     padding: 28px;

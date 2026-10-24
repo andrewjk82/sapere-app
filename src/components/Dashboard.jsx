@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Plus, Search, Users, Clock, CheckCircle2, GraduationCap, X, Calendar, Check, Trophy, Star, Bell, BookOpen, ChevronRight, PlayCircle, Target, AlertTriangle, TrendingUp, ArrowRight, PenLine } from 'lucide-react';
+import { Plus, Search, Users, Clock, CheckCircle2, GraduationCap, X, Calendar, Check, Trophy, Star, Bell, BookOpen, ChevronRight, PlayCircle, Target, AlertTriangle, TrendingUp, ArrowRight, PenLine, Zap, Calculator, FileText } from 'lucide-react';
 import StatCard from './StatCard';
 import StudentRow from './StudentRow';
 import { useAuth } from '../context/AuthContext';
@@ -25,13 +25,58 @@ import JourneyMapSnapshot from './JourneyMapSnapshot';
 import MedalShelf from './MedalShelf';
 import SprintDashboardCard from './sprint/SprintDashboardCard';
 import OnlineStudySessionCard from './OnlineStudySessionCard';
-import { getHomeworkItems } from '../utils/homework';
+import { getHomeworkItems, toDriveOpenUrl } from '../utils/homework';
+import { loadTopicPdfMap } from '../services/homeworkService';
 import { loadLastStudy, continueCaption, requestContinueStudy } from '../utils/lastStudy';
 
 // 카드에 마우스를 올리면 살짝 떠오르는 hover 효과 (Journey Map 카드와 동일한 느낌).
 const liftHover = {
   onMouseEnter: (e) => { e.currentTarget.style.transform = 'translateY(-3px)'; },
   onMouseLeave: (e) => { e.currentTarget.style.transform = ''; },
+};
+
+// Student "Today's plan" checklist — sits where the big dream-image hero used to.
+const TodayPlanCard = ({ items }) => {
+  const tracked = items.filter((i) => i.done !== null);
+  const doneCount = tracked.filter((i) => i.done).length;
+  const pct = tracked.length ? Math.round((doneCount / tracked.length) * 100) : 0;
+  return (
+    <div style={{ height: '100%', boxSizing: 'border-box', background: '#fff', borderRadius: '28px', padding: '28px', border: '1px solid #f1f5f9', boxShadow: '0 15px 35px rgba(0,0,0,0.06)', display: 'flex', flexDirection: 'column' }}>
+      <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: '12px', flexWrap: 'wrap', marginBottom: '20px' }}>
+        <h2 style={{ margin: 0, fontFamily: "'Poppins', sans-serif", fontSize: '1.6rem', fontWeight: 800, color: '#0f172a' }}>Today&apos;s plan</h2>
+        <span style={{ fontSize: '0.95rem', fontWeight: 700, color: '#475569' }}>{doneCount} of {tracked.length} done</span>
+      </div>
+      <div style={{ height: 8, borderRadius: 999, background: '#eef2ff', marginBottom: '22px', overflow: 'hidden' }}>
+        <div style={{ width: `${pct}%`, height: '100%', background: '#4f46e5', borderRadius: 999, transition: 'width 0.35s ease' }} />
+      </div>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', flex: 1 }}>
+        {items.map(({ key, icon: Icon, title, sub, cta, done, onClick }) => (
+          <button
+            key={key}
+            type="button"
+            onClick={onClick}
+            {...liftHover}
+            style={{ flex: 1, display: 'flex', alignItems: 'center', gap: '18px', width: '100%', minHeight: '76px', padding: '14px 20px', borderRadius: '18px', border: '1px solid #e2e8f0', background: done ? '#f8fafc' : '#fff', cursor: 'pointer', textAlign: 'left', transition: 'transform 0.15s' }}
+          >
+            {done ? (
+              <span style={{ width: 32, height: 32, borderRadius: 999, background: '#4f46e5', display: 'grid', placeItems: 'center', flexShrink: 0 }}>
+                <Check size={16} color="#fff" strokeWidth={3} />
+              </span>
+            ) : (
+              <span style={{ width: 32, height: 32, borderRadius: 999, border: '2px solid #cbd5e1', boxSizing: 'border-box', display: 'grid', placeItems: 'center', flexShrink: 0, color: '#64748b' }}>
+                {done === null && <Icon size={15} strokeWidth={2.4} />}
+              </span>
+            )}
+            <span style={{ flex: 1, minWidth: 0 }}>
+              <span style={{ display: 'block', fontWeight: 800, fontSize: '1.05rem', color: '#0f172a' }}>{title}</span>
+              <span style={{ display: 'block', fontSize: '0.85rem', color: '#475569', marginTop: 3, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{sub}</span>
+            </span>
+            <span style={{ fontSize: '0.92rem', fontWeight: 800, color: '#4338ca', flexShrink: 0 }}>{cta}</span>
+          </button>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent, setActiveTab, onShowLeaderboard, onOpenJourneyMap, onNavigateToTraffic }) => {
@@ -354,6 +399,138 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
     }
   };
 
+  // Next term exam (D-Day) — only for students whose teacher enabled Exam Prep
+  // and set at least one term exam date. Shared by Today's plan + Upcoming exams.
+  const nextTermExam = useMemo(() => {
+    if (profile?.examPrepEnabled !== true) return null;
+    const assignedCourses = Array.isArray(profile?.assignedCourse) ? profile.assignedCourse : [profile?.assignedCourse || 'Advanced'];
+    const isExtension = assignedCourses.some(c => c === 'Extension 1' || c === 'Extension 2');
+    const examEntries = [1, 2, 3, 4].flatMap(t => {
+      const entries = [{ term: t, label: `Term ${t}`, date: profile?.[`term${t}ExamDate`] }];
+      if (isExtension) entries.push({ term: t, label: `Ext1 Term ${t}`, date: profile?.[`ext1term${t}ExamDate`] });
+      return entries;
+    });
+    return examEntries
+      .filter(t => t.date)
+      .map(t => ({ ...t, dday: Math.ceil((new Date(t.date) - new Date(new Date().toDateString())) / 86400000) }))
+      .filter(t => t.dday >= 0)
+      .sort((a, b) => a.dday - b.dday)[0] || null;
+  }, [profile]);
+
+  // Today's Daily Calculation result — one point-read. Cached for the day only
+  // once completed (an open calc can still finish while the app is open).
+  const calcEnabled = !isAdmin && profile?.calculationEnabled !== false;
+  const calcCacheKey = `dashboard-calc-today-v1-${user?.uid}`;
+  const [calcToday, setCalcToday] = useState(() => {
+    const cached = localCache.get(calcCacheKey);
+    return cached?.date === new Date().toLocaleDateString('en-CA') && cached.completed ? cached : null;
+  });
+  useEffect(() => {
+    if (!user?.uid || !calcEnabled) return undefined;
+    const today = new Date().toLocaleDateString('en-CA');
+    if (calcToday?.date === today && calcToday.completed) return undefined;
+    let cancelled = false;
+    getDoc(doc(db, 'users', user.uid, 'calc_stats', today)).then((snap) => {
+      if (cancelled) return;
+      const data = snap.exists() ? snap.data() : {};
+      const next = { date: today, completed: data.completed === true, score: Number(data.score) || 0, total: Number(data.total) || 0 };
+      setCalcToday(next);
+      if (next.completed) localCache.set(calcCacheKey, next);
+    }).catch((err) => console.warn('calc today fetch failed:', err?.code || err));
+    return () => { cancelled = true; };
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- calcToday is only the cache short-circuit
+  }, [user?.uid, calcEnabled]);
+
+  // Today's plan rows: Daily Challenge, Daily Calculation, Homework, Exam Prep.
+  // `done: null` = not a once-a-day task (Exam Prep) → not counted in progress.
+  const todayPlan = useMemo(() => {
+    if (isAdmin) return [];
+    const scoreText = (r) => (r?.total > 0 ? `${r.score}/${r.total} correct` : 'Completed');
+    const dailyToday = weekPractice.find((d) => d.isToday);
+    const dailyDone = dailyToday?.completed === true;
+    const rows = [{
+      key: 'daily',
+      icon: Zap,
+      title: 'Daily Challenge',
+      sub: dailyDone ? scoreText(dailyToday) : "Today's questions are ready",
+      cta: dailyDone ? 'Done' : 'Start',
+      done: dailyDone,
+      onClick: () => setActiveTab?.('Challenge'),
+    }];
+    if (calcEnabled) {
+      const calcDone = calcToday?.completed === true;
+      rows.push({
+        key: 'calc',
+        icon: Calculator,
+        title: 'Daily Calculation',
+        sub: calcDone ? scoreText(calcToday) : 'A quick timed calculation round',
+        cta: calcDone ? 'Done' : 'Start',
+        done: calcDone,
+        onClick: () => setActiveTab?.('Challenge'),
+      });
+    }
+    const hwItems = getHomeworkItems(studentSessions);
+    const pending = hwItems.filter(i => i.status === 'todo');
+    rows.push({
+      key: 'homework',
+      icon: PenLine,
+      title: pending.length > 0 ? `Homework — ${pending.length} to do` : 'Homework',
+      sub: pending.length > 0
+        ? pending.map(p => p.topics.map(t => t.label).join(', ')).join(' · ')
+        : (hwItems.length > 0 ? 'All handed in' : 'No homework right now'),
+      cta: pending.length > 0 ? 'Start' : 'Open',
+      done: pending.length === 0,
+      onClick: () => {
+        try { sessionStorage.setItem('sapere:openHomework:v1', '1'); } catch { /* storage blocked */ }
+        setActiveTab?.('Challenge');
+      },
+    });
+    if (profile?.examPrepEnabled === true) {
+      rows.push({
+        key: 'exam-prep',
+        icon: Target,
+        title: 'Exam Prep',
+        sub: nextTermExam
+          ? `${nextTermExam.label} exam · ${nextTermExam.dday === 0 ? 'today' : `D-${nextTermExam.dday}`}`
+          : 'Practise exam-style questions',
+        cta: 'Practise',
+        done: null,
+        onClick: () => setActiveTab?.('ExamPrep'),
+      });
+    }
+    return rows;
+  }, [isAdmin, weekPractice, calcEnabled, calcToday, studentSessions, profile?.examPrepEnabled, nextTermExam, setActiveTab]);
+
+  // Next Lesson card: the most recent past lesson that recorded topics or notes
+  // ("Last lesson notes" opens it in the lesson modal, with its topic PDFs).
+  const lastLesson = useMemo(() => {
+    const today = new Date().toLocaleDateString('en-CA');
+    return studentSessions
+      .filter((s) => s.date && s.date <= today && s.id !== nextLesson?.id
+        && ((Array.isArray(s.learnedTopics) && s.learnedTopics.length > 0) || String(s.notes || '').trim()))
+      .sort((a, b) => b.date.localeCompare(a.date))[0] || null;
+  }, [studentSessions, nextLesson?.id]);
+  const lastLessonCaption = useMemo(() => {
+    const topics = (lastLesson?.learnedTopics || [])
+      .map((t) => (typeof t === 'string' ? t : (t?.label || t?.title || '')))
+      .filter(Boolean);
+    if (topics.length === 0) return lastLesson ? lastLesson.date : '';
+    return topics.length > 1 ? `${topics[0]} +${topics.length - 1}` : topics[0];
+  }, [lastLesson]);
+
+  // Topic worksheet PDFs for the lesson modal — 1–2 curriculum reads, only when
+  // a lesson with covered topics is opened, then kept for this visit.
+  const [topicPdfMap, setTopicPdfMap] = useState(null);
+  const modalHasTopics = Array.isArray(selectedViewSession?.learnedTopics) && selectedViewSession.learnedTopics.length > 0;
+  useEffect(() => {
+    if (isAdmin || !modalHasTopics || topicPdfMap || !profile) return undefined;
+    let cancelled = false;
+    loadTopicPdfMap(profile)
+      .then((map) => { if (!cancelled) setTopicPdfMap(map || {}); })
+      .catch((err) => console.warn('topic pdf map failed:', err?.code || err));
+    return () => { cancelled = true; };
+  }, [isAdmin, modalHasTopics, topicPdfMap, profile]);
+
   const getGreeting = () => {
     const hour = new Date().getHours();
     if (hour < 12) return "Good morning";
@@ -364,32 +541,30 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
   return (
     <>
 
-      <style>{`
-        @media (max-width: 720px) {
-          .no-top-padding-mobile {
-            margin-top: -100px !important;
-            margin-left: -20px !important;
-            margin-right: -20px !important;
-            padding-top: 0 !important;
-          }
-        }
-      `}</style>
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className={`app-page ${!isAdmin && isMobile ? 'no-top-padding-mobile' : ''}`}
+        className="app-page"
       >
+        {!isAdmin && (
+          <header style={{ display: 'flex', alignItems: 'center', gap: isMobile ? '16px' : '24px', margin: isMobile ? '0 0 16px' : '0 0 24px' }}>
+            <img
+              src={profile?.dreamImageUrl || 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format\u0026fit=crop\u0026q=80\u0026w=600'}
+              alt="My dream"
+              style={{ width: isMobile ? 88 : 128, height: isMobile ? 88 : 128, objectFit: 'cover', objectPosition: 'center top', borderRadius: isMobile ? '22px' : '28px', flexShrink: 0, boxShadow: '0 10px 30px rgba(15,23,42,0.15)' }}
+            />
+            <div style={{ minWidth: 0 }}>
+              <div style={{ fontSize: isMobile ? '0.75rem' : '0.85rem', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#475569' }}>{getGreeting()}</div>
+              <h1 style={{ fontFamily: "'Poppins', sans-serif", fontSize: isMobile ? '1.9rem' : '2.6rem', fontWeight: 900, margin: '2px 0 0', lineHeight: 1.1, color: '#0f172a', letterSpacing: '-0.02em', overflowWrap: 'anywhere' }}>
+                {userName}
+              </h1>
+            </div>
+          </header>
+        )}
         {!isAdmin && (
           <div className="student-hero-container" style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(12, 1fr)', gap: isMobile ? '16px' : '24px', padding: isMobile ? '0 0 16px 0' : '0 0 24px 0', alignItems: 'stretch' }}>
             <div style={{ gridColumn: isMobile ? 'span 1' : 'span 7' }}>
-              <div className="app-panel vision-card" style={{ backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.7)), url('${profile?.dreamImageUrl || 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format\u0026fit=crop\u0026q=80\u0026w=1200'}')`, backgroundSize: 'cover', backgroundPosition: 'center', height: isMobile ? '460px' : '100%', minHeight: isMobile ? '460px' : '560px', borderRadius: isMobile ? '0 0 32px 32px' : '32px', position: 'relative', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: isMobile ? '40px 24px' : '40px', color: 'white', overflow: 'hidden', boxShadow: isMobile ? 'none' : '0 20px 50px rgba(0,0,0,0.15)', border: 'none', width: '100%' }}>
-                <div className="vision-card__content" style={{ zIndex: 1 }}>
-                  <h1 style={{ fontFamily: "'Poppins', sans-serif", fontSize: isMobile ? '2.2rem' : '3.5rem', fontWeight: 900, margin: 0, lineHeight: 1.1, color: '#fff', letterSpacing: '-0.02em', textShadow: '0 4px 20px rgba(0,0,0,0.3)' }}>
-                    <span style={{ fontSize: '0.35em', display: 'block', textTransform: 'uppercase', letterSpacing: '0.25em', opacity: 0.9, marginBottom: '4px', color: 'rgba(255,255,255,0.8)' }}>{getGreeting()},</span>
-                    {userName}
-                  </h1>
-                </div>
-              </div>
+              <TodayPlanCard items={todayPlan} />
             </div>
             <div style={{ gridColumn: isMobile ? 'span 1' : 'span 5', display: 'flex', flexDirection: 'column', gap: isMobile ? '16px' : '20px', padding: 0 }}>
               {/* Journey Map snapshot */}
@@ -433,14 +608,33 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                   </div>
                 ) : <p style={{ margin: 0, fontWeight: 700, fontSize: '1.1rem' }}>No upcoming lessons.</p>}
                 {!isAdmin && setActiveTab && (
-                  <button
-                    type="button"
-                    onClick={goContinueStudying}
-                    aria-label={continueLabel ? `Continue studying ${continueLabel}` : 'Open curriculum'}
-                    style={{ position: 'absolute', right: 14, bottom: 12, display: 'inline-flex', alignItems: 'center', gap: 5, padding: '6px 11px', borderRadius: 999, border: 0, background: 'rgba(255,255,255,0.95)', color: '#4f46e5', fontWeight: 800, fontSize: '0.75rem', cursor: 'pointer', boxShadow: '0 2px 8px rgba(30,27,75,0.2)', maxWidth: '60%', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}
-                  >
-                    <BookOpen size={13} /> {continueLabel ? `Continue ${continueLabel}` : 'Curriculum'}
-                  </button>
+                  <div style={{ position: 'relative', display: 'flex', gap: 8, marginTop: 12 }}>
+                    <button
+                      type="button"
+                      disabled={!lastLesson}
+                      onClick={(e) => { e.stopPropagation(); if (lastLesson) setSelectedViewSession(lastLesson); }}
+                      aria-label="Last lesson notes and PDF"
+                      style={{ flex: 1, minWidth: 0, display: 'flex', alignItems: 'center', gap: 8, minHeight: 44, padding: '6px 12px', borderRadius: 14, background: 'rgba(255,255,255,0.16)', border: '1px solid rgba(255,255,255,0.3)', color: '#fff', cursor: lastLesson ? 'pointer' : 'default', opacity: lastLesson ? 1 : 0.6, textAlign: 'left' }}
+                    >
+                      <FileText size={18} style={{ flexShrink: 0 }} />
+                      <span style={{ minWidth: 0 }}>
+                        <span style={{ display: 'block', fontWeight: 800, fontSize: '0.78rem', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>Last lesson notes</span>
+                        <span style={{ display: 'block', fontSize: '0.66rem', fontWeight: 600, color: 'rgba(255,255,255,0.8)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{lastLesson ? `${lastLessonCaption} · Notes + PDF` : 'No lesson yet'}</span>
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={goContinueStudying}
+                      aria-label={continueLabel ? `This lesson: ${continueLabel}` : 'Open curriculum'}
+                      style={{ flex: 1, minWidth: 0, display: 'flex', alignItems: 'center', gap: 8, minHeight: 44, padding: '6px 12px', borderRadius: 14, border: 0, background: 'rgba(255,255,255,0.95)', color: '#4f46e5', cursor: 'pointer', boxShadow: '0 2px 8px rgba(30,27,75,0.2)', textAlign: 'left' }}
+                    >
+                      <BookOpen size={18} style={{ flexShrink: 0 }} />
+                      <span style={{ minWidth: 0 }}>
+                        <span style={{ display: 'block', fontWeight: 800, fontSize: '0.78rem', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>This lesson</span>
+                        <span style={{ display: 'block', fontSize: '0.66rem', fontWeight: 600, color: '#6366f1', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{continueLabel || 'Curriculum'}</span>
+                      </span>
+                    </button>
+                  </div>
                 )}
               </div>
               {/* Daily Practice week bar chart */}
@@ -586,45 +780,6 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
           </div>
         )}
 
-        {!isAdmin && (() => {
-          const hwItems = getHomeworkItems(studentSessions);
-          const pending = hwItems.filter(i => i.status === 'todo');
-          if (pending.length === 0) return null;
-          return (
-            <button
-              type="button"
-              onClick={() => {
-                try { sessionStorage.setItem('sapere:openHomework:v1', '1'); } catch { /* storage blocked */ }
-                setActiveTab?.('Challenge');
-              }}
-              style={{
-                display: 'flex', alignItems: 'center', gap: 14,
-                width: '100%', marginBottom: 24, padding: '16px 20px',
-                borderRadius: 20, border: '1px solid #ddd6fe',
-                background: 'linear-gradient(135deg, #f5f3ff, #ede9fe)',
-                cursor: 'pointer', textAlign: 'left',
-                boxShadow: '0 4px 16px rgba(124,58,237,0.1)',
-                transition: 'transform 0.15s',
-              }}
-              onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; }}
-              onMouseLeave={e => { e.currentTarget.style.transform = ''; }}
-            >
-              <span style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: 42, height: 42, borderRadius: 14, background: '#7c3aed', flexShrink: 0 }}>
-                <PenLine size={20} color="#fff" />
-              </span>
-              <div style={{ flex: 1, minWidth: 0 }}>
-                <div style={{ fontWeight: 900, fontSize: '0.95rem', color: '#4c1d95' }}>
-                  Homework — {pending.length} to do
-                </div>
-                <div style={{ fontSize: '0.78rem', color: '#6d28d9', marginTop: 2, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                  {pending.map(p => p.topics.map(t => t.label).join(', ')).join(' · ')}
-                </div>
-              </div>
-              <ArrowRight size={18} color="#7c3aed" />
-            </button>
-          );
-        })()}
-
         {!isAdmin && <OnlineStudySessionCard />}
 
         {!isAdmin && (() => {
@@ -633,33 +788,17 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
           // separate full-width banner per exam.
           const items = [];
 
-          if (profile?.examPrepEnabled === true) {
-            // D-Day is only useful for students whose teacher has enabled Exam
-            // Prep AND has set at least one term exam date — otherwise skip.
-            const assignedCourses = Array.isArray(profile?.assignedCourse) ? profile.assignedCourse : [profile?.assignedCourse || 'Advanced'];
-            const isExtension = assignedCourses.some(c => c === 'Extension 1' || c === 'Extension 2');
-            const examEntries = [1, 2, 3, 4].flatMap(t => {
-              const entries = [{ term: t, label: `Term ${t}`, date: profile?.[`term${t}ExamDate`] }];
-              if (isExtension) entries.push({ term: t, label: `Ext1 Term ${t}`, date: profile?.[`ext1term${t}ExamDate`] });
-              return entries;
+          if (nextTermExam) {
+            const urgent = nextTermExam.dday <= 7;
+            items.push({
+              key: 'term-exam',
+              icon: urgent ? '🔥' : '📅',
+              color: urgent ? '#ef4444' : '#6366f1',
+              title: `${nextTermExam.label} Exam`,
+              subtitle: 'Tap to practise',
+              dday: nextTermExam.dday,
+              onClick: () => setActiveTab('ExamPrep'),
             });
-            const nextExam = examEntries
-              .filter(t => t.date)
-              .map(t => ({ ...t, dday: Math.ceil((new Date(t.date) - new Date(new Date().toDateString())) / 86400000) }))
-              .filter(t => t.dday >= 0)
-              .sort((a, b) => a.dday - b.dday)[0];
-            if (nextExam) {
-              const urgent = nextExam.dday <= 7;
-              items.push({
-                key: 'term-exam',
-                icon: urgent ? '🔥' : '📅',
-                color: urgent ? '#ef4444' : '#6366f1',
-                title: `${nextExam.label} Exam`,
-                subtitle: 'Tap to practise',
-                dday: nextExam.dday,
-                onClick: () => setActiveTab('ExamPrep'),
-              });
-            }
           }
 
           upcomingExams(profile?.studySubjectExamDates).forEach((next) => {
@@ -776,10 +915,16 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                       {selectedViewSession.learnedTopics.map((t, i) => {
                         const text = typeof t === 'string' ? t : (t.label || t.title || t.topicTitle || '');
                         if (!text) return null;
+                        const pdfUrl = typeof t === 'object' && t?.id ? topicPdfMap?.[t.id] : null;
                         return (
                           <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', background: '#f0fdf4', border: '1px solid #dcfce7', borderRadius: '12px', padding: '10px 14px' }}>
                             <CheckCircle2 size={18} style={{ color: '#16a34a', flexShrink: 0 }} />
-                            <span style={{ fontWeight: 700, color: '#1e1b4b', fontSize: '0.92rem', lineHeight: 1.4 }}>{text}</span>
+                            <span style={{ flex: 1, fontWeight: 700, color: '#1e1b4b', fontSize: '0.92rem', lineHeight: 1.4 }}>{text}</span>
+                            {pdfUrl && (
+                              <a href={toDriveOpenUrl(pdfUrl)} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: 4, padding: '4px 10px', borderRadius: 999, background: '#fff', border: '1px solid #bbf7d0', color: '#15803d', fontWeight: 800, fontSize: '0.75rem', textDecoration: 'none', flexShrink: 0 }}>
+                                <FileText size={13} /> PDF
+                              </a>
+                            )}
                           </div>
                         );
                       })}
