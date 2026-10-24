@@ -2562,6 +2562,47 @@
             "7"
           ],
           "answer": 0
+        },
+        {
+          "id": "y8-53entry-wm-q02",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Tom, Jim and Ed have a race. In how many different orders could they finish the race, assuming that no dead heats are possible?",
+          "options": [
+            "\\(6\\text{ different orders}\\)",
+            "\\(3\\text{ different orders}\\)",
+            "\\(9\\text{ different orders}\\)",
+            "\\(27\\text{ different orders}\\)"
+          ],
+          "answer": 0,
+          "hint": "List the possible first-place runners. For each choice, count the orders for the two remaining runners.",
+          "steps": [
+            {
+              "explain": "Choose who finishes first. There are 3 choices: Tom, Jim or Ed.",
+              "work": "\\(3\\text{ choices for 1st place}\\)"
+            },
+            {
+              "explain": "After first place is chosen, 2 runners remain for second place. The final runner must then be third.",
+              "work": "\\(3\\times2\\times1=6\\)"
+            },
+            {
+              "explain": "For example, the six orders are T-J-E, T-E-J, J-T-E, J-E-T, E-T-J and E-J-T.",
+              "work": "\\(\\boxed{6\\text{ different orders}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year8 5.3 Test Entry Revision (with Answers)",
+            "pdfPage": 3,
+            "sourceQuestion": "2"
+          },
+          "keyPoints": [
+            {
+              "text": "In how many different orders",
+              "note": "No dead heats means every runner has a different finishing position."
+            }
+          ]
         }
       ]
     },

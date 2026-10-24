@@ -3673,6 +3673,47 @@
             "\\(30\\%\\)"
           ],
           "answer": 1
+        },
+        {
+          "id": "y8-53entry-q07",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Mary bought a car for \\(\\$12{,}000\\) but sold it to Naomi at a loss of 78% after it was involved in an accident. Naomi repaired the car and sold it to Heather for 250% more than she paid for it. What price did Heather pay for the car?",
+          "options": [
+            "\\(\\$9{,}240\\)",
+            "\\(\\$6{,}600\\)",
+            "\\(\\$2{,}640\\)",
+            "\\(\\$30{,}000\\)"
+          ],
+          "answer": 0,
+          "hint": "After a 78% loss, Naomi pays the remaining percentage of $12,000. “250% more” means the purchase price plus another 250% of that price.",
+          "steps": [
+            {
+              "explain": "A 78% loss leaves \\(100\\%-78\\%=22\\%\\) of the original price. This is Naomi’s purchase price.",
+              "work": "\\(0.22\\times12{,}000=\\$2{,}640\\)"
+            },
+            {
+              "explain": "Selling for 250% more means a total of 350% of what Naomi paid.",
+              "work": "\\(100\\%+250\\%=350\\%=3.5\\)"
+            },
+            {
+              "explain": "Multiply Naomi’s purchase price by 3.5.",
+              "work": "\\(3.5\\times2{,}640=\\boxed{\\$9{,}240}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year8 5.3 Test Entry Revision (with Answers)",
+            "pdfPage": 2,
+            "sourceQuestion": "7"
+          },
+          "keyPoints": [
+            {
+              "text": "250% more than she paid for it",
+              "note": "“250% more” is 350% of the amount paid."
+            }
+          ]
         }
       ]
     },
@@ -3994,6 +4035,51 @@
             "part": "",
             "origin": "exam-import"
           }
+        },
+        {
+          "id": "y8-53entry-q08-discounts",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Tanya bought a dress that was originally \\(\\$189\\) but was discounted by 20%. Tanya paid for it with cash so she then received a further 15% discount. Kim bought the exact same dress from another store with the same price tag of \\(\\$189\\), but she received a discount of 35%. Which one is the better buy? Give reasons for your answer.",
+          "options": [
+            "Kim; Tanya pays \\(\\$128.52\\) and Kim pays \\(\\$122.85\\).",
+            "Tanya; Tanya pays \\(\\$120.96\\) and Kim pays \\(\\$122.85\\).",
+            "They pay the same amount, \\(\\$122.85\\).",
+            "Tanya; Tanya pays \\(\\$128.52\\) and Kim pays \\(\\$132.30\\)."
+          ],
+          "answer": 0,
+          "hint": "Apply Tanya’s discounts one after the other to the reduced price. For Kim, find 65% of the original price.",
+          "steps": [
+            {
+              "explain": "Tanya first pays 80% of $189 after the 20% discount.",
+              "work": "\\(189\\times0.80=\\$151.20\\)"
+            },
+            {
+              "explain": "The extra 15% discount is applied to Tanya’s new price, so she pays 85% of $151.20.",
+              "work": "\\(151.20\\times0.85=\\$128.52\\)"
+            },
+            {
+              "explain": "Kim gets one 35% discount, so she pays 65% of $189.",
+              "work": "\\(189\\times0.65=\\$122.85\\)"
+            },
+            {
+              "explain": "Compare the two prices: $122.85 is less than $128.52, so Kim gets the better buy.",
+              "work": "\\(122.85<128.52\\quad\\therefore\\quad\\boxed{\\text{Kim}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year8 5.3 Test Entry Revision (with Answers)",
+            "pdfPage": 2,
+            "sourceQuestion": "8"
+          },
+          "keyPoints": [
+            {
+              "text": "a further 15% discount",
+              "note": "The second discount is taken from Tanya’s already-reduced price."
+            }
+          ]
         }
       ]
     },
@@ -4194,6 +4280,52 @@
             "\\(225\\%\\)"
           ],
           "answer": 1
+        },
+        {
+          "id": "y8-53entry-q04e-cordial",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Tanya makes up a cordial drink so that 10% of the drink is cordial concentrate. The rest is water. Tanya has 350 mL of the drink in a jug. She now decides that she wants the cordial concentrate content to be only 8%. How much extra water does she need to pour into the jug?",
+          "options": [
+            "\\(87.5\\text{ mL}\\)",
+            "\\(35\\text{ mL}\\)",
+            "\\(52.5\\text{ mL}\\)",
+            "\\(437.5\\text{ mL}\\)"
+          ],
+          "answer": 0,
+          "hint": "The concentrate amount stays fixed when water is added. Find that amount first, then work out the new total volume at 8%.",
+          "steps": [
+            {
+              "explain": "Find the fixed concentrate amount: it is 10% of the original 350 mL drink.",
+              "work": "\\(0.10\\times350=35\\text{ mL concentrate}\\)"
+            },
+            {
+              "explain": "At the new concentration, 35 mL is 8% of the final total volume V.",
+              "work": "\\(0.08V=35\\)"
+            },
+            {
+              "explain": "Solve for the final volume.",
+              "work": "\\(V=35\\div0.08=437.5\\text{ mL}\\)"
+            },
+            {
+              "explain": "Subtract the 350 mL already in the jug to find the extra water.",
+              "work": "\\(437.5-350=\\boxed{87.5\\text{ mL}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year8 5.3 Test Entry Revision (with Answers)",
+            "pdfPage": 20,
+            "sourceQuestion": "4",
+            "sourcePart": "e"
+          },
+          "keyPoints": [
+            {
+              "text": "only 8%",
+              "note": "Adding water changes the total volume but not the amount of concentrate."
+            }
+          ]
         }
       ]
     },
@@ -4265,6 +4397,47 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "y8-53entry-q06-percentage",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "I spent 8% of my money on a new tennis racquet which cost \\(\\$108\\). How much money did I have before the purchase?",
+          "options": [
+            "\\(\\$1{,}350\\)",
+            "\\(\\$864\\)",
+            "\\(\\$1{,}242\\)",
+            "\\(\\$13.50\\)"
+          ],
+          "answer": 0,
+          "hint": "Treat $108 as 8% of the original amount. First find 1%, then scale up to 100%.",
+          "steps": [
+            {
+              "explain": "The racquet cost is the 8% part of the original money.",
+              "work": "\\(8\\%=\\$108\\)"
+            },
+            {
+              "explain": "Divide by 8 to find the value of 1%.",
+              "work": "\\(1\\%=108\\div8=\\$13.50\\)"
+            },
+            {
+              "explain": "Multiply the 1% value by 100 to recover the whole amount.",
+              "work": "\\(100\\%=13.50\\times100=\\boxed{\\$1{,}350}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year8 5.3 Test Entry Revision (with Answers)",
+            "pdfPage": 2,
+            "sourceQuestion": "6"
+          },
+          "keyPoints": [
+            {
+              "text": "8% of my money",
+              "note": "The $108 is only 8% of the starting amount."
+            }
+          ]
         }
       ]
     },

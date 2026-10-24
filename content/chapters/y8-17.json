@@ -1665,6 +1665,178 @@
             "\\(\\frac{45}{2}\\)"
           ],
           "answer": 2
+        },
+        {
+          "id": "y8-53entry-q04a-cups",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A stack of 4 cups is 20cm tall. A stack of 6 cups is 26 cm tall. If n is the number of cups in stack and h is the height of the stack in centimetres, write a rule that connects height h with number of cups n.",
+          "options": [
+            "\\(h=3n+8\\)",
+            "\\(h=8n+3\\)",
+            "\\(h=3n+20\\)",
+            "\\(h=2n+12\\)"
+          ],
+          "answer": 0,
+          "hint": "Two extra cups increase the stack by 6 cm. Use that to find the height added by each cup, then find the fixed height.",
+          "steps": [
+            {
+              "explain": "The height increases from 20 cm to 26 cm when the number of cups increases from 4 to 6.",
+              "work": "\\(26-20=6\\text{ cm for }6-4=2\\text{ cups}\\)"
+            },
+            {
+              "explain": "Each additional cup adds the same height.",
+              "work": "\\(6\\div2=3\\text{ cm per additional cup}\\)"
+            },
+            {
+              "explain": "Use \\(h=3n+b\\). Substitute the 4-cup stack to find the fixed height b.",
+              "work": "\\(20=3(4)+b\\)\n\\(20=12+b\\Rightarrow b=8\\)"
+            },
+            {
+              "explain": "Write the rule and check it with the 6-cup stack.",
+              "work": "\\(h=3n+8\\)\n\\(h=3(6)+8=26\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year8 5.3 Test Entry Revision (with Answers)",
+            "pdfPage": 18,
+            "sourceQuestion": "4",
+            "sourcePart": "a"
+          },
+          "keyPoints": [
+            {
+              "text": "A stack of 4 cups is 20cm tall.",
+              "note": "Find the height added by each extra cup, then the fixed starting height."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 230\" width=\"100%\" height=\"auto\"><g fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.5\"><path d=\"M55 45h60l-5 28H60z\"/><path d=\"M57 72h60l-5 28H62z\"/><path d=\"M59 99h60l-5 28H64z\"/><path d=\"M61 126h60l-5 28H66z\"/><path d=\"M190 32h60l-5 28h-50z\"/><path d=\"M192 58h60l-5 28h-50z\"/><path d=\"M194 84h60l-5 28h-50z\"/><path d=\"M196 110h60l-5 28h-50z\"/><path d=\"M198 136h60l-5 28h-50z\"/><path d=\"M200 162h60l-5 18h-50z\"/></g><text x=\"68\" y=\"174\" font-size=\"12\">4 cups: 20 cm</text><text x=\"201\" y=\"210\" font-size=\"12\">6 cups: 26 cm</text></svg>"
+          }
+        },
+        {
+          "id": "y8-53entry-dose-formula",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The formula \\(D=\\dfrac{2A}{15}\\) is used to calculate the dosage of cough medicine to be given to a child. D is the dosage of the medicine in millilitres (mL). A is the age of the child in months.",
+          "parts": [
+            {
+              "id": "y8-53entry-dose-q1",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "George is nine months old. What dosage of cough medicine should be given to him?",
+              "options": [
+                "\\(1.2\\text{ mL}\\)",
+                "\\(2.4\\text{ mL}\\)",
+                "\\(9\\text{ mL}\\)",
+                "\\(0.6\\text{ mL}\\)"
+              ],
+              "answer": 0,
+              "hint": "Substitute George’s age, 9 months, for A in the given formula.",
+              "steps": [
+                {
+                  "explain": "The formula is \\(D=\\dfrac{2A}{15}\\), and George is 9 months old. Substitute \\(A=9\\).",
+                  "work": "\\(D=\\dfrac{2(9)}{15}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 130\" width=\"100%\" height=\"auto\"><rect x=\"30\" y=\"22\" width=\"240\" height=\"86\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#cbd5e1\"/><text x=\"55\" y=\"55\" font-size=\"16\" fill=\"#1e293b\">D = 2A / 15</text><text x=\"55\" y=\"82\" font-size=\"12\" fill=\"#475569\">D: dose in mL • A: age in months</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Multiply in the numerator, then divide by 15.",
+                  "work": "\\(D=\\dfrac{18}{15}=1.2\\text{ mL}\\)"
+                },
+                {
+                  "explain": "The recommended dosage is 1.2 mL.",
+                  "work": "\\(\\boxed{1.2\\text{ mL}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Year8 5.3 Test Entry Revision (with Answers)",
+                "pdfPage": 15,
+                "sourceQuestion": "3",
+                "sourcePart": "e-i"
+              },
+              "keyPoints": [
+                {
+                  "text": "George is nine months old.",
+                  "note": "Replace A with 9 in the dosage formula."
+                }
+              ],
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 130\" width=\"100%\" height=\"auto\"><rect x=\"30\" y=\"22\" width=\"240\" height=\"86\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#cbd5e1\"/><text x=\"55\" y=\"55\" font-size=\"16\" fill=\"#1e293b\">D = 2A / 15</text><text x=\"55\" y=\"82\" font-size=\"12\" fill=\"#475569\">D: dose in mL • A: age in months</text></svg>"
+              }
+            },
+            {
+              "id": "y8-53entry-dose-q2",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The correct dosage of the medicine for Sam is 4 mL. What is the age of Sam in months?",
+              "options": [
+                "\\(30\\text{ months}\\)",
+                "\\(15\\text{ months}\\)",
+                "\\(60\\text{ months}\\)",
+                "\\(7.5\\text{ months}\\)"
+              ],
+              "answer": 0,
+              "hint": "Substitute D = 4 into the formula, then solve the equation for A using inverse operations.",
+              "steps": [
+                {
+                  "explain": "Use the formula \\(D=\\dfrac{2A}{15}\\) and substitute the known dosage \\(D=4\\).",
+                  "work": "\\(4=\\dfrac{2A}{15}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 130\" width=\"100%\" height=\"auto\"><rect x=\"30\" y=\"22\" width=\"240\" height=\"86\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#cbd5e1\"/><text x=\"55\" y=\"55\" font-size=\"16\" fill=\"#1e293b\">D = 2A / 15</text><text x=\"55\" y=\"82\" font-size=\"12\" fill=\"#475569\">D: dose in mL • A: age in months</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Multiply both sides by 15 to clear the denominator.",
+                  "work": "\\(4(15)=2A\\quad\\Rightarrow\\quad60=2A\\)"
+                },
+                {
+                  "explain": "Divide both sides by 2.",
+                  "work": "\\(A=60\\div2=30\\text{ months}\\)"
+                },
+                {
+                  "explain": "Sam is 30 months old.",
+                  "work": "\\(\\boxed{30\\text{ months}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Year8 5.3 Test Entry Revision (with Answers)",
+                "pdfPage": 15,
+                "sourceQuestion": "3",
+                "sourcePart": "e-ii"
+              },
+              "keyPoints": [
+                {
+                  "text": "The correct dosage of the medicine for Sam is 4 mL.",
+                  "note": "Put 4 in for D, then isolate A."
+                }
+              ],
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 130\" width=\"100%\" height=\"auto\"><rect x=\"30\" y=\"22\" width=\"240\" height=\"86\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#cbd5e1\"/><text x=\"55\" y=\"55\" font-size=\"16\" fill=\"#1e293b\">D = 2A / 15</text><text x=\"55\" y=\"82\" font-size=\"12\" fill=\"#475569\">D: dose in mL • A: age in months</text></svg>"
+              }
+            }
+          ],
+          "hint": "Use the same formula in both parts: substitute the known age to find dosage, or substitute the dosage and solve backwards for age.",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year8 5.3 Test Entry Revision (with Answers)",
+            "pdfPage": 15,
+            "sourceQuestion": "3",
+            "sourcePages": [
+              15,
+              21
+            ]
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 130\" width=\"100%\" height=\"auto\"><rect x=\"30\" y=\"22\" width=\"240\" height=\"86\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#cbd5e1\"/><text x=\"55\" y=\"55\" font-size=\"16\" fill=\"#1e293b\">D = 2A / 15</text><text x=\"55\" y=\"82\" font-size=\"12\" fill=\"#475569\">D: dose in mL • A: age in months</text></svg>"
+          }
         }
       ]
     },

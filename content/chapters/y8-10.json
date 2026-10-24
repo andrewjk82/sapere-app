@@ -1185,6 +1185,47 @@
             "\\(\\frac{64}{3}\\) min"
           ],
           "answer": 1
+        },
+        {
+          "id": "y8-53entry-wm-q01",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "It took Daniel 7 minutes to join two pieces of pipe to make one length of pipe. How long would it take him to join 10 pieces of pipe to make one length of pipe?",
+          "options": [
+            "\\(63\\text{ minutes}\\)",
+            "\\(70\\text{ minutes}\\)",
+            "\\(35\\text{ minutes}\\)",
+            "\\(56\\text{ minutes}\\)"
+          ],
+          "answer": 0,
+          "hint": "Count the joins, not the pieces. Ten separate pieces need one fewer join than the number of pieces.",
+          "steps": [
+            {
+              "explain": "Ten pieces become one length through joins between neighbouring pieces. Count those joins first.",
+              "work": "\\(10-1=9\\text{ joins}\\)"
+            },
+            {
+              "explain": "Each join takes 7 minutes, so multiply the number of joins by the time for one join.",
+              "work": "\\(9\\times7=63\\text{ minutes}\\)"
+            },
+            {
+              "explain": "The total time is 63 minutes. Do not multiply 10 by 7, because that would count ten joins.",
+              "work": "\\(\\boxed{63\\text{ minutes}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year8 5.3 Test Entry Revision (with Answers)",
+            "pdfPage": 3,
+            "sourceQuestion": "1"
+          },
+          "keyPoints": [
+            {
+              "text": "join 10 pieces of pipe",
+              "note": "There is one fewer join than pieces."
+            }
+          ]
         }
       ]
     },
@@ -2292,6 +2333,94 @@
             "part": "",
             "origin": "exam-import"
           }
+        },
+        {
+          "id": "y8-53entry-wm-q05b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Jamie drives from Sydney to Melbourne at \\(90\\text{ km/h}\\). A little later, Sam follows the same route to Melbourne at \\(110\\text{ km/h}\\). They catch up 4 hours later. Write an algebraic equation to represent the information given above. Use the equation to calculate how long after Jamie, did Sam start from Sydney? Give your answer to the nearest minute.",
+          "options": [
+            "\\(110(4)=90(x+4);\\;53\\text{ minutes}\\)",
+            "\\(90(4)=110(x+4);\\;53\\text{ minutes}\\)",
+            "\\(110x=90(4);\\;4\\text{ minutes}\\)",
+            "\\(110(4)=90x;\\;4\\text{ hours}\\)"
+          ],
+          "answer": 0,
+          "hint": "Let x be how long Sam waits before starting. At the catch-up, Sam travels for 4 hours and Jamie for x + 4 hours. Equal distances give the equation.",
+          "steps": [
+            {
+              "explain": "Let \\(x\\) be the number of hours between Jamie’s start and Sam’s start. When they meet, Sam has driven for 4 hours, while Jamie has driven for \\(x+4\\) hours.",
+              "work": "Sam distance: \\(110(4)\\)\nJamie distance: \\(90(x+4)\\)"
+            },
+            {
+              "explain": "They are at the same place at the catch-up, so their distances from Sydney are equal.",
+              "work": "\\(110(4)=90(x+4)\\)"
+            },
+            {
+              "explain": "Expand and solve the equation.",
+              "work": "\\(440=90x+360\\)\n\\(80=90x\\)\n\\(x=\\dfrac{80}{90}=\\dfrac89\\text{ h}\\)"
+            },
+            {
+              "explain": "Convert the fractional hour into minutes and round to the nearest minute.",
+              "work": "\\(\\dfrac89\\times60=53.\\overline3\\text{ min}\\approx\\boxed{53\\text{ minutes}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year8 5.3 Test Entry Revision (with Answers)",
+            "pdfPage": 17,
+            "sourceQuestion": "5",
+            "sourcePart": "b"
+          },
+          "keyPoints": [
+            {
+              "text": "They catch up 4 hours later.",
+              "note": "Use 4 hours for Sam and x + 4 hours for Jamie."
+            }
+          ]
+        },
+        {
+          "id": "y8-53entry-q04d-speed",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The top speed of this wombat is 660 metres per minute. What is the top speed of the wombat in km/h?",
+          "options": [
+            "\\(39.6\\text{ km/h}\\)",
+            "\\(0.66\\text{ km/h}\\)",
+            "\\(3.96\\text{ km/h}\\)",
+            "\\(396\\text{ km/h}\\)"
+          ],
+          "answer": 0,
+          "hint": "Convert minutes to hours by multiplying by 60, then convert metres to kilometres by dividing by 1000.",
+          "steps": [
+            {
+              "explain": "There are 60 minutes in one hour, so multiply the per-minute rate by 60.",
+              "work": "\\(660\\times60=39{,}600\\text{ m/h}\\)"
+            },
+            {
+              "explain": "There are 1000 metres in one kilometre, so divide by 1000.",
+              "work": "\\(39{,}600\\div1000=39.6\\text{ km/h}\\)"
+            },
+            {
+              "explain": "The converted speed is 39.6 kilometres per hour.",
+              "work": "\\(\\boxed{39.6\\text{ km/h}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year8 5.3 Test Entry Revision (with Answers)",
+            "pdfPage": 20,
+            "sourceQuestion": "4",
+            "sourcePart": "d"
+          },
+          "keyPoints": [
+            {
+              "text": "660 metres per minute",
+              "note": "Convert the time unit first, then the distance unit."
+            }
+          ]
         }
       ]
     },
@@ -3376,6 +3505,100 @@
             "part": "",
             "origin": "exam-import"
           }
+        },
+        {
+          "id": "y8-53entry-wm-q13",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "\\(\\dfrac{3}{4}\\) of Finn’s money is equal to \\(\\dfrac{1}{3}\\) of Jackson’s money. If Jackson has \\(\\$35\\) more than Finn, how much money does Finn have?",
+          "options": [
+            "\\(\\$28\\)",
+            "\\(\\$35\\)",
+            "\\(\\$63\\)",
+            "\\(\\$21\\)"
+          ],
+          "answer": 0,
+          "hint": "Let Finn’s amount be F and Jackson’s be F + $35. Substitute this into the fraction equation and clear denominators.",
+          "steps": [
+            {
+              "explain": "Let Finn have \\(F\\) dollars. Jackson has $35 more.",
+              "work": "\\(J=F+35\\)"
+            },
+            {
+              "explain": "Use the given equality and substitute \\(J=F+35\\).",
+              "work": "\\(\\dfrac{3}{4}F=\\dfrac{1}{3}(F+35)\\)"
+            },
+            {
+              "explain": "Multiply both sides by 12 to clear the denominators.",
+              "work": "\\(9F=4(F+35)=4F+140\\)"
+            },
+            {
+              "explain": "Subtract 4F from both sides, then divide by 5.",
+              "work": "\\(5F=140\\quad\\Rightarrow\\quad F=28\\)"
+            },
+            {
+              "explain": "Finn has $28. Check: Jackson has $63; \\(3/4\\) of 28 and \\(1/3\\) of 63 are both 21.",
+              "work": "\\(\\boxed{\\$28}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year8 5.3 Test Entry Revision (with Answers)",
+            "pdfPage": 8,
+            "sourceQuestion": "13"
+          },
+          "keyPoints": [
+            {
+              "text": "Jackson has \\(\\$35\\) more than Finn",
+              "note": "Write Jackson’s amount as Finn’s amount plus 35."
+            }
+          ]
+        },
+        {
+          "id": "y8-53entry-wm-q19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A sum of money is shared among Anders, Vitaliy and Grace in the ratio \\(2:3:5\\). If Vitaliy gives \\(\\$27\\) to Anders they will both have an equal amount of money. How much money does Grace receive?",
+          "options": [
+            "\\(\\$270\\)",
+            "\\(\\$162\\)",
+            "\\(\\$540\\)",
+            "\\(\\$135\\)"
+          ],
+          "answer": 0,
+          "hint": "Let one ratio part be x dollars. After the transfer, Anders has 2x + 27 and Vitaliy has 3x − 27.",
+          "steps": [
+            {
+              "explain": "Represent the original shares using the ratio parts.",
+              "work": "\\(A=2x,\\quad V=3x,\\quad G=5x\\)"
+            },
+            {
+              "explain": "After Vitaliy gives $27 to Anders, their amounts are equal.",
+              "work": "\\(2x+27=3x-27\\)"
+            },
+            {
+              "explain": "Solve for the value of one part. Add 27 to both sides, then subtract 2x.",
+              "work": "\\(2x+54=3x\\quad\\Rightarrow\\quad x=54\\)"
+            },
+            {
+              "explain": "Grace receives five parts. Multiply the value of one part by 5.",
+              "work": "\\(G=5(54)=\\boxed{\\$270}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year8 5.3 Test Entry Revision (with Answers)",
+            "pdfPage": 13,
+            "sourceQuestion": "19"
+          },
+          "keyPoints": [
+            {
+              "text": "in the ratio \\(2:3:5\\)",
+              "note": "Write each share as its ratio number times the same part x."
+            }
+          ]
         }
       ]
     },

@@ -1945,6 +1945,107 @@
             "\\(3\\)"
           ],
           "answer": 0
+        },
+        {
+          "id": "y8-53entry-graph-q03-iv",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The graph hits the horizontal axis at \\(300\\). Explain what this means.",
+          "options": [
+            "The car runs out of petrol after travelling \\(300\\text{ km}\\).",
+            "The car starts with \\(300\\text{ L}\\) of petrol.",
+            "The car travels \\(300\\text{ km}\\) each hour.",
+            "The car has \\(300\\text{ L}\\) left after the trip."
+          ],
+          "answer": 0,
+          "hint": "At a horizontal-axis intercept, the vertical quantity is zero. Identify what zero petrol means in this context.",
+          "steps": [
+            {
+              "explain": "The horizontal axis represents distance travelled, and the vertical axis represents petrol remaining. At the intercept, the petrol value is zero.",
+              "work": "\\(P=0\\text{ when }K=300\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 230\" width=\"100%\" height=\"auto\"><rect width=\"350\" height=\"230\" fill=\"#fff\"/><line x1=\"55\" y1=\"25\" x2=\"55\" y2=\"185\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"55\" y1=\"185\" x2=\"315\" y2=\"185\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"55\" y1=\"45\" x2=\"315\" y2=\"185\" stroke=\"#7c3aed\" stroke-width=\"3\"/><line x1=\"315\" y1=\"185\" x2=\"315\" y2=\"194\" stroke=\"#334155\"/><line x1=\"50\" y1=\"45\" x2=\"60\" y2=\"45\" stroke=\"#334155\"/><text x=\"28\" y=\"49\" font-size=\"12\" fill=\"#334155\">60</text><text x=\"309\" y=\"208\" font-size=\"12\" fill=\"#334155\">300</text><text x=\"210\" y=\"220\" font-size=\"12\" fill=\"#334155\">Distance K (km)</text><text x=\"6\" y=\"18\" font-size=\"12\" fill=\"#334155\">Petrol P (L)</text><circle cx=\"315\" cy=\"185\" r=\"4\" fill=\"#f59e0b\"/><text x=\"256\" y=\"169\" font-size=\"11\" fill=\"#92400e\">(300, 0)</text><circle cx=\"55\" cy=\"45\" r=\"4\" fill=\"#10b981\"/><text x=\"60\" y=\"37\" font-size=\"11\" fill=\"#047857\">(0, 60)</text></svg>"
+              }
+            },
+            {
+              "explain": "Zero petrol means the car has used all its fuel. State the distance at which that occurs.",
+              "work": "\\(\\boxed{\\text{The car runs out of petrol after }300\\text{ km.}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year8 5.3 Test Entry Revision (with Answers)",
+            "pdfPage": 16,
+            "sourceQuestion": "3",
+            "sourcePart": "iv",
+            "graphReconstructedFromSurvivingAnswer": true
+          },
+          "keyPoints": [
+            {
+              "text": "hits the horizontal axis at \\(300\\)",
+              "note": "On the horizontal axis the vertical value is zero."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 230\" width=\"100%\" height=\"auto\"><rect width=\"350\" height=\"230\" fill=\"#fff\"/><line x1=\"55\" y1=\"25\" x2=\"55\" y2=\"185\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"55\" y1=\"185\" x2=\"315\" y2=\"185\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"55\" y1=\"45\" x2=\"315\" y2=\"185\" stroke=\"#7c3aed\" stroke-width=\"3\"/><line x1=\"315\" y1=\"185\" x2=\"315\" y2=\"194\" stroke=\"#334155\"/><line x1=\"50\" y1=\"45\" x2=\"60\" y2=\"45\" stroke=\"#334155\"/><text x=\"28\" y=\"49\" font-size=\"12\" fill=\"#334155\">60</text><text x=\"309\" y=\"208\" font-size=\"12\" fill=\"#334155\">300</text><text x=\"210\" y=\"220\" font-size=\"12\" fill=\"#334155\">Distance K (km)</text><text x=\"6\" y=\"18\" font-size=\"12\" fill=\"#334155\">Petrol P (L)</text><circle cx=\"315\" cy=\"185\" r=\"4\" fill=\"#f59e0b\"/><text x=\"256\" y=\"169\" font-size=\"11\" fill=\"#92400e\">(300, 0)</text><circle cx=\"55\" cy=\"45\" r=\"4\" fill=\"#10b981\"/><text x=\"60\" y=\"37\" font-size=\"11\" fill=\"#047857\">(0, 60)</text></svg>"
+          }
+        },
+        {
+          "id": "y8-53entry-graph-q03-v",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write a rule for this graph.",
+          "options": [
+            "\\(P=-\\dfrac{1}{5}K+60\\)",
+            "\\(P=\\dfrac{1}{5}K+60\\)",
+            "\\(P=-5K+60\\)",
+            "\\(P=-\\dfrac{1}{5}K+300\\)"
+          ],
+          "answer": 0,
+          "hint": "Read the vertical intercept and use the change from 60 L at 0 km to 0 L at 300 km to find the gradient.",
+          "steps": [
+            {
+              "explain": "The graph crosses the vertical axis at 60, so the starting petrol amount is the y-intercept.",
+              "work": "\\(c=60\\)"
+            },
+            {
+              "explain": "Use the points \\((0,60)\\) and \\((300,0)\\) to calculate the gradient.",
+              "work": "\\(m=\\dfrac{0-60}{300-0}=\\dfrac{-60}{300}=-\\dfrac15\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 230\" width=\"100%\" height=\"auto\"><rect width=\"350\" height=\"230\" fill=\"#fff\"/><line x1=\"55\" y1=\"25\" x2=\"55\" y2=\"185\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"55\" y1=\"185\" x2=\"315\" y2=\"185\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"55\" y1=\"45\" x2=\"315\" y2=\"185\" stroke=\"#7c3aed\" stroke-width=\"3\"/><line x1=\"315\" y1=\"185\" x2=\"315\" y2=\"194\" stroke=\"#334155\"/><line x1=\"50\" y1=\"45\" x2=\"60\" y2=\"45\" stroke=\"#334155\"/><text x=\"28\" y=\"49\" font-size=\"12\" fill=\"#334155\">60</text><text x=\"309\" y=\"208\" font-size=\"12\" fill=\"#334155\">300</text><text x=\"210\" y=\"220\" font-size=\"12\" fill=\"#334155\">Distance K (km)</text><text x=\"6\" y=\"18\" font-size=\"12\" fill=\"#334155\">Petrol P (L)</text><circle cx=\"315\" cy=\"185\" r=\"4\" fill=\"#f59e0b\"/><text x=\"256\" y=\"169\" font-size=\"11\" fill=\"#92400e\">(300, 0)</text><circle cx=\"55\" cy=\"45\" r=\"4\" fill=\"#10b981\"/><text x=\"60\" y=\"37\" font-size=\"11\" fill=\"#047857\">(0, 60)</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute the gradient and y-intercept into \\(P=mK+c\\).",
+              "work": "\\(P=-\\dfrac15K+60\\)"
+            },
+            {
+              "explain": "This is the rule for the graph.",
+              "work": "\\(\\boxed{P=-\\dfrac15K+60}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 230\" width=\"100%\" height=\"auto\"><rect width=\"350\" height=\"230\" fill=\"#fff\"/><line x1=\"55\" y1=\"25\" x2=\"55\" y2=\"185\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"55\" y1=\"185\" x2=\"315\" y2=\"185\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"55\" y1=\"45\" x2=\"315\" y2=\"185\" stroke=\"#7c3aed\" stroke-width=\"3\"/><line x1=\"315\" y1=\"185\" x2=\"315\" y2=\"194\" stroke=\"#334155\"/><line x1=\"50\" y1=\"45\" x2=\"60\" y2=\"45\" stroke=\"#334155\"/><text x=\"28\" y=\"49\" font-size=\"12\" fill=\"#334155\">60</text><text x=\"309\" y=\"208\" font-size=\"12\" fill=\"#334155\">300</text><text x=\"210\" y=\"220\" font-size=\"12\" fill=\"#334155\">Distance K (km)</text><text x=\"6\" y=\"18\" font-size=\"12\" fill=\"#334155\">Petrol P (L)</text><circle cx=\"315\" cy=\"185\" r=\"4\" fill=\"#f59e0b\"/><text x=\"256\" y=\"169\" font-size=\"11\" fill=\"#92400e\">(300, 0)</text><circle cx=\"55\" cy=\"45\" r=\"4\" fill=\"#10b981\"/><text x=\"60\" y=\"37\" font-size=\"11\" fill=\"#047857\">(0, 60)</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year8 5.3 Test Entry Revision (with Answers)",
+            "pdfPage": 16,
+            "sourceQuestion": "3",
+            "sourcePart": "v",
+            "graphReconstructedFromSurvivingAnswer": true
+          },
+          "keyPoints": [
+            {
+              "text": "Write a rule for this graph",
+              "note": "Use y-intercept plus gradient times the horizontal variable."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 230\" width=\"100%\" height=\"auto\"><rect width=\"350\" height=\"230\" fill=\"#fff\"/><line x1=\"55\" y1=\"25\" x2=\"55\" y2=\"185\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"55\" y1=\"185\" x2=\"315\" y2=\"185\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"55\" y1=\"45\" x2=\"315\" y2=\"185\" stroke=\"#7c3aed\" stroke-width=\"3\"/><line x1=\"315\" y1=\"185\" x2=\"315\" y2=\"194\" stroke=\"#334155\"/><line x1=\"50\" y1=\"45\" x2=\"60\" y2=\"45\" stroke=\"#334155\"/><text x=\"28\" y=\"49\" font-size=\"12\" fill=\"#334155\">60</text><text x=\"309\" y=\"208\" font-size=\"12\" fill=\"#334155\">300</text><text x=\"210\" y=\"220\" font-size=\"12\" fill=\"#334155\">Distance K (km)</text><text x=\"6\" y=\"18\" font-size=\"12\" fill=\"#334155\">Petrol P (L)</text><circle cx=\"315\" cy=\"185\" r=\"4\" fill=\"#f59e0b\"/><text x=\"256\" y=\"169\" font-size=\"11\" fill=\"#92400e\">(300, 0)</text><circle cx=\"55\" cy=\"45\" r=\"4\" fill=\"#10b981\"/><text x=\"60\" y=\"37\" font-size=\"11\" fill=\"#047857\">(0, 60)</text></svg>"
+          }
         }
       ]
     },

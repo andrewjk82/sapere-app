@@ -2112,6 +2112,51 @@
             "part": "",
             "origin": "exam-import"
           }
+        },
+        {
+          "id": "y8-53entry-wm-q03",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write down the value of \\(3^1\\), \\(3^2\\), \\(3^3\\), \\(3^4\\), \\(3^5\\) and \\(3^6\\). By examining the answers, find the last digit of \\(3^{2000}\\).",
+          "options": [
+            "\\(3,9,27,81,243,729;\\text{ last digit }1\\)",
+            "\\(3,9,27,81,243,729;\\text{ last digit }9\\)",
+            "\\(3,9,27,81,243,729;\\text{ last digit }3\\)",
+            "\\(3,9,27,81,243,729;\\text{ last digit }7\\)"
+          ],
+          "answer": 0,
+          "hint": "Calculate the first six powers, then track only the units digits. Look for the length of the repeating pattern.",
+          "steps": [
+            {
+              "explain": "Multiply by 3 each time to write the requested powers.",
+              "work": "\\(3^1=3,\\quad3^2=9,\\quad3^3=27,\\quad3^4=81,\\quad3^5=243,\\quad3^6=729\\)"
+            },
+            {
+              "explain": "The last digits follow a cycle of four: 3, 9, 7, 1, then repeat.",
+              "work": "\\(3,9,7,1,3,9,7,1,\\ldots\\)"
+            },
+            {
+              "explain": "Divide 2000 by the cycle length 4. A remainder of 0 means the exponent lands on the fourth digit in the cycle.",
+              "work": "\\(2000\\div4=500\\text{ remainder }0\\)"
+            },
+            {
+              "explain": "The fourth units digit in the cycle is 1.",
+              "work": "\\(\\boxed{\\text{last digit of }3^{2000}=1}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year8 5.3 Test Entry Revision (with Answers)",
+            "pdfPage": 3,
+            "sourceQuestion": "3"
+          },
+          "keyPoints": [
+            {
+              "text": "find the last digit of \\(3^{2000}\\)",
+              "note": "The units digits repeat every four powers."
+            }
+          ]
         }
       ]
     },

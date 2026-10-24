@@ -1771,6 +1771,60 @@
             "part": "",
             "origin": "exam-import"
           }
+        },
+        {
+          "id": "y8-53entry-wm-q18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The diagonals of this square are each \\(6\\sqrt{2}\\text{ cm}\\) long. Find the area of the shaded part.",
+          "options": [
+            "\\(9\\text{ cm}^2\\)",
+            "\\(18\\text{ cm}^2\\)",
+            "\\(36\\text{ cm}^2\\)",
+            "\\(6\\text{ cm}^2\\)"
+          ],
+          "answer": 0,
+          "hint": "The diagonals of a square bisect each other at right angles. The shaded triangle uses two half-diagonals as perpendicular sides.",
+          "steps": [
+            {
+              "explain": "Each diagonal is \\(6\\sqrt2\\) cm, so the half-diagonal from the centre to a vertex is half that length.",
+              "work": "\\(\\dfrac{6\\sqrt2}{2}=3\\sqrt2\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 210\" width=\"100%\" height=\"auto\"><rect x=\"42\" y=\"25\" width=\"150\" height=\"150\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><polygon points=\"42,25 42,175 117,100\" fill=\"#bbf7d0\" stroke=\"none\"/><line x1=\"42\" y1=\"25\" x2=\"117\" y2=\"100\" stroke=\"#7c3aed\" stroke-width=\"3\"/><line x1=\"42\" y1=\"175\" x2=\"117\" y2=\"100\" stroke=\"#10b981\" stroke-width=\"3\"/><line x1=\"42\" y1=\"25\" x2=\"42\" y2=\"175\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M42 160 L57 160 L57 175\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"48\" y=\"92\" font-size=\"12\" fill=\"#334155\">6</text><text x=\"70\" y=\"63\" font-size=\"12\" fill=\"#6d28d9\">3√2</text><text x=\"70\" y=\"142\" font-size=\"12\" fill=\"#047857\">3√2</text></svg>"
+              }
+            },
+            {
+              "explain": "The shaded region is one right triangle. Its two perpendicular sides are both \\(3\\sqrt2\\) cm.",
+              "work": "\\(A=\\dfrac12 bh=\\dfrac12(3\\sqrt2)(3\\sqrt2)\\)"
+            },
+            {
+              "explain": "Multiply the surds and simplify.",
+              "work": "\\(A=\\dfrac12(9\\times2)=9\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "Therefore the shaded area is 9 square centimetres.",
+              "work": "\\(\\boxed{9\\text{ cm}^2}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 210\" width=\"100%\" height=\"auto\"><rect x=\"42\" y=\"25\" width=\"150\" height=\"150\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><polygon points=\"42,25 42,175 117,100\" fill=\"#bbf7d0\" stroke=\"none\"/><line x1=\"42\" y1=\"25\" x2=\"117\" y2=\"100\" stroke=\"#7c3aed\" stroke-width=\"3\"/><line x1=\"42\" y1=\"175\" x2=\"117\" y2=\"100\" stroke=\"#10b981\" stroke-width=\"3\"/><line x1=\"42\" y1=\"25\" x2=\"42\" y2=\"175\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M42 160 L57 160 L57 175\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"48\" y=\"92\" font-size=\"12\" fill=\"#334155\">6</text><text x=\"70\" y=\"63\" font-size=\"12\" fill=\"#6d28d9\">3√2</text><text x=\"70\" y=\"142\" font-size=\"12\" fill=\"#047857\">3√2</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year8 5.3 Test Entry Revision (with Answers)",
+            "pdfPage": 13,
+            "sourceQuestion": "18"
+          },
+          "keyPoints": [
+            {
+              "text": "Find the area of the shaded part",
+              "note": "Use one shaded triangle, not the whole square."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 210\" width=\"100%\" height=\"auto\"><rect x=\"42\" y=\"25\" width=\"150\" height=\"150\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2\"/><polygon points=\"42,25 42,175 117,100\" fill=\"#dbeafe\" stroke=\"none\"/><line x1=\"42\" y1=\"25\" x2=\"192\" y2=\"175\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"42\" y1=\"175\" x2=\"192\" y2=\"25\" stroke=\"#64748b\" stroke-width=\"1.8\"/><text x=\"77\" y=\"16\" font-size=\"12\" fill=\"#334155\">each diagonal = 6√2 cm</text></svg>"
+          }
         }
       ]
     },
@@ -4603,6 +4657,53 @@
           "xp": 1,
           "meta": {
             "source": "Task 3 2022.pdf"
+          }
+        },
+        {
+          "id": "y8-53entry-circles-q08",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The surface area of a tennis ball (the amount of fabric required to make it) is given by the formula \\(A=4\\pi r^2\\) (4 times a circle). If the surface area of a tennis ball is \\(132.73\\text{ cm}^2\\), what is the diameter (to 2 decimal places)?",
+          "options": [
+            "\\(6.50\\text{ cm}\\)",
+            "\\(3.25\\text{ cm}\\)",
+            "\\(13.00\\text{ cm}\\)",
+            "\\(5.78\\text{ cm}\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute the surface area into the given formula, solve for the positive radius, and double it to get the diameter.",
+          "steps": [
+            {
+              "explain": "Use the provided surface-area formula and substitute the area.",
+              "work": "\\(132.73=4\\pi r^2\\)"
+            },
+            {
+              "explain": "Divide by \\(4\\pi\\) to isolate \\(r^2\\), then take the positive square root because radius is a length.",
+              "work": "\\(r^2=\\dfrac{132.73}{4\\pi}\\approx10.5623\\)\n\\(r\\approx\\sqrt{10.5623}\\approx3.2499\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 150\" width=\"100%\" height=\"auto\"><circle cx=\"92\" cy=\"76\" r=\"48\" fill=\"#fef9c3\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M55 55 C80 72 106 86 131 97 M56 97 C83 83 108 66 130 53\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/><line x1=\"92\" y1=\"76\" x2=\"140\" y2=\"76\" stroke=\"#7c3aed\" stroke-width=\"2\"/><text x=\"111\" y=\"69\" font-size=\"12\" fill=\"#6d28d9\">r</text></svg>"
+              }
+            },
+            {
+              "explain": "Diameter is twice the radius. Round only at the end to two decimal places.",
+              "work": "\\(d=2r\\approx2(3.2499)=6.4998\\text{ cm}\\approx\\boxed{6.50\\text{ cm}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year8 5.3 Test Entry Revision (with Answers)",
+            "pdfPage": 11,
+            "sourceQuestion": "8"
+          },
+          "keyPoints": [
+            {
+              "text": "what is the diameter (to 2 decimal places)",
+              "note": "The formula gives radius squared; diameter is twice the radius."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 150\" width=\"100%\" height=\"auto\"><circle cx=\"92\" cy=\"76\" r=\"48\" fill=\"#fef9c3\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M55 55 C80 72 106 86 131 97 M56 97 C83 83 108 66 130 53\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/><line x1=\"92\" y1=\"76\" x2=\"140\" y2=\"76\" stroke=\"#7c3aed\" stroke-width=\"2\"/><text x=\"111\" y=\"69\" font-size=\"12\" fill=\"#6d28d9\">r</text></svg>"
           }
         }
       ]

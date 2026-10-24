@@ -2689,6 +2689,52 @@
             "\\(a=4\\)"
           ],
           "answer": 0
+        },
+        {
+          "id": "y8-53entry-age-q03f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A man is twice as old as his daughter. 10 years ago, he was three times as old as her. How old is the daughter now? (Write an algebraic equation and solve this problem)",
+          "options": [
+            "\\(20\\text{ years}\\)",
+            "\\(10\\text{ years}\\)",
+            "\\(30\\text{ years}\\)",
+            "\\(40\\text{ years}\\)"
+          ],
+          "answer": 0,
+          "hint": "Let the daughter’s current age be x. Write both ages 10 years ago, then translate “three times as old” into an equation.",
+          "steps": [
+            {
+              "explain": "Let \\(x\\) be the daughter’s current age. The man is twice as old, so his current age is \\(2x\\).",
+              "work": "Daughter now: \\(x\\)\nMan now: \\(2x\\)"
+            },
+            {
+              "explain": "Ten years ago, subtract 10 from each person’s current age. At that time the man was three times the daughter’s age.",
+              "work": "\\(2x-10=3(x-10)\\)"
+            },
+            {
+              "explain": "Expand the brackets and solve.",
+              "work": "\\(2x-10=3x-30\\)\n\\(-10=x-30\\)\n\\(x=20\\)"
+            },
+            {
+              "explain": "The daughter is now 20 years old. Check: the man is 40; ten years ago they were 30 and 10, and 30 is three times 10.",
+              "work": "\\(\\boxed{20\\text{ years}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year8 5.3 Test Entry Revision (with Answers)",
+            "pdfPage": 15,
+            "sourceQuestion": "3",
+            "sourcePart": "f"
+          },
+          "keyPoints": [
+            {
+              "text": "10 years ago",
+              "note": "Subtract 10 from both current ages before comparing them."
+            }
+          ]
         }
       ]
     },
@@ -2950,6 +2996,51 @@
             {
               "text": "$125 per hour",
               "note": "Divide the hourly-work amount by $125 to find the number of hours."
+            }
+          ]
+        },
+        {
+          "id": "y8-53entry-wm-q11",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Sam has 4 times as much money as Rebecca. Tim has \\(\\$3\\) less than Rebecca. If Rebecca has \\(\\$p\\), how much money do the 3 of them have altogether?",
+          "options": [
+            "\\(6p-3\\) dollars",
+            "\\(5p-3\\) dollars",
+            "\\(6p+3\\) dollars",
+            "\\(4p-3\\) dollars"
+          ],
+          "answer": 0,
+          "hint": "Write each person’s amount in terms of p, then add all three amounts.",
+          "steps": [
+            {
+              "explain": "Rebecca has \\(p\\) dollars. Sam has four times Rebecca’s amount.",
+              "work": "Rebecca: \\(p\\),\\quad Sam: \\(4p\\)"
+            },
+            {
+              "explain": "Tim has $3 less than Rebecca, so subtract 3 from p.",
+              "work": "Tim: \\(p-3\\)"
+            },
+            {
+              "explain": "Add the three amounts and collect like terms.",
+              "work": "\\(p+4p+(p-3)=p+4p+p-3=6p-3\\)"
+            },
+            {
+              "explain": "The total is \\(6p-3\\) dollars.",
+              "work": "\\(\\boxed{6p-3}\\text{ dollars}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year8 5.3 Test Entry Revision (with Answers)",
+            "pdfPage": 7,
+            "sourceQuestion": "11"
+          },
+          "keyPoints": [
+            {
+              "text": "Rebecca has \\(\\$p\\)",
+              "note": "Represent each person’s money using p before adding."
             }
           ]
         }

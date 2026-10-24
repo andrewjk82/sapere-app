@@ -654,6 +654,58 @@
           "meta": {
             "source": "Task 3 2022.pdf"
           }
+        },
+        {
+          "id": "y8-53entry-wm-q05c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "ABCD is a figure consisting of a triangle with a semicircle on one of its sides. Find the perimeter of ABCD correct to one decimal place.",
+          "options": [
+            "\\(74.8\\text{ cm}\\)",
+            "\\(60.8\\text{ cm}\\)",
+            "\\(50.8\\text{ cm}\\)",
+            "\\(83.7\\text{ cm}\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the triangle hypotenuse BD first; it is the semicircle diameter. For the perimeter, add the two straight outside sides and the semicircular arc only.",
+          "steps": [
+            {
+              "explain": "At the right angle A, the perpendicular sides are AB = 10 cm and AD = 24 cm. The hypotenuse BD is shared with the semicircle, so BD is its diameter.",
+              "work": "\\(BD=\\sqrt{10^2+24^2}=\\sqrt{100+576}=26\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 250\" width=\"100%\" height=\"auto\"><path d=\"M55 68 A116.5 116.5 0 0 1 245 200 L55 68 Z\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"55\" y1=\"68\" x2=\"55\" y2=\"200\" stroke=\"#10b981\" stroke-width=\"3\"/><line x1=\"55\" y1=\"200\" x2=\"245\" y2=\"200\" stroke=\"#10b981\" stroke-width=\"3\"/><line x1=\"55\" y1=\"68\" x2=\"245\" y2=\"200\" stroke=\"#7c3aed\" stroke-width=\"3\"/><path d=\"M55 184 L71 184 L71 200\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"37\" y=\"61\" font-size=\"12\" fill=\"#334155\">B</text><text x=\"38\" y=\"216\" font-size=\"12\" fill=\"#334155\">A</text><text x=\"247\" y=\"216\" font-size=\"12\" fill=\"#334155\">D</text><text x=\"36\" y=\"135\" font-size=\"12\" fill=\"#047857\">10</text><text x=\"143\" y=\"218\" font-size=\"12\" fill=\"#047857\">24</text></svg>"
+              }
+            },
+            {
+              "explain": "The semicircle radius is half its diameter. Its curved boundary is half the circumference of a full circle.",
+              "work": "\\(r=26\\div2=13\\text{ cm}\\)\n\\(\\text{arc length}=\\dfrac12(2\\pi r)=13\\pi\\text{ cm}\\)"
+            },
+            {
+              "explain": "BD is inside the composite figure, so it is not part of the outside perimeter. Add AB, AD and the semicircular arc.",
+              "work": "\\(P=10+24+13\\pi\\approx74.8407\\text{ cm}\\)"
+            },
+            {
+              "explain": "Round to one decimal place.",
+              "work": "\\(\\boxed{74.8\\text{ cm}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year8 5.3 Test Entry Revision (with Answers)",
+            "pdfPage": 18,
+            "sourceQuestion": "5",
+            "sourcePart": "c"
+          },
+          "keyPoints": [
+            {
+              "text": "correct to one decimal place",
+              "note": "Keep the diameter BD out of the perimeter; it is an internal shared side."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 250\" width=\"100%\" height=\"auto\"><path d=\"M55 68 A116.5 116.5 0 0 1 245 200 L55 68 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"55\" y1=\"68\" x2=\"55\" y2=\"200\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"55\" y1=\"200\" x2=\"245\" y2=\"200\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"55\" y1=\"68\" x2=\"245\" y2=\"200\" stroke=\"#64748b\" stroke-width=\"1.6\"/><path d=\"M55 184 L71 184 L71 200\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"37\" y=\"61\" font-size=\"12\" fill=\"#334155\">B</text><text x=\"38\" y=\"216\" font-size=\"12\" fill=\"#334155\">A</text><text x=\"247\" y=\"216\" font-size=\"12\" fill=\"#334155\">D</text><text x=\"205\" y=\"57\" font-size=\"12\" fill=\"#334155\">C</text><text x=\"36\" y=\"135\" font-size=\"12\" fill=\"#334155\">10</text><text x=\"143\" y=\"218\" font-size=\"12\" fill=\"#334155\">24</text></svg>"
+          }
         }
       ]
     },
@@ -840,6 +892,57 @@
           "xp": 1,
           "meta": {
             "source": "Task 3 2022.pdf"
+          }
+        },
+        {
+          "id": "y8-53entry-wm-q05a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In the diagram, three semicircles lie above the \\(x\\)-axis. All areas marked \\(A\\) are equal to one another. All areas marked \\(B\\) are equal to one another. Find the ratio of areas \\(A:B\\).",
+          "options": [
+            "\\(5:6\\)",
+            "\\(6:5\\)",
+            "\\(1:1\\)",
+            "\\(4:5\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the radii marked on the x-axis. Find the total area in the three A regions and in the five B regions, then compare one region of each type.",
+          "steps": [
+            {
+              "explain": "The three semicircles have radii 1, 3 and 5. The A band is between radii 1 and 3, and is divided into 3 equal regions.",
+              "work": "\\(\\text{Total A-band area}=\\dfrac12\\pi(3^2-1^2)=4\\pi\\)\n\\(A=\\dfrac{4\\pi}{3}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" width=\"100%\" height=\"auto\"><path d=\"M35 145 A120 120 0 0 1 275 145\" fill=\"none\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M83 145 A72 72 0 0 1 227 145\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\"/><path d=\"M131 145 A24 24 0 0 1 179 145\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"3\"/><line x1=\"35\" y1=\"145\" x2=\"275\" y2=\"145\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"94\" y=\"96\" font-size=\"12\" fill=\"#6d28d9\">r = 3</text><text x=\"139\" y=\"136\" font-size=\"11\" fill=\"#047857\">r = 1</text><text x=\"204\" y=\"62\" font-size=\"12\" fill=\"#334155\">A: 3 sectors</text><text x=\"204\" y=\"80\" font-size=\"12\" fill=\"#334155\">B: 5 sectors</text></svg>"
+              }
+            },
+            {
+              "explain": "The B band is between radii 3 and 5, and is divided into 5 equal regions.",
+              "work": "\\(\\text{Total B-band area}=\\dfrac12\\pi(5^2-3^2)=8\\pi\\)\n\\(B=\\dfrac{8\\pi}{5}\\)"
+            },
+            {
+              "explain": "Form the ratio and multiply both terms by 15 to clear the denominators.",
+              "work": "\\(A:B=\\dfrac{4\\pi}{3}:\\dfrac{8\\pi}{5}=20\\pi:24\\pi=\\boxed{5:6}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" width=\"100%\" height=\"auto\"><path d=\"M35 145 A120 120 0 0 1 275 145\" fill=\"none\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M83 145 A72 72 0 0 1 227 145\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\"/><path d=\"M131 145 A24 24 0 0 1 179 145\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"3\"/><line x1=\"35\" y1=\"145\" x2=\"275\" y2=\"145\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"94\" y=\"96\" font-size=\"12\" fill=\"#6d28d9\">r = 3</text><text x=\"139\" y=\"136\" font-size=\"11\" fill=\"#047857\">r = 1</text><text x=\"204\" y=\"62\" font-size=\"12\" fill=\"#334155\">A: 3 sectors</text><text x=\"204\" y=\"80\" font-size=\"12\" fill=\"#334155\">B: 5 sectors</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year8 5.3 Test Entry Revision (with Answers)",
+            "pdfPage": 16,
+            "sourceQuestion": "5",
+            "sourcePart": "a"
+          },
+          "keyPoints": [
+            {
+              "text": "All areas marked \\(A\\) are equal to one another.",
+              "note": "Divide the full A-band and B-band areas by their respective sector counts."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 190\" width=\"100%\" height=\"auto\"><path d=\"M35 150 A120 120 0 0 1 275 150\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M83 150 A72 72 0 0 1 227 150\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2\"/><path d=\"M131 150 A24 24 0 0 1 179 150\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"2\"/><line x1=\"35\" y1=\"150\" x2=\"275\" y2=\"150\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"35\" y1=\"26\" x2=\"35\" y2=\"150\" stroke=\"#334155\" stroke-width=\"1.3\"/><g stroke=\"#f59e0b\" stroke-width=\"1.4\"><line x1=\"213.3\" y1=\"107.7\" x2=\"252.1\" y2=\"79.4\"/><line x1=\"197.4\" y1=\"91.7\" x2=\"225.6\" y2=\"52.9\"/><line x1=\"112.6\" y1=\"91.7\" x2=\"84.4\" y2=\"52.9\"/><line x1=\"96.7\" y1=\"107.7\" x2=\"57.9\" y2=\"79.4\"/></g><g stroke=\"#7c3aed\" stroke-width=\"1.4\"><line x1=\"167\" y1=\"129.2\" x2=\"191\" y2=\"87.6\"/><line x1=\"143\" y1=\"129.2\" x2=\"119\" y2=\"87.6\"/></g><g font-size=\"11\" font-weight=\"bold\"><text x=\"149\" y=\"111\" fill=\"#6d28d9\">A</text><text x=\"124\" y=\"124\" fill=\"#6d28d9\">A</text><text x=\"181\" y=\"124\" fill=\"#6d28d9\">A</text><text x=\"66\" y=\"115\" fill=\"#b45309\">B</text><text x=\"94\" y=\"66\" fill=\"#b45309\">B</text><text x=\"150\" y=\"49\" fill=\"#b45309\">B</text><text x=\"212\" y=\"66\" fill=\"#b45309\">B</text><text x=\"239\" y=\"115\" fill=\"#b45309\">B</text></g><text x=\"23\" y=\"170\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"75\" y=\"170\" font-size=\"10\" fill=\"#334155\">2</text><text x=\"123\" y=\"170\" font-size=\"10\" fill=\"#334155\">4</text><text x=\"171\" y=\"170\" font-size=\"10\" fill=\"#334155\">6</text><text x=\"219\" y=\"170\" font-size=\"10\" fill=\"#334155\">8</text><text x=\"267\" y=\"170\" font-size=\"10\" fill=\"#334155\">10</text></svg>"
           }
         }
       ]
@@ -1037,6 +1140,125 @@
             "marks": 2,
             "part": "",
             "origin": "exam-import"
+          }
+        },
+        {
+          "id": "y8-53entry-lshape",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Find the perimeter and area of the shaded region.",
+          "parts": [
+            {
+              "id": "y8-53entry-lshape-perimeter",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the perimeter of the shaded region.",
+              "options": [
+                "\\(6x+12\\text{ cm}\\)",
+                "\\(6x+6\\text{ cm}\\)",
+                "\\(12x+12\\text{ cm}\\)",
+                "\\(3x+12\\text{ cm}\\)"
+              ],
+              "answer": 0,
+              "hint": "Add all six outside edges. The missing bottom width is 2x + x, and the total height is 3 + 3.",
+              "steps": [
+                {
+                  "explain": "The bottom edge spans the two horizontal sections labelled 2x cm and x cm. The total height is the two 3 cm sections.",
+                  "work": "Bottom: \\(2x+x=3x\\)\nRight side: \\(3+3=6\\text{ cm}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 220\" width=\"100%\" height=\"auto\"><path d=\"M45 175 H245 V55 H175 V105 H45 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"185\" y=\"45\" font-size=\"12\" fill=\"#334155\">x cm</text><text x=\"94\" y=\"96\" font-size=\"12\" fill=\"#334155\">2x cm</text><text x=\"24\" y=\"145\" font-size=\"12\" fill=\"#334155\">3 cm</text><text x=\"148\" y=\"75\" font-size=\"12\" fill=\"#334155\">3 cm</text><text x=\"255\" y=\"118\" font-size=\"12\" fill=\"#334155\">6 cm</text><text x=\"135\" y=\"197\" font-size=\"12\" fill=\"#334155\">3x cm</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Add the six outside edges: top x, inner vertical 3, inner horizontal 2x, left vertical 3, bottom 3x, and right vertical 6.",
+                  "work": "\\(P=x+3+2x+3+3x+6\\)"
+                },
+                {
+                  "explain": "Collect like terms.",
+                  "work": "\\(P=(x+2x+3x)+(3+3+6)=\\boxed{6x+12\\text{ cm}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Year8 5.3 Test Entry Revision (with Answers)",
+                "pdfPage": 19,
+                "sourceQuestion": "3",
+                "sourcePart": "iii-a"
+              },
+              "keyPoints": [
+                {
+                  "text": "Find the perimeter of the shaded region.",
+                  "note": "Include only the outer boundary, and work out the missing bottom and right sides."
+                }
+              ],
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 220\" width=\"100%\" height=\"auto\"><path d=\"M45 175 H245 V55 H175 V105 H45 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"185\" y=\"45\" font-size=\"12\" fill=\"#334155\">x cm</text><text x=\"94\" y=\"96\" font-size=\"12\" fill=\"#334155\">2x cm</text><text x=\"24\" y=\"145\" font-size=\"12\" fill=\"#334155\">3 cm</text><text x=\"148\" y=\"75\" font-size=\"12\" fill=\"#334155\">3 cm</text><text x=\"255\" y=\"118\" font-size=\"12\" fill=\"#334155\">6 cm</text><text x=\"135\" y=\"197\" font-size=\"12\" fill=\"#334155\">3x cm</text></svg>"
+              }
+            },
+            {
+              "id": "y8-53entry-lshape-area",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the area of the shaded region.",
+              "options": [
+                "\\(12x\\text{ cm}^2\\)",
+                "\\(9x\\text{ cm}^2\\)",
+                "\\(6x+12\\text{ cm}^2\\)",
+                "\\(12x^2\\text{ cm}^2\\)"
+              ],
+              "answer": 0,
+              "hint": "Split the L shape into two non-overlapping rectangles and calculate each rectangle’s area.",
+              "steps": [
+                {
+                  "explain": "Split the shape at the inside corner. The lower rectangle is \\(3x\\) cm wide and 3 cm high; the upper-right rectangle is x cm wide and 3 cm high.",
+                  "work": "Lower area: \\(3x\\times3=9x\\text{ cm}^2\\)\nUpper area: \\(x\\times3=3x\\text{ cm}^2\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 220\" width=\"100%\" height=\"auto\"><path d=\"M45 175 H245 V55 H175 V105 H45 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"185\" y=\"45\" font-size=\"12\" fill=\"#334155\">x cm</text><text x=\"94\" y=\"96\" font-size=\"12\" fill=\"#334155\">2x cm</text><text x=\"24\" y=\"145\" font-size=\"12\" fill=\"#334155\">3 cm</text><text x=\"148\" y=\"75\" font-size=\"12\" fill=\"#334155\">3 cm</text><text x=\"255\" y=\"118\" font-size=\"12\" fill=\"#334155\">6 cm</text><text x=\"135\" y=\"197\" font-size=\"12\" fill=\"#334155\">3x cm</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Add the two non-overlapping areas.",
+                  "work": "\\(9x+3x=12x\\text{ cm}^2\\)"
+                },
+                {
+                  "explain": "The shaded area is \\(12x\\text{ cm}^2\\).",
+                  "work": "\\(\\boxed{12x\\text{ cm}^2}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 220\" width=\"100%\" height=\"auto\"><path d=\"M45 175 H245 V55 H175 V105 H45 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"185\" y=\"45\" font-size=\"12\" fill=\"#334155\">x cm</text><text x=\"94\" y=\"96\" font-size=\"12\" fill=\"#334155\">2x cm</text><text x=\"24\" y=\"145\" font-size=\"12\" fill=\"#334155\">3 cm</text><text x=\"148\" y=\"75\" font-size=\"12\" fill=\"#334155\">3 cm</text><text x=\"255\" y=\"118\" font-size=\"12\" fill=\"#334155\">6 cm</text><text x=\"135\" y=\"197\" font-size=\"12\" fill=\"#334155\">3x cm</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Year8 5.3 Test Entry Revision (with Answers)",
+                "pdfPage": 19,
+                "sourceQuestion": "3",
+                "sourcePart": "iii-b"
+              },
+              "keyPoints": [
+                {
+                  "text": "Find the area of the shaded region.",
+                  "note": "Split the L into two rectangles and add their areas."
+                }
+              ],
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 220\" width=\"100%\" height=\"auto\"><path d=\"M45 175 H245 V55 H175 V105 H45 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"185\" y=\"45\" font-size=\"12\" fill=\"#334155\">x cm</text><text x=\"94\" y=\"96\" font-size=\"12\" fill=\"#334155\">2x cm</text><text x=\"24\" y=\"145\" font-size=\"12\" fill=\"#334155\">3 cm</text><text x=\"148\" y=\"75\" font-size=\"12\" fill=\"#334155\">3 cm</text><text x=\"255\" y=\"118\" font-size=\"12\" fill=\"#334155\">6 cm</text><text x=\"135\" y=\"197\" font-size=\"12\" fill=\"#334155\">3x cm</text></svg>"
+              }
+            }
+          ],
+          "hint": "Use the labelled dimensions to find any missing full side first. For area, split the shape into rectangles; for perimeter, trace only the outside edge.",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year8 5.3 Test Entry Revision (with Answers)",
+            "pdfPage": 19,
+            "sourceQuestion": "3",
+            "sourcePart": "iii"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 220\" width=\"100%\" height=\"auto\"><path d=\"M45 175 H245 V55 H175 V105 H45 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"185\" y=\"45\" font-size=\"12\" fill=\"#334155\">x cm</text><text x=\"94\" y=\"96\" font-size=\"12\" fill=\"#334155\">2x cm</text><text x=\"24\" y=\"145\" font-size=\"12\" fill=\"#334155\">3 cm</text><text x=\"148\" y=\"75\" font-size=\"12\" fill=\"#334155\">3 cm</text><text x=\"255\" y=\"118\" font-size=\"12\" fill=\"#334155\">6 cm</text><text x=\"135\" y=\"197\" font-size=\"12\" fill=\"#334155\">3x cm</text></svg>"
           }
         }
       ]
