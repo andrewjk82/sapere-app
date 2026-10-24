@@ -1,4 +1,5 @@
 import { buildCheckedNotification } from '../utils/homeworkMarking';
+import { withTimeout, TIMEOUT_MESSAGE } from '../utils/withTimeout';
 import {
   collection, doc, getDoc, getDocs, query, where, writeBatch, serverTimestamp,
 } from 'firebase/firestore';
@@ -73,7 +74,9 @@ export async function submitHomework({ uid, studentName, session, pageRecords, p
   }));
 
   const subRef = doc(db, SUBMISSIONS, session.id);
-  const prevSnap = await getDoc(subRef);
+  // Firestore never answering (offline, blocked network, stuck local cache) must not leave the student on a spinner:
+  // give up with 'network' — the work stays saved on the device and the student can simply submit again.
+  const prevSnap = await withTimeout(getDoc(subRef), 20000).catch((err) => { throw err?.message === TIMEOUT_MESSAGE ? new Error('network') : err; });
   if (prevSnap.exists() && prevSnap.data().status === 'checked') throw new Error('already-checked');
   const prevCount = prevSnap.exists() ? Number(prevSnap.data().pageCount) || 0 : 0;
 
@@ -128,7 +131,11 @@ export async function submitHomework({ uid, studentName, session, pageRecords, p
     } else {
       batch.set(subRef, { ...base, uploading: true });
     }
-    await batch.commit();
+    try {
+      await withTimeout(batch.commit(), 90000);
+    } catch (err) {
+      throw err?.message === TIMEOUT_MESSAGE ? new Error('network') : err;
+    }
   };
 
   const commitWithRetry = async (part, isLast) => {

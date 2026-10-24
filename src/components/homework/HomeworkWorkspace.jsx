@@ -21,6 +21,7 @@ const SUBMIT_ERRORS = {
   'page-too-large': 'One page is too detailed to upload. Try splitting it across two pages.',
   'too-large': 'This homework is too large to upload. Try using fewer pages.',
   'already-checked': 'Your teacher has already checked this homework.',
+  network: 'Couldn’t reach the server. Your work is saved on this device — check your internet connection, then press Submit again.',
 };
 
 const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitted }) => {
