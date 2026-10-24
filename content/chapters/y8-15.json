@@ -1790,7 +1790,7 @@
               "explain": "Each diagonal is \\(6\\sqrt2\\) cm, so the half-diagonal from the centre to a vertex is half that length.",
               "work": "\\(\\dfrac{6\\sqrt2}{2}=3\\sqrt2\\text{ cm}\\)",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 210\" width=\"100%\" height=\"auto\"><rect x=\"42\" y=\"25\" width=\"150\" height=\"150\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><polygon points=\"42,25 42,175 117,100\" fill=\"#bbf7d0\" stroke=\"none\"/><line x1=\"42\" y1=\"25\" x2=\"117\" y2=\"100\" stroke=\"#7c3aed\" stroke-width=\"3\"/><line x1=\"42\" y1=\"175\" x2=\"117\" y2=\"100\" stroke=\"#10b981\" stroke-width=\"3\"/><line x1=\"42\" y1=\"25\" x2=\"42\" y2=\"175\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M42 160 L57 160 L57 175\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"48\" y=\"92\" font-size=\"12\" fill=\"#334155\">6</text><text x=\"70\" y=\"63\" font-size=\"12\" fill=\"#6d28d9\">3√2</text><text x=\"70\" y=\"142\" font-size=\"12\" fill=\"#047857\">3√2</text></svg>"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 210\" width=\"50%\" height=\"auto\"><rect x=\"42\" y=\"25\" width=\"150\" height=\"150\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><polygon points=\"42,25 42,175 117,100\" fill=\"#bbf7d0\" stroke=\"none\"/><line x1=\"42\" y1=\"25\" x2=\"117\" y2=\"100\" stroke=\"#7c3aed\" stroke-width=\"3\"/><line x1=\"42\" y1=\"175\" x2=\"117\" y2=\"100\" stroke=\"#10b981\" stroke-width=\"3\"/><line x1=\"42\" y1=\"25\" x2=\"42\" y2=\"175\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M42 160 L57 160 L57 175\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"48\" y=\"92\" font-size=\"12\" fill=\"#334155\">6</text><text x=\"70\" y=\"63\" font-size=\"12\" fill=\"#6d28d9\">3√2</text><text x=\"70\" y=\"142\" font-size=\"12\" fill=\"#047857\">3√2</text></svg>"
               }
             },
             {
@@ -1805,7 +1805,7 @@
               "explain": "Therefore the shaded area is 9 square centimetres.",
               "work": "\\(\\boxed{9\\text{ cm}^2}\\)",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 210\" width=\"100%\" height=\"auto\"><rect x=\"42\" y=\"25\" width=\"150\" height=\"150\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><polygon points=\"42,25 42,175 117,100\" fill=\"#bbf7d0\" stroke=\"none\"/><line x1=\"42\" y1=\"25\" x2=\"117\" y2=\"100\" stroke=\"#7c3aed\" stroke-width=\"3\"/><line x1=\"42\" y1=\"175\" x2=\"117\" y2=\"100\" stroke=\"#10b981\" stroke-width=\"3\"/><line x1=\"42\" y1=\"25\" x2=\"42\" y2=\"175\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M42 160 L57 160 L57 175\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"48\" y=\"92\" font-size=\"12\" fill=\"#334155\">6</text><text x=\"70\" y=\"63\" font-size=\"12\" fill=\"#6d28d9\">3√2</text><text x=\"70\" y=\"142\" font-size=\"12\" fill=\"#047857\">3√2</text></svg>"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 210\" width=\"50%\" height=\"auto\"><rect x=\"42\" y=\"25\" width=\"150\" height=\"150\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><polygon points=\"42,25 42,175 117,100\" fill=\"#bbf7d0\" stroke=\"none\"/><line x1=\"42\" y1=\"25\" x2=\"117\" y2=\"100\" stroke=\"#7c3aed\" stroke-width=\"3\"/><line x1=\"42\" y1=\"175\" x2=\"117\" y2=\"100\" stroke=\"#10b981\" stroke-width=\"3\"/><line x1=\"42\" y1=\"25\" x2=\"42\" y2=\"175\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M42 160 L57 160 L57 175\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"48\" y=\"92\" font-size=\"12\" fill=\"#334155\">6</text><text x=\"70\" y=\"63\" font-size=\"12\" fill=\"#6d28d9\">3√2</text><text x=\"70\" y=\"142\" font-size=\"12\" fill=\"#047857\">3√2</text></svg>"
               }
             }
           ],
@@ -1823,7 +1823,7 @@
             }
           ],
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 210\" width=\"100%\" height=\"auto\"><rect x=\"42\" y=\"25\" width=\"150\" height=\"150\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2\"/><polygon points=\"42,25 42,175 117,100\" fill=\"#dbeafe\" stroke=\"none\"/><line x1=\"42\" y1=\"25\" x2=\"192\" y2=\"175\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"42\" y1=\"175\" x2=\"192\" y2=\"25\" stroke=\"#64748b\" stroke-width=\"1.8\"/><text x=\"77\" y=\"16\" font-size=\"12\" fill=\"#334155\">each diagonal = 6√2 cm</text></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 210\" width=\"50%\" height=\"auto\"><rect x=\"42\" y=\"25\" width=\"150\" height=\"150\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2\"/><polygon points=\"42,25 42,175 117,100\" fill=\"#dbeafe\" stroke=\"none\"/><line x1=\"42\" y1=\"25\" x2=\"192\" y2=\"175\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"42\" y1=\"175\" x2=\"192\" y2=\"25\" stroke=\"#64748b\" stroke-width=\"1.8\"/><text x=\"77\" y=\"16\" font-size=\"12\" fill=\"#334155\">each diagonal = 6√2 cm</text></svg>"
           }
         }
       ]
@@ -4681,7 +4681,7 @@
               "explain": "Divide by \\(4\\pi\\) to isolate \\(r^2\\), then take the positive square root because radius is a length.",
               "work": "\\(r^2=\\dfrac{132.73}{4\\pi}\\approx10.5623\\)\n\\(r\\approx\\sqrt{10.5623}\\approx3.2499\\text{ cm}\\)",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 150\" width=\"100%\" height=\"auto\"><circle cx=\"92\" cy=\"76\" r=\"48\" fill=\"#fef9c3\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M55 55 C80 72 106 86 131 97 M56 97 C83 83 108 66 130 53\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/><line x1=\"92\" y1=\"76\" x2=\"140\" y2=\"76\" stroke=\"#7c3aed\" stroke-width=\"2\"/><text x=\"111\" y=\"69\" font-size=\"12\" fill=\"#6d28d9\">r</text></svg>"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 150\" width=\"50%\" height=\"auto\"><circle cx=\"92\" cy=\"76\" r=\"48\" fill=\"#fef9c3\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M55 55 C80 72 106 86 131 97 M56 97 C83 83 108 66 130 53\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/><line x1=\"92\" y1=\"76\" x2=\"140\" y2=\"76\" stroke=\"#7c3aed\" stroke-width=\"2\"/><text x=\"111\" y=\"69\" font-size=\"12\" fill=\"#6d28d9\">r</text></svg>"
               }
             },
             {
@@ -4703,7 +4703,7 @@
             }
           ],
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 150\" width=\"100%\" height=\"auto\"><circle cx=\"92\" cy=\"76\" r=\"48\" fill=\"#fef9c3\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M55 55 C80 72 106 86 131 97 M56 97 C83 83 108 66 130 53\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/><line x1=\"92\" y1=\"76\" x2=\"140\" y2=\"76\" stroke=\"#7c3aed\" stroke-width=\"2\"/><text x=\"111\" y=\"69\" font-size=\"12\" fill=\"#6d28d9\">r</text></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 150\" width=\"50%\" height=\"auto\"><circle cx=\"92\" cy=\"76\" r=\"48\" fill=\"#fef9c3\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M55 55 C80 72 106 86 131 97 M56 97 C83 83 108 66 130 53\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/><line x1=\"92\" y1=\"76\" x2=\"140\" y2=\"76\" stroke=\"#7c3aed\" stroke-width=\"2\"/><text x=\"111\" y=\"69\" font-size=\"12\" fill=\"#6d28d9\">r</text></svg>"
           }
         }
       ]
