@@ -69,6 +69,7 @@ the user and prevents them from returning in later imports.
   source. Use dashed lines for genuinely hidden edges, solid lines for visible
   edges, and distinguish given dimensions from lengths being found. For
   step-by-step geometry, highlight the exact sides/angles used at that step.
+- For every step figure, identify the visual information that step reads and mark it directly on the figure. Use different annotations as the solution progresses; never repeat a full unannotated graph/diagram as filler. Pair the highlight with the relevant calculation. Remove a figure from steps that only perform algebra or arithmetic when the image adds no new information. Compare all figures in each solution sequence before release.
 - Directly compare every imported or redrawn figure with the source PDF. Verify
   which side each length labels, which vertex owns each angle, all vertex
   correspondences in 3D solids, and whether each visible/hidden edge is drawn

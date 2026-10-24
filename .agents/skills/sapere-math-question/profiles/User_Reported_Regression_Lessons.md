@@ -34,6 +34,7 @@ recurring student-facing problems the user has reported across Years 7–10.
   used, explain opposite/adjacent/hypotenuse or included-angle relationships,
   and highlight those exact features in the corresponding step figure. Progress
   the figure as the reasoning advances; do not repeat an unannotated diagram.
+- A step figure is not decoration or a repeated reference image: it must show what that step reads or uses. Add a distinct highlight (such as a marked graph endpoint/projection, shaded region, selected table cell, or highlighted side/angle) and explain its mathematical use in the adjacent calculation. Do not repeat the same full graph unchanged across steps. Omit figures from purely algebraic calculation or final-answer steps when they add no new visual information. Compare every figure in a solution sequence side by side and verify that each retained one advances the explanation.
 
 ## Solutions, hints, and mathematical notation
 
