@@ -23,6 +23,7 @@ import {
   generateQuestion,
 } from "./questionGenerator";
 import { localCache } from "./localCacheService";
+import { pickPrepAssignment } from "../utils/prepAssignment";
 import {
   getYearNumber,
   normalizeYearLabel,
@@ -1022,15 +1023,24 @@ export const fetchOrCreateDailyAssignment = async ({
   }
 
   // --- NEW: PROACTIVE PREP CHECK ---
+  // The server's next_prep is the source of truth — a local copy may already
+  // have been used on another device (utils/prepAssignment).
   const prepCacheKey = `next-daily-assignment:${uid}`;
-  let prepAssignment = localCache.get(prepCacheKey);
-  
-  if (!prepAssignment) {
-    const prepSnap = await getDoc(doc(db, "users", uid, "daily_assignments", "next_prep"));
-    if (prepSnap.exists()) {
-      prepAssignment = { id: prepSnap.id, ...prepSnap.data() };
-    }
-  }
+  const localPrep = localCache.get(prepCacheKey);
+  const yesterday = new Date(`${dateKey}T12:00:00`);
+  yesterday.setDate(yesterday.getDate() - 1);
+  const [prepRead, prevRead] = await Promise.all([
+    getDoc(doc(db, "users", uid, "daily_assignments", "next_prep")).then((s) => ({ s }), () => ({ failed: true })),
+    getDoc(doc(db, "users", uid, "daily_assignments", getDateKey(yesterday))).then((s) => s, () => null),
+  ]);
+  const picked = pickPrepAssignment({
+    serverPrep: prepRead.s?.exists() ? { id: prepRead.s.id, ...prepRead.s.data() } : null,
+    serverReadFailed: Boolean(prepRead.failed),
+    localPrep,
+    previousAssignment: prevRead?.exists() ? prevRead.data() : null,
+  });
+  if (picked.clearLocal) localCache.remove(prepCacheKey);
+  const prepAssignment = picked.prep;
 
   if (
     prepAssignment
