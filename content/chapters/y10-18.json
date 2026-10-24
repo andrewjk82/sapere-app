@@ -1075,6 +1075,499 @@
             "school": "Abbotsleigh",
             "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
           }
+        },
+        {
+          "id": "sghs2011-q3-1",
+          "stem": "The back-to-back stem-and-leaf plot drawn below shows the number of days that both a group of boys and girls were absent from school over a three-year period.",
+          "timeLimit": 60,
+          "xp": 1,
+          "difficulty": "medium",
+          "meta": {
+            "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+            "school": "Sydney Girls High School",
+            "year": 2011,
+            "sourcePage": 5,
+            "sourceQuestion": "3.1"
+          },
+          "type": "multipart",
+          "parts": [
+            {
+              "id": "sghs2011-q3-1a",
+              "stem": "Calculate the median number of days absent for Boys only.",
+              "timeLimit": 60,
+              "xp": 1,
+              "difficulty": "medium",
+              "meta": {
+                "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+                "school": "Sydney Girls High School",
+                "year": 2011,
+                "sourcePage": 5,
+                "sourceQuestion": "3.1(a)"
+              },
+              "type": "mc",
+              "options": [
+                "\\(27\\text{ days}\\)",
+                "\\(25\\text{ days}\\)",
+                "\\(26\\text{ days}\\)",
+                "\\(21\\text{ days}\\)"
+              ],
+              "answer": 2,
+              "hint": "Read the boys’ leaves in ascending order and find the middle value. There are 19 boys’ values.",
+              "keyPoints": [
+                {
+                  "text": "Boys only",
+                  "note": "Use the left-hand leaves, not the girls’ leaves."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "The key says the stem is the tens digit and the leaf is the units digit. There are \\(19\\) boys’ values, so the median is the \\(\\frac{19+1}{2}=10\\)th value after sorting.",
+                  "work": "\\(n=19\\Rightarrow\\text{median position}=10\\)"
+                },
+                {
+                  "explain": "Reading the leaves in order gives the 20s as \\(20,21,21,21,25,26,26,27,29\\). The 10th overall value is the 6th in this row.",
+                  "work": "\\(10,11,14,17,20,21,21,21,25,\\boxed{26},26,27,29,32,35,37,37,38,42\\)"
+                },
+                {
+                  "explain": "The median number of days absent for the boys is 26.",
+                  "work": "\\(\\boxed{26\\text{ days}}\\)"
+                }
+              ]
+            },
+            {
+              "id": "sghs2011-q3-1b",
+              "stem": "Calculate the range for Boys only.",
+              "timeLimit": 60,
+              "xp": 1,
+              "difficulty": "medium",
+              "meta": {
+                "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+                "school": "Sydney Girls High School",
+                "year": 2011,
+                "sourcePage": 5,
+                "sourceQuestion": "3.1(b)"
+              },
+              "type": "mc",
+              "options": [
+                "\\(52\\text{ days}\\)",
+                "\\(31\\text{ days}\\)",
+                "\\(42\\text{ days}\\)",
+                "\\(32\\text{ days}\\)"
+              ],
+              "answer": 3,
+              "hint": "Range is maximum minus minimum. Read the smallest and largest boys’ values from the stem-and-leaf plot.",
+              "keyPoints": [
+                {
+                  "text": "Boys only",
+                  "note": "Find the smallest and largest values using the boys’ leaves."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "For the boys, the smallest value is \\(10\\) days (stem 1, leaf 0) and the largest is \\(42\\) days (stem 4, leaf 2).",
+                  "work": "\\(\\min=10,\\qquad\\max=42\\)"
+                },
+                {
+                  "explain": "Subtract the minimum from the maximum.",
+                  "work": "\\(\\text{Range}=42-10=32\\)"
+                },
+                {
+                  "explain": "The boys’ range is 32 days.",
+                  "work": "\\(\\boxed{32\\text{ days}}\\)"
+                }
+              ]
+            },
+            {
+              "id": "sghs2011-q3-1c",
+              "stem": "Calculate the mode for Boys only.",
+              "timeLimit": 60,
+              "xp": 1,
+              "difficulty": "medium",
+              "meta": {
+                "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+                "school": "Sydney Girls High School",
+                "year": 2011,
+                "sourcePage": 5,
+                "sourceQuestion": "3.1(c)"
+              },
+              "type": "mc",
+              "options": [
+                "\\(21\\text{ days}\\)",
+                "\\(26\\text{ days}\\)",
+                "\\(37\\text{ days}\\)",
+                "\\(42\\text{ days}\\)"
+              ],
+              "answer": 0,
+              "hint": "The mode is the value that occurs most often. Look for a repeated leaf on the boys’ side.",
+              "keyPoints": [
+                {
+                  "text": "Boys only",
+                  "note": "Count repeated data values from the boys’ leaves; the most frequent is the mode."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "The boys’ stem 2 has leaf 1 repeated three times, representing 21 days three times.",
+                  "work": "\\(2|1,\\ 2|1,\\ 2|1\\Rightarrow21,21,21\\)"
+                },
+                {
+                  "explain": "No other boys’ value occurs as often.",
+                  "work": "\\(\\text{mode}=21\\)"
+                },
+                {
+                  "explain": "State the mode with units.",
+                  "work": "\\(\\boxed{21\\text{ days}}\\)"
+                }
+              ]
+            },
+            {
+              "id": "sghs2011-q3-1d",
+              "stem": "Calculate the mean for Girls only.",
+              "timeLimit": 60,
+              "xp": 1,
+              "difficulty": "medium",
+              "meta": {
+                "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+                "school": "Sydney Girls High School",
+                "year": 2011,
+                "sourcePage": 5,
+                "sourceQuestion": "3.1(d)"
+              },
+              "type": "mc",
+              "options": [
+                "\\(26.50\\text{ days}\\)",
+                "\\(25.75\\text{ days}\\)",
+                "\\(23.50\\text{ days}\\)",
+                "\\(27.25\\text{ days}\\)"
+              ],
+              "answer": 1,
+              "hint": "Convert each girls’ stem-and-leaf entry to a number, add the 20 values, and divide by 20.",
+              "keyPoints": [
+                {
+                  "text": "Girls only",
+                  "note": "Use the right-hand leaves and include all 20 observations."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Read only the girls’ leaves. They give 20 values, and their total is 515 days.",
+                  "work": "\\(n=20,\\qquad\\sum x=515\\)"
+                },
+                {
+                  "explain": "The mean equals the total of the observations divided by the number of observations.",
+                  "work": "\\(\\bar{x}=\\frac{\\sum x}{n}=\\frac{515}{20}=25.75\\)"
+                },
+                {
+                  "explain": "The girls’ mean absence is 25.75 days.",
+                  "work": "\\(\\boxed{25.75\\text{ days}}\\)"
+                }
+              ]
+            },
+            {
+              "id": "sghs2011-q3-1e",
+              "stem": "Calculate the standard deviation, correct to 2 decimal places, for Girls only.",
+              "timeLimit": 60,
+              "xp": 1,
+              "difficulty": "medium",
+              "meta": {
+                "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+                "school": "Sydney Girls High School",
+                "year": 2011,
+                "sourcePage": 5,
+                "sourceQuestion": "3.1(e)"
+              },
+              "type": "mc",
+              "options": [
+                "\\(16.80\\text{ days}\\)",
+                "\\(8.37\\text{ days}\\)",
+                "\\(12.96\\text{ days}\\)",
+                "\\(11.25\\text{ days}\\)"
+              ],
+              "answer": 2,
+              "hint": "Use the girls’ data and the population standard deviation: \\(\\sqrt{\\frac{\\sum x^2}{n}-\\bar{x}^{,2}}\\).",
+              "keyPoints": [
+                {
+                  "text": "standard deviation",
+                  "note": "Find spread around the girls’ mean using all 20 girls’ values; do not use the boys’ data."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "For the girls, \\(n=20\\), \\(\\sum x=515\\), and the mean is \\(25.75\\). The sum of the squared observations is \\(16621\\).",
+                  "work": "\\(n=20,\\quad\\bar{x}=25.75,\\quad\\sum x^2=16621\\)"
+                },
+                {
+                  "explain": "Use the standard deviation formula for this complete data set. This is equivalent to finding the average squared distance from the mean and taking its square root.",
+                  "work": "\\(\\sigma=\\sqrt{\\frac{16621}{20}-(25.75)^2}=\\sqrt{831.05-663.0625}=\\sqrt{167.9875}\\)"
+                },
+                {
+                  "explain": "Evaluate and round to two decimal places, keeping the unit as days.",
+                  "work": "\\(\\sigma=12.9609\\ldots\\approx\\boxed{12.96\\text{ days}}\\)"
+                }
+              ]
+            },
+            {
+              "id": "sghs2011-q3-1f",
+              "stem": "For the Girls only, find:",
+              "timeLimit": 60,
+              "xp": 1,
+              "difficulty": "medium",
+              "meta": {
+                "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+                "school": "Sydney Girls High School",
+                "year": 2011,
+                "sourcePage": 5,
+                "sourceQuestion": "3.1(f)"
+              },
+              "type": "multipart",
+              "parts": [
+                {
+                  "id": "sghs2011-q3-1f-i",
+                  "stem": "For the Girls only, find the lower quartile \\(Q_1\\).",
+                  "timeLimit": 60,
+                  "xp": 1,
+                  "difficulty": "medium",
+                  "meta": {
+                    "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+                    "school": "Sydney Girls High School",
+                    "year": 2011,
+                    "sourcePage": 5,
+                    "sourceQuestion": "3.1(f)(i)"
+                  },
+                  "type": "mc",
+                  "options": [
+                    "\\(23.5\\text{ days}\\)",
+                    "\\(17\\text{ days}\\)",
+                    "\\(19\\text{ days}\\)",
+                    "\\(18\\text{ days}\\)"
+                  ],
+                  "answer": 3,
+                  "hint": "Sort the 20 girls’ values. The lower quartile is the median of the first 10 values.",
+                  "keyPoints": [
+                    {
+                      "text": "lower quartile \\(Q_1\\)",
+                      "note": "Find the median of the lower half of the ordered girls’ data."
+                    }
+                  ],
+                  "steps": [
+                    {
+                      "explain": "The ordered girls’ data begin \\(1,7,12,14,17,19,19,21,23,23\\). These are the lower half of the 20 values.",
+                      "work": "\\(\\text{lower half}=1,7,12,14,17,19,19,21,23,23\\)"
+                    },
+                    {
+                      "explain": "The median of 10 values is the average of the 5th and 6th values.",
+                      "work": "\\(Q_1=\\frac{17+19}{2}=18\\)"
+                    },
+                    {
+                      "explain": "Therefore the lower quartile is 18 days.",
+                      "work": "\\(\\boxed{Q_1=18\\text{ days}}\\)"
+                    }
+                  ]
+                },
+                {
+                  "id": "sghs2011-q3-1f-ii",
+                  "stem": "For the Girls only, find the median \\(Q_2\\).",
+                  "timeLimit": 60,
+                  "xp": 1,
+                  "difficulty": "medium",
+                  "meta": {
+                    "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+                    "school": "Sydney Girls High School",
+                    "year": 2011,
+                    "sourcePage": 5,
+                    "sourceQuestion": "3.1(f)(ii)"
+                  },
+                  "type": "mc",
+                  "options": [
+                    "\\(23.5\\text{ days}\\)",
+                    "\\(23\\text{ days}\\)",
+                    "\\(24\\text{ days}\\)",
+                    "\\(25.75\\text{ days}\\)"
+                  ],
+                  "answer": 0,
+                  "hint": "With 20 values, average the 10th and 11th ordered observations.",
+                  "keyPoints": [
+                    {
+                      "text": "median \\(Q_2\\)",
+                      "note": "For an even number of observations, average the two central values."
+                    }
+                  ],
+                  "steps": [
+                    {
+                      "explain": "The girls’ list contains 20 values, so the median is halfway between positions 10 and 11.",
+                      "work": "\\(Q_2=\\frac{x_{10}+x_{11}}2\\)"
+                    },
+                    {
+                      "explain": "The 10th and 11th values are 23 and 24.",
+                      "work": "\\(Q_2=\\frac{23+24}{2}=23.5\\)"
+                    },
+                    {
+                      "explain": "The median is 23.5 days.",
+                      "work": "\\(\\boxed{Q_2=23.5\\text{ days}}\\)"
+                    }
+                  ]
+                },
+                {
+                  "id": "sghs2011-q3-1f-iii",
+                  "stem": "For the Girls only, find the upper quartile \\(Q_3\\).",
+                  "timeLimit": 60,
+                  "xp": 1,
+                  "difficulty": "medium",
+                  "meta": {
+                    "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+                    "school": "Sydney Girls High School",
+                    "year": 2011,
+                    "sourcePage": 5,
+                    "sourceQuestion": "3.1(f)(iii)"
+                  },
+                  "type": "mc",
+                  "options": [
+                    "\\(38\\text{ days}\\)",
+                    "\\(34\\text{ days}\\)",
+                    "\\(33\\text{ days}\\)",
+                    "\\(43\\text{ days}\\)"
+                  ],
+                  "answer": 1,
+                  "hint": "The upper quartile is the median of the upper 10 ordered values.",
+                  "keyPoints": [
+                    {
+                      "text": "upper quartile \\(Q_3\\)",
+                      "note": "Find the median of the upper half of the ordered data."
+                    }
+                  ],
+                  "steps": [
+                    {
+                      "explain": "Take the upper half of the ordered girls’ data: \\(24,26,26,34,34,34,38,43,46,54\\).",
+                      "work": "\\(\\text{upper half}=24,26,26,34,34,34,38,43,46,54\\)"
+                    },
+                    {
+                      "explain": "The median of these 10 values is the average of their 5th and 6th entries.",
+                      "work": "\\(Q_3=\\frac{34+34}{2}=34\\)"
+                    },
+                    {
+                      "explain": "Thus the upper quartile is 34 days.",
+                      "work": "\\(\\boxed{Q_3=34\\text{ days}}\\)"
+                    }
+                  ]
+                },
+                {
+                  "id": "sghs2011-q3-1f-iv",
+                  "stem": "For the Girls only, find the inter-quartile range.",
+                  "timeLimit": 60,
+                  "xp": 1,
+                  "difficulty": "medium",
+                  "meta": {
+                    "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+                    "school": "Sydney Girls High School",
+                    "year": 2011,
+                    "sourcePage": 5,
+                    "sourceQuestion": "3.1(f)(iv)"
+                  },
+                  "type": "mc",
+                  "options": [
+                    "\\(18\\text{ days}\\)",
+                    "\\(34\\text{ days}\\)",
+                    "\\(16\\text{ days}\\)",
+                    "\\(7.5\\text{ days}\\)"
+                  ],
+                  "answer": 2,
+                  "hint": "Subtract the lower quartile from the upper quartile: \\(IQR=Q_3-Q_1\\).",
+                  "keyPoints": [
+                    {
+                      "text": "inter-quartile range",
+                      "note": "Subtract the lower quartile from the upper quartile; do not subtract the median."
+                    }
+                  ],
+                  "steps": [
+                    {
+                      "explain": "Use the quartiles found from the ordered girls’ data: \\(Q_1=18\\) and \\(Q_3=34\\).",
+                      "work": "\\(Q_1=18,\\qquad Q_3=34\\)"
+                    },
+                    {
+                      "explain": "The interquartile range measures the spread of the middle 50% of the data.",
+                      "work": "\\(IQR=Q_3-Q_1=34-18=16\\)"
+                    },
+                    {
+                      "explain": "The girls’ interquartile range is 16 days.",
+                      "work": "\\(\\boxed{16\\text{ days}}\\)"
+                    }
+                  ]
+                }
+              ],
+              "hint": "Order the girls’ observations first. For 20 values, split the ordered list into two groups of 10 when finding the quartiles.",
+              "keyPoints": [
+                {
+                  "text": "For the Girls only",
+                  "note": "Use the girls’ observations from the right side of the display."
+                }
+              ]
+            },
+            {
+              "id": "sghs2011-q3-1g",
+              "stem": "Draw a box-and-whisker plot for the Girls only.",
+              "timeLimit": 60,
+              "xp": 1,
+              "difficulty": "medium",
+              "meta": {
+                "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+                "school": "Sydney Girls High School",
+                "year": 2011,
+                "sourcePage": 5,
+                "sourceQuestion": "3.1(g)"
+              },
+              "type": "review",
+              "manual": true,
+              "answer": "A correctly scaled box-and-whisker plot with minimum 1, lower quartile 18, median 23.5, upper quartile 34, and maximum 54 days.",
+              "hint": "Use the five-number summary from the girls’ data: minimum, Q1, median, Q3, maximum. Put all five values on one equally spaced number line.",
+              "keyPoints": [
+                {
+                  "text": "box-and-whisker plot",
+                  "note": "A boxplot uses the five-number summary, not the mean and standard deviation."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Read the five-number summary from the ordered girls’ observations and the quartiles already found.",
+                  "work": "\\(\\min=1,\\quad Q_1=18,\\quad Q_2=23.5,\\quad Q_3=34,\\quad\\max=54\\)"
+                },
+                {
+                  "explain": "Draw one number line with an even scale covering at least 1 to 54 days. Mark each five-number value at its correct position.",
+                  "work": "\\(1<18<23.5<34<54\\)"
+                },
+                {
+                  "explain": "Draw whiskers from the minimum to Q1 and from Q3 to the maximum. Draw a box from Q1 to Q3 and a median line at Q2.",
+                  "work": "\\(\\text{whiskers: }1\\text{ to }18,\\ 34\\text{ to }54;\\quad\\text{box: }18\\text{ to }34;\\quad\\text{median: }23.5\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 260\" role=\"img\"><line x1=\"52\" y1=\"130\" x2=\"368\" y2=\"130\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"57\" y1=\"105\" x2=\"57\" y2=\"155\" stroke=\"#6366f1\" stroke-width=\"2\" /><line x1=\"147\" y1=\"105\" x2=\"147\" y2=\"155\" stroke=\"#6366f1\" stroke-width=\"2\" /><line x1=\"176\" y1=\"105\" x2=\"176\" y2=\"155\" stroke=\"#6366f1\" stroke-width=\"2\" /><line x1=\"231\" y1=\"105\" x2=\"231\" y2=\"155\" stroke=\"#6366f1\" stroke-width=\"2\" /><line x1=\"336\" y1=\"105\" x2=\"336\" y2=\"155\" stroke=\"#6366f1\" stroke-width=\"2\" /><line x1=\"57\" y1=\"130\" x2=\"147\" y2=\"130\" stroke=\"#6366f1\" stroke-width=\"2\" /><line x1=\"231\" y1=\"130\" x2=\"336\" y2=\"130\" stroke=\"#6366f1\" stroke-width=\"2\" /><line x1=\"147\" y1=\"105\" x2=\"231\" y2=\"105\" stroke=\"#6366f1\" stroke-width=\"2\" /><line x1=\"231\" y1=\"105\" x2=\"231\" y2=\"155\" stroke=\"#6366f1\" stroke-width=\"2\" /><line x1=\"147\" y1=\"105\" x2=\"147\" y2=\"155\" stroke=\"#6366f1\" stroke-width=\"2\" /><line x1=\"176\" y1=\"103\" x2=\"176\" y2=\"157\" stroke=\"#f97316\" stroke-width=\"3\" /><line x1=\"52\" y1=\"127\" x2=\"52\" y2=\"134\" stroke=\"#334155\" stroke-width=\"1\" /><text x=\"52\" y=\"178\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" >0</text><line x1=\"104.66666666666666\" y1=\"127\" x2=\"104.66666666666666\" y2=\"134\" stroke=\"#334155\" stroke-width=\"1\" /><text x=\"104.66666666666666\" y=\"178\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" >10</text><line x1=\"157.33333333333331\" y1=\"127\" x2=\"157.33333333333331\" y2=\"134\" stroke=\"#334155\" stroke-width=\"1\" /><text x=\"157.33333333333331\" y=\"178\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" >20</text><line x1=\"210\" y1=\"127\" x2=\"210\" y2=\"134\" stroke=\"#334155\" stroke-width=\"1\" /><text x=\"210\" y=\"178\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" >30</text><line x1=\"262.66666666666663\" y1=\"127\" x2=\"262.66666666666663\" y2=\"134\" stroke=\"#334155\" stroke-width=\"1\" /><text x=\"262.66666666666663\" y=\"178\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" >40</text><line x1=\"315.3333333333333\" y1=\"127\" x2=\"315.3333333333333\" y2=\"134\" stroke=\"#334155\" stroke-width=\"1\" /><text x=\"315.3333333333333\" y=\"178\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" >50</text><line x1=\"368\" y1=\"127\" x2=\"368\" y2=\"134\" stroke=\"#334155\" stroke-width=\"1\" /><text x=\"368\" y=\"178\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" >60</text><text x=\"210\" y=\"215\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >Days absent (Girls)</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Check that all five values are labelled in increasing order and the median line lies inside the box.",
+                  "work": "\\(\\boxed{(1,18,23.5,34,54)}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 260\" role=\"img\"><line x1=\"52\" y1=\"130\" x2=\"368\" y2=\"130\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"57\" y1=\"105\" x2=\"57\" y2=\"155\" stroke=\"#6366f1\" stroke-width=\"2\" /><line x1=\"147\" y1=\"105\" x2=\"147\" y2=\"155\" stroke=\"#6366f1\" stroke-width=\"2\" /><line x1=\"176\" y1=\"105\" x2=\"176\" y2=\"155\" stroke=\"#6366f1\" stroke-width=\"2\" /><line x1=\"231\" y1=\"105\" x2=\"231\" y2=\"155\" stroke=\"#6366f1\" stroke-width=\"2\" /><line x1=\"336\" y1=\"105\" x2=\"336\" y2=\"155\" stroke=\"#6366f1\" stroke-width=\"2\" /><line x1=\"57\" y1=\"130\" x2=\"147\" y2=\"130\" stroke=\"#6366f1\" stroke-width=\"2\" /><line x1=\"231\" y1=\"130\" x2=\"336\" y2=\"130\" stroke=\"#6366f1\" stroke-width=\"2\" /><line x1=\"147\" y1=\"105\" x2=\"231\" y2=\"105\" stroke=\"#6366f1\" stroke-width=\"2\" /><line x1=\"231\" y1=\"105\" x2=\"231\" y2=\"155\" stroke=\"#6366f1\" stroke-width=\"2\" /><line x1=\"147\" y1=\"105\" x2=\"147\" y2=\"155\" stroke=\"#6366f1\" stroke-width=\"2\" /><line x1=\"176\" y1=\"103\" x2=\"176\" y2=\"157\" stroke=\"#f97316\" stroke-width=\"3\" /><line x1=\"52\" y1=\"127\" x2=\"52\" y2=\"134\" stroke=\"#334155\" stroke-width=\"1\" /><text x=\"52\" y=\"178\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" >0</text><line x1=\"104.66666666666666\" y1=\"127\" x2=\"104.66666666666666\" y2=\"134\" stroke=\"#334155\" stroke-width=\"1\" /><text x=\"104.66666666666666\" y=\"178\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" >10</text><line x1=\"157.33333333333331\" y1=\"127\" x2=\"157.33333333333331\" y2=\"134\" stroke=\"#334155\" stroke-width=\"1\" /><text x=\"157.33333333333331\" y=\"178\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" >20</text><line x1=\"210\" y1=\"127\" x2=\"210\" y2=\"134\" stroke=\"#334155\" stroke-width=\"1\" /><text x=\"210\" y=\"178\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" >30</text><line x1=\"262.66666666666663\" y1=\"127\" x2=\"262.66666666666663\" y2=\"134\" stroke=\"#334155\" stroke-width=\"1\" /><text x=\"262.66666666666663\" y=\"178\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" >40</text><line x1=\"315.3333333333333\" y1=\"127\" x2=\"315.3333333333333\" y2=\"134\" stroke=\"#334155\" stroke-width=\"1\" /><text x=\"315.3333333333333\" y=\"178\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" >50</text><line x1=\"368\" y1=\"127\" x2=\"368\" y2=\"134\" stroke=\"#334155\" stroke-width=\"1\" /><text x=\"368\" y=\"178\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" >60</text><text x=\"210\" y=\"215\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >Days absent (Girls)</text></svg>"
+                  }
+                }
+              ],
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 250\" role=\"img\"><line x1=\"35\" y1=\"45\" x2=\"385\" y2=\"45\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><line x1=\"35\" y1=\"74\" x2=\"385\" y2=\"74\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><line x1=\"35\" y1=\"103\" x2=\"385\" y2=\"103\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><line x1=\"35\" y1=\"132\" x2=\"385\" y2=\"132\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><line x1=\"35\" y1=\"161\" x2=\"385\" y2=\"161\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><line x1=\"35\" y1=\"190\" x2=\"385\" y2=\"190\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"120\" y=\"30\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"15\" text-anchor=\"middle\" >Boys leaves</text><text x=\"210\" y=\"30\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"15\" text-anchor=\"middle\" >Stem</text><text x=\"306\" y=\"30\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"15\" text-anchor=\"middle\" >Girls leaves</text><line x1=\"175\" y1=\"38\" x2=\"175\" y2=\"216\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"245\" y1=\"38\" x2=\"245\" y2=\"216\" stroke=\"#64748b\" stroke-width=\"1\" /><text x=\"210\" y=\"64\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"15\" text-anchor=\"middle\" >0</text><text x=\"210\" y=\"93\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"15\" text-anchor=\"middle\" >1</text><text x=\"210\" y=\"122\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"15\" text-anchor=\"middle\" >2</text><text x=\"210\" y=\"151\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"15\" text-anchor=\"middle\" >3</text><text x=\"210\" y=\"180\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"15\" text-anchor=\"middle\" >4</text><text x=\"210\" y=\"209\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"15\" text-anchor=\"middle\" >5</text><text x=\"158\" y=\"64\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" ></text><text x=\"276\" y=\"64\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >1 7</text><text x=\"149\" y=\"93\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >7 4 1 0</text><text x=\"285\" y=\"93\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >2 4 7 9 9</text><text x=\"140\" y=\"122\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >9 7 6 6 5 1 1 1 0</text><text x=\"290\" y=\"122\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >1 3 3 4 6 6</text><text x=\"150\" y=\"151\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >8 7 7 5 2</text><text x=\"285\" y=\"151\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >4 4 4 8</text><text x=\"158\" y=\"180\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >2</text><text x=\"285\" y=\"180\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >3 6</text><text x=\"158\" y=\"209\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" ></text><text x=\"285\" y=\"209\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >4</text><text x=\"205\" y=\"238\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >Key: 4 | 2 means 24 days</text></svg>"
+              }
+            }
+          ],
+          "hint": "Use the key to read each stem and leaf as a two-digit number. Check whether each part asks for the boys’ data or the girls’ data.",
+          "keyPoints": [
+            {
+              "text": "back-to-back stem-and-leaf plot",
+              "note": "The left and right leaves represent different data sets; keep them separate."
+            },
+            {
+              "text": "over a three-year period",
+              "note": "Each leaf is one student’s total absence days over the stated period."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 250\" role=\"img\"><line x1=\"35\" y1=\"45\" x2=\"385\" y2=\"45\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><line x1=\"35\" y1=\"74\" x2=\"385\" y2=\"74\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><line x1=\"35\" y1=\"103\" x2=\"385\" y2=\"103\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><line x1=\"35\" y1=\"132\" x2=\"385\" y2=\"132\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><line x1=\"35\" y1=\"161\" x2=\"385\" y2=\"161\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><line x1=\"35\" y1=\"190\" x2=\"385\" y2=\"190\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"120\" y=\"30\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"15\" text-anchor=\"middle\" >Boys leaves</text><text x=\"210\" y=\"30\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"15\" text-anchor=\"middle\" >Stem</text><text x=\"306\" y=\"30\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"15\" text-anchor=\"middle\" >Girls leaves</text><line x1=\"175\" y1=\"38\" x2=\"175\" y2=\"216\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"245\" y1=\"38\" x2=\"245\" y2=\"216\" stroke=\"#64748b\" stroke-width=\"1\" /><text x=\"210\" y=\"64\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"15\" text-anchor=\"middle\" >0</text><text x=\"210\" y=\"93\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"15\" text-anchor=\"middle\" >1</text><text x=\"210\" y=\"122\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"15\" text-anchor=\"middle\" >2</text><text x=\"210\" y=\"151\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"15\" text-anchor=\"middle\" >3</text><text x=\"210\" y=\"180\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"15\" text-anchor=\"middle\" >4</text><text x=\"210\" y=\"209\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"15\" text-anchor=\"middle\" >5</text><text x=\"158\" y=\"64\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" ></text><text x=\"276\" y=\"64\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >1 7</text><text x=\"149\" y=\"93\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >7 4 1 0</text><text x=\"285\" y=\"93\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >2 4 7 9 9</text><text x=\"140\" y=\"122\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >9 7 6 6 5 1 1 1 0</text><text x=\"290\" y=\"122\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >1 3 3 4 6 6</text><text x=\"150\" y=\"151\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >8 7 7 5 2</text><text x=\"285\" y=\"151\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >4 4 4 8</text><text x=\"158\" y=\"180\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >2</text><text x=\"285\" y=\"180\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >3 6</text><text x=\"158\" y=\"209\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" ></text><text x=\"285\" y=\"209\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >4</text><text x=\"205\" y=\"238\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >Key: 4 | 2 means 24 days</text></svg>"
+          }
         }
       ]
     },
@@ -3637,6 +4130,143 @@
               "note": "Compare the spread using deviations from the common mean."
             }
           ]
+        },
+        {
+          "id": "sghs2011-q5-5",
+          "stem": "Annabelle recorded her marks for each test that she did in English and Maths throughout the year. The results are given in the table below.",
+          "timeLimit": 60,
+          "xp": 1,
+          "difficulty": "medium",
+          "meta": {
+            "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+            "school": "Sydney Girls High School",
+            "year": 2011,
+            "sourcePage": 7,
+            "sourceQuestion": "5.5"
+          },
+          "type": "multipart",
+          "parts": [
+            {
+              "id": "sghs2011-q5-5a",
+              "stem": "Calculate the mean and standard deviation for each subject, correct to 2 decimal places.",
+              "timeLimit": 60,
+              "xp": 1,
+              "difficulty": "medium",
+              "meta": {
+                "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+                "school": "Sydney Girls High School",
+                "year": 2011,
+                "sourcePage": 7,
+                "sourceQuestion": "5.5(a)"
+              },
+              "type": "mc",
+              "options": [
+                "Maths: mean 82.67, SD 5.06; English: mean 81.17, SD 7.97",
+                "Maths: mean 82.67, SD 5.54; English: mean 81.17, SD 8.73",
+                "Maths: mean 83.00, SD 5.06; English: mean 80.00, SD 7.97",
+                "Maths: mean 82.67, SD 7.97; English: mean 81.17, SD 5.06"
+              ],
+              "answer": 0,
+              "hint": "For each row, calculate the mean as total divided by six, then use the population standard deviation formula. Round each result to two decimals.",
+              "keyPoints": [
+                {
+                  "text": "mean and standard deviation",
+                  "note": "Calculate both statistics separately for each subject row; do not pool the two subjects."
+                },
+                {
+                  "text": "correct to 2 decimal places",
+                  "note": "Keep full calculator precision until the end, then round each statistic."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "There are six marks in each subject. Add each row separately to find the means.",
+                  "work": "\\(\\bar{x}_{M}=\\frac{83+79+81+92+85+76}{6}=\\frac{496}{6}=82.6667\\ldots\\)"
+                },
+                {
+                  "explain": "For English, add its six marks and divide by six.",
+                  "work": "\\(\\bar{x}_{E}=\\frac{72+88+89+76+90+72}{6}=\\frac{487}{6}=81.1667\\ldots\\)"
+                },
+                {
+                  "explain": "Use the population SD formula for each complete set of recorded tests. The sum of squares is 41156 for Maths and 39909 for English.",
+                  "work": "\\(\\sigma_M=\\sqrt{\\frac{41156}{6}-(82.6667\\ldots)^2}=5.0553\\ldots\\)"
+                },
+                {
+                  "explain": "Repeat for English, then round all four statistics to two decimal places.",
+                  "work": "\\(\\sigma_E=\\sqrt{\\frac{39909}{6}-(81.1667\\ldots)^2}=7.9669\\ldots\\)"
+                },
+                {
+                  "explain": "The rounded means and standard deviations are the values shown in the first option.",
+                  "work": "\\(\\boxed{M:(82.67,5.06),\\quad E:(81.17,7.97)}\\)"
+                }
+              ]
+            },
+            {
+              "id": "sghs2011-q5-5b",
+              "stem": "Annabelle scores 88 in her next Maths test and 88 in her next English test. By using the results in part (a), in which subject has Annabelle performed better and why?",
+              "timeLimit": 60,
+              "xp": 1,
+              "difficulty": "medium",
+              "meta": {
+                "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+                "school": "Sydney Girls High School",
+                "year": 2011,
+                "sourcePage": 7,
+                "sourceQuestion": "5.5(b)"
+              },
+              "type": "mc",
+              "options": [
+                "English, because its mean is lower than the Maths mean.",
+                "Maths, because 88 is about 1.05 standard deviations above its mean, compared with about 0.86 for English.",
+                "Maths, because its standard deviation is smaller, so 88 must be worse.",
+                "They are equal because both marks are 88."
+              ],
+              "answer": 1,
+              "hint": "Compare each 88 with that subject’s own mean using z=(score−mean)/SD. The larger positive z-score is the stronger result relative to the subject’s usual marks.",
+              "keyPoints": [
+                {
+                  "text": "88 in her next Maths test and 88 in her next English test",
+                  "note": "The same raw mark can have a different relative standing in each subject."
+                },
+                {
+                  "text": "in which subject has Annabelle performed better and why?",
+                  "note": "Use the subject-specific mean and SD to calculate and compare z-scores."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Raw marks from different subjects are best compared relative to each subject’s distribution. Calculate the z-score for each mark using the means and SDs from part (a).",
+                  "work": "\\(z=\\frac{x-\\bar{x}}{\\sigma}\\)"
+                },
+                {
+                  "explain": "For Maths, use mean 82.67 and SD 5.06.",
+                  "work": "\\(z_M=\\frac{88-82.67}{5.06}=1.053\\ldots\\approx1.05\\)"
+                },
+                {
+                  "explain": "For English, use mean 81.17 and SD 7.97.",
+                  "work": "\\(z_E=\\frac{88-81.17}{7.97}=0.857\\ldots\\approx0.86\\)"
+                },
+                {
+                  "explain": "Both scores are above their subject means, but the Maths result is more standard deviations above its mean. Annabelle therefore performed better relative to the Maths group.",
+                  "work": "\\(1.05>0.86\\Rightarrow\\boxed{\\text{Maths}}\\)"
+                }
+              ]
+            }
+          ],
+          "hint": "Use each subject’s own distribution. Find its mean and standard deviation first, then compare 88 using standardised scores.",
+          "keyPoints": [
+            {
+              "text": "English and Maths throughout the year",
+              "note": "Treat each row as its own data set."
+            },
+            {
+              "text": "The results are given in the table below.",
+              "note": "Read the six marks in each row and keep their subject labels."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 140\" role=\"img\"><line x1=\"40\" y1=\"40\" x2=\"380\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1\" /><line x1=\"40\" y1=\"80\" x2=\"380\" y2=\"80\" stroke=\"#94a3b8\" stroke-width=\"1\" /><line x1=\"40\" y1=\"120\" x2=\"380\" y2=\"120\" stroke=\"#94a3b8\" stroke-width=\"1\" /><text x=\"210\" y=\"31\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"15\" text-anchor=\"middle\" >Test marks</text><text x=\"110\" y=\"66\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >Maths</text><text x=\"110\" y=\"106\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >English</text><text x=\"243\" y=\"66\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >83   79   81   92   85   76</text><text x=\"243\" y=\"106\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >72   88   89   76   90   72</text></svg>"
+          }
         }
       ]
     },

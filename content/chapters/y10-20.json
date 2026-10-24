@@ -124,6 +124,49 @@
             "school": "Abbotsleigh",
             "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
           }
+        },
+        {
+          "id": "sghs2011-q4-5",
+          "stem": "What values can \\(x\\) possibly take in the formula \\(y=\\sqrt{6-3x}\\)?",
+          "timeLimit": 60,
+          "xp": 1,
+          "difficulty": "medium",
+          "meta": {
+            "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+            "school": "Sydney Girls High School",
+            "year": 2011,
+            "sourcePage": 6,
+            "sourceQuestion": "4.5"
+          },
+          "type": "mc",
+          "options": [
+            "All real values of \\(x\\)",
+            "\\(x\\ge2\\)",
+            "\\(x<2\\)",
+            "\\(x\\le2\\)"
+          ],
+          "answer": 3,
+          "hint": "For a real square root, the expression underneath must be at least zero. Solve that inequality and remember to reverse the sign when dividing by a negative.",
+          "keyPoints": [
+            {
+              "text": "\\(y=\\sqrt{6-3x}\\)",
+              "note": "Require the radicand (6-3x) to be non-negative."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "For y to be a real number, the radicand cannot be negative.",
+              "work": "\\(6-3x\\ge0\\)"
+            },
+            {
+              "explain": "Subtract 6 from both sides, then divide by \\(-3\\). Dividing by a negative reverses the inequality.",
+              "work": "\\(-3x\\ge-6\\Rightarrow x\\le2\\)"
+            },
+            {
+              "explain": "At x=2 the radicand is zero, so the endpoint is included. Smaller values make it positive.",
+              "work": "\\(\\boxed{x\\le2}\\)"
+            }
+          ]
         }
       ]
     }

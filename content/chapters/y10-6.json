@@ -2074,6 +2074,53 @@
             "school": "Abbotsleigh",
             "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
           }
+        },
+        {
+          "id": "sghs2011-q1-6",
+          "stem": "Find the curved surface area of a cone with a diameter of 6 cm and slant height of 9 cm, in terms of \\(\\pi\\).",
+          "timeLimit": 60,
+          "xp": 1,
+          "difficulty": "medium",
+          "meta": {
+            "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+            "school": "Sydney Girls High School",
+            "year": 2011,
+            "sourcePage": 3,
+            "sourceQuestion": "1.6"
+          },
+          "type": "mc",
+          "options": [
+            "\\(81\\pi\\text{ cm}^2\\)",
+            "\\(54\\pi\\text{ cm}^2\\)",
+            "\\(18\\pi\\text{ cm}^2\\)",
+            "\\(27\\pi\\text{ cm}^2\\)"
+          ],
+          "answer": 3,
+          "hint": "The curved surface area formula multiplies pi, the radius, and the slant height. Convert the diameter to a radius first.",
+          "keyPoints": [
+            {
+              "text": "diameter of 6 cm",
+              "note": "Halve the diameter to get the radius used in the curved-area formula."
+            },
+            {
+              "text": "slant height of 9 cm",
+              "note": "Use slant height, not the cone’s vertical height."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The curved surface area formula uses radius and slant height, not diameter and vertical height.",
+              "work": "\\(A_{\\text{curved}}=\\pi r\\ell\\)"
+            },
+            {
+              "explain": "Half the 6 cm diameter to get \\(r=3\\) cm. The slant height is \\(\\ell=9\\) cm.",
+              "work": "\\(r=\\frac62=3\\text{ cm},\\qquad \\ell=9\\text{ cm}\\)"
+            },
+            {
+              "explain": "Substitute the two lengths and simplify, retaining pi as requested.",
+              "work": "\\(A=\\pi(3)(9)=\\boxed{27\\pi\\text{ cm}^2}\\)"
+            }
+          ]
         }
       ]
     },
@@ -2215,6 +2262,49 @@
             "school": "Abbotsleigh",
             "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
           }
+        },
+        {
+          "id": "sghs2011-q1-5",
+          "stem": "Find the volume of a sphere with a radius of \\(3.5\\) cm, to 2 decimal places.",
+          "timeLimit": 60,
+          "xp": 1,
+          "difficulty": "medium",
+          "meta": {
+            "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+            "school": "Sydney Girls High School",
+            "year": 2011,
+            "sourcePage": 3,
+            "sourceQuestion": "1.5"
+          },
+          "type": "mc",
+          "options": [
+            "\\(38.48\\text{ cm}^3\\)",
+            "\\(143.68\\text{ cm}^3\\)",
+            "\\(179.59\\text{ cm}^3\\)",
+            "\\(21.99\\text{ cm}^3\\)"
+          ],
+          "answer": 2,
+          "hint": "Use the sphere volume formula: V equals four-thirds pi r cubed. The given 3.5 cm is already the radius.",
+          "keyPoints": [
+            {
+              "text": "radius of \\(3.5\\) cm",
+              "note": "The radius is supplied directly; cube it in the sphere volume formula."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "For a sphere, volume is four-thirds pi times the radius cubed. Use cubic centimetres because this is a volume.",
+              "work": "\\(V=\\frac{4}{3}\\pi r^3\\)"
+            },
+            {
+              "explain": "Substitute \\(r=3.5\\) cm, then evaluate the cube before multiplying.",
+              "work": "\\(V=\\frac{4}{3}\\pi(3.5)^3=\\frac{4}{3}\\pi(42.875)=179.59438\\ldots\\text{ cm}^3\\)"
+            },
+            {
+              "explain": "Round only the final value to two decimal places.",
+              "work": "\\(\\boxed{V=179.59\\text{ cm}^3}\\)"
+            }
+          ]
         }
       ]
     },
