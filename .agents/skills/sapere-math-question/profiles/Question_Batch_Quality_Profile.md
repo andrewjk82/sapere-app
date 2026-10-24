@@ -23,6 +23,7 @@ Apply this checklist whenever adding questions from an exam or worksheet. It rec
 ## Diagrams and rendering
 - Include the diagram or graph needed to solve the source problem. Use the matching geometry and label every relevant point, side, angle, axis, and unit.
 - **Multipart figure placement:** Put a shared diagram on the multipart parent once. Do not repeat an identical, unannotated copy on every child question; add a child-level figure only when that sub-question needs a distinct diagram or focused annotation. Keep calculation diagrams in the relevant solution steps.
+- **Multipart pre-publish audit:** Inspect the saved parent and every nested child record/card after editing. Confirm the shared diagram appears on the parent, identical child `figure` fields are absent, and any retained child figure is specifically needed by that child.
 - Preserve source label-to-vertex correspondence when redrawing or rotating a figure: each interior angle variable must remain paired with its stated adjacent exterior angle at the same vertex (for example, x↔a, y↔b, z↔c). Recheck every numeric label in worked diagrams against that mapping.
 - In solution diagrams, highlight the exact sides, angles, graph features, or data used in that step. Keep angle arcs within the two rays they describe and put angle labels inside the correct sectors, close to the arcs without overlap.
 - Check that equal-side marks sit on the sides, right-angle marks are at the correct vertices, and coordinates/labels do not overlap or clip. Do not leave a requested sample diagram blank.

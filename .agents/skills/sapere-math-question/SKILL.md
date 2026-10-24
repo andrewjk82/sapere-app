@@ -276,6 +276,14 @@ board.create('circle', [[cx, cy], radius],
 A multipart question's sub-parts are `parts: [...]` (recursively the same schema) on the parent
 question object in the same chapter file — there is no separate document or collection to touch.
 
+**Required figure-placement check:** assign each shared diagram to the parent question and include
+it there once. Before saving, inspect every child `part`: remove its `figure` when it is just a
+repeat of the shared parent diagram. Retain a child-level figure only when the part genuinely needs
+a different view or an annotation specific to that part. Put worked or progressively highlighted
+diagrams inside the relevant `steps`. In the final QA, verify the saved parent and every nested
+part—not just the standalone child records—and confirm the child screen no longer repeats the
+parent illustration.
+
 ### After Update
 There is no `sync_meta/questions` or per-chapter index document to touch by hand — the publish
 step (`tools/content/publish.mjs`, run automatically by `npm run build`) regenerates
@@ -298,6 +306,8 @@ deploy, so pushing the commit is the whole "index update."
 ## 7. Complete Workflow Checklist
 
 ### Standing requirements from the user — apply to every new question task
+
+**Multipart visual gate:** Before final save and publish, inspect the parent and each nested child. Keep a shared source diagram on the parent once; remove identical child-card copies, and keep child figures only when they show a distinct needed view.
 
 These are persistent requirements, not one-off corrections. Apply them whenever
 the user asks to add, convert, or revise questions, including every part of a
