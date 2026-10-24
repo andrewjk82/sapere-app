@@ -36,6 +36,8 @@ See `references/svg_3d_geometry_rules.md` for CRITICAL rules on 3D projections, 
 
 **Standing user requirement — figure size:** New question and solution diagrams default to `width="50%"` of available content width, preserving aspect ratio. Do not use `100%` width unless a dense figure needs extra room for legibility; visually check it at student-facing size. See `profiles/Question_Batch_Quality_Profile.md`.
 
+**Standing user requirement — labels:** Labels must never overlap diagram strokes, axes, points, angle marks, or each other. Check the full label bounds at the rendered 50% size, not only SVG coordinates; move text into clear whitespace and inspect again.
+
 ### Quick Reference — Key Fields (canonical, `content/chapters/*.json`)
 
 | Field | Type | Description |
