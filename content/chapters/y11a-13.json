@@ -378,86 +378,54 @@
           ]
         },
         {
+          "id": "amity2020-ma-q15",
+          "type": "mc",
+          "difficulty": "medium",
           "timeLimit": 60,
           "xp": 1,
-          "meta": {
-            "source": "Amity 2020 Mathematics Advanced HSC Trial",
-            "school": "Amity",
-            "sourceYear": 2020
+          "stem": "A biased four-sided die is rolled. The following table gives the probability of each score. Calculate the value of \\(b\\) and find the probability of rolling a number at most 2.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 170\" width=\"50%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif;height:auto;max-width:100%\"><rect x=\"35\" y=\"24\" width=\"450\" height=\"122\" rx=\"8\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><path d=\"M35 65H485M35 105H485M140 24V146M226 24V146M312 24V146M398 24V146\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><g fill=\"#1e293b\" font-size=\"17\" text-anchor=\"middle\"><text x=\"87\" y=\"52\" font-weight=\"bold\">Score</text><text x=\"183\" y=\"52\">1</text><text x=\"269\" y=\"52\">2</text><text x=\"355\" y=\"52\">3</text><text x=\"441\" y=\"52\">4</text><text x=\"87\" y=\"92\" font-weight=\"bold\">Probability</text><text x=\"183\" y=\"92\">0.25</text><text x=\"269\" y=\"92\">0.4<tspan font-style=\"italic\">b</tspan></text><text x=\"355\" y=\"92\">2<tspan font-style=\"italic\">b</tspan></text><text x=\"441\" y=\"92\">0.15</text></g></svg>"
           },
-          "id": "amity2020-ma-q15a",
-          "type": "mc",
-          "difficulty": "easy",
-          "stem": "A four-sided die has probabilities \\(0.25, 0.4b, 2b, 0.15\\) for scores 1, 2, 3, 4. Find b.",
           "options": [
-            "\\(0.20\\)",
-            "\\(0.25\\)",
-            "\\(0.30\\)",
-            "\\(0.40\\)"
+            "\\(b=0.25,\\quad P(\\text{score}\\le2)=0.65\\)",
+            "\\(b=0.25,\\quad P(\\text{score}\\le2)=0.35\\)",
+            "\\(b=0.20,\\quad P(\\text{score}\\le2)=0.33\\)",
+            "\\(b=0.30,\\quad P(\\text{score}\\le2)=0.37\\)"
           ],
           "answer": 1,
-          "hint": "The probabilities in the complete table must add to 1.",
+          "hint": "Use the fact that all four probabilities must add to 1 to solve for \\(b\\). Then add only the probabilities for scores 1 and 2.",
           "keyPoints": [
             {
-              "text": "probabilities \\(0.25, 0.4b, 2b, 0.15\\)",
-              "note": "Add each score’s probability, including both terms that contain b."
+              "text": "A biased four-sided die is rolled. The following table gives the probability of each score. Calculate the",
+              "note": "First use the total-probability condition, then include the score-1 and score-2 entries only."
             }
           ],
           "steps": [
             {
-              "explain": "Set the total probability equal to 1.",
+              "explain": "A probability distribution must have total probability 1. Add the four entries in the source table, keeping the two terms that contain \\(b\\) together.",
               "work": "\\(0.25+0.4b+2b+0.15=1\\)"
             },
             {
-              "explain": "Combine constants and b-terms.",
-              "work": "\\(0.4+2.4b=1\\Rightarrow2.4b=0.6\\)"
+              "explain": "Combine the constant terms and combine the coefficients of \\(b\\). Then isolate \\(b\\).",
+              "work": "\\(2.4b+0.40=1\\Rightarrow2.4b=0.60\\Rightarrow b=\\frac{0.60}{2.4}=0.25\\)"
             },
             {
-              "explain": "Solve.",
-              "work": "\\(\\boxed{b=0.25}\\)"
+              "explain": "“At most 2” means the score is 1 or 2. Add the table probabilities for those two scores and substitute \\(b=0.25\\).",
+              "work": "\\(P(\\text{score}\\le2)=0.25+0.4b=0.25+0.4(0.25)=0.25+0.10=0.35\\)"
+            },
+            {
+              "explain": "Report both requested results together.",
+              "work": "\\(b=0.25,\\qquad P(\\text{score}\\le2)=0.35\\)"
             }
-          ]
-        },
-        {
-          "timeLimit": 60,
-          "xp": 1,
+          ],
           "meta": {
             "source": "Amity 2020 Mathematics Advanced HSC Trial",
             "school": "Amity",
-            "sourceYear": 2020
-          },
-          "id": "amity2020-ma-q15b",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Using the probability table for the four-sided die, find the probability of rolling a number at most 2.",
-          "options": [
-            "\\(0.25\\)",
-            "\\(0.30\\)",
-            "\\(0.35\\)",
-            "\\(0.60\\)"
-          ],
-          "answer": 2,
-          "hint": "“At most 2” includes scores 1 and 2. Substitute the value of b first.",
-          "keyPoints": [
-            {
-              "text": "at most 2",
-              "note": "Add the probabilities for scores 1 and 2; do not include score 3."
-            }
-          ],
-          "steps": [
-            {
-              "explain": "Use the value b=0.25 and identify the included scores.",
-              "work": "\\(P(X\\le2)=P(X=1)+P(X=2)\\)"
-            },
-            {
-              "explain": "Substitute the table entries.",
-              "work": "\\(P(X\\le2)=0.25+0.4(0.25)\\)"
-            },
-            {
-              "explain": "Evaluate.",
-              "work": "\\(\\boxed{P(X\\le2)=0.35}\\)"
-            }
-          ]
+            "sourceYear": 2020,
+            "sourcePage": "10",
+            "sourceQuestion": 15
+          }
         }
       ]
     },

@@ -720,6 +720,137 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "amity2020-ma-q34",
+          "type": "multipart",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "The function \\(f(x)=x(x-2)(x-6)\\) is given. The diagram shows the area bounded by the graph of \\(y=f(x)\\) and the x-axis.",
+          "parts": [
+            {
+              "id": "amity2020-ma-q34a",
+              "type": "mc",
+              "stem": "Find the exact shaded area.",
+              "difficulty": "hard",
+              "options": [
+                "\\(\\frac{108}{3}\\)",
+                "\\(\\frac{148}{3}\\)",
+                "\\(\\frac{20}{3}\\)",
+                "\\(\\frac{128}{3}\\)"
+              ],
+              "answer": 1,
+              "hint": "Find the three roots where the curve intersects the x-axis, expand f(x), and integrate each section separately taking the absolute value of the region below the axis.",
+              "steps": [
+                {
+                  "explain": "Find the \\(x\\)-intercepts by setting \\(f(x) = 0\\), and expand \\(f(x)\\) for integration.\nThe curve intersects the \\(x\\)-axis at three points: \\(x = 0\\), \\(x = 2\\), and \\(x = 6\\). Expanding gives \\(f(x) = x^3 - 8x^2 + 12x\\).",
+                  "work": "\\(x(x-2)(x-6) = 0 \\implies x = 0,\\; 2,\\; 6\\\\\nf(x) = x(x^2 - 8x + 12) = x^3 - 8x^2 + 12x\\)",
+                  "figure": {
+                    "svg": "fig:a57d169ae6"
+                  }
+                },
+                {
+                  "explain": "Determine where \\(f(x)\\) is above and below the \\(x\\)-axis to set up the area integrals.\n- On \\([0, 2]\\), \\(f(x) \\ge 0\\) (above the axis), so \\(A_1 = \\int_0^2 f(x)\\,dx\\).\n- On \\([2, 6]\\), \\(f(x) \\le 0\\) (below the axis), so its signed integral is negative: \\(A_2 = -\\int_2^6 f(x)\\,dx = \\left|\\int_2^6 f(x)\\,dx\\right|\\).",
+                  "work": "\\(A_1 = \\int_0^2 (x^3 - 8x^2 + 12x)\\,dx\\\\\nA_2 = -\\int_2^6 (x^3 - 8x^2 + 12x)\\,dx\\\\\n\\text{Total Area } A = A_1 + A_2\\)",
+                  "figure": {
+                    "svg": "fig:befbb5cb5f"
+                  }
+                },
+                {
+                  "explain": "Find the antiderivative \\(F(x)\\) and evaluate the area \\(A_1\\) over \\([0, 2]\\).\nIntegrate term by term to obtain \\(F(x) = \\frac{x^4}{4} - \\frac{8x^3}{3} + 6x^2\\).",
+                  "work": "\\(F(x) = \\int (x^3 - 8x^2 + 12x)\\,dx = \\frac{x^4}{4} - \\frac{8x^3}{3} + 6x^2\\\\\nA_1 = F(2) - F(0) = \\left(\\frac{16}{4} - \\frac{8(8)}{3} + 6(4)\\right) - 0 = 28 - \\frac{64}{3} = \\frac{20}{3}\\text{ units}^2\\)",
+                  "figure": {
+                    "svg": "fig:4868cad600"
+                  }
+                },
+                {
+                  "explain": "Evaluate the integral over \\([2, 6]\\), negate it to obtain the positive geometric area \\(A_2\\), and add both areas.\nEvaluating \\(F(6)\\) yields \\(-36\\), giving \\(\\int_2^6 f(x)\\,dx = -36 - \\frac{20}{3} = -\\frac{128}{3}\\).",
+                  "work": "\\(F(6) = \\frac{6^4}{4} - \\frac{8(6^3)}{3} + 6(6^2) = 324 - 576 + 216 = -36\\\\\n\\int_2^6 f(x)\\,dx = F(6) - F(2) = -36 - \\frac{20}{3} = -\\frac{128}{3}\\\\\nA_2 = \\left|-\\frac{128}{3}\\right| = \\frac{128}{3}\\text{ units}^2\\\\\n\\text{Total Area } A = A_1 + A_2 = \\frac{20}{3} + \\frac{128}{3} = \\boxed{\\frac{148}{3}\\text{ units}^2}\\)",
+                  "figure": {
+                    "svg": "fig:061094e6b7"
+                  }
+                }
+              ],
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "Find the exact shaded area.",
+                  "note": "Identify the given information in this exact phrase first, then connect it to the rule or calculation shown in the solution."
+                }
+              ],
+              "meta": {
+                "source": "Amity 2020 Mathematics Advanced HSC Trial",
+                "school": "Amity",
+                "sourceYear": 2020,
+                "sourcePage": "25-26",
+                "sourceQuestion": 34
+              },
+              "timeLimit": 60
+            },
+            {
+              "id": "amity2020-ma-q34b",
+              "type": "mc",
+              "stem": "Let \\(g(x)=f(ax+b)\\). Find \\(a\\) and \\(b\\) if \\(\\int_4^0g(x)\\,dx+\\int_4^6g(x)\\,dx\\) has the same area calculated in the previous part.",
+              "difficulty": "hard",
+              "options": [
+                "\\((a,b)=(1,6)\\)",
+                "\\((a,b)=(-1,0)\\)",
+                "\\((a,b)=(2,6)\\)",
+                "\\((a,b)=(-1,6)\\)"
+              ],
+              "answer": 3,
+              "hint": "Reverse the reversed integration limits in the first integral: ∫₄⁰ g(x) dx = −∫₀⁴ g(x) dx. Observe which lobes of f(x) correspond to [0, 4] and [4, 6].",
+              "steps": [
+                {
+                  "explain": "Rewrite the given signed integrals with standard lower-to-upper limits.\nRecall that reversing limits negates the integral: \\(\\int_4^0 g(x)\\,dx = -\\int_0^4 g(x)\\,dx\\).\nTherefore, the expression becomes:\n$$\\int_4^0 g(x)\\,dx + \\int_4^6 g(x)\\,dx = -\\int_0^4 g(x)\\,dx + \\int_4^6 g(x)\\,dx$$\nFor this sum to equal the positive area \\(\\frac{148}{3} = \\frac{128}{3} + \\frac{20}{3}\\):\n1. \\(-\\int_0^4 g(x)\\,dx\\) must equal \\(+\\frac{128}{3}\\), meaning \\(g(x) \\le 0\\) on \\([0, 4]\\).\n2. \\(\\int_4^6 g(x)\\,dx\\) must equal \\(+\\frac{20}{3}\\), meaning \\(g(x) \\ge 0\\) on \\([4, 6]\\).",
+                  "work": "\\(\\int_4^0 g(x)\\,dx + \\int_4^6 g(x)\\,dx = -\\int_0^4 g(x)\\,dx + \\int_4^6 g(x)\\,dx\\\\\n-\\int_0^4 g(x)\\,dx = \\frac{128}{3} \\quad\\text{and}\\quad \\int_4^6 g(x)\\,dx = \\frac{20}{3}\\\\\n\\text{Sum } = \\frac{128}{3} + \\frac{20}{3} = \\frac{148}{3}\\)",
+                  "figure": {
+                    "svg": "fig:fd43326ac9"
+                  }
+                },
+                {
+                  "explain": "Compare the lobe widths of \\(f(u)\\) and \\(g(x)\\) to determine the reflection factor \\(a\\).\n- In \\(f(u)\\), the smaller lobe (area \\(\\frac{20}{3}\\)) is on \\([0, 2]\\) (width 2), followed by the larger lobe (area \\(\\frac{128}{3}\\)) on \\([2, 6]\\) (width 4).\n- In \\(g(x)\\), the larger lobe (area \\(\\frac{128}{3}\\)) is on \\([0, 4]\\) (width 4), followed by the smaller lobe (area \\(\\frac{20}{3}\\)) on \\([4, 6]\\) (width 2).\nBecause the lobe widths and order are horizontally reversed without scale stretching, \\(g(x)\\) is a horizontal reflection of \\(f\\), so \\(a = -1\\).",
+                  "work": "\\(\\text{Original } f(u): [0, 2] \\text{ (width 2)} \\to [2, 6] \\text{ (width 4)}\\\\\n\\text{Transformed } g(x): [0, 4] \\text{ (width 4)} \\to [4, 6] \\text{ (width 2)}\\\\\n\\implies \\text{Horizontal reflection with no scaling: } a = -1\\)",
+                  "figure": {
+                    "svg": "fig:042d86f02f"
+                  }
+                },
+                {
+                  "explain": "Solve for the horizontal translation \\(b\\) and verify the transformation.\nWith \\(a = -1\\), the argument is \\(u = -x + b\\).\n- At \\(x = 0\\), \\(u\\) must equal the original rightmost root \\(u = 6\\): \\(-0 + b = 6 \\implies b = 6\\).\n- Check \\(x = 4\\): \\(u = -4 + 6 = 2\\) (matches intermediate root \\(u = 2\\)).\n- Check \\(x = 6\\): \\(u = -6 + 6 = 0\\) (matches initial root \\(u = 0\\)).\nThus, \\(g(x) = f(6 - x) = f(-x + 6)\\), so \\((a, b) = (-1, 6)\\).",
+                  "work": "\\(u = ax + b = -x + b\\\\\n\\text{At } x = 0:\\; u = 6 \\implies b = 6\\\\\n\\text{Check: } x = 4 \\implies u = 2;\\quad x = 6 \\implies u = 0\\\\\n\\therefore \\boxed{(a, b) = (-1, 6)}\\)",
+                  "figure": {
+                    "svg": "fig:a3366f7f46"
+                  }
+                }
+              ],
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "Let \\(g(x)=f(ax+b)\\). Find \\(a\\) and \\(b\\) if \\(\\int_4^0g(x)\\,dx+\\int_4^6g(x)\\,dx\\) has the same area",
+                  "note": "Identify the given information in this exact phrase first, then connect it to the rule or calculation shown in the solution."
+                }
+              ],
+              "meta": {
+                "source": "Amity 2020 Mathematics Advanced HSC Trial",
+                "school": "Amity",
+                "sourceYear": 2020,
+                "sourcePage": "25-26",
+                "sourceQuestion": 34
+              },
+              "timeLimit": 60
+            }
+          ],
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020,
+            "sourcePage": "25-26",
+            "sourceQuestion": 34
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 320\" width=\"50%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif;height:auto;max-width:100%\"><rect x=\"1\" y=\"1\" width=\"518\" height=\"318\" rx=\"10\" fill=\"#fff\" stroke=\"#d7e1ef\"/><path d=\"M135 165 C145 125 152 90 165 82 C181 72 197 115 205 165Z\" fill=\"#c4b5fd\" opacity=\".55\"/><path d=\"M205 165 C220 215 239 254 255 250 C280 242 307 195 345 165Z\" fill=\"#c4b5fd\" opacity=\".55\"/><path d=\"M65 165H475M105 285V35\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M85 260 C112 210 130 165 135 165 C150 126 159 80 178 82 C193 84 199 138 205 165 C217 205 234 248 255 250 C287 252 322 189 345 165 C371 134 401 82 440 48\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"2.3\"/><g fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\"><text x=\"135\" y=\"185\">0</text><text x=\"205\" y=\"185\">2</text><text x=\"345\" y=\"185\">6</text></g><text x=\"465\" y=\"156\" font-size=\"13\" fill=\"#334155\">x</text><text x=\"112\" y=\"44\" font-size=\"13\" fill=\"#334155\">y</text></svg>"
+          }
         }
       ]
     },
@@ -913,24 +1044,26 @@
           "meta": {
             "source": "Amity 2020 Mathematics Advanced HSC Trial",
             "school": "Amity",
-            "sourceYear": 2020
+            "sourceYear": 2020,
+            "sourcePage": "4",
+            "sourceQuestion": 4
           },
           "id": "amity2020-ma-q04",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Which integral expression gives the total area of the region bounded by \\(y=x^3-x\\) and the x-axis?",
+          "stem": "The diagram shows the area bounded by the graph of \\(y=x^3-x\\) and the x-axis. Which of the following correctly gives the shaded area?",
           "options": [
             "\\(\\int_{-1}^{1}(x^3-x)\\,dx\\)",
-            "\\(2\\int_{-1}^{0}(x^3-x)\\,dx\\)",
             "\\(\\int_{-1}^{0}(x^3-x)\\,dx+\\int_{0}^{1}(x^3-x)\\,dx\\)",
-            "\\(2\\int_{0}^{1}(x^3-x)\\,dx\\)"
+            "\\(2\\int_{0}^{1}(x^3-x)\\,dx\\)",
+            "\\(2\\int_{-1}^{0}(x^3-x)\\,dx\\)"
           ],
-          "answer": 1,
+          "answer": 3,
           "hint": "The cubic is odd, so the two shaded lobes have equal area; integrate one lobe and double it.",
           "keyPoints": [
             {
-              "text": "total area",
-              "note": "Signed integrals below the x-axis are negative, but geometric area is positive."
+              "text": "The diagram shows the area bounded by the graph of \\(y=x^3-x\\) and the x-axis. Which of the following",
+              "note": "Identify the given information in this exact phrase first, then connect it to the rule or calculation shown in the solution."
             }
           ],
           "steps": [
@@ -938,7 +1071,7 @@
               "explain": "Find where the curve meets the x-axis.",
               "work": "\\(x^3-x=x(x-1)(x+1)=0\\Rightarrow x=-1,0,1\\)",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"70\" y1=\"180\" x2=\"535\" y2=\"180\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"300\" y1=\"35\" x2=\"300\" y2=\"300\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"190\" y1=\"176\" x2=\"190\" y2=\"184\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"190\" y=\"202\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">-1</text><line x1=\"300\" y1=\"176\" x2=\"300\" y2=\"184\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"300\" y=\"202\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0</text><line x1=\"410\" y1=\"176\" x2=\"410\" y2=\"184\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"410\" y=\"202\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">1</text><path d=\"M190 180 C215 104 257 114 300 180 Z\" fill=\"#6366f1\" fill-opacity=\".22\"/><path d=\"M300 180 C345 246 385 260 410 180 Z\" fill=\"#f59e0b\" fill-opacity=\".24\"/><path d=\"M190 180 C215 104 257 114 300 180 C345 246 385 260 410 180\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><text x=\"520\" y=\"171\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">x</text><text x=\"310\" y=\"48\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">y</text><text x=\"234\" y=\"126\" fill=\"#4f46e5\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">f(x)&gt;0</text><text x=\"365\" y=\"234\" fill=\"#b45309\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">f(x)&lt;0</text></svg>"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"50%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif;height:auto;max-width:100%\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"70\" y1=\"180\" x2=\"535\" y2=\"180\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"300\" y1=\"35\" x2=\"300\" y2=\"300\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"190\" y1=\"176\" x2=\"190\" y2=\"184\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"190\" y=\"202\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">-1</text><line x1=\"300\" y1=\"176\" x2=\"300\" y2=\"184\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"300\" y=\"202\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0</text><line x1=\"410\" y1=\"176\" x2=\"410\" y2=\"184\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"410\" y=\"202\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">1</text><path d=\"M190 180 C215 104 257 114 300 180 Z\" fill=\"#6366f1\" fill-opacity=\".22\"/><path d=\"M300 180 C345 246 385 260 410 180 Z\" fill=\"#f59e0b\" fill-opacity=\".24\"/><path d=\"M190 180 C215 104 257 114 300 180 C345 246 385 260 410 180\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><text x=\"520\" y=\"171\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">x</text><text x=\"310\" y=\"48\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">y</text><text x=\"234\" y=\"126\" fill=\"#4f46e5\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">f(x)&gt;0</text><text x=\"365\" y=\"234\" fill=\"#b45309\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">f(x)&lt;0</text></svg>"
               }
             },
             {
@@ -949,120 +1082,12 @@
               "explain": "Use symmetry to express the total area using one positive lobe.",
               "work": "\\(\\boxed{\\text{Area}=2\\int_{-1}^{0}(x^3-x)\\,dx}\\)",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"70\" y1=\"180\" x2=\"535\" y2=\"180\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"300\" y1=\"35\" x2=\"300\" y2=\"300\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"190\" y1=\"176\" x2=\"190\" y2=\"184\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"190\" y=\"202\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">-1</text><line x1=\"300\" y1=\"176\" x2=\"300\" y2=\"184\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"300\" y=\"202\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0</text><line x1=\"410\" y1=\"176\" x2=\"410\" y2=\"184\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"410\" y=\"202\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">1</text><path d=\"M190 180 C215 104 257 114 300 180 Z\" fill=\"#6366f1\" fill-opacity=\".22\"/><path d=\"M300 180 C345 246 385 260 410 180 Z\" fill=\"#f59e0b\" fill-opacity=\".24\"/><path d=\"M190 180 C215 104 257 114 300 180 C345 246 385 260 410 180\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><text x=\"520\" y=\"171\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">x</text><text x=\"310\" y=\"48\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">y</text><text x=\"234\" y=\"126\" fill=\"#4f46e5\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">f(x)&gt;0</text><text x=\"365\" y=\"234\" fill=\"#b45309\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">f(x)&lt;0</text></svg>"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"50%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif;height:auto;max-width:100%\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"70\" y1=\"180\" x2=\"535\" y2=\"180\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"300\" y1=\"35\" x2=\"300\" y2=\"300\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"190\" y1=\"176\" x2=\"190\" y2=\"184\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"190\" y=\"202\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">-1</text><line x1=\"300\" y1=\"176\" x2=\"300\" y2=\"184\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"300\" y=\"202\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0</text><line x1=\"410\" y1=\"176\" x2=\"410\" y2=\"184\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"410\" y=\"202\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">1</text><path d=\"M190 180 C215 104 257 114 300 180 Z\" fill=\"#6366f1\" fill-opacity=\".22\"/><path d=\"M300 180 C345 246 385 260 410 180 Z\" fill=\"#f59e0b\" fill-opacity=\".24\"/><path d=\"M190 180 C215 104 257 114 300 180 C345 246 385 260 410 180\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><text x=\"520\" y=\"171\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">x</text><text x=\"310\" y=\"48\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">y</text><text x=\"234\" y=\"126\" fill=\"#4f46e5\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">f(x)&gt;0</text><text x=\"365\" y=\"234\" fill=\"#b45309\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">f(x)&lt;0</text></svg>"
               }
             }
-          ]
-        },
-        {
-          "id": "amity2020-ma-q34",
-          "type": "multipart",
-          "stem": "Consider the cubic function \\(f(x) = x(x-2)(x-6)\\).",
-          "difficulty": "hard",
-          "parts": [
-            {
-              "id": "amity2020-ma-q34a",
-              "type": "mc",
-              "stem": "(a) Find the exact total area bounded by the curve and the x-axis.",
-              "difficulty": "hard",
-              "options": [
-                "\\(\\frac{108}{3}\\)",
-                "\\(\\frac{148}{3}\\)",
-                "\\(\\frac{20}{3}\\)",
-                "\\(\\frac{128}{3}\\)"
-              ],
-              "answer": 1,
-              "hint": "Find the three roots where the curve intersects the x-axis, expand f(x), and integrate each section separately taking the absolute value of the region below the axis.",
-              "steps": [
-                {
-                  "explain": "Find the \\(x\\)-intercepts by setting \\(f(x) = 0\\), and expand \\(f(x)\\) for integration.\nThe curve intersects the \\(x\\)-axis at three points: \\(x = 0\\), \\(x = 2\\), and \\(x = 6\\). Expanding gives \\(f(x) = x^3 - 8x^2 + 12x\\).",
-                  "work": "\\(x(x-2)(x-6) = 0 \\implies x = 0,\\; 2,\\; 6\\\\\nf(x) = x(x^2 - 8x + 12) = x^3 - 8x^2 + 12x\\)",
-                  "figure": {
-                    "svg": "fig:a57d169ae6"
-                  }
-                },
-                {
-                  "explain": "Determine where \\(f(x)\\) is above and below the \\(x\\)-axis to set up the area integrals.\n- On \\([0, 2]\\), \\(f(x) \\ge 0\\) (above the axis), so \\(A_1 = \\int_0^2 f(x)\\,dx\\).\n- On \\([2, 6]\\), \\(f(x) \\le 0\\) (below the axis), so its signed integral is negative: \\(A_2 = -\\int_2^6 f(x)\\,dx = \\left|\\int_2^6 f(x)\\,dx\\right|\\).",
-                  "work": "\\(A_1 = \\int_0^2 (x^3 - 8x^2 + 12x)\\,dx\\\\\nA_2 = -\\int_2^6 (x^3 - 8x^2 + 12x)\\,dx\\\\\n\\text{Total Area } A = A_1 + A_2\\)",
-                  "figure": {
-                    "svg": "fig:befbb5cb5f"
-                  }
-                },
-                {
-                  "explain": "Find the antiderivative \\(F(x)\\) and evaluate the area \\(A_1\\) over \\([0, 2]\\).\nIntegrate term by term to obtain \\(F(x) = \\frac{x^4}{4} - \\frac{8x^3}{3} + 6x^2\\).",
-                  "work": "\\(F(x) = \\int (x^3 - 8x^2 + 12x)\\,dx = \\frac{x^4}{4} - \\frac{8x^3}{3} + 6x^2\\\\\nA_1 = F(2) - F(0) = \\left(\\frac{16}{4} - \\frac{8(8)}{3} + 6(4)\\right) - 0 = 28 - \\frac{64}{3} = \\frac{20}{3}\\text{ units}^2\\)",
-                  "figure": {
-                    "svg": "fig:4868cad600"
-                  }
-                },
-                {
-                  "explain": "Evaluate the integral over \\([2, 6]\\), negate it to obtain the positive geometric area \\(A_2\\), and add both areas.\nEvaluating \\(F(6)\\) yields \\(-36\\), giving \\(\\int_2^6 f(x)\\,dx = -36 - \\frac{20}{3} = -\\frac{128}{3}\\).",
-                  "work": "\\(F(6) = \\frac{6^4}{4} - \\frac{8(6^3)}{3} + 6(6^2) = 324 - 576 + 216 = -36\\\\\n\\int_2^6 f(x)\\,dx = F(6) - F(2) = -36 - \\frac{20}{3} = -\\frac{128}{3}\\\\\nA_2 = \\left|-\\frac{128}{3}\\right| = \\frac{128}{3}\\text{ units}^2\\\\\n\\text{Total Area } A = A_1 + A_2 = \\frac{20}{3} + \\frac{128}{3} = \\boxed{\\frac{148}{3}\\text{ units}^2}\\)",
-                  "figure": {
-                    "svg": "fig:061094e6b7"
-                  }
-                }
-              ],
-              "xp": 1,
-              "keyPoints": [
-                {
-                  "text": "exact total area",
-                  "note": "Because the curve dips below the x-axis on [2, 6], the total geometric area is the sum of the positive loop and the absolute value of the negative loop."
-                }
-              ]
-            },
-            {
-              "id": "amity2020-ma-q34b",
-              "type": "mc",
-              "stem": "(b) Let \\(g(x)=f(ax+b)\\). The signed integrals \\(\\int_4^0g(x)\\,dx+\\int_4^6g(x)\\,dx\\) give the same total area as in part (a). Select the intended \\((a,b)\\).",
-              "difficulty": "hard",
-              "options": [
-                "\\((a,b)=(1,6)\\)",
-                "\\((a,b)=(-1,6)\\)",
-                "\\((a,b)=(-1,0)\\)",
-                "\\((a,b)=(2,6)\\)"
-              ],
-              "answer": 1,
-              "hint": "Reverse the reversed integration limits in the first integral: ∫₄⁰ g(x) dx = −∫₀⁴ g(x) dx. Observe which lobes of f(x) correspond to [0, 4] and [4, 6].",
-              "steps": [
-                {
-                  "explain": "Rewrite the given signed integrals with standard lower-to-upper limits.\nRecall that reversing limits negates the integral: \\(\\int_4^0 g(x)\\,dx = -\\int_0^4 g(x)\\,dx\\).\nTherefore, the expression becomes:\n$$\\int_4^0 g(x)\\,dx + \\int_4^6 g(x)\\,dx = -\\int_0^4 g(x)\\,dx + \\int_4^6 g(x)\\,dx$$\nFor this sum to equal the positive area \\(\\frac{148}{3} = \\frac{128}{3} + \\frac{20}{3}\\):\n1. \\(-\\int_0^4 g(x)\\,dx\\) must equal \\(+\\frac{128}{3}\\), meaning \\(g(x) \\le 0\\) on \\([0, 4]\\).\n2. \\(\\int_4^6 g(x)\\,dx\\) must equal \\(+\\frac{20}{3}\\), meaning \\(g(x) \\ge 0\\) on \\([4, 6]\\).",
-                  "work": "\\(\\int_4^0 g(x)\\,dx + \\int_4^6 g(x)\\,dx = -\\int_0^4 g(x)\\,dx + \\int_4^6 g(x)\\,dx\\\\\n-\\int_0^4 g(x)\\,dx = \\frac{128}{3} \\quad\\text{and}\\quad \\int_4^6 g(x)\\,dx = \\frac{20}{3}\\\\\n\\text{Sum } = \\frac{128}{3} + \\frac{20}{3} = \\frac{148}{3}\\)",
-                  "figure": {
-                    "svg": "fig:fd43326ac9"
-                  }
-                },
-                {
-                  "explain": "Compare the lobe widths of \\(f(u)\\) and \\(g(x)\\) to determine the reflection factor \\(a\\).\n- In \\(f(u)\\), the smaller lobe (area \\(\\frac{20}{3}\\)) is on \\([0, 2]\\) (width 2), followed by the larger lobe (area \\(\\frac{128}{3}\\)) on \\([2, 6]\\) (width 4).\n- In \\(g(x)\\), the larger lobe (area \\(\\frac{128}{3}\\)) is on \\([0, 4]\\) (width 4), followed by the smaller lobe (area \\(\\frac{20}{3}\\)) on \\([4, 6]\\) (width 2).\nBecause the lobe widths and order are horizontally reversed without scale stretching, \\(g(x)\\) is a horizontal reflection of \\(f\\), so \\(a = -1\\).",
-                  "work": "\\(\\text{Original } f(u): [0, 2] \\text{ (width 2)} \\to [2, 6] \\text{ (width 4)}\\\\\n\\text{Transformed } g(x): [0, 4] \\text{ (width 4)} \\to [4, 6] \\text{ (width 2)}\\\\\n\\implies \\text{Horizontal reflection with no scaling: } a = -1\\)",
-                  "figure": {
-                    "svg": "fig:042d86f02f"
-                  }
-                },
-                {
-                  "explain": "Solve for the horizontal translation \\(b\\) and verify the transformation.\nWith \\(a = -1\\), the argument is \\(u = -x + b\\).\n- At \\(x = 0\\), \\(u\\) must equal the original rightmost root \\(u = 6\\): \\(-0 + b = 6 \\implies b = 6\\).\n- Check \\(x = 4\\): \\(u = -4 + 6 = 2\\) (matches intermediate root \\(u = 2\\)).\n- Check \\(x = 6\\): \\(u = -6 + 6 = 0\\) (matches initial root \\(u = 0\\)).\nThus, \\(g(x) = f(6 - x) = f(-x + 6)\\), so \\((a, b) = (-1, 6)\\).",
-                  "work": "\\(u = ax + b = -x + b\\\\\n\\text{At } x = 0:\\; u = 6 \\implies b = 6\\\\\n\\text{Check: } x = 4 \\implies u = 2;\\quad x = 6 \\implies u = 0\\\\\n\\therefore \\boxed{(a, b) = (-1, 6)}\\)",
-                  "figure": {
-                    "svg": "fig:a3366f7f46"
-                  }
-                }
-              ],
-              "xp": 1,
-              "keyPoints": [
-                {
-                  "text": "\\(g(x)=f(ax+b)\\)",
-                  "note": "Reversing the limits gives −∫₀⁴ g(x) dx + ∫₄⁶ g(x) dx. For this to equal the positive total area 128/3 + 20/3, g(x) must be negative on [0, 4] and positive on [4, 6]."
-                }
-              ]
-            }
           ],
-          "timeLimit": 180,
-          "xp": 3,
-          "meta": {
-            "source": "Amity 2020 Mathematics Advanced HSC Trial",
-            "school": "Amity",
-            "sourceYear": 2020,
-            "origin": "teacher"
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 320\" width=\"50%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif;height:auto;max-width:100%\"><rect x=\"1\" y=\"1\" width=\"518\" height=\"318\" rx=\"10\" fill=\"#fff\" stroke=\"#d7e1ef\"/><path d=\"M135 165 C150 115 170 80 195 91 C218 102 236 150 255 165 Z\" fill=\"#c4b5fd\" opacity=\".55\"/><path d=\"M255 165 C274 180 292 228 315 239 C340 250 360 215 375 165 Z\" fill=\"#c4b5fd\" opacity=\".55\"/><path d=\"M55 165H480M255 285V35\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M95 230 C133 104 170 72 198 94 C222 114 239 150 255 165 C272 180 288 216 312 236 C342 260 379 218 415 60\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"2.3\"/><g fill=\"#334155\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\"><text x=\"135\" y=\"185\">−1</text><text x=\"255\" y=\"185\">0</text><text x=\"375\" y=\"185\">1</text></g><text x=\"466\" y=\"156\" font-size=\"13\" fill=\"#334155\">x</text><text x=\"262\" y=\"45\" font-size=\"13\" fill=\"#334155\">y</text></svg>"
           }
         }
       ]
@@ -1468,12 +1493,14 @@
           "meta": {
             "source": "Amity 2020 Mathematics Advanced HSC Trial",
             "school": "Amity",
-            "sourceYear": 2020
+            "sourceYear": 2020,
+            "sourcePage": "5",
+            "sourceQuestion": 7
           },
           "id": "amity2020-ma-q07",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "A function has derivative \\(f'(x)=8\\sin4x\\) and \\(f(\\frac\\pi4)=1\\). Which is \\(f(x)\\)?",
+          "stem": "The function \\(f(x)\\) has derivative \\(f\\prime(x)=8\\sin 4x\\) and \\(f(\\frac{\\pi}{4})=1\\). Which of the following is \\(f(x)\\)?",
           "options": [
             "\\(8\\cos4x+7\\)",
             "\\(-2\\cos4x-1\\)",
@@ -1484,8 +1511,8 @@
           "hint": "Integrate using the reverse chain rule, then use the given function value to find the constant.",
           "keyPoints": [
             {
-              "text": "\\(f(\\frac\\pi4)=1\\)",
-              "note": "The inner angle 4x contributes a factor of 4 when differentiating cosine."
+              "text": "The function \\(f(x)\\) has derivative \\(f\\prime(x)=8\\sin 4x\\) and \\(f(\\frac{\\pi}{4})=1\\). Which of the following is \\(f(x)\\)?",
+              "note": "Identify the given information in this exact phrase first, then connect it to the rule or calculation shown in the solution."
             }
           ],
           "steps": [
@@ -1509,24 +1536,26 @@
           "meta": {
             "source": "Amity 2020 Mathematics Advanced HSC Trial",
             "school": "Amity",
-            "sourceYear": 2020
+            "sourceYear": 2020,
+            "sourcePage": "8",
+            "sourceQuestion": 11
           },
           "id": "amity2020-ma-q11",
           "type": "mc",
           "difficulty": "easy",
           "stem": "Find \\(\\int24(2x-7)^5\\,dx\\).",
           "options": [
-            "\\(2(2x-7)^6+C\\)",
             "\\(4(2x-7)^6+C\\)",
+            "\\(2(2x-7)^6+C\\)",
             "\\(24(2x-7)^6+C\\)",
             "\\(2(2x-7)^5+C\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "The derivative of 2x−7 is 2, so compensate for that factor when integrating.",
           "keyPoints": [
             {
-              "text": "\\int24(2x-7)^5\\,dx",
-              "note": "Differentiate your proposed antiderivative to check the coefficient."
+              "text": "Find \\(\\int24(2x-7)^5\\,dx\\).",
+              "note": "Identify the given information in this exact phrase first, then connect it to the rule or calculation shown in the solution."
             }
           ],
           "steps": [
