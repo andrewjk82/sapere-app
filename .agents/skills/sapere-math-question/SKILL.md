@@ -38,6 +38,8 @@ See `references/svg_3d_geometry_rules.md` for CRITICAL rules on 3D projections, 
 
 **Standing user requirement — labels:** Labels must never overlap diagram strokes, axes, points, angle marks, or each other. Check the full label bounds at the rendered 50% size, not only SVG coordinates; move text into clear whitespace and inspect again.
 
+**Standing user requirement — diagram math:** Format mathematical labels inside diagrams with proper math typography (italic variables, upright units, raised exponents, structured fractions/roots); do not leave raw algebra in plain SVG text. Use MathJax when the renderer supports it, otherwise format SVG text/tspans to preserve the same conventions.
+
 ### Quick Reference — Key Fields (canonical, `content/chapters/*.json`)
 
 | Field | Type | Description |
