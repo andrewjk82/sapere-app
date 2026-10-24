@@ -1035,7 +1035,7 @@ const shuffleArray = (arr) => {
  */
 // Open a print window that auto-downloads a single PDF for the given
 // (already-selected) questions. Returns true on success, false if blocked.
-const openPdfWindow = (selectedQuestions, meta, showAnswers) => {
+const openPdfWindow = (selectedQuestions, meta, showAnswers, bothVersions = false) => {
   const html = buildPrintHtml(selectedQuestions, {
     chapterTitle: meta.chapterTitle || '',
     topicTitle: meta.topicTitle || '',
@@ -1044,6 +1044,7 @@ const openPdfWindow = (selectedQuestions, meta, showAnswers) => {
     readingTime: meta.readingTime || 5,
     workingTime: meta.workingTime || 60,
     showAnswers,
+    bothVersions,
   });
 
   const printWindow = window.open('', '_blank');
@@ -1104,14 +1105,14 @@ export const exportQuestionsPdf = (questions, meta, options = {}) => {
 
   validQuestions = selected;
 
-  // When bothVersions is requested (triggered from "Student Version"), emit two
+  // When bothVersions is requested (triggered from "With Answers"), emit two
   // PDFs from the SAME selected question set: the student paper and the answer
   // key. Selection happens once above so both documents contain identical
   // questions in the same order.
+  // One window holds both documents and downloads them one after the other —
+  // a second window.open from the same click is often popup-blocked.
   if (bothVersions) {
-    const studentOk = openPdfWindow(validQuestions, meta, false);
-    const answersOk = openPdfWindow(validQuestions, meta, true);
-    if (!studentOk || !answersOk) {
+    if (!openPdfWindow(validQuestions, meta, false, true)) {
       alert('Popup blocked! Please allow popups for this site to export both PDFs (student paper + answer key).');
     }
     return;
@@ -1146,9 +1147,7 @@ export const exportExactQuestionsPdf = (questions, meta, options = {}) => {
   // bothVersions emits two PDFs from the SAME question set — the no-answer
   // student paper and the answer key — same contract as exportQuestionsPdf.
   if (bothVersions) {
-    const studentOk = openPdfWindow(validQuestions, meta, false);
-    const answersOk = openPdfWindow(validQuestions, meta, true);
-    if (!studentOk || !answersOk) {
+    if (!openPdfWindow(validQuestions, meta, false, true)) {
       alert('Popup blocked! Please allow popups for this site to export both PDFs (question paper + answer key).');
     }
     return;

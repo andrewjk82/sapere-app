@@ -221,7 +221,7 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
               course: chapter.course || '',
               readingTime: pdfReadingTime,
               workingTime: pdfWorkingTime,
-            }, { showAnswers: pdfWithAnswers, count: pdfCount, bothVersions: !pdfWithAnswers });
+            }, { showAnswers: pdfWithAnswers, count: pdfCount, bothVersions: pdfWithAnswers });
             return merged;
           });
         } catch (err) {
@@ -238,7 +238,7 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
         course: chapter.course || '',
         readingTime: pdfReadingTime,
         workingTime: pdfWorkingTime,
-      }, { showAnswers: pdfWithAnswers, count: pdfCount, bothVersions: !pdfWithAnswers });
+      }, { showAnswers: pdfWithAnswers, count: pdfCount, bothVersions: pdfWithAnswers });
     }
   };
 
@@ -1438,6 +1438,11 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                   >
                     📄 Student Version
                   </button>
+                </div>
+                <div style={{ marginTop: '8px', fontSize: '0.75rem', color: '#64748b', fontWeight: 600 }}>
+                  {pdfWithAnswers
+                    ? '2 PDFs: answer key + student paper (no options, working space to write answers)'
+                    : '1 PDF: student paper only (no options, working space to write answers)'}
                 </div>
               </div>
 
