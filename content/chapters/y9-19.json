@@ -516,6 +516,198 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 288\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:12px auto;background:#fff\"><text x=\"210\" y=\"26\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#334155\">Frequency distribution</text><rect x=\"95\" y=\"38\" width=\"230\" height=\"204\" fill=\"#fff\" stroke=\"#94a3b8\"/><rect x=\"95\" y=\"38\" width=\"230\" height=\"28\" fill=\"#eff6ff\"/><text x=\"150\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">Score</text><text x=\"270\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">Frequency</text><line x1=\"95\" y1=\"66\" x2=\"325\" y2=\"66\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"150\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"400\" fill=\"#334155\">20</text><text x=\"270\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"400\" fill=\"#334155\">4</text><line x1=\"95\" y1=\"95\" x2=\"325\" y2=\"95\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"150\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"400\" fill=\"#334155\">30</text><text x=\"270\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"400\" fill=\"#334155\">12</text><line x1=\"95\" y1=\"124\" x2=\"325\" y2=\"124\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"150\" y=\"144\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"400\" fill=\"#334155\">40</text><text x=\"270\" y=\"144\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"400\" fill=\"#334155\">18</text><line x1=\"95\" y1=\"153\" x2=\"325\" y2=\"153\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"150\" y=\"173\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"400\" fill=\"#334155\">50</text><text x=\"270\" y=\"173\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"400\" fill=\"#334155\">14</text><line x1=\"95\" y1=\"182\" x2=\"325\" y2=\"182\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"150\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"400\" fill=\"#334155\">60</text><text x=\"270\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"400\" fill=\"#334155\">0</text><line x1=\"95\" y1=\"211\" x2=\"325\" y2=\"211\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"150\" y=\"231\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"400\" fill=\"#334155\">70</text><text x=\"270\" y=\"231\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"400\" fill=\"#334155\">2</text><line x1=\"210\" y1=\"38\" x2=\"210\" y2=\"242\" stroke=\"#cbd5e1\" stroke-width=\"1\" /></svg>"
           }
+        },
+        {
+          "id": "y9-2023-t4b-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the mode of the following data set? \\(1,4,2,2,6,3,2,5\\).",
+          "options": [
+            "\\(3\\)",
+            "\\(4\\)",
+            "\\(2\\)",
+            "\\(6\\)"
+          ],
+          "answer": 2,
+          "hint": "The mode is the value that occurs most often. Count the frequency of each value.",
+          "keyPoints": [
+            {
+              "text": "mode",
+              "note": "Choose the value that appears most often."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Count the repeated values in the data set. The value 2 appears three times; each other value appears once.",
+              "work": "\\(1:1,\\quad2:3,\\quad3:1,\\quad4:1,\\quad5:1,\\quad6:1\\)"
+            },
+            {
+              "explain": "Select the value with the greatest frequency.",
+              "work": "\\(\\boxed{\\text{Mode}=2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 5.3 Task 4B",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 4B",
+            "grade": "9",
+            "sourceQuestion": "q9"
+          }
+        },
+        {
+          "id": "y9-2023-t4b-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the median of the following data set? \\(11,14,23,28,32,40\\).",
+          "options": [
+            "\\(23\\)",
+            "\\(28\\)",
+            "\\(25\\)",
+            "\\(25.5\\)"
+          ],
+          "answer": 3,
+          "hint": "There are 6 values, so the median is the average of the 3rd and 4th values after ordering.",
+          "keyPoints": [
+            {
+              "text": "median",
+              "note": "For an even number of values, average the two central values."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The data are already in ascending order. Since there are 6 values, there are two middle values.",
+              "work": "\\(11,14,\\boxed{23},\\boxed{28},32,40\\)"
+            },
+            {
+              "explain": "Average the 3rd and 4th values.",
+              "work": "\\(\\text{Median}=\\dfrac{23+28}{2}=\\dfrac{51}{2}=\\boxed{25.5}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 5.3 Task 4B",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 4B",
+            "grade": "9",
+            "sourceQuestion": "q10"
+          }
+        },
+        {
+          "id": "y9-2023-t4b-q23",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The box plot below shows the times taken by a large group of students of an athletics club to finish a 100 m race (seconds) before attending a training camp. The interquartile range of the distribution above is 3.2 seconds.",
+          "hint": "For part (a), use IQR = Q3 − Q1. For part (b), compare the new longest time with the original Q3 boundary.",
+          "keyPoints": [
+            {
+              "text": "box plot",
+              "note": "The right edge of the box is Q3 and the left edge is Q1."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 250\" width=\"50%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto;\" role=\"img\" aria-label=\"Box plot of 100 metre race times before training camp\"><line x1=\"35\" y1=\"125\" x2=\"385\" y2=\"125\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"45\" y1=\"120\" x2=\"45\" y2=\"130\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"105\" y1=\"120\" x2=\"105\" y2=\"130\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"190\" y1=\"120\" x2=\"190\" y2=\"130\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"265\" y1=\"120\" x2=\"265\" y2=\"130\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"370\" y1=\"120\" x2=\"370\" y2=\"130\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"45\" y1=\"95\" x2=\"105\" y2=\"95\" stroke=\"#334155\" stroke-width=\"1.7\"/><line x1=\"105\" y1=\"70\" x2=\"265\" y2=\"70\" stroke=\"#334155\" stroke-width=\"1.7\"/><line x1=\"105\" y1=\"100\" x2=\"265\" y2=\"100\" stroke=\"#334155\" stroke-width=\"1.7\"/><line x1=\"370\" y1=\"95\" x2=\"370\" y2=\"95\" stroke=\"#334155\" stroke-width=\"1.7\"/><line x1=\"45\" y1=\"95\" x2=\"45\" y2=\"95\" stroke=\"#334155\" stroke-width=\"1.7\"/><line x1=\"45\" y1=\"95\" x2=\"105\" y2=\"95\" stroke=\"#334155\" stroke-width=\"1.7\"/><line x1=\"265\" y1=\"95\" x2=\"370\" y2=\"95\" stroke=\"#334155\" stroke-width=\"1.7\"/><rect x=\"105\" y=\"70\" width=\"160\" height=\"30\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.7\"/><line x1=\"190\" y1=\"70\" x2=\"190\" y2=\"100\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"45\" y1=\"80\" x2=\"45\" y2=\"110\" stroke=\"#334155\" stroke-width=\"1.7\"/><line x1=\"370\" y1=\"80\" x2=\"370\" y2=\"110\" stroke=\"#334155\" stroke-width=\"1.7\"/><text x=\"45\" y=\"146\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">11.3</text><text x=\"105\" y=\"146\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">12.1</text><text x=\"190\" y=\"146\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">13.2</text><text x=\"265\" y=\"146\" text-anchor=\"middle\" font-family=\"Georgia, serif\" font-size=\"11\" font-style=\"italic\" fill=\"#334155\">b</text><text x=\"370\" y=\"146\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">18.1</text><text x=\"210\" y=\"171\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">100 m time (seconds)</text></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 5.3 Task 4B",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 4B",
+            "grade": "9",
+            "sourceQuestion": "q23"
+          },
+          "parts": [
+            {
+              "id": "y9-2023-t4b-q23a",
+              "type": "review",
+              "difficulty": "medium",
+              "stem": "Show that the value of \\(b\\) is 15.3 seconds.",
+              "answer": "The upper quartile is \\(b=15.3\\) seconds.",
+              "hint": "Use the interquartile range formula: IQR = upper quartile − lower quartile.",
+              "keyPoints": [
+                {
+                  "text": "Show that the value of \\(b\\)",
+                  "note": "IQR is the upper quartile minus the lower quartile."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Read the lower quartile from the left edge of the box: \\(Q_1=12.1\\) seconds. The right edge is \\(Q_3=b\\).",
+                  "work": "\\(\\mathrm{IQR}=Q_3-Q_1=3.2\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 250\" width=\"50%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto;\" role=\"img\" aria-label=\"Box plot of 100 metre race times before training camp\"><line x1=\"35\" y1=\"125\" x2=\"385\" y2=\"125\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"45\" y1=\"120\" x2=\"45\" y2=\"130\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"105\" y1=\"120\" x2=\"105\" y2=\"130\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"190\" y1=\"120\" x2=\"190\" y2=\"130\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"265\" y1=\"120\" x2=\"265\" y2=\"130\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"370\" y1=\"120\" x2=\"370\" y2=\"130\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"45\" y1=\"95\" x2=\"105\" y2=\"95\" stroke=\"#f97316\" stroke-width=\"1.7\"/><line x1=\"105\" y1=\"70\" x2=\"265\" y2=\"70\" stroke=\"#f97316\" stroke-width=\"1.7\"/><line x1=\"105\" y1=\"100\" x2=\"265\" y2=\"100\" stroke=\"#f97316\" stroke-width=\"1.7\"/><line x1=\"370\" y1=\"95\" x2=\"370\" y2=\"95\" stroke=\"#f97316\" stroke-width=\"1.7\"/><line x1=\"45\" y1=\"95\" x2=\"45\" y2=\"95\" stroke=\"#334155\" stroke-width=\"1.7\"/><line x1=\"45\" y1=\"95\" x2=\"105\" y2=\"95\" stroke=\"#f97316\" stroke-width=\"1.7\"/><line x1=\"265\" y1=\"95\" x2=\"370\" y2=\"95\" stroke=\"#334155\" stroke-width=\"1.7\"/><rect x=\"105\" y=\"70\" width=\"160\" height=\"30\" fill=\"#eff6ff\" stroke=\"#f97316\" stroke-width=\"1.7\"/><line x1=\"190\" y1=\"70\" x2=\"190\" y2=\"100\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"45\" y1=\"80\" x2=\"45\" y2=\"110\" stroke=\"#334155\" stroke-width=\"1.7\"/><line x1=\"370\" y1=\"80\" x2=\"370\" y2=\"110\" stroke=\"#334155\" stroke-width=\"1.7\"/><text x=\"45\" y=\"146\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">11.3</text><text x=\"105\" y=\"146\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">12.1</text><text x=\"190\" y=\"146\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">13.2</text><text x=\"265\" y=\"146\" text-anchor=\"middle\" font-family=\"Georgia, serif\" font-size=\"11\" font-style=\"italic\" fill=\"#334155\">b</text><text x=\"370\" y=\"146\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">18.1</text><text x=\"210\" y=\"171\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">100 m time (seconds)</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Substitute the given IQR and lower quartile, then solve for b.",
+                  "work": "\\(3.2=b-12.1\\)\n\\(b=12.1+3.2=\\boxed{15.3\\text{ seconds}}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 250\" width=\"50%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto;\" role=\"img\" aria-label=\"Box plot of 100 metre race times before training camp\"><line x1=\"35\" y1=\"125\" x2=\"385\" y2=\"125\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"45\" y1=\"120\" x2=\"45\" y2=\"130\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"105\" y1=\"120\" x2=\"105\" y2=\"130\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"190\" y1=\"120\" x2=\"190\" y2=\"130\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"265\" y1=\"120\" x2=\"265\" y2=\"130\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"370\" y1=\"120\" x2=\"370\" y2=\"130\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"45\" y1=\"95\" x2=\"105\" y2=\"95\" stroke=\"#f97316\" stroke-width=\"1.7\"/><line x1=\"105\" y1=\"70\" x2=\"265\" y2=\"70\" stroke=\"#f97316\" stroke-width=\"1.7\"/><line x1=\"105\" y1=\"100\" x2=\"265\" y2=\"100\" stroke=\"#f97316\" stroke-width=\"1.7\"/><line x1=\"370\" y1=\"95\" x2=\"370\" y2=\"95\" stroke=\"#f97316\" stroke-width=\"1.7\"/><line x1=\"45\" y1=\"95\" x2=\"45\" y2=\"95\" stroke=\"#334155\" stroke-width=\"1.7\"/><line x1=\"45\" y1=\"95\" x2=\"105\" y2=\"95\" stroke=\"#f97316\" stroke-width=\"1.7\"/><line x1=\"265\" y1=\"95\" x2=\"370\" y2=\"95\" stroke=\"#334155\" stroke-width=\"1.7\"/><rect x=\"105\" y=\"70\" width=\"160\" height=\"30\" fill=\"#eff6ff\" stroke=\"#f97316\" stroke-width=\"1.7\"/><line x1=\"190\" y1=\"70\" x2=\"190\" y2=\"100\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"45\" y1=\"80\" x2=\"45\" y2=\"110\" stroke=\"#334155\" stroke-width=\"1.7\"/><line x1=\"370\" y1=\"80\" x2=\"370\" y2=\"110\" stroke=\"#334155\" stroke-width=\"1.7\"/><text x=\"45\" y=\"146\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">11.3</text><text x=\"105\" y=\"146\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">12.1</text><text x=\"190\" y=\"146\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">13.2</text><text x=\"265\" y=\"146\" text-anchor=\"middle\" font-family=\"Georgia, serif\" font-size=\"11\" font-style=\"italic\" fill=\"#334155\">b</text><text x=\"370\" y=\"146\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">18.1</text><text x=\"210\" y=\"171\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">100 m time (seconds)</text></svg>"
+                  }
+                }
+              ],
+              "manual": true,
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "2023 Year 9 5.3 Task 4B",
+                "school": "Year 9 Mathematics 5.3",
+                "examType": "Task 4B",
+                "grade": "9",
+                "sourceQuestion": "q23a"
+              }
+            },
+            {
+              "id": "y9-2023-t4b-q23b",
+              "type": "review",
+              "difficulty": "medium",
+              "stem": "After the students completed the training camp. It is found that the longest time taken by the students to finish a 100 m race is 2.9 seconds less than the time taken before the camp. The trainer claims that at least 25% of the students showed improvement after the camp. Do you agree? Justify your answer with the appropriate mathematical reasoning.",
+              "answer": "Yes. The longest time after camp is \\(18.1-2.9=15.2\\) seconds, below the original upper quartile \\(15.3\\) seconds. Therefore the students who were at or above that original upper-quartile boundary (at least the slowest 25%) must have improved.",
+              "hint": "Compare the new maximum time with the original third quartile. The upper quartile marks the slowest quarter boundary.",
+              "keyPoints": [
+                {
+                  "text": "at least 25%",
+                  "note": "Compare the new maximum with the original third quartile."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "From part (a), the original upper quartile is 15.3 seconds. The original longest time is 18.1 seconds.",
+                  "work": "\\(Q_3=15.3\\text{ s},\\qquad\\text{original maximum}=18.1\\text{ s}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 250\" width=\"50%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto;\" role=\"img\" aria-label=\"Box plot of 100 metre race times before training camp\"><line x1=\"35\" y1=\"125\" x2=\"385\" y2=\"125\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"45\" y1=\"120\" x2=\"45\" y2=\"130\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"105\" y1=\"120\" x2=\"105\" y2=\"130\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"190\" y1=\"120\" x2=\"190\" y2=\"130\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"265\" y1=\"120\" x2=\"265\" y2=\"130\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"370\" y1=\"120\" x2=\"370\" y2=\"130\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"45\" y1=\"95\" x2=\"105\" y2=\"95\" stroke=\"#f97316\" stroke-width=\"1.7\"/><line x1=\"105\" y1=\"70\" x2=\"265\" y2=\"70\" stroke=\"#f97316\" stroke-width=\"1.7\"/><line x1=\"105\" y1=\"100\" x2=\"265\" y2=\"100\" stroke=\"#f97316\" stroke-width=\"1.7\"/><line x1=\"370\" y1=\"95\" x2=\"370\" y2=\"95\" stroke=\"#f97316\" stroke-width=\"1.7\"/><line x1=\"45\" y1=\"95\" x2=\"45\" y2=\"95\" stroke=\"#334155\" stroke-width=\"1.7\"/><line x1=\"45\" y1=\"95\" x2=\"105\" y2=\"95\" stroke=\"#f97316\" stroke-width=\"1.7\"/><line x1=\"265\" y1=\"95\" x2=\"370\" y2=\"95\" stroke=\"#334155\" stroke-width=\"1.7\"/><rect x=\"105\" y=\"70\" width=\"160\" height=\"30\" fill=\"#eff6ff\" stroke=\"#f97316\" stroke-width=\"1.7\"/><line x1=\"190\" y1=\"70\" x2=\"190\" y2=\"100\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"45\" y1=\"80\" x2=\"45\" y2=\"110\" stroke=\"#334155\" stroke-width=\"1.7\"/><line x1=\"370\" y1=\"80\" x2=\"370\" y2=\"110\" stroke=\"#334155\" stroke-width=\"1.7\"/><text x=\"45\" y=\"146\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">11.3</text><text x=\"105\" y=\"146\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">12.1</text><text x=\"190\" y=\"146\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">13.2</text><text x=\"265\" y=\"146\" text-anchor=\"middle\" font-family=\"Georgia, serif\" font-size=\"11\" font-style=\"italic\" fill=\"#334155\">b</text><text x=\"370\" y=\"146\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">18.1</text><text x=\"210\" y=\"171\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">100 m time (seconds)</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Find the longest time after camp.",
+                  "work": "\\(18.1-2.9=15.2\\text{ s}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 250\" width=\"50%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto;\" role=\"img\" aria-label=\"Box plot of 100 metre race times before training camp\"><line x1=\"35\" y1=\"125\" x2=\"385\" y2=\"125\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"45\" y1=\"120\" x2=\"45\" y2=\"130\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"105\" y1=\"120\" x2=\"105\" y2=\"130\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"190\" y1=\"120\" x2=\"190\" y2=\"130\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"265\" y1=\"120\" x2=\"265\" y2=\"130\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"370\" y1=\"120\" x2=\"370\" y2=\"130\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"45\" y1=\"95\" x2=\"105\" y2=\"95\" stroke=\"#f97316\" stroke-width=\"1.7\"/><line x1=\"105\" y1=\"70\" x2=\"265\" y2=\"70\" stroke=\"#f97316\" stroke-width=\"1.7\"/><line x1=\"105\" y1=\"100\" x2=\"265\" y2=\"100\" stroke=\"#f97316\" stroke-width=\"1.7\"/><line x1=\"370\" y1=\"95\" x2=\"370\" y2=\"95\" stroke=\"#f97316\" stroke-width=\"1.7\"/><line x1=\"45\" y1=\"95\" x2=\"45\" y2=\"95\" stroke=\"#334155\" stroke-width=\"1.7\"/><line x1=\"45\" y1=\"95\" x2=\"105\" y2=\"95\" stroke=\"#f97316\" stroke-width=\"1.7\"/><line x1=\"265\" y1=\"95\" x2=\"370\" y2=\"95\" stroke=\"#334155\" stroke-width=\"1.7\"/><rect x=\"105\" y=\"70\" width=\"160\" height=\"30\" fill=\"#eff6ff\" stroke=\"#f97316\" stroke-width=\"1.7\"/><line x1=\"190\" y1=\"70\" x2=\"190\" y2=\"100\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"45\" y1=\"80\" x2=\"45\" y2=\"110\" stroke=\"#334155\" stroke-width=\"1.7\"/><line x1=\"370\" y1=\"80\" x2=\"370\" y2=\"110\" stroke=\"#334155\" stroke-width=\"1.7\"/><text x=\"45\" y=\"146\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">11.3</text><text x=\"105\" y=\"146\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">12.1</text><text x=\"190\" y=\"146\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">13.2</text><text x=\"265\" y=\"146\" text-anchor=\"middle\" font-family=\"Georgia, serif\" font-size=\"11\" font-style=\"italic\" fill=\"#334155\">b</text><text x=\"370\" y=\"146\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">18.1</text><text x=\"210\" y=\"171\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">100 m time (seconds)</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Every post-camp time is at most 15.2 s, while the slowest quarter of the original group had times at or above the original Q3 boundary of 15.3 s. Since 15.2 < 15.3, at least that quarter improved.",
+                  "work": "\\(15.2<15.3\\quad\\therefore\\quad\\text{at least }25\\%\\text{ improved}\\)\n\\(\\boxed{\\text{Yes, the claim is supported.}}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 250\" width=\"50%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto;\" role=\"img\" aria-label=\"Box plot of 100 metre race times before training camp\"><line x1=\"35\" y1=\"125\" x2=\"385\" y2=\"125\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"45\" y1=\"120\" x2=\"45\" y2=\"130\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"105\" y1=\"120\" x2=\"105\" y2=\"130\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"190\" y1=\"120\" x2=\"190\" y2=\"130\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"265\" y1=\"120\" x2=\"265\" y2=\"130\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"370\" y1=\"120\" x2=\"370\" y2=\"130\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"45\" y1=\"95\" x2=\"105\" y2=\"95\" stroke=\"#f97316\" stroke-width=\"1.7\"/><line x1=\"105\" y1=\"70\" x2=\"265\" y2=\"70\" stroke=\"#f97316\" stroke-width=\"1.7\"/><line x1=\"105\" y1=\"100\" x2=\"265\" y2=\"100\" stroke=\"#f97316\" stroke-width=\"1.7\"/><line x1=\"370\" y1=\"95\" x2=\"370\" y2=\"95\" stroke=\"#f97316\" stroke-width=\"1.7\"/><line x1=\"45\" y1=\"95\" x2=\"45\" y2=\"95\" stroke=\"#334155\" stroke-width=\"1.7\"/><line x1=\"45\" y1=\"95\" x2=\"105\" y2=\"95\" stroke=\"#f97316\" stroke-width=\"1.7\"/><line x1=\"265\" y1=\"95\" x2=\"370\" y2=\"95\" stroke=\"#334155\" stroke-width=\"1.7\"/><rect x=\"105\" y=\"70\" width=\"160\" height=\"30\" fill=\"#eff6ff\" stroke=\"#f97316\" stroke-width=\"1.7\"/><line x1=\"190\" y1=\"70\" x2=\"190\" y2=\"100\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"45\" y1=\"80\" x2=\"45\" y2=\"110\" stroke=\"#334155\" stroke-width=\"1.7\"/><line x1=\"370\" y1=\"80\" x2=\"370\" y2=\"110\" stroke=\"#334155\" stroke-width=\"1.7\"/><text x=\"45\" y=\"146\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">11.3</text><text x=\"105\" y=\"146\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">12.1</text><text x=\"190\" y=\"146\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">13.2</text><text x=\"265\" y=\"146\" text-anchor=\"middle\" font-family=\"Georgia, serif\" font-size=\"11\" font-style=\"italic\" fill=\"#334155\">b</text><text x=\"370\" y=\"146\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">18.1</text><text x=\"210\" y=\"171\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">100 m time (seconds)</text></svg>"
+                  }
+                }
+              ],
+              "manual": true,
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "2023 Year 9 5.3 Task 4B",
+                "school": "Year 9 Mathematics 5.3",
+                "examType": "Task 4B",
+                "grade": "9",
+                "sourceQuestion": "q23b"
+              }
+            }
+          ]
         }
       ]
     }

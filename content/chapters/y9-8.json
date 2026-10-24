@@ -6692,6 +6692,311 @@
             "marks": 2,
             "origin": "exam-import"
           }
+        },
+        {
+          "id": "y9-2023-t4b-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the following expression in index form: \\(a\\times a\\times a\\times b\\times b\\).",
+          "options": [
+            "\\(a^5b\\)",
+            "\\(a^3b^2\\)",
+            "\\(a^3+b^2\\)",
+            "\\(ab^5\\)"
+          ],
+          "answer": 1,
+          "hint": "Count how many times each distinct base is multiplied by itself, then write each count as its exponent.",
+          "keyPoints": [
+            {
+              "text": "a\\times a\\times a",
+              "note": "The number of repeated factors becomes the exponent."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Group repeated factors with the same base. There are three factors of \\(a\\) and two factors of \\(b\\).",
+              "work": "\\(a\\times a\\times a=a^3,\\qquad b\\times b=b^2\\)"
+            },
+            {
+              "explain": "Write the two powered factors together; different bases are multiplied, not added.",
+              "work": "\\(a^3b^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 5.3 Task 4B",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 4B",
+            "grade": "9",
+            "sourceQuestion": "q1"
+          }
+        },
+        {
+          "id": "y9-2023-t4b-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the following algebraic expression by using index law: \\((x^4)^3\\).",
+          "options": [
+            "\\(x^7\\)",
+            "\\(x^{64}\\)",
+            "\\(x^{12}\\)",
+            "\\(3x^4\\)"
+          ],
+          "answer": 2,
+          "hint": "Use the power-of-a-power law: multiply the inner exponent by the outer exponent.",
+          "keyPoints": [
+            {
+              "text": "\\((x^4)^3\\)",
+              "note": "For a power raised to a power, multiply exponents."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The expression is a power raised to another power, so multiply the exponents.",
+              "work": "\\((x^m)^n=x^{mn}\\)"
+            },
+            {
+              "explain": "Substitute \\(m=4\\) and \\(n=3\\), then calculate.",
+              "work": "\\((x^4)^3=x^{4\\times3}=x^{12}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 5.3 Task 4B",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 4B",
+            "grade": "9",
+            "sourceQuestion": "q2"
+          }
+        },
+        {
+          "id": "y9-2023-t4b-q11",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Simplify the following indices using index laws.",
+          "hint": "For each expression, identify whether the same base is multiplied, divided, raised to a power, or has exponent zero.",
+          "keyPoints": [
+            {
+              "text": "index laws",
+              "note": "Choose the index rule that matches the operation in each expression."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 5.3 Task 4B",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 4B",
+            "grade": "9",
+            "sourceQuestion": "q11"
+          },
+          "parts": [
+            {
+              "id": "y9-2023-t4b-q11a",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "\\(a^6\\times a^9\\times a^2\\)",
+              "options": [
+                "\\(a^{17}\\)",
+                "\\(a^{108}\\)",
+                "\\(3a^{17}\\)",
+                "\\(a^7\\)"
+              ],
+              "answer": 0,
+              "hint": "When multiplying powers with the same base, add the exponents.",
+              "keyPoints": [
+                {
+                  "text": "\\(a^6\\times a^9\\times a^2\\)",
+                  "note": "Same base multiplied: add exponents."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "All three factors have base \\(a\\), so use the product law.",
+                  "work": "\\(a^m\\times a^n=a^{m+n}\\)"
+                },
+                {
+                  "explain": "Add each exponent and keep the base \\(a\\).",
+                  "work": "\\(a^6\\times a^9\\times a^2=a^{6+9+2}=a^{17}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "2023 Year 9 5.3 Task 4B",
+                "school": "Year 9 Mathematics 5.3",
+                "examType": "Task 4B",
+                "grade": "9",
+                "sourceQuestion": "q11a"
+              }
+            },
+            {
+              "id": "y9-2023-t4b-q11b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "\\(\\dfrac{a^7\\div a^2}{a^3}\\)",
+              "options": [
+                "\\(a^4\\)",
+                "\\(a^2\\)",
+                "\\(a^8\\)",
+                "\\(a^{12}\\)"
+              ],
+              "answer": 1,
+              "hint": "Simplify the numerator first using the quotient law, then divide by \\(a^3\\).",
+              "keyPoints": [
+                {
+                  "text": "a^7\\div a^2",
+                  "note": "For division with the same base, subtract the exponent below from the exponent above."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "First simplify the division in the numerator by subtracting exponents.",
+                  "work": "\\(a^7\\div a^2=a^{7-2}=a^5\\)"
+                },
+                {
+                  "explain": "Now divide \\(a^5\\) by \\(a^3\\), subtracting the exponents again.",
+                  "work": "\\(\\dfrac{a^5}{a^3}=a^{5-3}=a^2\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "2023 Year 9 5.3 Task 4B",
+                "school": "Year 9 Mathematics 5.3",
+                "examType": "Task 4B",
+                "grade": "9",
+                "sourceQuestion": "q11b"
+              }
+            },
+            {
+              "id": "y9-2023-t4b-q11c",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "\\((3a^5b)^2\\)",
+              "options": [
+                "\\(6a^{10}b\\)",
+                "\\(9a^5b^2\\)",
+                "\\(9a^{10}b^2\\)",
+                "\\(3a^{10}b^2\\)"
+              ],
+              "answer": 2,
+              "hint": "The outside square applies to every factor inside the brackets, including the coefficient 3.",
+              "keyPoints": [
+                {
+                  "text": "\\((3a^5b)^2\\)",
+                  "note": "The exponent 2 applies to the coefficient and every variable factor."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Apply the power to each factor in the product.",
+                  "work": "\\((3a^5b)^2=3^2(a^5)^2b^2\\)"
+                },
+                {
+                  "explain": "Square 3 and multiply the exponent of \\(a\\) by 2.",
+                  "work": "\\(3^2=9,\\qquad(a^5)^2=a^{5\\times2}=a^{10}\\)"
+                },
+                {
+                  "explain": "Combine the powered factors.",
+                  "work": "\\(\\boxed{9a^{10}b^2}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "2023 Year 9 5.3 Task 4B",
+                "school": "Year 9 Mathematics 5.3",
+                "examType": "Task 4B",
+                "grade": "9",
+                "sourceQuestion": "q11c"
+              }
+            },
+            {
+              "id": "y9-2023-t4b-q11d",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "\\(5a^0+3\\)",
+              "options": [
+                "\\(3\\)",
+                "\\(5a^0\\)",
+                "\\(8a\\)",
+                "\\(8\\)"
+              ],
+              "answer": 3,
+              "hint": "Use the zero-index rule first: for non-zero \\(a\\), \\(a^0=1\\).",
+              "keyPoints": [
+                {
+                  "text": "5a^0",
+                  "note": "A non-zero base raised to the zero power equals 1."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Replace the zero power by 1.",
+                  "work": "\\(a^0=1\\quad(a\\ne0)\\)"
+                },
+                {
+                  "explain": "Multiply by 5, then add 3.",
+                  "work": "\\(5a^0+3=5(1)+3=5+3=\\boxed{8}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "2023 Year 9 5.3 Task 4B",
+                "school": "Year 9 Mathematics 5.3",
+                "examType": "Task 4B",
+                "grade": "9",
+                "sourceQuestion": "q11d"
+              }
+            }
+          ]
+        },
+        {
+          "id": "y9-2023-t4b-q27",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Solve the following equation for \\(x\\): \\(3^{-4x}=9^{6-x}\\).",
+          "options": [
+            "\\(x=6\\)",
+            "\\(x=-12\\)",
+            "\\(x=-6\\)",
+            "\\(x=12\\)"
+          ],
+          "answer": 2,
+          "hint": "Rewrite 9 as \\(3^2\\), so both sides have the same base. Then equate the exponents.",
+          "keyPoints": [
+            {
+              "text": "following equation",
+              "note": "Write both sides as powers with base 3, then compare exponents."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Rewrite the right-hand base 9 as a power of 3.",
+              "work": "\\(9^{6-x}=(3^2)^{6-x}=3^{2(6-x)}=3^{12-2x}\\)"
+            },
+            {
+              "explain": "The bases now match and 3 is positive and not 1, so set the exponents equal.",
+              "work": "\\(-4x=12-2x\\)"
+            },
+            {
+              "explain": "Add \\(4x\\) to both sides, then divide by 2.",
+              "work": "\\(0=12+2x\\)\n\\(-12=2x\\)\n\\(\\boxed{x=-6}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 5.3 Task 4B",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 4B",
+            "grade": "9",
+            "sourceQuestion": "q27"
+          }
         }
       ]
     },
@@ -7144,6 +7449,49 @@
               "note": "The negative exponent takes the reciprocal; the exponent 1/2 means square root."
             }
           ]
+        },
+        {
+          "id": "y9-2023-t4b-q26",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Simplify the following algebraic expression. Leave your answer in positive index form: \\(\\sqrt[3]{8x^6}\\times\\dfrac{1}{3y^{-5}}\\).",
+          "options": [
+            "\\(\\dfrac{2x^2}{3y^5}\\)",
+            "\\(\\dfrac{2x^2y^5}{3}\\)",
+            "\\(\\dfrac{8x^2y^5}{3}\\)",
+            "\\(\\dfrac{2x^6y^5}{3}\\)"
+          ],
+          "answer": 1,
+          "hint": "Simplify the cube root first. Then rewrite division by \\(y^{-5}\\) using a positive exponent.",
+          "keyPoints": [
+            {
+              "text": "positive index form",
+              "note": "The final answer must not contain negative exponents."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Rewrite the cube root using a fractional exponent and simplify each factor inside it.",
+              "work": "\\(\\sqrt[3]{8x^6}=(8x^6)^{1/3}=8^{1/3}x^{6/3}=2x^2\\)"
+            },
+            {
+              "explain": "The second factor has a negative power in its denominator, so moving \\(y^{-5}\\) to the numerator makes its exponent positive.",
+              "work": "\\(\\dfrac{1}{3y^{-5}}=\\dfrac{y^5}{3}\\)"
+            },
+            {
+              "explain": "Multiply the simplified factors and leave only positive indices.",
+              "work": "\\(2x^2\\times\\dfrac{y^5}{3}=\\boxed{\\dfrac{2x^2y^5}{3}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 5.3 Task 4B",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 4B",
+            "grade": "9",
+            "sourceQuestion": "q26"
+          }
         }
       ]
     },
@@ -7597,6 +7945,49 @@
             "examType": "Task 3",
             "grade": "9",
             "sourceQuestion": "si-q5"
+          }
+        },
+        {
+          "id": "y9-2023-t4b-q12",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the following number in scientific notation: \\(31,200,000\\).",
+          "options": [
+            "\\(3.12\\times10^7\\)",
+            "\\(31.2\\times10^6\\)",
+            "\\(3.12\\times10^6\\)",
+            "\\(0.312\\times10^8\\)"
+          ],
+          "answer": 0,
+          "hint": "Move the decimal point until one non-zero digit remains to its left, then count the places moved.",
+          "keyPoints": [
+            {
+              "text": "scientific notation",
+              "note": "The leading number must be at least 1 and less than 10."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the number with its decimal point understood at the end.",
+              "work": "\\(31,200,000=31,200,000.\\)"
+            },
+            {
+              "explain": "Move the decimal point 7 places left to make a number between 1 and 10.",
+              "work": "\\(31,200,000=3.12\\times10^7\\)"
+            },
+            {
+              "explain": "Check the exponent by moving the decimal point back 7 places.",
+              "work": "\\(3.12\\times10^7=31,200,000\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 5.3 Task 4B",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 4B",
+            "grade": "9",
+            "sourceQuestion": "q12"
           }
         }
       ]
