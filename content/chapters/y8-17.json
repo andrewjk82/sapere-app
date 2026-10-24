@@ -1737,10 +1737,7 @@
               "steps": [
                 {
                   "explain": "The formula is \\(D=\\dfrac{2A}{15}\\), and George is 9 months old. Substitute \\(A=9\\).",
-                  "work": "\\(D=\\dfrac{2(9)}{15}\\)",
-                  "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 130\" width=\"100%\" height=\"auto\"><rect x=\"30\" y=\"22\" width=\"240\" height=\"86\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#cbd5e1\"/><text x=\"55\" y=\"55\" font-size=\"16\" fill=\"#1e293b\">D = 2A / 15</text><text x=\"55\" y=\"82\" font-size=\"12\" fill=\"#475569\">D: dose in mL • A: age in months</text></svg>"
-                  }
+                  "work": "\\(D=\\dfrac{2(9)}{15}\\)"
                 },
                 {
                   "explain": "Multiply in the numerator, then divide by 15.",
@@ -1764,10 +1761,7 @@
                   "text": "George is nine months old.",
                   "note": "Replace A with 9 in the dosage formula."
                 }
-              ],
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 130\" width=\"100%\" height=\"auto\"><rect x=\"30\" y=\"22\" width=\"240\" height=\"86\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#cbd5e1\"/><text x=\"55\" y=\"55\" font-size=\"16\" fill=\"#1e293b\">D = 2A / 15</text><text x=\"55\" y=\"82\" font-size=\"12\" fill=\"#475569\">D: dose in mL • A: age in months</text></svg>"
-              }
+              ]
             },
             {
               "id": "y8-53entry-dose-q2",
@@ -1785,10 +1779,7 @@
               "steps": [
                 {
                   "explain": "Use the formula \\(D=\\dfrac{2A}{15}\\) and substitute the known dosage \\(D=4\\).",
-                  "work": "\\(4=\\dfrac{2A}{15}\\)",
-                  "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 130\" width=\"100%\" height=\"auto\"><rect x=\"30\" y=\"22\" width=\"240\" height=\"86\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#cbd5e1\"/><text x=\"55\" y=\"55\" font-size=\"16\" fill=\"#1e293b\">D = 2A / 15</text><text x=\"55\" y=\"82\" font-size=\"12\" fill=\"#475569\">D: dose in mL • A: age in months</text></svg>"
-                  }
+                  "work": "\\(4=\\dfrac{2A}{15}\\)"
                 },
                 {
                   "explain": "Multiply both sides by 15 to clear the denominator.",
@@ -1816,10 +1807,7 @@
                   "text": "The correct dosage of the medicine for Sam is 4 mL.",
                   "note": "Put 4 in for D, then isolate A."
                 }
-              ],
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 130\" width=\"100%\" height=\"auto\"><rect x=\"30\" y=\"22\" width=\"240\" height=\"86\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#cbd5e1\"/><text x=\"55\" y=\"55\" font-size=\"16\" fill=\"#1e293b\">D = 2A / 15</text><text x=\"55\" y=\"82\" font-size=\"12\" fill=\"#475569\">D: dose in mL • A: age in months</text></svg>"
-              }
+              ]
             }
           ],
           "hint": "Use the same formula in both parts: substitute the known age to find dosage, or substitute the dosage and solve backwards for age.",
@@ -1833,9 +1821,6 @@
               15,
               21
             ]
-          },
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 130\" width=\"100%\" height=\"auto\"><rect x=\"30\" y=\"22\" width=\"240\" height=\"86\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#cbd5e1\"/><text x=\"55\" y=\"55\" font-size=\"16\" fill=\"#1e293b\">D = 2A / 15</text><text x=\"55\" y=\"82\" font-size=\"12\" fill=\"#475569\">D: dose in mL • A: age in months</text></svg>"
           }
         }
       ]
