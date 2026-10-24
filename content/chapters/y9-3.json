@@ -4710,6 +4710,381 @@
             "marks": 3,
             "origin": "exam-import"
           }
+        },
+        {
+          "id": "y9-2023-t4b-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Susan has annual salary of \\(\\$86\\,400\\), calculate her monthly salary.",
+          "options": [
+            "\\(\\$7,200\\)",
+            "\\(\\$1,200\\)",
+            "\\(\\$10,800\\)",
+            "\\(\\$86,388\\)"
+          ],
+          "answer": 0,
+          "hint": "One year has 12 months. Divide the annual salary evenly by 12.",
+          "keyPoints": [
+            {
+              "text": "annual salary",
+              "note": "Divide the annual amount by 12 months."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The salary is given for 12 months, and we need the amount for one month.",
+              "work": "\\(\\text{Monthly salary}=\\$86\\,400\\div12\\)"
+            },
+            {
+              "explain": "Divide in manageable steps and include the currency unit.",
+              "work": "\\(86\\,400\\div12=7\\,200\\)\n\\(\\boxed{\\$7,200\\text{ per month}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 5.3 Task 4B",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 4B",
+            "grade": "9",
+            "sourceQuestion": "q3"
+          }
+        },
+        {
+          "id": "y9-2023-t4b-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Francis receives \\(\\$30\\) per hour. He worked a 40-hour week. Calculate his weekly pay.",
+          "options": [
+            "\\(\\$1,200\\)",
+            "\\(\\$750\\)",
+            "\\(\\$1,230\\)",
+            "\\(\\$30\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the hourly rate by the number of hours worked.",
+          "keyPoints": [
+            {
+              "text": "40-hour week",
+              "note": "Weekly pay is hourly rate multiplied by 40 hours."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the rate per hour and the total number of hours.",
+              "work": "\\(\\text{Hourly rate}=\\$30,\\qquad \\text{hours}=40\\)"
+            },
+            {
+              "explain": "Multiply dollars per hour by hours; the hours cancel, leaving dollars.",
+              "work": "\\(30\\times40=1,200\\)\n\\(\\boxed{\\$1,200}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 5.3 Task 4B",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 4B",
+            "grade": "9",
+            "sourceQuestion": "q4"
+          }
+        },
+        {
+          "id": "y9-2023-t4b-q13",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Alana invested \\(\\$12\\,800\\) at a simple interest rate of \\(7.2\\%\\) p.a. for 3 years. Calculate the interest earned.",
+          "options": [
+            "\\(\\$27,648\\)",
+            "\\(\\$2,764.80\\)",
+            "\\(\\$15,564.80\\)",
+            "\\(\\$864\\)"
+          ],
+          "answer": 1,
+          "hint": "For simple interest use \\(I=Prt\\). Convert 7.2% to 0.072 and use 3 years.",
+          "keyPoints": [
+            {
+              "text": "simple interest rate of \\(7.2\\%\\)",
+              "note": "Use the simple-interest formula and convert the rate to a decimal."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "List the principal, annual rate as a decimal, and time in years.",
+              "work": "\\(P=12,800,\\qquad r=7.2\\%=0.072,\\qquad t=3\\)"
+            },
+            {
+              "explain": "Substitute into the simple-interest formula.",
+              "work": "\\(I=Prt=12,800(0.072)(3)\\)"
+            },
+            {
+              "explain": "Calculate the interest earned (not the total balance).",
+              "work": "\\(12,800(0.072)=921.60\\)\n\\(921.60(3)=\\boxed{\\$2,764.80}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 5.3 Task 4B",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 4B",
+            "grade": "9",
+            "sourceQuestion": "q13"
+          }
+        },
+        {
+          "id": "y9-2023-t4b-q14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A real estate agent’s commission for selling houses is \\(2\\%\\) for the first \\(\\$800\\,000\\) of the sale price and \\(1.5\\%\\) for any amount over \\(\\$800\\,000\\). Calculate the commission earned in selling a house for \\(\\$1\\,500\\,000\\).",
+          "options": [
+            "\\(\\$30,000\\)",
+            "\\(\\$22,500\\)",
+            "\\(\\$26,500\\)",
+            "\\(\\$24,000\\)"
+          ],
+          "answer": 2,
+          "hint": "Split the sale price into the first $800,000 and the amount above $800,000. Apply each rate only to its own band.",
+          "keyPoints": [
+            {
+              "text": "for any amount over",
+              "note": "Apply 1.5% only to the part above the first $800,000."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Separate the sale price into the two commission bands.",
+              "work": "\\(\\text{First band}=\\$800\\,000\\)\n\\(\\text{Amount over}=1,500,000-800,000=\\$700,000\\)"
+            },
+            {
+              "explain": "Calculate the commission on each band using its stated percentage.",
+              "work": "\\(0.02(800,000)=\\$16,000\\)\n\\(0.015(700,000)=\\$10,500\\)"
+            },
+            {
+              "explain": "Add the two commission amounts.",
+              "work": "\\(16,000+10,500=\\boxed{\\$26,500}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 5.3 Task 4B",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 4B",
+            "grade": "9",
+            "sourceQuestion": "q14"
+          }
+        },
+        {
+          "id": "y9-2023-t4b-q15",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Anastasia works at a local café for an hourly rate of \\(\\$25\\). She receives time-and-a-half on Saturdays and double-time on Sundays. The table shows the hours worked by Anastasia during this week. Calculate her pay for this week.",
+          "options": [
+            "\\(\\$837.50\\)",
+            "\\(\\$687.50\\)",
+            "\\(\\$881.25\\)",
+            "\\(\\$987.50\\)"
+          ],
+          "answer": 2,
+          "hint": "Use the ordinary rate on Tuesday and Thursday, multiply Saturday’s rate by 1.5, and Sunday’s rate by 2. Then add all four daily amounts.",
+          "keyPoints": [
+            {
+              "text": "time-and-a-half on Saturdays",
+              "note": "Multiply the ordinary hourly rate by 1.5 for Saturday."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Copy the hours and pay rates from the table. Ordinary rate is $25/hour; Saturday is time-and-a-half; Sunday is double-time.",
+              "work": "\\(\\text{Tue}=8\\text{ h},\\;\\text{Thu}=7.5\\text{ h},\\;\\text{Sat}=8.5\\text{ h},\\;\\text{Sun}=3.5\\text{ h}\\)"
+            },
+            {
+              "explain": "Calculate the ordinary weekday pay for Tuesday and Thursday.",
+              "work": "\\((8+7.5)\\times25=15.5\\times25=\\$387.50\\)"
+            },
+            {
+              "explain": "Find the special hourly rates and calculate Saturday and Sunday pay.",
+              "work": "\\(\\text{Saturday rate}=1.5(25)=\\$37.50\\text{/h}\\)\n\\(8.5\\times37.50=\\$318.75\\)\n\\(\\text{Sunday rate}=2(25)=\\$50\\text{/h}\\)\n\\(3.5\\times50=\\$175.00\\)"
+            },
+            {
+              "explain": "Add the weekday, Saturday, and Sunday amounts.",
+              "work": "\\(387.50+318.75+175.00=\\boxed{\\$881.25}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 5.3 Task 4B",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 4B",
+            "grade": "9",
+            "sourceQuestion": "q15"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 170\" width=\"50%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto;\" role=\"img\" aria-label=\"Table of Anastasia’s weekly work days, start times, finish times, and hours worked\"><rect x=\"4\" y=\"4\" width=\"492\" height=\"162\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"4\" y1=\"34\" x2=\"496\" y2=\"34\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"4\" y1=\"67\" x2=\"496\" y2=\"67\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"4\" y1=\"100\" x2=\"496\" y2=\"100\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"4\" y1=\"133\" x2=\"496\" y2=\"133\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"115\" y1=\"4\" x2=\"115\" y2=\"200\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"232\" y1=\"4\" x2=\"232\" y2=\"200\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"349\" y1=\"4\" x2=\"349\" y2=\"200\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"59\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">Day</text><text x=\"173\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">Start time</text><text x=\"290\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">Finish time</text><text x=\"422\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">Hours worked</text><text x=\"59\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">Tuesday</text><text x=\"173\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">6:00 am</text><text x=\"290\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">2:00 pm</text><text x=\"422\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">8 hours</text><text x=\"59\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">Thursday</text><text x=\"173\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">8:00 am</text><text x=\"290\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">3:30 pm</text><text x=\"422\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">7.5 hours</text><text x=\"59\" y=\"117\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">Saturday</text><text x=\"173\" y=\"117\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">6:30 am</text><text x=\"290\" y=\"117\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">3:00 pm</text><text x=\"422\" y=\"117\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">8.5 hours</text><text x=\"59\" y=\"150\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">Sunday</text><text x=\"173\" y=\"150\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">7:30 am</text><text x=\"290\" y=\"150\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">11:00 am</text><text x=\"422\" y=\"150\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">3.5 hours</text></svg>"
+          }
+        },
+        {
+          "id": "y9-2023-t4b-q22",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Zara earns a taxable income of \\(\\$89\\,700\\) per annum from her job at an accounting firm. She also has second job that pays \\(\\$600\\) gross income per month.",
+          "hint": "First convert the second job’s monthly income to annual income. Then use the correct row of the tax table and compare tax paid with tax owed.",
+          "keyPoints": [
+            {
+              "text": "taxable income",
+              "note": "Convert monthly income to an annual amount before applying the tax table."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 610 232\" width=\"50%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto;\" role=\"img\" aria-label=\"Australian tax payable table with five taxable-income brackets\"><rect x=\"4\" y=\"4\" width=\"600\" height=\"224\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"4\" x2=\"225\" y2=\"228\" stroke=\"#334155\" stroke-width=\"1.2\"/><line x1=\"4\" y1=\"41\" x2=\"604\" y2=\"41\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"4\" y1=\"78\" x2=\"604\" y2=\"78\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"4\" y1=\"115\" x2=\"604\" y2=\"115\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"4\" y1=\"152\" x2=\"604\" y2=\"152\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"4\" y1=\"189\" x2=\"604\" y2=\"189\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"114\" y=\"26\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">Taxable income</text><text x=\"414\" y=\"26\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"10\" font-style=\"normal\" fill=\"#334155\">Tax payable</text><text x=\"114\" y=\"63\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">0 – $18,200</text><text x=\"414\" y=\"63\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"10\" font-style=\"normal\" fill=\"#334155\">Nil</text><text x=\"114\" y=\"100\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">$18,201 – $45,000</text><text x=\"414\" y=\"100\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"10\" font-style=\"normal\" fill=\"#334155\">19c for each $1 over $18,200</text><text x=\"114\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">$45,001 – $120,000</text><text x=\"414\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"10\" font-style=\"normal\" fill=\"#334155\">$5092 plus 32.5c for each $1 over $45,000</text><text x=\"114\" y=\"174\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">$120,001 – $180,000</text><text x=\"414\" y=\"174\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"10\" font-style=\"normal\" fill=\"#334155\">$29467 plus 37c for each $1 over $120,000</text><text x=\"114\" y=\"211\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">$180,001 and over</text><text x=\"414\" y=\"211\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"10\" font-style=\"normal\" fill=\"#334155\">$51,667 plus 45c for each $1 over $180,000</text></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 5.3 Task 4B",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 4B",
+            "grade": "9",
+            "sourceQuestion": "q22"
+          },
+          "parts": [
+            {
+              "id": "y9-2023-t4b-q22a",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What is Zara’s total annual taxable income from both jobs? Assuming she has no allowable tax deductions.",
+              "options": [
+                "\\(\\$96,300\\)",
+                "\\(\\$7,200\\)",
+                "\\(\\$96,900\\)",
+                "\\(\\$97,500\\)"
+              ],
+              "answer": 2,
+              "hint": "Convert the monthly income from the second job to a yearly amount by multiplying by 12, then add both annual incomes.",
+              "keyPoints": [
+                {
+                  "text": "total annual taxable income",
+                  "note": "Multiply the monthly income by 12 before adding it to the annual salary."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Find the second job’s annual gross income.",
+                  "work": "\\(600\\times12=\\$7,200\\)"
+                },
+                {
+                  "explain": "Add the two annual incomes; there are no deductions to subtract.",
+                  "work": "\\(89,700+7,200=\\boxed{\\$96,900}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "2023 Year 9 5.3 Task 4B",
+                "school": "Year 9 Mathematics 5.3",
+                "examType": "Task 4B",
+                "grade": "9",
+                "sourceQuestion": "q22a"
+              }
+            },
+            {
+              "id": "y9-2023-t4b-q22b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Use the table below to calculate the amount of tax payable on her taxable income from both jobs.",
+              "options": [
+                "\\(\\$16,867.50\\)",
+                "\\(\\$21,959.50\\)",
+                "\\(\\$24,112.50\\)",
+                "\\(\\$5,092.00\\)"
+              ],
+              "answer": 1,
+              "hint": "Use the bracket containing $96,900. Add the base tax for that bracket to 32.5% of the income above $45,000.",
+              "keyPoints": [
+                {
+                  "text": "tax payable",
+                  "note": "Choose the bracket containing the total annual taxable income."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Use the annual taxable income from part (a), $96,900. It lies in the $45,001–$120,000 bracket.",
+                  "work": "\\(\\text{Tax}=\\$5,092+\\$0.325(\\text{income}-\\$45,000)\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 610 232\" width=\"50%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto;\" role=\"img\" aria-label=\"Australian tax payable table with five taxable-income brackets\"><rect x=\"4\" y=\"4\" width=\"600\" height=\"224\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"4\" x2=\"225\" y2=\"228\" stroke=\"#334155\" stroke-width=\"1.2\"/><line x1=\"4\" y1=\"41\" x2=\"604\" y2=\"41\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"4\" y1=\"78\" x2=\"604\" y2=\"78\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"4\" y1=\"115\" x2=\"604\" y2=\"115\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"4\" y1=\"152\" x2=\"604\" y2=\"152\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"4\" y1=\"189\" x2=\"604\" y2=\"189\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"114\" y=\"26\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">Taxable income</text><text x=\"414\" y=\"26\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"10\" font-style=\"normal\" fill=\"#334155\">Tax payable</text><text x=\"114\" y=\"63\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">0 – $18,200</text><text x=\"414\" y=\"63\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"10\" font-style=\"normal\" fill=\"#334155\">Nil</text><text x=\"114\" y=\"100\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">$18,201 – $45,000</text><text x=\"414\" y=\"100\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"10\" font-style=\"normal\" fill=\"#334155\">19c for each $1 over $18,200</text><text x=\"114\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">$45,001 – $120,000</text><text x=\"414\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"10\" font-style=\"normal\" fill=\"#334155\">$5092 plus 32.5c for each $1 over $45,000</text><text x=\"114\" y=\"174\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">$120,001 – $180,000</text><text x=\"414\" y=\"174\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"10\" font-style=\"normal\" fill=\"#334155\">$29467 plus 37c for each $1 over $120,000</text><text x=\"114\" y=\"211\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">$180,001 and over</text><text x=\"414\" y=\"211\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"10\" font-style=\"normal\" fill=\"#334155\">$51,667 plus 45c for each $1 over $180,000</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Calculate how much income is above $45,000.",
+                  "work": "\\(96,900-45,000=51,900\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 610 232\" width=\"50%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto;\" role=\"img\" aria-label=\"Australian tax payable table with five taxable-income brackets\"><rect x=\"4\" y=\"4\" width=\"600\" height=\"224\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"4\" x2=\"225\" y2=\"228\" stroke=\"#334155\" stroke-width=\"1.2\"/><line x1=\"4\" y1=\"41\" x2=\"604\" y2=\"41\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"4\" y1=\"78\" x2=\"604\" y2=\"78\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"4\" y1=\"115\" x2=\"604\" y2=\"115\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"4\" y1=\"152\" x2=\"604\" y2=\"152\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"4\" y1=\"189\" x2=\"604\" y2=\"189\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"114\" y=\"26\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">Taxable income</text><text x=\"414\" y=\"26\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"10\" font-style=\"normal\" fill=\"#334155\">Tax payable</text><text x=\"114\" y=\"63\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">0 – $18,200</text><text x=\"414\" y=\"63\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"10\" font-style=\"normal\" fill=\"#334155\">Nil</text><text x=\"114\" y=\"100\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">$18,201 – $45,000</text><text x=\"414\" y=\"100\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"10\" font-style=\"normal\" fill=\"#334155\">19c for each $1 over $18,200</text><text x=\"114\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">$45,001 – $120,000</text><text x=\"414\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"10\" font-style=\"normal\" fill=\"#334155\">$5092 plus 32.5c for each $1 over $45,000</text><text x=\"114\" y=\"174\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">$120,001 – $180,000</text><text x=\"414\" y=\"174\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"10\" font-style=\"normal\" fill=\"#334155\">$29467 plus 37c for each $1 over $120,000</text><text x=\"114\" y=\"211\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">$180,001 and over</text><text x=\"414\" y=\"211\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"10\" font-style=\"normal\" fill=\"#334155\">$51,667 plus 45c for each $1 over $180,000</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Calculate the tax on the excess and add the base tax.",
+                  "work": "\\(0.325(51,900)=16,867.50\\)\n\\(5,092+16,867.50=\\boxed{\\$21,959.50}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 610 232\" width=\"50%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto;\" role=\"img\" aria-label=\"Australian tax payable table with five taxable-income brackets\"><rect x=\"4\" y=\"4\" width=\"600\" height=\"224\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"4\" x2=\"225\" y2=\"228\" stroke=\"#334155\" stroke-width=\"1.2\"/><line x1=\"4\" y1=\"41\" x2=\"604\" y2=\"41\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"4\" y1=\"78\" x2=\"604\" y2=\"78\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"4\" y1=\"115\" x2=\"604\" y2=\"115\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"4\" y1=\"152\" x2=\"604\" y2=\"152\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"4\" y1=\"189\" x2=\"604\" y2=\"189\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"114\" y=\"26\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">Taxable income</text><text x=\"414\" y=\"26\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"10\" font-style=\"normal\" fill=\"#334155\">Tax payable</text><text x=\"114\" y=\"63\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">0 – $18,200</text><text x=\"414\" y=\"63\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"10\" font-style=\"normal\" fill=\"#334155\">Nil</text><text x=\"114\" y=\"100\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">$18,201 – $45,000</text><text x=\"414\" y=\"100\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"10\" font-style=\"normal\" fill=\"#334155\">19c for each $1 over $18,200</text><text x=\"114\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">$45,001 – $120,000</text><text x=\"414\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"10\" font-style=\"normal\" fill=\"#334155\">$5092 plus 32.5c for each $1 over $45,000</text><text x=\"114\" y=\"174\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">$120,001 – $180,000</text><text x=\"414\" y=\"174\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"10\" font-style=\"normal\" fill=\"#334155\">$29467 plus 37c for each $1 over $120,000</text><text x=\"114\" y=\"211\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-style=\"normal\" fill=\"#334155\">$180,001 and over</text><text x=\"414\" y=\"211\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"10\" font-style=\"normal\" fill=\"#334155\">$51,667 plus 45c for each $1 over $180,000</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "2023 Year 9 5.3 Task 4B",
+                "school": "Year 9 Mathematics 5.3",
+                "examType": "Task 4B",
+                "grade": "9",
+                "sourceQuestion": "q22b"
+              }
+            },
+            {
+              "id": "y9-2023-t4b-q22c",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Zara paid \\(\\$23620\\) in tax for both jobs during the year. Does Zara receive a tax refund? Justify your answer with the appropriate mathematical calculations.",
+              "options": [
+                "Yes, she receives a \\(\\$1,660.50\\) refund.",
+                "No, she owes \\(\\$1,660.50\\) more tax.",
+                "Yes, she receives a \\(\\$21,959.50\\) refund.",
+                "No, she owes \\(\\$23,620\\) more tax."
+              ],
+              "answer": 0,
+              "hint": "Compare the amount already paid with the tax payable from part (b). A payment above the tax owed is refunded.",
+              "keyPoints": [
+                {
+                  "text": "Does Zara receive a tax refund?",
+                  "note": "A refund occurs when tax already paid exceeds tax payable."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Use tax paid and tax payable from part (b).",
+                  "work": "\\(\\text{Tax paid}=\\$23,620,\\qquad\\text{tax payable}=\\$21,959.50\\)"
+                },
+                {
+                  "explain": "Subtract tax payable from the amount paid.",
+                  "work": "\\(23,620-21,959.50=1,660.50\\)"
+                },
+                {
+                  "explain": "Since the amount paid is greater than the tax owed, the difference is refunded.",
+                  "work": "\\(23,620>21,959.50\\quad\\therefore\\quad\\boxed{\\text{Yes, refund }\\$1,660.50}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "2023 Year 9 5.3 Task 4B",
+                "school": "Year 9 Mathematics 5.3",
+                "examType": "Task 4B",
+                "grade": "9",
+                "sourceQuestion": "q22c"
+              }
+            }
+          ]
         }
       ]
     },
@@ -5140,6 +5515,53 @@
             "part": "6(e)",
             "marks": 2,
             "origin": "exam-import"
+          }
+        },
+        {
+          "id": "y9-2023-t4b-q25",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the interest rate of a \\(\\$1500\\) investment that is now worth \\(\\$1738.91\\) after compounded yearly for 5 years. Correct your answer to the nearest percent.",
+          "options": [
+            "\\(2\\%\\)",
+            "\\(3\\%\\)",
+            "\\(4\\%\\)",
+            "\\(7\\%\\)"
+          ],
+          "answer": 1,
+          "hint": "Use the compound-interest model \\(A=P(1+r)^n\\). Divide by the starting amount, take the fifth root, then convert the decimal rate to a percentage.",
+          "keyPoints": [
+            {
+              "text": "compounded yearly for 5 years",
+              "note": "Use 5 compounding periods and take the fifth root to find the annual growth factor."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the starting amount, final amount, and number of yearly compounding periods.",
+              "work": "\\(P=1500,\\qquad A=1738.91,\\qquad n=5\\)"
+            },
+            {
+              "explain": "Substitute into the compound-interest formula and divide both sides by 1500.",
+              "work": "\\(1738.91=1500(1+r)^5\\)\\n\\(1+r)^5=\\dfrac{1738.91}{1500\\,}\\approx1.1592733\\)"
+            },
+            {
+              "explain": "Take the fifth root to undo the power of 5, then subtract 1.",
+              "work": "\\(1+r=(1.1592733)^{1/5}\\approx1.03\\)\\n\\(r\\approx1.03-1=0.03\\)"
+            },
+            {
+              "explain": "Convert the decimal to a percentage and round to the nearest percent.",
+              "work": "\\(0.03\\times100\\%=3\\%\\quad\\therefore\\quad\\boxed{3\\%}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 5.3 Task 4B",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 4B",
+            "grade": "9",
+            "sourceQuestion": "q25"
           }
         }
       ]

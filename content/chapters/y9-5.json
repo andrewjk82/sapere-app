@@ -9557,6 +9557,102 @@
               "note": "Use the first length from the equation, then apply the “double plus 4” relationship and divide each distance by its speed."
             }
           ]
+        },
+        {
+          "id": "y9-2023-t4b-q21",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Brad is organizing a 21st birthday party. The total cost (\\(C\\)) of the party will include \\(\\$200\\) for hiring the hall, \\(\\$120\\) for the music and \\(\\$14\\) per person (\\(n\\)) for catering.",
+          "hint": "The total has a fixed part and a per-guest part. First combine the fixed charges, then use the guest count.",
+          "keyPoints": [
+            {
+              "text": "total cost",
+              "note": "Separate fixed charges from the cost that changes with the number of guests."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 5.3 Task 4B",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 4B",
+            "grade": "9",
+            "sourceQuestion": "q21"
+          },
+          "parts": [
+            {
+              "id": "y9-2023-t4b-q21a",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Write a linear equation for \\(C\\) in terms of \\(n\\).",
+              "options": [
+                "\\(C=14+n+320\\)",
+                "\\(C=320n+14\\)",
+                "\\(C=14n+320\\)",
+                "\\(C=14n+200\\)"
+              ],
+              "answer": 2,
+              "hint": "Add the fixed hall and music costs, then add $14 for each of the n guests.",
+              "keyPoints": [
+                {
+                  "text": "equation for \\(C\\)",
+                  "note": "The variable term is $14 multiplied by the number of guests."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Separate the fixed costs from the cost that depends on the number of guests.",
+                  "work": "\\(\\text{Fixed cost}=200+120=320\\)\n\\(\\text{Catering cost}=14n\\)"
+                },
+                {
+                  "explain": "Combine the parts to write the total cost.",
+                  "work": "\\(C=14n+320\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "2023 Year 9 5.3 Task 4B",
+                "school": "Year 9 Mathematics 5.3",
+                "examType": "Task 4B",
+                "grade": "9",
+                "sourceQuestion": "q21a"
+              }
+            },
+            {
+              "id": "y9-2023-t4b-q21b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the cost of the party if 95 guests attend.",
+              "options": [
+                "\\(\\$1,330\\)",
+                "\\(\\$1,450\\)",
+                "\\(\\$1,530\\)",
+                "\\(\\$1,650\\)"
+              ],
+              "answer": 3,
+              "hint": "Substitute \\(n=95\\) into the cost equation, then evaluate the multiplication before adding the fixed cost.",
+              "steps": [
+                {
+                  "explain": "Use the equation from the previous part and substitute 95 for \\(n\\).",
+                  "work": "\\(C=14(95)+320\\)"
+                },
+                {
+                  "explain": "Calculate catering, then add the hall and music charges.",
+                  "work": "\\(14(95)=1,330\\)\n\\(1,330+320=\\boxed{\\$1,650}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "2023 Year 9 5.3 Task 4B",
+                "school": "Year 9 Mathematics 5.3",
+                "examType": "Task 4B",
+                "grade": "9",
+                "sourceQuestion": "q21b"
+              }
+            }
+          ]
         }
       ]
     },
