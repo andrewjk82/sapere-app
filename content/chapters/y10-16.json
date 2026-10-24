@@ -3051,6 +3051,120 @@
               "xp": 2
             }
           ]
+        },
+        {
+          "id": "sghs2011-q5-3",
+          "stem": "M varies inversely as P. When \\(P=4\\), \\(M=30\\).",
+          "timeLimit": 60,
+          "xp": 1,
+          "difficulty": "medium",
+          "meta": {
+            "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+            "school": "Sydney Girls High School",
+            "year": 2011,
+            "sourcePage": 7,
+            "sourceQuestion": "5.3"
+          },
+          "type": "multipart",
+          "parts": [
+            {
+              "id": "sghs2011-q5-3a",
+              "stem": "Find a formula relating \\(M\\) and \\(P\\).",
+              "timeLimit": 60,
+              "xp": 1,
+              "difficulty": "medium",
+              "meta": {
+                "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+                "school": "Sydney Girls High School",
+                "year": 2011,
+                "sourcePage": 7,
+                "sourceQuestion": "5.3(a)"
+              },
+              "type": "mc",
+              "options": [
+                "\\(M=\\frac{120}{P}\\)",
+                "\\(M=120P\\)",
+                "\\(M=\\frac{30}{P}\\)",
+                "\\(M=\\frac{P}{120}\\)"
+              ],
+              "answer": 0,
+              "hint": "Inverse variation has the form (M=k/P). Use (P=4), (M=30) to calculate (k).",
+              "keyPoints": [
+                {
+                  "text": "a formula relating \\(M\\) and \\(P\\)",
+                  "note": "Use the known value pair to find the constant, then write the inverse-variation formula."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "“M varies inversely as P” means M is proportional to the reciprocal of P.",
+                  "work": "\\(M\\propto\\frac1P\\Rightarrow M=\\frac{k}{P}\\)"
+                },
+                {
+                  "explain": "Substitute the known pair \\(P=4\\), \\(M=30\\) to find the constant k.",
+                  "work": "\\(30=\\frac{k}{4}\\Rightarrow k=120\\)"
+                },
+                {
+                  "explain": "Put the constant into the inverse-variation formula.",
+                  "work": "\\(\\boxed{M=\\frac{120}{P}}\\)"
+                }
+              ]
+            },
+            {
+              "id": "sghs2011-q5-3b",
+              "stem": "What is the value of \\(P\\) when \\(M=24\\)?",
+              "timeLimit": 60,
+              "xp": 1,
+              "difficulty": "medium",
+              "meta": {
+                "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+                "school": "Sydney Girls High School",
+                "year": 2011,
+                "sourcePage": 7,
+                "sourceQuestion": "5.3(b)"
+              },
+              "type": "mc",
+              "options": [
+                "\\(4.5\\)",
+                "\\(5\\)",
+                "\\(6\\)",
+                "\\(8\\)"
+              ],
+              "answer": 1,
+              "hint": "Substitute (M=24) into the inverse-variation formula and solve for P.",
+              "keyPoints": [
+                {
+                  "text": "when \\(M=24\\)",
+                  "note": "Put 24 into the M position of (M=120/P), then isolate P."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Use the relationship from the previous part, \\(M=120/P\\), and substitute \\(M=24\\).",
+                  "work": "\\(24=\\frac{120}{P}\\)"
+                },
+                {
+                  "explain": "Multiply both sides by P, then divide by 24.",
+                  "work": "\\(24P=120\\Rightarrow P=\\frac{120}{24}=5\\)"
+                },
+                {
+                  "explain": "Check by substituting P=5 into the formula: it gives M=24.",
+                  "work": "\\(M=\\frac{120}{5}=24\\Rightarrow\\boxed{P=5}\\)"
+                }
+              ]
+            }
+          ],
+          "hint": "Inverse variation means the product (MP) is constant. Find the constant from the given pair, then use the formula for the second part.",
+          "keyPoints": [
+            {
+              "text": "M varies inversely as P.",
+              "note": "The product (MP) stays constant."
+            },
+            {
+              "text": "When \\(P=4\\), \\(M=30\\).",
+              "note": "Use this pair to determine the constant of variation."
+            }
+          ]
         }
       ]
     },

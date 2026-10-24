@@ -3640,6 +3640,49 @@
             "school": "Abbotsleigh",
             "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
           }
+        },
+        {
+          "id": "sghs2011-q3-4",
+          "stem": "Replace \\(x\\) with \\(-m\\) in the expression \\(x^2+\\frac{1}{x^3}-x\\) and simplify.",
+          "timeLimit": 60,
+          "xp": 1,
+          "difficulty": "medium",
+          "meta": {
+            "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+            "school": "Sydney Girls High School",
+            "year": 2011,
+            "sourcePage": 5,
+            "sourceQuestion": "3.4"
+          },
+          "type": "mc",
+          "options": [
+            "\\(m^2-m+\\frac1{m^3}\\)",
+            "\\(m^2+m-\\frac1{m^3}\\)",
+            "\\(-m^2+m-\\frac1{m^3}\\)",
+            "\\(m^2+m+\\frac1{m^3}\\)"
+          ],
+          "answer": 1,
+          "hint": "Replace every occurrence of x with the full value \\(-m\\), including inside the denominator and the final subtraction.",
+          "keyPoints": [
+            {
+              "text": "Replace \\(x\\) with \\(-m\\)",
+              "note": "Use parentheses for each substituted negative value; pay special attention to odd powers and subtracting a negative."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Substitute \\(x=-m\\) into every occurrence of \\(x\\). Keep brackets around the negative value while squaring and cubing.",
+              "work": "\\((-m)^2+\\frac{1}{(-m)^3}-(-m)\\)"
+            },
+            {
+              "explain": "An even power makes the first term positive; an odd power keeps the denominator negative. Subtracting \\(-m\\) adds \\(m\\).",
+              "work": "\\((-m)^2=m^2,\\qquad (-m)^3=-m^3,\\qquad -(-m)=+m\\)"
+            },
+            {
+              "explain": "Combine the simplified terms.",
+              "work": "\\(m^2-\\frac1{m^3}+m=\\boxed{m^2+m-\\frac1{m^3}}\\)"
+            }
+          ]
         }
       ]
     },
@@ -3745,6 +3788,49 @@
             {
               "text": "scientific notation",
               "note": "The first factor must be at least 1 and less than 10."
+            }
+          ]
+        },
+        {
+          "id": "sghs2011-q1-1",
+          "stem": "Calculate \\(\\sqrt{\\frac{5}{900\\pi}}\\) and express your answer in scientific notation, correct to 3 significant figures.",
+          "timeLimit": 60,
+          "xp": 1,
+          "difficulty": "medium",
+          "meta": {
+            "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+            "school": "Sydney Girls High School",
+            "year": 2011,
+            "sourcePage": 3,
+            "sourceQuestion": "1.1"
+          },
+          "type": "mc",
+          "options": [
+            "\\(4.21\\times10^{-2}\\)",
+            "\\(4.21\\times10^{-3}\\)",
+            "\\(1.33\\times10^{-1}\\)",
+            "\\(4.21\\times10^{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Evaluate the expression under the square root first, then write the decimal using a coefficient between 1 and 10.",
+          "keyPoints": [
+            {
+              "text": "\\(\\sqrt{\\frac{5}{900\\pi}}\\)",
+              "note": "Evaluate the whole fraction inside the square root, including the factor of π in the denominator."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The number under the root is a small positive value. Keep the entire denominator together as \\(900\\pi\\), then evaluate before rounding.",
+              "work": "\\(\\sqrt{\\frac{5}{900\\pi}}=\\sqrt{0.00176839\\ldots}=0.042052\\ldots\\)"
+            },
+            {
+              "explain": "To write this in scientific notation, move the decimal point two places right to make a number between 1 and 10. That gives a power of \\(10^{-2}\\).",
+              "work": "\\(0.042052\\ldots=4.2052\\ldots\\times10^{-2}\\)"
+            },
+            {
+              "explain": "Round the coefficient to three significant figures; the first three significant digits are 4, 2, and 1, and the next digit is 0.",
+              "work": "\\(4.2052\\ldots\\times10^{-2}\\approx\\boxed{4.21\\times10^{-2}}\\)"
             }
           ]
         }
@@ -4241,6 +4327,53 @@
             "school": "Abbotsleigh",
             "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
           }
+        },
+        {
+          "id": "sghs2011-q5-2",
+          "stem": "Solve the following equation: \\((2^y)^2-12(2^y)+11=0\\).",
+          "timeLimit": 60,
+          "xp": 1,
+          "difficulty": "medium",
+          "meta": {
+            "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+            "school": "Sydney Girls High School",
+            "year": 2011,
+            "sourcePage": 7,
+            "sourceQuestion": "5.2"
+          },
+          "type": "mc",
+          "options": [
+            "\\(y=-1\\) or \\(y=\\log_2 11\\)",
+            "\\(y=1\\) or \\(y=11\\)",
+            "\\(y=0\\) or \\(y=\\log_{11}2\\)",
+            "\\(y=0\\) or \\(y=\\log_2 11\\)"
+          ],
+          "answer": 3,
+          "hint": "Set (u=2^y), so the equation becomes a quadratic. Remember (2^y>0), then convert each valid (u) value back to y.",
+          "keyPoints": [
+            {
+              "text": "\\((2^y)^2-12(2^y)+11=0\\)",
+              "note": "Use a substitution for the repeated exponential expression, then solve the resulting quadratic."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The repeated expression \\(2^y\\) can be treated as one variable. Let \\(u=2^y\\), so \\(u>0\\).",
+              "work": "\\(u=2^y>0\\Rightarrow u^2-12u+11=0\\)"
+            },
+            {
+              "explain": "Factorise the quadratic and solve each factor equation.",
+              "work": "\\(u^2-12u+11=(u-1)(u-11)=0\\Rightarrow u=1\\text{ or }u=11\\)"
+            },
+            {
+              "explain": "Replace u with \\(2^y\\). Solve each exponential equation: \\(2^y=1=2^0\\), while the second value is written as a logarithm.",
+              "work": "\\(2^y=1\\Rightarrow y=0;\\qquad2^y=11\\Rightarrow y=\\log_2 11\\)"
+            },
+            {
+              "explain": "Both u-values are positive and therefore allowed by \\(u=2^y\\).",
+              "work": "\\(\\boxed{y=0\\text{ or }y=\\log_2 11}\\)"
+            }
+          ]
         }
       ]
     }

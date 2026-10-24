@@ -27548,6 +27548,53 @@
             "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
             "sourceYear": 2024
           }
+        },
+        {
+          "id": "sghs2011-q1-7",
+          "stem": "Find the simple interest paid on \\(\\$3470\\) invested at \\(5.08\\%\\) p.a. for 7 months.",
+          "timeLimit": 60,
+          "xp": 1,
+          "difficulty": "medium",
+          "meta": {
+            "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+            "school": "Sydney Girls High School",
+            "year": 2011,
+            "sourcePage": 3,
+            "sourceQuestion": "1.7"
+          },
+          "type": "mc",
+          "options": [
+            "\\(\\$102.83\\)",
+            "\\(\\$147.65\\)",
+            "\\(\\$176.28\\)",
+            "\\(\\$9.80\\)"
+          ],
+          "answer": 0,
+          "hint": "Use simple interest = principal × rate × time, convert the rate to a decimal, and express 7 months as seven twelfths of a year.",
+          "keyPoints": [
+            {
+              "text": "7 months",
+              "note": "The rate is per year, so write the time as seven twelfths year."
+            },
+            {
+              "text": "simple interest",
+              "note": "Use the original principal in simple interest = principal × rate × time; do not compound."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Simple interest is calculated on the original principal. Convert \\(5.08\\%\\) to \\(0.0508\\), and match time units to the annual rate.",
+              "work": "\\(P=3470,\\qquad r=0.0508,\\qquad t=\\frac7{12}\\text{ year}\\)"
+            },
+            {
+              "explain": "Substitute into the simple-interest formula and multiply.",
+              "work": "\\(I=Prt=3470(0.0508)\\left(\\frac7{12}\\right)=102.827666\\ldots\\)"
+            },
+            {
+              "explain": "Money is written to the nearest cent.",
+              "work": "\\(\\boxed{I=\\$102.83}\\)"
+            }
+          ]
         }
       ]
     },
@@ -37209,6 +37256,49 @@
             {
               "text": "What percentage of the original liquid remains in the mix",
               "note": "Use the wording here to decide which amount is the base and whether the percentage applies forward or backwards."
+            }
+          ]
+        },
+        {
+          "id": "sghs2011-q1-8",
+          "stem": "A new computer costs \\(\\$2599\\). If it depreciates by \\(15\\%\\) per year, what will the computer be worth in five years?",
+          "timeLimit": 60,
+          "xp": 1,
+          "difficulty": "medium",
+          "meta": {
+            "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+            "school": "Sydney Girls High School",
+            "year": 2011,
+            "sourcePage": 3,
+            "sourceQuestion": "1.8"
+          },
+          "type": "mc",
+          "options": [
+            "\\(\\$1299.50\\)",
+            "\\(\\$1153.19\\)",
+            "\\(\\$1844.29\\)",
+            "\\(\\$1104.58\\)"
+          ],
+          "answer": 1,
+          "hint": "After a 15% decrease, 85% of the value remains each year. Apply the multiplier five times.",
+          "keyPoints": [
+            {
+              "text": "depreciates by \\(15\\%\\) per year",
+              "note": "The value retained each year is 100% - 15% = 85%; use repeated multiplication."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "A 15% annual depreciation leaves \\(100\\%-15\\%=85\\%\\) of the value after each year. This is repeated depreciation.",
+              "work": "\\(\\text{annual multiplier}=1-0.15=0.85\\)"
+            },
+            {
+              "explain": "Raise the multiplier to the fifth power because it is applied once per year for five years.",
+              "work": "\\(V=2599(0.85)^5=1153.190107\\ldots\\)"
+            },
+            {
+              "explain": "Round the final dollar amount to cents.",
+              "work": "\\(\\boxed{V=\\$1153.19}\\)"
             }
           ]
         }

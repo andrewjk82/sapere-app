@@ -1062,6 +1062,159 @@
             "sourceSection": "Section F",
             "sourcePart": "a"
           }
+        },
+        {
+          "id": "sghs2011-q1-2",
+          "stem": "A coin is tossed and a die is thrown. Find the probability of getting:",
+          "timeLimit": 60,
+          "xp": 1,
+          "difficulty": "medium",
+          "meta": {
+            "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+            "school": "Sydney Girls High School",
+            "year": 2011,
+            "sourcePage": 3,
+            "sourceQuestion": "1.2"
+          },
+          "type": "multipart",
+          "parts": [
+            {
+              "id": "sghs2011-q1-2a",
+              "stem": "a tail and a three.",
+              "timeLimit": 60,
+              "xp": 1,
+              "difficulty": "medium",
+              "meta": {
+                "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+                "school": "Sydney Girls High School",
+                "year": 2011,
+                "sourcePage": 3,
+                "sourceQuestion": "1.2(a)"
+              },
+              "type": "mc",
+              "options": [
+                "\\(\\frac{1}{6}\\)",
+                "\\(\\frac{1}{12}\\)",
+                "\\(\\frac{1}{3}\\)",
+                "\\(\\frac{1}{2}\\)"
+              ],
+              "answer": 1,
+              "hint": "For “and”, multiply the probability of a tail by the probability of rolling a three.",
+              "keyPoints": [
+                {
+                  "text": "a tail and a three",
+                  "note": "“And” means both independent events must occur, so multiply their probabilities."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "A fair coin has two equally likely outcomes, so the probability of a tail is \\(1/2\\). A fair die has six equally likely faces, so the probability of a three is \\(1/6\\).",
+                  "work": "\\(P(T)=\\frac12,\\qquad P(3)=\\frac16\\)"
+                },
+                {
+                  "explain": "The coin toss and die throw are independent. The word “and” means both events must happen, so multiply the probabilities.",
+                  "work": "\\(P(T\\text{ and }3)=\\frac12\\times\\frac16=\\frac{1}{12}\\)"
+                },
+                {
+                  "explain": "This is already in simplest form and is between 0 and 1, as a probability must be.",
+                  "work": "\\(\\boxed{\\frac{1}{12}}\\)"
+                }
+              ]
+            },
+            {
+              "id": "sghs2011-q1-2b",
+              "stem": "a head and an odd number.",
+              "timeLimit": 60,
+              "xp": 1,
+              "difficulty": "medium",
+              "meta": {
+                "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+                "school": "Sydney Girls High School",
+                "year": 2011,
+                "sourcePage": 3,
+                "sourceQuestion": "1.2(b)"
+              },
+              "type": "mc",
+              "options": [
+                "\\(\\frac12\\)",
+                "\\(\\frac13\\)",
+                "\\(\\frac14\\)",
+                "\\(\\frac34\\)"
+              ],
+              "answer": 2,
+              "hint": "There are three odd faces on a standard die: 1, 3, and 5.",
+              "keyPoints": [
+                {
+                  "text": "a head and an odd number",
+                  "note": "List the odd die faces (1, 3, 5), then multiply by the independent coin probability."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "A fair coin has \\(P(H)=1/2\\). The odd die results are 1, 3, and 5, so three of the six faces are odd.",
+                  "work": "\\(P(H)=\\frac12,\\qquad P(\\text{odd})=\\frac36=\\frac12\\)"
+                },
+                {
+                  "explain": "The coin and die are independent, and “and” requires multiplication.",
+                  "work": "\\(P(H\\text{ and odd})=\\frac12\\times\\frac12=\\frac14\\)"
+                },
+                {
+                  "explain": "Thus one quarter of all equally likely coin-and-die outcomes meet both conditions.",
+                  "work": "\\(\\boxed{\\frac14}\\)"
+                }
+              ]
+            },
+            {
+              "id": "sghs2011-q1-2c",
+              "stem": "a tail and a number more than five.",
+              "timeLimit": 60,
+              "xp": 1,
+              "difficulty": "medium",
+              "meta": {
+                "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+                "school": "Sydney Girls High School",
+                "year": 2011,
+                "sourcePage": 3,
+                "sourceQuestion": "1.2(c)"
+              },
+              "type": "mc",
+              "options": [
+                "\\(\\frac12\\)",
+                "\\(\\frac16\\)",
+                "\\(\\frac13\\)",
+                "\\(\\frac{1}{12}\\)"
+              ],
+              "answer": 3,
+              "hint": "Only one die face is greater than five. Combine it with the tail probability using multiplication.",
+              "keyPoints": [
+                {
+                  "text": "a tail and a number more than five",
+                  "note": "The only die face greater than five is 6; multiply its probability by the probability of a tail."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "The only die result more than 5 is 6. Therefore \\(P(>5)=1/6\\), while \\(P(T)=1/2\\).",
+                  "work": "\\(P(T)=\\frac12,\\qquad P(>5)=\\frac16\\)"
+                },
+                {
+                  "explain": "The events are independent, so multiply the two probabilities for “tail and a number more than five”.",
+                  "work": "\\(P(T\\text{ and }>5)=\\frac12\\times\\frac16=\\frac1{12}\\)"
+                },
+                {
+                  "explain": "The probability is \\(1/12\\), which is already simplified.",
+                  "work": "\\(\\boxed{\\frac1{12}}\\)"
+                }
+              ]
+            }
+          ],
+          "hint": "Treat the coin toss and die throw as independent. For “and”, multiply the two event probabilities.",
+          "keyPoints": [
+            {
+              "text": "A coin is tossed and a die is thrown.",
+              "note": "The two random events are independent."
+            }
+          ]
         }
       ]
     },

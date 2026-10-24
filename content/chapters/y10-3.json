@@ -2881,6 +2881,53 @@
           ],
           "answer": 2,
           "solution": "Correct answer: \\(14x+98\\)"
+        },
+        {
+          "id": "sghs2011-q2-6",
+          "stem": "Simplify the following: \\((x-5)^2-(x+2)^2\\).",
+          "timeLimit": 60,
+          "xp": 1,
+          "difficulty": "medium",
+          "meta": {
+            "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+            "school": "Sydney Girls High School",
+            "year": 2011,
+            "sourcePage": 4,
+            "sourceQuestion": "2.6"
+          },
+          "type": "mc",
+          "options": [
+            "\\(-14x+49\\)",
+            "\\(-14x+21\\)",
+            "\\(14x+21\\)",
+            "\\(-7x+3\\)"
+          ],
+          "answer": 1,
+          "hint": "Recognise a difference of squares: (A^2-B^2=(A-B)(A+B)).",
+          "keyPoints": [
+            {
+              "text": "\\((x-5)^2-(x+2)^2\\)",
+              "note": "Use the difference-of-squares identity; keep the brackets intact when subtracting."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Let \\(A=x-5\\) and \\(B=x+2\\). The expression is a difference of squares, so factor before expanding.",
+              "work": "\\((x-5)^2-(x+2)^2=[(x-5)-(x+2)][(x-5)+(x+2)]\\)"
+            },
+            {
+              "explain": "Simplify each bracket carefully. In the first bracket, distribute the subtraction across both terms of \\(x+2\\).",
+              "work": "\\((x-5)-(x+2)=-7,\\qquad (x-5)+(x+2)=2x-3\\)"
+            },
+            {
+              "explain": "Multiply the factors and collect terms.",
+              "work": "\\(-7(2x-3)=-14x+21\\)"
+            },
+            {
+              "explain": "The simplified expression is linear.",
+              "work": "\\(\\boxed{-14x+21}\\)"
+            }
+          ]
         }
       ]
     },
@@ -10545,6 +10592,53 @@
             "school": "Abbotsleigh",
             "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
           }
+        },
+        {
+          "id": "sghs2011-q4-2",
+          "stem": "Make \\(y\\) the subject of the equation \\(\\frac{x}{y}=\\frac{3y}{p+q}\\).",
+          "timeLimit": 60,
+          "xp": 1,
+          "difficulty": "medium",
+          "meta": {
+            "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+            "school": "Sydney Girls High School",
+            "year": 2011,
+            "sourcePage": 6,
+            "sourceQuestion": "4.2"
+          },
+          "type": "mc",
+          "options": [
+            "\\(y=\\pm\\sqrt{\\frac{x(p+q)}3}\\)",
+            "\\(y=\\frac{x(p+q)}3\\)",
+            "\\(y=\\pm\\sqrt{3x(p+q)}\\)",
+            "\\(y=\\frac{3x}{p+q}\\)"
+          ],
+          "answer": 0,
+          "hint": "Clear the denominators by multiplying by (y(p+q)), then isolate (y^2). Remember both square-root signs.",
+          "keyPoints": [
+            {
+              "text": "Make \\(y\\) the subject",
+              "note": "Keep the equation balanced as you clear denominators and isolate the square."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Start with \\(x/y=3y/(p+q)\\). Multiply both sides by \\(y(p+q)\\) to clear both denominators.",
+              "work": "\\(\\frac{x}{y}=\\frac{3y}{p+q}\\Rightarrow x(p+q)=3y^2\\)"
+            },
+            {
+              "explain": "Divide both sides by 3 to isolate the square of y.",
+              "work": "\\(y^2=\\frac{x(p+q)}3\\)"
+            },
+            {
+              "explain": "Take the square root of both sides. Algebraically, a squared variable gives both the positive and negative roots.",
+              "work": "\\(y=\\pm\\sqrt{\\frac{x(p+q)}3}\\)"
+            },
+            {
+              "explain": "This expresses y in terms of x, p, and q as requested.",
+              "work": "\\(\\boxed{y=\\pm\\sqrt{\\frac{x(p+q)}3}}\\)"
+            }
+          ]
         }
       ]
     },

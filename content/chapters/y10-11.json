@@ -2487,6 +2487,49 @@
             "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
             "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
           }
+        },
+        {
+          "id": "sghs2011-q1-4",
+          "stem": "What is the equation of the circle that has its centre at the origin and a diameter of 8 units?",
+          "timeLimit": 60,
+          "xp": 1,
+          "difficulty": "medium",
+          "meta": {
+            "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+            "school": "Sydney Girls High School",
+            "year": 2011,
+            "sourcePage": 3,
+            "sourceQuestion": "1.4"
+          },
+          "type": "mc",
+          "options": [
+            "\\(x^2+y^2=8\\)",
+            "\\(x^2+y^2=16\\)",
+            "\\(x^2+y^2=64\\)",
+            "\\((x-4)^2+y^2=16\\)"
+          ],
+          "answer": 1,
+          "hint": "The standard equation at the origin is x squared plus y squared equals radius squared. Find the radius from the diameter first.",
+          "keyPoints": [
+            {
+              "text": "diameter of 8 units",
+              "note": "The circle equation uses the radius, so halve the diameter before squaring."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The centre is \\( (0,0)\\), so use the origin-centred circle equation. The radius is half the diameter.",
+              "work": "\\(r=\\frac82=4\\)"
+            },
+            {
+              "explain": "Substitute the radius into \\(x^2+y^2=r^2\\).",
+              "work": "\\(x^2+y^2=4^2\\)"
+            },
+            {
+              "explain": "Square the radius to obtain the constant on the right-hand side.",
+              "work": "\\(\\boxed{x^2+y^2=16}\\)"
+            }
+          ]
         }
       ]
     },

@@ -1335,6 +1335,274 @@
           ],
           "answer": 2,
           "solution": "Correct answer: \\(30-20\\sqrt2\\text{ cm}\\)"
+        },
+        {
+          "id": "sghs2011-q2-4",
+          "stem": "The diagram shows triangles \\(ABC\\) and \\(DEC\\).",
+          "timeLimit": 60,
+          "xp": 1,
+          "difficulty": "medium",
+          "meta": {
+            "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+            "school": "Sydney Girls High School",
+            "year": 2011,
+            "sourcePage": 4,
+            "sourceQuestion": "2.4"
+          },
+          "type": "multipart",
+          "parts": [
+            {
+              "id": "sghs2011-q2-4a",
+              "stem": "Prove that \\(\\triangle ABC\\) is similar to \\(\\triangle DEC\\), giving reasons.",
+              "timeLimit": 60,
+              "xp": 1,
+              "difficulty": "medium",
+              "meta": {
+                "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+                "school": "Sydney Girls High School",
+                "year": 2011,
+                "sourcePage": 4,
+                "sourceQuestion": "2.4(a)"
+              },
+              "type": "review",
+              "manual": true,
+              "answer": "\\(\\triangle ABC\\sim\\triangle DEC\\) by AA: \\(\\angle ACB=\\angle DCE=90°\\) and the marked angles \\(\\angle BAC=\\angle CDE\\) are equal.",
+              "hint": "Compare the two marked angle pairs. Two equal corresponding angles are enough to prove triangles similar (AA).",
+              "keyPoints": [
+                {
+                  "text": "\\(\\triangle ABC\\)",
+                  "note": "Match A with D, B with E, and C with C before comparing angles."
+                },
+                {
+                  "text": "\\(\\triangle DEC\\)",
+                  "note": "Use the corresponding order to state the AA test correctly."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Read corresponding vertices from the stated order: \\(A\\leftrightarrow D\\), \\(B\\leftrightarrow E\\), and \\(C\\leftrightarrow C\\). The diagram marks the angles at A and D equal.",
+                  "work": "\\(\\angle BAC=\\angle CDE\\quad\\text{(given by matching angle marks)}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 260\" role=\"img\"><line x1=\"80\" y1=\"210\" x2=\"175\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"175\" y1=\"210\" x2=\"175\" y2=\"35\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"80\" y1=\"210\" x2=\"175\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"175\" y1=\"35\" x2=\"315\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"175\" y1=\"210\" x2=\"315\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2\" /><path d=\"M175 190h18v20\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"2\"/><path d=\"M175 115 A25 25 0 0 1 158 133\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"3\"/><path d=\"M175 35 A25 25 0 0 0 195 55\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"3\"/><text x=\"62\" y=\"226\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >B</text><text x=\"174\" y=\"228\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >C</text><text x=\"175\" y=\"107\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >A</text><text x=\"315\" y=\"228\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >E</text><text x=\"175\" y=\"25\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >D</text><text x=\"128\" y=\"230\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >6 cm</text><text x=\"248\" y=\"230\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >8 cm</text><text x=\"112\" y=\"151\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" ><tspan font-style=\"italic\">x</tspan><tspan> cm</tspan></text><text x=\"261\" y=\"119\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >20 cm</text></svg>"
+                  }
+                },
+                {
+                  "explain": "At C, each small right angle is formed by the vertical line through D-A-C and the horizontal base B-C-E.",
+                  "work": "\\(\\angle ACB=\\angle DCE=90°\\quad\\text{(perpendicular lines)}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 260\" role=\"img\"><line x1=\"80\" y1=\"210\" x2=\"175\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"175\" y1=\"210\" x2=\"175\" y2=\"35\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"80\" y1=\"210\" x2=\"175\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"175\" y1=\"35\" x2=\"315\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"175\" y1=\"210\" x2=\"315\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2\" /><path d=\"M175 190h18v20\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"2\"/><path d=\"M175 115 A25 25 0 0 1 158 133\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"3\"/><path d=\"M175 35 A25 25 0 0 0 195 55\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"3\"/><text x=\"62\" y=\"226\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >B</text><text x=\"174\" y=\"228\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >C</text><text x=\"175\" y=\"107\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >A</text><text x=\"315\" y=\"228\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >E</text><text x=\"175\" y=\"25\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >D</text><text x=\"128\" y=\"230\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >6 cm</text><text x=\"248\" y=\"230\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >8 cm</text><text x=\"112\" y=\"151\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" ><tspan font-style=\"italic\">x</tspan><tspan> cm</tspan></text><text x=\"261\" y=\"119\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >20 cm</text></svg>"
+                  }
+                },
+                {
+                  "explain": "The triangles have two pairs of equal corresponding angles, so the AA similarity test applies.",
+                  "work": "\\(\\therefore\\triangle ABC\\sim\\triangle DEC\\quad(AA)\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 260\" role=\"img\"><line x1=\"80\" y1=\"210\" x2=\"175\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"175\" y1=\"210\" x2=\"175\" y2=\"35\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"80\" y1=\"210\" x2=\"175\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"175\" y1=\"35\" x2=\"315\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"175\" y1=\"210\" x2=\"315\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2\" /><path d=\"M175 190h18v20\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"2\"/><path d=\"M175 115 A25 25 0 0 1 158 133\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"3\"/><path d=\"M175 35 A25 25 0 0 0 195 55\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"3\"/><text x=\"62\" y=\"226\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >B</text><text x=\"174\" y=\"228\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >C</text><text x=\"175\" y=\"107\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >A</text><text x=\"315\" y=\"228\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >E</text><text x=\"175\" y=\"25\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >D</text><text x=\"128\" y=\"230\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >6 cm</text><text x=\"248\" y=\"230\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >8 cm</text><text x=\"112\" y=\"151\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" ><tspan font-style=\"italic\">x</tspan><tspan> cm</tspan></text><text x=\"261\" y=\"119\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >20 cm</text></svg>"
+                  }
+                }
+              ],
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 260\" role=\"img\"><line x1=\"80\" y1=\"210\" x2=\"175\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"175\" y1=\"210\" x2=\"175\" y2=\"35\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"80\" y1=\"210\" x2=\"175\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"175\" y1=\"35\" x2=\"315\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"175\" y1=\"210\" x2=\"315\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2\" /><path d=\"M175 190h18v20\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"2\"/><path d=\"M175 115 A25 25 0 0 1 158 133\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"3\"/><path d=\"M175 35 A25 25 0 0 0 195 55\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"3\"/><text x=\"62\" y=\"226\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >B</text><text x=\"174\" y=\"228\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >C</text><text x=\"175\" y=\"107\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >A</text><text x=\"315\" y=\"228\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >E</text><text x=\"175\" y=\"25\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >D</text><text x=\"128\" y=\"230\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >6 cm</text><text x=\"248\" y=\"230\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >8 cm</text><text x=\"112\" y=\"151\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" ><tspan font-style=\"italic\">x</tspan><tspan> cm</tspan></text><text x=\"261\" y=\"119\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >20 cm</text></svg>"
+              }
+            },
+            {
+              "id": "sghs2011-q2-4b",
+              "stem": "Hence find the value of \\(x\\).",
+              "timeLimit": 60,
+              "xp": 1,
+              "difficulty": "medium",
+              "meta": {
+                "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+                "school": "Sydney Girls High School",
+                "year": 2011,
+                "sourcePage": 4,
+                "sourceQuestion": "2.4(b)"
+              },
+              "type": "mc",
+              "options": [
+                "\\(26.7\\text{ cm}\\)",
+                "\\(12\\text{ cm}\\)",
+                "\\(20\\text{ cm}\\)",
+                "\\(15\\text{ cm}\\)"
+              ],
+              "answer": 3,
+              "hint": "Use the similar triangles from the previous part. The side BC=6 cm corresponds to CE=8 cm, and AB=x corresponds to DE=20 cm.",
+              "keyPoints": [
+                {
+                  "text": "\\(x\\)",
+                  "note": "The unknown \\(AB\\) corresponds to \\(DE=20\\) cm."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "From \\(\\triangle ABC\\sim\\triangle DEC\\), the vertex matching is \\(A\\leftrightarrow D\\), \\(B\\leftrightarrow E\\), \\(C\\leftrightarrow C\\). Thus \\(AB\\) corresponds to \\(DE\\), and \\(BC\\) corresponds to \\(EC\\).",
+                  "work": "\\(AB=x,\\quad DE=20,\\quad BC=6,\\quad EC=8\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 260\" role=\"img\"><line x1=\"80\" y1=\"210\" x2=\"175\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"175\" y1=\"210\" x2=\"175\" y2=\"35\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"80\" y1=\"210\" x2=\"175\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"175\" y1=\"35\" x2=\"315\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"175\" y1=\"210\" x2=\"315\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2\" /><path d=\"M175 190h18v20\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"2\"/><path d=\"M175 115 A25 25 0 0 1 158 133\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"3\"/><path d=\"M175 35 A25 25 0 0 0 195 55\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"3\"/><text x=\"62\" y=\"226\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >B</text><text x=\"174\" y=\"228\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >C</text><text x=\"175\" y=\"107\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >A</text><text x=\"315\" y=\"228\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >E</text><text x=\"175\" y=\"25\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >D</text><text x=\"128\" y=\"230\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >6 cm</text><text x=\"248\" y=\"230\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >8 cm</text><text x=\"112\" y=\"151\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" ><tspan font-style=\"italic\">x</tspan><tspan> cm</tspan></text><text x=\"261\" y=\"119\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >20 cm</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Set the ratio of corresponding sides equal. Use the same order in numerator and denominator.",
+                  "work": "\\(\\frac{x}{20}=\\frac{6}{8}\\)"
+                },
+                {
+                  "explain": "Multiply both sides by 20 and simplify.",
+                  "work": "\\(x=20\\times\\frac68=20\\times\\frac34=15\\text{ cm}\\)"
+                },
+                {
+                  "explain": "The unknown side is positive and its value is consistent with the scale factor \\(6/8=3/4\\).",
+                  "work": "\\(\\boxed{x=15\\text{ cm}}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 260\" role=\"img\"><line x1=\"80\" y1=\"210\" x2=\"175\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"175\" y1=\"210\" x2=\"175\" y2=\"35\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"80\" y1=\"210\" x2=\"175\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"175\" y1=\"35\" x2=\"315\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"175\" y1=\"210\" x2=\"315\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2\" /><path d=\"M175 190h18v20\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"2\"/><path d=\"M175 115 A25 25 0 0 1 158 133\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"3\"/><path d=\"M175 35 A25 25 0 0 0 195 55\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"3\"/><text x=\"62\" y=\"226\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >B</text><text x=\"174\" y=\"228\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >C</text><text x=\"175\" y=\"107\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >A</text><text x=\"315\" y=\"228\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >E</text><text x=\"175\" y=\"25\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >D</text><text x=\"128\" y=\"230\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >6 cm</text><text x=\"248\" y=\"230\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >8 cm</text><text x=\"112\" y=\"151\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" ><tspan font-style=\"italic\">x</tspan><tspan> cm</tspan></text><text x=\"261\" y=\"119\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >20 cm</text></svg>"
+                  }
+                }
+              ]
+            }
+          ],
+          "hint": "First establish the correspondence of the vertices. Use AA similarity to justify the matching side ratios.",
+          "keyPoints": [
+            {
+              "text": "The diagram shows triangles",
+              "note": "The right angles at C and the equal angle marks provide the two angle pairs."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 260\" role=\"img\"><line x1=\"80\" y1=\"210\" x2=\"175\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"175\" y1=\"210\" x2=\"175\" y2=\"35\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"80\" y1=\"210\" x2=\"175\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"175\" y1=\"35\" x2=\"315\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"175\" y1=\"210\" x2=\"315\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2\" /><path d=\"M175 190h18v20\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"2\"/><path d=\"M175 115 A25 25 0 0 1 158 133\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"3\"/><path d=\"M175 35 A25 25 0 0 0 195 55\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"3\"/><text x=\"62\" y=\"226\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >B</text><text x=\"174\" y=\"228\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >C</text><text x=\"175\" y=\"107\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >A</text><text x=\"315\" y=\"228\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >E</text><text x=\"175\" y=\"25\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >D</text><text x=\"128\" y=\"230\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >6 cm</text><text x=\"248\" y=\"230\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >8 cm</text><text x=\"112\" y=\"151\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" ><tspan font-style=\"italic\">x</tspan><tspan> cm</tspan></text><text x=\"261\" y=\"119\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >20 cm</text></svg>"
+          }
+        },
+        {
+          "id": "sghs2011-q4-6",
+          "stem": "The diagram shows triangles \\(ABC\\) and \\(EDC\\).",
+          "timeLimit": 60,
+          "xp": 1,
+          "difficulty": "medium",
+          "meta": {
+            "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+            "school": "Sydney Girls High School",
+            "year": 2011,
+            "sourcePage": 6,
+            "sourceQuestion": "4.6"
+          },
+          "type": "multipart",
+          "parts": [
+            {
+              "id": "sghs2011-q4-6a",
+              "stem": "Prove that \\(\\triangle ABC\\) is similar to \\(\\triangle EDC\\), giving reasons.",
+              "timeLimit": 60,
+              "xp": 1,
+              "difficulty": "medium",
+              "meta": {
+                "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+                "school": "Sydney Girls High School",
+                "year": 2011,
+                "sourcePage": 6,
+                "sourceQuestion": "4.6(a)"
+              },
+              "type": "review",
+              "manual": true,
+              "answer": "\\(\\triangle ABC\\sim\\triangle EDC\\) by AA: \\(\\angle ACB=\\angle ECD\\) are vertically opposite, and \\(\\angle BAC=\\angle CED\\) because \\(AB\\parallel DE\\).",
+              "hint": "Use the crossing at C for a pair of vertically opposite angles. The parallel vertical sides give another equal pair.",
+              "keyPoints": [
+                {
+                  "text": "\\(\\triangle ABC\\)",
+                  "note": "At the crossing point, identify the vertically opposite angle and match A to E, B to D, C to C."
+                },
+                {
+                  "text": "\\(\\triangle EDC\\)",
+                  "note": "The order of these vertices determines which side lengths correspond."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "The two lines cross at C. The angle inside triangle ABC and the angle inside triangle EDC at C are vertically opposite.",
+                  "work": "\\(\\angle ACB=\\angle ECD\\quad\\text{(vertically opposite angles)}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 260\" role=\"img\"><line x1=\"90\" y1=\"55\" x2=\"90\" y2=\"205\" stroke=\"#047857\" stroke-width=\"3\" /><line x1=\"330\" y1=\"55\" x2=\"330\" y2=\"205\" stroke=\"#047857\" stroke-width=\"3\" /><line x1=\"90\" y1=\"55\" x2=\"210\" y2=\"130\" stroke=\"#f97316\" stroke-width=\"3\" /><line x1=\"210\" y1=\"130\" x2=\"330\" y2=\"205\" stroke=\"#f97316\" stroke-width=\"3\" /><line x1=\"90\" y1=\"205\" x2=\"210\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"2\" /><line x1=\"210\" y1=\"130\" x2=\"330\" y2=\"55\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"78\" y=\"50\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >A</text><text x=\"78\" y=\"222\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >B</text><text x=\"210\" y=\"151\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >C</text><text x=\"342\" y=\"50\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >D</text><text x=\"342\" y=\"222\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >E</text><text x=\"100\" y=\"124\" fill=\"#f97316\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" >6 m</text><text x=\"100\" y=\"184\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" >5.5 m</text><text x=\"271\" y=\"86\" fill=\"#f97316\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" >15 m</text><text x=\"275\" y=\"181\" fill=\"#f97316\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" >18 m</text><text x=\"345\" y=\"132\" fill=\"#b45309\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" ><tspan font-style=\"italic\">x</tspan><tspan> m</tspan></text><path d=\"M196 130 A18 18 0 0 1 222 130\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"3\"/></svg>"
+                  }
+                },
+                {
+                  "explain": "AB and DE are parallel vertical sides in the diagram. AC and EC lie on one straight line, so the angles at A and E are corresponding/alternate angles.",
+                  "work": "\\(AB\\parallel DE\\Rightarrow\\angle BAC=\\angle CED\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 260\" role=\"img\"><line x1=\"90\" y1=\"55\" x2=\"90\" y2=\"205\" stroke=\"#047857\" stroke-width=\"3\" /><line x1=\"330\" y1=\"55\" x2=\"330\" y2=\"205\" stroke=\"#047857\" stroke-width=\"3\" /><line x1=\"90\" y1=\"55\" x2=\"210\" y2=\"130\" stroke=\"#f97316\" stroke-width=\"3\" /><line x1=\"210\" y1=\"130\" x2=\"330\" y2=\"205\" stroke=\"#f97316\" stroke-width=\"3\" /><line x1=\"90\" y1=\"205\" x2=\"210\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"2\" /><line x1=\"210\" y1=\"130\" x2=\"330\" y2=\"55\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"78\" y=\"50\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >A</text><text x=\"78\" y=\"222\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >B</text><text x=\"210\" y=\"151\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >C</text><text x=\"342\" y=\"50\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >D</text><text x=\"342\" y=\"222\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >E</text><text x=\"100\" y=\"124\" fill=\"#f97316\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" >6 m</text><text x=\"100\" y=\"184\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" >5.5 m</text><text x=\"271\" y=\"86\" fill=\"#f97316\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" >15 m</text><text x=\"275\" y=\"181\" fill=\"#f97316\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" >18 m</text><text x=\"345\" y=\"132\" fill=\"#b45309\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" ><tspan font-style=\"italic\">x</tspan><tspan> m</tspan></text><path d=\"M196 130 A18 18 0 0 1 222 130\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"3\"/></svg>"
+                  }
+                },
+                {
+                  "explain": "There are two equal pairs of corresponding angles, so AA proves the triangles similar in the stated order.",
+                  "work": "\\(\\therefore\\triangle ABC\\sim\\triangle EDC\\quad(AA)\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 260\" role=\"img\"><line x1=\"90\" y1=\"55\" x2=\"90\" y2=\"205\" stroke=\"#047857\" stroke-width=\"3\" /><line x1=\"330\" y1=\"55\" x2=\"330\" y2=\"205\" stroke=\"#047857\" stroke-width=\"3\" /><line x1=\"90\" y1=\"55\" x2=\"210\" y2=\"130\" stroke=\"#f97316\" stroke-width=\"3\" /><line x1=\"210\" y1=\"130\" x2=\"330\" y2=\"205\" stroke=\"#f97316\" stroke-width=\"3\" /><line x1=\"90\" y1=\"205\" x2=\"210\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"2\" /><line x1=\"210\" y1=\"130\" x2=\"330\" y2=\"55\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"78\" y=\"50\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >A</text><text x=\"78\" y=\"222\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >B</text><text x=\"210\" y=\"151\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >C</text><text x=\"342\" y=\"50\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >D</text><text x=\"342\" y=\"222\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >E</text><text x=\"100\" y=\"124\" fill=\"#f97316\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" >6 m</text><text x=\"100\" y=\"184\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" >5.5 m</text><text x=\"271\" y=\"86\" fill=\"#f97316\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" >15 m</text><text x=\"275\" y=\"181\" fill=\"#f97316\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" >18 m</text><text x=\"345\" y=\"132\" fill=\"#b45309\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" ><tspan font-style=\"italic\">x</tspan><tspan> m</tspan></text><path d=\"M196 130 A18 18 0 0 1 222 130\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"3\"/></svg>"
+                  }
+                }
+              ],
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 260\" role=\"img\"><line x1=\"90\" y1=\"55\" x2=\"90\" y2=\"205\" stroke=\"#047857\" stroke-width=\"3\" /><line x1=\"330\" y1=\"55\" x2=\"330\" y2=\"205\" stroke=\"#047857\" stroke-width=\"3\" /><line x1=\"90\" y1=\"55\" x2=\"210\" y2=\"130\" stroke=\"#f97316\" stroke-width=\"3\" /><line x1=\"210\" y1=\"130\" x2=\"330\" y2=\"205\" stroke=\"#f97316\" stroke-width=\"3\" /><line x1=\"90\" y1=\"205\" x2=\"210\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"2\" /><line x1=\"210\" y1=\"130\" x2=\"330\" y2=\"55\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"78\" y=\"50\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >A</text><text x=\"78\" y=\"222\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >B</text><text x=\"210\" y=\"151\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >C</text><text x=\"342\" y=\"50\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >D</text><text x=\"342\" y=\"222\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >E</text><text x=\"100\" y=\"124\" fill=\"#f97316\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" >6 m</text><text x=\"100\" y=\"184\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" >5.5 m</text><text x=\"271\" y=\"86\" fill=\"#f97316\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" >15 m</text><text x=\"275\" y=\"181\" fill=\"#f97316\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" >18 m</text><text x=\"345\" y=\"132\" fill=\"#b45309\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" ><tspan font-style=\"italic\">x</tspan><tspan> m</tspan></text><path d=\"M196 130 A18 18 0 0 1 222 130\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"3\"/></svg>"
+              }
+            },
+            {
+              "id": "sghs2011-q4-6b",
+              "stem": "Hence find the value of \\(x\\).",
+              "timeLimit": 60,
+              "xp": 1,
+              "difficulty": "medium",
+              "meta": {
+                "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+                "school": "Sydney Girls High School",
+                "year": 2011,
+                "sourcePage": 6,
+                "sourceQuestion": "4.6(b)"
+              },
+              "type": "mc",
+              "options": [
+                "\\(16.5\\text{ m}\\)",
+                "\\(18\\text{ m}\\)",
+                "\\(15\\text{ m}\\)",
+                "\\(5.5\\text{ m}\\)"
+              ],
+              "answer": 0,
+              "hint": "From the similar triangles, AC=6 m corresponds to EC=18 m, so the scale factor is 3. Then AB=5.5 m corresponds to DE=x.",
+              "keyPoints": [
+                {
+                  "text": "\\(x\\)",
+                  "note": "The unknown DE corresponds to the small triangle side AB=5.5 m."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Using \\(\\triangle ABC\\sim\\triangle EDC\\), the correspondence is \\(A\\leftrightarrow E\\), \\(B\\leftrightarrow D\\), and \\(C\\leftrightarrow C\\). Thus \\(AC\\) corresponds to \\(EC\\), and \\(AB\\) corresponds to \\(ED\\).",
+                  "work": "\\(AC=6,\\quad EC=18,\\quad AB=5.5,\\quad ED=x\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 260\" role=\"img\"><line x1=\"90\" y1=\"55\" x2=\"90\" y2=\"205\" stroke=\"#047857\" stroke-width=\"3\" /><line x1=\"330\" y1=\"55\" x2=\"330\" y2=\"205\" stroke=\"#047857\" stroke-width=\"3\" /><line x1=\"90\" y1=\"55\" x2=\"210\" y2=\"130\" stroke=\"#f97316\" stroke-width=\"3\" /><line x1=\"210\" y1=\"130\" x2=\"330\" y2=\"205\" stroke=\"#f97316\" stroke-width=\"3\" /><line x1=\"90\" y1=\"205\" x2=\"210\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"2\" /><line x1=\"210\" y1=\"130\" x2=\"330\" y2=\"55\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"78\" y=\"50\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >A</text><text x=\"78\" y=\"222\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >B</text><text x=\"210\" y=\"151\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >C</text><text x=\"342\" y=\"50\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >D</text><text x=\"342\" y=\"222\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >E</text><text x=\"100\" y=\"124\" fill=\"#f97316\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" >6 m</text><text x=\"100\" y=\"184\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" >5.5 m</text><text x=\"271\" y=\"86\" fill=\"#f97316\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" >15 m</text><text x=\"275\" y=\"181\" fill=\"#f97316\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" >18 m</text><text x=\"345\" y=\"132\" fill=\"#b45309\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" ><tspan font-style=\"italic\">x</tspan><tspan> m</tspan></text><path d=\"M196 130 A18 18 0 0 1 222 130\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"3\"/></svg>"
+                  }
+                },
+                {
+                  "explain": "Find the enlargement scale factor from the corresponding diagonal sides.",
+                  "work": "\\(k=\\frac{EC}{AC}=\\frac{18}{6}=3\\)"
+                },
+                {
+                  "explain": "Multiply the corresponding small side AB by the same scale factor.",
+                  "work": "\\(x=ED=3(5.5)=16.5\\text{ m}\\)"
+                },
+                {
+                  "explain": "The length is positive and has units of metres.",
+                  "work": "\\(\\boxed{x=16.5\\text{ m}}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 260\" role=\"img\"><line x1=\"90\" y1=\"55\" x2=\"90\" y2=\"205\" stroke=\"#047857\" stroke-width=\"3\" /><line x1=\"330\" y1=\"55\" x2=\"330\" y2=\"205\" stroke=\"#047857\" stroke-width=\"3\" /><line x1=\"90\" y1=\"55\" x2=\"210\" y2=\"130\" stroke=\"#f97316\" stroke-width=\"3\" /><line x1=\"210\" y1=\"130\" x2=\"330\" y2=\"205\" stroke=\"#f97316\" stroke-width=\"3\" /><line x1=\"90\" y1=\"205\" x2=\"210\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"2\" /><line x1=\"210\" y1=\"130\" x2=\"330\" y2=\"55\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"78\" y=\"50\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >A</text><text x=\"78\" y=\"222\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >B</text><text x=\"210\" y=\"151\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >C</text><text x=\"342\" y=\"50\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >D</text><text x=\"342\" y=\"222\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >E</text><text x=\"100\" y=\"124\" fill=\"#f97316\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" >6 m</text><text x=\"100\" y=\"184\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" >5.5 m</text><text x=\"271\" y=\"86\" fill=\"#f97316\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" >15 m</text><text x=\"275\" y=\"181\" fill=\"#f97316\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" >18 m</text><text x=\"345\" y=\"132\" fill=\"#b45309\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" ><tspan font-style=\"italic\">x</tspan><tspan> m</tspan></text><path d=\"M196 130 A18 18 0 0 1 222 130\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"3\"/></svg>"
+                  }
+                }
+              ]
+            }
+          ],
+          "hint": "Use the crossing and parallel sides to prove similarity first; then apply the same scale factor to corresponding side lengths.",
+          "keyPoints": [
+            {
+              "text": "The diagram shows triangles",
+              "note": "The vertical sides AB and DE are parallel, and the diagonals cross at C."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 260\" role=\"img\"><line x1=\"90\" y1=\"55\" x2=\"90\" y2=\"205\" stroke=\"#047857\" stroke-width=\"3\" /><line x1=\"330\" y1=\"55\" x2=\"330\" y2=\"205\" stroke=\"#047857\" stroke-width=\"3\" /><line x1=\"90\" y1=\"55\" x2=\"210\" y2=\"130\" stroke=\"#f97316\" stroke-width=\"3\" /><line x1=\"210\" y1=\"130\" x2=\"330\" y2=\"205\" stroke=\"#f97316\" stroke-width=\"3\" /><line x1=\"90\" y1=\"205\" x2=\"210\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"2\" /><line x1=\"210\" y1=\"130\" x2=\"330\" y2=\"55\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"78\" y=\"50\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >A</text><text x=\"78\" y=\"222\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >B</text><text x=\"210\" y=\"151\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >C</text><text x=\"342\" y=\"50\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >D</text><text x=\"342\" y=\"222\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >E</text><text x=\"100\" y=\"124\" fill=\"#f97316\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" >6 m</text><text x=\"100\" y=\"184\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" >5.5 m</text><text x=\"271\" y=\"86\" fill=\"#f97316\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" >15 m</text><text x=\"275\" y=\"181\" fill=\"#f97316\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" >18 m</text><text x=\"345\" y=\"132\" fill=\"#b45309\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" ><tspan font-style=\"italic\">x</tspan><tspan> m</tspan></text><path d=\"M196 130 A18 18 0 0 1 222 130\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"3\"/></svg>"
+          }
         }
       ]
     },
@@ -1570,6 +1838,206 @@
             {
               "text": "Triangles LMN and PQR",
               "note": "Match vertices using the angle marks before comparing sides."
+            }
+          ]
+        },
+        {
+          "id": "sghs2011-q2-3",
+          "stem": "A model is made of a statue and the ratio of the volumes of the statues is 1:27.",
+          "timeLimit": 60,
+          "xp": 1,
+          "difficulty": "medium",
+          "meta": {
+            "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+            "school": "Sydney Girls High School",
+            "year": 2011,
+            "sourcePage": 4,
+            "sourceQuestion": "2.3"
+          },
+          "type": "multipart",
+          "parts": [
+            {
+              "id": "sghs2011-q2-3a",
+              "stem": "Find the ratio of the heights of the statues.",
+              "timeLimit": 60,
+              "xp": 1,
+              "difficulty": "medium",
+              "meta": {
+                "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+                "school": "Sydney Girls High School",
+                "year": 2011,
+                "sourcePage": 4,
+                "sourceQuestion": "2.3(a)"
+              },
+              "type": "mc",
+              "options": [
+                "\\(1:9\\)",
+                "\\(1:3\\)",
+                "\\(1:27\\)",
+                "\\(3:1\\)"
+              ],
+              "answer": 1,
+              "hint": "Volume ratios are cubes of linear ratios. Take the cube root of 1:27.",
+              "keyPoints": [
+                {
+                  "text": "the heights of the statues",
+                  "note": "A volume ratio is cubic. Cube-root each term to find a length or height ratio."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "For similar solids, the volume ratio is the cube of the corresponding length ratio. The model-to-statue volume ratio is \\(1:27\\).",
+                  "work": "\\(V_{\\text{model}}:V_{\\text{statue}}=1:27\\)"
+                },
+                {
+                  "explain": "Take the cube root of both parts to recover the linear scale factor, which also gives the height ratio.",
+                  "work": "\\(h_{\\text{model}}:h_{\\text{statue}}=\\sqrt[3]{1}:\\sqrt[3]{27}=1:3\\)"
+                },
+                {
+                  "explain": "Therefore, the height ratio in model-to-statue order is \\(1:3\\).",
+                  "work": "\\(\\boxed{1:3}\\)"
+                }
+              ]
+            },
+            {
+              "id": "sghs2011-q2-3b",
+              "stem": "Find the ratio of the surface areas of the statues.",
+              "timeLimit": 60,
+              "xp": 1,
+              "difficulty": "medium",
+              "meta": {
+                "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+                "school": "Sydney Girls High School",
+                "year": 2011,
+                "sourcePage": 4,
+                "sourceQuestion": "2.3(b)"
+              },
+              "type": "mc",
+              "options": [
+                "\\(1:27\\)",
+                "\\(1:3\\)",
+                "\\(1:9\\)",
+                "\\(3:1\\)"
+              ],
+              "answer": 2,
+              "hint": "First find the linear ratio from the volume ratio, then square that ratio for surface area.",
+              "keyPoints": [
+                {
+                  "text": "the surface areas of the statues",
+                  "note": "Convert the volume scale to a length scale first; square the length ratio for surface area."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "From the volume ratio \\(1:27\\), the corresponding linear ratio is \\(1:3\\). Surface area scales with the square of a length scale factor.",
+                  "work": "\\(k=\\sqrt[3]{27}=3\\)"
+                },
+                {
+                  "explain": "Square each side of the linear ratio to obtain the area ratio.",
+                  "work": "\\(A_{\\text{model}}:A_{\\text{statue}}=1^2:3^2=1:9\\)"
+                },
+                {
+                  "explain": "The required surface-area ratio is therefore model to statue, \\(1:9\\).",
+                  "work": "\\(\\boxed{1:9}\\)"
+                }
+              ]
+            }
+          ],
+          "hint": "For similar solids, volume, length, and surface-area ratios use powers 3, 1, and 2 respectively.",
+          "keyPoints": [
+            {
+              "text": "the ratio of the volumes",
+              "note": "The volume ratio is the cube of the length scale factor."
+            }
+          ]
+        },
+        {
+          "id": "sghs2011-q4-1",
+          "stem": "A statue has a surface area of \\(1000\\text{ cm}^2\\). A scale model is made with dimensions in the ratio \\(1:5\\). Find the surface area of the scale model.",
+          "timeLimit": 60,
+          "xp": 1,
+          "difficulty": "medium",
+          "meta": {
+            "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+            "school": "Sydney Girls High School",
+            "year": 2011,
+            "sourcePage": 6,
+            "sourceQuestion": "4.1"
+          },
+          "type": "mc",
+          "options": [
+            "\\(8\\text{ cm}^2\\)",
+            "\\(200\\text{ cm}^2\\)",
+            "\\(25\\text{ cm}^2\\)",
+            "\\(40\\text{ cm}^2\\)"
+          ],
+          "answer": 3,
+          "hint": "A 1:5 dimension ratio is a linear scale factor. Surface area scales by its square, so the area ratio is 1:25.",
+          "keyPoints": [
+            {
+              "text": "dimensions in the ratio \\(1:5\\)",
+              "note": "Square the linear scale ratio to scale an area."
+            },
+            {
+              "text": "surface area of \\(1000\\text{ cm}^2\\)",
+              "note": "Multiply the given statue area by the model-to-statue area scale factor."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The model-to-statue dimension ratio is \\(1:5\\), so the linear scale factor is \\(1/5\\). Areas scale as the square of a linear scale factor.",
+              "work": "\\(\\text{area scale factor}=\\left(\\frac15\\right)^2=\\frac1{25}\\)"
+            },
+            {
+              "explain": "Multiply the statue’s surface area by the area scale factor.",
+              "work": "\\(A_{\\text{model}}=1000\\times\\frac1{25}=40\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "The model surface area is 40 square centimetres.",
+              "work": "\\(\\boxed{40\\text{ cm}^2}\\)"
+            }
+          ]
+        },
+        {
+          "id": "sghs2011-q5-1",
+          "stem": "A grain silo is emptied into similar smaller shaped silos that have dimensions half of the original silo. How many smaller silos can be filled?",
+          "timeLimit": 60,
+          "xp": 1,
+          "difficulty": "medium",
+          "meta": {
+            "source": "Sydney Girls High School Year 10 Yearly Examination 2011",
+            "school": "Sydney Girls High School",
+            "year": 2011,
+            "sourcePage": 7,
+            "sourceQuestion": "5.1"
+          },
+          "type": "mc",
+          "options": [
+            "\\(4\\)",
+            "\\(2\\)",
+            "\\(8\\)",
+            "\\(16\\)"
+          ],
+          "answer": 2,
+          "hint": "Halving every linear dimension scales volume by \\((1/2)^3\\). Take the reciprocal to find how many small silo volumes fill the original.",
+          "keyPoints": [
+            {
+              "text": "dimensions half of the original silo",
+              "note": "The dimensions are linear; cube the scale factor to find the volume fraction."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The smaller silos are similar, and each linear dimension is half the corresponding original dimension. Volume scales with the cube of the length scale factor.",
+              "work": "\\(\\frac{V_{\\text{small}}}{V_{\\text{original}}}=\\left(\\frac12\\right)^3=\\frac18\\)"
+            },
+            {
+              "explain": "Each small silo holds one eighth of the original amount. Divide the original volume by one small-silo volume.",
+              "work": "\\(\\text{number of small silos}=1\\div\\frac18=8\\)"
+            },
+            {
+              "explain": "Eight smaller silos can be filled from the original silo.",
+              "work": "\\(\\boxed{8}\\)"
             }
           ]
         }
