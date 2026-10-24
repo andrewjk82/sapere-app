@@ -10,6 +10,7 @@
  */
 import { resolveCorrectOptionIndex, resolveCorrectOptionText } from './mcOptionShuffle.js';
 import { toDisplayText } from './mathPreprocess.js';
+import { splitMarkdownTables } from './markdownTables.js';
 
 /**
  * Normalise raw question text the same way the live app does (MathView →
@@ -39,6 +40,25 @@ const cleanLatex = (str) => {
  * decodes &amp; → & back to the raw & column separators that KaTeX expects.
  */
 const mathHtml = (text) => {
+  if (!text) return '';
+  // Markdown tables ("| a | b |" + "|---|---|") — the app turns them into a
+  // real <table> in MathView.jsx; without the same here the PDF printed the
+  // raw pipes (2026-10 ACER "line up" question). Split them out of the RAW
+  // text: toDisplayText turns newlines into <br>, which hides the rows.
+  const segments = splitMarkdownTables(String(text));
+  if (segments.some((seg) => seg.type === 'table')) {
+    const cell = (tag, c) => `<${tag} class="md-table-cell">${segmentHtml(c)}</${tag}>`;
+    return segments.map((seg) => (seg.type === 'text'
+      ? segmentHtml(seg.text)
+      : '<table class="md-table">'
+        + `<thead><tr>${seg.headers.map((h) => cell('th', h)).join('')}</tr></thead>`
+        + (seg.rows.length ? `<tbody>${seg.rows.map((r) => `<tr>${r.map((c) => cell('td', c)).join('')}</tr>`).join('')}</tbody>` : '')
+        + '</table>')).join('');
+  }
+  return segmentHtml(text);
+};
+
+const segmentHtml = (text) => {
   if (!text) return '';
   let s = cleanLatex(String(text));
 
@@ -683,6 +703,23 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, rea
       line-height: 1.7;
       color: #1e1b4b;
       margin-bottom: 12px;
+    }
+
+    .md-table {
+      border-collapse: collapse;
+      margin: 8px auto;
+      page-break-inside: avoid;
+    }
+
+    .md-table-cell {
+      border: 1px solid #cbd5e1;
+      padding: 4px 10px;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    th.md-table-cell {
+      background: #f1f5f9;
     }
 
     .question-diagram {
