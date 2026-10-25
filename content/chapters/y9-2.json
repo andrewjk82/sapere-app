@@ -3602,33 +3602,34 @@
           "id": "bhs-y9-2023-t4a-q26",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Which is greater: \\(7\\sqrt2\\) or \\(3\\sqrt{11}\\)?",
+          "stem": "Which is greater: \\(7\\sqrt{2}\\) or \\(3\\sqrt{11}\\)?",
           "options": [
-            "\\(7\\sqrt2\\)",
+            "\\(7\\sqrt{2}\\)",
             "\\(3\\sqrt{11}\\)",
             "They are equal",
             "It cannot be determined without a calculator"
           ],
           "answer": 1,
-          "hint": "Both values are positive, so compare their squares instead of estimating the radicals.",
+          "solution": "The correct answer is \\(3\\sqrt{11}\\).",
+          "hint": "Convert both mixed surds into entire surds: \\(a\\sqrt{b} = \\sqrt{a^2 \\times b}\\), then compare the numbers inside the radicals.",
           "keyPoints": [
             {
-              "text": "Which is greater: \\(7\\sqrt2\\) or \\(3\\sqrt{11}\\)?",
-              "note": "Both values are positive, so compare their squares instead of estimating the radicals."
+              "text": "Which is greater: \\(7\\sqrt{2}\\) or \\(3\\sqrt{11}\\)?",
+              "note": "Convert both mixed surds into entire surds to compare their values directly."
             }
           ],
           "steps": [
             {
-              "explain": "Both expressions are positive, so squaring preserves their order.",
-              "work": "\\((7\\sqrt2)^2=49\\cdot2=98\\)"
+              "explain": "Convert the first mixed surd \\(7\\sqrt{2}\\) into an entire surd by moving the coefficient inside the square root.",
+              "work": "7\\sqrt{2} = \\sqrt{7^2 \\times 2} = \\sqrt{49 \\times 2} = \\sqrt{98}"
             },
             {
-              "explain": "Square the second expression and compare the exact integers.",
-              "work": "\\((3\\sqrt{11})^2=9\\cdot11=99\\)"
+              "explain": "Convert the second mixed surd \\(3\\sqrt{11}\\) into an entire surd in the same way.",
+              "work": "3\\sqrt{11} = \\sqrt{3^2 \\times 11} = \\sqrt{9 \\times 11} = \\sqrt{99}"
             },
             {
-              "explain": "Since 99 is greater than 98, the second positive surd is greater.",
-              "work": "\\(99>98\\Rightarrow\\boxed{3\\sqrt{11}>7\\sqrt2}\\)"
+              "explain": "Compare the numbers under the square root. Since \\(99 > 98\\), \\(\\sqrt{99} > \\sqrt{98}\\), meaning \\(3\\sqrt{11}\\) is greater than \\(7\\sqrt{2}\\).",
+              "work": "\\sqrt{99} > \\sqrt{98} \\implies \\boxed{3\\sqrt{11} > 7\\sqrt{2}}"
             }
           ],
           "timeLimit": 60,
