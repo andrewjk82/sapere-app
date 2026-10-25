@@ -2564,59 +2564,6 @@
           }
         },
         {
-          "id": "sch-oc-t3-q10",
-          "type": "mc",
-          "difficulty": "hard",
-          "stem": "Which letter comes next in this series?\n\nI  L  F  ?",
-          "options": [
-            "V",
-            "T",
-            "A",
-            "E"
-          ],
-          "answer": 3,
-          "hint": "These capital letters are not in alphabetical order. Try counting the straight lines (strokes) you need to draw each one.",
-          "steps": [
-            {
-              "explain": "The letters I, L, F are not in alphabet order, so look at how they are drawn. Count the straight strokes in each.",
-              "work": "<p>I = 1 stroke (one straight line)</p><p>L = 2 strokes (down and across)</p><p>F = 3 strokes (down, across the top, across the middle)</p>",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 184 70\" width=\"70%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"4\" y=\"4\" width=\"40\" height=\"40\" rx=\"5\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"24.0\" y=\"30.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >I</text><text x=\"24.0\" y=\"57\" font-size=\"10\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >1 stroke</text><rect x=\"48\" y=\"4\" width=\"40\" height=\"40\" rx=\"5\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"68.0\" y=\"30.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >L</text><text x=\"68.0\" y=\"57\" font-size=\"10\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >2 strokes</text><rect x=\"92\" y=\"4\" width=\"40\" height=\"40\" rx=\"5\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"112.0\" y=\"30.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >F</text><text x=\"112.0\" y=\"57\" font-size=\"10\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >3 strokes</text><rect x=\"136\" y=\"4\" width=\"40\" height=\"40\" rx=\"5\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"156.0\" y=\"30.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >?</text><text x=\"156.0\" y=\"57\" font-size=\"10\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >4 strokes?</text></svg>"
-              }
-            },
-            {
-              "explain": "The number of strokes goes up by one each time: 1, 2, 3 … so the next letter needs 4 strokes.",
-              "work": "<p>1, 2, 3, 4</p>"
-            },
-            {
-              "explain": "Count the strokes in each option.",
-              "work": "<p>V = 2 strokes</p><p>T = 2 strokes</p><p>A = 3 strokes</p><p>E = 4 strokes (down, top, middle and bottom)</p>",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 184 70\" width=\"70%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"4\" y=\"4\" width=\"40\" height=\"40\" rx=\"5\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"24.0\" y=\"30.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >V</text><text x=\"24.0\" y=\"57\" font-size=\"10\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >2 strokes</text><rect x=\"48\" y=\"4\" width=\"40\" height=\"40\" rx=\"5\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"68.0\" y=\"30.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >T</text><text x=\"68.0\" y=\"57\" font-size=\"10\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >2 strokes</text><rect x=\"92\" y=\"4\" width=\"40\" height=\"40\" rx=\"5\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"112.0\" y=\"30.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >A</text><text x=\"112.0\" y=\"57\" font-size=\"10\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >3 strokes</text><rect x=\"136\" y=\"4\" width=\"40\" height=\"40\" rx=\"5\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"156.0\" y=\"30.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >E</text><text x=\"156.0\" y=\"57\" font-size=\"10\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >4 strokes</text></svg>"
-              }
-            },
-            {
-              "explain": "Only E has 4 strokes.",
-              "work": "<p>The answer is D.</p>"
-            }
-          ],
-          "keyPoints": [
-            {
-              "text": "next in this series",
-              "note": "If the letters are not in alphabetical order, look at the shapes: count the strokes."
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Excel Practice Opportunity Class Tests · Year 4",
-            "test": "Test 3",
-            "number": 10,
-            "page": 19,
-            "category": "codes"
-          }
-        },
-        {
           "id": "sch-oc-t3-q14",
           "type": "mc",
           "difficulty": "medium",
@@ -8110,59 +8057,6 @@
           }
         },
         {
-          "id": "sch-oc-t9-q28",
-          "type": "mc",
-          "difficulty": "hard",
-          "stem": "These scientific terms or names are arranged in a special series. Which term comes next in the series?\n\nAcid  Electron  Joule  Pressure  ?",
-          "options": [
-            "Ultra-violet light",
-            "Vacuum",
-            "Wavelength",
-            "X-rays"
-          ],
-          "answer": 2,
-          "hint": "Look at the first letter of each term. How many letters are skipped between neighbouring terms?",
-          "steps": [
-            {
-              "explain": "Write the first letters.",
-              "work": "<p>Acid → A, Electron → E, Joule → J, Pressure → P.</p>",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 96\" width=\"85%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><defs><marker id=\"ah\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#6366f1\"/></marker></defs><rect x=\"8\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"30.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >A</text><rect x=\"78\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"100.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >E</text><rect x=\"148\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"170.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >J</text><rect x=\"218\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"240.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >P</text><rect x=\"288\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#eef2ff\" stroke=\"#6366f1\" stroke-width=\"2\" /><text x=\"310.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >?</text><path d=\"M30.0 44 Q65.0 8 100.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"65.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+4</text><path d=\"M100.0 44 Q135.0 8 170.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"135.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+5</text><path d=\"M170.0 44 Q205.0 8 240.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"205.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+6</text></svg>"
-              }
-            },
-            {
-              "explain": "Count how many letters of the alphabet are skipped each time.",
-              "work": "<p>A [bcd] E: 3 skipped.</p><p>E [fghi] J: 4 skipped.</p><p>J [klmno] P: 5 skipped.</p><p>So the next gap skips 6 letters.</p>"
-            },
-            {
-              "explain": "P is the 16th letter. Move on 7 places (skip 6, land on the 7th).",
-              "work": "<p>P [qrstuv] W: the next letter is W. 16 + 7 = 23, the 23rd letter.</p>",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 112\" width=\"85%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><defs><marker id=\"ah\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#6366f1\"/></marker></defs><rect x=\"8\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"30.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >A</text><rect x=\"78\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"100.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >E</text><rect x=\"148\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"170.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >J</text><rect x=\"218\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"240.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >P</text><rect x=\"288\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#eef2ff\" stroke=\"#6366f1\" stroke-width=\"2\" /><text x=\"310.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >?</text><path d=\"M30.0 44 Q65.0 8 100.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"65.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+4</text><path d=\"M100.0 44 Q135.0 8 170.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"135.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+5</text><path d=\"M170.0 44 Q205.0 8 240.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"205.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+6</text><path d=\"M240.0 44 Q275.0 8 310.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"275.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+7</text><text x=\"170.0\" y=\"108\" font-size=\"12\" font-weight=\"700\" fill=\"#059669\" text-anchor=\"middle\" >P + 7 = W</text></svg>"
-              }
-            },
-            {
-              "explain": "Find the term that starts with W.",
-              "work": "<p>Wavelength starts with W. (Ultra-violet light starts with U, Vacuum with V and X-rays with X.) The answer is C.</p>"
-            }
-          ],
-          "keyPoints": [
-            {
-              "text": "special series",
-              "note": "Look at the first letter of each term and count how many letters you skip each time."
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Excel Practice Opportunity Class Tests · Year 4",
-            "test": "Test 9",
-            "number": 28,
-            "page": 53,
-            "category": "number series"
-          }
-        },
-        {
           "id": "sch-oc-t9-q29",
           "type": "mc",
           "difficulty": "medium",
@@ -10029,6 +9923,59 @@
             "number": 3,
             "page": 18,
             "category": "calculation problems"
+          }
+        },
+        {
+          "id": "sch-oc-t3-q10",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Which letter comes next in this series?\n\nI  L  F  ?",
+          "options": [
+            "V",
+            "T",
+            "A",
+            "E"
+          ],
+          "answer": 3,
+          "hint": "These capital letters are not in alphabetical order. Try counting the straight lines (strokes) you need to draw each one.",
+          "steps": [
+            {
+              "explain": "The letters I, L, F are not in alphabet order, so look at how they are drawn. Count the straight strokes in each.",
+              "work": "<p>I = 1 stroke (one straight line)</p><p>L = 2 strokes (down and across)</p><p>F = 3 strokes (down, across the top, across the middle)</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 184 70\" width=\"70%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"4\" y=\"4\" width=\"40\" height=\"40\" rx=\"5\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"24.0\" y=\"30.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >I</text><text x=\"24.0\" y=\"57\" font-size=\"10\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >1 stroke</text><rect x=\"48\" y=\"4\" width=\"40\" height=\"40\" rx=\"5\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"68.0\" y=\"30.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >L</text><text x=\"68.0\" y=\"57\" font-size=\"10\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >2 strokes</text><rect x=\"92\" y=\"4\" width=\"40\" height=\"40\" rx=\"5\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"112.0\" y=\"30.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >F</text><text x=\"112.0\" y=\"57\" font-size=\"10\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >3 strokes</text><rect x=\"136\" y=\"4\" width=\"40\" height=\"40\" rx=\"5\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"156.0\" y=\"30.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >?</text><text x=\"156.0\" y=\"57\" font-size=\"10\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >4 strokes?</text></svg>"
+              }
+            },
+            {
+              "explain": "The number of strokes goes up by one each time: 1, 2, 3 … so the next letter needs 4 strokes.",
+              "work": "<p>1, 2, 3, 4</p>"
+            },
+            {
+              "explain": "Count the strokes in each option.",
+              "work": "<p>V = 2 strokes</p><p>T = 2 strokes</p><p>A = 3 strokes</p><p>E = 4 strokes (down, top, middle and bottom)</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 184 70\" width=\"70%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"4\" y=\"4\" width=\"40\" height=\"40\" rx=\"5\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"24.0\" y=\"30.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >V</text><text x=\"24.0\" y=\"57\" font-size=\"10\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >2 strokes</text><rect x=\"48\" y=\"4\" width=\"40\" height=\"40\" rx=\"5\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"68.0\" y=\"30.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >T</text><text x=\"68.0\" y=\"57\" font-size=\"10\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >2 strokes</text><rect x=\"92\" y=\"4\" width=\"40\" height=\"40\" rx=\"5\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"112.0\" y=\"30.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >A</text><text x=\"112.0\" y=\"57\" font-size=\"10\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >3 strokes</text><rect x=\"136\" y=\"4\" width=\"40\" height=\"40\" rx=\"5\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"156.0\" y=\"30.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >E</text><text x=\"156.0\" y=\"57\" font-size=\"10\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >4 strokes</text></svg>"
+              }
+            },
+            {
+              "explain": "Only E has 4 strokes.",
+              "work": "<p>The answer is D.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "next in this series",
+              "note": "If the letters are not in alphabetical order, look at the shapes: count the strokes."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 3",
+            "number": 10,
+            "page": 19,
+            "category": "codes"
           }
         },
         {
@@ -14448,6 +14395,59 @@
             "number": 27,
             "page": 53,
             "category": "measurement"
+          }
+        },
+        {
+          "id": "sch-oc-t9-q28",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "These scientific terms or names are arranged in a special series. Which term comes next in the series?\n\nAcid  Electron  Joule  Pressure  ?",
+          "options": [
+            "Ultra-violet light",
+            "Vacuum",
+            "Wavelength",
+            "X-rays"
+          ],
+          "answer": 2,
+          "hint": "Look at the first letter of each term. How many letters are skipped between neighbouring terms?",
+          "steps": [
+            {
+              "explain": "Write the first letters.",
+              "work": "<p>Acid → A, Electron → E, Joule → J, Pressure → P.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 96\" width=\"85%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><defs><marker id=\"ah\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#6366f1\"/></marker></defs><rect x=\"8\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"30.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >A</text><rect x=\"78\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"100.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >E</text><rect x=\"148\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"170.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >J</text><rect x=\"218\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"240.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >P</text><rect x=\"288\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#eef2ff\" stroke=\"#6366f1\" stroke-width=\"2\" /><text x=\"310.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >?</text><path d=\"M30.0 44 Q65.0 8 100.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"65.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+4</text><path d=\"M100.0 44 Q135.0 8 170.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"135.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+5</text><path d=\"M170.0 44 Q205.0 8 240.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"205.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+6</text></svg>"
+              }
+            },
+            {
+              "explain": "Count how many letters of the alphabet are skipped each time.",
+              "work": "<p>A [bcd] E: 3 skipped.</p><p>E [fghi] J: 4 skipped.</p><p>J [klmno] P: 5 skipped.</p><p>So the next gap skips 6 letters.</p>"
+            },
+            {
+              "explain": "P is the 16th letter. Move on 7 places (skip 6, land on the 7th).",
+              "work": "<p>P [qrstuv] W: the next letter is W. 16 + 7 = 23, the 23rd letter.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 112\" width=\"85%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><defs><marker id=\"ah\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#6366f1\"/></marker></defs><rect x=\"8\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"30.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >A</text><rect x=\"78\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"100.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >E</text><rect x=\"148\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"170.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >J</text><rect x=\"218\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"240.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >P</text><rect x=\"288\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#eef2ff\" stroke=\"#6366f1\" stroke-width=\"2\" /><text x=\"310.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >?</text><path d=\"M30.0 44 Q65.0 8 100.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"65.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+4</text><path d=\"M100.0 44 Q135.0 8 170.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"135.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+5</text><path d=\"M170.0 44 Q205.0 8 240.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"205.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+6</text><path d=\"M240.0 44 Q275.0 8 310.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"275.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+7</text><text x=\"170.0\" y=\"108\" font-size=\"12\" font-weight=\"700\" fill=\"#059669\" text-anchor=\"middle\" >P + 7 = W</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the term that starts with W.",
+              "work": "<p>Wavelength starts with W. (Ultra-violet light starts with U, Vacuum with V and X-rays with X.) The answer is C.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "special series",
+              "note": "Look at the first letter of each term and count how many letters you skip each time."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 9",
+            "number": 28,
+            "page": 53,
+            "category": "number series"
           }
         }
       ]
