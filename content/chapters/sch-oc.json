@@ -4858,6 +4858,843 @@
             "page": 32,
             "category": "word order"
           }
+        },
+        {
+          "id": "sch-oc-t6-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "AEROPLANE is to FLIGHT PATH as MOTOR VEHICLE is to ?",
+          "options": [
+            "HIGHWAY",
+            "ROUTE",
+            "ROAD",
+            "MAP"
+          ],
+          "answer": 1,
+          "hint": "A flight path is the way an aeroplane travels from one place to another. What do we call the way a car travels from one place to another?",
+          "steps": [
+            {
+              "explain": "Find the link in the first pair.",
+              "work": "<p>An AEROPLANE follows a FLIGHT PATH: the line it travels along from where it starts to where it lands. (vehicle → the path it follows)</p>"
+            },
+            {
+              "explain": "Use the same link for MOTOR VEHICLE. What path does a car follow from start to finish?",
+              "work": "<p>A car follows a ROUTE: the way a driver chooses to get from one place to another.</p>"
+            },
+            {
+              "explain": "Check the other options.",
+              "work": "<p>A highway and a road are the physical things a car drives on. A flight path is not a physical thing in the sky, it is the chosen way to travel, just like a route.</p><p>A map only shows places, it is not a path a car follows.</p>"
+            },
+            {
+              "explain": "AEROPLANE : FLIGHT PATH matches MOTOR VEHICLE : ROUTE.",
+              "work": "<p>The answer is B.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "AEROPLANE is to FLIGHT PATH",
+              "note": "A flight path is a way of travelling, not a thing on the ground. Find the matching word for a car."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 6",
+            "number": 1,
+            "page": 33,
+            "category": "analogies"
+          }
+        },
+        {
+          "id": "sch-oc-t6-q4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "When they are rearranged these letters will make a word that means FABLES. Which letters will make this word?",
+          "options": [
+            "BLATES",
+            "SECRET",
+            "MOEPS",
+            "THYMS"
+          ],
+          "answer": 3,
+          "hint": "Think of another word for “fables”: old stories about gods and heroes. Then check whether its letters can be found in an option.",
+          "steps": [
+            {
+              "explain": "Find a word that means almost the same as FABLES.",
+              "work": "<p>Fables are old stories. A word with a similar meaning is MYTHS (old stories about gods and heroes).</p>"
+            },
+            {
+              "explain": "Check that MYTHS can be made from the letters of one option.",
+              "work": "<p>MYTHS = M, Y, T, H, S</p><p>THYMS = T, H, Y, M, S — the same five letters!</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 208 48\" width=\"50%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"4\" y=\"4\" width=\"36\" height=\"36\" rx=\"5\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"22.0\" y=\"28.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >T</text><rect x=\"44\" y=\"4\" width=\"36\" height=\"36\" rx=\"5\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"62.0\" y=\"28.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >H</text><rect x=\"84\" y=\"4\" width=\"36\" height=\"36\" rx=\"5\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"102.0\" y=\"28.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >Y</text><rect x=\"124\" y=\"4\" width=\"36\" height=\"36\" rx=\"5\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"142.0\" y=\"28.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >M</text><rect x=\"164\" y=\"4\" width=\"36\" height=\"36\" rx=\"5\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"182.0\" y=\"28.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >S</text></svg>"
+              }
+            },
+            {
+              "explain": "Rearrange the letters: T-H-Y-M-S becomes M-Y-T-H-S.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 208 48\" width=\"50%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"4\" y=\"4\" width=\"36\" height=\"36\" rx=\"5\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"22.0\" y=\"28.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >M</text><rect x=\"44\" y=\"4\" width=\"36\" height=\"36\" rx=\"5\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"62.0\" y=\"28.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >Y</text><rect x=\"84\" y=\"4\" width=\"36\" height=\"36\" rx=\"5\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"102.0\" y=\"28.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >T</text><rect x=\"124\" y=\"4\" width=\"36\" height=\"36\" rx=\"5\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"142.0\" y=\"28.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >H</text><rect x=\"164\" y=\"4\" width=\"36\" height=\"36\" rx=\"5\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"182.0\" y=\"28.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >S</text></svg>"
+              }
+            },
+            {
+              "explain": "Check the other options.",
+              "work": "<p>BLATES can make TABLES, SECRET can make RESECT, and MOEPS can make POEMS or MOPES. None of them mean “fables”.</p>"
+            },
+            {
+              "explain": "The answer is D."
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "FABLES",
+              "note": "First find another word with the same meaning as fables, then see which letters can make it."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 6",
+            "number": 4,
+            "page": 33,
+            "category": "codes"
+          }
+        },
+        {
+          "id": "sch-oc-t6-q5to9",
+          "type": "multipart",
+          "stem": "Questions 5 to 9 refer to the following passage.\n\nTHE PARABLE OF THE TEN GIRLS\n\nOnce there were ten girls who took their oil lamps and went out to meet the bridegroom. Five of them were foolish, and the other five were wise. The foolish ones took their lamps but did not take any extra oil with them, while the wise ones took containers full of oil for their lamps. The bridegroom was late in coming, so the girls began to nod and fall asleep.\n\nIt was already midnight when the cry rang out, ‘Here is the bridegroom! Come and meet him!’ The ten girls woke up and trimmed their lamps. Then the foolish ones said to the wise ones, ‘Let us have some of your oil, because our lamps are going out.’ ‘No indeed,’ the wise ones answered, ‘there is not enough for you and for us. Go to the shop and buy some for yourselves.’ So the foolish girls went off to buy some oil; and while they were gone, the bridegroom arrived. The five girls who were ready went in with him to the wedding feast, and the door was closed.\n\nLater the other girls arrived. ‘Sir, sir! Let us in!’ they cried out. ‘Certainly not! I don’t know you,’ the bridegroom answered.\n\nSource: Matthew, Chapter 25, verses 1–12, Today’s English Version, New York, American Bible Society, 1976",
+          "parts": [
+            {
+              "id": "sch-oc-t6-q5",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Why is this called a parable?",
+              "options": [
+                "it is a story that uses an example to teach a lesson",
+                "it is a story from ancient life and times",
+                "it is a religious story and fable",
+                "it is a true story that teaches a lesson"
+              ],
+              "answer": 0,
+              "hint": "A parable is a special kind of story. Look at how this story uses ten girls and their lamps to make a point.",
+              "steps": [
+                {
+                  "explain": "Look at what happens in the story.",
+                  "work": "<p>Five girls are <mark>foolish</mark> and do not bring extra oil. Five girls are <mark>wise</mark> and do bring it. Only the wise girls are let in.</p>"
+                },
+                {
+                  "explain": "Ask what the story is really teaching.",
+                  "work": "<p>It is not really about lamps and oil. It uses the girls as an EXAMPLE to teach a lesson: be ready and prepared.</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>B — many old stories come from ancient times, but that does not make them parables.</p><p>C — it is religious, but “fable” is a story with talking animals.</p><p>D — a parable is not a true event, it is a made-up story.</p>"
+                },
+                {
+                  "explain": "A parable is a story that uses an example to teach a lesson.",
+                  "work": "<p>The answer is A.</p>"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "Why is this called a parable",
+                  "note": "A parable uses a simple made-up story as an example to teach a lesson."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 6",
+                "number": 5,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t6-q6",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "How do we know that this parable is not from modern times?",
+              "options": [
+                "the girls had to wait for the arrival of the bridegroom",
+                "the girls used oil lamps",
+                "the oil was carried around in containers",
+                "the parable was used only in ancient times"
+              ],
+              "answer": 1,
+              "hint": "Look for something in the story that people do not use any more today.",
+              "steps": [
+                {
+                  "explain": "Read the story for things that belong to the past.",
+                  "work": "<p>“Once there were ten girls who took their <mark>oil lamps</mark>…”</p><p>Today we use electric lights and torches. Oil lamps point to old times.</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>A — people wait for others today too.</p><p>C — we still carry oil and liquids in containers today.</p><p>D — this is not something the story tells us, and parables are still told today.</p>"
+                },
+                {
+                  "explain": "The oil lamps show that the story is from the past.",
+                  "work": "<p>The answer is B.</p>"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "not from modern times",
+                  "note": "Find something in the story that people no longer use today."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 6",
+                "number": 6,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t6-q7",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "What does the parable say about the bridegroom?",
+              "options": [
+                "he respected the wise girls",
+                "he arrived sooner than expected",
+                "he claimed that he did not know the foolish girls",
+                "he expected to be met by the ten girls"
+              ],
+              "answer": 2,
+              "hint": "Find the bridegroom’s own words at the end of the parable.",
+              "steps": [
+                {
+                  "explain": "Find what the bridegroom says.",
+                  "work": "<p>“‘Certainly not! <mark>I don’t know you</mark>,’ the bridegroom answered.”</p><p>He says this to the foolish girls who arrive late.</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>A — the story does not talk about respect.</p><p>B — the bridegroom was late, not early (“The bridegroom was late in coming”).</p><p>D — he was expected by the ten girls, but the parable does not say what he expected.</p>"
+                },
+                {
+                  "explain": "The bridegroom said that he did not know the foolish girls.",
+                  "work": "<p>The answer is C.</p>"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "bridegroom",
+                  "note": "Look for the bridegroom’s own words in the last lines."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 6",
+                "number": 7,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t6-q8",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What does the parable say about the wise girls?",
+              "options": [
+                "they expected the bridegroom to be late",
+                "they were just thinking of themselves",
+                "they were able to get their lamps going in time",
+                "they were allowed into the wedding feast"
+              ],
+              "answer": 3,
+              "hint": "Find what happens to the five wise girls when the bridegroom arrives.",
+              "steps": [
+                {
+                  "explain": "Find the sentence about the wise girls going in.",
+                  "work": "<p>“The five girls who were ready <mark>went in with him to the wedding feast</mark>, and the door was closed.”</p><p>The five who were ready are the wise girls.</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>A — the story says they brought extra oil, but it does not say why.</p><p>B — the story does not say they were selfish, only that there was not enough oil to share.</p><p>C — the story does not say they got their lamps going; it says they “trimmed their lamps”.</p>"
+                },
+                {
+                  "explain": "The wise girls were allowed into the wedding feast.",
+                  "work": "<p>The answer is D.</p>"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "wise girls",
+                  "note": "Find the sentence that tells you what happened to the wise girls."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 6",
+                "number": 8,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t6-q9",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "What do you think is the main point of this parable?",
+              "options": [
+                "this is a story about the problems of not being punctual",
+                "this is a story that shows being ready for everything is rewarded",
+                "this is a story about being prepared",
+                "this is a story about five wise and five foolish girls"
+              ],
+              "answer": 1,
+              "hint": "The main point is the lesson of the story. Which option says that being ready is rewarded, including what happened to the ones who were ready and the ones who were not?",
+              "steps": [
+                {
+                  "explain": "Think about what happened to each group.",
+                  "work": "<p>The wise girls were prepared (they had extra oil) and were let in. The foolish girls were not prepared and were shut out.</p>"
+                },
+                {
+                  "explain": "The lesson must say what is rewarded, not only what the story is about.",
+                  "work": "<p>A — it is about the bridegroom being late, not about being punctual.</p><p>C — “being prepared” is true, but it does not say what the story shows about being prepared.</p><p>D — this only says who is in the story.</p><p>B — being ready for everything is rewarded. ✓</p>"
+                },
+                {
+                  "explain": "The answer is B."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "main point",
+                  "note": "The main point is the lesson the story teaches, not just what happens in it."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 6",
+                "number": 9,
+                "category": "comprehension"
+              }
+            }
+          ],
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 6",
+            "number": "5-9",
+            "page": 33,
+            "category": "comprehension"
+          }
+        },
+        {
+          "id": "sch-oc-t6-q14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which word has most nearly the same meaning as MELANCHOLY?",
+          "options": [
+            "sad",
+            "anxious",
+            "worried",
+            "concerned"
+          ],
+          "answer": 0,
+          "hint": "Melancholy is a feeling. Is it a feeling of worry or a feeling of unhappiness?",
+          "steps": [
+            {
+              "explain": "Say what MELANCHOLY means in your own words.",
+              "work": "<p>A melancholy person feels sad and gloomy, often for no clear reason.</p>"
+            },
+            {
+              "explain": "Check each option.",
+              "work": "<p>anxious, worried and concerned are all about feeling afraid that something bad might happen.</p><p>sad means unhappy. ✓</p>"
+            },
+            {
+              "explain": "Melancholy and sad both mean unhappy.",
+              "work": "<p>The answer is A.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "MELANCHOLY",
+              "note": "It is a feeling of unhappiness, not of worry about the future."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 6",
+            "number": 14,
+            "page": 35,
+            "category": "word knowledge"
+          }
+        },
+        {
+          "id": "sch-oc-t6-q15",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If these words are put into the correct order they will make a sentence. Which is the fifth word in the correct sentence?\n\nALONG AND CAN COAST FIND FOOD GROCERY HERE’S STORES THE WHERE YOU",
+          "options": [
+            "fresh",
+            "find",
+            "can",
+            "where"
+          ],
+          "answer": 1,
+          "hint": "Look for groups that go together: “Here’s where you can find …”, “food and grocery stores” and “along the coast”.",
+          "steps": [
+            {
+              "explain": "Find the groups that go together.",
+              "work": "<p>“Here’s where you can find” starts a sentence.</p><p>“food and grocery stores” says what you can find.</p><p>“along the coast” says where.</p>"
+            },
+            {
+              "explain": "Join the groups to make a sentence.",
+              "work": "<p>Here’s where you can find food and grocery stores along the coast.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 140\" width=\"95%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"4\" y=\"4\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"45.0\" y=\"23\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >Here’s</text><text x=\"12\" y=\"41\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >1</text><rect x=\"92\" y=\"4\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"133.0\" y=\"23\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >where</text><text x=\"100\" y=\"41\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >2</text><rect x=\"180\" y=\"4\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"221.0\" y=\"23\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >you</text><text x=\"188\" y=\"41\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >3</text><rect x=\"268\" y=\"4\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"309.0\" y=\"23\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >can</text><text x=\"276\" y=\"41\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >4</text><rect x=\"4\" y=\"48\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"45.0\" y=\"67\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >find</text><text x=\"12\" y=\"85\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >5</text><rect x=\"92\" y=\"48\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"133.0\" y=\"67\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >food</text><text x=\"100\" y=\"85\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >6</text><rect x=\"180\" y=\"48\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"221.0\" y=\"67\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >and</text><text x=\"188\" y=\"85\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >7</text><rect x=\"268\" y=\"48\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"309.0\" y=\"67\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >grocery</text><text x=\"276\" y=\"85\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >8</text><rect x=\"4\" y=\"92\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"45.0\" y=\"111\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >stores</text><text x=\"12\" y=\"129\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >9</text><rect x=\"92\" y=\"92\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"133.0\" y=\"111\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >along</text><text x=\"100\" y=\"129\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >10</text><rect x=\"180\" y=\"92\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"221.0\" y=\"111\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >the</text><text x=\"188\" y=\"129\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >11</text><rect x=\"268\" y=\"92\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"309.0\" y=\"111\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >coast</text><text x=\"276\" y=\"129\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >12</text></svg>"
+              }
+            },
+            {
+              "explain": "Count to the fifth word.",
+              "work": "<p>1 Here’s, 2 where, 3 you, 4 can, 5 find ← the fifth word</p>"
+            },
+            {
+              "explain": "The word “fresh” is not in the list at all. The answer is B."
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "fifth word",
+              "note": "Build the whole sentence first, then count to the fifth word."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 6",
+            "number": 15,
+            "page": 35,
+            "category": "word order"
+          }
+        },
+        {
+          "id": "sch-oc-t6-q16",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "ICE is to SOLID as STEAM is to ?",
+          "options": [
+            "water",
+            "liquid",
+            "gas",
+            "air"
+          ],
+          "answer": 2,
+          "hint": "Ice is water in one form. Which form (solid, liquid or gas) is ice? What form is steam?",
+          "steps": [
+            {
+              "explain": "Find the link in the first pair.",
+              "work": "<p>ICE is a SOLID. (a substance → its state: solid, liquid or gas)</p>"
+            },
+            {
+              "explain": "Use the same link for STEAM. What is steam: a solid, a liquid or a gas?",
+              "work": "<p>STEAM is water that has been heated until it becomes a GAS.</p>"
+            },
+            {
+              "explain": "Check the other options.",
+              "work": "<p>water and air are not states. Liquid is the state of ordinary water, but not of steam.</p>"
+            },
+            {
+              "explain": "ICE : SOLID matches STEAM : GAS.",
+              "work": "<p>The answer is C.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "ICE is to SOLID",
+              "note": "Ice is solid. Find which state of matter steam is."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 6",
+            "number": 16,
+            "page": 35,
+            "category": "analogies"
+          }
+        },
+        {
+          "id": "sch-oc-t6-q19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "How many letters must be taken away from the word AUCTIONEER to leave an animal that is a family pet?",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "answer": 3,
+          "hint": "Think of a short word for a family pet that can be made from letters in AUCTIONEER, such as CAT. Count the letters you do not need.",
+          "steps": [
+            {
+              "explain": "Think of family pets with short names: CAT, DOG, RAT.",
+              "work": "<p>DOG needs a D and a G, which are not in AUCTIONEER. CAT needs C, A and T, which are all in AUCTIONEER.</p>"
+            },
+            {
+              "explain": "Keep the letters C, A and T and mark the others.",
+              "work": "<p>A U C T I O N E E R → keep A, C and T.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 348 42\" width=\"85%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"4\" y=\"4\" width=\"30\" height=\"30\" rx=\"5\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"19.0\" y=\"25.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >A</text><rect x=\"38\" y=\"4\" width=\"30\" height=\"30\" rx=\"5\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"53.0\" y=\"25.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >U</text><rect x=\"72\" y=\"4\" width=\"30\" height=\"30\" rx=\"5\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"87.0\" y=\"25.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >C</text><rect x=\"106\" y=\"4\" width=\"30\" height=\"30\" rx=\"5\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"121.0\" y=\"25.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >T</text><rect x=\"140\" y=\"4\" width=\"30\" height=\"30\" rx=\"5\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"155.0\" y=\"25.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >I</text><rect x=\"174\" y=\"4\" width=\"30\" height=\"30\" rx=\"5\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"189.0\" y=\"25.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >O</text><rect x=\"208\" y=\"4\" width=\"30\" height=\"30\" rx=\"5\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"223.0\" y=\"25.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >N</text><rect x=\"242\" y=\"4\" width=\"30\" height=\"30\" rx=\"5\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"257.0\" y=\"25.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >E</text><rect x=\"276\" y=\"4\" width=\"30\" height=\"30\" rx=\"5\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"291.0\" y=\"25.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >E</text><rect x=\"310\" y=\"4\" width=\"30\" height=\"30\" rx=\"5\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"325.0\" y=\"25.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >R</text></svg>"
+              }
+            },
+            {
+              "explain": "Count the letters that are taken away.",
+              "work": "<p>AUCTIONEER has \\(10\\) letters and CAT has \\(3\\).</p><p>\\(10-3=7\\) letters are taken away (U, I, O, N, E, E, R).</p>"
+            },
+            {
+              "explain": "The answer is D."
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "family pet",
+              "note": "Think of a short pet name, such as CAT, that can be made from the letters."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 6",
+            "number": 19,
+            "page": 36,
+            "category": "codes"
+          }
+        },
+        {
+          "id": "sch-oc-t6-q20to24",
+          "type": "multipart",
+          "stem": "Questions 20 to 24 refer to the following passage.\n\nTHE STORY OF ARTHUR STACE\n\nEternity\n\nA short, grey-haired and lightly built man, who looked quite frail, would often be seen in the early mornings around Wynyard Station. They say that he was always dressed the same, with a grey felt hat, tie and double-breasted navy blue suit.\n\nHe began early, usually before dawn, and he wandered through many of the inner Sydney suburbs. As he walked every so often he would stop, pull out a chalk, bend down and write on the footpath in large, neat running-writing — ETERNITY. He would walk a further hundred metres then write it again, ETERNITY, nothing else, only one word. For 37 years he chalked this one-word message to the whole of Sydney and he wrote it more than half a million times.\n\nFor many years the writer of these ‘Eternity’ signs was anonymous. It mystified Sydney. He did not like publicity and the mystery of the unknown writer of ETERNITY only became clear in 1956. One day Rev. Lisle Thompson, who knew Stace as a church cleaner, saw him take out his chalk and write the well-known ‘Eternity’ sign on the footpath. He did it without realising that he had been spotted. Arthur Stace died of a stroke in a nursing home on July 30, 1967. He was 83.\n\nSources: Reverend Lisle M. Thompson, The Crooked Made Straight, St Barnabas web site; transcript of a book by Keith Dunstan, Ratbags",
+          "parts": [
+            {
+              "id": "sch-oc-t6-q20",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What is the main idea of the article?",
+              "options": [
+                "how the writer of ‘Eternity’ was discovered",
+                "the lifetime work of a man",
+                "an article about religion",
+                "some publicity for the writer of ‘Eternity’"
+              ],
+              "answer": 1,
+              "hint": "The main idea covers the whole article. The article is about a man and what he did for most of his life.",
+              "steps": [
+                {
+                  "explain": "Say what each paragraph is about.",
+                  "work": "<p>Paragraph 1: what Arthur Stace looked like.</p><p>Paragraph 2: what he did every morning — wrote ETERNITY on the footpaths for 37 years.</p><p>Paragraph 3: the mystery of who the writer was, and how he was found.</p>"
+                },
+                {
+                  "explain": "Find the idea that covers all three paragraphs.",
+                  "work": "<p>The article tells the story of a man and the <mark>one-word message he chalked for 37 years</mark> — his lifetime work.</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>A — only paragraph 3 is about being discovered.</p><p>C — religion is only mentioned briefly.</p><p>D — Stace did not like publicity.</p>"
+                },
+                {
+                  "explain": "The answer is B."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "main idea",
+                  "note": "The main idea must cover the whole article, not just one paragraph."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 6",
+                "number": 20,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t6-q21",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What can we judge about the man who wrote ‘Eternity’?",
+              "options": [
+                "he was humble",
+                "he was poor",
+                "he was unknown",
+                "he was a minister of religion"
+              ],
+              "answer": 0,
+              "hint": "Judge him from what the article says he did and did not like. Did he want to be famous?",
+              "steps": [
+                {
+                  "explain": "Find the clues about how he behaved.",
+                  "work": "<p>“He <mark>did not like publicity</mark>…” and “…without realising that he had been spotted.” He wrote for 37 years without asking for any credit.</p>"
+                },
+                {
+                  "explain": "What kind of person does not want credit for work he does?",
+                  "work": "<p>A humble person — someone who is not boastful and does not need to be praised.</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>B — nothing says he was poor.</p><p>C — he was unknown for many years, but this is a fact, not a judgement about him as a person.</p><p>D — he was a church cleaner, not a minister.</p>"
+                },
+                {
+                  "explain": "The answer is A."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "judge",
+                  "note": "To judge means to work out what kind of person he was from clues in the article."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 6",
+                "number": 21,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t6-q22",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Why did Arthur Stace write ‘Eternity’ on the footpaths of Sydney?",
+              "options": [
+                "he wanted to be a humble person",
+                "he wanted to keep active and do something worthwhile",
+                "he wanted to send a message to the people of Sydney",
+                "he wanted to do more than just be a church cleaner"
+              ],
+              "answer": 2,
+              "hint": "Find the sentence that says what the word ETERNITY was meant to be.",
+              "steps": [
+                {
+                  "explain": "Find the sentence about the message.",
+                  "work": "<p>“For 37 years he chalked <mark>this one-word message to the whole of Sydney</mark>…”</p>"
+                },
+                {
+                  "explain": "So what was he doing when he wrote the word?",
+                  "work": "<p>He was sending a message to the people of Sydney.</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>A, B and D are guesses about why he did it. The article only states that it was a message to the whole of Sydney.</p>"
+                },
+                {
+                  "explain": "The answer is C."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "Why did Arthur Stace write",
+                  "note": "The reason is stated in the article. Find the word “message”."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 6",
+                "number": 22,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t6-q23",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Where was Stace often seen?",
+              "options": [
+                "around Wynyard Station",
+                "in the inner Sydney suburbs",
+                "writing on the footpath",
+                "around the whole of Sydney"
+              ],
+              "answer": 0,
+              "hint": "Find the first paragraph. It says where he was “often” seen.",
+              "steps": [
+                {
+                  "explain": "Find the sentence with the word “often”.",
+                  "work": "<p>“…a short, grey-haired man… would <mark>often be seen in the early mornings around Wynyard Station</mark>.”</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>B and D — he wandered through many of the inner Sydney suburbs, but he was not “often” seen at one place there.</p><p>C — this is what he did, not where he was.</p>"
+                },
+                {
+                  "explain": "The answer is A."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "often seen",
+                  "note": "Find the sentence that uses the words “often be seen”."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 6",
+                "number": 23,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t6-q24",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Which word gives the best meaning of ETERNITY?",
+              "options": [
+                "unchanging",
+                "constant",
+                "permanent",
+                "everlasting"
+              ],
+              "answer": 3,
+              "hint": "Eternity means time that never ends. Which word means “lasting for ever”?",
+              "steps": [
+                {
+                  "explain": "Say what ETERNITY means.",
+                  "work": "<p>Eternity is time without end — it goes on for ever.</p>"
+                },
+                {
+                  "explain": "Check each option.",
+                  "work": "<p>unchanging — stays the same, but could still end.</p><p>constant — continues without stopping, but not necessarily for ever.</p><p>permanent — lasts a very long time, but is still not “for ever”.</p><p>everlasting — lasting for ever. ✓</p>"
+                },
+                {
+                  "explain": "The answer is D."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "ETERNITY",
+                  "note": "Eternity means time that never ends."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 6",
+                "number": 24,
+                "category": "comprehension"
+              }
+            }
+          ],
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 6",
+            "number": "20-24",
+            "page": 37,
+            "category": "comprehension"
+          }
+        },
+        {
+          "id": "sch-oc-t6-q29",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which word is different in meaning from the others?",
+          "options": [
+            "Indicating",
+            "Stating",
+            "Asking",
+            "Saying"
+          ],
+          "answer": 2,
+          "hint": "Three of these words mean telling someone something. One of them does something different. Which one?",
+          "steps": [
+            {
+              "explain": "Say what each word means.",
+              "work": "<p>Indicating — pointing out or showing something.</p><p>Stating — telling something clearly.</p><p>Saying — speaking words.</p><p>Asking — wanting an answer to a question.</p>"
+            },
+            {
+              "explain": "Group the words that are alike.",
+              "work": "<p>Indicating, stating and saying all give information. Asking is different: it looks for information.</p>"
+            },
+            {
+              "explain": "The word that is different in meaning is “Asking”.",
+              "work": "<p>The answer is C.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "different in meaning",
+              "note": "Find three words that mean something alike, and one that does not."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 6",
+            "number": 29,
+            "page": 38,
+            "category": "word knowledge"
+          }
+        },
+        {
+          "id": "sch-oc-t6-q30",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which word do you think is missing in this sentence?\n\nThe letter X in the English ________ probably originated as a picture sign of a fish, such as is found in the ancient Egyptian writing.",
+          "options": [
+            "symbols",
+            "dictionary",
+            "nation",
+            "alphabet"
+          ],
+          "answer": 3,
+          "hint": "A letter belongs to a set of letters. What do we call the whole set of letters that we use for writing English?",
+          "steps": [
+            {
+              "explain": "Read the sentence. It is about a letter, X, and where it came from.",
+              "work": "<p>The letter X in the English ________.</p>"
+            },
+            {
+              "explain": "Say what a letter belongs to.",
+              "work": "<p>The letters A to Z together are the alphabet. The sentence is saying that X, one of the letters in the English alphabet, started as a picture of a fish.</p>"
+            },
+            {
+              "explain": "Check the other options.",
+              "work": "<p>symbols — letters are symbols, but “the English symbols” does not sound right.</p><p>dictionary — a book of words, not letters.</p><p>nation — a country, which does not fit with “the English”.</p>"
+            },
+            {
+              "explain": "The answer is D."
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which word do you think is missing",
+              "note": "Put each word into the gap and check it sounds right: “the English ______”."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 6",
+            "number": 30,
+            "page": 38,
+            "category": "word order"
+          }
         }
       ]
     },
@@ -8482,6 +9319,669 @@
             "test": "Test 5",
             "number": 28,
             "page": 32,
+            "category": "number series"
+          }
+        },
+        {
+          "id": "sch-oc-t6-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Nicholas has \\(\\$1.90\\), John has \\(\\$1.20\\) and Angela has 80 cents. How much should we take from Nicholas and give to John and Angela, so that everyone will have the same amount?",
+          "options": [
+            "60 cents",
+            "50 cents",
+            "70 cents",
+            "80 cents"
+          ],
+          "answer": 0,
+          "hint": "First find how much money there is altogether. Then work out how much each person should have so they all have the same.",
+          "steps": [
+            {
+              "explain": "Add up all the money.",
+              "work": "<p>\\(\\$1.90+\\$1.20+\\$0.80=\\$3.90\\)</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 386.0 136\" width=\"90%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><text x=\"64\" y=\"29\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Nicholas</text><rect x=\"70\" y=\"12\" width=\"247.0\" height=\"24\" rx=\"4\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"1.6\" /><text x=\"323.0\" y=\"29\" font-size=\"11.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >$1.90</text><text x=\"64\" y=\"63\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >John</text><rect x=\"70\" y=\"46\" width=\"156.0\" height=\"24\" rx=\"4\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"1.6\" /><text x=\"232.0\" y=\"63\" font-size=\"11.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >$1.20</text><text x=\"64\" y=\"97\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Angela</text><rect x=\"70\" y=\"80\" width=\"104.0\" height=\"24\" rx=\"4\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"1.6\" /><text x=\"180.0\" y=\"97\" font-size=\"11.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >$0.80</text></svg>"
+              }
+            },
+            {
+              "explain": "Share it equally between the three people.",
+              "work": "<p>\\(\\$3.90\\div3=\\$1.30\\) each</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 386.0 136\" width=\"90%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><text x=\"64\" y=\"29\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Nicholas</text><rect x=\"70\" y=\"12\" width=\"247.0\" height=\"24\" rx=\"4\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"1.6\" /><text x=\"323.0\" y=\"29\" font-size=\"11.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >$1.90</text><text x=\"64\" y=\"63\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >John</text><rect x=\"70\" y=\"46\" width=\"156.0\" height=\"24\" rx=\"4\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"1.6\" /><text x=\"232.0\" y=\"63\" font-size=\"11.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >$1.20</text><text x=\"64\" y=\"97\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Angela</text><rect x=\"70\" y=\"80\" width=\"104.0\" height=\"24\" rx=\"4\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"1.6\" /><text x=\"180.0\" y=\"97\" font-size=\"11.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >$0.80</text><line x1=\"239.0\" y1=\"6\" x2=\"239.0\" y2=\"110\" stroke=\"#059669\" stroke-width=\"2.6\" stroke-dasharray=\"5 3\" /><text x=\"239.0\" y=\"124\" font-size=\"11\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"middle\" >equal share $1.30</text></svg>"
+              }
+            },
+            {
+              "explain": "Nicholas has more than \\(\\$1.30\\), so he is the one who gives money away. Find how much more he has.",
+              "work": "<p>\\(\\$1.90-\\$1.30=\\$0.60\\), so Nicholas gives away \\(60\\) cents.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 386.0 136\" width=\"90%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><text x=\"64\" y=\"29\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Nicholas</text><rect x=\"70\" y=\"12\" width=\"247.0\" height=\"24\" rx=\"4\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"1.6\" /><text x=\"323.0\" y=\"29\" font-size=\"11.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >$1.90</text><text x=\"64\" y=\"63\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >John</text><rect x=\"70\" y=\"46\" width=\"156.0\" height=\"24\" rx=\"4\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"1.6\" /><text x=\"232.0\" y=\"63\" font-size=\"11.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >$1.20</text><text x=\"64\" y=\"97\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Angela</text><rect x=\"70\" y=\"80\" width=\"104.0\" height=\"24\" rx=\"4\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"1.6\" /><text x=\"180.0\" y=\"97\" font-size=\"11.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >$0.80</text><line x1=\"239.0\" y1=\"6\" x2=\"239.0\" y2=\"110\" stroke=\"#059669\" stroke-width=\"2.6\" stroke-dasharray=\"5 3\" /><text x=\"239.0\" y=\"124\" font-size=\"11\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"middle\" >equal share $1.30</text><rect x=\"239.0\" y=\"12\" width=\"77.99999999999999\" height=\"24\" rx=\"4\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2.2\" /><text x=\"278.0\" y=\"28\" font-size=\"11\" font-weight=\"800\" fill=\"#b45309\" text-anchor=\"middle\" >$0.60</text></svg>"
+              }
+            },
+            {
+              "explain": "Check that it works.",
+              "work": "<p>John needs \\(\\$1.30-\\$1.20=\\$0.10\\) and Angela needs \\(\\$1.30-\\$0.80=\\$0.50\\).</p><p>\\(10+50=60\\) cents ✓</p>"
+            },
+            {
+              "explain": "The answer is A."
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "same amount",
+              "note": "Find the total and divide it by 3 to see what each person should have."
+            },
+            {
+              "text": "take from Nicholas",
+              "note": "Only Nicholas has more than the equal share. Find how much more."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 6",
+            "number": 2,
+            "page": 33,
+            "category": "arithmetic"
+          }
+        },
+        {
+          "id": "sch-oc-t6-q3",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Jim owed David Jones \\(\\$288.85\\) last month. He paid David Jones \\(\\$113.95\\) and spent another \\(\\$79.95\\) this month. How do you calculate how much he owes David Jones now?",
+          "options": [
+            "\\(\\$288.85-(\\$113.95+\\$79.95)\\)",
+            "\\(\\$288.85+\\$113.95+\\$79.95\\)",
+            "\\(\\$288.85-\\$113.95+\\$79.95\\)",
+            "\\(\\$113.95+\\$79.95-\\$288.85\\)"
+          ],
+          "answer": 2,
+          "hint": "Think about whether each amount makes the debt bigger or smaller. Paying money back reduces what he owes. Spending more at the shop increases it.",
+          "steps": [
+            {
+              "explain": "Start with what Jim owed at the beginning.",
+              "work": "<p>He owed \\(\\$288.85\\).</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 72\" width=\"85%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><path d=\"M10 24 L10 18 L350 18 L350 24\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"180.0\" y=\"13\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >at the start</text><rect x=\"10\" y=\"30\" width=\"340.0\" height=\"34\" rx=\"4\" fill=\"#fee2e2\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"180.0\" y=\"52.0\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >owed $288.85</text></svg>"
+              }
+            },
+            {
+              "explain": "He PAID David Jones \\(\\$113.95\\). Paying back means he owes LESS, so take it away.",
+              "work": "<p>\\(\\$288.85-\\$113.95\\)</p>"
+            },
+            {
+              "explain": "He SPENT another \\(\\$79.95\\) at the shop. Spending more means he owes MORE, so add it.",
+              "work": "<p>\\(\\$288.85-\\$113.95+\\$79.95\\)</p>"
+            },
+            {
+              "explain": "Work it out to check: 288.85 − 113.95 = 174.90, and 174.90 + 79.95 = 254.85.",
+              "work": "<p>He now owes \\(\\$254.85\\).</p><p>A takes both amounts away (\\(\\$95.05\\)), B adds both (\\(\\$482.75\\)), and D starts with the small amounts, so each is wrong.</p>"
+            },
+            {
+              "explain": "The answer is C."
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "paid",
+              "note": "Paying money back makes the amount owed smaller: subtract."
+            },
+            {
+              "text": "spent another",
+              "note": "Spending more makes the amount owed bigger: add."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 6",
+            "number": 3,
+            "page": 33,
+            "category": "calculation problems"
+          }
+        },
+        {
+          "id": "sch-oc-t6-q10",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which figure comes next in this series?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 572 454\" width=\"80%\" height=\"auto\"><image href=\"/oc/t6-q10.jpg\" x=\"0\" y=\"0\" width=\"572\" height=\"454\"/></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 3,
+          "hint": "Each figure has two arrows. Follow the upper arrow through the four figures and then the lower arrow. How does each one turn?",
+          "steps": [
+            {
+              "explain": "Look at the upper arrow in each figure: ←, ↖, ↑, ↗.",
+              "work": "<p>The upper arrow turns 45° clockwise each time: left → up-left → up → up-right.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 288 146\" width=\"95%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><g transform=\"translate(36 34) rotate(270)\"><polygon points=\"0,-15 8.25,-3.75 3.0,-3.75 3.0,15 -3.0,15 -3.0,-3.75 -8.25,-3.75\" fill=\"#1e293b\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linejoin=\"round\" /></g><g transform=\"translate(36 80) rotate(315)\"><polygon points=\"0,-15 8.25,-3.75 3.0,-3.75 3.0,15 -3.0,15 -3.0,-3.75 -8.25,-3.75\" fill=\"#1e293b\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linejoin=\"round\" /></g><text x=\"36\" y=\"122\" font-size=\"11.5\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >I</text><text x=\"36\" y=\"138\" font-size=\"10\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >270° / 315°</text><g transform=\"translate(100 34) rotate(315)\"><polygon points=\"0,-15 8.25,-3.75 3.0,-3.75 3.0,15 -3.0,15 -3.0,-3.75 -8.25,-3.75\" fill=\"#1e293b\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linejoin=\"round\" /></g><g transform=\"translate(100 80) rotate(0)\"><polygon points=\"0,-15 8.25,-3.75 3.0,-3.75 3.0,15 -3.0,15 -3.0,-3.75 -8.25,-3.75\" fill=\"#1e293b\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linejoin=\"round\" /></g><text x=\"100\" y=\"122\" font-size=\"11.5\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >II</text><text x=\"100\" y=\"138\" font-size=\"10\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >315° / 0°</text><g transform=\"translate(164 34) rotate(0)\"><polygon points=\"0,-15 8.25,-3.75 3.0,-3.75 3.0,15 -3.0,15 -3.0,-3.75 -8.25,-3.75\" fill=\"#1e293b\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linejoin=\"round\" /></g><g transform=\"translate(164 80) rotate(45)\"><polygon points=\"0,-15 8.25,-3.75 3.0,-3.75 3.0,15 -3.0,15 -3.0,-3.75 -8.25,-3.75\" fill=\"#1e293b\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linejoin=\"round\" /></g><text x=\"164\" y=\"122\" font-size=\"11.5\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >III</text><text x=\"164\" y=\"138\" font-size=\"10\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >0° / 45°</text><g transform=\"translate(228 34) rotate(45)\"><polygon points=\"0,-15 8.25,-3.75 3.0,-3.75 3.0,15 -3.0,15 -3.0,-3.75 -8.25,-3.75\" fill=\"#1e293b\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linejoin=\"round\" /></g><g transform=\"translate(228 80) rotate(90)\"><polygon points=\"0,-15 8.25,-3.75 3.0,-3.75 3.0,15 -3.0,15 -3.0,-3.75 -8.25,-3.75\" fill=\"#1e293b\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linejoin=\"round\" /></g><text x=\"228\" y=\"122\" font-size=\"11.5\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >IV</text><text x=\"228\" y=\"138\" font-size=\"10\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >45° / 90°</text></svg>"
+              }
+            },
+            {
+              "explain": "Look at the lower arrow in each figure: ↖, ↑, ↗, →.",
+              "work": "<p>The lower arrow also turns 45° clockwise each time: up-left → up → up-right → right.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 288 146\" width=\"95%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><g transform=\"translate(36 34) rotate(270)\"><polygon points=\"0,-15 8.25,-3.75 3.0,-3.75 3.0,15 -3.0,15 -3.0,-3.75 -8.25,-3.75\" fill=\"#1e293b\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linejoin=\"round\" /></g><g transform=\"translate(36 80) rotate(315)\"><polygon points=\"0,-15 8.25,-3.75 3.0,-3.75 3.0,15 -3.0,15 -3.0,-3.75 -8.25,-3.75\" fill=\"#1e293b\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linejoin=\"round\" /></g><text x=\"36\" y=\"122\" font-size=\"11.5\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >I</text><text x=\"36\" y=\"138\" font-size=\"10\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >270° / 315°</text><g transform=\"translate(100 34) rotate(315)\"><polygon points=\"0,-15 8.25,-3.75 3.0,-3.75 3.0,15 -3.0,15 -3.0,-3.75 -8.25,-3.75\" fill=\"#1e293b\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linejoin=\"round\" /></g><g transform=\"translate(100 80) rotate(0)\"><polygon points=\"0,-15 8.25,-3.75 3.0,-3.75 3.0,15 -3.0,15 -3.0,-3.75 -8.25,-3.75\" fill=\"#1e293b\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linejoin=\"round\" /></g><text x=\"100\" y=\"122\" font-size=\"11.5\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >II</text><text x=\"100\" y=\"138\" font-size=\"10\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >315° / 0°</text><g transform=\"translate(164 34) rotate(0)\"><polygon points=\"0,-15 8.25,-3.75 3.0,-3.75 3.0,15 -3.0,15 -3.0,-3.75 -8.25,-3.75\" fill=\"#1e293b\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linejoin=\"round\" /></g><g transform=\"translate(164 80) rotate(45)\"><polygon points=\"0,-15 8.25,-3.75 3.0,-3.75 3.0,15 -3.0,15 -3.0,-3.75 -8.25,-3.75\" fill=\"#1e293b\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linejoin=\"round\" /></g><text x=\"164\" y=\"122\" font-size=\"11.5\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >III</text><text x=\"164\" y=\"138\" font-size=\"10\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >0° / 45°</text><rect x=\"200\" y=\"6\" width=\"56\" height=\"100\" rx=\"8\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><g transform=\"translate(228 34) rotate(45)\"><polygon points=\"0,-15 8.25,-3.75 3.0,-3.75 3.0,15 -3.0,15 -3.0,-3.75 -8.25,-3.75\" fill=\"#1e293b\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linejoin=\"round\" /></g><g transform=\"translate(228 80) rotate(90)\"><polygon points=\"0,-15 8.25,-3.75 3.0,-3.75 3.0,15 -3.0,15 -3.0,-3.75 -8.25,-3.75\" fill=\"#1e293b\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linejoin=\"round\" /></g><text x=\"228\" y=\"122\" font-size=\"11.5\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >IV</text><text x=\"228\" y=\"138\" font-size=\"10\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >45° / 90°</text></svg>"
+              }
+            },
+            {
+              "explain": "Turn each arrow another 45° clockwise to get the next figure.",
+              "work": "<p>Upper arrow: up-right ↗ → right →.</p><p>Lower arrow: right → → down-right ↘.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 352 146\" width=\"95%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><g transform=\"translate(36 34) rotate(270)\"><polygon points=\"0,-15 8.25,-3.75 3.0,-3.75 3.0,15 -3.0,15 -3.0,-3.75 -8.25,-3.75\" fill=\"#1e293b\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linejoin=\"round\" /></g><g transform=\"translate(36 80) rotate(315)\"><polygon points=\"0,-15 8.25,-3.75 3.0,-3.75 3.0,15 -3.0,15 -3.0,-3.75 -8.25,-3.75\" fill=\"#1e293b\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linejoin=\"round\" /></g><text x=\"36\" y=\"122\" font-size=\"11.5\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >I</text><text x=\"36\" y=\"138\" font-size=\"10\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >270° / 315°</text><g transform=\"translate(100 34) rotate(315)\"><polygon points=\"0,-15 8.25,-3.75 3.0,-3.75 3.0,15 -3.0,15 -3.0,-3.75 -8.25,-3.75\" fill=\"#1e293b\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linejoin=\"round\" /></g><g transform=\"translate(100 80) rotate(0)\"><polygon points=\"0,-15 8.25,-3.75 3.0,-3.75 3.0,15 -3.0,15 -3.0,-3.75 -8.25,-3.75\" fill=\"#1e293b\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linejoin=\"round\" /></g><text x=\"100\" y=\"122\" font-size=\"11.5\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >II</text><text x=\"100\" y=\"138\" font-size=\"10\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >315° / 0°</text><g transform=\"translate(164 34) rotate(0)\"><polygon points=\"0,-15 8.25,-3.75 3.0,-3.75 3.0,15 -3.0,15 -3.0,-3.75 -8.25,-3.75\" fill=\"#1e293b\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linejoin=\"round\" /></g><g transform=\"translate(164 80) rotate(45)\"><polygon points=\"0,-15 8.25,-3.75 3.0,-3.75 3.0,15 -3.0,15 -3.0,-3.75 -8.25,-3.75\" fill=\"#1e293b\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linejoin=\"round\" /></g><text x=\"164\" y=\"122\" font-size=\"11.5\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >III</text><text x=\"164\" y=\"138\" font-size=\"10\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >0° / 45°</text><g transform=\"translate(228 34) rotate(45)\"><polygon points=\"0,-15 8.25,-3.75 3.0,-3.75 3.0,15 -3.0,15 -3.0,-3.75 -8.25,-3.75\" fill=\"#1e293b\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linejoin=\"round\" /></g><g transform=\"translate(228 80) rotate(90)\"><polygon points=\"0,-15 8.25,-3.75 3.0,-3.75 3.0,15 -3.0,15 -3.0,-3.75 -8.25,-3.75\" fill=\"#1e293b\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linejoin=\"round\" /></g><text x=\"228\" y=\"122\" font-size=\"11.5\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >IV</text><text x=\"228\" y=\"138\" font-size=\"10\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >45° / 90°</text><rect x=\"264\" y=\"6\" width=\"56\" height=\"100\" rx=\"8\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><g transform=\"translate(292 34) rotate(90)\"><polygon points=\"0,-15 8.25,-3.75 3.0,-3.75 3.0,15 -3.0,15 -3.0,-3.75 -8.25,-3.75\" fill=\"#1e293b\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linejoin=\"round\" /></g><g transform=\"translate(292 80) rotate(135)\"><polygon points=\"0,-15 8.25,-3.75 3.0,-3.75 3.0,15 -3.0,15 -3.0,-3.75 -8.25,-3.75\" fill=\"#1e293b\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linejoin=\"round\" /></g><text x=\"292\" y=\"122\" font-size=\"11.5\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >V</text><text x=\"292\" y=\"138\" font-size=\"10\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >90° / 135°</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the option with one arrow pointing right and one pointing down-right.",
+              "work": "<p>D shows → and ↘. ✓ A has ↖ and ↑, B has ↙ and ↗, and C has ↑ and ↘. The answer is D.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which figure comes next",
+              "note": "Follow each arrow on its own. Both turn clockwise by the same amount each time."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 6",
+            "number": 10,
+            "page": 34,
+            "category": "figure sequences"
+          }
+        },
+        {
+          "id": "sch-oc-t6-q11to12",
+          "type": "multipart",
+          "stem": "This chart shows the typical costs for a textbook of around 250 pages. The book sells for \\(\\$40.00\\). Half of the \\(\\$40.00\\) goes to the bookseller.\n\nBOOK PROFITS FOR A TYPICAL 250 PAGE BOOK\n\n| Cost | Amount |\n|---|---|\n| Printing and bookbinding | \\(\\$3.20\\) |\n| Warehouse and distribution | \\(\\$3.20\\) |\n| Bookseller | \\(\\$20.00\\) |\n| Rent, salaries | \\(\\$3.20\\) |\n| Advertisements | \\(\\$2.40\\) |\n| Author’s payment | \\(\\$4.00\\) |\n| Publisher’s profit | \\(\\$4.00\\) |\n| TOTAL | \\(\\$40.00\\) |\n\nSource: Adapted from Anne R. Carey & Jerry Mosemak, USA Today, October 1998",
+          "parts": [
+            {
+              "id": "sch-oc-t6-q11",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "How much profit does the publisher make on each book sold?",
+              "options": [
+                "around one-tenth of the book’s price",
+                "around one-quarter of the book’s price",
+                "around one-fifth of the book’s price",
+                "around one-sixth of the book’s price"
+              ],
+              "answer": 0,
+              "hint": "Find the publisher’s profit in the table. Then compare it with the price of the book as a fraction.",
+              "steps": [
+                {
+                  "explain": "Find the publisher’s profit and the price of the book.",
+                  "work": "<p>Publisher’s profit \\(=\\$4.00\\)    Book price \\(=\\$40.00\\)</p>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 406.0 194\" width=\"92%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><text x=\"154\" y=\"24\" font-size=\"11.5\" font-weight=\"500\" fill=\"#94a3b8\" text-anchor=\"end\" >Printing and bookbinding</text><rect x=\"160\" y=\"8\" width=\"30.400000000000002\" height=\"20\" rx=\"4\" fill=\"#f1f5f9\" stroke=\"#cbd5e1\" stroke-width=\"1.4\" /><text x=\"195.4\" y=\"23\" font-size=\"12\" font-weight=\"800\" fill=\"#94a3b8\" text-anchor=\"start\" >$3.20</text><text x=\"154\" y=\"50\" font-size=\"11.5\" font-weight=\"500\" fill=\"#94a3b8\" text-anchor=\"end\" >Warehouse and distribution</text><rect x=\"160\" y=\"34\" width=\"30.400000000000002\" height=\"20\" rx=\"4\" fill=\"#f1f5f9\" stroke=\"#cbd5e1\" stroke-width=\"1.4\" /><text x=\"195.4\" y=\"49\" font-size=\"12\" font-weight=\"800\" fill=\"#94a3b8\" text-anchor=\"start\" >$3.20</text><text x=\"154\" y=\"76\" font-size=\"11.5\" font-weight=\"500\" fill=\"#94a3b8\" text-anchor=\"end\" >Bookseller</text><rect x=\"160\" y=\"60\" width=\"190.0\" height=\"20\" rx=\"4\" fill=\"#f1f5f9\" stroke=\"#cbd5e1\" stroke-width=\"1.4\" /><text x=\"355.0\" y=\"75\" font-size=\"12\" font-weight=\"800\" fill=\"#94a3b8\" text-anchor=\"start\" >$20.00</text><text x=\"154\" y=\"102\" font-size=\"11.5\" font-weight=\"500\" fill=\"#94a3b8\" text-anchor=\"end\" >Rent, salaries</text><rect x=\"160\" y=\"86\" width=\"30.400000000000002\" height=\"20\" rx=\"4\" fill=\"#f1f5f9\" stroke=\"#cbd5e1\" stroke-width=\"1.4\" /><text x=\"195.4\" y=\"101\" font-size=\"12\" font-weight=\"800\" fill=\"#94a3b8\" text-anchor=\"start\" >$3.20</text><text x=\"154\" y=\"128\" font-size=\"11.5\" font-weight=\"500\" fill=\"#94a3b8\" text-anchor=\"end\" >Advertisements</text><rect x=\"160\" y=\"112\" width=\"22.8\" height=\"20\" rx=\"4\" fill=\"#f1f5f9\" stroke=\"#cbd5e1\" stroke-width=\"1.4\" /><text x=\"187.8\" y=\"127\" font-size=\"12\" font-weight=\"800\" fill=\"#94a3b8\" text-anchor=\"start\" >$2.40</text><text x=\"154\" y=\"154\" font-size=\"11.5\" font-weight=\"500\" fill=\"#94a3b8\" text-anchor=\"end\" >Author’s payment</text><rect x=\"160\" y=\"138\" width=\"38.0\" height=\"20\" rx=\"4\" fill=\"#f1f5f9\" stroke=\"#cbd5e1\" stroke-width=\"1.4\" /><text x=\"203.0\" y=\"153\" font-size=\"12\" font-weight=\"800\" fill=\"#94a3b8\" text-anchor=\"start\" >$4.00</text><text x=\"154\" y=\"180\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Publisher’s profit</text><rect x=\"160\" y=\"164\" width=\"38.0\" height=\"20\" rx=\"4\" fill=\"#6ee7b7\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"203.0\" y=\"179\" font-size=\"12\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"start\" >$4.00</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Write the profit as a fraction of the price.",
+                  "work": "<p>\\(\\frac{4}{40}=\\frac{1}{10}\\)  (divide the top and bottom by 4)</p>"
+                },
+                {
+                  "explain": "Check with a quick test: 10 profits of \\(\\$4.00\\) make \\(\\$40.00\\).",
+                  "work": "<p>\\(10\\times4=40\\) ✓ So the profit is one-tenth of the price.</p>"
+                },
+                {
+                  "explain": "The other fractions would be \\(\\$10.00\\) (one-quarter), \\(\\$8.00\\) (one-fifth) and about \\(\\$6.67\\) (one-sixth).",
+                  "work": "<p>The answer is A.</p>"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "profit does the publisher make",
+                  "note": "Profit is a part of the price. Write it as a fraction of \\(\\$40\\)."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 6",
+                "number": 11,
+                "category": "graph interpretation"
+              }
+            },
+            {
+              "id": "sch-oc-t6-q12",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "How much does each book cost the publisher to produce (do not include the payment to the author)?",
+              "options": [
+                "\\(\\$40.00\\)",
+                "\\(\\$18.00\\)",
+                "\\(\\$12.00\\)",
+                "\\(\\$10.00\\)"
+              ],
+              "answer": 2,
+              "hint": "The cost of producing the book is the printing, the warehouse, the rent and salaries and the advertisements. Which items in the table are NOT part of the cost to the publisher?",
+              "steps": [
+                {
+                  "explain": "Decide which items count as the cost to produce the book.",
+                  "work": "<p>Printing and bookbinding, warehouse and distribution, rent and salaries, and advertisements are the publisher’s costs.</p><p>The bookseller’s share, the author’s payment and the publisher’s profit are NOT costs of producing it.</p>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 406.0 194\" width=\"92%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><text x=\"154\" y=\"24\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Printing and bookbinding</text><rect x=\"160\" y=\"8\" width=\"30.400000000000002\" height=\"20\" rx=\"4\" fill=\"#6ee7b7\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"195.4\" y=\"23\" font-size=\"12\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"start\" >$3.20</text><text x=\"154\" y=\"50\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Warehouse and distribution</text><rect x=\"160\" y=\"34\" width=\"30.400000000000002\" height=\"20\" rx=\"4\" fill=\"#6ee7b7\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"195.4\" y=\"49\" font-size=\"12\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"start\" >$3.20</text><text x=\"154\" y=\"76\" font-size=\"11.5\" font-weight=\"500\" fill=\"#94a3b8\" text-anchor=\"end\" >Bookseller</text><rect x=\"160\" y=\"60\" width=\"190.0\" height=\"20\" rx=\"4\" fill=\"#f1f5f9\" stroke=\"#cbd5e1\" stroke-width=\"1.4\" /><text x=\"355.0\" y=\"75\" font-size=\"12\" font-weight=\"800\" fill=\"#94a3b8\" text-anchor=\"start\" >$20.00</text><text x=\"154\" y=\"102\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Rent, salaries</text><rect x=\"160\" y=\"86\" width=\"30.400000000000002\" height=\"20\" rx=\"4\" fill=\"#6ee7b7\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"195.4\" y=\"101\" font-size=\"12\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"start\" >$3.20</text><text x=\"154\" y=\"128\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Advertisements</text><rect x=\"160\" y=\"112\" width=\"22.8\" height=\"20\" rx=\"4\" fill=\"#6ee7b7\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"187.8\" y=\"127\" font-size=\"12\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"start\" >$2.40</text><text x=\"154\" y=\"154\" font-size=\"11.5\" font-weight=\"500\" fill=\"#94a3b8\" text-anchor=\"end\" >Author’s payment</text><rect x=\"160\" y=\"138\" width=\"38.0\" height=\"20\" rx=\"4\" fill=\"#f1f5f9\" stroke=\"#cbd5e1\" stroke-width=\"1.4\" /><text x=\"203.0\" y=\"153\" font-size=\"12\" font-weight=\"800\" fill=\"#94a3b8\" text-anchor=\"start\" >$4.00</text><text x=\"154\" y=\"180\" font-size=\"11.5\" font-weight=\"500\" fill=\"#94a3b8\" text-anchor=\"end\" >Publisher’s profit</text><rect x=\"160\" y=\"164\" width=\"38.0\" height=\"20\" rx=\"4\" fill=\"#f1f5f9\" stroke=\"#cbd5e1\" stroke-width=\"1.4\" /><text x=\"203.0\" y=\"179\" font-size=\"12\" font-weight=\"800\" fill=\"#94a3b8\" text-anchor=\"start\" >$4.00</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Add the four costs.",
+                  "work": "<p>\\(3.20+3.20+3.20+2.40\\)</p><p>\\(3.20+3.20=6.40\\);  \\(6.40+3.20=9.60\\);  \\(9.60+2.40=12.00\\)</p>"
+                },
+                {
+                  "explain": "Check another way. Take everything that is not a cost away from \\(\\$40.00\\).",
+                  "work": "<p>\\(40.00-20.00-4.00-4.00=12.00\\) ✓</p>"
+                },
+                {
+                  "explain": "Check the other options: \\(\\$40.00\\) is the whole price, \\(\\$18.00\\) adds the author’s payment and profit and \\(\\$10.00\\) leaves something out.",
+                  "work": "<p>The answer is C.</p>"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "cost the publisher to produce",
+                  "note": "Only the costs of making and selling the book count: do not include the bookseller, the author or the profit."
+                },
+                {
+                  "text": "do not include the payment to the author",
+                  "note": "The author’s payment is left out of the cost."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 6",
+                "number": 12,
+                "category": "graph interpretation"
+              }
+            }
+          ],
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 6",
+            "number": "11-12",
+            "page": 34,
+            "category": "graph interpretation"
+          }
+        },
+        {
+          "id": "sch-oc-t6-q13",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which number comes next in this series?\n\n3  6  10  15  ?",
+          "options": [
+            "20",
+            "24",
+            "22",
+            "21"
+          ],
+          "answer": 3,
+          "hint": "Find the gap between each pair of numbers. Does the gap stay the same or does it change in a pattern?",
+          "steps": [
+            {
+              "explain": "Find the gaps.",
+              "work": "<p>\\(6-3=3\\) &emsp; \\(10-6=4\\) &emsp; \\(15-10=5\\)</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 96\" width=\"95%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><defs><marker id=\"ah\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#6366f1\"/></marker></defs><rect x=\"8\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"30.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >3</text><rect x=\"78\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"100.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >6</text><rect x=\"148\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"170.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >10</text><rect x=\"218\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"240.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >15</text><rect x=\"288\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#eef2ff\" stroke=\"#6366f1\" stroke-width=\"2\" /><text x=\"310.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >?</text><path d=\"M30.0 44 Q65.0 8 100.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"65.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+3</text><path d=\"M100.0 44 Q135.0 8 170.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"135.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+4</text><path d=\"M170.0 44 Q205.0 8 240.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"205.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+5</text></svg>"
+              }
+            },
+            {
+              "explain": "The gaps are 3, 4, 5: each gap is one bigger than the one before, so the next gap is 6.",
+              "work": "<p>\\(15+6=21\\)</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 112\" width=\"95%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><defs><marker id=\"ah\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#6366f1\"/></marker></defs><rect x=\"8\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"30.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >3</text><rect x=\"78\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"100.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >6</text><rect x=\"148\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"170.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >10</text><rect x=\"218\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"240.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >15</text><rect x=\"288\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#eef2ff\" stroke=\"#6366f1\" stroke-width=\"2\" /><text x=\"310.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >?</text><path d=\"M30.0 44 Q65.0 8 100.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"65.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+3</text><path d=\"M100.0 44 Q135.0 8 170.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"135.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+4</text><path d=\"M170.0 44 Q205.0 8 240.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"205.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+5</text><path d=\"M240.0 44 Q275.0 8 310.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"275.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+6</text><text x=\"170.0\" y=\"108\" font-size=\"12\" font-weight=\"700\" fill=\"#059669\" text-anchor=\"middle\" >15 + 6 = 21</text></svg>"
+              }
+            },
+            {
+              "explain": "These are called triangular numbers because that many dots make a triangle.",
+              "work": "<p>3, 6, 10, 15, 21 dots make triangles with 2, 3, 4, 5 and 6 dots on each side.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 358 98\" width=\"90%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><circle cx=\"15.0\" cy=\"12\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"11.5\" cy=\"22\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"18.5\" cy=\"22\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><text x=\"15\" y=\"46\" font-size=\"12\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >3</text><circle cx=\"64.0\" cy=\"12\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"60.5\" cy=\"22\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"67.5\" cy=\"22\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"57.0\" cy=\"32\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"64.0\" cy=\"32\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"71.0\" cy=\"32\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><text x=\"64\" y=\"56\" font-size=\"12\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >6</text><circle cx=\"127.0\" cy=\"12\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"123.5\" cy=\"22\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"130.5\" cy=\"22\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"120.0\" cy=\"32\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"127.0\" cy=\"32\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"134.0\" cy=\"32\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"116.5\" cy=\"42\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"123.5\" cy=\"42\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"130.5\" cy=\"42\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"137.5\" cy=\"42\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><text x=\"127\" y=\"66\" font-size=\"12\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >10</text><circle cx=\"204.0\" cy=\"12\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"200.5\" cy=\"22\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"207.5\" cy=\"22\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"197.0\" cy=\"32\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"204.0\" cy=\"32\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"211.0\" cy=\"32\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"193.5\" cy=\"42\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"200.5\" cy=\"42\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"207.5\" cy=\"42\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"214.5\" cy=\"42\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"190.0\" cy=\"52\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"197.0\" cy=\"52\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"204.0\" cy=\"52\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"211.0\" cy=\"52\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"218.0\" cy=\"52\" r=\"3.2\" fill=\"#6366f1\" stroke=\"#4338ca\" stroke-width=\"1\" /><text x=\"204\" y=\"76\" font-size=\"12\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >15</text><circle cx=\"295.0\" cy=\"12\" r=\"3.2\" fill=\"#059669\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"291.5\" cy=\"22\" r=\"3.2\" fill=\"#059669\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"298.5\" cy=\"22\" r=\"3.2\" fill=\"#059669\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"288.0\" cy=\"32\" r=\"3.2\" fill=\"#059669\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"295.0\" cy=\"32\" r=\"3.2\" fill=\"#059669\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"302.0\" cy=\"32\" r=\"3.2\" fill=\"#059669\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"284.5\" cy=\"42\" r=\"3.2\" fill=\"#059669\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"291.5\" cy=\"42\" r=\"3.2\" fill=\"#059669\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"298.5\" cy=\"42\" r=\"3.2\" fill=\"#059669\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"305.5\" cy=\"42\" r=\"3.2\" fill=\"#059669\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"281.0\" cy=\"52\" r=\"3.2\" fill=\"#059669\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"288.0\" cy=\"52\" r=\"3.2\" fill=\"#059669\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"295.0\" cy=\"52\" r=\"3.2\" fill=\"#059669\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"302.0\" cy=\"52\" r=\"3.2\" fill=\"#059669\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"309.0\" cy=\"52\" r=\"3.2\" fill=\"#059669\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"277.5\" cy=\"62\" r=\"3.2\" fill=\"#059669\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"284.5\" cy=\"62\" r=\"3.2\" fill=\"#059669\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"291.5\" cy=\"62\" r=\"3.2\" fill=\"#059669\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"298.5\" cy=\"62\" r=\"3.2\" fill=\"#059669\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"305.5\" cy=\"62\" r=\"3.2\" fill=\"#059669\" stroke=\"#4338ca\" stroke-width=\"1\" /><circle cx=\"312.5\" cy=\"62\" r=\"3.2\" fill=\"#059669\" stroke=\"#4338ca\" stroke-width=\"1\" /><text x=\"295\" y=\"86\" font-size=\"12\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"middle\" >21</text></svg>"
+              }
+            },
+            {
+              "explain": "Check the other options: 20 is +5, 22 is +7 and 24 is +9.",
+              "work": "<p>The answer is D.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "next in this series",
+              "note": "If the gap changes, look at how the gap changes."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 6",
+            "number": 13,
+            "page": 35,
+            "category": "number series"
+          }
+        },
+        {
+          "id": "sch-oc-t6-q17",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "This week John worked on Tuesday, Wednesday and Friday from 4 pm until 7 pm at a delicatessen. How many hours did he work this week?",
+          "options": [
+            "15",
+            "10",
+            "12",
+            "9"
+          ],
+          "answer": 3,
+          "hint": "First find how long John works each day. Then find how many days he works.",
+          "steps": [
+            {
+              "explain": "Find the hours in one working day: from 4 pm to 7 pm.",
+              "work": "<p>4 pm \\(\\to\\) 5 pm \\(\\to\\) 6 pm \\(\\to\\) 7 pm is \\(3\\) hours.</p><p>(\\(7-4=3\\))</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 142 164\" width=\"28%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><circle cx=\"71.0\" cy=\"71.0\" r=\"61.0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"3\" /><line x1=\"71.0\" y1=\"18.0\" x2=\"71.0\" y2=\"10.0\" stroke=\"#334155\" stroke-width=\"2\" /><text x=\"71.0\" y=\"33.0\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >12</text><line x1=\"97.5\" y1=\"25.100653599424746\" x2=\"101.5\" y2=\"18.17245036914924\" stroke=\"#334155\" stroke-width=\"2\" /><text x=\"92.0\" y=\"38.626933041053576\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >1</text><line x1=\"116.89934640057524\" y1=\"44.49999999999999\" x2=\"123.82754963085075\" y2=\"40.49999999999999\" stroke=\"#334155\" stroke-width=\"2\" /><text x=\"107.37306695894642\" y=\"54.0\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >2</text><line x1=\"124.0\" y1=\"71.0\" x2=\"132.0\" y2=\"71.0\" stroke=\"#334155\" stroke-width=\"2\" /><text x=\"113.0\" y=\"75.0\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >3</text><line x1=\"116.89934640057525\" y1=\"97.49999999999999\" x2=\"123.82754963085077\" y2=\"101.49999999999999\" stroke=\"#334155\" stroke-width=\"2\" /><text x=\"107.37306695894642\" y=\"95.99999999999999\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >4</text><line x1=\"97.5\" y1=\"116.89934640057525\" x2=\"101.5\" y2=\"123.82754963085077\" stroke=\"#334155\" stroke-width=\"2\" /><text x=\"92.0\" y=\"111.37306695894642\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >5</text><line x1=\"71.0\" y1=\"124.0\" x2=\"71.00000000000001\" y2=\"132.0\" stroke=\"#334155\" stroke-width=\"2\" /><text x=\"71.0\" y=\"117.0\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >6</text><line x1=\"44.49999999999999\" y1=\"116.89934640057524\" x2=\"40.49999999999999\" y2=\"123.82754963085075\" stroke=\"#334155\" stroke-width=\"2\" /><text x=\"50.0\" y=\"111.37306695894642\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >7</text><line x1=\"25.100653599424767\" y1=\"97.50000000000003\" x2=\"18.17245036914926\" y2=\"101.50000000000003\" stroke=\"#334155\" stroke-width=\"2\" /><text x=\"34.62693304105359\" y=\"96.00000000000001\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >8</text><line x1=\"18.0\" y1=\"71.00000000000001\" x2=\"10.0\" y2=\"71.00000000000001\" stroke=\"#334155\" stroke-width=\"2\" /><text x=\"29.0\" y=\"75.00000000000001\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >9</text><line x1=\"25.100653599424753\" y1=\"44.5\" x2=\"18.172450369149246\" y2=\"40.5\" stroke=\"#334155\" stroke-width=\"2\" /><text x=\"34.626933041053576\" y=\"54.0\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >10</text><line x1=\"44.49999999999997\" y1=\"25.100653599424767\" x2=\"40.49999999999997\" y2=\"18.17245036914926\" stroke=\"#334155\" stroke-width=\"2\" /><text x=\"49.999999999999986\" y=\"38.62693304105359\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >11</text><line x1=\"71.0\" y1=\"71.0\" x2=\"97.41377481542538\" y2=\"86.25\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><line x1=\"71.0\" y1=\"71.0\" x2=\"71.0\" y2=\"23.42\" stroke=\"#4338ca\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><circle cx=\"71.0\" cy=\"71.0\" r=\"4\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><text x=\"71.0\" y=\"154\" font-size=\"12.5\" font-weight=\"700\" fill=\"#059669\" text-anchor=\"middle\" >4 pm</text></svg>"
+              }
+            },
+            {
+              "explain": "Find how many days he works: Tuesday, Wednesday and Friday.",
+              "work": "<p>\\(3\\) days</p>"
+            },
+            {
+              "explain": "Multiply the hours each day by the days.",
+              "work": "<p>\\(3\\text{ hours}\\times3\\text{ days}=9\\text{ hours}\\)</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 94\" width=\"80%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"10\" y=\"10\" width=\"58\" height=\"52\" rx=\"8\" fill=\"#f1f5f9\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"39\" y=\"28\" font-size=\"11.5\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >Mon</text><rect x=\"76\" y=\"10\" width=\"58\" height=\"52\" rx=\"8\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"105\" y=\"28\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >Tue</text><text x=\"105\" y=\"52\" font-size=\"16\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"middle\" >3 h</text><rect x=\"142\" y=\"10\" width=\"58\" height=\"52\" rx=\"8\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"171\" y=\"28\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >Wed</text><text x=\"171\" y=\"52\" font-size=\"16\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"middle\" >3 h</text><rect x=\"208\" y=\"10\" width=\"58\" height=\"52\" rx=\"8\" fill=\"#f1f5f9\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"237\" y=\"28\" font-size=\"11.5\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >Thu</text><rect x=\"274\" y=\"10\" width=\"58\" height=\"52\" rx=\"8\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"303\" y=\"28\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >Fri</text><text x=\"303\" y=\"52\" font-size=\"16\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"middle\" >3 h</text><text x=\"175\" y=\"84\" font-size=\"13\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"middle\" >3 + 3 + 3 = 9 hours</text></svg>"
+              }
+            },
+            {
+              "explain": "Check the other options: 15 would be five days (Mon–Fri) and 12 would be four days.",
+              "work": "<p>The answer is D.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Tuesday, Wednesday and Friday",
+              "note": "Count the days John worked: it is only three of the five days."
+            },
+            {
+              "text": "from 4 pm until 7 pm",
+              "note": "Find the hours in one day: 7 − 4."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 6",
+            "number": 17,
+            "page": 35,
+            "category": "arithmetic"
+          }
+        },
+        {
+          "id": "sch-oc-t6-q18",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Each day I drink a 375 ml can of soft drink in the summer. Which calculation shows how many LITRES I drink over 12 weeks?",
+          "options": [
+            "\\(375\\times1000\\div84\\)",
+            "\\(375\\times84\\div1000\\)",
+            "\\(375\\times12\\div1000\\)",
+            "\\(84\\times1000\\div375\\)"
+          ],
+          "answer": 1,
+          "hint": "Work in steps: how many days are in 12 weeks, then how many millilitres in total, then change millilitres into litres.",
+          "steps": [
+            {
+              "explain": "Find the number of days in 12 weeks.",
+              "work": "<p>1 week \\(=7\\) days, so 12 weeks \\(=12\\times7=84\\) days.</p>"
+            },
+            {
+              "explain": "Find the total number of millilitres. One can a day for 84 days.",
+              "work": "<p>\\(375\\text{ ml}\\times84\\) days</p>"
+            },
+            {
+              "explain": "Change millilitres into litres. There are 1000 ml in 1 litre, so divide by 1000.",
+              "work": "<p>\\(375\\times84\\div1000\\) litres</p><p>(\\(375\\times84=31\\,500\\) ml, and \\(31\\,500\\div1000=31.5\\) litres)</p>"
+            },
+            {
+              "explain": "Check the other options.",
+              "work": "<p>A multiplies by \\(1000\\) and divides by \\(84\\) (the wrong way round). C uses 12 (weeks) instead of 84 (days). D does not use the 375 ml correctly.</p>"
+            },
+            {
+              "explain": "The answer is B."
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "how many LITRES I drink over 12 weeks",
+              "note": "Weeks must be changed into days, and millilitres into litres."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 6",
+            "number": 18,
+            "page": 36,
+            "category": "calculation problems"
+          }
+        },
+        {
+          "id": "sch-oc-t6-q25",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Which shapes are arranged differently from the others?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 748 240\" width=\"90%\" height=\"auto\"><image href=\"/oc/t6-q25.jpg\" x=\"0\" y=\"0\" width=\"748\" height=\"240\"/></svg>"
+          },
+          "options": [
+            "I",
+            "II",
+            "III",
+            "IV"
+          ],
+          "answer": 0,
+          "hint": "Each figure has three shapes stacked on top of each other. Join the centres of the three shapes with lines. Do the lines go the same way in every figure?",
+          "steps": [
+            {
+              "explain": "Look at figure I. Mark the centre of each of the three shapes and join them from the back shape to the front shape.",
+              "work": "<p>The line always goes in the same direction: down and to the left, both times. The three shapes are on one straight diagonal.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 748 240\" width=\"90%\" height=\"auto\"><image href=\"/oc/t6-q25-base.jpg\" x=\"0\" y=\"0\" width=\"748\" height=\"240\"/><circle cx=\"137.5\" cy=\"64.8\" r=\"7\" fill=\"#4338ca\" stroke=\"#fff\" stroke-width=\"2\"/><circle cx=\"125.0\" cy=\"77.3\" r=\"7\" fill=\"#4338ca\" stroke=\"#fff\" stroke-width=\"2\"/><circle cx=\"102.5\" cy=\"89.8\" r=\"7\" fill=\"#4338ca\" stroke=\"#fff\" stroke-width=\"2\"/><line x1=\"137.5\" y1=\"64.8\" x2=\"125.0\" y2=\"77.3\" stroke=\"#4338ca\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"125.0\" y1=\"77.3\" x2=\"102.5\" y2=\"89.8\" stroke=\"#4338ca\" stroke-width=\"4\" stroke-linecap=\"round\"/></svg>"
+              }
+            },
+            {
+              "explain": "Do the same for figures II, III and IV.",
+              "work": "<p>In II, III and IV the line first goes one way and then turns back the other way. The three shapes are placed in a zig-zag, not along a straight line.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 748 240\" width=\"90%\" height=\"auto\"><image href=\"/oc/t6-q25-base.jpg\" x=\"0\" y=\"0\" width=\"748\" height=\"240\"/><circle cx=\"284.2\" cy=\"59.0\" r=\"7\" fill=\"#e11d48\" stroke=\"#fff\" stroke-width=\"2\"/><circle cx=\"301.2\" cy=\"76.5\" r=\"7\" fill=\"#e11d48\" stroke=\"#fff\" stroke-width=\"2\"/><circle cx=\"263.8\" cy=\"89.4\" r=\"7\" fill=\"#e11d48\" stroke=\"#fff\" stroke-width=\"2\"/><line x1=\"284.2\" y1=\"59.0\" x2=\"301.2\" y2=\"76.5\" stroke=\"#e11d48\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"301.2\" y1=\"76.5\" x2=\"263.8\" y2=\"89.4\" stroke=\"#e11d48\" stroke-width=\"4\" stroke-linecap=\"round\"/><circle cx=\"459.2\" cy=\"71.9\" r=\"7\" fill=\"#e11d48\" stroke=\"#fff\" stroke-width=\"2\"/><circle cx=\"435.4\" cy=\"91.5\" r=\"7\" fill=\"#e11d48\" stroke=\"#fff\" stroke-width=\"2\"/><circle cx=\"465.4\" cy=\"114.8\" r=\"7\" fill=\"#e11d48\" stroke=\"#fff\" stroke-width=\"2\"/><line x1=\"459.2\" y1=\"71.9\" x2=\"435.4\" y2=\"91.5\" stroke=\"#e11d48\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"435.4\" y1=\"91.5\" x2=\"465.4\" y2=\"114.8\" stroke=\"#e11d48\" stroke-width=\"4\" stroke-linecap=\"round\"/><circle cx=\"615.0\" cy=\"58.5\" r=\"7\" fill=\"#e11d48\" stroke=\"#fff\" stroke-width=\"2\"/><circle cx=\"642.1\" cy=\"76.5\" r=\"7\" fill=\"#e11d48\" stroke=\"#fff\" stroke-width=\"2\"/><circle cx=\"594.6\" cy=\"113.1\" r=\"7\" fill=\"#e11d48\" stroke=\"#fff\" stroke-width=\"2\"/><line x1=\"615.0\" y1=\"58.5\" x2=\"642.1\" y2=\"76.5\" stroke=\"#e11d48\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"642.1\" y1=\"76.5\" x2=\"594.6\" y2=\"113.1\" stroke=\"#e11d48\" stroke-width=\"4\" stroke-linecap=\"round\"/></svg>"
+              }
+            },
+            {
+              "explain": "Figure I is the only one where the shapes line up along a single diagonal.",
+              "work": "<p>The answer is A.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "arranged differently",
+              "note": "Find a way to compare the figures: join the centres of the three shapes and see whether the line turns."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 6",
+            "number": 25,
+            "page": 38,
+            "category": "figure sequences"
+          }
+        },
+        {
+          "id": "sch-oc-t6-q26",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "How many square tiles, that are 10 cm long, can you fit into a space that is 200 cm by 200 cm?",
+          "options": [
+            "400",
+            "200",
+            "120",
+            "100"
+          ],
+          "answer": 0,
+          "hint": "First find how many tiles fit along one side of the space. Then think about how many rows of tiles you need.",
+          "steps": [
+            {
+              "explain": "Find how many 10 cm tiles fit along one side.",
+              "work": "<p>\\(200\\div10=20\\) tiles</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 276\" width=\"60%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"30\" y=\"8\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"42\" y=\"8\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"54\" y=\"8\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"66\" y=\"8\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"78\" y=\"8\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"90\" y=\"8\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"102\" y=\"8\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"114\" y=\"8\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"126\" y=\"8\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"138\" y=\"8\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"150\" y=\"8\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"162\" y=\"8\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"174\" y=\"8\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"186\" y=\"8\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"198\" y=\"8\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"210\" y=\"8\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"222\" y=\"8\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"234\" y=\"8\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"246\" y=\"8\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"258\" y=\"8\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"30\" y=\"20\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"42\" y=\"20\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"54\" y=\"20\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"66\" y=\"20\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"78\" y=\"20\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"90\" y=\"20\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"102\" y=\"20\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"114\" y=\"20\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"126\" y=\"20\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"138\" y=\"20\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"150\" y=\"20\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"162\" y=\"20\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"174\" y=\"20\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"186\" y=\"20\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"198\" y=\"20\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"210\" y=\"20\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"222\" y=\"20\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"234\" y=\"20\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"246\" y=\"20\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"258\" y=\"20\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"30\" y=\"32\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"42\" y=\"32\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"54\" y=\"32\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"66\" y=\"32\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"78\" y=\"32\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"90\" y=\"32\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"102\" y=\"32\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"114\" y=\"32\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"126\" y=\"32\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"138\" y=\"32\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"150\" y=\"32\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"162\" y=\"32\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"174\" y=\"32\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"186\" y=\"32\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"198\" y=\"32\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"210\" y=\"32\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"222\" y=\"32\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"234\" y=\"32\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"246\" y=\"32\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"258\" y=\"32\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"30\" y=\"44\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"42\" y=\"44\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"54\" y=\"44\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"66\" y=\"44\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"78\" y=\"44\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"90\" y=\"44\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"102\" y=\"44\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"114\" y=\"44\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"126\" y=\"44\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"138\" y=\"44\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"150\" y=\"44\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"162\" y=\"44\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"174\" y=\"44\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"186\" y=\"44\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"198\" y=\"44\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"210\" y=\"44\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"222\" y=\"44\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"234\" y=\"44\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"246\" y=\"44\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"258\" y=\"44\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"30\" y=\"56\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"42\" y=\"56\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"54\" y=\"56\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"66\" y=\"56\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"78\" y=\"56\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"90\" y=\"56\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"102\" y=\"56\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"114\" y=\"56\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"126\" y=\"56\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"138\" y=\"56\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"150\" y=\"56\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"162\" y=\"56\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"174\" y=\"56\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"186\" y=\"56\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"198\" y=\"56\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"210\" y=\"56\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"222\" y=\"56\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"234\" y=\"56\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"246\" y=\"56\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"258\" y=\"56\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"30\" y=\"68\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"42\" y=\"68\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"54\" y=\"68\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"66\" y=\"68\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"78\" y=\"68\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"90\" y=\"68\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"102\" y=\"68\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"114\" y=\"68\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"126\" y=\"68\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"138\" y=\"68\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"150\" y=\"68\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"162\" y=\"68\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"174\" y=\"68\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"186\" y=\"68\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"198\" y=\"68\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"210\" y=\"68\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"222\" y=\"68\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"234\" y=\"68\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"246\" y=\"68\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"258\" y=\"68\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"30\" y=\"80\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"42\" y=\"80\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"54\" y=\"80\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"66\" y=\"80\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"78\" y=\"80\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"90\" y=\"80\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"102\" y=\"80\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"114\" y=\"80\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"126\" y=\"80\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"138\" y=\"80\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"150\" y=\"80\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"162\" y=\"80\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"174\" y=\"80\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"186\" y=\"80\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"198\" y=\"80\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"210\" y=\"80\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"222\" y=\"80\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"234\" y=\"80\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"246\" y=\"80\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"258\" y=\"80\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"30\" y=\"92\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"42\" y=\"92\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"54\" y=\"92\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"66\" y=\"92\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"78\" y=\"92\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"90\" y=\"92\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"102\" y=\"92\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"114\" y=\"92\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"126\" y=\"92\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"138\" y=\"92\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"150\" y=\"92\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"162\" y=\"92\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"174\" y=\"92\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"186\" y=\"92\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"198\" y=\"92\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"210\" y=\"92\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"222\" y=\"92\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"234\" y=\"92\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"246\" y=\"92\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"258\" y=\"92\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"30\" y=\"104\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"42\" y=\"104\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"54\" y=\"104\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"66\" y=\"104\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"78\" y=\"104\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"90\" y=\"104\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"102\" y=\"104\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"114\" y=\"104\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"126\" y=\"104\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"138\" y=\"104\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"150\" y=\"104\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"162\" y=\"104\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"174\" y=\"104\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"186\" y=\"104\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"198\" y=\"104\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"210\" y=\"104\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"222\" y=\"104\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"234\" y=\"104\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"246\" y=\"104\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"258\" y=\"104\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"30\" y=\"116\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"42\" y=\"116\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"54\" y=\"116\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"66\" y=\"116\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"78\" y=\"116\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"90\" y=\"116\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"102\" y=\"116\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"114\" y=\"116\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"126\" y=\"116\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"138\" y=\"116\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"150\" y=\"116\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"162\" y=\"116\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"174\" y=\"116\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"186\" y=\"116\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"198\" y=\"116\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"210\" y=\"116\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"222\" y=\"116\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"234\" y=\"116\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"246\" y=\"116\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"258\" y=\"116\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"30\" y=\"128\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"42\" y=\"128\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"54\" y=\"128\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"66\" y=\"128\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"78\" y=\"128\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"90\" y=\"128\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"102\" y=\"128\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"114\" y=\"128\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"126\" y=\"128\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"138\" y=\"128\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"150\" y=\"128\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"162\" y=\"128\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"174\" y=\"128\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"186\" y=\"128\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"198\" y=\"128\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"210\" y=\"128\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"222\" y=\"128\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"234\" y=\"128\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"246\" y=\"128\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"258\" y=\"128\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"30\" y=\"140\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"42\" y=\"140\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"54\" y=\"140\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"66\" y=\"140\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"78\" y=\"140\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"90\" y=\"140\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"102\" y=\"140\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"114\" y=\"140\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"126\" y=\"140\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"138\" y=\"140\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"150\" y=\"140\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"162\" y=\"140\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"174\" y=\"140\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"186\" y=\"140\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"198\" y=\"140\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"210\" y=\"140\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"222\" y=\"140\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"234\" y=\"140\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"246\" y=\"140\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"258\" y=\"140\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"30\" y=\"152\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"42\" y=\"152\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"54\" y=\"152\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"66\" y=\"152\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"78\" y=\"152\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"90\" y=\"152\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"102\" y=\"152\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"114\" y=\"152\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"126\" y=\"152\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"138\" y=\"152\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"150\" y=\"152\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"162\" y=\"152\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"174\" y=\"152\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"186\" y=\"152\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"198\" y=\"152\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"210\" y=\"152\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"222\" y=\"152\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"234\" y=\"152\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"246\" y=\"152\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"258\" y=\"152\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"30\" y=\"164\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"42\" y=\"164\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"54\" y=\"164\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"66\" y=\"164\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"78\" y=\"164\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"90\" y=\"164\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"102\" y=\"164\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"114\" y=\"164\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"126\" y=\"164\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"138\" y=\"164\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"150\" y=\"164\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"162\" y=\"164\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"174\" y=\"164\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"186\" y=\"164\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"198\" y=\"164\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"210\" y=\"164\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"222\" y=\"164\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"234\" y=\"164\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"246\" y=\"164\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"258\" y=\"164\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"30\" y=\"176\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"42\" y=\"176\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"54\" y=\"176\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"66\" y=\"176\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"78\" y=\"176\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"90\" y=\"176\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"102\" y=\"176\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"114\" y=\"176\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"126\" y=\"176\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"138\" y=\"176\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"150\" y=\"176\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"162\" y=\"176\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"174\" y=\"176\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"186\" y=\"176\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"198\" y=\"176\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"210\" y=\"176\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"222\" y=\"176\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"234\" y=\"176\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"246\" y=\"176\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"258\" y=\"176\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"30\" y=\"188\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"42\" y=\"188\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"54\" y=\"188\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"66\" y=\"188\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"78\" y=\"188\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"90\" y=\"188\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"102\" y=\"188\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"114\" y=\"188\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"126\" y=\"188\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"138\" y=\"188\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"150\" y=\"188\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"162\" y=\"188\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"174\" y=\"188\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"186\" y=\"188\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"198\" y=\"188\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"210\" y=\"188\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"222\" y=\"188\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"234\" y=\"188\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"246\" y=\"188\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"258\" y=\"188\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"30\" y=\"200\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"42\" y=\"200\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"54\" y=\"200\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"66\" y=\"200\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"78\" y=\"200\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"90\" y=\"200\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"102\" y=\"200\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"114\" y=\"200\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"126\" y=\"200\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"138\" y=\"200\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"150\" y=\"200\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"162\" y=\"200\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"174\" y=\"200\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"186\" y=\"200\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"198\" y=\"200\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"210\" y=\"200\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"222\" y=\"200\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"234\" y=\"200\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"246\" y=\"200\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"258\" y=\"200\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"30\" y=\"212\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"42\" y=\"212\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"54\" y=\"212\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"66\" y=\"212\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"78\" y=\"212\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"90\" y=\"212\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"102\" y=\"212\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"114\" y=\"212\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"126\" y=\"212\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"138\" y=\"212\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"150\" y=\"212\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"162\" y=\"212\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"174\" y=\"212\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"186\" y=\"212\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"198\" y=\"212\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"210\" y=\"212\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"222\" y=\"212\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"234\" y=\"212\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"246\" y=\"212\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"258\" y=\"212\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"30\" y=\"224\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"42\" y=\"224\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"54\" y=\"224\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"66\" y=\"224\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"78\" y=\"224\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"90\" y=\"224\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"102\" y=\"224\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"114\" y=\"224\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"126\" y=\"224\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"138\" y=\"224\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"150\" y=\"224\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"162\" y=\"224\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"174\" y=\"224\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"186\" y=\"224\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"198\" y=\"224\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"210\" y=\"224\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"222\" y=\"224\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"234\" y=\"224\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"246\" y=\"224\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"258\" y=\"224\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"30\" y=\"236\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"42\" y=\"236\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"54\" y=\"236\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"66\" y=\"236\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"78\" y=\"236\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"90\" y=\"236\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"102\" y=\"236\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"114\" y=\"236\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"126\" y=\"236\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"138\" y=\"236\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"150\" y=\"236\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"162\" y=\"236\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"174\" y=\"236\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"186\" y=\"236\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"198\" y=\"236\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"210\" y=\"236\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"222\" y=\"236\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"234\" y=\"236\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"246\" y=\"236\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><rect x=\"258\" y=\"236\" width=\"11\" height=\"11\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#818cf8\" stroke-width=\"0.8\" /><text x=\"150.0\" y=\"264\" font-size=\"12\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >20 tiles across = 200 cm</text><text x=\"14\" y=\"128.0\" font-size=\"12\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" transform=\"rotate(-90 14 128.0)\" font-family=\"system-ui,Arial,sans-serif\">20 tiles = 200 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "The space is 200 cm by 200 cm, so there are 20 tiles in each row and 20 rows.",
+              "work": "<p>\\(20\\text{ tiles}\\times20\\text{ rows}\\)</p>"
+            },
+            {
+              "explain": "Multiply to find the total.",
+              "work": "<p>\\(20\\times20=400\\) tiles</p>"
+            },
+            {
+              "explain": "Check by areas: the space is \\(200\times200=40\\,000\\) cm², and each tile is \\(10\times10=100\\) cm².",
+              "work": "<p>\\(40\\,000\\div100=400\\) ✓  The answer is A.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "square tiles",
+              "note": "Fit tiles along one side first, then multiply to cover the whole square."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 6",
+            "number": 26,
+            "page": 38,
+            "category": "measurement"
+          }
+        },
+        {
+          "id": "sch-oc-t6-q27",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An object falls to the ground at around 9 metres per second. How long would it take to fall from a plane that was 9 000 metres in the air?",
+          "options": [
+            "26–27 minutes",
+            "16–17 minutes",
+            "9–10 minutes",
+            "6–7 minutes"
+          ],
+          "answer": 1,
+          "hint": "First find how many seconds it takes. Then change seconds into minutes by dividing by 60.",
+          "steps": [
+            {
+              "explain": "The object falls 9 metres every second. Find how many seconds it takes to fall 9 000 metres.",
+              "work": "<p>\\(9\\,000\\div9=1\\,000\\) seconds</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 144\" width=\"80%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><line x1=\"30\" y1=\"20\" x2=\"30\" y2=\"120\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"30\" y=\"14\" font-size=\"11\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >plane</text><text x=\"30\" y=\"136\" font-size=\"11\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >ground</text><line x1=\"26\" y1=\"40\" x2=\"34\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><line x1=\"26\" y1=\"60\" x2=\"34\" y2=\"60\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><line x1=\"26\" y1=\"80\" x2=\"34\" y2=\"80\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><line x1=\"26\" y1=\"100\" x2=\"34\" y2=\"100\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><line x1=\"26\" y1=\"120\" x2=\"34\" y2=\"120\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"150\" y=\"40\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >9 000 m to fall</text><text x=\"150\" y=\"62\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >9 m every second</text><text x=\"150\" y=\"86\" font-size=\"13\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"middle\" >9 000 ÷ 9 = 1 000 seconds</text><text x=\"150\" y=\"108\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >1 000 ÷ 60 = 16 r 40 → between</text><text x=\"150\" y=\"124\" font-size=\"13\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"middle\" >16 and 17 minutes</text></svg>"
+              }
+            },
+            {
+              "explain": "Change seconds into minutes. There are 60 seconds in one minute.",
+              "work": "<p>\\(1\\,000\\div60=16\\) remainder \\(40\\)</p>"
+            },
+            {
+              "explain": "16 full minutes use up 960 seconds, and there are 40 more seconds.",
+              "work": "<p>\\(16\\times60=960\\) &emsp; \\(1\\,000-960=40\\)</p><p>So the time is 16 minutes and 40 seconds, which is between 16 and 17 minutes.</p>"
+            },
+            {
+              "explain": "Check the other options: 26–27 minutes would be 1 560–1 620 seconds, and 9–10 and 6–7 minutes are far too short.",
+              "work": "<p>The answer is B.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "9 metres per second",
+              "note": "This tells you how far it falls in one second."
+            },
+            {
+              "text": "How long",
+              "note": "The answer is in minutes, but you will first get seconds."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 6",
+            "number": 27,
+            "page": 38,
+            "category": "measurement"
+          }
+        },
+        {
+          "id": "sch-oc-t6-q28",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which number comes next in this series?\n\n243  81  27  ?",
+          "options": [
+            "13",
+            "11",
+            "9",
+            "7"
+          ],
+          "answer": 2,
+          "hint": "The numbers are getting smaller quickly. Check whether each number is a third of the one before.",
+          "steps": [
+            {
+              "explain": "Look at neighbouring numbers. The gaps (162, 54) are not equal, so try dividing.",
+              "work": "<p>\\(243\\div3=81\\) &emsp; \\(81\\div3=27\\)</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 286 96\" width=\"95%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><defs><marker id=\"ah\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#6366f1\"/></marker></defs><rect x=\"8\" y=\"46\" width=\"48\" height=\"48\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"32.0\" y=\"76.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >243</text><rect x=\"82\" y=\"46\" width=\"48\" height=\"48\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"106.0\" y=\"76.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >81</text><rect x=\"156\" y=\"46\" width=\"48\" height=\"48\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"180.0\" y=\"76.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >27</text><rect x=\"230\" y=\"46\" width=\"48\" height=\"48\" rx=\"8\" fill=\"#eef2ff\" stroke=\"#6366f1\" stroke-width=\"2\" /><text x=\"254.0\" y=\"76.0\" font-size=\"18\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >?</text><path d=\"M32.0 44 Q69.0 8 106.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"69.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >÷3</text><path d=\"M106.0 44 Q143.0 8 180.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"143.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >÷3</text></svg>"
+              }
+            },
+            {
+              "explain": "Each number is one third of the number before it.",
+              "work": "<p>\\(27\\div3=9\\)</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 286 112\" width=\"95%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><defs><marker id=\"ah\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#6366f1\"/></marker></defs><rect x=\"8\" y=\"46\" width=\"48\" height=\"48\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"32.0\" y=\"76.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >243</text><rect x=\"82\" y=\"46\" width=\"48\" height=\"48\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"106.0\" y=\"76.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >81</text><rect x=\"156\" y=\"46\" width=\"48\" height=\"48\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"180.0\" y=\"76.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >27</text><rect x=\"230\" y=\"46\" width=\"48\" height=\"48\" rx=\"8\" fill=\"#eef2ff\" stroke=\"#6366f1\" stroke-width=\"2\" /><text x=\"254.0\" y=\"76.0\" font-size=\"18\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >?</text><path d=\"M32.0 44 Q69.0 8 106.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"69.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >÷3</text><path d=\"M106.0 44 Q143.0 8 180.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"143.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >÷3</text><path d=\"M180.0 44 Q217.0 8 254.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"217.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >÷3</text><text x=\"143.0\" y=\"108\" font-size=\"12\" font-weight=\"700\" fill=\"#059669\" text-anchor=\"middle\" >27 ÷ 3 = 9</text></svg>"
+              }
+            },
+            {
+              "explain": "Check the other options: 13, 11 and 7 are not a third of 27.",
+              "work": "<p>The answer is C.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "next in this series",
+              "note": "When the numbers drop quickly, try dividing."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 6",
+            "number": 28,
+            "page": 38,
             "category": "number series"
           }
         }
