@@ -99,30 +99,30 @@
             "svg": "<svg width=\"280\" height=\"280\" viewBox=\"0 0 280 280\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<filter id=\"shadow\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"120%\">\n<feDropShadow dx=\"2\" dy=\"2\" stdDeviation=\"3\" flood-opacity=\"0.15\" />\n</filter>\n</defs>\n<rect width=\"280\" height=\"280\" fill=\"#fdfdfd\" rx=\"10\" />\n<polygon points=\"60,60 189.65964343598054,60 189.65964343598054,220\" fill=\"#e3f2fd\" stroke=\"#1976d2\" stroke-width=\"3\" stroke-linejoin=\"round\" filter=\"url(#shadow)\" />\n<path d=\"M 174.65964343598054 60 L 174.65964343598054 75 L 189.65964343598054 75\" fill=\"none\" stroke=\"#1976d2\" stroke-width=\"2\" />\n<text x=\"91.5931625410769\" y=\"80.06227342246501\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#d32f2f\" text-anchor=\"middle\">51°</text>\n<text x=\"124.82982171799027\" y=\"40\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">5 m</text>\n<text x=\"214.65964343598054\" y=\"145\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">c m</text>\n</svg>"
           },
           "options": [
-            "\\(-3.15\\)",
-            "\\(2.15\\)",
+            "\\(4.05\\)",
             "\\(3.15\\)",
-            "\\(4.15\\)"
+            "\\(6.17\\)",
+            "\\(3.89\\)"
           ],
           "answer": 2,
           "hint": "Use SOH CAH TOA to set up an equation.",
-          "solution": "The correct answer is \\(3.15\\).",
+          "solution": "The correct answer is \\(6.17\\).",
           "steps": [
             {
-              "explain": "Identify the given information from the right-angled triangle. We are given an angle (\\(51^\\circ\\)) and the Adjacent side (\\(5\\)). We need to find the Opposite side (\\(c\\)).",
+              "explain": "Identify the given information from the right-angled triangle. We are given an angle (\\(51^\\circ\\)) and the Adjacent side (\\(5\\text{ m}\\)). We need to find the Opposite side (\\(c\\)).",
               "work": "\\(\\text{Angle} = 51^\\circ\\\\ \\text{Adjacent} = 5\\\\ \\text{Opposite} = c\\)"
             },
             {
               "explain": "Choose the correct trigonometric ratio. Since we have the Adjacent and Opposite sides, we use Tangent (TOA).",
-              "work": "\\(\\\\tan(\\\\theta) = \\text{Ratio}\\\\ \\\\tan(51^\\circ) = \\\\frac{c}{5}\\)"
+              "work": "\\(\\tan(\\theta) = \\frac{\\text{Opposite}}{\\text{Adjacent}}\\\\ \\tan(51^\\circ) = \\frac{c}{5}\\)"
             },
             {
-              "explain": "Rearrange the equation to make \\(c\\) the subject.",
-              "work": "\\(c = 5 \\\\times \\\\tan(51^\\circ)\\)"
+              "explain": "Rearrange the equation to make \\(c\\) the subject by multiplying both sides by \\(5\\).",
+              "work": "\\(c = 5 \\times \\tan(51^\\circ)\\)"
             },
             {
-              "explain": "Evaluate the expression and round to two decimal places.",
-              "work": "\\(c \\\\approx 3.15\\)"
+              "explain": "Evaluate the expression and round to two decimal places: \\(5 \\times \\tan(51^\\circ) = 5 \\times 1.234897... \\approx 6.17\\).",
+              "work": "\\(c \\approx 6.17\\)"
             }
           ],
           "timeLimit": 60,

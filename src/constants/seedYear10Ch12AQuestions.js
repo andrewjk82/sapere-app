@@ -215,34 +215,34 @@ export const Y10_CH12A_QUESTIONS = [
     "timeLimit": 60,
     "question": "Calculate the value of the pronumeral, correct to two decimal places.",
     "opts": [
-      "\\(-3.15\\)",
-      "\\(2.15\\)",
+      "\\(4.05\\)",
       "\\(3.15\\)",
-      "\\(4.15\\)"
+      "\\(6.17\\)",
+      "\\(3.89\\)"
     ],
     "a": 2,
     "answer": "2",
     "hint": "Use SOH CAH TOA to set up an equation.",
-    "solution": "The correct answer is \\(3.15\\).",
+    "solution": "The correct answer is \\(6.17\\).",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know an angle (\\(51^{\\circ}\\)) and a side length (\\(5\\)), and we need to find the unknown side.",
-        "workingOut": "\\(\\theta = 51^\\circ\\)",
+        "explanation": "Identify the given information: from the right-angled triangle, relative to the \\(51^{\\circ}\\) angle, the adjacent side is \\(5\\text{ m}\\) and the opposite side is \\(c\\text{ m}\\).",
+        "workingOut": "\\(\\text{Angle } \\theta = 51^\\circ,\\quad \\text{Adjacent} = 5,\\quad \\text{Opposite} = c\\)",
         "graphData": null
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the sides relative to the angle, we use Cosine. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
-        "workingOut": "\\(\\cos(\\theta) = \\frac{\\mathrm{Adjacent}}{\\mathrm{Hypotenuse}}\\)",
+        "explanation": "Choose the correct trigonometric ratio. Since we relate the Opposite and Adjacent sides, use the Tangent ratio (TOA).",
+        "workingOut": "\\(\\tan(\\theta) = \\frac{\\text{Opposite}}{\\text{Adjacent}} \\implies \\tan(51^\\circ) = \\frac{c}{5}\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the numerator. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
-        "workingOut": "\\(\\cos(51^\\circ) = \\frac{x}{5}\\)",
+        "explanation": "Rearrange the equation to solve for \\(c\\) by multiplying both sides by \\(5\\).",
+        "workingOut": "\\(c = 5 \\times \\tan(51^\\circ)\\)",
         "graphData": null
       },
       {
-        "explanation": "Rearrange the equation to isolate \\(x\\) by multiplying both sides by the denominator. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
-        "workingOut": "\\(x = 5 \\times \\cos(51^\\circ)\\)",
+        "explanation": "Evaluate using a calculator and round to two decimal places: \\(5 \\times \\tan(51^\\circ) = 5 \\times 1.234897... \\approx 6.1745 \\approx 6.17\\).",
+        "workingOut": "\\(c \\approx 6.17\\)",
         "graphData": null
       }
     ],
