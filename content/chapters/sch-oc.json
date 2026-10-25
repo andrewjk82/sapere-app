@@ -7364,6 +7364,899 @@
             "page": 48,
             "category": "word order"
           }
+        },
+        {
+          "id": "sch-oc-t9-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "FOUR is to LION as TWO is to ?",
+          "options": [
+            "WALLABY",
+            "HUMAN",
+            "DOG",
+            "FISH"
+          ],
+          "answer": 1,
+          "hint": "FOUR is a number. A lion has four feet. Which of these animals walks on two feet?",
+          "steps": [
+            {
+              "explain": "Find the link in the first pair.",
+              "work": "<p>A LION is a four-footed animal (a quadruped), and FOUR is its number of feet. (number of feet → animal)</p>"
+            },
+            {
+              "explain": "Which of the options has TWO feet?",
+              "work": "<p>A HUMAN walks on two feet (a biped).</p>"
+            },
+            {
+              "explain": "Check the other options.",
+              "work": "<p>A wallaby hops on its two back feet, but it has four feet. A dog has four legs. A fish has no feet.</p>"
+            },
+            {
+              "explain": "FOUR : LION matches TWO : HUMAN.",
+              "work": "<p>The answer is B.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "FOUR is to LION",
+              "note": "FOUR is a number, so ask what number of feet a lion has."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 9",
+            "number": 1,
+            "page": 49,
+            "category": "analogies"
+          }
+        },
+        {
+          "id": "sch-oc-t9-q4",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Here is a sentence where the letters are coded in a special way.\n\nThere were many more empty seats when the plane took off.\n12345  6789  0123  4567  89012  34567  8901  234  56789  0123  456\n\nA new phrase is made from this and written in code.\n\nWhich phrase might have the code 352–06523–11–6547?",
+          "options": [
+            "TEN TAPES AT HOME",
+            "ONE MORE TO FLEE",
+            "THE PLACE IS HERE",
+            "SPY PLANE AT ROME"
+          ],
+          "answer": 3,
+          "hint": "Write the numbers under the letters of the sentence. Then list which letters each digit can stand for. Check the phrase one letter at a time.",
+          "steps": [
+            {
+              "explain": "Write the digits under the letters. Every letter of the sentence gets a digit, counting 0 to 9 over and over.",
+              "work": "<p>There 1-5 (T1 h2 e3 r4 e5), were 6-9 0 (w6 e7 r8 e9), many 0-3 (m0 a1 n2 y3), more 4-7 (m4 o5 r6 e7), empty 8 9 0 1 2 (e8 m9 p0 t1 y2), seats 3-7 (s3 e4 a5 t6 s7), when 8-1 (w8 h9 e0 n1), the 2 3 4 (t2 h3 e4), plane 5-9 (p5 l6 a7 n8 e9), took 0 1 2 3 (t0 o1 o2 k3), off 4 5 6 (o4 f5 f6).</p>"
+            },
+            {
+              "explain": "List the letters each digit can stand for.",
+              "work": "<p>0 → m, p, e, t     1 → t, a, n, o     2 → y, t, n, o, h     3 → y, s, k, h, e</p><p>4 → r, e, o, m     5 → e, p, a, o, f     6 → w, r, t, f, l     7 → e, a, s</p><p>8 → e, w, r, n     9 → e, m, h</p>"
+            },
+            {
+              "explain": "Decode the first word: 3 5 2 has the letters (3: y, s, k, h, e) (5: e, p, a, o, f) (2: y, t, n, o, h).",
+              "work": "<p>SPY fits: S is a 3, P is a 5 and Y is a 2. ✓ (TEN: T is not a 3 ✗; ONE: O is not a 3 ✗; THE: T is not a 3 ✗)</p>"
+            },
+            {
+              "explain": "Check the rest of option D.",
+              "work": "<p>PLANE: 0 6 5 2 3: P(0) ✓ L(6) ✓ A(5) ✓ N(2) ✓ E(3) ✓. AT: 1 1: A(1) ✓ T(1) ✓. ROME: 6 5 4 7: R(6) ✓ O(5) ✓ M(4) ✓ E(7) ✓. All letters fit.</p>"
+            },
+            {
+              "explain": "Only SPY PLANE AT ROME can be made from the code.",
+              "work": "<p>The answer is D.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "352–06523–11–6547",
+              "note": "Check the first digit of each word first: the options whose first letter does not fit can be ruled out at once."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 9",
+            "number": 4,
+            "page": 49,
+            "category": "codes"
+          }
+        },
+        {
+          "id": "sch-oc-t9-q5to9",
+          "type": "multipart",
+          "stem": "Questions 5 to 9 refer to the following passage.\n\nAUTUMN LEAVES\n\nThe changing colours of the leaves is an indication of the coming of autumn. Trees have a built-in process that brings about the autumn landscape of red, yellow, orange and brown colours. The process starts with changes in the length of the day and temperature.\n\nLeaves usually appear to be green because they do not absorb green light. They absorb red and blue and this is involved in photosynthesis. The green appearance comes from chlorophyll. Chlorophyll is the tree’s ‘food’; it is a pigment that transfers energy from the light to chemicals.\n\nOnce the autumn begins, the trees are sensitive to changes in the air temperature and the amount of daylight. This brings about a response to use the resources stored in chlorophyll. The chlorophyll is then broken down causing the green appearance of the leaves to disappear.\n\nWhen the chlorophyll is removed other molecules appear. These appear as the yellow and orange colours of the leaves in autumn. These molecules always exist in leaves but they do not appear until the chlorophyll is removed from the leaves.\n\nSource: Julie Novak, Daily Illini, 30 October 1998, ‘Colourful, falling leaves mark beginning of fall’",
+          "parts": [
+            {
+              "id": "sch-oc-t9-q5",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What is the main topic of this passage?",
+              "options": [
+                "reasons for leaves changing colours",
+                "the beginning of autumn",
+                "the autumn landscape",
+                "a scientific explanation of photosynthesis"
+              ],
+              "answer": 0,
+              "hint": "The main topic covers the whole passage. What is the passage explaining from beginning to end?",
+              "steps": [
+                {
+                  "explain": "Say what each paragraph is about.",
+                  "work": "<p>Paragraph 1: the leaves change colour in autumn.</p><p>Paragraph 2: why leaves look green (chlorophyll).</p><p>Paragraph 3: chlorophyll breaks down when autumn begins.</p><p>Paragraph 4: other colours then appear.</p>"
+                },
+                {
+                  "explain": "Find the idea that covers all four.",
+                  "work": "<p>All four paragraphs explain <mark>why the leaves change colour</mark>.</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>B and C are only the setting. D — photosynthesis is mentioned but it is only one detail.</p>"
+                },
+                {
+                  "explain": "The answer is A."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "main topic",
+                  "note": "The main topic must cover all four paragraphs."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 9",
+                "number": 5,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t9-q6",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "In which order does the process of changing colours occur?\n\nI. Temperature changes and chlorophyll disappears.\nII. When chlorophyll disappears then the orange colours present in the leaf appear.\nIII. Chlorophyll makes a leaf appear green.",
+              "options": [
+                "I then II then III",
+                "III then I then II",
+                "II then III then I",
+                "III then II then I"
+              ],
+              "answer": 1,
+              "hint": "Start with how a leaf looks before autumn. Then ask what changes, and last, what you can see after that.",
+              "steps": [
+                {
+                  "explain": "Which step happens first? Before autumn the leaves are green.",
+                  "work": "<p>III: <mark>Chlorophyll makes a leaf appear green</mark> comes first.</p>"
+                },
+                {
+                  "explain": "What changes next? Autumn begins, the temperature and daylight change and the chlorophyll breaks down.",
+                  "work": "<p>I: temperature changes and the chlorophyll disappears comes second.</p>"
+                },
+                {
+                  "explain": "What happens last? Once the chlorophyll has gone, the other colours that were always there can be seen.",
+                  "work": "<p>II: the orange colours appear comes last.</p>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 78\" width=\"85%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"8\" y=\"8\" width=\"88\" height=\"60\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\" /><text x=\"52\" y=\"30\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >III</text><text x=\"52\" y=\"56\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >green</text><rect x=\"104\" y=\"8\" width=\"88\" height=\"60\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\" /><text x=\"148\" y=\"30\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >I</text><text x=\"148\" y=\"56\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >chlorophyll goes</text><rect x=\"200\" y=\"8\" width=\"88\" height=\"60\" rx=\"0\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"244\" y=\"30\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >II</text><text x=\"244\" y=\"56\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >orange shows</text></svg>"
+                  }
+                },
+                {
+                  "explain": "The order is III, then I, then II.",
+                  "work": "<p>The answer is B.</p>"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "In which order",
+                  "note": "Think about what must happen before something else can happen."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 9",
+                "number": 6,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t9-q7",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "What can you conclude about leaf colours?",
+              "options": [
+                "Chlorophyll gives the leaves an orange colour",
+                "Leaf colours are a mixture of red, blue and green light",
+                "Leaf colours are sensitive to light and temperature",
+                "Photosynthesis gives the leaves an orange colour"
+              ],
+              "answer": 2,
+              "hint": "A conclusion is worked out from the facts. Which facts does the passage give about what makes the leaf colours change?",
+              "steps": [
+                {
+                  "explain": "Find the facts about what changes the colours.",
+                  "work": "<p>“The process starts with changes in the <mark>length of the day and temperature</mark>.” and “the trees are <mark>sensitive to changes in the air temperature and the amount of daylight</mark>.”</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>A — chlorophyll makes leaves green, not orange. B — leaves are green because they do NOT absorb green light, not because of a mixture. D — photosynthesis is how leaves use light, it does not colour them orange.</p>"
+                },
+                {
+                  "explain": "The conclusion that matches the facts is C.",
+                  "work": "<p>The answer is C.</p>"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "What can you conclude",
+                  "note": "A conclusion must follow from the facts in the passage."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 9",
+                "number": 7,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t9-q8",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What does the word ‘pigment’ mean in this passage?",
+              "options": [
+                "molecule",
+                "chemical",
+                "colour",
+                "genetic"
+              ],
+              "answer": 2,
+              "hint": "The passage talks about green leaves and other colours. What is chlorophyll, as the passage describes it?",
+              "steps": [
+                {
+                  "explain": "Read the sentence.",
+                  "work": "<p>“The green appearance comes from chlorophyll. Chlorophyll is… a <mark>pigment</mark> that transfers energy from the light to chemicals.”</p>"
+                },
+                {
+                  "explain": "What gives the leaf its green appearance?",
+                  "work": "<p>It is chlorophyll, and the passage calls it a pigment. A pigment is a colouring substance, something that gives colour.</p>"
+                },
+                {
+                  "explain": "The answer is C."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "pigment",
+                  "note": "The pigment is the thing that gives the leaf its green appearance."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 9",
+                "number": 8,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t9-q9",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What type of scientist would study the colour of leaves?",
+              "options": [
+                "physicist",
+                "botanist",
+                "physiologist",
+                "biologist"
+              ],
+              "answer": 1,
+              "hint": "Leaves are part of plants. Which scientist studies plants?",
+              "steps": [
+                {
+                  "explain": "Say what each scientist studies.",
+                  "work": "<p>physicist — matter and energy, such as light and forces.</p><p>physiologist — how the bodies of living things work.</p><p>biologist — all living things.</p><p>botanist — plants. ✓</p>"
+                },
+                {
+                  "explain": "Choose the scientist whose job is to study plants.",
+                  "work": "<p>A botanist is the best choice for the colour of leaves, because leaves are plant parts.</p>"
+                },
+                {
+                  "explain": "The answer is B."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "type of scientist",
+                  "note": "Think about what the passage is about: plants. Which scientist studies plants?"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 9",
+                "number": 9,
+                "category": "comprehension"
+              }
+            }
+          ],
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 9",
+            "number": "5-9",
+            "page": 49,
+            "category": "comprehension"
+          }
+        },
+        {
+          "id": "sch-oc-t9-q14",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Read this quotation.\n\n‘Phaedrus studied hard during this period, and learned extremely fast, and kept his mouth shut, but it would be wrong to give the least impression that he was any sort of good student. A good student seeks knowledge fairly and impartially.’\n\nSource: Robert M. Pirsig, Zen and the Art of Motorcycle Maintenance, London, Vintage, 1994, p.368\n\nWhich phrase has most nearly the same meaning as IMPARTIALLY in this quotation?",
+          "options": [
+            "without any bias",
+            "part only",
+            "as much as is possible",
+            "in order to teach others"
+          ],
+          "answer": 0,
+          "hint": "The word comes straight after “fairly and …”. Choose the phrase that goes with “fairly”.",
+          "steps": [
+            {
+              "explain": "Read the sentence with the word in it.",
+              "work": "<p>“A good student seeks knowledge <mark>fairly and impartially</mark>.”</p>"
+            },
+            {
+              "explain": "Impartially goes with fairly.",
+              "work": "<p>To act impartially means to treat everything fairly, without taking a side. The word contains “part” only as in “taking a part”.</p>"
+            },
+            {
+              "explain": "Check the other options.",
+              "work": "<p>part only plays on the letters “part” and is not the meaning. as much as is possible and in order to teach others do not go with “fairly”.</p>"
+            },
+            {
+              "explain": "Impartially means without any bias.",
+              "work": "<p>The answer is A.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "IMPARTIALLY",
+              "note": "It goes with “fairly”. Find the phrase that means treating things fairly."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 9",
+            "number": 14,
+            "page": 51,
+            "category": "word knowledge"
+          }
+        },
+        {
+          "id": "sch-oc-t9-q15",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Read the first two lines of this poem, ‘Araluen’, by Henry Kendall. Which word should fill the blank space ________ in the poem?\n\n‘Take this rose and very gently place it on the tender, deep\nMosses where our little ________ Araluen, lies asleep.’",
+          "options": [
+            "mother",
+            "darling",
+            "girlhood",
+            "daisy"
+          ],
+          "answer": 1,
+          "hint": "Araluen is the name of a child who lies asleep. Which word describes a little child you love?",
+          "steps": [
+            {
+              "explain": "Say who Araluen is.",
+              "work": "<p>The poem is a farewell to a little child named Araluen who “lies asleep” (has died). The rose is placed gently on her.</p>"
+            },
+            {
+              "explain": "Which word fits “our little ____ Araluen”?",
+              "work": "<p>We say “our little darling” about a child we love.</p>"
+            },
+            {
+              "explain": "Check the other options.",
+              "work": "<p>mother does not fit a little child. girlhood is a time of life, not a way to name someone. daisy is a flower, and it is not what the poet means here.</p>"
+            },
+            {
+              "explain": "The answer is B."
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which word should fill the blank space",
+              "note": "Think about how people speak about a little child they love."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 9",
+            "number": 15,
+            "page": 51,
+            "category": "word order"
+          }
+        },
+        {
+          "id": "sch-oc-t9-q16",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "ACCOUNTANT is to BOOK-KEEPING as ENGINEER is to ?",
+          "options": [
+            "RESEARCHING",
+            "WELDING",
+            "DESIGNING",
+            "SELLING"
+          ],
+          "answer": 2,
+          "hint": "Ask what the main work of an accountant is. Then ask what the main work of an engineer is.",
+          "steps": [
+            {
+              "explain": "Find the link in the first pair.",
+              "work": "<p>An ACCOUNTANT does BOOK-KEEPING: the main task of the job. (job → its main work)</p>"
+            },
+            {
+              "explain": "What is the main work of an ENGINEER?",
+              "work": "<p>Engineers plan and DESIGN things like bridges, roads and machines.</p>"
+            },
+            {
+              "explain": "Check the other options.",
+              "work": "<p>Researching is the work of a scientist. Welding is the work of a welder (a tradesperson). Selling is the work of a salesperson.</p>"
+            },
+            {
+              "explain": "ACCOUNTANT : BOOK-KEEPING matches ENGINEER : DESIGNING.",
+              "work": "<p>The answer is C.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "ACCOUNTANT is to BOOK-KEEPING",
+              "note": "The second word is the main work of the person in the first word."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 9",
+            "number": 16,
+            "page": 51,
+            "category": "analogies"
+          }
+        },
+        {
+          "id": "sch-oc-t9-q19",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Which is the next country in this series?\n\nJAPAN  KENYA  LIBYA  ?",
+          "options": [
+            "MALTA",
+            "MOSCOW",
+            "MONTREAL",
+            "MOROCCO"
+          ],
+          "answer": 3,
+          "hint": "Look at the first letters: J, K, L. Which letter comes next? Then check which options are real countries (a city is not a country).",
+          "steps": [
+            {
+              "explain": "Write the first letter of each country.",
+              "work": "<p>JAPAN → J, KENYA → K, LIBYA → L.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 184 52\" width=\"45%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"4\" y=\"4\" width=\"40\" height=\"40\" rx=\"5\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"24.0\" y=\"30.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >J</text><rect x=\"48\" y=\"4\" width=\"40\" height=\"40\" rx=\"5\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"68.0\" y=\"30.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >K</text><rect x=\"92\" y=\"4\" width=\"40\" height=\"40\" rx=\"5\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"112.0\" y=\"30.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >L</text><rect x=\"136\" y=\"4\" width=\"40\" height=\"40\" rx=\"5\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"156.0\" y=\"30.0\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >?</text></svg>"
+              }
+            },
+            {
+              "explain": "The first letters are J, K, L: three letters next to each other in the alphabet. The next is M, so the country must start with M.",
+              "work": "<p>The next country starts with M.</p>"
+            },
+            {
+              "explain": "Take away the options that are not countries.",
+              "work": "<p>MOSCOW is a city (the capital of Russia). MONTREAL is a city in Canada. That leaves MALTA and MOROCCO, which are both countries.</p>"
+            },
+            {
+              "explain": "Both MALTA and MOROCCO start with M. The answer key of this book chooses MOROCCO (option D).",
+              "work": "<p>Note: MALTA also fits the pattern, so this question is ambiguous. The answer key gives D, so choose MOROCCO.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "next country",
+              "note": "Find the next letter (M), then take away the options that are cities, not countries."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 9",
+            "number": 19,
+            "page": 52,
+            "category": "codes"
+          }
+        },
+        {
+          "id": "sch-oc-t9-q20to24",
+          "type": "multipart",
+          "stem": "Questions 20 to 24 refer to the following poem.\n\nThis is a different kind of poem. Many of the real words have been changed. Read it carefully then answer the questions. The small numbers at the beginning of each verse stand for the line number in the poem.\n\nGESTIMI\n\n¹Dolo nem crakeing\nTizling at crafays\nKrinkling their zoulo\nAnd donpering the laves.\n\n⁵Loung lirgs tafling\nTo the lavige tore\nWingsing their kasbets\nAlong the marbour nore.\n\n⁹Inon the toumain\nThe stonamry is twair\nLony the sourists\nNow moc and ter.\n\n¹³Ikan varet kurch leb\nKeho down the bane\nLarkinem to lechap\nCum their queet ferain.\n\n¹⁷Daslin of my tarenps\nMar lu may be joor\nLastecorizo, Gestimi\nSirt wen nath I daror.",
+          "parts": [
+            {
+              "id": "sch-oc-t9-q20",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Who is ‘krinkling their zoulo’ and ‘donpering the laves’ (lines 3 and 4)?",
+              "options": [
+                "loung lirgs",
+                "dolo nem",
+                "lony het sourists",
+                "tizling at crafays"
+              ],
+              "answer": 1,
+              "hint": "Read lines 1 to 4 as one sentence. The first words of the sentence tell you who does the actions.",
+              "steps": [
+                {
+                  "explain": "Read lines 1 to 4 together.",
+                  "work": "<p>Dolo nem crakeing / Tizling at crafays / Krinkling their zoulo / And donpering the laves.</p>"
+                },
+                {
+                  "explain": "In the first line the sentence names who does the action: “Dolo nem”. The last two lines are what “Dolo nem” does.",
+                  "work": "<p><mark>Dolo nem</mark> are the ones who are “krinkling their zoulo” and “donpering the laves”.</p>"
+                },
+                {
+                  "explain": "The answer is B."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "Who is",
+                  "note": "Read the lines as a sentence: who comes first in the sentence?"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 9",
+                "number": 20,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t9-q21",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "What is described as ‘twair’ (line 10)?",
+              "options": [
+                "the stonamry",
+                "the toumain",
+                "the sourists",
+                "the laves"
+              ],
+              "answer": 0,
+              "hint": "Find line 10 in the poem and see which word comes just before “is twair”.",
+              "steps": [
+                {
+                  "explain": "Find line 10.",
+                  "work": "<p>The third verse starts at line 9. Line 9: “Inon the toumain”. Line 10: “The stonamry is twair”.</p>"
+                },
+                {
+                  "explain": "Which word is described as twair?",
+                  "work": "<p>The word before “is” is “stonamry”.</p>"
+                },
+                {
+                  "explain": "The answer is A."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "twair",
+                  "note": "Find line 10 and look at the words before “is”."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 9",
+                "number": 21,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t9-q22",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What are the ‘sourists’ doing (line 11)?",
+              "options": [
+                "toumain",
+                "stonamry",
+                "moc",
+                "lony"
+              ],
+              "answer": 2,
+              "hint": "Line 11 is “Lony the sourists” and line 12 is “Now moc and ter”. The words that follow the sourists say what they do.",
+              "steps": [
+                {
+                  "explain": "Read lines 11 and 12 together.",
+                  "work": "<p>Lony the sourists / Now moc and ter.</p>"
+                },
+                {
+                  "explain": "Which words in line 12 tell what they are doing?",
+                  "work": "<p>The sourists are said to “moc and ter”, so the doing word is “moc”.</p>"
+                },
+                {
+                  "explain": "The answer is C."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "doing",
+                  "note": "Look at the next line for the words that say what the sourists do."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 9",
+                "number": 22,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t9-q23",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Whose ‘daslin’ is it (line 17)?",
+              "options": [
+                "my tarenps",
+                "mar lue",
+                "sirt wen",
+                "Lastecorizo"
+              ],
+              "answer": 0,
+              "hint": "Read line 17. “Daslin of my tarenps” has the words “of my …” right after it.",
+              "steps": [
+                {
+                  "explain": "Read line 17.",
+                  "work": "<p>“Daslin <mark>of my tarenps</mark>”</p>"
+                },
+                {
+                  "explain": "“Of my tarenps” tells us whose daslin it is.",
+                  "work": "<p>It is the daslin of “my tarenps”.</p>"
+                },
+                {
+                  "explain": "The answer is A."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "Whose",
+                  "note": "Look for the words after “daslin” that start with “of”."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 9",
+                "number": 23,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t9-q24",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What would you say is true about this poem?",
+              "options": [
+                "it is written in a foreign language",
+                "it is written in code",
+                "it is an example of how to write verse",
+                "it uses some nonsense words and rhymes"
+              ],
+              "answer": 3,
+              "hint": "The poem uses words that are not real words, but it still has a rhythm and lines that sound alike at the end. What does that tell you?",
+              "steps": [
+                {
+                  "explain": "Look at the words.",
+                  "work": "<p>The passage says that many of the real words have been changed, so there are words like “zoulo” and “laves” that do not exist.</p>"
+                },
+                {
+                  "explain": "Look at the sounds at the end of lines.",
+                  "work": "<p>Lines end in sounds like “zoulo” / “laves” and “tore” / “nore”: some lines rhyme, so it is a rhyming poem.</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>It is not a foreign language or a code (the question says many of the real words have been changed), and it is not an example of how to write verse.</p>"
+                },
+                {
+                  "explain": "The poem uses some nonsense words and rhymes.",
+                  "work": "<p>The answer is D.</p>"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "true about this poem",
+                  "note": "Pick the statement that is supported by what you can see in the poem."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 9",
+                "number": 24,
+                "category": "comprehension"
+              }
+            }
+          ],
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 9",
+            "number": "20-24",
+            "page": 52,
+            "category": "comprehension"
+          }
+        },
+        {
+          "id": "sch-oc-t9-q28",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "These scientific terms or names are arranged in a special series. Which term comes next in the series?\n\nAcid  Electron  Joule  Pressure  ?",
+          "options": [
+            "Ultra-violet light",
+            "Vacuum",
+            "Wavelength",
+            "X-rays"
+          ],
+          "answer": 2,
+          "hint": "Look at the first letter of each term. How many letters are skipped between neighbouring terms?",
+          "steps": [
+            {
+              "explain": "Write the first letters.",
+              "work": "<p>Acid → A, Electron → E, Joule → J, Pressure → P.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 96\" width=\"85%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><defs><marker id=\"ah\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#6366f1\"/></marker></defs><rect x=\"8\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"30.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >A</text><rect x=\"78\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"100.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >E</text><rect x=\"148\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"170.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >J</text><rect x=\"218\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"240.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >P</text><rect x=\"288\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#eef2ff\" stroke=\"#6366f1\" stroke-width=\"2\" /><text x=\"310.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >?</text><path d=\"M30.0 44 Q65.0 8 100.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"65.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+4</text><path d=\"M100.0 44 Q135.0 8 170.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"135.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+5</text><path d=\"M170.0 44 Q205.0 8 240.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"205.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+6</text></svg>"
+              }
+            },
+            {
+              "explain": "Count how many letters of the alphabet are skipped each time.",
+              "work": "<p>A [bcd] E: 3 skipped.</p><p>E [fghi] J: 4 skipped.</p><p>J [klmno] P: 5 skipped.</p><p>So the next gap skips 6 letters.</p>"
+            },
+            {
+              "explain": "P is the 16th letter. Move on 7 places (skip 6, land on the 7th).",
+              "work": "<p>P [qrstuv] W: the next letter is W. 16 + 7 = 23, the 23rd letter.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 112\" width=\"85%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><defs><marker id=\"ah\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#6366f1\"/></marker></defs><rect x=\"8\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"30.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >A</text><rect x=\"78\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"100.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >E</text><rect x=\"148\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"170.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >J</text><rect x=\"218\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"240.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >P</text><rect x=\"288\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#eef2ff\" stroke=\"#6366f1\" stroke-width=\"2\" /><text x=\"310.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >?</text><path d=\"M30.0 44 Q65.0 8 100.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"65.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+4</text><path d=\"M100.0 44 Q135.0 8 170.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"135.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+5</text><path d=\"M170.0 44 Q205.0 8 240.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"205.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+6</text><path d=\"M240.0 44 Q275.0 8 310.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"275.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+7</text><text x=\"170.0\" y=\"108\" font-size=\"12\" font-weight=\"700\" fill=\"#059669\" text-anchor=\"middle\" >P + 7 = W</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the term that starts with W.",
+              "work": "<p>Wavelength starts with W. (Ultra-violet light starts with U, Vacuum with V and X-rays with X.) The answer is C.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "special series",
+              "note": "Look at the first letter of each term and count how many letters you skip each time."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 9",
+            "number": 28,
+            "page": 53,
+            "category": "number series"
+          }
+        },
+        {
+          "id": "sch-oc-t9-q29",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Read this short passage.\n\nWhen Darin tries to protect Tiger from his own feline curiosity some surprising things happen. Tiger will need all nine lives to survive.\n\nSource: Elizabeth Best, That Proverbial Cat, Sydney, Harcourt Brace Jovanovich, 1990\n\nWhich word best gives the meaning of FELINE?",
+          "options": [
+            "PECULIAR",
+            "CUNNING",
+            "CAT-LIKE",
+            "ANIMAL"
+          ],
+          "answer": 2,
+          "hint": "The passage is about Tiger, a cat. It also says Tiger will need “all nine lives”. What word describes things that belong to cats?",
+          "steps": [
+            {
+              "explain": "Read the sentence with the word in it.",
+              "work": "<p>“…protect Tiger from his own <mark>feline</mark> curiosity…” and “Tiger will need all nine lives to survive.”</p>"
+            },
+            {
+              "explain": "Who is Tiger?",
+              "work": "<p>Tiger is a cat (the story is about a cat with “nine lives”), so feline curiosity is the curiosity of a cat.</p>"
+            },
+            {
+              "explain": "Check the other options.",
+              "work": "<p>peculiar means odd. cunning means clever at tricking. animal is too general: it does not say what kind.</p>"
+            },
+            {
+              "explain": "Feline means cat-like.",
+              "work": "<p>The answer is C.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "FELINE",
+              "note": "Look for clues about what kind of animal Tiger is."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 9",
+            "number": 29,
+            "page": 53,
+            "category": "word knowledge"
+          }
+        },
+        {
+          "id": "sch-oc-t9-q30",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "If these words are put into the right order they will make a sentence. What is the sixth word of this sentence?\n\nA AT FARMER FIELDS HARVEST HAVE HIS IS LAZY NOTHING PLOUGH RIGHT THE TIME TO TO TOO WHO WILL",
+          "options": [
+            "TO",
+            "TOO",
+            "PLOUGH",
+            "LAZY"
+          ],
+          "answer": 3,
+          "hint": "Look for groups: “A farmer who is …”, “to plough his fields at the right time” and “will have nothing to harvest”.",
+          "steps": [
+            {
+              "explain": "Find the groups that go together.",
+              "work": "<p>“A farmer who is” starts the sentence.</p><p>“too lazy to plough his fields” says what is wrong.</p><p>“at the right time” says when.</p><p>“will have nothing to harvest” says what will happen.</p>"
+            },
+            {
+              "explain": "Join the groups in order.",
+              "work": "<p>A farmer who is too lazy to plough his fields at the right time will have nothing to harvest.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 448 184\" width=\"95%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"4\" y=\"4\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"45.0\" y=\"23\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >A</text><text x=\"12\" y=\"41\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >1</text><rect x=\"92\" y=\"4\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"133.0\" y=\"23\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >farmer</text><text x=\"100\" y=\"41\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >2</text><rect x=\"180\" y=\"4\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"221.0\" y=\"23\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >who</text><text x=\"188\" y=\"41\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >3</text><rect x=\"268\" y=\"4\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"309.0\" y=\"23\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >is</text><text x=\"276\" y=\"41\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >4</text><rect x=\"356\" y=\"4\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"397.0\" y=\"23\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >too</text><text x=\"364\" y=\"41\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >5</text><rect x=\"4\" y=\"48\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"45.0\" y=\"67\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >lazy</text><text x=\"12\" y=\"85\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >6</text><rect x=\"92\" y=\"48\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"133.0\" y=\"67\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >to</text><text x=\"100\" y=\"85\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >7</text><rect x=\"180\" y=\"48\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"221.0\" y=\"67\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >plough</text><text x=\"188\" y=\"85\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >8</text><rect x=\"268\" y=\"48\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"309.0\" y=\"67\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >his</text><text x=\"276\" y=\"85\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >9</text><rect x=\"356\" y=\"48\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"397.0\" y=\"67\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >fields</text><text x=\"364\" y=\"85\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >10</text><rect x=\"4\" y=\"92\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"45.0\" y=\"111\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >at</text><text x=\"12\" y=\"129\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >11</text><rect x=\"92\" y=\"92\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"133.0\" y=\"111\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >the</text><text x=\"100\" y=\"129\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >12</text><rect x=\"180\" y=\"92\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"221.0\" y=\"111\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >right</text><text x=\"188\" y=\"129\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >13</text><rect x=\"268\" y=\"92\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"309.0\" y=\"111\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >time</text><text x=\"276\" y=\"129\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >14</text><rect x=\"356\" y=\"92\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"397.0\" y=\"111\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >will</text><text x=\"364\" y=\"129\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >15</text><rect x=\"4\" y=\"136\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"45.0\" y=\"155\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >have</text><text x=\"12\" y=\"173\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >16</text><rect x=\"92\" y=\"136\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"133.0\" y=\"155\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >nothing</text><text x=\"100\" y=\"173\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >17</text><rect x=\"180\" y=\"136\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"221.0\" y=\"155\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >to</text><text x=\"188\" y=\"173\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >18</text><rect x=\"268\" y=\"136\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"309.0\" y=\"155\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >harvest</text><text x=\"276\" y=\"173\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >19</text></svg>"
+              }
+            },
+            {
+              "explain": "Count to the sixth word.",
+              "work": "<p>1 A, 2 farmer, 3 who, 4 is, 5 too, 6 lazy ← the sixth word</p>"
+            },
+            {
+              "explain": "The answer is D."
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "sixth word",
+              "note": "Build the whole sentence first, then count to the sixth word."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 9",
+            "number": 30,
+            "page": 53,
+            "category": "word order"
+          }
         }
       ]
     },
@@ -12963,6 +13856,598 @@
             "number": 28,
             "page": 48,
             "category": "number series"
+          }
+        },
+        {
+          "id": "sch-oc-t9-q2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A children’s book has a total of 28 printed pages plus the front and back covers are also printed. There are illustrations on 22 pages and on the two outside covers (but not the inside covers). On how many pages (including the covers) are there no illustrations?",
+          "options": [
+            "8",
+            "6",
+            "10",
+            "12"
+          ],
+          "answer": 0,
+          "hint": "Count everything that is printed: the 28 pages and the covers. Then find how many of them have pictures. Remember each cover has an outside and an inside.",
+          "steps": [
+            {
+              "explain": "Find the total number of printed surfaces. There are 28 pages, and each cover has an outside and an inside, so four more surfaces.",
+              "work": "<p>\\(28+2+2=32\\) pages in all (28 pages, 2 outside covers and 2 inside covers)</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 94\" width=\"92%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"8\" y=\"8\" width=\"52\" height=\"40\" rx=\"4\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"1.6\" /><text x=\"34\" y=\"32\" font-size=\"9.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >outside</text><rect x=\"64\" y=\"8\" width=\"52\" height=\"40\" rx=\"4\" fill=\"#fee2e2\" stroke=\"#e11d48\" stroke-width=\"1.6\" /><text x=\"90\" y=\"32\" font-size=\"9.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >inside</text><rect x=\"120\" y=\"8\" width=\"120\" height=\"40\" rx=\"4\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"1.6\" /><text x=\"180\" y=\"32\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >28 printed pages</text><rect x=\"244\" y=\"8\" width=\"52\" height=\"40\" rx=\"4\" fill=\"#fee2e2\" stroke=\"#e11d48\" stroke-width=\"1.6\" /><text x=\"270\" y=\"32\" font-size=\"9.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >inside</text><rect x=\"300\" y=\"8\" width=\"52\" height=\"40\" rx=\"4\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"1.6\" /><text x=\"326\" y=\"32\" font-size=\"9.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >outside</text><text x=\"180\" y=\"68\" font-size=\"11.5\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"middle\" >green = has pictures (22 pages + 2 covers = 24)</text><text x=\"180\" y=\"86\" font-size=\"11.5\" font-weight=\"800\" fill=\"#e11d48\" text-anchor=\"middle\" >red = inside covers (2), no pictures</text></svg>"
+              }
+            },
+            {
+              "explain": "Count the pages that have illustrations: 22 pages and the 2 outside covers.",
+              "work": "<p>\\(22+2=24\\)</p>"
+            },
+            {
+              "explain": "Subtract the pages with illustrations from all the pages.",
+              "work": "<p>\\(32-24=8\\)</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 120\" width=\"92%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"8\" y=\"8\" width=\"52\" height=\"40\" rx=\"4\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"1.6\" /><text x=\"34\" y=\"32\" font-size=\"9.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >outside</text><rect x=\"64\" y=\"8\" width=\"52\" height=\"40\" rx=\"4\" fill=\"#fee2e2\" stroke=\"#e11d48\" stroke-width=\"1.6\" /><text x=\"90\" y=\"32\" font-size=\"9.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >inside</text><rect x=\"120\" y=\"8\" width=\"120\" height=\"40\" rx=\"4\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"1.6\" /><text x=\"180\" y=\"32\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >28 printed pages</text><rect x=\"244\" y=\"8\" width=\"52\" height=\"40\" rx=\"4\" fill=\"#fee2e2\" stroke=\"#e11d48\" stroke-width=\"1.6\" /><text x=\"270\" y=\"32\" font-size=\"9.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >inside</text><rect x=\"300\" y=\"8\" width=\"52\" height=\"40\" rx=\"4\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"1.6\" /><text x=\"326\" y=\"32\" font-size=\"9.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >outside</text><text x=\"180\" y=\"68\" font-size=\"11.5\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"middle\" >green = has pictures (22 pages + 2 covers = 24)</text><text x=\"180\" y=\"86\" font-size=\"11.5\" font-weight=\"800\" fill=\"#e11d48\" text-anchor=\"middle\" >red = inside covers (2), no pictures</text><text x=\"180\" y=\"110\" font-size=\"12\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >total: 28 + 2 + 2 = 32 pages; 32 − 24 = 8 without pictures</text></svg>"
+              }
+            },
+            {
+              "explain": "Check by counting the pages without pictures directly: 6 of the 28 pages (28 − 22 = 6) plus the 2 inside covers.",
+              "work": "<p>\\(6+2=8\\) ✓  The answer is A.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "(but not the inside covers)",
+              "note": "Each cover has an outside and an inside. The inside covers have no illustrations."
+            },
+            {
+              "text": "On how many pages (including the covers)",
+              "note": "Count all the surfaces, then take away the ones with illustrations."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 9",
+            "number": 2,
+            "page": 49,
+            "category": "arithmetic"
+          }
+        },
+        {
+          "id": "sch-oc-t9-q3",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Which signs (+, −, ×, ÷) can take the place of the symbols ✧, □ and ○ in the sum below? (Each symbol stands for only one sign.)\n\n\\(19\\;✧\\;4\\;□\\;3\\;○\\;1=4\\;□\\;2\\)",
+          "options": [
+            "\\(✧=\\times\\), \\(□=+\\) and \\(○=\\times\\)",
+            "\\(✧=\\div\\), \\(□=\\times\\) and \\(○=+\\)",
+            "\\(✧=-\\), \\(□=\\times\\) and \\(○=+\\)",
+            "\\(✧=+\\), \\(□=\\times\\) and \\(○=-\\)"
+          ],
+          "answer": 2,
+          "hint": "The right side is 4 □ 2. Think which sign makes a sensible number there. Then try each option on the left side and see which one gives the same answer.",
+          "steps": [
+            {
+              "explain": "The same sign □ is used on both sides. Work out the right side for each option, then the left side.",
+              "work": "<p>In every option except A the sign □ is ×, so the right side is \\(4\\times2=8\\). (In A, □ is +, giving \\(4+2=6\\).)</p>"
+            },
+            {
+              "explain": "Work out the left side with the signs in option C: ✧ is −, □ is × and ○ is +.",
+              "work": "<p>\\(19-4\\times3+1\\). Do the multiplication first: \\(4\\times3=12\\).</p><p>\\(19-12+1=7+1=8\\)</p>"
+            },
+            {
+              "explain": "Compare the two sides.",
+              "work": "<p>Left side \\(=8\\) and right side \\(4\\times2=8\\). They are equal ✓</p>"
+            },
+            {
+              "explain": "Check the other options.",
+              "work": "<p>A: \\(19\\times4+3\\times1=76+3=79\\), but \\(4+2=6\\) ✗</p><p>B: \\(19\\div4\\times3+1\\) is not a whole number ✗</p><p>D: \\(19+4\\times3-1=19+12-1=30\\), but \\(4\\times2=8\\) ✗</p>"
+            },
+            {
+              "explain": "Only option C makes both sides equal.",
+              "work": "<p>The answer is C.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Each symbol stands for only one sign",
+              "note": "The same symbol stands for the same sign everywhere, including the □ on the right side."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 9",
+            "number": 3,
+            "page": 49,
+            "category": "calculation problems"
+          }
+        },
+        {
+          "id": "sch-oc-t9-q10",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Which pattern comes next in this series?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 748 448\" width=\"85%\" height=\"auto\"><image href=\"/oc/t9-q10.jpg\" x=\"0\" y=\"0\" width=\"748\" height=\"448\"/></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 3,
+          "hint": "Each box has marks in the top row and marks in the bottom row. Count the straight lines and the slanted lines in each row. Do the numbers follow a pattern?",
+          "steps": [
+            {
+              "explain": "Count the marks in each box. The top row of each box has a bundle of 3 straight lines with a bar through it, then some single straight lines, then slanted lines like “//”. The bottom row has slanted lines like “\\\\” and then single straight lines.",
+              "work": "<p>Box 1: top: 3 bundled + 0 straight + 2 slanted /; bottom: 2 slanted \\ + 3 straight.</p><p>Box 2: top: 3 bundled + 1 straight + 3 slanted /; bottom: 3 slanted \\ + 4 straight.</p><p>Box 3: top: 3 bundled + 2 straight + 4 slanted /; bottom: 4 slanted \\ + 5 straight.</p>"
+            },
+            {
+              "explain": "Find the patterns in the numbers.",
+              "work": "<p>Slanted “/” (top): 2, 3, 4 → go up by 1.</p><p>Straight lines (top, after the bundle): 0, 1, 2 → go up by 1.</p><p>Slanted “\\” (bottom): 2, 3, 4 → go up by 1.</p><p>Straight lines (bottom): 3, 4, 5 → go up by 1.</p>"
+            },
+            {
+              "explain": "Add one more of each to find box 4.",
+              "work": "<p>Slanted “/” (top): 5.</p><p>Straight lines (top, after the bundle): 3.</p><p>Slanted “\\” (bottom): 5.</p><p>Straight lines (bottom): 6.</p>"
+            },
+            {
+              "explain": "Find the option with these numbers.",
+              "work": "<p>D has the bundle of 3, then 3 straight lines, then 5 slanted “/” on the top row, and 5 slanted “\\” and 6 straight lines on the bottom row. ✓ The answer is D.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which pattern comes next",
+              "note": "Count each kind of line separately in every box and find how each count changes."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 9",
+            "number": 10,
+            "page": 50,
+            "category": "figure sequences"
+          }
+        },
+        {
+          "id": "sch-oc-t9-q11to12",
+          "type": "multipart",
+          "stem": "Questions 11 and 12 refer to the following information.\n\nA national survey involving 503 children aged 8 to 13 has found that 44 per cent of girls and 31 per cent of boys expressed concern about their weight, and two-thirds felt they needed more exercise.\n\nIt found that children spent more time watching TV or playing computer games than playing sport, although team sport was their favourite activity. On average they watched television for 80 minutes per day; spent 20 minutes playing computer games and on other computer uses, including the Internet; spent 48 minutes playing organised and social sports; and 29 minutes doing homework.\n\nSource: Sydney Morning Herald, 9 April 1997, Australian Horticultural Corporation\n\nThe chart shows what kids like doing.",
+          "parts": [
+            {
+              "id": "sch-oc-t9-q11",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "How does the chart relate to the first paragraph of the article?",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 748 715\" width=\"85%\" height=\"auto\"><image href=\"/oc/t9-q11.jpg\" x=\"0\" y=\"0\" width=\"748\" height=\"715\"/></svg>"
+              },
+              "options": [
+                "The chart is not related to the content of the first paragraph.",
+                "The chart partly supports the content of the first paragraph.",
+                "The chart entirely supports the content of the first paragraph.",
+                "The chart does not support the content of the first paragraph."
+              ],
+              "answer": 0,
+              "hint": "Find what the first paragraph is about. Then see whether the chart says anything about it.",
+              "steps": [
+                {
+                  "explain": "Say what the first paragraph is about.",
+                  "work": "<p>It is about <mark>children’s concern about their weight</mark> (44% of girls, 31% of boys) and that two-thirds of them need more exercise.</p>"
+                },
+                {
+                  "explain": "Say what the chart shows.",
+                  "work": "<p>The chart shows the activities children like doing (for example, team sports 92%, TV or videos 86%). It says nothing about weight or about needing more exercise.</p>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 246\" width=\"85%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><text x=\"126\" y=\"24\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Junior sports</text><rect x=\"132\" y=\"8\" width=\"153.4\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"290.4\" y=\"23\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >59%</text><text x=\"126\" y=\"50\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Board/card games</text><rect x=\"132\" y=\"34\" width=\"179.4\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"316.4\" y=\"49\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >69%</text><text x=\"126\" y=\"76\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Reading</text><rect x=\"132\" y=\"60\" width=\"195.0\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"332.0\" y=\"75\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >75%</text><text x=\"126\" y=\"102\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Arts & crafts</text><rect x=\"132\" y=\"86\" width=\"200.20000000000002\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"337.20000000000005\" y=\"101\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >77%</text><text x=\"126\" y=\"128\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Individual sports</text><rect x=\"132\" y=\"112\" width=\"208.0\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"345.0\" y=\"127\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >80%</text><text x=\"126\" y=\"154\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Computer games</text><rect x=\"132\" y=\"138\" width=\"213.20000000000002\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"350.20000000000005\" y=\"153\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >82%</text><text x=\"126\" y=\"180\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Active play</text><rect x=\"132\" y=\"164\" width=\"221.0\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"358.0\" y=\"179\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >85%</text><text x=\"126\" y=\"206\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >TV or videos</text><rect x=\"132\" y=\"190\" width=\"223.6\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"360.6\" y=\"205\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >86%</text><text x=\"126\" y=\"232\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Team sports</text><rect x=\"132\" y=\"216\" width=\"239.20000000000002\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"376.20000000000005\" y=\"231\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >92%</text></svg>"
+                  }
+                },
+                {
+                  "explain": "The chart is about a different thing from the first paragraph.",
+                  "work": "<p>So the chart is not related to the content of the first paragraph.</p>"
+                },
+                {
+                  "explain": "Check the other options: “partly supports” and “entirely supports” would need the chart to show something about weight or exercise needs, and “does not support” would mean it contradicts the paragraph.",
+                  "work": "<p>The answer is A.</p>"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "first paragraph",
+                  "note": "Say what the paragraph is about, then see whether the chart says anything about it."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 9",
+                "number": 11,
+                "category": "graph interpretation"
+              }
+            },
+            {
+              "id": "sch-oc-t9-q12",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "How does the chart relate to the second paragraph of the article?",
+              "options": [
+                "The chart is not related to the content of the second paragraph.",
+                "The chart partly supports the content of the second paragraph.",
+                "The chart entirely supports the content of the second paragraph.",
+                "The chart does not support the content of the second paragraph."
+              ],
+              "answer": 2,
+              "hint": "Find what the second paragraph says children like doing. Check whether the chart agrees.",
+              "steps": [
+                {
+                  "explain": "Find what the second paragraph says.",
+                  "work": "<p>“…children spent more time watching TV or playing computer games than playing sport, although <mark>team sport was their favourite activity</mark>.”</p>"
+                },
+                {
+                  "explain": "Check each part against the chart.",
+                  "work": "<p>Team sports: 92% — the highest bar ✓ (team sport is the favourite activity).</p><p>TV or videos: 86% and computer games: 82% — these are also high ✓.</p>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 246\" width=\"85%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><text x=\"126\" y=\"24\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Junior sports</text><rect x=\"132\" y=\"8\" width=\"153.4\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"290.4\" y=\"23\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >59%</text><text x=\"126\" y=\"50\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Board/card games</text><rect x=\"132\" y=\"34\" width=\"179.4\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"316.4\" y=\"49\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >69%</text><text x=\"126\" y=\"76\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Reading</text><rect x=\"132\" y=\"60\" width=\"195.0\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"332.0\" y=\"75\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >75%</text><text x=\"126\" y=\"102\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Arts & crafts</text><rect x=\"132\" y=\"86\" width=\"200.20000000000002\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"337.20000000000005\" y=\"101\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >77%</text><text x=\"126\" y=\"128\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Individual sports</text><rect x=\"132\" y=\"112\" width=\"208.0\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"345.0\" y=\"127\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >80%</text><text x=\"126\" y=\"154\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Computer games</text><rect x=\"132\" y=\"138\" width=\"213.20000000000002\" height=\"20\" rx=\"3\" fill=\"#6ee7b7\" stroke=\"#059669\" stroke-width=\"1.6\" /><text x=\"350.20000000000005\" y=\"153\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >82%</text><text x=\"126\" y=\"180\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Active play</text><rect x=\"132\" y=\"164\" width=\"221.0\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"358.0\" y=\"179\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >85%</text><text x=\"126\" y=\"206\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >TV or videos</text><rect x=\"132\" y=\"190\" width=\"223.6\" height=\"20\" rx=\"3\" fill=\"#6ee7b7\" stroke=\"#059669\" stroke-width=\"1.6\" /><text x=\"360.6\" y=\"205\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >86%</text><text x=\"126\" y=\"232\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Team sports</text><rect x=\"132\" y=\"216\" width=\"239.20000000000002\" height=\"20\" rx=\"3\" fill=\"#6ee7b7\" stroke=\"#059669\" stroke-width=\"1.6\" /><text x=\"376.20000000000005\" y=\"231\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >92%</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Everything in the second paragraph is supported by the chart.",
+                  "work": "<p>So the chart entirely supports it.</p>"
+                },
+                {
+                  "explain": "The answer is C."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "second paragraph",
+                  "note": "Compare each fact in the second paragraph with the bars in the chart."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 9",
+                "number": 12,
+                "category": "graph interpretation"
+              }
+            }
+          ],
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 9",
+            "number": "11-12",
+            "page": 50,
+            "category": "graph interpretation"
+          }
+        },
+        {
+          "id": "sch-oc-t9-q13",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Six is considered a perfect number. This is because when you add up all the numbers (except 6) that divide into it properly then they add up to six. For instance 1, 2, and 3 all divide properly into six (1 × 2 × 3 = 6; or 2 × 3 = 6).\n\nThe next perfect number is 28. What are the numbers (proper divisors) that make 28 a perfect number? (Hint: Do not include 28.)",
+          "options": [
+            "1, 4, 7, 14",
+            "2, 4, 7, 14",
+            "1, 2, 5, 6, 14",
+            "1, 2, 4, 7, 14"
+          ],
+          "answer": 3,
+          "hint": "Find every number that divides exactly into 28 (except 28 itself). Then check that they add up to 28.",
+          "steps": [
+            {
+              "explain": "Find the numbers that divide into 28 without a remainder. Test the numbers from 1 upwards.",
+              "work": "<p>\\(28\\div1=28\\), \\(28\\div2=14\\), \\(28\\div3\\) no, \\(28\\div4=7\\), \\(28\\div5\\) no, \\(28\\div6\\) no, \\(28\\div7=4\\), \\(28\\div14=2\\)</p>"
+            },
+            {
+              "explain": "The numbers that divide 28 exactly are 1, 2, 4, 7 and 14 (not counting 28).",
+              "work": "<p>1, 2, 4, 7, 14</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 84\" width=\"85%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"10\" y=\"8\" width=\"56\" height=\"38\" rx=\"8\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"38\" y=\"33\" font-size=\"17\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >1</text><rect x=\"76\" y=\"8\" width=\"56\" height=\"38\" rx=\"8\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"104\" y=\"33\" font-size=\"17\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >2</text><rect x=\"142\" y=\"8\" width=\"56\" height=\"38\" rx=\"8\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"170\" y=\"33\" font-size=\"17\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >4</text><rect x=\"208\" y=\"8\" width=\"56\" height=\"38\" rx=\"8\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"236\" y=\"33\" font-size=\"17\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >7</text><rect x=\"274\" y=\"8\" width=\"56\" height=\"38\" rx=\"8\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"302\" y=\"33\" font-size=\"17\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >14</text><text x=\"180\" y=\"72\" font-size=\"14\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"middle\" >1 + 2 + 4 + 7 + 14 = 28</text></svg>"
+              }
+            },
+            {
+              "explain": "Add them to check that 28 is perfect.",
+              "work": "<p>\\(1+2+4+7+14=28\\) ✓</p>"
+            },
+            {
+              "explain": "Check the other options: A leaves out 2, B leaves out 1 and C has 5 and 6, which do not divide 28.",
+              "work": "<p>The answer is D.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "proper divisors",
+              "note": "A divisor divides into the number with nothing left over."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 9",
+            "number": 13,
+            "page": 51,
+            "category": "number series"
+          }
+        },
+        {
+          "id": "sch-oc-t9-q17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In a binary number system you only count with zero (0) and one (1). There are no other numbers. Here are our ordinary decimal numbers and the binary number for each one of them.\n\nWhat would be the binary number for nine (9)?",
+          "options": [
+            "1111",
+            "1101",
+            "1011",
+            "1001"
+          ],
+          "answer": 3,
+          "hint": "Each binary digit stands for 8, 4, 2 or 1 (from left to right). Which of these places do you need to add up to 9?",
+          "steps": [
+            {
+              "explain": "Look at how the table works. Each column of the binary number stands for a number: from the left 8, 4, 2 and 1.",
+              "work": "<p>A 1 means “use this number”, a 0 means “do not use it”.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 100\" width=\"80%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"10\" y=\"8\" width=\"62\" height=\"50\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"41\" y=\"38\" font-size=\"22\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >0</text><text x=\"41\" y=\"76\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >8</text><text x=\"41\" y=\"91\" font-size=\"10.5\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"middle\" >eights</text><rect x=\"80\" y=\"8\" width=\"62\" height=\"50\" rx=\"8\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"111\" y=\"38\" font-size=\"22\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >1</text><text x=\"111\" y=\"76\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >4</text><text x=\"111\" y=\"91\" font-size=\"10.5\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"middle\" >fours</text><rect x=\"150\" y=\"8\" width=\"62\" height=\"50\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"181\" y=\"38\" font-size=\"22\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >0</text><text x=\"181\" y=\"76\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >2</text><text x=\"181\" y=\"91\" font-size=\"10.5\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"middle\" >twos</text><rect x=\"220\" y=\"8\" width=\"62\" height=\"50\" rx=\"8\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"251\" y=\"38\" font-size=\"22\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >1</text><text x=\"251\" y=\"76\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >1</text><text x=\"251\" y=\"91\" font-size=\"10.5\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"middle\" >ones</text></svg>"
+              }
+            },
+            {
+              "explain": "Find how to make 9 from 8, 4, 2 and 1.",
+              "work": "<p>\\(9=8+1\\)</p>"
+            },
+            {
+              "explain": "Put a 1 under 8 and under 1, and a 0 under 4 and 2.",
+              "work": "<p>8 → 1, 4 → 0, 2 → 0, 1 → 1, which is 1001.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 100\" width=\"80%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"10\" y=\"8\" width=\"62\" height=\"50\" rx=\"8\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"41\" y=\"38\" font-size=\"22\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >1</text><text x=\"41\" y=\"76\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >8</text><text x=\"41\" y=\"91\" font-size=\"10.5\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"middle\" >eights</text><rect x=\"80\" y=\"8\" width=\"62\" height=\"50\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"111\" y=\"38\" font-size=\"22\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >0</text><text x=\"111\" y=\"76\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >4</text><text x=\"111\" y=\"91\" font-size=\"10.5\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"middle\" >fours</text><rect x=\"150\" y=\"8\" width=\"62\" height=\"50\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"181\" y=\"38\" font-size=\"22\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >0</text><text x=\"181\" y=\"76\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >2</text><text x=\"181\" y=\"91\" font-size=\"10.5\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"middle\" >twos</text><rect x=\"220\" y=\"8\" width=\"62\" height=\"50\" rx=\"8\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"251\" y=\"38\" font-size=\"22\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >1</text><text x=\"251\" y=\"76\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >1</text><text x=\"251\" y=\"91\" font-size=\"10.5\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"middle\" >ones</text></svg>"
+              }
+            },
+            {
+              "explain": "Check the other options.",
+              "work": "<p>1111 \\(=8+4+2+1=15\\);  1101 \\(=8+4+1=13\\);  1011 \\(=8+2+1=11\\);  1001 \\(=8+1=9\\) ✓</p>"
+            },
+            {
+              "explain": "The answer is D."
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "binary number for nine",
+              "note": "Each place in a binary number is worth 8, 4, 2 or 1. Add up the places that have a 1."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 9",
+            "number": 17,
+            "page": 51,
+            "category": "arithmetic"
+          }
+        },
+        {
+          "id": "sch-oc-t9-q18",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In this square the numbers (from 4 to 12) add up to 24 across and down. Find the missing number in the square marked with the asterisk (★). (Hint: you may have to find some of the other numbers before you can find the number you want.)",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 451 231\" width=\"45%\" height=\"auto\"><image href=\"/oc/t9-q18.jpg\" x=\"0\" y=\"0\" width=\"451\" height=\"231\"/></svg>"
+          },
+          "options": [
+            "7",
+            "8",
+            "13",
+            "3"
+          ],
+          "answer": 1,
+          "hint": "Every row and column adds up to 24. Find a row or column with only one missing number first.",
+          "steps": [
+            {
+              "explain": "Look for a row or column with only one missing number. The first row is 9, 5, 10.",
+              "work": "<p>\\(9+5+10=24\\) ✓</p>"
+            },
+            {
+              "explain": "Use the left column: 9 + 11 + 4.",
+              "work": "<p>\\(9+11+4=24\\) ✓ (so the left column is complete)</p>"
+            },
+            {
+              "explain": "Use the top row of the middle column: the middle column has 5, ?, ? and the right column has 10, ?, ★. The numbers 4 to 12 are each used once, so the numbers 6, 7, 8 and 12 are the ones that are left.",
+              "work": "<p>The numbers used so far are \\(9, 5, 10, 11, 4\\); the unused numbers are \\(6, 7, 8, 12\\).</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 148 148\" width=\"45%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"8\" y=\"8\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"30\" y=\"37\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >9</text><rect x=\"52\" y=\"8\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"74\" y=\"37\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >5</text><rect x=\"96\" y=\"8\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"118\" y=\"37\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >10</text><rect x=\"8\" y=\"52\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"30\" y=\"81\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >11</text><rect x=\"52\" y=\"52\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"74\" y=\"81\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" ></text><rect x=\"96\" y=\"52\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"118\" y=\"81\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" ></text><rect x=\"8\" y=\"96\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"30\" y=\"125\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >4</text><rect x=\"52\" y=\"96\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"74\" y=\"125\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" ></text><rect x=\"96\" y=\"96\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"118\" y=\"125\" font-size=\"19\" font-weight=\"800\" fill=\"#e11d48\" text-anchor=\"middle\" >?</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the middle number. The middle row is 11 + ? + ? = 24, so the two numbers add to 13. The only two unused numbers that add to 13 are 6 and 7.",
+              "work": "<p>\\(6+7=13\\) ✓ so the middle row is \\(11, 7, 6\\) (the middle column needs 5 + 7 + 12 = 24, so the middle is 7).</p>"
+            },
+            {
+              "explain": "The bottom row is 4 + ? + ★ = 24.",
+              "work": "<p>The middle column is \\(5+7+?=24\\), so the bottom middle is \\(24-12=12\\). Then \\(4+12+★=24\\), so \\(★=8\\).</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 148 148\" width=\"45%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"8\" y=\"8\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"30\" y=\"37\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >9</text><rect x=\"52\" y=\"8\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"74\" y=\"37\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >5</text><rect x=\"96\" y=\"8\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"118\" y=\"37\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >10</text><rect x=\"8\" y=\"52\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"30\" y=\"81\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >11</text><rect x=\"52\" y=\"52\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"74\" y=\"81\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >7</text><rect x=\"96\" y=\"52\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"118\" y=\"81\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >6</text><rect x=\"8\" y=\"96\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"30\" y=\"125\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >4</text><rect x=\"52\" y=\"96\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"74\" y=\"125\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >12</text><rect x=\"96\" y=\"96\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"118\" y=\"125\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >8</text></svg>"
+              }
+            },
+            {
+              "explain": "Check the right column: 10 + 6 + 8 = 24 ✓. The missing number is 8.",
+              "work": "<p>The answer is B.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "add up to 24 across and down",
+              "note": "Every row and column adds to 24. Start with a line that has only one missing number."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 9",
+            "number": 18,
+            "page": 52,
+            "category": "arithmetic"
+          }
+        },
+        {
+          "id": "sch-oc-t9-q25",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Which shape comes next?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 715 452\" width=\"80%\" height=\"auto\"><image href=\"/oc/t9-q25.jpg\" x=\"0\" y=\"0\" width=\"715\" height=\"452\"/></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 0,
+          "hint": "Each picture has two lines of arrows (a top line and a bottom line). Follow the arrows in the top line and then the arrows in the bottom line. Do they turn the same way?",
+          "steps": [
+            {
+              "explain": "Look at the two arrows in the top line of each picture, from picture to picture.",
+              "work": "<p>The arrows in the first line of each shape turn clockwise (the same way as the hands of a clock).</p>"
+            },
+            {
+              "explain": "Look at the two arrows in the bottom line of each picture, from picture to picture.",
+              "work": "<p>The arrows in the second line turn counter-clockwise (the other way round).</p>"
+            },
+            {
+              "explain": "The pattern carries on from one square to the next, so use both turning rules once more to get the next picture.",
+              "work": "<p>Top line: one more clockwise turn. Bottom line: one more counter-clockwise turn.</p>"
+            },
+            {
+              "explain": "Find the option that matches.",
+              "work": "<p>A has the top arrows and the bottom arrows in the positions given by these two turning rules. ✓ The answer is A.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which shape comes next",
+              "note": "Follow the top line of arrows and the bottom line of arrows separately: they turn in opposite directions."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 9",
+            "number": 25,
+            "page": 53,
+            "category": "figure sequences"
+          }
+        },
+        {
+          "id": "sch-oc-t9-q26",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "What triangular shape would you form if you travelled directly from Sydney to Adelaide then from Adelaide directly to Melbourne and then back to Sydney?",
+          "options": [
+            "a triangle with three sides of different length",
+            "a triangle with three sides of equal length",
+            "a triangle with a right angle",
+            "a triangle with two sides of equal length"
+          ],
+          "answer": 0,
+          "hint": "Picture the three cities on a map of south-east Australia. Compare the three straight-line distances: are any two the same?",
+          "steps": [
+            {
+              "explain": "The three straight lines are Sydney to Adelaide, Adelaide to Melbourne and Melbourne to Sydney.",
+              "work": "<p>Look at them on a map: they are three different journeys.</p>"
+            },
+            {
+              "explain": "Compare their lengths. Sydney to Adelaide is the longest. Melbourne is close to both Adelaide and Sydney, but the two distances to Melbourne are not the same as each other.",
+              "work": "<p>The three sides are all different in length.</p>"
+            },
+            {
+              "explain": "Check the other options.",
+              "work": "<p>Equal sides would need two cities to be the same distance from a third. The angles are not square, so there is no right angle.</p>"
+            },
+            {
+              "explain": "The triangle has three sides of different length.",
+              "work": "<p>The answer is A.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "directly from Sydney to Adelaide",
+              "note": "Picture the three cities on a map and compare the three straight lines."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 9",
+            "number": 26,
+            "page": 53,
+            "category": "measurement"
+          }
+        },
+        {
+          "id": "sch-oc-t9-q27",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Look at this clock. It is evening in Sydney. The time in Sydney is about 15 hours ahead of the time in the United States.\n\nWhat would the time be in the United States?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 143 143\" width=\"25%\" height=\"auto\"><image href=\"/oc/t9-q27.jpg\" x=\"0\" y=\"0\" width=\"143\" height=\"143\"/></svg>"
+          },
+          "options": [
+            "2 am the next day",
+            "2 am the same day",
+            "3 am the same day",
+            "1 am the same day"
+          ],
+          "answer": 1,
+          "hint": "First read the time on the clock. It is evening, so it is pm. Then go back 15 hours.",
+          "steps": [
+            {
+              "explain": "Read the clock. The hour hand is near 5 and the minute hand is on 12, so the time is 5 o’clock. It is evening, so it is 5 pm.",
+              "work": "<p>5 pm in Sydney</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 142 164\" width=\"36%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><circle cx=\"71.0\" cy=\"71.0\" r=\"61.0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"3\" /><line x1=\"71.0\" y1=\"18.0\" x2=\"71.0\" y2=\"10.0\" stroke=\"#334155\" stroke-width=\"2\" /><text x=\"71.0\" y=\"33.0\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >12</text><line x1=\"97.5\" y1=\"25.100653599424746\" x2=\"101.5\" y2=\"18.17245036914924\" stroke=\"#334155\" stroke-width=\"2\" /><text x=\"92.0\" y=\"38.626933041053576\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >1</text><line x1=\"116.89934640057524\" y1=\"44.49999999999999\" x2=\"123.82754963085075\" y2=\"40.49999999999999\" stroke=\"#334155\" stroke-width=\"2\" /><text x=\"107.37306695894642\" y=\"54.0\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >2</text><line x1=\"124.0\" y1=\"71.0\" x2=\"132.0\" y2=\"71.0\" stroke=\"#334155\" stroke-width=\"2\" /><text x=\"113.0\" y=\"75.0\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >3</text><line x1=\"116.89934640057525\" y1=\"97.49999999999999\" x2=\"123.82754963085077\" y2=\"101.49999999999999\" stroke=\"#334155\" stroke-width=\"2\" /><text x=\"107.37306695894642\" y=\"95.99999999999999\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >4</text><line x1=\"97.5\" y1=\"116.89934640057525\" x2=\"101.5\" y2=\"123.82754963085077\" stroke=\"#334155\" stroke-width=\"2\" /><text x=\"92.0\" y=\"111.37306695894642\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >5</text><line x1=\"71.0\" y1=\"124.0\" x2=\"71.00000000000001\" y2=\"132.0\" stroke=\"#334155\" stroke-width=\"2\" /><text x=\"71.0\" y=\"117.0\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >6</text><line x1=\"44.49999999999999\" y1=\"116.89934640057524\" x2=\"40.49999999999999\" y2=\"123.82754963085075\" stroke=\"#334155\" stroke-width=\"2\" /><text x=\"50.0\" y=\"111.37306695894642\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >7</text><line x1=\"25.100653599424767\" y1=\"97.50000000000003\" x2=\"18.17245036914926\" y2=\"101.50000000000003\" stroke=\"#334155\" stroke-width=\"2\" /><text x=\"34.62693304105359\" y=\"96.00000000000001\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >8</text><line x1=\"18.0\" y1=\"71.00000000000001\" x2=\"10.0\" y2=\"71.00000000000001\" stroke=\"#334155\" stroke-width=\"2\" /><text x=\"29.0\" y=\"75.00000000000001\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >9</text><line x1=\"25.100653599424753\" y1=\"44.5\" x2=\"18.172450369149246\" y2=\"40.5\" stroke=\"#334155\" stroke-width=\"2\" /><text x=\"34.626933041053576\" y=\"54.0\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >10</text><line x1=\"44.49999999999997\" y1=\"25.100653599424767\" x2=\"40.49999999999997\" y2=\"18.17245036914926\" stroke=\"#334155\" stroke-width=\"2\" /><text x=\"49.999999999999986\" y=\"38.62693304105359\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >11</text><line x1=\"71.0\" y1=\"71.0\" x2=\"86.25\" y2=\"97.41377481542538\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><line x1=\"71.0\" y1=\"71.0\" x2=\"71.0\" y2=\"23.42\" stroke=\"#4338ca\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><circle cx=\"71.0\" cy=\"71.0\" r=\"4\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><text x=\"71.0\" y=\"154\" font-size=\"12.5\" font-weight=\"700\" fill=\"#059669\" text-anchor=\"middle\" >5 pm in Sydney</text></svg>"
+              }
+            },
+            {
+              "explain": "The United States is 15 hours BEHIND Sydney, so take 15 hours away. Go back to midnight first: from 5 pm back to 12 midnight at the start of the day.",
+              "work": "<p>5 pm is \\(17\\) hours after midnight, so \\(17-15=2\\) hours after midnight.</p>"
+            },
+            {
+              "explain": "2 hours after midnight is 2 am, on the same day (Sydney’s date).",
+              "work": "<p>5 pm − 15 hours = 2 am, the same day.</p>"
+            },
+            {
+              "explain": "Check the other options: the next day would be going forward, and 1 am or 3 am would be 16 or 14 hours earlier.",
+              "work": "<p>The answer is B.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "15 hours ahead",
+              "note": "Sydney is ahead, so the United States is earlier: take away 15 hours."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 9",
+            "number": 27,
+            "page": 53,
+            "category": "measurement"
           }
         }
       ]
