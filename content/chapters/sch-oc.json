@@ -6512,6 +6512,858 @@
             "page": 44,
             "category": "word order"
           }
+        },
+        {
+          "id": "sch-oc-t8-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "INFANT is to ADULT as YOUNG is to ?",
+          "options": [
+            "ANTIQUE",
+            "MATURE",
+            "FUTURE",
+            "ANCIENT"
+          ],
+          "answer": 1,
+          "hint": "An infant is a very young person and an adult is a fully grown person. Which word is the grown-up version of “young”?",
+          "steps": [
+            {
+              "explain": "Find the link in the first pair.",
+              "work": "<p>An INFANT is a baby (very young). An ADULT is fully grown. (young → grown up)</p>"
+            },
+            {
+              "explain": "Find the word that is grown up in the same way as YOUNG.",
+              "work": "<p>The word that matches ADULT for YOUNG is MATURE (grown-up, fully developed).</p>"
+            },
+            {
+              "explain": "Check the other options.",
+              "work": "<p>ANTIQUE and ANCIENT mean very old things (objects, not people growing up). FUTURE is a time, not a stage of growth.</p>"
+            },
+            {
+              "explain": "INFANT : ADULT matches YOUNG : MATURE.",
+              "work": "<p>The answer is B.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "INFANT is to ADULT",
+              "note": "Say how the two words differ in age: one is very young, the other is grown up."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 8",
+            "number": 1,
+            "page": 43,
+            "category": "analogies"
+          }
+        },
+        {
+          "id": "sch-oc-t8-q4",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "This table shows a way of coding each letter with a different symbol. How would you write the first line of this old rhyme using the special code?\n\nPAPA HAYDN IS DEAD AND GONE…",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 748 1121\" width=\"95%\" height=\"auto\"><image href=\"/oc/t8-q4.jpg\" x=\"0\" y=\"0\" width=\"748\" height=\"1121\"/></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 3,
+          "hint": "Compare the four options with each other first. All four write PAPA the same way, so the first word cannot help you. Look at the first symbol of the second word (H) and at the symbol for the second word’s other letters.",
+          "steps": [
+            {
+              "explain": "Look at the four options. PAPA (the first word) is coded in exactly the same way in all four, so it cannot tell the options apart.",
+              "work": "<p>The first word is the same in every option. Move on to HAYDN.</p>"
+            },
+            {
+              "explain": "Find H in the table (the envelope symbol) and check the first symbol of the second word in each option.",
+              "work": "<p>Option B writes the second word with a different symbol at the start than A, C and D do, and a different symbol in the fourth word than the others, so B does not match.</p>"
+            },
+            {
+              "explain": "Check A, C and D one letter at a time using the table for the second word, HAYDN (H, A, Y, D, N), and for the last word GONE.",
+              "work": "<p>Option A and option C each use a symbol that is not the table’s symbol for one of these letters.</p>"
+            },
+            {
+              "explain": "Only option D has the right symbol for every letter.",
+              "work": "<p>The answer is D.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "first line of this old rhyme",
+              "note": "Compare the options with each other first: find where they differ and check only those symbols in the table."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 8",
+            "number": 4,
+            "page": 43,
+            "category": "codes"
+          }
+        },
+        {
+          "id": "sch-oc-t8-q5to9",
+          "type": "multipart",
+          "stem": "Questions 5 to 9 refer to the following passage.\n\nNOT ZACKLY\n\nLeigh and Julie were fed up with the weather, and so was Bandit. For the first precious week of the school holidays it had rained without stopping. There was water everywhere… pouring from the cloud-filled sky, running in rivulets down the face of the windowpanes, lying in muddy pools in the garden, cascading along the gutters in the street outside. There had been nothing else to do except stay dry indoors, reading and watching television.\n\nJulie sat slumped in the beanbag with the book she was reading. She looked up in surprise as a sudden shaft of sunlight beamed through the window.\n\n‘I don’t believe it!’ she said, scrambling to her feet. ‘Leigh! It’s stopped raining. There’s blue sky outside. Enough to make a sailor a pair of trousers.’\n\nLeigh, who had been trying to fix the propeller on to his model aeroplane, came up beside her. ‘Let’s get out and go for a walk’, he said, ‘before it starts raining all over again.’\n\n‘Walk?’ Bandit leapt to his feet. With a joyful yelp, he rushed to the door and waited anxiously for it to be opened.\n\n‘We’d better tell Mum where we’re going’, said Julie. ‘Mum!’ she shouted back into the house. ‘We’re going to the paddock to look at the creek.’\n\n‘Then be careful’, called Jean.\n\n‘We will!’\n\nLeigh grabbed parkas from the hook in the passageway and Julie brought boots. Leigh opened the door and Bandit, pushing past, skedaddled down the steps. He sprang around, bounding and barking.\n\n‘Shut up, Bandit!’ said Leigh.\n\nThey hurried off down the street with Bandit, intent on adventure, loping ahead of them. Steam rose from the wet bitumen.\n\nZachary, standing at the living-room window of his home, saw them go. He had stood there every day that week, staring out at the empty street, at the rain and the storm-clouds, waiting for something to happen. Like Leigh and Julie, he was bored. He hurried outside.\n\nSource: Mary Small, Not Zackly, Sydney, Harcourt Brace Jovanovich, 1990, pp. 2–4",
+          "parts": [
+            {
+              "id": "sch-oc-t8-q5",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "Whom, does the story say, was fed up with the weather?",
+              "options": [
+                "Leigh, Julie, Bandit, Zachary",
+                "Leigh, Julie, Bandit, Jean",
+                "Leigh, Julie, Bandit",
+                "Leigh, Julie, Jean, Zachary"
+              ],
+              "answer": 0,
+              "hint": "Find everyone who is described as fed up, bored or tired of the rain, not only in the first sentence. Do not forget the dog, and check the last paragraph.",
+              "steps": [
+                {
+                  "explain": "Read the first sentence.",
+                  "work": "<p>“<mark>Leigh and Julie were fed up with the weather, and so was Bandit</mark>.”</p>"
+                },
+                {
+                  "explain": "Check the last paragraph for anyone else who is unhappy about the weather.",
+                  "work": "<p>“Zachary… had stood there every day that week, staring out at the empty street, at the rain and the storm-clouds… <mark>Like Leigh and Julie, he was bored</mark>.”</p>"
+                },
+                {
+                  "explain": "Count everyone: Leigh, Julie, Bandit and Zachary. Jean (the mother) is never said to be fed up.",
+                  "work": "<p>We are not told whether Jean was bored with the weather.</p>"
+                },
+                {
+                  "explain": "The answer is A."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "fed up with the weather",
+                  "note": "Check the whole passage, not just the first sentence. Zachary also had a hard time with the rain."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 8",
+                "number": 5,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t8-q6",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What are the RIVULETS mentioned in the first paragraph?",
+              "options": [
+                "rivers of water",
+                "small streams",
+                "large drops",
+                "bolts of water"
+              ],
+              "answer": 1,
+              "hint": "Look at where the rivulets are: “running down the face of the windowpanes”. Think about how big the water would be there.",
+              "steps": [
+                {
+                  "explain": "Read the sentence with the word in it.",
+                  "work": "<p>“…running in <mark>rivulets</mark> down the face of the windowpanes…”</p>"
+                },
+                {
+                  "explain": "Think about what is running down a window. It is not a big river, it is thin lines of water.",
+                  "work": "<p>A window is small, so the water running down it makes thin, narrow streams.</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>rivers of water are far too big for a window. Large drops would not “run”. “Bolts of water” is not a real meaning.</p>"
+                },
+                {
+                  "explain": "A rivulet is a small stream.",
+                  "work": "<p>The answer is B.</p>"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "RIVULETS",
+                  "note": "Picture where the water is running (down a window) to work out how big it is."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 8",
+                "number": 6,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t8-q7",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "What does this phrase — ‘Enough to make a sailor a pair of trousers’ — mean?",
+              "options": [
+                "it had stopped raining and now at last the sun was shining",
+                "the sky was a dark blue or navy colour",
+                "the clouds had parted and there was plenty of blue sky",
+                "the clouds were about the same shape as a pair of trousers"
+              ],
+              "answer": 2,
+              "hint": "Julie says this when she sees the sky. A sailor’s uniform is blue. What does she mean about the amount of blue?",
+              "steps": [
+                {
+                  "explain": "Read what Julie says just before the phrase.",
+                  "work": "<p>“It’s stopped raining. <mark>There’s blue sky outside</mark>. Enough to make a sailor a pair of trousers.”</p>"
+                },
+                {
+                  "explain": "Think about what the phrase says. A sailor’s trousers are blue, so enough blue to make a pair of trousers means a decent patch of blue.",
+                  "work": "<p>She is saying there is plenty of blue sky showing between the clouds.</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>A says the sun was shining, but she only says there is blue sky. B is about the colour of the sky. D is silly: she is not talking about the shape of the clouds.</p>"
+                },
+                {
+                  "explain": "The answer is C."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "Enough to make a sailor a pair of trousers",
+                  "note": "Sailors’ uniforms are blue. Link the phrase with “blue sky” in the sentence before it."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 8",
+                "number": 7,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t8-q8",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Why might their mother have told them to ‘be careful’?",
+              "options": [
+                "because they were going through the muddy paddock after the rains",
+                "because it might rain again and they would need parkas and boots",
+                "because they lived in the country and in an isolated area",
+                "because it was slippery and dangerous near the creek"
+              ],
+              "answer": 3,
+              "hint": "Find where they are going and think about the creek after a week of rain.",
+              "steps": [
+                {
+                  "explain": "Find where the children said they were going.",
+                  "work": "<p>“We’re going to the paddock to <mark>look at the creek</mark>.” Then Jean answers: “Then be careful.”</p>"
+                },
+                {
+                  "explain": "Think about a creek after a whole week of rain.",
+                  "work": "<p>The creek would be full and flowing fast, and the ground near it would be wet and slippery. That is dangerous for children.</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>A, B and C are not about danger. Mud, rain and being in the country are not why she says “be careful” right after hearing they are going to the creek.</p>"
+                },
+                {
+                  "explain": "The answer is D."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "be careful",
+                  "note": "Look at the sentence just before the mother says it: where are the children going?"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 8",
+                "number": 8,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t8-q9",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The word skedaddle is originally a word from the United States. What might SKEDDADDLED mean in this story?",
+              "options": [
+                "skittled",
+                "ran away",
+                "knocked over",
+                "brushed past"
+              ],
+              "answer": 1,
+              "hint": "Read the sentence around the word. Bandit is very keen to get out. What does he do down the steps?",
+              "steps": [
+                {
+                  "explain": "Read the sentence with the word in it.",
+                  "work": "<p>“…Bandit, pushing past, <mark>skedaddled</mark> down the steps. He sprang around, bounding and barking.”</p>"
+                },
+                {
+                  "explain": "Think about what Bandit is doing: he is excited to go out and rushes down the steps.",
+                  "work": "<p>He ran away quickly, down the steps and out.</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>skittled and knocked over mean hitting something so that it falls, but nothing falls here. brushed past is already described as “pushing past”.</p>"
+                },
+                {
+                  "explain": "The answer is B."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "SKEDDADDLED",
+                  "note": "Use the sentence: Bandit rushes out of the door as fast as he can."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 8",
+                "number": 9,
+                "category": "comprehension"
+              }
+            }
+          ],
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 8",
+            "number": "5-9",
+            "page": 44,
+            "category": "comprehension"
+          }
+        },
+        {
+          "id": "sch-oc-t8-q14",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Which of the following aeroplanes is not like the other types? (Hint: do not worry about the numbers)",
+          "options": [
+            "Lockheed F111",
+            "Boeing 747",
+            "BAC Aerospatiale Concorde",
+            "Airbus A300"
+          ],
+          "answer": 0,
+          "hint": "Think about what each of these planes is used for. Three of them carry passengers. One does something different.",
+          "steps": [
+            {
+              "explain": "Say what each aeroplane is.",
+              "work": "<p>Boeing 747 — a jumbo passenger jet.</p><p>BAC Aerospatiale Concorde — a supersonic passenger jet.</p><p>Airbus A300 — a passenger jet.</p><p>Lockheed F111 — a military plane (a fighter-bomber).</p>"
+            },
+            {
+              "explain": "Group them.",
+              "work": "<p>Three are passenger jets; the F111 is the only military plane.</p>"
+            },
+            {
+              "explain": "The Lockheed F111 is not like the others.",
+              "work": "<p>The answer is A.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "not like the other types",
+              "note": "Find what three aeroplanes have in common (their job) and which one does not."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 8",
+            "number": 14,
+            "page": 45,
+            "category": "word knowledge"
+          }
+        },
+        {
+          "id": "sch-oc-t8-q15",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Here is a riddle from The Hobbit.\n\nWhat has roots as nobody sees,\nIs ________ trees\nUp, up it goes,\nAnd yet never grows?\n\nFrom: J. R. R. Tolkien, The Hobbit, London, Unwin, p.79\n\nThe answer to the riddle is ‘Mountain’. Which words are missing from this rhyme?",
+          "options": [
+            "smaller than",
+            "taller than",
+            "like all",
+            "first like"
+          ],
+          "answer": 1,
+          "hint": "The answer to the riddle is a mountain. Think how a mountain compares in height with trees. The next lines also say “up, up it goes”.",
+          "steps": [
+            {
+              "explain": "Think about the answer to the riddle: a mountain.",
+              "work": "<p>The second line is about a mountain and trees: “Is ________ trees”.</p>"
+            },
+            {
+              "explain": "Compare a mountain with trees.",
+              "work": "<p>A mountain is much higher than trees. The next line “Up, up it goes” also talks about going up.</p>"
+            },
+            {
+              "explain": "Check the other options.",
+              "work": "<p>smaller than — the opposite. like all and first like do not make sense in front of “trees”.</p>"
+            },
+            {
+              "explain": "The missing words are “taller than”.",
+              "work": "<p>The answer is B.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which words are missing from this rhyme",
+              "note": "Use the answer given in the question (Mountain) to work out the missing words."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 8",
+            "number": 15,
+            "page": 46,
+            "category": "word order"
+          }
+        },
+        {
+          "id": "sch-oc-t8-q16",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "REDUCE is to MAGNIFY as LESSEN is to ?",
+          "options": [
+            "DECREASE",
+            "DEVELOP",
+            "INCREASE",
+            "SPREAD"
+          ],
+          "answer": 2,
+          "hint": "Are REDUCE and MAGNIFY the same or opposite? Use the same link for LESSEN.",
+          "steps": [
+            {
+              "explain": "Find the link in the first pair.",
+              "work": "<p>REDUCE means to make smaller and MAGNIFY means to make bigger: they are opposites.</p>"
+            },
+            {
+              "explain": "Find the opposite of LESSEN.",
+              "work": "<p>LESSEN means to make less. Its opposite is INCREASE (to make more).</p>"
+            },
+            {
+              "explain": "Check the other options.",
+              "work": "<p>DECREASE means the same as lessen. DEVELOP and SPREAD are not opposites of lessen.</p>"
+            },
+            {
+              "explain": "REDUCE : MAGNIFY matches LESSEN : INCREASE.",
+              "work": "<p>The answer is C.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "REDUCE is to MAGNIFY",
+              "note": "Decide first whether the two words mean the same thing or the opposite."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 8",
+            "number": 16,
+            "page": 46,
+            "category": "analogies"
+          }
+        },
+        {
+          "id": "sch-oc-t8-q19",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Here is a secret code.\n\n1232  45  567.  567  45  6  768.\n\nWhich sentence could stand for this code?",
+          "options": [
+            "Take it Sam. Sam is a man.",
+            "Come in Joe. Joe is a man.",
+            "Here is Pat. Pat is a dog.",
+            "Here is Sam. Sam is a man."
+          ],
+          "answer": 3,
+          "hint": "Count the letters in each code word: 1232 has 4, 45 has 2, 567 has 3, 6 has 1 and 768 has 3. Then see which option has words of exactly these lengths and repeats words in the same places.",
+          "steps": [
+            {
+              "explain": "Write down the length of each code word.",
+              "work": "<p>The code has 7 words: 4, 2, 3, 3, 2, 1, 3 letters. The 3rd and 4th words use the same digits (567) and the 2nd and 5th words use the same digits (45), so those words are the same.</p>"
+            },
+            {
+              "explain": "Check the word lengths and repeats in each option.",
+              "work": "<p>Take it Sam. Sam is a man: 4, 2, 3 | 3, 2, 1, 3 but “it” and “is” are different 2-letter words, while the code repeats 45. ✗</p><p>Come in Joe. Joe is a man: “in” and “is” are different words. ✗</p><p>Here is Pat. Pat is a dog: the lengths match, but the code 567 has a 7 that also appears in 768, and PAT and DOG do not share any letter. ✗</p><p>Here is Sam. Sam is a man: “is” repeats, “Sam” repeats, and SAM and MAN share the letters M and A. ✓</p>"
+            },
+            {
+              "explain": "Write the digits under the letters of option D.",
+              "work": "<p>HERE = 1232 (H1 E2 R3 E2), IS = 45 (I4 S5), SAM = 567 (S5 A6 M7), SAM = 567, IS = 45, A = 6, MAN = 768 (M7 A6 N8). Every digit is the same letter each time. ✓</p>"
+            },
+            {
+              "explain": "Only option D fits the code.",
+              "work": "<p>The answer is D.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Here is a secret code",
+              "note": "Compare the pattern of repeated code numbers with the repeated words in each option. Also count the letters in each word."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 8",
+            "number": 19,
+            "page": 46,
+            "category": "codes"
+          }
+        },
+        {
+          "id": "sch-oc-t8-q20to24",
+          "type": "multipart",
+          "stem": "Questions 20 to 24 refer to the following passage.\n\nDECOY GANNETS\n\nIn January 1988 there were six gannets (sea birds) on Cat Island, an islet east of Flinders Island in Bass Strait. Eighty years ago a huge colony of 10 000 gannets nested there. In 1950 there were only 200 left. The numbers decreased until, in 1984, a bushfire killed most of the remaining few birds.\n\nHumans were the gannets’ main enemies. Some fishermen killed them to use as bait in crayfish pots. Other people used them as targets for shooting.\n\nThe Australasian gannet is a large bird with a white and black body and golden feathers on its head. In flight its wings stretch almost two metres across.\n\nFor ten years officers of the Department of Lands, Parks and Wildlife had been trying to get gannets to come back to their old breeding ground. In 1987 and 1988 fake gannets were used as decoys. The decoy gannets were moulded from polyurethane and wire, and weighted with bricks. They were painted by school children on Flinders Island, who took care with all the details, such as eye and beak markings. The decoys are very lifelike. From a distance it is difficult to tell which is a fake and which is a real bird.\n\nWhen the fake birds were put on Cat Island in 1987, gannets landed immediately. They started tapping beaks with the decoys. In that first year, one started nesting among the decoys. In 1988 six gannets arrived, nested and hatched three chicks.\n\nOther birds have been fooled by the decoys. A pair of sea eagles (enemies of the gannet) swooped and attacked. They damaged some of the decoys by ripping at them with their talons, tearing their heads off and smashing their beaks.\n\nEveryone, including the children who painted the decoys, hopes that the gannets have returned permanently, and that their numbers will rise every year.\n\nSource: Edel Wignell, Saving Wildlife, Sydney, Harcourt Brace Jovanovich, 1990, pp. 6–7",
+          "parts": [
+            {
+              "id": "sch-oc-t8-q20",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Where is Cat Island? It is an island:",
+              "options": [
+                "off the east coast of Australia",
+                "between Tasmania and Victoria",
+                "near South Australia",
+                "in Torres Strait"
+              ],
+              "answer": 1,
+              "hint": "Find where the passage puts Cat Island. It names a piece of water near another island.",
+              "steps": [
+                {
+                  "explain": "Find the sentence.",
+                  "work": "<p>“…six gannets on Cat Island, an islet east of Flinders Island <mark>in Bass Strait</mark>.”</p>"
+                },
+                {
+                  "explain": "Use what you know: Bass Strait is the sea between Tasmania and the south coast of Victoria.",
+                  "work": "<p>So Cat Island, which is in Bass Strait, is between Tasmania and Victoria.</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>Torres Strait is in the far north of Australia. South Australia is on the other side of Victoria. The island is not off the east coast.</p>"
+                },
+                {
+                  "explain": "The answer is B."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "Where is Cat Island",
+                  "note": "The passage gives a clue: the name of the strait."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 8",
+                "number": 20,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t8-q21",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "When were most of the original 10 000 gannets killed?",
+              "options": [
+                "they were killed by shooters and fishermen between 1870 and 1950",
+                "they were killed by shooters and fishermen after 1950",
+                "they were killed in the bushfire of 1984",
+                "they were extinct in 1950"
+              ],
+              "answer": 0,
+              "hint": "Work out the years from the passage: “eighty years ago” and “in 1950 there were only 200 left”.",
+              "steps": [
+                {
+                  "explain": "Find the time line in the first paragraph.",
+                  "work": "<p>“<mark>Eighty years ago</mark> a huge colony of 10 000 gannets nested there. <mark>In 1950 there were only 200 left</mark>.”</p>"
+                },
+                {
+                  "explain": "The passage is about 1988. Eighty years before 1988 is 1908, so about 1870–1950 is the long period when the colony shrank from 10 000 to 200.",
+                  "work": "<p>\\(1988-80=1908\\); by 1950 only 200 were left.</p>"
+                },
+                {
+                  "explain": "Who killed them?",
+                  "work": "<p>The second paragraph says humans — fishermen and shooters — were the main enemies.</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>B — after 1950 only 200 birds were left. C — the bushfire killed “the remaining few”, not most of the 10 000. D — 200 were still alive in 1950.</p>"
+                },
+                {
+                  "explain": "The answer is A."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "most of the original 10 000",
+                  "note": "Look at how the numbers changed over time and who the passage says killed them."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 8",
+                "number": 21,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t8-q22",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "How do we know that the Australian gannet is a large bird?",
+              "options": [
+                "it has a large black and white body",
+                "it has large golden feathers on its head",
+                "its wings stretch two metres across",
+                "they were used as bait and as targets"
+              ],
+              "answer": 2,
+              "hint": "Find the sentence that describes the gannet. Which detail is a measurement that shows size?",
+              "steps": [
+                {
+                  "explain": "Find the sentence.",
+                  "work": "<p>“The Australasian gannet is a large bird… In flight <mark>its wings stretch almost two metres across</mark>.”</p>"
+                },
+                {
+                  "explain": "Only one detail uses a measurement.",
+                  "work": "<p>Two metres is about as wide as a person is tall: a big wingspan. The other details are about colour or about how people used the birds.</p>"
+                },
+                {
+                  "explain": "The answer is C."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "large bird",
+                  "note": "Look for a detail that gives a size, not a colour."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 8",
+                "number": 22,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t8-q23",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What is a DECOY?",
+              "options": [
+                "a fake designed to attract real gannets",
+                "a lifelike model that is difficult to tell from a real bird",
+                "a moulded and painted version of a gannet that can tap beaks with the real birds",
+                "a lifelike version of a gannet with beaks, talons and painted heads"
+              ],
+              "answer": 0,
+              "hint": "The meaning of decoy is the idea behind it: what was the fake bird for? Look at why the officers used the fake gannets.",
+              "steps": [
+                {
+                  "explain": "Find why the fake gannets were used.",
+                  "work": "<p>“…officers… had been trying <mark>to get gannets to come back</mark> to their old breeding ground. In 1987 and 1988 fake gannets were used as decoys.”</p>"
+                },
+                {
+                  "explain": "So what is a decoy?",
+                  "work": "<p>A decoy is a fake bird used to attract real birds to a place.</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>B, C and D only describe what the decoys look like or do, not what they are for.</p>"
+                },
+                {
+                  "explain": "The answer is A."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "What is a DECOY",
+                  "note": "Ask what the fake birds were used for."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 8",
+                "number": 23,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t8-q24",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What is the main topic of this passage?",
+              "options": [
+                "it shows how gannets became extinct",
+                "it is a story of how the decoy gannets were made",
+                "it shows that humans were the gannets’ main enemies",
+                "it shows how children and adults can find ways to save wildlife from extinction"
+              ],
+              "answer": 3,
+              "hint": "The main topic covers the whole passage. Think about the passage from the start (gannets were disappearing) to the end (hoping they come back).",
+              "steps": [
+                {
+                  "explain": "Say what each part is about.",
+                  "work": "<p>Paragraphs 1–2: the gannets nearly died out and humans were the main enemy.</p><p>Paragraphs 4–6: officers and children made decoys to bring them back, and it worked.</p><p>Last paragraph: everyone hopes the gannets stay.</p>"
+                },
+                {
+                  "explain": "Find the idea that covers all of it.",
+                  "work": "<p>The passage is about people, including children, working together to save the gannets from dying out.</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>A and C only cover the first part. B only covers the middle part and the gannets did not become extinct.</p>"
+                },
+                {
+                  "explain": "The answer is D."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "main topic",
+                  "note": "The main topic must cover the beginning, the middle and the end of the passage."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 8",
+                "number": 24,
+                "category": "comprehension"
+              }
+            }
+          ],
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 8",
+            "number": "20-24",
+            "page": 46,
+            "category": "comprehension"
+          }
+        },
+        {
+          "id": "sch-oc-t8-q29",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Read this short passage. Then answer the question below.\n\nOBITUARY\nPaulo Freire\n1921–1997\n\nA Brazilian educator, renowned for his radical, practical ways of teaching illiterates how to read, Paulo Freire has died of a heart attack in Sao Paulo. He was 75.\n\nSource: The Guardian and Sydney Morning Herald, 14 May 1997\n\nWhich word best gives the meaning of OBITUARY?",
+          "options": [
+            "a notice of death",
+            "a funeral notice",
+            "a report on the life of someone who died",
+            "a memorial service"
+          ],
+          "answer": 2,
+          "hint": "Read the passage: it does more than say that someone has died. What else does it tell you about him?",
+          "steps": [
+            {
+              "explain": "Look at what the passage includes.",
+              "work": "<p>It says who he was (<mark>a Brazilian educator</mark>), what he was famous for (<mark>teaching illiterates how to read</mark>), and how and when he died.</p>"
+            },
+            {
+              "explain": "Compare with the options.",
+              "work": "<p>A notice of death and a funeral notice only say that someone has died or when the funeral is. A memorial service is a ceremony, not a piece of writing. This passage tells about his life as well as his death.</p>"
+            },
+            {
+              "explain": "An obituary is a report on the life of someone who has died.",
+              "work": "<p>The answer is C.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "OBITUARY",
+              "note": "Look at what the passage tells you about the person: is it just that he died?"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 8",
+            "number": 29,
+            "page": 48,
+            "category": "word knowledge"
+          }
+        },
+        {
+          "id": "sch-oc-t8-q30",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If these words are put together in the correct order they will make a sentence. Which is the fourth word of this sentence?\n\nBOUGHT BY COMPANY ENGINEERING OLD SHORELINE THE THE WAS WORKSHOP",
+          "options": [
+            "by",
+            "bought",
+            "workshop",
+            "was"
+          ],
+          "answer": 3,
+          "hint": "Look for groups: “the old workshop”, “was bought by” and “the Shoreline Engineering Company”.",
+          "steps": [
+            {
+              "explain": "Find the groups that go together.",
+              "work": "<p>“The old workshop” is the thing that was bought.</p><p>“was bought by” says what happened.</p><p>“the Shoreline Engineering Company” is who bought it.</p>"
+            },
+            {
+              "explain": "Join the groups to make a sentence.",
+              "work": "<p>The old workshop was bought by the Shoreline Engineering Company.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 140\" width=\"90%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"4\" y=\"4\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"45.0\" y=\"23\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >The</text><text x=\"12\" y=\"41\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >1</text><rect x=\"92\" y=\"4\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"133.0\" y=\"23\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >old</text><text x=\"100\" y=\"41\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >2</text><rect x=\"180\" y=\"4\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"221.0\" y=\"23\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >workshop</text><text x=\"188\" y=\"41\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >3</text><rect x=\"268\" y=\"4\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"309.0\" y=\"23\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >was</text><text x=\"276\" y=\"41\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >4</text><rect x=\"4\" y=\"48\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"45.0\" y=\"67\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >bought</text><text x=\"12\" y=\"85\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >5</text><rect x=\"92\" y=\"48\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"133.0\" y=\"67\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >by</text><text x=\"100\" y=\"85\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >6</text><rect x=\"180\" y=\"48\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"221.0\" y=\"67\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >the</text><text x=\"188\" y=\"85\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >7</text><rect x=\"268\" y=\"48\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"309.0\" y=\"67\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >Shoreline</text><text x=\"276\" y=\"85\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >8</text><rect x=\"4\" y=\"92\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"45.0\" y=\"111\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >Engineering</text><text x=\"12\" y=\"129\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >9</text><rect x=\"92\" y=\"92\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"133.0\" y=\"111\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >Company</text><text x=\"100\" y=\"129\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >10</text></svg>"
+              }
+            },
+            {
+              "explain": "Count to the fourth word.",
+              "work": "<p>1 The, 2 old, 3 workshop, 4 was ← the fourth word</p>"
+            },
+            {
+              "explain": "The answer is D."
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "fourth word",
+              "note": "Build the whole sentence first, then count to the fourth word."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 8",
+            "number": 30,
+            "page": 48,
+            "category": "word order"
+          }
         }
       ]
     },
@@ -11452,6 +12304,664 @@
             "test": "Test 7",
             "number": 28,
             "page": 43,
+            "category": "number series"
+          }
+        },
+        {
+          "id": "sch-oc-t8-q2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the missing number in the square marked with a question mark (?). The numbers have the same total downwards and across. Each number is used only once. All the numbers in the square are from 1 to 9. (Hint: You may have to find some of the other numbers before you can find the number you want.)",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 561 235\" width=\"45%\" height=\"auto\"><image href=\"/oc/t8-q2.jpg\" x=\"0\" y=\"0\" width=\"561\" height=\"235\"/></svg>"
+          },
+          "options": [
+            "8",
+            "7",
+            "6",
+            "5"
+          ],
+          "answer": 0,
+          "hint": "Add up all the numbers 1 to 9 and divide by 3 to find what each row and column adds up to. Then find a row or column that is nearly complete.",
+          "steps": [
+            {
+              "explain": "Every number from 1 to 9 is used once, so all nine add up to 45. There are 3 rows with the same total, so each row adds up to 45 ÷ 3.",
+              "work": "<p>\\(1+2+\\dots+9=45\\);  \\(45\\div3=15\\). Each row and each column adds to \\(15\\).</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 198 170\" width=\"55%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"8\" y=\"8\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"30\" y=\"37\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >9</text><rect x=\"52\" y=\"8\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"74\" y=\"37\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" ></text><rect x=\"96\" y=\"8\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"118\" y=\"37\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >1</text><rect x=\"8\" y=\"52\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"30\" y=\"81\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >4</text><rect x=\"52\" y=\"52\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"74\" y=\"81\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >3</text><rect x=\"96\" y=\"52\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"118\" y=\"81\" font-size=\"19\" font-weight=\"800\" fill=\"#e11d48\" text-anchor=\"middle\" >?</text><rect x=\"8\" y=\"96\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"30\" y=\"125\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" ></text><rect x=\"52\" y=\"96\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"74\" y=\"125\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >7</text><rect x=\"96\" y=\"96\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"118\" y=\"125\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >6</text><text x=\"150\" y=\"37\" font-size=\"13\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"start\" >= 15</text><text x=\"150\" y=\"81\" font-size=\"13\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"start\" >= 15</text><text x=\"150\" y=\"125\" font-size=\"13\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"start\" >= 15</text><text x=\"30\" y=\"156\" font-size=\"12\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"middle\" >15</text><text x=\"74\" y=\"156\" font-size=\"12\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"middle\" >15</text><text x=\"118\" y=\"156\" font-size=\"12\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"middle\" >15</text></svg>"
+              }
+            },
+            {
+              "explain": "Use the left column: 9 + 4 + the bottom-left number = 15.",
+              "work": "<p>\\(9+4=13\\), so the bottom-left number is \\(15-13=2\\).</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 148 148\" width=\"45%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"8\" y=\"8\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"30\" y=\"37\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >9</text><rect x=\"52\" y=\"8\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"74\" y=\"37\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" ></text><rect x=\"96\" y=\"8\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"118\" y=\"37\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >1</text><rect x=\"8\" y=\"52\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"30\" y=\"81\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >4</text><rect x=\"52\" y=\"52\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"74\" y=\"81\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >3</text><rect x=\"96\" y=\"52\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"118\" y=\"81\" font-size=\"19\" font-weight=\"800\" fill=\"#e11d48\" text-anchor=\"middle\" >?</text><rect x=\"8\" y=\"96\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"30\" y=\"125\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >2</text><rect x=\"52\" y=\"96\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"74\" y=\"125\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >7</text><rect x=\"96\" y=\"96\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"118\" y=\"125\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >6</text></svg>"
+              }
+            },
+            {
+              "explain": "Use the bottom row: 2 + 7 + 6 = 15 ✓ (this checks the number we found).",
+              "work": "<p>\\(2+7+6=15\\)</p>"
+            },
+            {
+              "explain": "Use the right column: 1 + ? + 6 = 15.",
+              "work": "<p>\\(1+6=7\\), so \\(?=15-7=8\\).</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 148 148\" width=\"45%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"8\" y=\"8\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"30\" y=\"37\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >9</text><rect x=\"52\" y=\"8\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"74\" y=\"37\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >4</text><rect x=\"96\" y=\"8\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"118\" y=\"37\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >1</text><rect x=\"8\" y=\"52\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"30\" y=\"81\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >4</text><rect x=\"52\" y=\"52\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"74\" y=\"81\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >3</text><rect x=\"96\" y=\"52\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"118\" y=\"81\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >8</text><rect x=\"8\" y=\"96\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"30\" y=\"125\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >2</text><rect x=\"52\" y=\"96\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"74\" y=\"125\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >7</text><rect x=\"96\" y=\"96\" width=\"44\" height=\"44\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"118\" y=\"125\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >6</text></svg>"
+              }
+            },
+            {
+              "explain": "Check the middle row: 4 + 3 + 8 = 15 ✓ The missing number is 8.",
+              "work": "<p>The answer is A.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "same total downwards and across",
+              "note": "Find the total first: all the numbers 1–9 add up to 45, shared between 3 rows."
+            },
+            {
+              "text": "Each number is used only once",
+              "note": "The missing numbers are the ones from 1 to 9 that you cannot see yet."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 8",
+            "number": 2,
+            "page": 43,
+            "category": "arithmetic"
+          }
+        },
+        {
+          "id": "sch-oc-t8-q3",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Anthony works at the AMI Factory as a second year apprentice. He earns around \\(\\$7\\) an hour. He works \\(8\\frac12\\) hours each day from Monday to Thursday plus 4 hours on Friday. Which calculation shows correctly how much he earns each week?",
+          "options": [
+            "\\(\\$7\\times4\\text{ days}\\times8\\frac12\\text{ hours}\\times4\\text{ hours}=\\$258\\)",
+            "\\((\\$7\\times4\\text{ days}\\times8\\frac12\\text{ hours})+(\\$7\\times4\\text{ hours})=\\$264\\)",
+            "\\(\\$7\\times38\\text{ hours}=\\$266\\)",
+            "\\(\\$7\\times37\\text{ hours}=\\$259\\)"
+          ],
+          "answer": 2,
+          "hint": "First find how many hours he works in the week. Then multiply by the pay for one hour. Check that the hours really add to the number used in the calculation.",
+          "steps": [
+            {
+              "explain": "Find the hours from Monday to Thursday.",
+              "work": "<p>\\(4\\text{ days}\\times8\\frac12\\text{ hours}=4\\times8.5=34\\) hours</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 88\" width=\"85%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"8\" y=\"8\" width=\"58\" height=\"48\" rx=\"8\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"1.8\" /><text x=\"37\" y=\"26\" font-size=\"11.5\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >Mon</text><text x=\"37\" y=\"46\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >8.5 h</text><rect x=\"74\" y=\"8\" width=\"58\" height=\"48\" rx=\"8\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"1.8\" /><text x=\"103\" y=\"26\" font-size=\"11.5\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >Tue</text><text x=\"103\" y=\"46\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >8.5 h</text><rect x=\"140\" y=\"8\" width=\"58\" height=\"48\" rx=\"8\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"1.8\" /><text x=\"169\" y=\"26\" font-size=\"11.5\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >Wed</text><text x=\"169\" y=\"46\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >8.5 h</text><rect x=\"206\" y=\"8\" width=\"58\" height=\"48\" rx=\"8\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"1.8\" /><text x=\"235\" y=\"26\" font-size=\"11.5\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >Thu</text><text x=\"235\" y=\"46\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >8.5 h</text><rect x=\"272\" y=\"8\" width=\"58\" height=\"48\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.8\" /><text x=\"301\" y=\"26\" font-size=\"11.5\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >Fri</text><text x=\"301\" y=\"46\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >4 h</text><text x=\"170\" y=\"78\" font-size=\"12.5\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"middle\" >4 × 8½ = 34 hours, plus 4 hours = 38 hours</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the 4 hours on Friday.",
+              "work": "<p>\\(34+4=38\\) hours in the week</p>"
+            },
+            {
+              "explain": "Multiply the hours by the pay for one hour.",
+              "work": "<p>\\(\\$7\\times38=\\$266\\)</p>"
+            },
+            {
+              "explain": "Check the other options.",
+              "work": "<p>A multiplies the hours together, which is wrong (and \\(7\\times4\\times8.5\\times4\\) is not \\(258\\)). B works out to \\(\\$238+\\$28=\\$266\\), not \\(\\$264\\), so its answer is wrong. D uses \\(37\\) hours, but he works \\(38\\).</p>"
+            },
+            {
+              "explain": "Only option C has the right number of hours and the right total.",
+              "work": "<p>The answer is C.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\(8\\frac12\\) hours each day from Monday to Thursday",
+              "note": "That is 4 days at 8½ hours. Find the total, then add Friday."
+            },
+            {
+              "text": "Which calculation shows correctly",
+              "note": "Check the hours and the final amount of each option."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 8",
+            "number": 3,
+            "page": 43,
+            "category": "calculation problems"
+          }
+        },
+        {
+          "id": "sch-oc-t8-q10",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Which pattern comes next in this series and fills the square with the question mark?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 715 600\" width=\"85%\" height=\"auto\"><image href=\"/oc/t8-q10.jpg\" x=\"0\" y=\"0\" width=\"715\" height=\"600\"/></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 3,
+          "hint": "The series has two rows. Look at the top row first: it repeats after four squares. Then see how the bottom row uses the same four squares.",
+          "steps": [
+            {
+              "explain": "Look at the top row. The same four squares come round again and again.",
+              "work": "<p>Square 1: ❖ top-left, ■ bottom-right.</p><p>Square 2: ✸ top-right, ♣ bottom-left.</p><p>Square 3: ♣ top-left, ✸ bottom-right.</p><p>Square 4: ■ top-right, ❖ bottom-left.</p><p>Squares 5, 6, 7 and 8 repeat squares 1, 2, 3 and 4.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 632 104\" width=\"95%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><g transform=\"translate(0 0)\"><rect x=\"4\" y=\"4\" width=\"70\" height=\"70\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.8\" /><text x=\"22\" y=\"30\" font-size=\"20\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >❖</text><text x=\"56\" y=\"62\" font-size=\"20\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >■</text></g><text x=\"39\" y=\"94\" font-size=\"11.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >1</text><g transform=\"translate(78 0)\"><rect x=\"4\" y=\"4\" width=\"70\" height=\"70\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.8\" /><text x=\"56\" y=\"30\" font-size=\"20\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >✸</text><text x=\"22\" y=\"62\" font-size=\"20\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >♣</text></g><text x=\"117\" y=\"94\" font-size=\"11.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >2</text><g transform=\"translate(156 0)\"><rect x=\"4\" y=\"4\" width=\"70\" height=\"70\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.8\" /><text x=\"22\" y=\"30\" font-size=\"20\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >♣</text><text x=\"56\" y=\"62\" font-size=\"20\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >✸</text></g><text x=\"195\" y=\"94\" font-size=\"11.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >3</text><g transform=\"translate(234 0)\"><rect x=\"4\" y=\"4\" width=\"70\" height=\"70\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.8\" /><text x=\"56\" y=\"30\" font-size=\"20\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >■</text><text x=\"22\" y=\"62\" font-size=\"20\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >❖</text></g><text x=\"273\" y=\"94\" font-size=\"11.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >4</text><g transform=\"translate(312 0)\"><rect x=\"4\" y=\"4\" width=\"70\" height=\"70\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.8\" /><text x=\"22\" y=\"30\" font-size=\"20\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >❖</text><text x=\"56\" y=\"62\" font-size=\"20\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >■</text></g><text x=\"351\" y=\"94\" font-size=\"11.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >5</text><g transform=\"translate(390 0)\"><rect x=\"4\" y=\"4\" width=\"70\" height=\"70\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.8\" /><text x=\"56\" y=\"30\" font-size=\"20\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >✸</text><text x=\"22\" y=\"62\" font-size=\"20\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >♣</text></g><text x=\"429\" y=\"94\" font-size=\"11.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >6</text><g transform=\"translate(468 0)\"><rect x=\"4\" y=\"4\" width=\"70\" height=\"70\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.8\" /><text x=\"22\" y=\"30\" font-size=\"20\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >♣</text><text x=\"56\" y=\"62\" font-size=\"20\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >✸</text></g><text x=\"507\" y=\"94\" font-size=\"11.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >7</text><g transform=\"translate(546 0)\"><rect x=\"4\" y=\"4\" width=\"70\" height=\"70\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.8\" /><text x=\"56\" y=\"30\" font-size=\"20\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >■</text><text x=\"22\" y=\"62\" font-size=\"20\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >❖</text></g><text x=\"585\" y=\"94\" font-size=\"11.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >8</text></svg>"
+              }
+            },
+            {
+              "explain": "Now look at the bottom row. It uses the same four squares, but each pair of neighbours has swapped places: square 2 comes first, then square 1, then square 4, then square 3.",
+              "work": "<p>Bottom row: 2, 1, 4, 3, then 2, 1, 4, 3 again. The book explains this as a regular series of two patterns that cross each other.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 632 104\" width=\"98%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><g transform=\"translate(0 0)\"><rect x=\"4\" y=\"4\" width=\"70\" height=\"70\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.8\" /><text x=\"56\" y=\"30\" font-size=\"20\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >✸</text><text x=\"22\" y=\"62\" font-size=\"20\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >♣</text></g><text x=\"39\" y=\"94\" font-size=\"11.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >1</text><g transform=\"translate(78 0)\"><rect x=\"4\" y=\"4\" width=\"70\" height=\"70\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.8\" /><text x=\"22\" y=\"30\" font-size=\"20\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >❖</text><text x=\"56\" y=\"62\" font-size=\"20\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >■</text></g><text x=\"117\" y=\"94\" font-size=\"11.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >2</text><g transform=\"translate(156 0)\"><rect x=\"4\" y=\"4\" width=\"70\" height=\"70\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.8\" /><text x=\"56\" y=\"30\" font-size=\"20\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >■</text><text x=\"22\" y=\"62\" font-size=\"20\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >❖</text></g><text x=\"195\" y=\"94\" font-size=\"11.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >3</text><g transform=\"translate(234 0)\"><rect x=\"4\" y=\"4\" width=\"70\" height=\"70\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.8\" /><text x=\"22\" y=\"30\" font-size=\"20\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >♣</text><text x=\"56\" y=\"62\" font-size=\"20\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >✸</text></g><text x=\"273\" y=\"94\" font-size=\"11.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >4</text><g transform=\"translate(312 0)\"><rect x=\"4\" y=\"4\" width=\"70\" height=\"70\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.8\" /><text x=\"56\" y=\"30\" font-size=\"20\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >✸</text><text x=\"22\" y=\"62\" font-size=\"20\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >♣</text></g><text x=\"351\" y=\"94\" font-size=\"11.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >5</text><g transform=\"translate(390 0)\"><rect x=\"4\" y=\"4\" width=\"70\" height=\"70\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.8\" /><text x=\"22\" y=\"30\" font-size=\"20\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >❖</text><text x=\"56\" y=\"62\" font-size=\"20\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >■</text></g><text x=\"429\" y=\"94\" font-size=\"11.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >6</text><g transform=\"translate(468 0)\"><rect x=\"4\" y=\"4\" width=\"70\" height=\"70\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.8\" /><text x=\"56\" y=\"30\" font-size=\"20\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >■</text><text x=\"22\" y=\"62\" font-size=\"20\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >❖</text></g><text x=\"507\" y=\"94\" font-size=\"11.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >7</text><g transform=\"translate(546 0)\"><rect x=\"4\" y=\"4\" width=\"70\" height=\"70\" rx=\"0\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2.4\" /><text x=\"22\" y=\"30\" font-size=\"20\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >♣</text><text x=\"56\" y=\"62\" font-size=\"20\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >✸</text></g><text x=\"585\" y=\"94\" font-size=\"11.5\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"middle\" >8</text></svg>"
+              }
+            },
+            {
+              "explain": "The question mark is the 8th square of the bottom row. In the bottom row the order 2, 1, 4, 3 repeats, so the 8th square is square 3 of the four.",
+              "work": "<p>Square 3 has ♣ at the top-left and ✸ at the bottom-right.</p>"
+            },
+            {
+              "explain": "Find the option with ♣ at the top-left and ✸ at the bottom-right.",
+              "work": "<p>D has ♣ at the top-left and ✸ at the bottom-right. ✓ A has ✸ at the top-left, B has ✸ at the top-right and C has ■ at the bottom-right. The answer is D.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "fills the square with the question mark",
+              "note": "The top row repeats every four squares. The bottom row uses the same four squares in a different order."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 8",
+            "number": 10,
+            "page": 45,
+            "category": "figure sequences"
+          }
+        },
+        {
+          "id": "sch-oc-t8-q11to12",
+          "type": "multipart",
+          "stem": "Questions 11 and 12 refer to the following information.\n\nThe Plimsoll line is a safety line that is painted on both sides of a ship. A ship may be safely loaded until this line is reached. The circle with the line through it stands for the original Plimsoll Mark. The top line is the deck line. The other symbols (TF, F, TS, S, W, WNA and LR) also have special meanings.\n\nThe figures show the amount of water the ship is drawing. This is the amount of water needed for the ship to float. The Plimsoll line is named after Samuel Plimsoll (1824–1898) who was responsible for its introduction.\n\nLook at the chart showing some Plimsoll marks.",
+          "parts": [
+            {
+              "id": "sch-oc-t8-q11",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "From the chart above, what are the numbers for the original Plimsoll Mark and the Deck Line?",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 748 396\" width=\"80%\" height=\"auto\"><image href=\"/oc/t8-q11.jpg\" x=\"0\" y=\"0\" width=\"748\" height=\"396\"/></svg>"
+              },
+              "options": [
+                "38, 42",
+                "38, 40",
+                "36, 42",
+                "36, 38"
+              ],
+              "answer": 0,
+              "hint": "Find the circle with the line through it (the original Plimsoll Mark) and the top line (the Deck Line). Read the number on the scale next to each.",
+              "steps": [
+                {
+                  "explain": "Find the original Plimsoll Mark: the circle with a line through it. Read the scale number beside its line.",
+                  "work": "<p>The line through the circle is level with 38 on the scale.</p>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 190\" width=\"85%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><line x1=\"60\" y1=\"200\" x2=\"330\" y2=\"200\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><text x=\"54\" y=\"204\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"end\" >36</text><line x1=\"60\" y1=\"140\" x2=\"330\" y2=\"140\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><text x=\"54\" y=\"144\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"end\" >38</text><line x1=\"60\" y1=\"80\" x2=\"330\" y2=\"80\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><text x=\"54\" y=\"84\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"end\" >40</text><line x1=\"60\" y1=\"20\" x2=\"330\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><text x=\"54\" y=\"24\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"end\" >42</text><text x=\"68\" y=\"16\" font-size=\"12\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >TF</text><text x=\"68\" y=\"76\" font-size=\"12\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >F</text><text x=\"198\" y=\"76\" font-size=\"12\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >TS</text><text x=\"198\" y=\"136\" font-size=\"12\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >S</text><text x=\"68\" y=\"136\" font-size=\"12\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >W</text><text x=\"68\" y=\"196\" font-size=\"12\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >WNA</text><circle cx=\"190\" cy=\"140\" r=\"18\" fill=\"none\" stroke=\"#059669\" stroke-width=\"3\" /><line x1=\"150\" y1=\"140\" x2=\"230\" y2=\"140\" stroke=\"#059669\" stroke-width=\"3\" /><text x=\"190\" y=\"174\" font-size=\"12\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"middle\" >original Plimsoll Mark: 38</text><line x1=\"150\" y1=\"20\" x2=\"330\" y2=\"20\" stroke=\"#f59e0b\" stroke-width=\"3\" /><text x=\"240\" y=\"12\" font-size=\"12\" font-weight=\"800\" fill=\"#b45309\" text-anchor=\"middle\" >Deck Line: 42</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Find the Deck Line. The passage says it is the top line.",
+                  "work": "<p>The top line is level with 42 on the scale.</p>"
+                },
+                {
+                  "explain": "Put the two numbers together.",
+                  "work": "<p>Original Plimsoll Mark: 38; Deck Line: 42. The pair is 38, 42.</p>"
+                },
+                {
+                  "explain": "Check the other options: 40 is the fresh-water line, and 36 is the lowest mark (WNA).",
+                  "work": "<p>The answer is A.</p>"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "original Plimsoll Mark",
+                  "note": "It is the circle with a line through it. Read the number level with that line."
+                },
+                {
+                  "text": "Deck Line",
+                  "note": "The passage says the deck line is the top line."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 8",
+                "number": 11,
+                "category": "graph interpretation"
+              }
+            },
+            {
+              "id": "sch-oc-t8-q12",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "This table shows some of the same information as the chart but in a different way. On what lines are there errors in the table?",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 748 473\" width=\"80%\" height=\"auto\"><image href=\"/oc/t8-q12.jpg\" x=\"0\" y=\"0\" width=\"748\" height=\"473\"/></svg>"
+              },
+              "options": [
+                "lines 2, 3 are wrong in the table",
+                "lines 2, 4 are wrong in the table",
+                "lines 3, 4 are wrong in the table",
+                "lines 4, 5 are wrong in the table"
+              ],
+              "answer": 2,
+              "hint": "Compare each line of the table with the chart. Look at what number each symbol sits beside on the chart.",
+              "steps": [
+                {
+                  "explain": "Read each symbol’s number from the chart and compare it with the table.",
+                  "work": "<p>F (fresh water): chart 40, table 40 ✓</p><p>LR (Lloyd’s Register): 38, table 38 ✓</p><p>TS (tropical summer): 40, table 40 ✓</p><p>W (winter): 38, table 38 ✓</p><p>WNA: 36, table 36 ✓</p>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 190\" width=\"85%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><line x1=\"60\" y1=\"200\" x2=\"330\" y2=\"200\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><text x=\"54\" y=\"204\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"end\" >36</text><line x1=\"60\" y1=\"140\" x2=\"330\" y2=\"140\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><text x=\"54\" y=\"144\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"end\" >38</text><line x1=\"60\" y1=\"80\" x2=\"330\" y2=\"80\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><text x=\"54\" y=\"84\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"end\" >40</text><line x1=\"60\" y1=\"20\" x2=\"330\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><text x=\"54\" y=\"24\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"end\" >42</text><text x=\"68\" y=\"16\" font-size=\"12\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >TF</text><text x=\"68\" y=\"76\" font-size=\"12\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >F</text><text x=\"198\" y=\"76\" font-size=\"12\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >TS</text><text x=\"198\" y=\"136\" font-size=\"12\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >S</text><text x=\"68\" y=\"136\" font-size=\"12\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >W</text><text x=\"68\" y=\"196\" font-size=\"12\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >WNA</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Check the two lines that do not match.",
+                  "work": "<p>Line 3 is S (summer). On the chart the S mark is at about 38, but the table says 40. ✗</p><p>Line 4 is TF (tropical fresh water). On the chart the TF mark is level with 40, not 42 (42 is the deck line). The table says 42. ✗</p>"
+                },
+                {
+                  "explain": "The errors are on lines 3 and 4.",
+                  "work": "<p>The summer value should be about 38, and tropical fresh water should be about 40. The answer is C.</p>"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "On what lines are there errors",
+                  "note": "Check each line of the table against the number beside the same symbol in the chart."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 8",
+                "number": 12,
+                "category": "graph interpretation"
+              }
+            }
+          ],
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 8",
+            "number": "11-12",
+            "page": 45,
+            "category": "graph interpretation"
+          }
+        },
+        {
+          "id": "sch-oc-t8-q13",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which number comes next in this series?\n\n4  9  16  25  ?",
+          "options": [
+            "33",
+            "30",
+            "49",
+            "36"
+          ],
+          "answer": 3,
+          "hint": "Look at the gaps. Then ask: are these special numbers, like the ones you get by multiplying a number by itself?",
+          "steps": [
+            {
+              "explain": "Find the gaps.",
+              "work": "<p>\\(9-4=5\\) &emsp; \\(16-9=7\\) &emsp; \\(25-16=9\\)</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 96\" width=\"95%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><defs><marker id=\"ah\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#6366f1\"/></marker></defs><rect x=\"8\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"30.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >4</text><rect x=\"78\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"100.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >9</text><rect x=\"148\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"170.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >16</text><rect x=\"218\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"240.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >25</text><rect x=\"288\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#eef2ff\" stroke=\"#6366f1\" stroke-width=\"2\" /><text x=\"310.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >?</text><path d=\"M30.0 44 Q65.0 8 100.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"65.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+5</text><path d=\"M100.0 44 Q135.0 8 170.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"135.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+7</text><path d=\"M170.0 44 Q205.0 8 240.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"205.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+9</text></svg>"
+              }
+            },
+            {
+              "explain": "The gaps go up by 2 each time (5, 7, 9) so the next gap is 11.",
+              "work": "<p>\\(25+11=36\\)</p>"
+            },
+            {
+              "explain": "These are square numbers: a number multiplied by itself.",
+              "work": "<p>\\(2\\times2=4\\) &emsp; \\(3\\times3=9\\) &emsp; \\(4\\times4=16\\) &emsp; \\(5\\times5=25\\) &emsp; \\(6\\times6=36\\)</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 78\" width=\"75%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"10\" y=\"8\" width=\"56\" height=\"40\" rx=\"8\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"2\" /><text x=\"38\" y=\"36\" font-size=\"17\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >4</text><text x=\"38\" y=\"66\" font-size=\"11.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >2×2</text><rect x=\"76\" y=\"8\" width=\"56\" height=\"40\" rx=\"8\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"2\" /><text x=\"104\" y=\"36\" font-size=\"17\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >9</text><text x=\"104\" y=\"66\" font-size=\"11.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >3×3</text><rect x=\"142\" y=\"8\" width=\"56\" height=\"40\" rx=\"8\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"2\" /><text x=\"170\" y=\"36\" font-size=\"17\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >16</text><text x=\"170\" y=\"66\" font-size=\"11.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >4×4</text><rect x=\"208\" y=\"8\" width=\"56\" height=\"40\" rx=\"8\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"2\" /><text x=\"236\" y=\"36\" font-size=\"17\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >25</text><text x=\"236\" y=\"66\" font-size=\"11.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >5×5</text><rect x=\"274\" y=\"8\" width=\"56\" height=\"40\" rx=\"8\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"302\" y=\"36\" font-size=\"17\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >36</text><text x=\"302\" y=\"66\" font-size=\"11.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >6×6</text></svg>"
+              }
+            },
+            {
+              "explain": "Check the other options: 33 and 30 do not fit the gaps and 49 is 7 × 7.",
+              "work": "<p>The answer is D.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "next in this series",
+              "note": "If the gaps keep growing, check if the numbers are squares."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 8",
+            "number": 13,
+            "page": 45,
+            "category": "number series"
+          }
+        },
+        {
+          "id": "sch-oc-t8-q17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Here are some facts:\n\n• A company made 1000 toys.\n• They cost \\(\\$12\\) each.\n• The company sold them to stores for \\(\\$16\\) each.\n\nHow many would the company need to sell in order to cover the cost of the 1000 toys that were made?",
+          "options": [
+            "250",
+            "1000",
+            "500",
+            "750"
+          ],
+          "answer": 3,
+          "hint": "First find the total cost of making all 1000 toys. Then find how many toys have to be sold at \\(\\$16\\) to earn that much money.",
+          "steps": [
+            {
+              "explain": "Find the total cost of making the toys.",
+              "work": "<p>\\(1\\,000\\times\\$12=\\$12\\,000\\)</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 110\" width=\"90%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"8\" y=\"8\" width=\"340\" height=\"30\" rx=\"4\" fill=\"#fee2e2\" stroke=\"#e11d48\" stroke-width=\"1.8\" /><text x=\"178\" y=\"28\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >cost to make 1 000 toys: 1 000 × $12 = $12 000</text><rect x=\"8\" y=\"46\" width=\"340\" height=\"30\" rx=\"4\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"1.8\" /><text x=\"178\" y=\"66\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >$16 each → toys needed to earn back $12 000</text><text x=\"178\" y=\"100\" font-size=\"14\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >12 000 ÷ 16 = 750 toys</text></svg>"
+              }
+            },
+            {
+              "explain": "Each toy is sold for \\(\\$16\\). Find how many sales are needed to earn \\(\\$12\\,000\\).",
+              "work": "<p>\\(12\\,000\\div16=750\\)</p>"
+            },
+            {
+              "explain": "Check by multiplying: 750 toys at \\(\\$16\\) each.",
+              "work": "<p>\\(750\\times16=12\\,000\\) ✓</p>"
+            },
+            {
+              "explain": "Check the other options: 250 toys earn only \\(\\$4\\,000\\), 500 toys earn \\(\\$8\\,000\\) and 1000 toys earn \\(\\$16\\,000\\) (more than the cost).",
+              "work": "<p>The answer is D.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "cover the cost of the 1000 toys",
+              "note": "Find the total cost first, then how many toys must be sold to get that much money back."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 8",
+            "number": 17,
+            "page": 46,
+            "category": "arithmetic"
+          }
+        },
+        {
+          "id": "sch-oc-t8-q18",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The US dollar is worth about one and two-thirds what an Australian dollar is worth. If I have to pay 75 US dollars, then how would I calculate this in Australian dollars?",
+          "options": [
+            "\\(1\\frac23\\text{ of }125=\\$75\\)",
+            "\\(1\\frac23\\text{ of }75=\\$125\\)",
+            "\\(\\$125\\text{ divided by }\\$75=1\\frac23\\)",
+            "\\(\\$75\\text{ divided by }1\\frac23=\\$125\\)"
+          ],
+          "answer": 1,
+          "hint": "One US dollar is worth 1⅔ Australian dollars, so each of the 75 US dollars is worth 1⅔ Australian dollars. Find 1⅔ of 75.",
+          "steps": [
+            {
+              "explain": "Each US dollar is worth 1⅔ Australian dollars.",
+              "work": "<p>1 US dollar \\(=1\\frac23\\) Australian dollars</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 82\" width=\"70%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"8\" y=\"14\" width=\"60\" height=\"34\" rx=\"4\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.8\" /><text x=\"38\" y=\"36\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >A$1</text><rect x=\"78\" y=\"14\" width=\"60\" height=\"34\" rx=\"4\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.8\" /><text x=\"108\" y=\"36\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >A$1</text><rect x=\"148\" y=\"14\" width=\"40\" height=\"34\" rx=\"4\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.8\" /><text x=\"168\" y=\"36\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >⅔</text><text x=\"98\" y=\"70\" font-size=\"12.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >US$1 = A$1⅔</text></svg>"
+              }
+            },
+            {
+              "explain": "So 75 US dollars are worth 75 lots of 1⅔ Australian dollars.",
+              "work": "<p>\\(1\\frac23\\text{ of }75\\)</p>"
+            },
+            {
+              "explain": "Work it out: 1 of 75 is 75, and ⅔ of 75 is 50.",
+              "work": "<p>\\(75+50=125\\), so \\(1\\frac23\\text{ of }75=\\$125\\).</p>"
+            },
+            {
+              "explain": "Check the other options.",
+              "work": "<p>A takes \\(1\\frac23\\) of \\(125\\), which is \\(208\\frac13\\), not \\(75\\). C and D are not the right way to turn US dollars into Australian dollars.</p>"
+            },
+            {
+              "explain": "The answer is B."
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "one and two-thirds",
+              "note": "One US dollar is worth this many Australian dollars. Multiply 75 by it."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 8",
+            "number": 18,
+            "page": 46,
+            "category": "calculation problems"
+          }
+        },
+        {
+          "id": "sch-oc-t8-q25",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Which set of arrows completes this pattern?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 748 556\" width=\"80%\" height=\"auto\"><image href=\"/oc/t8-q25.jpg\" x=\"0\" y=\"0\" width=\"748\" height=\"556\"/></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 0,
+          "hint": "The pattern is a 2-by-2 grid. Go round the boxes clockwise, starting at the top left. Count the arrows in each box and see how the number changes.",
+          "steps": [
+            {
+              "explain": "Count the arrows in each box, going clockwise from the top left.",
+              "work": "<p>Top left: 4 arrows (small arrows pointing right).</p><p>Top right: 3 arrows (big arrows pointing down-right).</p><p>Bottom right: the box with the question mark.</p><p>Bottom left: 1 arrow (a white arrow pointing down-left).</p>"
+            },
+            {
+              "explain": "The number of arrows goes down by one each time we move to the next box clockwise: 4, 3, … , 1. So the box with the question mark must have 2 arrows.",
+              "work": "<p>4 → 3 → 2 → 1</p>"
+            },
+            {
+              "explain": "Look at how the arrows turn. The arrows point right (→), then down-right (↘), then they should point down (↓) or down-left, and finally down-left (↙). Each box turns the arrows clockwise.",
+              "work": "<p>The missing box has 2 arrows, turned between down-right and down-left.</p>"
+            },
+            {
+              "explain": "Find the option with 2 arrows.",
+              "work": "<p>A has 2 arrows turned the right way. B has 3 arrows, C has 5 and D has 2 arrows pointing the wrong way. ✓ The answer is A.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "completes this pattern",
+              "note": "Go round the grid clockwise and follow two things: the number of arrows and the way they point."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 8",
+            "number": 25,
+            "page": 47,
+            "category": "figure sequences"
+          }
+        },
+        {
+          "id": "sch-oc-t8-q26",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Look at the shapes below. They are numbered I, II, III, IV, V and VI. Three of these shapes are joined together to make this pattern. Which shapes were used in the pattern? (Hint: the shapes can be rotated.)",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 748 891\" width=\"85%\" height=\"auto\"><image href=\"/oc/t8-q26.jpg\" x=\"0\" y=\"0\" width=\"748\" height=\"891\"/></svg>"
+          },
+          "options": [
+            "IV, V, VI",
+            "III, IV, V",
+            "II, IV, VI",
+            "I, V, VI"
+          ],
+          "answer": 0,
+          "hint": "Look at the grey pattern. It has a slanted corner on the left, a flat top and bottom, and a slanted side on the right. Which of the six shapes have a slanted side like this?",
+          "steps": [
+            {
+              "explain": "Look at the grey pattern. It has two slanted corners on the left (cut at the top and at the bottom), a flat top, a flat bottom, and a long slanted side on the right.",
+              "work": "<p>Slanted sides: left top, left bottom and right.</p>"
+            },
+            {
+              "explain": "Look at the six shapes and find the ones with slanted sides that could make these.",
+              "work": "<p>IV has one slanted side (its top). V is a trapezium with two slanted sides. VI is a square with straight sides that fills the middle. I is a rectangle, II is a diamond and III is a parallelogram: their sides do not match the sloping corners.</p>"
+            },
+            {
+              "explain": "Turn IV, V and VI and fit them together. IV and V give the two slanted corners on the left and the slanted side on the right, and VI fills the gap in the middle.",
+              "work": "<p>Together they make the grey pattern with no gaps.</p>"
+            },
+            {
+              "explain": "The shapes used are IV, V and VI.",
+              "work": "<p>The answer is A.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which shapes were used in the pattern",
+              "note": "Match the sloping sides of the pattern with the sloping sides of the shapes. The shapes may be turned round."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 8",
+            "number": 26,
+            "page": 47,
+            "category": "measurement"
+          }
+        },
+        {
+          "id": "sch-oc-t8-q27",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Here is a large and a small shape. How many of the smaller shapes will fit into the larger shape?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 759 297\" width=\"85%\" height=\"auto\"><image href=\"/oc/t8-q27.jpg\" x=\"0\" y=\"0\" width=\"759\" height=\"297\"/></svg>"
+          },
+          "options": [
+            "4",
+            "5",
+            "6",
+            "8"
+          ],
+          "answer": 0,
+          "hint": "Count the cubes in each shape. For the big one, count the cubes on the front face and then think how many cubes deep it is. Then divide.",
+          "steps": [
+            {
+              "explain": "Count the cubes in the large shape. The front face is 4 cubes wide and 3 cubes high, and the top shows it is only 1 cube deep.",
+              "work": "<p>\\(4\\times3=12\\) cubes, \\(\\times1\\) deep \\(=12\\) cubes</p>"
+            },
+            {
+              "explain": "Count the cubes in the small shape. The front has 3 cubes: two at the bottom and one on top at the left. The top shows that it is 1 cube deep.",
+              "work": "<p>\\(2+1=3\\) cubes</p>"
+            },
+            {
+              "explain": "Divide the cubes in the big shape by the cubes in the small shape.",
+              "work": "<p>\\(12\\div3=4\\)</p>"
+            },
+            {
+              "explain": "So 4 of the small shapes fit into the large shape.",
+              "work": "<p>The answer is A.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "How many of the smaller shapes will fit",
+              "note": "Count the cubes in each shape and divide the larger number by the smaller."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 8",
+            "number": 27,
+            "page": 48,
+            "category": "measurement"
+          }
+        },
+        {
+          "id": "sch-oc-t8-q28",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Which number comes next in the series?\n\n2  3  5  7  11  ?",
+          "options": [
+            "15",
+            "14",
+            "13",
+            "12"
+          ],
+          "answer": 2,
+          "hint": "Do the numbers go up by the same amount? Look at the numbers themselves: can any of them be divided by something other than 1 and themselves?",
+          "steps": [
+            {
+              "explain": "Find the gaps.",
+              "work": "<p>\\(3-2=1\\) &emsp; \\(5-3=2\\) &emsp; \\(7-5=2\\) &emsp; \\(11-7=4\\)</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 356 96\" width=\"90%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><defs><marker id=\"ah\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#6366f1\"/></marker></defs><rect x=\"8\" y=\"46\" width=\"40\" height=\"40\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"28.0\" y=\"72.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >2</text><rect x=\"68\" y=\"46\" width=\"40\" height=\"40\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"88.0\" y=\"72.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >3</text><rect x=\"128\" y=\"46\" width=\"40\" height=\"40\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"148.0\" y=\"72.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >5</text><rect x=\"188\" y=\"46\" width=\"40\" height=\"40\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"208.0\" y=\"72.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >7</text><rect x=\"248\" y=\"46\" width=\"40\" height=\"40\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"268.0\" y=\"72.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >11</text><rect x=\"308\" y=\"46\" width=\"40\" height=\"40\" rx=\"8\" fill=\"#eef2ff\" stroke=\"#6366f1\" stroke-width=\"2\" /><text x=\"328.0\" y=\"72.0\" font-size=\"18\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >?</text><path d=\"M28.0 44 Q58.0 8 88.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"58.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+1</text><path d=\"M88.0 44 Q118.0 8 148.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"118.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+2</text><path d=\"M148.0 44 Q178.0 8 208.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"178.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+2</text><path d=\"M208.0 44 Q238.0 8 268.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"238.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+4</text></svg>"
+              }
+            },
+            {
+              "explain": "The gaps do not follow a pattern. Look at the numbers themselves: each one can only be divided by 1 and itself. These are prime numbers.",
+              "work": "<p>2, 3, 5, 7, 11 are the first five prime numbers.</p>"
+            },
+            {
+              "explain": "Find the next prime number after 11. Test 12, 13.",
+              "work": "<p>12 = 3 × 4 (not prime).</p><p>13 can only be divided by 1 and 13 (prime). ✓</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 356 112\" width=\"90%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><defs><marker id=\"ah\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#6366f1\"/></marker></defs><rect x=\"8\" y=\"46\" width=\"40\" height=\"40\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"28.0\" y=\"72.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >2</text><rect x=\"68\" y=\"46\" width=\"40\" height=\"40\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"88.0\" y=\"72.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >3</text><rect x=\"128\" y=\"46\" width=\"40\" height=\"40\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"148.0\" y=\"72.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >5</text><rect x=\"188\" y=\"46\" width=\"40\" height=\"40\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"208.0\" y=\"72.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >7</text><rect x=\"248\" y=\"46\" width=\"40\" height=\"40\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"268.0\" y=\"72.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >11</text><rect x=\"308\" y=\"46\" width=\"40\" height=\"40\" rx=\"8\" fill=\"#eef2ff\" stroke=\"#6366f1\" stroke-width=\"2\" /><text x=\"328.0\" y=\"72.0\" font-size=\"18\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >?</text><path d=\"M28.0 44 Q58.0 8 88.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"58.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" ></text><path d=\"M88.0 44 Q118.0 8 148.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"118.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" ></text><path d=\"M148.0 44 Q178.0 8 208.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"178.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" ></text><path d=\"M208.0 44 Q238.0 8 268.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"238.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" ></text><text x=\"178.0\" y=\"108\" font-size=\"12\" font-weight=\"700\" fill=\"#059669\" text-anchor=\"middle\" >next prime: 13</text></svg>"
+              }
+            },
+            {
+              "explain": "Check the other options: 15 = 3 × 5, 14 = 2 × 7 and 12 = 3 × 4 are not prime.",
+              "work": "<p>The answer is C.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "next in the series",
+              "note": "If the gaps do not follow a rule, look at the numbers: are they special numbers?"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 8",
+            "number": 28,
+            "page": 48,
             "category": "number series"
           }
         }
