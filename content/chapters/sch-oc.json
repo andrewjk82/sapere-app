@@ -3980,6 +3980,884 @@
             "page": 27,
             "category": "word order"
           }
+        },
+        {
+          "id": "sch-oc-t5-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "MOON is to PLANET as PLANET is to ?",
+          "options": [
+            "galaxy",
+            "sun",
+            "solar system",
+            "meteor"
+          ],
+          "answer": 1,
+          "hint": "Say what a moon does in space. Then ask: what does a planet do in the same way?",
+          "steps": [
+            {
+              "explain": "Find the link in the first pair.",
+              "work": "<p>A MOON travels around (orbits) a PLANET.</p>"
+            },
+            {
+              "explain": "Use the same link for PLANET: what does a planet travel around?",
+              "work": "<p>A PLANET orbits the SUN.</p>"
+            },
+            {
+              "explain": "Check the other options.",
+              "work": "<p>A galaxy is a huge group of stars (our solar system is only a tiny part of one). The solar system is the sun together with its planets, so a planet is part of it rather than orbiting it. A meteor is a rock that falls to Earth.</p>"
+            },
+            {
+              "explain": "MOON : PLANET matches PLANET : SUN.",
+              "work": "<p>The answer is B.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "MOON is to PLANET",
+              "note": "Use the sentence “A moon goes around a planet”, then change the words."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 5",
+            "number": 1,
+            "page": 28,
+            "category": "analogies"
+          }
+        },
+        {
+          "id": "sch-oc-t5-q4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Here is a square in which the letters are coded from 1 to 36. What would be the correct code for this phrase?\n\n\\(\\text{I} \\text{ / } \\text{DO} \\text{ / } \\text{NOT} \\text{ / } \\text{WISH} \\text{ / } \\text{TO} \\text{ / } \\text{INTERRUPT}\\)",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 517 528\" width=\"55%\" height=\"auto\"><image href=\"/oc/t5-q4.jpg\" x=\"0\" y=\"0\" width=\"517\" height=\"528\"/></svg>"
+          },
+          "options": [
+            "\\(\\text{9} \\text{ / } \\text{4 15} \\text{ / } \\text{14 15 21} \\text{ / } \\text{23 9 19 8} \\text{ / } \\text{21 15} \\text{ / } \\text{9 14 21 5 18 18 21 16 21}\\)",
+            "\\(\\text{9} \\text{ / } \\text{4 16} \\text{ / } \\text{14 16 20} \\text{ / } \\text{23 9 19 8} \\text{ / } \\text{20 16} \\text{ / } \\text{9 14 20 5 18 18 21 16 20}\\)",
+            "\\(\\text{9} \\text{ / } \\text{4 15} \\text{ / } \\text{14 15 20} \\text{ / } \\text{23 8 19 8} \\text{ / } \\text{20 15} \\text{ / } \\text{9 14 20 5 18 18 21 16 20}\\)",
+            "\\(\\text{9} \\text{ / } \\text{4 15} \\text{ / } \\text{14 15 20} \\text{ / } \\text{23 9 19 8} \\text{ / } \\text{20 15} \\text{ / } \\text{9 14 20 5 18 18 21 16 20}\\)"
+          ],
+          "answer": 3,
+          "hint": "Look up every letter in the square and write its number. A quick shortcut: check the letters that are different in the options, like T, O and I.",
+          "steps": [
+            {
+              "explain": "Read the square. Each letter has a number: A = 1, B = 2, … I = 9, O = 15, T = 20, W = 23, Z = 26.",
+              "work": "<p>Use the square to turn each letter into its number.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 282 228\" width=\"70%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"6\" y=\"6\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"23\" y=\"30\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >A</text><text x=\"46\" y=\"30\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >1</text><rect x=\"60\" y=\"6\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"77\" y=\"30\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >B</text><text x=\"100\" y=\"30\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >2</text><rect x=\"114\" y=\"6\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"131\" y=\"30\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >C</text><text x=\"154\" y=\"30\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >3</text><rect x=\"168\" y=\"6\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"185\" y=\"30\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >D</text><text x=\"208\" y=\"30\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >4</text><rect x=\"222\" y=\"6\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"239\" y=\"30\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >E</text><text x=\"262\" y=\"30\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >5</text><rect x=\"6\" y=\"42\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"23\" y=\"66\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >F</text><text x=\"46\" y=\"66\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >6</text><rect x=\"60\" y=\"42\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"77\" y=\"66\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >G</text><text x=\"100\" y=\"66\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >7</text><rect x=\"114\" y=\"42\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"131\" y=\"66\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >H</text><text x=\"154\" y=\"66\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >8</text><rect x=\"168\" y=\"42\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"185\" y=\"66\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >I</text><text x=\"208\" y=\"66\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >9</text><rect x=\"222\" y=\"42\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"239\" y=\"66\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >J</text><text x=\"262\" y=\"66\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >10</text><rect x=\"6\" y=\"78\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"23\" y=\"102\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >K</text><text x=\"46\" y=\"102\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >11</text><rect x=\"60\" y=\"78\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"77\" y=\"102\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >L</text><text x=\"100\" y=\"102\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >12</text><rect x=\"114\" y=\"78\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"131\" y=\"102\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >M</text><text x=\"154\" y=\"102\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >13</text><rect x=\"168\" y=\"78\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"185\" y=\"102\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >N</text><text x=\"208\" y=\"102\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >14</text><rect x=\"222\" y=\"78\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"239\" y=\"102\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >O</text><text x=\"262\" y=\"102\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >15</text><rect x=\"6\" y=\"114\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"23\" y=\"138\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >P</text><text x=\"46\" y=\"138\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >16</text><rect x=\"60\" y=\"114\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"77\" y=\"138\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >Q</text><text x=\"100\" y=\"138\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >17</text><rect x=\"114\" y=\"114\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"131\" y=\"138\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >R</text><text x=\"154\" y=\"138\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >18</text><rect x=\"168\" y=\"114\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"185\" y=\"138\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >S</text><text x=\"208\" y=\"138\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >19</text><rect x=\"222\" y=\"114\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"239\" y=\"138\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >T</text><text x=\"262\" y=\"138\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >20</text><rect x=\"6\" y=\"150\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"23\" y=\"174\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >U</text><text x=\"46\" y=\"174\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >21</text><rect x=\"60\" y=\"150\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"77\" y=\"174\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >V</text><text x=\"100\" y=\"174\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >22</text><rect x=\"114\" y=\"150\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"131\" y=\"174\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >W</text><text x=\"154\" y=\"174\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >23</text><rect x=\"168\" y=\"150\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"185\" y=\"174\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >X</text><text x=\"208\" y=\"174\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >24</text><rect x=\"222\" y=\"150\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"239\" y=\"174\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >Y</text><text x=\"262\" y=\"174\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >25</text><rect x=\"6\" y=\"186\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"23\" y=\"210\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >Z</text><text x=\"46\" y=\"210\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >26</text><rect x=\"60\" y=\"186\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"77\" y=\"210\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >–</text><text x=\"100\" y=\"210\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >27</text><rect x=\"114\" y=\"186\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"131\" y=\"210\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >–</text><text x=\"154\" y=\"210\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >28</text><rect x=\"168\" y=\"186\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"185\" y=\"210\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >–</text><text x=\"208\" y=\"210\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >29</text><rect x=\"222\" y=\"186\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"239\" y=\"210\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >–</text><text x=\"262\" y=\"210\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >30</text></svg>"
+              }
+            },
+            {
+              "explain": "Code the short words first.",
+              "work": "<p>I \\(=9\\)</p><p>DO \\(=\\) D \\(4\\), O \\(15\\) \\(\\rightarrow4\\;15\\)</p><p>NOT \\(=\\) N \\(14\\), O \\(15\\), T \\(20\\) \\(\\rightarrow14\\;15\\;20\\)</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 282 228\" width=\"70%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"6\" y=\"6\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"23\" y=\"30\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >A</text><text x=\"46\" y=\"30\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >1</text><rect x=\"60\" y=\"6\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"77\" y=\"30\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >B</text><text x=\"100\" y=\"30\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >2</text><rect x=\"114\" y=\"6\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"131\" y=\"30\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >C</text><text x=\"154\" y=\"30\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >3</text><rect x=\"168\" y=\"6\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"185\" y=\"30\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >D</text><text x=\"208\" y=\"30\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >4</text><rect x=\"222\" y=\"6\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"239\" y=\"30\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >E</text><text x=\"262\" y=\"30\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >5</text><rect x=\"6\" y=\"42\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"23\" y=\"66\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >F</text><text x=\"46\" y=\"66\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >6</text><rect x=\"60\" y=\"42\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"77\" y=\"66\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >G</text><text x=\"100\" y=\"66\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >7</text><rect x=\"114\" y=\"42\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"131\" y=\"66\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >H</text><text x=\"154\" y=\"66\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >8</text><rect x=\"168\" y=\"42\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"185\" y=\"66\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >I</text><text x=\"208\" y=\"66\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >9</text><rect x=\"222\" y=\"42\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"239\" y=\"66\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >J</text><text x=\"262\" y=\"66\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >10</text><rect x=\"6\" y=\"78\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"23\" y=\"102\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >K</text><text x=\"46\" y=\"102\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >11</text><rect x=\"60\" y=\"78\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"77\" y=\"102\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >L</text><text x=\"100\" y=\"102\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >12</text><rect x=\"114\" y=\"78\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"131\" y=\"102\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >M</text><text x=\"154\" y=\"102\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >13</text><rect x=\"168\" y=\"78\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"185\" y=\"102\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >N</text><text x=\"208\" y=\"102\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >14</text><rect x=\"222\" y=\"78\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"239\" y=\"102\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >O</text><text x=\"262\" y=\"102\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >15</text><rect x=\"6\" y=\"114\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"23\" y=\"138\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >P</text><text x=\"46\" y=\"138\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >16</text><rect x=\"60\" y=\"114\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"77\" y=\"138\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >Q</text><text x=\"100\" y=\"138\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >17</text><rect x=\"114\" y=\"114\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"131\" y=\"138\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >R</text><text x=\"154\" y=\"138\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >18</text><rect x=\"168\" y=\"114\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"185\" y=\"138\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >S</text><text x=\"208\" y=\"138\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >19</text><rect x=\"222\" y=\"114\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"239\" y=\"138\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >T</text><text x=\"262\" y=\"138\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >20</text><rect x=\"6\" y=\"150\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"23\" y=\"174\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >U</text><text x=\"46\" y=\"174\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >21</text><rect x=\"60\" y=\"150\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"77\" y=\"174\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >V</text><text x=\"100\" y=\"174\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >22</text><rect x=\"114\" y=\"150\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"131\" y=\"174\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >W</text><text x=\"154\" y=\"174\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >23</text><rect x=\"168\" y=\"150\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"185\" y=\"174\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >X</text><text x=\"208\" y=\"174\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >24</text><rect x=\"222\" y=\"150\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"239\" y=\"174\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >Y</text><text x=\"262\" y=\"174\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >25</text><rect x=\"6\" y=\"186\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"23\" y=\"210\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >Z</text><text x=\"46\" y=\"210\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >26</text><rect x=\"60\" y=\"186\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"77\" y=\"210\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >–</text><text x=\"100\" y=\"210\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >27</text><rect x=\"114\" y=\"186\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"131\" y=\"210\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >–</text><text x=\"154\" y=\"210\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >28</text><rect x=\"168\" y=\"186\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"185\" y=\"210\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >–</text><text x=\"208\" y=\"210\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >29</text><rect x=\"222\" y=\"186\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"239\" y=\"210\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >–</text><text x=\"262\" y=\"210\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >30</text></svg>"
+              }
+            },
+            {
+              "explain": "Code WISH, TO and INTERRUPT.",
+              "work": "<p>WISH \\(=\\) W \\(23\\), I \\(9\\), S \\(19\\), H \\(8\\) \\(\\rightarrow23\\;9\\;19\\;8\\)</p><p>TO \\(=\\) T \\(20\\), O \\(15\\) \\(\\rightarrow20\\;15\\)</p><p>INTERRUPT \\(=\\) I 9, N 14, T 20, E 5, R 18, R 18, U 21, P 16, T 20 \\(\\rightarrow9\\;14\\;20\\;5\\;18\\;18\\;21\\;16\\;20\\)</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 282 228\" width=\"70%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"6\" y=\"6\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"23\" y=\"30\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >A</text><text x=\"46\" y=\"30\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >1</text><rect x=\"60\" y=\"6\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"77\" y=\"30\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >B</text><text x=\"100\" y=\"30\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >2</text><rect x=\"114\" y=\"6\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"131\" y=\"30\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >C</text><text x=\"154\" y=\"30\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >3</text><rect x=\"168\" y=\"6\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"185\" y=\"30\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >D</text><text x=\"208\" y=\"30\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >4</text><rect x=\"222\" y=\"6\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"239\" y=\"30\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >E</text><text x=\"262\" y=\"30\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >5</text><rect x=\"6\" y=\"42\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"23\" y=\"66\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >F</text><text x=\"46\" y=\"66\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >6</text><rect x=\"60\" y=\"42\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"77\" y=\"66\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >G</text><text x=\"100\" y=\"66\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >7</text><rect x=\"114\" y=\"42\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"131\" y=\"66\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >H</text><text x=\"154\" y=\"66\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >8</text><rect x=\"168\" y=\"42\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"185\" y=\"66\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >I</text><text x=\"208\" y=\"66\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >9</text><rect x=\"222\" y=\"42\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"239\" y=\"66\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >J</text><text x=\"262\" y=\"66\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >10</text><rect x=\"6\" y=\"78\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"23\" y=\"102\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >K</text><text x=\"46\" y=\"102\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >11</text><rect x=\"60\" y=\"78\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"77\" y=\"102\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >L</text><text x=\"100\" y=\"102\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >12</text><rect x=\"114\" y=\"78\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"131\" y=\"102\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >M</text><text x=\"154\" y=\"102\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >13</text><rect x=\"168\" y=\"78\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"185\" y=\"102\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >N</text><text x=\"208\" y=\"102\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >14</text><rect x=\"222\" y=\"78\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"239\" y=\"102\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >O</text><text x=\"262\" y=\"102\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >15</text><rect x=\"6\" y=\"114\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"23\" y=\"138\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >P</text><text x=\"46\" y=\"138\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >16</text><rect x=\"60\" y=\"114\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"77\" y=\"138\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >Q</text><text x=\"100\" y=\"138\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >17</text><rect x=\"114\" y=\"114\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"131\" y=\"138\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >R</text><text x=\"154\" y=\"138\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >18</text><rect x=\"168\" y=\"114\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"185\" y=\"138\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >S</text><text x=\"208\" y=\"138\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >19</text><rect x=\"222\" y=\"114\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"239\" y=\"138\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >T</text><text x=\"262\" y=\"138\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >20</text><rect x=\"6\" y=\"150\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"23\" y=\"174\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >U</text><text x=\"46\" y=\"174\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >21</text><rect x=\"60\" y=\"150\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"77\" y=\"174\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >V</text><text x=\"100\" y=\"174\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >22</text><rect x=\"114\" y=\"150\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"131\" y=\"174\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >W</text><text x=\"154\" y=\"174\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >23</text><rect x=\"168\" y=\"150\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"185\" y=\"174\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >X</text><text x=\"208\" y=\"174\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >24</text><rect x=\"222\" y=\"150\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"239\" y=\"174\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >Y</text><text x=\"262\" y=\"174\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >25</text><rect x=\"6\" y=\"186\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"23\" y=\"210\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >Z</text><text x=\"46\" y=\"210\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >26</text><rect x=\"60\" y=\"186\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"77\" y=\"210\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >–</text><text x=\"100\" y=\"210\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >27</text><rect x=\"114\" y=\"186\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"131\" y=\"210\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >–</text><text x=\"154\" y=\"210\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >28</text><rect x=\"168\" y=\"186\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"185\" y=\"210\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >–</text><text x=\"208\" y=\"210\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >29</text><rect x=\"222\" y=\"186\" width=\"54\" height=\"36\" rx=\"0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"239\" y=\"210\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >–</text><text x=\"262\" y=\"210\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >30</text></svg>"
+              }
+            },
+            {
+              "explain": "Check the options one letter at a time.",
+              "work": "<p>A uses 21 for T (T is 20). B uses 16 for O (O is 15). C uses 8 for the I in WISH (I is 9).</p><p>D matches every letter. ✓</p>"
+            },
+            {
+              "explain": "The answer is D."
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "coded from 1 to 36",
+              "note": "Every letter has one number. Look each letter up in the square."
+            },
+            {
+              "text": "INTERRUPT",
+              "note": "Take care with the letters that appear more than once (R, T)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 5",
+            "number": 4,
+            "page": 28,
+            "category": "codes"
+          }
+        },
+        {
+          "id": "sch-oc-t5-q5to9",
+          "type": "multipart",
+          "stem": "Questions 5 to 9 refer to the following passage.\n\nCHARLES DARWIN\n\nCharles Darwin was only twenty-one and just out of Christ’s College at Cambridge, where he ambled along with average marks towards a stable future in the clergy. In his travels he expected to go no further than North Wales, when this invitation to a world voyage came out of thin air. He had mere days to decide, pack his things and head off. So when he ascended the Beagle’s gangway in October of 1831, it was a long blind step in his life. He was not at all sure of his future or of his abilities. When he returned — indeed, if he returned — he fully expected to continue on into the ministry in which case his experience seeing foreign missions, not to mention the wonders of Creation, would serve him on the pulpit. But for now, Darwin was an unpolished, though enthusiastic, novice naturalist. His hurried preparations gave him little time to consider his limitations, or the prospect of failure.\n\nOf course, he didn’t fail. Darwin collected everything he could drag on board the little brig. He also took volumes of notes, organising them carefully into categories, and preparing as well a longish, but none the less succinctly observant journal. Yet he always remained in contact with his scientific mentors in England, notably the Reverend Professor John Stevens Henslow. It was after his travels, and no doubt as a consequence of them, that Darwin became a proficient and acknowledged scientist. But in October of 1831, he was just a college student, starting out.\n\nSource: The Journal of Syms Covington, Chapter 1, Expanding Worlds, An Introduction to the Journal, Published by the Australian Science Archives Project on ASAPWeb, 23 August 1995",
+          "parts": [
+            {
+              "id": "sch-oc-t5-q5",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What is the main topic of this passage?",
+              "options": [
+                "Darwin’s first voyage",
+                "The experiments of a famous scientist",
+                "The first voyage of the Beagle",
+                "Darwin’s scientific theory"
+              ],
+              "answer": 0,
+              "hint": "The main topic covers the whole passage. Is it mostly about the ship, about Darwin’s theory, or about Darwin and his first journey?",
+              "steps": [
+                {
+                  "explain": "Say what each paragraph is about.",
+                  "work": "<p>Paragraph 1: Darwin is invited on a world voyage and has only days to prepare.</p><p>Paragraph 2: what he did on the voyage, and how he became a scientist afterwards.</p>"
+                },
+                {
+                  "explain": "Find what links them.",
+                  "work": "<p>Both paragraphs are about <mark>Charles Darwin</mark> and his <mark>world voyage</mark> on the Beagle — his first voyage.</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>B — it does not describe experiments.</p><p>C — the ship is only the way he travelled. The passage is about Darwin, not about the ship.</p><p>D — the passage never talks about his theory.</p>"
+                },
+                {
+                  "explain": "The answer is A."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "main topic",
+                  "note": "The main topic is what the whole passage is about, not one detail."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 5",
+                "number": 5,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t5-q6",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What was Charles Darwin’s ambition?",
+              "options": [
+                "Darwin wanted to travel",
+                "Darwin planned to become a minister",
+                "Darwin planned to visit North Wales",
+                "Darwin’s ambition was to become a famous scientist"
+              ],
+              "answer": 1,
+              "hint": "An ambition is what a person plans to do with his life. Find what Darwin expected to do when he came back.",
+              "steps": [
+                {
+                  "explain": "Find the sentence about what Darwin expected to do after the voyage.",
+                  "work": "<p>“When he returned… he fully expected to <mark>continue on into the ministry</mark>…”</p><p>Earlier: “…a stable future <mark>in the clergy</mark>.”</p>"
+                },
+                {
+                  "explain": "Work out what this tells us.",
+                  "work": "<p>The ministry and the clergy mean being a priest or minister in a church. That is the future Darwin planned.</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>A — the voyage was a surprise invitation, not his ambition.</p><p>C — North Wales was only the furthest he expected to travel.</p><p>D — he became a famous scientist later, but that was not what he planned.</p>"
+                },
+                {
+                  "explain": "The answer is B."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "ambition",
+                  "note": "An ambition is the future a person plans. Look at what Darwin expected to do when he returned."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 5",
+                "number": 6,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t5-q7",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What can you conclude about Darwin from this article?",
+              "options": [
+                "He was a young biologist",
+                "He was a young but professional scientist",
+                "He was an inexperienced young scientist",
+                "He was young but he was an experienced naturalist"
+              ],
+              "answer": 2,
+              "hint": "Find the words the writer uses to describe Darwin when he started the voyage: was he experienced, or was he just beginning?",
+              "steps": [
+                {
+                  "explain": "Find the words that describe Darwin at the start of the voyage.",
+                  "work": "<p>“Darwin was an <mark>unpolished, though enthusiastic, novice naturalist</mark>.” and “in October of 1831, he was <mark>just a college student, starting out</mark>.”</p>"
+                },
+                {
+                  "explain": "Work out the meaning.",
+                  "work": "<p>Unpolished and novice mean not yet skilled. “Just a college student, starting out” means he had no experience. He was keen to learn.</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>A — the passage says naturalist, not biologist.</p><p>B and D — professional and experienced are the opposite of “novice”.</p><p>C — an inexperienced young scientist. ✓</p>"
+                },
+                {
+                  "explain": "The answer is C."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "What can you conclude",
+                  "note": "A conclusion is worked out from clues. Find the words that describe Darwin at the start."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 5",
+                "number": 7,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t5-q8",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What does the word ‘mentor’ mean in this passage?",
+              "options": [
+                "graduate",
+                "professional",
+                "scientist",
+                "teacher"
+              ],
+              "answer": 3,
+              "hint": "Read the sentence around the word. Darwin “remained in contact” with his mentors in England. What would a young scientist want from people who helped him?",
+              "steps": [
+                {
+                  "explain": "Read the sentence with the word in it.",
+                  "work": "<p>“Yet he always remained in contact with his scientific <mark>mentors</mark> in England, notably the Reverend Professor John Stevens Henslow.”</p>"
+                },
+                {
+                  "explain": "Think about who Professor Henslow is to Darwin.",
+                  "work": "<p>He is a professor who taught and advised the young Darwin and kept helping him from far away.</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>A graduate is a person who has finished a university course. A professional is a person who does a job as a skilled worker. A scientist is a person who works in science — Darwin was one too.</p><p>A mentor is someone who teaches and advises you: a teacher. ✓</p>"
+                },
+                {
+                  "explain": "The answer is D."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "mentor",
+                  "note": "Look at what the mentors are to Darwin: they are people who guide and help him."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 5",
+                "number": 8,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t5-q9",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What do you think was his main task on the voyage?",
+              "options": [
+                "He went in order to conduct scientific experiments",
+                "He went along to collect natural specimens",
+                "He went on the journey in order to see foreign missions",
+                "He went to obtain experience and to write about the wonders of creation"
+              ],
+              "answer": 1,
+              "hint": "Find the sentence in the second paragraph that says what Darwin did on the ship. What did he “collect”?",
+              "steps": [
+                {
+                  "explain": "Find the sentence about his work on the voyage.",
+                  "work": "<p>“Darwin <mark>collected everything he could drag on board</mark> the little brig. He also took volumes of notes…”</p>"
+                },
+                {
+                  "explain": "Think about what “everything he could drag on board” means for a naturalist.",
+                  "work": "<p>A naturalist collects plants, animals and rocks (natural specimens) and writes notes about them.</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>A — no experiments are mentioned. C — seeing foreign missions was something he thought he might talk about later as a minister. D — experience came from the voyage, but the passage says the main thing he did was collect.</p>"
+                },
+                {
+                  "explain": "The answer is B."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "main task on the voyage",
+                  "note": "Look in the second paragraph for the work he actually did on board."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 5",
+                "number": 9,
+                "category": "comprehension"
+              }
+            }
+          ],
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 5",
+            "number": "5-9",
+            "page": 28,
+            "category": "comprehension"
+          }
+        },
+        {
+          "id": "sch-oc-t5-q14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Back pain is so common and so rarely has an identifiable cause that it should be regarded as normal, an orthopaedic surgeon said at a surgery symposium. Dr Turner said that 60–80% of people endure back pain at some stage and that it affected 15–30% of the population at any one time.\n\nSource: Melissa Sweet, Sydney Morning Herald, 13 May 1997\n\nWhich of the following words is closest in meaning to ENDURE in this passage?",
+          "options": [
+            "suffers",
+            "encounters",
+            "displays",
+            "indicates"
+          ],
+          "answer": 0,
+          "hint": "Put each option in place of “endure” and read the sentence again. Which one still means the same thing?",
+          "steps": [
+            {
+              "explain": "Read the sentence with the word in it.",
+              "work": "<p>“…60–80% of people <mark>endure</mark> back pain at some stage…”</p>"
+            },
+            {
+              "explain": "Say what happens to people who “endure” pain.",
+              "work": "<p>To endure pain means to go through it and put up with it. They feel it and suffer.</p>"
+            },
+            {
+              "explain": "Check each option.",
+              "work": "<p>encounters — meets, but does not say the person feels the pain for a time.</p><p>displays — shows to other people.</p><p>indicates — points out or suggests.</p><p>suffers — goes through pain. ✓</p>"
+            },
+            {
+              "explain": "The answer is A."
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "ENDURE",
+              "note": "Put each option into the sentence in place of “endure” and see which one keeps the meaning."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 5",
+            "number": 14,
+            "page": 30,
+            "category": "word knowledge"
+          }
+        },
+        {
+          "id": "sch-oc-t5-q15",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If these words are put into the correct order they will make a sentence. Which is the fifth word in the correct sentence?\n\nEXISTED LIVING YEARS THINGS BILLION HAVE 3–4 FOR ABOUT",
+          "options": [
+            "existed",
+            "for",
+            "about",
+            "have"
+          ],
+          "answer": 1,
+          "hint": "Look for words that belong together: “Living things”, “have existed”, “3–4 billion years”. Then put the groups in an order that makes sense.",
+          "steps": [
+            {
+              "explain": "Find the groups of words that go together.",
+              "work": "<p>“living things” (the subject)</p><p>“have existed” (what they did)</p><p>“for about” (how long) and “3–4 billion years” (the time)</p>"
+            },
+            {
+              "explain": "Join the groups in order.",
+              "work": "<p>Living things have existed for about 3–4 billion years.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 272 140\" width=\"80%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"4\" y=\"4\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"45.0\" y=\"23\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >Living</text><text x=\"12\" y=\"41\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >1</text><rect x=\"92\" y=\"4\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"133.0\" y=\"23\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >things</text><text x=\"100\" y=\"41\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >2</text><rect x=\"180\" y=\"4\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"221.0\" y=\"23\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >have</text><text x=\"188\" y=\"41\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >3</text><rect x=\"4\" y=\"48\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"45.0\" y=\"67\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >existed</text><text x=\"12\" y=\"85\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >4</text><rect x=\"92\" y=\"48\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"133.0\" y=\"67\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >for</text><text x=\"100\" y=\"85\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >5</text><rect x=\"180\" y=\"48\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"221.0\" y=\"67\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >about</text><text x=\"188\" y=\"85\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >6</text><rect x=\"4\" y=\"92\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"45.0\" y=\"111\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >3–4</text><text x=\"12\" y=\"129\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >7</text><rect x=\"92\" y=\"92\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"133.0\" y=\"111\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >billion</text><text x=\"100\" y=\"129\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >8</text><rect x=\"180\" y=\"92\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"221.0\" y=\"111\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >years</text><text x=\"188\" y=\"129\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >9</text></svg>"
+              }
+            },
+            {
+              "explain": "Count to the fifth word.",
+              "work": "<p>1 Living, 2 things, 3 have, 4 existed, 5 for ← the fifth word</p>"
+            },
+            {
+              "explain": "The answer is B."
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "fifth word",
+              "note": "Build the whole sentence first, then count to the fifth word."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 5",
+            "number": 15,
+            "page": 30,
+            "category": "word order"
+          }
+        },
+        {
+          "id": "sch-oc-t5-q16",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "PAGE is to BOOK as PETAL is to ?",
+          "options": [
+            "bark",
+            "leaf",
+            "flower",
+            "plant"
+          ],
+          "answer": 2,
+          "hint": "A page is one part of a book. What is a petal a part of?",
+          "steps": [
+            {
+              "explain": "Find the link in the first pair.",
+              "work": "<p>A PAGE is a part of a BOOK. (part → the whole thing)</p>"
+            },
+            {
+              "explain": "Use the same link for PETAL.",
+              "work": "<p>A PETAL is a part of a FLOWER.</p>"
+            },
+            {
+              "explain": "Check the other options.",
+              "work": "<p>Bark is part of a tree and a leaf is part of a plant, but petals are the coloured parts of a flower. A plant is too general: the petal belongs directly to the flower.</p>"
+            },
+            {
+              "explain": "PAGE : BOOK matches PETAL : FLOWER.",
+              "work": "<p>The answer is C.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "PAGE is to BOOK",
+              "note": "A page is a part of a book. Find what a petal is a part of."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 5",
+            "number": 16,
+            "page": 30,
+            "category": "analogies"
+          }
+        },
+        {
+          "id": "sch-oc-t5-q19",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Two sentences in code have been written for you. Their meanings are written in brackets.\n\nTOOF FENGAR TINE LAMBRO\n(the moon is bright)\n\nTOOF FENGAR FENGI MEIN NAR PERPATO\n(the moon shows me the path)\n\nNow a new sentence has been written in a code for you.\n\nTOOF FENGAR TINE LAMBRO KAI TOOF FENGAR FENGI MEIN NAR PERPATO\n\nUse the information you have been given to find out which word in the code means AND.",
+          "options": [
+            "FENGAR",
+            "FENGI",
+            "TOOF",
+            "KAI"
+          ],
+          "answer": 3,
+          "hint": "The new sentence is made of the two old sentences joined together. Cross out the code words you already know the meaning of. Which word is left over?",
+          "steps": [
+            {
+              "explain": "Compare the code sentences. The words TOOF FENGAR are in both of them, and both meanings contain “the moon”.",
+              "work": "<p>TOOF FENGAR = the moon</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 98\" width=\"95%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"6\" y=\"8\" width=\"89.4\" height=\"30\" rx=\"6\" fill=\"#ede9fe\" stroke=\"#7c3aed\" stroke-width=\"2\" /><text x=\"50.7\" y=\"23\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >TOOF FENGAR</text><text x=\"50.7\" y=\"34\" font-size=\"8.5\" font-weight=\"700\" fill=\"#7c3aed\" text-anchor=\"middle\" >the moon</text><rect x=\"101.4\" y=\"8\" width=\"89.4\" height=\"30\" rx=\"6\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\" /><text x=\"146.10000000000002\" y=\"23\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >TINE LAMBRO</text><text x=\"146.10000000000002\" y=\"34\" font-size=\"8.5\" font-weight=\"700\" fill=\"#d97706\" text-anchor=\"middle\" >is bright</text><rect x=\"6\" y=\"52\" width=\"89.4\" height=\"30\" rx=\"6\" fill=\"#ede9fe\" stroke=\"#7c3aed\" stroke-width=\"2\" /><text x=\"50.7\" y=\"67\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >TOOF FENGAR</text><text x=\"50.7\" y=\"78\" font-size=\"8.5\" font-weight=\"700\" fill=\"#7c3aed\" text-anchor=\"middle\" >the moon</text><rect x=\"101.4\" y=\"52\" width=\"170.8\" height=\"30\" rx=\"6\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"186.8\" y=\"67\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >FENGI MEIN NAR PERPATO</text><text x=\"186.8\" y=\"78\" font-size=\"8.5\" font-weight=\"700\" fill=\"#059669\" text-anchor=\"middle\" >shows me the path</text></svg>"
+              }
+            },
+            {
+              "explain": "Match the rest of the first sentence.",
+              "work": "<p>TINE LAMBRO = is bright (the first sentence is “the moon is bright”).</p>"
+            },
+            {
+              "explain": "Match the rest of the second sentence.",
+              "work": "<p>FENGI MEIN NAR PERPATO = shows me the path.</p>"
+            },
+            {
+              "explain": "Break the new sentence into pieces and cross out the parts you know.",
+              "work": "<p>TOOF FENGAR TINE LAMBRO | KAI | TOOF FENGAR FENGI MEIN NAR PERPATO</p><p>= the moon is bright | ? | the moon shows me the path</p><p>The new sentence says: the moon is bright AND the moon shows me the path. The left-over word KAI must mean AND.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 54\" width=\"95%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"6\" y=\"8\" width=\"89.4\" height=\"30\" rx=\"6\" fill=\"#ede9fe\" stroke=\"#7c3aed\" stroke-width=\"2\" /><text x=\"50.7\" y=\"23\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >TOOF FENGAR</text><text x=\"50.7\" y=\"34\" font-size=\"8.5\" font-weight=\"700\" fill=\"#7c3aed\" text-anchor=\"middle\" >the moon</text><rect x=\"101.4\" y=\"8\" width=\"89.4\" height=\"30\" rx=\"6\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\" /><text x=\"146.10000000000002\" y=\"23\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >TINE LAMBRO</text><text x=\"146.10000000000002\" y=\"34\" font-size=\"8.5\" font-weight=\"700\" fill=\"#d97706\" text-anchor=\"middle\" >is bright</text><rect x=\"196.8\" y=\"8\" width=\"30.200000000000003\" height=\"30\" rx=\"6\" fill=\"#ffe4e6\" stroke=\"#e11d48\" stroke-width=\"2\" /><text x=\"211.9\" y=\"23\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >KAI</text><text x=\"211.9\" y=\"34\" font-size=\"8.5\" font-weight=\"700\" fill=\"#e11d48\" text-anchor=\"middle\" >AND</text><rect x=\"233.0\" y=\"8\" width=\"89.4\" height=\"30\" rx=\"6\" fill=\"#ede9fe\" stroke=\"#7c3aed\" stroke-width=\"2\" /><text x=\"277.7\" y=\"23\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >TOOF FENGAR</text><text x=\"277.7\" y=\"34\" font-size=\"8.5\" font-weight=\"700\" fill=\"#7c3aed\" text-anchor=\"middle\" >the moon</text><rect x=\"328.4\" y=\"8\" width=\"170.8\" height=\"30\" rx=\"6\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"413.79999999999995\" y=\"23\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >FENGI MEIN NAR PERPATO</text><text x=\"413.79999999999995\" y=\"34\" font-size=\"8.5\" font-weight=\"700\" fill=\"#059669\" text-anchor=\"middle\" >shows me the path</text></svg>"
+              }
+            },
+            {
+              "explain": "Check the other options: FENGAR, TOOF and FENGI are part of “the moon” and “shows”.",
+              "work": "<p>The answer is D.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "which word in the code means AND",
+              "note": "Cross out the words whose meaning you already know. The word that is left is the answer."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 5",
+            "number": 19,
+            "page": 31,
+            "category": "codes"
+          }
+        },
+        {
+          "id": "sch-oc-t5-q20to24",
+          "type": "multipart",
+          "stem": "Questions 20 to 24 refer to the following passage.\n\nMITSINA THE HERMIT\n\nThis is a tale told by the Zuni Indians of America’s southwest.\n\nLong ago, before men and women lived on Earth, gods and goddesses lived in Heaven.\n\nBut not all the gods and goddesses were good. Sharp-sighted Mitsina was an evil god. Lying and cheating were his favourite tricks.\n\nAwonawilona, the ever-burning sun god, cast Mitsina from Heaven down to Earth. There, in the dense Canyon of the Pines, Mitsina settled and did his building. After his house was finished, Mitsina passed his time by playing cane-cards: a game like dice, a game of gambling. But there were neither men nor women with whom to gamble. So he played alone.\n\nAfter a thousand years, men and women began to live on earth.\n\nSometimes it happened that a warrior went hunting for deer, and came upon Mitsina’s lodgings. From within, the warrior heard a strange sound — rr — like wind whistling through the pine trees. Curious, the warrior came closer and placed his ear against the wall. He heard the windy sound again, louder still.\n\nThen he climbed the ladder leading to the roof and looked down through the sky-hole, through which the smoke rose. There he saw old Mitsina playing at cane-cards. As Mitsina rolled the cane-cards on his buffalo blanket, he shouted ‘Rrrrrr!’ — like an icy north wind blowing.\n\nMitsina was old, but he had good eyes. He caught sight of the warrior.\n\n‘I was just playing a game of cane-cards’, Mitsina said. ‘Won’t you come down and join me?’\n\nThe warrior climbed down the ladder and entered Mitsina’s house.\n\nSource: David Shapiro, Mitsina the Hermit, Sydney, Harcourt Brace Jovanovich, 1990",
+          "parts": [
+            {
+              "id": "sch-oc-t5-q20",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What can be said about this passage?",
+              "options": [
+                "It is a parable from the Zuni Indians.",
+                "It is a folktale of the Zuni Indians.",
+                "It is an epic of the southwest Indians.",
+                "It is a biography of Mitsina."
+              ],
+              "answer": 1,
+              "hint": "Read how the passage begins. It tells you what kind of text it is and who tells it.",
+              "steps": [
+                {
+                  "explain": "Read the first sentence.",
+                  "work": "<p>“This is a <mark>tale told by the Zuni Indians</mark> of America’s southwest.”</p>"
+                },
+                {
+                  "explain": "What kind of story is this?",
+                  "work": "<p>It has gods, a made-up long-ago time, and no named writer: a story handed down by a people is a folktale.</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>A parable is a short story that teaches a lesson with everyday people. An epic is a long poem about a hero. A biography tells the real life story of a person.</p>"
+                },
+                {
+                  "explain": "The answer is B."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "What can be said about this passage",
+                  "note": "Look at the first sentence: it tells you what kind of story this is."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 5",
+                "number": 20,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t5-q21",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "What made Mitsina an evil god?",
+              "options": [
+                "he lied and cheated",
+                "he was sharp-sighted",
+                "he gambled",
+                "he tricked others"
+              ],
+              "answer": 0,
+              "hint": "Find the sentence that says Mitsina was evil. The next sentence gives the reason.",
+              "steps": [
+                {
+                  "explain": "Find the sentences about Mitsina.",
+                  "work": "<p>“…Sharp-sighted Mitsina was an evil god. <mark>Lying and cheating were his favourite tricks.</mark>”</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>B — sharp-sighted only means he could see well.</p><p>C — he gambled alone, which does not harm anyone.</p><p>D — the passage never says he tricked the warrior (that happens in the original story, not here).</p>"
+                },
+                {
+                  "explain": "He was evil because he lied and cheated.",
+                  "work": "<p>The answer is A.</p>"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "evil god",
+                  "note": "The reason for him being evil is given in the sentence right after “an evil god”."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 5",
+                "number": 21,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t5-q22",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "When did Awonawilona send Mitsina away?",
+              "options": [
+                "after one thousand years",
+                "after he went to the Canyon of Pines",
+                "before the creation of people",
+                "after the warrior went hunting for deer"
+              ],
+              "answer": 2,
+              "hint": "Find the sentence about Awonawilona sending Mitsina to Earth. Then find when men and women began to live on Earth.",
+              "steps": [
+                {
+                  "explain": "Put the events in order.",
+                  "work": "<p>1. “…<mark>cast Mitsina from Heaven down to Earth</mark>” (Awonawilona sends him away)</p><p>2. Mitsina settles, builds his house and plays alone. “But there were <mark>neither men nor women</mark>.”</p><p>3. “<mark>After a thousand years</mark>, men and women began to live on earth.”</p><p>4. Later, a warrior goes hunting.</p>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 112\" width=\"95%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><line x1=\"20\" y1=\"56\" x2=\"340\" y2=\"56\" stroke=\"#94a3b8\" stroke-width=\"2.4\" /><circle cx=\"40\" cy=\"56\" r=\"11\" fill=\"#059669\" stroke=\"#fff\" stroke-width=\"2\" /><text x=\"40\" y=\"60\" font-size=\"12\" font-weight=\"800\" fill=\"#fff\" text-anchor=\"middle\" >1</text><text x=\"40\" y=\"82\" font-size=\"10.5\" font-weight=\"700\" fill=\"#059669\" text-anchor=\"middle\" >Mitsina is sent</text><text x=\"40\" y=\"95\" font-size=\"10.5\" font-weight=\"700\" fill=\"#059669\" text-anchor=\"middle\" >to Earth</text><circle cx=\"140\" cy=\"56\" r=\"11\" fill=\"#6366f1\" stroke=\"#fff\" stroke-width=\"2\" /><text x=\"140\" y=\"60\" font-size=\"12\" font-weight=\"800\" fill=\"#fff\" text-anchor=\"middle\" >2</text><text x=\"140\" y=\"82\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >plays alone</text><text x=\"140\" y=\"95\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >for 1000 years</text><circle cx=\"240\" cy=\"56\" r=\"11\" fill=\"#6366f1\" stroke=\"#fff\" stroke-width=\"2\" /><text x=\"240\" y=\"60\" font-size=\"12\" font-weight=\"800\" fill=\"#fff\" text-anchor=\"middle\" >3</text><text x=\"240\" y=\"82\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >people begin</text><text x=\"240\" y=\"95\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >to live on Earth</text><circle cx=\"320\" cy=\"56\" r=\"11\" fill=\"#6366f1\" stroke=\"#fff\" stroke-width=\"2\" /><text x=\"320\" y=\"60\" font-size=\"12\" font-weight=\"800\" fill=\"#fff\" text-anchor=\"middle\" >4</text><text x=\"320\" y=\"82\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >a warrior</text><text x=\"320\" y=\"95\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >comes</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Awonawilona sent Mitsina away at the very start, before the people were on Earth.",
+                  "work": "<p>The answer is C.</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>A — the thousand years came after he was sent away.</p><p>B — he went to the Canyon because he was sent to Earth, not before.</p><p>D — the warrior came much later.</p>"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "When did Awonawilona send Mitsina away",
+                  "note": "Put the events in order. Find the first one."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 5",
+                "number": 22,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t5-q23",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "How is the strange sound described?",
+              "options": [
+                "like the sound of the wind",
+                "like the sound of cane-cards on the buffalo blanket",
+                "like the sound of pine trees",
+                "like the sound of Mitsina grumbling"
+              ],
+              "answer": 0,
+              "hint": "Find the sentence that says what the warrior heard from outside Mitsina’s house.",
+              "steps": [
+                {
+                  "explain": "Find the sentence about the strange sound.",
+                  "work": "<p>“From within, the warrior heard a strange sound — rr — <mark>like wind whistling through the pine trees</mark>.”</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>B — the cane-cards on the blanket make the sound, but the passage does not say the sound is LIKE that.</p><p>C — the sound is like wind whistling through the pines, not like the trees themselves.</p><p>D — nothing says Mitsina grumbles.</p>"
+                },
+                {
+                  "explain": "The sound is described as like the wind.",
+                  "work": "<p>The answer is A.</p>"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "strange sound",
+                  "note": "Look for the words that begin with “like…” after the sound."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 5",
+                "number": 23,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t5-q24",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What happened to the warrior?",
+              "options": [
+                "The warrior warned Awoniwalona about Mitsina",
+                "The warrior took the cane-cards back to his tribe",
+                "The warrior beat Mitsina at cane-cards",
+                "We do not know what happened to the warrior."
+              ],
+              "answer": 3,
+              "hint": "Read the last sentence. The passage stops there. What does it tell us about the warrior?",
+              "steps": [
+                {
+                  "explain": "Read the end of the passage.",
+                  "work": "<p>“The warrior <mark>climbed down the ladder and entered Mitsina’s house</mark>.”</p><p>The passage ends here.</p>"
+                },
+                {
+                  "explain": "Check each option against the passage.",
+                  "work": "<p>A, B and C are about things that happen after the warrior enters, but none of them is in the passage.</p>"
+                },
+                {
+                  "explain": "The passage does not tell us what happened next.",
+                  "work": "<p>The answer is D.</p>"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "What happened to the warrior",
+                  "note": "Check that the answer is stated in the passage. If it is not there, it cannot be the answer."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 5",
+                "number": 24,
+                "category": "comprehension"
+              }
+            }
+          ],
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 5",
+            "number": "20-24",
+            "page": 31,
+            "category": "comprehension"
+          }
+        },
+        {
+          "id": "sch-oc-t5-q29",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Read this short passage.\n\nWhen people took over the territory of the fairy penguins, it could have meant their extinction.\n\nSource: Edel Wignell, The Portland Fairy Penguins, Sydney, Harcourt Brace Jovanovich, 1990\n\nWhich word best gives the meaning of TERRITORY?",
+          "options": [
+            "acres",
+            "fields",
+            "habitat",
+            "nests"
+          ],
+          "answer": 2,
+          "hint": "Think about what the penguins lose if people take over their territory. Where do the penguins live and find their food?",
+          "steps": [
+            {
+              "explain": "Read the sentence with the word in it.",
+              "work": "<p>“When people took over the <mark>territory</mark> of the fairy penguins, it could have meant their extinction.”</p>"
+            },
+            {
+              "explain": "Think about what the penguins need.",
+              "work": "<p>Penguins need a place where they live, find food and raise their young. If people take it over, the penguins could die out.</p>"
+            },
+            {
+              "explain": "Check each option.",
+              "work": "<p>acres — a measure of land size.</p><p>fields — land used for crops or animals, not for wild penguins.</p><p>nests — only the small places where eggs are laid, which is too small.</p><p>habitat — the natural home area of an animal. ✓</p>"
+            },
+            {
+              "explain": "Territory and habitat both mean the area an animal lives in.",
+              "work": "<p>The answer is C.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "TERRITORY",
+              "note": "Territory is the area an animal lives in. Look for the word that means the same."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 5",
+            "number": 29,
+            "page": 32,
+            "category": "word knowledge"
+          }
+        },
+        {
+          "id": "sch-oc-t5-q30",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "When you put these words in the correct order you will have a sentence. Which two words are not required to complete the sentence?\n\nBETWEEN FROM GREW McDONALDS OUTLETS LED THE 488 TO 645 1995 AND 1997",
+          "options": [
+            "to outlets",
+            "the outlets",
+            "between led",
+            "led the"
+          ],
+          "answer": 3,
+          "hint": "Build the sentence from the words that clearly belong together, like “from 488 to 645” and “between 1995 and 1997”. Which two words are left over?",
+          "steps": [
+            {
+              "explain": "Find the groups that go together.",
+              "work": "<p>“McDonalds grew” (who and what happened)</p><p>“from 488 to 645 outlets” (how much)</p><p>“between 1995 and 1997” (when)</p>"
+            },
+            {
+              "explain": "Join the groups to make a sentence.",
+              "work": "<p>McDonalds grew from 488 to 645 outlets between 1995 and 1997.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 140\" width=\"85%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"4\" y=\"4\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"45.0\" y=\"23\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >McDONALDS</text><text x=\"12\" y=\"41\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >1</text><rect x=\"92\" y=\"4\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"133.0\" y=\"23\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >GREW</text><text x=\"100\" y=\"41\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >2</text><rect x=\"180\" y=\"4\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"221.0\" y=\"23\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >FROM</text><text x=\"188\" y=\"41\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >3</text><rect x=\"268\" y=\"4\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"309.0\" y=\"23\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >488</text><text x=\"276\" y=\"41\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >4</text><rect x=\"4\" y=\"48\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"45.0\" y=\"67\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >TO</text><text x=\"12\" y=\"85\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >5</text><rect x=\"92\" y=\"48\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"133.0\" y=\"67\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >645</text><text x=\"100\" y=\"85\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >6</text><rect x=\"180\" y=\"48\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"221.0\" y=\"67\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >OUTLETS</text><text x=\"188\" y=\"85\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >7</text><rect x=\"268\" y=\"48\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"309.0\" y=\"67\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >BETWEEN</text><text x=\"276\" y=\"85\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >8</text><rect x=\"4\" y=\"92\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"45.0\" y=\"111\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >1995</text><text x=\"12\" y=\"129\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >9</text><rect x=\"92\" y=\"92\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"133.0\" y=\"111\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >AND</text><text x=\"100\" y=\"129\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >10</text><rect x=\"180\" y=\"92\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"221.0\" y=\"111\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >1997</text><text x=\"188\" y=\"129\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >11</text></svg>"
+              }
+            },
+            {
+              "explain": "Tick off every word in the list. Which words have not been used?",
+              "work": "<p>BETWEEN ✓ FROM ✓ GREW ✓ McDONALDS ✓ OUTLETS ✓ 488 ✓ TO ✓ 645 ✓ 1995 ✓ AND ✓ 1997 ✓</p><p>LED and THE are not used.</p>"
+            },
+            {
+              "explain": "The two words that are not required are “led” and “the”.",
+              "work": "<p>The answer is D.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "not required",
+              "note": "Build the sentence first, then see which two words you did not need."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 5",
+            "number": 30,
+            "page": 32,
+            "category": "word order"
+          }
         }
       ]
     },
@@ -6931,6 +7809,679 @@
             "test": "Test 4",
             "number": 28,
             "page": 27,
+            "category": "number series"
+          }
+        },
+        {
+          "id": "sch-oc-t5-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "USA coins usually come in 1 cents, 5 cents, 10 cents, and 25 cents. I have to pay the salesperson \\(\\$1.07\\). What is the least number of coins that I can give him/her?",
+          "options": [
+            "7",
+            "8",
+            "4",
+            "6"
+          ],
+          "answer": 0,
+          "hint": "To use the fewest coins, start with the biggest coin (25 cents) as many times as you can. Then use the next biggest coin for what is left.",
+          "steps": [
+            {
+              "explain": "Change the money to cents so that it is easy to work with.",
+              "work": "<p>\\(\\$1.07=107\\) cents</p>"
+            },
+            {
+              "explain": "Use as many 25-cent coins as you can without going over 107 cents.",
+              "work": "<p>\\(4\\times25=100\\), and \\(5\\times25=125\\) is too much.</p><p>So use four 25c coins. \\(107-100=7\\) cents are still to pay.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 190 62\" width=\"55%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><circle cx=\"20\" cy=\"30\" r=\"17\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"2.4\" /><text x=\"20\" y=\"35\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >25c</text><circle cx=\"64\" cy=\"30\" r=\"17\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"2.4\" /><text x=\"64\" y=\"35\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >25c</text><circle cx=\"108\" cy=\"30\" r=\"17\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"2.4\" /><text x=\"108\" y=\"35\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >25c</text><circle cx=\"152\" cy=\"30\" r=\"17\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"2.4\" /><text x=\"152\" y=\"35\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >25c</text></svg>"
+              }
+            },
+            {
+              "explain": "Pay the last 7 cents with the fewest coins. A 10c coin is too big, so use one 5c coin and then 1c coins.",
+              "work": "<p>\\(7=5+1+1\\): one 5c coin and two 1c coins.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 322 62\" width=\"85%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><circle cx=\"20\" cy=\"30\" r=\"17\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"2.4\" /><text x=\"20\" y=\"35\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >25c</text><circle cx=\"64\" cy=\"30\" r=\"17\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"2.4\" /><text x=\"64\" y=\"35\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >25c</text><circle cx=\"108\" cy=\"30\" r=\"17\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"2.4\" /><text x=\"108\" y=\"35\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >25c</text><circle cx=\"152\" cy=\"30\" r=\"17\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"2.4\" /><text x=\"152\" y=\"35\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >25c</text><circle cx=\"196\" cy=\"30\" r=\"12\" fill=\"#e2e8f0\" stroke=\"#059669\" stroke-width=\"2.4\" /><text x=\"196\" y=\"35\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >5c</text><circle cx=\"240\" cy=\"30\" r=\"12\" fill=\"#fed7aa\" stroke=\"#059669\" stroke-width=\"2.4\" /><text x=\"240\" y=\"35\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >1c</text><circle cx=\"284\" cy=\"30\" r=\"12\" fill=\"#fed7aa\" stroke=\"#059669\" stroke-width=\"2.4\" /><text x=\"284\" y=\"35\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >1c</text></svg>"
+              }
+            },
+            {
+              "explain": "Count the coins.",
+              "work": "<p>\\(4+1+2=7\\) coins. (A 10c coin is not needed because 7 is less than 10.)</p>"
+            },
+            {
+              "explain": "Check: 100 + 5 + 1 + 1 = 107 cents ✓. The answer is A."
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "least number of coins",
+              "note": "Use the biggest coin first, as many times as you can, then the next biggest."
+            },
+            {
+              "text": "\\(\\$1.07\\)",
+              "note": "Change the dollars into cents to make the sum easier: 107 cents."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 5",
+            "number": 2,
+            "page": 28,
+            "category": "arithmetic"
+          }
+        },
+        {
+          "id": "sch-oc-t5-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "John works at the M & C Deli. He earns \\(\\$5.48\\) an hour. He works three hours on Monday and three hours on Wednesday. How much does he earn each week?",
+          "options": [
+            "\\(\\$5.48\\times3\\times2=\\$34.88\\)",
+            "\\(\\$16.44\\times3=\\$32.88\\)",
+            "\\(\\$5.48\\times3\\times2=\\$32.88\\)",
+            "\\(\\$5.48\\times6=\\$34.88\\)"
+          ],
+          "answer": 2,
+          "hint": "First find the total number of hours John works in a week. Then multiply by the amount he earns in one hour. Check that the answer to each calculation is really right.",
+          "steps": [
+            {
+              "explain": "Find the total hours he works in a week.",
+              "work": "<p>3 hours on Monday + 3 hours on Wednesday \\(=3\\times2=6\\) hours</p>"
+            },
+            {
+              "explain": "He earns \\(\\$5.48\\) for each hour, so multiply by the hours.",
+              "work": "<p>\\(\\$5.48\\times6=\\$32.88\\)</p><p>(\\(5.48\\times6=5\\times6+0.48\\times6=30+2.88=32.88\\))</p>"
+            },
+            {
+              "explain": "Write the calculation in the same form as the options.",
+              "work": "<p>\\(\\$5.48\\times3\\times2=\\$32.88\\)</p>"
+            },
+            {
+              "explain": "Check the other options by working them out.",
+              "work": "<p>A: \\(5.48\\times3\\times2=32.88\\), not \\(34.88\\) — the calculation is right but the answer is wrong.</p><p>B: \\(16.44\\times3=49.32\\), not \\(32.88\\).</p><p>D: \\(5.48\\times6=32.88\\), not \\(34.88\\).</p>"
+            },
+            {
+              "explain": "Only option C has a correct calculation and a correct answer.",
+              "work": "<p>The answer is C.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "three hours on Monday and three hours on Wednesday",
+              "note": "Add up the hours first: that is 3 × 2."
+            },
+            {
+              "text": "each week",
+              "note": "Multiply the total hours by the pay for one hour."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 5",
+            "number": 3,
+            "page": 28,
+            "category": "calculation problems"
+          }
+        },
+        {
+          "id": "sch-oc-t5-q10",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Which figure is different from the others?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 715 227\" width=\"80%\" height=\"auto\"><image href=\"/oc/t5-q10.jpg\" x=\"0\" y=\"0\" width=\"715\" height=\"227\"/></svg>"
+          },
+          "options": [
+            "IV",
+            "III",
+            "II",
+            "I"
+          ],
+          "answer": 3,
+          "hint": "Each figure has a square with a dot inside and two more dots outside. Join the three dots with lines to make a triangle. What is special about the triangle in three of the figures?",
+          "steps": [
+            {
+              "explain": "Look at the three dots in each figure: the dot inside the square and the two dots outside it.",
+              "work": "<p>Join the three dots with lines to make a triangle in each figure.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 486 140\" width=\"95%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"26\" y=\"54\" width=\"52\" height=\"52\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\" /><circle cx=\"52.0\" cy=\"80.0\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"35.2\" cy=\"19.199999999999996\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"69.2\" cy=\"19.199999999999996\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><text x=\"52\" y=\"130\" font-size=\"14\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >I</text><rect x=\"138\" y=\"54\" width=\"52\" height=\"52\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\" /><circle cx=\"164.0\" cy=\"80.0\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"164.0\" cy=\"18.0\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"220.0\" cy=\"80.0\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><text x=\"164\" y=\"130\" font-size=\"14\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >II</text><rect x=\"250\" y=\"54\" width=\"52\" height=\"52\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\" /><circle cx=\"276.0\" cy=\"80.0\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"276.0\" cy=\"18.0\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"220.0\" cy=\"80.0\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><text x=\"276\" y=\"130\" font-size=\"14\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >III</text><rect x=\"362\" y=\"54\" width=\"52\" height=\"52\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\" /><circle cx=\"388.0\" cy=\"80.0\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"388.0\" cy=\"18.4\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"448.0\" cy=\"18.4\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><text x=\"388\" y=\"130\" font-size=\"14\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >IV</text></svg>"
+              }
+            },
+            {
+              "explain": "Draw the triangle in each figure and look at its corners.",
+              "work": "<p>II, III and IV each have a corner that is a square corner (a right angle, 90°). In II and III it is at the dot in the square. In IV it is at the top left dot.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 486 140\" width=\"95%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"26\" y=\"54\" width=\"52\" height=\"52\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\" /><circle cx=\"52.0\" cy=\"80.0\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"35.2\" cy=\"19.199999999999996\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"69.2\" cy=\"19.199999999999996\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><text x=\"52\" y=\"130\" font-size=\"14\" font-weight=\"800\" fill=\"#e11d48\" text-anchor=\"middle\" >I</text><rect x=\"138\" y=\"54\" width=\"52\" height=\"52\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\" /><polygon points=\"164.0,80.0 164.0,18.0 220.0,80.0\" fill=\"none\" stroke=\"#059669\" stroke-width=\"1.8\" stroke-linejoin=\"round\" stroke-dasharray=\"4 3\"/><circle cx=\"164.0\" cy=\"80.0\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"164.0\" cy=\"18.0\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"220.0\" cy=\"80.0\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><path d=\"M164.0 70.0 L174.0 70.0 L174.0 80.0\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2\"/><text x=\"164\" y=\"130\" font-size=\"14\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >II</text><rect x=\"250\" y=\"54\" width=\"52\" height=\"52\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\" /><polygon points=\"276.0,80.0 276.0,18.0 220.0,80.0\" fill=\"none\" stroke=\"#059669\" stroke-width=\"1.8\" stroke-linejoin=\"round\" stroke-dasharray=\"4 3\"/><circle cx=\"276.0\" cy=\"80.0\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"276.0\" cy=\"18.0\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"220.0\" cy=\"80.0\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><path d=\"M276.0 70.0 L266.0 70.0 L266.0 80.0\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2\"/><text x=\"276\" y=\"130\" font-size=\"14\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >III</text><rect x=\"362\" y=\"54\" width=\"52\" height=\"52\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\" /><polygon points=\"388.0,80.0 388.0,18.4 448.0,18.4\" fill=\"none\" stroke=\"#059669\" stroke-width=\"1.8\" stroke-linejoin=\"round\" stroke-dasharray=\"4 3\"/><circle cx=\"388.0\" cy=\"80.0\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"388.0\" cy=\"18.4\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"448.0\" cy=\"18.4\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><path d=\"M398.0 18.4 L398.0 28.4 L388.0 28.4\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2\"/><text x=\"388\" y=\"130\" font-size=\"14\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >IV</text></svg>"
+              }
+            },
+            {
+              "explain": "Look at figure I. Its two outside dots are the same distance either side of the dot in the square.",
+              "work": "<p>The triangle in I has two equal sides and no square corner: it is not a right-angled triangle.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 486 140\" width=\"95%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"26\" y=\"54\" width=\"52\" height=\"52\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\" /><polygon points=\"52.0,80.0 35.2,19.199999999999996 69.2,19.199999999999996\" fill=\"none\" stroke=\"#e11d48\" stroke-width=\"1.8\" stroke-linejoin=\"round\" stroke-dasharray=\"4 3\"/><circle cx=\"52.0\" cy=\"80.0\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"35.2\" cy=\"19.199999999999996\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"69.2\" cy=\"19.199999999999996\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><text x=\"52\" y=\"130\" font-size=\"14\" font-weight=\"800\" fill=\"#e11d48\" text-anchor=\"middle\" >I</text><rect x=\"138\" y=\"54\" width=\"52\" height=\"52\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\" /><polygon points=\"164.0,80.0 164.0,18.0 220.0,80.0\" fill=\"none\" stroke=\"#059669\" stroke-width=\"1.8\" stroke-linejoin=\"round\" stroke-dasharray=\"4 3\"/><circle cx=\"164.0\" cy=\"80.0\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"164.0\" cy=\"18.0\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"220.0\" cy=\"80.0\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><path d=\"M164.0 70.0 L174.0 70.0 L174.0 80.0\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2\"/><text x=\"164\" y=\"130\" font-size=\"14\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >II</text><rect x=\"250\" y=\"54\" width=\"52\" height=\"52\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\" /><polygon points=\"276.0,80.0 276.0,18.0 220.0,80.0\" fill=\"none\" stroke=\"#059669\" stroke-width=\"1.8\" stroke-linejoin=\"round\" stroke-dasharray=\"4 3\"/><circle cx=\"276.0\" cy=\"80.0\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"276.0\" cy=\"18.0\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"220.0\" cy=\"80.0\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><path d=\"M276.0 70.0 L266.0 70.0 L266.0 80.0\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2\"/><text x=\"276\" y=\"130\" font-size=\"14\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >III</text><rect x=\"362\" y=\"54\" width=\"52\" height=\"52\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\" /><polygon points=\"388.0,80.0 388.0,18.4 448.0,18.4\" fill=\"none\" stroke=\"#059669\" stroke-width=\"1.8\" stroke-linejoin=\"round\" stroke-dasharray=\"4 3\"/><circle cx=\"388.0\" cy=\"80.0\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"388.0\" cy=\"18.4\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"448.0\" cy=\"18.4\" r=\"6.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><path d=\"M398.0 18.4 L398.0 28.4 L388.0 28.4\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2\"/><text x=\"388\" y=\"130\" font-size=\"14\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >IV</text></svg>"
+              }
+            },
+            {
+              "explain": "Figure I is the one that is different.",
+              "work": "<p>The answer is D.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "different from the others",
+              "note": "Look for a property that three figures share and one does not. Try joining the dots."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 5",
+            "number": 10,
+            "page": 29,
+            "category": "figure sequences"
+          }
+        },
+        {
+          "id": "sch-oc-t5-q11",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Here is a bill for a meal. There are two errors in this customer’s bill, leading to a wrong total.\n\nOn which lines A, B, C, D, E or F are the two errors and what should the correct total be for this bill?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 720 495\" width=\"80%\" height=\"auto\"><image href=\"/oc/t5-q11.jpg\" x=\"0\" y=\"0\" width=\"720\" height=\"495\"/></svg>"
+          },
+          "options": [
+            "The errors are in lines B and C and the total should be \\(\\$16.40\\).",
+            "The errors are in lines A and C and the total should be \\(\\$17.70\\).",
+            "The errors are in lines C and D and the total should be \\(\\$16.60\\).",
+            "The errors are in lines B and C and the total should be \\(\\$16.50\\)."
+          ],
+          "answer": 0,
+          "hint": "Check each line yourself: multiply the number of items by the cost of one item and compare with the total printed on that line.",
+          "steps": [
+            {
+              "explain": "Check each line by multiplying the number of items by the cost of one item.",
+              "work": "<p>A: \\(2\\times2.50=5.00\\) ✓</p><p>B: \\(3\\times1.20=3.60\\); bill \\(2.40\\) ✗</p><p>C: \\(2\\times0.85=1.70\\); bill \\(1.80\\) ✗</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 404 210\" width=\"95%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><text x=\"16\" y=\"16\" font-size=\"10.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >Line</text><text x=\"46\" y=\"16\" font-size=\"10.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >No.</text><text x=\"64\" y=\"16\" font-size=\"10.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"start\" >Item</text><text x=\"205\" y=\"16\" font-size=\"10.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >Cost</text><text x=\"258\" y=\"16\" font-size=\"10.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >Printed</text><text x=\"16\" y=\"41\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >A</text><text x=\"46\" y=\"41\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >2</text><text x=\"64\" y=\"41\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\" >Hamburgers</text><text x=\"205\" y=\"41\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >$2.50</text><text x=\"258\" y=\"41\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >$5.00</text><rect x=\"4\" y=\"50\" width=\"290\" height=\"24\" rx=\"5\" fill=\"#ffe4e6\" stroke=\"#e11d48\" stroke-width=\"1.6\" /><text x=\"16\" y=\"67\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >B</text><text x=\"46\" y=\"67\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >3</text><text x=\"64\" y=\"67\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\" >Coffee</text><text x=\"205\" y=\"67\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >$1.20</text><text x=\"258\" y=\"67\" font-size=\"12\" font-weight=\"700\" fill=\"#e11d48\" text-anchor=\"middle\" >$2.40</text><rect x=\"4\" y=\"76\" width=\"290\" height=\"24\" rx=\"5\" fill=\"#ffe4e6\" stroke=\"#e11d48\" stroke-width=\"1.6\" /><text x=\"16\" y=\"93\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >C</text><text x=\"46\" y=\"93\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >2</text><text x=\"64\" y=\"93\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\" >French fries</text><text x=\"205\" y=\"93\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >$0.85</text><text x=\"258\" y=\"93\" font-size=\"12\" font-weight=\"700\" fill=\"#e11d48\" text-anchor=\"middle\" >$1.80</text><text x=\"16\" y=\"119\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >D</text><text x=\"46\" y=\"119\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >2</text><text x=\"64\" y=\"119\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\" >Desserts</text><text x=\"205\" y=\"119\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >$0.95</text><text x=\"258\" y=\"119\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >$1.90</text><text x=\"16\" y=\"145\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >E</text><text x=\"46\" y=\"145\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >1</text><text x=\"64\" y=\"145\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\" >Chicken nuggets</text><text x=\"205\" y=\"145\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >$2.75</text><text x=\"258\" y=\"145\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >$2.75</text><text x=\"16\" y=\"171\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >F</text><text x=\"46\" y=\"171\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >1</text><text x=\"64\" y=\"171\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\" >Apple pie</text><text x=\"205\" y=\"171\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >$1.45</text><text x=\"258\" y=\"171\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >$1.45</text></svg>"
+              }
+            },
+            {
+              "explain": "Check the other lines.",
+              "work": "<p>D: \\(2\\times0.95=1.90\\) ✓</p><p>E: \\(1\\times2.75=2.75\\) ✓</p><p>F: \\(1\\times1.45=1.45\\) ✓</p><p>The two errors are in lines B and C.</p>"
+            },
+            {
+              "explain": "Write the six correct line totals and add them.",
+              "work": "<p>\\(5.00+3.60+1.70+1.90+2.75+1.45\\)</p><p>\\(5.00+3.60=8.60\\);  \\(8.60+1.70=10.30\\);  \\(10.30+1.90=12.20\\);  \\(12.20+2.75=14.95\\);  \\(14.95+1.45=16.40\\)</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 404 210\" width=\"95%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><text x=\"16\" y=\"16\" font-size=\"10.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >Line</text><text x=\"46\" y=\"16\" font-size=\"10.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >No.</text><text x=\"64\" y=\"16\" font-size=\"10.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"start\" >Item</text><text x=\"205\" y=\"16\" font-size=\"10.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >Cost</text><text x=\"258\" y=\"16\" font-size=\"10.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >Printed</text><text x=\"318\" y=\"16\" font-size=\"10.5\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"middle\" >Correct</text><text x=\"16\" y=\"41\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >A</text><text x=\"46\" y=\"41\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >2</text><text x=\"64\" y=\"41\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\" >Hamburgers</text><text x=\"205\" y=\"41\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >$2.50</text><text x=\"258\" y=\"41\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >$5.00</text><text x=\"318\" y=\"41\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >$5.00</text><rect x=\"4\" y=\"50\" width=\"396\" height=\"24\" rx=\"5\" fill=\"#ffe4e6\" stroke=\"#e11d48\" stroke-width=\"1.6\" /><text x=\"16\" y=\"67\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >B</text><text x=\"46\" y=\"67\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >3</text><text x=\"64\" y=\"67\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\" >Coffee</text><text x=\"205\" y=\"67\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >$1.20</text><text x=\"258\" y=\"67\" font-size=\"12\" font-weight=\"700\" fill=\"#e11d48\" text-anchor=\"middle\" >$2.40</text><text x=\"318\" y=\"67\" font-size=\"12\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"middle\" >$3.60</text><text x=\"352\" y=\"67\" font-size=\"10\" font-weight=\"700\" fill=\"#b45309\" text-anchor=\"start\" >3 × 1.20</text><rect x=\"4\" y=\"76\" width=\"396\" height=\"24\" rx=\"5\" fill=\"#ffe4e6\" stroke=\"#e11d48\" stroke-width=\"1.6\" /><text x=\"16\" y=\"93\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >C</text><text x=\"46\" y=\"93\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >2</text><text x=\"64\" y=\"93\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\" >French fries</text><text x=\"205\" y=\"93\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >$0.85</text><text x=\"258\" y=\"93\" font-size=\"12\" font-weight=\"700\" fill=\"#e11d48\" text-anchor=\"middle\" >$1.80</text><text x=\"318\" y=\"93\" font-size=\"12\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"middle\" >$1.70</text><text x=\"352\" y=\"93\" font-size=\"10\" font-weight=\"700\" fill=\"#b45309\" text-anchor=\"start\" >2 × 0.85</text><text x=\"16\" y=\"119\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >D</text><text x=\"46\" y=\"119\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >2</text><text x=\"64\" y=\"119\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\" >Desserts</text><text x=\"205\" y=\"119\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >$0.95</text><text x=\"258\" y=\"119\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >$1.90</text><text x=\"318\" y=\"119\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >$1.90</text><text x=\"16\" y=\"145\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >E</text><text x=\"46\" y=\"145\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >1</text><text x=\"64\" y=\"145\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\" >Chicken nuggets</text><text x=\"205\" y=\"145\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >$2.75</text><text x=\"258\" y=\"145\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >$2.75</text><text x=\"318\" y=\"145\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >$2.75</text><text x=\"16\" y=\"171\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >F</text><text x=\"46\" y=\"171\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >1</text><text x=\"64\" y=\"171\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\" >Apple pie</text><text x=\"205\" y=\"171\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >$1.45</text><text x=\"258\" y=\"171\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >$1.45</text><text x=\"318\" y=\"171\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >$1.45</text><line x1=\"4\" y1=\"184\" x2=\"396\" y2=\"184\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><text x=\"258\" y=\"202\" font-size=\"12\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >$15.30</text><text x=\"318\" y=\"202\" font-size=\"13\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"middle\" >$16.40</text></svg>"
+              }
+            },
+            {
+              "explain": "The correct total is \\(\\$16.40\\).",
+              "work": "<p>Check the other options: they have the right lines but a wrong total (D), or the wrong lines. The answer is A.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "two errors",
+              "note": "Check each line by multiplying the number of items by the price of one item."
+            },
+            {
+              "text": "correct total",
+              "note": "Add up the corrected line totals to find the new total."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 5",
+            "number": 11,
+            "page": 29,
+            "category": "graph interpretation"
+          }
+        },
+        {
+          "id": "sch-oc-t5-q12",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "At the university, the rate for mileage allowance is around 53 cents per kilometre. This is the kilometre reading at the beginning of a trip.\n\n6 3 5 0 4\n\nAnd this is the reading at the end of a trip.\n\n6 3 5 3 4\n\nHow much mileage allowance should be paid?",
+          "options": [
+            "\\(\\$15.96\\)",
+            "\\(\\$15.99\\)",
+            "\\(\\$15.90\\)",
+            "\\(\\$15.93\\)"
+          ],
+          "answer": 2,
+          "hint": "First find how many kilometres were travelled: subtract the start reading from the end reading. Then multiply by 53 cents.",
+          "steps": [
+            {
+              "explain": "Find the distance travelled: end reading take away start reading.",
+              "work": "<p>\\(63\\,534-63\\,504=30\\) km. Only the tens digit changed (0 to 3), so the trip was 30 km.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 236 112\" width=\"65%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><text x=\"34\" y=\"38\" font-size=\"12\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"end\" >start</text><rect x=\"46\" y=\"10\" width=\"32\" height=\"40\" rx=\"5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"2.4\" /><text x=\"62\" y=\"38\" font-size=\"21\" font-weight=\"800\" fill=\"#f8fafc\" text-anchor=\"middle\" >6</text><rect x=\"82\" y=\"10\" width=\"32\" height=\"40\" rx=\"5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"2.4\" /><text x=\"98\" y=\"38\" font-size=\"21\" font-weight=\"800\" fill=\"#f8fafc\" text-anchor=\"middle\" >3</text><rect x=\"118\" y=\"10\" width=\"32\" height=\"40\" rx=\"5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"2.4\" /><text x=\"134\" y=\"38\" font-size=\"21\" font-weight=\"800\" fill=\"#f8fafc\" text-anchor=\"middle\" >5</text><rect x=\"154\" y=\"10\" width=\"32\" height=\"40\" rx=\"5\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2.4\" /><text x=\"170\" y=\"38\" font-size=\"21\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" >0</text><rect x=\"190\" y=\"10\" width=\"32\" height=\"40\" rx=\"5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"2.4\" /><text x=\"206\" y=\"38\" font-size=\"21\" font-weight=\"800\" fill=\"#f8fafc\" text-anchor=\"middle\" >4</text><text x=\"34\" y=\"90\" font-size=\"12\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"end\" >end</text><rect x=\"46\" y=\"62\" width=\"32\" height=\"40\" rx=\"5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"2.4\" /><text x=\"62\" y=\"90\" font-size=\"21\" font-weight=\"800\" fill=\"#f8fafc\" text-anchor=\"middle\" >6</text><rect x=\"82\" y=\"62\" width=\"32\" height=\"40\" rx=\"5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"2.4\" /><text x=\"98\" y=\"90\" font-size=\"21\" font-weight=\"800\" fill=\"#f8fafc\" text-anchor=\"middle\" >3</text><rect x=\"118\" y=\"62\" width=\"32\" height=\"40\" rx=\"5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"2.4\" /><text x=\"134\" y=\"90\" font-size=\"21\" font-weight=\"800\" fill=\"#f8fafc\" text-anchor=\"middle\" >5</text><rect x=\"154\" y=\"62\" width=\"32\" height=\"40\" rx=\"5\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2.4\" /><text x=\"170\" y=\"90\" font-size=\"21\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" >3</text><rect x=\"190\" y=\"62\" width=\"32\" height=\"40\" rx=\"5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"2.4\" /><text x=\"206\" y=\"90\" font-size=\"21\" font-weight=\"800\" fill=\"#f8fafc\" text-anchor=\"middle\" >4</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply by the rate for each kilometre.",
+              "work": "<p>\\(30\\times53\\) cents. \\(3\\times53=159\\), so \\(30\\times53=1590\\) cents.</p>"
+            },
+            {
+              "explain": "Change the cents into dollars. There are 100 cents in a dollar.",
+              "work": "<p>\\(1590\\div100=15.90\\), so \\(\\$15.90\\).</p>"
+            },
+            {
+              "explain": "Check the other options: \\(\\$15.96\\), \\(\\$15.99\\) and \\(\\$15.93\\) would be for 30.11, 30.17 and 30.06 km, which is not possible with these readings.",
+              "work": "<p>The answer is C.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "53 cents per kilometre",
+              "note": "The rate is for each kilometre, so you need the number of kilometres first."
+            },
+            {
+              "text": "kilometre reading",
+              "note": "The distance travelled is the end reading take away the start reading."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 5",
+            "number": 12,
+            "page": 30,
+            "category": "graph interpretation"
+          }
+        },
+        {
+          "id": "sch-oc-t5-q13",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which number comes next in this series?\n\n1  23  45  ?",
+          "options": [
+            "59",
+            "63",
+            "89",
+            "67"
+          ],
+          "answer": 3,
+          "hint": "Find the gap between the numbers. Then look at the digits: do you see a pattern like 1, 2, 3, 4, 5, 6, 7?",
+          "steps": [
+            {
+              "explain": "Find the gap between neighbouring numbers.",
+              "work": "<p>\\(23-1=22\\) &emsp; \\(45-23=22\\)</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 96\" width=\"95%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><defs><marker id=\"ah\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#6366f1\"/></marker></defs><rect x=\"8\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"30.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >1</text><rect x=\"78\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"100.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >23</text><rect x=\"148\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"170.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >45</text><rect x=\"218\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#eef2ff\" stroke=\"#6366f1\" stroke-width=\"2\" /><text x=\"240.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >?</text><path d=\"M30.0 44 Q65.0 8 100.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"65.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+22</text><path d=\"M100.0 44 Q135.0 8 170.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"135.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+22</text></svg>"
+              }
+            },
+            {
+              "explain": "The series goes up by 22 each time.",
+              "work": "<p>\\(45+22=67\\)</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 112\" width=\"95%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><defs><marker id=\"ah\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#6366f1\"/></marker></defs><rect x=\"8\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"30.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >1</text><rect x=\"78\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"100.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >23</text><rect x=\"148\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"170.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >45</text><rect x=\"218\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#eef2ff\" stroke=\"#6366f1\" stroke-width=\"2\" /><text x=\"240.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >?</text><path d=\"M30.0 44 Q65.0 8 100.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"65.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+22</text><path d=\"M100.0 44 Q135.0 8 170.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"135.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+22</text><path d=\"M170.0 44 Q205.0 8 240.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"205.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+22</text><text x=\"135.0\" y=\"108\" font-size=\"12\" font-weight=\"700\" fill=\"#059669\" text-anchor=\"middle\" >45 + 22 = 67</text></svg>"
+              }
+            },
+            {
+              "explain": "Check with the digits: the numbers 1, 23, 45, 67 are made by counting 1 2 3 4 5 6 7 in groups: 1 | 23 | 45 | 67.",
+              "work": "<p>The answer is D.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "next in this series",
+              "note": "Find the gap first. Then look at the digits for another pattern."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 5",
+            "number": 13,
+            "page": 30,
+            "category": "number series"
+          }
+        },
+        {
+          "id": "sch-oc-t5-q17",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A salesperson receives a percentage of the value of the sales that are made. In the last six months the total sales were \\(\\$13\\,407.45\\). The salesperson received \\(\\$1\\,340.75\\). About what percentage did the salesperson receive?",
+          "options": [
+            "15%",
+            "90%",
+            "1%",
+            "10%"
+          ],
+          "answer": 3,
+          "hint": "Round the numbers to make them easy. Then ask: how many times does the amount received fit into the total sales?",
+          "steps": [
+            {
+              "explain": "Round both amounts so they are easy to compare.",
+              "work": "<p>\\(\\$13\\,407.45\\approx\\$13\\,400\\)  and  \\(\\$1\\,340.75\\approx\\$1\\,340\\)</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 102\" width=\"90%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><path d=\"M10 24 L10 18 L350 18 L350 24\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"180\" y=\"13\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >total sales ≈ $13 400</text><rect x=\"10\" y=\"30\" width=\"34\" height=\"34\" rx=\"0\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"1.8\" /><text x=\"27\" y=\"52\" font-size=\"8.5\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"middle\" >$1 340</text><rect x=\"44\" y=\"30\" width=\"34\" height=\"34\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"1.8\" /><text x=\"61\" y=\"52\" font-size=\"8.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >$1 340</text><rect x=\"78\" y=\"30\" width=\"34\" height=\"34\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"1.8\" /><text x=\"95\" y=\"52\" font-size=\"8.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >$1 340</text><rect x=\"112\" y=\"30\" width=\"34\" height=\"34\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"1.8\" /><text x=\"129\" y=\"52\" font-size=\"8.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >$1 340</text><rect x=\"146\" y=\"30\" width=\"34\" height=\"34\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"1.8\" /><text x=\"163\" y=\"52\" font-size=\"8.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >$1 340</text><rect x=\"180\" y=\"30\" width=\"34\" height=\"34\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"1.8\" /><text x=\"197\" y=\"52\" font-size=\"8.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >$1 340</text><rect x=\"214\" y=\"30\" width=\"34\" height=\"34\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"1.8\" /><text x=\"231\" y=\"52\" font-size=\"8.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >$1 340</text><rect x=\"248\" y=\"30\" width=\"34\" height=\"34\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"1.8\" /><text x=\"265\" y=\"52\" font-size=\"8.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >$1 340</text><rect x=\"282\" y=\"30\" width=\"34\" height=\"34\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"1.8\" /><text x=\"299\" y=\"52\" font-size=\"8.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >$1 340</text><rect x=\"316\" y=\"30\" width=\"34\" height=\"34\" rx=\"0\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"1.8\" /><text x=\"333\" y=\"52\" font-size=\"8.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >$1 340</text><text x=\"27\" y=\"82\" font-size=\"11.5\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"middle\" >received</text><text x=\"27\" y=\"95\" font-size=\"11\" font-weight=\"700\" fill=\"#059669\" text-anchor=\"middle\" >≈ $1 340</text><text x=\"215\" y=\"84\" font-size=\"12\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >10 equal parts: 1 part = one-tenth</text></svg>"
+              }
+            },
+            {
+              "explain": "See how many times the received amount fits into the total.",
+              "work": "<p>\\(13\\,400\\div1\\,340=10\\), so the amount received is one-tenth of the total.</p>"
+            },
+            {
+              "explain": "One-tenth is the same as 10%.",
+              "work": "<p>\\(\\frac{1}{10}=10\\%\\)</p>"
+            },
+            {
+              "explain": "Check: 10% of \\(\\$13\\,407.45\\) is \\(\\$1\\,340.745\\), which rounds to \\(\\$1\\,340.75\\) ✓. 15% would be about \\(\\$2\\,011\\), 1% about \\(\\$134\\) and 90% about \\(\\$12\\,067\\).",
+              "work": "<p>The answer is D.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "percentage",
+              "note": "A percentage compares a part with the whole. Find what fraction of the sales the salesperson received."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 5",
+            "number": 17,
+            "page": 30,
+            "category": "arithmetic"
+          }
+        },
+        {
+          "id": "sch-oc-t5-q18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which is the correct way to solve this problem?\n\n\\(3\\times8+6\\div2=\\;?\\)",
+          "options": [
+            "multiply 3 by 8 then add this answer to 6 and divide it all by 2",
+            "divide 6 by 2 then multiply 3 by 8; then add the two answers",
+            "multiply 3 by 14 (8 + 6) then divide the answer by 2",
+            "divide 14 (8 + 6) by 2 then multiply that answer by 3"
+          ],
+          "answer": 1,
+          "hint": "Remember the rule for the order of operations: do multiplication and division first, then addition and subtraction. Which parts of the sum are multiplication or division?",
+          "steps": [
+            {
+              "explain": "Find the operations in the sum.",
+              "work": "<p>\\(3\\times8\\) is a multiplication, \\(6\\div2\\) is a division, and the \\(+\\) in the middle is an addition.</p>"
+            },
+            {
+              "explain": "Multiplication and division are done first (in either order). Addition is done last.",
+              "work": "<p>\\(3\\times8=24\\)  and  \\(6\\div2=3\\)</p>"
+            },
+            {
+              "explain": "Now do the addition with the two answers.",
+              "work": "<p>\\(24+3=27\\)</p>"
+            },
+            {
+              "explain": "Check the other options.",
+              "work": "<p>A: \\(24+6=30\\), then \\(30\\div2=15\\) — it adds before dividing.</p><p>C: \\(3\\times14=42\\), \\(42\\div2=21\\) — adds \\(8+6\\) first.</p><p>D: \\(14\\div2=7\\), \\(7\\times3=21\\) — adds \\(8+6\\) first.</p>"
+            },
+            {
+              "explain": "Only option B follows the order of operations (and gives 27).",
+              "work": "<p>The answer is B.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "correct way to solve this problem",
+              "note": "Multiplication and division come before addition."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 5",
+            "number": 18,
+            "page": 30,
+            "category": "calculation problems"
+          }
+        },
+        {
+          "id": "sch-oc-t5-q25",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which shape comes next?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 814 396\" width=\"80%\" height=\"auto\"><image href=\"/oc/t5-q25.jpg\" x=\"0\" y=\"0\" width=\"814\" height=\"396\"/></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 1,
+          "hint": "Each picture has the same four symbols. Follow ONE symbol, for example the yin-yang, from picture to picture. Where does it go each time?",
+          "steps": [
+            {
+              "explain": "Name the four symbols in picture I from left to right.",
+              "work": "<p>yin-yang, dot-ring, small ring, thick ring</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 90\" width=\"95%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><text x=\"14\" y=\"33\" font-size=\"12.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"start\" >I</text><circle cx=\"74\" cy=\"28\" r=\"14\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><path d=\"M74 14 A14 14 0 0 1 74 42 A7.0 7.0 0 0 1 74 28 A7.0 7.0 0 0 0 74 14 Z\" fill=\"#0f172a\"/><circle cx=\"74\" cy=\"21.0\" r=\"2.2\" fill=\"#fff\" stroke=\"#fff\" stroke-width=\"0\" /><circle cx=\"74\" cy=\"35.0\" r=\"2.2\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"0\" /><circle cx=\"118\" cy=\"28\" r=\"14\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"118\" cy=\"28\" r=\"5.88\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"162\" cy=\"28\" r=\"14\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"162\" cy=\"28\" r=\"5.88\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"206\" cy=\"28\" r=\"14\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"206\" cy=\"28\" r=\"5.88\" fill=\"#fff\" stroke=\"#fff\" stroke-width=\"1\" /></svg>"
+              }
+            },
+            {
+              "explain": "Compare picture I with picture II. The thick ring moved from the end to the front and the others each moved one place to the right.",
+              "work": "<p>I:  yin-yang · dot-ring · small ring · thick ring</p><p>II:  thick ring · yin-yang · dot-ring · small ring</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 152\" width=\"95%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><text x=\"14\" y=\"33\" font-size=\"12.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"start\" >I</text><circle cx=\"74\" cy=\"28\" r=\"14\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><path d=\"M74 14 A14 14 0 0 1 74 42 A7.0 7.0 0 0 1 74 28 A7.0 7.0 0 0 0 74 14 Z\" fill=\"#0f172a\"/><circle cx=\"74\" cy=\"21.0\" r=\"2.2\" fill=\"#fff\" stroke=\"#fff\" stroke-width=\"0\" /><circle cx=\"74\" cy=\"35.0\" r=\"2.2\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"0\" /><circle cx=\"118\" cy=\"28\" r=\"14\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"118\" cy=\"28\" r=\"5.88\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"162\" cy=\"28\" r=\"14\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"162\" cy=\"28\" r=\"5.88\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><rect x=\"186\" y=\"8\" width=\"40\" height=\"40\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><circle cx=\"206\" cy=\"28\" r=\"14\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"206\" cy=\"28\" r=\"5.88\" fill=\"#fff\" stroke=\"#fff\" stroke-width=\"1\" /><text x=\"14\" y=\"95\" font-size=\"12.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"start\" >II</text><rect x=\"54\" y=\"70\" width=\"40\" height=\"40\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><circle cx=\"74\" cy=\"90\" r=\"14\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"74\" cy=\"90\" r=\"5.88\" fill=\"#fff\" stroke=\"#fff\" stroke-width=\"1\" /><circle cx=\"118\" cy=\"90\" r=\"14\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><path d=\"M118 76 A14 14 0 0 1 118 104 A7.0 7.0 0 0 1 118 90 A7.0 7.0 0 0 0 118 76 Z\" fill=\"#0f172a\"/><circle cx=\"118\" cy=\"83.0\" r=\"2.2\" fill=\"#fff\" stroke=\"#fff\" stroke-width=\"0\" /><circle cx=\"118\" cy=\"97.0\" r=\"2.2\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"0\" /><circle cx=\"162\" cy=\"90\" r=\"14\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"162\" cy=\"90\" r=\"5.88\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"206\" cy=\"90\" r=\"14\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"206\" cy=\"90\" r=\"5.88\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /></svg>"
+              }
+            },
+            {
+              "explain": "Check picture III in the same way. The last symbol (small ring) moved to the front.",
+              "work": "<p>III:  small ring · thick ring · yin-yang · dot-ring</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 214\" width=\"95%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><text x=\"14\" y=\"33\" font-size=\"12.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"start\" >I</text><circle cx=\"74\" cy=\"28\" r=\"14\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><path d=\"M74 14 A14 14 0 0 1 74 42 A7.0 7.0 0 0 1 74 28 A7.0 7.0 0 0 0 74 14 Z\" fill=\"#0f172a\"/><circle cx=\"74\" cy=\"21.0\" r=\"2.2\" fill=\"#fff\" stroke=\"#fff\" stroke-width=\"0\" /><circle cx=\"74\" cy=\"35.0\" r=\"2.2\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"0\" /><circle cx=\"118\" cy=\"28\" r=\"14\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"118\" cy=\"28\" r=\"5.88\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"162\" cy=\"28\" r=\"14\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"162\" cy=\"28\" r=\"5.88\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"206\" cy=\"28\" r=\"14\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"206\" cy=\"28\" r=\"5.88\" fill=\"#fff\" stroke=\"#fff\" stroke-width=\"1\" /><text x=\"14\" y=\"95\" font-size=\"12.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"start\" >II</text><circle cx=\"74\" cy=\"90\" r=\"14\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"74\" cy=\"90\" r=\"5.88\" fill=\"#fff\" stroke=\"#fff\" stroke-width=\"1\" /><circle cx=\"118\" cy=\"90\" r=\"14\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><path d=\"M118 76 A14 14 0 0 1 118 104 A7.0 7.0 0 0 1 118 90 A7.0 7.0 0 0 0 118 76 Z\" fill=\"#0f172a\"/><circle cx=\"118\" cy=\"83.0\" r=\"2.2\" fill=\"#fff\" stroke=\"#fff\" stroke-width=\"0\" /><circle cx=\"118\" cy=\"97.0\" r=\"2.2\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"0\" /><circle cx=\"162\" cy=\"90\" r=\"14\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"162\" cy=\"90\" r=\"5.88\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><rect x=\"186\" y=\"70\" width=\"40\" height=\"40\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><circle cx=\"206\" cy=\"90\" r=\"14\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"206\" cy=\"90\" r=\"5.88\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><text x=\"14\" y=\"157\" font-size=\"12.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"start\" >III</text><rect x=\"54\" y=\"132\" width=\"40\" height=\"40\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><circle cx=\"74\" cy=\"152\" r=\"14\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"74\" cy=\"152\" r=\"5.88\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"118\" cy=\"152\" r=\"14\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"118\" cy=\"152\" r=\"5.88\" fill=\"#fff\" stroke=\"#fff\" stroke-width=\"1\" /><circle cx=\"162\" cy=\"152\" r=\"14\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><path d=\"M162 138 A14 14 0 0 1 162 166 A7.0 7.0 0 0 1 162 152 A7.0 7.0 0 0 0 162 138 Z\" fill=\"#0f172a\"/><circle cx=\"162\" cy=\"145.0\" r=\"2.2\" fill=\"#fff\" stroke=\"#fff\" stroke-width=\"0\" /><circle cx=\"162\" cy=\"159.0\" r=\"2.2\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"0\" /><circle cx=\"206\" cy=\"152\" r=\"14\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"206\" cy=\"152\" r=\"5.88\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /></svg>"
+              }
+            },
+            {
+              "explain": "So in picture IV the last symbol of picture III (the dot-ring) moves to the front.",
+              "work": "<p>IV:  dot-ring · small ring · thick ring · yin-yang</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 276\" width=\"95%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><text x=\"14\" y=\"33\" font-size=\"12.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"start\" >I</text><circle cx=\"74\" cy=\"28\" r=\"14\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><path d=\"M74 14 A14 14 0 0 1 74 42 A7.0 7.0 0 0 1 74 28 A7.0 7.0 0 0 0 74 14 Z\" fill=\"#0f172a\"/><circle cx=\"74\" cy=\"21.0\" r=\"2.2\" fill=\"#fff\" stroke=\"#fff\" stroke-width=\"0\" /><circle cx=\"74\" cy=\"35.0\" r=\"2.2\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"0\" /><circle cx=\"118\" cy=\"28\" r=\"14\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"118\" cy=\"28\" r=\"5.88\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"162\" cy=\"28\" r=\"14\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"162\" cy=\"28\" r=\"5.88\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"206\" cy=\"28\" r=\"14\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"206\" cy=\"28\" r=\"5.88\" fill=\"#fff\" stroke=\"#fff\" stroke-width=\"1\" /><text x=\"14\" y=\"95\" font-size=\"12.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"start\" >II</text><circle cx=\"74\" cy=\"90\" r=\"14\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"74\" cy=\"90\" r=\"5.88\" fill=\"#fff\" stroke=\"#fff\" stroke-width=\"1\" /><circle cx=\"118\" cy=\"90\" r=\"14\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><path d=\"M118 76 A14 14 0 0 1 118 104 A7.0 7.0 0 0 1 118 90 A7.0 7.0 0 0 0 118 76 Z\" fill=\"#0f172a\"/><circle cx=\"118\" cy=\"83.0\" r=\"2.2\" fill=\"#fff\" stroke=\"#fff\" stroke-width=\"0\" /><circle cx=\"118\" cy=\"97.0\" r=\"2.2\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"0\" /><circle cx=\"162\" cy=\"90\" r=\"14\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"162\" cy=\"90\" r=\"5.88\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"206\" cy=\"90\" r=\"14\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"206\" cy=\"90\" r=\"5.88\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><text x=\"14\" y=\"157\" font-size=\"12.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"start\" >III</text><circle cx=\"74\" cy=\"152\" r=\"14\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"74\" cy=\"152\" r=\"5.88\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"118\" cy=\"152\" r=\"14\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"118\" cy=\"152\" r=\"5.88\" fill=\"#fff\" stroke=\"#fff\" stroke-width=\"1\" /><circle cx=\"162\" cy=\"152\" r=\"14\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><path d=\"M162 138 A14 14 0 0 1 162 166 A7.0 7.0 0 0 1 162 152 A7.0 7.0 0 0 0 162 138 Z\" fill=\"#0f172a\"/><circle cx=\"162\" cy=\"145.0\" r=\"2.2\" fill=\"#fff\" stroke=\"#fff\" stroke-width=\"0\" /><circle cx=\"162\" cy=\"159.0\" r=\"2.2\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"0\" /><rect x=\"186\" y=\"132\" width=\"40\" height=\"40\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><circle cx=\"206\" cy=\"152\" r=\"14\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"206\" cy=\"152\" r=\"5.88\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><text x=\"14\" y=\"219\" font-size=\"12.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"start\" >IV</text><rect x=\"54\" y=\"194\" width=\"40\" height=\"40\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><circle cx=\"74\" cy=\"214\" r=\"14\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"74\" cy=\"214\" r=\"5.88\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"118\" cy=\"214\" r=\"14\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"118\" cy=\"214\" r=\"5.88\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"162\" cy=\"214\" r=\"14\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"2\" /><circle cx=\"162\" cy=\"214\" r=\"5.88\" fill=\"#fff\" stroke=\"#fff\" stroke-width=\"1\" /><circle cx=\"206\" cy=\"214\" r=\"14\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"2\" /><path d=\"M206 200 A14 14 0 0 1 206 228 A7.0 7.0 0 0 1 206 214 A7.0 7.0 0 0 0 206 200 Z\" fill=\"#0f172a\"/><circle cx=\"206\" cy=\"207.0\" r=\"2.2\" fill=\"#fff\" stroke=\"#fff\" stroke-width=\"0\" /><circle cx=\"206\" cy=\"221.0\" r=\"2.2\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"0\" /></svg>"
+              }
+            },
+            {
+              "explain": "Find this order in the options.",
+              "work": "<p>B shows dot-ring, small ring, thick ring, yin-yang. ✓ The answer is B.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which shape comes next",
+              "note": "Follow one symbol and see how it moves. The last symbol always moves to the front."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 5",
+            "number": 25,
+            "page": 32,
+            "category": "figure sequences"
+          }
+        },
+        {
+          "id": "sch-oc-t5-q26",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "How many rectangular prisms are found in this shape?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 451 378\" width=\"70%\" height=\"auto\"><image href=\"/oc/t5-q26.jpg\" x=\"0\" y=\"0\" width=\"451\" height=\"378\"/></svg>"
+          },
+          "options": [
+            "13",
+            "12",
+            "14",
+            "11"
+          ],
+          "answer": 0,
+          "hint": "Each little box in the drawing is one rectangular prism. Count them in groups (for example the left tower, the bottom row, the right tower) and mark each box as you count it so that you do not count one twice.",
+          "steps": [
+            {
+              "explain": "Start with the tall tower on the left. Count the boxes in the tower, from top to bottom, including the box at the bottom.",
+              "work": "<p>The left tower has 4 boxes (numbered 1 to 4).</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 451 378\" width=\"85%\" height=\"auto\"><image href=\"/oc/t5-q26-base.jpg\" x=\"0\" y=\"0\" width=\"451\" height=\"378\"/><rect x=\"25.0\" y=\"100.0\" width=\"42.5\" height=\"42.5\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"46.2\" y=\"128.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">1</text><rect x=\"25.0\" y=\"142.5\" width=\"42.5\" height=\"42.5\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"46.2\" y=\"170.8\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">2</text><rect x=\"25.0\" y=\"185.0\" width=\"42.5\" height=\"45.0\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"46.2\" y=\"214.5\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">3</text><rect x=\"25.0\" y=\"230.0\" width=\"42.5\" height=\"42.5\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"46.2\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">4</text></svg>"
+              }
+            },
+            {
+              "explain": "Now count the boxes along the bottom row, moving to the right. Do not count the box at the bottom of the left tower again.",
+              "work": "<p>The bottom row has 6 more boxes (numbered 5 to 10).</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 451 378\" width=\"85%\" height=\"auto\"><image href=\"/oc/t5-q26-base.jpg\" x=\"0\" y=\"0\" width=\"451\" height=\"378\"/><rect x=\"25.0\" y=\"100.0\" width=\"42.5\" height=\"42.5\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"46.2\" y=\"128.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">1</text><rect x=\"25.0\" y=\"142.5\" width=\"42.5\" height=\"42.5\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"46.2\" y=\"170.8\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">2</text><rect x=\"25.0\" y=\"185.0\" width=\"42.5\" height=\"45.0\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"46.2\" y=\"214.5\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">3</text><rect x=\"25.0\" y=\"230.0\" width=\"42.5\" height=\"42.5\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"46.2\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">4</text><rect x=\"67.5\" y=\"230.0\" width=\"45.0\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"90.0\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">5</text><rect x=\"112.5\" y=\"230.0\" width=\"45.0\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"135.0\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">6</text><rect x=\"157.5\" y=\"230.0\" width=\"45.0\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"180.0\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">7</text><rect x=\"202.5\" y=\"230.0\" width=\"45.0\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"225.0\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">8</text><rect x=\"247.5\" y=\"230.0\" width=\"45.0\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"270.0\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">9</text><rect x=\"292.5\" y=\"230.0\" width=\"42.5\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"313.8\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">10</text></svg>"
+              }
+            },
+            {
+              "explain": "Now count the boxes that go down on the right-hand side, below the bottom row.",
+              "work": "<p>There are 2 boxes below the row (numbered 11 and 12).</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 451 378\" width=\"85%\" height=\"auto\"><image href=\"/oc/t5-q26-base.jpg\" x=\"0\" y=\"0\" width=\"451\" height=\"378\"/><rect x=\"25.0\" y=\"100.0\" width=\"42.5\" height=\"42.5\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"46.2\" y=\"128.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">1</text><rect x=\"25.0\" y=\"142.5\" width=\"42.5\" height=\"42.5\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"46.2\" y=\"170.8\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">2</text><rect x=\"25.0\" y=\"185.0\" width=\"42.5\" height=\"45.0\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"46.2\" y=\"214.5\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">3</text><rect x=\"25.0\" y=\"230.0\" width=\"42.5\" height=\"42.5\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"46.2\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">4</text><rect x=\"67.5\" y=\"230.0\" width=\"45.0\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"90.0\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">5</text><rect x=\"112.5\" y=\"230.0\" width=\"45.0\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"135.0\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">6</text><rect x=\"157.5\" y=\"230.0\" width=\"45.0\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"180.0\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">7</text><rect x=\"202.5\" y=\"230.0\" width=\"45.0\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"225.0\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">8</text><rect x=\"247.5\" y=\"230.0\" width=\"45.0\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"270.0\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">9</text><rect x=\"292.5\" y=\"230.0\" width=\"42.5\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"313.8\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">10</text><rect x=\"292.5\" y=\"272.5\" width=\"42.5\" height=\"43.5\" fill=\"#bbf7d0\" fill-opacity=\"0.55\" stroke=\"#059669\" stroke-width=\"3\"/><text x=\"313.8\" y=\"301.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">11</text><rect x=\"292.5\" y=\"316.0\" width=\"42.5\" height=\"44.0\" fill=\"#bbf7d0\" fill-opacity=\"0.55\" stroke=\"#059669\" stroke-width=\"3\"/><text x=\"313.8\" y=\"345.0\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">12</text></svg>"
+              }
+            },
+            {
+              "explain": "Look carefully for any box you have not counted yet. There is one box sitting on top of the bottom row, behind the middle of the shape (you can see its top edge as a small rectangle).",
+              "work": "<p>That is box number 13.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 451 378\" width=\"85%\" height=\"auto\"><image href=\"/oc/t5-q26-base.jpg\" x=\"0\" y=\"0\" width=\"451\" height=\"378\"/><rect x=\"25.0\" y=\"100.0\" width=\"42.5\" height=\"42.5\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"46.2\" y=\"128.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">1</text><rect x=\"25.0\" y=\"142.5\" width=\"42.5\" height=\"42.5\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"46.2\" y=\"170.8\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">2</text><rect x=\"25.0\" y=\"185.0\" width=\"42.5\" height=\"45.0\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"46.2\" y=\"214.5\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">3</text><rect x=\"25.0\" y=\"230.0\" width=\"42.5\" height=\"42.5\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"46.2\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">4</text><rect x=\"67.5\" y=\"230.0\" width=\"45.0\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"90.0\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">5</text><rect x=\"112.5\" y=\"230.0\" width=\"45.0\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"135.0\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">6</text><rect x=\"157.5\" y=\"230.0\" width=\"45.0\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"180.0\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">7</text><rect x=\"202.5\" y=\"230.0\" width=\"45.0\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"225.0\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">8</text><rect x=\"247.5\" y=\"230.0\" width=\"45.0\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"270.0\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">9</text><rect x=\"292.5\" y=\"230.0\" width=\"42.5\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"313.8\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">10</text><rect x=\"292.5\" y=\"272.5\" width=\"42.5\" height=\"43.5\" fill=\"#bbf7d0\" fill-opacity=\"0.55\" stroke=\"#059669\" stroke-width=\"3\"/><text x=\"313.8\" y=\"301.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">11</text><rect x=\"292.5\" y=\"316.0\" width=\"42.5\" height=\"44.0\" fill=\"#bbf7d0\" fill-opacity=\"0.55\" stroke=\"#059669\" stroke-width=\"3\"/><text x=\"313.8\" y=\"345.0\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">12</text><rect x=\"247.5\" y=\"186.0\" width=\"42.5\" height=\"44.0\" fill=\"#fbcfe8\" fill-opacity=\"0.55\" stroke=\"#db2777\" stroke-width=\"3\"/><text x=\"268.8\" y=\"215.0\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">13</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the groups.",
+              "work": "<p>\\(4+6+2+1=13\\) rectangular prisms.</p>"
+            },
+            {
+              "explain": "Check the other options: 12 forgets the box on top of the row, and 14 counts one box twice.",
+              "work": "<p>The answer is A.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "rectangular prisms",
+              "note": "Each box in the drawing is a rectangular prism. Count each one exactly once, in groups."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 5",
+            "number": 26,
+            "page": 32,
+            "category": "measurement"
+          }
+        },
+        {
+          "id": "sch-oc-t5-q27",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "An area of 243 hectares has to be divided into nine equal lots. How many hectares would there be for each of the lots?",
+          "options": [
+            "26",
+            "27",
+            "30",
+            "33"
+          ],
+          "answer": 1,
+          "hint": "Dividing into equal lots means dividing by 9. How many times does 9 fit into 243? Try your 9 times table.",
+          "steps": [
+            {
+              "explain": "Dividing 243 hectares into 9 equal lots means dividing by 9.",
+              "work": "<p>\\(243\\div9\\)</p>"
+            },
+            {
+              "explain": "Work it out in steps. How many 9s are in 24? Then in the rest?",
+              "work": "<p>\\(9\\times2=18\\), and \\(24-18=6\\), then bring down the 3 to make \\(63\\).</p><p>\\(9\\times7=63\\), so \\(243\\div9=27\\).</p>"
+            },
+            {
+              "explain": "Check by multiplying back.",
+              "work": "<p>\\(27\\times9=27\\times10-27=270-27=243\\) ✓</p>"
+            },
+            {
+              "explain": "Check the other options: 26 × 9 = 234, 30 × 9 = 270 and 33 × 9 = 297. Only 27 gives 243.",
+              "work": "<p>The answer is B.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "divided into nine equal lots",
+              "note": "Dividing into equal lots means dividing by the number of lots."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 5",
+            "number": 27,
+            "page": 32,
+            "category": "measurement"
+          }
+        },
+        {
+          "id": "sch-oc-t5-q28",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which number comes next in the series?\n\n6  14  12  20  ?",
+          "options": [
+            "16",
+            "20",
+            "18",
+            "25"
+          ],
+          "answer": 2,
+          "hint": "The numbers go up, then down, then up. Work out how much goes on and how much is taken off.",
+          "steps": [
+            {
+              "explain": "Find how each number changes.",
+              "work": "<p>\\(6\\to14\\) is \\(+8\\),  \\(14\\to12\\) is \\(-2\\),  \\(12\\to20\\) is \\(+8\\)</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 96\" width=\"95%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><defs><marker id=\"ah\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#6366f1\"/></marker></defs><rect x=\"8\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"30.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >6</text><rect x=\"78\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"100.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >14</text><rect x=\"148\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"170.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >12</text><rect x=\"218\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"240.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >20</text><rect x=\"288\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#eef2ff\" stroke=\"#6366f1\" stroke-width=\"2\" /><text x=\"310.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >?</text><path d=\"M30.0 44 Q65.0 8 100.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"65.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+8</text><path d=\"M100.0 44 Q135.0 8 170.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"135.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >−2</text><path d=\"M170.0 44 Q205.0 8 240.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"205.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+8</text></svg>"
+              }
+            },
+            {
+              "explain": "The pattern is “+8, −2” repeating. The next step is −2.",
+              "work": "<p>\\(20-2=18\\)</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 112\" width=\"95%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><defs><marker id=\"ah\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#6366f1\"/></marker></defs><rect x=\"8\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"30.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >6</text><rect x=\"78\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"100.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >14</text><rect x=\"148\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"170.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >12</text><rect x=\"218\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"240.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >20</text><rect x=\"288\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#eef2ff\" stroke=\"#6366f1\" stroke-width=\"2\" /><text x=\"310.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >?</text><path d=\"M30.0 44 Q65.0 8 100.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"65.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+8</text><path d=\"M100.0 44 Q135.0 8 170.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"135.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >−2</text><path d=\"M170.0 44 Q205.0 8 240.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"205.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+8</text><path d=\"M240.0 44 Q275.0 8 310.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"275.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >−2</text><text x=\"170.0\" y=\"108\" font-size=\"12\" font-weight=\"700\" fill=\"#059669\" text-anchor=\"middle\" >20 − 2 = 18</text></svg>"
+              }
+            },
+            {
+              "explain": "Check by writing the whole series.",
+              "work": "<p>6, 14, 12, 20, 18 (+8, −2, +8, −2) ✓</p>"
+            },
+            {
+              "explain": "The answer is C."
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "next in the series",
+              "note": "If the numbers go up and down, look for two steps that take turns."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 5",
+            "number": 28,
+            "page": 32,
             "category": "number series"
           }
         }
