@@ -5589,7 +5589,7 @@
           "id": "y9-1b-q112-0",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "A high-speed rail network calculates vibration damping coefficients. This analysis requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 a^2 b^3 c^4\\)?",
+          "stem": "Which of the following expressions is a like term to \\(18 a^2 b^3 c^4\\)?",
           "options": [
             "\\(12 a^2 b^4 c^3\\)",
             "\\(18 a^3 b^2 c^4\\)",
@@ -5597,21 +5597,23 @@
             "\\(-6.5 b^3 a^2 c^4\\)"
           ],
           "answer": 3,
-          "solution": "3",
+          "solution": "The correct answer is \\(-6.5 b^3 a^2 c^4\\).",
           "steps": [
             {
-              "explain": "Recall that like terms must have the exact same variables raised to the exact same powers, regardless of the order in which they are written."
+              "explain": "Recall that like terms must have the exact same pronumerals (variables) raised to the exact same powers (indices). The numerical coefficients can be any real number, and the order of multiplied variables does not matter due to the commutative property of multiplication.",
+              "work": "\\text{Target variable part: } a^2 b^3 c^4 \\quad (a^2, \\; b^3, \\; c^4)"
             },
             {
-              "explain": "Analyze the variable part of the target term: \\(a^2 b^3 c^4\\).",
-              "work": "\\(\\text{Variables: } a^2 b^3 c^4\\)"
+              "explain": "Check the variable part and powers of each option:\n• \\(12 a^2 b^4 c^3\\): powers of \\(b\\) and \\(c\\) are swapped (\\(b^4 c^3 \\neq b^3 c^4\\)).\n• \\(18 a^3 b^2 c^4\\): powers of \\(a\\) and \\(b\\) are swapped (\\(a^3 b^2 \\neq a^2 b^3\\)).\n• \\(-4 a^2 b^3 c\\): the power of \\(c\\) is 1, not 4.\n• \\(-6.5 b^3 a^2 c^4\\): rearranging in alphabetical order gives \\(-6.5 a^2 b^3 c^4\\), matching \\(a^2 b^3 c^4\\) exactly.",
+              "work": "b^3 a^2 c^4 = a^2 b^3 c^4 \\implies -6.5 b^3 a^2 c^4 \\text{ is a like term to } 18 a^2 b^3 c^4"
             },
             {
-              "explain": "Compare with the options. Note that multiplication is commutative, so \\(b^3 a^2 c^4\\) is identical to \\(a^2 b^3 c^4\\).",
-              "work": "\\(b^3 a^2 c^4 \\equiv a^2 b^3 c^4\\)"
+              "explain": "Therefore, the only expression that is a like term is \\(-6.5 b^3 a^2 c^4\\).",
+              "work": "\\text{Correct Answer: } -6.5 b^3 a^2 c^4"
             }
           ],
-          "xp": 1
+          "xp": 1,
+          "hint": "Like terms have the exact same variables raised to the exact same powers. The order of variables and the coefficients can differ."
         },
         {
           "id": "y9-1b-q112-2",
