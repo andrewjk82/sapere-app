@@ -1,12 +1,12 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import { ArrowLeft, CheckCircle2, ChevronLeft, ChevronRight, Clock, Play, XCircle } from 'lucide-react';
+import { ArrowLeft, CheckCircle2, ChevronLeft, ChevronRight, Clock, Lightbulb, Play, XCircle } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { getTopicQuestions } from '../services/chapterQuestionsCache';
 import { parseSolutionSteps } from '../utils/solutionSteps';
 import { isDisplayedOptionCorrect } from '../utils/mcOptionShuffle';
 import {
   TEST_SIZE, TEST_SECONDS, loadTestState, saveTestState, pickTestQuestions, applyFinishedTest,
-  gradeTest, gradeQuestionMarks, isTestable, secondsLeft, subKey,
+  gradeTest, gradeQuestionMarks, isPickCorrect, correctIndexOf, isTestable, secondsLeft, subKey,
 } from '../utils/scholarshipTest';
 import MathView from './MathView';
 import TopicPracticeSession from './TopicPracticeSession';
@@ -30,7 +30,7 @@ const Options = ({ q, picked, onPick, review }) => (
   <div style={{ display: 'flex', flexDirection: 'column', gap: 8, marginTop: 10 }}>
     {(q.options || []).map((o, i) => {
       const sel = picked !== undefined && picked !== null && Number(picked) === i;
-      const right = review && isDisplayedOptionCorrect(q, q.options, i);
+      const right = review && (correctIndexOf(q) >= 0 ? correctIndexOf(q) === i : isDisplayedOptionCorrect(q, q.options, i));
       const wrong = review && sel && !right;
       const border = right ? C.green : wrong ? C.red : sel ? C.violet : C.line;
       const bg = right ? '#ecfdf5' : wrong ? '#fff1f2' : sel ? C.soft : '#fff';
@@ -52,25 +52,6 @@ const Options = ({ q, picked, onPick, review }) => (
   </div>
 );
 
-/** A question (single MC or a passage with MC parts), answerable or in review. */
-const QuestionBody = ({ q, answer, onAnswer, review }) => (
-  <div>
-    <MathView content={q.question} graphData={q.graphData} style={{ fontSize: '0.98rem', fontWeight: 600, color: C.ink, lineHeight: 1.7 }} />
-    {q.subQuestions?.length ? q.subQuestions.map((sq, i) => {
-      const k = subKey(sq, i);
-      return (
-        <div key={k} style={{ marginTop: 16, paddingTop: 14, borderTop: `1px dashed ${C.line}` }}>
-          <div style={{ display: 'flex', gap: 8 }}>
-            <span style={{ fontWeight: 900, color: C.violet }}>({String.fromCharCode(97 + i)})</span>
-            <MathView align="left" content={sq.question} graphData={sq.graphData} style={{ flex: 1, fontWeight: 700, color: C.ink }} />
-          </div>
-          <Options q={sq} picked={answer?.[k]} review={review} onPick={(v) => onAnswer?.({ ...(answer || {}), [k]: v })} />
-        </div>
-      );
-    }) : <Options q={q} picked={answer} review={review} onPick={onAnswer} />}
-  </div>
-);
-
 const Steps = ({ q }) => {
   const steps = parseSolutionSteps(q);
   if (!steps.length) return null;
@@ -82,11 +63,96 @@ const Steps = ({ q }) => {
           <span style={{ fontWeight: 900, color: C.violet }}>{i + 1}.</span>
           <div style={{ flex: 1, minWidth: 0 }}>
             {s.explanation && <MathView align="left" content={s.explanation} style={{ fontSize: '0.9rem', color: '#1e293b', fontWeight: 600 }} />}
-            {s.workingOut && <MathView align="left" content={/\$|\\\(|\\\[/.test(s.workingOut) ? s.workingOut : `$${s.workingOut}$`} style={{ fontSize: '0.95rem', fontWeight: 700, color: '#4f46e5' }} />}
+            {s.workingOut && <MathView align="left" content={s.workingOut} style={{ fontSize: '0.95rem', fontWeight: 700, color: '#4f46e5' }} />}
             {s.graphData && <MathView content="" graphData={s.graphData} />}
           </div>
         </div>
       ))}
+    </div>
+  );
+};
+
+/** Hint during the test: hidden until the student asks for it. */
+const Hint = ({ q }) => {
+  const [open, setOpen] = useState(false);
+  if (!q.hint) return null;
+  return (
+    <div style={{ marginTop: 10 }}>
+      <button
+        type="button"
+        onClick={() => setOpen((o) => !o)}
+        style={{ display: 'inline-flex', alignItems: 'center', gap: 6, padding: '6px 12px', borderRadius: 10, border: '1px solid #fde68a', background: '#fffbeb', color: '#92400e', fontWeight: 800, fontSize: '0.8rem', cursor: 'pointer' }}
+      >
+        <Lightbulb size={14} /> {open ? 'Hide hint' : 'Hint'}
+      </button>
+      {open && <div style={{ marginTop: 8, padding: '10px 12px', borderRadius: 12, background: '#fffbeb', border: '1px solid #fde68a' }}><MathView align="left" content={q.hint} style={{ fontSize: '0.9rem', fontWeight: 600, color: '#92400e' }} /></div>}
+    </div>
+  );
+};
+
+/** Tips for the highlighted words of a question the student got wrong. */
+const Tips = ({ q }) => {
+  const kps = Array.isArray(q.keyPoints) ? q.keyPoints : [];
+  if (!kps.length) return null;
+  return (
+    <div style={{ marginTop: 10, display: 'flex', flexDirection: 'column', gap: 6 }}>
+      {kps.map((k, i) => (
+        <div key={i} style={{ display: 'flex', gap: 8, alignItems: 'flex-start', padding: '8px 10px', borderRadius: 10, background: '#fffbeb', border: '1px solid #fde68a' }}>
+          <Lightbulb size={14} color="#d97706" style={{ marginTop: 3, flexShrink: 0 }} />
+          <MathView align="left" content={k.note} style={{ fontSize: '0.86rem', fontWeight: 600, color: '#92400e' }} />
+        </div>
+      ))}
+    </div>
+  );
+};
+
+/** One MC question (a whole question, or one part of a passage): stem, options, and — in review — tips and solution. */
+const Leaf = ({ q, picked, onPick, review, label }) => {
+  const wrong = review && !isPickCorrect(q, picked);
+  return (
+    <div>
+      <div style={{ display: 'flex', gap: 8 }}>
+        {label && <span style={{ fontWeight: 900, color: C.violet }}>{label}</span>}
+        <MathView
+          align="left"
+          content={q.question}
+          graphData={q.graphData}
+          keyPoints={wrong ? q.keyPoints : undefined}
+          style={{ flex: 1, fontSize: '0.98rem', fontWeight: 600, color: C.ink, lineHeight: 1.7 }}
+        />
+      </div>
+      {!review && <Hint q={q} />}
+      <Options q={q} picked={picked} review={review} onPick={onPick} />
+      {review && (
+        <>
+          {wrong && <Tips q={q} />}
+          <Steps q={q} />
+        </>
+      )}
+    </div>
+  );
+};
+
+/** A question (single MC or a passage with MC parts), answerable or in review. */
+const QuestionBody = ({ q, answer, onAnswer, review }) => {
+  if (!q.subQuestions?.length) return <Leaf q={q} picked={answer} onPick={onAnswer} review={review} />;
+  return (
+    <div>
+      <MathView content={q.question} graphData={q.graphData} style={{ fontSize: '0.98rem', fontWeight: 600, color: C.ink, lineHeight: 1.7 }} />
+      {q.subQuestions.map((sq, i) => {
+        const k = subKey(sq, i);
+        return (
+          <div key={k} style={{ marginTop: 16, paddingTop: 14, borderTop: `1px dashed ${C.line}` }}>
+            <Leaf
+              q={sq}
+              label={`(${String.fromCharCode(97 + i)})`}
+              picked={answer?.[k]}
+              review={review}
+              onPick={(v) => onAnswer?.({ ...(answer || {}), [k]: v })}
+            />
+          </div>
+        );
+      })}
     </div>
   );
 };
@@ -259,7 +325,6 @@ const ScholarshipTest = ({ topic, chapter, profile, onBack }) => {
                 </span>
               </div>
               <QuestionBody q={q} answer={a} review />
-              <Steps q={q} />
             </div>
           );
         })}

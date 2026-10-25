@@ -90,9 +90,22 @@ const optionTextAt = (opts, idx) => {
 
 export const subKey = (sq, i) => String(sq?.id ?? i);
 
-/** Options are shown in their original order, so a pick is an index into q.options. */
+/** The index of the right option. Canonical MC answers are always an index (content/schema.js); -1 if it isn't one. */
+export const correctIndexOf = (q) => {
+  const n = Number(q?.answer);
+  const len = Array.isArray(q?.options) ? q.options.length : 0;
+  return String(q?.answer ?? '').trim() !== '' && Number.isInteger(n) && n >= 0 && n < len ? n : -1;
+};
+
+/**
+ * Options are shown in their original order, so a pick is an index into q.options and is graded by index.
+ * Matching the option TEXT (what the shuffled practice screens do) marks near-identical sentences such as
+ * "Most people had their first cup of coffee at their home or at work." and its three variants all correct.
+ */
 export const isPickCorrect = (q, idx) => {
   if (idx === '' || idx === null || idx === undefined) return false;
+  const right = correctIndexOf(q);
+  if (right >= 0) return Number(idx) === right;
   const opts = Array.isArray(q?.options) ? q.options : [];
   return gradeMcSelection(q, optionTextAt(opts, idx), Number(idx), opts);
 };

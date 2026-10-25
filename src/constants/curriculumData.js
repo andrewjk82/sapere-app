@@ -3240,5 +3240,13 @@ export const CURRICULUM_DATA = {
         { id: 'sch-selective-thinking', title: 'Thinking Skills' },
       ],
     },
+    {
+      id: 'sch-oc',
+      title: 'OC',
+      topics: [
+        { id: 'sch-oc-english', title: 'English' },
+        { id: 'sch-oc-maths', title: 'Mathematics' },
+      ],
+    },
   ],
 };

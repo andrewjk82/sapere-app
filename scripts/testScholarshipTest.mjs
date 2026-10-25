@@ -58,3 +58,16 @@ assert.equal(secondsLeft({ startedAt: 1000 }, 1000), TEST_SECONDS);
 assert.equal(secondsLeft({ startedAt: 0 }, (TEST_SECONDS + 5) * 1000), 0);
 
 console.log('scholarship test: passed');
+
+// Near-identical sentence options must not all count as correct (OC Test 2 Q11).
+import { isPickCorrect, correctIndexOf } from '../src/utils/scholarshipTest.js';
+const sent = { id: 's', type: 'multiple_choice', answer: '0', isManual: true, options: [
+  'Most people had their first cup of coffee at their home or at work.',
+  'Most people had their first cup of coffee at their work or at a coffee shop.',
+  'Most people had their first cup of coffee at their home or while travelling.',
+  'Most people had their first cup of coffee at their home or at a coffee shop.'] };
+assert.equal(correctIndexOf(sent), 0);
+assert.equal(isPickCorrect(sent, 0), true);
+assert.deepEqual([1, 2, 3].map((i) => isPickCorrect(sent, i)), [false, false, false]);
+assert.equal(correctIndexOf({ answer: '', options: ['a', 'b'] }), -1);
+console.log('scholarship test: index grading passed');
