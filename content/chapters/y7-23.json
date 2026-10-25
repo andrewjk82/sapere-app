@@ -73506,10 +73506,10 @@
           "stem": "Simplify the algebraic fraction \\(\\frac{27 w^{2} + 30 w + 8}{15 w^{2} + 34 w + 16}\\) by factorising and cancelling common factors.",
           "difficulty": "hard",
           "options": [
-            "\\(\\frac{14 w + 12}{5 w + 8}\\)",
-            "\\(\\frac{4 w - 4}{5 w + 8}\\)",
+            "\\(\\frac{9 w - 4}{5 w + 8}\\)",
+            "\\(\\frac{3 w + 2}{5 w + 8}\\)",
             "\\(\\frac{9 w + 4}{5 w + 8}\\)",
-            "\\(\\frac{- 9 w - 4}{5 w + 8}\\)"
+            "\\(\\frac{9 w + 4}{5 w - 8}\\)"
           ],
           "answer": 2,
           "hint": "Cancel common factors only after factoring. Do not cancel separate terms across addition or subtraction.",
@@ -73524,7 +73524,7 @@
             },
             {
               "explain": "Exclude values that make the original denominator zero.",
-              "work": "\\(\\times ext{Simplified form: }\\frac{9 w + 4}{5 w + 8}\\quad w\\ne - \\frac{8}{5},\\;- \\frac{2}{3}\\)"
+              "work": "\\(\\text{Simplified form: }\\frac{9 w + 4}{5 w + 8}\\quad \\left(w\\ne - \\frac{8}{5},\\;- \\frac{2}{3}\\right)\\)"
             }
           ],
           "timeLimit": 60,

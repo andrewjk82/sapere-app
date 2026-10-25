@@ -724,7 +724,7 @@
               "options": [
                 "\\(\\{\\text{a, c, l, n, r, u, y}\\}\\)",
                 "\\(\\{\\text{y}\\}\\)",
-                "\\(\\{\\text{r, y, a, n, l, u, c}\\}\\)",
+                "\\(\\{\\text{a, c, l, n, r, u}\\}\\)",
                 "\\(\\emptyset\\)"
               ],
               "answer": 0,
@@ -763,12 +763,6 @@
               },
               "xp": 2
             }
-          ],
-          "options": [
-            "\\(A \\cup B = \\{\\text{a, c, l, n, r, u, y}\\}\\) and \\(A \\cap B = \\{\\text{y}\\}\\)",
-            "\\(A \\cup B = \\{\\text{y}\\}\\) and \\(A \\cap B = \\{\\text{a, c, l, n, r, u, y}\\}\\)",
-            "\\(A \\cup B = \\{\\text{a, c, l, n, r, u, y}\\}\\) and \\(A \\cap B = \\emptyset\\)",
-            "\\(A \\cup B = \\{\\text{a, c, l, n, r, u}\\}\\) and \\(A \\cap B = \\{\\text{y}\\}\\)"
           ],
           "hint": "These are the letters of the names 'ryan' and 'lucy'. Look for a shared letter.",
           "solution": "\\(A \\cup B = \\{\\text{a,c,l,n,r,u,y}\\}\\) and \\(A \\cap B = \\{\\text{y}\\}\\).",

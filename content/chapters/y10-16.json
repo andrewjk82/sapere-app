@@ -2379,9 +2379,9 @@
           "stem": "Given that \\(a \\propto \\frac{1}{b}\\), what is the effect, correct to the nearest \\(0.1\\%\\), on \\(a\\) when \\(b\\) is increased by \\(15\\%\\)?",
           "options": [
             "decreased by 13.0%",
-            "The opposite statement is true.",
-            "This is only true for acute angles.",
-            "This only holds when the triangle is isosceles."
+            "decreased by 15.0%",
+            "increased by 13.0%",
+            "increased by 15.0%"
           ],
           "answer": 0,
           "hint": "If \\(b\\) increases by 15%, the new \\(b\\) is \\(1.15b\\).",

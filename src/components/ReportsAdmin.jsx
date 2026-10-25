@@ -1628,8 +1628,8 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode, onOpenI
           // question into a standalone MC sometimes leaves the old
           // `subQuestions` array attached instead of clearing it, which
           // otherwise hides the actual (current, correct) options entirely
-          // behind a stale sub-question breakdown (2026-08-30: y10-5g-q14).
-          const hasSubs = options.length === 0 && Array.isArray(q.subQuestions) && q.subQuestions.length > 0;
+          const isExplicitMultipart = q.type === 'multi_part' || q.type === 'multipart';
+          const hasSubs = (isExplicitMultipart || options.length === 0) && Array.isArray(q.subQuestions) && q.subQuestions.length > 0;
           // For sub-questions the student's answer is an object keyed by sq.id || index.
           const subAnswerObj = (studentAnswer && typeof studentAnswer === 'object' && !Array.isArray(studentAnswer))
             ? studentAnswer
