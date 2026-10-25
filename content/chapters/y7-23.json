@@ -17563,31 +17563,31 @@
         {
           "id": "y7-ap-set03-q09",
           "type": "mc",
-          "stem": "If t = 3, evaluate \\(9. 6 -4t\\).",
+          "stem": "If t = 3, evaluate \\(9 \\times 6 - 4t\\).",
           "difficulty": "easy",
           "options": [
             "\\(42\\)",
-            "\\(43\\)",
-            "\\(41\\)",
-            "\\(-42\\)"
+            "\\(66\\)",
+            "\\(-42\\)",
+            "\\(150\\)"
           ],
           "answer": 0,
-          "hint": "Replace every t with (3) first. Then evaluate powers before multiplying.",
+          "hint": "Multiply \\(9 \\times 6\\) and substitute \\(t = 3\\) into \\(4t\\), then subtract.",
           "steps": [
             {
-              "explain": "Replace every t with (3); brackets keep a negative value together.",
-              "work": "\\(54.0 - 4 \\left(3\\right)\\)"
+              "explain": "Substitute \\(t = 3\\) into the expression.",
+              "work": "\\(9 \\times 6 - 4(3)\\)"
             },
             {
-              "explain": "Evaluate each power first, then combine the resulting signed terms.",
-              "work": "\\(54.0 + -12 = 42\\)"
+              "explain": "Perform the multiplications first according to the order of operations, then subtract.",
+              "work": "\\(54 - 12 = 42\\)"
             }
           ],
           "timeLimit": 60,
           "xp": 1,
           "keyPoints": [
             {
-              "text": "9. 6 -4t",
+              "text": "9 \\times 6 - 4t",
               "note": "Substitute t = 3 into every occurrence, using brackets for the value."
             }
           ],

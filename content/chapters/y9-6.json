@@ -272,26 +272,26 @@
           "difficulty": "easy",
           "stem": "Find the value of the subject:\n\\(T = 2\\pi\\sqrt{\\frac{l}{g}}\\), where \\(l = 98.2, g = 9.8\\)\nCalculate \\(T\\) correct to 3 decimal places.",
           "options": [
-            "19.890",
             "19.889",
+            "19.890",
             "39.780",
             "6.283"
           ],
           "answer": 0,
           "hint": "Substitute the given values into the formula and solve.",
-          "solution": "The correct answer is \\(19.888\\).",
+          "solution": "The correct answer is \\(19.889\\).",
           "steps": [
             {
-              "explain": "Substitute.",
+              "explain": "Substitute the given values into the formula.",
               "work": "\\(T = 2\\pi\\sqrt{\\frac{98.2}{9.8}}\\)"
             },
             {
-              "explain": "Simplify fraction.",
+              "explain": "Evaluate the fraction inside the square root.",
               "work": "\\(T = 2\\pi\\sqrt{10.0204...}\\)"
             },
             {
-              "explain": "Calculate.",
-              "work": "\\(T \\approx 19.8899... \\approx 19.890\\)"
+              "explain": "Calculate and round to 3 decimal places.",
+              "work": "\\(T \\approx 19.8894... \\approx 19.889\\)"
             }
           ],
           "xp": 1
