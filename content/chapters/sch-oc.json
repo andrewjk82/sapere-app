@@ -5695,6 +5695,823 @@
             "page": 38,
             "category": "word order"
           }
+        },
+        {
+          "id": "sch-oc-t7-q1",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "WILLIAM DAMPIER is to WEST COAST as ? is to EAST COAST",
+          "options": [
+            "Arthur Phillip",
+            "James Cook",
+            "Lachlan Macquarie",
+            "Abel Tasman"
+          ],
+          "answer": 1,
+          "hint": "William Dampier is an explorer who charted a coast of Australia. Which explorer charted the east coast?",
+          "steps": [
+            {
+              "explain": "Find the link in the first pair.",
+              "work": "<p>WILLIAM DAMPIER was an explorer who explored the WEST COAST of Australia in 1699–1700. (explorer → the coast he explored)</p>"
+            },
+            {
+              "explain": "Which explorer is connected to the EAST COAST?",
+              "work": "<p>Captain JAMES COOK sailed up and charted the east coast of Australia in 1770.</p>"
+            },
+            {
+              "explain": "Check the other options.",
+              "work": "<p>Arthur Phillip led the First Fleet and started the settlement at Sydney. Lachlan Macquarie was a governor of New South Wales. Abel Tasman sailed round Tasmania and New Zealand.</p>"
+            },
+            {
+              "explain": "DAMPIER : WEST COAST matches COOK : EAST COAST.",
+              "work": "<p>The answer is B.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "WILLIAM DAMPIER is to WEST COAST",
+              "note": "Dampier explored one coast of Australia. Find the explorer for the other coast."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 7",
+            "number": 1,
+            "page": 39,
+            "category": "analogies"
+          }
+        },
+        {
+          "id": "sch-oc-t7-q4",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Here is a phrase from the start of a famous poem. The letters are coded. Which new word might have the code 5 3 3 1 7 1?\n\nEarth has not anything to show...\n12345 678 901 23456789 01 2345...",
+          "options": [
+            "thread",
+            "the son",
+            "trying",
+            "threat"
+          ],
+          "answer": 3,
+          "hint": "Write the code number under every letter of the phrase. A number can stand for more than one letter. Then test each option letter by letter.",
+          "steps": [
+            {
+              "explain": "Write the number under each letter of the phrase, the way the question does.",
+              "work": "<p>Earth: E1 a2 r3 t4 h5</p><p>has: h6 a7 s8</p><p>not: n9 o0 t1</p><p>anything: a2 n3 y4 t5 h6 i7 n8 g9</p><p>to: t0 o1</p><p>show: s2 h3 o4 w5</p>"
+            },
+            {
+              "explain": "Make a list of the letters that each digit can stand for. A digit can stand for more than one letter.",
+              "work": "<p>1 → E, t, o     2 → a, s     3 → r, n, h     4 → t, y, o     5 → h, t, w     6 → h     7 → a, i     8 → s, n     9 → n, g     0 → o, t</p>"
+            },
+            {
+              "explain": "Use the list to decode 5 3 3 1 7 1 one digit at a time.",
+              "work": "<p>5 → h, t or w</p><p>3 → r, n or h</p><p>3 → r, n or h</p><p>1 → E, t or o</p><p>7 → a or i</p><p>1 → E, t or o</p>"
+            },
+            {
+              "explain": "Test each option: every letter must be in the list for its digit.",
+              "work": "<p>THREAT: T(5) ✓  H(3) ✓  R(3) ✓  E(1) ✓  A(7) ✓  T(1) ✓ — all six letters fit.</p><p>THREAD: the last letter D is not in the phrase at all. ✗</p><p>THE SON: T(5) ✓  H(3) ✓  E(3)? E is only 1. ✗</p><p>TRYING: T(5) ✓  R(3) ✓  Y(3)? Y is 4. ✗</p>"
+            },
+            {
+              "explain": "Only one option can be made from the code.",
+              "work": "<p>The word is THREAT. The answer is D.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "5 3 3 1 7 1",
+              "note": "Write each digit with every letter it can stand for, then test the options."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 7",
+            "number": 4,
+            "page": 39,
+            "category": "codes"
+          }
+        },
+        {
+          "id": "sch-oc-t7-q5to9",
+          "type": "multipart",
+          "stem": "Questions 5 to 9 refer to the following passage.\n\nTHE GREAT DEPRESSION\n\nThe Great Depression of the 1930s was a worldwide financial disaster. It all began in the United States, with the Wall Street Crash of 1929.\n\nAmerica was prosperous in the 1920s. People invested in the stock market, and many made a fortune. They borrowed money from the banks on the strength of their shares. But in 1929 those share prices started falling. People started selling off their shares. The more shares were sold, the more prices fell. Investors began to panic and tried to sell their shares before they became worthless. Prices fell even further and finally the stock market collapsed. People couldn’t repay their bank loans because their stocks and shares were worthless. They went broke and so did the banks. The crash destroyed the American economy and soon the effects were felt throughout the world.\n\nFactories and businesses closed down or dismissed many workers. Millions of people could not find work, and many families were hungry. The worst years of the Depression were 1929–1934, but for many people, life was difficult for ten years or more afterwards. The Second World War (1939–1945) was a time of hunger, too. So the years 1929–1950 were a time of hunger and poverty for millions of people around the world.\n\nIn Australia, the 1920s had been fairly prosperous. Wool and wheat were our strongest primary industries. We sent these products overseas, and our exports earned a great deal of money. By 1929, however, prices paid for Australia’s wool and wheat overseas had dropped when countries like the United States reduced their imports.\n\nAs well, secondary industries, such as shoe making, were unable to compete for markets overseas. Wage rates were lowered and more and more people were dismissed from their jobs. Thousands of men walked the city streets looking for work so that they could pay their rents and feed and clothe their families. But work was scarce. Soon they left home to look for work in the country. Few were successful.\n\nSource: Edel Wignell, Battlers of the Great Depression, Sydney, Harcourt Brace Jovanovich, 1990, pp. 6–7",
+          "parts": [
+            {
+              "id": "sch-oc-t7-q5",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "What was the Great Depression?",
+              "options": [
+                "a worldwide financial disaster",
+                "the Wall Street Crash of 1929",
+                "the ruin of the American economy",
+                "a time of hunger from 1929–1950"
+              ],
+              "answer": 0,
+              "hint": "Look at the very first sentence of the passage. It says what the Great Depression was.",
+              "steps": [
+                {
+                  "explain": "Find the first sentence.",
+                  "work": "<p>“The Great Depression of the 1930s was <mark>a worldwide financial disaster</mark>.”</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>B — the Wall Street Crash was how it began, not what it was.</p><p>C — the ruin of the American economy was one effect of it.</p><p>D — hunger from 1929–1950 was one result, not the definition.</p>"
+                },
+                {
+                  "explain": "The answer is A."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "What was the Great Depression",
+                  "note": "The very first sentence defines it. The other options are causes or results."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 7",
+                "number": 5,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t7-q6",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "What was one cause of the Great Depression?",
+              "options": [
+                "people borrowed money from banks",
+                "the price of shares fell in 1929",
+                "factories closed down",
+                "millions could not find work"
+              ],
+              "answer": 0,
+              "hint": "A cause is something that happened BEFORE the Depression and made it happen. Some options are results that came afterwards.",
+              "steps": [
+                {
+                  "explain": "Find the sentences that explain how it began.",
+                  "work": "<p>“They <mark>borrowed money from the banks</mark> on the strength of their shares. But in 1929 those share prices started falling… People couldn’t repay their bank loans.”</p>"
+                },
+                {
+                  "explain": "Sort the options into causes and results.",
+                  "work": "<p>Factories closing down and millions losing work came AFTER the crash: they are results. The share prices falling is part of the crash itself. People borrowing money from the banks was the thing that set up the trouble.</p>"
+                },
+                {
+                  "explain": "Choose the cause.",
+                  "work": "<p>The answer is A.</p>"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "cause",
+                  "note": "A cause comes before the Depression. A result comes after it. Do not mix them up."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 7",
+                "number": 6,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t7-q7",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "When were the worst years of the Depression?",
+              "options": [
+                "1929–1950",
+                "1929",
+                "1929–1934",
+                "1939–1945"
+              ],
+              "answer": 2,
+              "hint": "Find the sentence that says “the worst years”.",
+              "steps": [
+                {
+                  "explain": "Find the sentence.",
+                  "work": "<p>“The <mark>worst years of the Depression were 1929–1934</mark>, but for many people, life was difficult for ten years or more afterwards.”</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>1929–1950 includes the hungry years afterwards. 1929 is only the year of the crash. 1939–1945 is the Second World War.</p>"
+                },
+                {
+                  "explain": "The answer is C."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "worst years",
+                  "note": "Find the exact words “worst years” in the passage."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 7",
+                "number": 7,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t7-q8",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What happened to the Australian primary industry after 1929?",
+              "options": [
+                "industries such as shoe making were unable to compete",
+                "they were fairly prosperous",
+                "our exports earned a great deal of money",
+                "the prices paid for wool and wheat dropped"
+              ],
+              "answer": 3,
+              "hint": "Primary industries in Australia were wool and wheat. Find what happened to them after 1929.",
+              "steps": [
+                {
+                  "explain": "Find the primary industries.",
+                  "work": "<p>“<mark>Wool and wheat</mark> were our strongest primary industries.”</p>"
+                },
+                {
+                  "explain": "Find what happened to them in 1929.",
+                  "work": "<p>“By 1929, however, <mark>prices paid for Australia’s wool and wheat overseas had dropped</mark>…”</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>A — shoe making is a secondary industry. B and C — these describe the 1920s, before 1929.</p>"
+                },
+                {
+                  "explain": "The answer is D."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "primary industry",
+                  "note": "Primary industries are the ones that grow or dig things up, such as wool and wheat. Shoe making is a secondary industry."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 7",
+                "number": 8,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t7-q9",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What happened to the Australian workers?",
+              "options": [
+                "their wages were lowered and they walked the city streets",
+                "their wages were lowered and many were dismissed from jobs",
+                "their wages were lowered and they could not feed or clothe their families",
+                "their wages were lowered and they could not pay their rent"
+              ],
+              "answer": 1,
+              "hint": "Find the sentence about wages. It says two things happened at the same time.",
+              "steps": [
+                {
+                  "explain": "Find the sentence in the last paragraph.",
+                  "work": "<p>“<mark>Wage rates were lowered and more and more people were dismissed from their jobs</mark>.”</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>A, C and D describe what happened to the men after they lost their jobs (walked the streets, could not pay rent or feed their families). The question asks what happened to the workers: wages lowered and dismissal.</p>"
+                },
+                {
+                  "explain": "The answer is B."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "What happened to the Australian workers",
+                  "note": "Find the sentence that gives the two things that happened to workers."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 7",
+                "number": 9,
+                "category": "comprehension"
+              }
+            }
+          ],
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 7",
+            "number": "5-9",
+            "page": 39,
+            "category": "comprehension"
+          }
+        },
+        {
+          "id": "sch-oc-t7-q14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A border of marigolds will keep insects away from your garden and also look nice.\n\nWhich phrase has nearly the same meaning as MARIGOLDS in this sentence?",
+          "options": [
+            "a plant with a bright yellow flower",
+            "the blossom of a plant that insects will not eat",
+            "a mass of insect-repellent flowers",
+            "a garden of spring flowers"
+          ],
+          "answer": 0,
+          "hint": "Marigolds are a kind of flower. Which phrase says what a marigold is, without adding extra things the sentence does not say?",
+          "steps": [
+            {
+              "explain": "Say what a marigold is.",
+              "work": "<p>A marigold is a garden plant with a bright yellow or orange flower.</p>"
+            },
+            {
+              "explain": "Check each phrase.",
+              "work": "<p>B and C — the sentence says marigolds keep insects away, but this is a use of the plant, not what it is.</p><p>D — it is a plant, not a garden, and it does not have to be in spring.</p><p>A — a plant with a bright yellow flower. ✓</p>"
+            },
+            {
+              "explain": "The answer is A."
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "MARIGOLDS",
+              "note": "Choose the phrase that says what a marigold is."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 7",
+            "number": 14,
+            "page": 41,
+            "category": "word knowledge"
+          }
+        },
+        {
+          "id": "sch-oc-t7-q15",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If these words are put into the correct order they will make a sentence. The sentence begins with the word THE. Which is the sixth word in the correct sentence?\n\nARE BEAUTIFULLY DEODAR HAND-CARVED HOUSEBOATS OF OUT PINE THE",
+          "options": [
+            "of",
+            "out",
+            "hand-carved",
+            "deodar"
+          ],
+          "answer": 1,
+          "hint": "The sentence starts with THE. Look for groups: “out of”, “deodar pine” and “beautifully hand-carved”.",
+          "steps": [
+            {
+              "explain": "Find groups that go together.",
+              "work": "<p>“The houseboats are” — the start.</p><p>“beautifully hand-carved” — how they are made.</p><p>“out of deodar pine” — what they are made from.</p>"
+            },
+            {
+              "explain": "Join the groups to make a sentence.",
+              "work": "<p>The houseboats are beautifully hand-carved out of deodar pine.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 272 140\" width=\"80%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"4\" y=\"4\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"45.0\" y=\"23\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >The</text><text x=\"12\" y=\"41\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >1</text><rect x=\"92\" y=\"4\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"133.0\" y=\"23\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >houseboats</text><text x=\"100\" y=\"41\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >2</text><rect x=\"180\" y=\"4\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"221.0\" y=\"23\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >are</text><text x=\"188\" y=\"41\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >3</text><rect x=\"4\" y=\"48\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"45.0\" y=\"67\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >beautifully</text><text x=\"12\" y=\"85\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >4</text><rect x=\"92\" y=\"48\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"133.0\" y=\"67\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >hand-carved</text><text x=\"100\" y=\"85\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >5</text><rect x=\"180\" y=\"48\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\" /><text x=\"221.0\" y=\"67\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >out</text><text x=\"188\" y=\"85\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >6</text><rect x=\"4\" y=\"92\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"45.0\" y=\"111\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >of</text><text x=\"12\" y=\"129\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >7</text><rect x=\"92\" y=\"92\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"133.0\" y=\"111\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >deodar</text><text x=\"100\" y=\"129\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >8</text><rect x=\"180\" y=\"92\" width=\"82\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"221.0\" y=\"111\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" >pine</text><text x=\"188\" y=\"129\" font-size=\"9.5\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >9</text></svg>"
+              }
+            },
+            {
+              "explain": "Count to the sixth word.",
+              "work": "<p>1 The, 2 houseboats, 3 are, 4 beautifully, 5 hand-carved, 6 out ← the sixth word</p>"
+            },
+            {
+              "explain": "The answer is B."
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "sixth word",
+              "note": "Build the whole sentence first, then count to the sixth word."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 7",
+            "number": 15,
+            "page": 41,
+            "category": "word order"
+          }
+        },
+        {
+          "id": "sch-oc-t7-q16",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "CANBERRA is to AUSTRALIA as ________ is to NEW ZEALAND",
+          "options": [
+            "CHRISTCHURCH",
+            "AUCKLAND",
+            "WELLINGTON",
+            "DUNEDIN"
+          ],
+          "answer": 2,
+          "hint": "Canberra is the capital city of Australia. What is the capital city of New Zealand?",
+          "steps": [
+            {
+              "explain": "Find the link in the first pair.",
+              "work": "<p>CANBERRA is the capital city of AUSTRALIA. (capital city → country)</p>"
+            },
+            {
+              "explain": "Which city is the capital of New Zealand?",
+              "work": "<p>WELLINGTON is the capital city of New Zealand.</p>"
+            },
+            {
+              "explain": "Check the other options.",
+              "work": "<p>Auckland is the biggest city in New Zealand but it is not the capital. Christchurch and Dunedin are also large cities on the South Island, but they are not the capital.</p>"
+            },
+            {
+              "explain": "CANBERRA : AUSTRALIA matches WELLINGTON : NEW ZEALAND.",
+              "work": "<p>The answer is C.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "CANBERRA is to AUSTRALIA",
+              "note": "Canberra is a capital city. Find the capital city of New Zealand."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 7",
+            "number": 16,
+            "page": 41,
+            "category": "analogies"
+          }
+        },
+        {
+          "id": "sch-oc-t7-q19",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Here is a phrase written in a secret code. Each number can stand for more than one letter. To help you, part of the phrase has been decoded.\n\n5 6 3 4 6 1 0 7 7\n_ _ _ _ _ _ _ A N D\n5 6 3 4 2 9 6\n_ _ _ _ _ _ _\n\nWhich sentence could stand for this code?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 715 308\" width=\"70%\" height=\"auto\"><image href=\"/oc/t7-q19.jpg\" x=\"0\" y=\"0\" width=\"715\" height=\"308\"/></svg>"
+          },
+          "options": [
+            "Native and natural",
+            "People and parties",
+            "Master and mistress",
+            "Forget and forgive"
+          ],
+          "answer": 3,
+          "hint": "The decoded letters A, N and D in “and” give you three code numbers: 0 = A, 7 = N, 7 = D. Wait: look at the digits 1, 0, 7, 7 under “and”. Use the repeated digits to test each option.",
+          "steps": [
+            {
+              "explain": "Read the code. The two words in the code have the digits 5 6 3 4 6 1 (6 letters, first word) and 5 6 3 4 2 9 6 (7 letters, last word).",
+              "work": "<p>Both words start with the same four digits: 5 6 3 4. The same digits stand for the same letters.</p>"
+            },
+            {
+              "explain": "So the first four letters of the two words are the same, the first word has 6 letters and the last word has 7. Look at the options for this.",
+              "work": "<p>Native (6) / natural (7): NATI ≠ NATU ✗</p><p>People (6) / parties (7): PEOP ≠ PART ✗</p><p>Master (6) / mistress (8): wrong length and MAST ≠ MIST ✗</p><p>Forget (6) / forgive (7): FORG = FORG ✓</p>"
+            },
+            {
+              "explain": "Check the other repeated digits. In the first word the digit 6 is the 2nd and 5th digit; in the last word 6 is the 2nd and 7th digit.",
+              "work": "<p>FORGET: the 2nd letter is O and the 5th letter is E. The digit 6 is shown for both. The code says it can stand for more than one letter, so this is allowed. FORGIVE: the 2nd letter O and the 7th letter E.</p>"
+            },
+            {
+              "explain": "Only “Forget and forgive” fits the code.",
+              "work": "<p>The answer is D.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Each number can stand for more than one letter",
+              "note": "Compare the two words in the code: their first four digits are the same, so their first four letters must be the same."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 7",
+            "number": 19,
+            "page": 42,
+            "category": "codes"
+          }
+        },
+        {
+          "id": "sch-oc-t7-q20to24",
+          "type": "multipart",
+          "stem": "Questions 20 to 24 refer to the following passage.\n\nORIENTEERING\n\nOrienteering is a sport which began in Europe in 1918. It is very popular in Scandinavia. In Sweden, an annual five-day orienteering event attracts over 15 000 participants.\n\nTo ‘orient’ yourself means to work out where you are. In orienteering, people run or walk around a course, using a compass and a map to find their way.\n\nOrienteering is known as the ‘O sport’. Sometimes it is called ‘thought sport’, because orienteers need to think about where the controls might be and when they should run.\n\nAnother name for orienteering is ‘cunning running’, because you must think about the best way to go. Which route should you choose? Should you run down the long track or climb over the big hill?\n\nRunners use a compass and map to find red and white markers in the bush. The markers are called controls.\n\nEach runner chooses a course. There are easy, or novice, courses for beginners. There are harder courses for runners or walkers who have done orienteering before. And there are very hard, or elite, courses for the best runners.\n\nOrienteering is popular with people of all ages in many parts of the world.\n\nOrienteering began in Australia in 1969. In 1985, the world championships were held in this country.\n\nSource: Hazel Edwards, Cunning Running, Sydney, Harcourt Brace Jovanovich, 1990",
+          "parts": [
+            {
+              "id": "sch-oc-t7-q20",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "How could orienteering be described best of all?",
+              "options": [
+                "an activity for those who are good runners",
+                "as an activity that requires thinking",
+                "as an activity that involves teamwork",
+                "as an activity that requires fitness and strength"
+              ],
+              "answer": 1,
+              "hint": "Look at the names the passage gives to orienteering. What do those names say about it?",
+              "steps": [
+                {
+                  "explain": "Find the other names for orienteering.",
+                  "work": "<p>It is called a “<mark>thought sport</mark>” and “<mark>cunning running</mark>”. Both names are about thinking.</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>A — the courses are for all levels, not only good runners. C — the passage never mentions teamwork. D — fitness helps, but the passage stresses thinking.</p>"
+                },
+                {
+                  "explain": "The answer is B."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "described best of all",
+                  "note": "The passage gives two names that describe the sport. What do they have in common?"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 7",
+                "number": 20,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t7-q21",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Why is orienteering called ‘cunning running’?",
+              "options": [
+                "it requires you to think about the best way to go",
+                "it requires you to outsmart your competitors",
+                "it requires you to climb carefully",
+                "it requires you to find the controls"
+              ],
+              "answer": 0,
+              "hint": "Find the sentence that says why it is called “cunning running”.",
+              "steps": [
+                {
+                  "explain": "Find the sentence.",
+                  "work": "<p>“Another name for orienteering is ‘cunning running’, because <mark>you must think about the best way to go</mark>.”</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>B — nothing says to outsmart other runners. C — climbing the hill is only one choice. D — finding the controls is the goal, not the reason for the name.</p>"
+                },
+                {
+                  "explain": "The answer is A."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "cunning running",
+                  "note": "The reason is given in the same sentence that uses the name."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 7",
+                "number": 21,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t7-q22",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "What equipment do orienteers use to find the controls?",
+              "options": [
+                "a map and red and white markers",
+                "a course and markers",
+                "a compass and map",
+                "a course and compass"
+              ],
+              "answer": 2,
+              "hint": "Find the sentence that says what runners use. Remember the markers are what they look for, not what they use.",
+              "steps": [
+                {
+                  "explain": "Find the sentence.",
+                  "work": "<p>“Runners use <mark>a compass and map</mark> to find red and white markers in the bush. The markers are called controls.”</p>"
+                },
+                {
+                  "explain": "Check the other options.",
+                  "work": "<p>The red and white markers are the controls themselves — they are what you are trying to find, not equipment. A course is a route, not equipment.</p>"
+                },
+                {
+                  "explain": "The answer is C."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "equipment",
+                  "note": "Equipment is what the runners carry and use, not what they are looking for."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 7",
+                "number": 22,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t7-q23",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "In this passage what is the best meaning for ELITE?",
+              "options": [
+                "expert",
+                "clever",
+                "experienced",
+                "practised"
+              ],
+              "answer": 0,
+              "hint": "Find the word “elite” in the passage and read the words that go with it.",
+              "steps": [
+                {
+                  "explain": "Find the sentence.",
+                  "work": "<p>“…very hard, or <mark>elite</mark>, courses for the <mark>best</mark> runners.”</p>"
+                },
+                {
+                  "explain": "Elite means the very best. Which option means that?",
+                  "work": "<p>expert means very skilled. clever means quick to learn. experienced and practised mean having done something many times, but not necessarily being the best.</p>"
+                },
+                {
+                  "explain": "The answer is A."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "ELITE",
+                  "note": "Look at the words around the word: “the best runners”."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 7",
+                "number": 23,
+                "category": "comprehension"
+              }
+            },
+            {
+              "id": "sch-oc-t7-q24",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What statement can we make about orienteering?",
+              "options": [
+                "it is like cross-country running",
+                "it is as popular in Australia as it is in Scandinavia",
+                "it is mainly for those runners who have done some orienteering before",
+                "it is an international sport"
+              ],
+              "answer": 3,
+              "hint": "Check each statement against the passage. Which one is clearly supported by the facts?",
+              "steps": [
+                {
+                  "explain": "Find the facts about where orienteering is played.",
+                  "work": "<p>“It is very popular in Scandinavia”, “<mark>popular with people of all ages in many parts of the world</mark>”, “began in Australia in 1969” and “the world championships were held in this country”.</p>"
+                },
+                {
+                  "explain": "Check each option.",
+                  "work": "<p>A — the passage does not compare it with cross-country running.</p><p>B — it says Scandinavia is “very popular”, not Australia.</p><p>C — it also has easy courses for beginners.</p><p>D — it is played in many countries and has world championships: international. ✓</p>"
+                },
+                {
+                  "explain": "The answer is D."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "What statement can we make",
+                  "note": "Choose the statement that is supported by facts in the passage."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 7",
+                "number": 24,
+                "category": "comprehension"
+              }
+            }
+          ],
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 7",
+            "number": "20-24",
+            "page": 42,
+            "category": "comprehension"
+          }
+        },
+        {
+          "id": "sch-oc-t7-q29",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Read the following passage.\n\nYou are required to attend court for the purpose of giving evidence on the 13th April, 1999 at 10 am. You need to attend until you are excused. You need not attend on any day if this SUBPOENA is served on you after the 1st March, 1999.\n\nWhich word gives the meaning of SUBPOENA?",
+          "options": [
+            "evidence",
+            "need",
+            "summons",
+            "witness"
+          ],
+          "answer": 2,
+          "hint": "The paper tells a person to come to court. What do we call an official order to come?",
+          "steps": [
+            {
+              "explain": "Say what the paper does.",
+              "work": "<p>“You are <mark>required to attend court</mark>… on the 13th April.” It is an official order to go to court.</p>"
+            },
+            {
+              "explain": "Check the options.",
+              "work": "<p>evidence is what a witness says in court. need is a word in the sentence. witness is the person who gives evidence. A summons is an official order to come to court. ✓</p>"
+            },
+            {
+              "explain": "The answer is C."
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "SUBPOENA",
+              "note": "The paper orders someone to attend court. Find the word for an official order to attend."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 7",
+            "number": 29,
+            "page": 44,
+            "category": "word knowledge"
+          }
+        },
+        {
+          "id": "sch-oc-t7-q30",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Which two words do you think are missing in this passage?\n\n‘Defeated in battle and trapped in a cave, the mighty Japanese warrior and his supporters prepare to die by their own swords. In that cave is a bee trapped in a spider’s web. When Masakuri frees the bee, he is addressed by a strange and ________ ________: “I am the spirit of the bees… you have saved a bee, one of my servants; they and I shall now return the favour…”’\n\nSource: David Shapiro, Masakuri and the Bees, Sydney, Harcourt Brace Jovanovich, 1990",
+          "options": [
+            "fearsome echo",
+            "lonely bee",
+            "shining sword",
+            "shining figure"
+          ],
+          "answer": 3,
+          "hint": "Masakuri is “addressed” — someone speaks to him. Who says “I am the spirit of the bees”? Pick words that describe a spirit who appears and speaks.",
+          "steps": [
+            {
+              "explain": "Find who is speaking.",
+              "work": "<p>“I am the spirit of the bees” — a spirit is speaking to Masakuri. The passage says he is “addressed by a strange and ______ ______”.</p>"
+            },
+            {
+              "explain": "The missing words must name something that can appear and speak, and describe it.",
+              "work": "<p>A spirit appears as a figure, and it can be shining.</p>"
+            },
+            {
+              "explain": "Check each pair.",
+              "work": "<p>fearsome echo — an echo is a sound and cannot say all this.</p><p>lonely bee — the speaker says it is the spirit of the bees, not a bee.</p><p>shining sword — a sword cannot speak.</p><p>shining figure — a bright figure that appears and speaks. ✓</p>"
+            },
+            {
+              "explain": "The answer is D."
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which two words do you think are missing",
+              "note": "The two words must describe someone who can speak and who is a spirit."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 7",
+            "number": 30,
+            "page": 44,
+            "category": "word order"
+          }
         }
       ]
     },
@@ -9982,6 +10799,659 @@
             "test": "Test 6",
             "number": 28,
             "page": 38,
+            "category": "number series"
+          }
+        },
+        {
+          "id": "sch-oc-t7-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "One can of tomato paste takes up one-tenth of a row in a supermarket shelf. How many cans of tomato paste would be needed to stock (or fill up) three rows on that supermarket shelf?",
+          "options": [
+            "30",
+            "300",
+            "36",
+            "3"
+          ],
+          "answer": 0,
+          "hint": "If one can takes up one-tenth of a row, how many cans fill one whole row? Then find three rows.",
+          "steps": [
+            {
+              "explain": "One can is one-tenth of a row. So 10 cans make 10 tenths, which is a whole row.",
+              "work": "<p>\\(10\\times\\frac{1}{10}=1\\) row</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 322 64\" width=\"80%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><text x=\"8\" y=\"20\" font-size=\"10.5\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"start\" >row 1</text><rect x=\"54\" y=\"6\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"80\" y=\"6\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"106\" y=\"6\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"132\" y=\"6\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"158\" y=\"6\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"184\" y=\"6\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"210\" y=\"6\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"236\" y=\"6\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"262\" y=\"6\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"288\" y=\"6\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><text x=\"184\" y=\"56\" font-size=\"12.5\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"middle\" >10 cans a row × 1 rows = 10 cans</text></svg>"
+              }
+            },
+            {
+              "explain": "Three rows need three times as many cans.",
+              "work": "<p>\\(10\\times3=30\\) cans</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 322 140\" width=\"80%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><text x=\"8\" y=\"20\" font-size=\"10.5\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"start\" >row 1</text><rect x=\"54\" y=\"6\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"80\" y=\"6\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"106\" y=\"6\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"132\" y=\"6\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"158\" y=\"6\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"184\" y=\"6\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"210\" y=\"6\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"236\" y=\"6\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"262\" y=\"6\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"288\" y=\"6\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><text x=\"8\" y=\"58\" font-size=\"10.5\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"start\" >row 2</text><rect x=\"54\" y=\"44\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"80\" y=\"44\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"106\" y=\"44\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"132\" y=\"44\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"158\" y=\"44\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"184\" y=\"44\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"210\" y=\"44\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"236\" y=\"44\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"262\" y=\"44\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"288\" y=\"44\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><text x=\"8\" y=\"96\" font-size=\"10.5\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"start\" >row 3</text><rect x=\"54\" y=\"82\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"80\" y=\"82\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"106\" y=\"82\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"132\" y=\"82\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"158\" y=\"82\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"184\" y=\"82\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"210\" y=\"82\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"236\" y=\"82\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"262\" y=\"82\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><rect x=\"288\" y=\"82\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.4\" /><text x=\"184\" y=\"132\" font-size=\"12.5\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"middle\" >10 cans a row × 3 rows = 30 cans</text></svg>"
+              }
+            },
+            {
+              "explain": "Check the other options: 3 cans would fill only three-tenths of one row, and 300 is ten times too many.",
+              "work": "<p>The answer is A.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "one-tenth of a row",
+              "note": "If one can is one-tenth of a row, find how many cans make a whole row."
+            },
+            {
+              "text": "three rows",
+              "note": "Multiply the cans in one row by 3."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 7",
+            "number": 2,
+            "page": 39,
+            "category": "arithmetic"
+          }
+        },
+        {
+          "id": "sch-oc-t7-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Angelena uses a 375 gram packet of fettuccine and one-third of another 375 gram packet. How do you calculate how much fettuccine she used for the meal?",
+          "options": [
+            "\\((\\frac13\\text{ of }750)+375=500\\)",
+            "\\(375+(\\frac13\\text{ of }500)=500\\)",
+            "\\(375+(\\frac13\\text{ of }375)=500\\)",
+            "\\(375\\times(\\frac13\\text{ of }375)=500\\)"
+          ],
+          "answer": 2,
+          "hint": "She uses one whole packet. Then she uses a third of ANOTHER packet. How big is that other packet?",
+          "steps": [
+            {
+              "explain": "She uses one whole packet.",
+              "work": "<p>\\(375\\) g</p>"
+            },
+            {
+              "explain": "She uses one-third of another packet, and that packet is also 375 g.",
+              "work": "<p>\\(\\frac13\\text{ of }375=375\\div3=125\\) g</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 100\" width=\"75%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"10\" y=\"14\" width=\"120\" height=\"34\" rx=\"4\" fill=\"#fed7aa\" stroke=\"#c2410c\" stroke-width=\"1.8\" /><text x=\"70\" y=\"36\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >375 g</text><rect x=\"140\" y=\"14\" width=\"120\" height=\"34\" rx=\"4\" fill=\"#fff7ed\" stroke=\"#c2410c\" stroke-width=\"1.8\" stroke-dasharray=\"5 3\"/><rect x=\"140\" y=\"14\" width=\"40\" height=\"34\" rx=\"4\" fill=\"#fdba74\" stroke=\"#c2410c\" stroke-width=\"1.8\" /><text x=\"160\" y=\"36\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >125 g</text><text x=\"70\" y=\"66\" font-size=\"11.5\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >one whole packet</text><text x=\"200\" y=\"66\" font-size=\"11.5\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\" >⅓ of another packet</text><text x=\"135\" y=\"92\" font-size=\"13\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"middle\" >375 + 125 = 500 g</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the two amounts.",
+              "work": "<p>\\(375+125=500\\) g, so the calculation is \\(375+(\\frac13\\text{ of }375)=500\\).</p>"
+            },
+            {
+              "explain": "Check the other options.",
+              "work": "<p>A takes a third of \\(750\\) (two packets), which is \\(250\\). B takes a third of \\(500\\), which is not one of the packets. D multiplies instead of adding.</p>"
+            },
+            {
+              "explain": "The answer is C."
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "one-third of another 375 gram packet",
+              "note": "The other packet is also 375 g. Find a third of 375."
+            },
+            {
+              "text": "calculate how much fettuccine she used",
+              "note": "She used a whole packet plus a part: add them."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 7",
+            "number": 3,
+            "page": 39,
+            "category": "calculation problems"
+          }
+        },
+        {
+          "id": "sch-oc-t7-q10",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Which figure is next in the series?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 748 614\" width=\"80%\" height=\"auto\"><image href=\"/oc/t7-q10.jpg\" x=\"0\" y=\"0\" width=\"748\" height=\"614\"/></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 3,
+          "hint": "Look at the shape that fills the top row, the bottom row and the left and right sides of each figure. Does it change in a cycle? Then look at the three shapes in the middle row.",
+          "steps": [
+            {
+              "explain": "Look at the shapes around the outside of each figure (everything except the middle row).",
+              "work": "<p>I: circles   II: triangles   III: squares. The outside shape goes circle → triangle → square.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 398 140\" width=\"95%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"8\" y=\"10\" width=\"114\" height=\"114\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\" /><circle cx=\"31.0\" cy=\"33.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"65.0\" cy=\"33.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"99.0\" cy=\"33.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"31.0\" cy=\"67.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><polygon points=\"65.0,56.0 76.0,76.0 54.0,76.0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" stroke-linejoin=\"round\" /><rect x=\"89.0\" y=\"57.0\" width=\"20\" height=\"20\" rx=\"0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"31.0\" cy=\"101.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"65.0\" cy=\"101.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"99.0\" cy=\"101.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><text x=\"65\" y=\"128\" font-size=\"13\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >I</text><rect x=\"138\" y=\"10\" width=\"114\" height=\"114\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\" /><polygon points=\"161.0,22.0 172.0,42.0 150.0,42.0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" stroke-linejoin=\"round\" /><polygon points=\"195.0,22.0 206.0,42.0 184.0,42.0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" stroke-linejoin=\"round\" /><polygon points=\"229.0,22.0 240.0,42.0 218.0,42.0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" stroke-linejoin=\"round\" /><polygon points=\"161.0,56.0 172.0,76.0 150.0,76.0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" stroke-linejoin=\"round\" /><rect x=\"185.0\" y=\"57.0\" width=\"20\" height=\"20\" rx=\"0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"229.0\" cy=\"67.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><polygon points=\"161.0,90.0 172.0,110.0 150.0,110.0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" stroke-linejoin=\"round\" /><polygon points=\"195.0,90.0 206.0,110.0 184.0,110.0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" stroke-linejoin=\"round\" /><polygon points=\"229.0,90.0 240.0,110.0 218.0,110.0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" stroke-linejoin=\"round\" /><text x=\"195\" y=\"128\" font-size=\"13\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >II</text><rect x=\"268\" y=\"10\" width=\"114\" height=\"114\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\" /><rect x=\"281.0\" y=\"23.0\" width=\"20\" height=\"20\" rx=\"0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><rect x=\"315.0\" y=\"23.0\" width=\"20\" height=\"20\" rx=\"0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><rect x=\"349.0\" y=\"23.0\" width=\"20\" height=\"20\" rx=\"0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><rect x=\"281.0\" y=\"57.0\" width=\"20\" height=\"20\" rx=\"0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"325.0\" cy=\"67.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><polygon points=\"359.0,56.0 370.0,76.0 348.0,76.0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" stroke-linejoin=\"round\" /><rect x=\"281.0\" y=\"91.0\" width=\"20\" height=\"20\" rx=\"0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><rect x=\"315.0\" y=\"91.0\" width=\"20\" height=\"20\" rx=\"0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><rect x=\"349.0\" y=\"91.0\" width=\"20\" height=\"20\" rx=\"0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><text x=\"325\" y=\"128\" font-size=\"13\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >III</text></svg>"
+              }
+            },
+            {
+              "explain": "The cycle has three steps (circle, triangle, square). After the square the cycle starts again, so figure IV has circles around the outside, just like figure I.",
+              "work": "<p>IV: circles around the outside.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 528 140\" width=\"95%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"8\" y=\"10\" width=\"114\" height=\"114\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\" /><circle cx=\"31.0\" cy=\"33.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"65.0\" cy=\"33.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"99.0\" cy=\"33.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"31.0\" cy=\"67.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><polygon points=\"65.0,56.0 76.0,76.0 54.0,76.0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" stroke-linejoin=\"round\" /><rect x=\"89.0\" y=\"57.0\" width=\"20\" height=\"20\" rx=\"0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"31.0\" cy=\"101.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"65.0\" cy=\"101.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"99.0\" cy=\"101.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><text x=\"65\" y=\"128\" font-size=\"13\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >I</text><rect x=\"138\" y=\"10\" width=\"114\" height=\"114\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\" /><polygon points=\"161.0,22.0 172.0,42.0 150.0,42.0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" stroke-linejoin=\"round\" /><polygon points=\"195.0,22.0 206.0,42.0 184.0,42.0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" stroke-linejoin=\"round\" /><polygon points=\"229.0,22.0 240.0,42.0 218.0,42.0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" stroke-linejoin=\"round\" /><polygon points=\"161.0,56.0 172.0,76.0 150.0,76.0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" stroke-linejoin=\"round\" /><rect x=\"185.0\" y=\"57.0\" width=\"20\" height=\"20\" rx=\"0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"229.0\" cy=\"67.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><polygon points=\"161.0,90.0 172.0,110.0 150.0,110.0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" stroke-linejoin=\"round\" /><polygon points=\"195.0,90.0 206.0,110.0 184.0,110.0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" stroke-linejoin=\"round\" /><polygon points=\"229.0,90.0 240.0,110.0 218.0,110.0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" stroke-linejoin=\"round\" /><text x=\"195\" y=\"128\" font-size=\"13\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >II</text><rect x=\"268\" y=\"10\" width=\"114\" height=\"114\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\" /><rect x=\"281.0\" y=\"23.0\" width=\"20\" height=\"20\" rx=\"0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><rect x=\"315.0\" y=\"23.0\" width=\"20\" height=\"20\" rx=\"0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><rect x=\"349.0\" y=\"23.0\" width=\"20\" height=\"20\" rx=\"0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><rect x=\"281.0\" y=\"57.0\" width=\"20\" height=\"20\" rx=\"0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"325.0\" cy=\"67.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><polygon points=\"359.0,56.0 370.0,76.0 348.0,76.0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" stroke-linejoin=\"round\" /><rect x=\"281.0\" y=\"91.0\" width=\"20\" height=\"20\" rx=\"0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><rect x=\"315.0\" y=\"91.0\" width=\"20\" height=\"20\" rx=\"0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><rect x=\"349.0\" y=\"91.0\" width=\"20\" height=\"20\" rx=\"0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><text x=\"325\" y=\"128\" font-size=\"13\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >III</text><rect x=\"398\" y=\"10\" width=\"114\" height=\"114\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\" /><circle cx=\"421.0\" cy=\"33.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"455.0\" cy=\"33.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"489.0\" cy=\"33.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"421.0\" cy=\"67.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><polygon points=\"455.0,56.0 466.0,76.0 444.0,76.0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" stroke-linejoin=\"round\" /><rect x=\"479.0\" y=\"57.0\" width=\"20\" height=\"20\" rx=\"0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"421.0\" cy=\"101.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"455.0\" cy=\"101.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"489.0\" cy=\"101.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><text x=\"455\" y=\"128\" font-size=\"13\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"middle\" >IV</text></svg>"
+              }
+            },
+            {
+              "explain": "Now look at the three shapes in the middle row, which are the same three shapes in a different order each time.",
+              "work": "<p>I: ● ▲ ■</p><p>II: ▲ ■ ●</p><p>III: ■ ● ▲</p><p>Each figure shifts the row one place: the first shape moves to the end. Doing it once more from III gives ● ▲ ■ again.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 398 140\" width=\"95%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"8\" y=\"10\" width=\"114\" height=\"114\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\" /><circle cx=\"31.0\" cy=\"33.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"65.0\" cy=\"33.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"99.0\" cy=\"33.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"31.0\" cy=\"67.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><polygon points=\"65.0,56.0 76.0,76.0 54.0,76.0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" stroke-linejoin=\"round\" /><rect x=\"89.0\" y=\"57.0\" width=\"20\" height=\"20\" rx=\"0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"31.0\" cy=\"101.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"65.0\" cy=\"101.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"99.0\" cy=\"101.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><text x=\"65\" y=\"128\" font-size=\"13\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"middle\" >I</text><rect x=\"138\" y=\"10\" width=\"114\" height=\"114\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\" /><polygon points=\"161.0,22.0 172.0,42.0 150.0,42.0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" stroke-linejoin=\"round\" /><polygon points=\"195.0,22.0 206.0,42.0 184.0,42.0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" stroke-linejoin=\"round\" /><polygon points=\"229.0,22.0 240.0,42.0 218.0,42.0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" stroke-linejoin=\"round\" /><polygon points=\"161.0,56.0 172.0,76.0 150.0,76.0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" stroke-linejoin=\"round\" /><rect x=\"185.0\" y=\"57.0\" width=\"20\" height=\"20\" rx=\"0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"229.0\" cy=\"67.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><polygon points=\"161.0,90.0 172.0,110.0 150.0,110.0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" stroke-linejoin=\"round\" /><polygon points=\"195.0,90.0 206.0,110.0 184.0,110.0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" stroke-linejoin=\"round\" /><polygon points=\"229.0,90.0 240.0,110.0 218.0,110.0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" stroke-linejoin=\"round\" /><text x=\"195\" y=\"128\" font-size=\"13\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"middle\" >II</text><rect x=\"268\" y=\"10\" width=\"114\" height=\"114\" rx=\"0\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\" /><rect x=\"281.0\" y=\"23.0\" width=\"20\" height=\"20\" rx=\"0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><rect x=\"315.0\" y=\"23.0\" width=\"20\" height=\"20\" rx=\"0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><rect x=\"349.0\" y=\"23.0\" width=\"20\" height=\"20\" rx=\"0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><rect x=\"281.0\" y=\"57.0\" width=\"20\" height=\"20\" rx=\"0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><circle cx=\"325.0\" cy=\"67.0\" r=\"10\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><polygon points=\"359.0,56.0 370.0,76.0 348.0,76.0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" stroke-linejoin=\"round\" /><rect x=\"281.0\" y=\"91.0\" width=\"20\" height=\"20\" rx=\"0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><rect x=\"315.0\" y=\"91.0\" width=\"20\" height=\"20\" rx=\"0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><rect x=\"349.0\" y=\"91.0\" width=\"20\" height=\"20\" rx=\"0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" /><text x=\"325\" y=\"128\" font-size=\"13\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"middle\" >III</text></svg>"
+              }
+            },
+            {
+              "explain": "Figure IV must have circles on the outside and ● ▲ ■ in the middle row, which is the same as figure I.",
+              "work": "<p>D is the option with circles all round the outside and the middle row ● ▲ ■ (circle, triangle, square). ✓ The answer is D.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which figure is next",
+              "note": "Two things repeat in a cycle: the shape around the outside and the order of the middle row."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 7",
+            "number": 10,
+            "page": 40,
+            "category": "figure sequences"
+          }
+        },
+        {
+          "id": "sch-oc-t7-q11to12",
+          "type": "multipart",
+          "stem": "Here are the wage rates for an apprentice that works in shopfitting and kitchen detail joinery. Two sets of wages are shown. Some apprentices are indentured, that is they have a type of permanent contract. The other apprentices are trainees. There are different rates of pay for indentured and trainee apprentices. The pay also changes from first year to the fourth year.\n\nAPPRENTICE JOINER\n\n| Year | Indentured | Trainee |\n|---|---|---|\n| 1 | \\(\\$172.60\\) | \\(\\$193.00\\) |\n| 2 | \\(\\$234.00\\) | \\(\\$259.50\\) |\n| 3 | \\(\\$306.20\\) | \\(\\$336.10\\) |\n| 4 | \\(\\$371.90\\) | \\(\\$392.30\\) |\n\nLook at the chart of these wage rates.",
+          "parts": [
+            {
+              "id": "sch-oc-t7-q11",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Where is the error in the chart?",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 715 484\" width=\"85%\" height=\"auto\"><image href=\"/oc/t7-q11.jpg\" x=\"0\" y=\"0\" width=\"715\" height=\"484\"/></svg>"
+              },
+              "options": [
+                "the wage for the second year trainee apprentice",
+                "the wage for the second year indentured apprentice",
+                "the wage for the fourth year trainee apprentice",
+                "the wage for the first year trainee apprentice"
+              ],
+              "answer": 0,
+              "hint": "Check each pair of bars against the table. A trainee is always paid more than an indentured apprentice in the same year. Is that true in every year in the chart?",
+              "steps": [
+                {
+                  "explain": "Read the rule from the table: in every year the trainee wage is higher than the indentured wage.",
+                  "work": "<p>Year 1: \\(\\$193.00>\\$172.60\\)    Year 2: \\(\\$259.50>\\$234.00\\)    Year 3: \\(\\$336.10>\\$306.20\\)    Year 4: \\(\\$392.30>\\$371.90\\)</p>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 323.0 264\" width=\"92%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><text x=\"48\" y=\"28\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"end\" >Year 1</text><rect x=\"56\" y=\"8\" width=\"86.3\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"147.3\" y=\"22\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >$172.60</text><rect x=\"56\" y=\"32\" width=\"96.5\" height=\"20\" rx=\"3\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.6\" /><text x=\"157.5\" y=\"46\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >$193.00</text><text x=\"48\" y=\"86\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"end\" >Year 2</text><rect x=\"56\" y=\"66\" width=\"117.0\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"178.0\" y=\"80\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >$234.00</text><rect x=\"56\" y=\"90\" width=\"129.75\" height=\"20\" rx=\"3\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.6\" /><text x=\"190.75\" y=\"104\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >$259.50</text><text x=\"48\" y=\"144\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"end\" >Year 3</text><rect x=\"56\" y=\"124\" width=\"153.1\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"214.1\" y=\"138\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >$306.20</text><rect x=\"56\" y=\"148\" width=\"168.05\" height=\"20\" rx=\"3\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.6\" /><text x=\"229.05\" y=\"162\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >$336.10</text><text x=\"48\" y=\"202\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"end\" >Year 4</text><rect x=\"56\" y=\"182\" width=\"185.95\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"246.95\" y=\"196\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >$371.90</text><rect x=\"56\" y=\"206\" width=\"196.15\" height=\"20\" rx=\"3\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.6\" /><text x=\"257.15\" y=\"220\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >$392.30</text><rect x=\"56\" y=\"244\" width=\"14\" height=\"12\" rx=\"0\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.2\" /><text x=\"76\" y=\"254\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"start\" >Indentured</text><rect x=\"156\" y=\"244\" width=\"14\" height=\"12\" rx=\"0\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.2\" /><text x=\"176\" y=\"254\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"start\" >Trainee</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Now look at the chart. The trainee bar should be taller than the indentured bar in every year.",
+                  "work": "<p>In years 1, 3 and 4 the trainee bar is taller. In year 2 the trainee bar is about the same height as the indentured bar (both near \\(\\$235\\)).</p>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 323.0 264\" width=\"92%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><text x=\"48\" y=\"28\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"end\" >Year 1</text><rect x=\"56\" y=\"8\" width=\"86.3\" height=\"20\" rx=\"3\" fill=\"#e2e8f0\" stroke=\"#cbd5e1\" stroke-width=\"1.6\" /><text x=\"147.3\" y=\"22\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >$172.60</text><rect x=\"56\" y=\"32\" width=\"96.5\" height=\"20\" rx=\"3\" fill=\"#e2e8f0\" stroke=\"#cbd5e1\" stroke-width=\"1.6\" /><text x=\"157.5\" y=\"46\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >$193.00</text><text x=\"48\" y=\"86\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"end\" >Year 2</text><rect x=\"56\" y=\"66\" width=\"117.0\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"178.0\" y=\"80\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >$234.00</text><rect x=\"56\" y=\"90\" width=\"129.75\" height=\"20\" rx=\"3\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.6\" /><text x=\"190.75\" y=\"104\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >$259.50</text><text x=\"48\" y=\"144\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"end\" >Year 3</text><rect x=\"56\" y=\"124\" width=\"153.1\" height=\"20\" rx=\"3\" fill=\"#e2e8f0\" stroke=\"#cbd5e1\" stroke-width=\"1.6\" /><text x=\"214.1\" y=\"138\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >$306.20</text><rect x=\"56\" y=\"148\" width=\"168.05\" height=\"20\" rx=\"3\" fill=\"#e2e8f0\" stroke=\"#cbd5e1\" stroke-width=\"1.6\" /><text x=\"229.05\" y=\"162\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >$336.10</text><text x=\"48\" y=\"202\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"end\" >Year 4</text><rect x=\"56\" y=\"182\" width=\"185.95\" height=\"20\" rx=\"3\" fill=\"#e2e8f0\" stroke=\"#cbd5e1\" stroke-width=\"1.6\" /><text x=\"246.95\" y=\"196\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >$371.90</text><rect x=\"56\" y=\"206\" width=\"196.15\" height=\"20\" rx=\"3\" fill=\"#e2e8f0\" stroke=\"#cbd5e1\" stroke-width=\"1.6\" /><text x=\"257.15\" y=\"220\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >$392.30</text><rect x=\"56\" y=\"244\" width=\"14\" height=\"12\" rx=\"0\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.2\" /><text x=\"76\" y=\"254\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"start\" >Indentured</text><rect x=\"156\" y=\"244\" width=\"14\" height=\"12\" rx=\"0\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"1.2\" /><text x=\"176\" y=\"254\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"start\" >Trainee</text></svg>"
+                  }
+                },
+                {
+                  "explain": "The trainee bar for the second year should reach \\(\\$259.50\\), not about \\(\\$235\\).",
+                  "work": "<p>The error is the wage for the second year trainee apprentice.</p>"
+                },
+                {
+                  "explain": "The answer is A."
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "Where is the error in the chart",
+                  "note": "Compare the height of each bar with the number in the table."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 7",
+                "number": 11,
+                "category": "graph interpretation"
+              }
+            },
+            {
+              "id": "sch-oc-t7-q12",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "In addition to the weekly rate, these allowances also apply: Industry Allowance \\(\\$17.40\\) per week; Tool Allowance \\(\\$18.80\\) per week. How much would a second year trainee apprentice earn per week, with allowances for tools and for industry?",
+              "options": [
+                "\\(\\$259.50\\)",
+                "\\(\\$278.30\\)",
+                "\\(\\$295.70\\)",
+                "\\(\\$297.70\\)"
+              ],
+              "answer": 2,
+              "hint": "Start with the second year trainee wage from the table, then add both allowances.",
+              "steps": [
+                {
+                  "explain": "Find the second year trainee wage in the table.",
+                  "work": "<p>Year 2, Trainee \\(=\\$259.50\\)</p>"
+                },
+                {
+                  "explain": "Add the industry allowance and the tool allowance.",
+                  "work": "<p>\\(\\$17.40+\\$18.80=\\$36.20\\)</p>"
+                },
+                {
+                  "explain": "Add the allowances to the weekly wage.",
+                  "work": "<p>\\(\\$259.50+\\$36.20=\\$295.70\\)</p>"
+                },
+                {
+                  "explain": "Check the other options: \\(\\$259.50\\) leaves out both allowances, \\(\\$278.30\\) adds only one allowance (+\\(\\$18.80\\)), and \\(\\$297.70\\) has an addition mistake.",
+                  "work": "<p>The answer is C.</p>"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "second year trainee apprentice",
+                  "note": "Use the Trainee column and the row for year 2."
+                },
+                {
+                  "text": "allowances for tools and for industry",
+                  "note": "Add both allowances to the weekly rate."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Practice Opportunity Class Tests · Year 4",
+                "test": "Test 7",
+                "number": 12,
+                "category": "graph interpretation"
+              }
+            }
+          ],
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 7",
+            "number": "11-12",
+            "page": 40,
+            "category": "graph interpretation"
+          }
+        },
+        {
+          "id": "sch-oc-t7-q13",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Which number comes next in this series?\n\n2  12  30  56  ?",
+          "options": [
+            "66",
+            "72",
+            "84",
+            "90"
+          ],
+          "answer": 3,
+          "hint": "Find the gap between each pair. Then look at the gaps. Or try writing each number as a product of two neighbouring numbers: 1 × 2, 3 × 4 …",
+          "steps": [
+            {
+              "explain": "Find the gaps.",
+              "work": "<p>\\(12-2=10\\) &emsp; \\(30-12=18\\) &emsp; \\(56-30=26\\)</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 96\" width=\"95%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><defs><marker id=\"ah\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#6366f1\"/></marker></defs><rect x=\"8\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"30.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >2</text><rect x=\"78\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"100.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >12</text><rect x=\"148\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"170.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >30</text><rect x=\"218\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"240.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >56</text><rect x=\"288\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#eef2ff\" stroke=\"#6366f1\" stroke-width=\"2\" /><text x=\"310.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >?</text><path d=\"M30.0 44 Q65.0 8 100.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"65.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+10</text><path d=\"M100.0 44 Q135.0 8 170.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"135.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+18</text><path d=\"M170.0 44 Q205.0 8 240.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"205.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+26</text></svg>"
+              }
+            },
+            {
+              "explain": "The gaps themselves go up by 8 each time: 10, 18, 26, so the next gap is 34.",
+              "work": "<p>\\(26+8=34\\)</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 112\" width=\"95%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><defs><marker id=\"ah\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#6366f1\"/></marker></defs><rect x=\"8\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"30.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >2</text><rect x=\"78\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"100.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >12</text><rect x=\"148\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"170.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >30</text><rect x=\"218\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"240.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >56</text><rect x=\"288\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#eef2ff\" stroke=\"#6366f1\" stroke-width=\"2\" /><text x=\"310.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >?</text><path d=\"M30.0 44 Q65.0 8 100.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"65.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+10</text><path d=\"M100.0 44 Q135.0 8 170.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"135.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+18</text><path d=\"M170.0 44 Q205.0 8 240.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"205.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+26</text><path d=\"M240.0 44 Q275.0 8 310.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"275.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+34</text><text x=\"170.0\" y=\"108\" font-size=\"12\" font-weight=\"700\" fill=\"#059669\" text-anchor=\"middle\" >56 + 34 = 90</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the next gap.",
+              "work": "<p>\\(56+34=90\\)</p>"
+            },
+            {
+              "explain": "Check with multiplication: 1 × 2 = 2, 3 × 4 = 12, 5 × 6 = 30, 7 × 8 = 56, so the next is 9 × 10 = 90 ✓.",
+              "work": "<p>The answer is D.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "next in this series",
+              "note": "If the gaps are not equal, look at how the gaps change."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 7",
+            "number": 13,
+            "page": 41,
+            "category": "number series"
+          }
+        },
+        {
+          "id": "sch-oc-t7-q17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Look at this sum. Each letter stands for a number. Which number stands for the letter M?\n\nMU × 4 = CU8",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 451 176\" width=\"45%\" height=\"auto\"><image href=\"/oc/t7-q17.jpg\" x=\"0\" y=\"0\" width=\"451\" height=\"176\"/></svg>"
+          },
+          "options": [
+            "1",
+            "5",
+            "2",
+            "3"
+          ],
+          "answer": 3,
+          "hint": "Look at the units digit first: U × 4 ends in 8. Which digit U gives a product ending in 8?",
+          "steps": [
+            {
+              "explain": "Look at the ones column. U × 4 gives a number that ends in 8.",
+              "work": "<p>Try the digits: 2 × 4 = 8 ✓ and 7 × 4 = 28 ✓. Every other digit gives a different last digit, so U is 2 or 7.</p>"
+            },
+            {
+              "explain": "Now use the fact that U also appears in the tens place of the answer CU8.",
+              "work": "<p>If \\(U=7\\): \\(M7\\times4\\) must be \\(C78\\), but \\(17\\times4=68\\), \\(27\\times4=108\\), \\(37\\times4=148\\) — the tens digit is never 7. ✗</p><p>If \\(U=2\\): \\(M2\\times4=C28\\). Try \\(12\\times4=48\\), \\(22\\times4=88\\), \\(32\\times4=128\\) ✓</p>"
+            },
+            {
+              "explain": "32 × 4 = 128 reads M U × 4 = C U 8 with M = 3, U = 2 and C = 1.",
+              "work": "<p>\\(32\\times4=128\\)  so  \\(M=3\\), \\(U=2\\), \\(C=1\\) ✓</p>"
+            },
+            {
+              "explain": "Check the other options: if M = 1 the number 12 × 4 = 48 is not CU8; if M = 2 then 22 × 4 = 88 is not CU8; if M = 5 then 52 × 4 = 208 does not have 2 in the tens place.",
+              "work": "<p>The answer is D (M = 3).</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Each letter stands for a number",
+              "note": "The same letter is always the same digit. Start with the ones column."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 7",
+            "number": 17,
+            "page": 42,
+            "category": "arithmetic"
+          }
+        },
+        {
+          "id": "sch-oc-t7-q18",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Although we can never know all the prime numbers, what do you think we might be able to say about the sum of two prime numbers? (Hint: a prime number is a number that can only be divided evenly by itself and/or one.)",
+          "options": [
+            "the sum is always an even number",
+            "the sum is an even number for all prime numbers except two",
+            "the sum is an odd number for all prime numbers except two",
+            "the sum is always an odd number"
+          ],
+          "answer": 1,
+          "hint": "Write down a few prime numbers: 2, 3, 5, 7, 11 … Which of them is even? Try adding some pairs and see whether the sums are odd or even.",
+          "steps": [
+            {
+              "explain": "List some prime numbers.",
+              "work": "<p>2, 3, 5, 7, 11, 13, 17, 19, 23 …</p><p>Only 2 is even. All the other primes are odd.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 354 92\" width=\"90%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><circle cx=\"24\" cy=\"24\" r=\"16\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"2\" /><text x=\"24\" y=\"29\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >2</text><circle cx=\"62\" cy=\"24\" r=\"16\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"2\" /><text x=\"62\" y=\"29\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >3</text><circle cx=\"100\" cy=\"24\" r=\"16\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"2\" /><text x=\"100\" y=\"29\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >5</text><circle cx=\"138\" cy=\"24\" r=\"16\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"2\" /><text x=\"138\" y=\"29\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >7</text><circle cx=\"176\" cy=\"24\" r=\"16\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"2\" /><text x=\"176\" y=\"29\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >11</text><circle cx=\"214\" cy=\"24\" r=\"16\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"2\" /><text x=\"214\" y=\"29\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >13</text><circle cx=\"252\" cy=\"24\" r=\"16\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"2\" /><text x=\"252\" y=\"29\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >17</text><circle cx=\"290\" cy=\"24\" r=\"16\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"2\" /><text x=\"290\" y=\"29\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >19</text><circle cx=\"328\" cy=\"24\" r=\"16\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"2\" /><text x=\"328\" y=\"29\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >23</text><text x=\"180\" y=\"62\" font-size=\"12\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >only 2 is even; every other prime is odd</text><text x=\"180\" y=\"82\" font-size=\"12.5\" font-weight=\"800\" fill=\"#059669\" text-anchor=\"middle\" >odd + odd = even    ·    2 + odd = odd</text></svg>"
+              }
+            },
+            {
+              "explain": "Add pairs of primes and look at the sums.",
+              "work": "<p>Two odd primes: 3 + 5 = 8, 7 + 13 = 20, 11 + 19 = 30 → always even.</p><p>With the prime 2: 2 + 3 = 5, 2 + 11 = 13 → odd.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 286 152\" width=\"75%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><rect x=\"8\" y=\"8\" width=\"270\" height=\"24\" rx=\"5\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"1.6\" /><text x=\"24\" y=\"25\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >3 + 5</text><text x=\"130\" y=\"25\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >= 8</text><text x=\"210\" y=\"25\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >even</text><rect x=\"8\" y=\"36\" width=\"270\" height=\"24\" rx=\"5\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"1.6\" /><text x=\"24\" y=\"53\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >7 + 13</text><text x=\"130\" y=\"53\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >= 20</text><text x=\"210\" y=\"53\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >even</text><rect x=\"8\" y=\"64\" width=\"270\" height=\"24\" rx=\"5\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"1.6\" /><text x=\"24\" y=\"81\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >11 + 19</text><text x=\"130\" y=\"81\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >= 30</text><text x=\"210\" y=\"81\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"start\" >even</text><rect x=\"8\" y=\"92\" width=\"270\" height=\"24\" rx=\"5\" fill=\"#ffe4e6\" stroke=\"#e11d48\" stroke-width=\"1.6\" /><text x=\"24\" y=\"109\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >2 + 3</text><text x=\"130\" y=\"109\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >= 5</text><text x=\"210\" y=\"109\" font-size=\"13\" font-weight=\"800\" fill=\"#e11d48\" text-anchor=\"start\" >odd</text><rect x=\"8\" y=\"120\" width=\"270\" height=\"24\" rx=\"5\" fill=\"#ffe4e6\" stroke=\"#e11d48\" stroke-width=\"1.6\" /><text x=\"24\" y=\"137\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >2 + 11</text><text x=\"130\" y=\"137\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >= 13</text><text x=\"210\" y=\"137\" font-size=\"13\" font-weight=\"800\" fill=\"#e11d48\" text-anchor=\"start\" >odd</text></svg>"
+              }
+            },
+            {
+              "explain": "Odd + odd is always even. Adding 2 to an odd prime gives an odd number, so 2 is the exception.",
+              "work": "<p>The sum is even for all prime numbers except two.</p>"
+            },
+            {
+              "explain": "Check the other options: “always even” fails for 2 + 3 = 5, and the “odd” options fail for 3 + 5 = 8.",
+              "work": "<p>The answer is B.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "sum of two prime numbers",
+              "note": "Try some examples. Look at what happens when one of the primes is 2."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 7",
+            "number": 18,
+            "page": 42,
+            "category": "calculation problems"
+          }
+        },
+        {
+          "id": "sch-oc-t7-q25",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which shape comes next?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 715 396\" width=\"75%\" height=\"auto\"><image href=\"/oc/t7-q25.jpg\" x=\"0\" y=\"0\" width=\"715\" height=\"396\"/></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 0,
+          "hint": "Compare the three circles. What is happening to the thickness of the outline and to the size of the circle?",
+          "steps": [
+            {
+              "explain": "Look at the thickness of the black outline in I, II and III.",
+              "work": "<p>I has a thin line, II a thicker line and III a very thick line. The outline gets wider each time.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 114\" width=\"85%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><circle cx=\"50\" cy=\"50\" r=\"30\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"4\" /><text x=\"50\" y=\"104\" font-size=\"12.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >I</text><circle cx=\"140\" cy=\"50\" r=\"26\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"7\" /><text x=\"140\" y=\"104\" font-size=\"12.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >II</text><circle cx=\"230\" cy=\"50\" r=\"22\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"11\" /><text x=\"230\" y=\"104\" font-size=\"12.5\" font-weight=\"800\" fill=\"#64748b\" text-anchor=\"middle\" >III</text></svg>"
+              }
+            },
+            {
+              "explain": "Look at the size of the circles.",
+              "work": "<p>The circles get smaller each time: I is the biggest and III is the smallest.</p>"
+            },
+            {
+              "explain": "So the next circle (IV) is smaller still and its line is thicker still: almost all black, with only a small white dot in the middle.",
+              "work": "<p>A small black circle is what comes next.</p>"
+            },
+            {
+              "explain": "Find the option that is small and almost completely black.",
+              "work": "<p>A is a small black circle. B is large. C and D have thin lines. The answer is A.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which shape comes next",
+              "note": "Two things change at once: the thickness of the outline and the size of the circle."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 7",
+            "number": 25,
+            "page": 43,
+            "category": "figure sequences"
+          }
+        },
+        {
+          "id": "sch-oc-t7-q26",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A tiler wants to make a pattern of grey and white triangle tiles. They would look something like this:\n\nHow many grey triangles could fit into this space? Start each row with a grey triangle.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 748 209\" width=\"90%\" height=\"auto\"><image href=\"/oc/t7-q26.jpg\" x=\"0\" y=\"0\" width=\"748\" height=\"209\"/></svg>"
+          },
+          "options": [
+            "27",
+            "30",
+            "25",
+            "36"
+          ],
+          "answer": 0,
+          "hint": "Count how many triangles are in one row and how many of them are grey when the colours take turns, starting with grey. Do this for one row, then use all the rows.",
+          "steps": [
+            {
+              "explain": "Look at the space. It has 3 rows of triangles, and in each row the triangles point up, down, up, down … so the colours take turns: grey, white, grey, white …",
+              "work": "<p>Every row begins with a grey triangle, as the question says.</p>"
+            },
+            {
+              "explain": "Count the triangles in one row. There are 9 triangles that point up and 8 that point down between them, which makes 17 triangles in a row.",
+              "work": "<p>\\(9+8=17\\) triangles in each row</p>"
+            },
+            {
+              "explain": "Grey is every second triangle, starting with the first one, so the grey triangles are the 1st, 3rd, 5th … 17th.",
+              "work": "<p>\\(1,3,5,\\dots,17\\) is \\(9\\) grey triangles in one row</p>"
+            },
+            {
+              "explain": "There are 3 rows, and every row starts with grey, so each row has the same number of grey triangles.",
+              "work": "<p>\\(9\\times3=27\\) grey triangles</p>"
+            },
+            {
+              "explain": "Check the other options: 30 would be 10 grey in each row, 25 is not a multiple of 3 and 36 would be 12 in each row.",
+              "work": "<p>The answer is A.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Start each row with a grey triangle",
+              "note": "The colours take turns, so find how many triangles are in each row."
+            },
+            {
+              "text": "How many grey triangles",
+              "note": "Count the grey triangles in one row, then multiply by the number of rows."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 7",
+            "number": 26,
+            "page": 43,
+            "category": "measurement"
+          }
+        },
+        {
+          "id": "sch-oc-t7-q27",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "How many more grey triangular tiles would be needed if the tiler wanted to continue the parallel pattern that is shown below? (Hint: Do not include the grey tiles that have already been used).",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 748 220\" width=\"90%\" height=\"auto\"><image href=\"/oc/t7-q27.jpg\" x=\"0\" y=\"0\" width=\"748\" height=\"220\"/></svg>"
+          },
+          "options": [
+            "36",
+            "26",
+            "24",
+            "28"
+          ],
+          "answer": 1,
+          "hint": "The picture has 4 rows. Find how many grey tiles the whole pattern would have if the grey tiles are placed all through the picture. Then take away the grey tiles that are already shaded.",
+          "steps": [
+            {
+              "explain": "Look at the picture. It has 4 rows and the same width as the space in Question 26. Using the same pattern (every row starts with a grey triangle, grey and white take turns), each row has 9 grey triangles.",
+              "work": "<p>\\(9\\times4=36\\) grey tiles for the whole pattern</p>"
+            },
+            {
+              "explain": "Count the grey tiles that are already shaded in the picture. They form a stair shape on the left.",
+              "work": "<p>There are 10 shaded grey tiles: 1 in the top row, 2 in the second row, 3 in the third row and 4 in the bottom row.</p>"
+            },
+            {
+              "explain": "Take away the grey tiles that have already been used.",
+              "work": "<p>\\(36-10=26\\)</p>"
+            },
+            {
+              "explain": "So 26 more grey tiles are needed.",
+              "work": "<p>The answer is B.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Do not include the grey tiles that have already been used",
+              "note": "Find all the grey tiles the pattern needs, then take away the ones that are already shaded."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 7",
+            "number": 27,
+            "page": 43,
+            "category": "measurement"
+          }
+        },
+        {
+          "id": "sch-oc-t7-q28",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Which letter comes next in the series?\n\nA  E  J  P  ?",
+          "options": [
+            "U",
+            "V",
+            "W",
+            "X"
+          ],
+          "answer": 2,
+          "hint": "Count how many letters are skipped between neighbours. Do the gaps change?",
+          "steps": [
+            {
+              "explain": "Count the letters between each pair.",
+              "work": "<p>A [B C D] E: 3 letters skipped.</p><p>E [F G H I] J: 4 letters skipped.</p><p>J [K L M N O] P: 5 letters skipped.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 96\" width=\"85%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><defs><marker id=\"ah\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#6366f1\"/></marker></defs><rect x=\"8\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"30.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >A</text><rect x=\"78\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"100.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >E</text><rect x=\"148\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"170.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >J</text><rect x=\"218\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"240.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >P</text><rect x=\"288\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#eef2ff\" stroke=\"#6366f1\" stroke-width=\"2\" /><text x=\"310.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >?</text><path d=\"M30.0 44 Q65.0 8 100.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"65.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+4</text><path d=\"M100.0 44 Q135.0 8 170.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"135.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+5</text><path d=\"M170.0 44 Q205.0 8 240.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"205.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+6</text></svg>"
+              }
+            },
+            {
+              "explain": "The gaps go up by 1 each time: +4, +5, +6. The next gap is +7.",
+              "work": "<p>P is the 16th letter. 16 + 7 = 23.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 112\" width=\"85%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><defs><marker id=\"ah\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#6366f1\"/></marker></defs><rect x=\"8\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"30.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >A</text><rect x=\"78\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"100.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >E</text><rect x=\"148\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\" /><text x=\"170.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >J</text><rect x=\"218\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"240.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"middle\" >P</text><rect x=\"288\" y=\"46\" width=\"44\" height=\"44\" rx=\"8\" fill=\"#eef2ff\" stroke=\"#6366f1\" stroke-width=\"2\" /><text x=\"310.0\" y=\"74.0\" font-size=\"18\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >?</text><path d=\"M30.0 44 Q65.0 8 100.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"65.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+4</text><path d=\"M100.0 44 Q135.0 8 170.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"135.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+5</text><path d=\"M170.0 44 Q205.0 8 240.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"205.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+6</text><path d=\"M240.0 44 Q275.0 8 310.0 44\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" marker-end=\"url(#ah)\"/><text x=\"275.0\" y=\"22\" font-size=\"13\" font-weight=\"800\" fill=\"#4338ca\" text-anchor=\"middle\" >+7</text><text x=\"170.0\" y=\"108\" font-size=\"12\" font-weight=\"700\" fill=\"#059669\" text-anchor=\"middle\" >P + 7 = W</text></svg>"
+              }
+            },
+            {
+              "explain": "The 23rd letter is W (P, Q, R, S, T, U, V, W).",
+              "work": "<p>The answer is C.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "next in the series",
+              "note": "Count how many places each letter moves on, and see how that number changes."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Practice Opportunity Class Tests · Year 4",
+            "test": "Test 7",
+            "number": 28,
+            "page": 43,
             "category": "number series"
           }
         }
