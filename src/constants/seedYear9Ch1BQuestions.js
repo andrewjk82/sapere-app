@@ -4989,26 +4989,26 @@ export const Y9_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A deep-sea research submarine calculates hydraulic pressure on its hull. This analysis monitors signal routing coefficients represented by \\(\\frac{3x +2}{5} + \\frac{3x -2}{5}\\). Simplify this expression into a single fraction.",
-    "a": "3",
+    "question": "Simplify the expression \\(\\frac{3x + 2}{5} + \\frac{3x - 2}{5}\\) into a single fraction.",
+    "a": "0",
     "opts": [
-      "\\(\\frac{30x - 0}{25}\\)",
-      "\\(\\frac{6x +0}{10}\\)",
-      "\\(\\frac{30x + 5}{25}\\)",
-      "\\(\\frac{30x +0}{25}\\)"
+      "\\(\\frac{6x}{5}\\)",
+      "\\(\\frac{6x}{10}\\)",
+      "\\(\\frac{6x + 4}{5}\\)",
+      "\\(\\frac{4}{5}\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Identify the common denominator for the two fractions, which is the product of \\(5\\) and \\(5\\).",
-        "workingOut": "\\(\\text{Common Denominator: } 5 \\times 5 = 25\\)"
+        "explanation": "Notice that both fractions already have the same denominator of \\(5\\). Combine the numerators over the common denominator.",
+        "workingOut": "\\(\\frac{3x + 2}{5} + \\frac{3x - 2}{5} = \\frac{(3x + 2) + (3x - 2)}{5}\\)"
       },
       {
-        "explanation": "Multiply the numerator of each fraction by the denominator of the other.",
-        "workingOut": "\\(\\frac{5(3x +2) + 5(3x -2)}{25}\\)"
+        "explanation": "Collect like terms in the numerator: combine \\(3x + 3x = 6x\\) and \\(2 - 2 = 0\\).",
+        "workingOut": "\\(\\frac{(3x + 3x) + (2 - 2)}{5} = \\frac{6x}{5}\\)"
       },
       {
-        "explanation": "Expand the terms in the numerator and collect the like terms.",
-        "workingOut": "\\(\\frac{15x +10 15x -10}{25} = \\frac{30x +0}{25}\\)"
+        "explanation": "Check if the fraction can be simplified further. Since \\(6\\) and \\(5\\) share no common factors other than \\(1\\), \\(\\frac{6x}{5}\\) is in fully simplified form.",
+        "workingOut": "\\(\\frac{6x}{5}\\)"
       }
     ]
   },
