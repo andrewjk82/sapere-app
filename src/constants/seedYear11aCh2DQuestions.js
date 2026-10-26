@@ -2879,33 +2879,38 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q9c",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Show that the expression is rational by first rationalising the denominators:\n\n\\\\(\\\\frac{4}{2+\\\\sqrt{2}} + \\\\frac{1}{3-2\\\\sqrt{2}}\\\\)",
-    "answer": "Step 1: Rationalise \\(\\frac{4}{2+\\sqrt{2}}\\) using conjugate \\(2-\\sqrt{2}\\):\n\\[\\frac{4(2-\\sqrt{2})}{(2+\\sqrt{2})(2-\\sqrt{2})} = \\frac{8-4\\sqrt{2}}{4-2} = \\frac{8-4\\sqrt{2}}{2} = 4-2\\sqrt{2}\\]\n\nStep 2: Rationalise \\(\\frac{1}{3-2\\sqrt{2}}\\) using conjugate \\(3+2\\sqrt{2}\\):\n\\[\\frac{3+2\\sqrt{2}}{(3-2\\sqrt{2})(3+2\\sqrt{2})} = \\frac{3+2\\sqrt{2}}{9-8} = 3+2\\sqrt{2}\\]\n\nStep 3: Add the two rationalised expressions:\n\\[(4-2\\sqrt{2}) + (3+2\\sqrt{2}) = 4 + 3 - 2\\sqrt{2} + 2\\sqrt{2} = 7\\]\n\nThe surd terms cancel, leaving the rational number 7. ✓",
-    "options": [],
-    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
-    "solution": "",
+    "question": "What is \\( \\frac{4}{2+\\sqrt{2}} + \\frac{1}{3-2\\sqrt{2}} \\)?",
+    "a": "0",
+    "opts": [
+      "\\( 7 \\)",
+      "\\( 7 - 4\\sqrt{2} \\)",
+      "\\( 1 \\)",
+      "\\( 7 + 4\\sqrt{2} \\)"
+    ],
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\(a+\\sqrt{b}\\) is \\(a-\\sqrt{b}\\)). Multiplying a binomial surd by its conjugate uses \\((x+y)(x-y)=x^2-y^2\\) to eliminate the surd from the denominator.",
+    "solution": "7",
     "solutionSteps": [
       {
         "explanation": "Rationalise the first fraction using its conjugate \\(2-\\sqrt{2}\\).",
-        "workingOut": "\\\\frac{4(2-\\\\sqrt{2})}{(2+\\\\sqrt{2})(2-\\\\sqrt{2})} = \\\\frac{8-4\\\\sqrt{2}}{4-2} = 4-2\\\\sqrt{2}",
+        "workingOut": "\\frac{4(2-\\sqrt{2})}{(2+\\sqrt{2})(2-\\sqrt{2})} = \\frac{8-4\\sqrt{2}}{4-2} = 4-2\\sqrt{2}",
         "graphData": null
       },
       {
         "explanation": "Rationalise the second fraction using its conjugate \\(3+2\\sqrt{2}\\).",
-        "workingOut": "\\\\frac{1(3+2\\\\sqrt{2})}{(3-2\\\\sqrt{2})(3+2\\\\sqrt{2})} = \\\\frac{3+2\\\\sqrt{2}}{9-8} = 3+2\\\\sqrt{2}",
+        "workingOut": "\\frac{1(3+2\\sqrt{2})}{(3-2\\sqrt{2})(3+2\\sqrt{2})} = \\frac{3+2\\sqrt{2}}{9-8} = 3+2\\sqrt{2}",
         "graphData": null
       },
       {
         "explanation": "Add the two simplified, rationalised parts.",
-        "workingOut": "(4-2\\\\sqrt{2}) + (3+2\\\\sqrt{2})",
+        "workingOut": "(4-2\\sqrt{2}) + (3+2\\sqrt{2})",
         "graphData": null
       },
       {
-        "explanation": "Combine the integers and cancel the surd parts to obtain the rational sum.",
-        "workingOut": "= 7",
+        "explanation": "Combine the integers and cancel the surd terms.",
+        "workingOut": "= 4 + 3 - 2\\sqrt{2} + 2\\sqrt{2} = 7",
         "graphData": null
       }
     ],
