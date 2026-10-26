@@ -8,9 +8,10 @@ overrides anything below or in `.agents/skills/sapere-math-question/` or
 
 As of 2026-09-16, the question bank's single source of truth is **`content/chapters/*.json`** (git).
 Firestore `questions`, `question_index`, `question_topic_index`, `sync_meta` and
-`src/constants/seed*.js` are **retired for question content** — still physically present (deletion
-is a later cleanup step) but no longer read by students or the Question Bank UI, and editing them
-does **nothing** for anyone. See `content/README.md` for the full picture; the short version:
+`src/constants/seed*.js` are **retired for question content** — no longer read by students or the
+Question Bank UI, and editing them does **nothing** for anyone. **The Firestore `questions`
+collection itself was deleted on 2026-10-26 (P5)** after a full backup — see `BACKUP_LOG.md`; never
+recreate docs in it. See `content/README.md` for the full picture; the short version:
 
 ```
 edit content/chapters/<chapterId>.json     — canonical schema: content/schema.js (NOT the old

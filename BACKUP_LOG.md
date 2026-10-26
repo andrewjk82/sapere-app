@@ -4,6 +4,28 @@
 
 ---
 
+## 2026-10-26 — Firestore `questions` 전체 백업 후 컬렉션 삭제 (P5)
+
+**왜:** 콘텐츠 이관 P5. 문제 원본은 `content/chapters/*.json`(git)이고 학생·선생님 화면은 전부 CDN에서 읽음. 삭제 전 학생 practice_pool·HSC 풀이 가리키는 ID를 대조해, Firestore에만 남아 있던 107개(선생님 문제 50 — `search:` chapterId 버그, y7-6d q1–q9 57)를 content로 복구함(`e7509aad`, `c403364a`, `7479a477`).
+
+| | |
+|---|---|
+| 위치 | `raspberrypi.local:~/backups/sapere1/sapere1-firestore-questions-full-20261026.tar.gz` |
+| 로컬 사본 | `~/Desktop/sapere1-firestore-questions-full-20261026.tar.gz` |
+| 크기 | 5.6 MB |
+| SHA-256 | `6df5e29e82d759dbfa7e19a57f45b9bcb948b92eed183331c712847616671a82` |
+| 검증 | 로컬 ↔ Pi 체크섬 일치, 추출 후 줄 수 일치 |
+| 포함 | `questions.jsonl.gz` **25,517건 전체**(9/14 백업에서 빠진 미인덱스 문서 포함) · `question_index.jsonl.gz`(329) · `question_topic_index.jsonl.gz`(528) |
+| 형식 | 한 줄에 `{"id", "data"}`. Timestamp → `{"__timestamp": ISO, "s", "n"}`, 참조 → `{"__ref": path}`, GeoPoint → `{"__geopoint": [lat, lng]}`, bytes → `{"__bytes": base64}` |
+
+삭제 전 대조 결과: 24,957건 content에 있음 · 101 비활성 · 65 이관 후 의도적 삭제 · 31 같은 본문이 다른 ID로 있음 · 363 어떤 `question_index`에도 없던 옛 챕터 문서(선생님 문서 0, 학생 비노출). 삭제 후 `count()` = 0.
+
+`question_index` / `question_topic_index` / `sync_meta`는 삭제하지 않음(`sync_meta/questions`는 아직 daily assignment가 읽음).
+
+**복원 방법:** 각 줄을 `questions/{id}`에 `set` — 태그된 값을 `Timestamp(s, n)` 등으로 되돌린 뒤 쓰기(25.5k write). 복원 스크립트는 필요할 때 작성.
+
+---
+
 ## 2026-09-14 — Firestore `questions` 스냅샷 + 정규 콘텐츠(P0/P1) — 콘텐츠 이관 착수 전
 
 **왜:** 문제 콘텐츠를 Firestore → git `content/`로 옮기는 작업(P0~P5)의 롤백 지점. P3 전까지 Firestore는 읽기만 하지만, 오늘 시점의 Firestore 상태를 원본 그대로 보관해야 어느 단계에서든 되돌릴 수 있음.
