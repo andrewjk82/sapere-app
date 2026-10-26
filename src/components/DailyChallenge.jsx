@@ -21,7 +21,9 @@ import {
   markDailyAssignmentCompleted,
   markDailyAssignmentStarted,
   getAssignedChapters,
+  fetchQuestionsByIds,
 } from '../services/dailyAssignmentService';
+import { applyLiveContent, liveLookupIds } from '../utils/liveQuestionContent';
 import { updatePoolAfterQuiz } from '../services/practicePoolService';
 import {
   ensureCalcProgress,
@@ -470,29 +472,12 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
         }
         const data = snap.data();
         
-        const liveQuestions = await Promise.all(
-          (data.questions || []).map(async (q) => {
-            if (!q.id || q.id.startsWith("gen-")) return q;
-            try {
-              const qSnap = await getDoc(doc(db, "questions", q.id));
-              if (qSnap.exists()) {
-                const liveData = qSnap.data();
-                return {
-                  ...q,
-                  solution: liveData.solution,
-                  solutionSteps: liveData.solutionSteps,
-                  hint: liveData.hint,
-                  graphData: liveData.graphData,
-                  subQuestions: liveData.subQuestions,
-                  options: liveData.options,
-                };
-              }
-            } catch (err) {
-              console.warn("Failed to fetch live question:", q.id, err);
-            }
-            return q;
-          })
-        );
+        // The bank's current solution (content CDN; Firestore only for ids it doesn't serve).
+        // Options stay as answered: the stored answers and key refer to that order.
+        let liveDocs = [];
+        try { liveDocs = await fetchQuestionsByIds(liveLookupIds(data.questions)); } catch (err) { console.warn("Failed to fetch live questions:", err); }
+        if (cancelled) return;
+        const liveQuestions = applyLiveContent(data.questions || [], liveDocs, ['solution', 'solutionSteps', 'hint', 'graphData', 'subQuestions']);
 
         setSelectedChallenge(prev => {
           if (!prev || prev.id !== selectedChallenge.id) return prev;

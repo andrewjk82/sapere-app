@@ -11,7 +11,9 @@ import NumberLine from '../NumberLine';
 import { parseNumberLineFromText } from '../../utils/numberLineParser';
 import ChallengeSketchBoard from './ChallengeSketchBoard';
 import { db } from '../../firebase/config';
-import { collection, addDoc, serverTimestamp, doc, setDoc, increment, getDoc } from 'firebase/firestore';
+import { collection, addDoc, serverTimestamp, doc, setDoc, increment } from 'firebase/firestore';
+import { fetchQuestionsByIds } from '../../services/dailyAssignmentService';
+import { applyLiveContent, liveLookupIds } from '../../utils/liveQuestionContent';
 
 // Secret Note is review-only for leaderboard fairness.
 // Daily Practice / Calculation are the only XP sources after the season reset.
@@ -526,35 +528,12 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
     if (queue.length > 0 && !liveQueue) {
       let isMounted = true;
       const fetchLive = async () => {
-        const qRef = collection(db, "questions");
-        const live = await Promise.all(
-          queue.map(async (item) => {
-            const q = item.question;
-            if (!q || !q.id) return item;
-            try {
-              const snap = await getDoc(doc(qRef, q.id));
-              if (snap.exists()) {
-                const data = snap.data();
-                return {
-                  ...item,
-                  question: {
-                    ...q,
-                    solution: data.solution !== undefined ? data.solution : q.solution,
-                    solutionSteps: data.solutionSteps !== undefined ? data.solutionSteps : q.solutionSteps,
-                    hint: data.hint !== undefined ? data.hint : q.hint,
-                    question: data.question !== undefined ? data.question : q.question,
-                    answer: data.answer !== undefined ? data.answer : q.answer,
-                    subQuestions: data.subQuestions !== undefined ? data.subQuestions : q.subQuestions,
-                    graphData: data.graphData !== undefined ? data.graphData : q.graphData,
-                  }
-                };
-              }
-            } catch (err) {
-              console.warn("Failed to fetch live question:", q.id, err);
-            }
-            return item;
-          })
-        );
+        // The bank's current wording/solution (content CDN; Firestore only for ids it doesn't serve).
+        const questions = queue.map((item) => item.question);
+        let liveDocs = [];
+        try { liveDocs = await fetchQuestionsByIds(liveLookupIds(questions)); } catch (err) { console.warn('Failed to fetch live questions:', err); }
+        const fresh = applyLiveContent(questions, liveDocs);
+        const live = queue.map((item, i) => (item.question ? { ...item, question: fresh[i] } : item));
         if (isMounted) setLiveQueue(live);
       };
       fetchLive();

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { collection, doc, getDoc } from "firebase/firestore";
-import { db } from "../../firebase/config";
+import { fetchQuestionsByIds } from "../../services/dailyAssignmentService";
+import { applyLiveContent, liveLookupIds } from "../../utils/liveQuestionContent";
 import { motion, AnimatePresence } from "framer-motion";
 import { Trophy } from "lucide-react";
 import ChallengeReviewView from "../challenge/ChallengeReviewView";
@@ -30,31 +30,10 @@ export default function ChallengeDetailModal({
     if (hasQuestions && !liveQuestions) {
       let isMounted = true;
       const fetchLive = async () => {
-        const qRef = collection(db, "questions");
-        const live = await Promise.all(
-          selectedChallenge.questions.map(async (q) => {
-            if (!q.id) return q;
-            try {
-              const snap = await getDoc(doc(qRef, q.id));
-              if (snap.exists()) {
-                const data = snap.data();
-                return {
-                  ...q,
-                  solution: data.solution !== undefined ? data.solution : q.solution,
-                  solutionSteps: data.solutionSteps !== undefined ? data.solutionSteps : q.solutionSteps,
-                  hint: data.hint !== undefined ? data.hint : q.hint,
-                  question: data.question !== undefined ? data.question : q.question,
-                  answer: data.answer !== undefined ? data.answer : q.answer,
-                  subQuestions: data.subQuestions !== undefined ? data.subQuestions : q.subQuestions,
-                  graphData: data.graphData !== undefined ? data.graphData : q.graphData,
-                };
-              }
-            } catch (err) {
-              console.warn("Failed to fetch live question:", q.id, err);
-            }
-            return q;
-          })
-        );
+        // The bank's current wording/solution (content CDN; Firestore only for ids it doesn't serve).
+        let liveDocs = [];
+        try { liveDocs = await fetchQuestionsByIds(liveLookupIds(selectedChallenge.questions)); } catch (err) { console.warn("Failed to fetch live questions:", err); }
+        const live = applyLiveContent(selectedChallenge.questions, liveDocs);
         if (isMounted) setLiveQuestions(live);
       };
       fetchLive();
