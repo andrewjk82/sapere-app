@@ -1371,11 +1371,11 @@
           "id": "cgs2020e1-q11b",
           "type": "multipart",
           "difficulty": "hard",
-          "stem": "Write an expression for \\(\\sin5x\\sin x\\) in terms of \\(\\cos4x\\) and \\(\\cos6x\\). Hence, find \\(\\int_0^{\\pi/4}\\sin5x\\sin x\\,dx\\).",
+          "stem": "Write an expression for \\(\\sin 5x\\sin x\\) in terms of \\(\\cos 4x\\) and \\(\\cos 6x\\). Hence, find \\(\\int_0^{\\frac{\\pi}{4}}\\sin 5x\\sin x\\,dx\\).",
           "hint": "First convert the product of sines into a difference of cosines; then integrate those terms.",
           "keyPoints": [
             {
-              "text": "\\(\\cos4x\\) and \\(\\cos6x\\)",
+              "text": "\\(\\cos 4x\\) and \\(\\cos 6x\\)",
               "note": "The product-to-sum identity produces these two cosine terms."
             }
           ],
@@ -1434,7 +1434,7 @@
               "id": "cgs2020e1-q11b-ii",
               "type": "mc",
               "difficulty": "hard",
-              "stem": "Hence, find \\(\\int_0^{\\pi/4}\\sin5x\\sin x\\,dx\\).",
+              "stem": "Hence, find \\(\\int_0^{\\frac{\\pi}{4}}\\sin 5x\\sin x\\,dx\\).",
               "options": [
                 "\\(\\frac{1}{12}\\)",
                 "\\(\\frac{\\sqrt2}{16}+\\frac{1}{12}\\)",
@@ -1449,22 +1449,22 @@
                   "note": "Use the identity established immediately before this integral."
                 },
                 {
-                  "text": "\\(\\int_0^{\\pi/4}\\sin5x\\sin x\\,dx\\)",
+                  "text": "\\(\\int_0^{\\frac{\\pi}{4}}\\sin 5x\\sin x\\,dx\\)",
                   "note": "Integrate the cosine terms and evaluate at both limits."
                 }
               ],
               "steps": [
                 {
                   "explain": "Replace the product using \\(\\sin5x\\sin x=\\frac12(\\cos4x-\\cos6x)\\).",
-                  "work": "\\(I=\\frac12\\int_0^{\\pi/4}(\\cos4x-\\cos6x)\\,dx\\)"
+                  "work": "\\(I=\\frac{1}{2}\\int_0^{\\frac{\\pi}{4}}(\\cos 4x-\\cos 6x)\\,dx\\)"
                 },
                 {
                   "explain": "Integrate using \\(\\int\\cos(kx)\\,dx=\\frac{\\sin(kx)}{k}\\).",
-                  "work": "\\(I=\\frac12\\left[\\frac{\\sin4x}{4}-\\frac{\\sin6x}{6}\\right]_0^{\\pi/4}\\)"
+                  "work": "\\(I=\\frac{1}{2}\\left[\\frac{\\sin 4x}{4}-\\frac{\\sin 6x}{6}\\right]_0^{\\frac{\\pi}{4}}\\)"
                 },
                 {
                   "explain": "Substitute the upper and lower bounds.",
-                  "work": "\\(I=\\frac12\\left(\\frac{\\sin\\pi}{4}-\\frac{\\sin(3\\pi/2)}{6}-\\left[\\frac{\\sin0}{4}-\\frac{\\sin0}{6}\\right]\\right)=\\frac12\\left(0-\\frac{-1}{6}-0\\right)=\\frac{1}{12}\\)"
+                  "work": "\\(I=\\frac{1}{2}\\left(\\frac{\\sin\\pi}{4}-\\frac{\\sin\\left(\\frac{3\\pi}{2}\\right)}{6}-\\left[\\frac{\\sin 0}{4}-\\frac{\\sin 0}{6}\\right]\\right)=\\frac{1}{2}\\left(0-\\frac{-1}{6}-0\\right)=\\frac{1}{12}\\)"
                 }
               ],
               "timeLimit": 60,
