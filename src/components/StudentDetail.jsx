@@ -81,6 +81,7 @@ import ChallengeHistoryCard from "./ChallengeHistoryCard";
 import HomeworkSubmissionViewer from "./homework/HomeworkSubmissionViewer";
 import { markHomeworkChecked } from "../services/homeworkService";
 import "./student-detail.css";
+import { MAX_DREAM_CHARS } from '../utils/avatarUtils';
 
 const ROLE_OPTIONS = [
   { value: "", label: "Not set" },
@@ -1224,7 +1225,7 @@ const StudentDetail = ({ studentId, onBack }) => {
       };
       img.onload = async () => {
         try {
-          const MAX_SIZE = 800; // stricter bounding box
+          const MAX_SIZE = 400; // shown at card/avatar size; stored inline in users/{uid} + leaderboard/{uid}
           let w = img.width;
           let h = img.height;
 
@@ -1244,15 +1245,15 @@ const StudentDetail = ({ studentId, onBack }) => {
           const ctx = canvas.getContext("2d");
           ctx.drawImage(img, 0, 0, w, h);
 
-          // Iteratively compress until under ~800KB (base64 length < 1.1 million chars)
-          let quality = 0.8;
+          // Iteratively compress until under ~45KB
+          let quality = 0.7;
           let url = canvas.toDataURL("image/jpeg", quality);
-          while (url.length > 1100000 && quality > 0.1) {
+          while (url.length > MAX_DREAM_CHARS && quality > 0.1) {
             quality -= 0.1;
             url = canvas.toDataURL("image/jpeg", quality);
           }
 
-          if (url.length > 1100000) {
+          if (url.length > MAX_DREAM_CHARS) {
             showToast(
               "Image is too large. Please try a smaller photo.",
               "warning",

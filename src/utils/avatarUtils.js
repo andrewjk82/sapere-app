@@ -1,5 +1,9 @@
 const DICEBEAR_BASE = 'https://api.dicebear.com/7.x';
 
+// dreamImageUrl is stored inline (a base64 data URL) in users/{uid} and copied into leaderboard/{uid},
+// so its size is paid on every profile/leaderboard read. Keep it to about 45KB.
+export const MAX_DREAM_CHARS = 60000;
+
 /**
  * Builds the best available avatar URL for a user/student data object.
  * Priority: dreamImageUrl → custom avatarStyle+Seed → avatarUrl → dicebear fallback.

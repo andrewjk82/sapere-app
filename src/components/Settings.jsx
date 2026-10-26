@@ -14,6 +14,7 @@ import { isScribbleEraseOn, setScribbleEraseOn } from '../utils/scribbleErase';
 import { isHoldToShapeOn, setHoldToShapeOn } from '../utils/shapeSnap';
 import { requestSecretNoteClearModalPreview } from '../services/secretNoteBonusService';
 import { SPRINT_PAYOUT_PREVIEW_EVENT } from '../services/timesTableSprintService';
+import { MAX_DREAM_CHARS } from '../utils/avatarUtils';
 
 // Extra QR codes in the teacher's Share dialog (students only see the app's own).
 const TEACHER_QR_LINKS = [{ id: 'jjmoney', label: 'JJ Money', url: 'https://jjmoney-public.vercel.app', display: 'jjmoney-public.vercel.app' }];
@@ -162,7 +163,7 @@ const Settings = () => {
     reader.onload = (event) => {
       const img = new Image();
       img.onload = async () => {
-        const MAX_SIZE = 800; // stricter bounding box
+        const MAX_SIZE = 400; // shown at card/avatar size; this string is copied into every read of the profile + leaderboard docs
         let width = img.width;
         let height = img.height;
 
@@ -182,16 +183,16 @@ const Settings = () => {
         const ctx = canvas.getContext('2d');
         ctx.drawImage(img, 0, 0, width, height);
         
-        let quality = 0.8;
+        let quality = 0.7;
         let compressedDataUrl = canvas.toDataURL('image/jpeg', quality);
         
-        // Iteratively compress until under ~800KB (base64 length < 1.1 million chars)
-        while (compressedDataUrl.length > 1100000 && quality > 0.1) {
+        // Iteratively compress until under ~45KB (it is stored inline in users/{uid} and leaderboard/{uid})
+        while (compressedDataUrl.length > MAX_DREAM_CHARS && quality > 0.1) {
            quality -= 0.1;
            compressedDataUrl = canvas.toDataURL('image/jpeg', quality);
         }
 
-        if (compressedDataUrl.length > 1100000) {
+        if (compressedDataUrl.length > MAX_DREAM_CHARS) {
           showToast("Image is too large. Please try a smaller photo.", 'warning');
           setUploading(false);
           return;
