@@ -7387,15 +7387,34 @@
           "id": "jCcLLG95XjfarL72lz07",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Rationalize $\\frac{\\sqrt{2}}{\\sqrt{6} + 2}$.",
+          "stem": "Rationalise \\(\\frac{\\sqrt{2}}{\\sqrt{6} + 2}\\).",
           "options": [
-            "$\\frac{2\\sqrt{3} - 2\\sqrt{2}}{2}$",
-            "$\\frac{\\sqrt{12} + 2\\sqrt{2}}{2}$",
-            "$\\frac{\\sqrt{3} - \\sqrt{2}}{1}$",
-            "$\\sqrt{3} - \\sqrt{2}$"
+            "\\(\\sqrt{3} - \\sqrt{2}\\)",
+            "\\(\\sqrt{3} + \\sqrt{2}\\)",
+            "\\(\\frac{\\sqrt{3} - \\sqrt{2}}{2}\\)",
+            "\\(2\\sqrt{3} - 2\\sqrt{2}\\)"
           ],
-          "answer": null,
-          "solution": "$\\frac{\\sqrt{12}-2\\sqrt{2}}{6-4} = \\frac{2\\sqrt{3}-2\\sqrt{2}}{2} = \\sqrt{3}-\\sqrt{2}$",
+          "answer": 0,
+          "hint": "Multiply the numerator and denominator by the conjugate of the denominator, \\(\\sqrt{6} - 2\\).",
+          "solution": "Multiply numerator and denominator by the conjugate \\(\\sqrt{6} - 2\\):\n\\[\\frac{\\sqrt{2}(\\sqrt{6}-2)}{(\\sqrt{6}+2)(\\sqrt{6}-2)} = \\frac{\\sqrt{12}-2\\sqrt{2}}{6-4} = \\frac{2\\sqrt{3}-2\\sqrt{2}}{2} = \\sqrt{3}-\\sqrt{2}\\]",
+          "steps": [
+            {
+              "explain": "Multiply the numerator and denominator by the conjugate of the denominator, which is \\(\\sqrt{6} - 2\\).",
+              "work": "\\(\\frac{\\sqrt{2}}{\\sqrt{6} + 2} \\times \\frac{\\sqrt{6} - 2}{\\sqrt{6} - 2}\\)"
+            },
+            {
+              "explain": "Expand the denominator using the difference of two squares: \\((a+b)(a-b) = a^2 - b^2\\).",
+              "work": "\\((\\sqrt{6})^2 - 2^2 = 6 - 4 = 2\\)"
+            },
+            {
+              "explain": "Expand the numerator and simplify any surds.",
+              "work": "\\(\\sqrt{2}(\\sqrt{6}) - \\sqrt{2}(2) = \\sqrt{12} - 2\\sqrt{2} = 2\\sqrt{3} - 2\\sqrt{2}\\)"
+            },
+            {
+              "explain": "Divide each term in the numerator by the denominator to simplify fully.",
+              "work": "\\(\\frac{2\\sqrt{3} - 2\\sqrt{2}}{2} = \\sqrt{3} - \\sqrt{2}\\)"
+            }
+          ],
           "xp": 3
         },
         {
