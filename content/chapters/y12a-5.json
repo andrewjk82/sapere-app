@@ -10432,7 +10432,7 @@
           ],
           "answer": 2,
           "hint": "Notice that the exponent 2 - 4x becomes 0 when x = 0.5, and 4 when x = -0.5.",
-          "solution": "Find the antiderivative:\n\\( \\int e^{2-4x} \\, dx = -\\frac{1}{4}e^{2-4x} \\).\nEvaluate from -0.5 to 0.5:\n\\( \\left[ -\\frac{1}{4}e^{2-4x} \\right]_{-0.5}^{0.5} = -\\frac{1}{4}e^{2-4(0.5)} - \\left( -\\frac{1}{4}e^{2-4(-0.5)} \\right) \\)\n\\( = -\\frac{1}{4}e^0 + \\frac{1}{4}e^4 = \\frac{e^4 - 1}{4} \\). Wait! Let's check: at lower limit x = -0.5, 2 - 4(-0.5) = 2 + 2 = 4, so e^4. At upper limit x = 0.5, 2 - 4(0.5) = 2 - 2 = 0, so e^0 = 1. So it evaluates to: \\( -\\frac{1}{4} + \\frac{1}{4}e^4 = \\frac{e^4 - 1}{4} \\). Let's write the answerText as \\( \\frac{e^4 - 1}{4} \\).",
+          "solution": "Find the antiderivative:\n\\( \\int e^{2-4x} \\, dx = -\\frac{1}{4}e^{2-4x} \\).\nEvaluate from -0.5 to 0.5:\n\\( \\left[ -\\frac{1}{4}e^{2-4x} \\right]_{-0.5}^{0.5} = -\\frac{1}{4}e^{2-4(0.5)} - \\left( -\\frac{1}{4}e^{2-4(-0.5)} \\right) \\)\n\\( = -\\frac{1}{4}e^0 + \\frac{1}{4}e^4 = \\frac{e^4 - 1}{4} \\).",
           "steps": [
             {
               "explain": "Find the antiderivative. Work carefully with the exponential coefficients and simplify fully before moving on.",
@@ -10440,7 +10440,7 @@
             },
             {
               "explain": "Use the given solution pathway: rewrite if needed, integrate each exponential term, then simplify coefficients.",
-              "work": "\\( = -\\dfrac{1}{4}e^0 + \\dfrac{1}{4}e^4 = \\dfrac{e^4 - 1}{4} \\). Wait! Let's check: at lower limit x = -0.5, 2 - 4(-0.5) = 2 + 2 = 4, so e^4. At upper limit x = 0.5, 2 - 4(0.5) = 2 - 2 = 0, so e^0 = 1. So it evaluates to: \\( -\\dfrac{1}{4} + \\dfrac{1}{4}e^4 = \\dfrac{e^4 - 1}{4} \\). Let's write the answerText as \\( \\dfrac{e^4 - 1}{4} \\)."
+              "work": "\\( = -\\dfrac{1}{4}e^0 + \\dfrac{1}{4}e^4 = \\dfrac{e^4 - 1}{4} \\)."
             },
             {
               "explain": "Evaluate at the upper limit x = 0.5. Work carefully with the exponential coefficients and simplify fully before moving on.",
@@ -12415,7 +12415,7 @@
           ],
           "answer": 1,
           "hint": "Notice that 2/e is a constant. Its integral is (2/e)*x.",
-          "solution": "Integrate the derivative:\n\\( f(x) = \\int \\left(e^x + 2e^{-1}\\right) \\, dx = e^x + 2e^{-1}x + C \\).\nUse the boundary condition \\( f(-1) = -1 \\):\n\\( -1 = e^{-1} + 2e^{-1}(-1) + C \\implies -1 = e^{-1} - 2e^{-1} + C \\implies -1 = -e^{-1} + C \\implies C = e^{-1} - 1 \\).\nSo, \\( f(x) = e^x + 2e^{-1}x + e^{-1} - 1 \\).\nNow evaluate at \\( x = 0 \\):\n\\( f(0) = e^0 + 2e^{-1}(0) + e^{-1} - 1 = 1 + 0 + e^{-1} - 1 = e^{-1} \\). Wait! Let's check: the boundary condition is: \\( C = e^{-1} - 1 \\). Then \\( f(0) = e^0 + C = 1 + (e^{-1} - 1) = e^{-1} \\). Let's write the answerText as \\( e^{-1} \\).",
+          "solution": "Integrate the derivative:\n\\( f(x) = \\int \\left(e^x + 2e^{-1}\\right) \\, dx = e^x + 2e^{-1}x + C \\).\nUse the boundary condition \\( f(-1) = -1 \\):\n\\( -1 = e^{-1} + 2e^{-1}(-1) + C \\implies -1 = e^{-1} - 2e^{-1} + C \\implies -1 = -e^{-1} + C \\implies C = e^{-1} - 1 \\).\nSo, \\( f(x) = e^x + 2e^{-1}x + e^{-1} - 1 \\).\nNow evaluate at \\( x = 0 \\):\n\\( f(0) = e^0 + 2e^{-1}(0) + e^{-1} - 1 = 1 + 0 + e^{-1} - 1 = e^{-1} \\).",
           "steps": [
             {
               "explain": "Integrate f'(x). Work carefully with the exponential coefficients and simplify fully before moving on.",
@@ -12423,7 +12423,7 @@
             },
             {
               "explain": "Use the given solution pathway: rewrite if needed, integrate each exponential term, then simplify coefficients.",
-              "work": "\\( f(0) = e^0 + 2e^{-1}(0) + e^{-1} - 1 = 1 + 0 + e^{-1} - 1 = e^{-1} \\). Wait! Let's check: the boundary condition is: \\( C = e^{-1} - 1 \\). Then \\( f(0) = e^0 + C = 1 + (e^{-1} - 1) = e^{-1} \\). Let's write the answerText as \\( e^{-1} \\)."
+              "work": "\\( f(0) = e^0 + 2e^{-1}(0) + e^{-1} - 1 = 1 + 0 + e^{-1} - 1 = e^{-1} \\)."
             },
             {
               "explain": "Substitute x = -1 to find C. Work carefully with the exponential coefficients and simplify fully before moving on.",
@@ -13290,7 +13290,7 @@
           ],
           "answer": 0,
           "hint": "Notice that since d/dx(x*e^{-x} + e^{-x}) = -x*e^{-x}, the integral of x*e^{-x} is -(x*e^{-x} + e^{-x}).",
-          "solution": "From the derivative, we know that \\( \\int -x e^{-x} \\, dx = x e^{-x} + e^{-x} \\), so:\n\\( \\int x e^{-x} \\, dx = -x e^{-x} - e^{-x} \\).\nEvaluate from -1 to 0:\n\\( \\left[ -x e^{-x} - e^{-x} \\right]_{-1}^{0} = (0 - e^0) - (-(-1)e^{-(-1)} - e^{-(-1)}) = -1 - (e - e) \\) Wait! Let's check: at upper limit x=0, \\( -0 \\cdot e^0 - e^0 = -1 \\). At lower limit x=-1, \\( -(-1)e^{-(-1)} - e^{-(-1)} = e^1 - e^1 = 0 \\). So \\( -1 - 0 = -1 \\). Let's write the answerText as -1. Wait, let's verify if \\( \\int_{-1}^0 x e^{-x} \\, dx = -1 \\). Since \\( y = -x e^{-x} - e^{-x} \\), at x = 0, y = -1. At x = -1, y = \\( -(-1)e^1 - e^1 = e - e = 0 \\). Yes, the evaluation is exactly -1. Let's write the answerText as -1.",
+          "solution": "From the derivative, we know that \\( \\int -x e^{-x} \\, dx = x e^{-x} + e^{-x} \\), so:\n\\( \\int x e^{-x} \\, dx = -x e^{-x} - e^{-x} \\).\nEvaluate from -1 to 0:\n\\( \\left[ -x e^{-x} - e^{-x} \\right]_{-1}^{0} = (0 - e^0) - (-(-1)e^{-(-1)} - e^{-(-1)}) = -1 - (e - e) \\)",
           "steps": [
             {
               "explain": "Find the antiderivative of the term. Work carefully with the exponential coefficients and simplify fully before moving on.",

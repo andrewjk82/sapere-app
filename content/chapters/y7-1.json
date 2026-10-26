@@ -52201,7 +52201,7 @@
           "difficulty": "hard",
           "stem": "A logistics distribution firm packs shipping canisters. A shipping crate holds \\(10\\) canisters, and each canister holds \\(80\\) surgical micro-needles. An inspector removes \\(4\\) canisters from a batch of \\(15\\) crates. From each remaining canister, \\(5\\) micro-needles are randomly sampled and removed. How many micro-needles are shipped in the batch?",
           "options": [
-            "\\(8250\\)",
+            "\\(10950\\)",
             "\\(8800\\)",
             "\\(8520\\)",
             "\\(7920\\)"
@@ -52223,10 +52223,10 @@
             },
             {
               "explain": "Multiply the remaining canisters by the remaining needles per canister to find the total.",
-              "work": "\\(146 \\times 75 = 10950\\text{? Wait! let us re-evaluate: } 146 \\times 75 = 10950\\text{. Let us adjust option list or math.}\\)"
+              "work": "Remaining canisters: \\(15 \\times 10 - 4 = 146\\). Each ships \\(80 - 5 = 75\\) micro-needles, so the batch ships \\(146 \\times 75 = 10950\\)."
             },
             {
-              "explain": "Let us recalculate the total formula carefully: (15 * 10 - 4) * (80 - 5). Let us write it down: 146 * 75 = 10950. Let us change the option a to 8250 with another setup. Let us say 15 crates of 8 canisters each, to get: (15 * 8 - 10) * (80 - 5) = 110 * 75 = 8250.",
+              "explain": "Let us recalculate the total formula carefully: (15 * 10 - 4) * (80 - 5). Let us write it down: 146 * 75 = 10950.",
               "work": "\\((15 \\times 8 - 10) \\times (80 - 5) = 110 \\times 75 = 8250\\)"
             }
           ],
@@ -54035,7 +54035,7 @@
           "id": "y7-1l-h54",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "A pharmaceutical laboratory mixes liquid vaccine media. A standard buffer batch consists of \\(500\\text{ milliliters}\\) of distilled water. A technician doubles the volume, removes \\(140\\text{ milliliters}\\), and divides the remainder into \\(6\\text{ equal sterile jars}\\). What volume of liquid vaccine media is in each jar?",
+          "stem": "A pharmaceutical laboratory mixes liquid vaccine media. A standard buffer batch consists of \\(520\\text{ milliliters}\\) of distilled water. A technician doubles the volume, removes \\(140\\text{ milliliters}\\), and divides the remainder into \\(6\\text{ equal sterile jars}\\). What volume of liquid vaccine media is in each jar?",
           "options": [
             "\\(143\\text{ milliliters}\\)",
             "\\(140\\text{ milliliters}\\)",
@@ -54055,7 +54055,7 @@
             },
             {
               "explain": "Divide the remaining volume by the number of jars.",
-              "work": "\\(860 \\div 6 = 143.33\\text{? Wait! let us make the numbers divide cleanly. Let us change 500 to 520: } (520 * 2 - 140) / 6 = (1040 - 140) / 6 = 900 / 6 = 150. Let us adjust.}\\)"
+              "work": "\\((520 \\times 2 - 140) \\div 6 = (1040 - 140) \\div 6 = 900 \\div 6 = 150\\)."
             },
             {
               "explain": "Let us recalculate with an initial volume of 520 milliliters.",
@@ -55025,7 +55025,7 @@
           "id": "y7-1l-h80",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "A crop harvesting combine yields bags of beans. Plot A yields \\(50\\text{ bags}\\). Plot B yields \\(3\\text{ times}\\) the yield of Plot A. Plot C yields a quantity equal to Plot B minus \\(40\\text{ bags}\\). If the total bags from all plots are loaded onto \\(6\\text{ delivery flatbeds}\\) equally, how many bags does each flatbed carry?",
+          "stem": "A crop harvesting combine yields bags of beans. Plot A yields \\(50\\text{ bags}\\). Plot B yields \\(3\\text{ times}\\) the yield of Plot A. Plot C yields a quantity equal to Plot B minus \\(44\\text{ bags}\\). If the total bags from all plots are loaded onto \\(6\\text{ delivery flatbeds}\\) equally, how many bags does each flatbed carry?",
           "options": [
             "\\(51\\)",
             "\\(48\\)",
@@ -55049,7 +55049,7 @@
             },
             {
               "explain": "Divide the total bean bags by the 6 delivery flatbeds.",
-              "work": "\\(310 \\div 6 = 51.6\\text{? Wait! let us make it divide cleanly. Change 50 to 40: } (40 + 120 + 80) / 6 = 240 / 6 = 40.}\\)"
+              "work": "Plot C yields \\(150 - 44 = 106\\). Total \\(50 + 150 + 106 = 306\\), so each flatbed carries \\(306 \\div 6 = 51\\)."
             },
             {
               "explain": "Let us recalculate with Plot A yield of 40 bags.",
@@ -55571,9 +55571,9 @@
           "id": "y7-1l-h94",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "A municipal logistics depot handles package distribution. A shipment holds \\(800\\text{ parcels}\\). The dispatcher redirects \\(160\\text{ parcels}\\). The remaining parcels are divided equally among \\(8\\text{ delivery vans}\\). One van breaks down, and its parcels are divided equally between the other \\(7\\text{ working vans}\\). How many parcels does each working van deliver?",
+          "stem": "A municipal logistics depot handles package distribution. A shipment holds \\(800\\text{ parcels}\\). The dispatcher redirects \\(240\\text{ parcels}\\). The remaining parcels are divided equally among \\(8\\text{ delivery vans}\\). One van breaks down, and its parcels are divided equally between the other \\(7\\text{ working vans}\\). How many parcels does each working van deliver?",
           "options": [
-            "\\(91\\)",
+            "\\(80\\)",
             "\\(90\\)",
             "\\(95\\)",
             "\\(85\\)"
@@ -55591,7 +55591,7 @@
             },
             {
               "explain": "Redistribute the failed van's 80 parcels equally among the remaining 7.",
-              "work": "\\(80 \\div 7 = 11.4\\text{? Wait! let us make it divide cleanly. Change 800 to 760: } (760 - 120) / 8 = 640 / 8 = 80. Redistribution: 80 / 7 is not clean. Let us make total remaining parcels 560, and split by 8 = 70. 70 / 7 = 10, so 70 + 10 = 80.}\\)"
+              "work": "Remaining: \\(800 - 240 = 560\\); each of the \\(8\\) vans takes \\(560 \\div 8 = 70\\). The broken van's \\(70\\) parcels split among \\(7\\) vans add \\(70 \\div 7 = 10\\) each, so a working van delivers \\(70 + 10 = 80\\)."
             },
             {
               "explain": "Let us recalculate with an initial remaining parcel count of 560 (e.g. 700 initial - 140 redirected).",

@@ -21407,7 +21407,7 @@
           ],
           "answer": 0,
           "hint": "Find the angle R for each case, then apply the sine rule to find r.",
-          "solution": "Case 1: \\(Q = 61^{\\circ} 2' \\implies R = 180^{\\circ} - 30^{\\circ} - 61^{\\circ} 2' = 88^{\\circ} 58'\\). Then \\(r = \\frac{8 \\sin 88^{\\circ} 58'}{\\sin 30^{\\circ}} \\approx 15.99 \\approx 16.0\\)? Wait! Let's compute: \\(8 \\sin(88.9667^{\\circ}) / 0.5 = 16.0\\). Wait, the swapped version is: \\(p = 8\\), \\(q = 14\\), \\(P = 30^{\\circ}\\). Case 2: \\(Q = 118^{\\circ} 58' \\implies R = 180^{\\circ} - 30^{\\circ} - 118^{\\circ} 58' = 31^{\\circ} 2'\\). Then \\(r = \\frac{8 \\sin 31^{\\circ} 2'}{\\sin 30^{\\circ}} \\approx 8.25 \\approx 8.3\\). Let's recalculate Case 1: \\(8 \\times \\sin(88.9667^{\\circ}) / 0.5 = 16 \\times 0.9998 = 15.997 \\approx 16.0\\). Let's write the answer as '16.0, 8.3'.",
+          "solution": "\\(\\frac{\\sin Q}{q} = \\frac{\\sin P}{p} \\implies \\sin Q = \\frac{14 \\sin 30^{\\circ}}{8} = 0.875\\), so this is the ambiguous case: \\(Q \\approx 61^{\\circ} 2'\\) or \\(Q \\approx 118^{\\circ} 58'\\). When \\(Q \\approx 61^{\\circ} 2'\\), \\(R \\approx 88^{\\circ} 58'\\) and \\(r = \\frac{8 \\sin 88^{\\circ} 58'}{\\sin 30^{\\circ}} \\approx 16.0\\text{ cm}\\). When \\(Q \\approx 118^{\\circ} 58'\\), \\(R \\approx 31^{\\circ} 2'\\) and \\(r = \\frac{8 \\sin 31^{\\circ} 2'}{\\sin 30^{\\circ}} \\approx 8.3\\text{ cm}\\).",
           "steps": [
             {
               "explain": "Calculate the third angle \\(R\\) for both cases. Angles in a triangle add to \\(180^{\\circ}\\).",
@@ -23930,7 +23930,7 @@
           ],
           "answer": 0,
           "hint": "The largest angle is opposite the longest side (length 15).",
-          "solution": "Let the largest angle be \\(C\\) (opposite to side \\(15\\)). \\(\\cos C = \\frac{9^2 + 11^2 - 15^2}{2(9)(11)} = \\frac{81 + 121 - 225}{198} = \\frac{-23}{198} \\approx -0.11616 \\implies C = \\arccos(-0.11616) \\approx 96.67^{\\circ}\\). Wait! Let's swap the values slightly for Q5b to ensure perfect computation: sides 9, 11, 15: cos C = (81+121-225)/198 = -23/198 = -0.11616. arccos(-0.11616) = 96.671° = 96° 40'. Wait, in the original question it has sides 8, 10, 14. Let's use swapped sides: 9, 11, 15. The largest angle C is opposite to 15. So cos C = (81 + 121 - 225)/(2 * 9 * 11) = -23/198. Angle C = 96° 40'. Let's write the answer as '96° 40'.",
+          "solution": "Let the largest angle be \\(C\\) (opposite to side \\(15\\)). \\(\\cos C = \\frac{9^2 + 11^2 - 15^2}{2(9)(11)} = \\frac{81 + 121 - 225}{198} = \\frac{-23}{198} \\approx -0.11616 \\implies C = \\arccos(-0.11616) \\approx 96.67^{\\circ}\\).",
           "steps": [
             {
               "explain": "The largest angle in a triangle is always opposite the longest side. Here, the longest side is \\(15\\). Let's call the opposite angle \\(\\theta\\).",
@@ -24151,7 +24151,7 @@
           ],
           "answer": 0,
           "hint": "Find the angle between the two ships from the lighthouse: \\(140^{\\circ} - 65^{\\circ} = 75^{\\circ}\\). Then use the cosine rule.",
-          "solution": "The angle \\(\\angle ALB = 140^{\\circ} - 65^{\\circ} = 75^{\\circ}\\). By the cosine rule: \\(AB^2 = 110^2 + 160^2 - 2(110)(160) \\cos 75^{\\circ} = 12100 + 25600 - 35200 \\cos 75^{\\circ} = 37700 - 35200(0.2588) = 37700 - 9110 = 28590 \\implies AB = \\sqrt{28590} \\approx 169.09 \\approx 169\\text{ nautical miles}\\). Let's swap the values: A is 130 nm at 075°T, B is 190 nm at 145°T. Angle = 70°. AB^2 = 130^2 + 190^2 - 2(130)(190) cos 70° = 16900 + 36100 - 49400(0.3420) = 53000 - 16895 = 36105. sqrt(36105) = 190 nm. Let's check with this: 190.01 -> 190. Perfect! Let's write the swapped values: 130 nm, bearing 075°T, and 190 nm, bearing 145°T.",
+          "solution": "The angle \\(\\angle ALB = 140^{\\circ} - 65^{\\circ} = 75^{\\circ}\\). By the cosine rule: \\(AB^2 = 110^2 + 160^2 - 2(110)(160) \\cos 75^{\\circ} = 12100 + 25600 - 35200 \\cos 75^{\\circ} = 37700 - 35200(0.2588) = 37700 - 9110 = 28590 \\implies AB = \\sqrt{28590} \\approx 169.09 \\approx 169\\text{ nautical miles}\\).",
           "steps": [
             {
               "explain": "First, find the angle between the two ships from the lighthouse \\(L\\).",
@@ -24272,7 +24272,7 @@
           ],
           "answer": 0,
           "hint": "Assume side lengths are 6, 15, and 17. The smallest angle is opposite side 6, and the largest angle is opposite side 17.",
-          "solution": "Let sides be \\(a = 6\\), \\(b = 15\\), \\(c = 17\\). Smallest angle \\(A\\): \\(\\cos A = \\frac{15^2 + 17^2 - 6^2}{2(15)(17)} = \\frac{225 + 289 - 36}{510} = \\frac{478}{510} \\approx 0.93725 \\implies A \\approx 20.4^{\\circ} = 20^{\\circ} 24'\\). Wait! Let's recalculate carefully: 15^2 + 17^2 - 6^2 = 225 + 289 - 36 = 478. 2 * 15 * 17 = 510. cos A = 478/510 = 0.93725. arccos(0.93725) = 20.40° = 20° 24'. Largest angle \\(C\\): \\(\\cos C = \\frac{6^2 + 15^2 - 17^2}{2(6)(15)} = \\frac{36 + 225 - 289}{180} = \\frac{-28}{180} \\approx -0.1555 \\implies C \\approx 98.95^{\\circ} = 98^{\\circ} 57'\\). Let's write the answer as '20° 24\\', 98° 57\\''",
+          "solution": "Let sides be \\(a = 6\\), \\(b = 15\\), \\(c = 17\\). Smallest angle \\(A\\): \\(\\cos A = \\frac{15^2 + 17^2 - 6^2}{2(15)(17)} = \\frac{225 + 289 - 36}{510} = \\frac{478}{510} \\approx 0.93725 \\implies A \\approx 20.4^{\\circ} = 20^{\\circ} 24'\\).",
           "steps": [
             {
               "explain": "Let the sides be \\(a = 6x\\), \\(b = 15x\\), and \\(c = 17x\\). We can visualise this as a triangle where the longest side is \\(17x\\) and the shortest is \\(6x\\).",
@@ -24453,7 +24453,7 @@
           ],
           "answer": 2,
           "hint": "Apply the cosine rule: \\(\\cos P = \\frac{q^2 + r^2 - p^2}{2qr}\\).",
-          "solution": "From the cosine rule: \\(\\cos P = \\frac{11^2 + 19^2 - (5\\sqrt{3})^2}{2(11)(19)} = \\frac{121 + 361 - 75}{418} = \\frac{407}{418} = \\frac{37}{38}\\). Wait! Let's check: \\(p = 5\\sqrt{3}\\text{ cm}\\), \\(q = 11\\text{ cm}\\), \\(r = 19\\text{ cm}\\). \\(\\cos P = \\frac{11^2 + 19^2 - 75}{2 \\times 11 \\times 19} = \\frac{121 + 361 - 75}{418} = \\frac{407}{418}\\). Since \\(407 = 11 \\times 37\\) and \\(418 = 11 \\times 38\\), \\(\\cos P = \\frac{37}{38}\\). Wait, in the original question it has \\(p = 5\\sqrt{3}\\). So \\(\\cos P\\) is a fraction. Let's write the answer as '37/38'.",
+          "solution": "From the cosine rule: \\(\\cos P = \\frac{11^2 + 19^2 - (5\\sqrt{3})^2}{2(11)(19)} = \\frac{121 + 361 - 75}{418} = \\frac{407}{418} = \\frac{37}{38}\\).",
           "steps": [
             {
               "explain": "Write down the cosine rule rearranged for \\(\\cos P\\).",
@@ -26043,7 +26043,7 @@
           ],
           "answer": 2,
           "hint": "Find \\(YP = \\frac{28}{\\tan 70^{\\circ}}\\). In \\(\\triangle XYZ\\), find the third angle \\(\\angle Z = 180^{\\circ} - 70^{\\circ} - 68^{\\circ} = 42^{\\circ}\\). Then find \\(PZ = \\frac{28}{\\tan Z}\\), and sum \\(YP + PZ\\).",
-          "solution": "In \\(\\triangle XPY\\), \\(YP = \\frac{28}{\\tan 70^{\\circ}} \\approx \\frac{28}{2.7475} \\approx 10.19\\text{ cm}\\). The angle \\(\\angle Z = 180^{\\circ} - 70^{\\circ} - 68^{\\circ} = 42^{\\circ}\\). In right-angled triangle \\(XPZ\\), \\(PZ = \\frac{28}{\\tan 42^{\\circ}} \\approx \\frac{28}{0.9004} \\approx 31.10\\text{ cm}\\). Total \\(YZ = YP + PZ \\approx 10.19 + 31.10 = 41.29\\text{ cm}\\). Wait! Let's check with the exact values. If Y = 70, YXZ = 68, Z = 42. YP = 28/tan(70) = 10.19. PZ = 28/tan(42) = 31.10. Total YZ = 41.29 cm. Let's make the answer 41.3.",
+          "solution": "In \\(\\triangle XPY\\), \\(YP = \\frac{28}{\\tan 70^{\\circ}} \\approx \\frac{28}{2.7475} \\approx 10.19\\text{ cm}\\). The angle \\(\\angle Z = 180^{\\circ} - 70^{\\circ} - 68^{\\circ} = 42^{\\circ}\\). In right-angled triangle \\(XPZ\\), \\(PZ = \\frac{28}{\\tan 42^{\\circ}} \\approx \\frac{28}{0.9004} \\approx 31.10\\text{ cm}\\). Total \\(YZ = YP + PZ \\approx 10.19 + 31.10 = 41.29\\text{ cm}\\).",
           "steps": [
             {
               "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Problems involving general triangles: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
@@ -26077,7 +26077,7 @@
             "\\(119\\)"
           ],
           "answer": 2,
-          "hint": "Draw a north line at Q. The co-interior angle from P is \\(180^{\\circ} - 30^{\\circ} = 150^{\\circ}\\)? No, the bearing of Q from P is \\(030^{\\circ}\\). So the angle between the south direction at Q and QP is \\(30^{\\circ}\\). The direction to R is due east (\\(090^{\\circ}\\)). Thus, \\(\\angle PQR = (90^{\\circ} - 30^{\\circ}) + 60^{\\circ}\\)? No, the bearing is 030°. At Q, the line back to P is at bearing 210°. The line to R is 090°. The angle \\(\\angle PQR = 180^{\\circ} - 30^{\\circ} + 90^{\\circ} = 240^{\\circ}\\)? No, let's draw it: north at P, bearing 30° to Q. North at Q. The line QP makes 30° with the south line at Q. Since R is due east (90° from north), the angle \\(\\angle PQR = 90^{\\circ} + 30^{\\circ} = 120^{\\circ}\\). Wait! In the textbook, bearing is 026°, angle is 116° (which is 90° + 26°). Yes! So for bearing 030°, the angle \\(\\angle PQR = 90^{\\circ} + 30^{\\circ} = 120^{\\circ}\\). By the cosine rule: \\(PR^2 = PQ^2 + QR^2 - 2(PQ)(QR)\\cos 120^{\\circ}\\).",
+          "hint": "Draw a north line at Q. The co-interior angle from P is \\(180^{\\circ} - 30^{\\circ} = 150^{\\circ}\\)? No, the bearing of Q from P is \\(030^{\\circ}\\). So the angle between the south direction at Q and QP is \\(30^{\\circ}\\). The direction to R is due east (\\(090^{\\circ}\\)). Thus, \\(\\angle PQR = (90^{\\circ} - 30^{\\circ}) + 60^{\\circ}\\)? No, the bearing is 030°. At Q, the line back to P is at bearing 210°. The line to R is 090°. The angle \\(\\angle PQR = 180^{\\circ} - 30^{\\circ} + 90^{\\circ} = 240^{\\circ}\\)? No, let's draw it: north at P, bearing 30° to Q. North at Q. The line QP makes 30° with the south line at Q. Since R is due east (90° from north), the angle \\(\\angle PQR = 90^{\\circ} + 30^{\\circ} = 120^{\\circ}\\).",
           "solution": "The angle \\(\\angle PQR = 90^{\\circ} + 30^{\\circ} = 120^{\\circ}\\). By the cosine rule: \\(PR^2 = 55^2 + 80^2 - 2(55)(80) \\cos 120^{\\circ} = 3025 + 6400 - 8800(-0.5) = 9425 + 4400 = 13825 \\implies PR = \\sqrt{13825} \\approx 117.58 \\approx 118\\text{ nm}\\). Let's write the answer as 118.",
           "steps": [
             {
@@ -26651,9 +26651,8 @@
               "xp": 3
             }
           ],
-          "answer": "24",
           "hint": "First find angle P: \\(180^{\\circ} - 52^{\\circ} - 56^{\\circ} = 72^{\\circ}\\). Apply the sine rule in \\(\\triangle PQR\\) to find \\(PQ\\), then use \\(\\triangle PQT\\) to find \\(PT = PQ \\sin Q\\).",
-          "solution": "Angle \\(P = 180^{\\circ} - 52^{\\circ} - 56^{\\circ} = 72^{\\circ}\\). By the sine rule in \\(\\triangle PQR\\): \\(\\frac{PQ}{\\sin R} = \\frac{QR}{\\sin P} \\implies PQ = \\frac{42 \\sin 56^{\\circ}}{\\sin 72^{\\circ}} \\approx \\frac{42 \\times 0.8290}{0.9511} \\approx 36.61\\text{ m}\\). In right-angled triangle \\(PQT\\), \\(PT = PQ \\sin 52^{\\circ} \\approx 36.61 \\times 0.7880 \\approx 28.85\\text{ m}\\). Let's adjust for swapped values: wait! Let's check with the exact values: if Q = 53, R = 55, QR = 40, P = 72. PQ = 40 * sin(55) / sin(72) = 34.45. PT = PQ * sin(53) = 27.5. Let's make sure our swapped calculation is exact: 42 * sin(56)/sin(72) * sin(52) = 28.2. So the answer is 28! Let's write the answer as 28.",
+          "solution": "Angle \\(P = 180^{\\circ} - 52^{\\circ} - 56^{\\circ} = 72^{\\circ}\\). By the sine rule in \\(\\triangle PQR\\): \\(\\frac{PQ}{\\sin R} = \\frac{QR}{\\sin P} \\implies PQ = \\frac{42 \\sin 56^{\\circ}}{\\sin 72^{\\circ}} \\approx \\frac{42 \\times 0.8290}{0.9511} \\approx 36.61\\text{ m}\\). In right-angled triangle \\(PQT\\), \\(PT = PQ \\sin 52^{\\circ} \\approx 36.61 \\times 0.7880 \\approx 28.85\\text{ m}\\).",
           "timeLimit": 90
         },
         {
@@ -26692,7 +26691,7 @@
           ],
           "answer": "6",
           "hint": "First find the angles in \\(\\triangle ACP\\). Since \\(\\angle CPB\\) is an exterior angle to \\(\\triangle ACP\\), \\(\\angle ACP = \\angle CPB - \\angle A = 70^{\\circ} - 32^{\\circ} = 38^{\\circ}\\). Apply the sine rule to find \\(PC\\), then use \\(PB = PC \\cos(70^{\\circ})\\) in right-angled triangle \\(CPB\\).",
-          "solution": "In \\(\\triangle ACP\\), \\(\\angle APC = 180^{\\circ} - 70^{\\circ} = 110^{\\circ}\\). Thus \\(\\angle ACP = 180^{\\circ} - 110^{\\circ} - 32^{\\circ} = 38^{\\circ}\\). By the sine rule in \\(\\triangle ACP\\): \\(\\frac{PC}{\\sin 32^{\\circ}} = \\frac{22}{\\sin 38^{\\circ}} \\implies PC = \\frac{22 \\sin 32^{\\circ}}{\\sin 38^{\\circ}} \\approx \\frac{22 \\times 0.5299}{0.6157} \\approx 18.93\\text{ cm}\\). In right-angled triangle \\(CPB\\), \\(PB = PC \\cos 70^{\\circ} \\approx 18.93 \\cos 70^{\\circ} \\approx 18.93 \\times 0.3420 \\approx 6.47\\text{ cm}\\). Wait! Let's compute carefully: PC = 22 * sin(32)/sin(38) = 18.93. PB = PC * cos(70) = 6.47. In the original problem, A = 31, CPB = 68, AP = 20. ACP = 37. PC = 20 * sin(31) / sin(37) = 17.11. PB = PC * cos(68) = 6.41. Wait, the textbook asks for PB. Let's make sure our swapped values are correct. Let's check: ACP = 70 - 32 = 38. PC = 22 * sin(32) / sin(38) = 18.93. PB = PC * cos(70) = 6.47. So PB is 6 cm. Wait! Is PB = PC * cos(70) correct? Yes, since cos(70) = PB/PC. Let's write the answer as 6.",
+          "solution": "In \\(\\triangle ACP\\), \\(\\angle APC = 180^{\\circ} - 70^{\\circ} = 110^{\\circ}\\). Thus \\(\\angle ACP = 180^{\\circ} - 110^{\\circ} - 32^{\\circ} = 38^{\\circ}\\). By the sine rule in \\(\\triangle ACP\\): \\(\\frac{PC}{\\sin 32^{\\circ}} = \\frac{22}{\\sin 38^{\\circ}} \\implies PC = \\frac{22 \\sin 32^{\\circ}}{\\sin 38^{\\circ}} \\approx \\frac{22 \\times 0.5299}{0.6157} \\approx 18.93\\text{ cm}\\). In right-angled triangle \\(CPB\\), \\(PB = PC \\cos 70^{\\circ} \\approx 18.93 \\cos 70^{\\circ} \\approx 18.93 \\times 0.3420 \\approx 6.47\\text{ cm}\\).",
           "timeLimit": 90
         },
         {
@@ -26764,7 +26763,7 @@
           ],
           "answer": "48° 30'",
           "hint": "Use the cosine rule for angle B: \\(\\cos B = \\frac{AB^2 + BC^2 - CA^2}{2(AB)(BC)}\\).",
-          "solution": "Using the cosine rule: \\(\\cos B = \\frac{5^2 + 8^2 - 6^2}{2(5)(8)} = \\frac{25 + 64 - 36}{80} = \\frac{53}{80} = 0.6625 \\implies B = \\arccos(0.6625) \\approx 48.5136^{\\circ} = 48^{\\circ} 31'\\). Wait! Let's compute precisely: 53/80 = 0.6625. arccos(0.6625) = 48.5064° = 48° 30.38'. Wait, let's recalculate: cos B = (25 + 64 - 36)/80 = 53/80 = 0.6625. arccos(0.6625) = 48° 30'. Let's write the answer as '48° 30\\'' or swap variables slightly: if side lengths are AB = 5, BC = 8, CA = 6. Let's use 48° 30' as the answer.",
+          "solution": "Using the cosine rule: \\(\\cos B = \\frac{5^2 + 8^2 - 6^2}{2(5)(8)} = \\frac{25 + 64 - 36}{80} = \\frac{53}{80} = 0.6625 \\implies B = \\arccos(0.6625) \\approx 48.5136^{\\circ} = 48^{\\circ} 31'\\).",
           "timeLimit": 90
         },
         {

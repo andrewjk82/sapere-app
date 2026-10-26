@@ -961,16 +961,16 @@
           "id": "y12a-1a-h27",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "The product of the first three terms of a geometric progression is \\(512\\). If \\(8\\) is added to the second term and \\(64\\) to the third term, the resulting terms form an arithmetic progression. Find the original common ratio (assume \\(r > 1\\)).",
+          "stem": "The product of the first three terms of a geometric progression is \\(512\\). If \\(4\\) is added to the second term and \\(4\\) to the third term, the resulting terms form an arithmetic progression. Find the original common ratio (assume \\(r > 1\\)).",
           "options": [
             "\\(3\\)",
             "2",
             "4",
             "5"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Let the terms of the GP be \\(\\frac{a}{r}\\), \\(a\\), and \\(ar\\).",
-          "solution": "\\(3\\)",
+          "solution": "\\(2\\)",
           "steps": [
             {
               "explain": "Solve for the middle term \\(a\\) using the product.",
@@ -978,19 +978,19 @@
             },
             {
               "explain": "Express the modified terms in terms of \\(r\\).",
-              "work": "The new terms are \\(\\frac{8}{r}\\), \\(8 + 8 = 16\\), and \\(8r + 64\\)."
+              "work": "The new terms are \\(\\frac{8}{r}\\), \\(8 + 4 = 12\\), and \\(8r + 4\\)."
             },
             {
               "explain": "Set up the AP condition.",
-              "work": "\\(2(16) = \\frac{8}{r} + (8r + 64) \\implies 32 = \\frac{8}{r} + 8r + 64\\)."
+              "work": "The AP condition gives \\(2(12) = \\frac{8}{r} + (8r + 4) \\implies 24 = \\frac{8}{r} + 8r + 4\\)."
             },
             {
               "explain": "Form a quadratic equation in terms of \\(r\\).",
-              "work": "If the problem is: 'If 4 is added to the second term and 4 to the third term...', then the new terms are \\(\\frac{8}{r}\\), \\(12\\), and \\(8r+4\\). AP condition: \\(24 = \\frac{8}{r} + 8r + 4 \\implies 20 = \\frac{8}{r} + 8r \\implies 5 = \\frac{2}{r} + 2r\\)."
+              "work": "\\(\\frac{8}{r} + 8r = 20 \\implies 8 + 8r^2 = 20r \\implies 2r^2 - 5r + 2 = 0\\)."
             },
             {
               "explain": "Solve the quadratic equation for \\(r\\).",
-              "work": "\\(2r^2 - 5r + 2 = 0 \\implies (2r-1)(r-2) = 0\\). Since \\(r > 1\\), \\(r = 2\\). (Let's modify answer/options to match r=2)"
+              "work": "\\((2r-1)(r-2) = 0 \\implies r = \\tfrac12\\) or \\(r = 2\\). Since \\(r > 1\\), the common ratio is \\(r = 2\\)."
             }
           ],
           "xp": 3
@@ -1137,16 +1137,16 @@
           "id": "y12a-1a-h32",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "If \\(a, b, c\\) are in arithmetic progression and \\(a, b, c+1\\) are in geometric progression, and if their sum is \\(18\\), find the product \\(abc\\).",
+          "stem": "If \\(a, b, c\\) are in arithmetic progression and \\(a, b, c+1\\) are in geometric progression, and if their sum is \\(18\\), and the common difference of the AP is positive, find the product \\(abc\\).",
           "options": [
-            "\\(120\\)",
+            "\\(192\\)",
             "162",
             "108",
             "80"
           ],
           "answer": 0,
           "hint": "Since \\(a, b, c\\) are in AP and their sum is 18, \\(b = 6\\).",
-          "solution": "\\(120\\)",
+          "solution": "\\(192\\)",
           "steps": [
             {
               "explain": "Find the middle term \\(b\\) using the sum.",
@@ -1166,7 +1166,7 @@
             },
             {
               "explain": "Find the numbers and calculate their product.",
-              "work": "If \\(d = 2\\), then \\(a = 4, b = 6, c = 8\\). Product \\(abc = 4 \\times 6 \\times 8 = 120\\). (Wait, let's check: 4 * 6 * 8 = 192. Let's change options to match 192, and make 192 the correct answer)"
+              "work": "With \\(d = 2\\): \\(a = 4\\), \\(b = 6\\), \\(c = 8\\), so \\(abc = 4 \\times 6 \\times 8 = 192\\). (The rejected root \\(d = -3\\) would give \\(9 \\times 6 \\times 3 = 162\\).)"
             }
           ],
           "xp": 3
@@ -1177,14 +1177,14 @@
           "difficulty": "hard",
           "stem": "A sequence of numbers \\(a_1, a_2, a_3, a_4\\) has the property that its first three terms form an AP and its last three terms form a GP. If \\(a_1 = 3\\) and \\(a_4 = 24\\), find the sum of all possible values of \\(a_2\\).",
           "options": [
-            "\\(21\\)",
+            "\\(9\\)",
             "15",
             "18",
             "24"
           ],
           "answer": 0,
           "hint": "Let the terms be \\(3\\), \\(3+d\\), \\(3+2d\\), and \\(24\\). Use the GP condition on the last three terms.",
-          "solution": "\\(21\\)",
+          "solution": "\\(9\\)",
           "steps": [
             {
               "explain": "Express the four terms using the common difference \\(d\\) of the first three terms.",
@@ -1200,11 +1200,11 @@
             },
             {
               "explain": "Solve the quadratic equation.",
-              "work": "\\((2d - 9)(2d + 7) = 0 \\implies d = 4.5\\) or \\(d = -3.5\\)."
+              "work": "The discriminant is \\(144 + 1008 = 1152 > 0\\), so both roots are real. Their sum is \\(d_1 + d_2 = \\frac{12}{4} = 3\\)."
             },
             {
               "explain": "Calculate the possible values of \\(a_2\\) and sum them.",
-              "work": "If \\(d = 4.5\\), \\(a_2 = 7.5\\). If \\(d = -3.5\\), \\(a_2 = -0.5\\). The sum is \\(7.5 + (-0.5) = 7\\). (Let's modify answer/options to match 7)"
+              "work": "\\(a_2 = 3 + d\\), so the two possible values add to \\((3 + d_1) + (3 + d_2) = 6 + 3 = 9\\)."
             }
           ],
           "xp": 3
@@ -1215,14 +1215,14 @@
           "difficulty": "hard",
           "stem": "The first term of an arithmetic progression is \\(2\\). If the first, third, and eleventh terms of this AP form consecutive terms of a GP, find the common difference of the AP (assume \\(d \\ne 0\\)).",
           "options": [
-            "\\(1\\)",
+            "\\(3\\)",
             "2",
             "1.5",
             "0.5"
           ],
           "answer": 0,
           "hint": "The terms of the AP are \\(T_1 = 2\\), \\(T_3 = 2+2d\\), and \\(T_{11} = 2+10d\\). Use the GP condition.",
-          "solution": "\\(1\\)",
+          "solution": "\\(3\\)",
           "steps": [
             {
               "explain": "Write expressions for the three terms.",
@@ -1242,7 +1242,7 @@
             },
             {
               "explain": "Find the non-zero common difference.",
-              "work": "Since \\(d \\ne 0\\), we have \\(d = 3\\). (Let's change answer/options to match 3)"
+              "work": "Since \\(d \\ne 0\\), we have \\(d = 3\\)."
             }
           ],
           "xp": 3
@@ -1334,9 +1334,9 @@
             "642",
             "450"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Calculate the first 6 terms individually and add them.",
-          "solution": "\\(578\\)",
+          "solution": "\\(642\\)",
           "steps": [
             {
               "explain": "List out the first 6 terms of the series.",
@@ -1352,7 +1352,7 @@
             },
             {
               "explain": "Find the total sum.",
-              "work": "\\(34 + 608 = 642\\). (Let's modify answer/options to match 642)"
+              "work": "\\(34 + 608 = 642\\)."
             }
           ],
           "xp": 3
@@ -2154,7 +2154,7 @@
           ],
           "answer": 2,
           "hint": "Calculate the first 8 terms to find the repeating period of the sequence.",
-          "solution": "\\(-1\\)",
+          "solution": "\\(2\\)",
           "steps": [
             {
               "explain": "Calculate the first few terms.",
@@ -2170,7 +2170,7 @@
             },
             {
               "explain": "State the value of the term.",
-              "work": "\\(T_{50} = T_2 = 2\\). (Let's modify answer/options to match 2)"
+              "work": "\\(T_{50} = T_2 = 2\\)."
             }
           ],
           "xp": 3
@@ -2186,9 +2186,9 @@
             "18",
             "25"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Write the sum as a telescoping series to simplify it.",
-          "solution": "\\(19\\)",
+          "solution": "\\(20\\)",
           "steps": [
             {
               "explain": "Simplify the general term.",
@@ -2208,7 +2208,7 @@
             },
             {
               "explain": "State the smallest integer \\(n\\).",
-              "work": "The smallest integer strictly greater than 19 is \\(20\\). (Let's change answer/options to match 20)"
+              "work": "The smallest integer strictly greater than \\(19\\) is \\(20\\)."
             }
           ],
           "xp": 3
@@ -2363,14 +2363,14 @@
           "difficulty": "hard",
           "stem": "Find the sum of all natural numbers between \\(100\\) and \\(500\\) that are divisible by \\(13\\).",
           "options": [
-            "\\(9282\\)",
+            "\\(9269\\)",
             "9100",
             "9412",
             "8950"
           ],
           "answer": 0,
           "hint": "The terms form an AP starting from 104 and ending at 494.",
-          "solution": "\\(9282\\)",
+          "solution": "\\(9269\\)",
           "steps": [
             {
               "explain": "Identify the first and last terms in the range.",
@@ -2386,7 +2386,7 @@
             },
             {
               "explain": "Calculate the final sum.",
-              "work": "\\(S_{31} = 31 \\times 299 = 9269\\). (Let's modify answer/options to match 9269)"
+              "work": "\\(S_{31} = 31 \\times 299 = 9269\\)."
             }
           ],
           "xp": 3
@@ -3161,14 +3161,14 @@
           "difficulty": "hard",
           "stem": "A sequence satisfies \\(T_1 = 2\\), \\(T_2 = 5\\), and \\(T_n = 5T_{n-1} - 6T_{n-2}\\) for \\(n \\ge 3\\). Find the general expression for \\(T_n\\).",
           "options": [
-            "\\(T_n = 3^n - 2^{n-1}\\)",
+            "\\(T_n = 2^{n-1} + 3^{n-1}\\)",
             "\\(T_n = 3^n - 2^n\\)",
             "\\(T_n = 2^n + 3^n\\)",
             "\\(T_n = 3^n - 2^{n+1}\\)"
           ],
           "answer": 0,
           "hint": "Solve the characteristic quadratic equation of the second-order recurrence.",
-          "solution": "\\(T_n = 3^n - 2^{n-1}\\)",
+          "solution": "\\(T_n = 2^{n-1} + 3^{n-1}\\)",
           "steps": [
             {
               "explain": "Form the characteristic quadratic equation.",
@@ -3180,7 +3180,7 @@
             },
             {
               "explain": "Write the general form of the solution.",
-              "work": "\\(T_n = A 2^{n-1} + B 3^{n-1}\\) (or \\(T_n = C 2^n + D 3^n\\)). Let's use \\(T_n = A 2^{n-1} + B 3^{n-1}\\)."
+              "work": "Write the general solution as \\(T_n = A \\cdot 2^{n-1} + B \\cdot 3^{n-1}\\)."
             },
             {
               "explain": "Apply the initial values to find constants \\(A\\) and \\(B\\).",
@@ -3188,7 +3188,7 @@
             },
             {
               "explain": "Solve the linear system and write the final formula.",
-              "work": "Multiply first by 2: \\(2A + 2B = 4\\). Subtract: \\(B = 1 \\implies A = 1\\). (Wait! If A=1, B=1, then T_n = 2^{n-1} + 3^{n-1}. Let's check T_1 = 2, T_2 = 2^1 + 3^1 = 5. T_3 = 2^2 + 3^2 = 13. By recurrence: T_3 = 5(5) - 6(2) = 13. Perfect! Let's modify the answer/options to match this: \\(T_n = 2^{n-1} + 3^{n-1}\\))."
+              "work": "Subtracting \\(2A + 2B = 4\\) from \\(2A + 3B = 5\\) gives \\(B = 1\\), hence \\(A = 1\\) and \\(T_n = 2^{n-1} + 3^{n-1}\\). Check: \\(T_1 = 1 + 1 = 2\\), \\(T_2 = 2 + 3 = 5\\)."
             }
           ],
           "xp": 3
@@ -9983,16 +9983,16 @@
           "id": "y12a-1b-h27",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "The product of the first three terms of a geometric progression is \\(512\\). If \\(8\\) is added to the second term and \\(64\\) to the third term, the resulting terms form an arithmetic progression. Find the original common ratio (assume \\(r > 1\\)).",
+          "stem": "The product of the first three terms of a geometric progression is \\(512\\). If \\(4\\) is added to the second term and \\(4\\) to the third term, the resulting terms form an arithmetic progression. Find the original common ratio (assume \\(r > 1\\)).",
           "options": [
             "\\(3\\)",
             "2",
             "4",
             "5"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Let the terms of the GP be \\(\\dfrac{a}{r}\\), \\(a\\), and \\(ar\\).",
-          "solution": "\\(3\\)",
+          "solution": "\\(2\\)",
           "steps": [
             {
               "explain": "Solve for the middle term \\(a\\) using the product.",
@@ -10000,19 +10000,19 @@
             },
             {
               "explain": "Express the modified terms in terms of \\(r\\).",
-              "work": "The new terms are \\(\\dfrac{8}{r}\\), \\(8 + 8 = 16\\), and \\(8r + 64\\)."
+              "work": "The new terms are \\(\\frac{8}{r}\\), \\(8 + 4 = 12\\), and \\(8r + 4\\)."
             },
             {
               "explain": "Set up the AP condition.",
-              "work": "\\[2(16) = \\dfrac{8}{r} + (8r + 64) \\implies 32 = \\dfrac{8}{r} + 8r + 64\\]."
+              "work": "The AP condition gives \\(2(12) = \\frac{8}{r} + (8r + 4) \\implies 24 = \\frac{8}{r} + 8r + 4\\)."
             },
             {
               "explain": "Form a quadratic equation in terms of \\(r\\).",
-              "work": "If the problem is: 'If 4 is added to the second term and 4 to the third term...', then the new terms are \\(\\dfrac{8}{r}\\), \\(12\\), and \\(8r+4\\). AP condition: \\[24 = \\dfrac{8}{r} + 8r + 4 \\implies 20 = \\dfrac{8}{r} + 8r \\implies 5 = \\dfrac{2}{r} + 2r\\]."
+              "work": "\\(\\frac{8}{r} + 8r = 20 \\implies 8 + 8r^2 = 20r \\implies 2r^2 - 5r + 2 = 0\\)."
             },
             {
               "explain": "Solve the quadratic equation for \\(r\\).",
-              "work": "\\[2r^2 - 5r + 2 = 0 \\implies (2r-1)(r-2) = 0\\]. Since \\(r > 1\\), \\(r = 2\\). (Let's modify answer/options to match r=2)"
+              "work": "\\((2r-1)(r-2) = 0 \\implies r = \\tfrac12\\) or \\(r = 2\\). Since \\(r > 1\\), the common ratio is \\(r = 2\\)."
             }
           ],
           "xp": 3
@@ -10126,16 +10126,16 @@
           "id": "y12a-1b-h32",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "If \\(a, b, c\\) are in arithmetic progression and \\(a, b, c+1\\) are in geometric progression, and if their sum is \\(18\\), find the product \\(abc\\).",
+          "stem": "If \\(a, b, c\\) are in arithmetic progression and \\(a, b, c+1\\) are in geometric progression, and if their sum is \\(18\\), and the common difference of the AP is positive, find the product \\(abc\\).",
           "options": [
-            "\\(120\\)",
+            "\\(192\\)",
             "162",
             "108",
             "80"
           ],
           "answer": 0,
           "hint": "Since \\(a, b, c\\) are in AP and their sum is 18, \\(b = 6\\).",
-          "solution": "\\(120\\)",
+          "solution": "\\(192\\)",
           "steps": [
             {
               "explain": "Find the middle term \\(b\\) using the sum.",
@@ -10155,7 +10155,7 @@
             },
             {
               "explain": "Find the numbers and calculate their product.",
-              "work": "If \\(d = 2\\), then \\(a = 4, b = 6, c = 8\\). Product \\[abc = 4 \\times 6 \\times 8 = 120\\]. (Wait, let's check: 4 * 6 * 8 = 192. Let's change options to match 192, and make 192 the correct answer)"
+              "work": "With \\(d = 2\\): \\(a = 4\\), \\(b = 6\\), \\(c = 8\\), so \\(abc = 4 \\times 6 \\times 8 = 192\\). (The rejected root \\(d = -3\\) would give \\(9 \\times 6 \\times 3 = 162\\).)"
             }
           ],
           "xp": 3
@@ -10166,14 +10166,14 @@
           "difficulty": "hard",
           "stem": "A sequence of numbers \\(a_1, a_2, a_3, a_4\\) has the property that its first three terms form an AP and its last three terms form a GP. If \\(a_1 = 3\\) and \\(a_4 = 24\\), find the sum of all possible values of \\(a_2\\).",
           "options": [
-            "\\(21\\)",
+            "\\(9\\)",
             "15",
             "18",
             "24"
           ],
           "answer": 0,
           "hint": "Let the terms be \\(3\\), \\(3+d\\), \\(3+2d\\), and \\(24\\). Use the GP condition on the last three terms.",
-          "solution": "\\(21\\)",
+          "solution": "\\(9\\)",
           "steps": [
             {
               "explain": "Express the four terms using the common difference \\(d\\) of the first three terms.",
@@ -10189,11 +10189,11 @@
             },
             {
               "explain": "Solve the quadratic equation.",
-              "work": "\\[(2d - 9)(2d + 7) = 0 \\implies d = 4.5\\] or \\(d = -3.5\\)."
+              "work": "The discriminant is \\(144 + 1008 = 1152 > 0\\), so both roots are real. Their sum is \\(d_1 + d_2 = \\frac{12}{4} = 3\\)."
             },
             {
               "explain": "Calculate the possible values of \\(a_2\\) and sum them.",
-              "work": "If \\(d = 4.5\\), \\(a_2 = 7.5\\). If \\(d = -3.5\\), \\(a_2 = -0.5\\). The sum is \\(7.5 + (-0.5) = 7\\). (Let's modify answer/options to match 7)"
+              "work": "\\(a_2 = 3 + d\\), so the two possible values add to \\((3 + d_1) + (3 + d_2) = 6 + 3 = 9\\)."
             }
           ],
           "xp": 3
@@ -10204,14 +10204,14 @@
           "difficulty": "hard",
           "stem": "The first term of an arithmetic progression is \\(2\\). If the first, third, and eleventh terms of this AP form consecutive terms of a GP, find the common difference of the AP (assume \\(d \\ne 0\\)).",
           "options": [
-            "\\(1\\)",
+            "\\(3\\)",
             "2",
             "1.5",
             "0.5"
           ],
           "answer": 0,
           "hint": "The terms of the AP are \\(T_1 = 2\\), \\(T_3 = 2+2d\\), and \\(T_{11} = 2+10d\\). Use the GP condition.",
-          "solution": "\\(1\\)",
+          "solution": "\\(3\\)",
           "steps": [
             {
               "explain": "Write expressions for the three terms.",
@@ -10231,7 +10231,7 @@
             },
             {
               "explain": "Find the non-zero common difference.",
-              "work": "Since \\(d \\ne 0\\), we have \\(d = 3\\). (Let's change answer/options to match 3)"
+              "work": "Since \\(d \\ne 0\\), we have \\(d = 3\\)."
             }
           ],
           "xp": 3
@@ -10323,9 +10323,9 @@
             "642",
             "450"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Calculate the first 6 terms individually and add them.",
-          "solution": "\\(578\\)",
+          "solution": "\\(642\\)",
           "steps": [
             {
               "explain": "List out the first 6 terms of the series.",
@@ -10341,7 +10341,7 @@
             },
             {
               "explain": "Find the total sum.",
-              "work": "\\(34 + 608 = 642\\). (Let's modify answer/options to match 642)"
+              "work": "\\(34 + 608 = 642\\)."
             }
           ],
           "xp": 3
@@ -11076,7 +11076,7 @@
           ],
           "answer": 2,
           "hint": "Calculate the first 8 terms to find the repeating period of the sequence.",
-          "solution": "\\(-1\\)",
+          "solution": "\\(2\\)",
           "steps": [
             {
               "explain": "Calculate the first few terms.",
@@ -11092,7 +11092,7 @@
             },
             {
               "explain": "State the value of the term.",
-              "work": "\\(T_{50} = T_2 = 2\\). (Let's modify answer/options to match 2)"
+              "work": "\\(T_{50} = T_2 = 2\\)."
             }
           ],
           "xp": 3
@@ -11108,9 +11108,9 @@
             "18",
             "25"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Write the sum as a telescoping series to simplify it.",
-          "solution": "\\(19\\)",
+          "solution": "\\(20\\)",
           "steps": [
             {
               "explain": "Simplify the general term.",
@@ -11130,7 +11130,7 @@
             },
             {
               "explain": "State the smallest integer \\(n\\).",
-              "work": "The smallest integer strictly greater than 19 is \\(20\\). (Let's change answer/options to match 20)"
+              "work": "The smallest integer strictly greater than \\(19\\) is \\(20\\)."
             }
           ],
           "xp": 3
@@ -11285,14 +11285,14 @@
           "difficulty": "hard",
           "stem": "Find the sum of all natural numbers between \\(100\\) and \\(500\\) that are divisible by \\(13\\).",
           "options": [
-            "\\(9282\\)",
+            "\\(9269\\)",
             "9100",
             "9412",
             "8950"
           ],
           "answer": 0,
           "hint": "The terms form an AP starting from 104 and ending at 494.",
-          "solution": "\\(9282\\)",
+          "solution": "\\(9269\\)",
           "steps": [
             {
               "explain": "Identify the first and last terms in the range.",
@@ -11308,7 +11308,7 @@
             },
             {
               "explain": "Calculate the final sum.",
-              "work": "\\[S_{31} = 31 \\times 299 = 9269\\]. (Let's modify answer/options to match 9269)"
+              "work": "\\(S_{31} = 31 \\times 299 = 9269\\)."
             }
           ],
           "xp": 3
@@ -12049,14 +12049,14 @@
           "difficulty": "hard",
           "stem": "A sequence satisfies \\(T_1 = 2\\), \\(T_2 = 5\\), and \\(T_n = 5T_{n-1} - 6T_{n-2}\\) for \\(n \\ge 3\\). Find the general expression for \\(T_n\\).",
           "options": [
-            "\\(T_n = 3^n - 2^{n-1}\\)",
+            "\\(T_n = 2^{n-1} + 3^{n-1}\\)",
             "\\(T_n = 3^n - 2^n\\)",
             "\\(T_n = 2^n + 3^n\\)",
             "\\(T_n = 3^n - 2^{n+1}\\)"
           ],
           "answer": 0,
           "hint": "Solve the characteristic quadratic equation of the second-order recurrence.",
-          "solution": "\\(T_n = 3^n - 2^{n-1}\\)",
+          "solution": "\\(T_n = 2^{n-1} + 3^{n-1}\\)",
           "steps": [
             {
               "explain": "Form the characteristic quadratic equation.",
@@ -12068,7 +12068,7 @@
             },
             {
               "explain": "Write the general form of the solution.",
-              "work": "\\[T_n = A 2^{n-1} + B 3^{n-1}\\] (or \\(T_n = C 2^n + D 3^n\\)). Let's use \\[T_n = A 2^{n-1} + B 3^{n-1}\\]."
+              "work": "Write the general solution as \\(T_n = A \\cdot 2^{n-1} + B \\cdot 3^{n-1}\\)."
             },
             {
               "explain": "Apply the initial values to find constants \\(A\\) and \\(B\\).",
@@ -12076,7 +12076,7 @@
             },
             {
               "explain": "Solve the linear system and write the final formula.",
-              "work": "Multiply first by 2: \\(2A + 2B = 4\\). Subtract: \\(B = 1 \\implies A = 1\\). (Wait! If A=1, B=1, then T_n = 2^{n-1} + 3^{n-1}. Let's check T_1 = 2, T_2 = 2^1 + 3^1 = 5. T_3 = 2^2 + 3^2 = 13. By recurrence: T_3 = 5(5) - 6(2) = 13. Perfect! Let's modify the answer/options to match this: \\(T_n = 2^{n-1} + 3^{n-1}\\))."
+              "work": "Subtracting \\(2A + 2B = 4\\) from \\(2A + 3B = 5\\) gives \\(B = 1\\), hence \\(A = 1\\) and \\(T_n = 2^{n-1} + 3^{n-1}\\). Check: \\(T_1 = 1 + 1 = 2\\), \\(T_2 = 2 + 3 = 5\\)."
             }
           ],
           "xp": 3

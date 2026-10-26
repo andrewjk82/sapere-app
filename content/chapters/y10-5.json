@@ -2736,7 +2736,7 @@
           "id": "y10-5a-q7g",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Solve the quadratic equation by factorising: \\(60k^2 - 130k - 100 = 0\\).",
+          "stem": "Solve the quadratic equation by factorising: \\(60k^2 - 110k - 100 = 0\\).",
           "options": [
             "\\\\(k = \\dfrac{5}{2} \\text{ only}\\\\)",
             "\\\\(k = -\\dfrac{2}{3} \\text{ or } k = -\\dfrac{5}{2}\\\\)",
@@ -2751,7 +2751,7 @@
               "work": "\\\\(6k^2 - 13k - 10 = 0\\\\)"
             },
             {
-              "explain": "Find factors of a*c = -60 that sum to b = -13. The integers are -15 and 4? No, wait! -15 * 4 = -60, and -15 + 4 = -11. Let's re-verify: 6k^2 - 11k - 10 = 0 is correct! The question text is 60k^2 - 130k - 100 = 0 which is 10(6k^2 - 13k - 10) = 0. Wait, if it is 6k^2 - 13k - 10 = 0, let's check factors of -60 that sum to -13. There are no rational factors. Let's assume the question was a typo in the original textbook and solve 6k^2 - 11k - 10 = 0 which yields (3k + 2)(2k - 5) = 0.",
+              "explain": "Take out the common factor 10 to get \\(6k^2 - 11k - 10 = 0\\), then split the middle term using factors of \\(6 \\times (-10) = -60\\) that sum to \\(-11\\): these are \\(-15\\) and \\(4\\).",
               "work": "\\\\(6k^2 - 11k - 10 = 0\\\\)"
             },
             {
@@ -2852,7 +2852,7 @@
           "id": "y10-5a-q7j",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Solve the quadratic equation by factorising: \\(15m^2 - 54m + 24 = 0\\).",
+          "stem": "Solve the quadratic equation by factorising: \\(15m^2 - 66m + 24 = 0\\).",
           "options": [
             "\\\\(m = 4 \\text{ or } m = \\dfrac{2}{5}\\\\)",
             "\\\\(m = 4 \\text{ or } m = -\\dfrac{2}{5}\\\\)",
@@ -2867,7 +2867,7 @@
               "work": "\\\\(5m^2 - 18m + 8 = 0\\\\)"
             },
             {
-              "explain": "Wait! Let's check 15m^2 - 54m + 24 = 0. Let's see: 3(5m^2 - 18m + 8) = 0. Is there a typo? What if it is 5m^2 - 22m + 8 = 0 which factorises as (5m - 2)(m - 4) = 0? Yes! (5m - 2)(m - 4) = 5m^2 - 22m + 8 = 0. Let's assume the question was 15m^2 - 66m + 24 = 0 which simplifies to 5m^2 - 22m + 8 = 0.",
+              "explain": "Take out the common factor 3 to get \\(5m^2 - 22m + 8 = 0\\), then split the middle term using factors of \\(5 \\times 8 = 40\\) that sum to \\(-22\\): these are \\(-20\\) and \\(-2\\).",
               "work": "\\\\(5m^2 - 22m + 8 = 0\\\\)"
             },
             {
