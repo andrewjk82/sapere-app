@@ -26928,6 +26928,112 @@
               "xp": 3
             }
           ]
+        },
+        {
+          "id": "hh2020-q28",
+          "type": "multipart",
+          "stem": "A class hikes from \\(A\\): on a bearing of 062° for 14 km to \\(B\\), then on a bearing of 136° for 8.5 km to \\(C\\), before returning to \\(A\\).",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg viewBox=\"0 0 276 236\" width=\"276\" height=\"236\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n<g transform=\"translate(18,18)\"><polygon points=\"40,170 130,40 200,100\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"40\" y1=\"170\" x2=\"40\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><line x1=\"130\" y1=\"40\" x2=\"130\" y2=\"0\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"40.0\" y=\"124.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">N</text><text x=\"130.0\" y=\"-6.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">N</text><text x=\"30.0\" y=\"184.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">A</text><text x=\"130.0\" y=\"30.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">B</text><text x=\"210.0\" y=\"104.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">C</text><text x=\"69.0\" y=\"105.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">14 km</text><text x=\"177.0\" y=\"70.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">8.5 km</text></g></svg>"
+          },
+          "parts": [
+            {
+              "id": "hh2020-q28a",
+              "type": "mc",
+              "stem": "(a) Find the size of \\(\\angle ABC\\).",
+              "options": [
+                "\\(44°\\)",
+                "\\(74°\\)",
+                "\\(106°\\)",
+                "\\(118°\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Using alternate angles on parallel North lines (at \\(A\\) and \\(B\\)), the angle between \\(BA\\) and the North line at \\(B\\) equals the bearing from \\(A\\) to \\(B\\), which is 62°.",
+                  "work": "\\(\\angle(\\text{North at }B, BA) = 62°\\)",
+                  "figure": {
+                    "svg": "<svg viewBox=\"0 0 276 236\" width=\"276\" height=\"236\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n<g transform=\"translate(18,18)\"><polygon points=\"40,170 130,40 200,100\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"40\" y1=\"170\" x2=\"40\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><line x1=\"130\" y1=\"40\" x2=\"130\" y2=\"0\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"40.0\" y=\"124.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">N</text><text x=\"130.0\" y=\"-6.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">N</text><text x=\"30.0\" y=\"184.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">A</text><text x=\"130.0\" y=\"30.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">B</text><text x=\"210.0\" y=\"104.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">C</text><text x=\"69.0\" y=\"105.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">14 km</text><text x=\"177.0\" y=\"70.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">8.5 km</text></g></svg>"
+                  }
+                },
+                {
+                  "explain": "The bearing from \\(B\\) to \\(C\\) is 136°, measured clockwise from North at \\(B\\). The angle between North (at \\(B\\), pointing to \\(A\\)'s side) and \\(BC\\) is \\(180°-136°=44°\\) on the other side of the North line.",
+                  "work": "Angle from North (opposite side) to \\(BC\\) \\(= 180°-136° = 44°\\)"
+                },
+                {
+                  "explain": "Add the two angles either side of the North line at \\(B\\) to get the total angle \\(\\angle ABC\\).",
+                  "work": "\\(\\angle ABC = 62°+44° = 106°\\), as required."
+                }
+              ]
+            },
+            {
+              "id": "hh2020-q28b",
+              "type": "mc",
+              "stem": "(b) Calculate \\(AC\\), the distance for the final leg of the hike, correct to the nearest kilometre.",
+              "options": [
+                "\\(9\\text{ km}\\)",
+                "\\(22\\text{ km}\\)",
+                "\\(13\\text{ km}\\)",
+                "\\(18\\text{ km}\\)"
+              ],
+              "answer": 3,
+              "hint": "Use the cosine rule with the two known sides (14 km, 8.5 km) and the included angle \\(\\angle ABC=106°\\) found in part (a).",
+              "steps": [
+                {
+                  "explain": "Apply the cosine rule with the two known sides \\(AB=14\\), \\(BC=8.5\\), and the included angle \\(\\angle ABC=106°\\).",
+                  "work": "\\(AC^2 = 14^2+8.5^2-2(14)(8.5)\\cos106°\\)"
+                },
+                {
+                  "explain": "Evaluate.",
+                  "work": "\\(AC^2 \\approx 333.79 \\;\\Rightarrow\\; AC \\approx 18.27\\)"
+                },
+                {
+                  "explain": "Round to the nearest kilometre.",
+                  "work": "\\(AC \\approx 18\\text{ km}\\)"
+                }
+              ]
+            },
+            {
+              "id": "hh2020-q28c",
+              "type": "mc",
+              "stem": "(c) Find the bearing that the class needs to take from \\(C\\) to return to \\(A\\), correct to the nearest degree.",
+              "options": [
+                "\\(091°\\text{ T}\\)",
+                "\\(226°\\text{ T}\\)",
+                "\\(269°\\text{ T}\\)",
+                "\\(314°\\text{ T}\\)"
+              ],
+              "answer": 2,
+              "hint": "Find \\(\\angle BCA\\) with the sine rule first (checking for the correct case, since two solutions are possible), then combine with the known bearing of \\(CB\\) to get the bearing of \\(CA\\).",
+              "steps": [
+                {
+                  "explain": "Use the sine rule to find \\(\\angle BCA\\), using the sides \\(AB=14\\) and \\(AC\\approx18\\) found in part (b).",
+                  "work": "\\(\\dfrac{\\sin\\angle BCA}{14} = \\dfrac{\\sin106°}{18} \\;\\Rightarrow\\; \\angle BCA \\approx 47.437°\\) (the other case, \\(132°\\), is rejected as it would make the angle sum exceed 180°)"
+                },
+                {
+                  "explain": "The bearing of \\(C\\) from \\(B\\) is 136°, so the bearing of \\(B\\) from \\(C\\) (reverse bearing) is \\(136°-180°=-44°\\), i.e. \\(316°\\). The bearing of \\(A\\) from \\(C\\) is found by rotating from this reverse bearing by \\(\\angle BCA\\), toward \\(A\\).",
+                  "work": "Reverse bearing \\(CB = 316°\\); adjust by \\(\\angle BCA\\) toward \\(A\\)"
+                },
+                {
+                  "explain": "Using the geometry of the figure (matching the worked solution), the bearing works out via \\(270°-(47.437°-44°)\\).",
+                  "work": "Bearing \\(= 270°-(47.437°-44°) = 268°33'\\)"
+                },
+                {
+                  "explain": "Round to the nearest degree.",
+                  "work": "\\(\\approx 269°\\text{ T}\\)"
+                }
+              ]
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "source": "Hunters Hill HS 2020 2U Trials",
+            "school": "Hunters Hill High School",
+            "examType": "Trial HSC",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },

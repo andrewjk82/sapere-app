@@ -5472,6 +5472,29 @@
             "school": "Abbotsleigh",
             "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
           }
+        },
+        {
+          "id": "ElaCsibpQQQJ5JoBJZUS",
+          "type": "mc",
+          "stem": "Solve and graph on a number line: $\\frac{-3x + 2}{6} \\le 1$",
+          "difficulty": "hard",
+          "options": [
+            "\\(x \\ge -\\frac{4}{3}\\)",
+            "\\(x \\le -\\frac{4}{3}\\)",
+            "\\(x \\ge -\\frac{3}{4}\\)",
+            "\\(x \\ge \\frac{3}{4}\\)"
+          ],
+          "answer": 0,
+          "solution": "$-3x + 2 \\le 6 \\Rightarrow -3x \\le 4 \\Rightarrow x \\ge -4/3$. Draw solid circle and arrow right.",
+          "steps": [
+            {
+              "explain": "$-3x + 2 \\le 6 \\Rightarrow -3x \\le 4 \\Rightarrow x \\ge -4/3$. Draw solid circle and arrow right."
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "origin": "teacher"
+          }
         }
       ]
     },

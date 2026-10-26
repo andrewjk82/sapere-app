@@ -803,6 +803,39 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "asc2020-q17a",
+          "type": "mc",
+          "stem": "The table below shows data for 10 countries: research spending (% of GDP) \\(x\\) and cases of Figtree Syndrome (1000s) \\(y\\).\n\n| \\(x\\) | 2.0 | 2.4 | 3.0 | 3.2 | 3.5 | 3.8 | 4.1 | 4.5 | 4.6 | 5.0 |\n|---|---|---|---|---|---|---|---|---|---|---|\n| \\(y\\) | 7.8 | 6.8 | 7.2 | 6.6 | 5.8 | 5.6 | 4.6 | 5.0 | 4.0 | 4.2 |\n\nDetermine Pearson's correlation coefficient for this data correct to 3 decimal places.",
+          "difficulty": "medium",
+          "options": [
+            "\\(r \\approx -0.949\\)",
+            "\\(r \\approx -0.980\\)",
+            "\\(r \\approx 0.949\\)",
+            "\\(r \\approx -0.890\\)"
+          ],
+          "answer": 0,
+          "hint": "Use a calculator with statistical functions. Enter the data as bivariate pairs and compute the correlation coefficient.",
+          "solution": "Using a calculator: \\(r \\approx -0.949\\). The strong negative correlation indicates that as research spending increases, cases of Figtree Syndrome decrease.",
+          "steps": [
+            {
+              "explain": "To find Pearson's correlation coefficient (\\(r\\)) using a Casio fx-82AU PLUS calculator, first set it to the correct statistical mode for bivariate (two-variable) data.\n\n1. Press **MODE**, then select **2 (STAT)**.\n2. Select **2 (A+BX)** for linear regression.",
+              "work": "\\(\\text{MODE} \\rightarrow 2: \\text{STAT} \\rightarrow 2: A+BX\\)"
+            },
+            {
+              "explain": "Next, input your data into the table that appears on the screen.\n\n1. Enter all the \\(x\\)-values in the left column, pressing **=** after each number.\n2. Use the arrow keys to move to the top of the \\(y\\)-column.\n3. Enter the corresponding \\(y\\)-values, pressing **=** after each one.\n4. Once all data is entered, press **AC**. (Don't worry, your data is saved in the calculator's memory!)",
+              "work": "\\(\\text{Enter data} \\rightarrow \\text{Press AC}\\)"
+            },
+            {
+              "explain": "Finally, retrieve the correlation coefficient \\(r\\) from the regression menu.\n\n1. Press **SHIFT** and then **1 (STAT)**.\n2. Select **5 (Reg)** for regression variables.\n3. Select **3 (r)** for Pearson's correlation coefficient.\n4. Press **=** to calculate the value.\n\nRounding to 3 decimal places, you should get \\(-0.949\\).",
+              "work": "\\( \\begin{aligned} \\text{SHIFT} \\rightarrow 1 \\rightarrow 5:\\text{Reg} \\rightarrow 3:r \\rightarrow = \\\\\\\\ r \\approx -0.949 \\end{aligned} \\)"
+            }
+          ],
+          "meta": {
+            "origin": "teacher",
+            "examPaper": "asc-2020"
+          }
         }
       ]
     },
