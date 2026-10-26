@@ -3,6 +3,7 @@ import { collection, getDocs, query, where } from 'firebase/firestore';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, Search, ListChecks } from 'lucide-react';
 import { db } from '../../firebase/config';
+import { cdnEnabledAtAll, getQuestionsWithReasoningBlueprint } from '../../services/contentLoader';
 import MathView from '../MathView';
 import ReasoningStepCard from './ReasoningStepCard';
 
@@ -94,11 +95,10 @@ const QuestionPreStepsReviewPage = () => {
     let cancelled = false;
     (async () => {
       try {
-        const q = query(collection(db, 'questions'), where('hasReasoningBlueprint', '==', true));
-        const snap = await getDocs(q);
-        if (!cancelled) {
-          setQuestions(snap.docs.map((d) => ({ id: d.id, ...d.data() })));
-        }
+        const list = cdnEnabledAtAll()
+          ? await getQuestionsWithReasoningBlueprint()
+          : (await getDocs(query(collection(db, 'questions'), where('hasReasoningBlueprint', '==', true)))).docs.map((d) => ({ id: d.id, ...d.data() }));
+        if (!cancelled) setQuestions(list);
       } catch (e) {
         console.warn('Failed to load questions with pre-steps:', e);
       } finally {

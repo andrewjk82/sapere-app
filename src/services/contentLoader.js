@@ -264,6 +264,14 @@ export const getQuestionsByHscType = async (slug) => {
   return ids.length ? (await getQuestionsByIds(ids)).docs : [];
 };
 
+/** Questions carrying a reasoning blueprint (pre-steps review page). Every such question is DNA-tagged, so the byDna index covers them. */
+export const getQuestionsWithReasoningBlueprint = async () => {
+  const m = await getManifest();
+  const idx = await fetchJson(`/content/${m.hscTypes}`);
+  const ids = [...new Set(Object.values(idx.byDna || {}).flat())];
+  return ids.length ? (await getQuestionsByIds(ids)).docs.filter((d) => d.hasReasoningBlueprint === true) : [];
+};
+
 /** Question counts per chapter and per topic straight from the manifest (Curriculum tab badges). */
 export const getContentCounts = async () => {
   const m = await getManifest();

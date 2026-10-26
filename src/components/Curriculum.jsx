@@ -43,7 +43,7 @@ import BookAnswersModal from './curriculum/BookAnswersModal';
 import HscTypePractice from './hsc/HscTypePractice';
 import { seedChapterQuestions } from '../services/chapterSeeder';
 import { readAggregatedCounts, writeAggregatedCounts } from '../services/questionCountsService';
-import { cdnEnabledAtAll, getContentCounts } from '../services/contentLoader';
+import { cdnEnabledAtAll, getContentCounts, adminPendingQuestions } from '../services/contentLoader';
 
 // ── MC seeding ─────────────────────────────────────────────────────────────
 // Seed options in AUTHORED order and return the correct option's index.
@@ -154,7 +154,8 @@ const Curriculum = ({ initialSearchId = null, onInitialSearchConsumed } = {}) =>
   // (admin-only, runs once when the registry loads) is the reliable signal.
   const [examPaperCounts, setExamPaperCounts] = useState({});
   useEffect(() => {
-    if (!isAdmin || seedRegistry.length === 0) return undefined;
+    // Only feeds the Firestore seeding cards, which are hidden once content comes from git.
+    if (!isAdmin || seedRegistry.length === 0 || cdnEnabledAtAll()) return undefined;
     let cancelled = false;
     const examPapers = [...new Set(
       seedRegistry.filter((e) => e.chapterId?.startsWith('exam:') && e.examPaper).map((e) => e.examPaper)
@@ -270,8 +271,10 @@ const Curriculum = ({ initialSearchId = null, onInitialSearchConsumed } = {}) =>
     let cancelled = false;
     (async () => {
       try {
-        const snap = await getCountFromServer(query(collection(db, 'questions'), where('reviewStatus', '==', 'pending')));
-        if (!cancelled) setPendingReviewCount(snap.data().count);
+        const count = cdnEnabledAtAll()
+          ? (await adminPendingQuestions()).length
+          : (await getCountFromServer(query(collection(db, 'questions'), where('reviewStatus', '==', 'pending')))).data().count;
+        if (!cancelled) setPendingReviewCount(count);
       } catch (e) {
         if (!cancelled) setPendingReviewCount(0);
       }
@@ -3209,7 +3212,13 @@ const Curriculum = ({ initialSearchId = null, onInitialSearchConsumed } = {}) =>
                 </div>
 
                 <div className="admin-panel-body">
-                  {adminActiveTab === 'y11_12' && (() => {
+                  {adminActiveTab === 'y11_12' && cdnEnabledAtAll() && (
+                    <div style={{ padding: '16px', borderRadius: '12px', background: '#f8fafc', border: '1px dashed #cbd5e1', color: '#475569', fontSize: '0.9rem', lineHeight: 1.6 }}>
+                      Questions now live in git (<code>content/chapters/*.json</code>) and reach students through the content build.
+                      Seeding to Firestore is retired — edit questions in the Question Bank or the content files instead.
+                    </div>
+                  )}
+                  {adminActiveTab === 'y11_12' && !cdnEnabledAtAll() && (() => {
                     // Helper to render a single seed card
                     const SeedCard = ({ badge, badgeStyle, title, countKey, onSeed, extraCount }) => {
                       const count = extraCount !== undefined
@@ -3629,8 +3638,8 @@ const Curriculum = ({ initialSearchId = null, onInitialSearchConsumed } = {}) =>
                         </div>
                       </div>
 
-                      {/* Add Curve Q */}
-                      <div className="sync-card">
+                      {/* Add Curve Q (Firestore seeding — retired once content comes from git) */}
+                      {!cdnEnabledAtAll() && <div className="sync-card">
                         <div className="sync-card-info">
                           <span className="sync-card-badge generic">UTILS</span>
                           <span className="sync-card-title">Add Curve Fitting Questions</span>
@@ -3640,10 +3649,10 @@ const Curriculum = ({ initialSearchId = null, onInitialSearchConsumed } = {}) =>
                             ➕ Add Curve Q
                           </button>
                         </div>
-                      </div>
+                      </div>}
 
-                      {/* Verify aggregate question counts vs live Firestore */}
-                      <div className="sync-card">
+                      {/* Verify aggregate question counts vs live Firestore (counts come from the content manifest once on git) */}
+                      {!cdnEnabledAtAll() && <div className="sync-card">
                         <div className="sync-card-info">
                           <span className="sync-card-badge generic">UTILS</span>
                           <span className="sync-card-title">Verify question counts ({selectedYear})</span>
@@ -3653,7 +3662,7 @@ const Curriculum = ({ initialSearchId = null, onInitialSearchConsumed } = {}) =>
                             ✔️ Verify Counts
                           </button>
                         </div>
-                      </div>
+                      </div>}
 
                       {/* Sync Selected Year */}
                       {((['Year 11', 'Year 12'].includes(selectedYear) && CURRICULUM_DATA[selectedYear]?.[selectedCourse]) || Array.isArray(CURRICULUM_DATA[selectedYear])) && (
