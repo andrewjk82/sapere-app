@@ -6854,7 +6854,7 @@
             "\\(x = -8\\)",
             "\\(x = 8\\)",
             "\\(x = -\\frac{8}{3}\\)",
-            "\\(x = 8\\)"
+            "\\(x = -4\\)"
           ],
           "answer": 0,
           "hint": "Move constants to one side, then isolate x.",

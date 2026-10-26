@@ -4580,7 +4580,7 @@
             "\\(\\$2,040\\)",
             "\\(\\$2,340\\)",
             "\\(\\$1,500\\)",
-            "\\(\\$2,340\\)"
+            "\\(\\$840\\)"
           ],
           "answer": 1,
           "hint": "Add the deposit to 48 monthly payments.",
@@ -5617,8 +5617,8 @@
           "stem": "A computer depreciates in value at 15% p.a. If the computer was bought for $2300, how much is it worth after 3 years?",
           "options": [
             "\\(\\$1,265.00\\)",
-            "\\(\\$1,415.64\\)",
-            "\\(\\$1,415.64\\)",
+            "\\(\\$1{,}412.49\\)",
+            "\\(\\$1{,}661.75\\)",
             "\\(\\$1,955.00\\)"
           ],
           "answer": 1,
@@ -5651,7 +5651,8 @@
             "examType": "Task 3",
             "grade": "9",
             "sourceQuestion": "fm-q8"
-          }
+          },
+          "solution": "\\(\\$1{,}412.49\\)"
         }
       ]
     }

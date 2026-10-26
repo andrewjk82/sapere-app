@@ -8620,7 +8620,7 @@
           "difficulty": "hard",
           "options": [
             "\\(0\\%\\)",
-            "\\(-9\\%\\)",
+            "\\(-10\\%\\)",
             "\\(-9\\%\\)",
             "\\(+9\\%\\)"
           ],
@@ -8881,7 +8881,7 @@
           "difficulty": "hard",
           "stem": "A shipping company reported that \\(4.8\\%\\) of \\(25{,}000\\) packages arrived damaged. How many packages arrived undamaged?",
           "options": [
-            "\\(23{,}800\\)",
+            "\\(1{,}200\\)",
             "\\(23{,}800\\)",
             "\\(24{,}000\\)",
             "\\(23{,}760\\)"

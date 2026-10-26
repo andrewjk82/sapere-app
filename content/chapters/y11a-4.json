@@ -680,7 +680,7 @@
             "$-1 \\le x \\le 2$",
             "$-1 < x < 2$",
             "$-9 \\le x \\le 18$",
-            "$-1 \\le x \\le 2$"
+            "$-3 \\le x \\le 2$"
           ],
           "answer": 0,
           "solution": "Step 1: Divide all parts by 3.\n$$-1 \\le x \\le 2$$\nStep 2: Use **solid circles** at both boundaries and connect them.",
@@ -876,7 +876,7 @@
                     5,
                     -1.5
                   ],
-                  "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[0,0], [1,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('arrow', [[3, 0], [-1.8, 0]], {strokeColor: '#6366f1', strokeWidth: 4});\nboard.create('point', [3, 0], {size: 4, strokeColor: '#6366f1', strokeWidth: 3, fillColor: 'white', name: '', fixed: true});\nboard.unsuspendUpdate();"
+                  "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[0,0], [1,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('arrow', [[3, 0], [-1.8, 0]], {strokeColor: '#6366f1', strokeWidth: 4});\nboard.create('point', [3, 0], {size: 4, strokeColor: '#6366f1', strokeWidth: 3, fillColor: '#6366f1', name: '', fixed: true});\nboard.unsuspendUpdate();"
                 }
               }
             }
@@ -3479,7 +3479,7 @@
             "$-1 \\le x \\le 2$",
             "$-1 < x < 2$",
             "$-9 \\le x \\le 18$",
-            "$-1 \\le x \\le 2$"
+            "$-3 \\le x \\le 2$"
           ],
           "answer": 0,
           "solution": "Step 1: Divide all parts by 3.\n$$-1 \\le x \\le 2$$\nStep 2: Use **solid circles** at both boundaries and connect them.",
@@ -3954,7 +3954,7 @@
             "$1 < x < 5$",
             "$1 \\le x \\le 5$",
             "$7 < x < 11$",
-            "$1 < x < 5$"
+            "$4 < x < 5$"
           ],
           "answer": 0,
           "solution": "Step 1: Subtract 3 from all three parts of the inequality.\n$$4 - 3 < x + 3 - 3 < 8 - 3$$\n$$1 < x < 5$$\nStep 2: Use **open circles** at 1 and 5 and connect them with a **line segment**.",
@@ -4300,7 +4300,7 @@
             "$1 < x < 5$",
             "$1 \\le x \\le 5$",
             "$7 < x < 11$",
-            "$1 < x < 5$"
+            "$4 < x < 5$"
           ],
           "answer": 0,
           "solution": "Step 1: Subtract 3 from all three parts of the inequality.\n$$4 - 3 < x + 3 - 3 < 8 - 3$$\n$$1 < x < 5$$\nStep 2: Use **open circles** at 1 and 5 and connect them with a **line segment**.",

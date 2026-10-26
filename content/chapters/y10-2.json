@@ -15825,7 +15825,7 @@
           "options": [
             "\\(\\frac{39\\sqrt{5}+10\\sqrt{13}}{65}\\)",
             "\\(\\frac{3\\sqrt{5}-2\\sqrt{13}}{65}\\)",
-            "\\(\\frac{39\\sqrt{5}-10\\sqrt{13}}{65}\\)",
+            "\\(\\frac{10\\sqrt{5}-39\\sqrt{13}}{65}\\)",
             "\\(\\frac{39\\sqrt{5}-10\\sqrt{13}}{65}\\)"
           ],
           "answer": 3,
@@ -16728,7 +16728,7 @@
           "stem": "Rationalise the denominators and simplify: \\(\\frac{3}{3\\sqrt{2}+\\sqrt{5}} - \\frac{2}{3\\sqrt{2}-\\sqrt{5}}\\).",
           "options": [
             "\\(\\frac{3\\sqrt{2}+5\\sqrt{5}}{13}\\)",
-            "\\(\\frac{3\\sqrt{2}+5\\sqrt{5}}{13}\\)",
+            "\\(\\frac{3\\sqrt{2}-\\sqrt{5}}{13}\\)",
             "\\(\\frac{15\\sqrt{2}-5\\sqrt{5}}{13}\\)",
             "\\(\\frac{3\\sqrt{2}-5\\sqrt{5}}{13}\\)"
           ],
@@ -18153,7 +18153,7 @@
             "\\(24\\sqrt{2} - 2\\sqrt{5}\\)",
             "\\(4\\sqrt{2} - 2\\sqrt{5}\\)",
             "\\(4\\sqrt{2} + 22\\sqrt{5}\\)",
-            "\\(4\\sqrt{2} - 2\\sqrt{5}\\)"
+            "\\(4\\sqrt{2} - 4\\sqrt{5}\\)"
           ],
           "answer": 1,
           "hint": "Simplify the expression using the properties of surds.",
@@ -18184,7 +18184,7 @@
           "stem": "Simplify: \\(6\\sqrt{3} - 4\\sqrt{3} - 3\\sqrt{2} + 8\\sqrt{3}\\).",
           "options": [
             "\\(10\\sqrt{3} + 23\\sqrt{2}\\)",
-            "\\(10\\sqrt{3} - 3\\sqrt{2}\\)",
+            "\\(-2\\sqrt{3} - 3\\sqrt{2}\\)",
             "\\(210\\sqrt{3} - 3\\sqrt{2}\\)",
             "\\(10\\sqrt{3} - 3\\sqrt{2}\\)"
           ],
@@ -20147,7 +20147,7 @@
           "difficulty": "easy",
           "stem": "Rationalise the denominator and simplify: \\(\\frac{4\\sqrt{3}}{5\\sqrt{15}}\\).",
           "options": [
-            "\\(\\frac{4\\sqrt{5}}{25}\\)",
+            "\\(\\frac{4\\sqrt{5}}{5}\\)",
             "\\(\\frac{4\\sqrt{5}}{25}\\)",
             "\\(\\frac{12\\sqrt{5}}{75}\\)",
             "\\(\\frac{4}{25}\\)"
@@ -21091,7 +21091,7 @@
           "stem": "If \\(x = 3+\\sqrt{2}\\) and \\(y = 5-\\sqrt{2}\\), find the value of \\(xy\\) in simplest form.",
           "options": [
             "\\(13-2\\sqrt{2}\\)",
-            "\\(13+2\\sqrt{2}\\)",
+            "\\(17+2\\sqrt{2}\\)",
             "\\(15+2\\sqrt{2}\\)",
             "\\(13+2\\sqrt{2}\\)"
           ],

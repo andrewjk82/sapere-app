@@ -8544,7 +8544,7 @@
           "stem": "A deep-sea oceanographic research probe monitors salinity refraction indices. This analysis requires solving the following operation. Find the simplified product: \\\\(\\\frac{27a^1}{24b^1} \\\times \\\frac{21b^3}{24a^1}\\\\).",
           "options": [
             "\\\\(\\\frac{126ab}{64}^{2}\\\\)",
-            "\\\\(\\\frac{126ab}{64}^{2}\\\\)",
+            "\\\\(\\\\frac{63}{64b^2}\\\\)",
             "\\\\(\\\frac{126ab}{64}\\\\)",
             "\\\\(\\\frac{63b^2}{64}\\\\)"
           ],
@@ -9021,7 +9021,7 @@
           "options": [
             "\\\\(\\\frac{7s^2}{27r}\\\\)",
             "\\\\(\\\frac{14rs}{27}^{2}\\\\)",
-            "\\\\(\\\frac{14rs}{27}^{2}\\\\)",
+            "\\\\(\\\\frac{7r}{27s^2}\\\\)",
             "\\\\(\\\frac{14rs}{27}\\\\)"
           ],
           "answer": 0,
@@ -9226,7 +9226,7 @@
             "\\\\(\\\frac{36pq}{1}^{2}\\\\)",
             "\\\\(\\\frac{18}{p}\\\\)",
             "\\\\(\\\frac{36pq}{1}\\\\)",
-            "\\\\(\\\frac{36pq}{1}^{2}\\\\)"
+            "\\\\(18p\\\\)"
           ],
           "answer": 1,
           "hint": "Convert division to multiplication by flipping the divisor fraction if necessary, then cancel common factors.",
@@ -9362,7 +9362,7 @@
             "\\\\(\\\frac{150cd}{49}^{2}\\\\)",
             "\\\\(\\\frac{150cd}{49}\\\\)",
             "\\\\(\\\frac{75}{49c}\\\\)",
-            "\\\\(\\\frac{150cd}{49}^{2}\\\\)"
+            "\\\\(\\\\frac{75c}{49}\\\\)"
           ],
           "answer": 2,
           "hint": "Convert division to multiplication by flipping the divisor fraction if necessary, then cancel common factors.",
@@ -9430,7 +9430,7 @@
             "\\\\(\\\frac{50kh}{6}^{2}\\\\)",
             "\\\\(\\\frac{25}{6k}\\\\)",
             "\\\\(\\\frac{50kh}{6}\\\\)",
-            "\\\\(\\\frac{50kh}{6}^{2}\\\\)"
+            "\\\\(\\\\frac{25k}{6}\\\\)"
           ],
           "answer": 1,
           "hint": "Convert division to multiplication by flipping the divisor fraction if necessary, then cancel common factors.",
@@ -9566,7 +9566,7 @@
             "\\\\(\\\frac{30v}{7u}\\\\)",
             "\\\\(\\\frac{60uv}{7}\\\\)",
             "\\\\(\\\frac{60uv}{7}^{2}\\\\)",
-            "\\\\(\\\frac{60uv}{7}^{2}\\\\)"
+            "\\\\(\\\\frac{30u}{7v}\\\\)"
           ],
           "answer": 0,
           "hint": "Convert division to multiplication by flipping the divisor fraction if necessary, then cancel common factors.",
@@ -9701,7 +9701,7 @@
           "options": [
             "\\\\(\\\frac{8wz}{3}^{2}\\\\)",
             "\\\\(\\\frac{4}{3}\\\\)",
-            "\\\\(\\\frac{8wz}{3}^{2}\\\\)",
+            "\\\\(\\\\frac{120}{90}\\\\)",
             "\\\\(\\\frac{8wz}{3}\\\\)"
           ],
           "answer": 1,
@@ -9770,7 +9770,7 @@
             "\\\\(\\\frac{56ab}{45}^{2}\\\\)",
             "\\\\(\\\frac{28b}{45a^2}\\\\)",
             "\\\\(\\\frac{56ab}{45}\\\\)",
-            "\\\\(\\\frac{56ab}{45}^{2}\\\\)"
+            "\\\\(\\\\frac{28a^2}{45b}\\\\)"
           ],
           "answer": 1,
           "hint": "Convert division to multiplication by flipping the divisor fraction if necessary, then cancel common factors.",
@@ -9837,7 +9837,7 @@
           "options": [
             "\\\\(\\\frac{50pq}{18}^{2}\\\\)",
             "\\\\(\\\frac{50pq}{18}\\\\)",
-            "\\\\(\\\frac{50pq}{18}^{2}\\\\)",
+            "\\\\(\\\\frac{25p}{18}\\\\)",
             "\\\\(\\\frac{25}{18p}\\\\)"
           ],
           "answer": 3,
@@ -9906,7 +9906,7 @@
             "\\\\(\\\frac{10mn}{3}^{2}\\\\)",
             "\\\\(\\\frac{5}{3}\\\\)",
             "\\\\(\\\frac{10mn}{3}\\\\)",
-            "\\\\(\\\frac{10mn}{3}^{2}\\\\)"
+            "\\\\(\\\\frac{700}{420}\\\\)"
           ],
           "answer": 1,
           "hint": "Convert division to multiplication by flipping the divisor fraction if necessary, then cancel common factors.",
@@ -9974,7 +9974,7 @@
             "\\\\(\\\frac{14cd}{12}^{2}\\\\)",
             "\\\\(\\\frac{14cd}{12}\\\\)",
             "\\\\(\\\frac{7}{12}\\\\)",
-            "\\\\(\\\frac{14cd}{12}^{2}\\\\)"
+            "\\\\(\\\\frac{98}{168}\\\\)"
           ],
           "answer": 2,
           "hint": "Convert division to multiplication by flipping the divisor fraction if necessary, then cancel common factors.",
@@ -10178,7 +10178,7 @@
             "\\\\(\\\frac{36v^2}{35u}\\\\)",
             "\\\\(\\\frac{72uv}{35}\\\\)",
             "\\\\(\\\frac{72uv}{35}^{2}\\\\)",
-            "\\\\(\\\frac{72uv}{35}^{2}\\\\)"
+            "\\\\(\\\\frac{36u}{35v^2}\\\\)"
           ],
           "answer": 0,
           "hint": "Convert division to multiplication by flipping the divisor fraction if necessary, then cancel common factors.",
@@ -10381,7 +10381,7 @@
           "options": [
             "\\\\(\\\frac{18ab}{25}^{2}\\\\)",
             "\\\\(\\\frac{9}{25a}\\\\)",
-            "\\\\(\\\frac{18ab}{25}^{2}\\\\)",
+            "\\\\(\\\\frac{9a}{25}\\\\)",
             "\\\\(\\\frac{18ab}{25}\\\\)"
           ],
           "answer": 1,
@@ -10722,7 +10722,7 @@
             "\\\\(\\\frac{98xy}{50}^{2}\\\\)",
             "\\\\(\\\frac{98xy}{50}\\\\)",
             "\\\\(\\\frac{49y}{50x^2}\\\\)",
-            "\\\\(\\\frac{98xy}{50}^{2}\\\\)"
+            "\\\\(\\\\frac{49x^2}{50y}\\\\)"
           ],
           "answer": 2,
           "hint": "Convert division to multiplication by flipping the divisor fraction if necessary, then cancel common factors.",
@@ -10857,7 +10857,7 @@
           "options": [
             "\\\\(\\\frac{56rs}{1}^{2}\\\\)",
             "\\\\(\\\frac{56rs}{1}\\\\)",
-            "\\\\(\\\frac{56rs}{1}^{2}\\\\)",
+            "\\\\(28r\\\\)",
             "\\\\(\\\frac{28}{r}\\\\)"
           ],
           "answer": 3,
@@ -11062,7 +11062,7 @@
             "\\\\(\\\frac{150pq}{112}^{2}\\\\)",
             "\\\\(\\\frac{75}{112p}\\\\)",
             "\\\\(\\\frac{150pq}{112}\\\\)",
-            "\\\\(\\\frac{150pq}{112}^{2}\\\\)"
+            "\\\\(\\\\frac{75p}{112}\\\\)"
           ],
           "answer": 1,
           "hint": "Convert division to multiplication by flipping the divisor fraction if necessary, then cancel common factors.",
@@ -11129,7 +11129,7 @@
           "options": [
             "\\\\(\\\frac{4}{25m}\\\\)",
             "\\\\(\\\frac{8mn}{25}^{2}\\\\)",
-            "\\\\(\\\frac{8mn}{25}^{2}\\\\)",
+            "\\\\(\\\\frac{4m}{25}\\\\)",
             "\\\\(\\\frac{8mn}{25}\\\\)"
           ],
           "answer": 0,
@@ -11265,7 +11265,7 @@
           "options": [
             "\\\\(\\\frac{256kh}{105}^{2}\\\\)",
             "\\\\(\\\frac{256kh}{105}\\\\)",
-            "\\\\(\\\frac{256kh}{105}^{2}\\\\)",
+            "\\\\(\\\\frac{128k}{105h}\\\\)",
             "\\\\(\\\frac{128h}{105k}\\\\)"
           ],
           "answer": 3,
@@ -11877,7 +11877,7 @@
           "options": [
             "\\\\(\\\frac{14kh}{32}^{2}\\\\)",
             "\\\\(\\\frac{7h}{32}\\\\)",
-            "\\\\(\\\frac{14kh}{32}^{2}\\\\)",
+            "\\\\(\\\\frac{7}{32h}\\\\)",
             "\\\\(\\\frac{14kh}{32}\\\\)"
           ],
           "answer": 1,

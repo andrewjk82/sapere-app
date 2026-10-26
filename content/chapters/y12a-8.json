@@ -8869,7 +8869,7 @@
           "stem": "Liam and Sophia each invested \\( \\$30000 \\) for one year. Liam has his invested at \\( 5.25\\% \\) per annum simple interest, while Sophia has hers invested at \\( 5.15\\% \\) per annum compound interest.\nb) Sophia then points out that her interest is compounded monthly, not yearly. Now who has the better investment, and by how much? (Specify in the format 'Sophia, by 6.85')",
           "options": [
             "Sophia, by 7.00",
-            "Sophia, by 7.00",
+            "Liam, by 581.99",
             "Liam, by 7.00",
             "Sophia, by 581.99"
           ],
