@@ -17,6 +17,7 @@ const store = {
   notification_queue_6pm: { '2026-08-01': {}, '2026-09-25': {}, '2026-10-25': {} },
   'users/u1/notifications': { a: { timestamp: daysAgo(91) }, b: { timestamp: daysAgo(10) } },
   'users/u2/notifications': { a: { timestamp: daysAgo(200) }, b: { timestamp: daysAgo(120) } },
+  'users/u1/daily_assignments': { '2026-09-01': {}, '2026-10-11': {}, '2026-10-12': {}, '2026-10-25': {}, next_prep: {} },
 };
 const deleted = [];
 
@@ -50,19 +51,20 @@ let passed = 0;
 const test = async (name, fn) => { await fn(); passed += 1; console.log(`  ✓ ${name}`); };
 
 await test('retention windows are as agreed', () => {
-  assert.deepEqual(RETENTION_DAYS, { traffic_logs: 30, system_logs: 30, notification_queue_6pm: 30, notifications: 90 });
+  assert.deepEqual(RETENTION_DAYS, { traffic_logs: 30, system_logs: 30, notification_queue_6pm: 30, notifications: 90, daily_assignments: 14 });
 });
 
 await test('queue cutoff is a date id', () => {
   assert.equal(cutoffDateId(now, 30), '2026-09-26');
 });
 
-await test('only expired docs are deleted, per student for notifications', async () => {
+await test('only expired docs are deleted (next_prep and the last 14 days kept), per student', async () => {
   const result = await purgeOldLogs(db, FieldPath, { now });
-  assert.deepEqual(result, { traffic_logs: 2, system_logs: 1, notification_queue_6pm: 2, notifications: 3 });
+  assert.deepEqual(result, { traffic_logs: 2, system_logs: 1, notification_queue_6pm: 2, notifications: 3, daily_assignments: 2 });
   assert.deepEqual(deleted.sort(), [
     'notification_queue_6pm/2026-08-01', 'notification_queue_6pm/2026-09-25',
     'system_logs/b', 'traffic_logs/a', 'traffic_logs/b',
+    'users/u1/daily_assignments/2026-09-01', 'users/u1/daily_assignments/2026-10-11',
     'users/u1/notifications/a', 'users/u2/notifications/a', 'users/u2/notifications/b',
   ]);
 });

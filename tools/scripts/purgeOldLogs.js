@@ -16,9 +16,11 @@ const expired = {
   system_logs: await count(db.collection('system_logs').where('timestamp', '<', cutoffDate(now, RETENTION_DAYS.system_logs))),
   notification_queue_6pm: await count(db.collection('notification_queue_6pm').where(FieldPath.documentId(), '<', cutoffDateId(now, RETENTION_DAYS.notification_queue_6pm))),
   notifications: 0,
+  daily_assignments: 0,
 };
 for (const u of await db.collection('users').listDocuments()) {
   expired.notifications += await count(u.collection('notifications').where('timestamp', '<', cutoffDate(now, RETENTION_DAYS.notifications)));
+  expired.daily_assignments += await count(u.collection('daily_assignments').where(FieldPath.documentId(), '<', cutoffDateId(now, RETENTION_DAYS.daily_assignments)));
 }
 console.log('past retention:', expired);
 if (!process.argv.includes('--apply')) { console.log('DRY RUN — pass --apply to delete'); process.exit(0); }
