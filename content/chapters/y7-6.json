@@ -4772,6 +4772,1669 @@
       "title": "Revision",
       "questions": [
         {
+          "id": "y7-6d-q1a",
+          "type": "mc",
+          "stem": "Write this expression using algebraic notation:<br><br>A number, \\(y\\), is divided by 8.",
+          "difficulty": "medium",
+          "options": [
+            "\\(y - 8\\)",
+            "\\(\\frac{y}{8}\\)",
+            "\\(\\frac{8}{y}\\)",
+            "\\(8y\\)"
+          ],
+          "answer": 1,
+          "hint": "Represent division as a fraction.",
+          "solution": "\\(\\frac{y}{8}\\)",
+          "steps": [
+            {
+              "explain": "In algebra, division is written as a fraction.",
+              "work": "\\(\\text{Numerator} \\div \\text{Denominator} = \\frac{\\text{Numerator}}{\\text{Denominator}}\\)"
+            },
+            {
+              "explain": "The number being divided (\\(y\\)) is the numerator, and the number dividing it (8) is the denominator.",
+              "work": "\\(\\frac{y}{8}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q1b",
+          "type": "mc",
+          "stem": "Write this expression using algebraic notation:<br><br>A number, \\(k\\), is divided by 4, and 5 is added to the result.",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\frac{4}{k} + 5\\)",
+            "\\(\\frac{k}{4} + 5\\)",
+            "\\(4k + 5\\)",
+            "\\(\\frac{k+5}{4}\\)"
+          ],
+          "answer": 1,
+          "hint": "First divide \\(k\\) by 4, then add 5.",
+          "solution": "\\(\\frac{k}{4} + 5\\)",
+          "steps": [
+            {
+              "explain": "First, express the division of \\(k\\) by 4 as a fraction.",
+              "work": "\\(\\frac{k}{4}\\)"
+            },
+            {
+              "explain": "Next, add 5 to this fraction.",
+              "work": "\\(\\frac{k}{4} + 5\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q1c",
+          "type": "mc",
+          "stem": "Write this expression using algebraic notation:<br><br>8 is added to a number, \\(y\\), and the result is divided by 6.",
+          "difficulty": "medium",
+          "options": [
+            "\\(6(y + 8)\\)",
+            "\\(\\frac{6}{y+8}\\)",
+            "\\(\\frac{y}{6} + 8\\)",
+            "\\(\\frac{y+8}{6}\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the sum of \\(y\\) and 8 first, then divide that entire sum by 6.",
+          "solution": "\\(\\frac{y+8}{6}\\)",
+          "steps": [
+            {
+              "explain": "First, express the addition of 8 to \\(y\\).",
+              "work": "\\(y + 8\\)"
+            },
+            {
+              "explain": "Next, divide the entire result by 6. This means the whole addition expression becomes the numerator of a fraction with 6 as the denominator.",
+              "work": "\\(\\frac{y+8}{6}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q1d",
+          "type": "mc",
+          "stem": "Write this expression using algebraic notation:<br><br>A number, \\(w\\), is divided by 9, and 3 is subtracted from the result.",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\frac{9}{w} - 3\\)",
+            "\\(\\frac{w}{9} - 3\\)",
+            "\\(\\frac{w-3}{9}\\)",
+            "\\(3 - \\frac{w}{9}\\)"
+          ],
+          "answer": 1,
+          "hint": "First find \\(w\\) divided by 9, then subtract 3.",
+          "solution": "\\(\\frac{w}{9} - 3\\)",
+          "steps": [
+            {
+              "explain": "First, express the division of \\(w\\) by 9 as a fraction.",
+              "work": "\\(\\frac{w}{9}\\)"
+            },
+            {
+              "explain": "Next, subtract 3 from this fraction.",
+              "work": "\\(\\frac{w}{9} - 3\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q1e",
+          "type": "mc",
+          "stem": "Write this expression using algebraic notation:<br><br>A number, \\(p\\), is multiplied by 5, and divided by 4.",
+          "difficulty": "medium",
+          "options": [
+            "\\(5p - 4\\)",
+            "\\(\\frac{p}{20}\\)",
+            "\\(\\frac{4p}{5}\\)",
+            "\\(\\frac{5p}{4}\\)"
+          ],
+          "answer": 3,
+          "hint": "Multiply \\(p\\) by 5 and write it over 4.",
+          "solution": "\\(\\frac{5p}{4}\\)",
+          "steps": [
+            {
+              "explain": "First, express the multiplication of \\(p\\) by 5. In algebra, the number comes before the variable.",
+              "work": "\\(5p\\)"
+            },
+            {
+              "explain": "Next, divide this result by 4. Write this as a fraction.",
+              "work": "\\(\\frac{5p}{4}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q1f",
+          "type": "mc",
+          "stem": "Write this expression using algebraic notation:<br><br>A number, \\(b\\), is divided by 3 and multiplied by 8.",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\frac{8}{3b}\\)",
+            "\\(\\frac{b}{24}\\)",
+            "\\(\\frac{8b}{3}\\)",
+            "\\(\\frac{3b}{8}\\)"
+          ],
+          "answer": 2,
+          "hint": "Divide \\(b\\) by 3, then multiply by 8.",
+          "solution": "\\(\\frac{8b}{3}\\)",
+          "steps": [
+            {
+              "explain": "First, express the division of \\(b\\) by 3 as a fraction.",
+              "work": "\\(\\frac{b}{3}\\)"
+            },
+            {
+              "explain": "Next, multiply this fraction by 8. Multiplying a fraction by a whole number means multiplying the numerator.",
+              "work": "\\(8 \\times \\frac{b}{3} = \\frac{8b}{3}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q1g",
+          "type": "mc",
+          "stem": "Write this expression using algebraic notation:<br><br>A number, \\(h\\), is divided by 10, then the result of this is multiplied by 7.",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\frac{h}{70}\\)",
+            "\\(\\frac{7h}{10}\\)",
+            "\\(\\frac{10h}{7}\\)",
+            "\\(7h + 10\\)"
+          ],
+          "answer": 1,
+          "hint": "Represent division by 10 as a fraction, then multiply the numerator by 7.",
+          "solution": "\\(\\frac{7h}{10}\\)",
+          "steps": [
+            {
+              "explain": "First, express the division of \\(h\\) by 10 as a fraction.",
+              "work": "\\(\\frac{h}{10}\\)"
+            },
+            {
+              "explain": "Next, multiply this fraction by 7.",
+              "work": "\\(7 \\times \\frac{h}{10} = \\frac{7h}{10}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q1h",
+          "type": "mc",
+          "stem": "Write this expression using algebraic notation:<br><br>A number, \\(d\\), is divided by 8, 3 is subtracted from the result, and the result is then multiplied by 9.",
+          "difficulty": "medium",
+          "options": [
+            "\\(9\\left(\\frac{d}{8} - 3\\right)\\)",
+            "\\(9\\left(\\frac{d-3}{8}\\right)\\)",
+            "\\(9\\left(3 - \\frac{d}{8}\\right)\\)",
+            "\\(\\frac{9d}{8} - 3\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide \\(d\\) by 8, subtract 3, and multiply the entire expression by 9 using brackets.",
+          "solution": "\\(9\\left(\\frac{d}{8} - 3\\right)\\)",
+          "steps": [
+            {
+              "explain": "First, express the division of \\(d\\) by 8 as a fraction.",
+              "work": "\\(\\frac{d}{8}\\)"
+            },
+            {
+              "explain": "Next, subtract 3 from this fraction.",
+              "work": "\\(\\frac{d}{8} - 3\\)"
+            },
+            {
+              "explain": "Finally, multiply the entire result by 9. Use brackets to show that the subtraction happens before the multiplication.",
+              "work": "\\(9\\left(\\frac{d}{8} - 3\\right)\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q1i",
+          "type": "mc",
+          "stem": "Write this expression using algebraic notation:<br><br>4 is taken away from \\(\\frac{3}{5}\\) of a number, \\(x\\), then the result of this is multiplied by \\(\\frac{3}{5}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\frac{9x}{25} - 4\\)",
+            "\\(\\frac{3}{5}\\left(\\frac{3(x-4)}{5}\\right)\\)",
+            "\\(\\frac{3}{5}\\left(\\frac{3x}{5} - 4\\right)\\)",
+            "\\(\\frac{3}{5}\\left(4 - \\frac{3x}{5}\\right)\\)"
+          ],
+          "answer": 2,
+          "hint": "Find \\(\\frac{3}{5}\\) of \\(x\\) first, subtract 4, and multiply the whole bracket by \\(\\frac{3}{5}\\).",
+          "solution": "\\(\\frac{3}{5}\\left(\\frac{3x}{5} - 4\\right)\\)",
+          "steps": [
+            {
+              "explain": "First, express \\(\\frac{3}{5}\\) of the number \\(x\\).",
+              "work": "\\(\\frac{3x}{5}\\)"
+            },
+            {
+              "explain": "Next, take away (subtract) 4 from this expression.",
+              "work": "\\(\\frac{3x}{5} - 4\\)"
+            },
+            {
+              "explain": "Finally, multiply the entire result by \\(\\frac{3}{5}\\). Group the subtraction in brackets.",
+              "work": "\\(\\frac{3}{5}\\left(\\frac{3x}{5} - 4\\right)\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q1j",
+          "type": "mc",
+          "stem": "Write this expression using algebraic notation:<br><br>\\(\\frac{5}{12}\\) of a number, \\(z\\), is subtracted from 19, then the result of this is multiplied by \\(\\frac{2}{7}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\frac{2}{7}\\left(19 - \\frac{5z}{12}\\right)\\)",
+            "\\(\\frac{38}{7} - \\frac{5z}{12}\\)",
+            "\\(\\frac{2}{7}\\left(19 - \\frac{5}{12z}\\right)\\)",
+            "\\(\\frac{2}{7}\\left(\\frac{5z}{12} - 19\\right)\\)"
+          ],
+          "answer": 0,
+          "hint": "First write the subtraction from 19, then multiply the entire result by \\(\\frac{2}{7}\\).",
+          "solution": "\\(\\frac{2}{7}\\left(19 - \\frac{5z}{12}\\right)\\)",
+          "steps": [
+            {
+              "explain": "First, express \\(\\frac{5}{12}\\) of the number \\(z\\).",
+              "work": "\\(\\frac{5z}{12}\\)"
+            },
+            {
+              "explain": "Next, subtract this expression FROM 19. Be careful with the order.",
+              "work": "\\(19 - \\frac{5z}{12}\\)"
+            },
+            {
+              "explain": "Finally, multiply the entire result by \\(\\frac{2}{7}\\). Group the subtraction in brackets.",
+              "work": "\\(\\frac{2}{7}\\left(19 - \\frac{5z}{12}\\right)\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q1k",
+          "type": "mc",
+          "stem": "Write this expression using algebraic notation:<br><br>5 is taken away from \\(\\frac{2}{3}\\) of a number, \\(k\\), then the result of this is multiplied by \\(\\frac{2}{3}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\frac{2}{3}\\left(5 - \\frac{2k}{3}\\right)\\)",
+            "\\(\\frac{2}{3}\\left(\\frac{2(k-5)}{3}\\right)\\)",
+            "\\(\\frac{2}{3}\\left(\\frac{2k}{3} - 5\\right)\\)",
+            "\\(\\frac{4k}{9} - 5\\)"
+          ],
+          "answer": 2,
+          "hint": "Subtract 5 from \\(\\frac{2}{3}\\) of \\(k\\) first, then multiply the bracket by \\(\\frac{2}{3}\\).",
+          "solution": "\\(\\frac{2}{3}\\left(\\frac{2k}{3} - 5\\right)\\)",
+          "steps": [
+            {
+              "explain": "First, express \\(\\frac{2}{3}\\) of the number \\(k\\).",
+              "work": "\\(\\frac{2k}{3}\\)"
+            },
+            {
+              "explain": "Next, take away 5 from this expression.",
+              "work": "\\(\\frac{2k}{3} - 5\\)"
+            },
+            {
+              "explain": "Finally, multiply the entire result by \\(\\frac{2}{3}\\). Group the subtraction in brackets.",
+              "work": "\\(\\frac{2}{3}\\left(\\frac{2k}{3} - 5\\right)\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q1l",
+          "type": "mc",
+          "stem": "Write this expression using algebraic notation:<br><br>A number, \\(w\\), is multiplied by itself, and the result is multiplied by \\(\\frac{4}{5}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\frac{4(2w)}{5}\\)",
+            "\\(\\frac{4w^2}{5}\\)",
+            "\\(\\frac{4w}{5}\\)",
+            "\\(\\left(\\frac{4w}{5}\\right)^2\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiplied by itself means squared.",
+          "solution": "\\(\\frac{4w^2}{5}\\)",
+          "steps": [
+            {
+              "explain": "First, multiply the number \\(w\\) by itself (square it).",
+              "work": "\\(w \\times w = w^2\\)"
+            },
+            {
+              "explain": "Next, multiply this result by \\(\\frac{4}{5}\\).",
+              "work": "\\(\\frac{4}{5} \\times w^2 = \\frac{4w^2}{5}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q2a",
+          "type": "mc",
+          "stem": "Evaluate the expression \\(\\frac{x}{4}\\) for \\(x = 40\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(36\\)",
+            "\\(160\\)",
+            "\\(0.1\\)",
+            "\\(10\\)"
+          ],
+          "answer": 3,
+          "hint": "Substitute 40 in place of x.",
+          "solution": "\\(10\\)",
+          "steps": [
+            {
+              "explain": "Substitute \\(x = 40\\) into the expression.",
+              "work": "\\(\\frac{40}{4}\\)"
+            },
+            {
+              "explain": "Perform the division.",
+              "work": "\\(10\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q2b",
+          "type": "mc",
+          "stem": "Evaluate the expression \\(\\frac{x}{8} + 7\\) for \\(x = 40\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(2.66\\)",
+            "\\(35\\)",
+            "\\(12\\)",
+            "\\(5\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute 40 in place of x, then add 7.",
+          "solution": "\\(12\\)",
+          "steps": [
+            {
+              "explain": "Substitute \\(x = 40\\) into the expression.",
+              "work": "\\(\\frac{40}{8} + 7\\)"
+            },
+            {
+              "explain": "Evaluate the division before addition.",
+              "work": "\\(5 + 7\\)"
+            },
+            {
+              "explain": "Add to find the final result.",
+              "work": "\\(12\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q2c",
+          "type": "mc",
+          "stem": "Evaluate the expression \\(\\frac{x + 5}{9}\\) for \\(x = 40\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(9.44\\)",
+            "\\(45\\)",
+            "\\(5\\)",
+            "\\(0.2\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute 40 and simplify the numerator first.",
+          "solution": "\\(5\\)",
+          "steps": [
+            {
+              "explain": "Substitute \\(x = 40\\) into the expression.",
+              "work": "\\(\\frac{40 + 5}{9}\\)"
+            },
+            {
+              "explain": "Evaluate the addition in the numerator first.",
+              "work": "\\(\\frac{45}{9}\\)"
+            },
+            {
+              "explain": "Perform the division.",
+              "work": "\\(5\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q3a",
+          "type": "mc",
+          "stem": "Evaluate \\(\\frac{4x}{3}\\) for \\(x = 6\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(8\\)",
+            "\\(2\\)",
+            "\\(4.5\\)",
+            "\\(18\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute 6 for x.",
+          "solution": "\\(8\\)",
+          "steps": [
+            {
+              "explain": "Substitute \\(x = 6\\) into the expression.",
+              "work": "\\(\\frac{4(6)}{3}\\)"
+            },
+            {
+              "explain": "Multiply the numerator.",
+              "work": "\\(\\frac{24}{3}\\)"
+            },
+            {
+              "explain": "Perform the division.",
+              "work": "\\(8\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q3b",
+          "type": "mc",
+          "stem": "Evaluate \\(\\frac{5x}{3}\\) for \\(x = 6\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(10\\)",
+            "\\(90\\)",
+            "\\(30\\)",
+            "\\(3.6\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute 6 in place of x.",
+          "solution": "\\(10\\)",
+          "steps": [
+            {
+              "explain": "Substitute \\(x = 6\\) into the expression.",
+              "work": "\\(\\frac{5(6)}{3}\\)"
+            },
+            {
+              "explain": "Multiply the numerator.",
+              "work": "\\(\\frac{30}{3}\\)"
+            },
+            {
+              "explain": "Perform the division.",
+              "work": "\\(10\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q3c",
+          "type": "mc",
+          "stem": "Evaluate \\(\\frac{4(x + 4)}{5}\\) for \\(x = 6\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(9\\)",
+            "\\(8\\)",
+            "\\(7\\)",
+            "\\(10\\)"
+          ],
+          "answer": 1,
+          "hint": "Simplify the brackets first.",
+          "steps": [
+            {
+              "explain": "Substitute \\(x = 6\\) into the expression.",
+              "work": "\\(\\frac{4(6 + 4)}{5}\\)"
+            },
+            {
+              "explain": "Add inside the parentheses.",
+              "work": "\\(\\frac{4(10)}{5}\\)"
+            },
+            {
+              "explain": "Multiply in the numerator.",
+              "work": "\\(\\frac{40}{5}\\)"
+            },
+            {
+              "explain": "Divide to find the final value.",
+              "work": "\\(8\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q3d",
+          "type": "mc",
+          "stem": "Evaluate \\(\\frac{3x}{2} + 11\\) for \\(x = 6\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(21\\)",
+            "\\(19\\)",
+            "\\(20\\)",
+            "\\(22\\)"
+          ],
+          "answer": 2,
+          "hint": "Calculate the fraction first, then add 11.",
+          "steps": [
+            {
+              "explain": "Substitute \\(x = 6\\) into the expression.",
+              "work": "\\(\\frac{3(6)}{2} + 11\\)"
+            },
+            {
+              "explain": "Multiply in the numerator.",
+              "work": "\\(\\frac{18}{2} + 11\\)"
+            },
+            {
+              "explain": "Divide the fraction.",
+              "work": "\\(9 + 11\\)"
+            },
+            {
+              "explain": "Add to find the final value.",
+              "work": "\\(20\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q3e",
+          "type": "mc",
+          "stem": "Evaluate \\(8\\left(\\frac{x - 3}{4}\\right)\\) for \\(x = 6\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(7\\)",
+            "\\(5\\)",
+            "\\(8\\)",
+            "\\(6\\)"
+          ],
+          "answer": 3,
+          "hint": "Subtract 3 from x first.",
+          "steps": [
+            {
+              "explain": "Substitute \\(x = 6\\) into the expression.",
+              "work": "\\(8\\left(\\frac{6 - 3}{4}\\right)\\)"
+            },
+            {
+              "explain": "Subtract in the numerator.",
+              "work": "\\(8\\left(\\frac{3}{4}\\right)\\)"
+            },
+            {
+              "explain": "Multiply the integer by the fraction.",
+              "work": "\\(\\frac{8 \\times 3}{4} = \\frac{24}{4}\\)"
+            },
+            {
+              "explain": "Divide to find the final value.",
+              "work": "\\(6\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q3f",
+          "type": "mc",
+          "stem": "Evaluate \\(30 - \\frac{5x}{3}\\) for \\(x = 6\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(20\\)",
+            "\\(21\\)",
+            "\\(19\\)",
+            "\\(22\\)"
+          ],
+          "answer": 0,
+          "hint": "Calculate the fraction term first, then subtract from 30.",
+          "steps": [
+            {
+              "explain": "Substitute \\(x = 6\\) into the expression.",
+              "work": "\\(30 - \\frac{5(6)}{3}\\)"
+            },
+            {
+              "explain": "Multiply in the numerator.",
+              "work": "\\(30 - \\frac{30}{3}\\)"
+            },
+            {
+              "explain": "Divide to evaluate the fraction.",
+              "work": "\\(30 - 10\\)"
+            },
+            {
+              "explain": "Subtract to find the final value.",
+              "work": "\\(20\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q3g",
+          "type": "mc",
+          "stem": "Evaluate \\(\\frac{7x - 12}{6}\\) for \\(x = 6\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(6\\)",
+            "\\(5\\)",
+            "\\(4\\)",
+            "\\(7\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply 7 by x first, then subtract 12.",
+          "steps": [
+            {
+              "explain": "Substitute \\(x = 6\\) into the expression.",
+              "work": "\\(\\frac{7(6) - 12}{6}\\)"
+            },
+            {
+              "explain": "Multiply in the numerator.",
+              "work": "\\(\\frac{42 - 12}{6}\\)"
+            },
+            {
+              "explain": "Subtract in the numerator.",
+              "work": "\\(\\frac{30}{6}\\)"
+            },
+            {
+              "explain": "Divide to find the final value.",
+              "work": "\\(5\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q3h",
+          "type": "mc",
+          "stem": "Evaluate \\(\\frac{5x - 6}{4}\\) for \\(x = 6\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(7\\)",
+            "\\(5\\)",
+            "\\(6\\)",
+            "\\(8\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply 5 by x first.",
+          "steps": [
+            {
+              "explain": "Substitute \\(x = 6\\) into the expression.",
+              "work": "\\(\\frac{5(6) - 6}{4}\\)"
+            },
+            {
+              "explain": "Multiply in the numerator.",
+              "work": "\\(\\frac{30 - 6}{4}\\)"
+            },
+            {
+              "explain": "Subtract in the numerator.",
+              "work": "\\(\\frac{24}{4}\\)"
+            },
+            {
+              "explain": "Divide to find the final value.",
+              "work": "\\(6\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q4a",
+          "type": "mc",
+          "stem": "Evaluate \\(\\frac{m}{n}\\) for \\(m = 8\\) and \\(n = 5\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\frac{5}{8}\\)",
+            "\\(\\frac{9}{5}\\)",
+            "\\(\\frac{8}{5}\\)",
+            "\\(\\frac{10}{5}\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute the values and write as a fraction.",
+          "steps": [
+            {
+              "explain": "Substitute \\(m = 8\\) and \\(n = 5\\) into the expression.",
+              "work": "\\(\\frac{8}{5}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q4b",
+          "type": "mc",
+          "stem": "Evaluate \\(\\frac{m + n}{13}\\) for \\(m = 8\\) and \\(n = 5\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(2\\)",
+            "\\(0\\)",
+            "\\(3\\)",
+            "\\(1\\)"
+          ],
+          "answer": 3,
+          "hint": "Add m and n first.",
+          "steps": [
+            {
+              "explain": "Substitute \\(m = 8\\) and \\(n = 5\\) into the expression.",
+              "work": "\\(\\frac{8 + 5}{13}\\)"
+            },
+            {
+              "explain": "Add in the numerator.",
+              "work": "\\(\\frac{13}{13}\\)"
+            },
+            {
+              "explain": "Divide to find the final value.",
+              "work": "\\(1\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q4c",
+          "type": "mc",
+          "stem": "Evaluate \\(\\frac{m}{4} + \\frac{n}{5}\\) for \\(m = 8\\) and \\(n = 5\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(3\\)",
+            "\\(4\\)",
+            "\\(2\\)",
+            "\\(5\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute the variables and evaluate each fraction.",
+          "steps": [
+            {
+              "explain": "Substitute \\(m = 8\\) and \\(n = 5\\) into the expression.",
+              "work": "\\(\\frac{8}{4} + \\frac{5}{5}\\)"
+            },
+            {
+              "explain": "Evaluate the first fraction.",
+              "work": "\\(2 + \\frac{5}{5}\\)"
+            },
+            {
+              "explain": "Evaluate the second fraction.",
+              "work": "\\(2 + 1\\)"
+            },
+            {
+              "explain": "Add to find the final value.",
+              "work": "\\(3\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q4d",
+          "type": "mc",
+          "stem": "Evaluate \\(\\frac{m - 2}{3}\\) for \\(m = 8\\) and \\(n = 5\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(3\\)",
+            "\\(2\\)",
+            "\\(1\\)",
+            "\\(4\\)"
+          ],
+          "answer": 1,
+          "hint": "Subtract 2 from m first.",
+          "steps": [
+            {
+              "explain": "Substitute \\(m = 8\\) into the expression (\\(n\\) is not used).",
+              "work": "\\(\\frac{8 - 2}{3}\\)"
+            },
+            {
+              "explain": "Subtract in the numerator.",
+              "work": "\\(\\frac{6}{3}\\)"
+            },
+            {
+              "explain": "Divide to find the final value.",
+              "work": "\\(2\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q6a",
+          "type": "mc",
+          "stem": "Simplify the expression: \\(\\frac{12y}{3}\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(4y\\)",
+            "\\(3y\\)",
+            "\\(5y\\)",
+            "\\(6y\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide the coefficient by 3.",
+          "steps": [
+            {
+              "explain": "Divide the coefficient 12 by the denominator 3.",
+              "work": "\\(12 \\div 3 = 4\\)"
+            },
+            {
+              "explain": "Keep the variable \\(y\\) attached to the simplified coefficient.",
+              "work": "\\(4y\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q6b",
+          "type": "mc",
+          "stem": "Simplify the expression: \\(\\frac{8ab}{a}\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(7b\\)",
+            "\\(8b\\)",
+            "\\(9b\\)",
+            "\\(10b\\)"
+          ],
+          "answer": 1,
+          "hint": "Cancel the common variable a.",
+          "steps": [
+            {
+              "explain": "Identify the common variable \\(a\\) in the numerator and denominator.",
+              "work": "\\(\\frac{8 \\times a \\times b}{a}\\)"
+            },
+            {
+              "explain": "Cancel the variable \\(a\\).",
+              "work": "\\(8b\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q6c",
+          "type": "mc",
+          "stem": "Simplify the expression: \\(\\frac{15xyz}{xy}\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(14z\\)",
+            "\\(16z\\)",
+            "\\(15z\\)",
+            "\\(17z\\)"
+          ],
+          "answer": 2,
+          "hint": "Cancel the common variables x and y.",
+          "steps": [
+            {
+              "explain": "Identify the common variables \\(x\\) and \\(y\\) in the numerator and denominator.",
+              "work": "\\(\\frac{15 \\times x \\times y \\times z}{x \\times y}\\)"
+            },
+            {
+              "explain": "Cancel the variables \\(x\\) and \\(y\\).",
+              "work": "\\(15z\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q6d",
+          "type": "mc",
+          "stem": "Simplify the expression: \\(\\frac{abc}{4a}\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\frac{4}{bc}\\)",
+            "\\(\\frac{bc}{5}\\)",
+            "\\(\\frac{bc}{6}\\)",
+            "\\(\\frac{bc}{4}\\)"
+          ],
+          "answer": 3,
+          "hint": "Cancel the common variable a.",
+          "steps": [
+            {
+              "explain": "Identify the common variable \\(a\\) in the numerator and denominator.",
+              "work": "\\(\\frac{a \\times b \\times c}{4 \\times a}\\)"
+            },
+            {
+              "explain": "Cancel the variable \\(a\\).",
+              "work": "\\(\\frac{bc}{4}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q6e",
+          "type": "mc",
+          "stem": "Simplify the expression: \\(\\frac{18pq}{6p}\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(3q\\)",
+            "\\(2q\\)",
+            "\\(4q\\)",
+            "\\(5q\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide the numbers and cancel p.",
+          "steps": [
+            {
+              "explain": "Divide the coefficient 18 by the denominator 6.",
+              "work": "\\(18 \\div 6 = 3\\)"
+            },
+            {
+              "explain": "Cancel the common variable \\(p\\) in the numerator and denominator.",
+              "work": "\\(\\frac{pq}{p} = q\\)"
+            },
+            {
+              "explain": "Combine the simplified coefficient and variable.",
+              "work": "\\(3q\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q6f",
+          "type": "mc",
+          "stem": "Simplify the expression: \\(\\frac{13xy}{y}\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(12x\\)",
+            "\\(13x\\)",
+            "\\(14x\\)",
+            "\\(15x\\)"
+          ],
+          "answer": 1,
+          "hint": "Cancel the variable y.",
+          "steps": [
+            {
+              "explain": "Identify the common variable \\(y\\) in the numerator and denominator.",
+              "work": "\\(\\frac{13 \\times x \\times y}{y}\\)"
+            },
+            {
+              "explain": "Cancel the variable \\(y\\).",
+              "work": "\\(13x\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q6g",
+          "type": "mc",
+          "stem": "Simplify the expression: \\(\\frac{25xyz}{yz}\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(24x\\)",
+            "\\(26x\\)",
+            "\\(25x\\)",
+            "\\(27x\\)"
+          ],
+          "answer": 2,
+          "hint": "Cancel the variables y and z.",
+          "steps": [
+            {
+              "explain": "Identify the common variables \\(y\\) and \\(z\\) in the numerator and denominator.",
+              "work": "\\(\\frac{25 \\times x \\times y \\times z}{y \\times z}\\)"
+            },
+            {
+              "explain": "Cancel the variables \\(y\\) and \\(z\\).",
+              "work": "\\(25x\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q6h",
+          "type": "mc",
+          "stem": "Simplify the expression: \\(\\frac{36pqr}{12r}\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(2pq\\)",
+            "\\(4pq\\)",
+            "\\(5pq\\)",
+            "\\(3pq\\)"
+          ],
+          "answer": 3,
+          "hint": "Divide 36 by 12 and cancel r.",
+          "steps": [
+            {
+              "explain": "Divide the coefficient 36 by the denominator 12.",
+              "work": "\\(36 \\div 12 = 3\\)"
+            },
+            {
+              "explain": "Identify the common variable \\(r\\) in the numerator and denominator.",
+              "work": "\\(\\frac{p \\times q \\times r}{r}\\)"
+            },
+            {
+              "explain": "Cancel the variable \\(r\\) and combine with the coefficient.",
+              "work": "\\(3pq\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q7a",
+          "type": "mc",
+          "stem": "Evaluate \\(a - b\\) for \\(a = \\frac{2}{3}\\) and \\(b = \\frac{3}{5}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\frac{15}{1}\\)",
+            "\\(\\frac{2}{15}\\)",
+            "\\(\\frac{3}{15}\\)",
+            "\\(\\frac{1}{15}\\)"
+          ],
+          "answer": 3,
+          "hint": "Find a common denominator to subtract the fractions.",
+          "steps": [
+            {
+              "explain": "Substitute the values of \\(a\\) and \\(b\\).",
+              "work": "\\(\\frac{2}{3} - \\frac{3}{5}\\)"
+            },
+            {
+              "explain": "Find a common denominator, which is 15.",
+              "work": "\\(\\frac{10}{15} - \\frac{9}{15}\\)"
+            },
+            {
+              "explain": "Subtract the numerators.",
+              "work": "\\(\\frac{1}{15}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q7b",
+          "type": "mc",
+          "stem": "Evaluate \\(6a\\) for \\(a = \\frac{2}{3}\\) and \\(b = \\frac{3}{5}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(4\\)",
+            "\\(5\\)",
+            "\\(3\\)",
+            "\\(6\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply 6 by a.",
+          "steps": [
+            {
+              "explain": "Substitute the value of \\(a\\).",
+              "work": "\\(6 \\times \\frac{2}{3}\\)"
+            },
+            {
+              "explain": "Multiply the integer by the numerator.",
+              "work": "\\(\\frac{12}{3}\\)"
+            },
+            {
+              "explain": "Divide to find the final value.",
+              "work": "\\(4\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q7c",
+          "type": "mc",
+          "stem": "Evaluate \\(3a + 5b\\) for \\(a = \\frac{2}{3}\\) and \\(b = \\frac{3}{5}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(6\\)",
+            "\\(5\\)",
+            "\\(4\\)",
+            "\\(7\\)"
+          ],
+          "answer": 1,
+          "hint": "Evaluate both products first, then add.",
+          "steps": [
+            {
+              "explain": "Substitute the values of \\(a\\) and \\(b\\).",
+              "work": "\\(3\\left(\\frac{2}{3}\\right) + 5\\left(\\frac{3}{5}\\right)\\)"
+            },
+            {
+              "explain": "Evaluate the first multiplication.",
+              "work": "\\(2\\)"
+            },
+            {
+              "explain": "Evaluate the second multiplication.",
+              "work": "\\(3\\)"
+            },
+            {
+              "explain": "Add the two results.",
+              "work": "\\(2 + 3 = 5\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q7d",
+          "type": "mc",
+          "stem": "Evaluate \\(4 - a\\) for \\(a = \\frac{2}{3}\\) and \\(b = \\frac{3}{5}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\frac{3}{10}\\)",
+            "\\(\\frac{11}{3}\\)",
+            "\\(\\frac{10}{3}\\)",
+            "\\(\\frac{12}{3}\\)"
+          ],
+          "answer": 2,
+          "hint": "Convert 4 to a fraction with a denominator of 3.",
+          "steps": [
+            {
+              "explain": "Substitute the value of \\(a\\).",
+              "work": "\\(4 - \\frac{2}{3}\\)"
+            },
+            {
+              "explain": "Convert 4 to a fraction with a denominator of 3.",
+              "work": "\\(\\frac{12}{3} - \\frac{2}{3}\\)"
+            },
+            {
+              "explain": "Subtract the numerators.",
+              "work": "\\(\\frac{10}{3}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q7e",
+          "type": "mc",
+          "stem": "Evaluate \\(9a - b\\) for \\(a = \\frac{2}{3}\\) and \\(b = \\frac{3}{5}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\frac{5}{27}\\)",
+            "\\(\\frac{28}{5}\\)",
+            "\\(\\frac{29}{5}\\)",
+            "\\(\\frac{27}{5}\\)"
+          ],
+          "answer": 3,
+          "hint": "Multiply 9 by a, then subtract b.",
+          "steps": [
+            {
+              "explain": "Substitute the values of \\(a\\) and \\(b\\).",
+              "work": "\\(9\\left(\\frac{2}{3}\\right) - \\frac{3}{5}\\)"
+            },
+            {
+              "explain": "Evaluate the multiplication.",
+              "work": "\\(6 - \\frac{3}{5}\\)"
+            },
+            {
+              "explain": "Convert 6 to a fraction with a denominator of 5.",
+              "work": "\\(\\frac{30}{5} - \\frac{3}{5}\\)"
+            },
+            {
+              "explain": "Subtract the numerators.",
+              "work": "\\(\\frac{27}{5}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q7f",
+          "type": "mc",
+          "stem": "Evaluate \\(ab\\) for \\(a = \\frac{2}{3}\\) and \\(b = \\frac{3}{5}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\frac{2}{5}\\)",
+            "\\(\\frac{5}{2}\\)",
+            "\\(\\frac{3}{5}\\)",
+            "\\(\\frac{4}{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the two fractions.",
+          "steps": [
+            {
+              "explain": "Substitute the values of \\(a\\) and \\(b\\).",
+              "work": "\\(\\frac{2}{3} \\times \\frac{3}{5}\\)"
+            },
+            {
+              "explain": "Multiply the numerators and denominators.",
+              "work": "\\(\\frac{6}{15}\\)"
+            },
+            {
+              "explain": "Simplify the fraction by dividing numerator and denominator by 3.",
+              "work": "\\(\\frac{2}{5}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q7g",
+          "type": "mc",
+          "stem": "Evaluate \\(a \\div b\\) for \\(a = \\frac{2}{3}\\) and \\(b = \\frac{3}{5}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\frac{9}{10}\\)",
+            "\\(\\frac{10}{9}\\)",
+            "\\(\\frac{11}{9}\\)",
+            "\\(\\frac{12}{9}\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply a by the reciprocal of b.",
+          "steps": [
+            {
+              "explain": "Substitute the values of \\(a\\) and \\(b\\).",
+              "work": "\\(\\frac{2}{3} \\div \\frac{3}{5}\\)"
+            },
+            {
+              "explain": "Rewrite the division as multiplication by the reciprocal of the second fraction.",
+              "work": "\\(\\frac{2}{3} \\times \\frac{5}{3}\\)"
+            },
+            {
+              "explain": "Multiply the numerators and denominators.",
+              "work": "\\(\\frac{10}{9}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q7h",
+          "type": "mc",
+          "stem": "Evaluate \\(5b \\div a\\) for \\(a = \\frac{2}{3}\\) and \\(b = \\frac{3}{5}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\frac{2}{9}\\)",
+            "\\(\\frac{10}{2}\\)",
+            "\\(\\frac{9}{2}\\)",
+            "\\(\\frac{11}{2}\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply b by 5, then divide by a.",
+          "steps": [
+            {
+              "explain": "Substitute the values of \\(a\\) and \\(b\\).",
+              "work": "\\(5\\left(\\frac{3}{5}\\right) \\div \\frac{2}{3}\\)"
+            },
+            {
+              "explain": "Evaluate the multiplication.",
+              "work": "\\(3 \\div \\frac{2}{3}\\)"
+            },
+            {
+              "explain": "Rewrite the division as multiplication by the reciprocal.",
+              "work": "\\(3 \\times \\frac{3}{2}\\)"
+            },
+            {
+              "explain": "Multiply to find the final value.",
+              "work": "\\(\\frac{9}{2}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q8a",
+          "type": "mc",
+          "stem": "Evaluate \\(b - a\\) for \\(a = \\frac{2}{5}\\) and \\(b = \\frac{5}{6}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\frac{30}{13}\\)",
+            "\\(\\frac{14}{30}\\)",
+            "\\(\\frac{13}{30}\\)",
+            "\\(\\frac{15}{30}\\)"
+          ],
+          "answer": 2,
+          "hint": "Find a common denominator to subtract.",
+          "steps": [
+            {
+              "explain": "Substitute the values of \\(b\\) and \\(a\\).",
+              "work": "\\(\\frac{5}{6} - \\frac{2}{5}\\)"
+            },
+            {
+              "explain": "Find a common denominator, which is 30.",
+              "work": "\\(\\frac{25}{30} - \\frac{12}{30}\\)"
+            },
+            {
+              "explain": "Subtract the numerators.",
+              "work": "\\(\\frac{13}{30}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q8b",
+          "type": "mc",
+          "stem": "Evaluate \\(5a\\) for \\(a = \\frac{2}{5}\\) and \\(b = \\frac{5}{6}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(3\\)",
+            "\\(1\\)",
+            "\\(4\\)",
+            "\\(2\\)"
+          ],
+          "answer": 3,
+          "hint": "Multiply a by 5.",
+          "steps": [
+            {
+              "explain": "Substitute the value of \\(a\\).",
+              "work": "\\(5\\left(\\frac{2}{5}\\right)\\)"
+            },
+            {
+              "explain": "Multiply the integer by the numerator.",
+              "work": "\\(\\frac{10}{5}\\)"
+            },
+            {
+              "explain": "Divide to find the final value.",
+              "work": "\\(2\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q8c",
+          "type": "mc",
+          "stem": "Evaluate \\(6b - 5a\\) for \\(a = \\frac{2}{5}\\) and \\(b = \\frac{5}{6}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(3\\)",
+            "\\(4\\)",
+            "\\(2\\)",
+            "\\(5\\)"
+          ],
+          "answer": 0,
+          "hint": "Calculate both parts first, then subtract.",
+          "steps": [
+            {
+              "explain": "Substitute the values of \\(a\\) and \\(b\\).",
+              "work": "\\(6\\left(\\frac{5}{6}\\right) - 5\\left(\\frac{2}{5}\\right)\\)"
+            },
+            {
+              "explain": "Evaluate the first term by canceling 6.",
+              "work": "\\(5\\)"
+            },
+            {
+              "explain": "Evaluate the second term by canceling 5.",
+              "work": "\\(2\\)"
+            },
+            {
+              "explain": "Subtract to find the final value.",
+              "work": "\\(5 - 2 = 3\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q8d",
+          "type": "mc",
+          "stem": "Evaluate \\(30(a + b)\\) for \\(a = \\frac{2}{5}\\) and \\(b = \\frac{5}{6}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(38\\)",
+            "\\(37\\)",
+            "\\(36\\)",
+            "\\(39\\)"
+          ],
+          "answer": 1,
+          "hint": "Expand the brackets or find the sum inside brackets first.",
+          "steps": [
+            {
+              "explain": "Substitute the values of \\(a\\) and \\(b\\).",
+              "work": "\\(30\\left(\\frac{2}{5} + \\frac{5}{6}\\right)\\)"
+            },
+            {
+              "explain": "Find a common denominator inside the parentheses.",
+              "work": "\\(30\\left(\\frac{12}{30} + \\frac{25}{30}\\right)\\)"
+            },
+            {
+              "explain": "Add the fractions.",
+              "work": "\\(30\\left(\\frac{37}{30}\\right)\\)"
+            },
+            {
+              "explain": "Cancel the 30 to find the final value.",
+              "work": "\\(37\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q8e",
+          "type": "mc",
+          "stem": "Evaluate \\(\\frac{15}{2}(a + b)\\) for \\(a = \\frac{2}{5}\\) and \\(b = \\frac{5}{6}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\frac{4}{37}\\)",
+            "\\(\\frac{38}{4}\\)",
+            "\\(\\frac{37}{4}\\)",
+            "\\(\\frac{39}{4}\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute the values, evaluate inside brackets, and multiply.",
+          "steps": [
+            {
+              "explain": "Substitute the values of \\(a\\) and \\(b\\).",
+              "work": "\\(\\frac{15}{2}\\left(\\frac{2}{5} + \\frac{5}{6}\\right)\\)"
+            },
+            {
+              "explain": "Use the sum from the previous calculation.",
+              "work": "\\(\\frac{15}{2}\\left(\\frac{37}{30}\\right)\\)"
+            },
+            {
+              "explain": "Cancel 15 diagonally with 30.",
+              "work": "\\(\\frac{1}{2} \\times \\frac{37}{2}\\)"
+            },
+            {
+              "explain": "Multiply the numerators and denominators.",
+              "work": "\\(\\frac{37}{4}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q8f",
+          "type": "mc",
+          "stem": "Evaluate \\(b \\div a\\) for \\(a = \\frac{2}{5}\\) and \\(b = \\frac{5}{6}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\frac{12}{25}\\)",
+            "\\(\\frac{26}{12}\\)",
+            "\\(\\frac{27}{12}\\)",
+            "\\(\\frac{25}{12}\\)"
+          ],
+          "answer": 3,
+          "hint": "Multiply b by the reciprocal of a.",
+          "steps": [
+            {
+              "explain": "Substitute the values of \\(b\\) and \\(a\\).",
+              "work": "\\(\\frac{5}{6} \\div \\frac{2}{5}\\)"
+            },
+            {
+              "explain": "Rewrite division as multiplication by the reciprocal.",
+              "work": "\\(\\frac{5}{6} \\times \\frac{5}{2}\\)"
+            },
+            {
+              "explain": "Multiply the numerators and denominators.",
+              "work": "\\(\\frac{25}{12}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q8g",
+          "type": "mc",
+          "stem": "Evaluate \\(a^2 + b^2\\) for \\(a = \\frac{2}{5}\\) and \\(b = \\frac{5}{6}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\frac{769}{900}\\)",
+            "\\(\\frac{900}{769}\\)",
+            "\\(\\frac{770}{900}\\)",
+            "\\(\\frac{771}{900}\\)"
+          ],
+          "answer": 0,
+          "hint": "Square both fractions, then find a common denominator.",
+          "steps": [
+            {
+              "explain": "Substitute the values of \\(a\\) and \\(b\\).",
+              "work": "\\(\\left(\\frac{2}{5}\\right)^2 + \\left(\\frac{5}{6}\\right)^2\\)"
+            },
+            {
+              "explain": "Square the numerators and denominators.",
+              "work": "\\(\\frac{4}{25} + \\frac{25}{36}\\)"
+            },
+            {
+              "explain": "Find a common denominator, which is 900.",
+              "work": "\\(\\frac{4 \\times 36}{900} + \\frac{25 \\times 25}{900} = \\frac{144}{900} + \\frac{625}{900}\\)"
+            },
+            {
+              "explain": "Add the numerators.",
+              "work": "\\(\\frac{769}{900}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q8h",
+          "type": "mc",
+          "stem": "Evaluate \\(3 - b\\) for \\(a = \\frac{2}{5}\\) and \\(b = \\frac{5}{6}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\frac{6}{13}\\)",
+            "\\(\\frac{13}{6}\\)",
+            "\\(\\frac{14}{6}\\)",
+            "\\(\\frac{15}{6}\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert 3 to a fraction with a denominator of 6.",
+          "steps": [
+            {
+              "explain": "Substitute the value of \\(b\\).",
+              "work": "\\(3 - \\frac{5}{6}\\)"
+            },
+            {
+              "explain": "Convert 3 to a fraction with a denominator of 6.",
+              "work": "\\(\\frac{18}{6} - \\frac{5}{6}\\)"
+            },
+            {
+              "explain": "Subtract the numerators.",
+              "work": "\\(\\frac{13}{6}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q9a",
+          "type": "mc",
+          "stem": "Complete the statement: \\(4y \\times \\square = 4y^2\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(2y\\)",
+            "\\(y\\)",
+            "\\(-y\\)",
+            "\\(10\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide both sides of the statement by 4y.",
+          "steps": [
+            {
+              "explain": "Identify the missing factor by dividing both sides by \\(4y\\).",
+              "work": "\\(\\square = \\frac{4y^2}{4y}\\)"
+            },
+            {
+              "explain": "Cancel the coefficient 4.",
+              "work": "\\(\\frac{y^2}{y}\\)"
+            },
+            {
+              "explain": "Cancel one \\(y\\) to find the missing factor.",
+              "work": "\\(y\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q9b",
+          "type": "mc",
+          "stem": "Complete the statement: \\(\\frac{3a^2}{4} \\times \\square = \\frac{9a^2}{16}\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\frac{4}{3}\\)",
+            "\\(\\frac{4}{4}\\)",
+            "\\(\\frac{3}{4}\\)",
+            "\\(\\frac{5}{4}\\)"
+          ],
+          "answer": 2,
+          "hint": "Divide both sides by \\(\\frac{3a^2}{4}\\).",
+          "steps": [
+            {
+              "explain": "Identify the missing factor by dividing the product by the known factor.",
+              "work": "\\(\\square = \\frac{9a^2}{16} \\div \\frac{3a^2}{4}\\)"
+            },
+            {
+              "explain": "Rewrite division as multiplication by the reciprocal.",
+              "work": "\\(\\frac{9a^2}{16} \\times \\frac{4}{3a^2}\\)"
+            },
+            {
+              "explain": "Cancel the variable \\(a^2\\) and simplify coefficients.",
+              "work": "\\(\\frac{9 \\times 4}{16 \\times 3} = \\frac{36}{48} = \\frac{3}{4}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q9c",
+          "type": "mc",
+          "stem": "Complete the statement: \\(\\frac{3x}{5} \\times \\square = 9x^2\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(14x\\)",
+            "\\(16x\\)",
+            "\\(17x\\)",
+            "\\(15x\\)"
+          ],
+          "answer": 3,
+          "hint": "Divide both sides by \\(\\frac{3x}{5}\\).",
+          "steps": [
+            {
+              "explain": "Identify the missing factor by dividing the product by the known factor.",
+              "work": "\\(\\square = 9x^2 \\div \\frac{3x}{5}\\)"
+            },
+            {
+              "explain": "Rewrite division as multiplication by the reciprocal.",
+              "work": "\\(9x^2 \\times \\frac{5}{3x}\\)"
+            },
+            {
+              "explain": "Simplify the expression by canceling \\(x\\) and dividing the coefficients.",
+              "work": "\\(3x \\times 5 = 15x\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q9d",
+          "type": "mc",
+          "stem": "Complete the statement: \\(\\frac{36y^2}{5} \\div \\square = 4y\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\frac{144y^3}{5}\\)",
+            "\\(\\frac{9y}{5}\\)",
+            "\\(\\frac{9y^2}{5}\\)",
+            "\\(\\frac{5}{9y}\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide \\(\\frac{36y^2}{5}\\) by 4y.",
+          "solution": "\\(\\frac{9y}{5}\\)",
+          "steps": [
+            {
+              "explain": "To find the missing divisor, divide the dividend by the quotient.",
+              "work": "\\(\\square = \\frac{36y^2}{5} \\div 4y\\)"
+            },
+            {
+              "explain": "Rewrite the division as multiplication by the reciprocal of \\(4y\\).",
+              "work": "\\(\\square = \\frac{36y^2}{5} \\times \\frac{1}{4y}\\)"
+            },
+            {
+              "explain": "Multiply the numerators and denominators.",
+              "work": "\\(\\square = \\frac{36y^2}{20y}\\)"
+            },
+            {
+              "explain": "Simplify the fraction by dividing both numerator and denominator by \\(4y\\).",
+              "work": "\\(\\square = \\frac{9y}{5}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q9e",
+          "type": "mc",
+          "stem": "Complete the statement: \\(\\frac{8k}{9} \\div \\square = 32k^2\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\left(\\frac{36k}{1}\\right)\\)",
+            "\\(\\left(\\frac{1}{36k}\\right)\\)",
+            "\\(\\left(\\frac{2}{36k}\\right)\\)",
+            "\\(\\left(\\frac{3}{36k}\\right)\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide \\(\\frac{8k}{9}\\) by 32k^2.",
+          "steps": [
+            {
+              "explain": "Identify the missing divisor by dividing the dividend by the quotient.",
+              "work": "\\(\\square = \\frac{8k}{9} \\div 32k^2\\)"
+            },
+            {
+              "explain": "Rewrite division as multiplication by the reciprocal of \\(32k^2\\).",
+              "work": "\\(\\frac{8k}{9} \\times \\frac{1}{32k^2}\\)"
+            },
+            {
+              "explain": "Simplify the expression by canceling \\(k\\) and dividing the coefficients.",
+              "work": "\\(\\frac{1}{9 \\times 4k} = \\frac{1}{36k}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-6d-q9f",
+          "type": "mc",
+          "stem": "Complete the statement: \\(\\frac{7w}{10} \\div \\square = w\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\frac{10}{7}\\)",
+            "\\(\\frac{8}{10}\\)",
+            "\\(\\frac{7}{10}\\)",
+            "\\(\\frac{9}{10}\\)"
+          ],
+          "answer": 2,
+          "hint": "Divide \\(\\frac{7w}{10}\\) by w.",
+          "steps": [
+            {
+              "explain": "Identify the missing divisor by dividing the dividend by the quotient.",
+              "work": "\\(\\square = \\frac{7w}{10} \\div w\\)"
+            },
+            {
+              "explain": "Rewrite division as multiplication by the reciprocal of \\(w\\).",
+              "work": "\\(\\frac{7w}{10} \\times \\frac{1}{w}\\)"
+            },
+            {
+              "explain": "Cancel the variable \\(w\\) from the numerator and denominator.",
+              "work": "\\(\\frac{7}{10}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
           "id": "y7-6d-q10a",
           "type": "mc",
           "difficulty": "medium",
