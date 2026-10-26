@@ -968,9 +968,9 @@ export const Y10_CH16B_QUESTIONS = [
     "question": "Given that \\(a \\propto \\frac{1}{b}\\), what is the effect, correct to the nearest \\(0.1\\%\\), on \\(a\\) when \\(b\\) is increased by \\(15\\%\\)?",
     "opts": [
       "decreased by 13.0%",
-      "The opposite statement is true.",
-      "This is only true for acute angles.",
-      "This only holds when the triangle is isosceles."
+      "decreased by 15.0%",
+      "increased by 13.0%",
+      "increased by 15.0%"
     ],
     "a": 0,
     "answer": "0",
@@ -978,23 +978,23 @@ export const Y10_CH16B_QUESTIONS = [
     "solution": "a' = k/(1.15b) = a/1.15. Decrease of 13.0%.",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Inverse proportion: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(a = \\frac{k}{b}\\)",
+        "explanation": "Write the equation for inverse variation between \\(a\\) and \\(b\\).",
+        "workingOut": "\\(a = \\frac{k}{b}\\quad \\text{where } k \\text{ is a constant}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(a' = \\frac{k}{1.15b} = \\frac{a}{1.15}\\)",
+        "explanation": "Express the new value of \\(b\\), denoted \\(b'\\), after a \\(15\\%\\) increase.",
+        "workingOut": "\\(b' = b \\times (1 + 0.15) = 1.15b\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\frac{1}{1.15} \\approx 0.8696\\)",
+        "explanation": "Substitute \\(b'\\) into the inverse variation equation to find the new value \\(a'\\).",
+        "workingOut": "\\(a' = \\frac{k}{b'} = \\frac{k}{1.15b} = \\frac{1}{1.15}\\left(\\frac{k}{b}\\right) = \\frac{a}{1.15} \\approx 0.86957a\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: decreased by 13.0%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "decreased by 13.0%",
+        "explanation": "Calculate the percentage change in \\(a\\) and round to the nearest \\(0.1\\%\\).",
+        "workingOut": "\\(\\text{Percentage change} = \\left(\\frac{a' - a}{a}\\right) \\times 100\\% = (0.86957 - 1) \\times 100\\% \\approx -13.0\\%\\; (\\text{decreased by } 13.0\\%)\\)",
         "graphData": null
       }
     ],
@@ -1013,9 +1013,9 @@ export const Y10_CH16B_QUESTIONS = [
     "question": "Given that \\(a \\propto \\frac{1}{b}\\), what is the effect, correct to the nearest \\(0.1\\%\\), on \\(a\\) when \\(b\\) is decreased by \\(12\\%\\)?",
     "opts": [
       "increased by 13.6%",
-      "The opposite statement is true.",
-      "This is only true for acute angles.",
-      "This only holds when the triangle is isosceles."
+      "increased by 12.0%",
+      "decreased by 13.6%",
+      "decreased by 12.0%"
     ],
     "a": 0,
     "answer": "0",
@@ -1023,23 +1023,23 @@ export const Y10_CH16B_QUESTIONS = [
     "solution": "a' = k/(0.88b) = a/0.88. Increase of 13.6%.",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Inverse proportion: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(a = \\frac{k}{b}\\)",
+        "explanation": "Write the equation for inverse proportion between \\(a\\) and \\(b\\).",
+        "workingOut": "\\(a = \\frac{k}{b}\\quad \\text{where } k \\text{ is a non-zero constant}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(a' = \\frac{k}{0.88b} = \\frac{a}{0.88}\\)",
+        "explanation": "Find the new value of \\(b\\) after a \\(12\\%\\) decrease.",
+        "workingOut": "\\(b' = b \\times (1 - 0.12) = 0.88b\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\frac{1}{0.88} \\approx 1.1364\\)",
+        "explanation": "Substitute \\(b'\\) into the proportion formula to determine the new value \\(a'\\).",
+        "workingOut": "\\(a' = \\frac{k}{0.88b} = \\frac{1}{0.88}\\left(\\frac{k}{b}\\right) = \\frac{a}{0.88} \\approx 1.1364a\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: increased by 13.6%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "increased by 13.6%",
+        "explanation": "Calculate the percentage change in \\(a\\) and round to the nearest \\(0.1\\%\\).",
+        "workingOut": "\\(\\text{Percentage change} = \\left(\\frac{a' - a}{a}\\right) \\times 100\\% = (1.1364 - 1) \\times 100\\% \\approx +13.6\\%\\; (\\text{increased by } 13.6\\%)\\)",
         "graphData": null
       }
     ],
@@ -1058,9 +1058,9 @@ export const Y10_CH16B_QUESTIONS = [
     "question": "Given that \\(p \\propto \\frac{1}{q^3}\\), what is the effect, correct to two decimal places, on \\(p\\) when \\(q\\) is increased by \\(10\\%\\)?",
     "opts": [
       "decreased by 24.87%",
-      "The opposite statement is true.",
-      "This is only true for acute angles.",
-      "This only holds when the triangle is isosceles."
+      "decreased by 30.00%",
+      "increased by 24.87%",
+      "increased by 33.10%"
     ],
     "a": 0,
     "answer": "0",
@@ -1068,23 +1068,23 @@ export const Y10_CH16B_QUESTIONS = [
     "solution": "p' = k/(1.1q)³ = p/1.331. Decrease of 24.87%.",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Inverse proportion: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(p = \\frac{k}{q^3}\\)",
+        "explanation": "Write the equation of proportionality relating \\(p\\) and \\(q\\).",
+        "workingOut": "\\(p = \\frac{k}{q^3}\\quad \\text{where } k \\text{ is a constant}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(p' = \\frac{k}{(1.1q)^3} = \\frac{k}{1.331\\, q^3} = \\frac{p}{1.331}\\)",
+        "explanation": "Find the new value of \\(q\\) after a \\(10\\%\\) increase.",
+        "workingOut": "\\(q' = 1.10q\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\frac{1}{1.331} \\approx 0.7513\\)",
+        "explanation": "Substitute \\(q'\\) into the formula and evaluate the denominator.",
+        "workingOut": "\\(p' = \\frac{k}{(1.10q)^3} = \\frac{k}{1.331\\, q^3} = \\frac{p}{1.331} \\approx 0.751315p\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: decreased by 24.87%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "decreased by 24.87%",
+        "explanation": "Calculate the percentage change in \\(p\\) to two decimal places.",
+        "workingOut": "\\(\\text{Percentage change} = \\left(\\frac{1}{1.331} - 1\\right) \\times 100\\% \\approx -24.87\\%\\; (\\text{decreased by } 24.87\\%)\\)",
         "graphData": null
       }
     ],
@@ -1103,9 +1103,9 @@ export const Y10_CH16B_QUESTIONS = [
     "question": "Given that \\(p \\propto \\frac{1}{q^3}\\), what is the effect, correct to two decimal places, on \\(p\\) when \\(q\\) is decreased by \\(10\\%\\)?",
     "opts": [
       "increased by 37.17%",
-      "The opposite statement is true.",
-      "This is only true for acute angles.",
-      "This only holds when the triangle is isosceles."
+      "increased by 30.00%",
+      "decreased by 37.17%",
+      "decreased by 27.10%"
     ],
     "a": 0,
     "answer": "0",
@@ -1113,23 +1113,23 @@ export const Y10_CH16B_QUESTIONS = [
     "solution": "p' = k/(0.9q)³ = p/0.729. Increase of 37.17%.",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Inverse proportion: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(p' = \\frac{k}{(0.9q)^3} = \\frac{k}{0.729\\, q^3} = \\frac{p}{0.729}\\)",
+        "explanation": "Write the equation of inverse variation between \\(p\\) and \\(q^3\\).",
+        "workingOut": "\\(p = \\frac{k}{q^3}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(\\frac{1}{0.729} \\approx 1.3717\\)",
+        "explanation": "Express the new value of \\(q\\) after a \\(10\\%\\) decrease.",
+        "workingOut": "\\(q' = (1 - 0.10)q = 0.90q\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\therefore p \\;\\mathrm{increases\\;by\\;} 37.17\\%\\)",
+        "explanation": "Substitute \\(q'\\) into the variation equation and simplify.",
+        "workingOut": "\\(p' = \\frac{k}{(0.90q)^3} = \\frac{k}{0.729\\, q^3} = \\frac{p}{0.729} \\approx 1.37174p\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: increased by 37.17%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "increased by 37.17%",
+        "explanation": "Calculate the percentage change in \\(p\\) to two decimal places.",
+        "workingOut": "\\(\\text{Percentage change} = \\left(\\frac{1}{0.729} - 1\\right) \\times 100\\% \\approx +37.17\\%\\; (\\text{increased by } 37.17\\%)\\)",
         "graphData": null
       }
     ],
@@ -1148,9 +1148,9 @@ export const Y10_CH16B_QUESTIONS = [
     "question": "Given that \\(p \\propto \\frac{1}{q^3}\\), what is the effect, correct to two decimal places, on \\(q\\) when \\(p\\) is increased by \\(20\\%\\)?",
     "opts": [
       "decreased by 5.90%",
-      "The opposite statement is true.",
-      "This is only true for acute angles.",
-      "This only holds when the triangle is isosceles."
+      "decreased by 6.67%",
+      "increased by 5.90%",
+      "decreased by 20.00%"
     ],
     "a": 0,
     "answer": "0",
@@ -1158,23 +1158,23 @@ export const Y10_CH16B_QUESTIONS = [
     "solution": "q' = q / 1.2^(1/3). Decrease of 5.90%.",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Inverse proportion: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(q' = \\left(\\frac{k}{1.2p}\\right)^{1/3} = \\frac{q}{1.2^{1/3}}\\)",
+        "explanation": "Rearrange the variation equation \\(p = \\frac{k}{q^3}\\) to express \\(q\\) in terms of \\(p\\).",
+        "workingOut": "\\(q^3 = \\frac{k}{p} \\implies q = \\frac{k^{1/3}}{p^{1/3}}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(1.2^{1/3} \\approx 1.0627\\)",
+        "explanation": "Express the new value of \\(p\\) after a \\(20\\%\\) increase.",
+        "workingOut": "\\(p' = 1.20p\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\therefore q \\;\\mathrm{decreases\\;by\\;} 5.90\\%\\)",
+        "explanation": "Substitute \\(p'\\) into the expression for \\(q\\) and simplify.",
+        "workingOut": "\\(q' = \\frac{k^{1/3}}{(1.20p)^{1/3}} = \\frac{q}{1.20^{1/3}} \\approx \\frac{q}{1.06266} \\approx 0.94104q\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: decreased by 5.90%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "decreased by 5.90%",
+        "explanation": "Find the percentage change in \\(q\\) correct to two decimal places.",
+        "workingOut": "\\(\\text{Percentage change} = (0.94104 - 1) \\times 100\\% \\approx -5.90\\%\\; (\\text{decreased by } 5.90\\%)\\)",
         "graphData": null
       }
     ],
@@ -1193,9 +1193,9 @@ export const Y10_CH16B_QUESTIONS = [
     "question": "Given that \\(p \\propto \\frac{1}{q^3}\\), what is the effect, correct to two decimal places, on \\(q\\) when \\(p\\) is decreased by \\(20\\%\\)?",
     "opts": [
       "increased by 7.72%",
-      "The opposite statement is true.",
-      "This is only true for acute angles.",
-      "This only holds when the triangle is isosceles."
+      "increased by 6.67%",
+      "decreased by 7.72%",
+      "increased by 20.00%"
     ],
     "a": 0,
     "answer": "0",
@@ -1203,23 +1203,23 @@ export const Y10_CH16B_QUESTIONS = [
     "solution": "q' = q * (1/0.8)^(1/3). Increase of 7.72%.",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Inverse proportion: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(q' = \\left(\\frac{k}{0.8p}\\right)^{1/3} = q \\times \\left(\\frac{1}{0.8}\\right)^{1/3}\\)",
+        "explanation": "Express \\(q\\) in terms of \\(p\\) using the relationship \\(p = \\frac{k}{q^3}\\).",
+        "workingOut": "\\(q^3 = \\frac{k}{p} \\implies q = \\frac{k^{1/3}}{p^{1/3}}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(1.25^{1/3} \\approx 1.0772\\)",
+        "explanation": "Determine the new value of \\(p\\) after a \\(20\\%\\) decrease.",
+        "workingOut": "\\(p' = (1 - 0.20)p = 0.80p\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\therefore q \\;\\mathrm{increases\\;by\\;} 7.72\\%\\)",
+        "explanation": "Substitute \\(p'\\) into the expression for \\(q\\) and simplify.",
+        "workingOut": "\\(q' = \\frac{k^{1/3}}{(0.80p)^{1/3}} = \\frac{q}{0.80^{1/3}} = q \\times 1.25^{1/3} \\approx 1.07722q\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: increased by 7.72%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "increased by 7.72%",
+        "explanation": "Calculate the percentage change in \\(q\\) correct to two decimal places.",
+        "workingOut": "\\(\\text{Percentage change} = (1.07722 - 1) \\times 100\\% \\approx +7.72\\%\\; (\\text{increased by } 7.72\\%)\\)",
         "graphData": null
       }
     ],
