@@ -5,6 +5,7 @@ import { classReminderEmail, dailyWrapupEmail, adminSummaryEmail, genericEmail, 
 import { buildProfile, examPrepD1StudentEmail, examPrepD1TeacherEmail } from './_lib/examPrepReport.js';
 import { settleSprintWeek } from './_lib/timesTableSprintSettlement.js';
 import { purgeCheckedHomeworkOriginals } from './_lib/homeworkRetention.js';
+import { purgeOldLogs } from './_lib/logRetention.js';
 
 // Emails sent per hourly run — the queue carries the rest to the next hour,
 // spreading the load (avoids email throttling).
@@ -582,6 +583,15 @@ export default async function handler(req, res) {
         if (hw.purged > 0) logs.push(`[Homework] Purged originals for ${hw.purged} submission(s), ${hw.pagesDeleted} page(s).`);
       } catch (e) {
         logs.push(`[Homework] Retention error: ${e.message}`);
+      }
+      // Old logs / notifications (see logRetention.js for the windows). Up to 500 per
+      // collection per run; the four runs in this window clear a normal day's volume.
+      try {
+        const purged = await purgeOldLogs(db, admin.firestore.FieldPath, { now: nowUTC });
+        const total = Object.values(purged).reduce((a, b) => a + b, 0);
+        if (total > 0) logs.push(`[Retention] Deleted ${Object.entries(purged).map(([k, v]) => `${k} ${v}`).join(', ')}.`);
+      } catch (e) {
+        logs.push(`[Retention] Error: ${e.message}`);
       }
     }
 
