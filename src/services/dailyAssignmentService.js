@@ -1,17 +1,11 @@
 import {
   arrayUnion,
   arrayRemove,
-  collection,
   doc,
-  documentId,
   getDoc,
-  getDocs,
-  limit,
-  query,
   serverTimestamp,
   setDoc,
   deleteDoc,
-  where,
 } from "../firebase/firestoreWrapper";
 import { readChapterIndex } from "./questionIndexService";
 import { getQuestionsByIds as cdnByIds } from "./contentLoader";
@@ -258,12 +252,16 @@ export const buildDailyTargets = (studentProfile = {}) => {
   const hasCurriculumChapters = curriculumChapters.length > 0;
 
   let assignedYears;
-  if (hasConfigYears) {
-    assignedYears = config.years.map(normalizeYearLabel).filter(Boolean);
-  } else if (hasConfigChapters) {
-    assignedYears = [...new Set(
-      configChapters.map((chapterId) => CHAPTER_YEAR_MAP[chapterId]).filter(Boolean),
-    )].map(normalizeYearLabel).filter(Boolean);
+  if (hasConfigYears || hasConfigChapters) {
+    // Union of the wholesale-ticked years and the years the ticked chapters live in.
+    // Deriving this from config.years alone meant a chapter ticked inside a year that
+    // was not itself ticked never got visited here, so getValidChapterIdsForYears
+    // filtered it out and getQuestionTargets replaced it with the whole of the ticked
+    // year instead ("Year 11 (All) + y12e1-1..4" → all of Year 11, no Year 12 at all).
+    assignedYears = [...new Set([
+      ...(hasConfigYears ? config.years : []),
+      ...configChapters.map((chapterId) => CHAPTER_YEAR_MAP[chapterId]),
+    ].map(normalizeYearLabel).filter(Boolean))];
   } else if (hasCurriculumChapters) {
     // No dailyPracticeConfig set — fall back to curriculum-tab chapter assignment.
     assignedYears = [...new Set(
@@ -332,7 +330,13 @@ export const buildDailyTargets = (studentProfile = {}) => {
         });
       }
     });
-    return found.size > 0 ? [...found] : profileCourses;
+    if (found.size === 0) return profileCourses;
+    // A ticked chapter can sit in a course the profile does not list (a Year 12
+    // Extension 1 chapter for a mostly-Advanced student), but a wholesale-ticked year
+    // still needs the profile's own courses — deriving courses from the chapters alone
+    // dropped every Advanced chapter of a ticked year (Jamie Chan lost all 13 of y11a).
+    if (!hasConfigYears) return [...found];
+    return [...new Set([...profileCourses, ...found])];
   })();
 
   const validChapterIds = getValidChapterIdsForYears(assignedYears, assignedCourses);
@@ -343,6 +347,9 @@ export const buildDailyTargets = (studentProfile = {}) => {
     course: assignedCourses,
     assignedChapters,
     assignedTopics,
+    // Only dailyPracticeConfig distinguishes "whole year" from "these chapters". The
+    // curriculum-tab fallback has no whole-year notion, so it keeps the old scoping.
+    fullYears: hasDailyConfig ? (hasConfigYears ? config.years : []) : null,
   });
   const targetChapterIds = new Set(targetPool.map((target) => target.chapterId));
   if (targetPool.length === 0) {
@@ -439,47 +446,9 @@ const pickChaptersToQuery = (targets) => {
   );
 };
 
-// Legacy path for chapters that have no question_index doc yet: random-window
-// query so even unindexed chapters rotate through their pool instead of
-// always returning the deterministic first 100 docs.
-const fetchChapterQuestionsLegacy = async (chapterId, fetchLimit = 100) => {
-  const qRef = collection(db, "questions");
-  const randomKey = doc(qRef).id; // random auto-ID = uniform random start point
-  const snap = await getDocs(query(
-    qRef,
-    where("chapterId", "==", chapterId),
-    where(documentId(), ">=", randomKey),
-    limit(fetchLimit),
-  ));
-  let docs = snap.docs.map((item) => ({ id: item.id, ...item.data() }));
-  if (docs.length < fetchLimit) {
-    // Wrap around to the start of the ID range for the remainder.
-    const wrapSnap = await getDocs(query(
-      qRef,
-      where("chapterId", "==", chapterId),
-      where(documentId(), "<", randomKey),
-      limit(fetchLimit - docs.length),
-    ));
-    docs = docs.concat(wrapSnap.docs.map((item) => ({ id: item.id, ...item.data() })));
-  }
-  return docs;
-};
-
-// Fetch specific questions by ID (Firestore `in` allows 30 IDs per query).
-export const fetchQuestionsByIds = async (ids) => {
-  // Chapters served from /content/ never touch Firestore; `remaining` are the ids that still must.
-  const cdn = await cdnByIds(ids);
-  if (!cdn.remaining.length) return cdn.docs;
-  const qRef = collection(db, "questions");
-  const batches = [];
-  for (let i = 0; i < cdn.remaining.length; i += 30) {
-    batches.push(cdn.remaining.slice(i, i + 30));
-  }
-  const snaps = await Promise.all(
-    batches.map((batch) => getDocs(query(qRef, where(documentId(), "in", batch)))),
-  );
-  return cdn.docs.concat(snaps.flatMap((snap) => snap.docs.map((item) => ({ id: item.id, ...item.data() }))));
-};
+// Fetch specific questions by ID from the content build (/content/). Ids it does not
+// serve (removed from the bank) are simply absent from the result.
+export const fetchQuestionsByIds = async (ids) => (await cdnByIds(ids)).docs;
 
 /**
  * Uniform-random, seen-aware question selection.
@@ -491,7 +460,7 @@ export const fetchQuestionsByIds = async (ids) => {
  *
  * Candidate IDs are then drawn round-robin across chapters (balanced spread,
  * like the old pickBalancedManualQuestions) with a small over-sample buffer,
- * and only those candidates are fetched from Firestore.
+ * and only those candidates are fetched.
  */
 const fetchManualQuestions = async (targets, { questionCount = 10, recentlySeen = new Set() } = {}) => {
   const chaptersToQuery = pickChaptersToQuery(targets);
@@ -499,7 +468,7 @@ const fetchManualQuestions = async (targets, { questionCount = 10, recentlySeen 
 
   const chapterPools = await Promise.all(chaptersToQuery.map(async (chapterId) => {
     const index = await readChapterIndex(chapterId);
-    // index 없거나 ids 비어있으면 → legacy 경로로 폴백
+    // A chapter with no questions in the content build has nothing to draw.
     if (!index || index.ids.length === 0) return { chapterId, ids: null };
     const all = index.ids;
     let unseen = all.filter((id) => !recentlySeen.has(String(id)));
@@ -532,21 +501,13 @@ const fetchManualQuestions = async (targets, { questionCount = 10, recentlySeen 
     round += 1;
   }
 
-  // Indexed chapters: fetch only the sampled IDs.
-  const indexedDocs = candidateIds.length ? await fetchQuestionsByIds(candidateIds) : [];
+  // Fetch only the sampled IDs.
+  const docs = candidateIds.length ? await fetchQuestionsByIds(candidateIds) : [];
   // Preserve the balanced round-robin order of the sample.
   const orderById = new Map(candidateIds.map((id, i) => [String(id), i]));
-  indexedDocs.sort((a, b) => (orderById.get(String(a.id)) ?? 0) - (orderById.get(String(b.id)) ?? 0));
+  docs.sort((a, b) => (orderById.get(String(a.id)) ?? 0) - (orderById.get(String(b.id)) ?? 0));
 
-  // Unindexed chapters: legacy random-window fallback.
-  const legacyChapters = chapterPools.filter((p) => p.ids === null).map((p) => p.chapterId);
-  // Cap 늘림: 20개 챕터 전체 커버 가능하도록 (기존 6은 Year 9 전체 할당 시 seeded 챕터를 못 잡는 문제 있었음)
-  const cappedLegacyChapters = shuffle(legacyChapters).slice(0, 20);
-  const legacyDocs = (await Promise.all(
-    cappedLegacyChapters.map((chapterId) => fetchChapterQuestionsLegacy(chapterId)),
-  )).flat();
-
-  const questions = [...indexedDocs, ...legacyDocs]
+  const questions = docs
     .filter((data) => data.isActive !== false)
     .map(slimQuestion)
     .filter((question) => filterManualQuestion(question, targets));

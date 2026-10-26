@@ -162,10 +162,24 @@ export const QUESTION_BLUEPRINTS = Object.fromEntries(
   })
 );
 
-export const getQuestionTargets = ({ year = DEFAULT_YEAR, course = 'Advanced', assignedChapters = [], assignedTopics = [] } = {}) => {
+export const getQuestionTargets = ({ year = DEFAULT_YEAR, course = 'Advanced', assignedChapters = [], assignedTopics = [], fullYears = null } = {}) => {
   const years = Array.isArray(year) ? year : [year];
   const courses = Array.isArray(course) ? course : [course];
-  
+
+  // Daily Practice Settings ticks either a whole year ("Year 9 (All)") or individual
+  // chapters inside it, never both — handleToggleDailyYear drops a year's chapters when
+  // the year itself is ticked — so the scope is the UNION of the two. `fullYears` names
+  // the wholesale-ticked years; a year outside it contributes only its ticked chapters,
+  // and none if it has none.
+  //
+  // Passing null keeps the original per-year behaviour, where a year with no ticked
+  // chapter contributed ALL of its chapters. That fallback silently widened
+  // "Year 11 (All) + 4 Year 12 chapters" into every chapter of Year 11 while dropping
+  // the 4 Year 12 ones, and turned "Year 9 + Year 10 ch1-12" into all of Year 9.
+  const fullYearSet = fullYears === null
+    ? null
+    : new Set((fullYears || []).map(normalizeYearLabel).filter(Boolean));
+
   let allTargets = [];
   
   years.forEach(y => {
@@ -191,7 +205,11 @@ export const getQuestionTargets = ({ year = DEFAULT_YEAR, course = 'Advanced', a
     const validChapterIds = new Set(yearChapters.map(chapter => chapter.id));
     const chapterSet = new Set((assignedChapters || []).filter(chapterId => validChapterIds.has(chapterId)));
     const topicSet = new Set(assignedTopics || []);
-    const scopedChapters = chapterSet.size > 0 ? yearChapters.filter(chapter => chapterSet.has(chapter.id)) : yearChapters;
+    const scopedChapters = fullYearSet === null
+      ? (chapterSet.size > 0 ? yearChapters.filter(chapter => chapterSet.has(chapter.id)) : yearChapters)
+      : (fullYearSet.has(normalizeYearLabel(y))
+        ? yearChapters
+        : yearChapters.filter(chapter => chapterSet.has(chapter.id)));
 
     const targets = scopedChapters.flatMap(chapter => (chapter.topics || []).map(topic => {
       const inferredTypes = inferPrimaryGeneratorTypes({

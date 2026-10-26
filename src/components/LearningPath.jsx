@@ -184,10 +184,8 @@ const LearningPath = ({ profile }) => {
         const metaSnap = await withTimeout(getDoc(doc(db, 'sync_meta', 'curriculum')));
         const remoteVersion = Number(metaSnap.data()?.version || metaSnap.data()?.updatedAt?.toMillis?.() || 0);
         if (cached?.chapters?.length > 0 && cached?.version === remoteVersion && remoteVersion > 0) {
-          // Curriculum unchanged. Question content freshness is no longer
-          // eagerly checked here — each chapter/topic now self-validates
-          // against its own question_index entry the moment it's opened
-          // (chapterQuestionsCache), so there's nothing to pre-invalidate.
+          // Curriculum unchanged. Question content comes from /content/
+          // (hash-named, browser-cached), so there's nothing to pre-invalidate.
           return;
         }
         const snap = await withTimeout(getDoc(doc(db, 'curriculum', docId)));

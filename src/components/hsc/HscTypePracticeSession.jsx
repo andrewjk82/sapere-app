@@ -5,7 +5,7 @@ import {
   ArrowLeft, ArrowRight, CheckCircle2, XCircle, Clock,
   Lightbulb, RotateCcw, Trophy, ChevronDown, ChevronUp, Flag,
 } from 'lucide-react';
-import { addDoc, collection, doc, getDoc, getDocs, increment, query, setDoc, serverTimestamp, where } from 'firebase/firestore';
+import { addDoc, collection, doc, getDocs, increment, query, setDoc, serverTimestamp, where } from 'firebase/firestore';
 import { db } from '../../firebase/config';
 import { useAuth } from '../../context/AuthContext';
 import { useToast } from '../../context/ToastContext';
@@ -18,7 +18,7 @@ import { parseSolutionSteps } from '../../utils/solutionSteps';
 import { MATH_SYMBOLS } from '../../utils/challengeUtils';
 import DnaReasoningWarmup from './DnaReasoningWarmup';
 import QuestionReasoningSteps from './QuestionReasoningSteps';
-import { cdnEnabledAtAll, getQuestionsByHscType } from '../../services/contentLoader';
+import { getQuestionsByHscType } from '../../services/contentLoader';
 
 // Scaffolded learning mode (Sapere_Question_DNA_v2.0 §5 "Scaffolded — Practise").
 // Once a student has correctly answered a DNA's real final question this many
@@ -420,37 +420,10 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack, dnaLabels
     let cancelled = false;
     (async () => {
       try {
-        let qs = [];
-        if (cdnEnabledAtAll()) {
-          // Git-backed bank: hsc-types.<hash>.json indexes both dnaId and questionType per slug.
-          const all = await getQuestionsByHscType(type.slug);
-          if (cancelled) return;
-          qs = shuffleArray(all.filter(q => q.isActive !== false)).slice(0, type.dnaFocus ? 12 : 12).map(shuffleOptions);
-        } else if (type.dnaFocus) {
-          // DNA-focus mode — no dedicated index doc (small sets, ~30 max), a
-          // scoped equality query is fine (not an unfiltered collection scan).
-          const qSnap = await getDocs(query(collection(db, 'questions'), where('dnaId', '==', type.slug)));
-          if (cancelled) return;
-          qs = shuffleArray(qSnap.docs.map(d => ({ id: d.id, ...d.data() })).filter(q => q.isActive !== false)).slice(0, 12).map(shuffleOptions);
-        } else {
-          const indexSnap = await getDoc(doc(db, 'question_type_index', type.slug));
-          if (!indexSnap.exists()) {
-            const qSnap = await getDocs(query(collection(db, 'questions'), where('questionType', '==', type.slug)));
-            if (cancelled) return;
-            // isActive is filtered client-side, not in the query — a doc with no
-            // isActive field at all (the common case for pre-existing questions)
-            // must still count as active, and Firestore's `!=` filters exclude
-            // docs missing the field entirely. Same pattern as chapterQuestionsCache.js.
-            qs = shuffleArray(qSnap.docs.map(d => ({ id: d.id, ...d.data() })).filter(q => q.isActive !== false)).slice(0, 15).map(shuffleOptions);
-          } else {
-            const { ids = [] } = indexSnap.data();
-            if (cancelled) return;
-            const sample = shuffleArray(ids).slice(0, 12);
-            const fetched = await Promise.all(sample.map(id => getDoc(doc(db, 'questions', id))));
-            if (cancelled) return;
-            qs = fetched.filter(s => s.exists()).map(s => ({ id: s.id, ...s.data() })).filter(q => q.isActive !== false).map(shuffleOptions);
-          }
-        }
+        // Git-backed bank: hsc-types.<hash>.json indexes both dnaId and questionType per slug.
+        const all = await getQuestionsByHscType(type.slug);
+        if (cancelled) return;
+        const qs = shuffleArray(all.filter(q => q.isActive !== false)).slice(0, 12).map(shuffleOptions);
         setQueue(qs);
         setTotalQuestions(qs.length);
         setStage(qs.length > 0 ? 'quiz' : 'empty');

@@ -18,11 +18,11 @@
  *   examPrep:v1:<uid>:history     Session[] recent practice sessions
  */
 import { db } from '../firebase/config';
-import { collection, query, where, getDocs, getDoc, doc, setDoc, serverTimestamp, documentId } from 'firebase/firestore';
+import { getDoc, doc, setDoc, serverTimestamp } from 'firebase/firestore';
 import { addMistakes } from '../utils/secretNote';
 import { idbGet, idbSet, idbDel } from '../utils/idbStore';
 import { readChapterIndex } from './questionIndexService';
-import { getQuestionsByIds as cdnByIds } from './contentLoader';
+import { getManifest, getQuestionsByIds as cdnByIds } from './contentLoader';
 
 export const EXAM_PREP_NOTE_KIND = 'exam_prep';
 
@@ -558,20 +558,17 @@ const saveCachedPool = async (uid, selection, questions, questionsVersion) => {
 };
 
 /**
- * Fetch the candidate pool from Firestore once, then cache. Subsequent rounds
- * sample from the local cache for free.
+ * Build the candidate pool from the content build (/content/) once, then cache.
+ * Subsequent rounds sample from the local cache for free.
  *
  * Cache invalidation strategy:
- *   1. Read sync_meta/questions.version (1 read) — if version matches the
- *      cached pool, skip re-fetch entirely (free ride, no matter how old).
- *   2. Safety-net 24h TTL when version data is unavailable.
- *   Previously: 6h time-based TTL → could re-fetch hundreds of docs every 6h.
- *   Now: only re-fetches when questions actually changed.
+ *   1. The manifest's contentHash changes on every content build — if it matches
+ *      the cached pool, skip re-fetch entirely (no matter how old).
+ *   2. Safety-net 24h TTL when the manifest is unavailable.
  */
 export const ensurePool = async (uid, selection, { force = false } = {}) => {
-  // 1 read: check if the question bank changed since we last built the pool.
-  const syncSnap = await getDoc(doc(db, 'sync_meta', 'questions')).catch(() => null);
-  const latestVersion = syncSnap?.data()?.version || 0;
+  // Has the question bank changed since we last built the pool? (manifest is browser-cached)
+  const latestVersion = (await getManifest().catch(() => null))?.contentHash || 0;
 
   if (!force) {
     const cached = await loadCachedPool(uid, selection, latestVersion);
@@ -588,60 +585,16 @@ export const ensurePool = async (uid, selection, { force = false } = {}) => {
   const chapters = selection.chapters;
   const all = [];
 
-  // Index-based fetch (read-quota optimisation):
-  //   Old path read EVERY question doc in the selected chapters via
-  //   `where('chapterId', 'in', chunk)` — e.g. ~1,275 reads for full Year 7.
-  //   New path reads each chapter's question_index doc (1 read/chapter) to get
-  //   the active question IDs, then fetches only those docs by document ID
-  //   (~ceil(N/30) reads). Identical result set; ~90% fewer reads.
-  //
-  //   Chapters that have no question_index doc yet (legacy/unseeded) fall back
-  //   to the original chapterId query so coverage is unchanged.
-  const indexedIds = [];
-  const unindexedChapters = [];
+  // Each chapter's ids come from the content manifest; the docs from its topic files.
+  const ids = [];
   await Promise.all(chapters.map(async (chapterId) => {
     const index = await readChapterIndex(chapterId);
-    if (index && index.ids.length > 0) {
-      indexedIds.push(...index.ids);
-    } else {
-      unindexedChapters.push(chapterId);
-    }
+    if (index) ids.push(...index.ids);
   }));
+  (await cdnByIds([...new Set(ids.map(String))])).docs.forEach((d) => { if (d.isActive !== false) all.push(d); });
 
-  // Fetch indexed questions by document ID (Firestore `in` caps at 30 per query).
-  // A stale ID that no longer exists simply isn't returned — no error, fewer rows.
-  const cdn = await cdnByIds([...new Set(indexedIds.map(String))]);
-  cdn.docs.forEach((d) => { if (d.isActive !== false) all.push(d); });
-  const uniqueIds = cdn.remaining;
-  for (let i = 0; i < uniqueIds.length; i += 30) {
-    const batch = uniqueIds.slice(i, i + 30);
-    const snap = await getDocs(query(
-      collection(db, 'questions'),
-      where(documentId(), 'in', batch),
-    ));
-    snap.forEach((d) => {
-      const data = d.data();
-      if (data?.isActive === false) return;
-      all.push({ id: d.id, ...data });
-    });
-  }
-
-  // Legacy fallback: chapters without an index doc keep the original full query.
-  for (let i = 0; i < unindexedChapters.length; i += 30) {
-    const chunk = unindexedChapters.slice(i, i + 30);
-    const snap = await getDocs(query(
-      collection(db, 'questions'),
-      where('chapterId', 'in', chunk),
-    ));
-    snap.forEach((d) => {
-      const data = d.data();
-      if (data?.isActive === false) return;
-      all.push({ id: d.id, ...data });
-    });
-  }
-  // Dedupe by id — defensive: the indexed batch-fetch and the legacy fallback
-  // are mutually exclusive per chapter, but guard against any ID appearing in
-  // more than one chapter's index so a question is never offered twice.
+  // Dedupe by id — defensive: guard against any ID appearing in more than one
+  // chapter's index so a question is never offered twice.
   const seenIds = new Set();
   const deduped = all.filter((q) => {
     if (seenIds.has(q.id)) return false;

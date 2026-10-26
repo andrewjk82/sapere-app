@@ -1,13 +1,9 @@
 import { useState, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import { db } from '../firebase/config';
-import { collection, query, where, getDocs, doc, getDoc, updateDoc, serverTimestamp } from 'firebase/firestore';
 import { useToast } from '../context/ToastContext';
-import { syncQuestionIndexOnSave } from '../services/questionIndexService';
-import { applyCountDeltas } from '../services/questionCountsService';
 import QuestionPreviewCard from './QuestionPreviewCard';
 import QuestionBankModal from './QuestionBankModal';
-import { cdnEnabledAtAll, adminPendingQuestions, adminGetQuestion } from '../services/contentLoader';
+import { adminPendingQuestions, adminGetQuestion } from '../services/contentLoader';
 import { contentPatch } from '../services/contentApi';
 
 // QuestionBankModal expects a real curriculum `chapter` ({id, title, topics})
@@ -28,10 +24,9 @@ function synthesizeChapter(q) {
 // typed directly into the Question Bank editor (QuestionBankModal.jsx) or
 // written by the local corpus pipeline (tools/corpus/deploy.js) — starts
 // isActive:false + reviewStatus:'pending' and is invisible to students until
-// approved here. Approve/Reject only ever flip flags on the SAME doc; nothing
-// here is a bulk/unscoped read (reviewStatus=='pending' is a filtered query,
-// per CLAUDE.md's question-collection-scan guard) and nothing here touches
-// the local corpus tool at all.
+// approved here. Approve/Reject only ever flip flags on the SAME question in
+// content/chapters (via the content API); the pending list comes from the
+// published admin.<hash>.json, which never reaches students.
 //
 // Each question renders via QuestionPreviewCard — the SAME badge/options/
 // solution-steps layout as the existing Question Bank admin view — so a
@@ -49,9 +44,7 @@ const PendingReviewPanel = () => {
     let cancelled = false;
     (async () => {
       try {
-        const rows = cdnEnabledAtAll()
-          ? await adminPendingQuestions()   // published in admin.<hash>.json — pending never reaches students
-          : (await getDocs(query(collection(db, 'questions'), where('reviewStatus', '==', 'pending')))).docs.map((d) => ({ id: d.id, ...d.data() }));
+        const rows = await adminPendingQuestions();
         rows.sort((a, b) => (b.createdAt?.seconds || 0) - (a.createdAt?.seconds || 0));
         if (!cancelled) setItems(rows);
       } catch (err) {
@@ -67,37 +60,9 @@ const PendingReviewPanel = () => {
   const approve = async (q) => {
     setBusyId(q.id);
     try {
-      // Called inside an onClick-triggered async handler, not during render
-      // (same pattern as QuestionBankModal.jsx's handleSave).
-      // eslint-disable-next-line react-hooks/purity
-      const version = Date.now();
-      if (cdnEnabledAtAll()) {
-        await contentPatch(q.id, { isActive: true, reviewStatus: 'approved' }, { chapterId: q.chapterId });
-        setItems((prev) => prev.filter((it) => it.id !== q.id));
-        showToast('Approved — visible to students in ~2 minutes.', 'success');
-        return;
-      }
-      await updateDoc(doc(db, 'questions', q.id), {
-        isActive: true,
-        reviewStatus: 'approved',
-        updatedAt: serverTimestamp(),
-      });
-      await syncQuestionIndexOnSave({
-        questionId: q.id,
-        chapterId: q.chapterId,
-        prevChapterId: q.chapterId,
-        isActive: true,
-        prevIsActive: false,
-        version,
-      });
-      if (q.chapterId || q.topicId) {
-        await applyCountDeltas({
-          ...(q.chapterId ? { [q.chapterId]: 1 } : {}),
-          ...(q.topicId ? { [q.topicId]: 1 } : {}),
-        }, version);
-      }
+      await contentPatch(q.id, { isActive: true, reviewStatus: 'approved' }, { chapterId: q.chapterId });
       setItems((prev) => prev.filter((it) => it.id !== q.id));
-      showToast('Approved — now visible to students.', 'success');
+      showToast('Approved — visible to students in ~2 minutes.', 'success');
     } catch (err) {
       console.warn('Approve failed:', err);
       showToast('Failed to approve.', 'error');
@@ -110,11 +75,7 @@ const PendingReviewPanel = () => {
     if (!window.confirm(`Reject this question? It stays hidden from students but is not deleted — you can still find it via origin in the Question Bank.`)) return;
     setBusyId(q.id);
     try {
-      if (cdnEnabledAtAll()) await contentPatch(q.id, { isActive: false, reviewStatus: 'rejected' }, { chapterId: q.chapterId });
-      else await updateDoc(doc(db, 'questions', q.id), {
-        reviewStatus: 'rejected',
-        updatedAt: serverTimestamp(),
-      });
+      await contentPatch(q.id, { isActive: false, reviewStatus: 'rejected' }, { chapterId: q.chapterId });
       setItems((prev) => prev.filter((it) => it.id !== q.id));
       showToast('Rejected.', 'success');
     } catch (err) {
@@ -125,25 +86,17 @@ const PendingReviewPanel = () => {
     }
   };
 
-  // QuestionBankModal saves straight to Firestore itself — it never touches
+  // QuestionBankModal saves the edit itself — it never touches
   // isActive/reviewStatus on an edit (see QuestionBankModal.jsx's handleSave),
   // so the question stays pending after a content fix. Re-fetch just this one
-  // doc afterwards so the card reflects the edit without a full list reload.
+  // question afterwards so the card reflects the edit without a full list reload.
   const handleEditClose = async () => {
     const id = editingQuestion?.id;
     setEditingQuestion(null);
     if (!id) return;
     try {
-      if (cdnEnabledAtAll()) {
-        const updated = await adminGetQuestion(id);
-        if (updated) setItems((prev) => prev.map((it) => (it.id === id ? updated : it)));
-        return;
-      }
-      const snap = await getDoc(doc(db, 'questions', id));
-      if (snap.exists()) {
-        const updated = { id: snap.id, ...snap.data() };
-        setItems((prev) => prev.map((it) => (it.id === id ? updated : it)));
-      }
+      const updated = await adminGetQuestion(id);
+      if (updated) setItems((prev) => prev.map((it) => (it.id === id ? updated : it)));
     } catch (err) {
       console.warn('Failed to refresh edited question:', err);
     }

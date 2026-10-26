@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { ArrowLeft, CheckCircle2, ChevronLeft, ChevronRight, Clock, Lightbulb, Play, XCircle } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
-import { getTopicQuestions } from '../services/chapterQuestionsCache';
+import { getTopicQuestions } from '../services/contentLoader';
 import { parseSolutionSteps } from '../utils/solutionSteps';
 import { isDisplayedOptionCorrect } from '../utils/mcOptionShuffle';
 import {
@@ -177,11 +177,11 @@ const ScholarshipTest = ({ topic, chapter, profile, onBack }) => {
 
   useEffect(() => {
     let cancelled = false;
-    getTopicQuestions(user?.uid, chapter.id, topic.id)
+    getTopicQuestions(topic.id, { chapterId: chapter.id })
       .then((qs) => { if (!cancelled) setAll(qs || []); })
       .catch(() => { if (!cancelled) setFailed(true); });
     return () => { cancelled = true; };
-  }, [user?.uid, chapter.id, topic.id]);
+  }, [chapter.id, topic.id]);
 
   const byId = useMemo(() => new Map((all || []).map((q) => [String(q.id), q])), [all]);
   const save = useCallback((next) => { setSt(next); saveTestState(uid, chapter.id, topic.id, next); }, [uid, chapter.id, topic.id]);

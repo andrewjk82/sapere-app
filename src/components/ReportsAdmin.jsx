@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { collection, query, orderBy, getDocs, doc, updateDoc, deleteDoc, getDoc, limit, setDoc, arrayUnion, increment, runTransaction, serverTimestamp, getDocFromServer } from 'firebase/firestore';
+import { collection, query, orderBy, getDocs, doc, updateDoc, deleteDoc, getDoc, limit, setDoc, arrayUnion, increment, runTransaction, serverTimestamp } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { useAdminFeed } from '../context/AdminFeedContext';
-import { removeQuestionFromIndex } from '../services/questionIndexService';
 import { gradeSubmission } from '../services/gradingService';
 import { upsertRegisteredUserLeaderboard, upsertManualStudentLeaderboard } from '../services/leaderboardService';
 import { useToast } from '../context/ToastContext';
@@ -17,7 +16,7 @@ import { parseSolutionSteps } from '../utils/solutionSteps';
 import { answersMatch } from '../utils/answerMatching';
 import { resolveCorrectOptionIndex, resolveCorrectOptionText } from '../utils/mcOptionShuffle';
 import TrafficMonitorPanel from './TrafficMonitorPanel';
-import { cdnEnabledAtAll, adminGetQuestion } from '../services/contentLoader';
+import { adminGetQuestion } from '../services/contentLoader';
 import { contentPatch } from '../services/contentApi';
 
 // ── Report provenance ────────────────────────────────────────────────────────
@@ -213,16 +212,13 @@ const SourceBadge = ({ report }) => {
 };
 
 
-// Latest copy of a question for the report views: from the git bank (/content/) when enabled,
-// otherwise the live Firestore doc (getDocFromServer — never the IndexedDB cache).
+// Latest copy of a question for the report views, from the git bank (/content/).
 // contentLoader.adminGetQuestion resolves a sub-question's own id back to its parent multipart
 // (a student's report snapshots the specific part they were looking at, so `report.questionId` is
-// often a part id) — Firestore fallback has no equivalent (would need a collection scan, which is
-// banned); CDN mode is fully live in production, so this only matters if that switch is ever off.
+// often a part id).
 const readLiveQuestion = async (qid) => {
-  if (cdnEnabledAtAll()) { const d = await adminGetQuestion(qid); return d ? { ...d } : null; }
-  const snap = await getDocFromServer(doc(db, 'questions', qid));
-  return snap.exists() ? { id: snap.id, ...snap.data() } : null;
+  const d = await adminGetQuestion(qid);
+  return d ? { ...d } : null;
 };
 
 const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode, onOpenInBank }) => {
@@ -230,7 +226,7 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode, onOpenI
   const openInBank = async (qid) => {
     if (!qid || !onOpenInBank) return;
     let target = qid;
-    try { if (cdnEnabledAtAll()) { const d = await adminGetQuestion(qid); if (d?.id) target = d.id; } } catch { /* fall back to the raw id */ }
+    try { const d = await adminGetQuestion(qid); if (d?.id) target = d.id; } catch { /* fall back to the raw id */ }
     onOpenInBank(target);
   };
   const idChipProps = (qid) => (onOpenInBank ? { role: 'button', title: 'Open in Question Bank', onClick: () => openInBank(qid) } : {});
@@ -477,10 +473,7 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode, onOpenI
       // just resolved; they have no scored attempt to restore).
       // Credit restore is best-effort — failures don't block the delete.
       await Promise.all([
-        cdnEnabledAtAll()
-          ? contentPatch(question.id, { isActive: false }, { chapterId: question.chapterId })
-          : updateDoc(doc(db, 'questions', question.id), { isActive: false }),
-        cdnEnabledAtAll() ? Promise.resolve() : removeQuestionFromIndex(question.chapterId, question.id).catch(() => {}),
+        contentPatch(question.id, { isActive: false }, { chapterId: question.chapterId }),
         // Blocklist + version stamp. Students getDoc once when opening Secret
         // Note; if version matches local cache they skip prune work.
         setDoc(doc(db, 'system_config', 'secretNoteBlocklist'), {

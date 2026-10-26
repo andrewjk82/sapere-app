@@ -7,26 +7,16 @@ import {
   collection,
   query,
   where,
-  addDoc,
-  setDoc,
-  doc,
   updateDoc,
   serverTimestamp,
   getDocs,
-  orderBy,
-  limit,
-  startAfter,
-  documentId,
 } from 'firebase/firestore';
 import { useToast } from '../context/ToastContext';
 import { geometryToSvgDataUrl } from '../utils/geometrySvg';
 import { resolveCorrectOptionIndex } from '../utils/mcOptionShuffle';
-import { syncQuestionIndexOnSave, removeQuestionFromIndex } from '../services/questionIndexService';
-import { applyCountDeltas, stampCountsVersion } from '../services/questionCountsService';
-import { cdnEnabledAtAll, adminChapterQuestions } from '../services/contentLoader';
+import { adminChapterQuestions } from '../services/contentLoader';
 import { contentUpsert, contentPatch } from '../services/contentApi';
 
-const QUESTION_PAGE_SIZE = 10;
 const questionBankSessionCache = new Map();
 
 const stripUndefined = (value) => {
@@ -1508,9 +1498,6 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
   const [previewQuestion, setPreviewQuestion] = useState(null);
   const [questions, setQuestions] = useState([]);
   const [loading, setLoading] = useState(!directEditQuestion);
-  const [loadingMore, setLoadingMore] = useState(false);
-  const [lastQuestionDoc, setLastQuestionDoc] = useState(null);
-  const [hasMoreQuestions, setHasMoreQuestions] = useState(false);
   const [isFormOpen, setIsFormOpen] = useState(!!directEditQuestion);
   const [editingQuestion, setEditingQuestion] = useState(directEditQuestion ? directEditQuestion.id : null);
   const [editingQuestionChapterId, setEditingQuestionChapterId] = useState(directEditQuestion ? directEditQuestion.chapterId : null);
@@ -1541,43 +1528,17 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
     acceptedAnswers: [], // additional accepted answer strings
   });
 
-  const loadQuestionPage = React.useCallback(async ({ reset = false, cursor = null, currentQuestions = [] } = {}) => {
+  // Content is served from /content/ — the whole chapter is one cached fetch, no paging needed.
+  const loadQuestionPage = React.useCallback(async ({ reset = false } = {}) => {
     if (!chapterId) return;
-
     if (reset) setLoading(true);
-    else setLoadingMore(true);
-
     try {
-      if (cdnEnabledAtAll()) {
-        // Content is served from /content/ — the whole chapter is one cached fetch, no paging needed.
-        const all = (await adminChapterQuestions(chapterId)).sort((a, b) => String(a.id).localeCompare(String(b.id)));
-        setQuestions(all); setLastQuestionDoc(null); setHasMoreQuestions(false);
-        return;
-      }
-      const constraints = [
-        where('chapterId', '==', chapterId),
-        orderBy(documentId()),
-        limit(QUESTION_PAGE_SIZE + 1),
-      ];
-      if (!reset && cursor) constraints.splice(2, 0, startAfter(cursor));
-
-      const snap = await getDocs(query(collection(db, 'questions'), ...constraints));
-      const docs = snap.docs.slice(0, QUESTION_PAGE_SIZE);
-      const page = docs
-        .map(d => ({ id: d.id, ...d.data() }))
-        .filter(q => q.isActive !== false);
-      const nextQuestions = reset ? page : [...currentQuestions, ...page];
-      const hasMore = snap.docs.length > QUESTION_PAGE_SIZE;
-      const lastDoc = docs[docs.length - 1] || null;
-
-      setQuestions(nextQuestions);
-      setLastQuestionDoc(lastDoc);
-      setHasMoreQuestions(hasMore);
+      const all = (await adminChapterQuestions(chapterId)).sort((a, b) => String(a.id).localeCompare(String(b.id)));
+      setQuestions(all);
     } catch (err) {
       console.error('Question bank load failed:', err);
     } finally {
       setLoading(false);
-      setLoadingMore(false);
     }
   }, [chapterId]);
 
@@ -1869,108 +1830,20 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         requiresManualGrading: formData.requiresManualGrading || false,
         graphData,
         acceptedAnswers: (formData.acceptedAnswers || []).filter(Boolean),
-        updatedAt: serverTimestamp()
-        // isActive is intentionally NOT set here — see the create/edit
-        // branches below. A brand-new question must start invisible to
-        // students (isActive:false, reviewStatus:'pending') until a teacher
-        // approves it in the Pending Review tab; editing an EXISTING question
-        // must never touch its current isActive value (updateDoc only
-        // changes fields present in the payload, so omitting it here leaves
-        // whatever's already on the doc untouched).
+        // isActive is intentionally NOT set here. A brand-new question starts
+        // invisible to students (pending) until a teacher approves it in the
+        // Pending Review tab; editing an EXISTING question must never touch its
+        // current isActive value (the content API keeps fields the form omits).
       });
 
-      if (cdnEnabledAtAll()) {
-        // Git-backed bank: one API call commits the question; students see it after the build.
-        const docBody = { ...payload }; delete docBody.updatedAt;   // serverTimestamp() is not serialisable
-        if (editingQuestion) docBody.id = editingQuestion;
-        await contentUpsert(docBody, { chapterId: payload.chapterId, topicId: payload.topicId });
-        questionBankSessionCache.delete(`questions:${chapterId}`);
-        await loadQuestionPage({ reset: true });
-        if (directEditQuestion) onClose(); else setIsFormOpen(false);
-        showToast(editingQuestion ? 'Saved — live for students in ~2 minutes.' : 'Added as pending — approve it in Pending Review.', 'success');
-        return;
-      }
-
-      let savedQuestionId = editingQuestion;
-      let isNewPending = false;
-      if (editingQuestion) {
-        // Mark as teacher-edited so the chapter seeder never overwrites this
-        // question with the seed file content on future deploys.
-        const editPayload = { ...payload, origin: 'teacher' };
-        let savePayload = { ...editPayload };
-        try {
-          await updateDoc(doc(db, 'questions', editingQuestion), editPayload);
-        } catch (err) {
-          if (err.code === 'not-found') {
-            // The doc doesn't exist — this IS a new creation (just via the
-            // edit-recovery path), so it gets the same pending gate as any
-            // other new question.
-            savePayload.createdAt = serverTimestamp();
-            savePayload.isActive = false;
-            savePayload.reviewStatus = 'pending';
-            isNewPending = true;
-            await setDoc(doc(db, 'questions', editingQuestion), savePayload);
-          } else {
-            throw err;
-          }
-        }
-      } else {
-        payload.createdAt = serverTimestamp();
-        // Provenance: teacher-added questions are tagged 'teacher' so the
-        // chapter seeder's clear step never deletes them when re-seeding a
-        // topic that this question shares with a seed file.
-        payload.origin = 'teacher';
-        payload.isActive = false;
-        payload.reviewStatus = 'pending';
-        isNewPending = true;
-        const newRef = await addDoc(collection(db, 'questions'), payload);
-        savedQuestionId = newRef.id;
-      }
-      const bankVersion = Date.now();
-      // `version` bumps on every save (drives daily-assignment content refresh).
-      // `membershipVersion` bumps ONLY when the set of question IDs changes
-      // (add / delete) — it drives practice_pool rebuilds. A content-only edit
-      // leaves membershipVersion untouched (merge:true preserves it), so we
-      // avoid rebuilding every student's pool for a typo fix. A new PENDING
-      // question isn't part of that set yet either — it doesn't exist from
-      // the students' side until approved, so it skips the membership bump
-      // (and the count/index updates below) until PendingReviewPanel approves it.
-      await setDoc(doc(db, 'sync_meta', 'questions'), {
-        version: bankVersion,
-        ...(editingQuestion || isNewPending ? {} : { membershipVersion: bankVersion }),
-        updatedAt: serverTimestamp(),
-      }, { merge: true });
-      // Keep the aggregate counts doc in step: new (already-visible) question
-      // → +1 per id; edit → counts unchanged, just stamp the version so admin
-      // clients keep trusting the doc instead of rebuilding all counts. A new
-      // PENDING question isn't counted until approval (it isn't really "in"
-      // the bank yet from anyone's perspective but the teacher reviewing it).
-      if (isNewPending) {
-        stampCountsVersion(bankVersion);
-      } else if (!editingQuestion) {
-        applyCountDeltas({
-          ...(payload.chapterId ? { [payload.chapterId]: 1 } : {}),
-          ...(payload.topicId ? { [payload.topicId]: 1 } : {}),
-        }, bankVersion);
-      } else {
-        stampCountsVersion(bankVersion);
-      }
-      // Keep the per-chapter random-sampling index in sync (non-fatal). A
-      // pending question must NOT be added to the index yet — isActive:false
-      // here correctly keeps it out (arrayRemove is a harmless no-op since it
-      // was never in there).
-      syncQuestionIndexOnSave({ questionId: savedQuestionId, chapterId, prevChapterId: editingQuestionChapterId || undefined, isActive: !isNewPending, version: bankVersion })
-        .catch((err) => console.warn('question index sync failed:', err?.code || err));
-
+      // Git-backed bank: one API call commits the question; students see it after the build.
+      const docBody = { ...payload };
+      if (editingQuestion) docBody.id = editingQuestion;
+      await contentUpsert(docBody, { chapterId: payload.chapterId, topicId: payload.topicId });
       questionBankSessionCache.delete(`questions:${chapterId}`);
       await loadQuestionPage({ reset: true });
-      
-      if (directEditQuestion) {
-        onClose();
-      } else {
-        setIsFormOpen(false);
-      }
-      showToast("Question saved successfully!", 'success');
+      if (directEditQuestion) onClose(); else setIsFormOpen(false);
+      showToast(editingQuestion ? 'Saved — live for students in ~2 minutes.' : 'Added as pending — approve it in Pending Review.', 'success');
     } catch (e) {
       console.error('Question save failed:', e);
       showToast(`Error saving question: ${e.code || e.message || 'Unknown error'}`, 'error');
@@ -1980,38 +1853,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
   const handleDelete = async (id, { closeAfter = false } = {}) => {
     if (!window.confirm("Delete this question? This cannot be undone.")) return;
     try {
-      if (cdnEnabledAtAll()) {
-        await contentPatch(id, { isActive: false }, { chapterId: questions.find(q => q.id === id)?.chapterId || chapterId });
-      } else {
-      await updateDoc(doc(db, 'questions', id), {
-        isActive: false,
-        updatedAt: serverTimestamp(),
-      });
-      }
-      // Firestore-era bookkeeping (index / membershipVersion / counts) — irrelevant once the bank
-      // is served from /content/ (the manifest is the index), and the membershipVersion bump was the
-      // 2026-07 practice_pool storm trigger, so never fire it in CDN mode.
-      if (!cdnEnabledAtAll()) {
-      // One shared version across the index stamp and the counts doc — if
-      // they diverge, the counts doc looks stale and triggers a full rebuild.
-      const bankVersion = Date.now();
-      removeQuestionFromIndex(chapterId, id, bankVersion)
-        .catch((err) => console.warn('question index sync failed:', err?.code || err));
-      // Deletion changes the active-question set → bump membershipVersion so
-      // every student's practice_pool drops this ID on their next session.
-      setDoc(doc(db, 'sync_meta', 'questions'), {
-        membershipVersion: bankVersion,
-        updatedAt: serverTimestamp(),
-      }, { merge: true }).catch((err) => console.warn('membershipVersion bump failed:', err?.code || err));
-      // Aggregate counts doc: −1 for this question's chapter/topic.
-      {
-        const deleted = questions.find(q => q.id === id);
-        applyCountDeltas({
-          ...(deleted?.chapterId || chapterId ? { [deleted?.chapterId || chapterId]: -1 } : {}),
-          ...(deleted?.topicId ? { [deleted.topicId]: -1 } : {}),
-        }, bankVersion);
-      }
-      }
+      await contentPatch(id, { isActive: false }, { chapterId: questions.find(q => q.id === id)?.chapterId || chapterId });
       // Resolve all open reports linked to this question.
       // Query both questionId field and questionData.id (some reports store ID only in questionData).
       const [snap1, snap2] = await Promise.all([
@@ -2095,7 +1937,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
           {!isFormOpen ? (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-	                <span style={{ fontSize: '0.9rem', fontWeight: 800, color: '#64748b' }}>{questions.length}{hasMoreQuestions ? '+' : ''} Questions</span>
+	                <span style={{ fontSize: '0.9rem', fontWeight: 800, color: '#64748b' }}>{questions.length} Questions</span>
                 <button onClick={() => handleOpenForm()} className="app-button app-button--primary" style={{ padding: '10px 20px', fontSize: '0.9rem', borderRadius: '12px' }}>
                   <Plus size={16} /> Add Question
                 </button>
@@ -2185,16 +2027,6 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                       </div>
                     </div>
 	                  ))}
-                    {hasMoreQuestions && (
-                      <button
-                        onClick={() => loadQuestionPage({ cursor: lastQuestionDoc, currentQuestions: questions })}
-                        disabled={loadingMore}
-                        className="app-button app-button--secondary"
-                        style={{ width: '100%', justifyContent: 'center', borderRadius: '12px' }}
-                      >
-                        {loadingMore ? 'Loading...' : 'Load more'}
-                      </button>
-                    )}
 	                </div>
 	              )}
             </div>

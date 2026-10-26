@@ -1,9 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
-import { collection, getDocs, query, where } from 'firebase/firestore';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, Search, ListChecks } from 'lucide-react';
-import { db } from '../../firebase/config';
-import { cdnEnabledAtAll, getQuestionsWithReasoningBlueprint } from '../../services/contentLoader';
+import { getQuestionsWithReasoningBlueprint } from '../../services/contentLoader';
 import MathView from '../MathView';
 import ReasoningStepCard from './ReasoningStepCard';
 
@@ -13,11 +11,9 @@ import ReasoningStepCard from './ReasoningStepCard';
 // DnaWarmupReviewPage.jsx), so a teacher can review the actual question
 // alongside its pre-steps without stepping through a live practice session.
 //
-// Query: `where('hasReasoningBlueprint', '==', true)` — a normal indexed
-// equality query, NOT a scan of the questions collection (see
-// tools/scripts/backfillReasoningBlueprintFlag.js, which backfilled this
-// flag onto every question a reasoning_blueprint was actually added to).
-// Bounded to however many questions carry the flag (154 as of 2026-08-16).
+// Source: every hasReasoningBlueprint question in the published content build
+// (contentLoader.getQuestionsWithReasoningBlueprint — the hsc-types byDna index,
+// then a by-id fetch; 154 questions as of 2026-08-16).
 //
 // Requested 2026-08-16, right after DnaWarmupReviewPage.jsx: "각 문제마다
 // 사전단계도 선생님이 미리 확인할수 있으면 좋겟어" — same review need, one
@@ -95,9 +91,7 @@ const QuestionPreStepsReviewPage = () => {
     let cancelled = false;
     (async () => {
       try {
-        const list = cdnEnabledAtAll()
-          ? await getQuestionsWithReasoningBlueprint()
-          : (await getDocs(query(collection(db, 'questions'), where('hasReasoningBlueprint', '==', true)))).docs.map((d) => ({ id: d.id, ...d.data() }));
+        const list = await getQuestionsWithReasoningBlueprint();
         if (!cancelled) setQuestions(list);
       } catch (e) {
         console.warn('Failed to load questions with pre-steps:', e);

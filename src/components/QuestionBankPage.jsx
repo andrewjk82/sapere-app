@@ -1,11 +1,9 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-  ChevronLeft, ChevronRight, ArrowLeft, Clock, Lightbulb, Pencil, Plus, Trash2, DownloadCloud, FileDown, ClipboardCheck, Eye, Zap, BookLock, Star, Highlighter
+  ChevronLeft, ChevronRight, ArrowLeft, Clock, Lightbulb, Pencil, Plus, Trash2, FileDown, ClipboardCheck, Eye, Zap, BookLock, Star, Highlighter
 } from 'lucide-react';
 import { exportQuestionsPdf } from '../utils/exportPdf';
-import { db } from '../firebase/config';
-import { collection, query, where, getDocs, doc, getDoc, setDoc, updateDoc, serverTimestamp, getDocFromServer, getDocsFromServer, documentId } from 'firebase/firestore';
 import MathView from './MathView';
 import MathInput from './MathInput';
 import QuestionBankModal from './QuestionBankModal';
@@ -25,11 +23,9 @@ const QB_QUICK_INSERTS = [
   { label: '\u2265', latex: '\\ge', title: 'Greater than or equal to' },
 ];
 import { useToast } from '../context/ToastContext';
-import { removeQuestionFromIndex } from '../services/questionIndexService';
-import { applyCountDeltas } from '../services/questionCountsService';
 import { answersMatch } from '../utils/answerMatching';
 import { resolveCorrectOptionIndex } from '../utils/mcOptionShuffle';
-import { cdnEnabledAtAll, adminChapterQuestions, getChapterQuestions as cdnChapter, getQuestionsByHscType, searchIds, getQuestionsByIds as cdnByIds, adminGetQuestion } from '../services/contentLoader';
+import { adminChapterQuestions, getChapterQuestions as cdnChapter, getQuestionsByHscType, searchIds, getQuestionsByIds as cdnByIds, adminGetQuestion } from '../services/contentLoader';
 import { contentPatch } from '../services/contentApi';
 
 // Split a long model-answer string into sentence-level lines for readability.
@@ -76,7 +72,6 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
   const [previewAnswer, setPreviewAnswer] = useState(''); // teacher can test-type like a student
   const qbMathRef = useRef(null);
   const [creatingNew, setCreatingNew] = useState(false);
-  const [isSyncingAll, setIsSyncingAll] = useState(false);
   const [showPdfModal, setShowPdfModal] = useState(false);
   const [pdfCount, setPdfCount] = useState(10);
   const [pdfWithAnswers, setPdfWithAnswers] = useState(true);
@@ -91,10 +86,9 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
     // 1. Search locally in the loaded/visible list — ALL substring matches,
     // not just the first, so a prefix like "girr2020" jumps to every
     // question from that paper already loaded in this topic.
-    const visibleIds = questionIds.filter(id => !deadIds.has(id));
-    const localMatches = visibleIds.filter(id => id.toLowerCase().includes(trimmed.toLowerCase()));
+    const localMatches = questionIds.filter(id => id.toLowerCase().includes(trimmed.toLowerCase()));
     if (localMatches.length > 0) {
-      setCurrentIdx(visibleIds.indexOf(localMatches[0]));
+      setCurrentIdx(questionIds.indexOf(localMatches[0]));
       showToast(
         localMatches.length === 1
           ? 'Found question in current list!'
@@ -108,55 +102,16 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
     // 2. Search globally
     setLoading(true);
     try {
-      if (cdnEnabledAtAll()) {
-        const exact = await adminGetQuestion(trimmed);
-        const hits = exact && exact.isActive !== false ? [exact] : (await cdnByIds((await searchIds(trimmed)).map((h) => h.id))).docs.filter((d) => d.isActive !== false);
-        if (!hits.length) { showToast(`No question found with ID "${trimmed}"`, 'error'); return; }
-        const newIds = hits.map((d) => d.id).sort();
-        const newLoaded = {}; hits.forEach((d) => { newLoaded[d.id] = d; });
-        setLoadedQuestions((prev) => ({ ...prev, ...newLoaded }));
-        setQuestionIds((prev) => [...newIds, ...prev.filter((id) => !newIds.includes(id))]);
-        setCurrentIdx(0);
-        showToast(newIds.length === 1 ? 'Question found and loaded globally!' : `Loaded ${newIds.length} questions with ID starting "${trimmed}"`, 'success');
-        setSearchQuery('');
-        return;
-      }
-      // Exact ID match first (fast single-doc read).
-      const docRef = doc(db, 'questions', trimmed);
-      const docSnap = await getDocFromServer(docRef);
-      if (docSnap.exists() && docSnap.data().isActive !== false) {
-        const qData = { id: docSnap.id, ...docSnap.data() };
-        setLoadedQuestions(prev => ({ ...prev, [trimmed]: qData }));
-        setQuestionIds(prev => [trimmed, ...prev.filter(id => id !== trimmed)]);
-        setCurrentIdx(0);
-        showToast('Question found and loaded globally!', 'success');
-        setSearchQuery('');
-        return;
-      }
-
-      // No exact match — treat the query as an ID prefix (e.g. "girr2020"
-      // matches every "girr2020-mc1", "girr2020-mc16", "girr2020-mc16s" ...)
-      // and load every doc whose id starts with it.
-      const prefixSnap = await getDocsFromServer(
-        query(
-          collection(db, 'questions'),
-          where(documentId(), '>=', trimmed),
-          where(documentId(), '<', trimmed + String.fromCharCode(0xf8ff)),
-        )
-      );
-      const activeDocs = prefixSnap.docs.filter(d => d.data().isActive !== false);
-      if (activeDocs.length > 0) {
-        const newIds = activeDocs.map(d => d.id).sort();
-        const newLoaded = {};
-        activeDocs.forEach(d => { newLoaded[d.id] = { id: d.id, ...d.data() }; });
-        setLoadedQuestions(prev => ({ ...prev, ...newLoaded }));
-        setQuestionIds(prev => [...newIds, ...prev.filter(id => !newIds.includes(id))]);
-        setCurrentIdx(0);
-        showToast(`Found ${activeDocs.length} matching question${activeDocs.length === 1 ? '' : 's'}!`, 'success');
-        setSearchQuery('');
-      } else {
-        showToast('Question ID not found in database', 'error');
-      }
+      const exact = await adminGetQuestion(trimmed);
+      const hits = exact && exact.isActive !== false ? [exact] : (await cdnByIds((await searchIds(trimmed)).map((h) => h.id))).docs.filter((d) => d.isActive !== false);
+      if (!hits.length) { showToast(`No question found with ID "${trimmed}"`, 'error'); return; }
+      const newIds = hits.map((d) => d.id).sort();
+      const newLoaded = {}; hits.forEach((d) => { newLoaded[d.id] = d; });
+      setLoadedQuestions((prev) => ({ ...prev, ...newLoaded }));
+      setQuestionIds((prev) => [...newIds, ...prev.filter((id) => !newIds.includes(id))]);
+      setCurrentIdx(0);
+      showToast(newIds.length === 1 ? 'Question found and loaded globally!' : `Loaded ${newIds.length} questions with ID starting "${trimmed}"`, 'success');
+      setSearchQuery('');
     } catch (err) {
       console.error('Global question search failed:', err);
       showToast('Search failed: ' + err.message, 'error');
@@ -165,89 +120,22 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
     }
   };
 
-  const handleSyncAll = async () => {
-    if (!import.meta.env.DEV) {
-      showToast('Seed sync only works in local dev mode. Run: npm run sync-seeds', 'warning');
-      return;
-    }
-    if (!window.confirm('This will fetch all questions from the database and overwrite the local seed files. Proceed?')) return;
-    setIsSyncingAll(true);
-    try {
-      const res = await fetch('/__local-api/sync-all', { method: 'POST' });
-      const data = await res.json();
-      if (data.success) {
-        showToast('Successfully synced DB to seed files!', 'success');
-      } else {
-        throw new Error(data.error || 'Unknown error');
-      }
-    } catch (e) {
-      console.error(e);
-      showToast('Failed to sync: ' + e.message, 'error');
-    } finally {
-      setIsSyncingAll(false);
-    }
-  };
-
   const handleExportPdf = () => {
     setShowPdfModal(false);
+    // reload() loads every question of the view up front, so the list is always complete here.
     const allQuestions = questionIds.map(id => loadedQuestions[id]).filter(Boolean);
-
-    // If not all questions are loaded yet, load them first
-    const unloadedIds = questionIds.filter(id => !loadedQuestions[id]);
-    if (unloadedIds.length > 0) {
-      showToast('Loading all questions before export...', 'info');
-      const fetchAll = async () => {
-        try {
-          const chunks = [];
-          for (let i = 0; i < unloadedIds.length; i += 30) {
-            chunks.push(unloadedIds.slice(i, i + 30));
-          }
-          const snaps = await Promise.all(
-            chunks.map(chunk => getDocsFromServer(query(collection(db, 'questions'), where('__name__', 'in', chunk))))
-          );
-          const fetched = {};
-          snaps.forEach(snap => {
-            snap.docs.forEach(d => {
-              fetched[d.id] = { id: d.id, ...d.data() };
-            });
-          });
-          setLoadedQuestions(prev => {
-            const merged = { ...prev, ...fetched };
-            const fullList = questionIds.map(id => merged[id]).filter(Boolean);
-            exportQuestionsPdf(fullList, {
-              chapterTitle: chapter.title,
-              topicTitle: topic?.title || 'All Topics',
-              year: chapter.year || '',
-              course: chapter.course || '',
-              readingTime: pdfReadingTime,
-              workingTime: pdfWorkingTime,
-            }, { showAnswers: pdfWithAnswers, count: pdfCount, bothVersions: pdfWithAnswers });
-            return merged;
-          });
-        } catch (err) {
-          console.error('Failed to load all questions for PDF:', err);
-          showToast('Failed to load questions for PDF export', 'error');
-        }
-      };
-      fetchAll();
-    } else {
-      exportQuestionsPdf(allQuestions, {
-        chapterTitle: chapter.title,
-        topicTitle: topic?.title || 'All Topics',
-        year: chapter.year || '',
-        course: chapter.course || '',
-        readingTime: pdfReadingTime,
-        workingTime: pdfWorkingTime,
-      }, { showAnswers: pdfWithAnswers, count: pdfCount, bothVersions: pdfWithAnswers });
-    }
+    exportQuestionsPdf(allQuestions, {
+      chapterTitle: chapter.title,
+      topicTitle: topic?.title || 'All Topics',
+      year: chapter.year || '',
+      course: chapter.course || '',
+      readingTime: pdfReadingTime,
+      workingTime: pdfWorkingTime,
+    }, { showAnswers: pdfWithAnswers, count: pdfCount, bothVersions: pdfWithAnswers });
   };
 
   const [questionIds, setQuestionIds] = useState([]);
   const [loadedQuestions, setLoadedQuestions] = useState({}); // id -> question doc
-  // IDs present in question_index but with no matching (active) question doc —
-  // a stale index. We drop these from the visible list so the bank never gets
-  // stuck on "Loading question details..." for a pointer that can't resolve.
-  const [deadIds, setDeadIds] = useState(() => new Set());
   const [viewedIds, setViewedIds] = useState(() => {
     try {
       const saved = localStorage.getItem('sapere_viewed_questions');
@@ -259,145 +147,29 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
 
   const reload = useCallback(async () => {
     setLoading(true);
-    setDeadIds(new Set()); // fresh chapter/topic — don't carry over dead pointers
     try {
       const isTypeChapter = chapter.id?.startsWith('type:');
       const isExamChapter = chapter.id?.startsWith('exam:');
       const isSearchChapter = chapter.id?.startsWith('search:');
-      let ids = [];
-
-      if (cdnEnabledAtAll()) {
-        // Git-backed bank served from /content/: load every doc for this view in one go
-        // (chapter = a few cached files), so the lazy per-id fetch below has nothing left to do.
-        let docs;
-        if (isSearchChapter) {
-          const prefix = chapter.searchPrefix || chapter.id.replace('search:', '');
-          const hits = await searchIds(prefix);
-          docs = hits.length ? (await cdnByIds(hits.map((h) => h.id))).docs : [];
-          if (!docs.length) showToast(`No questions found with ID starting "${prefix}"`, 'error');
-        } else if (isTypeChapter) {
-          docs = await getQuestionsByHscType(chapter.typeSlug || chapter.id.replace('type:', ''));
-        } else if (isExamChapter) {
-          docs = await cdnChapter(chapter.id);
-        } else {
-          docs = await adminChapterQuestions(chapter.id, topic?.id);
-        }
-        docs = docs.filter((d) => d.isActive !== false).sort((a, b) => String(a.id).localeCompare(String(b.id)));
-        const fetched = {}; docs.forEach((d) => { fetched[d.id] = d; });
-        setLoadedQuestions((prev) => ({ ...prev, ...fetched }));
-        const cdnIds = docs.map((d) => d.id);
-        setQuestionIds(cdnIds);
-        setCurrentIdx((prev) => (prev >= cdnIds.length ? Math.max(0, cdnIds.length - 1) : prev));
-        return;
-      }
-
+      // Git-backed bank served from /content/: load every doc for this view in one go
+      // (chapter = a few cached files).
+      let docs;
       if (isSearchChapter) {
-        // Global ID-prefix search, any chapter/topic — ONE bounded
-        // documentId() range query, never a full collection scan.
         const prefix = chapter.searchPrefix || chapter.id.replace('search:', '');
-        const snap = await getDocsFromServer(
-          query(
-            collection(db, 'questions'),
-            where(documentId(), '>=', prefix),
-            where(documentId(), '<', prefix + String.fromCharCode(0xf8ff)),
-          )
-        );
-        const docs = snap.docs.map(d => ({ id: d.id, ...d.data() })).filter(q => q.isActive !== false);
-        docs.sort((a, b) => String(a.id).localeCompare(String(b.id)));
-        const fetched = {};
-        docs.forEach(q => { fetched[q.id] = q; });
-        setLoadedQuestions(prev => ({ ...prev, ...fetched }));
-        ids = docs.map(q => q.id);
-        if (ids.length === 0) {
-          showToast(`No questions found with ID starting "${prefix}"`, 'error');
-        }
+        const hits = await searchIds(prefix);
+        docs = hits.length ? (await cdnByIds(hits.map((h) => h.id))).docs : [];
+        if (!docs.length) showToast(`No questions found with ID starting "${prefix}"`, 'error');
       } else if (isTypeChapter) {
-        const typeSlug = chapter.typeSlug || chapter.id.replace('type:', '');
-        const indexDoc = await getDoc(doc(db, 'question_type_index', typeSlug));
-        ids = indexDoc.exists() ? (indexDoc.data().ids || []) : [];
+        docs = await getQuestionsByHscType(chapter.typeSlug || chapter.id.replace('type:', ''));
       } else if (isExamChapter) {
-        const examPaperKey = chapter.examPaper || chapter.id?.replace('exam:', '');
-        // For exam chapters, we query and filter IDs
-        const snap = await getDocsFromServer(
-          query(collection(db, 'questions'), where('examPaper', '==', examPaperKey))
-        );
-        const docs = snap.docs.map(d => ({ id: d.id, ...d.data() })).filter(q => q.isActive !== false);
-        docs.sort((a, b) => String(a.id).localeCompare(String(b.id)));
-        const fetched = {};
-        docs.forEach(q => { fetched[q.id] = q; });
-        setLoadedQuestions(prev => ({ ...prev, ...fetched }));
-        ids = docs.map(q => q.id);
+        docs = await cdnChapter(chapter.id);
       } else {
-        // Regular chapter: fetch IDs from question_index
-        const indexDoc = await getDocFromServer(doc(db, 'question_index', chapter.id));
-        if (indexDoc.exists()) {
-          ids = indexDoc.data().ids || [];
-        } else {
-          // Fallback projection query (if index is not ready yet)
-          const snap = await getDocsFromServer(
-            query(collection(db, 'questions'), where('chapterId', '==', chapter.id))
-          );
-          const docs = snap.docs.map(d => ({ id: d.id, ...d.data() })).filter(q => q.isActive !== false);
-          docs.sort((a, b) => String(a.id).localeCompare(String(b.id)));
-          const fetched = {};
-          docs.forEach(q => { fetched[q.id] = q; });
-          setLoadedQuestions(prev => ({ ...prev, ...fetched }));
-          ids = docs.map(q => q.id);
-        }
-
-        // Filter by topic if selected. The chapter index can be PARTIALLY
-        // stale for a topic (e.g. an admin script re-imported questions
-        // without rebuilding question_index) — and a partial prefix match
-        // here would silently hide the rest of the topic. So the topicId
-        // query is always the ground truth, unioned with prefix matches to
-        // keep questions whose doc lacks a topicId field but carries the
-        // topic in its id.
-        if (topic?.id) {
-          const prefixIds = ids.filter(id => id.startsWith(topic.id) || id.toLowerCase().includes(topic.id.toLowerCase()));
-          const snap = await getDocsFromServer(
-            query(collection(db, 'questions'), where('topicId', '==', topic.id))
-          );
-          const docs = snap.docs.map(d => ({ id: d.id, ...d.data() })).filter(q => q.isActive !== false);
-          const fetched = {};
-          docs.forEach(q => { fetched[q.id] = q; });
-          setLoadedQuestions(prev => ({ ...prev, ...fetched }));
-          ids = [...new Set([...prefixIds, ...docs.map(q => q.id)])];
-        }
+        docs = await adminChapterQuestions(chapter.id, topic?.id);
       }
-
-      // Fallback to local seeds ONLY if we got nothing (quota exhausted / offline)
-      if (ids.length === 0) {
-        let local = [];
-        if (topic?.id === 'y11a-1c') {
-          try {
-            const { Y11_CH1C_QUESTIONS } = await import('../constants/seedYear11Ch1CQuestions.js');
-            local = Y11_CH1C_QUESTIONS;
-          } catch (err) {
-            console.warn('Failed to load local fallback for 1C:', err);
-          }
-        } else if (topic?.id === 'y11a-1D') {
-          try {
-            const { Y11_CH1D_QUESTIONS } = await import('../constants/seedYear11Ch1DQuestions.js');
-            local = Y11_CH1D_QUESTIONS;
-          } catch (err) {
-            console.warn('Failed to load local fallback for 1D:', err);
-          }
-        }
-        if (local.length > 0) {
-          const docs = local.map((q, idx) => ({
-            id: q.id || `${topic.id}-q${idx}`,
-            ...q,
-            type: q.type || 'multiple_choice'
-          }));
-          docs.sort((a, b) => String(a.id).localeCompare(String(b.id)));
-          const fetched = {};
-          docs.forEach(q => { fetched[q.id] = q; });
-          setLoadedQuestions(prev => ({ ...prev, ...fetched }));
-          ids = docs.map(q => q.id);
-        }
-      }
-
-      ids.sort((a, b) => String(a).localeCompare(String(b)));
+      docs = docs.filter((d) => d.isActive !== false).sort((a, b) => String(a.id).localeCompare(String(b.id)));
+      const fetched = {}; docs.forEach((d) => { fetched[d.id] = d; });
+      setLoadedQuestions((prev) => ({ ...prev, ...fetched }));
+      const ids = docs.map((d) => d.id);
       setQuestionIds(ids);
       setCurrentIdx((prev) => (prev >= ids.length ? Math.max(0, ids.length - 1) : prev));
     } catch (e) {
@@ -411,104 +183,29 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
   useEffect(() => { reload(); }, [reload]);
 
   useEffect(() => {
-    const visibleIds = questionIds.filter(id => !deadIds.has(id));
-    if (visibleIds.length > 0 && currentIdx < visibleIds.length) {
-      const qId = visibleIds[currentIdx];
+    if (questionIds.length > 0 && currentIdx < questionIds.length) {
+      const qId = questionIds[currentIdx];
       if (qId && !viewedIds.includes(qId)) {
         const nextViewed = [...viewedIds, qId];
         setViewedIds(nextViewed);
         localStorage.setItem('sapere_viewed_questions', JSON.stringify(nextViewed));
       }
     }
-  }, [currentIdx, questionIds, deadIds, viewedIds]);
+  }, [currentIdx, questionIds, viewedIds]);
 
-  // Clear the [NEW] flag in Firestore the moment its question is actually
-  // viewed, so the badge doesn't accumulate forever (isNew is otherwise
-  // never reset — see tools/audit-state/PROGRESS.md). Only fires when the
-  // loaded doc still has isNew:true, so normal browsing writes nothing.
+  // Clear the [NEW] badge locally once its question is viewed (isNew is a
+  // Firestore-era flag; nothing is persisted for it in the git bank).
   useEffect(() => {
-    const visibleIds = questionIds.filter(id => !deadIds.has(id));
-    const qId = visibleIds[currentIdx];
+    const qId = questionIds[currentIdx];
     if (!qId) return;
     const loaded = loadedQuestions[qId];
     if (!loaded || loaded.isNew !== true) return;
     setLoadedQuestions(prev => ({ ...prev, [qId]: { ...prev[qId], isNew: false } }));
-    if (cdnEnabledAtAll()) return;   // isNew is a Firestore-era badge; nothing to persist in the git bank
-    updateDoc(doc(db, 'questions', qId), { isNew: false }).catch((e) => {
-      console.error('Failed to clear isNew flag', qId, e);
-    });
-  }, [currentIdx, questionIds, deadIds, loadedQuestions]);
+  }, [currentIdx, questionIds, loadedQuestions]);
 
-  // Load question docs on demand around currentIdx (active + next 10 + prev 5 for caching)
-  useEffect(() => {
-    if (loading || questionIds.length === 0) return;
-    
-    const fetchAroundIndex = async () => {
-      const windowSize = 20;
-      // Window over the *visible* list so the current question is always in range.
-      const visibleIds = questionIds.filter(id => !deadIds.has(id));
-      const startIndex = Math.max(0, currentIdx - 5);
-      const endIndex = Math.min(visibleIds.length, startIndex + windowSize);
-
-      const idsToFetch = [];
-      for (let i = startIndex; i < endIndex; i++) {
-        const id = visibleIds[i];
-        if (id && !loadedQuestions[id]) {
-          idsToFetch.push(id);
-        }
-      }
-
-      if (idsToFetch.length === 0) return;
-
-      try {
-        // Fetch in chunks of 30 (Firestore limit is 30 for 'in' queries)
-        const chunks = [];
-        for (let i = 0; i < idsToFetch.length; i += 30) {
-          chunks.push(idsToFetch.slice(i, i + 30));
-        }
-
-        // getDocsFromServer (not getDocs) — the plain SDK call happily
-        // answers from Firestore's local IndexedDB cache when a document is
-        // already cached, so an admin re-editing a question's content (e.g.
-        // graphData) and reloading this page kept seeing the stale cached
-        // copy indefinitely, even across hard refreshes (persistence
-        // survives those). This is the Question Bank editor — it must
-        // always reflect the live doc.
-        const snaps = await Promise.all(
-          chunks.map(chunk => getDocsFromServer(query(collection(db, 'questions'), where('__name__', 'in', chunk))))
-        );
-
-        const fetched = {};
-        snaps.forEach(snap => {
-          snap.docs.forEach(d => {
-            fetched[d.id] = { id: d.id, ...d.data() };
-          });
-        });
-
-        setLoadedQuestions(prev => ({ ...prev, ...fetched }));
-
-        // Any id we asked for but didn't get back is a stale index pointer —
-        // mark it dead so it's dropped from the list instead of spinning forever.
-        const newlyDead = idsToFetch.filter(id => !fetched[id]);
-        if (newlyDead.length) {
-          setDeadIds(prev => {
-            const next = new Set(prev);
-            newlyDead.forEach(id => next.add(id));
-            return next;
-          });
-        }
-      } catch (err) {
-        console.error('Failed to prefetch questions:', err);
-      }
-    };
-
-    fetchAroundIndex();
-  }, [currentIdx, questionIds, loadedQuestions, loading, deadIds]);
-
-  const liveIds = questionIds.filter(id => !deadIds.has(id));
-  const questions = liveIds.map(id => loadedQuestions[id] || { id, loading: true });
+  const questions = questionIds.map(id => loadedQuestions[id] || { id, loading: true });
   const q = questions[currentIdx]?.loading ? null : questions[currentIdx];
-  const total = liveIds.length;
+  const total = questionIds.length;
   const isFillBlank = q?.type === 'fill_blank';
   const isShort = q?.type === 'short_answer';
   // Per-question XP (1–10). Multi-part questions store it on each part, so
@@ -519,8 +216,7 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
       ? { xp }
       : { subQuestions: q.subQuestions.map((sq, i) => (i === sIdx ? { ...sq, xp } : sq)) };
     try {
-      if (cdnEnabledAtAll()) await contentPatch(q.id, fields, { chapterId: q.chapterId || chapter?.id });
-      else await updateDoc(doc(db, 'questions', q.id), fields);
+      await contentPatch(q.id, fields, { chapterId: q.chapterId || chapter?.id });
       setLoadedQuestions(prev => ({ ...prev, [q.id]: { ...prev[q.id], ...fields } }));
       showToast(`XP set to ${xp}${sIdx == null ? '' : ` for part (${String.fromCharCode(97 + sIdx)})`}`, 'success');
     } catch (err) {
@@ -561,32 +257,8 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
     if (!q) return;
     if (!window.confirm(`Delete this question (${q.id})?`)) return;
     try {
-      if (cdnEnabledAtAll()) {
-        await contentPatch(q.id, { isActive: false }, { chapterId: q.chapterId || chapter?.id });
-        showToast('Question deleted — gone for students in ~2 minutes', 'success');
-        await reload();
-        return;
-      }
-      await updateDoc(doc(db, 'questions', q.id), { isActive: false, updatedAt: serverTimestamp() });
-      // One shared version across the index stamp, sync_meta and the counts
-      // doc — if they diverge the counts doc looks stale and triggers a full
-      // rebuild on the next admin Curriculum load.
-      const bankVersion = Date.now();
-      removeQuestionFromIndex(q.chapterId || chapter?.id, q.id, bankVersion)
-        .catch((err) => console.warn('question index sync failed:', err?.code || err));
-      // Bump the global questions sync_meta so chapter-card counts on the
-      // Curriculum page refresh on next visit instead of staying stale.
-      await setDoc(doc(db, 'sync_meta', 'questions'), {
-        version: bankVersion,
-        updatedAt: serverTimestamp(),
-      }, { merge: true }).catch(() => {});
-      // Aggregate counts doc: −1 for this question's chapter/topic so admin
-      // clients keep reading 1 doc instead of rebuilding all counts.
-      applyCountDeltas({
-        ...(q.chapterId || chapter?.id ? { [q.chapterId || chapter.id]: -1 } : {}),
-        ...(q.topicId ? { [q.topicId]: -1 } : {}),
-      }, bankVersion);
-      showToast('Question deleted', 'success');
+      await contentPatch(q.id, { isActive: false }, { chapterId: q.chapterId || chapter?.id });
+      showToast('Question deleted — gone for students in ~2 minutes', 'success');
       await reload();
     } catch (e) {
       console.error(e);
@@ -612,14 +284,6 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
             <div style={{ fontSize: '1rem', fontWeight: 900, color: '#1e1b4b' }}>{topic?.title || 'All topics'}</div>
           </div>
           <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-            {/* Seed sync is meaningless once the bank lives in git (content/); hidden in CDN mode. */}
-            {!cdnEnabledAtAll() && <button
-              onClick={handleSyncAll}
-              disabled={isSyncingAll}
-              style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '8px 14px', borderRadius: '12px', border: '1px solid #e2e8f0', background: isSyncingAll ? '#f1f5f9' : '#fff', color: isSyncingAll ? '#94a3b8' : '#475569', fontWeight: 700, cursor: isSyncingAll ? 'wait' : 'pointer' }}
-            >
-              <DownloadCloud size={16} /> {isSyncingAll ? 'Syncing...' : 'Sync DB to Seeds'}
-            </button>}
             {/* PDF Export button */}
             <button
               onClick={() => { setPdfCount(Math.min(10, total)); setShowPdfModal(true); }}
@@ -763,8 +427,7 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                       onClick={async () => {
                         if (!q?.id) return;
                         try {
-                          if (cdnEnabledAtAll()) await contentPatch(q.id, { timeLimit: sec }, { chapterId: q.chapterId || chapter?.id });
-                          else await updateDoc(doc(db, 'questions', q.id), { timeLimit: sec });
+                          await contentPatch(q.id, { timeLimit: sec }, { chapterId: q.chapterId || chapter?.id });
                           setLoadedQuestions(prev => ({
                             ...prev,
                             [q.id]: { ...prev[q.id], timeLimit: sec }
@@ -772,7 +435,7 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                           showToast(`Time limit updated to ${sec}s`, 'success');
                         } catch (err) {
                           console.error('Failed to update time limit:', err);
-                          showToast('Failed to update time limit in Firestore', 'error');
+                          showToast('Failed to update time limit', 'error');
                         }
                       }}
                       style={{

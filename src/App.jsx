@@ -521,19 +521,6 @@ function App() {
     };
   }, [isAdmin, user, showToast]);
   
-  // Question-index freshness: if the question bank changed outside the
-  // On admin login: (1) auto-sync any seed files that changed since last session
-  // (1 Firestore read when nothing changed; batch writes only when topics changed),
-  // then (2) rebuild question_index if the bank version drifted (legacy imports).
-  useEffect(() => {
-    if (!user?.uid || !isAdmin) return;
-    // Client-side auto-sync is disabled to prevent stale local browser/bundle caches from reverting Firestore.
-    // Please perform all database seeding explicitly via CLI: npm run seed <topic>
-    import('./services/questionIndexService')
-      .then(({ ensureQuestionIndexFresh }) => ensureQuestionIndexFresh())
-      .catch((err) => console.warn('question index freshness check failed:', err?.code || err));
-  }, [user?.uid, isAdmin]);
-
   // Secret-Note blocklist: no permanent onSnapshot (was 1 live listener per
   // online student). Sync runs once when Secret Note opens — see
   // syncSecretNoteBlocklist() in utils/secretNoteBlocklist.js.
