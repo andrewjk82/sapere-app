@@ -9,7 +9,7 @@ import { db } from '../firebase/config';
  * page store (users/{uid}/saved_feedback) and bump the unread badge counter.
  * Manual submissions live only in grading_queue (not in the student's stat
  * answerResults), so without this card the student never sees the result.
- * @param {import('firebase/firestore').DocumentReference} userRef users/{uid} or students/{uid}
+ * @param {import('firebase/firestore').DocumentReference} userRef users/{uid}
  */
 const writeFeedbackCard = async (userRef, item, correct, feedback, annotation) => {
   try {
@@ -93,17 +93,10 @@ const finalizeStatAnswer = async (item, correct, feedback = null, annotation = n
   await updateDoc(statRef, { answerResults: updatedResults });
 };
 
-/**
- * Resolve the student's root user document (users/{uid} preferred,
- * students/{uid} for manual students).
- */
-const resolveUserRef = async (userId) => {
-  const usersRef = doc(db, 'users', userId);
-  if ((await getDoc(usersRef)).exists()) return usersRef;
-  const studentsRef = doc(db, 'students', userId);
-  if ((await getDoc(studentsRef)).exists()) return studentsRef;
-  return usersRef; // default
-};
+// The Feedback page reads only users/{uid}/saved_feedback, so cards always go there —
+// never next to wherever the stat doc happened to be found (students/{uid} as a fallback
+// sent 26 cards where no student could ever see them, 2026-10).
+const feedbackOwnerRef = (userId) => doc(db, 'users', userId);
 
 /**
  * Grade a teacher-review submission.
@@ -149,7 +142,7 @@ export const gradeSubmission = async (item, approved, feedback = null, annotatio
       await finalizeStatAnswer(item, false, feedback, annotation).catch(() => {});
     }
     // Always record the graded result as a Feedback card so the student can see it.
-    await writeFeedbackCard(await resolveUserRef(userId), item, false, feedback, annotation);
+    await writeFeedbackCard(feedbackOwnerRef(userId), item, false, feedback, annotation);
     await deleteDoc(doc(db, 'grading_queue', item.id));
     return { xpAwarded: 0 };
   }
@@ -168,7 +161,7 @@ export const gradeSubmission = async (item, approved, feedback = null, annotatio
         ...(feedback ? { teacherFeedback: feedback } : {}),
       }),
     });
-    await writeFeedbackCard(await resolveUserRef(userId), item, true, feedback, annotation);
+    await writeFeedbackCard(feedbackOwnerRef(userId), item, true, feedback, annotation);
     await deleteDoc(doc(db, 'grading_queue', item.id));
     return { xpAwarded: 0 };
   }
@@ -251,7 +244,7 @@ export const gradeSubmission = async (item, approved, feedback = null, annotatio
   }
 
   // Always record the graded result as a Feedback card so the student can see it.
-  await writeFeedbackCard(statRef.parent.parent, item, true, feedback, annotation);
+  await writeFeedbackCard(feedbackOwnerRef(userId), item, true, feedback, annotation);
 
   // Credit fully applied — now it is safe to remove the queue item.
   await deleteDoc(doc(db, 'grading_queue', item.id));
