@@ -21110,7 +21110,7 @@
           ],
           "answer": 0,
           "hint": "Find angle C first: C = 180° - 52° - 98°. Then apply the sine rule.",
-          "solution": "10.56, 3.23",
+          "solution": "10.56, 5.33",
           "steps": [
             {
               "explain": "State the Sine Rule formula to find \\(b\\) and \\(c\\).",

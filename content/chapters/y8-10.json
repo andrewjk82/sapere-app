@@ -19,7 +19,7 @@
             "\\(\\$8.60\\)",
             "\\(\\$10.20\\)"
           ],
-          "answer": 2,
+          "answer": 1,
           "hint": "Find the cost of 1 kg first by dividing the total cost by the weight.",
           "solution": "1. Find the cost of \\(1\\) kg of potatoes:\n   \\(\\\\)4.80 \\div 4 = \\\\(1.20\\)\n2. Multiply the cost of \\(1\\) kg by \\(7\\) to find the cost of \\(7\\) kg:\n   \\(\\\\)1.20 \\times 7 = \\\\(8.40\\)",
           "steps": [
@@ -482,7 +482,7 @@
             "\\(1.4\\text{ m}\\)",
             "\\(1.5\\text{ m}\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Find the ratio of height to shadow length.",
           "solution": "1. Find the ratio of height to shadow length:\n   \\(\\frac{1.6}{2.4} = \\frac{2}{3}\\)\n2. Multiply the shadow length of \\(1.8\\) m by this ratio to find the height:\n   \\(1.8 \\times \\frac{2}{3} = 1.2\\text{ m}\\)",
           "steps": [
@@ -888,7 +888,7 @@
             "\\(650\\text{ g}\\)",
             "\\(500\\text{ g}\\)"
           ],
-          "answer": 1,
+          "answer": 0,
           "hint": "Find the cost per gram or per 100 grams for both options to compare.",
           "solution": "1. Find the cost per \\(100\\) g of the first option:\n   \\(\\frac{\\\\)6.50}{5} = \\\\(1.30\\text{ per 100g}\\)\n2. Find the cost per \\(100\\) g of the second option:\n   \\(\\frac{\\\\)8.19}{6.5} = \\\\(1.26\\text{ per 100g}\\)\n3. Compare the costs:\n   \\(\\\\)1.26 < \\\\(1.30\\)\nTherefore, \\(650\\) g costing 8.19 is the better buy.",
           "steps": [

@@ -2826,12 +2826,12 @@
           "difficulty": "easy",
           "stem": "By comparing the gradient to \\(1\\), determine if the angle of inclination of the line through \\(A(3, 2)\\) and \\(B(6, 5)\\) is 'less than', 'equal to', or 'more than' \\(45^{\\circ}\\).",
           "options": [
-            "equal to + 1",
+            "less than",
             "equal to",
-            "\\(-equal to\\)",
-            "equal to - 1"
+            "more than",
+            "cannot be determined"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Recall that a gradient of 1 corresponds to 45 degrees. Larger gradients correspond to larger angles.",
           "solution": "### Step-by-Step Solution\n\n**Step 1:** Compute the gradient of the line through \\(A(3, 2)\\) and \\(B(6, 5)\\).\n\\(m = \\dfrac{5-2}{6-3} = \\dfrac{3}{3} = 1\\)\n\n**Step 2:** A gradient of exactly 1 means the angle of inclination is \\(45^{\\circ}\\).\n\\(m = 1 \\Leftrightarrow \\alpha = 45^{\\circ}\\)\n\n**Step 3:** Compare with 1: the gradient equals 1.\n\\(m = 1\\)\n\n**Step 4:** Therefore the angle of inclination is equal to \\(45^{\\circ}\\).\nequal to",
           "steps": [
@@ -2896,12 +2896,12 @@
           "difficulty": "easy",
           "stem": "By comparing the gradient to \\(1\\), determine if the angle of inclination of the line through \\(A(-2, 5)\\) and \\(B(-6, -1)\\) is 'less than', 'equal to', or 'more than' \\(45^{\\circ}\\).",
           "options": [
-            "more than + 1",
-            "\\(-more than\\)",
+            "less than",
+            "equal to",
             "more than",
-            "more than - 1"
+            "cannot be determined"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Recall that a gradient of 1 corresponds to 45 degrees. Larger gradients correspond to larger angles.",
           "solution": "### Step-by-Step Solution\n\n**Step 1:** Compute the gradient of the line through \\(A(-2, 5)\\) and \\(B(-6, -1)\\).\n\\(m = \\dfrac{-1-5}{-6-(-2)} = \\dfrac{-6}{-4} = 1.5\\)\n\n**Step 2:** Compare with gradient 1 (which gives \\(45^{\\circ}\\)).\n\\(m = 1 \\Leftrightarrow \\alpha = 45^{\\circ}\\)\n\n**Step 3:** Here \\(1.5 > 1\\).\n\\(m > 1\\)\n\n**Step 4:** Therefore the angle of inclination is more than \\(45^{\\circ}\\).\nmore than",
           "steps": [

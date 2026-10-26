@@ -4623,7 +4623,7 @@
             "\\(x^2 y^3\\)",
             "\\(x y^4\\)"
           ],
-          "answer": 1,
+          "answer": 3,
           "solution": "The correct answer is \\(xy^4\\).",
           "steps": [
             {

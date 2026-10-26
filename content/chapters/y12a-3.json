@@ -76,7 +76,7 @@
             "decreasing",
             "stationary"
           ],
-          "answer": 1,
+          "answer": 0,
           "solution": "increasing",
           "steps": [
             {
@@ -89,7 +89,7 @@
             },
             {
               "explain": "State the conclusion.",
-              "work": "Since \\( -1 < 0 \\), the gradient is negative, meaning the function is decreasing at \\( x = 3 \\)."
+              "work": "\\( y' = 4x - 6 \\), so \\( y'(2) = 4(2) - 6 = 2 \\). Since \\( 2 > 0 \\), the function is increasing at \\( x = 2 \\)."
             }
           ],
           "timeLimit": 90,
@@ -163,7 +163,7 @@
             "decreasing",
             "stationary"
           ],
-          "answer": 2,
+          "answer": 1,
           "solution": "decreasing",
           "steps": [
             {
@@ -176,7 +176,7 @@
             },
             {
               "explain": "State the conclusion.",
-              "work": "Since \\( y'(1) = 0 \\), the function is stationary at \\( x = 1 \\)."
+              "work": "\\( y' = 6x^2 - 4x^3 \\), so \\( y'(2) = 6(4) - 4(8) = 24 - 32 = -8 \\). Since \\( -8 < 0 \\), the function is decreasing at \\( x = 2 \\)."
             }
           ],
           "timeLimit": 90,
@@ -322,7 +322,7 @@
             "decreasing",
             "stationary"
           ],
-          "answer": 0,
+          "answer": 1,
           "solution": "decreasing",
           "steps": [
             {
@@ -331,7 +331,7 @@
             },
             {
               "explain": "State the conclusion.",
-              "work": "Since \\( 4 > 0 \\), the function is increasing."
+              "work": "\\( f'(x) = 2x - 4 \\), so \\( f'(-1) = 2(-1) - 4 = -6 \\). Since \\( -6 < 0 \\), the function is decreasing at \\( x = -1 \\)."
             }
           ],
           "timeLimit": 90,
