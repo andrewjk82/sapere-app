@@ -555,16 +555,20 @@
           ],
           "steps": [
             {
-              "explain": "Choose the two distinct digits from the ten available.",
+              "explain": "Choose which two distinct digits appear; order does not matter at this stage.",
               "work": "\\(\\binom{10}{2}=45\\)"
             },
             {
-              "explain": "For one chosen pair, each of four positions can use either digit, giving \\(2^4\\) strings. Remove the two constant strings that fail to use both digits.",
-              "work": "\\(2^4-2=16-2=14\\text{ valid strings per pair}\\)"
+              "explain": "For a fixed pair, fill each of four ordered positions with either digit.",
+              "work": "\\(2^4=16\\)"
             },
             {
-              "explain": "Count the restricted sample space and take the reciprocal because one code is correct.",
-              "work": "\\(45\\times14=630\\text{ possible codes}\\quad\\Rightarrow\\quad P=\\frac{1}{630}\\)"
+              "explain": "Remove the two constant strings, since each must use both digits.",
+              "work": "\\(16-2=14\\text{ valid codes per pair}\\)"
+            },
+            {
+              "explain": "Multiply and take one correct code out of all valid codes.",
+              "work": "\\(45(14)=630,\\quad P=\\frac1{630}\\)"
             }
           ],
           "timeLimit": 60,

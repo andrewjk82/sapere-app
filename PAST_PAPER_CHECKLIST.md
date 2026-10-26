@@ -21,6 +21,7 @@ Current source of truth for importing past papers into Sapere's canonical chapte
 ## Student-facing solutions and figures
 
 - Give each assessable question its own complete, student-friendly solution. Explain why each method applies, identify the exact side, angle, graph feature, or formula used, substitute the actual values, show intermediate calculations, and state units and rounding. Do not skip essential algebra or rely on the learner having solved a sibling part.
+- For multi-stage exam problems, use at least four distinct steps unless the task is genuinely a single-rule calculation. Include the setup, substitutions, intermediate arithmetic/algebra, and a final interpretation or check; never compress several important operations into one line merely to keep the step count short.
 - For visual questions, use the diagram at the step where it supports the reasoning. Highlight the relevant side, angle sector, point, or graph feature alongside the calculation. Do not repeat an unchanged diagram in steps without a learning purpose.
 - Put a requested answer sketch/construction in the solution steps, not in the question prompt. Include a prompt diagram only when it is needed to state or solve the question.
 - Keep authored figures at about 50% of the oversized presentation scale seen in previous imports. Place labels next to the features they name; ensure no label, line, angle marker, or other label overlaps. Use mathematical notation in diagram labels.

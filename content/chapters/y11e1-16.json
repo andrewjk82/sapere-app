@@ -114,16 +114,20 @@
           ],
           "steps": [
             {
-              "explain": "Use the given sine value to find the reference triangle side ratio.",
-              "work": "\\(\\sin x=\\frac{2\\sqrt3}{4}=\\frac{\\sqrt3}{2}\\quad\\Rightarrow\\quad |\\cos x|=\\sqrt{1-\\sin^2x}=\\frac12\\)"
+              "explain": "Simplify the given sine ratio first.",
+              "work": "\\(\\sin x=\\frac{2\\sqrt3}{4}=\\frac{\\sqrt3}{2}\\)"
             },
             {
-              "explain": "Because x is obtuse, it lies in quadrant II, where cosine is negative.",
+              "explain": "Use sin²x+cos²x=1 to find the magnitude of cos x.",
+              "work": "\\(\\cos^2x=1-\\frac34=\\frac14\\Rightarrow|\\cos x|=\\frac12\\)"
+            },
+            {
+              "explain": "An obtuse angle is in quadrant II, where cosine is negative.",
               "work": "\\(\\cos x=-\\frac12\\)"
             },
             {
-              "explain": "Substitute both trigonometric values into the double-angle identity.",
-              "work": "\\(\\sin 2x=2\\sin x\\cos x=2\\left(\\frac{\\sqrt3}{2}\\right)\\left(-\\frac12\\right)=-\\frac{\\sqrt3}{2}\\)"
+              "explain": "Substitute the signed sine and cosine into the double-angle identity.",
+              "work": "\\(\\sin2x=2\\sin x\\cos x=2(\\frac{\\sqrt3}{2})(-\\frac12)=-\\frac{\\sqrt3}{2}\\)"
             }
           ],
           "timeLimit": 60,
@@ -263,20 +267,24 @@
           ],
           "steps": [
             {
-              "explain": "Expand the target form using the sine addition identity.",
+              "explain": "Expand R sin(x+α) using the sine addition formula.",
               "work": "\\(R\\sin(x+\\alpha)=R\\sin x\\cos\\alpha+R\\cos x\\sin\\alpha\\)"
             },
             {
-              "explain": "Match coefficients with \\(\\sin x+\\sqrt3\\cos x\\).",
-              "work": "\\(R\\cos\\alpha=1,\\qquad R\\sin\\alpha=\\sqrt3\\)"
+              "explain": "Match the sin x coefficient.",
+              "work": "\\(R\\cos\\alpha=1\\)"
             },
             {
-              "explain": "Find the amplitude and phase, checking both coefficient signs.",
-              "work": "\\(R=\\sqrt{1^2+(\\sqrt3)^2}=2,\\quad \\cos\\alpha=\\frac12,\\quad \\sin\\alpha=\\frac{\\sqrt3}{2}\\Rightarrow\\alpha=\\frac{\\pi}{3}\\)"
+              "explain": "Match the cos x coefficient.",
+              "work": "\\(R\\sin\\alpha=\\sqrt3\\)"
             },
             {
-              "explain": "Write the expression in the requested form.",
-              "work": "\\(y=2\\sin\\left(x+\\frac{\\pi}{3}\\right)\\)"
+              "explain": "Square and add to remove α; use R>0 for amplitude.",
+              "work": "\\(R^2=1^2+(\\sqrt3)^2=4\\Rightarrow R=2\\)"
+            },
+            {
+              "explain": "Find α from its quadrant and coefficients, then state the form.",
+              "work": "\\(\\cos\\alpha=\\frac12,\\sin\\alpha=\\frac{\\sqrt3}{2}\\Rightarrow\\alpha=\\frac{\\pi}{3};\\quad y=2\\sin(x+\\frac{\\pi}{3})\\)"
             }
           ],
           "timeLimit": 60,

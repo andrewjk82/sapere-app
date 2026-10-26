@@ -104,22 +104,30 @@
           ],
           "steps": [
             {
-              "explain": "Mark the x-intercept of f as x=α. Since 1/f is undefined wherever f=0, this x-value becomes a vertical asymptote.",
-              "work": "\\(f(\\alpha)=0\\Rightarrow\\frac1{f(x)}\\text{ has vertical asymptote }x=\\alpha\\)",
+              "explain": "Locate the zero f(α)=0 on the source graph. A reciprocal is undefined at that x-value.",
+              "work": "\\(f(\\alpha)=0\\Rightarrow y=\\frac1{f(x)}\\text{ undefined at }x=\\alpha\\)"
+            },
+            {
+              "explain": "As f approaches zero at α, draw a vertical asymptote for the reciprocal and keep branches on the same x-intervals.",
+              "work": "\\(x=\\alpha\\text{ is a vertical asymptote}\\)",
               "figure": {
                 "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 500 300\" style=\"display:block;margin:0 auto;font-family:system-ui,sans-serif\"><rect width=\"500\" height=\"300\" rx=\"8\" fill=\"#fff\"/><defs><marker id=\"arr\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L0,6 L7,3 z\" fill=\"#4f46e5\"/></marker></defs><line x1=\"35\" y1=\"220\" x2=\"476\" y2=\"220\" stroke=\"#64748b\"/><line x1=\"180\" y1=\"26\" x2=\"180\" y2=\"282\" stroke=\"#64748b\"/><line x1=\"35\" y1=\"125\" x2=\"474\" y2=\"125\" stroke=\"#94a3b8\" stroke-dasharray=\"5 4\"/><text x=\"462\" y=\"116\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"end\">y = 2</text><text x=\"482\" y=\"225\" font-size=\"12\" fill=\"#334155\">x</text><text x=\"185\" y=\"28\" font-size=\"12\" fill=\"#334155\">y</text><path d=\"M38,278 C79,275 108,253 140,220 C155,181 168,139 180,125 C199,107 215,75 230,75 C298,75 345,116 398,123 C430,126 451,125 470,125\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"3\" marker-start=\"url(#arr)\" marker-end=\"url(#arr)\"/><circle cx=\"140\" cy=\"220\" r=\"6\" fill=\"#ef4444\"/><circle cx=\"180\" cy=\"125\" r=\"4\" fill=\"#4f46e5\"/><circle cx=\"230\" cy=\"75\" r=\"4\" fill=\"#4f46e5\"/><line x1=\"230\" y1=\"220\" x2=\"230\" y2=\"75\" stroke=\"#94a3b8\" stroke-dasharray=\"4 4\"/><line x1=\"226\" y1=\"220\" x2=\"234\" y2=\"220\" stroke=\"#64748b\"/><line x1=\"176\" y1=\"125\" x2=\"184\" y2=\"125\" stroke=\"#64748b\"/><text x=\"166\" y=\"129\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">2</text><text x=\"230\" y=\"243\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\">1</text><text x=\"190\" y=\"145\" font-size=\"11\" fill=\"#334155\">(0, 2)</text><text x=\"245\" y=\"64\" font-size=\"11\" fill=\"#334155\">maximum (1, 4)</text><text x=\"70\" y=\"38\" font-size=\"12\" fill=\"#4f46e5\">f(α) = 0</text><line x1=\"140\" y1=\"35\" x2=\"140\" y2=\"279\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><text x=\"150\" y=\"268\" font-size=\"11\" fill=\"#b91c1c\">denominator is zero</text></svg>"
               }
             },
             {
-              "explain": "Reciprocal the finite key values and the horizontal asymptote: the source maximum (1,4) maps to (1,1/4), and the source y-intercept (0,2) maps to (0,1/2). As f approaches 2, 1/f approaches 1/2.",
-              "work": "\\(f(1)=4\\Rightarrow\\frac1{f(1)}=\\frac14,\\qquad f(0)=2\\Rightarrow\\frac1{f(0)}=\\frac12,\\qquad y=2\\Rightarrow y=\\frac12\\)",
+              "explain": "At a marked point with f(x)=c≠0, keep x and replace c by 1/c. Since the original maximum is positive, its reciprocal value gives a local minimum.",
+              "work": "\\(f(0)=2\\Rightarrow(0,2)\\mapsto(0,\\frac12);\\quad f(1)=4\\Rightarrow(1,4)\\mapsto(1,\\frac14)\\text{ (local minimum)}\\)"
+            },
+            {
+              "explain": "Reciprocate the horizontal asymptote and use the sign of f to place branches above/below the axis.",
+              "work": "\\(f(x)\\to2\\Rightarrow\\frac1{f(x)}\\to\\frac12\\)",
               "figure": {
                 "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 500 300\" style=\"display:block;margin:0 auto;font-family:system-ui,sans-serif\"><rect width=\"500\" height=\"300\" rx=\"8\" fill=\"#fff\"/><defs><marker id=\"up\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L0,6 L7,3 z\" fill=\"#4f46e5\"/></marker><marker id=\"down\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L0,6 L7,3 z\" fill=\"#4f46e5\"/></marker></defs><line x1=\"35\" y1=\"245\" x2=\"476\" y2=\"245\" stroke=\"#64748b\"/><line x1=\"180\" y1=\"25\" x2=\"180\" y2=\"270\" stroke=\"#64748b\"/><line x1=\"140\" y1=\"25\" x2=\"140\" y2=\"270\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><line x1=\"180\" y1=\"180\" x2=\"474\" y2=\"180\" stroke=\"#16a34a\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><path d=\"M38,250 C80,250 116,258 137,293\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\" marker-end=\"url(#down)\"/><path d=\"M143,28 C147,66 163,145 180,180 C198,204 216,213 230,212.5 C282,211 335,184 395,180 C429,178 451,180 470,180\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\" marker-start=\"url(#up)\"/><circle cx=\"180\" cy=\"180\" r=\"5\" fill=\"#f59e0b\" stroke=\"#fff\" stroke-width=\"1.5\"/><circle cx=\"230\" cy=\"212.5\" r=\"5\" fill=\"#f59e0b\" stroke=\"#fff\" stroke-width=\"1.5\"/><line x1=\"230\" y1=\"245\" x2=\"230\" y2=\"212.5\" stroke=\"#94a3b8\" stroke-dasharray=\"4 4\"/><text x=\"140\" y=\"18\" font-size=\"12\" fill=\"#b91c1c\" text-anchor=\"middle\">x = α</text><text x=\"460\" y=\"171\" font-size=\"12\" fill=\"#15803d\" text-anchor=\"end\">y = 1/2</text><text x=\"187\" y=\"169\" font-size=\"11\" fill=\"#92400e\">(0, 1/2)</text><text x=\"235\" y=\"235\" font-size=\"11\" fill=\"#92400e\">(1, 1/4)</text><text x=\"484\" y=\"250\" font-size=\"12\" fill=\"#334155\">x</text><text x=\"185\" y=\"28\" font-size=\"12\" fill=\"#334155\">y</text><text x=\"130\" y=\"263\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">α</text><text x=\"230\" y=\"263\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">1</text><text x=\"58\" y=\"28\" font-size=\"12\" fill=\"#4f46e5\">y = 1/f(x)</text><text x=\"48\" y=\"271\" font-size=\"10\" fill=\"#4f46e5\">1/f &lt; 0</text></svg>"
               }
             },
             {
-              "explain": "Sketch the negative branch to the left of α and the positive branch to the right. The reciprocal has no x-intercept because its numerator is 1; it approaches 0 from below on the far left and 1/2 on the far right.",
-              "work": "\\(x=\\alpha\\text{ is a vertical asymptote};\\quad \\frac1{f(x)}\\to0^{-}\\text{ as }x\\to-\\infty;\\quad \\frac1{f(x)}\\to\\frac12\\text{ as }x\\to\\infty;\\quad (0,\\frac12),\\ (1,\\frac14)\\text{ are key points}\\)"
+              "explain": "Draw smooth reciprocal branches through the transformed points. The reciprocal never equals zero.",
+              "work": "\\(\\text{Asymptotes }x=\\alpha, y=\\frac12;\\quad(0,\\frac12),(1,\\frac14);\\quad\\frac1{f(x)}\\ne0\\)"
             }
           ],
           "timeLimit": 60,
@@ -584,16 +592,20 @@
           ],
           "steps": [
             {
-              "explain": "Set \\(y=e^x-1\\) and swap x and y to find the inverse relation.",
+              "explain": "Start with y=f(x).",
+              "work": "\\(y=e^x-1\\)"
+            },
+            {
+              "explain": "Swap x and y because the inverse reverses input and output.",
               "work": "\\(x=e^y-1\\)"
             },
             {
-              "explain": "Isolate y by adding 1 and taking the natural logarithm.",
-              "work": "\\(x+1=e^y\\quad\\Rightarrow\\quad y=\\ln(x+1)\\)"
+              "explain": "Add 1, then take ln of both sides to isolate y.",
+              "work": "\\(x+1=e^y\\Rightarrow y=\\ln(x+1)\\)"
             },
             {
-              "explain": "Differentiate with respect to x using the chain rule.",
-              "work": "\\(\\frac{dy}{dx}=\\frac{1}{x+1}\\cdot\\frac{d}{dx}(x+1)=\\frac{1}{x+1}\\)"
+              "explain": "Differentiate the inverse and note its domain.",
+              "work": "\\(x>-1\\Rightarrow\\frac{dy}{dx}=\\frac1{x+1}\\)"
             }
           ],
           "timeLimit": 60,

@@ -108,24 +108,28 @@
           ],
           "steps": [
             {
-              "explain": "Base case: substitute \\(n=1\\) into both sides.",
-              "work": "\\(\\text{LHS}=4,\\qquad\\text{RHS}=\\frac{1(3(1)+5)}2=\\frac82=4\\quad\\therefore P(1)\\text{ is true}\\)"
+              "explain": "Check the first value n=1 on both sides.",
+              "work": "\\(LHS=4;\\quad RHS=\\frac{1(3+5)}2=4\\)"
             },
             {
-              "explain": "Induction hypothesis: assume the statement is true for an arbitrary integer \\(k\\ge1\\).",
-              "work": "\\(4+7+10+\\cdots +(3k+1)=\\frac{k(3k+5)}2\\)"
+              "explain": "Assume the formula holds for an arbitrary k≥1.",
+              "work": "\\(4+7+\\cdots+(3k+1)=\\frac{k(3k+5)}2\\)"
             },
             {
-              "explain": "For \\(k+1\\), append the next term to the assumed sum.",
-              "work": "\\(4+7+\\cdots +(3k+1)+(3(k+1)+1)=\\frac{k(3k+5)}2+(3k+4)\\)"
+              "explain": "For k+1, add the next term 3(k+1)+1=3k+4.",
+              "work": "\\(\\frac{k(3k+5)}2+(3k+4)\\)"
             },
             {
-              "explain": "Use a common denominator and factor the numerator.",
-              "work": "\\(\\frac{3k^2+5k+6k+8}{2}=\\frac{3k^2+11k+8}{2}=\\frac{(k+1)(3k+8)}2=\\frac{(k+1)(3(k+1)+5)}2\\)"
+              "explain": "Use a common denominator and expand.",
+              "work": "\\(\\frac{3k^2+5k+6k+8}{2}=\\frac{3k^2+11k+8}{2}\\)"
             },
             {
-              "explain": "This is the required formula at n=k+1. Together with the base case, induction proves the result for every integer n≥1.",
-              "work": "\\(P(1)\\text{ true and }P(k)\\Rightarrow P(k+1)\\quad\therefore P(n)\\text{ true for all }n\\ge1\\)"
+              "explain": "Factor and match the claimed expression with n=k+1.",
+              "work": "\\(\\frac{(k+1)(3k+8)}2=\\frac{(k+1)(3(k+1)+5)}2\\)"
+            },
+            {
+              "explain": "The base case and inductive implication prove the statement for all n≥1.",
+              "work": "\\(P(1),\\quad P(k)\\Rightarrow P(k+1)\\quad\\therefore P(n)\\text{ for all }n\\ge1\\)"
             }
           ],
           "timeLimit": 60,
@@ -281,16 +285,20 @@
               ],
               "steps": [
                 {
-                  "explain": "Start from the left-hand side at k+1 and factor out the kth powers.",
+                  "explain": "Start from the k+1 expression and factor one power from each term.",
                   "work": "\\(7^{k+1}-3^{k+1}=7\\cdot7^k-3\\cdot3^k\\)"
                 },
                 {
-                  "explain": "Write \\(7=4+3\\) so the induction hypothesis can be used.",
-                  "work": "\\(7\\cdot7^k-3\\cdot3^k=4\\cdot7^k+3(7^k-3^k)\\)"
+                  "explain": "Rewrite 7 as 4+3 and regroup to create the induction-hypothesis difference.",
+                  "work": "\\(4\\cdot7^k+3(7^k-3^k)\\)"
                 },
                 {
-                  "explain": "Substitute the hypothesis \\(7^k-3^k=4p\\).",
-                  "work": "\\(4\\cdot7^k+3(4p)=4(7^k+3p)=4q,\\quad q=7^k+3p\\in\\mathbb Z\\)"
+                  "explain": "Use the assumption 7^k−3^k=4p.",
+                  "work": "\\(4\\cdot7^k+3(4p)=4\\cdot7^k+12p\\)"
+                },
+                {
+                  "explain": "Factor 4; the remaining quantity is an integer q.",
+                  "work": "\\(4(7^k+3p)=4q,\\quad q=7^k+3p\\in\\mathbb Z\\)"
                 }
               ],
               "timeLimit": 60,
@@ -319,12 +327,20 @@
               ],
               "steps": [
                 {
-                  "explain": "Check the first positive integer in the claim, \\(n=1\\).",
+                  "explain": "Induction starts at the first positive integer, n=1.",
                   "work": "\\(7^1-3^1=7-3=4\\)"
                 },
                 {
-                  "explain": "Since 4 is divisible by 4, the proposition is true at n=1.",
-                  "work": "\\(7^1-3^1=4(1)\\quad\therefore P(1)\\text{ is true}\\)"
+                  "explain": "Express this as a multiple of 4.",
+                  "work": "\\(7^1-3^1=4(1)\\Rightarrow P(1)\\text{ true}\\)"
+                },
+                {
+                  "explain": "Together with the induction step, the base case proves the claim for every positive integer.",
+                  "work": "\\(P(1)\\text{ true and }P(k)\\Rightarrow P(k+1)\\)"
+                },
+                {
+                  "explain": "The induction proof is complete only after pairing this base case with the k-to-k+1 implication.",
+                  "work": "\\(P(1)\\text{ true}+P(k)\\Rightarrow P(k+1)\\Rightarrow P(n)\\text{ for every positive integer }n\\)"
                 }
               ],
               "timeLimit": 60,

@@ -278,16 +278,24 @@
           ],
           "steps": [
             {
-              "explain": "Write the area equation and differentiate both sides with respect to time.",
-              "work": "\\(A=\\pi r^2\\quad\\Rightarrow\\quad\\frac{dA}{dt}=2\\pi r\\frac{dr}{dt}\\)"
+              "explain": "Relate circular area to radius.",
+              "work": "\\(A=\\pi r^2\\)"
             },
             {
-              "explain": "Find the radius when \\(A=0.3\\,\\text{m}^2\\).",
-              "work": "\\(0.3=\\pi r^2\\Rightarrow r=\\sqrt{\\frac{0.3}{\\pi}}\\,\\text{m}\\)"
+              "explain": "Differentiate with respect to time; r depends on time.",
+              "work": "\\(\\frac{dA}{dt}=2\\pi r\\frac{dr}{dt}\\)"
             },
             {
-              "explain": "Substitute the instantaneous area rate and radius, then solve for the radius rate.",
-              "work": "\\(0.1=2\\pi\\sqrt{\\frac{0.3}{\\pi}}\\frac{dr}{dt}\\Rightarrow\\frac{dr}{dt}=\\frac{0.1}{2\\sqrt{0.3\\pi}}\\approx0.0515\\,\\text{m/min}\\)"
+              "explain": "Find r at the instant A=0.3.",
+              "work": "\\(r=\\sqrt{\\frac{0.3}{\\pi}}\\text{ m}\\)"
+            },
+            {
+              "explain": "Substitute dA/dt=0.1 and this radius.",
+              "work": "\\(0.1=2\\pi\\sqrt{\\frac{0.3}{\\pi}}\\frac{dr}{dt}\\)"
+            },
+            {
+              "explain": "Solve for the radius rate and keep units.",
+              "work": "\\(\\frac{dr}{dt}=\\frac{0.1}{2\\sqrt{0.3\\pi}}\\approx0.0515\\text{ m/min}\\)"
             }
           ],
           "timeLimit": 60,
@@ -339,16 +347,20 @@
               ],
               "steps": [
                 {
-                  "explain": "Rewrite the relation with a negative exponent and differentiate with respect to displacement x.",
-                  "work": "\\(t=2-e^{-3x}\\quad\\Rightarrow\\quad\\frac{dt}{dx}=3e^{-3x}\\)"
+                  "explain": "Rewrite 1/e^(3x) as e^(−3x) and differentiate t with respect to x.",
+                  "work": "\\(t=2-e^{-3x};\\quad\\frac{dt}{dx}=3e^{-3x}\\)"
                 },
                 {
-                  "explain": "Since \\(dx/dt=1/(dt/dx)\\), invert the derivative.",
-                  "work": "\\(\\frac{dx}{dt}=\\frac{1}{3e^{-3x}}=\\frac{e^{3x}}{3}\\)"
+                  "explain": "Velocity dx/dt is the reciprocal derivative.",
+                  "work": "\\(\\frac{dx}{dt}=\\frac1{3e^{-3x}}\\)"
                 },
                 {
-                  "explain": "Attach the velocity units: displacement is measured in metres and time in seconds.",
-                  "work": "\\(v=\\frac{dx}{dt}=\\frac{e^{3x}}{3}\\,\\text{m s}^{-1}\\)"
+                  "explain": "Simplify the reciprocal exponential.",
+                  "work": "\\(\\frac{dx}{dt}=\\frac{e^{3x}}3\\)"
+                },
+                {
+                  "explain": "Attach metres per second.",
+                  "work": "\\(v=\\frac{e^{3x}}3\\text{ m s}^{-1}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -387,16 +399,24 @@
               ],
               "steps": [
                 {
-                  "explain": "Use the relation from the previous part and substitute \\(t=1\\) to find the displacement.",
-                  "work": "\\(1=2-e^{-3x}\\Rightarrow e^{-3x}=1\\Rightarrow x=0\\)"
+                  "explain": "At t=1, solve the given relation for x.",
+                  "work": "\\(1=2-e^{-3x}\\Rightarrow x=0\\)"
                 },
                 {
-                  "explain": "The velocity is \\(v=e^{3x}/3\\). Differentiate the kinetic-energy expression with respect to x.",
-                  "work": "\\(a=\\frac{d}{dx}\\left(\\frac12\\left(\\frac{e^{3x}}3\\right)^2\\right)=\\frac{d}{dx}\\left(\\frac{e^{6x}}{18}\\right)=\\frac{e^{6x}}3\\)"
+                  "explain": "Use v=e^(3x)/3 and square it as required by the formula.",
+                  "work": "\\(\\frac12v^2=\\frac{e^{6x}}{18}\\)"
                 },
                 {
-                  "explain": "Evaluate at \\(x=0\\).",
-                  "work": "\\(a=\\frac{e^0}{3}=\\frac13\\,\\text{m s}^{-2}\\)"
+                  "explain": "Differentiate with respect to x using the chain rule.",
+                  "work": "\\(a=\\frac{d}{dx}(\\frac{e^{6x}}{18})=\\frac{e^{6x}}3\\)"
+                },
+                {
+                  "explain": "Substitute x=0, the position at t=1.",
+                  "work": "\\(a=\\frac{e^0}{3}=\\frac13\\)"
+                },
+                {
+                  "explain": "State acceleration units.",
+                  "work": "\\(a=\\frac13\\text{ m s}^{-2}\\)"
                 }
               ],
               "timeLimit": 60,

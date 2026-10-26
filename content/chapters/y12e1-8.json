@@ -281,12 +281,20 @@
               ],
               "steps": [
                 {
-                  "explain": "Match the i-components with each other and the j-components with each other.",
-                  "work": "\\(\\mathbf a\\cdot\\mathbf b=(4)(-2)+(-5)(4)\\)"
+                  "explain": "Multiply corresponding i- and j-components in the dot product.",
+                  "work": "\\(a\\cdot b=(4)(-2)+(-5)(4)\\)"
                 },
                 {
-                  "explain": "Evaluate both products, then add with their signs.",
-                  "work": "\\(-8-20=-28\\)"
+                  "explain": "Evaluate each product with its sign.",
+                  "work": "\\(-8-20\\)"
+                },
+                {
+                  "explain": "Add the products.",
+                  "work": "\\(a\\cdot b=-28\\)"
+                },
+                {
+                  "explain": "A negative dot product means the angle between these nonzero vectors is obtuse, which is a useful sign check.",
+                  "work": "\\(\\mathbf a\\cdot\\mathbf b=-28<0\\Rightarrow\\theta>90^\\circ\\)"
                 }
               ],
               "timeLimit": 60,
@@ -325,16 +333,20 @@
               ],
               "steps": [
                 {
-                  "explain": "Find the magnitudes and recall the dot product from the previous part.",
-                  "work": "\\(|\\mathbf a|=\\sqrt{4^2+(-5)^2}=\\sqrt{41},\\quad |\\mathbf b|=\\sqrt{(-2)^2+4^2}=\\sqrt{20},\\quad \\mathbf a\\cdot\\mathbf b=-28\\)"
+                  "explain": "Find |a| from its two components.",
+                  "work": "\\(|a|=\\sqrt{4^2+(-5)^2}=\\sqrt{41}\\)"
                 },
                 {
-                  "explain": "Substitute into \\(\\mathbf a\\cdot\\mathbf b=|\\mathbf a||\\mathbf b|\\cos\\theta\\) and solve for cosine.",
-                  "work": "\\(\\cos\\theta=\\frac{-28}{\\sqrt{41}\\sqrt{20}}=-\\frac{28}{\\sqrt{820}}\\)"
+                  "explain": "Find |b| and use the dot product.",
+                  "work": "\\(|b|=\\sqrt{(-2)^2+4^2}=\\sqrt{20},\\quad a\\cdot b=-28\\)"
                 },
                 {
-                  "explain": "Take the inverse cosine. The negative value confirms the angle is obtuse.",
-                  "work": "\\(\\theta=\\cos^{-1}\\left(-\\frac{28}{\\sqrt{820}}\\right)\\approx167.905^\\circ=167^\\circ54\\prime\\)"
+                  "explain": "Apply a·b=|a||b|cosθ and isolate cosine.",
+                  "work": "\\(\\cos\\theta=-\\frac{28}{\\sqrt{41}\\sqrt{20}}\\)"
+                },
+                {
+                  "explain": "Take inverse cosine; the negative cosine confirms an obtuse angle.",
+                  "work": "\\(\\theta\\approx167.905^\\circ\\approx167^\\circ54'\\)"
                 }
               ],
               "timeLimit": 60,
@@ -588,19 +600,23 @@
               ],
               "steps": [
                 {
-                  "explain": "Set east as \\(\\mathbf i\\) and north as \\(\\mathbf j\\). Wind from the south-west blows toward the north-east, making 45° with both positive axes.",
-                  "work": "\\(w_E=8\\cos45^\\circ=4\\sqrt2,\\qquad w_N=8\\sin45^\\circ=4\\sqrt2\\)",
+                  "explain": "Take east as positive i and north as positive j. Wind from southwest blows northeast at 45° to each axis.",
+                  "work": "\\(\\theta_E=\\theta_N=45^\\circ\\)"
+                },
+                {
+                  "explain": "Resolve the wind into components.",
+                  "work": "\\(w_E=8\\cos45^\\circ=4\\sqrt2;\\quad w_N=8\\sin45^\\circ=4\\sqrt2\\)",
                   "figure": {
                     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 400 250\" style=\"display:block;margin:0 auto;font-family:system-ui,sans-serif\"><rect width=\"400\" height=\"250\" rx=\"8\" fill=\"#fff\"/><line x1=\"45\" y1=\"205\" x2=\"360\" y2=\"205\" stroke=\"#64748b\"/><line x1=\"80\" y1=\"220\" x2=\"80\" y2=\"24\" stroke=\"#64748b\"/><text x=\"360\" y=\"220\" font-size=\"10\" fill=\"#334155\" text-anchor=\"end\" >East (i)</text><text x=\"90\" y=\"28\" font-size=\"10\" fill=\"#334155\" text-anchor=\"start\" >North (j)</text><defs><marker id=\"ar\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L0,6 L7,3 z\" fill=\"#334155\"/></marker></defs><line x1=\"80\" y1=\"188\" x2=\"238\" y2=\"188\" stroke=\"#f59e0b\" stroke-width=\"3\" marker-end=\"url(#ar)\"/><text x=\"158\" y=\"178\" font-size=\"10\" fill=\"#92400e\" text-anchor=\"middle\" >river: 4 m/s east</text><line x1=\"80\" y1=\"188\" x2=\"80\" y2=\"75\" stroke=\"#2563eb\" stroke-width=\"3\" marker-end=\"url(#ar)\"/><text x=\"105\" y=\"122\" font-size=\"10\" fill=\"#1d4ed8\" text-anchor=\"start\" >rowing: 5 m/s north</text><line x1=\"80\" y1=\"188\" x2=\"218\" y2=\"50\" stroke=\"#7c3aed\" stroke-width=\"3\" marker-end=\"url(#ar)\"/><text x=\"225\" y=\"55\" font-size=\"10\" fill=\"#6d28d9\" text-anchor=\"start\" >wind: 8 m/s toward NE at 45°</text><text x=\"282\" y=\"115\" font-size=\"10\" fill=\"#6d28d9\" text-anchor=\"start\" >each component = 4√2</text></svg>"
                   }
                 },
                 {
-                  "explain": "Write the three velocities with signs and add components.",
-                  "work": "\\(\\mathbf v_{water}=4\\mathbf i,\\quad\\mathbf v_{row}=5\\mathbf j,\\quad\\mathbf v_{wind}=4\\sqrt2\\mathbf i+4\\sqrt2\\mathbf j\\)"
+                  "explain": "Add river velocity east and rowing velocity north.",
+                  "work": "\\(v_E=4+4\\sqrt2;\\quad v_N=5+4\\sqrt2\\)"
                 },
                 {
-                  "explain": "Combine east and north components separately.",
-                  "work": "\\(\\mathbf v=(4+4\\sqrt2)\\mathbf i+(5+4\\sqrt2)\\mathbf j\\)"
+                  "explain": "Write the combined vector with units.",
+                  "work": "\\(v=(4+4\\sqrt2)i+(5+4\\sqrt2)j\\text{ m s}^{-1}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -639,16 +655,20 @@
               ],
               "steps": [
                 {
-                  "explain": "Use the velocity components established in the previous part.",
-                  "work": "\\(v_E=4+4\\sqrt2\\approx9.6569,\\qquad v_N=5+4\\sqrt2\\approx10.6569\\)"
+                  "explain": "Evaluate the east and north components numerically.",
+                  "work": "\\(v_E\\approx9.6569;\\quad v_N\\approx10.6569\\)"
                 },
                 {
-                  "explain": "The speed is the vector magnitude.",
-                  "work": "\\(v=\\sqrt{v_E^2+v_N^2}=\\sqrt{(4+4\\sqrt2)^2+(5+4\\sqrt2)^2}\\)"
+                  "explain": "Speed is the magnitude of the perpendicular velocity components.",
+                  "work": "\\(v=\\sqrt{v_E^2+v_N^2}\\)"
                 },
                 {
-                  "explain": "Evaluate and round to two decimal places.",
-                  "work": "\\(v\\approx\\sqrt{206.8234}=14.3814\\approx14.38\\,\\text{m s}^{-1}\\)"
+                  "explain": "Substitute the exact components and simplify the radicand.",
+                  "work": "\\(v=\\sqrt{(4+4\\sqrt2)^2+(5+4\\sqrt2)^2}=\\sqrt{105+72\\sqrt2}\\)"
+                },
+                {
+                  "explain": "Round the calculated speed to two decimal places.",
+                  "work": "\\(v\\approx14.38\\text{ m s}^{-1}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -687,22 +707,30 @@
               ],
               "steps": [
                 {
-                  "explain": "The northward component is \\(v_N=5+4\\sqrt2\\) m/s. It must carry the boat 100 m across the river.",
-                  "work": "\\(t=\\frac{100}{5+4\\sqrt2}\\approx9.3838\\,\\text{s}\\)",
+                  "explain": "Northward velocity crosses the 100 m width; use time=distance/speed.",
+                  "work": "\\(t=\\frac{100}{5+4\\sqrt2}\\approx9.38\\text{ s}\\)",
                   "figure": {
                     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 400 250\" style=\"display:block;margin:0 auto;font-family:system-ui,sans-serif\"><rect width=\"400\" height=\"250\" rx=\"8\" fill=\"#fff\"/><line x1=\"45\" y1=\"205\" x2=\"360\" y2=\"205\" stroke=\"#64748b\"/><line x1=\"80\" y1=\"220\" x2=\"80\" y2=\"24\" stroke=\"#64748b\"/><text x=\"360\" y=\"220\" font-size=\"10\" fill=\"#334155\" text-anchor=\"end\" >East (i)</text><text x=\"90\" y=\"28\" font-size=\"10\" fill=\"#334155\" text-anchor=\"start\" >North (j)</text><defs><marker id=\"ar\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L0,6 L7,3 z\" fill=\"#334155\"/></marker></defs><rect x=\"90\" y=\"55\" width=\"250\" height=\"145\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/><line x1=\"90\" y1=\"55\" x2=\"90\" y2=\"200\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"90\" y1=\"200\" x2=\"320\" y2=\"55\" stroke=\"#7c3aed\" stroke-width=\"3\" marker-end=\"url(#ar)\"/><line x1=\"90\" y1=\"200\" x2=\"320\" y2=\"200\" stroke=\"#16a34a\" stroke-width=\"2\"/><line x1=\"320\" y1=\"200\" x2=\"320\" y2=\"55\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"70\" y=\"48\" font-size=\"10\" fill=\"#334155\" text-anchor=\"end\" >Start</text><text x=\"333\" y=\"52\" font-size=\"10\" fill=\"#334155\" text-anchor=\"start\" >Landing</text><text x=\"205\" y=\"218\" font-size=\"10\" fill=\"#15803d\" text-anchor=\"middle\" >100 m north</text><text x=\"205\" y=\"154\" font-size=\"10\" fill=\"#6d28d9\" text-anchor=\"middle\" >d ≈ 134.95 m</text><text x=\"325\" y=\"140\" font-size=\"10\" fill=\"#b91c1c\" text-anchor=\"start\" >east drift</text></svg>"
                   }
                 },
                 {
-                  "explain": "Use the eastward component \\(v_E=4+4\\sqrt2\\) to find the drift, then combine perpendicular displacements for the distance.",
-                  "work": "\\(d_E=(4+4\\sqrt2)t\\approx90.65\\,\\text{m},\\quad d=\\sqrt{100^2+d_E^2}\\)"
+                  "explain": "Find eastward drift during that time.",
+                  "work": "\\(d_E=(4+4\\sqrt2)t\\approx90.65\\text{ m}\\)"
                 },
                 {
-                  "explain": "Evaluate the distance and time, keeping units.",
-                  "work": "\\(d\\approx134.95\\,\\text{m},\\qquad t\\approx9.38\\,\\text{s}\\quad(\\text{about }135\\,\\text{m and }9.4\\,\\text{s})\\)",
+                  "explain": "The northward displacement is 100 m and is perpendicular to the drift.",
+                  "work": "\\(d_E=(4+4\\sqrt2)t\\approx9.6569(9.3838)\\approx90.62\\text{ m}\\)",
                   "figure": {
                     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 400 250\" style=\"display:block;margin:0 auto;font-family:system-ui,sans-serif\"><rect width=\"400\" height=\"250\" rx=\"8\" fill=\"#fff\"/><line x1=\"45\" y1=\"205\" x2=\"360\" y2=\"205\" stroke=\"#64748b\"/><line x1=\"80\" y1=\"220\" x2=\"80\" y2=\"24\" stroke=\"#64748b\"/><text x=\"360\" y=\"220\" font-size=\"10\" fill=\"#334155\" text-anchor=\"end\" >East (i)</text><text x=\"90\" y=\"28\" font-size=\"10\" fill=\"#334155\" text-anchor=\"start\" >North (j)</text><defs><marker id=\"ar\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L0,6 L7,3 z\" fill=\"#334155\"/></marker></defs><rect x=\"90\" y=\"55\" width=\"250\" height=\"145\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/><line x1=\"90\" y1=\"55\" x2=\"90\" y2=\"200\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"90\" y1=\"200\" x2=\"320\" y2=\"55\" stroke=\"#7c3aed\" stroke-width=\"3\" marker-end=\"url(#ar)\"/><line x1=\"90\" y1=\"200\" x2=\"320\" y2=\"200\" stroke=\"#16a34a\" stroke-width=\"2\"/><line x1=\"320\" y1=\"200\" x2=\"320\" y2=\"55\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"70\" y=\"48\" font-size=\"10\" fill=\"#334155\" text-anchor=\"end\" >Start</text><text x=\"333\" y=\"52\" font-size=\"10\" fill=\"#334155\" text-anchor=\"start\" >Landing</text><text x=\"205\" y=\"218\" font-size=\"10\" fill=\"#15803d\" text-anchor=\"middle\" >100 m north</text><text x=\"205\" y=\"154\" font-size=\"10\" fill=\"#6d28d9\" text-anchor=\"middle\" >d ≈ 134.95 m</text><text x=\"325\" y=\"140\" font-size=\"10\" fill=\"#b91c1c\" text-anchor=\"start\" >east drift</text></svg>"
                   }
+                },
+                {
+                  "explain": "Substitute and evaluate the straight-line displacement.",
+                  "work": "\\(d\\approx\\sqrt{90.65^2+100^2}\\approx134.96\\text{ m}\\)"
+                },
+                {
+                  "explain": "Round as required and pair the distance with the crossing time.",
+                  "work": "\\(d\\approx\\sqrt{90.62^2+100^2}\\approx134.95\\text{ m},\\quad t\\approx9.38\\text{ s}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -1351,16 +1379,20 @@
               ],
               "steps": [
                 {
-                  "explain": "Write both vectors as component pairs and add like components.",
-                  "work": "\\(\\mathbf a+\\mathbf b=(4-2)\\mathbf i+(-5+4)\\mathbf j=2\\mathbf i-\\mathbf j\\)"
+                  "explain": "Add corresponding vector components.",
+                  "work": "\\(a+b=(4-2)i+(-5+4)j=2i-j\\)"
                 },
                 {
-                  "explain": "Find the magnitude of the resultant.",
-                  "work": "\\(|\\mathbf a+\\mathbf b|=\\sqrt{2^2+(-1)^2}=\\sqrt5\\)"
+                  "explain": "Use Pythagoras for the magnitude.",
+                  "work": "\\(|a+b|=\\sqrt{2^2+(-1)^2}=\\sqrt5\\)"
                 },
                 {
-                  "explain": "Its horizontal component is positive and vertical component negative, so it points below the positive x-axis. Find the reference angle.",
-                  "work": "\\(\\tan\\alpha=\\frac{|{-1}|}{2}=\\frac12\\Rightarrow\\alpha=\\tan^{-1}(0.5)=26.565^\\circ\\approx26.6^\\circ\\)"
+                  "explain": "The vector is in quadrant IV because its x-component is positive and y-component negative.",
+                  "work": "\\(\\tan\\alpha=\\frac{1}{2}\\)"
+                },
+                {
+                  "explain": "Find the reference angle and express the direction relative to +x.",
+                  "work": "\\(\\alpha=\\tan^{-1}(0.5)\\approx26.6^\\circ\\text{ below +x}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -1395,15 +1427,19 @@
               ],
               "steps": [
                 {
-                  "explain": "Double the components of \\(\\mathbf b\\).",
-                  "work": "\\(2\\mathbf b=2(-2\\mathbf i+4\\mathbf j)=-4\\mathbf i+8\\mathbf j\\)"
+                  "explain": "Double both components of b.",
+                  "work": "\\(2b=-4i+8j\\)"
                 },
                 {
-                  "explain": "Subtract \\(\\mathbf a=4\\mathbf i-5\\mathbf j\\) component by component.",
-                  "work": "\\(2\\mathbf b-\\mathbf a=(-4-4)\\mathbf i+(8-(-5))\\mathbf j\\)"
+                  "explain": "Subtract a=(4,−5); subtracting −5 in the j-component becomes addition.",
+                  "work": "\\(2b-a=(-4-4)i+(8-(-5))j\\)"
                 },
                 {
-                  "explain": "Simplify both components.",
+                  "explain": "Evaluate the two components.",
+                  "work": "\\(2b-a=-8i+13j\\)"
+                },
+                {
+                  "explain": "Write the ordered pair as a vector in i,j notation to make the result explicit.",
                   "work": "\\(2\\mathbf b-\\mathbf a=-8\\mathbf i+13\\mathbf j\\)"
                 }
               ],
@@ -1735,16 +1771,20 @@
           ],
           "steps": [
             {
-              "explain": "Find the scalar product and the squared magnitude of the vector being projected onto.",
-              "work": "\\(\\mathbf p\\cdot\\mathbf q=4(-1)+(-3)(2)=-10,\\qquad \\mathbf q\\cdot\\mathbf q=(-1)^2+2^2=5\\)"
+              "explain": "Calculate p·q.",
+              "work": "\\(p\\cdot q=4(-1)+(-3)(2)=-10\\)"
             },
             {
-              "explain": "Apply \\(\\operatorname{proj}_{\\mathbf q}\\mathbf p=\\frac{\\mathbf p\\cdot\\mathbf q}{\\mathbf q\\cdot\\mathbf q}\\mathbf q\\).",
-              "work": "\\(\\operatorname{proj}_{\\mathbf q}\\mathbf p=\\frac{-10}{5}\\begin{pmatrix}-1\\\\ 2\\end{pmatrix}=-2\\begin{pmatrix}-1\\\\ 2\\end{pmatrix}\\)"
+              "explain": "Calculate the squared magnitude of q.",
+              "work": "\\(q\\cdot q=(-1)^2+2^2=5\\)"
+            },
+            {
+              "explain": "Apply the projection formula. The scalar factor is −2, so the projected vector points opposite to q.",
+              "work": "\\(\\operatorname{proj}_{\\mathbf q}\\mathbf p=-2\\binom{-1}{2}\\)"
             },
             {
               "explain": "Multiply each component by −2.",
-              "work": "\\(\\operatorname{proj}_{\\mathbf q}\\mathbf p=\\begin{pmatrix}2\\\\ -4\\end{pmatrix}\\)"
+              "work": "\\(\\operatorname{proj}_{\\mathbf q}\\mathbf p=\\binom{2}{-4}\\)"
             }
           ],
           "timeLimit": 60,
