@@ -17,7 +17,6 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const PUB = 'public/content';
-globalThis.__SAPERE_CONTENT_SOURCE = 'cdn';
 globalThis.fetch = async (url) => {
   const f = path.join(PUB, url.replace(/^\/content\//, ''));
   if (!fs.existsSync(f)) return { ok: false, status: 404 };

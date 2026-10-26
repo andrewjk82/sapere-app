@@ -1,15 +1,8 @@
 /**
  * contentLoader.js — question content over HTTP from /content/ (built by tools/content/publish.mjs).
  *
- * Replaces Firestore reads of the `questions` collection for whichever chapters are switched on:
- *
- *   VITE_CONTENT_SOURCE = firestore            (default) nothing here is used
- *                       = cdn                  every chapter from /content/
- *                       = y7-7,y9-16,exam:     comma list of chapterIds or prefixes → only those
- *   localStorage 'sapere:contentSource'        same values; overrides the env for THIS browser (admin testing)
- *
- * Kill-switch: if manifest.json cannot be fetched, useCdn() returns false for everything and the
- * existing Firestore paths run unchanged. No Firestore reads happen in this file.
+ * The only source of question content for the app (the Firestore `questions` collection was
+ * retired and then deleted on 2026-10-26). No Firestore reads happen in this file.
  *
  * Caching is the browser's: topic files are hash-named + immutable, manifest is max-age=60.
  * Documents are returned in the LEGACY Firestore shape (toLegacy) so no component changes.
@@ -20,33 +13,9 @@ const MANIFEST_TTL = 60_000;
 
 let manifestPromise = null;
 let manifestAt = 0;
-let manifestFailed = false;
 const topicCache = new Map(); // file → Promise<topicFile>
 let idsCache = null;          // Promise<{ id: topicId }>
 let homeworkQuestionIndexCache = null; // Promise<{ homework reference key: [{ questionId, topicId }] }>
-
-// ---------- switch -------------------------------------------------------------------------------
-const readSetting = () => {
-  if (globalThis.__SAPERE_CONTENT_SOURCE) return String(globalThis.__SAPERE_CONTENT_SOURCE); // node tests
-  try { const v = window.localStorage.getItem('sapere:contentSource'); if (v) return v.trim(); } catch { /* ignore */ }
-  return String(import.meta.env?.VITE_CONTENT_SOURCE || 'cdn').trim();
-};
-const parseSetting = (v) => {
-  if (!v || v === 'firestore') return { all: false, list: [] };
-  if (v === 'cdn' || v === 'all') return { all: true, list: [] };
-  return { all: false, list: v.split(',').map((x) => x.trim()).filter(Boolean) };
-};
-export const contentSourceSetting = () => parseSetting(readSetting());
-
-/** Is this chapter served from /content/? Synchronous — call primeContent() once at app start. */
-export const useCdn = (chapterId) => {
-  if (manifestFailed) return false;
-  const s = contentSourceSetting();
-  if (s.all) return true;
-  if (!chapterId) return false;
-  return s.list.some((p) => chapterId === p || chapterId.startsWith(p));
-};
-export const cdnEnabledAtAll = () => { const s = contentSourceSetting(); return !manifestFailed && (s.all || s.list.length > 0); };
 
 // ---------- fetch ------------------------------------------------------------------------------
 const fetchJson = async (url) => {
@@ -58,15 +27,13 @@ const fetchJson = async (url) => {
 export const getManifest = async () => {
   if (manifestPromise && Date.now() - manifestAt < MANIFEST_TTL) return manifestPromise;
   manifestAt = Date.now();
-  manifestPromise = fetchJson(MANIFEST_URL).then((m) => { manifestFailed = false; return m; }).catch((e) => {
-    manifestFailed = true; manifestPromise = null;
-    console.warn('[contentLoader] manifest unavailable — falling back to Firestore', e?.message || e);
+  manifestPromise = fetchJson(MANIFEST_URL).catch((e) => {
+    manifestPromise = null;
+    console.warn('[contentLoader] manifest unavailable', e?.message || e);
     throw e;
   });
   return manifestPromise;
 };
-/** Warm the manifest so useCdn() can answer synchronously. Safe to call many times. */
-export const primeContent = () => { if (cdnEnabledAtAll()) getManifest().catch(() => {}); };
 
 const getTopicFile = (file) => {
   if (!topicCache.has(file)) topicCache.set(file, fetchJson(`/content/${file}`).catch((e) => { topicCache.delete(file); throw e; }));
@@ -121,7 +88,14 @@ export const getChapterIndex = async (chapterId) => {
   if (!entries.length) return null;
   const docs = await getChapterQuestions(chapterId);
   let h = 0; for (const [file] of entries) for (const c of file) h = (h * 31 + c.charCodeAt(0)) >>> 0;
-  return { ids: docs.map((d) => d.id), updatedAtMs: h };
+  return {
+    ids: docs.map((d) => d.id),
+    // The documents are already in hand here, so which of them are easy costs nothing
+    // extra. practice_pool stores this so daily selection can cap easy questions for a
+    // chapter the student has mastered without re-reading any content.
+    easyIds: docs.filter((d) => d.difficulty === 'easy').map((d) => d.id),
+    updatedAtMs: h,
+  };
 };
 
 /**
@@ -147,19 +121,19 @@ export const chapterOfId = async (id) => {
 };
 
 /**
- * Fetch by id for the chapters served from CDN. Returns { docs, remaining } — `remaining` are ids
- * this loader does not serve (chapter not switched on, or unknown) and must still come from Firestore.
+ * Fetch by id. Returns { docs, remaining } — `remaining` are ids the content build does not have
+ * (removed from the bank, or unknown).
  */
 export const getQuestionsByIds = async (ids) => {
   const unique = [...new Set((ids || []).map(String))];
   const docs = []; const remaining = [];
-  if (!unique.length || !cdnEnabledAtAll()) return { docs, remaining: unique };
+  if (!unique.length) return { docs, remaining: unique };
   let m; let idMap;
   try { m = await getManifest(); idMap = await getIdMap(); } catch { return { docs, remaining: unique }; }
   const byFile = new Map(); // file → Set(ids wanted)
   for (const id of unique) {
     const topicId = idMap[id] || id.replace(/-[^-]+$/, '');
-    const refs = (m.topics[topicId] || []).filter(([cid]) => useCdn(cid));
+    const refs = m.topics[topicId] || [];
     if (!refs.length) { remaining.push(id); continue; }
     for (const [, file] of refs) { if (!byFile.has(file)) byFile.set(file, new Set()); byFile.get(file).add(id); }
   }

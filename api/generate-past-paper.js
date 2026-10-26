@@ -10,7 +10,7 @@
  *   mode    — "paper" (default) | "answers"
  */
 
-import { ALL_PAST_PAPER_QUESTIONS } from '../src/constants/allPastPaperQuestions.js';
+import { pastPaperQuestions } from './_lib/pastPaperPool.js';
 // ─── Seeded RNG ──────────────────────────────────────────────────────────────
 function makeRng(seed) {
   let s = (seed >>> 0) || 1;
@@ -32,7 +32,7 @@ function shuffle(arr, rng) {
 }
 
 // ─── Question pool ───────────────────────────────────────────────────────────
-const ALL_QUESTIONS = ALL_PAST_PAPER_QUESTIONS;
+const ALL_QUESTIONS = pastPaperQuestions();
 
 
 
