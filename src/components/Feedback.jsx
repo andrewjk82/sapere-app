@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { collection, getDocs, query, orderBy, where, limit, deleteDoc, doc, updateDoc, Timestamp } from 'firebase/firestore';
+import { collection, getDocs, query, orderBy, where, limit, startAfter, deleteDoc, deleteField, doc, updateDoc, Timestamp } from 'firebase/firestore';
 import { MessageSquare, ArrowLeft } from 'lucide-react';
 import { db } from '../firebase/config';
 import { useAuth } from '../context/AuthContext';
@@ -7,10 +7,13 @@ import { useProfile } from '../context/ProfileContext';
 import { useToast } from '../context/ToastContext';
 import { localCache } from '../services/localCacheService';
 import MathView from './MathView';
+import { splitFeedbackImages, imageStripUpdate, mergeFeedbackImages } from '../utils/feedbackImages';
+import { saveFeedbackImages, loadFeedbackImages, deleteFeedbackImages } from '../utils/feedbackImageStore';
 
-// Cap so a student with months of feedback never reads an unbounded list.
+// Page size for each feedback read.
 const PAGE_LIMIT = 50;
-const cacheKeyFor = (uid) => `feedback:v1:${uid}`;
+// v2: text only (photos live in IndexedDB, see feedbackImages.js).
+const cacheKeyFor = (uid) => `feedback:v2:${uid}`;
 
 // Normalise savedAt (live Timestamp, cached {millis}, or gradedAt fallback) to
 // a plain millisecond number used for sorting and as the delta-query cursor.
@@ -47,19 +50,26 @@ const Feedback = ({ setActiveTab }) => {
 
   const load = useCallback(async () => {
     if (!user?.uid) return;
-    const key = cacheKeyFor(user.uid);
+    const uid = user.uid;
+    const key = cacheKeyFor(uid);
+    localCache.remove(`feedback:v1:${uid}`); // v1 cached the photos too (could overflow localStorage)
     const cached = localCache.get(key);
     const cachedNotes = Array.isArray(cached?.notes) ? cached.notes : [];
+    const withDeviceImages = async (list) => {
+      const images = await loadFeedbackImages(uid, list.map((n) => n.id));
+      return sortDesc(list.map((n) => mergeFeedbackImages(n, images[n.id])));
+    };
 
     // 1. Render cached cards immediately — no read.
     if (cachedNotes.length) {
-      setNotes(sortDesc(cachedNotes));
+      setNotes(await withDeviceImages(cachedNotes));
       setLoading(false);
     }
 
     // 2. Skip the network entirely when nothing is new and we already have a
     //    cache (the unread badge is the free "is there anything new" signal).
-    if (cachedNotes.length && unreadCount === 0) {
+    const pendingStrip = cached?.pendingStrip || {};
+    if (cachedNotes.length && unreadCount === 0 && !Object.keys(pendingStrip).length) {
       setLoading(false);
       return;
     }
@@ -67,22 +77,63 @@ const Feedback = ({ setActiveTab }) => {
     setLoading((prev) => (cachedNotes.length ? false : prev));
     try {
       const cursor = cached?.lastSavedAtMs || 0;
-      const col = collection(db, 'users', user.uid, 'saved_feedback');
-      // Delta read when we have a cursor; otherwise the latest page.
-      const q = cursor > 0
-        ? query(col, where('savedAt', '>', Timestamp.fromMillis(cursor)), orderBy('savedAt', 'desc'), limit(PAGE_LIMIT))
-        : query(col, orderBy('savedAt', 'desc'), limit(PAGE_LIMIT));
-      const snap = await getDocs(q);
-      const fetched = snap.docs.map(d => normalise(d.id, d.data()));
+      const col = collection(db, 'users', uid, 'saved_feedback');
+      // Delta read when we have a cursor. Without one (first open on this device)
+      // every card is read once, page by page, so the photos of older cards move too.
+      const docs = [];
+      if (cursor > 0) {
+        docs.push(...(await getDocs(query(col, where('savedAt', '>', Timestamp.fromMillis(cursor)), orderBy('savedAt', 'desc'), limit(PAGE_LIMIT)))).docs);
+      } else {
+        let last = null;
+        for (;;) {
+          const page = await getDocs(last
+            ? query(col, orderBy('savedAt', 'desc'), startAfter(last), limit(PAGE_LIMIT))
+            : query(col, orderBy('savedAt', 'desc'), limit(PAGE_LIMIT)));
+          docs.push(...page.docs);
+          if (page.size < PAGE_LIMIT) break;
+          last = page.docs[page.docs.length - 1];
+        }
+      }
 
-      // Merge fetched into cache (dedupe by id), keep newest PAGE_LIMIT*… bounded.
+      // Move each card's photos to this device, then strip them from Firestore.
+      // A photo is removed from Firestore only after this device has stored it.
+      const inMemory = {};
+      const fetched = [];
+      for (const d of docs) {
+        const data = d.data();
+        const { text, images } = splitFeedbackImages(data);
+        const strip = imageStripUpdate(data, deleteField);
+        if (images) {
+          try {
+            await saveFeedbackImages(uid, d.id, images);
+            if (strip) pendingStrip[d.id] = strip.deviceImageFields;
+          } catch {
+            inMemory[d.id] = images; // shown this time; stays in Firestore until a device can keep it
+          }
+        }
+        fetched.push(normalise(d.id, { ...text, deviceImageFields: strip && pendingStrip[d.id] ? strip.deviceImageFields : text.deviceImageFields }));
+      }
+      for (const [id, fields] of Object.entries(pendingStrip)) {
+        try {
+          await updateDoc(doc(db, 'users', uid, 'saved_feedback', id), {
+            ...Object.fromEntries(fields.map((f) => [f, deleteField()])),
+            deviceImageFields: fields,
+          });
+          delete pendingStrip[id];
+        } catch (err) {
+          if (err?.code === 'not-found') delete pendingStrip[id]; // card deleted meanwhile
+        }
+      }
+
+      // Merge fetched into cache (dedupe by id). The cache holds text only.
       const byId = new Map(cachedNotes.map(n => [n.id, n]));
       fetched.forEach(n => byId.set(n.id, n));
       const merged = sortDesc(Array.from(byId.values()));
       const lastSavedAtMs = merged.reduce((mx, n) => Math.max(mx, n.savedAtMs || 0), 0);
+      localCache.set(key, { notes: merged, lastSavedAtMs, pendingStrip, savedAt: Date.now() });
 
-      setNotes(merged);
-      localCache.set(key, { notes: merged, lastSavedAtMs, savedAt: Date.now() });
+      const shown = await withDeviceImages(merged);
+      setNotes(shown.map((n) => (inMemory[n.id] ? mergeFeedbackImages(n, inMemory[n.id]) : n)));
     } catch { /* non-fatal — cached cards remain on screen */ }
     finally { setLoading(false); }
   }, [user?.uid, unreadCount]);
@@ -99,12 +150,13 @@ const Feedback = ({ setActiveTab }) => {
     if (!user?.uid) return;
     try {
       await deleteDoc(doc(db, 'users', user.uid, 'saved_feedback', id));
+      deleteFeedbackImages(user.uid, id);
       setNotes(prev => {
         const next = prev.filter(n => n.id !== id);
         // Keep the cache in sync so the deleted card never reappears from cache.
         const key = cacheKeyFor(user.uid);
         const cached = localCache.get(key) || {};
-        localCache.set(key, { ...cached, notes: next, savedAt: Date.now() });
+        localCache.set(key, { ...cached, notes: (cached.notes || []).filter(n => n.id !== id), savedAt: Date.now() });
         return next;
       });
       showToast('Feedback removed.', 'success');
@@ -199,6 +251,11 @@ const Feedback = ({ setActiveTab }) => {
                   <MathView content={note.answerText} style={{ fontSize: '0.9rem', fontWeight: 700, color: '#1e293b', marginTop: '6px' }} />
                 )}
               </div>
+            )}
+            {note.imagesMissing && (
+              <p style={{ margin: '0 0 10px', fontSize: '0.78rem', color: '#94a3b8', fontStyle: 'italic' }}>
+                The photos for this feedback are saved on the device where you first opened it.
+              </p>
             )}
 
             {/* Correct answer + solution guide. */}

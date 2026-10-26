@@ -25,7 +25,9 @@ const writeFeedbackCard = async (userRef, item, correct, feedback, annotation) =
       // The student's own submission and the model answer, so the card is
       // self-contained: question → their answer → correct answer → comment.
       answerText: item.answerText || null,
-      answerImage: item.answerImage || null,
+      // One copy of the photo: the Feedback page shows answerImages first, so
+      // answerImage is kept only when there are no answerImages.
+      answerImage: Array.isArray(item.answerImages) && item.answerImages.length ? null : (item.answerImage || null),
       answerImages: Array.isArray(item.answerImages) ? item.answerImages : [],
       correctAnswer: item.correctAnswer || '',
       solution: item.solution || '',
