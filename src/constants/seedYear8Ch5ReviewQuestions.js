@@ -1,4 +1,4 @@
-export const Y8_CH5_REVIEW_QUESTIONS = [
+export const Y8_CH5H_QUESTIONS = [
   {
     "id": "y8-5h-q1a",
     "type": "short_answer",
@@ -1131,52 +1131,83 @@ export const Y8_CH5_REVIEW_QUESTIONS = [
   },
   {
     "id": "y8-5h-q2e_beta",
-    "type": "multiple_choice",
+    "type": "short_answer",
     "difficulty": "easy",
-    "question": "Find the value of \\(\\beta\\) in the diagram below, giving reasons.",
-    "a": 2,
-    "solution": "The correct answer is \\(135^\\circ\\).\n\nStep 1: \\(\\triangle ABC\\) is an isosceles right-angled triangle with \\(CA = CB\\) and \\(\\angle C = 90^\\circ\\). The base angles are equal: \\(\\angle ABC = \\frac{180^\\circ - 90^\\circ}{2} = 45^\\circ\\).\nStep 2: Points \\(C, B, D\\) lie on a straight line, so adjacent angles add to \\(180^\\circ\\): \\(\\angle ABC + \\beta = 180^\\circ\\).\nStep 3: \\(\\beta = 180^\\circ - 45^\\circ = 135^\\circ\\).",
+    "question": "Find the value of $\\beta$.",
+    "a": "135^\\circ",
+    "solution": "Angles on a straight line add to $180^\\circ$. The interior angle at B is $45^\\circ$. $\\beta = 180^\\circ - 45^\\circ = 135^\\circ$.",
     "t": "Review of geometry",
-    "hint": "First find the interior angle \\(\\angle ABC\\) using the isosceles right-angled triangle, then use the fact that angles on a straight line add to \\(180^\\circ\\).",
+    "hint": "Angles on a straight line add to 180 degrees.",
     "solutionSteps": [
       {
-        "explanation": "Identify the properties of \\(\\triangle ABC\\): the tick marks on \\(CA\\) and \\(CB\\) indicate \\(CA = CB\\), and the square mark at \\(C\\) indicates \\(\\angle C = 90^\\circ\\). This makes \\(\\triangle ABC\\) an isosceles right-angled triangle. In an isosceles triangle, base angles opposite the equal sides are equal, so \\(\\angle CAB = \\angle ABC\\).",
-        "workingOut": "\\angle C = 90^\\circ,\\quad CA = CB\\\\ \\angle ABC = \\frac{180^\\circ - 90^\\circ}{2} = 45^\\circ",
-        "graphData": {
-          "svg": "<svg viewBox=\"0 0 400 180\" width=\"100%\" height=\"180\" style=\"background:#ffffff; border:1px solid #e2e8f0; border-radius:16px; display:block; margin:0 auto; font-family:system-ui,-apple-system,sans-serif;\">\n  <line x1=\"80\" y1=\"130\" x2=\"350\" y2=\"130\" stroke=\"#cbd5e1\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n  <!-- Highlighted triangle ABC -->\n  <polygon points=\"150,130 150,30 250,130\" fill=\"#ede9fe\" fill-opacity=\"0.7\" stroke=\"#6366f1\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <!-- Right angle box at C -->\n  <path d=\"M 150 115 L 165 115 L 165 130\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2\"/>\n  <text x=\"175\" y=\"122\" fill=\"#4f46e5\" font-size=\"10.5\" font-weight=\"700\">90°</text>\n  <!-- Equal tick marks highlighted in purple -->\n  <path d=\"M 143,75 L 157,85\" stroke=\"#7c3aed\" stroke-width=\"3\"/>\n  <path d=\"M 195,123 L 205,137\" stroke=\"#7c3aed\" stroke-width=\"3\"/>\n  <!-- Labels -->\n  <text x=\"150\" y=\"20\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"800\">A</text>\n  <text x=\"135\" y=\"148\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"800\">C</text>\n  <text x=\"250\" y=\"150\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"800\">B</text>\n  <!-- Highlighted interior base angle B -->\n  <path d=\"M 232 130 A 18 18 0 0 1 237.3 117.3\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/>\n  <rect x=\"205\" y=\"105\" width=\"30\" height=\"18\" rx=\"4\" fill=\"#dbeafe\" stroke=\"#3b82f6\" stroke-width=\"1\"/>\n  <text x=\"220\" y=\"118\" text-anchor=\"middle\" fill=\"#1d4ed8\" font-size=\"11\" font-weight=\"800\">45°</text>\n  <!-- Banner -->\n  <rect x=\"65\" y=\"8\" width=\"270\" height=\"22\" rx=\"5\" fill=\"#f5f3ff\" stroke=\"#ddd6fe\" stroke-width=\"1\"/>\n  <text x=\"200\" y=\"23\" text-anchor=\"middle\" fill=\"#6d28d9\" font-size=\"11.5\" font-weight=\"700\">Isosceles △ABC: CA = CB ⟹ ∠ABC = 45°</text>\n</svg>"
-        }
+        "explanation": "Interior angle at B is equal to \\alpha",
+        "workingOut": "\\angle ABC = 45^\\circ"
       },
       {
-        "explanation": "Notice that side \\(CB\\) is extended in a straight line to point \\(D\\). The interior angle \\(\\angle ABC = 45^\\circ\\) and the exterior angle \\(\\beta\\) are adjacent angles on the straight line \\(CD\\). Adjacent angles on a straight line add to \\(180^\\circ\\).",
-        "workingOut": "\\angle ABC + \\beta = 180^\\circ\\quad \\text{(Angles on a straight line add to } 180^\\circ\\text{)}\\\\ 45^\\circ + \\beta = 180^\\circ",
-        "graphData": {
-          "svg": "<svg viewBox=\"0 0 400 180\" width=\"100%\" height=\"180\" style=\"background:#ffffff; border:1px solid #e2e8f0; border-radius:16px; display:block; margin:0 auto; font-family:system-ui,-apple-system,sans-serif;\">\n  <polygon points=\"150,130 150,30 250,130\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/>\n  <!-- Highlighted straight line CD -->\n  <line x1=\"120\" y1=\"130\" x2=\"350\" y2=\"130\" stroke=\"#0284c7\" stroke-width=\"3.5\" stroke-linecap=\"round\"/>\n  <!-- Hypotenuse line -->\n  <line x1=\"150\" y1=\"30\" x2=\"250\" y2=\"130\" stroke=\"#475569\" stroke-width=\"2.5\"/>\n  <!-- Vertices -->\n  <circle cx=\"250\" cy=\"130\" r=\"5\" fill=\"#0284c7\"/>\n  <text x=\"150\" y=\"20\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"14\" font-weight=\"700\">A</text>\n  <text x=\"135\" y=\"148\" text-anchor=\"middle\" fill=\"#0284c7\" font-size=\"14\" font-weight=\"800\">C</text>\n  <text x=\"250\" y=\"152\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"800\">B</text>\n  <text x=\"350\" y=\"150\" text-anchor=\"middle\" fill=\"#0284c7\" font-size=\"13\" font-weight=\"800\">D</text>\n  <!-- Interior angle 45 -->\n  <path d=\"M 232 130 A 18 18 0 0 1 237.3 117.3\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\"/>\n  <text x=\"222\" y=\"118\" text-anchor=\"middle\" fill=\"#1d4ed8\" font-size=\"11.5\" font-weight=\"800\">45°</text>\n  <!-- Exterior angle beta highlighted -->\n  <path d=\"M 232.3 112.3 A 25 25 0 0 1 275 130\" fill=\"#fef2f2\" stroke=\"#e11d48\" stroke-width=\"2.5\"/>\n  <rect x=\"264\" y=\"93\" width=\"24\" height=\"22\" rx=\"4\" fill=\"#ffe4e6\" stroke=\"#fda4af\" stroke-width=\"1\"/>\n  <text x=\"276\" y=\"109\" text-anchor=\"middle\" fill=\"#e11d48\" font-size=\"15\" font-weight=\"900\">β</text>\n  <!-- Top Banner -->\n  <rect x=\"65\" y=\"8\" width=\"270\" height=\"22\" rx=\"5\" fill=\"#f0f9ff\" stroke=\"#bae6fd\" stroke-width=\"1\"/>\n  <text x=\"200\" y=\"23\" text-anchor=\"middle\" fill=\"#0369a1\" font-size=\"11.5\" font-weight=\"700\">Straight line CD: ∠ABC + β = 180°</text>\n</svg>"
-        }
+        "explanation": "Angles on a straight line",
+        "workingOut": "\\beta + 45^\\circ = 180^\\circ"
       },
       {
-        "explanation": "Subtract \\(45^\\circ\\) from \\(180^\\circ\\) to solve for \\(\\beta\\):\n\\(\\beta = 180^\\circ - 45^\\circ = 135^\\circ\\).\n\n(Alternative check: The exterior angle of a triangle equals the sum of the two opposite interior angles: \\(\\beta = \\angle C + \\angle A = 90^\\circ + 45^\\circ = 135^\\circ\\)).",
-        "workingOut": "\\beta = 180^\\circ - 45^\\circ = 135^\\circ\\\\\n\\boxed{\\beta = 135^\\circ\\text{ (Angles on a straight line add to } 180^\\circ\\text{)}}",
-        "graphData": {
-          "svg": "<svg viewBox=\"0 0 400 180\" width=\"100%\" height=\"180\" style=\"background:#ffffff; border:1px solid #e2e8f0; border-radius:16px; display:block; margin:0 auto; font-family:system-ui,-apple-system,sans-serif;\">\n  <line x1=\"80\" y1=\"130\" x2=\"350\" y2=\"130\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <polygon points=\"150,130 150,30 250,130\" fill=\"#f1f5f9\" stroke=\"#64748b\" stroke-width=\"2\"/>\n  <!-- Highlighted solved angle beta -->\n  <path d=\"M 232.3 112.3 A 25 25 0 0 1 275 130\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"3\"/>\n  <circle cx=\"250\" cy=\"130\" r=\"4.5\" fill=\"#059669\"/>\n  <text x=\"150\" y=\"20\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"14\" font-weight=\"700\">A</text>\n  <text x=\"135\" y=\"148\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"14\" font-weight=\"700\">C</text>\n  <text x=\"250\" y=\"150\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"800\">B</text>\n  <text x=\"350\" y=\"150\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"13\" font-weight=\"700\">D</text>\n  <!-- Interior 45 -->\n  <text x=\"222\" y=\"118\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"11\" font-weight=\"700\">45°</text>\n  <!-- Solved beta pill -->\n  <rect x=\"260\" y=\"88\" width=\"100\" height=\"26\" rx=\"6\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"1.5\"/>\n  <text x=\"310\" y=\"105\" text-anchor=\"middle\" fill=\"#065f46\" font-size=\"13\" font-weight=\"900\">β = 135°</text>\n  <!-- Top Banner -->\n  <rect x=\"75\" y=\"8\" width=\"250\" height=\"22\" rx=\"5\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1\"/>\n  <text x=\"200\" y=\"23\" text-anchor=\"middle\" fill=\"#047857\" font-size=\"11.5\" font-weight=\"700\">β = 180° − 45° = 135°</text>\n</svg>"
-        }
+        "explanation": "Solve for \\beta",
+        "workingOut": "\\beta = 135^\\circ"
       }
     ],
     "graphData": {
-      "svg": "<svg viewBox=\"0 0 400 180\" width=\"100%\" height=\"180\" style=\"background:#ffffff; border:1px solid #e2e8f0; border-radius:16px; display:block; margin:0 auto; font-family:system-ui,-apple-system,sans-serif;\">\n  <!-- Straight line CD -->\n  <line x1=\"80\" y1=\"130\" x2=\"350\" y2=\"130\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <!-- Triangle legs CA and AB -->\n  <line x1=\"150\" y1=\"130\" x2=\"150\" y2=\"30\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <line x1=\"150\" y1=\"30\" x2=\"250\" y2=\"130\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <polygon points=\"150,130 150,30 250,130\" fill=\"#6366f1\" fill-opacity=\"0.04\"/>\n  \n  <!-- Right angle box at C -->\n  <path d=\"M 150 115 L 165 115 L 165 130\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.8\"/>\n  \n  <!-- Ticks on CA and CB indicating CA = CB -->\n  <path d=\"M 144,75 L 156,85\" stroke=\"#475569\" stroke-width=\"2.2\"/>\n  <path d=\"M 195,124 L 205,136\" stroke=\"#475569\" stroke-width=\"2.2\"/>\n  \n  <!-- Vertex Circles -->\n  <circle cx=\"150\" cy=\"30\" r=\"3.5\" fill=\"#1e293b\"/>\n  <circle cx=\"150\" cy=\"130\" r=\"3.5\" fill=\"#1e293b\"/>\n  <circle cx=\"250\" cy=\"130\" r=\"4\" fill=\"#f43f5e\"/>\n  \n  <!-- Vertex Labels -->\n  <text x=\"150\" y=\"20\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"800\">A</text>\n  <text x=\"135\" y=\"148\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"800\">C</text>\n  <text x=\"250\" y=\"152\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"800\">B</text>\n  <text x=\"350\" y=\"150\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"13\" font-weight=\"700\">D</text>\n  \n  <!-- Exterior angle beta marked clearly on the outside between BA and BD -->\n  <path d=\"M 232.3 112.3 A 25 25 0 0 1 275 130\" fill=\"none\" stroke=\"#f43f5e\" stroke-width=\"2.2\"/>\n  <rect x=\"264\" y=\"93\" width=\"24\" height=\"22\" rx=\"4\" fill=\"#ffe4e6\" stroke=\"#fda4af\" stroke-width=\"1\"/>\n  <text x=\"276\" y=\"109\" text-anchor=\"middle\" fill=\"#e11d48\" font-size=\"15\" font-weight=\"900\">β</text>\n</svg>"
-    },
-    "opts": [
-      "\\(45^\\circ\\) (Base angles of an isosceles triangle are equal)",
-      "\\(90^\\circ\\) (Perpendicular lines form a right angle)",
-      "\\(135^\\circ\\) (Angles on a straight line add to \\(180^\\circ\\))",
-      "\\(135^\\circ\\) (Exterior angle of a triangle equals sum of opposite interior angles)"
-    ],
-    "options": [
-      "\\(45^\\circ\\) (Base angles of an isosceles triangle are equal)",
-      "\\(90^\\circ\\) (Perpendicular lines form a right angle)",
-      "\\(135^\\circ\\) (Angles on a straight line add to \\(180^\\circ\\))",
-      "\\(135^\\circ\\) (Exterior angle of a triangle equals sum of opposite interior angles)"
-    ],
-    "answer": "2"
+      "geometry": {
+        "points": {
+          "C": [
+            0,
+            0
+          ],
+          "A": [
+            0,
+            2
+          ],
+          "B": [
+            2,
+            0
+          ],
+          "D": [
+            3.5,
+            0
+          ]
+        },
+        "segments": [
+          {
+            "from": "C",
+            "to": "A",
+            "ticks": 1
+          },
+          {
+            "from": "C",
+            "to": "B",
+            "ticks": 1
+          },
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "D"
+          }
+        ],
+        "angles": [
+          {
+            "at": "C",
+            "right": true
+          },
+          {
+            "at": "A",
+            "label": "\\alpha"
+          },
+          {
+            "at": "B",
+            "label": "\\beta"
+          }
+        ]
+      }
+    }
   },
   {
     "id": "y8-5h-q2f_alpha",
