@@ -1,6 +1,6 @@
 /** Daily question share per chapter. Run via npm run test:homework. */
 import assert from 'node:assert';
-import { allocateQuotas, chapterWeight } from '../src/utils/poolAllocation.js';
+import { allocateQuotas, chapterWeight, easyAllowanceFor, STRONG_ACCURACY, EASY_SHARE_WHEN_STRONG } from '../src/utils/poolAllocation.js';
 
 let passed = 0;
 const test = (name, fn) => { fn(); passed += 1; console.log(`  ✓ ${name}`); };
@@ -49,6 +49,73 @@ test('weaker chapters get a bigger share, stronger ones a smaller share', () => 
   assert.ok(chapterWeight(100, { correct: 0, total: 10 }) > chapterWeight(100, undefined));
   assert.ok(chapterWeight(100, { correct: 10, total: 10 }) < chapterWeight(100, undefined));
   assert.equal(chapterWeight(100, undefined), 10);
+});
+
+
+// ── easy cap for mastered chapters ────────────────────────────────────────────
+
+test('only chapters ABOVE the accuracy threshold are capped; unknown accuracy is not', () => {
+  // Stated against the constant so the boundary stays tested if it is ever retuned.
+  const chapterIds = ['above', 'exactly', 'below', 'unknown'];
+  const targets = { above: 5, exactly: 5, below: 5, unknown: 5 };
+  const a = easyAllowanceFor({
+    chapterIds,
+    targets,
+    accuracy: {
+      above: { correct: Math.round((STRONG_ACCURACY + 0.01) * 1000), total: 1000 },
+      exactly: { correct: Math.round(STRONG_ACCURACY * 1000), total: 1000 },  // AT it → not capped
+      below: { correct: Math.round((STRONG_ACCURACY - 0.01) * 1000), total: 1000 },
+      unknown: { correct: 0, total: 0 },                                       // no data → not capped
+    },
+    rng: seeded(11),
+  });
+  assert.deepEqual(Object.keys(a), ['above'], JSON.stringify(a));
+});
+
+test('the threshold catches a chapter a strong student is nearly perfect in', () => {
+  // The case this was tuned for: 0.8987 in the chapter that supplies most of the easy
+  // questions. A 0.90 cut-off left it uncapped, which is why the threshold is 0.85.
+  const a = easyAllowanceFor({
+    chapterIds: ['y9-1'],
+    targets: { 'y9-1': 10 },
+    accuracy: { 'y9-1': { correct: 213, total: 237 } },   // 0.8987
+    rng: seeded(7),
+  });
+  assert.equal(a['y9-1'], 1, JSON.stringify(a));
+});
+
+test('a mastered chapter is held at or under the easy share, never over', () => {
+  // one big mastered chapter: 20 questions → budget 2 → 10%
+  const a = easyAllowanceFor({ chapterIds: ['m'], targets: { m: 20 }, accuracy: { m: { correct: 10, total: 10 } }, rng: seeded(2) });
+  assert.equal(a.m, 2);
+  assert.ok(a.m <= 20 * EASY_SHARE_WHEN_STRONG);
+});
+
+test('the easy budget is shared across the day, not rounded away inside each chapter', () => {
+  // Wonmin-shaped: three mastered chapters of 2-3 questions each. Rounding 10% inside
+  // each one would floor to 0 every time; across the day their 8 questions allow 1.
+  const chapterIds = ['a', 'b', 'c'];
+  const targets = { a: 3, b: 3, c: 2 };
+  const accuracy = { a: { correct: 95, total: 100 }, b: { correct: 94, total: 100 }, c: { correct: 99, total: 100 } };
+  const a = easyAllowanceFor({ chapterIds, targets, accuracy, rng: seeded(3) });
+  assert.equal(sum(a), 1, JSON.stringify(a));
+  assert.ok(sum(a) <= Math.ceil(8 * EASY_SHARE_WHEN_STRONG), JSON.stringify(a));
+});
+
+test('the budget never exceeds the share, whichever chapter draws on it first', () => {
+  const chapterIds = ['a', 'b', 'c', 'd'];
+  const targets = { a: 4, b: 4, c: 4, d: 4 };   // 16 mastered questions → budget 2
+  const accuracy = Object.fromEntries(chapterIds.map((c) => [c, { correct: 99, total: 100 }]));
+  for (let seed = 0; seed < 40; seed += 1) {
+    const a = easyAllowanceFor({ chapterIds, targets, accuracy, rng: seeded(seed) });
+    assert.equal(sum(a), 2, `seed ${seed}: ${JSON.stringify(a)}`);
+    Object.values(a).forEach((n) => assert.ok(n >= 0));
+  }
+});
+
+test('no mastered chapters means no allowance at all', () => {
+  assert.deepEqual(easyAllowanceFor({ chapterIds: ['a'], targets: { a: 10 }, accuracy: { a: { correct: 1, total: 10 } } }), {});
+  assert.deepEqual(easyAllowanceFor({ chapterIds: [], targets: {}, accuracy: {} }), {});
 });
 
 console.log(`\npool allocation: ${passed} passed`);

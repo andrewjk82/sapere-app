@@ -12,6 +12,7 @@
  *       [chapterId]: {
  *         ids:  string[],   // 해당 챕터의 전체 문제 ID
  *         done: string[],   // 이미 출제된 ID
+ *         easy: string[],   // 그중 difficulty:'easy' 인 ID (난이도 상한용)
  *       }
  *     },
  *     chapter_accuracy: {
@@ -34,11 +35,17 @@ import {
 import { db } from '../firebase/config';
 import { readChapterIndex } from './questionIndexService';
 import { buildDailyTargets, getCurriculumSignature } from './dailyAssignmentService';
-import { allocateQuotas } from '../utils/poolAllocation';
+import { allocateQuotas, easyAllowanceFor } from '../utils/poolAllocation';
 
 // ─── helpers ────────────────────────────────────────────────────────────────
 
 const poolRef = (uid) => doc(db, 'users', uid, 'practice_pool', 'main');
+
+// Bumped when chapter_pools gains a field daily selection depends on. A pool written
+// by an older build is rebuilt on the student's next load (done[] is preserved), which
+// is how existing pools pick up `easy`.
+const POOL_SCHEMA_VERSION = 2;
+const schemaStale = (pool) => Number(pool?.schema || 0) < POOL_SCHEMA_VERSION;
 
 // 세션 내 in-memory 캐시 — 같은 uid/signature 조합은 Firestore를 다시 읽지 않음.
 // prepareNextDailyAssignment 등 퀴즈 완료 후 두 번째 호출에서 reads를 막기 위함.
@@ -79,7 +86,11 @@ const sameIdSet = (a = [], b = []) => {
 const readTargetIndexes = async (chapterIds) => Promise.all(
   chapterIds.map(async (chapterId) => {
     const index = await readChapterIndex(chapterId);
-    return { chapterId, ids: index?.ids?.map(String) || [] };
+    return {
+      chapterId,
+      ids: index?.ids?.map(String) || [],
+      easyIds: index?.easyIds?.map(String) || [],
+    };
   }),
 );
 
@@ -114,7 +125,7 @@ export const ensurePracticePool = async (uid, studentProfile, membershipVersion)
 
   // 세션 캐시 히트 + 전역 버전도 그대로 → Firestore read 없음
   const cached = getCached(uid, newSignature);
-  if (cached && Number(cached.membershipVersion || 0) === mv) {
+  if (cached && !schemaStale(cached) && Number(cached.membershipVersion || 0) === mv) {
     _membershipChanged.set(uid, false);
     return cached;
   }
@@ -155,7 +166,9 @@ export const ensurePracticePool = async (uid, studentProfile, membershipVersion)
     }
   });
 
-  if (existing && existing.curriculumSignature === newSignature) {
+  // A pool from an older schema falls through to the full rebuild below so it picks up
+  // chapter_pools[].easy; done[] survives that rebuild, so nothing is re-served.
+  if (existing && !schemaStale(existing) && existing.curriculumSignature === newSignature) {
     // 배정 범위는 그대로. 전역 버전까지 같으면 확인할 것도 없다 (read 0).
     if (Number(existing.membershipVersion || 0) === mv) {
       _membershipChanged.set(uid, false);
@@ -230,15 +243,16 @@ const rebuildPool = async ({ uid, newSignature, mv, indexResults }) => {
     const prevPools = live?.chapter_pools || {};
     const prevAccuracy = live?.chapter_accuracy || {};
     const chapter_pools = {};
-    indexResults.forEach(({ chapterId, ids }) => {
+    indexResults.forEach(({ chapterId, ids, easyIds }) => {
       const prev = prevPools[chapterId] || {};
       const prevDoneSet = new Set(prev.done || []);
       // 여전히 active인 ID만 done으로 유지
       const done = ids.filter((id) => prevDoneSet.has(id));
-      chapter_pools[chapterId] = { ids, done };
+      chapter_pools[chapterId] = { ids, done, easy: easyIds || [] };
     });
 
     const next = {
+      schema: POOL_SCHEMA_VERSION,
       curriculumSignature: newSignature,
       membershipVersion: mv,
       cycle: live?.cycle || 0,
@@ -397,11 +411,29 @@ export const selectDailyQuestions = async (uid, questionCount) => {
   const globalSeen = new Set();
   const shuffledUndone = {}; // 챕터별 셔플된 undone 목록 (보충 시 재사용)
 
+  // 난이도 상한: 이미 숙달한 챕터(정확도 > STRONG_ACCURACY)는 하루 easy 몫이
+  // 10% 이하로 제한된다. 하루 단위 예산 배분은 utils/poolAllocation 참고.
+  const easyAllowance = easyAllowanceFor({ chapterIds, targets, accuracy: chapter_accuracy });
+
   chapterIds.forEach((cid) => {
     shuffledUndone[cid] = shuffle(undoneMap[cid]);
-    const picked = shuffledUndone[cid]
-      .filter((id) => !globalSeen.has(id))
-      .slice(0, targets[cid]);
+    const avail = shuffledUndone[cid].filter((id) => !globalSeen.has(id));
+    let picked;
+    if (easyAllowance[cid] === undefined) {
+      picked = avail.slice(0, targets[cid]);
+    } else {
+      // easy는 할당된 몫까지만 먼저 섞어 넣고, 나머지는 non-easy로 채운다.
+      const easySet = new Set(chapter_pools[cid]?.easy || []);
+      const easy = avail.filter((id) => easySet.has(id));
+      const rest = avail.filter((id) => !easySet.has(id));
+      const head = easy.slice(0, easyAllowance[cid]);
+      picked = head.concat(rest.slice(0, Math.max(0, targets[cid] - head.length)));
+      if (picked.length < targets[cid]) {
+        // 이 챕터에 easy 말고 남은 게 없다. 할당량을 비우면 위 트랜잭션의 전체 리셋을
+        // 건드리게 되므로, 상한을 넘겨서라도 채우는 쪽이 낫다.
+        picked = picked.concat(easy.slice(head.length, head.length + (targets[cid] - picked.length)));
+      }
+    }
     picked.forEach((id) => globalSeen.add(id));
     chapterBreakdown[cid] = picked;
     allSelected.push(...picked);
