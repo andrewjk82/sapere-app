@@ -1203,7 +1203,11 @@ export const Y8_CH5H_QUESTIONS = [
           },
           {
             "at": "B",
-            "label": "\\beta"
+            "label": "\\beta",
+            "labelPos": [
+              2.6,
+              0.5
+            ]
           }
         ]
       }
