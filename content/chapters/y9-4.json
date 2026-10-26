@@ -3511,6 +3511,84 @@
             "marks": 2,
             "origin": "exam-import"
           }
+        },
+        {
+          "id": "ch9t3-q20",
+          "type": "multipart",
+          "stem": "Consider the expression \\(9x^2+24xy+16y^2\\).",
+          "difficulty": "hard",
+          "parts": [
+            {
+              "id": "ch9t3-q20a",
+              "type": "mc",
+              "stem": "(a) Factorise the expression completely.",
+              "options": [
+                "\\((3x+4y)(3x-4y)\\)",
+                "\\((3x+4y)^2\\)",
+                "\\((9x+16y)^2\\)",
+                "\\((3x-4y)^2\\)"
+              ],
+              "answer": 1,
+              "hint": "Check if this is a perfect square: \\(9x^2=(3x)^2\\), \\(16y^2=(4y)^2\\), and \\(24xy=2(3x)(4y)\\)?",
+              "steps": [
+                {
+                  "explain": "Check the perfect square pattern: \\(9x^2=(3x)^2\\), \\(16y^2=(4y)^2\\), and the middle term.",
+                  "work": "\\(2\\times(3x)\\times(4y) = 24xy\\) ✓ (matches)"
+                },
+                {
+                  "explain": "Write as a perfect square.",
+                  "work": "\\(9x^2+24xy+16y^2 = (3x+4y)^2\\)"
+                }
+              ]
+            },
+            {
+              "id": "ch9t3-q20b",
+              "type": "mc",
+              "stem": "(b) Hence factorise \\(144x^4-(9x^4+24x^2y^2+16y^4)\\) completely.",
+              "options": [
+                "\\((3x-2y)(3x+2y)(15x^2+4y^2)\\)",
+                "\\((9x^2-4y^2)(15x^2+4y^2)\\)",
+                "\\((3x-2y)^2(15x^2+4y^2)\\)",
+                "\\((12x^2-9x^2-4y^2)(12x^2+9x^2+4y^2)\\)"
+              ],
+              "answer": 0,
+              "hint": "Using part (a) with \\(x\\to x^2\\) and \\(y\\to y^2\\), the bracket \\(9x^4+24x^2y^2+16y^4=(3x^2+4y^2)^2\\). Then \\(144x^4=(12x^2)^2\\) — the whole expression is a difference of two squares.",
+              "steps": [
+                {
+                  "explain": "Using the pattern from part (a) with \\(x\\) replaced by \\(x^2\\) and \\(y\\) replaced by \\(y^2\\), rewrite the bracket as a perfect square.",
+                  "work": "\\(9x^4+24x^2y^2+16y^4 = (3x^2+4y^2)^2\\)"
+                },
+                {
+                  "explain": "Also rewrite \\(144x^4\\) as a perfect square.",
+                  "work": "\\(144x^4 = (12x^2)^2\\)"
+                },
+                {
+                  "explain": "The whole expression is now a difference of two squares: \\((12x^2)^2-(3x^2+4y^2)^2\\).",
+                  "work": "\\(= \\big[12x^2-(3x^2+4y^2)\\big]\\big[12x^2+(3x^2+4y^2)\\big]\\)"
+                },
+                {
+                  "explain": "Simplify each bracket.",
+                  "work": "\\(= (9x^2-4y^2)(15x^2+4y^2)\\)"
+                },
+                {
+                  "explain": "Recognise \\(9x^2-4y^2\\) as a further difference of squares, \\((3x)^2-(2y)^2\\), and factorise it.",
+                  "work": "\\(9x^2-4y^2 = (3x-2y)(3x+2y)\\)"
+                },
+                {
+                  "explain": "Combine for the complete factorisation.",
+                  "work": "\\(= (3x-2y)(3x+2y)(15x^2+4y^2)\\)"
+                }
+              ]
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "source": "Chatswood HS Year 9 Assessment Task 3 (2025)",
+            "school": "Chatswood High School",
+            "examType": "Assessment Task",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },

@@ -3962,6 +3962,365 @@
             "dnaConfidence": 0.85
           },
           "xp": 3
+        },
+        {
+          "id": "girr2020-mc25a",
+          "type": "review",
+          "stem": "Sketch the graph of $y = |x - 1|$ and $y = 2x + 4$ for $-4 \\leq x \\leq 4$ on the grid given below. ",
+          "difficulty": "medium",
+          "answer": "sketch",
+          "solution": "sketch",
+          "steps": [
+            {
+              "explain": "First, find the key features of the absolute value function $y = |x - 1|$. The vertex occurs where $x - 1 = 0$, which is $(1, 0)$.",
+              "work": "y = |x - 1| \\implies \\text{Vertex at } (1, 0)"
+            },
+            {
+              "explain": "Find the $y$-intercept for the absolute value function by setting $x = 0$.",
+              "work": "y = |0 - 1| = 1 \\implies y\\text{-intercept at } (0, 1)"
+            },
+            {
+              "explain": "Next, find the key features of the linear function $y = 2x + 4$. The $y$-intercept is $(0, 4)$ and the $x$-intercept is $(-2, 0)$.",
+              "work": "y = 2x + 4 \\implies y\\text{-intercept: } 4, \\; x\\text{-intercept: } -2"
+            },
+            {
+              "explain": "Calculate the endpoints for both functions at $x = -4$ and $x = 4$ to plot them over the required domain.",
+              "work": "\\text{For } y = |x - 1|: (-4, 5) \\text{ and } (4, 3) \\\\ \\text{For } y = 2x + 4: (-4, -4) \\text{ and } (4, 12)"
+            },
+            {
+              "explain": "Finally, plot the points and draw the lines. The graph of $y = |x - 1|$ is a V-shape, and $y = 2x + 4$ is a straight line.",
+              "work": "\\text{Draw the graphs over } -4 \\leq x \\leq 4",
+              "figure": {
+                "svg": "<svg viewBox=\"0 0 350 350\" xmlns=\"http://www.w3.org/2000/svg\"><defs><style>.axis { stroke: #94a3b8; stroke-width: 2; }.curve-abs { stroke: #3b82f6; stroke-width: 3; fill: none; }.curve-line { stroke: #ef4444; stroke-width: 3; fill: none; }.label { font-size: 14px; fill: #1e293b; font-family: sans-serif; }.pt { fill: #1e293b; }</style></defs><rect width=\"350\" height=\"350\" fill=\"#ffffff\" /><g>  <!-- Axes -->  <line x1=\"20\" y1=\"250\" x2=\"330\" y2=\"250\" class=\"axis\" />  <text x=\"320\" y=\"270\" class=\"label\">x</text>  <line x1=\"150\" y1=\"330\" x2=\"150\" y2=\"20\" class=\"axis\" />  <text x=\"135\" y=\"25\" class=\"label\">y</text>  <text x=\"135\" y=\"270\" class=\"label\">0</text>    <!-- Curves -->  <polyline points=\"30,175 180,250 270,205\" class=\"curve-abs\" />  <polyline points=\"30,310 270,70\" class=\"curve-line\" />    <!-- Labels -->  <text x=\"275\" y=\"205\" class=\"label\" fill=\"#3b82f6\">y = |x - 1|</text>  <text x=\"190\" y=\"90\" class=\"label\" fill=\"#ef4444\">y = 2x + 4</text>    <!-- Key points -->  <circle cx=\"180\" cy=\"250\" r=\"4\" class=\"pt\" />  <text x=\"170\" y=\"270\" class=\"label\">(1, 0)</text>    <circle cx=\"90\" cy=\"250\" r=\"4\" class=\"pt\" />  <text x=\"65\" y=\"240\" class=\"label\">(-2, 0)</text>    <circle cx=\"150\" cy=\"235\" r=\"4\" class=\"pt\" />  <text x=\"155\" y=\"240\" class=\"label\">(0, 1)</text>    <circle cx=\"150\" cy=\"190\" r=\"4\" class=\"pt\" />  <text x=\"105\" y=\"195\" class=\"label\">(0, 4)</text></g></svg>"
+              }
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "origin": "teacher",
+            "examPaper": "girraween-2020"
+          },
+          "ext": {
+            "q": "Sketch the graph of $y = |x - 1|$ and $y = 2x + 4$ for $-4 \\leq x \\leq 4$ on the grid given below."
+          }
+        },
+        {
+          "id": "girr2020-mc28a",
+          "type": "review",
+          "stem": "A vertical tower $YZ$ of height $h$ stands on horizontal ground. The angle of elevation from a point $B$ on the ground to the top of the tower $Z$ is $12^\\circ$. The diagram below illustrates this setup. Show that $BY = h \\cot 12^\\circ$. ",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<style>\n.line { stroke: #1e293b; stroke-width: 2; fill: none; }\n.label { font-size: 14px; fill: #1e293b; font-family: sans-serif; }\n.angle { stroke: #3b82f6; stroke-width: 1.5; fill: none; }\n</style>\n</defs>\n<rect width=\"300\" height=\"200\" fill=\"#ffffff\" />\n<g>\n  <!-- Triangle -->\n  <polygon points=\"50,150 250,150 250,50\" class=\"line\" fill=\"#f8fafc\" />\n  \n  <!-- Right angle square -->\n  <polyline points=\"240,150 240,140 250,140\" class=\"line\" />\n  \n  <!-- Angle arc -->\n  <path d=\"M 80 150 A 30 30 0 0 0 77 137\" class=\"angle\" />\n  <text x=\"85\" y=\"145\" class=\"label\" fill=\"#3b82f6\">12°</text>\n  \n  <!-- Labels -->\n  <text x=\"40\" y=\"165\" class=\"label\">B</text>\n  <text x=\"255\" y=\"165\" class=\"label\">Y</text>\n  <text x=\"255\" y=\"45\" class=\"label\">Z</text>\n  \n  <!-- Height -->\n  <text x=\"260\" y=\"105\" class=\"label\">h</text>\n</g>\n</svg>"
+          },
+          "answer": "proof",
+          "solution": "proof",
+          "steps": [
+            {
+              "explain": "Draw a right-angled triangle representing the situation for observer B. Let the top of the tower be $Z$ and the base of the tower be $Y$. The height of the tower is $YZ = h$.",
+              "work": "\\text{Triangle } \\triangle BYZ \\text{ with } \\angle BYZ = 90^\\circ \\text{ and } YZ = h"
+            },
+            {
+              "explain": "The observer is at point $B$, and the angle of elevation to the top of the tower is $\\angle YBZ = 12^\\circ$.",
+              "work": "$\\angle YBZ = 12^\\circ$"
+            },
+            {
+              "explain": "In the right-angled triangle $\\triangle BYZ$, use the tangent trigonometric ratio: $\\tan(\\theta) = \\frac{\\text{Opposite}}{\\text{Adjacent}}$.",
+              "work": "\\tan(12^\\circ) = \\frac{YZ}{BY}"
+            },
+            {
+              "explain": "Substitute the known height $h$ and rearrange the equation to make $BY$ the subject.",
+              "work": "\\begin{aligned} \\tan(12^\\circ) &= \\frac{h}{BY} \\\\ BY \\cdot \\tan(12^\\circ) &= h \\\\ BY &= \\frac{h}{\\tan(12^\\circ)} \\end{aligned}"
+            },
+            {
+              "explain": "Since $\\frac{1}{\\tan(\\theta)} = \\cot(\\theta)$, this simplifies exactly to $BY = h \\cot 12^\\circ$.",
+              "work": "BY = h \\cot 12^\\circ"
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "origin": "teacher",
+            "examPaper": "girraween-2020"
+          },
+          "ext": {
+            "q": "A vertical tower $YZ$ of height $h$ stands on horizontal ground. The angle of elevation from a point $B$ on the ground to the top of the tower $Z$ is $12^\\circ$. The diagram below illustrates this setup. Show that $BY = h \\cot 12^\\circ$. **(Teacher-graded proof)**"
+          }
+        },
+        {
+          "id": "girr2020-mc28as",
+          "type": "review",
+          "stem": "Two observers at points $A$ and $B$ are on the same side of a tower of height $h$. They are in a straight line with the base of the tower. The distance between them is $d$. The angle of elevation from $A$ (closer) is $\\alpha$ and from $B$ (further) is $\\beta$. Show that $h = \\frac{d}{\\cot \\beta - \\cot \\alpha}$. ",
+          "difficulty": "medium",
+          "answer": "proof",
+          "solution": "proof",
+          "steps": [
+            {
+              "explain": "Let the height of the tower be $h$ and its base be $Y$. From the closer point A, we form a right-angled triangle. Using trigonometry, the distance $AY = h \\cot \\alpha$.",
+              "work": "\\tan \\alpha = \\frac{h}{AY} \\implies AY = \\frac{h}{\\tan \\alpha} = h \\cot \\alpha"
+            },
+            {
+              "explain": "Similarly, from the further point B, we have a right-angled triangle where the distance $BY = h \\cot \\beta$.",
+              "work": "\\tan \\beta = \\frac{h}{BY} \\implies BY = \\frac{h}{\\tan \\beta} = h \\cot \\beta"
+            },
+            {
+              "explain": "Since they are on the same side of the tower, the distance between the two observers $d$ is the difference $BY - AY$.",
+              "work": "d = BY - AY"
+            },
+            {
+              "explain": "Substitute the expressions for $BY$ and $AY$ into the equation for $d$.",
+              "work": "d = h \\cot \\beta - h \\cot \\alpha"
+            },
+            {
+              "explain": "Factor out $h$ and rearrange to make $h$ the subject of the formula.",
+              "work": "\\begin{aligned} d &= h(\\cot \\beta - \\cot \\alpha) \\\\ h &= \\frac{d}{\\cot \\beta - \\cot \\alpha} \\end{aligned}"
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "origin": "teacher",
+            "examPaper": "girraween-2020"
+          },
+          "ext": {
+            "q": "Two observers at points $A$ and $B$ are on the same side of a tower of height $h$. They are in a straight line with the base of the tower. The distance between them is $d$. The angle of elevation from $A$ (closer) is $\\alpha$ and from $B$ (further) is $\\beta$. Show that $h = \\frac{d}{\\cot \\beta - \\cot \\alpha}$. **(Teacher-graded proof)**"
+          }
+        },
+        {
+          "id": "girr2020-mc35s",
+          "type": "multipart",
+          "stem": "The diagram shows the curve with equation $y = x^2 - 8x + 12$. The curve intersects the $x$-axis at points $A$ and $B$. The point $C$ on the curve has the same $y$-coordinate as the $y$-intercept of the curve.",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg viewBox=\"0 15 400 300\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<style>\n.axis { stroke: #94a3b8; stroke-width: 2; }\n.curve { stroke: #3b82f6; stroke-width: 2; fill: none; }\n.line { stroke: #64748b; stroke-width: 1.5; stroke-dasharray: 4 4; }\n.solid-line { stroke: #1e293b; stroke-width: 1.5; }\n.label { font-size: 14px; fill: #1e293b; font-family: sans-serif; }\n.pt-label { font-size: 14px; fill: #1e293b; font-weight: bold; font-family: sans-serif; }\n.shaded { fill: #e2e8f0; stroke: none; }\n</style>\n</defs>\n<rect width=\"400\" height=\"300\" fill=\"#ffffff\" />\n<g>\n  <!-- Shaded Area M A L C Q ctrl B Z -->\n  <path d=\"M 100,250 L 280,70 Q 250,190 220,250 Z\" class=\"shaded\" />\n  \n  <!-- Axes -->\n  <line x1=\"20\" y1=\"250\" x2=\"380\" y2=\"250\" class=\"axis\" />\n  <text x=\"370\" y=\"270\" class=\"label\">x</text>\n  <line x1=\"40\" y1=\"290\" x2=\"40\" y2=\"20\" class=\"axis\" />\n  <text x=\"25\" y=\"30\" class=\"label\">y</text>\n  <text x=\"25\" y=\"270\" class=\"label\">O</text>\n  \n  <!-- Dashed line y=12 -->\n  <line x1=\"40\" y1=\"70\" x2=\"280\" y2=\"70\" class=\"line\" />\n  \n  <!-- Parabola -->\n  <path d=\"M 40,70 Q 160,550 280,70\" class=\"curve\" />\n  \n  <!-- Line AC -->\n  <line x1=\"100\" y1=\"250\" x2=\"280\" y2=\"70\" class=\"solid-line\" />\n  \n  <!-- Labels -->\n  <text x=\"85\" y=\"270\" class=\"pt-label\">A</text>\n  <text x=\"225\" y=\"270\" class=\"pt-label\">B</text>\n  <text x=\"285\" y=\"75\" class=\"pt-label\">C</text>\n</g>\n</svg>"
+          },
+          "parts": [
+            {
+              "id": "girr2020-mc35as",
+              "type": "mc",
+              "stem": "Find the $x$-coordinates of Points $A$ and $B$.",
+              "options": [
+                "$x = 2, 4$",
+                "$x = 2, 6$",
+                "$x = 4, 8$",
+                "$x = 0, 12$"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Points A and B are the $x$-intercepts, so we set $y = 0$.",
+                  "work": "x^2 - 8x + 12 = 0"
+                },
+                {
+                  "explain": "Factorize the quadratic equation.",
+                  "work": "(x - 2)(x - 6) = 0"
+                },
+                {
+                  "explain": "Solve for $x$.",
+                  "work": "x = 2 \\text{ or } x = 6"
+                }
+              ]
+            },
+            {
+              "id": "girr2020-mc35bs",
+              "type": "mc",
+              "stem": "Write down the coordinates of $C$.",
+              "options": [
+                "$(12, 8)$",
+                "$(6, 12)$",
+                "$(8, 12)$",
+                "$(8, 6)$"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Point C has the same $y$-coordinate as the $y$-intercept. Find the $y$-intercept.",
+                  "work": "y = 0^2 - 8(0) + 12 = 12"
+                },
+                {
+                  "explain": "Set $y=12$ to find the $x$-coordinate of C.",
+                  "work": "x^2 - 8x + 12 = 12 \\\\ x^2 - 8x = 0 \\\\ x(x - 8) = 0"
+                },
+                {
+                  "explain": "Since $x=0$ is the $y$-intercept, point C is at $x=8$.",
+                  "work": "C = (8, 12)"
+                }
+              ]
+            },
+            {
+              "id": "girr2020-mc35cs",
+              "type": "mc",
+              "stem": "Evaluate $\\int_0^2 (x^2 - 8x + 12) dx$.",
+              "options": [
+                "$10 \\frac{2}{3}$",
+                "$11 \\frac{1}{3}$",
+                "$9 \\frac{2}{3}$",
+                "$12$"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Find the antiderivative.",
+                  "work": "\\int (x^2 - 8x + 12) dx = \\frac{x^3}{3} - 4x^2 + 12x"
+                },
+                {
+                  "explain": "Evaluate from $0$ to $2$.",
+                  "work": "\\left[ \\frac{x^3}{3} - 4x^2 + 12x \\right]_0^2 = \\left( \\frac{8}{3} - 16 + 24 \\right) - (0)"
+                },
+                {
+                  "explain": "Simplify.",
+                  "work": "\\frac{8}{3} + 8 = \\frac{8}{3} + \\frac{24}{3} = \\frac{32}{3} = 10 \\frac{2}{3}"
+                }
+              ]
+            },
+            {
+              "id": "girr2020-mc35ds",
+              "type": "mc",
+              "stem": "Hence, or otherwise, find the area of the shaded region.",
+              "options": [
+                "$24 \\frac{1}{3}$",
+                "$25 \\frac{1}{3}$",
+                "$26 \\frac{2}{3}$",
+                "$28$"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "The shaded area is bounded by the line $AC$, the $x$-axis from $x=2$ to $x=6$, and the curve $BC$ from $x=6$ to $x=8$. It equals the area of the triangle formed by $(2,0), (8,0), (8,12)$ minus the area under the curve from $x=6$ to $x=8$.",
+                  "work": "\\text{Area} = A_{\\triangle} - \\int_6^8 (x^2 - 8x + 12) dx"
+                },
+                {
+                  "explain": "The triangle has base $8 - 2 = 6$ and height $12$.",
+                  "work": "A_{\\triangle} = \\frac{1}{2} \\times 6 \\times 12 = 36"
+                },
+                {
+                  "explain": "By the symmetry of the parabola (axis of symmetry $x=4$), the area under the curve from $x=6$ to $x=8$ is equal to the area from $x=0$ to $x=2$.",
+                  "work": "\\int_6^8 (x^2 - 8x + 12) dx = \\int_0^2 (x^2 - 8x + 12) dx = \\frac{32}{3}"
+                },
+                {
+                  "explain": "Subtract this from the triangle's area.",
+                  "work": "\\text{Area} = 36 - \\frac{32}{3} = \\frac{108}{3} - \\frac{32}{3} = \\frac{76}{3} = 25 \\frac{1}{3}"
+                }
+              ]
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "source": "Girraween 2020 Trial Q35 (Similar)",
+            "origin": "teacher"
+          },
+          "ext": {
+            "c": "1C",
+            "t": "Integration area and quadratics"
+          }
+        },
+        {
+          "id": "girr2020-mc29",
+          "type": "multipart",
+          "stem": "The diagram shows the graph of the derivative function $y = f'(x)$ for a continuous function $y = f(x)$. Use the graph to answer the following questions.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg viewBox=\"0 0 350 300\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<style>\n.axis { stroke: #94a3b8; stroke-width: 2; }\n.curve { stroke: #3b82f6; stroke-width: 3; fill: none; }\n.label { font-size: 14px; fill: #1e293b; font-family: sans-serif; }\n.pt { fill: #1e293b; }\n.grid { stroke: #e2e8f0; stroke-width: 1; stroke-dasharray: 4 4; }\n</style>\n</defs>\n<rect width=\"350\" height=\"300\" fill=\"#ffffff\" />\n<g>\n  <!-- Grid -->\n  <line x1=\"50\" y1=\"20\" x2=\"50\" y2=\"280\" class=\"grid\" />\n  <line x1=\"90\" y1=\"20\" x2=\"90\" y2=\"280\" class=\"grid\" />\n  <line x1=\"130\" y1=\"20\" x2=\"130\" y2=\"280\" class=\"grid\" />\n  <line x1=\"170\" y1=\"20\" x2=\"170\" y2=\"280\" class=\"grid\" />\n  <line x1=\"210\" y1=\"20\" x2=\"210\" y2=\"280\" class=\"grid\" />\n  <line x1=\"250\" y1=\"20\" x2=\"250\" y2=\"280\" class=\"grid\" />\n  <line x1=\"290\" y1=\"20\" x2=\"290\" y2=\"280\" class=\"grid\" />\n  \n  <line x1=\"20\" y1=\"70\" x2=\"320\" y2=\"70\" class=\"grid\" />\n  <line x1=\"20\" y1=\"150\" x2=\"320\" y2=\"150\" class=\"grid\" />\n  <line x1=\"20\" y1=\"250\" x2=\"320\" y2=\"250\" class=\"grid\" />\n\n  <!-- Axes -->\n  <line x1=\"20\" y1=\"150\" x2=\"320\" y2=\"150\" class=\"axis\" />\n  <text x=\"310\" y=\"170\" class=\"label\">x</text>\n  <line x1=\"50\" y1=\"280\" x2=\"50\" y2=\"20\" class=\"axis\" />\n  <text x=\"35\" y=\"25\" class=\"label\">y'</text>\n  <text x=\"35\" y=\"170\" class=\"label\">0</text>\n  \n  <text x=\"125\" y=\"170\" class=\"label\">2</text>\n  <text x=\"285\" y=\"170\" class=\"label\">6</text>\n  \n  <text x=\"35\" y=\"75\" class=\"label\">4</text>\n  <text x=\"25\" y=\"255\" class=\"label\">-5</text>\n  \n  <!-- Curve -->\n  <polyline points=\"50,70 130,150 290,250\" class=\"curve\" />\n  \n  <!-- Points -->\n  <circle cx=\"50\" cy=\"70\" r=\"4\" class=\"pt\" />\n  <circle cx=\"130\" cy=\"150\" r=\"4\" class=\"pt\" />\n  <circle cx=\"290\" cy=\"250\" r=\"4\" class=\"pt\" />\n</g>\n</svg>"
+          },
+          "parts": [
+            {
+              "id": "girr2020-mc29a",
+              "type": "mc",
+              "stem": "For what values of $x$ is $f(x)$ increasing?",
+              "options": [
+                "$0 \\leq x < 1$",
+                "$0 \\leq x < 2$",
+                "$2 \\leq x \\leq 6$",
+                "$0 \\leq x \\leq 6$"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "A function $f(x)$ is increasing when its derivative $f'(x) > 0$.",
+                  "work": "f(x) \\text{ increasing} \\implies f'(x) > 0"
+                },
+                {
+                  "explain": "Looking at the graph of $f'(x)$, the values are positive (above the $x$-axis) between $x = 0$ and $x = 2$.",
+                  "work": "f'(x) > 0 \\text{ for } 0 \\leq x < 2"
+                }
+              ]
+            },
+            {
+              "id": "girr2020-mc29b",
+              "type": "mc",
+              "stem": "Assuming $f(0) = 0$, what is the maximum value of $f(x)$ for $0 \\leq x \\leq 6$?",
+              "options": [
+                "$f(x)_{max} = 2$",
+                "$f(x)_{max} = 4$",
+                "$f(x)_{max} = 6$",
+                "$f(x)_{max} = 8$"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "The maximum value occurs where $f'(x)$ changes from positive to negative, which is at $x = 2$.",
+                  "work": "f'(x) = 0 \\text{ at } x = 2"
+                },
+                {
+                  "explain": "The value of $f(2)$ is equal to the initial value $f(0)$ plus the area under the $f'(x)$ curve from $0$ to $2$.",
+                  "work": "f(2) = f(0) + \\int_0^2 f'(x) dx"
+                },
+                {
+                  "explain": "The area from $x = 0$ to $x = 2$ is a triangle with base $2$ and height $4$.",
+                  "work": "\\text{Area} = \\frac{1}{2} \\times 2 \\times 4 = 4"
+                },
+                {
+                  "explain": "Since $f(0) = 0$, the maximum value is $0 + 4 = 4$.",
+                  "work": "f(2) = 0 + 4 = 4"
+                }
+              ]
+            },
+            {
+              "id": "girr2020-mc29c",
+              "type": "mc",
+              "stem": "Find the value of $f(6)$.",
+              "options": [
+                "$f(6) = 0$",
+                "$f(6) = 2$",
+                "$f(6) = -6$",
+                "$f(6) = -4$"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "To find $f(6)$, we add the signed area from $x=2$ to $x=6$ to the value of $f(2)$.",
+                  "work": "f(6) = f(2) + \\int_2^6 f'(x) dx"
+                },
+                {
+                  "explain": "The area from $x = 2$ to $x = 6$ forms a triangle below the $x$-axis, with base $4$ (from 2 to 6) and height $5$ (down to -5).",
+                  "work": "\\text{Area} = - \\left( \\frac{1}{2} \\times 4 \\times 5 \\right) = -10"
+                },
+                {
+                  "explain": "Add this area to $f(2)$.",
+                  "work": "f(6) = 4 + (-10) = -6"
+                }
+              ]
+            },
+            {
+              "id": "girr2020-mc29d",
+              "type": "review",
+              "stem": "Draw a graph of $y = f(x)$ for $0 \\leq x \\leq 6$. ",
+              "answer": "sketch",
+              "steps": [
+                {
+                  "explain": "Plot the key points we found: $(0,0)$, maximum at $(2,4)$, and endpoint at $(6,-6)$. The curve should be concave down everywhere because $f'(x)$ is decreasing.",
+                  "work": "\\text{Points: } (0,0), (2,4), (6,-6) \\\\ f''(x) < 0 \\implies \\text{Concave Down}"
+                }
+              ]
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "source": "Girraween 2020 Trial Q29",
+            "origin": "teacher"
+          },
+          "ext": {
+            "c": "3A",
+            "t": "Using derivatives to sketch curves",
+            "q": "The diagram shows the graph of the derivative function $y = f'(x)$ for a continuous function $y = f(x)$. Use the graph to answer the following questions."
+          }
         }
       ]
     }

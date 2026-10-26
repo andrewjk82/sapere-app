@@ -362,6 +362,38 @@
             "school": "Abbotsleigh",
             "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
           }
+        },
+        {
+          "id": "jrhy2008-q31a",
+          "type": "mc",
+          "stem": "Solve the equation \\(2\\cos x°+\\sqrt3=0\\) for \\(0\\le x\\le360\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(x=120, 240\\)",
+            "\\(x=150, 210\\)",
+            "\\(x=60, 300\\)",
+            "\\(x=30, 330\\)"
+          ],
+          "answer": 1,
+          "hint": "Isolate \\(\\cos x°\\) — it will be negative, so the solutions lie in quadrants 2 and 3.",
+          "steps": [
+            {
+              "explain": "Rearrange to isolate \\(\\cos x°\\).",
+              "work": "\\(2\\cos x° = -\\sqrt3 \\Rightarrow \\cos x° = -\\dfrac{\\sqrt3}{2}\\)"
+            },
+            {
+              "explain": "Since cosine is negative, the solutions lie in quadrants 2 and 3. The reference angle is \\(30°\\) (since \\(\\cos30°=\\tfrac{\\sqrt3}{2}\\)).",
+              "work": "Q2: \\(x=180°-30°=150°\\); Q3: \\(x=180°+30°=210°\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "source": "James Ruse AHS 2008 Year 10 Half-Yearly",
+            "school": "James Ruse Agricultural High School",
+            "examType": "Half-Yearly",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     }

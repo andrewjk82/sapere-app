@@ -2646,6 +2646,104 @@
               "note": "The set of equidistant points forms a perpendicular bisector."
             }
           ]
+        },
+        {
+          "id": "jrhy2008-q31b",
+          "type": "multipart",
+          "stem": "\\(A(-1,2)\\), \\(B(3,-1)\\) and \\(P(6,3)\\) are points on a Cartesian plane.",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg viewBox=\"0 0 252 202\" width=\"252\" height=\"202\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n<g transform=\"translate(16,16)\"><line x1=\"0\" y1=\"130\" x2=\"220\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><line x1=\"60\" y1=\"0\" x2=\"60\" y2=\"170\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><polyline points=\"16.0,69.5 109.5,139.6 203.0,209.8\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"2\" /><circle cx=\"38.0\" cy=\"86.0\" r=\"3.5\" fill=\"#b91c1c\"/><text x=\"46.0\" y=\"80.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">A</text><circle cx=\"126.0\" cy=\"152.0\" r=\"3.5\" fill=\"#b91c1c\"/><text x=\"134.0\" y=\"146.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">B</text><circle cx=\"192.0\" cy=\"64.0\" r=\"3.5\" fill=\"#b91c1c\"/><text x=\"200.0\" y=\"58.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">P</text></g></svg>"
+          },
+          "parts": [
+            {
+              "id": "jrhy2008-q31b-1",
+              "type": "review",
+              "stem": "(i) Plot these points and show that the equation of line \\(AB\\) is \\(3x+4y-5=0\\).",
+              "answer": "",
+              "steps": [
+                {
+                  "explain": "Plot \\(A(-1,2)\\), \\(B(3,-1)\\) and \\(P(6,3)\\), and draw the line through \\(A\\) and \\(B\\), as shown above. Find the gradient of \\(AB\\).",
+                  "work": "\\(m_{AB} = \\dfrac{-1-2}{3-(-1)} = \\dfrac{-3}{4}\\)",
+                  "figure": {
+                    "svg": "<svg viewBox=\"0 0 252 202\" width=\"252\" height=\"202\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n<g transform=\"translate(16,16)\"><line x1=\"0\" y1=\"130\" x2=\"220\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><line x1=\"60\" y1=\"0\" x2=\"60\" y2=\"170\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><polyline points=\"16.0,69.5 109.5,139.6 203.0,209.8\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"2\" /><circle cx=\"38.0\" cy=\"86.0\" r=\"3.5\" fill=\"#b91c1c\"/><text x=\"46.0\" y=\"80.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">A</text><circle cx=\"126.0\" cy=\"152.0\" r=\"3.5\" fill=\"#b91c1c\"/><text x=\"134.0\" y=\"146.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">B</text><circle cx=\"192.0\" cy=\"64.0\" r=\"3.5\" fill=\"#b91c1c\"/><text x=\"200.0\" y=\"58.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">P</text></g></svg>"
+                  }
+                },
+                {
+                  "explain": "Use point-gradient form with point \\(A(-1,2)\\), then rearrange to general form.",
+                  "work": "\\(y-2 = -\\dfrac34(x+1) \\Rightarrow 4y-8=-3x-3 \\Rightarrow 3x+4y-5=0\\), as required."
+                }
+              ]
+            },
+            {
+              "id": "jrhy2008-q31b-2",
+              "type": "short",
+              "stem": "(ii) Find the distance of \\(P\\) from line \\(AB\\).",
+              "answer": "",
+              "solution": "5",
+              "steps": [
+                {
+                  "explain": "For (ii): use the point-to-line distance formula with \\(P(6,3)\\).",
+                  "work": "\\(d = \\dfrac{|3(6)+4(3)-5|}{\\sqrt{3^2+4^2}} = \\dfrac{25}{5} = 5\\)"
+                }
+              ]
+            },
+            {
+              "id": "jrhy2008-q31b-3",
+              "type": "short",
+              "stem": "(iii) Find the area of \\(\\triangle PAB\\).",
+              "answer": "",
+              "solution": "12.5",
+              "steps": [
+                {
+                  "explain": "For (iii): the area of \\(\\triangle PAB\\) uses base \\(AB\\) and the height found above (the distance from \\(P\\) to line \\(AB\\)). Find \\(AB\\) using the distance formula.",
+                  "work": "\\(AB = \\sqrt{(3-(-1))^2+(-1-2)^2} = \\sqrt{16+9} = 5\\)"
+                },
+                {
+                  "explain": "Apply the triangle area formula.",
+                  "work": "\\(\\text{Area}(PAB) = \\dfrac12\\times5\\times5 = 12.5\\) units\\(^2\\)"
+                }
+              ]
+            },
+            {
+              "id": "jrhy2008-q31b-4",
+              "type": "short",
+              "stem": "(iv) Determine the coordinates of \\(C\\), the point which divides \\(AB\\) externally in the ratio \\(3:1\\).",
+              "answer": "",
+              "solution": "(5,-2.5)",
+              "steps": [
+                {
+                  "explain": "For (iv): use the EXTERNAL section formula, \\(C = \\dfrac{mB-nA}{m-n}\\), with \\(m:n=3:1\\).",
+                  "work": "\\(C = \\left(\\dfrac{3(3)-1(-1)}{3-1}, \\dfrac{3(-1)-1(2)}{3-1}\\right) = \\left(\\dfrac{10}{2}, \\dfrac{-5}{2}\\right) = (5,-2.5)\\)"
+                }
+              ]
+            },
+            {
+              "id": "jrhy2008-q31b-5",
+              "type": "short",
+              "stem": "(v) Write down the area of \\(\\triangle PBC\\).",
+              "answer": "",
+              "solution": "6.25",
+              "steps": [
+                {
+                  "explain": "For (v): since \\(A\\), \\(B\\), \\(C\\) are collinear (all on line \\(AB\\) extended), triangles \\(PAB\\) and \\(PBC\\) share the same height from \\(P\\) — their areas are in the ratio of their bases \\(AB:BC\\). Find \\(BC\\).",
+                  "work": "\\(BC = \\sqrt{(5-3)^2+(-2.5-(-1))^2} = \\sqrt{4+2.25} = 2.5\\)"
+                },
+                {
+                  "explain": "Use the same height (5, from part ii) with base \\(BC=2.5\\).",
+                  "work": "\\(\\text{Area}(PBC) = \\dfrac12\\times2.5\\times5 = 6.25\\) units\\(^2\\)"
+                }
+              ]
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "source": "James Ruse AHS 2008 Year 10 Half-Yearly",
+            "school": "James Ruse Agricultural High School",
+            "examType": "Half-Yearly",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },

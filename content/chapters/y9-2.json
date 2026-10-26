@@ -2758,6 +2758,76 @@
             "marks": 2,
             "origin": "exam-import"
           }
+        },
+        {
+          "id": "ch9t3-q1",
+          "type": "multipart",
+          "stem": "Given that \\(x=2\\sqrt6\\) and \\(y=\\sqrt{18}\\). Find, in simplest exact form, the values of (a) \\(\\dfrac{y}{x}\\) and (b) \\(xy\\).",
+          "difficulty": "medium",
+          "parts": [
+            {
+              "id": "ch9t3-q1a",
+              "type": "mc",
+              "stem": "(a) \\(\\dfrac{y}{x}\\)",
+              "options": [
+                "\\(\\dfrac{\\sqrt3}{4}\\)",
+                "\\(\\sqrt3\\)",
+                "\\(\\dfrac{\\sqrt3}{2}\\)",
+                "\\(\\dfrac{3}{2}\\)"
+              ],
+              "answer": 2,
+              "hint": "Simplify \\(\\sqrt{18}\\) first, then divide by \\(2\\sqrt6\\), combining the surds under one root.",
+              "steps": [
+                {
+                  "explain": "Write out \\(\\dfrac{y}{x}\\) using the given values.",
+                  "work": "\\(\\dfrac{y}{x} = \\dfrac{\\sqrt{18}}{2\\sqrt6}\\)"
+                },
+                {
+                  "explain": "Combine the surds using \\(\\dfrac{\\sqrt a}{\\sqrt b}=\\sqrt{\\dfrac ab}\\).",
+                  "work": "\\(= \\dfrac{1}{2}\\sqrt{\\dfrac{18}{6}} = \\dfrac{1}{2}\\sqrt3\\)"
+                },
+                {
+                  "explain": "Write in simplest exact form.",
+                  "work": "\\(= \\dfrac{\\sqrt3}{2}\\)"
+                }
+              ]
+            },
+            {
+              "id": "ch9t3-q1b",
+              "type": "mc",
+              "stem": "(b) \\(xy\\)",
+              "options": [
+                "\\(12\\sqrt3\\)",
+                "\\(6\\sqrt3\\)",
+                "\\(2\\sqrt{108}\\)",
+                "\\(12\\sqrt6\\)"
+              ],
+              "answer": 0,
+              "hint": "Multiply the coefficients and combine the surds under one root: \\(2\\sqrt6\\times\\sqrt{18} = 2\\sqrt{6\\times18}\\).",
+              "steps": [
+                {
+                  "explain": "Multiply \\(x\\) and \\(y\\), combining the surds.",
+                  "work": "\\(xy = 2\\sqrt6\\times\\sqrt{18} = 2\\sqrt{6\\times18} = 2\\sqrt{108}\\)"
+                },
+                {
+                  "explain": "Simplify \\(\\sqrt{108}\\) by finding the largest perfect square factor: \\(108=36\\times3\\).",
+                  "work": "\\(\\sqrt{108} = \\sqrt{36\\times3} = 6\\sqrt3\\)"
+                },
+                {
+                  "explain": "Substitute back.",
+                  "work": "\\(xy = 2\\times6\\sqrt3 = 12\\sqrt3\\)"
+                }
+              ]
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "source": "Chatswood HS Year 9 Assessment Task 3 (2025)",
+            "school": "Chatswood High School",
+            "examType": "Assessment Task",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },

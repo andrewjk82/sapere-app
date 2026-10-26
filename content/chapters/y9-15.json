@@ -1760,6 +1760,42 @@
             "marks": 2,
             "origin": "exam-import"
           }
+        },
+        {
+          "id": "ch9t3-q15b",
+          "type": "mc",
+          "stem": "Express as a single fraction in simplest form.\n\n\\(\\dfrac{15-9y}{9} \\div \\dfrac{5-3y}{24}\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{8}{y}\\)",
+            "\\(8\\)",
+            "\\(\\dfrac{5}{3}\\)",
+            "\\(\\dfrac{360-216y}{45-27y}\\)"
+          ],
+          "answer": 1,
+          "hint": "Factor \\(3\\) out of the numerator \\(15-9y=3(5-3y)\\), then dividing by \\(\\dfrac{5-3y}{24}\\) means multiplying by its reciprocal — the \\((5-3y)\\) terms cancel.",
+          "steps": [
+            {
+              "explain": "Rewrite division as multiplication by the reciprocal.",
+              "work": "\\(\\dfrac{15-9y}{9} \\times \\dfrac{24}{5-3y}\\)"
+            },
+            {
+              "explain": "Factor \\(3\\) out of the numerator \\(15-9y\\).",
+              "work": "\\(= \\dfrac{3(5-3y)}{9} \\times \\dfrac{24}{5-3y}\\)"
+            },
+            {
+              "explain": "Cancel the common factor \\((5-3y)\\), and simplify \\(\\dfrac{3}{9}=\\dfrac13\\).",
+              "work": "\\(= \\dfrac{1}{3} \\times 24 = 8\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "source": "Chatswood HS Year 9 Assessment Task 3 (2025)",
+            "school": "Chatswood High School",
+            "examType": "Assessment Task",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },

@@ -19558,6 +19558,38 @@
               "note": "Multiply each term in the first bracket by each term in the second."
             }
           ]
+        },
+        {
+          "id": "ch9t3-q13a",
+          "type": "mc",
+          "stem": "Expand and simplify the following expressions.\n\n\\(3y(4x-5)\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(12xy-5y\\)",
+            "\\(12xy-15y\\)",
+            "\\(12xy-15\\)",
+            "\\(7xy-15y\\)"
+          ],
+          "answer": 1,
+          "hint": "Distribute \\(3y\\) to both terms inside the bracket.",
+          "steps": [
+            {
+              "explain": "Distribute \\(3y\\) across both terms in the bracket.",
+              "work": "\\(3y(4x-5) = 3y\\times4x - 3y\\times5\\)"
+            },
+            {
+              "explain": "Simplify each term.",
+              "work": "\\(= 12xy-15y\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "source": "Chatswood HS Year 9 Assessment Task 3 (2025)",
+            "school": "Chatswood High School",
+            "examType": "Assessment Task",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -22418,6 +22450,70 @@
               "note": "Write the square as two identical brackets before expanding."
             }
           ]
+        },
+        {
+          "id": "ch9t3-q17a",
+          "type": "mc",
+          "stem": "Expand and simplify the following expressions.\n\n\\((4x-5)(5+4x)\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(16x^2+25\\)",
+            "\\(16x^2-9\\)",
+            "\\(16x^2-25\\)",
+            "\\(16x^2-40x-25\\)"
+          ],
+          "answer": 2,
+          "hint": "Rewrite as \\((4x-5)(4x+5)\\) — a difference of squares.",
+          "steps": [
+            {
+              "explain": "Rearrange the second bracket to see this is a difference of squares: \\((4x-5)(5+4x)=(4x-5)(4x+5)\\).",
+              "work": "\\((4x-5)(4x+5)\\)"
+            },
+            {
+              "explain": "Apply the difference of squares formula \\((a-b)(a+b)=a^2-b^2\\), with \\(a=4x, b=5\\).",
+              "work": "\\(= (4x)^2-5^2 = 16x^2-25\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "source": "Chatswood HS Year 9 Assessment Task 3 (2025)",
+            "school": "Chatswood High School",
+            "examType": "Assessment Task",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "ch9t3-q17b",
+          "type": "mc",
+          "stem": "Expand and simplify the following expressions.\n\n\\(\\left(3x+\\dfrac13\\right)^2\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(9x^2+\\dfrac19\\)",
+            "\\(9x^2+6x+\\dfrac19\\)",
+            "\\(9x^2+2x+\\dfrac19\\)",
+            "\\(9x^2+2x+\\dfrac13\\)"
+          ],
+          "answer": 2,
+          "hint": "Use the perfect square formula \\((a+b)^2=a^2+2ab+b^2\\), with \\(a=3x\\), \\(b=\\dfrac13\\).",
+          "steps": [
+            {
+              "explain": "Apply the perfect square formula.",
+              "work": "\\(\\left(3x+\\dfrac13\\right)^2 = (3x)^2+2(3x)\\left(\\dfrac13\\right)+\\left(\\dfrac13\\right)^2\\)"
+            },
+            {
+              "explain": "Simplify each term.",
+              "work": "\\(= 9x^2+2x+\\dfrac19\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "source": "Chatswood HS Year 9 Assessment Task 3 (2025)",
+            "school": "Chatswood High School",
+            "examType": "Assessment Task",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },

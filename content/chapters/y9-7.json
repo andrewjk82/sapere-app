@@ -162,6 +162,43 @@
           ],
           "timeLimit": 60,
           "xp": 2
+        },
+        {
+          "id": "y9-7a-3f",
+          "type": "mc",
+          "stem": "<svg viewBox=\"0 0 360 260\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:0.5rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs><marker id=\"sleek-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"5\" refY=\"3.5\" orient=\"auto-start-reverse\"><path d=\"M0,1 L6,3.5 L0,6\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></marker></defs>\n  <path d=\"M 264.64761904761906,62.53333333333334 A 24,24 0 0,1 255.04761904761904,43.333333333333336\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"1.5\" />\n  <text x=\"241.48167702562256\" y=\"62.116304344331574\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">40°</text>\n  <path d=\"M 219.16190476190476,123.18095238095238 A 24,24 0 0,1 221.7324675103819,159.35151512942952\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"1.5\" />\n  <text x=\"246.65624153203575\" y=\"139.40361353714383\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">θ</text>\n  <path d=\"M 255.04761904761904,216.66666666666669 A 24,24 0 0,1 262.0770562991419,199.69610391818955\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"1.5\" />\n  <text x=\"240.24467868214498\" y=\"200.59396250733292\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">30°</text>\n  <line x1=\"80.95238095238093\" y1=\"43.333333333333336\" x2=\"279.04761904761904\" y2=\"43.333333333333336\" stroke=\"#475569\" stroke-width=\"1.8\"  />\n  <g transform=\"translate(180,43.333333333333336) rotate(0)\"><path d=\"M -5 -5 L 3 0 L -5 5\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>\n  <line x1=\"204.76190476190476\" y1=\"142.38095238095238\" x2=\"279.04761904761904\" y2=\"216.66666666666669\" stroke=\"#475569\" stroke-width=\"1.8\"  />\n  <line x1=\"80.95238095238093\" y1=\"216.66666666666669\" x2=\"279.04761904761904\" y2=\"216.66666666666669\" stroke=\"#475569\" stroke-width=\"1.8\"  />\n  <g transform=\"translate(180,216.66666666666669) rotate(0)\"><path d=\"M -5 -5 L 3 0 L -5 5\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>\n  <line x1=\"279.04761904761904\" y1=\"43.333333333333336\" x2=\"204.76190476190476\" y2=\"142.38095238095238\" stroke=\"#475569\" stroke-width=\"1.8\"  />\n</svg>\n\nFind the angle marked with the pronumeral \\(\\theta\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(10^\\circ\\)",
+            "\\(50^\\circ\\)",
+            "\\(70^\\circ\\)",
+            "\\(110^\\circ\\)"
+          ],
+          "answer": 2,
+          "hint": "The angles in Parallel lines ",
+          "solution": "$θ = 85°$",
+          "steps": [
+            {
+              "explain": "Draw an auxiliary line",
+              "work": "Draw a third parallel line through point \\(E\\) (the vertex of \\(\\theta\\)\\), parallel to the two given parallel lines. This divides \\(\\theta\\) into two parts:\\n\\[\\theta = \\theta_1 + \\theta_2\\]"
+            },
+            {
+              "explain": "Find \\(\\theta_1\\) using alternate interior angles (Z-angles)",
+              "work": "The upper part \\(\\theta_1\\) is an alternate interior angle with \\(40^\\circ\\) at \\(D\\) (since \\(AD \\parallel\\) auxiliary line\\):\\n\\[\\theta_1 = 40^\\circ\\]"
+            },
+            {
+              "explain": "Find \\(\\theta_2\\) using alternate interior angles (Z-angles)",
+              "work": "The lower part \\(\\theta_2\\) is an alternate interior angle with \\(30^\\circ\\) at \\(F\\) (since \\(CF \\parallel\\) auxiliary line\\):\\n\\[\\theta_2 = 30^\\circ\\]"
+            },
+            {
+              "explain": "Calculate \\(\\theta\\)",
+              "work": "Add the two parts together:\\n\\[\\theta = \\theta_1 + \\theta_2 = 40^\\circ + 30^\\circ = 70^\\circ\\]"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "origin": "teacher"
+          }
         }
       ]
     },
