@@ -508,10 +508,10 @@
           "options": [
             "$20\\log_e 3$",
             "$15\\log_e 3$",
-            "$\\frac{\\log_e 3}{0.05}$",
+            "$\\frac{\\log_e 3}{20}$",
             "$50\\log_e 3$"
           ],
-          "answer": 2,
+          "answer": 0,
           "hint": "Set $P(t) = 3P_0$ and solve for $t$ using logarithms.",
           "solution": "$P_0 e^{0.05t} = 3P_0$ gives $e^{0.05t} = 3$. Taking natural log: $0.05t = \\ln 3$, so $t = \\frac{\\ln 3}{0.05} = \\frac{\\log_e 3}{0.05} = 20\\log_e 3$ (since $\\frac{1}{0.05} = 20$).",
           "steps": [

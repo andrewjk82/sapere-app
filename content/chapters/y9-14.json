@@ -9788,36 +9788,23 @@
           ],
           "answer": 1,
           "hint": "Lines intersect if they have different gradients.",
-          "solution": "Two lines will intersect at exactly one point if they are not parallel (different gradients).\nThe gradient of the first line is \\( 1 \\).\nThe gradient of the second line is \\( m \\).\nFor the lines to intersect, their gradients must be different:\n\\( m \\neq 1 \\).",
+          "solution": "Two straight lines meet at exactly one point unless they are parallel, and parallel lines are exactly the lines with equal gradients. Here the gradients are \\(1\\) and \\(m\\), so the lines intersect for every value of \\(m\\) except \\(m = 1\\): \\(m \\neq 1\\).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Families of straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-              "work": "\\(m_1 = 1 \\text{ and } m_2 = m\\)"
+              "explain": "Both equations are already in the form \\(y = mx + c\\), so read the gradient straight off each one.",
+              "work": "\\(y = x + 4 \\Rightarrow m_1 = 1, \\qquad y = mx - 3 \\Rightarrow m_2 = m\\)"
             },
             {
-              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-              "work": "\\(m \neq 1\\)"
+              "explain": "Two lines fail to intersect only when they are parallel and distinct, and parallel means equal gradients. So find the gradient that would make them parallel.",
+              "work": "\\(m_1 = m_2 \\iff m = 1\\)"
             },
             {
-              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-              "work": "\\(m!=1\\)"
+              "explain": "Check that \\(m = 1\\) really gives no intersection rather than infinitely many. With \\(m = 1\\) the second line is \\(y = x - 3\\), whose \\(y\\)-intercept \\(-3\\) differs from \\(4\\), so the lines are parallel and distinct — they never meet.",
+              "work": "\\(x + 4 = x - 3 \\Rightarrow 4 = -3\\), which is impossible"
             },
             {
-              "explain": "Final answer: m!=1. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-              "work": "\\(m!=1\\)",
-              "figure": {
-                "jsxGraph": {
-                  "width": 360,
-                  "height": 280,
-                  "boundingbox": [
-                    -6,
-                    6,
-                    6,
-                    -6
-                  ],
-                  "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (1)*x + (+4); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = 1x++4'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
-                }
-              }
+              "explain": "Every other gradient gives different gradients, hence exactly one intersection point. So the lines intersect for all \\(m\\) apart from \\(1\\).",
+              "work": "\\(m \\neq 1\\)"
             }
           ],
           "timeLimit": 90,

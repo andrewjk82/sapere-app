@@ -18324,7 +18324,7 @@
           ],
           "answer": 0,
           "hint": "Substitute the x and y values of the point into the left side of the circle equation and check if it equals 25.",
-          "solution": "The correct answer is No.",
+          "solution": "Substituting gives \\(x^2 + y^2 = 25 + 0 = 25\\), which equals \\(25\\), so the point lies on the circle. Answer: Yes.",
           "steps": [
             {
               "explain": "Substitute the x and y coordinates into the circle equation",
@@ -18355,7 +18355,7 @@
           ],
           "answer": 0,
           "hint": "Substitute the x and y values of the point into the left side of the circle equation and check if it equals 25.",
-          "solution": "The correct answer is No.",
+          "solution": "Substituting gives \\(x^2 + y^2 = 9 + 16 = 25\\), which equals \\(25\\), so the point lies on the circle. Answer: Yes.",
           "steps": [
             {
               "explain": "Substitute the x and y coordinates into the circle equation",
@@ -18386,7 +18386,7 @@
           ],
           "answer": 0,
           "hint": "Substitute the x and y values of the point into the left side of the circle equation and check if it equals 25.",
-          "solution": "The correct answer is No.",
+          "solution": "Substituting gives \\(x^2 + y^2 = 0 + 25 = 25\\), which equals \\(25\\), so the point lies on the circle. Answer: Yes.",
           "steps": [
             {
               "explain": "Substitute the x and y coordinates into the circle equation",
@@ -18417,10 +18417,10 @@
           ],
           "answer": 1,
           "hint": "Substitute the x and y values of the point into the left side of the circle equation and check if it equals 25.",
-          "solution": "The correct answer is No.",
+          "solution": "Substituting gives \\(x^2 + y^2 = 9 + 9 = 18\\), which does not equal \\(25\\), so the point does not lie on the circle. Answer: No.",
           "steps": [
             {
-              "explain": "Substitute the coordinates \\((3, 3)\\) into the equation \\(x^2 + y^2\\).",
+              "explain": "A point lies on the circle only if its coordinates satisfy the equation exactly. Substitute \\(x = 3\\) and \\(y = 3\\) into the left-hand side \\(x^2 + y^2\\).",
               "work": "x^2 + y^2 = (3)^2 + (3)^2",
               "figure": {
                 "jsxGraph": {
@@ -18437,16 +18437,16 @@
               }
             },
             {
-              "explain": "Calculate the value.",
-              "work": "\\text{Result} \\neq 25"
+              "explain": "Square each coordinate.",
+              "work": "3^2 = 9 \\quad\\text{and}\\quad 3^2 = 9"
             },
             {
-              "explain": "Compare the result with the radius squared (25).",
-              "work": "\\text{Result} \\neq 25"
+              "explain": "Add the two squares to get the value of the left-hand side.",
+              "work": "x^2 + y^2 = 9 + 9 = 18"
             },
             {
-              "explain": "Since the result is not equal, the point does not lie on the circle.",
-              "work": "No"
+              "explain": "Compare that with the right-hand side \\(25\\). The two sides differ, so the point does not lie on the circle. A point gives less than \\(25\\) when it lies inside the circle.",
+              "work": "18 \\neq 25 \\;\\Rightarrow\\; \\text{No}"
             }
           ],
           "timeLimit": 30,
@@ -18465,7 +18465,7 @@
           ],
           "answer": 0,
           "hint": "Substitute the x and y values of the point into the left side of the circle equation and check if it equals 25.",
-          "solution": "The correct answer is No.",
+          "solution": "Substituting gives \\(x^2 + y^2 = 16 + 9 = 25\\), which equals \\(25\\), so the point lies on the circle. Answer: Yes.",
           "steps": [
             {
               "explain": "Substitute the x and y coordinates into the circle equation",
@@ -18496,10 +18496,10 @@
           ],
           "answer": 1,
           "hint": "Substitute the x and y values of the point into the left side of the circle equation and check if it equals 25.",
-          "solution": "The correct answer is No.",
+          "solution": "Substituting gives \\(x^2 + y^2 = 50 + 50 = 100\\), which does not equal \\(25\\), so the point does not lie on the circle. Answer: No.",
           "steps": [
             {
-              "explain": "Substitute the coordinates \\((5\\sqrt{2}, 5\\sqrt{2})\\) into the equation \\(x^2 + y^2\\).",
+              "explain": "A point lies on the circle only if its coordinates satisfy the equation exactly. Substitute \\(x = 5\\sqrt{2}\\) and \\(y = 5\\sqrt{2}\\) into the left-hand side \\(x^2 + y^2\\).",
               "work": "x^2 + y^2 = (5\\sqrt{2})^2 + (5\\sqrt{2})^2",
               "figure": {
                 "jsxGraph": {
@@ -18516,16 +18516,16 @@
               }
             },
             {
-              "explain": "Calculate the value.",
-              "work": "\\text{Result} \\neq 25"
+              "explain": "Square each coordinate. A squared surd loses its root: \\((a\\sqrt{b})^2 = a^2 b\\), and squaring removes any minus sign.",
+              "work": "(5\\sqrt{2})^2 = 25 \\times 2 = 50 \\quad\\text{and}\\quad (5\\sqrt{2})^2 = 25 \\times 2 = 50"
             },
             {
-              "explain": "Compare the result with the radius squared (25).",
-              "work": "\\text{Result} \\neq 25"
+              "explain": "Add the two squares to get the value of the left-hand side.",
+              "work": "x^2 + y^2 = 50 + 50 = 100"
             },
             {
-              "explain": "Since the result is not equal, the point does not lie on the circle.",
-              "work": "No"
+              "explain": "Compare that with the right-hand side \\(25\\). The two sides differ, so the point does not lie on the circle. A point gives more than \\(25\\) when it lies outside the circle.",
+              "work": "100 \\neq 25 \\;\\Rightarrow\\; \\text{No}"
             }
           ],
           "timeLimit": 30,
@@ -18544,7 +18544,7 @@
           ],
           "answer": 0,
           "hint": "Substitute the x and y values of the point into the left side of the circle equation and check if it equals 25.",
-          "solution": "The correct answer is No.",
+          "solution": "Substituting gives \\(x^2 + y^2 = \\frac{25}{2} + \\frac{25}{2} = 25\\), which equals \\(25\\), so the point lies on the circle. Answer: Yes.",
           "steps": [
             {
               "explain": "Substitute the x and y coordinates into the circle equation",
@@ -18575,7 +18575,7 @@
           ],
           "answer": 0,
           "hint": "Substitute the x and y values of the point into the left side of the circle equation and check if it equals 25.",
-          "solution": "The correct answer is No.",
+          "solution": "Substituting gives \\(x^2 + y^2 = 4 + 21 = 25\\), which equals \\(25\\), so the point lies on the circle. Answer: Yes.",
           "steps": [
             {
               "explain": "Substitute the x and y coordinates into the circle equation",
@@ -18606,10 +18606,10 @@
           ],
           "answer": 0,
           "hint": "Substitute the x and y values of the point into the left side of the circle equation and check if it equals 25.",
-          "solution": "The correct answer is Yes.",
+          "solution": "Substituting gives \\(x^2 + y^2 = 7 + 18 = 25\\), which equals \\(25\\), so the point lies on the circle. Answer: Yes.",
           "steps": [
             {
-              "explain": "Substitute the coordinates \\((\\sqrt{7}, 3\\sqrt{2})\\) into the equation \\(x^2 + y^2\\).",
+              "explain": "A point lies on the circle only if its coordinates satisfy the equation exactly. Substitute \\(x = \\sqrt{7}\\) and \\(y = 3\\sqrt{2}\\) into the left-hand side \\(x^2 + y^2\\).",
               "work": "x^2 + y^2 = (\\sqrt{7})^2 + (3\\sqrt{2})^2",
               "figure": {
                 "jsxGraph": {
@@ -18626,16 +18626,16 @@
               }
             },
             {
-              "explain": "Calculate the value.",
-              "work": "\\text{Result} \\neq 25"
+              "explain": "Square each coordinate. A squared surd loses its root: \\((a\\sqrt{b})^2 = a^2 b\\), and squaring removes any minus sign.",
+              "work": "(\\sqrt{7})^2 = 7 \\quad\\text{and}\\quad (3\\sqrt{2})^2 = 9 \\times 2 = 18"
             },
             {
-              "explain": "Compare the result with the radius squared (25).",
-              "work": "\\text{Result} \\neq 25"
+              "explain": "Add the two squares to get the value of the left-hand side.",
+              "work": "x^2 + y^2 = 7 + 18 = 25"
             },
             {
-              "explain": "Since the result is not equal, the point does not lie on the circle.",
-              "work": "No"
+              "explain": "Compare that with the right-hand side \\(25\\). The two sides are equal, so the point lies on the circle.",
+              "work": "25 = 25 \\;\\Rightarrow\\; \\text{Yes}"
             }
           ],
           "timeLimit": 30,
@@ -18654,7 +18654,7 @@
           ],
           "answer": 0,
           "hint": "Substitute the x and y values of the point into the left side of the circle equation and check if it equals 64.",
-          "solution": "The correct answer is No.",
+          "solution": "Substituting gives \\(x^2 + y^2 = 64 + 0 = 64\\), which equals \\(64\\), so the point lies on the circle. Answer: Yes.",
           "steps": [
             {
               "explain": "Substitute the x and y coordinates into the circle equation",
@@ -18829,7 +18829,7 @@
           ],
           "answer": 0,
           "hint": "Substitute the x and y values of the point into the left side of the circle equation and check if it equals 64.",
-          "solution": "The correct answer is No.",
+          "solution": "Substituting gives \\(x^2 + y^2 = 0 + 64 = 64\\), which equals \\(64\\), so the point lies on the circle. Answer: Yes.",
           "steps": [
             {
               "explain": "Substitute the x and y coordinates into the circle equation",
@@ -18860,10 +18860,10 @@
           ],
           "answer": 0,
           "hint": "Substitute the x and y values of the point into the left side of the circle equation and check if it equals 64.",
-          "solution": "The correct answer is Yes.",
+          "solution": "Substituting gives \\(x^2 + y^2 = 32 + 32 = 64\\), which equals \\(64\\), so the point lies on the circle. Answer: Yes.",
           "steps": [
             {
-              "explain": "Substitute the coordinates \\((-4\\sqrt{2}, 4\\sqrt{2})\\) into the equation \\(x^2 + y^2\\).",
+              "explain": "A point lies on the circle only if its coordinates satisfy the equation exactly. Substitute \\(x = -4\\sqrt{2}\\) and \\(y = 4\\sqrt{2}\\) into the left-hand side \\(x^2 + y^2\\).",
               "work": "x^2 + y^2 = (-4\\sqrt{2})^2 + (4\\sqrt{2})^2",
               "figure": {
                 "jsxGraph": {
@@ -18880,16 +18880,16 @@
               }
             },
             {
-              "explain": "Calculate the value.",
-              "work": "\\text{Result} \\neq 64"
+              "explain": "Square each coordinate. A squared surd loses its root: \\((a\\sqrt{b})^2 = a^2 b\\), and squaring removes any minus sign.",
+              "work": "(-4\\sqrt{2})^2 = 16 \\times 2 = 32 \\quad\\text{and}\\quad (4\\sqrt{2})^2 = 16 \\times 2 = 32"
             },
             {
-              "explain": "Compare the result with the radius squared (64).",
-              "work": "\\text{Result} \\neq 64"
+              "explain": "Add the two squares to get the value of the left-hand side.",
+              "work": "x^2 + y^2 = 32 + 32 = 64"
             },
             {
-              "explain": "Since the result is not equal, the point does not lie on the circle.",
-              "work": "No"
+              "explain": "Compare that with the right-hand side \\(64\\). The two sides are equal, so the point lies on the circle.",
+              "work": "64 = 64 \\;\\Rightarrow\\; \\text{Yes}"
             }
           ],
           "timeLimit": 30,
@@ -18908,7 +18908,7 @@
           ],
           "answer": 0,
           "hint": "Substitute the x and y values of the point into the left side of the circle equation and check if it equals 64.",
-          "solution": "The correct answer is No.",
+          "solution": "Substituting gives \\(x^2 + y^2 = 16 + 48 = 64\\), which equals \\(64\\), so the point lies on the circle. Answer: Yes.",
           "steps": [
             {
               "explain": "Substitute the x and y coordinates into the circle equation",
@@ -18939,7 +18939,7 @@
           ],
           "answer": 0,
           "hint": "Substitute the x and y values of the point into the left side of the circle equation and check if it equals 64.",
-          "solution": "The correct answer is No.",
+          "solution": "Substituting gives \\(x^2 + y^2 = 4 + 60 = 64\\), which equals \\(64\\), so the point lies on the circle. Answer: Yes.",
           "steps": [
             {
               "explain": "Substitute the x and y coordinates into the circle equation",
@@ -18970,10 +18970,10 @@
           ],
           "answer": 0,
           "hint": "Substitute the x and y values of the point into the left side of the circle equation and check if it equals 64.",
-          "solution": "The correct answer is Yes.",
+          "solution": "Substituting gives \\(x^2 + y^2 = 14 + 50 = 64\\), which equals \\(64\\), so the point lies on the circle. Answer: Yes.",
           "steps": [
             {
-              "explain": "Substitute the coordinates \\((\\sqrt{14}, 5\\sqrt{2})\\) into the equation \\(x^2 + y^2\\).",
+              "explain": "A point lies on the circle only if its coordinates satisfy the equation exactly. Substitute \\(x = \\sqrt{14}\\) and \\(y = 5\\sqrt{2}\\) into the left-hand side \\(x^2 + y^2\\).",
               "work": "x^2 + y^2 = (\\sqrt{14})^2 + (5\\sqrt{2})^2",
               "figure": {
                 "jsxGraph": {
@@ -18990,16 +18990,16 @@
               }
             },
             {
-              "explain": "Calculate the value.",
-              "work": "\\text{Result} \\neq 64"
+              "explain": "Square each coordinate. A squared surd loses its root: \\((a\\sqrt{b})^2 = a^2 b\\), and squaring removes any minus sign.",
+              "work": "(\\sqrt{14})^2 = 14 \\quad\\text{and}\\quad (5\\sqrt{2})^2 = 25 \\times 2 = 50"
             },
             {
-              "explain": "Compare the result with the radius squared (64).",
-              "work": "\\text{Result} \\neq 64"
+              "explain": "Add the two squares to get the value of the left-hand side.",
+              "work": "x^2 + y^2 = 14 + 50 = 64"
             },
             {
-              "explain": "Since the result is not equal, the point does not lie on the circle.",
-              "work": "No"
+              "explain": "Compare that with the right-hand side \\(64\\). The two sides are equal, so the point lies on the circle.",
+              "work": "64 = 64 \\;\\Rightarrow\\; \\text{Yes}"
             }
           ],
           "timeLimit": 30,
@@ -19018,10 +19018,10 @@
           ],
           "answer": 0,
           "hint": "Substitute the x and y values of the point into the left side of the circle equation and check if it equals 50.",
-          "solution": "The correct answer is Yes.",
+          "solution": "Substituting gives \\(x^2 + y^2 = 50 + 0 = 50\\), which equals \\(50\\), so the point lies on the circle. Answer: Yes.",
           "steps": [
             {
-              "explain": "Substitute the coordinates \\((5\\sqrt{2}, 0)\\) into the equation \\(x^2 + y^2\\).",
+              "explain": "A point lies on the circle only if its coordinates satisfy the equation exactly. Substitute \\(x = 5\\sqrt{2}\\) and \\(y = 0\\) into the left-hand side \\(x^2 + y^2\\).",
               "work": "x^2 + y^2 = (5\\sqrt{2})^2 + (0)^2",
               "figure": {
                 "jsxGraph": {
@@ -19038,16 +19038,16 @@
               }
             },
             {
-              "explain": "Calculate the value.",
-              "work": "\\text{Result} \\neq 50"
+              "explain": "Square each coordinate. A squared surd loses its root: \\((a\\sqrt{b})^2 = a^2 b\\), and squaring removes any minus sign.",
+              "work": "(5\\sqrt{2})^2 = 25 \\times 2 = 50 \\quad\\text{and}\\quad 0^2 = 0"
             },
             {
-              "explain": "Compare the result with the radius squared (50).",
-              "work": "\\text{Result} \\neq 50"
+              "explain": "Add the two squares to get the value of the left-hand side.",
+              "work": "x^2 + y^2 = 50 + 0 = 50"
             },
             {
-              "explain": "Since the result is not equal, the point does not lie on the circle.",
-              "work": "No"
+              "explain": "Compare that with the right-hand side \\(50\\). The two sides are equal, so the point lies on the circle.",
+              "work": "50 = 50 \\;\\Rightarrow\\; \\text{Yes}"
             }
           ],
           "timeLimit": 30,
@@ -19066,7 +19066,7 @@
           ],
           "answer": 0,
           "hint": "Substitute the x and y values of the point into the left side of the circle equation and check if it equals 50.",
-          "solution": "The correct answer is No.",
+          "solution": "Substituting gives \\(x^2 + y^2 = 25 + 25 = 50\\), which equals \\(50\\), so the point lies on the circle. Answer: Yes.",
           "steps": [
             {
               "explain": "Substitute the x and y coordinates into the circle equation",
@@ -19097,7 +19097,7 @@
           ],
           "answer": 0,
           "hint": "Substitute the x and y values of the point into the left side of the circle equation and check if it equals 50.",
-          "solution": "The correct answer is No.",
+          "solution": "Substituting gives \\(x^2 + y^2 = 25 + 25 = 50\\), which equals \\(50\\), so the point lies on the circle. Answer: Yes.",
           "steps": [
             {
               "explain": "Substitute the x and y coordinates into the circle equation",
@@ -19128,7 +19128,7 @@
           ],
           "answer": 0,
           "hint": "Substitute the x and y values of the point into the left side of the circle equation and check if it equals 50.",
-          "solution": "The correct answer is No.",
+          "solution": "Substituting gives \\(x^2 + y^2 = 0 + 50 = 50\\), which equals \\(50\\), so the point lies on the circle. Answer: Yes.",
           "steps": [
             {
               "explain": "Substitute the x and y coordinates into the circle equation",
@@ -19159,7 +19159,7 @@
           ],
           "answer": 0,
           "hint": "Substitute the x and y values of the point into the left side of the circle equation and check if it equals 50.",
-          "solution": "The correct answer is No.",
+          "solution": "Substituting gives \\(x^2 + y^2 = 9 + 41 = 50\\), which equals \\(50\\), so the point lies on the circle. Answer: Yes.",
           "steps": [
             {
               "explain": "Substitute the x and y coordinates into the circle equation",
@@ -19190,7 +19190,7 @@
           ],
           "answer": 0,
           "hint": "Substitute the x and y values of the point into the left side of the circle equation and check if it equals 50.",
-          "solution": "The correct answer is No.",
+          "solution": "Substituting gives \\(x^2 + y^2 = 49 + 1 = 50\\), which equals \\(50\\), so the point lies on the circle. Answer: Yes.",
           "steps": [
             {
               "explain": "Substitute the x and y coordinates into the circle equation",
@@ -19221,10 +19221,10 @@
           ],
           "answer": 1,
           "hint": "Substitute the x and y values of the point into the left side of the circle equation and check if it equals 50.",
-          "solution": "The correct answer is No.",
+          "solution": "Substituting gives \\(x^2 + y^2 = 25 + 50 = 75\\), which does not equal \\(50\\), so the point does not lie on the circle. Answer: No.",
           "steps": [
             {
-              "explain": "Substitute the coordinates \\((5, 5\\sqrt{2})\\) into the equation \\(x^2 + y^2\\).",
+              "explain": "A point lies on the circle only if its coordinates satisfy the equation exactly. Substitute \\(x = 5\\) and \\(y = 5\\sqrt{2}\\) into the left-hand side \\(x^2 + y^2\\).",
               "work": "x^2 + y^2 = (5)^2 + (5\\sqrt{2})^2",
               "figure": {
                 "jsxGraph": {
@@ -19241,16 +19241,16 @@
               }
             },
             {
-              "explain": "Calculate the value.",
-              "work": "\\text{Result} \\neq 50"
+              "explain": "Square each coordinate. A squared surd loses its root: \\((a\\sqrt{b})^2 = a^2 b\\), and squaring removes any minus sign.",
+              "work": "5^2 = 25 \\quad\\text{and}\\quad (5\\sqrt{2})^2 = 25 \\times 2 = 50"
             },
             {
-              "explain": "Compare the result with the radius squared (50).",
-              "work": "\\text{Result} \\neq 50"
+              "explain": "Add the two squares to get the value of the left-hand side.",
+              "work": "x^2 + y^2 = 25 + 50 = 75"
             },
             {
-              "explain": "Since the result is not equal, the point does not lie on the circle.",
-              "work": "No"
+              "explain": "Compare that with the right-hand side \\(50\\). The two sides differ, so the point does not lie on the circle. A point gives more than \\(50\\) when it lies outside the circle.",
+              "work": "75 \\neq 50 \\;\\Rightarrow\\; \\text{No}"
             }
           ],
           "timeLimit": 30,
@@ -19269,7 +19269,7 @@
           ],
           "answer": 0,
           "hint": "Substitute the x and y values of the point into the left side of the circle equation and check if it equals 50.",
-          "solution": "The correct answer is No.",
+          "solution": "Substituting gives \\(x^2 + y^2 = 1 + 49 = 50\\), which equals \\(50\\), so the point lies on the circle. Answer: Yes.",
           "steps": [
             {
               "explain": "Substitute the x and y coordinates into the circle equation",
@@ -19300,10 +19300,10 @@
           ],
           "answer": 0,
           "hint": "Substitute the x and y values of the point into the left side of the circle equation and check if it equals 50.",
-          "solution": "The correct answer is Yes.",
+          "solution": "Substituting gives \\(x^2 + y^2 = 10 + 40 = 50\\), which equals \\(50\\), so the point lies on the circle. Answer: Yes.",
           "steps": [
             {
-              "explain": "Substitute the coordinates \\((-\\sqrt{10}, 2\\sqrt{10})\\) into the equation \\(x^2 + y^2\\).",
+              "explain": "A point lies on the circle only if its coordinates satisfy the equation exactly. Substitute \\(x = -\\sqrt{10}\\) and \\(y = 2\\sqrt{10}\\) into the left-hand side \\(x^2 + y^2\\).",
               "work": "x^2 + y^2 = (-\\sqrt{10})^2 + (2\\sqrt{10})^2",
               "figure": {
                 "jsxGraph": {
@@ -19320,16 +19320,16 @@
               }
             },
             {
-              "explain": "Calculate the value.",
-              "work": "\\text{Result} \\neq 50"
+              "explain": "Square each coordinate. A squared surd loses its root: \\((a\\sqrt{b})^2 = a^2 b\\), and squaring removes any minus sign.",
+              "work": "(-\\sqrt{10})^2 = 10 \\quad\\text{and}\\quad (2\\sqrt{10})^2 = 4 \\times 10 = 40"
             },
             {
-              "explain": "Compare the result with the radius squared (50).",
-              "work": "\\text{Result} \\neq 50"
+              "explain": "Add the two squares to get the value of the left-hand side.",
+              "work": "x^2 + y^2 = 10 + 40 = 50"
             },
             {
-              "explain": "Since the result is not equal, the point does not lie on the circle.",
-              "work": "No"
+              "explain": "Compare that with the right-hand side \\(50\\). The two sides are equal, so the point lies on the circle.",
+              "work": "50 = 50 \\;\\Rightarrow\\; \\text{Yes}"
             }
           ],
           "timeLimit": 30,
