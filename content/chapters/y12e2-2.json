@@ -1391,19 +1391,19 @@
           "timeLimit": 60,
           "stem": "Use proof by contradiction to show that \\(\\log_2 5\\) is irrational.",
           "hint": "Assume the logarithm is rational and write it as a fraction in lowest terms. Exponentiate to turn the claim into an equation involving powers of 2 and 5.",
-          "solution": "Assuming \\(\\log_2 5=p/q\\) in lowest terms gives \\(2^p=5^q\\), an even number equal to an odd number. This contradiction proves \\(\\log_2 5\\) is irrational.",
+          "solution": "Assuming \\(\\log_2 5=\\frac{p}{q}\\) in lowest terms gives \\(2^p=5^q\\), an even number equal to an odd number. This contradiction proves \\(\\log_2 5\\) is irrational.",
           "steps": [
             {
-              "explain": "Assume for contradiction that the logarithm is rational. Write it as \\(p/q\\), where p and q are positive coprime integers.",
-              "work": "\\(\\log_2 5=\\frac pq,\\qquad p,q\\in\\mathbb Z_{>0},\\quad\\gcd(p,q)=1.\\)"
+              "explain": "Assume for contradiction that the logarithm is rational. Write it as \\(\\frac{p}{q}\\), where p and q are positive coprime integers.",
+              "work": "\\(\\log_2 5=\\frac{p}{q},\\qquad p,q\\in\\mathbb Z_{>0},\\quad\\gcd(p,q)=1\\)"
             },
             {
               "explain": "Convert from logarithmic to exponential form and raise both sides to the power q.",
-              "work": "\\(2^{p/q}=5\\quad\\Longrightarrow\\quad2^p=5^q.\\)"
+              "work": "\\(2^{\\frac{p}{q}}=5\\quad\\Longrightarrow\\quad2^p=5^q\\)"
             },
             {
               "explain": "The left side is even because p≥1, while the right side is odd. This contradiction shows the assumption of rationality was false.",
-              "work": "\\(2^p\\text{ is even},\\qquad5^q\\text{ is odd};\\quad2^p\\ne5^q.\\) Therefore \\(\\log_2 5\\notin\\mathbb Q.\\)"
+              "work": "\\(2^p\\text{ is even},\\qquad5^q\\text{ is odd};\\quad2^p\\ne5^q.\\quad\\text{Therefore }\\log_2 5\\notin\\mathbb Q\\)"
             }
           ],
           "xp": 1,
@@ -1421,7 +1421,7 @@
               "note": "Assume the logarithm is rational and write it as a fraction in lowest terms. Exponentiate to turn the claim into an equation involving powers of 2 and 5."
             }
           ],
-          "answer": "Assuming \\(\\log_2 5=p/q\\) in lowest terms gives \\(2^p=5^q\\), an even number equal to an odd number. This contradiction proves \\(\\log_2 5\\) is irrational."
+          "answer": "Assuming \\(\\log_2 5=\\frac{p}{q}\\) in lowest terms gives \\(2^p=5^q\\), an even number equal to an odd number. This contradiction proves \\(\\log_2 5\\) is irrational."
         }
       ]
     },
@@ -1977,7 +1977,7 @@
           "type": "multipart",
           "difficulty": "hard",
           "timeLimit": 60,
-          "stem": "Recall that for any real number x>0, \\(x+\\frac1x\\ge2\\). Do not prove this result.",
+          "stem": "Recall that for any real number \\(x>0\\), \\(x+\\frac{1}{x}\\ge2\\). Do not prove this result.",
           "hint": "Work through the linked parts in order; use each result only where the next part needs it.",
           "xp": 1,
           "meta": {
@@ -1995,21 +1995,21 @@
               "manual": true,
               "difficulty": "hard",
               "timeLimit": 60,
-              "stem": "Prove that \\((a+b+c)(\\frac1a+\\frac1b+\\frac1c)\\ge9\\) for any real numbers a>0, b>0, c>0.",
-              "hint": "Expand the product into three 1 terms and three pairs such as \\(a/b+b/a\\). Apply the supplied inequality to each positive ratio.",
-              "solution": "The expansion is \\(3+(a/b+b/a)+(a/c+c/a)+(b/c+c/b)\\). Each parenthesised pair is at least 2 by the supplied \\(x+1/x\\ge2\\), so the product is at least \\(3+2+2+2=9\\).",
+              "stem": "Prove that \\((a+b+c)\\left(\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}\\right)\\ge9\\) for any real numbers \\(a>0, b>0, c>0\\).",
+              "hint": "Expand the product into three 1 terms and three pairs such as \\(\\frac{a}{b}+\\frac{b}{a}\\). Apply the supplied inequality to each positive ratio.",
+              "solution": "The expansion is \\(3+\\left(\\frac{a}{b}+\\frac{b}{a}\\right)+\\left(\\frac{a}{c}+\\frac{c}{a}\\right)+\\left(\\frac{b}{c}+\\frac{c}{b}\\right)\\). Each parenthesised pair is at least 2 by the supplied \\(x+\\frac{1}{x}\\ge2\\), so the product is at least \\(3+2+2+2=9\\).",
               "steps": [
                 {
                   "explain": "Expand the product by pairing each of a,b,c with each reciprocal. The three matching products are all 1.",
-                  "work": "\\((a+b+c)\\left(\\frac1a+\\frac1b+\\frac1c\\right)=3+\\frac ab+\\frac ba+\\frac ac+\\frac ca+\\frac bc+\\frac cb.\\)"
+                  "work": "\\((a+b+c)\\left(\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}\\right)=3+\\frac{a}{b}+\\frac{b}{a}+\\frac{a}{c}+\\frac{c}{a}+\\frac{b}{c}+\\frac{c}{b}\\)"
                 },
                 {
-                  "explain": "Each ratio is positive. Apply the given result to the pairs \\(a/b,b/a\\), \\(a/c,c/a\\), and \\(b/c,c/b\\).",
-                  "work": "\\(\\frac ab+\\frac ba\\ge2,\\qquad\\frac ac+\\frac ca\\ge2,\\qquad\\frac bc+\\frac cb\\ge2.\\)"
+                  "explain": "Each ratio is positive. Apply the given result to the pairs \\(\\frac{a}{b},\\frac{b}{a}\\), \\(\\frac{a}{c},\\frac{c}{a}\\), and \\(\\frac{b}{c},\\frac{c}{b}\\).",
+                  "work": "\\(\\frac{a}{b}+\\frac{b}{a}\\ge2,\\qquad\\frac{a}{c}+\\frac{c}{a}\\ge2,\\qquad\\frac{b}{c}+\\frac{c}{b}\\ge2\\)"
                 },
                 {
                   "explain": "Add the three lower bounds to the initial 3.",
-                  "work": "\\((a+b+c)\\left(\\frac1a+\\frac1b+\\frac1c\\right)\\ge3+2+2+2=9.\\)"
+                  "work": "\\((a+b+c)\\left(\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}\\right)\\ge3+2+2+2=9\\)"
                 }
               ],
               "xp": 1,
@@ -2023,11 +2023,11 @@
               },
               "keyPoints": [
                 {
-                  "text": "Prove that \\((a+b+c)(\\frac1a+\\frac1b+\\frac1c)\\ge9\\) for any real numbers a>0, b>0, c>0.",
-                  "note": "Expand the product into three 1 terms and three pairs such as \\(a/b+b/a\\). Apply the supplied inequality to each positive ratio."
+                  "text": "Prove that \\((a+b+c)\\left(\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}\\right)\\ge9\\)",
+                  "note": "Expand the product into three 1 terms and three pairs such as \\(\\frac{a}{b}+\\frac{b}{a}\\). Apply the supplied inequality to each positive ratio."
                 }
               ],
-              "answer": "The expansion is \\(3+(a/b+b/a)+(a/c+c/a)+(b/c+c/b)\\). Each parenthesised pair is at least 2 by the supplied \\(x+1/x\\ge2\\), so the product is at least \\(3+2+2+2=9\\)."
+              "answer": "The expansion is \\(3+\\left(\\frac{a}{b}+\\frac{b}{a}\\right)+\\left(\\frac{a}{c}+\\frac{c}{a}\\right)+\\left(\\frac{b}{c}+\\frac{c}{b}\\right)\\). Each parenthesised pair is at least 2 by the supplied \\(x+\\frac{1}{x}\\ge2\\), so the product is at least \\(3+2+2+2=9\\)."
             },
             {
               "id": "caringbah2020-ext2-q15a-ii",
@@ -2035,21 +2035,21 @@
               "manual": true,
               "difficulty": "hard",
               "timeLimit": 60,
-              "stem": "Prove that \\(\\frac{a}{b+c}+\\frac{b}{c+a}+\\frac{c}{a+b}\\ge\\frac32\\) for any real numbers a>0, b>0, c>0, by using the result in the previous part and transformations of the form \\(a\\to a+b\\).",
+              "stem": "Prove that \\(\\frac{a}{b+c}+\\frac{b}{c+a}+\\frac{c}{a+b}\\ge\\frac{3}{2}\\) for any real numbers \\(a>0, b>0, c>0\\), by using the result in the previous part and transformations of the form \\(a\\to a+b\\).",
               "hint": "In the previous inequality substitute the three positive values \\(a+b\\), \\(b+c\\), and \\(c+a\\). Then rewrite each total-over-pair term as 1 plus the corresponding fraction.",
-              "solution": "Substitute \\(A=a+b,B=b+c,C=c+a\\) into the previous result. Then \\(A+B+C=2(a+b+c)\\), so \\((a+b+c)(1/(a+b)+1/(b+c)+1/(c+a))\\ge9/2\\). Since \\((a+b+c)/(b+c)=1+a/(b+c)\\) and cyclically, the left side is \\(3+a/(b+c)+b/(c+a)+c/(a+b)\\). Subtract 3 to obtain the required \\(3/2\\).",
+              "solution": "Substitute \\(A=a+b,\\;B=b+c,\\;C=c+a\\) into the previous result. Then \\(A+B+C=2(a+b+c)\\), so \\((a+b+c)\\left(\\frac{1}{a+b}+\\frac{1}{b+c}+\\frac{1}{c+a}\\right)\\ge\\frac{9}{2}\\). Since \\(\\frac{a+b+c}{b+c}=1+\\frac{a}{b+c}\\) and cyclically, the left side is \\(3+\\frac{a}{b+c}+\\frac{b}{c+a}+\\frac{c}{a+b}\\). Subtract 3 to obtain the required \\(\\frac{3}{2}\\).",
               "steps": [
                 {
                   "explain": "Apply the result just proved with the positive substitutions \\(A=a+b\\), \\(B=b+c\\), \\(C=c+a\\).",
-                  "work": "\\(((a+b)+(b+c)+(c+a))\\left(\\frac1{a+b}+\\frac1{b+c}+\\frac1{c+a}\\right)\\ge9.\\)"
+                  "work": "\\(((a+b)+(b+c)+(c+a))\\left(\\frac{1}{a+b}+\\frac{1}{b+c}+\\frac{1}{c+a}\\right)\\ge9\\)"
                 },
                 {
                   "explain": "The sum of the substituted values is \\(2(a+b+c)\\). Divide the inequality by 2, which is positive.",
-                  "work": "\\((a+b+c)\\left(\\frac1{a+b}+\\frac1{b+c}+\\frac1{c+a}\\right)\\ge\\frac92.\\)"
+                  "work": "\\((a+b+c)\\left(\\frac{1}{a+b}+\\frac{1}{b+c}+\\frac{1}{c+a}\\right)\\ge\\frac{9}{2}\\)"
                 },
                 {
-                  "explain": "Expand each fraction using the common numerator \\(a+b+c\\), for example \\((a+b+c)/(b+c)=1+a/(b+c)\\). Then isolate the required sum.",
-                  "work": "\\(3+\\frac a{b+c}+\\frac b{c+a}+\\frac c{a+b}\\ge\\frac92\\quad\\Longrightarrow\\quad\\frac a{b+c}+\\frac b{c+a}+\\frac c{a+b}\\ge\\frac32.\\)"
+                  "explain": "Expand each fraction using the common numerator \\(a+b+c\\), for example \\(\\frac{a+b+c}{b+c}=1+\\frac{a}{b+c}\\). Then isolate the required sum.",
+                  "work": "\\(3+\\frac{a}{b+c}+\\frac{b}{c+a}+\\frac{c}{a+b}\\ge\\frac{9}{2}\\quad\\Longrightarrow\\quad\\frac{a}{b+c}+\\frac{b}{c+a}+\\frac{c}{a+b}\\ge\\frac{3}{2}\\)"
                 }
               ],
               "xp": 1,
@@ -2063,11 +2063,11 @@
               },
               "keyPoints": [
                 {
-                  "text": "Prove that \\(\\frac{a}{b+c}+\\frac{b}{c+a}+\\frac{c}{a+b}\\ge\\frac32\\) for any real numbers a>0, b>0, c>0, by using the result in the previous part and transformations of the form \\(a\\to a+b\\).",
+                  "text": "Prove that \\(\\frac{a}{b+c}+\\frac{b}{c+a}+\\frac{c}{a+b}\\ge\\frac{3}{2}\\)",
                   "note": "In the previous inequality substitute the three positive values \\(a+b\\), \\(b+c\\), and \\(c+a\\). Then rewrite each total-over-pair term as 1 plus the corresponding fraction."
                 }
               ],
-              "answer": "Substitute \\(A=a+b,B=b+c,C=c+a\\) into the previous result. Then \\(A+B+C=2(a+b+c)\\), so \\((a+b+c)(1/(a+b)+1/(b+c)+1/(c+a))\\ge9/2\\). Since \\((a+b+c)/(b+c)=1+a/(b+c)\\) and cyclically, the left side is \\(3+a/(b+c)+b/(c+a)+c/(a+b)\\). Subtract 3 to obtain the required \\(3/2\\)."
+              "answer": "Substitute \\(A=a+b,\\;B=b+c,\\;C=c+a\\) into the previous result. Then \\(A+B+C=2(a+b+c)\\), so \\((a+b+c)\\left(\\frac{1}{a+b}+\\frac{1}{b+c}+\\frac{1}{c+a}\\right)\\ge\\frac{9}{2}\\). Since \\(\\frac{a+b+c}{b+c}=1+\\frac{a}{b+c}\\) and cyclically, the left side is \\(3+\\frac{a}{b+c}+\\frac{b}{c+a}+\\frac{c}{a+b}\\). Subtract 3 to obtain the required \\(\\frac{3}{2}\\)."
             }
           ]
         }

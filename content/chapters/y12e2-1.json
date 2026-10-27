@@ -1881,7 +1881,7 @@
               "timeLimit": 60,
               "stem": "Express \\(z_3\\) in the form \\(a+ib\\), where a and b are real.",
               "hint": "Since the triangle OPQ is right-angled at O, its circumcentre is the midpoint of its hypotenuse PQ.",
-              "solution": "\\(z_3=\\frac52-\\frac12i\\)",
+              "solution": "\\(z_3=\\frac{5}{2}-\\frac{1}{2}i\\)",
               "steps": [
                 {
                   "explain": "The previous part established that triangle OPQ is right-angled at O. In a right triangle, the circumcentre is the midpoint of the hypotenuse PQ.",
@@ -1893,7 +1893,7 @@
                 },
                 {
                   "explain": "Substitute both values and combine real and imaginary parts, then divide each by 2.",
-                  "work": "\\(z_3=\\frac{(3+2i)+(2-3i)}{2}=\\frac{5-i}{2}=\\frac52-\\frac12i.\\)"
+                  "work": "\\(z_3=\\frac{(3+2i)+(2-3i)}{2}=\\frac{5-i}{2}=\\frac{5}{2}-\\frac{1}{2}i\\)"
                 }
               ],
               "xp": 1,
@@ -1906,10 +1906,10 @@
                 "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
               },
               "options": [
-                "\\(\\frac52-\\frac12i\\)",
-                "\\(\\frac52+\\frac12i\\)",
+                "\\(\\frac{5}{2}-\\frac{1}{2}i\\)",
+                "\\(\\frac{5}{2}+\\frac{1}{2}i\\)",
                 "\\(5-i\\)",
-                "\\(\\frac12-\\frac52i\\)"
+                "\\(\\frac{1}{2}-\\frac{5}{2}i\\)"
               ],
               "answer": 0,
               "keyPoints": [
@@ -2694,8 +2694,8 @@
                   }
                 },
                 {
-                  "explain": "A counterclockwise rotation of \\(\\frac{\\pi}{2}\\) radians multiplies a complex number by \\(e^{i\\pi/2}=i\\).",
-                  "work": "\\(z_2=|z_1|e^{i(\\arg z_1+\\pi/2)}=e^{i\\pi/2}z_1=iz_1.\\)"
+                  "explain": "A counterclockwise rotation of \\(\\frac{\\pi}{2}\\) radians multiplies a complex number by \\(e^{\\frac{i\\pi}{2}}=i\\).",
+                  "work": "\\(z_2=|z_1|e^{i\\left(\\arg z_1+\\frac{\\pi}{2}\\right)}=e^{\\frac{i\\pi}{2}}z_1=iz_1\\)"
                 },
                 {
                   "explain": "This relation has the same modulus and the required direction, so it represents point B in terms of point A.",

@@ -175,15 +175,15 @@
           "steps": [
             {
               "explain": "The numerator differs from the denominator by 1, so split the fraction.",
-              "work": "\\(\\frac{x^2}{x^2+1}=\\frac{x^2+1-1}{x^2+1}=1-\\frac1{x^2+1}.\\)"
+              "work": "\\(\\frac{x^2}{x^2+1}=\\frac{x^2+1-1}{x^2+1}=1-\\frac{1}{x^2+1}\\)"
             },
             {
-              "explain": "Integrate each term. The standard result is \\(\\int 1/(1+x^2)dx=\\tan^{-1}x\\).",
-              "work": "\\(\\int\\frac{x^2}{x^2+1}dx=\\int1\\,dx-\\int\\frac1{1+x^2}dx.\\)"
+              "explain": "Integrate each term. The standard result is \\(\\int \\frac{1}{1+x^2}\\,dx=\\tan^{-1}x\\).",
+              "work": "\\(\\int\\frac{x^2}{x^2+1}\\,dx=\\int1\\,dx-\\int\\frac{1}{1+x^2}\\,dx\\)"
             },
             {
               "explain": "Include the constant of integration.",
-              "work": "\\(x-\\tan^{-1}x+C.\\)"
+              "work": "\\(x-\\tan^{-1}x+C\\)"
             }
           ],
           "xp": 1,
@@ -1032,19 +1032,19 @@
               "timeLimit": 60,
               "stem": "Use the substitution \\(u=x^2-4\\) to show that \\(\\int\\frac{x}{\\sqrt{x^2-4}}\\,dx=\\sqrt{x^2-4}+C\\).",
               "hint": "Differentiate the substitution to express \\(x\\,dx\\) in terms of du, then integrate a power of u.",
-              "solution": "With \\(u=x^2-4\\), \\(du=2x,dx\\), so the integral is \\(\\frac12\\int u^{-1/2}du=\\sqrt u+C=\\sqrt{x^2-4}+C\\).",
+              "solution": "With \\(u=x^2-4\\), \\(du=2x\\,dx\\), so the integral is \\(\\frac{1}{2}\\int u^{-\\frac{1}{2}}\\,du=\\sqrt{u}+C=\\sqrt{x^2-4}+C\\).",
               "steps": [
                 {
                   "explain": "Set \\(u=x^2-4\\). Differentiate both sides to obtain the differential needed in the integral.",
-                  "work": "\\(u=x^2-4,\\qquad du=2x\\,dx,\\qquad x\\,dx=\\frac12du.\\)"
+                  "work": "\\(u=x^2-4,\\qquad du=2x\\,dx,\\qquad x\\,dx=\\frac{1}{2}\\,du\\)"
                 },
                 {
-                  "explain": "Replace the square root by \\(\\sqrt u\\) and substitute \\(x\\,dx=du/2\\).",
-                  "work": "\\(\\int\\frac{x}{\\sqrt{x^2-4}}dx=\\frac12\\int u^{-1/2}du.\\)"
+                  "explain": "Replace the square root by \\(\\sqrt{u}\\) and substitute \\(x\\,dx=\\frac{du}{2}\\).",
+                  "work": "\\(\\int\\frac{x}{\\sqrt{x^2-4}}\\,dx=\\frac{1}{2}\\int u^{-\\frac{1}{2}}\\,du\\)"
                 },
                 {
                   "explain": "Use the power rule for integration, then substitute \\(u=x^2-4\\) back.",
-                  "work": "\\(\\frac12\\cdot\\frac{u^{1/2}}{1/2}+C=\\sqrt u+C=\\sqrt{x^2-4}+C.\\)"
+                  "work": "\\(\\frac{1}{2}\\cdot\\frac{u^{\\frac{1}{2}}}{\\frac{1}{2}}+C=\\sqrt{u}+C=\\sqrt{x^2-4}+C\\)"
                 }
               ],
               "xp": 1,
@@ -1062,7 +1062,7 @@
                   "note": "Differentiate the substitution to express \\(x\\,dx\\) in terms of du, then integrate a power of u."
                 }
               ],
-              "answer": "With \\(u=x^2-4\\), \\(du=2x,dx\\), so the integral is \\(\\frac12\\int u^{-1/2}du=\\sqrt u+C=\\sqrt{x^2-4}+C\\)."
+              "answer": "With \\(u=x^2-4\\), \\(du=2x\\,dx\\), so the integral is \\(\\frac{1}{2}\\int u^{-\\frac{1}{2}}\\,du=\\sqrt{u}+C=\\sqrt{x^2-4}+C\\)."
             },
             {
               "id": "caringbah2020-ext2-q12b-ii",
@@ -1075,15 +1075,15 @@
               "steps": [
                 {
                   "explain": "Use \\(u=x^2-4\\), so \\(du=2x\\,dx\\). Convert both limits: x=√5 gives u=1, and x=√8 gives u=4.",
-                  "work": "\\(\\int_{\\sqrt5}^{\\sqrt8}\\frac{x\\ln(x^2-4)}{\\sqrt{x^2-4}}dx=\\frac12\\int_1^4\\frac{\\ln u}{\\sqrt u}du.\\)"
+                  "work": "\\(\\int_{\\sqrt{5}}^{\\sqrt{8}}\\frac{x\\ln(x^2-4)}{\\sqrt{x^2-4}}\\,dx=\\frac{1}{2}\\int_1^4\\frac{\\ln u}{\\sqrt{u}}\\,du\\)"
                 },
                 {
-                  "explain": "Now put \\(w=\\sqrt u\\). Then u=w² and du=2w dw, so the factor \\(1/2\\) cancels the 2. The limits become 1 and 2.",
-                  "work": "\\(\\frac12\\int_1^4\\frac{\\ln u}{\\sqrt u}du=\\int_1^2\\ln(w^2)dw=2\\int_1^2\\ln w\\,dw.\\)"
+                  "explain": "Now put \\(w=\\sqrt{u}\\). Then \\(u=w^2\\) and \\(du=2w\\,dw\\), so the factor \\(\\frac{1}{2}\\) cancels the 2. The limits become 1 and 2.",
+                  "work": "\\(\\frac{1}{2}\\int_1^4\\frac{\\ln u}{\\sqrt{u}}\\,du=\\int_1^2\\ln(w^2)\\,dw=2\\int_1^2\\ln w\\,dw\\)"
                 },
                 {
                   "explain": "Use integration by parts, \\(\\int\\ln w\\,dw=w\\ln w-w\\), then evaluate at both bounds.",
-                  "work": "\\(2[w\\ln w-w]_1^2=2[(2\\ln2-2)-(0-1)]=4\\ln2-2.\\)"
+                  "work": "\\(2[w\\ln w-w]_1^2=2[(2\\ln 2-2)-(0-1)]=4\\ln 2-2\\)"
                 }
               ],
               "xp": 1,
@@ -1117,24 +1117,24 @@
           "difficulty": "hard",
           "timeLimit": 60,
           "stem": "Find \\(\\int_0^{\\ln3}\\frac{e^{2x}}{\\sqrt{e^x+1}}\\,dx\\).",
-          "hint": "Choose \\(u=\\sqrt{e^x+1}\\). Then \\(du=e^x/(2u)\\,dx\\), which combines with the remaining factor e^x in the numerator.",
+          "hint": "Choose \\(u=\\sqrt{e^x+1}\\). Then \\(du=\\frac{e^x}{2u}\\,dx\\), which combines with the remaining factor \\(e^x\\) in the numerator.",
           "solution": "\\(\\frac{4+2\\sqrt2}{3}\\)",
           "steps": [
             {
               "explain": "Set \\(u=\\sqrt{e^x+1}\\). Differentiate: \\(2u\\,du=e^x dx\\), so \\(e^x dx=2u\\,du\\). Also \\(e^x=u^2-1\\).",
-              "work": "\\(u=\\sqrt{e^x+1},\\qquad e^x=u^2-1,\\qquad e^x dx=2u\\,du.\\)"
+              "work": "\\(u=\\sqrt{e^x+1},\\qquad e^x=u^2-1,\\qquad e^x dx=2u\\,du\\)"
             },
             {
-              "explain": "Rewrite the integrand as \\(e^x(e^x dx)/u\\), then substitute. The u in the differential cancels the denominator.",
-              "work": "\\(\\frac{e^{2x}}{u}dx=e^x\\frac{e^x dx}{u}=(u^2-1)\\frac{2u\\,du}{u}=2(u^2-1)du.\\)"
+              "explain": "Rewrite the integrand as \\(\\frac{e^x(e^x\\,dx)}{u}\\), then substitute. The u in the differential cancels the denominator.",
+              "work": "\\(\\frac{e^{2x}}{u}\\,dx=e^x\\frac{e^x\\,dx}{u}=(u^2-1)\\frac{2u\\,du}{u}=2(u^2-1)\\,du\\)"
             },
             {
               "explain": "Change the limits: x=0 gives u=√2; x=ln3 gives e^x=3 and u=2.",
-              "work": "\\(\\int_0^{\\ln3}\\frac{e^{2x}}{\\sqrt{e^x+1}}dx=2\\int_{\\sqrt2}^{2}(u^2-1)du.\\)"
+              "work": "\\(\\int_0^{\\ln3}\\frac{e^{2x}}{\\sqrt{e^x+1}}\\,dx=2\\int_{\\sqrt2}^{2}(u^2-1)\\,du\\)"
             },
             {
               "explain": "Integrate and evaluate at both transformed limits.",
-              "work": "\\(2[\\tfrac13u^3-u]_{\\sqrt2}^{2}=2\\left[(\\tfrac83-2)-(\\tfrac{2\\sqrt2}{3}-\\sqrt2)\\right]=\\frac{4+2\\sqrt2}{3}.\\)"
+              "work": "\\(2\\left[\\frac{1}{3}u^3-u\\right]_{\\sqrt2}^{2}=2\\left[\\left(\\frac{8}{3}-2\\right)-\\left(\\frac{2\\sqrt2}{3}-\\sqrt2\\right)\\right]=\\frac{4+2\\sqrt2}{3}\\)"
             }
           ],
           "xp": 1,
@@ -1745,23 +1745,23 @@
           "timeLimit": 60,
           "stem": "Which of the following is \\(\\frac{3x+11}{(x-3)(x+1)}\\) expressed in partial fractions?",
           "hint": "Set the expression equal to \\(A/(x-3)+B/(x+1)\\), clear the denominator, and solve for A and B.",
-          "solution": "\\(\\frac5{x-3}-\\frac2{x+1}\\)",
+          "solution": "\\(\\frac{5}{x-3}-\\frac{2}{x+1}\\)",
           "steps": [
             {
               "explain": "Use one constant numerator for each distinct linear factor.",
-              "work": "\\(\\frac{3x+11}{(x-3)(x+1)}=\\frac A{x-3}+\\frac B{x+1}.\\)"
+              "work": "\\(\\frac{3x+11}{(x-3)(x+1)}=\\frac{A}{x-3}+\\frac{B}{x+1}\\)"
             },
             {
               "explain": "Multiply through by \\((x-3)(x+1)\\) to remove the fractions.",
-              "work": "\\(3x+11=A(x+1)+B(x-3).\\)"
+              "work": "\\(3x+11=A(x+1)+B(x-3)\\)"
             },
             {
               "explain": "Choose convenient x-values. At x=3, \\(20=4A\\), so A=5. At x=−1, \\(8=-4B\\), so B=−2.",
-              "work": "\\(x=3:\\;20=4A\\Rightarrow A=5,\\qquad x=-1:\\;8=-4B\\Rightarrow B=-2.\\)"
+              "work": "\\(x=3:\\;20=4A\\Rightarrow A=5,\\qquad x=-1:\\;8=-4B\\Rightarrow B=-2\\)"
             },
             {
               "explain": "Substitute these constants into the decomposition.",
-              "work": "\\(\\frac{3x+11}{(x-3)(x+1)}=\\frac5{x-3}-\\frac2{x+1}.\\)"
+              "work": "\\(\\frac{3x+11}{(x-3)(x+1)}=\\frac{5}{x-3}-\\frac{2}{x+1}\\)"
             }
           ],
           "xp": 1,
@@ -1774,10 +1774,10 @@
             "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
           },
           "options": [
-            "\\(-\\frac1{x-3}-\\frac4{x+1}\\)",
-            "\\(\\frac5{x-3}-\\frac2{x+1}\\)",
-            "\\(\\frac5{x-3}+\\frac2{x+1}\\)",
-            "\\(-\\frac1{x-3}+\\frac4{x+1}\\)"
+            "\\(-\\frac{1}{x-3}-\\frac{4}{x+1}\\)",
+            "\\(\\frac{5}{x-3}-\\frac{2}{x+1}\\)",
+            "\\(\\frac{5}{x-3}+\\frac{2}{x+1}\\)",
+            "\\(-\\frac{1}{x-3}+\\frac{4}{x+1}\\)"
           ],
           "answer": 1,
           "keyPoints": [
@@ -2740,7 +2740,7 @@
           "type": "multipart",
           "difficulty": "hard",
           "timeLimit": 60,
-          "stem": "Use the substitutions shown in each part to evaluate and relate the integrals involving \\(x/\\sin x\\) on \\([\\pi/3,2\\pi/3]\\).",
+          "stem": "Use the substitutions shown in each part to evaluate and relate the integrals involving \\(\\frac{x}{\\sin x}\\) on \\(\\left[\\frac{\\pi}{3},\\frac{2\\pi}{3}\\right]\\).",
           "hint": "Use each indicated substitution and keep the changing limits, differential and algebraic factors together.",
           "xp": 1,
           "meta": {
@@ -2758,21 +2758,21 @@
               "manual": true,
               "difficulty": "hard",
               "timeLimit": 60,
-              "stem": "Use the substitution \\(t=\\tan\\frac{x}{2}\\) to show that \\(\\int_{\\pi/3}^{2\\pi/3}\\frac{1}{\\sin x}\\,dx=\\ln3\\).",
-              "hint": "Use \\(\\sin x=2t/(1+t^2)\\) and \\(dx=2dt/(1+t^2)\\), then convert both endpoints to t-values.",
-              "solution": "With \\(t=\\tan(x/2)\\), the integral becomes \\(\\int_{1/\\sqrt3}^{\\sqrt3}dt/t=\\ln3\\).",
+              "stem": "Use the substitution \\(t=\\tan\\left(\\frac{x}{2}\\right)\\) to show that \\(\\int_{\\frac{\\pi}{3}}^{\\frac{2\\pi}{3}}\\frac{1}{\\sin x}\\,dx=\\ln3\\).",
+              "hint": "Use \\(\\sin x=\\frac{2t}{1+t^2}\\) and \\(dx=\\frac{2\\,dt}{1+t^2}\\), then convert both endpoints to t-values.",
+              "solution": "With \\(t=\\tan\\left(\\frac{x}{2}\\right)\\), the integral becomes \\(\\int_{\\frac{1}{\\sqrt{3}}}^{\\sqrt{3}}\\frac{dt}{t}=\\ln3\\).",
               "steps": [
                 {
                   "explain": "Apply the half-angle substitution and differentiate it.",
-                  "work": "\\(t=\\tan\\frac x2,\\qquad dx=\\frac{2}{1+t^2}dt,\\qquad\\sin x=\\frac{2t}{1+t^2}.\\)"
+                  "work": "\\(t=\\tan\\left(\\frac{x}{2}\\right),\\qquad dx=\\frac{2}{1+t^2}\\,dt,\\qquad\\sin x=\\frac{2t}{1+t^2}\\)"
                 },
                 {
-                  "explain": "Substitute both expressions; the factors \\(2/(1+t^2)\\) cancel, leaving a logarithmic integral.",
-                  "work": "\\(\\frac{1}{\\sin x}dx=\\frac{1+t^2}{2t}\\cdot\\frac{2}{1+t^2}dt=\\frac{dt}{t}.\\)"
+                  "explain": "Substitute both expressions; the factors \\(\\frac{2}{1+t^2}\\) cancel, leaving a logarithmic integral.",
+                  "work": "\\(\\frac{1}{\\sin x}\\,dx=\\frac{1+t^2}{2t}\\cdot\\frac{2}{1+t^2}\\,dt=\\frac{dt}{t}\\)"
                 },
                 {
-                  "explain": "Convert the endpoints: x=π/3 gives t=tan(π/6)=1/√3; x=2π/3 gives t=tan(π/3)=√3.",
-                  "work": "\\(\\int_{\\pi/3}^{2\\pi/3}\\frac{dx}{\\sin x}=\\int_{1/\\sqrt3}^{\\sqrt3}\\frac{dt}{t}=[\\ln t]_{1/\\sqrt3}^{\\sqrt3}=\\ln\\sqrt3-\\ln(1/\\sqrt3)=\\ln3.\\)"
+                  "explain": "Convert the endpoints: \\(x=\\frac{\\pi}{3}\\) gives \\(t=\\tan\\left(\\frac{\\pi}{6}\\right)=\\frac{1}{\\sqrt{3}}\\); \\(x=\\frac{2\\pi}{3}\\) gives \\(t=\\tan\\left(\\frac{\\pi}{3}\\right)=\\sqrt{3}\\).",
+                  "work": "\\(\\int_{\\frac{\\pi}{3}}^{\\frac{2\\pi}{3}}\\frac{dx}{\\sin x}=\\int_{\\frac{1}{\\sqrt{3}}}^{\\sqrt{3}}\\frac{dt}{t}=[\\ln t]_{\\frac{1}{\\sqrt{3}}}^{\\sqrt{3}}=\\ln\\sqrt{3}-\\ln\\left(\\frac{1}{\\sqrt{3}}\\right)=\\ln3\\)"
                 }
               ],
               "xp": 1,
@@ -2786,11 +2786,11 @@
               },
               "keyPoints": [
                 {
-                  "text": "Use the substitution \\(t=\\tan\\frac{x}{2}\\) to show that \\(\\int_{\\pi/3}^{2\\pi/3}\\frac{1}{\\sin x}\\,dx=\\ln3\\).",
-                  "note": "Use \\(\\sin x=2t/(1+t^2)\\) and \\(dx=2dt/(1+t^2)\\), then convert both endpoints to t-values."
+                  "text": "Use the substitution \\(t=\\tan\\left(\\frac{x}{2}\\right)\\) to show that \\(\\int_{\\frac{\\pi}{3}}^{\\frac{2\\pi}{3}}\\frac{1}{\\sin x}\\,dx=\\ln3\\).",
+                  "note": "Use \\(\\sin x=\\frac{2t}{1+t^2}\\) and \\(dx=\\frac{2\\,dt}{1+t^2}\\), then convert both endpoints to t-values."
                 }
               ],
-              "answer": "With \\(t=\\tan(x/2)\\), the integral becomes \\(\\int_{1/\\sqrt3}^{\\sqrt3}dt/t=\\ln3\\)."
+              "answer": "With \\(t=\\tan\\left(\\frac{x}{2}\\right)\\), the integral becomes \\(\\int_{\\frac{1}{\\sqrt{3}}}^{\\sqrt{3}}\\frac{dt}{t}=\\ln3\\)."
             },
             {
               "id": "caringbah2020-ext2-q13b-ii",
@@ -2798,21 +2798,21 @@
               "manual": true,
               "difficulty": "hard",
               "timeLimit": 60,
-              "stem": "Use the substitution \\(u=\\pi-x\\) to show that \\(\\int_{\\pi/3}^{2\\pi/3}\\frac{x}{\\sin x}\\,dx=\\int_{\\pi/3}^{2\\pi/3}\\frac{\\pi-x}{\\sin x}\\,dx\\).",
+              "stem": "Use the substitution \\(u=\\pi-x\\) to show that \\(\\int_{\\frac{\\pi}{3}}^{\\frac{2\\pi}{3}}\\frac{x}{\\sin x}\\,dx=\\int_{\\frac{\\pi}{3}}^{\\frac{2\\pi}{3}}\\frac{\\pi-x}{\\sin x}\\,dx\\).",
               "hint": "Under \\(u=\\pi-x\\), the limits reverse and \\(dx=-du\\); also \\(\\sin(\\pi-u)=\\sin u\\). Track both changes.",
               "solution": "Using \\(u=\\pi-x\\), \\(dx=-du\\), reversed limits, and \\(\\sin(\\pi-u)=\\sin u\\) gives the stated equality.",
               "steps": [
                 {
-                  "explain": "Set \\(u=\\pi-x\\), so \\(x=\\pi-u\\) and \\(dx=-du\\). Transform the endpoints: x=π/3 maps to u=2π/3, and x=2π/3 maps to u=π/3.",
-                  "work": "\\(\\int_{\\pi/3}^{2\\pi/3}\\frac{x}{\\sin x}dx=\\int_{2\\pi/3}^{\\pi/3}\\frac{\\pi-u}{\\sin(\\pi-u)}(-du).\\)"
+                  "explain": "Set \\(u=\\pi-x\\), so \\(x=\\pi-u\\) and \\(dx=-du\\). Transform the endpoints: \\(x=\\frac{\\pi}{3}\\) maps to \\(u=\\frac{2\\pi}{3}\\), and \\(x=\\frac{2\\pi}{3}\\) maps to \\(u=\\frac{\\pi}{3}\\).",
+                  "work": "\\(\\int_{\\frac{\\pi}{3}}^{\\frac{2\\pi}{3}}\\frac{x}{\\sin x}\\,dx=\\int_{\\frac{2\\pi}{3}}^{\\frac{\\pi}{3}}\\frac{\\pi-u}{\\sin(\\pi-u)}(-du)\\)"
                 },
                 {
                   "explain": "Use \\(\\sin(\\pi-u)=\\sin u\\). The negative differential reverses the limits back to increasing order.",
-                  "work": "\\(\\int_{2\\pi/3}^{\\pi/3}\\frac{\\pi-u}{\\sin u}(-du)=\\int_{\\pi/3}^{2\\pi/3}\\frac{\\pi-u}{\\sin u}du.\\)"
+                  "work": "\\(\\int_{\\frac{2\\pi}{3}}^{\\frac{\\pi}{3}}\\frac{\\pi-u}{\\sin u}(-du)=\\int_{\\frac{\\pi}{3}}^{\\frac{2\\pi}{3}}\\frac{\\pi-u}{\\sin u}\\,du\\)"
                 },
                 {
                   "explain": "Rename the dummy variable u as x; an integration variable name does not change the value.",
-                  "work": "\\(\\int_{\\pi/3}^{2\\pi/3}\\frac{x}{\\sin x}dx=\\int_{\\pi/3}^{2\\pi/3}\\frac{\\pi-x}{\\sin x}dx.\\)"
+                  "work": "\\(\\int_{\\frac{\\pi}{3}}^{\\frac{2\\pi}{3}}\\frac{x}{\\sin x}\\,dx=\\int_{\\frac{\\pi}{3}}^{\\frac{2\\pi}{3}}\\frac{\\pi-x}{\\sin x}\\,dx\\)"
                 }
               ],
               "xp": 1,
@@ -2826,7 +2826,7 @@
               },
               "keyPoints": [
                 {
-                  "text": "Use the substitution \\(u=\\pi-x\\) to show that \\(\\int_{\\pi/3}^{2\\pi/3}\\frac{x}{\\sin x}\\,dx=\\int_{\\pi/3}^{2\\pi/3}\\frac{\\pi-x}{\\sin x}\\,dx\\).",
+                  "text": "Use the substitution \\(u=\\pi-x\\) to show that \\(\\int_{\\frac{\\pi}{3}}^{\\frac{2\\pi}{3}}\\frac{x}{\\sin x}\\,dx=\\int_{\\frac{\\pi}{3}}^{\\frac{2\\pi}{3}}\\frac{\\pi-x}{\\sin x}\\,dx\\).",
                   "note": "Under \\(u=\\pi-x\\), the limits reverse and \\(dx=-du\\); also \\(\\sin(\\pi-u)=\\sin u\\). Track both changes."
                 }
               ],
@@ -2837,21 +2837,21 @@
               "type": "mc",
               "difficulty": "medium",
               "timeLimit": 60,
-              "stem": "Hence find the value of \\(\\int_{\\pi/3}^{2\\pi/3}\\frac{x}{\\sin x}\\,dx\\).",
-              "hint": "Call the integral I. The preceding symmetry gives a second expression for I; add them and use the value of the integral of 1/sin x.",
+              "stem": "Hence find the value of \\(\\int_{\\frac{\\pi}{3}}^{\\frac{2\\pi}{3}}\\frac{x}{\\sin x}\\,dx\\).",
+              "hint": "Call the integral I. The preceding symmetry gives a second expression for I; add them and use the value of the integral of \\(\\frac{1}{\\sin x}\\).",
               "solution": "\\(\\frac{\\pi\\ln3}{2}\\)",
               "steps": [
                 {
                   "explain": "Let I be the integral sought. The substitution from the previous part gives a second equal expression for it.",
-                  "work": "\\(I=\\int_{\\pi/3}^{2\\pi/3}\\frac{x}{\\sin x}dx=\\int_{\\pi/3}^{2\\pi/3}\\frac{\\pi-x}{\\sin x}dx.\\)"
+                  "work": "\\(I=\\int_{\\frac{\\pi}{3}}^{\\frac{2\\pi}{3}}\\frac{x}{\\sin x}\\,dx=\\int_{\\frac{\\pi}{3}}^{\\frac{2\\pi}{3}}\\frac{\\pi-x}{\\sin x}\\,dx\\)"
                 },
                 {
                   "explain": "Add these equal integrals. The numerators x and π−x add to π, and the remaining integral is the result from part (i).",
-                  "work": "\\(2I=\\int_{\\pi/3}^{2\\pi/3}\\frac{x+(\\pi-x)}{\\sin x}dx=\\pi\\int_{\\pi/3}^{2\\pi/3}\\frac{1}{\\sin x}dx=\\pi\\ln3.\\)"
+                  "work": "\\(2I=\\int_{\\frac{\\pi}{3}}^{\\frac{2\\pi}{3}}\\frac{x+(\\pi-x)}{\\sin x}\\,dx=\\pi\\int_{\\frac{\\pi}{3}}^{\\frac{2\\pi}{3}}\\frac{1}{\\sin x}\\,dx=\\pi\\ln3\\)"
                 },
                 {
                   "explain": "Divide both sides by 2.",
-                  "work": "\\(I=\\frac{\\pi\\ln3}{2}.\\)"
+                  "work": "\\(I=\\frac{\\pi\\ln3}{2}\\)"
                 }
               ],
               "xp": 1,
@@ -3402,20 +3402,20 @@
               "difficulty": "medium",
               "timeLimit": 60,
               "stem": "Find the value of \\(I_0\\).",
-              "hint": "Set \\(u=1+x\\), so the square root becomes \\(u^{1/2}\\) and the limits change from x=−1,0 to u=0,1.",
-              "solution": "\\(\\frac23\\)",
+              "hint": "Set \\(u=1+x\\), so the square root becomes \\(u^{\\frac{1}{2}}\\) and the limits change from \\(x=-1,0\\) to \\(u=0,1\\).",
+              "solution": "\\(\\frac{2}{3}\\)",
               "steps": [
                 {
                   "explain": "Set n=0 in the definition. Then \\(x^0=1\\), so only the square-root factor remains.",
-                  "work": "\\(I_0=\\int_{-1}^0\\sqrt{1+x}\\,dx.\\)"
+                  "work": "\\(I_0=\\int_{-1}^0\\sqrt{1+x}\\,dx\\)"
                 },
                 {
                   "explain": "Use \\(u=1+x\\). Then \\(du=dx\\); when x=−1, u=0, and when x=0, u=1.",
-                  "work": "\\(I_0=\\int_0^1u^{1/2}\\,du.\\)"
+                  "work": "\\(I_0=\\int_0^1 u^{\\frac{1}{2}}\\,du\\)"
                 },
                 {
                   "explain": "Apply the power rule and substitute both limits. The lower endpoint contributes zero.",
-                  "work": "\\(I_0=\\left[\\frac23u^{3/2}\\right]_0^1=\\frac23(1)-\\frac23(0)=\\boxed{\\frac23}.\\)"
+                  "work": "\\(I_0=\\left[\\frac{2}{3}u^{\\frac{3}{2}}\\right]_0^1=\\frac{2}{3}(1)-\\frac{2}{3}(0)=\\boxed{\\frac{2}{3}}\\)"
                 }
               ],
               "xp": 1,
@@ -3428,16 +3428,16 @@
                 "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
               },
               "options": [
-                "\\(\\frac13\\)",
-                "\\(\\frac23\\)",
+                "\\(\\frac{1}{3}\\)",
+                "\\(\\frac{2}{3}\\)",
                 "\\(1\\)",
-                "\\(\\frac43\\)"
+                "\\(\\frac{4}{3}\\)"
               ],
               "answer": 1,
               "keyPoints": [
                 {
                   "text": "Find the value of \\(I_0\\).",
-                  "note": "Set \\(u=1+x\\), so the square root becomes \\(u^{1/2}\\) and the limits change from x=−1,0 to u=0,1."
+                  "note": "Set \\(u=1+x\\), so the square root becomes \\(u^{\\frac{1}{2}}\\) and the limits change from \\(x=-1,0\\) to \\(u=0,1\\)."
                 }
               ]
             },
@@ -3449,23 +3449,23 @@
               "timeLimit": 60,
               "stem": "Show that \\(I_n=-\\frac{2n}{2n+3}I_{n-1}\\) for \\(n=1,2,3,\\ldots\\).",
               "hint": "Use integration by parts with \\(u=x^n\\) and \\(dv=\\sqrt{1+x}\\,dx\\). The boundary term is zero at both endpoints for n≥1.",
-              "solution": "Integration by parts gives \\(I_n=-(2n/3)(I_{n-1}+I_n)\\), since the endpoint term is zero. Rearranging yields \\(I_n=-2nI_{n-1}/(2n+3)\\).",
+              "solution": "Integration by parts gives \\(I_n=-\\frac{2n}{3}(I_{n-1}+I_n)\\), since the endpoint term is zero. Rearranging yields \\(I_n=-\\frac{2n}{2n+3}I_{n-1}\\).",
               "steps": [
                 {
-                  "explain": "For n≥1, choose \\(u=x^n\\) and \\(dv=\\sqrt{1+x}\\,dx\\). Then \\(du=nx^{n-1}dx\\) and \\(v=\\frac23(1+x)^{3/2}\\).",
-                  "work": "\\(I_n=\\left[\\frac23x^n(1+x)^{3/2}\\right]_{-1}^0-\\frac{2n}{3}\\int_{-1}^0x^{n-1}(1+x)^{3/2}dx.\\)"
+                  "explain": "For \\(n\\ge1\\), choose \\(u=x^n\\) and \\(dv=\\sqrt{1+x}\\,dx\\). Then \\(du=nx^{n-1}dx\\) and \\(v=\\frac{2}{3}(1+x)^{\\frac{3}{2}}\\).",
+                  "work": "\\(I_n=\\left[\\frac{2}{3}x^n(1+x)^{\\frac{3}{2}}\\right]_{-1}^0-\\frac{2n}{3}\\int_{-1}^0x^{n-1}(1+x)^{\\frac{3}{2}}\\,dx\\)"
                 },
                 {
-                  "explain": "The boundary term vanishes: at x=0, \\(x^n=0\\); at x=−1, \\((1+x)^{3/2}=0\\). Write \\((1+x)^{3/2}=(1+x)\\sqrt{1+x}\\) and split the integral.",
-                  "work": "\\(I_n=-\\frac{2n}{3}\\int_{-1}^0x^{n-1}(1+x)\\sqrt{1+x}dx=-\\frac{2n}{3}(I_{n-1}+I_n).\\)"
+                  "explain": "The boundary term vanishes: at \\(x=0\\), \\(x^n=0\\); at \\(x=-1\\), \\((1+x)^{\\frac{3}{2}}=0\\). Write \\((1+x)^{\\frac{3}{2}}=(1+x)\\sqrt{1+x}\\) and split the integral.",
+                  "work": "\\(I_n=-\\frac{2n}{3}\\int_{-1}^0x^{n-1}(1+x)\\sqrt{1+x}\\,dx=-\\frac{2n}{3}(I_{n-1}+I_n)\\)"
                 },
                 {
                   "explain": "Collect the terms involving I_n on the left and multiply through by 3.",
-                  "work": "\\(3I_n=-2nI_{n-1}-2nI_n\\quad\\Longrightarrow\\quad(2n+3)I_n=-2nI_{n-1}.\\)"
+                  "work": "\\(3I_n=-2nI_{n-1}-2nI_n\\quad\\Longrightarrow\\quad(2n+3)I_n=-2nI_{n-1}\\)"
                 },
                 {
                   "explain": "Divide by the positive number 2n+3 to obtain the required recurrence.",
-                  "work": "\\(I_n=-\\frac{2n}{2n+3}I_{n-1},\\qquad n\\ge1.\\)"
+                  "work": "\\(I_n=-\\frac{2n}{2n+3}I_{n-1},\\qquad n\\ge1\\)"
                 }
               ],
               "xp": 1,
@@ -3483,7 +3483,7 @@
                   "note": "Use integration by parts with \\(u=x^n\\) and \\(dv=\\sqrt{1+x}\\,dx\\). The boundary term is zero at both endpoints for n≥1."
                 }
               ],
-              "answer": "Integration by parts gives \\(I_n=-(2n/3)(I_{n-1}+I_n)\\), since the endpoint term is zero. Rearranging yields \\(I_n=-2nI_{n-1}/(2n+3)\\)."
+              "answer": "Integration by parts gives \\(I_n=-\\frac{2n}{3}(I_{n-1}+I_n)\\), since the endpoint term is zero. Rearranging yields \\(I_n=-\\frac{2n}{2n+3}I_{n-1}\\)."
             },
             {
               "id": "caringbah2020-ext2-q14b-ii",
@@ -3496,15 +3496,15 @@
               "steps": [
                 {
                   "explain": "Start with the value from the first part and use the recurrence at n=1.",
-                  "work": "\\(I_1=-\\frac{2}{5}I_0=-\\frac25\\cdot\\frac23=-\\frac4{15}.\\)"
+                  "work": "\\(I_1=-\\frac{2}{5}I_0=-\\frac{2}{5}\\cdot\\frac{2}{3}=-\\frac{4}{15}\\)"
                 },
                 {
                   "explain": "Use the recurrence again, now with n=2.",
-                  "work": "\\(I_2=-\\frac4{7}I_1=-\\frac47\\left(-\\frac4{15}\\right)=\\frac{16}{105}.\\)"
+                  "work": "\\(I_2=-\\frac{4}{7}I_1=-\\frac{4}{7}\\left(-\\frac{4}{15}\\right)=\\frac{16}{105}\\)"
                 },
                 {
                   "explain": "The two negative factors make the final integral positive.",
-                  "work": "\\(I_2=\\frac{16}{105}.\\)"
+                  "work": "\\(I_2=\\frac{16}{105}\\)"
                 }
               ],
               "xp": 1,

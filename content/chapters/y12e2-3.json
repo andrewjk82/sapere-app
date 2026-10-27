@@ -2178,20 +2178,20 @@
               "difficulty": "hard",
               "timeLimit": 60,
               "stem": "Find the other three roots of the equation in the form \\(re^{i\\theta}\\), where \\(r>0\\) and \\(-\\pi<\\theta<\\pi\\).",
-              "hint": "Write the equation as \\(z^4=16e^{i\\pi/3}\\). Fourth roots have modulus 2 and arguments separated by \\(2\\pi/4=\\pi/2\\).",
-              "solution": "\\(2e^{i7\\pi/12},\\ 2e^{-i5\\pi/12},\\ 2e^{-i11\\pi/12}\\)",
+              "hint": "Write the equation as \\(z^4=16e^{\\frac{i\\pi}{3}}\\). Fourth roots have modulus 2 and arguments separated by \\(\\frac{2\\pi}{4}=\\frac{\\pi}{2}\\).",
+              "solution": "\\(2e^{\\frac{7\\pi i}{12}},\\ 2e^{-\\frac{5\\pi i}{12}},\\ 2e^{-\\frac{11\\pi i}{12}}\\)",
               "steps": [
                 {
-                  "explain": "Using \\(a=8\\), the equation becomes \\(z^4=8(1+\\sqrt3 i)=16e^{i\\pi/3}\\). The modulus of each fourth root is \\(16^{1/4}=2\\).",
-                  "work": "\\(|z|=2.\\)"
+                  "explain": "Using \\(a=8\\), the equation becomes \\(z^4=8(1+\\sqrt3 i)=16e^{\\frac{i\\pi}{3}}\\). The modulus of each fourth root is \\(16^{\\frac{1}{4}}=2\\).",
+                  "work": "\\(|z|=2\\)"
                 },
                 {
-                  "explain": "The arguments of the fourth roots are \\((\\pi/3+2k\\pi)/4\\), for k=0,1,2,3.",
-                  "work": "\\(\\arg z=\\frac{\\pi}{12}+\\frac{k\\pi}{2},\\quad k=0,1,2,3.\\)"
+                  "explain": "The arguments of the fourth roots are \\(\\frac{\\frac{\\pi}{3}+2k\\pi}{4}\\), for k=0,1,2,3.",
+                  "work": "\\(\\arg z=\\frac{\\pi}{12}+\\frac{k\\pi}{2},\\quad k=0,1,2,3\\)"
                 },
                 {
                   "explain": "The known root is the k=0 root. Use k=1,2,3 and express all arguments in the required interval.",
-                  "work": "\\(k=1:\\frac{7\\pi}{12},\\qquad k=2:\\frac{13\\pi}{12}=-\\frac{11\\pi}{12},\\qquad k=3:\\frac{19\\pi}{12}=-\\frac{5\\pi}{12}.\\)"
+                  "work": "\\(k=1:\\frac{7\\pi}{12},\\qquad k=2:\\frac{13\\pi}{12}=-\\frac{11\\pi}{12},\\qquad k=3:\\frac{19\\pi}{12}=-\\frac{5\\pi}{12}\\)"
                 }
               ],
               "xp": 1,
@@ -2204,16 +2204,16 @@
                 "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
               },
               "options": [
-                "\\(2e^{i7\\pi/12},\\ 2e^{-i5\\pi/12},\\ 2e^{-i11\\pi/12}\\)",
-                "\\(2e^{i\\pi/12},\\ 2e^{i7\\pi/12},\\ 2e^{i13\\pi/12}\\)",
-                "\\(4e^{i7\\pi/12},\\ 4e^{-i5\\pi/12},\\ 4e^{-i11\\pi/12}\\)",
-                "\\(2e^{i5\\pi/12},\\ 2e^{i11\\pi/12},\\ 2e^{-i\\pi/12}\\)"
+                "\\(2e^{\\frac{7\\pi i}{12}},\\ 2e^{-\\frac{5\\pi i}{12}},\\ 2e^{-\\frac{11\\pi i}{12}}\\)",
+                "\\(2e^{\\frac{\\pi i}{12}},\\ 2e^{\\frac{7\\pi i}{12}},\\ 2e^{\\frac{13\\pi i}{12}}\\)",
+                "\\(4e^{\\frac{7\\pi i}{12}},\\ 4e^{-\\frac{5\\pi i}{12}},\\ 4e^{-\\frac{11\\pi i}{12}}\\)",
+                "\\(2e^{\\frac{5\\pi i}{12}},\\ 2e^{\\frac{11\\pi i}{12}},\\ 2e^{-\\frac{\\pi i}{12}}\\)"
               ],
               "answer": 0,
               "keyPoints": [
                 {
                   "text": "Find the other three roots of the equation in the form \\(re^{i\\theta}\\), where \\(r>0\\) and \\(-\\pi<\\theta<\\pi\\).",
-                  "note": "Write the equation as \\(z^4=16e^{i\\pi/3}\\). Fourth roots have modulus 2 and arguments separated by \\(2\\pi/4=\\pi/2\\)."
+                  "note": "Write the equation as \\(z^4=16e^{\\frac{i\\pi}{3}}\\). Fourth roots have modulus 2 and arguments separated by \\(\\frac{2\\pi}{4}=\\frac{\\pi}{2}\\)."
                 }
               ]
             }
@@ -2244,19 +2244,19 @@
               "timeLimit": 60,
               "stem": "Draw a sketch of the roots of \\(z^5+1=0\\) on an Argand diagram.",
               "hint": "Rewrite the equation as \\(z^5=-1=e^{i(\\pi+2k\\pi)}\\). The five roots lie on the unit circle at equally spaced arguments.",
-              "solution": "The five roots are the unit-circle points at arguments \\(\\pi/5,3\\pi/5,\\pi,7\\pi/5,9\\pi/5\\), as shown in the final step diagram.",
+              "solution": "The five roots are the unit-circle points at arguments \\(\\frac{\\pi}{5},\\frac{3\\pi}{5},\\pi,\\frac{7\\pi}{5},\\frac{9\\pi}{5}\\), as shown in the final step diagram.",
               "steps": [
                 {
                   "explain": "Set the fifth power equal to −1 and write −1 in polar form with its full set of arguments.",
-                  "work": "\\(z^5=-1=e^{i(\\pi+2k\\pi)}.\\)"
+                  "work": "\\(z^5=-1=e^{i(\\pi+2k\\pi)}\\)"
                 },
                 {
-                  "explain": "Take fifth roots: the modulus is 1 and the arguments are \\((\\pi+2k\\pi)/5\\), for k=0,1,2,3,4.",
-                  "work": "\\(z_k=e^{i(\\pi+2k\\pi)/5},\\quad k=0,1,2,3,4.\\)"
+                  "explain": "Take fifth roots: the modulus is 1 and the arguments are \\(\\frac{\\pi+2k\\pi}{5}\\), for k=0,1,2,3,4.",
+                  "work": "\\(z_k=e^{\\frac{i(\\pi+2k\\pi)}{5}},\\quad k=0,1,2,3,4\\)"
                 },
                 {
-                  "explain": "Plot these five points on the unit circle at arguments \\(\\pi/5,3\\pi/5,\\pi,7\\pi/5,9\\pi/5\\). The final diagram shows all five roots.",
-                  "work": "\\(\\arg z\\in\\left\\{\\frac\\pi5,\\frac{3\\pi}5,\\pi,\\frac{7\\pi}5,\\frac{9\\pi}5\\right\\}.\\)",
+                  "explain": "Plot these five points on the unit circle at arguments \\(\\frac{\\pi}{5},\\frac{3\\pi}{5},\\pi,\\frac{7\\pi}{5},\\frac{9\\pi}{5}\\). The final diagram shows all five roots.",
+                  "work": "\\(\\arg z\\in\\left\\{\\frac{\\pi}{5},\\frac{3\\pi}{5},\\pi,\\frac{7\\pi}{5},\\frac{9\\pi}{5}\\right\\}\\)",
                   "figure": {
                     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 320 260\"><rect width=\"320\" height=\"260\" fill=\"#fff\"/><line x1=\"28\" y1=\"130\" x2=\"292\" y2=\"130\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"160\" y1=\"238\" x2=\"160\" y2=\"22\" stroke=\"#475569\" stroke-width=\"1.8\"/><circle cx=\"160\" cy=\"130\" r=\"78\" fill=\"none\" stroke=\"#cbd5e1\" stroke-width=\"1.4\" stroke-dasharray=\"4 4\"/><g stroke=\"#7c3aed\" stroke-width=\"2.6\" fill=\"#7c3aed\"><circle cx=\"223.1\" cy=\"84.2\" r=\"5\"/><circle cx=\"113.9\" cy=\"55.8\" r=\"5\"/><circle cx=\"82\" cy=\"130\" r=\"5\"/><circle cx=\"113.9\" cy=\"204.2\" r=\"5\"/><circle cx=\"223.1\" cy=\"175.8\" r=\"5\"/></g><g font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\"><text x=\"230\" y=\"80\">π/5</text><text x=\"91\" y=\"47\">3π/5</text><text x=\"49\" y=\"126\">π</text><text x=\"80\" y=\"224\">7π/5</text><text x=\"230\" y=\"193\">9π/5</text><text x=\"296\" y=\"134\">Re</text><text x=\"164\" y=\"20\">Im</text><text x=\"165\" y=\"145\">O</text></g></svg>"
                   }
@@ -2277,7 +2277,7 @@
                   "note": "Rewrite the equation as \\(z^5=-1=e^{i(\\pi+2k\\pi)}\\). The five roots lie on the unit circle at equally spaced arguments."
                 }
               ],
-              "answer": "The five roots are the unit-circle points at arguments \\(\\pi/5,3\\pi/5,\\pi,7\\pi/5,9\\pi/5\\), as shown in the final step diagram."
+              "answer": "The five roots are the unit-circle points at arguments \\(\\frac{\\pi}{5},\\frac{3\\pi}{5},\\pi,\\frac{7\\pi}{5},\\frac{9\\pi}{5}\\), as shown in the final step diagram."
             },
             {
               "id": "caringbah2020-ext2-q14a-ii",
@@ -2285,20 +2285,20 @@
               "difficulty": "medium",
               "timeLimit": 60,
               "stem": "Factor \\(z^5+1\\) into irreducible factors with real coefficients.",
-              "hint": "Pair the two non-real conjugate roots at arguments ±π/5 and ±3π/5. Each pair gives a real quadratic \\(z^2-2\\cos(\\theta)z+1\\).",
-              "solution": "\\((z+1)(z^2-\\frac{1+\\sqrt5}{2}z+1)(z^2+\\frac{\\sqrt5-1}{2}z+1)\\)",
+              "hint": "Pair the two non-real conjugate roots at arguments \\(\\pm\\frac{\\pi}{5}\\) and \\(\\pm\\frac{3\\pi}{5}\\). Each pair gives a real quadratic \\(z^2-2\\cos(\\theta)z+1\\).",
+              "solution": "\\((z+1)\\left(z^2-\\frac{1+\\sqrt{5}}{2}z+1\\right)\\left(z^2+\\frac{\\sqrt{5}-1}{2}z+1\\right)\\)",
               "steps": [
                 {
                   "explain": "The real root is \\(z=-1\\), so one factor is \\(z+1\\). Pair each conjugate pair of roots on the unit circle.",
-                  "work": "\\(z^5+1=(z+1)(z^2-2\\cos(\\pi/5)z+1)(z^2-2\\cos(3\\pi/5)z+1).\\)"
+                  "work": "\\(z^5+1=(z+1)\\left(z^2-2\\cos\\left(\\frac{\\pi}{5}\\right)z+1\\right)\\left(z^2-2\\cos\\left(\\frac{3\\pi}{5}\\right)z+1\\right)\\)"
                 },
                 {
-                  "explain": "Use the exact values \\(2\\cos(\\pi/5)=(1+\\sqrt5)/2\\) and \\(2\\cos(3\\pi/5)=(1-\\sqrt5)/2\\) to give the irreducible real factors.",
-                  "work": "\\(z^5+1=(z+1)\\left(z^2-\\frac{1+\\sqrt5}{2}z+1\\right)\\left(z^2+\\frac{\\sqrt5-1}{2}z+1\\right).\\)"
+                  "explain": "Use the exact values \\(2\\cos\\left(\\frac{\\pi}{5}\\right)=\\frac{1+\\sqrt{5}}{2}\\) and \\(2\\cos\\left(\\frac{3\\pi}{5}\\right)=\\frac{1-\\sqrt{5}}{2}\\) to give the irreducible real factors.",
+                  "work": "\\(z^5+1=(z+1)\\left(z^2-\\frac{1+\\sqrt{5}}{2}z+1\\right)\\left(z^2+\\frac{\\sqrt{5}-1}{2}z+1\\right)\\)"
                 },
                 {
                   "explain": "Each quadratic has a non-real conjugate pair of roots, so neither quadratic factors further over the reals.",
-                  "work": "\\(\\boxed{(z+1)\\left(z^2-\\frac{1+\\sqrt5}{2}z+1\\right)\\left(z^2+\\frac{\\sqrt5-1}{2}z+1\\right)}\\)"
+                  "work": "\\(\\boxed{(z+1)\\left(z^2-\\frac{1+\\sqrt{5}}{2}z+1\\right)\\left(z^2+\\frac{\\sqrt{5}-1}{2}z+1\\right)}\\)"
                 }
               ],
               "xp": 1,
@@ -2311,16 +2311,16 @@
                 "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
               },
               "options": [
-                "\\((z+1)(z^2-\\frac{1+\\sqrt5}{2}z+1)(z^2+\\frac{\\sqrt5-1}{2}z+1)\\)",
-                "\\((z-1)(z^2+\\frac{1+\\sqrt5}{2}z+1)(z^2-\\frac{\\sqrt5-1}{2}z+1)\\)",
-                "\\((z+1)(z^2-\\frac{1+\\sqrt5}{2}z-1)(z^2+\\frac{\\sqrt5-1}{2}z-1)\\)",
-                "\\((z+1)(z^2-\\frac{1+\\sqrt5}{2}z+1)(z^2-\\frac{\\sqrt5-1}{2}z+1)\\)"
+                "\\((z+1)\\left(z^2-\\frac{1+\\sqrt{5}}{2}z+1\\right)\\left(z^2+\\frac{\\sqrt{5}-1}{2}z+1\\right)\\)",
+                "\\((z-1)\\left(z^2+\\frac{1+\\sqrt{5}}{2}z+1\\right)\\left(z^2-\\frac{\\sqrt{5}-1}{2}z+1\\right)\\)",
+                "\\((z+1)\\left(z^2-\\frac{1+\\sqrt{5}}{2}z-1\\right)\\left(z^2+\\frac{\\sqrt{5}-1}{2}z-1\\right)\\)",
+                "\\((z+1)\\left(z^2-\\frac{1+\\sqrt{5}}{2}z+1\\right)\\left(z^2-\\frac{\\sqrt{5}-1}{2}z+1\\right)\\)"
               ],
               "answer": 0,
               "keyPoints": [
                 {
                   "text": "Factor \\(z^5+1\\) into irreducible factors with real coefficients.",
-                  "note": "Pair the two non-real conjugate roots at arguments ±π/5 and ±3π/5. Each pair gives a real quadratic \\(z^2-2\\cos(\\theta)z+1\\)."
+                  "note": "Pair the two non-real conjugate roots at arguments \\(\\pm\\frac{\\pi}{5}\\) and \\(\\pm\\frac{3\\pi}{5}\\). Each pair gives a real quadratic \\(z^2-2\\cos(\\theta)z+1\\)."
                 }
               ]
             },
@@ -2330,21 +2330,21 @@
               "manual": true,
               "difficulty": "hard",
               "timeLimit": 60,
-              "stem": "Deduce that \\(\\cos\\frac\\pi5+\\cos\\frac{3\\pi}5=\\frac12\\) and \\(\\cos\\frac\\pi5\\cos\\frac{3\\pi}5=-\\frac14\\).",
+              "stem": "Deduce that \\(\\cos\\left(\\frac{\\pi}{5}\\right)+\\cos\\left(\\frac{3\\pi}{5}\\right)=\\frac{1}{2}\\) and \\(\\cos\\left(\\frac{\\pi}{5}\\right)\\cos\\left(\\frac{3\\pi}{5}\\right)=-\\frac{1}{4}\\).",
               "hint": "Compare the coefficient of z in the product of the two real quadratic factors with the sum of the cosine values; compare the constant and linear coefficients to obtain the product.",
-              "solution": "\\(u+v=\\frac12\\) and \\(2+4uv=1\\), so \\(uv=-\\frac14\\), for \\(u=\\cos(\\pi/5)\\), \\(v=\\cos(3\\pi/5)\\).",
+              "solution": "\\(u+v=\\frac{1}{2}\\) and \\(2+4uv=1\\), so \\(uv=-\\frac{1}{4}\\), for \\(u=\\cos\\left(\\frac{\\pi}{5}\\right)\\), \\(v=\\cos\\left(\\frac{3\\pi}{5}\\right)\\).",
               "steps": [
                 {
-                  "explain": "Write the two real quadratic factors as \\((z^2-2u z+1)(z^2-2v z+1)\\), where \\(u=\\cos(\\pi/5)\\), \\(v=\\cos(3\\pi/5)\\).",
-                  "work": "\\((z^2-2uz+1)(z^2-2vz+1)=z^4-2(u+v)z^3+(2+4uv)z^2-2(u+v)z+1.\\)"
+                  "explain": "Write the two real quadratic factors as \\((z^2-2u z+1)(z^2-2v z+1)\\), where \\(u=\\cos\\left(\\frac{\\pi}{5}\\right)\\), \\(v=\\cos\\left(\\frac{3\\pi}{5}\\right)\\).",
+                  "work": "\\((z^2-2uz+1)(z^2-2vz+1)=z^4-2(u+v)z^3+(2+4uv)z^2-2(u+v)z+1\\)"
                 },
                 {
                   "explain": "From the factorisation in the previous part, the product of these two quadratics is \\(z^4-z^3+z^2-z+1\\). Compare the z³ coefficients.",
-                  "work": "\\(-2(u+v)=-1\\quad\\Longrightarrow\\quad u+v=\\frac12.\\)"
+                  "work": "\\(-2(u+v)=-1\\quad\\Longrightarrow\\quad u+v=\\frac{1}{2}\\)"
                 },
                 {
                   "explain": "Compare the z² coefficients and substitute the known sum.",
-                  "work": "\\(2+4uv=1\\quad\\Longrightarrow\\quad uv=-\\frac14.\\)"
+                  "work": "\\(2+4uv=1\\quad\\Longrightarrow\\quad uv=-\\frac{1}{4}\\)"
                 }
               ],
               "xp": 1,
@@ -2358,32 +2358,32 @@
               },
               "keyPoints": [
                 {
-                  "text": "Deduce that \\(\\cos\\frac\\pi5+\\cos\\frac{3\\pi}5=\\frac12\\) and \\(\\cos\\frac\\pi5\\cos\\frac{3\\pi}5=-\\frac14\\).",
+                  "text": "Deduce that \\(\\cos\\left(\\frac{\\pi}{5}\\right)+\\cos\\left(\\frac{3\\pi}{5}\\right)=\\frac{1}{2}\\) and \\(\\cos\\left(\\frac{\\pi}{5}\\right)\\cos\\left(\\frac{3\\pi}{5}\\right)=-\\frac{1}{4}\\).",
                   "note": "Compare the coefficient of z in the product of the two real quadratic factors with the sum of the cosine values; compare the constant and linear coefficients to obtain the product."
                 }
               ],
-              "answer": "\\(u+v=\\frac12\\) and \\(2+4uv=1\\), so \\(uv=-\\frac14\\), for \\(u=\\cos(\\pi/5)\\), \\(v=\\cos(3\\pi/5)\\)."
+              "answer": "\\(u+v=\\frac{1}{2}\\) and \\(2+4uv=1\\), so \\(uv=-\\frac{1}{4}\\), for \\(u=\\cos\\left(\\frac{\\pi}{5}\\right)\\), \\(v=\\cos\\left(\\frac{3\\pi}{5}\\right)\\)."
             },
             {
               "id": "caringbah2020-ext2-q14a-iv",
               "type": "mc",
               "difficulty": "medium",
               "timeLimit": 60,
-              "stem": "Write a quadratic equation with integer coefficients which has roots \\(\\cos\\frac\\pi5\\) and \\(\\cos\\frac{3\\pi}5\\). Hence find these two values as surds.",
+              "stem": "Write a quadratic equation with integer coefficients which has roots \\(\\cos\\left(\\frac{\\pi}{5}\\right)\\) and \\(\\cos\\left(\\frac{3\\pi}{5}\\right)\\). Hence find these two values as surds.",
               "hint": "Use the sum and product from the previous part as the roots’ sum and product, then apply the quadratic formula.",
-              "solution": "\\(4x^2-2x-1=0;\\;\\cos(\\pi/5)=(1+\\sqrt5)/4,\\;\\cos(3\\pi/5)=(1-\\sqrt5)/4\\)",
+              "solution": "\\(4x^2-2x-1=0;\\quad\\cos\\left(\\frac{\\pi}{5}\\right)=\\frac{1+\\sqrt{5}}{4},\\quad\\cos\\left(\\frac{3\\pi}{5}\\right)=\\frac{1-\\sqrt{5}}{4}\\)",
               "steps": [
                 {
-                  "explain": "Let the two roots be u and v. From the previous part, \\(u+v=1/2\\) and \\(uv=-1/4\\). The monic quadratic is \\(x^2-(u+v)x+uv=0\\).",
-                  "work": "\\(x^2-\\frac12x-\\frac14=0.\\)"
+                  "explain": "Let the two roots be u and v. From the previous part, \\(u+v=\\frac{1}{2}\\) and \\(uv=-\\frac{1}{4}\\). The monic quadratic is \\(x^2-(u+v)x+uv=0\\).",
+                  "work": "\\(x^2-\\frac{1}{2}x-\\frac{1}{4}=0\\)"
                 },
                 {
                   "explain": "Multiply by 4 to obtain integer coefficients.",
-                  "work": "\\(4x^2-2x-1=0.\\)"
+                  "work": "\\(4x^2-2x-1=0\\)"
                 },
                 {
-                  "explain": "Solve with the quadratic formula. The larger root is \\(\\cos(\\pi/5)\\) and the smaller is \\(\\cos(3\\pi/5)\\).",
-                  "work": "\\(x=\\frac{2\\pm\\sqrt{(-2)^2-4(4)(-1)}}{8}=\\frac{2\\pm\\sqrt{20}}8=\\frac{1\\pm\\sqrt5}{4}.\\)"
+                  "explain": "Solve with the quadratic formula. The larger root is \\(\\cos\\left(\\frac{\\pi}{5}\\right)\\) and the smaller is \\(\\cos\\left(\\frac{3\\pi}{5}\\right)\\).",
+                  "work": "\\(x=\\frac{2\\pm\\sqrt{(-2)^2-4(4)(-1)}}{8}=\\frac{2\\pm\\sqrt{20}}{8}=\\frac{1\\pm\\sqrt{5}}{4}\\)"
                 }
               ],
               "xp": 1,
@@ -2396,15 +2396,15 @@
                 "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
               },
               "options": [
-                "\\(4x^2-2x-1=0;\\quad \\cos\\frac\\pi5=\\frac{1+\\sqrt5}{4},\\ \\cos\\frac{3\\pi}5=\\frac{1-\\sqrt5}{4}\\)",
-                "\\(4x^2+2x-1=0;\\quad \\cos\\frac\\pi5=\\frac{-1+\\sqrt5}{4},\\ \\cos\\frac{3\\pi}5=\\frac{-1-\\sqrt5}{4}\\)",
-                "\\(4x^2-2x+1=0;\\quad \\cos\\frac\\pi5=\\frac{1+\\sqrt5}{4},\\ \\cos\\frac{3\\pi}5=\\frac{1-\\sqrt5}{4}\\)",
-                "\\(x^2-\\frac12x-\\frac14=0;\\quad \\cos\\frac\\pi5=\\frac{1+\\sqrt5}{4},\\ \\cos\\frac{3\\pi}5=\\frac{1-\\sqrt5}{4}\\)"
+                "\\(4x^2-2x-1=0;\\quad \\cos\\left(\\frac{\\pi}{5}\\right)=\\frac{1+\\sqrt{5}}{4},\\ \\cos\\left(\\frac{3\\pi}{5}\\right)=\\frac{1-\\sqrt{5}}{4}\\)",
+                "\\(4x^2+2x-1=0;\\quad \\cos\\left(\\frac{\\pi}{5}\\right)=\\frac{-1+\\sqrt{5}}{4},\\ \\cos\\left(\\frac{3\\pi}{5}\\right)=\\frac{-1-\\sqrt{5}}{4}\\)",
+                "\\(4x^2-2x+1=0;\\quad \\cos\\left(\\frac{\\pi}{5}\\right)=\\frac{1+\\sqrt{5}}{4},\\ \\cos\\left(\\frac{3\\pi}{5}\\right)=\\frac{1-\\sqrt{5}}{4}\\)",
+                "\\(x^2-\\frac{1}{2}x-\\frac{1}{4}=0;\\quad \\cos\\left(\\frac{\\pi}{5}\\right)=\\frac{1+\\sqrt{5}}{4},\\ \\cos\\left(\\frac{3\\pi}{5}\\right)=\\frac{1-\\sqrt{5}}{4}\\)"
               ],
               "answer": 0,
               "keyPoints": [
                 {
-                  "text": "Write a quadratic equation with integer coefficients which has roots \\(\\cos\\frac\\pi5\\) and \\(\\cos\\frac{3\\pi}5\\). Hence find these two values as surds.",
+                  "text": "Write a quadratic equation with integer coefficients which has roots \\(\\cos\\left(\\frac{\\pi}{5}\\right)\\) and \\(\\cos\\left(\\frac{3\\pi}{5}\\right)\\). Hence find these two values as surds.",
                   "note": "Use the sum and product from the previous part as the roots’ sum and product, then apply the quadratic formula."
                 }
               ]
