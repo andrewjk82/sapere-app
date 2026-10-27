@@ -3640,7 +3640,8 @@
           "alsoIn": [
             "exam:year7ch3d"
           ],
-          "xp": 1
+          "xp": 1,
+          "solution": "\\(3y\\) and \\(5y\\) are like terms, so add the coefficients: \\(3 + 5 = 8\\), giving \\(8y\\)."
         },
         {
           "id": "y7-3d-q2b",
@@ -3677,7 +3678,8 @@
           "alsoIn": [
             "exam:year7ch3d"
           ],
-          "xp": 1
+          "xp": 1,
+          "solution": "\\(14m\\) and \\(3m\\) are like terms, so subtract the coefficients: \\(14 - 3 = 11\\), giving \\(11m\\)."
         },
         {
           "id": "y7-3d-q2c",
@@ -3714,7 +3716,8 @@
           "alsoIn": [
             "exam:year7ch3d"
           ],
-          "xp": 1
+          "xp": 1,
+          "solution": "All three terms are in \\(n\\), so add the coefficients: \\(4 + 6 + 2 = 12\\), giving \\(12n\\)."
         },
         {
           "id": "y7-3d-q2d",
@@ -3751,7 +3754,8 @@
           "alsoIn": [
             "exam:year7ch3d"
           ],
-          "xp": 1
+          "xp": 1,
+          "solution": "All three terms are in \\(k\\), so combine the coefficients in order: \\(8 + 5 - 3 = 10\\), giving \\(10k\\)."
         },
         {
           "id": "y7-3d-q2e",
@@ -4303,7 +4307,8 @@
           "alsoIn": [
             "exam:year7ch3d"
           ],
-          "xp": 1
+          "xp": 1,
+          "solution": "All three terms are in \\(y\\), so combine the coefficients: \\(3 + 6 - 3 = 6\\), giving \\(6y\\)."
         },
         {
           "id": "y7-3d-q4b",
@@ -5148,7 +5153,8 @@
           "alsoIn": [
             "exam:year7ch3d"
           ],
-          "xp": 1
+          "xp": 1,
+          "solution": "All three terms are in \\(k\\), so combine the coefficients in order: \\(90 - 70 + 50 = 70\\), giving \\(70k\\)."
         },
         {
           "id": "y7-3d-q6g",

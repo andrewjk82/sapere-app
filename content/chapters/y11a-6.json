@@ -16065,7 +16065,7 @@
             "\\\\(\\\\cos \\\\theta\\\\)",
             "\\\\(\\\\csc \\\\theta\\\\)",
             "\\\\(-\\\\sec \\\\theta\\\\)",
-            "\\(\\sec \\theta\\)"
+            "\\\\(\\\\sec \\\\theta\\\\)"
           ],
           "answer": 3,
           "hint": "Which reciprocal identity represents 1/\\\\cos?",
@@ -16099,7 +16099,7 @@
           "options": [
             "\\\\(\\\\cot \\\\alpha\\\\)",
             "\\\\(-\\\\tan \\\\alpha\\\\)",
-            "\\(\\tan \\alpha\\)",
+            "\\\\(\\\\tan \\\\alpha\\\\)",
             "\\\\(\\\\sec \\\\alpha\\\\)"
           ],
           "answer": 2,
@@ -16170,7 +16170,7 @@
             "\\\\(-\\\\cot y\\\\)",
             "\\\\(\\\\csc y\\\\)",
             "\\\\(\\\\tan y\\\\)",
-            "\\(\\cot y\\)"
+            "\\\\(\\\\cot y\\\\)"
           ],
           "answer": 3,
           "hint": "Recall the cotangent quotient identity.",

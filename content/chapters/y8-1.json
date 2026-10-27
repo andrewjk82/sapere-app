@@ -4348,7 +4348,7 @@
           "id": "y8-1b-backup-q1",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(8 \\times 12 \\times 5 \\times 3\\\\)",
+          "stem": "Calculate \\\\(8 \\\\times 12 \\\\times 5 \\\\times 3\\\\).",
           "options": [
             "1440",
             "1340",
@@ -4356,20 +4356,24 @@
             "1420"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(8 \\times 12 \\times 5 \\times 3\\\\)",
-          "solution": "1440",
+          "hint": "Multiply two of the factors first — look for a pair that makes a round number.",
+          "solution": "\\\\(8 \\\\times 12 \\\\times 5 \\\\times 3 = 1440\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(8 \\times 12 \\times 5 \\times 3\\\\)"
+              "explain": "Several factors multiplied together can be taken in any order; work left to right unless a pair makes a round number.",
+              "work": "\\\\(8 \\\\times 12 \\\\times 5 \\\\times 3\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 8 \\times 12 \\times 5 \\times 3 = 1440\\\\)"
+              "explain": "Multiply the running total by the next factor.",
+              "work": "\\\\(8 \\\\times 12 = 96\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 1440\\\\)"
+              "explain": "Multiply the running total by the next factor.",
+              "work": "\\\\(96 \\\\times 5 = 480\\\\)"
+            },
+            {
+              "explain": "Multiply the running total by the next factor.",
+              "work": "\\\\(480 \\\\times 3 = 1440\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -4379,7 +4383,7 @@
           "id": "y8-1b-backup-q2",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(12 \\times 25 \\times 11 \\times 4\\\\)",
+          "stem": "Calculate \\\\(12 \\\\times 25 \\\\times 11 \\\\times 4\\\\).",
           "options": [
             "13200",
             "12200",
@@ -4387,20 +4391,24 @@
             "13100"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(12 \\times 25 \\times 11 \\times 4\\\\)",
-          "solution": "13200",
+          "hint": "Multiply two of the factors first — look for a pair that makes a round number.",
+          "solution": "\\\\(12 \\\\times 25 \\\\times 11 \\\\times 4 = 13200\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(12 \\times 25 \\times 11 \\times 4\\\\)"
+              "explain": "Several factors multiplied together can be taken in any order; work left to right unless a pair makes a round number.",
+              "work": "\\\\(12 \\\\times 25 \\\\times 11 \\\\times 4\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 12 \\times 25 \\times 11 \\times 4 = 13200\\\\)"
+              "explain": "Multiply the running total by the next factor.",
+              "work": "\\\\(12 \\\\times 25 = 300\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 13200\\\\)"
+              "explain": "Multiply the running total by the next factor.",
+              "work": "\\\\(300 \\\\times 11 = 3300\\\\)"
+            },
+            {
+              "explain": "Multiply the running total by the next factor.",
+              "work": "\\\\(3300 \\\\times 4 = 13200\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -4410,7 +4418,7 @@
           "id": "y8-1b-backup-q3",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(15 \\times 9 \\times 4\\\\)",
+          "stem": "Calculate \\\\(15 \\\\times 9 \\\\times 4\\\\).",
           "options": [
             "540",
             "440",
@@ -4418,20 +4426,20 @@
             "520"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(15 \\times 9 \\times 4\\\\)",
-          "solution": "540",
+          "hint": "Multiply two of the factors first — look for a pair that makes a round number.",
+          "solution": "\\\\(15 \\\\times 9 \\\\times 4 = 540\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(15 \\times 9 \\times 4\\\\)"
+              "explain": "Several factors multiplied together can be taken in any order; work left to right unless a pair makes a round number.",
+              "work": "\\\\(15 \\\\times 9 \\\\times 4\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 15 \\times 9 \\times 4 = 540\\\\)"
+              "explain": "Multiply the running total by the next factor.",
+              "work": "\\\\(15 \\\\times 9 = 135\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 540\\\\)"
+              "explain": "Multiply the running total by the next factor.",
+              "work": "\\\\(135 \\\\times 4 = 540\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -4441,7 +4449,7 @@
           "id": "y8-1b-backup-q4",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(35 \\times 11 \\times 2\\\\)",
+          "stem": "Calculate \\\\(35 \\\\times 11 \\\\times 2\\\\).",
           "options": [
             "770",
             "670",
@@ -4449,20 +4457,20 @@
             "760"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(35 \\times 11 \\times 2\\\\)",
-          "solution": "770",
+          "hint": "Multiply two of the factors first — look for a pair that makes a round number.",
+          "solution": "\\\\(35 \\\\times 11 \\\\times 2 = 770\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(35 \\times 11 \\times 2\\\\)"
+              "explain": "Several factors multiplied together can be taken in any order; work left to right unless a pair makes a round number.",
+              "work": "\\\\(35 \\\\times 11 \\\\times 2\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 35 \\times 11 \\times 2 = 770\\\\)"
+              "explain": "Multiply the running total by the next factor.",
+              "work": "\\\\(35 \\\\times 11 = 385\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 770\\\\)"
+              "explain": "Multiply the running total by the next factor.",
+              "work": "\\\\(385 \\\\times 2 = 770\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -4472,7 +4480,7 @@
           "id": "y8-1b-backup-q5",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(25 \\times 14 \\times 4\\\\)",
+          "stem": "Calculate \\\\(25 \\\\times 14 \\\\times 4\\\\).",
           "options": [
             "1400",
             "1300",
@@ -4480,20 +4488,20 @@
             "1410"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(25 \\times 14 \\times 4\\\\)",
-          "solution": "1400",
+          "hint": "Multiply two of the factors first — look for a pair that makes a round number.",
+          "solution": "\\\\(25 \\\\times 14 \\\\times 4 = 1400\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(25 \\times 14 \\times 4\\\\)"
+              "explain": "Several factors multiplied together can be taken in any order; work left to right unless a pair makes a round number.",
+              "work": "\\\\(25 \\\\times 14 \\\\times 4\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 25 \\times 14 \\times 4 = 1400\\\\)"
+              "explain": "Multiply the running total by the next factor.",
+              "work": "\\\\(25 \\\\times 14 = 350\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 1400\\\\)"
+              "explain": "Multiply the running total by the next factor.",
+              "work": "\\\\(350 \\\\times 4 = 1400\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -4503,7 +4511,7 @@
           "id": "y8-1b-backup-q6",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(45 \\times 7 \\times 2\\\\)",
+          "stem": "Calculate \\\\(45 \\\\times 7 \\\\times 2\\\\).",
           "options": [
             "630",
             "530",
@@ -4511,20 +4519,20 @@
             "620"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(45 \\times 7 \\times 2\\\\)",
-          "solution": "630",
+          "hint": "Multiply two of the factors first — look for a pair that makes a round number.",
+          "solution": "\\\\(45 \\\\times 7 \\\\times 2 = 630\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(45 \\times 7 \\times 2\\\\)"
+              "explain": "Several factors multiplied together can be taken in any order; work left to right unless a pair makes a round number.",
+              "work": "\\\\(45 \\\\times 7 \\\\times 2\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 45 \\times 7 \\times 2 = 630\\\\)"
+              "explain": "Multiply the running total by the next factor.",
+              "work": "\\\\(45 \\\\times 7 = 315\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 630\\\\)"
+              "explain": "Multiply the running total by the next factor.",
+              "work": "\\\\(315 \\\\times 2 = 630\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -4534,7 +4542,7 @@
           "id": "y8-1b-backup-q7",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(21 \\times 33\\\\) mentally",
+          "stem": "Calculate \\\\(21 \\\\times 33\\\\), using a mental method.",
           "options": [
             "693",
             "683",
@@ -4542,20 +4550,20 @@
             "673"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(21 \\times 33\\\\) mentally",
-          "solution": "693",
+          "hint": "Round one factor to a ten, multiply, then adjust.",
+          "solution": "\\\\(21 \\\\times 33 = 693\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(21 \\times 33\\\\) mentally"
+              "explain": "A mental method: break one factor into easier pieces instead of multiplying digit by digit.",
+              "work": "\\\\(21 \\\\times 33 = (20 + 1) \\\\times 33\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 21 \\times 33 mentally = 693\\\\)"
+              "explain": "Multiply each piece separately.",
+              "work": "\\\\(20 \\\\times 33 = 660 \\\\qquad 1 \\\\times 33 = 33\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 693\\\\)"
+              "explain": "Combine the two partial products.",
+              "work": "\\\\(660 + 33 = 693\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -4565,7 +4573,7 @@
           "id": "y8-1b-backup-q8",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(18 \\times 28\\\\) mentally",
+          "stem": "Calculate \\\\(18 \\\\times 28\\\\), using a mental method.",
           "options": [
             "504",
             "404",
@@ -4573,20 +4581,20 @@
             "494"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(18 \\times 28\\\\) mentally",
-          "solution": "504",
+          "hint": "Round one factor to a ten, multiply, then adjust.",
+          "solution": "\\\\(18 \\\\times 28 = 504\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(18 \\times 28\\\\) mentally"
+              "explain": "A mental method: break one factor into easier pieces instead of multiplying digit by digit.",
+              "work": "\\\\(18 \\\\times 28 = (20 - 2) \\\\times 28\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 18 \\times 28 mentally = 504\\\\)"
+              "explain": "Multiply each piece separately.",
+              "work": "\\\\(20 \\\\times 28 = 560 \\\\qquad 2 \\\\times 28 = 56\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 504\\\\)"
+              "explain": "Combine the two partial products.",
+              "work": "\\\\(560 - 56 = 504\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -4596,7 +4604,7 @@
           "id": "y8-1b-backup-q9",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(42 \\times 16\\\\) mentally",
+          "stem": "Calculate \\\\(42 \\\\times 16\\\\), using a mental method.",
           "options": [
             "672",
             "572",
@@ -4604,20 +4612,20 @@
             "662"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(42 \\times 16\\\\) mentally",
-          "solution": "672",
+          "hint": "Round one factor to a ten, multiply, then adjust.",
+          "solution": "\\\\(42 \\\\times 16 = 672\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(42 \\times 16\\\\) mentally"
+              "explain": "A mental method: break one factor into easier pieces instead of multiplying digit by digit.",
+              "work": "\\\\(42 \\\\times 16 = (40 + 2) \\\\times 16\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 42 \\times 16 mentally = 672\\\\)"
+              "explain": "Multiply each piece separately.",
+              "work": "\\\\(40 \\\\times 16 = 640 \\\\qquad 2 \\\\times 16 = 32\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 672\\\\)"
+              "explain": "Combine the two partial products.",
+              "work": "\\\\(640 + 32 = 672\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -4627,7 +4635,7 @@
           "id": "y8-1b-backup-q10",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(49 \\times 34\\\\) mentally",
+          "stem": "Calculate \\\\(49 \\\\times 34\\\\), using a mental method.",
           "options": [
             "1666",
             "1566",
@@ -4635,20 +4643,20 @@
             "1656"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(49 \\times 34\\\\) mentally",
-          "solution": "1666",
+          "hint": "Round one factor to a ten, multiply, then adjust.",
+          "solution": "\\\\(49 \\\\times 34 = 1666\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(49 \\times 34\\\\) mentally"
+              "explain": "A mental method: break one factor into easier pieces instead of multiplying digit by digit.",
+              "work": "\\\\(49 \\\\times 34 = (50 - 1) \\\\times 34\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 49 \\times 34 mentally = 1666\\\\)"
+              "explain": "Multiply each piece separately.",
+              "work": "\\\\(50 \\\\times 34 = 1700 \\\\qquad 1 \\\\times 34 = 34\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 1666\\\\)"
+              "explain": "Combine the two partial products.",
+              "work": "\\\\(1700 - 34 = 1666\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -4658,7 +4666,7 @@
           "id": "y8-1b-backup-q11",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(51 \\times 12\\\\) mentally",
+          "stem": "Calculate \\\\(51 \\\\times 12\\\\), using a mental method.",
           "options": [
             "612",
             "512",
@@ -4666,20 +4674,20 @@
             "602"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(51 \\times 12\\\\) mentally",
-          "solution": "612",
+          "hint": "Round one factor to a ten, multiply, then adjust.",
+          "solution": "\\\\(51 \\\\times 12 = 612\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(51 \\times 12\\\\) mentally"
+              "explain": "A mental method: break one factor into easier pieces instead of multiplying digit by digit.",
+              "work": "\\\\(51 \\\\times 12 = (50 + 1) \\\\times 12\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 51 \\times 12 mentally = 612\\\\)"
+              "explain": "Multiply each piece separately.",
+              "work": "\\\\(50 \\\\times 12 = 600 \\\\qquad 1 \\\\times 12 = 12\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 612\\\\)"
+              "explain": "Combine the two partial products.",
+              "work": "\\\\(600 + 12 = 612\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -4689,7 +4697,7 @@
           "id": "y8-1b-backup-q12",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(39 \\times 15\\\\) mentally",
+          "stem": "Calculate \\\\(39 \\\\times 15\\\\), using a mental method.",
           "options": [
             "585",
             "485",
@@ -4697,20 +4705,20 @@
             "575"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(39 \\times 15\\\\) mentally",
-          "solution": "585",
+          "hint": "Round one factor to a ten, multiply, then adjust.",
+          "solution": "\\\\(39 \\\\times 15 = 585\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(39 \\times 15\\\\) mentally"
+              "explain": "A mental method: break one factor into easier pieces instead of multiplying digit by digit.",
+              "work": "\\\\(39 \\\\times 15 = (40 - 1) \\\\times 15\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 39 \\times 15 mentally = 585\\\\)"
+              "explain": "Multiply each piece separately.",
+              "work": "\\\\(40 \\\\times 15 = 600 \\\\qquad 1 \\\\times 15 = 15\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 585\\\\)"
+              "explain": "Combine the two partial products.",
+              "work": "\\\\(600 - 15 = 585\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -4720,7 +4728,7 @@
           "id": "y8-1b-backup-q13",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(749 \\div 7\\\\) mentally",
+          "stem": "Calculate \\\\(749 \\\\div 7\\\\), using a mental method.",
           "options": [
             "107",
             "109",
@@ -4728,20 +4736,20 @@
             "108"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(749 \\div 7\\\\) mentally",
-          "solution": "107",
+          "hint": "Break the dividend into chunks that divide exactly.",
+          "solution": "\\\\(749 \\\\div 7 = 107\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(749 \\div 7\\\\) mentally"
+              "explain": "Divide by breaking the dividend into parts that each divide exactly by the divisor.",
+              "work": "\\\\(749 = 700 + 49\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 749 \\div 7 mentally = 107\\\\)"
+              "explain": "Divide each part.",
+              "work": "\\\\(700 \\\\div 7 = 100 \\\\qquad 49 \\\\div 7 = 7\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 107\\\\)"
+              "explain": "Add the partial quotients, then check by multiplying back.",
+              "work": "\\\\(100 + 7 = 107 \\\\quad(107 \\\\times 7 = 749)\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -4751,7 +4759,7 @@
           "id": "y8-1b-backup-q14",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(352 \\div 4\\\\) mentally",
+          "stem": "Calculate \\\\(352 \\\\div 4\\\\), using a mental method.",
           "options": [
             "88",
             "84",
@@ -4759,20 +4767,20 @@
             "86"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(352 \\div 4\\\\) mentally",
-          "solution": "88",
+          "hint": "Break the dividend into chunks that divide exactly.",
+          "solution": "\\\\(352 \\\\div 4 = 88\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(352 \\div 4\\\\) mentally"
+              "explain": "Divide by breaking the dividend into parts that each divide exactly by the divisor.",
+              "work": "\\\\(352 = 320 + 32\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 352 \\div 4 mentally = 88\\\\)"
+              "explain": "Divide each part.",
+              "work": "\\\\(320 \\\\div 4 = 80 \\\\qquad 32 \\\\div 4 = 8\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 88\\\\)"
+              "explain": "Add the partial quotients, then check by multiplying back.",
+              "work": "\\\\(80 + 8 = 88 \\\\quad(88 \\\\times 4 = 352)\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -4782,7 +4790,7 @@
           "id": "y8-1b-backup-q15",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(1272 \\div 12\\\\) mentally",
+          "stem": "Calculate \\\\(1272 \\\\div 12\\\\), using a mental method.",
           "options": [
             "106",
             "105",
@@ -4790,20 +4798,20 @@
             "116"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(1272 \\div 12\\\\) mentally",
-          "solution": "106",
+          "hint": "Break the dividend into chunks that divide exactly.",
+          "solution": "\\\\(1272 \\\\div 12 = 106\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(1272 \\div 12\\\\) mentally"
+              "explain": "Divide by breaking the dividend into parts that each divide exactly by the divisor.",
+              "work": "\\\\(1272 = 1200 + 72\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 1272 \\div 12 mentally = 106\\\\)"
+              "explain": "Divide each part.",
+              "work": "\\\\(1200 \\\\div 12 = 100 \\\\qquad 72 \\\\div 12 = 6\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 106\\\\)"
+              "explain": "Add the partial quotients, then check by multiplying back.",
+              "work": "\\\\(100 + 6 = 106 \\\\quad(106 \\\\times 12 = 1272)\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -4813,7 +4821,7 @@
           "id": "y8-1b-backup-q16",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(2964 \\div 6\\\\) mentally",
+          "stem": "Calculate \\\\(2964 \\\\div 6\\\\), using a mental method.",
           "options": [
             "494",
             "484",
@@ -4821,20 +4829,20 @@
             "496"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(2964 \\div 6\\\\) mentally",
-          "solution": "494",
+          "hint": "Break the dividend into chunks that divide exactly.",
+          "solution": "\\\\(2964 \\\\div 6 = 494\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(2964 \\div 6\\\\) mentally"
+              "explain": "Divide by breaking the dividend into parts that each divide exactly by the divisor.",
+              "work": "\\\\(2964 = 2400 + 540 + 24\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 2964 \\div 6 mentally = 494\\\\)"
+              "explain": "Divide each part.",
+              "work": "\\\\(2400 \\\\div 6 = 400 \\\\qquad 540 \\\\div 6 = 90 \\\\qquad 24 \\\\div 6 = 4\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 494\\\\)"
+              "explain": "Add the partial quotients, then check by multiplying back.",
+              "work": "\\\\(400 + 90 + 4 = 494 \\\\quad(494 \\\\times 6 = 2964)\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -4844,7 +4852,7 @@
           "id": "y8-1b-backup-q17",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(455 \\div 5\\\\) mentally",
+          "stem": "Calculate \\\\(455 \\\\div 5\\\\), using a mental method.",
           "options": [
             "91",
             "81",
@@ -4852,20 +4860,20 @@
             "90"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(455 \\div 5\\\\) mentally",
-          "solution": "91",
+          "hint": "Break the dividend into chunks that divide exactly.",
+          "solution": "\\\\(455 \\\\div 5 = 91\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(455 \\div 5\\\\) mentally"
+              "explain": "Divide by breaking the dividend into parts that each divide exactly by the divisor.",
+              "work": "\\\\(455 = 450 + 5\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 455 \\div 5 mentally = 91\\\\)"
+              "explain": "Divide each part.",
+              "work": "\\\\(450 \\\\div 5 = 90 \\\\qquad 5 \\\\div 5 = 1\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 91\\\\)"
+              "explain": "Add the partial quotients, then check by multiplying back.",
+              "work": "\\\\(90 + 1 = 91 \\\\quad(91 \\\\times 5 = 455)\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -4875,7 +4883,7 @@
           "id": "y8-1b-backup-q18",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(819 \\div 9\\\\) mentally",
+          "stem": "Calculate \\\\(819 \\\\div 9\\\\), using a mental method.",
           "options": [
             "91",
             "81",
@@ -4883,20 +4891,20 @@
             "92"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(819 \\div 9\\\\) mentally",
-          "solution": "91",
+          "hint": "Break the dividend into chunks that divide exactly.",
+          "solution": "\\\\(819 \\\\div 9 = 91\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(819 \\div 9\\\\) mentally"
+              "explain": "Divide by breaking the dividend into parts that each divide exactly by the divisor.",
+              "work": "\\\\(819 = 810 + 9\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 819 \\div 9 mentally = 91\\\\)"
+              "explain": "Divide each part.",
+              "work": "\\\\(810 \\\\div 9 = 90 \\\\qquad 9 \\\\div 9 = 1\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 91\\\\)"
+              "explain": "Add the partial quotients, then check by multiplying back.",
+              "work": "\\\\(90 + 1 = 91 \\\\quad(91 \\\\times 9 = 819)\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -4906,7 +4914,7 @@
           "id": "y8-1b-backup-q19",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(165 \\div 7\\\\) quotient and remainder",
+          "stem": "Calculate \\\\(165 \\\\div 7\\\\), giving the quotient and the remainder.",
           "options": [
             "23 rem 4",
             "23 rem 3",
@@ -4914,20 +4922,24 @@
             "22 rem 5"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(165 \\div 7\\\\) quotient and remainder",
-          "solution": "23 r 4",
+          "hint": "Subtract multiples of the divisor until what is left is smaller than the divisor; that is the remainder.",
+          "solution": "\\\\(165 \\\\div 7 = 23\\\\) remainder \\\\(4\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(165 \\div 7\\\\) quotient and remainder"
+              "explain": "Divide and keep going until what is left is smaller than the divisor.",
+              "work": "\\\\(165 \\\\div 7\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 165 \\div 7  = 23 r 4\\\\)"
+              "explain": "Take away the largest easy multiple of the divisor that still fits.",
+              "work": "\\\\(7 \\\\times 20 = 140 \\\\quad\\\\Rightarrow\\\\quad 165 - 140 = 25\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 23 r 4\\\\)"
+              "explain": "Take away the largest easy multiple of the divisor that still fits.",
+              "work": "\\\\(7 \\\\times 3 = 21 \\\\quad\\\\Rightarrow\\\\quad 25 - 21 = 4\\\\)"
+            },
+            {
+              "explain": "What is left is smaller than the divisor, so it is the remainder. Check with divisor \\\\(\\\\times\\\\) quotient \\\\(+\\\\) remainder.",
+              "work": "\\\\(7 \\\\times 23 + 4 = 165 \\\\;\\\\Rightarrow\\\\; 23\\\\text{ rem }4\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -4937,7 +4949,7 @@
           "id": "y8-1b-backup-q20",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(441 \\div 9\\\\) quotient and remainder",
+          "stem": "Calculate \\\\(441 \\\\div 9\\\\), giving the quotient and the remainder.",
           "options": [
             "49 rem 0",
             "48 rem 1",
@@ -4945,20 +4957,24 @@
             "49 rem 1"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(441 \\div 9\\\\) quotient and remainder",
-          "solution": "49",
+          "hint": "Subtract multiples of the divisor until what is left is smaller than the divisor; that is the remainder.",
+          "solution": "\\\\(441 \\\\div 9 = 49\\\\) remainder \\\\(0\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(441 \\div 9\\\\) quotient and remainder"
+              "explain": "Divide and keep going until what is left is smaller than the divisor.",
+              "work": "\\\\(441 \\\\div 9\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 441 \\div 9  = 49\\\\)"
+              "explain": "Take away the largest easy multiple of the divisor that still fits.",
+              "work": "\\\\(9 \\\\times 40 = 360 \\\\quad\\\\Rightarrow\\\\quad 441 - 360 = 81\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 49\\\\)"
+              "explain": "Take away the largest easy multiple of the divisor that still fits.",
+              "work": "\\\\(9 \\\\times 9 = 81 \\\\quad\\\\Rightarrow\\\\quad 81 - 81 = 0\\\\)"
+            },
+            {
+              "explain": "What is left is smaller than the divisor, so it is the remainder. Check with divisor \\\\(\\\\times\\\\) quotient \\\\(+\\\\) remainder.",
+              "work": "\\\\(9 \\\\times 49 + 0 = 441 \\\\;\\\\Rightarrow\\\\; 49\\\\text{ rem }0\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -4968,7 +4984,7 @@
           "id": "y8-1b-backup-q21",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(800 \\div 12\\\\) quotient and remainder",
+          "stem": "Calculate \\\\(800 \\\\div 12\\\\), giving the quotient and the remainder.",
           "options": [
             "66 rem 8",
             "66 rem 6",
@@ -4976,20 +4992,24 @@
             "65 rem 10"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(800 \\div 12\\\\) quotient and remainder",
-          "solution": "66 r 8",
+          "hint": "Subtract multiples of the divisor until what is left is smaller than the divisor; that is the remainder.",
+          "solution": "\\\\(800 \\\\div 12 = 66\\\\) remainder \\\\(8\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(800 \\div 12\\\\) quotient and remainder"
+              "explain": "Divide and keep going until what is left is smaller than the divisor.",
+              "work": "\\\\(800 \\\\div 12\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 800 \\div 12  = 66 r 8\\\\)"
+              "explain": "Take away the largest easy multiple of the divisor that still fits.",
+              "work": "\\\\(12 \\\\times 60 = 720 \\\\quad\\\\Rightarrow\\\\quad 800 - 720 = 80\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 66 r 8\\\\)"
+              "explain": "Take away the largest easy multiple of the divisor that still fits.",
+              "work": "\\\\(12 \\\\times 6 = 72 \\\\quad\\\\Rightarrow\\\\quad 80 - 72 = 8\\\\)"
+            },
+            {
+              "explain": "What is left is smaller than the divisor, so it is the remainder. Check with divisor \\\\(\\\\times\\\\) quotient \\\\(+\\\\) remainder.",
+              "work": "\\\\(12 \\\\times 66 + 8 = 800 \\\\;\\\\Rightarrow\\\\; 66\\\\text{ rem }8\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -4999,7 +5019,7 @@
           "id": "y8-1b-backup-q22",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(1244 \\div 11\\\\) quotient and remainder",
+          "stem": "Calculate \\\\(1244 \\\\div 11\\\\), giving the quotient and the remainder.",
           "options": [
             "113 rem 1",
             "112 rem 12",
@@ -5007,20 +5027,28 @@
             "113 rem 2"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(1244 \\div 11\\\\) quotient and remainder",
-          "solution": "113 r 1",
+          "hint": "Subtract multiples of the divisor until what is left is smaller than the divisor; that is the remainder.",
+          "solution": "\\\\(1244 \\\\div 11 = 113\\\\) remainder \\\\(1\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(1244 \\div 11\\\\) quotient and remainder"
+              "explain": "Divide and keep going until what is left is smaller than the divisor.",
+              "work": "\\\\(1244 \\\\div 11\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 1244 \\div 11  = 113 r 1\\\\)"
+              "explain": "Take away the largest easy multiple of the divisor that still fits.",
+              "work": "\\\\(11 \\\\times 100 = 1100 \\\\quad\\\\Rightarrow\\\\quad 1244 - 1100 = 144\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 113 r 1\\\\)"
+              "explain": "Take away the largest easy multiple of the divisor that still fits.",
+              "work": "\\\\(11 \\\\times 10 = 110 \\\\quad\\\\Rightarrow\\\\quad 144 - 110 = 34\\\\)"
+            },
+            {
+              "explain": "Take away the largest easy multiple of the divisor that still fits.",
+              "work": "\\\\(11 \\\\times 3 = 33 \\\\quad\\\\Rightarrow\\\\quad 34 - 33 = 1\\\\)"
+            },
+            {
+              "explain": "What is left is smaller than the divisor, so it is the remainder. Check with divisor \\\\(\\\\times\\\\) quotient \\\\(+\\\\) remainder.",
+              "work": "\\\\(11 \\\\times 113 + 1 = 1244 \\\\;\\\\Rightarrow\\\\; 113\\\\text{ rem }1\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -5030,7 +5058,7 @@
           "id": "y8-1b-backup-q23",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(250 \\div 8\\\\) quotient and remainder",
+          "stem": "Calculate \\\\(250 \\\\div 8\\\\), giving the quotient and the remainder.",
           "options": [
             "31 rem 2",
             "31 rem 4",
@@ -5038,20 +5066,24 @@
             "32 rem 0"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(250 \\div 8\\\\) quotient and remainder",
-          "solution": "31 r 2",
+          "hint": "Subtract multiples of the divisor until what is left is smaller than the divisor; that is the remainder.",
+          "solution": "\\\\(250 \\\\div 8 = 31\\\\) remainder \\\\(2\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(250 \\div 8\\\\) quotient and remainder"
+              "explain": "Divide and keep going until what is left is smaller than the divisor.",
+              "work": "\\\\(250 \\\\div 8\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 250 \\div 8  = 31 r 2\\\\)"
+              "explain": "Take away the largest easy multiple of the divisor that still fits.",
+              "work": "\\\\(8 \\\\times 30 = 240 \\\\quad\\\\Rightarrow\\\\quad 250 - 240 = 10\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 31 r 2\\\\)"
+              "explain": "Take away the largest easy multiple of the divisor that still fits.",
+              "work": "\\\\(8 \\\\times 1 = 8 \\\\quad\\\\Rightarrow\\\\quad 10 - 8 = 2\\\\)"
+            },
+            {
+              "explain": "What is left is smaller than the divisor, so it is the remainder. Check with divisor \\\\(\\\\times\\\\) quotient \\\\(+\\\\) remainder.",
+              "work": "\\\\(8 \\\\times 31 + 2 = 250 \\\\;\\\\Rightarrow\\\\; 31\\\\text{ rem }2\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -5061,7 +5093,7 @@
           "id": "y8-1b-backup-q24",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(567 \\div 15\\\\) quotient and remainder",
+          "stem": "Calculate \\\\(567 \\\\div 15\\\\), giving the quotient and the remainder.",
           "options": [
             "37 rem 12",
             "37 rem 10",
@@ -5069,20 +5101,24 @@
             "36 rem 17"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(567 \\div 15\\\\) quotient and remainder",
-          "solution": "37 r 12",
+          "hint": "Subtract multiples of the divisor until what is left is smaller than the divisor; that is the remainder.",
+          "solution": "\\\\(567 \\\\div 15 = 37\\\\) remainder \\\\(12\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(567 \\div 15\\\\) quotient and remainder"
+              "explain": "Divide and keep going until what is left is smaller than the divisor.",
+              "work": "\\\\(567 \\\\div 15\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 567 \\div 15  = 37 r 12\\\\)"
+              "explain": "Take away the largest easy multiple of the divisor that still fits.",
+              "work": "\\\\(15 \\\\times 30 = 450 \\\\quad\\\\Rightarrow\\\\quad 567 - 450 = 117\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 37 r 12\\\\)"
+              "explain": "Take away the largest easy multiple of the divisor that still fits.",
+              "work": "\\\\(15 \\\\times 7 = 105 \\\\quad\\\\Rightarrow\\\\quad 117 - 105 = 12\\\\)"
+            },
+            {
+              "explain": "What is left is smaller than the divisor, so it is the remainder. Check with divisor \\\\(\\\\times\\\\) quotient \\\\(+\\\\) remainder.",
+              "work": "\\\\(15 \\\\times 37 + 12 = 567 \\\\;\\\\Rightarrow\\\\; 37\\\\text{ rem }12\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -5092,7 +5128,7 @@
           "id": "y8-1b-backup-q25",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Calculate: \\\\(353 \\times 14\\\\)",
+          "stem": "Calculate \\\\(353 \\\\times 14\\\\).",
           "options": [
             "4942",
             "4842",
@@ -5100,20 +5136,20 @@
             "4932"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate: \\\\(353 \\times 14\\\\)",
-          "solution": "4942",
+          "hint": "Split the second factor into tens and units, multiply each, then add.",
+          "solution": "\\\\(353 \\\\times 14 = 4942\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate: \\\\(353 \\times 14\\\\)"
+              "explain": "Split the second factor into its tens and its units, so each multiplication is easy.",
+              "work": "\\\\(353 \\\\times 14\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\(: 353 \\times 14 = 4942\\\\)"
+              "explain": "Multiply by the tens and by the units separately.",
+              "work": "\\\\(353 \\\\times 10 = 3530 \\\\qquad 353 \\\\times 4 = 1412\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 4942\\\\)"
+              "explain": "Add the two partial products.",
+              "work": "\\\\(3530 + 1412 = 4942\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -5123,7 +5159,7 @@
           "id": "y8-1b-backup-q26",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Calculate: \\\\(572 \\times 29\\\\)",
+          "stem": "Calculate \\\\(572 \\\\times 29\\\\).",
           "options": [
             "16588",
             "16488",
@@ -5131,20 +5167,20 @@
             "15588"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate: \\\\(572 \\times 29\\\\)",
-          "solution": "16588",
+          "hint": "Split the second factor into tens and units, multiply each, then add.",
+          "solution": "\\\\(572 \\\\times 29 = 16588\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate: \\\\(572 \\times 29\\\\)"
+              "explain": "Split the second factor into its tens and its units, so each multiplication is easy.",
+              "work": "\\\\(572 \\\\times 29\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\(: 572 \\times 29 = 16588\\\\)"
+              "explain": "Multiply by the tens and by the units separately.",
+              "work": "\\\\(572 \\\\times 20 = 11440 \\\\qquad 572 \\\\times 9 = 5148\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 16588\\\\)"
+              "explain": "Add the two partial products.",
+              "work": "\\\\(11440 + 5148 = 16588\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -5154,7 +5190,7 @@
           "id": "y8-1b-backup-q27",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Calculate: \\\\(186 \\times 79\\\\)",
+          "stem": "Calculate \\\\(186 \\\\times 79\\\\).",
           "options": [
             "14694",
             "14594",
@@ -5162,20 +5198,20 @@
             "13694"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate: \\\\(186 \\times 79\\\\)",
-          "solution": "14694",
+          "hint": "Split the second factor into tens and units, multiply each, then add.",
+          "solution": "\\\\(186 \\\\times 79 = 14694\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate: \\\\(186 \\times 79\\\\)"
+              "explain": "Split the second factor into its tens and its units, so each multiplication is easy.",
+              "work": "\\\\(186 \\\\times 79\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\(: 186 \\times 79 = 14694\\\\)"
+              "explain": "Multiply by the tens and by the units separately.",
+              "work": "\\\\(186 \\\\times 70 = 13020 \\\\qquad 186 \\\\times 9 = 1674\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 14694\\\\)"
+              "explain": "Add the two partial products.",
+              "work": "\\\\(13020 + 1674 = 14694\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -5185,7 +5221,7 @@
           "id": "y8-1b-backup-q28",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Calculate: \\\\(612 \\times 49\\\\)",
+          "stem": "Calculate \\\\(612 \\\\times 49\\\\).",
           "options": [
             "29988",
             "28988",
@@ -5193,20 +5229,20 @@
             "29888"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate: \\\\(612 \\times 49\\\\)",
-          "solution": "29988",
+          "hint": "Split the second factor into tens and units, multiply each, then add.",
+          "solution": "\\\\(612 \\\\times 49 = 29988\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate: \\\\(612 \\times 49\\\\)"
+              "explain": "Split the second factor into its tens and its units, so each multiplication is easy.",
+              "work": "\\\\(612 \\\\times 49\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\(: 612 \\times 49 = 29988\\\\)"
+              "explain": "Multiply by the tens and by the units separately.",
+              "work": "\\\\(612 \\\\times 40 = 24480 \\\\qquad 612 \\\\times 9 = 5508\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 29988\\\\)"
+              "explain": "Add the two partial products.",
+              "work": "\\\\(24480 + 5508 = 29988\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -5216,7 +5252,7 @@
           "id": "y8-1b-backup-q29",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Calculate: \\\\(432 \\times 88\\\\)",
+          "stem": "Calculate \\\\(432 \\\\times 88\\\\).",
           "options": [
             "38016",
             "37016",
@@ -5224,20 +5260,20 @@
             "39016"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate: \\\\(432 \\times 88\\\\)",
-          "solution": "38016",
+          "hint": "Split the second factor into tens and units, multiply each, then add.",
+          "solution": "\\\\(432 \\\\times 88 = 38016\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate: \\\\(432 \\times 88\\\\)"
+              "explain": "Split the second factor into its tens and its units, so each multiplication is easy.",
+              "work": "\\\\(432 \\\\times 88\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\(: 432 \\times 88 = 38016\\\\)"
+              "explain": "Multiply by the tens and by the units separately.",
+              "work": "\\\\(432 \\\\times 80 = 34560 \\\\qquad 432 \\\\times 8 = 3456\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 38016\\\\)"
+              "explain": "Add the two partial products.",
+              "work": "\\\\(34560 + 3456 = 38016\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -5247,7 +5283,7 @@
           "id": "y8-1b-backup-q30",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Calculate: \\\\(895 \\times 35\\\\)",
+          "stem": "Calculate \\\\(895 \\\\times 35\\\\).",
           "options": [
             "31325",
             "31425",
@@ -5255,20 +5291,20 @@
             "32325"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate: \\\\(895 \\times 35\\\\)",
-          "solution": "31325",
+          "hint": "Split the second factor into tens and units, multiply each, then add.",
+          "solution": "\\\\(895 \\\\times 35 = 31325\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate: \\\\(895 \\times 35\\\\)"
+              "explain": "Split the second factor into its tens and its units, so each multiplication is easy.",
+              "work": "\\\\(895 \\\\times 35\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\(: 895 \\times 35 = 31325\\\\)"
+              "explain": "Multiply by the tens and by the units separately.",
+              "work": "\\\\(895 \\\\times 30 = 26850 \\\\qquad 895 \\\\times 5 = 4475\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 31325\\\\)"
+              "explain": "Add the two partial products.",
+              "work": "\\\\(26850 + 4475 = 31325\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -5278,7 +5314,7 @@
           "id": "y8-1b-backup-q31",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Calculate: \\\\(135 \\times 36\\\\)",
+          "stem": "Calculate \\\\(135 \\\\times 36\\\\).",
           "options": [
             "4860",
             "4760",
@@ -5286,20 +5322,20 @@
             "4660"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate: \\\\(135 \\times 36\\\\)",
-          "solution": "4860",
+          "hint": "Split the second factor into tens and units, multiply each, then add.",
+          "solution": "\\\\(135 \\\\times 36 = 4860\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate: \\\\(135 \\times 36\\\\)"
+              "explain": "Split the second factor into its tens and its units, so each multiplication is easy.",
+              "work": "\\\\(135 \\\\times 36\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\(: 135 \\times 36 = 4860\\\\)"
+              "explain": "Multiply by the tens and by the units separately.",
+              "work": "\\\\(135 \\\\times 30 = 4050 \\\\qquad 135 \\\\times 6 = 810\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 4860\\\\)"
+              "explain": "Add the two partial products.",
+              "work": "\\\\(4050 + 810 = 4860\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -5309,7 +5345,7 @@
           "id": "y8-1b-backup-q32",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Calculate: \\\\(936 \\times 24\\\\)",
+          "stem": "Calculate \\\\(936 \\\\times 24\\\\).",
           "options": [
             "22464",
             "22364",
@@ -5317,20 +5353,20 @@
             "21464"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate: \\\\(936 \\times 24\\\\)",
-          "solution": "22464",
+          "hint": "Split the second factor into tens and units, multiply each, then add.",
+          "solution": "\\\\(936 \\\\times 24 = 22464\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate: \\\\(936 \\times 24\\\\)"
+              "explain": "Split the second factor into its tens and its units, so each multiplication is easy.",
+              "work": "\\\\(936 \\\\times 24\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\(: 936 \\times 24 = 22464\\\\)"
+              "explain": "Multiply by the tens and by the units separately.",
+              "work": "\\\\(936 \\\\times 20 = 18720 \\\\qquad 936 \\\\times 4 = 3744\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 22464\\\\)"
+              "explain": "Add the two partial products.",
+              "work": "\\\\(18720 + 3744 = 22464\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -5340,7 +5376,7 @@
           "id": "y8-1b-backup-q33",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Calculate: \\\\(506 \\times 56\\\\)",
+          "stem": "Calculate \\\\(506 \\\\times 56\\\\).",
           "options": [
             "28336",
             "27336",
@@ -5348,20 +5384,20 @@
             "29336"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate: \\\\(506 \\times 56\\\\)",
-          "solution": "28336",
+          "hint": "Split the second factor into tens and units, multiply each, then add.",
+          "solution": "\\\\(506 \\\\times 56 = 28336\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate: \\\\(506 \\times 56\\\\)"
+              "explain": "Split the second factor into its tens and its units, so each multiplication is easy.",
+              "work": "\\\\(506 \\\\times 56\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\(: 506 \\times 56 = 28336\\\\)"
+              "explain": "Multiply by the tens and by the units separately.",
+              "work": "\\\\(506 \\\\times 50 = 25300 \\\\qquad 506 \\\\times 6 = 3036\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 28336\\\\)"
+              "explain": "Add the two partial products.",
+              "work": "\\\\(25300 + 3036 = 28336\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -5371,7 +5407,7 @@
           "id": "y8-1b-backup-q34",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Calculate: \\\\(506 \\times 66\\\\)",
+          "stem": "Calculate \\\\(506 \\\\times 66\\\\).",
           "options": [
             "33396",
             "32396",
@@ -5379,20 +5415,20 @@
             "34396"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate: \\\\(506 \\times 66\\\\)",
-          "solution": "33396",
+          "hint": "Split the second factor into tens and units, multiply each, then add.",
+          "solution": "\\\\(506 \\\\times 66 = 33396\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate: \\\\(506 \\times 66\\\\)"
+              "explain": "Split the second factor into its tens and its units, so each multiplication is easy.",
+              "work": "\\\\(506 \\\\times 66\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\(: 506 \\times 66 = 33396\\\\)"
+              "explain": "Multiply by the tens and by the units separately.",
+              "work": "\\\\(506 \\\\times 60 = 30360 \\\\qquad 506 \\\\times 6 = 3036\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 33396\\\\)"
+              "explain": "Add the two partial products.",
+              "work": "\\\\(30360 + 3036 = 33396\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -5402,7 +5438,7 @@
           "id": "y8-1b-backup-q35",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(556 \\div 2\\\\)",
+          "stem": "Calculate \\\\(556 \\\\div 2\\\\).",
           "options": [
             "278",
             "276",
@@ -5410,20 +5446,20 @@
             "268"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(556 \\div 2\\\\)",
-          "solution": "278",
+          "hint": "Break the dividend into chunks that divide exactly.",
+          "solution": "\\\\(556 \\\\div 2 = 278\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(556 \\div 2\\\\)"
+              "explain": "Divide by breaking the dividend into parts that each divide exactly by the divisor.",
+              "work": "\\\\(556 = 400 + 140 + 16\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 556 \\div 2 = 278\\\\)"
+              "explain": "Divide each part.",
+              "work": "\\\\(400 \\\\div 2 = 200 \\\\qquad 140 \\\\div 2 = 70 \\\\qquad 16 \\\\div 2 = 8\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 278\\\\)"
+              "explain": "Add the partial quotients, then check by multiplying back.",
+              "work": "\\\\(200 + 70 + 8 = 278 \\\\quad(278 \\\\times 2 = 556)\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -5433,7 +5469,7 @@
           "id": "y8-1b-backup-q36",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(540 \\div 4\\\\)",
+          "stem": "Calculate \\\\(540 \\\\div 4\\\\).",
           "options": [
             "135",
             "125",
@@ -5441,20 +5477,20 @@
             "130"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(540 \\div 4\\\\)",
-          "solution": "135",
+          "hint": "Break the dividend into chunks that divide exactly.",
+          "solution": "\\\\(540 \\\\div 4 = 135\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(540 \\div 4\\\\)"
+              "explain": "Divide by breaking the dividend into parts that each divide exactly by the divisor.",
+              "work": "\\\\(540 = 400 + 120 + 20\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 540 \\div 4 = 135\\\\)"
+              "explain": "Divide each part.",
+              "work": "\\\\(400 \\\\div 4 = 100 \\\\qquad 120 \\\\div 4 = 30 \\\\qquad 20 \\\\div 4 = 5\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 135\\\\)"
+              "explain": "Add the partial quotients, then check by multiplying back.",
+              "work": "\\\\(100 + 30 + 5 = 135 \\\\quad(135 \\\\times 4 = 540)\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -5464,7 +5500,7 @@
           "id": "y8-1b-backup-q37",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(8624 \\div 8\\\\)",
+          "stem": "Calculate \\\\(8624 \\\\div 8\\\\).",
           "options": [
             "1078",
             "1088",
@@ -5472,20 +5508,20 @@
             "178"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(8624 \\div 8\\\\)",
-          "solution": "1078",
+          "hint": "Break the dividend into chunks that divide exactly.",
+          "solution": "\\\\(8624 \\\\div 8 = 1078\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(8624 \\div 8\\\\)"
+              "explain": "Divide by breaking the dividend into parts that each divide exactly by the divisor.",
+              "work": "\\\\(8624 = 8000 + 560 + 64\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 8624 \\div 8 = 1078\\\\)"
+              "explain": "Divide each part.",
+              "work": "\\\\(8000 \\\\div 8 = 1000 \\\\qquad 560 \\\\div 8 = 70 \\\\qquad 64 \\\\div 8 = 8\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 1078\\\\)"
+              "explain": "Add the partial quotients, then check by multiplying back.",
+              "work": "\\\\(1000 + 70 + 8 = 1078 \\\\quad(1078 \\\\times 8 = 8624)\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -5495,7 +5531,7 @@
           "id": "y8-1b-backup-q38",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(498 \\div 6\\\\)",
+          "stem": "Calculate \\\\(498 \\\\div 6\\\\).",
           "options": [
             "83",
             "81",
@@ -5503,20 +5539,20 @@
             "73"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(498 \\div 6\\\\)",
-          "solution": "83",
+          "hint": "Break the dividend into chunks that divide exactly.",
+          "solution": "\\\\(498 \\\\div 6 = 83\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(498 \\div 6\\\\)"
+              "explain": "Divide by breaking the dividend into parts that each divide exactly by the divisor.",
+              "work": "\\\\(498 = 480 + 18\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 498 \\div 6 = 83\\\\)"
+              "explain": "Divide each part.",
+              "work": "\\\\(480 \\\\div 6 = 80 \\\\qquad 18 \\\\div 6 = 3\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 83\\\\)"
+              "explain": "Add the partial quotients, then check by multiplying back.",
+              "work": "\\\\(80 + 3 = 83 \\\\quad(83 \\\\times 6 = 498)\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -5526,7 +5562,7 @@
           "id": "y8-1b-backup-q39",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(4050 \\div 6\\\\)",
+          "stem": "Calculate \\\\(4050 \\\\div 6\\\\).",
           "options": [
             "675",
             "665",
@@ -5534,20 +5570,20 @@
             "655"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(4050 \\div 6\\\\)",
-          "solution": "675",
+          "hint": "Break the dividend into chunks that divide exactly.",
+          "solution": "\\\\(4050 \\\\div 6 = 675\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(4050 \\div 6\\\\)"
+              "explain": "Divide by breaking the dividend into parts that each divide exactly by the divisor.",
+              "work": "\\\\(4050 = 3600 + 420 + 30\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 4050 \\div 6 = 675\\\\)"
+              "explain": "Divide each part.",
+              "work": "\\\\(3600 \\\\div 6 = 600 \\\\qquad 420 \\\\div 6 = 70 \\\\qquad 30 \\\\div 6 = 5\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 675\\\\)"
+              "explain": "Add the partial quotients, then check by multiplying back.",
+              "work": "\\\\(600 + 70 + 5 = 675 \\\\quad(675 \\\\times 6 = 4050)\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -5557,7 +5593,7 @@
           "id": "y8-1b-backup-q40",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(1496 \\div 11\\\\)",
+          "stem": "Calculate \\\\(1496 \\\\div 11\\\\).",
           "options": [
             "136",
             "126",
@@ -5565,20 +5601,20 @@
             "134"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(1496 \\div 11\\\\)",
-          "solution": "136",
+          "hint": "Break the dividend into chunks that divide exactly.",
+          "solution": "\\\\(1496 \\\\div 11 = 136\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(1496 \\div 11\\\\)"
+              "explain": "Divide by breaking the dividend into parts that each divide exactly by the divisor.",
+              "work": "\\\\(1496 = 1100 + 330 + 66\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 1496 \\div 11 = 136\\\\)"
+              "explain": "Divide each part.",
+              "work": "\\\\(1100 \\\\div 11 = 100 \\\\qquad 330 \\\\div 11 = 30 \\\\qquad 66 \\\\div 11 = 6\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 136\\\\)"
+              "explain": "Add the partial quotients, then check by multiplying back.",
+              "work": "\\\\(100 + 30 + 6 = 136 \\\\quad(136 \\\\times 11 = 1496)\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -5588,7 +5624,7 @@
           "id": "y8-1b-backup-q41",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(78093 \\div 9\\\\)",
+          "stem": "Calculate \\\\(78093 \\\\div 9\\\\).",
           "options": [
             "8677",
             "8667",
@@ -5596,20 +5632,20 @@
             "8577"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(78093 \\div 9\\\\)",
-          "solution": "8677",
+          "hint": "Break the dividend into chunks that divide exactly.",
+          "solution": "\\\\(78093 \\\\div 9 = 8677\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(78093 \\div 9\\\\)"
+              "explain": "Divide by breaking the dividend into parts that each divide exactly by the divisor.",
+              "work": "\\\\(78093 = 72000 + 5400 + 630 + 63\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 78093 \\div 9 = 8677\\\\)"
+              "explain": "Divide each part.",
+              "work": "\\\\(72000 \\\\div 9 = 8000 \\\\qquad 5400 \\\\div 9 = 600 \\\\qquad 630 \\\\div 9 = 70 \\\\qquad 63 \\\\div 9 = 7\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 8677\\\\)"
+              "explain": "Add the partial quotients, then check by multiplying back.",
+              "work": "\\\\(8000 + 600 + 70 + 7 = 8677 \\\\quad(8677 \\\\times 9 = 78093)\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -5619,7 +5655,7 @@
           "id": "y8-1b-backup-q42",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(39240 \\div 9\\\\)",
+          "stem": "Calculate \\\\(39240 \\\\div 9\\\\).",
           "options": [
             "4360",
             "4260",
@@ -5627,20 +5663,20 @@
             "4350"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(39240 \\div 9\\\\)",
-          "solution": "4360",
+          "hint": "Break the dividend into chunks that divide exactly.",
+          "solution": "\\\\(39240 \\\\div 9 = 4360\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(39240 \\div 9\\\\)"
+              "explain": "Divide by breaking the dividend into parts that each divide exactly by the divisor.",
+              "work": "\\\\(39240 = 36000 + 2700 + 540\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 39240 \\div 9 = 4360\\\\)"
+              "explain": "Divide each part.",
+              "work": "\\\\(36000 \\\\div 9 = 4000 \\\\qquad 2700 \\\\div 9 = 300 \\\\qquad 540 \\\\div 9 = 60\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 4360\\\\)"
+              "explain": "Add the partial quotients, then check by multiplying back.",
+              "work": "\\\\(4000 + 300 + 60 = 4360 \\\\quad(4360 \\\\times 9 = 39240)\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -5650,7 +5686,7 @@
           "id": "y8-1b-backup-q43",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(6005 \\div 7\\\\)",
+          "stem": "Calculate \\\\(6005 \\\\div 7\\\\).",
           "options": [
             "857 r 6",
             "857 r 5",
@@ -5658,20 +5694,28 @@
             "847"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(6005 \\div 7\\\\)",
-          "solution": "857 r 6",
+          "hint": "Subtract multiples of the divisor until what is left is smaller than the divisor; that is the remainder.",
+          "solution": "\\\\(6005 \\\\div 7 = 857\\\\) remainder \\\\(6\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(6005 \\div 7\\\\)"
+              "explain": "Divide and keep going until what is left is smaller than the divisor.",
+              "work": "\\\\(6005 \\\\div 7\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 6005 \\div 7 = 857 r 6\\\\)"
+              "explain": "Take away the largest easy multiple of the divisor that still fits.",
+              "work": "\\\\(7 \\\\times 800 = 5600 \\\\quad\\\\Rightarrow\\\\quad 6005 - 5600 = 405\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 857 r 6\\\\)"
+              "explain": "Take away the largest easy multiple of the divisor that still fits.",
+              "work": "\\\\(7 \\\\times 50 = 350 \\\\quad\\\\Rightarrow\\\\quad 405 - 350 = 55\\\\)"
+            },
+            {
+              "explain": "Take away the largest easy multiple of the divisor that still fits.",
+              "work": "\\\\(7 \\\\times 7 = 49 \\\\quad\\\\Rightarrow\\\\quad 55 - 49 = 6\\\\)"
+            },
+            {
+              "explain": "What is left is smaller than the divisor, so it is the remainder. Check with divisor \\\\(\\\\times\\\\) quotient \\\\(+\\\\) remainder.",
+              "work": "\\\\(7 \\\\times 857 + 6 = 6005 \\\\;\\\\Rightarrow\\\\; 857\\\\text{ r }6\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -5681,7 +5725,7 @@
           "id": "y8-1b-backup-q44",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Calculate \\\\(9756 \\div 12\\\\)",
+          "stem": "Calculate \\\\(9756 \\\\div 12\\\\).",
           "options": [
             "813",
             "812",
@@ -5689,20 +5733,20 @@
             "803"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(9756 \\div 12\\\\)",
-          "solution": "813",
+          "hint": "Break the dividend into chunks that divide exactly.",
+          "solution": "\\\\(9756 \\\\div 12 = 813\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(9756 \\div 12\\\\)"
+              "explain": "Divide by breaking the dividend into parts that each divide exactly by the divisor.",
+              "work": "\\\\(9756 = 9600 + 120 + 36\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 9756 \\div 12 = 813\\\\)"
+              "explain": "Divide each part.",
+              "work": "\\\\(9600 \\\\div 12 = 800 \\\\qquad 120 \\\\div 12 = 10 \\\\qquad 36 \\\\div 12 = 3\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 813\\\\)"
+              "explain": "Add the partial quotients, then check by multiplying back.",
+              "work": "\\\\(800 + 10 + 3 = 813 \\\\quad(813 \\\\times 12 = 9756)\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -5712,7 +5756,7 @@
           "id": "y8-1b-backup-q45",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Calculate \\\\(828 \\div 13\\\\)",
+          "stem": "Calculate \\\\(828 \\\\div 13\\\\).",
           "options": [
             "63 rem 9",
             "63 rem 7",
@@ -5720,20 +5764,24 @@
             "62 rem 10"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(828 \\div 13\\\\)",
-          "solution": "63 r 9",
+          "hint": "Subtract multiples of the divisor until what is left is smaller than the divisor; that is the remainder.",
+          "solution": "\\\\(828 \\\\div 13 = 63\\\\) remainder \\\\(9\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(828 \\div 13\\\\)"
+              "explain": "Divide and keep going until what is left is smaller than the divisor.",
+              "work": "\\\\(828 \\\\div 13\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 828 \\div 13 = 63 r 9\\\\)"
+              "explain": "Take away the largest easy multiple of the divisor that still fits.",
+              "work": "\\\\(13 \\\\times 60 = 780 \\\\quad\\\\Rightarrow\\\\quad 828 - 780 = 48\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 63 r 9\\\\)"
+              "explain": "Take away the largest easy multiple of the divisor that still fits.",
+              "work": "\\\\(13 \\\\times 3 = 39 \\\\quad\\\\Rightarrow\\\\quad 48 - 39 = 9\\\\)"
+            },
+            {
+              "explain": "What is left is smaller than the divisor, so it is the remainder. Check with divisor \\\\(\\\\times\\\\) quotient \\\\(+\\\\) remainder.",
+              "work": "\\\\(13 \\\\times 63 + 9 = 828 \\\\;\\\\Rightarrow\\\\; 63\\\\text{ rem }9\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -5743,7 +5791,7 @@
           "id": "y8-1b-backup-q46",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Calculate \\\\(1050 \\div 16\\\\)",
+          "stem": "Calculate \\\\(1050 \\\\div 16\\\\).",
           "options": [
             "65 r 10",
             "65 r 8",
@@ -5751,20 +5799,24 @@
             "64"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(1050 \\div 16\\\\)",
-          "solution": "65 r 10",
+          "hint": "Subtract multiples of the divisor until what is left is smaller than the divisor; that is the remainder.",
+          "solution": "\\\\(1050 \\\\div 16 = 65\\\\) remainder \\\\(10\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(1050 \\div 16\\\\)"
+              "explain": "Divide and keep going until what is left is smaller than the divisor.",
+              "work": "\\\\(1050 \\\\div 16\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 1050 \\div 16 = 65 r 10\\\\)"
+              "explain": "Take away the largest easy multiple of the divisor that still fits.",
+              "work": "\\\\(16 \\\\times 60 = 960 \\\\quad\\\\Rightarrow\\\\quad 1050 - 960 = 90\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 65 r 10\\\\)"
+              "explain": "Take away the largest easy multiple of the divisor that still fits.",
+              "work": "\\\\(16 \\\\times 5 = 80 \\\\quad\\\\Rightarrow\\\\quad 90 - 80 = 10\\\\)"
+            },
+            {
+              "explain": "What is left is smaller than the divisor, so it is the remainder. Check with divisor \\\\(\\\\times\\\\) quotient \\\\(+\\\\) remainder.",
+              "work": "\\\\(16 \\\\times 65 + 10 = 1050 \\\\;\\\\Rightarrow\\\\; 65\\\\text{ r }10\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -5774,7 +5826,7 @@
           "id": "y8-1b-backup-q47",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Calculate \\\\(2344 \\div 16\\\\)",
+          "stem": "Calculate \\\\(2344 \\\\div 16\\\\).",
           "options": [
             "146 r 8",
             "146 r 4",
@@ -5782,20 +5834,28 @@
             "145"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(2344 \\div 16\\\\)",
-          "solution": "146 r 8",
+          "hint": "Subtract multiples of the divisor until what is left is smaller than the divisor; that is the remainder.",
+          "solution": "\\\\(2344 \\\\div 16 = 146\\\\) remainder \\\\(8\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(2344 \\div 16\\\\)"
+              "explain": "Divide and keep going until what is left is smaller than the divisor.",
+              "work": "\\\\(2344 \\\\div 16\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 2344 \\div 16 = 146 r 8\\\\)"
+              "explain": "Take away the largest easy multiple of the divisor that still fits.",
+              "work": "\\\\(16 \\\\times 100 = 1600 \\\\quad\\\\Rightarrow\\\\quad 2344 - 1600 = 744\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 146 r 8\\\\)"
+              "explain": "Take away the largest easy multiple of the divisor that still fits.",
+              "work": "\\\\(16 \\\\times 40 = 640 \\\\quad\\\\Rightarrow\\\\quad 744 - 640 = 104\\\\)"
+            },
+            {
+              "explain": "Take away the largest easy multiple of the divisor that still fits.",
+              "work": "\\\\(16 \\\\times 6 = 96 \\\\quad\\\\Rightarrow\\\\quad 104 - 96 = 8\\\\)"
+            },
+            {
+              "explain": "What is left is smaller than the divisor, so it is the remainder. Check with divisor \\\\(\\\\times\\\\) quotient \\\\(+\\\\) remainder.",
+              "work": "\\\\(16 \\\\times 146 + 8 = 2344 \\\\;\\\\Rightarrow\\\\; 146\\\\text{ r }8\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -5805,7 +5865,7 @@
           "id": "y8-1b-backup-q48",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Calculate \\\\(8554 \\div 17\\\\)",
+          "stem": "Calculate \\\\(8554 \\\\div 17\\\\).",
           "options": [
             "503 r 3",
             "503 r 1",
@@ -5813,20 +5873,24 @@
             "502"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(8554 \\div 17\\\\)",
-          "solution": "503 r 3",
+          "hint": "Subtract multiples of the divisor until what is left is smaller than the divisor; that is the remainder.",
+          "solution": "\\\\(8554 \\\\div 17 = 503\\\\) remainder \\\\(3\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(8554 \\div 17\\\\)"
+              "explain": "Divide and keep going until what is left is smaller than the divisor.",
+              "work": "\\\\(8554 \\\\div 17\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 8554 \\div 17 = 503 r 3\\\\)"
+              "explain": "Take away the largest easy multiple of the divisor that still fits.",
+              "work": "\\\\(17 \\\\times 500 = 8500 \\\\quad\\\\Rightarrow\\\\quad 8554 - 8500 = 54\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 503 r 3\\\\)"
+              "explain": "Take away the largest easy multiple of the divisor that still fits.",
+              "work": "\\\\(17 \\\\times 3 = 51 \\\\quad\\\\Rightarrow\\\\quad 54 - 51 = 3\\\\)"
+            },
+            {
+              "explain": "What is left is smaller than the divisor, so it is the remainder. Check with divisor \\\\(\\\\times\\\\) quotient \\\\(+\\\\) remainder.",
+              "work": "\\\\(17 \\\\times 503 + 3 = 8554 \\\\;\\\\Rightarrow\\\\; 503\\\\text{ r }3\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -5836,7 +5900,7 @@
           "id": "y8-1b-backup-q49",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Calculate \\\\(2806 \\div 23\\\\)",
+          "stem": "Calculate \\\\(2806 \\\\div 23\\\\).",
           "options": [
             "122",
             "121 r 23",
@@ -5844,20 +5908,20 @@
             "123"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(2806 \\div 23\\\\)",
-          "solution": "122",
+          "hint": "Break the dividend into chunks that divide exactly.",
+          "solution": "\\\\(2806 \\\\div 23 = 122\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(2806 \\div 23\\\\)"
+              "explain": "Divide by breaking the dividend into parts that each divide exactly by the divisor.",
+              "work": "\\\\(2806 = 2300 + 460 + 46\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 2806 \\div 23 = 122\\\\)"
+              "explain": "Divide each part.",
+              "work": "\\\\(2300 \\\\div 23 = 100 \\\\qquad 460 \\\\div 23 = 20 \\\\qquad 46 \\\\div 23 = 2\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 122\\\\)"
+              "explain": "Add the partial quotients, then check by multiplying back.",
+              "work": "\\\\(100 + 20 + 2 = 122 \\\\quad(122 \\\\times 23 = 2806)\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -5867,7 +5931,7 @@
           "id": "y8-1b-backup-q50",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Calculate \\\\(4042 \\div 19\\\\)",
+          "stem": "Calculate \\\\(4042 \\\\div 19\\\\).",
           "options": [
             "212 r 14",
             "212 r 12",
@@ -5875,20 +5939,28 @@
             "211"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(4042 \\div 19\\\\)",
-          "solution": "212 r 14",
+          "hint": "Subtract multiples of the divisor until what is left is smaller than the divisor; that is the remainder.",
+          "solution": "\\\\(4042 \\\\div 19 = 212\\\\) remainder \\\\(14\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(4042 \\div 19\\\\)"
+              "explain": "Divide and keep going until what is left is smaller than the divisor.",
+              "work": "\\\\(4042 \\\\div 19\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 4042 \\div 19 = 212 r 14\\\\)"
+              "explain": "Take away the largest easy multiple of the divisor that still fits.",
+              "work": "\\\\(19 \\\\times 200 = 3800 \\\\quad\\\\Rightarrow\\\\quad 4042 - 3800 = 242\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 212 r 14\\\\)"
+              "explain": "Take away the largest easy multiple of the divisor that still fits.",
+              "work": "\\\\(19 \\\\times 10 = 190 \\\\quad\\\\Rightarrow\\\\quad 242 - 190 = 52\\\\)"
+            },
+            {
+              "explain": "Take away the largest easy multiple of the divisor that still fits.",
+              "work": "\\\\(19 \\\\times 2 = 38 \\\\quad\\\\Rightarrow\\\\quad 52 - 38 = 14\\\\)"
+            },
+            {
+              "explain": "What is left is smaller than the divisor, so it is the remainder. Check with divisor \\\\(\\\\times\\\\) quotient \\\\(+\\\\) remainder.",
+              "work": "\\\\(19 \\\\times 212 + 14 = 4042 \\\\;\\\\Rightarrow\\\\; 212\\\\text{ r }14\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -5898,7 +5970,7 @@
           "id": "y8-1b-backup-q51",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Calculate \\\\(1498 \\div 18\\\\)",
+          "stem": "Calculate \\\\(1498 \\\\div 18\\\\).",
           "options": [
             "83 r 4",
             "83 r 2",
@@ -5906,20 +5978,24 @@
             "82"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(1498 \\div 18\\\\)",
-          "solution": "83 r 4",
+          "hint": "Subtract multiples of the divisor until what is left is smaller than the divisor; that is the remainder.",
+          "solution": "\\\\(1498 \\\\div 18 = 83\\\\) remainder \\\\(4\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(1498 \\div 18\\\\)"
+              "explain": "Divide and keep going until what is left is smaller than the divisor.",
+              "work": "\\\\(1498 \\\\div 18\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 1498 \\div 18 = 83 r 4\\\\)"
+              "explain": "Take away the largest easy multiple of the divisor that still fits.",
+              "work": "\\\\(18 \\\\times 80 = 1440 \\\\quad\\\\Rightarrow\\\\quad 1498 - 1440 = 58\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 83 r 4\\\\)"
+              "explain": "Take away the largest easy multiple of the divisor that still fits.",
+              "work": "\\\\(18 \\\\times 3 = 54 \\\\quad\\\\Rightarrow\\\\quad 58 - 54 = 4\\\\)"
+            },
+            {
+              "explain": "What is left is smaller than the divisor, so it is the remainder. Check with divisor \\\\(\\\\times\\\\) quotient \\\\(+\\\\) remainder.",
+              "work": "\\\\(18 \\\\times 83 + 4 = 1498 \\\\;\\\\Rightarrow\\\\; 83\\\\text{ r }4\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -5929,7 +6005,7 @@
           "id": "y8-1b-backup-q52",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Calculate \\\\(4708 \\div 19\\\\)",
+          "stem": "Calculate \\\\(4708 \\\\div 19\\\\).",
           "options": [
             "247 r 15",
             "247 r 13",
@@ -5937,20 +6013,28 @@
             "246"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(4708 \\div 19\\\\)",
-          "solution": "247 r 15",
+          "hint": "Subtract multiples of the divisor until what is left is smaller than the divisor; that is the remainder.",
+          "solution": "\\\\(4708 \\\\div 19 = 247\\\\) remainder \\\\(15\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Calculate \\\\(4708 \\div 19\\\\)"
+              "explain": "Divide and keep going until what is left is smaller than the divisor.",
+              "work": "\\\\(4708 \\\\div 19\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\( 4708 \\div 19 = 247 r 15\\\\)"
+              "explain": "Take away the largest easy multiple of the divisor that still fits.",
+              "work": "\\\\(19 \\\\times 200 = 3800 \\\\quad\\\\Rightarrow\\\\quad 4708 - 3800 = 908\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 247 r 15\\\\)"
+              "explain": "Take away the largest easy multiple of the divisor that still fits.",
+              "work": "\\\\(19 \\\\times 40 = 760 \\\\quad\\\\Rightarrow\\\\quad 908 - 760 = 148\\\\)"
+            },
+            {
+              "explain": "Take away the largest easy multiple of the divisor that still fits.",
+              "work": "\\\\(19 \\\\times 7 = 133 \\\\quad\\\\Rightarrow\\\\quad 148 - 133 = 15\\\\)"
+            },
+            {
+              "explain": "What is left is smaller than the divisor, so it is the remainder. Check with divisor \\\\(\\\\times\\\\) quotient \\\\(+\\\\) remainder.",
+              "work": "\\\\(19 \\\\times 247 + 15 = 4708 \\\\;\\\\Rightarrow\\\\; 247\\\\text{ r }15\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -5960,7 +6044,7 @@
           "id": "y8-1b-backup-q53",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Teams of \\\\(87\\\\). \\\\(128\\\\) schools. Total?",
+          "stem": "A sports carnival has teams of \\\\(87\\\\) students, and \\\\(128\\\\) schools each enter one team. How many students take part altogether?",
           "options": [
             "11136",
             "11036",
@@ -5968,20 +6052,24 @@
             "10136"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Teams of \\\\(87\\\\). \\\\(128\\\\) schools. Total?",
-          "solution": "11136",
+          "hint": "One team per school, so multiply the team size by the number of schools.",
+          "solution": "\\\\(87 \\\\times 128 = 11136\\\\), so there are \\\\(11136\\\\) students.",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Teams of \\\\(87\\\\). \\\\(128\\\\) schools. Total?"
+              "explain": "Equal groups mean multiplication. Each of the \\\\(128\\\\) schools brings \\\\(87\\\\) students.",
+              "work": "\\\\(87 \\\\times 128\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\(Teams of 87. 128 schools. Total? = 11136\\\\)"
+              "explain": "Multiply, keeping track of the partial products.",
+              "work": "\\\\(87 \\\\times 120 = 10440 \\\\qquad 87 \\\\times 8 = 696\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 11136\\\\)"
+              "explain": "Finish the multiplication and read off the total.",
+              "work": "\\\\(10440 + 696 = 11136\\\\)"
+            },
+            {
+              "explain": "The answer counts students, so state it with its units.",
+              "work": "\\\\(11136\\\\text{ students}\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -5991,7 +6079,7 @@
           "id": "y8-1b-backup-q54",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Hall: \\\\(30\\\\) rows, \\\\(28\\\\) seats. Total?",
+          "stem": "A hall is set out in \\\\(30\\\\) rows with \\\\(28\\\\) seats in each row. How many seats does the hall have?",
           "options": [
             "840",
             "740",
@@ -5999,20 +6087,24 @@
             "820"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Hall: \\\\(30\\\\) rows, \\\\(28\\\\) seats. Total?",
-          "solution": "840",
+          "hint": "Rows \\\\(\\\\times\\\\) seats per row.",
+          "solution": "\\\\(30 \\\\times 28 = 840\\\\), so there are \\\\(840\\\\) seats.",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Hall: \\\\(30\\\\) rows, \\\\(28\\\\) seats. Total?"
+              "explain": "Equal groups mean multiplication. Every row holds the same number of seats.",
+              "work": "\\\\(30 \\\\times 28\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\(Hall: 30 rows, 28 seats. Total? = 840\\\\)"
+              "explain": "Multiply, keeping track of the partial products.",
+              "work": "\\\\(30 \\\\times 20 = 600 \\\\qquad 30 \\\\times 8 = 240\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 840\\\\)"
+              "explain": "Finish the multiplication and read off the total.",
+              "work": "\\\\(600 + 240 = 840\\\\)"
+            },
+            {
+              "explain": "The answer counts seats, so state it with its units.",
+              "work": "\\\\(840\\\\text{ seats}\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -6022,7 +6114,7 @@
           "id": "y8-1b-backup-q55",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Apts: \\\\(44\\\\) floors, \\\\(18\\\\) per floor. Total?",
+          "stem": "An apartment block has \\\\(44\\\\) floors with \\\\(18\\\\) apartments on each floor. How many apartments are in the block?",
           "options": [
             "792",
             "782",
@@ -6030,20 +6122,24 @@
             "692"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Apts: \\\\(44\\\\) floors, \\\\(18\\\\) per floor. Total?",
-          "solution": "792",
+          "hint": "Floors \\\\(\\\\times\\\\) apartments per floor.",
+          "solution": "\\\\(44 \\\\times 18 = 792\\\\), so there are \\\\(792\\\\) apartments.",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Apts: \\\\(44\\\\) floors, \\\\(18\\\\) per floor. Total?"
+              "explain": "Equal groups mean multiplication. Every floor holds the same number of apartments.",
+              "work": "\\\\(44 \\\\times 18\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\(Apts: 44 floors, 18 per floor. Total? = 792\\\\)"
+              "explain": "Multiply, keeping track of the partial products.",
+              "work": "\\\\(44 \\\\times 10 = 440 \\\\qquad 44 \\\\times 8 = 352\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 792\\\\)"
+              "explain": "Finish the multiplication and read off the total.",
+              "work": "\\\\(440 + 352 = 792\\\\)"
+            },
+            {
+              "explain": "The answer counts apartments, so state it with its units.",
+              "work": "\\\\(792\\\\text{ apartments}\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -6053,7 +6149,7 @@
           "id": "y8-1b-backup-q56",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Car park: \\\\(34\\\\) rows, \\\\(42\\\\) spaces. Total?",
+          "stem": "A car park has \\\\(34\\\\) rows with \\\\(42\\\\) spaces in each row. How many spaces does the car park have?",
           "options": [
             "1428",
             "1328",
@@ -6061,20 +6157,24 @@
             "1418"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Car park: \\\\(34\\\\) rows, \\\\(42\\\\) spaces. Total?",
-          "solution": "1428",
+          "hint": "Rows \\\\(\\\\times\\\\) spaces per row.",
+          "solution": "\\\\(34 \\\\times 42 = 1428\\\\), so there are \\\\(1428\\\\) spaces.",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Car park: \\\\(34\\\\) rows, \\\\(42\\\\) spaces. Total?"
+              "explain": "Equal groups mean multiplication. Every row holds the same number of spaces.",
+              "work": "\\\\(34 \\\\times 42\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\(Car park: 34 rows, 42 spaces. Total? = 1428\\\\)"
+              "explain": "Multiply, keeping track of the partial products.",
+              "work": "\\\\(34 \\\\times 40 = 1360 \\\\qquad 34 \\\\times 2 = 68\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 1428\\\\)"
+              "explain": "Finish the multiplication and read off the total.",
+              "work": "\\\\(1360 + 68 = 1428\\\\)"
+            },
+            {
+              "explain": "The answer counts spaces, so state it with its units.",
+              "work": "\\\\(1428\\\\text{ spaces}\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -6084,7 +6184,7 @@
           "id": "y8-1b-backup-q57",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Tomatoes: \\\\(80 \\times 30 \\times 43\\\\). Total?",
+          "stem": "A grower plants \\\\(80\\\\) rows of tomatoes with \\\\(30\\\\) plants in each row, and each plant yields \\\\(43\\\\) tomatoes. How many tomatoes are produced altogether?",
           "options": [
             "103200",
             "102200",
@@ -6092,20 +6192,24 @@
             "93200"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Tomatoes: \\\\(80 \\times 30 \\times 43\\\\). Total?",
-          "solution": "103200",
+          "hint": "Find the number of plants first, then multiply by the yield per plant.",
+          "solution": "\\\\(80 \\\\times 30 \\\\times 43 = 103200\\\\), so there are \\\\(103200\\\\) tomatoes.",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Tomatoes: \\\\(80 \\times 30 \\times 43\\\\). Total?"
+              "explain": "Equal groups mean multiplication. Rows \\\\(\\\\times\\\\) plants per row gives the number of plants; multiply that by the yield.",
+              "work": "\\\\(80 \\\\times 30 \\\\times 43\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\(Tomatoes: 80 \\times 30 \\times 43. Total? = 103200\\\\)"
+              "explain": "Multiply, keeping track of the partial products.",
+              "work": "\\\\(80 \\\\times 30 = 2400\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 103200\\\\)"
+              "explain": "Finish the multiplication and read off the total.",
+              "work": "\\\\(2400 \\\\times 43 = 103200\\\\)"
+            },
+            {
+              "explain": "The answer counts tomatoes, so state it with its units.",
+              "work": "\\\\(103200\\\\text{ tomatoes}\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -6115,7 +6219,7 @@
           "id": "y8-1b-backup-q58",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Lights: \\\\(15 \\times (23 \\times 7 + 4 \\times 15)\\\\). Total?",
+          "stem": "A stage is lit by \\\\(15\\\\) identical lighting bars. Each bar carries \\\\(23\\\\) lamps of \\\\(7\\\\) watts and \\\\(4\\\\) lamps of \\\\(15\\\\) watts. What is the total power of all the lighting, in watts?",
           "options": [
             "3315",
             "3215",
@@ -6123,20 +6227,28 @@
             "3305"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Lights: \\\\(15 \\times (23 \\times 7 + 4 \\times 15)\\\\). Total?",
-          "solution": "3315",
+          "hint": "Work out the power of one bar first — brackets before the outer multiplication.",
+          "solution": "One bar draws \\\\(161 + 60 = 221\\\\) W, and \\\\(15 \\\\times 221 = 3315\\\\) W in total.",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Lights: \\\\(15 \\times (23 \\times 7 + 4 \\times 15)\\\\). Total?"
+              "explain": "Read the structure of the calculation: each bar has two groups of lamps, and there are \\\\(15\\\\) identical bars. The bracket must be worked out first.",
+              "work": "\\\\(15 \\\\times (23 \\\\times 7 + 4 \\\\times 15)\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\(Lights: 15 \\times (23 \\times 7 + 4 \\times 15). Total? = 3315\\\\)"
+              "explain": "Find the power of each group of lamps inside the bracket.",
+              "work": "\\\\(23 \\\\times 7 = 161 \\\\qquad 4 \\\\times 15 = 60\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 3315\\\\)"
+              "explain": "Add the two groups to get the power of a single bar.",
+              "work": "\\\\(161 + 60 = 221\\\\)"
+            },
+            {
+              "explain": "Multiply by the number of bars.",
+              "work": "\\\\(15 \\\\times 221 = 3315\\\\)"
+            },
+            {
+              "explain": "State the answer in watts.",
+              "work": "\\\\(3315\\\\text{ W}\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -6146,7 +6258,7 @@
           "id": "y8-1b-backup-q59",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "People: \\\\((192+234+203) \\times 5\\\\). Total?",
+          "stem": "Three stands at a stadium hold \\\\(192\\\\), \\\\(234\\\\) and \\\\(203\\\\) people. The stadium has \\\\(5\\\\) such sets of stands. How many people can it hold altogether?",
           "options": [
             "3145",
             "3045",
@@ -6154,20 +6266,24 @@
             "3135"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: People: \\\\((192+234+203) \\times 5\\\\). Total?",
-          "solution": "3145",
+          "hint": "Add the three stands first, then multiply by \\\\(5\\\\).",
+          "solution": "The three stands hold \\\\(629\\\\) people, and \\\\(629 \\\\times 5 = 3145\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "People: \\\\((192+234+203) \\times 5\\\\). Total?"
+              "explain": "The brackets group the three stands, so add them before multiplying.",
+              "work": "\\\\((192 + 234 + 203) \\\\times 5\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\(People: (192+234+203) \\times 5. Total? = 3145\\\\)"
+              "explain": "Add inside the bracket.",
+              "work": "\\\\(192 + 234 = 426 \\\\qquad 426 + 203 = 629\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 3145\\\\)"
+              "explain": "Multiply the bracket by \\\\(5\\\\).",
+              "work": "\\\\(629 \\\\times 5 = 3145\\\\)"
+            },
+            {
+              "explain": "State the answer.",
+              "work": "\\\\(3145\\\\text{ people}\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -6177,7 +6293,7 @@
           "id": "y8-1b-backup-q60",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Plan A: \\\\(33. Plan B: \\\\)149 \\times 0.24$. Cheaper?",
+          "stem": "Two phone plans are offered. Plan A costs a flat \\\\(\\\\$33\\\\) per month. Plan B charges \\\\(\\\\$0.24\\\\) per call for \\\\(149\\\\) calls. Which plan is cheaper for a month with \\\\(149\\\\) calls?",
           "options": [
             "Plan A",
             "Plan B",
@@ -6185,20 +6301,24 @@
             "None"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Plan A: \\\\(33. Plan B: \\\\)149 \\times 0.24$. Cheaper?",
-          "solution": "Plan A",
+          "hint": "Work out the cost of Plan B, then compare it with \\\\(\\\\$33\\\\).",
+          "solution": "Plan B costs \\\\(149 \\\\times \\\\$0.24 = \\\\$35.76\\\\), which is more than Plan A's \\\\(\\\\$33\\\\), so Plan A is cheaper.",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Plan A: \\\\(33. Plan B: \\\\)149 \\times 0.24$. Cheaper?"
+              "explain": "Plan A has a single fixed cost, so only Plan B needs calculating.",
+              "work": "\\\\(\\\\text{Plan A} = \\\\$33 \\\\qquad \\\\text{Plan B} = 149 \\\\times \\\\$0.24\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\(Plan A: 33. Plan B: 149 \\times 0.24. Cheaper? = Plan A\\\\)"
+              "explain": "Multiply to find Plan B's cost. Splitting \\\\(0.24\\\\) into \\\\(0.2 + 0.04\\\\) keeps it simple.",
+              "work": "\\\\(149 \\\\times 0.2 = 29.8 \\\\qquad 149 \\\\times 0.04 = 5.96\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = Plan A\\\\)"
+              "explain": "Add the two parts.",
+              "work": "\\\\(29.8 + 5.96 = 35.76\\\\)"
+            },
+            {
+              "explain": "Compare the two totals. The smaller cost is the cheaper plan.",
+              "work": "\\\\(\\\\$33 < \\\\$35.76 \\\\;\\\\Rightarrow\\\\; \\\\text{Plan A}\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -6208,7 +6328,7 @@
           "id": "y8-1b-backup-q61",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Mars-Jupiter distance: \\\\(11 \\times 51078090\\\\). Distance?",
+          "stem": "Jupiter is about \\\\(11\\\\) times as far from the Sun as Mars is. Mars is about \\\\(51\\\\,078\\\\,090\\\\) km from the Sun. Roughly how far is Jupiter from the Sun?",
           "options": [
             "561858990",
             "561758990",
@@ -6216,20 +6336,24 @@
             "562858990"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Mars-Jupiter distance: \\\\(11 \\times 51078090\\\\). Distance?",
-          "solution": "561858990",
+          "hint": "Multiplying by \\\\(11\\\\) is the same as multiplying by \\\\(10\\\\) and adding one more copy.",
+          "solution": "\\\\(51\\\\,078\\\\,090 \\\\times 11 = 561\\\\,858\\\\,990\\\\) km.",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Mars-Jupiter distance: \\\\(11 \\times 51078090\\\\). Distance?"
+              "explain": "\"Eleven times as far\" means multiply the Mars distance by \\\\(11\\\\).",
+              "work": "\\\\(51078090 \\\\times 11\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\(Mars-Jupiter distance: 11 \\times 51078090. Distance? = 561858990\\\\)"
+              "explain": "Multiplying by \\\\(11\\\\) is \\\\(\\\\times 10\\\\) plus one more copy of the number.",
+              "work": "\\\\(51078090 \\\\times 10 = 510780900 \\\\qquad 51078090 \\\\times 1 = 51078090\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 561858990\\\\)"
+              "explain": "Add the two partial products.",
+              "work": "\\\\(510780900 + 51078090 = 561858990\\\\)"
+            },
+            {
+              "explain": "State the distance in kilometres.",
+              "work": "\\\\(561858990\\\\text{ km}\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -6239,7 +6363,7 @@
           "id": "y8-1b-backup-q62",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Tony car: \\\\(45600\\\\) cash OR \\\\(11500+1650 \\times 24\\\\). Extra?",
+          "stem": "Tony can buy a car for \\\\(\\\\$45\\\\,600\\\\) cash, or pay a \\\\(\\\\$11\\\\,500\\\\) deposit plus \\\\(24\\\\) monthly payments of \\\\(\\\\$1650\\\\). How much extra does he pay by choosing the monthly plan?",
           "options": [
             "5500",
             "4500",
@@ -6247,20 +6371,24 @@
             "5400"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Tony car: \\\\(45600\\\\) cash OR \\\\(11500+1650 \\times 24\\\\). Extra?",
-          "solution": "5500",
+          "hint": "Total the deposit and the 24 payments, then subtract the cash price.",
+          "solution": "The plan costs \\\\(\\\\$11\\\\,500 + \\\\$39\\\\,600 = \\\\$51\\\\,100\\\\), which is \\\\(\\\\$5500\\\\) more than \\\\(\\\\$45\\\\,600\\\\) cash.",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Tony car: \\\\(45600\\\\) cash OR \\\\(11500+1650 \\times 24\\\\). Extra?"
+              "explain": "Find the total cost of the monthly plan: the deposit plus all the payments.",
+              "work": "\\\\(11500 + 1650 \\\\times 24\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\(Tony car: 45600 cash OR 11500+1650 \\times 24. Extra? = 5500\\\\)"
+              "explain": "Multiply before adding — work out the \\\\(24\\\\) payments first.",
+              "work": "\\\\(1650 \\\\times 24 = 1650 \\\\times 20 + 1650 \\\\times 4 = 33000 + 6600 = 39600\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 5500\\\\)"
+              "explain": "Add the deposit to get the plan's total cost.",
+              "work": "\\\\(11500 + 39600 = 51100\\\\)"
+            },
+            {
+              "explain": "\"How much extra\" is a difference, so subtract the cash price.",
+              "work": "\\\\(51100 - 45600 = 5500\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -6270,7 +6398,7 @@
           "id": "y8-1b-backup-q63",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Potatoes: \\\\(84\\\\) kg into \\\\(4\\\\) kg bags. Bags?",
+          "stem": "A farmer has \\\\(84\\\\) kg of potatoes to pack into \\\\(4\\\\) kg bags. How many bags can be filled?",
           "options": [
             "21",
             "22",
@@ -6278,20 +6406,24 @@
             "19"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Potatoes: \\\\(84\\\\) kg into \\\\(4\\\\) kg bags. Bags?",
-          "solution": "21",
+          "hint": "Sharing a total into equal amounts is division.",
+          "solution": "\\\\(84 \\\\div 4 = 21\\\\), so \\\\(21\\\\) bags can be filled.",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Potatoes: \\\\(84\\\\) kg into \\\\(4\\\\) kg bags. Bags?"
+              "explain": "Packing a total into equal-sized bags is a division.",
+              "work": "\\\\(84 \\\\div 4\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\(Potatoes: 84 kg into 4 kg bags. Bags? = 21\\\\)"
+              "explain": "Split \\\\(84\\\\) into parts that divide by \\\\(4\\\\) easily.",
+              "work": "\\\\(84 = 80 + 4 \\\\qquad 80 \\\\div 4 = 20 \\\\qquad 4 \\\\div 4 = 1\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 21\\\\)"
+              "explain": "Add the two quotients.",
+              "work": "\\\\(20 + 1 = 21\\\\)"
+            },
+            {
+              "explain": "Check by multiplying back, then state the answer in bags.",
+              "work": "\\\\(21 \\\\times 4 = 84 \\\\;\\\\Rightarrow\\\\; 21\\\\text{ bags}\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -6301,7 +6433,7 @@
           "id": "y8-1b-backup-q64",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Humbugs: \\\\(18750\\\\). a. bags of 12? b. bags of 40?",
+          "stem": "A factory has \\\\(18\\\\,750\\\\) humbugs to pack. Give the number of full bags and the number left over when they are packed (a) into bags of \\\\(12\\\\), and (b) into bags of \\\\(40\\\\).",
           "options": [
             "a: 1562 r 6, b: 468 r 30",
             "a: 1562 r 4",
@@ -6309,20 +6441,28 @@
             "a: 1563"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Humbugs: \\\\(18750\\\\). a. bags of 12? b. bags of 40?",
-          "solution": "a:1562 r 6, b:468 r 30",
+          "hint": "Divide twice, and keep the remainder each time — it is the sweets left over.",
+          "solution": "\\\\(18\\\\,750 \\\\div 12 = 1562\\\\) remainder \\\\(6\\\\); \\\\(18\\\\,750 \\\\div 40 = 468\\\\) remainder \\\\(30\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Humbugs: \\\\(18750\\\\). a. bags of 12? b. bags of 40?"
+              "explain": "Each part is a division with a remainder: the quotient counts full bags and the remainder counts the sweets left over.",
+              "work": "\\\\(18750 \\\\div 12 \\\\qquad\\\\text{and}\\\\qquad 18750 \\\\div 40\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\(Humbugs: 18750. a. bags of 12? b. bags of 40? = a:1562 r 6, b:468 r 30\\\\)"
+              "explain": "Part (a): divide by \\\\(12\\\\).",
+              "work": "\\\\(12 \\\\times 1500 = 18000 \\\\quad\\\\Rightarrow\\\\quad 18750 - 18000 = 750\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = a:1562 r 6, b:468 r 30\\\\)"
+              "explain": "Continue until what is left is smaller than \\\\(12\\\\).",
+              "work": "\\\\(12 \\\\times 62 = 744 \\\\quad\\\\Rightarrow\\\\quad 750 - 744 = 6 \\\\;\\\\Rightarrow\\\\; 1562\\\\text{ r }6\\\\)"
+            },
+            {
+              "explain": "Part (b): divide by \\\\(40\\\\) the same way.",
+              "work": "\\\\(40 \\\\times 468 = 18720 \\\\quad\\\\Rightarrow\\\\quad 18750 - 18720 = 30 \\\\;\\\\Rightarrow\\\\; 468\\\\text{ r }30\\\\)"
+            },
+            {
+              "explain": "Check each with \\\\(\\\\text{divisor} \\\\times \\\\text{quotient} + \\\\text{remainder}\\\\).",
+              "work": "\\\\(12 \\\\times 1562 + 6 = 18750 \\\\qquad 40 \\\\times 468 + 30 = 18750\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -6332,7 +6472,7 @@
           "id": "y8-1b-backup-q65",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Planet days: \\\\(3600\\\\). a. 6-d weeks? b. 8-d weeks? c. 10-d weeks? d. Weeks in 150-d month?",
+          "stem": "A year on a certain planet is \\\\(3600\\\\) days. How many whole weeks are in a year if a week is (a) \\\\(6\\\\) days, (b) \\\\(8\\\\) days, (c) \\\\(10\\\\) days? (d) For each of those week lengths, how many weeks fit into a \\\\(150\\\\)-day month?",
           "options": [
             "a:600, b:450, c:360, d:25, 18.75, 15",
             "a:600, b:450, c:360, d:25, 20, 15",
@@ -6340,20 +6480,24 @@
             "a:500"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Planet days: \\\\(3600\\\\). a. 6-d weeks? b. 8-d weeks? c. 10-d weeks? d. Weeks in 150-d month?",
-          "solution": "600, 450, 360, d:25/18.75/15",
+          "hint": "Divide the number of days by the length of a week each time.",
+          "solution": "A year holds \\\\(600\\\\), \\\\(450\\\\) and \\\\(360\\\\) weeks; a \\\\(150\\\\)-day month holds \\\\(25\\\\), \\\\(18.75\\\\) and \\\\(15\\\\).",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Planet days: \\\\(3600\\\\). a. 6-d weeks? b. 8-d weeks? c. 10-d weeks? d. Weeks in 150-d month?"
+              "explain": "Each part divides a number of days by the length of one week.",
+              "work": "\\\\(3600 \\\\div 6, \\\\quad 3600 \\\\div 8, \\\\quad 3600 \\\\div 10\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\(Planet days: 3600. a. 6-d weeks? b. 8-d weeks? c. 10-d weeks? d. Weeks in 150-d month? = 600, 450, 360, d:25/18.75/15\\\\)"
+              "explain": "Parts (a) to (c): divide the \\\\(3600\\\\)-day year by each week length.",
+              "work": "\\\\(3600 \\\\div 6 = 600 \\\\qquad 3600 \\\\div 8 = 450 \\\\qquad 3600 \\\\div 10 = 360\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 600, 450, 360, d:25/18.75/15\\\\)"
+              "explain": "Part (d): divide the \\\\(150\\\\)-day month by the same three week lengths.",
+              "work": "\\\\(150 \\\\div 6 = 25 \\\\qquad 150 \\\\div 8 = 18.75 \\\\qquad 150 \\\\div 10 = 15\\\\)"
+            },
+            {
+              "explain": "Note that \\\\(150\\\\) is not a multiple of \\\\(8\\\\), so an \\\\(8\\\\)-day week does not fit a whole number of times into the month.",
+              "work": "\\\\(8 \\\\times 18 = 144 \\\\quad\\\\Rightarrow\\\\quad 150 - 144 = 6\\\\text{ days left over}\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -6363,7 +6507,7 @@
           "id": "y8-1b-backup-q66",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Clock: \\\\(864\\\\) hours. How many cycles?",
+          "stem": "A \\\\(12\\\\)-hour clock face is passed by the hour hand once every \\\\(12\\\\) hours. How many complete cycles does the hour hand make in \\\\(864\\\\) hours?",
           "options": [
             "72",
             "62",
@@ -6371,20 +6515,24 @@
             "70"
           ],
           "answer": 0,
-          "hint": "Follow the order of operations and calculate step by step: Clock: \\\\(864\\\\) hours. How many cycles?",
-          "solution": "72",
+          "hint": "One cycle is \\\\(12\\\\) hours, so divide the total hours by \\\\(12\\\\).",
+          "solution": "\\\\(864 \\\\div 12 = 72\\\\), so the hour hand makes \\\\(72\\\\) complete cycles.",
           "steps": [
             {
-              "explain": "Identify the mathematical values and operations required by the question.",
-              "work": "Clock: \\\\(864\\\\) hours. How many cycles?"
+              "explain": "One complete cycle of a \\\\(12\\\\)-hour clock takes \\\\(12\\\\) hours, so divide the total time by \\\\(12\\\\).",
+              "work": "\\\\(864 \\\\div 12\\\\)"
             },
             {
-              "explain": "Carry out the operations step-by-step.",
-              "work": "\\\\(Clock: 864 hours. How many cycles? = 72\\\\)"
+              "explain": "Split \\\\(864\\\\) into parts that divide by \\\\(12\\\\) exactly.",
+              "work": "\\\\(864 = 840 + 24 \\\\qquad 840 \\\\div 12 = 70 \\\\qquad 24 \\\\div 12 = 2\\\\)"
             },
             {
-              "explain": "Confirm the calculated value against the options.",
-              "work": "\\\\(\\text{Result} = 72\\\\)"
+              "explain": "Add the two quotients.",
+              "work": "\\\\(70 + 2 = 72\\\\)"
+            },
+            {
+              "explain": "Check by multiplying back, then state the answer.",
+              "work": "\\\\(72 \\\\times 12 = 864 \\\\;\\\\Rightarrow\\\\; 72\\\\text{ cycles}\\\\)"
             }
           ],
           "timeLimit": 90,

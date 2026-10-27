@@ -43960,7 +43960,8 @@
               "text": "average",
               "note": "Sharing into equal groups — divide the total by the number (or size) of the groups."
             }
-          ]
+          ],
+          "solution": "\\(5642 \\div 7 = 806\\) exactly, since \\(7 \\times 806 = 5642\\). Each zone gets \\(806\\) saplings and none are left over, so the answer is \\(806\\text{ r }0\\)."
         },
         {
           "id": "y7-1j-h4",

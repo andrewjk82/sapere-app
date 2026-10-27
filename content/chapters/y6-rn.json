@@ -122,7 +122,8 @@
               "work": "\\\\(\\text{Result} = \\\\text{Tenths}\\\\)"
             }
           ],
-          "xp": 1
+          "xp": 1,
+          "solution": "In \\\\(53.72\\\\) the digit \\\\(7\\\\) is the first digit after the decimal point, so it sits in the tenths place and stands for \\\\(\\\\frac{7}{10} = 0.7\\\\)."
         },
         {
           "id": "y6-rn-2-q2b",
@@ -151,7 +152,8 @@
               "work": "\\\\(\\text{Result} = \\\\text{Hundredths}\\\\)"
             }
           ],
-          "xp": 1
+          "xp": 1,
+          "solution": "In \\\\(631.079\\\\) the digit \\\\(7\\\\) is the second digit after the decimal point, so it sits in the hundredths place and stands for \\\\(\\\\frac{7}{100} = 0.07\\\\)."
         },
         {
           "id": "y6-rn-2-q2c",
@@ -180,7 +182,8 @@
               "work": "\\\\(\\text{Result} = \\\\text{Tens}\\\\)"
             }
           ],
-          "xp": 1
+          "xp": 1,
+          "solution": "In \\\\(73.5\\\\) the digit \\\\(7\\\\) is two places left of the decimal point, so it sits in the tens place and stands for \\\\(7 \\\\times 10 = 70\\\\)."
         },
         {
           "id": "y6-rn-2-q2d",
@@ -354,7 +357,8 @@
               "work": "\\\\(\\text{Result} = \\\\frac{7}{100}\\\\)"
             }
           ],
-          "xp": 1
+          "xp": 1,
+          "solution": "\\\\(0.07\\\\) is seven hundredths, so as a fraction it is \\\\(\\\\frac{7}{100}\\\\)."
         },
         {
           "id": "y6-rn-2-q4d",
@@ -412,7 +416,8 @@
               "work": "\\\\(\\text{Result} = 0.6\\\\)"
             }
           ],
-          "xp": 1
+          "xp": 1,
+          "solution": "\\\\(\\\\frac{6}{10}\\\\) is six tenths, and tenths are the first decimal place, so it is \\\\(0.6\\\\)."
         },
         {
           "id": "y6-rn-2-q5b",
@@ -441,7 +446,8 @@
               "work": "\\\\(\\text{Result} = 0.23\\\\)"
             }
           ],
-          "xp": 1
+          "xp": 1,
+          "solution": "\\\\(\\\\frac{23}{100}\\\\) is twenty-three hundredths, and hundredths fill the first two decimal places, so it is \\\\(0.23\\\\)."
         },
         {
           "id": "y6-rn-2-q5c",
@@ -470,7 +476,8 @@
               "work": "\\\\(\\text{Result} = 0.007\\\\)"
             }
           ],
-          "xp": 1
+          "xp": 1,
+          "solution": "\\\\(\\\\frac{7}{1000}\\\\) is seven thousandths, so the \\\\(7\\\\) goes in the third decimal place: \\\\(0.007\\\\)."
         },
         {
           "id": "y6-rn-2-q5d",
@@ -644,7 +651,8 @@
               "work": "\\\\(\\text{Result} = \\\\text{Hundredths}\\\\)"
             }
           ],
-          "xp": 1
+          "xp": 1,
+          "solution": "In \\\\(4.031\\\\) the digit \\\\(3\\\\) is the second digit after the decimal point, so it sits in the hundredths place and stands for \\\\(\\\\frac{3}{100} = 0.03\\\\)."
         },
         {
           "id": "y6-rn-2-l2-q1b",
@@ -673,7 +681,8 @@
               "work": "\\\\(\\text{Result} = \\\\text{Tenths}\\\\)"
             }
           ],
-          "xp": 1
+          "xp": 1,
+          "solution": "In \\\\(17.3\\\\) the digit \\\\(3\\\\) is the first digit after the decimal point, so it sits in the tenths place and stands for \\\\(\\\\frac{3}{10} = 0.3\\\\)."
         },
         {
           "id": "y6-rn-2-l2-q1c",
@@ -702,7 +711,8 @@
               "work": "\\\\(\\text{Result} = \\\\text{Tens}\\\\)"
             }
           ],
-          "xp": 1
+          "xp": 1,
+          "solution": "In \\\\(137.02\\\\) the digit \\\\(3\\\\) is two places left of the decimal point, so it sits in the tens place and stands for \\\\(3 \\\\times 10 = 30\\\\)."
         },
         {
           "id": "y6-rn-2-l2-q1d",
@@ -731,7 +741,8 @@
               "work": "\\\\(\\text{Result} = \\\\text{Thousandths}\\\\)"
             }
           ],
-          "xp": 1
+          "xp": 1,
+          "solution": "In \\\\(18.673\\\\) the digit \\\\(3\\\\) is the third digit after the decimal point, so it sits in the thousandths place and stands for \\\\(\\\\frac{3}{1000} = 0.003\\\\)."
         },
         {
           "id": "y6-rn-2-l2-q2a",
@@ -1428,7 +1439,8 @@
               "work": "\\\\(\\text{Result} = 1.5\\\\text{ kg}\\\\)"
             }
           ],
-          "xp": 2
+          "xp": 2,
+          "solution": "\"Of\" means multiply: \\\\(0.3 \\\\times 5 = 1.5\\\\), so the answer is \\\\(1.5\\\\text{ kg}\\\\)."
         },
         {
           "id": "y6-rn-2-l3-q11c",
@@ -2668,7 +2680,8 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 1
+          "xp": 1,
+          "solution": "\\\\(1\\\\text{ kg} = 1000\\\\text{ g}\\\\), and \\\\(10\\\\%\\\\) is one tenth, so \\\\(1000 \\\\div 10 = 100\\\\text{ g}\\\\)."
         },
         {
           "id": "y6-rn-3-l1-q7b",
@@ -2702,7 +2715,8 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 1
+          "xp": 1,
+          "solution": "\\\\(1\\\\text{ L} = 1000\\\\text{ mL}\\\\), and \\\\(25\\\\% = \\\\frac{1}{4}\\\\), so \\\\(1000 \\\\div 4 = 250\\\\text{ mL}\\\\)."
         },
         {
           "id": "y6-rn-3-l1-q7c",
@@ -2736,7 +2750,8 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 1
+          "xp": 1,
+          "solution": "\\\\(\\\\$2.00 = 200\\\\text{ cents}\\\\), and \\\\(60\\\\% = \\\\frac{60}{100}\\\\), so \\\\(\\\\frac{60}{100} \\\\times 200 = 120\\\\text{ cents}\\\\)."
         },
         {
           "id": "y6-rn-3-l1-q7d",
@@ -2770,7 +2785,8 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 1
+          "xp": 1,
+          "solution": "\\\\(2\\\\text{ m} = 200\\\\text{ cm}\\\\), and \\\\(75\\\\% = \\\\frac{3}{4}\\\\), so \\\\(200 \\\\div 4 \\\\times 3 = 150\\\\text{ cm}\\\\)."
         }
       ]
     }
