@@ -1,9 +1,14 @@
 /**
- * Answer-display verification: every MC seed, through every surface's logic.
+ * Answer-display verification: every MC question, through every surface's logic.
  *
- * Local only — zero Firestore reads. For each of the ~11k multiple-choice
- * seeds (main questions AND sub-questions) this builds the exact Firestore
- * doc chapterSeeder writes, then replays the resolution each surface performs:
+ * Local only — zero Firestore reads. The source is content/chapters/*.json (the
+ * canonical bank) put through content/legacy.js's `toLegacy`, which is the exact
+ * shape contentLoader hands the UI. It used to read src/constants/seed* and
+ * rebuild "the doc chapterSeeder writes"; both the seeds and the seeder are gone
+ * (2026-10, P5), so the sweep now certifies what students actually get served.
+ *
+ * For each multiple-choice question (main questions AND sub-questions) it
+ * replays the resolution each surface performs:
  *
  *   A. Question Bank preview / PDF answer key (unshuffled, authored order):
  *      exactly the authored option — and no other — is marked "Correct".
@@ -12,8 +17,7 @@
  *      raw 0-based index.
  *   C. Student quiz (shuffled): the student who picks the authored option is
  *      graded correct and sees it highlighted; an unrelated option is never
- *      highlighted. (Also covered per-seed by audit:mc-seeds; repeated here so
- *      this script alone certifies a surface sweep.)
+ *      highlighted.
  *
  * Duplicate/equivalent options (the 615 known data faults) are exempt from
  * "no other option marked" — both copies SHOULD light up; the assertion there
@@ -21,7 +25,9 @@
  *
  * Usage: npm run test:answer-displays
  */
-import { CHAPTER_SEED_REGISTRY } from '../src/constants/curriculumSeeds.js';
+import { readdirSync, readFileSync } from 'node:fs';
+import { join } from 'node:path';
+import { toLegacy } from '../content/legacy.js';
 import { toDisplayText } from '../src/utils/mathPreprocess.js';
 import { answersMatch } from '../src/utils/answerMatching.js';
 import {
@@ -34,7 +40,7 @@ import {
 
 const optText = (o) => (typeof o === 'object' && o !== null ? o.text : o);
 
-// chapterSeeder's resolution (post-fix: throws on miss, so only >=0 shapes ship)
+// Resolve an authored answer (an option index, as `toLegacy` emits it) to its position.
 const seederResolve = (rawOpts, rawCorrect) => {
   let correct = rawCorrect;
   if (rawOpts.length > 0 && (typeof correct === 'number' || (typeof correct === 'string' && /^\d+$/.test(correct)))) {
@@ -44,7 +50,7 @@ const seederResolve = (rawOpts, rawCorrect) => {
   return rawOpts.findIndex((o) => String(optText(o)).trim() === String(correct).trim());
 };
 
-// The doc chapterSeeder writes (authored order, index answer, isManual).
+// The doc shape every surface receives (authored order, index answer, isManual).
 const toFirestoreDoc = (rawOpts, authoredIdx) => ({
   type: 'multiple_choice',
   isManual: true,
@@ -55,7 +61,8 @@ const toFirestoreDoc = (rawOpts, authoredIdx) => ({
 });
 
 let checked = 0;
-let skippedBroken = 0;
+let skippedBroken = 0;   // answer resolves to no option at all → a real content defect
+let skippedFigure = 0;   // every option is a figure with empty text → see the note above
 const failures = [];
 const fail = (id, surface, why) => failures.push({ id, surface, why });
 
@@ -70,7 +77,14 @@ const checkOne = (raw, id) => {
   const authoredIdx = seederResolve(rawOpts, raw.a ?? raw.answer ?? raw.solution);
   const authoredText = authoredIdx >= 0 ? optText(rawOpts[authoredIdx]) : null;
   if (authoredIdx < 0 || !answersMatch(authoredText, authoredText)) {
-    skippedBroken += 1; // known-broken data, gated out of Firestore by the seeder
+    // Resolution here is by option TEXT, so a "choose the correct graph" question —
+    // four figure options with empty text — cannot be placed and is counted apart
+    // from questions that genuinely have no key. Covering those needs the index
+    // path and would change what the shuffle assertions mean, so it is deliberately
+    // left out rather than made to pass vacuously.
+    if (rawOpts.every((o) => !String(optText(o) || '').trim())) skippedFigure += 1;
+    else skippedBroken += 1;
+    if (process.env.SHOW_UNRESOLVABLE) console.error('  unresolvable:', id);
     return;
   }
   checked += 1;
@@ -134,18 +148,42 @@ const checkOne = (raw, id) => {
   }
 };
 
-for (const entry of CHAPTER_SEED_REGISTRY) {
-  if (!Array.isArray(entry?.seed)) continue;
-  entry.seed.forEach((raw, i) => {
-    const id = raw?.id || `${entry.topicId}#${i}`;
-    checkOne(raw, id);
-    (raw?.subQuestions || []).forEach((sq, si) => checkOne(sq, `${id}.sub[${si}]`));
+const DIR = new URL('../content/chapters/', import.meta.url).pathname;
+let files = 0;
+
+const walkLegacy = (d, id) => {
+  checkOne(d, id);
+  (d?.subQuestions || []).forEach((sq, si) => walkLegacy(sq, `${id}.sub[${si}]`));
+};
+
+// Every question in the file, wherever the schema puts it (chapter topics, exam
+// papers, bare question lists), converted through the UI boundary.
+const collect = (node, out) => {
+  if (Array.isArray(node)) { node.forEach((n) => collect(n, out)); return; }
+  if (!node || typeof node !== 'object') return;
+  if (node.id && (node.stem !== undefined || node.options !== undefined)) out.push(node);
+  for (const v of Object.values(node)) collect(v, out);
+};
+
+for (const name of readdirSync(DIR).filter((f) => f.endsWith('.json')).sort()) {
+  const chapter = JSON.parse(readFileSync(join(DIR, name), 'utf8'));
+  files += 1;
+  const found = [];
+  collect(chapter.topics ?? chapter.questions ?? chapter, found);
+  // `parts` are reached through toLegacy's own subQuestions, so skip them here.
+  const partIds = new Set();
+  const markParts = (q) => (q.parts || []).forEach((p) => { partIds.add(p); markParts(p); });
+  found.forEach(markParts);
+  found.filter((q) => !partIds.has(q)).forEach((q, i) => {
+    walkLegacy(toLegacy(q), q.id || `${name}#${i}`);
   });
 }
 
 console.log('\nAnswer-display sweep (local only — zero Firestore reads)\n');
-console.log(`  seeds checked : ${checked} (main + sub-question MCQs)`);
-console.log(`  known-broken  : ${skippedBroken} (gated out of Firestore by the seeder — never shown)`);
+console.log(`  chapter files : ${files}`);
+console.log(`  MCQs checked  : ${checked} (main + sub-question MCQs)`);
+console.log(`  no answer key : ${skippedBroken} (MC whose answer matches no option — real defects)`);
+console.log(`  figure options: ${skippedFigure} (all options are graphs; not resolvable by text)`);
 
 if (failures.length === 0) {
   console.log('\n  ok  bank preview & PDF answer key mark exactly the authored option');

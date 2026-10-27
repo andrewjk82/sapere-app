@@ -30,17 +30,10 @@ export default defineConfig({
       // Excluding them from the client bundle prevents build errors and
       // keeps the bundle size small.
       external: ['firebase-admin', 'nodemailer', 'jsdom'],
-      output: {
-        manualChunks(id) {
-          if (id.includes('src/constants/seed')) {
-            const match = id.match(/seed(Year\d+[^/.]+)/i);
-            if (match) {
-              return `seeds-${match[1].toLowerCase()}`;
-            }
-            return 'seeds-misc';
-          }
-        }
-      }
+      // manualChunks used to split src/constants/seed* into per-chapter chunks so
+      // 40MB of question seeds did not land in one bundle. Those files are gone
+      // (2026-10) — question content is fetched from the CDN at runtime — so there
+      // is nothing left to split.
     },
   },
 })

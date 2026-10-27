@@ -5,54 +5,60 @@
  * hscPastPaperEnabled:true, so Daily Challenge can mix in HSC trial-paper
  * questions without needing per-question curriculum chapter mapping.
  *
- * Unions question_index/{chapterId}.ids across every exam:* chapter
- * registered in curriculumSeeds.js (CHAPTER_SEED_REGISTRY).
+ * Unions the question ids of every `content/chapters/exam:*.json` chapter.
  *
- * Re-run this after adding/removing questions in any exam:* chapter, or
- * after registering a new past-paper chapter.
+ * It used to union `question_index/{chapterId}.ids` over the chapters listed in
+ * curriculumSeeds.js. Both of those are gone: question content lives in
+ * content/chapters/*.json (git) and nothing has maintained question_index since
+ * the 2026-09 migration, so the old version was unioning a frozen index. Reading
+ * the content files costs nothing and is the same source students are served.
  *
  * Usage: node tools/scripts/rebuildHscPastPaperPool.mjs
  */
-import { readFileSync } from 'fs';
+import { readFileSync, readdirSync } from 'fs';
+import { join } from 'path';
 import { initializeApp, cert } from 'firebase-admin/app';
 import { getFirestore, FieldValue } from 'firebase-admin/firestore';
-import { CHAPTER_SEED_REGISTRY } from '../../src/constants/curriculumSeeds.js';
 
-const serviceAccount = JSON.parse(readFileSync('/Users/andrewkim/Downloads/sapere-fe23e-firebase-adminsdk-fbsvc-d9dd93623b.json', 'utf8'));
-initializeApp({ credential: cert(serviceAccount) });
-const db = getFirestore();
+const KEY = new URL('../../.secrets/sapere-fe23e-firebase-adminsdk-fbsvc-d9dd93623b.json', import.meta.url).pathname;
+const DIR = new URL('../../content/chapters/', import.meta.url).pathname;
 
-const examChapterIds = CHAPTER_SEED_REGISTRY
-  .filter((c) => typeof c.chapterId === 'string' && c.chapterId.startsWith('exam:'))
-  .map((c) => c.chapterId);
+/** Every question id in the file, at any depth (topics, exam sections, parts). */
+const collectIds = (node, out) => {
+  if (Array.isArray(node)) { node.forEach((n) => collectIds(n, out)); return out; }
+  if (!node || typeof node !== 'object') return out;
+  if (typeof node.id === 'string' && (node.stem !== undefined || node.options !== undefined)) out.add(node.id);
+  for (const v of Object.values(node)) collectIds(v, out);
+  return out;
+};
 
-console.log(`Found ${examChapterIds.length} exam chapters:`, examChapterIds);
+const files = readdirSync(DIR).filter((f) => f.startsWith('exam:') && f.endsWith('.json')).sort();
+const byChapter = {};
+const idSet = new Set();
+for (const f of files) {
+  const chapterId = f.slice(0, -5);                 // drop ".json"
+  const ids = collectIds(JSON.parse(readFileSync(join(DIR, f), 'utf8')), new Set());
+  byChapter[chapterId] = ids.size;
+  ids.forEach((id) => idSet.add(id));
+}
+const ids = [...idSet];
+const sourceChapterIds = Object.keys(byChapter);
 
-async function run() {
-  const snaps = await db.getAll(...examChapterIds.map((id) => db.collection('question_index').doc(id)));
-  const idSet = new Set();
-  const byChapter = {};
-  snaps.forEach((snap, i) => {
-    const chapterId = examChapterIds[i];
-    if (!snap.exists) { console.warn(`  ⚠️  question_index/${chapterId} missing — run rebuildQuestionIndexes.js for it first`); return; }
-    const ids = snap.data().ids || [];
-    byChapter[chapterId] = ids.length;
-    ids.forEach((id) => idSet.add(id));
-  });
+console.log(`Found ${sourceChapterIds.length} exam chapters.`);
+console.log('Per-chapter counts:', byChapter);
+console.log(`Total unique ids: ${ids.length}`);
 
-  const ids = [...idSet];
-  console.log('Per-chapter counts:', byChapter);
-  console.log(`Total unique ids: ${ids.length}`);
-
-  await db.collection('sync_meta').doc('hsc_past_paper_pool').set({
-    ids,
-    count: ids.length,
-    sourceChapterIds: examChapterIds,
-    updatedAt: FieldValue.serverTimestamp(),
-  });
-
-  console.log('✅ sync_meta/hsc_past_paper_pool written.');
+if (process.argv.includes('--dry-run')) {
+  console.log('\n--dry-run: nothing written.');
   process.exit(0);
 }
 
-run().catch((err) => { console.error(err); process.exit(1); });
+initializeApp({ credential: cert(JSON.parse(readFileSync(KEY, 'utf8'))) });
+await getFirestore().collection('sync_meta').doc('hsc_past_paper_pool').set({
+  ids,
+  count: ids.length,
+  sourceChapterIds,
+  updatedAt: FieldValue.serverTimestamp(),
+});
+console.log('✅ sync_meta/hsc_past_paper_pool written.');
+process.exit(0);
