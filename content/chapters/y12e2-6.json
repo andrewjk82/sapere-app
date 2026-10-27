@@ -7,7 +7,112 @@
       "topicId": "y12e2-6A",
       "code": "6A",
       "title": "The Standard Integrals",
-      "questions": []
+      "questions": [
+        {
+          "id": "caringbah2020-ext2-q12c",
+          "type": "multipart",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "Find the parametric equations of the line \\(\\ell=(x,y,z)\\) passing through \\(A=(2,-1,3)\\) and parallel to \\(\\mathbf v=(4,3,-2)\\).",
+          "hint": "Read the shared information first, then follow the parts in order. The displayed working shows each substitution and intermediate step.",
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 4U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "12",
+            "sourcePage": 7,
+            "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+          },
+          "parts": [
+            {
+              "id": "caringbah2020-ext2-q12c-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Find the parametric equations of the line \\(\\ell=(x,y,z)\\) passing through \\(A=(2,-1,3)\\) which is parallel to \\(\\mathbf v=(4,3,-2)\\).",
+              "hint": "A point on the line is the fixed point A plus a scalar multiple of the direction vector v.",
+              "solution": "\\(x=2+4\\lambda,\\ y=-1+3\\lambda,\\ z=3-2\\lambda\\)",
+              "steps": [
+                {
+                  "explain": "A line through A with direction vector v has vector equation position vector = position vector of A + parameter × v.",
+                  "work": "\\(\\mathbf r=(2,-1,3)+\\lambda(4,3,-2),\\qquad\\lambda\\in\\mathbb R.\\)"
+                },
+                {
+                  "explain": "Read the x-, y- and z-components separately. The same parameter \\(\\lambda\\) must be used in all three coordinates because they describe one point on the line.",
+                  "work": "\\(x=2+4\\lambda,\\qquad y=-1+3\\lambda,\\qquad z=3-2\\lambda.\\)"
+                },
+                {
+                  "explain": "These three equations give the required parametric form. As \\(\\lambda\\) varies over all real numbers, they trace the entire line through A in direction v.",
+                  "work": "\\(\\boxed{x=2+4\\lambda,\\ y=-1+3\\lambda,\\ z=3-2\\lambda,\\quad\\lambda\\in\\mathbb R}.\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "12c(i)",
+                "sourcePage": 7,
+                "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+              },
+              "options": [
+                "\\(x=2+4\\lambda,\\ y=-1+3\\lambda,\\ z=3-2\\lambda\\)",
+                "\\(x=2-4\\lambda,\\ y=-1-3\\lambda,\\ z=3+2\\lambda\\)",
+                "\\(x=4+2\\lambda,\\ y=3-\\lambda,\\ z=-2+3\\lambda\\)",
+                "\\(x=2+\\lambda,\\ y=-1+\\lambda,\\ z=3+\\lambda\\)"
+              ],
+              "answer": 0,
+              "keyPoints": [
+                {
+                  "text": "Find the parametric equations of the line through \\(A=(2,-1,3)\\) parallel to \\(\\mathbf v=(4,3,-2)\\).",
+                  "note": "A point on the line is the fixed point A plus a scalar multiple of the direction vector v."
+                }
+              ]
+            },
+            {
+              "id": "caringbah2020-ext2-q12c-ii",
+              "type": "review",
+              "manual": true,
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Show that the point \\(B=(10,5,-1)\\) lies on this line.",
+              "hint": "Substitute the point coordinates into the parametric equations. The same parameter value must satisfy all three equations.",
+              "solution": "At \\(\\lambda=2\\), the line gives \\(x=10,y=5,z=-1\\). This matches B, so B lies on \\(\\ell\\).",
+              "steps": [
+                {
+                  "explain": "Use the line equations from the previous part and solve for the parameter using the x-coordinate.",
+                  "work": "\\(10=2+4\\lambda\\quad\\Longrightarrow\\quad\\lambda=2.\\)"
+                },
+                {
+                  "explain": "Check that this same parameter gives the y-coordinate of B.",
+                  "work": "\\(-1+3(2)=5.\\)"
+                },
+                {
+                  "explain": "Check the z-coordinate as well. All three coordinates agree, so B is on the line.",
+                  "work": "\\(3-2(2)=-1,\\qquad B=(10,5,-1)\\in\\ell.\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "12c(ii)",
+                "sourcePage": 7,
+                "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+              },
+              "keyPoints": [
+                {
+                  "text": "Show that the point \\(B=(10,5,-1)\\) lies on this line.",
+                  "note": "Substitute the point coordinates into the parametric equations. The same parameter value must satisfy all three equations."
+                }
+              ],
+              "answer": "At \\(\\lambda=2\\), the line gives \\(x=10,y=5,z=-1\\). This matches B, so B lies on \\(\\ell\\)."
+            }
+          ]
+        }
+      ]
     },
     {
       "topicId": "y12e2-6B",
@@ -58,6 +163,51 @@
               "note": "The numerator is a difference of cubes — factor it and cancel."
             }
           ]
+        },
+        {
+          "id": "caringbah2020-ext2-q12a",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Find \\(\\int\\frac{x^2}{x^2+1}\\,dx\\).",
+          "hint": "Rewrite the numerator as \\(x^2+1-1\\), so the fraction separates into an easy constant term and the standard arctangent integral.",
+          "solution": "\\(x-\\tan^{-1}x+C\\)",
+          "steps": [
+            {
+              "explain": "The numerator differs from the denominator by 1, so split the fraction.",
+              "work": "\\(\\frac{x^2}{x^2+1}=\\frac{x^2+1-1}{x^2+1}=1-\\frac1{x^2+1}.\\)"
+            },
+            {
+              "explain": "Integrate each term. The standard result is \\(\\int 1/(1+x^2)dx=\\tan^{-1}x\\).",
+              "work": "\\(\\int\\frac{x^2}{x^2+1}dx=\\int1\\,dx-\\int\\frac1{1+x^2}dx.\\)"
+            },
+            {
+              "explain": "Include the constant of integration.",
+              "work": "\\(x-\\tan^{-1}x+C.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 4U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "12a",
+            "sourcePage": 7,
+            "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+          },
+          "options": [
+            "\\(x+\\tan^{-1}x+C\\)",
+            "\\(\\tan^{-1}x-x+C\\)",
+            "\\(x-\\tan^{-1}x+C\\)",
+            "\\(\\frac{x^3}{3}+\\tan^{-1}x+C\\)"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "Find \\(\\int\\frac{x^2}{x^2+1}\\,dx\\).",
+              "note": "Rewrite the numerator as \\(x^2+1-1\\), so the fraction separates into an easy constant term and the standard arctangent integral."
+            }
+          ]
         }
       ]
     },
@@ -77,15 +227,15 @@
           "steps": [
             {
               "explain": "Substitute x=π−y and reverse the bounds.",
-              "work": "\\(I=\\int_0^\\pi(\\pi-y)\\sin y\\,dy.\\\\)"
+              "work": "\\(I=\\int_0^\\pi(\\pi-y)\\sin y\\,dy.\\)"
             },
             {
               "explain": "Use the symmetry y↔π−y to relate the y sin y integral to I.",
-              "work": "\\(\\int_0^\\pi y\\sin y\\,dy=\\int_0^\\pi(\\pi-y)\\sin y\\,dy=I.\\\\)"
+              "work": "\\(\\int_0^\\pi y\\sin y\\,dy=\\int_0^\\pi(\\pi-y)\\sin y\\,dy=I.\\)"
             },
             {
               "explain": "Add the two equal integrals to get twice I.",
-              "work": "\\(2I=\\pi\\int_0^\\pi\\sin y\\,dy,\\quad I=\\frac\\pi2\\int_0^\\pi\\sin y\\,dy=\\pi.\\\\)"
+              "work": "\\(2I=\\pi\\int_0^\\pi\\sin y\\,dy,\\quad I=\\frac\\pi2\\int_0^\\pi\\sin y\\,dy=\\pi.\\)"
             }
           ],
           "xp": 1,
@@ -856,6 +1006,159 @@
               "note": "Change limits to t = 0 and t = 1; the denominator simplifies to a perfect square."
             }
           ]
+        },
+        {
+          "id": "caringbah2020-ext2-q12b",
+          "type": "multipart",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "Use the substitution \\(u=x^2-4\\) to show that \\(\\int\\frac{x}{\\sqrt{x^2-4}}\\,dx=\\sqrt{x^2-4}+C\\).",
+          "hint": "Read the shared information first, then follow the parts in order. The displayed working shows each substitution and intermediate step.",
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 4U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "12",
+            "sourcePage": 7,
+            "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+          },
+          "parts": [
+            {
+              "id": "caringbah2020-ext2-q12b-i",
+              "type": "review",
+              "manual": true,
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Use the substitution \\(u=x^2-4\\) to show that \\(\\int\\frac{x}{\\sqrt{x^2-4}}\\,dx=\\sqrt{x^2-4}+C\\).",
+              "hint": "Differentiate the substitution to express \\(x\\,dx\\) in terms of du, then integrate a power of u.",
+              "solution": "With \\(u=x^2-4\\), \\(du=2x,dx\\), so the integral is \\(\\frac12\\int u^{-1/2}du=\\sqrt u+C=\\sqrt{x^2-4}+C\\).",
+              "steps": [
+                {
+                  "explain": "Set \\(u=x^2-4\\). Differentiate both sides to obtain the differential needed in the integral.",
+                  "work": "\\(u=x^2-4,\\qquad du=2x\\,dx,\\qquad x\\,dx=\\frac12du.\\)"
+                },
+                {
+                  "explain": "Replace the square root by \\(\\sqrt u\\) and substitute \\(x\\,dx=du/2\\).",
+                  "work": "\\(\\int\\frac{x}{\\sqrt{x^2-4}}dx=\\frac12\\int u^{-1/2}du.\\)"
+                },
+                {
+                  "explain": "Use the power rule for integration, then substitute \\(u=x^2-4\\) back.",
+                  "work": "\\(\\frac12\\cdot\\frac{u^{1/2}}{1/2}+C=\\sqrt u+C=\\sqrt{x^2-4}+C.\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "12b(i)",
+                "sourcePage": 7,
+                "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+              },
+              "keyPoints": [
+                {
+                  "text": "Use the substitution \\(u=x^2-4\\) to show that \\(\\int\\frac{x}{\\sqrt{x^2-4}}\\,dx=\\sqrt{x^2-4}+C\\).",
+                  "note": "Differentiate the substitution to express \\(x\\,dx\\) in terms of du, then integrate a power of u."
+                }
+              ],
+              "answer": "With \\(u=x^2-4\\), \\(du=2x,dx\\), so the integral is \\(\\frac12\\int u^{-1/2}du=\\sqrt u+C=\\sqrt{x^2-4}+C\\)."
+            },
+            {
+              "id": "caringbah2020-ext2-q12b-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Hence find the exact value of \\(\\int_{\\sqrt5}^{\\sqrt8}\\frac{x\\ln(x^2-4)}{\\sqrt{x^2-4}}\\,dx\\).",
+              "hint": "Reuse \\(u=x^2-4\\), which changes the limits to 1 and 4. Then set \\(w=\\sqrt u\\) to integrate \\(\\ln(w^2)\\) directly.",
+              "solution": "\\(4\\ln2-2\\)",
+              "steps": [
+                {
+                  "explain": "Use \\(u=x^2-4\\), so \\(du=2x\\,dx\\). Convert both limits: x=√5 gives u=1, and x=√8 gives u=4.",
+                  "work": "\\(\\int_{\\sqrt5}^{\\sqrt8}\\frac{x\\ln(x^2-4)}{\\sqrt{x^2-4}}dx=\\frac12\\int_1^4\\frac{\\ln u}{\\sqrt u}du.\\)"
+                },
+                {
+                  "explain": "Now put \\(w=\\sqrt u\\). Then u=w² and du=2w dw, so the factor \\(1/2\\) cancels the 2. The limits become 1 and 2.",
+                  "work": "\\(\\frac12\\int_1^4\\frac{\\ln u}{\\sqrt u}du=\\int_1^2\\ln(w^2)dw=2\\int_1^2\\ln w\\,dw.\\)"
+                },
+                {
+                  "explain": "Use integration by parts, \\(\\int\\ln w\\,dw=w\\ln w-w\\), then evaluate at both bounds.",
+                  "work": "\\(2[w\\ln w-w]_1^2=2[(2\\ln2-2)-(0-1)]=4\\ln2-2.\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "12b(ii)",
+                "sourcePage": 7,
+                "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+              },
+              "options": [
+                "\\(2\\ln2-1\\)",
+                "\\(4\\ln2-2\\)",
+                "\\(4\\ln2+2\\)",
+                "\\(2\\ln2-2\\)"
+              ],
+              "answer": 1,
+              "keyPoints": [
+                {
+                  "text": "Hence find the exact value of \\(\\int_{\\sqrt5}^{\\sqrt8}\\frac{x\\ln(x^2-4)}{\\sqrt{x^2-4}}\\,dx\\).",
+                  "note": "Reuse \\(u=x^2-4\\), which changes the limits to 1 and 4. Then set \\(w=\\sqrt u\\) to integrate \\(\\ln(w^2)\\) directly."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "caringbah2020-ext2-q16a",
+          "type": "mc",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "Find \\(\\int_0^{\\ln3}\\frac{e^{2x}}{\\sqrt{e^x+1}}\\,dx\\).",
+          "hint": "Choose \\(u=\\sqrt{e^x+1}\\). Then \\(du=e^x/(2u)\\,dx\\), which combines with the remaining factor e^x in the numerator.",
+          "solution": "\\(\\frac{4+2\\sqrt2}{3}\\)",
+          "steps": [
+            {
+              "explain": "Set \\(u=\\sqrt{e^x+1}\\). Differentiate: \\(2u\\,du=e^x dx\\), so \\(e^x dx=2u\\,du\\). Also \\(e^x=u^2-1\\).",
+              "work": "\\(u=\\sqrt{e^x+1},\\qquad e^x=u^2-1,\\qquad e^x dx=2u\\,du.\\)"
+            },
+            {
+              "explain": "Rewrite the integrand as \\(e^x(e^x dx)/u\\), then substitute. The u in the differential cancels the denominator.",
+              "work": "\\(\\frac{e^{2x}}{u}dx=e^x\\frac{e^x dx}{u}=(u^2-1)\\frac{2u\\,du}{u}=2(u^2-1)du.\\)"
+            },
+            {
+              "explain": "Change the limits: x=0 gives u=√2; x=ln3 gives e^x=3 and u=2.",
+              "work": "\\(\\int_0^{\\ln3}\\frac{e^{2x}}{\\sqrt{e^x+1}}dx=2\\int_{\\sqrt2}^{2}(u^2-1)du.\\)"
+            },
+            {
+              "explain": "Integrate and evaluate at both transformed limits.",
+              "work": "\\(2[\\tfrac13u^3-u]_{\\sqrt2}^{2}=2\\left[(\\tfrac83-2)-(\\tfrac{2\\sqrt2}{3}-\\sqrt2)\\right]=\\frac{4+2\\sqrt2}{3}.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 4U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "16a",
+            "sourcePage": 12,
+            "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+          },
+          "options": [
+            "\\(\\frac{4-2\\sqrt2}{3}\\)",
+            "\\(\\frac{4+2\\sqrt2}{3}\\)",
+            "\\(2+\\sqrt2\\)",
+            "\\(\\frac{8+2\\sqrt2}{3}\\)"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "Find \\(\\int_0^{\\ln3}\\frac{e^{2x}}{\\sqrt{e^x+1}}\\,dx\\).",
+              "note": "Choose \\(u=\\sqrt{e^x+1}\\). Then \\(du=e^x/(2u)\\,dx\\), which combines with the remaining factor e^x in the numerator."
+            }
+          ]
         }
       ]
     },
@@ -1432,6 +1735,55 @@
                   "note": "Use A = 7, B = −1, C = 2 and integrate each piece."
                 }
               ]
+            }
+          ]
+        },
+        {
+          "id": "caringbah2020-ext2-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Which of the following is \\(\\frac{3x+11}{(x-3)(x+1)}\\) expressed in partial fractions?",
+          "hint": "Set the expression equal to \\(A/(x-3)+B/(x+1)\\), clear the denominator, and solve for A and B.",
+          "solution": "\\(\\frac5{x-3}-\\frac2{x+1}\\)",
+          "steps": [
+            {
+              "explain": "Use one constant numerator for each distinct linear factor.",
+              "work": "\\(\\frac{3x+11}{(x-3)(x+1)}=\\frac A{x-3}+\\frac B{x+1}.\\)"
+            },
+            {
+              "explain": "Multiply through by \\((x-3)(x+1)\\) to remove the fractions.",
+              "work": "\\(3x+11=A(x+1)+B(x-3).\\)"
+            },
+            {
+              "explain": "Choose convenient x-values. At x=3, \\(20=4A\\), so A=5. At x=−1, \\(8=-4B\\), so B=−2.",
+              "work": "\\(x=3:\\;20=4A\\Rightarrow A=5,\\qquad x=-1:\\;8=-4B\\Rightarrow B=-2.\\)"
+            },
+            {
+              "explain": "Substitute these constants into the decomposition.",
+              "work": "\\(\\frac{3x+11}{(x-3)(x+1)}=\\frac5{x-3}-\\frac2{x+1}.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 4U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "3",
+            "sourcePage": 2,
+            "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+          },
+          "options": [
+            "\\(-\\frac1{x-3}-\\frac4{x+1}\\)",
+            "\\(\\frac5{x-3}-\\frac2{x+1}\\)",
+            "\\(\\frac5{x-3}+\\frac2{x+1}\\)",
+            "\\(-\\frac1{x-3}+\\frac4{x+1}\\)"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "Which of the following is \\(\\frac{3x+11}{(x-3)(x+1)}\\) expressed in partial fractions?",
+              "note": "Set the expression equal to \\(A/(x-3)+B/(x+1)\\), clear the denominator, and solve for A and B."
             }
           ]
         }
@@ -2098,6 +2450,96 @@
               "note": "Choose u = ln x (it simplifies when differentiated) and v′ = x²."
             }
           ]
+        },
+        {
+          "id": "caringbah2020-ext2-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "If \\(\\int f(x)\\sin x\\,dx=-f(x)\\cos x+\\int 3x^2\\cos x\\,dx\\), which of the following could be \\(f(x)\\)?",
+          "hint": "Compare with integration by parts: when integrating \\(f(x)\\sin x\\), the remaining integral contains \\(f'(x)\\cos x\\). Differentiate each candidate.",
+          "solution": "\\(x^3\\)",
+          "steps": [
+            {
+              "explain": "Integration by parts uses \\(u=f(x)\\) and \\(dv=\\sin x\\,dx\\). Then \\(v=-\\cos x\\) and \\(du=f'(x)dx\\).",
+              "work": "\\(\\int f(x)\\sin x\\,dx=-f(x)\\cos x+\\int f'(x)\\cos x\\,dx.\\)"
+            },
+            {
+              "explain": "Compare the integral after the plus sign with the one in the question. Their cosine factors match, so their coefficients must match.",
+              "work": "\\(f'(x)=3x^2.\\)"
+            },
+            {
+              "explain": "Integrate the derivative. Any constant would also differentiate to zero, but only one listed option has this derivative.",
+              "work": "\\(f(x)=\\int 3x^2\\,dx=x^3+C.\\quad\\text{Among the options, }f(x)=x^3.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 4U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "2",
+            "sourcePage": 2,
+            "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+          },
+          "options": [
+            "\\(3x^2\\)",
+            "\\(x^3\\)",
+            "\\(-x^3\\)",
+            "\\(-3x^2\\)"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "If \\(\\int f(x)\\sin x\\,dx=-f(x)\\cos x+\\int 3x^2\\cos x\\,dx\\), which of the following could be \\(f(x)\\)?",
+              "note": "Compare with integration by parts: when integrating \\(f(x)\\sin x\\), the remaining integral contains \\(f'(x)\\cos x\\). Differentiate each candidate."
+            }
+          ]
+        },
+        {
+          "id": "caringbah2020-ext2-q12d",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "If \\(\\mathbf a=3\\mathbf i+2\\mathbf j+2\\mathbf k\\) and \\(\\mathbf b=-\\mathbf i+\\mathbf j+\\mathbf k\\), find a unit vector perpendicular to both \\(\\mathbf a\\) and \\(\\mathbf b\\).",
+          "hint": "A cross product is perpendicular to both vectors. Divide it by its magnitude to make a unit vector; either orientation is acceptable.",
+          "solution": "\\(\\pm\\frac{\\mathbf j-\\mathbf k}{\\sqrt2}\\)",
+          "steps": [
+            {
+              "explain": "Compute \\(\\mathbf a\\times\\mathbf b\\) using the determinant expansion.",
+              "work": "\\(\\mathbf a\\times\\mathbf b=(2\\cdot1-2\\cdot1)\\mathbf i-(3\\cdot1-2\\cdot(-1))\\mathbf j+(3\\cdot1-2\\cdot(-1))\\mathbf k=-5\\mathbf j+5\\mathbf k.\\)"
+            },
+            {
+              "explain": "Find the magnitude of this perpendicular vector.",
+              "work": "\\(|\\mathbf a\\times\\mathbf b|=\\sqrt{0^2+(-5)^2+5^2}=5\\sqrt2.\\)"
+            },
+            {
+              "explain": "Divide by the magnitude. The negative of this vector is also a valid unit vector, so the answer includes both orientations.",
+              "work": "\\(\\frac{\\mathbf a\\times\\mathbf b}{|\\mathbf a\\times\\mathbf b|}=\\frac{-\\mathbf j+\\mathbf k}{\\sqrt2},\\quad\\text{hence }\\pm\\frac{\\mathbf j-\\mathbf k}{\\sqrt2}\\text{ spans the same two unit directions.}\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 4U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "12d",
+            "sourcePage": 7,
+            "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+          },
+          "options": [
+            "\\(\\pm\\frac{\\mathbf j-\\mathbf k}{\\sqrt2}\\)",
+            "\\(\\pm\\frac{\\mathbf j+\\mathbf k}{\\sqrt2}\\)",
+            "\\(\\pm\\frac{3\\mathbf i+2\\mathbf j+2\\mathbf k}{\\sqrt{17}}\\)",
+            "\\(\\pm\\frac{\\mathbf i+\\mathbf j+\\mathbf k}{\\sqrt3}\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "If \\(\\mathbf a=3\\mathbf i+2\\mathbf j+2\\mathbf k\\) and \\(\\mathbf b=-\\mathbf i+\\mathbf j+\\mathbf k\\), find a unit vector perpendicular to both \\(\\mathbf a\\) and \\(\\mathbf b\\).",
+              "note": "A cross product is perpendicular to both vectors. Divide it by its magnitude to make a unit vector; either orientation is acceptable."
+            }
+          ]
         }
       ]
     },
@@ -2290,6 +2732,150 @@
             {
               "text": "\\int\\sec^4x\\,dx",
               "note": "Keep one sec²x for du and change the other to 1 + tan²x; then u = tan x."
+            }
+          ]
+        },
+        {
+          "id": "caringbah2020-ext2-q13b",
+          "type": "multipart",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "Use the substitutions shown in each part to evaluate and relate the integrals involving \\(x/\\sin x\\) on \\([\\pi/3,2\\pi/3]\\).",
+          "hint": "Use each indicated substitution and keep the changing limits, differential and algebraic factors together.",
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 4U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "13",
+            "sourcePage": 8,
+            "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+          },
+          "parts": [
+            {
+              "id": "caringbah2020-ext2-q13b-i",
+              "type": "review",
+              "manual": true,
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Use the substitution \\(t=\\tan\\frac{x}{2}\\) to show that \\(\\int_{\\pi/3}^{2\\pi/3}\\frac{1}{\\sin x}\\,dx=\\ln3\\).",
+              "hint": "Use \\(\\sin x=2t/(1+t^2)\\) and \\(dx=2dt/(1+t^2)\\), then convert both endpoints to t-values.",
+              "solution": "With \\(t=\\tan(x/2)\\), the integral becomes \\(\\int_{1/\\sqrt3}^{\\sqrt3}dt/t=\\ln3\\).",
+              "steps": [
+                {
+                  "explain": "Apply the half-angle substitution and differentiate it.",
+                  "work": "\\(t=\\tan\\frac x2,\\qquad dx=\\frac{2}{1+t^2}dt,\\qquad\\sin x=\\frac{2t}{1+t^2}.\\)"
+                },
+                {
+                  "explain": "Substitute both expressions; the factors \\(2/(1+t^2)\\) cancel, leaving a logarithmic integral.",
+                  "work": "\\(\\frac{1}{\\sin x}dx=\\frac{1+t^2}{2t}\\cdot\\frac{2}{1+t^2}dt=\\frac{dt}{t}.\\)"
+                },
+                {
+                  "explain": "Convert the endpoints: x=π/3 gives t=tan(π/6)=1/√3; x=2π/3 gives t=tan(π/3)=√3.",
+                  "work": "\\(\\int_{\\pi/3}^{2\\pi/3}\\frac{dx}{\\sin x}=\\int_{1/\\sqrt3}^{\\sqrt3}\\frac{dt}{t}=[\\ln t]_{1/\\sqrt3}^{\\sqrt3}=\\ln\\sqrt3-\\ln(1/\\sqrt3)=\\ln3.\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "13b(i)",
+                "sourcePage": 8,
+                "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+              },
+              "keyPoints": [
+                {
+                  "text": "Use the substitution \\(t=\\tan\\frac{x}{2}\\) to show that \\(\\int_{\\pi/3}^{2\\pi/3}\\frac{1}{\\sin x}\\,dx=\\ln3\\).",
+                  "note": "Use \\(\\sin x=2t/(1+t^2)\\) and \\(dx=2dt/(1+t^2)\\), then convert both endpoints to t-values."
+                }
+              ],
+              "answer": "With \\(t=\\tan(x/2)\\), the integral becomes \\(\\int_{1/\\sqrt3}^{\\sqrt3}dt/t=\\ln3\\)."
+            },
+            {
+              "id": "caringbah2020-ext2-q13b-ii",
+              "type": "review",
+              "manual": true,
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Use the substitution \\(u=\\pi-x\\) to show that \\(\\int_{\\pi/3}^{2\\pi/3}\\frac{x}{\\sin x}\\,dx=\\int_{\\pi/3}^{2\\pi/3}\\frac{\\pi-x}{\\sin x}\\,dx\\).",
+              "hint": "Under \\(u=\\pi-x\\), the limits reverse and \\(dx=-du\\); also \\(\\sin(\\pi-u)=\\sin u\\). Track both changes.",
+              "solution": "Using \\(u=\\pi-x\\), \\(dx=-du\\), reversed limits, and \\(\\sin(\\pi-u)=\\sin u\\) gives the stated equality.",
+              "steps": [
+                {
+                  "explain": "Set \\(u=\\pi-x\\), so \\(x=\\pi-u\\) and \\(dx=-du\\). Transform the endpoints: x=π/3 maps to u=2π/3, and x=2π/3 maps to u=π/3.",
+                  "work": "\\(\\int_{\\pi/3}^{2\\pi/3}\\frac{x}{\\sin x}dx=\\int_{2\\pi/3}^{\\pi/3}\\frac{\\pi-u}{\\sin(\\pi-u)}(-du).\\)"
+                },
+                {
+                  "explain": "Use \\(\\sin(\\pi-u)=\\sin u\\). The negative differential reverses the limits back to increasing order.",
+                  "work": "\\(\\int_{2\\pi/3}^{\\pi/3}\\frac{\\pi-u}{\\sin u}(-du)=\\int_{\\pi/3}^{2\\pi/3}\\frac{\\pi-u}{\\sin u}du.\\)"
+                },
+                {
+                  "explain": "Rename the dummy variable u as x; an integration variable name does not change the value.",
+                  "work": "\\(\\int_{\\pi/3}^{2\\pi/3}\\frac{x}{\\sin x}dx=\\int_{\\pi/3}^{2\\pi/3}\\frac{\\pi-x}{\\sin x}dx.\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "13b(ii)",
+                "sourcePage": 8,
+                "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+              },
+              "keyPoints": [
+                {
+                  "text": "Use the substitution \\(u=\\pi-x\\) to show that \\(\\int_{\\pi/3}^{2\\pi/3}\\frac{x}{\\sin x}\\,dx=\\int_{\\pi/3}^{2\\pi/3}\\frac{\\pi-x}{\\sin x}\\,dx\\).",
+                  "note": "Under \\(u=\\pi-x\\), the limits reverse and \\(dx=-du\\); also \\(\\sin(\\pi-u)=\\sin u\\). Track both changes."
+                }
+              ],
+              "answer": "Using \\(u=\\pi-x\\), \\(dx=-du\\), reversed limits, and \\(\\sin(\\pi-u)=\\sin u\\) gives the stated equality."
+            },
+            {
+              "id": "caringbah2020-ext2-q13b-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Hence find the value of \\(\\int_{\\pi/3}^{2\\pi/3}\\frac{x}{\\sin x}\\,dx\\).",
+              "hint": "Call the integral I. The preceding symmetry gives a second expression for I; add them and use the value of the integral of 1/sin x.",
+              "solution": "\\(\\frac{\\pi\\ln3}{2}\\)",
+              "steps": [
+                {
+                  "explain": "Let I be the integral sought. The substitution from the previous part gives a second equal expression for it.",
+                  "work": "\\(I=\\int_{\\pi/3}^{2\\pi/3}\\frac{x}{\\sin x}dx=\\int_{\\pi/3}^{2\\pi/3}\\frac{\\pi-x}{\\sin x}dx.\\)"
+                },
+                {
+                  "explain": "Add these equal integrals. The numerators x and π−x add to π, and the remaining integral is the result from part (i).",
+                  "work": "\\(2I=\\int_{\\pi/3}^{2\\pi/3}\\frac{x+(\\pi-x)}{\\sin x}dx=\\pi\\int_{\\pi/3}^{2\\pi/3}\\frac{1}{\\sin x}dx=\\pi\\ln3.\\)"
+                },
+                {
+                  "explain": "Divide both sides by 2.",
+                  "work": "\\(I=\\frac{\\pi\\ln3}{2}.\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "13b(iii)",
+                "sourcePage": 8,
+                "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+              },
+              "options": [
+                "\\(\\pi\\ln3\\)",
+                "\\(\\frac{\\ln3}{2}\\)",
+                "\\(\\frac{\\pi\\ln3}{2}\\)",
+                "\\(\\frac{3\\pi}{2}\\)"
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "Hence find the value of \\(\\int_{\\pi/3}^{2\\pi/3}\\frac{x}{\\sin x}\\,dx\\).",
+                  "note": "Call the integral I. The preceding symmetry gives a second expression for I; add them and use the value of the integral of 1/sin x."
+                }
+              ]
             }
           ]
         }
@@ -2788,6 +3374,159 @@
                 {
                   "text": "Hence evaluate \\(I_4\\)",
                   "note": "I₀ = 1; then I_n = n/(n+2) · I_{n−1}."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "caringbah2020-ext2-q14b",
+          "type": "multipart",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "If \\(I_n=\\int_{-1}^{0}x^n\\sqrt{1+x}\\,dx\\), for \\(n=0,1,2,\\ldots\\), use this definition in each part.",
+          "hint": "Use each indicated substitution and keep the changing limits, differential and algebraic factors together.",
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 4U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "14",
+            "sourcePage": 9,
+            "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+          },
+          "parts": [
+            {
+              "id": "caringbah2020-ext2-q14b-i0",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Find the value of \\(I_0\\).",
+              "hint": "Set \\(u=1+x\\), so the square root becomes \\(u^{1/2}\\) and the limits change from x=−1,0 to u=0,1.",
+              "solution": "\\(\\frac23\\)",
+              "steps": [
+                {
+                  "explain": "Set n=0 in the definition. Then \\(x^0=1\\), so only the square-root factor remains.",
+                  "work": "\\(I_0=\\int_{-1}^0\\sqrt{1+x}\\,dx.\\)"
+                },
+                {
+                  "explain": "Use \\(u=1+x\\). Then \\(du=dx\\); when x=−1, u=0, and when x=0, u=1.",
+                  "work": "\\(I_0=\\int_0^1u^{1/2}\\,du.\\)"
+                },
+                {
+                  "explain": "Apply the power rule and substitute both limits. The lower endpoint contributes zero.",
+                  "work": "\\(I_0=\\left[\\frac23u^{3/2}\\right]_0^1=\\frac23(1)-\\frac23(0)=\\boxed{\\frac23}.\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "14b(i)",
+                "sourcePage": 9,
+                "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+              },
+              "options": [
+                "\\(\\frac13\\)",
+                "\\(\\frac23\\)",
+                "\\(1\\)",
+                "\\(\\frac43\\)"
+              ],
+              "answer": 1,
+              "keyPoints": [
+                {
+                  "text": "Find the value of \\(I_0\\).",
+                  "note": "Set \\(u=1+x\\), so the square root becomes \\(u^{1/2}\\) and the limits change from x=−1,0 to u=0,1."
+                }
+              ]
+            },
+            {
+              "id": "caringbah2020-ext2-q14b-recurrence",
+              "type": "review",
+              "manual": true,
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Show that \\(I_n=-\\frac{2n}{2n+3}I_{n-1}\\) for \\(n=1,2,3,\\ldots\\).",
+              "hint": "Use integration by parts with \\(u=x^n\\) and \\(dv=\\sqrt{1+x}\\,dx\\). The boundary term is zero at both endpoints for n≥1.",
+              "solution": "Integration by parts gives \\(I_n=-(2n/3)(I_{n-1}+I_n)\\), since the endpoint term is zero. Rearranging yields \\(I_n=-2nI_{n-1}/(2n+3)\\).",
+              "steps": [
+                {
+                  "explain": "For n≥1, choose \\(u=x^n\\) and \\(dv=\\sqrt{1+x}\\,dx\\). Then \\(du=nx^{n-1}dx\\) and \\(v=\\frac23(1+x)^{3/2}\\).",
+                  "work": "\\(I_n=\\left[\\frac23x^n(1+x)^{3/2}\\right]_{-1}^0-\\frac{2n}{3}\\int_{-1}^0x^{n-1}(1+x)^{3/2}dx.\\)"
+                },
+                {
+                  "explain": "The boundary term vanishes: at x=0, \\(x^n=0\\); at x=−1, \\((1+x)^{3/2}=0\\). Write \\((1+x)^{3/2}=(1+x)\\sqrt{1+x}\\) and split the integral.",
+                  "work": "\\(I_n=-\\frac{2n}{3}\\int_{-1}^0x^{n-1}(1+x)\\sqrt{1+x}dx=-\\frac{2n}{3}(I_{n-1}+I_n).\\)"
+                },
+                {
+                  "explain": "Collect the terms involving I_n on the left and multiply through by 3.",
+                  "work": "\\(3I_n=-2nI_{n-1}-2nI_n\\quad\\Longrightarrow\\quad(2n+3)I_n=-2nI_{n-1}.\\)"
+                },
+                {
+                  "explain": "Divide by the positive number 2n+3 to obtain the required recurrence.",
+                  "work": "\\(I_n=-\\frac{2n}{2n+3}I_{n-1},\\qquad n\\ge1.\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "14b(recurrence)",
+                "sourcePage": 9,
+                "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+              },
+              "keyPoints": [
+                {
+                  "text": "Show that \\(I_n=-\\frac{2n}{2n+3}I_{n-1}\\) for \\(n=1,2,3,\\ldots\\).",
+                  "note": "Use integration by parts with \\(u=x^n\\) and \\(dv=\\sqrt{1+x}\\,dx\\). The boundary term is zero at both endpoints for n≥1."
+                }
+              ],
+              "answer": "Integration by parts gives \\(I_n=-(2n/3)(I_{n-1}+I_n)\\), since the endpoint term is zero. Rearranging yields \\(I_n=-2nI_{n-1}/(2n+3)\\)."
+            },
+            {
+              "id": "caringbah2020-ext2-q14b-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Hence find the value of \\(I_2\\).",
+              "hint": "Apply the recurrence first with n=1 to find I1, then with n=2 to find I2. Keep both negative signs in the recurrence.",
+              "solution": "\\(\\frac{16}{105}\\)",
+              "steps": [
+                {
+                  "explain": "Start with the value from the first part and use the recurrence at n=1.",
+                  "work": "\\(I_1=-\\frac{2}{5}I_0=-\\frac25\\cdot\\frac23=-\\frac4{15}.\\)"
+                },
+                {
+                  "explain": "Use the recurrence again, now with n=2.",
+                  "work": "\\(I_2=-\\frac4{7}I_1=-\\frac47\\left(-\\frac4{15}\\right)=\\frac{16}{105}.\\)"
+                },
+                {
+                  "explain": "The two negative factors make the final integral positive.",
+                  "work": "\\(I_2=\\frac{16}{105}.\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "14b(ii)",
+                "sourcePage": 9,
+                "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+              },
+              "options": [
+                "\\(-\\frac{16}{105}\\)",
+                "\\(\\frac{16}{105}\\)",
+                "\\(\\frac{8}{105}\\)",
+                "\\(\\frac{16}{35}\\)"
+              ],
+              "answer": 1,
+              "keyPoints": [
+                {
+                  "text": "Hence find the value of \\(I_2\\).",
+                  "note": "Apply the recurrence first with n=1 to find I1, then with n=2 to find I2. Keep both negative signs in the recurrence."
                 }
               ]
             }

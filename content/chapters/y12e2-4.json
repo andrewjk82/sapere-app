@@ -889,7 +889,7 @@
             },
             {
               "explain": "Collect all variables on one side and constants on the other side to obtain the standard plane equation.\n7104-4x + 6y - 8z + 29 = 14x - 2y + 50 \\implies 29 - 50 = (14 + 4)x + (-2 - 6)y + 8z \\implies 18x - 8y + 8z = -217104\n**Geometric Verification:**\n- The segment vector is \\(\\vec{QR} = R - Q = (-7 - 2, 1 - (-3), 0 - 4) = (-9, 4, -4)\\).\n- The normal vector to the perpendicular bisector plane is parallel to \\(\\vec{QR}\\): \\(\\vec{n} = -2\\vec{QR} = (18, -8, 8)\\).\n- The plane passes through midpoint \\(M = \\left(-\\frac{5}{2}, -1, 2\\right)\\): \\(18\\left(-\\frac{5}{2}\\right) - 8(-1) + 8(2) = -45 + 8 + 16 = -21\\).\nThis confirms the exact equation of the plane.",
-              "work": "-4x + 6y - 8z + 29 = 14x - 2y + 50\\\n-18x + 8y - 8z = 21\\\n\\boxed{18x - 8y + 8z = -21}\\\\\text{Normal: } \\vec{n} = (18, -8, 8) \\perp QR,\\quad \\text{Midpoint: } M\\left(-\\frac{5}{2}, -1, 2\\right)",
+              "work": "-4x + 6y - 8z + 29 = 14x - 2y + 50\\\n-18x + 8y - 8z = 21\\\n\\boxed{18x - 8y + 8z = -21}\\\\\\thetaext{Normal: } \\vec{n} = (18, -8, 8) \\perp QR,\\quad \\text{Midpoint: } M\\left(-\\frac{5}{2}, -1, 2\\right)",
               "figure": {
                 "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\">\n  <defs>\n    <linearGradient id=\"planeGrad3\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n      <stop offset=\"0%\" stop-color=\"#38bdf8\" stop-opacity=\"0.22\" />\n      <stop offset=\"100%\" stop-color=\"#0284c7\" stop-opacity=\"0.35\" />\n    </linearGradient>\n    <marker id=\"arrowNormal3\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3.5\" orient=\"auto\">\n      <polygon points=\"0 0, 7 3.5, 0 7\" fill=\"#7c3aed\" />\n    </marker>\n    <filter id=\"cardShadow3\" x=\"-5%\" y=\"-5%\" width=\"110%\" height=\"110%\">\n      <feDropShadow dx=\"0\" dy=\"4\" stdDeviation=\"6\" flood-color=\"#0f172a\" flood-opacity=\"0.08\"/>\n    </filter>\n  </defs>\n\n  <!-- Background Card -->\n  <rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"14\" fill=\"#ffffff\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n\n  <!-- Top Title Badge -->\n  <rect x=\"22\" y=\"16\" width=\"320\" height=\"28\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n  <text x=\"32\" y=\"35\" fill=\"#0f172a\" font-size=\"12\" font-weight=\"bold\">Step 3: Plane Equation 18x − 8y + 8z = −21</text>\n\n  <!-- Segment Behind Plane: M to R -->\n  <line x1=\"285\" y1=\"165\" x2=\"190\" y2=\"280\" stroke=\"#94a3b8\" stroke-width=\"2.5\" stroke-dasharray=\"5 4\" />\n\n  <!-- Perpendicular Bisector Plane (Parallelogram) -->\n  <polygon points=\"145,95 475,65 435,245 105,275\" fill=\"url(#planeGrad3)\" stroke=\"#0284c7\" stroke-width=\"2.5\" filter=\"url(#cardShadow3)\" />\n\n  <!-- Plane 3D Depth Grid Lines -->\n  <line x1=\"228\" y1=\"87\" x2=\"188\" y2=\"267\" stroke=\"#0284c7\" stroke-width=\"1\" stroke-opacity=\"0.2\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"310\" y1=\"80\" x2=\"270\" y2=\"260\" stroke=\"#0284c7\" stroke-width=\"1\" stroke-opacity=\"0.2\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"392\" y1=\"72\" x2=\"352\" y2=\"252\" stroke=\"#0284c7\" stroke-width=\"1\" stroke-opacity=\"0.2\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"135\" y1=\"145\" x2=\"465\" y2=\"115\" stroke=\"#0284c7\" stroke-width=\"1\" stroke-opacity=\"0.2\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"125\" y1=\"195\" x2=\"455\" y2=\"165\" stroke=\"#0284c7\" stroke-width=\"1\" stroke-opacity=\"0.2\" stroke-dasharray=\"3 3\"/>\n\n  <!-- Segment In Front of Plane: Q to M -->\n  <line x1=\"380\" y1=\"50\" x2=\"285\" y2=\"165\" stroke=\"#334155\" stroke-width=\"3.5\" stroke-linecap=\"round\" />\n\n  <!-- Equal Segment Tick Marks on QM and MR -->\n  <line x1=\"330\" y1=\"104\" x2=\"338\" y2=\"112\" stroke=\"#475569\" stroke-width=\"2\" />\n  <line x1=\"235\" y1=\"219\" x2=\"243\" y2=\"227\" stroke=\"#475569\" stroke-width=\"2\" />\n\n  <!-- Right Angle Symbol at M (Highlighted in Step 2 & 3) -->\n  <path d=\"M 271 182 L 280 193 L 294 176\" fill=\"none\" stroke=\"#0284c7\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n\n  \n  <!-- Normal Vector n from M -->\n  <line x1=\"285\" y1=\"165\" x2=\"345\" y2=\"92\" stroke=\"#7c3aed\" stroke-width=\"3.5\" stroke-linecap=\"round\" marker-end=\"url(#arrowNormal3)\" />\n  <text x=\"355\" y=\"92\" fill=\"#6d28d9\" font-size=\"13\" font-weight=\"bold\">n = (18, −8, 8)</text>\n  \n\n  <!-- Distance lines from P to Q and P to R (Prominent in Step 1) -->\n  <line x1=\"330\" y1=\"205\" x2=\"380\" y2=\"50\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-dasharray=\"5 4\" />\n  <line x1=\"330\" y1=\"205\" x2=\"190\" y2=\"280\" stroke=\"#e11d48\" stroke-width=\"2\" stroke-dasharray=\"5 4\" />\n\n  <!-- Point P (x, y, z) on Plane -->\n  <circle cx=\"330\" cy=\"205\" r=\"5.5\" fill=\"#2563eb\" stroke=\"#ffffff\" stroke-width=\"2\" />\n  <text x=\"342\" y=\"214\" fill=\"#1d4ed8\" font-size=\"13\" font-weight=\"bold\">P(x, y, z)</text>\n\n  <!-- Distance Labels -->\n  <rect x=\"365\" y=\"118\" width=\"86\" height=\"22\" rx=\"4\" fill=\"#eff6ff\" stroke=\"#bfdbfe\" stroke-width=\"1\"/>\n  <text x=\"408\" y=\"133\" fill=\"#1e40af\" font-size=\"11\" font-weight=\"bold\" text-anchor=\"middle\">|PQ|</text>\n\n  <rect x=\"235\" y=\"248\" width=\"86\" height=\"22\" rx=\"4\" fill=\"#fff1f2\" stroke=\"#fecdd3\" stroke-width=\"1\"/>\n  <text x=\"278\" y=\"263\" fill=\"#9f1239\" font-size=\"11\" font-weight=\"bold\" text-anchor=\"middle\">|PR|</text>\n\n  <!-- Point Q (2, -3, 4) -->\n  <circle cx=\"380\" cy=\"50\" r=\"6\" fill=\"#ea580c\" stroke=\"#ffffff\" stroke-width=\"2\" />\n  <text x=\"392\" y=\"50\" fill=\"#c2410c\" font-size=\"13\" font-weight=\"bold\">Q(2, −3, 4)</text>\n\n  <!-- Point R (-7, 1, 0) -->\n  <circle cx=\"190\" cy=\"280\" r=\"6\" fill=\"#e11d48\" stroke=\"#ffffff\" stroke-width=\"2\" />\n  <text x=\"110\" y=\"295\" fill=\"#be123c\" font-size=\"13\" font-weight=\"bold\">R(−7, 1, 0)</text>\n\n  <!-- Midpoint M -->\n  <circle cx=\"285\" cy=\"165\" r=\"5\" fill=\"#0284c7\" stroke=\"#ffffff\" stroke-width=\"2\" />\n  <text x=\"296\" y=\"162\" fill=\"#0369a1\" font-size=\"12\" font-weight=\"bold\">M(-5/2, -1, 2)</text>\n\n  <!-- Bottom Info Badge -->\n  <rect x=\"330\" y=\"285\" width=\"250\" height=\"38\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n  <text x=\"455\" y=\"308\" fill=\"#0f172a\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\">Plane: 18x − 8y + 8z = −21</text>\n</svg>"
               }
@@ -2029,6 +2029,51 @@
               ]
             }
           ]
+        },
+        {
+          "id": "caringbah2020-ext2-q5",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "What is the magnitude of the vector \\(\\cos\\theta\\,\\mathbf i+\\sin\\theta\\,\\mathbf j+\\tan\\theta\\,\\mathbf k\\), where \\(0<\\theta<\\frac{\\pi}{2}\\)?",
+          "hint": "Use the three-dimensional magnitude formula, square each component, then use \\(\\sin^2\\theta+\\cos^2\\theta=1\\) and the positive sign of secant in the first quadrant.",
+          "solution": "\\(\\sec\\theta\\)",
+          "steps": [
+            {
+              "explain": "The magnitude of a vector with components \\(u,v,w\\) is \\(\\sqrt{u^2+v^2+w^2}\\). Square all three components.",
+              "work": "\\(\\left|\\cos\\theta\\,\\mathbf i+\\sin\\theta\\,\\mathbf j+\\tan\\theta\\,\\mathbf k\\right|=\\sqrt{\\cos^2\\theta+\\sin^2\\theta+\\tan^2\\theta}.\\)"
+            },
+            {
+              "explain": "Combine the first two terms using the Pythagorean identity.",
+              "work": "\\(\\sqrt{1+\\tan^2\\theta}=\\sqrt{\\sec^2\\theta}.\\)"
+            },
+            {
+              "explain": "Because \\(0<\\theta<\\pi/2\\), \\(\\sec\\theta>0\\), so the positive square root is \\(\\sec\\theta\\).",
+              "work": "\\(\\left|\\mathbf v\\right|=\\sec\\theta.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 4U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "5",
+            "sourcePage": 3,
+            "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+          },
+          "options": [
+            "\\(1\\)",
+            "\\(\\csc\\theta\\)",
+            "\\(\\cot\\theta\\)",
+            "\\(\\sec\\theta\\)"
+          ],
+          "answer": 3,
+          "keyPoints": [
+            {
+              "text": "What is the magnitude of the vector \\(\\cos\\theta\\,\\mathbf i+\\sin\\theta\\,\\mathbf j+\\tan\\theta\\,\\mathbf k\\), where \\(0<\\theta<\\frac{\\pi}{2}\\)?",
+              "note": "Use the three-dimensional magnitude formula, square each component, then use \\(\\sin^2\\theta+\\cos^2\\theta=1\\) and the positive sign of secant in the first quadrant."
+            }
+          ]
         }
       ]
     },
@@ -2392,6 +2437,215 @@
               "note": "Expand into a·a + a·b + a·c; check the arrow directions for each angle."
             }
           ]
+        },
+        {
+          "id": "caringbah2020-ext2-q7",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "The points A, B and C are collinear where \\(\\overrightarrow{OA}=\\mathbf i+\\mathbf j\\), \\(\\overrightarrow{OB}=2\\mathbf i-\\mathbf j+\\mathbf k\\), and \\(\\overrightarrow{OC}=3\\mathbf i+a\\mathbf j+b\\mathbf k\\). What are the values of a and b?",
+          "hint": "Convert the position vectors to coordinates. Collinearity means \\(\\overrightarrow{AC}\\) is a scalar multiple of \\(\\overrightarrow{AB}\\); compare corresponding components.",
+          "solution": "\\(a=-3,\\ b=2\\)",
+          "steps": [
+            {
+              "explain": "Read the position vectors as coordinates: \\(A=(1,1,0)\\), \\(B=(2,-1,1)\\), and \\(C=(3,a,b)\\).",
+              "work": "\\(\\overrightarrow{AB}=(2-1,-1-1,1-0)=(1,-2,1),\\qquad\\overrightarrow{AC}=(2,a-1,b).\\)"
+            },
+            {
+              "explain": "Since A, B and C are collinear, the two vectors from A have the same direction. The first component shows the scale factor is 2.",
+              "work": "\\(\\overrightarrow{AC}=2\\overrightarrow{AB}.\\)"
+            },
+            {
+              "explain": "Match the second and third components to find a and b.",
+              "work": "\\((2,a-1,b)=2(1,-2,1)=(2,-4,2)\\quad\\Longrightarrow\\quad a=-3,\\;b=2.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 4U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "7",
+            "sourcePage": 3,
+            "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+          },
+          "options": [
+            "\\(a=-3,\\ b=-2\\)",
+            "\\(a=3,\\ b=-2\\)",
+            "\\(a=-3,\\ b=2\\)",
+            "\\(a=3,\\ b=2\\)"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "The points A, B and C are collinear where \\(\\overrightarrow{OA}=\\mathbf i+\\mathbf j\\), \\(\\overrightarrow{OB}=2\\mathbf i-\\mathbf j+\\mathbf k\\), and \\(\\overrightarrow{OC}=3\\mathbf i+a\\mathbf j+b\\mathbf k\\). What are the values of a and b?",
+              "note": "Convert the position vectors to coordinates. Collinearity means \\(\\overrightarrow{AC}\\) is a scalar multiple of \\(\\overrightarrow{AB}\\); compare corresponding components."
+            }
+          ]
+        },
+        {
+          "id": "caringbah2020-ext2-q11c",
+          "type": "multipart",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "ABC is an acute-angled triangle. The altitudes BE and CF intersect at O. The line AO produced meets BC at D. Relative to O, the position vectors of A, B and C are \\(\\mathbf a\\), \\(\\mathbf b\\) and \\(\\mathbf c\\), respectively.",
+          "hint": "Use the shared diagram and information above, then follow each part in order. The highlighted working figures show which geometric facts are used at each step.",
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 4U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "11",
+            "sourcePage": 6,
+            "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+          },
+          "parts": [
+            {
+              "id": "caringbah2020-ext2-q11c-i",
+              "type": "review",
+              "manual": true,
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Show that \\(\\mathbf b\\cdot(\\mathbf c-\\mathbf a)=0\\) and \\(\\mathbf c\\cdot(\\mathbf b-\\mathbf a)=0\\).",
+              "hint": "Use the perpendicular altitude facts in the diagram. Since O lies on BE and CF, the vectors from O to B and C point along those altitudes.",
+              "solution": "BE\\perp AC and CF\\perp AB. As O lies on both altitudes, \\(\\mathbf b\\parallel BE\\), \\(\\mathbf c\\parallel CF\\), \\(\\mathbf c-\\mathbf a=\\overrightarrow{AC}\\), and \\(\\mathbf b-\\mathbf a=\\overrightarrow{AB}\\). Thus both stated dot products are zero.",
+              "steps": [
+                {
+                  "explain": "Because BE is an altitude, BE is perpendicular to AC. O lies on BE, so OB is parallel to BE; the vector from A to C lies along AC. Highlight these two directions in the diagram.",
+                  "work": "\\(\\mathbf b\\parallel BE,\\qquad\\mathbf c-\\mathbf a=\\overrightarrow{AC}\\parallel AC,\\qquad BE\\perp AC.\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 380 250\"><rect width=\"380\" height=\"250\" fill=\"white\"/><line x1=\"158.0\" y1=\"24.0\" x2=\"42.0\" y2=\"205.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"158.0\" y1=\"24.0\" x2=\"330.0\" y2=\"205.0\" stroke=\"#7c3aed\" stroke-width=\"2.7\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"205.0\" x2=\"330.0\" y2=\"205.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"205.0\" x2=\"193.3\" y2=\"61.2\" stroke=\"#0ea5e9\" stroke-width=\"2.7\" stroke-linecap=\"round\"/><line x1=\"330.0\" y1=\"205.0\" x2=\"125.9\" y2=\"74.2\" stroke=\"#475569\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"158.0\" y1=\"24.0\" x2=\"158.0\" y2=\"205.0\" stroke=\"#64748b\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><path d=\"M188.5,56.1 L183.4,60.9 L188.3,66.0\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><path d=\"M129.6,68.3 L135.5,72.0 L131.7,77.9\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><circle cx=\"158.0\" cy=\"24.0\" r=\"2.8\" fill=\"#334155\"/><text x=\"163.0\" y=\"17.0\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">A</text><circle cx=\"42.0\" cy=\"205.0\" r=\"2.8\" fill=\"#334155\"/><text x=\"28.0\" y=\"221.0\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">B</text><circle cx=\"330.0\" cy=\"205.0\" r=\"2.8\" fill=\"#334155\"/><text x=\"336.0\" y=\"221.0\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">C</text><circle cx=\"158.0\" cy=\"205.0\" r=\"2.8\" fill=\"#334155\"/><text x=\"164.0\" y=\"222.0\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">D</text><circle cx=\"193.3\" cy=\"61.2\" r=\"2.8\" fill=\"#334155\"/><text x=\"200.3\" y=\"54.2\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">E</text><circle cx=\"125.9\" cy=\"74.2\" r=\"2.8\" fill=\"#334155\"/><text x=\"105.0\" y=\"68.0\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">F</text><circle cx=\"158.0\" cy=\"94.8\" r=\"2.8\" fill=\"#334155\"/><text x=\"167.0\" y=\"132.0\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">O</text></svg>"
+                  }
+                },
+                {
+                  "explain": "The dot product of perpendicular vectors is zero. Apply this to \\(\\mathbf b\\) and \\(\\mathbf c-\\mathbf a\\).",
+                  "work": "\\(\\mathbf b\\cdot(\\mathbf c-\\mathbf a)=0.\\)"
+                },
+                {
+                  "explain": "Similarly, CF is an altitude, so CF is perpendicular to AB. Since O lies on CF, \\(\\mathbf c\\parallel CF\\), while \\(\\mathbf b-\\mathbf a=\\overrightarrow{AB}\\parallel AB\\).",
+                  "work": "\\(\\mathbf c\\parallel CF,\\qquad\\mathbf b-\\mathbf a=\\overrightarrow{AB}\\parallel AB,\\qquad CF\\perp AB.\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 380 250\"><rect width=\"380\" height=\"250\" fill=\"white\"/><line x1=\"158.0\" y1=\"24.0\" x2=\"42.0\" y2=\"205.0\" stroke=\"#7c3aed\" stroke-width=\"2.7\" stroke-linecap=\"round\"/><line x1=\"158.0\" y1=\"24.0\" x2=\"330.0\" y2=\"205.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"205.0\" x2=\"330.0\" y2=\"205.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"205.0\" x2=\"193.3\" y2=\"61.2\" stroke=\"#475569\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"330.0\" y1=\"205.0\" x2=\"125.9\" y2=\"74.2\" stroke=\"#f59e0b\" stroke-width=\"2.7\" stroke-linecap=\"round\"/><line x1=\"158.0\" y1=\"24.0\" x2=\"158.0\" y2=\"205.0\" stroke=\"#64748b\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><path d=\"M188.5,56.1 L183.4,60.9 L188.3,66.0\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><path d=\"M129.6,68.3 L135.5,72.0 L131.7,77.9\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><circle cx=\"158.0\" cy=\"24.0\" r=\"2.8\" fill=\"#334155\"/><text x=\"163.0\" y=\"17.0\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">A</text><circle cx=\"42.0\" cy=\"205.0\" r=\"2.8\" fill=\"#334155\"/><text x=\"28.0\" y=\"221.0\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">B</text><circle cx=\"330.0\" cy=\"205.0\" r=\"2.8\" fill=\"#334155\"/><text x=\"336.0\" y=\"221.0\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">C</text><circle cx=\"158.0\" cy=\"205.0\" r=\"2.8\" fill=\"#334155\"/><text x=\"164.0\" y=\"222.0\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">D</text><circle cx=\"193.3\" cy=\"61.2\" r=\"2.8\" fill=\"#334155\"/><text x=\"200.3\" y=\"54.2\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">E</text><circle cx=\"125.9\" cy=\"74.2\" r=\"2.8\" fill=\"#334155\"/><text x=\"105.0\" y=\"68.0\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">F</text><circle cx=\"158.0\" cy=\"94.8\" r=\"2.8\" fill=\"#334155\"/><text x=\"167.0\" y=\"132.0\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">O</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Apply the same dot-product criterion to the second perpendicular pair.",
+                  "work": "\\(\\mathbf c\\cdot(\\mathbf b-\\mathbf a)=0.\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "11c(i)",
+                "sourcePage": 6,
+                "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+              },
+              "keyPoints": [
+                {
+                  "text": "Show that \\(\\mathbf b\\cdot(\\mathbf c-\\mathbf a)=0\\) and \\(\\mathbf c\\cdot(\\mathbf b-\\mathbf a)=0\\).",
+                  "note": "Use the perpendicular altitude facts in the diagram. Since O lies on BE and CF, the vectors from O to B and C point along those altitudes."
+                }
+              ],
+              "answer": "BE\\perp AC and CF\\perp AB. As O lies on both altitudes, \\(\\mathbf b\\parallel BE\\), \\(\\mathbf c\\parallel CF\\), \\(\\mathbf c-\\mathbf a=\\overrightarrow{AC}\\), and \\(\\mathbf b-\\mathbf a=\\overrightarrow{AB}\\). Thus both stated dot products are zero."
+            },
+            {
+              "id": "caringbah2020-ext2-q11c-ii",
+              "type": "review",
+              "manual": true,
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Hence show that \\(AD\\perp BC\\).",
+              "hint": "Expand the two dot-product equalities from the preceding part. This gives equal dot products \\(\\mathbf a\\cdot\\mathbf b\\) and \\(\\mathbf a\\cdot\\mathbf c\\); compare the directions of AD and BC.",
+              "solution": "From the first two equalities, \\(\\mathbf b\\cdot\\mathbf c=\\mathbf b\\cdot\\mathbf a\\) and \\(\\mathbf c\\cdot\\mathbf b=\\mathbf c\\cdot\\mathbf a\\). Therefore \\(\\mathbf a\\cdot(\\mathbf c-\\mathbf b)=0\\). Since AD is on the same line as OA, its direction is parallel to \\(\\mathbf a\\), while \\(\\mathbf c-\\mathbf b\\) is the direction of BC. Hence \\(AD\\perp BC\\).",
+              "steps": [
+                {
+                  "explain": "Expand the first equality from the preceding part.",
+                  "work": "\\(\\mathbf b\\cdot(\\mathbf c-\\mathbf a)=0\\quad\\Longrightarrow\\quad\\mathbf b\\cdot\\mathbf c=\\mathbf b\\cdot\\mathbf a.\\)"
+                },
+                {
+                  "explain": "Expand the second equality. By symmetry of the dot product, \\(\\mathbf c\\cdot\\mathbf b=\\mathbf b\\cdot\\mathbf c\\).",
+                  "work": "\\(\\mathbf c\\cdot(\\mathbf b-\\mathbf a)=0\\quad\\Longrightarrow\\quad\\mathbf c\\cdot\\mathbf b=\\mathbf c\\cdot\\mathbf a.\\)"
+                },
+                {
+                  "explain": "Combine the equalities to obtain \\(\\mathbf a\\cdot\\mathbf b=\\mathbf a\\cdot\\mathbf c\\). Hence a is perpendicular to the direction vector of BC. The diagram highlights AO (the direction of AD) and BC.",
+                  "work": "\\(\\mathbf a\\cdot(\\mathbf c-\\mathbf b)=\\mathbf a\\cdot\\mathbf c-\\mathbf a\\cdot\\mathbf b=0.\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 380 250\"><rect width=\"380\" height=\"250\" fill=\"white\"/><line x1=\"158.0\" y1=\"24.0\" x2=\"42.0\" y2=\"205.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"158.0\" y1=\"24.0\" x2=\"330.0\" y2=\"205.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"205.0\" x2=\"330.0\" y2=\"205.0\" stroke=\"#7c3aed\" stroke-width=\"2.7\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"205.0\" x2=\"193.3\" y2=\"61.2\" stroke=\"#475569\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"330.0\" y1=\"205.0\" x2=\"125.9\" y2=\"74.2\" stroke=\"#475569\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"158.0\" y1=\"24.0\" x2=\"158.0\" y2=\"205.0\" stroke=\"#16a34a\" stroke-width=\"2.7\" stroke-linecap=\"round\"/><path d=\"M188.5,56.1 L183.4,60.9 L188.3,66.0\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><path d=\"M129.6,68.3 L135.5,72.0 L131.7,77.9\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><circle cx=\"158.0\" cy=\"24.0\" r=\"2.8\" fill=\"#334155\"/><text x=\"163.0\" y=\"17.0\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">A</text><circle cx=\"42.0\" cy=\"205.0\" r=\"2.8\" fill=\"#334155\"/><text x=\"28.0\" y=\"221.0\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">B</text><circle cx=\"330.0\" cy=\"205.0\" r=\"2.8\" fill=\"#334155\"/><text x=\"336.0\" y=\"221.0\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">C</text><circle cx=\"158.0\" cy=\"205.0\" r=\"2.8\" fill=\"#334155\"/><text x=\"164.0\" y=\"222.0\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">D</text><circle cx=\"193.3\" cy=\"61.2\" r=\"2.8\" fill=\"#334155\"/><text x=\"200.3\" y=\"54.2\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">E</text><circle cx=\"125.9\" cy=\"74.2\" r=\"2.8\" fill=\"#334155\"/><text x=\"105.0\" y=\"68.0\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">F</text><circle cx=\"158.0\" cy=\"94.8\" r=\"2.8\" fill=\"#334155\"/><text x=\"167.0\" y=\"132.0\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">O</text></svg>"
+                  }
+                },
+                {
+                  "explain": "A, O and D are collinear, so AD is parallel to OA and therefore has the direction of a (or its negative). Since that direction is perpendicular to BC, the result follows.",
+                  "work": "\\(AD\\parallel\\mathbf a,\\qquad\\overrightarrow{BC}=\\mathbf c-\\mathbf b,\\qquad AD\\perp BC.\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "11c(ii)",
+                "sourcePage": 6,
+                "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+              },
+              "keyPoints": [
+                {
+                  "text": "Hence show that \\(AD\\perp BC\\).",
+                  "note": "Expand the two dot-product equalities from the preceding part. This gives equal dot products \\(\\mathbf a\\cdot\\mathbf b\\) and \\(\\mathbf a\\cdot\\mathbf c\\); compare the directions of AD and BC."
+                }
+              ],
+              "answer": "From the first two equalities, \\(\\mathbf b\\cdot\\mathbf c=\\mathbf b\\cdot\\mathbf a\\) and \\(\\mathbf c\\cdot\\mathbf b=\\mathbf c\\cdot\\mathbf a\\). Therefore \\(\\mathbf a\\cdot(\\mathbf c-\\mathbf b)=0\\). Since AD is on the same line as OA, its direction is parallel to \\(\\mathbf a\\), while \\(\\mathbf c-\\mathbf b\\) is the direction of BC. Hence \\(AD\\perp BC\\)."
+            },
+            {
+              "id": "caringbah2020-ext2-q11c-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "What geometrical property of the triangle has been proved?",
+              "hint": "Use the construction: O is already the intersection of two altitudes. The previous part proves the third altitude passes through O as well.",
+              "solution": "The altitudes of a triangle are concurrent (at the orthocentre).",
+              "steps": [
+                {
+                  "explain": "BE and CF are altitudes and meet at O, so O lies on both. The previous part proved that AD is perpendicular to BC.",
+                  "work": "\\(O\\in BE,\\qquad O\\in CF,\\qquad AD\\perp BC.\\)"
+                },
+                {
+                  "explain": "The construction also gives A, O and D on one straight line. Since D lies on BC and AD is perpendicular to BC, AD is the altitude from A.",
+                  "work": "\\(A,O,D\\text{ are collinear},\\qquad D\\in BC,\\qquad AD\\perp BC.\\)"
+                },
+                {
+                  "explain": "Thus the three altitudes meet at O. The point where all three altitudes of a triangle meet is called the orthocentre.",
+                  "work": "The altitudes are concurrent; \\(O\\) is the orthocentre of \\(\\triangle ABC\\)."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "11c(iii)",
+                "sourcePage": 6,
+                "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+              },
+              "options": [
+                "The medians of the triangle are concurrent.",
+                "The perpendicular bisectors are concurrent.",
+                "The altitudes of a triangle are concurrent.",
+                "The angle bisectors are concurrent."
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "What geometrical property of the triangle has been proved?",
+                  "note": "Use the construction: O is already the intersection of two altitudes. The previous part proves the third altitude passes through O as well."
+                }
+              ]
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 380 250\"><rect width=\"380\" height=\"250\" fill=\"white\"/><line x1=\"158.0\" y1=\"24.0\" x2=\"42.0\" y2=\"205.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"158.0\" y1=\"24.0\" x2=\"330.0\" y2=\"205.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"205.0\" x2=\"330.0\" y2=\"205.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"205.0\" x2=\"193.3\" y2=\"61.2\" stroke=\"#475569\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"330.0\" y1=\"205.0\" x2=\"125.9\" y2=\"74.2\" stroke=\"#475569\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"158.0\" y1=\"24.0\" x2=\"158.0\" y2=\"205.0\" stroke=\"#64748b\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><path d=\"M188.5,56.1 L183.4,60.9 L188.3,66.0\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><path d=\"M129.6,68.3 L135.5,72.0 L131.7,77.9\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><circle cx=\"158.0\" cy=\"24.0\" r=\"2.8\" fill=\"#334155\"/><text x=\"163.0\" y=\"17.0\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">A</text><circle cx=\"42.0\" cy=\"205.0\" r=\"2.8\" fill=\"#334155\"/><text x=\"28.0\" y=\"221.0\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">B</text><circle cx=\"330.0\" cy=\"205.0\" r=\"2.8\" fill=\"#334155\"/><text x=\"336.0\" y=\"221.0\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">C</text><circle cx=\"158.0\" cy=\"205.0\" r=\"2.8\" fill=\"#334155\"/><text x=\"164.0\" y=\"222.0\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">D</text><circle cx=\"193.3\" cy=\"61.2\" r=\"2.8\" fill=\"#334155\"/><text x=\"200.3\" y=\"54.2\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">E</text><circle cx=\"125.9\" cy=\"74.2\" r=\"2.8\" fill=\"#334155\"/><text x=\"105.0\" y=\"68.0\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">F</text><circle cx=\"158.0\" cy=\"94.8\" r=\"2.8\" fill=\"#334155\"/><text x=\"167.0\" y=\"132.0\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">O</text></svg>"
+          }
         }
       ]
     },

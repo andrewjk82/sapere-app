@@ -344,6 +344,51 @@
               ]
             }
           ]
+        },
+        {
+          "id": "caringbah2020-ext2-q13c",
+          "type": "mc",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "Let \\(\\omega\\) be the complex number satisfying \\(\\omega^3=1\\) and \\(\\operatorname{Im}(\\omega)>0\\). The cubic polynomial \\(P(z)=z^3+az^2+bz+c\\) has zeros \\(1,-\\omega,-\\bar\\omega\\). Find the values of a, b and c in P(z).",
+          "hint": "Use Vieta’s formulas. First note that the two non-real cube roots are conjugates, so \\(\\omega+\\bar\\omega=-1\\) and \\(\\omega\\bar\\omega=1\\).",
+          "solution": "\\(a=-2,\\ b=2,\\ c=-1\\)",
+          "steps": [
+            {
+              "explain": "The non-real cube root has argument \\(2\\pi/3\\), hence \\(\\omega+\\bar\\omega=2\\cos(2\\pi/3)=-1\\) and \\(\\omega\\bar\\omega=1\\).",
+              "work": "\\(\\omega+\\bar\\omega=-1,\\qquad\\omega\\bar\\omega=1.\\)"
+            },
+            {
+              "explain": "For a monic cubic, the sum of roots is \\(-a\\). The roots sum to \\(1-\\omega-\\bar\\omega=2\\).",
+              "work": "\\(-a=1-(\\omega+\\bar\\omega)=2\\quad\\Longrightarrow\\quad a=-2.\\)"
+            },
+            {
+              "explain": "The sum of pairwise products is b, and the product of all three roots is \\(-c\\).",
+              "work": "\\(b=(-\\omega)(-\\bar\\omega)-\\omega-\\bar\\omega=1+1=2,\\qquad -c=1\\cdot\\omega\\bar\\omega=1\\Longrightarrow c=-1.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 4U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "13c",
+            "sourcePage": 8,
+            "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+          },
+          "options": [
+            "\\(a=2,\\ b=2,\\ c=1\\)",
+            "\\(a=-2,\\ b=2,\\ c=-1\\)",
+            "\\(a=-2,\\ b=-2,\\ c=1\\)",
+            "\\(a=2,\\ b=-2,\\ c=-1\\)"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "Let \\(\\omega\\) be the complex number satisfying \\(\\omega^3=1\\) and \\(\\operatorname{Im}(\\omega)>0\\). The cubic polynomial \\(P(z)=z^3+az^2+bz+c\\) has zeros \\(1,-\\omega,-\\bar\\omega\\). Find the values of a, b and c in P(z).",
+              "note": "Use Vieta’s formulas. First note that the two non-real cube roots are conjugates, so \\(\\omega+\\bar\\omega=-1\\) and \\(\\omega\\bar\\omega=1\\)."
+            }
+          ]
         }
       ]
     },
@@ -408,7 +453,7 @@
             },
             {
               "explain": "Find the argument in quadrant I.",
-              "work": "\\(\tan\theta=\\sqrt3\\), so \\(\theta=\\pi/3.\\)"
+              "work": "\\(\\tan\\theta=\\sqrt3\\), so \\(\\theta=\\pi/3.\\)"
             }
           ],
           "xp": 1,
@@ -756,6 +801,51 @@
               ]
             }
           ]
+        },
+        {
+          "id": "caringbah2020-ext2-q10",
+          "type": "mc",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "The equation \\(z^5=1\\) has roots \\(1,\\omega,\\omega^2,\\omega^3,\\omega^4\\), where \\(\\omega=e^{2\\pi i/5}\\). What is the value of \\((1-\\omega)(1-\\omega^2)(1-\\omega^3)(1-\\omega^4)\\)?",
+          "hint": "Factor \\(z^5-1\\) using its five roots, then evaluate the derivative at the root z=1 to obtain the product of the four non-unit factors.",
+          "solution": "\\(5\\)",
+          "steps": [
+            {
+              "explain": "Factor the polynomial using its roots. The four nontrivial fifth roots are \\(\\omega,\\omega^2,\\omega^3,\\omega^4\\).",
+              "work": "\\(z^5-1=(z-1)(z-\\omega)(z-\\omega^2)(z-\\omega^3)(z-\\omega^4).\\)"
+            },
+            {
+              "explain": "Differentiate the factorisation and then set z=1. The product rule leaves only the term where the derivative falls on \\(z-1\\); every other term still contains that zero factor.",
+              "work": "\\(5z^4=\\prod_{k=1}^4(z-\\omega^k)+(z-1)\\,R(z),\\quad\\text{so at }z=1:\\quad5=\\prod_{k=1}^4(1-\\omega^k).\\)"
+            },
+            {
+              "explain": "The requested product is exactly the product on the right.",
+              "work": "\\((1-\\omega)(1-\\omega^2)(1-\\omega^3)(1-\\omega^4)=5.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 4U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "10",
+            "sourcePage": 4,
+            "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+          },
+          "options": [
+            "\\(-5\\)",
+            "\\(-4\\)",
+            "\\(4\\)",
+            "\\(5\\)"
+          ],
+          "answer": 3,
+          "keyPoints": [
+            {
+              "text": "The equation \\(z^5=1\\) has roots \\(1,\\omega,\\omega^2,\\omega^3,\\omega^4\\), where \\(\\omega=e^{2\\pi i/5}\\). What is the value of \\((1-\\omega)(1-\\omega^2)(1-\\omega^3)(1-\\omega^4)\\)?",
+              "note": "Factor \\(z^5-1\\) using its five roots, then evaluate the derivative at the root z=1 to obtain the product of the four non-unit factors."
+            }
+          ]
         }
       ]
     },
@@ -769,21 +859,21 @@
           "type": "mc",
           "difficulty": "medium",
           "timeLimit": 60,
-          "stem": "Using the multiple-angle expansion, select the correct expression for \\(\\sin^5\theta\\).",
-          "hint": "Use the imaginary part of the expansion of \\((\\cos\theta+i\\sin\theta)^5\\).",
-          "solution": "\\(\\frac{10\\sin\theta-5\\sin3\theta+\\sin5\theta}{16}\\)",
+          "stem": "Using the multiple-angle expansion, select the correct expression for \\(\\sin^5\\theta\\).",
+          "hint": "Use the imaginary part of the expansion of \\((\\cos\\theta+i\\sin\\theta)^5\\).",
+          "solution": "\\(\\frac{10\\sin\\theta-5\\sin3\\theta+\\sin5\\theta}{16}\\)",
           "steps": [
             {
               "explain": "Expand using De Moivre.",
-              "work": "\\(\\sin5\theta=5s-20s^3+16s^5\\), where \\(s=\\sin\theta\\)."
+              "work": "\\(\\sin5\\theta=5s-20s^3+16s^5\\), where \\(s=\\sin\\theta\\)."
             },
             {
               "explain": "Rearrange for the fifth power.",
-              "work": "\\(16s^5=\\sin5\theta-5s+20s^3.\\)"
+              "work": "\\(16s^5=\\sin5\\theta-5s+20s^3.\\)"
             },
             {
-              "explain": "Use \\(\\sin3\theta=3s-4s^3\\).",
-              "work": "\\(20s^3=5(3s-\\sin3\theta)\\), giving the selected identity."
+              "explain": "Use \\(\\sin3\\theta=3s-4s^3\\).",
+              "work": "\\(20s^3=5(3s-\\sin3\\theta)\\), giving the selected identity."
             }
           ],
           "xp": 1,
@@ -792,16 +882,16 @@
             "school": "Abbotsleigh"
           },
           "options": [
-            "\\(\\frac{10\\sin\theta-5\\sin3\theta+\\sin5\theta}{16}\\)",
-            "\\(\\frac{10\\sin\theta+5\\sin3\theta+\\sin5\theta}{16}\\)",
-            "\\(\\frac{5\\sin\theta-10\\sin3\theta+\\sin5\theta}{16}\\)",
-            "\\(\\frac{10\\sin\theta-5\\sin3\theta-\\sin5\theta}{16}\\)"
+            "\\(\\frac{10\\sin\\theta-5\\sin3\\theta+\\sin5\\theta}{16}\\)",
+            "\\(\\frac{10\\sin\\theta+5\\sin3\\theta+\\sin5\\theta}{16}\\)",
+            "\\(\\frac{5\\sin\\theta-10\\sin3\\theta+\\sin5\\theta}{16}\\)",
+            "\\(\\frac{10\\sin\\theta-5\\sin3\\theta-\\sin5\\theta}{16}\\)"
           ],
           "answer": 0,
           "keyPoints": [
             {
-              "text": "Using the multiple-angle expansion, select the correct expression for \\(\\sin^5\theta\\)",
-              "note": "Use the imaginary part of the expansion of \\((\\cos\theta+i\\sin\theta)^5\\)."
+              "text": "Using the multiple-angle expansion, select the correct expression for \\(\\sin^5\\theta\\)",
+              "note": "Use the imaginary part of the expansion of \\((\\cos\\theta+i\\sin\\theta)^5\\)."
             }
           ]
         },
@@ -1469,7 +1559,7 @@
           "steps": [
             {
               "explain": "Find the angle between adjacent roots.",
-              "work": "\\(\\Delta\theta=2\\pi/n.\\)"
+              "work": "\\(\\Delta\\theta=2\\pi/n.\\)"
             },
             {
               "explain": "Bisect the isosceles triangle.",
@@ -1499,7 +1589,7 @@
           "type": "mc",
           "difficulty": "medium",
           "timeLimit": 60,
-          "stem": "Given \\(P_n=2n\\sin(\\pi/n)\\) and \\(\\lim_{x\to0}\\sin x/x=1\\), find \\(\\lim_{n\to\\infty}P_n\\).",
+          "stem": "Given \\(P_n=2n\\sin(\\pi/n)\\) and \\(\\lim_{x\\\to 0}\\sin x/x=1\\), find \\(\\lim_{n\\\to \\infty}P_n\\).",
           "hint": "Rewrite the perimeter as \\(2\\pi\\,\\frac{\\sin(\\pi/n)}{\\pi/n}\\).",
           "solution": "\\(2\\pi\\)",
           "steps": [
@@ -1509,11 +1599,11 @@
             },
             {
               "explain": "Take the limit.",
-              "work": "As \\(n\to\\infty\\), \\(\\pi/n\to0\\), so the ratio tends to 1."
+              "work": "As \\(n\\\to \\infty\\), \\(\\pi/n\\\to 0\\), so the ratio tends to 1."
             },
             {
               "explain": "Conclude.",
-              "work": "\\(P_n\to2\\pi.\\)"
+              "work": "\\(P_n\\\to 2\\pi.\\)"
             }
           ],
           "xp": 1,
@@ -1530,7 +1620,7 @@
           "answer": 0,
           "keyPoints": [
             {
-              "text": "Given \\(P_n=2n\\sin(\\pi/n)\\) and \\(\\lim_{x\to0}\\sin x/x=1\\), find \\(\\lim_{n\to\\infty}P_n\\)",
+              "text": "Given \\(P_n=2n\\sin(\\pi/n)\\) and \\(\\lim_{x\\\to 0}\\sin x/x=1\\), find \\(\\lim_{n\\\to \\infty}P_n\\)",
               "note": "Rewrite the perimeter as \\(2\\pi\\,\\frac{\\sin(\\pi/n)}{\\pi/n}\\)."
             }
           ]
@@ -1970,6 +2060,352 @@
                 {
                   "text": "Write down \\(\\omega\\) in modulus-argument form",
                   "note": "ω = cis(2π/7); then α = ω + ω² + ω⁴, and 8π/7 = π + π/7."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "caringbah2020-ext2-q13a",
+          "type": "multipart",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "It is given that \\(z=2e^{\\pi i/12}\\) is a root of the equation \\(z^4=a(1+\\sqrt3\\,i)\\), where a is real.",
+          "hint": "Read the shared information first, then use the earlier result only where a later part depends on it.",
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 4U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "13",
+            "sourcePage": 8,
+            "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+          },
+          "parts": [
+            {
+              "id": "caringbah2020-ext2-q13a-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Express \\(1+\\sqrt3\\,i\\) in the form \\(re^{i\\theta}\\), where \\(r>0\\) and \\(-\\pi<\\theta<\\pi\\).",
+              "hint": "Find the modulus from the real and imaginary components, then use the quadrant to choose the argument.",
+              "solution": "\\(2e^{i\\pi/3}\\)",
+              "steps": [
+                {
+                  "explain": "For \\(w=1+\\sqrt3 i\\), the modulus is the distance from the origin: square and add the components.",
+                  "work": "\\(|w|=\\sqrt{1^2+(\\sqrt3)^2}=\\sqrt4=2.\\)"
+                },
+                {
+                  "explain": "Both components are positive, so w lies in quadrant I. Its argument satisfies \\(\\tan\\theta=\\sqrt3/1\\).",
+                  "work": "\\(\\theta=\\tan^{-1}(\\sqrt3)=\\frac{\\pi}{3},\\quad -\\pi<\\frac{\\pi}{3}<\\pi.\\)"
+                },
+                {
+                  "explain": "Combine the modulus and argument in polar form.",
+                  "work": "\\(1+\\sqrt3 i=2e^{i\\pi/3}.\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "13a(i)",
+                "sourcePage": 8,
+                "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+              },
+              "options": [
+                "\\(2e^{i\\pi/3}\\)",
+                "\\(2e^{-i\\pi/3}\\)",
+                "\\(\\sqrt3e^{i\\pi/6}\\)",
+                "\\(2e^{i2\\pi/3}\\)"
+              ],
+              "answer": 0,
+              "keyPoints": [
+                {
+                  "text": "Express \\(1+\\sqrt3\\,i\\) in the form \\(re^{i\\theta}\\), where \\(r>0\\) and \\(-\\pi<\\theta<\\pi\\).",
+                  "note": "Find the modulus from the real and imaginary components, then use the quadrant to choose the argument."
+                }
+              ]
+            },
+            {
+              "id": "caringbah2020-ext2-q13a-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Find the value of a.",
+              "hint": "Substitute the given root into the equation and compare the real scalar factors after writing \\(1+\\sqrt3 i\\) in polar form.",
+              "solution": "\\(8\\)",
+              "steps": [
+                {
+                  "explain": "Raise the given root to the fourth power: multiply its modulus by itself four times and multiply its argument by four.",
+                  "work": "\\(z^4=(2e^{i\\pi/12})^4=16e^{i\\pi/3}.\\)"
+                },
+                {
+                  "explain": "From the previous part, \\(1+\\sqrt3 i=2e^{i\\pi/3}\\). Substitute this into the right-hand side.",
+                  "work": "\\(a(1+\\sqrt3 i)=2a e^{i\\pi/3}.\\)"
+                },
+                {
+                  "explain": "Both sides have the same argument, so compare their moduli.",
+                  "work": "\\(16=2a\\quad\\Longrightarrow\\quad a=8.\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "13a(ii)",
+                "sourcePage": 8,
+                "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+              },
+              "options": [
+                "\\(4\\)",
+                "\\(8\\)",
+                "\\(16\\)",
+                "\\(32\\)"
+              ],
+              "answer": 1,
+              "keyPoints": [
+                {
+                  "text": "Find the value of a.",
+                  "note": "Substitute the given root into the equation and compare the real scalar factors after writing \\(1+\\sqrt3 i\\) in polar form."
+                }
+              ]
+            },
+            {
+              "id": "caringbah2020-ext2-q13a-iii",
+              "type": "mc",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Find the other three roots of the equation in the form \\(re^{i\\theta}\\), where \\(r>0\\) and \\(-\\pi<\\theta<\\pi\\).",
+              "hint": "Write the equation as \\(z^4=16e^{i\\pi/3}\\). Fourth roots have modulus 2 and arguments separated by \\(2\\pi/4=\\pi/2\\).",
+              "solution": "\\(2e^{i7\\pi/12},\\ 2e^{-i5\\pi/12},\\ 2e^{-i11\\pi/12}\\)",
+              "steps": [
+                {
+                  "explain": "Using \\(a=8\\), the equation becomes \\(z^4=8(1+\\sqrt3 i)=16e^{i\\pi/3}\\). The modulus of each fourth root is \\(16^{1/4}=2\\).",
+                  "work": "\\(|z|=2.\\)"
+                },
+                {
+                  "explain": "The arguments of the fourth roots are \\((\\pi/3+2k\\pi)/4\\), for k=0,1,2,3.",
+                  "work": "\\(\\arg z=\\frac{\\pi}{12}+\\frac{k\\pi}{2},\\quad k=0,1,2,3.\\)"
+                },
+                {
+                  "explain": "The known root is the k=0 root. Use k=1,2,3 and express all arguments in the required interval.",
+                  "work": "\\(k=1:\\frac{7\\pi}{12},\\qquad k=2:\\frac{13\\pi}{12}=-\\frac{11\\pi}{12},\\qquad k=3:\\frac{19\\pi}{12}=-\\frac{5\\pi}{12}.\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "13a(iii)",
+                "sourcePage": 8,
+                "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+              },
+              "options": [
+                "\\(2e^{i7\\pi/12},\\ 2e^{-i5\\pi/12},\\ 2e^{-i11\\pi/12}\\)",
+                "\\(2e^{i\\pi/12},\\ 2e^{i7\\pi/12},\\ 2e^{i13\\pi/12}\\)",
+                "\\(4e^{i7\\pi/12},\\ 4e^{-i5\\pi/12},\\ 4e^{-i11\\pi/12}\\)",
+                "\\(2e^{i5\\pi/12},\\ 2e^{i11\\pi/12},\\ 2e^{-i\\pi/12}\\)"
+              ],
+              "answer": 0,
+              "keyPoints": [
+                {
+                  "text": "Find the other three roots of the equation in the form \\(re^{i\\theta}\\), where \\(r>0\\) and \\(-\\pi<\\theta<\\pi\\).",
+                  "note": "Write the equation as \\(z^4=16e^{i\\pi/3}\\). Fourth roots have modulus 2 and arguments separated by \\(2\\pi/4=\\pi/2\\)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "caringbah2020-ext2-q14a",
+          "type": "multipart",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "Consider the equation \\(z^5+1=0\\).",
+          "hint": "Use the shared diagram and information above, then follow each part in order. The highlighted working figures show which geometric facts are used at each step.",
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 4U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "14",
+            "sourcePage": 9,
+            "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+          },
+          "parts": [
+            {
+              "id": "caringbah2020-ext2-q14a-i",
+              "type": "review",
+              "manual": true,
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Draw a sketch of the roots of \\(z^5+1=0\\) on an Argand diagram.",
+              "hint": "Rewrite the equation as \\(z^5=-1=e^{i(\\pi+2k\\pi)}\\). The five roots lie on the unit circle at equally spaced arguments.",
+              "solution": "The five roots are the unit-circle points at arguments \\(\\pi/5,3\\pi/5,\\pi,7\\pi/5,9\\pi/5\\), as shown in the final step diagram.",
+              "steps": [
+                {
+                  "explain": "Set the fifth power equal to −1 and write −1 in polar form with its full set of arguments.",
+                  "work": "\\(z^5=-1=e^{i(\\pi+2k\\pi)}.\\)"
+                },
+                {
+                  "explain": "Take fifth roots: the modulus is 1 and the arguments are \\((\\pi+2k\\pi)/5\\), for k=0,1,2,3,4.",
+                  "work": "\\(z_k=e^{i(\\pi+2k\\pi)/5},\\quad k=0,1,2,3,4.\\)"
+                },
+                {
+                  "explain": "Plot these five points on the unit circle at arguments \\(\\pi/5,3\\pi/5,\\pi,7\\pi/5,9\\pi/5\\). The final diagram shows all five roots.",
+                  "work": "\\(\\arg z\\in\\left\\{\\frac\\pi5,\\frac{3\\pi}5,\\pi,\\frac{7\\pi}5,\\frac{9\\pi}5\\right\\}.\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 320 260\"><rect width=\"320\" height=\"260\" fill=\"#fff\"/><line x1=\"28\" y1=\"130\" x2=\"292\" y2=\"130\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"160\" y1=\"238\" x2=\"160\" y2=\"22\" stroke=\"#475569\" stroke-width=\"1.8\"/><circle cx=\"160\" cy=\"130\" r=\"78\" fill=\"none\" stroke=\"#cbd5e1\" stroke-width=\"1.4\" stroke-dasharray=\"4 4\"/><g stroke=\"#7c3aed\" stroke-width=\"2.6\" fill=\"#7c3aed\"><circle cx=\"223.1\" cy=\"84.2\" r=\"5\"/><circle cx=\"113.9\" cy=\"55.8\" r=\"5\"/><circle cx=\"82\" cy=\"130\" r=\"5\"/><circle cx=\"113.9\" cy=\"204.2\" r=\"5\"/><circle cx=\"223.1\" cy=\"175.8\" r=\"5\"/></g><g font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\"><text x=\"230\" y=\"80\">π/5</text><text x=\"91\" y=\"47\">3π/5</text><text x=\"49\" y=\"126\">π</text><text x=\"80\" y=\"224\">7π/5</text><text x=\"230\" y=\"193\">9π/5</text><text x=\"296\" y=\"134\">Re</text><text x=\"164\" y=\"20\">Im</text><text x=\"165\" y=\"145\">O</text></g></svg>"
+                  }
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "14a(i)",
+                "sourcePage": 9,
+                "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+              },
+              "keyPoints": [
+                {
+                  "text": "Draw a sketch of the roots of \\(z^5+1=0\\) on an Argand diagram.",
+                  "note": "Rewrite the equation as \\(z^5=-1=e^{i(\\pi+2k\\pi)}\\). The five roots lie on the unit circle at equally spaced arguments."
+                }
+              ],
+              "answer": "The five roots are the unit-circle points at arguments \\(\\pi/5,3\\pi/5,\\pi,7\\pi/5,9\\pi/5\\), as shown in the final step diagram."
+            },
+            {
+              "id": "caringbah2020-ext2-q14a-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Factor \\(z^5+1\\) into irreducible factors with real coefficients.",
+              "hint": "Pair the two non-real conjugate roots at arguments ±π/5 and ±3π/5. Each pair gives a real quadratic \\(z^2-2\\cos(\\theta)z+1\\).",
+              "solution": "\\((z+1)(z^2-\\frac{1+\\sqrt5}{2}z+1)(z^2+\\frac{\\sqrt5-1}{2}z+1)\\)",
+              "steps": [
+                {
+                  "explain": "The real root is \\(z=-1\\), so one factor is \\(z+1\\). Pair each conjugate pair of roots on the unit circle.",
+                  "work": "\\(z^5+1=(z+1)(z^2-2\\cos(\\pi/5)z+1)(z^2-2\\cos(3\\pi/5)z+1).\\)"
+                },
+                {
+                  "explain": "Use the exact values \\(2\\cos(\\pi/5)=(1+\\sqrt5)/2\\) and \\(2\\cos(3\\pi/5)=(1-\\sqrt5)/2\\) to give the irreducible real factors.",
+                  "work": "\\(z^5+1=(z+1)\\left(z^2-\\frac{1+\\sqrt5}{2}z+1\\right)\\left(z^2+\\frac{\\sqrt5-1}{2}z+1\\right).\\)"
+                },
+                {
+                  "explain": "Each quadratic has a non-real conjugate pair of roots, so neither quadratic factors further over the reals.",
+                  "work": "\\(\\boxed{(z+1)\\left(z^2-\\frac{1+\\sqrt5}{2}z+1\\right)\\left(z^2+\\frac{\\sqrt5-1}{2}z+1\\right)}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "14a(ii)",
+                "sourcePage": 9,
+                "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+              },
+              "options": [
+                "\\((z+1)(z^2-\\frac{1+\\sqrt5}{2}z+1)(z^2+\\frac{\\sqrt5-1}{2}z+1)\\)",
+                "\\((z-1)(z^2+\\frac{1+\\sqrt5}{2}z+1)(z^2-\\frac{\\sqrt5-1}{2}z+1)\\)",
+                "\\((z+1)(z^2-\\frac{1+\\sqrt5}{2}z-1)(z^2+\\frac{\\sqrt5-1}{2}z-1)\\)",
+                "\\((z+1)(z^2-\\frac{1+\\sqrt5}{2}z+1)(z^2-\\frac{\\sqrt5-1}{2}z+1)\\)"
+              ],
+              "answer": 0,
+              "keyPoints": [
+                {
+                  "text": "Factor \\(z^5+1\\) into irreducible factors with real coefficients.",
+                  "note": "Pair the two non-real conjugate roots at arguments ±π/5 and ±3π/5. Each pair gives a real quadratic \\(z^2-2\\cos(\\theta)z+1\\)."
+                }
+              ]
+            },
+            {
+              "id": "caringbah2020-ext2-q14a-iii",
+              "type": "review",
+              "manual": true,
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Deduce that \\(\\cos\\frac\\pi5+\\cos\\frac{3\\pi}5=\\frac12\\) and \\(\\cos\\frac\\pi5\\cos\\frac{3\\pi}5=-\\frac14\\).",
+              "hint": "Compare the coefficient of z in the product of the two real quadratic factors with the sum of the cosine values; compare the constant and linear coefficients to obtain the product.",
+              "solution": "\\(u+v=\\frac12\\) and \\(2+4uv=1\\), so \\(uv=-\\frac14\\), for \\(u=\\cos(\\pi/5)\\), \\(v=\\cos(3\\pi/5)\\).",
+              "steps": [
+                {
+                  "explain": "Write the two real quadratic factors as \\((z^2-2u z+1)(z^2-2v z+1)\\), where \\(u=\\cos(\\pi/5)\\), \\(v=\\cos(3\\pi/5)\\).",
+                  "work": "\\((z^2-2uz+1)(z^2-2vz+1)=z^4-2(u+v)z^3+(2+4uv)z^2-2(u+v)z+1.\\)"
+                },
+                {
+                  "explain": "From the factorisation in the previous part, the product of these two quadratics is \\(z^4-z^3+z^2-z+1\\). Compare the z³ coefficients.",
+                  "work": "\\(-2(u+v)=-1\\quad\\Longrightarrow\\quad u+v=\\frac12.\\)"
+                },
+                {
+                  "explain": "Compare the z² coefficients and substitute the known sum.",
+                  "work": "\\(2+4uv=1\\quad\\Longrightarrow\\quad uv=-\\frac14.\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "14a(iii)",
+                "sourcePage": 9,
+                "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+              },
+              "keyPoints": [
+                {
+                  "text": "Deduce that \\(\\cos\\frac\\pi5+\\cos\\frac{3\\pi}5=\\frac12\\) and \\(\\cos\\frac\\pi5\\cos\\frac{3\\pi}5=-\\frac14\\).",
+                  "note": "Compare the coefficient of z in the product of the two real quadratic factors with the sum of the cosine values; compare the constant and linear coefficients to obtain the product."
+                }
+              ],
+              "answer": "\\(u+v=\\frac12\\) and \\(2+4uv=1\\), so \\(uv=-\\frac14\\), for \\(u=\\cos(\\pi/5)\\), \\(v=\\cos(3\\pi/5)\\)."
+            },
+            {
+              "id": "caringbah2020-ext2-q14a-iv",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Write a quadratic equation with integer coefficients which has roots \\(\\cos\\frac\\pi5\\) and \\(\\cos\\frac{3\\pi}5\\). Hence find these two values as surds.",
+              "hint": "Use the sum and product from the previous part as the roots’ sum and product, then apply the quadratic formula.",
+              "solution": "\\(4x^2-2x-1=0;\\;\\cos(\\pi/5)=(1+\\sqrt5)/4,\\;\\cos(3\\pi/5)=(1-\\sqrt5)/4\\)",
+              "steps": [
+                {
+                  "explain": "Let the two roots be u and v. From the previous part, \\(u+v=1/2\\) and \\(uv=-1/4\\). The monic quadratic is \\(x^2-(u+v)x+uv=0\\).",
+                  "work": "\\(x^2-\\frac12x-\\frac14=0.\\)"
+                },
+                {
+                  "explain": "Multiply by 4 to obtain integer coefficients.",
+                  "work": "\\(4x^2-2x-1=0.\\)"
+                },
+                {
+                  "explain": "Solve with the quadratic formula. The larger root is \\(\\cos(\\pi/5)\\) and the smaller is \\(\\cos(3\\pi/5)\\).",
+                  "work": "\\(x=\\frac{2\\pm\\sqrt{(-2)^2-4(4)(-1)}}{8}=\\frac{2\\pm\\sqrt{20}}8=\\frac{1\\pm\\sqrt5}{4}.\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "14a(iv)",
+                "sourcePage": 9,
+                "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+              },
+              "options": [
+                "\\(4x^2-2x-1=0;\\quad \\cos\\frac\\pi5=\\frac{1+\\sqrt5}{4},\\ \\cos\\frac{3\\pi}5=\\frac{1-\\sqrt5}{4}\\)",
+                "\\(4x^2+2x-1=0;\\quad \\cos\\frac\\pi5=\\frac{-1+\\sqrt5}{4},\\ \\cos\\frac{3\\pi}5=\\frac{-1-\\sqrt5}{4}\\)",
+                "\\(4x^2-2x+1=0;\\quad \\cos\\frac\\pi5=\\frac{1+\\sqrt5}{4},\\ \\cos\\frac{3\\pi}5=\\frac{1-\\sqrt5}{4}\\)",
+                "\\(x^2-\\frac12x-\\frac14=0;\\quad \\cos\\frac\\pi5=\\frac{1+\\sqrt5}{4},\\ \\cos\\frac{3\\pi}5=\\frac{1-\\sqrt5}{4}\\)"
+              ],
+              "answer": 0,
+              "keyPoints": [
+                {
+                  "text": "Write a quadratic equation with integer coefficients which has roots \\(\\cos\\frac\\pi5\\) and \\(\\cos\\frac{3\\pi}5\\). Hence find these two values as surds.",
+                  "note": "Use the sum and product from the previous part as the roots’ sum and product, then apply the quadratic formula."
                 }
               ]
             }

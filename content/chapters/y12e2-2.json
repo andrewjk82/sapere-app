@@ -117,21 +117,21 @@
           "type": "mc",
           "difficulty": "medium",
           "timeLimit": 60,
-          "stem": "Negate: \\(\\exists x\\in\\mathbb R^+,\\ \\fracorall y\\in\\mathbb R^+: xy=1\\).",
+          "stem": "Negate: \\(\\exists x\\in\\mathbb R^+,\\ \\\forall y\\in\\mathbb R^+: xy=1\\).",
           "hint": "Negate each quantifier in turn and negate the statement after the quantifiers.",
-          "solution": "\\(\\fracorall x\\in\\mathbb R^+,\\exists y\\in\\mathbb R^+:xy\ne1\\)",
+          "solution": "\\(\\\forall x\\in\\mathbb R^+,\\exists y\\in\\mathbb R^+:xy \\neq 1\\)",
           "steps": [
             {
               "explain": "Negate the existential quantifier.",
-              "work": "\\(\neg\\exists x\\) becomes \\(\\fracorall x\\)."
+              "work": "\\(\neg\\exists x\\) becomes \\(\\\forall x\\)."
             },
             {
               "explain": "Negate the universal quantifier.",
-              "work": "\\(\neg\\fracorall y\\) becomes \\(\\exists y\\)."
+              "work": "\\(\neg\\\forall y\\) becomes \\(\\exists y\\)."
             },
             {
               "explain": "Negate the equality.",
-              "work": "\\(xy=1\\) becomes \\(xy\ne1\\)."
+              "work": "\\(xy=1\\) becomes \\(xy \\neq 1\\)."
             }
           ],
           "xp": 1,
@@ -140,15 +140,15 @@
             "school": "Abbotsleigh"
           },
           "options": [
-            "\\(\\fracorall x\\in\\mathbb R^+,\\exists y\\in\\mathbb R^+:xy\ne1\\)",
-            "\\(\\exists x\\in\\mathbb R^+,\\fracorall y\\in\\mathbb R^+:xy\ne1\\)",
-            "\\(\\fracorall x\\in\\mathbb R^+,\\fracorall y\\in\\mathbb R^+:xy\ne1\\)",
-            "\\(\\exists x\\in\\mathbb R^+,\\exists y\\in\\mathbb R^+:xy\ne1\\)"
+            "\\(\\\forall x\\in\\mathbb R^+,\\exists y\\in\\mathbb R^+:xy \\neq 1\\)",
+            "\\(\\exists x\\in\\mathbb R^+,\\\forall y\\in\\mathbb R^+:xy \\neq 1\\)",
+            "\\(\\\forall x\\in\\mathbb R^+,\\\forall y\\in\\mathbb R^+:xy \\neq 1\\)",
+            "\\(\\exists x\\in\\mathbb R^+,\\exists y\\in\\mathbb R^+:xy \\neq 1\\)"
           ],
           "answer": 0,
           "keyPoints": [
             {
-              "text": "Negate: \\(\\exists x\\in\\mathbb R^+,\\ \\fracorall y\\in\\mathbb R^+: xy=1\\)",
+              "text": "Negate: \\(\\exists x\\in\\mathbb R^+,\\ \\\forall y\\in\\mathbb R^+: xy=1\\)",
               "note": "Negate each quantifier in turn and negate the statement after the quantifiers."
             }
           ]
@@ -625,7 +625,8 @@
               "text": "It is given that \\(a>0\\) and \\(b>0\\) are real numbers. Consider the statement \\(\\forall a(\\forall b,\\log_{1/a}(1/b)=\\log_a b)\\). Prove that the statement is true.",
               "note": "Rewrite each logarithm using natural logarithms. Track the negative signs from \\(\\ln(1/a)=-\\ln a\\) and \\(\\ln(1/b)=-\\ln b\\)."
             }
-          ]
+          ],
+          "answer": "For a positive base different from 1, \\(\\log_{1/a}(1/b)=\\frac{\\ln(1/b)}{\\ln(1/a)}=\\frac{-\\ln b}{-\\ln a}=\\frac{\\ln b}{\\ln a}=\\log_a b\\). The source statement omits the necessary restriction \\(a\\ne1\\); at \\(a=1\\), both sides are undefined."
         }
       ]
     },
@@ -1419,7 +1420,8 @@
               "text": "Use proof by contradiction to show that \\(\\log_2 5\\) is irrational.",
               "note": "Assume the logarithm is rational and write it as a fraction in lowest terms. Exponentiate to turn the claim into an equation involving powers of 2 and 5."
             }
-          ]
+          ],
+          "answer": "Assuming \\(\\log_2 5=p/q\\) in lowest terms gives \\(2^p=5^q\\), an even number equal to an odd number. This contradiction proves \\(\\log_2 5\\) is irrational."
         }
       ]
     },
@@ -2024,7 +2026,8 @@
                   "text": "Prove that \\((a+b+c)(\\frac1a+\\frac1b+\\frac1c)\\ge9\\) for any real numbers a>0, b>0, c>0.",
                   "note": "Expand the product into three 1 terms and three pairs such as \\(a/b+b/a\\). Apply the supplied inequality to each positive ratio."
                 }
-              ]
+              ],
+              "answer": "The expansion is \\(3+(a/b+b/a)+(a/c+c/a)+(b/c+c/b)\\). Each parenthesised pair is at least 2 by the supplied \\(x+1/x\\ge2\\), so the product is at least \\(3+2+2+2=9\\)."
             },
             {
               "id": "caringbah2020-ext2-q15a-ii",
@@ -2063,7 +2066,8 @@
                   "text": "Prove that \\(\\frac{a}{b+c}+\\frac{b}{c+a}+\\frac{c}{a+b}\\ge\\frac32\\) for any real numbers a>0, b>0, c>0, by using the result in the previous part and transformations of the form \\(a\\to a+b\\).",
                   "note": "In the previous inequality substitute the three positive values \\(a+b\\), \\(b+c\\), and \\(c+a\\). Then rewrite each total-over-pair term as 1 plus the corresponding fraction."
                 }
-              ]
+              ],
+              "answer": "Substitute \\(A=a+b,B=b+c,C=c+a\\) into the previous result. Then \\(A+B+C=2(a+b+c)\\), so \\((a+b+c)(1/(a+b)+1/(b+c)+1/(c+a))\\ge9/2\\). Since \\((a+b+c)/(b+c)=1+a/(b+c)\\) and cyclically, the left side is \\(3+a/(b+c)+b/(c+a)+c/(a+b)\\). Subtract 3 to obtain the required \\(3/2\\)."
             }
           ]
         }

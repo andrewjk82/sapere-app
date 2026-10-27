@@ -877,16 +877,16 @@
           "solution": "\\(\\operatorname{Im}z=\\frac{z-\\bar z}{2i}\\)",
           "steps": [
             {
-              "explain": "Let an arbitrary complex number be \\(z=x+iy\\), where \\(x,y\\in\\mathbb R\\). Its conjugate is \\(\\barar z=x-iy\\).",
-              "work": "\\(z-\\barar z=(x+iy)-(x-iy)=2iy.\\)"
+              "explain": "Let an arbitrary complex number be \\(z=x+iy\\), where \\(x,y\\in\\mathbb R\\). Its conjugate is \\(\\bar z=x-iy\\).",
+              "work": "\\(z-\\bar z=(x+iy)-(x-iy)=2iy.\\)"
             },
             {
               "explain": "Divide the difference by \\(2i\\). This removes the factor \\(2i\\) and leaves the imaginary component.",
-              "work": "\\(\\fracrac{z-\\barar z}{2i}=\\fracrac{2iy}{2i}=y=\\operatorname{Im}z.\\)"
+              "work": "\\(\\frac{z-\\bar z}{2i}=\\frac{2iy}{2i}=y=\\operatorname{Im}z.\\)"
             },
             {
               "explain": "The identity holds for every real pair \\((x,y)\\), so option A is the statement true for every complex number.",
-              "work": "\\(\\operatorname{Im}z=\\fracrac{z-\\barar z}{2i}.\\)"
+              "work": "\\(\\operatorname{Im}z=\\frac{z-\\bar z}{2i}.\\)"
             }
           ],
           "xp": 1,
@@ -1777,7 +1777,7 @@
           "type": "multipart",
           "difficulty": "hard",
           "timeLimit": 60,
-          "stem": "In an Argand diagram, the point P represents \\(z_1=3+2i\\), the point Q represents \\(z_2=\\fracrac{12-5i}{z_1}\\), and O is the origin. The number \\(z_3\\) represents the centre C of the circle passing through P, Q and O.",
+          "stem": "In an Argand diagram, the point P represents \\(z_1=3+2i\\), the point Q represents \\(z_2=\\frac{12-5i}{z_1}\\), and O is the origin. The number \\(z_3\\) represents the centre C of the circle passing through P, Q and O.",
           "hint": "Work through the linked parts in order; use each result only where the next part needs it.",
           "xp": 1,
           "meta": {
@@ -1800,7 +1800,7 @@
               "steps": [
                 {
                   "explain": "Substitute \\(z_1=3+2i\\), then multiply top and bottom by the conjugate of the denominator so the denominator becomes real.",
-                  "work": "\\(z_2=\\fracrac{12-5i}{3+2i}\\cdot\\fracrac{3-2i}{3-2i}=\\fracrac{(12-5i)(3-2i)}{3^2+2^2}.\\)"
+                  "work": "\\(z_2=\\frac{12-5i}{3+2i}\\cdot\\frac{3-2i}{3-2i}=\\frac{(12-5i)(3-2i)}{3^2+2^2}.\\)"
                 },
                 {
                   "explain": "Expand the numerator, using \\(i^2=-1\\), and simplify the denominator.",
@@ -1808,7 +1808,7 @@
                 },
                 {
                   "explain": "Divide both real and imaginary parts by 13.",
-                  "work": "\\(z_2=\\fracrac{26-39i}{13}=2-3i.\\)"
+                  "work": "\\(z_2=\\frac{26-39i}{13}=2-3i.\\)"
                 }
               ],
               "xp": 1,
@@ -1840,17 +1840,21 @@
               "manual": true,
               "difficulty": "hard",
               "timeLimit": 60,
-              "stem": "Show that \\(\\anglengle POQ=\\fracrac{\\pi}{2}\\).",
+              "stem": "Show that \\(\\angle POQ=\\frac{\\pi}{2}\\).",
               "hint": "Use the complex numbers from the previous part to compare their lengths and their dot product, or show that multiplying one by i gives the other.",
               "solution": "\\(iz_2=z_1\\), so P and Q lie on perpendicular radii of equal length and \\(\\angle POQ=\\frac{\\pi}{2}\\).",
               "steps": [
                 {
-                  "explain": "From the previous part, \\(z_2=2-3i\\) and \\(z_1=3+2i\\). Multiplication by \\(i\\) rotates a complex number through \\(\\fracrac{\\pi}{2}\\) anticlockwise.",
-                  "work": "\\(iz_2=i(2-3i)=3+2i=z_1.\\)"
+                  "explain": "From the previous part, \\(z_2=2-3i\\). Multiply by \\(i\\) and use \\(i^2=-1\\).",
+                  "work": "\\(iz_2=i(2-3i)=2i-3i^2=3+2i=z_1.\\)"
                 },
                 {
-                  "explain": "Thus the vectors \\(\\overrightarrow{OQ}\\) and \\(\\overrightarrow{OP}\\) have equal lengths and differ in direction by a quarter-turn. Therefore the angle between OP and OQ is a right angle.",
-                  "work": "\\(\\anglengle POQ=\\fracrac{\\pi}{2}.\\)"
+                  "explain": "Multiplication by \\(i\\) rotates a complex number anticlockwise by \\(\\frac{\\pi}{2}\\). The modulus does not change, so the vectors OQ and OP have equal lengths.",
+                  "work": "\\(|z_1|=|iz_2|=|z_2|,\\qquad \\arg z_1=\\arg z_2+\\frac{\\pi}{2}.\\)"
+                },
+                {
+                  "explain": "Therefore OP and OQ are perpendicular. The requested angle at O is a right angle.",
+                  "work": "\\(\\angle POQ=\\frac{\\pi}{2}=90^\\circ.\\)"
                 }
               ],
               "xp": 1,
@@ -1864,10 +1868,11 @@
               },
               "keyPoints": [
                 {
-                  "text": "Show that \\(\\anglengle POQ=\\fracrac{\\pi}{2}\\).",
+                  "text": "Show that \\(\\angle POQ=\\frac{\\pi}{2}\\).",
                   "note": "Use the complex numbers from the previous part to compare their lengths and their dot product, or show that multiplying one by i gives the other."
                 }
-              ]
+              ],
+              "answer": "\\(iz_2=z_1\\), so P and Q lie on perpendicular radii of equal length and \\(\\angle POQ=\\frac{\\pi}{2}\\)."
             },
             {
               "id": "caringbah2020-ext2-q11b-iii",
@@ -1879,12 +1884,16 @@
               "solution": "\\(z_3=\\frac52-\\frac12i\\)",
               "steps": [
                 {
-                  "explain": "The right angle is at O, so PQ is the hypotenuse of triangle OPQ. The centre of a circle through the vertices of a right triangle is the midpoint of its hypotenuse.",
-                  "work": "\\(z_3=\\fracrac{z_1+z_2}{2}.\\)"
+                  "explain": "The previous part established that triangle OPQ is right-angled at O. In a right triangle, the circumcentre is the midpoint of the hypotenuse PQ.",
+                  "work": "\\(C\\text{ is the midpoint of }PQ.\\)"
                 },
                 {
-                  "explain": "Add the two complex numbers and divide each component by 2.",
-                  "work": "\\(z_3=\\fracrac{(3+2i)+(2-3i)}{2}=\\fracrac{5-i}{2}=\\fracrac52-\\fracrac12i.\\)"
+                  "explain": "The complex number for the midpoint of points represented by \\(z_1\\) and \\(z_2\\) is their average.",
+                  "work": "\\(z_3=\\frac{z_1+z_2}{2}.\\)"
+                },
+                {
+                  "explain": "Substitute both values and combine real and imaginary parts, then divide each by 2.",
+                  "work": "\\(z_3=\\frac{(3+2i)+(2-3i)}{2}=\\frac{5-i}{2}=\\frac52-\\frac12i.\\)"
                 }
               ],
               "xp": 1,
@@ -2645,6 +2654,214 @@
             {
               "text": "Sketch the region",
               "note": "z − 1 + i = z − (1 − i): a ring and a sector centred at (1, −1)."
+            }
+          ]
+        },
+        {
+          "id": "caringbah2020-ext2-q15c",
+          "type": "multipart",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "In the Argand diagram, the points A and B represent \\(z_1\\) and \\(z_2\\), respectively. \\(\\angle AOB=\\frac{\\pi}{2}\\) and \\(OA=OB\\).",
+          "hint": "Use the right-angle rotation and equal-length information in the diagram. For the two loci, translate each modulus or argument condition into its geometric meaning.",
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 4U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "15c",
+            "sourcePage": 11,
+            "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 300 260\"><rect width=\"300\" height=\"260\" fill=\"#fff\"/><line x1=\"18\" y1=\"205\" x2=\"284\" y2=\"205\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/><line x1=\"90\" y1=\"244\" x2=\"90\" y2=\"18\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/><text x=\"284\" y=\"209\" font-family=\"Arial\" font-size=\"11\" fill=\"#475569\">Re</text><text x=\"94\" y=\"18\" font-family=\"Arial\" font-size=\"11\" fill=\"#475569\">Im</text><line x1=\"90\" y1=\"205\" x2=\"162\" y2=\"169\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/><line x1=\"90\" y1=\"205\" x2=\"54\" y2=\"133\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/><path d=\"M106 197 A18 18 0 0 0 82 189\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"2\"/><text x=\"99\" y=\"177\" font-family=\"Arial\" font-size=\"10\" fill=\"#c2410c\">90°</text><path d=\"M124 180 L128 194 M69 171 L75 167\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"90\" cy=\"205\" r=\"3.2\" fill=\"#0f172a\"/><circle cx=\"162\" cy=\"169\" r=\"3.2\" fill=\"#0f172a\"/><circle cx=\"54\" cy=\"133\" r=\"3.2\" fill=\"#0f172a\"/><text x=\"80\" y=\"224\" font-family=\"Arial\" font-size=\"12\">O</text><text x=\"168\" y=\"171\" font-family=\"Arial\" font-size=\"12\">A</text><text x=\"41\" y=\"129\" font-family=\"Arial\" font-size=\"12\">B</text></svg>"
+          },
+          "parts": [
+            {
+              "id": "caringbah2020-ext2-q15c-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Express \\(z_2\\) in terms of \\(z_1\\).",
+              "hint": "Multiplication by i rotates an Argand point 90° anticlockwise without changing its modulus. Compare the direction from OA to OB in the diagram.",
+              "solution": "\\(z_2=iz_1\\)",
+              "steps": [
+                {
+                  "explain": "The equal tick marks show \\(OA=OB\\), so the complex numbers have equal moduli. The marked directed angle from OA to OB is a quarter-turn anticlockwise.",
+                  "work": "\\(|z_2|=|z_1|,\\qquad \\arg z_2=\\arg z_1+\\frac{\\pi}{2}.\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 300 260\"><rect width=\"300\" height=\"260\" fill=\"#fff\"/><line x1=\"18\" y1=\"205\" x2=\"284\" y2=\"205\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/><line x1=\"90\" y1=\"244\" x2=\"90\" y2=\"18\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/><text x=\"284\" y=\"209\" font-family=\"Arial\" font-size=\"11\" fill=\"#475569\">Re</text><text x=\"94\" y=\"18\" font-family=\"Arial\" font-size=\"11\" fill=\"#475569\">Im</text><line x1=\"90\" y1=\"205\" x2=\"162\" y2=\"169\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/><line x1=\"90\" y1=\"205\" x2=\"54\" y2=\"133\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/><path d=\"M106 197 A18 18 0 0 0 82 189\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"2\"/><text x=\"99\" y=\"177\" font-family=\"Arial\" font-size=\"10\" fill=\"#c2410c\">90°</text><path d=\"M124 180 L128 194 M69 171 L75 167\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M151 176 Q125 136 79 155\" fill=\"none\" stroke=\"#0ea5e9\" stroke-width=\"2.3\" stroke-dasharray=\"4 3\"/><path d=\"M78 155 L87 152 L84 161 Z\" fill=\"#0ea5e9\"/><text x=\"116\" y=\"143\" font-family=\"Arial\" font-size=\"11\" fill=\"#0369a1\">× i</text><circle cx=\"90\" cy=\"205\" r=\"3.2\" fill=\"#0f172a\"/><circle cx=\"162\" cy=\"169\" r=\"3.2\" fill=\"#0f172a\"/><circle cx=\"54\" cy=\"133\" r=\"3.2\" fill=\"#0f172a\"/><text x=\"80\" y=\"224\" font-family=\"Arial\" font-size=\"12\">O</text><text x=\"168\" y=\"171\" font-family=\"Arial\" font-size=\"12\">A</text><text x=\"41\" y=\"129\" font-family=\"Arial\" font-size=\"12\">B</text></svg>"
+                  }
+                },
+                {
+                  "explain": "A counterclockwise rotation of \\(\\frac{\\pi}{2}\\) radians multiplies a complex number by \\(e^{i\\pi/2}=i\\).",
+                  "work": "\\(z_2=|z_1|e^{i(\\arg z_1+\\pi/2)}=e^{i\\pi/2}z_1=iz_1.\\)"
+                },
+                {
+                  "explain": "This relation has the same modulus and the required direction, so it represents point B in terms of point A.",
+                  "work": "\\(\\boxed{z_2=iz_1}.\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "15ci",
+                "sourcePage": 11,
+                "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+              },
+              "options": [
+                "\\(z_2=iz_1\\)",
+                "\\(z_2=-iz_1\\)",
+                "\\(z_2=\\bar z_1\\)",
+                "\\(z_2=-z_1\\)"
+              ],
+              "answer": 0,
+              "keyPoints": [
+                {
+                  "text": "Express \\(z_2\\) in terms of \\(z_1\\).",
+                  "note": "Multiplication by i rotates an Argand point 90° anticlockwise without changing its modulus. Compare the direction from OA to OB in the diagram."
+                }
+              ]
+            },
+            {
+              "id": "caringbah2020-ext2-q15c-ii",
+              "type": "review",
+              "manual": true,
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Copy the diagram and on it draw the locus \\(L_1\\) of points satisfying \\(|z-z_1|=|z-z_2|\\).",
+              "hint": "The condition says a point is equally far from A and B. The locus is the perpendicular bisector of segment AB.",
+              "solution": "Draw the perpendicular bisector of AB: a straight line through the midpoint of AB and perpendicular to AB.",
+              "steps": [
+                {
+                  "explain": "For a general point P represented by z, the distances from P to A and B are \\(|z-z_1|\\) and \\(|z-z_2|\\).",
+                  "work": "\\(|z-z_1|=|z-z_2|\\quad\\Longrightarrow\\quad PA=PB.\\)"
+                },
+                {
+                  "explain": "The set of points equidistant from A and B is the perpendicular bisector of segment AB. It passes through the midpoint of AB and meets AB at 90 degrees.",
+                  "work": "\\(L_1\\perp AB\\quad\\text{and}\\quad L_1\\text{ passes through the midpoint of }AB.\\)"
+                },
+                {
+                  "explain": "Copy the diagram, mark the midpoint of AB, and draw the perpendicular bisector through it. The purple line is the required locus.",
+                  "work": "\\(L_1=\\text{perpendicular bisector of }AB.\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 300 260\"><rect width=\"300\" height=\"260\" fill=\"#fff\"/><line x1=\"18\" y1=\"205\" x2=\"284\" y2=\"205\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/><line x1=\"90\" y1=\"244\" x2=\"90\" y2=\"18\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/><text x=\"284\" y=\"209\" font-family=\"Arial\" font-size=\"11\" fill=\"#475569\">Re</text><text x=\"94\" y=\"18\" font-family=\"Arial\" font-size=\"11\" fill=\"#475569\">Im</text><line x1=\"90\" y1=\"205\" x2=\"162\" y2=\"169\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/><line x1=\"90\" y1=\"205\" x2=\"54\" y2=\"133\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/><path d=\"M106 197 A18 18 0 0 0 82 189\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"2\"/><text x=\"99\" y=\"177\" font-family=\"Arial\" font-size=\"10\" fill=\"#c2410c\">90°</text><path d=\"M124 180 L128 194 M69 171 L75 167\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"78\" y1=\"241\" x2=\"153\" y2=\"16\" stroke=\"#7c3aed\" stroke-width=\"2.4\"/><text x=\"142\" y=\"50\" font-family=\"Arial\" font-size=\"12\" font-style=\"italic\" fill=\"#7c3aed\">L1</text><circle cx=\"90\" cy=\"205\" r=\"3.2\" fill=\"#0f172a\"/><circle cx=\"162\" cy=\"169\" r=\"3.2\" fill=\"#0f172a\"/><circle cx=\"54\" cy=\"133\" r=\"3.2\" fill=\"#0f172a\"/><text x=\"80\" y=\"224\" font-family=\"Arial\" font-size=\"12\">O</text><text x=\"168\" y=\"171\" font-family=\"Arial\" font-size=\"12\">A</text><text x=\"41\" y=\"129\" font-family=\"Arial\" font-size=\"12\">B</text></svg>"
+                  }
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "15cii",
+                "sourcePage": 11,
+                "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+              },
+              "keyPoints": [
+                {
+                  "text": "draw the locus \\(L_1\\) of points satisfying \\(|z-z_1|=|z-z_2|\\).",
+                  "note": "The condition says a point is equally far from A and B. The locus is the perpendicular bisector of segment AB."
+                }
+              ],
+              "answer": "Draw the perpendicular bisector of AB: a straight line through the midpoint of AB and perpendicular to AB."
+            },
+            {
+              "id": "caringbah2020-ext2-q15c-iii",
+              "type": "review",
+              "manual": true,
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "On your diagram draw the locus \\(L_2\\) of points satisfying \\(\\arg(z-z_2)=\\arg z_1\\).",
+              "hint": "The complex number \\(z-z_2\\) is the vector from B to the moving point. Its argument must match the direction of OA.",
+              "solution": "Draw the ray starting at B in the same direction as OA. The starting point B is excluded because arg(0) is undefined.",
+              "steps": [
+                {
+                  "explain": "The difference \\(z-z_2\\) is the vector from B to P, so its argument gives the direction of the ray starting at B.",
+                  "work": "\\(\\arg(z-z_2)=\\arg z_1.\\)"
+                },
+                {
+                  "explain": "The right-hand side is the direction of OA. Therefore the ray from B must be parallel to OA and point in the same direction.",
+                  "work": "\\(L_2\\parallel OA,\\quad\\text{with direction from }B\\text{ matching }O\\to A.\\)"
+                },
+                {
+                  "explain": "Draw that directed ray on the copied diagram. Do not include B itself, since \\(\\arg(0)\\) is undefined. The blue ray is the required locus.",
+                  "work": "\\(L_2=\\text{ray from }B\\text{ parallel to and directed like }OA,\\quad B\\notin L_2.\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 300 260\"><rect width=\"300\" height=\"260\" fill=\"#fff\"/><line x1=\"18\" y1=\"205\" x2=\"284\" y2=\"205\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/><line x1=\"90\" y1=\"244\" x2=\"90\" y2=\"18\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/><text x=\"284\" y=\"209\" font-family=\"Arial\" font-size=\"11\" fill=\"#475569\">Re</text><text x=\"94\" y=\"18\" font-family=\"Arial\" font-size=\"11\" fill=\"#475569\">Im</text><line x1=\"90\" y1=\"205\" x2=\"162\" y2=\"169\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/><line x1=\"90\" y1=\"205\" x2=\"54\" y2=\"133\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/><path d=\"M106 197 A18 18 0 0 0 82 189\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"2\"/><text x=\"99\" y=\"177\" font-family=\"Arial\" font-size=\"10\" fill=\"#c2410c\">90°</text><path d=\"M124 180 L128 194 M69 171 L75 167\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"78\" y1=\"241\" x2=\"153\" y2=\"16\" stroke=\"#a78bfa\" stroke-width=\"2.4\"/><text x=\"142\" y=\"50\" font-family=\"Arial\" font-size=\"12\" font-style=\"italic\" fill=\"#a78bfa\">L1</text><line x1=\"54\" y1=\"133\" x2=\"201\" y2=\"59.5\" stroke=\"#0ea5e9\" stroke-width=\"2.5\"/><text x=\"184\" y=\"75\" font-family=\"Arial\" font-size=\"12\" font-style=\"italic\" fill=\"#0369a1\">L2</text><circle cx=\"90\" cy=\"205\" r=\"3.2\" fill=\"#0f172a\"/><circle cx=\"162\" cy=\"169\" r=\"3.2\" fill=\"#0f172a\"/><circle cx=\"54\" cy=\"133\" r=\"3.2\" fill=\"#0f172a\"/><text x=\"80\" y=\"224\" font-family=\"Arial\" font-size=\"12\">O</text><text x=\"168\" y=\"171\" font-family=\"Arial\" font-size=\"12\">A</text><text x=\"41\" y=\"129\" font-family=\"Arial\" font-size=\"12\">B</text></svg>"
+                  }
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "15ciii",
+                "sourcePage": 11,
+                "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+              },
+              "keyPoints": [
+                {
+                  "text": "draw the locus \\(L_2\\) of points satisfying \\(\\arg(z-z_2)=\\arg z_1\\).",
+                  "note": "The complex number \\(z-z_2\\) is the vector from B to the moving point. Its argument must match the direction of OA."
+                }
+              ],
+              "answer": "Draw the ray starting at B in the same direction as OA. The starting point B is excluded because arg(0) is undefined."
+            },
+            {
+              "id": "caringbah2020-ext2-q15c-iv",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Find, in terms of \\(z_1\\), the complex number representing the point of intersection of \\(L_1\\) and \\(L_2\\).",
+              "hint": "Use \\(z_2=iz_1\\), parameterise the ray from B in the direction z1, and impose equal distances to A and B.",
+              "solution": "\\((1+i)z_1\\)",
+              "steps": [
+                {
+                  "explain": "Since L₂ starts at B and points in the direction of z₁, write a general point on it as \\(z=z_2+t z_1\\), where \\(t\\ge0\\). Use \\(z_2=iz_1\\) from the first part.",
+                  "work": "\\(z=(i+t)z_1,\\qquad t\\ge0.\\)"
+                },
+                {
+                  "explain": "For this point to lie on L₁, its distances to A and B must be equal. Factor out the common modulus \\(|z_1|\\), which is nonzero.",
+                  "work": "\\(|z-z_1|=|z-z_2|\\quad\\Longrightarrow\\quad|(t+i-1)z_1|=|tz_1|\\quad\\Longrightarrow\\quad|t-1+i|=t.\\)"
+                },
+                {
+                  "explain": "Square both nonnegative sides and solve for the ray parameter.",
+                  "work": "\\((t-1)^2+1=t^2\\quad\\Longrightarrow\\quad t^2-2t+2=t^2\\quad\\Longrightarrow\\quad t=1.\\)"
+                },
+                {
+                  "explain": "Substitute t=1. The final figure shows the intersection C of the perpendicular bisector L₁ and the directed ray L₂.",
+                  "work": "\\(z=(i+1)z_1=(1+i)z_1.\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 300 260\"><rect width=\"300\" height=\"260\" fill=\"#fff\"/><line x1=\"18\" y1=\"205\" x2=\"284\" y2=\"205\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/><line x1=\"90\" y1=\"244\" x2=\"90\" y2=\"18\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/><text x=\"284\" y=\"209\" font-family=\"Arial\" font-size=\"11\" fill=\"#475569\">Re</text><text x=\"94\" y=\"18\" font-family=\"Arial\" font-size=\"11\" fill=\"#475569\">Im</text><polygon points=\"90,205 162,169 126,97 54,133\" fill=\"#f5f3ff\" fill-opacity=\"0.32\" stroke=\"none\"/><line x1=\"90\" y1=\"205\" x2=\"162\" y2=\"169\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/><line x1=\"90\" y1=\"205\" x2=\"54\" y2=\"133\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/><path d=\"M106 197 A18 18 0 0 0 82 189\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"2\"/><text x=\"99\" y=\"177\" font-family=\"Arial\" font-size=\"10\" fill=\"#c2410c\">90°</text><path d=\"M124 180 L128 194 M69 171 L75 167\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"78\" y1=\"241\" x2=\"153\" y2=\"16\" stroke=\"#7c3aed\" stroke-width=\"2.4\"/><text x=\"142\" y=\"50\" font-family=\"Arial\" font-size=\"12\" font-style=\"italic\" fill=\"#7c3aed\">L1</text><line x1=\"54\" y1=\"133\" x2=\"201\" y2=\"59.5\" stroke=\"#0ea5e9\" stroke-width=\"2.5\"/><text x=\"184\" y=\"75\" font-family=\"Arial\" font-size=\"12\" font-style=\"italic\" fill=\"#0369a1\">L2</text><line x1=\"162\" y1=\"169\" x2=\"126\" y2=\"97\" stroke=\"#cbd5e1\" stroke-width=\"1.6\"/><line x1=\"54\" y1=\"133\" x2=\"126\" y2=\"97\" stroke=\"#cbd5e1\" stroke-width=\"1.6\"/><circle cx=\"126\" cy=\"97\" r=\"4\" fill=\"#16a34a\"/><text x=\"133\" y=\"113\" font-family=\"Arial\" font-size=\"12\" font-weight=\"700\" fill=\"#15803d\">C</text><circle cx=\"90\" cy=\"205\" r=\"3.2\" fill=\"#0f172a\"/><circle cx=\"162\" cy=\"169\" r=\"3.2\" fill=\"#0f172a\"/><circle cx=\"54\" cy=\"133\" r=\"3.2\" fill=\"#0f172a\"/><text x=\"80\" y=\"224\" font-family=\"Arial\" font-size=\"12\">O</text><text x=\"168\" y=\"171\" font-family=\"Arial\" font-size=\"12\">A</text><text x=\"41\" y=\"129\" font-family=\"Arial\" font-size=\"12\">B</text></svg>"
+                  }
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "15civ",
+                "sourcePage": 11,
+                "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+              },
+              "options": [
+                "\\((1+i)z_1\\)",
+                "\\((1-i)z_1\\)",
+                "\\(iz_1\\)",
+                "\\(2z_1\\)"
+              ],
+              "answer": 0,
+              "keyPoints": [
+                {
+                  "text": "Find, in terms of \\(z_1\\), the complex number representing the point of intersection of \\(L_1\\) and \\(L_2\\).",
+                  "note": "Use \\(z_2=iz_1\\), parameterise the ray from B in the direction z1, and impose equal distances to A and B."
+                }
+              ]
             }
           ]
         }

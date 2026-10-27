@@ -860,7 +860,7 @@
             "\\(-\\frac{a}{|x|\\sqrt{x^2-a^2}}\\)"
           ],
           "answer": 3,
-          "hint": "Apply the derivative of arcsin(u) and the chain rule to u=a/x. Keep the absolute value when simplifying the square root.",
+          "hint": "Apply the derivative of \\(\\sin^{-1} u\\) and the chain rule to \\(u = \\frac{a}{x}\\). Keep the absolute value when simplifying the square root.",
           "keyPoints": [
             {
               "text": "\\(y=\\sin^{-1}\\left(\\frac{a}{x}\\right)\\)",
@@ -869,20 +869,20 @@
           ],
           "steps": [
             {
-              "explain": "Let u=a/x to separate the inner function from arcsin.",
-              "work": "\\(u=\\frac ax,\\quad y=\\sin^{-1}u\\)"
+              "explain": "Let \\(u = \\frac{a}{x}\\) to separate the inner function from \\(\\sin^{-1}\\).",
+              "work": "\\(u = \\frac{a}{x},\\quad y = \\sin^{-1} u\\)"
             },
             {
               "explain": "Differentiate the inner function.",
-              "work": "\\(u'=-\\frac a{x^2}\\)"
+              "work": "\\(u' = -\\frac{a}{x^2}\\)"
             },
             {
-              "explain": "Apply the inverse-sine chain rule and substitute u.",
-              "work": "\\(y'=\\frac{u'}{\\sqrt{1-u^2}}=\\frac{-a/x^2}{\\sqrt{1-a^2/x^2}}\\)"
+              "explain": "Apply the inverse-sine chain rule and substitute \\(u\\).",
+              "work": "\\(y' = \\frac{u'}{\\sqrt{1-u^2}} = \\frac{-\\frac{a}{x^2}}{\\sqrt{1-\\frac{a^2}{x^2}}}\\)"
             },
             {
-              "explain": "Rewrite the radical using √(x²)=|x|, then simplify.",
-              "work": "\\(\\sqrt{1-a^2/x^2}=\\frac{\\sqrt{x^2-a^2}}{|x|}\\Rightarrow y'=-\\frac{a}{|x|\\sqrt{x^2-a^2}}\\)"
+              "explain": "Rewrite the radical using \\(\\sqrt{x^2} = |x|\\), then simplify.",
+              "work": "\\(\\sqrt{1-\\frac{a^2}{x^2}} = \\frac{\\sqrt{x^2-a^2}}{|x|} \\implies y' = -\\frac{a}{|x|\\sqrt{x^2-a^2}}\\)"
             }
           ],
           "timeLimit": 60,
