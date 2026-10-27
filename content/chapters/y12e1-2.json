@@ -97,8 +97,9 @@
           "id": "cgs2020e1-q12c",
           "type": "review",
           "difficulty": "hard",
-          "stem": "Use mathematical induction to prove that \\(4+7+10+\\cdots +(3n+1)=\\frac{n(3n+5)}2\\) for all integers \\(n\\ge1\\).",
-          "answer": "\\(Base n=1: 4=1(8)/2. Assume the formula for n=k. Add the next term 3k+4 and simplify to (k+1)(3(k+1)+5)/2, completing induction.\\)",
+          "stem": "Use mathematical induction to prove that \\(4+7+10+\\dots+(3n+1)=\\frac{n(3n+5)}{2}\\) for all integers \\(n\\ge1\\).",
+          "answer": "Base step \\(n=1\\):\n\\(\\text{LHS} = 4,\\quad \\text{RHS} = \\frac{1(3(1)+5)}{2} = 4 = \\text{LHS}\\).\n\nAssume true for \\(n=k\\):\n\\(4+7+\\dots+(3k+1)=\\frac{k(3k+5)}{2}\\).\n\nInductive step for \\(n=k+1\\):\nAdd the next term \\(3(k+1)+1=3k+4\\):\n\\(\\frac{k(3k+5)}{2}+(3k+4)=\\frac{3k^2+11k+8}{2}=\\frac{(k+1)(3k+8)}{2}=\\frac{(k+1)(3(k+1)+5)}{2}\\).\n\nTherefore, by mathematical induction, the statement is true for all integers \\(n\\ge1\\).",
+          "manual": true,
           "hint": "Check n=1 first. For the induction step, add the next term in the sequence, which is 3k+4.",
           "keyPoints": [
             {
@@ -109,27 +110,27 @@
           "steps": [
             {
               "explain": "Check the first value n=1 on both sides.",
-              "work": "\\(LHS=4;\\quad RHS=\\frac{1(3+5)}2=4\\)"
+              "work": "\\(\\text{LHS}=4,\\quad \\text{RHS}=\\frac{1(3(1)+5)}{2}=4\\)"
             },
             {
-              "explain": "Assume the formula holds for an arbitrary k≥1.",
-              "work": "\\(4+7+\\cdots+(3k+1)=\\frac{k(3k+5)}2\\)"
+              "explain": "Assume the formula holds for an arbitrary integer k≥1.",
+              "work": "\\(4+7+\\dots+(3k+1)=\\frac{k(3k+5)}{2}\\)"
             },
             {
-              "explain": "For k+1, add the next term 3(k+1)+1=3k+4.",
-              "work": "\\(\\frac{k(3k+5)}2+(3k+4)\\)"
+              "explain": "For n=k+1, add the next term 3(k+1)+1=3k+4.",
+              "work": "\\(\\frac{k(3k+5)}{2}+(3k+4)\\)"
             },
             {
               "explain": "Use a common denominator and expand.",
-              "work": "\\(\\frac{3k^2+5k+6k+8}{2}=\\frac{3k^2+11k+8}{2}\\)"
+              "work": "\\(\\frac{k(3k+5)+2(3k+4)}{2}=\\frac{3k^2+11k+8}{2}\\)"
             },
             {
-              "explain": "Factor and match the claimed expression with n=k+1.",
-              "work": "\\(\\frac{(k+1)(3k+8)}2=\\frac{(k+1)(3(k+1)+5)}2\\)"
+              "explain": "Factorise and express in the form required for n=k+1.",
+              "work": "\\(\\frac{(k+1)(3k+8)}{2}=\\frac{(k+1)\\bigl(3(k+1)+5\\bigr)}{2}\\)"
             },
             {
-              "explain": "The base case and inductive implication prove the statement for all n≥1.",
-              "work": "\\(P(1),\\quad P(k)\\Rightarrow P(k+1)\\quad\\therefore P(n)\\text{ for all }n\\ge1\\)"
+              "explain": "The base case and inductive step prove the statement for all n≥1.",
+              "work": "\\(P(1)\\text{ is true, and }P(k)\\implies P(k+1).\\quad\\therefore P(n)\\text{ is true for all }n\\ge1.\\)"
             }
           ],
           "timeLimit": 60,

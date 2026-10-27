@@ -117,17 +117,17 @@
           "type": "mc",
           "difficulty": "medium",
           "timeLimit": 60,
-          "stem": "Negate: \\(\\exists x\\in\\mathbb R^+,\\ \forall y\\in\\mathbb R^+: xy=1\\).",
+          "stem": "Negate: \\(\\exists x\\in\\mathbb R^+,\\ \\fracorall y\\in\\mathbb R^+: xy=1\\).",
           "hint": "Negate each quantifier in turn and negate the statement after the quantifiers.",
-          "solution": "\\(\forall x\\in\\mathbb R^+,\\exists y\\in\\mathbb R^+:xy\ne1\\)",
+          "solution": "\\(\\fracorall x\\in\\mathbb R^+,\\exists y\\in\\mathbb R^+:xy\ne1\\)",
           "steps": [
             {
               "explain": "Negate the existential quantifier.",
-              "work": "\\(\neg\\exists x\\) becomes \\(\forall x\\)."
+              "work": "\\(\neg\\exists x\\) becomes \\(\\fracorall x\\)."
             },
             {
               "explain": "Negate the universal quantifier.",
-              "work": "\\(\neg\forall y\\) becomes \\(\\exists y\\)."
+              "work": "\\(\neg\\fracorall y\\) becomes \\(\\exists y\\)."
             },
             {
               "explain": "Negate the equality.",
@@ -140,15 +140,15 @@
             "school": "Abbotsleigh"
           },
           "options": [
-            "\\(\forall x\\in\\mathbb R^+,\\exists y\\in\\mathbb R^+:xy\ne1\\)",
-            "\\(\\exists x\\in\\mathbb R^+,\forall y\\in\\mathbb R^+:xy\ne1\\)",
-            "\\(\forall x\\in\\mathbb R^+,\forall y\\in\\mathbb R^+:xy\ne1\\)",
+            "\\(\\fracorall x\\in\\mathbb R^+,\\exists y\\in\\mathbb R^+:xy\ne1\\)",
+            "\\(\\exists x\\in\\mathbb R^+,\\fracorall y\\in\\mathbb R^+:xy\ne1\\)",
+            "\\(\\fracorall x\\in\\mathbb R^+,\\fracorall y\\in\\mathbb R^+:xy\ne1\\)",
             "\\(\\exists x\\in\\mathbb R^+,\\exists y\\in\\mathbb R^+:xy\ne1\\)"
           ],
           "answer": 0,
           "keyPoints": [
             {
-              "text": "Negate: \\(\\exists x\\in\\mathbb R^+,\\ \forall y\\in\\mathbb R^+: xy=1\\)",
+              "text": "Negate: \\(\\exists x\\in\\mathbb R^+,\\ \\fracorall y\\in\\mathbb R^+: xy=1\\)",
               "note": "Negate each quantifier in turn and negate the statement after the quantifiers."
             }
           ]
@@ -540,6 +540,90 @@
             {
               "text": "logically equivalent",
               "note": "Swap and negate both parts of the slogan."
+            }
+          ]
+        },
+        {
+          "id": "caringbah2020-ext2-q4",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Given that x and y are real numbers, which of the following statements is true?",
+          "hint": "For each statement, ask whether you can choose a real x for every possible real y, including very large positive and negative values.",
+          "solution": "\\(\\forall y(\\exists x:x>y)\\)",
+          "steps": [
+            {
+              "explain": "The statement in option C says: for every real \\(y\\), there exists a real \\(x\\) such that \\(x>y\\).",
+              "work": "\\(\\forall y\\in\\mathbb R,\\;\\exists x\\in\\mathbb R:\\;x>y.\\)"
+            },
+            {
+              "explain": "For any chosen real y, choose \\(x=y+1\\). Since 1 is positive, this x is real and strictly greater than y.",
+              "work": "\\(x=y+1\\quad\\Longrightarrow\\quad x-y=1>0\\quad\\Longrightarrow\\quad x>y.\\)"
+            },
+            {
+              "explain": "The same construction works for every real y, so C is true. The other choices fail for some y: for example, no absolute value is negative, and equality to y is not possible when y<0.",
+              "work": "\\(\\therefore\\;\\forall y\\;\\exists x:\\;x>y.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 4U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "4",
+            "sourcePage": 3,
+            "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+          },
+          "options": [
+            "\\(\\forall y(\\exists x:x=y)\\)",
+            "\\(\\forall y(\\exists x:x<y)\\)",
+            "\\(\\forall y(\\exists x:x>y)\\)",
+            "\\(\\forall y(\\exists x:x=-y)\\)"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "Given that x and y are real numbers, which of the following statements is true?",
+              "note": "For each statement, ask whether you can choose a real x for every possible real y, including very large positive and negative values."
+            }
+          ]
+        },
+        {
+          "id": "caringbah2020-ext2-q12e",
+          "type": "review",
+          "manual": true,
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "It is given that \\(a>0\\) and \\(b>0\\) are real numbers. Consider the statement \\(\\forall a(\\forall b,\\log_{1/a}(1/b)=\\log_a b)\\). Prove that the statement is true.",
+          "hint": "Rewrite each logarithm using natural logarithms. Track the negative signs from \\(\\ln(1/a)=-\\ln a\\) and \\(\\ln(1/b)=-\\ln b\\).",
+          "solution": "For a positive base different from 1, \\(\\log_{1/a}(1/b)=\\frac{\\ln(1/b)}{\\ln(1/a)}=\\frac{-\\ln b}{-\\ln a}=\\frac{\\ln b}{\\ln a}=\\log_a b\\). The source statement omits the necessary restriction \\(a\\ne1\\); at \\(a=1\\), both sides are undefined.",
+          "steps": [
+            {
+              "explain": "Use the change-of-base formula. The logarithms are defined only when their bases are positive and not equal to 1, so the stated identity is understood for \\(a>0, a\\ne1\\) and \\(b>0\\).",
+              "work": "\\(\\log_{1/a}(1/b)=\\frac{\\ln(1/b)}{\\ln(1/a)}.\\)"
+            },
+            {
+              "explain": "Use \\(\\ln(1/u)=-\\ln u\\) for positive u in both numerator and denominator. The two negative signs cancel.",
+              "work": "\\(\\frac{\\ln(1/b)}{\\ln(1/a)}=\\frac{-\\ln b}{-\\ln a}=\\frac{\\ln b}{\\ln a}.\\)"
+            },
+            {
+              "explain": "Apply change of base again to recognise the final expression. Note that \\(a=1\\) is excluded because both logarithms with base 1 are undefined.",
+              "work": "\\(\\frac{\\ln b}{\\ln a}=\\log_a b.\\qquad\\therefore\\;\\log_{1/a}(1/b)=\\log_a b.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 4U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "12e",
+            "sourcePage": 7,
+            "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+          },
+          "keyPoints": [
+            {
+              "text": "It is given that \\(a>0\\) and \\(b>0\\) are real numbers. Consider the statement \\(\\forall a(\\forall b,\\log_{1/a}(1/b)=\\log_a b)\\). Prove that the statement is true.",
+              "note": "Rewrite each logarithm using natural logarithms. Track the negative signs from \\(\\ln(1/a)=-\\ln a\\) and \\(\\ln(1/b)=-\\ln b\\)."
             }
           ]
         }
@@ -1252,6 +1336,90 @@
               "note": "Use contradiction: an even number can't equal an odd number."
             }
           ]
+        },
+        {
+          "id": "caringbah2020-ext2-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "Consider the statement \\(x^2=9\\Rightarrow x=3\\). Which of the following statements is the contrapositive?",
+          "hint": "For an implication P⇒Q, the contrapositive is not-P⇒not-Q. Negate the entire statements carefully.",
+          "solution": "\\(x\\ne3\\Rightarrow x^2\\ne9\\)",
+          "steps": [
+            {
+              "explain": "Identify the antecedent and consequent: \\(P\\) is \\(x^2=9\\), and \\(Q\\) is \\(x=3\\).",
+              "work": "\\(P:\\;x^2=9,\\qquad Q:\\;x=3.\\)"
+            },
+            {
+              "explain": "The contrapositive of \\(P\\Rightarrow Q\\) is \\(\\neg Q\\Rightarrow\\neg P\\). Negating \\(x=3\\) gives \\(x\\ne3\\); negating \\(x^2=9\\) gives \\(x^2\\ne9\\).",
+              "work": "\\(\\neg Q:\\;x\\ne3,\\qquad\\neg P:\\;x^2\\ne9.\\)"
+            },
+            {
+              "explain": "Put the negated consequent first and the negated antecedent second.",
+              "work": "\\(x\\ne3\\;\\Rightarrow\\;x^2\\ne9.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 4U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "6",
+            "sourcePage": 3,
+            "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+          },
+          "options": [
+            "\\(x\\ne3\\Rightarrow x^2\\ne9\\)",
+            "\\(x^2\\ne9\\Rightarrow x\\ne3\\)",
+            "\\(x=3\\Rightarrow x^2=9\\)",
+            "\\(x\\ne3\\Leftrightarrow x^2\\ne9\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "Consider the statement \\(x^2=9\\Rightarrow x=3\\). Which of the following statements is the contrapositive?",
+              "note": "For an implication P⇒Q, the contrapositive is not-P⇒not-Q. Negate the entire statements carefully."
+            }
+          ]
+        },
+        {
+          "id": "caringbah2020-ext2-q14c",
+          "type": "review",
+          "manual": true,
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "Use proof by contradiction to show that \\(\\log_2 5\\) is irrational.",
+          "hint": "Assume the logarithm is rational and write it as a fraction in lowest terms. Exponentiate to turn the claim into an equation involving powers of 2 and 5.",
+          "solution": "Assuming \\(\\log_2 5=p/q\\) in lowest terms gives \\(2^p=5^q\\), an even number equal to an odd number. This contradiction proves \\(\\log_2 5\\) is irrational.",
+          "steps": [
+            {
+              "explain": "Assume for contradiction that the logarithm is rational. Write it as \\(p/q\\), where p and q are positive coprime integers.",
+              "work": "\\(\\log_2 5=\\frac pq,\\qquad p,q\\in\\mathbb Z_{>0},\\quad\\gcd(p,q)=1.\\)"
+            },
+            {
+              "explain": "Convert from logarithmic to exponential form and raise both sides to the power q.",
+              "work": "\\(2^{p/q}=5\\quad\\Longrightarrow\\quad2^p=5^q.\\)"
+            },
+            {
+              "explain": "The left side is even because p≥1, while the right side is odd. This contradiction shows the assumption of rationality was false.",
+              "work": "\\(2^p\\text{ is even},\\qquad5^q\\text{ is odd};\\quad2^p\\ne5^q.\\) Therefore \\(\\log_2 5\\notin\\mathbb Q.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 4U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "14c",
+            "sourcePage": 9,
+            "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+          },
+          "keyPoints": [
+            {
+              "text": "Use proof by contradiction to show that \\(\\log_2 5\\) is irrational.",
+              "note": "Assume the logarithm is rational and write it as a fraction in lowest terms. Exponentiate to turn the claim into an equation involving powers of 2 and 5."
+            }
+          ]
         }
       ]
     },
@@ -1797,6 +1965,103 @@
                 {
                   "text": "show that",
                   "note": "Write 1/p + 1/q = (p + q)/(pq), then use part (i)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "caringbah2020-ext2-q15a",
+          "type": "multipart",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "Recall that for any real number x>0, \\(x+\\frac1x\\ge2\\). Do not prove this result.",
+          "hint": "Work through the linked parts in order; use each result only where the next part needs it.",
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 4U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "15",
+            "sourcePage": 10,
+            "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+          },
+          "parts": [
+            {
+              "id": "caringbah2020-ext2-q15a-i",
+              "type": "review",
+              "manual": true,
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Prove that \\((a+b+c)(\\frac1a+\\frac1b+\\frac1c)\\ge9\\) for any real numbers a>0, b>0, c>0.",
+              "hint": "Expand the product into three 1 terms and three pairs such as \\(a/b+b/a\\). Apply the supplied inequality to each positive ratio.",
+              "solution": "The expansion is \\(3+(a/b+b/a)+(a/c+c/a)+(b/c+c/b)\\). Each parenthesised pair is at least 2 by the supplied \\(x+1/x\\ge2\\), so the product is at least \\(3+2+2+2=9\\).",
+              "steps": [
+                {
+                  "explain": "Expand the product by pairing each of a,b,c with each reciprocal. The three matching products are all 1.",
+                  "work": "\\((a+b+c)\\left(\\frac1a+\\frac1b+\\frac1c\\right)=3+\\frac ab+\\frac ba+\\frac ac+\\frac ca+\\frac bc+\\frac cb.\\)"
+                },
+                {
+                  "explain": "Each ratio is positive. Apply the given result to the pairs \\(a/b,b/a\\), \\(a/c,c/a\\), and \\(b/c,c/b\\).",
+                  "work": "\\(\\frac ab+\\frac ba\\ge2,\\qquad\\frac ac+\\frac ca\\ge2,\\qquad\\frac bc+\\frac cb\\ge2.\\)"
+                },
+                {
+                  "explain": "Add the three lower bounds to the initial 3.",
+                  "work": "\\((a+b+c)\\left(\\frac1a+\\frac1b+\\frac1c\\right)\\ge3+2+2+2=9.\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "15a(i)",
+                "sourcePage": 10,
+                "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+              },
+              "keyPoints": [
+                {
+                  "text": "Prove that \\((a+b+c)(\\frac1a+\\frac1b+\\frac1c)\\ge9\\) for any real numbers a>0, b>0, c>0.",
+                  "note": "Expand the product into three 1 terms and three pairs such as \\(a/b+b/a\\). Apply the supplied inequality to each positive ratio."
+                }
+              ]
+            },
+            {
+              "id": "caringbah2020-ext2-q15a-ii",
+              "type": "review",
+              "manual": true,
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Prove that \\(\\frac{a}{b+c}+\\frac{b}{c+a}+\\frac{c}{a+b}\\ge\\frac32\\) for any real numbers a>0, b>0, c>0, by using the result in the previous part and transformations of the form \\(a\\to a+b\\).",
+              "hint": "In the previous inequality substitute the three positive values \\(a+b\\), \\(b+c\\), and \\(c+a\\). Then rewrite each total-over-pair term as 1 plus the corresponding fraction.",
+              "solution": "Substitute \\(A=a+b,B=b+c,C=c+a\\) into the previous result. Then \\(A+B+C=2(a+b+c)\\), so \\((a+b+c)(1/(a+b)+1/(b+c)+1/(c+a))\\ge9/2\\). Since \\((a+b+c)/(b+c)=1+a/(b+c)\\) and cyclically, the left side is \\(3+a/(b+c)+b/(c+a)+c/(a+b)\\). Subtract 3 to obtain the required \\(3/2\\).",
+              "steps": [
+                {
+                  "explain": "Apply the result just proved with the positive substitutions \\(A=a+b\\), \\(B=b+c\\), \\(C=c+a\\).",
+                  "work": "\\(((a+b)+(b+c)+(c+a))\\left(\\frac1{a+b}+\\frac1{b+c}+\\frac1{c+a}\\right)\\ge9.\\)"
+                },
+                {
+                  "explain": "The sum of the substituted values is \\(2(a+b+c)\\). Divide the inequality by 2, which is positive.",
+                  "work": "\\((a+b+c)\\left(\\frac1{a+b}+\\frac1{b+c}+\\frac1{c+a}\\right)\\ge\\frac92.\\)"
+                },
+                {
+                  "explain": "Expand each fraction using the common numerator \\(a+b+c\\), for example \\((a+b+c)/(b+c)=1+a/(b+c)\\). Then isolate the required sum.",
+                  "work": "\\(3+\\frac a{b+c}+\\frac b{c+a}+\\frac c{a+b}\\ge\\frac92\\quad\\Longrightarrow\\quad\\frac a{b+c}+\\frac b{c+a}+\\frac c{a+b}\\ge\\frac32.\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "15a(ii)",
+                "sourcePage": 10,
+                "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+              },
+              "keyPoints": [
+                {
+                  "text": "Prove that \\(\\frac{a}{b+c}+\\frac{b}{c+a}+\\frac{c}{a+b}\\ge\\frac32\\) for any real numbers a>0, b>0, c>0, by using the result in the previous part and transformations of the form \\(a\\to a+b\\).",
+                  "note": "In the previous inequality substitute the three positive values \\(a+b\\), \\(b+c\\), and \\(c+a\\). Then rewrite each total-over-pair term as 1 plus the corresponding fraction."
                 }
               ]
             }

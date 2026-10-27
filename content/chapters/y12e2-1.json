@@ -866,6 +866,51 @@
               "note": "z̄ = x − yi; then 2z + z̄ = 3x + yi."
             }
           ]
+        },
+        {
+          "id": "caringbah2020-ext2-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "Which of the following is true for all complex numbers z?",
+          "hint": "Write z=x+iy and its conjugate as x−iy; subtract them to isolate the imaginary part.",
+          "solution": "\\(\\operatorname{Im}z=\\frac{z-\\bar z}{2i}\\)",
+          "steps": [
+            {
+              "explain": "Let an arbitrary complex number be \\(z=x+iy\\), where \\(x,y\\in\\mathbb R\\). Its conjugate is \\(\\barar z=x-iy\\).",
+              "work": "\\(z-\\barar z=(x+iy)-(x-iy)=2iy.\\)"
+            },
+            {
+              "explain": "Divide the difference by \\(2i\\). This removes the factor \\(2i\\) and leaves the imaginary component.",
+              "work": "\\(\\fracrac{z-\\barar z}{2i}=\\fracrac{2iy}{2i}=y=\\operatorname{Im}z.\\)"
+            },
+            {
+              "explain": "The identity holds for every real pair \\((x,y)\\), so option A is the statement true for every complex number.",
+              "work": "\\(\\operatorname{Im}z=\\fracrac{z-\\barar z}{2i}.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 4U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "1",
+            "sourcePage": 2,
+            "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+          },
+          "options": [
+            "\\(\\operatorname{Im}z=\\frac{z-\\bar z}{2i}\\)",
+            "\\(\\operatorname{Im}z=\\frac{z+\\bar z}{2}\\)",
+            "\\(\\operatorname{Im}z=\\frac{z-\\bar z}{2}\\)",
+            "\\(\\operatorname{Im}z=\\frac{z+\\bar z}{2i}\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "Which of the following is true for all complex numbers z?",
+              "note": "Write z=x+iy and its conjugate as x−iy; subtract them to isolate the imaginary part."
+            }
+          ]
         }
       ]
     },
@@ -1722,6 +1767,146 @@
                 {
                   "text": "By considering the imaginary part",
                   "note": "Compute the imaginary part directly and from the mod-arg form, then equate."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "caringbah2020-ext2-q11b",
+          "type": "multipart",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "In an Argand diagram, the point P represents \\(z_1=3+2i\\), the point Q represents \\(z_2=\\fracrac{12-5i}{z_1}\\), and O is the origin. The number \\(z_3\\) represents the centre C of the circle passing through P, Q and O.",
+          "hint": "Work through the linked parts in order; use each result only where the next part needs it.",
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 4U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "11",
+            "sourcePage": 5,
+            "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+          },
+          "parts": [
+            {
+              "id": "caringbah2020-ext2-q11b-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Express \\(z_2\\) in the form \\(a+ib\\), where a and b are real.",
+              "hint": "To divide by \\(3+2i\\), multiply the numerator and denominator by its conjugate, \\(3-2i\\).",
+              "solution": "\\(z_2=2-3i\\)",
+              "steps": [
+                {
+                  "explain": "Substitute \\(z_1=3+2i\\), then multiply top and bottom by the conjugate of the denominator so the denominator becomes real.",
+                  "work": "\\(z_2=\\fracrac{12-5i}{3+2i}\\cdot\\fracrac{3-2i}{3-2i}=\\fracrac{(12-5i)(3-2i)}{3^2+2^2}.\\)"
+                },
+                {
+                  "explain": "Expand the numerator, using \\(i^2=-1\\), and simplify the denominator.",
+                  "work": "\\((12-5i)(3-2i)=36-24i-15i+10i^2=26-39i,\\qquad 3^2+2^2=13.\\)"
+                },
+                {
+                  "explain": "Divide both real and imaginary parts by 13.",
+                  "work": "\\(z_2=\\fracrac{26-39i}{13}=2-3i.\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "11b(i)",
+                "sourcePage": 5,
+                "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+              },
+              "options": [
+                "\\(2-3i\\)",
+                "\\(2+3i\\)",
+                "\\(\\frac{26}{13}-\\frac{15}{13}i\\)",
+                "\\(3-2i\\)"
+              ],
+              "answer": 0,
+              "keyPoints": [
+                {
+                  "text": "Express \\(z_2\\) in the form \\(a+ib\\), where a and b are real.",
+                  "note": "To divide by \\(3+2i\\), multiply the numerator and denominator by its conjugate, \\(3-2i\\)."
+                }
+              ]
+            },
+            {
+              "id": "caringbah2020-ext2-q11b-ii",
+              "type": "review",
+              "manual": true,
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Show that \\(\\anglengle POQ=\\fracrac{\\pi}{2}\\).",
+              "hint": "Use the complex numbers from the previous part to compare their lengths and their dot product, or show that multiplying one by i gives the other.",
+              "solution": "\\(iz_2=z_1\\), so P and Q lie on perpendicular radii of equal length and \\(\\angle POQ=\\frac{\\pi}{2}\\).",
+              "steps": [
+                {
+                  "explain": "From the previous part, \\(z_2=2-3i\\) and \\(z_1=3+2i\\). Multiplication by \\(i\\) rotates a complex number through \\(\\fracrac{\\pi}{2}\\) anticlockwise.",
+                  "work": "\\(iz_2=i(2-3i)=3+2i=z_1.\\)"
+                },
+                {
+                  "explain": "Thus the vectors \\(\\overrightarrow{OQ}\\) and \\(\\overrightarrow{OP}\\) have equal lengths and differ in direction by a quarter-turn. Therefore the angle between OP and OQ is a right angle.",
+                  "work": "\\(\\anglengle POQ=\\fracrac{\\pi}{2}.\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "11b(ii)",
+                "sourcePage": 5,
+                "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+              },
+              "keyPoints": [
+                {
+                  "text": "Show that \\(\\anglengle POQ=\\fracrac{\\pi}{2}\\).",
+                  "note": "Use the complex numbers from the previous part to compare their lengths and their dot product, or show that multiplying one by i gives the other."
+                }
+              ]
+            },
+            {
+              "id": "caringbah2020-ext2-q11b-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Express \\(z_3\\) in the form \\(a+ib\\), where a and b are real.",
+              "hint": "Since the triangle OPQ is right-angled at O, its circumcentre is the midpoint of its hypotenuse PQ.",
+              "solution": "\\(z_3=\\frac52-\\frac12i\\)",
+              "steps": [
+                {
+                  "explain": "The right angle is at O, so PQ is the hypotenuse of triangle OPQ. The centre of a circle through the vertices of a right triangle is the midpoint of its hypotenuse.",
+                  "work": "\\(z_3=\\fracrac{z_1+z_2}{2}.\\)"
+                },
+                {
+                  "explain": "Add the two complex numbers and divide each component by 2.",
+                  "work": "\\(z_3=\\fracrac{(3+2i)+(2-3i)}{2}=\\fracrac{5-i}{2}=\\fracrac52-\\fracrac12i.\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "11b(iii)",
+                "sourcePage": 5,
+                "paper": "Mathematics Extension 2 HSC Course Assessment Task 4"
+              },
+              "options": [
+                "\\(\\frac52-\\frac12i\\)",
+                "\\(\\frac52+\\frac12i\\)",
+                "\\(5-i\\)",
+                "\\(\\frac12-\\frac52i\\)"
+              ],
+              "answer": 0,
+              "keyPoints": [
+                {
+                  "text": "Express \\(z_3\\) in the form \\(a+ib\\), where a and b are real.",
+                  "note": "Since the triangle OPQ is right-angled at O, its circumcentre is the midpoint of its hypotenuse PQ."
                 }
               ]
             }
