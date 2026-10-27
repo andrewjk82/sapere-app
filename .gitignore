@@ -48,3 +48,9 @@ scratch/
 
 # built by tools/content/publish.mjs during npm run build
 /public/content/
+
+# Scratch output directories — one-off script results, never part of a build.
+# (/scratch/ is listed above; these three were missing and kept catching junk.)
+/output/
+/tmp/
+/.tmp/
