@@ -13,7 +13,7 @@ import { CURRICULUM_DATA } from '../constants/curriculumData';
 import MathView from './MathView';
 import MathInput from './MathInput';
 import { MATH_SYMBOLS, notifyTeacherPendingReview, getOptionText, getOptionImage } from '../utils/challengeUtils';
-import { gradeQuestion } from '../utils/answerMatching';
+import { gradeQuestion, answersMatch } from '../utils/answerMatching';
 import {
   prepareShuffledMcOptions,
   isDisplayedOptionCorrect,
@@ -55,10 +55,41 @@ import {
 // two), so it marked an unrelated option correct and failed the real answer.
 // See src/utils/mcOptionShuffle.js. Non-MC questions are returned unchanged.
 const shuffleMcOptions = (q) => {
+  if (q?.subQuestions?.length > 0) {
+    return {
+      ...q,
+      subQuestions: q.subQuestions.map((sq) => (
+        sq.type === 'multiple_choice' && sq.options?.length > 1
+          ? { ...sq, options: prepareShuffledMcOptions({ ...sq }) }
+          : sq
+      )),
+    };
+  }
   if (q?.type !== 'multiple_choice' || !(q.options?.length > 1)) return q;
   const next = { ...q };
   next.options = prepareShuffledMcOptions(next);
   return next;
+};
+
+// Multi-part questions: a part with no machine-checkable answer goes to the teacher
+// and is left out of the right/wrong decision (same rule as Daily Challenge).
+const subNeedsTeacher = (sq) =>
+  sq?.type === 'teacher_review' || sq?.type === 'graph_sketch' || sq?.requiresManualGrading === true;
+
+// draft for a multi-part question = { [part key]: MC → displayed option index, else typed text }
+const subKey = (sq, i) => sq.id ?? i;
+const gradeSubQuestions = (q, draft) => {
+  const gradable = q.subQuestions.filter((sq) => !subNeedsTeacher(sq));
+  if (gradable.length === 0) return true;
+  return q.subQuestions.every((sq, i) => {
+    if (subNeedsTeacher(sq)) return true;
+    const given = draft && typeof draft === 'object' ? draft[subKey(sq, i)] : '';
+    if (sq.type === 'multiple_choice') {
+      const opts = Array.isArray(sq.options) ? sq.options : [];
+      return gradeMcSelection(sq, optionTextAt(opts, given), given, opts);
+    }
+    return answersMatch(String(given ?? ''), String(sq.answer ?? ''));
+  });
 };
 
 // Draft holds the index into the displayed (shuffled) list; resolve it back to
@@ -145,6 +176,7 @@ const QuizView = ({
   const actionBtnRef = useRef(null);
   const showFeedbackRef = useRef(showFeedback);
 
+  const hasSubs = q?.subQuestions?.length > 0;
   const needsTeacher = q ? (q.type === 'teacher_review' || q.type === 'graph_sketch' || q.requiresManualGrading === true) : false;
   const lesson = getLesson(q?.topicId);
   const isWide = viewW >= 860;
@@ -157,7 +189,12 @@ const QuizView = ({
 
   useEffect(() => {
     if (!q) return;
-    if (q.type === 'multiple_choice') setDraft(null);
+    if (q.subQuestions?.length > 0) {
+      const init = {};
+      q.subQuestions.forEach((sq, i) => { init[subKey(sq, i)] = sq.type === 'multiple_choice' ? null : ''; });
+      setDraft(init);
+    }
+    else if (q.type === 'multiple_choice') setDraft(null);
     else if (q.type === 'fill_blank') setDraft(Array((q.blanks || []).length).fill(''));
     else setDraft('');
     setShowHint(false);
@@ -229,7 +266,7 @@ const QuizView = ({
   const submit = async () => {
     if (showFeedbackRef.current || showFeedback) return;
     const userAnswer = draft;
-    const gradeNow = () => (q.type === 'multiple_choice'
+    const gradeNow = () => (hasSubs ? gradeSubQuestions(q, userAnswer) : q.type === 'multiple_choice'
       ? gradeMcSelection(q, optionTextAt(q.options, userAnswer), userAnswer, q.options || [])
       : gradeQuestion(q, userAnswer).correct);
     const correct = needsTeacher ? null : gradeNow();
@@ -316,6 +353,13 @@ const QuizView = ({
   };
 
   const canSubmit = (() => {
+    if (hasSubs) {
+      return draft && typeof draft === 'object' && q.subQuestions.every((sq, i) => {
+        if (subNeedsTeacher(sq)) return true;
+        const v = draft[subKey(sq, i)];
+        return v !== null && v !== undefined && String(v).trim() !== '';
+      });
+    }
     if (q.type === 'multiple_choice') return draft !== null && draft !== undefined;
     if (q.type === 'fill_blank') return Array.isArray(draft) && draft.every((s) => String(s || '').trim() !== '');
     if (needsTeacher) return true;
@@ -502,7 +546,64 @@ const QuizView = ({
     </div>
   );
 
-  const answerArea = q.type === 'multiple_choice' ? (
+  const answerArea = hasSubs ? (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+      {q.subQuestions.map((sq, sIdx) => {
+        const key = subKey(sq, sIdx);
+        const given = draft && typeof draft === 'object' ? draft[key] : undefined;
+        const teacherPart = subNeedsTeacher(sq);
+        const isSubMC = sq.type === 'multiple_choice' && (sq.options || []).length > 0;
+        const subCorrect = showFeedback && !teacherPart && (isSubMC
+          ? gradeMcSelection(sq, optionTextAt(sq.options, given), given, sq.options || [])
+          : answersMatch(String(given ?? ''), String(sq.answer ?? '')));
+        const subWrong = showFeedback && !teacherPart && !subCorrect;
+        return (
+          <div key={key} style={{ background: '#fff', border: '1px solid #e2e8f0', borderRadius: '18px', padding: '18px' }}>
+            <div style={{ display: 'flex', gap: '10px', alignItems: 'flex-start', marginBottom: '12px' }}>
+              <span style={{ background: '#6366f1', color: '#fff', fontWeight: 800, fontSize: '0.78rem', padding: '4px 10px', borderRadius: '8px' }}>
+                {String.fromCharCode(97 + sIdx)}
+              </span>
+              <MathView content={sq.question} graphData={sq.graphData} style={{ fontWeight: 700, color: '#1e293b', fontSize: '1rem' }} />
+            </div>
+            {teacherPart ? (
+              <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#b45309' }}>This part is marked by your teacher — write it on your working pad.</div>
+            ) : isSubMC ? (
+              <div style={{ display: 'grid', gap: '8px' }}>
+                {sq.options.map((opt, oi) => {
+                  const selected = given === oi;
+                  const optOK = showFeedback && isDisplayedOptionCorrect(sq, sq.options, oi);
+                  const optBad = showFeedback && selected && !optOK;
+                  return (
+                    <button
+                      key={oi}
+                      onClick={() => { if (!showFeedback) setDraft((prev) => ({ ...(prev || {}), [key]: oi })); }}
+                      disabled={showFeedback}
+                      style={{ padding: '12px 18px', borderRadius: '100px', border: `2px solid ${optOK ? '#10b981' : optBad ? '#ef4444' : selected ? '#6366f1' : '#e2e8f0'}`, background: optOK ? '#f0fdf4' : optBad ? '#fef2f2' : selected ? '#f5f3ff' : '#fff', display: 'flex', alignItems: 'center', gap: '12px', cursor: showFeedback ? 'default' : 'pointer', textAlign: 'left' }}
+                    >
+                      <span style={{ fontWeight: 800, color: '#64748b', minWidth: '16px' }}>{String.fromCharCode(65 + oi)}</span>
+                      <MathView content={getOptionText(opt)} style={{ display: 'inline' }} />
+                    </button>
+                  );
+                })}
+              </div>
+            ) : (
+              <MathInput
+                value={typeof given === 'string' ? given : ''}
+                onChange={(latex) => { if (!showFeedback) setDraft((prev) => ({ ...(prev || {}), [key]: latex })); }}
+                readOnly={showFeedback}
+                placeholder="Type your answer…"
+              />
+            )}
+            {subWrong && !isSubMC && (
+              <div style={{ marginTop: '10px', padding: '8px 12px', borderRadius: '10px', background: '#f0fdf4', border: '1px solid #bbf7d0', color: '#166534', fontWeight: 800, fontSize: '0.85rem' }}>
+                Correct: <MathView content={String(sq.answer ?? '')} style={{ display: 'inline' }} />
+              </div>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  ) : q.type === 'multiple_choice' ? (
     <div style={{ display: 'grid', gap: '10px' }}>
       {(q.options || []).map((opt, i) => {
         const optText = getOptionText(opt);
@@ -624,7 +725,7 @@ const QuizView = ({
             <div style={{ fontWeight: 900, fontSize: '1rem', color: lastRes?.correct ? '#15803d' : '#dc2626' }}>
               {lastRes?.correct ? 'Correct!' : 'Incorrect'}
             </div>
-            {!lastRes?.correct && q.answer != null && (
+            {!lastRes?.correct && !hasSubs && q.answer != null && (
               <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#475569', marginTop: '2px' }}>
                 Correct answer: <MathView content={
                   q.type === 'multiple_choice'
@@ -865,6 +966,39 @@ const ReviewView = ({ questions, answers, onDone }) => {
       </div>
 
       {/* your answer vs correct */}
+      {q.subQuestions?.length > 0 ? (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+          {q.subQuestions.map((sq, sIdx) => {
+            const given = ans?.userAnswer && typeof ans.userAnswer === 'object' ? ans.userAnswer[subKey(sq, sIdx)] : undefined;
+            const teacherPart = subNeedsTeacher(sq);
+            const isSubMC = sq.type === 'multiple_choice' && (sq.options || []).length > 0;
+            const givenText = isSubMC ? optionTextAt(sq.options, given) : String(given ?? '');
+            const correctText = isSubMC ? (resolveCorrectOptionText(sq) || String(sq.answer ?? '')) : String(sq.answer ?? '');
+            const subOK = !teacherPart && (isSubMC
+              ? gradeMcSelection(sq, givenText, given, sq.options || [])
+              : answersMatch(givenText, correctText));
+            return (
+              <div key={subKey(sq, sIdx)} style={{ padding: '14px 16px', borderRadius: '16px', background: '#fff', border: '1px solid #e2e8f0' }}>
+                <MathView content={`(${String.fromCharCode(97 + sIdx)}) ${sq.question || ''}`} graphData={sq.graphData} style={{ fontSize: '0.92rem', fontWeight: 700, color: '#1e293b', marginBottom: '8px' }} />
+                {teacherPart ? (
+                  <div style={{ fontSize: '0.82rem', fontWeight: 700, color: '#b45309' }}>Marked by your teacher</div>
+                ) : (
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
+                    <div style={{ padding: '10px 12px', borderRadius: '12px', background: subOK ? '#f0fdf4' : '#fef2f2', border: `1px solid ${subOK ? '#bbf7d0' : '#fecaca'}` }}>
+                      <div style={{ fontSize: '0.62rem', fontWeight: 800, color: subOK ? '#16a34a' : '#dc2626', textTransform: 'uppercase', marginBottom: '4px' }}>Your answer</div>
+                      <MathView content={givenText || '—'} style={{ fontSize: '0.95rem', fontWeight: 700, color: '#1e293b' }} />
+                    </div>
+                    <div style={{ padding: '10px 12px', borderRadius: '12px', background: '#f0fdf4', border: '1px solid #bbf7d0' }}>
+                      <div style={{ fontSize: '0.62rem', fontWeight: 800, color: '#16a34a', textTransform: 'uppercase', marginBottom: '4px' }}>Correct answer</div>
+                      <MathView content={correctText} style={{ fontSize: '0.95rem', fontWeight: 700, color: '#166534' }} />
+                    </div>
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      ) : (
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
         <div style={{ padding: '16px', borderRadius: '18px', background: isPending ? '#fffbeb' : isCorrect ? '#f0fdf4' : '#fef2f2', border: `1px solid ${isPending ? '#fde68a' : isCorrect ? '#bbf7d0' : '#fecaca'}` }}>
           <div style={{ fontSize: '0.68rem', fontWeight: 800, color: isPending ? '#b45309' : isCorrect ? '#16a34a' : '#dc2626', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '8px' }}>Your answer</div>
@@ -889,6 +1023,7 @@ const ReviewView = ({ questions, answers, onDone }) => {
           />
         </div>
       </div>
+      )}
 
       {/* Worked solution — progressive step reveal (Challenge-style) */}
       {(q.solution || solutionSteps.length > 0) && (
