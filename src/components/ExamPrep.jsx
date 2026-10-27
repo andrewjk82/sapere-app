@@ -2195,4 +2195,31 @@ const ExamPrep = ({ profile, onExamActiveChange }) => {
   );
 };
 
+// Teacher preview (Question Bank → preview → "Exam Prep" tab): the real quiz and review
+// screens for one question. No user, so nothing is written — no grading queue, no
+// progress, no notes.
+export const ExamPrepPreview = ({ question, onExit }) => {
+  const [q] = useState(() => shuffleMcOptions(question));
+  const [answer, setAnswer] = useState(null);
+  const [phase, setPhase] = useState('quiz');
+  return (
+    <div style={{ position: 'fixed', inset: 0, zIndex: 2000, overflowY: 'auto', background: '#f5f3ff', padding: '72px 16px 24px' }}>
+      <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+        {phase === 'quiz' ? (
+          <QuizView
+            key={q.id}
+            question={q}
+            onAnswered={(res) => setAnswer(res)}
+            onRequestNext={() => setPhase('review')}
+            onQuit={onExit}
+            user={null}
+          />
+        ) : (
+          <ReviewView questions={[q]} answers={[answer || { pending: true }]} onDone={() => setPhase('quiz')} />
+        )}
+      </div>
+    </div>
+  );
+};
+
 export default ExamPrep;

@@ -1,8 +1,10 @@
-import { useEffect, useRef, useState } from 'react';
+import { lazy, Suspense, useEffect, useRef, useState } from 'react';
 import ChallengeQuizView from './ChallengeQuizView';
 import ChallengeReviewView from './ChallengeReviewView';
 import SecretNoteView from './SecretNoteView';
 import KeyPointsEditor from './KeyPointsEditor';
+
+const ExamPrepPreview = lazy(() => import('../ExamPrep').then((m) => ({ default: m.ExamPrepPreview })));
 import { initialKeyPointsDraft } from '../../utils/keyPoints';
 import { answersMatch } from '../../utils/answerMatching';
 import { prepareShuffledMcOptions, gradeMcSelection } from '../../utils/mcOptionShuffle';
@@ -36,6 +38,7 @@ const TABS = [
   { key: 'daily', label: 'Daily Challenge' },
   { key: 'review', label: 'Review' },
   { key: 'secretNote', label: 'Secret Note' },
+  { key: 'examPrep', label: 'Exam Prep' },
   { key: 'hint', label: 'Hint' },
 ];
 
@@ -61,6 +64,7 @@ const QuestionPreviewModal = ({ question, chapter, topic, onClose, initialTab = 
   // loaded question object.
   const [dailyQuestion] = useState(() => cloneQuestion(enrichQuestion(question, chapter, topic)));
   const [secretNoteQuestion] = useState(() => cloneQuestion(enrichQuestion(question, chapter, topic)));
+  const [examPrepQuestion] = useState(() => cloneQuestion(enrichQuestion(question, chapter, topic)));
 
   // ── Daily Challenge tab: stripped DailyChallenge.jsx quiz state machine ──
   const [step, setStep] = useState('quiz');
@@ -330,6 +334,12 @@ const QuestionPreviewModal = ({ question, chapter, topic, onClose, initialTab = 
           isMobile={false}
           previewQuestions={[secretNoteQuestion]}
         />
+      )}
+
+      {activeTab === 'examPrep' && (
+        <Suspense fallback={null}>
+          <ExamPrepPreview question={examPrepQuestion} onExit={onClose} />
+        </Suspense>
       )}
 
       {activeTab === 'hint' && (
