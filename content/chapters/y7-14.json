@@ -3179,6 +3179,223 @@
               "note": "Set the final remaining fraction equal to 85 and solve for the starting amount."
             }
           ]
+        },
+        {
+          "id": "yr7-percentage-revision-49373",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "Which of the following lists the numbers in increasing order?",
+          "hint": "Convert every number to a decimal so that the four values can be compared directly.",
+          "steps": [
+            {
+              "explain": "Convert the percentage and fraction to decimals.",
+              "work": "\\(65\\%=0.65,\\qquad\\frac34=0.75\\)"
+            },
+            {
+              "explain": "Now compare all four decimal values from smallest to largest.",
+              "work": "\\(0.65<0.70<0.72<0.75\\)"
+            },
+            {
+              "explain": "Replace each decimal with its original form.",
+              "work": "\\(\\boxed{65\\%,\\ 0.7,\\ 0.72,\\frac34}\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Percentage revision (Year 7)",
+            "school": "M2 Mathematics / SmarterMaths",
+            "number": "4",
+            "napId": "NAP-49373"
+          },
+          "options": [
+            "65%, 0.7, 0.72, \\(\\frac34\\)",
+            "\\(\\frac34\\), 0.7, 65%, 0.72",
+            "65%, \\(\\frac34\\), 0.7, 0.72",
+            "\\(\\frac34\\), 0.72, 0.7, 65%"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "in increasing order",
+              "note": "Convert the percentage and fraction before comparing; do not compare unlike notations by appearance."
+            }
+          ]
+        },
+        {
+          "id": "yr7-percentage-revision-95326",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "Which percentage has the same value as \\(\\frac{32}{50}\\)?",
+          "hint": "Make the denominator 100 by multiplying the numerator and denominator by the same number.",
+          "steps": [
+            {
+              "explain": "To change 50 into 100, multiply by 2.",
+              "work": "\\(\\frac{32}{50}=\\frac{32\\times2}{50\\times2}=\\frac{64}{100}\\)"
+            },
+            {
+              "explain": "A fraction out of 100 is the same number as a percentage.",
+              "work": "\\(\\frac{64}{100}=64\\%\\)"
+            },
+            {
+              "explain": "Therefore the equivalent percentage is",
+              "work": "\\(\\boxed{64\\%}\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Percentage revision (Year 7)",
+            "school": "M2 Mathematics / SmarterMaths",
+            "number": "7",
+            "napId": "NAP-95326"
+          },
+          "options": [
+            "64%",
+            "62%",
+            "32%",
+            "16%"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{32}{50}\\)",
+              "note": "An equivalent fraction keeps the same value when numerator and denominator are multiplied by the same number."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y7-14b",
+      "code": "15B",
+      "title": "One quantity as a percentage of another",
+      "questions": [
+        {
+          "id": "yr7-percentage-revision-36425",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "Hoon’s camera has a memory card that holds 20 gigabytes. He has used exactly 16 gigabytes of memory. What percentage of the memory has not been used?",
+          "hint": "Subtract the used memory from the total, then express the unused fraction as a percentage.",
+          "steps": [
+            {
+              "explain": "Find the amount of memory left unused.",
+              "work": "\\(20-16=4\\text{ GB}\\)"
+            },
+            {
+              "explain": "The whole memory card is 20 GB, so the unused fraction is 4 out of 20.",
+              "work": "\\(\\frac{4}{20}=\\frac15\\)"
+            },
+            {
+              "explain": "Convert the fraction to a percentage by multiplying by 100%.",
+              "work": "\\(\\frac15\\times100\\%=20\\%\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Percentage revision (Year 7)",
+            "school": "M2 Mathematics / SmarterMaths",
+            "number": "1",
+            "napId": "NAP-36425"
+          },
+          "options": [
+            "4%",
+            "20%",
+            "25%",
+            "40%"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "What percentage of the memory has not been used?",
+              "note": "Compare the unused 4 GB with the whole 20 GB."
+            }
+          ]
+        },
+        {
+          "id": "yr7-percentage-revision-96444",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "Zoey scored 88% on her Geography exam. If she achieved the same mark on her French exam, which of these could have been her mark?",
+          "hint": "Write each fraction as a percentage and compare it with 88%.",
+          "steps": [
+            {
+              "explain": "An equivalent mark must have numerator divided by denominator equal to 0.88.",
+              "work": "\\(88\\%=0.88\\)"
+            },
+            {
+              "explain": "Test the option 44 out of 50 by converting it to hundredths.",
+              "work": "\\(\\frac{44}{50}=\\frac{88}{100}=88\\%\\)"
+            },
+            {
+              "explain": "Therefore the matching exam mark is",
+              "work": "\\(\\boxed{\\frac{44}{50}}\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Percentage revision (Year 7)",
+            "school": "M2 Mathematics / SmarterMaths",
+            "number": "3",
+            "napId": "NAP-96444"
+          },
+          "options": [
+            "\\(\\frac{68}{80}\\)",
+            "\\(\\frac{70}{80}\\)",
+            "\\(\\frac{40}{50}\\)",
+            "\\(\\frac{44}{50}\\)"
+          ],
+          "answer": 3,
+          "keyPoints": [
+            {
+              "text": "88% on her Geography exam",
+              "note": "An equivalent fraction must represent the same proportion of marks."
+            }
+          ]
+        },
+        {
+          "id": "yr7-percentage-revision-43521",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "A class of 28 students is surveyed. 21 students said they owned a mobile phone. What percentage of the students surveyed owned a mobile phone?",
+          "hint": "Write the number who own a phone as a fraction of all 28 students, then convert to a percentage.",
+          "steps": [
+            {
+              "explain": "The fraction who own a phone is",
+              "work": "\\(\\frac{21}{28}\\)"
+            },
+            {
+              "explain": "Simplify by dividing top and bottom by 7.",
+              "work": "\\(\\frac{21}{28}=\\frac34\\)"
+            },
+            {
+              "explain": "Convert three-quarters to hundredths.",
+              "work": "\\(\\frac34=0.75=75\\%\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Percentage revision (Year 7)",
+            "school": "M2 Mathematics / SmarterMaths",
+            "number": "6",
+            "napId": "NAP-43521"
+          },
+          "options": [
+            "65%",
+            "70%",
+            "75%",
+            "80%"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "21 students said they owned a mobile phone",
+              "note": "Use all students as the denominator, not just the students who own a phone."
+            }
+          ]
         }
       ]
     },
@@ -3433,6 +3650,538 @@
             {
               "text": "What percentage of the cards",
               "note": "Use the original total of 55 as the denominator when converting the best friend’s share to a percentage."
+            }
+          ]
+        },
+        {
+          "id": "yr7-percentage-revision-72897",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Kat went on holiday and spent her money on accommodation, meals and shopping. She spent $1200 in total and the pie chart below shows how she spent it. How much money did Kat spend on meals on her holiday?",
+          "hint": "Use the $540 accommodation slice to find the full-circle value, then use the meals slice’s percentage.",
+          "steps": [
+            {
+              "explain": "Accommodation is 45% of the total because the other slices are 30% and 25%. The chart gives its value as $540.",
+              "work": "\\(45\\%\\text{ of total}=540\\)"
+            },
+            {
+              "explain": "Find 1% by dividing by 45, then find 100%.",
+              "work": "\\(1\\%=540\\div45=12;\\quad100\\%=12\\times100=1200\\)"
+            },
+            {
+              "explain": "Meals is one quarter of the circle, or 25%.",
+              "work": "\\(25\\%\\text{ of }1200=0.25\\times1200=300\\)"
+            },
+            {
+              "explain": "The meals slice is the 25% sector in the chart; its value is",
+              "work": "\\(\\boxed{\\$300}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" width=\"380\" height=\"240\"><rect width=\"380\" height=\"240\" fill=\"#fff\"/><path d=\"M120 130L120 40A90 90 0 0 0 120 220Z\" fill=\"#fde68a\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M120 130L120 40A90 90 0 0 1 210 130Z\" fill=\"#bfdbfe\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M120 130L210 130A90 90 0 0 1 120 220Z\" fill=\"#86efac\" stroke=\"#16a34a\" stroke-width=\"4\"/><text x=\"65\" y=\"118\" font-size=\"16\" text-anchor=\"middle\" font-family=\"Arial\">Accommodation</text><text x=\"65\" y=\"140\" font-size=\"16\" text-anchor=\"middle\" font-family=\"Arial\">$540 = 45%</text><text x=\"161\" y=\"94\" font-size=\"17\" text-anchor=\"middle\" font-family=\"Arial\">Shopping</text><text x=\"161\" y=\"115\" font-size=\"17\" text-anchor=\"middle\" font-family=\"Arial\">30%</text><text x=\"162\" y=\"160\" font-size=\"17\" text-anchor=\"middle\" font-family=\"Arial\">Meals</text><text x=\"162\" y=\"181\" font-size=\"17\" text-anchor=\"middle\" font-family=\"Arial\">25%</text></svg>"
+              }
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Percentage revision (Year 7)",
+            "school": "M2 Mathematics / SmarterMaths",
+            "number": "2",
+            "napId": "NAP-72897"
+          },
+          "options": [
+            "$260",
+            "$360",
+            "$300",
+            "$540"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "How much money did Kat spend on meals on her holiday?",
+              "note": "The chart’s 30% shopping slice leaves 25% for meals after accounting for the 45% accommodation slice."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" width=\"380\" height=\"240\"><rect width=\"380\" height=\"240\" fill=\"#fff\"/><path d=\"M120 130L120 40A90 90 0 0 0 120 220Z\" fill=\"#fde68a\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M120 130L120 40A90 90 0 0 1 210 130Z\" fill=\"#bfdbfe\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M120 130L210 130A90 90 0 0 1 120 220Z\" fill=\"#86efac\" stroke=\"#16a34a\" stroke-width=\"4\"/><text x=\"65\" y=\"118\" font-size=\"16\" text-anchor=\"middle\" font-family=\"Arial\">Accommodation</text><text x=\"65\" y=\"140\" font-size=\"16\" text-anchor=\"middle\" font-family=\"Arial\">$540 = 45%</text><text x=\"161\" y=\"94\" font-size=\"17\" text-anchor=\"middle\" font-family=\"Arial\">Shopping</text><text x=\"161\" y=\"115\" font-size=\"17\" text-anchor=\"middle\" font-family=\"Arial\">30%</text><text x=\"162\" y=\"160\" font-size=\"17\" text-anchor=\"middle\" font-family=\"Arial\">Meals</text><text x=\"162\" y=\"181\" font-size=\"17\" text-anchor=\"middle\" font-family=\"Arial\">25%</text></svg>"
+          }
+        },
+        {
+          "id": "yr7-percentage-revision-36428",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "A local soccer club has 1600 fans. At a game, one-quarter of the fans wear a yellow jersey and the rest wear red. 25% of the red jerseys have a black stripe down the back. How many red jerseys have a black stripe?",
+          "hint": "Find the fraction of fans wearing red, then take 25% of that number.",
+          "steps": [
+            {
+              "explain": "One-quarter wear yellow, so three-quarters wear red.",
+              "work": "\\(1600-\\frac14(1600)=1600-400=1200\\text{ red jerseys}\\)"
+            },
+            {
+              "explain": "Convert 25% to one-quarter and calculate one-quarter of 1200.",
+              "work": "\\(25\\%\\times1200=0.25(1200)=300\\)"
+            },
+            {
+              "explain": "So the number of striped red jerseys is",
+              "work": "\\(\\boxed{300}\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Percentage revision (Year 7)",
+            "school": "M2 Mathematics / SmarterMaths",
+            "number": "5",
+            "napId": "NAP-36428"
+          },
+          "options": [
+            "250",
+            "300",
+            "400",
+            "1200"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "25% of the red jerseys",
+              "note": "First find the number of red jerseys; the 25% applies to red jerseys, not to all fans."
+            }
+          ]
+        },
+        {
+          "id": "yr7-percentage-revision-08279",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "A hockey stick is on sale, reduced from $220 to $165. What percentage discount has been applied?",
+          "hint": "Find the dollar reduction first, then divide it by the original price.",
+          "steps": [
+            {
+              "explain": "Calculate the amount taken off the original price.",
+              "work": "\\(220-165=55\\text{ dollars}\\)"
+            },
+            {
+              "explain": "The discount percentage is the reduction divided by the original price, times 100%.",
+              "work": "\\(\\frac{55}{220}\\times100\\%=0.25\\times100\\%=25\\%\\)"
+            },
+            {
+              "explain": "The discount applied was",
+              "work": "\\(\\boxed{25\\%}\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Percentage revision (Year 7)",
+            "school": "M2 Mathematics / SmarterMaths",
+            "number": "8",
+            "napId": "NAP-08279"
+          },
+          "options": [
+            "25%",
+            "33%",
+            "45%",
+            "55%"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "reduced from $220 to $165",
+              "note": "A discount is measured relative to the original price, not the sale price."
+            }
+          ]
+        },
+        {
+          "id": "yr7-percentage-revision-55320",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "A scholarship fund of $1 000 000 is allocated between three scholarships as shown in the table below. 150 students were given a Hardship Scholarship. How much did each Hardship Scholarship winner get?",
+          "hint": "Use the Hardship Scholarship percentage to find the total allocation, then divide it among 150 winners.",
+          "steps": [
+            {
+              "explain": "The table assigns 30% of the $1,000,000 fund to Hardship Scholarships.",
+              "work": "\\(0.30\\times1{,}000{,}000=300{,}000\\text{ dollars}\\)"
+            },
+            {
+              "explain": "Share this amount equally among 150 students.",
+              "work": "\\(300{,}000\\div150=2{,}000\\)"
+            },
+            {
+              "explain": "Each winner receives",
+              "work": "\\(\\boxed{\\$2{,}000}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 230\" width=\"380\" height=\"240\"><rect width=\"380\" height=\"240\" fill=\"white\"/><rect x=\"45\" y=\"30\" width=\"380\" height=\"240\" fill=\"#fef3c7\"/><g stroke=\"#475569\" stroke-width=\"1.5\" fill=\"none\"><path d=\"M45 30H375V198H45Z M205 30V198 M45 72H375 M45 114H375 M45 156H375\"/></g><g font-family=\"Arial\" font-size=\"17\" fill=\"#1e293b\"><text x=\"210\" y=\"57\" text-anchor=\"middle\">Percentage of $1 million</text><text x=\"55\" y=\"99\">Academic Scholarship</text><text x=\"290\" y=\"99\">40%</text><text x=\"55\" y=\"141\">Sport Scholarship</text><text x=\"290\" y=\"141\">30%</text><text x=\"55\" y=\"183\">Hardship Scholarship</text><text x=\"290\" y=\"183\">30%</text></g></svg>"
+              }
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Percentage revision (Year 7)",
+            "school": "M2 Mathematics / SmarterMaths",
+            "number": "9",
+            "napId": "NAP-55320"
+          },
+          "options": [
+            "$200",
+            "$2000",
+            "$20 000",
+            "$300 000"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "150 students were given a Hardship Scholarship",
+              "note": "The percentage gives the total scholarship pool; the number of winners determines each share."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 230\" width=\"380\" height=\"240\"><rect width=\"380\" height=\"240\" fill=\"white\"/><rect x=\"45\" y=\"30\" width=\"380\" height=\"240\" fill=\"#fef3c7\"/><g stroke=\"#475569\" stroke-width=\"1.5\" fill=\"none\"><path d=\"M45 30H375V198H45Z M205 30V198 M45 72H375 M45 114H375 M45 156H375\"/></g><g font-family=\"Arial\" font-size=\"17\" fill=\"#1e293b\"><text x=\"210\" y=\"57\" text-anchor=\"middle\">Percentage of $1 million</text><text x=\"55\" y=\"99\">Academic Scholarship</text><text x=\"290\" y=\"99\">40%</text><text x=\"55\" y=\"141\">Sport Scholarship</text><text x=\"290\" y=\"141\">30%</text><text x=\"55\" y=\"183\">Hardship Scholarship</text><text x=\"290\" y=\"183\">30%</text></g></svg>"
+          }
+        },
+        {
+          "id": "yr7-percentage-revision-25889",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "Mary has 60 books and splits them into four categories. This table shows the percentage of each category. How many sport books does Mary have?",
+          "hint": "Read the Sport percentage from the table and calculate that fraction of all 60 books.",
+          "steps": [
+            {
+              "explain": "The table shows that Sport accounts for 30% of the 60 books.",
+              "work": "\\(30\\%=\\frac{30}{100}=0.30\\)"
+            },
+            {
+              "explain": "Multiply the total number of books by this fraction.",
+              "work": "\\(0.30\\times60=18\\)"
+            },
+            {
+              "explain": "Mary has",
+              "work": "\\(\\boxed{18\\text{ sport books}}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 250\" width=\"380\" height=\"240\"><rect width=\"380\" height=\"240\" fill=\"white\"/><rect x=\"55\" y=\"35\" width=\"380\" height=\"240\" fill=\"#fef08a\"/><g stroke=\"#475569\" stroke-width=\"1.5\" fill=\"none\"><path d=\"M55 35H365V207H55Z M240 35V207 M55 78H365 M55 121H365 M55 164H365\"/></g><g font-family=\"Arial\" font-size=\"18\" fill=\"#1e293b\"><text x=\"66\" y=\"63\">Book category</text><text x=\"250\" y=\"63\">Percentage</text><text x=\"66\" y=\"107\">Textbooks</text><text x=\"275\" y=\"107\">35%</text><text x=\"66\" y=\"150\">Sport</text><text x=\"275\" y=\"150\">30%</text><text x=\"66\" y=\"193\">Fiction / Travel</text><text x=\"275\" y=\"193\">35%</text></g></svg>"
+              }
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Percentage revision (Year 7)",
+            "school": "M2 Mathematics / SmarterMaths",
+            "number": "10",
+            "napId": "NAP-25889"
+          },
+          "options": [
+            "2",
+            "18",
+            "20",
+            "30"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "Mary has 60 books",
+              "note": "Use the percentage in the Sport row of the table and multiply by the total."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 250\" width=\"380\" height=\"240\"><rect width=\"380\" height=\"240\" fill=\"white\"/><rect x=\"55\" y=\"35\" width=\"380\" height=\"240\" fill=\"#fef08a\"/><g stroke=\"#475569\" stroke-width=\"1.5\" fill=\"none\"><path d=\"M55 35H365V207H55Z M240 35V207 M55 78H365 M55 121H365 M55 164H365\"/></g><g font-family=\"Arial\" font-size=\"18\" fill=\"#1e293b\"><text x=\"66\" y=\"63\">Book category</text><text x=\"250\" y=\"63\">Percentage</text><text x=\"66\" y=\"107\">Textbooks</text><text x=\"275\" y=\"107\">35%</text><text x=\"66\" y=\"150\">Sport</text><text x=\"275\" y=\"150\">30%</text><text x=\"66\" y=\"193\">Fiction / Travel</text><text x=\"275\" y=\"193\">35%</text></g></svg>"
+          }
+        },
+        {
+          "id": "yr7-percentage-revision-61264",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "A sport store has a sale. What is the difference in the sale prices of these two tents?",
+          "hint": "For each tent, calculate the percentage that remains after the discount; then subtract the sale prices.",
+          "steps": [
+            {
+              "explain": "For the $85 tent, 30% is removed, so 70% remains.",
+              "work": "\\(85(1-0.30)=85(0.70)=\\$59.50\\)"
+            },
+            {
+              "explain": "For the $80 tent, 35% is removed, so 65% remains.",
+              "work": "\\(80(1-0.35)=80(0.65)=\\$52.00\\)"
+            },
+            {
+              "explain": "Subtract the lower sale price from the higher sale price.",
+              "work": "\\(59.50-52.00=\\boxed{\\$7.50}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 560 250\" width=\"380\" height=\"240\"><rect width=\"380\" height=\"240\" fill=\"white\"/><g stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"><rect x=\"28\" y=\"25\" width=\"380\" height=\"240\" fill=\"#dcfce7\"/><path d=\"M65 162L135 64L214 162M92 162L133 103L182 162Z\" fill=\"#bae6fd\"/><rect x=\"300\" y=\"25\" width=\"380\" height=\"240\" fill=\"#dcfce7\"/><path d=\"M337 162L407 64L486 162M364 162L405 103L454 162Z\" fill=\"#bfdbfe\"/></g><g text-anchor=\"middle\" fill=\"#111827\" font-family=\"Arial\"><text x=\"140\" y=\"193\" font-size=\"22\" font-weight=\"bold\">Tent was $85</text><text x=\"140\" y=\"219\" font-size=\"21\" font-weight=\"bold\">NOW 30% OFF</text><text x=\"412\" y=\"193\" font-size=\"22\" font-weight=\"bold\">Tent was $80</text><text x=\"412\" y=\"219\" font-size=\"21\" font-weight=\"bold\">NOW 35% OFF</text></g></svg>"
+              }
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Percentage revision (Year 7)",
+            "school": "M2 Mathematics / SmarterMaths",
+            "number": "11",
+            "napId": "NAP-61264"
+          },
+          "options": [
+            "$5.50",
+            "$7.50",
+            "$8.00",
+            "$12.50"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "difference in the sale prices",
+              "note": "Apply each discount to its own original tent price, then find the difference."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 560 250\" width=\"380\" height=\"240\"><rect width=\"380\" height=\"240\" fill=\"white\"/><g stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"><rect x=\"28\" y=\"25\" width=\"380\" height=\"240\" fill=\"#dcfce7\"/><path d=\"M65 162L135 64L214 162M92 162L133 103L182 162Z\" fill=\"#bae6fd\"/><rect x=\"300\" y=\"25\" width=\"380\" height=\"240\" fill=\"#dcfce7\"/><path d=\"M337 162L407 64L486 162M364 162L405 103L454 162Z\" fill=\"#bfdbfe\"/></g><g text-anchor=\"middle\" fill=\"#111827\" font-family=\"Arial\"><text x=\"140\" y=\"193\" font-size=\"22\" font-weight=\"bold\">Tent was $85</text><text x=\"140\" y=\"219\" font-size=\"21\" font-weight=\"bold\">NOW 30% OFF</text><text x=\"412\" y=\"193\" font-size=\"22\" font-weight=\"bold\">Tent was $80</text><text x=\"412\" y=\"219\" font-size=\"21\" font-weight=\"bold\">NOW 35% OFF</text></g></svg>"
+          }
+        },
+        {
+          "id": "yr7-percentage-revision-43493",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Walker is doing an intensive swim program over the summer holidays. In his first session, he swims 50 laps. In his second session, he swims 30% more laps than his first session. In his third session, he swims 20% more laps than his second session. How many laps does he swim at his third practice?",
+          "hint": "Apply the 30% increase to 50 first. Then apply the 20% increase to the new second-session amount.",
+          "steps": [
+            {
+              "explain": "A 30% increase means the second-session amount is 130% of 50.",
+              "work": "\\(50(1+0.30)=50(1.30)=65\\text{ laps}\\)"
+            },
+            {
+              "explain": "The third session is 120% of 65 laps.",
+              "work": "\\(65(1+0.20)=65(1.20)=78\\text{ laps}\\)"
+            },
+            {
+              "explain": "Walker swims",
+              "work": "\\(\\boxed{78\\text{ laps}}\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Percentage revision (Year 7)",
+            "school": "M2 Mathematics / SmarterMaths",
+            "number": "12",
+            "napId": "NAP-43493"
+          },
+          "options": [
+            "65",
+            "75",
+            "78",
+            "80"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "30% more laps than his first session",
+              "note": "Successive percentage increases are applied to the updated amount each time."
+            }
+          ]
+        },
+        {
+          "id": "yr7-percentage-revision-25911",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Don buys a cricket ball, originally marked $30, that is discounted by 25%. He also has a loyalty card that gives him another 20% off the sale price. What is the final cost of the ball?",
+          "hint": "After each discount, calculate the new price. The second 20% discount is based on the sale price after the first discount.",
+          "steps": [
+            {
+              "explain": "After the first 25% discount, 75% of the original price remains.",
+              "work": "\\(30(1-0.25)=30(0.75)=\\$22.50\\)"
+            },
+            {
+              "explain": "The loyalty discount leaves 80% of this new price.",
+              "work": "\\(22.50(1-0.20)=22.50(0.80)=\\$18.00\\)"
+            },
+            {
+              "explain": "The final cost is",
+              "work": "\\(\\boxed{\\$18.00}\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Percentage revision (Year 7)",
+            "school": "M2 Mathematics / SmarterMaths",
+            "number": "13",
+            "napId": "NAP-25911"
+          },
+          "options": [
+            "$12.00",
+            "$18.00",
+            "$18.50",
+            "$22.50"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "another 20% off the sale price",
+              "note": "The second percentage reduction is calculated from $22.50, not from $30."
+            }
+          ]
+        },
+        {
+          "id": "yr7-percentage-revision-19972",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Richard bought a second hand snowboard at a cost of $390. Richard had to spend 65% of his savings to buy the snowboard. How much did Richard have in his savings after buying the snowboard?",
+          "hint": "Since $390 is 65% of his savings, first work backwards to find 100%, then subtract the purchase cost.",
+          "steps": [
+            {
+              "explain": "Let the original savings be the whole 100%. The snowboard cost represents 65% of that amount.",
+              "work": "\\(0.65S=390\\)"
+            },
+            {
+              "explain": "Divide by 0.65 to find the original savings.",
+              "work": "\\(S=390\\div0.65=\\$600\\)"
+            },
+            {
+              "explain": "Subtract the $390 spent to find the amount remaining.",
+              "work": "\\(600-390=\\boxed{\\$210}\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Percentage revision (Year 7)",
+            "school": "M2 Mathematics / SmarterMaths",
+            "number": "14",
+            "napId": "NAP-19972"
+          },
+          "options": [
+            "$210",
+            "$390",
+            "$600",
+            "$990"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "65% of his savings",
+              "note": "The purchase price is 65% of the original savings; the question asks for the 35% left."
+            }
+          ]
+        },
+        {
+          "id": "yr7-percentage-revision-77584",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "A box of golf balls normally cost $19.50. During a sale, the golf shop took 10% off the regular price of the balls. What is the new sale price of the golf balls?",
+          "hint": "Find 10% of $19.50 and subtract that discount from the regular price.",
+          "steps": [
+            {
+              "explain": "Calculate the 10% reduction.",
+              "work": "\\(0.10\\times19.50=\\$1.95\\)"
+            },
+            {
+              "explain": "Subtract the discount from the regular price.",
+              "work": "\\(19.50-1.95=\\$17.55\\)"
+            },
+            {
+              "explain": "The sale price is",
+              "work": "\\(\\boxed{\\$17.55}\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Percentage revision (Year 7)",
+            "school": "M2 Mathematics / SmarterMaths",
+            "number": "15",
+            "napId": "NAP-77584"
+          },
+          "options": [
+            "$1.95",
+            "$17.50",
+            "$17.55",
+            "$19.40"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "10% off the regular price",
+              "note": "A 10% discount is not the sale price; subtract it from the original amount."
+            }
+          ]
+        },
+        {
+          "id": "yr7-percentage-revision-67014",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Harrison was saving his money to buy a cricket bat. After 1 month, he had saved 45% of the bat’s cost. After 2 months, he had saved another $90 and now had 75% of the bat’s cost. How much does the bat cost?",
+          "hint": "The extra $90 represents the increase from 45% to 75% of the bat’s cost.",
+          "steps": [
+            {
+              "explain": "Find what percentage of the bat cost the additional $90 represents.",
+              "work": "\\(75\\%-45\\%=30\\%\\)"
+            },
+            {
+              "explain": "If 30% is $90, then 1% is $3 and 100% is $300.",
+              "work": "\\(1\\%=90\\div30=3;\\quad100\\%=3\\times100=300\\)"
+            },
+            {
+              "explain": "The cricket bat costs",
+              "work": "\\(\\boxed{\\$300}\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Percentage revision (Year 7)",
+            "school": "M2 Mathematics / SmarterMaths",
+            "number": "16",
+            "napId": "NAP-67014"
+          },
+          "options": [
+            "$90",
+            "$135",
+            "$200",
+            "$300"
+          ],
+          "answer": 3,
+          "keyPoints": [
+            {
+              "text": "saved another $90 and now had 75%",
+              "note": "Subtract the two saved percentages to identify what the $90 represents."
+            }
+          ]
+        },
+        {
+          "id": "yr7-percentage-revision-48086",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "Michael purchases a 3D printer worth $2 490 000. He was given a 10% discount. What was the price paid by Michael after the discount?",
+          "hint": "A 10% discount means Michael pays 90% of the original price.",
+          "steps": [
+            {
+              "explain": "Convert the discount into the fraction of the price that is paid.",
+              "work": "\\(100\\%-10\\%=90\\%=0.90\\)"
+            },
+            {
+              "explain": "Multiply the original price by 0.90.",
+              "work": "\\(2{,}490{,}000(0.90)=2{,}241{,}000\\)"
+            },
+            {
+              "explain": "Michael pays",
+              "work": "\\(\\boxed{\\$2{,}241{,}000}\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Percentage revision (Year 7)",
+            "school": "M2 Mathematics / SmarterMaths",
+            "number": "17",
+            "napId": "NAP-48086"
+          },
+          "options": [
+            "$2 241 000",
+            "$2 249 000",
+            "$2 390 000",
+            "$2 490 000"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "He was given a 10% discount",
+              "note": "Subtracting 10% is the same as multiplying the original price by 90%."
             }
           ]
         }
