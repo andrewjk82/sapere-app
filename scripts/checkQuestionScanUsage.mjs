@@ -55,19 +55,9 @@ const ALLOWED_FILES = new Set([
  * confirmed spent is the preferred way to shorten the list.
  */
 const LEGACY_FILES = new Set([
-  'scripts/searchAllSpecialized.js',
-  'tools/scripts/checkCh4Distribution.js',
-  'tools/scripts/cleanup_bad_distractors.cjs',
-  'tools/scripts/findFloats.cjs',
-  'tools/scripts/fixAllBroken.cjs',
-  'tools/scripts/fixCh4FSteps.js',
-  'tools/scripts/fixCurrencyDollarEscapeBug.js',
-  'tools/scripts/fixGlobalFloats.cjs',
-  'tools/scripts/fixGlobalLatexPattern.cjs',
-  'tools/scripts/fix_dummy_fractions.cjs',
-  'tools/scripts/fix_global_negative_distractors.cjs',
-  'tools/scripts/structuralAuditAllQuestions.js',
-  'tools/scripts/syncCh4.js',
+  // Empty since 2026-10-27: every file that was on this list was a throwaway
+  // one-off that has now been deleted, so the guard runs with no exemptions.
+  // Keep it that way — fix the script or delete it, never allowlist it.
 ].map((p) => p.split('/').join(sep)));
 
 const SKIP_DIR = /(^|[\\/])(node_modules|dist|build|\.git|\.vercel|\.firebase)([\\/]|$)/;
