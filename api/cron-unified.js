@@ -6,6 +6,7 @@ import { buildProfile, examPrepD1StudentEmail, examPrepD1TeacherEmail } from './
 import { settleSprintWeek } from './_lib/timesTableSprintSettlement.js';
 import { purgeCheckedHomeworkOriginals } from './_lib/homeworkRetention.js';
 import { purgeOldLogs } from './_lib/logRetention.js';
+import { syncPoolMembership, isOffPeak } from './_lib/poolMembershipSync.js';
 
 // Emails sent per hourly run — the queue carries the rest to the next hour,
 // spreading the load (avoids email throttling).
@@ -293,6 +294,21 @@ export default async function handler(req, res) {
       if (d1Sent > 0) logs.push(`[D-1] ${d1Sent} D-1 report(s) sent.`);
     } catch (e) {
       logs.push(`[D-1] Error: ${e.message}`);
+    }
+
+    // ══════════════════════════════════════════════════════════════════════
+    // PART 1.55: Practice-pool membership sync (off-peak only)
+    // Content edits land in git, not Firestore, so nothing else bumps
+    // sync_meta/questions.membershipVersion — without this, students' pools
+    // never pick up added questions or drop removed ones.
+    // ══════════════════════════════════════════════════════════════════════
+    if (isOffPeak(sydHour)) {
+      try {
+        const r = await syncPoolMembership(db);
+        logs.push(`[PoolSync] ${r.action}${r.file ? ` (${r.file})` : ''}${r.reason ? ` — ${r.reason}` : ''}`);
+      } catch (err) {
+        logs.push(`[PoolSync] failed: ${err?.message || err}`);
+      }
     }
 
     // ══════════════════════════════════════════════════════════════════════

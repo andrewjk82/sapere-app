@@ -23,7 +23,9 @@ git commit && git push                     — Vercel then runs content:validate
 ```
 
 **Never**: write to Firestore `questions`/`question_index`/`question_topic_index`/`sync_meta` for
-content changes, edit `src/constants/seed*.js`, run `db.collection('questions').get()` or any
+content changes (one exception: `api/_lib/poolMembershipSync.js`, run by the off-peak cron, bumps
+`sync_meta/questions.membershipVersion` when the published `all-ids` file changes, so students'
+practice pools pick up added/removed questions — pools reconcile only on that counter), edit `src/constants/seed*.js`, run `db.collection('questions').get()` or any
 `.where(...)` query over it (a full/partial scan of that collection is banned regardless — see
 `feedback_never-scan-questions-collection` — and is also simply pointless now, since nothing reads
 that collection for content). `api/content.js` is the one exception — it's what the live Question
