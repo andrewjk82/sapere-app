@@ -605,6 +605,162 @@
               "note": "Build the SHM model from low tide (t = 0), then solve depth = 9.1."
             }
           ]
+        },
+        {
+          "id": "caringbah2020-ext2-q8",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "A particle is moving in simple harmonic motion about a fixed point O on a line. At time \\(t\\) seconds, its displacement from O is given by \\(x=2\\cos(\\pi t)\\) metres. What is the time taken by the particle to travel the first 100 metres of its motion?",
+          "hint": "Find the period from the coefficient of \\(t\\), then calculate the distance travelled in one full cycle. Count complete cycles and any remaining distance.",
+          "steps": [
+            {
+              "explain": "In \\(x=A\\cos(nt)\\), the angular frequency is the coefficient of \\(t\\). The period is \\(2\\pi/n\\).",
+              "work": "\\(n=\\pi\\ \\Rightarrow\\ T=\\frac{2\\pi}{\\pi}=2\\text{ s}\\)"
+            },
+            {
+              "explain": "The amplitude is \\(2\\) m, so the particle travels from one extreme to the other and back, a total of four amplitudes each cycle.",
+              "work": "\\(d_{\\text{cycle}}=4(2)=8\\text{ m}\\)"
+            },
+            {
+              "explain": "Divide \\(100\\) m into full cycles and the remaining distance. Twelve cycles cover \\(96\\) m; the last \\(4\\) m is half of another cycle, taking \\(1\\) s.",
+              "work": "\\(100=12(8)+4\\quad\\Rightarrow\\quad t=12(2)+\\frac{4}{8}(2)=24+1=25\\text{ s}\\)"
+            },
+            {
+              "explain": "Therefore the first 100 metres are travelled in",
+              "work": "\\(\\boxed{25\\text{ s}}\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 4U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "8"
+          },
+          "options": [
+            "\\(20\\text{ s}\\)",
+            "\\(25\\text{ s}\\)",
+            "\\(50\\text{ s}\\)",
+            "\\(100\\text{ s}\\)"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "time taken by the particle to travel the first 100 metres",
+              "note": "Use distance per complete SHM cycle, not the particle’s net displacement."
+            }
+          ]
+        },
+        {
+          "id": "caringbah2020-ext2-q11a",
+          "type": "multipart",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "A particle moves in a straight line with displacement \\(x=1+\\cos2t+\\sin2t\\) metres.",
+          "hint": "First combine the sine and cosine terms into one sinusoid. Track the phase to find the first arrival at O.",
+          "steps": [],
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 4U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "11(a)"
+          },
+          "parts": [
+            {
+              "id": "caringbah2020-ext2-q11a-i",
+              "type": "mc",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Express \\(x\\) in the form \\(x=1+a\\cos(2t-\\alpha)\\) for constants \\(a>0\\) and \\(0<\\alpha<\\frac{\\pi}{2}\\).",
+              "hint": "Expand \\(a\\cos(2t-\\alpha)\\) with the cosine difference identity, then match the coefficients of \\(\\cos 2t\\) and \\(\\sin 2t\\).",
+              "steps": [
+                {
+                  "explain": "The given displacement is \\(x=1+\\cos2t+\\sin2t\\). Expand the required cosine form using \\(\\cos(A-B)=\\cos A\\cos B+\\sin A\\sin B\\).",
+                  "work": "\\(1+a\\cos(2t-\\alpha)=1+(a\\cos\\alpha)\\cos2t+(a\\sin\\alpha)\\sin2t\\)"
+                },
+                {
+                  "explain": "Match the coefficients in the two expressions.",
+                  "work": "\\(a\\cos\\alpha=1,\\qquad a\\sin\\alpha=1\\)"
+                },
+                {
+                  "explain": "Square and add the equations to find \\(a\\), then divide them to find \\(\\alpha\\). The stated range selects the first-quadrant angle.",
+                  "work": "\\(a^2(\\cos^2\\alpha+\\sin^2\\alpha)=2\\Rightarrow a=\\sqrt2;\\quad\\tan\\alpha=1\\Rightarrow\\alpha=\\frac{\\pi}{4}\\)"
+                },
+                {
+                  "explain": "Substitute these constants into the requested form.",
+                  "work": "\\(\\boxed{x=1+\\sqrt2\\cos\\left(2t-\\frac{\\pi}{4}\\right)}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "11(a)(i)"
+              },
+              "options": [
+                "\\(a=\\sqrt2,\\ \\alpha=\\frac{\\pi}{4}\\)",
+                "\\(a=2,\\ \\alpha=\\frac{\\pi}{4}\\)",
+                "\\(a=\\sqrt2,\\ \\alpha=-\\frac{\\pi}{4}\\)",
+                "\\(a=1,\\ \\alpha=\\frac{\\pi}{4}\\)"
+              ],
+              "answer": 0,
+              "keyPoints": [
+                {
+                  "text": "Express \\(x\\) in the form",
+                  "note": "Matching the sine and cosine coefficients determines both constants."
+                }
+              ]
+            },
+            {
+              "id": "caringbah2020-ext2-q11a-ii",
+              "type": "mc",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Find correct to 2 decimal places the average speed of the particle during the time it takes to first reach O.",
+              "hint": "Use the displacement expression from the preceding part. Locate the first time \\(x=0\\), and split the distance at the turning point.",
+              "steps": [
+                {
+                  "explain": "From the preceding part, \\(x=1+\\sqrt2\\cos(2t-\\pi/4)\\). Initially \\(x(0)=2\\). To reach O, set \\(x=0\\).",
+                  "work": "\\(0=1+\\sqrt2\\cos(2t-\\frac{\\pi}{4})\\Rightarrow\\cos(2t-\\frac{\\pi}{4})=-\\frac1{\\sqrt2}\\)"
+                },
+                {
+                  "explain": "As time increases from zero, the first solution occurs when the phase reaches \\(3\\pi/4\\).",
+                  "work": "\\(2t-\\frac{\\pi}{4}=\\frac{3\\pi}{4}\\Rightarrow t=\\frac{\\pi}{2}\\text{ s}\\)"
+                },
+                {
+                  "explain": "The particle first moves from \\(x=2\\) to the right-hand turning point \\(x=1+\\sqrt2\\), then returns to \\(x=0\\). Add these path lengths.",
+                  "work": "\\(d=(1+\\sqrt2-2)+(1+\\sqrt2-0)=2\\sqrt2\\text{ m}\\)"
+                },
+                {
+                  "explain": "Average speed is total distance divided by elapsed time, then round to two decimal places.",
+                  "work": "\\(\\bar v=\\frac{2\\sqrt2}{\\pi/2}=\\frac{4\\sqrt2}{\\pi}\\approx1.80\\text{ m s}^{-1}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "11(a)(ii)"
+              },
+              "options": [
+                "\\(0.90\\text{ m s}^{-1}\\)",
+                "\\(1.27\\text{ m s}^{-1}\\)",
+                "\\(1.80\\text{ m s}^{-1}\\)",
+                "\\(2.55\\text{ m s}^{-1}\\)"
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "average speed of the particle",
+                  "note": "Average speed uses the full distance along the path, including the reversal at the turning point."
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1724,6 +1880,245 @@
               ]
             }
           ]
+        },
+        {
+          "id": "caringbah2020-ext2-q16b",
+          "type": "multipart",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "A particle of mass \\(m\\) kg falls from rest under the influence of gravity \\(g\\) in a medium where the resistance to motion is \\(mkv\\) when the particle has velocity \\(v\\) ms\\(^{-1}\\).",
+          "hint": "Take downward as positive. Resistance acts upward, and the terminal speed is reached when the acceleration becomes zero.",
+          "steps": [],
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 4U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "16(b)"
+          },
+          "parts": [
+            {
+              "id": "caringbah2020-ext2-q16b-i",
+              "type": "review",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Draw a diagram showing the forces acting on the particle.",
+              "hint": "The particle is falling, so its velocity is downward. Draw weight downward and the resistive force opposite to the motion.",
+              "steps": [
+                {
+                  "explain": "Represent the particle and choose downward as the positive direction.",
+                  "work": "Positive direction: downward"
+                },
+                {
+                  "explain": "Weight acts vertically downward. Since the particle is falling, the resistance acts upward, opposite to its velocity.",
+                  "work": "Weight: \\(mg\\) downward; resistance: \\(mkv\\) upward"
+                },
+                {
+                  "explain": "The free-body diagram shows the two forces and the chosen positive direction.",
+                  "work": "\\(F_{\\mathrm{net}}=mg-mkv\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" width=\"640\" height=\"400\"><rect width=\"320\" height=\"200\" fill=\"#fff\"/><defs><marker id=\"forceArrow\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\"><path d=\"M0 0L8 4L0 8Z\" fill=\"#334155\"/></marker><marker id=\"axisArrow\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\"><path d=\"M0 0L8 4L0 8Z\" fill=\"#7c3aed\"/></marker></defs><rect x=\"137\" y=\"83\" width=\"46\" height=\"34\" rx=\"5\" fill=\"#e0e7ff\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"160\" cy=\"100\" r=\"3\" fill=\"#334155\"/><line x1=\"160\" y1=\"83\" x2=\"160\" y2=\"35\" stroke=\"#2563eb\" stroke-width=\"2.5\" marker-end=\"url(#forceArrow)\"/><text x=\"171\" y=\"43\" font-family=\"Times New Roman,serif\" font-size=\"17\" font-style=\"italic\" fill=\"#1d4ed8\">mkv</text><line x1=\"160\" y1=\"117\" x2=\"160\" y2=\"168\" stroke=\"#dc2626\" stroke-width=\"2.5\" marker-end=\"url(#forceArrow)\"/><text x=\"171\" y=\"161\" font-family=\"Times New Roman,serif\" font-size=\"17\" font-style=\"italic\" fill=\"#b91c1c\">mg</text><line x1=\"226\" y1=\"66\" x2=\"226\" y2=\"126\" stroke=\"#7c3aed\" stroke-width=\"2\" marker-end=\"url(#axisArrow)\"/><text x=\"234\" y=\"92\" font-family=\"Times New Roman,serif\" font-size=\"16\" font-style=\"italic\" fill=\"#6d28d9\">positive</text><text x=\"234\" y=\"111\" font-family=\"Times New Roman,serif\" font-size=\"16\" font-style=\"italic\" fill=\"#6d28d9\">downward</text><text x=\"105\" y=\"195\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#475569\">Drag opposes downward motion</text></svg>"
+                  }
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "16(b)(i)"
+              },
+              "answer": "A free-body diagram has weight mg downward and resistance mkv upward; downward is the positive direction.",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Draw a diagram",
+                  "note": "Resistance must point opposite the downward motion."
+                }
+              ]
+            },
+            {
+              "id": "caringbah2020-ext2-q16b-ii",
+              "type": "review",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Show that the equation of motion of the particle is \\(\\dot v=k(V-v)\\) where \\(V\\) ms\\(^{-1}\\) is the terminal velocity of the particle in this medium, and \\(x\\) metres is the distance fallen in \\(t\\) seconds.",
+              "hint": "Take downward as positive. Apply Newton’s second law, then use the zero-acceleration condition that defines terminal velocity.",
+              "steps": [
+                {
+                  "explain": "The particle moves downward, so weight is positive and the upward resistance is negative. Newton’s second law gives",
+                  "work": "\\(m\\dot v=mg-mkv\\)"
+                },
+                {
+                  "explain": "At terminal velocity \\(V\\), acceleration is zero. Substitute \\(v=V\\) and \\(\\dot v=0\\).",
+                  "work": "\\(0=mg-mkV\\Rightarrow V=\\frac gk\\)"
+                },
+                {
+                  "explain": "Divide the equation of motion by \\(m\\), and replace \\(g\\) by \\(kV\\).",
+                  "work": "\\(\\dot v=g-kv=kV-kv=k(V-v)\\)"
+                },
+                {
+                  "explain": "Since \\(x\\) measures distance fallen, the consistent initial conditions are",
+                  "work": "\\(x(0)=0,\\qquad v(0)=0\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "16(b)(ii)"
+              },
+              "answer": "With downward positive, m dv/dt = mg - mkv and V=g/k, hence dv/dt = k(V-v).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Show that the equation of motion",
+                  "note": "Define terminal velocity by zero acceleration before substituting \\(V=g/k\\)."
+                }
+              ]
+            },
+            {
+              "id": "caringbah2020-ext2-q16b-iii",
+              "type": "mc",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Find in terms of \\(V\\) and \\(k\\) the time \\(T\\) seconds for the particle to attain 50% of its terminal velocity, and the distance fallen in this time.",
+              "hint": "Solve \\(\\dot v=k(V-v)\\) with \\(v(0)=0\\), set \\(v=V/2\\), then integrate velocity from 0 to T to get distance.",
+              "steps": [
+                {
+                  "explain": "Separate and solve the velocity equation with the particle released from rest.",
+                  "work": "\\(\\frac{dv}{V-v}=k\\,dt\\Rightarrow v=V(1-e^{-kt})\\)"
+                },
+                {
+                  "explain": "At time \\(T\\), the speed is half the terminal speed.",
+                  "work": "\\(\\frac V2=V(1-e^{-kT})\\Rightarrow e^{-kT}=\\frac12\\Rightarrow T=\\frac{\\ln2}{k}\\)"
+                },
+                {
+                  "explain": "Distance fallen is the integral of velocity from release to time \\(T\\).",
+                  "work": "\\(x(T)=\\int_0^T V(1-e^{-kt})dt=V\\left[T-\\frac{1-e^{-kT}}k\\right]\\)"
+                },
+                {
+                  "explain": "Substitute \\(T=\\ln2/k\\) and \\(e^{-kT}=1/2\\).",
+                  "work": "\\(x(T)=\\frac Vk\\left(\\ln2-\\frac12\\right)=\\frac{V}{2k}(2\\ln2-1)\\)"
+                },
+                {
+                  "explain": "The requested time and distance are",
+                  "work": "\\(\\boxed{T=\\frac{\\ln2}{k},\\quad x(T)=\\frac{V}{2k}(2\\ln2-1)}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "16(b)(iii)"
+              },
+              "options": [
+                "\\(T=\\frac{\\ln2}{k},\\ x=\\frac{V}{2k}(2\\ln2-1)\\)",
+                "\\(T=\\frac1{2k},\\ x=\\frac{V}{2k}\\)",
+                "\\(T=\\frac{\\ln2}{k},\\ x=\\frac{V}{k}(2\\ln2-1)\\)",
+                "\\(T=\\frac{2\\ln2}{k},\\ x=\\frac{V}{2k}(2\\ln2-1)\\)"
+              ],
+              "answer": 0,
+              "keyPoints": [
+                {
+                  "text": "attain 50% of its terminal velocity",
+                  "note": "Use the exponential velocity solution and integrate it to obtain distance, rather than using final speed times time."
+                }
+              ]
+            },
+            {
+              "id": "caringbah2020-ext2-q16b-iv",
+              "type": "review",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "What percentage of its terminal velocity will the particle have attained in time \\(2T\\) seconds? Sketch a graph of \\(v\\) against \\(t\\) showing this information.",
+              "hint": "Use \\(v=V(1-e^{-kt})\\) and \\(e^{-kT}=1/2\\). Evaluate the velocity at \\(2T\\), then mark both times and fractions on an increasing curve approaching \\(V\\).",
+              "steps": [
+                {
+                  "explain": "From the half-terminal-speed condition, \\(e^{-kT}=1/2\\). Therefore",
+                  "work": "\\(e^{-k(2T)}=(e^{-kT})^2=\\frac14\\)"
+                },
+                {
+                  "explain": "Substitute \\(t=2T\\) into the velocity solution.",
+                  "work": "\\(v(2T)=V(1-e^{-2kT})=V\\left(1-\\frac14\\right)=\\frac{3V}{4}\\)"
+                },
+                {
+                  "explain": "Convert this fraction to a percentage.",
+                  "work": "\\(\\frac{v(2T)}V\\times100\\%=\\frac34\\times100\\%=75\\%\\)"
+                },
+                {
+                  "explain": "The curve starts from rest and rises toward the terminal speed asymptote. The highlighted points show \\((T,V/2)\\) and \\((2T,3V/4)\\).",
+                  "work": "\\(v=V(1-e^{-kt}),\\quad v(T)=\\frac V2,\\quad v(2T)=\\frac{3V}{4},\\quad v\\to V\\text{ as }t\\to\\infty\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 250\" width=\"640\" height=\"381\"><rect x=\"0\" y=\"0\" width=\"420\" height=\"250\" rx=\"8\" fill=\"#fff\"/><line x1=\"48\" y1=\"202\" x2=\"395\" y2=\"202\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"48\" y1=\"210\" x2=\"48\" y2=\"32\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"48\" y1=\"82\" x2=\"385\" y2=\"82\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"6 4\"/><line x1=\"141.5\" y1=\"202\" x2=\"141.5\" y2=\"142\" stroke=\"#16a34a\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><line x1=\"48\" y1=\"142\" x2=\"141.5\" y2=\"142\" stroke=\"#16a34a\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><line x1=\"235.1\" y1=\"202\" x2=\"235.1\" y2=\"112\" stroke=\"#7c3aed\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><line x1=\"48\" y1=\"112\" x2=\"235.1\" y2=\"112\" stroke=\"#7c3aed\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><path d=\"M48.0 202.0 L68.7 185.0 L89.3 170.3 L110.0 157.8 L130.7 147.0 L151.4 137.8 L172.0 129.9 L192.7 123.1 L213.4 117.3 L234.0 112.2 L254.7 108.0 L275.4 104.3 L296.1 101.1 L316.7 98.4 L337.4 96.1 L358.1 94.1 L378.8 92.4\" fill=\"none\" stroke=\"#6d28d9\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"141.5\" cy=\"142\" r=\"4\" fill=\"#16a34a\"/><circle cx=\"235.1\" cy=\"112\" r=\"4\" fill=\"#7c3aed\"/><text x=\"54\" y=\"73\" font-family=\"Times New Roman,serif\" font-size=\"16\" font-style=\"italic\" fill=\"#475569\">v = V</text><text x=\"55\" y=\"137\" font-family=\"Times New Roman,serif\" font-size=\"15\" fill=\"#15803d\">V/2</text><text x=\"55\" y=\"107\" font-family=\"Times New Roman,serif\" font-size=\"15\" fill=\"#6d28d9\">3V/4</text><text x=\"133\" y=\"222\" font-family=\"Times New Roman,serif\" font-size=\"15\" font-style=\"italic\" fill=\"#15803d\">T</text><text x=\"222\" y=\"222\" font-family=\"Times New Roman,serif\" font-size=\"15\" font-style=\"italic\" fill=\"#6d28d9\">2T</text><text x=\"389\" y=\"207\" font-family=\"Times New Roman,serif\" font-size=\"17\" font-style=\"italic\" fill=\"#334155\">t</text><text x=\"35\" y=\"40\" font-family=\"Times New Roman,serif\" font-size=\"17\" font-style=\"italic\" fill=\"#334155\">v</text></svg>"
+                  }
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "16(b)(iv)"
+              },
+              "answer": "At 2T the particle has attained 75% of terminal velocity; the v-t curve rises from (0,0) toward the asymptote v=V, passing through (T,V/2) and (2T,3V/4).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Sketch a graph of",
+                  "note": "The curve approaches terminal velocity asymptotically; mark the two calculated time-speed pairs."
+                }
+              ]
+            },
+            {
+              "id": "caringbah2020-ext2-q16b-v",
+              "type": "mc",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "If the particle has reached 87.5% of its terminal velocity in 15 seconds, find the value of \\(k\\).",
+              "hint": "Write 87.5% as a fraction of terminal speed and substitute into \\(v/V=1-e^{-kt}\\).",
+              "steps": [
+                {
+                  "explain": "Convert the percentage to a fraction of terminal velocity.",
+                  "work": "\\(87.5\\%=\\frac{87.5}{100}=\\frac78\\)"
+                },
+                {
+                  "explain": "Substitute \\(t=15\\) and \\(v/V=7/8\\) into the velocity formula.",
+                  "work": "\\(\\frac78=1-e^{-15k}\\Rightarrow e^{-15k}=\\frac18\\)"
+                },
+                {
+                  "explain": "Take natural logarithms and solve for \\(k\\).",
+                  "work": "\\(-15k=\\ln\\left(\\frac18\\right)=-3\\ln2\\Rightarrow k=\\frac{3\\ln2}{15}=\\frac{\\ln2}{5}\\text{ s}^{-1}\\)"
+                },
+                {
+                  "explain": "Hence",
+                  "work": "\\(\\boxed{k=\\frac{\\ln2}{5}\\text{ s}^{-1}}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "16(b)(v)"
+              },
+              "options": [
+                "\\(\\frac{\\ln2}{15}\\text{ s}^{-1}\\)",
+                "\\(\\frac{\\ln2}{5}\\text{ s}^{-1}\\)",
+                "\\(\\frac{3\\ln2}{5}\\text{ s}^{-1}\\)",
+                "\\(\\frac{\\ln2}{3}\\text{ s}^{-1}\\)"
+              ],
+              "answer": 1,
+              "keyPoints": [
+                {
+                  "text": "find the value of \\(k\\)",
+                  "note": "Convert 87.5% to \\(7/8\\), then take logarithms after isolating the exponential."
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1909,6 +2304,52 @@
               ]
             }
           ]
+        },
+        {
+          "id": "caringbah2020-ext2-q9",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "A particle is projected horizontally with speed \\(\\sqrt{gh}\\) ms\\(^{-1}\\) from the top of a tower of height \\(h\\) metres. It moves under gravity where the acceleration due to gravity is \\(g\\) ms\\(^{-2}\\). At what angle to the horizontal will the particle hit the ground?",
+          "hint": "Use the vertical fall to find the flight time. The horizontal speed stays constant; the vertical impact speed is \\(gt\\).",
+          "steps": [
+            {
+              "explain": "Choose upward as positive. The vertical displacement is \\(-h\\), initial vertical velocity is zero, and vertical acceleration is \\(-g\\).",
+              "work": "\\(-h=0\\cdot t-\\frac12gt^2\\quad\\Rightarrow\\quad t=\\sqrt{\\frac{2h}{g}}\\)"
+            },
+            {
+              "explain": "There is no horizontal acceleration, so the horizontal velocity at impact is still its initial value.",
+              "work": "\\(v_x=\\sqrt{gh}\\)"
+            },
+            {
+              "explain": "The vertical velocity after this fall is downward. Its magnitude is",
+              "work": "\\(|v_y|=gt=g\\sqrt{\\frac{2h}{g}}=\\sqrt{2gh}\\)"
+            },
+            {
+              "explain": "If \\(\\theta\\) is the angle below the horizontal, then its tangent is vertical speed divided by horizontal speed.",
+              "work": "\\(\\tan\\theta=\\frac{|v_y|}{v_x}=\\frac{\\sqrt{2gh}}{\\sqrt{gh}}=\\sqrt2\\quad\\Rightarrow\\quad\\theta=\\tan^{-1}(\\sqrt2)\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 4U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "9"
+          },
+          "options": [
+            "\\(\\tan^{-1}(1/2)\\)",
+            "\\(\\tan^{-1}(1/\\sqrt2)\\)",
+            "\\(\\tan^{-1}(\\sqrt2)\\)",
+            "\\(\\tan^{-1}(2)\\)"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "At what angle to the horizontal will the particle hit the ground?",
+              "note": "At impact compare the vertical velocity magnitude with the unchanged horizontal velocity."
+            }
+          ]
         }
       ]
     },
@@ -2002,6 +2443,152 @@
             {
               "text": "Two birds have relative position \\(r=(-3,a+2,2)\\) and relative velocity \\(v=(1,9,-2)\\)",
               "note": "At minimum separation, the relative position is perpendicular to the relative velocity: \\((r+5v)\\cdot v=0\\)."
+            }
+          ]
+        },
+        {
+          "id": "caringbah2020-ext2-q15b",
+          "type": "multipart",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "A particle is moving in a straight line from a fixed point O on the line, so that at time \\(t\\) seconds it has displacement \\(x\\) metres, a velocity \\(v\\) ms\\(^{-1}\\) and an acceleration \\(a\\) ms\\(^{-2}\\) given by \\(a=e^{x/2}\\). Initially the particle is at O and moving with a speed of 2 ms\\(^{-1}\\) while slowing down.",
+          "hint": "Use \\(a=v\\,dv/dx\\) because acceleration is specified as a function of displacement. Track the sign of velocity from the stated initial direction.",
+          "steps": [],
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah 2020 4U Trials & Solutions",
+            "school": "Caringbah High School",
+            "year": 2020,
+            "number": "15(b)"
+          },
+          "parts": [
+            {
+              "id": "caringbah2020-ext2-q15b-i",
+              "type": "review",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Show that \\(v=-2e^{x/4}\\).",
+              "hint": "Because acceleration is given as a function of position, use \\(a=v\\,dv/dx\\). The particle initially moves in the negative direction, so retain the negative velocity root.",
+              "steps": [
+                {
+                  "explain": "Use the chain rule: \\(a=\\frac{dv}{dt}=\\frac{dv}{dx}\\frac{dx}{dt}=v\\frac{dv}{dx}\\). Substitute the given acceleration.",
+                  "work": "\\(v\\frac{dv}{dx}=e^{x/2}\\)"
+                },
+                {
+                  "explain": "Separate variables and integrate with respect to \\(x\\).",
+                  "work": "\\(v\\,dv=e^{x/2}dx\\quad\\Rightarrow\\quad\\frac12v^2=2e^{x/2}+C\\)"
+                },
+                {
+                  "explain": "Initially \\(x=0\\) and the particle is moving with speed \\(2\\) while slowing down. Its signed velocity is therefore \\(v=-2\\). Use this to find the constant.",
+                  "work": "\\(\\frac12(-2)^2=2e^0+C\\Rightarrow2=2+C\\Rightarrow C=0\\)"
+                },
+                {
+                  "explain": "Take the negative square root because the particle continues in its initial direction of travel.",
+                  "work": "\\(v^2=4e^{x/2}\\Rightarrow v=-2e^{x/4}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "15(b)(i)"
+              },
+              "answer": "Using a = v dv/dx and the initial condition (x,v)=(0,-2) gives v = -2e^(x/4).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Show that",
+                  "note": "The initial velocity is negative because the particle is moving in the negative direction; speed alone is positive."
+                }
+              ]
+            },
+            {
+              "id": "caringbah2020-ext2-q15b-ii",
+              "type": "mc",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Find expressions for \\(x\\), \\(v\\) and \\(a\\) in terms of \\(t\\).",
+              "hint": "Start from \\(dx/dt=v=-2e^{x/4}\\). Separate variables, integrate, and use \\(x(0)=0\\). Then substitute the resulting \\(x(t)\\) into the formulas for velocity and acceleration.",
+              "steps": [
+                {
+                  "explain": "Separate variables in \\(dx/dt=-2e^{x/4}\\).",
+                  "work": "\\(e^{-x/4}\\,dx=-2\\,dt\\)"
+                },
+                {
+                  "explain": "Integrate both sides.",
+                  "work": "\\(-4e^{-x/4}=-2t+C\\)"
+                },
+                {
+                  "explain": "Use \\(x=0\\) at \\(t=0\\) to find \\(C=-4\\), then solve for \\(x\\).",
+                  "work": "\\(-4=-0+C\\Rightarrow C=-4;\\quad e^{-x/4}=1+\\frac t2=\\frac{t+2}{2}\\Rightarrow x=4\\ln\\left(\\frac2{t+2}\\right)\\)"
+                },
+                {
+                  "explain": "Substitute \\(e^{-x/4}=(t+2)/2\\) into \\(v=-2e^{x/4}\\), and use \\(a=e^{x/2}\\).",
+                  "work": "\\(v=-\\frac4{t+2},\\qquad a=\\frac4{(t+2)^2}\\)"
+                },
+                {
+                  "explain": "Collect the three expressions, valid for \\(t\\ge0\\).",
+                  "work": "\\(\\boxed{x=4\\ln\\left(\\frac2{t+2}\\right),\\quad v=-\\frac4{t+2},\\quad a=\\frac4{(t+2)^2}}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "15(b)(ii)"
+              },
+              "options": [
+                "\\(x=4\\ln\\frac{2}{t+2},\\ v=-\\frac4{t+2},\\ a=\\frac4{(t+2)^2}\\)",
+                "\\(x=4\\ln\\frac{t+2}{2},\\ v=-\\frac4{t+2},\\ a=\\frac4{(t+2)^2}\\)",
+                "\\(x=-4\\ln\\frac2{t+2},\\ v=\\frac4{t+2},\\ a=\\frac4{(t+2)^2}\\)",
+                "\\(x=4\\ln\\frac2{t+2},\\ v=-\\frac2{t+2},\\ a=\\frac2{(t+2)^2}\\)"
+              ],
+              "answer": 0,
+              "keyPoints": [
+                {
+                  "text": "Find expressions for",
+                  "note": "Apply the initial condition after integrating; preserve the negative sign of velocity."
+                }
+              ]
+            },
+            {
+              "id": "caringbah2020-ext2-q15b-iii",
+              "type": "review",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Describe the subsequent motion of the particle.",
+              "hint": "Use the signs and limits of your expressions for \\(x(t)\\), \\(v(t)\\) and \\(a(t)\\) as \\(t\\) increases.",
+              "steps": [
+                {
+                  "explain": "For every \\(t\\ge0\\), the velocity is negative, so the particle continues moving in its original negative direction.",
+                  "work": "\\(v(t)=-\\frac4{t+2}<0\\)"
+                },
+                {
+                  "explain": "The displacement decreases without bound, while the speed decreases toward zero.",
+                  "work": "\\(x(t)=4\\ln\\left(\\frac2{t+2}\\right)\\longrightarrow-\\infty,\\qquad |v(t)|=\\frac4{t+2}\\longrightarrow0\\)"
+                },
+                {
+                  "explain": "The positive acceleration also tends to zero. Thus the particle keeps moving in the negative direction, slowing at an ever-decreasing rate.",
+                  "work": "\\(a(t)=\\frac4{(t+2)^2}\\longrightarrow0\\quad(t\\to\\infty)\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Caringbah 2020 4U Trials & Solutions",
+                "school": "Caringbah High School",
+                "year": 2020,
+                "number": "15(b)(iii)"
+              },
+              "answer": "The particle continues in the negative direction without bound, while its speed and acceleration approach zero.",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Describe the subsequent motion",
+                  "note": "Interpret the signs and long-term limits: negative velocity means negative direction; decreasing speed means slowing."
+                }
+              ]
             }
           ]
         }
