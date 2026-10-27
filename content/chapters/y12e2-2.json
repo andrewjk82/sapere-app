@@ -594,21 +594,21 @@
           "manual": true,
           "difficulty": "hard",
           "timeLimit": 60,
-          "stem": "It is given that \\(a>0\\) and \\(b>0\\) are real numbers. Consider the statement \\(\\forall a(\\forall b,\\log_{1/a}(1/b)=\\log_a b)\\). Prove that the statement is true.",
-          "hint": "Rewrite each logarithm using natural logarithms. Track the negative signs from \\(\\ln(1/a)=-\\ln a\\) and \\(\\ln(1/b)=-\\ln b\\).",
-          "solution": "For a positive base different from 1, \\(\\log_{1/a}(1/b)=\\frac{\\ln(1/b)}{\\ln(1/a)}=\\frac{-\\ln b}{-\\ln a}=\\frac{\\ln b}{\\ln a}=\\log_a b\\). The source statement omits the necessary restriction \\(a\\ne1\\); at \\(a=1\\), both sides are undefined.",
+          "stem": "It is given that \\(a>0\\) and \\(b>0\\) are real numbers. Consider the statement \\(\\forall a\\,\\left(\\forall b,\\;\\log_{\\frac{1}{a}}\\left(\\frac{1}{b}\\right)=\\log_a b\\right)\\). Prove that the statement is true.",
+          "hint": "Rewrite each logarithm using natural logarithms. Track the negative signs from \\(\\ln\\left(\\frac{1}{a}\\right)=-\\ln a\\) and \\(\\ln\\left(\\frac{1}{b}\\right)=-\\ln b\\).",
+          "solution": "For a positive base different from 1, \\(\\log_{\\frac{1}{a}}\\left(\\frac{1}{b}\\right)=\\frac{\\ln\\left(\\frac{1}{b}\\right)}{\\ln\\left(\\frac{1}{a}\\right)}=\\frac{-\\ln b}{-\\ln a}=\\frac{\\ln b}{\\ln a}=\\log_a b\\). The source statement omits the necessary restriction \\(a\\ne1\\); at \\(a=1\\), both sides are undefined.",
           "steps": [
             {
               "explain": "Use the change-of-base formula. The logarithms are defined only when their bases are positive and not equal to 1, so the stated identity is understood for \\(a>0, a\\ne1\\) and \\(b>0\\).",
-              "work": "\\(\\log_{1/a}(1/b)=\\frac{\\ln(1/b)}{\\ln(1/a)}.\\)"
+              "work": "\\(\\log_{\\frac{1}{a}}\\left(\\frac{1}{b}\\right)=\\frac{\\ln\\left(\\frac{1}{b}\\right)}{\\ln\\left(\\frac{1}{a}\\right)}\\)"
             },
             {
-              "explain": "Use \\(\\ln(1/u)=-\\ln u\\) for positive u in both numerator and denominator. The two negative signs cancel.",
-              "work": "\\(\\frac{\\ln(1/b)}{\\ln(1/a)}=\\frac{-\\ln b}{-\\ln a}=\\frac{\\ln b}{\\ln a}.\\)"
+              "explain": "Use \\(\\ln\\left(\\frac{1}{u}\\right)=-\\ln u\\) for positive \\(u\\) in both numerator and denominator. The two negative signs cancel.",
+              "work": "\\(\\frac{\\ln\\left(\\frac{1}{b}\\right)}{\\ln\\left(\\frac{1}{a}\\right)}=\\frac{-\\ln b}{-\\ln a}=\\frac{\\ln b}{\\ln a}\\)"
             },
             {
               "explain": "Apply change of base again to recognise the final expression. Note that \\(a=1\\) is excluded because both logarithms with base 1 are undefined.",
-              "work": "\\(\\frac{\\ln b}{\\ln a}=\\log_a b.\\qquad\\therefore\\;\\log_{1/a}(1/b)=\\log_a b.\\)"
+              "work": "\\(\\frac{\\ln b}{\\ln a}=\\log_a b\\quad\\therefore\\;\\log_{\\frac{1}{a}}\\left(\\frac{1}{b}\\right)=\\log_a b\\)"
             }
           ],
           "xp": 1,
@@ -622,11 +622,11 @@
           },
           "keyPoints": [
             {
-              "text": "It is given that \\(a>0\\) and \\(b>0\\) are real numbers. Consider the statement \\(\\forall a(\\forall b,\\log_{1/a}(1/b)=\\log_a b)\\). Prove that the statement is true.",
-              "note": "Rewrite each logarithm using natural logarithms. Track the negative signs from \\(\\ln(1/a)=-\\ln a\\) and \\(\\ln(1/b)=-\\ln b\\)."
+              "text": "\\(\\log_{\\frac{1}{a}}\\left(\\frac{1}{b}\\right)=\\log_a b\\)",
+              "note": "Rewrite each logarithm using natural logarithms. Track the negative signs from \\(\\ln\\left(\\frac{1}{a}\\right)=-\\ln a\\) and \\(\\ln\\left(\\frac{1}{b}\\right)=-\\ln b\\)."
             }
           ],
-          "answer": "For a positive base different from 1, \\(\\log_{1/a}(1/b)=\\frac{\\ln(1/b)}{\\ln(1/a)}=\\frac{-\\ln b}{-\\ln a}=\\frac{\\ln b}{\\ln a}=\\log_a b\\). The source statement omits the necessary restriction \\(a\\ne1\\); at \\(a=1\\), both sides are undefined."
+          "answer": "For a positive base different from 1, \\(\\log_{\\frac{1}{a}}\\left(\\frac{1}{b}\\right)=\\frac{\\ln\\left(\\frac{1}{b}\\right)}{\\ln\\left(\\frac{1}{a}\\right)}=\\frac{-\\ln b}{-\\ln a}=\\frac{\\ln b}{\\ln a}=\\log_a b\\). The source statement omits the necessary restriction \\(a\\ne1\\); at \\(a=1\\), both sides are undefined."
         }
       ]
     },
