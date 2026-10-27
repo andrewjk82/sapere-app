@@ -69,6 +69,23 @@ recurring student-facing problems the user has reported across Years 7–10.
   leaf question. If the standing request is 60 seconds and 1 XP, enforce that
   consistently across parents and children as appropriate.
 
+## Tables in question figures
+
+- When a question supplies tabular data, render it as a real, readable grid
+  with explicit row/column boundaries and the source values in the correct
+  cells; do not substitute a loose decorative panel or leave the data as
+  ambiguous prose.
+- Keep a table SVG's background exactly within its grid. Set the SVG viewBox,
+  intrinsic pixel width/height, and table geometry consistently, with padding
+  around all four sides. Never let a background rectangle extend past the
+  grid or the viewBox, since that makes the table look like an oversized blank
+  coloured box.
+- Use compact fixed pixel dimensions for a small standalone table and center
+  it in the card. In a solution step, highlight only the row/cell used by that
+  calculation, and keep the highlight inside the same table grid.
+- Check the table at student-facing size for correct cell alignment, readable
+  text, no clipping, and no unnecessary blank colored area before finalizing.
+
 ## Scanned assessment imports
 
 - When a source PDF is scanned or combines question pages and worked-solution
