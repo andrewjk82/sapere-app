@@ -13,7 +13,7 @@ import ChallengeSketchBoard from './ChallengeSketchBoard';
 import { db } from '../../firebase/config';
 import { collection, addDoc, serverTimestamp, doc, setDoc, increment } from 'firebase/firestore';
 import { fetchQuestionsByIds } from '../../services/dailyAssignmentService';
-import { applyLiveContent, liveLookupIds } from '../../utils/liveQuestionContent';
+import { applyLiveContent, liveLookupIds, REVIEW_LIVE_FIELDS } from '../../utils/liveQuestionContent';
 
 // Secret Note is review-only for leaderboard fairness.
 // Daily Practice / Calculation are the only XP sources after the season reset.
@@ -97,24 +97,28 @@ const norm = (s) => String(s ?? '')
 // and drifted out of sync with fixes made to Daily Challenge (see
 // prepareShuffledMcOptions in src/utils/mcOptionShuffle.js).
 const prepareQuestion = (q) => {
-  const hasSubs = Array.isArray(q.subQuestions) && q.subQuestions.length > 0;
+  const subs = (Array.isArray(q?.subQuestions) && q.subQuestions.length > 0)
+    ? q.subQuestions
+    : ((Array.isArray(q?.parts) && q.parts.length > 0) ? q.parts : null);
+  const hasSubs = !!(subs && subs.length > 0);
 
   // Multi-part questions: prepare each subQuestion
   if (hasSubs) {
-    const subPrepped = q.subQuestions.map((sq) => {
-      const isMC = sq.type === 'multiple_choice' || (Array.isArray(sq.options) && sq.options.length > 0 && sq.type !== 'short_answer');
+    const subPrepped = subs.map((sq, sIdx) => {
+      const isMC = sq.type === 'multiple_choice' || sq.type === 'mc' || (Array.isArray(sq.options) && sq.options.length > 0 && sq.type !== 'short_answer' && sq.type !== 'short');
       const rawKey = sq.answer ?? sq.a;
+      const subId = sq.id ?? sq.question ?? sq.stem ?? sq.text ?? `part-${sIdx}`;
       if (isMC) {
         const shuffledOptions = prepareShuffledMcOptions(sq);
-        return { id: sq.id ?? sq.text, mode: 'mc', options: shuffledOptions, correctText: sq._shuffledAnswer ?? '' };
+        return { id: subId, mode: 'mc', options: shuffledOptions, correctText: sq._shuffledAnswer ?? '' };
       }
-      return { id: sq.id ?? sq.text, mode: 'text', options: [], correctText: String(rawKey ?? '') };
+      return { id: subId, mode: 'text', options: [], correctText: String(rawKey ?? '') };
     });
     return { hasSubs: true, subQuestions: subPrepped };
   }
 
   // Single-answer question
-  const isMC = q.type === 'multiple_choice' || (Array.isArray(q.options) && q.options.length > 0 && q.type !== 'short_answer');
+  const isMC = q.type === 'multiple_choice' || q.type === 'mc' || (Array.isArray(q.options) && q.options.length > 0 && q.type !== 'short_answer' && q.type !== 'short');
   const rawKey = q.answer ?? q.a;
   if (isMC) {
     const shuffledOptions = prepareShuffledMcOptions(q);
@@ -256,7 +260,10 @@ const StepwiseHint = ({ hint, accent }) => {
 
 // ── Worked solution step-by-step viewer ───────────────────────────────────
 const WorkedSolution = ({ question }) => {
-  const steps = question?.solutionSteps;
+  const rawSteps = question?.solutionSteps || (Array.isArray(question?.steps)
+    ? question.steps.map((s) => ({ explanation: s.explain || '', workingOut: s.work || '', graphData: s.figure?.svg ? { svg: s.figure.svg } : null }))
+    : null);
+  const steps = rawSteps;
   const fallback = question?.solution;
   const [stepIdx, setStepIdx] = useState(0);
 
@@ -532,9 +539,14 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
         const questions = queue.map((item) => item.question);
         let liveDocs = [];
         try { liveDocs = await fetchQuestionsByIds(liveLookupIds(questions)); } catch (err) { console.warn('Failed to fetch live questions:', err); }
-        const fresh = applyLiveContent(questions, liveDocs);
+        const fresh = applyLiveContent(questions, liveDocs, [...REVIEW_LIVE_FIELDS, 'parts', 'type', 'stem']);
         const live = queue.map((item, i) => (item.question ? { ...item, question: fresh[i] } : item));
-        if (isMounted) setLiveQueue(live);
+        if (isMounted) {
+          setLiveQueue(live);
+          if (uid && live.some((it, i) => (it.question?.subQuestions?.length || 0) !== (queue[i]?.question?.subQuestions?.length || 0))) {
+            replaceNote(kind, uid, live);
+          }
+        }
       };
       fetchLive();
     }
@@ -576,16 +588,17 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
 
   const submitOriginal = (textVal, optText, optIdx) => {
     const hasSubs = prep?.hasSubs;
-    let correct = true;
+    let correct;
 
     if (hasSubs) {
       // Multi-part: all subQuestions must be correct
+      const subs = activeQ.subQuestions || activeQ.parts || [];
       correct = prep.subQuestions.every((subPrep, i) => {
-        const subAnswer = answer?.[subPrep.id] ?? '';
+        const subAnswer = (typeof answer === 'object' && answer !== null) ? (answer[subPrep.id] ?? '') : '';
         if (!subAnswer) return false;
         if (subPrep.mode === 'mc') {
-          const chosenOptIdx = answer?.[`${subPrep.id}__idx`];
-          return gradeMcSelection(activeQ.subQuestions[i], subAnswer, chosenOptIdx, subPrep.options);
+          const chosenOptIdx = (typeof answer === 'object' && answer !== null) ? answer[`${subPrep.id}__idx`] : undefined;
+          return gradeMcSelection(subs[i] || {}, subAnswer, chosenOptIdx, subPrep.options);
         }
         return answersMatch(subAnswer, subPrep.correctText);
       });
@@ -819,33 +832,43 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
             render immediately, not only after submitting. Conflating the two
             here previously hid required diagrams during solve (real report,
             2026-07-18). */}
-        {!activePrep?.hasSubs && (
+        {/* Main question stem / diagram */}
+        {(activeQ?.question || activeQ?.stem) && (
           <MathView
-            content={activeQ?.question}
-            graphData={activeQ?.type === 'graph_sketch' ? (isFeedback ? activeQ?.graphData : null) : activeQ?.graphData}
+            content={activeQ?.question || activeQ?.stem}
+            graphData={activeQ?.type === 'graph_sketch' ? (isFeedback ? activeQ?.graphData : null) : (activeQ?.graphData || (activeQ?.figure?.svg ? { svg: activeQ.figure.svg } : null))}
             style={{ fontSize: '1.0rem', fontWeight: 600, color: '#1e1b4b', lineHeight: 1.6 }}
           />
         )}
 
         {/* Step-by-step hint — always shown (not hidden in feedback) */}
-        {!isFeedback && !activePrep?.hasSubs && (
+        {!isFeedback && activeQ?.hint && (
           <StepwiseHint hint={activeQ?.hint} accent={accent} />
         )}
 
         {/* Multi-part questions: render each subQuestion */}
         {activePrep?.hasSubs && (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-            {activeQ.subQuestions?.map((sq, idx) => {
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', marginTop: (activeQ?.question || activeQ?.stem) ? '16px' : 0 }}>
+            {(activeQ.subQuestions || activeQ.parts)?.map((sq, idx) => {
               const subPrep = activePrep.subQuestions[idx];
-              const subAnswer = answer?.[subPrep.id] ?? '';
+              if (!subPrep) return null;
+              const subAnswer = (typeof answer === 'object' && answer !== null) ? (answer[subPrep.id] ?? '') : '';
+              const sqGraphData = sq.graphData || (sq.figure?.svg ? { svg: sq.figure.svg } : null);
               return (
-                <div key={sq.id ?? idx} style={{ padding: '16px', background: '#f8fafc', borderRadius: '14px', border: '1px solid #e2e8f0' }}>
+                <div key={subPrep.id ?? idx} style={{ padding: '16px', background: '#f8fafc', borderRadius: '14px', border: '1px solid #e2e8f0' }}>
                   <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', marginBottom: '12px' }}>
                     <span style={{ width: '26px', height: '26px', borderRadius: '8px', background: '#eef2ff', color: '#4f46e5', display: 'grid', placeItems: 'center', fontWeight: 900, fontSize: '0.82rem', flexShrink: 0 }}>
                       {String.fromCharCode(97 + idx)}
                     </span>
-                    <MathView content={sq.question || sq.text || ''} graphData={sq.graphData} style={{ fontSize: '0.98rem', fontWeight: 700, color: '#1e1b4b', lineHeight: 1.5, flex: 1 }} />
+                    <MathView content={sq.question || sq.stem || sq.text || ''} graphData={sqGraphData} style={{ fontSize: '0.98rem', fontWeight: 700, color: '#1e1b4b', lineHeight: 1.5, flex: 1 }} />
                   </div>
+
+                  {/* Part-level hint if available */}
+                  {!isFeedback && sq.hint && (
+                    <div style={{ marginBottom: '12px' }}>
+                      <StepwiseHint hint={sq.hint} accent={accent} />
+                    </div>
+                  )}
 
                   {/* Answer section */}
                   {isFeedback ? (
@@ -863,13 +886,21 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                       {subPrep.options.map((opt, i) => {
                         const optText = getOptionText(opt);
-                        const optGraphData = (opt && typeof opt === 'object') ? opt.graphData : null;
-                        const isSel = answer?.[`${subPrep.id}__idx`] === i;
+                        const optGraphData = (opt && typeof opt === 'object') ? (opt.graphData || (opt.figure?.svg ? { svg: opt.figure.svg } : null)) : null;
+                        const isSel = (typeof answer === 'object' && answer !== null) && answer[`${subPrep.id}__idx`] === i;
                         return (
                           <button
                             key={i}
                             disabled={isFeedback}
-                            onClick={() => { if (!isFeedback) setAnswer((prev) => ({ ...prev, [subPrep.id]: optText, [`${subPrep.id}__idx`]: i })); }}
+                            onClick={() => {
+                              if (!isFeedback) {
+                                setAnswer((prev) => ({
+                                  ...(typeof prev === 'object' && prev !== null ? prev : {}),
+                                  [subPrep.id]: optText,
+                                  [`${subPrep.id}__idx`]: i,
+                                }));
+                              }
+                            }}
                             style={{
                               display: 'flex', alignItems: 'center', gap: '10px', padding: '10px 14px', borderRadius: '12px',
                               background: isSel ? '#f5f3ff' : '#fff', border: isSel ? '2px solid #8b5cf6' : '1px solid #e2e8f0',
@@ -887,7 +918,14 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
                   ) : (
                     <MathInput
                       value={subAnswer}
-                      onChange={(latex) => { if (!isFeedback) setAnswer((prev) => ({ ...prev, [subPrep.id]: latex })); }}
+                      onChange={(latex) => {
+                        if (!isFeedback) {
+                          setAnswer((prev) => ({
+                            ...(typeof prev === 'object' && prev !== null ? prev : {}),
+                            [subPrep.id]: latex,
+                          }));
+                        }
+                      }}
                       readOnly={isFeedback}
                       placeholder={`Part ${String.fromCharCode(97 + idx)}…`}
                     />
@@ -899,97 +937,99 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
         )}
 
         {/* Answer inputs for single-answer questions */}
-        {!activePrep?.hasSubs && activePrep?.mode === 'mc' ? (
-          <div className="sn__opts">
-            {activePrep.options.map((opt, i) => {
-              const optText = getOptionText(opt);
-              const optImage = getOptionImage(opt);
-              const optGraphData = (opt && typeof opt === 'object') ? opt.graphData : null;
-              const hasImage = !!optImage;
-              const isSel = selectedIdx === i;
-              let status = 'default';
-              if (isFeedback) {
-                // Shared helper — never mark two options from a stale
-                // pre-shuffle index, and falls back to shuffled position
-                // for diagram-only (graphData, no text) options.
-                if (isDisplayedOptionCorrect(activeQ, activePrep.options, i)) status = 'correct';
-                else if (isSel) status = 'wrong';
-              }
-              return (
-                <button
-                  key={i}
-                  disabled={isFeedback}
-                  onClick={() => { if (!isFeedback) setSelectedIdx(i); }}
-                  className={`sn__opt sn__opt--${status}${isSel && !isFeedback ? ' sn__opt--sel' : ''}`}
-                >
-                  <span className="sn__opt-letter">{String.fromCharCode(65 + i)}</span>
-                  <div style={{ flex: 1, minWidth: 0, textAlign: 'left' }}>
-                    {(() => {
-                      const nlData = opt?.graphData?.numberLine || parseNumberLineFromText(getOptionText(opt));
-                      if (nlData) {
-                        // Only show the number line graph, no text
-                        return <NumberLine {...nlData} />;
-                      }
-                      return (!hasImage || (optText && optText !== String.fromCharCode(65 + i)) || optGraphData) ? (
-                        <MathView align="left" content={optText} graphData={optGraphData} style={{ fontWeight: 700 }} />
-                      ) : null;
-                    })()}
-                    {!!optImage && (
-                      <img
-                        src={optImage}
-                        alt={`Option ${String.fromCharCode(65 + i)}`}
-                        onClick={(e) => { e.stopPropagation(); setZoomImage?.(optImage); }}
-                        style={{ width: '100%', maxWidth: '320px', maxHeight: '220px', objectFit: 'contain', marginTop: optText && optText !== String.fromCharCode(65 + i) ? '8px' : 0, display: 'block', borderRadius: '12px', background: '#fff', border: '1px solid #f1f5f9', cursor: 'zoom-in' }}
-                      />
-                    )}
-                  </div>
-                  {status === 'correct' && <CheckCircle2 size={20} style={{ color: '#16a34a' }} />}
-                  {status === 'wrong' && <XCircle size={20} style={{ color: '#ef4444' }} />}
-                </button>
-              );
-            })}
-          </div>
-        ) : (
-          <>
-            {/* Quick-insert buttons (same as daily challenge) */}
-            {!isFeedback && (
-              <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '4px' }}>
-                {SN_QUICK_INSERTS.map((b) => (
+        {!activePrep?.hasSubs && (
+          activePrep?.mode === 'mc' ? (
+            <div className="sn__opts">
+              {activePrep.options.map((opt, i) => {
+                const optText = getOptionText(opt);
+                const optImage = getOptionImage(opt);
+                const optGraphData = (opt && typeof opt === 'object') ? opt.graphData : null;
+                const hasImage = !!optImage;
+                const isSel = selectedIdx === i;
+                let status = 'default';
+                if (isFeedback) {
+                  // Shared helper — never mark two options from a stale
+                  // pre-shuffle index, and falls back to shuffled position
+                  // for diagram-only (graphData, no text) options.
+                  if (isDisplayedOptionCorrect(activeQ, activePrep.options, i)) status = 'correct';
+                  else if (isSel) status = 'wrong';
+                }
+                return (
                   <button
-                    key={b.label}
-                    type="button"
-                    title={b.title}
-                    onClick={(e) => { e.preventDefault(); mathInputRef.current?.insert(b.latex); }}
-                    style={{ minWidth: '48px', height: '44px', padding: '0 12px', borderRadius: '12px', border: '1px solid #e2e8f0', background: '#fff', color: '#4f46e5', fontSize: '1.1rem', fontWeight: 800, cursor: 'pointer', fontFamily: '"KaTeX_Main", "Times New Roman", serif' }}
+                    key={i}
+                    disabled={isFeedback}
+                    onClick={() => { if (!isFeedback) setSelectedIdx(i); }}
+                    className={`sn__opt sn__opt--${status}${isSel && !isFeedback ? ' sn__opt--sel' : ''}`}
                   >
-                    {b.label}
+                    <span className="sn__opt-letter">{String.fromCharCode(65 + i)}</span>
+                    <div style={{ flex: 1, minWidth: 0, textAlign: 'left' }}>
+                      {(() => {
+                        const nlData = opt?.graphData?.numberLine || parseNumberLineFromText(getOptionText(opt));
+                        if (nlData) {
+                          // Only show the number line graph, no text
+                          return <NumberLine {...nlData} />;
+                        }
+                        return (!hasImage || (optText && optText !== String.fromCharCode(65 + i)) || optGraphData) ? (
+                          <MathView align="left" content={optText} graphData={optGraphData} style={{ fontWeight: 700 }} />
+                        ) : null;
+                      })()}
+                      {!!optImage && (
+                        <img
+                          src={optImage}
+                          alt={`Option ${String.fromCharCode(65 + i)}`}
+                          style={{ width: '100%', maxWidth: '320px', maxHeight: '220px', objectFit: 'contain', marginTop: optText && optText !== String.fromCharCode(65 + i) ? '8px' : 0, display: 'block', borderRadius: '12px', background: '#fff', border: '1px solid #f1f5f9' }}
+                        />
+                      )}
+                    </div>
+                    {status === 'correct' && <CheckCircle2 size={20} style={{ color: '#16a34a' }} />}
+                    {status === 'wrong' && <XCircle size={20} style={{ color: '#ef4444' }} />}
                   </button>
-                ))}
-              </div>
-            )}
-            <MathInput
-              ref={mathInputRef}
-              value={typeof answer === 'string' ? answer : ''}
-              onChange={(latex) => { if (!isFeedback) setAnswer(latex); }}
-              onEnter={() => { if (typeof answer === 'string' && answer.trim() && !isFeedback) { isTwinPhase ? submitTwin(answer) : submitOriginal(answer); } }}
-              readOnly={isFeedback}
-              placeholder="Type your answer…"
-              autoFocus
-            />
-          </>
+                );
+              })}
+            </div>
+          ) : (
+            <>
+              {/* Quick-insert buttons (same as daily challenge) */}
+              {!isFeedback && (
+                <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '4px' }}>
+                  {SN_QUICK_INSERTS.map((b) => (
+                    <button
+                      key={b.label}
+                      type="button"
+                      title={b.title}
+                      onClick={(e) => { e.preventDefault(); mathInputRef.current?.insert(b.latex); }}
+                      style={{ minWidth: '48px', height: '44px', padding: '0 12px', borderRadius: '12px', border: '1px solid #e2e8f0', background: '#fff', color: '#4f46e5', fontSize: '1.1rem', fontWeight: 800, cursor: 'pointer', fontFamily: '"KaTeX_Main", "Times New Roman", serif' }}
+                    >
+                      {b.label}
+                    </button>
+                  ))}
+                </div>
+              )}
+              <MathInput
+                ref={mathInputRef}
+                value={typeof answer === 'string' ? answer : ''}
+                onChange={(latex) => { if (!isFeedback) setAnswer(latex); }}
+                onEnter={() => { if (typeof answer === 'string' && answer.trim() && !isFeedback) { isTwinPhase ? submitTwin(answer) : submitOriginal(answer); } }}
+                readOnly={isFeedback}
+                placeholder="Type your answer…"
+                autoFocus
+              />
+            </>
+          )
         )}
 
         {/* Submit + Skip */}
         {!isFeedback && (
           <>
             {(() => {
-              let isDisabled = true;
+              let isDisabled;
               if (activePrep?.hasSubs) {
                 // Multi-part: all parts must be answered
                 isDisabled = !activePrep.subQuestions.every((subPrep) => {
-                  const subAnswer = answer?.[subPrep.id];
-                  if (subPrep.mode === 'mc') return answer?.[`${subPrep.id}__idx`] != null;
-                  return subAnswer?.trim();
+                  if (typeof answer !== 'object' || answer === null) return false;
+                  const subAnswer = answer[subPrep.id];
+                  if (subPrep.mode === 'mc') return answer[`${subPrep.id}__idx`] != null;
+                  return typeof subAnswer === 'string' && subAnswer.trim().length > 0;
                 });
               } else if (activePrep?.mode === 'mc') {
                 isDisabled = selectedIdx == null;
@@ -1056,15 +1096,17 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
 
                       {/* Each part's feedback */}
                       <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                        {activeQ.subQuestions?.map((sq, idx) => {
+                        {(activeQ.subQuestions || activeQ.parts)?.map((sq, idx) => {
                           const subPrep = activePrep.subQuestions[idx];
-                          const subAnswer = answer?.[subPrep.id] ?? '';
+                          if (!subPrep) return null;
+                          const subAnswer = (typeof answer === 'object' && answer !== null) ? (answer[subPrep.id] ?? '') : '';
+                          const subChosenIdx = (typeof answer === 'object' && answer !== null) ? answer[`${subPrep.id}__idx`] : undefined;
                           const subCorrect = subPrep.mode === 'mc'
-                            ? gradeMcSelection(sq, subAnswer, answer?.[`${subPrep.id}__idx`], subPrep.options)
+                            ? gradeMcSelection(sq, subAnswer, subChosenIdx, subPrep.options)
                             : answersMatch(subAnswer, subPrep.correctText);
 
                           return (
-                            <div key={sq.id ?? idx} style={{ padding: '12px', background: subCorrect ? '#f0fdf4' : '#fef2f2', borderRadius: '12px', border: `1px solid ${subCorrect ? '#bbf7d0' : '#fee2e2'}` }}>
+                            <div key={subPrep.id ?? idx} style={{ padding: '12px', background: subCorrect ? '#f0fdf4' : '#fef2f2', borderRadius: '12px', border: `1px solid ${subCorrect ? '#bbf7d0' : '#fee2e2'}` }}>
                               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
                                 {subCorrect ? <CheckCircle2 size={16} style={{ color: '#16a34a' }} /> : <XCircle size={16} style={{ color: '#ef4444' }} />}
                                 <span style={{ fontSize: '0.82rem', fontWeight: 800, color: subCorrect ? '#166534' : '#b91c1c' }}>
@@ -1081,6 +1123,15 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
                                   <MathView content={subPrep.correctText} style={{ fontWeight: 600, color: '#166534' }} />
                                 </div>
                               </div>
+                              {/* Sub-question worked solution if available */}
+                              {(sq.solutionSteps?.length > 0 || sq.steps?.length > 0 || sq.solution) && (
+                                <div style={{ marginTop: '10px' }}>
+                                  <WorkedSolution question={{
+                                    ...sq,
+                                    solutionSteps: sq.solutionSteps || (sq.steps?.map((s) => ({ explanation: s.explain || '', workingOut: s.work || '', graphData: s.figure?.svg ? { svg: s.figure.svg } : null }))),
+                                  }} />
+                                </div>
+                              )}
                             </div>
                           );
                         })}

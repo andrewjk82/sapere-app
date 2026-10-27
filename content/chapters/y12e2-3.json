@@ -807,21 +807,21 @@
           "type": "mc",
           "difficulty": "hard",
           "timeLimit": 60,
-          "stem": "The equation \\(z^5=1\\) has roots \\(1,\\omega,\\omega^2,\\omega^3,\\omega^4\\), where \\(\\omega=e^{2\\pi i/5}\\). What is the value of \\((1-\\omega)(1-\\omega^2)(1-\\omega^3)(1-\\omega^4)\\)?",
-          "hint": "Factor \\(z^5-1\\) using its five roots, then evaluate the derivative at the root z=1 to obtain the product of the four non-unit factors.",
+          "stem": "The equation \\(z^5=1\\) has roots \\(1, \\omega, \\omega^2, \\omega^3, \\omega^4\\), where \\(\\omega=e^{\\frac{2\\pi i}{5}}\\). What is the value of \\((1-\\omega)(1-\\omega^2)(1-\\omega^3)(1-\\omega^4)\\)?",
+          "hint": "Factor \\(z^5-1\\) using its five roots, then evaluate the derivative at the root \\(z=1\\) to obtain the product of the four non-unit factors.",
           "solution": "\\(5\\)",
           "steps": [
             {
-              "explain": "Factor the polynomial using its roots. The four nontrivial fifth roots are \\(\\omega,\\omega^2,\\omega^3,\\omega^4\\).",
-              "work": "\\(z^5-1=(z-1)(z-\\omega)(z-\\omega^2)(z-\\omega^3)(z-\\omega^4).\\)"
+              "explain": "Factor the polynomial using its roots. The four nontrivial fifth roots are \\(\\omega, \\omega^2, \\omega^3, \\omega^4\\).",
+              "work": "\\(z^5-1=(z-1)(z-\\omega)(z-\\omega^2)(z-\\omega^3)(z-\\omega^4)\\)"
             },
             {
-              "explain": "Differentiate the factorisation and then set z=1. The product rule leaves only the term where the derivative falls on \\(z-1\\); every other term still contains that zero factor.",
-              "work": "\\(5z^4=\\prod_{k=1}^4(z-\\omega^k)+(z-1)\\,R(z),\\quad\\text{so at }z=1:\\quad5=\\prod_{k=1}^4(1-\\omega^k).\\)"
+              "explain": "Differentiate the factorisation and then set \\(z=1\\). The product rule leaves only the term where the derivative falls on \\(z-1\\); every other term still contains that zero factor.",
+              "work": "\\(5z^4=\\prod_{k=1}^4(z-\\omega^k)+(z-1)R(z),\\quad\\text{so at }z=1:\\quad 5=\\prod_{k=1}^4(1-\\omega^k)\\)"
             },
             {
               "explain": "The requested product is exactly the product on the right.",
-              "work": "\\((1-\\omega)(1-\\omega^2)(1-\\omega^3)(1-\\omega^4)=5.\\)"
+              "work": "\\((1-\\omega)(1-\\omega^2)(1-\\omega^3)(1-\\omega^4)=5\\)"
             }
           ],
           "xp": 1,
@@ -842,7 +842,7 @@
           "answer": 3,
           "keyPoints": [
             {
-              "text": "The equation \\(z^5=1\\) has roots \\(1,\\omega,\\omega^2,\\omega^3,\\omega^4\\), where \\(\\omega=e^{2\\pi i/5}\\). What is the value of \\((1-\\omega)(1-\\omega^2)(1-\\omega^3)(1-\\omega^4)\\)?",
+              "text": "\\(\\omega=e^{\\frac{2\\pi i}{5}}\\)",
               "note": "Factor \\(z^5-1\\) using its five roots, then evaluate the derivative at the root z=1 to obtain the product of the four non-unit factors."
             }
           ]

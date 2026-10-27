@@ -386,30 +386,30 @@
             "svg": "<svg width=\"280\" height=\"280\" viewBox=\"0 0 280 280\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<filter id=\"shadow\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"120%\">\n<feDropShadow dx=\"2\" dy=\"2\" stdDeviation=\"3\" flood-opacity=\"0.15\" />\n</filter>\n</defs>\n<rect width=\"280\" height=\"280\" fill=\"#fdfdfd\" rx=\"10\" />\n<polygon points=\"45.000000000000014,169.23643410852713 235,169.23643410852713 214.8708010335917,110.76356589147287\" fill=\"#e3f2fd\" stroke=\"#1976d2\" stroke-width=\"3\" stroke-linejoin=\"round\" filter=\"url(#shadow)\" />\n<path d=\"M 200.68755110747455 115.6457192619947 L 205.57007066089716 129.82884313547356 L 219.75332058701431 124.94668976495171\" fill=\"none\" stroke=\"#1976d2\" stroke-width=\"2\" />\n<text x=\"217.08991023300317\" y=\"161.46033593505825\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#d32f2f\" text-anchor=\"middle\">71°</text>\n<text x=\"140\" y=\"209.23643410852713\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">h cm</text>\n<text x=\"258.02935622157986\" y=\"133.60745437534723\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">12.6 cm</text>\n</svg>"
           },
           "options": [
-            "\\(-4.34\\)",
-            "\\(3.34\\)",
-            "\\(4.34\\)",
-            "\\(5.34\\)"
+            "\\(4.10\\)",
+            "\\(13.33\\)",
+            "\\(38.70\\)",
+            "\\(4.34\\)"
           ],
           "answer": 2,
           "hint": "Use SOH CAH TOA to set up an equation.",
-          "solution": "The correct answer is \\(4.34\\).",
+          "solution": "The correct answer is \\(38.70\\).",
           "steps": [
             {
               "explain": "Identify the given information from the right-angled triangle. We are given an angle (\\(71^\\circ\\)) and the Adjacent side (\\(12.6\\)). We need to find the Hypotenuse side (\\(h\\)).",
-              "work": "\\(\\text{Angle} = 71^\\circ\\\\ \\text{Adjacent} = 12.6\\\\ \\text{Hypotenuse} = h\\)"
+              "work": "\\(\\text{Angle} = 71^\\circ,\\quad\\text{Adjacent} = 12.6,\\quad\\text{Hypotenuse} = h\\)"
             },
             {
               "explain": "Choose the correct trigonometric ratio. Since we have the Adjacent and Hypotenuse sides, we use Cosine (CAH).",
-              "work": "\\(\\\\cos(\\\\theta) = \\text{Ratio}\\\\ \\\\cos(71^\\circ) = \\\\frac{12.6}{h}\\)"
+              "work": "\\(\\cos(71^\\circ) = \\frac{12.6}{h}\\)"
             },
             {
               "explain": "Rearrange the equation to make \\(h\\) the subject.",
-              "work": "\\(h = \\\\frac{12.6}{\\\\cos(71^\\circ)}\\)"
+              "work": "\\(h = \\frac{12.6}{\\cos(71^\\circ)}\\)"
             },
             {
               "explain": "Evaluate the expression and round to two decimal places.",
-              "work": "\\(h \\\\approx 4.34\\)"
+              "work": "\\(h \\approx 38.70\\)"
             }
           ],
           "timeLimit": 60,

@@ -61,23 +61,33 @@ export function replaceNote(kind, uid, items) {
 
 // Keep only what's needed to re-render & re-grade a question.
 export function slimQuestion(q) {
+  if (!q) return null;
+  const subs = Array.isArray(q.subQuestions) && q.subQuestions.length > 0
+    ? q.subQuestions
+    : (Array.isArray(q.parts) && q.parts.length > 0 ? q.parts : null);
+
   return {
-    id: q.id || q.question || q.text,
-    question: q.question || q.text || '',
+    id: q.id || q.question || q.stem || q.text,
+    question: q.question || q.stem || q.text || '',
     type: q.type || 'short_answer',
     answer: q.answer,
     options: Array.isArray(q.options) ? q.options : null,
     isManual: !!q.isManual,
     hint: q.hint || null,
     solution: q.solution || null,
-    solutionSteps: Array.isArray(q.solutionSteps) ? q.solutionSteps : null,
+    solutionSteps: Array.isArray(q.solutionSteps)
+      ? q.solutionSteps
+      : (Array.isArray(q.steps)
+        ? q.steps.map((s) => ({ explanation: s.explain || '', workingOut: s.work || '', graphData: s.figure?.svg ? { svg: s.figure.svg } : null }))
+        : null),
     chapterTitle: q.chapterTitle || '',
     topicId: q.topicId || '',
     topicCode: q.topicCode || '',
     topicTitle: q.topicTitle || '',
     year: q.year || '',
     generatorType: q.generatorType || '',
-    graphData: q.graphData || null,
+    graphData: q.graphData || (q.figure?.svg ? { svg: q.figure.svg } : null),
+    subQuestions: subs ? subs.map(slimQuestion).filter(Boolean) : null,
   };
 }
 
@@ -89,9 +99,17 @@ export function canGrade(q) {
   // keyword regex (draw/sketch/construct/prove/...), so a plain worded
   // teacher_review question (e.g. "find the perimeter and area of...") gets
   // requiresManualGrading: false and slips past that check. Gate on TYPE too.
-  if (q.type === 'graph_sketch' || q.type === 'teacher_review') return false;
-  if (Array.isArray(q.subQuestions) && q.subQuestions.length > 0) return false;
+  if (q.type === 'graph_sketch' || q.type === 'teacher_review' || q.type === 'review') return false;
   if (q.requiresManualGrading) return false;
+
+  const subs = (Array.isArray(q.subQuestions) && q.subQuestions.length > 0)
+    ? q.subQuestions
+    : ((Array.isArray(q.parts) && q.parts.length > 0) ? q.parts : null);
+
+  if (subs) {
+    return subs.every((sq) => canGrade(sq));
+  }
+
   // `options` defaults to `[]` (not undefined) for every non-MC question at
   // write time — Array.isArray([]) is true, so this used to admit ANY
   // question with an empty options array as "has MC options to grade". A
@@ -100,7 +118,11 @@ export function canGrade(q) {
   // button (disabled until an option is picked) could never be enabled, so
   // the student was stuck and had to fall back to "Ask the teacher" —
   // real report, 2026-07-18. Require at least one actual option.
-  return q.type === 'short_answer' || q.type === 'multiple_choice' || (Array.isArray(q.options) && q.options.length > 0);
+  return q.type === 'short_answer'
+    || q.type === 'short'
+    || q.type === 'multiple_choice'
+    || q.type === 'mc'
+    || (Array.isArray(q.options) && q.options.length > 0);
 }
 
 // Procedural questions can spawn an instant "twin" with new numbers.

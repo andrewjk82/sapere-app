@@ -206,7 +206,9 @@ const slimQuestion = (data) => {
   topicTitle: data.topicTitle || "",
   topicGroup: data.topicGroup || "",
   graphData: data.graphData || (data.diagram ? { diagram: data.diagram } : null),
-  subQuestions: Array.isArray(data.subQuestions) ? data.subQuestions : [],
+  subQuestions: Array.isArray(data.subQuestions) && data.subQuestions.length > 0
+    ? data.subQuestions
+    : (Array.isArray(data.parts) ? data.parts : []),
   // fill_blank questions carry their per-blank metadata (label + answer)
   // in `blanks`; without this they'd render as a single short-answer.
   blanks: Array.isArray(data.blanks) ? data.blanks : [],

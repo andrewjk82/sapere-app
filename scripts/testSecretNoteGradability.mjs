@@ -36,6 +36,7 @@ globalThis.window = { localStorage: globalThis.localStorage };
 
 const {
   canGrade,
+  slimQuestion,
   addMistakes,
   getNote,
   getNoteCount,
@@ -124,6 +125,64 @@ check('pruneUngradable is a no-op (0 removed) when nothing is broken', () => {
   assert.equal(getNoteCount('daily', UID), 1);
   assert.equal(pruneUngradable(UID), 0);
   assert.equal(getNoteCount('daily', UID), 1);
+});
+
+check('canGrade accepts multipart questions where all subQuestions are gradable', () => {
+  const multipart = {
+    id: 'sth2013-q20a',
+    type: 'multipart',
+    subQuestions: [
+      { id: 'sth2013-q20a-i', type: 'multiple_choice', options: ['7.6 km', '14.2 km'], answer: 1 },
+      { id: 'sth2013-q20a-ii', type: 'multiple_choice', options: ['31°', '24°'], answer: 1 },
+    ],
+  };
+  assert.equal(canGrade(multipart), true);
+});
+
+check('canGrade rejects multipart questions if any subQuestion is ungradable', () => {
+  const multipartWithTeacherReview = {
+    id: 'multi-un',
+    type: 'multipart',
+    subQuestions: [
+      { id: 'sub-1', type: 'multiple_choice', options: ['A', 'B'], answer: 0 },
+      { id: 'sub-2', type: 'teacher_review', options: [] },
+    ],
+  };
+  assert.equal(canGrade(multipartWithTeacherReview), false);
+});
+
+check('slimQuestion preserves subQuestions for multipart questions', () => {
+  const multipart = {
+    id: 'sth2013-q20a',
+    question: 'Boat A sails 9 km...',
+    subQuestions: [
+      { id: 'sth2013-q20a-i', question: 'Find distance AB', type: 'multiple_choice', options: ['7.6', '14.2'], answer: 1 },
+      { id: 'sth2013-q20a-ii', question: 'Find angle PAB', type: 'multiple_choice', options: ['31', '24'], answer: 1 },
+    ],
+  };
+  const slim = slimQuestion(multipart);
+  assert.ok(Array.isArray(slim.subQuestions), 'subQuestions should be an array');
+  assert.equal(slim.subQuestions.length, 2);
+  assert.equal(slim.subQuestions[0].id, 'sth2013-q20a-i');
+  assert.equal(slim.subQuestions[0].question, 'Find distance AB');
+  assert.equal(slim.subQuestions[1].id, 'sth2013-q20a-ii');
+});
+
+check('slimQuestion preserves parts on canonical multipart questions', () => {
+  const canonical = {
+    id: 'sth2013-q20a',
+    stem: 'Boat A sails 9 km...',
+    type: 'multipart',
+    parts: [
+      { id: 'sth2013-q20a-i', stem: 'Find distance AB', type: 'mc', options: ['7.6', '14.2'], answer: 1 },
+    ],
+  };
+  const slim = slimQuestion(canonical);
+  assert.equal(slim.question, 'Boat A sails 9 km...');
+  assert.ok(Array.isArray(slim.subQuestions), 'canonical parts should be mapped to subQuestions');
+  assert.equal(slim.subQuestions.length, 1);
+  assert.equal(slim.subQuestions[0].id, 'sth2013-q20a-i');
+  assert.equal(slim.subQuestions[0].question, 'Find distance AB');
 });
 
 console.log(`\n${passed} checks passed.\n`);
