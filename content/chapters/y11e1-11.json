@@ -223,15 +223,15 @@
           ],
           "steps": [
             {
-              "explain": "For a monic quartic, the constant term is the product of the four roots because the degree is even.",
-              "work": "\\((-1)^4(2)(2)(2)(-1)=-8\\ne-2\\)"
+              "explain": "For a monic quartic, the constant term equals the product of all four roots. If 2 is the triple root and −1 is the single root:",
+              "work": "\\((2)^3(-1) = -8 \\ne -2\\)"
             },
             {
-              "explain": "Test the other multiplicity: if −1 is triple and 2 is single, the product matches the stated constant.",
-              "work": "\\((-1)^3(2)=-2\\)"
+              "explain": "If −1 is the triple root and 2 is single, the product matches the constant term:",
+              "work": "\\((-1)^3(2) = -2\\)"
             },
             {
-              "explain": "Thus the factors are (x+1)^3 and (x−2).",
+              "explain": "Thus the factors are \\((x+1)^3\\) and \\((x-2)\\).",
               "work": "\\(P(x)=(x+1)^3(x-2)\\)"
             },
             {
@@ -239,8 +239,8 @@
               "work": "\\((x+1)^3=x^3+3x^2+3x+1\\)"
             },
             {
-              "explain": "Distribute x and −2 separately, collect like powers and compare coefficients.",
-              "work": "\\(x^4+3x^3+3x^2+x-2x^3-6x^2-6x-2=x^4+x^3-3x^2-5x-2\\Rightarrow a=1,\\ b=-5\\)"
+              "explain": "Distribute and collect like terms to compare coefficients with \\(x^4+ax^3-3x^2+bx-2\\):",
+              "work": "\\((x^3+3x^2+3x+1)(x-2) = x^4+x^3-3x^2-5x-2 \\implies a=1,\\ b=-5\\)"
             }
           ],
           "timeLimit": 60,
