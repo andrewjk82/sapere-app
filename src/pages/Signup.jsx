@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Mail, Lock, AlertCircle, ArrowRight, CheckCircle2, User, Users, GraduationCap, School, Phone, MapPin, Plus, Trash2 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { db } from '../firebase/config';
-import { doc, setDoc, serverTimestamp } from 'firebase/firestore';
+import { doc, setDoc, getDocFromServer, serverTimestamp } from 'firebase/firestore';
 import AuthLayout from './AuthLayout';
 import { upsertRegisteredUserLeaderboard } from '../services/leaderboardService';
 
@@ -46,14 +46,21 @@ const Signup = ({ onToggleMode }) => {
     if (!user || step !== 1) return;
     (async () => {
       try {
-        await setDoc(doc(db, 'users', user.uid), {
-          uid: user.uid,
-          email: user.email,
-          status: 'Pending Profile',
-          role: 'student',
-          createdAt: serverTimestamp(),
-          updatedAt: serverTimestamp(),
-        }, { merge: true });
+        // Only create the placeholder when the server confirms there is no profile yet.
+        // This used to merge unconditionally, which stamped status 'Pending Profile' and a
+        // fresh createdAt onto 25 of 31 real students' profiles. If the check itself fails
+        // (offline), skip the write rather than risk overwriting an existing profile.
+        const existing = await getDocFromServer(doc(db, 'users', user.uid));
+        if (!existing.exists()) {
+          await setDoc(doc(db, 'users', user.uid), {
+            uid: user.uid,
+            email: user.email,
+            status: 'Pending Profile',
+            role: 'student',
+            createdAt: serverTimestamp(),
+            updatedAt: serverTimestamp(),
+          }, { merge: true });
+        }
       } catch (e) {
         console.warn('pending profile doc create failed (non-fatal):', e?.code);
       }

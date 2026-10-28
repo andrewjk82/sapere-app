@@ -14,12 +14,17 @@ import { tryAwardSecretNoteClearBonus } from '../services/secretNoteBonusService
  * data, so every profile change was billed 3×. This provider consolidates
  * them into one; consumers read `profile` for free via useProfile().
  */
-const ProfileContext = createContext({ profile: null, profileLoading: true });
+const ProfileContext = createContext({ profile: null, profileLoading: true, profileMissing: false });
 
 export const ProfileProvider = ({ children }) => {
   const { user } = useAuth();
   const [profile, setProfile] = useState(null);
   const [profileLoading, setProfileLoading] = useState(true);
+  // True only once the SERVER has said users/{uid} does not exist. A null `profile`
+  // alone also means "first snapshot hasn't arrived", "listener errored" or "offline
+  // cache miss" — App used to treat all of those as "new user" and sent already-
+  // registered students to the Create account wizard (2026-10 Riel and 24 others).
+  const [profileMissing, setProfileMissing] = useState(false);
   const recoveryRanRef = useRef(false);
 
   // Run XP recovery once per session after sign-in.
@@ -41,10 +46,15 @@ export const ProfileProvider = ({ children }) => {
   useEffect(() => {
     if (!user?.uid) {
       setProfile(null);
+      setProfileMissing(false);
       setProfileLoading(false);
       recoveryRanRef.current = false;
       return undefined;
     }
+    // A different user than the last render: drop the previous user's null/profile in
+    // the same pass so nothing downstream reads it as this user's answer.
+    setProfile(null);
+    setProfileMissing(false);
     setProfileLoading(true);
     const ref = doc(db, 'users', user.uid);
     let unsub = () => {};
@@ -69,6 +79,7 @@ export const ProfileProvider = ({ children }) => {
         ref,
         (snap) => {
           setProfile(snap.exists() ? snap.data() : null);
+          setProfileMissing(!snap.exists() && !snap.metadata.fromCache);
           setProfileLoading(false);
         },
         (err) => {
@@ -100,7 +111,7 @@ export const ProfileProvider = ({ children }) => {
   }, [user?.uid]);
 
   return (
-    <ProfileContext.Provider value={{ profile, profileLoading }}>
+    <ProfileContext.Provider value={{ profile, profileLoading, profileMissing }}>
       {children}
     </ProfileContext.Provider>
   );

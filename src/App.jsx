@@ -366,7 +366,7 @@ const OpeningIntro = ({ name = 'Andrew', greeting = 'Good morning', yearLevel = 
 function App() {
   // Triggering fresh deployment with version 1.1.2
   const { user, isAdmin, logout, refreshUser, resendVerificationEmail } = useAuth();
-  const { profile: sharedProfile, profileLoading: sharedProfileLoading } = useProfile();
+  const { profile: sharedProfile, profileLoading: sharedProfileLoading, profileMissing: sharedProfileMissing } = useProfile();
   const { showToast } = useToast();
 
   const [newVersionAvailable, setNewVersionAvailable] = useState(false);
@@ -1187,8 +1187,19 @@ function App() {
   // no matter what authMode happens to be after that reload (2026-09-28 incident: new
   // students signing up with Google on iOS Safari landed authenticated but stuck with
   // no way back into the signup wizard).
+  // Only send a signed-in user to the wizard once the server has confirmed they have no
+  // profile doc. A null profile that is merely unconfirmed (snapshot not back yet, listener
+  // error, offline cache miss) used to land registered students here, and the wizard's
+  // recovery effect then stamped their real profile as 'Pending Profile'.
   if ((hasPendingSignup && !profile) || (profileLoaded && !profile && !isAdmin)) {
-    return <Signup key="signup-pending" onToggleMode={() => setAuthMode('login')} />;
+    if (sharedProfileMissing) {
+      return <Signup key="signup-pending" onToggleMode={() => setAuthMode('login')} />;
+    }
+    return (
+      <div style={{ minHeight: '100vh', display: 'grid', placeItems: 'center', background: '#f6f1ff' }}>
+        <div className="app-spinner" aria-label="Loading" />
+      </div>
+    );
   }
 
   const isPasswordProvider = user?.providerData?.some((p) => p?.providerId === 'password');
