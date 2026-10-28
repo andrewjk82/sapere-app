@@ -72,6 +72,7 @@ recurring student-facing problems the user has reported across Years 7–10.
 ## SVG display and step-by-step figure regressions
 
 - For diagrams rendered as inline HTML/SVG (including SVG strings inserted by React), use ordinary SVG element names such as `<svg>`, `<g>`, `<path>`, and `<text>`. Do not leave XML serializer prefixes such as `<ns0:path>`: XML parsing can succeed while the browser displays no graphic.
+- Treat 50% as a starting size, not a hard cap. Inspect the actual student-facing size after rendering; when a source figure is unreadably small (as reported for `yr7-measurement-revision-*`), enlarge the related question and solution figures together while preserving aspect ratio and keeping them within the card.
 - Verify every source and step SVG through the same HTML rendering path the student app uses, at its actual display size. Keep intrinsic width/height consistent with the viewBox and the requested 50% sizing; XML validity by itself does not prove visibility.
 - In every visual solution step, progressively highlight the specific side, angle, segment, table cell, region, or graph feature used in that step, and pair it with the relevant formula and calculation. Do not repeat an unchanged diagram as filler. Omit a figure from a final arithmetic-only step when it adds no new information.
 
