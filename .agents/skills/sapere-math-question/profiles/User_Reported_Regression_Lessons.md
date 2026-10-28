@@ -69,6 +69,12 @@ recurring student-facing problems the user has reported across Years 7–10.
   leaf question. If the standing request is 60 seconds and 1 XP, enforce that
   consistently across parents and children as appropriate.
 
+## SVG display and step-by-step figure regressions
+
+- For diagrams rendered as inline HTML/SVG (including SVG strings inserted by React), use ordinary SVG element names such as `<svg>`, `<g>`, `<path>`, and `<text>`. Do not leave XML serializer prefixes such as `<ns0:path>`: XML parsing can succeed while the browser displays no graphic.
+- Verify every source and step SVG through the same HTML rendering path the student app uses, at its actual display size. Keep intrinsic width/height consistent with the viewBox and the requested 50% sizing; XML validity by itself does not prove visibility.
+- In every visual solution step, progressively highlight the specific side, angle, segment, table cell, region, or graph feature used in that step, and pair it with the relevant formula and calculation. Do not repeat an unchanged diagram as filler. Omit a figure from a final arithmetic-only step when it adds no new information.
+
 ## Tables in question figures
 
 - When a question supplies tabular data, render it as a real, readable grid
