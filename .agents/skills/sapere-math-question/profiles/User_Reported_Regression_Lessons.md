@@ -30,6 +30,13 @@ recurring student-facing problems the user has reported across Years 7–10.
 - At student display size, render and inspect every changed question figure
   and every step figure. Check stroke weight, clipping, label overlap, scale,
   arc direction, and that the diagram visibly matches the source geometry.
+- When a user requests a whole question family or ID prefix, audit every
+  matching question figure against its source, not only the named examples or
+  figures already reported as missing. Replace fuzzy scanned traces across the
+  full requested set with clean SVGs; retain text-only questions when the source
+  has no illustration. Before delivery, confirm the coverage count and review a
+  contact sheet so skipped figures, omitted panels, and labels lost in a partial
+  redraw are caught.
 - In geometry/trigonometry solutions, explicitly name the sides and angles
   used, explain opposite/adjacent/hypotenuse or included-angle relationships,
   and highlight those exact features in the corresponding step figure. Progress
