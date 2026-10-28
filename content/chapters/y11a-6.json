@@ -25863,111 +25863,6 @@
           "xp": 2
         },
         {
-          "id": "y11a-6J-q4b",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "In \\(\\triangle PQR\\), \\(\\angle Q = 52^{\\circ}\\), \\(\\angle R = 56^{\\circ}\\) and \\(QR = 42\\text{ metres}\\). The point \\(T\\) lies on \\(QR\\) such that \\(PT \\perp QR\\). Find \\(PT\\), correct to the nearest metre.\nUsing the same triangle configuration, find the distance \\(QT\\), correct to the nearest metre.",
-          "options": [
-            "\\(25\\)",
-            "\\(22\\)",
-            "\\(23\\)",
-            "\\(24\\)"
-          ],
-          "answer": 2,
-          "hint": "In right-angled triangle \\(PQT\\), use \\(QT = PQ \\cos Q\\).",
-          "solution": "In \\(\\triangle PQT\\), \\(QT = PQ \\cos 52^{\\circ} \\approx 36.61 \\cos 52^{\\circ} \\approx 36.61 \\times 0.6157 \\approx 22.54\\text{ m} \\approx 23\\text{ m}\\).",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Problems involving general triangles: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(QT = PQ \\cos 52^{\\circ}\\)"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(QT \\approx 36.61 \\times 0.6157 = 22.54\\text{ m}\\)"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(QT \\approx 23\\text{ m}\\)"
-            },
-            {
-              "explain": "Final answer: 23. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(23\\)"
-            }
-          ],
-          "timeLimit": 90,
-          "xp": 3
-        },
-        {
-          "id": "y11a-6J-q5b",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "In \\(\\triangle ABC\\), \\(\\angle B = 90^{\\circ}\\) and \\(\\angle A = 32^{\\circ}\\). The point \\(P\\) lies on \\(AB\\) such that \\(AP = 22\\text{ cm}\\) and \\(\\angle CPB = 70^{\\circ}\\). Find \\(PB\\), correct to the nearest centimetre.\nUsing the same triangle configuration, find the height \\(BC\\), correct to the nearest centimetre.",
-          "options": [
-            "\\(20\\)",
-            "\\(17\\)",
-            "\\(18\\)",
-            "\\(19\\)"
-          ],
-          "answer": 2,
-          "hint": "Use \\(BC = PC \\sin(70^{\\circ})\\) in right-angled triangle \\(CPB\\).",
-          "solution": "In right-angled triangle \\(CPB\\), \\(BC = PC \\sin 70^{\\circ} \\approx 18.93 \\sin 70^{\\circ} \\approx 18.93 \\times 0.9397 \\approx 17.79\\text{ cm} \\approx 18\\text{ cm}\\).",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Problems involving general triangles: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(BC = PC \\sin 70^{\\circ}\\)"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(BC \\approx 18.93 \\times 0.9397 = 17.79\\text{ cm}\\)"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(BC \\approx 18\\text{ cm}\\)"
-            },
-            {
-              "explain": "Final answer: 18. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(18\\)"
-            }
-          ],
-          "timeLimit": 90,
-          "xp": 3
-        },
-        {
-          "id": "y11a-6J-q7b",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "In \\(\\triangle ABC\\), side lengths are \\(AB = 5\\text{ cm}\\), \\(BC = 8\\text{ cm}\\), and \\(CA = 6\\text{ cm}\\). Find the angle \\(\\angle ABC\\), correct to the nearest minute.\nUsing the angle \\(\\angle ABC \\approx 48^{\\circ}30'\\), calculate the area of \\(\\triangle ABC\\) to the nearest square centimetre.",
-          "options": [
-            "\\(17\\)",
-            "\\(14\\)",
-            "\\(15\\)",
-            "\\(16\\)"
-          ],
-          "answer": 2,
-          "hint": "Apply the triangle area formula: \\(\\text{Area} = \\frac{1}{2} a c \\sin B\\).",
-          "solution": "The area is: \\(\\text{Area} = \\frac{1}{2} (AB)(BC) \\sin B = \\frac{1}{2} \\times 5 \\times 8 \\times \\sin(48.5^{\\circ}) = 20 \\times 0.7490 = 14.98\\text{ cm}^2 \\approx 15\\text{ cm}^2\\).",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Problems involving general triangles: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(\\text{Area} = \\frac{1}{2} \\times 5 \\times 8 \\times \\sin(48^{\\circ}30')\\)"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(\\text{Area} \\approx 20 \\times 0.7490 = 14.98\\text{ cm}^2\\)"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(\\text{Area} \\approx 15\\text{ cm}^2\\)"
-            },
-            {
-              "explain": "Final answer: 15. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(15\\)"
-            }
-          ],
-          "timeLimit": 90,
-          "xp": 3
-        },
-        {
           "id": "y11a-6J-q8",
           "type": "review",
           "difficulty": "medium",
@@ -25992,41 +25887,6 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90,
-          "xp": 3
-        },
-        {
-          "id": "y11a-6J-q9b",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "In a triangle \\(XYZ\\), \\(\\angle Y = 70^{\\circ}\\) and \\(\\angle YXZ = 68^{\\circ}\\). The altitude \\(XP \\perp YZ\\) has a length of \\(28\\text{ cm}\\). Find the length of \\(XY\\), correct to one decimal place.\nFind the total length of \\(YZ\\), correct to one decimal place, by using trigonometry in triangles \\(XPY\\) and \\(XPZ\\).",
-          "options": [
-            "\\(-41.3\\)",
-            "\\(40.3\\)",
-            "\\(41.3\\)",
-            "\\(42.3\\)"
-          ],
-          "answer": 2,
-          "hint": "Find \\(YP = \\frac{28}{\\tan 70^{\\circ}}\\). In \\(\\triangle XYZ\\), find the third angle \\(\\angle Z = 180^{\\circ} - 70^{\\circ} - 68^{\\circ} = 42^{\\circ}\\). Then find \\(PZ = \\frac{28}{\\tan Z}\\), and sum \\(YP + PZ\\).",
-          "solution": "In \\(\\triangle XPY\\), \\(YP = \\frac{28}{\\tan 70^{\\circ}} \\approx \\frac{28}{2.7475} \\approx 10.19\\text{ cm}\\). The angle \\(\\angle Z = 180^{\\circ} - 70^{\\circ} - 68^{\\circ} = 42^{\\circ}\\). In right-angled triangle \\(XPZ\\), \\(PZ = \\frac{28}{\\tan 42^{\\circ}} \\approx \\frac{28}{0.9004} \\approx 31.10\\text{ cm}\\). Total \\(YZ = YP + PZ \\approx 10.19 + 31.10 = 41.29\\text{ cm}\\).",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Problems involving general triangles: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(YP = \\frac{28}{\\tan 70^{\\circ}} \\approx 10.19\\text{ cm}\\)"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(\\angle Z = 180^{\\circ} - 70^{\\circ} - 68^{\\circ} = 42^{\\circ}\\)"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(PZ = \\frac{28}{\\tan 42^{\\circ}} \\approx 31.10\\text{ cm}\\)"
-            },
-            {
-              "explain": "Final answer: 41.3. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(41.3\\)"
-            }
-          ],
           "timeLimit": 90,
           "xp": 3
         },
@@ -26204,40 +26064,6 @@
           ],
           "timeLimit": 90,
           "xp": 3
-        },
-        {
-          "id": "y11a-6J-q13b",
-          "type": "mc",
-          "difficulty": "hard",
-          "stem": "A ship sails \\(60\\text{ km}\\) from port \\(A\\) to port \\(B\\) on a bearing of \\(060^{\\circ}\\text{T}\\), then sails \\(140\\text{ km}\\) from port \\(B\\) to port \\(C\\) on a bearing of \\(290^{\\circ}\\text{T}\\). Explain why \\(\\angle ABC = 50^{\\circ}\\), and hence find the distance of port \\(A\\) from port \\(C\\), correct to the nearest kilometre.\nFind the bearing of port \\(A\\) from port \\(C\\), correct to the nearest degree.",
-          "options": [
-            "\\(-086°\\)",
-            "\\(086°\\)",
-            "\\(086° + 1\\)",
-            "\\(\\dfrac{13}{x + 3}\\)"
-          ],
-          "answer": 1,
-          "hint": "Use the sine rule in \\(\\triangle ABC\\) to find \\(\\angle ACB\\): \\(\\frac{\\sin(\\angle ACB)}{AB} = \\frac{\\sin 50^{\\circ}}{AC}\\). Then use the alternate angles and bearings to find the bearing of A from C.",
-          "solution": "By the sine rule: \\(\\frac{\\sin(\\angle ACB)}{60} = \\frac{\\sin 50^{\\circ}}{111.4} \\implies \\sin(\\angle ACB) = \\frac{60 \\sin 50^{\\circ}}{111.4} \\approx 0.4126 \\implies \\angle ACB \\approx 24.37^{\\circ} \\approx 24^{\\circ}\\). The bearing of B from C is \\(290^{circ} - 180^{\\circ} = 110^{\\circ}\\). Therefore, the bearing of A from C is \\(110^{\\circ} - 24^{\\circ} = 86^{\\circ}\\). Wait, let's recalculate B from C is 110°. A is further south, so it is B from C minus ACB = 110° - 24.37° = 85.63° = 86°. Let's make sure: yes, the bearing is 086°T.",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Problems involving general triangles: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(\\frac{\\sin(\\angle ACB)}{60} = \\frac{\\sin 50^{\\circ}}{111.4}\\)"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(\\angle ACB \\approx 24^{\\circ}\\)"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(\\text{Bearing} = 110^{\\circ} - 24^{\\circ} = 86^{\\circ}\\)"
-            },
-            {
-              "explain": "Final answer: 086°. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(086°\\)"
-            }
-          ],
-          "xp": 4
         },
         {
           "id": "y11a-6J-q14",
@@ -26586,77 +26412,150 @@
           "id": "y11a-6J-q4",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "In \\(\\triangle PQR\\), \\(\\angle Q = 52^{\\circ}\\), \\(\\angle R = 56^{\\circ}\\) and \\(QR = 42\\text{ metres}\\). The point \\(T\\) lies on \\(QR\\) such that \\(PT \\perp QR\\). Find \\(PT\\), correct to the nearest metre.",
+          "stem": "In \\(\\triangle PQR\\), \\(\\angle Q = 52^{\\circ}\\), \\(\\angle R = 56^{\\circ}\\) and \\(QR = 42\\text{ metres}\\). The point \\(T\\) lies on \\(QR\\) such that \\(PT \\perp QR\\).",
+          "figure": {
+            "svg": "<svg viewBox=\"0 0 350 235\" width=\"100%\" height=\"auto\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"183,51 70,195 280,195\" fill=\"#dbeafe\" fill-opacity=\"0.45\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n  <line x1=\"183\" y1=\"51\" x2=\"183\" y2=\"195\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/>\n  <polyline points=\"183,183 195,183 195,195\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <path d=\"M 98 195 A 28 28 0 0 0 87.2 173\" fill=\"#fef3c7\" fill-opacity=\"0.7\" stroke=\"#d97706\" stroke-width=\"1.6\"/>\n  <text x=\"112\" y=\"184\" font-family=\"system-ui, sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#b45309\" text-anchor=\"middle\">52°</text>\n  <path d=\"M 264.3 171.8 A 28 28 0 0 0 252 195\" fill=\"#e0e7ff\" fill-opacity=\"0.7\" stroke=\"#4f46e5\" stroke-width=\"1.6\"/>\n  <text x=\"240\" y=\"184\" font-family=\"system-ui, sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#4338ca\" text-anchor=\"middle\">56°</text>\n  <circle cx=\"183\" cy=\"51\" r=\"3\" fill=\"#1e293b\"/>\n  <circle cx=\"70\" cy=\"195\" r=\"3\" fill=\"#1e293b\"/>\n  <circle cx=\"280\" cy=\"195\" r=\"3\" fill=\"#1e293b\"/>\n  <circle cx=\"183\" cy=\"195\" r=\"3\" fill=\"#1e293b\"/>\n  <text x=\"183\" y=\"38\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\">P</text>\n  <text x=\"56\" y=\"200\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\">Q</text>\n  <text x=\"294\" y=\"200\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\">R</text>\n  <text x=\"183\" y=\"212\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\">T</text>\n  <text x=\"175\" y=\"228\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">42 m</text>\n</svg>"
+          },
           "parts": [
             {
-              "id": "y11a-6J-q4b",
-              "type": "short",
-              "stem": "Using the same triangle configuration, find the distance \\(QT\\), correct to the nearest metre.",
-              "answer": "23",
+              "id": "y11a-6J-q4a",
+              "type": "mc",
+              "stem": "Find the length of the altitude \\(PT\\), correct to the nearest metre.",
               "options": [
-                "\\(25\\)",
-                "\\(22\\)",
-                "\\(23\\)",
-                "\\(24\\)"
+                "\\(23\\text{ m}\\)",
+                "\\(29\\text{ m}\\)",
+                "\\(33\\text{ m}\\)",
+                "\\(37\\text{ m}\\)"
               ],
+              "answer": 1,
+              "hint": "First find \\(\\angle QPR = 180^{\\circ} - 52^{\\circ} - 56^{\\circ}\\), apply the sine rule in \\(\\triangle PQR\\) to find \\(PQ\\), then use \\(PT = PQ\\sin 52^{\\circ}\\) in right-angled \\(\\triangle PQT\\).",
+              "solution": "\\(\\angle QPR = 180^{\\circ} - 52^{\\circ} - 56^{\\circ} = 72^{\\circ}\\). By the sine rule in \\(\\triangle PQR\\), \\(PQ = \\dfrac{42\\sin 56^{\\circ}}{\\sin 72^{\\circ}} \\approx 36.61\\text{ m}\\). In right-angled \\(\\triangle PQT\\), \\(PT = PQ\\sin 52^{\\circ} \\approx 36.61 \\times 0.7880 \\approx 28.85\\text{ m} \\approx 29\\text{ m}\\).",
               "steps": [
                 {
-                  "explain": "Identify that \\(QT\\) is the adjacent side to angle \\(Q\\) in \\(\\triangle PQT\\).",
-                  "work": "QT = PQ \\cos 52^{\\circ}"
+                  "explain": "Find the third angle \\(\\angle QPR\\) in \\(\\triangle PQR\\) using the angle sum of a triangle.",
+                  "work": "\\(\\angle QPR = 180^{\\circ} - 52^{\\circ} - 56^{\\circ} = 72^{\\circ}\\)"
                 },
                 {
-                  "explain": "Perform the calculation.",
-                  "work": "QT \\approx 36.61 \\times 0.6157 = 22.54\\text{ m}"
+                  "explain": "Apply the sine rule in \\(\\triangle PQR\\) to find the side \\(PQ\\).",
+                  "work": "\\(\\dfrac{PQ}{\\sin 56^{\\circ}} = \\dfrac{42}{\\sin 72^{\\circ}} \\implies PQ = \\dfrac{42\\sin 56^{\\circ}}{\\sin 72^{\\circ}} \\approx 36.61\\text{ m}\\)"
+                },
+                {
+                  "explain": "In right-angled \\(\\triangle PQT\\), \\(PT\\) is opposite \\(\\angle Q = 52^{\\circ}\\) and \\(PQ\\) is the hypotenuse.",
+                  "work": "\\(PT = PQ\\sin 52^{\\circ} \\approx 36.61 \\times 0.7880 \\approx 28.85\\text{ m}\\)"
                 },
                 {
                   "explain": "Round to the nearest metre.",
-                  "work": "QT \\approx 23\\text{ m}"
+                  "work": "\\(PT \\approx 29\\text{ m}\\)"
+                }
+              ],
+              "xp": 3
+            },
+            {
+              "id": "y11a-6J-q4b",
+              "type": "mc",
+              "stem": "Hence, or otherwise, find the distance \\(QT\\), correct to the nearest metre.",
+              "options": [
+                "\\(19\\text{ m}\\)",
+                "\\(23\\text{ m}\\)",
+                "\\(26\\text{ m}\\)",
+                "\\(29\\text{ m}\\)"
+              ],
+              "answer": 1,
+              "hint": "In right-angled triangle \\(PQT\\), use \\(QT = PQ\\cos 52^{\\circ}\\).",
+              "solution": "In right-angled \\(\\triangle PQT\\), \\(QT = PQ\\cos 52^{\\circ} \\approx 36.61 \\times 0.6157 \\approx 22.54\\text{ m} \\approx 23\\text{ m}\\).",
+              "steps": [
+                {
+                  "explain": "In right-angled \\(\\triangle PQT\\), \\(QT\\) is adjacent to \\(\\angle Q = 52^{\\circ}\\) and \\(PQ \\approx 36.61\\text{ m}\\) is the hypotenuse.",
+                  "work": "\\(QT = PQ\\cos 52^{\\circ}\\)"
+                },
+                {
+                  "explain": "Substitute \\(PQ \\approx 36.61\\text{ m}\\) and evaluate.",
+                  "work": "\\(QT \\approx 36.61 \\times 0.6157 \\approx 22.54\\text{ m}\\)"
+                },
+                {
+                  "explain": "Round to the nearest metre.",
+                  "work": "\\(QT \\approx 23\\text{ m}\\)"
                 }
               ],
               "xp": 3
             }
           ],
-          "hint": "First find angle P: \\(180^{\\circ} - 52^{\\circ} - 56^{\\circ} = 72^{\\circ}\\). Apply the sine rule in \\(\\triangle PQR\\) to find \\(PQ\\), then use \\(\\triangle PQT\\) to find \\(PT = PQ \\sin Q\\).",
-          "solution": "Angle \\(P = 180^{\\circ} - 52^{\\circ} - 56^{\\circ} = 72^{\\circ}\\). By the sine rule in \\(\\triangle PQR\\): \\(\\frac{PQ}{\\sin R} = \\frac{QR}{\\sin P} \\implies PQ = \\frac{42 \\sin 56^{\\circ}}{\\sin 72^{\\circ}} \\approx \\frac{42 \\times 0.8290}{0.9511} \\approx 36.61\\text{ m}\\). In right-angled triangle \\(PQT\\), \\(PT = PQ \\sin 52^{\\circ} \\approx 36.61 \\times 0.7880 \\approx 28.85\\text{ m}\\).",
+          "hint": "First find \\(\\angle P = 72^{\\circ}\\) and use the sine rule in \\(\\triangle PQR\\) to find \\(PQ\\), then use right-angled trigonometry in \\(\\triangle PQT\\).",
           "timeLimit": 90
         },
         {
           "id": "y11a-6J-q5",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "In \\(\\triangle ABC\\), \\(\\angle B = 90^{\\circ}\\) and \\(\\angle A = 32^{\\circ}\\). The point \\(P\\) lies on \\(AB\\) such that \\(AP = 22\\text{ cm}\\) and \\(\\angle CPB = 70^{\\circ}\\). Find \\(PB\\), correct to the nearest centimetre.",
+          "stem": "In \\(\\triangle ABC\\), \\(\\angle B = 90^{\\circ}\\) and \\(\\angle A = 32^{\\circ}\\). The point \\(P\\) lies on \\(AB\\) such that \\(AP = 22\\text{ cm}\\) and \\(\\angle CPB = 70^{\\circ}\\).",
+          "figure": {
+            "svg": "<svg viewBox=\"0 0 350 230\" width=\"100%\" height=\"auto\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"45,190 285,190 285,40\" fill=\"#dbeafe\" fill-opacity=\"0.4\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n  <line x1=\"230\" y1=\"190\" x2=\"285\" y2=\"40\" stroke=\"#475569\" stroke-width=\"2\"/>\n  <polyline points=\"273,190 273,178 285,178\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <path d=\"M 79 190 A 34 34 0 0 0 73.8 172\" fill=\"#fef3c7\" fill-opacity=\"0.7\" stroke=\"#d97706\" stroke-width=\"1.6\"/>\n  <text x=\"94\" y=\"183\" font-family=\"system-ui, sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#b45309\" text-anchor=\"middle\">32°</text>\n  <path d=\"M 254 190 A 24 24 0 0 0 238.2 167.5\" fill=\"#e0e7ff\" fill-opacity=\"0.7\" stroke=\"#4f46e5\" stroke-width=\"1.6\"/>\n  <text x=\"258\" y=\"175\" font-family=\"system-ui, sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#4338ca\" text-anchor=\"middle\">70°</text>\n  <circle cx=\"45\" cy=\"190\" r=\"3\" fill=\"#1e293b\"/>\n  <circle cx=\"230\" cy=\"190\" r=\"3\" fill=\"#1e293b\"/>\n  <circle cx=\"285\" cy=\"190\" r=\"3\" fill=\"#1e293b\"/>\n  <circle cx=\"285\" cy=\"40\" r=\"3\" fill=\"#1e293b\"/>\n  <text x=\"32\" y=\"195\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\">A</text>\n  <text x=\"230\" y=\"208\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\">P</text>\n  <text x=\"298\" y=\"195\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\">B</text>\n  <text x=\"298\" y=\"42\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\">C</text>\n  <text x=\"138\" y=\"210\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">22 cm</text>\n</svg>"
+          },
           "parts": [
             {
-              "id": "y11a-6J-q5b",
-              "type": "short",
-              "stem": "Using the same triangle configuration, find the height \\(BC\\), correct to the nearest centimetre.",
-              "answer": "18",
+              "id": "y11a-6J-q5a",
+              "type": "mc",
+              "stem": "Find the length of \\(PB\\), correct to the nearest centimetre.",
               "options": [
-                "\\(20\\)",
-                "\\(17\\)",
-                "\\(18\\)",
-                "\\(19\\)"
+                "\\(6\\text{ cm}\\)",
+                "\\(8\\text{ cm}\\)",
+                "\\(12\\text{ cm}\\)",
+                "\\(19\\text{ cm}\\)"
               ],
+              "answer": 0,
+              "hint": "In \\(\\triangle ACP\\), use the exterior angle \\(\\angle CPB = 70^{\\circ}\\) to find \\(\\angle ACP = 70^{\\circ} - 32^{\\circ} = 38^{\\circ}\\), apply the sine rule to find \\(PC\\), then use \\(PB = PC\\cos 70^{\\circ}\\).",
+              "solution": "In \\(\\triangle ACP\\), \\(\\angle ACP = 70^{\\circ} - 32^{\\circ} = 38^{\\circ}\\). By the sine rule, \\(PC = \\dfrac{22\\sin 32^{\\circ}}{\\sin 38^{\\circ}} \\approx 18.94\\text{ cm}\\). In right-angled \\(\\triangle CPB\\), \\(PB = PC\\cos 70^{\\circ} \\approx 18.94 \\times 0.3420 \\approx 6.48\\text{ cm} \\approx 6\\text{ cm}\\).",
               "steps": [
                 {
-                  "explain": "Apply the sine ratio to find the vertical side \\(BC\\).",
-                  "work": "BC = PC \\sin 70^{\\circ}"
+                  "explain": "Since \\(\\angle CPB = 70^{\\circ}\\) is an exterior angle to \\(\\triangle ACP\\), find \\(\\angle ACP\\) by subtracting \\(\\angle CAP = 32^{\\circ}\\).",
+                  "work": "\\(\\angle ACP = 70^{\\circ} - 32^{\\circ} = 38^{\\circ}\\)"
                 },
                 {
-                  "explain": "Calculate the value.",
-                  "work": "BC \\approx 18.93 \\times 0.9397 = 17.79\\text{ cm}"
+                  "explain": "Apply the sine rule in \\(\\triangle ACP\\) to find \\(PC\\).",
+                  "work": "\\(\\dfrac{PC}{\\sin 32^{\\circ}} = \\dfrac{22}{\\sin 38^{\\circ}} \\implies PC = \\dfrac{22\\sin 32^{\\circ}}{\\sin 38^{\\circ}} \\approx 18.94\\text{ cm}\\)"
+                },
+                {
+                  "explain": "In right-angled \\(\\triangle CPB\\), \\(PB\\) is adjacent to \\(\\angle CPB = 70^{\\circ}\\) and \\(PC\\) is the hypotenuse.",
+                  "work": "\\(PB = PC\\cos 70^{\\circ} \\approx 18.94 \\times 0.3420 \\approx 6.48\\text{ cm}\\)"
                 },
                 {
                   "explain": "Round to the nearest centimetre.",
-                  "work": "BC \\approx 18\\text{ cm}"
+                  "work": "\\(PB \\approx 6\\text{ cm}\\)"
+                }
+              ],
+              "xp": 3
+            },
+            {
+              "id": "y11a-6J-q5b",
+              "type": "mc",
+              "stem": "Hence, find the height \\(BC\\), correct to the nearest centimetre.",
+              "options": [
+                "\\(14\\text{ cm}\\)",
+                "\\(16\\text{ cm}\\)",
+                "\\(18\\text{ cm}\\)",
+                "\\(21\\text{ cm}\\)"
+              ],
+              "answer": 2,
+              "hint": "In right-angled triangle \\(CPB\\), use \\(BC = PC\\sin 70^{\\circ}\\).",
+              "solution": "In right-angled \\(\\triangle CPB\\), \\(BC = PC\\sin 70^{\\circ} \\approx 18.94 \\times 0.9397 \\approx 17.79\\text{ cm} \\approx 18\\text{ cm}\\).",
+              "steps": [
+                {
+                  "explain": "In right-angled \\(\\triangle CPB\\), \\(BC\\) is opposite \\(\\angle CPB = 70^{\\circ}\\) and \\(PC \\approx 18.94\\text{ cm}\\) is the hypotenuse.",
+                  "work": "\\(BC = PC\\sin 70^{\\circ}\\)"
+                },
+                {
+                  "explain": "Substitute \\(PC \\approx 18.94\\text{ cm}\\) and evaluate.",
+                  "work": "\\(BC \\approx 18.94 \\times 0.9397 \\approx 17.79\\text{ cm}\\)"
+                },
+                {
+                  "explain": "Round to the nearest centimetre.",
+                  "work": "\\(BC \\approx 18\\text{ cm}\\)"
                 }
               ],
               "xp": 3
             }
           ],
-          "answer": "6",
-          "hint": "First find the angles in \\(\\triangle ACP\\). Since \\(\\angle CPB\\) is an exterior angle to \\(\\triangle ACP\\), \\(\\angle ACP = \\angle CPB - \\angle A = 70^{\\circ} - 32^{\\circ} = 38^{\\circ}\\). Apply the sine rule to find \\(PC\\), then use \\(PB = PC \\cos(70^{\\circ})\\) in right-angled triangle \\(CPB\\).",
-          "solution": "In \\(\\triangle ACP\\), \\(\\angle APC = 180^{\\circ} - 70^{\\circ} = 110^{\\circ}\\). Thus \\(\\angle ACP = 180^{\\circ} - 110^{\\circ} - 32^{\\circ} = 38^{\\circ}\\). By the sine rule in \\(\\triangle ACP\\): \\(\\frac{PC}{\\sin 32^{\\circ}} = \\frac{22}{\\sin 38^{\\circ}} \\implies PC = \\frac{22 \\sin 32^{\\circ}}{\\sin 38^{\\circ}} \\approx \\frac{22 \\times 0.5299}{0.6157} \\approx 18.93\\text{ cm}\\). In right-angled triangle \\(CPB\\), \\(PB = PC \\cos 70^{\\circ} \\approx 18.93 \\cos 70^{\\circ} \\approx 18.93 \\times 0.3420 \\approx 6.47\\text{ cm}\\).",
+          "hint": "First use the sine rule in \\(\\triangle ACP\\) to find \\(PC\\), then use right-angled trigonometry in \\(\\triangle CPB\\).",
           "timeLimit": 90
         },
         {
@@ -26742,75 +26641,147 @@
           "id": "y11a-6J-q7",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "In \\(\\triangle ABC\\), side lengths are \\(AB = 5\\text{ cm}\\), \\(BC = 8\\text{ cm}\\), and \\(CA = 6\\text{ cm}\\). Find the angle \\(\\angle ABC\\), correct to the nearest minute.",
+          "stem": "In \\(\\triangle ABC\\), the side lengths are \\(AB = 5\\text{ cm}\\), \\(BC = 8\\text{ cm}\\) and \\(CA = 6\\text{ cm}\\).",
+          "figure": {
+            "svg": "<svg viewBox=\"0 0 340 210\" width=\"100%\" height=\"auto\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"143,63 65,175 285,175\" fill=\"#dbeafe\" fill-opacity=\"0.45\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n  <circle cx=\"143\" cy=\"63\" r=\"3\" fill=\"#1e293b\"/>\n  <circle cx=\"65\" cy=\"175\" r=\"3\" fill=\"#1e293b\"/>\n  <circle cx=\"285\" cy=\"175\" r=\"3\" fill=\"#1e293b\"/>\n  <text x=\"143\" y=\"49\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\">A</text>\n  <text x=\"51\" y=\"180\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\">B</text>\n  <text x=\"299\" y=\"180\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\">C</text>\n  <text x=\"92\" y=\"112\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">5 cm</text>\n  <text x=\"224\" y=\"112\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">6 cm</text>\n  <text x=\"175\" y=\"196\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">8 cm</text>\n</svg>"
+          },
           "parts": [
             {
-              "id": "y11a-6J-q7b",
-              "type": "short",
-              "stem": "Using the angle \\(\\angle ABC \\approx 48^{\\circ}30'\\), calculate the area of \\(\\triangle ABC\\) to the nearest square centimetre.",
-              "answer": "15",
+              "id": "y11a-6J-q7a",
+              "type": "mc",
+              "stem": "Find the size of \\(\\angle ABC\\), correct to the nearest minute.",
               "options": [
-                "\\(17\\)",
-                "\\(14\\)",
-                "\\(15\\)",
-                "\\(16\\)"
+                "\\(38^{\\circ}37'\\)",
+                "\\(41^{\\circ}29'\\)",
+                "\\(48^{\\circ}31'\\)",
+                "\\(92^{\\circ}52'\\)"
               ],
+              "answer": 2,
+              "hint": "Use the cosine rule for \\(\\angle B\\): \\(\\cos B = \\dfrac{AB^2 + BC^2 - CA^2}{2(AB)(BC)}\\).",
+              "solution": "By the cosine rule, \\(\\cos B = \\dfrac{5^2 + 8^2 - 6^2}{2(5)(8)} = \\dfrac{53}{80} = 0.6625 \\implies B = \\arccos(0.6625) \\approx 48.509^{\\circ} \\approx 48^{\\circ}31'\\).",
               "steps": [
                 {
-                  "explain": "Use the sine area formula with sides AB and BC.",
-                  "work": "\\text{Area} = \\frac{1}{2} \\times 5 \\times 8 \\times \\sin(48^{\\circ}30')"
+                  "explain": "Apply the cosine rule in \\(\\triangle ABC\\) to find \\(\\cos(\\angle ABC)\\), where the side opposite \\(\\angle B\\) is \\(CA = 6\\text{ cm}\\).",
+                  "work": "\\(\\cos(\\angle ABC) = \\dfrac{AB^2 + BC^2 - CA^2}{2(AB)(BC)}\\)"
                 },
                 {
-                  "explain": "Compute the value.",
-                  "work": "\\text{Area} \\approx 20 \\times 0.7490 = 14.98\\text{ cm}^2"
+                  "explain": "Substitute \\(AB = 5\\), \\(BC = 8\\), and \\(CA = 6\\).",
+                  "work": "\\(\\cos(\\angle ABC) = \\dfrac{5^2 + 8^2 - 6^2}{2(5)(8)} = \\dfrac{25 + 64 - 36}{80} = \\dfrac{53}{80} = 0.6625\\)"
                 },
                 {
-                  "explain": "Round to the nearest integer.",
-                  "work": "\\text{Area} \\approx 15\\text{ cm}^2"
+                  "explain": "Take the inverse cosine and convert to degrees and minutes.",
+                  "work": "\\(\\angle ABC = \\arccos(0.6625) \\approx 48.509^{\\circ} \\approx 48^{\\circ}31'\\)"
+                }
+              ],
+              "xp": 3
+            },
+            {
+              "id": "y11a-6J-q7b",
+              "type": "mc",
+              "stem": "Hence, calculate the area of \\(\\triangle ABC\\), correct to the nearest square centimetre.",
+              "options": [
+                "\\(13\\text{ cm}^2\\)",
+                "\\(15\\text{ cm}^2\\)",
+                "\\(20\\text{ cm}^2\\)",
+                "\\(30\\text{ cm}^2\\)"
+              ],
+              "answer": 1,
+              "hint": "Use the triangle area formula \\(\\text{Area} = \\dfrac{1}{2}(AB)(BC)\\sin(\\angle ABC)\\).",
+              "solution": "\\(\\text{Area} = \\dfrac{1}{2}(5)(8)\\sin(48^{\\circ}31') \\approx 20 \\times 0.7491 \\approx 14.98\\text{ cm}^2 \\approx 15\\text{ cm}^2\\).",
+              "steps": [
+                {
+                  "explain": "Apply the sine area formula using sides \\(AB = 5\\text{ cm}\\), \\(BC = 8\\text{ cm}\\), and the included angle \\(\\angle ABC \\approx 48^{\\circ}31'\\).",
+                  "work": "\\(\\text{Area} = \\dfrac{1}{2} \\times 5 \\times 8 \\times \\sin(48^{\\circ}31')\\)"
+                },
+                {
+                  "explain": "Evaluate the expression.",
+                  "work": "\\(\\text{Area} \\approx 20 \\times 0.7491 = 14.98\\text{ cm}^2\\)"
+                },
+                {
+                  "explain": "Round to the nearest square centimetre.",
+                  "work": "\\(\\text{Area} \\approx 15\\text{ cm}^2\\)"
                 }
               ],
               "xp": 3
             }
           ],
-          "answer": "48° 30'",
-          "hint": "Use the cosine rule for angle B: \\(\\cos B = \\frac{AB^2 + BC^2 - CA^2}{2(AB)(BC)}\\).",
-          "solution": "Using the cosine rule: \\(\\cos B = \\frac{5^2 + 8^2 - 6^2}{2(5)(8)} = \\frac{25 + 64 - 36}{80} = \\frac{53}{80} = 0.6625 \\implies B = \\arccos(0.6625) \\approx 48.5136^{\\circ} = 48^{\\circ} 31'\\).",
+          "hint": "First use the cosine rule to find \\(\\angle ABC\\), then apply \\(\\text{Area} = \\dfrac{1}{2}(AB)(BC)\\sin B\\).",
           "timeLimit": 90
         },
         {
           "id": "y11a-6J-q9",
           "type": "multipart",
-          "stem": "In a triangle \\(XYZ\\), \\(\\angle Y = 70^{\\circ}\\) and \\(\\angle YXZ = 68^{\\circ}\\). The altitude \\(XP \\perp YZ\\) has a length of \\(28\\text{ cm}\\). Find the length of \\(XY\\), correct to one decimal place.",
           "difficulty": "medium",
+          "stem": "In a triangle \\(XYZ\\), \\(\\angle Y = 70^{\\circ}\\) and \\(\\angle YXZ = 68^{\\circ}\\). The altitude \\(XP \\perp YZ\\) has a length of \\(28\\text{ cm}\\).",
+          "figure": {
+            "svg": "<svg viewBox=\"0 0 360 235\" width=\"100%\" height=\"auto\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"130,45 73,195 305,195\" fill=\"#dbeafe\" fill-opacity=\"0.45\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n  <line x1=\"130\" y1=\"45\" x2=\"130\" y2=\"195\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/>\n  <polyline points=\"130,183 142,183 142,195\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <path d=\"M 97 195 A 24 24 0 0 0 81.2 172.5\" fill=\"#fef3c7\" fill-opacity=\"0.7\" stroke=\"#d97706\" stroke-width=\"1.6\"/>\n  <text x=\"103\" y=\"182\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#b45309\" text-anchor=\"middle\">70°</text>\n  <path d=\"M 121.2 68.4 A 25 25 0 0 0 148.9 61.4\" fill=\"#e0e7ff\" fill-opacity=\"0.7\" stroke=\"#4f46e5\" stroke-width=\"1.6\"/>\n  <text x=\"142\" y=\"82\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#4338ca\" text-anchor=\"middle\">68°</text>\n  <circle cx=\"130\" cy=\"45\" r=\"3\" fill=\"#1e293b\"/>\n  <circle cx=\"73\" cy=\"195\" r=\"3\" fill=\"#1e293b\"/>\n  <circle cx=\"305\" cy=\"195\" r=\"3\" fill=\"#1e293b\"/>\n  <circle cx=\"130\" cy=\"195\" r=\"3\" fill=\"#1e293b\"/>\n  <text x=\"130\" y=\"32\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\">X</text>\n  <text x=\"59\" y=\"200\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\">Y</text>\n  <text x=\"319\" y=\"200\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\">Z</text>\n  <text x=\"130\" y=\"214\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\">P</text>\n  <text x=\"148\" y=\"135\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">28 cm</text>\n</svg>"
+          },
           "parts": [
             {
-              "id": "y11a-6J-q9b",
-              "type": "short",
-              "stem": "Find the total length of \\(YZ\\), correct to one decimal place, by using trigonometry in triangles \\(XPY\\) and \\(XPZ\\).",
-              "answer": "41.3",
+              "id": "y11a-6J-q9a",
+              "type": "mc",
+              "stem": "Find the length of \\(XY\\), correct to one decimal place.",
+              "options": [
+                "\\(26.3\\text{ cm}\\)",
+                "\\(29.8\\text{ cm}\\)",
+                "\\(30.2\\text{ cm}\\)",
+                "\\(81.9\\text{ cm}\\)"
+              ],
+              "answer": 1,
+              "hint": "In right-angled triangle \\(XPY\\), \\(\\sin 70^{\\circ} = \\dfrac{XP}{XY}\\).",
+              "solution": "In right-angled \\(\\triangle XPY\\), \\(\\sin 70^{\\circ} = \\dfrac{28}{XY} \\implies XY = \\dfrac{28}{\\sin 70^{\\circ}} \\approx \\dfrac{28}{0.9397} \\approx 29.8\\text{ cm}\\).",
               "steps": [
                 {
-                  "explain": "Calculate the base segment \\(YP\\) in \\(\\triangle XPY\\).",
-                  "work": "YP = \\frac{28}{\\tan 70^{\\circ}} \\approx 10.19\\text{ cm}"
+                  "explain": "In right-angled \\(\\triangle XPY\\), \\(XP = 28\\text{ cm}\\) is opposite \\(\\angle Y = 70^{\\circ}\\) and \\(XY\\) is the hypotenuse.",
+                  "work": "\\(\\sin 70^{\\circ} = \\dfrac{28}{XY}\\)"
                 },
                 {
-                  "explain": "Find the third angle \\(\\angle Z\\).",
-                  "work": "\\angle Z = 180^{\\circ} - 70^{\\circ} - 68^{\\circ} = 42^{\\circ}"
+                  "explain": "Rearrange to solve for \\(XY\\) and evaluate.",
+                  "work": "\\(XY = \\dfrac{28}{\\sin 70^{\\circ}} \\approx \\dfrac{28}{0.9397} \\approx 29.797\\text{ cm}\\)"
                 },
                 {
-                  "explain": "Calculate the base segment \\(PZ\\) in \\(\\triangle XPZ\\).",
-                  "work": "PZ = \\frac{28}{\\tan 42^{\\circ}} \\approx 31.10\\text{ cm}"
-                },
-                {
-                  "explain": "Sum the segments to find the total length \\(YZ\\).",
-                  "work": "YZ = YP + PZ \\approx 10.19 + 31.10 = 41.29\\text{ cm}"
+                  "explain": "Round to one decimal place.",
+                  "work": "\\(XY \\approx 29.8\\text{ cm}\\)"
                 }
-              ]
+              ],
+              "xp": 3
+            },
+            {
+              "id": "y11a-6J-q9b",
+              "type": "mc",
+              "stem": "Find the total length of \\(YZ\\), correct to one decimal place, by using trigonometry in triangles \\(XPY\\) and \\(XPZ\\).",
+              "options": [
+                "\\(20.9\\text{ cm}\\)",
+                "\\(31.1\\text{ cm}\\)",
+                "\\(41.3\\text{ cm}\\)",
+                "\\(52.5\\text{ cm}\\)"
+              ],
+              "answer": 2,
+              "hint": "Find \\(YP = \\dfrac{28}{\\tan 70^{\\circ}}\\) in \\(\\triangle XPY\\), find \\(\\angle Z = 180^{\\circ} - 70^{\\circ} - 68^{\\circ} = 42^{\\circ}\\), then find \\(PZ = \\dfrac{28}{\\tan 42^{\\circ}}\\) in \\(\\triangle XPZ\\) and add \\(YP + PZ\\).",
+              "solution": "\\(YP = \\dfrac{28}{\\tan 70^{\\circ}} \\approx 10.19\\text{ cm}\\). Since \\(\\angle Z = 180^{\\circ} - 70^{\\circ} - 68^{\\circ} = 42^{\\circ}\\), \\(PZ = \\dfrac{28}{\\tan 42^{\\circ}} \\approx 31.10\\text{ cm}\\). Thus \\(YZ = YP + PZ \\approx 41.3\\text{ cm}\\).",
+              "steps": [
+                {
+                  "explain": "Calculate the base segment \\(YP\\) in right-angled \\(\\triangle XPY\\).",
+                  "work": "\\(YP = \\dfrac{28}{\\tan 70^{\\circ}} \\approx 10.19\\text{ cm}\\)"
+                },
+                {
+                  "explain": "Find the third angle \\(\\angle Z\\) in \\(\\triangle XYZ\\) using the angle sum of a triangle.",
+                  "work": "\\(\\angle Z = 180^{\\circ} - 70^{\\circ} - 68^{\\circ} = 42^{\\circ}\\)"
+                },
+                {
+                  "explain": "Calculate the base segment \\(PZ\\) in right-angled \\(\\triangle XPZ\\).",
+                  "work": "\\(PZ = \\dfrac{28}{\\tan 42^{\\circ}} \\approx 31.10\\text{ cm}\\)"
+                },
+                {
+                  "explain": "Add the two segments to find the total length \\(YZ\\) to one decimal place.",
+                  "work": "\\(YZ = YP + PZ \\approx 10.19 + 31.10 = 41.29\\text{ cm} \\approx 41.3\\text{ cm}\\)"
+                }
+              ],
+              "xp": 3
             }
           ],
-          "answer": "29.8",
-          "hint": "In right-angled triangle \\(XPY\\), \\(\\sin Y = \\frac{XP}{XY}\\). Solve for \\(XY = \\frac{28}{\\sin 70^{\\circ}}\\).",
-          "solution": "In \\(\\triangle XPY\\), \\(XY = \\frac{28}{\\sin 70^{\\circ}} \\approx \\frac{28}{0.9397} \\approx 29.8\\text{ cm}\\).",
+          "hint": "Use right-angled triangle \\(XPY\\) to find \\(XY\\) and \\(YP\\), then use the angle sum of \\(\\triangle XYZ\\) and right-angled triangle \\(XPZ\\) to find \\(PZ\\).",
+          "timeLimit": 90,
           "meta": {
             "origin": "teacher"
           }
@@ -26819,33 +26790,80 @@
           "id": "y11a-6J-q13",
           "type": "multipart",
           "difficulty": "hard",
-          "stem": "A ship sails \\(60\\text{ km}\\) from port \\(A\\) to port \\(B\\) on a bearing of \\(060^{\\circ}\\text{T}\\), then sails \\(140\\text{ km}\\) from port \\(B\\) to port \\(C\\) on a bearing of \\(290^{\\circ}\\text{T}\\). Explain why \\(\\angle ABC = 50^{\\circ}\\), and hence find the distance of port \\(A\\) from port \\(C\\), correct to the nearest kilometre.",
+          "stem": "A ship sails \\(60\\text{ km}\\) from port \\(A\\) to port \\(B\\) on a bearing of \\(060^{\\circ}\\text{T}\\), then sails \\(140\\text{ km}\\) from port \\(B\\) to port \\(C\\) on a bearing of \\(290^{\\circ}\\text{T}\\).",
+          "figure": {
+            "svg": "<svg viewBox=\"0 0 360 235\" width=\"100%\" height=\"auto\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"225,188 308,140 98,64\" fill=\"#dbeafe\" fill-opacity=\"0.4\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n  <line x1=\"225\" y1=\"188\" x2=\"225\" y2=\"118\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/>\n  <text x=\"225\" y=\"112\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">N</text>\n  <line x1=\"308\" y1=\"195\" x2=\"308\" y2=\"70\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/>\n  <text x=\"308\" y=\"64\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#64748b\" text-anchor=\"middle\">N</text>\n  <path d=\"M 225 164 A 24 24 0 0 1 245.8 176\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.6\"/>\n  <text x=\"247\" y=\"160\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#b45309\">60°</text>\n  <path d=\"M 308 116 A 24 24 0 1 1 285.4 131.8\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"1.6\"/>\n  <text x=\"326\" y=\"118\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#4338ca\">290°</text>\n  <circle cx=\"225\" cy=\"188\" r=\"3\" fill=\"#1e293b\"/>\n  <circle cx=\"308\" cy=\"140\" r=\"3\" fill=\"#1e293b\"/>\n  <circle cx=\"98\" cy=\"64\" r=\"3\" fill=\"#1e293b\"/>\n  <text x=\"225\" y=\"206\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\">A</text>\n  <text x=\"322\" y=\"145\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\">B</text>\n  <text x=\"83\" y=\"66\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\">C</text>\n  <text x=\"276\" y=\"178\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">60 km</text>\n  <text x=\"212\" y=\"92\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">140 km</text>\n</svg>"
+          },
           "parts": [
             {
-              "id": "y11a-6J-q13b",
-              "type": "short",
-              "stem": "Find the bearing of port \\(A\\) from port \\(C\\), correct to the nearest degree.",
-              "answer": "086°",
+              "id": "y11a-6J-q13a",
+              "type": "mc",
+              "stem": "Using the fact that \\(\\angle ABC = 50^{\\circ}\\), find the distance of port \\(A\\) from port \\(C\\), correct to the nearest kilometre.",
+              "options": [
+                "\\(102\\text{ km}\\)",
+                "\\(111\\text{ km}\\)",
+                "\\(133\\text{ km}\\)",
+                "\\(184\\text{ km}\\)"
+              ],
+              "answer": 1,
+              "hint": "At \\(B\\), the back-bearing to \\(A\\) is \\(060^{\\circ} + 180^{\\circ} = 240^{\\circ}\\text{T}\\), so \\(\\angle ABC = 290^{\\circ} - 240^{\\circ} = 50^{\\circ}\\). Apply the cosine rule in \\(\\triangle ABC\\).",
+              "solution": "\\(\\angle ABC = 290^{\\circ} - 240^{\\circ} = 50^{\\circ}\\). By the cosine rule: \\(AC^2 = 60^2 + 140^2 - 2(60)(140)\\cos 50^{\\circ} \\approx 23200 - 10799 = 12401 \\implies AC = \\sqrt{12401} \\approx 111.36\\text{ km} \\approx 111\\text{ km}\\).",
               "steps": [
                 {
-                  "explain": "Apply the sine rule to find angle \\(\\angle ACB\\).",
-                  "work": "\\frac{\\sin(\\angle ACB)}{60} = \\frac{\\sin 50^{\\circ}}{111.4}"
+                  "explain": "At port \\(B\\), the back-bearing of port \\(A\\) from \\(B\\) is \\(060^{\\circ} + 180^{\\circ} = 240^{\\circ}\\text{T}\\). Since port \\(C\\) is on a bearing of \\(290^{\\circ}\\text{T}\\) from \\(B\\), the included angle is \\(\\angle ABC = 290^{\\circ} - 240^{\\circ} = 50^{\\circ}\\).",
+                  "work": "\\(\\angle ABC = 290^{\\circ} - 240^{\\circ} = 50^{\\circ}\\)"
                 },
                 {
-                  "explain": "Solve for the angle.",
-                  "work": "\\angle ACB \\approx 24^{\\circ}"
+                  "explain": "Apply the cosine rule in \\(\\triangle ABC\\) with \\(AB = 60\\text{ km}\\), \\(BC = 140\\text{ km}\\), and \\(\\angle ABC = 50^{\\circ}\\).",
+                  "work": "\\(AC^2 = 60^2 + 140^2 - 2(60)(140)\\cos 50^{\\circ}\\)"
                 },
                 {
-                  "explain": "Calculate the bearing of A from C.",
-                  "work": "\\text{Bearing} = 110^{\\circ} - 24^{\\circ} = 86^{\\circ}"
+                  "explain": "Evaluate \\(AC^2\\) and take the positive square root.",
+                  "work": "\\(AC^2 \\approx 3600 + 19600 - 10798.8 = 12401.2 \\implies AC \\approx 111.36\\text{ km}\\)"
+                },
+                {
+                  "explain": "Round to the nearest kilometre.",
+                  "work": "\\(AC \\approx 111\\text{ km}\\)"
+                }
+              ],
+              "xp": 4
+            },
+            {
+              "id": "y11a-6J-q13b",
+              "type": "mc",
+              "stem": "Hence, find the bearing of port \\(A\\) from port \\(C\\), correct to the nearest degree.",
+              "options": [
+                "\\(086^{\\circ}\\text{T}\\)",
+                "\\(110^{\\circ}\\text{T}\\)",
+                "\\(134^{\\circ}\\text{T}\\)",
+                "\\(266^{\\circ}\\text{T}\\)"
+              ],
+              "answer": 0,
+              "hint": "Use the sine rule in \\(\\triangle ABC\\) to find \\(\\angle ACB\\), then subtract \\(\\angle ACB\\) from the back-bearing of \\(B\\) from \\(C\\) (\\(290^{\\circ} - 180^{\\circ} = 110^{\\circ}\\text{T}\\)).",
+              "solution": "By the sine rule, \\(\\dfrac{\\sin(\\angle ACB)}{60} = \\dfrac{\\sin 50^{\\circ}}{111.36} \\implies \\angle ACB \\approx 24.38^{\\circ}\\). Since the bearing of \\(B\\) from \\(C\\) is \\(290^{\\circ} - 180^{\\circ} = 110^{\\circ}\\text{T}\\), the bearing of \\(A\\) from \\(C\\) is \\(110^{\\circ} - 24.38^{\\circ} \\approx 086^{\\circ}\\text{T}\\).",
+              "steps": [
+                {
+                  "explain": "Apply the sine rule in \\(\\triangle ABC\\) to find \\(\\angle ACB\\).",
+                  "work": "\\(\\dfrac{\\sin(\\angle ACB)}{60} = \\dfrac{\\sin 50^{\\circ}}{111.36}\\)"
+                },
+                {
+                  "explain": "Solve for \\(\\angle ACB\\).",
+                  "work": "\\(\\sin(\\angle ACB) \\approx 0.4127 \\implies \\angle ACB \\approx 24.38^{\\circ}\\)"
+                },
+                {
+                  "explain": "Since the bearing of \\(C\\) from \\(B\\) is \\(290^{\\circ}\\text{T}\\), the back-bearing of \\(B\\) from \\(C\\) is \\(290^{\\circ} - 180^{\\circ} = 110^{\\circ}\\text{T}\\).",
+                  "work": "\\(\\text{Bearing of } B \\text{ from } C = 110^{\\circ}\\text{T}\\)"
+                },
+                {
+                  "explain": "Port \\(A\\) lies counter-clockwise from ray \\(CB\\) by \\(\\angle ACB \\approx 24^{\\circ}\\), so subtract \\(24^{\\circ}\\) from \\(110^{\\circ}\\text{T}\\).",
+                  "work": "\\(\\text{Bearing of } A \\text{ from } C \\approx 110^{\\circ} - 24^{\\circ} = 086^{\\circ}\\text{T}\\)"
                 }
               ],
               "xp": 4
             }
           ],
-          "answer": "111",
-          "hint": "At B, draw a north line. The co-interior angle to the first bearing is \\(180^{\\circ} - 60^{\\circ} = 120^{\\circ}\\) (south-west direction). The bearing to C is \\(290^{\\circ}\\). The angle \\(\\angle ABC = 360^{\\circ} - (290^{\\circ} - 60^{\\circ}) - 180^{\\circ} = 50^{\\circ}\\). Then use the cosine rule: \\(AC^2 = AB^2 + BC^2 - 2(AB)(BC)\\cos 50^{\\circ}\\).",
-          "solution": "The angle \\(\\angle ABC = 180^{\\circ} - (290^{\\circ} - 180^{\\circ} - 60^{\\circ}) = 50^{\\circ}\\). By the cosine rule: \\(AC^2 = 60^2 + 140^2 - 2(60)(140) \\cos 50^{\\circ} = 3600 + 19600 - 16800(0.6428) = 23200 - 10799 = 12401 \\implies AC = \\sqrt{12401} \\approx 111.36\\text{ km} \\approx 111\\text{ km}\\)."
+          "hint": "Draw North lines at \\(B\\) and \\(C\\). Use the cosine rule in \\(\\triangle ABC\\) to find \\(AC\\), then the sine rule to find \\(\\angle ACB\\).",
+          "timeLimit": 120
         },
         {
           "id": "killara2026-q22",
