@@ -25933,41 +25933,6 @@
           "xp": 3
         },
         {
-          "id": "y11a-6J-q6b",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "In a quadrilateral \\(ABCD\\), \\(AB = 7.2\\text{ cm}\\), \\(AD = 8.5\\text{ cm}\\) and \\(DC = 9.5\\text{ cm}\\). The angle \\(\\angle DAB = 105^{\\circ}\\) and \\(\\angle BCD = 75^{\\circ}\\). Find the length of the diagonal \\(BD\\), correct to the nearest millimetre (one decimal place in cm).\nUsing the diagonal \\(BD \\approx 12.5\\text{ cm}\\), apply the sine rule in \\(\\triangle BCD\\) to find \\(\\angle CBD\\), correct to the nearest degree.",
-          "options": [
-            "\\(-47°\\)",
-            "\\(47°\\)",
-            "\\(47° + 1\\)",
-            "\\(\\dfrac{13}{x + 3}\\)"
-          ],
-          "answer": 1,
-          "hint": "Use the sine rule: \\(\\frac{\\sin(\\angle CBD)}{CD} = \\frac{\\sin(\\angle BCD)}{BD}\\).",
-          "solution": "In \\(\\triangle BCD\\): \\(\\frac{\\sin(\\angle CBD)}{9.5} = \\frac{\\sin 75^{\\circ}}{12.5} \\implies sin(\\angle CBD) = \\frac{9.5 \\sin 75^{\\circ}}{12.5} \\approx \\frac{9.5 \\times 0.9659}{12.5} \\approx 0.7341 \\implies \\angle CBD = \\arcsin(0.7341) \\approx 47.23^{\\circ} \\approx 47^{\\circ}\\).",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Problems involving general triangles: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(\\frac{\\sin(\\angle CBD)}{9.5} = \\frac{\\sin 75^{\\circ}}{12.5}\\)"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(\\sin(\\angle CBD) \\approx 0.7341\\)"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(\\angle CBD \\approx 47^{\\circ}\\)"
-            },
-            {
-              "explain": "Final answer: 47°. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(47°\\)"
-            }
-          ],
-          "timeLimit": 90,
-          "xp": 3
-        },
-        {
           "id": "y11a-6J-q7b",
           "type": "mc",
           "difficulty": "medium",
@@ -26698,33 +26663,79 @@
           "id": "y11a-6J-q6",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "In a quadrilateral \\(ABCD\\), \\(AB = 7.2\\text{ cm}\\), \\(AD = 8.5\\text{ cm}\\) and \\(DC = 9.5\\text{ cm}\\). The angle \\(\\angle DAB = 105^{\\circ}\\) and \\(\\angle BCD = 75^{\\circ}\\). Find the length of the diagonal \\(BD\\), correct to the nearest millimetre (one decimal place in cm).",
+          "stem": "In a quadrilateral \\(ABCD\\), \\(AB = 7.2\\text{ cm}\\), \\(AD = 8.5\\text{ cm}\\) and \\(DC = 9.5\\text{ cm}\\). The angle \\(\\angle DAB = 105^{\\circ}\\) and \\(\\angle BCD = 75^{\\circ}\\).",
+          "figure": {
+            "svg": "<svg viewBox=\"0 0 360 250\" width=\"100%\" height=\"auto\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"110,210 77,85 268,39 263,210\" fill=\"#dbeafe\" fill-opacity=\"0.45\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n  <line x1=\"77\" y1=\"85\" x2=\"263\" y2=\"210\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/>\n  <path d=\"M 103.8 186.8 A 24 24 0 0 1 134 210\" fill=\"#fef3c7\" fill-opacity=\"0.7\" stroke=\"#d97706\" stroke-width=\"1.6\"/>\n  <text x=\"134\" y=\"184\" font-family=\"system-ui, sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#b45309\" text-anchor=\"middle\">105°</text>\n  <path d=\"M 266.9 65.1 A 26 26 0 0 1 242.3 45.1\" fill=\"#e0e7ff\" fill-opacity=\"0.7\" stroke=\"#4f46e5\" stroke-width=\"1.6\"/>\n  <text x=\"241\" y=\"76\" font-family=\"system-ui, sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#4338ca\" text-anchor=\"middle\">75°</text>\n  <circle cx=\"110\" cy=\"210\" r=\"3\" fill=\"#1e293b\"/>\n  <circle cx=\"77\" cy=\"85\" r=\"3\" fill=\"#1e293b\"/>\n  <circle cx=\"268\" cy=\"39\" r=\"3\" fill=\"#1e293b\"/>\n  <circle cx=\"263\" cy=\"210\" r=\"3\" fill=\"#1e293b\"/>\n  <text x=\"98\" y=\"226\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\">A</text>\n  <text x=\"63\" y=\"82\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\">B</text>\n  <text x=\"281\" y=\"36\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\">C</text>\n  <text x=\"276\" y=\"225\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\">D</text>\n  <text x=\"66\" y=\"154\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">7.2 cm</text>\n  <text x=\"186\" y=\"230\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">8.5 cm</text>\n  <text x=\"276\" y=\"128\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">9.5 cm</text>\n</svg>"
+          },
           "parts": [
             {
-              "id": "y11a-6J-q6b",
-              "type": "short",
-              "stem": "Using the diagonal \\(BD \\approx 12.5\\text{ cm}\\), apply the sine rule in \\(\\triangle BCD\\) to find \\(\\angle CBD\\), correct to the nearest degree.",
-              "answer": "47°",
+              "id": "y11a-6J-q6a",
+              "type": "mc",
+              "stem": "Find the length of the diagonal \\(BD\\), correct to the nearest millimetre (one decimal place in cm).",
+              "options": [
+                "\\(9.6\\text{ cm}\\)",
+                "\\(11.1\\text{ cm}\\)",
+                "\\(11.8\\text{ cm}\\)",
+                "\\(12.5\\text{ cm}\\)"
+              ],
+              "answer": 3,
+              "hint": "Apply the cosine rule in \\(\\triangle ABD\\): \\(BD^2 = AB^2 + AD^2 - 2(AB)(AD)\\cos(\\angle DAB)\\).",
+              "solution": "In \\(\\triangle ABD\\), by the cosine rule: \\(BD^2 = 7.2^2 + 8.5^2 - 2(7.2)(8.5)\\cos 105^{\\circ} = 51.84 + 72.25 - 122.4(-0.2588) \\approx 155.77 \\implies BD = \\sqrt{155.77} \\approx 12.48\\text{ cm} \\approx 12.5\\text{ cm}\\).",
               "steps": [
                 {
-                  "explain": "Apply the sine rule to find the angle.",
-                  "work": "\\frac{\\sin(\\angle CBD)}{9.5} = \\frac{\\sin 75^{\\circ}}{12.5}"
+                  "explain": "In \\(\\triangle ABD\\), we know two sides (\\(AB = 7.2\\text{ cm}\\), \\(AD = 8.5\\text{ cm}\\)) and the included angle (\\(\\angle DAB = 105^{\\circ}\\)). Apply the cosine rule to find the opposite side \\(BD\\).",
+                  "work": "\\(BD^2 = AB^2 + AD^2 - 2(AB)(AD)\\cos(\\angle DAB)\\)"
                 },
                 {
-                  "explain": "Solve for the sine value.",
-                  "work": "\\sin(\\angle CBD) \\approx 0.7341"
+                  "explain": "Substitute the given values into the formula.",
+                  "work": "\\(BD^2 = 7.2^2 + 8.5^2 - 2(7.2)(8.5)\\cos 105^{\\circ} = 51.84 + 72.25 - 122.4\\cos 105^{\\circ}\\)"
                 },
                 {
-                  "explain": "Calculate the angle in degrees.",
-                  "work": "\\angle CBD \\approx 47^{\\circ}"
+                  "explain": "Since \\(105^{\\circ}\\) is obtuse, \\(\\cos 105^{\\circ} \\approx -0.2588\\) is negative, so subtracting \\(122.4\\cos 105^{\\circ}\\) adds to the total.",
+                  "work": "\\(BD^2 \\approx 124.09 - 122.4(-0.2588) \\approx 124.09 + 31.68 = 155.77\\)"
+                },
+                {
+                  "explain": "Take the positive square root and round to one decimal place (nearest millimetre).",
+                  "work": "\\(BD = \\sqrt{155.77} \\approx 12.48\\text{ cm} \\approx 12.5\\text{ cm}\\)"
+                }
+              ],
+              "xp": 3
+            },
+            {
+              "id": "y11a-6J-q6b",
+              "type": "mc",
+              "stem": "Hence, apply the sine rule in \\(\\triangle BCD\\) to find \\(\\angle CBD\\), correct to the nearest degree.",
+              "options": [
+                "\\(34^{\\circ}\\)",
+                "\\(47^{\\circ}\\)",
+                "\\(57^{\\circ}\\)",
+                "\\(133^{\\circ}\\)"
+              ],
+              "answer": 1,
+              "hint": "Use the sine rule in \\(\\triangle BCD\\): \\(\\dfrac{\\sin(\\angle CBD)}{DC} = \\dfrac{\\sin(\\angle BCD)}{BD}\\).",
+              "solution": "In \\(\\triangle BCD\\), \\(\\dfrac{\\sin(\\angle CBD)}{9.5} = \\dfrac{\\sin 75^{\\circ}}{12.48} \\implies \\sin(\\angle CBD) \\approx 0.7352 \\implies \\angle CBD \\approx 47^{\\circ}\\).",
+              "steps": [
+                {
+                  "explain": "In \\(\\triangle BCD\\), side \\(DC = 9.5\\text{ cm}\\) is opposite \\(\\angle CBD\\), and diagonal \\(BD \\approx 12.5\\text{ cm}\\) is opposite \\(\\angle BCD = 75^{\\circ}\\). Set up the sine rule.",
+                  "work": "\\(\\dfrac{\\sin(\\angle CBD)}{9.5} = \\dfrac{\\sin 75^{\\circ}}{12.5}\\)"
+                },
+                {
+                  "explain": "Multiply both sides by \\(9.5\\) and evaluate \\(\\sin(\\angle CBD)\\).",
+                  "work": "\\(\\sin(\\angle CBD) = \\dfrac{9.5 \\sin 75^{\\circ}}{12.5} \\approx \\dfrac{9.5 \\times 0.9659}{12.5} \\approx 0.7341\\)"
+                },
+                {
+                  "explain": "Take the inverse sine. Since \\(DC < BD\\), \\(\\angle CBD\\) must be smaller than \\(75^{\\circ}\\), so only the acute angle is valid.",
+                  "work": "\\(\\angle CBD = \\arcsin(0.7341) \\approx 47.23^{\\circ}\\)"
+                },
+                {
+                  "explain": "Round to the nearest degree.",
+                  "work": "\\(\\angle CBD \\approx 47^{\\circ}\\)"
                 }
               ],
               "xp": 3
             }
           ],
-          "answer": "12.5",
-          "hint": "Apply the cosine rule in \\(\\triangle ABD\\) to find \\(BD\\): \\(BD^2 = AB^2 + AD^2 - 2(AB)(AD) \\cos(\\angle DAB)\\).",
-          "solution": "By the cosine rule in \\(\\triangle ABD\\): \\(BD^2 = 7.2^2 + 8.5^2 - 2(7.2)(8.5) \\cos 105^{\\circ} = 51.84 + 72.25 - 122.4 \\cos 105^{\\circ} = 124.09 - 122.4(-0.2588) = 124.09 + 31.68 = 155.77 \\implies BD = \\sqrt{155.77} \\approx 12.48\\text{ cm} \\approx 12.5\\text{ cm}\\).",
+          "hint": "First apply the cosine rule in \\(\\triangle ABD\\) to find \\(BD\\), then apply the sine rule in \\(\\triangle BCD\\) to find \\(\\angle CBD\\).",
           "timeLimit": 90
         },
         {
