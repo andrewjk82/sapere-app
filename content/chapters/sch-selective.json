@@ -20821,6 +20821,2158 @@
             "number": 40,
             "origin": "exam-import"
           }
+        },
+        {
+          "id": "sch-sel-mm8-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the average of \\(\\dfrac12\\) and \\(\\dfrac14\\)?",
+          "options": [
+            "\\(\\dfrac34\\)",
+            "\\(\\dfrac13\\)",
+            "\\(\\dfrac38\\)",
+            "\\(\\dfrac59\\)"
+          ],
+          "answer": 2,
+          "hint": "The average of two numbers is their sum divided by 2. Add the fractions first using a common denominator, then divide by 2.",
+          "keyPoints": [
+            {
+              "text": "average of \\(\\dfrac12\\) and \\(\\dfrac14\\)",
+              "note": "Average of two numbers = (first + second) ÷ 2."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Add the two fractions. Use the common denominator 4: \\(\\dfrac12=\\dfrac24\\).",
+              "work": "\\(\\dfrac12+\\dfrac14=\\dfrac24+\\dfrac14=\\dfrac34\\)"
+            },
+            {
+              "explain": "Divide the sum by 2. Dividing by 2 is the same as multiplying by \\(\\dfrac12\\).",
+              "work": "\\(\\dfrac34\\div2=\\dfrac34\\times\\dfrac12\\)"
+            },
+            {
+              "explain": "Multiply the tops and the bottoms.",
+              "work": "\\(\\dfrac34\\times\\dfrac12=\\boxed{\\dfrac38}\\)"
+            },
+            {
+              "explain": "Check: \\(\\dfrac38\\) lies between \\(\\dfrac14=\\dfrac28\\) and \\(\\dfrac12=\\dfrac48\\), exactly in the middle. \\(\\checkmark\\) The option \\(\\dfrac34\\) is the sum, not the average.",
+              "work": "\\(\\dfrac28\\lt\\dfrac38\\lt\\dfrac48\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 1,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "In a certain class, 3 out of 24 students are in student organizations. What is the ratio of students in student organizations to students not in student organizations?",
+          "options": [
+            "\\(\\dfrac18\\)",
+            "\\(\\dfrac17\\)",
+            "\\(\\dfrac16\\)",
+            "\\(\\dfrac15\\)"
+          ],
+          "answer": 1,
+          "hint": "The ratio compares the students IN organizations to the students NOT in organizations. Find the number not in organizations first (take away from 24), then write the ratio and simplify.",
+          "keyPoints": [
+            {
+              "text": "ratio of students in student organizations to students not in student organizations",
+              "note": "It compares IN : NOT IN, not IN : all students."
+            },
+            {
+              "text": "3 out of 24",
+              "note": "3 students are in organizations, so 24 − 3 are not."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the number of students NOT in student organizations.",
+              "work": "\\(24-3=21\\)"
+            },
+            {
+              "explain": "Write the ratio in the order asked: in organizations to not in organizations.",
+              "work": "\\(3:21\\)"
+            },
+            {
+              "explain": "Simplify by dividing both numbers by 3.",
+              "work": "\\(3:21=1:7\\)"
+            },
+            {
+              "explain": "As a fraction, 1 : 7 is written \\(\\dfrac17\\).",
+              "work": "\\(\\boxed{\\dfrac17}\\)"
+            },
+            {
+              "explain": "Check the trap: \\(\\dfrac18=\\dfrac{3}{24}\\) compares the 3 students with ALL 24 students, not with the 21 who are not in organizations. \\(\\checkmark\\)",
+              "work": "\\(\\dfrac{3}{24}=\\dfrac18\\ne\\dfrac{3}{21}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 2,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The number 153 has the strange property that \\(153=1^3+5^3+3^3\\). Which of the following numbers has the same property?",
+          "options": [
+            "\\(154\\)",
+            "\\(163\\)",
+            "\\(136\\)",
+            "\\(407\\)"
+          ],
+          "answer": 3,
+          "hint": "Test each option: cube each digit (multiply it by itself three times) and add the three cubes. See if you get the original number back. Learn the cubes: \\(1,8,27,64,125,216,343,512,729\\).",
+          "keyPoints": [
+            {
+              "text": "the same property",
+              "note": "The number must equal the SUM OF THE CUBES of its digits."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Cubes of the digits 0 to 9: \\(0^3=0,\\ 1^3=1,\\ 2^3=8,\\ 3^3=27,\\ 4^3=64,\\ 5^3=125,\\ 6^3=216,\\ 7^3=343\\).",
+              "work": "\\(0,\\ 1,\\ 8,\\ 27,\\ 64,\\ 125,\\ 216,\\ 343\\)"
+            },
+            {
+              "explain": "Test 154: \\(1^3+5^3+4^3=1+125+64=190\\), not 154.",
+              "work": "\\(190\\ne154\\)"
+            },
+            {
+              "explain": "Test 163: \\(1^3+6^3+3^3=1+216+27=244\\), not 163. Test 136: \\(1^3+3^3+6^3=1+27+216=244\\), not 136.",
+              "work": "\\(244\\ne163,\\quad244\\ne136\\)"
+            },
+            {
+              "explain": "Test 407: \\(4^3+0^3+7^3=64+0+343=407\\). It works!",
+              "work": "\\(4^3+0^3+7^3=407\\ \\checkmark\\)"
+            },
+            {
+              "explain": "So 407 has the same property as 153.",
+              "work": "\\(\\boxed{407}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 3,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The price of a newspaper rises from 5 cents to 15 cents. What is the percent increase in price?",
+          "options": [
+            "\\(50\\%\\)",
+            "\\(150\\%\\)",
+            "\\(200\\%\\)",
+            "\\(300\\%\\)"
+          ],
+          "answer": 2,
+          "hint": "Percent increase \\(=\\dfrac{\\text{increase}}{\\text{ORIGINAL price}}\\times100\\%\\). Find the increase in cents first, then compare it with the ORIGINAL price (5 cents).",
+          "keyPoints": [
+            {
+              "text": "percent increase in price",
+              "note": "Compare the increase with the ORIGINAL price (5 cents), not the new price."
+            },
+            {
+              "text": "from 5 cents to 15 cents",
+              "note": "The increase is the new price minus the old price."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the increase in price.",
+              "work": "\\(15-5=10\\text{ cents}\\)"
+            },
+            {
+              "explain": "Percent increase \\(=\\dfrac{\\text{increase}}{\\text{original}}\\times100\\%\\).",
+              "work": "\\(\\dfrac{10}{5}\\times100\\%\\)"
+            },
+            {
+              "explain": "Calculate: \\(\\dfrac{10}{5}=2\\), and \\(2\\times100\\%=200\\%\\).",
+              "work": "\\(\\boxed{200\\%}\\)"
+            },
+            {
+              "explain": "Check: a 200% increase means adding 2 more times the original price: \\(5+2\\times5=15\\). \\(\\checkmark\\) The new price is 300% of the original, but the INCREASE is 200%.",
+              "work": "\\(5+2\\times5=15\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 4,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the smallest integer greater than 1 that leaves a remainder of 1 when divided by any of the integers 6, 8, and 10?",
+          "options": [
+            "\\(21\\)",
+            "\\(41\\)",
+            "\\(120\\)",
+            "\\(121\\)"
+          ],
+          "answer": 3,
+          "hint": "If a number leaves a remainder of 1 when divided by 6, 8 and 10, then the number MINUS 1 divides exactly by 6, 8 and 10. So find the lowest common multiple (LCM) of 6, 8 and 10 and add 1.",
+          "keyPoints": [
+            {
+              "text": "leaves a remainder of 1",
+              "note": "The number is 1 more than a common multiple of 6, 8 and 10."
+            },
+            {
+              "text": "smallest integer greater than 1",
+              "note": "Use the LOWEST common multiple, then add 1."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the lowest common multiple of 6, 8 and 10. Write prime factors: \\(6=2\\times3\\), \\(8=2^3\\), \\(10=2\\times5\\). Take the highest power of each prime.",
+              "work": "\\(\\text{LCM}=2^3\\times3\\times5=120\\)"
+            },
+            {
+              "explain": "A number that leaves remainder 1 is the common multiple plus 1.",
+              "work": "\\(120+1=\\boxed{121}\\)"
+            },
+            {
+              "explain": "Check: \\(121=6\\times20+1\\), \\(121=8\\times15+1\\), \\(121=10\\times12+1\\). \\(\\checkmark\\) The option 120 leaves remainder 0, and 21 and 41 do not work for all three numbers.",
+              "work": "\\(121\\div8=15\\text{ remainder }1\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 5,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Pat makes a sequence of numbers. He chooses a starting number and then subtracts equal amounts each time. The third number in his sequence is 45 and the tenth number is \\(-32\\).\n\nWhat is the sixth number in the sequence?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 110\" width=\"100%\" height=\"auto\" style=\"max-width:520px\">\n<rect x=\"20.0\" y=\"30.0\" width=\"40.0\" height=\"36.0\" rx=\"0\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"40.0\" y=\"82.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">1</text>\n<rect x=\"68.0\" y=\"30.0\" width=\"40.0\" height=\"36.0\" rx=\"0\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"88.0\" y=\"82.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">2</text>\n<rect x=\"116.0\" y=\"30.0\" width=\"40.0\" height=\"36.0\" rx=\"0\" fill=\"#fef3c7\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"136.0\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">45</text>\n<text x=\"136.0\" y=\"82.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">3</text>\n<rect x=\"164.0\" y=\"30.0\" width=\"40.0\" height=\"36.0\" rx=\"0\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"184.0\" y=\"82.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">4</text>\n<rect x=\"212.0\" y=\"30.0\" width=\"40.0\" height=\"36.0\" rx=\"0\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"232.0\" y=\"82.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">5</text>\n<rect x=\"260.0\" y=\"30.0\" width=\"40.0\" height=\"36.0\" rx=\"0\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"280.0\" y=\"82.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">6</text>\n<rect x=\"308.0\" y=\"30.0\" width=\"40.0\" height=\"36.0\" rx=\"0\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"328.0\" y=\"82.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">7</text>\n<rect x=\"356.0\" y=\"30.0\" width=\"40.0\" height=\"36.0\" rx=\"0\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"376.0\" y=\"82.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">8</text>\n<rect x=\"404.0\" y=\"30.0\" width=\"40.0\" height=\"36.0\" rx=\"0\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"424.0\" y=\"82.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">9</text>\n<rect x=\"452.0\" y=\"30.0\" width=\"40.0\" height=\"36.0\" rx=\"0\" fill=\"#fef3c7\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"472.0\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">−32</text>\n<text x=\"472.0\" y=\"82.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">10</text>\n</svg>"
+          },
+          "options": [
+            "\\(67\\)",
+            "\\(78\\)",
+            "\\(12\\)",
+            "\\(6\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the amount subtracted each time. From the 3rd number to the 10th number there are 7 steps. Then count 3 steps from the 3rd number to reach the 6th number.",
+          "keyPoints": [
+            {
+              "text": "subtracts equal amounts each time",
+              "note": "The same amount is taken away at every step (a constant difference)."
+            },
+            {
+              "text": "The third number in his sequence is 45 and the tenth number",
+              "note": "Between the 3rd and the 10th number there are 10 − 3 = 7 steps."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the total drop from the 3rd number to the 10th number. Going from 45 down to \\(-32\\) crosses zero.",
+              "work": "\\(45-(-32)=45+32=77\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 110\" width=\"100%\" height=\"auto\" style=\"max-width:520px\">\n<rect x=\"20.0\" y=\"30.0\" width=\"40.0\" height=\"36.0\" rx=\"0\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"40.0\" y=\"82.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">1</text>\n<rect x=\"68.0\" y=\"30.0\" width=\"40.0\" height=\"36.0\" rx=\"0\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"88.0\" y=\"82.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">2</text>\n<rect x=\"116.0\" y=\"30.0\" width=\"40.0\" height=\"36.0\" rx=\"0\" fill=\"#fef3c7\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"136.0\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">45</text>\n<text x=\"136.0\" y=\"82.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">3</text>\n<rect x=\"164.0\" y=\"30.0\" width=\"40.0\" height=\"36.0\" rx=\"0\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"184.0\" y=\"82.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">4</text>\n<rect x=\"212.0\" y=\"30.0\" width=\"40.0\" height=\"36.0\" rx=\"0\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"232.0\" y=\"82.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">5</text>\n<rect x=\"260.0\" y=\"30.0\" width=\"40.0\" height=\"36.0\" rx=\"0\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"280.0\" y=\"82.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">6</text>\n<rect x=\"308.0\" y=\"30.0\" width=\"40.0\" height=\"36.0\" rx=\"0\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"328.0\" y=\"82.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">7</text>\n<rect x=\"356.0\" y=\"30.0\" width=\"40.0\" height=\"36.0\" rx=\"0\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"376.0\" y=\"82.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">8</text>\n<rect x=\"404.0\" y=\"30.0\" width=\"40.0\" height=\"36.0\" rx=\"0\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"424.0\" y=\"82.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">9</text>\n<rect x=\"452.0\" y=\"30.0\" width=\"40.0\" height=\"36.0\" rx=\"0\" fill=\"#fef3c7\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"472.0\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">−32</text>\n<text x=\"472.0\" y=\"82.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">10</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "This drop of 77 happens over \\(10-3=7\\) equal steps, so find the amount subtracted each time.",
+              "work": "\\(77\\div7=11\\text{ each time}\\)"
+            },
+            {
+              "explain": "The 6th number is 3 steps after the 3rd number (the 4th, 5th, 6th), so subtract \\(3\\times11\\) from 45.",
+              "work": "\\(45-3\\times11=45-33=\\boxed{12}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 150\" width=\"100%\" height=\"auto\" style=\"max-width:520px\">\n<rect x=\"20.0\" y=\"30.0\" width=\"40.0\" height=\"36.0\" rx=\"0\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"40.0\" y=\"82.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">1</text>\n<rect x=\"68.0\" y=\"30.0\" width=\"40.0\" height=\"36.0\" rx=\"0\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"88.0\" y=\"82.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">2</text>\n<rect x=\"116.0\" y=\"30.0\" width=\"40.0\" height=\"36.0\" rx=\"0\" fill=\"#fef3c7\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"136.0\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">45</text>\n<text x=\"136.0\" y=\"82.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">3</text>\n<rect x=\"164.0\" y=\"30.0\" width=\"40.0\" height=\"36.0\" rx=\"0\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"184.0\" y=\"82.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">4</text>\n<rect x=\"212.0\" y=\"30.0\" width=\"40.0\" height=\"36.0\" rx=\"0\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"232.0\" y=\"82.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">5</text>\n<rect x=\"260.0\" y=\"30.0\" width=\"40.0\" height=\"36.0\" rx=\"0\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<rect x=\"260.0\" y=\"30.0\" width=\"40.0\" height=\"36.0\" rx=\"0\" fill=\"#bbf7d0\" fill-opacity=\"1\" stroke=\"#16a34a\" stroke-width=\"2.4\"/>\n<text x=\"280.0\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#16a34a\">?</text>\n<text x=\"280.0\" y=\"82.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">6</text>\n<rect x=\"308.0\" y=\"30.0\" width=\"40.0\" height=\"36.0\" rx=\"0\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"328.0\" y=\"82.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">7</text>\n<rect x=\"356.0\" y=\"30.0\" width=\"40.0\" height=\"36.0\" rx=\"0\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"376.0\" y=\"82.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">8</text>\n<rect x=\"404.0\" y=\"30.0\" width=\"40.0\" height=\"36.0\" rx=\"0\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"424.0\" y=\"82.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">9</text>\n<rect x=\"452.0\" y=\"30.0\" width=\"40.0\" height=\"36.0\" rx=\"0\" fill=\"#fef3c7\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"472.0\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">−32</text>\n<text x=\"472.0\" y=\"82.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">10</text>\n<text x=\"260.0\" y=\"112.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\">7 steps from 3rd to 10th: 45 − (−32) = 77, so each step is −11</text>\n<text x=\"260.0\" y=\"134.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#16a34a\">6th = 45 − 3 × 11 = 12</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Check by writing the whole sequence from the 3rd number: 45, 34, 23, 12, 1, \\(-10\\), \\(-21\\), \\(-32\\). The 3rd is 45, the 6th is 12 and the 10th is \\(-32\\). \\(\\checkmark\\)",
+              "work": "\\(45,\\ 34,\\ 23,\\ 12,\\ 1,\\ -10,\\ -21,\\ -32\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 6,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The diagram shows two squares, one with side 12 cm and the other with side 6 cm. If all the trapeziums are identical, what is the area of one trapezium?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 290\" width=\"100%\" height=\"auto\" style=\"max-width:360px\">\n<rect x=\"90.0\" y=\"36.0\" width=\"192.0\" height=\"192.0\" rx=\"0\" fill=\"#bbf7d0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\"/>\n<rect x=\"138.0\" y=\"84.0\" width=\"96.0\" height=\"96.0\" rx=\"0\" fill=\"#bbf7d0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\"/>\n<line x1=\"90.0\" y1=\"36.0\" x2=\"138.0\" y2=\"84.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"282.0\" y1=\"36.0\" x2=\"234.0\" y2=\"84.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"282.0\" y1=\"228.0\" x2=\"234.0\" y2=\"180.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"90.0\" y1=\"228.0\" x2=\"138.0\" y2=\"180.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"186.0\" y1=\"36.0\" x2=\"186.0\" y2=\"84.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"282.0\" y1=\"132.0\" x2=\"234.0\" y2=\"132.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"186.0\" y1=\"228.0\" x2=\"186.0\" y2=\"180.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"90.0\" y1=\"132.0\" x2=\"138.0\" y2=\"132.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n</svg>"
+          },
+          "options": [
+            "\\(13.5\\text{ cm}^2\\)",
+            "\\(18.5\\text{ cm}^2\\)",
+            "\\(19\\text{ cm}^2\\)",
+            "\\(21\\text{ cm}^2\\)"
+          ],
+          "answer": 0,
+          "hint": "The trapeziums fill the space BETWEEN the big square and the small square. Find that area, then count the trapeziums in the diagram (each side of the small square has two trapeziums touching it).",
+          "keyPoints": [
+            {
+              "text": "all the trapeziums are identical",
+              "note": "Identical trapeziums have equal areas, so divide the total by the number of trapeziums."
+            },
+            {
+              "text": "two squares",
+              "note": "The trapeziums are the ring around the small square: big square − small square."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Area of the big square (side 12) and the small square (side 6).",
+              "work": "\\(12\\times12=144\\text{ cm}^2,\\qquad6\\times6=36\\text{ cm}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 290\" width=\"100%\" height=\"auto\" style=\"max-width:360px\">\n<rect x=\"90.0\" y=\"36.0\" width=\"192.0\" height=\"192.0\" rx=\"0\" fill=\"#bbf7d0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\"/>\n<rect x=\"138.0\" y=\"84.0\" width=\"96.0\" height=\"96.0\" rx=\"0\" fill=\"#bbf7d0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\"/>\n<line x1=\"90.0\" y1=\"36.0\" x2=\"138.0\" y2=\"84.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"282.0\" y1=\"36.0\" x2=\"234.0\" y2=\"84.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"282.0\" y1=\"228.0\" x2=\"234.0\" y2=\"180.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"90.0\" y1=\"228.0\" x2=\"138.0\" y2=\"180.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"186.0\" y1=\"36.0\" x2=\"186.0\" y2=\"84.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"282.0\" y1=\"132.0\" x2=\"234.0\" y2=\"132.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"186.0\" y1=\"228.0\" x2=\"186.0\" y2=\"180.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"90.0\" y1=\"132.0\" x2=\"138.0\" y2=\"132.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n</svg>"
+              }
+            },
+            {
+              "explain": "The trapeziums fill the region between the squares, so subtract.",
+              "work": "\\(144-36=108\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "Count the trapeziums: each of the 4 sides of the small square has 2 trapeziums, so there are 8 identical trapeziums.",
+              "work": "\\(4\\times2=8\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 320\" width=\"100%\" height=\"auto\" style=\"max-width:360px\">\n<rect x=\"90.0\" y=\"36.0\" width=\"192.0\" height=\"192.0\" rx=\"0\" fill=\"#bbf7d0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\"/>\n<rect x=\"138.0\" y=\"84.0\" width=\"96.0\" height=\"96.0\" rx=\"0\" fill=\"#bbf7d0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\"/>\n<line x1=\"90.0\" y1=\"36.0\" x2=\"138.0\" y2=\"84.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"282.0\" y1=\"36.0\" x2=\"234.0\" y2=\"84.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"282.0\" y1=\"228.0\" x2=\"234.0\" y2=\"180.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"90.0\" y1=\"228.0\" x2=\"138.0\" y2=\"180.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"186.0\" y1=\"36.0\" x2=\"186.0\" y2=\"84.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"282.0\" y1=\"132.0\" x2=\"234.0\" y2=\"132.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"186.0\" y1=\"228.0\" x2=\"186.0\" y2=\"180.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"90.0\" y1=\"132.0\" x2=\"138.0\" y2=\"132.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<polygon points=\"90.0,36.0 186.0,36.0 186.0,84.0 138.0,84.0\" fill=\"#fde68a\" fill-opacity=\"1\" stroke=\"#ea580c\" stroke-width=\"3\" stroke-linejoin=\"round\"/>\n<text x=\"162.0\" y=\"64.8\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">1</text>\n<line x1=\"91.0\" y1=\"24.0\" x2=\"185.0\" y2=\"24.0\" stroke=\"#ea580c\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"185.0\" y1=\"24.0\" x2=\"179.0\" y2=\"27.6\" stroke=\"#ea580c\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"185.0\" y1=\"24.0\" x2=\"179.0\" y2=\"20.4\" stroke=\"#ea580c\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"185.0\" y1=\"24.0\" x2=\"91.0\" y2=\"24.0\" stroke=\"#ea580c\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"91.0\" y1=\"24.0\" x2=\"97.0\" y2=\"20.4\" stroke=\"#ea580c\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"91.0\" y1=\"24.0\" x2=\"97.0\" y2=\"27.6\" stroke=\"#ea580c\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<text x=\"138.0\" y=\"19.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\">6</text>\n<line x1=\"72.0\" y1=\"37.0\" x2=\"72.0\" y2=\"83.0\" stroke=\"#ea580c\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"72.0\" y1=\"83.0\" x2=\"68.4\" y2=\"77.0\" stroke=\"#ea580c\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"72.0\" y1=\"83.0\" x2=\"75.6\" y2=\"77.0\" stroke=\"#ea580c\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"72.0\" y1=\"83.0\" x2=\"72.0\" y2=\"37.0\" stroke=\"#ea580c\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"72.0\" y1=\"37.0\" x2=\"75.6\" y2=\"43.0\" stroke=\"#ea580c\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"72.0\" y1=\"37.0\" x2=\"68.4\" y2=\"43.0\" stroke=\"#ea580c\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<text x=\"67.0\" y=\"64.0\" text-anchor=\"end\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\">3</text>\n<text x=\"180.0\" y=\"310.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\">(144 − 36) ÷ 8 = 13.5 cm² per trapezium</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Share the area between the 8 trapeziums.",
+              "work": "\\(108\\div8=\\boxed{13.5\\text{ cm}^2}\\)"
+            },
+            {
+              "explain": "Check with the trapezium formula: parallel sides 6 (half of the big side) and 3 (half of the small side), height 3. \\(\\dfrac{6+3}{2}\\times3=4.5\\times3=13.5\\). \\(\\checkmark\\)",
+              "work": "\\(\\dfrac{6+3}{2}\\times3=13.5\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 7,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Doris spent \\(\\dfrac23\\) of her savings on a used car, and \\(\\dfrac14\\) of her remainder on a new carpet. If the carpet cost her \\(\\$250\\), how much were Doris' original savings?",
+          "options": [
+            "\\(\\$1,200\\)",
+            "\\(\\$1,500\\)",
+            "\\(\\$2,000\\)",
+            "\\(\\$3,000\\)"
+          ],
+          "answer": 3,
+          "hint": "Work backwards. The carpet cost \\(\\dfrac14\\) of the REMAINDER (after the car), so find the remainder first. The remainder is also \\(\\dfrac13\\) of her savings.",
+          "keyPoints": [
+            {
+              "text": "\\(\\dfrac14\\) of her remainder on a new carpet",
+              "note": "The carpet is a quarter of what was LEFT after buying the car, not a quarter of her savings."
+            },
+            {
+              "text": "original savings",
+              "note": "Savings are the whole (100%). The remainder after the car is one third of the savings."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The carpet cost \\(\\$250\\), which is one quarter of the remainder after the car. So the remainder is 4 times as much.",
+              "work": "\\(\\text{remainder}=4\\times250=\\$1000\\)"
+            },
+            {
+              "explain": "After spending \\(\\dfrac23\\) on the car, she had \\(\\dfrac13\\) of her savings left.",
+              "work": "\\(1-\\dfrac23=\\dfrac13\\text{ of savings}=\\$1000\\)"
+            },
+            {
+              "explain": "The whole savings is 3 times the remainder.",
+              "work": "\\(3\\times1000=\\boxed{\\$3000}\\)"
+            },
+            {
+              "explain": "Check forwards: car \\(=\\dfrac23\\times3000=\\$2000\\); left \\(\\$1000\\); carpet \\(=\\dfrac14\\times1000=\\$250\\). \\(\\checkmark\\)",
+              "work": "\\(3000-2000=1000,\\quad\\dfrac14\\times1000=250\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 8,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "At the Frosty Ice Cream store, the number of cones sold fell by 20 percent in November. If sales fell by a further 25 percent in December, what was the percent decrease in the number of cones sold in the whole two-month period?",
+          "options": [
+            "\\(20\\%\\)",
+            "\\(35\\%\\)",
+            "\\(40\\%\\)",
+            "\\(45\\%\\)"
+          ],
+          "answer": 2,
+          "hint": "Do not just add 20% and 25%. The second fall is 25% of the NEW (smaller) number. Pick a starting number such as 100 cones and follow it through the two months.",
+          "keyPoints": [
+            {
+              "text": "fell by 20 percent in November",
+              "note": "After a 20% fall, 80% of the original number is left."
+            },
+            {
+              "text": "a further 25 percent in December",
+              "note": "25% of the November number, not of the original number."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Start with 100 cones in October. A 20% fall in November leaves 80%.",
+              "work": "\\(100\\times0.80=80\\text{ cones}\\)"
+            },
+            {
+              "explain": "In December the sales fall by 25% of the November amount (80 cones), leaving 75% of 80.",
+              "work": "\\(80\\times0.75=60\\text{ cones}\\)"
+            },
+            {
+              "explain": "Compare the final amount with the original amount.",
+              "work": "\\(100-60=40\\text{ cones fewer}\\)"
+            },
+            {
+              "explain": "So the percent decrease over the two months is:",
+              "work": "\\(\\dfrac{40}{100}\\times100\\%=\\boxed{40\\%}\\)"
+            },
+            {
+              "explain": "Check with multipliers: \\(0.8\\times0.75=0.6\\), which is 60% left, so a 40% decrease. The option 45% comes from wrongly adding \\(20\\%+25\\%\\). \\(\\checkmark\\)",
+              "work": "\\(1-0.8\\times0.75=0.4\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 9,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Twenty four more than half of a number is 49. What is the number?",
+          "options": [
+            "\\(7\\)",
+            "\\(24\\)",
+            "\\(25\\)",
+            "\\(50\\)"
+          ],
+          "answer": 3,
+          "hint": "Work backwards from 49. Undo the “add 24” first, then undo the “half” by doubling.",
+          "keyPoints": [
+            {
+              "text": "Twenty four more than half of a number",
+              "note": "Order: take half of the number, then add 24."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Let the number be \\(n\\). Half of it, plus 24, is 49.",
+              "work": "\\(\\dfrac{n}{2}+24=49\\)"
+            },
+            {
+              "explain": "Subtract 24 from both sides to undo the adding.",
+              "work": "\\(\\dfrac{n}{2}=25\\)"
+            },
+            {
+              "explain": "Multiply both sides by 2 to undo the halving.",
+              "work": "\\(n=2\\times25=\\boxed{50}\\)"
+            },
+            {
+              "explain": "Check: half of 50 is 25, and 24 more than 25 is 49. \\(\\checkmark\\) The option 25 is the HALF of the number, not the number.",
+              "work": "\\(\\dfrac{50}{2}+24=49\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 10,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A car travels at \\(\\dfrac23\\) the speed of a motor bike. If it takes the motor bike 2 hours to travel 200 km, how many hours will the trip take the car?",
+          "options": [
+            "\\(5\\text{ hours}\\)",
+            "\\(4.5\\text{ hours}\\)",
+            "\\(3\\text{ hours}\\)",
+            "\\(2\\text{ hours}\\)"
+          ],
+          "answer": 2,
+          "hint": "The car is SLOWER than the bike, so it takes LONGER for the same trip. Find the bike's speed, then the car's speed (two thirds of the bike's), then time \\(=\\) distance \\(\\div\\) speed.",
+          "keyPoints": [
+            {
+              "text": "\\(\\dfrac23\\) the speed of a motor bike",
+              "note": "The car goes at 2/3 of the bike's speed, so it needs 3/2 of the bike's time."
+            },
+            {
+              "text": "how many hours will the trip take the car",
+              "note": "Use the same 200 km distance for the car."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Speed of the motor bike: distance \\(\\div\\) time.",
+              "work": "\\(200\\div2=100\\text{ km/h}\\)"
+            },
+            {
+              "explain": "The car's speed is two thirds of the bike's speed.",
+              "work": "\\(\\dfrac23\\times100=\\dfrac{200}{3}\\text{ km/h}\\)"
+            },
+            {
+              "explain": "Time for the car: distance \\(\\div\\) speed.",
+              "work": "\\(200\\div\\dfrac{200}{3}=200\\times\\dfrac{3}{200}=\\boxed{3\\text{ hours}}\\)"
+            },
+            {
+              "explain": "Check with the shortcut: a car at \\(\\dfrac23\\) the speed takes \\(\\dfrac32\\) of the time: \\(\\dfrac32\\times2=3\\) hours. \\(\\checkmark\\)",
+              "work": "\\(\\dfrac32\\times2=3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 11,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q12",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Divide \\(\\$15.20\\) among three people so that the second will have one dollar more than the first, and the third will have \\(\\$2.70\\) more than the second. What is the greatest amount received?",
+          "options": [
+            "\\(\\$3.50\\)",
+            "\\(\\$4.50\\)",
+            "\\(\\$7.20\\)",
+            "\\(\\$8.20\\)"
+          ],
+          "answer": 2,
+          "hint": "Let the FIRST person get \\(x\\). Write the second and third amounts in terms of \\(x\\) (watch out: the third has \\(\\$2.70\\) more than the SECOND, not the first). The three amounts must add to \\(\\$15.20\\).",
+          "keyPoints": [
+            {
+              "text": "the third will have \\(\\$2.70\\) more than the second",
+              "note": "Third = second + 2.70 = (x + 1) + 2.70 = x + 3.70."
+            },
+            {
+              "text": "greatest amount received",
+              "note": "The answer is the amount of the third person."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Let the first person receive \\(x\\) dollars. The second has 1 more, and the third has 2.70 more than the second.",
+              "work": "\\(\\text{first}=x,\\quad\\text{second}=x+1,\\quad\\text{third}=x+1+2.70=x+3.70\\)"
+            },
+            {
+              "explain": "The three amounts add to \\(\\$15.20\\).",
+              "work": "\\(x+(x+1)+(x+3.70)=15.20\\)"
+            },
+            {
+              "explain": "Collect like terms: \\(3x+4.70=15.20\\). Subtract 4.70, then divide by 3.",
+              "work": "\\(3x=10.50\\Rightarrow x=3.50\\)"
+            },
+            {
+              "explain": "Find the three amounts.",
+              "work": "\\(3.50,\\quad4.50,\\quad7.20\\)"
+            },
+            {
+              "explain": "The greatest amount is the third person's.",
+              "work": "\\(\\boxed{\\$7.20}\\)"
+            },
+            {
+              "explain": "Check: \\(3.50+4.50+7.20=15.20\\). \\(\\checkmark\\)",
+              "work": "\\(3.50+4.50+7.20=15.20\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 12,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q13",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A class collected information about the number of children in each of their families. The information was displayed in a frequency chart, but you cannot see all the information. If the average number of children in a family was 3, what would be the number of families that has 2 children?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 270\" width=\"100%\" height=\"auto\" style=\"max-width:520px\">\n<line x1=\"110.0\" y1=\"220.0\" x2=\"444.8\" y2=\"220.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"102.0\" y=\"224.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">0</text>\n<line x1=\"110.0\" y1=\"184.0\" x2=\"444.8\" y2=\"184.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"102.0\" y=\"188.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">2</text>\n<line x1=\"110.0\" y1=\"148.0\" x2=\"444.8\" y2=\"148.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"102.0\" y=\"152.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">4</text>\n<line x1=\"110.0\" y1=\"112.0\" x2=\"444.8\" y2=\"112.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"102.0\" y=\"116.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">6</text>\n<line x1=\"110.0\" y1=\"76.0\" x2=\"444.8\" y2=\"76.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"102.0\" y=\"80.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">8</text>\n<line x1=\"110.0\" y1=\"40.0\" x2=\"444.8\" y2=\"40.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"102.0\" y=\"44.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">10</text>\n<line x1=\"110.0\" y1=\"220.0\" x2=\"444.8\" y2=\"220.0\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"110.0\" y1=\"220.0\" x2=\"110.0\" y2=\"22.0\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<text x=\"141.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1</text>\n<rect x=\"129.0\" y=\"202.0\" width=\"24.0\" height=\"18.0\" rx=\"0\" fill=\"#0e7490\" fill-opacity=\"1\" stroke=\"#164e63\" stroke-width=\"1.6\"/>\n<text x=\"203.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">2</text>\n<rect x=\"191.0\" y=\"61.6\" width=\"24.0\" height=\"158.4\" rx=\"0\" fill=\"#0e7490\" fill-opacity=\"1\" stroke=\"#164e63\" stroke-width=\"1.6\"/>\n<text x=\"265.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">3</text>\n<rect x=\"253.0\" y=\"130.0\" width=\"24.0\" height=\"90.0\" rx=\"0\" fill=\"#0e7490\" fill-opacity=\"1\" stroke=\"#164e63\" stroke-width=\"1.6\"/>\n<text x=\"327.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">4</text>\n<rect x=\"315.0\" y=\"112.0\" width=\"24.0\" height=\"108.0\" rx=\"0\" fill=\"#0e7490\" fill-opacity=\"1\" stroke=\"#164e63\" stroke-width=\"1.6\"/>\n<text x=\"389.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">5</text>\n<rect x=\"377.0\" y=\"166.0\" width=\"24.0\" height=\"54.0\" rx=\"0\" fill=\"#0e7490\" fill-opacity=\"1\" stroke=\"#164e63\" stroke-width=\"1.6\"/>\n<polygon points=\"102.0,22.0 444.8,22.0 444.8,52.6 227.8,59.8 102.0,41.8\" fill=\"#fef3c7\" fill-opacity=\"0.97\" stroke=\"#a16207\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/>\n<text x=\"277.4\" y=\"260.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">Number of children</text>\n<text x=\"48.0\" y=\"130.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">Number of</text>\n<text x=\"48.0\" y=\"143.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">families</text>\n</svg>"
+          },
+          "options": [
+            "\\(10\\)",
+            "\\(11\\)",
+            "\\(12\\)",
+            "\\(13\\)"
+          ],
+          "answer": 0,
+          "hint": "Read the visible bars: number of families (bar height) for 1, 3, 4 and 5 children. Find the total families and total children for these. Let \\(x\\) be the number of families with 2 children and use average \\(=\\) total children \\(\\div\\) total families.",
+          "keyPoints": [
+            {
+              "text": "average number of children in a family was 3",
+              "note": "Average = total number of children ÷ total number of families."
+            },
+            {
+              "text": "the number of families that has 2 children",
+              "note": "The bar for 2 children is hidden. Call its height x."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the visible bars. The height is the number of families: 1 child \\(\\to\\) 1 family, 3 children \\(\\to\\) 5 families, 4 children \\(\\to\\) 6 families, 5 children \\(\\to\\) 3 families.",
+              "work": "\\(1,\\ ?,\\ 5,\\ 6,\\ 3\\text{ families}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 270\" width=\"100%\" height=\"auto\" style=\"max-width:520px\">\n<line x1=\"110.0\" y1=\"220.0\" x2=\"444.8\" y2=\"220.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"102.0\" y=\"224.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">0</text>\n<line x1=\"110.0\" y1=\"184.0\" x2=\"444.8\" y2=\"184.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"102.0\" y=\"188.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">2</text>\n<line x1=\"110.0\" y1=\"148.0\" x2=\"444.8\" y2=\"148.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"102.0\" y=\"152.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">4</text>\n<line x1=\"110.0\" y1=\"112.0\" x2=\"444.8\" y2=\"112.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"102.0\" y=\"116.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">6</text>\n<line x1=\"110.0\" y1=\"76.0\" x2=\"444.8\" y2=\"76.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"102.0\" y=\"80.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">8</text>\n<line x1=\"110.0\" y1=\"40.0\" x2=\"444.8\" y2=\"40.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"102.0\" y=\"44.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">10</text>\n<line x1=\"110.0\" y1=\"220.0\" x2=\"444.8\" y2=\"220.0\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"110.0\" y1=\"220.0\" x2=\"110.0\" y2=\"22.0\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<text x=\"141.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1</text>\n<rect x=\"129.0\" y=\"202.0\" width=\"24.0\" height=\"18.0\" rx=\"0\" fill=\"#0e7490\" fill-opacity=\"1\" stroke=\"#164e63\" stroke-width=\"1.6\"/>\n<text x=\"203.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">2</text>\n<rect x=\"191.0\" y=\"61.6\" width=\"24.0\" height=\"158.4\" rx=\"0\" fill=\"#0e7490\" fill-opacity=\"1\" stroke=\"#164e63\" stroke-width=\"1.6\"/>\n<text x=\"265.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">3</text>\n<rect x=\"253.0\" y=\"130.0\" width=\"24.0\" height=\"90.0\" rx=\"0\" fill=\"#0e7490\" fill-opacity=\"1\" stroke=\"#164e63\" stroke-width=\"1.6\"/>\n<text x=\"327.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">4</text>\n<rect x=\"315.0\" y=\"112.0\" width=\"24.0\" height=\"108.0\" rx=\"0\" fill=\"#0e7490\" fill-opacity=\"1\" stroke=\"#164e63\" stroke-width=\"1.6\"/>\n<text x=\"389.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">5</text>\n<rect x=\"377.0\" y=\"166.0\" width=\"24.0\" height=\"54.0\" rx=\"0\" fill=\"#0e7490\" fill-opacity=\"1\" stroke=\"#164e63\" stroke-width=\"1.6\"/>\n<polygon points=\"102.0,22.0 444.8,22.0 444.8,52.6 227.8,59.8 102.0,41.8\" fill=\"#fef3c7\" fill-opacity=\"0.97\" stroke=\"#a16207\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/>\n<text x=\"277.4\" y=\"260.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">Number of children</text>\n<text x=\"48.0\" y=\"130.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">Number of</text>\n<text x=\"48.0\" y=\"143.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">families</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Families and children counted so far (multiply families by children in each bar).",
+              "work": "\\(\\text{families}=1+5+6+3=15,\\quad\\text{children}=1\\times1+5\\times3+6\\times4+3\\times5=55\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 300\" width=\"100%\" height=\"auto\" style=\"max-width:520px\">\n<line x1=\"110.0\" y1=\"220.0\" x2=\"444.8\" y2=\"220.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"102.0\" y=\"224.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">0</text>\n<line x1=\"110.0\" y1=\"184.0\" x2=\"444.8\" y2=\"184.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"102.0\" y=\"188.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">2</text>\n<line x1=\"110.0\" y1=\"148.0\" x2=\"444.8\" y2=\"148.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"102.0\" y=\"152.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">4</text>\n<line x1=\"110.0\" y1=\"112.0\" x2=\"444.8\" y2=\"112.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"102.0\" y=\"116.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">6</text>\n<line x1=\"110.0\" y1=\"76.0\" x2=\"444.8\" y2=\"76.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"102.0\" y=\"80.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">8</text>\n<line x1=\"110.0\" y1=\"40.0\" x2=\"444.8\" y2=\"40.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"102.0\" y=\"44.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">10</text>\n<line x1=\"110.0\" y1=\"220.0\" x2=\"444.8\" y2=\"220.0\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"110.0\" y1=\"220.0\" x2=\"110.0\" y2=\"22.0\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<text x=\"141.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1</text>\n<rect x=\"129.0\" y=\"202.0\" width=\"24.0\" height=\"18.0\" rx=\"0\" fill=\"#0e7490\" fill-opacity=\"1\" stroke=\"#164e63\" stroke-width=\"1.6\"/>\n<text x=\"141.0\" y=\"194.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\">1</text>\n<text x=\"203.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">2</text>\n<rect x=\"191.0\" y=\"112.0\" width=\"24.0\" height=\"108.0\" rx=\"0\" fill=\"#fde68a\" fill-opacity=\"1\" stroke=\"#ea580c\" stroke-width=\"2\" stroke-dasharray=\"5 3\"/>\n<text x=\"203.0\" y=\"104.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#ea580c\">?</text>\n<text x=\"265.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">3</text>\n<rect x=\"253.0\" y=\"130.0\" width=\"24.0\" height=\"90.0\" rx=\"0\" fill=\"#0e7490\" fill-opacity=\"1\" stroke=\"#164e63\" stroke-width=\"1.6\"/>\n<text x=\"265.0\" y=\"122.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\">5</text>\n<text x=\"327.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">4</text>\n<rect x=\"315.0\" y=\"112.0\" width=\"24.0\" height=\"108.0\" rx=\"0\" fill=\"#0e7490\" fill-opacity=\"1\" stroke=\"#164e63\" stroke-width=\"1.6\"/>\n<text x=\"327.0\" y=\"104.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\">6</text>\n<text x=\"389.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">5</text>\n<rect x=\"377.0\" y=\"166.0\" width=\"24.0\" height=\"54.0\" rx=\"0\" fill=\"#0e7490\" fill-opacity=\"1\" stroke=\"#164e63\" stroke-width=\"1.6\"/>\n<text x=\"389.0\" y=\"158.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\">3</text>\n<text x=\"277.4\" y=\"260.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">Number of children</text>\n<text x=\"48.0\" y=\"130.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">Number of</text>\n<text x=\"48.0\" y=\"143.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">families</text>\n<text x=\"260.0\" y=\"288.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\">visible: 1 + 5 + 6 + 3 = 15 families, 1×1 + 5×3 + 6×4 + 3×5 = 55 children</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Let \\(x\\) be the number of families with 2 children. They add \\(x\\) families and \\(2x\\) children. The average is 3.",
+              "work": "\\(\\dfrac{55+2x}{15+x}=3\\)"
+            },
+            {
+              "explain": "Multiply both sides by \\((15+x)\\) and expand.",
+              "work": "\\(55+2x=45+3x\\)"
+            },
+            {
+              "explain": "Collect the \\(x\\) terms.",
+              "work": "\\(x=55-45=\\boxed{10}\\)"
+            },
+            {
+              "explain": "Check: 25 families with \\(55+20=75\\) children altogether, and \\(75\\div25=3\\). \\(\\checkmark\\)",
+              "work": "\\(\\dfrac{75}{25}=3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 13,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "This design has one large square and two identical small squares. The design measures 36 centimetres by 28 centimetres. Calculate the area of the large square.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 320\" width=\"100%\" height=\"auto\" style=\"max-width:460px\">\n<line x1=\"40.0\" y1=\"250.0\" x2=\"430.0\" y2=\"250.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<polygon points=\"70.0,250.0 132.4,250.0 132.4,187.6 70.0,187.6\" fill=\"#fde68a\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<polygon points=\"288.4,250.0 350.8,250.0 350.8,187.6 288.4,187.6\" fill=\"#fde68a\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<polygon points=\"132.4,187.6 288.4,187.6 288.4,31.6 132.4,31.6\" fill=\"#fde68a\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<line x1=\"71.0\" y1=\"276.0\" x2=\"349.8\" y2=\"276.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"349.8\" y1=\"276.0\" x2=\"343.8\" y2=\"279.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"349.8\" y1=\"276.0\" x2=\"343.8\" y2=\"272.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"349.8\" y1=\"276.0\" x2=\"71.0\" y2=\"276.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"71.0\" y1=\"276.0\" x2=\"77.0\" y2=\"272.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"71.0\" y1=\"276.0\" x2=\"77.0\" y2=\"279.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<text x=\"210.4\" y=\"292.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#475569\">36 cm</text>\n<line x1=\"374.8\" y1=\"32.6\" x2=\"374.8\" y2=\"249.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"374.8\" y1=\"249.0\" x2=\"371.2\" y2=\"243.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"374.8\" y1=\"249.0\" x2=\"378.4\" y2=\"243.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"374.8\" y1=\"249.0\" x2=\"374.8\" y2=\"32.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"374.8\" y1=\"32.6\" x2=\"378.4\" y2=\"38.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"374.8\" y1=\"32.6\" x2=\"371.2\" y2=\"38.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<text x=\"380.8\" y=\"144.8\" text-anchor=\"start\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#475569\">28 cm</text>\n<line x1=\"288.4\" y1=\"31.6\" x2=\"374.8\" y2=\"31.6\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/>\n<text x=\"210.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" font-style=\"italic\">Not actual size</text>\n</svg>"
+          },
+          "options": [
+            "\\(64\\text{ cm}^2\\)",
+            "\\(400\\text{ cm}^2\\)",
+            "\\(784\\text{ cm}^2\\)",
+            "\\(1008\\text{ cm}^2\\)"
+          ],
+          "answer": 1,
+          "hint": "Let the side of the large square be \\(L\\) and the side of each small square be \\(s\\). Write one equation for the WIDTH (36) and one for the HEIGHT (28), then solve. Remember area \\(=\\) side \\(\\times\\) side.",
+          "keyPoints": [
+            {
+              "text": "one large square and two identical small squares",
+              "note": "Two unknown sides: L for the large square and s for each small square."
+            },
+            {
+              "text": "measures 36 centimetres by 28 centimetres",
+              "note": "Width 36 = s + L + s. Height 28 = L + s (large square sits on top of the gap)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Let the large square have side \\(L\\) and each small square have side \\(s\\). Across the bottom, a small square, the gap under the large square (which is as wide as the large square) and another small square make the width.",
+              "work": "\\(s+L+s=36\\Rightarrow L+2s=36\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 330\" width=\"100%\" height=\"auto\" style=\"max-width:460px\">\n<line x1=\"40.0\" y1=\"250.0\" x2=\"430.0\" y2=\"250.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<polygon points=\"70.0,250.0 132.4,250.0 132.4,187.6 70.0,187.6\" fill=\"#fde68a\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<polygon points=\"288.4,250.0 350.8,250.0 350.8,187.6 288.4,187.6\" fill=\"#fde68a\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<polygon points=\"132.4,187.6 288.4,187.6 288.4,31.6 132.4,31.6\" fill=\"#fde68a\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<line x1=\"71.0\" y1=\"276.0\" x2=\"349.8\" y2=\"276.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"349.8\" y1=\"276.0\" x2=\"343.8\" y2=\"279.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"349.8\" y1=\"276.0\" x2=\"343.8\" y2=\"272.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"349.8\" y1=\"276.0\" x2=\"71.0\" y2=\"276.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"71.0\" y1=\"276.0\" x2=\"77.0\" y2=\"272.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"71.0\" y1=\"276.0\" x2=\"77.0\" y2=\"279.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<text x=\"210.4\" y=\"292.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#475569\">36 cm</text>\n<line x1=\"374.8\" y1=\"32.6\" x2=\"374.8\" y2=\"249.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"374.8\" y1=\"249.0\" x2=\"371.2\" y2=\"243.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"374.8\" y1=\"249.0\" x2=\"378.4\" y2=\"243.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"374.8\" y1=\"249.0\" x2=\"374.8\" y2=\"32.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"374.8\" y1=\"32.6\" x2=\"378.4\" y2=\"38.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"374.8\" y1=\"32.6\" x2=\"371.2\" y2=\"38.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<text x=\"380.8\" y=\"144.8\" text-anchor=\"start\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#475569\">28 cm</text>\n<line x1=\"288.4\" y1=\"31.6\" x2=\"374.8\" y2=\"31.6\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/>\n<text x=\"210.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" font-style=\"italic\">Not actual size</text>\n<text x=\"101.2\" y=\"222.8\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#ea580c\" font-style=\"italic\">s</text>\n<text x=\"319.6\" y=\"222.8\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#ea580c\" font-style=\"italic\">s</text>\n<text x=\"210.4\" y=\"113.6\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"16\" font-weight=\"600\" fill=\"#2563eb\" font-style=\"italic\">L</text>\n<text x=\"235.0\" y=\"322.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\">L + s = 28,   s + L + s = 36</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "The height of the design is the large square on top of the height of a small square (the gap under the large square is as tall as a small square).",
+              "work": "\\(L+s=28\\)"
+            },
+            {
+              "explain": "Subtract the second equation from the first: the \\(L\\) terms cancel.",
+              "work": "\\((L+2s)-(L+s)=36-28\\Rightarrow s=8\\)"
+            },
+            {
+              "explain": "Find \\(L\\) from the height equation.",
+              "work": "\\(L=28-8=20\\text{ cm}\\)"
+            },
+            {
+              "explain": "Area of the large square.",
+              "work": "\\(20\\times20=\\boxed{400\\text{ cm}^2}\\)"
+            },
+            {
+              "explain": "Check: width \\(8+20+8=36\\) \\(\\checkmark\\) and height \\(20+8=28\\) \\(\\checkmark\\). The option 784 would need a side of 28 cm, which is the whole height.",
+              "work": "\\(8+20+8=36,\\quad20+8=28\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 14,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q15",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Here is a recipe for raspberry ice cream.\n\nJosie used 3.5 kg of raspberries. How much sugar does she use?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 210\" width=\"100%\" height=\"auto\" style=\"max-width:420px\">\n<rect x=\"100.0\" y=\"30.0\" width=\"220.0\" height=\"150.0\" rx=\"8\" fill=\"#fecdd3\" fill-opacity=\"0.85\" stroke=\"#9f1239\" stroke-width=\"2\"/>\n<rect x=\"100.0\" y=\"30.0\" width=\"220.0\" height=\"44.0\" rx=\"8\" fill=\"#e11d48\" fill-opacity=\"1\" stroke=\"#9f1239\" stroke-width=\"2\"/>\n<text x=\"210.0\" y=\"52.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"15\" font-weight=\"700\" fill=\"white\">Rasberry ice cream</text>\n<text x=\"210.0\" y=\"68.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"white\">for 8 people</text>\n<line x1=\"126.6\" y1=\"100.0\" x2=\"137.4\" y2=\"100.0\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<text x=\"132.0\" y=\"97.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">1</text>\n<text x=\"132.0\" y=\"112.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">2</text>\n<text x=\"146.0\" y=\"104.0\" text-anchor=\"start\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">litre of cream</text>\n<text x=\"124.0\" y=\"130.0\" text-anchor=\"start\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">1 kg rasberries</text>\n<text x=\"124.0\" y=\"156.0\" text-anchor=\"start\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">250 g sugar</text>\n</svg>"
+          },
+          "options": [
+            "\\(0.875\\text{ g}\\)",
+            "\\(2\\text{ kg}\\)",
+            "\\(4\\text{ kg}\\)",
+            "\\(0.875\\text{ kg}\\)"
+          ],
+          "answer": 3,
+          "hint": "Find how many TIMES the raspberries in the recipe (1 kg) she used, and multiply the sugar in the recipe (250 g) by that number. Look at the units in the options: g and kg! 1000 g = 1 kg.",
+          "keyPoints": [
+            {
+              "text": "3.5 kg of raspberries",
+              "note": "The recipe uses 1 kg, so Josie makes 3.5 times the recipe."
+            },
+            {
+              "text": "How much sugar",
+              "note": "Multiply the 250 g of sugar by 3.5, then check the units (g or kg)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The recipe uses 1 kg of raspberries. Josie used 3.5 kg, so she is making 3.5 times the recipe.",
+              "work": "\\(3.5\\div1=3.5\\text{ times}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 210\" width=\"100%\" height=\"auto\" style=\"max-width:420px\">\n<rect x=\"100.0\" y=\"30.0\" width=\"220.0\" height=\"150.0\" rx=\"8\" fill=\"#fecdd3\" fill-opacity=\"0.85\" stroke=\"#9f1239\" stroke-width=\"2\"/>\n<rect x=\"100.0\" y=\"30.0\" width=\"220.0\" height=\"44.0\" rx=\"8\" fill=\"#e11d48\" fill-opacity=\"1\" stroke=\"#9f1239\" stroke-width=\"2\"/>\n<text x=\"210.0\" y=\"52.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"15\" font-weight=\"700\" fill=\"white\">Rasberry ice cream</text>\n<text x=\"210.0\" y=\"68.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"white\">for 8 people</text>\n<line x1=\"126.6\" y1=\"100.0\" x2=\"137.4\" y2=\"100.0\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<text x=\"132.0\" y=\"97.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">1</text>\n<text x=\"132.0\" y=\"112.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">2</text>\n<text x=\"146.0\" y=\"104.0\" text-anchor=\"start\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">litre of cream</text>\n<text x=\"124.0\" y=\"130.0\" text-anchor=\"start\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">1 kg rasberries</text>\n<text x=\"124.0\" y=\"156.0\" text-anchor=\"start\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">250 g sugar</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "The recipe needs 250 g of sugar. Multiply by 3.5.",
+              "work": "\\(250\\times3.5=875\\text{ g}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 240\" width=\"100%\" height=\"auto\" style=\"max-width:420px\">\n<rect x=\"100.0\" y=\"30.0\" width=\"220.0\" height=\"150.0\" rx=\"8\" fill=\"#fecdd3\" fill-opacity=\"0.85\" stroke=\"#9f1239\" stroke-width=\"2\"/>\n<rect x=\"100.0\" y=\"30.0\" width=\"220.0\" height=\"44.0\" rx=\"8\" fill=\"#e11d48\" fill-opacity=\"1\" stroke=\"#9f1239\" stroke-width=\"2\"/>\n<text x=\"210.0\" y=\"52.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"15\" font-weight=\"700\" fill=\"white\">Rasberry ice cream</text>\n<text x=\"210.0\" y=\"68.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"white\">for 8 people</text>\n<line x1=\"126.6\" y1=\"100.0\" x2=\"137.4\" y2=\"100.0\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<text x=\"132.0\" y=\"97.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">1</text>\n<text x=\"132.0\" y=\"112.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">2</text>\n<text x=\"146.0\" y=\"104.0\" text-anchor=\"start\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">litre of cream</text>\n<text x=\"124.0\" y=\"130.0\" text-anchor=\"start\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">1 kg rasberries</text>\n<text x=\"124.0\" y=\"156.0\" text-anchor=\"start\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">250 g sugar</text>\n<text x=\"210.0\" y=\"206.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\">1 kg = 250 g sugar</text>\n<text x=\"210.0\" y=\"228.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\">3.5 kg = 3.5 × 250 g = 875 g = 0.875 kg</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "The options use kilograms, so change grams to kilograms by dividing by 1000.",
+              "work": "\\(875\\text{ g}=875\\div1000=\\boxed{0.875\\text{ kg}}\\)"
+            },
+            {
+              "explain": "Check: the option 0.875 g is 1000 times too small, and 2 kg or 4 kg are too large (sugar should be a bit less than 1 kg for 3.5 kg of raspberries). \\(\\checkmark\\)",
+              "work": "\\(3.5\\times0.25\\text{ kg}=0.875\\text{ kg}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 15,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q16",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "An abundant number is a positive integer whose factors (other than the number itself) have a sum greater than the number. Which number is not abundant?",
+          "options": [
+            "\\(18\\)",
+            "\\(12\\)",
+            "\\(16\\)",
+            "\\(24\\)"
+          ],
+          "answer": 2,
+          "hint": "For each option, list all the factors EXCEPT the number itself, add them up, and compare the sum with the number. The number that is NOT abundant has a factor sum that is NOT greater than the number.",
+          "keyPoints": [
+            {
+              "text": "factors (other than the number itself)",
+              "note": "Include 1 but do NOT include the number itself."
+            },
+            {
+              "text": "Which number is not abundant",
+              "note": "Find the one where the sum of the other factors is not bigger than the number."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Test 18. Factors other than 18: 1, 2, 3, 6, 9.",
+              "work": "\\(1+2+3+6+9=21\\gt18\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Test 12. Factors other than 12: 1, 2, 3, 4, 6.",
+              "work": "\\(1+2+3+4+6=16\\gt12\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Test 24. Factors other than 24: 1, 2, 3, 4, 6, 8, 12.",
+              "work": "\\(1+2+3+4+6+8+12=36\\gt24\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Test 16. Factors other than 16: 1, 2, 4, 8.",
+              "work": "\\(1+2+4+8=15\\lt16\\ \\times\\)"
+            },
+            {
+              "explain": "The sum 15 is less than 16, so 16 is not abundant.",
+              "work": "\\(\\boxed{16}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 16,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q17",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "One scoop of fish food can feed 7 fish for two days. How many fish can 6 scoops of fish food feed for a week?",
+          "options": [
+            "\\(12\\)",
+            "\\(9\\)",
+            "\\(15\\)",
+            "\\(6\\)"
+          ],
+          "answer": 0,
+          "hint": "First find how many fish the 6 scoops can feed for TWO days. A week is longer than two days, so the same food can feed FEWER fish for a week. Find how many times longer a week is than 2 days.",
+          "keyPoints": [
+            {
+              "text": "for two days",
+              "note": "1 scoop feeds 7 fish for 2 days."
+            },
+            {
+              "text": "for a week",
+              "note": "A week is 7 days, which is 3.5 times as long as 2 days."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "6 scoops feed 6 times as many fish as one scoop for two days.",
+              "work": "\\(6\\times7=42\\text{ fish for 2 days}\\)"
+            },
+            {
+              "explain": "A week (7 days) is longer than 2 days. How many times longer?",
+              "work": "\\(7\\div2=3.5\\text{ times as long}\\)"
+            },
+            {
+              "explain": "The same food lasts 3.5 times longer if there are 3.5 times FEWER fish, so divide by 3.5.",
+              "work": "\\(42\\div3.5=\\boxed{12\\text{ fish}}\\)"
+            },
+            {
+              "explain": "Check with fish-days: 6 scoops give \\(42\\times2=84\\) fish-days of food. For 7 days the number of fish is \\(84\\div7=12\\). \\(\\checkmark\\)",
+              "work": "\\(12\\times7=84\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 17,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A dozen balls cost you \\(\\$40\\). You get every fifth ball for free. How many balls do you get for \\(\\$100\\)?",
+          "options": [
+            "25 balls",
+            "31 balls",
+            "24 balls",
+            "36 balls"
+          ],
+          "answer": 1,
+          "hint": "Find the price of ONE ball you actually pay for. In 12 balls, the 5th and the 10th are free, so you pay for only 10 of them. Then find how many balls you pay for with \\(\\$100\\), and add the free ones (1 free ball for every 4 paid).",
+          "keyPoints": [
+            {
+              "text": "A dozen balls cost you \\(\\$40\\)",
+              "note": "A dozen is 12 balls, and 2 of them are free, so the \\(\\$40\\) pays for 10 balls."
+            },
+            {
+              "text": "every fifth ball for free",
+              "note": "For every 4 balls you pay for, you get a 5th one free."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "In a dozen balls the 5th and 10th balls are free, so you pay for 10 balls.",
+              "work": "\\(12-2=10\\text{ balls paid}\\)"
+            },
+            {
+              "explain": "The price of one paid ball.",
+              "work": "\\(\\$40\\div10=\\$4\\)"
+            },
+            {
+              "explain": "With \\(\\$100\\) you can pay for:",
+              "work": "\\(100\\div4=25\\text{ balls}\\)"
+            },
+            {
+              "explain": "For every 4 paid balls you get 1 free ball, so with 25 paid balls the free balls are:",
+              "work": "\\(25\\div4=6\\text{ free balls (remainder 1)}\\)"
+            },
+            {
+              "explain": "Add the paid and free balls.",
+              "work": "\\(25+6=\\boxed{31\\text{ balls}}\\)"
+            },
+            {
+              "explain": "Check: 31 balls have free balls at positions 5, 10, 15, 20, 25, 30, which is 6 free balls, so \\(31-6=25\\) paid balls costing \\(25\\times\\$4=\\$100\\). \\(\\checkmark\\)",
+              "work": "\\(25\\times4=100\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 18,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is the greatest number of cubes with a side length of 3 cm that can fit in this box?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 215\" width=\"100%\" height=\"auto\" style=\"max-width:420px\">\n<polygon points=\"70.0,150.0 230.0,150.0 230.0,70.0 70.0,70.0\" fill=\"#93c5fd\" fill-opacity=\"0.9\" stroke=\"#1e40af\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<polygon points=\"70.0,70.0 230.0,70.0 258.8,46.0 98.8,46.0\" fill=\"#bfdbfe\" fill-opacity=\"0.9\" stroke=\"#1e40af\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<polygon points=\"230.0,150.0 258.8,126.0 258.8,46.0 230.0,70.0\" fill=\"#60a5fa\" fill-opacity=\"0.9\" stroke=\"#1e40af\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<line x1=\"71.0\" y1=\"174.0\" x2=\"229.0\" y2=\"174.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"229.0\" y1=\"174.0\" x2=\"223.0\" y2=\"177.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"229.0\" y1=\"174.0\" x2=\"223.0\" y2=\"170.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"229.0\" y1=\"174.0\" x2=\"71.0\" y2=\"174.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"71.0\" y1=\"174.0\" x2=\"77.0\" y2=\"170.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"71.0\" y1=\"174.0\" x2=\"77.0\" y2=\"177.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<text x=\"150.0\" y=\"190.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#475569\">20 cm</text>\n<text x=\"266.8\" y=\"110.0\" text-anchor=\"start\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#475569\" font-style=\"italic\">10 cm</text>\n<text x=\"258.4\" y=\"168.0\" text-anchor=\"start\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#475569\" font-style=\"italic\">6 cm</text>\n</svg>"
+          },
+          "options": [
+            "\\(44\\)",
+            "\\(36\\)",
+            "\\(40\\)",
+            "\\(32\\)"
+          ],
+          "answer": 1,
+          "hint": "Do NOT divide the volumes (the cubes cannot be cut up to fill every gap). Instead find how many whole cubes fit along each edge of the box (length, width and height separately), then multiply the three numbers.",
+          "keyPoints": [
+            {
+              "text": "greatest number of cubes",
+              "note": "Count whole cubes along each edge: leftover space cannot hold a whole cube."
+            },
+            {
+              "text": "side length of 3 cm",
+              "note": "Each cube is 3 cm by 3 cm by 3 cm."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Along the 20 cm length: \\(20\\div3=6\\) remainder 2, so 6 cubes fit (the leftover 2 cm is wasted).",
+              "work": "\\(6\\text{ cubes}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 215\" width=\"100%\" height=\"auto\" style=\"max-width:420px\">\n<polygon points=\"70.0,150.0 230.0,150.0 230.0,70.0 70.0,70.0\" fill=\"#93c5fd\" fill-opacity=\"0.9\" stroke=\"#1e40af\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<polygon points=\"70.0,70.0 230.0,70.0 258.8,46.0 98.8,46.0\" fill=\"#bfdbfe\" fill-opacity=\"0.9\" stroke=\"#1e40af\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<polygon points=\"230.0,150.0 258.8,126.0 258.8,46.0 230.0,70.0\" fill=\"#60a5fa\" fill-opacity=\"0.9\" stroke=\"#1e40af\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<line x1=\"71.0\" y1=\"174.0\" x2=\"229.0\" y2=\"174.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"229.0\" y1=\"174.0\" x2=\"223.0\" y2=\"177.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"229.0\" y1=\"174.0\" x2=\"223.0\" y2=\"170.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"229.0\" y1=\"174.0\" x2=\"71.0\" y2=\"174.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"71.0\" y1=\"174.0\" x2=\"77.0\" y2=\"170.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"71.0\" y1=\"174.0\" x2=\"77.0\" y2=\"177.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<text x=\"150.0\" y=\"190.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#475569\">20 cm</text>\n<text x=\"266.8\" y=\"110.0\" text-anchor=\"start\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#475569\" font-style=\"italic\">10 cm</text>\n<text x=\"258.4\" y=\"168.0\" text-anchor=\"start\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#475569\" font-style=\"italic\">6 cm</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Along the 6 cm width: \\(6\\div3=2\\), so 2 cubes fit.",
+              "work": "\\(2\\text{ cubes}\\)"
+            },
+            {
+              "explain": "Along the 10 cm height: \\(10\\div3=3\\) remainder 1, so 3 cubes fit.",
+              "work": "\\(3\\text{ cubes}\\)"
+            },
+            {
+              "explain": "Multiply the number of cubes along the three edges.",
+              "work": "\\(6\\times2\\times3=\\boxed{36}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 240\" width=\"100%\" height=\"auto\" style=\"max-width:420px\">\n<polygon points=\"70.0,150.0 230.0,150.0 230.0,70.0 70.0,70.0\" fill=\"#93c5fd\" fill-opacity=\"0.9\" stroke=\"#1e40af\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<polygon points=\"70.0,70.0 230.0,70.0 258.8,46.0 98.8,46.0\" fill=\"#bfdbfe\" fill-opacity=\"0.9\" stroke=\"#1e40af\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<polygon points=\"230.0,150.0 258.8,126.0 258.8,46.0 230.0,70.0\" fill=\"#60a5fa\" fill-opacity=\"0.9\" stroke=\"#1e40af\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<line x1=\"71.0\" y1=\"174.0\" x2=\"229.0\" y2=\"174.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"229.0\" y1=\"174.0\" x2=\"223.0\" y2=\"177.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"229.0\" y1=\"174.0\" x2=\"223.0\" y2=\"170.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"229.0\" y1=\"174.0\" x2=\"71.0\" y2=\"174.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"71.0\" y1=\"174.0\" x2=\"77.0\" y2=\"170.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"71.0\" y1=\"174.0\" x2=\"77.0\" y2=\"177.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<text x=\"150.0\" y=\"190.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#475569\">20 cm</text>\n<text x=\"266.8\" y=\"110.0\" text-anchor=\"start\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#475569\" font-style=\"italic\">10 cm</text>\n<text x=\"258.4\" y=\"168.0\" text-anchor=\"start\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#475569\" font-style=\"italic\">6 cm</text>\n<text x=\"210.0\" y=\"232.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\">20 ÷ 3 = 6 r 2,  6 ÷ 3 = 2,  10 ÷ 3 = 3 r 1:  6 × 2 × 3 = 36 cubes</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Check the wrong idea: dividing volumes gives \\(\\dfrac{20\\times6\\times10}{27}=\\dfrac{1200}{27}\\approx44.4\\), but only 36 whole cubes can actually fit. \\(\\checkmark\\)",
+              "work": "\\(36\\lt44.4\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 19,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Americans measure the temperature in \\(^\\circ\\text{F}\\). Australians measure the temperature in \\(^\\circ\\text{C}\\). The formula to convert Fahrenheit to Celsius is \\(C=\\dfrac{5\\times(F-32)}{9}\\) where F represents the temperature in \\(^\\circ\\text{F}\\) and C represents the temperature in \\(^\\circ\\text{C}\\). What is the temperature in \\(^\\circ\\text{F}\\) when it is \\(20^\\circ\\text{C}\\)?",
+          "options": [
+            "\\(58^\\circ\\text{F}\\)",
+            "\\(8^\\circ\\text{F}\\)",
+            "\\(68^\\circ\\text{F}\\)",
+            "\\(88^\\circ\\text{F}\\)"
+          ],
+          "answer": 2,
+          "hint": "Put \\(C=20\\) into the formula and solve for \\(F\\). Undo the operations in reverse order: multiply by 9, divide by 5, then add 32.",
+          "keyPoints": [
+            {
+              "text": "\\(C=\\dfrac{5\\times(F-32)}{9}\\)",
+              "note": "Replace C with 20 and solve for F step by step."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Substitute \\(C=20\\) into the formula.",
+              "work": "\\(20=\\dfrac{5\\times(F-32)}{9}\\)"
+            },
+            {
+              "explain": "Multiply both sides by 9 to remove the fraction.",
+              "work": "\\(180=5\\times(F-32)\\)"
+            },
+            {
+              "explain": "Divide both sides by 5.",
+              "work": "\\(36=F-32\\)"
+            },
+            {
+              "explain": "Add 32 to both sides.",
+              "work": "\\(F=36+32=\\boxed{68}\\)"
+            },
+            {
+              "explain": "Check: \\(F=68\\) gives \\(C=\\dfrac{5\\times(68-32)}{9}=\\dfrac{5\\times36}{9}=\\dfrac{180}{9}=20\\). \\(\\checkmark\\)",
+              "work": "\\(\\dfrac{5\\times36}{9}=20\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 20,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q21",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Four sisters are all 3 years apart in age. The total of their ages is equal to 26 years. How old is the eldest sister?",
+          "options": [
+            "\\(10\\)",
+            "\\(11\\)",
+            "\\(12\\)",
+            "\\(13\\)"
+          ],
+          "answer": 1,
+          "hint": "The sisters' ages are the youngest's age, then 3 more, 6 more, and 9 more. Add the extra years first, take them away from 26, and share the rest equally between the four sisters.",
+          "keyPoints": [
+            {
+              "text": "all 3 years apart in age",
+              "note": "Each sister is 3 years older than the next younger one: +0, +3, +6, +9."
+            },
+            {
+              "text": "How old is the eldest sister",
+              "note": "The eldest is the youngest's age plus 9."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Let the youngest be \\(x\\) years old. The ages are \\(x\\), \\(x+3\\), \\(x+6\\) and \\(x+9\\).",
+              "work": "\\(x,\\ x+3,\\ x+6,\\ x+9\\)"
+            },
+            {
+              "explain": "The ages add up to 26.",
+              "work": "\\(4x+3+6+9=26\\Rightarrow4x+18=26\\)"
+            },
+            {
+              "explain": "Subtract 18, then divide by 4.",
+              "work": "\\(4x=8\\Rightarrow x=2\\)"
+            },
+            {
+              "explain": "The eldest sister is 9 years older than the youngest.",
+              "work": "\\(2+9=\\boxed{11}\\)"
+            },
+            {
+              "explain": "Check: the ages are 2, 5, 8, 11 and \\(2+5+8+11=26\\). \\(\\checkmark\\)",
+              "work": "\\(2+5+8+11=26\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 21,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q22",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Alannah needs six tacks to fix two rectangular pictures because she can overlap the pictures. What is the number of tacks she needs to tack 120 pictures if she continues to hang the pictures horizontally?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 150\" width=\"100%\" height=\"auto\" style=\"max-width:420px\">\n<rect x=\"40.0\" y=\"30.0\" width=\"150.0\" height=\"80.0\" rx=\"0\" fill=\"#fcd34d\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.6\"/>\n<rect x=\"160.0\" y=\"30.0\" width=\"190.0\" height=\"80.0\" rx=\"0\" fill=\"#60a5fa\" fill-opacity=\"0.9\" stroke=\"#475569\" stroke-width=\"1.6\"/>\n<rect x=\"160.0\" y=\"30.0\" width=\"30.0\" height=\"80.0\" rx=\"0\" fill=\"#a3b18a\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n</svg>"
+          },
+          "options": [
+            "\\(480\\)",
+            "\\(240\\)",
+            "\\(242\\)",
+            "\\(243\\)"
+          ],
+          "answer": 2,
+          "hint": "Find a pattern. The first picture needs 4 tacks (one in each corner). Each new overlapping picture shares its left edge with the picture before it, so it only needs 2 NEW tacks. Look for a formula (tacks \\(=\\) 2 \\(\\times\\) number of pictures + something).",
+          "keyPoints": [
+            {
+              "text": "six tacks to fix two rectangular pictures",
+              "note": "The overlap lets two pictures share 2 tacks: 2 pictures need 6 tacks, not 8."
+            },
+            {
+              "text": "120 pictures",
+              "note": "Use the pattern to find the number of tacks for 120 pictures."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "For 1 picture 4 tacks are needed (the four corners). For 2 overlapping pictures 6 tacks are needed (the red dots). Each extra picture adds only the 2 tacks on its far edge, because its near edge shares the tacks of the previous picture.",
+              "work": "\\(1\\text{ picture}:4,\\quad2\\text{ pictures}:6,\\quad3\\text{ pictures}:8\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 200\" width=\"100%\" height=\"auto\" style=\"max-width:420px\">\n<rect x=\"40.0\" y=\"30.0\" width=\"150.0\" height=\"80.0\" rx=\"0\" fill=\"#fcd34d\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.6\"/>\n<rect x=\"160.0\" y=\"30.0\" width=\"190.0\" height=\"80.0\" rx=\"0\" fill=\"#60a5fa\" fill-opacity=\"0.9\" stroke=\"#475569\" stroke-width=\"1.6\"/>\n<rect x=\"160.0\" y=\"30.0\" width=\"30.0\" height=\"80.0\" rx=\"0\" fill=\"#a3b18a\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<circle cx=\"40.0\" cy=\"30.0\" r=\"4.5\" fill=\"#dc2626\"/>\n<circle cx=\"40.0\" cy=\"110.0\" r=\"4.5\" fill=\"#dc2626\"/>\n<circle cx=\"175.0\" cy=\"30.0\" r=\"4.5\" fill=\"#dc2626\"/>\n<circle cx=\"175.0\" cy=\"110.0\" r=\"4.5\" fill=\"#dc2626\"/>\n<circle cx=\"350.0\" cy=\"30.0\" r=\"4.5\" fill=\"#dc2626\"/>\n<circle cx=\"350.0\" cy=\"110.0\" r=\"4.5\" fill=\"#dc2626\"/>\n<text x=\"210.0\" y=\"136.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\">2 pictures = 6 tacks:  2 × 2 + 2</text>\n<text x=\"210.0\" y=\"160.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">each extra picture adds 2 tacks</text>\n<text x=\"210.0\" y=\"184.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#16a34a\">120 pictures = 120 × 2 + 2 = 242 tacks</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "The pattern: the number of tacks is 2 for each picture, plus 2 extra for the very first edge.",
+              "work": "\\(\\text{tacks}=2\\times\\text{pictures}+2\\)"
+            },
+            {
+              "explain": "Test the pattern: 2 pictures give \\(2\\times2+2=6\\) tacks. \\(\\checkmark\\)",
+              "work": "\\(2\\times2+2=6\\)"
+            },
+            {
+              "explain": "For 120 pictures.",
+              "work": "\\(2\\times120+2=\\boxed{242}\\)"
+            },
+            {
+              "explain": "Check: the option 240 forgets the 2 extra tacks on the first edge, and 480 treats every picture as if it needed 4 tacks of its own. \\(\\checkmark\\)",
+              "work": "\\(120\\times2=240,\\quad240+2=242\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 22,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q23",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simone cut a cake into two halves and then one half into smaller pieces of equal size. Each of the small pieces is one hundred and twenty grams in weight. If she has eight pieces of the cake altogether, how heavy was the original cake?",
+          "options": [
+            "\\(15\\text{ g}\\)",
+            "\\(240\\text{ g}\\)",
+            "\\(960\\text{ g}\\)",
+            "\\(1680\\text{ g}\\)"
+          ],
+          "answer": 3,
+          "hint": "Count carefully: she has 8 pieces ALTOGETHER. One of the pieces is the uncut half; the other pieces are the small ones. Find the weight of the half cake, then double it.",
+          "keyPoints": [
+            {
+              "text": "one half into smaller pieces",
+              "note": "Only ONE half was cut into small pieces. The other half is still one big piece."
+            },
+            {
+              "text": "eight pieces of the cake altogether",
+              "note": "8 pieces = 1 uncut half + 7 small pieces."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "She has 8 pieces altogether. One piece is the uncut half, so the cut half is made of the other pieces.",
+              "work": "\\(8-1=7\\text{ small pieces}\\)"
+            },
+            {
+              "explain": "Each small piece weighs 120 g, so the cut half weighs:",
+              "work": "\\(7\\times120=840\\text{ g}\\)"
+            },
+            {
+              "explain": "The other half is the same weight, so the whole cake is double.",
+              "work": "\\(2\\times840=\\boxed{1680\\text{ g}}\\)"
+            },
+            {
+              "explain": "Check: the uncut half is 840 g, the 7 small pieces make 840 g, and \\(840+840=1680\\). The option 960 would come from 8 pieces of 120 g, which wrongly treats the uncut half as a small piece. \\(\\checkmark\\)",
+              "work": "\\(8\\times120=960\\ne1680\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 23,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q24",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "When a number is divided by half and the result is subtracted 44 the answer is 44. What is the number?",
+          "options": [
+            "\\(44\\)",
+            "\\(88\\)",
+            "\\(66\\)",
+            "There is no answer"
+          ],
+          "answer": 0,
+          "hint": "“Divided by half” means \\(\\div\\dfrac12\\), which makes the number TWICE as big. Write an equation and undo the steps in reverse order.",
+          "keyPoints": [
+            {
+              "text": "divided by half",
+              "note": "Dividing by one half is the same as multiplying by 2 (how many halves fit into the number)."
+            },
+            {
+              "text": "subtracted 44 the answer is 44",
+              "note": "After dividing, take away 44 and the result is 44."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Let the number be \\(n\\). Dividing by \\(\\dfrac12\\) gives \\(n\\div\\dfrac12=2n\\). Then 44 is subtracted and the answer is 44.",
+              "work": "\\(2n-44=44\\)"
+            },
+            {
+              "explain": "Add 44 to both sides.",
+              "work": "\\(2n=88\\)"
+            },
+            {
+              "explain": "Divide both sides by 2.",
+              "work": "\\(n=\\boxed{44}\\)"
+            },
+            {
+              "explain": "Check: \\(44\\div\\dfrac12=88\\), and \\(88-44=44\\). \\(\\checkmark\\) The option 88 is \\(2n\\), the number AFTER dividing by half.",
+              "work": "\\(44\\div\\dfrac12-44=44\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 24,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q25",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Peter took 2 Maths tests. There were 40 questions in Test 1. In Test 2 Peter got 23 correct and 7 incorrect. When the results from both tests were added together Peter got 18 more questions correct than incorrect. How many questions did Peter get correct in Test 1?",
+          "options": [
+            "\\(19\\)",
+            "\\(21\\)",
+            "\\(30\\)",
+            "\\(26\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the total number of questions in both tests, then use “correct \\(-\\) incorrect \\(=\\) 18” together with “correct \\(+\\) incorrect \\(=\\) total” to find the TOTAL correct. Then take away the correct answers from Test 2.",
+          "keyPoints": [
+            {
+              "text": "23 correct and 7 incorrect",
+              "note": "Test 2 has 23 + 7 = 30 questions."
+            },
+            {
+              "text": "18 more questions correct than incorrect",
+              "note": "Total correct − total incorrect = 18, for both tests together."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Total number of questions in both tests: Test 1 has 40 and Test 2 has \\(23+7=30\\).",
+              "work": "\\(40+30=70\\)"
+            },
+            {
+              "explain": "Let \\(C\\) be the total correct and \\(I\\) the total incorrect. Then \\(C+I=70\\) and \\(C-I=18\\). Add the two equations.",
+              "work": "\\(2C=88\\Rightarrow C=44\\)"
+            },
+            {
+              "explain": "So 44 questions were correct altogether. Test 2 had 23 correct, so Test 1 had the rest.",
+              "work": "\\(44-23=\\boxed{21}\\)"
+            },
+            {
+              "explain": "Check: Test 1 has 21 correct and 19 incorrect. Totals: correct \\(21+23=44\\), incorrect \\(19+7=26\\), and \\(44-26=18\\). \\(\\checkmark\\)",
+              "work": "\\(44-26=18\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 25,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q26",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A rectangular container, 15 cm long, 10 cm wide and 12 cm high, holds water to a depth of 4 cm. When a stone of volume \\(300\\text{ cm}^3\\) is placed in the water, the water level rises. What is the new height of the water level?",
+          "options": [
+            "\\(10\\text{ cm}\\)",
+            "\\(9\\text{ cm}\\)",
+            "\\(8\\text{ cm}\\)",
+            "\\(6\\text{ cm}\\)"
+          ],
+          "answer": 3,
+          "hint": "The stone pushes up the water level. The volume of water it pushes aside equals the volume of the stone. Find how far a volume of 300 cm\\(^3\\) raises the level over the base of the container (15 cm by 10 cm). Remember to ADD this rise to the 4 cm already there.",
+          "keyPoints": [
+            {
+              "text": "a stone of volume \\(300\\text{ cm}^3\\)",
+              "note": "The water rises by a volume equal to the stone: 300 cm³ spread over the base."
+            },
+            {
+              "text": "What is the new height",
+              "note": "New height = old depth (4 cm) + rise."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The base of the container is 15 cm by 10 cm. Find its area.",
+              "work": "\\(15\\times10=150\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "The stone raises the water over the whole base. Rise \\(=\\) volume \\(\\div\\) base area.",
+              "work": "\\(300\\div150=2\\text{ cm}\\)"
+            },
+            {
+              "explain": "The water was 4 cm deep, so the new depth is 2 cm more.",
+              "work": "\\(4+2=\\boxed{6\\text{ cm}}\\)"
+            },
+            {
+              "explain": "Check: the container is 12 cm high, so 6 cm is allowed. New volume of water plus stone \\(=150\\times4+300=900\\), and \\(150\\times6=900\\). \\(\\checkmark\\)",
+              "work": "\\(600+300=900=150\\times6\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 26,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q27",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "By examining the numbers below, find the last digit of \\(3^{2003}\\).\n\n\\(3^1=3\\)\n\\(3^2=9\\)\n\\(3^3=27\\)\n\\(3^4=81\\)\n\\(3^5=243\\)\n\\(3^6=729\\)",
+          "options": [
+            "\\(1\\)",
+            "\\(7\\)",
+            "\\(9\\)",
+            "\\(2\\)"
+          ],
+          "answer": 1,
+          "hint": "Look at the LAST digits of the powers: 3, 9, 7, 1, 3, 9, ... They repeat in a cycle. Find the length of the cycle and use the remainder when 2003 is divided by it.",
+          "keyPoints": [
+            {
+              "text": "\\(3^{2003}\\)",
+              "note": "You do not need to calculate the number: only its last digit, using the repeating pattern."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "List the last digits of the powers of 3: \\(3^1\\to3\\), \\(3^2\\to9\\), \\(3^3\\to7\\), \\(3^4\\to1\\), \\(3^5\\to3\\), \\(3^6\\to9\\), ... The pattern 3, 9, 7, 1 repeats every 4 powers.",
+              "work": "\\(3,\\ 9,\\ 7,\\ 1,\\ 3,\\ 9,\\ 7,\\ 1,\\ \\ldots\\)"
+            },
+            {
+              "explain": "Divide the power 2003 by the length of the cycle, 4, and look at the remainder.",
+              "work": "\\(2003\\div4=500\\text{ remainder }3\\)"
+            },
+            {
+              "explain": "The remainder 3 means the last digit is the 3rd one in the cycle 3, 9, 7, 1, which is 7.",
+              "work": "\\(\\boxed{7}\\)"
+            },
+            {
+              "explain": "Check with smaller powers: \\(3^3=27\\) ends in 7 and 3 is the remainder of \\(3\\div4\\); \\(3^7=2187\\) also ends in 7 (and 7 has remainder 3 when divided by 4). \\(\\checkmark\\)",
+              "work": "\\(3^7=2187\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 27,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q28",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In the sketch below, the vase on the left has dimensions 12 cm x 10 cm x 15 cm. It is filled two-thirds with water. The water is then transferred to the vase of cylindrical shape on the right. The circular base area is \\(90\\text{ cm}^2\\). Find the depth of the water in the second vase.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 262\" width=\"100%\" height=\"auto\" style=\"max-width:520px\">\n<polygon points=\"40.0,200.0 172.0,200.0 172.0,35.0 40.0,35.0\" fill=\"#bae6fd\" fill-opacity=\"0.7\" stroke=\"#0369a1\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<polygon points=\"40.0,35.0 172.0,35.0 221.5,-4.6 89.5,-4.6\" fill=\"#e0f2fe\" fill-opacity=\"0.8\" stroke=\"#0369a1\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<polygon points=\"172.0,200.0 221.5,160.4 221.5,-4.6 172.0,35.0\" fill=\"#7dd3fc\" fill-opacity=\"0.7\" stroke=\"#0369a1\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<text x=\"106.0\" y=\"220.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">12</text>\n<text x=\"235.5\" y=\"117.5\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">15</text>\n<text x=\"210.8\" y=\"194.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">10</text>\n<path d=\"M 364 50 L 364 200 A 36 12 0 0 0 436 200 L 436 50\" fill=\"#bae6fd\" fill-opacity=\".7\" stroke=\"#0369a1\" stroke-width=\"2\"/>\n<ellipse cx=\"400\" cy=\"50\" rx=\"36\" ry=\"12\" fill=\"#e0f2fe\" stroke=\"#0369a1\" stroke-width=\"2\"/>\n<text x=\"400.0\" y=\"234.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">Base area = 90 cm²</text>\n</svg>"
+          },
+          "options": [
+            "\\(10\\text{ cm}\\)",
+            "\\(13\\dfrac13\\text{ cm}\\)",
+            "\\(20\\text{ cm}\\)",
+            "\\(26\\dfrac13\\text{ cm}\\)"
+          ],
+          "answer": 1,
+          "hint": "The VOLUME of water stays the same when it is poured into the second vase. Find the volume of water in the first vase (two thirds of the box volume), then use volume \\(=\\) base area \\(\\times\\) depth for the cylinder.",
+          "keyPoints": [
+            {
+              "text": "filled two-thirds with water",
+              "note": "Water volume = 2/3 of the volume of the box."
+            },
+            {
+              "text": "Find the depth of the water in the second vase",
+              "note": "depth = volume ÷ base area (90 cm²)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Volume of the first vase (a box): length \\(\\times\\) width \\(\\times\\) height.",
+              "work": "\\(12\\times10\\times15=1800\\text{ cm}^3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 262\" width=\"100%\" height=\"auto\" style=\"max-width:520px\">\n<polygon points=\"40.0,200.0 172.0,200.0 172.0,35.0 40.0,35.0\" fill=\"#bae6fd\" fill-opacity=\"0.7\" stroke=\"#0369a1\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<polygon points=\"40.0,35.0 172.0,35.0 221.5,-4.6 89.5,-4.6\" fill=\"#e0f2fe\" fill-opacity=\"0.8\" stroke=\"#0369a1\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<polygon points=\"172.0,200.0 221.5,160.4 221.5,-4.6 172.0,35.0\" fill=\"#7dd3fc\" fill-opacity=\"0.7\" stroke=\"#0369a1\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<text x=\"106.0\" y=\"220.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">12</text>\n<text x=\"235.5\" y=\"117.5\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">15</text>\n<text x=\"210.8\" y=\"194.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">10</text>\n<path d=\"M 364 50 L 364 200 A 36 12 0 0 0 436 200 L 436 50\" fill=\"#bae6fd\" fill-opacity=\".7\" stroke=\"#0369a1\" stroke-width=\"2\"/>\n<ellipse cx=\"400\" cy=\"50\" rx=\"36\" ry=\"12\" fill=\"#e0f2fe\" stroke=\"#0369a1\" stroke-width=\"2\"/>\n<text x=\"400.0\" y=\"234.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">Base area = 90 cm²</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "It is filled two-thirds with water.",
+              "work": "\\(\\dfrac23\\times1800=1200\\text{ cm}^3\\)"
+            },
+            {
+              "explain": "The same 1200 cm\\(^3\\) of water is poured into the cylinder. Volume \\(=\\) base area \\(\\times\\) depth.",
+              "work": "\\(90\\times\\text{depth}=1200\\)"
+            },
+            {
+              "explain": "Divide both sides by 90.",
+              "work": "\\(\\text{depth}=1200\\div90=\\dfrac{40}{3}=\\boxed{13\\dfrac13\\text{ cm}}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 285\" width=\"100%\" height=\"auto\" style=\"max-width:520px\">\n<polygon points=\"40.0,200.0 172.0,200.0 172.0,35.0 40.0,35.0\" fill=\"#bae6fd\" fill-opacity=\"0.7\" stroke=\"#0369a1\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<polygon points=\"40.0,35.0 172.0,35.0 221.5,-4.6 89.5,-4.6\" fill=\"#e0f2fe\" fill-opacity=\"0.8\" stroke=\"#0369a1\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<polygon points=\"172.0,200.0 221.5,160.4 221.5,-4.6 172.0,35.0\" fill=\"#7dd3fc\" fill-opacity=\"0.7\" stroke=\"#0369a1\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<rect x=\"40.0\" y=\"90.0\" width=\"132.0\" height=\"110.0\" rx=\"0\" fill=\"#38bdf8\" fill-opacity=\"0.55\" stroke=\"none\" stroke-width=\"0\"/>\n<text x=\"106.0\" y=\"220.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">12</text>\n<text x=\"235.5\" y=\"117.5\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">15</text>\n<text x=\"210.8\" y=\"194.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">10</text>\n<path d=\"M 364 50 L 364 200 A 36 12 0 0 0 436 200 L 436 50\" fill=\"#bae6fd\" fill-opacity=\".7\" stroke=\"#0369a1\" stroke-width=\"2\"/>\n<ellipse cx=\"400\" cy=\"50\" rx=\"36\" ry=\"12\" fill=\"#e0f2fe\" stroke=\"#0369a1\" stroke-width=\"2\"/>\n<text x=\"400.0\" y=\"234.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">Base area = 90 cm²</text>\n<text x=\"448.0\" y=\"140.0\" text-anchor=\"start\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\">13 1/3 cm</text>\n<text x=\"260.0\" y=\"276.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\">water: 2/3 of 1800 = 1200 cm³, depth = 1200 ÷ 90</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Check: \\(90\\times13\\dfrac13=90\\times13+90\\times\\dfrac13=1170+30=1200\\). \\(\\checkmark\\)",
+              "work": "\\(1170+30=1200\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 28,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q29",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "What is the smallest integer that can be written entirely with zeros and ones and is evenly divisible by 15?",
+          "options": [
+            "\\(11110\\)",
+            "\\(10011\\)",
+            "\\(11101\\)",
+            "\\(10110\\)"
+          ],
+          "answer": 3,
+          "hint": "\\(15=3\\times5\\), so the number must be divisible by BOTH 3 and 5. A number divisible by 5 ends in 0 or 5; since only 0 and 1 may be used, it must end in 0. A number divisible by 3 has a digit sum that is a multiple of 3.",
+          "keyPoints": [
+            {
+              "text": "evenly divisible by 15",
+              "note": "Divisible by 15 means divisible by 3 and by 5 at the same time."
+            },
+            {
+              "text": "written entirely with zeros and ones",
+              "note": "Only the digits 0 and 1 can appear, so the digit sum is just the number of 1s."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "A number divisible by 5 must end in 0 or 5. With only the digits 0 and 1 allowed, the last digit must be 0.",
+              "work": "\\(\\text{last digit}=0\\)"
+            },
+            {
+              "explain": "A number divisible by 3 has a digit sum that is a multiple of 3. With only 0s and 1s, the digit sum is the number of 1s, so there must be 3 (or 6, ...) ones.",
+              "work": "\\(\\text{number of 1s}=3\\)"
+            },
+            {
+              "explain": "Check the options for these two rules. Option A, 11110, has four 1s (digit sum 4). Option B, 10011, and option C, 11101, end in 1. Option D, 10110, ends in 0 and has three 1s.",
+              "work": "\\(1+0+1+1+0=3\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Test by dividing: \\(10110\\div15=674\\), so option D is divisible by 15.",
+              "work": "\\(15\\times674=\\boxed{10110}\\)"
+            },
+            {
+              "explain": "So among the choices, only 10110 is divisible by 15. (A smaller number such as 1110 also works, but it is not one of the choices.)",
+              "work": "\\(10110\\div15=674,\\quad11110\\div15=740.67\\ldots\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 29,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q30",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "James and Angela have the same amount of money. How much must James give to Angela so that she has forty more than he?",
+          "options": [
+            "\\(\\$40\\)",
+            "\\(\\$20\\)",
+            "\\(\\$80\\)",
+            "\\(\\$10\\)"
+          ],
+          "answer": 1,
+          "hint": "When James gives some money to Angela, James LOSES that amount and Angela GAINS the same amount, so the gap between them changes by TWICE the amount given. They start with a gap of 0.",
+          "keyPoints": [
+            {
+              "text": "the same amount of money",
+              "note": "They start equal: the difference is 0."
+            },
+            {
+              "text": "she has forty more than he",
+              "note": "The final difference is 40, which is made of the gift counted twice."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Let James give \\(x\\) dollars. James has \\(x\\) dollars less and Angela has \\(x\\) dollars more than before. Since they started equal, the difference at the end is:",
+              "work": "\\(x+x=2x\\)"
+            },
+            {
+              "explain": "This difference must be 40 dollars.",
+              "work": "\\(2x=40\\)"
+            },
+            {
+              "explain": "Divide both sides by 2.",
+              "work": "\\(x=\\boxed{\\$20}\\)"
+            },
+            {
+              "explain": "Check with an example: each starts with \\(\\$100\\). James gives \\(\\$20\\): James \\(\\$80\\), Angela \\(\\$120\\). The difference is \\(\\$40\\). \\(\\checkmark\\)",
+              "work": "\\(120-80=40\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 30,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q31",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "What is the number we started with?\n\n\\(?\\ \\rightarrow\\ +103\\ \\rightarrow\\ \\div3\\ \\rightarrow\\ -11\\ \\rightarrow\\ \\div3\\ \\rightarrow\\ 8\\)",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 560 80\" width=\"100%\" height=\"auto\" style=\"max-width:560px\">\n<rect x=\"30.0\" y=\"20.0\" width=\"64.0\" height=\"36.0\" rx=\"5\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"62.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">?</text>\n<line x1=\"96.0\" y1=\"38.0\" x2=\"118.0\" y2=\"38.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"118.0\" y1=\"38.0\" x2=\"112.0\" y2=\"41.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"118.0\" y1=\"38.0\" x2=\"112.0\" y2=\"34.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<rect x=\"120.0\" y=\"20.0\" width=\"64.0\" height=\"36.0\" rx=\"5\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"152.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">+103</text>\n<line x1=\"186.0\" y1=\"38.0\" x2=\"208.0\" y2=\"38.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"208.0\" y1=\"38.0\" x2=\"202.0\" y2=\"41.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"208.0\" y1=\"38.0\" x2=\"202.0\" y2=\"34.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<rect x=\"210.0\" y=\"20.0\" width=\"64.0\" height=\"36.0\" rx=\"5\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"242.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">÷ 3</text>\n<line x1=\"276.0\" y1=\"38.0\" x2=\"298.0\" y2=\"38.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"298.0\" y1=\"38.0\" x2=\"292.0\" y2=\"41.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"298.0\" y1=\"38.0\" x2=\"292.0\" y2=\"34.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<rect x=\"300.0\" y=\"20.0\" width=\"64.0\" height=\"36.0\" rx=\"5\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"332.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">− 11</text>\n<line x1=\"366.0\" y1=\"38.0\" x2=\"388.0\" y2=\"38.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"388.0\" y1=\"38.0\" x2=\"382.0\" y2=\"41.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"388.0\" y1=\"38.0\" x2=\"382.0\" y2=\"34.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<rect x=\"390.0\" y=\"20.0\" width=\"64.0\" height=\"36.0\" rx=\"5\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"422.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">÷ 3</text>\n<line x1=\"456.0\" y1=\"38.0\" x2=\"478.0\" y2=\"38.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"478.0\" y1=\"38.0\" x2=\"472.0\" y2=\"41.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"478.0\" y1=\"38.0\" x2=\"472.0\" y2=\"34.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<rect x=\"480.0\" y=\"20.0\" width=\"64.0\" height=\"36.0\" rx=\"5\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"512.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">8</text>\n</svg>"
+          },
+          "options": [
+            "\\(-66\\)",
+            "\\(-7\\)",
+            "\\(3\\)",
+            "\\(2\\)"
+          ],
+          "answer": 3,
+          "hint": "Work BACKWARDS from 8 and do the OPPOSITE of each step in reverse order: the opposite of \\(\\div3\\) is \\(\\times3\\), of \\(-11\\) is \\(+11\\), and of \\(+103\\) is \\(-103\\).",
+          "keyPoints": [
+            {
+              "text": "What is the number we started with?",
+              "note": "Undo the steps from the end back to the start, using inverse operations."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Start from the end, 8. The last step was \\(\\div3\\), so undo it by multiplying by 3.",
+              "work": "\\(8\\times3=24\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 560 80\" width=\"100%\" height=\"auto\" style=\"max-width:560px\">\n<rect x=\"30.0\" y=\"20.0\" width=\"64.0\" height=\"36.0\" rx=\"5\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"62.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">?</text>\n<line x1=\"96.0\" y1=\"38.0\" x2=\"118.0\" y2=\"38.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"118.0\" y1=\"38.0\" x2=\"112.0\" y2=\"41.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"118.0\" y1=\"38.0\" x2=\"112.0\" y2=\"34.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<rect x=\"120.0\" y=\"20.0\" width=\"64.0\" height=\"36.0\" rx=\"5\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"152.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">+103</text>\n<line x1=\"186.0\" y1=\"38.0\" x2=\"208.0\" y2=\"38.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"208.0\" y1=\"38.0\" x2=\"202.0\" y2=\"41.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"208.0\" y1=\"38.0\" x2=\"202.0\" y2=\"34.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<rect x=\"210.0\" y=\"20.0\" width=\"64.0\" height=\"36.0\" rx=\"5\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"242.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">÷ 3</text>\n<line x1=\"276.0\" y1=\"38.0\" x2=\"298.0\" y2=\"38.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"298.0\" y1=\"38.0\" x2=\"292.0\" y2=\"41.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"298.0\" y1=\"38.0\" x2=\"292.0\" y2=\"34.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<rect x=\"300.0\" y=\"20.0\" width=\"64.0\" height=\"36.0\" rx=\"5\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"332.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">− 11</text>\n<line x1=\"366.0\" y1=\"38.0\" x2=\"388.0\" y2=\"38.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"388.0\" y1=\"38.0\" x2=\"382.0\" y2=\"41.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"388.0\" y1=\"38.0\" x2=\"382.0\" y2=\"34.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<rect x=\"390.0\" y=\"20.0\" width=\"64.0\" height=\"36.0\" rx=\"5\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"422.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">÷ 3</text>\n<line x1=\"456.0\" y1=\"38.0\" x2=\"478.0\" y2=\"38.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"478.0\" y1=\"38.0\" x2=\"472.0\" y2=\"41.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"478.0\" y1=\"38.0\" x2=\"472.0\" y2=\"34.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<rect x=\"480.0\" y=\"20.0\" width=\"64.0\" height=\"36.0\" rx=\"5\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"512.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">8</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "The step before that was \\(-11\\), so undo it by adding 11.",
+              "work": "\\(24+11=35\\)"
+            },
+            {
+              "explain": "Before that was \\(\\div3\\), so multiply by 3.",
+              "work": "\\(35\\times3=105\\)"
+            },
+            {
+              "explain": "The first step was \\(+103\\), so undo it by subtracting 103.",
+              "work": "\\(105-103=\\boxed{2}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 560 130\" width=\"100%\" height=\"auto\" style=\"max-width:560px\">\n<rect x=\"30.0\" y=\"20.0\" width=\"64.0\" height=\"36.0\" rx=\"5\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"62.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">?</text>\n<line x1=\"96.0\" y1=\"38.0\" x2=\"118.0\" y2=\"38.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"118.0\" y1=\"38.0\" x2=\"112.0\" y2=\"41.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"118.0\" y1=\"38.0\" x2=\"112.0\" y2=\"34.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<rect x=\"120.0\" y=\"20.0\" width=\"64.0\" height=\"36.0\" rx=\"5\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"152.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">+103</text>\n<line x1=\"186.0\" y1=\"38.0\" x2=\"208.0\" y2=\"38.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"208.0\" y1=\"38.0\" x2=\"202.0\" y2=\"41.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"208.0\" y1=\"38.0\" x2=\"202.0\" y2=\"34.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<rect x=\"210.0\" y=\"20.0\" width=\"64.0\" height=\"36.0\" rx=\"5\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"242.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">÷ 3</text>\n<line x1=\"276.0\" y1=\"38.0\" x2=\"298.0\" y2=\"38.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"298.0\" y1=\"38.0\" x2=\"292.0\" y2=\"41.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"298.0\" y1=\"38.0\" x2=\"292.0\" y2=\"34.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<rect x=\"300.0\" y=\"20.0\" width=\"64.0\" height=\"36.0\" rx=\"5\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"332.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">− 11</text>\n<line x1=\"366.0\" y1=\"38.0\" x2=\"388.0\" y2=\"38.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"388.0\" y1=\"38.0\" x2=\"382.0\" y2=\"41.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"388.0\" y1=\"38.0\" x2=\"382.0\" y2=\"34.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<rect x=\"390.0\" y=\"20.0\" width=\"64.0\" height=\"36.0\" rx=\"5\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"422.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">÷ 3</text>\n<line x1=\"456.0\" y1=\"38.0\" x2=\"478.0\" y2=\"38.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"478.0\" y1=\"38.0\" x2=\"472.0\" y2=\"41.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"478.0\" y1=\"38.0\" x2=\"472.0\" y2=\"34.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<rect x=\"480.0\" y=\"20.0\" width=\"64.0\" height=\"36.0\" rx=\"5\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"512.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">8</text>\n<text x=\"62.0\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#ea580c\">2</text>\n<text x=\"152.0\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#ea580c\">105</text>\n<text x=\"242.0\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#ea580c\">35</text>\n<text x=\"332.0\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#ea580c\">24</text>\n<text x=\"422.0\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#ea580c\">8</text>\n<text x=\"512.0\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#ea580c\">8</text>\n<text x=\"280.0\" y=\"116.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\">working backwards: 8 × 3 = 24,  + 11 = 35,  × 3 = 105,  − 103 = 2</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Check forwards: \\(2+103=105\\), \\(105\\div3=35\\), \\(35-11=24\\), \\(24\\div3=8\\). \\(\\checkmark\\)",
+              "work": "\\(2,\\ 105,\\ 35,\\ 24,\\ 8\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 31,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q32",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Which statement is correct?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 270\" width=\"100%\" height=\"auto\" style=\"max-width:520px\">\n<rect x=\"230.0\" y=\"14.0\" width=\"60.0\" height=\"8.0\" rx=\"0\" fill=\"#94a3b8\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<line x1=\"260.0\" y1=\"22.0\" x2=\"260.0\" y2=\"52.0\" stroke=\"#475569\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<line x1=\"120.0\" y1=\"40.0\" x2=\"400.0\" y2=\"62.0\" stroke=\"#475569\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n<line x1=\"260.0\" y1=\"52.0\" x2=\"260.0\" y2=\"52.0\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"150.0\" y1=\"42.0\" x2=\"150.0\" y2=\"78.0\" stroke=\"#475569\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<line x1=\"60.0\" y1=\"78.0\" x2=\"240.0\" y2=\"98.0\" stroke=\"#475569\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n<line x1=\"70.0\" y1=\"79.0\" x2=\"70.0\" y2=\"140.0\" stroke=\"#475569\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<line x1=\"228.0\" y1=\"97.0\" x2=\"228.0\" y2=\"168.0\" stroke=\"#475569\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<line x1=\"380.0\" y1=\"60.0\" x2=\"380.0\" y2=\"94.0\" stroke=\"#475569\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<line x1=\"300.0\" y1=\"94.0\" x2=\"470.0\" y2=\"114.0\" stroke=\"#475569\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n<line x1=\"310.0\" y1=\"95.0\" x2=\"310.0\" y2=\"160.0\" stroke=\"#475569\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<line x1=\"460.0\" y1=\"113.0\" x2=\"460.0\" y2=\"190.0\" stroke=\"#475569\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<polygon points=\"70.0,140.0 94.7,158.0 85.3,187.0 54.7,187.0 45.3,158.0\" fill=\"#93c5fd\" fill-opacity=\"1\" stroke=\"#1d4ed8\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<text x=\"70.0\" y=\"172.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">A</text>\n<polygon points=\"228.0,168.0 254.0,194.0 228.0,220.0 202.0,194.0\" fill=\"#fdba74\" fill-opacity=\"1\" stroke=\"#c2410c\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<text x=\"228.0\" y=\"199.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">B</text>\n<polygon points=\"460.0,190.0 486.0,216.0 460.0,242.0 434.0,216.0\" fill=\"#fdba74\" fill-opacity=\"1\" stroke=\"#c2410c\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<text x=\"460.0\" y=\"221.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">B</text>\n<circle cx=\"310.0\" cy=\"184.0\" r=\"24.0\" fill=\"#86efac\" fill-opacity=\"1\" stroke=\"#15803d\" stroke-width=\"2\"/>\n<text x=\"310.0\" y=\"190.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">C</text>\n</svg>"
+          },
+          "options": [
+            "A and C are same weight.",
+            "A is heavier than C but not as heavy as B",
+            "A + B is not lighter than B + C",
+            "C is heavier than A and B is the heaviest"
+          ],
+          "answer": 3,
+          "hint": "On a balance, the side that hangs LOWER is the HEAVIER side. Compare the two ends of each bar. First compare A and B (left bar), then C and B (right bar), then compare the left half with the right half of the top bar.",
+          "keyPoints": [
+            {
+              "text": "Which statement is correct?",
+              "note": "Check each statement with the three comparisons from the tilting bars."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Left bar (A and B): the bar is lower on the B side, so B is heavier than A.",
+              "work": "\\(B\\gt A\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 300\" width=\"100%\" height=\"auto\" style=\"max-width:520px\">\n<rect x=\"230.0\" y=\"14.0\" width=\"60.0\" height=\"8.0\" rx=\"0\" fill=\"#94a3b8\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<line x1=\"260.0\" y1=\"22.0\" x2=\"260.0\" y2=\"52.0\" stroke=\"#475569\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<line x1=\"120.0\" y1=\"40.0\" x2=\"400.0\" y2=\"62.0\" stroke=\"#475569\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n<line x1=\"260.0\" y1=\"52.0\" x2=\"260.0\" y2=\"52.0\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"150.0\" y1=\"42.0\" x2=\"150.0\" y2=\"78.0\" stroke=\"#475569\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<line x1=\"60.0\" y1=\"78.0\" x2=\"240.0\" y2=\"98.0\" stroke=\"#475569\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n<line x1=\"70.0\" y1=\"79.0\" x2=\"70.0\" y2=\"140.0\" stroke=\"#475569\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<line x1=\"228.0\" y1=\"97.0\" x2=\"228.0\" y2=\"168.0\" stroke=\"#475569\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<line x1=\"380.0\" y1=\"60.0\" x2=\"380.0\" y2=\"94.0\" stroke=\"#475569\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<line x1=\"300.0\" y1=\"94.0\" x2=\"470.0\" y2=\"114.0\" stroke=\"#475569\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n<line x1=\"310.0\" y1=\"95.0\" x2=\"310.0\" y2=\"160.0\" stroke=\"#475569\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<line x1=\"460.0\" y1=\"113.0\" x2=\"460.0\" y2=\"190.0\" stroke=\"#475569\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<polygon points=\"70.0,140.0 94.7,158.0 85.3,187.0 54.7,187.0 45.3,158.0\" fill=\"#93c5fd\" fill-opacity=\"1\" stroke=\"#1d4ed8\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<text x=\"70.0\" y=\"172.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">A</text>\n<polygon points=\"228.0,168.0 254.0,194.0 228.0,220.0 202.0,194.0\" fill=\"#fdba74\" fill-opacity=\"1\" stroke=\"#c2410c\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<text x=\"228.0\" y=\"199.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">B</text>\n<polygon points=\"460.0,190.0 486.0,216.0 460.0,242.0 434.0,216.0\" fill=\"#fdba74\" fill-opacity=\"1\" stroke=\"#c2410c\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<text x=\"460.0\" y=\"221.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">B</text>\n<circle cx=\"310.0\" cy=\"184.0\" r=\"24.0\" fill=\"#86efac\" fill-opacity=\"1\" stroke=\"#15803d\" stroke-width=\"2\"/>\n<text x=\"310.0\" y=\"190.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">C</text>\n<text x=\"260.0\" y=\"262.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\">left bar: B lower than A, so B heavier than A</text>\n<text x=\"260.0\" y=\"282.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\">right bar: B lower than C, so B heavier than C</text>\n<text x=\"260.0\" y=\"298.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\">top bar: right side lower, so C + B heavier than A + B</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Right bar (C and B): the bar is lower on the B side, so B is heavier than C.",
+              "work": "\\(B\\gt C\\)"
+            },
+            {
+              "explain": "Top bar: the right side (C + B) hangs lower than the left side (A + B), so C + B is heavier than A + B. B is on both sides, so C must be heavier than A.",
+              "work": "\\(C+B\\gt A+B\\Rightarrow C\\gt A\\)"
+            },
+            {
+              "explain": "Put the facts together: \\(B\\gt C\\gt A\\). So B is the heaviest and C is heavier than A. Check each statement: A (same weight) is false; B (A is heavier than C) is false; C (A + B is not lighter than B + C) is false because A + B is lighter; D (C is heavier than A and B is the heaviest) is true.",
+              "work": "\\(\\boxed{B\\gt C\\gt A}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 32,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q33",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "There are 30 students in a class. 22 students have red stars, 8 students have green crosses and 6 students have nothing. How many students have both?",
+          "options": [
+            "\\(6\\)",
+            "\\(0\\)",
+            "\\(8\\)",
+            "\\(22\\)"
+          ],
+          "answer": 0,
+          "hint": "First find how many students have at least one item (30 minus those with nothing). If you add 22 and 8 you count the students who have BOTH items twice. Compare the two totals.",
+          "keyPoints": [
+            {
+              "text": "6 students have nothing",
+              "note": "These 6 have no star and no cross, so 30 − 6 have at least one item."
+            },
+            {
+              "text": "How many students have both",
+              "note": "Students counted twice when adding 22 + 8 are the ones who have both."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Students who have at least one item (a star, a cross, or both).",
+              "work": "\\(30-6=24\\)"
+            },
+            {
+              "explain": "If we add the red-star students and the green-cross students, those with BOTH are counted twice.",
+              "work": "\\(22+8=30\\)"
+            },
+            {
+              "explain": "The count 30 is more than the real number 24 by exactly the number of students counted twice.",
+              "work": "\\(30-24=\\boxed{6}\\text{ students have both}\\)"
+            },
+            {
+              "explain": "Check: 6 have both, \\(22-6=16\\) have only a star, \\(8-6=2\\) have only a cross, and 6 have nothing. \\(6+16+2+6=30\\). \\(\\checkmark\\)",
+              "work": "\\(6+16+2+6=30\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 33,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q34",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Dan has 99 eggs to pack into boxes. Each box can hold a dozen eggs. How many boxes will Dan need?",
+          "options": [
+            "\\(8\\)",
+            "\\(9\\)",
+            "\\(10\\)",
+            "\\(11\\)"
+          ],
+          "answer": 1,
+          "hint": "A dozen is 12. Divide 99 by 12. If there are eggs left over, they still need a box, so round UP.",
+          "keyPoints": [
+            {
+              "text": "a dozen eggs",
+              "note": "A dozen means 12."
+            },
+            {
+              "text": "How many boxes will Dan need",
+              "note": "Boxes are whole: leftover eggs still need one more box."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Divide the eggs by 12 eggs per box.",
+              "work": "\\(99\\div12=8\\text{ remainder }3\\)"
+            },
+            {
+              "explain": "8 boxes hold \\(8\\times12=96\\) eggs, so 3 eggs are left over. They need another box.",
+              "work": "\\(8\\times12=96\\lt99\\)"
+            },
+            {
+              "explain": "So Dan needs one more box than 8.",
+              "work": "\\(8+1=\\boxed{9\\text{ boxes}}\\)"
+            },
+            {
+              "explain": "Check: 9 boxes hold up to \\(9\\times12=108\\) eggs, which is enough for 99. \\(\\checkmark\\)",
+              "work": "\\(9\\times12=108\\ge99\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 34,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q35",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Ten marbles are distributed among Alana, Ben, Cathy and David such that everybody gets at least two, and each girl gets one marble more than David. How many marbles do the girls get in total?",
+          "options": [
+            "\\(2\\)",
+            "\\(3\\)",
+            "\\(6\\)",
+            "\\(8\\)"
+          ],
+          "answer": 2,
+          "hint": "Alana and Cathy are the girls; Ben and David are the boys. David has at least 2 marbles and each girl has 1 more than David. Try the smallest numbers and see what fits the total of 10.",
+          "keyPoints": [
+            {
+              "text": "each girl gets one marble more than David",
+              "note": "Girls get David's number + 1 each."
+            },
+            {
+              "text": "everybody gets at least two",
+              "note": "Nobody has fewer than 2 marbles, so David has at least 2."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The girls are Alana and Cathy. Everybody gets at least 2, so David has at least 2. Try David \\(=2\\): each girl then gets \\(2+1=3\\). Ben must also have at least 2.",
+              "work": "\\(\\text{David}=2,\\quad\\text{Alana}=3,\\quad\\text{Cathy}=3,\\quad\\text{Ben}\\ge2\\)"
+            },
+            {
+              "explain": "Add up with Ben \\(=2\\).",
+              "work": "\\(2+3+3+2=10\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Check that David cannot have more: if David had 3, each girl would have 4, and \\(3+4+4=11\\) is already more than 10. So David \\(=2\\) and Ben \\(=2\\) is the only possibility.",
+              "work": "\\(3+4+4=11\\gt10\\ \\times\\)"
+            },
+            {
+              "explain": "The girls (Alana and Cathy) have 3 marbles each.",
+              "work": "\\(3+3=\\boxed{6}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 35,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q36",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "How many small circles don't belong to all three squares?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 260\" width=\"100%\" height=\"auto\" style=\"max-width:360px\">\n<circle cx=\"60.0\" cy=\"40.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"104.0\" cy=\"40.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"148.0\" cy=\"40.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"192.0\" cy=\"40.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"236.0\" cy=\"40.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"60.0\" cy=\"84.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"104.0\" cy=\"84.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"148.0\" cy=\"84.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"192.0\" cy=\"84.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"236.0\" cy=\"84.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"60.0\" cy=\"128.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"104.0\" cy=\"128.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"148.0\" cy=\"128.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"192.0\" cy=\"128.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"236.0\" cy=\"128.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"60.0\" cy=\"172.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"104.0\" cy=\"172.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"148.0\" cy=\"172.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"192.0\" cy=\"172.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"236.0\" cy=\"172.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"60.0\" cy=\"216.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"104.0\" cy=\"216.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"148.0\" cy=\"216.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"192.0\" cy=\"216.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"236.0\" cy=\"216.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<rect x=\"38.0\" y=\"18.0\" width=\"176.0\" height=\"176.0\" rx=\"0\" fill=\"none\" fill-opacity=\"1\" stroke=\"#4d8f6c\" stroke-width=\"2.6\"/>\n<rect x=\"126.0\" y=\"18.0\" width=\"132.0\" height=\"176.0\" rx=\"0\" fill=\"none\" fill-opacity=\"1\" stroke=\"#c9a227\" stroke-width=\"2.6\"/>\n<rect x=\"82.0\" y=\"62.0\" width=\"176.0\" height=\"176.0\" rx=\"0\" fill=\"none\" fill-opacity=\"1\" stroke=\"#d27c9a\" stroke-width=\"2.6\"/>\n</svg>"
+          },
+          "options": [
+            "\\(6\\)",
+            "\\(12\\)",
+            "\\(15\\)",
+            "\\(19\\)"
+          ],
+          "answer": 3,
+          "hint": "First find the small circles that are inside ALL THREE squares (the overlap of the green, yellow and pink squares). Then count all the circles and subtract. Remember the question asks for the circles that do NOT belong to all three.",
+          "keyPoints": [
+            {
+              "text": "don't belong to all three squares",
+              "note": "Count the circles that are NOT in all three squares: total minus the circles that are in all three."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Count all the small circles: 5 rows of 5 circles.",
+              "work": "\\(5\\times5=25\\text{ circles}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 260\" width=\"100%\" height=\"auto\" style=\"max-width:360px\">\n<circle cx=\"60.0\" cy=\"40.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"104.0\" cy=\"40.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"148.0\" cy=\"40.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"192.0\" cy=\"40.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"236.0\" cy=\"40.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"60.0\" cy=\"84.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"104.0\" cy=\"84.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"148.0\" cy=\"84.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"192.0\" cy=\"84.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"236.0\" cy=\"84.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"60.0\" cy=\"128.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"104.0\" cy=\"128.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"148.0\" cy=\"128.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"192.0\" cy=\"128.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"236.0\" cy=\"128.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"60.0\" cy=\"172.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"104.0\" cy=\"172.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"148.0\" cy=\"172.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"192.0\" cy=\"172.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"236.0\" cy=\"172.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"60.0\" cy=\"216.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"104.0\" cy=\"216.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"148.0\" cy=\"216.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"192.0\" cy=\"216.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"236.0\" cy=\"216.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<rect x=\"38.0\" y=\"18.0\" width=\"176.0\" height=\"176.0\" rx=\"0\" fill=\"none\" fill-opacity=\"1\" stroke=\"#4d8f6c\" stroke-width=\"2.6\"/>\n<rect x=\"126.0\" y=\"18.0\" width=\"132.0\" height=\"176.0\" rx=\"0\" fill=\"none\" fill-opacity=\"1\" stroke=\"#c9a227\" stroke-width=\"2.6\"/>\n<rect x=\"82.0\" y=\"62.0\" width=\"176.0\" height=\"176.0\" rx=\"0\" fill=\"none\" fill-opacity=\"1\" stroke=\"#d27c9a\" stroke-width=\"2.6\"/>\n</svg>"
+              }
+            },
+            {
+              "explain": "Find the circles inside all three squares. The green square covers columns 1 to 4 (rows 1 to 4 from the top-left), the yellow square covers columns 3 to 5 (rows 1 to 4) and the pink square covers columns 2 to 5 (rows 2 to 5). All three overlap in columns 3 and 4 and rows 2, 3 and 4.",
+              "work": "\\(2\\text{ columns}\\times3\\text{ rows}=6\\text{ circles}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 300\" width=\"100%\" height=\"auto\" style=\"max-width:360px\">\n<circle cx=\"60.0\" cy=\"40.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"104.0\" cy=\"40.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"148.0\" cy=\"40.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"192.0\" cy=\"40.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"236.0\" cy=\"40.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"60.0\" cy=\"84.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"104.0\" cy=\"84.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"148.0\" cy=\"84.0\" r=\"8\" fill=\"#ea580c\"/>\n<circle cx=\"192.0\" cy=\"84.0\" r=\"8\" fill=\"#ea580c\"/>\n<circle cx=\"236.0\" cy=\"84.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"60.0\" cy=\"128.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"104.0\" cy=\"128.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"148.0\" cy=\"128.0\" r=\"8\" fill=\"#ea580c\"/>\n<circle cx=\"192.0\" cy=\"128.0\" r=\"8\" fill=\"#ea580c\"/>\n<circle cx=\"236.0\" cy=\"128.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"60.0\" cy=\"172.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"104.0\" cy=\"172.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"148.0\" cy=\"172.0\" r=\"8\" fill=\"#ea580c\"/>\n<circle cx=\"192.0\" cy=\"172.0\" r=\"8\" fill=\"#ea580c\"/>\n<circle cx=\"236.0\" cy=\"172.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"60.0\" cy=\"216.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"104.0\" cy=\"216.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"148.0\" cy=\"216.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"192.0\" cy=\"216.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<circle cx=\"236.0\" cy=\"216.0\" r=\"8\" fill=\"#3b6fc4\"/>\n<rect x=\"38.0\" y=\"18.0\" width=\"176.0\" height=\"176.0\" rx=\"0\" fill=\"none\" fill-opacity=\"1\" stroke=\"#4d8f6c\" stroke-width=\"2.6\"/>\n<rect x=\"126.0\" y=\"18.0\" width=\"132.0\" height=\"176.0\" rx=\"0\" fill=\"none\" fill-opacity=\"1\" stroke=\"#c9a227\" stroke-width=\"2.6\"/>\n<rect x=\"82.0\" y=\"62.0\" width=\"176.0\" height=\"176.0\" rx=\"0\" fill=\"none\" fill-opacity=\"1\" stroke=\"#d27c9a\" stroke-width=\"2.6\"/>\n<text x=\"180.0\" y=\"262.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\">inside all three squares: 2 columns × 3 rows = 6 dots</text>\n<text x=\"180.0\" y=\"284.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">25 − 6 = 19 dots are not inside all three squares</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "The circles that do NOT belong to all three squares are the rest.",
+              "work": "\\(25-6=\\boxed{19}\\)"
+            },
+            {
+              "explain": "Check: the option 6 is the number of circles that DO belong to all three squares. \\(\\checkmark\\)",
+              "work": "\\(6+19=25\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 36,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q37",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Triangle ABC is a right-angled triangle. What fraction is the shaded area of the area of the triangle?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 230\" width=\"100%\" height=\"auto\" style=\"max-width:420px\">\n<polygon points=\"40.0,190.0 210.0,40.0 380.0,190.0\" fill=\"white\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<polygon points=\"40.0,190.0 125.0,115.0 295.0,115.0 380.0,190.0\" fill=\"#86efac\" fill-opacity=\"0.95\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<text x=\"210.0\" y=\"30.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">B</text>\n<text x=\"28.0\" y=\"196.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">A</text>\n<text x=\"392.0\" y=\"196.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">C</text>\n<text x=\"111.0\" y=\"119.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">E</text>\n<text x=\"309.0\" y=\"119.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">F</text>\n<text x=\"101.0\" y=\"79.5\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">12</text>\n<text x=\"317.0\" y=\"79.5\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">15</text>\n<text x=\"80.0\" y=\"174.5\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">12</text>\n<text x=\"326.0\" y=\"174.5\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">15</text>\n<polyline points=\"202.5,46.6 210.0,53.2 217.5,46.6\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/>\n</svg>"
+          },
+          "options": [
+            "\\(\\dfrac12\\)",
+            "\\(\\dfrac13\\)",
+            "\\(\\dfrac14\\)",
+            "\\(\\dfrac34\\)"
+          ],
+          "answer": 3,
+          "hint": "The two sides of the big triangle that meet at B are \\(12+12\\) and \\(15+15\\), and the right angle is at B. The unshaded top triangle BEF is a small right-angled triangle with sides 12 and 15. Find the area of the whole triangle and of the small triangle BEF, then take the small one away.",
+          "keyPoints": [
+            {
+              "text": "right-angled triangle",
+              "note": "The right angle is at B, so the two sides at B are the base and height: AB and BC."
+            },
+            {
+              "text": "What fraction is the shaded area of the area of the triangle",
+              "note": "Shaded part ÷ whole triangle. The shaded part is the whole triangle minus triangle BEF."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the lengths of the two sides at the right angle. AB is made of \\(AE=12\\) and \\(EB=12\\); BC is made of \\(BF=15\\) and \\(FC=15\\).",
+              "work": "\\(AB=12+12=24,\\qquad BC=15+15=30\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 230\" width=\"100%\" height=\"auto\" style=\"max-width:420px\">\n<polygon points=\"40.0,190.0 210.0,40.0 380.0,190.0\" fill=\"white\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<polygon points=\"40.0,190.0 125.0,115.0 295.0,115.0 380.0,190.0\" fill=\"#86efac\" fill-opacity=\"0.95\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<text x=\"210.0\" y=\"30.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">B</text>\n<text x=\"28.0\" y=\"196.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">A</text>\n<text x=\"392.0\" y=\"196.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">C</text>\n<text x=\"111.0\" y=\"119.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">E</text>\n<text x=\"309.0\" y=\"119.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">F</text>\n<text x=\"101.0\" y=\"79.5\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">12</text>\n<text x=\"317.0\" y=\"79.5\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">15</text>\n<text x=\"80.0\" y=\"174.5\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">12</text>\n<text x=\"326.0\" y=\"174.5\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">15</text>\n<polyline points=\"202.5,46.6 210.0,53.2 217.5,46.6\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/>\n</svg>"
+              }
+            },
+            {
+              "explain": "Area of the whole triangle ABC (right angle at B).",
+              "work": "\\(\\dfrac12\\times24\\times30=360\\)"
+            },
+            {
+              "explain": "Area of the small unshaded triangle BEF (right angle at B, sides 12 and 15).",
+              "work": "\\(\\dfrac12\\times12\\times15=90\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 250\" width=\"100%\" height=\"auto\" style=\"max-width:420px\">\n<polygon points=\"40.0,190.0 210.0,40.0 380.0,190.0\" fill=\"white\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<polygon points=\"40.0,190.0 125.0,115.0 295.0,115.0 380.0,190.0\" fill=\"#bbf7d0\" fill-opacity=\"0.95\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<polygon points=\"125.0,115.0 210.0,40.0 295.0,115.0\" fill=\"#fde68a\" fill-opacity=\"0.9\" stroke=\"#ea580c\" stroke-width=\"2.8\" stroke-linejoin=\"round\"/>\n<text x=\"210.0\" y=\"30.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">B</text>\n<text x=\"28.0\" y=\"196.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">A</text>\n<text x=\"392.0\" y=\"196.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">C</text>\n<text x=\"111.0\" y=\"119.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">E</text>\n<text x=\"309.0\" y=\"119.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">F</text>\n<text x=\"101.0\" y=\"79.5\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">12</text>\n<text x=\"317.0\" y=\"79.5\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">15</text>\n<text x=\"80.0\" y=\"174.5\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">12</text>\n<text x=\"326.0\" y=\"174.5\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">15</text>\n<polyline points=\"202.5,46.6 210.0,53.2 217.5,46.6\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/>\n<text x=\"210.0\" y=\"228.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\">BEF: ½ × 12 × 15 = 90   ABC: ½ × 24 × 30 = 360</text>\n<text x=\"210.0\" y=\"246.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#16a34a\">shaded = 360 − 90 = 270</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "The shaded part is the whole triangle minus the small triangle.",
+              "work": "\\(360-90=270\\)"
+            },
+            {
+              "explain": "Write the fraction and simplify by dividing top and bottom by 90.",
+              "work": "\\(\\dfrac{270}{360}=\\boxed{\\dfrac34}\\)"
+            },
+            {
+              "explain": "Check: BEF is \\(\\dfrac{90}{360}=\\dfrac14\\) of the triangle (its sides are half as long as ABC's, so its area is \\(\\dfrac12\\times\\dfrac12=\\dfrac14\\)), so the rest is \\(\\dfrac34\\). \\(\\checkmark\\)",
+              "work": "\\(1-\\dfrac14=\\dfrac34\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 37,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q38",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "How many revolutions does a wheel of circumference 2.1 metres make in travelling 4.2 kilometres?",
+          "options": [
+            "\\(2\\)",
+            "\\(50\\)",
+            "\\(0.5\\)",
+            "\\(2000\\)"
+          ],
+          "answer": 3,
+          "hint": "Change kilometres to metres first so that both distances are in the same unit. In one revolution the wheel travels one circumference, so divide the total distance by the circumference.",
+          "keyPoints": [
+            {
+              "text": "4.2 kilometres",
+              "note": "Change to metres: 1 km = 1000 m."
+            },
+            {
+              "text": "circumference 2.1 metres",
+              "note": "One revolution covers a distance equal to the circumference."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Change the distance into metres.",
+              "work": "\\(4.2\\text{ km}=4.2\\times1000=4200\\text{ m}\\)"
+            },
+            {
+              "explain": "One revolution covers 2.1 m, so the number of revolutions is the distance divided by the circumference.",
+              "work": "\\(4200\\div2.1\\)"
+            },
+            {
+              "explain": "Multiply the top and bottom by 10 to remove the decimal point: \\(42\\,000\\div21\\).",
+              "work": "\\(42\\,000\\div21=\\boxed{2000}\\)"
+            },
+            {
+              "explain": "Check: \\(2000\\times2.1=4200\\) m. \\(\\checkmark\\) The option 2 is the answer if you forget to change km into metres.",
+              "work": "\\(2000\\times2.1=4200\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 38,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q39",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "On an international flight, you are allowed to take 20 kg of baggage. If you take more you must pay \\(\\$8.50\\) per extra kilogram. How much did Angela's baggage weigh if she had to pay \\(\\$76.50\\)?",
+          "options": [
+            "\\(10\\text{ kg}\\)",
+            "\\(29\\text{ kg}\\)",
+            "\\(9\\text{ kg}\\)",
+            "\\(11\\text{ kg}\\)"
+          ],
+          "answer": 1,
+          "hint": "She paid only for the EXTRA kilograms above 20 kg. Find how many extra kilograms \\(\\$76.50\\) pays for, then add them to the 20 kg she was allowed.",
+          "keyPoints": [
+            {
+              "text": "allowed to take 20 kg of baggage",
+              "note": "The first 20 kg are free. Only kilograms above 20 are charged."
+            },
+            {
+              "text": "How much did Angela's baggage weigh",
+              "note": "Total weight = 20 kg allowed + the extra kilograms."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The payment of \\(\\$76.50\\) is for the extra kilograms, at \\(\\$8.50\\) each.",
+              "work": "\\(76.50\\div8.50=9\\text{ extra kg}\\)"
+            },
+            {
+              "explain": "Add the extra weight to the free allowance of 20 kg.",
+              "work": "\\(20+9=\\boxed{29\\text{ kg}}\\)"
+            },
+            {
+              "explain": "Check: 9 extra kg cost \\(9\\times8.50=\\$76.50\\). \\(\\checkmark\\) The option 9 kg is only the EXTRA weight.",
+              "work": "\\(9\\times8.50=76.50\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 39,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm8-q40",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "What is the name of the straight line connecting P and Q on this circle?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"100%\" height=\"auto\" style=\"max-width:300px\">\n<circle cx=\"150.0\" cy=\"130.0\" r=\"85.0\" fill=\"white\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\"/>\n<circle cx=\"150.0\" cy=\"130.0\" r=\"3.5\" fill=\"#1e293b\"/>\n<text x=\"164.0\" y=\"136.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">O</text>\n<line x1=\"95.4\" y1=\"64.9\" x2=\"223.6\" y2=\"87.5\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/>\n<text x=\"83.4\" y=\"56.9\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">P</text>\n<text x=\"237.6\" y=\"83.5\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">Q</text>\n</svg>"
+          },
+          "options": [
+            "arc",
+            "chord",
+            "diameter",
+            "radius"
+          ],
+          "answer": 1,
+          "hint": "Look at where the line starts and ends: both ends are ON the circle. Does the line go through the centre O? Remember the definitions of arc, chord, diameter and radius.",
+          "keyPoints": [
+            {
+              "text": "straight line connecting P and Q on this circle",
+              "note": "Both ends P and Q are points on the circle, and the line is straight and does not pass through the centre."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "An arc is a curved part of the circle, not a straight line, so it is not an arc.",
+              "work": "\\(\\text{arc}=\\text{curved}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"100%\" height=\"auto\" style=\"max-width:300px\">\n<circle cx=\"150.0\" cy=\"130.0\" r=\"85.0\" fill=\"white\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\"/>\n<circle cx=\"150.0\" cy=\"130.0\" r=\"3.5\" fill=\"#1e293b\"/>\n<text x=\"164.0\" y=\"136.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">O</text>\n<line x1=\"95.4\" y1=\"64.9\" x2=\"223.6\" y2=\"87.5\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/>\n<text x=\"83.4\" y=\"56.9\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">P</text>\n<text x=\"237.6\" y=\"83.5\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">Q</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "A radius goes from the centre O to a point on the circle. The line PQ does not touch O, so it is not a radius.",
+              "work": "\\(\\text{radius}:\\ O\\to\\text{circle}\\)"
+            },
+            {
+              "explain": "A diameter is a chord that passes through the centre O. The line PQ does not pass through O, so it is not a diameter.",
+              "work": "\\(\\text{diameter}:\\ \\text{through }O\\)"
+            },
+            {
+              "explain": "A chord is any straight line joining two points on the circle. PQ joins P and Q, so it is a chord.",
+              "work": "\\(\\boxed{\\text{chord}}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 270\" width=\"100%\" height=\"auto\" style=\"max-width:300px\">\n<circle cx=\"150.0\" cy=\"130.0\" r=\"85.0\" fill=\"white\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\"/>\n<circle cx=\"150.0\" cy=\"130.0\" r=\"3.5\" fill=\"#1e293b\"/>\n<text x=\"164.0\" y=\"136.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">O</text>\n<line x1=\"95.4\" y1=\"64.9\" x2=\"223.6\" y2=\"87.5\" stroke=\"#ea580c\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n<text x=\"83.4\" y=\"56.9\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">P</text>\n<text x=\"237.6\" y=\"83.5\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">Q</text>\n<text x=\"150.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\">PQ joins two points on the circle</text>\n<text x=\"150.0\" y=\"256.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#16a34a\">and does not pass through O: a chord</text>\n</svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 8",
+            "number": 40,
+            "origin": "exam-import"
+          }
         }
       ]
     },
