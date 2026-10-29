@@ -12660,8 +12660,8 @@
               "work": "\\(\\boxed{\\text{square}}\\)"
             },
             {
-              "explain": "Check with a square of side 1: both diagonals have length \\(\\sqrt{1^2+1^2}=\\sqrt2\\), so they are equal, and they cross at right angles. \\(\\checkmark\\)",
-              "work": "\\(\\sqrt2=\\sqrt2,\\ \\ 90^\\circ\\)"
+              "explain": "Check with a square of side 1: both diagonals have length \\(\\sqrt{1^2+1^2}=\\sqrt{2}\\), so they are equal, and they cross at right angles. \\(\\checkmark\\)",
+              "work": "\\(\\sqrt{2}=\\sqrt{2},\\ \\ 90^\\circ\\)"
             }
           ],
           "timeLimit": 60,
@@ -17601,11 +17601,11 @@
           ],
           "steps": [
             {
-              "explain": "Let one adult fare be \\(a\\). A child pays half of that, \\(\\dfrac a2\\).",
-              "work": "\\(\\text{child}=\\dfrac a2\\)"
+              "explain": "Let one adult fare be \\(a\\). A child pays half of that, \\(\\dfrac{a}{2}\\).",
+              "work": "\\(\\text{child}=\\dfrac{a}{2}\\)"
             },
             {
-              "explain": "3 children pay \\(3\\times\\dfrac a2=1.5a\\). Add the 2 adults.",
+              "explain": "3 children pay \\(3\\times\\dfrac{a}{2}=1.5a\\). Add the 2 adults.",
               "work": "\\(2a+1.5a=3.5a\\)"
             },
             {
