@@ -25098,6 +25098,2046 @@
             "number": 40,
             "origin": "exam-import"
           }
+        },
+        {
+          "id": "sch-sel-mm10-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The ratio of the sides of a right-angled triangle is 3:4:5. If the shortest side is 6 cm, find the area of the triangle.",
+          "options": [
+            "\\(24\\text{ cm}^2\\)",
+            "\\(48\\text{ cm}^2\\)",
+            "\\(40\\text{ cm}^2\\)",
+            "\\(60\\text{ cm}^2\\)"
+          ],
+          "answer": 0,
+          "hint": "The shortest side is 3 parts of the ratio and equals 6 cm. Find one part, then the other two sides. In a right-angled triangle the two shorter sides are the base and the height, and the longest side (5 parts) is the hypotenuse.",
+          "keyPoints": [
+            {
+              "text": "ratio of the sides of a right-angled triangle is 3:4:5",
+              "note": "The sides are 3, 4 and 5 parts. The longest side (5 parts) is the hypotenuse, so the base and height are the 3-part and 4-part sides."
+            },
+            {
+              "text": "shortest side is 6 cm",
+              "note": "The shortest side matches the smallest ratio number, 3."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The shortest side is 3 parts and is 6 cm. Find one part.",
+              "work": "\\(6\\div3=2\\text{ cm per part}\\)"
+            },
+            {
+              "explain": "The other two sides are 4 parts and 5 parts.",
+              "work": "\\(4\\times2=8\\text{ cm},\\qquad5\\times2=10\\text{ cm}\\)"
+            },
+            {
+              "explain": "The hypotenuse is the longest side (10 cm). The base and height are the two shorter sides, 6 cm and 8 cm. Area \\(=\\dfrac12\\times\\text{base}\\times\\text{height}\\).",
+              "work": "\\(\\dfrac12\\times6\\times8=\\boxed{24\\text{ cm}^2}\\)"
+            },
+            {
+              "explain": "Check: \\(6^2+8^2=36+64=100=10^2\\), so a triangle with sides 6, 8, 10 really is right-angled. \\(\\checkmark\\)",
+              "work": "\\(6^2+8^2=10^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 1,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following statements is false?",
+          "options": [
+            "In the fraction \\(\\dfrac12\\), one is the numerator.",
+            "When 4.89 is rounded to the ones place, the answer is 5.",
+            "Ten thousandths place is located 5 places to the right of the decimal",
+            "\\(\\dfrac76\\) is described as an improper fraction."
+          ],
+          "answer": 2,
+          "hint": "Check each statement one by one. Remember the place values after the decimal point: tenths, hundredths, thousandths, ten-thousandths. A fraction is improper when the numerator is bigger than the denominator.",
+          "keyPoints": [
+            {
+              "text": "Which of the following statements is false?",
+              "note": "Three statements are true; find the ONE that is false."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Statement A: in \\(\\dfrac12\\) the top number (1) is the numerator. TRUE.",
+              "work": "\\(\\dfrac{1}{2}:\\ \\text{numerator}=1\\)"
+            },
+            {
+              "explain": "Statement B: round 4.89 to the ones place. The tenths digit is 8, which is 5 or more, so round up to 5. TRUE.",
+              "work": "\\(4.89\\approx5\\)"
+            },
+            {
+              "explain": "Statement D: \\(\\dfrac76\\) has a numerator bigger than the denominator, so it is an improper fraction. TRUE.",
+              "work": "\\(7\\gt6\\)"
+            },
+            {
+              "explain": "Statement C: the places to the right of the decimal point are 1st tenths, 2nd hundredths, 3rd thousandths, 4th ten-thousandths. So the ten-thousandths place is 4 places (not 5) to the right.",
+              "work": "\\(0.0001=\\dfrac{1}{10\\,000}\\Rightarrow4\\text{ decimal places}\\)"
+            },
+            {
+              "explain": "So statement C is false.",
+              "work": "\\(\\boxed{\\text{C}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 2,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "You need \\(\\dfrac45\\) cups of water for a recipe. You accidentally put \\(\\dfrac13\\) cups into the mixing bowl first. How many more cups of water do you need to add?",
+          "options": [
+            "\\(\\dfrac13\\)",
+            "\\(\\dfrac23\\)",
+            "\\(\\dfrac{3}{15}\\)",
+            "\\(\\dfrac{7}{15}\\)"
+          ],
+          "answer": 3,
+          "hint": "You need the difference between what the recipe needs and what is already in the bowl. Use a common denominator (15) to subtract the fractions.",
+          "keyPoints": [
+            {
+              "text": "How many more cups of water do you need to add",
+              "note": "More needed = amount needed − amount already in the bowl."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The amount still needed is \\(\\dfrac45-\\dfrac13\\). Write both fractions with denominator 15 (the lowest common multiple of 5 and 3).",
+              "work": "\\(\\dfrac45=\\dfrac{12}{15},\\qquad\\dfrac13=\\dfrac{5}{15}\\)"
+            },
+            {
+              "explain": "Subtract the numerators and keep the denominator.",
+              "work": "\\(\\dfrac{12}{15}-\\dfrac{5}{15}=\\boxed{\\dfrac{7}{15}}\\)"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{5}{15}+\\dfrac{7}{15}=\\dfrac{12}{15}=\\dfrac45\\). \\(\\checkmark\\)",
+              "work": "\\(\\dfrac13+\\dfrac{7}{15}=\\dfrac45\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 3,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following is not a whole number followed by its square?",
+          "options": [
+            "\\(1,\\ 1\\)",
+            "\\(8,\\ 64\\)",
+            "\\(10,\\ 100\\)",
+            "\\(11,\\ 144\\)"
+          ],
+          "answer": 3,
+          "hint": "The square of a number is the number multiplied by itself. Work out the square of the first number in each pair and see if it matches the second number.",
+          "keyPoints": [
+            {
+              "text": "not a whole number followed by its square",
+              "note": "Three pairs are “number, square”. One pair is wrong."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "\\(1^2=1\\times1=1\\), so \\(1,\\ 1\\) is correct.",
+              "work": "\\(1^2=1\\ \\checkmark\\)"
+            },
+            {
+              "explain": "\\(8^2=8\\times8=64\\), so \\(8,\\ 64\\) is correct. \\(10^2=100\\), so \\(10,\\ 100\\) is correct.",
+              "work": "\\(8^2=64,\\quad10^2=100\\ \\checkmark\\)"
+            },
+            {
+              "explain": "\\(11^2=11\\times11=121\\), not 144. (144 is \\(12^2\\).) So \\(11,\\ 144\\) is NOT a number followed by its square.",
+              "work": "\\(11^2=121\\ne144\\)"
+            },
+            {
+              "explain": "The pair that does not fit is 11 and 144.",
+              "work": "\\(\\boxed{11,\\ 144}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 4,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following correctly identifies 4 consecutive odd integers where the sum of the middle two integers is equal to 24?",
+          "options": [
+            "\\(5,\\ 7,\\ 9,\\ 11\\)",
+            "\\(7,\\ 9,\\ 11,\\ 13\\)",
+            "\\(9,\\ 11,\\ 13,\\ 15\\)",
+            "\\(11,\\ 13,\\ 15,\\ 17\\)"
+          ],
+          "answer": 2,
+          "hint": "Consecutive odd integers go up by 2. The “middle two” of four numbers are the 2nd and 3rd. Add the 2nd and 3rd number in each option.",
+          "keyPoints": [
+            {
+              "text": "sum of the middle two integers is equal to 24",
+              "note": "Add only the 2nd and 3rd numbers of each list."
+            },
+            {
+              "text": "4 consecutive odd integers",
+              "note": "Each option is a list of four numbers going up by 2."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Option A: the middle two are 7 and 9.",
+              "work": "\\(7+9=16\\ne24\\)"
+            },
+            {
+              "explain": "Option B: the middle two are 9 and 11.",
+              "work": "\\(9+11=20\\ne24\\)"
+            },
+            {
+              "explain": "Option C: the middle two are 11 and 13.",
+              "work": "\\(11+13=24\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Option D: the middle two are 13 and 15, which add to 28. So only option C works.",
+              "work": "\\(13+15=28\\ne24\\Rightarrow\\boxed{9,\\ 11,\\ 13,\\ 15}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 5,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is 1230.932567 rounded to the nearest hundredths place?",
+          "options": [
+            "\\(1200\\)",
+            "\\(1230.9326\\)",
+            "\\(1230.93\\)",
+            "\\(1230\\)"
+          ],
+          "answer": 2,
+          "hint": "The hundredths place is the 2nd digit after the decimal point. Look at the digit AFTER it (the thousandths digit): if it is 5 or more, round up, otherwise leave the hundredths digit alone.",
+          "keyPoints": [
+            {
+              "text": "nearest hundredths place",
+              "note": "Hundredths = 2 decimal places. Keep 2 digits after the decimal point."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write out the decimal places: 1230.932567 has tenths 9, hundredths 3, thousandths 2, ...",
+              "work": "\\(1230.\\underline{9}\\,\\underline{3}\\,2\\,5\\,6\\,7\\)"
+            },
+            {
+              "explain": "Keep two decimal places: 1230.93. The next digit (thousandths) is 2, which is less than 5, so the 3 stays the same.",
+              "work": "\\(1230.932\\ldots\\approx1230.93\\)"
+            },
+            {
+              "explain": "So the number rounded to the nearest hundredth is:",
+              "work": "\\(\\boxed{1230.93}\\)"
+            },
+            {
+              "explain": "Check: the option 1230.9326 keeps 4 decimal places (nearest ten-thousandth), and 1230 is rounded to the ones place. \\(\\checkmark\\)",
+              "work": "\\(1230.93\\ \\text{has 2 decimal places}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 6,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following values is NOT equal to \\(34\\times(58+9)\\)?",
+          "options": [
+            "\\(34\\times67\\)",
+            "\\(58\\times(34+9)\\)",
+            "\\(34\\times58+34\\times9\\)",
+            "\\(1{,}972+306\\)"
+          ],
+          "answer": 1,
+          "hint": "First find the value of \\(34\\times(58+9)\\). Then test each option. Use the distributive law: \\(a\\times(b+c)=a\\times b+a\\times c\\), but be careful that the SAME number multiplies both parts.",
+          "keyPoints": [
+            {
+              "text": "NOT equal to",
+              "note": "Three options equal the given expression and ONE does not."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Work out the bracket first: \\(58+9=67\\), so the given expression is \\(34\\times67\\).",
+              "work": "\\(34\\times(58+9)=34\\times67=2278\\)"
+            },
+            {
+              "explain": "Option A is exactly \\(34\\times67\\). Equal.",
+              "work": "\\(34\\times67=2278\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Option C uses the distributive law correctly: \\(34\\times58=1972\\) and \\(34\\times9=306\\), and \\(1972+306=2278\\). So options C and D are equal.",
+              "work": "\\(1972+306=2278\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Option B: \\(58\\times(34+9)=58\\times43=2494\\). It multiplies 58 by the sum of 34 and 9, which is a different calculation.",
+              "work": "\\(58\\times43=2494\\ne2278\\)"
+            },
+            {
+              "explain": "So option B is not equal.",
+              "work": "\\(\\boxed{58\\times(34+9)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 7,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which year did the most children take swimming lessons?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 580 300\" width=\"100%\" height=\"auto\" style=\"max-width:580px\">\n<line x1=\"150.0\" y1=\"220.0\" x2=\"462.0\" y2=\"220.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<line x1=\"150.0\" y1=\"202.0\" x2=\"462.0\" y2=\"202.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"206.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1</text>\n<line x1=\"150.0\" y1=\"184.0\" x2=\"462.0\" y2=\"184.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"188.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">2</text>\n<line x1=\"150.0\" y1=\"166.0\" x2=\"462.0\" y2=\"166.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"170.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">3</text>\n<line x1=\"150.0\" y1=\"148.0\" x2=\"462.0\" y2=\"148.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"152.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">4</text>\n<line x1=\"150.0\" y1=\"130.0\" x2=\"462.0\" y2=\"130.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"134.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">5</text>\n<line x1=\"150.0\" y1=\"112.0\" x2=\"462.0\" y2=\"112.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"116.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">6</text>\n<line x1=\"150.0\" y1=\"94.0\" x2=\"462.0\" y2=\"94.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"98.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">7</text>\n<line x1=\"150.0\" y1=\"76.0\" x2=\"462.0\" y2=\"76.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"80.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">8</text>\n<line x1=\"150.0\" y1=\"58.0\" x2=\"462.0\" y2=\"58.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"62.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">9</text>\n<line x1=\"150.0\" y1=\"40.0\" x2=\"462.0\" y2=\"40.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"44.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">10</text>\n<rect x=\"150.0\" y=\"94.0\" width=\"312.0\" height=\"126.0\" rx=\"0\" fill=\"#7dd3fc\" fill-opacity=\"0.55\" stroke=\"none\" stroke-width=\"0\"/>\n<line x1=\"150.0\" y1=\"220.0\" x2=\"150.0\" y2=\"32.8\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"150.0\" y1=\"220.0\" x2=\"472.0\" y2=\"220.0\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<text x=\"176.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1990</text>\n<circle cx=\"176.0\" cy=\"184.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"228.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1991</text>\n<circle cx=\"228.0\" cy=\"175.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"280.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1992</text>\n<circle cx=\"280.0\" cy=\"148.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"332.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1993</text>\n<circle cx=\"332.0\" cy=\"184.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"384.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1994</text>\n<circle cx=\"384.0\" cy=\"166.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"436.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1995</text>\n<circle cx=\"436.0\" cy=\"130.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"476.0\" y=\"224.0\" text-anchor=\"start\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">Year</text>\n<text x=\"64.0\" y=\"130.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">Number of</text>\n<text x=\"64.0\" y=\"143.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">children in</text>\n<text x=\"64.0\" y=\"156.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">hundreds taking</text>\n<text x=\"64.0\" y=\"169.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">swimming lessons</text>\n</svg>"
+          },
+          "options": [
+            "1991",
+            "1992",
+            "1994",
+            "1995"
+          ],
+          "answer": 3,
+          "hint": "The vertical axis shows the number of children (in hundreds). The year with the HIGHEST dot is the year with the most children.",
+          "keyPoints": [
+            {
+              "text": "the most children",
+              "note": "Find the highest dot on the graph."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look at the two axes: the horizontal axis shows the YEAR and the vertical axis shows the number of children in hundreds who took swimming lessons. A higher dot means more children.",
+              "work": "\\(\\text{higher dot}=\\text{more children}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 580 300\" width=\"100%\" height=\"auto\" style=\"max-width:580px\">\n<line x1=\"150.0\" y1=\"220.0\" x2=\"462.0\" y2=\"220.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<line x1=\"150.0\" y1=\"202.0\" x2=\"462.0\" y2=\"202.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"206.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1</text>\n<line x1=\"150.0\" y1=\"184.0\" x2=\"462.0\" y2=\"184.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"188.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">2</text>\n<line x1=\"150.0\" y1=\"166.0\" x2=\"462.0\" y2=\"166.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"170.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">3</text>\n<line x1=\"150.0\" y1=\"148.0\" x2=\"462.0\" y2=\"148.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"152.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">4</text>\n<line x1=\"150.0\" y1=\"130.0\" x2=\"462.0\" y2=\"130.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"134.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">5</text>\n<line x1=\"150.0\" y1=\"112.0\" x2=\"462.0\" y2=\"112.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"116.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">6</text>\n<line x1=\"150.0\" y1=\"94.0\" x2=\"462.0\" y2=\"94.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"98.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">7</text>\n<line x1=\"150.0\" y1=\"76.0\" x2=\"462.0\" y2=\"76.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"80.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">8</text>\n<line x1=\"150.0\" y1=\"58.0\" x2=\"462.0\" y2=\"58.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"62.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">9</text>\n<line x1=\"150.0\" y1=\"40.0\" x2=\"462.0\" y2=\"40.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"44.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">10</text>\n<rect x=\"150.0\" y=\"94.0\" width=\"312.0\" height=\"126.0\" rx=\"0\" fill=\"#7dd3fc\" fill-opacity=\"0.55\" stroke=\"none\" stroke-width=\"0\"/>\n<line x1=\"150.0\" y1=\"220.0\" x2=\"150.0\" y2=\"32.8\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"150.0\" y1=\"220.0\" x2=\"472.0\" y2=\"220.0\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<text x=\"176.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1990</text>\n<circle cx=\"176.0\" cy=\"184.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"228.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1991</text>\n<circle cx=\"228.0\" cy=\"175.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"280.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1992</text>\n<circle cx=\"280.0\" cy=\"148.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"332.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1993</text>\n<circle cx=\"332.0\" cy=\"184.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"384.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1994</text>\n<circle cx=\"384.0\" cy=\"166.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"436.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1995</text>\n<circle cx=\"436.0\" cy=\"130.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"476.0\" y=\"224.0\" text-anchor=\"start\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">Year</text>\n<text x=\"64.0\" y=\"130.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">Number of</text>\n<text x=\"64.0\" y=\"143.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">children in</text>\n<text x=\"64.0\" y=\"156.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">hundreds taking</text>\n<text x=\"64.0\" y=\"169.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">swimming lessons</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Read the dots from left to right. Their heights (in hundreds of children) are: 1990: 2, 1991: 2.5, 1992: 4, 1993: 2, 1994: 3, 1995: 5.",
+              "work": "\\(2,\\ 2.5,\\ 4,\\ 2,\\ 3,\\ 5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 580 330\" width=\"100%\" height=\"auto\" style=\"max-width:580px\">\n<line x1=\"150.0\" y1=\"220.0\" x2=\"462.0\" y2=\"220.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<line x1=\"150.0\" y1=\"202.0\" x2=\"462.0\" y2=\"202.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"206.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1</text>\n<line x1=\"150.0\" y1=\"184.0\" x2=\"462.0\" y2=\"184.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"188.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">2</text>\n<line x1=\"150.0\" y1=\"166.0\" x2=\"462.0\" y2=\"166.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"170.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">3</text>\n<line x1=\"150.0\" y1=\"148.0\" x2=\"462.0\" y2=\"148.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"152.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">4</text>\n<line x1=\"150.0\" y1=\"130.0\" x2=\"462.0\" y2=\"130.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"134.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">5</text>\n<line x1=\"150.0\" y1=\"112.0\" x2=\"462.0\" y2=\"112.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"116.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">6</text>\n<line x1=\"150.0\" y1=\"94.0\" x2=\"462.0\" y2=\"94.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"98.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">7</text>\n<line x1=\"150.0\" y1=\"76.0\" x2=\"462.0\" y2=\"76.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"80.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">8</text>\n<line x1=\"150.0\" y1=\"58.0\" x2=\"462.0\" y2=\"58.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"62.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">9</text>\n<line x1=\"150.0\" y1=\"40.0\" x2=\"462.0\" y2=\"40.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"44.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">10</text>\n<rect x=\"150.0\" y=\"94.0\" width=\"312.0\" height=\"126.0\" rx=\"0\" fill=\"#7dd3fc\" fill-opacity=\"0.55\" stroke=\"none\" stroke-width=\"0\"/>\n<line x1=\"150.0\" y1=\"220.0\" x2=\"150.0\" y2=\"32.8\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"150.0\" y1=\"220.0\" x2=\"472.0\" y2=\"220.0\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<text x=\"176.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1990</text>\n<circle cx=\"176.0\" cy=\"184.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"176.0\" y=\"174.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#ea580c\">2</text>\n<text x=\"228.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1991</text>\n<circle cx=\"228.0\" cy=\"175.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"228.0\" y=\"165.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#ea580c\">2.5</text>\n<text x=\"280.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1992</text>\n<circle cx=\"280.0\" cy=\"148.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"280.0\" y=\"138.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#ea580c\">4</text>\n<text x=\"332.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1993</text>\n<circle cx=\"332.0\" cy=\"184.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"332.0\" y=\"174.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#ea580c\">2</text>\n<text x=\"384.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1994</text>\n<circle cx=\"384.0\" cy=\"166.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"384.0\" y=\"156.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#ea580c\">3</text>\n<text x=\"436.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1995</text>\n<circle cx=\"436.0\" cy=\"130.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"436.0\" y=\"120.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#ea580c\">5</text>\n<text x=\"476.0\" y=\"224.0\" text-anchor=\"start\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">Year</text>\n<text x=\"64.0\" y=\"130.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">Number of</text>\n<text x=\"64.0\" y=\"143.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">children in</text>\n<text x=\"64.0\" y=\"156.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">hundreds taking</text>\n<text x=\"64.0\" y=\"169.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">swimming lessons</text>\n<text x=\"260.0\" y=\"322.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\">highest dot: 1995 (5 hundreds)</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "The highest dot is the one for 1995, with 5 hundreds, which is 500 children.",
+              "work": "\\(\\boxed{1995}\\)"
+            },
+            {
+              "explain": "Check: the other options have lower dots (1991: 250 children, 1992: 400 children and 1994: 300 children are all fewer than 500). \\(\\checkmark\\)",
+              "work": "\\(250,\\ 400,\\ 300\\lt500\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 8,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Between which years did the largest decrease in children taking swimming lessons occur?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 580 300\" width=\"100%\" height=\"auto\" style=\"max-width:580px\">\n<line x1=\"150.0\" y1=\"220.0\" x2=\"462.0\" y2=\"220.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<line x1=\"150.0\" y1=\"202.0\" x2=\"462.0\" y2=\"202.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"206.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1</text>\n<line x1=\"150.0\" y1=\"184.0\" x2=\"462.0\" y2=\"184.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"188.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">2</text>\n<line x1=\"150.0\" y1=\"166.0\" x2=\"462.0\" y2=\"166.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"170.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">3</text>\n<line x1=\"150.0\" y1=\"148.0\" x2=\"462.0\" y2=\"148.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"152.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">4</text>\n<line x1=\"150.0\" y1=\"130.0\" x2=\"462.0\" y2=\"130.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"134.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">5</text>\n<line x1=\"150.0\" y1=\"112.0\" x2=\"462.0\" y2=\"112.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"116.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">6</text>\n<line x1=\"150.0\" y1=\"94.0\" x2=\"462.0\" y2=\"94.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"98.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">7</text>\n<line x1=\"150.0\" y1=\"76.0\" x2=\"462.0\" y2=\"76.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"80.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">8</text>\n<line x1=\"150.0\" y1=\"58.0\" x2=\"462.0\" y2=\"58.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"62.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">9</text>\n<line x1=\"150.0\" y1=\"40.0\" x2=\"462.0\" y2=\"40.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"44.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">10</text>\n<rect x=\"150.0\" y=\"94.0\" width=\"312.0\" height=\"126.0\" rx=\"0\" fill=\"#7dd3fc\" fill-opacity=\"0.55\" stroke=\"none\" stroke-width=\"0\"/>\n<line x1=\"150.0\" y1=\"220.0\" x2=\"150.0\" y2=\"32.8\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"150.0\" y1=\"220.0\" x2=\"472.0\" y2=\"220.0\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<text x=\"176.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1990</text>\n<circle cx=\"176.0\" cy=\"184.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"228.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1991</text>\n<circle cx=\"228.0\" cy=\"175.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"280.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1992</text>\n<circle cx=\"280.0\" cy=\"148.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"332.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1993</text>\n<circle cx=\"332.0\" cy=\"184.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"384.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1994</text>\n<circle cx=\"384.0\" cy=\"166.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"436.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1995</text>\n<circle cx=\"436.0\" cy=\"130.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"476.0\" y=\"224.0\" text-anchor=\"start\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">Year</text>\n<text x=\"64.0\" y=\"130.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">Number of</text>\n<text x=\"64.0\" y=\"143.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">children in</text>\n<text x=\"64.0\" y=\"156.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">hundreds taking</text>\n<text x=\"64.0\" y=\"169.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">swimming lessons</text>\n</svg>"
+          },
+          "options": [
+            "1990-1991",
+            "1991-1992",
+            "1992-1993",
+            "1993-1994"
+          ],
+          "answer": 2,
+          "hint": "A DECREASE means the dot goes DOWN from one year to the next. Find the change between each pair of neighbouring years (later \\(-\\) earlier) and look for the biggest drop.",
+          "keyPoints": [
+            {
+              "text": "largest decrease",
+              "note": "Only drops count. Compare the sizes of the drops."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the heights in hundreds: 2, 2.5, 4, 2, 3, 5. Work out the change for each pair of years.",
+              "work": "\\(1990-1991:\\ +0.5,\\quad1991-1992:\\ +1.5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 580 330\" width=\"100%\" height=\"auto\" style=\"max-width:580px\">\n<line x1=\"150.0\" y1=\"220.0\" x2=\"462.0\" y2=\"220.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<line x1=\"150.0\" y1=\"202.0\" x2=\"462.0\" y2=\"202.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"206.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1</text>\n<line x1=\"150.0\" y1=\"184.0\" x2=\"462.0\" y2=\"184.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"188.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">2</text>\n<line x1=\"150.0\" y1=\"166.0\" x2=\"462.0\" y2=\"166.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"170.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">3</text>\n<line x1=\"150.0\" y1=\"148.0\" x2=\"462.0\" y2=\"148.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"152.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">4</text>\n<line x1=\"150.0\" y1=\"130.0\" x2=\"462.0\" y2=\"130.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"134.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">5</text>\n<line x1=\"150.0\" y1=\"112.0\" x2=\"462.0\" y2=\"112.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"116.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">6</text>\n<line x1=\"150.0\" y1=\"94.0\" x2=\"462.0\" y2=\"94.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"98.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">7</text>\n<line x1=\"150.0\" y1=\"76.0\" x2=\"462.0\" y2=\"76.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"80.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">8</text>\n<line x1=\"150.0\" y1=\"58.0\" x2=\"462.0\" y2=\"58.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"62.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">9</text>\n<line x1=\"150.0\" y1=\"40.0\" x2=\"462.0\" y2=\"40.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"44.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">10</text>\n<rect x=\"150.0\" y=\"94.0\" width=\"312.0\" height=\"126.0\" rx=\"0\" fill=\"#7dd3fc\" fill-opacity=\"0.55\" stroke=\"none\" stroke-width=\"0\"/>\n<line x1=\"150.0\" y1=\"220.0\" x2=\"150.0\" y2=\"32.8\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"150.0\" y1=\"220.0\" x2=\"472.0\" y2=\"220.0\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<text x=\"176.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1990</text>\n<circle cx=\"176.0\" cy=\"184.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"176.0\" y=\"174.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#ea580c\">2</text>\n<text x=\"228.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1991</text>\n<circle cx=\"228.0\" cy=\"175.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"228.0\" y=\"165.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#ea580c\">2.5</text>\n<text x=\"280.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1992</text>\n<circle cx=\"280.0\" cy=\"148.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"280.0\" y=\"138.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#ea580c\">4</text>\n<text x=\"332.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1993</text>\n<circle cx=\"332.0\" cy=\"184.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"332.0\" y=\"174.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#ea580c\">2</text>\n<text x=\"384.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1994</text>\n<circle cx=\"384.0\" cy=\"166.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"384.0\" y=\"156.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#ea580c\">3</text>\n<text x=\"436.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1995</text>\n<circle cx=\"436.0\" cy=\"130.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"436.0\" y=\"120.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#ea580c\">5</text>\n<text x=\"476.0\" y=\"224.0\" text-anchor=\"start\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">Year</text>\n<text x=\"64.0\" y=\"130.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">Number of</text>\n<text x=\"64.0\" y=\"143.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">children in</text>\n<text x=\"64.0\" y=\"156.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">hundreds taking</text>\n<text x=\"64.0\" y=\"169.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">swimming lessons</text>\n<text x=\"260.0\" y=\"322.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\">highest dot: 1995 (5 hundreds)</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "1992 to 1993: the number falls from 4 to 2. 1993 to 1994: it rises from 2 to 3, and 1994 to 1995 it rises from 3 to 5.",
+              "work": "\\(1992\\text{-}1993:\\ 2-4=-2,\\quad1993\\text{-}1994:\\ +1\\)"
+            },
+            {
+              "explain": "The only decrease is between 1992 and 1993 (a drop of 2 hundred children).",
+              "work": "\\(\\boxed{1992\\text{-}1993}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 9,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What was the average number of children taking swim lessons from 1990 to 1995?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 580 300\" width=\"100%\" height=\"auto\" style=\"max-width:580px\">\n<line x1=\"150.0\" y1=\"220.0\" x2=\"462.0\" y2=\"220.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<line x1=\"150.0\" y1=\"202.0\" x2=\"462.0\" y2=\"202.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"206.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1</text>\n<line x1=\"150.0\" y1=\"184.0\" x2=\"462.0\" y2=\"184.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"188.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">2</text>\n<line x1=\"150.0\" y1=\"166.0\" x2=\"462.0\" y2=\"166.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"170.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">3</text>\n<line x1=\"150.0\" y1=\"148.0\" x2=\"462.0\" y2=\"148.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"152.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">4</text>\n<line x1=\"150.0\" y1=\"130.0\" x2=\"462.0\" y2=\"130.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"134.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">5</text>\n<line x1=\"150.0\" y1=\"112.0\" x2=\"462.0\" y2=\"112.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"116.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">6</text>\n<line x1=\"150.0\" y1=\"94.0\" x2=\"462.0\" y2=\"94.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"98.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">7</text>\n<line x1=\"150.0\" y1=\"76.0\" x2=\"462.0\" y2=\"76.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"80.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">8</text>\n<line x1=\"150.0\" y1=\"58.0\" x2=\"462.0\" y2=\"58.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"62.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">9</text>\n<line x1=\"150.0\" y1=\"40.0\" x2=\"462.0\" y2=\"40.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"44.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">10</text>\n<rect x=\"150.0\" y=\"94.0\" width=\"312.0\" height=\"126.0\" rx=\"0\" fill=\"#7dd3fc\" fill-opacity=\"0.55\" stroke=\"none\" stroke-width=\"0\"/>\n<line x1=\"150.0\" y1=\"220.0\" x2=\"150.0\" y2=\"32.8\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"150.0\" y1=\"220.0\" x2=\"472.0\" y2=\"220.0\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<text x=\"176.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1990</text>\n<circle cx=\"176.0\" cy=\"184.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"228.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1991</text>\n<circle cx=\"228.0\" cy=\"175.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"280.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1992</text>\n<circle cx=\"280.0\" cy=\"148.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"332.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1993</text>\n<circle cx=\"332.0\" cy=\"184.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"384.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1994</text>\n<circle cx=\"384.0\" cy=\"166.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"436.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1995</text>\n<circle cx=\"436.0\" cy=\"130.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"476.0\" y=\"224.0\" text-anchor=\"start\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">Year</text>\n<text x=\"64.0\" y=\"130.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">Number of</text>\n<text x=\"64.0\" y=\"143.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">children in</text>\n<text x=\"64.0\" y=\"156.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">hundreds taking</text>\n<text x=\"64.0\" y=\"169.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">swimming lessons</text>\n</svg>"
+          },
+          "options": [
+            "\\(3.08\\)",
+            "\\(30.8\\)",
+            "\\(308\\dfrac13\\)",
+            "\\(385\\)"
+          ],
+          "answer": 2,
+          "hint": "The graph is in HUNDREDS of children, so change each reading into a number of children first. Add all six years and divide by 6.",
+          "keyPoints": [
+            {
+              "text": "average number of children",
+              "note": "Average = total ÷ number of years. Remember each unit on the graph is 100 children."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the six values in hundreds and change them to numbers of children: \\(2\\to200\\), \\(2.5\\to250\\), \\(4\\to400\\), \\(2\\to200\\), \\(3\\to300\\), \\(5\\to500\\).",
+              "work": "\\(200,\\ 250,\\ 400,\\ 200,\\ 300,\\ 500\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 580 330\" width=\"100%\" height=\"auto\" style=\"max-width:580px\">\n<line x1=\"150.0\" y1=\"220.0\" x2=\"462.0\" y2=\"220.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<line x1=\"150.0\" y1=\"202.0\" x2=\"462.0\" y2=\"202.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"206.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1</text>\n<line x1=\"150.0\" y1=\"184.0\" x2=\"462.0\" y2=\"184.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"188.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">2</text>\n<line x1=\"150.0\" y1=\"166.0\" x2=\"462.0\" y2=\"166.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"170.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">3</text>\n<line x1=\"150.0\" y1=\"148.0\" x2=\"462.0\" y2=\"148.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"152.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">4</text>\n<line x1=\"150.0\" y1=\"130.0\" x2=\"462.0\" y2=\"130.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"134.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">5</text>\n<line x1=\"150.0\" y1=\"112.0\" x2=\"462.0\" y2=\"112.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"116.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">6</text>\n<line x1=\"150.0\" y1=\"94.0\" x2=\"462.0\" y2=\"94.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"98.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">7</text>\n<line x1=\"150.0\" y1=\"76.0\" x2=\"462.0\" y2=\"76.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"80.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">8</text>\n<line x1=\"150.0\" y1=\"58.0\" x2=\"462.0\" y2=\"58.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"62.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">9</text>\n<line x1=\"150.0\" y1=\"40.0\" x2=\"462.0\" y2=\"40.0\" stroke=\"#bae6fd\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<text x=\"142.0\" y=\"44.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">10</text>\n<rect x=\"150.0\" y=\"94.0\" width=\"312.0\" height=\"126.0\" rx=\"0\" fill=\"#7dd3fc\" fill-opacity=\"0.55\" stroke=\"none\" stroke-width=\"0\"/>\n<line x1=\"150.0\" y1=\"220.0\" x2=\"150.0\" y2=\"32.8\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"150.0\" y1=\"220.0\" x2=\"472.0\" y2=\"220.0\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<text x=\"176.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1990</text>\n<circle cx=\"176.0\" cy=\"184.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"176.0\" y=\"174.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#ea580c\">2</text>\n<text x=\"228.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1991</text>\n<circle cx=\"228.0\" cy=\"175.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"228.0\" y=\"165.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#ea580c\">2.5</text>\n<text x=\"280.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1992</text>\n<circle cx=\"280.0\" cy=\"148.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"280.0\" y=\"138.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#ea580c\">4</text>\n<text x=\"332.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1993</text>\n<circle cx=\"332.0\" cy=\"184.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"332.0\" y=\"174.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#ea580c\">2</text>\n<text x=\"384.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1994</text>\n<circle cx=\"384.0\" cy=\"166.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"384.0\" y=\"156.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#ea580c\">3</text>\n<text x=\"436.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">1995</text>\n<circle cx=\"436.0\" cy=\"130.0\" r=\"4\" fill=\"#475569\"/>\n<text x=\"436.0\" y=\"120.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#ea580c\">5</text>\n<text x=\"476.0\" y=\"224.0\" text-anchor=\"start\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">Year</text>\n<text x=\"64.0\" y=\"130.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">Number of</text>\n<text x=\"64.0\" y=\"143.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">children in</text>\n<text x=\"64.0\" y=\"156.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">hundreds taking</text>\n<text x=\"64.0\" y=\"169.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">swimming lessons</text>\n<text x=\"260.0\" y=\"322.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\">highest dot: 1995 (5 hundreds)</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Add the six numbers.",
+              "work": "\\(200+250+400+200+300+500=1850\\)"
+            },
+            {
+              "explain": "Divide by 6 years: \\(1850\\div6=308\\) remainder 2, which is \\(308\\dfrac26=308\\dfrac13\\).",
+              "work": "\\(1850\\div6=\\boxed{308\\dfrac13}\\)"
+            },
+            {
+              "explain": "Check: the average must be between the lowest (200) and highest (500) values. \\(\\checkmark\\) The options 3.08 and 30.8 are wrong because they ignore the “hundreds”.",
+              "work": "\\(200\\lt308\\dfrac13\\lt500\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 10,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How many cubed pieces of fudge that are 3 cm on each side can be packed into a Christmas tin that is 9 cm deep by 12 cm wide by 8 cm high with the lid still being able to be closed?",
+          "options": [
+            "\\(18\\)",
+            "\\(24\\)",
+            "\\(32\\)",
+            "\\(36\\)"
+          ],
+          "answer": 1,
+          "hint": "Count how many cubes fit along each edge of the tin. Careful: the lid must still close, so the pieces cannot stick up above the top. Only WHOLE cubes count (no cutting).",
+          "keyPoints": [
+            {
+              "text": "with the lid still being able to be closed",
+              "note": "The cubes must stay inside the 8 cm height. A stack of 3 cubes would be 9 cm, which is too tall."
+            },
+            {
+              "text": "3 cm on each side",
+              "note": "Each cube measures 3 cm in every direction."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Along the 9 cm depth: \\(9\\div3=3\\) cubes fit exactly.",
+              "work": "\\(9\\div3=3\\)"
+            },
+            {
+              "explain": "Along the 12 cm width: \\(12\\div3=4\\) cubes fit exactly.",
+              "work": "\\(12\\div3=4\\)"
+            },
+            {
+              "explain": "Along the 8 cm height: \\(8\\div3=2\\) remainder 2, so only 2 layers of cubes fit (3 layers would be 9 cm, which is more than 8 cm, so the lid would not close).",
+              "work": "\\(8\\div3=2\\text{ r }2\\Rightarrow2\\text{ layers}\\)"
+            },
+            {
+              "explain": "Multiply the numbers of cubes along the three edges.",
+              "work": "\\(3\\times4\\times2=\\boxed{24}\\)"
+            },
+            {
+              "explain": "Check: if you divided the volumes, \\(\\dfrac{9\\times12\\times8}{27}=32\\), but the cubes cannot be cut, so only 24 whole cubes fit. \\(\\checkmark\\)",
+              "work": "\\(24\\lt32\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 11,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q12",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "In a writing competition, first place receives \\(\\dfrac12\\) of the prize money. The runner up receives \\(\\dfrac14\\) of what the first place won. What was the total amount of prize money distributed if the runner up receives \\(\\$6,000\\)?",
+          "options": [
+            "\\(\\$6,000\\)",
+            "\\(\\$8,500\\)",
+            "\\(\\$24,000\\)",
+            "\\(\\$48,000\\)"
+          ],
+          "answer": 3,
+          "hint": "Work backwards. The runner up gets \\(\\dfrac14\\) of the FIRST prize, so find the first prize. The first prize is \\(\\dfrac12\\) of ALL the prize money, so double it.",
+          "keyPoints": [
+            {
+              "text": "\\(\\dfrac14\\) of what the first place won",
+              "note": "The quarter is a quarter of the FIRST prize, not of the total."
+            },
+            {
+              "text": "total amount of prize money distributed",
+              "note": "The total is bigger than the first prize: first prize is only half of it."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The runner up has \\(\\dfrac14\\) of the first prize, so the first prize is 4 times as much.",
+              "work": "\\(4\\times6000=\\$24\\,000\\)"
+            },
+            {
+              "explain": "First place receives \\(\\dfrac12\\) of the total prize money, so the total is double the first prize.",
+              "work": "\\(2\\times24\\,000=\\boxed{\\$48\\,000}\\)"
+            },
+            {
+              "explain": "Check: first place \\(=\\dfrac12\\times48\\,000=24\\,000\\), runner up \\(=\\dfrac14\\times24\\,000=6000\\). \\(\\checkmark\\)",
+              "work": "\\(\\dfrac14\\times24\\,000=6000\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 12,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q13",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The cost to ride on a ferry is \\(\\$5.00\\) per vehicle and driver with an additional cost of 50 cents per passenger. If the charge to get on the ferry was \\(\\$6.50\\), how many people were in the vehicle?",
+          "options": [
+            "\\(1\\)",
+            "\\(2\\)",
+            "\\(3\\)",
+            "\\(4\\)"
+          ],
+          "answer": 3,
+          "hint": "The driver is included in the \\(\\$5.00\\) vehicle charge. Take that away from \\(\\$6.50\\) to find what was paid for PASSENGERS. Then remember to count the driver too when answering “how many people”.",
+          "keyPoints": [
+            {
+              "text": "per vehicle and driver",
+              "note": "The \\(\\$5.00\\) already covers the vehicle AND the driver."
+            },
+            {
+              "text": "how many people were in the vehicle",
+              "note": "People = passengers + the driver."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Take the vehicle-and-driver charge from the total.",
+              "work": "\\(6.50-5.00=\\$1.50\\text{ for passengers}\\)"
+            },
+            {
+              "explain": "Each passenger costs 50 cents, \\(\\$0.50\\).",
+              "work": "\\(1.50\\div0.50=3\\text{ passengers}\\)"
+            },
+            {
+              "explain": "The driver is also a person in the vehicle, so add 1.",
+              "work": "\\(3+1=\\boxed{4\\text{ people}}\\)"
+            },
+            {
+              "explain": "Check: \\(5.00+3\\times0.50=\\$6.50\\). \\(\\checkmark\\) The option 3 forgets the driver.",
+              "work": "\\(5.00+1.50=6.50\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 13,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Sue receives a base salary of \\(\\$90\\) weekly plus a 12% commission on all sales. Sue made \\(\\$3,000\\) in sales this week. How much did she make in total?",
+          "options": [
+            "\\(\\$375\\)",
+            "\\(\\$450\\)",
+            "\\(\\$480\\)",
+            "\\(\\$510\\)"
+          ],
+          "answer": 1,
+          "hint": "Her total pay is the base salary PLUS the commission. Find 12% of the sales for the commission.",
+          "keyPoints": [
+            {
+              "text": "12% commission on all sales",
+              "note": "Commission = 12% of \\(\\$3,000\\)."
+            },
+            {
+              "text": "How much did she make in total",
+              "note": "Total = base salary + commission."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the commission: 12% of \\(\\$3000\\). 1% is \\(\\$30\\), so 12% is 12 times that.",
+              "work": "\\(0.12\\times3000=\\$360\\)"
+            },
+            {
+              "explain": "Add the base salary of \\(\\$90\\).",
+              "work": "\\(90+360=\\boxed{\\$450}\\)"
+            },
+            {
+              "explain": "Check: the option \\(\\$360\\) (not offered) would be the commission only. \\(\\checkmark\\)",
+              "work": "\\(360+90=450\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 14,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q15",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Two angles in a triangle equal \\(55^\\circ\\). What is the measurement of the third angle?",
+          "options": [
+            "\\(125^\\circ\\)",
+            "\\(70^\\circ\\)",
+            "\\(80^\\circ\\)",
+            "\\(90^\\circ\\)"
+          ],
+          "answer": 0,
+          "hint": "The three angles of a triangle always add up to \\(180^\\circ\\). The two angles together are \\(55^\\circ\\), so the third angle is what is left.",
+          "keyPoints": [
+            {
+              "text": "Two angles in a triangle equal",
+              "note": "The two angles TOGETHER make 55°, so subtract that total from 180°."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The angles of a triangle add up to \\(180^\\circ\\).",
+              "work": "\\(a+b+c=180^\\circ\\)"
+            },
+            {
+              "explain": "The two angles together equal \\(55^\\circ\\).",
+              "work": "\\(a+b=55^\\circ\\)"
+            },
+            {
+              "explain": "Subtract from \\(180^\\circ\\) to find the third angle.",
+              "work": "\\(c=180^\\circ-55^\\circ=\\boxed{125^\\circ}\\)"
+            },
+            {
+              "explain": "Check: \\(55^\\circ+125^\\circ=180^\\circ\\). \\(\\checkmark\\) The third angle is bigger than \\(90^\\circ\\), so the triangle is obtuse. (If each of the two angles were \\(55^\\circ\\) the third would be \\(70^\\circ\\), but the question gives \\(55^\\circ\\) for the pair together.)",
+              "work": "\\(55^\\circ+125^\\circ=180^\\circ\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 15,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q16",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Pipe A can fill a tank in 3 hours. If pipe B can fill the same tank in 2 hours, how many minutes will it take both pipes to fill \\(\\dfrac23\\) of the tank altogether?",
+          "options": [
+            "\\(48\\text{ minutes}\\)",
+            "\\(54\\text{ minutes}\\)",
+            "\\(60\\text{ minutes}\\)",
+            "\\(1\\text{ hour }20\\text{ minutes}\\)"
+          ],
+          "answer": 0,
+          "hint": "Work with the part of the tank each pipe fills in ONE hour, and add them. Then find how long \\(\\dfrac23\\) of the tank takes. Change hours to minutes at the end.",
+          "keyPoints": [
+            {
+              "text": "fill the same tank in 2 hours",
+              "note": "Pipe B fills 1/2 of the tank each hour; pipe A fills 1/3 each hour."
+            },
+            {
+              "text": "\\(\\dfrac23\\) of the tank",
+              "note": "You only need to fill two thirds of the tank, not the whole tank."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "In one hour pipe A fills \\(\\dfrac13\\) of the tank and pipe B fills \\(\\dfrac12\\) of the tank. Together:",
+              "work": "\\(\\dfrac13+\\dfrac12=\\dfrac26+\\dfrac36=\\dfrac56\\text{ of the tank per hour}\\)"
+            },
+            {
+              "explain": "Time to fill \\(\\dfrac23\\) of the tank \\(=\\) amount \\(\\div\\) rate.",
+              "work": "\\(\\dfrac23\\div\\dfrac56=\\dfrac23\\times\\dfrac65=\\dfrac{12}{15}=\\dfrac45\\text{ hour}\\)"
+            },
+            {
+              "explain": "Change \\(\\dfrac45\\) of an hour into minutes.",
+              "work": "\\(\\dfrac45\\times60=\\boxed{48\\text{ minutes}}\\)"
+            },
+            {
+              "explain": "Check: in 48 minutes (\\(\\dfrac45\\) h) pipe A fills \\(\\dfrac13\\times\\dfrac45=\\dfrac{4}{15}\\) and pipe B fills \\(\\dfrac12\\times\\dfrac45=\\dfrac{6}{15}\\). Together \\(\\dfrac{10}{15}=\\dfrac23\\). \\(\\checkmark\\)",
+              "work": "\\(\\dfrac{4}{15}+\\dfrac{6}{15}=\\dfrac23\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 16,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q17",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Robert's rent increased each year by the same percent, as shown in the chart below. At that rate, what was his rent in 2016?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 540 170\" width=\"100%\" height=\"auto\" style=\"max-width:540px\">\n<rect x=\"90.0\" y=\"20.0\" width=\"120.0\" height=\"38.0\" rx=\"0\" fill=\"#bfdbfe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<rect x=\"210.0\" y=\"20.0\" width=\"120.0\" height=\"38.0\" rx=\"0\" fill=\"#e0f2fe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"150.0\" y=\"45.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">2013</text>\n<text x=\"270.0\" y=\"45.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">$250</text>\n<rect x=\"90.0\" y=\"58.0\" width=\"120.0\" height=\"38.0\" rx=\"0\" fill=\"#bfdbfe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<rect x=\"210.0\" y=\"58.0\" width=\"120.0\" height=\"38.0\" rx=\"0\" fill=\"#e0f2fe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"150.0\" y=\"83.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">2014</text>\n<text x=\"270.0\" y=\"83.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">$300</text>\n<rect x=\"90.0\" y=\"96.0\" width=\"120.0\" height=\"38.0\" rx=\"0\" fill=\"#bfdbfe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<rect x=\"210.0\" y=\"96.0\" width=\"120.0\" height=\"38.0\" rx=\"0\" fill=\"#e0f2fe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"150.0\" y=\"121.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">2015</text>\n<text x=\"270.0\" y=\"121.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">$360</text>\n</svg>"
+          },
+          "options": [
+            "\\(\\$420\\)",
+            "\\(\\$430\\)",
+            "\\(\\$432\\)",
+            "\\(\\$438\\)"
+          ],
+          "answer": 2,
+          "hint": "“The same PERCENT each year” means the rent is multiplied by the same number each year (not increased by the same dollar amount). Find the percent increase from 2013 to 2014 and check it from 2014 to 2015.",
+          "keyPoints": [
+            {
+              "text": "increased each year by the same percent",
+              "note": "A constant PERCENT increase: the dollar increase grows each year (50, then 60, ...)."
+            },
+            {
+              "text": "what was his rent in 2016",
+              "note": "Apply the same percent increase once more to the 2015 rent."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Percent increase from 2013 to 2014: increase \\(\\div\\) original.",
+              "work": "\\(\\dfrac{300-250}{250}=\\dfrac{50}{250}=20\\%\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 540 170\" width=\"100%\" height=\"auto\" style=\"max-width:540px\">\n<rect x=\"90.0\" y=\"20.0\" width=\"120.0\" height=\"38.0\" rx=\"0\" fill=\"#bfdbfe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<rect x=\"210.0\" y=\"20.0\" width=\"120.0\" height=\"38.0\" rx=\"0\" fill=\"#e0f2fe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"150.0\" y=\"45.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">2013</text>\n<text x=\"270.0\" y=\"45.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">$250</text>\n<rect x=\"90.0\" y=\"58.0\" width=\"120.0\" height=\"38.0\" rx=\"0\" fill=\"#bfdbfe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<rect x=\"210.0\" y=\"58.0\" width=\"120.0\" height=\"38.0\" rx=\"0\" fill=\"#e0f2fe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"150.0\" y=\"83.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">2014</text>\n<text x=\"270.0\" y=\"83.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">$300</text>\n<rect x=\"90.0\" y=\"96.0\" width=\"120.0\" height=\"38.0\" rx=\"0\" fill=\"#bfdbfe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<rect x=\"210.0\" y=\"96.0\" width=\"120.0\" height=\"38.0\" rx=\"0\" fill=\"#e0f2fe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"150.0\" y=\"121.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">2015</text>\n<text x=\"270.0\" y=\"121.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">$360</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Check the next year: from 2014 to 2015 the rent went from 300 to 360.",
+              "work": "\\(\\dfrac{360-300}{300}=\\dfrac{60}{300}=20\\%\\ \\checkmark\\)"
+            },
+            {
+              "explain": "So each year the rent is 20% more: multiply by 1.2. For 2016 use the 2015 rent.",
+              "work": "\\(360\\times1.2=\\boxed{\\$432}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 540 200\" width=\"100%\" height=\"auto\" style=\"max-width:540px\">\n<rect x=\"90.0\" y=\"20.0\" width=\"120.0\" height=\"38.0\" rx=\"0\" fill=\"#bfdbfe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<rect x=\"210.0\" y=\"20.0\" width=\"120.0\" height=\"38.0\" rx=\"0\" fill=\"#e0f2fe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"150.0\" y=\"45.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">2013</text>\n<text x=\"270.0\" y=\"45.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">$250</text>\n<rect x=\"90.0\" y=\"58.0\" width=\"120.0\" height=\"38.0\" rx=\"0\" fill=\"#bfdbfe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<rect x=\"210.0\" y=\"58.0\" width=\"120.0\" height=\"38.0\" rx=\"0\" fill=\"#e0f2fe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"150.0\" y=\"83.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">2014</text>\n<text x=\"270.0\" y=\"83.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">$300</text>\n<rect x=\"90.0\" y=\"96.0\" width=\"120.0\" height=\"38.0\" rx=\"0\" fill=\"#bfdbfe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<rect x=\"210.0\" y=\"96.0\" width=\"120.0\" height=\"38.0\" rx=\"0\" fill=\"#e0f2fe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.4\"/>\n<text x=\"150.0\" y=\"121.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">2015</text>\n<text x=\"270.0\" y=\"121.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">$360</text>\n<text x=\"360.0\" y=\"42.0\" text-anchor=\"start\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\">×1.2</text>\n<text x=\"360.0\" y=\"80.0\" text-anchor=\"start\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\">×1.2</text>\n<text x=\"360.0\" y=\"118.0\" text-anchor=\"start\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\">×1.2 = $432 in 2016</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Check: the dollar increase in 2016 is \\(20\\%\\) of \\(360=\\$72\\), and \\(360+72=432\\). The option \\(\\$420\\) wrongly adds the same \\(\\$60\\) as last year. \\(\\checkmark\\)",
+              "work": "\\(360+72=432\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 17,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which angle from the following is an obtuse angle?",
+          "options": [
+            "\\(\\dfrac{12}{21}\\text{ of a right angle}\\)",
+            "\\(\\dfrac{11}{21}\\text{ of a revolution}\\)",
+            "\\(\\dfrac{8}{20}\\text{ of a revolution}\\)",
+            "\\(\\dfrac{8}{20}\\text{ of a right angle}\\)"
+          ],
+          "answer": 2,
+          "hint": "An obtuse angle is bigger than \\(90^\\circ\\) and smaller than \\(180^\\circ\\). Change each option into degrees: a right angle is \\(90^\\circ\\) and a full revolution is \\(360^\\circ\\).",
+          "keyPoints": [
+            {
+              "text": "an obtuse angle",
+              "note": "Obtuse: more than 90° but less than 180°."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Option A: \\(\\dfrac{12}{21}\\) of a right angle is less than one right angle, so it is acute.",
+              "work": "\\(\\dfrac{12}{21}\\times90^\\circ\\approx51^\\circ\\)"
+            },
+            {
+              "explain": "Option B: \\(\\dfrac{11}{21}\\) of a revolution is just over half a turn (\\(180^\\circ\\)), so it is a reflex angle.",
+              "work": "\\(\\dfrac{11}{21}\\times360^\\circ\\approx189^\\circ\\)"
+            },
+            {
+              "explain": "Option C: \\(\\dfrac{8}{20}=\\dfrac25\\) of a revolution.",
+              "work": "\\(\\dfrac25\\times360^\\circ=144^\\circ\\)"
+            },
+            {
+              "explain": "\\(144^\\circ\\) is between \\(90^\\circ\\) and \\(180^\\circ\\), so it is obtuse. Option D: \\(\\dfrac{8}{20}\\) of a right angle is \\(36^\\circ\\), which is acute.",
+              "work": "\\(\\boxed{\\dfrac{8}{20}\\text{ of a revolution}=144^\\circ}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 18,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Three single squares are placed side by side to form a single rectangle whose perimeter is 56 cm. What is the area of each square?",
+          "options": [
+            "\\(36\\text{ cm}^2\\)",
+            "\\(49\\text{ cm}^2\\)",
+            "\\(100\\text{ cm}^2\\)",
+            "\\(64\\text{ cm}^2\\)"
+          ],
+          "answer": 1,
+          "hint": "Let the side of each square be \\(s\\). The rectangle is \\(3s\\) long and \\(s\\) wide. Write the perimeter in terms of \\(s\\) and solve, then find the area of ONE square.",
+          "keyPoints": [
+            {
+              "text": "Three single squares are placed side by side",
+              "note": "The rectangle is 3 squares long and 1 square high: 3s by s."
+            },
+            {
+              "text": "area of each square",
+              "note": "The answer is the area of ONE square (s × s), not of the rectangle."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Let the side of each square be \\(s\\). The rectangle has length \\(3s\\) and width \\(s\\).",
+              "work": "\\(\\text{length}=3s,\\qquad\\text{width}=s\\)"
+            },
+            {
+              "explain": "Perimeter \\(=2\\times(\\text{length}+\\text{width})\\).",
+              "work": "\\(2(3s+s)=8s=56\\)"
+            },
+            {
+              "explain": "Divide by 8.",
+              "work": "\\(s=56\\div8=7\\text{ cm}\\)"
+            },
+            {
+              "explain": "Area of one square.",
+              "work": "\\(7\\times7=\\boxed{49\\text{ cm}^2}\\)"
+            },
+            {
+              "explain": "Check: the rectangle is 21 cm by 7 cm, and its perimeter is \\(2(21+7)=56\\) cm. \\(\\checkmark\\)",
+              "work": "\\(2(21+7)=56\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 19,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Each fortnight 20% of Steven's pay goes to home loan repayments and 28% to tax. This leaves him with \\(\\$416.00\\). What is his weekly pay?",
+          "options": [
+            "\\(\\$500\\)",
+            "\\(\\$800\\)",
+            "\\(\\$1000\\)",
+            "\\(\\$400\\)"
+          ],
+          "answer": 3,
+          "hint": "A fortnight is TWO weeks. The percentages and the \\(\\$416\\) refer to ONE fortnight of pay. First find his pay for a fortnight, then halve it to get his weekly pay.",
+          "keyPoints": [
+            {
+              "text": "Each fortnight",
+              "note": "A fortnight is 2 weeks (14 days). The deductions are taken from the pay for a fortnight."
+            },
+            {
+              "text": "What is his weekly pay",
+              "note": "The question asks for the pay per WEEK, so divide the fortnightly pay by 2."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "20% goes to the loan and 28% to tax. Find the percentage that is left.",
+              "work": "\\(100\\%-20\\%-28\\%=52\\%\\)"
+            },
+            {
+              "explain": "The \\(\\$416\\) is 52% of his fortnightly pay. Find 1%, then 100%.",
+              "work": "\\(52\\%=\\$416\\Rightarrow1\\%=416\\div52=\\$8\\Rightarrow100\\%=\\$800\\)"
+            },
+            {
+              "explain": "So his pay for a fortnight is \\(\\$800\\). A fortnight is 2 weeks, so his weekly pay is half of that.",
+              "work": "\\(800\\div2=\\boxed{\\$400}\\)"
+            },
+            {
+              "explain": "Check: weekly pay \\(\\$400\\) gives a fortnightly pay of \\(\\$800\\); 52% of \\(\\$800\\) is \\(\\$416\\). \\(\\checkmark\\) (The option \\(\\$800\\) is his pay for a whole fortnight.)",
+              "work": "\\(0.52\\times800=416\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 20,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q21",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A car travels at an average speed of 80 km/h for 60 km and at an average speed of 100 km/h for another 40 km. How long does it take to travel the 100 km?",
+          "options": [
+            "65 minute",
+            "112 minute",
+            "56 minute",
+            "69 minutes"
+          ],
+          "answer": 3,
+          "hint": "Find the time for each part separately (time \\(=\\) distance \\(\\div\\) speed) and add them. Change hours to minutes.",
+          "keyPoints": [
+            {
+              "text": "at an average speed of 80 km/h for 60 km",
+              "note": "Two different speeds (80 and 100 km/h): calculate each time on its own."
+            },
+            {
+              "text": "How long does it take to travel the 100 km",
+              "note": "Add the two times."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Time for the first 60 km at 80 km/h.",
+              "work": "\\(60\\div80=0.75\\text{ h}=45\\text{ minutes}\\)"
+            },
+            {
+              "explain": "Time for the other 40 km at 100 km/h.",
+              "work": "\\(40\\div100=0.4\\text{ h}=24\\text{ minutes}\\)"
+            },
+            {
+              "explain": "Add the two times.",
+              "work": "\\(45+24=\\boxed{69\\text{ minutes}}\\)"
+            },
+            {
+              "explain": "Check: the average speed over the whole trip is \\(100\\div\\dfrac{69}{60}\\approx87\\) km/h, which is between 80 and 100 km/h. \\(\\checkmark\\)",
+              "work": "\\(100\\div1.15\\approx87\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 21,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q22",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A square P is cut off from a rectangular piece of cardboard ABCD which measures 12 cm by 15 cm. The area of the shaded part is \\(99\\text{ cm}^2\\). What is the perimeter of the square P in centimetres?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 230\" width=\"100%\" height=\"auto\" style=\"max-width:440px\">\n<rect x=\"80.0\" y=\"30.0\" width=\"210.0\" height=\"168.0\" rx=\"0\" fill=\"#99f6e4\" fill-opacity=\"0.7\" stroke=\"#475569\" stroke-width=\"1.8\"/>\n<rect x=\"80.0\" y=\"30.0\" width=\"126.0\" height=\"126.0\" rx=\"0\" fill=\"white\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.8\"/>\n<text x=\"143.0\" y=\"98.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\">P</text>\n<text x=\"248.0\" y=\"114.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">99 cm²</text>\n<text x=\"66.0\" y=\"24.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">A</text>\n<text x=\"302.0\" y=\"24.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">B</text>\n<text x=\"302.0\" y=\"214.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">C</text>\n<text x=\"66.0\" y=\"214.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">D</text>\n<text x=\"330.0\" y=\"114.0\" text-anchor=\"start\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">12 cm</text>\n<text x=\"185.0\" y=\"218.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">15 cm</text>\n</svg>"
+          },
+          "options": [
+            "\\(180\\)",
+            "\\(81\\)",
+            "\\(9\\)",
+            "\\(36\\)"
+          ],
+          "answer": 3,
+          "hint": "The rectangle is split into the square P and the shaded part. Find the area of the whole rectangle and take away the shaded part to get the area of P. Then find the side of P and the PERIMETER (4 sides).",
+          "keyPoints": [
+            {
+              "text": "The area of the shaded part is",
+              "note": "Area of P = area of the whole rectangle − area of the shaded part."
+            },
+            {
+              "text": "perimeter of the square P",
+              "note": "The answer is the perimeter (4 × side), not the area."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Area of the whole piece of cardboard.",
+              "work": "\\(15\\times12=180\\text{ cm}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 230\" width=\"100%\" height=\"auto\" style=\"max-width:440px\">\n<rect x=\"80.0\" y=\"30.0\" width=\"210.0\" height=\"168.0\" rx=\"0\" fill=\"#99f6e4\" fill-opacity=\"0.7\" stroke=\"#475569\" stroke-width=\"1.8\"/>\n<rect x=\"80.0\" y=\"30.0\" width=\"126.0\" height=\"126.0\" rx=\"0\" fill=\"white\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.8\"/>\n<text x=\"143.0\" y=\"98.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\">P</text>\n<text x=\"248.0\" y=\"114.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">99 cm²</text>\n<text x=\"66.0\" y=\"24.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">A</text>\n<text x=\"302.0\" y=\"24.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">B</text>\n<text x=\"302.0\" y=\"214.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">C</text>\n<text x=\"66.0\" y=\"214.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">D</text>\n<text x=\"330.0\" y=\"114.0\" text-anchor=\"start\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">12 cm</text>\n<text x=\"185.0\" y=\"218.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">15 cm</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "The square P is the part that is not shaded.",
+              "work": "\\(180-99=81\\text{ cm}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 250\" width=\"100%\" height=\"auto\" style=\"max-width:440px\">\n<rect x=\"80.0\" y=\"30.0\" width=\"210.0\" height=\"168.0\" rx=\"0\" fill=\"#99f6e4\" fill-opacity=\"0.7\" stroke=\"#475569\" stroke-width=\"1.8\"/>\n<rect x=\"80.0\" y=\"30.0\" width=\"126.0\" height=\"126.0\" rx=\"0\" fill=\"white\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.8\"/>\n<text x=\"143.0\" y=\"98.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\">P</text>\n<text x=\"248.0\" y=\"114.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">99 cm²</text>\n<text x=\"66.0\" y=\"24.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">A</text>\n<text x=\"302.0\" y=\"24.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">B</text>\n<text x=\"302.0\" y=\"214.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">C</text>\n<text x=\"66.0\" y=\"214.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">D</text>\n<text x=\"330.0\" y=\"114.0\" text-anchor=\"start\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">12 cm</text>\n<text x=\"185.0\" y=\"218.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">15 cm</text>\n<text x=\"220.0\" y=\"246.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\">whole 15 × 12 = 180;  P = 180 − 99 = 81 = 9 × 9</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Find the side of the square: the number that multiplies by itself to give 81.",
+              "work": "\\(\\text{side}=9\\text{ cm}\\ (9\\times9=81)\\)"
+            },
+            {
+              "explain": "Perimeter of the square.",
+              "work": "\\(4\\times9=\\boxed{36\\text{ cm}}\\)"
+            },
+            {
+              "explain": "Check: the options 81 and 9 are the area and the side. A 9 cm square fits inside the 12 cm by 15 cm piece. \\(\\checkmark\\)",
+              "work": "\\(9\\lt12\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 22,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q23",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Adam has twice as much money as George. Daniel has \\(\\$15\\) more than Adam. If they have a total of \\(\\$102\\), how much do George and Daniel have together?",
+          "options": [
+            "\\(\\$67.20\\)",
+            "\\(\\$62.20\\)",
+            "\\(\\$76.60\\)",
+            "\\(\\$65.70\\)"
+          ],
+          "answer": 0,
+          "hint": "Let George have \\(x\\) dollars. Then write Adam's and Daniel's money in terms of \\(x\\). The three amounts add to \\(\\$102\\). Find \\(x\\) first, then add George's and Daniel's amounts.",
+          "keyPoints": [
+            {
+              "text": "Adam has twice as much money as George",
+              "note": "Adam = 2 × George."
+            },
+            {
+              "text": "how much do George and Daniel have together",
+              "note": "The answer is George + Daniel, not all three."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Let George have \\(x\\) dollars. Adam has \\(2x\\) and Daniel has \\(2x+15\\).",
+              "work": "\\(\\text{George}=x,\\quad\\text{Adam}=2x,\\quad\\text{Daniel}=2x+15\\)"
+            },
+            {
+              "explain": "The total is \\(\\$102\\).",
+              "work": "\\(x+2x+(2x+15)=102\\Rightarrow5x+15=102\\)"
+            },
+            {
+              "explain": "Subtract 15, then divide by 5.",
+              "work": "\\(5x=87\\Rightarrow x=17.40\\)"
+            },
+            {
+              "explain": "Daniel has \\(2\\times17.40+15=\\$49.80\\). George and Daniel together:",
+              "work": "\\(17.40+49.80=\\boxed{\\$67.20}\\)"
+            },
+            {
+              "explain": "Check: Adam has \\(\\$34.80\\), and \\(17.40+34.80+49.80=102\\). \\(\\checkmark\\)",
+              "work": "\\(17.40+34.80+49.80=102\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 23,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q24",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Greg normally earns \\(\\$950\\) for a 38-hour week. For how many hours of overtime would he have worked in a week where his total pay is \\(\\$1150\\), if all overtime is paid double times?",
+          "options": [
+            "\\(42\\text{ hours}\\)",
+            "\\(4\\text{ hours}\\)",
+            "\\(5\\text{ hours}\\)",
+            "\\(6\\text{ hours}\\)"
+          ],
+          "answer": 1,
+          "hint": "Find his normal hourly rate first. Double time means TWICE that rate. The extra money above his normal \\(\\$950\\) is all overtime pay.",
+          "keyPoints": [
+            {
+              "text": "normally earns \\(\\$950\\) for a 38-hour week",
+              "note": "Hourly rate = 950 ÷ 38."
+            },
+            {
+              "text": "overtime is paid double times",
+              "note": "Each overtime hour pays 2 × the normal hourly rate."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Normal hourly rate.",
+              "work": "\\(950\\div38=\\$25\\text{ per hour}\\)"
+            },
+            {
+              "explain": "Overtime rate is double time.",
+              "work": "\\(2\\times25=\\$50\\text{ per hour}\\)"
+            },
+            {
+              "explain": "Overtime pay is the money above his normal pay.",
+              "work": "\\(1150-950=\\$200\\)"
+            },
+            {
+              "explain": "Hours of overtime.",
+              "work": "\\(200\\div50=\\boxed{4\\text{ hours}}\\)"
+            },
+            {
+              "explain": "Check: \\(950+4\\times50=950+200=\\$1150\\). \\(\\checkmark\\) The option 42 hours would be his total hours (\\(38+4\\)).",
+              "work": "\\(950+200=1150\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 24,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q25",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A box with 100 matches weighs 50 grams. The same box with 50 matches weighs 36 grams. Find the weight of the box.",
+          "options": [
+            "\\(28\\text{ grams}\\)",
+            "\\(22\\text{ grams}\\)",
+            "\\(14\\text{ grams}\\)",
+            "\\(12\\text{ grams}\\)"
+          ],
+          "answer": 1,
+          "hint": "The difference between the two weighings is the weight of the 50 matches that were taken out. Use it to find the weight of 50 matches, then take that away from the lighter weighing to find the box.",
+          "keyPoints": [
+            {
+              "text": "The same box with 50 matches weighs 36 grams",
+              "note": "Both weighings use the same box; only the number of matches changes."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The box with 100 matches weighs 50 g and with 50 matches weighs 36 g. The difference is the weight of 50 matches.",
+              "work": "\\(50-36=14\\text{ g for 50 matches}\\)"
+            },
+            {
+              "explain": "The box with 50 matches weighs 36 g. Take away the 50 matches (14 g) to get the box.",
+              "work": "\\(36-14=\\boxed{22\\text{ g}}\\)"
+            },
+            {
+              "explain": "Check: 100 matches weigh 28 g, and \\(22+28=50\\) g. Also 50 matches weigh 14 g and \\(22+14=36\\) g. \\(\\checkmark\\)",
+              "work": "\\(22+28=50,\\quad22+14=36\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 25,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q26",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Fifteen students took part in a maths competition. The number of children who finished behind Jane was six times as large as the number of children who were more successful than her. In which place did Jane finish?",
+          "options": [
+            "Third",
+            "Fourth",
+            "Fifth",
+            "Sixth"
+          ],
+          "answer": 0,
+          "hint": "The 15 students are split into three groups: the students ahead of Jane, Jane herself, and the students behind Jane. Let the number ahead be \\(x\\), so the number behind is \\(6x\\).",
+          "keyPoints": [
+            {
+              "text": "six times as large",
+              "note": "Behind = 6 × (number ahead)."
+            },
+            {
+              "text": "In which place did Jane finish",
+              "note": "Place = (number of students ahead of her) + 1."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Let \\(x\\) students finish ahead of Jane. Then \\(6x\\) finish behind her, and Jane is 1 student.",
+              "work": "\\(x+1+6x=15\\)"
+            },
+            {
+              "explain": "Simplify and solve.",
+              "work": "\\(7x+1=15\\Rightarrow7x=14\\Rightarrow x=2\\)"
+            },
+            {
+              "explain": "Two students finished ahead of Jane, so she finished in the next place.",
+              "work": "\\(2+1=\\boxed{\\text{third place}}\\)"
+            },
+            {
+              "explain": "Check: 2 ahead, Jane, and 12 behind: \\(2+1+12=15\\), and \\(12=6\\times2\\). \\(\\checkmark\\)",
+              "work": "\\(2+1+12=15\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 26,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q27",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The area of the first page of a book is 600 square centimetres. What is the area, in square metres, of all the pages of a 50-page book laid side by side?",
+          "options": [
+            "\\(60\\,000\\)",
+            "\\(6000\\)",
+            "\\(30\\)",
+            "\\(3\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the total area in \\(\\text{cm}^2\\) first (50 pages of 600 \\(\\text{cm}^2\\)). Then change to \\(\\text{m}^2\\): \\(1\\text{ m}=100\\text{ cm}\\), so \\(1\\text{ m}^2=100\\times100=10\\,000\\text{ cm}^2\\).",
+          "keyPoints": [
+            {
+              "text": "square metres",
+              "note": "Square metres: divide square centimetres by 10 000 (not by 100)."
+            },
+            {
+              "text": "50-page book",
+              "note": "50 pages of the same area: multiply by 50."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Total area of the 50 pages.",
+              "work": "\\(600\\times50=30\\,000\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "Change to square metres. \\(1\\text{ m}^2=100\\text{ cm}\\times100\\text{ cm}=10\\,000\\text{ cm}^2\\).",
+              "work": "\\(1\\text{ m}^2=10\\,000\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "Divide by 10 000.",
+              "work": "\\(30\\,000\\div10\\,000=\\boxed{3\\text{ m}^2}\\)"
+            },
+            {
+              "explain": "Check: the option 30 comes from wrongly dividing by 1000, and 300 would come from dividing by 100. \\(\\checkmark\\)",
+              "work": "\\(3\\times10\\,000=30\\,000\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 27,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q28",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The diagram shows some of the results of a six-person contest. An arrow pointing from one player to another means that the first player defeated the second player in their match. How many matches are left to play if all players play each other once?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 280\" width=\"100%\" height=\"auto\" style=\"max-width:400px\">\n<polygon points=\"150.0,48.4 250.0,48.4 300.0,135.0 250.0,221.6 150.0,221.6 100.0,135.0\" fill=\"#fef9c3\" fill-opacity=\"0.9\" stroke=\"#fde68a\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/>\n<line x1=\"165.6\" y1=\"57.4\" x2=\"282.7\" y2=\"125.0\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"282.7\" y1=\"125.0\" x2=\"275.7\" y2=\"125.1\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"282.7\" y1=\"125.0\" x2=\"279.3\" y2=\"118.9\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"159.0\" y1=\"64.0\" x2=\"240.0\" y2=\"204.3\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"240.0\" y1=\"204.3\" x2=\"233.9\" y2=\"200.9\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"240.0\" y1=\"204.3\" x2=\"240.1\" y2=\"197.3\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"150.0\" y1=\"66.4\" x2=\"150.0\" y2=\"201.6\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"150.0\" y1=\"201.6\" x2=\"146.4\" y2=\"195.6\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"150.0\" y1=\"201.6\" x2=\"153.6\" y2=\"195.6\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"234.4\" y1=\"57.4\" x2=\"117.3\" y2=\"125.0\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"117.3\" y1=\"125.0\" x2=\"120.7\" y2=\"118.9\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"117.3\" y1=\"125.0\" x2=\"124.3\" y2=\"125.1\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"259.0\" y1=\"64.0\" x2=\"290.0\" y2=\"117.7\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"290.0\" y1=\"117.7\" x2=\"283.9\" y2=\"114.3\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"290.0\" y1=\"117.7\" x2=\"290.1\" y2=\"110.7\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"250.0\" y1=\"66.4\" x2=\"250.0\" y2=\"201.6\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"250.0\" y1=\"201.6\" x2=\"246.4\" y2=\"195.6\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"250.0\" y1=\"201.6\" x2=\"253.6\" y2=\"195.6\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"118.0\" y1=\"135.0\" x2=\"280.0\" y2=\"135.0\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"280.0\" y1=\"135.0\" x2=\"274.0\" y2=\"138.6\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"280.0\" y1=\"135.0\" x2=\"274.0\" y2=\"131.4\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"109.0\" y1=\"150.6\" x2=\"140.0\" y2=\"204.3\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"140.0\" y1=\"204.3\" x2=\"133.9\" y2=\"200.9\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"140.0\" y1=\"204.3\" x2=\"140.1\" y2=\"197.3\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"168.0\" y1=\"221.6\" x2=\"230.0\" y2=\"221.6\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"230.0\" y1=\"221.6\" x2=\"224.0\" y2=\"225.2\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"230.0\" y1=\"221.6\" x2=\"224.0\" y2=\"218.0\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<circle cx=\"150.0\" cy=\"48.4\" r=\"15.0\" fill=\"#60a5fa\" fill-opacity=\"0.95\" stroke=\"#1e293b\" stroke-width=\"1.2\"/>\n<text x=\"150.0\" y=\"53.4\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"white\">A</text>\n<circle cx=\"250.0\" cy=\"48.4\" r=\"15.0\" fill=\"#0f766e\" fill-opacity=\"0.95\" stroke=\"#1e293b\" stroke-width=\"1.2\"/>\n<text x=\"250.0\" y=\"53.4\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"white\">B</text>\n<circle cx=\"300.0\" cy=\"135.0\" r=\"15.0\" fill=\"#16a34a\" fill-opacity=\"0.95\" stroke=\"#1e293b\" stroke-width=\"1.2\"/>\n<text x=\"300.0\" y=\"140.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"white\">C</text>\n<circle cx=\"250.0\" cy=\"221.6\" r=\"15.0\" fill=\"#b45309\" fill-opacity=\"0.95\" stroke=\"#1e293b\" stroke-width=\"1.2\"/>\n<text x=\"250.0\" y=\"226.6\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"white\">D</text>\n<circle cx=\"150.0\" cy=\"221.6\" r=\"15.0\" fill=\"#e11d48\" fill-opacity=\"0.95\" stroke=\"#1e293b\" stroke-width=\"1.2\"/>\n<text x=\"150.0\" y=\"226.6\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"white\">E</text>\n<circle cx=\"100.0\" cy=\"135.0\" r=\"15.0\" fill=\"#8b5cf6\" fill-opacity=\"0.95\" stroke=\"#1e293b\" stroke-width=\"1.2\"/>\n<text x=\"100.0\" y=\"140.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"white\">F</text>\n</svg>"
+          },
+          "options": [
+            "\\(12\\)",
+            "\\(5\\)",
+            "\\(8\\)",
+            "\\(6\\)"
+          ],
+          "answer": 3,
+          "hint": "First work out how many matches there are altogether when each of the 6 players plays each other player once. Then count the arrows (matches already played) and subtract.",
+          "keyPoints": [
+            {
+              "text": "all players play each other once",
+              "note": "Each pair of players plays exactly one match, so count PAIRS of players."
+            },
+            {
+              "text": "How many matches are left to play",
+              "note": "Left = total matches − matches already played (arrows)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Each of the 6 players plays 5 others. This counts every match twice (A v B is the same match as B v A), so divide by 2.",
+              "work": "\\(\\dfrac{6\\times5}{2}=15\\text{ matches altogether}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 280\" width=\"100%\" height=\"auto\" style=\"max-width:400px\">\n<polygon points=\"150.0,48.4 250.0,48.4 300.0,135.0 250.0,221.6 150.0,221.6 100.0,135.0\" fill=\"#fef9c3\" fill-opacity=\"0.9\" stroke=\"#fde68a\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/>\n<line x1=\"165.6\" y1=\"57.4\" x2=\"282.7\" y2=\"125.0\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"282.7\" y1=\"125.0\" x2=\"275.7\" y2=\"125.1\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"282.7\" y1=\"125.0\" x2=\"279.3\" y2=\"118.9\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"159.0\" y1=\"64.0\" x2=\"240.0\" y2=\"204.3\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"240.0\" y1=\"204.3\" x2=\"233.9\" y2=\"200.9\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"240.0\" y1=\"204.3\" x2=\"240.1\" y2=\"197.3\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"150.0\" y1=\"66.4\" x2=\"150.0\" y2=\"201.6\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"150.0\" y1=\"201.6\" x2=\"146.4\" y2=\"195.6\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"150.0\" y1=\"201.6\" x2=\"153.6\" y2=\"195.6\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"234.4\" y1=\"57.4\" x2=\"117.3\" y2=\"125.0\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"117.3\" y1=\"125.0\" x2=\"120.7\" y2=\"118.9\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"117.3\" y1=\"125.0\" x2=\"124.3\" y2=\"125.1\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"259.0\" y1=\"64.0\" x2=\"290.0\" y2=\"117.7\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"290.0\" y1=\"117.7\" x2=\"283.9\" y2=\"114.3\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"290.0\" y1=\"117.7\" x2=\"290.1\" y2=\"110.7\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"250.0\" y1=\"66.4\" x2=\"250.0\" y2=\"201.6\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"250.0\" y1=\"201.6\" x2=\"246.4\" y2=\"195.6\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"250.0\" y1=\"201.6\" x2=\"253.6\" y2=\"195.6\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"118.0\" y1=\"135.0\" x2=\"280.0\" y2=\"135.0\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"280.0\" y1=\"135.0\" x2=\"274.0\" y2=\"138.6\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"280.0\" y1=\"135.0\" x2=\"274.0\" y2=\"131.4\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"109.0\" y1=\"150.6\" x2=\"140.0\" y2=\"204.3\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"140.0\" y1=\"204.3\" x2=\"133.9\" y2=\"200.9\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"140.0\" y1=\"204.3\" x2=\"140.1\" y2=\"197.3\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"168.0\" y1=\"221.6\" x2=\"230.0\" y2=\"221.6\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"230.0\" y1=\"221.6\" x2=\"224.0\" y2=\"225.2\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"230.0\" y1=\"221.6\" x2=\"224.0\" y2=\"218.0\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<circle cx=\"150.0\" cy=\"48.4\" r=\"15.0\" fill=\"#60a5fa\" fill-opacity=\"0.95\" stroke=\"#1e293b\" stroke-width=\"1.2\"/>\n<text x=\"150.0\" y=\"53.4\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"white\">A</text>\n<circle cx=\"250.0\" cy=\"48.4\" r=\"15.0\" fill=\"#0f766e\" fill-opacity=\"0.95\" stroke=\"#1e293b\" stroke-width=\"1.2\"/>\n<text x=\"250.0\" y=\"53.4\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"white\">B</text>\n<circle cx=\"300.0\" cy=\"135.0\" r=\"15.0\" fill=\"#16a34a\" fill-opacity=\"0.95\" stroke=\"#1e293b\" stroke-width=\"1.2\"/>\n<text x=\"300.0\" y=\"140.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"white\">C</text>\n<circle cx=\"250.0\" cy=\"221.6\" r=\"15.0\" fill=\"#b45309\" fill-opacity=\"0.95\" stroke=\"#1e293b\" stroke-width=\"1.2\"/>\n<text x=\"250.0\" y=\"226.6\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"white\">D</text>\n<circle cx=\"150.0\" cy=\"221.6\" r=\"15.0\" fill=\"#e11d48\" fill-opacity=\"0.95\" stroke=\"#1e293b\" stroke-width=\"1.2\"/>\n<text x=\"150.0\" y=\"226.6\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"white\">E</text>\n<circle cx=\"100.0\" cy=\"135.0\" r=\"15.0\" fill=\"#8b5cf6\" fill-opacity=\"0.95\" stroke=\"#1e293b\" stroke-width=\"1.2\"/>\n<text x=\"100.0\" y=\"140.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"white\">F</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Count the arrows in the diagram: A has 3 (to C, D, E), B has 3 (to F, C, D), F has 2 (to C, E) and E has 1 (to D).",
+              "work": "\\(3+3+2+1=9\\text{ matches played}\\)"
+            },
+            {
+              "explain": "Matches still to play.",
+              "work": "\\(15-9=\\boxed{6}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 320\" width=\"100%\" height=\"auto\" style=\"max-width:400px\">\n<polygon points=\"150.0,48.4 250.0,48.4 300.0,135.0 250.0,221.6 150.0,221.6 100.0,135.0\" fill=\"#fef9c3\" fill-opacity=\"0.9\" stroke=\"#fde68a\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/>\n<line x1=\"165.6\" y1=\"57.4\" x2=\"282.7\" y2=\"125.0\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"282.7\" y1=\"125.0\" x2=\"275.7\" y2=\"125.1\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"282.7\" y1=\"125.0\" x2=\"279.3\" y2=\"118.9\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"159.0\" y1=\"64.0\" x2=\"240.0\" y2=\"204.3\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"240.0\" y1=\"204.3\" x2=\"233.9\" y2=\"200.9\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"240.0\" y1=\"204.3\" x2=\"240.1\" y2=\"197.3\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"150.0\" y1=\"66.4\" x2=\"150.0\" y2=\"201.6\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"150.0\" y1=\"201.6\" x2=\"146.4\" y2=\"195.6\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"150.0\" y1=\"201.6\" x2=\"153.6\" y2=\"195.6\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"234.4\" y1=\"57.4\" x2=\"117.3\" y2=\"125.0\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"117.3\" y1=\"125.0\" x2=\"120.7\" y2=\"118.9\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"117.3\" y1=\"125.0\" x2=\"124.3\" y2=\"125.1\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"259.0\" y1=\"64.0\" x2=\"290.0\" y2=\"117.7\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"290.0\" y1=\"117.7\" x2=\"283.9\" y2=\"114.3\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"290.0\" y1=\"117.7\" x2=\"290.1\" y2=\"110.7\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"250.0\" y1=\"66.4\" x2=\"250.0\" y2=\"201.6\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"250.0\" y1=\"201.6\" x2=\"246.4\" y2=\"195.6\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"250.0\" y1=\"201.6\" x2=\"253.6\" y2=\"195.6\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"118.0\" y1=\"135.0\" x2=\"280.0\" y2=\"135.0\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"280.0\" y1=\"135.0\" x2=\"274.0\" y2=\"138.6\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"280.0\" y1=\"135.0\" x2=\"274.0\" y2=\"131.4\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"109.0\" y1=\"150.6\" x2=\"140.0\" y2=\"204.3\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"140.0\" y1=\"204.3\" x2=\"133.9\" y2=\"200.9\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"140.0\" y1=\"204.3\" x2=\"140.1\" y2=\"197.3\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"168.0\" y1=\"221.6\" x2=\"230.0\" y2=\"221.6\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"230.0\" y1=\"221.6\" x2=\"224.0\" y2=\"225.2\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"230.0\" y1=\"221.6\" x2=\"224.0\" y2=\"218.0\" stroke=\"#44403c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<line x1=\"168.0\" y1=\"48.4\" x2=\"232.0\" y2=\"48.4\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/>\n<line x1=\"141.0\" y1=\"64.0\" x2=\"109.0\" y2=\"119.4\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/>\n<line x1=\"241.0\" y1=\"64.0\" x2=\"159.0\" y2=\"206.0\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/>\n<line x1=\"291.0\" y1=\"150.6\" x2=\"259.0\" y2=\"206.0\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/>\n<line x1=\"284.4\" y1=\"144.0\" x2=\"165.6\" y2=\"212.6\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/>\n<line x1=\"234.4\" y1=\"212.6\" x2=\"115.6\" y2=\"144.0\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/>\n<circle cx=\"150.0\" cy=\"48.4\" r=\"15.0\" fill=\"#60a5fa\" fill-opacity=\"0.95\" stroke=\"#1e293b\" stroke-width=\"1.2\"/>\n<text x=\"150.0\" y=\"53.4\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"white\">A</text>\n<circle cx=\"250.0\" cy=\"48.4\" r=\"15.0\" fill=\"#0f766e\" fill-opacity=\"0.95\" stroke=\"#1e293b\" stroke-width=\"1.2\"/>\n<text x=\"250.0\" y=\"53.4\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"white\">B</text>\n<circle cx=\"300.0\" cy=\"135.0\" r=\"15.0\" fill=\"#16a34a\" fill-opacity=\"0.95\" stroke=\"#1e293b\" stroke-width=\"1.2\"/>\n<text x=\"300.0\" y=\"140.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"white\">C</text>\n<circle cx=\"250.0\" cy=\"221.6\" r=\"15.0\" fill=\"#b45309\" fill-opacity=\"0.95\" stroke=\"#1e293b\" stroke-width=\"1.2\"/>\n<text x=\"250.0\" y=\"226.6\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"white\">D</text>\n<circle cx=\"150.0\" cy=\"221.6\" r=\"15.0\" fill=\"#e11d48\" fill-opacity=\"0.95\" stroke=\"#1e293b\" stroke-width=\"1.2\"/>\n<text x=\"150.0\" y=\"226.6\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"white\">E</text>\n<circle cx=\"100.0\" cy=\"135.0\" r=\"15.0\" fill=\"#8b5cf6\" fill-opacity=\"0.95\" stroke=\"#1e293b\" stroke-width=\"1.2\"/>\n<text x=\"100.0\" y=\"140.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"white\">F</text>\n<text x=\"200.0\" y=\"290.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#dc2626\">15 matches in all − 9 arrows = 6 matches left (red dashes)</text>\n<text x=\"200.0\" y=\"310.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#dc2626\">AB, AF, BE, CD, CE, DF</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Check by finding the pairs with no arrow: AB, AF, BE, CD, CE and DF. That is 6 pairs. \\(\\checkmark\\)",
+              "work": "\\(9+6=15\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 28,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q29",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A team played 80 games, won 40 percent and drew 12 games. How many games did it lose?",
+          "options": [
+            "32 games",
+            "24 games",
+            "36 games",
+            "20 games"
+          ],
+          "answer": 2,
+          "hint": "Find the number of games won (40% of 80). The games are won, drawn or lost, so the games lost are what is left after taking away the wins and the draws.",
+          "keyPoints": [
+            {
+              "text": "won 40 percent",
+              "note": "Wins = 40% of the 80 games."
+            },
+            {
+              "text": "How many games did it lose",
+              "note": "Lost = total − won − drawn."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Number of games won: 40% of 80.",
+              "work": "\\(0.4\\times80=32\\text{ games}\\)"
+            },
+            {
+              "explain": "The team drew 12 games. Games won and drawn together:",
+              "work": "\\(32+12=44\\text{ games}\\)"
+            },
+            {
+              "explain": "The rest were lost.",
+              "work": "\\(80-44=\\boxed{36\\text{ games}}\\)"
+            },
+            {
+              "explain": "Check: \\(32+12+36=80\\). \\(\\checkmark\\) The option 32 is the number of games WON.",
+              "work": "\\(32+12+36=80\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 29,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q30",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "There are three identical circles touching each other with diameters of 20 cm. If the centres are joined to form a triangle as below, find the perimeter of the triangle inside.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 300\" width=\"100%\" height=\"auto\" style=\"max-width:340px\">\n<circle cx=\"120.0\" cy=\"110.0\" r=\"50.0\" fill=\"none\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\"/>\n<circle cx=\"220.0\" cy=\"110.0\" r=\"50.0\" fill=\"none\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\"/>\n<circle cx=\"170.0\" cy=\"196.6\" r=\"50.0\" fill=\"none\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\"/>\n<polygon points=\"120.0,110.0 220.0,110.0 170.0,196.6\" fill=\"none\" fill-opacity=\"1\" stroke=\"#e11d48\" stroke-width=\"3\" stroke-linejoin=\"round\"/>\n<circle cx=\"120.0\" cy=\"110.0\" r=\"4\" fill=\"#e11d48\"/>\n<circle cx=\"220.0\" cy=\"110.0\" r=\"4\" fill=\"#e11d48\"/>\n<circle cx=\"170.0\" cy=\"196.6\" r=\"4\" fill=\"#e11d48\"/>\n</svg>"
+          },
+          "options": [
+            "\\(30\\text{ cm}\\)",
+            "\\(45\\text{ cm}\\)",
+            "\\(60\\text{ cm}\\)",
+            "\\(120\\text{ cm}\\)"
+          ],
+          "answer": 2,
+          "hint": "When two circles touch, the distance between their centres is one radius plus the other radius. Find the radius, then the length of each side of the triangle.",
+          "keyPoints": [
+            {
+              "text": "diameters of 20 cm",
+              "note": "Radius = diameter ÷ 2."
+            },
+            {
+              "text": "the centres are joined to form a triangle",
+              "note": "Each side of the triangle goes from one centre to the next, passing through the touching point."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The diameter of each circle is 20 cm, so the radius is half of that.",
+              "work": "\\(20\\div2=10\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 300\" width=\"100%\" height=\"auto\" style=\"max-width:340px\">\n<circle cx=\"120.0\" cy=\"110.0\" r=\"50.0\" fill=\"none\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\"/>\n<circle cx=\"220.0\" cy=\"110.0\" r=\"50.0\" fill=\"none\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\"/>\n<circle cx=\"170.0\" cy=\"196.6\" r=\"50.0\" fill=\"none\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\"/>\n<polygon points=\"120.0,110.0 220.0,110.0 170.0,196.6\" fill=\"none\" fill-opacity=\"1\" stroke=\"#e11d48\" stroke-width=\"3\" stroke-linejoin=\"round\"/>\n<circle cx=\"120.0\" cy=\"110.0\" r=\"4\" fill=\"#e11d48\"/>\n<circle cx=\"220.0\" cy=\"110.0\" r=\"4\" fill=\"#e11d48\"/>\n<circle cx=\"170.0\" cy=\"196.6\" r=\"4\" fill=\"#e11d48\"/>\n</svg>"
+              }
+            },
+            {
+              "explain": "Two circles that touch are 'radius + radius' apart. So each side of the triangle (joining two centres) is:",
+              "work": "\\(10+10=20\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 330\" width=\"100%\" height=\"auto\" style=\"max-width:340px\">\n<circle cx=\"120.0\" cy=\"110.0\" r=\"50.0\" fill=\"none\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\"/>\n<circle cx=\"220.0\" cy=\"110.0\" r=\"50.0\" fill=\"none\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\"/>\n<circle cx=\"170.0\" cy=\"196.6\" r=\"50.0\" fill=\"none\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\"/>\n<polygon points=\"120.0,110.0 220.0,110.0 170.0,196.6\" fill=\"none\" fill-opacity=\"1\" stroke=\"#e11d48\" stroke-width=\"3\" stroke-linejoin=\"round\"/>\n<circle cx=\"120.0\" cy=\"110.0\" r=\"4\" fill=\"#e11d48\"/>\n<circle cx=\"220.0\" cy=\"110.0\" r=\"4\" fill=\"#e11d48\"/>\n<circle cx=\"170.0\" cy=\"196.6\" r=\"4\" fill=\"#e11d48\"/>\n<text x=\"170.0\" y=\"250.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\">each side joins two centres of touching circles:</text>\n<text x=\"170.0\" y=\"268.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\">r + r = 10 + 10 = 20 cm</text>\n<text x=\"170.0\" y=\"288.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#16a34a\">perimeter = 3 × 20 = 60 cm</text>\n<text x=\"120.0\" y=\"102.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#ea580c\">10</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "The triangle has 3 equal sides, so its perimeter is:",
+              "work": "\\(3\\times20=\\boxed{60\\text{ cm}}\\)"
+            },
+            {
+              "explain": "Check: the sides are all 20 cm, so the triangle is equilateral, and \\(20+20+20=60\\). \\(\\checkmark\\)",
+              "work": "\\(20+20+20=60\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 30,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q31",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Here is an equilateral triangle inside a rectangle. Calculate the value of x.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" width=\"100%\" height=\"auto\" style=\"max-width:420px\">\n<rect x=\"60.0\" y=\"20.0\" width=\"300.0\" height=\"200.0\" rx=\"0\" fill=\"white\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.8\"/>\n<polygon points=\"60.0,220.0 265.7,176.3 125.0,20.0\" fill=\"#7dd3fc\" fill-opacity=\"0.9\" stroke=\"#0369a1\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/>\n<text x=\"122.0\" y=\"213.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">12°</text>\n<text x=\"72.0\" y=\"158.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">x</text>\n<text x=\"350.0\" y=\"240.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" font-style=\"italic\">Not to scale</text>\n</svg>"
+          },
+          "options": [
+            "\\(48^\\circ\\)",
+            "\\(60^\\circ\\)",
+            "\\(78^\\circ\\)",
+            "\\(18^\\circ\\)"
+          ],
+          "answer": 3,
+          "hint": "One corner of the triangle sits in the corner of the rectangle. The corner of a rectangle is a right angle (\\(90^\\circ\\)), and it is split into THREE angles: \\(12^\\circ\\), the angle of the triangle, and \\(x\\). All angles of an equilateral triangle are \\(60^\\circ\\).",
+          "keyPoints": [
+            {
+              "text": "equilateral triangle",
+              "note": "All three angles of an equilateral triangle are 60°."
+            },
+            {
+              "text": "inside a rectangle",
+              "note": "A corner of the rectangle is 90°, so the three angles at that corner add to 90°."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Each angle of an equilateral triangle is:",
+              "work": "\\(180^\\circ\\div3=60^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" width=\"100%\" height=\"auto\" style=\"max-width:420px\">\n<rect x=\"60.0\" y=\"20.0\" width=\"300.0\" height=\"200.0\" rx=\"0\" fill=\"white\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.8\"/>\n<polygon points=\"60.0,220.0 265.7,176.3 125.0,20.0\" fill=\"#7dd3fc\" fill-opacity=\"0.9\" stroke=\"#0369a1\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/>\n<text x=\"122.0\" y=\"213.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">12°</text>\n<text x=\"72.0\" y=\"158.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">x</text>\n<text x=\"350.0\" y=\"240.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" font-style=\"italic\">Not to scale</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "At the bottom-left corner of the rectangle the \\(90^\\circ\\) corner is made of \\(12^\\circ\\), the \\(60^\\circ\\) triangle angle, and \\(x\\).",
+              "work": "\\(12^\\circ+60^\\circ+x=90^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 290\" width=\"100%\" height=\"auto\" style=\"max-width:420px\">\n<rect x=\"60.0\" y=\"20.0\" width=\"300.0\" height=\"200.0\" rx=\"0\" fill=\"white\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.8\"/>\n<polygon points=\"60.0,220.0 265.7,176.3 125.0,20.0\" fill=\"#7dd3fc\" fill-opacity=\"0.9\" stroke=\"#0369a1\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/>\n<text x=\"122.0\" y=\"213.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">12°</text>\n<text x=\"72.0\" y=\"158.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#ea580c\" font-style=\"italic\">x</text>\n<text x=\"138.0\" y=\"178.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\">60°</text>\n<text x=\"220.0\" y=\"256.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#ea580c\">x + 60° + 12° = 90°   so   x = 18°</text>\n<text x=\"350.0\" y=\"240.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" font-style=\"italic\">Not to scale</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Add the known angles and subtract from \\(90^\\circ\\).",
+              "work": "\\(x=90^\\circ-72^\\circ=\\boxed{18^\\circ}\\)"
+            },
+            {
+              "explain": "Check: \\(18^\\circ+60^\\circ+12^\\circ=90^\\circ\\). \\(\\checkmark\\)",
+              "work": "\\(18+60+12=90\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 31,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q32",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Which gives the largest value of p?",
+          "options": [
+            "\\(p+222=222-p\\)",
+            "\\(p-2=4-p\\)",
+            "\\(4\\times p=10-p\\)",
+            "\\(22\\times p+2=21\\times p+4\\)"
+          ],
+          "answer": 1,
+          "hint": "Solve each equation for \\(p\\) (collect the \\(p\\) terms on one side and the numbers on the other) and then compare the four values of \\(p\\).",
+          "keyPoints": [
+            {
+              "text": "largest value of p",
+              "note": "You need to find p in EACH equation and compare the answers."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Option A: add \\(p\\) to both sides, then subtract 222.",
+              "work": "\\(p+222=222-p\\Rightarrow2p=0\\Rightarrow p=0\\)"
+            },
+            {
+              "explain": "Option B: add \\(p\\) and add 2 to both sides.",
+              "work": "\\(p-2=4-p\\Rightarrow2p=6\\Rightarrow p=3\\)"
+            },
+            {
+              "explain": "Option C: add \\(p\\) to both sides.",
+              "work": "\\(4p=10-p\\Rightarrow5p=10\\Rightarrow p=2\\)"
+            },
+            {
+              "explain": "Option D: subtract \\(21p\\) and 2 from both sides.",
+              "work": "\\(22p+2=21p+4\\Rightarrow p=2\\)"
+            },
+            {
+              "explain": "Compare the values: 0, 3, 2 and 2. The largest is 3, from option B.",
+              "work": "\\(\\boxed{p=3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 32,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q33",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Apples are sold in bags of four that cost \\(\\$5\\) per bag, or bags of six that cost \\(\\$6\\) per bag. What is the smallest cost at which you can buy 74 apples?",
+          "options": [
+            "\\(\\$80\\)",
+            "\\(\\$75\\)",
+            "\\(\\$78\\)",
+            "\\(\\$76\\)"
+          ],
+          "answer": 3,
+          "hint": "Find which bag is cheaper per apple (the bag of 6 costs \\(\\$1\\) per apple, the bag of 4 costs \\(\\$1.25\\) per apple), so use as many bags of six as you can. Then make exactly 74 apples with the remaining bags.",
+          "keyPoints": [
+            {
+              "text": "smallest cost",
+              "note": "Use the cheaper bag (6 apples for \\(\\$6\\)) as much as possible."
+            },
+            {
+              "text": "74 apples",
+              "note": "You need at least 74 apples. Try combinations of 6-bags and 4-bags."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Price per apple: bag of 4 \\(=5\\div4=\\$1.25\\); bag of 6 \\(=6\\div6=\\$1.00\\). The bag of 6 is the better buy.",
+              "work": "\\(\\$1.25\\text{ per apple (4-bag)},\\qquad\\$1.00\\text{ per apple (6-bag)}\\)"
+            },
+            {
+              "explain": "Try the biggest number of 6-bags that leaves a number of apples that 4-bags can make. \\(74\\div6=12\\) remainder 2, but 2 is not a multiple of 4, so use 11 bags of six: \\(66\\) apples, leaving \\(74-66=8\\), which is exactly 2 bags of four.",
+              "work": "\\(11\\times6+2\\times4=66+8=74\\)"
+            },
+            {
+              "explain": "Cost of 11 bags of six and 2 bags of four.",
+              "work": "\\(11\\times6+2\\times5=66+10=\\boxed{\\$76}\\)"
+            },
+            {
+              "explain": "Check other ways to buy at least 74 apples: 13 bags of six (78 apples) cost \\(\\$78\\), and 12 bags of six plus 1 bag of four (76 apples) cost \\(\\$77\\). Both cost more than \\(\\$76\\). \\(\\checkmark\\)",
+              "work": "\\(76\\lt77\\lt78\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 33,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q34",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the area of the triangle.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 260\" width=\"100%\" height=\"auto\" style=\"max-width:360px\">\n<line x1=\"50.0\" y1=\"30.0\" x2=\"50.0\" y2=\"246.0\" stroke=\"#93c5fd\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"50.0\" y1=\"30.0\" x2=\"266.0\" y2=\"30.0\" stroke=\"#93c5fd\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"122.0\" y1=\"30.0\" x2=\"122.0\" y2=\"246.0\" stroke=\"#93c5fd\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"50.0\" y1=\"102.0\" x2=\"266.0\" y2=\"102.0\" stroke=\"#93c5fd\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"194.0\" y1=\"30.0\" x2=\"194.0\" y2=\"246.0\" stroke=\"#93c5fd\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"50.0\" y1=\"174.0\" x2=\"266.0\" y2=\"174.0\" stroke=\"#93c5fd\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"266.0\" y1=\"30.0\" x2=\"266.0\" y2=\"246.0\" stroke=\"#93c5fd\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"50.0\" y1=\"246.0\" x2=\"266.0\" y2=\"246.0\" stroke=\"#93c5fd\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<polygon points=\"50.0,30.0 266.0,174.0 194.0,246.0\" fill=\"#3b82f6\" fill-opacity=\"0.85\" stroke=\"#1e3a8a\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/>\n<line x1=\"195.0\" y1=\"18.0\" x2=\"265.0\" y2=\"18.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"265.0\" y1=\"18.0\" x2=\"259.0\" y2=\"21.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"265.0\" y1=\"18.0\" x2=\"259.0\" y2=\"14.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"265.0\" y1=\"18.0\" x2=\"195.0\" y2=\"18.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"195.0\" y1=\"18.0\" x2=\"201.0\" y2=\"14.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"195.0\" y1=\"18.0\" x2=\"201.0\" y2=\"21.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<text x=\"230.0\" y=\"14.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#475569\">1</text>\n</svg>"
+          },
+          "options": [
+            "\\(2.5\\)",
+            "\\(2\\)",
+            "\\(3\\)",
+            "\\(1.667\\)"
+          ],
+          "answer": 0,
+          "hint": "Each square of the grid is 1 by 1. Put the triangle inside the big \\(3\\times3\\) square and take away the three corner triangles that are NOT part of it (each is a right-angled triangle with legs along the grid lines).",
+          "keyPoints": [
+            {
+              "text": "Find the area of the triangle",
+              "note": "Area of the big square minus the areas of the three right-angled triangles outside the blue triangle."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The triangle fits inside a \\(3\\times3\\) square, which has an area of:",
+              "work": "\\(3\\times3=9\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 260\" width=\"100%\" height=\"auto\" style=\"max-width:360px\">\n<line x1=\"50.0\" y1=\"30.0\" x2=\"50.0\" y2=\"246.0\" stroke=\"#93c5fd\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"50.0\" y1=\"30.0\" x2=\"266.0\" y2=\"30.0\" stroke=\"#93c5fd\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"122.0\" y1=\"30.0\" x2=\"122.0\" y2=\"246.0\" stroke=\"#93c5fd\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"50.0\" y1=\"102.0\" x2=\"266.0\" y2=\"102.0\" stroke=\"#93c5fd\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"194.0\" y1=\"30.0\" x2=\"194.0\" y2=\"246.0\" stroke=\"#93c5fd\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"50.0\" y1=\"174.0\" x2=\"266.0\" y2=\"174.0\" stroke=\"#93c5fd\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"266.0\" y1=\"30.0\" x2=\"266.0\" y2=\"246.0\" stroke=\"#93c5fd\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"50.0\" y1=\"246.0\" x2=\"266.0\" y2=\"246.0\" stroke=\"#93c5fd\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<polygon points=\"50.0,30.0 266.0,174.0 194.0,246.0\" fill=\"#3b82f6\" fill-opacity=\"0.85\" stroke=\"#1e3a8a\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/>\n<line x1=\"195.0\" y1=\"18.0\" x2=\"265.0\" y2=\"18.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"265.0\" y1=\"18.0\" x2=\"259.0\" y2=\"21.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"265.0\" y1=\"18.0\" x2=\"259.0\" y2=\"14.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"265.0\" y1=\"18.0\" x2=\"195.0\" y2=\"18.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"195.0\" y1=\"18.0\" x2=\"201.0\" y2=\"14.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"195.0\" y1=\"18.0\" x2=\"201.0\" y2=\"21.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<text x=\"230.0\" y=\"14.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#475569\">1</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Three right-angled triangles are left over around the blue triangle. Top right: legs 3 and 2. Bottom left: legs 2 and 3. Bottom right: legs 1 and 1.",
+              "work": "\\(\\dfrac12\\times3\\times2=3,\\quad\\dfrac12\\times2\\times3=3,\\quad\\dfrac12\\times1\\times1=0.5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 300\" width=\"100%\" height=\"auto\" style=\"max-width:360px\">\n<line x1=\"50.0\" y1=\"30.0\" x2=\"50.0\" y2=\"246.0\" stroke=\"#93c5fd\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"50.0\" y1=\"30.0\" x2=\"266.0\" y2=\"30.0\" stroke=\"#93c5fd\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"122.0\" y1=\"30.0\" x2=\"122.0\" y2=\"246.0\" stroke=\"#93c5fd\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"50.0\" y1=\"102.0\" x2=\"266.0\" y2=\"102.0\" stroke=\"#93c5fd\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"194.0\" y1=\"30.0\" x2=\"194.0\" y2=\"246.0\" stroke=\"#93c5fd\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"50.0\" y1=\"174.0\" x2=\"266.0\" y2=\"174.0\" stroke=\"#93c5fd\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"266.0\" y1=\"30.0\" x2=\"266.0\" y2=\"246.0\" stroke=\"#93c5fd\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"50.0\" y1=\"246.0\" x2=\"266.0\" y2=\"246.0\" stroke=\"#93c5fd\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<polygon points=\"50.0,30.0 266.0,30.0 266.0,174.0\" fill=\"#fef3c7\" fill-opacity=\"0.8\" stroke=\"#ea580c\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/>\n<polygon points=\"50.0,30.0 50.0,246.0 194.0,246.0\" fill=\"#fef3c7\" fill-opacity=\"0.8\" stroke=\"#ea580c\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/>\n<polygon points=\"266.0,174.0 266.0,246.0 194.0,246.0\" fill=\"#fef3c7\" fill-opacity=\"0.8\" stroke=\"#ea580c\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/>\n<polygon points=\"50.0,30.0 266.0,174.0 194.0,246.0\" fill=\"#3b82f6\" fill-opacity=\"0.85\" stroke=\"#1e3a8a\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/>\n<line x1=\"195.0\" y1=\"18.0\" x2=\"265.0\" y2=\"18.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"265.0\" y1=\"18.0\" x2=\"259.0\" y2=\"21.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"265.0\" y1=\"18.0\" x2=\"259.0\" y2=\"14.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"265.0\" y1=\"18.0\" x2=\"195.0\" y2=\"18.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"195.0\" y1=\"18.0\" x2=\"201.0\" y2=\"14.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"195.0\" y1=\"18.0\" x2=\"201.0\" y2=\"21.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<text x=\"230.0\" y=\"14.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#475569\">1</text>\n<text x=\"208.4\" y=\"73.2\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#ea580c\">3</text>\n<text x=\"86.0\" y=\"174.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#ea580c\">3</text>\n<text x=\"251.6\" y=\"231.6\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#ea580c\">0.5</text>\n<text x=\"180.0\" y=\"286.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#ea580c\">9 − (3 + 3 + 0.5) = 2.5</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "The three outside triangles together:",
+              "work": "\\(3+3+0.5=6.5\\)"
+            },
+            {
+              "explain": "Subtract from the area of the big square.",
+              "work": "\\(9-6.5=\\boxed{2.5}\\)"
+            },
+            {
+              "explain": "Check: the three corner triangles and the blue triangle fill the whole square: \\(6.5+2.5=9\\). \\(\\checkmark\\)",
+              "work": "\\(6.5+2.5=9\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 34,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q35",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A shop's expenses and sales for a three-day period are shown in the table. In which week was the shop's profit a maximum?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 170\" width=\"100%\" height=\"auto\" style=\"max-width:420px\">\n<rect x=\"80.0\" y=\"20.0\" width=\"80.0\" height=\"30.0\" rx=\"0\" fill=\"#86efac\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"120.0\" y=\"41.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">Week</text>\n<rect x=\"160.0\" y=\"20.0\" width=\"130.0\" height=\"30.0\" rx=\"0\" fill=\"#86efac\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"225.0\" y=\"41.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">Expense</text>\n<rect x=\"290.0\" y=\"20.0\" width=\"130.0\" height=\"30.0\" rx=\"0\" fill=\"#86efac\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"355.0\" y=\"41.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">Sales</text>\n<rect x=\"80.0\" y=\"50.0\" width=\"80.0\" height=\"30.0\" rx=\"0\" fill=\"#86efac\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"120.0\" y=\"71.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">1</text>\n<rect x=\"160.0\" y=\"50.0\" width=\"130.0\" height=\"30.0\" rx=\"0\" fill=\"#fed7aa\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"225.0\" y=\"71.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">$120</text>\n<rect x=\"290.0\" y=\"50.0\" width=\"130.0\" height=\"30.0\" rx=\"0\" fill=\"#fef3c7\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"355.0\" y=\"71.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">$650</text>\n<rect x=\"80.0\" y=\"80.0\" width=\"80.0\" height=\"30.0\" rx=\"0\" fill=\"#86efac\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"120.0\" y=\"101.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">2</text>\n<rect x=\"160.0\" y=\"80.0\" width=\"130.0\" height=\"30.0\" rx=\"0\" fill=\"#fed7aa\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"225.0\" y=\"101.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">$230</text>\n<rect x=\"290.0\" y=\"80.0\" width=\"130.0\" height=\"30.0\" rx=\"0\" fill=\"#fef3c7\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"355.0\" y=\"101.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">$540</text>\n<rect x=\"80.0\" y=\"110.0\" width=\"80.0\" height=\"30.0\" rx=\"0\" fill=\"#86efac\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"120.0\" y=\"131.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">3</text>\n<rect x=\"160.0\" y=\"110.0\" width=\"130.0\" height=\"30.0\" rx=\"0\" fill=\"#fed7aa\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"225.0\" y=\"131.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">$340</text>\n<rect x=\"290.0\" y=\"110.0\" width=\"130.0\" height=\"30.0\" rx=\"0\" fill=\"#fef3c7\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"355.0\" y=\"131.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">$430</text>\n</svg>"
+          },
+          "options": [
+            "Week 3",
+            "Week 2",
+            "Week 1",
+            "They are the same"
+          ],
+          "answer": 2,
+          "hint": "Profit \\(=\\) sales \\(-\\) expenses. Work out the profit for each week and compare them. Do not just look at the biggest sales or the smallest expenses.",
+          "keyPoints": [
+            {
+              "text": "profit a maximum",
+              "note": "Profit = sales − expense for each week; find the largest profit."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Week 1: profit \\(=\\) sales \\(-\\) expense.",
+              "work": "\\(650-120=\\$530\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 170\" width=\"100%\" height=\"auto\" style=\"max-width:420px\">\n<rect x=\"80.0\" y=\"20.0\" width=\"80.0\" height=\"30.0\" rx=\"0\" fill=\"#86efac\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"120.0\" y=\"41.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">Week</text>\n<rect x=\"160.0\" y=\"20.0\" width=\"130.0\" height=\"30.0\" rx=\"0\" fill=\"#86efac\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"225.0\" y=\"41.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">Expense</text>\n<rect x=\"290.0\" y=\"20.0\" width=\"130.0\" height=\"30.0\" rx=\"0\" fill=\"#86efac\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"355.0\" y=\"41.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">Sales</text>\n<rect x=\"80.0\" y=\"50.0\" width=\"80.0\" height=\"30.0\" rx=\"0\" fill=\"#86efac\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"120.0\" y=\"71.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">1</text>\n<rect x=\"160.0\" y=\"50.0\" width=\"130.0\" height=\"30.0\" rx=\"0\" fill=\"#fed7aa\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"225.0\" y=\"71.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">$120</text>\n<rect x=\"290.0\" y=\"50.0\" width=\"130.0\" height=\"30.0\" rx=\"0\" fill=\"#fef3c7\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"355.0\" y=\"71.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">$650</text>\n<rect x=\"80.0\" y=\"80.0\" width=\"80.0\" height=\"30.0\" rx=\"0\" fill=\"#86efac\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"120.0\" y=\"101.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">2</text>\n<rect x=\"160.0\" y=\"80.0\" width=\"130.0\" height=\"30.0\" rx=\"0\" fill=\"#fed7aa\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"225.0\" y=\"101.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">$230</text>\n<rect x=\"290.0\" y=\"80.0\" width=\"130.0\" height=\"30.0\" rx=\"0\" fill=\"#fef3c7\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"355.0\" y=\"101.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">$540</text>\n<rect x=\"80.0\" y=\"110.0\" width=\"80.0\" height=\"30.0\" rx=\"0\" fill=\"#86efac\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"120.0\" y=\"131.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">3</text>\n<rect x=\"160.0\" y=\"110.0\" width=\"130.0\" height=\"30.0\" rx=\"0\" fill=\"#fed7aa\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"225.0\" y=\"131.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">$340</text>\n<rect x=\"290.0\" y=\"110.0\" width=\"130.0\" height=\"30.0\" rx=\"0\" fill=\"#fef3c7\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"355.0\" y=\"131.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">$430</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Week 2.",
+              "work": "\\(540-230=\\$310\\)"
+            },
+            {
+              "explain": "Week 3.",
+              "work": "\\(430-340=\\$90\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 200\" width=\"100%\" height=\"auto\" style=\"max-width:420px\">\n<rect x=\"80.0\" y=\"20.0\" width=\"80.0\" height=\"30.0\" rx=\"0\" fill=\"#86efac\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"120.0\" y=\"41.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">Week</text>\n<rect x=\"160.0\" y=\"20.0\" width=\"130.0\" height=\"30.0\" rx=\"0\" fill=\"#86efac\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"225.0\" y=\"41.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">Expense</text>\n<rect x=\"290.0\" y=\"20.0\" width=\"130.0\" height=\"30.0\" rx=\"0\" fill=\"#86efac\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"355.0\" y=\"41.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">Sales</text>\n<rect x=\"80.0\" y=\"50.0\" width=\"80.0\" height=\"30.0\" rx=\"0\" fill=\"#86efac\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"120.0\" y=\"71.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">1</text>\n<rect x=\"160.0\" y=\"50.0\" width=\"130.0\" height=\"30.0\" rx=\"0\" fill=\"#fed7aa\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"225.0\" y=\"71.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">$120</text>\n<rect x=\"290.0\" y=\"50.0\" width=\"130.0\" height=\"30.0\" rx=\"0\" fill=\"#fef3c7\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"355.0\" y=\"71.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">$650</text>\n<rect x=\"80.0\" y=\"80.0\" width=\"80.0\" height=\"30.0\" rx=\"0\" fill=\"#86efac\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"120.0\" y=\"101.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">2</text>\n<rect x=\"160.0\" y=\"80.0\" width=\"130.0\" height=\"30.0\" rx=\"0\" fill=\"#fed7aa\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"225.0\" y=\"101.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">$230</text>\n<rect x=\"290.0\" y=\"80.0\" width=\"130.0\" height=\"30.0\" rx=\"0\" fill=\"#fef3c7\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"355.0\" y=\"101.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">$540</text>\n<rect x=\"80.0\" y=\"110.0\" width=\"80.0\" height=\"30.0\" rx=\"0\" fill=\"#86efac\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"120.0\" y=\"131.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">3</text>\n<rect x=\"160.0\" y=\"110.0\" width=\"130.0\" height=\"30.0\" rx=\"0\" fill=\"#fed7aa\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"225.0\" y=\"131.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">$340</text>\n<rect x=\"290.0\" y=\"110.0\" width=\"130.0\" height=\"30.0\" rx=\"0\" fill=\"#fef3c7\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\"/>\n<text x=\"355.0\" y=\"131.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">$430</text>\n<text x=\"250.0\" y=\"162.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\">profit = sales − expense:  530,  310,  90</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Compare the profits: 530, 310 and 90. The greatest is in week 1.",
+              "work": "\\(\\boxed{\\text{Week 1}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 35,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q36",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Peter has an average of 60 marks on his first four Maths tests. He missed the last (fifth) test and got zero. What is the average score now?",
+          "options": [
+            "\\(30\\)",
+            "\\(48\\)",
+            "\\(50\\)",
+            "\\(60\\)"
+          ],
+          "answer": 1,
+          "hint": "Find his TOTAL marks on the first four tests (average \\(\\times\\) 4). A zero adds nothing to the total but he now has 5 tests, so divide the same total by 5.",
+          "keyPoints": [
+            {
+              "text": "an average of 60 marks on his first four Maths tests",
+              "note": "Total of the first four tests = 60 × 4."
+            },
+            {
+              "text": "got zero",
+              "note": "The fifth test adds 0 marks but counts as a test, so divide by 5."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Total marks for the first four tests.",
+              "work": "\\(60\\times4=240\\)"
+            },
+            {
+              "explain": "The fifth test is zero, so the total is still 240, but there are now 5 tests.",
+              "work": "\\(240+0=240\\)"
+            },
+            {
+              "explain": "New average \\(=\\) total \\(\\div\\) number of tests.",
+              "work": "\\(240\\div5=\\boxed{48}\\)"
+            },
+            {
+              "explain": "Check: the average has gone down from 60, so the answer must be less than 60. \\(\\checkmark\\)",
+              "work": "\\(48\\lt60\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 36,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q37",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "What whole number ‘X’ makes this statement not true?\n\n\\(\\dfrac36\\lt\\dfrac{X}{9}\\lt\\dfrac56\\)",
+          "options": [
+            "\\(5\\)",
+            "\\(6\\)",
+            "\\(7\\)",
+            "\\(8\\)"
+          ],
+          "answer": 3,
+          "hint": "Write all three fractions with the same denominator, 18, so you can compare the tops. Then X is allowed only if \\(\\dfrac{2X}{18}\\) is strictly between the other two. Find the X that does NOT fit.",
+          "keyPoints": [
+            {
+              "text": "makes this statement not true",
+              "note": "Three of the options make the statement TRUE; find the one that makes it false."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the common denominator 18: \\(\\dfrac36=\\dfrac{9}{18}\\), \\(\\dfrac{X}{9}=\\dfrac{2X}{18}\\), \\(\\dfrac56=\\dfrac{15}{18}\\).",
+              "work": "\\(\\dfrac{9}{18}\\lt\\dfrac{2X}{18}\\lt\\dfrac{15}{18}\\)"
+            },
+            {
+              "explain": "So \\(2X\\) must be between 9 and 15, which means X is between 4.5 and 7.5.",
+              "work": "\\(4.5\\lt X\\lt7.5\\)"
+            },
+            {
+              "explain": "The whole numbers that work are 5, 6 and 7.",
+              "work": "\\(X=5,\\ 6,\\ 7\\ \\checkmark\\)"
+            },
+            {
+              "explain": "X = 8 gives \\(\\dfrac{8}{9}=\\dfrac{16}{18}\\), which is bigger than \\(\\dfrac{15}{18}\\), so the statement is NOT true.",
+              "work": "\\(\\dfrac89\\gt\\dfrac56\\ \\Rightarrow\\ \\boxed{8}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 37,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q38",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "John answers 25 multiple choice questions and receives a score of zero. Each correct answer is worth 3 points. Two points are deducted for each incorrect answer. How many questions does he answer correctly?",
+          "options": [
+            "\\(16\\)",
+            "\\(12\\)",
+            "\\(15\\)",
+            "\\(10\\)"
+          ],
+          "answer": 3,
+          "hint": "His score is zero, so the points won for the correct answers must exactly cancel the points lost for the incorrect answers. Let \\(c\\) be the number correct, and \\(25-c\\) the number incorrect. Or try each option.",
+          "keyPoints": [
+            {
+              "text": "receives a score of zero",
+              "note": "Points for correct answers = points taken off for incorrect answers."
+            },
+            {
+              "text": "Two points are deducted for each incorrect answer",
+              "note": "Each incorrect answer loses 2 points."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Let \\(c\\) be the number correct. Then \\(25-c\\) are incorrect. Points gained and points lost are equal.",
+              "work": "\\(3c=2(25-c)\\)"
+            },
+            {
+              "explain": "Expand the bracket.",
+              "work": "\\(3c=50-2c\\)"
+            },
+            {
+              "explain": "Add \\(2c\\) to both sides, then divide by 5.",
+              "work": "\\(5c=50\\Rightarrow c=\\boxed{10}\\)"
+            },
+            {
+              "explain": "Check: 10 correct earns \\(30\\) points and 15 incorrect loses \\(30\\) points. \\(30-30=0\\). \\(\\checkmark\\)",
+              "work": "\\(3\\times10=2\\times15=30\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 38,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q39",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The population of a certain town increases by 50 percent every 50 years. If the population in 1950 was 810, in what year was the population 360?",
+          "options": [
+            "\\(1900\\)",
+            "\\(1850\\)",
+            "\\(1800\\)",
+            "\\(1750\\)"
+          ],
+          "answer": 1,
+          "hint": "Work BACKWARDS in time. Going back 50 years divides the population by 1.5 (undo a 50% increase). Keep going until you reach 360.",
+          "keyPoints": [
+            {
+              "text": "increases by 50 percent every 50 years",
+              "note": "Each 50 years the population is multiplied by 1.5. Going back, divide by 1.5."
+            },
+            {
+              "text": "in what year was the population 360",
+              "note": "Go back one 50-year step at a time."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The 50 percent increase multiplies by 1.5. Going back 50 years from 1950 (to 1900), divide by 1.5.",
+              "work": "\\(810\\div1.5=540\\text{ in }1900\\)"
+            },
+            {
+              "explain": "Go back another 50 years (to 1850).",
+              "work": "\\(540\\div1.5=360\\text{ in }1850\\)"
+            },
+            {
+              "explain": "So the population was 360 in 1850.",
+              "work": "\\(\\boxed{1850}\\)"
+            },
+            {
+              "explain": "Check forwards: \\(360\\times1.5=540\\) (1900) and \\(540\\times1.5=810\\) (1950). \\(\\checkmark\\)",
+              "work": "\\(360\\times1.5\\times1.5=810\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 39,
+            "origin": "exam-import"
+          }
+        },
+        {
+          "id": "sch-sel-mm10-q40",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Jerry walks half a distance at 4 km/h and runs the other half. If the total distance is 12 km and it takes 2 hours for the entire trip, how fast does he run?",
+          "options": [
+            "\\(12\\text{ km/h}\\)",
+            "\\(6\\text{ km/h}\\)",
+            "\\(8\\text{ km/h}\\)",
+            "\\(10\\text{ km/h}\\)"
+          ],
+          "answer": 0,
+          "hint": "Half of the distance is 6 km. Find how long the walking takes (time \\(=\\) distance \\(\\div\\) speed), take it from the 2 hours to get the running time, and then find the running speed.",
+          "keyPoints": [
+            {
+              "text": "walks half a distance at 4 km/h",
+              "note": "Half of 12 km = 6 km walked at 4 km/h."
+            },
+            {
+              "text": "it takes 2 hours for the entire trip",
+              "note": "Walking time + running time = 2 hours."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Each half of the trip is 6 km. Time spent walking.",
+              "work": "\\(6\\div4=1.5\\text{ hours}\\)"
+            },
+            {
+              "explain": "Time left for the running half.",
+              "work": "\\(2-1.5=0.5\\text{ hours}\\)"
+            },
+            {
+              "explain": "Speed \\(=\\) distance \\(\\div\\) time for the run.",
+              "work": "\\(6\\div0.5=\\boxed{12\\text{ km/h}}\\)"
+            },
+            {
+              "explain": "Check: running 6 km at 12 km/h takes 0.5 h and walking takes 1.5 h, total 2 hours. \\(\\checkmark\\)",
+              "work": "\\(1.5+0.5=2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Mathematics Book 1 · Selective and Scholarship Tests",
+            "test": "Test 10",
+            "number": 40,
+            "origin": "exam-import"
+          }
         }
       ]
     },
