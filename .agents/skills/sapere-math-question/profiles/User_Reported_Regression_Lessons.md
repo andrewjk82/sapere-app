@@ -47,6 +47,7 @@ recurring student-facing problems the user has reported across Years 7–10.
   when the source shows only the joined shape's external perimeter; match the
   tile placement and any note such as “not to scale”.
 - For repeated regular-polygon tile rows, match the source polygon orientation and shared-edge placement exactly. Do not substitute a different rotation or spacing; verify that adjacent tiles meet along the intended full side without gaps or overlaps, and that the row count matches the source.
+- For a side-length dimension marker, keep its measurement line parallel to the intended side, place it on the same side of that side as the source, and align both end ticks with the side endpoints (or their extensions). Inspect that it cannot be mistaken for a different edge length.
 - In geometry/trigonometry solutions, explicitly name the sides and angles
   used, explain opposite/adjacent/hypotenuse or included-angle relationships,
   and highlight those exact features in the corresponding step figure. Progress
