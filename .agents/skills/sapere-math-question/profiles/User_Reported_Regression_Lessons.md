@@ -41,6 +41,7 @@ recurring student-facing problems the user has reported across Years 7–10.
   an SVG `<image>` element. For scanned figures, redraw the geometry with vector
   paths and text, or trace the scan to vector paths while preserving all source
   values, answer choices, labels, and marks; verify legibility at student size.
+- Do not Potrace or auto-trace diagram text, coordinate labels, axis ticks, or option letters from a low-resolution screenshot; those traces can become unreadable blobs even when technically vector paths. Rebuild text as SVG `<text>` and reconstruct grids, axes, polygons, markers, and labels from the source values. Render at the real student display size and visually inspect every named figure and step illustration before marking it fixed.
 - Preserve whether a composite source drawing shows only the outside silhouette
   or also its internal tile boundaries. Do not draw separate full tile outlines
   when the source shows only the joined shape's external perimeter; match the
