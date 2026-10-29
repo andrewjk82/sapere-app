@@ -37,6 +37,10 @@ recurring student-facing problems the user has reported across Years 7–10.
   has no illustration. Before delivery, confirm the coverage count and review a
   contact sheet so skipped figures, omitted panels, and labels lost in a partial
   redraw are caught.
+- Preserve whether a composite source drawing shows only the outside silhouette
+  or also its internal tile boundaries. Do not draw separate full tile outlines
+  when the source shows only the joined shape's external perimeter; match the
+  tile placement and any note such as “not to scale”.
 - In geometry/trigonometry solutions, explicitly name the sides and angles
   used, explain opposite/adjacent/hypotenuse or included-angle relationships,
   and highlight those exact features in the corresponding step figure. Progress
