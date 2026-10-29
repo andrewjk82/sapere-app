@@ -37,6 +37,10 @@ recurring student-facing problems the user has reported across Years 7–10.
   has no illustration. Before delivery, confirm the coverage count and review a
   contact sheet so skipped figures, omitted panels, and labels lost in a partial
   redraw are caught.
+- “SVG” means genuinely vector-based: do not leave raster PNG/JPEG embedded in
+  an SVG `<image>` element. For scanned figures, redraw the geometry with vector
+  paths and text, or trace the scan to vector paths while preserving all source
+  values, answer choices, labels, and marks; verify legibility at student size.
 - Preserve whether a composite source drawing shows only the outside silhouette
   or also its internal tile boundaries. Do not draw separate full tile outlines
   when the source shows only the joined shape's external perimeter; match the
