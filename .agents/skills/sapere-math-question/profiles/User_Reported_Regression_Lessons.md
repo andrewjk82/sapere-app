@@ -18,6 +18,7 @@ recurring student-facing problems the user has reported across Years 7–10.
 - Inspect the source PDF image itself before redrawing. Match the labels to the
   exact vertices, edges, and angles from the source; do not rely only on OCR,
   the existing SVG, or a solution description.
+- Match the source illustration inventory before editing: do not preserve stray traced artwork on a text-only question, and do not omit a source angle sector, tick, or value. In solution-only visuals, add a clear progressive highlight tied to the current calculation.
 - For triangles, place each angle arc between its actual rays and each side
   label alongside the segment it measures. Keep labels close enough to identify
   the intended feature, with clear space from lines, arcs, vertices, and other
