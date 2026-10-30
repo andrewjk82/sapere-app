@@ -1394,53 +1394,45 @@
         {
           "id": "gosford2020-q22",
           "type": "multipart",
-          "difficulty": "hard",
           "stem": "Let \\( C \\) be the event a family owns a cat and \\( D \\) be the event a family owns a dog. Given \\( P(C)=\\dfrac37 \\), \\( P(D\\mid C')=\\dfrac25 \\), and \\( P(D'\\mid C)=\\dfrac34 \\).",
+          "difficulty": "hard",
           "parts": [
             {
               "id": "gosford2020-q22a",
               "type": "mc",
               "stem": "(a) Which list correctly completes all six branch probabilities on the tree diagram?",
-              "answer": 0,
-              "steps": [
-                {
-                  "explain": "The first set of branches splits on cat ownership, using the given \\( P(C)=3/7 \\) and its complement.",
-                  "work": "\\(P(C)=\\dfrac37, \\quad P(C')=1-\\dfrac37=\\dfrac47\\)",
-                  "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 245\" width=\"440\" height=\"245\" style=\"display:block;margin:.5rem auto;max-width:440px;background:#fff;border:1px solid #e2e8f0;border-radius:10px\"><style>text{font-family:system-ui,-apple-system,sans-serif;fill:#1e293b}</style><rect width=\"440\" height=\"245\" fill=\"#fff\"/><line x1=\"36\" y1=\"120\" x2=\"145\" y2=\"70\" stroke=\"#f59e0b\" stroke-width=\"2.6\"/><line x1=\"36\" y1=\"120\" x2=\"145\" y2=\"175\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"145\" y1=\"70\" x2=\"285\" y2=\"35\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"145\" y1=\"70\" x2=\"285\" y2=\"100\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"145\" y1=\"175\" x2=\"285\" y2=\"145\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"145\" y1=\"175\" x2=\"285\" y2=\"210\" stroke=\"#475569\" stroke-width=\"1.8\"/><text x=\"153\" y=\"66\" font-size=\"11\" font-weight=\"700\">C</text><text x=\"153\" y=\"185\" font-size=\"11\" font-weight=\"700\">C′</text><text x=\"294\" y=\"34\" font-size=\"11\" font-weight=\"700\">D</text><text x=\"294\" y=\"103\" font-size=\"11\" font-weight=\"700\">D′</text><text x=\"294\" y=\"144\" font-size=\"11\" font-weight=\"700\">D</text><text x=\"294\" y=\"215\" font-size=\"11\" font-weight=\"700\">D′</text></svg>"
-                  }
-                },
-                {
-                  "explain": "From a cat-owning family, \\( P(D'|C)=3/4 \\) is given, so \\( P(D|C) \\) is its complement.",
-                  "work": "\\(P(D|C) = 1-\\dfrac34 = \\dfrac14\\)",
-                  "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 245\" width=\"440\" height=\"245\" style=\"display:block;margin:.5rem auto;max-width:440px;background:#fff;border:1px solid #e2e8f0;border-radius:10px\"><style>text{font-family:system-ui,-apple-system,sans-serif;fill:#1e293b}</style><rect width=\"440\" height=\"245\" fill=\"#fff\"/><line x1=\"36\" y1=\"120\" x2=\"145\" y2=\"70\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"36\" y1=\"120\" x2=\"145\" y2=\"175\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"145\" y1=\"70\" x2=\"285\" y2=\"35\" stroke=\"#f59e0b\" stroke-width=\"2.6\"/><line x1=\"145\" y1=\"70\" x2=\"285\" y2=\"100\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"145\" y1=\"175\" x2=\"285\" y2=\"145\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"145\" y1=\"175\" x2=\"285\" y2=\"210\" stroke=\"#475569\" stroke-width=\"1.8\"/><text x=\"153\" y=\"66\" font-size=\"11\" font-weight=\"700\">C</text><text x=\"153\" y=\"185\" font-size=\"11\" font-weight=\"700\">C′</text><text x=\"294\" y=\"34\" font-size=\"11\" font-weight=\"700\">D</text><text x=\"294\" y=\"103\" font-size=\"11\" font-weight=\"700\">D′</text><text x=\"294\" y=\"144\" font-size=\"11\" font-weight=\"700\">D</text><text x=\"294\" y=\"215\" font-size=\"11\" font-weight=\"700\">D′</text></svg>"
-                  }
-                },
-                {
-                  "explain": "From a non-cat-owning family, \\( P(D|C')=2/5 \\) is given directly, so \\( P(D'|C') \\) is its complement.",
-                  "work": "<svg viewBox=\"0 0 492 342\" width=\"492\" height=\"342\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.75rem auto;background-color:#f8fafc;border-radius:14px;border:1px solid #e2e8f0;padding:4px;\">\n  <g transform=\"translate(16,16)\"><circle cx=\"70\" cy=\"150\" r=\"4.5\" fill=\"#334155\"/><line x1=\"70\" y1=\"150\" x2=\"230\" y2=\"70\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"150\" x2=\"230\" y2=\"240\" stroke=\"#d97706\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"230\" y1=\"70\" x2=\"400\" y2=\"20\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"230\" y1=\"70\" x2=\"400\" y2=\"110\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"230\" y1=\"240\" x2=\"400\" y2=\"190\" stroke=\"#d97706\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"230\" y1=\"240\" x2=\"400\" y2=\"290\" stroke=\"#d97706\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"230\" cy=\"70\" r=\"4\" fill=\"#2563eb\"/><circle cx=\"230\" cy=\"240\" r=\"4\" fill=\"#d97706\"/><circle cx=\"400\" cy=\"20\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"400\" cy=\"110\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"400\" cy=\"190\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"400\" cy=\"290\" r=\"4.5\" fill=\"#334155\"/>\n    <text x=\"142.84458247200067\" y=\"90.68916494400135\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">3</text>\n    <line x1=\"133.84458247200067\" y1=\"95.68916494400135\" x2=\"151.84458247200067\" y2=\"95.68916494400135\" stroke=\"#2563eb\" stroke-width=\"1.6\"/>\n    <text x=\"142.84458247200067\" y=\"111.68916494400135\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">7</text>\n    <text x=\"142.15582016587905\" y=\"203.9452085939928\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">4</text>\n    <line x1=\"133.15582016587905\" y1=\"208.9452085939928\" x2=\"151.15582016587905\" y2=\"208.9452085939928\" stroke=\"#d97706\" stroke-width=\"1.6\"/>\n    <text x=\"142.15582016587905\" y=\"224.9452085939928\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">7</text>\n    <text x=\"311.0496714641183\" y=\"26.568882978002215\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">1</text>\n    <line x1=\"302.0496714641183\" y1=\"31.568882978002215\" x2=\"320.0496714641183\" y2=\"31.568882978002215\" stroke=\"#2563eb\" stroke-width=\"1.6\"/>\n    <text x=\"311.0496714641183\" y=\"47.568882978002215\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">4</text>\n    <text x=\"311.3353706603912\" y=\"100.57467469333722\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">3</text>\n    <line x1=\"302.3353706603912\" y1=\"105.57467469333722\" x2=\"320.3353706603912\" y2=\"105.57467469333722\" stroke=\"#2563eb\" stroke-width=\"1.6\"/>\n    <text x=\"311.3353706603912\" y=\"121.57467469333722\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">4</text>\n    <text x=\"311.0496714641183\" y=\"196.56888297800222\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">2</text>\n    <line x1=\"302.0496714641183\" y1=\"201.56888297800222\" x2=\"320.0496714641183\" y2=\"201.56888297800222\" stroke=\"#d97706\" stroke-width=\"1.6\"/>\n    <text x=\"311.0496714641183\" y=\"217.56888297800222\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">5</text>\n    <text x=\"310.4853388161352\" y=\"275.3498480251403\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">3</text>\n    <line x1=\"301.4853388161352\" y1=\"280.3498480251403\" x2=\"319.4853388161352\" y2=\"280.3498480251403\" stroke=\"#d97706\" stroke-width=\"1.6\"/>\n    <text x=\"310.4853388161352\" y=\"296.3498480251403\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">5</text><text x=\"216\" y=\"62\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"4\" paint-order=\"stroke\" text-anchor=\"middle\">C</text><text x=\"214\" y=\"258\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"4\" paint-order=\"stroke\" text-anchor=\"middle\">C'</text><text x=\"420\" y=\"25\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"4\" paint-order=\"stroke\" text-anchor=\"middle\">D</text><text x=\"420\" y=\"115\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"4\" paint-order=\"stroke\" text-anchor=\"middle\">D'</text><text x=\"420\" y=\"195\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"4\" paint-order=\"stroke\" text-anchor=\"middle\">D</text><text x=\"420\" y=\"295\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"4\" paint-order=\"stroke\" text-anchor=\"middle\">D'</text></g>\n</svg>\n\n\\(P(D|C')=\\dfrac25, \\quad P(D'|C')=1-\\dfrac25=\\dfrac35\\)",
-                  "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 245\" width=\"440\" height=\"245\" style=\"display:block;margin:.5rem auto;max-width:440px;background:#fff;border:1px solid #e2e8f0;border-radius:10px\"><style>text{font-family:system-ui,-apple-system,sans-serif;fill:#1e293b}</style><rect width=\"440\" height=\"245\" fill=\"#fff\"/><line x1=\"36\" y1=\"120\" x2=\"145\" y2=\"70\" stroke=\"#f59e0b\" stroke-width=\"2.6\"/><line x1=\"36\" y1=\"120\" x2=\"145\" y2=\"175\" stroke=\"#f59e0b\" stroke-width=\"2.6\"/><line x1=\"145\" y1=\"70\" x2=\"285\" y2=\"35\" stroke=\"#f59e0b\" stroke-width=\"2.6\"/><line x1=\"145\" y1=\"70\" x2=\"285\" y2=\"100\" stroke=\"#f59e0b\" stroke-width=\"2.6\"/><line x1=\"145\" y1=\"175\" x2=\"285\" y2=\"145\" stroke=\"#f59e0b\" stroke-width=\"2.6\"/><line x1=\"145\" y1=\"175\" x2=\"285\" y2=\"210\" stroke=\"#f59e0b\" stroke-width=\"2.6\"/><text x=\"153\" y=\"66\" font-size=\"11\" font-weight=\"700\">C</text><text x=\"153\" y=\"185\" font-size=\"11\" font-weight=\"700\">C′</text><text x=\"294\" y=\"34\" font-size=\"11\" font-weight=\"700\">D</text><text x=\"294\" y=\"103\" font-size=\"11\" font-weight=\"700\">D′</text><text x=\"294\" y=\"144\" font-size=\"11\" font-weight=\"700\">D</text><text x=\"294\" y=\"215\" font-size=\"11\" font-weight=\"700\">D′</text><text x=\"82\" y=\"82\" font-size=\"11\" font-weight=\"700\" fill=\"#0f766e\">3/7</text><text x=\"82\" y=\"167\" font-size=\"11\" font-weight=\"700\" fill=\"#0f766e\">4/7</text><text x=\"213\" y=\"48\" font-size=\"11\" font-weight=\"700\" fill=\"#0f766e\">1/4</text><text x=\"213\" y=\"91\" font-size=\"11\" font-weight=\"700\" fill=\"#0f766e\">3/4</text><text x=\"213\" y=\"151\" font-size=\"11\" font-weight=\"700\" fill=\"#0f766e\">2/5</text><text x=\"213\" y=\"201\" font-size=\"11\" font-weight=\"700\" fill=\"#0f766e\">3/5</text></svg>"
-                  }
-                }
-              ],
-              "xp": 1,
-              "hint": "Fill each branch using the given probability or its complement.",
-              "keyPoints": [
-                {
-                  "text": "all six branch probabilities",
-                  "note": "At each split, the probabilities on the outgoing branches must add to 1."
-                }
-              ],
-              "timeLimit": 60,
               "options": [
                 "\\(P(C)=\\frac37,\\ P(C' )=\\frac47;\\ P(D|C)=\\frac14,\\ P(D'|C)=\\frac34;\\ P(D|C')=\\frac25,\\ P(D'|C')=\\frac35\\)",
                 "\\(P(C)=\\frac37,\\ P(C' )=\\frac47;\\ P(D|C)=\\frac34,\\ P(D'|C)=\\frac14;\\ P(D|C')=\\frac25,\\ P(D'|C')=\\frac35\\)",
                 "\\(P(C)=\\frac47,\\ P(C' )=\\frac37;\\ P(D|C)=\\frac14,\\ P(D'|C)=\\frac34;\\ P(D|C')=\\frac25,\\ P(D'|C')=\\frac35\\)",
                 "\\(P(C)=\\frac37,\\ P(C' )=\\frac47;\\ P(D|C)=\\frac14,\\ P(D'|C)=\\frac34;\\ P(D|C')=\\frac35,\\ P(D'|C')=\\frac25\\)"
               ],
-              "solution": "The correct branch probabilities are shown in option A."
+              "answer": 0,
+              "hint": "Fill each branch using the given probability or its complement.",
+              "solution": "The correct branch probabilities are shown in option A.",
+              "steps": [
+                {
+                  "explain": "The first set of branches splits on cat ownership, using the given \\( P(C)=3/7 \\) and its complement.",
+                  "work": "\\(P(C)=\\dfrac37, \\quad P(C')=1-\\dfrac37=\\dfrac47\\)",
+                  "figure": {
+                    "svg": "fig:80ea69ca0d"
+                  }
+                },
+                {
+                  "explain": "From a cat-owning family, \\( P(D'|C)=3/4 \\) is given, so \\( P(D|C) \\) is its complement.",
+                  "work": "\\(P(D|C) = 1-\\dfrac34 = \\dfrac14\\)",
+                  "figure": {
+                    "svg": "fig:36f7491262"
+                  }
+                },
+                {
+                  "explain": "From a non-cat-owning family, \\( P(D|C')=2/5 \\) is given directly, so \\( P(D'|C') \\) is its complement.",
+                  "work": "<svg viewBox=\"0 0 492 342\" width=\"492\" height=\"342\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.75rem auto;background-color:#f8fafc;border-radius:14px;border:1px solid #e2e8f0;padding:4px;\">\n  <g transform=\"translate(16,16)\"><circle cx=\"70\" cy=\"150\" r=\"4.5\" fill=\"#334155\"/><line x1=\"70\" y1=\"150\" x2=\"230\" y2=\"70\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"150\" x2=\"230\" y2=\"240\" stroke=\"#d97706\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"230\" y1=\"70\" x2=\"400\" y2=\"20\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"230\" y1=\"70\" x2=\"400\" y2=\"110\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"230\" y1=\"240\" x2=\"400\" y2=\"190\" stroke=\"#d97706\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"230\" y1=\"240\" x2=\"400\" y2=\"290\" stroke=\"#d97706\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"230\" cy=\"70\" r=\"4\" fill=\"#2563eb\"/><circle cx=\"230\" cy=\"240\" r=\"4\" fill=\"#d97706\"/><circle cx=\"400\" cy=\"20\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"400\" cy=\"110\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"400\" cy=\"190\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"400\" cy=\"290\" r=\"4.5\" fill=\"#334155\"/>\n    <text x=\"142.84458247200067\" y=\"90.68916494400135\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">3</text>\n    <line x1=\"133.84458247200067\" y1=\"95.68916494400135\" x2=\"151.84458247200067\" y2=\"95.68916494400135\" stroke=\"#2563eb\" stroke-width=\"1.6\"/>\n    <text x=\"142.84458247200067\" y=\"111.68916494400135\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">7</text>\n    <text x=\"142.15582016587905\" y=\"203.9452085939928\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">4</text>\n    <line x1=\"133.15582016587905\" y1=\"208.9452085939928\" x2=\"151.15582016587905\" y2=\"208.9452085939928\" stroke=\"#d97706\" stroke-width=\"1.6\"/>\n    <text x=\"142.15582016587905\" y=\"224.9452085939928\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">7</text>\n    <text x=\"311.0496714641183\" y=\"26.568882978002215\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">1</text>\n    <line x1=\"302.0496714641183\" y1=\"31.568882978002215\" x2=\"320.0496714641183\" y2=\"31.568882978002215\" stroke=\"#2563eb\" stroke-width=\"1.6\"/>\n    <text x=\"311.0496714641183\" y=\"47.568882978002215\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">4</text>\n    <text x=\"311.3353706603912\" y=\"100.57467469333722\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">3</text>\n    <line x1=\"302.3353706603912\" y1=\"105.57467469333722\" x2=\"320.3353706603912\" y2=\"105.57467469333722\" stroke=\"#2563eb\" stroke-width=\"1.6\"/>\n    <text x=\"311.3353706603912\" y=\"121.57467469333722\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">4</text>\n    <text x=\"311.0496714641183\" y=\"196.56888297800222\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">2</text>\n    <line x1=\"302.0496714641183\" y1=\"201.56888297800222\" x2=\"320.0496714641183\" y2=\"201.56888297800222\" stroke=\"#d97706\" stroke-width=\"1.6\"/>\n    <text x=\"311.0496714641183\" y=\"217.56888297800222\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">5</text>\n    <text x=\"310.4853388161352\" y=\"275.3498480251403\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">3</text>\n    <line x1=\"301.4853388161352\" y1=\"280.3498480251403\" x2=\"319.4853388161352\" y2=\"280.3498480251403\" stroke=\"#d97706\" stroke-width=\"1.6\"/>\n    <text x=\"310.4853388161352\" y=\"296.3498480251403\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">5</text><text x=\"216\" y=\"62\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"4\" paint-order=\"stroke\" text-anchor=\"middle\">C</text><text x=\"214\" y=\"258\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"4\" paint-order=\"stroke\" text-anchor=\"middle\">C'</text><text x=\"420\" y=\"25\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"4\" paint-order=\"stroke\" text-anchor=\"middle\">D</text><text x=\"420\" y=\"115\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"4\" paint-order=\"stroke\" text-anchor=\"middle\">D'</text><text x=\"420\" y=\"195\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"4\" paint-order=\"stroke\" text-anchor=\"middle\">D</text><text x=\"420\" y=\"295\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"4\" paint-order=\"stroke\" text-anchor=\"middle\">D'</text></g>\n</svg>\n\n\\(P(D|C')=\\dfrac25, \\quad P(D'|C')=1-\\dfrac25=\\dfrac35\\)",
+                  "figure": {
+                    "svg": "fig:1c203b1272"
+                  }
+                }
+              ]
             },
             {
               "id": "gosford2020-q22bi",
@@ -1453,6 +1445,7 @@
                 "\\(\\dfrac{12}{35}\\)"
               ],
               "answer": 2,
+              "hint": "Multiply the probabilities along the cat-then-dog branch.",
               "steps": [
                 {
                   "explain": "The event \"owns both\" corresponds to following the cat branch, then the dog-given-cat branch.",
@@ -1466,16 +1459,7 @@
                   "explain": "Multiply the fractions. Pitfall: using \\( P(D'|C)=3/4 \\) instead of \\( P(D|C)=1/4 \\) here gives the wrong branch.",
                   "work": "\\(P(C\\cap D) = \\dfrac{3}{28}\\)"
                 }
-              ],
-              "xp": 1,
-              "hint": "Multiply the probabilities along the cat-then-dog branch.",
-              "keyPoints": [
-                {
-                  "text": "a cat and a dog",
-                  "note": "Multiply the probabilities along the cat-then-dog branch."
-                }
-              ],
-              "timeLimit": 60
+              ]
             },
             {
               "id": "gosford2020-q22bii",
@@ -1488,6 +1472,7 @@
                 "\\(\\dfrac{23}{35}\\)"
               ],
               "answer": 3,
+              "hint": "Use the complement of having neither pet.",
               "steps": [
                 {
                   "explain": "\"At least one pet\" is the complement of \"neither a cat nor a dog\" — easier to compute via the complement.",
@@ -1501,19 +1486,18 @@
                   "explain": "Subtract from 1. Pitfall: computing \\( P(C'\\cap D') \\) but forgetting to subtract from 1 leaves the complement value itself as a wrong \"answer\".",
                   "work": "\\(P(\\text{at least one}) = 1-\\dfrac{12}{35} = \\dfrac{23}{35}\\)"
                 }
-              ],
-              "xp": 1,
-              "hint": "Use the complement of having neither pet.",
-              "keyPoints": [
-                {
-                  "text": "at least one pet",
-                  "note": "Use the complement of having neither pet."
-                }
-              ],
-              "timeLimit": 60
+              ]
             }
           ],
-          "manual": true,
+          "hint": "At each split, the probabilities on the outgoing branches must add to 1.",
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "P(C)",
+              "note": "Use complementary probabilities at every branch point."
+            }
+          ],
           "meta": {
             "source": "Gosford 2020 Trial Q22",
             "reviewStatus": "approved",
@@ -1522,16 +1506,7 @@
           },
           "dna": {
             "dnaId": "PROB-COND-01"
-          },
-          "hint": "At each split, the probabilities on the outgoing branches must add to 1.",
-          "keyPoints": [
-            {
-              "text": "P(C)",
-              "note": "Use complementary probabilities at every branch point."
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1
+          }
         }
       ]
     },
