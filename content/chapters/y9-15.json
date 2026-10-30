@@ -238,6 +238,88 @@
             "marks": 2,
             "origin": "exam-import"
           }
+        },
+        {
+          "id": "nsbhs2018-y9-q10ai",
+          "difficulty": "medium",
+          "stem": "Factorise \\(a^4+a^2b^2+b^4\\).",
+          "hint": "Recognise a difference of squares: (a²+b²)²−(ab)².",
+          "steps": [
+            {
+              "explain": "Rewrite the expression by adding and subtracting a²b².",
+              "work": "\\(a^4+a^2b^2+b^4=(a^2+b^2)^2-a^2b^2\\)"
+            },
+            {
+              "explain": "Apply U²−V²=(U−V)(U+V), with U=a²+b² and V=ab.",
+              "work": "\\(((a^2+b^2)-ab)((a^2+b^2)+ab)\\)"
+            },
+            {
+              "explain": "Reorder terms in the factors.",
+              "work": "\\((a^2-ab+b^2)(a^2+ab+b^2)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "keyPoints": [
+            {
+              "text": "Factorise \\(a^4+a^2b^2+b^4\\).",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\((a^2+b^2)^2\\)",
+            "\\((a^2+ab)(a^2-ab)\\)",
+            "\\((a^2+2b^2)(a^2-b^2)\\)",
+            "\\((a^2+ab+b^2)(a^2-ab+b^2)\\)"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "nsbhs2018-y9-q10aii",
+          "difficulty": "medium",
+          "stem": "Factorise \\(a^4+4b^4\\).",
+          "hint": "Use Sophie Germain’s identity x⁴+4y⁴=(x²−2xy+2y²)(x²+2xy+2y²).",
+          "steps": [
+            {
+              "explain": "Match the expression with Sophie Germain’s identity using x=a and y=b.",
+              "work": "\\(a^4+4b^4=a^4+4(b)^4\\)"
+            },
+            {
+              "explain": "Substitute a and b into both factors.",
+              "work": "\\((a^2-2ab+2b^2)(a^2+2ab+2b^2)\\)"
+            },
+            {
+              "explain": "The product expands to a⁴+4b⁴, so the factorisation is complete.",
+              "work": "\\(a^4+4b^4=(a^2-2ab+2b^2)(a^2+2ab+2b^2)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "keyPoints": [
+            {
+              "text": "Factorise \\(a^4+4b^4\\).",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\((a^2-2ab+2b^2)(a^2+2ab+2b^2)\\)",
+            "\\((a^2-2b^2)(a^2+2b^2)\\)",
+            "\\((a^2+2ab+2b^2)^2\\)",
+            "\\((a^2-2ab)(a^2+2ab)\\)"
+          ],
+          "answer": 0
         }
       ]
     },
@@ -501,6 +583,43 @@
             "marks": 2,
             "origin": "exam-import"
           }
+        },
+        {
+          "id": "nsbhs2018-y9-q2bii",
+          "difficulty": "medium",
+          "stem": "Factorise \\(2xy-6xz-y^2+3yz\\).",
+          "hint": "Group the first two terms and the last two terms; each group should reveal the same bracket.",
+          "steps": [
+            {
+              "explain": "Group terms in pairs and factor each pair.",
+              "work": "\\((2xy-6xz)+(-y^2+3yz)=2x(y-3z)-y(y-3z)\\)"
+            },
+            {
+              "explain": "Factor out the common bracket y−3z.",
+              "work": "\\((y-3z)(2x-y)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "keyPoints": [
+            {
+              "text": "Factorise \\(2xy-6xz-y^2+3yz\\).",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\((y-3z)(2x-y)\\)",
+            "\\((y+3z)(2x-y)\\)",
+            "\\((2x-3z)(y+1)\\)",
+            "\\((y-3z)(2x+y)\\)"
+          ],
+          "answer": 0
         }
       ]
     },
@@ -619,6 +738,43 @@
             "grade": "9"
           },
           "xp": 2
+        },
+        {
+          "id": "nsbhs2018-y9-q2biii",
+          "difficulty": "medium",
+          "stem": "Factorise \\(p^2-pq-6q^2\\).",
+          "hint": "Find two numbers whose product is −6 and whose sum is −1.",
+          "steps": [
+            {
+              "explain": "The coefficient of p is −1 and the constant is −6q². The factors must multiply to −6 and add to −1.",
+              "work": "\\(2\\times(-3)=-6,\\qquad2+(-3)=-1\\)"
+            },
+            {
+              "explain": "Use those numbers with q in the brackets.",
+              "work": "\\(p^2-pq-6q^2=(p+2q)(p-3q)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "keyPoints": [
+            {
+              "text": "Factorise \\(p^2-pq-6q^2\\).",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\((p-2q)(p+3q)\\)",
+            "\\((p+3q)(p-2q)\\)",
+            "\\((p+2q)(p-3q)\\)",
+            "\\((p-6q)(p+q)\\)"
+          ],
+          "answer": 2
         }
       ]
     },
@@ -890,6 +1046,47 @@
             "marks": 2,
             "origin": "exam-import"
           }
+        },
+        {
+          "id": "nsbhs2018-y9-q2biv",
+          "difficulty": "medium",
+          "stem": "Factorise \\(6x^2+11x-10\\).",
+          "hint": "For the general quadratic, find factors of 6×(−10) that add to 11.",
+          "steps": [
+            {
+              "explain": "Multiply the leading and constant coefficients. Find a pair with product −60 and sum 11.",
+              "work": "\\(15\\times(-4)=-60,\\qquad15-4=11\\)"
+            },
+            {
+              "explain": "Split the middle term and factor by grouping.",
+              "work": "\\(6x^2+15x-4x-10=3x(2x+5)-2(2x+5)\\)"
+            },
+            {
+              "explain": "Factor out the common bracket.",
+              "work": "\\((2x+5)(3x-2)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "keyPoints": [
+            {
+              "text": "Factorise \\(6x^2+11x-10\\).",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\((2x-5)(3x+2)\\)",
+            "\\((2x+5)(3x-2)\\)",
+            "\\((6x-5)(x+2)\\)",
+            "\\((3x+5)(2x-2)\\)"
+          ],
+          "answer": 1
         }
       ]
     },
@@ -1427,6 +1624,47 @@
             "marks": 2,
             "origin": "exam-import"
           }
+        },
+        {
+          "id": "nsbhs2018-y9-q2c",
+          "difficulty": "medium",
+          "stem": "Simplify \\(\\frac{a^2-a}{a}\\div\\frac{3a-3}{3a-2}\\).",
+          "hint": "Factor the numerators, cancel only common factors, then multiply by the reciprocal.",
+          "steps": [
+            {
+              "explain": "Factor both numerators before dividing.",
+              "work": "\\(\\frac{a(a-1)}a\\div\\frac{3(a-1)}{3a-2}\\)"
+            },
+            {
+              "explain": "Cancel a in the first fraction, then change division to multiplication by the reciprocal.",
+              "work": "\\((a-1)\\times\\frac{3a-2}{3(a-1)}\\)"
+            },
+            {
+              "explain": "Cancel the common factor a−1, noting the original expression excludes values that make a denominator zero.",
+              "work": "\\(\\frac{3a-2}{3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "keyPoints": [
+            {
+              "text": "Simplify \\(\\frac{a^2-a}{a}\\div\\frac{3a-3}{3a-2}\\).",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(\\frac{3a}{3a-2}\\)",
+            "\\(\\frac{a-1}{3a-2}\\)",
+            "\\(3a-2\\)",
+            "\\(\\frac{3a-2}{3}\\)"
+          ],
+          "answer": 3
         }
       ]
     },
@@ -1796,6 +2034,47 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "nsbhs2018-y9-q2d",
+          "difficulty": "medium",
+          "stem": "Simplify \\(\\frac{x}{a^2+ab}-\\frac{x}{a^2-ab}\\).",
+          "hint": "Factor each denominator as a(a+b) and a(a−b), then use the common denominator.",
+          "steps": [
+            {
+              "explain": "Factor the denominators using a common factor a.",
+              "work": "\\(\\frac{x}{a(a+b)}-\\frac{x}{a(a-b)}\\)"
+            },
+            {
+              "explain": "The common denominator is a(a+b)(a−b). Combine numerators.",
+              "work": "\\(\\frac{x(a-b)-x(a+b)}{a(a+b)(a-b)}\\)"
+            },
+            {
+              "explain": "Expand the numerator and simplify the difference of squares in the denominator.",
+              "work": "\\(\\frac{xa-xb-xa-xb}{a(a^2-b^2)}=-\\frac{2bx}{a(a^2-b^2)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "keyPoints": [
+            {
+              "text": "Simplify \\(\\frac{x}{a^2+ab}-\\frac{x}{a^2-ab}\\).",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(-\\frac{2bx}{a(a^2-b^2)}\\)",
+            "\\(\\frac{2bx}{a(a^2-b^2)}\\)",
+            "\\(-\\frac{2x}{a^2-b^2}\\)",
+            "\\(-\\frac{2bx}{a^2+b^2}\\)"
+          ],
+          "answer": 0
         }
       ]
     },

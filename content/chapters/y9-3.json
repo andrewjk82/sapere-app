@@ -5085,6 +5085,211 @@
               }
             }
           ]
+        },
+        {
+          "id": "nsbhs2018-y9-q9bi",
+          "difficulty": "medium",
+          "stem": "Dr Lee earned $120,000 in the 2017–2018 tax year. Each fortnight, she paid $1,000 in PAYG tax. She spent $15,000 on medical indemnity insurance and $3,000 on professional association fees; both expenses are tax deductible. What is Dr Lee’s taxable income?",
+          "hint": "Subtract both tax-deductible expenses from gross income.",
+          "steps": [
+            {
+              "explain": "Add the two deductible expenses.",
+              "work": "\\(15000+3000=18000\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 1 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><text x=\"155\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Resident tax rates 2017–18</text><rect x=\"12\" y=\"30\" width=\"286\" height=\"26\" fill=\"#e2e8f0\"/><text x=\"80\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Taxable income</text><text x=\"220\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Tax on this income</text><path d=\"M12,85 L298,85\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"75\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">0–$18,200</text><text x=\"112\" y=\"75\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">Nil</text><path d=\"M12,114 L298,114\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"104\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$18,201–$37,000</text><text x=\"112\" y=\"104\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">19¢ per $1 over $18,200</text><path d=\"M12,143 L298,143\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"133\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$37,001–$87,000</text><text x=\"112\" y=\"133\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$3,572 + 32.5¢ per $1 over $37,000</text><path d=\"M12,172 L298,172\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"162\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">$87,001–$180,000</text><text x=\"112\" y=\"162\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">$19,822 + 37¢ per $1 over $87,000</text><path d=\"M12,201 L298,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"191\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$180,001 and over</text><text x=\"112\" y=\"191\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$54,232 + 45¢ per $1 over $180,000</text><path d=\"M12,30 L12,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><path d=\"M298,30 L298,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><path d=\"M12,30 L298,30\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/></svg>"
+              }
+            },
+            {
+              "explain": "Subtract this total from Dr Lee’s gross income.",
+              "work": "\\(120000-18000=102000\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 2 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><text x=\"155\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Resident tax rates 2017–18</text><rect x=\"12\" y=\"30\" width=\"286\" height=\"26\" fill=\"#e2e8f0\"/><text x=\"80\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Taxable income</text><text x=\"220\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Tax on this income</text><path d=\"M12,85 L298,85\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"75\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">0–$18,200</text><text x=\"112\" y=\"75\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">Nil</text><path d=\"M12,114 L298,114\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"104\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$18,201–$37,000</text><text x=\"112\" y=\"104\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">19¢ per $1 over $18,200</text><path d=\"M12,143 L298,143\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"133\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$37,001–$87,000</text><text x=\"112\" y=\"133\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$3,572 + 32.5¢ per $1 over $37,000</text><path d=\"M12,172 L298,172\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"162\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">$87,001–$180,000</text><text x=\"112\" y=\"162\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">$19,822 + 37¢ per $1 over $87,000</text><path d=\"M12,201 L298,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"191\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$180,001 and over</text><text x=\"112\" y=\"191\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$54,232 + 45¢ per $1 over $180,000</text><path d=\"M12,30 L12,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><path d=\"M298,30 L298,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><path d=\"M12,30 L298,30\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/></svg>"
+              }
+            },
+            {
+              "explain": "State the taxable income.",
+              "work": "\\(\\$102,000\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 3 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><text x=\"155\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Resident tax rates 2017–18</text><rect x=\"12\" y=\"30\" width=\"286\" height=\"26\" fill=\"#e2e8f0\"/><text x=\"80\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Taxable income</text><text x=\"220\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Tax on this income</text><path d=\"M12,85 L298,85\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"75\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">0–$18,200</text><text x=\"112\" y=\"75\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">Nil</text><path d=\"M12,114 L298,114\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"104\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$18,201–$37,000</text><text x=\"112\" y=\"104\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">19¢ per $1 over $18,200</text><path d=\"M12,143 L298,143\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"133\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$37,001–$87,000</text><text x=\"112\" y=\"133\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$3,572 + 32.5¢ per $1 over $37,000</text><path d=\"M12,172 L298,172\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"162\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">$87,001–$180,000</text><text x=\"112\" y=\"162\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">$19,822 + 37¢ per $1 over $87,000</text><path d=\"M12,201 L298,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"191\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$180,001 and over</text><text x=\"112\" y=\"191\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$54,232 + 45¢ per $1 over $180,000</text><path d=\"M12,30 L12,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><path d=\"M298,30 L298,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><path d=\"M12,30 L298,30\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 0 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><text x=\"155\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Resident tax rates 2017–18</text><rect x=\"12\" y=\"30\" width=\"286\" height=\"26\" fill=\"#e2e8f0\"/><text x=\"80\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Taxable income</text><text x=\"220\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Tax on this income</text><path d=\"M12,85 L298,85\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"75\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">0–$18,200</text><text x=\"112\" y=\"75\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">Nil</text><path d=\"M12,114 L298,114\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"104\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$18,201–$37,000</text><text x=\"112\" y=\"104\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">19¢ per $1 over $18,200</text><path d=\"M12,143 L298,143\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"133\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$37,001–$87,000</text><text x=\"112\" y=\"133\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$3,572 + 32.5¢ per $1 over $37,000</text><path d=\"M12,172 L298,172\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"162\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$87,001–$180,000</text><text x=\"112\" y=\"162\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$19,822 + 37¢ per $1 over $87,000</text><path d=\"M12,201 L298,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"191\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$180,001 and over</text><text x=\"112\" y=\"191\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$54,232 + 45¢ per $1 over $180,000</text><path d=\"M12,30 L12,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><path d=\"M298,30 L298,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><path d=\"M12,30 L298,30\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "Dr Lee earned",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(\\$120,000\\)",
+            "\\(\\$105,000\\)",
+            "\\(\\$102,000\\)",
+            "\\(\\$138,000\\)"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "nsbhs2018-y9-q9bii",
+          "difficulty": "medium",
+          "stem": "Dr Lee earned $120,000 in the 2017–2018 tax year. Each fortnight, she paid $1,000 in PAYG tax. She spent $15,000 on medical indemnity insurance and $3,000 on professional association fees; both expenses are tax deductible. What the amount of tax on this income?",
+          "hint": "Use taxable income $102,000. In the supplied resident table this falls in the $87,001–$180,000 bracket.",
+          "steps": [
+            {
+              "explain": "The taxable income is $102,000, which is $15,000 above the $87,000 threshold.",
+              "work": "\\(102000-87000=15000\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 1 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><text x=\"155\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Resident tax rates 2017–18</text><rect x=\"12\" y=\"30\" width=\"286\" height=\"26\" fill=\"#e2e8f0\"/><text x=\"80\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Taxable income</text><text x=\"220\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Tax on this income</text><path d=\"M12,85 L298,85\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"75\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">0–$18,200</text><text x=\"112\" y=\"75\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">Nil</text><path d=\"M12,114 L298,114\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"104\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$18,201–$37,000</text><text x=\"112\" y=\"104\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">19¢ per $1 over $18,200</text><path d=\"M12,143 L298,143\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"133\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$37,001–$87,000</text><text x=\"112\" y=\"133\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$3,572 + 32.5¢ per $1 over $37,000</text><path d=\"M12,172 L298,172\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"162\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">$87,001–$180,000</text><text x=\"112\" y=\"162\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">$19,822 + 37¢ per $1 over $87,000</text><path d=\"M12,201 L298,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"191\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$180,001 and over</text><text x=\"112\" y=\"191\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$54,232 + 45¢ per $1 over $180,000</text><path d=\"M12,30 L12,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><path d=\"M298,30 L298,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><path d=\"M12,30 L298,30\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/></svg>"
+              }
+            },
+            {
+              "explain": "The tax table gives a base tax of $19,822 plus 37 cents per dollar over $87,000.",
+              "work": "\\(19822+0.37(15000)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 2 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><text x=\"155\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Resident tax rates 2017–18</text><rect x=\"12\" y=\"30\" width=\"286\" height=\"26\" fill=\"#e2e8f0\"/><text x=\"80\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Taxable income</text><text x=\"220\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Tax on this income</text><path d=\"M12,85 L298,85\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"75\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">0–$18,200</text><text x=\"112\" y=\"75\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">Nil</text><path d=\"M12,114 L298,114\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"104\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$18,201–$37,000</text><text x=\"112\" y=\"104\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">19¢ per $1 over $18,200</text><path d=\"M12,143 L298,143\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"133\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$37,001–$87,000</text><text x=\"112\" y=\"133\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$3,572 + 32.5¢ per $1 over $37,000</text><path d=\"M12,172 L298,172\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"162\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">$87,001–$180,000</text><text x=\"112\" y=\"162\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">$19,822 + 37¢ per $1 over $87,000</text><path d=\"M12,201 L298,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"191\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$180,001 and over</text><text x=\"112\" y=\"191\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$54,232 + 45¢ per $1 over $180,000</text><path d=\"M12,30 L12,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><path d=\"M298,30 L298,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><path d=\"M12,30 L298,30\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/></svg>"
+              }
+            },
+            {
+              "explain": "Calculate the tax payable before PAYG credits.",
+              "work": "\\(19822+5550=\\$25,372\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 3 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><text x=\"155\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Resident tax rates 2017–18</text><rect x=\"12\" y=\"30\" width=\"286\" height=\"26\" fill=\"#e2e8f0\"/><text x=\"80\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Taxable income</text><text x=\"220\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Tax on this income</text><path d=\"M12,85 L298,85\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"75\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">0–$18,200</text><text x=\"112\" y=\"75\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">Nil</text><path d=\"M12,114 L298,114\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"104\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$18,201–$37,000</text><text x=\"112\" y=\"104\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">19¢ per $1 over $18,200</text><path d=\"M12,143 L298,143\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"133\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$37,001–$87,000</text><text x=\"112\" y=\"133\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$3,572 + 32.5¢ per $1 over $37,000</text><path d=\"M12,172 L298,172\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"162\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">$87,001–$180,000</text><text x=\"112\" y=\"162\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">$19,822 + 37¢ per $1 over $87,000</text><path d=\"M12,201 L298,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"191\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$180,001 and over</text><text x=\"112\" y=\"191\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$54,232 + 45¢ per $1 over $180,000</text><path d=\"M12,30 L12,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><path d=\"M298,30 L298,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><path d=\"M12,30 L298,30\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 0 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><text x=\"155\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Resident tax rates 2017–18</text><rect x=\"12\" y=\"30\" width=\"286\" height=\"26\" fill=\"#e2e8f0\"/><text x=\"80\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Taxable income</text><text x=\"220\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Tax on this income</text><path d=\"M12,85 L298,85\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"75\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">0–$18,200</text><text x=\"112\" y=\"75\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">Nil</text><path d=\"M12,114 L298,114\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"104\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$18,201–$37,000</text><text x=\"112\" y=\"104\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">19¢ per $1 over $18,200</text><path d=\"M12,143 L298,143\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"133\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$37,001–$87,000</text><text x=\"112\" y=\"133\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$3,572 + 32.5¢ per $1 over $37,000</text><path d=\"M12,172 L298,172\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"162\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$87,001–$180,000</text><text x=\"112\" y=\"162\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$19,822 + 37¢ per $1 over $87,000</text><path d=\"M12,201 L298,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"191\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$180,001 and over</text><text x=\"112\" y=\"191\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$54,232 + 45¢ per $1 over $180,000</text><path d=\"M12,30 L12,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><path d=\"M298,30 L298,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><path d=\"M12,30 L298,30\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "Dr Lee earned $120,000 in the 2017–2018",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(\\$19,822\\)",
+            "\\(\\$25,372\\)",
+            "\\(\\$37,740\\)",
+            "\\(\\$32,500\\)"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "nsbhs2018-y9-q9biii",
+          "difficulty": "medium",
+          "stem": "Dr Lee earned $120,000 in the 2017–2018 tax year. Each fortnight, she paid $1,000 in PAYG tax. She spent $15,000 on medical indemnity insurance and $3,000 on professional association fees; both expenses are tax deductible. Dr Lee’s taxable income is $102,000, and her tax from the supplied resident tax table is $25,372. Does she owe money, or will she receive a refund? How much?",
+          "hint": "Calculate 26 fortnightly PAYG payments, then compare the total with tax payable.",
+          "steps": [
+            {
+              "explain": "There are 26 fortnights in the year. Find total PAYG tax paid.",
+              "work": "\\(26\\times1000=\\$26,000\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 1 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><text x=\"155\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Resident tax rates 2017–18</text><rect x=\"12\" y=\"30\" width=\"286\" height=\"26\" fill=\"#e2e8f0\"/><text x=\"80\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Taxable income</text><text x=\"220\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Tax on this income</text><path d=\"M12,85 L298,85\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"75\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">0–$18,200</text><text x=\"112\" y=\"75\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">Nil</text><path d=\"M12,114 L298,114\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"104\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$18,201–$37,000</text><text x=\"112\" y=\"104\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">19¢ per $1 over $18,200</text><path d=\"M12,143 L298,143\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"133\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$37,001–$87,000</text><text x=\"112\" y=\"133\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$3,572 + 32.5¢ per $1 over $37,000</text><path d=\"M12,172 L298,172\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"162\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">$87,001–$180,000</text><text x=\"112\" y=\"162\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">$19,822 + 37¢ per $1 over $87,000</text><path d=\"M12,201 L298,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"191\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$180,001 and over</text><text x=\"112\" y=\"191\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$54,232 + 45¢ per $1 over $180,000</text><path d=\"M12,30 L12,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><path d=\"M298,30 L298,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><path d=\"M12,30 L298,30\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/></svg>"
+              }
+            },
+            {
+              "explain": "Compare tax paid with the tax payable.",
+              "work": "\\(26000-25372=628\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 2 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><text x=\"155\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Resident tax rates 2017–18</text><rect x=\"12\" y=\"30\" width=\"286\" height=\"26\" fill=\"#e2e8f0\"/><text x=\"80\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Taxable income</text><text x=\"220\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Tax on this income</text><path d=\"M12,85 L298,85\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"75\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">0–$18,200</text><text x=\"112\" y=\"75\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">Nil</text><path d=\"M12,114 L298,114\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"104\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$18,201–$37,000</text><text x=\"112\" y=\"104\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">19¢ per $1 over $18,200</text><path d=\"M12,143 L298,143\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"133\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$37,001–$87,000</text><text x=\"112\" y=\"133\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$3,572 + 32.5¢ per $1 over $37,000</text><path d=\"M12,172 L298,172\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"162\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">$87,001–$180,000</text><text x=\"112\" y=\"162\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">$19,822 + 37¢ per $1 over $87,000</text><path d=\"M12,201 L298,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"191\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$180,001 and over</text><text x=\"112\" y=\"191\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$54,232 + 45¢ per $1 over $180,000</text><path d=\"M12,30 L12,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><path d=\"M298,30 L298,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><path d=\"M12,30 L298,30\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/></svg>"
+              }
+            },
+            {
+              "explain": "PAYG exceeds the tax bill, so the difference is a refund.",
+              "work": "\\(\\text{refund}=\\$628\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 3 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><text x=\"155\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Resident tax rates 2017–18</text><rect x=\"12\" y=\"30\" width=\"286\" height=\"26\" fill=\"#e2e8f0\"/><text x=\"80\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Taxable income</text><text x=\"220\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Tax on this income</text><path d=\"M12,85 L298,85\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"75\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">0–$18,200</text><text x=\"112\" y=\"75\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">Nil</text><path d=\"M12,114 L298,114\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"104\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$18,201–$37,000</text><text x=\"112\" y=\"104\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">19¢ per $1 over $18,200</text><path d=\"M12,143 L298,143\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"133\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$37,001–$87,000</text><text x=\"112\" y=\"133\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$3,572 + 32.5¢ per $1 over $37,000</text><path d=\"M12,172 L298,172\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"162\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">$87,001–$180,000</text><text x=\"112\" y=\"162\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">$19,822 + 37¢ per $1 over $87,000</text><path d=\"M12,201 L298,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"191\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$180,001 and over</text><text x=\"112\" y=\"191\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$54,232 + 45¢ per $1 over $180,000</text><path d=\"M12,30 L12,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><path d=\"M298,30 L298,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><path d=\"M12,30 L298,30\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 0 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><text x=\"155\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Resident tax rates 2017–18</text><rect x=\"12\" y=\"30\" width=\"286\" height=\"26\" fill=\"#e2e8f0\"/><text x=\"80\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Taxable income</text><text x=\"220\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Tax on this income</text><path d=\"M12,85 L298,85\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"75\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">0–$18,200</text><text x=\"112\" y=\"75\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">Nil</text><path d=\"M12,114 L298,114\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"104\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$18,201–$37,000</text><text x=\"112\" y=\"104\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">19¢ per $1 over $18,200</text><path d=\"M12,143 L298,143\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"133\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$37,001–$87,000</text><text x=\"112\" y=\"133\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$3,572 + 32.5¢ per $1 over $37,000</text><path d=\"M12,172 L298,172\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"162\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$87,001–$180,000</text><text x=\"112\" y=\"162\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$19,822 + 37¢ per $1 over $87,000</text><path d=\"M12,201 L298,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"18\" y=\"191\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$180,001 and over</text><text x=\"112\" y=\"191\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"7.5\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$54,232 + 45¢ per $1 over $180,000</text><path d=\"M12,30 L12,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><path d=\"M298,30 L298,201\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><path d=\"M12,30 L298,30\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.8\" stroke-linecap=\"round\"/></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "taxable income",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "She owes \\(\\$628\\).",
+            "She receives a refund of \\(\\$1,372\\).",
+            "She owes \\(\\$25,372\\).",
+            "She receives a refund of \\(\\$628\\)."
+          ],
+          "answer": 3
+        },
+        {
+          "id": "nsbhs2018-y9-q9bforeign",
+          "difficulty": "medium",
+          "stem": "The Australian Taxation Office provides a different tax table for foreign residents. Describe one way in which foreign residents are taxed differently to residents.",
+          "hint": "Compare the first row of the resident and foreign-resident tax tables supplied with the question.",
+          "steps": [
+            {
+              "explain": "The resident table has a tax-free threshold; the foreign-resident table applies tax from the first dollar of taxable income.",
+              "work": "\\(\\text{foreign-resident tax-free threshold}=\\$0\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 1 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><text x=\"155\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Foreign resident tax rates 2017–18</text><rect x=\"15\" y=\"32\" width=\"280\" height=\"26\" fill=\"#e2e8f0\"/><text x=\"80\" y=\"50\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Taxable income</text><text x=\"220\" y=\"50\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Tax on this income</text><path d=\"M15,96 L295,96\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"20\" y=\"81\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">0–$87,000</text><text x=\"140\" y=\"81\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">32.5¢ for each $1</text><path d=\"M15,134 L295,134\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"20\" y=\"119\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$87,001–$180,000</text><text x=\"140\" y=\"119\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$28,275 + 37¢ per $1 over $87,000</text><path d=\"M15,172 L295,172\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"20\" y=\"157\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$180,001 and over</text><text x=\"140\" y=\"157\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$62,685 + 45¢ per $1 over $180,000</text></svg>"
+              }
+            },
+            {
+              "explain": "State one clear difference between the tables.",
+              "work": "\\(\\text{foreign residents do not receive the resident tax-free threshold}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 2 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><text x=\"155\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Foreign resident tax rates 2017–18</text><rect x=\"15\" y=\"32\" width=\"280\" height=\"26\" fill=\"#e2e8f0\"/><text x=\"80\" y=\"50\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Taxable income</text><text x=\"220\" y=\"50\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Tax on this income</text><path d=\"M15,96 L295,96\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"20\" y=\"81\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">0–$87,000</text><text x=\"140\" y=\"81\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">32.5¢ for each $1</text><path d=\"M15,134 L295,134\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"20\" y=\"119\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$87,001–$180,000</text><text x=\"140\" y=\"119\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$28,275 + 37¢ per $1 over $87,000</text><path d=\"M15,172 L295,172\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"20\" y=\"157\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$180,001 and over</text><text x=\"140\" y=\"157\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$62,685 + 45¢ per $1 over $180,000</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 0 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><text x=\"155\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Foreign resident tax rates 2017–18</text><rect x=\"15\" y=\"32\" width=\"280\" height=\"26\" fill=\"#e2e8f0\"/><text x=\"80\" y=\"50\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Taxable income</text><text x=\"220\" y=\"50\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Tax on this income</text><path d=\"M15,96 L295,96\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"20\" y=\"81\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">0–$87,000</text><text x=\"140\" y=\"81\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">32.5¢ for each $1</text><path d=\"M15,134 L295,134\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"20\" y=\"119\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$87,001–$180,000</text><text x=\"140\" y=\"119\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$28,275 + 37¢ per $1 over $87,000</text><path d=\"M15,172 L295,172\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"0.7\" stroke-linecap=\"round\"/><text x=\"20\" y=\"157\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$180,001 and over</text><text x=\"140\" y=\"157\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"8\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">$62,685 + 45¢ per $1 over $180,000</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "different tax table",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "Foreign residents do not receive the tax-free threshold that applies to residents.",
+            "Foreign residents never pay tax.",
+            "Foreign residents can claim the resident tax-free threshold twice.",
+            "Foreign residents pay tax only on investment income."
+          ],
+          "answer": 0
         }
       ]
     },
@@ -5324,6 +5529,112 @@
             "marks": 2,
             "origin": "exam-import"
           }
+        },
+        {
+          "id": "nsbhs2018-y9-q9ci",
+          "difficulty": "medium",
+          "stem": "Jason wants to purchase a television priced at \\(\\$7,996\\). The payment terms are a 5% deposit, simple interest at 12% per annum and a 40-month contract. How much interest is charged?",
+          "hint": "Calculate the deposit, subtract it from the price to find the amount financed, and convert 40 months to years.",
+          "steps": [
+            {
+              "explain": "Calculate the 5% deposit and amount borrowed.",
+              "work": "\\(0.05(7996)=399.80;\\quad P=7996-399.80=7596.20\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 1 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><rect x=\"48\" y=\"35\" width=\"155\" height=\"100\" rx=\"8\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"2\"/><rect x=\"60\" y=\"47\" width=\"131\" height=\"76\" fill=\"#0f172a\"/><path d=\"M85 110 L125 58 L165 110 Z\" fill=\"#7c3aed\"/><path d=\"M105 136 L95 155 M150 136 L160 155\" stroke=\"#334155\" stroke-width=\"3\"/><text x=\"125\" y=\"180\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">$7,996</text></svg>"
+              }
+            },
+            {
+              "explain": "Convert the contract term to years.",
+              "work": "\\(t=40/12\\text{ years}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 2 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><rect x=\"48\" y=\"35\" width=\"155\" height=\"100\" rx=\"8\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"2\"/><rect x=\"60\" y=\"47\" width=\"131\" height=\"76\" fill=\"#0f172a\"/><path d=\"M85 110 L125 58 L165 110 Z\" fill=\"#7c3aed\"/><path d=\"M105 136 L95 155 M150 136 L160 155\" stroke=\"#334155\" stroke-width=\"3\"/><text x=\"125\" y=\"180\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">$7,996</text></svg>"
+              }
+            },
+            {
+              "explain": "Use simple interest I=Prt.",
+              "work": "\\(I=7596.20(0.12)(40/12)=\\$3,038.48\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 3 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><rect x=\"48\" y=\"35\" width=\"155\" height=\"100\" rx=\"8\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"2\"/><rect x=\"60\" y=\"47\" width=\"131\" height=\"76\" fill=\"#0f172a\"/><path d=\"M85 110 L125 58 L165 110 Z\" fill=\"#7c3aed\"/><path d=\"M105 136 L95 155 M150 136 L160 155\" stroke=\"#334155\" stroke-width=\"3\"/><text x=\"125\" y=\"180\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">$7,996</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 0 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><rect x=\"48\" y=\"35\" width=\"155\" height=\"100\" rx=\"8\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"2\"/><rect x=\"60\" y=\"47\" width=\"131\" height=\"76\" fill=\"#0f172a\"/><path d=\"M85 110 L125 58 L165 110 Z\" fill=\"#7c3aed\"/><path d=\"M105 136 L95 155 M150 136 L160 155\" stroke=\"#334155\" stroke-width=\"3\"/><text x=\"125\" y=\"180\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">$7,996</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "5% deposit",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(\\$3,837.12\\)",
+            "\\(\\$2,398.80\\)",
+            "\\(\\$3,038.48\\)",
+            "\\(\\$959.52\\)"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "nsbhs2018-y9-q9cii",
+          "difficulty": "medium",
+          "stem": "Jason finances the \\(\\$7,996\\) television with a 5% deposit, simple interest at 12% per annum and a 40-month contract. What is the monthly repayment?",
+          "hint": "Add the interest to the financed amount, then divide the total by 40 monthly repayments.",
+          "steps": [
+            {
+              "explain": "The deposit is $399.80, so the financed principal is $7,596.20. Interest is $3,038.48.",
+              "work": "\\(P=7996-0.05(7996)=7596.20;\\quad I=3038.48\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 1 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><rect x=\"48\" y=\"35\" width=\"155\" height=\"100\" rx=\"8\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"2\"/><rect x=\"60\" y=\"47\" width=\"131\" height=\"76\" fill=\"#0f172a\"/><path d=\"M85 110 L125 58 L165 110 Z\" fill=\"#7c3aed\"/><path d=\"M105 136 L95 155 M150 136 L160 155\" stroke=\"#334155\" stroke-width=\"3\"/><text x=\"125\" y=\"180\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">$7,996</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the total amount repaid through the contract.",
+              "work": "\\(7596.20+3038.48=10634.68\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 2 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><rect x=\"48\" y=\"35\" width=\"155\" height=\"100\" rx=\"8\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"2\"/><rect x=\"60\" y=\"47\" width=\"131\" height=\"76\" fill=\"#0f172a\"/><path d=\"M85 110 L125 58 L165 110 Z\" fill=\"#7c3aed\"/><path d=\"M105 136 L95 155 M150 136 L160 155\" stroke=\"#334155\" stroke-width=\"3\"/><text x=\"125\" y=\"180\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">$7,996</text></svg>"
+              }
+            },
+            {
+              "explain": "Divide by the 40 monthly repayments and round to cents.",
+              "work": "\\(10634.68/40=\\$265.867\\approx\\$265.87\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 3 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><rect x=\"48\" y=\"35\" width=\"155\" height=\"100\" rx=\"8\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"2\"/><rect x=\"60\" y=\"47\" width=\"131\" height=\"76\" fill=\"#0f172a\"/><path d=\"M85 110 L125 58 L165 110 Z\" fill=\"#7c3aed\"/><path d=\"M105 136 L95 155 M150 136 L160 155\" stroke=\"#334155\" stroke-width=\"3\"/><text x=\"125\" y=\"180\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">$7,996</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 0 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><rect x=\"48\" y=\"35\" width=\"155\" height=\"100\" rx=\"8\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"2\"/><rect x=\"60\" y=\"47\" width=\"131\" height=\"76\" fill=\"#0f172a\"/><path d=\"M85 110 L125 58 L165 110 Z\" fill=\"#7c3aed\"/><path d=\"M105 136 L95 155 M150 136 L160 155\" stroke=\"#334155\" stroke-width=\"3\"/><text x=\"125\" y=\"180\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">$7,996</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "monthly repayment",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(\\$189.91\\)",
+            "\\(\\$265.87\\)",
+            "\\(\\$303.85\\)",
+            "\\(\\$399.80\\)"
+          ],
+          "answer": 1
         }
       ]
     },
@@ -5563,6 +5874,47 @@
             "grade": "9",
             "sourceQuestion": "q25"
           }
+        },
+        {
+          "id": "nsbhs2018-y9-q9a",
+          "difficulty": "medium",
+          "stem": "A \\(\\$10,000\\) trust fund earns 6% per annum, compounded monthly. How much is the trust fund worth at the end of 21 years?",
+          "hint": "Use compound growth with monthly rate 0.06/12 and 21×12 compounding periods.",
+          "steps": [
+            {
+              "explain": "Identify the principal, annual rate, monthly compounding frequency and total number of months.",
+              "work": "\\(P=10000,\\quad i=\\frac{0.06}{12}=0.005,\\quad n=21(12)=252\\)"
+            },
+            {
+              "explain": "Substitute into the compound interest formula.",
+              "work": "\\(A=P(1+i)^n=10000(1.005)^{252}\\)"
+            },
+            {
+              "explain": "Evaluate and round to cents.",
+              "work": "\\(A=35143.7064\\ldots\\approx\\$35,143.71\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "keyPoints": [
+            {
+              "text": "compounded monthly",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(\\$35,143.71\\)",
+            "\\(\\$22,600.00\\)",
+            "\\(\\$34,300.00\\)",
+            "\\(\\$36,000.00\\)"
+          ],
+          "answer": 0
         }
       ]
     },

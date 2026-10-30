@@ -3277,6 +3277,43 @@
               "note": "Look for two equal factors: 49 is a square and the middle coefficient is −14."
             }
           ]
+        },
+        {
+          "id": "nsbhs2018-y9-q2bi",
+          "difficulty": "medium",
+          "stem": "Factorise \\(5a^2-20a^4\\).",
+          "hint": "Take out the greatest common factor, then factor the difference of squares.",
+          "steps": [
+            {
+              "explain": "Both terms share 5a². Factor it out first.",
+              "work": "\\(5a^2-20a^4=5a^2(1-4a^2)\\)"
+            },
+            {
+              "explain": "The bracket is a difference of squares: 1²−(2a)².",
+              "work": "\\(5a^2(1-4a^2)=5a^2(1-2a)(1+2a)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "keyPoints": [
+            {
+              "text": "Factorise",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(5a^2(1-4a^2)\\)",
+            "\\(5a(1-4a^3)\\)",
+            "\\(5a^2(1-4a)(1+4a)\\)",
+            "\\(5a^2(1-2a)(1+2a)\\)"
+          ],
+          "answer": 3
         }
       ]
     },

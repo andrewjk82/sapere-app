@@ -6854,6 +6854,47 @@
             "marks": 3,
             "origin": "exam-import"
           }
+        },
+        {
+          "id": "nsbhs2018-y9-q4e",
+          "difficulty": "medium",
+          "stem": "Solve the simultaneous equations \\(2x-3y=0\\) and \\(5x+2y=1\\).",
+          "hint": "Eliminate y by making its coefficients −6 and +6, or use substitution from the first equation.",
+          "steps": [
+            {
+              "explain": "Multiply the first equation by 2 and the second by 3 so the y coefficients cancel when added.",
+              "work": "\\(4x-6y=0;\\qquad15x+6y=3\\)"
+            },
+            {
+              "explain": "Add the equations and solve for x.",
+              "work": "\\(19x=3\\Rightarrow x=\\frac3{19}\\)"
+            },
+            {
+              "explain": "Substitute x into 2x−3y=0 and solve for y.",
+              "work": "\\(\\frac6{19}-3y=0\\Rightarrow y=\\frac2{19}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "keyPoints": [
+            {
+              "text": "Solve the simultaneous equations \\(2x-3y=0\\) and \\(5x+2y=1\\).",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(x=\\frac3{19},\\ y=\\frac2{19}\\)",
+            "\\(x=\\frac2{19},\\ y=\\frac3{19}\\)",
+            "\\(x=\\frac3{11},\\ y=\\frac2{11}\\)",
+            "\\(x=\\frac{19}{3},\\ y=\\frac{19}{2}\\)"
+          ],
+          "answer": 0
         }
       ]
     },

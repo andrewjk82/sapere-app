@@ -4070,6 +4070,47 @@
             "marks": 2,
             "origin": "exam-import"
           }
+        },
+        {
+          "id": "nsbhs2018-y9-q4d",
+          "difficulty": "medium",
+          "stem": "Make \\(b\\) the subject, given \\(a=\\frac{3b-1}{b+2}\\).",
+          "hint": "Multiply both sides by b+2, then gather all terms containing b on one side.",
+          "steps": [
+            {
+              "explain": "Clear the denominator by multiplying both sides by b+2.",
+              "work": "\\(a(b+2)=3b-1\\)"
+            },
+            {
+              "explain": "Expand and collect the b terms on the right.",
+              "work": "\\(ab+2a=3b-1\\Rightarrow2a+1=3b-ab\\)"
+            },
+            {
+              "explain": "Factor out b and divide by its coefficient.",
+              "work": "\\(2a+1=b(3-a)\\Rightarrow b=\\frac{2a+1}{3-a}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "keyPoints": [
+            {
+              "text": "Make \\(b\\) the subject, given \\(a=\\frac{3b-1}{b+2}\\).",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(b=\\frac{2a-1}{a+3}\\)",
+            "\\(b=\\frac{a+2}{3a-1}\\)",
+            "\\(b=\\frac{1-2a}{a-3}\\)",
+            "\\(b=\\frac{2a+1}{3-a}\\)"
+          ],
+          "answer": 3
         }
       ]
     }

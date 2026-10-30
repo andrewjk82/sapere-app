@@ -3917,6 +3917,66 @@
             "grade": "9",
             "sourceQuestion": "meas-q1iii"
           }
+        },
+        {
+          "id": "nsbhs2018-y9-q6bii",
+          "difficulty": "medium",
+          "stem": "Find the surface area of this rectangular-based pyramid. The base measures \\(16\\text{ cm}\\) by \\(10\\text{ cm}\\), and its perpendicular height is \\(13\\text{ cm}\\). Give an exact value.",
+          "hint": "Include the rectangular base and four triangular faces. Each pair of opposite faces has a different slant height.",
+          "steps": [
+            {
+              "explain": "The base area is 16×10. The perpendicular height 13 cm and half-width 5 cm make the slant height for the faces with base 16.",
+              "work": "\\(l_{16}=\\sqrt{13^2+5^2}=\\sqrt{194}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 1 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><path d=\"M130,30 L45,145 L225,145 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M130,30 L265,115 L225,145 M225,145 L95,145 M130,30 L130,145\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M95,145 L265,115\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M140,145 L140,135 L130,135\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"130\" y=\"166\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#2563eb\">16 cm</text><text x=\"241\" y=\"142\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#2563eb\">10 cm</text><text x=\"141\" y=\"91\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">13 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "For the faces with base 10, use half of 16, which is 8 cm, with the perpendicular height.",
+              "work": "\\(l_{10}=\\sqrt{13^2+8^2}=\\sqrt{233}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 2 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><path d=\"M130,30 L45,145 L225,145 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M130,30 L265,115 L225,145 M225,145 L95,145 M130,30 L130,145\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M95,145 L265,115\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M140,145 L140,135 L130,135\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"130\" y=\"166\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#2563eb\">16 cm</text><text x=\"241\" y=\"142\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#2563eb\">10 cm</text><text x=\"141\" y=\"91\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">13 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the base and the areas of two triangles of each type.",
+              "work": "\\(SA=160+2(\\frac12\\cdot16\\sqrt{194})+2(\\frac12\\cdot10\\sqrt{233})\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 3 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><path d=\"M130,30 L45,145 L225,145 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M130,30 L265,115 L225,145 M225,145 L95,145 M130,30 L130,145\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M95,145 L265,115\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M140,145 L140,135 L130,135\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"130\" y=\"166\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#2563eb\">16 cm</text><text x=\"241\" y=\"142\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#2563eb\">10 cm</text><text x=\"141\" y=\"91\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">13 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Collect the terms to give the exact surface area.",
+              "work": "\\(SA=160+16\\sqrt{194}+10\\sqrt{233}\\text{ cm}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 4 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><path d=\"M130,30 L45,145 L225,145 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M130,30 L265,115 L225,145 M225,145 L95,145 M130,30 L130,145\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M95,145 L265,115\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M140,145 L140,135 L130,135\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"130\" y=\"166\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#2563eb\">16 cm</text><text x=\"241\" y=\"142\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#2563eb\">10 cm</text><text x=\"141\" y=\"91\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">13 cm</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 0 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><path d=\"M130,30 L45,145 L225,145 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M130,30 L265,115 L225,145 M225,145 L95,145 M130,30 L130,145\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M95,145 L265,115\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M140,145 L140,135 L130,135\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"130\" y=\"166\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">16 cm</text><text x=\"241\" y=\"142\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">10 cm</text><text x=\"141\" y=\"91\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">13 cm</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "surface area",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(160+26\\sqrt{194}\\text{ cm}^2\\)",
+            "\\(416\\text{ cm}^2\\)",
+            "\\(160+26\\sqrt{233}\\text{ cm}^2\\)",
+            "\\(160+16\\sqrt{194}+10\\sqrt{233}\\text{ cm}^2\\)"
+          ],
+          "answer": 3
         }
       ]
     },
@@ -4656,6 +4716,126 @@
             "grade": "9",
             "sourceQuestion": "meas-q1ii"
           }
+        },
+        {
+          "id": "nsbhs2018-y9-q6a",
+          "difficulty": "medium",
+          "stem": "Find the surface area of this closed cylinder in exact form. Its length is \\(17.5\\text{ cm}\\) and its circular end has diameter \\(10\\text{ cm}\\).",
+          "hint": "A closed cylinder has two circular ends plus the curved surface. Convert the 10 cm diameter to radius 5 cm.",
+          "steps": [
+            {
+              "explain": "The diagram gives diameter 10 cm, so the radius is half of that. The cylinder height/length is 17.5 cm.",
+              "work": "\\(r=10\\div2=5\\text{ cm},\\qquad h=17.5\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 1 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><path d=\"M80,55 C80,35 200,35 200,55 L200,160 C200,181 80,181 80,160 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M80,55 C80,76 200,76 200,55\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M80,160 C80,139 200,139 200,160\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M80,55 L200,55\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"140\" y=\"27\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">10 cm diameter</text><text x=\"212\" y=\"111\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#2563eb\">17.5 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Use total surface area for a closed cylinder: two circles and one curved rectangle.",
+              "work": "\\(SA=2\\pi r^2+2\\pi rh\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 2 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><path d=\"M80,55 C80,35 200,35 200,55 L200,160 C200,181 80,181 80,160 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M80,55 C80,76 200,76 200,55\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M80,160 C80,139 200,139 200,160\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M80,55 L200,55\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"140\" y=\"27\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">10 cm diameter</text><text x=\"212\" y=\"111\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#2563eb\">17.5 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute the measurements and simplify exactly.",
+              "work": "\\(SA=2\\pi(5)^2+2\\pi(5)(17.5)=50\\pi+175\\pi=225\\pi\\text{ cm}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 3 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><path d=\"M80,55 C80,35 200,35 200,55 L200,160 C200,181 80,181 80,160 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M80,55 C80,76 200,76 200,55\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M80,160 C80,139 200,139 200,160\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M80,55 L200,55\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"140\" y=\"27\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">10 cm diameter</text><text x=\"212\" y=\"111\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#2563eb\">17.5 cm</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 0 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><path d=\"M80,55 C80,35 200,35 200,55 L200,160 C200,181 80,181 80,160 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M80,55 C80,76 200,76 200,55\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M80,160 C80,139 200,139 200,160\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M80,55 L200,55\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"140\" y=\"27\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">10 cm diameter</text><text x=\"212\" y=\"111\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">17.5 cm</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "closed cylinder",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(200\\pi\\text{ cm}^2\\)",
+            "\\(175\\pi\\text{ cm}^2\\)",
+            "\\(225\\pi\\text{ cm}^2\\)",
+            "\\(250\\pi\\text{ cm}^2\\)"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "nsbhs2018-y9-q10b",
+          "difficulty": "medium",
+          "stem": "The closed cylinder shown has a height of \\(5\\text{ cm}\\) and a surface area of \\(100\\text{ cm}^2\\). Calculate its volume to the nearest \\(\\text{cm}^3\\).",
+          "hint": "For a closed cylinder use 2πr²+2πrh=100 with h=5. Solve for the positive radius, then use V=πr²h.",
+          "steps": [
+            {
+              "explain": "Write the closed-cylinder surface-area equation and substitute h=5.",
+              "work": "\\(100=2\\pi r^2+2\\pi r(5)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 1 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><path d=\"M75,55 C75,35 205,35 205,55 L205,160 C205,181 75,181 75,160 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M75,55 C75,75 205,75 205,55 M75,160 C75,140 205,140 205,160\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M85,55 L195,55\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"140\" y=\"28\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">radius r</text><path d=\"M217,55 L217,160\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"228\" y=\"110\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#2563eb\">5 cm</text><text x=\"140\" y=\"195\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">closed: SA = 100 cm²</text></svg>"
+              }
+            },
+            {
+              "explain": "Divide by 2π and rearrange the quadratic.",
+              "work": "\\(r^2+5r-\\frac{50}{\\pi}=0\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 2 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><path d=\"M75,55 C75,35 205,35 205,55 L205,160 C205,181 75,181 75,160 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M75,55 C75,75 205,75 205,55 M75,160 C75,140 205,140 205,160\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M85,55 L195,55\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"140\" y=\"28\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">radius r</text><path d=\"M217,55 L217,160\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"228\" y=\"110\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#2563eb\">5 cm</text><text x=\"140\" y=\"195\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">closed: SA = 100 cm²</text></svg>"
+              }
+            },
+            {
+              "explain": "Use the quadratic formula and keep the positive radius.",
+              "work": "\\(r=\\frac{-5+\\sqrt{25+200/\\pi}}2\\approx2.206\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 3 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><path d=\"M75,55 C75,35 205,35 205,55 L205,160 C205,181 75,181 75,160 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M75,55 C75,75 205,75 205,55 M75,160 C75,140 205,140 205,160\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M85,55 L195,55\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"140\" y=\"28\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">radius r</text><path d=\"M217,55 L217,160\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"228\" y=\"110\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#2563eb\">5 cm</text><text x=\"140\" y=\"195\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">closed: SA = 100 cm²</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculate the volume using the unrounded radius.",
+              "work": "\\(V=\\pi r^2(5)\\approx76.58\\text{ cm}^3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 4 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><path d=\"M75,55 C75,35 205,35 205,55 L205,160 C205,181 75,181 75,160 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M75,55 C75,75 205,75 205,55 M75,160 C75,140 205,140 205,160\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M85,55 L195,55\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"140\" y=\"28\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">radius r</text><path d=\"M217,55 L217,160\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"228\" y=\"110\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#2563eb\">5 cm</text><text x=\"140\" y=\"195\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">closed: SA = 100 cm²</text></svg>"
+              }
+            },
+            {
+              "explain": "Round to the nearest cubic centimetre.",
+              "work": "\\(V\\approx77\\text{ cm}^3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 5 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><path d=\"M75,55 C75,35 205,35 205,55 L205,160 C205,181 75,181 75,160 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M75,55 C75,75 205,75 205,55 M75,160 C75,140 205,140 205,160\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M85,55 L195,55\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"140\" y=\"28\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">radius r</text><path d=\"M217,55 L217,160\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"228\" y=\"110\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#2563eb\">5 cm</text><text x=\"140\" y=\"195\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">closed: SA = 100 cm²</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 0 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><path d=\"M75,55 C75,35 205,35 205,55 L205,160 C205,181 75,181 75,160 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M75,55 C75,75 205,75 205,55 M75,160 C75,140 205,140 205,160\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M85,55 L195,55\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"140\" y=\"28\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">radius r</text><path d=\"M217,55 L217,160\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"228\" y=\"110\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">5 cm</text><text x=\"140\" y=\"195\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">closed: SA = 100 cm²</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "The closed cylinder shown has a height",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(50\\text{ cm}^3\\)",
+            "\\(100\\text{ cm}^3\\)",
+            "\\(77\\text{ cm}^3\\)",
+            "\\(157\\text{ cm}^3\\)"
+          ],
+          "answer": 2
         }
       ]
     },
@@ -11237,6 +11417,119 @@
             "grade": "9",
             "sourceQuestion": "q28"
           }
+        },
+        {
+          "id": "nsbhs2018-y9-q6bi",
+          "difficulty": "medium",
+          "stem": "Find the volume of this rectangular-based pyramid. The base measures \\(16\\text{ cm}\\) by \\(10\\text{ cm}\\), and its perpendicular height is \\(13\\text{ cm}\\).",
+          "hint": "Pyramid volume is one third of base area times perpendicular height. The right-angle marker identifies the 13 cm height.",
+          "steps": [
+            {
+              "explain": "Calculate the rectangular base area using the two base edges.",
+              "work": "\\(A_{base}=16\\times10=160\\text{ cm}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 1 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><path d=\"M130,30 L45,145 L225,145 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M130,30 L265,115 L225,145 M225,145 L95,145 M130,30 L130,145\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M95,145 L265,115\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M140,145 L140,135 L130,135\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"130\" y=\"166\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#2563eb\">16 cm</text><text x=\"241\" y=\"142\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#2563eb\">10 cm</text><text x=\"141\" y=\"91\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">13 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Use one third × base area × perpendicular height.",
+              "work": "\\(V=\\frac13(160)(13)=\\frac{2080}{3}\\text{ cm}^3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 2 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><path d=\"M130,30 L45,145 L225,145 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M130,30 L265,115 L225,145 M225,145 L95,145 M130,30 L130,145\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M95,145 L265,115\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M140,145 L140,135 L130,135\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"130\" y=\"166\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#2563eb\">16 cm</text><text x=\"241\" y=\"142\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#2563eb\">10 cm</text><text x=\"141\" y=\"91\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">13 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "This is an exact value; as a decimal it is approximately 693.33 cubic centimetres.",
+              "work": "\\(V=\\frac{2080}{3}\\text{ cm}^3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 3 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><path d=\"M130,30 L45,145 L225,145 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M130,30 L265,115 L225,145 M225,145 L95,145 M130,30 L130,145\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M95,145 L265,115\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M140,145 L140,135 L130,135\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"130\" y=\"166\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#2563eb\">16 cm</text><text x=\"241\" y=\"142\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#2563eb\">10 cm</text><text x=\"141\" y=\"91\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">13 cm</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 0 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><path d=\"M130,30 L45,145 L225,145 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M130,30 L265,115 L225,145 M225,145 L95,145 M130,30 L130,145\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M95,145 L265,115\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M140,145 L140,135 L130,135\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"130\" y=\"166\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">16 cm</text><text x=\"241\" y=\"142\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">10 cm</text><text x=\"141\" y=\"91\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">13 cm</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "perpendicular height",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(2080\\text{ cm}^3\\)",
+            "\\(\\frac{2080}{3}\\text{ cm}^3\\)",
+            "\\(520\\text{ cm}^3\\)",
+            "\\(\\frac{1600}{3}\\text{ cm}^3\\)"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "nsbhs2018-y9-q6c",
+          "difficulty": "medium",
+          "stem": "A 12 cm radius hemisphere is used as a mould to make a 3 mm thick chocolate dome. Only the spherical part of the mould is covered. What is the volume of the resulting chocolate dome to the nearest whole number?",
+          "hint": "Convert 3 mm to 0.3 cm. The chocolate is a hemispherical shell between radii 12 cm and 12.3 cm.",
+          "steps": [
+            {
+              "explain": "Convert thickness to centimetres and identify the inner and outer radii.",
+              "work": "\\(3\\text{ mm}=0.3\\text{ cm};\\quad r_{in}=12,\\;r_{out}=12.3\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 1 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><path d=\"M55,145 A90,90 0 0 1 235,145\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M55,145 A90,35 0 0 0 235,145\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M55,145 L235,145\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><circle cx=\"145\" cy=\"145\" r=\"2.5\" fill=\"#ea580c\" stroke=\"#ea580c\" stroke-width=\"1\"/><path d=\"M145,145 L235,145\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"190\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#2563eb\">12 cm</text><text x=\"145\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">outer radius = 12.3 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Subtract the inner hemisphere volume from the outer hemisphere volume. A hemisphere has volume 2/3 πr³.",
+              "work": "\\(V=\\frac23\\pi(12.3^3-12^3)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 2 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><path d=\"M55,145 A90,90 0 0 1 235,145\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M55,145 A90,35 0 0 0 235,145\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M55,145 L235,145\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><circle cx=\"145\" cy=\"145\" r=\"2.5\" fill=\"#ea580c\" stroke=\"#ea580c\" stroke-width=\"1\"/><path d=\"M145,145 L235,145\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"190\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#2563eb\">12 cm</text><text x=\"145\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">outer radius = 12.3 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Evaluate the difference.",
+              "work": "\\(V\\approx278.276\\text{ cm}^3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 3 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><path d=\"M55,145 A90,90 0 0 1 235,145\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M55,145 A90,35 0 0 0 235,145\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M55,145 L235,145\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><circle cx=\"145\" cy=\"145\" r=\"2.5\" fill=\"#ea580c\" stroke=\"#ea580c\" stroke-width=\"1\"/><path d=\"M145,145 L235,145\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"190\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#2563eb\">12 cm</text><text x=\"145\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">outer radius = 12.3 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Round to the nearest whole cubic centimetre.",
+              "work": "\\(V\\approx278\\text{ cm}^3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 4 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><path d=\"M55,145 A90,90 0 0 1 235,145\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M55,145 A90,35 0 0 0 235,145\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M55,145 L235,145\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><circle cx=\"145\" cy=\"145\" r=\"2.5\" fill=\"#ea580c\" stroke=\"#ea580c\" stroke-width=\"1\"/><path d=\"M145,145 L235,145\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"190\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#2563eb\">12 cm</text><text x=\"145\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#ea580c\">outer radius = 12.3 cm</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 0 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><path d=\"M55,145 A90,90 0 0 1 235,145\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M55,145 A90,35 0 0 0 235,145\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M55,145 L235,145\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><circle cx=\"145\" cy=\"145\" r=\"2.5\" fill=\"#ea580c\" stroke=\"#ea580c\" stroke-width=\"1\"/><path d=\"M145,145 L235,145\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"190\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">12 cm</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "3 mm thick",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(278\\text{ cm}^3\\)",
+            "\\(904\\text{ cm}^3\\)",
+            "\\(2,778\\text{ cm}^3\\)",
+            "\\(136\\text{ cm}^3\\)"
+          ],
+          "answer": 0
         }
       ]
     },

@@ -592,6 +592,43 @@
             "marks": 2,
             "origin": "exam-import"
           }
+        },
+        {
+          "id": "nsbhs2018-y9-q4b",
+          "difficulty": "medium",
+          "stem": "Solve \\(t^2-2t-35=0\\).",
+          "hint": "Find two numbers that multiply to −35 and add to −2.",
+          "steps": [
+            {
+              "explain": "Factor the quadratic using numbers whose product is −35 and sum is −2.",
+              "work": "\\(t^2-2t-35=(t-7)(t+5)=0\\)"
+            },
+            {
+              "explain": "Set each factor equal to zero.",
+              "work": "\\(t-7=0\\Rightarrow t=7;\\quad t+5=0\\Rightarrow t=-5\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "keyPoints": [
+            {
+              "text": "Solve \\(t^2-2t-35=0\\).",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(t=5\\text{ or }-7\\)",
+            "\\(t=35\\text{ or }-1\\)",
+            "\\(t=7\\text{ or }-5\\)",
+            "\\(t=-5\\text{ only}\\)"
+          ],
+          "answer": 2
         }
       ]
     },
@@ -699,6 +736,47 @@
             "marks": 3,
             "origin": "exam-import"
           }
+        },
+        {
+          "id": "nsbhs2018-y9-q4c",
+          "difficulty": "medium",
+          "stem": "Solve \\(3y^2+10y-5=0\\), leaving your answer in simplified exact form.",
+          "hint": "Use the quadratic formula with a=3, b=10 and c=−5; simplify the radical and fraction.",
+          "steps": [
+            {
+              "explain": "Identify the coefficients and substitute into the quadratic formula.",
+              "work": "\\(a=3,\\;b=10,\\;c=-5;\\quad y=\\frac{-10\\pm\\sqrt{10^2-4(3)(-5)}}{2(3)}\\)"
+            },
+            {
+              "explain": "Evaluate the discriminant and simplify its square root.",
+              "work": "\\(y=\\frac{-10\\pm\\sqrt{160}}{6}=\\frac{-10\\pm4\\sqrt{10}}{6}\\)"
+            },
+            {
+              "explain": "Divide numerator and denominator by 2.",
+              "work": "\\(y=\\frac{-5\\pm2\\sqrt{10}}{3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "keyPoints": [
+            {
+              "text": "Solve \\(3y^2+10y-5=0\\), leaving your answer in simplified",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(y=\\frac{-10\\pm\\sqrt{40}}{3}\\)",
+            "\\(y=\\frac{-5\\pm2\\sqrt{10}}{3}\\)",
+            "\\(y=\\frac{5\\pm2\\sqrt{10}}{3}\\)",
+            "\\(y=\\frac{-5\\pm\\sqrt{10}}{3}\\)"
+          ],
+          "answer": 1
         }
       ]
     },

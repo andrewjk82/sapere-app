@@ -2284,6 +2284,43 @@
               }
             }
           ]
+        },
+        {
+          "id": "nsbhs2018-y9-q5ai",
+          "difficulty": "medium",
+          "stem": "An interval \\(AB\\) is defined by the points \\(A(2,-5)\\) and \\(B(-3,1)\\). What is the length of interval \\(AB\\)?",
+          "hint": "Use the distance formula: square the horizontal and vertical coordinate changes, then add and square-root.",
+          "steps": [
+            {
+              "explain": "Find the horizontal and vertical changes between the points.",
+              "work": "\\(\\Delta x=-3-2=-5,\\qquad\\Delta y=1-(-5)=6\\)"
+            },
+            {
+              "explain": "Use Pythagoras to calculate the distance.",
+              "work": "\\(AB=\\sqrt{(-5)^2+6^2}=\\sqrt{25+36}=\\sqrt{61}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "keyPoints": [
+            {
+              "text": "points",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(\\sqrt{11}\\)",
+            "\\(11\\)",
+            "\\(\\sqrt{61}\\)",
+            "\\(\\sqrt{41}\\)"
+          ],
+          "answer": 2
         }
       ]
     },
@@ -4559,6 +4596,43 @@
             "marks": 2,
             "origin": "exam-import"
           }
+        },
+        {
+          "id": "nsbhs2018-y9-q5aii",
+          "difficulty": "medium",
+          "stem": "An interval \\(AB\\) is defined by the points \\(A(2,-5)\\) and \\(B(-3,1)\\). Find the midpoint of \\(AB\\).",
+          "hint": "Average the x-coordinates together and the y-coordinates together.",
+          "steps": [
+            {
+              "explain": "Use the midpoint formula on the two coordinate pairs.",
+              "work": "\\(M=\\left(\\frac{2+(-3)}2,\\frac{-5+1}2\\right)\\)"
+            },
+            {
+              "explain": "Simplify each coordinate.",
+              "work": "\\(M=\\left(-\\frac12,-2\\right)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "keyPoints": [
+            {
+              "text": "midpoint",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(\\left(\\frac12,-2\\right)\\)",
+            "\\(\\left(-\\frac12,-2\\right)\\)",
+            "\\((-1,-4)\\)",
+            "\\((5,-6)\\)"
+          ],
+          "answer": 1
         }
       ]
     },
@@ -6924,6 +6998,47 @@
             "grade": "9",
             "sourceQuestion": "q19"
           }
+        },
+        {
+          "id": "nsbhs2018-y9-q5aiii",
+          "difficulty": "medium",
+          "stem": "An interval \\(AB\\) is defined by the points \\(A(2,-5)\\) and \\(B(-3,1)\\). Find the gradient of \\(AB\\).",
+          "hint": "Use gradient = change in y divided by change in x, keeping the same point order in numerator and denominator.",
+          "steps": [
+            {
+              "explain": "Calculate the change in y from A to B.",
+              "work": "\\(1-(-5)=6\\)"
+            },
+            {
+              "explain": "Calculate the corresponding change in x from A to B.",
+              "work": "\\(-3-2=-5\\)"
+            },
+            {
+              "explain": "Divide rise by run.",
+              "work": "\\(m=\\frac6{-5}=-\\frac65\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "keyPoints": [
+            {
+              "text": "gradient",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(\\frac65\\)",
+            "\\(-\\frac56\\)",
+            "\\(\\frac56\\)",
+            "\\(-\\frac65\\)"
+          ],
+          "answer": 3
         }
       ]
     },
@@ -12159,6 +12274,61 @@
               }
             }
           ]
+        },
+        {
+          "id": "nsbhs2018-y9-q5b",
+          "difficulty": "medium",
+          "stem": "Sketch the graph of \\(3x-2y+8=0\\).",
+          "hint": "Find the x- and y-intercepts. Plot them, join with a straight line, and label the axes.",
+          "steps": [
+            {
+              "explain": "Rearrange to make y the subject, or find the intercepts by setting one variable to zero.",
+              "work": "\\(3x-2y+8=0\\Rightarrow y=\\frac32x+4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 1 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><path d=\"M42,20 L42,190\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M20,165 L290,165\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"285\" y=\"181\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">x</text><text x=\"51\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">y</text><circle cx=\"42\" cy=\"105\" r=\"3\" fill=\"#ea580c\" stroke=\"#ea580c\" stroke-width=\"1\"/><text x=\"50\" y=\"99\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#2563eb\">(0, 4)</text></svg>"
+              }
+            },
+            {
+              "explain": "Set x=0 to find the y-intercept.",
+              "work": "\\(y=4\\Rightarrow(0,4)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 2 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><path d=\"M42,20 L42,190\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M20,165 L290,165\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"285\" y=\"181\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">x</text><text x=\"51\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">y</text><circle cx=\"42\" cy=\"105\" r=\"3\" fill=\"#2563eb\" stroke=\"#2563eb\" stroke-width=\"1\"/><text x=\"50\" y=\"99\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#64748b\">(0, 4)</text><circle cx=\"22\" cy=\"165\" r=\"3\" fill=\"#ea580c\" stroke=\"#ea580c\" stroke-width=\"1\"/><text x=\"40\" y=\"155\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\" font-style=\"normal\" fill=\"#2563eb\">(-8/3, 0)</text></svg>"
+              }
+            },
+            {
+              "explain": "Set y=0 to find the x-intercept.",
+              "work": "\\(3x+8=0\\Rightarrow x=-\\frac83\\Rightarrow(-\\frac83,0)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 3 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><path d=\"M42,20 L42,190\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M20,165 L290,165\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"285\" y=\"181\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">x</text><text x=\"51\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">y</text><path d=\"M22,165 L70,21\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><circle cx=\"42\" cy=\"105\" r=\"3\" fill=\"#2563eb\" stroke=\"#2563eb\" stroke-width=\"1\"/><text x=\"50\" y=\"99\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#64748b\">(0, 4)</text><circle cx=\"22\" cy=\"165\" r=\"3\" fill=\"#ea580c\" stroke=\"#ea580c\" stroke-width=\"1\"/><text x=\"40\" y=\"155\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\" font-style=\"normal\" fill=\"#2563eb\">(-8/3, 0)</text></svg>"
+              }
+            },
+            {
+              "explain": "Plot the two points and draw the unique straight line through them.",
+              "work": "\\(\\text{line through }(0,4)\\text{ and }(-\\frac83,0)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 4 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><path d=\"M42,20 L42,190\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M20,165 L290,165\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"285\" y=\"181\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">x</text><text x=\"51\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">y</text><path d=\"M22,165 L70,21\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><circle cx=\"42\" cy=\"105\" r=\"3\" fill=\"#2563eb\" stroke=\"#2563eb\" stroke-width=\"1\"/><text x=\"50\" y=\"99\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#64748b\">(0, 4)</text><circle cx=\"22\" cy=\"165\" r=\"3\" fill=\"#ea580c\" stroke=\"#ea580c\" stroke-width=\"1\"/><text x=\"40\" y=\"155\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\" font-style=\"normal\" fill=\"#2563eb\">(-8/3, 0)</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 0 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><path d=\"M42,20 L42,190\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><path d=\"M20,165 L290,165\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"285\" y=\"181\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">x</text><text x=\"51\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">y</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "Sketch the graph of \\(3x-2y+8=0\\).",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "review",
+          "manual": true,
+          "answer": "Teacher review: a straight line through (0,4) and (−8/3,0), with labelled axes and intercepts."
         }
       ]
     },
@@ -18303,6 +18473,47 @@
             "grade": "9",
             "sourceQuestion": "q24"
           }
+        },
+        {
+          "id": "nsbhs2018-y9-q5aiv",
+          "difficulty": "medium",
+          "stem": "An interval \\(AB\\) is defined by \\(A(2,-5)\\) and \\(B(-3,1)\\). Find the equation of the line perpendicular to \\(AB\\), passing through \\(C(4,-2)\\). Express your answer in general form.",
+          "hint": "A perpendicular gradient is the negative reciprocal of −6/5. Then use point C in point-gradient form.",
+          "steps": [
+            {
+              "explain": "The gradient of AB is −6/5, so the perpendicular gradient is its negative reciprocal.",
+              "work": "\\(m_\\perp=\\frac56\\)"
+            },
+            {
+              "explain": "Use the line through C(4,−2).",
+              "work": "\\(y+2=\\frac56(x-4)\\)"
+            },
+            {
+              "explain": "Multiply by 6 and rearrange to general form.",
+              "work": "\\(6y+12=5x-20\\Rightarrow5x-6y-32=0\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "keyPoints": [
+            {
+              "text": "perpendicular to \\(AB\\)",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(5x-6y-32=0\\)",
+            "\\(6x+5y-14=0\\)",
+            "\\(5x-6y-28=0\\)",
+            "\\(6x-5y-34=0\\)"
+          ],
+          "answer": 0
         }
       ]
     },

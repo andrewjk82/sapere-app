@@ -7468,6 +7468,125 @@
             "grade": "9",
             "sourceQuestion": "q26"
           }
+        },
+        {
+          "id": "nsbhs2018-y9-q3c",
+          "difficulty": "medium",
+          "stem": "Express \\(\\frac{1}{9\\sqrt[3]{x^2}}\\) in index form.",
+          "hint": "A cube root is a power of one third; a factor in the denominator has a negative index.",
+          "steps": [
+            {
+              "explain": "Rewrite the cube root as a fractional power.",
+              "work": "\\(\\sqrt[3]{x^2}=x^{2/3}\\)"
+            },
+            {
+              "explain": "Move the x factor from the denominator to the numerator by changing the exponent sign.",
+              "work": "\\(\\frac{1}{9x^{2/3}}=\\frac19x^{-2/3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "keyPoints": [
+            {
+              "text": "Express \\(\\frac{1}{9\\sqrt[3]{x^2}}\\) in index form.",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(9x^{-2/3}\\)",
+            "\\(\\frac19x^{2/3}\\)",
+            "\\(x^{-3}/9\\)",
+            "\\(\\frac19x^{-2/3}\\)"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "nsbhs2018-y9-q3d",
+          "difficulty": "medium",
+          "stem": "Fully simplify \\(\\left(\\frac{x^{16}}{100y^8z^{-6}}\\right)^{-\\frac32}\\).",
+          "hint": "First rewrite z⁻⁶ in the denominator as z⁶ in the numerator; the negative outer power then inverts the fraction.",
+          "steps": [
+            {
+              "explain": "Simplify inside the fraction by moving z⁻⁶ across the fraction bar.",
+              "work": "\\(\\frac{x^{16}}{100y^8z^{-6}}=\\frac{x^{16}z^6}{100y^8}\\)"
+            },
+            {
+              "explain": "A power of −3/2 means invert and then raise to 3/2.",
+              "work": "\\(\\left(\\frac{100y^8}{x^{16}z^6}\\right)^{3/2}\\)"
+            },
+            {
+              "explain": "Apply the exponent to each factor: 100^(3/2)=1000, (y⁸)^(3/2)=y¹², (x¹⁶)^(3/2)=x²⁴, and (z⁶)^(3/2)=z⁹.",
+              "work": "\\(\\frac{1000y^{12}}{x^{24}z^9}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "keyPoints": [
+            {
+              "text": "Fully simplify \\(\\left(\\frac{x^{16}}{100y^8z^{-6}}\\right)^{-\\frac32}\\).",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(\\frac{1000y^{12}}{x^{24}z^9}\\)",
+            "\\(\\frac{x^{24}z^9}{1000y^{12}}\\)",
+            "\\(\\frac{1000y^{12}z^9}{x^{24}}\\)",
+            "\\(\\frac{10y^{12}}{x^{24}z^9}\\)"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "nsbhs2018-y9-q3e",
+          "difficulty": "medium",
+          "stem": "Expand and fully simplify \\((m^{1/3}-2m^{1/2})^2\\).",
+          "hint": "Use (A−B)²=A²−2AB+B² and add exponents when multiplying powers with the same base.",
+          "steps": [
+            {
+              "explain": "Apply the perfect-square identity to the two terms.",
+              "work": "\\((m^{1/3})^2-2(m^{1/3})(2m^{1/2})+(2m^{1/2})^2\\)"
+            },
+            {
+              "explain": "Square the first and last terms; combine exponents in the middle product.",
+              "work": "\\(m^{2/3}-4m^{1/3+1/2}+4m\\)"
+            },
+            {
+              "explain": "Add the middle exponents.",
+              "work": "\\(m^{2/3}-4m^{5/6}+4m\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "keyPoints": [
+            {
+              "text": "Expand and fully simplify \\((m^{1/3}-2m^{1/2})^2\\).",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(m^{2/3}-2m^{5/6}+4m\\)",
+            "\\(m^{1/3}-4m^{5/6}+4m\\)",
+            "\\(m^{2/3}-4m^{5/6}+4m\\)",
+            "\\(m^{2/3}+4m^{5/6}+4m\\)"
+          ],
+          "answer": 2
         }
       ]
     },
@@ -7965,6 +8084,100 @@
             "grade": "9",
             "sourceQuestion": "q12"
           }
+        },
+        {
+          "id": "nsbhs2018-y9-q3fi",
+          "difficulty": "medium",
+          "stem": "A helium atom has 2 protons, 2 neutrons and 2 electrons. The mass of a neutron is \\(1.674929\\times10^{-27}\\) kg, the mass of a proton is \\(1.672623\\times10^{-27}\\) kg and the mass of an electron is \\(9.109390\\times10^{-31}\\) kg. What is the mass of \\(6.0221\\times10^{23}\\) helium atoms to 5 significant figures?",
+          "hint": "Find one atom’s mass by adding two of each particle, then multiply by the number of atoms.",
+          "steps": [
+            {
+              "explain": "Add the two neutron, two proton and two electron masses. Convert the electron term to the same power of ten.",
+              "work": "\\(2(1.674929+1.672623)\\times10^{-27}+2(9.109390\\times10^{-31})=6.696733878\\times10^{-27}\\text{ kg}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 1 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><text x=\"155\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Mass of each particle</text><rect x=\"20\" y=\"43\" width=\"270\" height=\"40\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\".8\"/><text x=\"30\" y=\"68\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">Neutron</text><text x=\"165\" y=\"68\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#2563eb\">1.674929 × 10<tspan baseline-shift=\"super\" font-size=\"8\">-27</tspan> kg</text><rect x=\"20\" y=\"85\" width=\"270\" height=\"40\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\".8\"/><text x=\"30\" y=\"110\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">Proton</text><text x=\"165\" y=\"110\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#2563eb\">1.672623 × 10<tspan baseline-shift=\"super\" font-size=\"8\">-27</tspan> kg</text><rect x=\"20\" y=\"127\" width=\"270\" height=\"40\" fill=\"white\" stroke=\"#64748b\" stroke-width=\".8\"/><text x=\"30\" y=\"152\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">Electron</text><text x=\"165\" y=\"152\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">9.109390 × 10<tspan baseline-shift=\"super\" font-size=\"8\">-31</tspan> kg</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply the mass of one atom by the given number of atoms.",
+              "work": "\\(6.696733878\\times10^{-27}\\times6.0221\\times10^{23}=4.032955733\\times10^{-3}\\text{ kg}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 2 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><text x=\"155\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Mass of each particle</text><rect x=\"20\" y=\"43\" width=\"270\" height=\"40\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\".8\"/><text x=\"30\" y=\"68\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">Neutron</text><text x=\"165\" y=\"68\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#2563eb\">1.674929 × 10<tspan baseline-shift=\"super\" font-size=\"8\">-27</tspan> kg</text><rect x=\"20\" y=\"85\" width=\"270\" height=\"40\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\".8\"/><text x=\"30\" y=\"110\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">Proton</text><text x=\"165\" y=\"110\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#2563eb\">1.672623 × 10<tspan baseline-shift=\"super\" font-size=\"8\">-27</tspan> kg</text><rect x=\"20\" y=\"127\" width=\"270\" height=\"40\" fill=\"white\" stroke=\"#64748b\" stroke-width=\".8\"/><text x=\"30\" y=\"152\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">Electron</text><text x=\"165\" y=\"152\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">9.109390 × 10<tspan baseline-shift=\"super\" font-size=\"8\">-31</tspan> kg</text><text x=\"155\" y=\"192\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">Multiply by 6.0221 × 10²³ atoms</text></svg>"
+              }
+            },
+            {
+              "explain": "Round to five significant figures.",
+              "work": "\\(4.0330\\times10^{-3}\\text{ kg}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 3 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><text x=\"155\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Mass of each particle</text><rect x=\"20\" y=\"43\" width=\"270\" height=\"40\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\".8\"/><text x=\"30\" y=\"68\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">Neutron</text><text x=\"165\" y=\"68\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#2563eb\">1.674929 × 10<tspan baseline-shift=\"super\" font-size=\"8\">-27</tspan> kg</text><rect x=\"20\" y=\"85\" width=\"270\" height=\"40\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\".8\"/><text x=\"30\" y=\"110\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">Proton</text><text x=\"165\" y=\"110\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#2563eb\">1.672623 × 10<tspan baseline-shift=\"super\" font-size=\"8\">-27</tspan> kg</text><rect x=\"20\" y=\"127\" width=\"270\" height=\"40\" fill=\"white\" stroke=\"#64748b\" stroke-width=\".8\"/><text x=\"30\" y=\"152\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">Electron</text><text x=\"165\" y=\"152\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">9.109390 × 10<tspan baseline-shift=\"super\" font-size=\"8\">-31</tspan> kg</text><text x=\"155\" y=\"192\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">Multiply by 6.0221 × 10²³ atoms</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 0 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><text x=\"155\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">Mass of each particle</text><rect x=\"20\" y=\"43\" width=\"270\" height=\"40\" fill=\"white\" stroke=\"#64748b\" stroke-width=\".8\"/><text x=\"30\" y=\"68\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">Neutron</text><text x=\"165\" y=\"68\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">1.674929 × 10<tspan baseline-shift=\"super\" font-size=\"8\">-27</tspan> kg</text><rect x=\"20\" y=\"85\" width=\"270\" height=\"40\" fill=\"white\" stroke=\"#64748b\" stroke-width=\".8\"/><text x=\"30\" y=\"110\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">Proton</text><text x=\"165\" y=\"110\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">1.672623 × 10<tspan baseline-shift=\"super\" font-size=\"8\">-27</tspan> kg</text><rect x=\"20\" y=\"127\" width=\"270\" height=\"40\" fill=\"white\" stroke=\"#64748b\" stroke-width=\".8\"/><text x=\"30\" y=\"152\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"400\" font-style=\"normal\" fill=\"#334155\">Electron</text><text x=\"165\" y=\"152\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">9.109390 × 10<tspan baseline-shift=\"super\" font-size=\"8\">-31</tspan> kg</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "What is the mass",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(4.0320\\times10^{-3}\\text{ kg}\\)",
+            "\\(4.0330\\times10^{-3}\\text{ kg}\\)",
+            "\\(4.0026\\times10^{-3}\\text{ kg}\\)",
+            "\\(6.6967\\times10^{-27}\\text{ kg}\\)"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "nsbhs2018-y9-q3fii",
+          "difficulty": "medium",
+          "stem": "Accurate measurement shows this amount of helium has a mass of \\(4.0026\\times10^{-3}\\) kg. How much mass is “missing”?",
+          "hint": "Subtract the measured mass from the sum of the particle masses you calculated for the same number of atoms.",
+          "steps": [
+            {
+              "explain": "Use the unrounded calculated mass from the previous calculation to avoid premature rounding.",
+              "work": "\\(m_{\\text{particles}}=4.032955733\\times10^{-3}\\text{ kg}\\)"
+            },
+            {
+              "explain": "Subtract the measured mass.",
+              "work": "\\(4.032955733\\times10^{-3}-4.0026\\times10^{-3}=0.030355733\\times10^{-3}\\text{ kg}\\)"
+            },
+            {
+              "explain": "Write in scientific notation and round to 3 significant figures.",
+              "work": "\\(m_{\\text{missing}}=3.04\\times10^{-5}\\text{ kg}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "keyPoints": [
+            {
+              "text": "Accurate measurement shows this amount of helium",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(3.04\\times10^{-4}\\text{ kg}\\)",
+            "\\(4.03\\times10^{-3}\\text{ kg}\\)",
+            "\\(0\\text{ kg}\\)",
+            "\\(3.04\\times10^{-5}\\text{ kg}\\)"
+          ],
+          "answer": 3
         }
       ]
     }

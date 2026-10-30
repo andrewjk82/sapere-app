@@ -2551,6 +2551,59 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 320\" width=\"320\" height=\"320\"><rect width=\"320\" height=\"320\" rx=\"8\" fill=\"white\"/><path d=\"M130.0 160.0L200.0 160.0L235.0 99.4L200.0 38.8L130.0 38.8L95.0 99.4Z\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2.2\" stroke-linejoin=\"round\" fill-opacity=\"0.45\"/><path d=\"M130.0 160.0L108.4 226.6L165.0 267.7L221.6 226.6L200.0 160.0L200.0 160.0Z\" fill=\"#fef3c7\" stroke=\"#475569\" stroke-width=\"2.2\" stroke-linejoin=\"round\" fill-opacity=\"0.55\"/><text x=\"111.3\" y=\"156.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"15.7\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"208.0\" y=\"156.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"15.7\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"243.0\" y=\"99.4\" font-family=\"Times New Roman,Times,serif\" font-size=\"15.7\" fill=\"#1e293b\" font-style=\"italic\">C</text><text x=\"193.7\" y=\"30.8\" font-family=\"Times New Roman,Times,serif\" font-size=\"15.7\" fill=\"#1e293b\" font-style=\"italic\">D</text><text x=\"111.3\" y=\"38.8\" font-family=\"Times New Roman,Times,serif\" font-size=\"15.7\" fill=\"#1e293b\" font-style=\"italic\">E</text><text x=\"76.3\" y=\"103.4\" font-family=\"Times New Roman,Times,serif\" font-size=\"15.7\" fill=\"#1e293b\" font-style=\"italic\">F</text><text x=\"87.7\" y=\"238.6\" font-family=\"Times New Roman,Times,serif\" font-size=\"15.7\" fill=\"#1e293b\" font-style=\"italic\">G</text><text x=\"158.7\" y=\"287.7\" font-family=\"Times New Roman,Times,serif\" font-size=\"15.7\" fill=\"#1e293b\" font-style=\"italic\">H</text><text x=\"229.6\" y=\"236.6\" font-family=\"Times New Roman,Times,serif\" font-size=\"15.7\" fill=\"#1e293b\" font-style=\"italic\">I</text><line x1=\"95.0\" y1=\"99.4\" x2=\"108.4\" y2=\"226.6\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/></svg>"
           }
+        },
+        {
+          "id": "nsbhs2018-y9-q7a",
+          "difficulty": "medium",
+          "stem": "What is the sum of the interior angles of this shape?",
+          "hint": "Count the vertices around the star outline. A simple n-sided polygon has angle sum (n−2)×180°.",
+          "steps": [
+            {
+              "explain": "Trace the outline and count all the vertices, including the inward corners: there are 12.",
+              "work": "\\(n=12\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 1 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><path d=\"M150.0,29.0 L165.0,79.0 L215.8,67.0 L180.0,105.0 L215.8,143.0 L165.0,131.0 L150.0,181.0 L135.0,131.0 L84.2,143.0 L120.0,105.0 L84.2,67.0 L135.0,79.0 Z\" fill=\"#fef3c7\" stroke=\"#ea580c\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"150\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">12 vertices → 10 triangles</text></svg>"
+              }
+            },
+            {
+              "explain": "Divide the concave polygon into n−2 triangles from an interior point (or use the polygon angle-sum rule).",
+              "work": "\\(S=(n-2)\\times180^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 2 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><path d=\"M150.0,29.0 L165.0,79.0 L215.8,67.0 L180.0,105.0 L215.8,143.0 L165.0,131.0 L150.0,181.0 L135.0,131.0 L84.2,143.0 L120.0,105.0 L84.2,67.0 L135.0,79.0 Z\" fill=\"#fef3c7\" stroke=\"#ea580c\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"150\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">12 vertices → 10 triangles</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute n=12 and calculate.",
+              "work": "\\(S=(12-2)\\times180^\\circ=1800^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 3 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><path d=\"M150.0,29.0 L165.0,79.0 L215.8,67.0 L180.0,105.0 L215.8,143.0 L165.0,131.0 L150.0,181.0 L135.0,131.0 L84.2,143.0 L120.0,105.0 L84.2,67.0 L135.0,79.0 Z\" fill=\"#fef3c7\" stroke=\"#ea580c\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"150\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">12 vertices → 10 triangles</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 0 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><path d=\"M150.0,29.0 L165.0,79.0 L215.8,67.0 L180.0,105.0 L215.8,143.0 L165.0,131.0 L150.0,181.0 L135.0,131.0 L84.2,143.0 L120.0,105.0 L84.2,67.0 L135.0,79.0 Z\" fill=\"white\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "interior angles",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(1440^\\circ\\)",
+            "\\(2160^\\circ\\)",
+            "\\(1800^\\circ\\)",
+            "\\(1080^\\circ\\)"
+          ],
+          "answer": 2
         }
       ]
     },
@@ -2619,6 +2672,102 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 280\" width=\"280\" height=\"280\"><rect width=\"280\" height=\"280\" rx=\"8\" fill=\"white\"/><path d=\"M140.0 30.0L60.0 120.0L140.0 250.0L220.0 120.0Z\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2.2\" stroke-linejoin=\"round\" fill-opacity=\"0.35\"/><line x1=\"140.0\" y1=\"30.0\" x2=\"140.0\" y2=\"250.0\" stroke=\"#475569\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"95.5\" y1=\"71.0\" x2=\"104.5\" y2=\"79.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"175.5\" y1=\"79.0\" x2=\"184.5\" y2=\"71.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M67.3 111.8L73.1 121.1L65.8 129.4\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><path d=\"M212.7 111.8L206.9 121.1L214.2 129.4\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><text x=\"134.7\" y=\"22.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"15.7\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"39.3\" y=\"125.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"15.7\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"134.2\" y=\"272.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"15.7\" fill=\"#1e293b\" font-style=\"italic\">C</text><text x=\"230.0\" y=\"125.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"15.7\" fill=\"#1e293b\" font-style=\"italic\">D</text></svg>"
           }
+        },
+        {
+          "id": "nsbhs2018-y9-q7bi",
+          "difficulty": "medium",
+          "stem": "In the diagram, \\(O\\) is the centre of both circles. Prove that \\(\\triangle AOC\\cong\\triangle ODB\\).",
+          "hint": "Compare the two outer radii, the two inner radii, and the vertically opposite angles at O.",
+          "steps": [
+            {
+              "explain": "OA and OB are radii of the larger circle, so they are equal. OC and OD are radii of the smaller circle, so they are equal.",
+              "work": "\\(OA=OB,\\qquad OC=OD\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 1 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><circle cx=\"150\" cy=\"100\" r=\"82\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><circle cx=\"150\" cy=\"100\" r=\"42\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.7\"/><path d=\"M68,100 L232,100\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M121,129 L179,71\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M68,100 L121,129\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M179,71 L232,100\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"68\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">A</text><text x=\"232\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">B</text><text x=\"150\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">O</text><text x=\"121\" y=\"144\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">C</text><text x=\"179\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">D</text><text x=\"150\" y=\"200\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">OA = OB;  OC = OD</text></svg>"
+              }
+            },
+            {
+              "explain": "The straight lines AB and CD intersect at O. Therefore the included angles are vertically opposite and equal.",
+              "work": "\\(\\angle AOC=\\angle DOB\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 2 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><circle cx=\"150\" cy=\"100\" r=\"82\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><circle cx=\"150\" cy=\"100\" r=\"42\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.7\"/><path d=\"M68,100 L232,100\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M121,129 L179,71\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M68,100 L121,129\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M179,71 L232,100\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M128,100 A22,22 0 0 0 134.4,115.6\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M165.6,84.4 A22,22 0 0 1 172,100\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"135\" y=\"99\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">θ</text><text x=\"165\" y=\"99\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">θ</text><text x=\"68\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">A</text><text x=\"232\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">B</text><text x=\"150\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">O</text><text x=\"121\" y=\"144\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">C</text><text x=\"179\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">D</text><text x=\"150\" y=\"200\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">OA = OB;  OC = OD</text></svg>"
+              }
+            },
+            {
+              "explain": "Two corresponding sides and their included angle are equal, so the triangles are congruent by SAS.",
+              "work": "\\(\\triangle AOC\\cong\\triangle BOD\\;(SAS)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 3 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><circle cx=\"150\" cy=\"100\" r=\"82\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><circle cx=\"150\" cy=\"100\" r=\"42\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.7\"/><path d=\"M68,100 L232,100\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M121,129 L179,71\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M68,100 L121,129\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M179,71 L232,100\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M128,100 A22,22 0 0 0 134.4,115.6\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M165.6,84.4 A22,22 0 0 1 172,100\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"135\" y=\"99\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">θ</text><text x=\"165\" y=\"99\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">θ</text><text x=\"68\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">A</text><text x=\"232\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">B</text><text x=\"150\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">O</text><text x=\"121\" y=\"144\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">C</text><text x=\"179\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">D</text><text x=\"150\" y=\"200\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">OA = OB;  OC = OD</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 0 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><circle cx=\"150\" cy=\"100\" r=\"82\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><circle cx=\"150\" cy=\"100\" r=\"42\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><path d=\"M68,100 L232,100\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M121,129 L179,71\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M68,100 L121,129\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M179,71 L232,100\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"68\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">A</text><text x=\"232\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">B</text><text x=\"150\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">O</text><text x=\"121\" y=\"144\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">C</text><text x=\"179\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">D</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "centre of both circles",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "review",
+          "manual": true,
+          "answer": "Teacher review: establish OA=OB (radii), OC=OD (radii), ∠AOC=∠DOB (vertically opposite), hence the triangles are congruent by SAS."
+        },
+        {
+          "id": "nsbhs2018-y9-q7bii",
+          "difficulty": "medium",
+          "stem": "In the diagram, \\(O\\) is the centre of both circles. Hence prove that \\(AC\\parallel DB\\).",
+          "hint": "Use the matching angles from the congruent triangles and the straight line AB as a transversal.",
+          "steps": [
+            {
+              "explain": "From the congruent triangles, corresponding angles are equal.",
+              "work": "\\(\\angle OAC=\\angle OBD\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 1 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><circle cx=\"150\" cy=\"100\" r=\"82\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><circle cx=\"150\" cy=\"100\" r=\"42\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.7\"/><path d=\"M68,100 L232,100\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M121,129 L179,71\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M68,100 L121,129\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M179,71 L232,100\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"68\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">A</text><text x=\"232\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">B</text><text x=\"150\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">O</text><text x=\"121\" y=\"144\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">C</text><text x=\"179\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">D</text><text x=\"150\" y=\"200\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">OA = OB;  OC = OD</text></svg>"
+              }
+            },
+            {
+              "explain": "These are alternate interior angles formed by transversal AB with lines AC and DB.",
+              "work": "\\(\\angle OAC=\\angle OBD\\Rightarrow AC\\parallel DB\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 2 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><circle cx=\"150\" cy=\"100\" r=\"82\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><circle cx=\"150\" cy=\"100\" r=\"42\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.7\"/><path d=\"M68,100 L232,100\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M121,129 L179,71\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M68,100 L121,129\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M179,71 L232,100\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M128,100 A22,22 0 0 0 134.4,115.6\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M165.6,84.4 A22,22 0 0 1 172,100\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"135\" y=\"99\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">θ</text><text x=\"165\" y=\"99\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">θ</text><text x=\"68\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">A</text><text x=\"232\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">B</text><text x=\"150\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">O</text><text x=\"121\" y=\"144\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">C</text><text x=\"179\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">D</text><text x=\"150\" y=\"200\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">OA = OB;  OC = OD</text></svg>"
+              }
+            },
+            {
+              "explain": "State the parallel-line test explicitly.",
+              "work": "\\(AC\\parallel DB\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 3 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><circle cx=\"150\" cy=\"100\" r=\"82\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><circle cx=\"150\" cy=\"100\" r=\"42\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.7\"/><path d=\"M68,100 L232,100\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M121,129 L179,71\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M68,100 L121,129\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M179,71 L232,100\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M128,100 A22,22 0 0 0 134.4,115.6\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M165.6,84.4 A22,22 0 0 1 172,100\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"135\" y=\"99\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">θ</text><text x=\"165\" y=\"99\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">θ</text><text x=\"68\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">A</text><text x=\"232\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">B</text><text x=\"150\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">O</text><text x=\"121\" y=\"144\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">C</text><text x=\"179\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">D</text><text x=\"150\" y=\"200\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">OA = OB;  OC = OD</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 0 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><circle cx=\"150\" cy=\"100\" r=\"82\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><circle cx=\"150\" cy=\"100\" r=\"42\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><path d=\"M68,100 L232,100\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M121,129 L179,71\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M68,100 L121,129\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M179,71 L232,100\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"68\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">A</text><text x=\"232\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">B</text><text x=\"150\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">O</text><text x=\"121\" y=\"144\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">C</text><text x=\"179\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">D</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "Hence prove",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "review",
+          "manual": true,
+          "answer": "Teacher review: use corresponding angles from the congruent triangles to show alternate interior angles are equal, then conclude AC∥DB."
         }
       ]
     },
@@ -2757,6 +2906,54 @@
             "\\(13\\)"
           ],
           "xp": 3
+        },
+        {
+          "id": "nsbhs2018-y9-q7biii",
+          "difficulty": "medium",
+          "stem": "In the diagram, \\(O\\) is the centre of both circles. Hence or otherwise prove that \\(ADBC\\) is a parallelogram.",
+          "hint": "In quadrilateral ADBC, AC and DB are opposite sides. Use the parallel result and their equal lengths from the congruent triangles.",
+          "steps": [
+            {
+              "explain": "From the previous result, one pair of opposite sides is parallel.",
+              "work": "\\(AC\\parallel DB\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 1 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><circle cx=\"150\" cy=\"100\" r=\"82\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><circle cx=\"150\" cy=\"100\" r=\"42\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.7\"/><path d=\"M68,100 L232,100\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M121,129 L179,71\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M68,100 L121,129\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M179,71 L232,100\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"68\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">A</text><text x=\"232\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">B</text><text x=\"150\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">O</text><text x=\"121\" y=\"144\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">C</text><text x=\"179\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">D</text><text x=\"150\" y=\"200\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">OA = OB;  OC = OD</text></svg>"
+              }
+            },
+            {
+              "explain": "Congruent triangles give equal corresponding sides AC and DB.",
+              "work": "\\(AC=DB\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 2 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><circle cx=\"150\" cy=\"100\" r=\"82\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><circle cx=\"150\" cy=\"100\" r=\"42\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.7\"/><path d=\"M68,100 L232,100\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M121,129 L179,71\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M68,100 L121,129\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M179,71 L232,100\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M128,100 A22,22 0 0 0 134.4,115.6\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M165.6,84.4 A22,22 0 0 1 172,100\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"135\" y=\"99\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">θ</text><text x=\"165\" y=\"99\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">θ</text><text x=\"68\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">A</text><text x=\"232\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">B</text><text x=\"150\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">O</text><text x=\"121\" y=\"144\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">C</text><text x=\"179\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">D</text><text x=\"150\" y=\"200\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">OA = OB;  OC = OD</text></svg>"
+              }
+            },
+            {
+              "explain": "A quadrilateral with one pair of opposite sides both equal and parallel is a parallelogram.",
+              "work": "\\(ADBC\\text{ is a parallelogram}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 3 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><circle cx=\"150\" cy=\"100\" r=\"82\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><circle cx=\"150\" cy=\"100\" r=\"42\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.7\"/><path d=\"M68,100 L232,100\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M121,129 L179,71\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M68,100 L121,129\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M179,71 L232,100\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M128,100 A22,22 0 0 0 134.4,115.6\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M165.6,84.4 A22,22 0 0 1 172,100\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"135\" y=\"99\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">θ</text><text x=\"165\" y=\"99\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">θ</text><text x=\"68\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">A</text><text x=\"232\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">B</text><text x=\"150\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">O</text><text x=\"121\" y=\"144\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">C</text><text x=\"179\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">D</text><text x=\"150\" y=\"200\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#ea580c\">OA = OB;  OC = OD</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 220\" width=\"50%\" role=\"img\" aria-label=\"Source-faithful diagram with step 0 highlighting relevant values\"><rect width=\"310\" height=\"220\" fill=\"white\"/><circle cx=\"150\" cy=\"100\" r=\"82\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><circle cx=\"150\" cy=\"100\" r=\"42\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><path d=\"M68,100 L232,100\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M121,129 L179,71\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M68,100 L121,129\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M179,71 L232,100\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"68\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">A</text><text x=\"232\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">B</text><text x=\"150\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">O</text><text x=\"121\" y=\"144\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">C</text><text x=\"179\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" font-style=\"normal\" fill=\"#334155\">D</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "In the diagram, \\(O\\) is the centre",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "review",
+          "manual": true,
+          "answer": "Teacher review: cite AC∥DB and AC=DB, then apply the theorem that one pair of opposite sides both equal and parallel implies a parallelogram."
         }
       ]
     }

@@ -16271,6 +16271,43 @@
             "school": "Ballarat High School",
             "year": "2023"
           }
+        },
+        {
+          "id": "nsbhs2018-y9-q2a",
+          "difficulty": "medium",
+          "stem": "Expand and simplify \\((5x+3)^2\\).",
+          "hint": "Use (a+b)²=a²+2ab+b²; the middle term is twice the product.",
+          "steps": [
+            {
+              "explain": "Square the first term, add twice the product of both terms, then square the constant.",
+              "work": "\\((5x+3)^2=(5x)^2+2(5x)(3)+3^2\\)"
+            },
+            {
+              "explain": "Simplify each term.",
+              "work": "\\(25x^2+30x+9\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "keyPoints": [
+            {
+              "text": "Expand and simplify",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(25x^2+9\\)",
+            "\\(25x^2+30x+9\\)",
+            "\\(10x+6\\)",
+            "\\(25x^2+15x+9\\)"
+          ],
+          "answer": 1
         }
       ]
     },

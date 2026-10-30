@@ -2349,6 +2349,43 @@
             "marks": 1,
             "origin": "exam-import"
           }
+        },
+        {
+          "id": "nsbhs2018-y9-q3a",
+          "difficulty": "medium",
+          "stem": "Fully simplify \\(\\frac{\\sqrt{10}+\\sqrt{40}}{\\sqrt2}\\).",
+          "hint": "Simplify √40 first, then divide each term by √2.",
+          "steps": [
+            {
+              "explain": "Rewrite √40 as √(4×10)=2√10.",
+              "work": "\\(\\frac{\\sqrt{10}+\\sqrt{40}}{\\sqrt2}=\\frac{3\\sqrt{10}}{\\sqrt2}\\)"
+            },
+            {
+              "explain": "Divide the surds by combining the quotient under one root.",
+              "work": "\\(3\\sqrt{\\frac{10}{2}}=3\\sqrt5\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "keyPoints": [
+            {
+              "text": "Fully simplify \\(\\frac{\\sqrt{10}+\\sqrt{40}}{\\sqrt2}\\).",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(5\\sqrt2\\)",
+            "\\(3\\sqrt2\\)",
+            "\\(3\\sqrt5\\)",
+            "\\(5\\sqrt5\\)"
+          ],
+          "answer": 2
         }
       ]
     },
@@ -3578,6 +3615,47 @@
             "marks": 2,
             "origin": "exam-import"
           }
+        },
+        {
+          "id": "nsbhs2018-y9-q3b",
+          "difficulty": "medium",
+          "stem": "Rationalise the denominator of \\(\\frac{3-\\sqrt7}{2+\\sqrt7}\\).",
+          "hint": "Multiply top and bottom by the conjugate 2−√7.",
+          "steps": [
+            {
+              "explain": "The conjugate of 2+√7 is 2−√7. Multiply numerator and denominator by it.",
+              "work": "\\(\\frac{(3-\\sqrt7)(2-\\sqrt7)}{(2+\\sqrt7)(2-\\sqrt7)}\\)"
+            },
+            {
+              "explain": "Use difference of squares in the denominator and expand the numerator.",
+              "work": "\\(\\frac{6-3\\sqrt7-2\\sqrt7+7}{4-7}=\\frac{13-5\\sqrt7}{-3}\\)"
+            },
+            {
+              "explain": "Divide numerator and denominator by −1.",
+              "work": "\\(\\frac{5\\sqrt7-13}{3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 4 2018 Yr 9 yearly-2.pdf",
+            "school": "North Sydney Boys High School",
+            "year": 2018
+          },
+          "keyPoints": [
+            {
+              "text": "Rationalise the denominator of \\(\\frac{3-\\sqrt7}{2+\\sqrt7}\\).",
+              "note": "Identify this given information first, then connect it to the matching formula, diagram, or rule."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(\\frac{13-5\\sqrt7}{3}\\)",
+            "\\(\\frac{5\\sqrt7-13}{3}\\)",
+            "\\(5\\sqrt7-13\\)",
+            "\\(\\frac{13+5\\sqrt7}{3}\\)"
+          ],
+          "answer": 1
         }
       ]
     },
