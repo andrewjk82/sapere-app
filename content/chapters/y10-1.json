@@ -14942,6 +14942,51 @@
             }
           ],
           "timeLimit": 60
+        },
+        {
+          "id": "sbh2019-y10-ea02",
+          "difficulty": "medium",
+          "stem": "A driveway is found to be 4.251 m long using a tape measure. Calculate the percentage error for this measurement to three decimal places.",
+          "hint": "A tape reading to the nearest millimetre has a maximum absolute error of half a millimetre. Convert that error to metres, divide by the measured length, and convert to a percentage.",
+          "steps": [
+            {
+              "explain": "The tape measures to the nearest millimetre, so the maximum error is half of 1 mm. Convert to metres.",
+              "work": "\\(e=0.5\\text{ mm}=0.0005\\text{ m}\\)"
+            },
+            {
+              "explain": "Use percentage error = (absolute error divided by measured value) × 100%.",
+              "work": "\\(\\text{percentage error}=\\frac{0.0005}{4.251}\\times100\\%\\approx0.011762\\%\\)"
+            },
+            {
+              "explain": "Round to three decimal places.",
+              "work": "\\(\\boxed{0.012\\%}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "E",
+            "part": "EA2",
+            "page": 20
+          },
+          "keyPoints": [
+            {
+              "text": "A driveway is found to be 4.251 m long using a tape measure. Calculate the perce",
+              "note": "A tape reading to the nearest millimetre has a maximum absolute error of half a millimetre. Convert that error to metres, divide by the measured length, and convert to a percentage."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(0.012\\%\\)",
+            "\\(0.011\\%\\)",
+            "\\(0.002\\%\\)",
+            "\\(0.001\\%\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(0.012\\%\\)."
         }
       ]
     },
@@ -27595,6 +27640,51 @@
               "work": "\\(\\boxed{I=\\$102.83}\\)"
             }
           ]
+        },
+        {
+          "id": "sbh2019-y10-b04",
+          "difficulty": "medium",
+          "stem": "Nicole invested $150 000 at 9% p.a. for 5 years, with the interest compounding every four months. How much interest will she earn?",
+          "hint": "Four-month periods mean three compoundings per year. Convert 9% p.a. to the rate per period and count all periods; subtract the principal because the question asks for interest only.",
+          "steps": [
+            {
+              "explain": "There are (12/4=3) periods each year, so divide the annual rate by 3 and multiply 5 years by 3.",
+              "work": "\\(i=0.09\\div3=0.03;\\quad n=5\\times3=15\\)"
+            },
+            {
+              "explain": "Use (A=P(1+i)^n), with (P=150000), then subtract the principal.",
+              "work": "\\(I=A-P=150000(1.03)^{15}-150000\\)"
+            },
+            {
+              "explain": "Evaluate and round money to the nearest cent.",
+              "work": "\\(I\\approx\\boxed{\\$83,695.11}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "B",
+            "part": "B4",
+            "page": 7
+          },
+          "keyPoints": [
+            {
+              "text": "Nicole invested $150 000 at 9% p.a. for 5 years, with the interest compounding e",
+              "note": "Four-month periods mean three compoundings per year. Convert 9% p.a. to the rate per period and count all periods; subtract the principal because the question asks for interest only."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(\\$83,695.11\\)",
+            "\\(\\$67,500.00\\)",
+            "\\(\\$233,695.11\\)",
+            "\\(\\$82,500.00\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(\\$83,695.11\\)."
         }
       ]
     },
@@ -37301,6 +37391,51 @@
               "work": "\\(\\boxed{V=\\$1153.19}\\)"
             }
           ]
+        },
+        {
+          "id": "sbh2019-y10-b05",
+          "difficulty": "medium",
+          "stem": "A lawnmower was purchased for $480 and 4 years later its value depreciated to $275. Find the annual rate of depreciation.",
+          "hint": "Use compound depreciation (A=P(1-r)^n). Isolate (1-r) by taking the fourth root, then subtract from 1.",
+          "steps": [
+            {
+              "explain": "Substitute the final and original values into the depreciation formula.",
+              "work": "\\(275=480(1-r)^4\\)"
+            },
+            {
+              "explain": "Divide by 480, then take the positive fourth root.",
+              "work": "\\((1-r)^4=\\frac{275}{480}\\Rightarrow1-r=\\sqrt[4]{\\frac{275}{480}}\\)"
+            },
+            {
+              "explain": "Solve for (r) and convert the decimal to a percentage.",
+              "work": "\\(r=1-\\sqrt[4]{\\frac{275}{480}}\\approx0.13000=\\boxed{13.000\\%}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "B",
+            "part": "B5",
+            "page": 7
+          },
+          "keyPoints": [
+            {
+              "text": "A lawnmower was purchased for $480 and 4 years later its value depreciated to $2",
+              "note": "Use compound depreciation (A=P(1-r)^n). Isolate (1-r) by taking the fourth root, then subtract from 1."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(13.000\\%\\)",
+            "\\(14.000\\%\\)",
+            "\\(11.667\\%\\)",
+            "\\(42.708\\%\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(13.000\\%\\)."
         }
       ]
     },
@@ -42875,6 +43010,51 @@
               "note": "Separate the fixed threshold or allowance from the taxable bands before combining the amounts."
             }
           ]
+        },
+        {
+          "id": "sbh2019-y10-d02",
+          "difficulty": "medium",
+          "stem": "Matthew borrows $12000 to buy a motorbike. He is to pay the money back over three years in equal monthly repayments and is charged simple interest at 8% p.a. How much is each instalment?",
+          "hint": "Calculate simple interest for 3 years, add it to the borrowed amount, then divide by 36 monthly payments.",
+          "steps": [
+            {
+              "explain": "Use simple interest (I=Prt).",
+              "work": "\\(I=12000(0.08)(3)=2880\\)"
+            },
+            {
+              "explain": "Add the interest to the principal to find the total repayment.",
+              "work": "\\(12000+2880=14880\\)"
+            },
+            {
+              "explain": "There are (3\\times12=36) equal monthly instalments.",
+              "work": "\\(14880\\div36=\\boxed{\\$413.33}\\text{ (to nearest cent)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "D",
+            "part": "D2",
+            "page": 15
+          },
+          "keyPoints": [
+            {
+              "text": "Matthew borrows $12000 to buy a motorbike. He is to pay the money back over thre",
+              "note": "Calculate simple interest for 3 years, add it to the borrowed amount, then divide by 36 monthly payments."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(\\$413.33\\)",
+            "\\(\\$333.33\\)",
+            "\\(\\$480.00\\)",
+            "\\(\\$4,133.33\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(\\$413.33\\)."
         }
       ]
     }

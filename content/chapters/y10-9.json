@@ -3833,6 +3833,51 @@
               "work": "\\(4.2052\\ldots\\times10^{-2}\\approx\\boxed{4.21\\times10^{-2}}\\)"
             }
           ]
+        },
+        {
+          "id": "sbh2019-y10-b01",
+          "difficulty": "medium",
+          "stem": "What is \\(0.00523359\\) written in scientific notation, correct to 4 significant figures?",
+          "hint": "Move the decimal point until one non-zero digit is on its left. Count the moves and round the fifth significant digit.",
+          "steps": [
+            {
+              "explain": "Move the decimal point three places right to make a number between 1 and 10. Moving right gives a negative power.",
+              "work": "\\(0.00523359=5.23359\\times10^{-3}\\)"
+            },
+            {
+              "explain": "Keep the first four significant digits, 5, 2, 3, 3. The next digit is 5, so round the fourth digit up.",
+              "work": "\\(5.23359\\Rightarrow5.234\\text{ (4 s.f.)}\\)"
+            },
+            {
+              "explain": "Combine the rounded coefficient and the original power of ten.",
+              "work": "\\(\\boxed{5.234\\times10^{-3}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "B",
+            "part": "B1",
+            "page": 6
+          },
+          "keyPoints": [
+            {
+              "text": "What is \\(0.00523359\\) written in scientific notation, correct to 4 significant",
+              "note": "Move the decimal point until one non-zero digit is on its left. Count the moves and round the fifth significant digit."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(5.234\\times10^{-3}\\)",
+            "\\(5.233\\times10^{-3}\\)",
+            "\\(5.234\\times10^{-2}\\)",
+            "\\(0.5234\\times10^{-2}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(5.234\\times10^{-3}\\)."
         }
       ]
     },
@@ -4374,6 +4419,141 @@
               "work": "\\(\\boxed{y=0\\text{ or }y=\\log_2 11}\\)"
             }
           ]
+        },
+        {
+          "id": "sbh2019-y10-b03",
+          "difficulty": "medium",
+          "stem": "Solve \\(9^x-26(3^x)-27=0\\).",
+          "hint": "Rewrite (9^x) as ((3^x)^2). Let (u=3^x), solve the quadratic, then reject any value of (u) that cannot equal a positive exponential.",
+          "steps": [
+            {
+              "explain": "Use the index law (9^x=(3^2)^x=(3^x)^2).",
+              "work": "\\((3^x)^2-26(3^x)-27=0\\)"
+            },
+            {
+              "explain": "Set (u=3^x) and factor the quadratic.",
+              "work": "\\(u^2-26u-27=0\\Rightarrow(u-27)(u+1)=0\\Rightarrow u=27\\text{ or }u=-1\\)"
+            },
+            {
+              "explain": "Since (3^x>0), reject (u=-1). Solve (3^x=27=3^3).",
+              "work": "\\(x=\\boxed{3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "B",
+            "part": "B3",
+            "page": 6
+          },
+          "keyPoints": [
+            {
+              "text": "Solve \\(9^x-26(3^x)-27=0\\).",
+              "note": "Rewrite (9^x) as ((3^x)^2). Let (u=3^x), solve the quadratic, then reject any value of (u) that cannot equal a positive exponential."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(x=3\\)",
+            "\\(x=-1\\)",
+            "\\(x=1\\)",
+            "\\(x=27\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(x=3\\)."
+        },
+        {
+          "id": "sbh2019-y10-g02a",
+          "difficulty": "medium",
+          "stem": "Find constants \\(A\\) and \\(B\\) such that \\(4^{3x^2+4x}-2^{3x^2+4x+3}=A\\left(2^{3x^2+4x}\\right)^2-B\\left(2^{3x^2+4x}\\right)\\).",
+          "hint": "Let (u=2^{3x^2+4x}). Rewrite the first power of 4 as a square of (u), and factor the second power of 2 into a coefficient times (u).",
+          "steps": [
+            {
+              "explain": "Set (u=2^{3x^2+4x}). Then the first term is (4^{3x^2+4x}=(2^{3x^2+4x})^2).",
+              "work": "\\(4^{3x^2+4x}=u^2\\)"
+            },
+            {
+              "explain": "Split the exponent in the second term into (3x^2+4x) and 3.",
+              "work": "\\(2^{3x^2+4x+3}=2^3\\cdot2^{3x^2+4x}=8u\\)"
+            },
+            {
+              "explain": "Compare (u^2-8u) with (Au^2-Bu).",
+              "work": "\\(A=\\boxed1,\\quad B=\\boxed8\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "G",
+            "part": "G2a",
+            "page": 31
+          },
+          "keyPoints": [
+            {
+              "text": "Find constants \\(A\\) and \\(B\\) such that \\(4^{3x^2+4x}-2^{3x^2+4x+3}=A\\left(2^{3",
+              "note": "Let (u=2^{3x^2+4x}). Rewrite the first power of 4 as a square of (u), and factor the second power of 2 into a coefficient times (u)."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(A=1,\\;B=8\\)",
+            "\\(A=4,\\;B=3\\)",
+            "\\(A=2,\\;B=8\\)",
+            "\\(A=1,\\;B=3\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(A=1,\\;B=8\\)."
+        },
+        {
+          "id": "sbh2019-y10-g02b",
+          "difficulty": "medium",
+          "stem": "For which values of \\(x\\) will the expression \\(4^{3x^2+4x}-2^{3x^2+4x+3}\\) take its minimum value?",
+          "hint": "Use (u=2^{3x^2+4x}>0) and complete the square in (u^2-8u). The minimum occurs at (u=4), then solve the exponent equation.",
+          "steps": [
+            {
+              "explain": "From part (a), the expression is (u^2-8u). Complete the square.",
+              "work": "\\(u^2-8u=(u-4)^2-16\\)"
+            },
+            {
+              "explain": "The square is minimized at (u=4). Set the original power equal to 4, and equate exponents because both sides are powers of 2.",
+              "work": "\\(2^{3x^2+4x}=4=2^2\\Rightarrow3x^2+4x=2\\)"
+            },
+            {
+              "explain": "Solve the quadratic with the quadratic formula.",
+              "work": "\\(3x^2+4x-2=0\\Rightarrow x=\\frac{-4\\pm\\sqrt{16+24}}6=\\boxed{\\frac{-2\\pm\\sqrt{10}}3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "G",
+            "part": "G2b",
+            "page": 31
+          },
+          "keyPoints": [
+            {
+              "text": "For which values of \\(x\\) will the expression \\(4^{3x^2+4x}-2^{3x^2+4x+3}\\) take",
+              "note": "Use (u=2^{3x^2+4x}>0) and complete the square in (u^2-8u). The minimum occurs at (u=4), then solve the exponent equation."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(\\frac{-2+\\sqrt{10}}{3},\\;\\frac{-2-\\sqrt{10}}{3}\\)",
+            "\\(\\frac{2+\\sqrt{10}}{3},\\;\\frac{2-\\sqrt{10}}{3}\\)",
+            "\\(\\frac{-2+\\sqrt{7}}{3},\\;\\frac{-2-\\sqrt{7}}{3}\\)",
+            "\\(2,\\;-\\frac23\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(\\frac{-2+\\sqrt{10}}{3},\\;\\frac{-2-\\sqrt{10}}{3}\\)."
         }
       ]
     }

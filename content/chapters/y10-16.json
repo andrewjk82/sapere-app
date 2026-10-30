@@ -3165,6 +3165,51 @@
               "note": "Use this pair to determine the constant of variation."
             }
           ]
+        },
+        {
+          "id": "sbh2019-y10-a04",
+          "difficulty": "medium",
+          "stem": "If \\(m\\) is inversely proportional to \\(n\\), and \\(m=10\\) when \\(n=25\\), what is the value of \\(n\\) when \\(m=250\\)?",
+          "hint": "For inverse proportion, the product (mn) stays constant. Find that product from the first pair, then use it with (m=250).",
+          "steps": [
+            {
+              "explain": "Translate inverse proportion into the equation (mn=k), where (k) is constant.",
+              "work": "\\(k=mn=10\\times25=250\\)"
+            },
+            {
+              "explain": "Substitute (m=250) into (mn=250).",
+              "work": "\\(250n=250\\)"
+            },
+            {
+              "explain": "Divide both sides by 250.",
+              "work": "\\(n=\\boxed{1}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "A",
+            "part": "A4",
+            "page": 2
+          },
+          "keyPoints": [
+            {
+              "text": "If \\(m\\) is inversely proportional to \\(n\\), and \\(m=10\\) when \\(n=25\\), what is",
+              "note": "For inverse proportion, the product (mn) stays constant. Find that product from the first pair, then use it with (m=250)."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(1\\)",
+            "\\(10\\)",
+            "\\(25\\)",
+            "\\(250\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(1\\)."
         }
       ]
     },
@@ -3935,6 +3980,51 @@
             "grade": "10"
           },
           "xp": 3
+        },
+        {
+          "id": "sbh2019-y10-f03",
+          "difficulty": "medium",
+          "stem": "The volume of a cylinder of radius (r) cm and height (h) cm varies directly as (r^2h). If the base radius is increased by 50% and the height is decreased by 20%, find the percentage change in the volume.",
+          "hint": "Use the scale factors: a 50% radius increase multiplies (r) by 1.5, and a 20% height decrease multiplies (h) by 0.8. Apply the radius factor twice because the radius is squared.",
+          "steps": [
+            {
+              "explain": "Write the proportional volume scale factor.",
+              "work": "\\(\\frac{V_{new}}{V_{old}}=\\left(\\frac{r_{new}}{r_{old}}\\right)^2\\left(\\frac{h_{new}}{h_{old}}\\right)\\)"
+            },
+            {
+              "explain": "Substitute the growth and decrease factors.",
+              "work": "\\(\\frac{V_{new}}{V_{old}}=(1.5)^2(0.8)=2.25(0.8)=1.8\\)"
+            },
+            {
+              "explain": "A factor of 1.8 means the new volume is 180% of the original, so the increase is 80%.",
+              "work": "\\((1.8-1)\\times100\\%=\\boxed{80\\%\\text{ increase}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "F",
+            "part": "F3",
+            "page": 29
+          },
+          "keyPoints": [
+            {
+              "text": "The volume of a cylinder of radius (r) cm and height (h) cm varies directly as (",
+              "note": "Use the scale factors: a 50% radius increase multiplies (r) by 1.5, and a 20% height decrease multiplies (h) by 0.8. Apply the radius factor twice because the radius is squared."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(80\\%\\) increase",
+            "\\(20\\%\\) increase",
+            "\\(80\\%\\) decrease",
+            "\\(20\\%\\) decrease"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(80\\%\\) increase."
         }
       ]
     },

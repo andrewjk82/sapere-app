@@ -18172,6 +18172,63 @@
             }
           ],
           "hint": "Both bearings start at north at P. Find the included angle between the two routes, then use the sine rule and back bearing."
+        },
+        {
+          "id": "sbh2019-y10-ea03",
+          "difficulty": "medium",
+          "stem": "In the diagram, \\(\\angle NPQ=65^\\circ\\). What is the bearing of \\(P\\) from \\(Q\\)?",
+          "hint": "The (65°) angle gives the bearing of Q from P. A reverse bearing differs by (180°).",
+          "steps": [
+            {
+              "explain": "The angle is measured clockwise from north at (P) to (PQ), so the bearing of (Q) from (P) is (065°T).",
+              "work": "\\(\\text{bearing of Q from P}=065^\\circ\\mathrm{T}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M55 190 H330 M192 35 V205\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M192 190 L290 104\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><path d=\"M192 190 L94 104\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.5\"/><text x=\"192\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">N</text><text x=\"302\" y=\"104\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">Q</text><text x=\"181\" y=\"208\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#2563eb\">P</text><text x=\"222\" y=\"158\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">65°</text><text x=\"190\" y=\"228\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">Bearing back = 245°T</text></svg>"
+              }
+            },
+            {
+              "explain": "Reverse the direction from Q back to P by adding (180°).",
+              "work": "\\(065^\\circ+180^\\circ=245^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M55 190 H330 M192 35 V205\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M192 190 L290 104\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><path d=\"M192 190 L94 104\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"2.5\"/><text x=\"192\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">N</text><text x=\"302\" y=\"104\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#ea580c\">Q</text><text x=\"181\" y=\"208\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#2563eb\">P</text><text x=\"222\" y=\"158\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">65°</text><text x=\"190\" y=\"228\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">Bearing back = 245°T</text></svg>"
+              }
+            },
+            {
+              "explain": "Write the three-figure bearing with its T suffix.",
+              "work": "\\(\\boxed{245^\\circ\\mathrm{T}}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M55 190 H330 M192 35 V205\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M192 190 L290 104\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><path d=\"M192 190 L94 104\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"2.5\"/><text x=\"192\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">N</text><text x=\"302\" y=\"104\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#ea580c\">Q</text><text x=\"181\" y=\"208\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#2563eb\">P</text><text x=\"222\" y=\"158\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#059669\">65°</text><text x=\"190\" y=\"228\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#059669\">Bearing back = 245°T</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "E",
+            "part": "EA3",
+            "page": 21
+          },
+          "keyPoints": [
+            {
+              "text": "In the diagram, \\(\\angle NPQ=65^\\circ\\). What is the bearing of \\(P\\) from \\(Q\\)",
+              "note": "The (65°) angle gives the bearing of Q from P. A reverse bearing differs by (180°)."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M55 190 H330 M192 35 V205\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M192 190 L290 104\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.5\"/><path d=\"M192 190 L94 104\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.5\"/><text x=\"192\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">N</text><text x=\"302\" y=\"104\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">Q</text><text x=\"181\" y=\"208\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">P</text><text x=\"222\" y=\"158\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">65°</text><text x=\"190\" y=\"228\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">Bearing back = 245°T</text></svg>"
+          },
+          "type": "mc",
+          "options": [
+            "\\(245^\\circ\\mathrm{T}\\)",
+            "\\(065^\\circ\\mathrm{T}\\)",
+            "\\(117^\\circ\\mathrm{T}\\)",
+            "\\(207^\\circ\\mathrm{T}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(245^\\circ\\mathrm{T}\\)."
         }
       ]
     }

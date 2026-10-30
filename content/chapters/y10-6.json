@@ -2121,6 +2121,165 @@
               "work": "\\(A=\\pi(3)(9)=\\boxed{27\\pi\\text{ cm}^2}\\)"
             }
           ]
+        },
+        {
+          "id": "sbh2019-y10-c02",
+          "difficulty": "medium",
+          "stem": "Zachary is going to have 100 cardboard display boxes to contain his company’s information pamphlets. Each of the boxes has 4 sides and a base and is open at the top. The dimensions of the boxes are shown in the diagram below. The manufacturer’s charge for making the boxes are based on the external surface area of each box. The charge is $17.50 per square metre. How much will the manufacturer charge to make 100 display boxes?",
+          "hint": "The open box has no top. Add the base, the two trapezoidal side panels, and the two end panels, then convert square centimetres to square metres before applying the rate.",
+          "steps": [
+            {
+              "explain": "The base is (30\\times7). Each long side is a trapezium with parallel heights 10 and 28 and width 30.",
+              "work": "\\(A_{base}=30(7)=210;\\quad A_{side}=\\frac{10+28}{2}(30)=570\\text{ each}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M100 180 L285 150 L335 130 L150 160 Z\" fill=\"#e2e8f0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><path d=\"M100 180 L285 150 L285 40 L100 130 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M150 160 L335 130 L335 20 L150 110 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 180 L150 160 L150 110 L100 130 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M285 150 L335 130 L335 20 L285 40 Z\" fill=\"#eef2f7\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 130 L285 40 M150 110 L335 20\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"216\" y=\"205\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#2563eb\">30 cm</text><text x=\"75\" y=\"157\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">10 cm</text><text x=\"354\" y=\"82\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">28 cm</text><text x=\"126\" y=\"194\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#2563eb\">7 cm</text><text x=\"229\" y=\"36\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">Open</text><path d=\"M230 40 L219 78\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1\"/></svg>"
+              }
+            },
+            {
+              "explain": "Add both trapezoidal sides and the two rectangular ends.",
+              "work": "\\(A=210+2(570)+70+196=1616\\text{ cm}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M100 180 L285 150 L335 130 L150 160 Z\" fill=\"#e2e8f0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><path d=\"M100 180 L285 150 L285 40 L100 130 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M150 160 L335 130 L335 20 L150 110 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 180 L150 160 L150 110 L100 130 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M285 150 L335 130 L335 20 L285 40 Z\" fill=\"#eef2f7\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 130 L285 40 M150 110 L335 20\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"216\" y=\"205\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#2563eb\">30 cm</text><text x=\"75\" y=\"157\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#ea580c\">10 cm</text><text x=\"354\" y=\"82\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">28 cm</text><text x=\"126\" y=\"194\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#2563eb\">7 cm</text><text x=\"229\" y=\"36\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">Open</text><path d=\"M230 40 L219 78\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1\"/></svg>"
+              }
+            },
+            {
+              "explain": "The dimensions are in centimetres, so convert \\(1616\text{ cm}^2\\) to \\(0.1616\text{ m}^2\\), then price 100 boxes.",
+              "work": "\\(100(0.1616)(17.50)=\\boxed{\\$282.80}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M100 180 L285 150 L335 130 L150 160 Z\" fill=\"#e2e8f0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><path d=\"M100 180 L285 150 L285 40 L100 130 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M150 160 L335 130 L335 20 L150 110 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 180 L150 160 L150 110 L100 130 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M285 150 L335 130 L335 20 L285 40 Z\" fill=\"#eef2f7\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 130 L285 40 M150 110 L335 20\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"216\" y=\"205\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#2563eb\">30 cm</text><text x=\"75\" y=\"157\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#ea580c\">10 cm</text><text x=\"354\" y=\"82\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#059669\">28 cm</text><text x=\"126\" y=\"194\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#2563eb\">7 cm</text><text x=\"229\" y=\"36\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">Open</text><path d=\"M230 40 L219 78\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1\"/></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "C",
+            "part": "C2",
+            "page": 10
+          },
+          "keyPoints": [
+            {
+              "text": "Zachary is going to have 100 cardboard display boxes to contain his company’s in",
+              "note": "The open box has no top. Add the base, the two trapezoidal side panels, and the two end panels, then convert square centimetres to square metres before applying the rate."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M100 180 L285 150 L335 130 L150 160 Z\" fill=\"#e2e8f0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><path d=\"M100 180 L285 150 L285 40 L100 130 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M150 160 L335 130 L335 20 L150 110 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 180 L150 160 L150 110 L100 130 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M285 150 L335 130 L335 20 L285 40 Z\" fill=\"#eef2f7\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 130 L285 40 M150 110 L335 20\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"216\" y=\"205\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">30 cm</text><text x=\"75\" y=\"157\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">10 cm</text><text x=\"354\" y=\"82\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">28 cm</text><text x=\"126\" y=\"194\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">7 cm</text><text x=\"229\" y=\"36\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">Open</text><path d=\"M230 40 L219 78\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1\"/></svg>"
+          },
+          "type": "mc",
+          "options": [
+            "\\(\\$282.80\\)",
+            "\\(\\$161.60\\)",
+            "\\(\\$2,828.00\\)",
+            "\\(\\$28.28\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(\\$282.80\\)."
+        },
+        {
+          "id": "sbh2019-y10-ea01",
+          "difficulty": "medium",
+          "stem": "The volume of a cone of height 6 m is \\(301.6\\text{ m}^3\\). What is the volume of a cylinder that has the same dimensions as the cone?",
+          "hint": "A cone and cylinder with the same base radius and height satisfy \\(V_{cone}=\\frac13 V_{cylinder}\\). Multiply the cone volume by 3.",
+          "steps": [
+            {
+              "explain": "Write the volume relationship for solids with the same base and height.",
+              "work": "\\(V_{cone}=\\frac13\\pi r^2h;\\quad V_{cyl}=\\pi r^2h=3V_{cone}\\)"
+            },
+            {
+              "explain": "Substitute the given cone volume.",
+              "work": "\\(V_{cyl}=3(301.6)\\)"
+            },
+            {
+              "explain": "Multiply and keep cubic metres as the unit.",
+              "work": "\\(V_{cyl}=\\boxed{904.8\\text{ m}^3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "E",
+            "part": "EA1",
+            "page": 20
+          },
+          "keyPoints": [
+            {
+              "text": "The volume of a cone of height 6 m is \\(301.6\\text{ m}^3\\). What is the volume o",
+              "note": "A cone and cylinder with the same base radius and height satisfy \\(V_{cone}=\\frac13 V_{cylinder}\\). Multiply the cone volume by 3."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(904.8\\text{ m}^3\\)",
+            "\\(100.5\\text{ m}^3\\)",
+            "\\(402.1\\text{ m}^3\\)",
+            "\\(134\\text{ m}^3\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(904.8\\text{ m}^3\\)."
+        },
+        {
+          "id": "sbh2019-y10-f02a",
+          "difficulty": "medium",
+          "stem": "The figure shows a solid metallic object in the form of a right pyramid with a square base of side 13 cm and a height of 25 cm. The vertex is directly above the centre of the square base. Calculate the surface area of the pyramid to 2 decimal places.",
+          "hint": "Surface area is the square base plus four congruent triangular faces. Find a face’s slant height using a right triangle with vertical height 25 and half a base side 6.5.",
+          "steps": [
+            {
+              "explain": "The perpendicular from the apex meets the centre of the square. For one face, the horizontal distance from the centre to the midpoint of a side is (13/2=6.5) cm.",
+              "work": "\\(\\ell=\\sqrt{25^2+6.5^2}=\\sqrt{667.25}\\approx25.831\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M55 175 L220 175 L280 135 L115 135 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M55 175 L180 35 L220 175 M180 35 L280 135 M180 35 L115 135\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M180 35 L180 155\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.3\"/><path d=\"M180 155 L190 155 L190 165\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"130\" y=\"196\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#2563eb\">13 cm</text><text x=\"255\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#2563eb\">13 cm</text><text x=\"193\" y=\"90\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">25 cm</text><text x=\"120\" y=\"78\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">slant height</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the base area and the combined area of four triangular faces. Lateral area equals half the base perimeter times the face slant height.",
+              "work": "\\(A_{base}=13^2=169;\\quad A_{lat}=\\frac12(4\\times13)(25.831)=26(25.831)\\approx671.61\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M55 175 L220 175 L280 135 L115 135 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M55 175 L180 35 L220 175 M180 35 L280 135 M180 35 L115 135\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M180 35 L180 155\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"2.3\"/><path d=\"M180 155 L190 155 L190 165\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"130\" y=\"196\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#2563eb\">13 cm</text><text x=\"255\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#2563eb\">13 cm</text><text x=\"193\" y=\"90\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#ea580c\">25 cm</text><text x=\"120\" y=\"78\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">slant height</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the base and lateral areas, then round to 2 decimal places.",
+              "work": "\\(A_{total}=169+671.6108=\\boxed{840.61\\text{ cm}^2}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M55 175 L220 175 L280 135 L115 135 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M55 175 L180 35 L220 175 M180 35 L280 135 M180 35 L115 135\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M180 35 L180 155\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"2.3\"/><path d=\"M180 155 L190 155 L190 165\" fill=\"none\" stroke=\"#059669\" stroke-width=\"1.5\"/><text x=\"130\" y=\"196\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#2563eb\">13 cm</text><text x=\"255\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#2563eb\">13 cm</text><text x=\"193\" y=\"90\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#ea580c\">25 cm</text><text x=\"120\" y=\"78\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#059669\">slant height</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "F",
+            "part": "F2a",
+            "page": 28
+          },
+          "keyPoints": [
+            {
+              "text": "The figure shows a solid metallic object in the form of a right pyramid with a s",
+              "note": "Surface area is the square base plus four congruent triangular faces. Find a face’s slant height using a right triangle with vertical height 25 and half a base side 6.5."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M55 175 L220 175 L280 135 L115 135 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M55 175 L180 35 L220 175 M180 35 L280 135 M180 35 L115 135\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M180 35 L180 155\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.3\"/><path d=\"M180 155 L190 155 L190 165\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"130\" y=\"196\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">13 cm</text><text x=\"255\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">13 cm</text><text x=\"193\" y=\"90\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">25 cm</text><text x=\"120\" y=\"78\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">slant height</text></svg>"
+          },
+          "type": "mc",
+          "options": [
+            "\\(840.61\\text{ cm}^2\\)",
+            "\\(676.00\\text{ cm}^2\\)",
+            "\\(507.62\\text{ cm}^2\\)",
+            "\\(1014.31\\text{ cm}^2\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(840.61\\text{ cm}^2\\)."
         }
       ]
     },
@@ -2305,6 +2464,51 @@
               "work": "\\(\\boxed{V=179.59\\text{ cm}^3}\\)"
             }
           ]
+        },
+        {
+          "id": "sbh2019-y10-f02b",
+          "difficulty": "medium",
+          "stem": "The pyramid is melted and recast into two solid spheres, such that the radius of the larger sphere is twice the radius of the smaller sphere. Let the smaller radius be (r) cm. Calculate (r) to 2 decimal places.",
+          "hint": "The total sphere volume must equal the pyramid volume. If the small radius is (r), the large sphere radius is (2r); combine the two sphere volumes before solving.",
+          "steps": [
+            {
+              "explain": "Calculate the pyramid volume using base area (13^2) and height 25.",
+              "work": "\\(V_p=\\frac13(13^2)(25)=\\frac{4225}{3}\\approx1408.333\\text{ cm}^3\\)"
+            },
+            {
+              "explain": "Add the volumes of spheres with radii (r) and (2r).",
+              "work": "\\(V_s=\\frac43\\pi r^3+\\frac43\\pi(2r)^3=\\frac43\\pi(9r^3)=12\\pi r^3\\)"
+            },
+            {
+              "explain": "Set the volumes equal and take the cube root.",
+              "work": "\\(12\\pi r^3=\\frac{4225}{3}\\Rightarrow r=\\sqrt[3]{\\frac{4225}{36\\pi}}\\approx\\boxed{3.34\\text{ cm}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "F",
+            "part": "F2b",
+            "page": 28
+          },
+          "keyPoints": [
+            {
+              "text": "The pyramid is melted and recast into two solid spheres, such that the radius of",
+              "note": "The total sphere volume must equal the pyramid volume. If the small radius is (r), the large sphere radius is (2r); combine the two sphere volumes before solving."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(3.34\\text{ cm}\\)",
+            "\\(6.68\\text{ cm}\\)",
+            "\\(2.50\\text{ cm}\\)",
+            "\\(4.17\\text{ cm}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(3.34\\text{ cm}\\)."
         }
       ]
     },

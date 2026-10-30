@@ -2530,6 +2530,51 @@
               "work": "\\(\\boxed{x^2+y^2=16}\\)"
             }
           ]
+        },
+        {
+          "id": "sbh2019-y10-b02",
+          "difficulty": "medium",
+          "stem": "Find the centre of the circle \\(x^2+y^2-4x-y+1=0\\).",
+          "hint": "Group the x-terms and y-terms, then complete the square for each variable. Read the centre from the squared form.",
+          "steps": [
+            {
+              "explain": "Move the constant to the right and group like variables.",
+              "work": "\\(x^2-4x+y^2-y=-1\\)"
+            },
+            {
+              "explain": "Complete both squares: add 4 for x and \\(\\frac14\\) for y to both sides.",
+              "work": "\\(x^2-4x+4+y^2-y+\\frac14=-1+4+\\frac14\\)"
+            },
+            {
+              "explain": "Write the circle in centre-radius form and identify the signs inside the brackets.",
+              "work": "\\((x-2)^2+(y-\\frac12)^2=\\frac{13}{4}\\Rightarrow C=\\boxed{(2,\\frac12)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "B",
+            "part": "B2",
+            "page": 6
+          },
+          "keyPoints": [
+            {
+              "text": "Find the centre of the circle \\(x^2+y^2-4x-y+1=0\\).",
+              "note": "Group the x-terms and y-terms, then complete the square for each variable. Read the centre from the squared form."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\((2,\\frac12)\\)",
+            "\\((-2,-\\frac12)\\)",
+            "\\((2,-\\frac12)\\)",
+            "\\((4,1)\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\((2,\\frac12)\\)."
         }
       ]
     },
@@ -5425,6 +5470,57 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"220\" viewBox=\"0 0 360 220\"><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M45 25V185M85 25V185M125 25V185M165 25V185M205 25V185M245 25V185M285 25V185M325 25V185M40 30H330M40 65H330M40 100H330M40 135H330M40 170H330\"/></g><g stroke=\"#334155\" stroke-width=\"1.5\"><path d=\"M40 185H330M45 190V20\"/></g><text x=\"325\" y=\"204\" font-size=\"10\">x</text><text x=\"30\" y=\"22\" font-size=\"10\">y</text></svg>"
           }
+        },
+        {
+          "id": "sbh2019-y10-a06a",
+          "difficulty": "medium",
+          "stem": "Sketch \\(y=\\frac{2}{2x+1}\\) neatly on a number plane, showing clearly all the asymptotes and possible intercepts.",
+          "hint": "Find where the denominator is zero for the vertical asymptote, then inspect the function as (x) becomes large for the horizontal asymptote. Check both axes for intercepts.",
+          "steps": [
+            {
+              "explain": "The denominator is zero when (2x+1=0); this gives the vertical asymptote. The numerator is constant, so it never equals zero and there is no x-intercept.",
+              "work": "\\(2x+1=0\\Rightarrow x=-\\frac12;\\quad 2\\ne0\\Rightarrow\\text{no x-intercept}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M35 150 H350 M190 25 V210\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M155 25 V210\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"4 4\"/><path d=\"M40 155 C85 158 120 178 150 205 M160 45 C173 55 182 65 190 70 C230 88 290 120 350 145\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><text x=\"190\" y=\"224\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">x</text><text x=\"200\" y=\"35\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">y</text><text x=\"155\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">x = −½</text><text x=\"198\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">(0, 2)</text></svg>"
+              }
+            },
+            {
+              "explain": "As (|x|) grows, the denominator grows without bound, so the fraction tends to zero. At (x=0), evaluate the y-intercept.",
+              "work": "\\(y=0\\text{ is the horizontal asymptote};\\quad y(0)=\\frac2{1}=2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M35 150 H350 M190 25 V210\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M155 25 V210\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"4 4\"/><path d=\"M40 155 C85 158 120 178 150 205 M160 45 C173 55 182 65 190 70 C230 88 290 120 350 145\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><text x=\"190\" y=\"224\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">x</text><text x=\"200\" y=\"35\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">y</text><text x=\"155\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#ea580c\">x = −½</text><text x=\"198\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">(0, 2)</text></svg>"
+              }
+            },
+            {
+              "explain": "Sketch two smooth branches: one to the left of \\(x=-\\frac12\\), below the x-axis; the other to the right, above the x-axis, passing through \\((0,2)\\).",
+              "work": "\\(\\text{Asymptotes: }x=-\\frac12,\\;y=0;\\quad\\text{intercept: }(0,2)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M35 150 H350 M190 25 V210\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M155 25 V210\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"4 4\"/><path d=\"M40 155 C85 158 120 178 150 205 M160 45 C173 55 182 65 190 70 C230 88 290 120 350 145\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><text x=\"190\" y=\"224\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">x</text><text x=\"200\" y=\"35\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">y</text><text x=\"155\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#ea580c\">x = −½</text><text x=\"198\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#059669\">(0, 2)</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "A",
+            "part": "A6a",
+            "page": 4
+          },
+          "keyPoints": [
+            {
+              "text": "Sketch \\(y=\\frac{2}{2x+1}\\) neatly on a number plane, showing clearly all the as",
+              "note": "Find where the denominator is zero for the vertical asymptote, then inspect the function as (x) becomes large for the horizontal asymptote. Check both axes for intercepts."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M35 150 H350 M190 25 V210\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M155 25 V210\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"4 4\"/><path d=\"M40 155 C85 158 120 178 150 205 M160 45 C173 55 182 65 190 70 C230 88 290 120 350 145\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.5\"/><text x=\"190\" y=\"224\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">x</text><text x=\"200\" y=\"35\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">y</text><text x=\"155\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">x = −½</text><text x=\"198\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">(0, 2)</text></svg>"
+          },
+          "type": "review",
+          "answer": "Sketch the two branches with asymptotes \\(x=-\\frac12\\) and \\(y=0\\), passing through \\( (0,2) \\), with no x-intercept.",
+          "solution": "Sketch the two branches with asymptotes \\(x=-\\frac12\\) and \\(y=0\\), passing through \\( (0,2) \\), with no x-intercept."
         }
       ]
     },
@@ -7503,6 +7599,153 @@
             "grade": "10"
           },
           "xp": 3
+        },
+        {
+          "id": "sbh2019-y10-a06b",
+          "difficulty": "medium",
+          "stem": "Find the EXACT \\(x\\)-coordinates of the points of intersection for \\(y=\\frac{2}{2x+1}\\) and \\(3x-y-2=0\\).",
+          "hint": "Rearrange the line to (y=3x-2). At an intersection, set the two expressions for (y) equal and solve the resulting quadratic.",
+          "steps": [
+            {
+              "explain": "Rearrange the line equation.",
+              "work": "\\(3x-y-2=0\\Rightarrow y=3x-2\\)"
+            },
+            {
+              "explain": "Equate the two y-expressions and clear the denominator, noting (2x+1\\ne0).",
+              "work": "\\(\\frac2{2x+1}=3x-2\\Rightarrow2=(3x-2)(2x+1)\\Rightarrow6x^2-x-4=0\\)"
+            },
+            {
+              "explain": "Apply the quadratic formula with (a=6,b=-1,c=-4).",
+              "work": "\\(x=\\frac{1\\pm\\sqrt{(-1)^2-4(6)(-4)}}{12}=\\boxed{\\frac{1\\pm\\sqrt{97}}{12}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "A",
+            "part": "A6b",
+            "page": 4
+          },
+          "keyPoints": [
+            {
+              "text": "Find the EXACT \\(x\\)-coordinates of the points of intersection for \\(y=\\frac{2}{",
+              "note": "Rearrange the line to (y=3x-2). At an intersection, set the two expressions for (y) equal and solve the resulting quadratic."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(\\frac{1+\\sqrt{97}}{12},\\;\\frac{1-\\sqrt{97}}{12}\\)",
+            "\\(\\frac{1\\pm\\sqrt{73}}{12}\\)",
+            "\\(\\frac{-1\\pm\\sqrt{97}}{12}\\)",
+            "\\(\\frac{1\\pm\\sqrt{97}}{6}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(\\frac{1+\\sqrt{97}}{12},\\;\\frac{1-\\sqrt{97}}{12}\\)."
+        },
+        {
+          "id": "sbh2019-y10-g03a",
+          "difficulty": "medium",
+          "stem": "The circle \\(x^2+(y-c)^2=r^2\\), where \\(c>0\\) and \\(r>0\\), lies inside the parabola \\(y=x^2\\). The circle touches the parabola at exactly two points located symmetrically on opposite sides of the y-axis. Show that \\(4c=1+4r^2\\).",
+          "hint": "At a point of contact, both equations hold, so substitute (y=x^2) into the circle. Symmetry gives two opposite x-values; tangency means the equation in (u=x^2) has a repeated root.",
+          "steps": [
+            {
+              "explain": "Substitute (y=x^2) into the circle equation and let (u=x^2).",
+              "work": "\\(x^2+(x^2-c)^2=r^2\\Rightarrow u+(u-c)^2=r^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M40 190 H340 M190 30 V205\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M90 185 Q190 45 290 185\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><path d=\"M130 205 A60 60 0 0 1 250 205\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.3\"/><path d=\"M190 145 L190 205\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"195\" y=\"139\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">(0,c)</text><text x=\"295\" y=\"77\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#2563eb\">y = x²</text><text x=\"265\" y=\"188\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">circle</text><text x=\"120\" y=\"203\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">−a</text><text x=\"260\" y=\"203\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">a</text></svg>"
+              }
+            },
+            {
+              "explain": "Expand and collect into a quadratic in (u). Two symmetric contact points ((\\pm a,a^2)) correspond to a repeated value (u=a^2); hence its discriminant is zero.",
+              "work": "\\(u^2+(1-2c)u+(c^2-r^2)=0\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M40 190 H340 M190 30 V205\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M90 185 Q190 45 290 185\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><path d=\"M130 205 A60 60 0 0 1 250 205\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"2.3\"/><path d=\"M190 145 L190 205\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"195\" y=\"139\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">(0,c)</text><text x=\"295\" y=\"77\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#2563eb\">y = x²</text><text x=\"265\" y=\"188\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#ea580c\">circle</text><text x=\"120\" y=\"203\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">−a</text><text x=\"260\" y=\"203\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">a</text></svg>"
+              }
+            },
+            {
+              "explain": "Set the discriminant to zero and simplify.",
+              "work": "\\((1-2c)^2-4(c^2-r^2)=0\\Rightarrow1-4c+4r^2=0\\Rightarrow\\boxed{4c=1+4r^2}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M40 190 H340 M190 30 V205\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M90 185 Q190 45 290 185\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><path d=\"M130 205 A60 60 0 0 1 250 205\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"2.3\"/><path d=\"M190 145 L190 205\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2\"/><text x=\"195\" y=\"139\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#059669\">(0,c)</text><text x=\"295\" y=\"77\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#2563eb\">y = x²</text><text x=\"265\" y=\"188\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#ea580c\">circle</text><text x=\"120\" y=\"203\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">−a</text><text x=\"260\" y=\"203\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">a</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "G",
+            "part": "G3a",
+            "page": 32
+          },
+          "keyPoints": [
+            {
+              "text": "The circle \\(x^2+(y-c)^2=r^2\\), where \\(c>0\\) and \\(r>0\\), lies inside the parab",
+              "note": "At a point of contact, both equations hold, so substitute (y=x^2) into the circle. Symmetry gives two opposite x-values; tangency means the equation in (u=x^2) has a repeated root."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M40 190 H340 M190 30 V205\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M90 185 Q190 45 290 185\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.4\"/><path d=\"M130 205 A60 60 0 0 1 250 205\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.3\"/><path d=\"M190 145 L190 205\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"195\" y=\"139\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">(0,c)</text><text x=\"295\" y=\"77\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">y = x²</text><text x=\"265\" y=\"188\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">circle</text><text x=\"120\" y=\"203\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">−a</text><text x=\"260\" y=\"203\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">a</text></svg>"
+          },
+          "type": "review",
+          "answer": "Let (u=x^2). The contact condition becomes \\(u^2+(1-2c)u+c^2-r^2=0\\). Symmetric tangency at exactly two points means a repeated (u)-root, so the discriminant is zero: \\((1-2c)^2-4(c^2-r^2)=0\\), which simplifies to \\(4c=1+4r^2\\).",
+          "solution": "Let (u=x^2). The contact condition becomes \\(u^2+(1-2c)u+c^2-r^2=0\\). Symmetric tangency at exactly two points means a repeated (u)-root, so the discriminant is zero: \\((1-2c)^2-4(c^2-r^2)=0\\), which simplifies to \\(4c=1+4r^2\\)."
+        },
+        {
+          "id": "sbh2019-y10-g03b",
+          "difficulty": "medium",
+          "stem": "For the circle and parabola in part (a), deduce that \\(c>\\frac12\\).",
+          "hint": "Use the repeated-root value (u=x^2) found from the quadratic in part (a). Two distinct symmetric contact points require a strictly positive value of (x^2).",
+          "steps": [
+            {
+              "explain": "For a repeated root, \\(u=-\\frac{1-2c}{2}=c-\\frac12\\). Since \\(u=x^2\\), this is the square of the contact x-coordinate.",
+              "work": "\\(x^2=u=c-\\frac12\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M40 190 H340 M190 30 V205\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M90 185 Q190 45 290 185\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><path d=\"M130 205 A60 60 0 0 1 250 205\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.3\"/><path d=\"M190 145 L190 205\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"195\" y=\"139\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">(0,c)</text><text x=\"295\" y=\"77\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#2563eb\">y = x²</text><text x=\"265\" y=\"188\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">circle</text><text x=\"120\" y=\"203\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">−a</text><text x=\"260\" y=\"203\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">a</text></svg>"
+              }
+            },
+            {
+              "explain": "The contact points are distinct and lie on opposite sides of the y-axis, so their x-coordinate is non-zero. Thus (x^2>0).",
+              "work": "\\(x^2>0\\Rightarrow c-\\frac12>0\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M40 190 H340 M190 30 V205\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M90 185 Q190 45 290 185\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><path d=\"M130 205 A60 60 0 0 1 250 205\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"2.3\"/><path d=\"M190 145 L190 205\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"195\" y=\"139\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">(0,c)</text><text x=\"295\" y=\"77\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#2563eb\">y = x²</text><text x=\"265\" y=\"188\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#ea580c\">circle</text><text x=\"120\" y=\"203\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">−a</text><text x=\"260\" y=\"203\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">a</text></svg>"
+              }
+            },
+            {
+              "explain": "Add \\(\\frac12\\) to both sides.",
+              "work": "\\(c>\\boxed{\\frac12}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M40 190 H340 M190 30 V205\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M90 185 Q190 45 290 185\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><path d=\"M130 205 A60 60 0 0 1 250 205\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"2.3\"/><path d=\"M190 145 L190 205\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2\"/><text x=\"195\" y=\"139\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#059669\">(0,c)</text><text x=\"295\" y=\"77\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#2563eb\">y = x²</text><text x=\"265\" y=\"188\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#ea580c\">circle</text><text x=\"120\" y=\"203\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">−a</text><text x=\"260\" y=\"203\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">a</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "G",
+            "part": "G3b",
+            "page": 32
+          },
+          "keyPoints": [
+            {
+              "text": "For the circle and parabola in part (a), deduce that \\(c>\\frac12\\).",
+              "note": "Use the repeated-root value (u=x^2) found from the quadratic in part (a). Two distinct symmetric contact points require a strictly positive value of (x^2)."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M40 190 H340 M190 30 V205\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M90 185 Q190 45 290 185\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.4\"/><path d=\"M130 205 A60 60 0 0 1 250 205\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.3\"/><path d=\"M190 145 L190 205\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"195\" y=\"139\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">(0,c)</text><text x=\"295\" y=\"77\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">y = x²</text><text x=\"265\" y=\"188\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">circle</text><text x=\"120\" y=\"203\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">−a</text><text x=\"260\" y=\"203\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">a</text></svg>"
+          },
+          "type": "review",
+          "answer": "The repeated root is \\(u=x^2=c-\\frac12\\). The two contact points are distinct and symmetric, so (x\ne0) and (x^2>0). Therefore \\(c-\\frac12>0\\), hence \\(c>\\frac12\\).",
+          "solution": "The repeated root is \\(u=x^2=c-\\frac12\\). The two contact points are distinct and symmetric, so (x\ne0) and (x^2>0). Therefore \\(c-\\frac12>0\\), hence \\(c>\\frac12\\)."
         }
       ]
     },

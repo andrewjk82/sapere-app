@@ -2928,6 +2928,153 @@
               "work": "\\(\\boxed{-14x+21}\\)"
             }
           ]
+        },
+        {
+          "id": "sbh2019-y10-a03",
+          "difficulty": "medium",
+          "stem": "Simplify the expression \\((5a^2b)^2\\times4a^4b^3\\).",
+          "hint": "Apply the power to every factor inside the brackets, then multiply coefficients and add the exponents of like bases.",
+          "steps": [
+            {
+              "explain": "Square each factor inside the brackets: square 5, a², and b.",
+              "work": "\\((5a^2b)^2=5^2a^{2\\times2}b^2=25a^4b^2\\)"
+            },
+            {
+              "explain": "Multiply the coefficients and add powers of matching variables.",
+              "work": "\\(25a^4b^2\\times4a^4b^3=(25\\times4)a^{4+4}b^{2+3}\\)"
+            },
+            {
+              "explain": "Simplify the coefficient and exponents.",
+              "work": "\\(100a^8b^5\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "A",
+            "part": "A3",
+            "page": 2
+          },
+          "keyPoints": [
+            {
+              "text": "Simplify the expression \\((5a^2b)^2\\times4a^4b^3\\).",
+              "note": "Apply the power to every factor inside the brackets, then multiply coefficients and add the exponents of like bases."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(100a^8b^5\\)",
+            "\\(20a^6b^5\\)",
+            "\\(100a^6b^5\\)",
+            "\\(20a^8b^6\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(100a^8b^5\\)."
+        },
+        {
+          "id": "sbh2019-y10-d01",
+          "difficulty": "medium",
+          "stem": "What is the algebraic expression that represents the shaded area in simplest form?",
+          "hint": "Treat the L-shape as a large rectangle minus the rectangular notch. The overall dimensions are (x+4) by (x+3), and the notch is (x) by (x).",
+          "steps": [
+            {
+              "explain": "Read the diagram: total width is (4+x), total height is (3+x), and the missing square has side (x).",
+              "work": "\\(A=(x+4)(x+3)-x^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M60 190 L60 105 L230 105 L230 45 L315 45 L315 190 Z\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2.3\"/><text x=\"145\" y=\"95\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#2563eb\">4</text><text x=\"240\" y=\"39\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">x</text><text x=\"46\" y=\"151\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">3</text><text x=\"322\" y=\"123\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">x+3</text><text x=\"190\" y=\"211\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">overall width = 4 + x</text></svg>"
+              }
+            },
+            {
+              "explain": "Expand the rectangle and subtract the notch area.",
+              "work": "\\(A=x^2+7x+12-x^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M60 190 L60 105 L230 105 L230 45 L315 45 L315 190 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2.3\"/><text x=\"145\" y=\"95\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#2563eb\">4</text><text x=\"240\" y=\"39\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#ea580c\">x</text><text x=\"46\" y=\"151\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">3</text><text x=\"322\" y=\"123\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#ea580c\">x+3</text><text x=\"190\" y=\"211\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">overall width = 4 + x</text></svg>"
+              }
+            },
+            {
+              "explain": "Collect like terms.",
+              "work": "\\(A=\\boxed{7x+12}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M60 190 L60 105 L230 105 L230 45 L315 45 L315 190 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2.3\"/><text x=\"145\" y=\"95\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#2563eb\">4</text><text x=\"240\" y=\"39\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#ea580c\">x</text><text x=\"46\" y=\"151\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#059669\">3</text><text x=\"322\" y=\"123\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#ea580c\">x+3</text><text x=\"190\" y=\"211\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">overall width = 4 + x</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "D",
+            "part": "D1",
+            "page": 15
+          },
+          "keyPoints": [
+            {
+              "text": "What is the algebraic expression that represents the shaded area in simplest for",
+              "note": "Treat the L-shape as a large rectangle minus the rectangular notch. The overall dimensions are (x+4) by (x+3), and the notch is (x) by (x)."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M60 190 L60 105 L230 105 L230 45 L315 45 L315 190 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2.3\"/><text x=\"145\" y=\"95\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">4</text><text x=\"240\" y=\"39\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">x</text><text x=\"46\" y=\"151\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">3</text><text x=\"322\" y=\"123\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">x+3</text><text x=\"190\" y=\"211\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">overall width = 4 + x</text></svg>"
+          },
+          "type": "mc",
+          "options": [
+            "\\(7x+12\\)",
+            "\\(6x+12\\)",
+            "\\(7x+6\\)",
+            "\\(x^2+7x+12\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(7x+12\\)."
+        },
+        {
+          "id": "sbh2019-y10-d03",
+          "difficulty": "medium",
+          "stem": "Expand and simplify \\(9x^2+4xy\\left(\\frac y4+\\frac yx\\right)-(3x+2y)^2\\).",
+          "hint": "Distribute (4xy) across both fraction terms, expand the squared bracket, then combine like terms. Assume (x\ne0) because (y/x) appears.",
+          "steps": [
+            {
+              "explain": "Distribute (4xy) into the parentheses.",
+              "work": "\\(4xy\\left(\\frac y4+\\frac yx\\right)=xy^2+4y^2\\)"
+            },
+            {
+              "explain": "Expand the square and substitute it into the expression.",
+              "work": "\\((3x+2y)^2=9x^2+12xy+4y^2\\)"
+            },
+            {
+              "explain": "Cancel matching (9x^2) and (4y^2) terms; factor the remainder.",
+              "work": "\\(9x^2+xy^2+4y^2-(9x^2+12xy+4y^2)=xy^2-12xy=\\boxed{xy(y-12)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "D",
+            "part": "D3",
+            "page": 15
+          },
+          "keyPoints": [
+            {
+              "text": "Expand and simplify \\(9x^2+4xy\\left(\\frac y4+\\frac yx\\right)-(3x+2y)^2\\).",
+              "note": "Distribute (4xy) across both fraction terms, expand the squared bracket, then combine like terms. Assume (x\ne0) because (y/x) appears."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(xy(y-12)\\)",
+            "\\(xy(y+12)\\)",
+            "\\(9x^2+xy^2\\)",
+            "\\(x^2y-12xy\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(xy(y-12)\\)."
         }
       ]
     },
@@ -8239,6 +8386,51 @@
             }
           ],
           "timeLimit": 60
+        },
+        {
+          "id": "sbh2019-y10-a05b",
+          "difficulty": "medium",
+          "stem": "Solve for the value of \\(x\\): \\(\\frac{3x-4}{2}=5+\\frac{x+1}{3}\\).",
+          "hint": "Multiply every term by the lowest common denominator, 6, so the fractions disappear. Expand the brackets carefully.",
+          "steps": [
+            {
+              "explain": "Multiply the whole equation by 6.",
+              "work": "\\(3(3x-4)=30+2(x+1)\\)"
+            },
+            {
+              "explain": "Expand both brackets, then collect x-terms on one side and constants on the other.",
+              "work": "\\(9x-12=30+2x+2\\Rightarrow7x=44\\)"
+            },
+            {
+              "explain": "Divide both sides by 7 and substitute-check if desired.",
+              "work": "\\(x=\\boxed{\\frac{44}{7}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "A",
+            "part": "A5b",
+            "page": 3
+          },
+          "keyPoints": [
+            {
+              "text": "Solve for the value of \\(x\\): \\(\\frac{3x-4}{2}=5+\\frac{x+1}{3}\\).",
+              "note": "Multiply every term by the lowest common denominator, 6, so the fractions disappear. Expand the brackets carefully."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(\\frac{44}{7}\\)",
+            "\\(\\frac{14}{7}\\)",
+            "\\(\\frac{44}{5}\\)",
+            "\\(\\frac{34}{7}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(\\frac{44}{7}\\)."
         }
       ]
     },
@@ -13044,6 +13236,51 @@
           ],
           "answer": 1,
           "solution": "Correct answer: \\(5z^2(3z^3-2)(3z^3+2)\\)"
+        },
+        {
+          "id": "sbh2019-y10-eb01",
+          "difficulty": "medium",
+          "stem": "Factorise \\(9a^2-6ab+b^2-c^2\\) completely.",
+          "hint": "The first three terms form a perfect square. Then factor the difference of two squares.",
+          "steps": [
+            {
+              "explain": "Recognise the perfect square trinomial.",
+              "work": "\\(9a^2-6ab+b^2=(3a-b)^2\\)"
+            },
+            {
+              "explain": "Rewrite the whole expression as a difference of squares.",
+              "work": "\\((3a-b)^2-c^2\\)"
+            },
+            {
+              "explain": "Apply (u^2-c^2=(u-c)(u+c)), with (u=3a-b).",
+              "work": "\\((3a-b-c)(3a-b+c)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "E",
+            "part": "EB1",
+            "page": 24
+          },
+          "keyPoints": [
+            {
+              "text": "Factorise \\(9a^2-6ab+b^2-c^2\\) completely.",
+              "note": "The first three terms form a perfect square. Then factor the difference of two squares."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\((3a-b-c)(3a-b+c)\\)",
+            "\\((3a-b-c)^2\\)",
+            "\\((3a+b-c)(3a+b+c)\\)",
+            "\\((9a-b-c)(a-b+c)\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\((3a-b-c)(3a-b+c)\\)."
         }
       ]
     },
@@ -16210,6 +16447,51 @@
             "school": "Abbotsleigh",
             "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
           }
+        },
+        {
+          "id": "sbh2019-y10-d06",
+          "difficulty": "medium",
+          "stem": "Express \\(\\frac6{3y-5}-\\frac4{3y^2-8y+5}\\) as a fraction in its simplest form.",
+          "hint": "Factor the quadratic denominator. The common denominator will contain both linear factors; then combine numerators and cancel only common factors.",
+          "steps": [
+            {
+              "explain": "Factor the quadratic denominator.",
+              "work": "\\(3y^2-8y+5=(3y-5)(y-1)\\)"
+            },
+            {
+              "explain": "Write the first fraction over the common denominator and combine.",
+              "work": "\\(\\frac6{3y-5}-\\frac4{(3y-5)(y-1)}=\\frac{6(y-1)-4}{(3y-5)(y-1)}\\)"
+            },
+            {
+              "explain": "Simplify the numerator and cancel the common factor. Note excluded values from the original denominator.",
+              "work": "\\(\\frac{6y-10}{(3y-5)(y-1)}=\\frac{2(3y-5)}{(3y-5)(y-1)}=\\boxed{\\frac2{y-1}},\\quad y\\ne1,\\frac53\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "D",
+            "part": "D6",
+            "page": 18
+          },
+          "keyPoints": [
+            {
+              "text": "Express \\(\\frac6{3y-5}-\\frac4{3y^2-8y+5}\\) as a fraction in its simplest form.",
+              "note": "Factor the quadratic denominator. The common denominator will contain both linear factors; then combine numerators and cancel only common factors."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(\\frac2{y-1}\\)",
+            "\\(\\frac2{y+1}\\)",
+            "\\(\\frac6{3y-5}\\)",
+            "\\(\\frac{2}{3y-5}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(\\frac2{y-1}\\)."
         }
       ]
     },
@@ -20254,6 +20536,51 @@
               "note": "The period depends on the square root of length divided by gravity; keep the units consistent, and square both sides when isolating either quantity."
             }
           ]
+        },
+        {
+          "id": "sbh2019-y10-a01",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(\\frac{2.1^2\\times4.5^2}{2.1^2+4.5^2}\\), correct to 1 decimal place.",
+          "hint": "Square both numbers first. Evaluate the numerator and denominator separately, divide, then round the result to one decimal place.",
+          "steps": [
+            {
+              "explain": "Evaluate the powers before multiplying or adding.",
+              "work": "\\(2.1^2=4.41,\\quad 4.5^2=20.25\\)"
+            },
+            {
+              "explain": "Substitute the squared values into the fraction and calculate the top and bottom.",
+              "work": "\\(\\frac{4.41\\times20.25}{4.41+20.25}=\\frac{89.3025}{24.66}\\approx3.6224\\)"
+            },
+            {
+              "explain": "Round to one decimal place by checking the hundredths digit, which is 2.",
+              "work": "\\(3.6224\\approx\\boxed{3.6}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "A",
+            "part": "A1",
+            "page": 2
+          },
+          "keyPoints": [
+            {
+              "text": "Evaluate \\(\\frac{2.1^2\\times4.5^2}{2.1^2+4.5^2}\\), correct to 1 decimal place.",
+              "note": "Square both numbers first. Evaluate the numerator and denominator separately, divide, then round the result to one decimal place."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(3.6\\)",
+            "\\(3.5\\)",
+            "\\(3.7\\)",
+            "\\(4.1\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(3.6\\)."
         }
       ]
     }

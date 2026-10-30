@@ -1215,6 +1215,96 @@
               "note": "The two random events are independent."
             }
           ]
+        },
+        {
+          "id": "sbh2019-y10-a02",
+          "difficulty": "medium",
+          "stem": "Sydney FC is playing Brisbane Roar in a match. If the probability that Sydney will win is \\(\\frac23\\) and the probability that Brisbane will win is \\(\\frac14\\), find the chance that the match will be a draw.",
+          "hint": "A draw is the remaining outcome after Sydney wins or Brisbane wins. First add the two win probabilities using a common denominator.",
+          "steps": [
+            {
+              "explain": "The three possible outcomes are Sydney win, Brisbane win, and draw, so their probabilities add to 1.",
+              "work": "\\(P(\\text{draw})=1-P(\\text{Sydney win})-P(\\text{Brisbane win})\\)"
+            },
+            {
+              "explain": "Write the two fractions with denominator 12 before adding.",
+              "work": "\\(\\frac23=\\frac8{12},\\quad\\frac14=\\frac3{12};\\quad P(\\text{draw})=1-\\frac8{12}-\\frac3{12}\\)"
+            },
+            {
+              "explain": "Subtract the total win probability from 1.",
+              "work": "\\(P(\\text{draw})=\\frac{12}{12}-\\frac{11}{12}=\\boxed{\\frac1{12}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "A",
+            "part": "A2",
+            "page": 2
+          },
+          "keyPoints": [
+            {
+              "text": "Sydney FC is playing Brisbane Roar in a match. If the probability that Sydney wi",
+              "note": "A draw is the remaining outcome after Sydney wins or Brisbane wins. First add the two win probabilities using a common denominator."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(\\frac{1}{12}\\)",
+            "\\(\\frac{5}{12}\\)",
+            "\\(\\frac{7}{12}\\)",
+            "\\(\\frac{11}{12}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(\\frac{1}{12}\\)."
+        },
+        {
+          "id": "sbh2019-y10-c04a",
+          "difficulty": "medium",
+          "stem": "The cabin door to an aeroplane is positioned such that 120 passenger seats are to the right side and 40 passenger seats are to the left side of this door. The next flight is full, and a hostess directs passengers to their seats from the door. What is the probability that the hostess directs the first passenger on board to the right side of the door?",
+          "hint": "Probability is favourable outcomes divided by total outcomes. Add the seats on both sides to get the total number of passengers.",
+          "steps": [
+            {
+              "explain": "Count all seats on the plane.",
+              "work": "\\(120+40=160\\)"
+            },
+            {
+              "explain": "The favourable outcomes are the 120 right-side seats. Form the ratio.",
+              "work": "\\(P(\\text{right})=\\frac{120}{160}\\)"
+            },
+            {
+              "explain": "Simplify by dividing top and bottom by 40.",
+              "work": "\\(P(\\text{right})=\\boxed{\\frac34}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "C",
+            "part": "C4a",
+            "page": 11
+          },
+          "keyPoints": [
+            {
+              "text": "The cabin door to an aeroplane is positioned such that 120 passenger seats are t",
+              "note": "Probability is favourable outcomes divided by total outcomes. Add the seats on both sides to get the total number of passengers."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(\\frac34\\)",
+            "\\(\\frac13\\)",
+            "\\(\\frac14\\)",
+            "\\(\\frac23\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(\\frac34\\)."
         }
       ]
     },
@@ -4883,6 +4973,51 @@
             "school": "Abbotsleigh",
             "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
           }
+        },
+        {
+          "id": "sbh2019-y10-c04b",
+          "difficulty": "medium",
+          "stem": "20% of the passengers sitting on the left side of the door are travelling first class. There are no first-class seats on the right side of the door. Calculate the probability that the first passenger who boards is travelling first class.",
+          "hint": "First-class seats can only be among the 40 left seats. Find 20% of 40, then divide by all 160 passengers.",
+          "steps": [
+            {
+              "explain": "Find the number of first-class passengers on the left.",
+              "work": "\\(0.20(40)=8\\)"
+            },
+            {
+              "explain": "There are 160 passengers in total from part (a). Set up the probability.",
+              "work": "\\(P(\\text{first class})=\\frac8{160}\\)"
+            },
+            {
+              "explain": "Simplify the fraction.",
+              "work": "\\(P=\\boxed{\\frac1{20}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "C",
+            "part": "C4b",
+            "page": 11
+          },
+          "keyPoints": [
+            {
+              "text": "20% of the passengers sitting on the left side of the door are travelling first",
+              "note": "First-class seats can only be among the 40 left seats. Find 20% of 40, then divide by all 160 passengers."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(\\frac1{20}\\)",
+            "\\(\\frac15\\)",
+            "\\(\\frac18\\)",
+            "\\(\\frac1{10}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(\\frac1{20}\\)."
         }
       ]
     },

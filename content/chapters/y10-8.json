@@ -1612,6 +1612,171 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 260\" role=\"img\"><line x1=\"90\" y1=\"55\" x2=\"90\" y2=\"205\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"330\" y1=\"55\" x2=\"330\" y2=\"205\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"90\" y1=\"55\" x2=\"330\" y2=\"205\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"90\" y1=\"205\" x2=\"330\" y2=\"55\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M 84 100 L 90 92 L 96 100\" fill=\"none\" stroke=\"#047857\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 324 100 L 330 92 L 336 100\" fill=\"none\" stroke=\"#047857\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 191.3 118.3 A 22 22 0 0 0 191.3 141.7\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"2.2\"/><path d=\"M 228.7 118.3 A 22 22 0 0 1 228.7 141.7\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"2.2\"/><text x=\"75\" y=\"52\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\">A</text><text x=\"75\" y=\"215\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\">B</text><text x=\"210\" y=\"112\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\">C</text><text x=\"345\" y=\"52\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\">D</text><text x=\"345\" y=\"215\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\">E</text><text x=\"74\" y=\"135\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" text-anchor=\"end\">5.5 m</text><text x=\"346\" y=\"135\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" text-anchor=\"start\">x m</text><text x=\"140\" y=\"74\" fill=\"#ea580c\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">6 m</text><text x=\"280\" y=\"192\" fill=\"#ea580c\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">18 m</text><text x=\"278\" y=\"74\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">15 m</text></svg>"
           }
+        },
+        {
+          "id": "sbh2019-y10-c03",
+          "difficulty": "medium",
+          "stem": "Find the values of the pronumerals, \\(x\\) and \\(y\\), giving reasons for your answers.",
+          "hint": "Use the straight angle along the base first: (7x°) and (8x°) are adjacent on a straight line. Then use the angle sum in the right-hand triangle.",
+          "steps": [
+            {
+              "explain": "The adjacent angles (7x°) and (8x°) form a straight angle.",
+              "work": "\\(7x+8x=180\\Rightarrow15x=180\\Rightarrow x=12\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M55 190 L178 35 L330 190 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2.3\"/><path d=\"M178 35 L212 190\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><path d=\"M70 190 A15 15 0 0 0 64 178\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M315 190 A15 15 0 0 1 320 179\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M197 190 A15 15 0 0 1 208 175\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M208 175 A15 15 0 0 1 227 190\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"78\" y=\"171\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#2563eb\">75°</text><text x=\"300\" y=\"171\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">54°</text><text x=\"193\" y=\"173\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">7x°</text><text x=\"231\" y=\"173\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">8x°</text><text x=\"225\" y=\"70\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">y°</text><text x=\"183\" y=\"213\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">straight line at base</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute (x=12) into the angle (8x°) at the base of the right triangle.",
+              "work": "\\(8x=8(12)=96^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M55 190 L178 35 L330 190 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2.3\"/><path d=\"M178 35 L212 190\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"2.2\"/><path d=\"M70 190 A15 15 0 0 0 64 178\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M315 190 A15 15 0 0 1 320 179\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M197 190 A15 15 0 0 1 208 175\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"1.5\"/><path d=\"M208 175 A15 15 0 0 1 227 190\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"1.5\"/><text x=\"78\" y=\"171\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#2563eb\">75°</text><text x=\"300\" y=\"171\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">54°</text><text x=\"193\" y=\"173\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#ea580c\">7x°</text><text x=\"231\" y=\"173\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#ea580c\">8x°</text><text x=\"225\" y=\"70\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">y°</text><text x=\"183\" y=\"213\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">straight line at base</text></svg>"
+              }
+            },
+            {
+              "explain": "Angles in that triangle sum to (180°); subtract (96°) and (54°).",
+              "work": "\\(y=180-96-54=\\boxed{30^\\circ}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M55 190 L178 35 L330 190 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2.3\"/><path d=\"M178 35 L212 190\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"2.2\"/><path d=\"M70 190 A15 15 0 0 0 64 178\" fill=\"none\" stroke=\"#059669\" stroke-width=\"1.5\"/><path d=\"M315 190 A15 15 0 0 1 320 179\" fill=\"none\" stroke=\"#059669\" stroke-width=\"1.5\"/><path d=\"M197 190 A15 15 0 0 1 208 175\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"1.5\"/><path d=\"M208 175 A15 15 0 0 1 227 190\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"1.5\"/><text x=\"78\" y=\"171\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#2563eb\">75°</text><text x=\"300\" y=\"171\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#059669\">54°</text><text x=\"193\" y=\"173\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#ea580c\">7x°</text><text x=\"231\" y=\"173\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#ea580c\">8x°</text><text x=\"225\" y=\"70\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#059669\">y°</text><text x=\"183\" y=\"213\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">straight line at base</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "C",
+            "part": "C3",
+            "page": 11
+          },
+          "keyPoints": [
+            {
+              "text": "Find the values of the pronumerals, \\(x\\) and \\(y\\), giving reasons for your ans",
+              "note": "Use the straight angle along the base first: (7x°) and (8x°) are adjacent on a straight line. Then use the angle sum in the right-hand triangle."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M55 190 L178 35 L330 190 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2.3\"/><path d=\"M178 35 L212 190\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><path d=\"M70 190 A15 15 0 0 0 64 178\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M315 190 A15 15 0 0 1 320 179\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M197 190 A15 15 0 0 1 208 175\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M208 175 A15 15 0 0 1 227 190\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"78\" y=\"171\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">75°</text><text x=\"300\" y=\"171\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">54°</text><text x=\"193\" y=\"173\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">7x°</text><text x=\"231\" y=\"173\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">8x°</text><text x=\"225\" y=\"70\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">y°</text><text x=\"183\" y=\"213\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">straight line at base</text></svg>"
+          },
+          "type": "mc",
+          "options": [
+            "\\(x=12,\\;y=30\\)",
+            "\\(x=12,\\;y=21\\)",
+            "\\(x=15,\\;y=30\\)",
+            "\\(x=10,\\;y=24\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(x=12,\\;y=30\\)."
+        },
+        {
+          "id": "sbh2019-y10-d05a",
+          "difficulty": "medium",
+          "stem": "In the diagram, \\(ABCD\\) is a rhombus where \\(\\angle DAC=54^\\circ\\) and \\(DC\\) is produced to \\(E\\). What is the value of \\(\\angle DAB\\)?",
+          "hint": "A diagonal of a rhombus bisects the angles at the vertices it joins. The given (54°) is half of angle (DAB).",
+          "steps": [
+            {
+              "explain": "In a rhombus, diagonal (AC) bisects angle (DAB), so \\(\\angle DAC=\\angle CAB\\).",
+              "work": "\\(\\angle DAC=54^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M185 35 L300 115 L185 195 L70 115 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2.3\"/><path d=\"M185 35 L185 195\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><path d=\"M70 115 L185 195 L250 240\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M185 53 A18 18 0 0 1 170 45\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M203 182 A22 22 0 0 1 203 208\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"171\" y=\"64\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">54°</text><text x=\"185\" y=\"26\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">A</text><text x=\"312\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">B</text><text x=\"185\" y=\"210\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">C</text><text x=\"55\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">D</text><text x=\"255\" y=\"236\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">E</text><text x=\"226\" y=\"198\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">72°</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the two equal halves to obtain the full angle at (A).",
+              "work": "\\(\\angle DAB=54^\\circ+54^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M185 35 L300 115 L185 195 L70 115 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2.3\"/><path d=\"M185 35 L185 195\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><path d=\"M70 115 L185 195 L250 240\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"1.8\"/><path d=\"M185 53 A18 18 0 0 1 170 45\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M203 182 A22 22 0 0 1 203 208\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"1.5\"/><text x=\"171\" y=\"64\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">54°</text><text x=\"185\" y=\"26\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">A</text><text x=\"312\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">B</text><text x=\"185\" y=\"210\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">C</text><text x=\"55\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">D</text><text x=\"255\" y=\"236\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#ea580c\">E</text><text x=\"226\" y=\"198\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#ea580c\">72°</text></svg>"
+              }
+            },
+            {
+              "explain": "State the angle.",
+              "work": "\\(\\angle DAB=\\boxed{108^\\circ}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M185 35 L300 115 L185 195 L70 115 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2.3\"/><path d=\"M185 35 L185 195\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><path d=\"M70 115 L185 195 L250 240\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"1.8\"/><path d=\"M185 53 A18 18 0 0 1 170 45\" fill=\"none\" stroke=\"#059669\" stroke-width=\"1.5\"/><path d=\"M203 182 A22 22 0 0 1 203 208\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"1.5\"/><text x=\"171\" y=\"64\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#059669\">54°</text><text x=\"185\" y=\"26\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">A</text><text x=\"312\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">B</text><text x=\"185\" y=\"210\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">C</text><text x=\"55\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">D</text><text x=\"255\" y=\"236\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#ea580c\">E</text><text x=\"226\" y=\"198\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#ea580c\">72°</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "D",
+            "part": "D5a",
+            "page": 17
+          },
+          "keyPoints": [
+            {
+              "text": "In the diagram, \\(ABCD\\) is a rhombus where \\(\\angle DAC=54^\\circ\\) and \\(DC\\) i",
+              "note": "A diagonal of a rhombus bisects the angles at the vertices it joins. The given (54°) is half of angle (DAB)."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M185 35 L300 115 L185 195 L70 115 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2.3\"/><path d=\"M185 35 L185 195\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M70 115 L185 195 L250 240\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M185 53 A18 18 0 0 1 170 45\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M203 182 A22 22 0 0 1 203 208\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"171\" y=\"64\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">54°</text><text x=\"185\" y=\"26\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">A</text><text x=\"312\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">B</text><text x=\"185\" y=\"210\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">C</text><text x=\"55\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">D</text><text x=\"255\" y=\"236\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">E</text><text x=\"226\" y=\"198\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">72°</text></svg>"
+          },
+          "type": "mc",
+          "options": [
+            "\\(108^\\circ\\)",
+            "\\(54^\\circ\\)",
+            "\\(126^\\circ\\)",
+            "\\(72^\\circ\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(108^\\circ\\)."
+        },
+        {
+          "id": "sbh2019-y10-d05b",
+          "difficulty": "medium",
+          "stem": "In the diagram, \\(ABCD\\) is a rhombus where \\(\\angle DAC=54^\\circ\\) and \\(DC\\) is produced to \\(E\\). What is the value of \\(\\angle BCE\\)? Give reasons.",
+          "hint": "Use the rhombus diagonal to find the full angle at A, then use opposite angles in a rhombus and the straight line at C to find the exterior angle.",
+          "steps": [
+            {
+              "explain": "From part (a), \\(\\angle DAB=108°\\). Opposite interior angles in a rhombus are equal, so angle (BCD) is also (108°).",
+              "work": "\\(\\angle BCD=108^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M185 35 L300 115 L185 195 L70 115 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2.3\"/><path d=\"M185 35 L185 195\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><path d=\"M70 115 L185 195 L250 240\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M185 53 A18 18 0 0 1 170 45\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M203 182 A22 22 0 0 1 203 208\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"171\" y=\"64\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">54°</text><text x=\"185\" y=\"26\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">A</text><text x=\"312\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">B</text><text x=\"185\" y=\"210\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">C</text><text x=\"55\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">D</text><text x=\"255\" y=\"236\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">E</text><text x=\"226\" y=\"198\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">72°</text></svg>"
+              }
+            },
+            {
+              "explain": "(CD) is extended through (C) to (E), so (BCD) and (BCE) form a linear pair.",
+              "work": "\\(\\angle BCE+\\angle BCD=180^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M185 35 L300 115 L185 195 L70 115 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2.3\"/><path d=\"M185 35 L185 195\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><path d=\"M70 115 L185 195 L250 240\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"1.8\"/><path d=\"M185 53 A18 18 0 0 1 170 45\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M203 182 A22 22 0 0 1 203 208\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"1.5\"/><text x=\"171\" y=\"64\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">54°</text><text x=\"185\" y=\"26\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">A</text><text x=\"312\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">B</text><text x=\"185\" y=\"210\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">C</text><text x=\"55\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">D</text><text x=\"255\" y=\"236\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#ea580c\">E</text><text x=\"226\" y=\"198\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#ea580c\">72°</text></svg>"
+              }
+            },
+            {
+              "explain": "Subtract the interior angle to obtain the exterior angle and state both reasons.",
+              "work": "\\(\\angle BCE=180^\\circ-108^\\circ=\\boxed{72^\\circ}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M185 35 L300 115 L185 195 L70 115 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2.3\"/><path d=\"M185 35 L185 195\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><path d=\"M70 115 L185 195 L250 240\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"1.8\"/><path d=\"M185 53 A18 18 0 0 1 170 45\" fill=\"none\" stroke=\"#059669\" stroke-width=\"1.5\"/><path d=\"M203 182 A22 22 0 0 1 203 208\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"1.5\"/><text x=\"171\" y=\"64\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#059669\">54°</text><text x=\"185\" y=\"26\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">A</text><text x=\"312\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">B</text><text x=\"185\" y=\"210\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">C</text><text x=\"55\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">D</text><text x=\"255\" y=\"236\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#ea580c\">E</text><text x=\"226\" y=\"198\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#ea580c\">72°</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "D",
+            "part": "D5b",
+            "page": 17
+          },
+          "keyPoints": [
+            {
+              "text": "In the diagram, \\(ABCD\\) is a rhombus where \\(\\angle DAC=54^\\circ\\) and \\(DC\\) i",
+              "note": "Use the rhombus diagonal to find the full angle at A, then use opposite angles in a rhombus and the straight line at C to find the exterior angle."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M185 35 L300 115 L185 195 L70 115 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2.3\"/><path d=\"M185 35 L185 195\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M70 115 L185 195 L250 240\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M185 53 A18 18 0 0 1 170 45\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M203 182 A22 22 0 0 1 203 208\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"171\" y=\"64\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">54°</text><text x=\"185\" y=\"26\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">A</text><text x=\"312\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">B</text><text x=\"185\" y=\"210\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">C</text><text x=\"55\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">D</text><text x=\"255\" y=\"236\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">E</text><text x=\"226\" y=\"198\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">72°</text></svg>"
+          },
+          "type": "review",
+          "answer": "Opposite angles of a rhombus are equal, so \\(\\angle BCD=\\angle DAB=108^\\circ\\). Since (CD) is extended, \\(\\angle BCE=180^\\circ-108^\\circ=72^\\circ\\) (linear pair).",
+          "solution": "Opposite angles of a rhombus are equal, so \\(\\angle BCD=\\angle DAB=108^\\circ\\). Since (CD) is extended, \\(\\angle BCE=180^\\circ-108^\\circ=72^\\circ\\) (linear pair)."
         }
       ]
     },
@@ -1742,6 +1907,165 @@
             "examType": "Half-Yearly",
             "grade": "10"
           }
+        },
+        {
+          "id": "sbh2019-y10-f01a",
+          "difficulty": "medium",
+          "stem": "\\(LMNO\\) is a quadrilateral. \\(\\angle LON=\\angle MNO\\) and \\(LO=MN\\). Prove that triangle \\(OLN\\) is congruent to triangle \\(NMO\\).",
+          "hint": "Compare the two triangles named in the question. Identify the equal included angles, the equal sides, and the shared side before stating a congruence rule.",
+          "steps": [
+            {
+              "explain": "In triangles (OLN) and (NMO), the given angles at O and N are equal. The corresponding side (LO) equals (MN).",
+              "work": "\\(\\angle LON=\\angle MNO;\\quad LO=MN\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M75 55 L300 70 L285 180 L95 165 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2.3\"/><path d=\"M95 165 L285 180\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><text x=\"68\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">L</text><text x=\"307\" y=\"71\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">M</text><text x=\"291\" y=\"195\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">N</text><text x=\"78\" y=\"180\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">O</text><text x=\"115\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">LO = MN</text><text x=\"225\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">shared ON</text></svg>"
+              }
+            },
+            {
+              "explain": "The triangles share side (ON); a shared side has equal length to itself. These are the two sides around the equal included angles.",
+              "work": "\\(ON=NO\\quad(\\text{common side})\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M75 55 L300 70 L285 180 L95 165 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2.3\"/><path d=\"M95 165 L285 180\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><text x=\"68\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">L</text><text x=\"307\" y=\"71\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">M</text><text x=\"291\" y=\"195\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">N</text><text x=\"78\" y=\"180\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">O</text><text x=\"115\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">LO = MN</text><text x=\"225\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#ea580c\">shared ON</text></svg>"
+              }
+            },
+            {
+              "explain": "Apply side-angle-side congruence. The matching order is (O\\leftrightarrow N,;L\\leftrightarrow M,;N\\leftrightarrow O).",
+              "work": "\\(\\triangle OLN\\cong\\triangle NMO\\quad(\\text{SAS})\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M75 55 L300 70 L285 180 L95 165 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2.3\"/><path d=\"M95 165 L285 180\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><text x=\"68\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">L</text><text x=\"307\" y=\"71\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">M</text><text x=\"291\" y=\"195\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">N</text><text x=\"78\" y=\"180\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">O</text><text x=\"115\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#059669\">LO = MN</text><text x=\"225\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#ea580c\">shared ON</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "F",
+            "part": "F1a",
+            "page": 27
+          },
+          "keyPoints": [
+            {
+              "text": "\\(LMNO\\) is a quadrilateral. \\(\\angle LON=\\angle MNO\\) and \\(LO=MN\\). Prove that",
+              "note": "Compare the two triangles named in the question. Identify the equal included angles, the equal sides, and the shared side before stating a congruence rule."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M75 55 L300 70 L285 180 L95 165 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2.3\"/><path d=\"M95 165 L285 180\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.5\"/><text x=\"68\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">L</text><text x=\"307\" y=\"71\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">M</text><text x=\"291\" y=\"195\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">N</text><text x=\"78\" y=\"180\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">O</text><text x=\"115\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">LO = MN</text><text x=\"225\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">shared ON</text></svg>"
+          },
+          "type": "review",
+          "answer": "\\(\\angle LON=\\angle MNO\\) (given), (LO=MN) (given), and (ON=NO) (common). Hence \\(\\triangle OLN\\cong\\triangle NMO\\) by SAS.",
+          "solution": "\\(\\angle LON=\\angle MNO\\) (given), (LO=MN) (given), and (ON=NO) (common). Hence \\(\\triangle OLN\\cong\\triangle NMO\\) by SAS."
+        },
+        {
+          "id": "sbh2019-y10-f01b",
+          "difficulty": "medium",
+          "stem": "\\(LMNO\\) is a quadrilateral. \\(\\angle LON=\\angle MNO\\) and \\(LO=MN\\). Why are \\(\\angle LNO\\) and \\(\\angle MON\\) equal?",
+          "hint": "Use the congruence result from part (a). Match vertices in (\\triangle OLNcong\\triangle NMO) in the order shown.",
+          "steps": [
+            {
+              "explain": "From part (a), (\\triangle OLNcong\\triangle NMO) by SAS. The correspondence is (O\\leftrightarrow N,L\\leftrightarrow M,N\\leftrightarrow O).",
+              "work": "\\(\\triangle OLN\\cong\\triangle NMO\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M75 55 L300 70 L285 180 L95 165 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2.3\"/><path d=\"M95 165 L285 180\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><text x=\"68\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">L</text><text x=\"307\" y=\"71\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">M</text><text x=\"291\" y=\"195\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">N</text><text x=\"78\" y=\"180\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">O</text><text x=\"115\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">LO = MN</text><text x=\"225\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">shared ON</text></svg>"
+              }
+            },
+            {
+              "explain": "The angle at N in the first triangle corresponds to the angle at O in the second triangle.",
+              "work": "\\(\\angle LNO\\leftrightarrow\\angle MON\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M75 55 L300 70 L285 180 L95 165 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2.3\"/><path d=\"M95 165 L285 180\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><text x=\"68\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">L</text><text x=\"307\" y=\"71\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">M</text><text x=\"291\" y=\"195\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">N</text><text x=\"78\" y=\"180\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">O</text><text x=\"115\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">LO = MN</text><text x=\"225\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#ea580c\">shared ON</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore corresponding parts of congruent triangles are equal.",
+              "work": "\\(\\angle LNO=\\angle MON\\quad(\\text{CPCTC})\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M75 55 L300 70 L285 180 L95 165 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2.3\"/><path d=\"M95 165 L285 180\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><text x=\"68\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">L</text><text x=\"307\" y=\"71\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">M</text><text x=\"291\" y=\"195\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">N</text><text x=\"78\" y=\"180\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">O</text><text x=\"115\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#059669\">LO = MN</text><text x=\"225\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#ea580c\">shared ON</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "F",
+            "part": "F1b",
+            "page": 27
+          },
+          "keyPoints": [
+            {
+              "text": "\\(LMNO\\) is a quadrilateral. \\(\\angle LON=\\angle MNO\\) and \\(LO=MN\\). Why are \\(",
+              "note": "Use the congruence result from part (a). Match vertices in (\\triangle OLNcong\\triangle NMO) in the order shown."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M75 55 L300 70 L285 180 L95 165 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2.3\"/><path d=\"M95 165 L285 180\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.5\"/><text x=\"68\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">L</text><text x=\"307\" y=\"71\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">M</text><text x=\"291\" y=\"195\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">N</text><text x=\"78\" y=\"180\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">O</text><text x=\"115\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">LO = MN</text><text x=\"225\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">shared ON</text></svg>"
+          },
+          "type": "mc",
+          "options": [
+            "They are corresponding angles of congruent triangles.",
+            "They are vertically opposite angles.",
+            "They are alternate angles on parallel lines.",
+            "They are angles in the same isosceles triangle."
+          ],
+          "answer": 0,
+          "solution": "The correct answer is They are corresponding angles of congruent triangles.."
+        },
+        {
+          "id": "sbh2019-y10-f01c",
+          "difficulty": "medium",
+          "stem": "\\(LMNO\\) is a quadrilateral. \\(\\angle LON=\\angle MNO\\) and \\(LO=MN\\). Prove that \\(\\angle LOM=\\angle LNM\\).",
+          "hint": "First use SAS to prove the two triangles congruent. Then use the corresponding angles and add the equal adjacent angles to build the two larger angles.",
+          "steps": [
+            {
+              "explain": "By SAS, (\\triangle OLNcong\\triangle NMO), so corresponding angle (angle LNO) equals (angle MON).",
+              "work": "\\(\\angle LNO=\\angle MON\\quad(\\text{CPCTC})\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M75 55 L300 70 L285 180 L95 165 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2.3\"/><path d=\"M95 165 L285 180\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><text x=\"68\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">L</text><text x=\"307\" y=\"71\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">M</text><text x=\"291\" y=\"195\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">N</text><text x=\"78\" y=\"180\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">O</text><text x=\"115\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">LO = MN</text><text x=\"225\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">shared ON</text></svg>"
+              }
+            },
+            {
+              "explain": "Split each requested whole angle along the shared diagonal (ON). The given equality (angle LON=angle MNO) matches one pair of parts.",
+              "work": "\\(\\angle LOM=\\angle LON+\\angle NOM;\\quad\\angle LNM=\\angle LNO+\\angle ONM\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M75 55 L300 70 L285 180 L95 165 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2.3\"/><path d=\"M95 165 L285 180\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><text x=\"68\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">L</text><text x=\"307\" y=\"71\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">M</text><text x=\"291\" y=\"195\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">N</text><text x=\"78\" y=\"180\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">O</text><text x=\"115\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">LO = MN</text><text x=\"225\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#ea580c\">shared ON</text></svg>"
+              }
+            },
+            {
+              "explain": "Use the equal given pair and CPCTC pair. The sums are therefore equal.",
+              "work": "\\(\\angle LON=\\angle ONM,\\;\\angle NOM=\\angle LNO\\Rightarrow\\boxed{\\angle LOM=\\angle LNM}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M75 55 L300 70 L285 180 L95 165 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2.3\"/><path d=\"M95 165 L285 180\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><text x=\"68\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">L</text><text x=\"307\" y=\"71\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">M</text><text x=\"291\" y=\"195\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">N</text><text x=\"78\" y=\"180\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">O</text><text x=\"115\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#059669\">LO = MN</text><text x=\"225\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#ea580c\">shared ON</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "F",
+            "part": "F1c",
+            "page": 27
+          },
+          "keyPoints": [
+            {
+              "text": "\\(LMNO\\) is a quadrilateral. \\(\\angle LON=\\angle MNO\\) and \\(LO=MN\\). Prove that",
+              "note": "First use SAS to prove the two triangles congruent. Then use the corresponding angles and add the equal adjacent angles to build the two larger angles."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M75 55 L300 70 L285 180 L95 165 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2.3\"/><path d=\"M95 165 L285 180\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.5\"/><text x=\"68\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">L</text><text x=\"307\" y=\"71\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">M</text><text x=\"291\" y=\"195\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">N</text><text x=\"78\" y=\"180\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">O</text><text x=\"115\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">LO = MN</text><text x=\"225\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">shared ON</text></svg>"
+          },
+          "type": "review",
+          "answer": "Using SAS, \\(\\triangle OLN\\cong\\triangle NMO\\), so \\(\\angle LNO=\\angle MON\\). Also \\(\\angle LON=\\angle ONM\\) is given. Add equal adjacent angles: \\(\\angle LOM=\\angle LON+\\angle NOM=\\angle ONM+\\angle LNO=\\angle LNM\\).",
+          "solution": "Using SAS, \\(\\triangle OLN\\cong\\triangle NMO\\), so \\(\\angle LNO=\\angle MON\\). Also \\(\\angle LON=\\angle ONM\\) is given. Add equal adjacent angles: \\(\\angle LOM=\\angle LON+\\angle NOM=\\angle ONM+\\angle LNO=\\angle LNM\\)."
         }
       ]
     },

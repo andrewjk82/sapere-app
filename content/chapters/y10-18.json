@@ -1568,6 +1568,108 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 250\" role=\"img\"><line x1=\"35\" y1=\"45\" x2=\"385\" y2=\"45\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><line x1=\"35\" y1=\"74\" x2=\"385\" y2=\"74\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><line x1=\"35\" y1=\"103\" x2=\"385\" y2=\"103\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><line x1=\"35\" y1=\"132\" x2=\"385\" y2=\"132\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><line x1=\"35\" y1=\"161\" x2=\"385\" y2=\"161\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><line x1=\"35\" y1=\"190\" x2=\"385\" y2=\"190\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"120\" y=\"30\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"15\" text-anchor=\"middle\" >Boys leaves</text><text x=\"210\" y=\"30\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"15\" text-anchor=\"middle\" >Stem</text><text x=\"306\" y=\"30\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"15\" text-anchor=\"middle\" >Girls leaves</text><line x1=\"175\" y1=\"38\" x2=\"175\" y2=\"216\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"245\" y1=\"38\" x2=\"245\" y2=\"216\" stroke=\"#64748b\" stroke-width=\"1\" /><text x=\"210\" y=\"64\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"15\" text-anchor=\"middle\" >0</text><text x=\"210\" y=\"93\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"15\" text-anchor=\"middle\" >1</text><text x=\"210\" y=\"122\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"15\" text-anchor=\"middle\" >2</text><text x=\"210\" y=\"151\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"15\" text-anchor=\"middle\" >3</text><text x=\"210\" y=\"180\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"15\" text-anchor=\"middle\" >4</text><text x=\"210\" y=\"209\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"15\" text-anchor=\"middle\" >5</text><text x=\"158\" y=\"64\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" ></text><text x=\"276\" y=\"64\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >1 7</text><text x=\"149\" y=\"93\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >7 4 1 0</text><text x=\"285\" y=\"93\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >2 4 7 9 9</text><text x=\"140\" y=\"122\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >9 7 6 6 5 1 1 1 0</text><text x=\"290\" y=\"122\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >1 3 3 4 6 6</text><text x=\"150\" y=\"151\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >8 7 7 5 2</text><text x=\"285\" y=\"151\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >4 4 4 8</text><text x=\"158\" y=\"180\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >2</text><text x=\"285\" y=\"180\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >3 6</text><text x=\"158\" y=\"209\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" ></text><text x=\"285\" y=\"209\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >4</text><text x=\"205\" y=\"238\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >Key: 4 | 2 means 24 days</text></svg>"
           }
+        },
+        {
+          "id": "sbh2019-y10-ea04",
+          "difficulty": "medium",
+          "stem": "A set of data is represented by the cumulative frequency histogram and ogive. What is the best approximation for the interquartile range for this set of data?",
+          "hint": "There are 800 data values. Read the values at cumulative frequencies (800/4=200) and (3(800)/4=600), then subtract (Q_1) from (Q_3).",
+          "steps": [
+            {
+              "explain": "Read the total frequency from the end of the ogive: (n=800). Find the first and third quartile positions.",
+              "work": "\\(Q_1\\text{ at }0.25(800)=200;\\quad Q_3\\text{ at }0.75(800)=600\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M55 185 H330 M55 185 V42\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M55 180 C85 174 95 162 120 155 S160 132 185 118 S230 83 255 61 S300 48 325 45\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><path d=\"M75 185 V154 M185 185 V118 M285 185 V52\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-dasharray=\"3 3\"/><text x=\"76\" y=\"204\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">Q1≈45</text><text x=\"185\" y=\"204\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">median</text><text x=\"285\" y=\"204\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">Q3≈80</text><text x=\"193\" y=\"224\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">IQR = Q3 − Q1</text></svg>"
+              }
+            },
+            {
+              "explain": "From the ogive, the approximate data values are (Q_1\\approx45) and (Q_3\\approx80).",
+              "work": "\\(Q_1\\approx45;\\quad Q_3\\approx80\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M55 185 H330 M55 185 V42\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M55 180 C85 174 95 162 120 155 S160 132 185 118 S230 83 255 61 S300 48 325 45\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><path d=\"M75 185 V154 M185 185 V118 M285 185 V52\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"1.3\" stroke-dasharray=\"3 3\"/><text x=\"76\" y=\"204\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#ea580c\">Q1≈45</text><text x=\"185\" y=\"204\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">median</text><text x=\"285\" y=\"204\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#ea580c\">Q3≈80</text><text x=\"193\" y=\"224\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">IQR = Q3 − Q1</text></svg>"
+              }
+            },
+            {
+              "explain": "Subtract the lower quartile from the upper quartile.",
+              "work": "\\(IQR=Q_3-Q_1\\approx80-45=\\boxed{35}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M55 185 H330 M55 185 V42\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M55 180 C85 174 95 162 120 155 S160 132 185 118 S230 83 255 61 S300 48 325 45\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><path d=\"M75 185 V154 M185 185 V118 M285 185 V52\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"1.3\" stroke-dasharray=\"3 3\"/><text x=\"76\" y=\"204\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#ea580c\">Q1≈45</text><text x=\"185\" y=\"204\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">median</text><text x=\"285\" y=\"204\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#ea580c\">Q3≈80</text><text x=\"193\" y=\"224\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#059669\">IQR = Q3 − Q1</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "E",
+            "part": "EA4",
+            "page": 22
+          },
+          "keyPoints": [
+            {
+              "text": "A set of data is represented by the cumulative frequency histogram and ogive. Wh",
+              "note": "There are 800 data values. Read the values at cumulative frequencies (800/4=200) and (3(800)/4=600), then subtract (Q_1) from (Q_3)."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><path d=\"M55 185 H330 M55 185 V42\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M55 180 C85 174 95 162 120 155 S160 132 185 118 S230 83 255 61 S300 48 325 45\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.5\"/><path d=\"M75 185 V154 M185 185 V118 M285 185 V52\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-dasharray=\"3 3\"/><text x=\"76\" y=\"204\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">Q1≈45</text><text x=\"185\" y=\"204\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">median</text><text x=\"285\" y=\"204\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">Q3≈80</text><text x=\"193\" y=\"224\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">IQR = Q3 − Q1</text></svg>"
+          },
+          "type": "mc",
+          "options": [
+            "\\(35\\)",
+            "\\(25\\)",
+            "\\(30\\)",
+            "\\(40\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(35\\)."
+        },
+        {
+          "id": "sbh2019-y10-eb03b",
+          "difficulty": "medium",
+          "stem": "The numbers 4, 6, 12, 4, 10, 12, 3, \\(x\\) and \\(y\\) have a mean of 7 and a mode of 4. Find the median.",
+          "hint": "Use (x=4,y=8) from part (a), sort all nine values, and take the fifth value.",
+          "steps": [
+            {
+              "explain": "Substitute (x=4,y=8) and order the values.",
+              "work": "\\(3,4,4,4,6,8,10,12,12\\)"
+            },
+            {
+              "explain": "With 9 values, the median is the ((9+1)/2=5)th value.",
+              "work": "\\(\\text{median}=\\text{5th value}=6\\)"
+            },
+            {
+              "explain": "State the median.",
+              "work": "\\(\\boxed{6}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "E",
+            "part": "EB3b",
+            "page": 25
+          },
+          "keyPoints": [
+            {
+              "text": "The numbers 4, 6, 12, 4, 10, 12, 3, \\(x\\) and \\(y\\) have a mean of 7 and a mode",
+              "note": "Use (x=4,y=8) from part (a), sort all nine values, and take the fifth value."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(6\\)",
+            "\\(7\\)",
+            "\\(8\\)",
+            "\\(10\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(6\\)."
         }
       ]
     },
@@ -2414,6 +2516,51 @@
             "examType": "Yearly",
             "grade": "10"
           }
+        },
+        {
+          "id": "sbh2019-y10-c05",
+          "difficulty": "medium",
+          "stem": "Alan sat for exams in English, Maths, and Science. The results for the class are shown below. What mark in Science would Alan have to get to be equivalent to a mark of 80 in Mathematics?",
+          "hint": "Convert the Mathematics mark to a z-score. An equivalent Science result has the same z-score, so convert that z-score back to a Science mark.",
+          "steps": [
+            {
+              "explain": "Find how many standard deviations 80 is above the Mathematics mean.",
+              "work": "\\(z=\\frac{80-70}{5}=\\frac{10}{5}=2\\)"
+            },
+            {
+              "explain": "Use the same z-score for Science: (z=(S-65)/10=2).",
+              "work": "\\(\\frac{S-65}{10}=2\\Rightarrow S-65=20\\)"
+            },
+            {
+              "explain": "Add 65 to obtain Alan’s equivalent Science mark.",
+              "work": "\\(S=\\boxed{85}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "C",
+            "part": "C5",
+            "page": 12
+          },
+          "keyPoints": [
+            {
+              "text": "Alan sat for exams in English, Maths, and Science. The results for the class are",
+              "note": "Convert the Mathematics mark to a z-score. An equivalent Science result has the same z-score, so convert that z-score back to a Science mark."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(85\\)",
+            "\\(80\\)",
+            "\\(90\\)",
+            "\\(75\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(85\\)."
         }
       ]
     },
@@ -4267,6 +4414,96 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 140\" role=\"img\"><line x1=\"40\" y1=\"40\" x2=\"380\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1\" /><line x1=\"40\" y1=\"80\" x2=\"380\" y2=\"80\" stroke=\"#94a3b8\" stroke-width=\"1\" /><line x1=\"40\" y1=\"120\" x2=\"380\" y2=\"120\" stroke=\"#94a3b8\" stroke-width=\"1\" /><text x=\"210\" y=\"31\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"15\" text-anchor=\"middle\" >Test marks</text><text x=\"110\" y=\"66\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >Maths</text><text x=\"110\" y=\"106\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" >English</text><text x=\"243\" y=\"66\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >83   79   81   92   85   76</text><text x=\"243\" y=\"106\" fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" >72   88   89   76   90   72</text></svg>"
           }
+        },
+        {
+          "id": "sbh2019-y10-eb03a",
+          "difficulty": "medium",
+          "stem": "The numbers 4, 6, 12, 4, 10, 12, 3, \\(x\\) and \\(y\\) have a mean of 7 and a mode of 4. Find the values of \\(x\\) and \\(y\\), given that \\(x<y\\).",
+          "hint": "Use the mean to find the required total for (x+y). Then use the mode condition and (x<y) to decide which number must be 4.",
+          "steps": [
+            {
+              "explain": "Nine values with mean 7 have total (9\\times7=63). The seven known values sum to 51.",
+              "work": "\\(x+y=63-51=12\\)"
+            },
+            {
+              "explain": "The known data currently has two 4s and two 12s. For 4 to be the mode, one unknown must be 4. Since (x<y), set (x=4).",
+              "work": "\\(x=4\\Rightarrow y=12-4=8\\)"
+            },
+            {
+              "explain": "Check (x<y), the mean total, and the mode.",
+              "work": "\\(\\boxed{x=4,\\;y=8}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "E",
+            "part": "EB3a",
+            "page": 25
+          },
+          "keyPoints": [
+            {
+              "text": "The numbers 4, 6, 12, 4, 10, 12, 3, \\(x\\) and \\(y\\) have a mean of 7 and a mode",
+              "note": "Use the mean to find the required total for (x+y). Then use the mode condition and (x<y) to decide which number must be 4."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(x=4,\\;y=8\\)",
+            "\\(x=8,\\;y=4\\)",
+            "\\(x=3,\\;y=9\\)",
+            "\\(x=5,\\;y=7\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(x=4,\\;y=8\\)."
+        },
+        {
+          "id": "sbh2019-y10-eb03c",
+          "difficulty": "medium",
+          "stem": "The numbers 4, 6, 12, 4, 10, 12, 3, \\(x\\) and \\(y\\) have a mean of 7 and a mode of 4. Find the standard deviation of this set of nine numbers to 3 significant figures.",
+          "hint": "Use the population standard deviation for the whole data set. Substitute (x=4,y=8), calculate each squared deviation from the mean 7, average them, then take the square root.",
+          "steps": [
+            {
+              "explain": "The nine values are (3,4,4,4,6,8,10,12,12), and their mean is 7. Add their squared deviations.",
+              "work": "\\(\\sum(x_i-7)^2=16+9+9+9+1+1+9+25+25=104\\)"
+            },
+            {
+              "explain": "Divide by the number of values and take the square root.",
+              "work": "\\(\\sigma=\\sqrt{\\frac{104}{9}}\\approx3.39935\\)"
+            },
+            {
+              "explain": "Round to 3 significant figures.",
+              "work": "\\(\\boxed{3.40}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "E",
+            "part": "EB3c",
+            "page": 25
+          },
+          "keyPoints": [
+            {
+              "text": "The numbers 4, 6, 12, 4, 10, 12, 3, \\(x\\) and \\(y\\) have a mean of 7 and a mode",
+              "note": "Use the population standard deviation for the whole data set. Substitute (x=4,y=8), calculate each squared deviation from the mean 7, average them, then take the square root."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(3.40\\)",
+            "\\(3.64\\)",
+            "\\(4.00\\)",
+            "\\(2.67\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(3.40\\)."
         }
       ]
     },
@@ -4930,6 +5167,63 @@
             "grade": "10"
           },
           "xp": 2
+        },
+        {
+          "id": "sbh2019-y10-ea05",
+          "difficulty": "medium",
+          "stem": "The dot plots below are drawn on the same scale. They show the class scores in tests taken before and after a unit of work was completed. Which statement about the change in scores is correct?",
+          "hint": "Compare the centres of the two dot plots for the mean and their spreads for standard deviation. A centre moving right means a higher mean; a tighter cluster means a lower standard deviation.",
+          "steps": [
+            {
+              "explain": "Compare the centres: the after-work dot plot is shifted to the right, so the class mean increased.",
+              "work": "\\(\\bar{x}_{after}>\\bar{x}_{before}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><rect x=\"50\" y=\"42\" width=\"280\" height=\"150\" rx=\"4\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M50 75 H330 M50 114 H330 M50 153 H330 M150 42 V192 M240 42 V192\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"100\" y=\"64\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">Test</text><text x=\"195\" y=\"64\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8\" fill=\"#2563eb\">Class Mean</text><text x=\"285\" y=\"64\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"7\" fill=\"#334155\">Class Standard Deviation</text><text x=\"98\" y=\"101\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">English</text><text x=\"195\" y=\"101\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">55</text><text x=\"285\" y=\"101\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">20</text><text x=\"98\" y=\"140\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#2563eb\">Mathematics</text><text x=\"195\" y=\"140\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#2563eb\">70</text><text x=\"285\" y=\"140\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#2563eb\">5</text><text x=\"98\" y=\"179\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">Science</text><text x=\"195\" y=\"179\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">65</text><text x=\"285\" y=\"179\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">10</text></svg>"
+              }
+            },
+            {
+              "explain": "Compare spread: the after-work scores are more tightly clustered, so their standard deviation is lower.",
+              "work": "\\(s_{after}<s_{before}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><rect x=\"50\" y=\"42\" width=\"280\" height=\"150\" rx=\"4\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M50 75 H330 M50 114 H330 M50 153 H330 M150 42 V192 M240 42 V192\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"100\" y=\"64\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">Test</text><text x=\"195\" y=\"64\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8\" fill=\"#2563eb\">Class Mean</text><text x=\"285\" y=\"64\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"7\" fill=\"#ea580c\">Class Standard Deviation</text><text x=\"98\" y=\"101\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">English</text><text x=\"195\" y=\"101\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">55</text><text x=\"285\" y=\"101\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">20</text><text x=\"98\" y=\"140\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">Mathematics</text><text x=\"195\" y=\"140\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">70</text><text x=\"285\" y=\"140\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">5</text><text x=\"98\" y=\"179\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#2563eb\">Science</text><text x=\"195\" y=\"179\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#2563eb\">65</text><text x=\"285\" y=\"179\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#2563eb\">10</text></svg>"
+              }
+            },
+            {
+              "explain": "Combine both observations.",
+              "work": "Mean increased; standard deviation decreased.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><rect x=\"50\" y=\"42\" width=\"280\" height=\"150\" rx=\"4\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M50 75 H330 M50 114 H330 M50 153 H330 M150 42 V192 M240 42 V192\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"100\" y=\"64\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">Test</text><text x=\"195\" y=\"64\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8\" fill=\"#2563eb\">Class Mean</text><text x=\"285\" y=\"64\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"7\" fill=\"#ea580c\">Class Standard Deviation</text><text x=\"98\" y=\"101\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">English</text><text x=\"195\" y=\"101\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">55</text><text x=\"285\" y=\"101\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">20</text><text x=\"98\" y=\"140\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">Mathematics</text><text x=\"195\" y=\"140\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">70</text><text x=\"285\" y=\"140\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">5</text><text x=\"98\" y=\"179\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#2563eb\">Science</text><text x=\"195\" y=\"179\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#2563eb\">65</text><text x=\"285\" y=\"179\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#2563eb\">10</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "E",
+            "part": "EA5",
+            "page": 23
+          },
+          "keyPoints": [
+            {
+              "text": "The dot plots below are drawn on the same scale. They show the class scores in t",
+              "note": "Compare the centres of the two dot plots for the mean and their spreads for standard deviation. A centre moving right means a higher mean; a tighter cluster means a lower standard deviation."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 235\" width=\"50%\" role=\"img\"><rect width=\"380\" height=\"235\" fill=\"white\"/><rect x=\"50\" y=\"42\" width=\"280\" height=\"150\" rx=\"4\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M50 75 H330 M50 114 H330 M50 153 H330 M150 42 V192 M240 42 V192\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"100\" y=\"64\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">Test</text><text x=\"195\" y=\"64\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8\" fill=\"#334155\">Class Mean</text><text x=\"285\" y=\"64\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"7\" fill=\"#334155\">Class Standard Deviation</text><text x=\"98\" y=\"101\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">English</text><text x=\"195\" y=\"101\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">55</text><text x=\"285\" y=\"101\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">20</text><text x=\"98\" y=\"140\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">Mathematics</text><text x=\"195\" y=\"140\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">70</text><text x=\"285\" y=\"140\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">5</text><text x=\"98\" y=\"179\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">Science</text><text x=\"195\" y=\"179\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">65</text><text x=\"285\" y=\"179\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">10</text></svg>"
+          },
+          "type": "mc",
+          "options": [
+            "The mean increased and the standard deviation decreased.",
+            "The mean increased and the standard deviation increased.",
+            "The mean decreased and the standard deviation decreased.",
+            "The mean decreased and the standard deviation increased."
+          ],
+          "answer": 0,
+          "solution": "The correct answer is The mean increased and the standard deviation decreased.."
         }
       ]
     },

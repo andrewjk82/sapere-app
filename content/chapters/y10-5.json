@@ -3129,6 +3129,51 @@
               "work": "\\(\\boxed{x=0\\text{ or }x=-3}\\)"
             }
           ]
+        },
+        {
+          "id": "sbh2019-y10-a05a",
+          "difficulty": "medium",
+          "stem": "Solve for the value of \\(x\\), leave answers in surd form if necessary: \\((3x+1)^2-25=0\\).",
+          "hint": "Recognise a difference of squares: (u^2-5^2=(u-5)(u+5)). Remember that both factors can equal zero.",
+          "steps": [
+            {
+              "explain": "Use the difference of squares with (u=3x+1).",
+              "work": "\\((3x+1)^2-5^2=0\\Rightarrow(3x+1-5)(3x+1+5)=0\\)"
+            },
+            {
+              "explain": "Set each factor equal to zero and solve both linear equations.",
+              "work": "\\(3x-4=0\\Rightarrow x=\\frac43;\\quad3x+6=0\\Rightarrow x=-2\\)"
+            },
+            {
+              "explain": "List both solutions; the quadratic equation has two roots.",
+              "work": "\\(x=\\boxed{-2,\\frac43}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Sydney Boys 2019 Year 10 Maths HY & Solutions.pdf",
+            "school": "Sydney Boys High School",
+            "year": 2019,
+            "section": "A",
+            "part": "A5a",
+            "page": 3
+          },
+          "keyPoints": [
+            {
+              "text": "Solve for the value of \\(x\\), leave answers in surd form if necessary: \\((3x+1)^",
+              "note": "Recognise a difference of squares: (u^2-5^2=(u-5)(u+5)). Remember that both factors can equal zero."
+            }
+          ],
+          "type": "mc",
+          "options": [
+            "\\(x=-2,\\;\\frac43\\)",
+            "\\(x=-2\\)",
+            "\\(x=\\frac43\\)",
+            "\\(x=-\\frac43,\\;2\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(x=-2,\\;\\frac43\\)."
         }
       ]
     },
