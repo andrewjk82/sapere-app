@@ -4741,6 +4741,61 @@
             "sourcePage": "14",
             "sourceQuestion": 20
           }
+        },
+        {
+          "id": "ascham2020-q24a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Consider the even function \\(y=3+2x^2-x^4=(3-x^2)(1+x^2)\\). Find the stationary points and determine their nature.",
+          "options": [
+            "\\((-1,4),(1,4)\\) maxima; \\((0,3)\\) minimum",
+            "\\((-1,4),(1,4)\\) minima; \\((0,3)\\) maximum",
+            "\\((-1,3),(1,3)\\) maxima; \\((0,4)\\) minimum",
+            "\\((0,3)\\) only, a maximum"
+          ],
+          "answer": 0,
+          "hint": "Differentiate the quartic, solve y′=0, then classify each stationary point using y′′.",
+          "keyPoints": [
+            {
+              "text": "stationary points",
+              "note": "Differentiate once and solve y′=0; classify each point using the second derivative."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Differentiate each term using the power rule.",
+              "work": "\\(y\\prime=4x-4x^3=4x(1-x^2)\\)"
+            },
+            {
+              "explain": "Set the derivative to zero and solve the three factors.",
+              "work": "\\(4x(1-x)(1+x)=0\\Rightarrow x=-1,0,1\\)"
+            },
+            {
+              "explain": "Substitute these x-values into the original function.",
+              "work": "\\(y(-1)=3+2-1=4,\\quad y(0)=3,\\quad y(1)=4\\)"
+            },
+            {
+              "explain": "Use the second derivative to classify: y′′=4−12x². It is negative at ±1 (local maxima) and positive at 0 (local minimum).",
+              "work": "\\(y\\prime\\prime(\\pm1)=-8<0,\\quad y\\prime\\prime(0)=4>0\\)"
+            },
+            {
+              "explain": "State each coordinate together with its nature.",
+              "work": "\\(\\boxed{(-1,4),(1,4)\\text{ maxima};\\ (0,3)\\text{ minimum}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 2U Trials.pdf",
+            "school": "Ascham School",
+            "examType": "Trial HSC",
+            "year": 2020,
+            "grade": "11/12 Advanced",
+            "sourceQuestion": 24,
+            "sourcePart": "a",
+            "sourcePage": null,
+            "sourceTopic": "y12a-3B"
+          }
         }
       ]
     },
@@ -7966,6 +8021,57 @@
             "grade": "12"
           },
           "xp": 4
+        },
+        {
+          "id": "ascham2020-q24b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Consider the even function \\(y=3+2x^2-x^4=(3-x^2)(1+x^2)\\). Find the coordinates of any points of inflection.",
+          "options": [
+            "\\(\\left(-\\frac1{\\sqrt3},\\frac{32}{9}\\right),\\left(\\frac1{\\sqrt3},\\frac{32}{9}\\right)\\)",
+            "\\((-1,4),(1,4)\\)",
+            "\\((0,3)\\)",
+            "\\(\\left(-\\sqrt3,0\\right),\\left(\\sqrt3,0\\right)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find where the second derivative is zero and check that concavity changes there.",
+          "keyPoints": [
+            {
+              "text": "points of inflection",
+              "note": "Solve y′′=0 and check that the sign of y′′ changes around each candidate."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Differentiate twice to measure concavity.",
+              "work": "\\(y\\prime=4x-4x^3,\\quad y\\prime\\prime=4-12x^2\\)"
+            },
+            {
+              "explain": "Set the second derivative to zero.",
+              "work": "\\(4-12x^2=0\\Rightarrow x^2=\\frac13\\Rightarrow x=\\pm\\frac1{\\sqrt3}\\)"
+            },
+            {
+              "explain": "The sign of y′′ changes across both values, so these are inflection points. Find their common y-coordinate by substituting x²=1/3 and x⁴=1/9.",
+              "work": "\\(y=3+2\\left(\\frac13\\right)-\\frac19=\\frac{27+6-1}{9}=\\frac{32}{9}\\)"
+            },
+            {
+              "explain": "Pair this y-value with each x-value.",
+              "work": "\\(\\boxed{\\left(-\\frac1{\\sqrt3},\\frac{32}{9}\\right),\\left(\\frac1{\\sqrt3},\\frac{32}{9}\\right)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 2U Trials.pdf",
+            "school": "Ascham School",
+            "examType": "Trial HSC",
+            "year": 2020,
+            "grade": "11/12 Advanced",
+            "sourceQuestion": 24,
+            "sourcePart": "b",
+            "sourcePage": null,
+            "sourceTopic": "y12a-3D"
+          }
         }
       ]
     },
@@ -9126,6 +9232,62 @@
             "examType": "Trial HSC",
             "grade": "12"
           }
+        },
+        {
+          "id": "ascham2020-q24c",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Consider the even function \\(y=3+2x^2-x^4=(3-x^2)(1+x^2)\\). Sketch the graph of \\(y=3+2x^2-x^4\\) showing stationary points, points of inflection and intercepts.",
+          "answer": "",
+          "manual": true,
+          "hint": "Use even symmetry, the stationary points, inflection points and intercepts to anchor the curve before drawing its shape.",
+          "keyPoints": [
+            {
+              "text": "stationary points, points of inflection and intercepts",
+              "note": "Use the even symmetry and all listed key points to anchor the curve before sketching its branches."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The function is even because it contains only even powers, so reflect the right-hand half across the y-axis.",
+              "work": "\\(f(-x)=f(x)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 640 390\" role=\"img\"><rect x=\"15\" y=\"15\" width=\"610\" height=\"360\" fill=\"#fff\" stroke=\"#e2e8f0\" stroke-width=\"1\" rx=\"8\"/><line x1=\"80\" y1=\"345\" x2=\"80\" y2=\"-5\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"140\" y1=\"345\" x2=\"140\" y2=\"-5\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"200\" y1=\"345\" x2=\"200\" y2=\"-5\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"260\" y1=\"345\" x2=\"260\" y2=\"-5\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"320\" y1=\"345\" x2=\"320\" y2=\"-5\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"380\" y1=\"345\" x2=\"380\" y2=\"-5\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"440\" y1=\"345\" x2=\"440\" y2=\"-5\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"500\" y1=\"345\" x2=\"500\" y2=\"-5\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"560\" y1=\"345\" x2=\"560\" y2=\"-5\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"80\" y1=\"345\" x2=\"560\" y2=\"345\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"80\" y1=\"310\" x2=\"560\" y2=\"310\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"80\" y1=\"275\" x2=\"560\" y2=\"275\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"80\" y1=\"240\" x2=\"560\" y2=\"240\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"80\" y1=\"205\" x2=\"560\" y2=\"205\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"80\" y1=\"170\" x2=\"560\" y2=\"170\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"80\" y1=\"135\" x2=\"560\" y2=\"135\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"80\" y1=\"100\" x2=\"560\" y2=\"100\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"80\" y1=\"65\" x2=\"560\" y2=\"65\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"80\" y1=\"30\" x2=\"560\" y2=\"30\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"80\" y1=\"-5\" x2=\"560\" y2=\"-5\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"80\" y1=\"205\" x2=\"560\" y2=\"205\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"320\" y1=\"345\" x2=\"320\" y2=\"-5\" stroke=\"#334155\" stroke-width=\"2\" /><text x=\"80\" y=\"223\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >-4</text><text x=\"200\" y=\"223\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >-2</text><text x=\"320\" y=\"223\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >0</text><text x=\"440\" y=\"223\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >2</text><text x=\"560\" y=\"223\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >4</text><text x=\"305\" y=\"349\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >-4</text><text x=\"305\" y=\"279\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >-2</text><text x=\"305\" y=\"139\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >2</text><text x=\"305\" y=\"69\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >4</text><text x=\"305\" y=\"-1\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >6</text><polyline points=\"140.0,2305.0 141.5,2222.1 143.0,2141.5 144.5,2063.1 146.0,1986.8 147.5,1912.6 149.0,1840.6 150.5,1770.5 152.0,1702.5 153.5,1636.4 155.0,1572.3 156.5,1510.1 158.0,1449.7 159.5,1391.2 161.0,1334.5 162.5,1279.5 164.0,1226.2 165.5,1174.6 167.0,1124.7 168.5,1076.4 170.0,1029.7 171.5,984.5 173.0,940.9 174.5,898.7 176.0,858.0 177.5,818.7 179.0,780.9 180.5,744.3 182.0,709.1 183.5,675.3 185.0,642.6 186.5,611.3 188.0,581.1 189.5,552.1 191.0,524.3 192.5,497.6 194.0,472.0 195.5,447.5 197.0,424.0 198.5,401.5 200.0,380.0 201.5,359.5 203.0,339.9 204.5,321.2 206.0,303.4 207.5,286.5 209.0,270.4 210.5,255.1 212.0,240.6 213.5,226.9 215.0,213.9 216.5,201.6 218.0,190.0 219.5,179.1 221.0,168.8 222.5,159.2 224.0,150.2 225.5,141.7 227.0,133.8 228.5,126.5 230.0,119.7 231.5,113.4 233.0,107.5 234.5,102.2 236.0,97.3 237.5,92.8 239.0,88.7 240.5,85.0 242.0,81.7 243.5,78.7 245.0,76.1 246.5,73.8 248.0,71.8 249.5,70.1 251.0,68.6 252.5,67.5 254.0,66.5 255.5,65.8 257.0,65.4 258.5,65.1 260.0,65.0 261.5,65.1 263.0,65.3 264.5,65.7 266.0,66.3 267.5,66.9 269.0,67.7 270.5,68.6 272.0,69.5 273.5,70.6 275.0,71.7 276.5,72.9 278.0,74.1 279.5,75.4 281.0,76.7 282.5,78.0 284.0,79.3 285.5,80.7 287.0,82.0 288.5,83.4 290.0,84.7 291.5,86.0 293.0,87.3 294.5,88.5 296.0,89.7 297.5,90.8 299.0,92.0 300.5,93.0 302.0,94.0 303.5,94.9 305.0,95.8 306.5,96.5 308.0,97.3 309.5,97.9 311.0,98.4 312.5,98.9 314.0,99.3 315.5,99.6 317.0,99.8 318.5,100.0 320.0,100.0 321.5,100.0 323.0,99.8 324.5,99.6 326.0,99.3 327.5,98.9 329.0,98.4 330.5,97.9 332.0,97.3 333.5,96.5 335.0,95.8 336.5,94.9 338.0,94.0 339.5,93.0 341.0,92.0 342.5,90.8 344.0,89.7 345.5,88.5 347.0,87.3 348.5,86.0 350.0,84.7 351.5,83.4 353.0,82.0 354.5,80.7 356.0,79.3 357.5,78.0 359.0,76.7 360.5,75.4 362.0,74.1 363.5,72.9 365.0,71.7 366.5,70.6 368.0,69.5 369.5,68.6 371.0,67.7 372.5,66.9 374.0,66.3 375.5,65.7 377.0,65.3 378.5,65.1 380.0,65.0 381.5,65.1 383.0,65.4 384.5,65.8 386.0,66.5 387.5,67.5 389.0,68.6 390.5,70.1 392.0,71.8 393.5,73.8 395.0,76.1 396.5,78.7 398.0,81.7 399.5,85.0 401.0,88.7 402.5,92.8 404.0,97.3 405.5,102.2 407.0,107.5 408.5,113.4 410.0,119.7 411.5,126.5 413.0,133.8 414.5,141.7 416.0,150.2 417.5,159.2 419.0,168.8 420.5,179.1 422.0,190.0 423.5,201.6 425.0,213.9 426.5,226.9 428.0,240.6 429.5,255.1 431.0,270.4 432.5,286.5 434.0,303.4 435.5,321.2 437.0,339.9 438.5,359.5 440.0,380.0 441.5,401.5 443.0,424.0 444.5,447.5 446.0,472.0 447.5,497.6 449.0,524.3 450.5,552.1 452.0,581.1 453.5,611.3 455.0,642.6 456.5,675.3 458.0,709.1 459.5,744.3 461.0,780.9 462.5,818.7 464.0,858.0 465.5,898.7 467.0,940.9 468.5,984.5 470.0,1029.7 471.5,1076.4 473.0,1124.7 474.5,1174.6 476.0,1226.2 477.5,1279.5 479.0,1334.5 480.5,1391.2 482.0,1449.7 483.5,1510.1 485.0,1572.3 486.5,1636.4 488.0,1702.5 489.5,1770.5 491.0,1840.6 492.5,1912.6 494.0,1986.8 495.5,2063.1 497.0,2141.5 498.5,2222.1 500.0,2305.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><circle cx=\"260\" cy=\"65\" r=\"4\" fill=\"#f59e0b\" stroke=\"#92400e\" stroke-width=\"1\"/><circle cx=\"320\" cy=\"100\" r=\"4\" fill=\"#f59e0b\" stroke=\"#92400e\" stroke-width=\"1\"/><circle cx=\"380\" cy=\"65\" r=\"4\" fill=\"#f59e0b\" stroke=\"#92400e\" stroke-width=\"1\"/><circle cx=\"285.3589838486225\" cy=\"80.55555555555556\" r=\"4\" fill=\"#f59e0b\" stroke=\"#92400e\" stroke-width=\"1\"/><circle cx=\"354.6410161513775\" cy=\"80.55555555555556\" r=\"4\" fill=\"#f59e0b\" stroke=\"#92400e\" stroke-width=\"1\"/><circle cx=\"216.07695154586736\" cy=\"205\" r=\"4\" fill=\"#f59e0b\" stroke=\"#92400e\" stroke-width=\"1\"/><circle cx=\"423.92304845413264\" cy=\"205\" r=\"4\" fill=\"#f59e0b\" stroke=\"#92400e\" stroke-width=\"1\"/><text x=\"500\" y=\"42\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#92400e\" >stationary / inflection / intercepts</text></svg>"
+              }
+            },
+            {
+              "explain": "Mark the stationary points from y′=4x(1−x²): maxima at (−1,4) and (1,4); minimum at (0,3).",
+              "work": "\\(y\\prime=0\\Rightarrow x=-1,0,1\\)"
+            },
+            {
+              "explain": "Mark the inflection points where y′′=4−12x² changes sign, at x=±1/√3 with y=32/9.",
+              "work": "\\(\\left(\\pm\\frac1{\\sqrt3},\\frac{32}{9}\\right)\\)"
+            },
+            {
+              "explain": "Find intercepts: y-intercept is (0,3); x-intercepts solve (3−x²)(1+x²)=0, so only x=±√3 are real.",
+              "work": "\\((\\pm\\sqrt3,0),\\quad(0,3)\\)"
+            },
+            {
+              "explain": "Draw a symmetric quartic through all marked features. Both ends fall because the leading term is −x⁴. The annotated sample shows the required features.",
+              "work": "\\(y\\to-\\infty\\text{ as }x\\to\\pm\\infty\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 640 390\" role=\"img\"><rect x=\"15\" y=\"15\" width=\"610\" height=\"360\" fill=\"#fff\" stroke=\"#e2e8f0\" stroke-width=\"1\" rx=\"8\"/><line x1=\"80\" y1=\"345\" x2=\"80\" y2=\"-5\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"140\" y1=\"345\" x2=\"140\" y2=\"-5\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"200\" y1=\"345\" x2=\"200\" y2=\"-5\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"260\" y1=\"345\" x2=\"260\" y2=\"-5\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"320\" y1=\"345\" x2=\"320\" y2=\"-5\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"380\" y1=\"345\" x2=\"380\" y2=\"-5\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"440\" y1=\"345\" x2=\"440\" y2=\"-5\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"500\" y1=\"345\" x2=\"500\" y2=\"-5\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"560\" y1=\"345\" x2=\"560\" y2=\"-5\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"80\" y1=\"345\" x2=\"560\" y2=\"345\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"80\" y1=\"310\" x2=\"560\" y2=\"310\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"80\" y1=\"275\" x2=\"560\" y2=\"275\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"80\" y1=\"240\" x2=\"560\" y2=\"240\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"80\" y1=\"205\" x2=\"560\" y2=\"205\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"80\" y1=\"170\" x2=\"560\" y2=\"170\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"80\" y1=\"135\" x2=\"560\" y2=\"135\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"80\" y1=\"100\" x2=\"560\" y2=\"100\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"80\" y1=\"65\" x2=\"560\" y2=\"65\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"80\" y1=\"30\" x2=\"560\" y2=\"30\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"80\" y1=\"-5\" x2=\"560\" y2=\"-5\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"80\" y1=\"205\" x2=\"560\" y2=\"205\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"320\" y1=\"345\" x2=\"320\" y2=\"-5\" stroke=\"#334155\" stroke-width=\"2\" /><text x=\"80\" y=\"223\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >-4</text><text x=\"200\" y=\"223\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >-2</text><text x=\"320\" y=\"223\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >0</text><text x=\"440\" y=\"223\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >2</text><text x=\"560\" y=\"223\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >4</text><text x=\"305\" y=\"349\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >-4</text><text x=\"305\" y=\"279\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >-2</text><text x=\"305\" y=\"139\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >2</text><text x=\"305\" y=\"69\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >4</text><text x=\"305\" y=\"-1\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >6</text><polyline points=\"140.0,2305.0 141.5,2222.1 143.0,2141.5 144.5,2063.1 146.0,1986.8 147.5,1912.6 149.0,1840.6 150.5,1770.5 152.0,1702.5 153.5,1636.4 155.0,1572.3 156.5,1510.1 158.0,1449.7 159.5,1391.2 161.0,1334.5 162.5,1279.5 164.0,1226.2 165.5,1174.6 167.0,1124.7 168.5,1076.4 170.0,1029.7 171.5,984.5 173.0,940.9 174.5,898.7 176.0,858.0 177.5,818.7 179.0,780.9 180.5,744.3 182.0,709.1 183.5,675.3 185.0,642.6 186.5,611.3 188.0,581.1 189.5,552.1 191.0,524.3 192.5,497.6 194.0,472.0 195.5,447.5 197.0,424.0 198.5,401.5 200.0,380.0 201.5,359.5 203.0,339.9 204.5,321.2 206.0,303.4 207.5,286.5 209.0,270.4 210.5,255.1 212.0,240.6 213.5,226.9 215.0,213.9 216.5,201.6 218.0,190.0 219.5,179.1 221.0,168.8 222.5,159.2 224.0,150.2 225.5,141.7 227.0,133.8 228.5,126.5 230.0,119.7 231.5,113.4 233.0,107.5 234.5,102.2 236.0,97.3 237.5,92.8 239.0,88.7 240.5,85.0 242.0,81.7 243.5,78.7 245.0,76.1 246.5,73.8 248.0,71.8 249.5,70.1 251.0,68.6 252.5,67.5 254.0,66.5 255.5,65.8 257.0,65.4 258.5,65.1 260.0,65.0 261.5,65.1 263.0,65.3 264.5,65.7 266.0,66.3 267.5,66.9 269.0,67.7 270.5,68.6 272.0,69.5 273.5,70.6 275.0,71.7 276.5,72.9 278.0,74.1 279.5,75.4 281.0,76.7 282.5,78.0 284.0,79.3 285.5,80.7 287.0,82.0 288.5,83.4 290.0,84.7 291.5,86.0 293.0,87.3 294.5,88.5 296.0,89.7 297.5,90.8 299.0,92.0 300.5,93.0 302.0,94.0 303.5,94.9 305.0,95.8 306.5,96.5 308.0,97.3 309.5,97.9 311.0,98.4 312.5,98.9 314.0,99.3 315.5,99.6 317.0,99.8 318.5,100.0 320.0,100.0 321.5,100.0 323.0,99.8 324.5,99.6 326.0,99.3 327.5,98.9 329.0,98.4 330.5,97.9 332.0,97.3 333.5,96.5 335.0,95.8 336.5,94.9 338.0,94.0 339.5,93.0 341.0,92.0 342.5,90.8 344.0,89.7 345.5,88.5 347.0,87.3 348.5,86.0 350.0,84.7 351.5,83.4 353.0,82.0 354.5,80.7 356.0,79.3 357.5,78.0 359.0,76.7 360.5,75.4 362.0,74.1 363.5,72.9 365.0,71.7 366.5,70.6 368.0,69.5 369.5,68.6 371.0,67.7 372.5,66.9 374.0,66.3 375.5,65.7 377.0,65.3 378.5,65.1 380.0,65.0 381.5,65.1 383.0,65.4 384.5,65.8 386.0,66.5 387.5,67.5 389.0,68.6 390.5,70.1 392.0,71.8 393.5,73.8 395.0,76.1 396.5,78.7 398.0,81.7 399.5,85.0 401.0,88.7 402.5,92.8 404.0,97.3 405.5,102.2 407.0,107.5 408.5,113.4 410.0,119.7 411.5,126.5 413.0,133.8 414.5,141.7 416.0,150.2 417.5,159.2 419.0,168.8 420.5,179.1 422.0,190.0 423.5,201.6 425.0,213.9 426.5,226.9 428.0,240.6 429.5,255.1 431.0,270.4 432.5,286.5 434.0,303.4 435.5,321.2 437.0,339.9 438.5,359.5 440.0,380.0 441.5,401.5 443.0,424.0 444.5,447.5 446.0,472.0 447.5,497.6 449.0,524.3 450.5,552.1 452.0,581.1 453.5,611.3 455.0,642.6 456.5,675.3 458.0,709.1 459.5,744.3 461.0,780.9 462.5,818.7 464.0,858.0 465.5,898.7 467.0,940.9 468.5,984.5 470.0,1029.7 471.5,1076.4 473.0,1124.7 474.5,1174.6 476.0,1226.2 477.5,1279.5 479.0,1334.5 480.5,1391.2 482.0,1449.7 483.5,1510.1 485.0,1572.3 486.5,1636.4 488.0,1702.5 489.5,1770.5 491.0,1840.6 492.5,1912.6 494.0,1986.8 495.5,2063.1 497.0,2141.5 498.5,2222.1 500.0,2305.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><circle cx=\"260\" cy=\"65\" r=\"4\" fill=\"#f59e0b\" stroke=\"#92400e\" stroke-width=\"1\"/><circle cx=\"320\" cy=\"100\" r=\"4\" fill=\"#f59e0b\" stroke=\"#92400e\" stroke-width=\"1\"/><circle cx=\"380\" cy=\"65\" r=\"4\" fill=\"#f59e0b\" stroke=\"#92400e\" stroke-width=\"1\"/><circle cx=\"285.3589838486225\" cy=\"80.55555555555556\" r=\"4\" fill=\"#f59e0b\" stroke=\"#92400e\" stroke-width=\"1\"/><circle cx=\"354.6410161513775\" cy=\"80.55555555555556\" r=\"4\" fill=\"#f59e0b\" stroke=\"#92400e\" stroke-width=\"1\"/><circle cx=\"216.07695154586736\" cy=\"205\" r=\"4\" fill=\"#f59e0b\" stroke=\"#92400e\" stroke-width=\"1\"/><circle cx=\"423.92304845413264\" cy=\"205\" r=\"4\" fill=\"#f59e0b\" stroke=\"#92400e\" stroke-width=\"1\"/><text x=\"500\" y=\"42\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#92400e\" >stationary / inflection / intercepts</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 2U Trials.pdf",
+            "school": "Ascham School",
+            "examType": "Trial HSC",
+            "year": 2020,
+            "grade": "11/12 Advanced",
+            "sourceQuestion": 24,
+            "sourcePart": "c",
+            "sourcePage": null,
+            "sourceTopic": "y12a-3E"
+          }
         }
       ]
     },
@@ -9327,6 +9489,57 @@
             "grade": "12"
           },
           "xp": 3
+        },
+        {
+          "id": "ascham2020-q34c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A small-sized home swimming pool contains 100 kL of water when full. A water pump cycles the water in and out of the pool through a filter for cleaning and treatment. The flow rate of the volume of water that the pump filters in and out of the swimming pool in kilolitres per minute (kL/min) is given by: \\(\\frac{dV}{dt}=-0.3\\sin\\left(\\frac{\\pi t}{30}\\right)\\). Find the minimum volume of water in the pool during the pumping cycle. Leave your answer in terms of \\(\\pi\\).",
+          "options": [
+            "\\(100-\\frac9\\pi\\text{ kL}\\)",
+            "\\(100-\\frac{18}{\\pi}\\text{ kL}\\)",
+            "\\(100+\\frac{18}{\\pi}\\text{ kL}\\)",
+            "\\(\\frac{18}{\\pi}\\text{ kL}\\)"
+          ],
+          "answer": 1,
+          "hint": "The volume reaches its minimum when the cosine term in the volume expression is −1.",
+          "keyPoints": [
+            {
+              "text": "minimum volume of water in the pool",
+              "note": "Use dV/dt=0 to find candidate extrema during the cycle, then compare the volume values."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the volume function from the preceding part.",
+              "work": "\\(V(t)=100+\\frac9\\pi\\left[\\cos\\left(\\frac{\\pi t}{30}\\right)-1\\right]\\)"
+            },
+            {
+              "explain": "Since cosine is at least −1, the smallest possible bracket value occurs when cosine equals −1.",
+              "work": "\\(\\cos\\left(\\frac{\\pi t}{30}\\right)=-1\\Rightarrow \\cos(\\cdots)-1=-2\\)"
+            },
+            {
+              "explain": "Substitute the minimum cosine value.",
+              "work": "\\(V_{\\min}=100+\\frac9\\pi(-2)=100-\\frac{18}{\\pi}\\)"
+            },
+            {
+              "explain": "Leave the exact answer in terms of π and include units.",
+              "work": "\\(\\boxed{100-\\frac{18}{\\pi}\\text{ kL}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 2U Trials.pdf",
+            "school": "Ascham School",
+            "examType": "Trial HSC",
+            "year": 2020,
+            "grade": "11/12 Advanced",
+            "sourceQuestion": 34,
+            "sourcePart": "c",
+            "sourcePage": null,
+            "sourceTopic": "y12a-3F"
+          }
         }
       ]
     },
@@ -12855,6 +13068,141 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 290\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:560px;height:auto;font-family:system-ui,-apple-system,sans-serif;\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"288\" rx=\"12\" fill=\"#ffffff\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"230\" x2=\"550\" y2=\"230\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"300\" y1=\"275\" x2=\"300\" y2=\"25\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M105 230 A195 195 0 0 1 495 230\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><path d=\"M183 74 L417 74 L417 230 L183 230 Z\" fill=\"#6366f1\" fill-opacity=\"0.14\" stroke=\"#334155\" stroke-width=\"2.5\"/><circle cx=\"417\" cy=\"74\" r=\"5\" fill=\"#4f46e5\"/><text x=\"426\" y=\"66\" fill=\"#4f46e5\" font-size=\"14\" font-weight=\"700\">P(x,y)</text><line x1=\"183\" y1=\"74\" x2=\"417\" y2=\"74\" stroke=\"#4f46e5\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><line x1=\"417\" y1=\"74\" x2=\"417\" y2=\"230\" stroke=\"#f59e0b\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><text x=\"300\" y=\"62\" fill=\"#4338ca\" font-size=\"14\" font-weight=\"700\" text-anchor=\"middle\">width = 2x</text><text x=\"428\" y=\"155\" fill=\"#b45309\" font-size=\"14\" font-weight=\"700\">height = y</text><text x=\"300\" y=\"250\" fill=\"#1e293b\" font-size=\"13\" font-weight=\"600\" text-anchor=\"middle\">0</text><text x=\"105\" y=\"250\" fill=\"#1e293b\" font-size=\"13\" font-weight=\"600\" text-anchor=\"middle\">−1</text><text x=\"495\" y=\"250\" fill=\"#1e293b\" font-size=\"13\" font-weight=\"600\" text-anchor=\"middle\">1</text><text x=\"300\" y=\"18\" fill=\"#1e293b\" font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\">y</text><text x=\"555\" y=\"235\" fill=\"#1e293b\" font-size=\"15\" font-weight=\"700\">x</text></svg>"
           }
+        },
+        {
+          "id": "ascham2020-q32",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A circular piece of tinplate of radius 10 cm has three segments removed, leaving the shaded shape as illustrated. The angle \\(\\theta\\) is measured in radians.",
+          "parts": [
+            {
+              "id": "ascham2020-q32a",
+              "type": "review",
+              "difficulty": "medium",
+              "stem": "Show the remaining shaded area is given by \\(A=50(\\theta+3\\sin\\theta)\\text{ cm}^2\\).",
+              "answer": "",
+              "manual": true,
+              "hint": "Separate the shaded shape into the sector with central angle θ and the three congruent triangles formed by the 10 cm radii.",
+              "keyPoints": [
+                {
+                  "text": "remaining shaded area",
+                  "note": "Separate the shaded region into its sector and three congruent triangles; use r=10 cm and radians."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "The sector of radius 10 and angle θ has area one-half r²θ.",
+                  "work": "\\(A_{\\rm sector}=\\frac12(10)^2\\theta=50\\theta\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 640 390\" role=\"img\"><rect x=\"15\" y=\"15\" width=\"610\" height=\"360\" fill=\"#fff\" stroke=\"#e2e8f0\" stroke-width=\"1\" rx=\"8\"/><circle cx=\"320\" cy=\"210\" r=\"125\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\"/><path d=\"M 255 100 A 125 125 0 0 1 385 100 L 390 320 L 250 320 Z\" fill=\"#dbeafe\" opacity=\".8\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"320\" y1=\"210\" x2=\"255\" y2=\"100\" stroke=\"#7c3aed\" stroke-width=\"3\" /><line x1=\"320\" y1=\"210\" x2=\"385\" y2=\"100\" stroke=\"#7c3aed\" stroke-width=\"3\" /><circle cx=\"320\" cy=\"210\" r=\"4\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"245\" y=\"90\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >B</text><text x=\"395\" y=\"90\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >C</text><text x=\"320\" y=\"214\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"15\" font-weight=\"500\" fill=\"#7c3aed\" >θ</text><line x1=\"240\" y1=\"165\" x2=\"304\" y2=\"212\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"220\" y=\"158\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#b45309\" >10 cm</text><path d=\"M 255 100 A 125 125 0 0 1 385 100\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"6\"/></svg>"
+                  }
+                },
+                {
+                  "explain": "Each of the three congruent triangles has two radii of 10 cm with included angle θ. Triangle area is one-half ab sin C.",
+                  "work": "\\(A_{\\rm triangle}=\\frac12(10)(10)\\sin\\theta=50\\sin\\theta\\)"
+                },
+                {
+                  "explain": "There are three such triangles, so their combined area is 150 sinθ.",
+                  "work": "\\(3A_{\\rm triangle}=150\\sin\\theta\\)"
+                },
+                {
+                  "explain": "Add sector and triangle areas.",
+                  "work": "\\(A=50\\theta+150\\sin\\theta=50(\\theta+3\\sin\\theta)\\text{ cm}^2\\)"
+                },
+                {
+                  "explain": "This gives the required area expression.",
+                  "work": "\\(\\boxed{A=50(\\theta+3\\sin\\theta)\\text{ cm}^2}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 640 390\" role=\"img\"><rect x=\"15\" y=\"15\" width=\"610\" height=\"360\" fill=\"#fff\" stroke=\"#e2e8f0\" stroke-width=\"1\" rx=\"8\"/><circle cx=\"320\" cy=\"210\" r=\"125\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\"/><path d=\"M 255 100 A 125 125 0 0 1 385 100 L 390 320 L 250 320 Z\" fill=\"#dbeafe\" opacity=\".8\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"320\" y1=\"210\" x2=\"255\" y2=\"100\" stroke=\"#7c3aed\" stroke-width=\"3\" /><line x1=\"320\" y1=\"210\" x2=\"385\" y2=\"100\" stroke=\"#7c3aed\" stroke-width=\"3\" /><circle cx=\"320\" cy=\"210\" r=\"4\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"245\" y=\"90\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >B</text><text x=\"395\" y=\"90\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >C</text><text x=\"320\" y=\"214\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"15\" font-weight=\"500\" fill=\"#7c3aed\" >θ</text><line x1=\"240\" y1=\"165\" x2=\"304\" y2=\"212\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"220\" y=\"158\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#b45309\" >10 cm</text><path d=\"M 255 100 A 125 125 0 0 1 385 100\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"6\"/></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Ascham 2020 2U Trials.pdf",
+                "school": "Ascham School",
+                "examType": "Trial HSC",
+                "year": 2020,
+                "grade": "11/12 Advanced",
+                "sourceQuestion": 32,
+                "sourcePart": "a",
+                "sourcePage": null,
+                "sourceTopic": "y12a-3G"
+              }
+            },
+            {
+              "id": "ascham2020-q32b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the angle \\(\\theta\\) so that the area of the shaded shape is a maximum. Answer correct to 2 decimal places.",
+              "options": [
+                "\\(0.34\\text{ rad}\\)",
+                "\\(1.57\\text{ rad}\\)",
+                "\\(1.91\\text{ rad}\\)",
+                "\\(2.80\\text{ rad}\\)"
+              ],
+              "answer": 2,
+              "hint": "Differentiate the area formula from the previous part and set its derivative equal to zero; check it gives a maximum.",
+              "keyPoints": [
+                {
+                  "text": "area of the shaded shape is a maximum",
+                  "note": "Differentiate the area expression from the previous part, solve A'=0, and check that the stationary value is a maximum."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Use the area function established in the preceding part.",
+                  "work": "\\(A(\\theta)=50(\\theta+3\\sin\\theta)\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 640 390\" role=\"img\"><rect x=\"15\" y=\"15\" width=\"610\" height=\"360\" fill=\"#fff\" stroke=\"#e2e8f0\" stroke-width=\"1\" rx=\"8\"/><circle cx=\"320\" cy=\"210\" r=\"125\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\"/><path d=\"M 255 100 A 125 125 0 0 1 385 100 L 390 320 L 250 320 Z\" fill=\"#dbeafe\" opacity=\".8\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"320\" y1=\"210\" x2=\"255\" y2=\"100\" stroke=\"#7c3aed\" stroke-width=\"3\" /><line x1=\"320\" y1=\"210\" x2=\"385\" y2=\"100\" stroke=\"#7c3aed\" stroke-width=\"3\" /><circle cx=\"320\" cy=\"210\" r=\"4\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"245\" y=\"90\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >B</text><text x=\"395\" y=\"90\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >C</text><text x=\"320\" y=\"214\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"15\" font-weight=\"500\" fill=\"#7c3aed\" >θ</text><line x1=\"240\" y1=\"165\" x2=\"304\" y2=\"212\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"220\" y=\"158\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#b45309\" >10 cm</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Differentiate with respect to θ.",
+                  "work": "\\(A\\prime(\\theta)=50(1+3\\cos\\theta)\\)"
+                },
+                {
+                  "explain": "At an interior maximum, set the first derivative to zero.",
+                  "work": "\\(1+3\\cos\\theta=0\\Rightarrow\\cos\\theta=-\\frac13\\)"
+                },
+                {
+                  "explain": "Solve within the geometrically allowed central-angle interval. The relevant value is arccos(−1/3).",
+                  "work": "\\(\\theta=\\cos^{-1}\\left(-\\frac13\\right)\\approx1.910633\\text{ rad}\\)"
+                },
+                {
+                  "explain": "The second derivative is −150 sinθ, which is negative at this angle, confirming a maximum. Round to two decimal places.",
+                  "work": "\\(A\\prime\\prime(\\theta)=-150\\sin\\theta<0\\Rightarrow\\boxed{\\theta=1.91\\text{ rad}}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 640 390\" role=\"img\"><rect x=\"15\" y=\"15\" width=\"610\" height=\"360\" fill=\"#fff\" stroke=\"#e2e8f0\" stroke-width=\"1\" rx=\"8\"/><circle cx=\"320\" cy=\"210\" r=\"125\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\"/><path d=\"M 255 100 A 125 125 0 0 1 385 100 L 390 320 L 250 320 Z\" fill=\"#dbeafe\" opacity=\".8\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"320\" y1=\"210\" x2=\"255\" y2=\"100\" stroke=\"#7c3aed\" stroke-width=\"3\" /><line x1=\"320\" y1=\"210\" x2=\"385\" y2=\"100\" stroke=\"#7c3aed\" stroke-width=\"3\" /><circle cx=\"320\" cy=\"210\" r=\"4\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"245\" y=\"90\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >B</text><text x=\"395\" y=\"90\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >C</text><text x=\"320\" y=\"214\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"15\" font-weight=\"500\" fill=\"#7c3aed\" >θ</text><line x1=\"240\" y1=\"165\" x2=\"304\" y2=\"212\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"220\" y=\"158\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#b45309\" >10 cm</text><path d=\"M 255 100 A 125 125 0 0 1 385 100\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"6\"/></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Ascham 2020 2U Trials.pdf",
+                "school": "Ascham School",
+                "examType": "Trial HSC",
+                "year": 2020,
+                "grade": "11/12 Advanced",
+                "sourceQuestion": 32,
+                "sourcePart": "b",
+                "sourcePage": null,
+                "sourceTopic": "y12a-3G"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Ascham 2020 2U Trials",
+            "sourceQuestion": 32
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 640 390\" role=\"img\"><rect x=\"15\" y=\"15\" width=\"610\" height=\"360\" fill=\"#fff\" stroke=\"#e2e8f0\" stroke-width=\"1\" rx=\"8\"/><circle cx=\"320\" cy=\"210\" r=\"125\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\"/><path d=\"M 255 100 A 125 125 0 0 1 385 100 L 390 320 L 250 320 Z\" fill=\"#dbeafe\" opacity=\".8\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"320\" y1=\"210\" x2=\"255\" y2=\"100\" stroke=\"#7c3aed\" stroke-width=\"3\" /><line x1=\"320\" y1=\"210\" x2=\"385\" y2=\"100\" stroke=\"#7c3aed\" stroke-width=\"3\" /><circle cx=\"320\" cy=\"210\" r=\"4\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"245\" y=\"90\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >B</text><text x=\"395\" y=\"90\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >C</text><text x=\"320\" y=\"214\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"15\" font-weight=\"500\" fill=\"#7c3aed\" >θ</text><line x1=\"240\" y1=\"165\" x2=\"304\" y2=\"212\" stroke=\"#f59e0b\" stroke-width=\"2\" /><text x=\"220\" y=\"158\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#b45309\" >10 cm</text></svg>"
+          },
+          "manual": true
         }
       ]
     },

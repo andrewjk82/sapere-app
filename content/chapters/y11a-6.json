@@ -27062,6 +27062,131 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "ascham2020-q18",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "There are plans to construct a series of straight paths at the top of a mountain. The paths will connect three landmarks: the cable car station C, the communications tower T and a camp site E, as shown in the diagram. The length of the path from C to T is 950 m and the length of the path from C to E is 1400 m. The bearing of the tower from the cable car station is 060°. The bearing of the camp site from the cable car station is 100°.",
+          "parts": [
+            {
+              "id": "ascham2020-q18a",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What is the length of the straight path between the communications tower T and the campsite E? Give your answer correct to two significant figures.",
+              "options": [
+                "\\(790\\text{ m}\\)",
+                "\\(910\\text{ m}\\)",
+                "\\(1,610\\text{ m}\\)",
+                "\\(1,850\\text{ m}\\)"
+              ],
+              "answer": 1,
+              "hint": "Subtract the two bearings to find the included angle at C, then use the cosine rule with sides CT and CE.",
+              "keyPoints": [
+                {
+                  "text": "length of the straight path",
+                  "note": "Subtract the bearings measured clockwise from north to find the included angle at C, then use the cosine rule."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Both bearings start at north at C, so the included angle between paths CT and CE is their difference.",
+                  "work": "\\(\\angle TCE=100^\\circ-60^\\circ=40^\\circ\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 640 400\" role=\"img\"><rect x=\"15\" y=\"15\" width=\"610\" height=\"370\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><defs><marker id=\"northArrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"3.5\" refY=\"1\" orient=\"auto\"><path d=\"M0 7 L3.5 0 L7 7 Z\" fill=\"#64748b\"/></marker></defs><line x1=\"120.0\" y1=\"295.0\" x2=\"120.0\" y2=\"237.0\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" marker-end=\"url(#northArrow)\"/><text x=\"120.0\" y=\"230.0\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\">N</text><line x1=\"284.5\" y1=\"200.0\" x2=\"284.5\" y2=\"142.0\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" marker-end=\"url(#northArrow)\"/><text x=\"284.5\" y=\"135.0\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\">N</text><line x1=\"395.7\" y1=\"343.6\" x2=\"395.7\" y2=\"285.6\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" marker-end=\"url(#northArrow)\"/><text x=\"395.7\" y=\"278.6\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\">N</text><line x1=\"120.0\" y1=\"295.0\" x2=\"284.5\" y2=\"200.0\" stroke=\"#16a34a\" stroke-width=\"3.2\"/><line x1=\"120.0\" y1=\"295.0\" x2=\"395.7\" y2=\"343.6\" stroke=\"#16a34a\" stroke-width=\"3.2\"/><line x1=\"284.5\" y1=\"200.0\" x2=\"395.7\" y2=\"343.6\" stroke=\"#334155\" stroke-width=\"2.6\"/><path d=\"M120.0 268.0 A27 27 0 0 1 143.4 281.5\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.0\"/><path d=\"M120.0 213.0 A82 82 0 0 1 200.8 309.2\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.0\"/><path d=\"M135.6 286.0 A18 18 0 0 1 137.7 298.1\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"3.5\"/><text x=\"155.0\" y=\"254.0\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"500\" fill=\"#7c3aed\">060°</text><text x=\"187.0\" y=\"224.0\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"500\" fill=\"#7c3aed\">100°</text><text x=\"155.0\" y=\"291.0\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#16a34a\">40°</text><text x=\"199.3\" y=\"237.5\" transform=\"rotate(-30 199.3 237.5)\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">950 m</text><text x=\"269.9\" y=\"341.3\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\">1400 m</text><circle cx=\"120.0\" cy=\"295.0\" r=\"4\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"110.0\" y=\"315.0\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">C</text><circle cx=\"284.5\" cy=\"200.0\" r=\"4\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"292.5\" y=\"196.0\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">T</text><circle cx=\"395.7\" cy=\"343.6\" r=\"4\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"405.7\" y=\"360.6\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">E</text></svg>"
+                  }
+                },
+                {
+                  "explain": "The known sides adjacent to this included angle are CT=950 m and CE=1400 m. The unknown side TE is opposite the 40° angle.",
+                  "work": "\\(TE^2=950^2+1400^2-2(950)(1400)\\cos40^\\circ\\)"
+                },
+                {
+                  "explain": "Evaluate the right-hand side and take the positive square root because a length is positive.",
+                  "work": "\\(TE=\\sqrt{950^2+1400^2-2(950)(1400)\\cos40^\\circ}\\approx908.197\\text{ m}\\)"
+                },
+                {
+                  "explain": "Round 908.197 m to two significant figures.",
+                  "work": "\\(\\boxed{TE\\approx910\\text{ m}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Ascham 2020 2U Trials.pdf",
+                "school": "Ascham School",
+                "examType": "Trial HSC",
+                "year": 2020,
+                "grade": "11/12 Advanced",
+                "sourceQuestion": 18,
+                "sourcePart": "a",
+                "sourcePage": null,
+                "sourceTopic": "y11a-6J"
+              }
+            },
+            {
+              "id": "ascham2020-q18b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Use your answer from (a) to find the true bearing of the camp site E from the communications tower T.",
+              "options": [
+                "\\(128^\\circ\\)",
+                "\\(142^\\circ\\)",
+                "\\(218^\\circ\\)",
+                "\\(322^\\circ\\)"
+              ],
+              "answer": 1,
+              "hint": "At T, the back bearing from T to C is 240°. Use the triangle’s angle at T to turn from this direction toward E.",
+              "keyPoints": [
+                {
+                  "text": "Use your answer from (a)",
+                  "note": "Find the interior angle at T using all three side lengths, then relate it to the back bearing from T to C."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "The back bearing from T to C is 060°+180°=240°. The triangle angle at T can be found using the sine rule; side CE=1400 is opposite T, and side TE≈908 m is opposite C=40°.",
+                  "work": "\\(\\frac{\\sin T}{1400}=\\frac{\\sin40^\\circ}{908.197}\\Rightarrow \\sin T\\approx0.992\\)"
+                },
+                {
+                  "explain": "Using the cosine rule avoids the ambiguous inverse-sine branch and gives the interior angle at T.",
+                  "work": "\\(\\cos T=\\frac{950^2+908.197^2-1400^2}{2(950)(908.197)}\\approx-0.136\\Rightarrow T\\approx97.8^\\circ\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 640 400\" role=\"img\"><rect x=\"15\" y=\"15\" width=\"610\" height=\"370\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><defs><marker id=\"northArrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"3.5\" refY=\"1\" orient=\"auto\"><path d=\"M0 7 L3.5 0 L7 7 Z\" fill=\"#64748b\"/></marker></defs><line x1=\"120.0\" y1=\"295.0\" x2=\"120.0\" y2=\"237.0\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" marker-end=\"url(#northArrow)\"/><text x=\"120.0\" y=\"230.0\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\">N</text><line x1=\"284.5\" y1=\"200.0\" x2=\"284.5\" y2=\"142.0\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" marker-end=\"url(#northArrow)\"/><text x=\"284.5\" y=\"135.0\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\">N</text><line x1=\"395.7\" y1=\"343.6\" x2=\"395.7\" y2=\"285.6\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" marker-end=\"url(#northArrow)\"/><text x=\"395.7\" y=\"278.6\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\">N</text><line x1=\"120.0\" y1=\"295.0\" x2=\"284.5\" y2=\"200.0\" stroke=\"#16a34a\" stroke-width=\"3.2\"/><line x1=\"120.0\" y1=\"295.0\" x2=\"395.7\" y2=\"343.6\" stroke=\"#f59e0b\" stroke-width=\"3.0\"/><line x1=\"284.5\" y1=\"200.0\" x2=\"395.7\" y2=\"343.6\" stroke=\"#dc2626\" stroke-width=\"3.5\"/><path d=\"M120.0 268.0 A27 27 0 0 1 143.4 281.5\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.0\"/><path d=\"M120.0 213.0 A82 82 0 0 1 200.8 309.2\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.0\"/><path d=\"M135.6 286.0 A18 18 0 0 1 137.7 298.1\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.0\"/><text x=\"155.0\" y=\"254.0\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"500\" fill=\"#7c3aed\">060°</text><text x=\"187.0\" y=\"224.0\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"500\" fill=\"#7c3aed\">100°</text><text x=\"155.0\" y=\"291.0\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#334155\">40°</text><path d=\"M303.5 224.5 A31 31 0 0 1 257.7 215.5\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3.5\"/><text x=\"274.5\" y=\"255.0\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\">97.8°</text><text x=\"199.3\" y=\"237.5\" transform=\"rotate(-30 199.3 237.5)\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">950 m</text><text x=\"269.9\" y=\"341.3\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\">1400 m</text><text x=\"329.1\" y=\"275.8\" transform=\"rotate(52.3 329.1 275.8)\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#dc2626\">908.2 m</text><circle cx=\"120.0\" cy=\"295.0\" r=\"4\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"110.0\" y=\"315.0\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">C</text><circle cx=\"284.5\" cy=\"200.0\" r=\"4\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"292.5\" y=\"196.0\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">T</text><circle cx=\"395.7\" cy=\"343.6\" r=\"4\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"405.7\" y=\"360.6\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">E</text></svg>"
+                  }
+                },
+                {
+                  "explain": "From the 240° direction T→C, rotate anticlockwise by the interior angle toward E. Bearings are measured clockwise from north.",
+                  "work": "\\(240^\\circ-97.8^\\circ=142.2^\\circ\\)"
+                },
+                {
+                  "explain": "Write a three-figure true bearing.",
+                  "work": "\\(\\boxed{142^\\circ}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Ascham 2020 2U Trials.pdf",
+                "school": "Ascham School",
+                "examType": "Trial HSC",
+                "year": 2020,
+                "grade": "11/12 Advanced",
+                "sourceQuestion": 18,
+                "sourcePart": "b",
+                "sourcePage": null,
+                "sourceTopic": "y11a-6J"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Ascham 2020 2U Trials",
+            "sourceQuestion": 18
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 640 400\" role=\"img\"><rect x=\"15\" y=\"15\" width=\"610\" height=\"370\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><defs><marker id=\"northArrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"3.5\" refY=\"1\" orient=\"auto\"><path d=\"M0 7 L3.5 0 L7 7 Z\" fill=\"#64748b\"/></marker></defs><line x1=\"120.0\" y1=\"295.0\" x2=\"120.0\" y2=\"237.0\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" marker-end=\"url(#northArrow)\"/><text x=\"120.0\" y=\"230.0\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\">N</text><line x1=\"284.5\" y1=\"200.0\" x2=\"284.5\" y2=\"142.0\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" marker-end=\"url(#northArrow)\"/><text x=\"284.5\" y=\"135.0\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\">N</text><line x1=\"395.7\" y1=\"343.6\" x2=\"395.7\" y2=\"285.6\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" marker-end=\"url(#northArrow)\"/><text x=\"395.7\" y=\"278.6\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\">N</text><line x1=\"120.0\" y1=\"295.0\" x2=\"284.5\" y2=\"200.0\" stroke=\"#334155\" stroke-width=\"2.6\"/><line x1=\"120.0\" y1=\"295.0\" x2=\"395.7\" y2=\"343.6\" stroke=\"#334155\" stroke-width=\"2.6\"/><line x1=\"284.5\" y1=\"200.0\" x2=\"395.7\" y2=\"343.6\" stroke=\"#334155\" stroke-width=\"2.6\"/><path d=\"M120.0 268.0 A27 27 0 0 1 143.4 281.5\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.0\"/><path d=\"M120.0 213.0 A82 82 0 0 1 200.8 309.2\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.0\"/><path d=\"M135.6 286.0 A18 18 0 0 1 137.7 298.1\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.0\"/><text x=\"155.0\" y=\"254.0\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"500\" fill=\"#7c3aed\">060°</text><text x=\"187.0\" y=\"224.0\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"500\" fill=\"#7c3aed\">100°</text><text x=\"155.0\" y=\"291.0\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#334155\">40°</text><text x=\"199.3\" y=\"237.5\" transform=\"rotate(-30 199.3 237.5)\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">950 m</text><text x=\"269.9\" y=\"341.3\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\">1400 m</text><circle cx=\"120.0\" cy=\"295.0\" r=\"4\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"110.0\" y=\"315.0\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">C</text><circle cx=\"284.5\" cy=\"200.0\" r=\"4\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"292.5\" y=\"196.0\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">T</text><circle cx=\"395.7\" cy=\"343.6\" r=\"4\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"405.7\" y=\"360.6\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">E</text></svg>"
+          }
         }
       ]
     },

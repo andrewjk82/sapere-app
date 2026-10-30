@@ -35689,6 +35689,118 @@
             "source": "Ascham 2020 Trial Q16",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "ascham2020-q16",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Ali decides to turn her crochet hobby into a small not-for-profit business. She spends $60 on equipment and estimates that it costs her $16 to manufacture each crochet doll. She plans to sell each doll for $20.",
+          "parts": [
+            {
+              "id": "ascham2020-q16a",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Write equations for the cost \\(C\\), and income \\(I\\), for the sale of \\(x\\) items.",
+              "options": [
+                "\\(C=60+16x,\\ I=20x\\)",
+                "\\(C=16x,\\ I=60+20x\\)",
+                "\\(C=60+20x,\\ I=16x\\)",
+                "\\(C=76x,\\ I=20x\\)"
+              ],
+              "answer": 0,
+              "hint": "Cost includes the one-off $60 equipment expense; income is the selling price multiplied by the number sold.",
+              "keyPoints": [
+                {
+                  "text": "Write equations for the cost",
+                  "note": "The $60 equipment purchase is a fixed cost; add $16 per doll, while income is $20 per doll."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "The cost contains a fixed equipment cost plus a cost for every doll made.",
+                  "work": "\\(C=60+16x\\)"
+                },
+                {
+                  "explain": "Income has no fixed component: each of x dolls brings in $20.",
+                  "work": "\\(I=20x\\)"
+                },
+                {
+                  "explain": "Keep the fixed amount in the cost equation, not in the income equation.",
+                  "work": "\\(\\boxed{C=60+16x,\\quad I=20x}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Ascham 2020 2U Trials.pdf",
+                "school": "Ascham School",
+                "examType": "Trial HSC",
+                "year": 2020,
+                "grade": "11/12 Advanced",
+                "sourceQuestion": 16,
+                "sourcePart": "a",
+                "sourcePage": null,
+                "sourceTopic": "y11a-1E"
+              }
+            },
+            {
+              "id": "ascham2020-q16b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Solve the equations simultaneously to determine the number of dolls Ali needs to sell to break even.",
+              "options": [
+                "12 dolls",
+                "15 dolls",
+                "20 dolls",
+                "30 dolls"
+              ],
+              "answer": 1,
+              "hint": "At break-even, set the cost equation equal to the income equation.",
+              "keyPoints": [
+                {
+                  "text": "Solve the equations simultaneously",
+                  "note": "At break-even, set the cost and income expressions equal and solve for the number sold."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Use the equations for this business: cost is fixed equipment plus production cost; income is selling revenue.",
+                  "work": "\\(C=60+16x,\\quad I=20x\\)"
+                },
+                {
+                  "explain": "Break-even means the two amounts are equal.",
+                  "work": "\\(60+16x=20x\\)"
+                },
+                {
+                  "explain": "Subtract 16x from both sides, then divide by 4.",
+                  "work": "\\(60=4x\\Rightarrow x=15\\)"
+                },
+                {
+                  "explain": "Ali must sell 15 dolls for cost and income to match.",
+                  "work": "\\(C=60+16(15)=300,\\quad I=20(15)=300\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Ascham 2020 2U Trials.pdf",
+                "school": "Ascham School",
+                "examType": "Trial HSC",
+                "year": 2020,
+                "grade": "11/12 Advanced",
+                "sourceQuestion": 16,
+                "sourcePart": "b",
+                "sourcePage": null,
+                "sourceTopic": "y11a-1E"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Ascham 2020 2U Trials",
+            "sourceQuestion": 16
+          }
         }
       ]
     },

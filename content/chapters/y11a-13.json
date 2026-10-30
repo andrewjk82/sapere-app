@@ -426,6 +426,63 @@
             "sourcePage": "10",
             "sourceQuestion": 15
           }
+        },
+        {
+          "id": "ascham2020-q06",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which of the following is a discrete probability distribution?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 640 200\" role=\"img\"><rect x=\"0\" y=\"0\" width=\"640\" height=\"200\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1\" /><line x1=\"128.0\" y1=\"0\" x2=\"128.0\" y2=\"200\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"256.0\" y1=\"0\" x2=\"256.0\" y2=\"200\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"384.0\" y1=\"0\" x2=\"384.0\" y2=\"200\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"512.0\" y1=\"0\" x2=\"512.0\" y2=\"200\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"0\" y1=\"40\" x2=\"640\" y2=\"40\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"0\" y1=\"80\" x2=\"640\" y2=\"80\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"0\" y1=\"120\" x2=\"640\" y2=\"120\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"0\" y1=\"160\" x2=\"640\" y2=\"160\" stroke=\"#64748b\" stroke-width=\"1\" /><text x=\"64.0\" y=\"26.400000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" >Option</text><text x=\"192.0\" y=\"26.400000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" >P(X=1)</text><text x=\"320.0\" y=\"26.400000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" >P(X=2)</text><text x=\"448.0\" y=\"26.400000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" >P(X=3)</text><text x=\"576.0\" y=\"26.400000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" >P(X=4)</text><text x=\"64.0\" y=\"66.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >A</text><text x=\"192.0\" y=\"66.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >.23</text><text x=\"320.0\" y=\"66.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >.16</text><text x=\"448.0\" y=\"66.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >.35</text><text x=\"576.0\" y=\"66.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >.25</text><text x=\"64.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >B</text><text x=\"192.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >.27</text><text x=\"320.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >.61</text><text x=\"448.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >−.31</text><text x=\"576.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >.43</text><text x=\"64.0\" y=\"146.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >C</text><text x=\"192.0\" y=\"146.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >.14</text><text x=\"320.0\" y=\"146.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >.32</text><text x=\"448.0\" y=\"146.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >.48</text><text x=\"576.0\" y=\"146.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >.07</text><text x=\"64.0\" y=\"186.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >D</text><text x=\"192.0\" y=\"186.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >.19</text><text x=\"320.0\" y=\"186.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >.29</text><text x=\"448.0\" y=\"186.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >.25</text><text x=\"576.0\" y=\"186.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >.27</text></svg>"
+          },
+          "options": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ],
+          "answer": 3,
+          "hint": "A valid distribution has no negative probabilities and all listed probabilities add to 1.",
+          "keyPoints": [
+            {
+              "text": "discrete probability distribution",
+              "note": "Check that every probability is between 0 and 1 and that all probabilities add to 1."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Check the conditions for each row: every probability must lie between 0 and 1, and the row total must equal 1.",
+              "work": "\\(0\\le P(X=x)\\le1,\\quad\\sum P(X=x)=1\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 640 200\" role=\"img\"><rect x=\"0\" y=\"0\" width=\"640\" height=\"200\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1\" /><line x1=\"128.0\" y1=\"0\" x2=\"128.0\" y2=\"200\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"256.0\" y1=\"0\" x2=\"256.0\" y2=\"200\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"384.0\" y1=\"0\" x2=\"384.0\" y2=\"200\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"512.0\" y1=\"0\" x2=\"512.0\" y2=\"200\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"0\" y1=\"40\" x2=\"640\" y2=\"40\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"0\" y1=\"80\" x2=\"640\" y2=\"80\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"0\" y1=\"120\" x2=\"640\" y2=\"120\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"0\" y1=\"160\" x2=\"640\" y2=\"160\" stroke=\"#64748b\" stroke-width=\"1\" /><text x=\"64.0\" y=\"26.400000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" >Option</text><text x=\"192.0\" y=\"26.400000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" >P(X=1)</text><text x=\"320.0\" y=\"26.400000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" >P(X=2)</text><text x=\"448.0\" y=\"26.400000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" >P(X=3)</text><text x=\"576.0\" y=\"26.400000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" >P(X=4)</text><text x=\"64.0\" y=\"66.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >A</text><text x=\"192.0\" y=\"66.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >.23</text><text x=\"320.0\" y=\"66.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >.16</text><text x=\"448.0\" y=\"66.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >.35</text><text x=\"576.0\" y=\"66.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >.25</text><text x=\"64.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >B</text><text x=\"192.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >.27</text><text x=\"320.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >.61</text><text x=\"448.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >−.31</text><text x=\"576.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >.43</text><text x=\"64.0\" y=\"146.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >C</text><text x=\"192.0\" y=\"146.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >.14</text><text x=\"320.0\" y=\"146.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >.32</text><text x=\"448.0\" y=\"146.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >.48</text><text x=\"576.0\" y=\"146.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >.07</text><text x=\"64.0\" y=\"186.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >D</text><text x=\"192.0\" y=\"186.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >.19</text><text x=\"320.0\" y=\"186.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >.29</text><text x=\"448.0\" y=\"186.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >.25</text><text x=\"576.0\" y=\"186.0\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >.27</text></svg>"
+              }
+            },
+            {
+              "explain": "Option A totals 0.99; option B contains −0.31; option C totals 1.01.",
+              "work": "\\(A:0.23+0.16+0.35+0.25=0.99\\)"
+            },
+            {
+              "explain": "Option D has non-negative values and totals exactly 1.",
+              "work": "\\(0.19+0.29+0.25+0.27=1.00\\)"
+            },
+            {
+              "explain": "Only D satisfies both requirements.",
+              "work": "\\(\\boxed{\\text{Option D}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 2U Trials.pdf",
+            "school": "Ascham School",
+            "examType": "Trial HSC",
+            "year": 2020,
+            "grade": "11/12 Advanced",
+            "sourceQuestion": 6,
+            "sourcePart": null,
+            "sourcePage": null,
+            "sourceTopic": "y11a-13A"
+          }
         }
       ]
     },

@@ -6436,6 +6436,61 @@
           ],
           "answer": "Refer to proof steps for parts a and b.",
           "solution": "See detailed steps below."
+        },
+        {
+          "id": "ascham2020-q23",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value(s) of \\(k\\), where \\(k\ne0\\), given that \\(x^2+8kx+k=0\\) has two equal roots.",
+          "options": [
+            "\\(k=0\\)",
+            "\\(k=\\frac1{16}\\)",
+            "\\(k=-\\frac1{16}\\)",
+            "\\(k=16\\)"
+          ],
+          "answer": 1,
+          "hint": "A quadratic has equal roots when its discriminant is zero.",
+          "keyPoints": [
+            {
+              "text": "two equal roots",
+              "note": "For a quadratic to have a repeated root, set its discriminant equal to zero and keep the given restriction k≠0."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "For \\(ax^2+bx+c=0\\), the discriminant is \\(b^2-4ac\\). Equal roots require a zero discriminant.",
+              "work": "\\(a=1,\\quad b=8k,\\quad c=k\\)"
+            },
+            {
+              "explain": "Substitute the coefficients into the discriminant condition.",
+              "work": "\\((8k)^2-4(1)(k)=0\\Rightarrow64k^2-4k=0\\)"
+            },
+            {
+              "explain": "Factor the expression and use the stated restriction k≠0.",
+              "work": "\\(4k(16k-1)=0\\Rightarrow k=0\\text{ or }16k-1=0\\)"
+            },
+            {
+              "explain": "Reject k=0 because it is excluded, leaving the non-zero value.",
+              "work": "\\(16k=1\\Rightarrow k=\\frac1{16}\\)"
+            },
+            {
+              "explain": "The required value is 1/16.",
+              "work": "\\(\\boxed{k=\\frac1{16}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 2U Trials.pdf",
+            "school": "Ascham School",
+            "examType": "Trial HSC",
+            "year": 2020,
+            "grade": "11/12 Advanced",
+            "sourceQuestion": 23,
+            "sourcePart": null,
+            "sourcePage": null,
+            "sourceTopic": "y11a-4C"
+          }
         }
       ]
     },

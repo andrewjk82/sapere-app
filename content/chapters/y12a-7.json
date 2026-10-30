@@ -1012,6 +1012,57 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 350\" width=\"50%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif;height:auto;max-width:100%\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"348\" rx=\"12\" fill=\"#ffffff\" stroke=\"#e2e8f0\" stroke-width=\"2\"/><defs><pattern id=\"stem_grid\" width=\"27.5\" height=\"22\" patternUnits=\"userSpaceOnUse\"><path d=\"M 27.5 0 L 0 0 0 22\" fill=\"none\" stroke=\"#f1f5f9\" stroke-width=\"1\"/></pattern></defs><rect x=\"50\" y=\"30\" width=\"510\" height=\"290\" fill=\"url(#stem_grid)\" /><line x1=\"200\" y1=\"92\" x2=\"200\" y2=\"180\" stroke=\"#cbd5e1\" stroke-width=\"1.5\" stroke-dasharray=\"4,4\"/><line x1=\"90\" y1=\"92\" x2=\"200\" y2=\"92\" stroke=\"#cbd5e1\" stroke-width=\"1.5\" stroke-dasharray=\"4,4\"/><line x1=\"365\" y1=\"180\" x2=\"365\" y2=\"290\" stroke=\"#cbd5e1\" stroke-width=\"1.5\" stroke-dasharray=\"4,4\"/><line x1=\"90\" y1=\"290\" x2=\"365\" y2=\"290\" stroke=\"#cbd5e1\" stroke-width=\"1.5\" stroke-dasharray=\"4,4\"/><line x1=\"60\" y1=\"180\" x2=\"550\" y2=\"180\" stroke=\"#475569\" stroke-width=\"2\"/><polygon points=\"550,176 558,180 550,184\" fill=\"#475569\"/><line x1=\"90\" y1=\"320\" x2=\"90\" y2=\"40\" stroke=\"#475569\" stroke-width=\"2\"/><polygon points=\"86,40 90,32 94,40\" fill=\"#475569\"/><text x=\"545\" y=\"202\" fill=\"#1e293b\" font-size=\"13\" font-weight=\"bold\">t (s)</text><text x=\"98\" y=\"48\" fill=\"#1e293b\" font-size=\"13\" font-weight=\"bold\">v (m/s)</text><line x1=\"90\" y1=\"176\" x2=\"90\" y2=\"184\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"80\" y=\"196\" fill=\"#64748b\" font-size=\"12\" text-anchor=\"end\">0</text><line x1=\"145\" y1=\"177\" x2=\"145\" y2=\"183\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"145\" y=\"198\" fill=\"#64748b\" font-size=\"12\" text-anchor=\"middle\">1</text><line x1=\"200\" y1=\"176\" x2=\"200\" y2=\"184\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"200\" y=\"198\" fill=\"#64748b\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"bold\">2</text><line x1=\"255\" y1=\"177\" x2=\"255\" y2=\"183\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"255\" y=\"198\" fill=\"#64748b\" font-size=\"12\" text-anchor=\"middle\">3</text><line x1=\"310\" y1=\"176\" x2=\"310\" y2=\"184\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"310\" y=\"198\" fill=\"#64748b\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"bold\">4</text><line x1=\"365\" y1=\"176\" x2=\"365\" y2=\"184\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"365\" y=\"198\" fill=\"#64748b\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"bold\">5</text><line x1=\"420\" y1=\"177\" x2=\"420\" y2=\"183\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"420\" y=\"198\" fill=\"#64748b\" font-size=\"12\" text-anchor=\"middle\">6</text><line x1=\"475\" y1=\"177\" x2=\"475\" y2=\"183\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"475\" y=\"198\" fill=\"#64748b\" font-size=\"12\" text-anchor=\"middle\">7</text><line x1=\"86\" y1=\"92\" x2=\"94\" y2=\"92\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"80\" y=\"96\" fill=\"#64748b\" font-size=\"12\" text-anchor=\"end\" font-weight=\"bold\">4</text><line x1=\"86\" y1=\"290\" x2=\"94\" y2=\"290\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"80\" y=\"294\" fill=\"#64748b\" font-size=\"12\" text-anchor=\"end\" font-weight=\"bold\">-5</text><path d=\"M 90 180 Q 200 4 310 180 Q 337.5 224 365 290\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"365\" y1=\"290\" x2=\"520\" y2=\"290\" stroke=\"#2563eb\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><circle cx=\"200\" cy=\"92\" r=\"4.5\" fill=\"#2563eb\"/><text x=\"200\" y=\"78\" fill=\"#1d4ed8\" font-size=\"12\" font-weight=\"bold\" text-anchor=\"middle\">(2, 4)</text><circle cx=\"310\" cy=\"180\" r=\"4.5\" fill=\"#2563eb\"/><text x=\"318\" y=\"170\" fill=\"#1d4ed8\" font-size=\"12\" font-weight=\"bold\">(4, 0)</text><circle cx=\"365\" cy=\"290\" r=\"4.5\" fill=\"#2563eb\"/><text x=\"375\" y=\"306\" fill=\"#1d4ed8\" font-size=\"12\" font-weight=\"bold\">(5, -5)</text><rect x=\"180\" y=\"105\" width=\"105\" height=\"24\" rx=\"4\" fill=\"#ffffff\" fill-opacity=\"0.85\"/><text x=\"185\" y=\"122\" fill=\"#2563eb\" font-size=\"13\" font-weight=\"bold\">v = 4t - t²</text><rect x=\"420\" y=\"260\" width=\"85\" height=\"24\" rx=\"4\" fill=\"#ffffff\" fill-opacity=\"0.85\"/><text x=\"425\" y=\"277\" fill=\"#2563eb\" font-size=\"13\" font-weight=\"bold\">v = -5</text></svg>"
           }
+        },
+        {
+          "id": "ascham2020-q34a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A small-sized home swimming pool contains 100 kL of water when full. A water pump cycles the water in and out of the pool through a filter for cleaning and treatment. The flow rate of the volume of water that the pump filters in and out of the swimming pool in kilolitres per minute (kL/min) is given by: \\(\\frac{dV}{dt}=-0.3\\sin\\left(\\frac{\\pi t}{30}\\right)\\). At 9:45 am the swimming pool is full and the pump is switched on. What is the first time after 9:45 am at which the flow rate is zero?",
+          "options": [
+            "10:00 am",
+            "10:15 am",
+            "10:30 am",
+            "11:15 am"
+          ],
+          "answer": 1,
+          "hint": "Set the sine factor equal to zero and find its first positive time after t=0.",
+          "keyPoints": [
+            {
+              "text": "flow rate is zero",
+              "note": "Set the given rate expression to zero and find the first positive time after the pump starts."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The constant −0.3 is nonzero, so the flow rate is zero when the sine factor is zero.",
+              "work": "\\(\\sin\\left(\\frac{\\pi t}{30}\\right)=0\\)"
+            },
+            {
+              "explain": "Sine is zero when its angle is an integer multiple of π. The first positive angle after the start is π.",
+              "work": "\\(\\frac{\\pi t}{30}=\\pi\\)"
+            },
+            {
+              "explain": "Solve for elapsed time.",
+              "work": "\\(t=30\\text{ minutes}\\)"
+            },
+            {
+              "explain": "Thirty minutes after 9:45 am is 10:15 am.",
+              "work": "\\(\\boxed{10{:}15\\text{ am}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 2U Trials.pdf",
+            "school": "Ascham School",
+            "examType": "Trial HSC",
+            "year": 2020,
+            "grade": "11/12 Advanced",
+            "sourceQuestion": 34,
+            "sourcePart": "a",
+            "sourcePage": null,
+            "sourceTopic": "y12a-7C"
+          }
         }
       ]
     },

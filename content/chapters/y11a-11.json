@@ -4220,6 +4220,56 @@
             "grade": "12"
           },
           "xp": 2
+        },
+        {
+          "id": "ascham2020-q15",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A sector of angle \\(\\frac{2\\pi}{3}\\) is cut out of a circular piece of paper of radius 10 cm and removed. The cut edges of the remaining paper are brought together to shape the paper into a cone. Find the exact circumference of the circular base of the cone.",
+          "options": [
+            "\\(\\frac{20\\pi}{3}\\text{ cm}\\)",
+            "\\(\\frac{40\\pi}{3}\\text{ cm}\\)",
+            "\\(\\frac{50\\pi}{3}\\text{ cm}\\)",
+            "\\(20\\pi\\text{ cm}\\)"
+          ],
+          "answer": 1,
+          "hint": "The cone’s base circumference equals the arc length of the paper that remains after the sector is removed. First find the remaining angle.",
+          "keyPoints": [
+            {
+              "text": "\\frac{2\\pi}{3}",
+              "note": "Subtract the removed central angle from a full turn before finding the remaining arc length."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "A full circle has angle size \\(2\\pi\\) radians. The removed sector has angle \\(2\\pi/3\\), so the remaining piece has angle \\(2\\pi-2\\pi/3\\).",
+              "work": "\\(\\theta_{\\mathrm{remaining}}=2\\pi-\\frac{2\\pi}{3}=\\frac{4\\pi}{3}\\)"
+            },
+            {
+              "explain": "When the cut edges are joined, the remaining curved edge becomes the circumference of the cone’s circular base. Arc length is \\(s=r\\theta\\), with θ measured in radians.",
+              "work": "\\(s=r\\theta=10\\left(\\frac{4\\pi}{3}\\right)\\)"
+            },
+            {
+              "explain": "Multiply the radius by the remaining angle to get the exact arc length.",
+              "work": "\\(s=\\frac{40\\pi}{3}\\text{ cm}\\)"
+            },
+            {
+              "explain": "That curved edge is exactly the circumference of the new cone base.",
+              "work": "\\(\\boxed{C=\\frac{40\\pi}{3}\\text{ cm}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 2U Trials",
+            "school": "Ascham School",
+            "examType": "Trial HSC",
+            "year": 2020,
+            "grade": "11 Advanced",
+            "sourceQuestion": 15,
+            "sourcePage": 12,
+            "sourceTopic": "11C Arcs and sectors of circles"
+          }
         }
       ]
     },

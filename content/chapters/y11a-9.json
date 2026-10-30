@@ -1523,6 +1523,57 @@
               "work": "\\(\\boxed{y′=\\frac{16}{(1-2x)^2}}\\)"
             }
           ]
+        },
+        {
+          "id": "ascham2020-q13",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Differentiate \\((e^x+x)^4\\).",
+          "options": [
+            "\\(4(e^x+x)^3\\)",
+            "\\(4(e^x+x)^3(e^x+1)\\)",
+            "\\((e^x+x)^3(e^x+1)\\)",
+            "\\(4(e^x+x)^3e^x\\)"
+          ],
+          "answer": 1,
+          "hint": "Treat the bracket as an inner function and multiply by its derivative after differentiating the fourth power.",
+          "keyPoints": [
+            {
+              "text": "(e^x+x)^4",
+              "note": "Use the chain rule: differentiate the outside fourth power, then multiply by the derivative of the inside sum."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify outer function \\(u^4\\) and inner function \\(u=e^x+x\\).",
+              "work": "\\(\\frac{d}{dx}(u^4)=4u^3\\frac{du}{dx}\\)"
+            },
+            {
+              "explain": "Differentiate the inside term by term.",
+              "work": "\\(\\frac{du}{dx}=\\frac{d}{dx}(e^x)+\\frac{d}{dx}(x)=e^x+1\\)"
+            },
+            {
+              "explain": "Substitute the original bracket for \\(u\\).",
+              "work": "\\(\\frac{d}{dx}(e^x+x)^4=4(e^x+x)^3(e^x+1)\\)"
+            },
+            {
+              "explain": "The factor \\(e^x+1\\) is the chain-rule factor.",
+              "work": "\\(\\boxed{4(e^x+x)^3(e^x+1)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 2U Trials.pdf",
+            "school": "Ascham School",
+            "examType": "Trial HSC",
+            "year": 2020,
+            "grade": "11/12 Advanced",
+            "sourceQuestion": 13,
+            "sourcePart": null,
+            "sourcePage": null,
+            "sourceTopic": "y11a-9G"
+          }
         }
       ]
     },
@@ -1641,6 +1692,61 @@
               "work": "\\(\\boxed{\\frac{dy}{dx}=f(x^2)+2x^2f′(x^2)}\\)"
             }
           ]
+        },
+        {
+          "id": "ascham2020-q20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Differentiate \\(\\sqrt{x}(1-2x)^5\\).",
+          "options": [
+            "\\(\\frac{(1-2x)^4(1-22x)}{2\\sqrt{x}}\\)",
+            "\\(\\frac{(1-2x)^4(1-18x)}{2\\sqrt{x}}\\)",
+            "\\(5\\sqrt{x}(1-2x)^4\\)",
+            "\\(\\frac{(1-2x)^5}{2\\sqrt{x}}\\)"
+          ],
+          "answer": 0,
+          "hint": "This is a product of \\(\\sqrt{x}\\) and \\((1-2x)^5\\); differentiate both factors and include the inner derivative −2.",
+          "keyPoints": [
+            {
+              "text": "\\sqrt{x}(1-2x)^5",
+              "note": "Use the product rule for the two factors and the chain rule for the fifth power."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set \\(u=\\sqrt{x}=x^{1/2}\\) and \\(v=(1-2x)^5\\). The product rule is \\((uv)\\prime=u\\prime v+uv\\prime\\).",
+              "work": "\\(u\\prime=\\frac1{2\\sqrt{x}}\\)"
+            },
+            {
+              "explain": "Differentiate v by the chain rule. The inner derivative of 1−2x is −2.",
+              "work": "\\(v\\prime=5(1-2x)^4(-2)=-10(1-2x)^4\\)"
+            },
+            {
+              "explain": "Substitute the two derivatives into the product rule.",
+              "work": "\\(\\frac{d}{dx}[\\sqrt{x}(1-2x)^5]=\\frac{(1-2x)^5}{2\\sqrt{x}}-10\\sqrt{x}(1-2x)^4\\)"
+            },
+            {
+              "explain": "Factor out \\((1-2x)^4/(2\\sqrt{x})\\). Since \\(-10\\sqrt{x}=-20x/(2\\sqrt{x})\\), the remaining factor is \\((1-2x)-20x=1-22x\\).",
+              "work": "\\(=\\frac{(1-2x)^4}{2\\sqrt{x}}[(1-2x)-20x]=\\frac{(1-2x)^4(1-22x)}{2\\sqrt{x}}\\)"
+            },
+            {
+              "explain": "This is the simplified derivative.",
+              "work": "\\(\\boxed{\\frac{(1-2x)^4(1-22x)}{2\\sqrt{x}}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 2U Trials.pdf",
+            "school": "Ascham School",
+            "examType": "Trial HSC",
+            "year": 2020,
+            "grade": "11/12 Advanced",
+            "sourceQuestion": 20,
+            "sourcePart": null,
+            "sourcePage": null,
+            "sourceTopic": "y11a-9H"
+          }
         }
       ]
     }

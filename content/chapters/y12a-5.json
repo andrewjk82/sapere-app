@@ -7566,6 +7566,53 @@
             "grade": "12"
           },
           "xp": 2
+        },
+        {
+          "id": "ascham2020-q27",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Differentiate \\(3^{x^2}\\).",
+          "options": [
+            "\\(2x\\ln(3)\\,3^{x^2}\\)",
+            "\\(2x\\,3^{x^2-1}\\)",
+            "\\(x^2\\ln(3)\\,3^{x^2}\\)",
+            "\\(3x^2\\ln(3)\\)"
+          ],
+          "answer": 0,
+          "hint": "For \\(a^{u(x)}\\), multiply \\(a^{u(x)}\\ln a\\) by the derivative of the exponent.",
+          "keyPoints": [
+            {
+              "text": "3^{x^2}",
+              "note": "For an exponential with variable exponent, retain the factor 3^(x²) ln 3 and multiply by the derivative of x²."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the exponential chain rule: \\(\\frac{d}{dx}a^{u}=a^u\\ln(a)u\\prime\\). Here the base is 3 and the exponent is x².",
+              "work": "\\(u=x^2,\\quad u\\prime=2x\\)"
+            },
+            {
+              "explain": "Substitute the base, exponent, and exponent derivative.",
+              "work": "\\(\\frac{d}{dx}3^{x^2}=3^{x^2}\\ln(3)(2x)\\)"
+            },
+            {
+              "explain": "Reorder the factors into standard form.",
+              "work": "\\(\\boxed{2x\\ln(3)\\,3^{x^2}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 2U Trials.pdf",
+            "school": "Ascham School",
+            "examType": "Trial HSC",
+            "year": 2020,
+            "grade": "11/12 Advanced",
+            "sourceQuestion": 27,
+            "sourcePart": null,
+            "sourcePage": null,
+            "sourceTopic": "y12a-5B"
+          }
         }
       ]
     },
@@ -21388,6 +21435,61 @@
             "grade": "12"
           },
           "xp": 3
+        },
+        {
+          "id": "ascham2020-q14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given \\(f(x)=\\frac{x}{\\ln x}\\), solve \\(f\\prime(x)=0\\) in the domain \\(x>0,\\ x\ne1\\).",
+          "options": [
+            "\\(x=e\\)",
+            "\\(x=1\\)",
+            "\\(x=\\ln 2\\)",
+            "No solution"
+          ],
+          "answer": 0,
+          "hint": "Use the quotient rule, then set the numerator equal to zero; remember \\(\\ln x\ne0\\).",
+          "keyPoints": [
+            {
+              "text": "f\\prime(x)=0",
+              "note": "Apply the quotient rule, simplify the numerator, and solve its zero while respecting the stated domain."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "For \\(f=u/v\\), the quotient rule gives \\(f\\prime=(u\\prime v-uv\\prime)/v^2\\). Here \\(u=x\\), \\(v=\\ln x\\).",
+              "work": "\\(f\\prime(x)=\\frac{(1)(\\ln x)-x(1/x)}{(\\ln x)^2}\\)"
+            },
+            {
+              "explain": "Simplify the numerator. The denominator is nonzero throughout the stated domain.",
+              "work": "\\(f\\prime(x)=\\frac{\\ln x-1}{(\\ln x)^2}\\)"
+            },
+            {
+              "explain": "A fraction is zero when its numerator is zero.",
+              "work": "\\(\\ln x-1=0\\Rightarrow\\ln x=1\\)"
+            },
+            {
+              "explain": "Exponentiate both sides using base e; this value satisfies \\(x>0,x\ne1\\).",
+              "work": "\\(x=e^1=e\\)"
+            },
+            {
+              "explain": "Therefore the solution is e.",
+              "work": "\\(\\boxed{x=e}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 2U Trials.pdf",
+            "school": "Ascham School",
+            "examType": "Trial HSC",
+            "year": 2020,
+            "grade": "11/12 Advanced",
+            "sourceQuestion": 14,
+            "sourcePart": null,
+            "sourcePage": null,
+            "sourceTopic": "y12a-5G"
+          }
         }
       ]
     },

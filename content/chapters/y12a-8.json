@@ -4553,6 +4553,228 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "ascham2020-q30",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The drop-bear population is endangered. On January 1, 2003 there were only 1000 drop-bears left in the wild. The drop-bear natural reproductive cycle allows for a population increase of 5% per year. However, every year 100 drop-bears are poached by illegal hunters.",
+          "parts": [
+            {
+              "id": "ascham2020-q30a",
+              "type": "review",
+              "difficulty": "medium",
+              "stem": "Show that the drop-bear population remaining after two years is given by the expression: \\(T_2=1000\\times(1.05)^2-100\\times(1.05+1)\\).",
+              "answer": "",
+              "manual": true,
+              "hint": "Track the initial population’s growth for two years, then track how the first year’s and second year’s poaching losses are carried forward.",
+              "keyPoints": [
+                {
+                  "text": "Show that the drop-bear population",
+                  "note": "Apply the 5% annual growth and subtract each year’s 100 poached bears with the correct remaining growth period."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "After two years, the original 1000 bears have grown by 5% in each of the two years.",
+                  "work": "\\(1000(1.05)^2\\)"
+                },
+                {
+                  "explain": "The 100 bears poached after year 1 would have experienced one further year of 5% growth in the two-year comparison.",
+                  "work": "\\(100(1.05)\\)"
+                },
+                {
+                  "explain": "The 100 bears poached after year 2 have no later year of growth.",
+                  "work": "\\(100\\)"
+                },
+                {
+                  "explain": "Subtract both appropriately adjusted losses from the grown original population.",
+                  "work": "\\(T_2=1000(1.05)^2-100(1.05)-100=1000(1.05)^2-100(1.05+1)\\)"
+                },
+                {
+                  "explain": "This reproduces the stated expression.",
+                  "work": "\\(\\boxed{T_2=1000(1.05)^2-100(1.05+1)}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Ascham 2020 2U Trials.pdf",
+                "school": "Ascham School",
+                "examType": "Trial HSC",
+                "year": 2020,
+                "grade": "11/12 Advanced",
+                "sourceQuestion": 30,
+                "sourcePart": "a",
+                "sourcePage": null,
+                "sourceTopic": "y12a-8A"
+              }
+            },
+            {
+              "id": "ascham2020-q30b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find an expression for \\(T_n\\), the number of drop-bears remaining after \\(n\\) years.",
+              "options": [
+                "\\(T_n=2000-1000(1.05)^n\\)",
+                "\\(T_n=1000(1.05)^n-100n\\)",
+                "\\(T_n=1000(1.05)^n-2000[(1.05)^n-1]\\)",
+                "\\(T_n=1000(1.05)^n-100\\frac{(1.05)^n-1}{1.05-1}\\)"
+              ],
+              "answer": 0,
+              "hint": "Write the poaching losses as a geometric series, then simplify using the sum formula.",
+              "keyPoints": [
+                {
+                  "text": "Find an expression for",
+                  "note": "Model the annual poaching losses as a geometric series and combine them with the growing initial population."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "The original population grows for n years, giving the first term.",
+                  "work": "\\(1000(1.05)^n\\)"
+                },
+                {
+                  "explain": "Poaching losses form a geometric sequence of contributions: 100, 100(1.05), …, 100(1.05)^{n−1}.",
+                  "work": "\\(100\\sum_{j=0}^{n-1}(1.05)^j\\)"
+                },
+                {
+                  "explain": "The finite geometric sum is \\(((1.05)^n-1)/(1.05-1)\\). Subtract it from the grown initial population.",
+                  "work": "\\(T_n=1000(1.05)^n-100\\frac{(1.05)^n-1}{0.05}\\)"
+                },
+                {
+                  "explain": "Since 100/0.05=2000, collect like terms.",
+                  "work": "\\(T_n=1000(1.05)^n-2000[(1.05)^n-1]=2000-1000(1.05)^n\\)"
+                },
+                {
+                  "explain": "The simplified expression is option A.",
+                  "work": "\\(\\boxed{T_n=2000-1000(1.05)^n}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Ascham 2020 2U Trials.pdf",
+                "school": "Ascham School",
+                "examType": "Trial HSC",
+                "year": 2020,
+                "grade": "11/12 Advanced",
+                "sourceQuestion": 30,
+                "sourcePart": "b",
+                "sourcePage": null,
+                "sourceTopic": "y12a-8A"
+              }
+            },
+            {
+              "id": "ascham2020-q30c",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What is the drop-bear population on January 1, 2008?",
+              "options": [
+                "723 drop-bears",
+                "724 drop-bears",
+                "1 276 drop-bears",
+                "1 276.3 drop-bears"
+              ],
+              "answer": 1,
+              "hint": "January 1, 2008 is five years after January 1, 2003; substitute n=5 into the population model.",
+              "keyPoints": [
+                {
+                  "text": "population on January 1, 2008",
+                  "note": "Count five years from January 1, 2003 and substitute n=5 into the recurrence or formula."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Count the elapsed years from the start date.",
+                  "work": "\\(2008-2003=5\\Rightarrow n=5\\)"
+                },
+                {
+                  "explain": "Use the model derived for the population after n years.",
+                  "work": "\\(T_5=2000-1000(1.05)^5\\)"
+                },
+                {
+                  "explain": "Evaluate the power and subtract.",
+                  "work": "\\(1.05^5=1.2762815625\\Rightarrow T_5=2000-1276.2815625=723.7184375\\)"
+                },
+                {
+                  "explain": "A population is counted in whole bears, so round to the nearest whole.",
+                  "work": "\\(\\boxed{724\\text{ drop-bears (approximately)}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Ascham 2020 2U Trials.pdf",
+                "school": "Ascham School",
+                "examType": "Trial HSC",
+                "year": 2020,
+                "grade": "11/12 Advanced",
+                "sourceQuestion": 30,
+                "sourcePart": "c",
+                "sourcePage": null,
+                "sourceTopic": "y12a-8A"
+              }
+            },
+            {
+              "id": "ascham2020-q30d",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "During what calendar year will the drop-bears become extinct if no interventions are put in place?",
+              "options": [
+                "2016",
+                "2017",
+                "2018",
+                "2023"
+              ],
+              "answer": 1,
+              "hint": "Find the first integer year n when the model reaches zero or below, then convert n to a calendar year.",
+              "keyPoints": [
+                {
+                  "text": "calendar year",
+                  "note": "Find the first integer n for which the model is zero or negative, then add n to the starting calendar year."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Extinction occurs when the modelled population is no longer positive.",
+                  "work": "\\(2000-1000(1.05)^n\\le0\\)"
+                },
+                {
+                  "explain": "Rearrange the inequality.",
+                  "work": "\\((1.05)^n\\ge2\\Rightarrow n\\ge\\frac{\\ln2}{\\ln1.05}\\approx14.21\\)"
+                },
+                {
+                  "explain": "The first whole-year checkpoint beyond this is n=15. Since n=0 is Jan 1, 2003, n=14 is Jan 1, 2017 and n=15 is Jan 1, 2018; the population crosses zero during the preceding calendar year.",
+                  "work": "\\(T_{14}\\approx20.1>0,\\quad T_{15}\\approx-78.9<0\\)"
+                },
+                {
+                  "explain": "The model therefore predicts extinction during 2017.",
+                  "work": "\\(\\boxed{2017}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Ascham 2020 2U Trials.pdf",
+                "school": "Ascham School",
+                "examType": "Trial HSC",
+                "year": 2020,
+                "grade": "11/12 Advanced",
+                "sourceQuestion": 30,
+                "sourcePart": "d",
+                "sourcePage": null,
+                "sourceTopic": "y12a-8A"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Ascham 2020 2U Trials",
+            "sourceQuestion": 30
+          },
+          "manual": true
         }
       ]
     },
@@ -10857,6 +11079,63 @@
               "work": "\\(A\\approx\\$3484.85\\Rightarrow\\boxed{\\$3485}\\)"
             }
           ]
+        },
+        {
+          "id": "ascham2020-q08",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The table shows the compounded values of $1 at different interest rates over different periods. Percy hopes to have $25 000 in 4 years to buy a car. He opens an account today which pays interest of 4% p.a., compounded every 6 months. Using the table, which expression calculates the minimum single sum that Percy needs to invest today to ensure he reaches his savings goal?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 640 238\" role=\"img\"><rect x=\"0\" y=\"0\" width=\"640\" height=\"238\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1\" /><line x1=\"106.66666666666667\" y1=\"0\" x2=\"106.66666666666667\" y2=\"238\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"213.33333333333334\" y1=\"0\" x2=\"213.33333333333334\" y2=\"238\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"320.0\" y1=\"0\" x2=\"320.0\" y2=\"238\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"426.6666666666667\" y1=\"0\" x2=\"426.6666666666667\" y2=\"238\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"533.3333333333334\" y1=\"0\" x2=\"533.3333333333334\" y2=\"238\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"0\" y1=\"34\" x2=\"640\" y2=\"34\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"0\" y1=\"68\" x2=\"640\" y2=\"68\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"0\" y1=\"102\" x2=\"640\" y2=\"102\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"0\" y1=\"136\" x2=\"640\" y2=\"136\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"0\" y1=\"170\" x2=\"640\" y2=\"170\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"0\" y1=\"204\" x2=\"640\" y2=\"204\" stroke=\"#64748b\" stroke-width=\"1\" /><text x=\"53.333333333333336\" y=\"22.44\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" >Periods</text><text x=\"160.0\" y=\"22.44\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" >1%</text><text x=\"266.6666666666667\" y=\"22.44\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" >2%</text><text x=\"373.3333333333333\" y=\"22.44\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" >3%</text><text x=\"480.0\" y=\"22.44\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" >4%</text><text x=\"586.6666666666666\" y=\"22.44\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" >5%</text><text x=\"53.333333333333336\" y=\"56.099999999999994\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >2</text><text x=\"160.0\" y=\"56.099999999999994\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.0201</text><text x=\"266.6666666666667\" y=\"56.099999999999994\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.0404</text><text x=\"373.3333333333333\" y=\"56.099999999999994\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.0609</text><text x=\"480.0\" y=\"56.099999999999994\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.0816</text><text x=\"586.6666666666666\" y=\"56.099999999999994\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.1025</text><text x=\"53.333333333333336\" y=\"90.1\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >4</text><text x=\"160.0\" y=\"90.1\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.0406</text><text x=\"266.6666666666667\" y=\"90.1\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.0824</text><text x=\"373.3333333333333\" y=\"90.1\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.1255</text><text x=\"480.0\" y=\"90.1\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.1699</text><text x=\"586.6666666666666\" y=\"90.1\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.2155</text><text x=\"53.333333333333336\" y=\"124.1\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >6</text><text x=\"160.0\" y=\"124.1\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.0615</text><text x=\"266.6666666666667\" y=\"124.1\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.1262</text><text x=\"373.3333333333333\" y=\"124.1\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.1941</text><text x=\"480.0\" y=\"124.1\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.2653</text><text x=\"586.6666666666666\" y=\"124.1\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.3401</text><text x=\"53.333333333333336\" y=\"158.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >8</text><text x=\"160.0\" y=\"158.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.0829</text><text x=\"266.6666666666667\" y=\"158.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.1717</text><text x=\"373.3333333333333\" y=\"158.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.2668</text><text x=\"480.0\" y=\"158.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.3686</text><text x=\"586.6666666666666\" y=\"158.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.4775</text><text x=\"53.333333333333336\" y=\"192.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >10</text><text x=\"160.0\" y=\"192.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.1046</text><text x=\"266.6666666666667\" y=\"192.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.2190</text><text x=\"373.3333333333333\" y=\"192.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.3439</text><text x=\"480.0\" y=\"192.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.4802</text><text x=\"586.6666666666666\" y=\"192.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.6289</text><text x=\"53.333333333333336\" y=\"226.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >12</text><text x=\"160.0\" y=\"226.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.1268</text><text x=\"266.6666666666667\" y=\"226.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.2682</text><text x=\"373.3333333333333\" y=\"226.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.4258</text><text x=\"480.0\" y=\"226.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.6010</text><text x=\"586.6666666666666\" y=\"226.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.7959</text></svg>"
+          },
+          "options": [
+            "\\(25000\\times1.3686\\)",
+            "\\(25000\\div1.3686\\)",
+            "\\(25000\\times1.1717\\)",
+            "\\(25000\\div1.1717\\)"
+          ],
+          "answer": 3,
+          "hint": "Convert 4 years into half-year periods and read the 2% per-period growth factor from the table.",
+          "keyPoints": [
+            {
+              "text": "4% p.a., compounded every 6 months",
+              "note": "Count the six-month periods in four years, then use the table factor for that rate and period to work backwards from the target."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Interest is compounded every 6 months, so four years contains eight compounding periods. The nominal annual rate 4% becomes 2% per period.",
+              "work": "\\(n=4\\times2=8,\\quad i=0.04/2=0.02\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 640 238\" role=\"img\"><rect x=\"0\" y=\"0\" width=\"640\" height=\"238\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1\" /><line x1=\"106.66666666666667\" y1=\"0\" x2=\"106.66666666666667\" y2=\"238\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"213.33333333333334\" y1=\"0\" x2=\"213.33333333333334\" y2=\"238\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"320.0\" y1=\"0\" x2=\"320.0\" y2=\"238\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"426.6666666666667\" y1=\"0\" x2=\"426.6666666666667\" y2=\"238\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"533.3333333333334\" y1=\"0\" x2=\"533.3333333333334\" y2=\"238\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"0\" y1=\"34\" x2=\"640\" y2=\"34\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"0\" y1=\"68\" x2=\"640\" y2=\"68\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"0\" y1=\"102\" x2=\"640\" y2=\"102\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"0\" y1=\"136\" x2=\"640\" y2=\"136\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"0\" y1=\"170\" x2=\"640\" y2=\"170\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"0\" y1=\"204\" x2=\"640\" y2=\"204\" stroke=\"#64748b\" stroke-width=\"1\" /><text x=\"53.333333333333336\" y=\"22.44\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" >Periods</text><text x=\"160.0\" y=\"22.44\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" >1%</text><text x=\"266.6666666666667\" y=\"22.44\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" >2%</text><text x=\"373.3333333333333\" y=\"22.44\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" >3%</text><text x=\"480.0\" y=\"22.44\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" >4%</text><text x=\"586.6666666666666\" y=\"22.44\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" >5%</text><text x=\"53.333333333333336\" y=\"56.099999999999994\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >2</text><text x=\"160.0\" y=\"56.099999999999994\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.0201</text><text x=\"266.6666666666667\" y=\"56.099999999999994\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.0404</text><text x=\"373.3333333333333\" y=\"56.099999999999994\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.0609</text><text x=\"480.0\" y=\"56.099999999999994\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.0816</text><text x=\"586.6666666666666\" y=\"56.099999999999994\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.1025</text><text x=\"53.333333333333336\" y=\"90.1\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >4</text><text x=\"160.0\" y=\"90.1\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.0406</text><text x=\"266.6666666666667\" y=\"90.1\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.0824</text><text x=\"373.3333333333333\" y=\"90.1\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.1255</text><text x=\"480.0\" y=\"90.1\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.1699</text><text x=\"586.6666666666666\" y=\"90.1\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.2155</text><text x=\"53.333333333333336\" y=\"124.1\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >6</text><text x=\"160.0\" y=\"124.1\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.0615</text><text x=\"266.6666666666667\" y=\"124.1\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.1262</text><text x=\"373.3333333333333\" y=\"124.1\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.1941</text><text x=\"480.0\" y=\"124.1\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.2653</text><text x=\"586.6666666666666\" y=\"124.1\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.3401</text><text x=\"53.333333333333336\" y=\"158.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >8</text><text x=\"160.0\" y=\"158.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.0829</text><text x=\"266.6666666666667\" y=\"158.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.1717</text><text x=\"373.3333333333333\" y=\"158.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.2668</text><text x=\"480.0\" y=\"158.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.3686</text><text x=\"586.6666666666666\" y=\"158.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.4775</text><text x=\"53.333333333333336\" y=\"192.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >10</text><text x=\"160.0\" y=\"192.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.1046</text><text x=\"266.6666666666667\" y=\"192.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.2190</text><text x=\"373.3333333333333\" y=\"192.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.3439</text><text x=\"480.0\" y=\"192.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.4802</text><text x=\"586.6666666666666\" y=\"192.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.6289</text><text x=\"53.333333333333336\" y=\"226.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >12</text><text x=\"160.0\" y=\"226.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.1268</text><text x=\"266.6666666666667\" y=\"226.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.2682</text><text x=\"373.3333333333333\" y=\"226.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.4258</text><text x=\"480.0\" y=\"226.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.6010</text><text x=\"586.6666666666666\" y=\"226.10000000000002\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1.7959</text></svg>"
+              }
+            },
+            {
+              "explain": "At 2% for 8 periods, the table factor is 1.1717. Future value equals present value multiplied by this factor.",
+              "work": "\\(FV=PV(1.1717)\\)"
+            },
+            {
+              "explain": "Solve for the amount invested today by dividing the goal by the growth factor.",
+              "work": "\\(PV=\\frac{25000}{1.1717}\\)"
+            },
+            {
+              "explain": "Therefore the required expression is option D.",
+              "work": "\\(\\boxed{25000\\div1.1717}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 2U Trials.pdf",
+            "school": "Ascham School",
+            "examType": "Trial HSC",
+            "year": 2020,
+            "grade": "11/12 Advanced",
+            "sourceQuestion": 8,
+            "sourcePart": null,
+            "sourcePage": null,
+            "sourceTopic": "y12a-8C"
+          }
         }
       ]
     },
