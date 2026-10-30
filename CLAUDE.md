@@ -159,6 +159,24 @@ version/timestamp as the freshness key for chapter/topic question caches** —
 scope any future cache-invalidation signal to the chapter (or narrower) it
 actually belongs to.
 
+## Worksheet / practice-paper PDFs: no repeated questions on one paper (2026-10-30)
+
+When generating a printable paper (e.g. "25 hard questions" for a chapter), **no two
+questions on the same paper may be the same question with only the numbers changed.**
+Standing rule, applies automatically, never needs to be repeated.
+
+- This applies to every version of a paper: the verbatim-from-bank set, the newly authored
+  hard set, and the common-mistakes set.
+- The bank contains many sibling variants (e.g. four Heron's-formula questions that differ only
+  in side lengths, six "stopping distance at v km/h" questions, GoCar/DriveSafe pairs). Do not
+  list these as separate questions. Combine them into one question with (a), (b), … parts, or
+  keep only one of them.
+- If that leaves fewer than the requested number of questions, fill the gap with other
+  **distinct** questions from the same chapter (a different formula, scenario or method).
+  If the chapter genuinely has too few distinct types, say so and group by type (as with Ch 4)
+  rather than padding with repeats.
+- Before delivering, scan the finished paper for near-duplicates (same stem with digits masked).
+
 ## Question DNA reasoning-blueprint authoring
 
 See the `sapere-question-dna` skill (`.agents/skills/sapere-question-dna/SKILL.md`)
