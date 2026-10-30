@@ -15085,23 +15085,7 @@
           "difficulty": "medium",
           "stem": "A quadrilateral has diagonals of length \\(12\\) cm and \\(18\\) cm. If the angle between the diagonals is \\(65°\\), find the area of the quadrilateral, correct to the nearest square centimetre.",
           "figure": {
-            "jsxGraph": {
-              "width": 300,
-              "height": 250,
-              "boundingbox": [
-                -6,
-                6,
-                8,
-                -5
-              ],
-              "boardOptions": {
-                "axis": false,
-                "grid": false,
-                "keepaspectratio": true,
-                "showNavigation": false
-              },
-              "script": "board.suspendUpdate();\nvar A = board.create('point', [0,0], {visible: true, size: 2, color: '#64748b'});\nvar B = board.create('point', [5,0], {visible: true, size: 2, color: '#64748b'});\nvar C = board.create('point', [2,4], {visible: true, size: 2, color: '#64748b'});\nvar t = board.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2} });\nboard.unsuspendUpdate();"
-            }
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 245\" width=\"420\" height=\"245\" role=\"img\" aria-label=\"Quadrilateral ABCD with diagonals of length 18 cm and 12 cm intersecting at 65 degrees\"><rect width=\"420\" height=\"245\" rx=\"8\" fill=\"#ffffff\"/><polygon points=\"68.00,118.00 251.42,29.18 356.00,118.00 170.27,203.19\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><path d=\"M210.00,118.00 L222.68,90.81 A30,30 0 0 1 240.00,118.00 Z\" fill=\"#e2e8f0\" fill-opacity=\"0.55\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"68.00\" y1=\"118.00\" x2=\"356.00\" y2=\"118.00\" stroke=\"#475569\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"6,4\"/><line x1=\"251.42\" y1=\"29.18\" x2=\"170.27\" y2=\"203.19\" stroke=\"#475569\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"6,4\"/><circle cx=\"210.00\" cy=\"118.00\" r=\"3\" fill=\"#334155\"/><text x=\"54.00\" y=\"123.00\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#475569\">A</text><text x=\"253.42\" y=\"20.18\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#475569\">B</text><text x=\"370.00\" y=\"123.00\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#475569\">C</text><text x=\"166.27\" y=\"219.19\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#475569\">D</text><text x=\"250.48\" y=\"96.71\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">65°</text><text x=\"152.00\" y=\"109.00\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\">18 cm</text><text x=\"206.00\" y=\"150.00\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\">12 cm</text></svg>"
           },
           "options": [
             "\\(100\\)",
@@ -15114,39 +15098,32 @@
           "solution": "The area of a quadrilateral with diagonals \\(d_1\\) and \\(d_2\\) intersecting at an angle \\(θ\\) is \\(\\frac{1}{2} d_1 d_2 \\sin θ\\).\n\\(\\text{Area} = \\frac{1}{2} \\times 12 \\times 18 \\times \\sin 65°\\)\n\\(\\text{Area} = 108 \\times 0.9063 \\approx 97.88\\)\nCorrect to the nearest square centimetre, the area is \\(98\\text{ cm}^2\\).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Area of a triangle: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-              "work": "Identify given data",
+              "explain": "Identify the lengths of the two diagonals of quadrilateral \\(ABCD\\), \\(d_1 = AC = 18\\text{ cm}\\) and \\(d_2 = BD = 12\\text{ cm}\\), and the included angle \\(\\theta = 65^\\circ\\) between them.",
+              "work": "\\(d_1 = 18\\text{ cm},\\quad d_2 = 12\\text{ cm},\\quad \\theta = 65^\\circ\\)",
               "figure": {
-                "jsxGraph": {
-                  "width": 300,
-                  "height": 250,
-                  "boundingbox": [
-                    -6,
-                    6,
-                    8,
-                    -5
-                  ],
-                  "boardOptions": {
-                    "axis": false,
-                    "grid": false,
-                    "keepaspectratio": true,
-                    "showNavigation": false
-                  },
-                  "script": "board.suspendUpdate();\nvar A = board.create('point', [0,0], {visible: true, size: 2, color: '#64748b'});\nvar B = board.create('point', [5,0], {visible: true, size: 2, color: '#64748b'});\nvar C = board.create('point', [2,4], {visible: true, size: 2, color: '#64748b'});\nvar t = board.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2} });\nboard.unsuspendUpdate();"
-                }
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 245\" width=\"420\" height=\"245\" role=\"img\" aria-label=\"Quadrilateral ABCD with diagonals of length 18 cm and 12 cm intersecting at 65 degrees\"><rect width=\"420\" height=\"245\" rx=\"8\" fill=\"#ffffff\"/><polygon points=\"68.00,118.00 251.42,29.18 356.00,118.00 170.27,203.19\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><path d=\"M210.00,118.00 L222.68,90.81 A30,30 0 0 1 240.00,118.00 Z\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"68.00\" y1=\"118.00\" x2=\"356.00\" y2=\"118.00\" stroke=\"#0284c7\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"251.42\" y1=\"29.18\" x2=\"170.27\" y2=\"203.19\" stroke=\"#7c3aed\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"210.00\" cy=\"118.00\" r=\"3\" fill=\"#334155\"/><text x=\"54.00\" y=\"123.00\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#475569\">A</text><text x=\"253.42\" y=\"20.18\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#475569\">B</text><text x=\"370.00\" y=\"123.00\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#475569\">C</text><text x=\"166.27\" y=\"219.19\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#475569\">D</text><text x=\"250.48\" y=\"96.71\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#d97706\">65°</text><text x=\"152.00\" y=\"109.00\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0284c7\">d₁ = 18 cm</text><text x=\"206.00\" y=\"150.00\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#7c3aed\">d₂ = 12 cm</text><text x=\"210\" y=\"234\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#334155\">d₁ = 18 cm,  d₂ = 12 cm,  θ = 65°</text></svg>"
               }
             },
             {
-              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-              "work": "State the rule"
+              "explain": "Write the area formula for a quadrilateral in terms of its two diagonals \\(d_1, d_2\\) and the angle \\(\\theta\\) between them (derived by summing the areas of \\(\\triangle ABC\\) and \\(\\triangle ADC\\)).",
+              "work": "\\(\\text{Area} = \\frac{1}{2}\\,d_1\\,d_2\\sin\\theta\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 245\" width=\"420\" height=\"245\" role=\"img\" aria-label=\"Quadrilateral ABCD with diagonals of length 18 cm and 12 cm intersecting at 65 degrees\"><rect width=\"420\" height=\"245\" rx=\"8\" fill=\"#ffffff\"/><polygon points=\"68.00,118.00 251.42,29.18 356.00,118.00 170.27,203.19\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><path d=\"M210.00,118.00 L222.68,90.81 A30,30 0 0 1 240.00,118.00 Z\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"68.00\" y1=\"118.00\" x2=\"356.00\" y2=\"118.00\" stroke=\"#0284c7\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"251.42\" y1=\"29.18\" x2=\"170.27\" y2=\"203.19\" stroke=\"#7c3aed\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"210.00\" cy=\"118.00\" r=\"3\" fill=\"#334155\"/><text x=\"54.00\" y=\"123.00\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#475569\">A</text><text x=\"253.42\" y=\"20.18\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#475569\">B</text><text x=\"370.00\" y=\"123.00\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#475569\">C</text><text x=\"166.27\" y=\"219.19\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#475569\">D</text><text x=\"250.48\" y=\"96.71\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#d97706\">65°</text><text x=\"152.00\" y=\"109.00\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0284c7\">d₁ = 18 cm</text><text x=\"206.00\" y=\"150.00\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#7c3aed\">d₂ = 12 cm</text><text x=\"210\" y=\"234\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#7c3aed\">Area = ½ × d₁ × d₂ × sin θ</text></svg>"
+              }
             },
             {
-              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-              "work": "\\(98\\)"
+              "explain": "Substitute \\(d_1 = 18\\), \\(d_2 = 12\\), and \\(\\theta = 65^\\circ\\) into the area formula and evaluate.",
+              "work": "\\(\\text{Area} = \\frac{1}{2} \\times 12 \\times 18 \\times \\sin 65^\\circ = 108\\sin 65^\\circ \\approx 108 \\times 0.90631 \\approx 97.88\\text{ cm}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 245\" width=\"420\" height=\"245\" role=\"img\" aria-label=\"Quadrilateral ABCD with diagonals of length 18 cm and 12 cm intersecting at 65 degrees\"><rect width=\"420\" height=\"245\" rx=\"8\" fill=\"#ffffff\"/><polygon points=\"68.00,118.00 251.42,29.18 356.00,118.00 170.27,203.19\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><path d=\"M210.00,118.00 L222.68,90.81 A30,30 0 0 1 240.00,118.00 Z\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"68.00\" y1=\"118.00\" x2=\"356.00\" y2=\"118.00\" stroke=\"#0284c7\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"251.42\" y1=\"29.18\" x2=\"170.27\" y2=\"203.19\" stroke=\"#7c3aed\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"210.00\" cy=\"118.00\" r=\"3\" fill=\"#334155\"/><text x=\"54.00\" y=\"123.00\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#475569\">A</text><text x=\"253.42\" y=\"20.18\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#475569\">B</text><text x=\"370.00\" y=\"123.00\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#475569\">C</text><text x=\"166.27\" y=\"219.19\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#475569\">D</text><text x=\"250.48\" y=\"96.71\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#d97706\">65°</text><text x=\"152.00\" y=\"109.00\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0284c7\">d₁ = 18 cm</text><text x=\"206.00\" y=\"150.00\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#7c3aed\">d₂ = 12 cm</text><text x=\"210\" y=\"234\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0284c7\">Area = ½ × 12 × 18 × sin 65° ≈ 97.88 cm²</text></svg>"
+              }
             },
             {
-              "explain": "Final answer: 98. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-              "work": "\\(98\\)"
+              "explain": "Round \\(97.88\\text{ cm}^2\\) to the nearest square centimetre.",
+              "work": "\\(\\text{Area} \\approx 98\\text{ cm}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 245\" width=\"420\" height=\"245\" role=\"img\" aria-label=\"Quadrilateral ABCD with diagonals of length 18 cm and 12 cm intersecting at 65 degrees\"><rect width=\"420\" height=\"245\" rx=\"8\" fill=\"#ffffff\"/><polygon points=\"68.00,118.00 251.42,29.18 356.00,118.00 170.27,203.19\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><path d=\"M210.00,118.00 L222.68,90.81 A30,30 0 0 1 240.00,118.00 Z\" fill=\"#bbf7d0\" fill-opacity=\"0.55\" stroke=\"#16a34a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"68.00\" y1=\"118.00\" x2=\"356.00\" y2=\"118.00\" stroke=\"#16a34a\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"251.42\" y1=\"29.18\" x2=\"170.27\" y2=\"203.19\" stroke=\"#16a34a\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"210.00\" cy=\"118.00\" r=\"3\" fill=\"#334155\"/><text x=\"54.00\" y=\"123.00\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#475569\">A</text><text x=\"253.42\" y=\"20.18\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#475569\">B</text><text x=\"370.00\" y=\"123.00\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#475569\">C</text><text x=\"166.27\" y=\"219.19\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#475569\">D</text><text x=\"250.48\" y=\"96.71\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#15803d\">65°</text><text x=\"152.00\" y=\"109.00\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#15803d\">d₁ = 18 cm</text><text x=\"206.00\" y=\"150.00\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#15803d\">d₂ = 12 cm</text><text x=\"210\" y=\"234\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#16a34a\">Area ≈ 98 cm² (nearest cm²)</text></svg>"
+              }
             }
           ],
           "timeLimit": 90,
