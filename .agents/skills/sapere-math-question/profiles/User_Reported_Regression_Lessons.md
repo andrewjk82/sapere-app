@@ -24,6 +24,16 @@ recurring student-facing problems the user has reported across Years 7–10.
   the intended feature, with clear space from lines, arcs, vertices, and other
   text. Equal-side ticks and right-angle markers must mark the correct sides
   and vertex.
+- Construct every angle arc from the two actual rays at its vertex: calculate
+  the ray directions, place each arc endpoint on its corresponding segment, and
+  check that the sweep stays inside the intended angle (including obtuse angles
+  and angles of depression). Position the angle text on or near the angle
+  bisector, with clearance from both sides and the arc. A very acute angle may
+  not have room for its text; keep the arc correctly between the rays and use a
+  short leader from a nearby label rather than moving the label to another
+  angle or placing an arc on a side. For an angle of depression, draw the
+  observer's horizontal reference ray and put the arc between that ray and the
+  downward line of sight.
 - For 3D figures, establish vertex correspondence before drawing. Draw visible
   edges solid and only genuinely occluded edges dashed. Verify each given
   dimension is attached to the source edge; distinguish a face diagonal from
@@ -53,6 +63,12 @@ recurring student-facing problems the user has reported across Years 7–10.
   used, explain opposite/adjacent/hypotenuse or included-angle relationships,
   and highlight those exact features in the corresponding step figure. Progress
   the figure as the reasoning advances; do not repeat an unannotated diagram.
+- Make the visual highlight match the equation in that step: distinguish the
+  known side, unknown side, and reference angle, then highlight the exact sides
+  used in the ratio (for example, adjacent and hypotenuse for cosine). A changed
+  text colour alone is not a diagram highlight. Check every root and step figure
+  for arc endpoints, sweep direction, label placement, and overlap at the
+  rendered student size before delivery.
 - A step figure is not decoration or a repeated reference image: it must show what that step reads or uses. Add a distinct highlight (such as a marked graph endpoint/projection, shaded region, selected table cell, or highlighted side/angle) and explain its mathematical use in the adjacent calculation. Do not repeat the same full graph unchanged across steps. Omit figures from purely algebraic calculation or final-answer steps when they add no new visual information. Compare every figure in a solution sequence side by side and verify that each retained one advances the explanation.
 
 ## Solutions, hints, and mathematical notation
