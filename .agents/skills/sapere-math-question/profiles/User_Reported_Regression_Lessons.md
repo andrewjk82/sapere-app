@@ -145,3 +145,4 @@ recurring student-facing problems the user has reported across Years 7–10.
 - Place each item in the closest matching existing topic. Do not group
   unrelated subparts from different topics into one multipart parent simply
   because the source labels them with the same question number.
+- Before repairing a reported diagram, verify the exact question ID and compare its source figure. Distinguish curved boundaries of 3D solids (such as hemispherical dome/base arcs) from angle arcs; do not invent angle marks or labels when the source contains no angle. In each solution step, highlight the actual dimensions or surface region used in the calculation and make the diagram progress with the reasoning.
