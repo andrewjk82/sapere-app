@@ -277,3 +277,52 @@ export const pickMockPaper = ({ questions, done = [], targetMarks, blueprint = {
   }
   return { questionIds: chosen.map((q) => String(q.id)), marks: chosen.reduce((s, q) => s + marksOf(q), 0), reused, strata };
 };
+
+// ── Daily Study set ───────────────────────────────────────────────────────────────────────────────────────────
+//
+// A student who has OC / Selective / Scholarship switched on gets one extra Daily Study card per exam: a 10-mark set,
+// half from each of two sections (OC: Mathematics + Thinking Skills). A section that has no questions yet
+// (Selective Thinking Skills) gives its share to the other one, so the set is always 10 marks when the bank has them.
+
+export const DAILY_SET_MARKS = 10;
+export const DAILY_SETS = {
+  [OC_EXAM_ID]: { label: 'OC', sections: [{ topicId: 'sch-oc-maths', name: 'Mathematics' }, { topicId: 'sch-oc-thinking', name: 'Thinking Skills' }] },
+  [SELECTIVE_EXAM_ID]: { label: 'Selective', sections: [{ topicId: 'sch-selective-maths', name: 'Mathematical Reasoning' }, { topicId: 'sch-selective-thinking', name: 'Thinking Skills' }] },
+  // ACER has no Thinking Skills section: its second main section is Reading and Viewing (one 5-mark passage).
+  [ACER_EXAM_ID]: { label: 'Scholarship', sections: [{ topicId: 'sch-acer-maths', name: 'Mathematics' }, { topicId: 'sch-acer-reading', name: 'Reading and Viewing' }] },
+};
+
+/** Marks per section: an even split, capped by what each section holds; what one cannot give goes to the others. */
+export const dailySetShares = (available, total = DAILY_SET_MARKS) => {
+  const n = available.length;
+  const share = available.map((a, i) => Math.min(a, Math.floor(total / n) + (i < total % n ? 1 : 0)));
+  let left = total - share.reduce((s, v) => s + v, 0);
+  for (let i = 0; left > 0 && i < n * total; i += 1) {
+    const k = i % n;
+    if (share[k] < available[k]) { share[k] += 1; left -= 1; }
+  }
+  return share;
+};
+
+/** Thinking Skills in a daily set: one question of each kind, never two of a kind. */
+const DAILY_BLUEPRINT_OVERRIDE = { 'sch-oc-thinking': { by: 'category', weight: 'paper', cap: 1, order: 'position' }, 'sch-selective-thinking': { by: 'category', weight: 'paper', cap: 1, order: 'position' } };
+
+/**
+ * Pick today's set. `questions`: every question of the exam's two sections, each tagged `_topicId`.
+ * → { questionIds (section order), marks, reused, sections: [{ topicId, marks }] }
+ */
+export const pickDailySet = ({ examId, questions, done = [], rng = Math.random }) => {
+  const sections = DAILY_SETS[examId]?.sections || [];
+  const banks = sections.map((s) => questions.filter((q) => q._topicId === s.topicId));
+  const avail = banks.map((qs) => qs.reduce((n, q) => n + marksOf(q), 0));
+  const shares = dailySetShares(avail);
+  let reused = false;
+  const out = []; const per = [];
+  sections.forEach((s, i) => {
+    if (!shares[i]) { per.push({ topicId: s.topicId, marks: 0 }); return; }
+    const paper = pickMockPaper({ questions: banks[i], done, targetMarks: shares[i], blueprint: DAILY_BLUEPRINT_OVERRIDE[s.topicId] || MOCK_BLUEPRINT[s.topicId] || {}, rng });
+    if (paper.reused) reused = true;
+    out.push(...paper.questionIds); per.push({ topicId: s.topicId, marks: paper.marks });
+  });
+  return { questionIds: out, marks: per.reduce((n, p) => n + p.marks, 0), reused, sections: per };
+};

@@ -166,7 +166,7 @@ const QuestionBody = ({ q, answer, onAnswer, review }) => {
  * submitting, every test kept for review on this device (utils/scholarshipTest).
  * Topics that aren't all auto-gradable MC (Writing) fall back to practice mode.
  */
-const ScholarshipTest = ({ topic, chapter, profile, onBack, size: sizeProp = TEST_SIZE, seconds: limit = TEST_SECONDS, storageId, startLabel = 'Start test', pickQuestions, homeNote }) => {
+const ScholarshipTest = ({ topic, chapter, profile, onBack, size: sizeProp = TEST_SIZE, seconds: limit = TEST_SECONDS, storageId, startLabel = 'Start test', pickQuestions, homeNote, loadQuestions }) => {
   const { user } = useAuth();
   const uid = user?.uid || 'anon';
   // Mock exams keep their own history under `storageId`, apart from the topic tests of the same chapter.
@@ -184,7 +184,8 @@ const ScholarshipTest = ({ topic, chapter, profile, onBack, size: sizeProp = TES
 
   useEffect(() => {
     let cancelled = false;
-    getTopicQuestions(topic.id, { chapterId: chapter.id })
+    // `loadQuestions` lets a test draw from several topics (the Daily Study set); otherwise it is this topic's questions.
+    (loadQuestions ? loadQuestions() : getTopicQuestions(topic.id, { chapterId: chapter.id }))
       .then((qs) => { if (!cancelled) setAll(qs || []); })
       .catch(() => { if (!cancelled) setFailed(true); });
     return () => { cancelled = true; };
