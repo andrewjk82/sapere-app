@@ -65,6 +65,7 @@ import {
   gradeMcSelection,
 } from '../utils/mcOptionShuffle';
 import { parseHintSteps } from '../utils/hintSteps';
+import { takePlanStart } from '../utils/planStart';
 import LoadingScreen from './LoadingScreen';
 
 // FlameBuddy's hint bubble wants one plain string. `hint` is not always a
@@ -770,6 +771,19 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
     }
     startCalculationQuiz();
   };
+
+
+  // "Today's plan" on the dashboard sends the student here with the session to start. Taken on first render so a stale
+  // request can never fire later; acted on once the day's status is known and there is no half-finished quiz to resume.
+  const [planStart] = useState(() => takePlanStart(['daily', 'calc']));
+  const planStartHandledRef = useRef(false);
+  useEffect(() => {
+    if (!planStart || planStartHandledRef.current || step !== 'start' || !todayStatusReady) return;
+    planStartHandledRef.current = true;
+    if (restoredDraft) return;                 // a quiz is waiting to be resumed — let the student choose
+    if (planStart === 'daily') requestStartDaily(); else requestStartCalc();
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- runs once per request; the start functions read current state
+  }, [planStart, step, todayStatusReady, restoredDraft]);
 
   const setupQuestion = (q, idx = currentIdx) => {
     setTimeLeft(q.timeLimit || 30);

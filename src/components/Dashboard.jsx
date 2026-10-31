@@ -31,6 +31,7 @@ import { loadTopicWriting, mergeNoteDates, pickLastLessonTopics } from '../utils
 import { listTopicNoteDates } from '../utils/curriculumLocalNotes';
 import { loadLastStudy, continueCaption, requestContinueStudy, requestOpenTopic } from '../utils/lastStudy';
 import { DAILY_SETS, OPEN_DAILY_SET_KEY, dailySetDoneToday, hubExamsFor } from '../utils/examHub';
+import { requestPlanStart } from '../utils/planStart';
 
 // 카드에 마우스를 올리면 살짝 떠오르는 hover 효과 (Journey Map 카드와 동일한 느낌).
 const liftHover = {
@@ -467,7 +468,8 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
       sub: dailyDone ? scoreText(dailyToday) : "Today's questions are ready",
       cta: dailyDone ? 'Done' : 'Start',
       done: dailyDone,
-      onClick: () => setActiveTab?.('Challenge'),
+      // Not done yet → straight into today's questions; done → the Daily Study page (history, review).
+      onClick: () => { if (!dailyDone) requestPlanStart('daily'); setActiveTab?.('Challenge'); },
     }];
     if (calcEnabled) {
       const calcDone = calcToday?.completed === true;
@@ -478,7 +480,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
         sub: calcDone ? scoreText(calcToday) : 'A quick timed calculation round',
         cta: calcDone ? 'Done' : 'Start',
         done: calcDone,
-        onClick: () => setActiveTab?.('Challenge'),
+        onClick: () => { if (!calcDone) requestPlanStart('calc'); setActiveTab?.('Challenge'); },
       });
     }
     hubExamsFor(profile).forEach((examId) => {
@@ -491,6 +493,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
         cta: setDone ? 'Done' : 'Start',
         done: setDone,
         onClick: () => {
+          if (!setDone) requestPlanStart(`special:${examId}`);
           try { sessionStorage.setItem(OPEN_DAILY_SET_KEY, examId); } catch { /* storage blocked: the set can be opened from the card */ }
           setActiveTab?.('Challenge');
         },
@@ -522,7 +525,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
           : 'Practise exam-style questions',
         cta: 'Practise',
         done: null,
-        onClick: () => setActiveTab?.('ExamPrep'),
+        onClick: () => { requestPlanStart('exam-prep'); setActiveTab?.('ExamPrep'); },
       });
     }
     return rows;

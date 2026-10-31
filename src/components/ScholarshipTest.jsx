@@ -1,4 +1,4 @@
-import { lazy, Suspense, useCallback, useEffect, useMemo, useState } from 'react';
+import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { ArrowLeft, CheckCircle2, ChevronLeft, ChevronRight, Clock, Lightbulb, Play, XCircle } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { getTopicQuestions } from '../services/contentLoader';
@@ -166,7 +166,7 @@ const QuestionBody = ({ q, answer, onAnswer, review }) => {
  * submitting, every test kept for review on this device (utils/scholarshipTest).
  * Topics that aren't all auto-gradable MC (Writing) fall back to practice mode.
  */
-const ScholarshipTest = ({ topic, chapter, profile, onBack, size: sizeProp = TEST_SIZE, seconds: limit = TEST_SECONDS, storageId, startLabel = 'Start test', pickQuestions, homeNote, loadQuestions }) => {
+const ScholarshipTest = ({ topic, chapter, profile, onBack, size: sizeProp = TEST_SIZE, seconds: limit = TEST_SECONDS, storageId, startLabel = 'Start test', pickQuestions, homeNote, loadQuestions, autoStart = false }) => {
   const { user } = useAuth();
   const uid = user?.uid || 'anon';
   // Mock exams keep their own history under `storageId`, apart from the topic tests of the same chapter.
@@ -243,6 +243,15 @@ const ScholarshipTest = ({ topic, chapter, profile, onBack, size: sizeProp = TES
     setNow(startedAt);
     setView('test');
   };
+
+  // Opened from "Today's plan": begin the test as soon as the questions are in, unless one is already running.
+  const autoStartedRef = useRef(false);
+  useEffect(() => {
+    if (!autoStart || autoStartedRef.current || !all || view !== 'home' || st.current || !isTestable(all)) return;
+    autoStartedRef.current = true;
+    start();
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- once, when the questions arrive
+  }, [autoStart, all, view]);
 
   const back = (
     <button type="button" onClick={view === 'result' ? () => setView('home') : onBack} style={{ ...btn(false), padding: '8px 12px', marginBottom: 14 }}>

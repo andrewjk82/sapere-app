@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { Award, Target } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
+import { takePlanStart } from '../utils/planStart';
 import { getTopicQuestions } from '../services/contentLoader';
 import { DAILY_SETS, DAILY_SET_MARKS, DAILY_SET_TOPIC, HUB_PAGES, OPEN_DAILY_SET_KEY, dailySetDoneToday, dailySetStorageId, hubExamsFor, pickDailySet } from '../utils/examHub';
 import ScholarshipTest from './ScholarshipTest';
@@ -17,13 +18,16 @@ const SpecialDailyCards = ({ profile }) => {
   const uid = user?.uid || 'anon';
   const exams = useMemo(() => hubExamsFor(profile), [profile]);
   // The dashboard's "Today's plan" sends the student here with the exam to open (see OPEN_DAILY_SET_KEY).
-  const [openId, setOpenId] = useState(() => {
+  const [opened, setOpened] = useState(() => {
     try {
       const want = sessionStorage.getItem(OPEN_DAILY_SET_KEY);
       if (want) sessionStorage.removeItem(OPEN_DAILY_SET_KEY);
-      return want && DAILY_SETS[want] ? want : null;
-    } catch { return null; }
+      if (!want || !DAILY_SETS[want]) return { id: null, auto: false };
+      return { id: want, auto: takePlanStart([`special:${want}`]) !== null };   // auto: the row asked for the questions, not the set's page
+    } catch { return { id: null, auto: false }; }
   });
+  const openId = opened.id;
+  const setOpenId = (id) => setOpened({ id, auto: false });
   const [, setTick] = useState(0);
 
   useEffect(() => {
@@ -73,6 +77,7 @@ const SpecialDailyCards = ({ profile }) => {
                 carried: set.reused ? set.questionIds.filter((id) => !doneSet.has(id)) : undefined,
               };
             }}
+            autoStart={opened.auto}
             onBack={() => setOpenId(null)}
           />
         </div>,

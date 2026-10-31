@@ -36,6 +36,7 @@ const EXAM_QUICK_INSERTS = [
 import { db } from '../firebase/config';
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
 import { getNoteCount, getDueCount } from '../utils/secretNote';
+import { takePlanStart } from '../utils/planStart';
 import SecretNoteView from './challenge/SecretNoteView';
 import WorkingOutCanvas from './WorkingOutCanvas';
 import LessonPlayer from './lessons/LessonPlayer';
@@ -1966,22 +1967,6 @@ const ExamPrep = ({ profile, onExamActiveChange }) => {
     }
   };
 
-  if (!enabled) {
-    return (
-      <div className="app-page" style={{ padding: '40px 20px' }}>
-        <div className="app-panel" style={{ maxWidth: '520px', margin: '0 auto', padding: '40px 28px', textAlign: 'center', borderRadius: '28px' }}>
-          <div style={{ width: '64px', height: '64px', borderRadius: '50%', background: '#f1f5f9', display: 'grid', placeItems: 'center', margin: '0 auto 16px' }}>
-            <Lock size={26} color="#94a3b8" />
-          </div>
-          <h2 style={{ margin: 0, color: '#1e1b4b', fontWeight: 900 }}>Exam Prep is locked</h2>
-          <p style={{ color: '#64748b', fontWeight: 600, marginTop: '8px' }}>
-            Ask your teacher to enable Exam Prep in your profile.
-          </p>
-        </div>
-      </div>
-    );
-  }
-
   const handleStart = async () => {
     if (!uid) return;
     setLoading(true);
@@ -2018,6 +2003,33 @@ const ExamPrep = ({ profile, onExamActiveChange }) => {
       setLoading(false);
     }
   };
+
+  // "Today's plan" → Exam Prep: begin the practice straight away instead of waiting on the setup screen.
+  // (This effect and the locked-screen return below sit after handleStart on purpose: all hooks stay above the return.)
+  const [planStart] = useState(() => takePlanStart(['exam-prep']));
+  const planStartHandledRef = useRef(false);
+  useEffect(() => {
+    if (!planStart || planStartHandledRef.current || !enabled || !uid || stage !== 'setup' || !selection.chapters?.length) return;
+    planStartHandledRef.current = true;
+    handleStart();
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- once, when Exam Prep is ready to start
+  }, [planStart, enabled, uid, stage, selection.chapters?.length]);
+
+  if (!enabled) {
+    return (
+      <div className="app-page" style={{ padding: '40px 20px' }}>
+        <div className="app-panel" style={{ maxWidth: '520px', margin: '0 auto', padding: '40px 28px', textAlign: 'center', borderRadius: '28px' }}>
+          <div style={{ width: '64px', height: '64px', borderRadius: '50%', background: '#f1f5f9', display: 'grid', placeItems: 'center', margin: '0 auto 16px' }}>
+            <Lock size={26} color="#94a3b8" />
+          </div>
+          <h2 style={{ margin: 0, color: '#1e1b4b', fontWeight: 900 }}>Exam Prep is locked</h2>
+          <p style={{ color: '#64748b', fontWeight: 600, marginTop: '8px' }}>
+            Ask your teacher to enable Exam Prep in your profile.
+          </p>
+        </div>
+      </div>
+    );
+  }
 
   const handleAnswered = (res, q) => {
     if (!uid || !q) return;
