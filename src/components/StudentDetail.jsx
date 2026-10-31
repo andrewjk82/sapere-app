@@ -2382,17 +2382,7 @@ const StudentDetail = ({ studentId, onBack }) => {
         exportingDailyPdf={exportingDailyPdf}
         onEditProfile={() => setIsEditModalOpen(true)}
         extraActions={(
-          <MistakeReview
-            stats={dailyStats}
-            student={student}
-            pathsFor={(stat) => {
-              // Same lookup order as the challenge detail loader: the record's own source first, then the other.
-              const primary = [activeStudentCollection, activeStudentId];
-              const registered = challengeResultsUid ? ["users", challengeResultsUid] : null;
-              if (stat._source === "registered" && registered) return [registered, primary];
-              return registered && registered[1] !== activeStudentId ? [primary, registered] : [primary];
-            }}
-          />
+          <MistakeReview student={student} />
         )}
       />
 

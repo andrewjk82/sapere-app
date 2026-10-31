@@ -1,68 +1,44 @@
-/** "Review the mistakes" (teacher): which sessions are read, what counts as a mistake, de-duplication. Run via npm run test:homework. */
+/** "Review the mistakes" (teacher), Special tests only: which ids are gathered and how the review is fed. Run via npm run test:homework. */
 import assert from 'node:assert';
-import {
-  sessionsWithMistakes, mistakesFromDetail, mergeMistakes, specialMissed, toReviewArrays, MAX_SESSIONS, MAX_QUESTIONS,
-} from '../src/utils/mistakeReview.js';
+import { specialMissed, toReviewArrays, MAX_QUESTIONS } from '../src/utils/mistakeReview.js';
 
 let passed = 0;
 const test = (name, fn) => { fn(); passed += 1; console.log(`  ✓ ${name}`); };
-const stat = (id, results, extra = {}) => ({ id, date: id, dateLabel: `d${id}`, completed: true, hasDetailSnapshot: true, challengeType: 'daily', answerResults: results.map((c) => ({ correct: c })), ...extra });
+const week = (exams) => ({ d1: { tests: 1, marks: 1, total: 2, secs: 60, exams: Object.fromEntries(Object.entries(exams).map(([id, wrong]) => [id, { tests: 1, marks: 1, total: 2, kinds: { topic: 1 }, types: {}, wrong }])) } });
 
-test('only recent finished sessions that contain a mistake are read — a clean or abandoned session costs nothing', () => {
-  const stats = [
-    stat('5', [true, false]), stat('4', [true, true]), stat('3', [false], { abandoned: true }),
-    stat('2', [false], { hasDetailSnapshot: false }), stat('1', [false, false], { challengeType: 'calc' }),
-  ];
-  assert.deepEqual(sessionsWithMistakes(stats).map((s) => s.id), ['5', '1']);
-});
-
-test('at most MAX_SESSIONS sessions are read, newest first', () => {
-  const stats = Array.from({ length: 30 }, (_, i) => stat(String(30 - i), [false]));
-  const got = sessionsWithMistakes(stats);
-  assert.equal(got.length, MAX_SESSIONS);
-  assert.equal(got[0].id, '30');
-});
-
-test('a mistake is a result marked wrong; pending (teacher-marked) answers are not mistakes', () => {
-  const detail = {
-    questions: [{ id: 'q1' }, { id: 'q2' }, { id: 'q3' }, { id: 'q4' }],
-    userAnswers: ['a', 'b', 'c', 'd'],
-    answerResults: [{ correct: true }, { correct: false }, { correct: false, isPending: true }, false],
-  };
-  const got = mistakesFromDetail(detail, stat('7', [], { dateLabel: 'Tue 27 Oct' }));
-  assert.deepEqual(got.map((e) => e.question.id), ['q2', 'q4']);          // q3 is waiting for the teacher's mark; a bare `false` counts
-  assert.equal(got[0].userAnswer, 'b');
-  assert.equal(got[0].label, 'Daily Practice · Tue 27 Oct');
-  assert.equal(mistakesFromDetail({ questions: [{ id: 'x' }], answerResults: [{ correct: false }] }, stat('1', [], { challengeType: 'calc', dateLabel: 'Mon' }))[0].label, 'Daily Calculation · Mon');
-  assert.deepEqual(mistakesFromDetail(null, stat('1', [])), []);
-});
-
-test('a question missed in several sessions is reviewed once, newest first, with how often it was missed', () => {
-  const e = (id, label) => ({ question: { id }, userAnswer: '', result: { correct: false }, label });
-  const got = mergeMistakes([e('a', 'new'), e('b', 'new'), e('a', 'old'), e('a', 'older')]);
-  assert.deepEqual(got.map((x) => [x.question.id, x.times, x.label]), [['a', 3, 'new'], ['b', 1, 'new']]);
-  assert.equal(mergeMistakes(Array.from({ length: 100 }, (_, i) => e(`q${i}`, 'x'))).length, MAX_QUESTIONS);
-  assert.deepEqual(mergeMistakes([{ question: {} }]), []);
-});
-
-test('missed special-test questions come from the weekly summaries, newest week first, each id once', () => {
-  const week = (wrong) => ({ d1: { tests: 1, marks: 1, total: 2, secs: 60, exams: { 'sch-oc': { tests: 1, marks: 1, total: 2, kinds: { topic: 1 }, types: {}, wrong } } } });
-  const got = specialMissed({ w2026_10_19: week(['q1', 'q2']), w2026_10_26: week(['q2', 'q3']) });
-  assert.deepEqual(got.map((m) => m.id), ['q2', 'q3', 'q1']);
+test('missed questions come from the weekly summaries, newest week first, each id once, labelled by test and week', () => {
+  const got = specialMissed({ w2026_10_19: week({ 'sch-oc': ['q1', 'q2'] }), w2026_10_26: week({ 'sch-oc': ['q2', 'q3'], 'sch-selective': ['s1'] }) });
+  assert.deepEqual(got.map((m) => m.id), ['q2', 'q3', 's1', 'q1']);
   assert.equal(got[0].label, 'OC test · week of 2026-10-26');
-  assert.deepEqual(specialMissed(null), []);
+  assert.equal(got[2].label, 'Selective test · week of 2026-10-26');
+  assert.equal(got[0].times, 2);                                   // q2 was missed in both weeks
+  assert.equal(got[1].times, 1);
 });
 
-test('the review arrays line up and every entry is shown as wrong, with where it came from', () => {
+test('nothing recorded yet is an empty list, not an error', () => {
+  assert.deepEqual(specialMissed(null), []);
+  assert.deepEqual(specialMissed({}), []);
+  assert.deepEqual(specialMissed({ notAWeek: week({ 'sch-oc': ['q1'] }) }), []);
+});
+
+test('the review never lists more than MAX_QUESTIONS', () => {
+  const ids = (p) => Array.from({ length: 30 }, (_, i) => `${p}${i}`);    // a week keeps at most 30 per test
+  const got = specialMissed({ w2026_10_26: week({ 'sch-oc': ids('a'), 'sch-selective': ids('b') }), w2026_10_19: week({ 'sch-oc': ids('c') }) });
+  assert.equal(got.length, MAX_QUESTIONS);
+  assert.equal(got[0].id, 'a0');                                           // the newest week comes first
+});
+
+test('the review arrays line up, show every entry as wrong, and say where it came from', () => {
   const items = [
-    { question: { id: 'a' }, userAnswer: 'x', result: { correct: false, topicId: 't' }, label: 'Daily Practice · Mon', source: 'session', times: 2 },
-    { question: { id: 'b' }, userAnswer: '', result: { correct: false }, label: 'OC test · week of 2026-10-26', source: 'special', times: 1 },
+    { question: { id: 'a' }, label: 'OC test · week of 2026-10-26', times: 2 },
+    { question: { id: 'b' }, label: 'Selective test · week of 2026-10-19', times: 1 },
   ];
   const r = toReviewArrays(items);
-  assert.equal(r.questions.length, 2); assert.deepEqual(r.userAnswers, ['x', '']);
+  assert.equal(r.questions.length, 2);
+  assert.deepEqual(r.userAnswers, ['', '']);
   assert.ok(r.answerResults.every((x) => x.correct === false));
-  assert.equal(r.questionComments[0], 'Daily Practice · Mon · missed 2 times');
-  assert.match(r.questionComments[1], /answer was not kept/);
+  assert.equal(r.questionComments[0], 'OC test · week of 2026-10-26 · missed in 2 weeks · the answer was not kept for this one');
+  assert.equal(r.questionComments[1], 'Selective test · week of 2026-10-19 · the answer was not kept for this one');
 });
 
 console.log(`\nmistake review: ${passed} passed`);
