@@ -74,6 +74,7 @@ import ExamPrepPanel from "./studentDetail/ExamPrepPanel";
 import HscPastPaperPanel from "./studentDetail/HscPastPaperPanel";
 import ScholarshipPanel from "./studentDetail/ScholarshipPanel";
 import SpecialWeeklyPanel from "./studentDetail/SpecialWeeklyPanel";
+import MistakeReview from "./studentDetail/MistakeReview";
 import EditStudentModal from "./studentDetail/EditStudentModal";
 import ScheduleModal from "./studentDetail/ScheduleModal";
 import StudentHeaderCard from "./studentDetail/StudentHeaderCard";
@@ -2380,6 +2381,19 @@ const StudentDetail = ({ studentId, onBack }) => {
         onExportDailyPdf={handleExportDailyPdf}
         exportingDailyPdf={exportingDailyPdf}
         onEditProfile={() => setIsEditModalOpen(true)}
+        extraActions={(
+          <MistakeReview
+            stats={dailyStats}
+            student={student}
+            pathsFor={(stat) => {
+              // Same lookup order as the challenge detail loader: the record's own source first, then the other.
+              const primary = [activeStudentCollection, activeStudentId];
+              const registered = challengeResultsUid ? ["users", challengeResultsUid] : null;
+              if (stat._source === "registered" && registered) return [registered, primary];
+              return registered && registered[1] !== activeStudentId ? [primary, registered] : [primary];
+            }}
+          />
+        )}
       />
 
       {/* 2. Dashboard & Progress */}
