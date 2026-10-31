@@ -1303,7 +1303,7 @@
                 },
                 {
                   "explain": "The Reg menu lists \\(A\\), \\(B\\), and \\(r\\). Select \\(r\\) (Pearson's correlation coefficient) and press \\(=\\) to display its value.",
-                  "work": "Select \\(r\\) → \\(=\\) ;\\Rightarrow; r = 0.995193611\\ldots"
+                  "work": "Select \\(r\\) → \\(= \\;\\Rightarrow\\; r = 0.995193611\\ldots\\)"
                 },
                 {
                   "explain": "Round to 4 decimal places.",
@@ -1334,11 +1334,11 @@
                 },
                 {
                   "explain": "This time select \\(B\\) (the gradient) and press \\(=\\).",
-                  "work": "Select \\(B\\) → \\(=\\) ;\\Rightarrow; B \\approx 1.19"
+                  "work": "Select \\(B\\) → \\(= \\;\\Rightarrow\\; B \\approx 1.19\\)"
                 },
                 {
                   "explain": "Reopen the same Reg menu (SHIFT 1 → 5) and select \\(A\\) (the \\(y\\)-intercept) and press \\(=\\).",
-                  "work": "SHIFT 1 (STAT) → 5 (Reg) → Select \\(A\\) → \\(=\\) ;\\Rightarrow; A \\approx -0.85"
+                  "work": "SHIFT 1 (STAT) → 5 (Reg) → Select \\(A\\) → \\(= \\;\\Rightarrow\\; A \\approx -0.85\\)"
                 },
                 {
                   "explain": "Write the regression equation in the form \\(h=Bt+A\\), rounding each coefficient to 2 decimal places.",
@@ -1372,7 +1372,6 @@
               "xp": 2
             }
           ],
-          "manual": true,
           "meta": {
             "source": "Hornsby Girls HS 2020 2U Trials",
             "school": "Hornsby Girls High School",
