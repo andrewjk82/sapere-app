@@ -29,10 +29,10 @@ const allYearKeys = Object.keys(CURRICULUM_DATA);
  * Lives in the Challenge tab right under Basic Calculation and mirrors its
  * card layout: a left-side section title + a right-side enable/disable pill.
  * When enabled, the panel expands to show cumulative topic analysis pulled
- * from `students/{uid}/exam_prep/summary` (mirrored by the student app on
- * every round finish).
+ * from `users/{uid}/examPrep/state`, the stats + history the student app saves
+ * at the end of every session (the same document the D-1 report reads).
  */
-export default function ExamPrepPanel({ styles, student, studentId, onUpdateSetting }) {
+export default function ExamPrepPanel({ styles, student, studentId, statsUid, onUpdateSetting }) {
   const enabled = student?.examPrepEnabled === true;
   const [summary, setSummary] = useState(null);
 
@@ -93,13 +93,17 @@ export default function ExamPrepPanel({ styles, student, studentId, onUpdateSett
     setActiveCourse(null);
   };
 
+  // The student's account id (for a manual record linked to an account it is the account's id, not the record's).
+  const accountUid = statsUid || studentId;
   useEffect(() => {
-    if (!studentId || !enabled) { setSummary(null); return undefined; }
-    const ref = doc(db, "students", studentId, "exam_prep", "summary");
+    if (!accountUid || !enabled) { setSummary(null); return undefined; }
+    const ref = doc(db, "users", accountUid, "examPrep", "state");
     return onSnapshot(ref, (snap) => {
-      setSummary(snap.exists() ? snap.data() : null);
-    }, (err) => console.warn("exam_prep summary listen failed:", err));
-  }, [studentId, enabled]);
+      if (!snap.exists()) { setSummary(null); return; }
+      const d = snap.data() || {};
+      setSummary({ ...(d.stats || {}), lastRound: Array.isArray(d.history) ? d.history[0] : undefined });
+    }, (err) => console.warn("exam prep state listen failed:", err));
+  }, [accountUid, enabled]);
 
   const sessions = summary?.sessions || 0;
   const attempted = summary?.attempted || 0;

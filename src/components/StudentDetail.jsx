@@ -2184,6 +2184,7 @@ const StudentDetail = ({ studentId, onBack }) => {
                 styles={{ ...styles, card: {} }}
                 student={student}
                 studentId={studentId}
+                statsUid={challengeResultsUid}
                 onUpdateSetting={handleUpdateCurriculumSetting}
               />
 

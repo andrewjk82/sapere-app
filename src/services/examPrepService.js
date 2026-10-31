@@ -19,6 +19,7 @@
  */
 import { db } from '../firebase/config';
 import { getDoc, doc, setDoc, serverTimestamp } from 'firebase/firestore';
+import { shouldAdoptServerStats } from '../utils/examPrepSync';
 import { addMistakes } from '../utils/secretNote';
 import { idbGet, idbSet, idbDel } from '../utils/idbStore';
 import { readChapterIndex } from './questionIndexService';
@@ -457,6 +458,7 @@ export const persistStateToServer = async (uid) => {
 // getters return cross-device values. Server wins when it has ≥ local sessions.
 const hydratedUids = new Set();
 
+
 export const hydrateExamPrepState = async (uid, { force = false } = {}) => {
   if (!uid) return false;
   if (!force && hydratedUids.has(uid)) return false; // already synced this session
@@ -468,9 +470,7 @@ export const hydrateExamPrepState = async (uid, { force = false } = {}) => {
     const serverStats = data.stats;
     if (!serverStats) return false;
     const serverHistory = Array.isArray(data.history) ? data.history : [];
-    const localSessions = Number(getStats(uid).sessions) || 0;
-    const serverSessions = Number(serverStats.sessions) || 0;
-    if (serverSessions >= localSessions) {
+    if (shouldAdoptServerStats(getStats(uid), serverStats)) {
       localStorage.setItem(k(uid, 'stats'), JSON.stringify(serverStats));
       localStorage.setItem(k(uid, 'history'), JSON.stringify(serverHistory.slice(0, HISTORY_CAP)));
       if (data.progress && typeof data.progress === 'object') {
@@ -728,33 +728,9 @@ export const endSession = async (uid, results, { questions = [] } = {}) => {
     }
   }
 
-  const progress = getProgress(uid);
-  const mastery = {
-    mastered: Object.values(progress.byId || {}).filter((v) => v?.status === 'correct').length,
-  };
-
-  if (uid) {
-    try {
-      await setDoc(doc(db, 'students', uid, 'exam_prep', 'summary'), {
-        sessions: stats.sessions,
-        attempted: stats.attempted,
-        correct: stats.correct,
-        byTopic: stats.byTopic,
-        progressMastered: mastery.mastered,
-        progressCycles: progress.cycles || 0,
-        lastRound: {
-          finishedAt: Date.now(),
-          total: results.length,
-          correct,
-          perTopic,
-          mode: 'endless',
-        },
-        updatedAt: serverTimestamp(),
-      }, { merge: true });
-    } catch (err) {
-      console.warn('Exam Prep summary mirror failed:', err);
-    }
-  }
+  // The teacher's Exam Prep panel reads users/{uid}/examPrep/state, which persistStateToServer above keeps current.
+  // (A mirror to students/{uid}/exam_prep/summary used to be written here; the rules never let a student write it,
+  // so it failed on every session and the teacher panel stayed at zero.)
 
   return {
     correct,
