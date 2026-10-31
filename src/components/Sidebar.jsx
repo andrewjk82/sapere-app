@@ -18,6 +18,7 @@ import {
   Clock,
   Shuffle,
   ListChecks,
+  Target,
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
@@ -25,6 +26,7 @@ import { useAdminFeed } from '../context/AdminFeedContext';
 import { db } from '../firebase/config';
 import { doc, setDoc } from 'firebase/firestore';
 import { useProfile } from '../context/ProfileContext';
+import { hasOcSelective } from '../utils/examHub';
 import AvatarPickerModal from './AvatarPickerModal';
 import { CURRENT_APP_VERSION } from '../constants/appVersion';
 
@@ -121,6 +123,9 @@ const Sidebar = ({ activeTab, setActiveTab, isLocked, onShowLeaderboard, onShowN
         )}
         {!isAdmin && profile?.scholarshipEnabled === true && (
           <SidebarItem icon={Award} label="Scholarship" active={activeTab === 'Scholarship'} onClick={() => setActiveTab('Scholarship')} disabled={isLocked} />
+        )}
+        {!isAdmin && hasOcSelective(profile) && (
+          <SidebarItem icon={Target} label="OC & Selective" active={activeTab === 'OcSelective'} onClick={() => setActiveTab('OcSelective')} disabled={isLocked} />
         )}
         {isAdmin && (
           <SidebarItem icon={Inbox} label="Reports & Review" active={activeTab === 'Reports'} onClick={() => setActiveTab('Reports')} disabled={isLocked} badge={reportCount + gradingCount} />

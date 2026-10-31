@@ -132,7 +132,7 @@ export const isTestable = (questions) => questions.length > 0 && questions.every
     : (q?.options || []).length > 1
 ));
 
-export const secondsLeft = (attempt, now = Date.now()) => {
+export const secondsLeft = (attempt, now = Date.now(), limit = TEST_SECONDS) => {
   const start = Number(attempt?.startedAt);
-  return Math.max(0, TEST_SECONDS - Math.floor((now - (Number.isFinite(start) ? start : now)) / 1000));
+  return Math.max(0, limit - Math.floor((now - (Number.isFinite(start) ? start : now)) / 1000));
 };

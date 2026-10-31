@@ -103,6 +103,7 @@ const StudentDetail = lazyWithReload(() => import('./components/StudentDetail'))
 const ReportsAdmin = lazyWithReload(() => import('./components/ReportsAdmin'));
 const ExamPrep = lazyWithReload(() => import('./components/ExamPrep'));
 const Scholarship = lazyWithReload(() => import('./components/Scholarship'));
+const OcSelectivePrep = lazyWithReload(() => import('./components/OcSelectivePrep'));
 const DnaWarmupReviewPage = lazyWithReload(() => import('./components/hsc/DnaWarmupReviewPage'));
 const QuestionPreStepsReviewPage = lazyWithReload(() => import('./components/hsc/QuestionPreStepsReviewPage'));
 import Login from './pages/Login';
@@ -1391,6 +1392,8 @@ function App() {
         return <ExamPrep profile={profile} onExamActiveChange={setExamInProgress} />;
       case 'Scholarship':
         return <Scholarship profile={profile} />;
+      case 'OcSelective':
+        return <OcSelectivePrep profile={profile} setActiveTab={handleTabChange} />;
       case 'Library':
         return <Library />;
       case 'Reports':
