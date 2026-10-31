@@ -166,7 +166,7 @@ const QuestionBody = ({ q, answer, onAnswer, review }) => {
  * submitting, every test kept for review on this device (utils/scholarshipTest).
  * Topics that aren't all auto-gradable MC (Writing) fall back to practice mode.
  */
-const ScholarshipTest = ({ topic, chapter, profile, onBack, size: sizeProp = TEST_SIZE, seconds: limit = TEST_SECONDS, storageId, startLabel = 'Start test', pickQuestions, homeNote, loadQuestions, autoStart = false }) => {
+const ScholarshipTest = ({ topic, chapter, profile, onBack, size: sizeProp = TEST_SIZE, seconds: limit = TEST_SECONDS, storageId, startLabel = 'Start test', pickQuestions, homeNote, loadQuestions, autoStart = false, lockedNote = '', initialResultId = null }) => {
   const { user } = useAuth();
   const uid = user?.uid || 'anon';
   // Mock exams keep their own history under `storageId`, apart from the topic tests of the same chapter.
@@ -175,8 +175,9 @@ const ScholarshipTest = ({ topic, chapter, profile, onBack, size: sizeProp = TES
   const [failed, setFailed] = useState(false);
   const [st, setSt] = useState(() => loadTestState(uid, keyChapter, topic.id));
   // An unfinished test resumes straight away (one whose time ran out is submitted below).
-  const [view, setView] = useState(() => (st.current ? 'test' : 'home')); // 'home' | 'test' | 'result' | 'review'
-  const [reviewId, setReviewId] = useState(null);
+  // A finished daily set (`initialResultId`) opens on its result; a test still running resumes.
+  const [view, setView] = useState(() => (initialResultId ? 'result' : st.current ? 'test' : 'home')); // 'home' | 'test' | 'result' | 'review'
+  const [reviewId, setReviewId] = useState(initialResultId);
   const [reviewIdx, setReviewIdx] = useState(null);   // question the review opens on (null = the result screen)
   const [idx, setIdx] = useState(0);
   const [confirming, setConfirming] = useState(false);
@@ -233,6 +234,7 @@ const ScholarshipTest = ({ topic, chapter, profile, onBack, size: sizeProp = TES
   const left = cur ? secondsLeft(cur, now, limit) : limit;
 
   const start = () => {
+    if (lockedNote) return;
     // A mock supplies its own picker (utils/examHub.pickMockPaper); a topic test takes the next unseen questions.
     const pick = pickQuestions
       ? pickQuestions({ questions: all, state: st })
@@ -384,7 +386,9 @@ const ScholarshipTest = ({ topic, chapter, profile, onBack, size: sizeProp = TES
             </>
           )}
         </div>
-        <button type="button" onClick={start} style={btn(true)}><Play size={16} /> {startLabel}</button>
+        {lockedNote
+          ? <div style={{ fontWeight: 700, color: C.muted, fontSize: '0.9rem' }}>{lockedNote}</div>
+          : <button type="button" onClick={start} style={btn(true)}><Play size={16} /> {startLabel}</button>}
       </div>
       <h3 style={{ fontSize: '1rem', fontWeight: 900, color: C.ink, margin: '0 0 8px' }}>Past tests</h3>
       {attempts.length === 0 && <div style={{ ...card, color: C.faint, fontWeight: 700 }}>No tests yet.</div>}

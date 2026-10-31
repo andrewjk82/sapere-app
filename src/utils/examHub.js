@@ -221,7 +221,9 @@ export const pickMockPaper = ({ questions, done = [], targetMarks, blueprint = {
   const groups = new Map();
   questions.forEach((q) => { const k = stratumOf(q); (groups.get(k) || groups.set(k, []).get(k)).push(q); });
   const keys = [...groups.keys()];
-  const capacity = Object.fromEntries(keys.map((k) => [k, groups.get(k).reduce((s, q) => s + marksOf(q), 0)]));
+  // `units`: every question counts as 1 whatever its parts (a daily set is N questions, as Daily Practice is).
+  const weigh = blueprint.units ? () => 1 : marksOf;
+  const capacity = Object.fromEntries(keys.map((k) => [k, groups.get(k).reduce((s, q) => s + weigh(q), 0)]));
 
   // Weights per stratum.
   let weights;
@@ -229,7 +231,7 @@ export const pickMockPaper = ({ questions, done = [], targetMarks, blueprint = {
   else if (blueprint.weight === 'paper') {
     // Average marks per stratum over the bank's FULL papers (those that are at least 80% of a real paper).
     const papers = new Map();
-    questions.forEach((q) => { const p = papers.get(paperKey(q)) || papers.set(paperKey(q), { total: 0, by: {} }).get(paperKey(q)); p.total += marksOf(q); p.by[stratumOf(q)] = (p.by[stratumOf(q)] || 0) + marksOf(q); });
+    questions.forEach((q) => { const p = papers.get(paperKey(q)) || papers.set(paperKey(q), { total: 0, by: {} }).get(paperKey(q)); p.total += weigh(q); p.by[stratumOf(q)] = (p.by[stratumOf(q)] || 0) + weigh(q); });
     const full = [...papers.values()].filter((p) => p.total >= targetMarks * 0.8);
     weights = full.length
       ? Object.fromEntries(keys.map((k) => [k, full.reduce((s, p) => s + (p.by[k] || 0), 0) / full.length]))
@@ -263,7 +265,7 @@ export const pickMockPaper = ({ questions, done = [], targetMarks, blueprint = {
     const pool = [...shuffled(groups.get(k).filter((q) => !doneSet.has(String(q.id))), rng), ...shuffled(groups.get(k).filter((q) => doneSet.has(String(q.id))), rng)];
     let acc = 0;
     for (const q of pool) {
-      const m = marksOf(q);
+      const m = weigh(q);
       if (acc + m / 2 > want) continue;
       chosen.push(q); acc += m; strata[k] = acc;
       if (doneSet.has(String(q.id))) reused = true;
@@ -275,41 +277,44 @@ export const pickMockPaper = ({ questions, done = [], targetMarks, blueprint = {
     const jitter = new Map(chosen.map((q) => [String(q.id), rng()]));
     chosen.sort((a, b) => (pos.get(String(a.id)) - pos.get(String(b.id))) || (jitter.get(String(a.id)) - jitter.get(String(b.id))));
   }
-  return { questionIds: chosen.map((q) => String(q.id)), marks: chosen.reduce((s, q) => s + marksOf(q), 0), reused, strata };
+  return { questionIds: chosen.map((q) => String(q.id)), marks: chosen.reduce((s, q) => s + marksOf(q), 0), count: chosen.length, reused, strata };
 };
 
 // ── Daily Study set ───────────────────────────────────────────────────────────────────────────────────────────
 //
-// A student who has OC / Selective / Scholarship switched on gets one extra Daily Study card per exam: a 10-mark set,
-// half from each of two sections (OC: Mathematics + Thinking Skills). A section that has no questions yet
-// (Selective Thinking Skills) gives its share to the other one, so the set is always 10 marks when the bank has them.
+// A student who has OC / Selective / Scholarship switched on gets one extra Daily Study card per exam, used once a day
+// like Daily Practice: N questions, half from each of two sections (OC: 5 Mathematics + 5 Thinking Skills). A question
+// counts as one however many parts it has. A section that has no questions yet (Selective Thinking Skills) gives its
+// share to the other one, so the set is still full when the bank has the questions.
 
-export const DAILY_SET_MARKS = 10;
+export const DAILY_SET_QUESTIONS = 10;
 export const DAILY_SETS = {
-  [OC_EXAM_ID]: { label: 'OC', sections: [{ topicId: 'sch-oc-maths', name: 'Mathematics' }, { topicId: 'sch-oc-thinking', name: 'Thinking Skills' }] },
-  [SELECTIVE_EXAM_ID]: { label: 'Selective', sections: [{ topicId: 'sch-selective-maths', name: 'Mathematical Reasoning' }, { topicId: 'sch-selective-thinking', name: 'Thinking Skills' }] },
-  // ACER has no Thinking Skills section: its second main section is Reading and Viewing (one 5-mark passage).
-  [ACER_EXAM_ID]: { label: 'Scholarship', sections: [{ topicId: 'sch-acer-maths', name: 'Mathematics' }, { topicId: 'sch-acer-reading', name: 'Reading and Viewing' }] },
+  [OC_EXAM_ID]: { label: 'OC', sections: [{ topicId: 'sch-oc-maths', name: 'Mathematics', want: 5 }, { topicId: 'sch-oc-thinking', name: 'Thinking Skills', want: 5 }] },
+  [SELECTIVE_EXAM_ID]: { label: 'Selective', sections: [{ topicId: 'sch-selective-maths', name: 'Mathematical Reasoning', want: 5 }, { topicId: 'sch-selective-thinking', name: 'Thinking Skills', want: 5 }] },
+  // ACER has no Thinking Skills section. Its Reading passages carry 2-7 parts each, so one passage is that half of the day.
+  [ACER_EXAM_ID]: { label: 'Scholarship', sections: [{ topicId: 'sch-acer-maths', name: 'Mathematics', want: 5 }, { topicId: 'sch-acer-reading', name: 'Reading and Viewing', want: 1 }] },
 };
 
 /** Where a set's history is kept on the device, and whether it has been submitted today (local calendar day). */
 export const dailySetStorageId = (examId) => `daily:${examId}`;
 export const DAILY_SET_TOPIC = 'set';
-export const dailySetDoneToday = (uid, examId) => {
+/** The attempt submitted today (local calendar day) for this exam's daily set, or null. One set a day, like Daily Practice. */
+export const dailySetToday = (uid, examId) => {
   const today = new Date().toLocaleDateString('en-CA');
-  return loadTestState(uid, dailySetStorageId(examId), DAILY_SET_TOPIC).attempts
-    .some((a) => a.submittedAt && new Date(a.submittedAt).toLocaleDateString('en-CA') === today);
+  const attempts = loadTestState(uid, dailySetStorageId(examId), DAILY_SET_TOPIC).attempts;
+  return [...attempts].reverse().find((a) => a.submittedAt && new Date(a.submittedAt).toLocaleDateString('en-CA') === today) || null;
 };
+export const dailySetDoneToday = (uid, examId) => dailySetToday(uid, examId) !== null;
 /** Dashboard → Daily Study hand-off: the exam whose set should open as soon as the Daily Study page does. */
 export const OPEN_DAILY_SET_KEY = 'sapere:openSpecialDaily:v1';
 
-/** Marks per section: an even split, capped by what each section holds; what one cannot give goes to the others. */
-export const dailySetShares = (available, total = DAILY_SET_MARKS) => {
-  const n = available.length;
-  const share = available.map((a, i) => Math.min(a, Math.floor(total / n) + (i < total % n ? 1 : 0)));
+/** Questions per section: what each wants, capped by what it holds; what one cannot give goes to the others. */
+export const dailySetShares = (available, wants) => {
+  const total = wants.reduce((s, v) => s + v, 0);
+  const share = available.map((a, i) => Math.min(a, wants[i]));
   let left = total - share.reduce((s, v) => s + v, 0);
-  for (let i = 0; left > 0 && i < n * total; i += 1) {
-    const k = i % n;
+  for (let i = 0; left > 0 && i < available.length * (total + 1); i += 1) {
+    const k = i % available.length;
     if (share[k] < available[k]) { share[k] += 1; left -= 1; }
   }
   return share;
@@ -320,20 +325,21 @@ const DAILY_BLUEPRINT_OVERRIDE = { 'sch-oc-thinking': { by: 'category', weight: 
 
 /**
  * Pick today's set. `questions`: every question of the exam's two sections, each tagged `_topicId`.
- * → { questionIds (section order), marks, reused, sections: [{ topicId, marks }] }
+ * → { questionIds (section order), count, marks, reused, sections: [{ topicId, count }] }
  */
 export const pickDailySet = ({ examId, questions, done = [], rng = Math.random }) => {
   const sections = DAILY_SETS[examId]?.sections || [];
   const banks = sections.map((s) => questions.filter((q) => q._topicId === s.topicId));
-  const avail = banks.map((qs) => qs.reduce((n, q) => n + marksOf(q), 0));
-  const shares = dailySetShares(avail);
+  const shares = dailySetShares(banks.map((qs) => qs.length), sections.map((s) => s.want));
   let reused = false;
   const out = []; const per = [];
   sections.forEach((s, i) => {
-    if (!shares[i]) { per.push({ topicId: s.topicId, marks: 0 }); return; }
-    const paper = pickMockPaper({ questions: banks[i], done, targetMarks: shares[i], blueprint: DAILY_BLUEPRINT_OVERRIDE[s.topicId] || MOCK_BLUEPRINT[s.topicId] || {}, rng });
+    if (!shares[i]) { per.push({ topicId: s.topicId, count: 0 }); return; }
+    const blueprint = { ...(DAILY_BLUEPRINT_OVERRIDE[s.topicId] || MOCK_BLUEPRINT[s.topicId] || {}), units: true };
+    const paper = pickMockPaper({ questions: banks[i], done, targetMarks: shares[i], blueprint, rng });
     if (paper.reused) reused = true;
-    out.push(...paper.questionIds); per.push({ topicId: s.topicId, marks: paper.marks });
+    out.push(...paper.questionIds); per.push({ topicId: s.topicId, count: paper.questionIds.length });
   });
-  return { questionIds: out, marks: per.reduce((n, p) => n + p.marks, 0), reused, sections: per };
+  const byId = new Map(questions.map((q) => [String(q.id), q]));
+  return { questionIds: out, count: out.length, marks: out.reduce((n, id) => n + marksOf(byId.get(id)), 0), reused, sections: per };
 };

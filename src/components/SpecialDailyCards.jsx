@@ -4,7 +4,7 @@ import { Award, Target } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { takePlanStart } from '../utils/planStart';
 import { getTopicQuestions } from '../services/contentLoader';
-import { DAILY_SETS, DAILY_SET_MARKS, DAILY_SET_TOPIC, HUB_PAGES, OPEN_DAILY_SET_KEY, dailySetDoneToday, dailySetStorageId, hubExamsFor, pickDailySet } from '../utils/examHub';
+import { DAILY_SETS, DAILY_SET_QUESTIONS, DAILY_SET_TOPIC, HUB_PAGES, OPEN_DAILY_SET_KEY, dailySetToday, dailySetStorageId, hubExamsFor, pickDailySet } from '../utils/examHub';
 import ScholarshipTest from './ScholarshipTest';
 
 /**
@@ -38,12 +38,14 @@ const SpecialDailyCards = ({ profile }) => {
 
   if (!exams.length) return null;
   const plan = openId ? DAILY_SETS[openId] : null;
+  // One set a day, as Daily Practice: once today's is submitted the card opens its result (and review), not a new set.
+  const todayAttempt = openId ? dailySetToday(uid, openId) : null;
 
   return (
     <>
       {exams.map((examId) => {
         const set = DAILY_SETS[examId];
-        const done = dailySetDoneToday(uid, examId);
+        const done = dailySetToday(uid, examId) !== null;
         const Icon = examId === 'sch-acer' ? Award : Target;
         return (
           <article key={examId} className={`cs__test-card cs__test-card--interactive cs__test-card--${done ? 'completed' : 'pending'}`}>
@@ -58,13 +60,15 @@ const SpecialDailyCards = ({ profile }) => {
       {plan && createPortal(
         <div style={{ position: 'fixed', inset: 0, zIndex: 2100, background: '#f6f1ff', overflowY: 'auto', padding: '16px 12px 40px' }}>
           <ScholarshipTest
-            key={openId}
+            key={`${openId}:${todayAttempt ? 'done' : 'open'}`}
             topic={{ id: DAILY_SET_TOPIC, title: `${plan.label} daily set`, code: '' }}
             chapter={{ id: openId, title: HUB_PAGES[openId]?.label || plan.label }}
             profile={profile}
             storageId={dailySetStorageId(openId)}
             startLabel="Start today's set"
-            homeNote={`${DAILY_SET_MARKS} marks: ${plan.sections.map((s) => s.name).join(' and ')}. Answers and solutions after you submit, then review each question step by step.`}
+            homeNote={`${DAILY_SET_QUESTIONS} questions a day: ${plan.sections.map((s) => s.name).join(' and ')}. Answers and solutions after you submit, then review each question step by step.`}
+            lockedNote={todayAttempt ? "Today's set is done. A new one is ready tomorrow." : ''}
+            initialResultId={todayAttempt ? todayAttempt.id : null}
             loadQuestions={() => Promise.all(plan.sections.map((s) => getTopicQuestions(s.topicId, { chapterId: openId })
               .then((qs) => (qs || []).map((q) => ({ ...q, _topicId: s.topicId })))))
               .then((lists) => lists.flat())}
@@ -77,7 +81,7 @@ const SpecialDailyCards = ({ profile }) => {
                 carried: set.reused ? set.questionIds.filter((id) => !doneSet.has(id)) : undefined,
               };
             }}
-            autoStart={opened.auto}
+            autoStart={opened.auto && !todayAttempt}
             onBack={() => setOpenId(null)}
           />
         </div>,

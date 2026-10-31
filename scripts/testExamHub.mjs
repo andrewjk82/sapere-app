@@ -6,7 +6,7 @@ import { toReviewItems, questionOutcomes, isPickCorrect, correctIndexOf, subKey 
 import { resolveCorrectOptionText } from '../src/utils/mcOptionShuffle.js';
 import {
   hubExamsFor, examIdForTab, HUB_PAGES, mockSizeFor, summariseAttempts, rankGroups,
-  MIN_MARKS_TO_JUDGE, RECENT_ATTEMPTS, MOCK_FORMATS, MOCK_BLUEPRINT, pickNextStep, pickMockPaper, DAILY_SETS, dailySetShares, pickDailySet, DAILY_SET_MARKS,
+  MIN_MARKS_TO_JUDGE, RECENT_ATTEMPTS, MOCK_FORMATS, MOCK_BLUEPRINT, pickNextStep, pickMockPaper, DAILY_SETS, dailySetShares, pickDailySet, DAILY_SET_QUESTIONS, dailySetToday, dailySetDoneToday, dailySetStorageId, DAILY_SET_TOPIC,
 } from '../src/utils/examHub.js';
 
 let passed = 0;
@@ -258,48 +258,62 @@ const dailyBank = (examId) => DAILY_SETS[examId].sections.flatMap((sec) => {
 });
 const marksIn = (qs) => qs.reduce((n, q) => n + (q.subQuestions?.length || 1), 0);
 
-test('daily set shares: an even split, and an empty section hands its share to the other', () => {
-  assert.deepEqual(dailySetShares([700, 90]), [5, 5]);
-  assert.deepEqual(dailySetShares([775, 0]), [10, 0]);
-  assert.deepEqual(dailySetShares([0, 90]), [0, 10]);
-  assert.deepEqual(dailySetShares([3, 40]), [3, 7]);
-  assert.deepEqual(dailySetShares([3, 2]), [3, 2]);
-  assert.deepEqual(dailySetShares([0, 0]), [0, 0]);
+test('daily set shares: what each section wants, and an empty section hands its share to the other', () => {
+  assert.deepEqual(dailySetShares([700, 90], [5, 5]), [5, 5]);
+  assert.deepEqual(dailySetShares([775, 0], [5, 5]), [10, 0]);
+  assert.deepEqual(dailySetShares([0, 90], [5, 5]), [0, 10]);
+  assert.deepEqual(dailySetShares([3, 40], [5, 5]), [3, 7]);
+  assert.deepEqual(dailySetShares([3, 2], [5, 5]), [3, 2]);
+  assert.deepEqual(dailySetShares([0, 0], [5, 5]), [0, 0]);
+  assert.deepEqual(dailySetShares([16, 8], [5, 1]), [5, 1]);                    // ACER: 5 Maths + one passage
 });
 
-test('OC daily set: 5 marks of Mathematics and 5 of Thinking Skills, no two Thinking questions of one kind', () => {
+test('OC daily set is 10 questions: 5 of Mathematics, 5 of Thinking Skills with no two of one kind', () => {
   const qs = dailyBank('sch-oc');
+  const by = new Map(qs.map((q) => [String(q.id), q]));
   for (let seed = 1; seed <= 25; seed += 1) {
     const r = pickDailySet({ examId: 'sch-oc', questions: qs, rng: seeded(seed) });
-    const by = new Map(qs.map((q) => [String(q.id), q]));
     const items = r.questionIds.map((id) => by.get(id));
     const maths = items.filter((q) => q._topicId === 'sch-oc-maths');
     const think = items.filter((q) => q._topicId === 'sch-oc-thinking');
-    assert.ok(Math.abs(marksIn(maths) - 5) <= 1, `seed ${seed}: maths ${marksIn(maths)}`);
-    assert.equal(marksIn(think), 5, `seed ${seed}`);
+    assert.equal(r.count, DAILY_SET_QUESTIONS, `seed ${seed}`);
+    assert.equal(maths.length, 5, `seed ${seed}`);
+    assert.equal(think.length, 5, `seed ${seed}`);
     assert.equal(new Set(think.map((q) => q.category)).size, 5, `seed ${seed}: ${think.map((q) => q.category)}`);
-    assert.ok(Math.abs(r.marks - DAILY_SET_MARKS) <= 1, `seed ${seed}: ${r.marks}`);
     assert.deepEqual(items.map((q) => q._topicId), [...items.map((q) => q._topicId)].sort((a, b) => (a === 'sch-oc-maths' ? -1 : 1) - (b === 'sch-oc-maths' ? -1 : 1)));   // Mathematics first
   }
 });
 
-test('Selective daily set is all Mathematical Reasoning while its Thinking Skills bank is empty', () => {
+test('Selective daily set is 10 Mathematical Reasoning questions while its Thinking Skills bank is empty', () => {
   const qs = dailyBank('sch-selective');
   assert.ok(qs.every((q) => q._topicId === 'sch-selective-maths'));
-  const r = pickDailySet({ examId: 'sch-selective', questions: qs, rng: seeded(4) });
-  assert.ok(Math.abs(r.marks - 10) <= 1, String(r.marks));
-  assert.equal(r.sections[1].marks, 0);
+  for (let seed = 1; seed <= 10; seed += 1) {
+    const r = pickDailySet({ examId: 'sch-selective', questions: qs, rng: seeded(seed) });
+    assert.equal(r.count, 10, `seed ${seed}`);
+    assert.equal(r.sections[1].count, 0);
+  }
 });
 
-test('Scholarship (ACER) daily set is about 5 marks of Mathematics and about 5 of Reading (one or two passages)', () => {
+test('Scholarship (ACER) daily set is 5 Mathematics questions and one Reading passage', () => {
   const qs = dailyBank('sch-acer');
   for (let seed = 1; seed <= 10; seed += 1) {
     const r = pickDailySet({ examId: 'sch-acer', questions: qs, rng: seeded(seed) });
-    const passages = r.questionIds.filter((id) => qs.find((q) => String(q.id) === id)?._topicId === 'sch-acer-reading');
-    // passages carry 2–7 marks each, so 5 marks is one passage or two short ones
-    assert.ok(passages.length >= 1 && passages.length <= 2, `seed ${seed}`);
-    assert.ok(r.sections[1].marks >= 4 && r.sections[1].marks <= 8, `seed ${seed}: ${r.sections[1].marks}`);
-    assert.ok(Math.abs(r.sections[0].marks - 5) <= 2, `seed ${seed}: ${r.sections[0].marks}`);
+    assert.equal(r.sections[0].count, 5, `seed ${seed}`);
+    assert.equal(r.sections[1].count, 1, `seed ${seed}`);
+    assert.ok(r.marks >= 7 && r.marks <= 22, `seed ${seed}: ${r.marks} marks`);          // a 2–7 part passage + 5 Maths questions of 1–3 parts
+  }
+});
+
+test('a multi-part question counts as ONE question in a daily set', () => {
+  const qs = [
+    { id: 'm1', _topicId: 'sch-oc-maths', subQuestions: [{}, {}, {}] }, { id: 'm2', _topicId: 'sch-oc-maths', subQuestions: [{}, {}] },
+    ...Array.from({ length: 6 }, (_, i) => ({ id: `s${i}`, _topicId: 'sch-oc-maths' })),
+    ...Array.from({ length: 8 }, (_, i) => ({ id: `t${i}`, _topicId: 'sch-oc-thinking', category: `c${i}` })),
+  ];
+  for (let seed = 1; seed <= 20; seed += 1) {
+    const r = pickDailySet({ examId: 'sch-oc', questions: qs, rng: seeded(seed) });
+    assert.equal(r.sections[0].count, 5, `seed ${seed}`);
+    assert.equal(r.count, 10);
   }
 });
 
@@ -311,6 +325,22 @@ test('daily set avoids done questions, and says when it had to repeat', () => {
   assert.equal(next.reused, false);
   assert.ok(next.questionIds.every((id) => !first.questionIds.includes(id)));
   assert.equal(pickDailySet({ examId: 'sch-oc', questions: qs, done: ids, rng: seeded(2) }).reused, true);
+});
+
+test('one daily set a day: today\'s submitted set is found, yesterday\'s and unsubmitted ones are not', () => {
+  const store = {};
+  globalThis.localStorage = { getItem: (k) => (k in store ? store[k] : null), setItem: (k, v) => { store[k] = String(v); }, removeItem: (k) => { delete store[k]; }, key: (i) => Object.keys(store)[i] ?? null, get length() { return Object.keys(store).length; } };
+  const key = (uid, exam) => `sapere:schtest:${uid}:${dailySetStorageId(exam)}:${DAILY_SET_TOPIC}`;
+  const att = (id, when) => ({ id, submittedAt: when, marks: 5, total: 10, questionIds: [], answers: {} });
+  const now = Date.now();
+  store[key('u1', 'sch-oc')] = JSON.stringify({ round: 1, done: [], attempts: [att('old', now - 36 * 3600e3), att('today1', now - 1000)], current: null });
+  store[key('u1', 'sch-selective')] = JSON.stringify({ round: 1, done: [], attempts: [att('old', now - 36 * 3600e3)], current: { id: 'running' } });
+  assert.equal(dailySetToday('u1', 'sch-oc').id, 'today1');
+  assert.equal(dailySetDoneToday('u1', 'sch-oc'), true);
+  assert.equal(dailySetDoneToday('u1', 'sch-selective'), false);       // only yesterday's, and one is still running
+  assert.equal(dailySetDoneToday('u1', 'sch-acer'), false);            // nothing yet
+  assert.equal(dailySetDoneToday('u2', 'sch-oc'), false);              // another student on the same device
+  delete globalThis.localStorage;
 });
 
 console.log(`\nexam hub: ${passed} passed`);
