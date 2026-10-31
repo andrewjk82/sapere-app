@@ -1,7 +1,7 @@
 /** OC & Selective hub: who sees it, how long a mock is, how weak spots are judged. Run via npm run test:homework. */
 import assert from 'node:assert';
 import {
-  hubExamsFor, hasOcSelective, mockSizeFor, summariseAttempts, rankGroups,
+  hubExamsFor, examIdForTab, HUB_PAGES, mockSizeFor, summariseAttempts, rankGroups,
   MIN_MARKS_TO_JUDGE, RECENT_ATTEMPTS, MOCK_FORMATS,
 } from '../src/utils/examHub.js';
 
@@ -16,8 +16,16 @@ test('only students with Scholarship on and OC or Selective ticked get the page'
   assert.deepEqual(hubExamsFor({ scholarshipEnabled: true, scholarshipExams: ['sch-oc', 'sch-selective'] }), ['sch-oc', 'sch-selective']);
   // no list = every exam, which is how older switch-ons behave
   assert.deepEqual(hubExamsFor({ scholarshipEnabled: true }), ['sch-oc', 'sch-selective']);
-  assert.equal(hasOcSelective(null), false);
-  assert.equal(hasOcSelective({ scholarshipEnabled: true, scholarshipExams: ['sch-oc'] }), true);
+  assert.deepEqual(hubExamsFor(null), []);
+});
+
+test('OC and Selective are separate pages, each reachable by its own tab key', () => {
+  assert.equal(HUB_PAGES['sch-oc'].label, 'OC');
+  assert.equal(HUB_PAGES['sch-selective'].label, 'Selective');
+  assert.notEqual(HUB_PAGES['sch-oc'].tab, HUB_PAGES['sch-selective'].tab);
+  assert.equal(examIdForTab('OcPrep'), 'sch-oc');
+  assert.equal(examIdForTab('SelectivePrep'), 'sch-selective');
+  assert.equal(examIdForTab('Scholarship'), null);
 });
 
 test('a mock is sized by marks, so passages with many parts do not inflate it', () => {

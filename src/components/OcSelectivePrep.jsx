@@ -6,7 +6,7 @@ import { getTopicQuestions } from '../services/contentLoader';
 import { useAuth } from '../context/AuthContext';
 import { loadTestState } from '../utils/scholarshipTest';
 import {
-  MOCK_FORMATS, hubExamsFor, mockSizeFor, mockStorageId, mockSummary, summariseAttempts, rankGroups,
+  MOCK_FORMATS, HUB_PAGES, hubExamsFor, mockSizeFor, mockStorageId, mockSummary, summariseAttempts, rankGroups,
 } from '../utils/examHub';
 import ScholarshipTest from './ScholarshipTest';
 
@@ -35,18 +35,17 @@ const Bar = ({ row }) => {
 };
 
 /**
- * OC & Selective: full-length mock exams (real question count and time limit) plus a weak-spot summary built from
- * every OC / Selective test the student has taken on this device. Shown only to students whose teacher switched on
- * Scholarship with OC and/or Selective ticked (utils/examHub.hubExamsFor). Topic-by-topic practice stays on the
+ * OC / Selective (one page each): full-length mock exams (real question count and time limit) plus a weak-spot summary built from
+ * every test of this exam the student has taken on this device. Each page is shown only to students whose teacher switched
+ * on Scholarship with that exam ticked (utils/examHub.hubExamsFor). Topic-by-topic practice stays on the
  * Scholarship page.
  */
-const OcSelectivePrep = ({ profile, setActiveTab }) => {
+const OcSelectivePrep = ({ examId, profile, setActiveTab }) => {
   const { user } = useAuth();
   const uid = user?.uid || 'anon';
-  const examIds = useMemo(() => hubExamsFor(profile), [profile]);
-  const exams = useMemo(() => (CURRICULUM_DATA.Scholarship || []).filter((e) => examIds.includes(e.id)), [examIds]);
-  const [examId, setExamId] = useState(null);
-  const active = exams.find((e) => e.id === examId) || exams[0];
+  // One page per exam. A student only gets the pages for the exams the teacher ticked.
+  const allowed = useMemo(() => hubExamsFor(profile).includes(examId), [profile, examId]);
+  const active = useMemo(() => (allowed ? (CURRICULUM_DATA.Scholarship || []).find((e) => e.id === examId) : null), [allowed, examId]);
   // { examId, bank: { [topicId]: question[] } | null, failed } — only trusted while examId is the active exam,
   // so switching exams shows "Loading…" without resetting state inside the effect.
   const [loaded, setLoaded] = useState({ examId: null, bank: null, failed: false });
@@ -89,7 +88,7 @@ const OcSelectivePrep = ({ profile, setActiveTab }) => {
   }
 
   if (!active) {
-    return <div style={{ maxWidth: 760, margin: '0 auto', padding: 24, ...card, color: C.muted, fontWeight: 700 }}>OC &amp; Selective has not been switched on for you yet. Ask your teacher.</div>;
+    return <div style={{ maxWidth: 760, margin: '0 auto', padding: 24, ...card, color: C.muted, fontWeight: 700 }}>This page has not been switched on for you yet. Ask your teacher.</div>;
   }
 
   const sections = (active.topics || []).filter((t) => MOCK_FORMATS[t.id]);
@@ -102,25 +101,11 @@ const OcSelectivePrep = ({ profile, setActiveTab }) => {
     <div style={{ maxWidth: 760, margin: '0 auto', padding: '8px 4px 40px' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 6 }}>
         <div style={{ width: 44, height: 44, borderRadius: 14, background: 'linear-gradient(135deg, #a78bfa, #7c3aed)', display: 'grid', placeItems: 'center', color: '#fff' }}><Target size={22} /></div>
-        <h2 style={{ margin: 0, fontSize: '1.5rem', fontWeight: 900, color: C.ink, fontFamily: 'var(--font-heading)' }}>OC &amp; Selective</h2>
+        <h2 style={{ margin: 0, fontSize: '1.5rem', fontWeight: 900, color: C.ink, fontFamily: 'var(--font-heading)' }}>{HUB_PAGES[active.id]?.label || active.title}</h2>
       </div>
       <p style={{ margin: '0 0 18px', color: C.muted, fontWeight: 600, fontSize: '0.92rem' }}>
         Sit a full-length mock under the real time limit, then see which question types to work on next.
       </p>
-
-      {exams.length > 1 && (
-        <div style={{ display: 'flex', gap: 8, marginBottom: 16 }}>
-          {exams.map((e) => (
-            <button
-              key={e.id}
-              type="button"
-              aria-pressed={e.id === active.id}
-              onClick={() => setExamId(e.id)}
-              style={{ padding: '9px 18px', borderRadius: 12, fontWeight: 900, cursor: 'pointer', border: `1.5px solid ${e.id === active.id ? '#a78bfa' : C.line}`, background: e.id === active.id ? C.soft : '#fff', color: e.id === active.id ? '#5b21b6' : C.muted }}
-            >{e.title}</button>
-          ))}
-        </div>
-      )}
 
       <h3 style={{ fontSize: '1rem', fontWeight: 900, color: C.ink, margin: '0 0 8px' }}>Mock exams</h3>
       {failed && <div style={{ ...card, color: C.red, fontWeight: 700 }}>Could not load the questions. Check your connection and try again.</div>}

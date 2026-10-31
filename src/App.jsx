@@ -4,6 +4,7 @@ import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-
 import { useAuth } from './context/AuthContext';
 import { useToast } from './context/ToastContext';
 import { useProfile } from './context/ProfileContext';
+import { examIdForTab } from './utils/examHub';
 import { studentService } from './services/studentService';
 import Sidebar from './components/Sidebar';
 import ErrorBoundary from './components/ErrorBoundary';
@@ -1392,8 +1393,9 @@ function App() {
         return <ExamPrep profile={profile} onExamActiveChange={setExamInProgress} />;
       case 'Scholarship':
         return <Scholarship profile={profile} />;
-      case 'OcSelective':
-        return <OcSelectivePrep profile={profile} setActiveTab={handleTabChange} />;
+      case 'OcPrep':
+      case 'SelectivePrep':
+        return <OcSelectivePrep key={activeTab} examId={examIdForTab(activeTab)} profile={profile} setActiveTab={handleTabChange} />;
       case 'Library':
         return <Library />;
       case 'Reports':

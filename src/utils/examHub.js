@@ -13,6 +13,13 @@ export const OC_EXAM_ID = 'sch-oc';
 export const SELECTIVE_EXAM_ID = 'sch-selective';
 export const HUB_EXAM_IDS = [OC_EXAM_ID, SELECTIVE_EXAM_ID];
 
+/** One sidebar page per exam: its tab key (App routes on it) and the name students see. */
+export const HUB_PAGES = {
+  [OC_EXAM_ID]: { tab: 'OcPrep', label: 'OC' },
+  [SELECTIVE_EXAM_ID]: { tab: 'SelectivePrep', label: 'Selective' },
+};
+export const examIdForTab = (tab) => HUB_EXAM_IDS.find((id) => HUB_PAGES[id].tab === tab) || null;
+
 /**
  * Real test formats: marks (one per question, one per part of a passage) and minutes. Writing is not
  * auto-gradable and has no questions in the bank, so it is not offered as a mock.
@@ -43,7 +50,6 @@ export const hubExamsFor = (profile) => {
   return HUB_EXAM_IDS.filter((id) => all.includes(id) && chosen.includes(id));
 };
 
-export const hasOcSelective = (profile) => hubExamsFor(profile).length > 0;
 
 /** How many questions make a mock: the section's average marks per question decides, so passages do not inflate it. */
 export const mockSizeFor = (questions, targetMarks) => {
