@@ -12,7 +12,7 @@
   --xh-amber: #fbbf24;
   --xh-green: #059669;
   --xh-red: #e11d48;
-  max-width: 820px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 8px 4px 48px;
   color: var(--xh-ink);
@@ -70,6 +70,22 @@
 .xh-stat__num small { font-size: 0.9rem; font-weight: 800; color: var(--xh-faint); }
 .xh-stat__label { margin-top: 6px; font-size: 0.74rem; font-weight: 800; color: var(--xh-muted); }
 
+/* ── Section cards ─────────────────────────────────────────────────────── */
+.xh-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.xh-sec { display: flex; flex-direction: column; min-height: 230px; padding: 16px; background: #fff; border: 1.5px solid var(--xh-line); border-bottom-width: 4px; border-radius: 20px; }
+.xh-sec--soon { background: #fafafc; border-style: dashed; border-bottom-width: 1.5px; }
+.xh-sec--soon .xh-tile { filter: grayscale(1); opacity: 0.55; }
+.xh-sec__top { display: flex; align-items: flex-start; justify-content: space-between; }
+.xh-tile { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 16px; }
+.xh-sec__name { margin: 14px 0 0; font-size: 1.08rem; line-height: 1.25; font-weight: 800; color: var(--xh-ink); }
+.xh-sec__eyebrow { margin-top: 3px; font-size: 0.76rem; font-weight: 700; color: var(--xh-faint); }
+.xh-sec__stats { margin-top: 10px; font-size: 0.84rem; font-weight: 600; color: var(--xh-muted); }
+.xh-sec__stats b { color: var(--xh-ink); font-weight: 800; }
+.xh-sec__live { margin-top: 2px; font-size: 0.74rem; font-weight: 800; color: var(--xh-violet); }
+.xh-sec__actions { display: flex; flex-direction: column; gap: 8px; margin-top: auto; padding-top: 14px; }
+.xh-sec__actions .xh-btn { width: 100%; }
+.xh-sec__soon { display: inline-flex; align-items: center; gap: 6px; margin-top: auto; padding-top: 14px; font-size: 0.82rem; font-weight: 800; color: var(--xh-faint); }
+
 /* ── Next step ─────────────────────────────────────────────────────────── */
 .xh-next {
   display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
@@ -92,15 +108,6 @@
 
 /* ── Sections ──────────────────────────────────────────────────────────── */
 .xh-h { margin: 26px 0 10px; font-size: 1rem; font-weight: 900; display: flex; align-items: center; gap: 8px; }
-.xh-rows { background: #fff; border: 1px solid var(--xh-line); border-radius: 20px; padding: 4px 18px; }
-.xh-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px 16px; align-items: center; padding: 16px 0; }
-.xh-row + .xh-row { border-top: 1px solid #f1f5f9; }
-.xh-row__name { font-size: 1rem; font-weight: 900; }
-.xh-row__meta { display: flex; flex-wrap: wrap; gap: 2px 12px; margin-top: 3px; font-size: 0.76rem; font-weight: 700; color: var(--xh-faint); }
-.xh-row__meta b { color: var(--xh-violet); font-weight: 800; }
-.xh-bar { height: 6px; margin-top: 9px; border-radius: 99px; background: #f1f5f9; overflow: hidden; }
-.xh-bar > i { display: block; height: 100%; border-radius: 99px; background: var(--xh-violet); }
-.xh-row__actions { display: flex; gap: 8px; }
 .xh-soon { font-size: 0.78rem; font-weight: 800; color: var(--xh-faint); display: inline-flex; align-items: center; gap: 6px; }
 
 /* ── Where to improve ──────────────────────────────────────────────────── */
@@ -120,8 +127,6 @@
   .xh-hero { padding: 20px 18px 18px; border-radius: 22px; }
   .xh-miles { grid-template-columns: repeat(2, 1fr); }
   .xh-mile__days { font-size: 1.1rem; }
-  .xh-row { grid-template-columns: 1fr; }
-  .xh-row__actions .xh-btn { flex: 1; }
   .xh-stat__num { font-size: 1.4rem; }
 }
 @media (prefers-reduced-motion: reduce) {

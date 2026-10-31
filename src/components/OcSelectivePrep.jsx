@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import { Clock, Lock, Play, TrendingDown } from 'lucide-react';
+import { BookOpen, Calculator, Lightbulb, Lock, PenLine, Play, TrendingDown } from 'lucide-react';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { getTopicQuestions } from '../services/contentLoader';
 import { useAuth } from '../context/AuthContext';
@@ -15,6 +15,27 @@ import './OcSelectivePrep.css';
 const pct = (x) => `${Math.round(x * 100)}%`;
 const titleCase = (s) => s.replace(/\b\w/g, (c) => c.toUpperCase());
 const dayRange = (a, b) => (a === b ? formatDay(a, { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' }) : `${formatDay(a, { weekday: 'short', day: 'numeric' })} – ${formatDay(b, { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' })}`);
+
+// Each kind of section gets its own icon and pastel tile so the cards are told apart at a glance.
+const SECTION_KIND = {
+  reading: { icon: BookOpen, bg: '#e0efff', fg: '#2563eb' },
+  writing: { icon: PenLine, bg: '#ffe8d9', fg: '#c2410c' },
+  maths: { icon: Calculator, bg: '#ebe5ff', fg: '#5b3fd0' },
+  thinking: { icon: Lightbulb, bg: '#dcf5e8', fg: '#15803d' },
+};
+const kindOf = (topicId) => (/maths/.test(topicId) ? 'maths' : /writing/.test(topicId) ? 'writing' : /thinking/.test(topicId) ? 'thinking' : 'reading');
+
+/** Small progress ring with the percentage in the middle. */
+const Ring = ({ value, label }) => {
+  const r = 19; const c = 2 * Math.PI * r;
+  return (
+    <svg className="xh-ring" width="46" height="46" viewBox="0 0 46 46" role="img" aria-label={label}>
+      <circle cx="23" cy="23" r={r} fill="none" stroke="#eceef2" strokeWidth="4" />
+      <circle cx="23" cy="23" r={r} fill="none" stroke="#7c3aed" strokeWidth="4" strokeLinecap="round" strokeDasharray={`${c * Math.min(1, value)} ${c}`} transform="rotate(-90 23 23)" />
+      <text x="23" y="27" textAnchor="middle" fontSize="11" fontWeight="800" fill="#1e1b4b">{Math.round(value * 100)}%</text>
+    </svg>
+  );
+};
 
 /**
  * The hero. For OC / Selective it counts down to the student's own sitting (their school year decides which one),
@@ -246,29 +267,40 @@ const OcSelectivePrep = ({ examId, profile }) => {
       {failed && <div className="xh-card xh-empty" style={{ color: '#e11d48' }}>Could not load the questions. Check your connection and try again.</div>}
       {!bank && !failed && <div className="xh-card xh-empty">Loading…</div>}
       {bank && (
-        <div className="xh-rows">
-          {sections.map((s) => (
-            <div key={s.topic.id} className="xh-row">
-              <div style={{ minWidth: 0 }}>
-                <div className="xh-row__name">{s.name}</div>
-                <div className="xh-row__meta">
-                  {s.fmt && <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}><Clock size={12} /> {s.fmt.minutes} min mock</span>}
-                  {!s.empty && <span>{s.done} of {s.total} done</span>}
-                  {s.sum.count > 0 && <span>best <b>{pct(s.sum.best)}</b> · last <b>{pct(s.sum.last)}</b></span>}
-                  {s.sum.inProgress && <b>mock in progress</b>}
+        <div className="xh-grid">
+          {sections.map((s) => {
+            const kind = SECTION_KIND[kindOf(s.topic.id)];
+            const Icon = kind.icon;
+            const donePct = s.total ? s.done / s.total : 0;
+            return (
+              <article key={s.topic.id} className={`xh-sec${s.empty ? ' xh-sec--soon' : ''}`}>
+                <div className="xh-sec__top">
+                  <span className="xh-tile" style={{ background: kind.bg, color: kind.fg }}><Icon size={24} strokeWidth={2.2} /></span>
+                  {!s.empty && <Ring value={donePct} label={`${s.done} of ${s.total} questions done`} />}
                 </div>
-                {!s.empty && <div className="xh-bar" aria-hidden="true"><i style={{ width: `${Math.round((s.done / Math.max(1, s.total)) * 100)}%` }} /></div>}
-              </div>
-              {s.empty
-                ? <span className="xh-soon"><Lock size={14} /> Coming soon</span>
-                : (
-                  <div className="xh-row__actions">
-                    {s.fmt && <button type="button" className="xh-btn xh-btn--primary" onClick={() => open(s.topic, true)}>{s.sum.inProgress ? 'Resume mock' : 'Mock exam'}</button>}
-                    <button type="button" className="xh-btn" onClick={() => open(s.topic, false)}>Practise</button>
-                  </div>
+                <h3 className="xh-sec__name">{s.name}</h3>
+                <div className="xh-sec__eyebrow">
+                  {[s.fmt && `${s.fmt.minutes} min mock`, !s.empty && `${s.total} questions`].filter(Boolean).join(' · ')}
+                </div>
+                {s.empty ? (
+                  <div className="xh-sec__soon"><Lock size={14} /> Coming soon</div>
+                ) : (
+                  <>
+                    <div className="xh-sec__stats">
+                      {s.sum.count > 0
+                        ? <>Best <b>{pct(s.sum.best)}</b> · last <b>{pct(s.sum.last)}</b></>
+                        : <>{s.done} of {s.total} done</>}
+                      {s.sum.inProgress && <div className="xh-sec__live">Mock in progress</div>}
+                    </div>
+                    <div className="xh-sec__actions">
+                      {s.fmt && <button type="button" className="xh-btn xh-btn--primary" onClick={() => open(s.topic, true)}>{s.sum.inProgress ? 'Resume mock' : 'Mock exam'}</button>}
+                      <button type="button" className="xh-btn" onClick={() => open(s.topic, false)}>Practise</button>
+                    </div>
+                  </>
                 )}
-            </div>
-          ))}
+              </article>
+            );
+          })}
         </div>
       )}
 
