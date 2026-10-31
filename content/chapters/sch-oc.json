@@ -14477,11 +14477,11 @@
             },
             {
               "explain": "Both trains travel the same distance. Going four times as fast means the trip takes one quarter of the time.",
-              "work": "<p>6 hours ÷ 4 = 1½ hours</p>"
+              "work": "<p>\\(6\\text{ hours}\\div4=1\\frac{1}{2}\\text{ hours}\\)</p>"
             },
             {
               "explain": "The express train arrived at 7:00 pm, so count back 1½ hours to find when it left.",
-              "work": "<p>7:00 pm − 1½ hours = <strong>5:30 pm</strong></p>"
+              "work": "<p>\\(7\\text{:}00\\text{ pm}-1\\frac{1}{2}\\text{ hours}=\\)<strong>5:30 pm</strong></p>"
             }
           ],
           "keyPoints": [
