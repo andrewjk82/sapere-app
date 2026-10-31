@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useEffect, useMemo, useState } from "react";
 import { Sparkles, Trophy, Target, CalendarDays } from "lucide-react";
 import { db } from "../../firebase/config";
-import { doc, onSnapshot } from "firebase/firestore";
+import { doc, getDoc } from "firebase/firestore";
 import { CURRICULUM_DATA, trackLabel } from "../../constants/curriculumData";
 
 // Flatten Year 11/12 (which are split by course) into a flat chapter list.
@@ -97,12 +97,18 @@ export default function ExamPrepPanel({ styles, student, studentId, statsUid, on
   const accountUid = statsUid || studentId;
   useEffect(() => {
     if (!accountUid || !enabled) { setSummary(null); return undefined; }
-    const ref = doc(db, "users", accountUid, "examPrep", "state");
-    return onSnapshot(ref, (snap) => {
-      if (!snap.exists()) { setSummary(null); return; }
-      const d = snap.data() || {};
-      setSummary({ ...(d.stats || {}), lastRound: Array.isArray(d.history) ? d.history[0] : undefined });
-    }, (err) => console.warn("exam prep state listen failed:", err));
+    // One read when the panel opens, not a live listener: the numbers only change when the student ends a session,
+    // so keeping a listener open on this page would only bill reads for nothing. Reload the page to refresh.
+    let cancelled = false;
+    getDoc(doc(db, "users", accountUid, "examPrep", "state"))
+      .then((snap) => {
+        if (cancelled) return;
+        if (!snap.exists()) { setSummary(null); return; }
+        const d = snap.data() || {};
+        setSummary({ ...(d.stats || {}), lastRound: Array.isArray(d.history) ? d.history[0] : undefined });
+      })
+      .catch((err) => console.warn("exam prep state read failed:", err?.code || err));
+    return () => { cancelled = true; };
   }, [accountUid, enabled]);
 
   const sessions = summary?.sessions || 0;
