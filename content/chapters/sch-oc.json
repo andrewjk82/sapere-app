@@ -15706,6 +15706,2374 @@
             "page": 19,
             "category": "logic puzzle"
           }
+        },
+        {
+          "id": "sch-oc-ts2-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A community club offers the following sports:\n\n| sport | days available |\n|---|---|\n| netball | Monday, Thursday |\n| boxing | Monday, Friday |\n| football | Tuesday, Wednesday |\n| swimming | Wednesday, Thursday |\n| tennis | Tuesday, Friday |\n\nI want to do a sport on a Monday, Wednesday and Friday.\n\nOne of my sports must be football.\n\nWhich sport will I not be able to do?",
+          "options": [
+            "netball",
+            "boxing",
+            "swimming",
+            "tennis"
+          ],
+          "answer": 2,
+          "hint": "Football can only fit on one of my three days. Which days are left for my other sports?",
+          "steps": [
+            {
+              "explain": "Football is only on Tuesday or Wednesday, so football must be my Wednesday sport.",
+              "work": "<p>Wednesday → football</p>"
+            },
+            {
+              "explain": "My other two sports must be on Monday and Friday.",
+              "work": "<p>Monday: netball or boxing</p><p>Friday: boxing or tennis</p>"
+            },
+            {
+              "explain": "Swimming is only on Wednesday and Thursday — not Monday or Friday — so I cannot do it.",
+              "work": "<p>Answer: <strong>swimming</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "One of my sports must be football",
+              "note": "Place football first — it fits only one of your days."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 2",
+            "number": 1,
+            "page": 3,
+            "category": "choosing combinations"
+          }
+        },
+        {
+          "id": "sch-oc-ts2-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Four friends want to go to the movies. There are four kinds of movies showing: cartoon, comedy, drama and action. Andrew likes all movies except dramas and action. Rishi and Audrey only like comedies and dramas. Yifan would like to watch any movie so long as it is not a cartoon or an action movie.\n\nWhich kind of movie would all four friends like to see?",
+          "options": [
+            "comedy",
+            "action",
+            "cartoon",
+            "drama"
+          ],
+          "answer": 0,
+          "hint": "Cross out each kind of movie that at least one friend does not like.",
+          "steps": [
+            {
+              "explain": "Andrew does not like drama or action, so cross those out.",
+              "work": "<p>Left: cartoon, comedy</p>"
+            },
+            {
+              "explain": "Rishi, Audrey and Yifan do not like cartoons, so cross that out too.",
+              "work": "<p>Left: comedy</p>"
+            },
+            {
+              "explain": "Everyone likes comedy.",
+              "work": "<p>Answer: <strong>comedy</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "all four friends",
+              "note": "The movie must suit every friend, so remove anything even one friend dislikes."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 2",
+            "number": 2,
+            "page": 3,
+            "category": "sorting information"
+          }
+        },
+        {
+          "id": "sch-oc-ts2-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The school chess coach has told the team that if they want to do well in chess competitions, they should go running or play tennis every day.\n\nWhich one of these statements, if true, best supports the coach’s claim?",
+          "options": [
+            "Chess is not a physical sport.",
+            "Regular exercise improves concentration.",
+            "Chess players are often good tennis players.",
+            "Running builds physical strength and stamina."
+          ],
+          "answer": 1,
+          "hint": "The claim is that exercise will help with CHESS. Which statement links exercise to something that matters in chess?",
+          "steps": [
+            {
+              "explain": "The coach claims daily running or tennis will help the team do well at chess. Support must show exercise helps chess players."
+            },
+            {
+              "explain": "Chess needs good concentration. If regular exercise improves concentration, then daily exercise helps at chess.",
+              "work": "<p>D is about physical strength, which does not matter much in chess. A and C do not show exercise helps.</p><p>Answer: <strong>B</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "do well in chess competitions",
+              "note": "The reason must connect exercise to playing chess better."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 2",
+            "number": 3,
+            "page": 4,
+            "category": "strengthen an argument"
+          }
+        },
+        {
+          "id": "sch-oc-ts2-q4",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A piece of a construction kit is shown below.\n\nWhich one of the following shows a side view of the construction kit piece?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 800\" width=\"80%\" height=\"auto\"><image href=\"/oc/ts2-q4.jpg\" x=\"0\" y=\"0\" width=\"800\" height=\"800\"/></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 2,
+          "hint": "The four columns all have different heights. From which side could you see all four, and how would they line up?",
+          "steps": [
+            {
+              "explain": "The four columns all have different heights. To see all four in a side view, look from the side where the two shortest columns sit in front of the taller ones."
+            },
+            {
+              "explain": "From that side, the tallest column appears on the right with the shortest column in front of it. The other two columns appear on the left, with the smaller one in front of the taller one.",
+              "work": "<p>Answer: <strong>C</strong></p>"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 2",
+            "number": 4,
+            "page": 5,
+            "category": "spatial reasoning"
+          }
+        },
+        {
+          "id": "sch-oc-ts2-q5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "There are five school teams: Red, Yellow, Green, Orange and Blue. A member of each team competes in the 100 m race. You don’t see the race but a friend tells you the following facts:\n\nYellow finished third.\nGreen finished after Red but before Yellow.\nBlue beat Orange but finished after Yellow.\n\nWho won the race?",
+          "options": [
+            "Red",
+            "Green",
+            "Orange",
+            "Blue"
+          ],
+          "answer": 0,
+          "hint": "Yellow is 3rd. Which two teams must be in 4th and 5th? Then which two fill 1st and 2nd?",
+          "steps": [
+            {
+              "explain": "Blue and Orange both finished after Yellow, so they are 4th and 5th — Blue 4th, Orange 5th."
+            },
+            {
+              "explain": "Red and Green must be 1st and 2nd. Green finished after Red, so Red is 1st.",
+              "work": "<p>Red – Green – Yellow – Blue – Orange</p><p>Answer: <strong>Red</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Yellow finished third",
+              "note": "Start with the fixed place, then fill in before and after it."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 2",
+            "number": 5,
+            "page": 6,
+            "category": "ordering and position"
+          }
+        },
+        {
+          "id": "sch-oc-ts2-q6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The arrow snake got its name because of its long and thin body and quick-as-lightning movements. It is a popular belief that an arrow snake can leap great distances, and even that its head can pierce the body of its prey.\n\n**Gabriel:** “That can’t be true. I’ve seen arrow snakes plenty of times, and I’ve never seen one jump – let alone pierce its prey!”\n\nWhich one of the following sentences shows the mistake Gabriel has made?",
+          "options": [
+            "He has ignored the reason the arrow snake got its name.",
+            "He has denied the well-known fact that some snakes can jump.",
+            "He has denied something just because he has not witnessed it himself.",
+            "He has assumed that no popular belief can be true."
+          ],
+          "answer": 2,
+          "hint": "Gabriel says “it can’t be true” because of what he personally has seen. Is that enough to prove it never happens?",
+          "steps": [
+            {
+              "explain": "Gabriel decides the belief cannot be true because he has never seen it happen."
+            },
+            {
+              "explain": "Not seeing something does not mean it never happens — the snake might only leap in certain situations Gabriel was not there for.",
+              "work": "<p>Answer: <strong>C</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "I’ve never seen one jump",
+              "note": "Not having seen something is not proof that it never happens."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 2",
+            "number": 6,
+            "page": 6,
+            "category": "identify the mistake"
+          }
+        },
+        {
+          "id": "sch-oc-ts2-q7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Rainfall in 3 cities during the driest months of the year is shown below in the bar chart.\n\nWhat is the total rainfall in the city with the highest total rainfall during the months of May to October?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 361\" width=\"90%\" height=\"auto\"><image href=\"/oc/ts2-q7.jpg\" x=\"0\" y=\"0\" width=\"800\" height=\"361\"/></svg>"
+          },
+          "options": [
+            "35",
+            "55",
+            "82",
+            "91"
+          ],
+          "answer": 3,
+          "hint": "First decide which city has the most rain overall by comparing the bars month by month. Then add up that city’s six bars.",
+          "steps": [
+            {
+              "explain": "Chitaquin (black) is higher than Fentan in every month. It is only lower than Shishain in October, and it beats Shishain by more than that in May. So Chitaquin has the highest total."
+            },
+            {
+              "explain": "Add Chitaquin’s rainfall for each month.",
+              "work": "<p>35 + 14 + 7 + 3 + 6 + 26 = <strong>91</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "the city with the highest total rainfall",
+              "note": "Find the right city first, then add its bars."
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 2",
+            "number": 7,
+            "page": 7,
+            "category": "reading graphs"
+          }
+        },
+        {
+          "id": "sch-oc-ts2-q8",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "You cannot write good poetry without having interesting life experiences.\n\n**Rose:** “My brother has been on some adventures and met some interesting people, so his poetry is certain to be good.”\n\n**Elsie:** “Well, my great aunt won prizes for her beautiful poetry, so she must have had an interesting life.”\n\nIf the information in the box is true, whose reasoning is correct?",
+          "options": [
+            "Rose only",
+            "Elsie only",
+            "Both Rose and Elsie",
+            "Neither Rose nor Elsie"
+          ],
+          "answer": 1,
+          "hint": "The box says interesting experiences are NEEDED for good poetry. Does having them guarantee good poetry? Does good poetry guarantee you had them?",
+          "steps": [
+            {
+              "explain": "The box says interesting life experiences are <em>necessary</em> for good poetry."
+            },
+            {
+              "explain": "Rose: having interesting experiences does not guarantee good poetry.",
+              "work": "<p>Rose ✘</p>"
+            },
+            {
+              "explain": "Elsie: her great aunt wrote prize-winning (good) poetry, so she must have had interesting life experiences.",
+              "work": "<p>Elsie ✔</p><p>Answer: <strong>Elsie only</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "You cannot write good poetry without",
+              "note": "“Cannot … without” means it is needed — not that it is enough."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 2",
+            "number": 8,
+            "page": 8,
+            "category": "whose reasoning is correct"
+          }
+        },
+        {
+          "id": "sch-oc-ts2-q9",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Izzy is taller than Caitlin; Caitlin is shorter than Melissa. But when they stand on a short flight of three stairs, one on each step, their heads are all level.\n\nWhich one of these sentences **cannot** be true?",
+          "options": [
+            "Izzy is on the bottom step.",
+            "Melissa is on the middle step.",
+            "Caitlin is on the middle step.",
+            "Melissa is the tallest of the three girls."
+          ],
+          "answer": 2,
+          "hint": "If all their heads are level, the shortest girl must stand on the highest step. Who is the shortest?",
+          "steps": [
+            {
+              "explain": "For heads to be level, taller girls stand on lower steps and shorter girls on higher steps."
+            },
+            {
+              "explain": "Caitlin is shorter than both Izzy and Melissa, so Caitlin must be on the top step.",
+              "work": "<p>So Caitlin cannot be on the middle step.</p><p>Answer: <strong>C</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "their heads are all level",
+              "note": "The shortest person needs the highest step."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 2",
+            "number": 9,
+            "page": 8,
+            "category": "ordering and position"
+          }
+        },
+        {
+          "id": "sch-oc-ts2-q10",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In a game, players take it in turns to draw shapes in a line.\n\nThe following rules apply (going from left to right):\n\n● The shape immediately after a square must be a circle.\n● The second shape after a triangle must be a square.\n\nWhich one of the following sequences is **not** allowed?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 511\" width=\"75%\" height=\"auto\"><image href=\"/oc/ts2-q10.jpg\" x=\"0\" y=\"0\" width=\"800\" height=\"511\"/></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 3,
+          "hint": "Check each triangle: count two shapes along — is it a square? Then check every square is followed by a circle.",
+          "steps": [
+            {
+              "explain": "Find each triangle and look at the second shape after it. It must be a square."
+            },
+            {
+              "explain": "In D the shapes go square, circle, triangle, square, circle … The second shape after the triangle is a circle, not a square, so D breaks the rule.",
+              "work": "<p>Answer: <strong>D</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "The second shape after a triangle",
+              "note": "Skip one shape, then check the next one."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 2",
+            "number": 10,
+            "page": 9,
+            "category": "rules and patterns"
+          }
+        },
+        {
+          "id": "sch-oc-ts2-q11",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Michael says: “I don’t like this book I’ve been told to read. I think students should be free to choose what books they study at school.”\n\nWhich one of these statements, if true, best supports Michael’s claim?",
+          "options": [
+            "Students are allowed to choose what they study in some other subjects.",
+            "Students often want to read books that have been made into films.",
+            "Other students in the class also disliked the book they were told to read.",
+            "Students learn more when they enjoy what they read."
+          ],
+          "answer": 3,
+          "hint": "The support must show a BENEFIT of letting students choose their own books.",
+          "steps": [
+            {
+              "explain": "Michael claims students should choose their own books. Support must show a benefit of choosing."
+            },
+            {
+              "explain": "Students are likely to enjoy books they chose. If students learn more when they enjoy what they read, then choosing helps them learn.",
+              "work": "<p>Answer: <strong>D</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "best supports",
+              "note": "Look for a reason that shows why choosing books would be better."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 2",
+            "number": 11,
+            "page": 9,
+            "category": "strengthen an argument"
+          }
+        },
+        {
+          "id": "sch-oc-ts2-q12",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Four boys are riding their bicycles and have a race to see who can go fastest. Marcel’s bicycle is blue and Ralph’s is purple. The boy on the red bicycle, Barry, finishes the race ahead of Ralph, but behind Will on his green bicycle. Marcel is level with the boy on the purple bicycle.\n\nWhich colour bicycle is the winner?",
+          "options": [
+            "green",
+            "blue",
+            "purple",
+            "red"
+          ],
+          "answer": 0,
+          "hint": "Ralph rides the purple bicycle, so Marcel is level with Ralph. Put Will, Barry and Ralph in order.",
+          "steps": [
+            {
+              "explain": "Will is ahead of Barry, and Barry is ahead of Ralph.",
+              "work": "<p>Will – Barry – Ralph</p>"
+            },
+            {
+              "explain": "Ralph is on the purple bicycle, so Marcel finishes level with Ralph.",
+              "work": "<p>Will – Barry – Ralph = Marcel</p>"
+            },
+            {
+              "explain": "Will wins, on the green bicycle.",
+              "work": "<p>Answer: <strong>green</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Marcel is level with the boy on the purple bicycle",
+              "note": "Who rides purple? That tells you who Marcel tied with."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 2",
+            "number": 12,
+            "page": 10,
+            "category": "ordering and position"
+          }
+        },
+        {
+          "id": "sch-oc-ts2-q13",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The lights in four rooms of my house automatically switch on and off during day and night, when I am away from home, so that it always looks like there is someone at home.\n\nThe diagram below shows when lights are on or off for each room. (Each square is one hour.)\n\nWhat is the longest continuous period of time that more than 1 light is on in my home?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 226\" width=\"90%\" height=\"auto\"><image href=\"/oc/ts2-q13.jpg\" x=\"0\" y=\"0\" width=\"800\" height=\"226\"/></svg>"
+          },
+          "options": [
+            "3 hours",
+            "4 hours",
+            "5 hours",
+            "6 hours"
+          ],
+          "answer": 2,
+          "hint": "Go along the diagram hour by hour and find the times when only one light (or no light) is on. The longest gap between those is your answer.",
+          "steps": [
+            {
+              "explain": "Find the times when only one light is on.",
+              "work": "<p>4 am – 5 am, 9 am – 11 am, 4 pm – 6 pm, 10 pm – 11 pm</p>"
+            },
+            {
+              "explain": "Between 11 pm and 4 am no lights are on."
+            },
+            {
+              "explain": "The longest stretch with more than one light on is from 11 am to 4 pm.",
+              "work": "<p>11 am → 4 pm = <strong>5 hours</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "more than 1 light",
+              "note": "At least two rooms must be lit at the same time."
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 2",
+            "number": 13,
+            "page": 10,
+            "category": "reading diagrams"
+          }
+        },
+        {
+          "id": "sch-oc-ts2-q14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Ms Chen’s class will be allowed to watch a movie on the last day of term. There are two classrooms available and two televisions, so the class can be split into two, and watch two different movies, if needed.\n\nMs Chen does a survey of the class, asking them what they would like to watch. She notices that most of the girls in the class want to watch Harry Potter, and most of the boys want to watch Star Wars.\n\n**Ms Chen:** “There are the same number of boys and girls in the class. So I should put the girls in one classroom and show them Harry Potter, and put the boys in the other classroom to watch Star Wars.”\n\nWhich one of the following sentences shows the mistake Ms Chen has made?",
+          "options": [
+            "Harry Potter and Star Wars may be different lengths.",
+            "There may be some boys who would prefer Harry Potter, and some girls who would prefer Star Wars.",
+            "Some of the boys might only have chosen Star Wars because their friends did.",
+            "Different numbers of boys and girls might miss the last day of term."
+          ],
+          "answer": 1,
+          "hint": "“Most” of the girls want Harry Potter — not all of them. Who would be unhappy with Ms Chen’s plan?",
+          "steps": [
+            {
+              "explain": "Only <em>most</em> girls want Harry Potter and <em>most</em> boys want Star Wars."
+            },
+            {
+              "explain": "Splitting by boys and girls means some students would watch a film they did not choose. It would be better to split the class by which film each student wants.",
+              "work": "<p>Answer: <strong>B</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "most of the girls",
+              "note": "“Most” is not “all” — some girls may want the other film."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 2",
+            "number": 14,
+            "page": 11,
+            "category": "identify the mistake"
+          }
+        },
+        {
+          "id": "sch-oc-ts2-q15",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A secret agent uses a code to send messages. It involves shifting each letter of the alphabet forwards or backwards two letters, so for example the letter ‘C’ could be represented by either ‘A’ or ‘E’. There are no spaces between words in this code.\n\nYou receive the following message from the secret agent:\n\nYFCPBKFVFGWCTPKXG?\n\nWhich of the following could be the intended message?",
+          "options": [
+            "WHERE ARE YOU HIDING?",
+            "WHO READ THE MESSAGE?",
+            "WHEN DID THEY ARRIVE?",
+            "WHAT DID HE DISCOVER?"
+          ],
+          "answer": 2,
+          "hint": "Each code letter stands for the letter 2 before it or 2 after it. Check the first few letters of each option — Y could be W or A, F could be D or H …",
+          "steps": [
+            {
+              "explain": "Each code letter could stand for the letter two before it or two after it.",
+              "work": "<p>Y → W or A, F → D or H, C → A or E, P → N or R, B → Z or D, K → I or M …</p>"
+            },
+            {
+              "explain": "Try the options. The first four letters YFCP can be W, H, E, N — “WHEN”. Keep going: BKF → D, I, D; VFGW → T, H, E, Y …",
+              "work": "<p>YFCP BKF VFGW CTPKXG</p><p>WHEN DID THEY ARRIVE</p>"
+            },
+            {
+              "explain": "Every letter fits.",
+              "work": "<p>Answer: <strong>WHEN DID THEY ARRIVE?</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "forwards or backwards two letters",
+              "note": "Each code letter has exactly two possible meanings."
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 2",
+            "number": 15,
+            "page": 12,
+            "category": "codes"
+          }
+        },
+        {
+          "id": "sch-oc-ts2-q16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "I have recently tiled the wall of my bathroom using a set of identical tiles. I have laid the tiles so that the black sections on one tile do not join along the edge of the black sections on another tile.\n\nI have one tile left to put in place.\n\nWhich way up will the last tile be placed?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 752\" width=\"80%\" height=\"auto\"><image href=\"/oc/ts2-q16.jpg\" x=\"0\" y=\"0\" width=\"800\" height=\"752\"/></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 3,
+          "hint": "Look at the tiles around the gap. Wherever a neighbour has black along the edge of the gap, the new tile must be white there.",
+          "steps": [
+            {
+              "explain": "Black sections may not touch along an edge, so wherever a neighbouring tile is black along the edge of the gap, the last tile must be white at that spot."
+            },
+            {
+              "explain": "Checking all four edges of the gap, the only black corner that touches no black neighbour is the bottom left.",
+              "work": "<p>Answer: <strong>D</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "do not join along the edge",
+              "note": "Black can only sit next to white across a tile edge."
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 2",
+            "number": 16,
+            "page": 13,
+            "category": "tiling patterns"
+          }
+        },
+        {
+          "id": "sch-oc-ts2-q17",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Patricia’s friend Aditya recently won a gold medal for the 200 metre freestyle. He trains for six hours per day, six days a week.\n\n**Patricia:** “I’m going to start a new programme, swimming for six hours a day, six days a week. Then I’ll get a gold medal too!”\n\nWhich one of the following sentences shows the mistake Patricia has made?",
+          "options": [
+            "Some gold medallists may train far less than Aditya.",
+            "Patricia’s training programme alone may not guarantee her a gold medal.",
+            "The training programme may prevent Patricia from doing other things she likes.",
+            "Patricia may not be able to afford the cost of the training programme."
+          ],
+          "answer": 1,
+          "hint": "Patricia thinks doing the same training will definitely give the same result. Could other things matter?",
+          "steps": [
+            {
+              "explain": "Patricia assumes Aditya’s training alone caused his success, so copying it guarantees a gold medal."
+            },
+            {
+              "explain": "Other things (talent, coaching, the other swimmers) may matter too, so the training alone may not be enough.",
+              "work": "<p>Answer: <strong>B</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Then I’ll get a gold medal too",
+              "note": "Is the same training enough to guarantee the same result?"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 2",
+            "number": 17,
+            "page": 14,
+            "category": "identify the mistake"
+          }
+        },
+        {
+          "id": "sch-oc-ts2-q18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "An actor came to visit a local school. She gave the principal this advice: “It is important for children to be given the chance to perform in a school play or concert.”\n\nWhich one of these statements, if true, best supports the actor’s claim?",
+          "options": [
+            "The actor has given similar advice at many other schools.",
+            "Children spend a lot of time playing sports and other games.",
+            "Many people enjoy watching plays or listening to concerts.",
+            "Performing in front of other people helps to build confidence."
+          ],
+          "answer": 3,
+          "hint": "Look for a benefit to the CHILDREN who perform.",
+          "steps": [
+            {
+              "explain": "The claim is that children should get to perform. Support must show performing benefits children."
+            },
+            {
+              "explain": "D: performing builds confidence — a benefit for the children involved. C is about the audience, not the performers.",
+              "work": "<p>Answer: <strong>D</strong></p>"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 2",
+            "number": 18,
+            "page": 14,
+            "category": "strengthen an argument"
+          }
+        },
+        {
+          "id": "sch-oc-ts2-q19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A dentists’ surgery opens at 8:00 am and closes at 5:00 pm each day. Each appointment is 20 minutes and every dentist has a 60-minute lunch break but no other breaks.\n\nThree dentists work in the surgery.\n\nWhat is the maximum number of appointments that can be made in the surgery in a day?",
+          "options": [
+            "63",
+            "72",
+            "81",
+            "90"
+          ],
+          "answer": 1,
+          "hint": "Find how many hours one dentist actually works, then how many 20-minute appointments fit in each hour.",
+          "steps": [
+            {
+              "explain": "The surgery is open from 8:00 am to 5:00 pm.",
+              "work": "<p>9 hours</p>"
+            },
+            {
+              "explain": "Each dentist has a 1-hour lunch break.",
+              "work": "<p>9 − 1 = 8 working hours</p>"
+            },
+            {
+              "explain": "Three 20-minute appointments fit in each hour.",
+              "work": "<p>8 × 3 = 24 appointments per dentist</p>"
+            },
+            {
+              "explain": "There are three dentists.",
+              "work": "<p>24 × 3 = <strong>72</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "60-minute lunch break",
+              "note": "Take the lunch break away from the working time."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 2",
+            "number": 19,
+            "page": 15,
+            "category": "time calculations"
+          }
+        },
+        {
+          "id": "sch-oc-ts2-q20",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "There are six lunch boxes lined up on a shelf and each is a different colour: blue, green, orange, purple, red and yellow. There is one box between the green box and the orange box. The purple box’s only neighbour is blue, and there are three boxes between the red box and the blue box.\n\nWhat colour lunch boxes are at each end of the line?",
+          "options": [
+            "orange and blue",
+            "red and purple",
+            "green and yellow",
+            "purple and orange"
+          ],
+          "answer": 1,
+          "hint": "A box with only one neighbour must be at an end. Start there.",
+          "steps": [
+            {
+              "explain": "Purple has only one neighbour, so purple is at one end, with blue next to it.",
+              "work": "<p>Purple – Blue – _ – _ – _ – _</p>"
+            },
+            {
+              "explain": "There are three boxes between red and blue, so red is in the 6th place — the other end.",
+              "work": "<p>Purple – Blue – _ – _ – _ – Red</p>"
+            },
+            {
+              "explain": "The ends are purple and red.",
+              "work": "<p>Answer: <strong>red and purple</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "The purple box’s only neighbour is blue",
+              "note": "Only one neighbour means it is at the end of the line."
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 2",
+            "number": 20,
+            "page": 15,
+            "category": "ordering and position"
+          }
+        },
+        {
+          "id": "sch-oc-ts2-q21",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The school principal, Ms Flint, is looking at the school records for last term to see which class has the best-behaved students.\n\nShe notices that students in Class 1, who are taught by Mr Avery, were given 47 lunchtime detentions in total last term. Students in Class 2, who are taught by Mr Bailey, were only given 18.\n\n**Ms Flint:** “That’s interesting – it clearly shows that students in Class 2 are much better behaved than students in Class 1.”\n\nWhich one of the following sentences shows the mistake Ms Flint has made?",
+          "options": [
+            "Good behaviour may not be the most important thing for students in Class 1 to focus on.",
+            "There may be good reasons why students in Class 1 have problems with behaviour.",
+            "Students in Class 1 might do just as well as students in Class 2 in their examinations.",
+            "Students in Class 1 may be more likely to be given detention when they are badly behaved than students in Class 2."
+          ],
+          "answer": 3,
+          "hint": "Ms Flint uses the number of detentions to measure behaviour. Is that a fair measure if the two teachers are different?",
+          "steps": [
+            {
+              "explain": "Ms Flint assumes the number of detentions fairly shows how well each class behaves."
+            },
+            {
+              "explain": "But Mr Avery might give detentions more easily than Mr Bailey, so the numbers might not compare behaviour fairly.",
+              "work": "<p>Answer: <strong>D</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "it clearly shows",
+              "note": "Ask whether the detention count is a fair way to compare the two classes."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 2",
+            "number": 21,
+            "page": 16,
+            "category": "identify the mistake"
+          }
+        },
+        {
+          "id": "sch-oc-ts2-q22",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The side view of an airport terminal building is shown below.\n\nWhich one of the following is the only possible view of the terminal building from above?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 727\" width=\"80%\" height=\"auto\"><image href=\"/oc/ts2-q22.jpg\" x=\"0\" y=\"0\" width=\"800\" height=\"727\"/></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 2,
+          "hint": "Look at where each level sits compared with the level below it. Is any level not completely on top of the one beneath?",
+          "steps": [
+            {
+              "explain": "The top (fifth) level sits towards the left of the fourth level."
+            },
+            {
+              "explain": "The third level is not completely under the fourth level — part of the fourth level sticks out past it. So from above, the outline of the third level must meet the outline of the fourth level."
+            },
+            {
+              "explain": "Only C shows this.",
+              "work": "<p>Answer: <strong>C</strong></p>"
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 2",
+            "number": 22,
+            "page": 17,
+            "category": "spatial reasoning"
+          }
+        },
+        {
+          "id": "sch-oc-ts2-q23",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The Kingdom of Chromatica has five traditional festivals which are held every year. During these festivals, all the citizens of Chromatica wear the same colour. The colours are shown in this table:\n\n| Festival | Colour |\n|---|---|\n| Chromatican Independence Day | Red |\n| The King’s Official Birthday | Yellow |\n| Women’s Day | Blue |\n| The Ice Carnival | Blue |\n| Chromatican New Year | Red |\n\nShiro is visiting Chromatica and sees that everyone is wearing the same colour, so he knows they are celebrating a festival, but he doesn’t know which one. Even after checking the table above, he’s still not sure.\n\nWhat can we say about the colour that Shiro saw everyone wearing?",
+          "options": [
+            "It was either red or yellow.",
+            "It was either yellow or blue.",
+            "It was either blue or red.",
+            "It could have been red, yellow or blue."
+          ],
+          "answer": 2,
+          "hint": "Which colour belongs to only one festival? If Shiro had seen that colour, would he still be unsure?",
+          "steps": [
+            {
+              "explain": "Yellow belongs to only one festival, so if everyone wore yellow, Shiro would know it was the King’s Official Birthday."
+            },
+            {
+              "explain": "Shiro is still unsure, so the colour must belong to two festivals: blue or red.",
+              "work": "<p>Answer: <strong>It was either blue or red.</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "he’s still not sure",
+              "note": "The colour must match more than one festival."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 2",
+            "number": 23,
+            "page": 18,
+            "category": "logic puzzle"
+          }
+        },
+        {
+          "id": "sch-oc-ts2-q24",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Darren has a deck of fifteen special playing cards:\nFive red cards, numbered 1−5\nFive blue cards, numbered 1−5\nFive yellow cards, numbered 1−5\nHe shuffles the deck randomly, and then draws a number of cards from the top.\n\n**Lily:** “To be certain of having all three colours, he has to draw eleven cards.”\n\n**Tom:** “To be certain of having three different numbers, he needs to draw seven cards.”\n\nIf the information in the box is true, whose reasoning is correct?",
+          "options": [
+            "Lily only",
+            "Tom only",
+            "Both Lily and Tom",
+            "Neither Lily nor Tom"
+          ],
+          "answer": 2,
+          "hint": "Think about the unluckiest draw. How many cards could you draw and still be missing a colour? Still have only two numbers?",
+          "steps": [
+            {
+              "explain": "Lily: with 10 cards you could get all 5 of two colours and none of the third. With 11 cards, only 4 are left, so at least one card of every colour has been drawn.",
+              "work": "<p>Lily ✔</p>"
+            },
+            {
+              "explain": "Tom: each number appears 3 times (once per colour). With 6 cards you could get all three cards of two numbers. With 7 cards, a third number must appear.",
+              "work": "<p>Tom ✔</p>"
+            },
+            {
+              "explain": "Both are correct.",
+              "work": "<p>Answer: <strong>Both Lily and Tom</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "To be certain",
+              "note": "Imagine the unluckiest possible draw."
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 2",
+            "number": 24,
+            "page": 19,
+            "category": "whose reasoning is correct"
+          }
+        },
+        {
+          "id": "sch-oc-ts2-q25",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In a competition, 10 students were allowed two attempts at running 200 metres as fast as possible. The fastest time in the two attempts was counted as their ‘result’. The attempts for the 10 students are shown in the table.\n\n| student number | attempt 1 (in seconds) | attempt 2 (in seconds) |\n|---|---|---|\n| 1 | 25.6 | 24.1 |\n| 2 | 25.0 | 26.4 |\n| 3 | 27.4 | 25.8 |\n| 4 | 25.3 | 24.9 |\n| 5 | 24.8 | 26.3 |\n| 6 | 26.1 | 27.2 |\n| 7 | 26.4 | 28.1 |\n| 8 | 27.7 | 26.9 |\n| 9 | 25.8 | 24.5 |\n| 10 | 25.2 | 25.6 |\n\nWhich student came 3rd in the competition?",
+          "options": [
+            "student 4",
+            "student 5",
+            "student 9",
+            "student 10"
+          ],
+          "answer": 1,
+          "hint": "For each student, keep only the faster (smaller) time. Then put the results in order from fastest.",
+          "steps": [
+            {
+              "explain": "Each student’s result is their faster time.",
+              "work": "<p>1: 24.1, 2: 25.0, 3: 25.8, 4: 24.9, 5: 24.8, 6: 26.1, 7: 26.4, 8: 26.9, 9: 24.5, 10: 25.2</p>"
+            },
+            {
+              "explain": "Order the fastest results.",
+              "work": "<p>1st: student 1 (24.1)</p><p>2nd: student 9 (24.5)</p><p>3rd: student 5 (24.8)</p>"
+            },
+            {
+              "explain": "Student 5 came 3rd.",
+              "work": "<p>Answer: <strong>student 5</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "The fastest time in the two attempts",
+              "note": "Use the smaller time for each student."
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 2",
+            "number": 25,
+            "page": 20,
+            "category": "reading tables"
+          }
+        },
+        {
+          "id": "sch-oc-ts2-q26",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Dylan was keen to get fitter and stronger so he took up running. His friend Angela said to him: “If you want to strengthen your whole body, you should take up swimming as well as running.”\n\nWhich one of these statements, if true, best supports Angela’s claim?",
+          "options": [
+            "Swimming uses more of the body’s muscles than running.",
+            "Swimming can be quite relaxing and help reduce stress.",
+            "Being able to swim well is good for your own personal safety.",
+            "People who run too much can sometimes damage their knees or ankles."
+          ],
+          "answer": 0,
+          "hint": "Angela’s claim is about strengthening the WHOLE body. Which statement shows swimming does that better than running alone?",
+          "steps": [
+            {
+              "explain": "Angela says swimming will help strengthen the whole body, on top of running."
+            },
+            {
+              "explain": "A shows swimming works more of the body’s muscles than running, so it strengthens more of the body.",
+              "work": "<p>Answer: <strong>A</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "strengthen your whole body",
+              "note": "The support must be about strength across the whole body."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 2",
+            "number": 26,
+            "page": 20,
+            "category": "strengthen an argument"
+          }
+        },
+        {
+          "id": "sch-oc-ts2-q27",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The majority of the Bulbo trees in the world are in the Manu Forest in Peru.\n\n**Ravi:** “So if you were to randomly choose a tree from all the Bulbo trees in the world, it would probably be in Peru.”\n\n**Luca:** “And if you were to randomly choose a tree in the Manu Forest, it would probably be a Bulbo tree.”\n\nIf the information in the box is true, whose reasoning is correct?",
+          "options": [
+            "Ravi only",
+            "Luca only",
+            "Both Ravi and Luca",
+            "Neither Ravi nor Luca"
+          ],
+          "answer": 0,
+          "hint": "Most Bulbo trees are in the Manu Forest. Does that mean most trees in the Manu Forest are Bulbo trees?",
+          "steps": [
+            {
+              "explain": "Ravi: most Bulbo trees are in the Manu Forest (in Peru), so a random Bulbo tree is probably in Peru.",
+              "work": "<p>Ravi ✔</p>"
+            },
+            {
+              "explain": "Luca: the forest may also have huge numbers of other kinds of trees, so a random tree there is not necessarily likely to be a Bulbo tree.",
+              "work": "<p>Luca ✘</p><p>Answer: <strong>Ravi only</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "The majority of the Bulbo trees",
+              "note": "This tells us about Bulbo trees — not about all the trees in the forest."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 2",
+            "number": 27,
+            "page": 21,
+            "category": "whose reasoning is correct"
+          }
+        },
+        {
+          "id": "sch-oc-ts2-q28",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A pyramid of 9 layers is shown below.\n\nWhich **one** of the following arrangements shows all 9 layers of the pyramid?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 654\" width=\"85%\" height=\"auto\"><image href=\"/oc/ts2-q28.jpg\" x=\"0\" y=\"0\" width=\"800\" height=\"654\"/></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 0,
+          "hint": "Count the blocks in each layer of the pyramid (1, 3, 5, …). Each arrangement must use each of those widths exactly once.",
+          "steps": [
+            {
+              "explain": "The pyramid’s layers have widths 1, 3, 5, 7, 9, 11, 13, 15 and 17 blocks."
+            },
+            {
+              "explain": "Each correct arrangement must use every one of those widths exactly once — no width repeated and none missing. Compare the rows in each option; look for widths that appear twice."
+            },
+            {
+              "explain": "Only A has exactly the right set of widths.",
+              "work": "<p>Answer: <strong>A</strong></p>"
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 2",
+            "number": 28,
+            "page": 22,
+            "category": "spatial reasoning"
+          }
+        },
+        {
+          "id": "sch-oc-ts2-q29",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The Crown Jewels of the Kingdom of Animalia have been stolen!\n\nThe horse says that the rabbit stole the jewels. The rabbit says that the tiger did it. The owl claims to be innocent. The tiger says that the rabbit is lying.\n\nIf only one of them is telling the truth, who stole the Crown Jewels?",
+          "options": [
+            "the horse",
+            "the rabbit",
+            "the owl",
+            "the tiger"
+          ],
+          "answer": 2,
+          "hint": "The rabbit and the tiger contradict each other, so exactly one of them is telling the truth. What does that mean for everyone else?",
+          "steps": [
+            {
+              "explain": "The tiger says the rabbit is lying. Either the rabbit is truthful or the tiger is — exactly one of them."
+            },
+            {
+              "explain": "Only one animal tells the truth, so the horse and the owl must both be lying."
+            },
+            {
+              "explain": "The owl says it is innocent — that is a lie, so the owl stole the jewels.",
+              "work": "<p>Answer: <strong>the owl</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "only one of them is telling the truth",
+              "note": "Look for two statements that cannot both be true or both be false."
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 2",
+            "number": 29,
+            "page": 23,
+            "category": "logic puzzle"
+          }
+        },
+        {
+          "id": "sch-oc-ts2-q30",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "There are three ways to cross the Korra River:\nArcher Bridge is only open on Mondays, Wednesdays and Fridays.\nDjorlom Bridge is only open on Tuesdays, Thursdays and Saturdays.\nThe Korra Ferry is used on Sundays. It is also sometimes used on other days, but only if the bridge that would normally be open is damaged.\n\n**Robbie:** “If the ferry operates for two days in a row, it must mean that both the bridges are damaged.”\n\n**Declan:** “If you don’t use the Archer Bridge, you’ll never be able to cross the river on Friday.”\n\nIf the information in the box is true, whose reasoning is correct?",
+          "options": [
+            "Robbie only",
+            "Declan only",
+            "Both Robbie and Declan",
+            "Neither Robbie nor Declan"
+          ],
+          "answer": 3,
+          "hint": "Robbie: think about Sunday followed by Monday. Declan: what happens on a Friday when Archer Bridge is damaged?",
+          "steps": [
+            {
+              "explain": "Robbie: the ferry runs every Sunday anyway. If it also runs on Monday (Archer damaged), that is two days in a row with Djorlom Bridge fine.",
+              "work": "<p>Robbie ✘</p>"
+            },
+            {
+              "explain": "Declan: if Archer Bridge is damaged on a Friday, the ferry runs, so you can still cross without Archer Bridge.",
+              "work": "<p>Declan ✘</p>"
+            },
+            {
+              "explain": "Neither is correct.",
+              "work": "<p>Answer: <strong>Neither Robbie nor Declan</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "The Korra Ferry is used on Sundays",
+              "note": "The ferry runs every Sunday whether or not a bridge is damaged."
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 2",
+            "number": 30,
+            "page": 23,
+            "category": "whose reasoning is correct"
+          }
+        },
+        {
+          "id": "sch-oc-ts3-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Inge and Finn first met on a Tuesday. They met again 8 days later. They then met for the third time 4 days later.\n\nOn which day did Inge and Finn meet for the third time?",
+          "options": [
+            "Tuesday",
+            "Wednesday",
+            "Saturday",
+            "Sunday"
+          ],
+          "answer": 3,
+          "hint": "Add up the days from the first meeting. How does that compare with a whole number of weeks?",
+          "steps": [
+            {
+              "explain": "The third meeting is 8 + 4 = 12 days after the first meeting."
+            },
+            {
+              "explain": "12 days is 2 days less than 2 weeks (14 days). 14 days after Tuesday is a Tuesday, so go back 2 days.",
+              "work": "<p>Tuesday → Monday → <strong>Sunday</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "8 days later",
+              "note": "Add the gaps to find the total days from the first meeting."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 3",
+            "number": 1,
+            "page": 3,
+            "category": "calendar counting"
+          }
+        },
+        {
+          "id": "sch-oc-ts3-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "After school, Cecilia likes to visit her favourite juice stand to buy a drink. The stand sells four types of juice, which are available on different days. Cecilia does not like apple or orange juice, but she will visit the stand as long as she can buy a drink that she likes.\n\n| juice | days available |\n|---|---|\n| lemon | Monday and Wednesday |\n| orange | Tuesday, Wednesday and Thursday |\n| apple | Thursday and Friday |\n| grape | Monday, Tuesday and Friday |\n\nOn which day will Cecilia not visit the juice stand?",
+          "options": [
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "answer": 2,
+          "hint": "Cecilia only buys lemon or grape. Which days have at least one of those?",
+          "steps": [
+            {
+              "explain": "Cecilia likes lemon and grape juice.",
+              "work": "<p>lemon: Monday, Wednesday</p><p>grape: Monday, Tuesday, Friday</p>"
+            },
+            {
+              "explain": "She visits on Monday, Tuesday, Wednesday and Friday. Thursday has only orange and apple.",
+              "work": "<p>Answer: <strong>Thursday</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "does not like apple or orange juice",
+              "note": "Only lemon and grape days count."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 3",
+            "number": 2,
+            "page": 3,
+            "category": "reading tables"
+          }
+        },
+        {
+          "id": "sch-oc-ts3-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Nick wants to learn to speak the Wiradjuri language, but he thinks it will take him a long time. Medika suggests a solution: “You should spend some time in Wagga Wagga. There are plenty of people there who can speak Wiradjuri.”\n\nWhich one of these statements, if true, best supports Medika’s claim?",
+          "options": [
+            "Nick can travel to Wagga Wagga fairly easily.",
+            "Learning a language always takes hard work and concentration.",
+            "Medika has learned to speak three different languages.",
+            "Languages are easier to learn if you practise speaking them with other people."
+          ],
+          "answer": 3,
+          "hint": "Medika’s reason is that many people in Wagga Wagga speak Wiradjuri. Why would that help Nick learn faster?",
+          "steps": [
+            {
+              "explain": "Medika says going to Wagga Wagga helps because many people there speak Wiradjuri."
+            },
+            {
+              "explain": "If languages are easier to learn by practising with other speakers, then being around Wiradjuri speakers would help Nick.",
+              "work": "<p>Answer: <strong>D</strong></p>"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 3",
+            "number": 3,
+            "page": 4,
+            "category": "strengthen an argument"
+          }
+        },
+        {
+          "id": "sch-oc-ts3-q4",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The wooden puzzle below fits together to make a cube. Pairs of blocks will fit to make one of the three layers which will complete the cube.\n\nHow are the blocks paired together to make each of the three layers of the cube?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 500\" width=\"90%\" height=\"auto\"><image href=\"/oc/ts3-q4.jpg\" x=\"0\" y=\"0\" width=\"800\" height=\"500\"/></svg>"
+          },
+          "options": [
+            "1 and 5; 2 and 6; 3 and 4",
+            "1 and 6; 2 and 5; 3 and 4",
+            "1 and 4; 2 and 5; 3 and 6",
+            "1 and 6; 2 and 3; 4 and 5"
+          ],
+          "answer": 1,
+          "hint": "Each pair must make a flat square layer. Blocks with lots of small sections need a partner with matching slots.",
+          "steps": [
+            {
+              "explain": "Two blocks must fit together like jigsaw pieces to make one flat square layer."
+            },
+            {
+              "explain": "Block 1 can only pair with block 6 — every other block has too many sections to fit with it. Then block 2 fits with block 5, and block 3 fits with block 4.",
+              "work": "<p>Answer: <strong>1 and 6; 2 and 5; 3 and 4</strong></p>"
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 3",
+            "number": 4,
+            "page": 4,
+            "category": "spatial reasoning"
+          }
+        },
+        {
+          "id": "sch-oc-ts3-q5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simon is watching a news report which claims that nearly a third of Australians go swimming regularly.\n\n**Simon:** “That can’t be true – I almost never go swimming, and neither do any of my friends.”\n\nWhich one of the following sentences shows that Simon has made a mistake?",
+          "options": [
+            "Simon may prefer other forms of exercise, such as running.",
+            "Swimming may have become more popular in recent years.",
+            "The news report that Simon is watching may be incorrect.",
+            "Simon may live in an area where there are few opportunities to go swimming."
+          ],
+          "answer": 3,
+          "hint": "Simon uses himself and his friends to judge all of Australia. Could his group be different from the rest of the country?",
+          "steps": [
+            {
+              "explain": "Simon assumes his friends are typical of all Australians."
+            },
+            {
+              "explain": "But different areas may be very different — for example people near the coast may swim more than people living inland.",
+              "work": "<p>Answer: <strong>D</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "neither do any of my friends",
+              "note": "A small group may not represent the whole country."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 3",
+            "number": 5,
+            "page": 5,
+            "category": "identify the mistake"
+          }
+        },
+        {
+          "id": "sch-oc-ts3-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Staff at a wildlife hospital are building a structure to house sugar gliders. The structure has three levels: one for food, one for a water bowl, and one for a hollow log that a sugar glider can use as a nest.\n\nIf the food is on a lower level than the water bowl and the log is higher than the food, which one of the following statements must be true?",
+          "options": [
+            "The middle level has the log.",
+            "The lowest level has the food.",
+            "The highest level has the water.",
+            "The middle level has the food."
+          ],
+          "answer": 1,
+          "hint": "The food is lower than both of the other things. Where must it be?",
+          "steps": [
+            {
+              "explain": "The food is lower than the water bowl and lower than the log."
+            },
+            {
+              "explain": "So the food must be on the lowest level. We cannot tell the order of the water and the log.",
+              "work": "<p>Answer: <strong>The lowest level has the food.</strong></p>"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 3",
+            "number": 6,
+            "page": 5,
+            "category": "ordering and position"
+          }
+        },
+        {
+          "id": "sch-oc-ts3-q7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "John is collecting a set of toy robots based on his favourite television program. The robots come in different colours and John still needs the red and green robots to complete his set. The local shop has an offer where they will sell any of the following packs of three robots for $10.\n\n| pack | robot | robot | robot |\n|---|---|---|---|\n| pack 1 | red | blue | yellow |\n| pack 2 | red | yellow | pink |\n| pack 3 | green | pink | purple |\n| pack 4 | blue | orange | pink |\n\nJohn has a friend who has a spare green robot and will swap it for a pink robot.\n\nWhich pack should John buy to be able to complete his set?",
+          "options": [
+            "pack 1",
+            "pack 2",
+            "pack 3",
+            "pack 4"
+          ],
+          "answer": 1,
+          "hint": "John needs a red robot from the pack, and a pink robot to swap for the green one.",
+          "steps": [
+            {
+              "explain": "John can get green from his friend, but only by swapping a pink robot. So he needs a pack with red AND pink."
+            },
+            {
+              "explain": "Packs with red: pack 1 and pack 2. Only pack 2 also has pink.",
+              "work": "<p>Answer: <strong>pack 2</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "will swap it for a pink robot",
+              "note": "John needs a pink robot to get the green one."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 3",
+            "number": 7,
+            "page": 6,
+            "category": "choosing combinations"
+          }
+        },
+        {
+          "id": "sch-oc-ts3-q8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A scientist, Melanie, is trying to figure out why the number of fish in a nearby lake has decreased over the past year.\n\n**Melanie:** “The lake has become more polluted over the past year as well, so it must be the pollution that is causing many fish in the lake to die.”\n\nWhich one of the following sentences shows that Melanie has made a mistake?",
+          "options": [
+            "The number of fish in other lakes might not have decreased over the past year.",
+            "Pollution may also cause health problems in humans.",
+            "The number of plants in the lake might not have decreased over the past year.",
+            "More people may have fished from the lake over the past year."
+          ],
+          "answer": 3,
+          "hint": "Two things happened at the same time. Does that prove one caused the other? Is there another reason the fish could have decreased?",
+          "steps": [
+            {
+              "explain": "Melanie sees that the fish decreased while pollution increased, and decides pollution must be the cause."
+            },
+            {
+              "explain": "Things happening at the same time does not prove one caused the other. Another explanation is that more people have been fishing.",
+              "work": "<p>Answer: <strong>D</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "it must be the pollution",
+              "note": "“Must” — could something else explain fewer fish?"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 3",
+            "number": 8,
+            "page": 7,
+            "category": "identify the mistake"
+          }
+        },
+        {
+          "id": "sch-oc-ts3-q9",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Some students are growing flowering plants by different windows in their school and keeping track of when they bloom.\n\nThe students put a geranium in the canteen and a guppy plant in the music room.\n\nThe wax plant they chose for the school hall bloomed before the guppy plant but after the bromeliad in the library.\n\nThe geranium bloomed on the same day as the plant in the school hall.\n\nOne of the plants bloomed a day before any of the others. Which one was it?",
+          "options": [
+            "the geranium",
+            "the guppy plant",
+            "the wax plant",
+            "the bromeliad"
+          ],
+          "answer": 3,
+          "hint": "The plant in the school hall is the wax plant. Put the bromeliad, wax plant and guppy plant in order, then add the geranium.",
+          "steps": [
+            {
+              "explain": "The wax plant (school hall) bloomed after the bromeliad and before the guppy plant.",
+              "work": "<p>bromeliad → wax plant → guppy plant</p>"
+            },
+            {
+              "explain": "The geranium bloomed on the same day as the wax plant.",
+              "work": "<p>bromeliad → wax plant + geranium → guppy plant</p>"
+            },
+            {
+              "explain": "The bromeliad bloomed first.",
+              "work": "<p>Answer: <strong>the bromeliad</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "the plant in the school hall",
+              "note": "Which plant is in the school hall? Swap the name in."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 3",
+            "number": 9,
+            "page": 7,
+            "category": "ordering and position"
+          }
+        },
+        {
+          "id": "sch-oc-ts3-q10",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The 16 shapes in Set 2 shown below should be identical to the shapes shown in Set 1.\n\nHow many of the shapes in Set 2 are not identical to a shape in Set 1?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 450\" width=\"90%\" height=\"auto\"><image href=\"/oc/ts3-q10.jpg\" x=\"0\" y=\"0\" width=\"800\" height=\"450\"/></svg>"
+          },
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answer": 3,
+          "hint": "Match the shapes one at a time (they may be turned around). Tick off each Set 1 shape as you find its match in Set 2.",
+          "steps": [
+            {
+              "explain": "Go through Set 1 and find each shape’s match in Set 2 (shapes may be rotated). Tick off each pair."
+            },
+            {
+              "explain": "11 of the Set 1 shapes have an identical shape in Set 2. The other 5 shapes in Set 2 are slightly different from every shape in Set 1.",
+              "work": "<p>Answer: <strong>5</strong></p>"
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 3",
+            "number": 10,
+            "page": 8,
+            "category": "shapes and pieces"
+          }
+        },
+        {
+          "id": "sch-oc-ts3-q11",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A gardener is giving advice about taking care of plants. He says: “Some people think talking to plants is strange, but it’s actually a really good idea. After all, you’re more likely to remember to water them if you treat them like friends!”\n\nWhich one of these statements, if true, best supports the gardener’s claim?",
+          "options": [
+            "People often notice details about a plant’s health when they are talking to it.",
+            "Some people believe that plants can understand what people say to them.",
+            "Talking to plants won’t help people avoid overwatering them.",
+            "Talking to plants is a very old tradition."
+          ],
+          "answer": 0,
+          "hint": "Look for a real BENEFIT of talking to plants.",
+          "steps": [
+            {
+              "explain": "The gardener claims talking to plants is a good idea. Support must show a benefit."
+            },
+            {
+              "explain": "If people notice details about a plant’s health while talking to it, they can look after it better — a clear benefit.",
+              "work": "<p>Answer: <strong>A</strong></p>"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 3",
+            "number": 11,
+            "page": 8,
+            "category": "strengthen an argument"
+          }
+        },
+        {
+          "id": "sch-oc-ts3-q12",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Four friends are in a car together. There are two seats in the front and two in the back.\n\nKatelyn is either driving or sitting beside Talia. Talia is sitting behind the driver. Jimmy is not sitting in the back, and he is not sitting beside Andrea.\n\nWho is driving the car?",
+          "options": [
+            "Andrea",
+            "Jimmy",
+            "Katelyn",
+            "Talia"
+          ],
+          "answer": 2,
+          "hint": "Talia is in the back. Try Katelyn NOT driving — where would everyone sit, and does it break a rule?",
+          "steps": [
+            {
+              "explain": "Talia sits behind the driver, so Talia is in the back. Jimmy is in the front."
+            },
+            {
+              "explain": "Suppose Katelyn is not driving. Then she must sit beside Talia in the back, leaving Jimmy and Andrea side by side in the front — but Jimmy is not beside Andrea.",
+              "work": "<p>That is impossible.</p>"
+            },
+            {
+              "explain": "So Katelyn must be driving.",
+              "work": "<p>Answer: <strong>Katelyn</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Katelyn is either driving or sitting beside Talia",
+              "note": "Test each possibility and see which one breaks a rule."
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 3",
+            "number": 12,
+            "page": 9,
+            "category": "seating arrangements"
+          }
+        },
+        {
+          "id": "sch-oc-ts3-q13",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In a word game, players make words out of letters. Each letter has a value that is a whole number that is at least 1. The score for the word is the total of the values of all the letters in the word.\n\nFor example: The word TOO scores 4.\nThe word TWO scores 6.\nThe word HOOT also scores 6.\nThe word THAT scores 7.\n\nWhat is the score for the word THAW?",
+          "options": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "answer": 2,
+          "hint": "Compare TOO and HOOT — they differ by one letter. Then use the fact that every letter is worth at least 1.",
+          "steps": [
+            {
+              "explain": "HOOT = TOO + H, so H = 6 − 4 = 2.",
+              "work": "<p>H = 2</p>"
+            },
+            {
+              "explain": "TOO = T + O + O = 4. Every letter is at least 1, so O cannot be 2 or more (that would make TOO at least 5). So O = 1 and T = 2.",
+              "work": "<p>O = 1, T = 2</p>"
+            },
+            {
+              "explain": "TWO = 2 + W + 1 = 6, so W = 3. THAT = 2 + 2 + A + 2 = 7, so A = 1.",
+              "work": "<p>W = 3, A = 1</p>"
+            },
+            {
+              "explain": "THAW = T + H + A + W.",
+              "work": "<p>2 + 2 + 1 + 3 = <strong>8</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "at least 1",
+              "note": "This rule helps pin down the value of O."
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 3",
+            "number": 13,
+            "page": 9,
+            "category": "number puzzles"
+          }
+        },
+        {
+          "id": "sch-oc-ts3-q14",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Iluka wants to buy a sandwich. He is currently waiting in the queue at Sliced Bread Sangers.\n\n**Iluka:** “Sliced Bread Sangers always take 15 minutes to make my favourite sandwich. But the Loafing Around bakery down the road always take 10 minutes. It takes less than five minutes to walk there – so I should head to Loafing Around and then I’ll get my sandwich sooner.”\n\nWhich one of the following sentences shows that Iluka has made a mistake?",
+          "options": [
+            "Sliced Bread Sangers may make better sandwiches than Loafing Around.",
+            "Sliced Bread Sangers may have a wider range of sandwiches than Loafing Around.",
+            "The sandwiches at Loafing Around may be more expensive than those at Sliced Bread Sangers.",
+            "The queue at Loafing Around may be longer than the one at Sliced Bread Sangers."
+          ],
+          "answer": 3,
+          "hint": "Iluka counted making time and walking time. What other waiting has he forgotten?",
+          "steps": [
+            {
+              "explain": "Iluka compares making time plus walking time, but forgets about waiting in a queue."
+            },
+            {
+              "explain": "If the queue at Loafing Around is long, he may get his sandwich later, not sooner.",
+              "work": "<p>Answer: <strong>D</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "I’ll get my sandwich sooner",
+              "note": "Have all the waiting times been counted?"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 3",
+            "number": 14,
+            "page": 10,
+            "category": "identify the mistake"
+          }
+        },
+        {
+          "id": "sch-oc-ts3-q15",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Mei and Kirra’s class is due to go on an excursion to an observatory so they can look at the stars through the big telescope. The only children in the class who are not going on the excursion are the ones who need to play in the soccer match.\n\n**Maliyan:** “Mei does not play soccer, so she must be going to the observatory.”\n\n**Robyn:** “Kirra is not going to the observatory, so she must be playing in the soccer match.”\n\nIf the information in the box is true, whose reasoning is correct?",
+          "options": [
+            "Maliyan only",
+            "Robyn only",
+            "both Maliyan and Robyn",
+            "neither Maliyan nor Robyn"
+          ],
+          "answer": 2,
+          "hint": "“The only children not going are the soccer players.” So anyone not playing soccer is going — and anyone not going is playing soccer.",
+          "steps": [
+            {
+              "explain": "The only children not going are the ones playing soccer. So anyone who does not play soccer goes on the excursion.",
+              "work": "<p>Maliyan ✔</p>"
+            },
+            {
+              "explain": "Also, anyone who is not going must be one of the soccer players.",
+              "work": "<p>Robyn ✔</p>"
+            },
+            {
+              "explain": "Both are correct.",
+              "work": "<p>Answer: <strong>both Maliyan and Robyn</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "The only children in the class who are not going",
+              "note": "Not going ⇔ playing soccer — it works both ways."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 3",
+            "number": 15,
+            "page": 11,
+            "category": "whose reasoning is correct"
+          }
+        },
+        {
+          "id": "sch-oc-ts3-q16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Anna, Nina, Veronika and Timur sit at a square table which has four wooden blocks arranged on its top. The types of block are shown in the top picture below.\n\nThe friends sit at the table as shown in the middle picture (a view from above).\n\nOne of the friends has the view shown in the bottom picture.\n\nWhich one of the friends has the view shown?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 904\" width=\"70%\" height=\"auto\"><image href=\"/oc/ts3-q16.jpg\" x=\"0\" y=\"0\" width=\"800\" height=\"904\"/></svg>"
+          },
+          "options": [
+            "Anna",
+            "Nina",
+            "Timur",
+            "Veronika"
+          ],
+          "answer": 2,
+          "hint": "The view shows the two blocks nearest the friend. What do those two blocks look like from above?",
+          "steps": [
+            {
+              "explain": "The view shows a block that gets wider at the bottom (the first block) and a cube (the second block). These must be the two blocks nearest the friend."
+            },
+            {
+              "explain": "From above, the cube is a square and the first block is a circle with another circle inside it."
+            },
+            {
+              "explain": "The square and the double circle are on Timur’s side of the table.",
+              "work": "<p>Answer: <strong>Timur</strong></p>"
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 3",
+            "number": 16,
+            "page": 12,
+            "category": "spatial reasoning"
+          }
+        },
+        {
+          "id": "sch-oc-ts3-q17",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "To win a soccer match you have to score more goals than the other team.\n\nGrant Valley High School plays soccer in a competition with a group of other schools. They are awarded points for winning and drawing matches but no points for losing. The team with the most points at the end of the season comes top of the competition.\n\nAt the end of the season, Grant Valley High School had sadly failed to score a single goal.\n\nWhich one of the following must also be true?",
+          "options": [
+            "Grant Valley High School came bottom of the competition.",
+            "Grant Valley High School lost more matches than any of the other teams.",
+            "Grant Valley High School won fewer matches than any of the other teams.",
+            "Grant Valley High School failed to win any matches."
+          ],
+          "answer": 3,
+          "hint": "Could a team that scored no goals ever win a match?",
+          "steps": [
+            {
+              "explain": "To win you must score more goals than the other team, so a team that scores no goals cannot win."
+            },
+            {
+              "explain": "Grant Valley could still have drawn some 0–0 games and earned points, so A, B and C are not certain.",
+              "work": "<p>Answer: <strong>D</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "failed to score a single goal",
+              "note": "No goals means no wins — but draws are still possible."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 3",
+            "number": 17,
+            "page": 13,
+            "category": "must be true"
+          }
+        },
+        {
+          "id": "sch-oc-ts3-q18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The students in Tahnee’s class must choose either Jacob or Nicole to represent their class in the school chess competition.\n\nJacob won 3 of his last 14 games in the chess club.\nNicole won 11 of her last 12 games in the chess club.\n\n**Tahnee:** “Nicole has won a higher fraction of her recent games at the club, so she must be the better player. She should represent our class.”\n\nWhich one of the following sentences shows that Tahnee has made a mistake?",
+          "options": [
+            "There may be another player in the class who is better than Nicole.",
+            "Jacob might have played against better opponents in his games.",
+            "Nicole has not played as many games as Jacob.",
+            "They may have played lots of other games outside of the chess club."
+          ],
+          "answer": 1,
+          "hint": "Tahnee only compares how many games each player won. What about who they were playing against?",
+          "steps": [
+            {
+              "explain": "Tahnee assumes the fraction of games won shows who is the better player."
+            },
+            {
+              "explain": "If Jacob played very strong opponents and Nicole played weak ones, Jacob could still be the better player.",
+              "work": "<p>Answer: <strong>B</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "she must be the better player",
+              "note": "Is the win fraction a fair comparison?"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 3",
+            "number": 18,
+            "page": 13,
+            "category": "identify the mistake"
+          }
+        },
+        {
+          "id": "sch-oc-ts3-q19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In a school for young magicians, the weekly timetable is the following:\n\n| | Monday | Tuesday | Wednesday | Thursday |\n|---|---|---|---|---|\n| 9:00–10:00 | stars & sky | potions & poisons | spells | herbs |\n| 10:00–11:00 | farsight | herbs | broom flight | stars & sky |\n| 11:00–12:00 | spells | charms | farsight | broom flight |\n\nThe young magicians need their magic wand for three classes: spells, charms, and herbs. There are no classes on Fridays.\n\nThis week, the classes on Wednesday are cancelled due to a competition.\n\nFor how many classes do the young magicians need their wands this week?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answer": 2,
+          "hint": "Count the spells, charms and herbs classes for each day, but skip Wednesday.",
+          "steps": [
+            {
+              "explain": "Count wand classes (spells, charms, herbs) each day.",
+              "work": "<p>Monday: spells → 1</p><p>Tuesday: herbs, charms → 2</p><p>Wednesday: spells → 1 (cancelled)</p><p>Thursday: herbs → 1</p>"
+            },
+            {
+              "explain": "Leave out Wednesday.",
+              "work": "<p>1 + 2 + 1 = <strong>4</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "the classes on Wednesday are cancelled",
+              "note": "Do not count Wednesday’s classes."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 3",
+            "number": 19,
+            "page": 14,
+            "category": "reading tables"
+          }
+        },
+        {
+          "id": "sch-oc-ts3-q20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Chris is making a sandwich for his younger sister Sally. Sally knows that Chris likes puzzles, so she challenges him to arrange the four ingredients in her sandwich in a specific way. She tells him that the lettuce must not touch the mayonnaise, the cheese must not touch the lettuce, and the mayonnaise must go directly on top of the chicken.\n\nIf Chris makes the sandwich following Sally’s rules, which ingredient will be on top?",
+          "options": [
+            "cheese",
+            "chicken",
+            "lettuce",
+            "mayonnaise"
+          ],
+          "answer": 0,
+          "hint": "Mayonnaise sits right on top of the chicken. The lettuce and cheese must not touch — so where do they go?",
+          "steps": [
+            {
+              "explain": "The mayonnaise is directly on top of the chicken, so they are together.",
+              "work": "<p>mayonnaise / chicken</p>"
+            },
+            {
+              "explain": "The lettuce and cheese cannot touch, so one goes above the mayonnaise and the other below the chicken."
+            },
+            {
+              "explain": "The lettuce cannot touch the mayonnaise, so the cheese goes on top and the lettuce at the bottom.",
+              "work": "<p>cheese / mayonnaise / chicken / lettuce</p><p>Answer: <strong>cheese</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "the mayonnaise must go directly on top of the chicken",
+              "note": "Treat mayonnaise + chicken as one block."
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 3",
+            "number": 20,
+            "page": 14,
+            "category": "ordering and position"
+          }
+        },
+        {
+          "id": "sch-oc-ts3-q21",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A vet is talking about baby animals. She says: “In the case of wild animals, it’s best to avoid touching them. But for kittens, puppies, and other pets at home, careful handling is important to make sure they’re developing properly.”\n\nWhich one of these statements, if true, best supports the vet’s claim?",
+          "options": [
+            "Some people have pets at home that were once wild animals.",
+            "Handling puppies and kittens often helps them to be less afraid of people.",
+            "Many people help wild animals by putting out food and water for them.",
+            "Handling puppies and kittens is something many people enjoy doing."
+          ],
+          "answer": 1,
+          "hint": "Look for a benefit to the PETS of being handled.",
+          "steps": [
+            {
+              "explain": "The vet says careful handling of pets is important for their development. Support must show a benefit to the pet."
+            },
+            {
+              "explain": "B: handling helps puppies and kittens be less afraid of people — a benefit for them. D is a benefit for people, not pets.",
+              "work": "<p>Answer: <strong>B</strong></p>"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 3",
+            "number": 21,
+            "page": 15,
+            "category": "strengthen an argument"
+          }
+        },
+        {
+          "id": "sch-oc-ts3-q22",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A wall is decorated using a set of identical tiles, but some of the tiles were rotated before being added to the wall. A section of the wall, made up of 4 complete tiles, is shown below.\n\nWhich one of the following could be the design on each of the tiles?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 387\" width=\"90%\" height=\"auto\"><image href=\"/oc/ts3-q22.jpg\" x=\"0\" y=\"0\" width=\"800\" height=\"387\"/></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 0,
+          "hint": "Split the wall into four equal squares. Count the black squares in each tile and where they are.",
+          "steps": [
+            {
+              "explain": "Divide the wall section into four equal tiles."
+            },
+            {
+              "explain": "Each tile is black in the centre and in three of its corners."
+            },
+            {
+              "explain": "Only A has a black centre and three black corners.",
+              "work": "<p>Answer: <strong>A</strong></p>"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 3",
+            "number": 22,
+            "page": 15,
+            "category": "tiling patterns"
+          }
+        },
+        {
+          "id": "sch-oc-ts3-q23",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Peter needs to return a book to Fiona, but he will not see her today. However, he knows that the following meetings will happen:\n\nPeter will meet Zhang at 09:00.\nSam will meet Tim at 10:00.\nTim will meet Ursula at 11:00.\nUrsula will meet Fiona at 12:00.\n\nWhich one of the following additional meetings would enable Fiona to receive the book today?",
+          "options": [
+            "Fiona will meet Sam at 09:30.",
+            "Fiona will meet Tim at 11:30.",
+            "Zhang will meet Tim at 10:30.",
+            "Zhang will meet Ursula at 12:30."
+          ],
+          "answer": 2,
+          "hint": "Follow the book: Peter can only hand it to Zhang. Who must Zhang meet, and before what time?",
+          "steps": [
+            {
+              "explain": "Peter can only pass the book to Zhang at 09:00."
+            },
+            {
+              "explain": "Tim → Ursula (11:00) → Fiona (12:00) already gets a book to Fiona. So Zhang must reach Tim before 11:00 or Ursula before 12:00."
+            },
+            {
+              "explain": "Zhang meeting Tim at 10:30 works: Zhang → Tim (10:30) → Ursula (11:00) → Fiona (12:00).",
+              "work": "<p>D is too late (12:30). A and B do not involve Zhang or Peter.</p><p>Answer: <strong>C</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Peter will meet Zhang at 09:00",
+              "note": "The book starts with Peter, so it must travel through Zhang."
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 3",
+            "number": 23,
+            "page": 16,
+            "category": "logic puzzle"
+          }
+        },
+        {
+          "id": "sch-oc-ts3-q24",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Last winter, Mr Murray planted twenty crocus plants but only five of them grew. After some research, Mr Murray found that there were two possible reasons for this:\n\n• The winter may have been too warm, as crocuses need cold weather to grow.\n• Possums may have dug up the crocus plants for food before they could fully grow.\n\n**Mr Murray:** “I checked the weather reports and the average temperature during the winter was indeed higher than normal. That must be the reason why so many of the crocuses didn’t grow, so I shouldn’t blame the possums.”\n\nWhich one of the following sentences shows that Mr Murray has made a mistake?",
+          "options": [
+            "The crocuses may have been affected both by warm weather and by possums.",
+            "The warmer winter may have allowed possums to find other food sources.",
+            "Possums may also like to eat other flowering plants such as tulips.",
+            "Possums may only dig up crocus plants to eat if they cannot find anything else."
+          ],
+          "answer": 0,
+          "hint": "Mr Murray found one possible cause. Does that rule out the other cause?",
+          "steps": [
+            {
+              "explain": "Mr Murray assumes only one of the two reasons can be true."
+            },
+            {
+              "explain": "A warm winter does not stop possums digging up crocuses — both could have happened.",
+              "work": "<p>Answer: <strong>A</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "I shouldn’t blame the possums",
+              "note": "Finding one cause does not rule out another."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 3",
+            "number": 24,
+            "page": 17,
+            "category": "identify the mistake"
+          }
+        },
+        {
+          "id": "sch-oc-ts3-q25",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The following 4 diagrams show pairs of objects. For the objects in each pair, the scale is the same. The height of the car is 1.5 metres, the person is 2 metres, the swing is 2.5 metres and the farm shed is 3 metres tall.\n\nWhich of the following is the tallest?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 481\" width=\"90%\" height=\"auto\"><image href=\"/oc/ts3-q25.jpg\" x=\"0\" y=\"0\" width=\"800\" height=\"481\"/></svg>"
+          },
+          "options": [
+            "dinosaur",
+            "house",
+            "tree",
+            "truck"
+          ],
+          "answer": 2,
+          "hint": "In each picture, estimate how many times taller the big object is than the small one, then multiply by the small object’s real height.",
+          "steps": [
+            {
+              "explain": "In each picture, compare the big object with the small object beside it (same scale)."
+            },
+            {
+              "explain": "The tree is about 4 times the height of the swing: 4 × 2.5 m ≈ 10 m. The truck is less than 3 times the shed: less than 3 × 3 m = 9 m."
+            },
+            {
+              "explain": "The house (next to the 1.5 m car) and the dinosaur (next to the 2 m person) are also smaller than 10 m. The tree is tallest.",
+              "work": "<p>Answer: <strong>tree</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "the scale is the same",
+              "note": "Only compare objects within the same picture."
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 3",
+            "number": 25,
+            "page": 18,
+            "category": "scale and measurement"
+          }
+        },
+        {
+          "id": "sch-oc-ts3-q26",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "During a science lesson, the teacher says that the most effective way to reduce water waste at home is to make sure that your taps are not leaking.\n\nWhich one of these statements, if true, best supports the teacher’s claim?",
+          "options": [
+            "A huge amount of water is wasted in people’s homes every year.",
+            "It is very easy to fix taps that are leaking.",
+            "Leaking taps are the biggest source of water waste in households.",
+            "There are many different ways to reduce water waste at home."
+          ],
+          "answer": 2,
+          "hint": "The claim says fixing taps is the MOST effective way. Which statement shows leaking taps matter more than anything else?",
+          "steps": [
+            {
+              "explain": "The teacher claims fixing leaks is the <em>most</em> effective way to cut water waste."
+            },
+            {
+              "explain": "C: if leaking taps are the biggest source of water waste, then fixing them saves the most water.",
+              "work": "<p>Answer: <strong>C</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "the most effective way",
+              "note": "The support must show leaks are the biggest problem."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 3",
+            "number": 26,
+            "page": 18,
+            "category": "strengthen an argument"
+          }
+        },
+        {
+          "id": "sch-oc-ts3-q27",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Idris is trying to solve a puzzle.\n\nHe has four boxes labelled W, X, Y, and Z.\n\nHe knows that there is a different amount of treasure in each box.\n\nHe has four clues about the boxes (the fourth clue is not shown):\n\n**Clue 1:** Box X contains more treasure than box Z.\n**Clue 2:** Box W contains more treasure than box Y.\n**Clue 3:** Box W contains more treasure than box X.\n\nAfter reading all four clues, Idris is able to put the chests in order of how much treasure they contain.\n\nWhich one of the following could be the fourth clue?",
+          "options": [
+            "Box Y contains more treasure than box X.",
+            "Box X contains more treasure than box Y.",
+            "Box W contains more treasure than box Z.",
+            "Box Y contains more treasure than box Z."
+          ],
+          "answer": 0,
+          "hint": "Work out what the first three clues already tell you. Then find which clue fixes exactly where Y goes.",
+          "steps": [
+            {
+              "explain": "Clues 2 and 3: W is more than X and Y. Clue 1: X is more than Z. So W has the most.",
+              "work": "<p>W > X > Z, and W > Y</p>"
+            },
+            {
+              "explain": "The fourth clue must place Y exactly among X and Z. “Y is more than X” gives one clear order.",
+              "work": "<p>W > Y > X > Z</p>"
+            },
+            {
+              "explain": "B and D each leave two possible orders, and C tells us nothing new.",
+              "work": "<p>Answer: <strong>A</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "put the chests in order",
+              "note": "The fourth clue must leave only one possible order."
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 3",
+            "number": 27,
+            "page": 19,
+            "category": "logic puzzle"
+          }
+        },
+        {
+          "id": "sch-oc-ts3-q28",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An unusual dice is labelled such that the numbers of dots on opposing faces add up to five. One of the faces has no dots. No two faces have the same number of dots as each other.\n\nWhich diagram shows a possible view of the dice?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 167\" width=\"90%\" height=\"auto\"><image href=\"/oc/ts3-q28.jpg\" x=\"0\" y=\"0\" width=\"800\" height=\"167\"/></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 1,
+          "hint": "Find the three opposite pairs that add to 5. You can never see both faces of an opposite pair at once.",
+          "steps": [
+            {
+              "explain": "Opposite faces add to 5, and the faces are 0, 1, 2, 3, 4, 5. So the opposite pairs are 0–5, 1–4 and 2–3."
+            },
+            {
+              "explain": "A view of a dice shows three faces, and never both faces of the same pair. So the visible faces must contain one number from each pair."
+            },
+            {
+              "explain": "Only B shows one face from each pair.",
+              "work": "<p>Answer: <strong>B</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "add up to five",
+              "note": "Work out the opposite pairs first."
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 3",
+            "number": 28,
+            "page": 19,
+            "category": "cube reasoning"
+          }
+        },
+        {
+          "id": "sch-oc-ts3-q29",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "ADVERTISEMENT: Anyone who loves musicals will love the new animated musical Carimba!\n\n**Tina:** “Connor adores Carimba! So that tells me he is a big fan of musicals.”\n\nWhich one of the following sentences shows that Tina has made a mistake?",
+          "options": [
+            "Carimba! may have won the award for best musical.",
+            "Carimba! may appeal to people who do not normally like musicals.",
+            "Carimba! may be Connor’s favourite movie.",
+            "Carimba! may have changed the kind of things Connor likes to watch."
+          ],
+          "answer": 1,
+          "hint": "The advert says musical-lovers will love Carimba!. Does that mean everyone who loves Carimba! loves musicals?",
+          "steps": [
+            {
+              "explain": "The advert says: if you love musicals, you will love Carimba!."
+            },
+            {
+              "explain": "Tina reverses it: Connor loves Carimba!, so he loves musicals. But people who don’t usually like musicals could love Carimba! too.",
+              "work": "<p>Answer: <strong>B</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Anyone who loves musicals will love",
+              "note": "This only works in one direction."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 3",
+            "number": 29,
+            "page": 20,
+            "category": "identify the mistake"
+          }
+        },
+        {
+          "id": "sch-oc-ts3-q30",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In the first round of a tennis competition every player plays 5 matches.\n\nTo qualify for the second round a player must win at least 4 of their matches.\n\nDarren and Monaro have both won all of their first 3 matches. They are about to play each other.\n\nThere are no draws in tennis.\n\n**Alyssa:** “At least one of Darren and Monaro will qualify for the second round.”\n\n**Emily:** “Darren and Monaro can’t both qualify for the second round.”\n\nIf the information in the box is true, whose reasoning is correct?",
+          "options": [
+            "Alyssa only",
+            "Emily only",
+            "both Alyssa and Emily",
+            "neither Alyssa nor Emily"
+          ],
+          "answer": 0,
+          "hint": "One of them must win the match between them. Then each still has one more match to play.",
+          "steps": [
+            {
+              "explain": "There are no draws, so one of them wins their match against each other and reaches 4 wins.",
+              "work": "<p>Alyssa ✔</p>"
+            },
+            {
+              "explain": "The loser has 3 wins and one more match to play. If they win that, they also reach 4 wins and qualify.",
+              "work": "<p>Emily ✘</p>"
+            },
+            {
+              "explain": "Only Alyssa is correct.",
+              "work": "<p>Answer: <strong>Alyssa only</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "every player plays 5 matches",
+              "note": "After this match, each player still has one match left."
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 3",
+            "number": 30,
+            "page": 21,
+            "category": "whose reasoning is correct"
+          }
         }
       ]
     }
