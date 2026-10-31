@@ -119,3 +119,21 @@ export const mockSummary = (uid, examId, topicId) => {
     inProgress: !!loadTestState(uid, mockStorageId(examId), topicId).current,
   };
 };
+
+/**
+ * The one thing to do next, shown at the top of the page.
+ * `sections`: [{ id, name, mockable, empty, mockCount }] in page order; `weak`: rankGroups rows with a `section` id,
+ * weakest first (already filtered to judged ones). Order of preference: a first mock in any section that has
+ * one → the weakest judged question type → another mock → plain practice.
+ */
+export const pickNextStep = (sections, weak = []) => {
+  const open = sections.filter((s) => !s.empty);
+  if (!open.length) return null;
+  const firstMock = open.find((s) => s.mockable && s.mockCount === 0);
+  if (firstMock) return { kind: 'mock', sectionId: firstMock.id, text: `Take your first ${firstMock.name} mock exam` };
+  const w = weak.find((g) => g.weak && open.some((s) => s.id === g.section));
+  if (w) return { kind: 'practise', sectionId: w.section, text: `Practise ${w.name} — you scored ${Math.round(w.pct * 100)}%` };
+  const again = open.filter((s) => s.mockable).sort((a, b) => a.mockCount - b.mockCount)[0];
+  if (again) return { kind: 'mock', sectionId: again.id, text: `Try another ${again.name} mock exam` };
+  return { kind: 'practise', sectionId: open[0].id, text: `Practise ${open[0].name}` };
+};

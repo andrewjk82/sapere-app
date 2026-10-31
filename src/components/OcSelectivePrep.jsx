@@ -1,57 +1,136 @@
 import { useEffect, useMemo, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import { Target, Clock, ChevronRight, Lock, Play, TrendingDown, Trophy } from 'lucide-react';
+import { Clock, Lock, Play, TrendingDown } from 'lucide-react';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { getTopicQuestions } from '../services/contentLoader';
 import { useAuth } from '../context/AuthContext';
 import { loadTestState } from '../utils/scholarshipTest';
 import {
-  MOCK_FORMATS, HUB_PAGES, hubExamsFor, mockSizeFor, mockStorageId, mockSummary, summariseAttempts, rankGroups,
+  MOCK_FORMATS, HUB_PAGES, hubExamsFor, mockSizeFor, mockStorageId, mockSummary, summariseAttempts, rankGroups, pickNextStep,
 } from '../utils/examHub';
+import { nextSitting, formatDay, ddayLabel, PLACEMENT_SOURCE_URL, PLACEMENT_DATES_CHECKED } from '../utils/examDates';
 import ScholarshipTest from './ScholarshipTest';
+import './OcSelectivePrep.css';
 
-const C = { ink: '#1e1b4b', muted: '#64748b', faint: '#94a3b8', line: '#e2e8f0', violet: '#7c3aed', soft: '#f5f3ff', green: '#059669', amber: '#d97706', red: '#e11d48' };
-const card = { background: '#fff', border: `1px solid ${C.line}`, borderRadius: 20, padding: 18, boxShadow: '0 4px 14px rgba(15,23,42,0.04)' };
 const pct = (x) => `${Math.round(x * 100)}%`;
 const titleCase = (s) => s.replace(/\b\w/g, (c) => c.toUpperCase());
+const dayRange = (a, b) => (a === b ? formatDay(a, { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' }) : `${formatDay(a, { weekday: 'short', day: 'numeric' })} – ${formatDay(b, { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' })}`);
 
-/** One horizontal bar: accuracy for a category / difficulty. */
-const Bar = ({ row }) => {
-  const color = !row.judged ? C.faint : row.weak ? C.red : row.pct >= 0.8 ? C.green : C.amber;
+/**
+ * The hero. For OC / Selective it counts down to the student's own sitting (their school year decides which one),
+ * with a runway drawn to scale: today on the left, then the application window, test day and the make-up.
+ * Scholarship (ACER) has no fixed date — schools set their own — so it shows progress instead.
+ */
+const Hero = ({ pageLabel, sitting, yearNum, progress }) => {
+  if (!sitting) {
+    return (
+      <section className="xh-hero" aria-label={`${pageLabel} progress`}>
+        <div className="xh-hero__eyebrow">{pageLabel}</div>
+        <div className="xh-hero__main">
+          <div className="xh-hero__big">{progress.done}<span style={{ fontSize: '0.4em', opacity: 0.7 }}> / {progress.total}</span></div>
+          <div className="xh-hero__what"><div className="xh-hero__title">questions done</div></div>
+        </div>
+        <p className="xh-hero__note">Scholarship test dates depend on the school you apply to, so there is no countdown here. Keep the practice going.</p>
+      </section>
+    );
+  }
+  const { status, test } = sitting;
+  const eyebrow = yearNum ? `Year ${yearNum} · ${test.short}` : test.short;
+
+  if (status === 'upcoming') {
+    const { sitting: d, daysLeft, milestones, testYear } = sitting;
+    const span = Math.max(1, ...milestones.map((m) => m.daysLeft));
+    const at = (days) => `${Math.min(100, Math.max(0, (days / span) * 100))}%`;
+    const open = milestones.find((m) => m.key === 'applyOpen');
+    const close = milestones.find((m) => m.key === 'applyClose');
+    return (
+      <section className="xh-hero" aria-label={`${test.short} countdown`}>
+        <div className="xh-hero__eyebrow">{eyebrow}</div>
+        <div className="xh-hero__main">
+          <div className="xh-hero__big">{daysLeft === 0 ? 'Today' : ddayLabel(daysLeft)}</div>
+          <div className="xh-hero__what">
+            <div className="xh-hero__title">{test.name}</div>
+            <div className="xh-hero__date">{dayRange(d.start, d.end)}</div>
+          </div>
+        </div>
+        <p className="xh-hero__note">
+          {yearNum ? `Year ${yearNum} students sit ${test.short} in Year ${test.testYearLevel}` : `${test.short} is sat in Year ${test.testYearLevel}`}
+          {testYear ? ` — that is ${testYear} for you.` : '.'}
+        </p>
+
+        <div className="xh-runway" role="img" aria-label="Timeline from today to the make-up test">
+          <div className="xh-runway__track" />
+          {close && <div className="xh-runway__apply" style={{ left: open ? at(open.daysLeft) : '0%', width: `calc(${at(close.daysLeft)} - ${open ? at(open.daysLeft) : '0%'})` }} />}
+          {milestones.map((m) => (
+            <span key={m.key} className={`xh-runway__dot${m.key === 'test' ? ' xh-runway__dot--test' : m.key === 'makeup' ? ' xh-runway__dot--hollow' : ''}`} style={{ left: at(m.daysLeft) }} />
+          ))}
+          <span className="xh-runway__today">TODAY</span>
+        </div>
+
+        <div className="xh-miles">
+          {milestones.map((m) => (
+            <div key={m.key} className={`xh-mile${m.key === 'test' ? ' xh-mile--test' : ''}`}>
+              <div className="xh-mile__label">{m.label}</div>
+              <div className="xh-mile__days">{m.daysLeft === 0 ? 'Today' : ddayLabel(m.daysLeft)}</div>
+              <div className="xh-mile__date">{m.endDate ? dayRange(m.date, m.endDate) : formatDay(m.date)}</div>
+            </div>
+          ))}
+        </div>
+        <div className="xh-hero__src">
+          Dates from the <a href={PLACEMENT_SOURCE_URL} target="_blank" rel="noreferrer">NSW Department of Education</a>, checked {formatDay(PLACEMENT_DATES_CHECKED)}. They can change.
+        </div>
+      </section>
+    );
+  }
+
+  const copy = (() => {
+    if (status === 'unannounced') {
+      return {
+        big: `May ${sitting.testYear}`,
+        title: 'Date not announced yet',
+        note: `Year ${yearNum} students sit ${test.short} in Year ${test.testYearLevel}, in ${sitting.testYear}. The Department publishes test dates about a year ahead; the countdown appears here once they do. It is usually in May.`,
+      };
+    }
+    if (status === 'passed') {
+      return {
+        big: 'Done',
+        title: `This year's ${test.short} test is over`,
+        note: sitting.milestones?.length ? `The make-up test is ${ddayLabel(sitting.milestones[0].daysLeft)} (${formatDay(sitting.milestones[0].date)}).` : 'The next sitting is next year, for the following group.',
+      };
+    }
+    if (status === 'notApplicable') {
+      return { big: 'Past', title: `${test.short} is sat in Year ${test.testYearLevel}`, note: `You are in Year ${yearNum}, past that year. You can still use these questions for practice.` };
+    }
+    return { big: 'Year?', title: 'School year not set', note: 'Ask your teacher to add your school year, and your test date will appear here.' };
+  })();
+  const { big, title, note } = copy;
   return (
-    <div style={{ marginBottom: 10 }}>
-      <div style={{ display: 'flex', alignItems: 'baseline', gap: 8, marginBottom: 4 }}>
-        <span style={{ fontWeight: 800, color: C.ink, fontSize: '0.88rem' }}>{titleCase(row.name)}</span>
-        {row.weak && <span style={{ fontSize: '0.68rem', fontWeight: 900, color: C.red, background: '#fff1f2', borderRadius: 99, padding: '2px 8px' }}>NEEDS WORK</span>}
-        <span style={{ marginLeft: 'auto', fontWeight: 800, color: C.muted, fontSize: '0.8rem', fontVariantNumeric: 'tabular-nums' }}>
-          {row.judged ? pct(row.pct) : 'not enough yet'} · {row.marks}/{row.total}
-        </span>
+    <section className="xh-hero" aria-label={`${test.short} test date`}>
+      <div className="xh-hero__eyebrow">{eyebrow}</div>
+      <div className="xh-hero__main">
+        <div className="xh-hero__big xh-hero__big--text">{big}</div>
+        <div className="xh-hero__what"><div className="xh-hero__title">{title}</div></div>
       </div>
-      <div style={{ height: 8, borderRadius: 99, background: '#f1f5f9', overflow: 'hidden' }}>
-        <div style={{ width: `${Math.round(row.pct * 100)}%`, height: '100%', background: color, opacity: row.judged ? 1 : 0.45 }} />
-      </div>
-    </div>
+      {note && <p className="xh-hero__note">{note}</p>}
+    </section>
   );
 };
 
 /**
- * OC / Selective / Scholarship(ACER), one page each: full-length mock exams (real question count and time limit) plus a weak-spot summary built from
- * every test of this exam the student has taken on this device. Each page is shown only to students whose teacher switched
- * on Scholarship with that exam ticked (utils/examHub.hubExamsFor). Topic-by-topic practice (10 questions, 12
- * minutes) is on the same page.
+ * One page per exam (OC / Selective / Scholarship). Top to bottom: the countdown, three numbers, the one thing to do
+ * next, the test sections (mock + practice on the same row), and where the student loses marks. Shown only to
+ * students whose teacher switched on Scholarship with that exam ticked (utils/examHub.hubExamsFor).
  */
 const OcSelectivePrep = ({ examId, profile }) => {
   const { user } = useAuth();
   const uid = user?.uid || 'anon';
-  // One page per exam. A student only gets the pages for the exams the teacher ticked.
   const allowed = useMemo(() => hubExamsFor(profile).includes(examId), [profile, examId]);
   const active = useMemo(() => (allowed ? (CURRICULUM_DATA.Scholarship || []).find((e) => e.id === examId) : null), [allowed, examId]);
-  // { examId, bank: { [topicId]: question[] } | null, failed } — only trusted while examId is the active exam,
-  // so switching exams shows "Loading…" without resetting state inside the effect.
+  // { examId, bank: { [topicId]: question[] } | null, failed } — trusted only while examId is the active exam.
   const [loaded, setLoaded] = useState({ examId: null, bank: null, failed: false });
   const bank = loaded.examId === active?.id ? loaded.bank : null;
   const failed = loaded.examId === active?.id && loaded.failed;
-  const [running, setRunning] = useState(null);  // { exam, topic, size?, seconds?, mock } — mock runs keep their own history
+  const [running, setRunning] = useState(null);  // { exam, topic, size?, seconds?, mock }
   const [, setTick] = useState(0);
 
   useEffect(() => {
@@ -88,106 +167,138 @@ const OcSelectivePrep = ({ examId, profile }) => {
   }
 
   if (!active) {
-    return <div style={{ maxWidth: 760, margin: '0 auto', padding: 24, ...card, color: C.muted, fontWeight: 700 }}>This page has not been switched on for you yet. Ask your teacher.</div>;
+    return <div className="xh"><div className="xh-card xh-empty">This page has not been switched on for you yet. Ask your teacher.</div></div>;
   }
 
-  const sections = (active.topics || []).filter((t) => MOCK_FORMATS[t.id]);
-  const insight = (topic) => {
-    const byId = new Map((bank?.[topic.id] || []).map((q) => [String(q.id), q]));
-    return summariseAttempts([loadTestState(uid, active.id, topic.id), loadTestState(uid, mockStorageId(active.id), topic.id)], byId);
+  const pageLabel = HUB_PAGES[active.id]?.label || active.title;
+  const sitting = nextSitting(active.id, profile);
+  const yearNum = sitting?.year ?? null;
+
+  const open = (topic, mock) => {
+    const fmt = MOCK_FORMATS[topic.id];
+    const qs = bank?.[topic.id] || [];
+    setRunning({
+      exam: active,
+      topic: { id: topic.id, title: topic.title, code: topic.code || '' },
+      mock,
+      ...(mock ? { size: mockSizeFor(qs, fmt.marks), seconds: fmt.minutes * 60 } : {}),
+    });
   };
 
+  // Everything below is read from this device's test history (see utils/scholarshipTest).
+  const sections = (active.topics || []).map((topic) => {
+    const qs = bank?.[topic.id];
+    const fmt = MOCK_FORMATS[topic.id];
+    const ids = new Set((qs || []).map((q) => String(q.id)));
+    const practice = loadTestState(uid, active.id, topic.id);
+    const mockState = loadTestState(uid, mockStorageId(active.id), topic.id);
+    const done = new Set([...practice.done, ...mockState.done].map(String).filter((id) => ids.has(id))).size;
+    const byId = new Map((qs || []).map((q) => [String(q.id), q]));
+    const insight = summariseAttempts([practice, mockState], byId);
+    const sum = mockSummary(uid, active.id, topic.id);
+    return {
+      topic, fmt, qs, done, insight, sum,
+      name: fmt?.name || topic.title,
+      total: qs ? qs.length : 0,
+      empty: !!qs && qs.length === 0,
+      size: qs && fmt ? mockSizeFor(qs, fmt.marks) : 0,
+    };
+  });
+  const ready = !!bank;
+  const totals = sections.reduce((a, s) => ({
+    done: a.done + s.done, total: a.total + s.total, marks: a.marks + s.insight.marks, answered: a.answered + s.insight.total, mocks: a.mocks + s.sum.count,
+  }), { done: 0, total: 0, marks: 0, answered: 0, mocks: 0 });
+
+  // Weak spots across all sections, weakest first.
+  const weakRows = sections.flatMap((s) => {
+    const groups = s.insight.byCategory && Object.keys(s.insight.byCategory).length ? s.insight.byCategory : s.insight.byDifficulty;
+    return rankGroups(groups || {}).filter((g) => g.judged).map((g) => ({ ...g, section: s.topic.id, sectionName: s.name }));
+  }).sort((a, b) => a.pct - b.pct);
+  const next = ready ? pickNextStep(
+    sections.map((s) => ({ id: s.topic.id, name: s.name, mockable: !!s.fmt && !s.empty, empty: s.empty, mockCount: s.sum.count })),
+    weakRows,
+  ) : null;
+  const nextSection = next && sections.find((s) => s.topic.id === next.sectionId);
+
   return (
-    <div style={{ maxWidth: 760, margin: '0 auto', padding: '8px 4px 40px' }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 6 }}>
-        <div style={{ width: 44, height: 44, borderRadius: 14, background: 'linear-gradient(135deg, #a78bfa, #7c3aed)', display: 'grid', placeItems: 'center', color: '#fff' }}><Target size={22} /></div>
-        <h2 style={{ margin: 0, fontSize: '1.5rem', fontWeight: 900, color: C.ink, fontFamily: 'var(--font-heading)' }}>{HUB_PAGES[active.id]?.label || active.title}</h2>
-      </div>
-      <p style={{ margin: '0 0 18px', color: C.muted, fontWeight: 600, fontSize: '0.92rem' }}>
-        {HUB_PAGES[active.id]?.blurb} {sections.length > 0 ? 'Sit a full-length mock under the real time limit, practise a topic, then see what to work on next.' : 'Practise a topic, then see what to work on next.'}
-      </p>
+    <div className="xh">
+      <Hero pageLabel={pageLabel} sitting={sitting} yearNum={yearNum} progress={totals} />
 
-      {sections.length > 0 && <h3 style={{ fontSize: '1rem', fontWeight: 900, color: C.ink, margin: '0 0 8px' }}>Mock exams</h3>}
-      {failed && <div style={{ ...card, color: C.red, fontWeight: 700 }}>Could not load the questions. Check your connection and try again.</div>}
-      {sections.map((topic) => {
-        const fmt = MOCK_FORMATS[topic.id];
-        const qs = bank?.[topic.id];
-        const empty = qs && qs.length === 0;
-        const size = qs ? mockSizeFor(qs, fmt.marks) : 0;
-        const sum = mockSummary(uid, active.id, topic.id);
-        return (
-          <button
-            key={topic.id}
-            type="button"
-            disabled={!qs || empty}
-            onClick={() => setRunning({ exam: active, topic: { id: topic.id, title: topic.title, code: topic.code || '' }, size, seconds: fmt.minutes * 60, mock: true })}
-            style={{ ...card, display: 'flex', alignItems: 'center', gap: 14, width: '100%', textAlign: 'left', marginBottom: 10, cursor: !qs || empty ? 'default' : 'pointer', opacity: empty ? 0.6 : 1 }}
-          >
-            <div style={{ flex: 1, minWidth: 0 }}>
-              <div style={{ fontWeight: 900, color: C.ink, fontSize: '1.02rem' }}>{fmt.name}</div>
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px 14px', marginTop: 4, fontSize: '0.78rem', fontWeight: 700, color: C.faint }}>
-                <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}><Clock size={13} /> {fmt.minutes} min</span>
-                <span>{!qs ? 'Loading…' : empty ? 'Coming soon' : `${size} question${size === 1 ? '' : 's'}`}</span>
-                {sum.count > 0 && <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}><Trophy size={13} /> best {pct(sum.best)} · last {pct(sum.last)} · {sum.count} taken</span>}
-                {sum.inProgress && <span style={{ color: C.violet }}>In progress — resume</span>}
-              </div>
-            </div>
-            {empty ? <Lock size={16} color="#cbd5e1" /> : qs && (sum.inProgress ? <Play size={18} color="#a78bfa" /> : <ChevronRight size={18} color="#a78bfa" />)}
-          </button>
-        );
-      })}
-
-      <h3 style={{ fontSize: '1rem', fontWeight: 900, color: C.ink, margin: sections.length > 0 ? '22px 0 8px' : '0 0 8px' }}>Practise by topic</h3>
-      <div style={{ ...card, padding: '6px 18px' }}>
-        {(active.topics || []).map((topic, i) => {
-          const count = bank ? (bank[topic.id]?.length ?? 0) : null;
-          const empty = count === 0;
-          const test = loadTestState(uid, active.id, topic.id);
-          const done = test ? Math.min(test.done.length, count || 0) : 0;
-          const last = test?.attempts?.[test.attempts.length - 1];
-          return (
-            <button
-              key={topic.id}
-              type="button"
-              disabled={empty || count === null}
-              onClick={() => setRunning({ exam: active, topic: { id: topic.id, title: topic.title, code: topic.code || '' }, mock: false })}
-              style={{ display: 'flex', alignItems: 'center', gap: 12, width: '100%', textAlign: 'left', border: 0, background: 'transparent', padding: '14px 0', borderTop: i === 0 ? 0 : '1px solid #f1f5f9', cursor: empty || count === null ? 'default' : 'pointer', opacity: empty ? 0.55 : 1 }}
-            >
-              <div style={{ flex: 1, minWidth: 0 }}>
-                <div style={{ fontWeight: 800, color: C.ink, fontSize: '0.98rem' }}>{topic.title}</div>
-                <div style={{ fontSize: '0.76rem', fontWeight: 700, color: C.faint, marginTop: 2 }}>
-                  {count === null ? 'Loading…' : empty ? 'Coming soon' : `${count} question${count === 1 ? '' : 's'}${done > 0 ? ` · ${done} done` : ''}${(test?.round || 1) > 1 ? ` · Round ${test.round}` : ''}${last ? ` · last ${last.marks}/${last.total}` : ''}`}
-                </div>
-              </div>
-              {empty ? <Lock size={16} color="#cbd5e1" /> : count !== null && <ChevronRight size={18} color="#a78bfa" />}
-            </button>
-          );
-        })}
-      </div>
-
-      <h3 style={{ fontSize: '1rem', fontWeight: 900, color: C.ink, margin: '22px 0 8px', display: 'flex', alignItems: 'center', gap: 8 }}>
-        <TrendingDown size={17} color={C.violet} /> Where to improve
-      </h3>
-      {!bank && !failed && <div style={{ ...card, color: C.muted, fontWeight: 700 }}>Loading…</div>}
-      {bank && (active.topics || []).filter((t) => (bank[t.id] || []).length > 0).map((topic) => {
-        const s = insight(topic);
-        const cats = rankGroups(s.byCategory);
-        const diffs = rankGroups(s.byDifficulty);
-        const rows = cats.length ? cats : diffs;
-        return (
-          <div key={topic.id} style={{ ...card, marginBottom: 12 }}>
-            <div style={{ display: 'flex', alignItems: 'baseline', gap: 8, marginBottom: 12 }}>
-              <span style={{ fontWeight: 900, color: C.ink }}>{MOCK_FORMATS[topic.id]?.name || topic.title}</span>
-              {s.total > 0 && <span style={{ marginLeft: 'auto', fontWeight: 800, color: C.muted, fontSize: '0.8rem' }}>{pct(s.marks / s.total)} over {s.total} marks</span>}
-            </div>
-            {s.total === 0
-              ? <div style={{ color: C.faint, fontWeight: 700, fontSize: '0.88rem' }}>Take a mock or a topic test to see your strengths and weak spots here.</div>
-              : rows.length > 0 ? rows.map((r) => <Bar key={r.name} row={r} />) : <div style={{ color: C.faint, fontWeight: 700, fontSize: '0.88rem' }}>These questions are not grouped by type yet, so there is no breakdown — keep practising.</div>}
-            {s.total > 0 && rows.length > 0 && !cats.length && <div style={{ color: C.faint, fontWeight: 600, fontSize: '0.78rem' }}>Shown by difficulty — these questions are not grouped by type.</div>}
+      {ready && (
+        <>
+          <div className="xh-stats">
+            <div className="xh-stat"><div className="xh-stat__num">{totals.done}<small> / {totals.total}</small></div><div className="xh-stat__label">Questions done</div></div>
+            <div className="xh-stat"><div className="xh-stat__num">{totals.answered ? pct(totals.marks / totals.answered) : '–'}</div><div className="xh-stat__label">Recent accuracy</div></div>
+            <div className="xh-stat"><div className="xh-stat__num">{totals.mocks}</div><div className="xh-stat__label">Mock exams taken</div></div>
           </div>
-        );
-      })}
 
+          {next && nextSection && (
+            <div className="xh-next">
+              <div className="xh-next__text">
+                <div className="xh-next__eyebrow">Do this next</div>
+                <div className="xh-next__line">{next.text}</div>
+              </div>
+              <button type="button" className="xh-btn xh-btn--primary" onClick={() => open(nextSection.topic, next.kind === 'mock')}>
+                <Play size={15} /> {next.kind === 'mock' ? 'Start mock exam' : 'Practise now'}
+              </button>
+            </div>
+          )}
+        </>
+      )}
+
+      <h3 className="xh-h">Test sections</h3>
+      {failed && <div className="xh-card xh-empty" style={{ color: '#e11d48' }}>Could not load the questions. Check your connection and try again.</div>}
+      {!bank && !failed && <div className="xh-card xh-empty">Loading…</div>}
+      {bank && (
+        <div className="xh-rows">
+          {sections.map((s) => (
+            <div key={s.topic.id} className="xh-row">
+              <div style={{ minWidth: 0 }}>
+                <div className="xh-row__name">{s.name}</div>
+                <div className="xh-row__meta">
+                  {s.fmt && <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}><Clock size={12} /> {s.fmt.minutes} min mock</span>}
+                  {!s.empty && <span>{s.done} of {s.total} done</span>}
+                  {s.sum.count > 0 && <span>best <b>{pct(s.sum.best)}</b> · last <b>{pct(s.sum.last)}</b></span>}
+                  {s.sum.inProgress && <b>mock in progress</b>}
+                </div>
+                {!s.empty && <div className="xh-bar" aria-hidden="true"><i style={{ width: `${Math.round((s.done / Math.max(1, s.total)) * 100)}%` }} /></div>}
+              </div>
+              {s.empty
+                ? <span className="xh-soon"><Lock size={14} /> Coming soon</span>
+                : (
+                  <div className="xh-row__actions">
+                    {s.fmt && <button type="button" className="xh-btn xh-btn--primary" onClick={() => open(s.topic, true)}>{s.sum.inProgress ? 'Resume mock' : 'Mock exam'}</button>}
+                    <button type="button" className="xh-btn" onClick={() => open(s.topic, false)}>Practise</button>
+                  </div>
+                )}
+            </div>
+          ))}
+        </div>
+      )}
+
+      {ready && (
+        <>
+          <h3 className="xh-h"><TrendingDown size={17} color="#7c3aed" /> Where to improve</h3>
+          <div className="xh-card">
+            {weakRows.length === 0
+              ? <div className="xh-empty">{totals.answered === 0 ? 'Finish a mock or a practice test and your weakest question types show up here.' : 'Not enough answers in any one question type yet. A few more tests and the weak spots show up here.'}</div>
+              : weakRows.slice(0, 5).map((r) => {
+                const color = r.weak ? '#e11d48' : r.pct >= 0.8 ? '#059669' : '#d97706';
+                return (
+                  <div key={`${r.section}:${r.name}`} className="xh-weak">
+                    <div className="xh-weak__top">
+                      <span className="xh-weak__name">{titleCase(r.name)}</span>
+                      <span className="xh-weak__sec">{r.sectionName}</span>
+                      {r.weak && <span className="xh-tag">NEEDS WORK</span>}
+                      <span className="xh-weak__pct">{pct(r.pct)} · {r.marks}/{r.total}</span>
+                    </div>
+                    <div className="xh-meter"><i style={{ width: `${Math.round(r.pct * 100)}%`, background: color }} /></div>
+                  </div>
+                );
+              })}
+          </div>
+        </>
+      )}
     </div>
   );
 };

@@ -2,7 +2,7 @@
 import assert from 'node:assert';
 import {
   hubExamsFor, examIdForTab, HUB_PAGES, mockSizeFor, summariseAttempts, rankGroups,
-  MIN_MARKS_TO_JUDGE, RECENT_ATTEMPTS, MOCK_FORMATS,
+  MIN_MARKS_TO_JUDGE, RECENT_ATTEMPTS, MOCK_FORMATS, pickNextStep,
 } from '../src/utils/examHub.js';
 
 let passed = 0;
@@ -83,6 +83,25 @@ test('only the most recent attempts count, so a fixed weak spot stops showing', 
 test('answers for questions no longer in the bank are ignored', () => {
   const s = summariseAttempts([{ attempts: [{ questionIds: ['gone'], answers: { gone: 0 } }] }], new Map());
   assert.equal(s.total, 0);
+});
+
+test('next step: first mock, then the weakest type, then another mock, then practice', () => {
+  const secs = [
+    { id: 'maths', name: 'Mathematical Reasoning', mockable: true, empty: false, mockCount: 0 },
+    { id: 'think', name: 'Thinking Skills', mockable: true, empty: false, mockCount: 2 },
+    { id: 'read', name: 'Reading', mockable: true, empty: true, mockCount: 0 },
+  ];
+  assert.deepEqual(pickNextStep(secs, []), { kind: 'mock', sectionId: 'maths', text: 'Take your first Mathematical Reasoning mock exam' });
+  const done = secs.map((s) => ({ ...s, mockCount: s.id === 'maths' ? 1 : 2 }));
+  const weak = [{ section: 'think', name: 'Analogies', pct: 0.4, weak: true }, { section: 'maths', name: 'Fractions', pct: 0.5, weak: true }];
+  assert.deepEqual(pickNextStep(done, weak), { kind: 'practise', sectionId: 'think', text: 'Practise Analogies — you scored 40%' });
+  assert.equal(pickNextStep(done, []).sectionId, 'maths');               // the section with the fewest mocks
+  assert.equal(pickNextStep(done, []).kind, 'mock');
+  const practiceOnly = [{ id: 'a', name: 'ACER Maths', mockable: false, empty: false, mockCount: 0 }];
+  assert.deepEqual(pickNextStep(practiceOnly, []), { kind: 'practise', sectionId: 'a', text: 'Practise ACER Maths' });
+  assert.equal(pickNextStep([{ ...secs[0], empty: true }], []), null);   // nothing in the bank yet
+  // a weak spot in a section that is empty is ignored
+  assert.equal(pickNextStep(done, [{ section: 'read', name: 'X', pct: 0.1, weak: true }]).kind, 'mock');
 });
 
 console.log(`\nexam hub: ${passed} passed`);
