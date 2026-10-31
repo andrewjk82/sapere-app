@@ -1,6 +1,6 @@
 /** OC / Selective sitting dates from a student's school year. Run via npm run test:homework. */
 import assert from 'node:assert';
-import { nextSitting, yearNumberOf, daysUntil, ddayLabel, PLACEMENT_TESTS } from '../src/utils/examDates.js';
+import { nextSitting, scholarshipSitting, yearNumberOf, daysUntil, ddayLabel, PLACEMENT_TESTS } from '../src/utils/examDates.js';
 
 let passed = 0;
 const test = (name, fn) => { fn(); passed += 1; console.log(`  ✓ ${name}`); };
@@ -76,6 +76,18 @@ test('a Year 4 student in late 2026 has already been through this year\'s OC tes
   assert.equal(nextSitting('sch-selective', { year: 'Year 6' }, on('2026-10-31')).status, 'passed');
   // before May of a year we hold no dates for, it is simply not announced yet
   assert.equal(nextSitting('sch-oc', { year: 'Year 4' }, on('2028-02-10')).status, 'unannounced');
+});
+
+test('Scholarship (ACER) uses the date the teacher typed, with the school as its name', () => {
+  const s = scholarshipSitting({ scholarshipTestDate: '2027-03-06', scholarshipTestLabel: ' Sydney Grammar ' }, on('2026-10-31'));
+  assert.equal(s.status, 'upcoming');
+  assert.equal(s.test.name, 'Sydney Grammar');
+  assert.equal(s.daysLeft, daysUntil('2027-03-06', on('2026-10-31')));
+  assert.deepEqual(s.milestones.map((m) => m.key), ['test']);
+  assert.equal(scholarshipSitting({ scholarshipTestDate: '2027-03-06' }, on('2026-10-31')).test.name, 'Scholarship test');
+  assert.equal(scholarshipSitting({ scholarshipTestDate: '2027-03-06' }, on('2027-03-06')).daysLeft, 0);
+  assert.equal(scholarshipSitting({ scholarshipTestDate: '2027-03-06' }, on('2027-03-07')).status, 'passed');
+  ['', undefined, 'soon', '2027-13-45', '06/03/2027'].forEach((v) => assert.equal(scholarshipSitting({ scholarshipTestDate: v }, on('2026-10-31')).status, 'noDate', String(v)));
 });
 
 test('labels', () => {

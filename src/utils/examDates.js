@@ -102,3 +102,18 @@ export const formatDay = (iso, opts = { day: 'numeric', month: 'short', year: 'n
 
 /** "D-193", "D-Day", or "D+3" for a day count. */
 export const ddayLabel = (days) => (days === 0 ? 'D-Day' : days > 0 ? `D-${days}` : `D+${Math.abs(days)}`);
+
+/**
+ * Scholarship (ACER) tests are set by each school, so there is no published date: the teacher types the student's
+ * date (and optionally the school) on the student's page — `scholarshipTestDate` 'YYYY-MM-DD', `scholarshipTestLabel`.
+ * Same shape as nextSitting so the page treats both alike; status 'noDate' when nothing is set.
+ */
+export const scholarshipSitting = (profile, now = new Date()) => {
+  const date = String(profile?.scholarshipTestDate || '').trim();
+  const test = { name: String(profile?.scholarshipTestLabel || '').trim() || 'Scholarship test', short: 'Scholarship' };
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || Number.isNaN(Date.parse(`${date}T00:00:00`))) return { status: 'noDate', test };
+  const daysLeft = daysUntil(date, now);
+  const step = { key: 'test', label: 'Test day', date, daysLeft };
+  if (daysLeft < 0) return { status: 'passed', test, sitting: { start: date, end: date }, milestones: [] };
+  return { status: 'upcoming', test, sitting: { start: date, end: date }, daysLeft, milestones: [step] };
+};
