@@ -15395,15 +15395,14 @@
           "hint": "Draw a quick map: put D at the bottom, C above it, B above C. Then place E, F and A.",
           "steps": [
             {
-              "explain": "Start with the towns in a straight line: D, then C to its north, then B to the north of C.",
-              "work": "<p>B, C and D are in a north–south line, so B is directly north of D (not northwest).</p>"
+              "explain": "B is north of C, and C is north of D, so B is directly north of D — not northwest."
             },
             {
-              "explain": "E is east of C and F is east of E, so both are to the east (northeast) of D."
+              "explain": "B is northeast of A, so A is further west than B — and therefore further west than D."
             },
             {
-              "explain": "B is northeast of A, so A is southwest of B — to the west of the B–C–D line and north of D.",
-              "work": "<p>Answer: <strong>Town A</strong></p>"
+              "explain": "E is east of C and F is east of E, so both E and F are further east than D. They cannot be northwest of D.",
+              "work": "<p>The only town that can be northwest of D is <strong>Town A</strong>.</p>"
             }
           ],
           "keyPoints": [
@@ -15595,18 +15594,18 @@
             "D"
           ],
           "answer": 3,
-          "hint": "Start with the biggest room — the long room at the front. Notice its back wall has a step. Then look at the two rooms stacked behind its narrow end.",
+          "hint": "Count the separate rooms in the view. Then look for the two rectangular rooms that sit right next to each other — which plan shows them that way?",
           "steps": [
             {
-              "explain": "The long room at the front is the largest room. Its back wall has a step, so one end of it is narrower. A has no step in its long room, so A ✘."
+              "explain": "Look at the view and count the closed rooms (ignore the open corridor space with doorways).",
+              "work": "<p>There are four separate rooms.</p>"
             },
             {
-              "explain": "Behind the narrow end of the long room there is a gap, then two rooms one behind the other, with the back one bigger and shifted further out. B has only three spaces and no pair of stacked rooms, and C has no pair of stacked rooms either.",
-              "work": "<p>B ✘, C ✘</p>"
+              "explain": "The easiest rooms to spot are the two rectangular rooms at the back that sit right next to each other, sharing a wall."
             },
             {
-              "explain": "D (turned upside-down) shows the stepped long room, the corridor with arms behind its wider end, and the small room with the larger room beyond it.",
-              "work": "<p>Answer: <strong>D</strong></p>"
+              "explain": "Check each plan for those two rectangular rooms shown side by side.",
+              "work": "<p>A, B and C do not show two adjacent rectangular rooms like this. D does (the small square room joined to the larger rectangular room).</p><p>Answer: <strong>D</strong></p>"
             }
           ],
           "timeLimit": 120,
