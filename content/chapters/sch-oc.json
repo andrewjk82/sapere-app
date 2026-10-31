@@ -13934,20 +13934,20 @@
           "hint": "Each box has marks in the top row and marks in the bottom row. Count the straight lines and the slanted lines in each row. Do the numbers follow a pattern?",
           "steps": [
             {
-              "explain": "Count the marks in each box. The top row of each box has a bundle of 3 straight lines with a bar through it, then some single straight lines, then slanted lines like “//”. The bottom row has slanted lines like “\\\\” and then single straight lines.",
-              "work": "<p>Box 1: top: 3 bundled + 0 straight + 2 slanted /; bottom: 2 slanted \\ + 3 straight.</p><p>Box 2: top: 3 bundled + 1 straight + 3 slanted /; bottom: 3 slanted \\ + 4 straight.</p><p>Box 3: top: 3 bundled + 2 straight + 4 slanted /; bottom: 4 slanted \\ + 5 straight.</p>"
+              "explain": "Count the marks in each box. The top row of each box has a bundle of 3 straight lines with a bar through it, then some single straight lines, then slanted lines leaning right. The bottom row has slanted lines leaning left and then single straight lines.",
+              "work": "<p>Box 1: top: 3 bundled + 0 straight + 2 slanted \\(/\\); bottom: 2 slanted \\(\\backslash\\) + 3 straight.</p><p>Box 2: top: 3 bundled + 1 straight + 3 slanted \\(/\\); bottom: 3 slanted \\(\\backslash\\) + 4 straight.</p><p>Box 3: top: 3 bundled + 2 straight + 4 slanted \\(/\\); bottom: 4 slanted \\(\\backslash\\) + 5 straight.</p>"
             },
             {
               "explain": "Find the patterns in the numbers.",
-              "work": "<p>Slanted “/” (top): 2, 3, 4 → go up by 1.</p><p>Straight lines (top, after the bundle): 0, 1, 2 → go up by 1.</p><p>Slanted “\\” (bottom): 2, 3, 4 → go up by 1.</p><p>Straight lines (bottom): 3, 4, 5 → go up by 1.</p>"
+              "work": "<p>Slanted \\(/\\) (top): 2, 3, 4 → go up by 1.</p><p>Straight lines (top, after the bundle): 0, 1, 2 → go up by 1.</p><p>Slanted \\(\\backslash\\) (bottom): 2, 3, 4 → go up by 1.</p><p>Straight lines (bottom): 3, 4, 5 → go up by 1.</p>"
             },
             {
               "explain": "Add one more of each to find box 4.",
-              "work": "<p>Slanted “/” (top): 5.</p><p>Straight lines (top, after the bundle): 3.</p><p>Slanted “\\” (bottom): 5.</p><p>Straight lines (bottom): 6.</p>"
+              "work": "<p>Slanted \\(/\\) (top): 5.</p><p>Straight lines (top, after the bundle): 3.</p><p>Slanted \\(\\backslash\\) (bottom): 5.</p><p>Straight lines (bottom): 6.</p>"
             },
             {
               "explain": "Find the option with these numbers.",
-              "work": "<p>D has the bundle of 3, then 3 straight lines, then 5 slanted “/” on the top row, and 5 slanted “\\” and 6 straight lines on the bottom row. ✓ The answer is D.</p>"
+              "work": "<p>D has the bundle of 3, then 3 straight lines, then 5 slanted \\(/\\) on the top row, and 5 slanted \\(\\backslash\\) and 6 straight lines on the bottom row. ✓ The answer is D.</p>"
             }
           ],
           "keyPoints": [
