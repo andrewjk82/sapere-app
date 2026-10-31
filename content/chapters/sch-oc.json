@@ -963,7 +963,7 @@
           "difficulty": "medium",
           "stem": "In a special code each letter stands for another letter. A phrase is written in this code.\n\nYLTRVHZIVXIVZGFIVH\n\nUse the chart below to find the correct phrase.\n\nWhat is the message that was written in code?",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 704 308\" width=\"80%\" height=\"auto\"><image href=\"/oc/t1-q19.jpg\" x=\"0\" y=\"0\" width=\"704\" height=\"308\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 634 289\" width=\"95%\" height=\"auto\"><image href=\"/oc/t1-q19.jpg\" x=\"0\" y=\"0\" width=\"634\" height=\"289\"/></svg>"
           },
           "options": [
             "Bogs and marshes",
@@ -3981,7 +3981,7 @@
           "difficulty": "medium",
           "stem": "Here is a square in which the letters are coded from 1 to 36. What would be the correct code for this phrase?\n\n\\(\\text{I} \\text{ / } \\text{DO} \\text{ / } \\text{NOT} \\text{ / } \\text{WISH} \\text{ / } \\text{TO} \\text{ / } \\text{INTERRUPT}\\)",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 517 528\" width=\"55%\" height=\"auto\"><image href=\"/oc/t5-q4.jpg\" x=\"0\" y=\"0\" width=\"517\" height=\"528\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 430 372\" width=\"70%\" height=\"auto\"><image href=\"/oc/t5-q4.jpg\" x=\"0\" y=\"0\" width=\"430\" height=\"372\"/></svg>"
           },
           "options": [
             "\\(\\text{9} \\text{ / } \\text{4 15} \\text{ / } \\text{14 15 21} \\text{ / } \\text{23 9 19 8} \\text{ / } \\text{21 15} \\text{ / } \\text{9 14 21 5 18 18 21 16 21}\\)",
@@ -6109,7 +6109,7 @@
           "difficulty": "hard",
           "stem": "Here is a phrase written in a secret code. Each number can stand for more than one letter. To help you, part of the phrase has been decoded.\n\n5 6 3 4 6 1 0 7 7\n_ _ _ _ _ _ _ A N D\n5 6 3 4 2 9 6\n_ _ _ _ _ _ _\n\nWhich sentence could stand for this code?",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 715 308\" width=\"70%\" height=\"auto\"><image href=\"/oc/t7-q19.jpg\" x=\"0\" y=\"0\" width=\"715\" height=\"308\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 180\" width=\"95%\" height=\"auto\"><image href=\"/oc/t7-q19.jpg\" x=\"0\" y=\"0\" width=\"600\" height=\"180\"/></svg>"
           },
           "options": [
             "Native and natural",
@@ -6513,7 +6513,7 @@
           "difficulty": "hard",
           "stem": "This table shows a way of coding each letter with a different symbol. How would you write the first line of this old rhyme using the special code?\n\nPAPA HAYDN IS DEAD AND GONE…",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 748 1121\" width=\"95%\" height=\"auto\"><image href=\"/oc/t8-q4.jpg\" x=\"0\" y=\"0\" width=\"748\" height=\"1121\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 632 1106\" width=\"80%\" height=\"auto\"><image href=\"/oc/t8-q4.jpg\" x=\"0\" y=\"0\" width=\"632\" height=\"1106\"/></svg>"
           },
           "options": [
             "A",
@@ -10267,7 +10267,7 @@
           "difficulty": "hard",
           "stem": "Which shape comes next?",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 748 473\" width=\"90%\" height=\"auto\"><image href=\"/oc/t3-q25.jpg\" x=\"0\" y=\"0\" width=\"748\" height=\"473\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 604 492\" width=\"95%\" height=\"auto\"><image href=\"/oc/t3-q25.jpg\" x=\"0\" y=\"0\" width=\"604\" height=\"492\"/></svg>"
           },
           "options": [
             "A",
@@ -11683,28 +11683,28 @@
               "explain": "Start with the tall tower on the left. Count the boxes in the tower, from top to bottom, including the box at the bottom.",
               "work": "<p>The left tower has 4 boxes (numbered 1 to 4).</p>",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 451 378\" width=\"85%\" height=\"auto\"><image href=\"/oc/t5-q26-base.jpg\" x=\"0\" y=\"0\" width=\"451\" height=\"378\"/><rect x=\"25.0\" y=\"100.0\" width=\"42.5\" height=\"42.5\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"46.2\" y=\"128.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">1</text><rect x=\"25.0\" y=\"142.5\" width=\"42.5\" height=\"42.5\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"46.2\" y=\"170.8\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">2</text><rect x=\"25.0\" y=\"185.0\" width=\"42.5\" height=\"45.0\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"46.2\" y=\"214.5\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">3</text><rect x=\"25.0\" y=\"230.0\" width=\"42.5\" height=\"42.5\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"46.2\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">4</text></svg>"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 397 340\" width=\"64%\" height=\"auto\"><image href=\"/oc/t5-q26-base.jpg\" x=\"0\" y=\"0\" width=\"397\" height=\"340\"/></svg>"
               }
             },
             {
               "explain": "Now count the boxes along the bottom row, moving to the right. Do not count the box at the bottom of the left tower again.",
               "work": "<p>The bottom row has 6 more boxes (numbered 5 to 10).</p>",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 451 378\" width=\"85%\" height=\"auto\"><image href=\"/oc/t5-q26-base.jpg\" x=\"0\" y=\"0\" width=\"451\" height=\"378\"/><rect x=\"25.0\" y=\"100.0\" width=\"42.5\" height=\"42.5\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"46.2\" y=\"128.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">1</text><rect x=\"25.0\" y=\"142.5\" width=\"42.5\" height=\"42.5\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"46.2\" y=\"170.8\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">2</text><rect x=\"25.0\" y=\"185.0\" width=\"42.5\" height=\"45.0\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"46.2\" y=\"214.5\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">3</text><rect x=\"25.0\" y=\"230.0\" width=\"42.5\" height=\"42.5\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"46.2\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">4</text><rect x=\"67.5\" y=\"230.0\" width=\"45.0\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"90.0\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">5</text><rect x=\"112.5\" y=\"230.0\" width=\"45.0\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"135.0\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">6</text><rect x=\"157.5\" y=\"230.0\" width=\"45.0\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"180.0\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">7</text><rect x=\"202.5\" y=\"230.0\" width=\"45.0\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"225.0\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">8</text><rect x=\"247.5\" y=\"230.0\" width=\"45.0\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"270.0\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">9</text><rect x=\"292.5\" y=\"230.0\" width=\"42.5\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"313.8\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">10</text></svg>"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 397 340\" width=\"64%\" height=\"auto\"><image href=\"/oc/t5-q26-base.jpg\" x=\"0\" y=\"0\" width=\"397\" height=\"340\"/></svg>"
               }
             },
             {
               "explain": "Now count the boxes that go down on the right-hand side, below the bottom row.",
               "work": "<p>There are 2 boxes below the row (numbered 11 and 12).</p>",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 451 378\" width=\"85%\" height=\"auto\"><image href=\"/oc/t5-q26-base.jpg\" x=\"0\" y=\"0\" width=\"451\" height=\"378\"/><rect x=\"25.0\" y=\"100.0\" width=\"42.5\" height=\"42.5\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"46.2\" y=\"128.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">1</text><rect x=\"25.0\" y=\"142.5\" width=\"42.5\" height=\"42.5\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"46.2\" y=\"170.8\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">2</text><rect x=\"25.0\" y=\"185.0\" width=\"42.5\" height=\"45.0\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"46.2\" y=\"214.5\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">3</text><rect x=\"25.0\" y=\"230.0\" width=\"42.5\" height=\"42.5\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"46.2\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">4</text><rect x=\"67.5\" y=\"230.0\" width=\"45.0\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"90.0\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">5</text><rect x=\"112.5\" y=\"230.0\" width=\"45.0\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"135.0\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">6</text><rect x=\"157.5\" y=\"230.0\" width=\"45.0\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"180.0\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">7</text><rect x=\"202.5\" y=\"230.0\" width=\"45.0\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"225.0\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">8</text><rect x=\"247.5\" y=\"230.0\" width=\"45.0\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"270.0\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">9</text><rect x=\"292.5\" y=\"230.0\" width=\"42.5\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"313.8\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">10</text><rect x=\"292.5\" y=\"272.5\" width=\"42.5\" height=\"43.5\" fill=\"#bbf7d0\" fill-opacity=\"0.55\" stroke=\"#059669\" stroke-width=\"3\"/><text x=\"313.8\" y=\"301.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">11</text><rect x=\"292.5\" y=\"316.0\" width=\"42.5\" height=\"44.0\" fill=\"#bbf7d0\" fill-opacity=\"0.55\" stroke=\"#059669\" stroke-width=\"3\"/><text x=\"313.8\" y=\"345.0\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">12</text></svg>"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 397 340\" width=\"64%\" height=\"auto\"><image href=\"/oc/t5-q26-base.jpg\" x=\"0\" y=\"0\" width=\"397\" height=\"340\"/></svg>"
               }
             },
             {
               "explain": "Look carefully for any box you have not counted yet. There is one box sitting on top of the bottom row, behind the middle of the shape (you can see its top edge as a small rectangle).",
               "work": "<p>That is box number 13.</p>",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 451 378\" width=\"85%\" height=\"auto\"><image href=\"/oc/t5-q26-base.jpg\" x=\"0\" y=\"0\" width=\"451\" height=\"378\"/><rect x=\"25.0\" y=\"100.0\" width=\"42.5\" height=\"42.5\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"46.2\" y=\"128.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">1</text><rect x=\"25.0\" y=\"142.5\" width=\"42.5\" height=\"42.5\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"46.2\" y=\"170.8\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">2</text><rect x=\"25.0\" y=\"185.0\" width=\"42.5\" height=\"45.0\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"46.2\" y=\"214.5\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">3</text><rect x=\"25.0\" y=\"230.0\" width=\"42.5\" height=\"42.5\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"46.2\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">4</text><rect x=\"67.5\" y=\"230.0\" width=\"45.0\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"90.0\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">5</text><rect x=\"112.5\" y=\"230.0\" width=\"45.0\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"135.0\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">6</text><rect x=\"157.5\" y=\"230.0\" width=\"45.0\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"180.0\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">7</text><rect x=\"202.5\" y=\"230.0\" width=\"45.0\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"225.0\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">8</text><rect x=\"247.5\" y=\"230.0\" width=\"45.0\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"270.0\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">9</text><rect x=\"292.5\" y=\"230.0\" width=\"42.5\" height=\"42.5\" fill=\"#bfdbfe\" fill-opacity=\"0.55\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"313.8\" y=\"258.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">10</text><rect x=\"292.5\" y=\"272.5\" width=\"42.5\" height=\"43.5\" fill=\"#bbf7d0\" fill-opacity=\"0.55\" stroke=\"#059669\" stroke-width=\"3\"/><text x=\"313.8\" y=\"301.2\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">11</text><rect x=\"292.5\" y=\"316.0\" width=\"42.5\" height=\"44.0\" fill=\"#bbf7d0\" fill-opacity=\"0.55\" stroke=\"#059669\" stroke-width=\"3\"/><text x=\"313.8\" y=\"345.0\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">12</text><rect x=\"247.5\" y=\"186.0\" width=\"42.5\" height=\"44.0\" fill=\"#fbcfe8\" fill-opacity=\"0.55\" stroke=\"#db2777\" stroke-width=\"3\"/><text x=\"268.8\" y=\"215.0\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\" stroke=\"#fff\" stroke-width=\"4\" paint-order=\"stroke\" font-family=\"system-ui,Arial,sans-serif\">13</text></svg>"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 397 340\" width=\"64%\" height=\"auto\"><image href=\"/oc/t5-q26-base.jpg\" x=\"0\" y=\"0\" width=\"397\" height=\"340\"/></svg>"
               }
             },
             {
@@ -12610,7 +12610,7 @@
           "difficulty": "hard",
           "stem": "Which figure is next in the series?",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 748 614\" width=\"80%\" height=\"auto\"><image href=\"/oc/t7-q10.jpg\" x=\"0\" y=\"0\" width=\"748\" height=\"614\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 611 693\" width=\"90%\" height=\"auto\"><image href=\"/oc/t7-q10.jpg\" x=\"0\" y=\"0\" width=\"611\" height=\"693\"/></svg>"
           },
           "options": [
             "A",
@@ -12674,7 +12674,7 @@
               "difficulty": "medium",
               "stem": "Where is the error in the chart?",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 715 484\" width=\"85%\" height=\"auto\"><image href=\"/oc/t7-q11.jpg\" x=\"0\" y=\"0\" width=\"715\" height=\"484\"/></svg>"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 681 497\" width=\"95%\" height=\"auto\"><image href=\"/oc/t7-q11.jpg\" x=\"0\" y=\"0\" width=\"681\" height=\"497\"/></svg>"
               },
               "options": [
                 "the wage for the second year trainee apprentice",
@@ -12840,7 +12840,7 @@
           "difficulty": "hard",
           "stem": "Look at this sum. Each letter stands for a number. Which number stands for the letter M?\n\nMU × 4 = CU8",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 451 176\" width=\"45%\" height=\"auto\"><image href=\"/oc/t7-q17.jpg\" x=\"0\" y=\"0\" width=\"451\" height=\"176\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 176 148\" width=\"28%\" height=\"auto\"><image href=\"/oc/t7-q17.jpg\" x=\"0\" y=\"0\" width=\"176\" height=\"148\"/></svg>"
           },
           "options": [
             "1",
@@ -12943,7 +12943,7 @@
           "difficulty": "medium",
           "stem": "Which shape comes next?",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 715 396\" width=\"75%\" height=\"auto\"><image href=\"/oc/t7-q25.jpg\" x=\"0\" y=\"0\" width=\"715\" height=\"396\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 575 365\" width=\"93%\" height=\"auto\"><image href=\"/oc/t7-q25.jpg\" x=\"0\" y=\"0\" width=\"575\" height=\"365\"/></svg>"
           },
           "options": [
             "A",
@@ -12996,7 +12996,7 @@
           "difficulty": "hard",
           "stem": "A tiler wants to make a pattern of grey and white triangle tiles. They would look something like this:\n\nHow many grey triangles could fit into this space? Start each row with a grey triangle.",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 748 209\" width=\"90%\" height=\"auto\"><image href=\"/oc/t7-q26.jpg\" x=\"0\" y=\"0\" width=\"748\" height=\"209\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 596 281\" width=\"95%\" height=\"auto\"><image href=\"/oc/t7-q26.jpg\" x=\"0\" y=\"0\" width=\"596\" height=\"281\"/></svg>"
           },
           "options": [
             "27",
@@ -13278,7 +13278,7 @@
           "difficulty": "hard",
           "stem": "Which pattern comes next in this series and fills the square with the question mark?",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 715 600\" width=\"85%\" height=\"auto\"><image href=\"/oc/t8-q10.jpg\" x=\"0\" y=\"0\" width=\"715\" height=\"600\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 686 460\" width=\"95%\" height=\"auto\"><image href=\"/oc/t8-q10.jpg\" x=\"0\" y=\"0\" width=\"686\" height=\"460\"/></svg>"
           },
           "options": [
             "A",
@@ -13339,7 +13339,7 @@
               "difficulty": "medium",
               "stem": "From the chart above, what are the numbers for the original Plimsoll Mark and the Deck Line?",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 748 396\" width=\"80%\" height=\"auto\"><image href=\"/oc/t8-q11.jpg\" x=\"0\" y=\"0\" width=\"748\" height=\"396\"/></svg>"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 677 370\" width=\"95%\" height=\"auto\"><image href=\"/oc/t8-q11.jpg\" x=\"0\" y=\"0\" width=\"677\" height=\"370\"/></svg>"
               },
               "options": [
                 "38, 42",
@@ -13395,7 +13395,7 @@
               "difficulty": "hard",
               "stem": "This table shows some of the same information as the chart but in a different way. On what lines are there errors in the table?",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 748 473\" width=\"80%\" height=\"auto\"><image href=\"/oc/t8-q12.jpg\" x=\"0\" y=\"0\" width=\"748\" height=\"473\"/></svg>"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 615 466\" width=\"95%\" height=\"auto\"><image href=\"/oc/t8-q12.jpg\" x=\"0\" y=\"0\" width=\"615\" height=\"466\"/></svg>"
               },
               "options": [
                 "lines 2, 3 are wrong in the table",
@@ -13608,7 +13608,7 @@
           "difficulty": "hard",
           "stem": "Which set of arrows completes this pattern?",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 748 556\" width=\"80%\" height=\"auto\"><image href=\"/oc/t8-q25.jpg\" x=\"0\" y=\"0\" width=\"748\" height=\"556\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 572 573\" width=\"93%\" height=\"auto\"><image href=\"/oc/t8-q25.jpg\" x=\"0\" y=\"0\" width=\"572\" height=\"573\"/></svg>"
           },
           "options": [
             "A",
@@ -13658,7 +13658,7 @@
           "difficulty": "hard",
           "stem": "Look at the shapes below. They are numbered I, II, III, IV, V and VI. Three of these shapes are joined together to make this pattern. Which shapes were used in the pattern? (Hint: the shapes can be rotated.)",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 748 891\" width=\"85%\" height=\"auto\"><image href=\"/oc/t8-q26.jpg\" x=\"0\" y=\"0\" width=\"748\" height=\"891\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 620 440\" width=\"95%\" height=\"auto\"><image href=\"/oc/t8-q26.jpg\" x=\"0\" y=\"0\" width=\"620\" height=\"440\"/></svg>"
           },
           "options": [
             "IV, V, VI",
@@ -13974,7 +13974,7 @@
               "difficulty": "hard",
               "stem": "How does the chart relate to the first paragraph of the article?",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 748 715\" width=\"85%\" height=\"auto\"><image href=\"/oc/t9-q11.jpg\" x=\"0\" y=\"0\" width=\"748\" height=\"715\"/></svg>"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 624 672\" width=\"95%\" height=\"auto\"><image href=\"/oc/t9-q11.jpg\" x=\"0\" y=\"0\" width=\"624\" height=\"672\"/></svg>"
               },
               "options": [
                 "The chart is not related to the content of the first paragraph.",
@@ -14189,7 +14189,7 @@
           "difficulty": "hard",
           "stem": "In this square the numbers (from 4 to 12) add up to 24 across and down. Find the missing number in the square marked with the asterisk (★). (Hint: you may have to find some of the other numbers before you can find the number you want.)",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 451 231\" width=\"45%\" height=\"auto\"><image href=\"/oc/t9-q18.jpg\" x=\"0\" y=\"0\" width=\"451\" height=\"231\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 197\" width=\"41%\" height=\"auto\"><image href=\"/oc/t9-q18.jpg\" x=\"0\" y=\"0\" width=\"256\" height=\"197\"/></svg>"
           },
           "options": [
             "7",
@@ -14350,7 +14350,7 @@
           "difficulty": "hard",
           "stem": "Look at this clock. It is evening in Sydney. The time in Sydney is about 15 hours ahead of the time in the United States.\n\nWhat would the time be in the United States?",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 143 143\" width=\"25%\" height=\"auto\"><image href=\"/oc/t9-q27.jpg\" x=\"0\" y=\"0\" width=\"143\" height=\"143\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 180 168\" width=\"29%\" height=\"auto\"><image href=\"/oc/t9-q27.jpg\" x=\"0\" y=\"0\" width=\"180\" height=\"168\"/></svg>"
           },
           "options": [
             "2 am the next day",
