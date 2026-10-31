@@ -1,11 +1,12 @@
 import { useEffect, useMemo, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
+import { Clock, Lock, Play, TrendingDown } from 'lucide-react';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { getTopicQuestions } from '../services/contentLoader';
 import { useAuth } from '../context/AuthContext';
 import { loadTestState } from '../utils/scholarshipTest';
 import {
-  MOCK_FORMATS, HUB_PAGES, hubExamsFor, mockSizeFor, mockStorageId, mockSummary, summariseAttempts, rankGroups, pickNextStep,
+  MOCK_FORMATS, hubExamsFor, mockSizeFor, mockStorageId, mockSummary, summariseAttempts, rankGroups, pickNextStep,
 } from '../utils/examHub';
 import { nextSitting, scholarshipSitting, formatDay, ddayLabel, PLACEMENT_SOURCE_URL, PLACEMENT_DATES_CHECKED } from '../utils/examDates';
 import ScholarshipTest from './ScholarshipTest';
@@ -16,50 +17,60 @@ const titleCase = (s) => s.replace(/\b\w/g, (c) => c.toUpperCase());
 const dayRange = (a, b) => (a === b ? formatDay(a, { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' }) : `${formatDay(a, { weekday: 'short', day: 'numeric' })} – ${formatDay(b, { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' })}`);
 
 /**
- * The countdown. OC / Selective count down to the student's own sitting (their school year decides which one, see
- * utils/examDates); Scholarship (ACER) counts down to the date the teacher typed, since each school sets its own.
- * Below the number sits a short list of the steps still ahead (applications, test day, make-up).
+ * The hero. For OC / Selective it counts down to the student's own sitting (their school year decides which one),
+ * with a runway drawn to scale: today on the left, then the application window, test day and the make-up.
+ * Scholarship (ACER) counts down to the date the teacher typed (each school sets its own), so its runway is just
+ * today → test day.
  */
-const Countdown = ({ sitting, yearNum, isScholarship }) => {
+const Hero = ({ sitting, yearNum, isScholarship }) => {
   const { status, test } = sitting;
-  const kicker = yearNum ? `Year ${yearNum} · ${test.short}` : test.short;
+  const eyebrow = yearNum ? `Year ${yearNum} · ${test.short}` : test.short;
 
   if (status === 'upcoming') {
-    const { sitting: d, daysLeft, milestones } = sitting;
-    const nextKey = milestones[0]?.key;
+    const { sitting: d, daysLeft, milestones, testYear } = sitting;
+    const span = Math.max(1, ...milestones.map((m) => m.daysLeft));
+    const at = (days) => `${Math.min(100, Math.max(0, (days / span) * 100))}%`;
+    const open = milestones.find((m) => m.key === 'applyOpen');
+    const close = milestones.find((m) => m.key === 'applyClose');
     return (
-      <section className="xh-panel xh-count" aria-label="Countdown">
-        <div className="xh-count__head">
-          <div>
-            <p className="xh-count__name">{test.name}</p>
-            <div className="xh-count__when">{kicker && !isScholarship ? `${kicker} · ` : ''}{dayRange(d.start, d.end)}</div>
-          </div>
-          <div className="xh-count__n">
-            <span className="xh-count__num">{daysLeft === 0 ? 'Today' : ddayLabel(daysLeft)}</span>
-            <span className="xh-count__unit">{daysLeft === 0 ? 'test day' : `${daysLeft} day${daysLeft === 1 ? '' : 's'} to go`}</span>
+      <section className="xh-hero" aria-label={`${test.short} countdown`}>
+        <div className="xh-hero__eyebrow">{eyebrow}</div>
+        <div className="xh-hero__main">
+          <div className="xh-hero__big">{daysLeft === 0 ? 'Today' : ddayLabel(daysLeft)}</div>
+          <div className="xh-hero__what">
+            <div className="xh-hero__title">{test.name}</div>
+            <div className="xh-hero__date">{dayRange(d.start, d.end)}</div>
           </div>
         </div>
-        {!isScholarship && sitting.testYear && (
-          <p className="xh-count__text">
-            {yearNum ? `Year ${yearNum} students sit ${test.short} in Year ${test.testYearLevel}, which is ${sitting.testYear} for you.` : `${test.short} is sat in Year ${test.testYearLevel}.`}
-          </p>
-        )}
-        {milestones.length > 1 && (
-          <ol className="xh-steps">
-            {milestones.map((m) => (
-              <li key={m.key} className={`xh-step${m.key === nextKey ? ' xh-step--next' : ''}`}>
-                <span className="xh-step__dot" aria-hidden="true" />
-                <span className="xh-step__label">{m.label}</span>
-                <span className="xh-step__rel">{m.daysLeft === 0 ? 'Today' : `in ${m.daysLeft} day${m.daysLeft === 1 ? '' : 's'}`}</span>
-                <span className="xh-step__date">{m.endDate ? dayRange(m.date, m.endDate) : formatDay(m.date)}</span>
-              </li>
-            ))}
-          </ol>
-        )}
         {!isScholarship && (
-          <p className="xh-count__src">
-            Dates from the <a href={PLACEMENT_SOURCE_URL} target="_blank" rel="noreferrer">NSW Department of Education</a>, checked {formatDay(PLACEMENT_DATES_CHECKED)}. They can change.
+          <p className="xh-hero__note">
+            {yearNum ? `Year ${yearNum} students sit ${test.short} in Year ${test.testYearLevel}` : `${test.short} is sat in Year ${test.testYearLevel}`}
+            {testYear ? ` — that is ${testYear} for you.` : '.'}
           </p>
+        )}
+
+        <div className="xh-runway" role="img" aria-label="Timeline from today to the make-up test">
+          <div className="xh-runway__track" />
+          {close && <div className="xh-runway__apply" style={{ left: open ? at(open.daysLeft) : '0%', width: `calc(${at(close.daysLeft)} - ${open ? at(open.daysLeft) : '0%'})` }} />}
+          {milestones.map((m) => (
+            <span key={m.key} className={`xh-runway__dot${m.key === 'test' ? ' xh-runway__dot--test' : m.key === 'makeup' ? ' xh-runway__dot--hollow' : ''}`} style={{ left: at(m.daysLeft) }} />
+          ))}
+          <span className="xh-runway__today">TODAY</span>
+        </div>
+
+        {milestones.length > 1 && <div className="xh-miles">
+          {milestones.map((m) => (
+            <div key={m.key} className={`xh-mile${m.key === 'test' ? ' xh-mile--test' : ''}`}>
+              <div className="xh-mile__label">{m.label}</div>
+              <div className="xh-mile__days">{m.daysLeft === 0 ? 'Today' : ddayLabel(m.daysLeft)}</div>
+              <div className="xh-mile__date">{m.endDate ? dayRange(m.date, m.endDate) : formatDay(m.date)}</div>
+            </div>
+          ))}
+        </div>}
+        {!isScholarship && (
+          <div className="xh-hero__src">
+            Dates from the <a href={PLACEMENT_SOURCE_URL} target="_blank" rel="noreferrer">NSW Department of Education</a>, checked {formatDay(PLACEMENT_DATES_CHECKED)}. They can change.
+          </div>
         )}
       </section>
     );
@@ -67,24 +78,36 @@ const Countdown = ({ sitting, yearNum, isScholarship }) => {
 
   const copy = (() => {
     if (status === 'unannounced') {
-      return { title: `${test.name}: date not announced yet`, text: `Year ${yearNum} students sit ${test.short} in Year ${test.testYearLevel}, which is ${sitting.testYear} for you. The Department publishes dates about a year ahead, usually for May. The countdown appears here once it does.` };
+      return {
+        big: `May ${sitting.testYear}`,
+        title: 'Date not announced yet',
+        note: `Year ${yearNum} students sit ${test.short} in Year ${test.testYearLevel}, in ${sitting.testYear}. The Department publishes test dates about a year ahead; the countdown appears here once they do. It is usually in May.`,
+      };
     }
     if (status === 'passed') {
-      const makeup = sitting.milestones?.[0];
-      return { title: isScholarship ? `${test.name} is over` : `This year's ${test.short} test is over`, text: makeup ? `The make-up test is on ${formatDay(makeup.date)}, in ${makeup.daysLeft} day${makeup.daysLeft === 1 ? '' : 's'}.` : '' };
+      return {
+        big: 'Done',
+        title: isScholarship ? `${test.name} is over` : `This year's ${test.short} test is over`,
+        note: sitting.milestones?.length ? `The make-up test is ${ddayLabel(sitting.milestones[0].daysLeft)} (${formatDay(sitting.milestones[0].date)}).` : (isScholarship ? '' : 'The next sitting is next year, for the following group.'),
+      };
     }
     if (status === 'notApplicable') {
-      return { title: `${test.short} is sat in Year ${test.testYearLevel}`, text: `You are in Year ${yearNum}, past that year. The questions below are still there for practice.` };
+      return { big: 'Past', title: `${test.short} is sat in Year ${test.testYearLevel}`, note: `You are in Year ${yearNum}, past that year. You can still use these questions for practice.` };
     }
     if (status === 'noDate') {
-      return { title: 'No test date set', text: 'Ask your teacher to add the date of your scholarship test and the countdown will show here.' };
+      return { big: 'TBC', title: 'No test date set', note: 'Ask your teacher to add the date of your scholarship test and the countdown will show here.' };
     }
-    return { title: 'School year not set', text: 'Ask your teacher to add your school year and your test date will show here.' };
+    return { big: 'Year?', title: 'School year not set', note: 'Ask your teacher to add your school year, and your test date will appear here.' };
   })();
+  const { big, title, note } = copy;
   return (
-    <section className="xh-panel xh-count" aria-label="Test date">
-      <p className="xh-count__name">{copy.title}</p>
-      {copy.text && <p className="xh-count__text" style={{ marginTop: 6 }}>{copy.text}</p>}
+    <section className="xh-hero" aria-label={`${test.short} test date`}>
+      <div className="xh-hero__eyebrow">{eyebrow}</div>
+      <div className="xh-hero__main">
+        <div className="xh-hero__big xh-hero__big--text">{big}</div>
+        <div className="xh-hero__what"><div className="xh-hero__title">{title}</div></div>
+      </div>
+      {note && <p className="xh-hero__note">{note}</p>}
     </section>
   );
 };
@@ -143,7 +166,6 @@ const OcSelectivePrep = ({ examId, profile }) => {
     return <div className="xh"><div className="xh-card xh-empty">This page has not been switched on for you yet. Ask your teacher.</div></div>;
   }
 
-  const pageLabel = HUB_PAGES[active.id]?.label || active.title;
   const isScholarship = active.id === 'sch-acer';
   const sitting = isScholarship ? scholarshipSitting(profile) : nextSitting(active.id, profile);
   const yearNum = sitting?.year ?? null;
@@ -196,56 +218,49 @@ const OcSelectivePrep = ({ examId, profile }) => {
 
   return (
     <div className="xh">
-      <header className="xh-page">
-        <h1>{pageLabel}</h1>
-        <p>{HUB_PAGES[active.id]?.blurb}</p>
-      </header>
-
-      <Countdown sitting={sitting} yearNum={yearNum} isScholarship={isScholarship} />
+      <Hero sitting={sitting} yearNum={yearNum} isScholarship={isScholarship} />
 
       {ready && (
         <>
-          <div className="xh-panel xh-sum">
-            <div><div className="xh-sum__num">{totals.done}<small> / {totals.total}</small></div><div className="xh-sum__label">Questions done</div></div>
-            <div><div className="xh-sum__num">{totals.answered ? pct(totals.marks / totals.answered) : '–'}</div><div className="xh-sum__label">Recent accuracy</div></div>
-            <div><div className="xh-sum__num">{totals.mocks}</div><div className="xh-sum__label">Mock exams taken</div></div>
+          <div className="xh-stats">
+            <div className="xh-stat"><div className="xh-stat__num">{totals.done}<small> / {totals.total}</small></div><div className="xh-stat__label">Questions done</div></div>
+            <div className="xh-stat"><div className="xh-stat__num">{totals.answered ? pct(totals.marks / totals.answered) : '–'}</div><div className="xh-stat__label">Recent accuracy</div></div>
+            <div className="xh-stat"><div className="xh-stat__num">{totals.mocks}</div><div className="xh-stat__label">Mock exams taken</div></div>
           </div>
 
           {next && nextSection && (
             <div className="xh-next">
-              <div>
-                <div className="xh-next__label">Do this next</div>
+              <div className="xh-next__text">
+                <div className="xh-next__eyebrow">Do this next</div>
                 <div className="xh-next__line">{next.text}</div>
               </div>
               <button type="button" className="xh-btn xh-btn--primary" onClick={() => open(nextSection.topic, next.kind === 'mock')}>
-                {next.kind === 'mock' ? 'Start mock exam' : 'Practise now'}
+                <Play size={15} /> {next.kind === 'mock' ? 'Start mock exam' : 'Practise now'}
               </button>
             </div>
           )}
         </>
       )}
 
-      <h2 className="xh-h">Test sections</h2>
-      {failed && <div className="xh-panel xh-empty" style={{ color: '#c2273d' }}>Could not load the questions. Check your connection and try again.</div>}
-      {!bank && !failed && <div className="xh-panel xh-empty">Loading…</div>}
+      <h3 className="xh-h">Test sections</h3>
+      {failed && <div className="xh-card xh-empty" style={{ color: '#e11d48' }}>Could not load the questions. Check your connection and try again.</div>}
+      {!bank && !failed && <div className="xh-card xh-empty">Loading…</div>}
       {bank && (
-        <div className="xh-panel">
+        <div className="xh-rows">
           {sections.map((s) => (
             <div key={s.topic.id} className="xh-row">
               <div style={{ minWidth: 0 }}>
                 <div className="xh-row__name">{s.name}</div>
                 <div className="xh-row__meta">
-                  {[
-                    s.fmt && `${s.fmt.minutes} min mock`,
-                    !s.empty && `${s.done} of ${s.total} done`,
-                  ].filter(Boolean).join(' · ')}
-                  {s.sum.count > 0 && <> · best <b>{pct(s.sum.best)}</b>, last <b>{pct(s.sum.last)}</b></>}
-                  {s.sum.inProgress && <> · <b>mock in progress</b></>}
+                  {s.fmt && <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}><Clock size={12} /> {s.fmt.minutes} min mock</span>}
+                  {!s.empty && <span>{s.done} of {s.total} done</span>}
+                  {s.sum.count > 0 && <span>best <b>{pct(s.sum.best)}</b> · last <b>{pct(s.sum.last)}</b></span>}
+                  {s.sum.inProgress && <b>mock in progress</b>}
                 </div>
                 {!s.empty && <div className="xh-bar" aria-hidden="true"><i style={{ width: `${Math.round((s.done / Math.max(1, s.total)) * 100)}%` }} /></div>}
               </div>
               {s.empty
-                ? <span className="xh-soon">Coming soon</span>
+                ? <span className="xh-soon"><Lock size={14} /> Coming soon</span>
                 : (
                   <div className="xh-row__actions">
                     {s.fmt && <button type="button" className="xh-btn xh-btn--primary" onClick={() => open(s.topic, true)}>{s.sum.inProgress ? 'Resume mock' : 'Mock exam'}</button>}
@@ -259,19 +274,19 @@ const OcSelectivePrep = ({ examId, profile }) => {
 
       {ready && (
         <>
-          <h2 className="xh-h">Where to improve</h2>
-          <div className="xh-panel">
+          <h3 className="xh-h"><TrendingDown size={17} color="#7c3aed" /> Where to improve</h3>
+          <div className="xh-card">
             {weakRows.length === 0
               ? <div className="xh-empty">{totals.answered === 0 ? 'Finish a mock or a practice test and your weakest question types show up here.' : 'Not enough answers in any one question type yet. A few more tests and the weak spots show up here.'}</div>
               : weakRows.slice(0, 5).map((r) => {
-                const color = r.weak ? '#c2273d' : r.pct >= 0.8 ? '#15803d' : '#b45309';
+                const color = r.weak ? '#e11d48' : r.pct >= 0.8 ? '#059669' : '#d97706';
                 return (
                   <div key={`${r.section}:${r.name}`} className="xh-weak">
                     <div className="xh-weak__top">
                       <span className="xh-weak__name">{titleCase(r.name)}</span>
                       <span className="xh-weak__sec">{r.sectionName}</span>
-                      {r.weak && <span className="xh-weak__flag">Needs work</span>}
-                      <span className="xh-weak__pct">{pct(r.pct)} <small>{r.marks}/{r.total}</small></span>
+                      {r.weak && <span className="xh-tag">NEEDS WORK</span>}
+                      <span className="xh-weak__pct">{pct(r.pct)} · {r.marks}/{r.total}</span>
                     </div>
                     <div className="xh-meter"><i style={{ width: `${Math.round(r.pct * 100)}%`, background: color }} /></div>
                   </div>
