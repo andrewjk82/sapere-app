@@ -16,12 +16,16 @@ const readDetail = async (stat, pathsFor) => {
   if (Array.isArray(stat.questions) && stat.questions.length > 0 && Array.isArray(stat.userAnswers)) {
     return { questions: stat.questions, userAnswers: stat.userAnswers, answerResults: stat.answerResults || [] };
   }
+  // A session whose snapshot was not found is remembered too, so it is not looked up again on every click.
+  const missKey = `miss/${statCollectionOf(stat)}/${stat.id}`;
+  if (detailCache.has(missKey)) return null;
   for (const [coll, id] of pathsFor(stat)) {
     const key = `${coll}/${id}/${statCollectionOf(stat)}/${stat.id}`;
     if (detailCache.has(key)) return detailCache.get(key);
     const snap = await getDoc(doc(db, coll, id, statCollectionOf(stat), stat.id, 'detail_snapshot', 'main'));
     if (snap.exists()) { const data = snap.data(); detailCache.set(key, data); return data; }
   }
+  detailCache.set(missKey, true);
   return null;
 };
 
