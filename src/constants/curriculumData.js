@@ -3246,6 +3246,7 @@ export const CURRICULUM_DATA = {
       topics: [
         { id: 'sch-oc-english', title: 'English' },
         { id: 'sch-oc-maths', title: 'Mathematics' },
+        { id: 'sch-oc-thinking', title: 'Thinking Skills' },
       ],
     },
   ],

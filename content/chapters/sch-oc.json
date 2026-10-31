@@ -14451,6 +14451,1264 @@
           }
         }
       ]
+    },
+    {
+      "topicId": "sch-oc-thinking",
+      "code": "",
+      "title": "Thinking Skills",
+      "questions": [
+        {
+          "id": "sch-oc-ts1-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A slow train departed from Lode at 1:00 pm and arrived at Braxton at 7:00 pm. An express train departed from Lode later and arrived at Braxton at the same time as the slow train. The express train was four times as fast as the slow train. Each train travelled at a constant speed and did not stop along the way.\n\nWhen did the express train depart from Lode?",
+          "options": [
+            "2:30 pm",
+            "3:00 pm",
+            "4:00 pm",
+            "5:30 pm"
+          ],
+          "answer": 3,
+          "hint": "Work out how long the slow train took. If a train is four times as fast, it takes a quarter of the time for the same trip.",
+          "steps": [
+            {
+              "explain": "Find how long the slow train took for the trip.",
+              "work": "<p>1:00 pm to 7:00 pm is 6 hours.</p>"
+            },
+            {
+              "explain": "Both trains travel the same distance. Going four times as fast means the trip takes one quarter of the time.",
+              "work": "<p>6 hours ÷ 4 = 1½ hours</p>"
+            },
+            {
+              "explain": "The express train arrived at 7:00 pm, so count back 1½ hours to find when it left.",
+              "work": "<p>7:00 pm − 1½ hours = <strong>5:30 pm</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "four times as fast",
+              "note": "Four times as fast over the same distance means a quarter of the time."
+            },
+            {
+              "text": "arrived at Braxton at the same time",
+              "note": "Both trains finish at 7:00 pm — work backwards from there."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 1",
+            "number": 1,
+            "page": 2,
+            "category": "speed and time"
+          }
+        },
+        {
+          "id": "sch-oc-ts1-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A health specialist has suggested that dance lessons should be an important part of school life, and that school children should spend as much time learning to dance as they do playing sport.\n\nWhich one of these statements, if true, best supports the health specialist’s claim?",
+          "options": [
+            "Dancing improves children’s mental abilities.",
+            "Some children cannot afford equipment to participate in sports.",
+            "Some children dream of becoming professional sportspeople.",
+            "Dancing has been taught in schools in the past."
+          ],
+          "answer": 0,
+          "hint": "The claim is that dance is valuable enough to deserve as much school time as sport. Look for the statement that gives a real benefit of dancing for children.",
+          "steps": [
+            {
+              "explain": "Identify the claim: dance should be an important part of school life, with as much time as sport."
+            },
+            {
+              "explain": "Check each statement. A good supporting reason must show that dancing is <em>good for children</em>.",
+              "work": "<p>A: Dancing improves mental abilities — a clear benefit of dance. ✔</p><p>B: This is about the cost of sport, not a benefit of dance.</p><p>C: This is about sport, and if anything supports more sport.</p><p>D: Being taught in the past does not show it is worthwhile now.</p>"
+            },
+            {
+              "explain": "Only A gives a reason why children should spend time dancing.",
+              "work": "<p>Answer: <strong>A</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "best supports",
+              "note": "Pick the statement that gives a reason to agree with the claim."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 1",
+            "number": 2,
+            "page": 2,
+            "category": "strengthen an argument"
+          }
+        },
+        {
+          "id": "sch-oc-ts1-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Alex, Ben and Carlos all keep pets. Alex has snakes, fish, lizards, rats and frogs. Ben keeps cats, frogs and rats. Carlos keeps fish, parrots, rats, grasshoppers and frogs.\n\nWhich pets does Alex keep that neither Ben nor Carlos keep?",
+          "options": [
+            "fish and snakes",
+            "lizards and rats",
+            "grasshoppers and cats",
+            "snakes and lizards"
+          ],
+          "answer": 3,
+          "hint": "Go through Alex’s pets one at a time and cross out any that Ben or Carlos also keeps.",
+          "steps": [
+            {
+              "explain": "List Alex’s pets and check each against Ben’s and Carlos’s lists.",
+              "work": "<p>snakes — Ben ✘, Carlos ✘ → only Alex</p><p>fish — Carlos has fish</p><p>lizards — Ben ✘, Carlos ✘ → only Alex</p><p>rats — Ben and Carlos have rats</p><p>frogs — Ben and Carlos have frogs</p>"
+            },
+            {
+              "explain": "The pets that only Alex keeps are snakes and lizards.",
+              "work": "<p>Answer: <strong>snakes and lizards</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "neither Ben nor Carlos",
+              "note": "A pet only counts if NO one else keeps it."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 1",
+            "number": 3,
+            "page": 2,
+            "category": "sorting information"
+          }
+        },
+        {
+          "id": "sch-oc-ts1-q4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Next year at school I need to choose four subjects to study.\n\nI have to choose one subject from each of the following lists:\n\n| List 1 | List 2 | List 3 | List 4 |\n|---|---|---|---|\n| arts | English | English | maths |\n| geography | maths | geography | science |\n| history | design | science | PE |\n| PE | health | technologies | technologies |\n\nI know that I want to study English, history and science.\n\nWhich one of the following can I **not** choose as my final subject?",
+          "options": [
+            "arts",
+            "geography",
+            "health",
+            "PE"
+          ],
+          "answer": 0,
+          "hint": "History is only in List 1, so List 1 is used up. Which lists are left for English and science, and which list is left over for the final subject?",
+          "steps": [
+            {
+              "explain": "History appears only in List 1, so history must use List 1.",
+              "work": "<p>List 1 → history</p>"
+            },
+            {
+              "explain": "English is in List 2 or List 3. Science is in List 3 or List 4. Try each way.",
+              "work": "<p>English (List 2) + science (List 3) → final from List 4: maths, PE, technologies</p><p>English (List 2) + science (List 4) → final from List 3: geography, technologies</p><p>English (List 3) + science (List 4) → final from List 2: maths, design, health</p>"
+            },
+            {
+              "explain": "Arts is only in List 1, which is already taken by history, so arts can never be the final subject.",
+              "work": "<p>Answer: <strong>arts</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "one subject from each",
+              "note": "Each list can be used only once."
+            },
+            {
+              "text": "English, history and science",
+              "note": "Place the subject that appears in only one list first."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 1",
+            "number": 4,
+            "page": 3,
+            "category": "choosing combinations"
+          }
+        },
+        {
+          "id": "sch-oc-ts1-q5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Only those students who attend the meeting at lunchtime today will be allowed to go on the excursion to the museum next week.\n\n**Mia:** “Jayden is going to the meeting today, so he’ll definitely be able to go on the excursion.”\n\n**Tyler:** “Noah’s going to cricket practice at lunchtime today, so he won’t be able to go on the excursion.”\n\nIf the information in the box is true, whose reasoning is correct?",
+          "options": [
+            "Mia only",
+            "Tyler only",
+            "Both Mia and Tyler",
+            "Neither Mia nor Tyler"
+          ],
+          "answer": 1,
+          "hint": "“Only those who attend” means attending is needed — but does attending guarantee a place on the excursion?",
+          "steps": [
+            {
+              "explain": "The rule says attending the meeting is <em>necessary</em>: if you miss it, you cannot go. It does not say everyone who attends will go."
+            },
+            {
+              "explain": "Mia says attending means Jayden will <em>definitely</em> go. Attending is needed, but it does not guarantee he goes (he may be sick, may not have permission, etc.).",
+              "work": "<p>Mia ✘</p>"
+            },
+            {
+              "explain": "Tyler says Noah is at cricket at lunchtime, so he misses the meeting and so cannot go. That follows from the rule.",
+              "work": "<p>Tyler ✔</p>"
+            },
+            {
+              "explain": "Only Tyler’s reasoning is correct.",
+              "work": "<p>Answer: <strong>Tyler only</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Only those students who attend",
+              "note": "“Only” means attending is required — it is not a guarantee."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 1",
+            "number": 5,
+            "page": 4,
+            "category": "whose reasoning is correct"
+          }
+        },
+        {
+          "id": "sch-oc-ts1-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Archie, Beau and Carter are standing in a row. If Archie is to the right of Beau and Carter is to the left of Archie, which one of the following statements must be true?",
+          "options": [
+            "Beau is furthest to the right.",
+            "Carter is furthest to the left.",
+            "Archie is in the middle.",
+            "Archie is furthest to the right."
+          ],
+          "answer": 3,
+          "hint": "Both Beau and Carter are to the left of Archie. Where does that put Archie?",
+          "steps": [
+            {
+              "explain": "Archie is to the right of Beau, and Carter is to the left of Archie — so both of the others are to Archie’s left."
+            },
+            {
+              "explain": "The order could be Beau, Carter, Archie or Carter, Beau, Archie. In both, Archie is on the right end.",
+              "work": "<p>Beau – Carter – <strong>Archie</strong></p><p>Carter – Beau – <strong>Archie</strong></p>"
+            },
+            {
+              "explain": "We cannot tell who is furthest left, but Archie is always furthest to the right.",
+              "work": "<p>Answer: <strong>Archie is furthest to the right.</strong></p>"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 1",
+            "number": 6,
+            "page": 4,
+            "category": "ordering and position"
+          }
+        },
+        {
+          "id": "sch-oc-ts1-q7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A show is to be performed from Wednesday 12th to Saturday 29th of the same month. There will be a performance every evening. On Wednesdays and Saturdays there will be an afternoon performance as well.\n\nHow many performances of the show will there be?",
+          "options": [
+            "21",
+            "22",
+            "23",
+            "24"
+          ],
+          "answer": 3,
+          "hint": "Count the evenings from the 12th to the 29th (include both). Then count how many Wednesdays and Saturdays fall in that time.",
+          "steps": [
+            {
+              "explain": "Count the evening shows. Every day from the 12th to the 29th inclusive has one.",
+              "work": "<p>29 − 12 + 1 = 18 evening shows</p>"
+            },
+            {
+              "explain": "Find the Wednesdays and Saturdays. The 12th is a Wednesday, so add 7 each time.",
+              "work": "<p>Wednesdays: 12, 19, 26 → 3</p><p>Saturdays: 15, 22, 29 → 3</p><p>6 afternoon shows</p>"
+            },
+            {
+              "explain": "Add them together.",
+              "work": "<p>18 + 6 = <strong>24</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Wednesday 12th to Saturday 29th",
+              "note": "Include both the first and last day when counting."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 1",
+            "number": 7,
+            "page": 5,
+            "category": "calendar counting"
+          }
+        },
+        {
+          "id": "sch-oc-ts1-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Darryl and Jim are in the corridor.\n\n**Darryl:** “Jane asked me to fetch her jacket, but I can’t seem to find it here. It’s blue, with a hood, she says.”\n\n**Jim:** “Here’s a blue jacket with a hood – it must be hers!”\n\nWhich one of the following sentences shows the mistake Jim has made?",
+          "options": [
+            "Jane might prefer a different jacket.",
+            "Darryl might be looking for someone else’s jacket.",
+            "There might be more than one blue jacket with a hood.",
+            "Even if the jacket is blue, it might not have a hood."
+          ],
+          "answer": 2,
+          "hint": "Jim found a jacket that matches the description. Does matching the description prove it is Jane’s?",
+          "steps": [
+            {
+              "explain": "Jim assumes that any blue jacket with a hood must be Jane’s."
+            },
+            {
+              "explain": "But other people could also own blue jackets with hoods, so matching the description does not prove it is hers.",
+              "work": "<p>Answer: <strong>There might be more than one blue jacket with a hood.</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "it must be hers",
+              "note": "“Must” is a strong claim — could another jacket fit the description too?"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 1",
+            "number": 8,
+            "page": 5,
+            "category": "identify the mistake"
+          }
+        },
+        {
+          "id": "sch-oc-ts1-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A police officer says: “Anyone riding a motorcycle should wear a helmet.”\n\nWhich one of these statements, if true, best supports the police officer’s claim?",
+          "options": [
+            "Good helmets are cheaper and lighter than they used to be.",
+            "You are much less likely to suffer a serious injury if you are wearing a helmet.",
+            "People riding horses normally wear some sort of head protection.",
+            "Motorcycles can travel a lot faster than bicycles."
+          ],
+          "answer": 1,
+          "hint": "Look for the statement that gives the strongest reason WHY a motorcyclist should wear a helmet.",
+          "steps": [
+            {
+              "explain": "The claim is that motorcycle riders should wear helmets. The best support is a reason helmets help riders."
+            },
+            {
+              "explain": "B says helmets make serious injury much less likely — a direct reason to wear one. The others are about price, horses or speed and do not give a reason.",
+              "work": "<p>Answer: <strong>B</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "best supports",
+              "note": "Choose the reason that most directly backs up the claim."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 1",
+            "number": 9,
+            "page": 6,
+            "category": "strengthen an argument"
+          }
+        },
+        {
+          "id": "sch-oc-ts1-q10",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "On a normal dice the numbers on each pair of opposite sides add up to 7.\n\nWhich one of the following nets shown below is the only one which makes a normal dice when folded?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 503\" width=\"90%\" height=\"auto\"><image href=\"/oc/ts1-q10.jpg\" x=\"0\" y=\"0\" width=\"800\" height=\"503\"/></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 2,
+          "hint": "In a net, two squares with exactly one square between them in a straight line end up opposite each other. Check that each opposite pair adds to 7.",
+          "steps": [
+            {
+              "explain": "In a straight row of squares, the 1st and 3rd squares fold to be opposite each other (as do the 2nd and 4th)."
+            },
+            {
+              "explain": "Check A, B and D, which each have a row or column of four squares.",
+              "work": "<p>A: row 1, 3, 4, 6 → 1 opposite 4 (5) ✘</p><p>B: column 2, 6, 1, 4 → 6 opposite 4 (10) ✘</p><p>D: row 4, 3, 2, 5 → 4 opposite 2 (6) ✘</p>"
+            },
+            {
+              "explain": "Check C (the staircase net). With 3 as the base: 5 and 2 become front and back, 6 and 1 become the two sides, and 4 is the top.",
+              "work": "<p>5 + 2 = 7, 6 + 1 = 7, 3 + 4 = 7 ✔</p><p>Answer: <strong>C</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "opposite sides add up to 7",
+              "note": "The pairs must be 1–6, 2–5 and 3–4."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 1",
+            "number": 10,
+            "page": 6,
+            "category": "cube nets"
+          }
+        },
+        {
+          "id": "sch-oc-ts1-q11",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "When Kinta was learning to drive his instructor told him: “To have even a chance of passing your driving test you must have had at least 20 hours of driving practice.”\n\nIf Kinta’s instructor is correct, which one of these statements will be true?",
+          "options": [
+            "All the learner drivers who have had 20 hours or more of practice will pass their test.",
+            "None of the learner drivers who have had less than 20 hours of practice will pass their test.",
+            "Some of the learner drivers who have had less than 20 hours of practice will pass their test.",
+            "Only the learner drivers who have had less than 20 hours of practice will pass their test."
+          ],
+          "answer": 1,
+          "hint": "20 hours is needed just to have a chance. What happens to someone with less than 20 hours?",
+          "steps": [
+            {
+              "explain": "The instructor says 20 hours of practice is <em>needed</em> to have any chance of passing. It does not say 20 hours guarantees a pass."
+            },
+            {
+              "explain": "So anyone with less than 20 hours has no chance — none of them will pass.",
+              "work": "<p>A ✘ — 20 hours gives a chance, not a guaranteed pass.</p><p>B ✔</p><p>C and D ✘ — they contradict the instructor.</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "To have even a chance",
+              "note": "20 hours is required just to have a chance — it is not a promise of passing."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 1",
+            "number": 11,
+            "page": 7,
+            "category": "necessary conditions"
+          }
+        },
+        {
+          "id": "sch-oc-ts1-q12",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An emu’s egg is dark green, speckled with white spots, and can measure up to 13 cm long. Only an ostrich’s egg is larger.\n\n**Charlotte:** “This egg is dark green, and fairly large, so it must be an emu’s.”\n\n**Oliver:** “But it’s only about 10 cm long, so it can’t be!”\n\nIf the information in the box is true, whose reasoning is correct?",
+          "options": [
+            "Charlotte only",
+            "Oliver only",
+            "Both Charlotte and Oliver",
+            "Neither Charlotte nor Oliver"
+          ],
+          "answer": 3,
+          "hint": "Does being dark green and fairly large prove an egg is an emu’s? And does “up to 13 cm” mean an emu egg cannot be 10 cm?",
+          "steps": [
+            {
+              "explain": "Charlotte: other eggs might also be dark green and fairly large. The box does not say only emu eggs look like that, so “must be an emu’s” does not follow.",
+              "work": "<p>Charlotte ✘</p>"
+            },
+            {
+              "explain": "Oliver: the box says emu eggs can be <em>up to</em> 13 cm, so a 10 cm emu egg is possible. “It can’t be” does not follow.",
+              "work": "<p>Oliver ✘</p>"
+            },
+            {
+              "explain": "Neither conclusion follows from the information.",
+              "work": "<p>Answer: <strong>Neither Charlotte nor Oliver</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "up to 13 cm long",
+              "note": "“Up to” gives the biggest size — smaller eggs are still possible."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 1",
+            "number": 12,
+            "page": 8,
+            "category": "whose reasoning is correct"
+          }
+        },
+        {
+          "id": "sch-oc-ts1-q13",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A piece of string is initially held end-to-end in a straight line. A mark is made in the middle of the string. The string is then folded in half and the new ends again pulled tight. A mark is made in the middle of the strands of folded string. This process is then repeated a third time.\n\nThe string is then unfolded and its ends pulled so that it is once again in its initial straight line.\n\nThe distance between marks on the string is found to be 4 cm.\n\nHow long is the piece of string?",
+          "options": [
+            "16 cm",
+            "24 cm",
+            "28 cm",
+            "32 cm"
+          ],
+          "answer": 3,
+          "hint": "Track the number of equal pieces the marks cut the string into after each step: 1 mark, then more, then more.",
+          "steps": [
+            {
+              "explain": "First mark: one mark in the middle cuts the string into 2 equal pieces.",
+              "work": "<p>2 pieces</p>"
+            },
+            {
+              "explain": "Second mark: folded in half, the middle of the strands marks the middle of each half — at ¼ and ¾ of the way along.",
+              "work": "<p>4 pieces</p>"
+            },
+            {
+              "explain": "Third mark: folded again (4 strands), marking the middle adds marks at ⅛, ⅜, ⅝ and ⅞.",
+              "work": "<p>8 pieces</p>"
+            },
+            {
+              "explain": "Each piece is 4 cm long.",
+              "work": "<p>8 × 4 cm = <strong>32 cm</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "repeated a third time",
+              "note": "Each time, the number of equal pieces doubles."
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 1",
+            "number": 13,
+            "page": 8,
+            "category": "folding and measurement"
+          }
+        },
+        {
+          "id": "sch-oc-ts1-q14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "**Mrs Hughes:** “I know that ten of the children in my class are short-sighted, but I only saw seven wearing glasses this morning. So some of the class must have been wearing contact lenses.”\n\nWhich one of the following sentences shows the mistake Mrs Hughes has made?",
+          "options": [
+            "She did not include the children in other classes.",
+            "She did not say which children must have been wearing contact lenses.",
+            "Some of the short-sighted children might not have been wearing either glasses or contact lenses.",
+            "Some of the children who have normal eyesight now might need glasses in the future."
+          ],
+          "answer": 2,
+          "hint": "Mrs Hughes thinks the 3 children without glasses must be wearing contact lenses. Is there another possibility?",
+          "steps": [
+            {
+              "explain": "10 children are short-sighted and 7 wore glasses, so 3 did not wear glasses."
+            },
+            {
+              "explain": "Mrs Hughes assumes those 3 must be wearing contact lenses. But they could be wearing nothing at all (or be absent).",
+              "work": "<p>Answer: <strong>C</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "must have been wearing contact lenses",
+              "note": "Is wearing contact lenses the ONLY other possibility?"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 1",
+            "number": 14,
+            "page": 9,
+            "category": "identify the mistake"
+          }
+        },
+        {
+          "id": "sch-oc-ts1-q15",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Jess, Kamilla, Lucy, and Max are seated around a table on a train. Two of them are facing forwards (in the direction of travel) and two are facing backwards. Two have window seats and the other two have aisle seats.\n\nI know that:\nJess is sitting diagonally opposite Lucy;\nMax is facing forwards;\nKamilla is next to Jess.\n\nWhich one of the following do I also know?",
+          "options": [
+            "Lucy is travelling backwards.",
+            "Lucy has a window seat.",
+            "Kamilla has an aisle seat.",
+            "Jess is sitting opposite Max."
+          ],
+          "answer": 3,
+          "hint": "Draw a 2 × 2 table. Put Jess and Kamilla side by side, then Lucy diagonally across from Jess. Where must Max go?",
+          "steps": [
+            {
+              "explain": "Kamilla is next to Jess, so they sit side by side on one side of the table. Lucy and Max are on the other side."
+            },
+            {
+              "explain": "Lucy is diagonally opposite Jess, so Max must be in the seat directly opposite Jess.",
+              "work": "<p>Jess | Kamilla</p><p>———————</p><p>Max | Lucy</p>"
+            },
+            {
+              "explain": "Max faces forwards, so Lucy (same side) also faces forwards — A is false. Which side is the window is not given, so B and C are unknown.",
+              "work": "<p>Answer: <strong>Jess is sitting opposite Max.</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "diagonally opposite",
+              "note": "Diagonally opposite = other side of the table AND the other seat across."
+            },
+            {
+              "text": "Kamilla is next to Jess",
+              "note": "Next to = same side of the table."
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 1",
+            "number": 15,
+            "page": 9,
+            "category": "seating arrangements"
+          }
+        },
+        {
+          "id": "sch-oc-ts1-q16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The diagram shows one of a number of ways that five different shapes can be arranged together to form a square.\n\nWhich one of the following squares consists of the same five shapes as the square above? (They may be turned over.)",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 771\" width=\"80%\" height=\"auto\"><image href=\"/oc/ts1-q16.jpg\" x=\"0\" y=\"0\" width=\"800\" height=\"771\"/></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 3,
+          "hint": "Each shape is made of 5 small squares. Name the five shapes in the top square, then look for an option that has a shape NOT in that set.",
+          "steps": [
+            {
+              "explain": "The top square is a 5 × 5 grid made of five shapes, each of 5 small squares: a line of four with a bump (Y), a zig-zag staircase (W), a 2 + 3 offset strip (N), a 2 × 2 block with one extra (P), and a corner of 3 + 3 (V)."
+            },
+            {
+              "explain": "Check the options for a shape that does not belong.",
+              "work": "<p>A: contains an S/Z shape (a row of three with one square up at one end and one down at the other) ✘</p><p>B: contains an L shape (a line of four with one square at the end) ✘</p><p>C: contains an L shape along the top ✘</p>"
+            },
+            {
+              "explain": "D is made of exactly the Y, W, N, P and V shapes.",
+              "work": "<p>Answer: <strong>D</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "They may be turned over",
+              "note": "A shape that is flipped or rotated still counts as the same shape."
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 1",
+            "number": 16,
+            "page": 10,
+            "category": "shapes and pieces"
+          }
+        },
+        {
+          "id": "sch-oc-ts1-q17",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "An environmentalist says: “Plastic pollution in our oceans is not just a problem for the creatures that live there − it affects us too.”\n\nWhich one of these statements, if true, best supports the environmentalist’s claim?",
+          "options": [
+            "Only a small proportion of plastic is recycled.",
+            "Many things made of plastic could be made from environmentally friendly alternatives.",
+            "Plastics are durable and can last for over 500 years.",
+            "Plastics have been found in fish sold in supermarkets."
+          ],
+          "answer": 3,
+          "hint": "The claim is that ocean plastic affects PEOPLE as well as sea creatures. Which statement shows a link to people?",
+          "steps": [
+            {
+              "explain": "The key part of the claim is “it affects us too”. We need evidence that ocean plastic reaches people."
+            },
+            {
+              "explain": "D: plastics found in fish sold in supermarkets means people may eat plastic from the ocean — a direct effect on us. The others do not connect ocean plastic to people.",
+              "work": "<p>Answer: <strong>D</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "it affects us too",
+              "note": "The support must link ocean plastic to people."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 1",
+            "number": 17,
+            "page": 11,
+            "category": "strengthen an argument"
+          }
+        },
+        {
+          "id": "sch-oc-ts1-q18",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "When the fire alarm goes off, it could either be a real fire, or it could be a fire drill. Fire drills can be scheduled for any day of the week, but they always happen at exactly 2 o’clock in the afternoon.\n\n**Yuri:** “If the fire alarm goes off during the morning, you know it must be a real fire!”\n\n**Bindi:** “Even if the fire alarm is not going off, it doesn’t mean that there isn’t a fire.”\n\nIf the information in the box is true, whose reasoning is correct?",
+          "options": [
+            "Yuri only",
+            "Bindi only",
+            "Both Yuri and Bindi",
+            "Neither Yuri nor Bindi"
+          ],
+          "answer": 2,
+          "hint": "Yuri: can a drill happen in the morning? Bindi: does the box say the alarm always goes off when there is a fire?",
+          "steps": [
+            {
+              "explain": "Yuri: an alarm is either a fire or a drill, and drills only happen at 2 pm. A morning alarm cannot be a drill, so it must be a real fire.",
+              "work": "<p>Yuri ✔</p>"
+            },
+            {
+              "explain": "Bindi: the box only says what an alarm could mean. It never says every fire sets off the alarm, so a silent alarm does not prove there is no fire.",
+              "work": "<p>Bindi ✔</p>"
+            },
+            {
+              "explain": "Both pieces of reasoning are correct.",
+              "work": "<p>Answer: <strong>Both Yuri and Bindi</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "it could either be a real fire, or it could be a fire drill",
+              "note": "Only two possibilities when the alarm sounds."
+            },
+            {
+              "text": "always happen at exactly 2 o’clock",
+              "note": "A drill can never happen at any other time."
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 1",
+            "number": 18,
+            "page": 11,
+            "category": "whose reasoning is correct"
+          }
+        },
+        {
+          "id": "sch-oc-ts1-q19",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "At a school, exams are held at the end of each year. A prize is awarded in each subject to the student who has made the biggest improvement in his/her exam mark since the previous year. In Year 9, the marks achieved by the six students in the mathematics class were as follows:\n\n| Student | Year 9 mark |\n|---|---|\n| Uma | 84 |\n| Finn | 82 |\n| Lily | 75 |\n| Arlo | 73 |\n| Leon | 73 |\n| Sophie | 69 |\n\nAt the end of Year 10, their marks were as follows:\n\n| Student | Year 10 mark |\n|---|---|\n| Finn | 88 |\n| Lily | 86 |\n| Uma | 79 |\n| Arlo | 78 |\n| Sophie | 78 |\n| Leon | 73 |\n\nWhich student won the Year 10 prize for mathematics?",
+          "options": [
+            "Finn",
+            "Lily",
+            "Uma",
+            "Sophie"
+          ],
+          "answer": 1,
+          "hint": "The prize is for the biggest improvement, not the highest mark. Find Year 10 mark − Year 9 mark for each student.",
+          "steps": [
+            {
+              "explain": "The prize goes to the biggest <em>improvement</em>. Subtract each student’s Year 9 mark from their Year 10 mark.",
+              "work": "<p>Uma: 79 − 84 = −5</p><p>Finn: 88 − 82 = +6</p><p>Lily: 86 − 75 = +11</p><p>Arlo: 78 − 73 = +5</p><p>Leon: 73 − 73 = 0</p><p>Sophie: 78 − 69 = +9</p>"
+            },
+            {
+              "explain": "Lily improved the most.",
+              "work": "<p>Answer: <strong>Lily</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "biggest improvement",
+              "note": "Compare the change in marks, not the marks themselves."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 1",
+            "number": 19,
+            "page": 12,
+            "category": "reading tables"
+          }
+        },
+        {
+          "id": "sch-oc-ts1-q20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Arthur, Bilal, Conor, and David play regularly in a sports team. The coach has just told them: “If Arthur does not play tomorrow, then Bilal will play. If Arthur does play, then Conor will play in place of David.”\n\nSo, if Bilal does not play tomorrow, which of the other three will be in the team?",
+          "options": [
+            "Arthur only",
+            "David only",
+            "Arthur and Conor",
+            "Conor and David"
+          ],
+          "answer": 2,
+          "hint": "If Arthur did not play, Bilal would play. Bilal is not playing — so what must be true about Arthur?",
+          "steps": [
+            {
+              "explain": "If Arthur did not play, Bilal would play. Since Bilal is not playing, Arthur must be playing.",
+              "work": "<p>Arthur plays</p>"
+            },
+            {
+              "explain": "If Arthur plays, Conor plays instead of David.",
+              "work": "<p>Conor plays, David does not</p>"
+            },
+            {
+              "explain": "So the players are Arthur and Conor.",
+              "work": "<p>Answer: <strong>Arthur and Conor</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "If Arthur does not play tomorrow, then Bilal will play",
+              "note": "Work backwards: no Bilal means Arthur must play."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 1",
+            "number": 20,
+            "page": 12,
+            "category": "if-then logic"
+          }
+        },
+        {
+          "id": "sch-oc-ts1-q21",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "**Faisal:** “To have any chance of passing your piano exam, you will need to practise for at least fifteen minutes, four times a week.”\n\n**Sajid:** “I practise every day for twenty minutes or more, so I’m sure to pass the exam.”\n\nWhich one of these sentences shows the mistake Sajid has made?",
+          "options": [
+            "Taking an exam can be a stressful experience.",
+            "Learning to play an instrument well requires many years of practice.",
+            "Practising alone is not as useful as having a lesson with your teacher.",
+            "Doing the minimum practice required does not guarantee success in the exam."
+          ],
+          "answer": 3,
+          "hint": "Faisal says the practice gives you a chance. Does Sajid treat it as a guarantee?",
+          "steps": [
+            {
+              "explain": "Faisal says the practice is <em>needed</em> to have any chance of passing."
+            },
+            {
+              "explain": "Sajid does enough practice, then says he is <em>sure</em> to pass. Meeting a requirement gives a chance, not a guarantee.",
+              "work": "<p>Answer: <strong>D</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "To have any chance of passing",
+              "note": "The practice is needed — it does not promise a pass."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 1",
+            "number": 21,
+            "page": 13,
+            "category": "identify the mistake"
+          }
+        },
+        {
+          "id": "sch-oc-ts1-q22",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Dominoes are to be arranged in a square, on a table, face up, as shown below. New dominoes are placed so that neither of the numbers on them is placed next to the same number on another tile.\n\nThe dominoes numbered 1−5 shown above may be used only once.\n\nWhich of the two-domino combinations shown below will **not** complete the square?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 581\" width=\"90%\" height=\"auto\"><image href=\"/oc/ts1-q22.jpg\" x=\"0\" y=\"0\" width=\"800\" height=\"581\"/></svg>"
+          },
+          "options": [
+            "1 and 3",
+            "2 and 5",
+            "3 and 4",
+            "4 and 5"
+          ],
+          "answer": 2,
+          "hint": "There are two gaps: one at the top right (lying flat) and one at the bottom right (standing up). Write down which numbers are NOT allowed in each half of each gap.",
+          "steps": [
+            {
+              "explain": "Read the dominoes as 1: 3|5, 2: 2|4, 3: blank(0)|2, 4: 2|2, 5: 0|5. Find the numbers next to each gap.",
+              "work": "<p>Top gap — left half is next to 0 and 5; right half is next to 4.</p><p>Bottom gap — top half is next to 2 and 4; bottom half is next to 2.</p>"
+            },
+            {
+              "explain": "Check which dominoes can fit the bottom gap (top half not 2 or 4, bottom half not 2).",
+              "work": "<p>1 (3|5) ✔</p><p>2 (2|4) ✘</p><p>3 (0|2) ✘</p><p>4 (2|2) ✘</p><p>5 (0|5) ✔</p>"
+            },
+            {
+              "explain": "Only dominoes 1 and 5 fit the bottom gap. Option C uses 3 and 4 — neither can fill the bottom gap.",
+              "work": "<p>A: 3 top, 1 bottom ✔</p><p>B: 2 top (4|2), 5 bottom ✔</p><p>C: 3 and 4 ✘</p><p>D: 4 top, 5 bottom ✔</p><p>Answer: <strong>3 and 4</strong></p>"
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 1",
+            "number": 22,
+            "page": 14,
+            "category": "dominoes"
+          }
+        },
+        {
+          "id": "sch-oc-ts1-q23",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "There are six towns (A, B, C, D, E and F) in a region.\n\nTown B is north of Town C and northeast of Town A. Town C is north of Town D and west of Town E. Town F is east of Town E.\n\nWhich town is northwest of Town D?",
+          "options": [
+            "Town A",
+            "Town B",
+            "Town E",
+            "Town F"
+          ],
+          "answer": 0,
+          "hint": "Draw a quick map: put D at the bottom, C above it, B above C. Then place E, F and A.",
+          "steps": [
+            {
+              "explain": "Start with the towns in a straight line: D, then C to its north, then B to the north of C.",
+              "work": "<p>B, C and D are in a north–south line, so B is directly north of D (not northwest).</p>"
+            },
+            {
+              "explain": "E is east of C and F is east of E, so both are to the east (northeast) of D."
+            },
+            {
+              "explain": "B is northeast of A, so A is southwest of B — to the west of the B–C–D line and north of D.",
+              "work": "<p>Answer: <strong>Town A</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "northeast of Town A",
+              "note": "If B is northeast of A, then A is southwest of B."
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 1",
+            "number": 23,
+            "page": 15,
+            "category": "directions"
+          }
+        },
+        {
+          "id": "sch-oc-ts1-q24",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A politician said in a television interview: “The more trade that countries do with each other, the better it is for everyone.”\n\nWhich one of these statements, if true, best supports the politician’s claim?",
+          "options": [
+            "It is important for a country to have strong businesses.",
+            "Businesses do better when more people are buying their goods or services.",
+            "Countries that trade with each other are less likely to go to war against each other.",
+            "Different countries can sometimes make particular goods more cheaply than others."
+          ],
+          "answer": 2,
+          "hint": "The claim is about trade being good for EVERYONE. Which statement shows a benefit of trade that everyone shares?",
+          "steps": [
+            {
+              "explain": "The claim: more trade between countries is better for <em>everyone</em>."
+            },
+            {
+              "explain": "A and B are about businesses, not everyone. D explains why trade happens but not that more trade helps everyone."
+            },
+            {
+              "explain": "C: trading countries are less likely to go to war — peace benefits everyone in those countries.",
+              "work": "<p>Answer: <strong>C</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "better it is for everyone",
+              "note": "The support must show a benefit for everyone, not just some people."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 1",
+            "number": 24,
+            "page": 15,
+            "category": "strengthen an argument"
+          }
+        },
+        {
+          "id": "sch-oc-ts1-q25",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Daniel wants to make as many cupcakes as possible from the ingredients he has at home.\n\nThe recipe to make 8 cupcakes needs 100 g of flour, 100 g of sugar, 100 g of butter and 2 eggs.\n\nAt home, he has 600 g of flour, 500 g of sugar, 300 g of butter and 5 eggs.\n\nWhat is the maximum number of cupcakes Daniel can make?",
+          "options": [
+            "12",
+            "16",
+            "20",
+            "24"
+          ],
+          "answer": 2,
+          "hint": "Work out how many cupcakes each ingredient alone would allow. The smallest answer is the limit.",
+          "steps": [
+            {
+              "explain": "Find how many cupcakes each ingredient is enough for.",
+              "work": "<p>Flour: 600 g ÷ 100 g = 6 batches → 48 cupcakes</p><p>Sugar: 500 g ÷ 100 g = 5 batches → 40 cupcakes</p><p>Butter: 300 g ÷ 100 g = 3 batches → 24 cupcakes</p><p>Eggs: 2 eggs make 8 cupcakes, so 1 egg makes 4 → 5 eggs make 20 cupcakes</p>"
+            },
+            {
+              "explain": "He runs out of eggs first, so eggs set the limit.",
+              "work": "<p>Maximum = <strong>20</strong> cupcakes</p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "as many cupcakes as possible",
+              "note": "The ingredient that runs out first decides the answer."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 1",
+            "number": 25,
+            "page": 15,
+            "category": "ratio and limiting amounts"
+          }
+        },
+        {
+          "id": "sch-oc-ts1-q26",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Whenever Mr Rudd’s favourite team loses, it always puts him in a bad mood. And when Mr Rudd is in a bad mood, he always gives us extra homework.\n\n**Wei:** “We got extra homework last week – Mr Rudd’s team must have lost!”\n\n**Dylan:** “If they lose this week, we’re sure to get extra homework again!”\n\nIf the information in the box is true, whose reasoning is correct?",
+          "options": [
+            "Wei only",
+            "Dylan only",
+            "Both Wei and Dylan",
+            "Neither Wei nor Dylan"
+          ],
+          "answer": 1,
+          "hint": "The chain goes: team loses → bad mood → extra homework. Can you follow the chain backwards?",
+          "steps": [
+            {
+              "explain": "The box gives a chain: team loses → bad mood → extra homework."
+            },
+            {
+              "explain": "Wei goes backwards: extra homework → team lost. But Mr Rudd could be in a bad mood for another reason, or give homework for another reason.",
+              "work": "<p>Wei ✘</p>"
+            },
+            {
+              "explain": "Dylan goes forwards along the chain: team loses → bad mood → extra homework.",
+              "work": "<p>Dylan ✔</p><p>Answer: <strong>Dylan only</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Whenever Mr Rudd’s favourite team loses",
+              "note": "This only tells us what happens AFTER a loss."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 1",
+            "number": 26,
+            "page": 16,
+            "category": "whose reasoning is correct"
+          }
+        },
+        {
+          "id": "sch-oc-ts1-q27",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Three balls – each of which is either red or yellow – lie in a straight line on a pool table. Aziz strikes the first ball, which is red. That ball hits the middle ball. The middle ball then hits the last ball, which is yellow.\n\nOn the basis of this information, which one of the following statements must be true?",
+          "options": [
+            "Only one of the balls was red.",
+            "A red ball hit a yellow ball.",
+            "A yellow ball hit a red ball.",
+            "Only one of the balls was yellow."
+          ],
+          "answer": 1,
+          "hint": "We do not know the colour of the middle ball. Try it both ways and see which statement is true each time.",
+          "steps": [
+            {
+              "explain": "First ball red, last ball yellow. The middle ball could be red or yellow."
+            },
+            {
+              "explain": "If the middle ball is red: red hits red, then red hits yellow. If the middle ball is yellow: red hits yellow, then yellow hits yellow.",
+              "work": "<p>Either way, a red ball hits a yellow ball.</p>"
+            },
+            {
+              "explain": "A, C and D are only true in one of the two cases.",
+              "work": "<p>Answer: <strong>A red ball hit a yellow ball.</strong></p>"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 1",
+            "number": 27,
+            "page": 17,
+            "category": "must be true"
+          }
+        },
+        {
+          "id": "sch-oc-ts1-q28",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A view of a single level of a building is shown below.\n\nWhich one of the following drawings represents the floor plan for this level of the building?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 1026\" width=\"85%\" height=\"auto\"><image href=\"/oc/ts1-q28.jpg\" x=\"0\" y=\"0\" width=\"800\" height=\"1026\"/></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 3,
+          "hint": "Start with the biggest room — the long room at the front. Notice its back wall has a step. Then look at the two rooms stacked behind its narrow end.",
+          "steps": [
+            {
+              "explain": "The long room at the front is the largest room. Its back wall has a step, so one end of it is narrower. A has no step in its long room, so A ✘."
+            },
+            {
+              "explain": "Behind the narrow end of the long room there is a gap, then two rooms one behind the other, with the back one bigger and shifted further out. B has only three spaces and no pair of stacked rooms, and C has no pair of stacked rooms either.",
+              "work": "<p>B ✘, C ✘</p>"
+            },
+            {
+              "explain": "D (turned upside-down) shows the stepped long room, the corridor with arms behind its wider end, and the small room with the larger room beyond it.",
+              "work": "<p>Answer: <strong>D</strong></p>"
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 1",
+            "number": 28,
+            "page": 18,
+            "category": "spatial reasoning"
+          }
+        },
+        {
+          "id": "sch-oc-ts1-q29",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A girl is locked in the dungeon of a castle. There are 5 chests in a row in the dungeon, one of which contains a key to escape, but the others contain poisonous snakes. The girl can only open one chest. She has 5 clues to help her make her choice:\n\nThe white chest is 2 places away from the chest with the key.\nThe black chest is at the far right and 2 places away from the white chest.\nThe red chest is not next to the chest with the key.\nThe yellow chest is to the left of the white one.\nThe purple chest is not next to the black or white chests.\n\nWhich chest should the girl open to find the key?",
+          "options": [
+            "black",
+            "red",
+            "yellow",
+            "purple"
+          ],
+          "answer": 3,
+          "hint": "Number the places 1 to 5 from the left. Place the black chest first, then the white one, then use the purple clue.",
+          "steps": [
+            {
+              "explain": "Black is at the far right (place 5). White is 2 places away from black, so white is in place 3.",
+              "work": "<p>_ _ W _ B</p>"
+            },
+            {
+              "explain": "Purple is not next to black or white, so it cannot be in places 2 or 4. Purple goes in place 1.",
+              "work": "<p>P _ W _ B</p>"
+            },
+            {
+              "explain": "Yellow is to the left of white, so yellow is in place 2 and red is in place 4.",
+              "work": "<p>P Y W R B</p>"
+            },
+            {
+              "explain": "The key is 2 places from white: place 1 (purple) or place 5 (black). Red (place 4) is next to black, so the key is not in black.",
+              "work": "<p>Key → place 1 → <strong>purple</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "The black chest is at the far right",
+              "note": "Start with the clue that fixes a chest in one exact place."
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 1",
+            "number": 29,
+            "page": 19,
+            "category": "logic puzzle"
+          }
+        },
+        {
+          "id": "sch-oc-ts1-q30",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Zara’s class wanted to decide what colour to paint their classroom. They decided to have a vote. Students could vote to change it to red, yellow or green. Everyone had to cast two votes, but they could not vote for the same colour twice. The colour would only be changed if everyone voted for the same colour; if this did not happen the room would be left unpainted. Every colour got at least one vote.\n\nKnowing **one** of the following would allow us to know the result of the vote. Which one is it?",
+          "options": [
+            "No student voted for both red and green.",
+            "Every student voted for either green or yellow, or both.",
+            "Red was the most popular vote.",
+            "Only two people voted for green."
+          ],
+          "answer": 0,
+          "hint": "Each student votes for exactly two different colours: red + yellow, red + green or yellow + green. Which statement forces one colour onto every ballot?",
+          "steps": [
+            {
+              "explain": "Each student picks a pair: red+yellow, red+green or yellow+green."
+            },
+            {
+              "explain": "A: if nobody picked red+green, every student picked red+yellow or yellow+green — so every student voted yellow. The room is painted yellow. The result is known.",
+              "work": "<p>A ✔</p>"
+            },
+            {
+              "explain": "B, C and D each still allow different results (for example, some red+green and some red+yellow pairs), so they do not tell us the result.",
+              "work": "<p>Answer: <strong>A</strong></p>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "everyone voted for the same colour",
+              "note": "The room changes only if ONE colour is on every student’s ballot."
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 1,
+          "meta": {
+            "source": "NSW Opportunity Class Placement Test · Thinking Skills",
+            "test": "Practice Test 1",
+            "number": 30,
+            "page": 19,
+            "category": "logic puzzle"
+          }
+        }
+      ]
     }
   ]
 }
