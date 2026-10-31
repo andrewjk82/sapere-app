@@ -121,12 +121,9 @@ const Sidebar = ({ activeTab, setActiveTab, isLocked, onShowLeaderboard, onShowN
         {!isAdmin && profile?.examPrepEnabled === true && (
           <SidebarItem icon={GraduationCap} label="Exam Prep" active={activeTab === 'ExamPrep'} onClick={() => setActiveTab('ExamPrep')} disabled={isLocked} />
         )}
-        {!isAdmin && profile?.scholarshipEnabled === true && (
-          <SidebarItem icon={Award} label="Scholarship" active={activeTab === 'Scholarship'} onClick={() => setActiveTab('Scholarship')} disabled={isLocked} />
-        )}
-        {/* OC and Selective are separate pages: a student sees one item per exam the teacher ticked. */}
+        {/* OC, Selective and Scholarship (ACER) are separate pages: a student sees one item per exam the teacher ticked. */}
         {!isAdmin && hubExamsFor(profile).map((examId) => (
-          <SidebarItem key={examId} icon={Target} label={HUB_PAGES[examId].label} active={activeTab === HUB_PAGES[examId].tab} onClick={() => setActiveTab(HUB_PAGES[examId].tab)} disabled={isLocked} />
+          <SidebarItem key={examId} icon={examId === 'sch-acer' ? Award : Target} label={HUB_PAGES[examId].label} active={activeTab === HUB_PAGES[examId].tab} onClick={() => setActiveTab(HUB_PAGES[examId].tab)} disabled={isLocked} />
         ))}
         {isAdmin && (
           <SidebarItem icon={Inbox} label="Reports & Review" active={activeTab === 'Reports'} onClick={() => setActiveTab('Reports')} disabled={isLocked} badge={reportCount + gradingCount} />

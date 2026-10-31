@@ -1,5 +1,5 @@
 /**
- * OC & Selective page: mock-exam formats and the weak-spot summary.
+ * OC / Selective / Scholarship(ACER) pages: mock-exam formats and the weak-spot summary.
  *
  * A mock is a ScholarshipTest run with the real exam's length and time limit, kept in its own history
  * (`mock:<examId>` in the test storage key) so it never mixes with the 10-question topic tests. The weak-spot
@@ -11,18 +11,24 @@ import { loadTestState, gradeQuestionMarks } from './scholarshipTest.js';
 
 export const OC_EXAM_ID = 'sch-oc';
 export const SELECTIVE_EXAM_ID = 'sch-selective';
-export const HUB_EXAM_IDS = [OC_EXAM_ID, SELECTIVE_EXAM_ID];
+export const ACER_EXAM_ID = 'sch-acer';
+export const HUB_EXAM_IDS = [OC_EXAM_ID, SELECTIVE_EXAM_ID, ACER_EXAM_ID];
 
-/** One sidebar page per exam: its tab key (App routes on it) and the name students see. */
+/**
+ * One sidebar page per exam: its tab key (App routes on it), the name students see, and a line under the title.
+ * The Scholarship page is the ACER exam (the only exam in the Scholarship list besides OC and Selective).
+ */
 export const HUB_PAGES = {
-  [OC_EXAM_ID]: { tab: 'OcPrep', label: 'OC' },
-  [SELECTIVE_EXAM_ID]: { tab: 'SelectivePrep', label: 'Selective' },
+  [OC_EXAM_ID]: { tab: 'OcPrep', label: 'OC', blurb: 'Opportunity Class placement test practice.' },
+  [SELECTIVE_EXAM_ID]: { tab: 'SelectivePrep', label: 'Selective', blurb: 'Selective High School placement test practice.' },
+  [ACER_EXAM_ID]: { tab: 'Scholarship', label: 'Scholarship', blurb: 'ACER scholarship test practice.' },
 };
 export const examIdForTab = (tab) => HUB_EXAM_IDS.find((id) => HUB_PAGES[id].tab === tab) || null;
 
 /**
  * Real test formats: marks (one per question, one per part of a passage) and minutes. Writing is not
- * auto-gradable and has no questions in the bank, so it is not offered as a mock.
+ * auto-gradable and has no questions in the bank, so it is not offered as a mock. ACER has no entry on purpose:
+ * its sections have no verified format yet, so its page offers topic practice only, not a made-up mock.
  * Check against the current NSW Department of Education test information before changing a student-facing number.
  */
 export const MOCK_FORMATS = {
@@ -42,7 +48,7 @@ export const RECENT_ATTEMPTS = 8;
 
 export const mockStorageId = (examId) => `mock:${examId}`;
 
-/** The OC / Selective exams this student has switched on (Scholarship on + the exam ticked). */
+/** The exams with their own page that this student has switched on (Scholarship on + the exam ticked). */
 export const hubExamsFor = (profile) => {
   if (profile?.scholarshipEnabled !== true) return [];
   const all = (CURRICULUM_DATA.Scholarship || []).map((e) => e.id);

@@ -74,7 +74,7 @@ export default function ScholarshipPanel({ styles, student, onUpdateSetting }) {
       )}
       <div style={{ marginTop: "14px", display: "flex", alignItems: "flex-start", gap: "10px", fontSize: "0.78rem", color: "#64748b", fontWeight: 600, lineHeight: 1.5 }}>
         <Award size={16} color="#7c3aed" style={{ flexShrink: 0, marginTop: 2 }} />
-        <span>Adds a Scholarship page to this student's sidebar with the exams ticked above, topic by topic — no timer, answers and explanations after each question. Not part of Daily Practice or Exam Prep.</span>
+        <span>Adds one sidebar page per exam ticked above — OC, Selective and Scholarship (ACER) — each with topic tests, full-length mocks (OC, Selective) and a weak-spot summary. Not part of Daily Practice or Exam Prep.</span>
       </div>
     </div>
   );

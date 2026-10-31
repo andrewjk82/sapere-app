@@ -8,24 +8,27 @@ import {
 let passed = 0;
 const test = (name, fn) => { fn(); passed += 1; console.log(`  ✓ ${name}`); };
 
-test('only students with Scholarship on and OC or Selective ticked get the page', () => {
+test('a student gets one page per ticked exam, and none when Scholarship is off', () => {
   assert.deepEqual(hubExamsFor({ scholarshipEnabled: false, scholarshipExams: ['sch-oc'] }), []);
-  assert.deepEqual(hubExamsFor({ scholarshipEnabled: true, scholarshipExams: ['sch-acer'] }), []);
+  assert.deepEqual(hubExamsFor({ scholarshipEnabled: true, scholarshipExams: ['sch-acer'] }), ['sch-acer']);
   assert.deepEqual(hubExamsFor({ scholarshipEnabled: true, scholarshipExams: ['sch-oc'] }), ['sch-oc']);
-  assert.deepEqual(hubExamsFor({ scholarshipEnabled: true, scholarshipExams: ['sch-selective', 'sch-acer'] }), ['sch-selective']);
+  assert.deepEqual(hubExamsFor({ scholarshipEnabled: true, scholarshipExams: ['sch-selective', 'sch-acer'] }), ['sch-selective', 'sch-acer']);
   assert.deepEqual(hubExamsFor({ scholarshipEnabled: true, scholarshipExams: ['sch-oc', 'sch-selective'] }), ['sch-oc', 'sch-selective']);
   // no list = every exam, which is how older switch-ons behave
-  assert.deepEqual(hubExamsFor({ scholarshipEnabled: true }), ['sch-oc', 'sch-selective']);
+  assert.deepEqual(hubExamsFor({ scholarshipEnabled: true }), ['sch-oc', 'sch-selective', 'sch-acer']);
   assert.deepEqual(hubExamsFor(null), []);
 });
 
-test('OC and Selective are separate pages, each reachable by its own tab key', () => {
+test('OC, Selective and Scholarship(ACER) are separate pages, each reachable by its own tab key', () => {
+  assert.equal(HUB_PAGES['sch-acer'].label, 'Scholarship');
+  assert.equal(examIdForTab('Scholarship'), 'sch-acer');
+  assert.equal(new Set(Object.values(HUB_PAGES).map((p) => p.tab)).size, 3);
   assert.equal(HUB_PAGES['sch-oc'].label, 'OC');
   assert.equal(HUB_PAGES['sch-selective'].label, 'Selective');
   assert.notEqual(HUB_PAGES['sch-oc'].tab, HUB_PAGES['sch-selective'].tab);
   assert.equal(examIdForTab('OcPrep'), 'sch-oc');
   assert.equal(examIdForTab('SelectivePrep'), 'sch-selective');
-  assert.equal(examIdForTab('Scholarship'), null);
+  assert.equal(examIdForTab('Dashboard'), null);
 });
 
 test('a mock is sized by marks, so passages with many parts do not inflate it', () => {
@@ -37,7 +40,8 @@ test('a mock is sized by marks, so passages with many parts do not inflate it', 
   assert.equal(mockSizeFor([], 35), 0);
 });
 
-test('every section with a real format has marks and minutes', () => {
+test('ACER has no invented mock format; every format that exists has marks and minutes', () => {
+  assert.ok(!Object.keys(MOCK_FORMATS).some((id) => id.startsWith('sch-acer')));
   Object.values(MOCK_FORMATS).forEach((f) => { assert.ok(f.marks > 0 && f.minutes > 0 && f.name); });
 });
 

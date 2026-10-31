@@ -103,7 +103,6 @@ const Settings = lazyWithReload(() => import('./components/Settings'));
 const StudentDetail = lazyWithReload(() => import('./components/StudentDetail'));
 const ReportsAdmin = lazyWithReload(() => import('./components/ReportsAdmin'));
 const ExamPrep = lazyWithReload(() => import('./components/ExamPrep'));
-const Scholarship = lazyWithReload(() => import('./components/Scholarship'));
 const OcSelectivePrep = lazyWithReload(() => import('./components/OcSelectivePrep'));
 const DnaWarmupReviewPage = lazyWithReload(() => import('./components/hsc/DnaWarmupReviewPage'));
 const QuestionPreStepsReviewPage = lazyWithReload(() => import('./components/hsc/QuestionPreStepsReviewPage'));
@@ -1391,10 +1390,9 @@ function App() {
         return <Curriculum initialSearchId={bankJumpId} onInitialSearchConsumed={() => setBankJumpId(null)} />;
       case 'ExamPrep':
         return <ExamPrep profile={profile} onExamActiveChange={setExamInProgress} />;
-      case 'Scholarship':
-        return <Scholarship profile={profile} />;
       case 'OcPrep':
       case 'SelectivePrep':
+      case 'Scholarship':
         return <OcSelectivePrep key={activeTab} examId={examIdForTab(activeTab)} profile={profile} setActiveTab={handleTabChange} />;
       case 'Library':
         return <Library />;

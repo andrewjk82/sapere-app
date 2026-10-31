@@ -35,12 +35,12 @@ const Bar = ({ row }) => {
 };
 
 /**
- * OC / Selective (one page each): full-length mock exams (real question count and time limit) plus a weak-spot summary built from
+ * OC / Selective / Scholarship(ACER), one page each: full-length mock exams (real question count and time limit) plus a weak-spot summary built from
  * every test of this exam the student has taken on this device. Each page is shown only to students whose teacher switched
- * on Scholarship with that exam ticked (utils/examHub.hubExamsFor). Topic-by-topic practice stays on the
- * Scholarship page.
+ * on Scholarship with that exam ticked (utils/examHub.hubExamsFor). Topic-by-topic practice (10 questions, 12
+ * minutes) is on the same page.
  */
-const OcSelectivePrep = ({ examId, profile, setActiveTab }) => {
+const OcSelectivePrep = ({ examId, profile }) => {
   const { user } = useAuth();
   const uid = user?.uid || 'anon';
   // One page per exam. A student only gets the pages for the exams the teacher ticked.
@@ -51,7 +51,7 @@ const OcSelectivePrep = ({ examId, profile, setActiveTab }) => {
   const [loaded, setLoaded] = useState({ examId: null, bank: null, failed: false });
   const bank = loaded.examId === active?.id ? loaded.bank : null;
   const failed = loaded.examId === active?.id && loaded.failed;
-  const [running, setRunning] = useState(null);  // { exam, topic, size, seconds }
+  const [running, setRunning] = useState(null);  // { exam, topic, size?, seconds?, mock } — mock runs keep their own history
   const [, setTick] = useState(0);
 
   useEffect(() => {
@@ -73,14 +73,14 @@ const OcSelectivePrep = ({ examId, profile, setActiveTab }) => {
     return (
       <AnimatePresence mode="wait">
         <ScholarshipTest
-          key={`${running.exam.id}:${running.topic.id}`}
+          key={`${running.exam.id}:${running.topic.id}:${running.mock ? 'mock' : 'topic'}`}
           topic={running.topic}
           chapter={{ id: running.exam.id, title: running.exam.title }}
           profile={profile}
-          storageId={mockStorageId(running.exam.id)}
-          size={running.size}
-          seconds={running.seconds}
-          startLabel="Start mock exam"
+          storageId={running.mock ? mockStorageId(running.exam.id) : undefined}
+          size={running.mock ? running.size : undefined}
+          seconds={running.mock ? running.seconds : undefined}
+          startLabel={running.mock ? 'Start mock exam' : 'Start test'}
           onBack={() => setRunning(null)}
         />
       </AnimatePresence>
@@ -104,10 +104,10 @@ const OcSelectivePrep = ({ examId, profile, setActiveTab }) => {
         <h2 style={{ margin: 0, fontSize: '1.5rem', fontWeight: 900, color: C.ink, fontFamily: 'var(--font-heading)' }}>{HUB_PAGES[active.id]?.label || active.title}</h2>
       </div>
       <p style={{ margin: '0 0 18px', color: C.muted, fontWeight: 600, fontSize: '0.92rem' }}>
-        Sit a full-length mock under the real time limit, then see which question types to work on next.
+        {HUB_PAGES[active.id]?.blurb} {sections.length > 0 ? 'Sit a full-length mock under the real time limit, practise a topic, then see what to work on next.' : 'Practise a topic, then see what to work on next.'}
       </p>
 
-      <h3 style={{ fontSize: '1rem', fontWeight: 900, color: C.ink, margin: '0 0 8px' }}>Mock exams</h3>
+      {sections.length > 0 && <h3 style={{ fontSize: '1rem', fontWeight: 900, color: C.ink, margin: '0 0 8px' }}>Mock exams</h3>}
       {failed && <div style={{ ...card, color: C.red, fontWeight: 700 }}>Could not load the questions. Check your connection and try again.</div>}
       {sections.map((topic) => {
         const fmt = MOCK_FORMATS[topic.id];
@@ -120,7 +120,7 @@ const OcSelectivePrep = ({ examId, profile, setActiveTab }) => {
             key={topic.id}
             type="button"
             disabled={!qs || empty}
-            onClick={() => setRunning({ exam: active, topic: { id: topic.id, title: topic.title, code: topic.code || '' }, size, seconds: fmt.minutes * 60 })}
+            onClick={() => setRunning({ exam: active, topic: { id: topic.id, title: topic.title, code: topic.code || '' }, size, seconds: fmt.minutes * 60, mock: true })}
             style={{ ...card, display: 'flex', alignItems: 'center', gap: 14, width: '100%', textAlign: 'left', marginBottom: 10, cursor: !qs || empty ? 'default' : 'pointer', opacity: empty ? 0.6 : 1 }}
           >
             <div style={{ flex: 1, minWidth: 0 }}>
@@ -137,11 +137,39 @@ const OcSelectivePrep = ({ examId, profile, setActiveTab }) => {
         );
       })}
 
+      <h3 style={{ fontSize: '1rem', fontWeight: 900, color: C.ink, margin: sections.length > 0 ? '22px 0 8px' : '0 0 8px' }}>Practise by topic</h3>
+      <div style={{ ...card, padding: '6px 18px' }}>
+        {(active.topics || []).map((topic, i) => {
+          const count = bank ? (bank[topic.id]?.length ?? 0) : null;
+          const empty = count === 0;
+          const test = loadTestState(uid, active.id, topic.id);
+          const done = test ? Math.min(test.done.length, count || 0) : 0;
+          const last = test?.attempts?.[test.attempts.length - 1];
+          return (
+            <button
+              key={topic.id}
+              type="button"
+              disabled={empty || count === null}
+              onClick={() => setRunning({ exam: active, topic: { id: topic.id, title: topic.title, code: topic.code || '' }, mock: false })}
+              style={{ display: 'flex', alignItems: 'center', gap: 12, width: '100%', textAlign: 'left', border: 0, background: 'transparent', padding: '14px 0', borderTop: i === 0 ? 0 : '1px solid #f1f5f9', cursor: empty || count === null ? 'default' : 'pointer', opacity: empty ? 0.55 : 1 }}
+            >
+              <div style={{ flex: 1, minWidth: 0 }}>
+                <div style={{ fontWeight: 800, color: C.ink, fontSize: '0.98rem' }}>{topic.title}</div>
+                <div style={{ fontSize: '0.76rem', fontWeight: 700, color: C.faint, marginTop: 2 }}>
+                  {count === null ? 'Loading…' : empty ? 'Coming soon' : `${count} question${count === 1 ? '' : 's'}${done > 0 ? ` · ${done} done` : ''}${(test?.round || 1) > 1 ? ` · Round ${test.round}` : ''}${last ? ` · last ${last.marks}/${last.total}` : ''}`}
+                </div>
+              </div>
+              {empty ? <Lock size={16} color="#cbd5e1" /> : count !== null && <ChevronRight size={18} color="#a78bfa" />}
+            </button>
+          );
+        })}
+      </div>
+
       <h3 style={{ fontSize: '1rem', fontWeight: 900, color: C.ink, margin: '22px 0 8px', display: 'flex', alignItems: 'center', gap: 8 }}>
         <TrendingDown size={17} color={C.violet} /> Where to improve
       </h3>
       {!bank && !failed && <div style={{ ...card, color: C.muted, fontWeight: 700 }}>Loading…</div>}
-      {bank && sections.filter((t) => (bank[t.id] || []).length > 0).map((topic) => {
+      {bank && (active.topics || []).filter((t) => (bank[t.id] || []).length > 0).map((topic) => {
         const s = insight(topic);
         const cats = rankGroups(s.byCategory);
         const diffs = rankGroups(s.byDifficulty);
@@ -149,25 +177,17 @@ const OcSelectivePrep = ({ examId, profile, setActiveTab }) => {
         return (
           <div key={topic.id} style={{ ...card, marginBottom: 12 }}>
             <div style={{ display: 'flex', alignItems: 'baseline', gap: 8, marginBottom: 12 }}>
-              <span style={{ fontWeight: 900, color: C.ink }}>{MOCK_FORMATS[topic.id].name}</span>
+              <span style={{ fontWeight: 900, color: C.ink }}>{MOCK_FORMATS[topic.id]?.name || topic.title}</span>
               {s.total > 0 && <span style={{ marginLeft: 'auto', fontWeight: 800, color: C.muted, fontSize: '0.8rem' }}>{pct(s.marks / s.total)} over {s.total} marks</span>}
             </div>
             {s.total === 0
               ? <div style={{ color: C.faint, fontWeight: 700, fontSize: '0.88rem' }}>Take a mock or a topic test to see your strengths and weak spots here.</div>
-              : rows.map((r) => <Bar key={r.name} row={r} />)}
-            {s.total > 0 && !cats.length && <div style={{ color: C.faint, fontWeight: 600, fontSize: '0.78rem' }}>Shown by difficulty — these questions are not grouped by type.</div>}
+              : rows.length > 0 ? rows.map((r) => <Bar key={r.name} row={r} />) : <div style={{ color: C.faint, fontWeight: 700, fontSize: '0.88rem' }}>These questions are not grouped by type yet, so there is no breakdown — keep practising.</div>}
+            {s.total > 0 && rows.length > 0 && !cats.length && <div style={{ color: C.faint, fontWeight: 600, fontSize: '0.78rem' }}>Shown by difficulty — these questions are not grouped by type.</div>}
           </div>
         );
       })}
 
-      <div style={{ ...card, marginTop: 8, display: 'flex', alignItems: 'center', gap: 12 }}>
-        <div style={{ flex: 1, color: C.muted, fontWeight: 600, fontSize: '0.86rem' }}>Want to drill one area? Topic tests of 10 questions are on the Scholarship page.</div>
-        <button
-          type="button"
-          onClick={() => setActiveTab?.('Scholarship')}
-          style={{ padding: '10px 16px', borderRadius: 12, border: `1px solid ${C.line}`, background: '#fff', fontWeight: 800, color: C.ink, cursor: 'pointer' }}
-        >Open Scholarship</button>
-      </div>
     </div>
   );
 };
