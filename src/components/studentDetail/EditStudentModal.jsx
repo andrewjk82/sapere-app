@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { X, Check } from "lucide-react";
-import { CURRICULUM_DATA } from "../../constants/curriculumData";
+import { CURRICULUM_DATA, trackLabel } from "../../constants/curriculumData";
 
 export default function EditStudentModal({
   editForm,
@@ -322,7 +322,7 @@ export default function EditStudentModal({
                       transition: "all 0.2s",
                     }}
                   >
-                    {y}
+                    {trackLabel(y)}
                   </button>
                 );
               })}

@@ -2182,8 +2182,8 @@ const StudentDetail = ({ studentId, onBack }) => {
             </CollapsibleSection>
 
             <CollapsibleSection
-              title="Scholarship practice"
-              summary={student.scholarshipEnabled === true ? 'Scholarship practice page · untimed' : 'Disabled'}
+              title="Special tests"
+              summary={student.scholarshipEnabled === true ? 'OC · Selective · Scholarship pages' : 'Disabled'}
               badge={student.scholarshipEnabled === true ? 'On' : 'Off'}
               badgeTone={student.scholarshipEnabled === true ? 'green' : 'amber'}
             >

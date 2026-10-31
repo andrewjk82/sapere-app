@@ -4,9 +4,8 @@ import { CURRICULUM_DATA } from "../../constants/curriculumData";
 import { enabledScholarshipExams, toggleScholarshipExam } from "../../utils/scholarshipExams";
 
 /**
- * Teacher-side Scholarship practice switch (ACER, Selective…). When on, the student gets a Scholarship page in
- * their sidebar: untimed practice, topic by topic, with answers and explanations. It is separate from Daily
- * Practice and Exam Prep — those never draw Scholarship questions.
+ * Teacher-side Special tests switch (Scholarship/ACER, Selective, OC). When on, the student gets one sidebar page
+ * per ticked test. Separate from Daily Practice and Exam Prep — those never draw these questions.
  */
 export default function ScholarshipPanel({ styles, student, onUpdateSetting }) {
   const enabled = student?.scholarshipEnabled === true;
@@ -23,7 +22,7 @@ export default function ScholarshipPanel({ styles, student, onUpdateSetting }) {
         <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
           <div style={{ width: "4px", height: "24px", background: "linear-gradient(to bottom, #a78bfa, #7c3aed)", borderRadius: "2px" }} />
           <div className="section-title" style={{ fontSize: "0.85rem", fontWeight: 800, color: "#1e1b4b", letterSpacing: "0.05em", textTransform: "uppercase", margin: 0 }}>
-            SCHOLARSHIP PRACTICE
+            SPECIAL TESTS
           </div>
         </div>
         <div
