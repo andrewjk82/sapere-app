@@ -17,6 +17,7 @@ export default function StudentHeaderCard({
   onExportDailyPdf,
   exportingDailyPdf,
   onEditProfile,
+  extraActions = null,
 }) {
   return (
     <div style={styles.card} className="profile-card-mobile">
@@ -137,6 +138,7 @@ export default function StudentHeaderCard({
             <FileDown size={16} />
             {exportingDailyPdf ? "Generating…" : "Daily PDF"}
           </button>
+          {extraActions}
           <button
             onClick={onEditProfile}
             className="app-button"

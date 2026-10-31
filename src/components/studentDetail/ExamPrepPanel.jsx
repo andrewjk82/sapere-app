@@ -3,7 +3,7 @@ import { useEffect, useMemo, useState } from "react";
 import { Sparkles, Trophy, Target, CalendarDays } from "lucide-react";
 import { db } from "../../firebase/config";
 import { doc, onSnapshot } from "firebase/firestore";
-import { CURRICULUM_DATA } from "../../constants/curriculumData";
+import { CURRICULUM_DATA, trackLabel } from "../../constants/curriculumData";
 
 // Flatten Year 11/12 (which are split by course) into a flat chapter list.
 const flattenChapters = (yearKey, courseKey = null) => {
@@ -334,7 +334,7 @@ export default function ExamPrepPanel({ styles, student, studentId, onUpdateSett
                       fontWeight: 800, fontSize: "0.78rem", cursor: "pointer",
                     }}
                   >
-                    {y}
+                    {trackLabel(y)}
                   </button>
                 );
               })}

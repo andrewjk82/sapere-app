@@ -67,7 +67,7 @@ export const toLegacy = (q, ctx = {}) => {
     title: `${(q.stem || '').replace(/\$/g, '').slice(0, 30)}...`,
   };
   if (q.hscType) d.questionType = q.hscType;
-  if (q.meta) for (const k of ['source', 'sourcePaper', 'school', 'examType', 'course', 'grade', 'tags', 'reviewStatus']) if (q.meta[k] != null) d[k] = q.meta[k];
+  if (q.meta) for (const k of ['source', 'sourcePaper', 'school', 'examType', 'course', 'grade', 'tags', 'reviewStatus', 'category', 'number', 'test']) if (q.meta[k] != null) d[k] = q.meta[k];
   if (q.dna) Object.assign(d, q.dna);
   if (q.ext) Object.assign(d, q.ext);
   return d;

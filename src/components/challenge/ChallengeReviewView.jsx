@@ -52,6 +52,7 @@ const ChallengeReviewView = ({
   statColName = null,
   sessionId = null,
   disableReport = false,
+  noteTitle = "Student's note",   // heading of the note under each question (a teacher's mistake review uses it for where the question came from)
 }) => {
   const [idx, setIdx] = useState(() => Math.min(Math.max(0, startIdx), Math.max(0, questions.length - 1)));
   const padRef = useRef(null);
@@ -394,7 +395,8 @@ const ChallengeReviewView = ({
                 const sqKey = sq.id || sIdx;
                 const rawSqAns = typeof studentRaw === 'object' && studentRaw !== null ? studentRaw[sqKey] : '';
                 const sqAnsText = formatStudentAnswer(sq, rawSqAns);
-                const isSqCorrect = answersMatch(sqAnsText || '', sq.answer);
+                // A review built from a graded test supplies per-part results; otherwise compare the answer text.
+                const isSqCorrect = Array.isArray(result?.partCorrect) ? result.partCorrect[sIdx] === true : answersMatch(sqAnsText || '', sq.answer);
                 const showCorrect = !isSqCorrect && sq.answer;
                 
                 return (
@@ -551,7 +553,7 @@ const ChallengeReviewView = ({
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px', color: '#7c3aed' }}>
                 <MessageCircle size={18} />
                 <span style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase' }}>
-                  Student's note
+                  {noteTitle}
                 </span>
               </div>
               <p style={{ margin: 0, color: '#4c1d95', fontWeight: 600, fontSize: '0.95rem', lineHeight: 1.55, whiteSpace: 'pre-wrap' }}>

@@ -73,6 +73,8 @@ import SecretNotebookPanel from "./studentDetail/SecretNotebookPanel";
 import ExamPrepPanel from "./studentDetail/ExamPrepPanel";
 import HscPastPaperPanel from "./studentDetail/HscPastPaperPanel";
 import ScholarshipPanel from "./studentDetail/ScholarshipPanel";
+import SpecialWeeklyPanel from "./studentDetail/SpecialWeeklyPanel";
+import MistakeReview from "./studentDetail/MistakeReview";
 import EditStudentModal from "./studentDetail/EditStudentModal";
 import ScheduleModal from "./studentDetail/ScheduleModal";
 import StudentHeaderCard from "./studentDetail/StudentHeaderCard";
@@ -143,6 +145,8 @@ const curriculumSyncFields = [
   "examPrepEnabled",
   "scholarshipEnabled",
   "scholarshipExams",
+  "scholarshipTestDate",
+  "scholarshipTestLabel",
   "examPrepSelection",
   "hscPastPaperEnabled",
   "hscPastPaperCount",
@@ -381,6 +385,8 @@ const StudentDetail = ({ studentId, onBack }) => {
     examPrepEnabled: false,
     scholarshipEnabled: false,
     scholarshipExams: null,
+    scholarshipTestDate: "",
+    scholarshipTestLabel: "",
     hscPastPaperEnabled: false,
     hscPastPaperCount: 3,
     schoolSubjectRank: "",
@@ -482,6 +488,8 @@ const StudentDetail = ({ studentId, onBack }) => {
         examPrepEnabled: data.examPrepEnabled === true,
         scholarshipEnabled: data.scholarshipEnabled === true,
         scholarshipExams: Array.isArray(data.scholarshipExams) ? data.scholarshipExams : null,
+        scholarshipTestDate: typeof data.scholarshipTestDate === "string" ? data.scholarshipTestDate : "",
+        scholarshipTestLabel: typeof data.scholarshipTestLabel === "string" ? data.scholarshipTestLabel : "",
         examPrepSelection: data.examPrepSelection || { years: [], chapters: [] },
         hscPastPaperEnabled: data.hscPastPaperEnabled === true,
         hscPastPaperCount: data.hscPastPaperCount || 3,
@@ -2182,8 +2190,8 @@ const StudentDetail = ({ studentId, onBack }) => {
             </CollapsibleSection>
 
             <CollapsibleSection
-              title="Scholarship practice"
-              summary={student.scholarshipEnabled === true ? 'Scholarship practice page · untimed' : 'Disabled'}
+              title="Special tests"
+              summary={student.scholarshipEnabled === true ? 'OC · Selective · Scholarship pages' : 'Disabled'}
               badge={student.scholarshipEnabled === true ? 'On' : 'Off'}
               badgeTone={student.scholarshipEnabled === true ? 'green' : 'amber'}
             >
@@ -2192,6 +2200,7 @@ const StudentDetail = ({ studentId, onBack }) => {
                 student={student}
                 onUpdateSetting={handleUpdateCurriculumSetting}
               />
+              <SpecialWeeklyPanel student={student} />
             </CollapsibleSection>
 
             <CollapsibleSection
@@ -2372,6 +2381,9 @@ const StudentDetail = ({ studentId, onBack }) => {
         onExportDailyPdf={handleExportDailyPdf}
         exportingDailyPdf={exportingDailyPdf}
         onEditProfile={() => setIsEditModalOpen(true)}
+        extraActions={(
+          <MistakeReview student={student} />
+        )}
       />
 
       {/* 2. Dashboard & Progress */}

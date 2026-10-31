@@ -18,6 +18,7 @@ import { getLesson } from '../../lessons/registry';
 import LessonPlayer from '../lessons/LessonPlayer';
 import { nextReviewPhrase } from '../../utils/secretNote';
 import HomeworkCard from '../homework/HomeworkCard';
+import SpecialDailyCards from '../SpecialDailyCards';
 import { KIND } from './sessionKinds';
 import { useProfile } from '../../context/ProfileContext';
 import { collection, query, where, onSnapshot } from 'firebase/firestore';
@@ -632,6 +633,7 @@ const ChallengeStartView = ({
               onOpenNote={onOpenSecretNote}
             />
           )}
+          <SpecialDailyCards profile={studentProfile} />
           {(() => {
             const hasNew = newFeedbackCount > 0;
             const openFeedback = onOpenFeedback || onViewFeedback;

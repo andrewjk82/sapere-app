@@ -14,7 +14,7 @@ import { useProfile } from '../context/ProfileContext';
 import { useToast } from '../context/ToastContext';
 import { hasLesson, getLesson } from '../lessons/registry';
 import LessonPlayer from './lessons/LessonPlayer';
-import { CURRICULUM_DATA } from '../constants/curriculumData';
+import { CURRICULUM_DATA, trackLabel } from '../constants/curriculumData';
 import QuestionBankModal from './QuestionBankModal';
 import PendingReviewPanel from './PendingReviewPanel';
 import QuestionBankPage from './QuestionBankPage';
@@ -1149,7 +1149,7 @@ const Curriculum = ({ initialSearchId = null, onInitialSearchConsumed } = {}) =>
               {/* Row 1 — Title + actions */}
               <div className="curriculum-header">
                 <div className="curriculum-header__title">
-                  <h1>{selectedYear}</h1>
+                  <h1>{trackLabel(selectedYear)}</h1>
                   {courses && selectedCourse && <span className="curriculum-course-badge">{selectedCourse}</span>}
                   {/* Total question count from the content manifest (chapter count, or its topics' sum) */}
                   {(() => {
@@ -1248,7 +1248,7 @@ const Curriculum = ({ initialSearchId = null, onInitialSearchConsumed } = {}) =>
                           }}
                           className={`curriculum-year-tab${selectedYear === year ? ' curriculum-year-tab--active' : ''}`}
                         >
-                          {year}
+                          {trackLabel(year)}
                           {isAdmin && count > 0 && (
                             <span style={{ display: 'block', fontSize: '0.62rem', fontWeight: 700, opacity: 0.7, lineHeight: 1, marginTop: '2px' }}>
                               {count.toLocaleString()} Qs

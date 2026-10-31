@@ -1,12 +1,12 @@
 {
   "chapterId": "sch-acer",
-  "title": "ACER",
+  "title": "Scholarship",
   "year": "Scholarship",
   "topics": [
     {
       "topicId": "sch-acer-reading",
       "code": "",
-      "title": "Reading and Viewing",
+      "title": "ACER Reading and Viewing",
       "questions": [
         {
           "id": "sch-acer-l1-t2-q7",
@@ -598,7 +598,7 @@
     {
       "topicId": "sch-acer-writing",
       "code": "",
-      "title": "Writing",
+      "title": "ACER Writing",
       "questions": [
         {
           "id": "sch-acer-l1-t1-writing",
@@ -637,7 +637,7 @@
     {
       "topicId": "sch-acer-maths",
       "code": "",
-      "title": "Mathematics",
+      "title": "ACER Mathematics",
       "questions": [
         {
           "id": "sch-acer-l1-t3-q1",

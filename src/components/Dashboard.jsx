@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Plus, Search, Users, Clock, CheckCircle2, GraduationCap, X, Calendar, Check, Trophy, Star, Bell, BookOpen, ChevronRight, PlayCircle, Target, AlertTriangle, TrendingUp, ArrowRight, PenLine, Zap, Calculator, FileText } from 'lucide-react';
+import { Plus, Search, Users, Clock, CheckCircle2, GraduationCap, X, Calendar, Check, Trophy, Star, Bell, BookOpen, ChevronRight, PlayCircle, Target, AlertTriangle, TrendingUp, ArrowRight, PenLine, Zap, Calculator, FileText, Award } from 'lucide-react';
 import StatCard from './StatCard';
 import StudentRow from './StudentRow';
 import { useAuth } from '../context/AuthContext';
@@ -30,6 +30,7 @@ import { findTopicAfter } from '../utils/lessonTopics';
 import { loadTopicWriting, mergeNoteDates, pickLastLessonTopics } from '../utils/lessonWriting';
 import { listTopicNoteDates } from '../utils/curriculumLocalNotes';
 import { loadLastStudy, continueCaption, requestContinueStudy, requestOpenTopic } from '../utils/lastStudy';
+import { DAILY_SETS, OPEN_DAILY_SET_KEY, dailySetDoneToday, hubExamsFor } from '../utils/examHub';
 
 // 카드에 마우스를 올리면 살짝 떠오르는 hover 효과 (Journey Map 카드와 동일한 느낌).
 const liftHover = {
@@ -443,7 +444,16 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
     // eslint-disable-next-line react-hooks/exhaustive-deps -- calcToday is only the cache short-circuit
   }, [user?.uid, calcEnabled]);
 
-  // Today's plan rows: Daily Challenge, Daily Calculation, Homework, Exam Prep.
+  // A finished OC / Selective / Scholarship daily set ticks its row (the set's history is on this device).
+  const [specialTick, setSpecialTick] = useState(0);
+  useEffect(() => {
+    const refresh = () => setSpecialTick((n) => n + 1);
+    window.addEventListener('sapere:progress-updated', refresh);
+    return () => window.removeEventListener('sapere:progress-updated', refresh);
+  }, []);
+
+  // Today's plan rows: Daily Challenge, Daily Calculation, one daily set per OC / Selective / Scholarship the teacher
+  // switched on, Homework, Exam Prep.
   // `done: null` = not a once-a-day task (Exam Prep) → not counted in progress.
   const todayPlan = useMemo(() => {
     if (isAdmin) return [];
@@ -471,6 +481,21 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
         onClick: () => setActiveTab?.('Challenge'),
       });
     }
+    hubExamsFor(profile).forEach((examId) => {
+      const setDone = user?.uid ? dailySetDoneToday(user.uid, examId) : false;
+      rows.push({
+        key: `special-${examId}`,
+        icon: examId === 'sch-acer' ? Award : Target,
+        title: `${DAILY_SETS[examId].label} daily`,
+        sub: setDone ? 'Completed today' : "Today's set is ready",
+        cta: setDone ? 'Done' : 'Start',
+        done: setDone,
+        onClick: () => {
+          try { sessionStorage.setItem(OPEN_DAILY_SET_KEY, examId); } catch { /* storage blocked: the set can be opened from the card */ }
+          setActiveTab?.('Challenge');
+        },
+      });
+    });
     const hwItems = getHomeworkItems(studentSessions);
     const pending = hwItems.filter(i => i.status === 'todo');
     rows.push({
@@ -501,7 +526,8 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
       });
     }
     return rows;
-  }, [isAdmin, weekPractice, calcEnabled, calcToday, studentSessions, profile?.examPrepEnabled, nextTermExam, setActiveTab]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- specialTick only re-reads the daily sets' local history
+  }, [isAdmin, weekPractice, calcEnabled, calcToday, studentSessions, profile, user?.uid, specialTick, nextTermExam, setActiveTab]);
 
   // Next Lesson card buttons, from what the student wrote on this device: "Last lesson" = the topics
   // they wrote notes on during their most recent lesson day (e.g. 3A + 3B); the earliest one's worksheet

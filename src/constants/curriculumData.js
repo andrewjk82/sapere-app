@@ -3217,17 +3217,19 @@ export const CURRICULUM_DATA = {
       }
     ],
   },
-  // Scholarship exam preparation — not a school year. One chapter per exam provider; each section of the
-  // exam is a topic (its own worksheet PDF, notes and homework link, set in the Curriculum editor).
+  // Special tests (shown to people as "Special tests", see trackLabel) — not a school year. One chapter per
+  // test; each section of the test is a topic (its own worksheet PDF, notes and homework link, set in the
+  // Curriculum editor). The chapter `sch-acer` is displayed as "Scholarship" and holds the ACER sections.
+  // The key stays 'Scholarship' because stored data (student assignments, content `year`) is keyed on it.
   // Assigned to a student like a year (EditStudentModal lists every key here).
   'Scholarship': [
     {
       id: 'sch-acer',
-      title: 'ACER',
+      title: 'Scholarship',
       topics: [
-        { id: 'sch-acer-reading', title: 'Reading and Viewing' },
-        { id: 'sch-acer-writing', title: 'Writing' },
-        { id: 'sch-acer-maths', title: 'Mathematics' },
+        { id: 'sch-acer-reading', title: 'ACER Reading and Viewing' },
+        { id: 'sch-acer-writing', title: 'ACER Writing' },
+        { id: 'sch-acer-maths', title: 'ACER Mathematics' },
       ],
     },
     {
@@ -3251,3 +3253,7 @@ export const CURRICULUM_DATA = {
     },
   ],
 };
+
+/** What a year key is called on screen. Only the Scholarship key differs: the group is shown as "Special tests". */
+export const TRACK_LABELS = { Scholarship: 'Special tests' };
+export const trackLabel = (key) => TRACK_LABELS[key] || key;

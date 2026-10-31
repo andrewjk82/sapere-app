@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { lazy, Suspense, useCallback, useEffect, useMemo, useState } from 'react';
 import { ArrowLeft, CheckCircle2, ChevronLeft, ChevronRight, Clock, Lightbulb, Play, XCircle } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { getTopicQuestions } from '../services/contentLoader';
@@ -6,10 +6,14 @@ import { parseSolutionSteps } from '../utils/solutionSteps';
 import { isDisplayedOptionCorrect } from '../utils/mcOptionShuffle';
 import {
   TEST_SIZE, TEST_SECONDS, loadTestState, saveTestState, pickTestQuestions, applyFinishedTest,
-  gradeTest, gradeQuestionMarks, isPickCorrect, correctIndexOf, isTestable, secondsLeft, subKey,
+  gradeTest, isPickCorrect, correctIndexOf, isTestable, secondsLeft, subKey, toReviewItems, attemptDetails,
 } from '../utils/scholarshipTest';
 import MathView from './MathView';
 import TopicPracticeSession from './TopicPracticeSession';
+import ScholarshipResult from './ScholarshipResult';
+
+// The challenge review (one question at a time, step-by-step solutions) is only needed once a student opens a review.
+const ChallengeReviewView = lazy(() => import('./challenge/ChallengeReviewView'));
 
 const C = { ink: '#1e1b4b', muted: '#64748b', faint: '#94a3b8', line: '#e2e8f0', violet: '#7c3aed', soft: '#f5f3ff', green: '#059669', red: '#e11d48' };
 const card = { background: '#fff', border: `1px solid ${C.line}`, borderRadius: 20, padding: 18, boxShadow: '0 4px 14px rgba(15,23,42,0.04)' };
@@ -162,29 +166,33 @@ const QuestionBody = ({ q, answer, onAnswer, review }) => {
  * submitting, every test kept for review on this device (utils/scholarshipTest).
  * Topics that aren't all auto-gradable MC (Writing) fall back to practice mode.
  */
-const ScholarshipTest = ({ topic, chapter, profile, onBack }) => {
+const ScholarshipTest = ({ topic, chapter, profile, onBack, size: sizeProp = TEST_SIZE, seconds: limit = TEST_SECONDS, storageId, startLabel = 'Start test', pickQuestions, homeNote, loadQuestions }) => {
   const { user } = useAuth();
   const uid = user?.uid || 'anon';
+  // Mock exams keep their own history under `storageId`, apart from the topic tests of the same chapter.
+  const keyChapter = storageId || chapter.id;
   const [all, setAll] = useState(null);         // every question of the topic
   const [failed, setFailed] = useState(false);
-  const [st, setSt] = useState(() => loadTestState(uid, chapter.id, topic.id));
+  const [st, setSt] = useState(() => loadTestState(uid, keyChapter, topic.id));
   // An unfinished test resumes straight away (one whose time ran out is submitted below).
-  const [view, setView] = useState(() => (st.current ? 'test' : 'home')); // 'home' | 'test' | 'review'
+  const [view, setView] = useState(() => (st.current ? 'test' : 'home')); // 'home' | 'test' | 'result' | 'review'
   const [reviewId, setReviewId] = useState(null);
+  const [reviewIdx, setReviewIdx] = useState(null);   // question the review opens on (null = the result screen)
   const [idx, setIdx] = useState(0);
   const [confirming, setConfirming] = useState(false);
   const [now, setNow] = useState(() => Date.now());
 
   useEffect(() => {
     let cancelled = false;
-    getTopicQuestions(topic.id, { chapterId: chapter.id })
+    // `loadQuestions` lets a test draw from several topics (the Daily Study set); otherwise it is this topic's questions.
+    (loadQuestions ? loadQuestions() : getTopicQuestions(topic.id, { chapterId: chapter.id }))
       .then((qs) => { if (!cancelled) setAll(qs || []); })
       .catch(() => { if (!cancelled) setFailed(true); });
     return () => { cancelled = true; };
   }, [chapter.id, topic.id]);
 
   const byId = useMemo(() => new Map((all || []).map((q) => [String(q.id), q])), [all]);
-  const save = useCallback((next) => { setSt(next); saveTestState(uid, chapter.id, topic.id, next); }, [uid, chapter.id, topic.id]);
+  const save = useCallback((next) => { setSt(next); saveTestState(uid, keyChapter, topic.id, next); }, [uid, keyChapter, topic.id]);
   const cur = st.current;
   const testQs = useMemo(() => (cur ? cur.questionIds.map((id) => byId.get(String(id))).filter(Boolean) : []), [cur, byId]);
 
@@ -198,30 +206,37 @@ const ScholarshipTest = ({ topic, chapter, profile, onBack }) => {
       ...s.current,
       questionIds: qs.map((q) => String(q.id)),
       submittedAt,
-      durationSec: Math.min(TEST_SECONDS, Math.round((submittedAt - s.current.startedAt) / 1000)),
+      durationSec: Math.min(limit, Math.round((submittedAt - s.current.startedAt) / 1000)),
       marks,
       total,
+      // Kept for the weekly summary sent to the teacher (utils/specialWeekly): what kind of test, and what was missed.
+      kind: /^mock:/.test(keyChapter) ? 'mock' : /^daily:/.test(keyChapter) ? 'daily' : 'topic',
+      ...attemptDetails(qs, s.current.answers),
     };
     save(applyFinishedTest({ ...s, current: null, attempts: [...s.attempts, attempt] }, attempt));
     setConfirming(false);
     setReviewId(attempt.id);
-    setView('review');
-  }, [st, byId, save]);
+    setReviewIdx(null);
+    setView('result');
+  }, [st, byId, save, limit]);
 
   // Clock tick; time up → submit (also catches a test whose time ran out while away).
   useEffect(() => {
     if (view !== 'test' || !all || !cur) return undefined;
     const t = setInterval(() => {
       const ts = Date.now();
-      if (secondsLeft(cur, ts) <= 0) submit();
+      if (secondsLeft(cur, ts, limit) <= 0) submit();
       else setNow(ts);
     }, 1000);
     return () => clearInterval(t);
-  }, [view, all, cur, submit]);
-  const left = cur ? secondsLeft(cur, now) : TEST_SECONDS;
+  }, [view, all, cur, submit, limit]);
+  const left = cur ? secondsLeft(cur, now, limit) : limit;
 
   const start = () => {
-    const pick = pickTestQuestions({ allIds: all.map((q) => q.id), done: st.done, round: st.round });
+    // A mock supplies its own picker (utils/examHub.pickMockPaper); a topic test takes the next unseen questions.
+    const pick = pickQuestions
+      ? pickQuestions({ questions: all, state: st })
+      : pickTestQuestions({ allIds: all.map((q) => q.id), done: st.done, round: st.round, size: Math.min(sizeProp, all.length) });
     const startedAt = Date.now();
     save({ ...st, current: { id: startedAt.toString(36), ...pick, answers: {}, startedAt } });
     setIdx(0);
@@ -230,8 +245,8 @@ const ScholarshipTest = ({ topic, chapter, profile, onBack }) => {
   };
 
   const back = (
-    <button type="button" onClick={view === 'review' ? () => setView('home') : onBack} style={{ ...btn(false), padding: '8px 12px', marginBottom: 14 }}>
-      <ArrowLeft size={16} /> {view === 'review' ? 'All tests' : 'Back'}
+    <button type="button" onClick={view === 'result' ? () => setView('home') : onBack} style={{ ...btn(false), padding: '8px 12px', marginBottom: 14 }}>
+      <ArrowLeft size={16} /> {view === 'result' ? 'All tests' : 'Back'}
     </button>
   );
   const wrap = (children) => <div style={{ maxWidth: 760, margin: '0 auto', padding: '8px 4px 40px' }}>{children}</div>;
@@ -297,37 +312,36 @@ const ScholarshipTest = ({ topic, chapter, profile, onBack }) => {
     );
   }
 
-  // ── Review ──────────────────────────────────────────────────────────────
-  const attempt = view === 'review' ? st.attempts.find((a) => a.id === reviewId) : null;
+  // ── Result, and the challenge-style review ──────────────────────────────
+  const attempt = (view === 'result' || view === 'review') ? st.attempts.find((a) => a.id === reviewId) : null;
   if (attempt) {
     const qs = attempt.questionIds.map((id) => byId.get(String(id))).filter(Boolean);
+    if (view === 'review' && reviewIdx !== null) {
+      const items = toReviewItems(qs, attempt.answers);
+      return (
+        <Suspense fallback={<div style={{ position: 'fixed', inset: 0, display: 'grid', placeItems: 'center', background: '#f8fafc', zIndex: 2200 }}>Loading…</div>}>
+          <ChallengeReviewView
+            questions={items.questions}
+            userAnswers={items.userAnswers}
+            answerResults={items.answerResults}
+            startIdx={reviewIdx}
+            disableReport
+            isMobile={typeof window !== 'undefined' && window.innerWidth < 768}
+            onClose={() => { setReviewIdx(null); setView('result'); }}
+          />
+        </Suspense>
+      );
+    }
     return wrap(
       <>
         {back}
-        <div style={{ ...card, marginBottom: 14, textAlign: 'center' }}>
-          <div style={{ fontSize: '0.8rem', fontWeight: 800, color: C.faint }}>{new Date(attempt.submittedAt).toLocaleString()}</div>
-          <div style={{ fontSize: '2.2rem', fontWeight: 900, color: C.ink, margin: '4px 0' }}>{attempt.marks} / {attempt.total}</div>
-          <div style={{ fontWeight: 700, color: C.muted }}>
-            {Math.round((attempt.marks / Math.max(1, attempt.total)) * 100)}% · {mmss(attempt.durationSec || 0)}
-          </div>
-        </div>
-        {qs.map((q, i) => {
-          const a = attempt.answers?.[String(q.id)];
-          const r = gradeQuestionMarks(q, a);
-          const ok = r.marks === r.total;
-          return (
-            <div key={q.id} style={{ ...card, marginBottom: 12 }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
-                <span style={{ fontWeight: 900, color: C.violet }}>Question {i + 1}</span>
-                <span style={{ marginLeft: 'auto', fontWeight: 900, color: ok ? C.green : C.red, display: 'inline-flex', alignItems: 'center', gap: 4 }}>
-                  {ok ? <CheckCircle2 size={16} /> : <XCircle size={16} />}
-                  {r.total > 1 ? `${r.marks}/${r.total}` : ok ? 'Correct' : isAnswered(q, a) ? 'Incorrect' : 'Not answered'}
-                </span>
-              </div>
-              <QuestionBody q={q} answer={a} review />
-            </div>
-          );
-        })}
+        <ScholarshipResult
+          attempt={attempt}
+          history={st.attempts}
+          questions={qs}
+          byId={byId}
+          onReview={(i) => { setReviewIdx(i); setView('review'); }}
+        />
       </>,
     );
   }
@@ -335,7 +349,7 @@ const ScholarshipTest = ({ topic, chapter, profile, onBack }) => {
   // ── Home ────────────────────────────────────────────────────────────────
   const total = all.length;
   const doneCount = st.done.filter((id) => byId.has(id)).length;
-  const size = Math.min(TEST_SIZE, total);
+  const size = Math.min(sizeProp, total);
   const attempts = [...st.attempts].reverse();
   return wrap(
     <>
@@ -350,14 +364,18 @@ const ScholarshipTest = ({ topic, chapter, profile, onBack }) => {
           {doneCount} / {total} questions done · Round {st.round}
         </div>
         <div style={{ fontSize: '0.86rem', fontWeight: 600, color: C.muted, marginBottom: 14 }}>
-          {total - doneCount >= size
-            ? `${size} questions you haven't done yet`
-            : total - doneCount > 0
-              ? `The last ${total - doneCount} new question${total - doneCount === 1 ? '' : 's'} + ${size - (total - doneCount)} from Round ${st.round + 1}`
-              : `All done — Round ${st.round + 1} starts again from the beginning`}
-          {` · ${TEST_SECONDS / 60} minutes · answers and solutions after you submit.`}
+          {homeNote || (
+            <>
+              {total - doneCount >= size
+                ? `${size} questions you haven't done yet`
+                : total - doneCount > 0
+                  ? `The last ${total - doneCount} new question${total - doneCount === 1 ? '' : 's'} + ${size - (total - doneCount)} from Round ${st.round + 1}`
+                  : `All done — Round ${st.round + 1} starts again from the beginning`}
+              {` · ${limit / 60} minutes · answers and solutions after you submit.`}
+            </>
+          )}
         </div>
-        <button type="button" onClick={start} style={btn(true)}><Play size={16} /> Start test</button>
+        <button type="button" onClick={start} style={btn(true)}><Play size={16} /> {startLabel}</button>
       </div>
       <h3 style={{ fontSize: '1rem', fontWeight: 900, color: C.ink, margin: '0 0 8px' }}>Past tests</h3>
       {attempts.length === 0 && <div style={{ ...card, color: C.faint, fontWeight: 700 }}>No tests yet.</div>}
@@ -365,7 +383,7 @@ const ScholarshipTest = ({ topic, chapter, profile, onBack }) => {
         <button
           key={a.id}
           type="button"
-          onClick={() => { setReviewId(a.id); setView('review'); }}
+          onClick={() => { setReviewId(a.id); setReviewIdx(null); setView('result'); }}
           style={{ ...card, display: 'flex', alignItems: 'center', gap: 12, width: '100%', textAlign: 'left', marginBottom: 8, padding: '14px 16px', cursor: 'pointer' }}
         >
           <div style={{ flex: 1 }}>

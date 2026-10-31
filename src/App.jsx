@@ -4,6 +4,8 @@ import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-
 import { useAuth } from './context/AuthContext';
 import { useToast } from './context/ToastContext';
 import { useProfile } from './context/ProfileContext';
+import { examIdForTab } from './utils/examHub';
+import { syncSpecialWeekly } from './services/specialWeeklyService';
 import { studentService } from './services/studentService';
 import Sidebar from './components/Sidebar';
 import ErrorBoundary from './components/ErrorBoundary';
@@ -102,7 +104,7 @@ const Settings = lazyWithReload(() => import('./components/Settings'));
 const StudentDetail = lazyWithReload(() => import('./components/StudentDetail'));
 const ReportsAdmin = lazyWithReload(() => import('./components/ReportsAdmin'));
 const ExamPrep = lazyWithReload(() => import('./components/ExamPrep'));
-const Scholarship = lazyWithReload(() => import('./components/Scholarship'));
+const OcSelectivePrep = lazyWithReload(() => import('./components/OcSelectivePrep'));
 const DnaWarmupReviewPage = lazyWithReload(() => import('./components/hsc/DnaWarmupReviewPage'));
 const QuestionPreStepsReviewPage = lazyWithReload(() => import('./components/hsc/QuestionPreStepsReviewPage'));
 import Login from './pages/Login';
@@ -1068,6 +1070,17 @@ function App() {
     })();
   }, [isAdmin, profileLoaded, user?.uid, profile?.calcAutoMode, profile?.firstName, profile?.displayName]);
 
+  // Weekly OC / Selective / Scholarship summary for the teacher: the first time the app opens after a week has ended,
+  // last week's totals go to the student's own profile in one write (utils/specialWeekly). No read, and nothing at all
+  // on the other days — `profile` is the copy the app already holds.
+  const specialWeeklyRanRef = useRef(false);
+  useEffect(() => {
+    if (isAdmin || !profileLoaded || !user?.uid || profile?.scholarshipEnabled !== true || specialWeeklyRanRef.current) return;
+    specialWeeklyRanRef.current = true;
+    syncSpecialWeekly({ uid: user.uid, existingKeys: Object.keys(profile.specialWeekly || {}) })
+      .catch((err) => console.warn('Weekly special-test summary not sent (non-critical):', err?.code || err));
+  }, [isAdmin, profileLoaded, user?.uid, profile]);
+
   const dismissCelebration = useCallback(() => {
     if (user?.uid && !medalCelebrationPreview) {
       try { localStorage.removeItem(`calc:pending-medals:${user.uid}`); } catch { /* noop */ }
@@ -1389,8 +1402,10 @@ function App() {
         return <Curriculum initialSearchId={bankJumpId} onInitialSearchConsumed={() => setBankJumpId(null)} />;
       case 'ExamPrep':
         return <ExamPrep profile={profile} onExamActiveChange={setExamInProgress} />;
+      case 'OcPrep':
+      case 'SelectivePrep':
       case 'Scholarship':
-        return <Scholarship profile={profile} />;
+        return <OcSelectivePrep key={activeTab} examId={examIdForTab(activeTab)} profile={profile} setActiveTab={handleTabChange} />;
       case 'Library':
         return <Library />;
       case 'Reports':
