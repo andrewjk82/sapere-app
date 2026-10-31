@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { lazy, Suspense, useCallback, useEffect, useMemo, useState } from 'react';
 import { ArrowLeft, CheckCircle2, ChevronLeft, ChevronRight, Clock, Lightbulb, Play, XCircle } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { getTopicQuestions } from '../services/contentLoader';
@@ -6,10 +6,14 @@ import { parseSolutionSteps } from '../utils/solutionSteps';
 import { isDisplayedOptionCorrect } from '../utils/mcOptionShuffle';
 import {
   TEST_SIZE, TEST_SECONDS, loadTestState, saveTestState, pickTestQuestions, applyFinishedTest,
-  gradeTest, gradeQuestionMarks, isPickCorrect, correctIndexOf, isTestable, secondsLeft, subKey,
+  gradeTest, isPickCorrect, correctIndexOf, isTestable, secondsLeft, subKey, toReviewItems,
 } from '../utils/scholarshipTest';
 import MathView from './MathView';
 import TopicPracticeSession from './TopicPracticeSession';
+import ScholarshipResult from './ScholarshipResult';
+
+// The challenge review (one question at a time, step-by-step solutions) is only needed once a student opens a review.
+const ChallengeReviewView = lazy(() => import('./challenge/ChallengeReviewView'));
 
 const C = { ink: '#1e1b4b', muted: '#64748b', faint: '#94a3b8', line: '#e2e8f0', violet: '#7c3aed', soft: '#f5f3ff', green: '#059669', red: '#e11d48' };
 const card = { background: '#fff', border: `1px solid ${C.line}`, borderRadius: 20, padding: 18, boxShadow: '0 4px 14px rgba(15,23,42,0.04)' };
@@ -171,8 +175,9 @@ const ScholarshipTest = ({ topic, chapter, profile, onBack, size: sizeProp = TES
   const [failed, setFailed] = useState(false);
   const [st, setSt] = useState(() => loadTestState(uid, keyChapter, topic.id));
   // An unfinished test resumes straight away (one whose time ran out is submitted below).
-  const [view, setView] = useState(() => (st.current ? 'test' : 'home')); // 'home' | 'test' | 'review'
+  const [view, setView] = useState(() => (st.current ? 'test' : 'home')); // 'home' | 'test' | 'result' | 'review'
   const [reviewId, setReviewId] = useState(null);
+  const [reviewIdx, setReviewIdx] = useState(null);   // question the review opens on (null = the result screen)
   const [idx, setIdx] = useState(0);
   const [confirming, setConfirming] = useState(false);
   const [now, setNow] = useState(() => Date.now());
@@ -207,7 +212,8 @@ const ScholarshipTest = ({ topic, chapter, profile, onBack, size: sizeProp = TES
     save(applyFinishedTest({ ...s, current: null, attempts: [...s.attempts, attempt] }, attempt));
     setConfirming(false);
     setReviewId(attempt.id);
-    setView('review');
+    setReviewIdx(null);
+    setView('result');
   }, [st, byId, save, limit]);
 
   // Clock tick; time up → submit (also catches a test whose time ran out while away).
@@ -235,8 +241,8 @@ const ScholarshipTest = ({ topic, chapter, profile, onBack, size: sizeProp = TES
   };
 
   const back = (
-    <button type="button" onClick={view === 'review' ? () => setView('home') : onBack} style={{ ...btn(false), padding: '8px 12px', marginBottom: 14 }}>
-      <ArrowLeft size={16} /> {view === 'review' ? 'All tests' : 'Back'}
+    <button type="button" onClick={view === 'result' ? () => setView('home') : onBack} style={{ ...btn(false), padding: '8px 12px', marginBottom: 14 }}>
+      <ArrowLeft size={16} /> {view === 'result' ? 'All tests' : 'Back'}
     </button>
   );
   const wrap = (children) => <div style={{ maxWidth: 760, margin: '0 auto', padding: '8px 4px 40px' }}>{children}</div>;
@@ -302,37 +308,36 @@ const ScholarshipTest = ({ topic, chapter, profile, onBack, size: sizeProp = TES
     );
   }
 
-  // ── Review ──────────────────────────────────────────────────────────────
-  const attempt = view === 'review' ? st.attempts.find((a) => a.id === reviewId) : null;
+  // ── Result, and the challenge-style review ──────────────────────────────
+  const attempt = (view === 'result' || view === 'review') ? st.attempts.find((a) => a.id === reviewId) : null;
   if (attempt) {
     const qs = attempt.questionIds.map((id) => byId.get(String(id))).filter(Boolean);
+    if (view === 'review' && reviewIdx !== null) {
+      const items = toReviewItems(qs, attempt.answers);
+      return (
+        <Suspense fallback={<div style={{ position: 'fixed', inset: 0, display: 'grid', placeItems: 'center', background: '#f8fafc', zIndex: 2200 }}>Loading…</div>}>
+          <ChallengeReviewView
+            questions={items.questions}
+            userAnswers={items.userAnswers}
+            answerResults={items.answerResults}
+            startIdx={reviewIdx}
+            disableReport
+            isMobile={typeof window !== 'undefined' && window.innerWidth < 768}
+            onClose={() => { setReviewIdx(null); setView('result'); }}
+          />
+        </Suspense>
+      );
+    }
     return wrap(
       <>
         {back}
-        <div style={{ ...card, marginBottom: 14, textAlign: 'center' }}>
-          <div style={{ fontSize: '0.8rem', fontWeight: 800, color: C.faint }}>{new Date(attempt.submittedAt).toLocaleString()}</div>
-          <div style={{ fontSize: '2.2rem', fontWeight: 900, color: C.ink, margin: '4px 0' }}>{attempt.marks} / {attempt.total}</div>
-          <div style={{ fontWeight: 700, color: C.muted }}>
-            {Math.round((attempt.marks / Math.max(1, attempt.total)) * 100)}% · {mmss(attempt.durationSec || 0)}
-          </div>
-        </div>
-        {qs.map((q, i) => {
-          const a = attempt.answers?.[String(q.id)];
-          const r = gradeQuestionMarks(q, a);
-          const ok = r.marks === r.total;
-          return (
-            <div key={q.id} style={{ ...card, marginBottom: 12 }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
-                <span style={{ fontWeight: 900, color: C.violet }}>Question {i + 1}</span>
-                <span style={{ marginLeft: 'auto', fontWeight: 900, color: ok ? C.green : C.red, display: 'inline-flex', alignItems: 'center', gap: 4 }}>
-                  {ok ? <CheckCircle2 size={16} /> : <XCircle size={16} />}
-                  {r.total > 1 ? `${r.marks}/${r.total}` : ok ? 'Correct' : isAnswered(q, a) ? 'Incorrect' : 'Not answered'}
-                </span>
-              </div>
-              <QuestionBody q={q} answer={a} review />
-            </div>
-          );
-        })}
+        <ScholarshipResult
+          attempt={attempt}
+          history={st.attempts}
+          questions={qs}
+          byId={byId}
+          onReview={(i) => { setReviewIdx(i); setView('review'); }}
+        />
       </>,
     );
   }
@@ -374,7 +379,7 @@ const ScholarshipTest = ({ topic, chapter, profile, onBack, size: sizeProp = TES
         <button
           key={a.id}
           type="button"
-          onClick={() => { setReviewId(a.id); setView('review'); }}
+          onClick={() => { setReviewId(a.id); setReviewIdx(null); setView('result'); }}
           style={{ ...card, display: 'flex', alignItems: 'center', gap: 12, width: '100%', textAlign: 'left', marginBottom: 8, padding: '14px 16px', cursor: 'pointer' }}
         >
           <div style={{ flex: 1 }}>

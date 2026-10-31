@@ -2,6 +2,8 @@
 import assert from 'node:assert';
 import { readFileSync } from 'node:fs';
 import { toLegacy } from '../content/legacy.js';
+import { toReviewItems, questionOutcomes, isPickCorrect, correctIndexOf, subKey } from '../src/utils/scholarshipTest.js';
+import { resolveCorrectOptionText } from '../src/utils/mcOptionShuffle.js';
 import {
   hubExamsFor, examIdForTab, HUB_PAGES, mockSizeFor, summariseAttempts, rankGroups,
   MIN_MARKS_TO_JUDGE, RECENT_ATTEMPTS, MOCK_FORMATS, MOCK_BLUEPRINT, pickNextStep, pickMockPaper,
@@ -198,6 +200,53 @@ test('a mock takes questions the student has not done, and says when it had to b
 test('the same seed builds the same paper', () => {
   assert.deepEqual(paper('thinking', 9).questionIds, paper('thinking', 9).questionIds);
   assert.notDeepEqual(paper('thinking', 9).questionIds, paper('thinking', 10).questionIds);
+});
+
+// ── the result screen and the challenge-style review ──────────────────────────────────────────────────────────────
+test('the review screen agrees with the test grader on every OC / Selective question, right and wrong picks alike', () => {
+  const optText = (o) => (typeof o === 'string' ? o : (o?.text ?? ''));
+  const disagreements = [];
+  let checked = 0;
+  Object.values(SECTIONS).forEach(([file, title]) => {
+    const qs = bank(file, title).filter((q) => (q.subQuestions?.length ? q.subQuestions.every((sq) => (sq.options || []).length > 1) : (q.options || []).length > 1));
+    [0, 1, 2].forEach((variant) => {
+      // variant 0: every pick right, 1: every pick wrong (next option), 2: a mix; some questions skipped in every variant
+      const answers = {};
+      qs.forEach((q, qi) => {
+        if (qi % 7 === 3) return;
+        const pickFor = (x) => { const ci = correctIndexOf(x); const n = x.options.length; return variant === 0 ? ci : variant === 1 ? (ci + 1) % n : ((qi % 2) ? ci : (ci + 1) % n); };
+        answers[String(q.id)] = q.subQuestions?.length ? Object.fromEntries(q.subQuestions.map((sq, i) => [subKey(sq, i), pickFor(sq)])) : pickFor(q);
+      });
+      const items = toReviewItems(qs, answers);
+      qs.forEach((q, i) => {
+        checked += 1;
+        const a = answers[String(q.id)];
+        const res = items.answerResults[i];
+        if (q.subQuestions?.length) {
+          q.subQuestions.forEach((sq, j) => { if (res.partCorrect[j] !== isPickCorrect(sq, a?.[subKey(sq, j)])) disagreements.push(`${q.id}.${j}`); });
+          // what the review shows as "Your answer" for a part is the option the student picked
+          q.subQuestions.forEach((sq, j) => { const k = subKey(sq, j); const picked = a?.[k]; if (picked !== undefined && items.userAnswers[i][k] !== optText(sq.options[picked])) disagreements.push(`${q.id}.${j}:shown`); });
+        } else {
+          if (res.correct !== isPickCorrect(q, a)) disagreements.push(String(q.id));
+          const ci = correctIndexOf(q);
+          if (resolveCorrectOptionText(items.questions[i]) !== optText(q.options[ci])) disagreements.push(`${q.id}:right-text`);
+          if (a !== undefined && items.userAnswers[i] !== optText(q.options[a])) disagreements.push(`${q.id}:shown`);
+        }
+        assert.equal(res.correct, questionOutcomes([q], answers)[0] === 'right', String(q.id));
+      });
+    });
+  });
+  assert.ok(checked > 700, `only ${checked} checked`);
+  assert.deepEqual(disagreements, [], `${disagreements.length} disagree: ${disagreements.slice(0, 8).join(', ')}`);
+});
+
+test('question map: right, partly right, wrong and unanswered are told apart', () => {
+  const single = { id: 's', options: ['a', 'b'], answer: '0' };
+  const passage = { id: 'p', subQuestions: [{ id: 'p1', options: ['a', 'b'], answer: '0' }, { id: 'p2', options: ['a', 'b'], answer: '1' }] };
+  const answers = { s: 1, p: { p1: 0, p2: 0 } };
+  assert.deepEqual(questionOutcomes([single, passage], answers), ['wrong', 'partial']);
+  assert.deepEqual(questionOutcomes([single, passage], { s: 0, p: { p1: 0, p2: 1 } }), ['right', 'right']);
+  assert.deepEqual(questionOutcomes([single, passage], {}), ['blank', 'blank']);
 });
 
 console.log(`\nexam hub: ${passed} passed`);

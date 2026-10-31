@@ -136,3 +136,60 @@ export const secondsLeft = (attempt, now = Date.now(), limit = TEST_SECONDS) => 
   const start = Number(attempt?.startedAt);
   return Math.max(0, limit - Math.floor((now - (Number.isFinite(start) ? start : now)) / 1000));
 };
+
+const optionText = (o) => (typeof o === 'string' ? o : (o?.text ?? ''));
+
+/**
+ * The shape the challenge review screen (components/challenge/ChallengeReviewView) expects, built from a finished
+ * test: `questions` in test order, what the student picked as text, and a result per question.
+ * Test answers are option INDEXES (options are never shuffled in a test), the review compares TEXT — so the right
+ * option is passed as `_shuffledAnswer` and each part's `answer` becomes the right option's text.
+ * `selectedOptionIdx` + an identity `_shuffledOrder` keep figure-only options (no text) displayable.
+ */
+export const toReviewItems = (questions, answers = {}) => {
+  const out = { questions: [], userAnswers: [], answerResults: [] };
+  questions.forEach((q) => {
+    const a = answers[String(q.id)];
+    if (q?.subQuestions?.length) {
+      const picked = {};
+      const partCorrect = [];
+      const subs = q.subQuestions.map((sq, i) => {
+        const k = subKey(sq, i);
+        const idx = a?.[k];
+        const has = idx !== undefined && idx !== null && idx !== '';
+        picked[k] = has ? optionText(sq.options?.[Number(idx)]) : '';
+        partCorrect.push(isPickCorrect(sq, idx));
+        const ci = correctIndexOf(sq);
+        return { ...sq, answer: ci >= 0 ? optionText(sq.options[ci]) : sq.answer };
+      });
+      out.questions.push({ ...q, subQuestions: subs });
+      out.userAnswers.push(picked);
+      // `partCorrect` is what the review shows per part: it must come from the grader, not from comparing answer text
+      // (text matching ignores units, so "0.875 g" would count as "0.875 kg").
+      out.answerResults.push({ correct: partCorrect.every(Boolean), partCorrect });
+      return;
+    }
+    const has = a !== undefined && a !== null && a !== '';
+    const ci = correctIndexOf(q);
+    const opts = Array.isArray(q.options) ? q.options : [];
+    out.questions.push({
+      ...q,
+      ...(ci >= 0 ? { _shuffledAnswer: optionText(opts[ci]), _shuffledAnswerIndex: ci } : {}),
+      _shuffledOrder: opts.map((_, i) => i),
+    });
+    out.userAnswers.push(has ? optionText(opts[Number(a)]) : '');
+    out.answerResults.push({ correct: isPickCorrect(q, a), selectedOptionIdx: has ? Number(a) : undefined });
+  });
+  return out;
+};
+
+/** One marker per question for the result screen's question map: 'right' | 'partial' | 'wrong' | 'blank'. */
+export const questionOutcomes = (questions, answers = {}) => questions.map((q) => {
+  const r = gradeQuestionMarks(q, answers[String(q.id)]);
+  const answered = q?.subQuestions?.length
+    ? q.subQuestions.some((sq, i) => answers[String(q.id)]?.[subKey(sq, i)] !== undefined)
+    : answers[String(q.id)] !== undefined && answers[String(q.id)] !== null && answers[String(q.id)] !== '';
+  if (r.marks === r.total) return 'right';
+  if (!answered) return 'blank';
+  return r.marks > 0 ? 'partial' : 'wrong';
+});
