@@ -13661,7 +13661,7 @@
           "difficulty": "hard",
           "stem": "Look at the shapes below. They are numbered I, II, III, IV, V and VI. Three of these shapes are joined together to make this pattern. Which shapes were used in the pattern? (Hint: the shapes can be rotated.)",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 620 440\" width=\"95%\" height=\"auto\"><image href=\"/oc/t8-q26.jpg\" x=\"0\" y=\"0\" width=\"620\" height=\"440\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 578\" width=\"95%\" height=\"auto\"><image href=\"/oc/t8-q26.jpg\" x=\"0\" y=\"0\" width=\"760\" height=\"578\"/></svg>"
           },
           "options": [
             "IV, V, VI",
