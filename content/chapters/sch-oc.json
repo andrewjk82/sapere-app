@@ -13711,7 +13711,7 @@
           "difficulty": "hard",
           "stem": "Here is a large and a small shape. How many of the smaller shapes will fit into the larger shape?",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 759 297\" width=\"85%\" height=\"auto\"><image href=\"/oc/t8-q27.jpg\" x=\"0\" y=\"0\" width=\"759\" height=\"297\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 722 317\" width=\"85%\" height=\"auto\"><image href=\"/oc/t8-q27.jpg\" x=\"0\" y=\"0\" width=\"722\" height=\"317\"/></svg>"
           },
           "options": [
             "4",
