@@ -13993,7 +13993,7 @@
                   "explain": "Say what the chart shows.",
                   "work": "<p>The chart shows the activities children like doing (for example, team sports 92%, TV or videos 86%). It says nothing about weight or about needing more exercise.</p>",
                   "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 246\" width=\"85%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><text x=\"126\" y=\"24\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Junior sports</text><rect x=\"132\" y=\"8\" width=\"153.4\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"290.4\" y=\"23\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >59%</text><text x=\"126\" y=\"50\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Board/card games</text><rect x=\"132\" y=\"34\" width=\"179.4\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"316.4\" y=\"49\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >69%</text><text x=\"126\" y=\"76\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Reading</text><rect x=\"132\" y=\"60\" width=\"195.0\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"332.0\" y=\"75\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >75%</text><text x=\"126\" y=\"102\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Arts & crafts</text><rect x=\"132\" y=\"86\" width=\"200.20000000000002\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"337.20000000000005\" y=\"101\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >77%</text><text x=\"126\" y=\"128\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Individual sports</text><rect x=\"132\" y=\"112\" width=\"208.0\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"345.0\" y=\"127\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >80%</text><text x=\"126\" y=\"154\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Computer games</text><rect x=\"132\" y=\"138\" width=\"213.20000000000002\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"350.20000000000005\" y=\"153\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >82%</text><text x=\"126\" y=\"180\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Active play</text><rect x=\"132\" y=\"164\" width=\"221.0\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"358.0\" y=\"179\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >85%</text><text x=\"126\" y=\"206\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >TV or videos</text><rect x=\"132\" y=\"190\" width=\"223.6\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"360.6\" y=\"205\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >86%</text><text x=\"126\" y=\"232\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Team sports</text><rect x=\"132\" y=\"216\" width=\"239.20000000000002\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"376.20000000000005\" y=\"231\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >92%</text></svg>"
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 246\" width=\"85%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><text x=\"126\" y=\"24\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Junior sports</text><rect x=\"132\" y=\"8\" width=\"153.4\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"290.4\" y=\"23\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >59%</text><text x=\"126\" y=\"50\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Board/card games</text><rect x=\"132\" y=\"34\" width=\"179.4\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"316.4\" y=\"49\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >69%</text><text x=\"126\" y=\"76\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Reading</text><rect x=\"132\" y=\"60\" width=\"195.0\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"332.0\" y=\"75\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >75%</text><text x=\"126\" y=\"102\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Arts &amp; crafts</text><rect x=\"132\" y=\"86\" width=\"200.20000000000002\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"337.20000000000005\" y=\"101\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >77%</text><text x=\"126\" y=\"128\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Individual sports</text><rect x=\"132\" y=\"112\" width=\"208.0\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"345.0\" y=\"127\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >80%</text><text x=\"126\" y=\"154\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Computer games</text><rect x=\"132\" y=\"138\" width=\"213.20000000000002\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"350.20000000000005\" y=\"153\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >82%</text><text x=\"126\" y=\"180\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Active play</text><rect x=\"132\" y=\"164\" width=\"221.0\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"358.0\" y=\"179\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >85%</text><text x=\"126\" y=\"206\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >TV or videos</text><rect x=\"132\" y=\"190\" width=\"223.6\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"360.6\" y=\"205\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >86%</text><text x=\"126\" y=\"232\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Team sports</text><rect x=\"132\" y=\"216\" width=\"239.20000000000002\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"376.20000000000005\" y=\"231\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >92%</text></svg>"
                   }
                 },
                 {
@@ -14042,7 +14042,7 @@
                   "explain": "Check each part against the chart.",
                   "work": "<p>Team sports: 92% — the highest bar ✓ (team sport is the favourite activity).</p><p>TV or videos: 86% and computer games: 82% — these are also high ✓.</p>",
                   "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 246\" width=\"85%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><text x=\"126\" y=\"24\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Junior sports</text><rect x=\"132\" y=\"8\" width=\"153.4\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"290.4\" y=\"23\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >59%</text><text x=\"126\" y=\"50\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Board/card games</text><rect x=\"132\" y=\"34\" width=\"179.4\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"316.4\" y=\"49\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >69%</text><text x=\"126\" y=\"76\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Reading</text><rect x=\"132\" y=\"60\" width=\"195.0\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"332.0\" y=\"75\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >75%</text><text x=\"126\" y=\"102\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Arts & crafts</text><rect x=\"132\" y=\"86\" width=\"200.20000000000002\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"337.20000000000005\" y=\"101\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >77%</text><text x=\"126\" y=\"128\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Individual sports</text><rect x=\"132\" y=\"112\" width=\"208.0\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"345.0\" y=\"127\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >80%</text><text x=\"126\" y=\"154\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Computer games</text><rect x=\"132\" y=\"138\" width=\"213.20000000000002\" height=\"20\" rx=\"3\" fill=\"#6ee7b7\" stroke=\"#059669\" stroke-width=\"1.6\" /><text x=\"350.20000000000005\" y=\"153\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >82%</text><text x=\"126\" y=\"180\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Active play</text><rect x=\"132\" y=\"164\" width=\"221.0\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"358.0\" y=\"179\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >85%</text><text x=\"126\" y=\"206\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >TV or videos</text><rect x=\"132\" y=\"190\" width=\"223.6\" height=\"20\" rx=\"3\" fill=\"#6ee7b7\" stroke=\"#059669\" stroke-width=\"1.6\" /><text x=\"360.6\" y=\"205\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >86%</text><text x=\"126\" y=\"232\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Team sports</text><rect x=\"132\" y=\"216\" width=\"239.20000000000002\" height=\"20\" rx=\"3\" fill=\"#6ee7b7\" stroke=\"#059669\" stroke-width=\"1.6\" /><text x=\"376.20000000000005\" y=\"231\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >92%</text></svg>"
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 246\" width=\"85%\" height=\"auto\" font-family=\"system-ui,-apple-system,'Segoe UI',Arial,sans-serif\"><text x=\"126\" y=\"24\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Junior sports</text><rect x=\"132\" y=\"8\" width=\"153.4\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"290.4\" y=\"23\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >59%</text><text x=\"126\" y=\"50\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Board/card games</text><rect x=\"132\" y=\"34\" width=\"179.4\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"316.4\" y=\"49\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >69%</text><text x=\"126\" y=\"76\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Reading</text><rect x=\"132\" y=\"60\" width=\"195.0\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"332.0\" y=\"75\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >75%</text><text x=\"126\" y=\"102\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Arts &amp; crafts</text><rect x=\"132\" y=\"86\" width=\"200.20000000000002\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"337.20000000000005\" y=\"101\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >77%</text><text x=\"126\" y=\"128\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Individual sports</text><rect x=\"132\" y=\"112\" width=\"208.0\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"345.0\" y=\"127\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >80%</text><text x=\"126\" y=\"154\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Computer games</text><rect x=\"132\" y=\"138\" width=\"213.20000000000002\" height=\"20\" rx=\"3\" fill=\"#6ee7b7\" stroke=\"#059669\" stroke-width=\"1.6\" /><text x=\"350.20000000000005\" y=\"153\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >82%</text><text x=\"126\" y=\"180\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Active play</text><rect x=\"132\" y=\"164\" width=\"221.0\" height=\"20\" rx=\"3\" fill=\"#a5b4fc\" stroke=\"#4f46e5\" stroke-width=\"1.6\" /><text x=\"358.0\" y=\"179\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >85%</text><text x=\"126\" y=\"206\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >TV or videos</text><rect x=\"132\" y=\"190\" width=\"223.6\" height=\"20\" rx=\"3\" fill=\"#6ee7b7\" stroke=\"#059669\" stroke-width=\"1.6\" /><text x=\"360.6\" y=\"205\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >86%</text><text x=\"126\" y=\"232\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"end\" >Team sports</text><rect x=\"132\" y=\"216\" width=\"239.20000000000002\" height=\"20\" rx=\"3\" fill=\"#6ee7b7\" stroke=\"#059669\" stroke-width=\"1.6\" /><text x=\"376.20000000000005\" y=\"231\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" text-anchor=\"start\" >92%</text></svg>"
                   }
                 },
                 {
@@ -14561,12 +14561,16 @@
           "hint": "Go through Alex’s pets one at a time and cross out any that Ben or Carlos also keeps.",
           "steps": [
             {
-              "explain": "List Alex’s pets and check each against Ben’s and Carlos’s lists.",
-              "work": "<p>snakes — Ben ✘, Carlos ✘ → only Alex</p><p>fish — Carlos has fish</p><p>lizards — Ben ✘, Carlos ✘ → only Alex</p><p>rats — Ben and Carlos have rats</p><p>frogs — Ben and Carlos have frogs</p>"
+              "explain": "Copy Alex’s five pets, then compare each name with Ben’s and Carlos’s lists.",
+              "work": "Start with: snakes, fish, lizards, rats, frogs."
             },
             {
-              "explain": "The pets that only Alex keeps are snakes and lizards.",
-              "work": "<p>Answer: <strong>snakes and lizards</strong></p>"
+              "explain": "Cross out any pet kept by either other person: fish occurs with Carlos, and rats and frogs occur with both Ben and Carlos.",
+              "work": "Only snakes and lizards remain."
+            },
+            {
+              "explain": "The pets Alex keeps that neither Ben nor Carlos keep are snakes and lizards.",
+              "work": "\\(\boxed{\text{snakes and lizards}}\\)"
             }
           ],
           "keyPoints": [
@@ -14772,11 +14776,16 @@
           "hint": "Jim found a jacket that matches the description. Does matching the description prove it is Jane’s?",
           "steps": [
             {
-              "explain": "Jim assumes that any blue jacket with a hood must be Jane’s."
+              "explain": "Jim treats the description “blue, with a hood” as if it identifies one unique jacket.",
+              "work": "The description gives two features, not the owner’s name."
             },
             {
-              "explain": "But other people could also own blue jackets with hoods, so matching the description does not prove it is hers.",
-              "work": "<p>Answer: <strong>There might be more than one blue jacket with a hood.</strong></p>"
+              "explain": "A second jacket could have the same two features. If so, matching the description would not prove that this jacket belongs to Jane.",
+              "work": "This is the missing possibility in Jim’s reasoning."
+            },
+            {
+              "explain": "Therefore Jim’s mistake is assuming there is only one blue jacket with a hood.",
+              "work": "\\(\boxed{\text{There might be more than one blue jacket with a hood.}}\\)"
             }
           ],
           "keyPoints": [
@@ -14810,11 +14819,16 @@
           "hint": "Look for the statement that gives the strongest reason WHY a motorcyclist should wear a helmet.",
           "steps": [
             {
-              "explain": "The claim is that motorcycle riders should wear helmets. The best support is a reason helmets help riders."
+              "explain": "The police officer’s claim is a recommendation: motorcycle riders should wear helmets. Find evidence that explains why.",
+              "work": "A direct safety benefit would support the recommendation."
             },
             {
-              "explain": "B says helmets make serious injury much less likely — a direct reason to wear one. The others are about price, horses or speed and do not give a reason.",
-              "work": "<p>Answer: <strong>B</strong></p>"
+              "explain": "Wearing a helmet makes serious injury much less likely. This links the action (wearing a helmet) to the benefit (reduced harm).",
+              "work": "The other statements discuss cost, horse riders or speed without showing helmet protection."
+            },
+            {
+              "explain": "So the strongest support is that a helmet reduces the chance of serious injury.",
+              "work": "\\(\boxed{\text{You are much less likely to suffer a serious injury if you are wearing a helmet.}}\\)"
             }
           ],
           "keyPoints": [
@@ -14893,11 +14907,16 @@
           "hint": "20 hours is needed just to have a chance. What happens to someone with less than 20 hours?",
           "steps": [
             {
-              "explain": "The instructor says 20 hours of practice is <em>needed</em> to have any chance of passing. It does not say 20 hours guarantees a pass."
+              "explain": "Translate the instructor’s condition carefully: at least 20 hours is necessary to have any chance of passing.",
+              "work": "\\(\text{less than 20 hours}\\Rightarrow\text{no chance to pass}\\)"
             },
             {
-              "explain": "So anyone with less than 20 hours has no chance — none of them will pass.",
-              "work": "<p>A ✘ — 20 hours gives a chance, not a guaranteed pass.</p><p>B ✔</p><p>C and D ✘ — they contradict the instructor.</p>"
+              "explain": "The condition does not say that 20 hours guarantees a pass; it only says that below 20 hours passing is impossible.",
+              "work": "Do not reverse a necessary condition into a guarantee."
+            },
+            {
+              "explain": "Therefore none of the learners with less than 20 hours can pass.",
+              "work": "\\(\boxed{\text{None of the learner drivers who have had less than 20 hours of practice will pass.}}\\)"
             }
           ],
           "keyPoints": [
@@ -15021,11 +15040,16 @@
           "hint": "Mrs Hughes thinks the 3 children without glasses must be wearing contact lenses. Is there another possibility?",
           "steps": [
             {
-              "explain": "10 children are short-sighted and 7 wore glasses, so 3 did not wear glasses."
+              "explain": "Subtract the seven children wearing glasses from the ten known to be short-sighted.",
+              "work": "\\(10-7=3\\) short-sighted children were not seen wearing glasses."
             },
             {
-              "explain": "Mrs Hughes assumes those 3 must be wearing contact lenses. But they could be wearing nothing at all (or be absent).",
-              "work": "<p>Answer: <strong>C</strong></p>"
+              "explain": "Mrs Hughes assumes those three must be wearing contacts. But the facts do not rule out other possibilities, such as wearing no correction or being absent.",
+              "work": "Not wearing glasses does not logically imply wearing contacts."
+            },
+            {
+              "explain": "Her mistake is treating contacts as the only alternative.",
+              "work": "\\(\boxed{\text{Some short-sighted children might wear neither glasses nor contact lenses.}}\\)"
             }
           ],
           "keyPoints": [
@@ -15150,11 +15174,16 @@
           "hint": "The claim is that ocean plastic affects PEOPLE as well as sea creatures. Which statement shows a link to people?",
           "steps": [
             {
-              "explain": "The key part of the claim is “it affects us too”. We need evidence that ocean plastic reaches people."
+              "explain": "The claim says ocean plastic affects people as well as marine creatures. Look for evidence that connects ocean plastic with humans.",
+              "work": "The support must complete the link from ocean pollution to people."
             },
             {
-              "explain": "D: plastics found in fish sold in supermarkets means people may eat plastic from the ocean — a direct effect on us. The others do not connect ocean plastic to people.",
-              "work": "<p>Answer: <strong>D</strong></p>"
+              "explain": "Plastic found in fish sold in supermarkets provides that link: fish live in the ocean, and people buy and eat them.",
+              "work": "The other options describe recycling, alternatives or durability without showing a direct human effect."
+            },
+            {
+              "explain": "Therefore the supermarket-fish evidence best supports the claim.",
+              "work": "\\(\boxed{\text{Plastics have been found in fish sold in supermarkets.}}\\)"
             }
           ],
           "keyPoints": [
@@ -15235,12 +15264,16 @@
           "hint": "The prize is for the biggest improvement, not the highest mark. Find Year 10 mark − Year 9 mark for each student.",
           "steps": [
             {
-              "explain": "The prize goes to the biggest <em>improvement</em>. Subtract each student’s Year 9 mark from their Year 10 mark.",
-              "work": "<p>Uma: 79 − 84 = −5</p><p>Finn: 88 − 82 = +6</p><p>Lily: 86 − 75 = +11</p><p>Arlo: 78 − 73 = +5</p><p>Leon: 73 − 73 = 0</p><p>Sophie: 78 − 69 = +9</p>"
+              "explain": "The prize is for the largest change, so calculate Year 10 mark minus Year 9 mark for each student.",
+              "work": "\\(\text{change}=\text{Year 10 mark}-\text{Year 9 mark}\\)"
             },
             {
-              "explain": "Lily improved the most.",
-              "work": "<p>Answer: <strong>Lily</strong></p>"
+              "explain": "Compute the changes: Uma \\(79-84=-5\\); Finn \\(88-82=6\\); Lily \\(86-75=11\\); Arlo \\(78-73=5\\); Leon \\(73-73=0\\); Sophie \\(78-69=9\\).",
+              "work": "The largest increase is 11 marks."
+            },
+            {
+              "explain": "Lily has the greatest improvement, even though Finn has the highest Year 10 mark.",
+              "work": "\\(\boxed{\text{Lily}}\\)"
             }
           ],
           "keyPoints": [
@@ -15317,11 +15350,16 @@
           "hint": "Faisal says the practice gives you a chance. Does Sajid treat it as a guarantee?",
           "steps": [
             {
-              "explain": "Faisal says the practice is <em>needed</em> to have any chance of passing."
+              "explain": "Faisal says 15 minutes, four times a week is required just to have a chance of passing.",
+              "work": "This states a minimum condition, not a guaranteed result."
             },
             {
-              "explain": "Sajid does enough practice, then says he is <em>sure</em> to pass. Meeting a requirement gives a chance, not a guarantee.",
-              "work": "<p>Answer: <strong>D</strong></p>"
+              "explain": "Sajid practises more than that minimum, but “I do enough to have a chance” does not imply “I am sure to pass”. Other factors can affect the result.",
+              "work": "The mistake is turning a necessary condition into a sufficient guarantee."
+            },
+            {
+              "explain": "The sentence that identifies this error is that meeting the minimum practice does not guarantee success.",
+              "work": "\\(\boxed{\text{Doing the minimum practice required does not guarantee success in the exam.}}\\)"
             }
           ],
           "keyPoints": [
@@ -15477,12 +15515,16 @@
           "hint": "Work out how many cupcakes each ingredient alone would allow. The smallest answer is the limit.",
           "steps": [
             {
-              "explain": "Find how many cupcakes each ingredient is enough for.",
-              "work": "<p>Flour: 600 g ÷ 100 g = 6 batches → 48 cupcakes</p><p>Sugar: 500 g ÷ 100 g = 5 batches → 40 cupcakes</p><p>Butter: 300 g ÷ 100 g = 3 batches → 24 cupcakes</p><p>Eggs: 2 eggs make 8 cupcakes, so 1 egg makes 4 → 5 eggs make 20 cupcakes</p>"
+              "explain": "Find how many cupcakes each ingredient could support if it were the only limiting ingredient.",
+              "work": "Flour: \\(600\\div100=6\\) recipe quantities, so \\(6\times8=48\\) cupcakes."
             },
             {
-              "explain": "He runs out of eggs first, so eggs set the limit.",
-              "work": "<p>Maximum = <strong>20</strong> cupcakes</p>"
+              "explain": "Do the same for sugar, butter and eggs. For eggs, each cupcake needs \\(2/8=1/4\\) egg.",
+              "work": "Sugar: \\(500\\div100\times8=40\\); butter: \\(300\\div100\times8=24\\); eggs: \\(5\\div2\times8=20\\)."
+            },
+            {
+              "explain": "The smallest capacity is 20 cupcakes, so eggs run out first.",
+              "work": "\\(\boxed{20\text{ cupcakes}}\\)"
             }
           ],
           "keyPoints": [
@@ -15808,11 +15850,16 @@
           "hint": "The claim is that exercise will help with CHESS. Which statement links exercise to something that matters in chess?",
           "steps": [
             {
-              "explain": "The coach claims daily running or tennis will help the team do well at chess. Support must show exercise helps chess players."
+              "explain": "The coach claims exercise improves chess performance. Identify a skill that matters in chess and an effect exercise can have on it.",
+              "work": "Concentration is relevant to making and evaluating chess moves."
             },
             {
-              "explain": "Chess needs good concentration. If regular exercise improves concentration, then daily exercise helps at chess.",
-              "work": "<p>D is about physical strength, which does not matter much in chess. A and C do not show exercise helps.</p><p>Answer: <strong>B</strong></p>"
+              "explain": "Regular exercise improves concentration, so it provides a direct link between the suggested activity and better chess performance.",
+              "work": "The other options do not establish that connection."
+            },
+            {
+              "explain": "Thus the best supporting statement is that regular exercise improves concentration.",
+              "work": "\\(\boxed{\text{Regular exercise improves concentration.}}\\)"
             }
           ],
           "keyPoints": [
@@ -15849,11 +15896,19 @@
           "hint": "The four columns all have different heights. From which side could you see all four, and how would they line up?",
           "steps": [
             {
-              "explain": "The four columns all have different heights. To see all four in a side view, look from the side where the two shortest columns sit in front of the taller ones."
+              "explain": "Read the four columns’ heights and positions in the 3D picture. A side view collapses depth, so columns in the same line of sight overlap.",
+              "work": "The correct silhouette must show the visible columns in the right order and keep the taller and shorter heights distinct."
             },
             {
-              "explain": "From that side, the tallest column appears on the right with the shortest column in front of it. The other two columns appear on the left, with the smaller one in front of the taller one.",
-              "work": "<p>Answer: <strong>C</strong></p>"
+              "explain": "From the side that reveals both rows, the two front columns line up with the back columns. The short front column hides part of a taller column; the rightmost visible column is tallest.",
+              "work": "This rules out choices that reverse the order or place the height steps incorrectly."
+            },
+            {
+              "explain": "Choice C matches that side-on order and the column heights. The solution view below highlights the matching option.",
+              "work": "\\(\boxed{C}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 800\" width=\"75%\" height=\"auto\" style=\"display:block;margin:0 auto\"><image href=\"/oc/ts2-q4.jpg\" x=\"0\" y=\"0\" width=\"800\" height=\"800\"/><rect x=\"80\" y=\"488\" width=\"300\" height=\"302\" rx=\"12\" fill=\"#10b981\" fill-opacity=\".1\" stroke=\"#059669\" stroke-width=\"7\"/></svg>"
+              }
             }
           ],
           "timeLimit": 90,
@@ -15881,11 +15936,16 @@
           "hint": "Yellow is 3rd. Which two teams must be in 4th and 5th? Then which two fill 1st and 2nd?",
           "steps": [
             {
-              "explain": "Blue and Orange both finished after Yellow, so they are 4th and 5th — Blue 4th, Orange 5th."
+              "explain": "Place Yellow in third place. Green finished after Red but before Yellow, so Red and Green must occupy first and second places in that order.",
+              "work": "\\(\text{Red} < \text{Green} < \text{Yellow}\\)"
             },
             {
-              "explain": "Red and Green must be 1st and 2nd. Green finished after Red, so Red is 1st.",
-              "work": "<p>Red – Green – Yellow – Blue – Orange</p><p>Answer: <strong>Red</strong></p>"
+              "explain": "Blue finished after Yellow, and Blue beat Orange. Therefore Blue is fourth and Orange is fifth.",
+              "work": "\\(\text{Yellow} < \text{Blue} < \text{Orange}\\)"
+            },
+            {
+              "explain": "The full order is Red, Green, Yellow, Blue, Orange. Red is first.",
+              "work": "\\(\boxed{\text{Red}}\\)"
             }
           ],
           "keyPoints": [
@@ -15919,11 +15979,16 @@
           "hint": "Gabriel says “it can’t be true” because of what he personally has seen. Is that enough to prove it never happens?",
           "steps": [
             {
-              "explain": "Gabriel decides the belief cannot be true because he has never seen it happen."
+              "explain": "Gabriel’s evidence is that he has seen arrow snakes many times but has never seen one leap or pierce prey.",
+              "work": "He is using personal experience as the basis for rejecting the claim."
             },
             {
-              "explain": "Not seeing something does not mean it never happens — the snake might only leap in certain situations Gabriel was not there for.",
-              "work": "<p>Answer: <strong>C</strong></p>"
+              "explain": "Not observing an event does not prove it never occurs; it may be rare or happen when he is not watching.",
+              "work": "This is the gap between “I have not seen it” and “it cannot happen”."
+            },
+            {
+              "explain": "His mistake is denying something solely because he has not witnessed it himself.",
+              "work": "\\(\boxed{\text{He has denied something just because he has not witnessed it himself.}}\\)"
             }
           ],
           "keyPoints": [
@@ -15960,11 +16025,19 @@
           "hint": "First decide which city has the most rain overall by comparing the bars month by month. Then add up that city’s six bars.",
           "steps": [
             {
-              "explain": "Chitaquin (black) is higher than Fentan in every month. It is only lower than Shishain in October, and it beats Shishain by more than that in May. So Chitaquin has the highest total."
+              "explain": "Compare totals, not just one month. Chitaquin’s black bars exceed Fentan’s grey bars in every month; against Shishain, the May advantage is larger than the October shortfall.",
+              "work": "This makes Chitaquin the city with the greatest six-month total.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 361\" width=\"75%\" height=\"auto\" style=\"display:block;margin:0 auto\"><image href=\"/oc/ts2-q7.jpg\" x=\"0\" y=\"0\" width=\"800\" height=\"361\"/><g fill=\"#f59e0b\" fill-opacity=\".25\" stroke=\"#d97706\" stroke-width=\"3\"><rect x=\"75\" y=\"63\" width=\"24\" height=\"247\"/><rect x=\"171\" y=\"171\" width=\"24\" height=\"139\"/><rect x=\"267\" y=\"261\" width=\"24\" height=\"49\"/><rect x=\"363\" y=\"289\" width=\"24\" height=\"21\"/><rect x=\"459\" y=\"268\" width=\"24\" height=\"42\"/><rect x=\"555\" y=\"128\" width=\"24\" height=\"182\"/></g></svg>"
+              }
             },
             {
-              "explain": "Add Chitaquin’s rainfall for each month.",
-              "work": "<p>35 + 14 + 7 + 3 + 6 + 26 = <strong>91</strong></p>"
+              "explain": "Read Chitaquin’s values for May to October: 35, 14, 7, 3, 6 and 26. Add them in order.",
+              "work": "\\(35+14=49\\); \\(49+7=56\\); \\(56+3=59\\); \\(59+6=65\\); \\(65+26=91\\)."
+            },
+            {
+              "explain": "The highest total rainfall is 91.",
+              "work": "\\(\boxed{91}\\)"
             }
           ],
           "keyPoints": [
@@ -16040,11 +16113,16 @@
           "hint": "If all their heads are level, the shortest girl must stand on the highest step. Who is the shortest?",
           "steps": [
             {
-              "explain": "For heads to be level, taller girls stand on lower steps and shorter girls on higher steps."
+              "explain": "If all heads are level, the height of each stair must compensate for the girl’s height: the shortest girl stands on the highest step.",
+              "work": "Caitlin is shorter than Izzy and Melissa."
             },
             {
-              "explain": "Caitlin is shorter than both Izzy and Melissa, so Caitlin must be on the top step.",
-              "work": "<p>So Caitlin cannot be on the middle step.</p><p>Answer: <strong>C</strong></p>"
+              "explain": "Therefore Caitlin must stand on the top step, not the middle step.",
+              "work": "The statement “Caitlin is on the middle step” cannot be true."
+            },
+            {
+              "explain": "The impossible statement is choice C.",
+              "work": "\\(\boxed{C}\\)"
             }
           ],
           "keyPoints": [
@@ -16081,11 +16159,16 @@
           "hint": "Check each triangle: count two shapes along — is it a square? Then check every square is followed by a circle.",
           "steps": [
             {
-              "explain": "Find each triangle and look at the second shape after it. It must be a square."
+              "explain": "Test the two rules separately in each sequence. For every square, inspect the very next shape; for every triangle, count two positions to its right.",
+              "work": "Rule 1: square → next shape is circle. Rule 2: triangle → second following shape is square."
             },
             {
-              "explain": "In D the shapes go square, circle, triangle, square, circle … The second shape after the triangle is a circle, not a square, so D breaks the rule.",
-              "work": "<p>Answer: <strong>D</strong></p>"
+              "explain": "In sequence D, the triangle is followed by a square and then a circle. The second shape after the triangle is therefore a circle, not a square.",
+              "work": "Triangle → square (1st) → circle (2nd), so Rule 2 is broken."
+            },
+            {
+              "explain": "Since one rule is broken, D is the sequence that is not allowed.",
+              "work": "\\(\\boxed{D}\\)"
             }
           ],
           "keyPoints": [
@@ -16119,11 +16202,16 @@
           "hint": "The support must show a BENEFIT of letting students choose their own books.",
           "steps": [
             {
-              "explain": "Michael claims students should choose their own books. Support must show a benefit of choosing."
+              "explain": "Michael’s conclusion is that students should choose their own books. The strongest support should show a benefit of choosing a book they enjoy.",
+              "work": "Look for a statement that links enjoyment with learning."
             },
             {
-              "explain": "Students are likely to enjoy books they chose. If students learn more when they enjoy what they read, then choosing helps them learn.",
-              "work": "<p>Answer: <strong>D</strong></p>"
+              "explain": "If students learn more when they enjoy what they read, giving them choice can help them select books they enjoy and therefore learn more.",
+              "work": "Choice → more enjoyable reading → more learning."
+            },
+            {
+              "explain": "That direct link supports Michael’s claim. The other statements do not show that choice improves learning.",
+              "work": "\\(\\boxed{\\text{Students learn more when they enjoy what they read.}}\\)"
             }
           ],
           "keyPoints": [
@@ -16245,11 +16333,16 @@
           "hint": "“Most” of the girls want Harry Potter — not all of them. Who would be unhappy with Ms Chen’s plan?",
           "steps": [
             {
-              "explain": "Only <em>most</em> girls want Harry Potter and <em>most</em> boys want Star Wars."
+              "explain": "“Most girls” preferring Harry Potter and “most boys” preferring Star Wars describe majorities, not unanimous preferences.",
+              "work": "A majority can still leave some people in the minority."
             },
             {
-              "explain": "Splitting by boys and girls means some students would watch a film they did not choose. It would be better to split the class by which film each student wants.",
-              "work": "<p>Answer: <strong>B</strong></p>"
+              "explain": "For example, with 10 boys, 6 may prefer Star Wars and 4 Harry Potter; with 10 girls, 6 may prefer Harry Potter and 4 Star Wars.",
+              "work": "Both statements about the majorities remain true, while some boys and girls prefer the other film."
+            },
+            {
+              "explain": "So Ms Chen should not assume that every boy and every girl wants a different film.",
+              "work": "\\(\\boxed{\\text{Some boys may prefer Harry Potter and some girls may prefer Star Wars.}}\\)"
             }
           ],
           "keyPoints": [
@@ -16329,11 +16422,16 @@
           "hint": "Look at the tiles around the gap. Wherever a neighbour has black along the edge of the gap, the new tile must be white there.",
           "steps": [
             {
-              "explain": "Black sections may not touch along an edge, so wherever a neighbouring tile is black along the edge of the gap, the last tile must be white at that spot."
+              "explain": "At the empty position, inspect each shared edge. A black region on a neighbouring tile must meet a non-black region on the missing tile.",
+              "work": "The condition is checked edge by edge; touching at a corner is not an edge connection."
             },
             {
-              "explain": "Checking all four edges of the gap, the only black corner that touches no black neighbour is the bottom left.",
-              "work": "<p>Answer: <strong>D</strong></p>"
+              "explain": "Rotate each candidate mentally so its edges line up with the gap. Eliminate a candidate whenever black meets black on any one of the four shared edges.",
+              "work": "Three candidate orientations create at least one forbidden black-to-black join."
+            },
+            {
+              "explain": "D is the only orientation whose black sections avoid matching black sections on every adjacent tile.",
+              "work": "\\(\\boxed{D}\\)"
             }
           ],
           "keyPoints": [
@@ -16367,11 +16465,16 @@
           "hint": "Patricia thinks doing the same training will definitely give the same result. Could other things matter?",
           "steps": [
             {
-              "explain": "Patricia assumes Aditya’s training alone caused his success, so copying it guarantees a gold medal."
+              "explain": "Patricia copies Aditya’s training schedule and predicts she will also win gold. That prediction assumes the schedule alone causes the medal.",
+              "work": "Training for 6 hours × 6 days = 36 hours each week."
             },
             {
-              "explain": "Other things (talent, coaching, the other swimmers) may matter too, so the training alone may not be enough.",
-              "work": "<p>Answer: <strong>B</strong></p>"
+              "explain": "Even if this schedule helped Aditya, it does not guarantee the same result for Patricia: medals depend on ability, competition, coaching and other factors too.",
+              "work": "Same training programme does not logically imply same outcome."
+            },
+            {
+              "explain": "The flaw is the assumption that following the programme guarantees Patricia a gold medal.",
+              "work": "\\(\\boxed{\\text{Patricia’s training programme alone may not guarantee her a gold medal.}}\\)"
             }
           ],
           "keyPoints": [
@@ -16405,11 +16508,16 @@
           "hint": "Look for a benefit to the CHILDREN who perform.",
           "steps": [
             {
-              "explain": "The claim is that children should get to perform. Support must show performing benefits children."
+              "explain": "The actor recommends giving children opportunities to perform. A supporting reason should state a positive outcome children gain from performing.",
+              "work": "Connect performing to a benefit for children."
             },
             {
-              "explain": "D: performing builds confidence — a benefit for the children involved. C is about the audience, not the performers.",
-              "work": "<p>Answer: <strong>D</strong></p>"
+              "explain": "Performing in front of other people helps build confidence, which is a benefit of giving children a chance to take part.",
+              "work": "Recommendation → opportunity to perform → confidence."
+            },
+            {
+              "explain": "This directly supports the actor’s claim. The other statements do not explain why the opportunity is important for children.",
+              "work": "\\(\\boxed{\\text{Performing in front of other people helps to build confidence.}}\\)"
             }
           ],
           "timeLimit": 60,
@@ -16527,11 +16635,16 @@
           "hint": "Ms Flint uses the number of detentions to measure behaviour. Is that a fair measure if the two teachers are different?",
           "steps": [
             {
-              "explain": "Ms Flint assumes the number of detentions fairly shows how well each class behaves."
+              "explain": "Ms Flint compares total detentions: 47 in Class 1 and 18 in Class 2. A fair comparison also needs the number of students and how detentions are assigned.",
+              "work": "Totals alone are not rates per student."
             },
             {
-              "explain": "But Mr Avery might give detentions more easily than Mr Bailey, so the numbers might not compare behaviour fairly.",
-              "work": "<p>Answer: <strong>D</strong></p>"
+              "explain": "The inference assumes the two classes are treated equally. If Class 1 students are more likely to receive detention for the same behaviour, its higher total may reflect the teacher’s policy rather than worse behaviour.",
+              "work": "A different detention threshold is a possible alternative explanation."
+            },
+            {
+              "explain": "Thus the total does not establish which class behaves better; the stated alternative undermines the comparison.",
+              "work": "\\(\\boxed{\\text{Class 1 students may be more likely to be given detention for the same misbehaviour.}}\\)"
             }
           ],
           "keyPoints": [
@@ -16603,11 +16716,16 @@
           "hint": "Which colour belongs to only one festival? If Shiro had seen that colour, would he still be unsure?",
           "steps": [
             {
-              "explain": "Yellow belongs to only one festival, so if everyone wore yellow, Shiro would know it was the King’s Official Birthday."
+              "explain": "The table assigns colours to the five festivals. Red is used for two festivals, blue for two festivals, and yellow for only one.",
+              "work": "Red → Independence Day or New Year; blue → Women’s Day or Ice Carnival; yellow → King’s Birthday only."
             },
             {
-              "explain": "Shiro is still unsure, so the colour must belong to two festivals: blue or red.",
-              "work": "<p>Answer: <strong>It was either blue or red.</strong></p>"
+              "explain": "Shiro knows a festival is being celebrated but cannot work out which festival. If everyone wore yellow, the table would identify the King’s Birthday, so he would know. Yellow is therefore impossible.",
+              "work": "Yellow → exactly 1 festival, so it would identify the festival."
+            },
+            {
+              "explain": "Red and blue each leave two possible festivals, so either colour fits his uncertainty.",
+              "work": "Red → 2 possibilities; blue → 2 possibilities. Therefore \\(\\boxed{\\text{blue or red}}\\)."
             }
           ],
           "keyPoints": [
@@ -16727,11 +16845,16 @@
           "hint": "Angela’s claim is about strengthening the WHOLE body. Which statement shows swimming does that better than running alone?",
           "steps": [
             {
-              "explain": "Angela says swimming will help strengthen the whole body, on top of running."
+              "explain": "Angela claims swimming plus running strengthens the whole body. The best support should compare the muscles used in swimming with running.",
+              "work": "Find evidence about muscle coverage."
             },
             {
-              "explain": "A shows swimming works more of the body’s muscles than running, so it strengthens more of the body.",
-              "work": "<p>Answer: <strong>A</strong></p>"
+              "explain": "If swimming uses more of the body’s muscles than running, adding swimming exercises areas running may not target as much.",
+              "work": "Running + a wider range of muscles used in swimming → more whole-body strengthening."
+            },
+            {
+              "explain": "That evidence supports the recommendation directly.",
+              "work": "\\(\\boxed{\\text{Swimming uses more of the body’s muscles than running.}}\\)"
             }
           ],
           "keyPoints": [
@@ -16765,12 +16888,16 @@
           "hint": "Most Bulbo trees are in the Manu Forest. Does that mean most trees in the Manu Forest are Bulbo trees?",
           "steps": [
             {
-              "explain": "Ravi: most Bulbo trees are in the Manu Forest (in Peru), so a random Bulbo tree is probably in Peru.",
-              "work": "<p>Ravi ✔</p>"
+              "explain": "Ravi starts by choosing a Bulbo tree. Since most Bulbo trees are in Manu Forest, a randomly chosen Bulbo is likely to be there. This is the same population in the premise.",
+              "work": "“Most Bulbo trees are in Manu” means \\(P(\\text{Manu}\\mid\\text{Bulbo})>1/2\\)."
             },
             {
-              "explain": "Luca: the forest may also have huge numbers of other kinds of trees, so a random tree there is not necessarily likely to be a Bulbo tree.",
-              "work": "<p>Luca ✘</p><p>Answer: <strong>Ravi only</strong></p>"
+              "explain": "Luca reverses the groups: he starts with a randomly chosen Manu tree and concludes it is likely to be a Bulbo. The premise gives no count of all Manu trees or of Bulbos within Manu.",
+              "work": "\\(P(\\text{Manu}\\mid\\text{Bulbo})\\) does not determine \\(P(\\text{Bulbo}\\mid\\text{Manu})\\)."
+            },
+            {
+              "explain": "Ravi’s conclusion follows from the information; Luca’s reversed conclusion does not.",
+              "work": "\\(\\boxed{\\text{Ravi only}}\\)"
             }
           ],
           "keyPoints": [
@@ -16926,11 +17053,16 @@
           "hint": "Add up the days from the first meeting. How does that compare with a whole number of weeks?",
           "steps": [
             {
-              "explain": "The third meeting is 8 + 4 = 12 days after the first meeting."
+              "explain": "Start at Tuesday. The second meeting is 8 days later: 7 days returns to Tuesday, then 1 more day gives Wednesday.",
+              "work": "\\(8=7+1\\), so Tuesday + 8 days = Wednesday."
             },
             {
-              "explain": "12 days is 2 days less than 2 weeks (14 days). 14 days after Tuesday is a Tuesday, so go back 2 days.",
-              "work": "<p>Tuesday → Monday → <strong>Sunday</strong></p>"
+              "explain": "The third meeting is 4 days after Wednesday. Count forward: Thursday (1), Friday (2), Saturday (3), Sunday (4).",
+              "work": "Wednesday + 4 days = Sunday."
+            },
+            {
+              "explain": "So their third meeting was on Sunday.",
+              "work": "\\(\\boxed{\\text{Sunday}}\\)"
             }
           ],
           "keyPoints": [
@@ -16964,12 +17096,16 @@
           "hint": "Cecilia only buys lemon or grape. Which days have at least one of those?",
           "steps": [
             {
-              "explain": "Cecilia likes lemon and grape juice.",
-              "work": "<p>lemon: Monday, Wednesday</p><p>grape: Monday, Tuesday, Friday</p>"
+              "explain": "Cecilia avoids apple and orange, so she will visit only on days when lemon or grape juice is available.",
+              "work": "Lemon: Monday, Wednesday. Grape: Monday, Tuesday, Friday."
             },
             {
-              "explain": "She visits on Monday, Tuesday, Wednesday and Friday. Thursday has only orange and apple.",
-              "work": "<p>Answer: <strong>Thursday</strong></p>"
+              "explain": "Combine those days: Monday, Tuesday, Wednesday and Friday are visit days. Thursday has only orange and apple, both disliked.",
+              "work": "Thursday: orange + apple; neither is acceptable."
+            },
+            {
+              "explain": "Therefore she will not visit on Thursday.",
+              "work": "\\(\\boxed{\\text{Thursday}}\\)"
             }
           ],
           "keyPoints": [
@@ -17003,11 +17139,16 @@
           "hint": "Medika’s reason is that many people in Wagga Wagga speak Wiradjuri. Why would that help Nick learn faster?",
           "steps": [
             {
-              "explain": "Medika says going to Wagga Wagga helps because many people there speak Wiradjuri."
+              "explain": "Medika suggests going to Wagga Wagga because Wiradjuri speakers live there. To support that suggestion, the evidence must explain how being there helps Nick learn.",
+              "work": "Access to speakers only helps if practising with people improves language learning."
             },
             {
-              "explain": "If languages are easier to learn by practising with other speakers, then being around Wiradjuri speakers would help Nick.",
-              "work": "<p>Answer: <strong>D</strong></p>"
+              "explain": "If languages are easier to learn by practising with other speakers, spending time where many Wiradjuri speakers live gives Nick that practice.",
+              "work": "Wagga Wagga → opportunities to speak Wiradjuri → easier learning."
+            },
+            {
+              "explain": "That statement provides the needed link; Medika’s own language skills do not prove the advice works for Nick.",
+              "work": "\\(\\boxed{\\text{Languages are easier to learn if you practise speaking them with other people.}}\\)"
             }
           ],
           "timeLimit": 60,
@@ -17038,11 +17179,19 @@
           "hint": "Each pair must make a flat square layer. Blocks with lots of small sections need a partner with matching slots.",
           "steps": [
             {
-              "explain": "Two blocks must fit together like jigsaw pieces to make one flat square layer."
+              "explain": "Treat the six numbered pieces as shapes to be paired into three complete cube layers. Compare the outline and missing/notched regions: each pair must fill one layer without overlap or gaps.",
+              "work": "A pair is valid only when the two pieces complement one another to make the layer’s square footprint."
             },
             {
-              "explain": "Block 1 can only pair with block 6 — every other block has too many sections to fit with it. Then block 2 fits with block 5, and block 3 fits with block 4.",
-              "work": "<p>Answer: <strong>1 and 6; 2 and 5; 3 and 4</strong></p>"
+              "explain": "Test the pairings in each option against the diagram. In option B, pieces 1 and 6, 2 and 5, and 3 and 4 form the three matching layer outlines.",
+              "work": "Eliminate a pairing if the joined edges leave a gap or extend beyond a layer."
+            },
+            {
+              "explain": "Thus the correct set of pairs is option B.",
+              "work": "\\(\\boxed{B}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 500\" width=\"90%\" height=\"auto\"><image href=\"/oc/ts3-q4.jpg\" x=\"0\" y=\"0\" width=\"800\" height=\"500\"/><g fill=\"none\" stroke-width=\"6\" opacity=\".85\"><rect x=\"19\" y=\"48\" width=\"230\" height=\"180\" rx=\"16\" stroke=\"#059669\"/><rect x=\"548\" y=\"265\" width=\"234\" height=\"220\" rx=\"16\" stroke=\"#059669\"/><rect x=\"286\" y=\"48\" width=\"236\" height=\"180\" rx=\"16\" stroke=\"#7c3aed\"/><rect x=\"286\" y=\"265\" width=\"236\" height=\"220\" rx=\"16\" stroke=\"#7c3aed\"/><rect x=\"548\" y=\"48\" width=\"234\" height=\"180\" rx=\"16\" stroke=\"#d97706\"/><rect x=\"19\" y=\"265\" width=\"230\" height=\"220\" rx=\"16\" stroke=\"#d97706\"/></g></svg>"
+              }
             }
           ],
           "timeLimit": 120,
@@ -17070,11 +17219,16 @@
           "hint": "Simon uses himself and his friends to judge all of Australia. Could his group be different from the rest of the country?",
           "steps": [
             {
-              "explain": "Simon assumes his friends are typical of all Australians."
+              "explain": "Simon’s evidence is only that he and his friends rarely swim. This is a small group and may not represent all Australians.",
+              "work": "A personal sample can differ from the national population."
             },
             {
-              "explain": "But different areas may be very different — for example people near the coast may swim more than people living inland.",
-              "work": "<p>Answer: <strong>D</strong></p>"
+              "explain": "If Simon lives where swimming opportunities are limited, his local experience could be unusual even if many Australians elsewhere swim regularly.",
+              "work": "Local availability is a possible reason his observations are unrepresentative."
+            },
+            {
+              "explain": "So he cannot reject a national statistic from his own circle alone.",
+              "work": "\\(\\boxed{\\text{Simon may live in an area where there are few opportunities to go swimming.}}\\)"
             }
           ],
           "keyPoints": [
@@ -17108,11 +17262,16 @@
           "hint": "The food is lower than both of the other things. Where must it be?",
           "steps": [
             {
-              "explain": "The food is lower than the water bowl and lower than the log."
+              "explain": "Label the three levels from lowest to highest. The food must be lower than the water bowl, and the log must also be higher than the food.",
+              "work": "Food < Water and Food < Log."
             },
             {
-              "explain": "So the food must be on the lowest level. We cannot tell the order of the water and the log.",
-              "work": "<p>Answer: <strong>The lowest level has the food.</strong></p>"
+              "explain": "If food were on the middle level, only the top level would be higher than it. But both the water bowl and the log must be above the food, and they are two separate items. So food cannot be in the middle or on top.",
+              "work": "The only remaining position for food is the lowest level."
+            },
+            {
+              "explain": "Thus the statement that must be true is that the lowest level has the food. Water and log can occupy the middle and top levels in either order.",
+              "work": "\\(\\boxed{\\text{The lowest level has the food.}}\\)"
             }
           ],
           "timeLimit": 60,
@@ -17140,11 +17299,16 @@
           "hint": "John needs a red robot from the pack, and a pink robot to swap for the green one.",
           "steps": [
             {
-              "explain": "John can get green from his friend, but only by swapping a pink robot. So he needs a pack with red AND pink."
+              "explain": "John needs a red robot and a green robot. His friend offers to swap a green robot for a pink robot, so John can obtain green by trading away a pink one.",
+              "work": "Needed: red + green. Trade: pink → green."
             },
             {
-              "explain": "Packs with red: pack 1 and pack 2. Only pack 2 also has pink.",
-              "work": "<p>Answer: <strong>pack 2</strong></p>"
+              "explain": "Pack 2 contains red and pink. John keeps the red robot and swaps the pink robot for green.",
+              "work": "Pack 2: red + yellow + pink; after trade: red + yellow + green."
+            },
+            {
+              "explain": "Therefore pack 2 alone supplies the two colours needed to complete his set.",
+              "work": "\\(\\boxed{\\text{pack 2}}\\)"
             }
           ],
           "keyPoints": [
@@ -17178,11 +17342,16 @@
           "hint": "Two things happened at the same time. Does that prove one caused the other? Is there another reason the fish could have decreased?",
           "steps": [
             {
-              "explain": "Melanie sees that the fish decreased while pollution increased, and decides pollution must be the cause."
+              "explain": "Melanie observes two changes in the same year: pollution increased and fish numbers decreased. This timing alone does not prove one caused the other.",
+              "work": "Correlation does not by itself establish cause."
             },
             {
-              "explain": "Things happening at the same time does not prove one caused the other. Another explanation is that more people have been fishing.",
-              "work": "<p>Answer: <strong>D</strong></p>"
+              "explain": "More people fishing is another possible cause of fewer fish. If fishing increased, it could explain the decline even while pollution also rose.",
+              "work": "Alternative cause: increased fishing."
+            },
+            {
+              "explain": "So the evidence that more people may have fished from the lake identifies the flaw in Melanie’s conclusion.",
+              "work": "\\(\\boxed{\\text{More people may have fished from the lake over the past year.}}\\)"
             }
           ],
           "keyPoints": [
@@ -17262,11 +17431,16 @@
           "hint": "Match the shapes one at a time (they may be turned around). Tick off each Set 1 shape as you find its match in Set 2.",
           "steps": [
             {
-              "explain": "Go through Set 1 and find each shape’s match in Set 2 (shapes may be rotated). Tick off each pair."
+              "explain": "Compare each of the 16 Set 2 shapes with Set 1. Rotation does not change a shape, so match by the arrangement of edges and corners, not by which way the shape faces.",
+              "work": "Mark a Set 2 shape as matched only when its full outline is congruent to one in Set 1."
             },
             {
-              "explain": "11 of the Set 1 shapes have an identical shape in Set 2. The other 5 shapes in Set 2 are slightly different from every shape in Set 1.",
-              "work": "<p>Answer: <strong>5</strong></p>"
+              "explain": "After matching the identical outlines one by one, 11 Set 2 shapes have a partner in Set 1. Set 2 has 16 shapes altogether.",
+              "work": "Unmatched count = total − matched = \\(16-11=5\\)."
+            },
+            {
+              "explain": "Five shapes in Set 2 are not identical to any shape in Set 1.",
+              "work": "\\(\\boxed{5}\\)"
             }
           ],
           "timeLimit": 120,
@@ -17294,11 +17468,16 @@
           "hint": "Look for a real BENEFIT of talking to plants.",
           "steps": [
             {
-              "explain": "The gardener claims talking to plants is a good idea. Support must show a benefit."
+              "explain": "The gardener says treating plants like friends makes people more likely to remember to water them. Strong support should connect talking to the plant with a practical benefit in caring for it.",
+              "work": "Identify the claim: talking to plants helps people care for them."
             },
             {
-              "explain": "If people notice details about a plant’s health while talking to it, they can look after it better — a clear benefit.",
-              "work": "<p>Answer: <strong>A</strong></p>"
+              "explain": "Noticing details about a plant’s health while talking to it could help a person detect that it needs care. This is a benefit related to looking after the plant; the other choices do not support remembering to water it.",
+              "work": "Talking → noticing plant health → better care."
+            },
+            {
+              "explain": "Therefore option A is the best support among the choices because it gives a real plant-care benefit.",
+              "work": "\\(\\boxed{\\text{People often notice details about a plant’s health when they are talking to it.}}\\)"
             }
           ],
           "timeLimit": 60,
@@ -17415,11 +17594,16 @@
           "hint": "Iluka counted making time and walking time. What other waiting has he forgotten?",
           "steps": [
             {
-              "explain": "Iluka compares making time plus walking time, but forgets about waiting in a queue."
+              "explain": "Iluka compares sandwich-making times, but he is already waiting in a queue at the first bakery. The total waiting time includes both the queue and preparation.",
+              "work": "Total time = walk + queue wait + sandwich preparation."
             },
             {
-              "explain": "If the queue at Loafing Around is long, he may get his sandwich later, not sooner.",
-              "work": "<p>Answer: <strong>D</strong></p>"
+              "explain": "Walking to Loafing Around takes less than 5 minutes and preparation takes 10 minutes, so before its queue he expects under 15 minutes. But a longer queue there could add enough time to make the total slower than staying.",
+              "work": "Loafing Around total: <5 + queue + 10 minutes."
+            },
+            {
+              "explain": "The queue length is the missing factor that could reverse his conclusion.",
+              "work": "\\(\\boxed{\\text{The queue at Loafing Around may be longer than the one at Sliced Bread Sangers.}}\\)"
             }
           ],
           "keyPoints": [
@@ -17534,11 +17718,16 @@
           "hint": "Could a team that scored no goals ever win a match?",
           "steps": [
             {
-              "explain": "To win you must score more goals than the other team, so a team that scores no goals cannot win."
+              "explain": "To win a match, a team must score more goals than its opponent. Grant Valley scored zero goals in the whole season.",
+              "work": "Goals scored across all games = 0."
             },
             {
-              "explain": "Grant Valley could still have drawn some 0–0 games and earned points, so A, B and C are not certain.",
-              "work": "<p>Answer: <strong>D</strong></p>"
+              "explain": "In any match, scoring zero means Grant Valley cannot have scored more goals than the other team: the opponent’s goal count is at least zero. A 0–0 result is a draw; a positive opponent score is a loss.",
+              "work": "Against an opponent: 0 ≤ opponent goals, so never 0 > opponent goals."
+            },
+            {
+              "explain": "Therefore Grant Valley could draw or lose, but it could not win any match.",
+              "work": "\\(\\boxed{\\text{Grant Valley High School failed to win any matches.}}\\)"
             }
           ],
           "keyPoints": [
@@ -17572,11 +17761,16 @@
           "hint": "Tahnee only compares how many games each player won. What about who they were playing against?",
           "steps": [
             {
-              "explain": "Tahnee assumes the fraction of games won shows who is the better player."
+              "explain": "Compare the fractions won, not just the number of wins. Jacob won \\(3/14\\); Nicole won \\(11/12\\), which is much larger.",
+              "work": "\\(3\\div14\\approx0.214=21.4\\%\\); \\(11\\div12\\approx0.917=91.7\\%\\)."
             },
             {
-              "explain": "If Jacob played very strong opponents and Nicole played weak ones, Jacob could still be the better player.",
-              "work": "<p>Answer: <strong>B</strong></p>"
+              "explain": "Those fractions describe results against the opponents each player faced. If Jacob played much stronger opponents, his lower win fraction may not mean he is the weaker player.",
+              "work": "The comparison lacks information about opponent strength."
+            },
+            {
+              "explain": "So Tahnee’s mistake is treating different win records as a fair direct measure without checking the difficulty of the games.",
+              "work": "\\(\\boxed{\\text{Jacob might have played against better opponents in his games.}}\\)"
             }
           ],
           "keyPoints": [
@@ -17610,12 +17804,16 @@
           "hint": "Count the spells, charms and herbs classes for each day, but skip Wednesday.",
           "steps": [
             {
-              "explain": "Count wand classes (spells, charms, herbs) each day.",
-              "work": "<p>Monday: spells → 1</p><p>Tuesday: herbs, charms → 2</p><p>Wednesday: spells → 1 (cancelled)</p><p>Thursday: herbs → 1</p>"
+              "explain": "Wands are needed for spells, charms and herbs. Remove Wednesday classes first: spells and broom flight are cancelled; farsight needs no wand.",
+              "work": "Cancelled Wednesday spells means that class no longer requires the wand."
             },
             {
-              "explain": "Leave out Wednesday.",
-              "work": "<p>1 + 2 + 1 = <strong>4</strong></p>"
+              "explain": "Count the remaining wand-using classes in the timetable: Monday spells (1), Tuesday herbs (2) and charms (3), Thursday herbs (4). Wednesday charms? Wednesday has no charms.",
+              "work": "Monday: spells; Tuesday: herbs, charms; Thursday: herbs. Total \\(1+2+1=4\\)."
+            },
+            {
+              "explain": "So the students need their wands for four classes this week.",
+              "work": "\\(\\boxed{4}\\)"
             }
           ],
           "keyPoints": [
@@ -17691,11 +17889,16 @@
           "hint": "Look for a benefit to the PETS of being handled.",
           "steps": [
             {
-              "explain": "The vet says careful handling of pets is important for their development. Support must show a benefit to the pet."
+              "explain": "The vet recommends careful handling of kittens and puppies to help them develop properly. Supporting evidence should show a developmental benefit of careful handling.",
+              "work": "Check which statement connects handling to a useful outcome."
             },
             {
-              "explain": "B: handling helps puppies and kittens be less afraid of people — a benefit for them. D is a benefit for people, not pets.",
-              "work": "<p>Answer: <strong>B</strong></p>"
+              "explain": "If regular handling helps puppies and kittens become less afraid of people, then handling supports their social development.",
+              "work": "Careful handling → less fear of people."
+            },
+            {
+              "explain": "That benefit directly supports the vet’s advice.",
+              "work": "\\(\\boxed{\\text{Handling puppies and kittens often helps them to be less afraid of people.}}\\)"
             }
           ],
           "timeLimit": 60,
@@ -17802,11 +18005,16 @@
           "hint": "Mr Murray found one possible cause. Does that rule out the other cause?",
           "steps": [
             {
-              "explain": "Mr Murray assumes only one of the two reasons can be true."
+              "explain": "Mr Murray knows that warm weather is one possible reason for poor growth. But he has not checked whether possums also dug up the plants.",
+              "work": "Evidence for one possible cause does not rule out another cause."
             },
             {
-              "explain": "A warm winter does not stop possums digging up crocuses — both could have happened.",
-              "work": "<p>Answer: <strong>A</strong></p>"
+              "explain": "Both causes can happen in the same winter: warmer conditions may harm some crocuses, while possums may dig up others. The facts do not require choosing only one cause.",
+              "work": "Warm weather AND possums can both contribute."
+            },
+            {
+              "explain": "Therefore he is wrong to conclude that warm weather must be the only reason and that possums are not responsible.",
+              "work": "\\(\\boxed{\\text{The crocuses may have been affected both by warm weather and by possums.}}\\)"
             }
           ],
           "keyPoints": [
@@ -17884,11 +18092,16 @@
           "hint": "The claim says fixing taps is the MOST effective way. Which statement shows leaking taps matter more than anything else?",
           "steps": [
             {
-              "explain": "The teacher claims fixing leaks is the <em>most</em> effective way to cut water waste."
+              "explain": "The teacher says preventing leaks is the most effective way to reduce household water waste. To support “most effective”, compare leaks with other sources of waste.",
+              "work": "A large amount of waste alone would not show leaks are the largest source."
             },
             {
-              "explain": "C: if leaking taps are the biggest source of water waste, then fixing them saves the most water.",
-              "work": "<p>Answer: <strong>C</strong></p>"
+              "explain": "If leaking taps are the biggest source of household water waste, fixing them targets more waste than any other single source.",
+              "work": "Largest source → fixing it has the greatest potential reduction."
+            },
+            {
+              "explain": "That comparison directly supports the claim.",
+              "work": "\\(\\boxed{\\text{Leaking taps are the biggest source of water waste in households.}}\\)"
             }
           ],
           "keyPoints": [
@@ -18009,11 +18222,16 @@
           "hint": "The advert says musical-lovers will love Carimba!. Does that mean everyone who loves Carimba! loves musicals?",
           "steps": [
             {
-              "explain": "The advert says: if you love musicals, you will love Carimba!."
+              "explain": "Tina uses the advertisement’s claim that musical fans will like Carimba. Connor likes the film, but Tina infers he must already be a musical fan.",
+              "work": "The claim only gives: musical fan → likely to like Carimba."
             },
             {
-              "explain": "Tina reverses it: Connor loves Carimba!, so he loves musicals. But people who don’t usually like musicals could love Carimba! too.",
-              "work": "<p>Answer: <strong>B</strong></p>"
+              "explain": "That implication cannot automatically be reversed. Someone who is not usually a musical fan might still enjoy this particular film.",
+              "work": "Liking Carimba does not prove he likes musicals generally."
+            },
+            {
+              "explain": "So the possible exception that Carimba appeals to people who do not normally like musicals shows Tina’s inference may be wrong.",
+              "work": "\\(\\boxed{\\text{Carimba! may appeal to people who do not normally like musicals.}}\\)"
             }
           ],
           "keyPoints": [
