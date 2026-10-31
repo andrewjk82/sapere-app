@@ -292,6 +292,17 @@ export const DAILY_SETS = {
   [ACER_EXAM_ID]: { label: 'Scholarship', sections: [{ topicId: 'sch-acer-maths', name: 'Mathematics' }, { topicId: 'sch-acer-reading', name: 'Reading and Viewing' }] },
 };
 
+/** Where a set's history is kept on the device, and whether it has been submitted today (local calendar day). */
+export const dailySetStorageId = (examId) => `daily:${examId}`;
+export const DAILY_SET_TOPIC = 'set';
+export const dailySetDoneToday = (uid, examId) => {
+  const today = new Date().toLocaleDateString('en-CA');
+  return loadTestState(uid, dailySetStorageId(examId), DAILY_SET_TOPIC).attempts
+    .some((a) => a.submittedAt && new Date(a.submittedAt).toLocaleDateString('en-CA') === today);
+};
+/** Dashboard → Daily Study hand-off: the exam whose set should open as soon as the Daily Study page does. */
+export const OPEN_DAILY_SET_KEY = 'sapere:openSpecialDaily:v1';
+
 /** Marks per section: an even split, capped by what each section holds; what one cannot give goes to the others. */
 export const dailySetShares = (available, total = DAILY_SET_MARKS) => {
   const n = available.length;
