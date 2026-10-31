@@ -177,6 +177,13 @@ Standing rule, applies automatically, never needs to be repeated.
   rather than padding with repeats.
 - Before delivering, scan the finished paper for near-duplicates (same stem with digits masked).
 
+**Four papers per chapter (from Ch 10 onward, 2026-10-31):** (1) 25 hard questions copied verbatim from
+the bank (MC turned into short answer), (2) 25 new hard questions in varied formats, (3) 25
+common-mistake questions (one target mistake each, with a "Common mistake" line in the answers), and
+(4) 20 new hard questions that each need 2–3 steps of reasoning (answers written as Step 1/2/3). If the
+bank has too few questions for (1) — e.g. Ch 9 has one, Ch 10 has none — say so and, where sensible, build
+(1) from questions of the related chapters instead.
+
 ## Question DNA reasoning-blueprint authoring
 
 See the `sapere-question-dna` skill (`.agents/skills/sapere-question-dna/SKILL.md`)
