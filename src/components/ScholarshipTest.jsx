@@ -6,7 +6,7 @@ import { parseSolutionSteps } from '../utils/solutionSteps';
 import { isDisplayedOptionCorrect } from '../utils/mcOptionShuffle';
 import {
   TEST_SIZE, TEST_SECONDS, loadTestState, saveTestState, pickTestQuestions, applyFinishedTest,
-  gradeTest, isPickCorrect, correctIndexOf, isTestable, secondsLeft, subKey, toReviewItems,
+  gradeTest, isPickCorrect, correctIndexOf, isTestable, secondsLeft, subKey, toReviewItems, attemptDetails,
 } from '../utils/scholarshipTest';
 import MathView from './MathView';
 import TopicPracticeSession from './TopicPracticeSession';
@@ -209,6 +209,9 @@ const ScholarshipTest = ({ topic, chapter, profile, onBack, size: sizeProp = TES
       durationSec: Math.min(limit, Math.round((submittedAt - s.current.startedAt) / 1000)),
       marks,
       total,
+      // Kept for the weekly summary sent to the teacher (utils/specialWeekly): what kind of test, and what was missed.
+      kind: /^mock:/.test(keyChapter) ? 'mock' : /^daily:/.test(keyChapter) ? 'daily' : 'topic',
+      ...attemptDetails(qs, s.current.answers),
     };
     save(applyFinishedTest({ ...s, current: null, attempts: [...s.attempts, attempt] }, attempt));
     setConfirming(false);

@@ -73,6 +73,7 @@ import SecretNotebookPanel from "./studentDetail/SecretNotebookPanel";
 import ExamPrepPanel from "./studentDetail/ExamPrepPanel";
 import HscPastPaperPanel from "./studentDetail/HscPastPaperPanel";
 import ScholarshipPanel from "./studentDetail/ScholarshipPanel";
+import SpecialWeeklyPanel from "./studentDetail/SpecialWeeklyPanel";
 import EditStudentModal from "./studentDetail/EditStudentModal";
 import ScheduleModal from "./studentDetail/ScheduleModal";
 import StudentHeaderCard from "./studentDetail/StudentHeaderCard";
@@ -2198,6 +2199,7 @@ const StudentDetail = ({ studentId, onBack }) => {
                 student={student}
                 onUpdateSetting={handleUpdateCurriculumSetting}
               />
+              <SpecialWeeklyPanel student={student} />
             </CollapsibleSection>
 
             <CollapsibleSection

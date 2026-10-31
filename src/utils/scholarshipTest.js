@@ -193,3 +193,18 @@ export const questionOutcomes = (questions, answers = {}) => questions.map((q) =
   if (!answered) return 'blank';
   return r.marks > 0 ? 'partial' : 'wrong';
 });
+
+/**
+ * What one finished test missed, kept on the attempt so the weekly summary never needs the question bank:
+ * `wrong` = ids of questions not fully right, `types` = { question type: [marks, total] }.
+ */
+export const attemptDetails = (questions, answers = {}) => {
+  const wrong = []; const types = {};
+  questions.forEach((q) => {
+    const r = gradeQuestionMarks(q, answers[String(q.id)]);
+    if (r.marks < r.total) wrong.push(String(q.id));
+    const t = String(q.category || '').trim();
+    if (t) { const e = types[t] || (types[t] = [0, 0]); e[0] += r.marks; e[1] += r.total; }
+  });
+  return { wrong, types };
+};
