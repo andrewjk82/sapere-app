@@ -137,3 +137,143 @@ export const pickNextStep = (sections, weak = []) => {
   if (again) return { kind: 'mock', sectionId: again.id, text: `Try another ${again.name} mock exam` };
   return { kind: 'practise', sectionId: open[0].id, text: `Practise ${open[0].name}` };
 };
+
+// ── Mock papers that look like the real paper ─────────────────────────────────────────────────────────────────
+//
+// A mock used to be "N random unseen questions". The real papers are not random: the question types come in fixed
+// proportions, difficulty rises through the paper, and the Thinking Skills paper spreads its marks over many
+// different kinds of question. So a mock is now built like this:
+//   1. Split the section's questions into strata (their question type, or the quarter of the paper they sit in).
+//   2. Give each stratum its share of the marks, taken from how the real papers in the bank are made up.
+//   3. Fill each stratum with questions the student has not done (reusing done ones only when it must).
+//   4. Put the questions in paper order (the position they have in their own paper), so it ramps up like the real one.
+
+/** How each section's mock is built. `weight`: 'marks' = share of the bank's marks · 'paper' = average per real paper · 'equal'. */
+export const MOCK_BLUEPRINT = {
+  // Comprehension passages carry 5 marks each, so by marks they make up over half of the Reading paper.
+  'sch-oc-english': { by: 'category', weight: 'marks', order: 'position' },
+  'sch-oc-maths': { by: 'category', weight: 'marks', order: 'position' },
+  // The official practice papers use 15–21 different question types out of 30 and never more than 6 of one.
+  'sch-oc-thinking': { by: 'category', weight: 'paper', cap: 6, order: 'position' },
+  // Selective Maths papers get harder with the question number: equal marks from each quarter of the paper.
+  'sch-selective-maths': { by: 'band', bands: 4, weight: 'equal', order: 'position' },
+  'sch-selective-reading': { by: 'category', weight: 'marks', order: 'position' },
+  'sch-selective-thinking': { by: 'category', weight: 'paper', cap: 6, order: 'position' },
+};
+
+const marksOf = (q) => (q?.subQuestions?.length || 1);
+const numbersOf = (n) => String(n ?? '').match(/\d+/g)?.map(Number) || [];
+const paperKey = (q) => `${q.source || ''}|${q.test || ''}`;
+
+const shuffled = (arr, rng) => {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i -= 1) { const j = Math.floor(rng() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
+  return a;
+};
+
+/** Where a question sits in its own paper, 0 (first) … 1 (last). Unknown → 0.5. */
+const positionsOf = (questions) => {
+  const last = new Map();
+  questions.forEach((q) => {
+    const ns = numbersOf(q.number);
+    if (ns.length) last.set(paperKey(q), Math.max(last.get(paperKey(q)) || 0, ...ns));
+  });
+  return new Map(questions.map((q) => {
+    const ns = numbersOf(q.number);
+    const max = last.get(paperKey(q));
+    return [String(q.id), ns.length && max > 1 ? (ns[0] - 1) / (max - 1) : 0.5];
+  }));
+};
+
+/** Split `n` marks over strata in proportion to `weights`, whole numbers; leftovers go to strata at random by their fraction. */
+const apportion = (n, keys, weights, rng) => {
+  const total = keys.reduce((s, k) => s + weights[k], 0);
+  const out = {}; const rest = [];
+  keys.forEach((k) => {
+    const raw = total > 0 ? (n * weights[k]) / total : 0;
+    out[k] = Math.floor(raw); rest.push([k, raw - out[k]]);
+  });
+  let left = n - keys.reduce((s, k) => s + out[k], 0);
+  while (left > 0 && rest.length) {
+    const pool = rest.reduce((s, e) => s + e[1], 0);
+    let idx = 0;
+    if (pool > 1e-9) { let r = rng() * pool; idx = rest.findIndex((e) => (r -= e[1]) < 0); if (idx < 0) idx = rest.length - 1; }
+    out[rest[idx][0]] += 1; rest.splice(idx, 1); left -= 1;
+  }
+  return out;
+};
+
+/**
+ * Build one mock paper.
+ * `questions`: the whole section (legacy shape: category, number, test, source, difficulty, subQuestions).
+ * `done`: ids already used in earlier mocks. `targetMarks`: marks the real paper has.
+ * → { questionIds (paper order), marks, reused (any done question had to come back), strata: { name: marks } }
+ */
+export const pickMockPaper = ({ questions, done = [], targetMarks, blueprint = {}, rng = Math.random }) => {
+  const by = blueprint.by || 'category';
+  const doneSet = new Set(done.map(String));
+  const pos = positionsOf(questions);
+
+  const bands = blueprint.bands || 4;
+  const stratumOf = (q) => (by === 'band'
+    ? `band${Math.min(bands - 1, Math.floor((pos.get(String(q.id)) ?? 0.5) * bands))}`
+    : String(q.category || 'general'));
+  const groups = new Map();
+  questions.forEach((q) => { const k = stratumOf(q); (groups.get(k) || groups.set(k, []).get(k)).push(q); });
+  const keys = [...groups.keys()];
+  const capacity = Object.fromEntries(keys.map((k) => [k, groups.get(k).reduce((s, q) => s + marksOf(q), 0)]));
+
+  // Weights per stratum.
+  let weights;
+  if (blueprint.weight === 'equal') weights = Object.fromEntries(keys.map((k) => [k, 1]));
+  else if (blueprint.weight === 'paper') {
+    // Average marks per stratum over the bank's FULL papers (those that are at least 80% of a real paper).
+    const papers = new Map();
+    questions.forEach((q) => { const p = papers.get(paperKey(q)) || papers.set(paperKey(q), { total: 0, by: {} }).get(paperKey(q)); p.total += marksOf(q); p.by[stratumOf(q)] = (p.by[stratumOf(q)] || 0) + marksOf(q); });
+    const full = [...papers.values()].filter((p) => p.total >= targetMarks * 0.8);
+    weights = full.length
+      ? Object.fromEntries(keys.map((k) => [k, full.reduce((s, p) => s + (p.by[k] || 0), 0) / full.length]))
+      : Object.fromEntries(keys.map((k) => [k, capacity[k]]));
+    keys.forEach((k) => { if (!(weights[k] > 0)) weights[k] = 0; });
+  } else weights = Object.fromEntries(keys.map((k) => [k, capacity[k]]));
+  // A stray type that is under 3% of the section (one 'codes' question among Maths) is not part of the real paper's mix.
+  const wTotal = keys.reduce((n, k) => n + weights[k], 0);
+  if (by === 'category' && blueprint.weight !== 'paper') keys.forEach((k) => { if (weights[k] < wTotal * 0.03) weights[k] = 0; });
+
+  // Marks per stratum; a stratum cannot take more than its cap or than the bank holds — the excess goes to the others.
+  const cap = blueprint.cap || Infinity;
+  let quota = apportion(targetMarks, keys.filter((k) => weights[k] > 0), weights, rng);
+  for (let round = 0; round < 6; round += 1) {
+    let excess = 0;
+    keys.forEach((k) => {
+      const room = Math.min(cap, capacity[k]);
+      if ((quota[k] || 0) > room) { excess += quota[k] - room; quota[k] = room; }
+    });
+    if (!excess) break;
+    const open = keys.filter((k) => (quota[k] || 0) < Math.min(cap, capacity[k]) && weights[k] > 0);
+    const extra = apportion(excess, open, Object.fromEntries(open.map((k) => [k, weights[k]])), rng);
+    open.forEach((k) => { quota[k] = (quota[k] || 0) + extra[k]; });
+    if (!open.length) break;
+  }
+
+  const chosen = []; let reused = false; const strata = {};
+  keys.forEach((k) => {
+    const want = quota[k] || 0;
+    if (!want) return;
+    const pool = [...shuffled(groups.get(k).filter((q) => !doneSet.has(String(q.id))), rng), ...shuffled(groups.get(k).filter((q) => doneSet.has(String(q.id))), rng)];
+    let acc = 0;
+    for (const q of pool) {
+      const m = marksOf(q);
+      if (acc + m / 2 > want) continue;
+      chosen.push(q); acc += m; strata[k] = acc;
+      if (doneSet.has(String(q.id))) reused = true;
+      if (acc >= want) break;
+    }
+  });
+
+  if (blueprint.order === 'position') {
+    const jitter = new Map(chosen.map((q) => [String(q.id), rng()]));
+    chosen.sort((a, b) => (pos.get(String(a.id)) - pos.get(String(b.id))) || (jitter.get(String(a.id)) - jitter.get(String(b.id))));
+  }
+  return { questionIds: chosen.map((q) => String(q.id)), marks: chosen.reduce((s, q) => s + marksOf(q), 0), reused, strata };
+};

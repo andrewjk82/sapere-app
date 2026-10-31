@@ -6,7 +6,7 @@ import { getTopicQuestions } from '../services/contentLoader';
 import { useAuth } from '../context/AuthContext';
 import { loadTestState } from '../utils/scholarshipTest';
 import {
-  MOCK_FORMATS, hubExamsFor, mockSizeFor, mockStorageId, mockSummary, summariseAttempts, rankGroups, pickNextStep,
+  MOCK_FORMATS, MOCK_BLUEPRINT, hubExamsFor, pickMockPaper, mockStorageId, mockSummary, summariseAttempts, rankGroups, pickNextStep,
 } from '../utils/examHub';
 import { nextSitting, scholarshipSitting, formatDay, ddayLabel, PLACEMENT_SOURCE_URL, PLACEMENT_DATES_CHECKED } from '../utils/examDates';
 import ScholarshipTest from './ScholarshipTest';
@@ -174,8 +174,17 @@ const OcSelectivePrep = ({ examId, profile }) => {
           chapter={{ id: running.exam.id, title: running.exam.title }}
           profile={profile}
           storageId={running.mock ? mockStorageId(running.exam.id) : undefined}
-          size={running.mock ? running.size : undefined}
           seconds={running.mock ? running.seconds : undefined}
+          pickQuestions={running.mock ? ({ questions, state }) => {
+            const doneSet = new Set(state.done.map(String));
+            const paper = pickMockPaper({ questions, done: state.done, targetMarks: running.marks, blueprint: MOCK_BLUEPRINT[running.topic.id] || {} });
+            return {
+              questionIds: paper.questionIds,
+              round: paper.reused ? state.round + 1 : state.round,
+              carried: paper.reused ? paper.questionIds.filter((id) => !doneSet.has(id)) : undefined,
+            };
+          } : undefined}
+          homeNote={running.mock ? `Built like the real paper: about ${running.marks} marks in ${running.minutes} minutes, with the real mix of question types and questions that get harder as you go. Answers and solutions after you submit.` : undefined}
           startLabel={running.mock ? 'Start mock exam' : 'Start test'}
           onBack={() => setRunning(null)}
         />
@@ -193,12 +202,11 @@ const OcSelectivePrep = ({ examId, profile }) => {
 
   const open = (topic, mock) => {
     const fmt = MOCK_FORMATS[topic.id];
-    const qs = bank?.[topic.id] || [];
-    setRunning({
+        setRunning({
       exam: active,
       topic: { id: topic.id, title: topic.title, code: topic.code || '' },
       mock,
-      ...(mock ? { size: mockSizeFor(qs, fmt.marks), seconds: fmt.minutes * 60 } : {}),
+      ...(mock ? { seconds: fmt.minutes * 60, marks: fmt.marks, minutes: fmt.minutes } : {}),
     });
   };
 
@@ -218,7 +226,6 @@ const OcSelectivePrep = ({ examId, profile }) => {
       name: fmt?.name || topic.title,
       total: qs ? qs.length : 0,
       empty: !!qs && qs.length === 0,
-      size: qs && fmt ? mockSizeFor(qs, fmt.marks) : 0,
     };
   });
   const ready = !!bank;
@@ -280,7 +287,7 @@ const OcSelectivePrep = ({ examId, profile }) => {
                 </div>
                 <h3 className="xh-sec__name">{s.name}</h3>
                 <div className="xh-sec__eyebrow">
-                  {[s.fmt && `${s.fmt.minutes} min mock`, !s.empty && `${s.total} questions`].filter(Boolean).join(' · ')}
+                  {[s.fmt && `${s.fmt.minutes} min · ${s.fmt.marks} marks`, !s.empty && `${s.total} in bank`].filter(Boolean).join(' · ')}
                 </div>
                 {s.empty ? (
                   <div className="xh-sec__soon"><Lock size={14} /> Coming soon</div>

@@ -162,7 +162,7 @@ const QuestionBody = ({ q, answer, onAnswer, review }) => {
  * submitting, every test kept for review on this device (utils/scholarshipTest).
  * Topics that aren't all auto-gradable MC (Writing) fall back to practice mode.
  */
-const ScholarshipTest = ({ topic, chapter, profile, onBack, size: sizeProp = TEST_SIZE, seconds: limit = TEST_SECONDS, storageId, startLabel = 'Start test' }) => {
+const ScholarshipTest = ({ topic, chapter, profile, onBack, size: sizeProp = TEST_SIZE, seconds: limit = TEST_SECONDS, storageId, startLabel = 'Start test', pickQuestions, homeNote }) => {
   const { user } = useAuth();
   const uid = user?.uid || 'anon';
   // Mock exams keep their own history under `storageId`, apart from the topic tests of the same chapter.
@@ -223,7 +223,10 @@ const ScholarshipTest = ({ topic, chapter, profile, onBack, size: sizeProp = TES
   const left = cur ? secondsLeft(cur, now, limit) : limit;
 
   const start = () => {
-    const pick = pickTestQuestions({ allIds: all.map((q) => q.id), done: st.done, round: st.round, size: Math.min(sizeProp, all.length) });
+    // A mock supplies its own picker (utils/examHub.pickMockPaper); a topic test takes the next unseen questions.
+    const pick = pickQuestions
+      ? pickQuestions({ questions: all, state: st })
+      : pickTestQuestions({ allIds: all.map((q) => q.id), done: st.done, round: st.round, size: Math.min(sizeProp, all.length) });
     const startedAt = Date.now();
     save({ ...st, current: { id: startedAt.toString(36), ...pick, answers: {}, startedAt } });
     setIdx(0);
@@ -352,12 +355,16 @@ const ScholarshipTest = ({ topic, chapter, profile, onBack, size: sizeProp = TES
           {doneCount} / {total} questions done · Round {st.round}
         </div>
         <div style={{ fontSize: '0.86rem', fontWeight: 600, color: C.muted, marginBottom: 14 }}>
-          {total - doneCount >= size
-            ? `${size} questions you haven't done yet`
-            : total - doneCount > 0
-              ? `The last ${total - doneCount} new question${total - doneCount === 1 ? '' : 's'} + ${size - (total - doneCount)} from Round ${st.round + 1}`
-              : `All done — Round ${st.round + 1} starts again from the beginning`}
-          {` · ${limit / 60} minutes · answers and solutions after you submit.`}
+          {homeNote || (
+            <>
+              {total - doneCount >= size
+                ? `${size} questions you haven't done yet`
+                : total - doneCount > 0
+                  ? `The last ${total - doneCount} new question${total - doneCount === 1 ? '' : 's'} + ${size - (total - doneCount)} from Round ${st.round + 1}`
+                  : `All done — Round ${st.round + 1} starts again from the beginning`}
+              {` · ${limit / 60} minutes · answers and solutions after you submit.`}
+            </>
+          )}
         </div>
         <button type="button" onClick={start} style={btn(true)}><Play size={16} /> {startLabel}</button>
       </div>
