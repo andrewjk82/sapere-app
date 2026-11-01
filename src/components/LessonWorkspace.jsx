@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { FileUp, X, Loader2, FileText, BookOpen, ChevronLeft, ChevronRight } from 'lucide-react';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase/config';
@@ -10,6 +10,11 @@ import { useCurriculumNote } from '../utils/useCurriculumNote';
 import { useWorksheetPdf } from '../utils/useWorksheetPdf';
 import { curriculumDocIdsForProfile, toDriveOpenUrl } from '../utils/homework';
 import { listTopicPdfs } from '../utils/lessonTopicPdfs';
+import { withTimeout } from '../utils/withTimeout';
+import { localCache } from '../services/localCacheService';
+
+// Written by the Curriculum screen (components/Curriculum.jsx): every curriculum/{doc} record, kept on the device.
+const CURRICULUM_CACHE_KEY = 'curriculum-records:v1';
 import { loadLessonPdf, saveLessonPdf, saveLessonDrivePdf, lessonNoteKey } from '../utils/lessonPdfStore';
 
 const chip = (on) => ({
@@ -39,23 +44,41 @@ const useTopicPdfs = (profile) => {
   // The student's year is `assignedYear` (a list); older profiles only have `year` / `level`.
   const hasYear = (Array.isArray(profile?.assignedYear) ? profile.assignedYear : [profile?.assignedYear]).some(Boolean);
   const idsKey = curriculumDocIdsForProfile(hasYear || !profile ? (profile || {}) : { ...profile, assignedYear: profile.year || profile.level }).join('|');
-  const [loaded, setLoaded] = useState({ key: null, status: 'loading', topics: [] });
+  // Keyed by the ids and the assigned chapters, not the profile object: the profile is re-fetched in the background
+  // (a new object each time), and restarting on every new object could cancel the load forever.
+  const assignedKey = (Array.isArray(profile?.assignedChapters) ? profile.assignedChapters : []).join('|');
+  const [attempt, setAttempt] = useState(0);
+  const [loaded, setLoaded] = useState({ key: null, status: 'loading', docs: [] });
   useEffect(() => {
     if (!idsKey) return undefined;
     let cancelled = false;
-    Promise.all(idsKey.split('|').map((id) => getDoc(doc(db, 'curriculum', id)).catch(() => null)))
+    // A read that never answers (stuck local cache, bad network) must not leave the picker spinning: give up after 12 s.
+    withTimeout(Promise.all(idsKey.split('|').map((id) => getDoc(doc(db, 'curriculum', id)).catch(() => null))), 12000)
       .then((snaps) => {
         if (cancelled) return;
-        const docs = snaps.filter((s) => s?.exists()).map((s) => s.data());
-        setLoaded({ key: idsKey, status: 'ready', topics: listTopicPdfs(docs, profile || {}) });
+        setLoaded({ key: idsKey, status: 'ready', docs: snaps.filter((s) => s?.exists()).map((s) => s.data()) });
       })
-      .catch(() => { if (!cancelled) setLoaded({ key: idsKey, status: 'error', topics: [] }); });
+      .catch(() => { if (!cancelled) setLoaded({ key: idsKey, status: 'error', docs: [] }); });
     return () => { cancelled = true; };
-  }, [idsKey, profile]);
+  }, [idsKey, attempt]);
+  // The curriculum the Curriculum screen keeps on this device: shown at once while the fresh copy loads, and instead
+  // of it when the read fails (it may be a little out of date, never empty-handed).
+  const cachedDocs = useMemo(() => {
+    const wanted = new Set(idsKey ? idsKey.split('|') : []);
+    const records = localCache.get(CURRICULUM_CACHE_KEY)?.records;
+    return Array.isArray(records) ? records.filter((r) => wanted.has(r?.id)) : [];
+  }, [idsKey]);
+  const fresh = loaded.key === idsKey && loaded.status === 'ready';
+  const docs = fresh ? loaded.docs : cachedDocs;
+  const topics = useMemo(
+    () => listTopicPdfs(docs, { assignedChapters: assignedKey ? assignedKey.split('|') : [] }),
+    [docs, assignedKey],
+  );
   const ids = idsKey ? idsKey.split('|') : [];
-  const state = !idsKey ? { status: 'ready', topics: [], ids }
-    : loaded.key === idsKey ? { ...loaded, ids } : { status: 'loading', topics: [], ids };
-  return state;
+  const retry = () => { setLoaded((prev) => ({ ...prev, key: null })); setAttempt((n) => n + 1); };
+  if (!idsKey) return { status: 'ready', topics: [], ids, retry };
+  if (fresh || cachedDocs.length) return { status: 'ready', topics, ids, retry };
+  return { status: loaded.key === idsKey ? loaded.status : 'loading', topics: [], ids, retry };
 };
 
 // Pick the student's PDF: a worksheet from their curriculum, or a file from this device.
@@ -83,7 +106,12 @@ const PdfPicker = ({ student, state, onPickTopic, onUpload, onClose }) => {
         </div>
         <div style={{ flex: 1, minHeight: 0, overflowY: 'auto', padding: '6px 10px 14px' }}>
           {state.status === 'loading' && <div style={{ padding: 20, textAlign: 'center', color: '#64748b' }}><Loader2 size={20} className="spin" /></div>}
-          {state.status === 'error' && <div style={{ padding: 16, color: '#b45309', fontWeight: 700, fontSize: '0.85rem' }}>Couldn’t load the curriculum. You can still upload a PDF.</div>}
+          {state.status === 'error' && (
+            <div style={{ padding: 16, color: '#b45309', fontWeight: 700, fontSize: '0.85rem' }}>
+              Couldn’t load the curriculum. You can still upload a PDF.
+              <button type="button" onClick={state.retry} style={{ ...headBtn, marginTop: 10 }}>Try again</button>
+            </div>
+          )}
           {state.status === 'ready' && state.topics.length === 0 && <div style={{ padding: 16, color: '#64748b', fontWeight: 700, fontSize: '0.85rem' }}>{state.ids.length === 0 ? `No year is set for ${student.name}, so there is no curriculum to list.` : `No worksheet PDFs found in ${state.ids.join(', ').replaceAll('_', ' ')}.`}</div>}
           {assigned.length > 0 && <>{heading('Assigned to this student')}{assigned.map(row)}</>}
           {rest.length > 0 && <>{heading(assigned.length ? 'Other topics' : 'Curriculum topics')}{rest.map(row)}</>}
