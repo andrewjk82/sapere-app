@@ -19067,9 +19067,6 @@
             "test": "Thinking Skills 5",
             "number": 17,
             "category": "seating logic"
-          },
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 650 350\" width=\"90%\" role=\"img\"><rect x=\"100\" y=\"90\" width=\"150\" height=\"60\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"175\" y=\"128\" font-family=\"Arial,sans-serif\" font-size=\"18\" fill=\"#475569\" text-anchor=\"middle\" font-weight=\"600\">Emma</text><rect x=\"430\" y=\"90\" width=\"150\" height=\"60\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"505\" y=\"128\" font-family=\"Arial,sans-serif\" font-size=\"18\" fill=\"#475569\" text-anchor=\"middle\" font-weight=\"600\">Jen</text><rect x=\"100\" y=\"240\" width=\"150\" height=\"60\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"175\" y=\"278\" font-family=\"Arial,sans-serif\" font-size=\"18\" fill=\"#475569\" text-anchor=\"middle\" font-weight=\"600\">Rose</text><rect x=\"430\" y=\"240\" width=\"150\" height=\"60\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"505\" y=\"278\" font-family=\"Arial,sans-serif\" font-size=\"18\" fill=\"#475569\" text-anchor=\"middle\" font-weight=\"600\">Jack</text><path d=\"M250 120H430 M250 270H430 M175 150V240 M505 150V240\" stroke=\"#94a3b8\" stroke-dasharray=\"5,5\"/></svg>"
           }
         },
         {
@@ -19415,9 +19412,6 @@
             "test": "Thinking Skills 5",
             "number": 25,
             "category": "spatial reasoning"
-          },
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 820 370\" width=\"90%\" role=\"img\"><rect x=\"210\" y=\"90\" width=\"150\" height=\"55\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"285\" y=\"125\" font-family=\"Arial,sans-serif\" font-size=\"17\" fill=\"#475569\" text-anchor=\"middle\" font-weight=\"600\">Hospital</text><rect x=\"480\" y=\"90\" width=\"150\" height=\"55\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"555\" y=\"125\" font-family=\"Arial,sans-serif\" font-size=\"17\" fill=\"#475569\" text-anchor=\"middle\" font-weight=\"600\">Shops</text><rect x=\"210\" y=\"250\" width=\"150\" height=\"55\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"285\" y=\"285\" font-family=\"Arial,sans-serif\" font-size=\"17\" fill=\"#475569\" text-anchor=\"middle\" font-weight=\"600\">School</text><rect x=\"480\" y=\"250\" width=\"150\" height=\"55\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"555\" y=\"285\" font-family=\"Arial,sans-serif\" font-size=\"17\" fill=\"#475569\" text-anchor=\"middle\" font-weight=\"600\">Police</text><text x=\"450\" y=\"330\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">North ↑</text></svg>"
           }
         },
         {
@@ -19640,9 +19634,6 @@
             "test": "Thinking Skills 5",
             "number": 30,
             "category": "ordering and logic"
-          },
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 900 235\" width=\"90%\" role=\"img\"><rect x=\"40\" y=\"90\" width=\"150\" height=\"80\" rx=\"5\" fill=\"#f8fafc\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"115\" y=\"135\" font-family=\"Arial,sans-serif\" font-size=\"17\" fill=\"#475569\" text-anchor=\"middle\" font-weight=\"600\">Blue</text><text x=\"115\" y=\"205\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">1</text><rect x=\"210\" y=\"90\" width=\"150\" height=\"80\" rx=\"5\" fill=\"#f8fafc\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"285\" y=\"135\" font-family=\"Arial,sans-serif\" font-size=\"17\" fill=\"#475569\" text-anchor=\"middle\" font-weight=\"600\">Green</text><text x=\"285\" y=\"205\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">2</text><rect x=\"380\" y=\"90\" width=\"150\" height=\"80\" rx=\"5\" fill=\"#f8fafc\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"455\" y=\"135\" font-family=\"Arial,sans-serif\" font-size=\"17\" fill=\"#475569\" text-anchor=\"middle\" font-weight=\"600\">Yellow</text><text x=\"455\" y=\"205\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">3</text><rect x=\"550\" y=\"90\" width=\"150\" height=\"80\" rx=\"5\" fill=\"#f8fafc\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"625\" y=\"135\" font-family=\"Arial,sans-serif\" font-size=\"17\" fill=\"#475569\" text-anchor=\"middle\" font-weight=\"600\">Pink (Gold)</text><text x=\"625\" y=\"205\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">4</text><rect x=\"720\" y=\"90\" width=\"150\" height=\"80\" rx=\"5\" fill=\"#f8fafc\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"795\" y=\"135\" font-family=\"Arial,sans-serif\" font-size=\"17\" fill=\"#475569\" text-anchor=\"middle\" font-weight=\"600\">Red</text><text x=\"795\" y=\"205\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">5</text><text x=\"450\" y=\"35\" font-family=\"Arial,sans-serif\" font-size=\"18\" fill=\"#334155\" text-anchor=\"middle\" font-weight=\"700\">Order satisfying the clues</text></svg>"
           }
         },
         {
