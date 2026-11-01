@@ -17704,9 +17704,6 @@
             "test": "Thinking Skills 4",
             "number": 17,
             "category": "seating arrangements"
-          },
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 550 300\" width=\"90%\" role=\"img\"><rect x=\"110\" y=\"65\" width=\"125\" height=\"60\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"172\" y=\"102\" font-family=\"Arial,sans-serif\" font-size=\"18\" fill=\"#475569\" text-anchor=\"middle\" font-weight=\"600\">Stefi</text><rect x=\"280\" y=\"65\" width=\"125\" height=\"60\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"342\" y=\"102\" font-family=\"Arial,sans-serif\" font-size=\"18\" fill=\"#475569\" text-anchor=\"middle\" font-weight=\"600\">Kole</text><rect x=\"110\" y=\"180\" width=\"125\" height=\"60\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"172\" y=\"217\" font-family=\"Arial,sans-serif\" font-size=\"18\" fill=\"#475569\" text-anchor=\"middle\" font-weight=\"600\">Troy</text><rect x=\"280\" y=\"180\" width=\"125\" height=\"60\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"342\" y=\"217\" font-family=\"Arial,sans-serif\" font-size=\"18\" fill=\"#475569\" text-anchor=\"middle\" font-weight=\"600\">Gabby</text><text x=\"450\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#0f766e\" text-anchor=\"middle\" font-weight=\"400\">Aisle</text><path d=\"M420 115h-40\" stroke=\"#0f766e\" stroke-width=\"3\"/><text x=\"450\" y=\"220\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">Wall</text></svg>"
           }
         },
         {
