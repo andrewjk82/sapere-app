@@ -84,14 +84,15 @@ const lazyWithReload = (importer) => {
       })
   );
 };
-// Dashboard and Schedule are eagerly imported — they are the first screens
-// students and tutors see, so lazy-loading them only adds latency and risks
-// "Failed to fetch dynamically imported module" errors on stale deploys.
+// Dashboard is eagerly imported — it is the first screen students and tutors
+// see. Schedule/Library/Feedback are code-split (lazyWithReload handles stale-
+// deploy chunk errors): Schedule pulled pdf.js + the ink canvas (~700 KB of
+// source) into the bundle every login had to download before first paint.
 import Dashboard from './components/Dashboard';
-import Feedback from './components/Feedback';
-import CurriculumGraph3D from './components/CurriculumGraph3D';
-import Schedule from './components/Schedule';
-import Library from './components/Library';
+const Feedback = lazyWithReload(() => import('./components/Feedback'));
+const CurriculumGraph3D = lazyWithReload(() => import('./components/CurriculumGraph3D'));
+const Schedule = lazyWithReload(() => import('./components/Schedule'));
+const Library = lazyWithReload(() => import('./components/Library'));
 import { StudyTimerPill } from './components/studyTimer/StudyTimerPill';
 import { reloadWithRepair, chunkUrlsInImporter } from './utils/crashRecovery';
 import { StudyTimerSessionModal } from './components/studyTimer/StudyTimerSessionModal';
@@ -1155,6 +1156,11 @@ function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user?.uid, isAdmin, profileLoaded]);
 
+  // A background roster revalidation that did rescan replaces the cached list on screen.
+  useEffect(() => studentService.onRosterUpdate((fresh) => {
+    if (Array.isArray(fresh)) setStudents(fresh);
+  }), []);
+
   // Hard safety: if anything above stalls, never keep the full-page spinner forever.
   useEffect(() => {
     if (!loading) return undefined;
@@ -1575,7 +1581,9 @@ function App() {
 
       {/* ── Journey Map overlay — rendered via portal to escape filter/stacking context ── */}
       {showJourneyMap && createPortal(
-        <CurriculumGraph3D profile={profile} onClose={() => setShowJourneyMap(false)} />,
+        <Suspense fallback={null}>
+          <CurriculumGraph3D profile={profile} onClose={() => setShowJourneyMap(false)} />
+        </Suspense>,
         document.body
       )}
 

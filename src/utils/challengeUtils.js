@@ -3,7 +3,7 @@ import {
   query, where, serverTimestamp, deleteDoc 
 } from 'firebase/firestore';
 import { db, ADMIN_EMAIL, ADMIN_UID } from '../firebase/config';
-import { DEFAULT_DIFFICULTY_MIX, getQuestionBlueprint } from '../services/questionGenerator';
+import { DEFAULT_DIFFICULTY_MIX, getQuestionBlueprint } from '../services/questionBlueprint';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 // Import pure util — not MathView.jsx — so challengeUtils never pulls the
 // full graph/diagram React tree into the auth/boot path.

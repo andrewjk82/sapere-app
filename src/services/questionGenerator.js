@@ -3,6 +3,7 @@ import {
   deriveBinaryMathAnswer,
   verifyAndRepairGeneratedQuestion,
 } from '../utils/generatedAnswerGuard.js';
+import { DEFAULT_DIFFICULTY_MIX, QUESTION_BLUEPRINTS, getQuestionBlueprint } from './questionBlueprint.js';
 
 /**
  * Curriculum-aware Year 1 question generator.
@@ -16,11 +17,7 @@ const DEFAULT_YEAR = 'Year 1';
 const DEFAULT_CHAPTER_ID = 'y1-number';
 const DEFAULT_DIFFICULTY = 'easy';
 
-export const DEFAULT_DIFFICULTY_MIX = {
-  easy: 0.7,
-  medium: 0.25,
-  hard: 0.05,
-};
+export { DEFAULT_DIFFICULTY_MIX, QUESTION_BLUEPRINTS, getQuestionBlueprint };
 
 export const DIFFICULTY_LEVELS = ['easy', 'medium', 'hard'];
 
@@ -151,16 +148,6 @@ const validateGeneratedQuestion = (question) => {
   return repaired;
 };
 
-export const QUESTION_BLUEPRINTS = Object.fromEntries(
-  Object.entries(CURRICULUM_DATA).map(([year, data]) => {
-    if (!Array.isArray(data)) return [year, {}];
-    return [year, Object.fromEntries(data.map(chapter => [chapter.id, {
-      title: chapter.title,
-      topics: chapter.topics || [],
-      types: [],
-    }]))];
-  })
-);
 
 export const getQuestionTargets = ({ year = DEFAULT_YEAR, course = 'Advanced', assignedChapters = [], assignedTopics = [], fullYears = null } = {}) => {
   const years = Array.isArray(year) ? year : [year];
@@ -254,9 +241,6 @@ export const getQuestionTargets = ({ year = DEFAULT_YEAR, course = 'Advanced', a
   return allTargets;
 };
 
-export const getQuestionBlueprint = (year = DEFAULT_YEAR, chapterId = DEFAULT_CHAPTER_ID) => (
-  QUESTION_BLUEPRINTS[year]?.[chapterId] || null
-);
 
 const q = (type, question, options, answer, solution, timeLimit = 30, hint = '', extras = {}) => validateGeneratedQuestion({
   type,

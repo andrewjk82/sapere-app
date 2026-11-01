@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect, lazy, Suspense } from 'react';
 import { 
   BookOpen, CheckCircle2, ChevronRight, 
   Layers, GraduationCap, Star, Clock, 
@@ -13,15 +13,10 @@ import { withTimeout } from '../utils/withTimeout';
 import { useProfile } from '../context/ProfileContext';
 import { useToast } from '../context/ToastContext';
 import { hasLesson, getLesson } from '../lessons/registry';
-import LessonPlayer from './lessons/LessonPlayer';
 import { CURRICULUM_DATA, trackLabel } from '../constants/curriculumData';
 import QuestionBankModal from './QuestionBankModal';
-import PendingReviewPanel from './PendingReviewPanel';
-import QuestionBankPage from './QuestionBankPage';
 import LearningPath from './LearningPath';
 import HscJourney from './HscJourney';
-import BookAnswersModal from './curriculum/BookAnswersModal';
-import HscTypePractice from './hsc/HscTypePractice';
 import { getContentCounts, adminPendingQuestions } from '../services/contentLoader';
 
 import {
@@ -34,6 +29,15 @@ import { toDrivePreviewUrl } from '../utils/homework';
 import CheatSheetLightbox from './CheatSheetLightbox';
 import './curriculum.css';
 import './hsc-chart.css';
+
+// Sub-pages opened by a click — split out so the chapter grid doesn't wait for
+// the question bank's MathInput / sketch board (~300 KB) on every visit.
+const QuestionBankPage = lazy(() => import('./QuestionBankPage'));
+const HscTypePractice = lazy(() => import('./hsc/HscTypePractice'));
+const PendingReviewPanel = lazy(() => import('./PendingReviewPanel'));
+const BookAnswersModal = lazy(() => import('./curriculum/BookAnswersModal'));
+const LessonPlayer = lazy(() => import('./lessons/LessonPlayer'));
+const subPageFallback = <div className="app-loading"><div className="app-spinner"></div></div>;
 
 const YEARS = [...Array.from({ length: 12 }, (_, i) => `Year ${i + 1}`), 'Past Paper', 'Scholarship'];
 const PAST_PAPER_COURSES = ['Standard', 'Advanced', 'Extension 1', 'Extension 2'];
@@ -990,11 +994,13 @@ const Curriculum = ({ initialSearchId = null, onInitialSearchConsumed } = {}) =>
   // page transition instead of a modal stack.
   if (selectedTopicForBank) {
     return (
-      <QuestionBankPage
-        chapter={selectedTopicForBank.chapter}
-        topic={selectedTopicForBank.topic}
-        onBack={() => setSelectedTopicForBank(null)}
-      />
+      <Suspense fallback={subPageFallback}>
+        <QuestionBankPage
+          chapter={selectedTopicForBank.chapter}
+          topic={selectedTopicForBank.topic}
+          onBack={() => setSelectedTopicForBank(null)}
+        />
+      </Suspense>
     );
   }
 
@@ -1004,11 +1010,13 @@ const Curriculum = ({ initialSearchId = null, onInitialSearchConsumed } = {}) =>
   // any chapter/topic — instead of a full collection scan.
   if (selectedGlobalSearch) {
     return (
-      <QuestionBankPage
-        chapter={{ id: `search:${selectedGlobalSearch}`, title: `Search: "${selectedGlobalSearch}"`, searchPrefix: selectedGlobalSearch }}
-        topic={null}
-        onBack={() => setSelectedGlobalSearch(null)}
-      />
+      <Suspense fallback={subPageFallback}>
+        <QuestionBankPage
+          chapter={{ id: `search:${selectedGlobalSearch}`, title: `Search: "${selectedGlobalSearch}"`, searchPrefix: selectedGlobalSearch }}
+          topic={null}
+          onBack={() => setSelectedGlobalSearch(null)}
+        />
+      </Suspense>
     );
   }
 
@@ -1022,7 +1030,7 @@ const Curriculum = ({ initialSearchId = null, onInitialSearchConsumed } = {}) =>
         >
           ← Back to Journey
         </button>
-        <HscTypePractice profile={profile} />
+        <Suspense fallback={subPageFallback}><HscTypePractice profile={profile} /></Suspense>
       </div>
     );
   }
@@ -1031,11 +1039,13 @@ const Curriculum = ({ initialSearchId = null, onInitialSearchConsumed } = {}) =>
   // can query question_type_index and filter by typeSlug.
   if (selectedPastPaperType) {
     return (
-      <QuestionBankPage
-        chapter={{ id: `type:${selectedPastPaperType.slug}`, title: selectedPastPaperType.label, typeSlug: selectedPastPaperType.slug }}
-        topic={null}
-        onBack={() => setSelectedPastPaperType(null)}
-      />
+      <Suspense fallback={subPageFallback}>
+        <QuestionBankPage
+          chapter={{ id: `type:${selectedPastPaperType.slug}`, title: selectedPastPaperType.label, typeSlug: selectedPastPaperType.slug }}
+          topic={null}
+          onBack={() => setSelectedPastPaperType(null)}
+        />
+      </Suspense>
     );
   }
   if (selectedChapterForQuestions) {
@@ -1056,10 +1066,10 @@ const Curriculum = ({ initialSearchId = null, onInitialSearchConsumed } = {}) =>
             <p style={{ margin: '4px 0 0', color: '#64748b', fontWeight: 600 }}>{topics.length} {topics.length === 1 ? 'topic' : 'topics'}</p>
           </div>
           {bookAnswersTopic && (
-            <BookAnswersModal topic={bookAnswersTopic} onClose={() => setBookAnswersTopic(null)} />
+            <Suspense fallback={null}><BookAnswersModal topic={bookAnswersTopic} onClose={() => setBookAnswersTopic(null)} /></Suspense>
           )}
           {previewLesson && (
-            <LessonPlayer lesson={previewLesson} onClose={() => setPreviewLesson(null)} />
+            <Suspense fallback={null}><LessonPlayer lesson={previewLesson} onClose={() => setPreviewLesson(null)} /></Suspense>
           )}
           {topics.length === 0 ? (
             <div style={{ padding: '40px', background: '#fff', borderRadius: '20px', border: '1px dashed #cbd5e1', textAlign: 'center', color: '#94a3b8', fontWeight: 700 }}>
@@ -1303,7 +1313,7 @@ const Curriculum = ({ initialSearchId = null, onInitialSearchConsumed } = {}) =>
                 </div>
 
                 <div className="admin-panel-body">
-                  {adminActiveTab === 'pending_review' && <PendingReviewPanel />}
+                  {adminActiveTab === 'pending_review' && <Suspense fallback={subPageFallback}><PendingReviewPanel /></Suspense>}
 
                   {adminActiveTab === 'utils' && (
                     <div className="admin-sync-grid">

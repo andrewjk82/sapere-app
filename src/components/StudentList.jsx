@@ -3,7 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Search, Filter, Plus, MoreVertical, Mail, BookOpen, AlertCircle, CheckCircle, Trophy, RefreshCw, BellRing, RotateCcw } from 'lucide-react';
 import { studentService } from '../services/studentService';
 import { db } from '../firebase/config';
-import { collection, doc, getDoc, getDocs, limit, query, where, setDoc, writeBatch } from 'firebase/firestore';
+import { collection, doc, getDoc, getDocs, setDoc, writeBatch } from 'firebase/firestore';
+import { useAdminFeed } from '../context/AdminFeedContext';
 import AvatarPickerModal from './AvatarPickerModal';
 import StudentProfileModal from './StudentProfileModal';
 
@@ -17,7 +18,7 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
   const [profileOpen, setProfileOpen] = useState(false);
   const [profileStudent, setProfileStudent] = useState(null);
   const [completionStates, setCompletionStates] = useState({}); // { studentId: 'pending' | 'done' | 'ended' }
-  const [reviewPendingStates, setReviewPendingStates] = useState({});
+  const { pendingGrading } = useAdminFeed();
   const [weeklyActivity, setWeeklyActivity] = useState({}); // { studentId: number of days practised this week }
 
   const [isResettingAllXP, setIsResettingAllXP] = useState(false);
@@ -170,32 +171,13 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
     };
   }, [studentSig, todayStr]);
 
-  React.useEffect(() => {
-    if (!students || students.length === 0) return;
-    let cancelled = false;
-
-    const fetchPendingReviews = async () => {
-      const checks = await Promise.all(students.map(async (student) => {
-        try {
-          const snap = await getDocs(query(
-            collection(db, 'grading_queue'),
-            where('userId', '==', student.id),
-            where('status', '==', 'pending'),
-            limit(1)
-          ));
-          return [student.id, !snap.empty];
-        } catch {
-          return [student.id, false];
-        }
-      }));
-      if (!cancelled) setReviewPendingStates(Object.fromEntries(checks));
-    };
-
-    fetchPendingReviews();
-    return () => {
-      cancelled = true;
-    };
-  }, [studentSig]);
+  // REVIEW badge from the shared pending-grading listener (AdminFeedContext) —
+  // replaces one grading_queue query per student on every visit to this tab.
+  const reviewPendingStates = useMemo(() => {
+    const pending = {};
+    pendingGrading.forEach((item) => { if (item.userId) pending[item.userId] = true; });
+    return pending;
+  }, [pendingGrading]);
 
   // Weekly activity — how many days this week each student did a challenge.
   // 7 reads total (one admin_daily_summary doc per day), not 7 per student.

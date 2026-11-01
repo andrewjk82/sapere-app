@@ -45,7 +45,6 @@ import {
   getNoteCount,
   getNextDueAt,
   nextReviewPhrase,
-  generateTwin,
   recordResult,
   recordTwinResult,
   setMistakeTag,
@@ -56,6 +55,7 @@ import {
   getRawNote,
   replaceNote,
 } from '../../utils/secretNote';
+import { generateTwin } from '../../utils/secretNoteTwin';
 import { syncSecretNoteBlocklist } from '../../utils/secretNoteBlocklist';
 import { parseHintSteps } from '../../utils/hintSteps';
 import { tryAwardSecretNoteClearBonus } from '../../services/secretNoteBonusService';

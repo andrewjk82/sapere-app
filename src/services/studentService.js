@@ -78,6 +78,9 @@ const memGet = (key) => {
   return entry.data;
 };
 const memSet = (key, data) => memCache.set(key, { data, expiresAt: Date.now() + MEM_CACHE_TTL_MS });
+// Background revalidation rescans users/ + students/ only past this age (or on a version bump).
+const ROSTER_STALE_MS = 6 * 60 * 60_000;
+const rosterListeners = new Set();
 const memInvalidate = (tutorId) => {
   memCache.delete(getStudentsCacheKey(tutorId, false));
   memCache.delete(getStudentsCacheKey(tutorId, true));
@@ -125,11 +128,20 @@ export const studentService = {
     }
   },
 
+  // Background roster revalidation results (see getStudents). Returns an unsubscribe fn.
+  onRosterUpdate(callback) {
+    rosterListeners.add(callback);
+    return () => rosterListeners.delete(callback);
+  },
+
   // 학생 목록 수동 가져오기 (1회성)
-  async getStudents(tutorId, isAdmin = false, { forceRefresh = false } = {}) {
+  // revalidate: background check behind a cached roster — 1 sync_meta read, and the full
+  // users/ + students/ rescan only when the roster version moved or the cache is older
+  // than ROSTER_STALE_MS. (It used to be a forceRefresh: a full ~1 MB rescan on every login.)
+  async getStudents(tutorId, isAdmin = false, { forceRefresh = false, revalidate = false } = {}) {
     const cacheKey = getStudentsCacheKey(tutorId, isAdmin);
 
-    if (!forceRefresh) {
+    if (!forceRefresh && !revalidate) {
       // Fast path: in-memory hit (skips even the sync_meta Firestore read)
       const mem = memGet(cacheKey);
       if (mem) return mem;
@@ -137,11 +149,11 @@ export const studentService = {
 
     const cached = forceRefresh ? null : localCache.get(cacheKey);
     // Stale cache is better than a blank teacher shell while users/ is scanned.
-    if (!forceRefresh && cached?.students?.length) {
+    if (!forceRefresh && !revalidate && cached?.students?.length) {
       memSet(cacheKey, cached.students);
-      // Refresh in background — do not block login on full users scan.
+      // Revalidate in background — do not block login on the users scan.
       Promise.resolve().then(() => {
-        studentService.getStudents(tutorId, isAdmin, { forceRefresh: true }).catch(() => {});
+        studentService.getStudents(tutorId, isAdmin, { revalidate: true }).catch(() => {});
       });
       return cached.students;
     }
@@ -149,7 +161,9 @@ export const studentService = {
     try {
       const metaSnap = await getDoc(doc(db, "sync_meta", getStudentsMetaId(tutorId, isAdmin)));
       const remoteVersion = metaVersionOf(metaSnap.data());
-      if (cached?.students && cached?.version === remoteVersion && remoteVersion > 0) {
+      // XP / last activity / new sign-ups don't bump the roster version, hence the age cap.
+      const cacheFresh = Date.now() - Number(cached?.savedAt || 0) < ROSTER_STALE_MS;
+      if (cached?.students && cached?.version === remoteVersion && remoteVersion > 0 && cacheFresh) {
         memSet(cacheKey, cached.students);
         return cached.students;
       }
@@ -195,6 +209,8 @@ export const studentService = {
             }));
         } catch (scanErr) {
           console.warn('[studentService] registered users scan skipped:', scanErr?.message || scanErr);
+          // A background check never swaps a full cached roster for a manual-only one.
+          if (cached?.students?.length) return cached.students;
           // Fall back to manual-only roster so the teacher UI still opens.
           if (manualStudents.length > 0) {
             const partial = mergeDuplicateStudentRecords(manualStudents, []);
@@ -214,6 +230,7 @@ export const studentService = {
       }
       memSet(cacheKey, students);
       localCache.set(cacheKey, { version, savedAt: Date.now(), students });
+      if (revalidate) rosterListeners.forEach((cb) => { try { cb(students); } catch { /* listener */ } });
       return students;
     } catch (error) {
       if (cached?.students) return cached.students;

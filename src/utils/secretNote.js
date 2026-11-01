@@ -9,7 +9,6 @@
    Firestore — the teacher-facing count/tag summary is piggy-backed onto the
    existing end-of-test save in DailyChallenge.finishQuiz (see getSyncSnapshot).
    ========================================================================== */
-import { generateCalculationQuestion } from '../services/calculationGenerator';
 
 // Forgetting-curve stages: review immediately, then +1 day, +7 days, +30 days.
 const STAGE_DELAYS_MS = [
@@ -129,15 +128,7 @@ export function canGrade(q) {
 export function canTwin(q) {
   return !!q && (q.generatorType === 'calculation' || /^calc-/.test(q.topicId || ''));
 }
-
-// Generate a twin (same topic, fresh numbers). Returns null when not possible.
-export function generateTwin(q) {
-  if (canTwin(q)) {
-    const twin = generateCalculationQuestion(q.topicId || 'calc-1-core');
-    return { ...twin, _isTwin: true, _twinOf: q.id };
-  }
-  return null;
-}
+// generateTwin lives in secretNoteTwin.js — keeps calculationGenerator out of the main bundle.
 
 // ── Reads ─────────────────────────────────────────────────────────────────
 const isDue = (it, now = Date.now()) => (it.nextReviewAt || 0) <= now;
