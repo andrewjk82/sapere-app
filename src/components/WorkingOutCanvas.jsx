@@ -6,7 +6,7 @@ import LassoOverlay from './LassoOverlay';
 import { useLassoTool } from '../utils/useLassoTool';
 import { drawPenSegments, drawTip } from '../utils/inkRender';
 import { eraseStrokesAlong, STROKE_ERASE_RADIUS } from '../utils/strokeErase';
-import { isScribbleEraseOn, scribbleTargets } from '../utils/scribbleErase';
+import { isScribbleEraseOn, scribbleErase } from '../utils/scribbleErase';
 import { recognizeShape, isHoldToShapeOn, HOLD_MS, HOLD_MOVE } from '../utils/shapeSnap';
 import { snapAngle } from '../utils/lassoSelect';
 import { loadPadSettings, savePadSettings, loadPenDevice, savePenDevice } from '../utils/padSettings';
@@ -818,13 +818,11 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     }
     stroke.completed = true;
     delete stroke.holdScale; delete stroke.holdLine;   // only needed while the pen is still down
-    // Scribble-to-erase (opt-in, Settings): a dense zigzag over existing ink erases that ink instead of adding a stroke.
+    // Scribble-to-erase (opt-in, Settings): a dense zigzag over existing ink erases the ink inside it instead of adding a stroke.
     if (!stroke.isEraser && isScribbleEraseOn()) {
-      const hits = scribbleTargets(stroke.points, strokesRef.current);
-      if (hits.length > 0) {
-        const before = strokesRef.current;
-        const drop = new Set(hits);
-        const after = before.filter((_, i) => !drop.has(i));
+      const before = strokesRef.current;
+      const after = scribbleErase(stroke.points, before);
+      if (after) {
         strokesRef.current = after;
         clearCanvas(liveCanvasRef.current, getLiveCtx());
         clearCanvas(displayCanvasRef.current, getTipCtx());

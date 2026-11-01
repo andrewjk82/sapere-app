@@ -18,7 +18,7 @@ import * as pdfjsLib from 'pdfjs-dist';
 import {
   HIGHLIGHT_COLORS, HIGHLIGHT_WIDTH, HIGHLIGHT_OPACITY, ERASE_RADIUS, PEN_COLORS, PEN_WIDTH, PEN_MIN_GAP, isPenStroke,
   penWidthFor, penPointsInPx,
-  toPagePoint, appendPoint, pointsToPath, eraseAt, addStroke, removeStrokes, countHighlights, penScribbleTargets,
+  toPagePoint, appendPoint, pointsToPath, eraseAt, addStroke, setPageStrokes, countHighlights, penScribbleErase,
   emptyHistory, recordEdit, stepHistory,
 } from '../utils/pdfHighlights';
 import { loadHighlights, saveHighlights } from '../utils/pdfHighlightStore';
@@ -286,8 +286,8 @@ const PdfPage = memo(({ pdf, pageNumber, width, renderWidth, initialRatio, scrol
     // Pencil strokes are never dropped this way — a resting palm adds touches too.
     const multiTouch = g.touch && multiTouchAtRef.current >= g.at;
     if (!g.points?.length || multiTouch) return;
-    const scratched = g.pen && isScribbleEraseOn() ? penScribbleTargets(g.points, strokes) : [];
-    if (scratched.length > 0) { onScribbleErase(pageNumber, scratched); return; }
+    const scratchedOut = g.pen && isScribbleEraseOn() ? penScribbleErase(g.points, strokes) : null;
+    if (scratchedOut) { onScribbleErase(pageNumber, scratchedOut); return; }
     const stroke = {
       id: `${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`,
       ...(g.pen ? { kind: 'pen', color: g.color, w: PEN_WIDTH } : { color: g.color, w: HIGHLIGHT_WIDTH }),
@@ -568,8 +568,8 @@ const PdfViewer = ({ src, loading, fallback, style, storageKey }) => {
     editHighlights(addStroke(highlightsRef.current, page, stroke));
   }, [editHighlights]);
 
-  const scribbleErase = useCallback((page, ids) => {
-    editHighlights(removeStrokes(highlightsRef.current, page, ids));
+  const scribbleErase = useCallback((page, list) => {
+    editHighlights(setPageStrokes(highlightsRef.current, page, list));
   }, [editHighlights]);
 
   // One eraser drag = one undo step: the snapshot taken at touch-down is recorded with the first real erase.

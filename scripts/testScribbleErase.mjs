@@ -1,6 +1,8 @@
 // Scribble-to-erase geometry: what counts as a scribble, and which ink it removes.
 import assert from 'node:assert';
-import { isScribbleShape, scribbleTargets, countReversals, isScribbleEraseOn, setScribbleEraseOn } from '../src/utils/scribbleErase.js';
+import {
+  isScribbleShape, scribbleErase, scribbleArea, inArea, cutPoints, countReversals, isScribbleEraseOn, setScribbleEraseOn, AREA_PAD,
+} from '../src/utils/scribbleErase.js';
 
 let passed = 0;
 const test = (name, fn) => { fn(); passed += 1; console.log(`  ✓ ${name}`); };
@@ -37,31 +39,98 @@ test('ordinary handwriting shapes are not', () => {
   assert.equal(isScribbleShape(zigzag(100, 100, 12, 8, 8, 3)), false);              // tiny wiggle
 });
 
+const lengthOf = (pts) => pts.reduce((sum, p, i) => (i ? sum + Math.hypot(p[0] - pts[i - 1][0], p[1] - pts[i - 1][1]) : 0), 0);
+
 test('scratching over a word erases it, and only it', () => {
   const word = ink(line(100, 120, 260, 120));
   const neighbour = ink(line(100, 400, 260, 400));
-  const strokes = [word, neighbour];
-  assert.deepEqual(scribbleTargets(zigzag(95, 100, 175, 40, 8), strokes), [0]);
+  assert.deepEqual(scribbleErase(zigzag(95, 100, 175, 40, 8), [word, neighbour]), [neighbour]);
 });
 
-test('a stroke only partly under the scribble stays', () => {
-  const longLine = ink(line(0, 120, 780, 120, 60));      // runs far outside the scribble
-  assert.deepEqual(scribbleTargets(zigzag(95, 100, 175, 40, 8), [longLine]), []);
+test('a stroke running out of the scribble keeps its outside parts, cut at the scribble', () => {
+  const longLine = ink(line(0, 120, 780, 120, 60));      // runs far outside the scribble (x 95–270)
+  const out = scribbleErase(zigzag(95, 100, 175, 40, 8), [longLine]);
+  assert.equal(out.length, 2);
+  const [left, right] = out;
+  assert.ok(left.points.every((p) => p[0] <= 95 + AREA_PAD));
+  assert.ok(right.points.every((p) => p[0] >= 270 - AREA_PAD - 2));
+  assert.ok(Math.abs(left.points[left.points.length - 1][0] - 95) < 5, 'cut right at the scribble edge');
+  assert.ok(Math.abs(lengthOf(left.points) + lengthOf(right.points) - (780 - 175)) < 12);
+  assert.equal(left.color, '#000');
+  assert.equal(left.points[0][2], 3, 'pen width kept');
+});
+
+test('letters right next to the scribble are not touched (it used to reach 24 units past it)', () => {
+  const scratched = ink(line(110, 120, 250, 120));
+  const before = ink(line(70, 105, 88, 135));             // 7 units left of the scribble
+  const below = ink(line(110, 152, 250, 152));             // the next line, 12 units below
+  const out = scribbleErase(zigzag(95, 100, 175, 40, 8), [before, scratched, below]);
+  assert.deepEqual(out, [before, below]);
+  assert.equal(out[0], before);
+  assert.equal(out[1], below);
+});
+
+test('a long straight segment crossing the scribble is cut even with no point inside it', () => {
+  const ruler = ink([[0, 120, 3], [780, 120, 3]]);        // a 2-point line (e.g. snapped shape)
+  const out = scribbleErase(zigzag(95, 100, 175, 40, 8), [ruler]);
+  assert.equal(out.length, 2);
+});
+
+test('scratching out one small digit with a few quick back-and-forths works', () => {
+  const digit = ink(line(300, 300, 304, 318, 8));          // a "1", 18 units tall
+  const small = zigzag(292, 296, 20, 26, 5, 4);            // 5 sweeps, few points (fast pen)
+  assert.equal(isScribbleShape(small), true);
+  assert.deepEqual(scribbleErase(small, [digit]), []);
+});
+
+test('a quick small scribble with rounded turns and few points is still a scribble', () => {
+  // As recorded by the notepad on a single digit: 6 sweeps 19 units wide, ~4 points per sweep.
+  const pts = [];
+  for (let s = 0; s <= 5; s += 1) {
+    for (let i = 0; i < 4; i += 1) {
+      const e = (1 - Math.cos(Math.PI * i / 4)) / 2;
+      pts.push([140 + (s % 2 === 0 ? e : 1 - e) * 19.5, 624 + (s + i / 4) / 6 * 25, 3]);
+    }
+  }
+  assert.ok(countReversals(pts) >= 4);
+  assert.equal(isScribbleShape(pts), true);
+});
+
+test('round-and-round (loop) scribbling works too', () => {
+  const loops = Array.from({ length: 160 }, (_, i) => {
+    const t = i / 160 * 10 * Math.PI;
+    return [180 + t * 2 + 14 * Math.cos(t), 120 + 14 * Math.sin(t), 3];
+  });
+  assert.deepEqual(scribbleErase(loops, [ink(line(170, 120, 230, 120))]), []);
 });
 
 test('a zigzag over empty paper is just ink (shading, hatching)', () => {
-  assert.deepEqual(scribbleTargets(zigzag(100, 600, 160, 40, 8), [ink(line(100, 120, 260, 120))]), []);
+  assert.equal(scribbleErase(zigzag(100, 600, 160, 40, 8), [ink(line(100, 120, 260, 120))]), null);
+});
+
+test('barely grazing ink keeps the scribble as ink', () => {
+  const tip = ink(line(100, 99, 100, 60));                 // its end just touches the scribble's edge
+  assert.equal(scribbleErase(zigzag(95, 100, 175, 40, 8), [tip]), null);
 });
 
 test('eraser strokes and empty strokes are ignored', () => {
   const eraser = { ...ink(line(100, 120, 260, 120)), isEraser: true };
-  assert.deepEqual(scribbleTargets(zigzag(95, 100, 175, 40, 8), [eraser, { points: [] }, null]), []);
+  assert.equal(scribbleErase(zigzag(95, 100, 175, 40, 8), [eraser, { points: [] }, null]), null);
 });
 
 test('a tall narrow scribble through a column works too', () => {
   const digits = ink(line(200, 100, 200, 260));
   const vertical = zigzag(0, 0, 160, 40, 8).map(([x, y, w]) => [y + 180, x + 95, w]);   // swap axes → sweeps run vertically
-  assert.deepEqual(scribbleTargets(vertical, [digits]), [0]);
+  assert.deepEqual(scribbleErase(vertical, [digits]), []);
+});
+
+test('the scribbled area is the scribble outline', () => {
+  const area = scribbleArea(zigzag(95, 100, 175, 40, 8));
+  assert.ok(inArea(area, [180, 120]));
+  assert.ok(!inArea(area, [180, 150]));
+  assert.ok(!inArea(area, [60, 120]));
+  assert.equal(scribbleArea(line(0, 0, 300, 0)), null);
+  assert.equal(cutPoints([[500, 500, 3], [510, 500, 3]], area), null);
 });
 
 test('setting: on unless switched off; safe without storage', () => {

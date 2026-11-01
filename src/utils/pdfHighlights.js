@@ -2,7 +2,7 @@
 // { id, color, w, pts: [[x, y], ...], kind? } with BOTH axes in page-width units
 // (x in 0..1, y in 0..height/width), so it stays glued to the page at any zoom.
 // kind 'pen' = opaque writing drawn above the highlights; no kind = highlighter (older records).
-import { scribbleTargets } from './scribbleErase.js';
+import { scribbleArea, cutPoints, MIN_ERASED } from './scribbleErase.js';
 
 export const HIGHLIGHT_COLORS = [
   { id: 'yellow', value: '#facc15', label: 'Yellow' },
@@ -113,11 +113,35 @@ export const removeStroke = (pages = {}, page, id) => {
 // Scribble-to-erase for the pen: the notepad's geometry (utils/scribbleErase, in A4 page units 794 wide)
 // on PDF page-width units. Only pen writing can be scratched out — highlighting is often a zigzag on purpose.
 const SCRIBBLE_UNITS = 794;
-export const penScribbleTargets = (scribblePts, strokes = []) => {
-  const scale = (pts) => pts.map(([x, y]) => [x * SCRIBBLE_UNITS, y * SCRIBBLE_UNITS]);
-  const pens = strokes.filter(isPenStroke);
-  const hits = scribbleTargets(scale(scribblePts || []), pens.map((s) => ({ points: scale(s.pts) })));
-  return hits.map((i) => pens[i].id);
+// Returns the page's stroke list with the ink under the scribble cut away (a stroke running out of the
+// scribbled area keeps its outside pieces, each a new stroke), or null when the scribble stays ink.
+export const penScribbleErase = (scribblePts, strokes = []) => {
+  const area = scribbleArea((scribblePts || []).map(([x, y]) => [x * SCRIBBLE_UNITS, y * SCRIBBLE_UNITS]));
+  if (!area) return null;
+  let erased = 0;
+  const out = [];
+  for (const stroke of strokes) {
+    // Points are [x, y, width]: only x and y are page-width units.
+    const scaled = isPenStroke(stroke) && Array.isArray(stroke.pts)
+      ? stroke.pts.map(([x, y, ...rest]) => [x * SCRIBBLE_UNITS, y * SCRIBBLE_UNITS, ...rest])
+      : null;
+    const cut = scaled ? cutPoints(scaled, area) : null;
+    if (!cut) { out.push(stroke); continue; }
+    erased += cut.erased;
+    cut.pieces.forEach((piece, k) => out.push({
+      ...stroke,
+      id: `${stroke.id.slice(0, 12)}${k}${Math.random().toString(36).slice(2, 6)}`,
+      pts: piece.map(([x, y, ...rest]) => [x / SCRIBBLE_UNITS, y / SCRIBBLE_UNITS, ...rest]),
+    }));
+  }
+  return erased >= MIN_ERASED ? out : null;
+};
+
+export const setPageStrokes = (pages = {}, page, list) => {
+  const next = { ...pages };
+  if (list.length > 0) next[page] = list;
+  else delete next[page];
+  return next;
 };
 
 export const removeStrokes = (pages = {}, page, ids) => {

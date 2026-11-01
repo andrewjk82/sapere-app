@@ -4,7 +4,7 @@
 import assert from 'node:assert';
 import {
   toPagePoint, appendPoint, pointsToPath, strokeHit, eraseAt, cleanHighlights, addStroke, removeStroke,
-  countHighlights, MAX_STROKES_PER_PAGE, HIGHLIGHT_WIDTH, PEN_WIDTH, penScribbleTargets, removeStrokes,
+  countHighlights, MAX_STROKES_PER_PAGE, HIGHLIGHT_WIDTH, PEN_WIDTH, penScribbleErase, setPageStrokes, removeStrokes,
   emptyHistory, recordEdit, stepHistory,
 } from '../src/utils/pdfHighlights.js';
 
@@ -86,11 +86,31 @@ const word = (id, y) => pen(id, Array.from({ length: 20 }, (_, i) => [0.11 + i *
 
 test('pen scribble scratches out the pen writing under it, never highlights or writing elsewhere', () => {
   const strokes = [word('w1', 0.115), stroke('hl', [[0.1, 0.12], [0.3, 0.12]]), word('far', 0.6)];
-  assert.deepEqual(penScribbleTargets(zigzag(), strokes), ['w1']);
+  const out = penScribbleErase(zigzag(), strokes);
+  assert.deepEqual(out.map((s) => s.id), ['hl', 'far']);
+  assert.equal(out[0], strokes[1]);
+  assert.equal(out[1], strokes[2]);
+});
+
+test('pen writing running out of the scribble keeps its outside part, as a new stroke in page units', () => {
+  const long = pen('long', Array.from({ length: 41 }, (_, i) => [0.05 + i * 0.0125, 0.12, 0.0035]));   // x 0.05–0.55
+  const out = penScribbleErase(zigzag(), [long]);
+  assert.equal(out.length, 2);
+  assert.ok(out.every((s) => s.id !== 'long' && s.kind === 'pen' && s.pts.every((p) => p.length === 3 && p[2] === 0.0035)));
+  assert.ok(out[0].pts.every((p) => p[0] < 0.105));
+  assert.ok(out[1].pts.every((p) => p[0] > 0.295));
+  assert.ok(Math.abs(out[1].pts[out[1].pts.length - 1][0] - 0.55) < 1e-9);
+});
+
+test('setPageStrokes replaces a page and drops it when empty', () => {
+  const pages = { 1: [pen('a', [[0.1, 0.1]])], 2: [pen('c', [[0.1, 0.1]])] };
+  assert.deepEqual(setPageStrokes(pages, 1, [pen('b', [[0.2, 0.2]])])[1].map((s) => s.id), ['b']);
+  assert.equal(setPageStrokes(pages, 2, [])[2], undefined);
+  assert.equal(pages[2].length, 1);
 });
 
 test('ordinary pen writing is not a scribble', () => {
-  assert.deepEqual(penScribbleTargets(word('new', 0.115).pts, [word('w1', 0.115)]), []);
+  assert.equal(penScribbleErase(word('new', 0.115).pts, [word('w1', 0.115)]), null);
 });
 
 test('removeStrokes drops the given ids and empty pages; unchanged when nothing matches', () => {
