@@ -1,4 +1,5 @@
-import { planNoteMoves } from './ext2Renumber.js';
+import { EXT2_RENUMBER } from './ext2Renumber.js';
+import { EXT1_Y12_RENUMBER } from './ext1Y12Renumber.js';
 // Curriculum working notes stay on this browser/device. They are never synced
 // to Firebase and are kept separately from submitted homework records.
 const DB_NAME = 'sapere-curriculum-notes';
@@ -112,39 +113,45 @@ const findLegacyNote = async (topicId) => {
   }
 };
 
-// Extension 2 was re-laid out to match the 2026 textbook: its notes move to the new topic ids, once per device, in one
-// transaction (new ids reuse old ones, so a half-done move would mix notes up). See ext2Renumber.
-const EXT2_NOTES_FLAG = 'sapere:ext2-renumber-notes:v1';
-let ext2NotesPromise = null;
-export const migrateExt2Notes = () => {
-  if (ext2NotesPromise) return ext2NotesPromise;
-  ext2NotesPromise = (async () => {
+// Courses re-laid out to a new textbook (Extension 2, Extension 1 Year 12): their notes move to the new topic ids, once per
+// device per course, in one transaction (new ids reuse old ones, so a half-done move would mix notes up). See topicRenumber.
+const NOTE_RENUMBERS = [
+  ['sapere:ext2-renumber-notes:v1', EXT2_RENUMBER],
+  ['sapere:ext1y12-renumber-notes:v1', EXT1_Y12_RENUMBER],
+];
+const moveNotes = async (flag, renumber) => {
+  if (globalThis.localStorage?.getItem(flag)) return;
+  const db = await openDb();
+  await new Promise((resolve, reject) => {
+    const tx = db.transaction(STORE, 'readwrite');
+    const store = tx.objectStore(STORE);
+    const entries = [];
+    const cursorRequest = store.openCursor();
+    cursorRequest.onsuccess = () => {
+      const cursor = cursorRequest.result;
+      if (cursor) { if (String(cursor.key).startsWith(`topic:${renumber.prefix}`)) entries.push([cursor.key, cursor.value]); cursor.continue(); return; }
+      const { remove, set } = renumber.planNoteMoves(entries);
+      remove.forEach((key) => store.delete(key));
+      set.forEach(([key, value]) => store.put(value, key));
+    };
+    cursorRequest.onerror = () => reject(cursorRequest.error);
+    tx.oncomplete = resolve;
+    tx.onerror = () => reject(tx.error);
+    tx.onabort = () => reject(tx.error);
+  });
+  globalThis.localStorage?.setItem(flag, '1');
+};
+let renumberNotesPromise = null;
+export const migrateRenumberedNotes = () => {
+  if (renumberNotesPromise) return renumberNotesPromise;
+  renumberNotesPromise = (async () => {
     try {
-      if (globalThis.localStorage?.getItem(EXT2_NOTES_FLAG)) return;
-      const db = await openDb();
-      await new Promise((resolve, reject) => {
-        const tx = db.transaction(STORE, 'readwrite');
-        const store = tx.objectStore(STORE);
-        const entries = [];
-        const cursorRequest = store.openCursor();
-        cursorRequest.onsuccess = () => {
-          const cursor = cursorRequest.result;
-          if (cursor) { if (String(cursor.key).startsWith('topic:y12e2-')) entries.push([cursor.key, cursor.value]); cursor.continue(); return; }
-          const { remove, set } = planNoteMoves(entries);
-          remove.forEach((key) => store.delete(key));
-          set.forEach(([key, value]) => store.put(value, key));
-        };
-        cursorRequest.onerror = () => reject(cursorRequest.error);
-        tx.oncomplete = resolve;
-        tx.onerror = () => reject(tx.error);
-        tx.onabort = () => reject(tx.error);
-      });
-      globalThis.localStorage?.setItem(EXT2_NOTES_FLAG, '1');
+      for (const [flag, renumber] of NOTE_RENUMBERS) await moveNotes(flag, renumber);
     } catch {
-      ext2NotesPromise = null;   // try again next time; nothing was changed
+      renumberNotesPromise = null;   // try again next time; a course whose move failed was not changed
     }
   })();
-  return ext2NotesPromise;
+  return renumberNotesPromise;
 };
 
 // Every `topic:<id>` note on this device with the local date it was last saved → [{ topicId, date }].

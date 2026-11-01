@@ -1,317 +1,32 @@
 {
   "chapterId": "y12e1-17",
-  "title": "Chapter 17: Binomial distributions",
+  "title": "Chapter 17: Continuous probability distributions",
   "year": "Year 12",
   "topics": [
     {
-      "topicId": "y12e1-17A",
-      "code": "17A",
-      "title": "Binomial probability",
-      "questions": [
-        {
-          "id": "bbhs2020e1-q12a",
-          "type": "multipart",
-          "stem": "Bags of lollipops are supposed to contain 50 lollipops. Production records indicate that 92% of bags contain 50 lollipops. A batch of 15 bags is sampled. If more than 2 bags do not contain exactly 50 lollipops, production is stopped.",
-          "meta": {
-            "source": "Blacktown Boys 2020 3U Trials & Solutions",
-            "school": "Blacktown Boys' High School",
-            "year": 2020,
-            "number": "12(a)"
-          },
-          "parts": [
-            {
-              "id": "bbhs2020e1-q12a-i",
-              "type": "mc",
-              "difficulty": "medium",
-              "timeLimit": 60,
-              "stem": "Find the probability, correct to four decimal places, that exactly 2 of the 15 bags selected do not contain 50 lollipops.",
-              "hint": "X ~ Bin(15, 0.08); P(X = 2) = C(15,2)(0.08)²(0.92)¹³.",
-              "steps": [
-                {
-                  "explain": "Let \\(X\\) be the number of bags NOT containing 50. Each bag fails with probability \\(1-0.92=0.08\\).",
-                  "work": "\\(X\\sim\\operatorname{Bin}(15,\\ 0.08)\\)"
-                },
-                {
-                  "explain": "Binomial probability.",
-                  "work": "\\(P(X=2)=\\binom{15}{2}(0.08)^2(0.92)^{13}=105\\times0.0064\\times0.33838\\dots\\)"
-                },
-                {
-                  "explain": "Evaluate.",
-                  "work": "\\(P(X=2)\\approx0.2273\\)"
-                },
-                {
-                  "explain": "Make sure \\(p=0.08\\) (the 'failure' you are counting), not 0.92."
-                }
-              ],
-              "xp": 1,
-              "meta": {
-                "source": "Blacktown Boys 2020 3U Trials & Solutions",
-                "school": "Blacktown Boys' High School",
-                "year": 2020,
-                "number": "12(a)(i)"
-              },
-              "options": [
-                "\\(0.0064\\)",
-                "\\(0.1130\\)",
-                "\\(0.0315\\)",
-                "\\(0.2273\\)"
-              ],
-              "answer": 3,
-              "keyPoints": [
-                {
-                  "text": "do not contain 50 lollipops",
-                  "note": "Count the bags that fail: p = 1 − 0.92 = 0.08."
-                }
-              ]
-            },
-            {
-              "id": "bbhs2020e1-q12a-ii",
-              "type": "mc",
-              "difficulty": "medium",
-              "timeLimit": 60,
-              "stem": "Find the probability, correct to four decimal places, that production is stopped.",
-              "hint": "Use the complement: 1 − P(X ≤ 2).",
-              "steps": [
-                {
-                  "explain": "Stopped when more than 2 bags fail: \\(P(X\\gt2)=1-P(X\\le2)\\).",
-                  "work": "\\(P(X\\gt2)=1-\\left[P(0)+P(1)+P(2)\\right]\\)"
-                },
-                {
-                  "explain": "Each term.",
-                  "work": "\\(P(0)=0.92^{15}\\approx0.2863,\\quad P(1)=15(0.08)(0.92)^{14}\\approx0.3734,\\quad P(2)\\approx0.2273\\)"
-                },
-                {
-                  "explain": "Subtract.",
-                  "work": "\\(P(X\\gt2)\\approx1-0.8870=0.1130\\)"
-                }
-              ],
-              "xp": 1,
-              "meta": {
-                "source": "Blacktown Boys 2020 3U Trials & Solutions",
-                "school": "Blacktown Boys' High School",
-                "year": 2020,
-                "number": "12(a)(ii)"
-              },
-              "options": [
-                "\\(0.2273\\)",
-                "\\(0.3403\\)",
-                "\\(0.1130\\)",
-                "\\(0.8870\\)"
-              ],
-              "answer": 2,
-              "keyPoints": [
-                {
-                  "text": "production is stopped",
-                  "note": "'More than 2' = 1 − P(0) − P(1) − P(2)."
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "topicId": "y12e1-17B",
       "code": "17B",
-      "title": "Binomial distributions",
+      "title": "Continuous distributions",
       "questions": [
         {
-          "id": "bhhs2020e1-q12a",
-          "type": "multipart",
-          "stem": "The following table is the distribution of a random variable \\(X\\) where \\(X\\sim\\operatorname{Bin}(4,p)\\).\n\n| \\(x\\) | 0 | 1 | 2 | 3 | 4 |\n|---|---|---|---|---|---|\n| \\(P(X=x)\\) | 0.2401 | \\(a\\) | \\(b\\) | 0.0756 | 0.0081 |",
-          "meta": {
-            "source": "Baulkham Hills 2020 3U Trials & Solutions",
-            "school": "Baulkham Hills High School",
-            "year": 2020,
-            "number": "12(a)"
-          },
-          "parts": [
-            {
-              "id": "bhhs2020e1-q12a-i",
-              "type": "mc",
-              "difficulty": "easy",
-              "timeLimit": 60,
-              "stem": "Use the known entries in the probability distribution table to calculate the value of \\(p\\).",
-              "hint": "Use P(X = 4) = p⁴.",
-              "steps": [
-                {
-                  "explain": "\\(P(X=4)\\) means all 4 trials succeed.",
-                  "work": "\\(P(X=4)=\\binom44p^4(1-p)^0=p^4=0.0081\\)"
-                },
-                {
-                  "explain": "Take the fourth root.",
-                  "work": "\\(p=\\sqrt[4]{0.0081}=0.3\\)"
-                },
-                {
-                  "explain": "Check with \\(P(X=0)=(0.7)^4=0.2401\\) ✓."
-                }
-              ],
-              "xp": 1,
-              "meta": {
-                "source": "Baulkham Hills 2020 3U Trials & Solutions",
-                "school": "Baulkham Hills High School",
-                "year": 2020,
-                "number": "12(a)(i)"
-              },
-              "options": [
-                "\\(p=0.7\\)",
-                "\\(p=0.0081\\)",
-                "\\(p=0.09\\)",
-                "\\(p=0.3\\)"
-              ],
-              "answer": 3,
-              "keyPoints": [
-                {
-                  "text": "calculate the value of \\(p\\)",
-                  "note": "P(X = 4) = p⁴ = 0.0081."
-                }
-              ]
-            },
-            {
-              "id": "bhhs2020e1-q12a-ii",
-              "type": "mc",
-              "difficulty": "easy",
-              "timeLimit": 60,
-              "stem": "Find the values of \\(a\\) and \\(b\\)",
-              "hint": "Use P(X = k) = C(4,k) pᵏ(1 − p)^(4−k) with p = 0.3.",
-              "steps": [
-                {
-                  "explain": "\\(a=P(X=1)\\).",
-                  "work": "\\(a=\\binom41(0.3)^1(0.7)^3=4\\times0.3\\times0.343=0.4116\\)"
-                },
-                {
-                  "explain": "\\(b=P(X=2)\\).",
-                  "work": "\\(b=\\binom42(0.3)^2(0.7)^2=6\\times0.09\\times0.49=0.2646\\)"
-                },
-                {
-                  "explain": "Check: the probabilities add to 1.",
-                  "work": "\\(0.2401+0.4116+0.2646+0.0756+0.0081=1\\ \\checkmark\\)"
-                }
-              ],
-              "xp": 1,
-              "meta": {
-                "source": "Baulkham Hills 2020 3U Trials & Solutions",
-                "school": "Baulkham Hills High School",
-                "year": 2020,
-                "number": "12(a)(ii)"
-              },
-              "options": [
-                "\\(a=0.1029,\\ b=0.0441\\)",
-                "\\(a=0.4116,\\ b=0.2744\\)",
-                "\\(a=0.4116,\\ b=0.2646\\)",
-                "\\(a=0.2646,\\ b=0.4116\\)"
-              ],
-              "answer": 2,
-              "keyPoints": [
-                {
-                  "text": "Find the values of \\(a\\) and \\(b\\)",
-                  "note": "a = P(X = 1), b = P(X = 2); don't forget the binomial coefficients 4 and 6."
-                }
-              ]
-            },
-            {
-              "id": "bhhs2020e1-q12a-iii",
-              "type": "mc",
-              "difficulty": "easy",
-              "timeLimit": 60,
-              "stem": "Calculate \\(\\operatorname{Var}(X)\\).",
-              "hint": "Var(X) = np(1 − p).",
-              "steps": [
-                {
-                  "explain": "For a binomial distribution \\(\\operatorname{Var}(X)=np(1-p)\\).",
-                  "work": "\\(\\operatorname{Var}(X)=4\\times0.3\\times0.7=0.84\\)"
-                },
-                {
-                  "explain": "1.2 is the mean \\(np\\); 0.9165 is the standard deviation \\(\\sqrt{0.84}\\)."
-                }
-              ],
-              "xp": 1,
-              "meta": {
-                "source": "Baulkham Hills 2020 3U Trials & Solutions",
-                "school": "Baulkham Hills High School",
-                "year": 2020,
-                "number": "12(a)(iii)"
-              },
-              "options": [
-                "\\(0.9165\\)",
-                "\\(0.84\\)",
-                "\\(1.2\\)",
-                "\\(0.21\\)"
-              ],
-              "answer": 1,
-              "keyPoints": [
-                {
-                  "text": "\\(\\operatorname{Var}(X)\\)",
-                  "note": "For Bin(n, p): variance = npq."
-                }
-              ]
-            },
-            {
-              "id": "bhhs2020e1-q12a-iv",
-              "type": "mc",
-              "difficulty": "easy",
-              "timeLimit": 60,
-              "stem": "Find \\(P(X\\ge3)\\).",
-              "hint": "Add P(X = 3) and P(X = 4).",
-              "steps": [
-                {
-                  "explain": "\\(X\\ge3\\) means \\(X=3\\) or \\(X=4\\). Add those entries.",
-                  "work": "\\(P(X\\ge3)=0.0756+0.0081=0.0837\\)"
-                },
-                {
-                  "explain": "0.9163 is \\(P(X\\le2)\\), the complement."
-                }
-              ],
-              "xp": 1,
-              "meta": {
-                "source": "Baulkham Hills 2020 3U Trials & Solutions",
-                "school": "Baulkham Hills High School",
-                "year": 2020,
-                "number": "12(a)(iv)"
-              },
-              "options": [
-                "\\(0.0756\\)",
-                "\\(0.3483\\)",
-                "\\(0.9163\\)",
-                "\\(0.0837\\)"
-              ],
-              "answer": 3,
-              "keyPoints": [
-                {
-                  "text": "\\(P(X\\ge3)\\)",
-                  "note": "'At least 3' means 3 or 4."
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "chs2020e1-q11e",
+          "id": "chs2020e1-q8",
           "type": "mc",
-          "difficulty": "medium",
+          "difficulty": "easy",
           "timeLimit": 60,
-          "stem": "The discrete random variable X has a binomial distribution with \\(n\\) independent trials with probability of success \\(p\\). If its mean is 6 and its standard deviation is 2, find the values of \\(n\\) and \\(p\\).",
-          "hint": "np = 6 and np(1 − p) = 2² = 4; divide.",
+          "stem": "What is the value of \\(k\\) such that the function \\(f(x)=\\frac{k}{1+x^2}\\), \\(-1\\le x\\le1\\) is a probability density function?",
+          "hint": "Total area under a pdf is 1.",
           "steps": [
             {
-              "explain": "For a binomial variable, the mean is \\(np\\) and the variance is \\(np(1-p)\\). Square the given standard deviation to get the variance.",
-              "work": "\\(np=6\\quad(1),\\qquad np(1-p)=\\sigma^2=2^2=4\\quad(2)\\)"
+              "explain": "A probability density function must have total area 1.",
+              "work": "\\(\\int_{-1}^{1}\\frac{k}{1+x^2}\\,dx=1\\)"
             },
             {
-              "explain": "Divide the variance equation by the mean equation to eliminate \\(n\\).",
-              "work": "\\(\\frac{np(1-p)}{np}=\\frac46\\Rightarrow1-p=\\frac23\\Rightarrow p=\\frac13\\)"
+              "explain": "Integrate: \\(\\int\\frac{dx}{1+x^2}=\\tan^{-1}x\\).",
+              "work": "\\(k\\Bigl[\\tan^{-1}x\\Bigr]_{-1}^{1}=k\\left(\\frac{\\pi}{4}-\\left(-\\frac{\\pi}{4}\\right)\\right)=k\\cdot\\frac{\\pi}{2}\\)"
             },
             {
-              "explain": "Substitute \\(p=\\frac13\\) into the mean equation.",
-              "work": "\\(n\\cdot\\frac13=6\\Rightarrow n=18\\)"
-            },
-            {
-              "explain": "Check both parameters in the original mean and standard-deviation formulas.",
-              "work": "\\(np=18\\cdot\\frac13=6,\\qquad\\sqrt{np(1-p)}=\\sqrt{18\\cdot\\frac13\\cdot\\frac23}=\\sqrt4=2\\)"
-            },
-            {
-              "explain": "Thus the parameters are the pair in option C.",
-              "work": "\\(\\boxed{n=18,\\ p=\\frac13}\\)"
+              "explain": "Set equal to 1.",
+              "work": "\\(\\frac{k\\pi}{2}=1\\ \\Rightarrow\\ k=\\frac{2}{\\pi}\\)"
             }
           ],
           "xp": 1,
@@ -319,167 +34,19 @@
             "source": "Caringbah 2020 3U Trials & Solutions",
             "school": "Caringbah High School",
             "year": 2020,
-            "number": "11(e)"
+            "number": "8"
           },
           "options": [
-            "\\(n=12,\\ p=\\frac12\\)",
-            "\\(n=18,\\ p=\\frac23\\)",
-            "\\(n=18,\\ p=\\frac13\\)",
-            "\\(n=9,\\ p=\\frac23\\)"
+            "\\(k=\\frac{\\pi}{4}\\)",
+            "\\(k=\\frac{\\pi}{2}\\)",
+            "\\(k=\\frac{2}{\\pi}\\)",
+            "\\(k=\\frac{4}{\\pi}\\)"
           ],
           "answer": 2,
           "keyPoints": [
             {
-              "text": "standard deviation is 2",
-              "note": "Variance = σ² = 4 = np(1 − p)."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "topicId": "y12e1-17D",
-      "code": "17D",
-      "title": "Sample proportions",
-      "questions": [
-        {
-          "id": "bhhs2020e1-q4",
-          "type": "mc",
-          "difficulty": "medium",
-          "timeLimit": 60,
-          "stem": "In a large population, the probability that a person is left-handed is 0.3. Let \\(\\hat{p}\\) be the random variable that represents the sample proportion of left-handed people from a sample size of \\(n\\), drawn from the population.\n\nWhat is the smallest value of \\(n\\) such that the standard deviation of \\(\\hat{p}\\) is less than or equal to 0.07?",
-          "hint": "σ of p̂ is √(p(1 − p)/n); solve √(0.21/n) ≤ 0.07 and round up.",
-          "steps": [
-            {
-              "explain": "The standard deviation of a sample proportion is",
-              "work": "\\(\\sigma_{\\hat p}=\\sqrt{\\frac{p(1-p)}{n}},\\qquad p=0.3,\\ 1-p=0.7\\)"
-            },
-            {
-              "explain": "Set up the inequality.",
-              "work": "\\(\\sqrt{\\frac{0.3\\times0.7}{n}}\\le0.07\\ \\Rightarrow\\ \\frac{0.21}{n}\\le0.0049\\)"
-            },
-            {
-              "explain": "Solve for \\(n\\) (multiplying by positive numbers keeps the direction).",
-              "work": "\\(n\\ge\\frac{0.21}{0.0049}=42.857\\dots\\)"
-            },
-            {
-              "explain": "\\(n\\) must be a whole number, so round UP: the smallest \\(n\\) is 43. (\\(n=42\\) gives \\(\\sigma\\approx0.0707\\gt0.07\\).)"
-            }
-          ],
-          "xp": 1,
-          "meta": {
-            "source": "Baulkham Hills 2020 3U Trials & Solutions",
-            "school": "Baulkham Hills High School",
-            "year": 2020,
-            "number": "4"
-          },
-          "options": [
-            "\\(n=42\\)",
-            "\\(n=43\\)",
-            "\\(n=61\\)",
-            "\\(n=62\\)"
-          ],
-          "answer": 1,
-          "keyPoints": [
-            {
-              "text": "the standard deviation of",
-              "note": "Use σ = √(pq/n) with p = 0.3, q = 0.7, then round n up."
-            }
-          ]
-        },
-        {
-          "id": "chs2020e1-q12b",
-          "type": "multipart",
-          "stem": "",
-          "meta": {
-            "source": "Caringbah 2020 3U Trials & Solutions",
-            "school": "Caringbah High School",
-            "year": 2020,
-            "number": "12(b)"
-          },
-          "parts": [
-            {
-              "id": "chs2020e1-q12b-i",
-              "type": "review",
-              "difficulty": "easy",
-              "timeLimit": 60,
-              "stem": "Records show that 64% of students at a school travelled to and from school by bus. Samples of 100 students at the school are taken to determine the proportion who travel to and from school by bus. Show that the distribution of such sample proportions has mean 0.64 and standard deviation 0.048.",
-              "hint": "E(p̂) = p and σ = √(p(1 − p)/n).",
-              "steps": [
-                {
-                  "explain": "The number in a sample who travel by bus is binomial, and the sample proportion is that number divided by 100.",
-                  "work": "\\(X\\sim B(100,\\ 0.64),\\qquad\\hat{p}=\\frac{X}{100}\\)"
-                },
-                {
-                  "explain": "Mean of a sample proportion equals \\(p\\).",
-                  "work": "\\(E(\\hat p)=\\frac{np}{n}=p=0.64\\)"
-                },
-                {
-                  "explain": "Standard deviation.",
-                  "work": "\\(\\sigma_{\\hat p}=\\sqrt{\\frac{p(1-p)}{n}}=\\sqrt{\\frac{0.64\\times0.36}{100}}=\\frac{\\sqrt{0.2304}}{10}=\\frac{0.48}{10}=0.048\\)"
-                }
-              ],
-              "xp": 1,
-              "meta": {
-                "source": "Caringbah 2020 3U Trials & Solutions",
-                "school": "Caringbah High School",
-                "year": 2020,
-                "number": "12(b)(i)"
-              },
-              "answer": "X ~ B(100, 0.64), p̂ = X/100. \\(E(\\hat p)=p=0.64\\); \\(\\sigma=\\sqrt{\\frac{p(1-p)}{n}}=\\sqrt{\\frac{0.64\\times0.36}{100}}=\\frac{0.48}{10}=0.048\\).",
-              "manual": true,
-              "keyPoints": [
-                {
-                  "text": "Show that",
-                  "note": "Use the sample proportion formulas with p = 0.64, n = 100."
-                }
-              ]
-            },
-            {
-              "id": "chs2020e1-q12b-ii",
-              "type": "mc",
-              "difficulty": "medium",
-              "timeLimit": 60,
-              "stem": "Use the table (shown below) of \\(P(Z\\lt z)\\), where \\(Z\\) has a standard normal distribution, to estimate the probability that a sample of 100 students will contain at least 58 and at most 64 students who travel to and from school by bus.\n\n| z | 0.00 | 0.01 | 0.02 | 0.03 | 0.04 | 0.05 | 0.06 | 0.07 | 0.08 | 0.09 |\n|---|---|---|---|---|---|---|---|---|---|---|\n| 1.1 | 0.8643 | 0.8665 | 0.8686 | 0.8708 | 0.8729 | 0.8749 | 0.8770 | 0.8790 | 0.8810 | 0.8830 |\n| 1.2 | 0.8849 | 0.8869 | 0.8888 | 0.8907 | 0.8925 | 0.8944 | 0.8962 | 0.8980 | 0.8997 | 0.9015 |\n| 1.3 | 0.9032 | 0.9049 | 0.9066 | 0.9082 | 0.9099 | 0.9115 | 0.9131 | 0.9147 | 0.9162 | 0.9177 |",
-              "hint": "Convert 0.58 and 0.64 to z-scores, then use symmetry and the table.",
-              "steps": [
-                {
-                  "explain": "58 to 64 students means a sample proportion from 0.58 to 0.64.",
-                  "work": "\\(P(0.58\\le\\hat p\\le0.64)\\)"
-                },
-                {
-                  "explain": "Convert to \\(z\\)-scores with mean 0.64 and SD 0.048.",
-                  "work": "\\(z=\\frac{0.58-0.64}{0.048}=-1.25,\\qquad z=\\frac{0.64-0.64}{0.048}=0\\)"
-                },
-                {
-                  "explain": "By symmetry of the normal curve, \\(P(-1.25\\le Z\\le0)=P(0\\le Z\\le1.25)\\).",
-                  "work": "\\(P(0\\le Z\\le1.25)=P(Z\\lt1.25)-0.5\\)"
-                },
-                {
-                  "explain": "Read \\(P(Z\\lt1.25)\\) from row 1.2, column 0.05.",
-                  "work": "\\(P(Z\\lt1.25)=0.8944\\ \\Rightarrow\\ 0.8944-0.5=0.3944\\)"
-                }
-              ],
-              "xp": 1,
-              "meta": {
-                "source": "Caringbah 2020 3U Trials & Solutions",
-                "school": "Caringbah High School",
-                "year": 2020,
-                "number": "12(b)(ii)"
-              },
-              "options": [
-                "\\(0.8944\\)",
-                "\\(0.1056\\)",
-                "\\(0.4\\)",
-                "\\(0.3944\\)"
-              ],
-              "answer": 3,
-              "keyPoints": [
-                {
-                  "text": "at least 58 and at most 64",
-                  "note": "Work with proportions 0.58 and 0.64; z = (p̂ − 0.64)/0.048."
-                }
-              ]
+              "text": "probability density function",
+              "note": "The integral over −1 ≤ x ≤ 1 must equal 1."
             }
           ]
         }

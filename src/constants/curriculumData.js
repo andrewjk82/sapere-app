@@ -2865,6 +2865,7 @@ export const CURRICULUM_DATA = {
         ]
       }
     ],
+    // CambridgeMATHS NSW Stage 6 Mathematics Extension 1 Year 12, 2nd edition (2026) — see utils/ext1Y12Renumber.
     'Extension 1': [
       {
         id: 'y12e1-1',
@@ -2880,7 +2881,7 @@ export const CURRICULUM_DATA = {
           { id: 'y12e1-1G', code: '1G', title: 'Summing a geometric series' },
           { id: 'y12e1-1H', code: '1H', title: 'The limiting sum of a geometric series' },
           { id: 'y12e1-1I', code: '1I', title: 'Recurring decimals and geometric series' },
-          { id: 'y12e1-1-1j', code: '1J', title: 'Review' }
+          { id: 'y12e1-1R', code: '1R', title: 'Chapter Review Exercise' }
         ]
       },
       {
@@ -2890,222 +2891,227 @@ export const CURRICULUM_DATA = {
         topics: [
           { id: 'y12e1-2A', code: '2A', title: 'Using mathematical induction for series' },
           { id: 'y12e1-2B', code: '2B', title: 'Proving divisibility by mathematical induction' },
-          { id: 'y12e1-2-2c', code: '2C', title: 'Review' }
+          { id: 'y12e1-2R', code: '2R', title: 'Chapter Review Exercise' }
         ]
       },
       {
         id: 'y12e1-3',
-        title: 'Chapter 3: Graphs and equations',
-        modules: 10,
+        title: 'Chapter 3: Curve-sketching using the derivative',
+        modules: 11,
         topics: [
-          { id: 'y12e1-3A', code: '3A', title: 'The sign of a function' },
-          { id: 'y12e1-3B', code: '3B', title: 'Vertical and horizontal asymptotes' },
-          { id: 'y12e1-3C', code: '3C', title: 'A curve-sketching menu' },
-          { id: 'y12e1-3D', code: '3D', title: 'Solving inequations' },
-          { id: 'y12e1-3E', code: '3E', title: 'Using graphs to solve equations and inequations' },
-          { id: 'y12e1-3F', code: '3F', title: 'Regions in the coordinate plane' },
-          { id: 'y12e1-3G', code: '3G', title: 'Review of translations and reflections' },
-          { id: 'y12e1-3H', code: '3H', title: 'Dilations' },
-          { id: 'y12e1-3I', code: '3I', title: 'Combinations of transformations' },
-          { id: 'y12e1-3J', code: '3J', title: 'Trigonometric graphs' },
-          { id: 'y12e1-3-3k', code: '3K', title: 'Review' }
+          { id: 'y12e1-3A', code: '3A', title: 'Increasing, decreasing, and stationary at a point' },
+          { id: 'y12e1-3B', code: '3B', title: 'Stationary points and turning points' },
+          { id: 'y12e1-3C', code: '3C', title: 'Some less familiar curves' },
+          { id: 'y12e1-3D', code: '3D', title: 'Second and higher derivatives' },
+          { id: 'y12e1-3E', code: '3E', title: 'Concavity and points of inflection' },
+          { id: 'y12e1-3F', code: '3F', title: 'Systematic curve sketching with the derivative' },
+          { id: 'y12e1-3G', code: '3G', title: 'Global maximum and minimum' },
+          { id: 'y12e1-3H', code: '3H', title: 'Review of continuity and differentiability' },
+          { id: 'y12e1-3I', code: '3I', title: 'Applications of maximisation and minimisation' },
+          { id: 'y12e1-3J', code: '3J', title: 'Maximisation and minimisation in geometry' },
+          { id: 'y12e1-3K', code: '3K', title: 'Primitive functions' },
+          { id: 'y12e1-3R', code: '3R', title: 'Chapter Review Exercise' }
         ]
       },
       {
         id: 'y12e1-4',
-        title: 'Chapter 4: Curve-sketching using the derivative',
-        modules: 10,
+        title: 'Chapter 4: Integration',
+        modules: 9,
         topics: [
-          { id: 'y12e1-4A', code: '4A', title: 'Increasing, decreasing and stationary at a point' },
-          { id: 'y12e1-4B', code: '4B', title: 'Stationary points and turning points' },
-          { id: 'y12e1-4C', code: '4C', title: 'Some less familiar curves' },
-          { id: 'y12e1-4D', code: '4D', title: 'Second and higher derivatives' },
-          { id: 'y12e1-4E', code: '4E', title: 'Concavity and points of inflection' },
-          { id: 'y12e1-4F', code: '4F', title: 'Systematic curve sketching with the derivative' },
-          { id: 'y12e1-4G', code: '4G', title: 'Global maximum and minimum' },
-          { id: 'y12e1-4H', code: '4H', title: 'Applications of maximisation and minimisation' },
-          { id: 'y12e1-4I', code: '4I', title: 'Maximisation and minimisation in geometry' },
-          { id: 'y12e1-4J', code: '4J', title: 'Primitive functions' },
-          { id: 'y12e1-4-4k', code: '4K', title: 'Review' }
+          { id: 'y12e1-4A', code: '4A', title: 'Areas and the definite integral' },
+          { id: 'y12e1-4B', code: '4B', title: 'The fundamental theorem of calculus' },
+          { id: 'y12e1-4C', code: '4C', title: 'The definite integral and its properties' },
+          { id: 'y12e1-4D', code: '4D', title: 'Proving the fundamental theorem' },
+          { id: 'y12e1-4E', code: '4E', title: 'The indefinite integral' },
+          { id: 'y12e1-4F', code: '4F', title: 'Finding areas by integration' },
+          { id: 'y12e1-4G', code: '4G', title: 'Areas of compound regions' },
+          { id: 'y12e1-4H', code: '4H', title: 'The trapezoidal rule' },
+          { id: 'y12e1-4I', code: '4I', title: 'The reverse chain rule' },
+          { id: 'y12e1-4R', code: '4R', title: 'Chapter Review Exercise' }
         ]
       },
       {
         id: 'y12e1-5',
-        title: 'Chapter 5: Integration',
-        modules: 9,
+        title: 'Chapter 5: Exponential functions',
+        modules: 6,
         topics: [
-          { id: 'y12e1-5A', code: '5A', title: 'Areas and the definite integral' },
-          { id: 'y12e1-5B', code: '5B', title: 'The fundamental theorem of calculus' },
-          { id: 'y12e1-5C', code: '5C', title: 'The definite integral and its properties' },
-          { id: 'y12e1-5D', code: '5D', title: 'Proving the fundamental theorem' },
-          { id: 'y12e1-5E', code: '5E', title: 'The indefinite integral' },
-          { id: 'y12e1-5F', code: '5F', title: 'Finding areas by integration' },
-          { id: 'y12e1-5G', code: '5G', title: 'Areas of compound regions' },
-          { id: 'y12e1-5H', code: '5H', title: 'The trapezoidal rule' },
-          { id: 'y12e1-5I', code: '5I', title: 'The reverse chain rule' },
-          { id: 'y12e1-5-5j', code: '5J', title: 'Review' }
+          { id: 'y12e1-5A', code: '5A', title: 'Review of the exponential function base e' },
+          { id: 'y12e1-5B', code: '5B', title: 'Differentiation involving exponential functions' },
+          { id: 'y12e1-5C', code: '5C', title: 'Applications of differentiation' },
+          { id: 'y12e1-5D', code: '5D', title: 'Integration involving exponential functions' },
+          { id: 'y12e1-5E', code: '5E', title: 'Applications of integration' },
+          { id: 'y12e1-5F', code: '5F', title: 'Exponential functions with other bases' },
+          { id: 'y12e1-5R', code: '5R', title: 'Chapter Review Exercise' }
         ]
       },
       {
         id: 'y12e1-6',
-        title: 'Chapter 6: The exponential and logarithmic functions',
-        modules: 11,
+        title: 'Chapter 6: Logarithmic functions',
+        modules: 6,
         topics: [
-          { id: 'y12e1-6A', code: '6A', title: 'Review of exponential functions base e' },
-          { id: 'y12e1-6B', code: '6B', title: 'Differentiation of exponential functions' },
+          { id: 'y12e1-6A', code: '6A', title: 'Review of the logarithmic function base e' },
+          { id: 'y12e1-6B', code: '6B', title: 'Differentiation involving logarithmic functions' },
           { id: 'y12e1-6C', code: '6C', title: 'Applications of differentiation' },
-          { id: 'y12e1-6D', code: '6D', title: 'Integration of exponential functions' },
+          { id: 'y12e1-6D', code: '6D', title: 'Integration involving reciprocal functions' },
           { id: 'y12e1-6E', code: '6E', title: 'Applications of integration' },
-          { id: 'y12e1-6F', code: '6F', title: 'Review of logarithmic functions' },
-          { id: 'y12e1-6G', code: '6G', title: 'Differentiation of logarithmic functions' },
-          { id: 'y12e1-6H', code: '6H', title: 'Applications of differentiation of log_e x' },
-          { id: 'y12e1-6I', code: '6I', title: 'Integration of the reciprocal function' },
-          { id: 'y12e1-6J', code: '6J', title: 'Applications of integration of 1/x' },
-          { id: 'y12e1-6K', code: '6K', title: 'Calculus with other bases' },
-          { id: 'y12e1-6-6l', code: '6L', title: 'Review' }
+          { id: 'y12e1-6F', code: '6F', title: 'Calculus with logarithms to other bases' },
+          { id: 'y12e1-6R', code: '6R', title: 'Chapter Review Exercise' }
         ]
       },
       {
         id: 'y12e1-7',
         title: 'Chapter 7: The trigonometric functions',
-        modules: 5,
+        modules: 6,
         topics: [
-          { id: 'y12e1-7A', code: '7A', title: 'The behaviour of sin x near the origin' },
-          { id: 'y12e1-7B', code: '7B', title: 'Differentiating the trigonometric functions' },
+          { id: 'y12e1-7A', code: '7A', title: 'Trigonometric graphs and modelling' },
+          { id: 'y12e1-7B', code: '7B', title: 'Differentiation with trigonometric functions' },
           { id: 'y12e1-7C', code: '7C', title: 'Applications of differentiation' },
-          { id: 'y12e1-7D', code: '7D', title: 'Integrating the trigonometric functions' },
+          { id: 'y12e1-7D', code: '7D', title: 'Integration with trigonometric functions' },
           { id: 'y12e1-7E', code: '7E', title: 'Applications of integration' },
-          { id: 'y12e1-7-7f', code: '7F', title: 'Review' }
+          { id: 'y12e1-7F', code: '7F', title: 'Proving that the derivative of sin x is cos x' },
+          { id: 'y12e1-7R', code: '7R', title: 'Chapter Review Exercise' }
         ]
       },
       {
         id: 'y12e1-8',
-        title: 'Chapter 8: Vectors',
-        modules: 6,
+        title: 'Chapter 8: Motion and rates',
+        modules: 5,
         topics: [
-          { id: 'y12e1-8A', code: '8A', title: 'Directed intervals and vectors' },
-          { id: 'y12e1-8B', code: '8B', title: 'Components and column vectors' },
-          { id: 'y12e1-8C', code: '8C', title: 'The dot product (or scalar product)' },
-          { id: 'y12e1-8D', code: '8D', title: 'Geometric problems' },
-          { id: 'y12e1-8E', code: '8E', title: 'Projections' },
-          { id: 'y12e1-8F', code: '8F', title: 'Applications to physical situations' },
-          { id: 'y12e1-8-8g', code: '8G', title: 'Review' }
+          { id: 'y12e1-8A', code: '8A', title: 'Motion review plus acceleration' },
+          { id: 'y12e1-8B', code: '8B', title: 'Motion and integration' },
+          { id: 'y12e1-8C', code: '8C', title: 'Rates and differentiation' },
+          { id: 'y12e1-8D', code: '8D', title: 'Rates and integration' },
+          { id: 'y12e1-8E', code: '8E', title: 'Exponential growth and decay' },
+          { id: 'y12e1-8R', code: '8R', title: 'Chapter Review Exercise' }
         ]
       },
       {
         id: 'y12e1-9',
-        title: 'Chapter 9: Motion and rates',
-        modules: 6,
+        title: 'Chapter 9: Vectors',
+        modules: 7,
         topics: [
-          { id: 'y12e1-9A', code: '9A', title: 'Average velocity and speed' },
-          { id: 'y12e1-9B', code: '9B', title: 'Velocity and acceleration as derivatives' },
-          { id: 'y12e1-9C', code: '9C', title: 'Integrating with respect to time' },
-          { id: 'y12e1-9D', code: '9D', title: 'Rates and differentiation' },
-          { id: 'y12e1-9E', code: '9E', title: 'Review of related rates' },
-          { id: 'y12e1-9F', code: '9F', title: 'Rates and integration' },
-          { id: 'y12e1-9-9g', code: '9G', title: 'Review' }
+          { id: 'y12e1-9A', code: '9A', title: 'Directed line segments and vectors' },
+          { id: 'y12e1-9B', code: '9B', title: 'Components and column vectors' },
+          { id: 'y12e1-9C', code: '9C', title: 'The dot product (or scalar product)' },
+          { id: 'y12e1-9D', code: '9D', title: 'Coordinates in 3-dimensional space' },
+          { id: 'y12e1-9E', code: '9E', title: 'Vectors in three dimensions' },
+          { id: 'y12e1-9F', code: '9F', title: 'The dot product in 3-dimensional space' },
+          { id: 'y12e1-9G', code: '9G', title: 'Projections' },
+          { id: 'y12e1-9R', code: '9R', title: 'Chapter Review Exercise' }
         ]
       },
       {
         id: 'y12e1-10',
-        title: 'Chapter 10: Projectile motion',
-        modules: 2,
+        title: 'Chapter 10: Vectors and motion',
+        modules: 5,
         topics: [
-          { id: 'y12e1-10A', code: '10A', title: 'Projectile motion — the time equations' },
-          { id: 'y12e1-10B', code: '10B', title: 'Projectile motion — the equation of path' },
-          { id: 'y12e1-10-10c', code: '10C', title: 'Review' }
+          { id: 'y12e1-10A', code: '10A', title: 'Displacement and velocity with vectors' },
+          { id: 'y12e1-10B', code: '10B', title: 'Calculus and acceleration with vectors' },
+          { id: 'y12e1-10C', code: '10C', title: 'Resultants and relative velocity' },
+          { id: 'y12e1-10D', code: '10D', title: 'Projectile motion — the time equations' },
+          { id: 'y12e1-10E', code: '10E', title: 'Projectile motion — the equation of path' },
+          { id: 'y12e1-10R', code: '10R', title: 'Chapter Review Exercise' }
         ]
       },
       {
         id: 'y12e1-11',
-        title: 'Chapter 11: Trigonometric equations',
-        modules: 3,
+        title: 'Chapter 11: Inverse trigonometric functions',
+        modules: 2,
         topics: [
-          { id: 'y12e1-11A', code: '11A', title: 'Equations involving compound angles' },
-          { id: 'y12e1-11B', code: '11B', title: 'The sum of sine and cosine functions' },
-          { id: 'y12e1-11C', code: '11C', title: 'Using the t-formula to solve equations' },
-          { id: 'y12e1-11-11d', code: '11D', title: 'Review' }
+          { id: 'y12e1-11A', code: '11A', title: 'Defining the inverse trigonometric functions' },
+          { id: 'y12e1-11B', code: '11B', title: 'Graphs involving inverse trigonometric functions' },
+          { id: 'y12e1-11R', code: '11R', title: 'Chapter Review Exercise' }
         ]
       },
       {
         id: 'y12e1-12',
-        title: 'Chapter 12: Further calculus',
-        modules: 6,
+        title: 'Chapter 12: Further calculus skills',
+        modules: 7,
         topics: [
-          { id: 'y12e1-12A', code: '12A', title: 'Inverse trigonometric functions — differentiating' },
-          { id: 'y12e1-12B', code: '12B', title: 'Inverse trigonometric functions — integrating' },
-          { id: 'y12e1-12C', code: '12C', title: 'Further trigonometric integrals' },
-          { id: 'y12e1-12D', code: '12D', title: 'Integration by substitution' },
-          { id: 'y12e1-12E', code: '12E', title: 'Further integration by substitution' },
-          { id: 'y12e1-12F', code: '12F', title: 'Volumes of rotation' },
-          { id: 'y12e1-12-12g', code: '12G', title: 'Review' }
+          { id: 'y12e1-12A', code: '12A', title: 'Parametric differentiation' },
+          { id: 'y12e1-12B', code: '12B', title: 'Differentiating inverse functions' },
+          { id: 'y12e1-12C', code: '12C', title: 'Differentiating inverse trigonometric functions' },
+          { id: 'y12e1-12D', code: '12D', title: 'Integration using inverse trigonometric functions' },
+          { id: 'y12e1-12E', code: '12E', title: 'Integration by substitution' },
+          { id: 'y12e1-12F', code: '12F', title: 'Further integration by substitution' },
+          { id: 'y12e1-12G', code: '12G', title: 'Further trigonometric integrals' },
+          { id: 'y12e1-12R', code: '12R', title: 'Chapter Review Exercise' }
         ]
       },
       {
         id: 'y12e1-13',
-        title: 'Chapter 13: Differential equations',
+        title: 'Chapter 13: Further applications of calculus',
         modules: 5,
         topics: [
-          { id: 'y12e1-13A', code: '13A', title: 'Differential equations' },
-          { id: 'y12e1-13B', code: '13B', title: 'Slope fields' },
-          { id: 'y12e1-13C', code: '13C', title: 'Separable differentiable equations' },
-          { id: 'y12e1-13D', code: '13D', title: 'y\' = g(y) and the logistic equation' },
-          { id: 'y12e1-13E', code: '13E', title: 'Applications of differential equations' },
-          { id: 'y12e1-13-13f', code: '13F', title: 'Review' }
+          { id: 'y12e1-13A', code: '13A', title: 'Review of sketching polynomials' },
+          { id: 'y12e1-13B', code: '13B', title: 'Testing polynomial zeroes for multiplicity' },
+          { id: 'y12e1-13C', code: '13C', title: 'Related rates' },
+          { id: 'y12e1-13D', code: '13D', title: 'Modified exponential growth and decay' },
+          { id: 'y12e1-13E', code: '13E', title: 'Volumes of rotation' },
+          { id: 'y12e1-13R', code: '13R', title: 'Chapter Review Exercise' }
         ]
       },
       {
         id: 'y12e1-14',
-        title: 'Chapter 14: Series and finance',
+        title: 'Chapter 14: Differential equations',
         modules: 5,
         topics: [
-          { id: 'y12e1-14A', code: '14A', title: 'Applications of APs and GPs' },
-          { id: 'y12e1-14B', code: '14B', title: 'The use of logarithms with GPs' },
-          { id: 'y12e1-14C', code: '14C', title: 'Simple and compound interest' },
-          { id: 'y12e1-14D', code: '14D', title: 'Investing money by regular instalments' },
-          { id: 'y12e1-14E', code: '14E', title: 'Paying off a loan' },
-          { id: 'y12e1-14-14f', code: '14F', title: 'Review' }
+          { id: 'y12e1-14A', code: '14A', title: 'Differential equations' },
+          { id: 'y12e1-14B', code: '14B', title: 'Slope fields' },
+          { id: 'y12e1-14C', code: '14C', title: 'Separable differential equations' },
+          { id: 'y12e1-14D', code: '14D', title: 'y\' = g(y) and logistic DEs' },
+          { id: 'y12e1-14E', code: '14E', title: 'Applications of differential equations' },
+          { id: 'y12e1-14R', code: '14R', title: 'Chapter Review Exercise' }
         ]
       },
       {
         id: 'y12e1-15',
-        title: 'Chapter 15: Displaying and interpreting data',
+        title: 'Chapter 15: Series and finance',
         modules: 6,
         topics: [
-          { id: 'y12e1-15A', code: '15A', title: 'Displaying data' },
-          { id: 'y12e1-15B', code: '15B', title: 'Grouped data and histograms' },
-          { id: 'y12e1-15C', code: '15C', title: 'Quartiles and interquartile range' },
-          { id: 'y12e1-15D', code: '15D', title: 'Bivariate data' },
-          { id: 'y12e1-15E', code: '15E', title: 'Formulae for correlation and regression' },
-          { id: 'y12e1-15F', code: '15F', title: 'Using technology with bivariate data' },
-          { id: 'y12e1-15-15g', code: '15G', title: 'Review' }
+          { id: 'y12e1-15A', code: '15A', title: 'Applications of APs and GPs' },
+          { id: 'y12e1-15B', code: '15B', title: 'The use of logarithms with GPs' },
+          { id: 'y12e1-15C', code: '15C', title: 'Simple and compound interest' },
+          { id: 'y12e1-15D', code: '15D', title: 'Investing money by regular instalments' },
+          { id: 'y12e1-15E', code: '15E', title: 'Paying off a loan' },
+          { id: 'y12e1-15F', code: '15F', title: 'The pension from a super fund or annuity' },
+          { id: 'y12e1-15R', code: '15R', title: 'Chapter Review Exercise' }
         ]
       },
       {
         id: 'y12e1-16',
-        title: 'Chapter 16: Continuous probability distributions',
-        modules: 7,
+        title: 'Chapter 16: Discrete probability distributions',
+        modules: 3,
         topics: [
-          { id: 'y12e1-16A', code: '16A', title: 'Relative frequency' },
-          { id: 'y12e1-16B', code: '16B', title: 'Continuous distributions' },
-          { id: 'y12e1-16C', code: '16C', title: 'Mean and variance of a distribution' },
-          { id: 'y12e1-16D', code: '16D', title: 'The standard normal distribution' },
-          { id: 'y12e1-16E', code: '16E', title: 'General normal distributions' },
-          { id: 'y12e1-16F', code: '16F', title: 'Applications of the normal distribution' },
-          { id: 'y12e1-16G', code: '16G', title: 'Investigations using the normal distribution' },
-          { id: 'y12e1-16-16h', code: '16H', title: 'Review' }
+          { id: 'y12e1-16A', code: '16A', title: 'The language of probability distributions' },
+          { id: 'y12e1-16B', code: '16B', title: 'Mean or expected value' },
+          { id: 'y12e1-16C', code: '16C', title: 'Variance and standard deviation' },
+          { id: 'y12e1-16R', code: '16R', title: 'Chapter Review Exercise' }
         ]
       },
       {
         id: 'y12e1-17',
-        title: 'Chapter 17: Binomial distributions',
-        modules: 4,
+        title: 'Chapter 17: Continuous probability distributions',
+        modules: 6,
         topics: [
-          { id: 'y12e1-17A', code: '17A', title: 'Binomial probability' },
-          { id: 'y12e1-17B', code: '17B', title: 'Binomial distributions' },
-          { id: 'y12e1-17C', code: '17C', title: 'Normal approximations to a binomial' },
-          { id: 'y12e1-17D', code: '17D', title: 'Sample proportions' },
-          { id: 'y12e1-17-17e', code: '17E', title: 'Review' }
+          { id: 'y12e1-17A', code: '17A', title: 'Cumulative frequency and grouping' },
+          { id: 'y12e1-17B', code: '17B', title: 'Continuous distributions' },
+          { id: 'y12e1-17C', code: '17C', title: 'Mean and variance of a distribution' },
+          { id: 'y12e1-17D', code: '17D', title: 'The standard normal distribution' },
+          { id: 'y12e1-17E', code: '17E', title: 'General normal distributions' },
+          { id: 'y12e1-17F', code: '17F', title: 'Applications of the normal distribution' },
+          { id: 'y12e1-17R', code: '17R', title: 'Chapter Review Exercise' }
+        ]
+      },
+      {
+        id: 'y12e1-18',
+        title: 'Chapter 18: Binomial distributions and the central limit theorem',
+        modules: 3,
+        topics: [
+          { id: 'y12e1-18A', code: '18A', title: 'Binomial probability' },
+          { id: 'y12e1-18B', code: '18B', title: 'Binomial distributions' },
+          { id: 'y12e1-18C', code: '18C', title: 'The central limit theorem' },
+          { id: 'y12e1-18R', code: '18R', title: 'Chapter Review Exercise' }
         ]
       }
     ],

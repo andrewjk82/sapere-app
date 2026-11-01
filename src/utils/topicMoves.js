@@ -1,4 +1,5 @@
-import { planProgressMoves } from './ext2Renumber.js';
+import { EXT2_RENUMBER } from './ext2Renumber.js';
+import { EXT1_Y12_RENUMBER } from './ext1Y12Renumber.js';
 
 // Topics moved to another chapter id keep their own ids, but practice progress
 // on each device is stored under `sapere:tp:{uid}:{chapterId}:{topicId}…`.
@@ -10,26 +11,33 @@ export const MOVED_TOPICS = [
 
 
 const FLAG = 'sapere:topic-moves:v1';
-const EXT2_FLAG = 'sapere:ext2-renumber:v1';
+// Courses re-laid out to a new textbook (Extension 2 in 2026-10, Extension 1 Year 12 in 2026-11): each student's
+// progress on a device follows its topic to the new id (see topicRenumber). Once per student per device, per course.
+const RENUMBERS = [
+  ['sapere:ext2-renumber:v1', EXT2_RENUMBER],
+  ['sapere:ext1y12-renumber:v1', EXT1_Y12_RENUMBER],
+];
 
-// Extension 2 was re-laid out to match the 2026 textbook: each student's progress on a device follows its topic to the
-// new id (see ext2Renumber). Once per student per device.
-function migrateExt2Progress(uid, storage) {
-  const flagKey = `${EXT2_FLAG}:${uid}`;
-  if (storage.getItem(flagKey)) return 0;
-  const keys = [];
-  for (let i = 0; i < storage.length; i += 1) keys.push(storage.key(i));
-  const { remove, set } = planProgressMoves(uid, keys, (k) => storage.getItem(k));
-  remove.forEach((k) => storage.removeItem(k));
-  set.forEach(([k, v]) => storage.setItem(k, v));
-  storage.setItem(flagKey, '1');
-  return set.length;
+function migrateRenumberedProgress(uid, storage) {
+  let moved = 0;
+  for (const [flag, renumber] of RENUMBERS) {
+    const flagKey = `${flag}:${uid}`;
+    if (storage.getItem(flagKey)) continue;
+    const keys = [];
+    for (let i = 0; i < storage.length; i += 1) keys.push(storage.key(i));
+    const { remove, set } = renumber.planProgressMoves(uid, keys, (k) => storage.getItem(k));
+    remove.forEach((k) => storage.removeItem(k));
+    set.forEach(([k, v]) => storage.setItem(k, v));
+    storage.setItem(flagKey, '1');
+    moved += set.length;
+  }
+  return moved;
 }
 
 export function migrateMovedTopicProgress(uid, storage = globalThis.localStorage) {
   if (!uid || !storage) return 0;
   try {
-    let copied = migrateExt2Progress(uid, storage);
+    let copied = migrateRenumberedProgress(uid, storage);
     const flagKey = `${FLAG}:${uid}`;
     if (storage.getItem(flagKey)) return copied;
     const keys = [];
