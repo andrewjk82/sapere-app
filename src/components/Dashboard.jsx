@@ -30,7 +30,7 @@ import { findTopicAfter } from '../utils/lessonTopics';
 import { loadTopicWriting, mergeNoteDates, pickLastLessonTopics } from '../utils/lessonWriting';
 import { listTopicNoteDates } from '../utils/curriculumLocalNotes';
 import { loadLastStudy, continueCaption, requestContinueStudy, requestOpenTopic } from '../utils/lastStudy';
-import { DAILY_SETS, OPEN_DAILY_SET_KEY, dailySetDoneToday, hubExamsFor } from '../utils/examHub';
+import { OPEN_DAILY_SET_KEY, dailySetDoneToday, dailySetFor, dailySetExamsFor } from '../utils/examHub';
 import { requestPlanStart } from '../utils/planStart';
 
 // 카드에 마우스를 올리면 살짝 떠오르는 hover 효과 (Journey Map 카드와 동일한 느낌).
@@ -483,12 +483,12 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
         onClick: () => { if (!calcDone) requestPlanStart('calc'); setActiveTab?.('Challenge'); },
       });
     }
-    hubExamsFor(profile).forEach((examId) => {
+    dailySetExamsFor(profile).forEach((examId) => {
       const setDone = user?.uid ? dailySetDoneToday(user.uid, examId) : false;
       rows.push({
         key: `special-${examId}`,
         icon: examId === 'sch-acer' ? Award : Target,
-        title: `${DAILY_SETS[examId].label} daily`,
+        title: `${dailySetFor(examId, profile).label} daily`,
         sub: setDone ? 'Completed today' : "Today's set is ready",
         cta: setDone ? 'Done' : 'Start',
         done: setDone,

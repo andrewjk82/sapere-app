@@ -2,11 +2,12 @@
 import assert from 'node:assert';
 import { readFileSync } from 'node:fs';
 import { toLegacy } from '../content/legacy.js';
+import { CURRICULUM_DATA } from '../src/constants/curriculumData.js';
 import { toReviewItems, questionOutcomes, isPickCorrect, correctIndexOf, subKey } from '../src/utils/scholarshipTest.js';
 import { resolveCorrectOptionText } from '../src/utils/mcOptionShuffle.js';
 import {
   hubExamsFor, examIdForTab, HUB_PAGES, mockSizeFor, summariseAttempts, rankGroups,
-  MIN_MARKS_TO_JUDGE, RECENT_ATTEMPTS, MOCK_FORMATS, MOCK_BLUEPRINT, pickNextStep, pickMockPaper, DAILY_SETS, dailySetShares, pickDailySet, DAILY_SET_QUESTIONS, dailySetToday, dailySetDoneToday, dailySetStorageId, DAILY_SET_TOPIC,
+  MIN_MARKS_TO_JUDGE, RECENT_ATTEMPTS, MOCK_FORMATS, MOCK_BLUEPRINT, pickNextStep, pickMockPaper, DAILY_SETS, dailySetShares, pickDailySet, DAILY_SET_QUESTIONS, dailySetToday, dailySetDoneToday, dailySetStorageId, DAILY_SET_TOPIC, dailySetFor, dailySetExamsFor, hubSectionsFor,
 } from '../src/utils/examHub.js';
 
 let passed = 0;
@@ -341,6 +342,22 @@ test('one daily set a day: today\'s submitted set is found, yesterday\'s and uns
   assert.equal(dailySetDoneToday('u1', 'sch-acer'), false);            // nothing yet
   assert.equal(dailySetDoneToday('u2', 'sch-oc'), false);              // another student on the same device
   delete globalThis.localStorage;
+});
+
+test('subjects picked by the teacher: page sections and the daily set follow them; no pick keeps the usual set', () => {
+  const on = { scholarshipEnabled: true, scholarshipExams: ['sch-oc', 'sch-acer'] };
+  const oc = CURRICULUM_DATA.Scholarship.find((e) => e.id === 'sch-oc');
+  assert.equal(dailySetFor('sch-oc', on), DAILY_SETS['sch-oc']);
+  assert.equal(hubSectionsFor(oc, on).length, oc.topics.length);
+  const maths = { ...on, scholarshipSubjects: { 'sch-oc': ['sch-oc-maths'] } };
+  assert.deepEqual(hubSectionsFor(oc, maths).map((t) => t.id), ['sch-oc-maths']);
+  assert.deepEqual(dailySetFor('sch-oc', maths).sections.map((s) => [s.topicId, s.want]), [['sch-oc-maths', 10]]);
+  const engMaths = { ...on, scholarshipSubjects: { 'sch-oc': ['sch-oc-english', 'sch-oc-maths'] } };
+  assert.deepEqual(dailySetFor('sch-oc', engMaths).sections.map((s) => [s.topicId, s.want]), [['sch-oc-english', 3], ['sch-oc-maths', 5]]);
+  // Only Writing: the page shows it, but there is no daily set for that exam.
+  const writing = { ...on, scholarshipSubjects: { 'sch-acer': ['sch-acer-writing'] } };
+  assert.equal(dailySetFor('sch-acer', writing), null);
+  assert.deepEqual(dailySetExamsFor(writing), ['sch-oc']);
 });
 
 console.log(`\nexam hub: ${passed} passed`);

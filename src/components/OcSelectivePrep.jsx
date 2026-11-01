@@ -6,7 +6,7 @@ import { getTopicQuestions } from '../services/contentLoader';
 import { useAuth } from '../context/AuthContext';
 import { loadTestState } from '../utils/scholarshipTest';
 import {
-  MOCK_FORMATS, MOCK_BLUEPRINT, hubExamsFor, pickMockPaper, mockStorageId, mockSummary, summariseAttempts, rankGroups, pickNextStep,
+  MOCK_FORMATS, MOCK_BLUEPRINT, hubExamsFor, hubSectionsFor, pickMockPaper, mockStorageId, mockSummary, summariseAttempts, rankGroups, pickNextStep,
 } from '../utils/examHub';
 import { nextSitting, scholarshipSitting, formatDay, ddayLabel, PLACEMENT_SOURCE_URL, PLACEMENT_DATES_CHECKED } from '../utils/examDates';
 import ScholarshipTest from './ScholarshipTest';
@@ -143,6 +143,10 @@ const OcSelectivePrep = ({ examId, profile }) => {
   const uid = user?.uid || 'anon';
   const allowed = useMemo(() => hubExamsFor(profile).includes(examId), [profile, examId]);
   const active = useMemo(() => (allowed ? (CURRICULUM_DATA.Scholarship || []).find((e) => e.id === examId) : null), [allowed, examId]);
+  // The subjects the teacher picked for this student (all of them when none were picked).
+  // Keyed on the subject ids so a re-fetched profile object does not reload the question bank.
+  const topicKey = hubSectionsFor(active, profile).map((t) => t.id).join(',');
+  const topics = useMemo(() => (active?.topics || []).filter((t) => topicKey.split(',').includes(t.id)), [active, topicKey]);
   // { examId, bank: { [topicId]: question[] } | null, failed } — trusted only while examId is the active exam.
   const [loaded, setLoaded] = useState({ examId: null, bank: null, failed: false });
   const bank = loaded.examId === active?.id ? loaded.bank : null;
@@ -159,11 +163,11 @@ const OcSelectivePrep = ({ examId, profile }) => {
   useEffect(() => {
     if (!active) return undefined;
     let cancelled = false;
-    Promise.all((active.topics || []).map((t) => getTopicQuestions(t.id, { chapterId: active.id }).then((qs) => [t.id, qs || []])))
+    Promise.all(topics.map((t) => getTopicQuestions(t.id, { chapterId: active.id }).then((qs) => [t.id, qs || []])))
       .then((pairs) => { if (!cancelled) setLoaded({ examId: active.id, bank: Object.fromEntries(pairs), failed: false }); })
       .catch(() => { if (!cancelled) setLoaded({ examId: active.id, bank: null, failed: true }); });
     return () => { cancelled = true; };
-  }, [active]);
+  }, [active, topics]);
 
   if (running) {
     return (
@@ -211,7 +215,7 @@ const OcSelectivePrep = ({ examId, profile }) => {
   };
 
   // Everything below is read from this device's test history (see utils/scholarshipTest).
-  const sections = (active.topics || []).map((topic) => {
+  const sections = topics.map((topic) => {
     const qs = bank?.[topic.id];
     const fmt = MOCK_FORMATS[topic.id];
     const ids = new Set((qs || []).map((q) => String(q.id)));

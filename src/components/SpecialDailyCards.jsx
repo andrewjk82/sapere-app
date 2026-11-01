@@ -4,25 +4,25 @@ import { Award, Target } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { takePlanStart } from '../utils/planStart';
 import { getTopicQuestions } from '../services/contentLoader';
-import { DAILY_SETS, DAILY_SET_QUESTIONS, DAILY_SET_TOPIC, HUB_PAGES, OPEN_DAILY_SET_KEY, dailySetToday, dailySetStorageId, hubExamsFor, pickDailySet } from '../utils/examHub';
+import { DAILY_SET_QUESTIONS, DAILY_SET_TOPIC, HUB_PAGES, OPEN_DAILY_SET_KEY, dailySetToday, dailySetStorageId, dailySetFor, dailySetExamsFor, pickDailySet } from '../utils/examHub';
 import ScholarshipTest from './ScholarshipTest';
 
 /**
- * Extra Daily Study cards for students with OC / Selective / Scholarship switched on: one 10-mark set per exam,
- * 5 marks from each of two sections (utils/examHub.DAILY_SETS). It runs on the same test screens as the exam pages —
+ * Extra Daily Study cards for students with OC / Selective / Scholarship switched on: one set per exam, from the
+ * subjects the teacher picked (utils/examHub.dailySetFor; by default 5 + 5 from two sections, DAILY_SETS). It runs on the same test screens as the exam pages —
  * score, trend chart and the step-by-step review — and keeps its history on the device (no Firestore).
  * Rendered inside the Daily Study card grid, so it uses that page's `cs__` card styles.
  */
 const SpecialDailyCards = ({ profile }) => {
   const { user } = useAuth();
   const uid = user?.uid || 'anon';
-  const exams = useMemo(() => hubExamsFor(profile), [profile]);
+  const exams = useMemo(() => dailySetExamsFor(profile), [profile]);
   // The dashboard's "Today's plan" sends the student here with the exam to open (see OPEN_DAILY_SET_KEY).
   const [opened, setOpened] = useState(() => {
     try {
       const want = sessionStorage.getItem(OPEN_DAILY_SET_KEY);
       if (want) sessionStorage.removeItem(OPEN_DAILY_SET_KEY);
-      if (!want || !DAILY_SETS[want]) return { id: null, auto: false };
+      if (!want || !dailySetFor(want, profile)) return { id: null, auto: false };
       return { id: want, auto: takePlanStart([`special:${want}`]) !== null };   // auto: the row asked for the questions, not the set's page
     } catch { return { id: null, auto: false }; }
   });
@@ -37,14 +37,14 @@ const SpecialDailyCards = ({ profile }) => {
   }, []);
 
   if (!exams.length) return null;
-  const plan = openId ? DAILY_SETS[openId] : null;
+  const plan = openId ? dailySetFor(openId, profile) : null;
   // One set a day, as Daily Practice: once today's is submitted the card opens its result (and review), not a new set.
   const todayAttempt = openId ? dailySetToday(uid, openId) : null;
 
   return (
     <>
       {exams.map((examId) => {
-        const set = DAILY_SETS[examId];
+        const set = dailySetFor(examId, profile);
         const done = dailySetToday(uid, examId) !== null;
         const Icon = examId === 'sch-acer' ? Award : Target;
         return (
@@ -66,7 +66,7 @@ const SpecialDailyCards = ({ profile }) => {
             profile={profile}
             storageId={dailySetStorageId(openId)}
             startLabel="Start today's set"
-            homeNote={`${DAILY_SET_QUESTIONS} questions a day: ${plan.sections.map((s) => s.name).join(' and ')}. Answers and solutions after you submit, then review each question step by step.`}
+            homeNote={`${plan.sections.reduce((n, s) => n + s.want, 0) || DAILY_SET_QUESTIONS} questions a day: ${plan.sections.map((s) => s.name).join(', ').replace(/, ([^,]*)$/, ' and $1')}. Answers and solutions after you submit, then review each question step by step.`}
             lockedNote={todayAttempt ? "Today's set is done. A new one is ready tomorrow." : ''}
             initialResultId={todayAttempt ? todayAttempt.id : null}
             loadQuestions={() => Promise.all(plan.sections.map((s) => getTopicQuestions(s.topicId, { chapterId: openId })
@@ -74,7 +74,7 @@ const SpecialDailyCards = ({ profile }) => {
               .then((lists) => lists.flat())}
             pickQuestions={({ questions, state }) => {
               const doneSet = new Set(state.done.map(String));
-              const set = pickDailySet({ examId: openId, questions, done: state.done });
+              const set = pickDailySet({ examId: openId, questions, done: state.done, sections: plan.sections });
               return {
                 questionIds: set.questionIds,
                 round: set.reused ? state.round + 1 : state.round,

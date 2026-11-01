@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 import { Award, Check } from "lucide-react";
 import { CURRICULUM_DATA } from "../../constants/curriculumData";
-import { enabledScholarshipExams, toggleScholarshipExam } from "../../utils/scholarshipExams";
+import { enabledScholarshipExams, toggleScholarshipExam, enabledExamSubjects, toggleExamSubject } from "../../utils/scholarshipExams";
 
 /**
  * Teacher-side Special tests switch (Scholarship/ACER, Selective, OC). When on, the student gets one sidebar page
- * per ticked test. Separate from Daily Practice and Exam Prep — those never draw these questions.
+ * per ticked test, showing the subjects ticked under it. Separate from Daily Practice and Exam Prep — those never draw
+ * these questions.
  */
 export default function ScholarshipPanel({ styles, student, onUpdateSetting }) {
   const enabled = student?.scholarshipEnabled === true;
@@ -15,6 +16,13 @@ export default function ScholarshipPanel({ styles, student, onUpdateSetting }) {
   const toggleExam = (id) => {
     const next = toggleScholarshipExam(examIds, student, id);   // the last exam stays on: to stop Scholarship, switch it off above
     if (next.length !== chosen.length || next.some((x, i) => x !== chosen[i])) onUpdateSetting("scholarshipExams", next);
+  };
+  const toggleSubject = (exam, topicId) => {
+    const before = enabledExamSubjects(exam, student);
+    const next = toggleExamSubject(exam, student, topicId);   // the last subject stays on: to stop an exam, untick it above
+    if (next[exam.id].join(",") !== before.join(",") || !Array.isArray(student?.scholarshipSubjects?.[exam.id])) {
+      onUpdateSetting("scholarshipSubjects", next);
+    }
   };
   return (
     <div style={styles.card} className="profile-card-mobile">
@@ -71,6 +79,35 @@ export default function ScholarshipPanel({ styles, student, onUpdateSetting }) {
           })}
         </div>
       )}
+      {enabled && exams.filter((exam) => chosen.includes(exam.id)).map((exam) => {
+        const subjects = enabledExamSubjects(exam, student);
+        return (
+          <div key={exam.id} style={{ marginTop: "12px", display: "flex", flexWrap: "wrap", alignItems: "center", gap: "8px" }}>
+            <span style={{ minWidth: "92px", fontSize: "0.74rem", fontWeight: 800, color: "#1e1b4b" }}>{exam.title} subjects</span>
+            {(exam.topics || []).map((topic) => {
+              const on = subjects.includes(topic.id);
+              return (
+                <button
+                  key={topic.id}
+                  type="button"
+                  aria-pressed={on}
+                  onClick={() => toggleSubject(exam, topic.id)}
+                  style={{
+                    display: "inline-flex", alignItems: "center", gap: "6px", padding: "6px 12px", borderRadius: "10px", cursor: "pointer",
+                    fontWeight: 700, fontSize: "0.76rem", border: `1.5px solid ${on ? "#c4b5fd" : "#e2e8f0"}`,
+                    background: on ? "#faf5ff" : "#fff", color: on ? "#5b21b6" : "#94a3b8",
+                  }}
+                >
+                  <span style={{ width: 14, height: 14, borderRadius: 4, display: "grid", placeItems: "center", background: on ? "#8b5cf6" : "#e2e8f0", color: "#fff" }}>
+                    {on && <Check size={10} strokeWidth={3} />}
+                  </span>
+                  {topic.title.replace(/^ACER /, "")}
+                </button>
+              );
+            })}
+          </div>
+        );
+      })}
       {enabled && chosen.includes("sch-acer") && (
         <div style={{ marginTop: "16px", padding: "14px 16px", borderRadius: "14px", border: "1px solid #e2e8f0", background: "#fafafa" }}>
           <div style={{ fontSize: "0.78rem", fontWeight: 800, color: "#1e1b4b", marginBottom: "4px" }}>Scholarship (ACER) test date</div>
@@ -110,7 +147,7 @@ export default function ScholarshipPanel({ styles, student, onUpdateSetting }) {
       )}
       <div style={{ marginTop: "14px", display: "flex", alignItems: "flex-start", gap: "10px", fontSize: "0.78rem", color: "#64748b", fontWeight: 600, lineHeight: 1.5 }}>
         <Award size={16} color="#7c3aed" style={{ flexShrink: 0, marginTop: 2 }} />
-        <span>Adds one sidebar page per exam ticked above — OC, Selective and Scholarship (ACER) — each with topic tests, full-length mocks (OC, Selective) and a weak-spot summary. Not part of Daily Practice or Exam Prep.</span>
+        <span>Adds one sidebar page per exam ticked above — OC, Selective and Scholarship (ACER) — each with topic tests, full-length mocks (OC, Selective) and a weak-spot summary, for the subjects ticked under it. The daily set uses those subjects too. Not part of Daily Practice or Exam Prep.</span>
       </div>
     </div>
   );

@@ -6,7 +6,7 @@
  * summary reads BOTH histories: every answer the student has given in these exams counts.
  */
 import { CURRICULUM_DATA } from '../constants/curriculumData.js';
-import { enabledScholarshipExams } from './scholarshipExams.js';
+import { enabledScholarshipExams, enabledExamSubjects, subjectsChosen } from './scholarshipExams.js';
 import { loadTestState, gradeQuestionMarks } from './scholarshipTest.js';
 
 export const OC_EXAM_ID = 'sch-oc';
@@ -54,6 +54,12 @@ export const hubExamsFor = (profile) => {
   const all = (CURRICULUM_DATA.Scholarship || []).map((e) => e.id);
   const chosen = enabledScholarshipExams(all, profile);
   return HUB_EXAM_IDS.filter((id) => all.includes(id) && chosen.includes(id));
+};
+
+/** The exam's sections (topics) this student practises — the teacher can narrow an exam to some subjects. */
+export const hubSectionsFor = (exam, profile) => {
+  const ids = enabledExamSubjects(exam, profile);
+  return (exam?.topics || []).filter((t) => ids.includes(t.id));
 };
 
 
@@ -308,6 +314,41 @@ export const dailySetDoneToday = (uid, examId) => dailySetToday(uid, examId) !==
 /** Dashboard → Daily Study hand-off: the exam whose set should open as soon as the Daily Study page does. */
 export const OPEN_DAILY_SET_KEY = 'sapere:openSpecialDaily:v1';
 
+/**
+ * Questions a section gives a daily set when it is the only subject; with n subjects each gives about 1/n of it.
+ * Reading passages carry several marks each, so they give fewer questions. Writing is not in the bank: no entry.
+ */
+export const DAILY_SOLO_QUESTIONS = {
+  'sch-oc-english': 6, 'sch-oc-maths': 10, 'sch-oc-thinking': 10,
+  'sch-selective-reading': 6, 'sch-selective-maths': 10, 'sch-selective-thinking': 10,
+  'sch-acer-reading': 2, 'sch-acer-maths': 10,
+};
+
+/**
+ * This student's daily set for one exam: { label, sections }. With no subject choice it is the exam's usual set
+ * (DAILY_SETS); once the teacher picks subjects, it is those subjects, sharing the day between them. null = nothing
+ * to practise daily (only Writing ticked).
+ */
+export const dailySetFor = (examId, profile) => {
+  const base = DAILY_SETS[examId];
+  if (!base) return null;
+  if (!subjectsChosen(profile, examId)) return base;
+  const exam = (CURRICULUM_DATA.Scholarship || []).find((e) => e.id === examId);
+  const topics = hubSectionsFor(exam, profile).filter((t) => DAILY_SOLO_QUESTIONS[t.id]);
+  if (!topics.length) return null;
+  return {
+    label: base.label,
+    sections: topics.map((t) => ({
+      topicId: t.id,
+      name: MOCK_FORMATS[t.id]?.name || t.title,
+      want: Math.max(1, Math.round(DAILY_SOLO_QUESTIONS[t.id] / topics.length)),
+    })),
+  };
+};
+
+/** The exams that give this student a daily set (switched on, with at least one subject that has one). */
+export const dailySetExamsFor = (profile) => hubExamsFor(profile).filter((id) => dailySetFor(id, profile));
+
 /** Questions per section: what each wants, capped by what it holds; what one cannot give goes to the others. */
 export const dailySetShares = (available, wants) => {
   const total = wants.reduce((s, v) => s + v, 0);
@@ -324,11 +365,10 @@ export const dailySetShares = (available, wants) => {
 const DAILY_BLUEPRINT_OVERRIDE = { 'sch-oc-thinking': { by: 'category', weight: 'paper', cap: 1, order: 'position' }, 'sch-selective-thinking': { by: 'category', weight: 'paper', cap: 1, order: 'position' } };
 
 /**
- * Pick today's set. `questions`: every question of the exam's two sections, each tagged `_topicId`.
+ * Pick today's set. `questions`: every question of the set's sections, each tagged `_topicId`; `sections`: from dailySetFor.
  * → { questionIds (section order), count, marks, reused, sections: [{ topicId, count }] }
  */
-export const pickDailySet = ({ examId, questions, done = [], rng = Math.random }) => {
-  const sections = DAILY_SETS[examId]?.sections || [];
+export const pickDailySet = ({ examId, questions, done = [], rng = Math.random, sections = DAILY_SETS[examId]?.sections || [] }) => {
   const banks = sections.map((s) => questions.filter((q) => q._topicId === s.topicId));
   const shares = dailySetShares(banks.map((qs) => qs.length), sections.map((s) => s.want));
   let reused = false;
