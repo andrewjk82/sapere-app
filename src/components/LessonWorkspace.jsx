@@ -9,7 +9,7 @@ import { useSplitLayout } from '../utils/useSplitLayout';
 import { useCurriculumNote } from '../utils/useCurriculumNote';
 import { useWorksheetPdf } from '../utils/useWorksheetPdf';
 import { curriculumDocIdsForProfile, toDriveOpenUrl } from '../utils/homework';
-import { listTopicPdfs } from '../utils/lessonTopicPdfs';
+import { listTopicPdfs, groupTopicPdfsByBook } from '../utils/lessonTopicPdfs';
 import { withTimeout } from '../utils/withTimeout';
 import { localCache } from '../services/localCacheService';
 
@@ -56,7 +56,7 @@ const useTopicPdfs = (profile) => {
     withTimeout(Promise.all(idsKey.split('|').map((id) => getDoc(doc(db, 'curriculum', id)).catch(() => null))), 12000)
       .then((snaps) => {
         if (cancelled) return;
-        setLoaded({ key: idsKey, status: 'ready', docs: snaps.filter((s) => s?.exists()).map((s) => s.data()) });
+        setLoaded({ key: idsKey, status: 'ready', docs: snaps.filter((s) => s?.exists()).map((s) => ({ id: s.id, ...s.data() })) });
       })
       .catch(() => { if (!cancelled) setLoaded({ key: idsKey, status: 'error', docs: [] }); });
     return () => { cancelled = true; };
@@ -81,17 +81,85 @@ const useTopicPdfs = (profile) => {
   return { status: loaded.key === idsKey ? loaded.status : 'loading', topics: [], ids, retry };
 };
 
-// Pick the student's PDF: a worksheet from their curriculum, or a file from this device.
-const PdfPicker = ({ student, state, onPickTopic, onUpload, onClose }) => {
-  const assigned = state.topics.filter((t) => t.assigned);
-  const rest = state.topics.filter((t) => !t.assigned);
-  const row = (t) => (
-    <button key={t.id} type="button" onClick={() => onPickTopic(t)} style={{ display: 'block', width: '100%', textAlign: 'left', border: 0, background: 'transparent', padding: '9px 10px', borderRadius: 10, cursor: 'pointer', fontWeight: 700, fontSize: '0.86rem', color: '#1e293b' }}>
-      {t.label}
-      <span style={{ display: 'block', fontSize: '0.7rem', color: '#94a3b8', fontWeight: 700 }}>{t.chapterTitle}</span>
-    </button>
+// The last worksheet picked for a student on this device, so the picker opens at it even after an uploaded PDF.
+const LAST_TOPIC_KEY = (studentId) => `sapere:lesson-picker:last:${studentId}`;
+const readLastTopic = (studentId) => { try { return globalThis.localStorage?.getItem(LAST_TOPIC_KEY(studentId)) || ''; } catch { return ''; } };
+const rememberLastTopic = (studentId, topicId) => { try { globalThis.localStorage?.setItem(LAST_TOPIC_KEY(studentId), topicId); } catch { /* private mode */ } };
+
+const pickerRow = { display: 'flex', alignItems: 'center', gap: 10, width: '100%', textAlign: 'left', border: 0, background: 'transparent', padding: '10px 12px', borderRadius: 12, cursor: 'pointer', color: '#1e293b' };
+const badge = (bg, color) => ({ fontSize: '0.64rem', fontWeight: 900, letterSpacing: '0.04em', textTransform: 'uppercase', background: bg, color, borderRadius: 999, padding: '3px 8px', whiteSpace: 'nowrap' });
+
+// Pick the student's PDF: a worksheet from their curriculum, or a file from this device. With more than one book
+// (several years / courses), the books come first; the book and chapter of the current worksheet are highlighted.
+const PdfPicker = ({ student, state, currentTopicId, onPickTopic, onUpload, onClose }) => {
+  const books = useMemo(() => groupTopicPdfsByBook(state.topics), [state.topics]);
+  const current = state.topics.find((t) => t.id === currentTopicId) || null;
+  const [openBookId, setOpenBookId] = useState(null);
+  const openBook = books.length === 1 ? books[0] : books.find((b) => b.id === openBookId) || null;
+  const currentRef = useRef(null);
+  useEffect(() => { currentRef.current?.scrollIntoView({ block: 'center' }); }, [openBook?.id]);
+
+  const bookList = (
+    <>
+      {current && (
+        <button type="button" onClick={() => onPickTopic(current)} style={{ ...pickerRow, background: '#eef2ff', border: '1px solid #c7d2fe', margin: '8px 0 4px' }}>
+          <BookOpen size={18} color="#4f46e5" style={{ flexShrink: 0 }} />
+          <span style={{ flex: 1, minWidth: 0 }}>
+            <span style={{ display: 'block', fontSize: '0.66rem', fontWeight: 900, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#6366f1' }}>Continue</span>
+            <span style={{ display: 'block', fontWeight: 800, fontSize: '0.88rem' }}>{current.label}</span>
+            <span style={{ display: 'block', fontSize: '0.72rem', color: '#64748b', fontWeight: 700 }}>{current.bookTitle} · {current.chapterTitle}</span>
+          </span>
+        </button>
+      )}
+      <div style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#6366f1', padding: '10px 12px 4px' }}>Books</div>
+      {books.map((b) => {
+        const isCurrent = current?.bookId === b.id;
+        return (
+          <button key={b.id} type="button" onClick={() => setOpenBookId(b.id)} style={{ ...pickerRow, background: isCurrent ? '#f5f3ff' : 'transparent', border: isCurrent ? '1px solid #ddd6fe' : '1px solid transparent', marginBottom: 2 }}>
+            <FileText size={18} color={isCurrent ? '#7c3aed' : '#94a3b8'} style={{ flexShrink: 0 }} />
+            <span style={{ flex: 1, minWidth: 0 }}>
+              <span style={{ display: 'block', fontWeight: 800, fontSize: '0.9rem' }}>{b.title}</span>
+              <span style={{ display: 'block', fontSize: '0.72rem', color: '#94a3b8', fontWeight: 700 }}>{b.chapters.length} chapters · {b.total} worksheets</span>
+            </span>
+            {isCurrent && <span style={badge('#ede9fe', '#6d28d9')}>Last used</span>}
+            {b.assigned > 0 && <span style={badge('#dcfce7', '#15803d')}>Assigned</span>}
+            <ChevronRight size={16} color="#94a3b8" style={{ flexShrink: 0 }} />
+          </button>
+        );
+      })}
+    </>
   );
-  const heading = (text) => <div style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#6366f1', padding: '10px 10px 4px' }}>{text}</div>;
+
+  const chapterList = openBook && (
+    <>
+      {books.length > 1 && (
+        <button type="button" onClick={() => setOpenBookId(null)} style={{ ...pickerRow, padding: '8px 10px', color: '#4f46e5', fontWeight: 800, fontSize: '0.82rem' }}>
+          <ChevronLeft size={16} /> All books
+        </button>
+      )}
+      <div style={{ fontWeight: 900, color: '#1e1b4b', padding: '4px 12px 6px' }}>{openBook.title}</div>
+      {openBook.chapters.map((c) => {
+        const isCurrentChapter = current?.bookId === openBook.id && c.topics.some((t) => t.id === current.id);
+        return (
+          <div key={c.id} style={{ margin: '6px 0', borderRadius: 14, background: isCurrentChapter ? '#f5f3ff' : 'transparent', border: isCurrentChapter ? '1px solid #ddd6fe' : '1px solid transparent', padding: '4px 0' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '6px 12px 2px' }}>
+              <span style={{ flex: 1, fontSize: '0.72rem', fontWeight: 900, color: isCurrentChapter ? '#6d28d9' : '#6366f1' }}>{c.title}</span>
+              {c.assigned > 0 && <span style={badge('#dcfce7', '#15803d')}>Assigned</span>}
+            </div>
+            {c.topics.map((t) => {
+              const isCurrent = t.id === current?.id;
+              return (
+                <button key={t.id} ref={isCurrent ? currentRef : undefined} type="button" onClick={() => onPickTopic(t)} style={{ ...pickerRow, padding: '8px 12px', fontWeight: isCurrent ? 900 : 700, fontSize: '0.86rem', background: isCurrent ? '#ede9fe' : 'transparent' }}>
+                  <span style={{ flex: 1, minWidth: 0 }}>{t.label}</span>
+                  {isCurrent && <span style={badge('#7c3aed', '#fff')}>Last used</span>}
+                </button>
+              );
+            })}
+          </div>
+        );
+      })}
+    </>
+  );
 
   return (
     <div style={{ position: 'fixed', inset: 0, zIndex: 1300, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 16 }}>
@@ -113,8 +181,7 @@ const PdfPicker = ({ student, state, onPickTopic, onUpload, onClose }) => {
             </div>
           )}
           {state.status === 'ready' && state.topics.length === 0 && <div style={{ padding: 16, color: '#64748b', fontWeight: 700, fontSize: '0.85rem' }}>{state.ids.length === 0 ? `No year is set for ${student.name}, so there is no curriculum to list.` : `No worksheet PDFs found in ${state.ids.join(', ').replaceAll('_', ' ')}.`}</div>}
-          {assigned.length > 0 && <>{heading('Assigned to this student')}{assigned.map(row)}</>}
-          {rest.length > 0 && <>{heading(assigned.length ? 'Other topics' : 'Curriculum topics')}{rest.map(row)}</>}
+          {books.length > 0 && (openBook ? chapterList : bookList)}
         </div>
       </div>
     </div>
@@ -161,6 +228,7 @@ const LessonWorkspace = ({ session, students: profiles = [], onClose }) => {
 
   const pickTopic = async (topic) => {
     setPicking(false);
+    rememberLastTopic(activeStudentId, topic.id);
     try {
       const record = { kind: 'drive', topicId: topic.id, label: topic.label, url: topic.url, updatedAt: Date.now() };
       await saveLessonDrivePdf(activeStudentId, record);
@@ -288,7 +356,7 @@ const LessonWorkspace = ({ session, students: profiles = [], onClose }) => {
         <input ref={fileRef} type="file" accept="application/pdf,.pdf" onChange={upload} style={{ display: 'none' }} />
       </div>
       <SplitPanes layout={layout} split={split} onSplitChange={setSplit} first={pdfPane} second={notePane} activePane={pane} />
-      {picking && <PdfPicker student={active} state={topicPdfs} onPickTopic={pickTopic} onUpload={() => fileRef.current?.click()} onClose={() => setPicking(false)} />}
+      {picking && <PdfPicker student={active} state={topicPdfs} currentTopicId={isDrive ? record.topicId : readLastTopic(active.id)} onPickTopic={pickTopic} onUpload={() => fileRef.current?.click()} onClose={() => setPicking(false)} />}
     </div>
   );
 };
