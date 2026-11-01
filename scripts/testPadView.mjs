@@ -2,7 +2,7 @@
 import assert from 'node:assert';
 import {
   PAGE_W, PAGE_H, fitScale, clampZoom, clampPos, zoomAt, toPageUnits, backingScale,
-  classifyTwoFinger, classifyMultiTap, pageCentre, viewForCentre, MAX_ZOOM, MAX_BACKING_UNIT_PX,
+  classifyTwoFinger, classifyMultiTap, pageCentre, viewForCentre, viewAtTop, MAX_ZOOM, MAX_BACKING_UNIT_PX, PAGE_MARGIN,
 } from '../src/utils/padView.js';
 
 let passed = 0;
@@ -104,6 +104,16 @@ test('a centre near the page edge is kept on the page; zoom 1 is the fitted page
   assert.ok(edge.x > 5 && edge.y > 5);            // cannot centre on a point the page cannot scroll to
   assert.deepEqual(viewForCentre({ x: 100, y: 100 }, 1, size), { zoom: 1, pos: { x: 0, y: 0 } });
   assert.deepEqual(viewForCentre({ x: 100, y: 100 }, 3, { w: 0, h: 0 }).pos, { x: 0, y: 0 });
+});
+
+test('a new page opens at its top, at the same zoom and sideways position', () => {
+  const size = { w: 900, h: 700 };
+  const scrolled = viewForCentre({ x: 300, y: 900 }, 2.5, size);   // writing near the bottom
+  const top = viewAtTop(scrolled, size);
+  assert.equal(top.zoom, 2.5);
+  near(top.pos.x, scrolled.pos.x);
+  near(pageCentre(top, size).y, size.h / 2 / (fitScale(size.w, size.h) * 2.5) - PAGE_MARGIN / (fitScale(size.w, size.h) * 2.5));
+  assert.deepEqual(viewAtTop({ zoom: 1, pos: { x: 12, y: -40 } }, size), { zoom: 1, pos: { x: 0, y: 0 } });
 });
 
 console.log(`\npad view: ${passed} passed`);

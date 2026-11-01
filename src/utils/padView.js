@@ -51,6 +51,13 @@ export const viewForCentre = (centre, zoom, size) => {
   return { zoom: z, pos: clampPos({ x: size.w / 2 - centre.x * scale, y: size.h / 2 - centre.y * scale }, scale, size.w, size.h) };
 };
 
+// The same zoom and sideways position, scrolled to the top of the page (a new page starts at its first line).
+export const viewAtTop = ({ zoom, pos }, size) => {
+  const scale = fitScale(size.w, size.h) * zoom;
+  if (zoom === 1 || !(scale > 0)) return { zoom, pos: { x: 0, y: 0 } };
+  return { zoom, pos: clampPos({ x: pos.x, y: PAGE_MARGIN }, scale, size.w, size.h) };
+};
+
 // Zoom to `nextZoom` keeping the page point under screen point `anchor` (viewport coords) fixed.
 export const zoomAt = ({ zoom, pos }, nextZoom, anchor, fit, vw, vh) => {
   const z = clampZoom(nextZoom);

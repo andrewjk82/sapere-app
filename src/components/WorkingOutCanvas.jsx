@@ -12,7 +12,7 @@ import { snapAngle } from '../utils/lassoSelect';
 import { loadPadSettings, savePadSettings, loadPenDevice, savePenDevice } from '../utils/padSettings';
 import { newGridSticker, cleanStickerPages, drawGridSticker, stickerBox, STICKER_MAX_PER_PAGE } from '../utils/canvasStickers';
 import {
-  PAGE_W, PAGE_H, EXPORT_SCALE, SNAP_ZOOM, fitScale, clampPos, zoomAt, pageCentre, viewForCentre, backingScale, classifyTwoFinger, classifyMultiTap,
+  PAGE_W, PAGE_H, EXPORT_SCALE, SNAP_ZOOM, fitScale, clampPos, zoomAt, pageCentre, viewForCentre, viewAtTop, backingScale, classifyTwoFinger, classifyMultiTap,
 } from '../utils/padView';
 
 // ⬆ Bump this every time you modify the canvas so you can confirm the deployed version
@@ -1181,6 +1181,8 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     setCurrentPage(idx);
     setStrokes([]);
     resetHistory();
+    // Keep the zoom, but start the new page at its top instead of where the last one was being written.
+    setView(viewAtTop(viewRef.current, viewSizeRef.current));
   };
 
   const goToPage = (idx) => {
