@@ -1035,8 +1035,8 @@
         {
           "id": "y10-7a-q3d",
           "type": "review",
-          "difficulty": "easy",
           "stem": "Sketch the graph of the following, labelling the y-intercept and vertex: \\( y = (x - 4)^2 - 3 \\)",
+          "difficulty": "easy",
           "answer": "Check student's sketch.",
           "hint": "Think about transformations of parabolas.",
           "solution": "Check student's sketch.",
@@ -1069,8 +1069,11 @@
               }
             }
           ],
-          "timeLimit": 30,
-          "xp": 1
+          "timeLimit": 90,
+          "xp": 1,
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y10-7a-q3e",
