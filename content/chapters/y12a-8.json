@@ -15757,8 +15757,8 @@
         {
           "id": "y12a-8e-q6b",
           "type": "review",
+          "stem": "A couple take out a \\( \\$180000 \\) mortgage on a house, and they agree to pay the bank \\( \\$1600 \\) per month. The interest rate on the loan is 6% per annum, compounded monthly, and the contract requires that the loan be paid off within 15 years.\nShow that \\( A_{180} = 180000 \\times 1.005^{180} - \\frac{1600(1.005^{180} - 1)}{0.005} \\).",
           "difficulty": "medium",
-          "stem": "A couple take out a \\( \\$180000 \\) mortgage on a house, and they agree to pay the bank \\( \\$1600 \\) per month. The interest rate on the loan is 6% per annum, compounded monthly, and the contract requires that the loan be paid off within 15 years.\nb) Show that \\( A_{180} = 180000 \\times 1.005^{180} - \\frac{1600(1.005^{180} - 1)}{0.005} \\).",
           "answer": "Applying the GP sum formula for the payment series with \\( a = 1600 \\), \\( r = 1.005 \\), and \\( n = 180 \\) yields: \\( 180000 \\times 1.005^{180} - \\frac{1600(1.005^{180} - 1)}{0.005} \\).",
           "hint": "Write a full structured solution for the teacher to mark.",
           "solution": "Applying the GP sum formula for the payment series with \\( a = 1600 \\), \\( r = 1.005 \\), and \\( n = 180 \\) yields: \\( 180000 \\times 1.005^{180} - \\frac{1600(1.005^{180} - 1)}{0.005} \\).",
@@ -15774,7 +15774,10 @@
           ],
           "manual": true,
           "timeLimit": 240,
-          "xp": 3
+          "xp": 3,
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y12a-8e-q6c",
