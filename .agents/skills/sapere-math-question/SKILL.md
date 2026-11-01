@@ -141,6 +141,18 @@ If a profile does not exist for the target chapter, **DO NOT proceed with modify
 
 ### Pedagogical Guidelines
 
+**Primary-school / OC explanation level:** When a question is intended for primary
+students (including OC thinking-skills questions), write for a child seeing the
+idea for the first time. Use short, familiar sentences and explain one small
+idea at a time. Avoid unexplained terms such as “necessary condition”,
+“injective”, “premise”, or “conclusion”; replace them with the actual clue in
+the question and say what it means in everyday words. For logic questions, show
+the clue as a small labelled picture, table, or sequence and highlight the part
+being used. For number questions, include a tiny worked example with each
+counting or calculation step shown. Explain what the highlighted part tells the
+student, and do not add abstract notation or decorative/repeated diagrams that
+do not help solve that exact question. Keep source question wording unchanged.
+
 1. **Step 1 — 문제 파악**: 주어진 정보 정리, 어떤 개념이 필요한지 명시
 2. **Step 2 — 핵심 공식/원리**: 적용할 수학적 원리를 명시하고, 왜 이것이 적용되는지 설명
 3. **Step 3 — 풀이 과정**: 실제 계산을 단계적으로 보여줌
