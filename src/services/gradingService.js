@@ -128,7 +128,9 @@ export const gradeSubmission = async (item, approved, feedback = null, annotatio
     // Rejection finalises the answer as incorrect so it never lingers as
     // "Teacher marking" on the student's side. No score/XP changes — pending
     // answers were never counted as correct.
-    if (type === 'exam_prep') {
+    if (type === 'curriculum') {
+      // Topic practice keeps no server-side score — the feedback card below is the whole record.
+    } else if (type === 'exam_prep') {
       await updateDoc(doc(db, 'users', userId), {
         examPrepRejections: arrayUnion({
           questionId: item.questionId || '',
@@ -161,6 +163,12 @@ export const gradeSubmission = async (item, approved, feedback = null, annotatio
         ...(feedback ? { teacherFeedback: feedback } : {}),
       }),
     });
+    await writeFeedbackCard(feedbackOwnerRef(userId), item, true, feedback, annotation);
+    await deleteDoc(doc(db, 'grading_queue', item.id));
+    return { xpAwarded: 0 };
+  }
+  // Topic practice is unscored too: no XP, no stat doc — just the student's feedback card.
+  if (type === 'curriculum') {
     await writeFeedbackCard(feedbackOwnerRef(userId), item, true, feedback, annotation);
     await deleteDoc(doc(db, 'grading_queue', item.id));
     return { xpAwarded: 0 };

@@ -1142,8 +1142,8 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode, onOpenI
                 <span style={{ padding: '4px 10px', background: '#e0e7ff', color: '#6366f1', borderRadius: '8px', fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', marginTop: '4px', display: 'inline-block' }}>
                   {item.requiresManualGrading ? 'Manual Grade Required' : item.type}
                 </span>
-                <span style={{ padding: '4px 10px', background: item.challengeType === 'calc' ? '#fffbeb' : item.challengeType === 'exam_prep' ? '#fff7ed' : '#eef2ff', color: item.challengeType === 'calc' ? '#b45309' : item.challengeType === 'exam_prep' ? '#c2410c' : '#4338ca', borderRadius: '8px', fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', marginTop: '4px', marginLeft: '6px', display: 'inline-block' }}>
-                  {item.challengeType === 'calc' ? 'Daily Calculation' : item.challengeType === 'exam_prep' ? 'Exam Prep' : 'Daily Challenge'}
+                <span style={{ padding: '4px 10px', background: item.challengeType === 'calc' ? '#fffbeb' : item.challengeType === 'exam_prep' ? '#fff7ed' : item.challengeType === 'curriculum' ? '#ecfdf5' : '#eef2ff', color: item.challengeType === 'calc' ? '#b45309' : item.challengeType === 'exam_prep' ? '#c2410c' : item.challengeType === 'curriculum' ? '#047857' : '#4338ca', borderRadius: '8px', fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', marginTop: '4px', marginLeft: '6px', display: 'inline-block' }}>
+                  {item.challengeType === 'calc' ? 'Daily Calculation' : item.challengeType === 'exam_prep' ? 'Exam Prep' : item.challengeType === 'curriculum' ? 'Curriculum' : 'Daily Challenge'}
                 </span>
               </div>
             </div>

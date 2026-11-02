@@ -50,6 +50,7 @@ import {
   setMistakeTag,
   markSecretNoteCaughtUp,
   pruneUngradable,
+  canGrade,
   canTwin,
   slimQuestion,
   getRawNote,
@@ -64,7 +65,9 @@ import { pullRemoteNoteIfNewer, pushLocalNote } from '../../services/secretNoteS
 // Build a preview-only queue straight from teacher-supplied questions — same
 // item shape as addMistakes() (secretNote.js) so rendering/grading paths
 // never notice the difference, but nothing here touches localStorage.
-const buildPreviewQueue = (questions) => (questions || []).map((q, i) => ({
+// Same gate as addMistakes: a teacher-marked question never reaches a student's notebook, so the
+// teacher preview must not show it as a typed-answer card either.
+const buildPreviewQueue = (questions) => (questions || []).filter(canGrade).map((q, i) => ({
   question: { ...slimQuestion(q), id: q.id || q.question || q.text || `preview-${i}` },
   addedAt: Date.now(),
   sourceDate: new Date().toLocaleDateString('en-CA'),
@@ -746,6 +749,23 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
   };
 
   // Empty notebook — either nothing saved, or only future-scheduled reviews.
+  if (phase === 'empty' && isPreview) {
+    return (
+      <NoteShell {...shellProps} subtitle="Preview">
+        <div className="sn__card sn__center">
+          <div className="sn__big-emoji">📝</div>
+          <h2 className="sn__h2">Not in Secret Note</h2>
+          <p className="sn__muted">
+            Your teacher marks this question, so it is never saved to Secret Note. Students submit their working for teacher review instead.
+          </p>
+          <button className="sn__btn sn__btn--primary" style={{ background: headerGradient }} onClick={onClose}>
+            Back <ArrowRight size={16} />
+          </button>
+        </div>
+      </NoteShell>
+    );
+  }
+
   if (phase === 'empty') {
     const scheduledOnly = savedTotal > 0;
     const whenBack = nextReviewPhrase(getNextDueAt(kind, uid));

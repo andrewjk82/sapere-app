@@ -6,8 +6,9 @@ import {
   Lightbulb, Check, X, Flag, PenLine,
 } from 'lucide-react';
 import { db } from '../firebase/config';
-import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
+import { collection, addDoc, doc, setDoc, serverTimestamp } from 'firebase/firestore';
 import { getTopicQuestions } from '../services/contentLoader';
+import { notifyTeacherPendingReview } from '../utils/challengeUtils';
 
 // localStorage helpers for per-topic mastery (rings — no Firestore reads needed)
 export const lsTopicKey = (uid, chapterId, topicId) => `sapere:tp:${uid}:${chapterId}:${topicId}`;
@@ -254,6 +255,10 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
   // given" check below must not apply, or the button would be permanently
   // disabled with no way to type anything.
   const hasGradableSubs = hasSubs && q.subQuestions.some((sq) => !subNeedsTeacher(sq));
+  // A whole question the teacher marks ("show that…", sketches): no answer box, the sketch pad is
+  // the answer and goes to grading_queue — typing it used to be string-matched against the model
+  // answer and always came back "Not quite".
+  const needsTeacher = Boolean(q) && !hasSubs && subNeedsTeacher(q);
 
   // Init answer state when question changes
   useEffect(() => {
@@ -274,8 +279,66 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
     }
   }, [currentIdx, questions]);
 
-  const handleSubmit = () => {
+  const submitForTeacher = async () => {
+    if (!user?.uid) return;
+    let answerImages = [];
+    try {
+      answerImages = (await sketchRef.current?.exportPageImages?.({ force: true })) || [];
+      if (answerImages.length === 0) {
+        const single = await sketchRef.current?.exportImage?.({ force: true });
+        if (single) answerImages = [single];
+      }
+    } catch { /* empty board — submit without a drawing */ }
+    answerImages = answerImages.filter((u) => u && u.length > 100);
+    const entry = {
+      userId: user.uid,
+      userName: profile?.name || user.displayName || user.email || 'Student',
+      userEmail: user.email || '',
+      date: new Date().toLocaleDateString('en-CA'),
+      questionId: q.id || null,
+      questionText: q.question || q.text || '',
+      questionType: q.type || 'teacher_review',
+      options: [],
+      graphData: q.graphData || null,
+      answerText: null,
+      answerImage: answerImages[0] || null,
+      answerImages,
+      hasDrawing: answerImages.length > 0,
+      status: 'pending',
+      submittedAt: serverTimestamp(),
+      challengeType: 'curriculum',
+      year: q.year || chapter?.year || '',
+      topicId: q.topicId || topic?.id || '',
+      topicTitle: q.topicTitle || topic?.title || '',
+      chapterTitle: q.chapterTitle || chapter?.title || '',
+      correctAnswer: q.answer || '',
+      solution: q.solution || '',
+      requiresManualGrading: true,
+    };
+    // Not awaited — a stalled connection must never freeze the button (see DailyChallenge).
+    setDoc(doc(collection(db, 'grading_queue')), entry)
+      .catch((err) => console.warn('grading_queue write failed:', err));
+    notifyTeacherPendingReview({
+      studentId: user.uid,
+      studentName: entry.userName,
+      studentEmail: entry.userEmail,
+      questionText: entry.questionText,
+      challengeType: 'curriculum',
+      topicTitle: entry.topicTitle,
+      chapterTitle: entry.chapterTitle,
+    }).catch(() => {});
+  };
+
+  const handleSubmit = async () => {
     if (submitted) return;
+    if (needsTeacher) {
+      // Capture the pad before the feedback re-render; stays unmastered (null ≠ correct).
+      await submitForTeacher();
+      setIsCorrect(null);
+      setSubmitted(true);
+      setResults((prev) => [...prev, { correct: null, pending: true, userAnswer: null, q, sketchAvailable: true, inkLevel: 'substantial' }]);
+      return;
+    }
     const correct = gradeQuestion(q, userAnswer);
     if (!subNeedsTeacher(q)) playAnswerResult(correct);
     setIsCorrect(correct);
@@ -323,7 +386,8 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
   };
 
   const finishSession = useCallback(async () => {
-    const allResults = [...results, { correct: isCorrect, q }].filter(r => r.q);
+    // Teacher-marked answers are still pending — they count neither for nor against the score.
+    const allResults = [...results, { correct: isCorrect, q, pending: needsTeacher }].filter(r => r.q && !r.pending);
     const sessionCorrect = allResults.filter((r) => r.correct).length;
     const sessionTotal = allResults.length;
     const pct = sessionTotal ? Math.round((sessionCorrect / sessionTotal) * 100) : 0;
@@ -375,7 +439,7 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
     }
 
     setView('done');
-  }, [results, isCorrect, q, masteredIds, allTopicQuestions, user, chapter.id, topic.id]);
+  }, [results, isCorrect, q, needsTeacher, masteredIds, allTopicQuestions, user, chapter.id, topic.id]);
 
   const handleRestart = () => {
     // Re-show only unmastered questions (wrong or never attempted).
@@ -685,6 +749,17 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
 
     const renderAnswerInput = () => {
       if (!q) return null;
+
+      if (needsTeacher) {
+        return (
+          <div style={{ padding: '14px 16px', borderRadius: '14px', background: '#fffbeb', border: '1px solid #fde68a', display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <PenLine size={18} style={{ color: '#d97706', flexShrink: 0 }} />
+            <span style={{ fontSize: '0.9rem', fontWeight: 700, color: '#92400e', lineHeight: 1.5 }}>
+              Your teacher marks this one. Write your full working on the sketch pad, then submit it.
+            </span>
+          </div>
+        );
+      }
 
       // Multiple choice
       if (isMC) {
@@ -999,7 +1074,25 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
 
         {/* Feedback banner */}
         <AnimatePresence>
-          {submitted && (
+          {submitted && needsTeacher && (
+            <motion.div
+              initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}
+              style={{
+                padding: '16px 20px', borderRadius: '16px', marginBottom: '16px',
+                background: '#fffbeb', border: '1px solid #fde68a',
+                display: 'flex', alignItems: 'center', gap: '10px',
+              }}
+            >
+              <Check size={22} style={{ color: '#d97706', flexShrink: 0 }} />
+              <div>
+                <div style={{ fontWeight: 900, fontSize: '0.95rem', color: '#92400e' }}>Submitted for teacher review</div>
+                <div style={{ fontSize: '0.82rem', fontWeight: 600, color: '#b45309', marginTop: '2px' }}>
+                  Compare your working with the solution below while you wait.
+                </div>
+              </div>
+            </motion.div>
+          )}
+          {submitted && !needsTeacher && (
             <motion.div
               initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}
               style={{
@@ -1081,11 +1174,11 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
         {!submitted ? (
           <motion.button
             onClick={handleSubmit}
-            disabled={
+            disabled={!needsTeacher && (
               userAnswer === '' || userAnswer === null ||
               (hasGradableSubs && Object.values(userAnswer || {}).every((v) => !v)) ||
               (isFill && (userAnswer || []).every((v) => !v))
-            }
+            )}
             whileHover={{ scale: 1.01 }}
             whileTap={{ scale: 0.99 }}
             style={{
@@ -1094,10 +1187,10 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
               color: '#fff', fontFamily: '"Outfit", sans-serif',
               fontSize: '1rem', fontWeight: 900, cursor: 'pointer',
               boxShadow: '0 10px 24px rgba(124,58,237,0.25)',
-              opacity: (!userAnswer && !hasSubs && !isFill) ? 0.5 : 1,
+              opacity: (!needsTeacher && !userAnswer && !hasSubs && !isFill) ? 0.5 : 1,
             }}
           >
-            Submit answer
+            {needsTeacher ? 'Submit for teacher review' : 'Submit answer'}
           </motion.button>
         ) : (
           <motion.button
@@ -1243,7 +1336,7 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
   if (view === 'done') {
     const sessionResults = results;
     const sessionCorrect = sessionResults.filter((r) => r.correct).length;
-    const sessionTotal = sessionResults.length;
+    const sessionTotal = sessionResults.filter((r) => !r.pending).length;
     const sessionPct = sessionTotal ? Math.round((sessionCorrect / sessionTotal) * 100) : 0;
     const xp = sessionPct >= 80 ? XP_PER_TOPIC : sessionPct >= 50 ? Math.round(XP_PER_TOPIC * 0.6) : Math.round(XP_PER_TOPIC * 0.2);
     const grade = sessionPct >= 80 ? { label: 'Excellent!', color: '#10b981', emoji: '🏆' }
@@ -1319,11 +1412,12 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
                 key={i}
                 style={{
                   width: '36px', height: '36px', borderRadius: '10px', display: 'grid', placeItems: 'center',
-                  background: r.correct ? '#10b981' : '#f43f5e',
+                  background: r.pending ? '#f59e0b' : r.correct ? '#10b981' : '#f43f5e',
                   color: '#fff',
                 }}
+                title={r.pending ? 'Waiting for your teacher' : undefined}
               >
-                {r.correct ? <Check size={16} /> : <X size={16} />}
+                {r.pending ? <PenLine size={16} /> : r.correct ? <Check size={16} /> : <X size={16} />}
               </div>
             ))}
           </div>
