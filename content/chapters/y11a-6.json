@@ -25294,6 +25294,120 @@
             }
           ],
           "manual": true
+        },
+        {
+          "id": "gosford2020-q13",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "In triangle ABC, \\( AB=5\\text{ cm} \\), \\( AC=13\\text{ cm} \\), and \\( \\cos(\\angle BAC)=\\dfrac18 \\).",
+          "parts": [
+            {
+              "id": "gosford2020-q13a",
+              "type": "mc",
+              "stem": "(a) Find the exact value of \\( \\sin(\\angle BAC) \\).",
+              "options": [
+                "\\(\\dfrac{\\sqrt{7}}{8}\\)",
+                "\\(\\dfrac{1}{8}\\)",
+                "\\(\\dfrac{3\\sqrt{7}}{64}\\)",
+                "\\(\\dfrac{3\\sqrt{7}}{8}\\)"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Draw a reference right triangle with adjacent = 1, hypotenuse = 8 (since \\( \\cos(\\angle BAC)=1/8 \\)).",
+                  "work": "\\(\\text{adj}=1,\\ \\text{hyp}=8\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 190\" width=\"320\" height=\"190\" style=\"display:block;margin:.5rem auto;max-width:320px;background:#fff\"><style>text{font-family:system-ui,sans-serif;fill:#1e293b}</style><rect width=\"320\" height=\"190\" fill=\"#fff\"/><polygon points=\"145,25 36,154 276,151\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"145\" y1=\"25\" x2=\"36\" y2=\"154\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"145\" y1=\"25\" x2=\"276\" y2=\"151\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"137\" y=\"18\" font-size=\"12\" font-weight=\"700\">A</text><text x=\"24\" y=\"170\" font-size=\"12\" font-weight=\"700\">B</text><text x=\"278\" y=\"166\" font-size=\"12\" font-weight=\"700\">C</text><text x=\"72\" y=\"86\" font-size=\"11\" fill=\"#1e293b\">AB = 5 cm</text><text x=\"215\" y=\"80\" font-size=\"11\" fill=\"#1e293b\">AC = 13 cm</text><path d=\"M 130,43 Q 145,53 160,39\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\"/><text x=\"150\" y=\"100\" font-size=\"10\" text-anchor=\"middle\" fill=\"#f59e0b\">cos A = 1/8</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Find the opposite side using the Pythagorean identity.",
+                  "work": "\\(\\text{opp} = \\sqrt{8^2-1^2} = \\sqrt{63}=3\\sqrt{7}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 190\" width=\"320\" height=\"190\" style=\"display:block;margin:.5rem auto;max-width:320px;background:#fff\"><style>text{font-family:system-ui,sans-serif;fill:#1e293b}</style><rect width=\"320\" height=\"190\" fill=\"#fff\"/><polygon points=\"145,25 36,154 276,151\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"145\" y1=\"25\" x2=\"36\" y2=\"154\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"145\" y1=\"25\" x2=\"276\" y2=\"151\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"137\" y=\"18\" font-size=\"12\" font-weight=\"700\">A</text><text x=\"24\" y=\"170\" font-size=\"12\" font-weight=\"700\">B</text><text x=\"278\" y=\"166\" font-size=\"12\" font-weight=\"700\">C</text><text x=\"72\" y=\"86\" font-size=\"11\" fill=\"#1e293b\">AB = 5 cm</text><text x=\"215\" y=\"80\" font-size=\"11\" fill=\"#1e293b\">AC = 13 cm</text><path d=\"M 130,43 Q 145,53 160,39\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\"/><text x=\"150\" y=\"100\" font-size=\"10\" text-anchor=\"middle\" fill=\"#f59e0b\">cos A = 1/8</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Pitfall: forgetting to simplify \\( \\sqrt{63} \\) to \\( 3\\sqrt{7} \\) leaves an unsimplified surd.",
+                  "work": "\\(\\sin(\\angle BAC) = \\dfrac{3\\sqrt{7}}{8}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 190\" width=\"320\" height=\"190\" style=\"display:block;margin:.5rem auto;max-width:320px;background:#fff\"><style>text{font-family:system-ui,sans-serif;fill:#1e293b}</style><rect width=\"320\" height=\"190\" fill=\"#fff\"/><polygon points=\"145,25 36,154 276,151\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"145\" y1=\"25\" x2=\"36\" y2=\"154\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"145\" y1=\"25\" x2=\"276\" y2=\"151\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"137\" y=\"18\" font-size=\"12\" font-weight=\"700\">A</text><text x=\"24\" y=\"170\" font-size=\"12\" font-weight=\"700\">B</text><text x=\"278\" y=\"166\" font-size=\"12\" font-weight=\"700\">C</text><text x=\"72\" y=\"86\" font-size=\"11\" fill=\"#1e293b\">AB = 5 cm</text><text x=\"215\" y=\"80\" font-size=\"11\" fill=\"#1e293b\">AC = 13 cm</text><path d=\"M 130,43 Q 145,53 160,39\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\"/><text x=\"150\" y=\"100\" font-size=\"10\" text-anchor=\"middle\" fill=\"#f59e0b\">cos A = 1/8</text></svg>"
+                  }
+                }
+              ],
+              "xp": 1,
+              "hint": "Use \\(\\sin^2 A+\\cos^2 A=1\\) to find \\(\\sin(\\angle BAC)\\).",
+              "keyPoints": [
+                {
+                  "text": "Find the exact value of \\( \\sin(\\angle BAC) \\)",
+                  "note": "The angle is acute, so choose the positive square root for its sine."
+                }
+              ],
+              "timeLimit": 60
+            },
+            {
+              "id": "gosford2020-q13b",
+              "type": "mc",
+              "stem": "(b) Find the area of triangle ABC.",
+              "options": [
+                "\\(\\dfrac{195\\sqrt{7}}{16}\\text{ units}^2\\)",
+                "\\(\\dfrac{195\\sqrt{7}}{8}\\text{ units}^2\\)",
+                "\\(\\dfrac{65\\sqrt{7}}{16}\\text{ units}^2\\)",
+                "\\(\\dfrac{195}{16}\\text{ units}^2\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Use the area formula \\( \\text{Area}=\\dfrac12 ab\\sin C \\) with the two given sides and the included angle.",
+                  "work": "\\(\\text{Area} = \\dfrac12(5)(13)\\sin(\\angle BAC)\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 190\" width=\"320\" height=\"190\" style=\"display:block;margin:.5rem auto;max-width:320px;background:#fff\"><style>text{font-family:system-ui,sans-serif;fill:#1e293b}</style><rect width=\"320\" height=\"190\" fill=\"#fff\"/><polygon points=\"145,25 36,154 276,151\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"145\" y1=\"25\" x2=\"36\" y2=\"154\" stroke=\"#f59e0b\" stroke-width=\"2.8\"/><line x1=\"145\" y1=\"25\" x2=\"276\" y2=\"151\" stroke=\"#f59e0b\" stroke-width=\"2.8\"/><text x=\"137\" y=\"18\" font-size=\"12\" font-weight=\"700\">A</text><text x=\"24\" y=\"170\" font-size=\"12\" font-weight=\"700\">B</text><text x=\"278\" y=\"166\" font-size=\"12\" font-weight=\"700\">C</text><text x=\"72\" y=\"86\" font-size=\"11\" fill=\"#b45309\">AB = 5 cm</text><text x=\"215\" y=\"80\" font-size=\"11\" fill=\"#b45309\">AC = 13 cm</text><path d=\"M 130,43 Q 145,53 160,39\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\"/><text x=\"150\" y=\"100\" font-size=\"10\" text-anchor=\"middle\" fill=\"#f59e0b\">cos A = 1/8</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Substitute the exact value of \\( \\sin(\\angle BAC) \\) found in part (a).",
+                  "work": "\\(\\text{Area} = \\dfrac12(5)(13)\\left(\\dfrac{3\\sqrt{7}}{8}\\right)\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 190\" width=\"320\" height=\"190\" style=\"display:block;margin:.5rem auto;max-width:320px;background:#fff\"><style>text{font-family:system-ui,sans-serif;fill:#1e293b}</style><rect width=\"320\" height=\"190\" fill=\"#fff\"/><polygon points=\"145,25 36,154 276,151\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"145\" y1=\"25\" x2=\"36\" y2=\"154\" stroke=\"#f59e0b\" stroke-width=\"2.8\"/><line x1=\"145\" y1=\"25\" x2=\"276\" y2=\"151\" stroke=\"#f59e0b\" stroke-width=\"2.8\"/><text x=\"137\" y=\"18\" font-size=\"12\" font-weight=\"700\">A</text><text x=\"24\" y=\"170\" font-size=\"12\" font-weight=\"700\">B</text><text x=\"278\" y=\"166\" font-size=\"12\" font-weight=\"700\">C</text><text x=\"72\" y=\"86\" font-size=\"11\" fill=\"#b45309\">AB = 5 cm</text><text x=\"215\" y=\"80\" font-size=\"11\" fill=\"#b45309\">AC = 13 cm</text><path d=\"M 130,43 Q 145,53 160,39\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\"/><text x=\"150\" y=\"100\" font-size=\"10\" text-anchor=\"middle\" fill=\"#f59e0b\">cos A = 1/8</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Simplify. Pitfall: forgetting the leading \\( \\tfrac12 \\) doubles the answer (giving \\( 195\\sqrt{7}/8 \\)).",
+                  "work": "\\(\\text{Area} = \\dfrac{195\\sqrt{7}}{16} \\text{ units}^2\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 190\" width=\"320\" height=\"190\" style=\"display:block;margin:.5rem auto;max-width:320px;background:#fff\"><style>text{font-family:system-ui,sans-serif;fill:#1e293b}</style><rect width=\"320\" height=\"190\" fill=\"#fff\"/><polygon points=\"145,25 36,154 276,151\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"145\" y1=\"25\" x2=\"36\" y2=\"154\" stroke=\"#f59e0b\" stroke-width=\"2.8\"/><line x1=\"145\" y1=\"25\" x2=\"276\" y2=\"151\" stroke=\"#f59e0b\" stroke-width=\"2.8\"/><text x=\"137\" y=\"18\" font-size=\"12\" font-weight=\"700\">A</text><text x=\"24\" y=\"170\" font-size=\"12\" font-weight=\"700\">B</text><text x=\"278\" y=\"166\" font-size=\"12\" font-weight=\"700\">C</text><text x=\"72\" y=\"86\" font-size=\"11\" fill=\"#b45309\">AB = 5 cm</text><text x=\"215\" y=\"80\" font-size=\"11\" fill=\"#b45309\">AC = 13 cm</text><path d=\"M 130,43 Q 145,53 160,39\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\"/><text x=\"150\" y=\"100\" font-size=\"10\" text-anchor=\"middle\" fill=\"#f59e0b\">cos A = 1/8</text></svg>"
+                  }
+                }
+              ],
+              "xp": 1,
+              "hint": "Use the area formula \\(\\text{Area} = \\dfrac{1}{2}ab\\sin C\\) with the given sides and the sine from part (a).",
+              "keyPoints": [
+                {
+                  "text": "Find the area of triangle ABC",
+                  "note": "The angle is acute, so choose the positive square root for its sine."
+                }
+              ],
+              "timeLimit": 60
+            }
+          ],
+          "meta": {
+            "source": "Gosford 2020 Trial Q13",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "gosford-2020"
+          },
+          "dna": {
+            "dnaId": "TRIG-GEO-01"
+          },
+          "hint": "Use \\(\\sin^2 A+\\cos^2 A=1\\). For the area, use the two sides enclosing angle \\(A\\).",
+          "keyPoints": [
+            {
+              "text": "In triangle ABC, \\( AB=5\\text{ cm} \\), \\( AC=13\\text{ cm} \\), and \\( \\cos(\\angle BAC)=\\dfrac18 \\)",
+              "note": "The angle is acute, so choose the positive square root for its sine."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },

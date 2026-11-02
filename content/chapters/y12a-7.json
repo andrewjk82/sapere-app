@@ -1,12 +1,12 @@
 {
   "chapterId": "y12a-7",
   "title": "Chapter 7: Motion and rates",
-  "year": "2020",
+  "year": "Year 12",
   "topics": [
     {
-      "topicId": "y12a-7B",
-      "code": "7B",
-      "title": "Velocity and acceleration as derivatives",
+      "topicId": "y12a-7A",
+      "code": "7A",
+      "title": "Motion review plus acceleration",
       "questions": [
         {
           "id": "bb2020-q31",
@@ -694,9 +694,9 @@
       ]
     },
     {
-      "topicId": "y12a-7C",
-      "code": "7C",
-      "title": "Integrating with respect to time",
+      "topicId": "y12a-7B",
+      "code": "7B",
+      "title": "Motion and integration",
       "questions": [
         {
           "id": "hg2020-q34",
@@ -1067,8 +1067,8 @@
       ]
     },
     {
-      "topicId": "y12a-7F",
-      "code": "7F",
+      "topicId": "y12a-7E",
+      "code": "7E",
       "title": "Exponential growth and decay",
       "questions": [
         {

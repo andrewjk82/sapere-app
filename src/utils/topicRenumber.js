@@ -1,4 +1,4 @@
-// A course re-laid out to a new textbook (Extension 2 in 2026-10, Extension 1 Year 12 in 2026-11): chapters are
+// A course re-laid out to a new textbook (Extension 2 in 2026-10, Extension 1 and Advanced Year 12 in 2026-11): chapters are
 // renumbered and topics move. Question ids do not change; topic and chapter ids do — and new ids reuse old ones with
 // other meanings (Ext2 old 4D "Partial Fractions" vs new 4D "Vector Equations of Circles"). So every move below must run
 // exactly once, on old-layout data, as a whole: take every old key out first, then write the new ones. Callers keep a
@@ -9,8 +9,8 @@
 //   chapterMap  — old chapter id → the new chapter id(s) an assigned / completed chapter becomes.
 //   retired     — old topic / chapter ids that have no place in the new book: dropped.
 
-// 'y12e2-4D' → 'y12e2-4', 'y11e1-16D' → 'y11e1-16'
-export const chapterOfTopic = (topicId) => (/^(y1[12]e[12]-\d+)/.exec(String(topicId)) || [])[1] || '';
+// 'y12e2-4D' → 'y12e2-4', 'y11e1-16D' → 'y11e1-16', 'y11a-13-13d' → 'y11a-13'
+export const chapterOfTopic = (topicId) => (/^(y1[12](?:a|e[12])-\d+)/.exec(String(topicId)) || [])[1] || '';
 
 const mergeMastered = (a, b) => {
   try {

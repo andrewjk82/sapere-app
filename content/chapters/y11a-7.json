@@ -3779,6 +3779,48 @@
             "grade": "12"
           },
           "xp": 2
+        },
+        {
+          "id": "gosford2020-q11",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What angle does the line \\( 2x+3y+6=0 \\) make with the positive x axis? Give your answer to the nearest minute.",
+          "options": [
+            "\\(33\\degree41\\prime\\)",
+            "\\(56\\degree19\\prime\\)",
+            "\\(146\\degree19\\prime\\)",
+            "\\(123\\degree41\\prime\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Rearrange the line into gradient-intercept form to find its gradient.",
+              "work": "\\(2x+3y+6=0 \\;\\Rightarrow\\; y=-\\dfrac23x-2 \\;\\Rightarrow\\; m=-\\dfrac23\\)"
+            },
+            {
+              "explain": "The gradient equals the tangent of the angle of inclination \\( \\theta \\), measured from the positive x-axis.",
+              "work": "\\(\\tan\\theta = -\\dfrac23\\)"
+            },
+            {
+              "explain": "Since the gradient is negative, \\( \\theta \\) is obtuse (between 90° and 180°). Find the reference angle first, then subtract from 180°. Pitfall: reporting only the acute reference angle (33°41′) forgets the negative gradient means an obtuse angle.",
+              "work": "\\(\\text{ref. angle} = \\tan^{-1}\\left(\\dfrac23\\right) = 33\\degree41\\prime \\;\\Rightarrow\\; \\theta = 180\\degree-33\\degree41\\prime = 146\\degree19\\prime\\)"
+            }
+          ],
+          "meta": {
+            "source": "Gosford 2020 Trial Q11",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "gosford-2020"
+          },
+          "xp": 1,
+          "hint": "First rearrange the line into gradient form. Because the slope is negative, its inclination is in quadrant II.",
+          "keyPoints": [
+            {
+              "text": "angle",
+              "note": "The angle of inclination is measured anticlockwise from the positive x-axis."
+            }
+          ],
+          "timeLimit": 60
         }
       ]
     },
@@ -8872,6 +8914,155 @@
             }
           ],
           "xp": 4
+        },
+        {
+          "id": "gosford2020-q25",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Points \\( A(-5,3) \\), \\( B(2,2) \\), and \\( C(1,-5) \\) are given.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 310\" width=\"360\" height=\"310\" style=\"display:block;margin:.5rem auto;max-width:360px;background:#fff;border:1px solid #e2e8f0;border-radius:10px\"><style>text{font-family:system-ui,-apple-system,sans-serif;fill:#1e293b}</style><rect width=\"360\" height=\"310\" fill=\"#fff\"/><line x1=\"30\" y1=\"155\" x2=\"344\" y2=\"155\" stroke=\"#475569\" stroke-width=\"1.6\"/><line x1=\"190\" y1=\"12\" x2=\"190\" y2=\"284\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"346\" y=\"159\" font-size=\"11\">x</text><text x=\"186\" y=\"12\" font-size=\"11\">y</text><line x1=\"22\" y1=\"152\" x2=\"22\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"50\" y1=\"152\" x2=\"50\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"78\" y1=\"152\" x2=\"78\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"106\" y1=\"152\" x2=\"106\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"134\" y1=\"152\" x2=\"134\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"162\" y1=\"152\" x2=\"162\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"190\" y1=\"152\" x2=\"190\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"218\" y1=\"152\" x2=\"218\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"246\" y1=\"152\" x2=\"246\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"265\" x2=\"193\" y2=\"265\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"243\" x2=\"193\" y2=\"243\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"221\" x2=\"193\" y2=\"221\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"199\" x2=\"193\" y2=\"199\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"177\" x2=\"193\" y2=\"177\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"155\" x2=\"193\" y2=\"155\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"133\" x2=\"193\" y2=\"133\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"111\" x2=\"193\" y2=\"111\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"89\" x2=\"193\" y2=\"89\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"67\" x2=\"193\" y2=\"67\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"45\" x2=\"193\" y2=\"45\" stroke=\"#94a3b8\"/><circle cx=\"50\" cy=\"89\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"55\" y=\"84\" font-size=\"10\">A</text><circle cx=\"246\" cy=\"111\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"251\" y=\"106\" font-size=\"10\">B</text><circle cx=\"218\" cy=\"265\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"223\" y=\"260\" font-size=\"10\">C</text></svg>"
+          },
+          "parts": [
+            {
+              "id": "gosford2020-q25a",
+              "type": "mc",
+              "stem": "(a) Find the gradient of AC.",
+              "options": [
+                "\\(\\dfrac43\\)",
+                "\\(-\\dfrac34\\)",
+                "\\(\\dfrac34\\)",
+                "\\(-\\dfrac43\\)"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Apply the gradient formula \\( m=\\dfrac{y_2-y_1}{x_2-x_1} \\) using A and C.",
+                  "work": "\\(m_{AC} = \\dfrac{-5-3}{1-(-5)}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 310\" width=\"360\" height=\"310\" style=\"display:block;margin:.5rem auto;max-width:360px;background:#fff;border:1px solid #e2e8f0;border-radius:10px\"><style>text{font-family:system-ui,-apple-system,sans-serif;fill:#1e293b}</style><rect width=\"360\" height=\"310\" fill=\"#fff\"/><line x1=\"30\" y1=\"155\" x2=\"344\" y2=\"155\" stroke=\"#475569\" stroke-width=\"1.6\"/><line x1=\"190\" y1=\"12\" x2=\"190\" y2=\"284\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"346\" y=\"159\" font-size=\"11\">x</text><text x=\"186\" y=\"12\" font-size=\"11\">y</text><line x1=\"22\" y1=\"152\" x2=\"22\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"50\" y1=\"152\" x2=\"50\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"78\" y1=\"152\" x2=\"78\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"106\" y1=\"152\" x2=\"106\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"134\" y1=\"152\" x2=\"134\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"162\" y1=\"152\" x2=\"162\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"190\" y1=\"152\" x2=\"190\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"218\" y1=\"152\" x2=\"218\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"246\" y1=\"152\" x2=\"246\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"265\" x2=\"193\" y2=\"265\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"243\" x2=\"193\" y2=\"243\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"221\" x2=\"193\" y2=\"221\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"199\" x2=\"193\" y2=\"199\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"177\" x2=\"193\" y2=\"177\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"155\" x2=\"193\" y2=\"155\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"133\" x2=\"193\" y2=\"133\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"111\" x2=\"193\" y2=\"111\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"89\" x2=\"193\" y2=\"89\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"67\" x2=\"193\" y2=\"67\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"45\" x2=\"193\" y2=\"45\" stroke=\"#94a3b8\"/><line x1=\"50\" y1=\"89\" x2=\"218\" y2=\"265\" stroke=\"#f59e0b\" stroke-width=\"2.4\"/><circle cx=\"50\" cy=\"89\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"55\" y=\"84\" font-size=\"10\">A</text><circle cx=\"246\" cy=\"111\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"251\" y=\"106\" font-size=\"10\">B</text><circle cx=\"218\" cy=\"265\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"223\" y=\"260\" font-size=\"10\">C</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Simplify the numerator and denominator.",
+                  "work": "\\(m_{AC} = \\dfrac{-8}{6}\\)"
+                },
+                {
+                  "explain": "Reduce to simplest form. Pitfall: subtracting coordinates in the wrong order (or wrong point order) flips the sign, giving \\( +4/3 \\).",
+                  "work": "\\(m_{AC} = -\\dfrac43\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 310\" width=\"360\" height=\"310\" style=\"display:block;margin:.5rem auto;max-width:360px;background:#fff;border:1px solid #e2e8f0;border-radius:10px\"><style>text{font-family:system-ui,-apple-system,sans-serif;fill:#1e293b}</style><rect width=\"360\" height=\"310\" fill=\"#fff\"/><line x1=\"30\" y1=\"155\" x2=\"344\" y2=\"155\" stroke=\"#475569\" stroke-width=\"1.6\"/><line x1=\"190\" y1=\"12\" x2=\"190\" y2=\"284\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"346\" y=\"159\" font-size=\"11\">x</text><text x=\"186\" y=\"12\" font-size=\"11\">y</text><line x1=\"22\" y1=\"152\" x2=\"22\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"50\" y1=\"152\" x2=\"50\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"78\" y1=\"152\" x2=\"78\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"106\" y1=\"152\" x2=\"106\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"134\" y1=\"152\" x2=\"134\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"162\" y1=\"152\" x2=\"162\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"190\" y1=\"152\" x2=\"190\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"218\" y1=\"152\" x2=\"218\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"246\" y1=\"152\" x2=\"246\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"265\" x2=\"193\" y2=\"265\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"243\" x2=\"193\" y2=\"243\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"221\" x2=\"193\" y2=\"221\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"199\" x2=\"193\" y2=\"199\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"177\" x2=\"193\" y2=\"177\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"155\" x2=\"193\" y2=\"155\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"133\" x2=\"193\" y2=\"133\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"111\" x2=\"193\" y2=\"111\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"89\" x2=\"193\" y2=\"89\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"67\" x2=\"193\" y2=\"67\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"45\" x2=\"193\" y2=\"45\" stroke=\"#94a3b8\"/><line x1=\"50\" y1=\"89\" x2=\"218\" y2=\"265\" stroke=\"#f59e0b\" stroke-width=\"2.4\"/><circle cx=\"50\" cy=\"89\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"55\" y=\"84\" font-size=\"10\">A</text><circle cx=\"246\" cy=\"111\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"251\" y=\"106\" font-size=\"10\">B</text><circle cx=\"218\" cy=\"265\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"223\" y=\"260\" font-size=\"10\">C</text></svg>"
+                  }
+                }
+              ],
+              "xp": 1,
+              "hint": "Subtract y-coordinates and x-coordinates in the same order.",
+              "keyPoints": [
+                {
+                  "text": "gradient",
+                  "note": "Subtract y-coordinates and x-coordinates in the same order."
+                }
+              ],
+              "timeLimit": 60
+            },
+            {
+              "id": "gosford2020-q25b",
+              "type": "mc",
+              "stem": "(b) Find the coordinates of the midpoint X of AC.",
+              "options": [
+                "(-2,-1)",
+                "(-2,1)",
+                "(2,-1)",
+                "(-4,-2)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Apply the midpoint formula \\( \\left(\\dfrac{x_1+x_2}{2},\\dfrac{y_1+y_2}{2}\\right) \\) to A and C.",
+                  "work": "\\(X = \\left(\\dfrac{-5+1}{2},\\dfrac{3+(-5)}{2}\\right)\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 310\" width=\"360\" height=\"310\" style=\"display:block;margin:.5rem auto;max-width:360px;background:#fff;border:1px solid #e2e8f0;border-radius:10px\"><style>text{font-family:system-ui,-apple-system,sans-serif;fill:#1e293b}</style><rect width=\"360\" height=\"310\" fill=\"#fff\"/><line x1=\"30\" y1=\"155\" x2=\"344\" y2=\"155\" stroke=\"#475569\" stroke-width=\"1.6\"/><line x1=\"190\" y1=\"12\" x2=\"190\" y2=\"284\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"346\" y=\"159\" font-size=\"11\">x</text><text x=\"186\" y=\"12\" font-size=\"11\">y</text><line x1=\"22\" y1=\"152\" x2=\"22\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"50\" y1=\"152\" x2=\"50\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"78\" y1=\"152\" x2=\"78\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"106\" y1=\"152\" x2=\"106\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"134\" y1=\"152\" x2=\"134\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"162\" y1=\"152\" x2=\"162\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"190\" y1=\"152\" x2=\"190\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"218\" y1=\"152\" x2=\"218\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"246\" y1=\"152\" x2=\"246\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"265\" x2=\"193\" y2=\"265\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"243\" x2=\"193\" y2=\"243\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"221\" x2=\"193\" y2=\"221\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"199\" x2=\"193\" y2=\"199\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"177\" x2=\"193\" y2=\"177\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"155\" x2=\"193\" y2=\"155\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"133\" x2=\"193\" y2=\"133\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"111\" x2=\"193\" y2=\"111\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"89\" x2=\"193\" y2=\"89\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"67\" x2=\"193\" y2=\"67\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"45\" x2=\"193\" y2=\"45\" stroke=\"#94a3b8\"/><line x1=\"50\" y1=\"89\" x2=\"218\" y2=\"265\" stroke=\"#f59e0b\" stroke-width=\"2.4\"/><circle cx=\"50\" cy=\"89\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"55\" y=\"84\" font-size=\"10\">A</text><circle cx=\"246\" cy=\"111\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"251\" y=\"106\" font-size=\"10\">B</text><circle cx=\"218\" cy=\"265\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"223\" y=\"260\" font-size=\"10\">C</text><circle cx=\"134\" cy=\"177\" r=\"4\" fill=\"#f59e0b\"/><text x=\"139\" y=\"171\" font-size=\"10\" fill=\"#b45309\">X</text><line x1=\"50\" y1=\"89\" x2=\"218\" y2=\"265\" stroke=\"#f59e0b\" stroke-width=\"2.4\"/></svg>"
+                  }
+                },
+                {
+                  "explain": "Simplify each coordinate.",
+                  "work": "\\(X = \\left(\\dfrac{-4}{2},\\dfrac{-2}{2}\\right)\\)"
+                },
+                {
+                  "explain": "Pitfall: forgetting to divide by 2 (using the sum directly) gives \\( (-4,-2) \\).",
+                  "work": "X = (-2,-1)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 310\" width=\"360\" height=\"310\" style=\"display:block;margin:.5rem auto;max-width:360px;background:#fff;border:1px solid #e2e8f0;border-radius:10px\"><style>text{font-family:system-ui,-apple-system,sans-serif;fill:#1e293b}</style><rect width=\"360\" height=\"310\" fill=\"#fff\"/><line x1=\"30\" y1=\"155\" x2=\"344\" y2=\"155\" stroke=\"#475569\" stroke-width=\"1.6\"/><line x1=\"190\" y1=\"12\" x2=\"190\" y2=\"284\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"346\" y=\"159\" font-size=\"11\">x</text><text x=\"186\" y=\"12\" font-size=\"11\">y</text><line x1=\"22\" y1=\"152\" x2=\"22\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"50\" y1=\"152\" x2=\"50\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"78\" y1=\"152\" x2=\"78\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"106\" y1=\"152\" x2=\"106\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"134\" y1=\"152\" x2=\"134\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"162\" y1=\"152\" x2=\"162\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"190\" y1=\"152\" x2=\"190\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"218\" y1=\"152\" x2=\"218\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"246\" y1=\"152\" x2=\"246\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"265\" x2=\"193\" y2=\"265\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"243\" x2=\"193\" y2=\"243\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"221\" x2=\"193\" y2=\"221\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"199\" x2=\"193\" y2=\"199\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"177\" x2=\"193\" y2=\"177\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"155\" x2=\"193\" y2=\"155\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"133\" x2=\"193\" y2=\"133\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"111\" x2=\"193\" y2=\"111\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"89\" x2=\"193\" y2=\"89\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"67\" x2=\"193\" y2=\"67\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"45\" x2=\"193\" y2=\"45\" stroke=\"#94a3b8\"/><line x1=\"50\" y1=\"89\" x2=\"218\" y2=\"265\" stroke=\"#f59e0b\" stroke-width=\"2.4\"/><circle cx=\"50\" cy=\"89\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"55\" y=\"84\" font-size=\"10\">A</text><circle cx=\"246\" cy=\"111\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"251\" y=\"106\" font-size=\"10\">B</text><circle cx=\"218\" cy=\"265\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"223\" y=\"260\" font-size=\"10\">C</text><circle cx=\"134\" cy=\"177\" r=\"4\" fill=\"#f59e0b\"/><text x=\"139\" y=\"171\" font-size=\"10\" fill=\"#b45309\">X</text><line x1=\"50\" y1=\"89\" x2=\"218\" y2=\"265\" stroke=\"#f59e0b\" stroke-width=\"2.4\"/></svg>"
+                  }
+                }
+              ],
+              "xp": 1,
+              "hint": "Average the x-coordinates and average the y-coordinates.",
+              "keyPoints": [
+                {
+                  "text": "Find the coordinates of the midpoint X of",
+                  "note": "Average the x-coordinates and average the y-coordinates."
+                }
+              ],
+              "timeLimit": 60
+            },
+            {
+              "id": "gosford2020-q25c",
+              "type": "mc",
+              "stem": "(c) Given that X is also the midpoint of BD, find the coordinates of D.",
+              "options": [
+                "(-6,-6)",
+                "(-6,-4)",
+                "(6,-4)",
+                "(-10,-4)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Use the midpoint formula with B and the unknown D, set equal to X from part (b).",
+                  "work": "\\(-2 = \\dfrac{2+x_D}{2}, \\qquad -1 = \\dfrac{2+y_D}{2}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 310\" width=\"360\" height=\"310\" style=\"display:block;margin:.5rem auto;max-width:360px;background:#fff;border:1px solid #e2e8f0;border-radius:10px\"><style>text{font-family:system-ui,-apple-system,sans-serif;fill:#1e293b}</style><rect width=\"360\" height=\"310\" fill=\"#fff\"/><line x1=\"30\" y1=\"155\" x2=\"344\" y2=\"155\" stroke=\"#475569\" stroke-width=\"1.6\"/><line x1=\"190\" y1=\"12\" x2=\"190\" y2=\"284\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"346\" y=\"159\" font-size=\"11\">x</text><text x=\"186\" y=\"12\" font-size=\"11\">y</text><line x1=\"22\" y1=\"152\" x2=\"22\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"50\" y1=\"152\" x2=\"50\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"78\" y1=\"152\" x2=\"78\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"106\" y1=\"152\" x2=\"106\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"134\" y1=\"152\" x2=\"134\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"162\" y1=\"152\" x2=\"162\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"190\" y1=\"152\" x2=\"190\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"218\" y1=\"152\" x2=\"218\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"246\" y1=\"152\" x2=\"246\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"265\" x2=\"193\" y2=\"265\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"243\" x2=\"193\" y2=\"243\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"221\" x2=\"193\" y2=\"221\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"199\" x2=\"193\" y2=\"199\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"177\" x2=\"193\" y2=\"177\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"155\" x2=\"193\" y2=\"155\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"133\" x2=\"193\" y2=\"133\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"111\" x2=\"193\" y2=\"111\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"89\" x2=\"193\" y2=\"89\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"67\" x2=\"193\" y2=\"67\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"45\" x2=\"193\" y2=\"45\" stroke=\"#94a3b8\"/><line x1=\"50\" y1=\"89\" x2=\"218\" y2=\"265\" stroke=\"#f59e0b\" stroke-width=\"2.4\"/><circle cx=\"50\" cy=\"89\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"55\" y=\"84\" font-size=\"10\">A</text><circle cx=\"246\" cy=\"111\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"251\" y=\"106\" font-size=\"10\">B</text><circle cx=\"218\" cy=\"265\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"223\" y=\"260\" font-size=\"10\">C</text><circle cx=\"134\" cy=\"177\" r=\"4\" fill=\"#f59e0b\"/><text x=\"139\" y=\"171\" font-size=\"10\" fill=\"#b45309\">X</text><line x1=\"50\" y1=\"89\" x2=\"218\" y2=\"265\" stroke=\"#f59e0b\" stroke-width=\"2.4\"/><circle cx=\"22\" cy=\"243\" r=\"4\" fill=\"#10b981\"/><text x=\"27\" y=\"238\" font-size=\"10\" fill=\"#047857\">D</text><line x1=\"246\" y1=\"111\" x2=\"22\" y2=\"243\" stroke=\"#10b981\" stroke-width=\"2\" stroke-dasharray=\"4 3\"/></svg>"
+                  }
+                },
+                {
+                  "explain": "Solve the x-equation first.",
+                  "work": "\\(-4 = 2+x_D \\;\\Rightarrow\\; x_D = -6\\)"
+                },
+                {
+                  "explain": "Solve the y-equation. Pitfall: using B's y-coordinate (\\(2\\)) instead of the given midpoint y-value (\\(-1\\)) in the equation leads to an incorrect \\(y_D\\).",
+                  "work": "\\(-2 = 2+y_D \\;\\Rightarrow\\; y_D = -4 \\;\\Rightarrow\\; D=(-6,-4)\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 310\" width=\"360\" height=\"310\" style=\"display:block;margin:.5rem auto;max-width:360px;background:#fff;border:1px solid #e2e8f0;border-radius:10px\"><style>text{font-family:system-ui,-apple-system,sans-serif;fill:#1e293b}</style><rect width=\"360\" height=\"310\" fill=\"#fff\"/><line x1=\"30\" y1=\"155\" x2=\"344\" y2=\"155\" stroke=\"#475569\" stroke-width=\"1.6\"/><line x1=\"190\" y1=\"12\" x2=\"190\" y2=\"284\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"346\" y=\"159\" font-size=\"11\">x</text><text x=\"186\" y=\"12\" font-size=\"11\">y</text><line x1=\"22\" y1=\"152\" x2=\"22\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"50\" y1=\"152\" x2=\"50\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"78\" y1=\"152\" x2=\"78\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"106\" y1=\"152\" x2=\"106\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"134\" y1=\"152\" x2=\"134\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"162\" y1=\"152\" x2=\"162\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"190\" y1=\"152\" x2=\"190\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"218\" y1=\"152\" x2=\"218\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"246\" y1=\"152\" x2=\"246\" y2=\"158\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"265\" x2=\"193\" y2=\"265\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"243\" x2=\"193\" y2=\"243\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"221\" x2=\"193\" y2=\"221\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"199\" x2=\"193\" y2=\"199\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"177\" x2=\"193\" y2=\"177\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"155\" x2=\"193\" y2=\"155\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"133\" x2=\"193\" y2=\"133\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"111\" x2=\"193\" y2=\"111\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"89\" x2=\"193\" y2=\"89\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"67\" x2=\"193\" y2=\"67\" stroke=\"#94a3b8\"/><line x1=\"187\" y1=\"45\" x2=\"193\" y2=\"45\" stroke=\"#94a3b8\"/><line x1=\"50\" y1=\"89\" x2=\"218\" y2=\"265\" stroke=\"#f59e0b\" stroke-width=\"2.4\"/><circle cx=\"50\" cy=\"89\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"55\" y=\"84\" font-size=\"10\">A</text><circle cx=\"246\" cy=\"111\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"251\" y=\"106\" font-size=\"10\">B</text><circle cx=\"218\" cy=\"265\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"223\" y=\"260\" font-size=\"10\">C</text><circle cx=\"134\" cy=\"177\" r=\"4\" fill=\"#f59e0b\"/><text x=\"139\" y=\"171\" font-size=\"10\" fill=\"#b45309\">X</text><line x1=\"50\" y1=\"89\" x2=\"218\" y2=\"265\" stroke=\"#f59e0b\" stroke-width=\"2.4\"/><circle cx=\"22\" cy=\"243\" r=\"4\" fill=\"#10b981\"/><text x=\"27\" y=\"238\" font-size=\"10\" fill=\"#047857\">D</text><line x1=\"246\" y1=\"111\" x2=\"22\" y2=\"243\" stroke=\"#10b981\" stroke-width=\"2\" stroke-dasharray=\"4 3\"/></svg>"
+                  }
+                }
+              ],
+              "xp": 1,
+              "hint": "Set the midpoint of B and D equal to X, then solve both coordinate equations.",
+              "keyPoints": [
+                {
+                  "text": "midpoint of BD",
+                  "note": "Set the midpoint of B and D equal to X, then solve both coordinate equations."
+                }
+              ],
+              "timeLimit": 60
+            }
+          ],
+          "meta": {
+            "source": "Gosford 2020 Trial Q25",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "gosford-2020"
+          },
+          "hint": "Use the coordinate formulas: gradient (=Delta y/Delta x), midpoint (=((x_1+x_2)/2,(y_1+y_2)/2)).",
+          "keyPoints": [
+            {
+              "text": "Points \\( A(-5,3) \\), \\( B(2,2) \\), and \\(",
+              "note": "Focus on this condition when choosing the method."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     }

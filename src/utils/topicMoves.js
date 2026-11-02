@@ -1,5 +1,6 @@
 import { EXT2_RENUMBER } from './ext2Renumber.js';
 import { EXT1_Y12_RENUMBER } from './ext1Y12Renumber.js';
+import { ADV_Y12_RENUMBER } from './advY12Renumber.js';
 
 // Topics moved to another chapter id keep their own ids, but practice progress
 // on each device is stored under `sapere:tp:{uid}:{chapterId}:{topicId}…`.
@@ -11,11 +12,12 @@ export const MOVED_TOPICS = [
 
 
 const FLAG = 'sapere:topic-moves:v1';
-// Courses re-laid out to a new textbook (Extension 2 in 2026-10, Extension 1 Year 12 in 2026-11): each student's
+// Courses re-laid out to a new textbook (Extension 2 in 2026-10, Extension 1 and Advanced Year 12 in 2026-11): each student's
 // progress on a device follows its topic to the new id (see topicRenumber). Once per student per device, per course.
 const RENUMBERS = [
   ['sapere:ext2-renumber:v1', EXT2_RENUMBER],
   ['sapere:ext1y12-renumber:v1', EXT1_Y12_RENUMBER],
+  ['sapere:advy12-renumber:v1', ADV_Y12_RENUMBER],
 ];
 
 function migrateRenumberedProgress(uid, storage) {

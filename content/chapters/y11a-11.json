@@ -4175,6 +4175,110 @@
             "grade": "12"
           },
           "xp": 3
+        },
+        {
+          "id": "gosford2020-q15",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Solve \\( |1-2\\cos^2x|=1 \\) for \\( 0\\le x\\le2\\pi \\).",
+          "options": [
+            "\\(x=\\dfrac{\\pi}{2},\\ \\dfrac{3\\pi}{2}\\)",
+            "\\(x=0,\\ \\pi,\\ 2\\pi\\)",
+            "\\(x=0,\\ \\dfrac{\\pi}{2},\\ \\pi,\\ \\dfrac{3\\pi}{2},\\ 2\\pi\\)",
+            "\\(x=\\dfrac{\\pi}{4},\\ \\dfrac{3\\pi}{4},\\ \\dfrac{5\\pi}{4},\\ \\dfrac{7\\pi}{4}\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "An absolute value equation \\( |A|=1 \\) splits into two cases: \\( A=1 \\) or \\( A=-1 \\).",
+              "work": "\\(1-2\\cos^2x = 1 \\quad \\text{or} \\quad 1-2\\cos^2x = -1\\)"
+            },
+            {
+              "explain": "Solve the first case: \\( 1-2\\cos^2x=1 \\) gives \\( \\cos^2x=0 \\), so \\( \\cos x=0 \\).",
+              "work": "\\(\\cos^2x=0 \\;\\Rightarrow\\; \\cos x = 0 \\;\\Rightarrow\\; x=\\dfrac{\\pi}{2},\\ \\dfrac{3\\pi}{2}\\)"
+            },
+            {
+              "explain": "Solve the second case: \\( 1-2\\cos^2x=-1 \\) gives \\( \\cos^2x=1 \\), so \\( \\cos x=\\pm1 \\).",
+              "work": "\\(\\cos^2x=1 \\;\\Rightarrow\\; \\cos x = \\pm1 \\;\\Rightarrow\\; x=0,\\ \\pi,\\ 2\\pi\\)"
+            },
+            {
+              "explain": "Combine both cases for the full solution set on \\( [0,2\\pi] \\). Pitfall: solving only one of the two absolute-value cases misses half the solutions.",
+              "work": "\\(x=0,\\ \\dfrac{\\pi}{2},\\ \\pi,\\ \\dfrac{3\\pi}{2},\\ 2\\pi\\)"
+            }
+          ],
+          "meta": {
+            "source": "Gosford 2020 Trial Q15",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "gosford-2020"
+          },
+          "dna": {
+            "dnaId": "TRIG-EQ-01"
+          },
+          "xp": 1,
+          "hint": "Split the absolute-value equation into the cases where the expression equals (1) or (-1).",
+          "keyPoints": [
+            {
+              "text": "|1",
+              "note": "Solve both equations created by the absolute value, keeping only x in the stated interval."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "ascham2020-q21",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve \\(2\\sin 2x+\\sqrt{3}=0\\) in the domain \\([0,2\\pi]\\).",
+          "options": [
+            "\\(x=\\frac{2\\pi}{3},\\frac{5\\pi}{6}\\)",
+            "\\(x=\\frac{2\\pi}{3},\\frac{5\\pi}{6},\\frac{5\\pi}{3},\\frac{11\\pi}{6}\\)",
+            "\\(x=\\frac{\\pi}{3},\\frac{2\\pi}{3},\\frac{4\\pi}{3},\\frac{5\\pi}{3}\\)",
+            "\\(x=\\frac{5\\pi}{6},\\frac{7\\pi}{6}\\)"
+          ],
+          "answer": 1,
+          "hint": "Isolate sin(2x), use its reference angle and negative-sine quadrants, then remember 2x spans a 4π interval.",
+          "keyPoints": [
+            {
+              "text": "\\([0,2\\pi]\\)",
+              "note": "Solve for sin(2x), find all solutions while 2x ranges from 0 to 4π, then halve each angle."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Move √3 and divide by 2.",
+              "work": "\\(2\\sin2x=-\\sqrt3\\Rightarrow\\sin2x=-\\frac{\\sqrt3}{2}\\)"
+            },
+            {
+              "explain": "The reference angle is π/3 because \\(\\sin(\\pi/3)=\\sqrt3/2\\). Sine is negative in quadrants III and IV.",
+              "work": "\\(2x=\\frac{4\\pi}{3},\\frac{5\\pi}{3}\\quad\\text{within }[0,2\\pi)\\)"
+            },
+            {
+              "explain": "Because x ranges from 0 to 2π, the angle 2x ranges from 0 to 4π, so include the corresponding solutions one full 2π cycle later.",
+              "work": "\\(2x=\\frac{10\\pi}{3},\\frac{11\\pi}{3}\\)"
+            },
+            {
+              "explain": "Divide each solution for 2x by 2 and check that x lies in [0,2π].",
+              "work": "\\(x=\\frac{2\\pi}{3},\\frac{5\\pi}{6},\\frac{5\\pi}{3},\\frac{11\\pi}{6}\\)"
+            },
+            {
+              "explain": "These are all four solutions in the required domain.",
+              "work": "\\(\\boxed{x=\\frac{2\\pi}{3},\\frac{5\\pi}{6},\\frac{5\\pi}{3},\\frac{11\\pi}{6}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 2U Trials.pdf",
+            "school": "Ascham School",
+            "examType": "Trial HSC",
+            "year": 2020,
+            "grade": "11/12 Advanced",
+            "sourceQuestion": 21,
+            "sourcePart": null,
+            "sourcePage": null,
+            "sourceTopic": "y12a-2I"
+          }
         }
       ]
     },

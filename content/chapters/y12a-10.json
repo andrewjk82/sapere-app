@@ -4,6 +4,516 @@
   "year": "Year 12",
   "topics": [
     {
+      "topicId": "y12a-10A",
+      "code": "10A",
+      "title": "Cumulative frequency and grouping",
+      "questions": [
+        {
+          "id": "bb2020-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "John works in a cake shop. He records which of the five most popular cakes each customer buys. What type of data is this?",
+          "options": [
+            "Categorical nominal",
+            "Quantitative continuous",
+            "Categorical ordinal",
+            "Quantitative discrete"
+          ],
+          "answer": 0,
+          "hint": "Ask: are the categories names with no natural order, or numbers?",
+          "steps": [
+            {
+              "explain": "The data records a cake *name* (a category), not a number, so it is categorical rather than quantitative.",
+              "work": "Categorical, not quantitative"
+            },
+            {
+              "explain": "The five cake types have no natural ranking or order (e.g. \"chocolate\" is not \"more\" or \"less\" than \"vanilla\"), so it is nominal rather than ordinal.",
+              "work": "\\(\\therefore\\) Categorical nominal"
+            }
+          ],
+          "meta": {
+            "source": "Blacktown Boys HS 2020 2U Trials",
+            "school": "Blacktown Boys High School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          },
+          "xp": 1
+        },
+        {
+          "id": "bb2020-q7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The Pareto chart below shows the number of orders received each month (bars) and the cumulative percentage of orders (line). What percentage of orders were received in May?",
+          "figure": {
+            "svg": "fig:93e877b61c"
+          },
+          "options": [
+            "18%",
+            "69%",
+            "30%",
+            "45%"
+          ],
+          "answer": 0,
+          "hint": "May's own share is the *difference* between the cumulative % up to May and the cumulative % up to April.",
+          "steps": [
+            {
+              "explain": "The cumulative % line reaches 50% after April and 70% after May, so May alone contributed the gap between these two readings.",
+              "work": "\\(70\\% - 50\\% = 20\\%\\) (cumulative reading)",
+              "figure": {
+                "svg": "fig:93e877b61c"
+              }
+            },
+            {
+              "explain": "Checking directly from the bar heights confirms this: May had 9 orders out of \\(25+9+7.5+5+2.5=49\\) total orders.",
+              "work": "\\(\\dfrac{9}{25+9+7.5+5+2.5} = \\dfrac{9}{49} \\approx 18\\%\\)"
+            },
+            {
+              "explain": "The bar-height calculation is the precise one — May accounts for 18% of total orders.",
+              "work": "\\(\\therefore\\) May \\(\\approx 18\\%\\)"
+            }
+          ],
+          "meta": {
+            "source": "Blacktown Boys HS 2020 2U Trials",
+            "school": "Blacktown Boys High School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          },
+          "xp": 2
+        },
+        {
+          "id": "hh2020-q14",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "A sample of 14 people were asked how many hours of television they watched the previous night. The results are shown in the dot plot below. Find the mean and sample standard deviation of these times, correct to one decimal place.",
+          "figure": {
+            "svg": "fig:83e73c8654"
+          },
+          "answer": "",
+          "steps": [
+            {
+              "explain": "Read the frequencies directly from the dot plot: \\(x=0\\) has 3 dots, \\(x=1\\) has 2, \\(x=2\\) has 4, \\(x=3\\) has 2, \\(x=4\\) has 2, \\(x=5\\) has 1 (total \\(3+2+4+2+2+1=14\\), matching the sample size).",
+              "work": "Frequencies: \\(f(0)=3, f(1)=2, f(2)=4, f(3)=2, f(4)=2, f(5)=1\\)",
+              "figure": {
+                "svg": "fig:83e73c8654"
+              }
+            },
+            {
+              "explain": "Convert each frequency to a probability (proportion) by dividing by 14, then compute the mean \\(\\bar x = \\sum x\\cdot p\\).",
+              "work": "\\(\\bar x = 0\\!\\times\\!\\dfrac{3}{14}+1\\!\\times\\!\\dfrac{2}{14}+2\\!\\times\\!\\dfrac{4}{14}+3\\!\\times\\!\\dfrac{2}{14}+4\\!\\times\\!\\dfrac{2}{14}+5\\!\\times\\!\\dfrac{1}{14}\\)"
+            },
+            {
+              "explain": "Evaluate the sum.",
+              "work": "\\(\\bar x = \\dfrac{0+2+8+6+8+5}{14} = \\dfrac{29}{14} \\approx 2.1\\)"
+            },
+            {
+              "explain": "For the sample standard deviation, first find \\(E(X^2)\\), then use \\(s = \\sqrt{E(X^2)-\\bar x^2}\\) (using calculator statistics mode for the sample SD directly is equally valid).",
+              "work": "\\(E(X^2) = 0+\\dfrac{2}{14}+4\\!\\times\\!\\dfrac{4}{14}+9\\!\\times\\!\\dfrac{2}{14}+16\\!\\times\\!\\dfrac{2}{14}+25\\!\\times\\!\\dfrac{1}{14}\\)"
+            },
+            {
+              "explain": "Substitute into the standard deviation formula and evaluate.",
+              "work": "\\(s = \\sqrt{\\left(\\dfrac{2+16+18+32+25}{14}\\right)-2.1^2} \\approx 1.5\\)"
+            },
+            {
+              "explain": "State both final answers, rounded to 1 decimal place.",
+              "work": "\\(\\therefore\\) mean \\(\\approx 2.1\\), sample standard deviation \\(\\approx 1.5\\)"
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "source": "Hunters Hill HS 2020 2U Trials",
+            "school": "Hunters Hill High School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          },
+          "xp": 2
+        },
+        {
+          "id": "ascham2020-q05",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Ascham School collected data on the reasons given by students for being late to school. The Pareto chart shows the data collected. Approximately what percentage of students gave the reasons “Traffic” or “Sport training”?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 700 410\" role=\"img\"><rect x=\"0\" y=\"0\" width=\"700\" height=\"410\" fill=\"#fff\" stroke=\"#e2e8f0\" stroke-width=\"1\" rx=\"8\"/><line x1=\"70\" y1=\"325.0\" x2=\"660\" y2=\"325.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"329.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >0</text><line x1=\"70\" y1=\"301.0\" x2=\"660\" y2=\"301.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"305.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >20</text><line x1=\"70\" y1=\"277.0\" x2=\"660\" y2=\"277.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"281.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >40</text><line x1=\"70\" y1=\"253.0\" x2=\"660\" y2=\"253.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"257.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >60</text><line x1=\"70\" y1=\"229.0\" x2=\"660\" y2=\"229.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"233.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >80</text><line x1=\"70\" y1=\"205.0\" x2=\"660\" y2=\"205.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"209.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >100</text><line x1=\"70\" y1=\"181.0\" x2=\"660\" y2=\"181.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"185.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >120</text><line x1=\"70\" y1=\"157.0\" x2=\"660\" y2=\"157.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"161.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >140</text><line x1=\"70\" y1=\"133.0\" x2=\"660\" y2=\"133.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"137.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >160</text><line x1=\"70\" y1=\"109.0\" x2=\"660\" y2=\"109.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"113.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >180</text><line x1=\"70\" y1=\"85.0\" x2=\"660\" y2=\"85.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"89.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >200</text><rect x=\"100\" y=\"235.0\" width=\"46\" height=\"90.0\" fill=\"#38bdf8\" stroke=\"#0369a1\" stroke-width=\"1\" /><text x=\"118\" y=\"337\" transform=\"rotate(-55 118 337)\" font-family=\"Arial\" font-size=\"11\" fill=\"#334155\">Public transport</text><rect x=\"178\" y=\"283.0\" width=\"46\" height=\"42.0\" fill=\"#fb923c\" stroke=\"#0369a1\" stroke-width=\"1\" /><text x=\"196\" y=\"337\" transform=\"rotate(-55 196 337)\" font-family=\"Arial\" font-size=\"11\" fill=\"#334155\">Traffic</text><rect x=\"256\" y=\"289.0\" width=\"46\" height=\"36.0\" fill=\"#fb923c\" stroke=\"#0369a1\" stroke-width=\"1\" /><text x=\"274\" y=\"337\" transform=\"rotate(-55 274 337)\" font-family=\"Arial\" font-size=\"11\" fill=\"#334155\">Sport training</text><rect x=\"334\" y=\"295.0\" width=\"46\" height=\"30.0\" fill=\"#38bdf8\" stroke=\"#0369a1\" stroke-width=\"1\" /><text x=\"352\" y=\"337\" transform=\"rotate(-55 352 337)\" font-family=\"Arial\" font-size=\"11\" fill=\"#334155\">Appointment</text><rect x=\"412\" y=\"301.0\" width=\"46\" height=\"24.0\" fill=\"#38bdf8\" stroke=\"#0369a1\" stroke-width=\"1\" /><text x=\"430\" y=\"337\" transform=\"rotate(-55 430 337)\" font-family=\"Arial\" font-size=\"11\" fill=\"#334155\">Music lesson</text><rect x=\"490\" y=\"313.0\" width=\"46\" height=\"12.0\" fill=\"#38bdf8\" stroke=\"#0369a1\" stroke-width=\"1\" /><text x=\"508\" y=\"337\" transform=\"rotate(-55 508 337)\" font-family=\"Arial\" font-size=\"11\" fill=\"#334155\">Overslept</text><rect x=\"568\" y=\"319.0\" width=\"46\" height=\"6.0\" fill=\"#38bdf8\" stroke=\"#0369a1\" stroke-width=\"1\" /><text x=\"586\" y=\"337\" transform=\"rotate(-55 586 337)\" font-family=\"Arial\" font-size=\"11\" fill=\"#334155\">Weather</text><polyline points=\"123,235.0 201,193.0 279,157.0 357,127.0 435,103.0 513,91.0 591,85.0\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"3\"/><circle cx=\"123\" cy=\"235.0\" r=\"3\" fill=\"#1d4ed8\" stroke=\"#1d4ed8\" stroke-width=\"1\"/><circle cx=\"201\" cy=\"193.0\" r=\"3\" fill=\"#1d4ed8\" stroke=\"#1d4ed8\" stroke-width=\"1\"/><circle cx=\"279\" cy=\"157.0\" r=\"3\" fill=\"#1d4ed8\" stroke=\"#1d4ed8\" stroke-width=\"1\"/><circle cx=\"357\" cy=\"127.0\" r=\"3\" fill=\"#1d4ed8\" stroke=\"#1d4ed8\" stroke-width=\"1\"/><circle cx=\"435\" cy=\"103.0\" r=\"3\" fill=\"#1d4ed8\" stroke=\"#1d4ed8\" stroke-width=\"1\"/><circle cx=\"513\" cy=\"91.0\" r=\"3\" fill=\"#1d4ed8\" stroke=\"#1d4ed8\" stroke-width=\"1\"/><circle cx=\"591\" cy=\"85.0\" r=\"3\" fill=\"#1d4ed8\" stroke=\"#1d4ed8\" stroke-width=\"1\"/><text x=\"350\" y=\"27\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\" >Reasons for being late to school</text></svg>"
+          },
+          "options": [
+            "23%",
+            "33%",
+            "65%",
+            "70%"
+          ],
+          "answer": 1,
+          "hint": "Add the two bar counts for Traffic and Sport training, then divide by the total count.",
+          "keyPoints": [
+            {
+              "text": "“Traffic” or “Sport training”",
+              "note": "Add the two category frequencies from the Pareto chart, then divide by the total number of students."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the two relevant bars: Traffic is about 35 students and Sport training is about 30. The total across all bars is about 200.",
+              "work": "\\(35+30=65,\\quad N=75+35+30+25+20+10+5=200\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 700 410\" role=\"img\"><rect x=\"0\" y=\"0\" width=\"700\" height=\"410\" fill=\"#fff\" stroke=\"#e2e8f0\" stroke-width=\"1\" rx=\"8\"/><line x1=\"70\" y1=\"325.0\" x2=\"660\" y2=\"325.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"329.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >0</text><line x1=\"70\" y1=\"301.0\" x2=\"660\" y2=\"301.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"305.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >20</text><line x1=\"70\" y1=\"277.0\" x2=\"660\" y2=\"277.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"281.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >40</text><line x1=\"70\" y1=\"253.0\" x2=\"660\" y2=\"253.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"257.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >60</text><line x1=\"70\" y1=\"229.0\" x2=\"660\" y2=\"229.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"233.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >80</text><line x1=\"70\" y1=\"205.0\" x2=\"660\" y2=\"205.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"209.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >100</text><line x1=\"70\" y1=\"181.0\" x2=\"660\" y2=\"181.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"185.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >120</text><line x1=\"70\" y1=\"157.0\" x2=\"660\" y2=\"157.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"161.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >140</text><line x1=\"70\" y1=\"133.0\" x2=\"660\" y2=\"133.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"137.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >160</text><line x1=\"70\" y1=\"109.0\" x2=\"660\" y2=\"109.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"113.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >180</text><line x1=\"70\" y1=\"85.0\" x2=\"660\" y2=\"85.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"89.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >200</text><rect x=\"100\" y=\"235.0\" width=\"46\" height=\"90.0\" fill=\"#38bdf8\" stroke=\"#0369a1\" stroke-width=\"1\" /><text x=\"118\" y=\"337\" transform=\"rotate(-55 118 337)\" font-family=\"Arial\" font-size=\"11\" fill=\"#334155\">Public transport</text><rect x=\"178\" y=\"283.0\" width=\"46\" height=\"42.0\" fill=\"#fb923c\" stroke=\"#0369a1\" stroke-width=\"1\" /><text x=\"196\" y=\"337\" transform=\"rotate(-55 196 337)\" font-family=\"Arial\" font-size=\"11\" fill=\"#334155\">Traffic</text><rect x=\"256\" y=\"289.0\" width=\"46\" height=\"36.0\" fill=\"#fb923c\" stroke=\"#0369a1\" stroke-width=\"1\" /><text x=\"274\" y=\"337\" transform=\"rotate(-55 274 337)\" font-family=\"Arial\" font-size=\"11\" fill=\"#334155\">Sport training</text><rect x=\"334\" y=\"295.0\" width=\"46\" height=\"30.0\" fill=\"#38bdf8\" stroke=\"#0369a1\" stroke-width=\"1\" /><text x=\"352\" y=\"337\" transform=\"rotate(-55 352 337)\" font-family=\"Arial\" font-size=\"11\" fill=\"#334155\">Appointment</text><rect x=\"412\" y=\"301.0\" width=\"46\" height=\"24.0\" fill=\"#38bdf8\" stroke=\"#0369a1\" stroke-width=\"1\" /><text x=\"430\" y=\"337\" transform=\"rotate(-55 430 337)\" font-family=\"Arial\" font-size=\"11\" fill=\"#334155\">Music lesson</text><rect x=\"490\" y=\"313.0\" width=\"46\" height=\"12.0\" fill=\"#38bdf8\" stroke=\"#0369a1\" stroke-width=\"1\" /><text x=\"508\" y=\"337\" transform=\"rotate(-55 508 337)\" font-family=\"Arial\" font-size=\"11\" fill=\"#334155\">Overslept</text><rect x=\"568\" y=\"319.0\" width=\"46\" height=\"6.0\" fill=\"#38bdf8\" stroke=\"#0369a1\" stroke-width=\"1\" /><text x=\"586\" y=\"337\" transform=\"rotate(-55 586 337)\" font-family=\"Arial\" font-size=\"11\" fill=\"#334155\">Weather</text><polyline points=\"123,235.0 201,193.0 279,157.0 357,127.0 435,103.0 513,91.0 591,85.0\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"3\"/><circle cx=\"123\" cy=\"235.0\" r=\"3\" fill=\"#1d4ed8\" stroke=\"#1d4ed8\" stroke-width=\"1\"/><circle cx=\"201\" cy=\"193.0\" r=\"3\" fill=\"#1d4ed8\" stroke=\"#1d4ed8\" stroke-width=\"1\"/><circle cx=\"279\" cy=\"157.0\" r=\"3\" fill=\"#1d4ed8\" stroke=\"#1d4ed8\" stroke-width=\"1\"/><circle cx=\"357\" cy=\"127.0\" r=\"3\" fill=\"#1d4ed8\" stroke=\"#1d4ed8\" stroke-width=\"1\"/><circle cx=\"435\" cy=\"103.0\" r=\"3\" fill=\"#1d4ed8\" stroke=\"#1d4ed8\" stroke-width=\"1\"/><circle cx=\"513\" cy=\"91.0\" r=\"3\" fill=\"#1d4ed8\" stroke=\"#1d4ed8\" stroke-width=\"1\"/><circle cx=\"591\" cy=\"85.0\" r=\"3\" fill=\"#1d4ed8\" stroke=\"#1d4ed8\" stroke-width=\"1\"/><text x=\"350\" y=\"27\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\" >Reasons for being late to school</text></svg>"
+              }
+            },
+            {
+              "explain": "A percentage is the part divided by the whole, multiplied by 100.",
+              "work": "\\(\\frac{65}{200}\\times100\\%=32.5\\%\\)"
+            },
+            {
+              "explain": "The closest listed percentage is 33%. The cumulative line is not the value to add here; use the bar counts.",
+              "work": "\\(32.5\\%\\approx33\\%\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 2U Trials.pdf",
+            "school": "Ascham School",
+            "examType": "Trial HSC",
+            "year": 2020,
+            "grade": "11/12 Advanced",
+            "sourceQuestion": 5,
+            "sourcePart": null,
+            "sourcePage": null,
+            "sourceTopic": "y12a-9A"
+          }
+        },
+        {
+          "id": "hg2020-q7",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Which statement is true for an ungrouped data set with no outliers?",
+          "options": [
+            "The largest possible range is 5 times the interquartile range.",
+            "The largest possible range is 3 times the interquartile range.",
+            "The largest possible range is 4 times the interquartile range.",
+            "The largest possible range is 2 times the interquartile range."
+          ],
+          "answer": 2,
+          "hint": "A value is an outlier if it lies more than \\(1.5 \\times \\text{IQR}\\) beyond \\(Q_1\\) or \\(Q_3\\) — with no outliers, the most extreme values sit right at that boundary.",
+          "steps": [
+            {
+              "explain": "With no outliers, the minimum and maximum values can each be at most \\(1.5\\,\\text{IQR}\\) away from \\(Q_1\\) and \\(Q_3\\) respectively (any further and they would be outliers).",
+              "work": "Distance below \\(Q_1\\) \\(\\le 1.5\\,\\text{IQR}\\); distance above \\(Q_3\\) \\(\\le 1.5\\,\\text{IQR}\\)"
+            },
+            {
+              "explain": "The range spans from the minimum to the maximum, which is the IQR itself plus the two 1.5-IQR margins on either side.",
+              "work": "Range \\(\\le 1.5\\,\\text{IQR} + \\text{IQR} + 1.5\\,\\text{IQR}\\)"
+            },
+            {
+              "explain": "Add the three portions together.",
+              "work": "\\(= 4\\,\\text{IQR}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Hornsby Girls HS 2020 2U Trials",
+            "school": "Hornsby Girls High School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          },
+          "xp": 3
+        },
+        {
+          "id": "hh2020-q30",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "The scatterplot shows the relationship between expenditure per primary school student (as a % of GDP) and life expectancy (years) for 15 countries. The lower quartile of expenditure is \\(Q_L=8.4\\) and upper quartile \\(Q_U=22.5\\).",
+          "figure": {
+            "svg": "fig:4dc29bfc05"
+          },
+          "parts": [
+            {
+              "id": "hh2020-q30a",
+              "type": "mc",
+              "stem": "(a) What is the interquartile range for the expenditure data?",
+              "options": [
+                "\\(14.1\\)",
+                "\\(30.9\\)",
+                "\\(8.4\\)",
+                "\\(22.5\\)"
+              ],
+              "answer": 0,
+              "hint": "IQR \\(= Q_U - Q_L\\).",
+              "steps": [
+                {
+                  "explain": "Subtract the lower quartile from the upper quartile.",
+                  "work": "\\(\\text{IQR} = Q_U-Q_L = 22.5-8.4\\)"
+                },
+                {
+                  "explain": "Evaluate.",
+                  "work": "\\(= 14.1\\)"
+                }
+              ],
+              "xp": 2
+            },
+            {
+              "id": "hh2020-q30b",
+              "type": "mc",
+              "stem": "(b) Another country has an expenditure of 47.6% of GDP. Would this country be an outlier for this data set?",
+              "options": [
+                "Yes, since \\(47.6 > Q_U\\)",
+                "No, since 47.6 is close to the other high values",
+                "No, since \\(47.6 < 100\\)",
+                "Yes, since \\(47.6 > Q_U+1.5\\times\\text{IQR} = 43.65\\)"
+              ],
+              "answer": 3,
+              "hint": "A value is an outlier if it lies beyond \\(Q_U+1.5\\times\\text{IQR}\\) (or below \\(Q_L-1.5\\times\\text{IQR}\\)).",
+              "steps": [
+                {
+                  "explain": "Calculate the outlier boundary above \\(Q_U\\), using the IQR found in part (a).",
+                  "work": "\\(Q_U+1.5\\times\\text{IQR} = 22.5+1.5(14.1) = 22.5+21.15 = 43.65\\)"
+                },
+                {
+                  "explain": "Compare the new country's value to this boundary.",
+                  "work": "\\(47.6 > 43.65\\)"
+                },
+                {
+                  "explain": "Since the value exceeds the outlier boundary, it is classified as an outlier.",
+                  "work": "\\(\\therefore\\) Yes, it is an outlier."
+                }
+              ],
+              "xp": 2
+            },
+            {
+              "id": "hh2020-q30c",
+              "type": "mc",
+              "stem": "(d) Using the least-squares line \\(y=1.29x+49.9\\), estimate the life expectancy in a country with an expenditure of 18% of GDP.",
+              "options": [
+                "\\(\\approx 23.2\\) years",
+                "\\(\\approx 90.1\\) years",
+                "\\(\\approx 73.1\\) years (accept 72-74)",
+                "\\(\\approx 49.9\\) years"
+              ],
+              "answer": 2,
+              "hint": "Substitute \\(x=18\\) into the given regression line.",
+              "steps": [
+                {
+                  "explain": "Substitute \\(x=18\\) into the regression equation.",
+                  "work": "\\(y = 1.29(18)+49.9\\)"
+                },
+                {
+                  "explain": "Evaluate.",
+                  "work": "\\(y = 23.22+49.9 = 73.12\\)"
+                },
+                {
+                  "explain": "Round appropriately (reading directly from the graph, values between 72-74 are all acceptable).",
+                  "work": "\\(\\therefore\\) life expectancy \\(\\approx 73\\) years"
+                }
+              ],
+              "xp": 2
+            },
+            {
+              "id": "hh2020-q30d",
+              "type": "review",
+              "stem": "(e) Why is this line NOT useful for predicting life expectancy in a country with an expenditure of 60% of its GDP?",
+              "answer": "",
+              "steps": [
+                {
+                  "explain": "Substitute \\(x=60\\) into the regression line to see what it predicts.",
+                  "work": "\\(y = 1.29(60)+49.9 = 77.4+49.9 = 127.3\\)"
+                },
+                {
+                  "explain": "This predicted life expectancy (over 100 years) far exceeds any realistic human life expectancy, and 60% of GDP is well outside the range of the original data (5%-27.5%).",
+                  "work": "Predicted \\(y>100\\), unrealistic; \\(x=60\\) is outside the observed data range"
+                },
+                {
+                  "explain": "This is extrapolation — using the line far beyond the range it was fitted to — which is not a reliable prediction method.",
+                  "work": "\\(\\therefore\\) the line is only reliable (predictive) within the range of the original data, not for extrapolated values like 60% GDP."
+                }
+              ],
+              "manual": true,
+              "xp": 2
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "source": "Hunters Hill HS 2020 2U Trials",
+            "school": "Hunters Hill High School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-2u-q14a",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Sets of data on the attention span of participants (in seconds) are collected for two groups of people. The stem-and-leaf plot shows the data for Group X. Using the same scale as the given box plot for Group A, draw a box plot for Group X.",
+          "figure": {
+            "svg": "fig:b966c2710e"
+          },
+          "answer": "",
+          "steps": [
+            {
+              "explain": "List the 15 values for Group X in order from the stem-and-leaf plot, then find the five-number summary (minimum, \\(Q_1\\), median, \\(Q_3\\), maximum).",
+              "work": "\\(23,24,29,31,32,35,37,41,42,43,43,44,45,46,47\\)"
+            },
+            {
+              "explain": "With \\(n=15\\) values, the median is the 8th value. \\(Q_1\\) is the median of the lower 7 values, \\(Q_3\\) is the median of the upper 7 values.",
+              "work": "Median = 41, \\(Q_1 = 31\\), \\(Q_3 = 44\\)"
+            },
+            {
+              "explain": "Draw the box plot using this five-number summary, aligned to the same number-line scale as Group A shown above.",
+              "work": "<svg viewBox=\"0 0 400 190\" width=\"400\" height=\"190\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(20,20)\"><line x1=\"175\" y1=\"30\" x2=\"213.5\" y2=\"30\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"296\" y1=\"30\" x2=\"323.5\" y2=\"30\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"175\" y1=\"22\" x2=\"175\" y2=\"38\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"323.5\" y1=\"22\" x2=\"323.5\" y2=\"38\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><rect x=\"213.5\" y=\"16\" width=\"82.5\" height=\"28\" fill=\"#e2e8f0\" fill-opacity=\"0.6\" stroke=\"#94a3b8\" stroke-width=\"2\"/><line x1=\"257.5\" y1=\"16\" x2=\"257.5\" y2=\"44\" stroke=\"#94a3b8\" stroke-width=\"2.2\"/><text x=\"53.0\" y=\"34.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">Group A</text><line x1=\"191.5\" y1=\"90\" x2=\"235.5\" y2=\"90\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"307\" y1=\"90\" x2=\"323.5\" y2=\"90\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"191.5\" y1=\"82\" x2=\"191.5\" y2=\"98\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"323.5\" y1=\"82\" x2=\"323.5\" y2=\"98\" stroke=\"#334155\" stroke-width=\"1.5\"/><rect x=\"235.5\" y=\"76\" width=\"71.5\" height=\"28\" fill=\"#dbeafe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"290.5\" y1=\"76\" x2=\"290.5\" y2=\"104\" stroke=\"#dc2626\" stroke-width=\"2.2\"/><text x=\"53.0\" y=\"94.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">Group X</text><line x1=\"65\" y1=\"130\" x2=\"360\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><line x1=\"175\" y1=\"126\" x2=\"175\" y2=\"134\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"175.0\" y=\"148.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">20</text><line x1=\"202.5\" y1=\"126\" x2=\"202.5\" y2=\"134\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"202.5\" y=\"148.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">25</text><line x1=\"230\" y1=\"126\" x2=\"230\" y2=\"134\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"230.0\" y=\"148.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">30</text><line x1=\"257.5\" y1=\"126\" x2=\"257.5\" y2=\"134\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"257.5\" y=\"148.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">35</text><line x1=\"285\" y1=\"126\" x2=\"285\" y2=\"134\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"285.0\" y=\"148.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">40</text><line x1=\"312.5\" y1=\"126\" x2=\"312.5\" y2=\"134\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"312.5\" y=\"148.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">45</text><line x1=\"340\" y1=\"126\" x2=\"340\" y2=\"134\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"340.0\" y=\"148.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">50</text></g></svg>\n\nMin = 23, \\(Q_1\\) = 31, Median = 41, \\(Q_3\\) = 44, Max = 47"
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "source": "Hills Grammar 2025 2U Trials",
+            "school": "The Hills Grammar School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          },
+          "xp": 2
+        },
+        {
+          "id": "hillsgrammar-25-2u-q14b",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Compare the skew and spread of the two sets of data (Group A and Group X), quoting appropriate results from the parallel box plots.",
+          "figure": {
+            "svg": "fig:8bed939369"
+          },
+          "answer": "",
+          "steps": [
+            {
+              "explain": "Compare spread using the range (max − min) and interquartile range (\\(Q_3-Q_1\\)) of each group, read directly off the box plots.",
+              "work": "<svg viewBox=\"0 0 400 190\" width=\"400\" height=\"190\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(20,20)\"><line x1=\"175\" y1=\"30\" x2=\"213.5\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.5\"/><line x1=\"296\" y1=\"30\" x2=\"323.5\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.5\"/><line x1=\"175\" y1=\"22\" x2=\"175\" y2=\"38\" stroke=\"#475569\" stroke-width=\"1.5\"/><line x1=\"323.5\" y1=\"22\" x2=\"323.5\" y2=\"38\" stroke=\"#475569\" stroke-width=\"1.5\"/><rect x=\"213.5\" y=\"16\" width=\"82.5\" height=\"28\" fill=\"#dbeafe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"257.5\" y1=\"16\" x2=\"257.5\" y2=\"44\" stroke=\"#dc2626\" stroke-width=\"2.2\"/><text x=\"53.0\" y=\"34.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">Group A</text><line x1=\"191.5\" y1=\"90\" x2=\"235.5\" y2=\"90\" stroke=\"#475569\" stroke-width=\"1.5\"/><line x1=\"307\" y1=\"90\" x2=\"323.5\" y2=\"90\" stroke=\"#475569\" stroke-width=\"1.5\"/><line x1=\"191.5\" y1=\"82\" x2=\"191.5\" y2=\"98\" stroke=\"#475569\" stroke-width=\"1.5\"/><line x1=\"323.5\" y1=\"82\" x2=\"323.5\" y2=\"98\" stroke=\"#475569\" stroke-width=\"1.5\"/><rect x=\"235.5\" y=\"76\" width=\"71.5\" height=\"28\" fill=\"#dbeafe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"290.5\" y1=\"76\" x2=\"290.5\" y2=\"104\" stroke=\"#dc2626\" stroke-width=\"2.2\"/><text x=\"53.0\" y=\"94.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">Group X</text><line x1=\"65\" y1=\"130\" x2=\"360\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><line x1=\"175\" y1=\"126\" x2=\"175\" y2=\"134\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"175.0\" y=\"148.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">20</text><line x1=\"202.5\" y1=\"126\" x2=\"202.5\" y2=\"134\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"202.5\" y=\"148.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">25</text><line x1=\"230\" y1=\"126\" x2=\"230\" y2=\"134\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"230.0\" y=\"148.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">30</text><line x1=\"257.5\" y1=\"126\" x2=\"257.5\" y2=\"134\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"257.5\" y=\"148.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">35</text><line x1=\"285\" y1=\"126\" x2=\"285\" y2=\"134\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"285.0\" y=\"148.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">40</text><line x1=\"312.5\" y1=\"126\" x2=\"312.5\" y2=\"134\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"312.5\" y=\"148.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">45</text><line x1=\"340\" y1=\"126\" x2=\"340\" y2=\"134\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"340.0\" y=\"148.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">50</text></g></svg>\n\n\\(\\text{Group A: range} = 47-20 = 27, \\quad IQR = 42-27 = 15\\)\n\\(\\text{Group X: range} = 47-23 = 24, \\quad IQR = 44-31 = 13\\)"
+            },
+            {
+              "explain": "Both the range and IQR are larger for Group A than for Group X, so Group A's data is more spread out overall.",
+              "work": "\\(27 > 24 \\text{ and } 15 > 13 \\implies \\text{Group A is more spread out than Group X}\\)"
+            },
+            {
+              "explain": "Compare skew by looking at how the median splits each box, and by comparing the two whisker lengths. For Group A: distance from \\(Q_1\\) to median vs median to \\(Q_3\\).",
+              "work": "\\(\\text{Group A: } \\text{med}-Q_1 = 35-27=8, \\quad Q_3-\\text{med} = 42-35=7\\)"
+            },
+            {
+              "explain": "The median sits slightly closer to \\(Q_3\\) than to \\(Q_1\\) (7 vs 8), and the lower whisker (\\(Q_1-\\min\\)) is longer than the upper whisker (\\(\\max-Q_3\\)) — both signs point the same way.",
+              "work": "\\(\\text{lower whisker} = 27-20=7 > \\text{upper whisker} = 47-42=5 \\implies \\text{Group A is mildly negatively (left) skewed}\\)"
+            },
+            {
+              "explain": "Repeat the same comparison for Group X.",
+              "work": "\\(\\text{Group X: } \\text{med}-Q_1 = 41-31=10, \\quad Q_3-\\text{med} = 44-41=3\\)"
+            },
+            {
+              "explain": "Here the median sits MUCH closer to \\(Q_3\\) than to \\(Q_1\\) (3 vs 10 — a far bigger gap than Group A's), and the lower whisker is again longer than the upper whisker.",
+              "work": "\\(\\text{lower whisker} = 31-23=8 > \\text{upper whisker} = 47-44=3 \\implies \\text{Group X is strongly negatively (left) skewed}\\)"
+            },
+            {
+              "explain": "Comparing the two: both datasets are negatively skewed, but Group X's skew is considerably more pronounced than Group A's — its median-to-\\(Q_3\\) gap (3) is much smaller relative to its median-to-\\(Q_1\\) gap (10) than Group A's corresponding gap (7 vs 8).",
+              "work": "\\(\\text{Group X is MORE negatively skewed than Group A}\\)"
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "source": "Hills Grammar 2025 2U Trials",
+            "school": "The Hills Grammar School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          },
+          "xp": 2
+        },
+        {
+          "id": "gosford2020-q4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which statement is true for an ungrouped data set with no outliers?",
+          "options": [
+            "The largest possible range is \\( 2\\times\\text{IQR} \\)",
+            "The largest possible range is \\( 3\\times\\text{IQR} \\)",
+            "The largest possible range is \\( 5\\times\\text{IQR} \\)",
+            "The largest possible range is \\( 4\\times\\text{IQR} \\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "With no outliers, every data value must lie within \\( 1.5\\times\\text{IQR} \\) of the nearer quartile (the standard outlier-fence rule) — shown below as the two dashed red \"fences\" on either side of the IQR box.",
+              "work": "<svg viewBox=\"0 0 356.6 158\" width=\"356.6\" height=\"158\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(14,34)\"><line x1=\"1.4000000000000021\" y1=\"60\" x2=\"330\" y2=\"60\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><rect x=\"144\" y=\"46\" width=\"62\" height=\"28\" fill=\"#dbeafe\" fill-opacity=\"0.6\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"144\" y1=\"52\" x2=\"144\" y2=\"68\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"206\" y1=\"52\" x2=\"206\" y2=\"68\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"144\" y=\"38\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1d4ed8\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">Q1</text><text x=\"206\" y=\"38\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1d4ed8\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">Q3</text><text x=\"175\" y=\"90\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1d4ed8\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">IQR</text><line x1=\"51\" y1=\"42\" x2=\"51\" y2=\"78\" stroke=\"#dc2626\" stroke-width=\"1.6\" stroke-dasharray=\"4 3\"/><line x1=\"299\" y1=\"42\" x2=\"299\" y2=\"78\" stroke=\"#dc2626\" stroke-width=\"1.6\" stroke-dasharray=\"4 3\"/><text x=\"51\" y=\"34\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#b91c1c\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">Q1−1.5·IQR</text><text x=\"299\" y=\"34\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#b91c1c\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">Q3+1.5·IQR</text></g>\n</svg>\n\n\\(\\text{max value} \\le Q_3 + 1.5\\,\\text{IQR}, \\qquad \\text{min value} \\ge Q_1 - 1.5\\,\\text{IQR}\\)"
+            },
+            {
+              "explain": "The range is the difference between the largest and smallest values, so its largest possible value occurs when both extremes sit exactly at their fences — the green bracket below shows this maximum possible span.",
+              "work": "<svg viewBox=\"0 0 356.6 158\" width=\"356.6\" height=\"158\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(14,34)\"><line x1=\"1.4000000000000021\" y1=\"60\" x2=\"330\" y2=\"60\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><rect x=\"144\" y=\"46\" width=\"62\" height=\"28\" fill=\"#dbeafe\" fill-opacity=\"0.4\" stroke=\"#2563eb\" stroke-width=\"1.5\"/><line x1=\"144\" y1=\"54\" x2=\"144\" y2=\"66\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"206\" y1=\"54\" x2=\"206\" y2=\"66\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"51\" y1=\"42\" x2=\"51\" y2=\"78\" stroke=\"#dc2626\" stroke-width=\"1.6\" stroke-dasharray=\"4 3\"/><line x1=\"299\" y1=\"42\" x2=\"299\" y2=\"78\" stroke=\"#dc2626\" stroke-width=\"1.6\" stroke-dasharray=\"4 3\"/><line x1=\"51\" y1=\"100\" x2=\"299\" y2=\"100\" stroke=\"#059669\" stroke-width=\"2\"/><line x1=\"51\" y1=\"94\" x2=\"51\" y2=\"106\" stroke=\"#059669\" stroke-width=\"2\"/><line x1=\"299\" y1=\"94\" x2=\"299\" y2=\"106\" stroke=\"#059669\" stroke-width=\"2\"/><text x=\"175\" y=\"118\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#047857\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">max possible range = 4 × IQR</text><text x=\"51\" y=\"36\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#b91c1c\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">Q1−1.5·IQR</text><text x=\"299\" y=\"36\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#b91c1c\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">Q3+1.5·IQR</text></g>\n</svg>\n\n\\(\\text{range} \\le (Q_3+1.5\\,\\text{IQR}) - (Q_1-1.5\\,\\text{IQR}) = (Q_3-Q_1) + 3\\,\\text{IQR}\\)"
+            },
+            {
+              "explain": "Since \\( Q_3-Q_1 = \\text{IQR} \\), combine the terms.",
+              "work": "\\(\\text{range} \\le \\text{IQR} + 3\\,\\text{IQR} = 4\\,\\text{IQR}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Gosford 2020 Trial Q4",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "gosford-2020"
+          },
+          "dna": {
+            "dnaId": "STAT-DESC-01"
+          },
+          "xp": 1,
+          "hint": "For a data set with no outliers, use the two fences (Q_1-1.5,IQR) and (Q_3+1.5,IQR).",
+          "keyPoints": [
+            {
+              "text": "Which statement is true for an ungrouped",
+              "note": "The no-outlier fences extend 1.5 IQR beyond each quartile."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "ascham2020-q04",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A set of data has a lower quartile of 22 and an upper quartile of 32. What is the maximum possible range for this set of data if there are no outliers?",
+          "options": [
+            "7",
+            "10",
+            "40",
+            "47"
+          ],
+          "answer": 2,
+          "hint": "Calculate the interquartile range first, then use the two 1.5 IQR fences.",
+          "keyPoints": [
+            {
+              "text": "maximum possible range",
+              "note": "Find the IQR, then locate the lower and upper 1.5-IQR fences; the largest range spans those fences."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The interquartile range measures the distance from the lower quartile to the upper quartile.",
+              "work": "\\(\\mathrm{IQR}=Q_3-Q_1=32-22=10\\)"
+            },
+            {
+              "explain": "With no outliers, the smallest value can be as low as the lower fence.",
+              "work": "\\(Q_1-1.5(\\mathrm{IQR})=22-15=7\\)"
+            },
+            {
+              "explain": "The largest value can be as high as the upper fence.",
+              "work": "\\(Q_3+1.5(\\mathrm{IQR})=32+15=47\\)"
+            },
+            {
+              "explain": "The greatest possible range is upper fence minus lower fence.",
+              "work": "\\(47-7=40\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 2U Trials.pdf",
+            "school": "Ascham School",
+            "examType": "Trial HSC",
+            "year": 2020,
+            "grade": "11/12 Advanced",
+            "sourceQuestion": 4,
+            "sourcePart": null,
+            "sourcePage": null,
+            "sourceTopic": "y12a-9C"
+          }
+        }
+      ]
+    },
+    {
       "topicId": "y12a-10B",
       "code": "10B",
       "title": "Continuous distributions",

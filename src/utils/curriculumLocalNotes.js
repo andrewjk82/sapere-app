@@ -1,5 +1,6 @@
 import { EXT2_RENUMBER } from './ext2Renumber.js';
 import { EXT1_Y12_RENUMBER } from './ext1Y12Renumber.js';
+import { ADV_Y12_RENUMBER } from './advY12Renumber.js';
 // Curriculum working notes stay on this browser/device. They are never synced
 // to Firebase and are kept separately from submitted homework records.
 const DB_NAME = 'sapere-curriculum-notes';
@@ -113,11 +114,12 @@ const findLegacyNote = async (topicId) => {
   }
 };
 
-// Courses re-laid out to a new textbook (Extension 2, Extension 1 Year 12): their notes move to the new topic ids, once per
+// Courses re-laid out to a new textbook (Extension 2, Extension 1 and Advanced Year 12): their notes move to the new topic ids, once per
 // device per course, in one transaction (new ids reuse old ones, so a half-done move would mix notes up). See topicRenumber.
 const NOTE_RENUMBERS = [
   ['sapere:ext2-renumber-notes:v1', EXT2_RENUMBER],
   ['sapere:ext1y12-renumber-notes:v1', EXT1_Y12_RENUMBER],
+  ['sapere:advy12-renumber-notes:v1', ADV_Y12_RENUMBER],
 ];
 const moveNotes = async (flag, renumber) => {
   if (globalThis.localStorage?.getItem(flag)) return;
