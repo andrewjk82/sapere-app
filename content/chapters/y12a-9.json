@@ -1,0 +1,1604 @@
+{
+  "chapterId": "y12a-9",
+  "title": "Chapter 9: Discrete probability distributions",
+  "year": "Year 12",
+  "topics": [
+    {
+      "topicId": "y12a-9A",
+      "code": "9A",
+      "title": "The language of probability distributions",
+      "questions": [
+        {
+          "id": "y12a-9a-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "State what type of probability distribution describes the height of a randomly chosen adult male in Australia.",
+          "options": [
+            "Numeric, discrete",
+            "Categorical",
+            "Numeric, continuous",
+            "Not a probability distribution"
+          ],
+          "answer": 2,
+          "hint": "Is the outcome a number? If it is, can it take any value in an interval, or only separate values that you could list?",
+          "solution": "Numeric, continuous.",
+          "steps": [
+            {
+              "explain": "Decide first whether the outcome is a number or a label. A height is measured, so it is a number.",
+              "work": "\\text{height (in cm)} \\Rightarrow \\text{numeric}"
+            },
+            {
+              "explain": "A discrete variable takes separate values you can list (like 0, 1, 2, …). A height can be any value in an interval, such as 174.3 cm or 174.31 cm, so it is continuous.",
+              "work": "\\text{any value in an interval} \\Rightarrow \\text{continuous}"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q1b"
+          },
+          "xp": 1
+        },
+        {
+          "id": "y12a-9a-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "State what type of probability distribution describes the wettest month in Newcastle for each year over the period 1900–1999. (The months are recorded by name, such as March.)",
+          "options": [
+            "Categorical",
+            "Numeric, discrete",
+            "Numeric, continuous",
+            "Not a probability distribution"
+          ],
+          "answer": 0,
+          "hint": "The outcome is a name such as March, not a number you could add or average.",
+          "solution": "Categorical.",
+          "steps": [
+            {
+              "explain": "Look at what is recorded for each year: the name of a month, such as \"March\" or \"June\".",
+              "work": "\\text{outcomes: January, February, \\dots, December}"
+            },
+            {
+              "explain": "A name is a label, not a number, so the distribution is categorical. We cannot call it discrete or continuous, because those words describe numeric outcomes.",
+              "work": "\\text{labels, not numbers} \\Rightarrow \\text{categorical}"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q1c"
+          },
+          "xp": 1
+        },
+        {
+          "id": "y12a-9a-q1e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Three balls are taken from a bag containing four red balls and three blue balls. The number of blue balls drawn is recorded. State what type of probability distribution this is.",
+          "options": [
+            "Numeric, continuous",
+            "Categorical",
+            "Not a probability distribution",
+            "Numeric, discrete"
+          ],
+          "answer": 3,
+          "hint": "List the values the number of blue balls can take. Are they separate whole numbers?",
+          "solution": "Numeric, discrete.",
+          "steps": [
+            {
+              "explain": "The outcome is a count of blue balls, so it is numeric.",
+              "work": "\\text{number of blue balls} \\Rightarrow \\text{numeric}"
+            },
+            {
+              "explain": "The count can only be one of the separate values 0, 1, 2 or 3, so the variable is discrete.",
+              "work": "X \\in \\{0, 1, 2, 3\\} \\Rightarrow \\text{discrete}"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q1e"
+          },
+          "xp": 1
+        },
+        {
+          "id": "y12a-9a-q1d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "State what type of probability distribution describes the daily rainfall in Sydney on days in September last year.",
+          "options": [
+            "Numeric, discrete",
+            "Numeric, continuous",
+            "Categorical",
+            "Not a probability distribution"
+          ],
+          "answer": 1,
+          "hint": "Rainfall is measured, not counted. Can it take any value in an interval?",
+          "solution": "Numeric, continuous.",
+          "steps": [
+            {
+              "explain": "Rainfall is measured in millimetres, so the outcome is a number.",
+              "work": "\\text{rainfall (mm)} \\Rightarrow \\text{numeric}"
+            },
+            {
+              "explain": "It can take any value in an interval (for example 2.5 mm or 2.53 mm), not just separate listed values, so it is continuous.",
+              "work": "0 \\le x < \\infty \\Rightarrow \\text{continuous}"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q1d"
+          },
+          "xp": 1
+        },
+        {
+          "id": "y12a-9a-q2cii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A pupil suspects that his die is not fair. He rolls it 40 times and records the outcomes:\n\n\\(\\begin{array}{c|cccccc} \\text{outcome} & 1 & 2 & 3 & 4 & 5 & 6 \\\\ \\hline \\text{frequency} & 2 & 6 & 6 & 6 & 8 & 12 \\end{array}\\)\n\nUsing relative frequencies as the experimental probabilities, find \\(P(X > 3)\\).",
+          "options": [
+            "\\(0.35\\)",
+            "\\(0.65\\)",
+            "\\(0.8\\)",
+            "\\(0.3\\)"
+          ],
+          "answer": 1,
+          "hint": "The relative frequency of an outcome is its frequency divided by the 40 rolls. \\(X>3\\) means the outcomes 4, 5 and 6 only.",
+          "solution": "\\(P(X>3) = \\dfrac{26}{40} = 0.65\\)",
+          "steps": [
+            {
+              "explain": "The experimental probability of each outcome is its relative frequency, which is the frequency divided by 40.",
+              "work": "P(X = x) = \\dfrac{\\text{frequency}}{40}"
+            },
+            {
+              "explain": "\"Greater than 3\" means the outcomes 4, 5 and 6. The outcome 3 is not included.",
+              "work": "P(X>3) = P(4) + P(5) + P(6)"
+            },
+            {
+              "explain": "Add the frequencies 6, 8 and 12 and divide by 40.",
+              "work": "\\dfrac{6 + 8 + 12}{40} = \\dfrac{26}{40} = 0.65"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q2cii"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9a-q2e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A pupil rolls his die 40 times and records the outcomes:\n\n\\(\\begin{array}{c|cccccc} \\text{outcome} & 1 & 2 & 3 & 4 & 5 & 6 \\\\ \\hline \\text{frequency} & 2 & 6 & 6 & 6 & 8 & 12 \\end{array}\\)\n\nUsing relative frequencies as the experimental probabilities, find \\(P(X \\le 4)\\).",
+          "options": [
+            "\\(0.35\\)",
+            "\\(0.7\\)",
+            "\\(0.65\\)",
+            "\\(0.5\\)"
+          ],
+          "answer": 3,
+          "hint": "\\(X \\le 4\\) means the outcomes 1, 2, 3 and 4, including 4. This is a cumulative probability.",
+          "solution": "\\(P(X \\le 4) = \\dfrac{20}{40} = 0.5\\)",
+          "steps": [
+            {
+              "explain": "The inequality \"less than or equal to 4\" includes the outcome 4, so we add up the probabilities of 1, 2, 3 and 4.",
+              "work": "P(X \\le 4) = P(1) + P(2) + P(3) + P(4)"
+            },
+            {
+              "explain": "Add the matching frequencies 2, 6, 6 and 6, then divide by the 40 rolls.",
+              "work": "\\dfrac{2 + 6 + 6 + 6}{40} = \\dfrac{20}{40}"
+            },
+            {
+              "explain": "Simplify to find the cumulative probability.",
+              "work": "P(X \\le 4) = 0.5"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q2e"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9a-q3a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A survey of the number of people living at every address in Short Street gives:\n\n\\(\\begin{array}{c|ccccccc} \\text{residents} & 0 & 1 & 2 & 3 & 4 & 5 & 6 \\\\ \\hline \\text{frequency} & 2 & 32 & 44 & 57 & 50 & 13 & 2 \\end{array}\\)\n\nHow many houses are in the street?",
+          "options": [
+            "\\(200\\)",
+            "\\(7\\)",
+            "\\(100\\)",
+            "\\(57\\)"
+          ],
+          "answer": 0,
+          "hint": "Each frequency is a number of houses with that many residents. Add them all.",
+          "solution": "There are 200 houses.",
+          "steps": [
+            {
+              "explain": "Each frequency counts the houses with that number of residents, so the total number of houses is the sum of all the frequencies.",
+              "work": "\\text{total} = \\sum f"
+            },
+            {
+              "explain": "Add the seven frequencies.",
+              "work": "2 + 32 + 44 + 57 + 50 + 13 + 2 = 200"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q3a"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9a-q3b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The number of residents at each address in Short Street is recorded:\n\n\\(\\begin{array}{c|ccccccc} \\text{residents} & 0 & 1 & 2 & 3 & 4 & 5 & 6 \\\\ \\hline \\text{frequency} & 2 & 32 & 44 & 57 & 50 & 13 & 2 \\end{array}\\)\n\nA house is chosen at random. Find the probability that it has exactly 3 residents.",
+          "options": [
+            "\\(0.57\\)",
+            "\\(0.25\\)",
+            "\\(0.285\\)",
+            "\\(0.675\\)"
+          ],
+          "answer": 2,
+          "hint": "Divide the frequency for 3 residents by the total number of houses. Add the frequencies first to find that total.",
+          "solution": "\\(P(3) = \\dfrac{57}{200} = 0.285\\)",
+          "steps": [
+            {
+              "explain": "The total number of houses is the sum of the frequencies.",
+              "work": "2 + 32 + 44 + 57 + 50 + 13 + 2 = 200"
+            },
+            {
+              "explain": "The probability of exactly 3 residents is the relative frequency: frequency divided by total.",
+              "work": "P(3) = \\dfrac{57}{200}"
+            },
+            {
+              "explain": "Convert to a decimal.",
+              "work": "P(3) = 0.285"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q3b"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9a-q3e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The number of residents at each address in Short Street is recorded:\n\n\\(\\begin{array}{c|ccccccc} \\text{residents} & 0 & 1 & 2 & 3 & 4 & 5 & 6 \\\\ \\hline \\text{frequency} & 2 & 32 & 44 & 57 & 50 & 13 & 2 \\end{array}\\)\n\nA house is chosen at random. Find the probability that it has fewer than 3 residents.",
+          "options": [
+            "\\(0.675\\)",
+            "\\(0.22\\)",
+            "\\(0.39\\)",
+            "\\(0.17\\)"
+          ],
+          "answer": 2,
+          "hint": "\"Fewer than 3\" means 0, 1 or 2 residents. The value 3 is not included.",
+          "solution": "\\(P(X<3) = \\dfrac{78}{200} = 0.39\\)",
+          "steps": [
+            {
+              "explain": "\"Fewer than 3 residents\" means 0, 1 or 2 residents. Three residents is not included.",
+              "work": "P(X<3) = P(0) + P(1) + P(2)"
+            },
+            {
+              "explain": "Add the frequencies 2, 32 and 44, then divide by the 200 houses.",
+              "work": "\\dfrac{2 + 32 + 44}{200} = \\dfrac{78}{200}"
+            },
+            {
+              "explain": "Convert to a decimal. So only 39% of the houses have fewer than 3 residents, which is under half.",
+              "work": "P(X<3) = 0.39"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q3e"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9a-q4a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Two coins are tossed one after the other and the successive results are recorded as the outcomes HH, HT, TH and TT. What type of distribution is this?",
+          "options": [
+            "Uniform (and categorical)",
+            "Not uniform, but categorical",
+            "Numeric and discrete, but not uniform",
+            "Numeric and continuous"
+          ],
+          "answer": 0,
+          "hint": "Write down the probability of each of the four outcomes. Are they all equal? Are the outcomes numbers?",
+          "solution": "It is a uniform distribution, and it is categorical.",
+          "steps": [
+            {
+              "explain": "The four outcomes HH, HT, TH and TT are equally likely, because each coin is fair and the tosses are independent.",
+              "work": "P(HH) = P(HT) = P(TH) = P(TT) = \\dfrac{1}{4}"
+            },
+            {
+              "explain": "All the probabilities are equal, so the distribution is uniform. The outcomes are labels rather than numbers, so it is also categorical.",
+              "work": "\\text{equal probabilities} \\Rightarrow \\text{uniform}"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q4a"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9a-q4b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Two coins are tossed, and the result is recorded as \"2 heads\", \"1 head and 1 tail\" or \"2 tails\". Find the probability of \"1 head and 1 tail\".",
+          "options": [
+            "\\(\\dfrac{1}{4}\\)",
+            "\\(\\dfrac{1}{3}\\)",
+            "\\(\\dfrac{3}{4}\\)",
+            "\\(\\dfrac{1}{2}\\)"
+          ],
+          "answer": 3,
+          "hint": "The three recorded outcomes are not equally likely. List all four ways the two coins can land.",
+          "solution": "\\(P(\\text{1 head and 1 tail}) = \\dfrac{2}{4} = \\dfrac{1}{2}\\)",
+          "steps": [
+            {
+              "explain": "The four equally likely ways the coins can land are HH, HT, TH and TT.",
+              "work": "\\text{HH, HT, TH, TT, each with probability } \\dfrac{1}{4}"
+            },
+            {
+              "explain": "\"1 head and 1 tail\" happens in two of these ways, HT and TH.",
+              "work": "P(\\text{1 head and 1 tail}) = \\dfrac{1}{4} + \\dfrac{1}{4}"
+            },
+            {
+              "explain": "Simplify. The three recorded outcomes are not equally likely, so the answer is not 1/3.",
+              "work": "P = \\dfrac{1}{2}"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q4b"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9a-q5c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A letter is chosen at random from the word PARRAMATTA, and the letter is recorded. Find the probability that the letter is A.",
+          "options": [
+            "\\(\\dfrac{1}{5}\\)",
+            "\\(\\dfrac{2}{5}\\)",
+            "\\(\\dfrac{1}{10}\\)",
+            "\\(\\dfrac{3}{10}\\)"
+          ],
+          "answer": 1,
+          "hint": "Count all the letters in PARRAMATTA, repeats included, then count how many are A.",
+          "solution": "\\(P(A) = \\dfrac{4}{10} = \\dfrac{2}{5}\\)",
+          "steps": [
+            {
+              "explain": "Write out the letters of PARRAMATTA one by one and count them. There are 10 letters, so there are 10 equally likely choices.",
+              "work": "P, A, R, R, A, M, A, T, T, A \\Rightarrow 10 \\text{ letters}"
+            },
+            {
+              "explain": "The letter A appears 4 times, so 4 of the 10 choices give A.",
+              "work": "P(A) = \\dfrac{4}{10}"
+            },
+            {
+              "explain": "Simplify. The other letters are P: 1/10, R: 2/10, M: 1/10 and T: 2/10, so the probabilities add to 1.",
+              "work": "P(A) = \\dfrac{2}{5}"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q5c"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9a-q5d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A whole number is chosen at random between 1 and 1000 inclusive, and the number of digits in the number is recorded. Find the probability that the number has exactly 2 digits.",
+          "options": [
+            "\\(\\dfrac{9}{10}\\)",
+            "\\(\\dfrac{9}{100}\\)",
+            "\\(\\dfrac{1}{100}\\)",
+            "\\(\\dfrac{1}{10}\\)"
+          ],
+          "answer": 1,
+          "hint": "How many whole numbers from 1 to 1000 have exactly 2 digits? They run from 10 to 99.",
+          "solution": "\\(P(\\text{2 digits}) = \\dfrac{90}{1000} = \\dfrac{9}{100}\\)",
+          "steps": [
+            {
+              "explain": "The 2-digit numbers run from 10 to 99, so there are 99 − 10 + 1 = 90 of them.",
+              "work": "99 - 10 + 1 = 90"
+            },
+            {
+              "explain": "There are 1000 equally likely numbers altogether.",
+              "work": "P(\\text{2 digits}) = \\dfrac{90}{1000}"
+            },
+            {
+              "explain": "Simplify the fraction.",
+              "work": "P = \\dfrac{9}{100}"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q5d"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9a-q5e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A whole number between 10 and 19 inclusive is selected at random. A record is made of whether it is even, prime, or neither. Find the probability that it is prime.",
+          "options": [
+            "\\(\\dfrac{1}{2}\\)",
+            "\\(\\dfrac{3}{10}\\)",
+            "\\(\\dfrac{1}{10}\\)",
+            "\\(\\dfrac{2}{5}\\)"
+          ],
+          "answer": 3,
+          "hint": "List the ten numbers 10, 11, …, 19, then pick out the primes. A prime has exactly two factors.",
+          "solution": "\\(P(\\text{prime}) = \\dfrac{4}{10} = \\dfrac{2}{5}\\)",
+          "steps": [
+            {
+              "explain": "There are 10 equally likely numbers from 10 to 19.",
+              "work": "10, 11, 12, 13, 14, 15, 16, 17, 18, 19"
+            },
+            {
+              "explain": "The primes among them are 11, 13, 17 and 19. That is 4 primes.",
+              "work": "\\text{primes: } 11, 13, 17, 19"
+            },
+            {
+              "explain": "Write the probability and simplify.",
+              "work": "P(\\text{prime}) = \\dfrac{4}{10} = \\dfrac{2}{5}"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q5e"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9a-q6a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A word is chosen at random from the sentence \"The ginger cat ran off with the meat.\" Let \\(X\\) be the number of letters in the chosen word. Find \\(P(X = 3)\\).",
+          "options": [
+            "\\(\\dfrac{5}{8}\\)",
+            "\\(\\dfrac{3}{8}\\)",
+            "\\(\\dfrac{1}{3}\\)",
+            "\\(\\dfrac{1}{4}\\)"
+          ],
+          "answer": 0,
+          "hint": "Count the words first, then count the letters in each word. Repeated words count again.",
+          "solution": "\\(P(X=3) = \\dfrac{5}{8}\\)",
+          "steps": [
+            {
+              "explain": "Write down the number of letters in each of the 8 words.",
+              "work": "\\text{The}(3), \\text{ginger}(6), \\text{cat}(3), \\text{ran}(3), \\text{off}(3), \\text{with}(4), \\text{the}(3), \\text{meat}(4)"
+            },
+            {
+              "explain": "Five of the eight words have 3 letters: The, cat, ran, off and the.",
+              "work": "P(X=3) = \\dfrac{5}{8}"
+            },
+            {
+              "explain": "Check the whole distribution: P(3) = 5/8, P(4) = 2/8 and P(6) = 1/8 add to 1.",
+              "work": "\\dfrac{5}{8} + \\dfrac{2}{8} + \\dfrac{1}{8} = 1"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q6a"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9a-q6c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A digit is chosen at random from the 12-digit number 1.41421356237. Let \\(X\\) be the digit chosen. Find \\(P(X = 2)\\).",
+          "options": [
+            "\\(\\dfrac{1}{12}\\)",
+            "\\(\\dfrac{1}{7}\\)",
+            "\\(\\dfrac{1}{6}\\)",
+            "\\(\\dfrac{1}{4}\\)"
+          ],
+          "answer": 2,
+          "hint": "There are 12 digits in the number, and the repeated digits count each time they appear.",
+          "solution": "\\(P(X=2) = \\dfrac{2}{12} = \\dfrac{1}{6}\\)",
+          "steps": [
+            {
+              "explain": "Write out the 12 digits: 1, 4, 1, 4, 2, 1, 3, 5, 6, 2, 3, 7. Each is equally likely to be chosen.",
+              "work": "1, 4, 1, 4, 2, 1, 3, 5, 6, 2, 3, 7"
+            },
+            {
+              "explain": "The digit 2 appears twice among the 12 digits.",
+              "work": "P(X=2) = \\dfrac{2}{12}"
+            },
+            {
+              "explain": "Simplify. We do not divide by 7, the number of different digits, because the digits are not equally likely.",
+              "work": "P(X=2) = \\dfrac{1}{6}"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q6c"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9a-q6d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Jeff puts marbles numbered 1, 1, 2, 4 into one bag and marbles numbered 2, 3, 3, 5 into a second bag. He randomly selects one of the bags, then randomly selects a marble from that bag and records its number \\(X\\). Find \\(P(X = 2)\\).",
+          "options": [
+            "\\(\\dfrac{1}{8}\\)",
+            "\\(\\dfrac{1}{2}\\)",
+            "\\(\\dfrac{1}{4}\\)",
+            "\\(\\dfrac{1}{3}\\)"
+          ],
+          "answer": 2,
+          "hint": "There are two ways to get a 2: from the first bag or from the second bag. Each bag is chosen with probability \\(\\tfrac12\\).",
+          "solution": "\\(P(X=2) = \\dfrac{1}{8} + \\dfrac{1}{8} = \\dfrac{1}{4}\\)",
+          "steps": [
+            {
+              "explain": "A 2 can come from the first bag, which has one 2 among its 4 marbles. The bag is chosen with probability 1/2.",
+              "work": "P(\\text{bag 1 and a 2}) = \\dfrac{1}{2} \\times \\dfrac{1}{4} = \\dfrac{1}{8}"
+            },
+            {
+              "explain": "A 2 can also come from the second bag, which also has one 2 among its 4 marbles.",
+              "work": "P(\\text{bag 2 and a 2}) = \\dfrac{1}{2} \\times \\dfrac{1}{4} = \\dfrac{1}{8}"
+            },
+            {
+              "explain": "The two ways are separate cases, so add the probabilities.",
+              "work": "P(X=2) = \\dfrac{1}{8} + \\dfrac{1}{8} = \\dfrac{1}{4}"
+            },
+            {
+              "explain": "This equals the answer you get by pooling all 8 marbles (2 out of 8), because the two bags have the same number of marbles.",
+              "work": "\\dfrac{2}{8} = \\dfrac{1}{4}"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q6d"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9a-q7b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Amy scoops up coins at random from a pile containing one 10c coin and two 5c coins. Assume she is equally likely to pick up any of the seven possible non-empty scoops. Let \\(X\\) be the value of the money she picks up, in cents. Find \\(P(X = 10)\\).",
+          "options": [
+            "\\(\\dfrac{2}{7}\\)",
+            "\\(\\dfrac{1}{7}\\)",
+            "\\(\\dfrac{1}{3}\\)",
+            "\\(\\dfrac{3}{7}\\)"
+          ],
+          "answer": 0,
+          "hint": "Name the coins T (10c), F1 and F2 (5c). List the seven scoops, work out the value of each, and count the scoops worth 10c.",
+          "solution": "\\(P(X=10) = \\dfrac{2}{7}\\)",
+          "steps": [
+            {
+              "explain": "Name the 10c coin T and the two 5c coins F1 and F2. The seven non-empty scoops are listed below.",
+              "work": "\\{T\\},\\ \\{F_1\\},\\ \\{F_2\\},\\ \\{T,F_1\\},\\ \\{T,F_2\\},\\ \\{F_1,F_2\\},\\ \\{T,F_1,F_2\\}"
+            },
+            {
+              "explain": "Work out the value of each scoop: 10, 5, 5, 15, 15, 10 and 20 cents.",
+              "work": "10,\\ 5,\\ 5,\\ 15,\\ 15,\\ 10,\\ 20"
+            },
+            {
+              "explain": "Two scoops are worth 10c: {T} and {F1, F2}. Each of the seven scoops is equally likely.",
+              "work": "P(X=10) = \\dfrac{2}{7}"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q7b"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9a-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A random variable \\(X\\) takes the values 1, 2, 3 and 4. Which of these lists gives \\(P(X=1), P(X=2), P(X=3), P(X=4)\\) for a probability distribution?",
+          "options": [
+            "\\(0.5,\\ 0.3,\\ -0.2,\\ 0.4\\)",
+            "\\(0.7,\\ 0.2,\\ 0.4,\\ 0.2\\)",
+            "\\(0.4,\\ 0.3,\\ 0.2,\\ 0.2\\)",
+            "\\(0.1,\\ 0.6,\\ 0.2,\\ 0.1\\)"
+          ],
+          "answer": 3,
+          "hint": "A probability distribution needs two things: every probability is between 0 and 1, and the probabilities add to 1. Test each list.",
+          "solution": "\\(0.1,\\ 0.6,\\ 0.2,\\ 0.1\\) (every value is between 0 and 1, and they sum to 1).",
+          "steps": [
+            {
+              "explain": "Test the list 0.5, 0.3, −0.2, 0.4. It adds to 1, but one probability is negative, so it fails.",
+              "work": "0.5 + 0.3 - 0.2 + 0.4 = 1,\\ \\text{but } -0.2 < 0"
+            },
+            {
+              "explain": "Test the lists 0.7, 0.2, 0.4, 0.2 and 0.4, 0.3, 0.2, 0.2. Their sums are 1.5 and 1.1, which are not 1.",
+              "work": "0.7 + 0.2 + 0.4 + 0.2 = 1.5,\\quad 0.4 + 0.3 + 0.2 + 0.2 = 1.1"
+            },
+            {
+              "explain": "The list 0.1, 0.6, 0.2, 0.1 has all probabilities between 0 and 1, and it adds to 1.",
+              "work": "0.1 + 0.6 + 0.2 + 0.1 = 1"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q8"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9a-q8f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A random variable \\(X\\) takes the values 1, 2, 3 and 4. Which of these lists gives \\(P(X=1), P(X=2), P(X=3), P(X=4)\\) for a probability distribution?",
+          "options": [
+            "\\(\\dfrac{1}{6},\\ \\dfrac{1}{3},\\ \\dfrac{1}{4},\\ \\dfrac{1}{6}\\)",
+            "\\(\\dfrac{1}{6},\\ \\dfrac{1}{3},\\ \\dfrac{1}{4},\\ \\dfrac{1}{4}\\)",
+            "\\(\\dfrac{1}{2},\\ \\dfrac{1}{3},\\ \\dfrac{1}{4},\\ \\dfrac{1}{6}\\)",
+            "\\(\\dfrac{1}{3},\\ \\dfrac{1}{3},\\ \\dfrac{1}{3},\\ \\dfrac{1}{3}\\)"
+          ],
+          "answer": 1,
+          "hint": "Add the four fractions using a common denominator of 12. A probability distribution must add to exactly 1.",
+          "solution": "\\(\\dfrac{1}{6},\\ \\dfrac{1}{3},\\ \\dfrac{1}{4},\\ \\dfrac{1}{4}\\) (the sum is 1).",
+          "steps": [
+            {
+              "explain": "Write each list over the common denominator 12. A probability distribution must have every value between 0 and 1 and a total of exactly 1.",
+              "work": "\\dfrac{1}{6} = \\dfrac{2}{12},\\ \\dfrac{1}{3} = \\dfrac{4}{12},\\ \\dfrac{1}{4} = \\dfrac{3}{12}"
+            },
+            {
+              "explain": "The first list gives 2 + 4 + 3 + 3 = 12 twelfths, which is exactly 1.",
+              "work": "\\dfrac{2 + 4 + 3 + 3}{12} = 1"
+            },
+            {
+              "explain": "The other lists total 11/12, 15/12 and 16/12, none of which is 1.",
+              "work": "\\dfrac{11}{12},\\ \\dfrac{15}{12},\\ \\dfrac{16}{12}"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q8f"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9a-q8d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A random variable \\(X\\) takes the values 1, 2, 3 and 4. Which of these lists gives \\(P(X=1), P(X=2), P(X=3), P(X=4)\\) for a probability distribution?",
+          "options": [
+            "\\(30\\%,\\ 20\\%,\\ 40\\%,\\ 20\\%\\)",
+            "\\(30\\%,\\ 20\\%,\\ 40\\%,\\ 10\\%\\)",
+            "\\(30\\%,\\ 20\\%,\\ 30\\%,\\ 10\\%\\)",
+            "\\(25\\%,\\ 25\\%,\\ 25\\%,\\ 35\\%\\)"
+          ],
+          "answer": 1,
+          "hint": "Percentages work just like decimals: each must be between 0% and 100%, and the total must be 100%.",
+          "solution": "\\(30\\%,\\ 20\\%,\\ 40\\%,\\ 10\\%\\) (the total is 100%).",
+          "steps": [
+            {
+              "explain": "The same two rules apply when probabilities are written as percentages: each is between 0% and 100%, and the total is 100%.",
+              "work": "\\sum P(X=x) = 100\\%"
+            },
+            {
+              "explain": "Add up each list. The totals are 100%, 110%, 90% and 110%.",
+              "work": "30 + 20 + 40 + 10 = 100"
+            },
+            {
+              "explain": "Only the first list totals 100%.",
+              "work": "30\\%,\\ 20\\%,\\ 40\\%,\\ 10\\%"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q8d"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9a-q9b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A discrete probability distribution is tabulated below.\n\n\\(\\begin{array}{c|cccccc} x & 0 & 1 & 2 & 3 & 4 & 5 \\\\ \\hline P(X=x) & 0.1 & 0.2 & 0.3 & 0.25 & 0.05 & 0.1 \\end{array}\\)\n\nFind \\(P(2 \\le X \\le 4)\\).",
+          "options": [
+            "\\(0.55\\)",
+            "\\(0.25\\)",
+            "\\(0.8\\)",
+            "\\(0.6\\)"
+          ],
+          "answer": 3,
+          "hint": "The symbol \\(\\le\\) includes both end values. So \\(2 \\le X \\le 4\\) means X = 2, 3 or 4.",
+          "solution": "\\(P(2 \\le X \\le 4) = 0.3 + 0.25 + 0.05 = 0.6\\)",
+          "steps": [
+            {
+              "explain": "Both inequalities are \"less than or equal to\", so both end values 2 and 4 are included.",
+              "work": "2 \\le X \\le 4 \\Rightarrow X = 2,\\ 3,\\ 4"
+            },
+            {
+              "explain": "Add the three probabilities from the table.",
+              "work": "P(2) + P(3) + P(4) = 0.3 + 0.25 + 0.05"
+            },
+            {
+              "explain": "Add.",
+              "work": "P(2 \\le X \\le 4) = 0.6"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q9b"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9a-q9c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A discrete probability distribution is tabulated below.\n\n\\(\\begin{array}{c|cccccc} x & 0 & 1 & 2 & 3 & 4 & 5 \\\\ \\hline P(X=x) & 0.1 & 0.2 & 0.3 & 0.25 & 0.05 & 0.1 \\end{array}\\)\n\nFind \\(P(1 \\le X < 4)\\).",
+          "options": [
+            "\\(0.75\\)",
+            "\\(0.8\\)",
+            "\\(0.55\\)",
+            "\\(0.5\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(1 \\le X\\) includes 1, but \\(X < 4\\) does not include 4. So X = 1, 2 or 3.",
+          "solution": "\\(P(1 \\le X < 4) = 0.2 + 0.3 + 0.25 = 0.75\\)",
+          "steps": [
+            {
+              "explain": "The left end uses \"less than or equal to\", so 1 is included. The right end uses \"less than\", so 4 is not included.",
+              "work": "1 \\le X < 4 \\Rightarrow X = 1,\\ 2,\\ 3"
+            },
+            {
+              "explain": "Add the probabilities of 1, 2 and 3.",
+              "work": "P(1) + P(2) + P(3) = 0.2 + 0.3 + 0.25"
+            },
+            {
+              "explain": "Add.",
+              "work": "P(1 \\le X < 4) = 0.75"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q9c"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9a-q9d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A discrete probability distribution is tabulated below.\n\n\\(\\begin{array}{c|cccccc} x & 0 & 1 & 2 & 3 & 4 & 5 \\\\ \\hline P(X=x) & 0.1 & 0.2 & 0.3 & 0.25 & 0.05 & 0.1 \\end{array}\\)\n\nFind \\(P(X = 6)\\).",
+          "options": [
+            "\\(0.1\\)",
+            "\\(0.05\\)",
+            "\\(0\\)",
+            "\\(1\\)"
+          ],
+          "answer": 2,
+          "hint": "Look at the values in the top row of the table. Is 6 one of them?",
+          "solution": "\\(P(X=6) = 0\\), because X cannot take the value 6.",
+          "steps": [
+            {
+              "explain": "The table lists every value that X can take: 0, 1, 2, 3, 4 and 5. The value 6 is not in the list.",
+              "work": "X \\in \\{0, 1, 2, 3, 4, 5\\}"
+            },
+            {
+              "explain": "A value that X cannot take has probability zero.",
+              "work": "P(X=6) = 0"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q9d"
+          },
+          "xp": 1
+        },
+        {
+          "id": "y12a-9a-q9h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A discrete probability distribution is tabulated below.\n\n\\(\\begin{array}{c|cccccc} x & 0 & 1 & 2 & 3 & 4 & 5 \\\\ \\hline P(X=x) & 0.1 & 0.2 & 0.3 & 0.25 & 0.05 & 0.1 \\end{array}\\)\n\nFind \\(P(X > 1)\\).",
+          "options": [
+            "\\(0.9\\)",
+            "\\(0.4\\)",
+            "\\(0.7\\)",
+            "\\(0.6\\)"
+          ],
+          "answer": 2,
+          "hint": "\"Greater than 1\" does not include 1. You can also use the complement: \\(1 - P(X \\le 1)\\).",
+          "solution": "\\(P(X>1) = 0.3 + 0.25 + 0.05 + 0.1 = 0.7\\)",
+          "steps": [
+            {
+              "explain": "\"Greater than 1\" does not include the value 1, so we add the probabilities of 2, 3, 4 and 5.",
+              "work": "P(X>1) = P(2) + P(3) + P(4) + P(5)"
+            },
+            {
+              "explain": "Add the four probabilities.",
+              "work": "0.3 + 0.25 + 0.05 + 0.1 = 0.7"
+            },
+            {
+              "explain": "Check with the complement: P(X > 1) = 1 − P(X ≤ 1) = 1 − (0.1 + 0.2).",
+              "work": "1 - 0.3 = 0.7"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q9h"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9a-q10aii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A pack of 52 cards has 12 court cards (jack, queen or king). A card is drawn at random and recorded as court or not court. It is replaced, then a second card is drawn and recorded in the same way. Let \\(X\\) be the number of court cards drawn. Find \\(P(X = 1)\\).",
+          "options": [
+            "\\(\\dfrac{60}{169}\\)",
+            "\\(\\dfrac{30}{169}\\)",
+            "\\(\\dfrac{100}{169}\\)",
+            "\\(\\dfrac{9}{169}\\)"
+          ],
+          "answer": 0,
+          "hint": "The probability of a court card is \\(\\tfrac{12}{52} = \\tfrac{3}{13}\\). Exactly one court card can happen in two different orders.",
+          "solution": "\\(P(X=1) = 2 \\times \\dfrac{3}{13} \\times \\dfrac{10}{13} = \\dfrac{60}{169}\\)",
+          "steps": [
+            {
+              "explain": "The card is replaced, so each draw is the same. A court card has probability 12/52 = 3/13, and not a court card has probability 10/13.",
+              "work": "P(C) = \\dfrac{3}{13},\\quad P(\\overline{C}) = \\dfrac{10}{13}"
+            },
+            {
+              "explain": "Exactly one court card can happen in two orders: court then not court, or not court then court. Each has the same probability.",
+              "work": "P(C\\overline{C}) = P(\\overline{C}C) = \\dfrac{3}{13} \\times \\dfrac{10}{13} = \\dfrac{30}{169}"
+            },
+            {
+              "explain": "The two orders are separate cases, so add them.",
+              "work": "P(X=1) = \\dfrac{30}{169} + \\dfrac{30}{169} = \\dfrac{60}{169}"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q10aii"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9a-q10bii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Three dice are rolled, and \\(X\\) is the number of even numbers recorded. Find \\(P(X = 2)\\).",
+          "options": [
+            "\\(\\dfrac{1}{8}\\)",
+            "\\(\\dfrac{1}{2}\\)",
+            "\\(\\dfrac{1}{4}\\)",
+            "\\(\\dfrac{3}{8}\\)"
+          ],
+          "answer": 3,
+          "hint": "Each die is even with probability \\(\\tfrac12\\), so each of the 8 outcomes EEE, EEO, … has probability \\(\\tfrac18\\). Count the outcomes with exactly two evens.",
+          "solution": "\\(P(X=2) = 3 \\times \\dfrac{1}{8} = \\dfrac{3}{8}\\)",
+          "steps": [
+            {
+              "explain": "Each die shows an even number with probability 1/2 and an odd number with probability 1/2. The three dice are identical stages, so each of the 8 outcomes EEE, EEO, …, OOO has probability 1/8.",
+              "work": "\\left(\\dfrac{1}{2}\\right)^3 = \\dfrac{1}{8}"
+            },
+            {
+              "explain": "Exactly two evens happens in three ways: EEO, EOE and OEE.",
+              "work": "\\text{EEO, EOE, OEE}"
+            },
+            {
+              "explain": "Add the three outcomes, each of probability 1/8.",
+              "work": "P(X=2) = 3 \\times \\dfrac{1}{8} = \\dfrac{3}{8}"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q10bii"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9a-q10c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A class has 10 girls and 15 boys. Three times the teacher chooses a student at random to answer a question, not caring whether the student has been called before. Let \\(X\\) be the number of times a girl is called. Find \\(P(X = 2)\\).",
+          "options": [
+            "\\(\\dfrac{54}{125}\\)",
+            "\\(\\dfrac{36}{125}\\)",
+            "\\(\\dfrac{12}{125}\\)",
+            "\\(\\dfrac{8}{125}\\)"
+          ],
+          "answer": 1,
+          "hint": "The probability of calling a girl is \\(\\tfrac{10}{25} = \\tfrac25\\) each time. Exactly two girls in three calls can happen in three orders.",
+          "solution": "\\(P(X=2) = 3 \\times \\left(\\dfrac{2}{5}\\right)^2 \\times \\dfrac{3}{5} = \\dfrac{36}{125}\\)",
+          "steps": [
+            {
+              "explain": "The same student can be called again, so each call is identical. The probability of a girl is 10/25 = 2/5, and of a boy is 3/5.",
+              "work": "P(G) = \\dfrac{2}{5},\\quad P(B) = \\dfrac{3}{5}"
+            },
+            {
+              "explain": "Exactly two girls can happen in three orders: GGB, GBG and BGG. Each has probability (2/5)² × (3/5).",
+              "work": "P(GGB) = \\dfrac{4}{25} \\times \\dfrac{3}{5} = \\dfrac{12}{125}"
+            },
+            {
+              "explain": "Add the three orders. (Note: 54/125 is the probability of exactly two boys, which is a different event.)",
+              "work": "P(X=2) = 3 \\times \\dfrac{12}{125} = \\dfrac{36}{125}"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q10c"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9a-q10d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The Spring Hill Zoo has 20 friendly wallabies: 6 from Snake Gully, 5 from Dingo Ridge and 9 from Acacia Flat. On each of three days, a zookeeper selects a wallaby at random and takes it to breakfast, then returns it to the enclosure. Let \\(X\\) be the number of Snake Gully wallabies taken to breakfast. Find \\(P(X = 2)\\).",
+          "options": [
+            "\\(0.063\\)",
+            "\\(0.189\\)",
+            "\\(0.441\\)",
+            "\\(0.027\\)"
+          ],
+          "answer": 1,
+          "hint": "Each day the probability of a Snake Gully wallaby is \\(\\tfrac{6}{20} = 0.3\\), because the wallaby is returned. Count the orders with exactly two Snake Gully wallabies.",
+          "solution": "\\(P(X=2) = 3 \\times 0.3^2 \\times 0.7 = 0.189\\)",
+          "steps": [
+            {
+              "explain": "The wallaby is returned each day, so each day is identical. The probability of a Snake Gully wallaby is 6/20 = 0.3, so the probability of another wallaby is 0.7.",
+              "work": "P(S) = 0.3,\\quad P(\\overline{S}) = 0.7"
+            },
+            {
+              "explain": "Exactly two Snake Gully wallabies happen in three orders: SS̅S̅ type outcomes with two S and one not S. Each order has the same probability.",
+              "work": "P(SS\\overline{S}) = 0.3 \\times 0.3 \\times 0.7 = 0.063"
+            },
+            {
+              "explain": "Add the three orders.",
+              "work": "P(X=2) = 3 \\times 0.063 = 0.189"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q10d"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9a-q11c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A discrete probability distribution is given by:\n\n\\(\\begin{array}{c|ccccc} x & -2 & -1 & 0 & 1 & 2 \\\\ \\hline P(X=x) & a & 3a & 5a & 7a & 11a \\end{array}\\)\n\nFind the value of \\(a\\).",
+          "options": [
+            "\\(\\dfrac{1}{26}\\)",
+            "\\(\\dfrac{1}{28}\\)",
+            "\\(\\dfrac{1}{5}\\)",
+            "\\(\\dfrac{1}{27}\\)"
+          ],
+          "answer": 3,
+          "hint": "The probabilities must add to 1. Add the five expressions and solve for \\(a\\).",
+          "solution": "\\(27a = 1\\), so \\(a = \\dfrac{1}{27}\\).",
+          "steps": [
+            {
+              "explain": "The probabilities of a probability distribution add up to 1.",
+              "work": "a + 3a + 5a + 7a + 11a = 1"
+            },
+            {
+              "explain": "Collect the like terms. The coefficients add to 27.",
+              "work": "27a = 1"
+            },
+            {
+              "explain": "Solve for a, then check each probability is between 0 and 1 (the largest is 11/27, which is fine).",
+              "work": "a = \\dfrac{1}{27}"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q11c"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9a-q11d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A discrete probability distribution is given by:\n\n\\(\\begin{array}{c|ccccc} x & 10 & 20 & 30 & 40 & 50 \\\\ \\hline P(X=x) & 1-3a & a & 1-9a & 1-10a & a \\end{array}\\)\n\nFind the value of \\(a\\).",
+          "options": [
+            "\\(\\dfrac{1}{10}\\)",
+            "\\(\\dfrac{3}{20}\\)",
+            "\\(\\dfrac{1}{20}\\)",
+            "\\(\\dfrac{1}{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "Add the five expressions and set the total equal to 1. Collect the constants and the multiples of a separately.",
+          "solution": "\\(3 - 20a = 1\\), so \\(a = \\dfrac{1}{10}\\).",
+          "steps": [
+            {
+              "explain": "The probabilities must add to 1.",
+              "work": "(1-3a) + a + (1-9a) + (1-10a) + a = 1"
+            },
+            {
+              "explain": "Collect the constants (1 + 1 + 1 = 3) and the terms in a (−3a + a − 9a − 10a + a = −20a).",
+              "work": "3 - 20a = 1"
+            },
+            {
+              "explain": "Solve for a.",
+              "work": "20a = 2 \\Rightarrow a = \\dfrac{1}{10}"
+            },
+            {
+              "explain": "Check that every probability is between 0 and 1: they are 0.7, 0.1, 0.1, 0 and 0.1.",
+              "work": "0 \\le P(X=x) \\le 1 \\ \\checkmark"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q11d"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9a-q11e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A discrete probability distribution is given by:\n\n\\(\\begin{array}{c|ccccc} x & 1 & 2 & 3 & 4 & 5 \\\\ \\hline P(X=x) & 0.2a & 0.1a & 0.5a & 0.1a & 0.1a \\end{array}\\)\n\nFind the value of \\(a\\).",
+          "options": [
+            "\\(10\\)",
+            "\\(0.1\\)",
+            "\\(1\\)",
+            "\\(0.5\\)"
+          ],
+          "answer": 2,
+          "hint": "Add the coefficients carefully: \\(0.2 + 0.1 + 0.5 + 0.1 + 0.1\\).",
+          "solution": "\\(1.0a = 1\\), so \\(a = 1\\).",
+          "steps": [
+            {
+              "explain": "The probabilities must add to 1.",
+              "work": "0.2a + 0.1a + 0.5a + 0.1a + 0.1a = 1"
+            },
+            {
+              "explain": "Add the coefficients: 0.2 + 0.1 + 0.5 + 0.1 + 0.1 = 1.",
+              "work": "1.0a = 1"
+            },
+            {
+              "explain": "So a = 1. In this case the table already gives the probabilities 0.2, 0.1, 0.5, 0.1 and 0.1, which are all between 0 and 1.",
+              "work": "a = 1"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q11e"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9a-q12aii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A bag contains six marbles numbered 1, 2, 3, 4, 5, 6. A marble is drawn, and then a second marble is drawn without replacing the first. Let \\(X\\) be the number of even numbers drawn. Find \\(P(X = 1)\\).",
+          "options": [
+            "\\(\\dfrac{3}{10}\\)",
+            "\\(\\dfrac{1}{2}\\)",
+            "\\(\\dfrac{3}{5}\\)",
+            "\\(\\dfrac{1}{5}\\)"
+          ],
+          "answer": 2,
+          "hint": "There are 3 even and 3 odd marbles. After the first draw, 5 marbles remain, so the second probability changes. Exactly one even can happen in two orders.",
+          "solution": "\\(P(X=1) = 2 \\times \\dfrac{3}{6} \\times \\dfrac{3}{5} = \\dfrac{3}{5}\\)",
+          "steps": [
+            {
+              "explain": "The bag has 3 even marbles (2, 4, 6) and 3 odd marbles (1, 3, 5). The first marble is not replaced, so the second draw is from 5 marbles.",
+              "work": "P(E \\text{ first}) = \\dfrac{3}{6}"
+            },
+            {
+              "explain": "Even then odd: after an even marble, 3 odd marbles remain out of 5.",
+              "work": "P(EO) = \\dfrac{3}{6} \\times \\dfrac{3}{5} = \\dfrac{3}{10}"
+            },
+            {
+              "explain": "Odd then even happens in the same way, with the same probability. Add the two orders.",
+              "work": "P(X=1) = \\dfrac{3}{10} + \\dfrac{3}{10} = \\dfrac{3}{5}"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q12aii"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9a-q12b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Two students are chosen from a group of four boys and two girls. Let \\(X\\) be the number of girls chosen. Find \\(P(X = 1)\\).",
+          "options": [
+            "\\(\\dfrac{8}{15}\\)",
+            "\\(\\dfrac{4}{15}\\)",
+            "\\(\\dfrac{4}{9}\\)",
+            "\\(\\dfrac{1}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "The two students are chosen without replacement, so the second probability uses 5 students. One girl can come first or second.",
+          "solution": "\\(P(X=1) = \\dfrac{4}{15} + \\dfrac{4}{15} = \\dfrac{8}{15}\\)",
+          "steps": [
+            {
+              "explain": "No student can be chosen twice, so after the first student there are 5 left. A boy then a girl: 4/6 for the boy, then 2/5 for a girl.",
+              "work": "P(BG) = \\dfrac{4}{6} \\times \\dfrac{2}{5} = \\dfrac{4}{15}"
+            },
+            {
+              "explain": "A girl then a boy: 2/6 for the girl, then 4/5 for a boy. This has the same probability.",
+              "work": "P(GB) = \\dfrac{2}{6} \\times \\dfrac{4}{5} = \\dfrac{4}{15}"
+            },
+            {
+              "explain": "Add the two orders.",
+              "work": "P(X=1) = \\dfrac{4}{15} + \\dfrac{4}{15} = \\dfrac{8}{15}"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q12b"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9a-q12cii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Five tiles marked E, E, E, R, T are turned upside down, and two are selected at random one after the other (without replacement). Let \\(X\\) be the number of Es selected. Find \\(P(X = 2)\\).",
+          "options": [
+            "\\(\\dfrac{9}{25}\\)",
+            "\\(\\dfrac{3}{5}\\)",
+            "\\(\\dfrac{1}{10}\\)",
+            "\\(\\dfrac{3}{10}\\)"
+          ],
+          "answer": 3,
+          "hint": "Two Es means E on the first draw and E on the second. After the first E is taken, only 2 Es remain among 4 tiles.",
+          "solution": "\\(P(X=2) = \\dfrac{3}{5} \\times \\dfrac{2}{4} = \\dfrac{3}{10}\\)",
+          "steps": [
+            {
+              "explain": "For both tiles to be Es, the first tile must be an E: 3 of the 5 tiles.",
+              "work": "P(E \\text{ first}) = \\dfrac{3}{5}"
+            },
+            {
+              "explain": "The first tile is not replaced, so 2 Es remain among the 4 tiles left.",
+              "work": "P(E \\text{ second} \\mid E \\text{ first}) = \\dfrac{2}{4}"
+            },
+            {
+              "explain": "Multiply along the branch.",
+              "work": "P(X=2) = \\dfrac{3}{5} \\times \\dfrac{2}{4} = \\dfrac{6}{20} = \\dfrac{3}{10}"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q12cii"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9a-q13a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A die is rolled repeatedly until a six is obtained. Let \\(X\\) be the number of rolls required. Find \\(P(X = 4)\\).",
+          "options": [
+            "\\(\\dfrac{625}{1296}\\)",
+            "\\(\\dfrac{125}{1296}\\)",
+            "\\(\\dfrac{125}{216}\\)",
+            "\\(\\dfrac{1}{1296}\\)"
+          ],
+          "answer": 1,
+          "hint": "\\(X = 4\\) means the first three rolls are not sixes and the fourth roll is a six.",
+          "solution": "\\(P(X=4) = \\left(\\dfrac{5}{6}\\right)^3 \\times \\dfrac{1}{6} = \\dfrac{125}{1296}\\)",
+          "steps": [
+            {
+              "explain": "For the game to end on the 4th roll, the first three rolls must not be sixes, and the 4th must be a six.",
+              "work": "\\text{not 6, not 6, not 6, then 6}"
+            },
+            {
+              "explain": "Each roll is independent. Multiply the probabilities of the four rolls.",
+              "work": "P(X=4) = \\dfrac{5}{6} \\times \\dfrac{5}{6} \\times \\dfrac{5}{6} \\times \\dfrac{1}{6}"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "P(X=4) = \\dfrac{125}{1296}"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q13a"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9a-q13c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A die is rolled repeatedly until a six is obtained. Let \\(X\\) be the number of rolls required, so \\(P(X = x) = \\dfrac{1}{6}\\left(\\dfrac{5}{6}\\right)^{x-1}\\). Which expression gives the cumulative probability \\(P(X \\le x)\\)?",
+          "options": [
+            "\\(\\left(\\dfrac{5}{6}\\right)^{x}\\)",
+            "\\(1 - \\left(\\dfrac{5}{6}\\right)^{x}\\)",
+            "\\(1 - \\left(\\dfrac{1}{6}\\right)^{x}\\)",
+            "\\(1 - \\left(\\dfrac{5}{6}\\right)^{x-1}\\)"
+          ],
+          "answer": 1,
+          "hint": "\\(P(X \\le x)\\) is the sum of the first x terms of a geometric series with first term \\(\\tfrac16\\) and ratio \\(\\tfrac56\\). Or use the complement: \\(X > x\\) means the first x rolls are all not sixes.",
+          "solution": "\\(P(X \\le x) = 1 - \\left(\\dfrac{5}{6}\\right)^x\\)",
+          "steps": [
+            {
+              "explain": "The terms 1/6, (1/6)(5/6), (1/6)(5/6)² and so on form a geometric series with first term 1/6 and common ratio 5/6.",
+              "work": "a = \\dfrac{1}{6},\\quad r = \\dfrac{5}{6}"
+            },
+            {
+              "explain": "The sum of the first x terms is S = a(1 − rˣ)/(1 − r).",
+              "work": "S_x = \\dfrac{\\frac{1}{6}\\left(1 - (5/6)^x\\right)}{1 - \\frac{5}{6}}"
+            },
+            {
+              "explain": "The denominator is 1/6, which cancels the first term 1/6.",
+              "work": "S_x = 1 - \\left(\\dfrac{5}{6}\\right)^x"
+            },
+            {
+              "explain": "Check with the complement: P(X > x) means the first x rolls are all not sixes, which has probability (5/6)ˣ.",
+              "work": "P(X \\le x) = 1 - \\left(\\dfrac{5}{6}\\right)^x"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q13c"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9a-q13d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A die is rolled repeatedly until a six is obtained. Let \\(X\\) be the number of rolls required, so \\(P(X \\le x) = 1 - \\left(\\dfrac{5}{6}\\right)^x\\). What is the smallest whole number of rolls \\(x\\) for which \\(P(X \\le x) > 0.9\\)?",
+          "options": [
+            "\\(12\\)",
+            "\\(11\\)",
+            "\\(15\\)",
+            "\\(13\\)"
+          ],
+          "answer": 3,
+          "hint": "Solve \\(1 - (5/6)^x > 0.9\\), which gives \\((5/6)^x < 0.1\\). Take logarithms, and remember that dividing by \\(\\ln(5/6)\\), a negative number, reverses the inequality.",
+          "solution": "\\(x > 12.6\\), so at least 13 rolls are needed.",
+          "steps": [
+            {
+              "explain": "Write the condition and rearrange it.",
+              "work": "1 - \\left(\\dfrac{5}{6}\\right)^x > 0.9 \\Rightarrow \\left(\\dfrac{5}{6}\\right)^x < 0.1"
+            },
+            {
+              "explain": "Take logarithms of both sides. Since ln(5/6) is negative, dividing by it reverses the inequality.",
+              "work": "x \\ln\\dfrac{5}{6} < \\ln 0.1 \\Rightarrow x > \\dfrac{\\ln 0.1}{\\ln(5/6)} \\approx 12.6"
+            },
+            {
+              "explain": "The smallest whole number greater than 12.6 is 13. Check: P(X ≤ 12) ≈ 0.89 (too small) and P(X ≤ 13) ≈ 0.91.",
+              "work": "x = 13"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q13d"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9a-q13e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Ajit will not start a new game if it will take more than 10 rolls to finish. In the game, a die is rolled repeatedly until a six is obtained. Find the probability that the game needs more than 10 rolls.",
+          "options": [
+            "\\(0.16\\)",
+            "\\(0.84\\)",
+            "\\(0.13\\)",
+            "\\(0.1\\)"
+          ],
+          "answer": 0,
+          "hint": "\"More than 10 rolls\" means the first 10 rolls are all not sixes. Or use the complement: \\(1 - P(X \\le 10)\\).",
+          "solution": "\\(P(X>10) = \\left(\\dfrac{5}{6}\\right)^{10} \\approx 0.16\\) (about 16%).",
+          "steps": [
+            {
+              "explain": "The game needs more than 10 rolls exactly when none of the first 10 rolls is a six.",
+              "work": "P(X>10) = \\left(\\dfrac{5}{6}\\right)^{10}"
+            },
+            {
+              "explain": "Check with the complement, using the cumulative formula P(X ≤ 10) = 1 − (5/6)¹⁰ ≈ 0.84.",
+              "work": "P(X>10) = 1 - P(X \\le 10) = 1 - 0.8385"
+            },
+            {
+              "explain": "Evaluate and round to two decimal places.",
+              "work": "P(X>10) \\approx 0.1615 \\approx 0.16"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q13e"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9a-q14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A small pack has three 4s, two 2s and one 5 (the suit is not important). A card is selected at random and its value recorded. It is then returned to the pack and a second card is selected and recorded. Find the probability that the two cards are a 2 and a 4, in either order.",
+          "options": [
+            "\\(\\dfrac{1}{6}\\)",
+            "\\(\\dfrac{1}{9}\\)",
+            "\\(\\dfrac{1}{3}\\)",
+            "\\(\\dfrac{1}{4}\\)"
+          ],
+          "answer": 2,
+          "hint": "The card is returned, so both draws have the same probabilities. \"In either order\" means you must count both 2 then 4, and 4 then 2.",
+          "solution": "\\(P(\\text{a 2 and a 4}) = 2 \\times \\dfrac{2}{6} \\times \\dfrac{3}{6} = \\dfrac{1}{3}\\)",
+          "steps": [
+            {
+              "explain": "The card is replaced, so each draw is identical: P(2) = 2/6 = 1/3 and P(4) = 3/6 = 1/2.",
+              "work": "P(2) = \\dfrac{2}{6},\\quad P(4) = \\dfrac{3}{6}"
+            },
+            {
+              "explain": "The order 2 then 4 has probability (2/6)(3/6) = 1/6. The order 4 then 2 has the same probability.",
+              "work": "P(2 \\text{ then } 4) = \\dfrac{2}{6} \\times \\dfrac{3}{6} = \\dfrac{1}{6}"
+            },
+            {
+              "explain": "\"Either order\" means add the two orders.",
+              "work": "P = \\dfrac{1}{6} + \\dfrac{1}{6} = \\dfrac{1}{3}"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q14"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9a-q15a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A ball is drawn from a bag containing four red and three green balls, and its colour is recorded. The ball is returned, a second ball is drawn, and its colour is recorded. Find the probability that the first ball is red and the second ball is green.",
+          "options": [
+            "\\(\\dfrac{2}{7}\\)",
+            "\\(\\dfrac{24}{49}\\)",
+            "\\(\\dfrac{12}{49}\\)",
+            "\\(\\dfrac{1}{7}\\)"
+          ],
+          "answer": 2,
+          "hint": "The ball is returned, so the second draw is from all 7 balls again.",
+          "solution": "\\(P(RG) = \\dfrac{4}{7} \\times \\dfrac{3}{7} = \\dfrac{12}{49}\\)",
+          "steps": [
+            {
+              "explain": "The ball is returned, so the second draw is from the full bag of 7 balls.",
+              "work": "P(R \\text{ first}) = \\dfrac{4}{7},\\quad P(G \\text{ second}) = \\dfrac{3}{7}"
+            },
+            {
+              "explain": "Multiply the probabilities along the branch R then G.",
+              "work": "P(RG) = \\dfrac{4}{7} \\times \\dfrac{3}{7} = \\dfrac{12}{49}"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q15a"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9a-q15b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A ball is drawn from a bag containing four red and three green balls, and its colour is recorded. A second ball is then drawn without replacing the first, and its colour is recorded. Find the probability that both balls are red.",
+          "options": [
+            "\\(\\dfrac{2}{7}\\)",
+            "\\(\\dfrac{16}{49}\\)",
+            "\\(\\dfrac{4}{7}\\)",
+            "\\(\\dfrac{1}{7}\\)"
+          ],
+          "answer": 0,
+          "hint": "After one red ball is removed, 3 red balls remain among 6 balls.",
+          "solution": "\\(P(RR) = \\dfrac{4}{7} \\times \\dfrac{3}{6} = \\dfrac{2}{7}\\)",
+          "steps": [
+            {
+              "explain": "The first ball is red with probability 4/7.",
+              "work": "P(R \\text{ first}) = \\dfrac{4}{7}"
+            },
+            {
+              "explain": "The first ball is not replaced. If it was red, there are now 3 red balls among 6 balls.",
+              "work": "P(R \\text{ second} \\mid R \\text{ first}) = \\dfrac{3}{6}"
+            },
+            {
+              "explain": "Multiply along the branch and simplify (12/42 = 2/7).",
+              "work": "P(RR) = \\dfrac{4}{7} \\times \\dfrac{3}{6} = \\dfrac{12}{42} = \\dfrac{2}{7}"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q15b"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9a-q15c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Two cards are drawn from a standard pack of 52 cards without replacement, and their suits are noted (but not the order). Find the probability that both cards are hearts.",
+          "options": [
+            "\\(\\dfrac{1}{16}\\)",
+            "\\(\\dfrac{1}{4}\\)",
+            "\\(\\dfrac{13}{102}\\)",
+            "\\(\\dfrac{1}{17}\\)"
+          ],
+          "answer": 3,
+          "hint": "There are 13 hearts in the pack. After one heart is drawn, 12 hearts remain among 51 cards.",
+          "solution": "\\(P(HH) = \\dfrac{13}{52} \\times \\dfrac{12}{51} = \\dfrac{1}{17}\\)",
+          "steps": [
+            {
+              "explain": "The first card is a heart with probability 13/52.",
+              "work": "P(H \\text{ first}) = \\dfrac{13}{52}"
+            },
+            {
+              "explain": "No card is replaced, so 12 hearts remain among 51 cards.",
+              "work": "P(H \\text{ second} \\mid H \\text{ first}) = \\dfrac{12}{51}"
+            },
+            {
+              "explain": "Multiply and simplify. The common factor 13 × 12 / (52 × 51) reduces to 1/17.",
+              "work": "P(HH) = \\dfrac{13}{52} \\times \\dfrac{12}{51} = \\dfrac{156}{2652} = \\dfrac{1}{17}"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q15c"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9a-q17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A bag has six marbles marked 1, 2, 3, 4, 5, 6. Three marbles are drawn in succession, without being replaced. Let \\(X\\) be the number of even-numbered marbles drawn. Find \\(P(X = 1)\\).",
+          "options": [
+            "\\(\\dfrac{3}{20}\\)",
+            "\\(\\dfrac{9}{20}\\)",
+            "\\(\\dfrac{3}{8}\\)",
+            "\\(\\dfrac{1}{2}\\)"
+          ],
+          "answer": 1,
+          "hint": "There are 3 even and 3 odd marbles. Exactly one even marble can be in the first, second or third position. Each of these orders has the same probability.",
+          "solution": "\\(P(X=1) = 3 \\times \\dfrac{3}{20} = \\dfrac{9}{20}\\)",
+          "steps": [
+            {
+              "explain": "There are 3 even marbles and 3 odd marbles, and none is replaced. Take the order E, O, O. The probabilities change as marbles are removed.",
+              "work": "P(EOO) = \\dfrac{3}{6} \\times \\dfrac{3}{5} \\times \\dfrac{2}{4} = \\dfrac{18}{120} = \\dfrac{3}{20}"
+            },
+            {
+              "explain": "The orders O, E, O and O, O, E give the same product, only with the numerators in a different order.",
+              "work": "P(OEO) = \\dfrac{3}{6} \\times \\dfrac{3}{5} \\times \\dfrac{2}{4} = \\dfrac{3}{20}"
+            },
+            {
+              "explain": "Exactly one even marble can occur in these three orders. Add the three equal probabilities.",
+              "work": "P(X=1) = 3 \\times \\dfrac{3}{20} = \\dfrac{9}{20}"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q17"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-9a-q18a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A random variable \\(X\\) has the distribution:\n\n\\(\\begin{array}{c|ccccc} x & 1 & 2 & 3 & 4 & 5 \\\\ \\hline P(X=x) & a(a+1) & 3a^2 & 1-3a & 1-4a & a \\end{array}\\)\n\nFind the value of \\(a\\).",
+          "options": [
+            "\\(1\\)",
+            "\\(\\dfrac{1}{4}\\)",
+            "\\(\\dfrac{1}{4} \\text{ or } 1\\)",
+            "\\(\\dfrac{1}{5}\\)"
+          ],
+          "answer": 1,
+          "hint": "Set the sum of all five probabilities equal to 1 and solve the quadratic. Then check that each probability is between 0 and 1 for each solution.",
+          "solution": "\\(a = \\dfrac{1}{4}\\) (the root \\(a = 1\\) gives a negative probability).",
+          "steps": [
+            {
+              "explain": "The probabilities add to 1.",
+              "work": "a(a+1) + 3a^2 + (1-3a) + (1-4a) + a = 1"
+            },
+            {
+              "explain": "Expand and collect like terms.",
+              "work": "4a^2 - 5a + 2 = 1 \\Rightarrow 4a^2 - 5a + 1 = 0"
+            },
+            {
+              "explain": "Factorise the quadratic and find both roots.",
+              "work": "(4a - 1)(a - 1) = 0 \\Rightarrow a = \\dfrac{1}{4} \\text{ or } a = 1"
+            },
+            {
+              "explain": "Check each root. If a = 1, then 1 − 3a = −2, which is a negative probability. So a = 1 is rejected. For a = 1/4 the probabilities are 5/16, 3/16, 1/4, 0 and 1/4, which are all valid.",
+              "work": "a = \\dfrac{1}{4}"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q18a"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-9a-q19a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Kylie has a hand of four cards: the 7 of hearts, the 7 of diamonds, the 6 of clubs and the 8 of spades. She takes three of the cards at random, places them on the table, and adds the cards' values. Find the probability that the sum is 21.",
+          "options": [
+            "\\(\\dfrac{1}{3}\\)",
+            "\\(\\dfrac{1}{4}\\)",
+            "\\(\\dfrac{2}{3}\\)",
+            "\\(\\dfrac{1}{2}\\)"
+          ],
+          "answer": 3,
+          "hint": "Choosing which three cards to take is the same as choosing which one card to leave out. There are four equally likely cards to leave out.",
+          "solution": "\\(P(\\text{sum} = 21) = \\dfrac{2}{4} = \\dfrac{1}{2}\\)",
+          "steps": [
+            {
+              "explain": "Taking three cards from four is the same as leaving one card in the hand. Each of the four cards is equally likely to be left out, so each has probability 1/4.",
+              "work": "\\text{4 equally likely cases}"
+            },
+            {
+              "explain": "The total of all four cards is 7 + 7 + 6 + 8 = 28. The sum on the table is 28 minus the card left out.",
+              "work": "\\text{sum} = 28 - (\\text{card left out})"
+            },
+            {
+              "explain": "Leaving out a 7 gives 21. This can happen in 2 of the 4 cases (the 7 of hearts or the 7 of diamonds).",
+              "work": "P(\\text{sum} = 21) = \\dfrac{2}{4} = \\dfrac{1}{2}"
+            },
+            {
+              "explain": "The other sums are 22 (leave out the 6) and 20 (leave out the 8), each with probability 1/4. So the three sums are not equally likely.",
+              "work": "P(20) = \\dfrac{1}{4},\\ P(21) = \\dfrac{1}{2},\\ P(22) = \\dfrac{1}{4}"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q19a"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-9a-q19b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Kylie has a hand of five cards: three 7s, a 6 and an 8. She takes three of the cards at random, places them on the table, and adds the cards' values. Find the probability that the sum is 21.",
+          "options": [
+            "\\(\\dfrac{2}{5}\\)",
+            "\\(\\dfrac{1}{2}\\)",
+            "\\(\\dfrac{3}{10}\\)",
+            "\\(\\dfrac{1}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "There are \\(\\binom{5}{3} = 10\\) equally likely selections. Choosing 3 cards is the same as choosing the 2 cards that are left out.",
+          "solution": "\\(P(\\text{sum} = 21) = \\dfrac{4}{10} = \\dfrac{2}{5}\\)",
+          "steps": [
+            {
+              "explain": "Choosing 3 cards from 5 is the same as choosing the 2 cards left out, so there are 10 equally likely selections.",
+              "work": "\\binom{5}{3} = \\binom{5}{2} = 10"
+            },
+            {
+              "explain": "The five cards total 7 + 7 + 7 + 6 + 8 = 35, so the sum is 35 minus the two cards left out. A sum of 21 needs the two left-out cards to total 14.",
+              "work": "35 - 21 = 14"
+            },
+            {
+              "explain": "A total of 14 happens when the left-out cards are two 7s (3 ways) or the 6 and the 8 (1 way). That is 4 of the 10 selections.",
+              "work": "7+7:\\ \\dbinom{3}{2} = 3 \\text{ ways};\\quad 6+8:\\ 1 \\text{ way}"
+            },
+            {
+              "explain": "Write the probability and simplify.",
+              "work": "P(\\text{sum} = 21) = \\dfrac{4}{10} = \\dfrac{2}{5}"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9A Q19b"
+          },
+          "xp": 4
+        }
+      ]
+    }
+  ]
+}
