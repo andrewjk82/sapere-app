@@ -9544,6 +9544,556 @@
       ]
     },
     {
+      "topicId": "y12a-2G",
+      "code": "2G",
+      "title": "Review of continuity and differentiability",
+      "questions": [
+        {
+          "id": "y12a-2g-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The graph of \\(y = f(x)\\) is shown. The curve passes through the origin and joins the point \\((2, 0)\\) (a closed dot), and a second piece starts from an open circle at \\((2, 3)\\). Which statement describes \\(f(x)\\) at \\(x = 2\\)?",
+          "figure": {
+            "svg": "<svg viewBox=\"0 0 300 190\" width=\"50%\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:8px 0;font-family:system-ui,sans-serif\"><line x1=\"20\" y1=\"150\" x2=\"285\" y2=\"150\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"60\" y1=\"175\" x2=\"60\" y2=\"15\" stroke=\"#475569\" stroke-width=\"2\"/><polyline points=\"40.0,193.7 43.0,186.2 46.0,179.0 49.0,172.2 52.0,165.7 55.0,159.6 58.0,153.7 61.0,148.2 64.0,143.0 67.0,138.2 70.0,133.6 73.0,129.4 76.0,125.5 79.0,122.0 82.0,118.8 85.0,115.9 88.0,113.3 91.0,111.1 94.0,109.2 97.0,107.6 100.0,106.3 103.0,105.4 106.0,104.8 109.0,104.5 112.0,104.6 115.0,105.0 118.0,105.7 121.0,106.7 124.0,108.1 127.0,109.8 130.0,111.8 133.0,114.1 136.0,116.8 139.0,119.8 142.0,123.1 145.0,126.8 148.0,130.8 151.0,135.1 154.0,139.7 157.0,144.7 160.0,150.0\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"2.5\"/><polyline points=\"160.0,45.0 161.8,45.5 163.5,46.5 165.3,47.9 167.0,49.5 168.8,51.5 170.5,53.6 172.3,56.1 174.0,58.7 175.8,61.5 177.5,64.6 179.3,67.8 181.0,71.2 182.8,74.8 184.5,78.5 186.3,82.4 188.0,86.5 189.8,90.8 191.5,95.1 193.3,99.7 195.0,104.3 196.8,109.2 198.5,114.1 200.3,119.2 202.0,124.4 203.8,129.8 205.5,135.3 207.3,140.9 209.0,146.7 210.7,152.5 212.5,158.5\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"2.5\"/><line x1=\"160\" y1=\"45\" x2=\"160\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><line x1=\"60\" y1=\"45\" x2=\"160\" y2=\"45\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><circle cx=\"160\" cy=\"45\" r=\"4\" fill=\"#fff\" stroke=\"#0f766e\" stroke-width=\"2\"/><circle cx=\"160\" cy=\"150\" r=\"4\" fill=\"#0f766e\"/><text x=\"52\" y=\"49\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">3</text><text x=\"160\" y=\"167\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">2</text><text x=\"66\" y=\"22\" font-size=\"12\" font-weight=\"600\" font-style=\"italic\" fill=\"#1e293b\">y</text><text x=\"278\" y=\"166\" font-size=\"12\" font-weight=\"600\" font-style=\"italic\" fill=\"#1e293b\">x</text></svg>"
+          },
+          "options": [
+            "Continuous but not differentiable",
+            "Not continuous, and therefore not differentiable",
+            "Continuous and differentiable",
+            "Differentiable but not continuous"
+          ],
+          "answer": 1,
+          "hint": "Can you draw the curve through the point at \\(x = 2\\) without lifting the pen?",
+          "solution": "There is a jump from 0 to 3 at \\(x = 2\\), so \\(f\\) is not continuous there, and therefore not differentiable.",
+          "steps": [
+            {
+              "explain": "The curve arrives at \\(x = 2\\) at height 0 (the closed dot), but the next piece starts at height 3 (the open circle). Here \\(f(2) = 0\\).",
+              "work": "\\(\\lim_{x\\to 2^-} f(x) = 0,\\quad \\lim_{x\\to 2^+} f(x) = 3\\)"
+            },
+            {
+              "explain": "The two one-sided limits differ, so there is a jump and the pen must be lifted.",
+              "work": "\\(0 \\ne 3\\)"
+            },
+            {
+              "explain": "A function that is not continuous at a point cannot be differentiable there, because no tangent can be drawn.",
+              "work": "\\(\\text{not continuous, so not differentiable}\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "2G Q1a"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-2g-q2d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Let \\(f(x) = \\begin{cases} x^2, & x \\le 1 \\\\ 2x - 1, & x \\gt 1 \\end{cases}\\) Find \\(f'(1)\\).",
+          "options": [
+            "\\(1\\)",
+            "\\(0\\)",
+            "It does not exist",
+            "\\(2\\)"
+          ],
+          "answer": 3,
+          "hint": "Differentiate each piece, then compare the limits of \\(f'(x)\\) on the left and right of \\(x = 1\\).",
+          "solution": "Both one-sided limits of \\(f'(x)\\) equal 2, so \\(f'(1) = 2\\).",
+          "steps": [
+            {
+              "explain": "First check continuity at \\(x = 1\\): both pieces give 1.",
+              "work": "\\(1^2 = 1,\\quad 2(1) - 1 = 1,\\quad f(1) = 1\\)"
+            },
+            {
+              "explain": "Differentiate each piece for \\(x \\lt 1\\) and \\(x \\gt 1\\).",
+              "work": "\\(f'(x) = 2x \\text{ for } x \\lt 1,\\quad f'(x) = 2 \\text{ for } x \\gt 1\\)"
+            },
+            {
+              "explain": "The two one-sided limits of the derivative agree, so \\(f\\) is differentiable at \\(x = 1\\). (The value 1 is \\(f(1)\\), not the gradient.)",
+              "work": "\\(\\lim_{x\\to 1^-} 2x = 2,\\quad \\lim_{x\\to 1^+} 2 = 2,\\quad f'(1) = 2\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "2G Q2d"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-2g-q3a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Sketch \\(y = |x + 2|\\). At which value of \\(x\\) is the function not differentiable?",
+          "options": [
+            "\\(-2\\)",
+            "\\(2\\)",
+            "\\(0\\)",
+            "It is differentiable everywhere"
+          ],
+          "answer": 0,
+          "hint": "\\(y = |x|\\) has a sharp corner at \\(x = 0\\). Where is the corner after the graph is shifted?",
+          "solution": "The graph is continuous everywhere, with a sharp corner at \\(x = -2\\), so it is not differentiable there.",
+          "steps": [
+            {
+              "explain": "The graph is \\(y = |x|\\) shifted 2 units to the left, so its corner is where the inside is zero.",
+              "work": "\\(x + 2 = 0 \\Rightarrow x = -2\\)"
+            },
+            {
+              "explain": "The pieces are \\(y = x + 2\\) for \\(x \\ge -2\\) and \\(y = -(x + 2)\\) for \\(x \\lt -2\\), with gradients 1 and \\(-1\\).",
+              "work": "\\(f'(x) = 1 \\text{ for } x \\gt -2,\\quad f'(x) = -1 \\text{ for } x \\lt -2\\)"
+            },
+            {
+              "explain": "The limits of the derivative differ, so there is a sharp corner. The function is continuous everywhere but not differentiable at \\(x = -2\\). (The corner is at \\(-2\\), not \\(2\\), since the graph moves left.)",
+              "work": "\\(x = -2\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "2G Q3a"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-2g-q3b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Sketch \\(y = |x| + 2\\). At which value of \\(x\\) is the function not differentiable?",
+          "options": [
+            "\\(-2\\)",
+            "\\(2\\)",
+            "\\(0\\)",
+            "It is differentiable everywhere"
+          ],
+          "answer": 2,
+          "hint": "Adding 2 shifts the graph up, not sideways.",
+          "solution": "The corner is at \\((0, 2)\\), so \\(f\\) is continuous but not differentiable at \\(x = 0\\).",
+          "steps": [
+            {
+              "explain": "Adding 2 outside the absolute value moves the graph up 2 units. The corner stays above \\(x = 0\\), at \\((0, 2)\\).",
+              "work": "\\(y = |x| + 2\\)"
+            },
+            {
+              "explain": "The gradient is 1 for \\(x \\gt 0\\) and \\(-1\\) for \\(x \\lt 0\\).",
+              "work": "\\(\\lim_{x\\to 0^+} f'(x) = 1,\\quad \\lim_{x\\to 0^-} f'(x) = -1\\)"
+            },
+            {
+              "explain": "The limits differ, so the function is continuous but not differentiable at \\(x = 0\\).",
+              "work": "\\(x = 0\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "2G Q3b"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-2g-q4a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Test \\(f(x) = \\begin{cases} (x + 1)^2, & x \\le 1 \\\\ 4x - 2, & x \\gt 1 \\end{cases}\\) for continuity and differentiability at \\(x = 1\\).",
+          "options": [
+            "Continuous but not differentiable",
+            "Continuous and differentiable",
+            "Not continuous, and therefore not differentiable",
+            "Differentiable but not continuous"
+          ],
+          "answer": 2,
+          "hint": "Compare \\(f(1)\\), \\(\\lim_{x\\to 1^-} f(x)\\) and \\(\\lim_{x\\to 1^+} f(x)\\).",
+          "solution": "The left-hand value is 4 but the right-hand limit is 2, so \\(f\\) is not continuous, and therefore not differentiable, at \\(x = 1\\).",
+          "steps": [
+            {
+              "explain": "Read \\(f(1)\\) and the left-hand limit from the first line.",
+              "work": "\\(f(1) = \\lim_{x\\to 1^-} f(x) = (1 + 1)^2 = 4\\)"
+            },
+            {
+              "explain": "Read the right-hand limit from the second line.",
+              "work": "\\(\\lim_{x\\to 1^+} f(x) = 4(1) - 2 = 2\\)"
+            },
+            {
+              "explain": "The limits are not equal, so the function is not continuous at \\(x = 1\\). It is then not differentiable either, even if the gradients happened to match.",
+              "work": "\\(4 \\ne 2\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "2G Q4a"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-2g-q4b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Test \\(f(x) = \\begin{cases} 3 - 2x, & x \\lt 1 \\\\ \\dfrac{1}{x}, & x \\ge 1 \\end{cases}\\) for continuity and differentiability at \\(x = 1\\).",
+          "options": [
+            "Continuous but not differentiable",
+            "Continuous and differentiable",
+            "Not continuous, and therefore not differentiable",
+            "Differentiable but not continuous"
+          ],
+          "answer": 0,
+          "hint": "Check continuity first. If the function is continuous, differentiate each piece and compare \\(f'(x)\\) on each side.",
+          "solution": "\\(f\\) is continuous at \\(x = 1\\), but the gradients \\(-2\\) and \\(-1\\) differ, so it is not differentiable there.",
+          "steps": [
+            {
+              "explain": "Compare the limits and the value at \\(x = 1\\).",
+              "work": "\\(\\lim_{x\\to 1^-}(3 - 2x) = 1,\\quad \\lim_{x\\to 1^+}\\dfrac{1}{x} = 1,\\quad f(1) = 1\\)"
+            },
+            {
+              "explain": "All three agree, so \\(f\\) is continuous at \\(x = 1\\). Now differentiate each piece.",
+              "work": "\\(f'(x) = -2 \\text{ for } x \\lt 1,\\quad f'(x) = -\\dfrac{1}{x^2} \\text{ for } x \\gt 1\\)"
+            },
+            {
+              "explain": "The left-hand limit of \\(f'\\) is \\(-2\\) but the right-hand limit is \\(-1\\). They differ, so there is a corner.",
+              "work": "\\(\\lim_{x\\to 1^-} f'(x) = -2 \\ne \\lim_{x\\to 1^+} f'(x) = -1\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "2G Q4b"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-2g-q4c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Test \\(f(x) = \\begin{cases} 2 - x^2, & x \\le 1 \\\\ (x - 2)^2, & x \\gt 1 \\end{cases}\\) for continuity and differentiability at \\(x = 1\\).",
+          "options": [
+            "Continuous but not differentiable",
+            "Not continuous, and therefore not differentiable",
+            "Differentiable but not continuous",
+            "Continuous and differentiable"
+          ],
+          "answer": 3,
+          "hint": "Both pieces take the same value at \\(x = 1\\). Then compare the two gradients.",
+          "solution": "\\(f\\) is continuous at \\(x = 1\\), and both one-sided gradients equal \\(-2\\), so it is differentiable there with \\(f'(1) = -2\\).",
+          "steps": [
+            {
+              "explain": "Compare the limits and \\(f(1)\\).",
+              "work": "\\(\\lim_{x\\to 1^-}(2 - x^2) = 1,\\quad \\lim_{x\\to 1^+}(x-2)^2 = 1,\\quad f(1) = 1\\)"
+            },
+            {
+              "explain": "Continuous at \\(x = 1\\). Differentiate each piece.",
+              "work": "\\(f'(x) = -2x \\text{ for } x \\lt 1,\\quad f'(x) = 2(x - 2) \\text{ for } x \\gt 1\\)"
+            },
+            {
+              "explain": "The gradients from both sides agree, so \\(f\\) is differentiable at \\(x = 1\\) with \\(f'(1) = -2\\).",
+              "work": "\\(\\lim_{x\\to 1^-}(-2x) = -2,\\quad \\lim_{x\\to 1^+}2(x-2) = -2\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "2G Q4c"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-2g-q4d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find \\(f'(1)\\) for \\(f(x) = \\begin{cases} (x - 1)^3, & x \\le 1 \\\\ (x - 1)^2, & x \\gt 1 \\end{cases}\\)",
+          "options": [
+            "\\(1\\)",
+            "\\(0\\)",
+            "\\(2\\)",
+            "It does not exist, because the two pieces are different"
+          ],
+          "answer": 1,
+          "hint": "Check the function is continuous at \\(x = 1\\), then compare the derivatives of the two pieces.",
+          "solution": "Both one-sided limits of \\(f'(x)\\) are 0, so \\(f'(1) = 0\\).",
+          "steps": [
+            {
+              "explain": "Both pieces are 0 at \\(x = 1\\), so the function is continuous.",
+              "work": "\\((1-1)^3 = 0,\\quad (1-1)^2 = 0,\\quad f(1) = 0\\)"
+            },
+            {
+              "explain": "Differentiate each piece.",
+              "work": "\\(f'(x) = 3(x-1)^2 \\text{ for } x \\lt 1,\\quad f'(x) = 2(x-1) \\text{ for } x \\gt 1\\)"
+            },
+            {
+              "explain": "Both limits equal 0, so \\(f\\) is differentiable at \\(x = 1\\) and \\(f'(1) = 0\\). Different formulas for the pieces do not matter — only the limits of the gradients do.",
+              "work": "\\(\\lim_{x\\to 1^-} 3(x-1)^2 = 0,\\quad \\lim_{x\\to 1^+} 2(x-1) = 0\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "2G Q4d"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-2g-q5a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A function is \\(y = \\sqrt{1 - (x+1)^2}\\) for \\(-2 \\le x \\le 0\\) and \\(y = \\sqrt{1 - (x-1)^2}\\) for \\(0 \\lt x \\le 2\\). Each part is a semicircle of radius 1, and the two semicircles meet at the origin. Which statement describes the function at \\(x = 0\\)?",
+          "options": [
+            "Continuous and differentiable, because the pieces meet at the same point",
+            "Continuous but not differentiable: the curve becomes infinitely steep on both sides, with a cusp at the origin",
+            "Not continuous, because the two formulas are different",
+            "Continuous and differentiable, with a horizontal tangent at the origin"
+          ],
+          "answer": 1,
+          "hint": "Find the value of each piece at \\(x = 0\\), then think about the gradient of a semicircle at the end of its diameter.",
+          "solution": "The function is continuous at \\(x = 0\\), but the gradient goes to \\(-\\infty\\) on the left and \\(+\\infty\\) on the right, so it is not differentiable there (a cusp).",
+          "steps": [
+            {
+              "explain": "Both pieces give 0 at \\(x = 0\\), so the function is continuous.",
+              "work": "\\(\\sqrt{1 - 1^2} = 0,\\quad \\sqrt{1 - (-1)^2} = 0\\)"
+            },
+            {
+              "explain": "Differentiate each piece. The denominators are zero at \\(x = 0\\), because each semicircle has a vertical tangent at the end of its diameter.",
+              "work": "\\(f'(x) = \\dfrac{-(x+1)}{\\sqrt{1-(x+1)^2}} \\to -\\infty \\text{ as } x \\to 0^-,\\quad f'(x) = \\dfrac{-(x-1)}{\\sqrt{1-(x-1)^2}} \\to +\\infty \\text{ as } x \\to 0^+\\)"
+            },
+            {
+              "explain": "The gradient heads to \\(-\\infty\\) on the left and \\(+\\infty\\) on the right, so there is no tangent with a gradient: the graph has a cusp and is not differentiable at the origin.",
+              "work": "\\(\\text{continuous, not differentiable}\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "2G Q5a"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-2g-q5b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A function is \\(y = \\sqrt{1 - (x+1)^2}\\) for \\(-2 \\le x \\le 0\\) and \\(y = -\\sqrt{1 - (x-1)^2}\\) for \\(0 \\lt x \\le 2\\). That is a semicircle above the axis on the left and a semicircle below the axis on the right. Which statement describes the function at \\(x = 0\\)?",
+          "options": [
+            "Continuous and differentiable, because the curve is smooth and has no corner",
+            "Not continuous, because one piece is above the axis and the other below",
+            "Continuous and differentiable, with \\(f'(0) = 0\\)",
+            "Continuous but not differentiable: the tangent is vertical, so it has no gradient"
+          ],
+          "answer": 3,
+          "hint": "Both pieces are 0 at \\(x = 0\\). Look at what happens to the gradient on each side.",
+          "solution": "The function is continuous at \\(x = 0\\) with a vertical tangent there, so \\(f'(0)\\) does not exist.",
+          "steps": [
+            {
+              "explain": "Both pieces give 0 at \\(x = 0\\), so the function is continuous.",
+              "work": "\\(\\sqrt{1 - (-1)^2} = 0,\\quad -\\sqrt{1 - (-1)^2} = 0\\)"
+            },
+            {
+              "explain": "Differentiate each piece. On both sides the denominator tends to 0 while the numerator tends to \\(-1\\), so the gradient tends to \\(-\\infty\\).",
+              "work": "\\(f'(x) = \\dfrac{-(x+1)}{\\sqrt{1-(x+1)^2}} \\to -\\infty,\\quad f'(x) = \\dfrac{x-1}{\\sqrt{1-(x-1)^2}} \\to -\\infty\\)"
+            },
+            {
+              "explain": "The curve is smooth with no corner, but the tangent at the origin is vertical. A vertical line has no gradient, so the function is not differentiable at \\(x = 0\\).",
+              "work": "\\(\\text{continuous, not differentiable}\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "2G Q5b"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-2g-q6a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Is \\(y = |x^2|\\) differentiable at \\(x = 0\\)?",
+          "options": [
+            "Yes: \\(|x^2| = x^2\\) for all \\(x\\), which is smooth",
+            "No: the absolute value always creates a sharp corner",
+            "No: the graph has a vertical tangent at the origin",
+            "No: \\(f'(0)\\) is undefined because \\(f(0) = 0\\)"
+          ],
+          "answer": 0,
+          "hint": "Think about whether \\(x^2\\) is ever negative.",
+          "solution": "\\(|x^2| = x^2\\), so \\(f'(0) = 0\\) and the function is differentiable at \\(x = 0\\).",
+          "steps": [
+            {
+              "explain": "A square is never negative, so the absolute value changes nothing.",
+              "work": "\\(|x^2| = x^2\\)"
+            },
+            {
+              "explain": "The parabola has a horizontal tangent at the origin.",
+              "work": "\\(f'(x) = 2x,\\quad f'(0) = 0\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "2G Q6a"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-2g-q6b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Is \\(y = |x^3|\\) differentiable at \\(x = 0\\)?",
+          "options": [
+            "No: the absolute value always creates a sharp corner",
+            "No: the gradient is \\(-3x^2\\) on the left and \\(3x^2\\) on the right",
+            "Yes: the graph is flat at the origin, with \\(f'(0) = 0\\)",
+            "No: it is not continuous at \\(x = 0\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the derivative on each side of \\(x = 0\\) and compare.",
+          "solution": "Both one-sided derivatives tend to 0, so \\(|x^3|\\) is differentiable at \\(x = 0\\).",
+          "steps": [
+            {
+              "explain": "For \\(x \\ge 0\\), \\(|x^3| = x^3\\); for \\(x \\lt 0\\), \\(|x^3| = -x^3\\).",
+              "work": "\\(f(x) = x^3 \\text{ for } x \\ge 0,\\quad f(x) = -x^3 \\text{ for } x \\lt 0\\)"
+            },
+            {
+              "explain": "Differentiate each piece.",
+              "work": "\\(f'(x) = 3x^2 \\text{ for } x \\gt 0,\\quad f'(x) = -3x^2 \\text{ for } x \\lt 0\\)"
+            },
+            {
+              "explain": "Both one-sided limits are 0, so the function is differentiable at \\(x = 0\\), unlike \\(|x|\\).",
+              "work": "\\(\\lim_{x\\to 0^+} 3x^2 = 0 = \\lim_{x\\to 0^-}(-3x^2),\\quad f'(0) = 0\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "2G Q6b"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-2g-q6c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Is \\(y = \\sqrt{|x|}\\) differentiable at \\(x = 0\\)?",
+          "options": [
+            "Yes: it is continuous at \\(x = 0\\)",
+            "Yes: \\(f'(0) = 0\\), because the graph is flat there",
+            "No: it is continuous, but the graph is vertical at the origin",
+            "No: it is not continuous at \\(x = 0\\)"
+          ],
+          "answer": 2,
+          "hint": "Write the function in pieces and look at the derivative near \\(x = 0\\).",
+          "solution": "The gradient tends to \\(+\\infty\\) from the right and \\(-\\infty\\) from the left, so \\(\\sqrt{|x|}\\) is not differentiable at \\(x = 0\\).",
+          "steps": [
+            {
+              "explain": "The function is continuous at \\(x = 0\\), since \\(\\sqrt{|0|} = 0\\) and the limits are 0.",
+              "work": "\\(f(x) = \\sqrt{x} \\text{ for } x \\ge 0,\\quad f(x) = \\sqrt{-x} \\text{ for } x \\lt 0\\)"
+            },
+            {
+              "explain": "Differentiate each piece. There is a zero in the denominator at \\(x = 0\\).",
+              "work": "\\(f'(x) = \\dfrac{1}{2\\sqrt{x}} \\to +\\infty,\\quad f'(x) = -\\dfrac{1}{2\\sqrt{-x}} \\to -\\infty\\)"
+            },
+            {
+              "explain": "The gradient is infinite, so the tangent is vertical and the function is not differentiable at \\(x = 0\\).",
+              "work": "\\(\\text{continuous, not differentiable}\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "2G Q6c"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-2g-q6d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Is \\(y = \\sqrt[3]{x} = x^{\\frac{1}{3}}\\) continuous and differentiable at \\(x = 0\\)?",
+          "options": [
+            "Continuous but not differentiable",
+            "Continuous and differentiable",
+            "Not continuous, and therefore not differentiable",
+            "Differentiable but not continuous"
+          ],
+          "answer": 0,
+          "hint": "Differentiate and look at the denominator at \\(x = 0\\).",
+          "solution": "\\(f\\) is continuous at \\(x = 0\\), but \\(f'(x) \\to \\infty\\) there (a vertical tangent), so it is not differentiable.",
+          "steps": [
+            {
+              "explain": "Cube roots of negative numbers are defined, so the limits from both sides are 0 and \\(f(0) = 0\\). The function is continuous.",
+              "work": "\\(\\lim_{x\\to 0^+} x^{\\frac{1}{3}} = 0 = \\lim_{x\\to 0^-} x^{\\frac{1}{3}} = f(0)\\)"
+            },
+            {
+              "explain": "Differentiate. There is a zero in the denominator (and not in the numerator) at \\(x = 0\\).",
+              "work": "\\(f'(x) = \\dfrac{1}{3}x^{-\\frac{2}{3}} = \\dfrac{1}{3\\left(x^{\\frac{1}{3}}\\right)^2}\\)"
+            },
+            {
+              "explain": "So \\(f'(x) \\to \\infty\\) on both sides: the tangent at the origin is vertical (the reflection of the horizontal tangent of \\(y = x^3\\)). A vertical tangent has no gradient, so \\(f\\) is not differentiable at \\(x = 0\\).",
+              "work": "\\(\\text{continuous, not differentiable}\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "2G Q6d"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-2g-qex22b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Test \\(f(x) = \\begin{cases} (x - 1)(x - 3), & x \\ge 1 \\\\ 1 - x^2, & x \\lt 1 \\end{cases}\\) for continuity and differentiability at \\(x = 1\\).",
+          "options": [
+            "Continuous but not differentiable, because the gradients are \\(2\\) and \\(-2\\)",
+            "Not continuous at \\(x = 1\\)",
+            "Continuous and differentiable, with \\(f'(1) = 2\\)",
+            "Continuous and differentiable, with \\(f'(1) = -2\\)"
+          ],
+          "answer": 3,
+          "hint": "Check the values first, then compare the derivatives \\(2x - 4\\) and \\(-2x\\) at \\(x = 1\\).",
+          "solution": "Both pieces give 0 at \\(x = 1\\), and the gradients on each side are \\(-2\\), so \\(f\\) is differentiable with \\(f'(1) = -2\\).",
+          "steps": [
+            {
+              "explain": "Compare the limits and \\(f(1)\\).",
+              "work": "\\((1-1)(1-3) = 0,\\quad 1 - 1^2 = 0,\\quad f(1) = 0\\)"
+            },
+            {
+              "explain": "Continuous. Expand the first piece, then differentiate each piece.",
+              "work": "\\(f'(x) = 2x - 4 \\text{ for } x \\gt 1,\\quad f'(x) = -2x \\text{ for } x \\lt 1\\)"
+            },
+            {
+              "explain": "Both limits equal \\(-2\\), so \\(f\\) is differentiable at \\(x = 1\\).",
+              "work": "\\(2 - 4 = -2,\\quad -2(1) = -2\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "2G Qex22b"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-2g-qex22c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Test \\(f(x) = \\begin{cases} -(x - 1)(x - 3), & x \\ge 1 \\\\ 1 - x^2, & x \\lt 1 \\end{cases}\\) for continuity and differentiability at \\(x = 1\\).",
+          "options": [
+            "Continuous and differentiable",
+            "Continuous but not differentiable",
+            "Not continuous, and therefore not differentiable",
+            "Differentiable but not continuous"
+          ],
+          "answer": 1,
+          "hint": "Both pieces are 0 at \\(x = 1\\). Differentiate each piece and compare.",
+          "solution": "\\(f\\) is continuous at \\(x = 1\\), but the gradients 2 and \\(-2\\) differ, so it is not differentiable there.",
+          "steps": [
+            {
+              "explain": "Compare the values.",
+              "work": "\\(-(1-1)(1-3) = 0,\\quad 1 - 1^2 = 0,\\quad f(1) = 0\\)"
+            },
+            {
+              "explain": "Continuous. Expand \\(-(x-1)(x-3) = -x^2 + 4x - 3\\) and differentiate each piece.",
+              "work": "\\(f'(x) = -2x + 4 \\text{ for } x \\gt 1,\\quad f'(x) = -2x \\text{ for } x \\lt 1\\)"
+            },
+            {
+              "explain": "The limits of the gradient are 2 on the right and \\(-2\\) on the left, so there is a sharp point.",
+              "work": "\\(-2 + 4 = 2 \\ne -2\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "2G Qex22c"
+          },
+          "xp": 3
+        }
+      ]
+    },
+    {
       "topicId": "y12a-2H",
       "code": "2H",
       "title": "Applications of maximisation and minimisation",
