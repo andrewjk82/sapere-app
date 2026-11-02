@@ -11,6 +11,7 @@ import {
 import MathView from './MathView';
 import TopicPracticeSession from './TopicPracticeSession';
 import ScholarshipResult from './ScholarshipResult';
+import ChallengeSketchBoard from './challenge/ChallengeSketchBoard';
 
 // The challenge review (one question at a time, step-by-step solutions) is only needed once a student opens a review.
 const ChallengeReviewView = lazy(() => import('./challenge/ChallengeReviewView'));
@@ -24,6 +25,17 @@ const btn = (primary) => ({
 });
 const mmss = (sec) => `${Math.floor(sec / 60)}:${String(Math.max(0, sec) % 60).padStart(2, '0')}`;
 const optText = (o) => (typeof o === 'string' ? o : o?.text ?? '');
+
+// Wide screens put the working-out pad beside the question; narrow ones stack it underneath.
+const useWideScreen = (min = 980) => {
+  const [wide, setWide] = useState(() => (typeof window === 'undefined' ? true : window.innerWidth >= min));
+  useEffect(() => {
+    const on = () => setWide(window.innerWidth >= min);
+    window.addEventListener('resize', on);
+    return () => window.removeEventListener('resize', on);
+  }, [min]);
+  return wide;
+};
 
 const isAnswered = (q, a) => (q.subQuestions?.length
   ? q.subQuestions.every((sq, i) => a?.[subKey(sq, i)] !== undefined)
@@ -260,6 +272,7 @@ const ScholarshipTest = ({ topic, chapter, profile, onBack, size: sizeProp = TES
       <ArrowLeft size={16} /> {view === 'result' ? 'All tests' : 'Back'}
     </button>
   );
+  const isWide = useWideScreen();
   const wrap = (children) => <div style={{ maxWidth: 760, margin: '0 auto', padding: '8px 4px 40px' }}>{children}</div>;
 
   if (failed) return wrap(<>{back}<div style={card}>Could not load the questions. Check your connection and try again.</div></>);
@@ -271,7 +284,7 @@ const ScholarshipTest = ({ topic, chapter, profile, onBack, size: sizeProp = TES
     const q = testQs[Math.min(idx, testQs.length - 1)];
     const answered = testQs.filter((x) => isAnswered(x, cur.answers[String(x.id)])).length;
     const setAnswer = (v) => save({ ...st, current: { ...cur, answers: { ...cur.answers, [String(q.id)]: v } } });
-    return wrap(
+    const testBody = (
       <>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 12 }}>
           <div style={{ fontWeight: 900, color: C.ink }}>{topic.title} · Test</div>
@@ -319,7 +332,26 @@ const ScholarshipTest = ({ topic, chapter, profile, onBack, size: sizeProp = TES
             <button type="button" onClick={() => (answered < testQs.length ? setConfirming(true) : submit())} style={{ ...btn(false), padding: '8px 12px', fontSize: '0.8rem' }}>Submit test</button>
           </div>
         )}
-      </>,
+      </>
+    );
+    const pad = (
+      <ChallengeSketchBoard
+        placement={isWide ? 'side' : 'tablet'}
+        questionId={q.id}
+        questionType={q.type}
+        isSubmitted={false}
+        showSplitScreen
+        fillAvailableHeight={isWide}
+      />
+    );
+    if (!isWide) {
+      return wrap(<>{testBody}<div style={{ marginTop: 16, minHeight: 420, display: 'flex' }}>{pad}</div></>);
+    }
+    return (
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, maxWidth: 1500, margin: '0 auto', padding: '8px 4px 24px', height: 'calc(100vh - 24px)', boxSizing: 'border-box' }}>
+        <div style={{ minWidth: 0, overflowY: 'auto', paddingRight: 4 }}>{testBody}</div>
+        <div style={{ minWidth: 0, minHeight: 0, display: 'flex', flexDirection: 'column' }}>{pad}</div>
+      </div>
     );
   }
 
