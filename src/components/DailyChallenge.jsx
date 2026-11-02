@@ -1196,7 +1196,13 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
             : [],
           requiresManualGrading: currentQ?.requiresManualGrading || true,
         };
-        const gradingDocRef = await addDoc(collection(db, 'grading_queue'), gradingEntry);
+        // Never await the write: addDoc resolves only once the server acks it, so on a stalled
+        // connection the student sat on a disabled "Saving Graph..." button (2026-11-02, Jihwan — three
+        // submits all reached the server in the same second). Firestore queues the write offline and
+        // flushes it later; the id is client-generated, so auto-grade just waits for the commit.
+        const gradingDocRef = doc(collection(db, 'grading_queue'));
+        const gradingWrite = setDoc(gradingDocRef, gradingEntry);
+        gradingWrite.catch((err) => console.error('Failed to submit for review', err));
         // Skip AI grading when:
         //  - nothing submitted (empty board + no typed answer), or
         //  - drawing exists but ink is not "substantial" (dots/blank waste Gemini quota).
@@ -1208,7 +1214,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
         const inkOk = submitInkLevel === 'substantial' || typedOnly;
         if (hasSubmittedContent && inkOk) {
           // Fire-and-forget: ask Gemini to pre-grade so the teacher sees an AI assessment
-          fetch('/api/auto-grade', {
+          gradingWrite.then(() => fetch('/api/auto-grade', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ gradingItemId: gradingDocRef.id }),
@@ -1216,7 +1222,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
             const body = await r.json().catch(() => ({}));
             if (!body.success) console.warn('[auto-grade] failed:', body.message || body.error || r.status);
             else console.log('[auto-grade] ok:', gradingDocRef.id);
-          }).catch((err) => console.warn('[auto-grade] network error:', err?.message));
+          })).catch((err) => console.warn('[auto-grade] network error:', err?.message));
         } else {
           console.log(
             '[auto-grade] skipped —',
