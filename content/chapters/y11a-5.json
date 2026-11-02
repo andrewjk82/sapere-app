@@ -9896,6 +9896,96 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "y11a-5c-excel-intro-q09",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If \\(f(x)=ax^3+bx^2+cx+d\\), find \\(f(x)-f(-x)\\).",
+          "options": [
+            "\\(2ax^3+2cx\\)",
+            "\\(2bx^2+2d\\)",
+            "\\(2ax^3+2bx^2+2cx+2d\\)",
+            "\\(2bx^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute \\(-x\\) for every x, keeping track of odd and even powers, then subtract the entire result.",
+          "steps": [
+            {
+              "explain": "Substitute \\(-x\\) into every occurrence of x. Remember \\((-x)^3=-x^3\\) and \\((-x)^2=x^2\\).",
+              "work": "\\(f(-x)=a(-x)^3+b(-x)^2+c(-x)+d=-ax^3+bx^2-cx+d\\)"
+            },
+            {
+              "explain": "Subtract the whole expression. Put it in brackets so each sign changes correctly.",
+              "work": "\\(f(x)-f(-x)=ax^3+bx^2+cx+d-(-ax^3+bx^2-cx+d)\\)"
+            },
+            {
+              "explain": "Distribute the minus sign and combine like terms. The even-power and constant terms cancel.",
+              "work": "\\(ax^3+ax^3+bx^2-bx^2+cx+cx+d-d=2ax^3+2cx\\)"
+            },
+            {
+              "explain": "Therefore the difference contains only the odd-power terms, doubled.",
+              "work": "\\(\\boxed{2ax^3+2cx}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 13,
+            "sourceQuestion": 9,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          }
+        },
+        {
+          "id": "y11a-5c-excel-intro-q13",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which diagram shows the graph of an odd function?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 0,
+          "hint": "An odd function has origin symmetry: rotating its graph by 180° about the origin leaves it unchanged.",
+          "steps": [
+            {
+              "explain": "Recall the defining property of an odd function: \\(f(-x)=-f(x)\\). On a graph, this means point symmetry about the origin."
+            },
+            {
+              "explain": "In option A, each point on one side of the origin has a matching point the same distance on the opposite side, with both coordinates changing sign. The origin itself lies on the curve.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 320\" width=\"400\" height=\"320\"><rect width=\"400\" height=\"320\" rx=\"10\" fill=\"white\"/><text x=\"95.0\" y=\"35\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">A</text><line x1=\"28\" y1=\"95.0\" x2=\"178\" y2=\"95.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"103.0\" y1=\"145\" x2=\"103.0\" y2=\"45\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"171\" y=\"90.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"108.0\" y=\"55\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M36 60 C68 55 70 133 103 95 C136 57 138 135 170 130\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"103\" cy=\"95\" r=\"4\" fill=\"#f59e0b\"/><text x=\"295.0\" y=\"35\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">B</text><line x1=\"228\" y1=\"95.0\" x2=\"378\" y2=\"95.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"303.0\" y1=\"145\" x2=\"303.0\" y2=\"45\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"371\" y=\"90.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"308.0\" y=\"55\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M240 125 C273 125 276 110 298 102 C323 95 343 87 368 59\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"95.0\" y=\"195\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">C</text><line x1=\"28\" y1=\"255.0\" x2=\"178\" y2=\"255.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"103.0\" y1=\"305\" x2=\"103.0\" y2=\"205\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"171\" y=\"250.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"108.0\" y=\"215\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M43 293 Q103 209 163 293\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"295.0\" y=\"195\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">D</text><line x1=\"228\" y1=\"255.0\" x2=\"378\" y2=\"255.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"303.0\" y1=\"305\" x2=\"303.0\" y2=\"205\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"371\" y=\"250.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"308.0\" y=\"215\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M303 210 C300 235 343 247 306 255 C273 263 320 277 303 300\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>"
+              }
+            },
+            {
+              "explain": "Option B is shifted, C is symmetric about the y-axis (even), and D fails the vertical line test. Therefore A is the odd-function graph.",
+              "work": "\\(\\boxed{\\text{A}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 14,
+            "sourceQuestion": 13,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 320\" width=\"400\" height=\"320\"><rect width=\"400\" height=\"320\" rx=\"10\" fill=\"white\"/><text x=\"95.0\" y=\"35\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">A</text><line x1=\"28\" y1=\"95.0\" x2=\"178\" y2=\"95.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"103.0\" y1=\"145\" x2=\"103.0\" y2=\"45\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"171\" y=\"90.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"108.0\" y=\"55\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M36 60 C68 55 70 133 103 95 C136 57 138 135 170 130\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"103\" cy=\"95\" r=\"4\" fill=\"#f59e0b\"/><text x=\"295.0\" y=\"35\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">B</text><line x1=\"228\" y1=\"95.0\" x2=\"378\" y2=\"95.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"303.0\" y1=\"145\" x2=\"303.0\" y2=\"45\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"371\" y=\"90.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"308.0\" y=\"55\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M240 125 C273 125 276 110 298 102 C323 95 343 87 368 59\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"95.0\" y=\"195\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">C</text><line x1=\"28\" y1=\"255.0\" x2=\"178\" y2=\"255.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"103.0\" y1=\"305\" x2=\"103.0\" y2=\"205\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"171\" y=\"250.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"108.0\" y=\"215\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M43 293 Q103 209 163 293\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"295.0\" y=\"195\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">D</text><line x1=\"228\" y1=\"255.0\" x2=\"378\" y2=\"255.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"303.0\" y1=\"305\" x2=\"303.0\" y2=\"205\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"371\" y=\"250.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"308.0\" y=\"215\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M303 210 C300 235 343 247 306 255 C273 263 320 277 303 300\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "odd function",
+              "note": "Look for 180° rotational symmetry around the origin."
+            }
+          ]
         }
       ]
     },
@@ -18129,6 +18219,198 @@
             "sourcePage": null,
             "sourceTopic": "y11a-5F"
           }
+        },
+        {
+          "id": "y11a-5f-excel-intro-q02",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The graphs of \\(y=f(x)\\) and \\(y=g(x)\\) are shown. Which graph best represents \\(y=g(f(x))\\)?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 1,
+          "hint": "First replace the input of \\(g\\) by the output of \\(f\\). Notice that \\(f(x)=x^2\\), so the result must be symmetric about the y-axis.",
+          "steps": [
+            {
+              "explain": "Read the first graph: it is the parabola \\(f(x)=x^2\\). Read the second graph: it has vertical asymptote at input 1, horizontal asymptote \\(y=1\\), and passes through the origin, so it represents \\(g(u)=\\frac{u}{u-1}\\).",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 404 480\" width=\"404\" height=\"480\"><rect width=\"404\" height=\"480\" rx=\"10\" fill=\"white\"/><text x=\"103.0\" y=\"21\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">y = f(x)</text><line x1=\"18\" y1=\"84.0\" x2=\"188\" y2=\"84.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"103.0\" y1=\"140\" x2=\"103.0\" y2=\"28\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"181\" y=\"79.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"108.0\" y=\"38\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M20 43 C60 43 75 82 103 84 C130 82 145 43 185 43\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"301.0\" y=\"21\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">y = g(x)</text><line x1=\"216\" y1=\"84.0\" x2=\"386\" y2=\"84.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"301.0\" y1=\"140\" x2=\"301.0\" y2=\"28\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"379\" y=\"79.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"306.0\" y=\"38\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M220 70 C247 70 270 75 300 84 C315 89 324 111 328 137\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M330 26 C330 58 330 105 330 136\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M334 31 C344 52 360 66 382 70\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"97.0\" y=\"196\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">A</text><line x1=\"27\" y1=\"262.0\" x2=\"185\" y2=\"262.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"106.0\" y1=\"314\" x2=\"106.0\" y2=\"210\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"178\" y=\"257.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"111.0\" y=\"220\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M31 290 C75 290 87 289 100 286\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M107 238 C108 268 109 301 109 310\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M113 286 C137 272 161 269 181 269\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"295.0\" y=\"196\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">B</text><line x1=\"225\" y1=\"262.0\" x2=\"383\" y2=\"262.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"304.0\" y1=\"314\" x2=\"304.0\" y2=\"210\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"376\" y=\"257.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"309.0\" y=\"220\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M229 246 C247 245 259 247 268 252\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M273 252 C282 267 284 300 287 309\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M321 309 C324 300 326 267 335 252\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M340 252 C350 247 363 245 379 246\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"304\" cy=\"262\" r=\"3.5\" fill=\"#4f46e5\"/><text x=\"97.0\" y=\"359\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">C</text><line x1=\"27\" y1=\"425.0\" x2=\"185\" y2=\"425.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"106.0\" y1=\"477\" x2=\"106.0\" y2=\"373\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"178\" y=\"420.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"111.0\" y=\"383\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M31 449 C72 450 86 451 99 455\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M105 398 C105 428 105 453 105 474\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M111 455 C131 462 157 465 181 467\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"295.0\" y=\"359\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">D</text><line x1=\"225\" y1=\"425.0\" x2=\"383\" y2=\"425.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"304.0\" y1=\"477\" x2=\"304.0\" y2=\"373\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"376\" y=\"420.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"309.0\" y=\"383\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M229 467 L297 425 C308 418 321 418 330 424\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M305 423 C308 408 325 400 379 398\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M20 43 C60 43 75 82 103 84 C130 82 145 43 185 43\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"330\" y1=\"31\" x2=\"330\" y2=\"137\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><line x1=\"220\" y1=\"70\" x2=\"382\" y2=\"70\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><circle cx=\"301\" cy=\"84\" r=\"5\" fill=\"#f59e0b\"/></svg>"
+              }
+            },
+            {
+              "explain": "Substitute the entire output \\(f(x)=x^2\\) for the input \\(u\\) in \\(g(u)\\).",
+              "work": "\\(g(f(x))=g(x^2)=\\frac{x^2}{x^2-1}\\)"
+            },
+            {
+              "explain": "The denominator is zero when \\(x^2-1=0\\), so the new graph has vertical asymptotes at \\(x=-1\\) and \\(x=1\\). Since only \\(x^2\\) appears, the graph is symmetric about the y-axis.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 404 480\" width=\"404\" height=\"480\"><rect width=\"404\" height=\"480\" rx=\"10\" fill=\"white\"/><text x=\"103.0\" y=\"21\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">y = f(x)</text><line x1=\"18\" y1=\"84.0\" x2=\"188\" y2=\"84.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"103.0\" y1=\"140\" x2=\"103.0\" y2=\"28\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"181\" y=\"79.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"108.0\" y=\"38\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M20 43 C60 43 75 82 103 84 C130 82 145 43 185 43\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"301.0\" y=\"21\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">y = g(x)</text><line x1=\"216\" y1=\"84.0\" x2=\"386\" y2=\"84.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"301.0\" y1=\"140\" x2=\"301.0\" y2=\"28\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"379\" y=\"79.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"306.0\" y=\"38\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M220 70 C247 70 270 75 300 84 C315 89 324 111 328 137\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M330 26 C330 58 330 105 330 136\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M334 31 C344 52 360 66 382 70\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"97.0\" y=\"196\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">A</text><line x1=\"27\" y1=\"262.0\" x2=\"185\" y2=\"262.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"106.0\" y1=\"314\" x2=\"106.0\" y2=\"210\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"178\" y=\"257.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"111.0\" y=\"220\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M31 290 C75 290 87 289 100 286\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M107 238 C108 268 109 301 109 310\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M113 286 C137 272 161 269 181 269\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"295.0\" y=\"196\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">B</text><line x1=\"225\" y1=\"262.0\" x2=\"383\" y2=\"262.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"304.0\" y1=\"314\" x2=\"304.0\" y2=\"210\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"376\" y=\"257.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"309.0\" y=\"220\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M229 246 C247 245 259 247 268 252\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M273 252 C282 267 284 300 287 309\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M321 309 C324 300 326 267 335 252\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M340 252 C350 247 363 245 379 246\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"304\" cy=\"262\" r=\"3.5\" fill=\"#4f46e5\"/><text x=\"97.0\" y=\"359\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">C</text><line x1=\"27\" y1=\"425.0\" x2=\"185\" y2=\"425.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"106.0\" y1=\"477\" x2=\"106.0\" y2=\"373\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"178\" y=\"420.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"111.0\" y=\"383\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M31 449 C72 450 86 451 99 455\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M105 398 C105 428 105 453 105 474\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M111 455 C131 462 157 465 181 467\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"295.0\" y=\"359\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">D</text><line x1=\"225\" y1=\"425.0\" x2=\"383\" y2=\"425.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"304.0\" y1=\"477\" x2=\"304.0\" y2=\"373\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"376\" y=\"420.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"309.0\" y=\"383\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M229 467 L297 425 C308 418 321 418 330 424\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M305 423 C308 408 325 400 379 398\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"287\" y1=\"210\" x2=\"287\" y2=\"310\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><line x1=\"321\" y1=\"210\" x2=\"321\" y2=\"310\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><line x1=\"225\" y1=\"252\" x2=\"383\" y2=\"252\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><circle cx=\"304\" cy=\"262\" r=\"5\" fill=\"#f59e0b\"/></svg>"
+              }
+            },
+            {
+              "explain": "At \\(x=0\\), the value is 0. Between the asymptotes the graph is below the x-axis except at the origin; outside them it is above the horizontal asymptote \\(y=1\\). These features match graph B.",
+              "work": "\\(\\boxed{\\text{B}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 13,
+            "sourceQuestion": 2,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 404 480\" width=\"404\" height=\"480\"><rect width=\"404\" height=\"480\" rx=\"10\" fill=\"white\"/><text x=\"103.0\" y=\"21\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">y = f(x)</text><line x1=\"18\" y1=\"84.0\" x2=\"188\" y2=\"84.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"103.0\" y1=\"140\" x2=\"103.0\" y2=\"28\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"181\" y=\"79.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"108.0\" y=\"38\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M20 43 C60 43 75 82 103 84 C130 82 145 43 185 43\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"301.0\" y=\"21\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">y = g(x)</text><line x1=\"216\" y1=\"84.0\" x2=\"386\" y2=\"84.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"301.0\" y1=\"140\" x2=\"301.0\" y2=\"28\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"379\" y=\"79.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"306.0\" y=\"38\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M220 70 C247 70 270 75 300 84 C315 89 324 111 328 137\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M330 26 C330 58 330 105 330 136\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M334 31 C344 52 360 66 382 70\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"97.0\" y=\"196\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">A</text><line x1=\"27\" y1=\"262.0\" x2=\"185\" y2=\"262.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"106.0\" y1=\"314\" x2=\"106.0\" y2=\"210\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"178\" y=\"257.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"111.0\" y=\"220\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M31 290 C75 290 87 289 100 286\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M107 238 C108 268 109 301 109 310\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M113 286 C137 272 161 269 181 269\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"295.0\" y=\"196\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">B</text><line x1=\"225\" y1=\"262.0\" x2=\"383\" y2=\"262.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"304.0\" y1=\"314\" x2=\"304.0\" y2=\"210\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"376\" y=\"257.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"309.0\" y=\"220\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M229 246 C247 245 259 247 268 252\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M273 252 C282 267 284 300 287 309\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M321 309 C324 300 326 267 335 252\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M340 252 C350 247 363 245 379 246\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"97.0\" y=\"359\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">C</text><line x1=\"27\" y1=\"425.0\" x2=\"185\" y2=\"425.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"106.0\" y1=\"477\" x2=\"106.0\" y2=\"373\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"178\" y=\"420.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"111.0\" y=\"383\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M31 449 C72 450 86 451 99 455\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M105 398 C105 428 105 453 105 474\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M111 455 C131 462 157 465 181 467\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"295.0\" y=\"359\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">D</text><line x1=\"225\" y1=\"425.0\" x2=\"383\" y2=\"425.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"304.0\" y1=\"477\" x2=\"304.0\" y2=\"373\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"376\" y=\"420.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"309.0\" y=\"383\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M229 467 L297 425 C308 418 321 418 330 424\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M305 423 C308 408 325 400 379 398\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "\\(y=g(f(x))\\)",
+              "note": "Substitute the output of f into g; do not multiply f(x) by g(x)."
+            }
+          ]
+        },
+        {
+          "id": "y11a-5f-excel-intro-q04",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Let \\(f\\) and \\(g\\) be two functions such that \\(f(3)=2\\), \\(f(5)=3\\), \\(g(2)=3\\), \\(g(4)=5\\). What is the value of \\(f(g(4))\\)?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answer": 1,
+          "hint": "Work from the inside out: evaluate \\(g(4)\\) first, then use that result as the input to \\(f\\).",
+          "steps": [
+            {
+              "explain": "The inside function is \\(g(4)\\). The given information says this output is 5.",
+              "work": "\\(g(4)=5\\)"
+            },
+            {
+              "explain": "Now replace \\(g(4)\\) by 5 in the outer function. The given information gives \\(f(5)=3\\).",
+              "work": "\\(f(g(4))=f(5)=3\\)"
+            },
+            {
+              "explain": "Therefore the required value is 3. The value \\(f(3)=2\\) is not needed here.",
+              "work": "\\(\\boxed{3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 13,
+            "sourceQuestion": 4,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          }
+        },
+        {
+          "id": "y11a-5f-excel-intro-q06",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Given that \\(f(x)=x^2-3\\) and \\(g(x)=\\frac{4x}{x+2}\\):",
+          "hint": "For (i), substitute the complete expression \\(f(x)\\) wherever g has its input. For (ii), evaluate the inside function first.",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 13,
+            "sourceQuestion": 6,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "parts": [
+            {
+              "id": "y11a-5f-excel-intro-q06i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Write an expression for \\(g(f(x))\\).",
+              "options": [
+                "\\(\\frac{4(x^2-3)}{x^2-1}\\)",
+                "\\(\\frac{4x^2-3}{x^2-1}\\)",
+                "\\(\\frac{4(x^2-3)}{x^2-3}\\)",
+                "\\(\\frac{4(x^2-3)}{x^2-5}\\)"
+              ],
+              "answer": 0,
+              "hint": "In \\(g(u)=\\frac{4u}{u+2}\\), replace every u with the whole expression \\(x^2-3\\).",
+              "steps": [
+                {
+                  "explain": "Write the outer function using an input placeholder so it is clear what must be replaced.",
+                  "work": "\\(g(u)=\\frac{4u}{u+2}\\)"
+                },
+                {
+                  "explain": "Substitute \\(u=f(x)=x^2-3\\) in both numerator and denominator. Use brackets to keep the whole expression together.",
+                  "work": "\\(g(f(x))=\\frac{4(x^2-3)}{(x^2-3)+2}\\)"
+                },
+                {
+                  "explain": "Combine the denominator: \\(-3+2=-1\\).",
+                  "work": "\\(g(f(x))=\\frac{4(x^2-3)}{x^2-1}\\)"
+                },
+                {
+                  "explain": "This is the required composite expression.",
+                  "work": "\\(\\boxed{\\frac{4(x^2-3)}{x^2-1}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+                "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+                "sourcePage": 13,
+                "sourceQuestion": "6(i)",
+                "courseYear": "Year 11",
+                "reviewStatus": "independently-checked"
+              }
+            },
+            {
+              "id": "y11a-5f-excel-intro-q06ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Hence or otherwise find the value of \\(g(f(-2))\\).",
+              "options": [
+                "\\(-4\\)",
+                "\\(0\\)",
+                "\\(\\frac43\\)",
+                "\\(4\\)"
+              ],
+              "answer": 2,
+              "hint": "Follow the nesting: first calculate \\(f(-2)\\), then put that result into g.",
+              "steps": [
+                {
+                  "explain": "Evaluate the inside function first. Square -2, then subtract 3.",
+                  "work": "\\(f(-2)=(-2)^2-3=4-3=1\\)"
+                },
+                {
+                  "explain": "Now evaluate g at the result 1.",
+                  "work": "\\(g(1)=\\frac{4(1)}{1+2}=\\frac43\\)"
+                },
+                {
+                  "explain": "So the composite value is four thirds.",
+                  "work": "\\(\\boxed{g(f(-2))=\\frac43}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+                "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+                "sourcePage": 13,
+                "sourceQuestion": "6(ii)",
+                "courseYear": "Year 11",
+                "reviewStatus": "independently-checked"
+              }
+            }
+          ]
         }
       ]
     },

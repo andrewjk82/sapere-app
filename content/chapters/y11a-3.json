@@ -10025,6 +10025,509 @@
             "sourcePage": null,
             "sourceTopic": "y11a-3B"
           }
+        },
+        {
+          "id": "y11a-3b-excel-intro-q01",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following is the range of the function \\(f(x)=x^2-1\\)?",
+          "options": [
+            "\\([-1,\\infty)\\)",
+            "\\((-∞,1]\\)",
+            "\\([-1,1]\\)",
+            "\\((-∞,\\infty)\\)"
+          ],
+          "answer": 0,
+          "hint": "A square is never negative. Find the smallest possible value of \\(x^2-1\\), then check whether larger values have an upper limit.",
+          "steps": [
+            {
+              "explain": "Start with the squared part. For every real number \\(x\\), squaring gives a non-negative number.",
+              "work": "\\(x^2\\ge 0\\)"
+            },
+            {
+              "explain": "Subtract 1 from both sides of this inequality. The smallest value occurs at \\(x=0\\), when \\(x^2=0\\).",
+              "work": "\\(x^2-1\\ge -1\\), and \\(f(0)=0^2-1=-1\\)"
+            },
+            {
+              "explain": "As \\(|x|\\) gets larger, \\(x^2-1\\) grows without an upper bound. The minimum \\(-1\\) is included because it is reached at \\(x=0\\).",
+              "work": "\\(\\boxed{[-1,\\infty)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 13,
+            "sourceQuestion": 1,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "range of the function",
+              "note": "The range lists y-values, not x-values."
+            }
+          ]
+        },
+        {
+          "id": "y11a-3b-excel-intro-q03",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which inequality gives the domain of \\(y=\\sqrt{2x-3}\\)?",
+          "options": [
+            "\\(x<\\frac32\\)",
+            "\\(x>\\frac32\\)",
+            "\\(x\\le\\frac32\\)",
+            "\\(x\\ge\\frac32\\)"
+          ],
+          "answer": 3,
+          "hint": "The number inside a square root must be zero or positive. Set up that inequality before solving.",
+          "steps": [
+            {
+              "explain": "For a real square root, its radicand must be non-negative.",
+              "work": "\\(2x-3\\ge 0\\)"
+            },
+            {
+              "explain": "Add 3 to both sides, keeping the inequality sign the same.",
+              "work": "\\(2x\\ge 3\\)"
+            },
+            {
+              "explain": "Divide both sides by positive 2. The inequality direction stays the same.",
+              "work": "\\(x\\ge\\frac32\\)"
+            },
+            {
+              "explain": "The endpoint is included because \\(2(\\frac32)-3=0\\), and \\(\\sqrt0\\) is defined.",
+              "work": "\\(\\boxed{x\\ge\\frac32}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 13,
+            "sourceQuestion": 3,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "domain",
+              "note": "Check where the expression under the square root is non-negative."
+            }
+          ]
+        },
+        {
+          "id": "y11a-3b-excel-intro-q05",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of these is not a one-to-one function?",
+          "options": [
+            "\\(f(x)=2x^3\\)",
+            "\\(f(x)=2^x+1\\)",
+            "\\(f(x)=\\sqrt{x-2}\\)",
+            "\\(f(x)=x^3+2x^2\\)"
+          ],
+          "answer": 3,
+          "hint": "Use the horizontal line test: a function is one-to-one only if every horizontal line meets its graph at most once.",
+          "steps": [
+            {
+              "explain": "A function is one-to-one when different inputs always give different outputs. Equivalently, its graph passes the horizontal line test."
+            },
+            {
+              "explain": "For option D, factor the expression: \\(x^3+2x^2=x^2(x+2)\\). It has zeros at \\(x=-2\\) and \\(x=0\\), and also rises to positive values between and beyond them.",
+              "work": "\\(f(-2)=0,\\quad f(0)=0\\)"
+            },
+            {
+              "explain": "Two different inputs, \\(-2\\) and 0, give the same output 0. Therefore option D is not one-to-one. The other listed functions are strictly increasing on their domains.",
+              "work": "\\(\\boxed{\\text{D: }f(x)=x^3+2x^2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 13,
+            "sourceQuestion": 5,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          }
+        },
+        {
+          "id": "y11a-3b-excel-intro-q07",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What type of relation is shown?",
+          "options": [
+            "one-to-one",
+            "one-to-many",
+            "many-to-one",
+            "many-to-many"
+          ],
+          "answer": 3,
+          "hint": "Inspect the arrows in both directions: check whether any input points to multiple outputs, and whether any output receives arrows from multiple inputs.",
+          "steps": [
+            {
+              "explain": "Start with the left oval (the domain). At least one input has arrows to more than one value in the right oval.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 225\" width=\"340\" height=\"225\"><rect width=\"340\" height=\"225\" rx=\"10\" fill=\"white\"/><defs><marker id=\"arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L7 3.5L0 7Z\" fill=\"#4f46e5\"/></marker></defs><text x=\"30\" y=\"24\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">Domain</text><text x=\"260\" y=\"24\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">Range</text><circle cx=\"72\" cy=\"55\" r=\"14\" fill=\"#eef4ff\" stroke=\"#64748b\"/><text x=\"72\" y=\"60\" text-anchor=\"middle\" font-size=\"14\" fill=\"#334155\">2</text><circle cx=\"72\" cy=\"100\" r=\"14\" fill=\"#eef4ff\" stroke=\"#64748b\"/><text x=\"72\" y=\"105\" text-anchor=\"middle\" font-size=\"14\" fill=\"#334155\">3</text><circle cx=\"72\" cy=\"145\" r=\"14\" fill=\"#eef4ff\" stroke=\"#64748b\"/><text x=\"72\" y=\"150\" text-anchor=\"middle\" font-size=\"14\" fill=\"#334155\">4</text><circle cx=\"72\" cy=\"190\" r=\"14\" fill=\"#eef4ff\" stroke=\"#64748b\"/><text x=\"72\" y=\"195\" text-anchor=\"middle\" font-size=\"14\" fill=\"#334155\">5</text><circle cx=\"290\" cy=\"55\" r=\"14\" fill=\"#eef4ff\" stroke=\"#64748b\"/><text x=\"290\" y=\"60\" text-anchor=\"middle\" font-size=\"14\" fill=\"#334155\">7</text><circle cx=\"290\" cy=\"100\" r=\"14\" fill=\"#eef4ff\" stroke=\"#64748b\"/><text x=\"290\" y=\"105\" text-anchor=\"middle\" font-size=\"14\" fill=\"#334155\">8</text><circle cx=\"290\" cy=\"145\" r=\"14\" fill=\"#eef4ff\" stroke=\"#64748b\"/><text x=\"290\" y=\"150\" text-anchor=\"middle\" font-size=\"14\" fill=\"#334155\">9</text><circle cx=\"290\" cy=\"190\" r=\"14\" fill=\"#eef4ff\" stroke=\"#64748b\"/><text x=\"290\" y=\"195\" text-anchor=\"middle\" font-size=\"14\" fill=\"#334155\">10</text><line x1=\"90\" y1=\"69\" x2=\"270\" y2=\"55\" stroke=\"#4f46e5\" stroke-width=\"1.8\" marker-end=\"url(#arrow)\"/><line x1=\"90\" y1=\"114\" x2=\"270\" y2=\"100\" stroke=\"#4f46e5\" stroke-width=\"1.8\" marker-end=\"url(#arrow)\"/><line x1=\"90\" y1=\"114\" x2=\"270\" y2=\"145\" stroke=\"#4f46e5\" stroke-width=\"1.8\" marker-end=\"url(#arrow)\"/><line x1=\"90\" y1=\"159\" x2=\"270\" y2=\"145\" stroke=\"#4f46e5\" stroke-width=\"1.8\" marker-end=\"url(#arrow)\"/><line x1=\"90\" y1=\"159\" x2=\"270\" y2=\"190\" stroke=\"#4f46e5\" stroke-width=\"1.8\" marker-end=\"url(#arrow)\"/><line x1=\"90\" y1=\"204\" x2=\"270\" y2=\"190\" stroke=\"#4f46e5\" stroke-width=\"1.8\" marker-end=\"url(#arrow)\"/></svg>"
+              }
+            },
+            {
+              "explain": "Now inspect the right oval (the range). At least one value receives arrows from more than one domain value. This means the mapping is many-to-many.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 225\" width=\"340\" height=\"225\"><rect width=\"340\" height=\"225\" rx=\"10\" fill=\"white\"/><defs><marker id=\"arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L7 3.5L0 7Z\" fill=\"#4f46e5\"/></marker></defs><text x=\"30\" y=\"24\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">Domain</text><text x=\"260\" y=\"24\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">Range</text><circle cx=\"72\" cy=\"55\" r=\"14\" fill=\"#eef4ff\" stroke=\"#64748b\"/><text x=\"72\" y=\"60\" text-anchor=\"middle\" font-size=\"14\" fill=\"#334155\">2</text><circle cx=\"72\" cy=\"100\" r=\"14\" fill=\"#eef4ff\" stroke=\"#64748b\"/><text x=\"72\" y=\"105\" text-anchor=\"middle\" font-size=\"14\" fill=\"#334155\">3</text><circle cx=\"72\" cy=\"145\" r=\"14\" fill=\"#eef4ff\" stroke=\"#64748b\"/><text x=\"72\" y=\"150\" text-anchor=\"middle\" font-size=\"14\" fill=\"#334155\">4</text><circle cx=\"72\" cy=\"190\" r=\"14\" fill=\"#eef4ff\" stroke=\"#64748b\"/><text x=\"72\" y=\"195\" text-anchor=\"middle\" font-size=\"14\" fill=\"#334155\">5</text><circle cx=\"290\" cy=\"55\" r=\"14\" fill=\"#eef4ff\" stroke=\"#64748b\"/><text x=\"290\" y=\"60\" text-anchor=\"middle\" font-size=\"14\" fill=\"#334155\">7</text><circle cx=\"290\" cy=\"100\" r=\"14\" fill=\"#eef4ff\" stroke=\"#64748b\"/><text x=\"290\" y=\"105\" text-anchor=\"middle\" font-size=\"14\" fill=\"#334155\">8</text><circle cx=\"290\" cy=\"145\" r=\"14\" fill=\"#eef4ff\" stroke=\"#64748b\"/><text x=\"290\" y=\"150\" text-anchor=\"middle\" font-size=\"14\" fill=\"#334155\">9</text><circle cx=\"290\" cy=\"190\" r=\"14\" fill=\"#eef4ff\" stroke=\"#64748b\"/><text x=\"290\" y=\"195\" text-anchor=\"middle\" font-size=\"14\" fill=\"#334155\">10</text><line x1=\"90\" y1=\"69\" x2=\"270\" y2=\"55\" stroke=\"#4f46e5\" stroke-width=\"1.8\" marker-end=\"url(#arrow)\"/><line x1=\"90\" y1=\"114\" x2=\"270\" y2=\"100\" stroke=\"#4f46e5\" stroke-width=\"1.8\" marker-end=\"url(#arrow)\"/><line x1=\"90\" y1=\"114\" x2=\"270\" y2=\"145\" stroke=\"#4f46e5\" stroke-width=\"1.8\" marker-end=\"url(#arrow)\"/><line x1=\"90\" y1=\"159\" x2=\"270\" y2=\"145\" stroke=\"#4f46e5\" stroke-width=\"1.8\" marker-end=\"url(#arrow)\"/><line x1=\"90\" y1=\"159\" x2=\"270\" y2=\"190\" stroke=\"#4f46e5\" stroke-width=\"1.8\" marker-end=\"url(#arrow)\"/><line x1=\"90\" y1=\"204\" x2=\"270\" y2=\"190\" stroke=\"#4f46e5\" stroke-width=\"1.8\" marker-end=\"url(#arrow)\"/></svg>"
+              }
+            },
+            {
+              "explain": "Both features are present: some inputs branch to several outputs, and some outputs have several incoming arrows.",
+              "work": "\\(\\boxed{\\text{many-to-many}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 13,
+            "sourceQuestion": 7,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 225\" width=\"340\" height=\"225\"><rect width=\"340\" height=\"225\" rx=\"10\" fill=\"white\"/><defs><marker id=\"arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L7 3.5L0 7Z\" fill=\"#4f46e5\"/></marker></defs><text x=\"30\" y=\"24\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">Domain</text><text x=\"260\" y=\"24\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">Range</text><circle cx=\"72\" cy=\"55\" r=\"14\" fill=\"#eef4ff\" stroke=\"#64748b\"/><text x=\"72\" y=\"60\" text-anchor=\"middle\" font-size=\"14\" fill=\"#334155\">2</text><circle cx=\"72\" cy=\"100\" r=\"14\" fill=\"#eef4ff\" stroke=\"#64748b\"/><text x=\"72\" y=\"105\" text-anchor=\"middle\" font-size=\"14\" fill=\"#334155\">3</text><circle cx=\"72\" cy=\"145\" r=\"14\" fill=\"#eef4ff\" stroke=\"#64748b\"/><text x=\"72\" y=\"150\" text-anchor=\"middle\" font-size=\"14\" fill=\"#334155\">4</text><circle cx=\"72\" cy=\"190\" r=\"14\" fill=\"#eef4ff\" stroke=\"#64748b\"/><text x=\"72\" y=\"195\" text-anchor=\"middle\" font-size=\"14\" fill=\"#334155\">5</text><circle cx=\"290\" cy=\"55\" r=\"14\" fill=\"#eef4ff\" stroke=\"#64748b\"/><text x=\"290\" y=\"60\" text-anchor=\"middle\" font-size=\"14\" fill=\"#334155\">7</text><circle cx=\"290\" cy=\"100\" r=\"14\" fill=\"#eef4ff\" stroke=\"#64748b\"/><text x=\"290\" y=\"105\" text-anchor=\"middle\" font-size=\"14\" fill=\"#334155\">8</text><circle cx=\"290\" cy=\"145\" r=\"14\" fill=\"#eef4ff\" stroke=\"#64748b\"/><text x=\"290\" y=\"150\" text-anchor=\"middle\" font-size=\"14\" fill=\"#334155\">9</text><circle cx=\"290\" cy=\"190\" r=\"14\" fill=\"#eef4ff\" stroke=\"#64748b\"/><text x=\"290\" y=\"195\" text-anchor=\"middle\" font-size=\"14\" fill=\"#334155\">10</text><line x1=\"90\" y1=\"69\" x2=\"270\" y2=\"55\" stroke=\"#4f46e5\" stroke-width=\"1.8\" marker-end=\"url(#arrow)\"/><line x1=\"90\" y1=\"114\" x2=\"270\" y2=\"100\" stroke=\"#4f46e5\" stroke-width=\"1.8\" marker-end=\"url(#arrow)\"/><line x1=\"90\" y1=\"114\" x2=\"270\" y2=\"145\" stroke=\"#4f46e5\" stroke-width=\"1.8\" marker-end=\"url(#arrow)\"/><line x1=\"90\" y1=\"159\" x2=\"270\" y2=\"145\" stroke=\"#4f46e5\" stroke-width=\"1.8\" marker-end=\"url(#arrow)\"/><line x1=\"90\" y1=\"159\" x2=\"270\" y2=\"190\" stroke=\"#4f46e5\" stroke-width=\"1.8\" marker-end=\"url(#arrow)\"/><line x1=\"90\" y1=\"204\" x2=\"270\" y2=\"190\" stroke=\"#4f46e5\" stroke-width=\"1.8\" marker-end=\"url(#arrow)\"/></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "type of relation",
+              "note": "Check arrow branching from left to right and merging from right to left."
+            }
+          ]
+        },
+        {
+          "id": "y11a-3b-excel-intro-q08",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "\\(f(x)=x^2+4x+4\\) and \\(g(x)=x^2-4\\).",
+          "hint": "Factor both expressions before cancelling. In the domain part, remember cancellation does not make an original denominator value valid again.",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 13,
+            "sourceQuestion": 8,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked",
+            "sourceAnswerCorrection": "The printed worked answer excludes x=2 only; the original quotient is also undefined at x=-2."
+          },
+          "parts": [
+            {
+              "id": "y11a-3b-excel-intro-q08i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find \\(\\frac{f(x)}{g(x)}\\) in simplest form.",
+              "options": [
+                "\\(\\frac{x+2}{x-2}\\)",
+                "\\(\\frac{x-2}{x+2}\\)",
+                "\\(\\frac{(x+2)^2}{x-2}\\)",
+                "\\(\\frac{x+2}{x+2}\\)"
+              ],
+              "answer": 0,
+              "hint": "Factor the numerator and denominator, then cancel only a common factor.",
+              "steps": [
+                {
+                  "explain": "Factor the numerator as a perfect square.",
+                  "work": "\\(f(x)=x^2+4x+4=(x+2)^2\\)"
+                },
+                {
+                  "explain": "Factor the denominator as a difference of squares.",
+                  "work": "\\(g(x)=x^2-4=(x-2)(x+2)\\)"
+                },
+                {
+                  "explain": "Write the quotient using these factors and cancel one common factor \\((x+2)\\).",
+                  "work": "\\(\\frac{f(x)}{g(x)}=\\frac{(x+2)^2}{(x-2)(x+2)}=\\frac{x+2}{x-2}\\)"
+                },
+                {
+                  "explain": "The simplified expression is shown. The original quotient still excludes \\(x=-2\\) and \\(x=2\\), which matters in part (ii).",
+                  "work": "\\(\\boxed{\\frac{x+2}{x-2}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+                "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+                "sourcePage": 13,
+                "sourceQuestion": "8(i)",
+                "courseYear": "Year 11",
+                "reviewStatus": "independently-checked"
+              }
+            },
+            {
+              "id": "y11a-3b-excel-intro-q08ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What is the domain of \\(\\frac{f(x)}{g(x)}\\)?",
+              "options": [
+                "\\(\\mathbb R\\setminus\\{2\\}\\)",
+                "\\(\\mathbb R\\setminus\\{-2,2\\}\\)",
+                "\\(\\mathbb R\\setminus\\{-2\\}\\)",
+                "\\(\\mathbb R\\)"
+              ],
+              "answer": 1,
+              "hint": "Use the original denominator \\(g(x)=x^2-4\\). It cannot equal zero, even if one factor cancels in the simplified expression.",
+              "steps": [
+                {
+                  "explain": "The quotient is defined only when its original denominator is not zero. Set the original denominator equal to zero to find forbidden inputs.",
+                  "work": "\\(g(x)=x^2-4=0\\)"
+                },
+                {
+                  "explain": "Factor and solve both factors.",
+                  "work": "\\((x-2)(x+2)=0\\quad\\Rightarrow\\quad x=2\\text{ or }x=-2\\)"
+                },
+                {
+                  "explain": "Both values make the original denominator zero. Cancelling \\((x+2)\\) simplifies the formula but does not restore \\(x=-2\\) to the domain.",
+                  "work": "\\(x\\ne -2,\\;x\\ne 2\\)"
+                },
+                {
+                  "explain": "All real values are allowed except those two values.",
+                  "work": "\\(\\boxed{\\mathbb R\\setminus\\{-2,2\\}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+                "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+                "sourcePage": 13,
+                "sourceQuestion": "8(ii)",
+                "courseYear": "Year 11",
+                "reviewStatus": "independently-checked"
+              }
+            }
+          ]
+        },
+        {
+          "id": "y11a-3b-excel-intro-q10",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the range of \\(f(x)=\\frac{9-2x}{5}\\) over the domain \\([-3,2)\\). (Give the answer in interval form.)",
+          "options": [
+            "\\([1,3]\\)",
+            "\\((1,3]\\)",
+            "\\([1,3)\\)",
+            "\\((1,3)\\)"
+          ],
+          "answer": 1,
+          "hint": "Because the line is decreasing, the largest output comes from the included left endpoint, and the smallest output is approached at the excluded right endpoint.",
+          "steps": [
+            {
+              "explain": "The function is linear with gradient -2, so it decreases as x increases. Therefore its maximum is at the left endpoint and its minimum is approached at the right endpoint."
+            },
+            {
+              "explain": "Evaluate the included endpoint \\(x=-3\\).",
+              "work": "\\(f(-3)=\\frac{9-2(-3)}5=\\frac{15}5=3\\)"
+            },
+            {
+              "explain": "Evaluate the boundary value at \\(x=2\\), remembering that 2 is not included in the domain.",
+              "work": "\\(f(2)=\\frac{9-2(2)}5=\\frac55=1\\)"
+            },
+            {
+              "explain": "As x moves from -3 up towards 2, the outputs decrease from 3 (included) towards 1 (not included).",
+              "work": "\\(\\boxed{(1,3]}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 13,
+            "sourceQuestion": 10,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          }
+        },
+        {
+          "id": "y11a-3b-excel-intro-q11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which is not the graph of a function?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 2,
+          "hint": "Use the vertical line test: if one vertical line crosses a graph more than once, that graph is not a function.",
+          "steps": [
+            {
+              "explain": "A graph represents a function if every vertical line meets it at most once."
+            },
+            {
+              "explain": "Look at option C. The highlighted vertical line crosses its sideways curve at two points, so the same x-value has two y-values.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 320\" width=\"400\" height=\"320\"><rect width=\"400\" height=\"320\" rx=\"10\" fill=\"white\"/><text x=\"95.0\" y=\"35\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">A</text><line x1=\"28\" y1=\"95.0\" x2=\"178\" y2=\"95.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"103.0\" y1=\"145\" x2=\"103.0\" y2=\"45\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"171\" y=\"90.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"108.0\" y=\"55\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M58 130 Q103 33 148 130\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"295.0\" y=\"35\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">B</text><line x1=\"228\" y1=\"95.0\" x2=\"378\" y2=\"95.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"303.0\" y1=\"145\" x2=\"303.0\" y2=\"45\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"371\" y=\"90.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"308.0\" y=\"55\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M232 97 C268 97 278 75 303 75 C328 75 338 97 374 97\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"95.0\" y=\"195\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">C</text><line x1=\"28\" y1=\"255.0\" x2=\"178\" y2=\"255.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"103.0\" y1=\"305\" x2=\"103.0\" y2=\"205\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"171\" y=\"250.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"108.0\" y=\"215\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M103 255 C103 230 148 225 168 220 M103 255 C103 280 148 285 168 290\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"117\" y1=\"217\" x2=\"117\" y2=\"294\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-dasharray=\"5 4\"/><text x=\"295.0\" y=\"195\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">D</text><line x1=\"228\" y1=\"255.0\" x2=\"378\" y2=\"255.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"303.0\" y1=\"305\" x2=\"303.0\" y2=\"205\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"371\" y=\"250.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"308.0\" y=\"215\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M233 255 C258 215 268 295 288 255 S318 215 333 255 S358 295 373 250\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>"
+              }
+            },
+            {
+              "explain": "Options A, B and D have one y-value for each x-value. Option C fails the vertical line test.",
+              "work": "\\(\\boxed{\\text{C}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 14,
+            "sourceQuestion": 11,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 320\" width=\"400\" height=\"320\"><rect width=\"400\" height=\"320\" rx=\"10\" fill=\"white\"/><text x=\"95.0\" y=\"35\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">A</text><line x1=\"28\" y1=\"95.0\" x2=\"178\" y2=\"95.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"103.0\" y1=\"145\" x2=\"103.0\" y2=\"45\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"171\" y=\"90.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"108.0\" y=\"55\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M58 130 Q103 33 148 130\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"295.0\" y=\"35\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">B</text><line x1=\"228\" y1=\"95.0\" x2=\"378\" y2=\"95.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"303.0\" y1=\"145\" x2=\"303.0\" y2=\"45\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"371\" y=\"90.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"308.0\" y=\"55\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M232 97 C268 97 278 75 303 75 C328 75 338 97 374 97\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"95.0\" y=\"195\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">C</text><line x1=\"28\" y1=\"255.0\" x2=\"178\" y2=\"255.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"103.0\" y1=\"305\" x2=\"103.0\" y2=\"205\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"171\" y=\"250.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"108.0\" y=\"215\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M103 255 C103 230 148 225 168 220 M103 255 C103 280 148 285 168 290\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"117\" y1=\"217\" x2=\"117\" y2=\"294\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-dasharray=\"5 4\"/><text x=\"295.0\" y=\"195\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#334155\">D</text><line x1=\"228\" y1=\"255.0\" x2=\"378\" y2=\"255.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"303.0\" y1=\"305\" x2=\"303.0\" y2=\"205\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"371\" y=\"250.0\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"308.0\" y=\"215\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M233 255 C258 215 268 295 288 255 S318 215 333 255 S358 295 373 250\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "not the graph of a function",
+              "note": "Try a vertical line and count intersections."
+            }
+          ]
+        },
+        {
+          "id": "y11a-3b-excel-intro-q12",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the domain of the function \\(f(x)=\\sqrt{3-x}\\).",
+          "options": [
+            "\\(x\\ge 3\\)",
+            "\\(x\\le 3\\)",
+            "\\(x>3\\)",
+            "\\(x<3\\)"
+          ],
+          "answer": 1,
+          "hint": "The expression inside the square root must be at least zero. Solve \\(3-x\\ge0\\).",
+          "steps": [
+            {
+              "explain": "Set the radicand to be non-negative.",
+              "work": "\\(3-x\\ge0\\)"
+            },
+            {
+              "explain": "Subtract 3 from both sides.",
+              "work": "\\(-x\\ge-3\\)"
+            },
+            {
+              "explain": "Multiply by -1. When multiplying an inequality by a negative number, reverse its direction.",
+              "work": "\\(x\\le3\\)"
+            },
+            {
+              "explain": "The endpoint is included because \\(\\sqrt{3-3}=0\\) is defined.",
+              "work": "\\(\\boxed{x\\le3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 14,
+            "sourceQuestion": 12,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "domain",
+              "note": "Keep the radicand non-negative and reverse the sign when multiplying by -1."
+            }
+          ]
+        },
+        {
+          "id": "y11a-3b-excel-intro-q14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which inequality defines the domain of the function \\(f(x)=\\frac{1}{\\sqrt{x+3}}\\)?",
+          "options": [
+            "\\(x>-3\\)",
+            "\\(x\\ge-3\\)",
+            "\\(x<-3\\)",
+            "\\(x\\le-3\\)"
+          ],
+          "answer": 0,
+          "hint": "The radicand must be non-negative, and because the square root is in the denominator it also cannot be zero.",
+          "steps": [
+            {
+              "explain": "The square root requires its radicand to be non-negative, but the denominator must also be nonzero. Together, this means the radicand must be strictly positive.",
+              "work": "\\(x+3>0\\)"
+            },
+            {
+              "explain": "Subtract 3 from both sides.",
+              "work": "\\(x>-3\\)"
+            },
+            {
+              "explain": "At \\(x=-3\\), the denominator would be \\(\\sqrt0=0\\), so that endpoint is excluded.",
+              "work": "\\(\\boxed{x>-3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 14,
+            "sourceQuestion": 14,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{1}{\\sqrt{x+3}}\\)",
+              "note": "The denominator cannot be zero, so use a strict inequality."
+            }
+          ]
+        },
+        {
+          "id": "y11a-3b-excel-intro-q15",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Let \\(f(x)=\\sqrt{x-8}\\). What is the domain of \\(f(x)\\)?",
+          "options": [
+            "\\(x>8\\)",
+            "\\(x\\ge8\\)",
+            "\\(x<8\\)",
+            "\\(x\\le8\\)"
+          ],
+          "answer": 1,
+          "hint": "A square root is defined when its radicand is zero or positive. Set \\(x-8\\ge0\\).",
+          "steps": [
+            {
+              "explain": "The radicand must be non-negative.",
+              "work": "\\(x-8\\ge0\\)"
+            },
+            {
+              "explain": "Add 8 to both sides.",
+              "work": "\\(x\\ge8\\)"
+            },
+            {
+              "explain": "The endpoint is included because \\(f(8)=\\sqrt0=0\\) is defined.",
+              "work": "\\(\\boxed{x\\ge8}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 14,
+            "sourceQuestion": 15,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          }
         }
       ]
     },
