@@ -1599,6 +1599,984 @@
           "xp": 4
         }
       ]
+    },
+    {
+      "topicId": "y12a-9B",
+      "code": "9B",
+      "title": "Mean or expected value",
+      "questions": [
+        {
+          "id": "y12a-9b-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the expected value \\(E(X)\\) of the distribution:\n\n\\(\\begin{array}{c|cccc} x & 0 & 1 & 2 & 3 \\\\ \\hline P(x) & 0.4 & 0.1 & 0.2 & 0.3 \\end{array}\\)",
+          "options": [
+            "\\(1.5\\)",
+            "\\(1.4\\)",
+            "\\(1\\)",
+            "\\(0.9\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply each value of \\(x\\) by its probability, then add the products: \\(E(X) = \\sum xP(x)\\).",
+          "solution": "\\(E(X) = 0 + 0.1 + 0.4 + 0.9 = 1.4\\)",
+          "steps": [
+            {
+              "explain": "The expected value is the weighted mean of the values, using the probabilities as the weights.",
+              "work": "\\(E(X) = \\sum x\\,P(x)\\)"
+            },
+            {
+              "explain": "Multiply each value of \\(x\\) by its probability.",
+              "work": "\\(0 \\times 0.4 = 0,\\quad 1 \\times 0.1 = 0.1,\\quad 2 \\times 0.2 = 0.4,\\quad 3 \\times 0.3 = 0.9\\)"
+            },
+            {
+              "explain": "Add the four products. The unweighted mean 1.5 is not the answer, because the values are not equally likely.",
+              "work": "\\(E(X) = 0 + 0.1 + 0.4 + 0.9 = 1.4\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9B Q1a"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9b-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the expected value \\(E(X)\\) of the distribution:\n\n\\(\\begin{array}{c|ccccc} x & -50 & -20 & 0 & 30 & 100 \\\\ \\hline P(x) & 0.1 & 0.35 & 0.4 & 0.1 & 0.05 \\end{array}\\)",
+          "options": [
+            "\\(4\\)",
+            "\\(12\\)",
+            "\\(-12\\)",
+            "\\(-4\\)"
+          ],
+          "answer": 3,
+          "hint": "Keep the minus signs on the negative values of \\(x\\) when you multiply. Then add all five products.",
+          "solution": "\\(E(X) = -5 - 7 + 0 + 3 + 5 = -4\\)",
+          "steps": [
+            {
+              "explain": "Multiply each value by its probability. The negative values give negative products.",
+              "work": "\\((-50)(0.1) = -5,\\quad (-20)(0.35) = -7,\\quad 0 \\times 0.4 = 0,\\quad 30 \\times 0.1 = 3,\\quad 100 \\times 0.05 = 5\\)"
+            },
+            {
+              "explain": "Add the five products.",
+              "work": "\\(E(X) = -5 - 7 + 0 + 3 + 5\\)"
+            },
+            {
+              "explain": "Simplify. The result is negative, so on average the outcome is below zero.",
+              "work": "\\(E(X) = -4\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9B Q1c"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9b-q4b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the expected value of the distribution:\n\n\\(\\begin{array}{c|ccccc} x_i & -3 & 1 & 2 & 5 & 6 \\\\ \\hline p_i & 0.1 & 0.3 & 0.2 & 0.3 & 0.1 \\end{array}\\)",
+          "options": [
+            "\\(2.5\\)",
+            "\\(3.1\\)",
+            "\\(2.2\\)",
+            "\\(1\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(E(X) = \\sum x_i p_i\\). The first value is negative, so its product is negative.",
+          "solution": "\\(E(X) = -0.3 + 0.3 + 0.4 + 1.5 + 0.6 = 2.5\\)",
+          "steps": [
+            {
+              "explain": "The subscript notation means the same thing: multiply each value \\(x_i\\) by its probability \\(p_i\\) and add.",
+              "work": "\\(E(X) = \\sum x_i p_i\\)"
+            },
+            {
+              "explain": "Find each product. The first one is negative.",
+              "work": "\\(-0.3,\\quad 0.3,\\quad 0.4,\\quad 1.5,\\quad 0.6\\)"
+            },
+            {
+              "explain": "Add the products. Ignoring the minus sign would give 3.1, and the unweighted mean 2.2 ignores the probabilities.",
+              "work": "\\(E(X) = -0.3 + 0.3 + 0.4 + 1.5 + 0.6 = 2.5\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9B Q4b"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9b-q2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A simple gambling game involves the roll of a die. A player is charged 40 cents if the die shows 1, 2 or 3, is charged nothing for a 4, and receives 30 cents or 60 cents for a 5 or a 6 respectively. Let \\(X\\) be the payout to the player, in cents. Find \\(E(X)\\).",
+          "options": [
+            "\\(5\\)",
+            "\\(12.5\\)",
+            "\\(-5\\)",
+            "\\(0\\)"
+          ],
+          "answer": 2,
+          "hint": "A charge is a negative payout. The outcomes 1, 2 and 3 together give \\(X = -40\\), which has probability \\(\\tfrac{3}{6}\\).",
+          "solution": "\\(E(X) = -20 + 0 + 5 + 10 = -5\\) cents.",
+          "steps": [
+            {
+              "explain": "A charge is a negative payout. Three of the six faces give \\(-40\\), one gives 0, one gives 30 and one gives 60.",
+              "work": "\\(P(-40) = \\dfrac{3}{6} = \\dfrac{1}{2},\\quad P(0) = P(30) = P(60) = \\dfrac{1}{6}\\)"
+            },
+            {
+              "explain": "Multiply each payout by its probability.",
+              "work": "\\((-40)\\left(\\dfrac{1}{2}\\right) = -20,\\quad 0,\\quad 30 \\times \\dfrac{1}{6} = 5,\\quad 60 \\times \\dfrac{1}{6} = 10\\)"
+            },
+            {
+              "explain": "Add the products.",
+              "work": "\\(E(X) = -20 + 0 + 5 + 10 = -5\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9B Q2b"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9b-q2d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A simple gambling game involves the roll of a die. A player is charged 40 cents if the die shows 1, 2 or 3, is charged nothing for a 4, and receives 30 cents or 60 cents for a 5 or a 6 respectively. The expected payout to the player is \\(-5\\) cents per game. How much profit, in cents, would the casino expect to make on 100 games?",
+          "options": [
+            "\\(-500\\)",
+            "\\(5\\)",
+            "\\(500\\)",
+            "\\(50\\)"
+          ],
+          "answer": 2,
+          "hint": "The casino's gain is the opposite of the player's. Multiply the expected gain per game by 100.",
+          "solution": "\\(100 \\times 5 = 500\\) cents (that is, \\(\\$5.00\\)).",
+          "steps": [
+            {
+              "explain": "The player expects to lose 5 cents per game, so the casino expects to gain 5 cents per game.",
+              "work": "\\(\\text{casino gain per game} = 5 \\text{ cents}\\)"
+            },
+            {
+              "explain": "Over 100 games, the expected gain is 100 times as much.",
+              "work": "\\(100 \\times 5 = 500 \\text{ cents}\\)"
+            },
+            {
+              "explain": "This is an average, not a guarantee. Over a few games the casino could lose money.",
+              "work": "\\(500 \\text{ cents} = \\$5.00\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9B Q2d"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9b-q4a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the expected value of the distribution:\n\n\\(\\begin{array}{c|ccccc} x_i & 2 & 4 & 6 & 8 & 10 \\\\ \\hline p_i & \\dfrac{1}{5} & \\dfrac{1}{5} & \\dfrac{1}{5} & \\dfrac{1}{5} & \\dfrac{1}{5} \\end{array}\\)",
+          "options": [
+            "\\(6\\)",
+            "\\(30\\)",
+            "\\(5\\)",
+            "\\(1.2\\)"
+          ],
+          "answer": 0,
+          "hint": "Every value has the same probability \\(\\tfrac15\\), so factor it out: \\(E(X) = \\tfrac15(2 + 4 + 6 + 8 + 10)\\).",
+          "solution": "\\(E(X) = \\dfrac{2 + 4 + 6 + 8 + 10}{5} = 6\\)",
+          "steps": [
+            {
+              "explain": "Multiply each value by its probability \\(\\dfrac{1}{5}\\).",
+              "work": "\\(\\dfrac{2}{5} + \\dfrac{4}{5} + \\dfrac{6}{5} + \\dfrac{8}{5} + \\dfrac{10}{5}\\)"
+            },
+            {
+              "explain": "Add the fractions. The numerators add to 30.",
+              "work": "\\(E(X) = \\dfrac{30}{5}\\)"
+            },
+            {
+              "explain": "For a uniform distribution the expected value is just the mean of the values. Check: \\(30 \\div 5 = 6\\), which is the middle value.",
+              "work": "\\(E(X) = 6\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9B Q4a"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9b-q5b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The graph shows the probability distribution of a random variable \\(X\\). Find the mean of the distribution.",
+          "figure": {
+            "svg": "<svg viewBox=\"0 0 300 210\" width=\"50%\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:8px 0;font-family:system-ui,sans-serif\"><line x1=\"44\" y1=\"137.5\" x2=\"284\" y2=\"137.5\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"38\" y=\"141.5\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">0.1</text><line x1=\"44\" y1=\"105\" x2=\"284\" y2=\"105\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"38\" y=\"109\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">0.2</text><line x1=\"44\" y1=\"72.5\" x2=\"284\" y2=\"72.5\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"38\" y=\"76.5\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">0.3</text><line x1=\"44\" y1=\"40\" x2=\"284\" y2=\"40\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"38\" y=\"44\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">0.4</text><rect x=\"44\" y=\"72.5\" width=\"60\" height=\"97.5\" fill=\"#99f6e4\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><text x=\"74\" y=\"188\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">1</text><rect x=\"104\" y=\"105\" width=\"60\" height=\"65\" fill=\"#99f6e4\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><text x=\"134\" y=\"188\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">2</text><rect x=\"164\" y=\"137.5\" width=\"60\" height=\"32.5\" fill=\"#99f6e4\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><text x=\"194\" y=\"188\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">3</text><rect x=\"224\" y=\"40\" width=\"60\" height=\"130\" fill=\"#99f6e4\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><text x=\"254\" y=\"188\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">4</text><line x1=\"44\" y1=\"170\" x2=\"288\" y2=\"170\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"44\" y1=\"170\" x2=\"44\" y2=\"30\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"50\" y=\"24\" font-size=\"12\" font-weight=\"600\" font-style=\"italic\" fill=\"#1e293b\">P(x)</text><text x=\"292\" y=\"188\" font-size=\"12\" font-weight=\"600\" font-style=\"italic\" fill=\"#1e293b\">x</text></svg>"
+          },
+          "options": [
+            "\\(2.5\\)",
+            "\\(2.4\\)",
+            "\\(0.4\\)",
+            "\\(2.6\\)"
+          ],
+          "answer": 3,
+          "hint": "Read each bar height from the gridlines to make a table of \\(x\\) and \\(P(x)\\). Then calculate \\(\\sum xP(x)\\).",
+          "solution": "\\(E(X) = 0.3 + 0.4 + 0.3 + 1.6 = 2.6\\)",
+          "steps": [
+            {
+              "explain": "Read the height of each bar to build the probability table.",
+              "work": "\\(P(1) = 0.3,\\quad P(2) = 0.2,\\quad P(3) = 0.1,\\quad P(4) = 0.4\\)"
+            },
+            {
+              "explain": "Check that the probabilities add to 1, then multiply each value of \\(x\\) by its probability.",
+              "work": "\\(1(0.3) + 2(0.2) + 3(0.1) + 4(0.4) = 0.3 + 0.4 + 0.3 + 1.6\\)"
+            },
+            {
+              "explain": "Add. The mean is above the middle value 2.5 because the tallest bar is at 4.",
+              "work": "\\(E(X) = 2.6\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9B Q5b"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9b-q5c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The graph shows the probability distribution of a random variable \\(X\\). Find the mean of the distribution.",
+          "figure": {
+            "svg": "<svg viewBox=\"0 0 300 210\" width=\"50%\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:8px 0;font-family:system-ui,sans-serif\"><line x1=\"44\" y1=\"137.5\" x2=\"284\" y2=\"137.5\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"38\" y=\"141.5\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">0.1</text><line x1=\"44\" y1=\"105\" x2=\"284\" y2=\"105\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"38\" y=\"109\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">0.2</text><line x1=\"44\" y1=\"72.5\" x2=\"284\" y2=\"72.5\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"38\" y=\"76.5\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">0.3</text><line x1=\"44\" y1=\"40\" x2=\"284\" y2=\"40\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"38\" y=\"44\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">0.4</text><rect x=\"44\" y=\"40\" width=\"60\" height=\"130\" fill=\"#99f6e4\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><text x=\"74\" y=\"188\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">1</text><rect x=\"104\" y=\"72.5\" width=\"60\" height=\"97.5\" fill=\"#99f6e4\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><text x=\"134\" y=\"188\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">2</text><rect x=\"164\" y=\"105\" width=\"60\" height=\"65\" fill=\"#99f6e4\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><text x=\"194\" y=\"188\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">3</text><rect x=\"224\" y=\"137.5\" width=\"60\" height=\"32.5\" fill=\"#99f6e4\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><text x=\"254\" y=\"188\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">4</text><line x1=\"44\" y1=\"170\" x2=\"288\" y2=\"170\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"44\" y1=\"170\" x2=\"44\" y2=\"30\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"50\" y=\"24\" font-size=\"12\" font-weight=\"600\" font-style=\"italic\" fill=\"#1e293b\">P(x)</text><text x=\"292\" y=\"188\" font-size=\"12\" font-weight=\"600\" font-style=\"italic\" fill=\"#1e293b\">x</text></svg>"
+          },
+          "options": [
+            "\\(2.5\\)",
+            "\\(2\\)",
+            "\\(3\\)",
+            "\\(1\\)"
+          ],
+          "answer": 1,
+          "hint": "Read each bar height, then calculate \\(\\sum xP(x)\\). The tall bars are on the left, so the mean should be below 2.5.",
+          "solution": "\\(E(X) = 0.4 + 0.6 + 0.6 + 0.4 = 2\\)",
+          "steps": [
+            {
+              "explain": "Read the height of each bar to build the probability table.",
+              "work": "\\(P(1) = 0.4,\\quad P(2) = 0.3,\\quad P(3) = 0.2,\\quad P(4) = 0.1\\)"
+            },
+            {
+              "explain": "Multiply each value of \\(x\\) by its probability.",
+              "work": "\\(1(0.4) + 2(0.3) + 3(0.2) + 4(0.1) = 0.4 + 0.6 + 0.6 + 0.4\\)"
+            },
+            {
+              "explain": "Add. The tall bars are on the left, so the mean is below the middle value 2.5.",
+              "work": "\\(E(X) = 2\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9B Q5c"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9b-q6a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Fiona may buy a pencil, an eraser or a pen from the stationery shop. A pencil costs \\(\\$1.50\\), an eraser costs \\(\\$2.10\\) and a pen costs \\(\\$2.40\\). There are five boxes of pencils, four boxes of erasers and three boxes of pens. She chooses a box at random and takes one item from it. Find the expected cost, in dollars.",
+          "options": [
+            "\\(2\\)",
+            "\\(1.925\\)",
+            "\\(23.1\\)",
+            "\\(1.5\\)"
+          ],
+          "answer": 1,
+          "hint": "There are 12 boxes in all, so the probabilities are \\(\\tfrac{5}{12}\\), \\(\\tfrac{4}{12}\\) and \\(\\tfrac{3}{12}\\). The three items are not equally likely.",
+          "solution": "\\(E(X) = 0.625 + 0.70 + 0.60 = \\$1.925\\)",
+          "steps": [
+            {
+              "explain": "There are \\(5 + 4 + 3 = 12\\) boxes, each equally likely to be chosen. This gives the probability of each item.",
+              "work": "\\(P(1.50) = \\dfrac{5}{12},\\quad P(2.10) = \\dfrac{4}{12},\\quad P(2.40) = \\dfrac{3}{12}\\)"
+            },
+            {
+              "explain": "Multiply each cost by its probability.",
+              "work": "\\(1.50 \\times \\dfrac{5}{12} = 0.625,\\quad 2.10 \\times \\dfrac{4}{12} = 0.70,\\quad 2.40 \\times \\dfrac{3}{12} = 0.60\\)"
+            },
+            {
+              "explain": "Add. The simple average of the three prices, \\(\\$2.00\\), is wrong because pencils are chosen more often.",
+              "work": "\\(E(X) = 0.625 + 0.70 + 0.60 = 1.925\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9B Q6a"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9b-q6b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Fiona may buy a pencil (\\(\\$1.50\\)), an eraser (\\(\\$2.10\\)) or a pen (\\(\\$2.40\\)). Each time, an item is chosen at random from a box, and the expected cost of one choice is \\(\\$1.925\\). If Fiona and her 99 friends each choose at random, what is the expected total cost? Assume the boxes are large and will not run out.",
+          "options": [
+            "\\(\\$200\\)",
+            "\\(\\$2310\\)",
+            "\\(\\$19.25\\)",
+            "\\(\\$192.50\\)"
+          ],
+          "answer": 3,
+          "hint": "There are 100 people in all (Fiona and 99 friends). Multiply the expected cost for one person by 100.",
+          "solution": "\\(100 \\times \\$1.925 = \\$192.50\\)",
+          "steps": [
+            {
+              "explain": "Fiona and her 99 friends make 100 people altogether. Each makes one choice with the same expected cost.",
+              "work": "\\(1 + 99 = 100 \\text{ people}\\)"
+            },
+            {
+              "explain": "The expected total is the number of people times the expected cost of one choice.",
+              "work": "\\(100 \\times 1.925\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\(\\$192.50\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9B Q6b"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9b-q7a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The graph shows a probability distribution. Describe its shape.",
+          "figure": {
+            "svg": "<svg viewBox=\"0 0 300 210\" width=\"50%\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:8px 0;font-family:system-ui,sans-serif\"><line x1=\"44\" y1=\"137.5\" x2=\"284\" y2=\"137.5\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"38\" y=\"141.5\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">0.1</text><line x1=\"44\" y1=\"105\" x2=\"284\" y2=\"105\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"38\" y=\"109\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">0.2</text><line x1=\"44\" y1=\"72.5\" x2=\"284\" y2=\"72.5\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"38\" y=\"76.5\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">0.3</text><line x1=\"44\" y1=\"40\" x2=\"284\" y2=\"40\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"38\" y=\"44\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">0.4</text><rect x=\"44\" y=\"137.5\" width=\"48\" height=\"32.5\" fill=\"#99f6e4\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><text x=\"68\" y=\"188\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">1</text><rect x=\"92\" y=\"105\" width=\"48\" height=\"65\" fill=\"#99f6e4\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><text x=\"116\" y=\"188\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">2</text><rect x=\"140\" y=\"40\" width=\"48\" height=\"130\" fill=\"#99f6e4\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><text x=\"164\" y=\"188\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">3</text><rect x=\"188\" y=\"105\" width=\"48\" height=\"65\" fill=\"#99f6e4\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><text x=\"212\" y=\"188\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">4</text><rect x=\"236\" y=\"137.5\" width=\"48\" height=\"32.5\" fill=\"#99f6e4\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><text x=\"260\" y=\"188\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">5</text><line x1=\"44\" y1=\"170\" x2=\"288\" y2=\"170\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"44\" y1=\"170\" x2=\"44\" y2=\"30\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"50\" y=\"24\" font-size=\"12\" font-weight=\"600\" font-style=\"italic\" fill=\"#1e293b\">P(x)</text><text x=\"292\" y=\"188\" font-size=\"12\" font-weight=\"600\" font-style=\"italic\" fill=\"#1e293b\">x</text></svg>"
+          },
+          "options": [
+            "Symmetric",
+            "Positively skewed (long right tail)",
+            "Negatively skewed (long left tail)",
+            "Uniform"
+          ],
+          "answer": 0,
+          "hint": "Look at where the tail is. A long tail to the right means positively skewed; a long tail to the left means negatively skewed. A mirror image about a vertical line means symmetric.",
+          "solution": "Symmetric.",
+          "steps": [
+            {
+              "explain": "Look at the heights of the bars from left to right.",
+              "work": "\\(0.1,\\ 0.2,\\ 0.4,\\ 0.2,\\ 0.1\\)"
+            },
+            {
+              "explain": "Decide which side has the long tail, or whether the two sides mirror each other.",
+              "work": "\\(\\text{mirror image about } x = 3 \\Rightarrow \\text{symmetric}\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9B Q7a"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9b-q7b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The graph shows a probability distribution. Describe its shape.",
+          "figure": {
+            "svg": "<svg viewBox=\"0 0 300 210\" width=\"50%\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:8px 0;font-family:system-ui,sans-serif\"><line x1=\"44\" y1=\"137.5\" x2=\"284\" y2=\"137.5\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"38\" y=\"141.5\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">0.1</text><line x1=\"44\" y1=\"105\" x2=\"284\" y2=\"105\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"38\" y=\"109\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">0.2</text><line x1=\"44\" y1=\"72.5\" x2=\"284\" y2=\"72.5\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"38\" y=\"76.5\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">0.3</text><line x1=\"44\" y1=\"40\" x2=\"284\" y2=\"40\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"38\" y=\"44\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">0.4</text><rect x=\"44\" y=\"105\" width=\"40\" height=\"65\" fill=\"#99f6e4\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><text x=\"64\" y=\"188\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">1</text><rect x=\"84\" y=\"40\" width=\"40\" height=\"130\" fill=\"#99f6e4\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><text x=\"104\" y=\"188\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">2</text><rect x=\"124\" y=\"105\" width=\"40\" height=\"65\" fill=\"#99f6e4\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><text x=\"144\" y=\"188\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">3</text><rect x=\"164\" y=\"137.5\" width=\"40\" height=\"32.5\" fill=\"#99f6e4\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><text x=\"184\" y=\"188\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">4</text><rect x=\"204\" y=\"147.25\" width=\"40\" height=\"22.750000000000004\" fill=\"#99f6e4\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><text x=\"224\" y=\"188\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">5</text><rect x=\"244\" y=\"160.25\" width=\"40\" height=\"9.75\" fill=\"#99f6e4\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><text x=\"264\" y=\"188\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">6</text><line x1=\"44\" y1=\"170\" x2=\"288\" y2=\"170\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"44\" y1=\"170\" x2=\"44\" y2=\"30\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"50\" y=\"24\" font-size=\"12\" font-weight=\"600\" font-style=\"italic\" fill=\"#1e293b\">P(x)</text><text x=\"292\" y=\"188\" font-size=\"12\" font-weight=\"600\" font-style=\"italic\" fill=\"#1e293b\">x</text></svg>"
+          },
+          "options": [
+            "Symmetric",
+            "Negatively skewed (long left tail)",
+            "Positively skewed (long right tail)",
+            "Uniform"
+          ],
+          "answer": 2,
+          "hint": "Look at where the tail is. A long tail to the right means positively skewed; a long tail to the left means negatively skewed. A mirror image about a vertical line means symmetric.",
+          "solution": "Positively skewed (long right tail).",
+          "steps": [
+            {
+              "explain": "Look at the heights of the bars from left to right.",
+              "work": "\\(0.2,\\ 0.4,\\ 0.2,\\ 0.1,\\ 0.07,\\ 0.03\\)"
+            },
+            {
+              "explain": "Decide which side has the long tail, or whether the two sides mirror each other.",
+              "work": "\\(\\text{peak on the left, long tail to the right} \\Rightarrow \\text{positively skewed}\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9B Q7b"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9b-q7d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The graph shows a probability distribution. Describe its shape.",
+          "figure": {
+            "svg": "<svg viewBox=\"0 0 300 210\" width=\"50%\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:8px 0;font-family:system-ui,sans-serif\"><line x1=\"44\" y1=\"137.5\" x2=\"284\" y2=\"137.5\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"38\" y=\"141.5\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">0.1</text><line x1=\"44\" y1=\"105\" x2=\"284\" y2=\"105\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"38\" y=\"109\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">0.2</text><line x1=\"44\" y1=\"72.5\" x2=\"284\" y2=\"72.5\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"38\" y=\"76.5\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">0.3</text><line x1=\"44\" y1=\"40\" x2=\"284\" y2=\"40\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"38\" y=\"44\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">0.4</text><rect x=\"44\" y=\"160.25\" width=\"40\" height=\"9.75\" fill=\"#99f6e4\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><text x=\"64\" y=\"188\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">1</text><rect x=\"84\" y=\"153.75\" width=\"40\" height=\"16.25\" fill=\"#99f6e4\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><text x=\"104\" y=\"188\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">2</text><rect x=\"124\" y=\"137.5\" width=\"40\" height=\"32.5\" fill=\"#99f6e4\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><text x=\"144\" y=\"188\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">3</text><rect x=\"164\" y=\"114.75\" width=\"40\" height=\"55.25000000000001\" fill=\"#99f6e4\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><text x=\"184\" y=\"188\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">4</text><rect x=\"204\" y=\"88.75\" width=\"40\" height=\"81.25\" fill=\"#99f6e4\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><text x=\"224\" y=\"188\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">5</text><rect x=\"244\" y=\"40\" width=\"40\" height=\"130\" fill=\"#99f6e4\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><text x=\"264\" y=\"188\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">6</text><line x1=\"44\" y1=\"170\" x2=\"288\" y2=\"170\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"44\" y1=\"170\" x2=\"44\" y2=\"30\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"50\" y=\"24\" font-size=\"12\" font-weight=\"600\" font-style=\"italic\" fill=\"#1e293b\">P(x)</text><text x=\"292\" y=\"188\" font-size=\"12\" font-weight=\"600\" font-style=\"italic\" fill=\"#1e293b\">x</text></svg>"
+          },
+          "options": [
+            "Symmetric",
+            "Positively skewed (long right tail)",
+            "Negatively skewed (long left tail)",
+            "Uniform"
+          ],
+          "answer": 2,
+          "hint": "Look at where the tail is. A long tail to the right means positively skewed; a long tail to the left means negatively skewed. A mirror image about a vertical line means symmetric.",
+          "solution": "Negatively skewed (long left tail).",
+          "steps": [
+            {
+              "explain": "Look at the heights of the bars from left to right.",
+              "work": "\\(0.03,\\ 0.05,\\ 0.1,\\ 0.17,\\ 0.25,\\ 0.4\\)"
+            },
+            {
+              "explain": "Decide which side has the long tail, or whether the two sides mirror each other.",
+              "work": "\\(\\text{peak on the right, long tail to the left} \\Rightarrow \\text{negatively skewed}\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9B Q7d"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9b-q8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A weighted spinner has sectors labelled 1, 2, 3 and 4. The random variable \\(X\\) is the number it shows:\n\n\\(\\begin{array}{c|cccc} x & 1 & 2 & 3 & 4 \\\\ \\hline P(X=x) & 0.1 & 0.1 & 0.5 & 0.3 \\end{array}\\)\n\nUse \\(E(aX + b) = aE(X) + b\\) to find \\(E(2X + 1)\\).",
+          "options": [
+            "\\(7\\)",
+            "\\(6\\)",
+            "\\(8\\)",
+            "\\(3\\)"
+          ],
+          "answer": 0,
+          "hint": "First find \\(E(X) = \\sum xP(x)\\). Then use \\(E(2X + 1) = 2E(X) + 1\\).",
+          "solution": "\\(E(2X + 1) = 2 \\times 3 + 1 = 7\\)",
+          "steps": [
+            {
+              "explain": "First find the expected value of \\(X\\).",
+              "work": "\\(E(X) = 1(0.1) + 2(0.1) + 3(0.5) + 4(0.3) = 0.1 + 0.2 + 1.5 + 1.2 = 3\\)"
+            },
+            {
+              "explain": "Apply the rule with \\(a = 2\\) and \\(b = 1\\). The 2 multiplies the expected value, and the 1 is added once at the end.",
+              "work": "\\(E(2X + 1) = 2E(X) + 1\\)"
+            },
+            {
+              "explain": "Substitute \\(E(X) = 3\\).",
+              "work": "\\(E(2X + 1) = 2(3) + 1 = 7\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9B Q8"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9b-q9c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A random variable \\(X\\) has \\(E(X) = 5\\). Use \\(E(aX + b) = aE(X) + b\\) to find \\(E\\left(\\tfrac{1}{2}X\\right)\\).",
+          "options": [
+            "\\(5\\)",
+            "\\(10\\)",
+            "\\(\\dfrac{11}{2}\\)",
+            "\\(\\dfrac{5}{2}\\)"
+          ],
+          "answer": 3,
+          "hint": "Here \\(a = \\tfrac12\\) and \\(b = 0\\).",
+          "solution": "\\(E\\left(\\tfrac{1}{2}X\\right) = \\tfrac{1}{2} \\times 5 = \\dfrac{5}{2}\\)",
+          "steps": [
+            {
+              "explain": "Match \\(\\tfrac{1}{2}X\\) with the form \\(aX + b\\): here \\(a = \\tfrac{1}{2}\\) and \\(b = 0\\).",
+              "work": "\\(E(aX + b) = aE(X) + b\\)"
+            },
+            {
+              "explain": "Substitute \\(E(X) = 5\\).",
+              "work": "\\(E\\left(\\tfrac{1}{2}X\\right) = \\tfrac{1}{2} \\times 5\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\(E\\left(\\tfrac{1}{2}X\\right) = \\dfrac{5}{2}\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9B Q9c"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9b-q9e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A random variable \\(X\\) has \\(E(X) = 5\\). Use \\(E(aX + b) = aE(X) + b\\) to find \\(E(10 - 2X)\\).",
+          "options": [
+            "\\(20\\)",
+            "\\(0\\)",
+            "\\(10\\)",
+            "\\(-10\\)"
+          ],
+          "answer": 1,
+          "hint": "Write \\(10 - 2X\\) as \\(-2X + 10\\), so \\(a = -2\\) and \\(b = 10\\).",
+          "solution": "\\(E(10 - 2X) = (-2)(5) + 10 = 0\\)",
+          "steps": [
+            {
+              "explain": "Rewrite \\(10 - 2X\\) in the form \\(aX + b\\). The coefficient of \\(X\\) is \\(-2\\).",
+              "work": "\\(10 - 2X = (-2)X + 10,\\quad a = -2,\\ b = 10\\)"
+            },
+            {
+              "explain": "Apply the rule and substitute \\(E(X) = 5\\).",
+              "work": "\\(E(10 - 2X) = (-2)(5) + 10\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(E(10 - 2X) = -10 + 10 = 0\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9B Q9e"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9b-q9f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A random variable \\(X\\) has \\(E(X) = 5\\). Use \\(E(aX + b) = aE(X) + b\\) to find \\(E(4X - 2)\\).",
+          "options": [
+            "\\(20\\)",
+            "\\(18\\)",
+            "\\(22\\)",
+            "\\(8\\)"
+          ],
+          "answer": 1,
+          "hint": "Here \\(a = 4\\) and \\(b = -2\\). Multiply first, then add \\(b\\).",
+          "solution": "\\(E(4X - 2) = 4(5) - 2 = 18\\)",
+          "steps": [
+            {
+              "explain": "Match \\(4X - 2\\) with \\(aX + b\\): here \\(a = 4\\) and \\(b = -2\\).",
+              "work": "\\(E(4X - 2) = 4E(X) - 2\\)"
+            },
+            {
+              "explain": "Substitute \\(E(X) = 5\\).",
+              "work": "\\(4(5) - 2\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(E(4X - 2) = 18\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9B Q9f"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9b-q10",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A coin is tossed three times and the number of heads is recorded. Find the expected number of heads.",
+          "options": [
+            "\\(1\\)",
+            "\\(3\\)",
+            "\\(1.25\\)",
+            "\\(1.5\\)"
+          ],
+          "answer": 3,
+          "hint": "Build the table of \\(P(X = x)\\) first: the probabilities are \\(\\tfrac18, \\tfrac38, \\tfrac38, \\tfrac18\\) for 0, 1, 2, 3 heads.",
+          "solution": "\\(E(X) = \\dfrac{0 + 3 + 6 + 3}{8} = \\dfrac{12}{8} = 1.5\\)",
+          "steps": [
+            {
+              "explain": "The 8 outcomes HHH, HHT, …, TTT are equally likely. Count how many have 0, 1, 2 and 3 heads.",
+              "work": "\\(P(0) = \\dfrac{1}{8},\\quad P(1) = \\dfrac{3}{8},\\quad P(2) = \\dfrac{3}{8},\\quad P(3) = \\dfrac{1}{8}\\)"
+            },
+            {
+              "explain": "Multiply each number of heads by its probability.",
+              "work": "\\(0 + 1\\left(\\dfrac{3}{8}\\right) + 2\\left(\\dfrac{3}{8}\\right) + 3\\left(\\dfrac{1}{8}\\right) = \\dfrac{0 + 3 + 6 + 3}{8}\\)"
+            },
+            {
+              "explain": "Simplify. The table is symmetric about 1.5, so the mean is 1.5, as expected.",
+              "work": "\\(E(X) = \\dfrac{12}{8} = 1.5\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9B Q10"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9b-q11a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Two cards are selected at random from a standard pack of 52 cards (without replacement), and the number of hearts is recorded. Let \\(X\\) be the number of hearts. Find \\(P(X = 1)\\).",
+          "options": [
+            "\\(\\dfrac{13}{34}\\)",
+            "\\(0.375\\)",
+            "\\(\\dfrac{19}{34}\\)",
+            "\\(\\dfrac{13}{51}\\)"
+          ],
+          "answer": 0,
+          "hint": "Exactly one heart can happen in two orders: a heart then a non-heart, or a non-heart then a heart. There are 13 hearts and 39 non-hearts.",
+          "solution": "\\(P(X=1) = 2 \\times \\dfrac{13}{68} = \\dfrac{13}{34}\\)",
+          "steps": [
+            {
+              "explain": "A heart then a non-heart: 13 of 52 cards are hearts, then 39 of the remaining 51 cards are not hearts.",
+              "work": "\\(P(HN) = \\dfrac{13}{52} \\times \\dfrac{39}{51} = \\dfrac{13}{68}\\)"
+            },
+            {
+              "explain": "A non-heart then a heart has the same probability.",
+              "work": "\\(P(NH) = \\dfrac{39}{52} \\times \\dfrac{13}{51} = \\dfrac{13}{68}\\)"
+            },
+            {
+              "explain": "Add the two orders and simplify.",
+              "work": "\\(P(X=1) = \\dfrac{13}{68} + \\dfrac{13}{68} = \\dfrac{13}{34}\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9B Q11a"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9b-q11b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Two cards are selected at random from a standard pack of 52 cards (without replacement), and the number of hearts is recorded. The probabilities are \\(P(X=0) = \\dfrac{19}{34}\\), \\(P(X=1) = \\dfrac{13}{34}\\) and \\(P(X=2) = \\dfrac{1}{17}\\). Find the expected number of hearts.",
+          "options": [
+            "\\(\\dfrac{1}{4}\\)",
+            "\\(\\dfrac{13}{34}\\)",
+            "\\(\\dfrac{1}{2}\\)",
+            "\\(\\dfrac{1}{17}\\)"
+          ],
+          "answer": 2,
+          "hint": "\\(E(X) = 0 \\cdot P(0) + 1 \\cdot P(1) + 2 \\cdot P(2)\\). Write \\(\\tfrac{1}{17}\\) as \\(\\tfrac{2}{34}\\) to use a common denominator.",
+          "solution": "\\(E(X) = \\dfrac{13}{34} + \\dfrac{4}{34} = \\dfrac{1}{2}\\)",
+          "steps": [
+            {
+              "explain": "Multiply each value by its probability. The term for \\(x = 0\\) is zero.",
+              "work": "\\(E(X) = 0\\left(\\dfrac{19}{34}\\right) + 1\\left(\\dfrac{13}{34}\\right) + 2\\left(\\dfrac{1}{17}\\right)\\)"
+            },
+            {
+              "explain": "Write every term over 34.",
+              "work": "\\(\\dfrac{13}{34} + \\dfrac{4}{34}\\)"
+            },
+            {
+              "explain": "Add and simplify.",
+              "work": "\\(E(X) = \\dfrac{17}{34} = \\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Check: each card is a heart with probability \\(\\dfrac{1}{4}\\), so for two cards we expect \\(2 \\times \\dfrac{1}{4} = \\dfrac{1}{2}\\) hearts.",
+              "work": "\\(E(X) = 2 \\times \\dfrac{1}{4} = \\dfrac{1}{2}\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9B Q11b"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9b-q12P",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Two dice are rolled. Let \\(X\\) be the difference between the two numbers (larger minus smaller, so \\(X\\) is 0, 1, 2, 3, 4 or 5). Find \\(P(X = 1)\\).",
+          "options": [
+            "\\(\\dfrac{5}{36}\\)",
+            "\\(\\dfrac{1}{6}\\)",
+            "\\(\\dfrac{5}{18}\\)",
+            "\\(\\dfrac{1}{3}\\)"
+          ],
+          "answer": 2,
+          "hint": "Use the \\(6 \\times 6\\) array of 36 equally likely outcomes. A difference of 1 can be (1,2), (2,1), (2,3), …",
+          "solution": "\\(P(X=1) = \\dfrac{10}{36} = \\dfrac{5}{18}\\)",
+          "steps": [
+            {
+              "explain": "The sample space has 36 equally likely outcomes. A difference of 1 comes from the pairs of neighbouring numbers.",
+              "work": "\\((1,2),(2,3),(3,4),(4,5),(5,6) \\text{ and } (2,1),(3,2),(4,3),(5,4),(6,5)\\)"
+            },
+            {
+              "explain": "There are 5 pairs with the smaller die first and 5 with the larger die first, so 10 outcomes in all. Counting only 5 forgets the second order.",
+              "work": "\\(10 \\text{ outcomes}\\)"
+            },
+            {
+              "explain": "Write the probability and simplify.",
+              "work": "\\(P(X=1) = \\dfrac{10}{36} = \\dfrac{5}{18}\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9B Q12P"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9b-q12E",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Two dice are rolled. Let \\(X\\) be the difference between the two numbers (larger minus smaller). The probabilities are \\(\\dfrac{6}{36}, \\dfrac{10}{36}, \\dfrac{8}{36}, \\dfrac{6}{36}, \\dfrac{4}{36}, \\dfrac{2}{36}\\) for \\(x = 0, 1, 2, 3, 4, 5\\). Find the expected difference.",
+          "options": [
+            "\\(\\dfrac{35}{18}\\)",
+            "\\(\\dfrac{5}{2}\\)",
+            "\\(\\dfrac{7}{2}\\)",
+            "\\(\\dfrac{35}{36}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply each \\(x\\) by its probability, giving \\(0, \\tfrac{10}{36}, \\tfrac{16}{36}, \\dots\\), then add and simplify.",
+          "solution": "\\(E(X) = \\dfrac{70}{36} = \\dfrac{35}{18}\\)",
+          "steps": [
+            {
+              "explain": "Multiply each value of \\(x\\) by its probability, using the common denominator 36.",
+              "work": "\\(\\dfrac{0 \\cdot 6 + 1 \\cdot 10 + 2 \\cdot 8 + 3 \\cdot 6 + 4 \\cdot 4 + 5 \\cdot 2}{36}\\)"
+            },
+            {
+              "explain": "Evaluate the numerator.",
+              "work": "\\(\\dfrac{0 + 10 + 16 + 18 + 16 + 10}{36} = \\dfrac{70}{36}\\)"
+            },
+            {
+              "explain": "Simplify. The result is below 2.5, the simple mean of 0 to 5, because small differences are more likely.",
+              "work": "\\(E(X) = \\dfrac{35}{18} \\approx 1.94\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9B Q12E"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9b-q13a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A die is weighted so that each of the results 1, 2 and 3 is 50% more likely to turn up than each of the results 4, 5 and 6. Find the probability that the die shows a 4.",
+          "options": [
+            "\\(\\dfrac{1}{6}\\)",
+            "\\(\\dfrac{1}{10}\\)",
+            "\\(\\dfrac{1}{5}\\)",
+            "\\(\\dfrac{2}{15}\\)"
+          ],
+          "answer": 3,
+          "hint": "Let each of 4, 5, 6 have probability \\(p\\). Then each of 1, 2, 3 has probability \\(1.5p\\). All six probabilities add to 1.",
+          "solution": "\\(P(4) = p = \\dfrac{2}{15}\\)",
+          "steps": [
+            {
+              "explain": "Let each of the results 4, 5 and 6 have probability \\(p\\). \"50% more likely\" means each of 1, 2 and 3 has probability \\(1.5p\\).",
+              "work": "\\(P(4) = P(5) = P(6) = p,\\quad P(1) = P(2) = P(3) = 1.5p\\)"
+            },
+            {
+              "explain": "The six probabilities add to 1.",
+              "work": "\\(3(1.5p) + 3p = 1 \\Rightarrow 7.5p = 1\\)"
+            },
+            {
+              "explain": "Solve for \\(p\\).",
+              "work": "\\(p = \\dfrac{1}{7.5} = \\dfrac{2}{15}\\)"
+            },
+            {
+              "explain": "Check: \\(P(1) = 1.5 \\times \\dfrac{2}{15} = \\dfrac{1}{5}\\), and \\(3\\left(\\dfrac{1}{5}\\right) + 3\\left(\\dfrac{2}{15}\\right) = \\dfrac{3}{5} + \\dfrac{2}{5} = 1\\).",
+              "work": "\\(3\\left(\\dfrac{1}{5}\\right) + 3\\left(\\dfrac{2}{15}\\right) = 1\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9B Q13a"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-9b-q13b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In a game, a player is charged 40 cents if a die shows 1, 2 or 3, is charged nothing for a 4, and receives 30 cents or 60 cents for a 5 or a 6. The die is weighted so that \\(P(1) = P(2) = P(3) = \\dfrac{1}{5}\\) and \\(P(4) = P(5) = P(6) = \\dfrac{2}{15}\\). Find the expected payout to the player, in cents.",
+          "options": [
+            "\\(-5\\)",
+            "\\(-12\\)",
+            "\\(12\\)",
+            "\\(-24\\)"
+          ],
+          "answer": 1,
+          "hint": "The three outcomes 1, 2, 3 all pay \\(-40\\), so together they have probability \\(3 \\times \\tfrac15 = \\tfrac35\\).",
+          "solution": "\\(E(X) = -24 + 4 + 8 = -12\\) cents.",
+          "steps": [
+            {
+              "explain": "The payouts are \\(-40\\) (for 1, 2 or 3), 0, 30 and 60. The probability of \\(-40\\) is \\(3 \\times \\dfrac{1}{5} = \\dfrac{3}{5}\\).",
+              "work": "\\(P(-40) = \\dfrac{3}{5},\\quad P(0) = P(30) = P(60) = \\dfrac{2}{15}\\)"
+            },
+            {
+              "explain": "Multiply each payout by its probability.",
+              "work": "\\((-40)\\left(\\dfrac{3}{5}\\right) = -24,\\quad 0,\\quad 30\\left(\\dfrac{2}{15}\\right) = 4,\\quad 60\\left(\\dfrac{2}{15}\\right) = 8\\)"
+            },
+            {
+              "explain": "Add. The expected payout to the player is now \\(-12\\) cents, compared with \\(-5\\) cents for a fair die, so the backers expect to make 12 cents a game.",
+              "work": "\\(E(X) = -24 + 0 + 4 + 8 = -12\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9B Q13b"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-9b-q14b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A slot machine rolls three outcomes from Orange, Strawberry and Apple. In each position the probabilities of Orange, Strawberry and Apple are \\(\\dfrac{1}{6}, \\dfrac{2}{6}, \\dfrac{3}{6}\\), and the three positions are independent. The player is paid only when all three outcomes match (OOO, SSS or AAA). Find the probability that the player is paid nothing.",
+          "options": [
+            "\\(\\dfrac{1}{6}\\)",
+            "\\(\\dfrac{5}{6}\\)",
+            "\\(\\dfrac{1}{216}\\)",
+            "\\(\\dfrac{35}{36}\\)"
+          ],
+          "answer": 1,
+          "hint": "Find \\(P(OOO)\\), \\(P(SSS)\\) and \\(P(AAA)\\), add them, and subtract from 1.",
+          "solution": "\\(P(\\text{nothing}) = \\dfrac{180}{216} = \\dfrac{5}{6}\\)",
+          "steps": [
+            {
+              "explain": "The positions are independent, so multiply the three probabilities for each matching triple.",
+              "work": "\\(P(OOO) = \\dfrac{1}{216},\\quad P(SSS) = \\left(\\dfrac{2}{6}\\right)^3 = \\dfrac{8}{216},\\quad P(AAA) = \\left(\\dfrac{3}{6}\\right)^3 = \\dfrac{27}{216}\\)"
+            },
+            {
+              "explain": "Add them to find the probability that the player is paid.",
+              "work": "\\(\\dfrac{1 + 8 + 27}{216} = \\dfrac{36}{216} = \\dfrac{1}{6}\\)"
+            },
+            {
+              "explain": "Use the complement for the probability of no payout.",
+              "work": "\\(P(\\text{nothing}) = 1 - \\dfrac{1}{6} = \\dfrac{5}{6}\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9B Q14b"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-9b-q14c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A slot machine costs \\(\\$1\\) to play. In each of three positions the probabilities of Orange, Strawberry and Apple are \\(\\dfrac{1}{6}, \\dfrac{2}{6}, \\dfrac{3}{6}\\). The machine pays out in the ratio 11 : 2 : 1 for three Oranges, three Strawberries or three Apples respectively, and pays nothing otherwise. If three Apples pay \\(\\$k\\), how much does a player get for three Oranges when the machine is designed to just break even?",
+          "options": [
+            "\\(\\$4\\)",
+            "\\(\\$11\\)",
+            "\\(\\$54\\)",
+            "\\(\\$44\\)"
+          ],
+          "answer": 3,
+          "hint": "Break even means the expected payout equals the \\(\\$1\\) cost. The payouts are \\(11k\\), \\(2k\\) and \\(k\\), with probabilities \\(\\tfrac{1}{216}\\), \\(\\tfrac{8}{216}\\) and \\(\\tfrac{27}{216}\\).",
+          "solution": "\\(k = 4\\), so three Oranges pay \\(11 \\times \\$4 = \\$44\\).",
+          "steps": [
+            {
+              "explain": "The payouts for OOO, SSS and AAA are \\(11k\\), \\(2k\\) and \\(k\\) dollars, with probabilities \\(\\dfrac{1}{216}\\), \\(\\dfrac{8}{216}\\) and \\(\\dfrac{27}{216}\\).",
+              "work": "\\(E(X) = 11k\\left(\\dfrac{1}{216}\\right) + 2k\\left(\\dfrac{8}{216}\\right) + k\\left(\\dfrac{27}{216}\\right)\\)"
+            },
+            {
+              "explain": "Collect the terms. The coefficients add to \\(11 + 16 + 27 = 54\\).",
+              "work": "\\(E(X) = \\dfrac{54k}{216} = \\dfrac{k}{4}\\)"
+            },
+            {
+              "explain": "Break even means the expected payout equals the \\(\\$1\\) cost, so \\(\\dfrac{k}{4} = 1\\) and \\(k = 4\\).",
+              "work": "\\(k = 4\\)"
+            },
+            {
+              "explain": "Three Oranges pay \\(11k\\).",
+              "work": "\\(11k = 11 \\times 4 = 44\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9B Q14c"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-9b-q15",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Wulf tosses a coin repeatedly until it shows a head. Let \\(X\\) be the number of tosses. Then \\(P(X = n) = \\dfrac{1}{2^n}\\) for \\(n = 1, 2, 3, \\dots\\). Find the expected number of tosses \\(E(X) = 1\\cdot\\dfrac{1}{2} + 2\\cdot\\dfrac{1}{4} + 3\\cdot\\dfrac{1}{8} + \\cdots\\)",
+          "options": [
+            "\\(2\\)",
+            "\\(1\\)",
+            "\\(3\\)",
+            "\\(4\\)"
+          ],
+          "answer": 0,
+          "hint": "Let \\(\\mu\\) be the sum. Write \\(2\\mu\\), then subtract \\(\\mu\\) from it. Most terms combine into a geometric series.",
+          "solution": "\\(\\mu = 2\\), the sum of \\(1 + \\tfrac12 + \\tfrac14 + \\cdots\\)",
+          "steps": [
+            {
+              "explain": "Let \\(\\mu\\) be the infinite sum, and write out \\(2\\mu\\) by doubling every term.",
+              "work": "\\(\\mu = \\dfrac{1}{2} + \\dfrac{2}{4} + \\dfrac{3}{8} + \\dfrac{4}{16} + \\cdots,\\quad 2\\mu = 1 + \\dfrac{2}{2} + \\dfrac{3}{4} + \\dfrac{4}{8} + \\cdots\\)"
+            },
+            {
+              "explain": "Subtract \\(\\mu\\) from \\(2\\mu\\), term by term. Matching terms give differences of \\(\\tfrac{1}{2}\\), \\(\\tfrac{1}{4}\\), \\(\\tfrac{1}{8}\\), …",
+              "work": "\\(2\\mu - \\mu = 1 + \\dfrac{1}{2} + \\dfrac{1}{4} + \\dfrac{1}{8} + \\cdots\\)"
+            },
+            {
+              "explain": "The right side is a geometric series with first term 1 and ratio \\(\\tfrac{1}{2}\\). Since \\(|r| < 1\\), the limiting sum exists.",
+              "work": "\\(S_\\infty = \\dfrac{1}{1 - \\frac{1}{2}} = 2\\)"
+            },
+            {
+              "explain": "So \\(\\mu = 2\\). On average a head appears on the second toss.",
+              "work": "\\(\\mu = 2\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9B Q15"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-9b-q16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In the St Petersburg game, a coin is tossed until a head turns up. The prize starts at \\(\\$2\\) and doubles for every tail, so the player wins \\(\\$2\\) if the first toss is a head, \\(\\$4\\) if the first head is on the second toss, \\(\\$8\\) if on the third toss, and so on. The expected return is \\(E(X) = 2\\cdot\\dfrac{1}{2} + 4\\cdot\\dfrac{1}{4} + 8\\cdot\\dfrac{1}{8} + \\cdots\\). What happens to this expected return?",
+          "options": [
+            "It equals \\(\\$40\\), so the manager's price is fair",
+            "It converges to \\(\\$2\\)",
+            "It increases without bound, so no finite price makes the game fair",
+            "It converges to \\(\\$4\\)"
+          ],
+          "answer": 2,
+          "hint": "Work out each product \\(2^k \\times \\tfrac{1}{2^k}\\). What does the sum of those terms do?",
+          "solution": "The expected return increases without bound.",
+          "steps": [
+            {
+              "explain": "The prize on the \\(k\\)th toss is \\(2^k\\) dollars, and the probability that the first head is on toss \\(k\\) is \\(\\tfrac{1}{2^k}\\).",
+              "work": "\\(2^k \\times \\dfrac{1}{2^k}\\)"
+            },
+            {
+              "explain": "Each term equals 1.",
+              "work": "\\(E(X) = 1 + 1 + 1 + 1 + \\cdots\\)"
+            },
+            {
+              "explain": "Adding more and more 1s gives a total that grows without bound, so the expected return is not finite. No fixed price, not even \\(\\$40\\), is a \"fair\" price in the sense of breaking even.",
+              "work": "\\(E(X) \\to \\infty\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9B Q16"
+          },
+          "xp": 4
+        }
+      ]
     }
   ]
 }
