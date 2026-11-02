@@ -25,11 +25,11 @@
           "steps": [
             {
               "explain": "Decide first whether the outcome is a number or a label. A height is measured, so it is a number.",
-              "work": "\\text{height (in cm)} \\Rightarrow \\text{numeric}"
+              "work": "\\(\\text{height (in cm)} \\Rightarrow \\text{numeric}\\)"
             },
             {
               "explain": "A discrete variable takes separate values you can list (like 0, 1, 2, …). A height can be any value in an interval, such as 174.3 cm or 174.31 cm, so it is continuous.",
-              "work": "\\text{any value in an interval} \\Rightarrow \\text{continuous}"
+              "work": "\\(\\text{any value in an interval} \\Rightarrow \\text{continuous}\\)"
             }
           ],
           "meta": {
@@ -55,11 +55,11 @@
           "steps": [
             {
               "explain": "Look at what is recorded for each year: the name of a month, such as \"March\" or \"June\".",
-              "work": "\\text{outcomes: January, February, \\dots, December}"
+              "work": "\\(\\text{outcomes: January, February, \\dots, December}\\)"
             },
             {
               "explain": "A name is a label, not a number, so the distribution is categorical. We cannot call it discrete or continuous, because those words describe numeric outcomes.",
-              "work": "\\text{labels, not numbers} \\Rightarrow \\text{categorical}"
+              "work": "\\(\\text{labels, not numbers} \\Rightarrow \\text{categorical}\\)"
             }
           ],
           "meta": {
@@ -85,11 +85,11 @@
           "steps": [
             {
               "explain": "The outcome is a count of blue balls, so it is numeric.",
-              "work": "\\text{number of blue balls} \\Rightarrow \\text{numeric}"
+              "work": "\\(\\text{number of blue balls} \\Rightarrow \\text{numeric}\\)"
             },
             {
               "explain": "The count can only be one of the separate values 0, 1, 2 or 3, so the variable is discrete.",
-              "work": "X \\in \\{0, 1, 2, 3\\} \\Rightarrow \\text{discrete}"
+              "work": "\\(X \\in \\{0, 1, 2, 3\\} \\Rightarrow \\text{discrete}\\)"
             }
           ],
           "meta": {
@@ -115,11 +115,11 @@
           "steps": [
             {
               "explain": "Rainfall is measured in millimetres, so the outcome is a number.",
-              "work": "\\text{rainfall (mm)} \\Rightarrow \\text{numeric}"
+              "work": "\\(\\text{rainfall (mm)} \\Rightarrow \\text{numeric}\\)"
             },
             {
               "explain": "It can take any value in an interval (for example 2.5 mm or 2.53 mm), not just separate listed values, so it is continuous.",
-              "work": "0 \\le x < \\infty \\Rightarrow \\text{continuous}"
+              "work": "\\(0 \\le x < \\infty \\Rightarrow \\text{continuous}\\)"
             }
           ],
           "meta": {
@@ -145,15 +145,15 @@
           "steps": [
             {
               "explain": "The experimental probability of each outcome is its relative frequency, which is the frequency divided by 40.",
-              "work": "P(X = x) = \\dfrac{\\text{frequency}}{40}"
+              "work": "\\(P(X = x) = \\dfrac{\\text{frequency}}{40}\\)"
             },
             {
               "explain": "\"Greater than 3\" means the outcomes 4, 5 and 6. The outcome 3 is not included.",
-              "work": "P(X>3) = P(4) + P(5) + P(6)"
+              "work": "\\(P(X>3) = P(4) + P(5) + P(6)\\)"
             },
             {
               "explain": "Add the frequencies 6, 8 and 12 and divide by 40.",
-              "work": "\\dfrac{6 + 8 + 12}{40} = \\dfrac{26}{40} = 0.65"
+              "work": "\\(\\dfrac{6 + 8 + 12}{40} = \\dfrac{26}{40} = 0.65\\)"
             }
           ],
           "meta": {
@@ -179,15 +179,15 @@
           "steps": [
             {
               "explain": "The inequality \"less than or equal to 4\" includes the outcome 4, so we add up the probabilities of 1, 2, 3 and 4.",
-              "work": "P(X \\le 4) = P(1) + P(2) + P(3) + P(4)"
+              "work": "\\(P(X \\le 4) = P(1) + P(2) + P(3) + P(4)\\)"
             },
             {
               "explain": "Add the matching frequencies 2, 6, 6 and 6, then divide by the 40 rolls.",
-              "work": "\\dfrac{2 + 6 + 6 + 6}{40} = \\dfrac{20}{40}"
+              "work": "\\(\\dfrac{2 + 6 + 6 + 6}{40} = \\dfrac{20}{40}\\)"
             },
             {
               "explain": "Simplify to find the cumulative probability.",
-              "work": "P(X \\le 4) = 0.5"
+              "work": "\\(P(X \\le 4) = 0.5\\)"
             }
           ],
           "meta": {
@@ -213,11 +213,11 @@
           "steps": [
             {
               "explain": "Each frequency counts the houses with that number of residents, so the total number of houses is the sum of all the frequencies.",
-              "work": "\\text{total} = \\sum f"
+              "work": "\\(\\text{total} = \\sum f\\)"
             },
             {
               "explain": "Add the seven frequencies.",
-              "work": "2 + 32 + 44 + 57 + 50 + 13 + 2 = 200"
+              "work": "\\(2 + 32 + 44 + 57 + 50 + 13 + 2 = 200\\)"
             }
           ],
           "meta": {
@@ -243,15 +243,15 @@
           "steps": [
             {
               "explain": "The total number of houses is the sum of the frequencies.",
-              "work": "2 + 32 + 44 + 57 + 50 + 13 + 2 = 200"
+              "work": "\\(2 + 32 + 44 + 57 + 50 + 13 + 2 = 200\\)"
             },
             {
               "explain": "The probability of exactly 3 residents is the relative frequency: frequency divided by total.",
-              "work": "P(3) = \\dfrac{57}{200}"
+              "work": "\\(P(3) = \\dfrac{57}{200}\\)"
             },
             {
               "explain": "Convert to a decimal.",
-              "work": "P(3) = 0.285"
+              "work": "\\(P(3) = 0.285\\)"
             }
           ],
           "meta": {
@@ -277,15 +277,15 @@
           "steps": [
             {
               "explain": "\"Fewer than 3 residents\" means 0, 1 or 2 residents. Three residents is not included.",
-              "work": "P(X<3) = P(0) + P(1) + P(2)"
+              "work": "\\(P(X<3) = P(0) + P(1) + P(2)\\)"
             },
             {
               "explain": "Add the frequencies 2, 32 and 44, then divide by the 200 houses.",
-              "work": "\\dfrac{2 + 32 + 44}{200} = \\dfrac{78}{200}"
+              "work": "\\(\\dfrac{2 + 32 + 44}{200} = \\dfrac{78}{200}\\)"
             },
             {
               "explain": "Convert to a decimal. So only 39% of the houses have fewer than 3 residents, which is under half.",
-              "work": "P(X<3) = 0.39"
+              "work": "\\(P(X<3) = 0.39\\)"
             }
           ],
           "meta": {
@@ -311,11 +311,11 @@
           "steps": [
             {
               "explain": "The four outcomes HH, HT, TH and TT are equally likely, because each coin is fair and the tosses are independent.",
-              "work": "P(HH) = P(HT) = P(TH) = P(TT) = \\dfrac{1}{4}"
+              "work": "\\(P(HH) = P(HT) = P(TH) = P(TT) = \\dfrac{1}{4}\\)"
             },
             {
               "explain": "All the probabilities are equal, so the distribution is uniform. The outcomes are labels rather than numbers, so it is also categorical.",
-              "work": "\\text{equal probabilities} \\Rightarrow \\text{uniform}"
+              "work": "\\(\\text{equal probabilities} \\Rightarrow \\text{uniform}\\)"
             }
           ],
           "meta": {
@@ -341,15 +341,15 @@
           "steps": [
             {
               "explain": "The four equally likely ways the coins can land are HH, HT, TH and TT.",
-              "work": "\\text{HH, HT, TH, TT, each with probability } \\dfrac{1}{4}"
+              "work": "\\(\\text{HH, HT, TH, TT, each with probability } \\dfrac{1}{4}\\)"
             },
             {
               "explain": "\"1 head and 1 tail\" happens in two of these ways, HT and TH.",
-              "work": "P(\\text{1 head and 1 tail}) = \\dfrac{1}{4} + \\dfrac{1}{4}"
+              "work": "\\(P(\\text{1 head and 1 tail}) = \\dfrac{1}{4} + \\dfrac{1}{4}\\)"
             },
             {
-              "explain": "Simplify. The three recorded outcomes are not equally likely, so the answer is not 1/3.",
-              "work": "P = \\dfrac{1}{2}"
+              "explain": "Simplify. The three recorded outcomes are not equally likely, so the answer is not \\(\\dfrac{1}{3}\\).",
+              "work": "\\(P = \\dfrac{1}{2}\\)"
             }
           ],
           "meta": {
@@ -375,15 +375,15 @@
           "steps": [
             {
               "explain": "Write out the letters of PARRAMATTA one by one and count them. There are 10 letters, so there are 10 equally likely choices.",
-              "work": "P, A, R, R, A, M, A, T, T, A \\Rightarrow 10 \\text{ letters}"
+              "work": "\\(P, A, R, R, A, M, A, T, T, A \\Rightarrow 10 \\text{ letters}\\)"
             },
             {
               "explain": "The letter A appears 4 times, so 4 of the 10 choices give A.",
-              "work": "P(A) = \\dfrac{4}{10}"
+              "work": "\\(P(A) = \\dfrac{4}{10}\\)"
             },
             {
-              "explain": "Simplify. The other letters are P: 1/10, R: 2/10, M: 1/10 and T: 2/10, so the probabilities add to 1.",
-              "work": "P(A) = \\dfrac{2}{5}"
+              "explain": "Simplify. The other letters are P: \\(\\dfrac{1}{10}\\), R: \\(\\dfrac{2}{10}\\), M: \\(\\dfrac{1}{10}\\) and T: \\(\\dfrac{2}{10}\\), so the probabilities add to 1.",
+              "work": "\\(P(A) = \\dfrac{2}{5}\\)"
             }
           ],
           "meta": {
@@ -408,16 +408,16 @@
           "solution": "\\(P(\\text{2 digits}) = \\dfrac{90}{1000} = \\dfrac{9}{100}\\)",
           "steps": [
             {
-              "explain": "The 2-digit numbers run from 10 to 99, so there are 99 − 10 + 1 = 90 of them.",
-              "work": "99 - 10 + 1 = 90"
+              "explain": "The 2-digit numbers run from 10 to 99, so there are \\(99 - 10 + 1 = 90\\) of them.",
+              "work": "\\(99 - 10 + 1 = 90\\)"
             },
             {
               "explain": "There are 1000 equally likely numbers altogether.",
-              "work": "P(\\text{2 digits}) = \\dfrac{90}{1000}"
+              "work": "\\(P(\\text{2 digits}) = \\dfrac{90}{1000}\\)"
             },
             {
               "explain": "Simplify the fraction.",
-              "work": "P = \\dfrac{9}{100}"
+              "work": "\\(P = \\dfrac{9}{100}\\)"
             }
           ],
           "meta": {
@@ -443,15 +443,15 @@
           "steps": [
             {
               "explain": "There are 10 equally likely numbers from 10 to 19.",
-              "work": "10, 11, 12, 13, 14, 15, 16, 17, 18, 19"
+              "work": "\\(10, 11, 12, 13, 14, 15, 16, 17, 18, 19\\)"
             },
             {
               "explain": "The primes among them are 11, 13, 17 and 19. That is 4 primes.",
-              "work": "\\text{primes: } 11, 13, 17, 19"
+              "work": "\\(\\text{primes: } 11, 13, 17, 19\\)"
             },
             {
               "explain": "Write the probability and simplify.",
-              "work": "P(\\text{prime}) = \\dfrac{4}{10} = \\dfrac{2}{5}"
+              "work": "\\(P(\\text{prime}) = \\dfrac{4}{10} = \\dfrac{2}{5}\\)"
             }
           ],
           "meta": {
@@ -477,15 +477,15 @@
           "steps": [
             {
               "explain": "Write down the number of letters in each of the 8 words.",
-              "work": "\\text{The}(3), \\text{ginger}(6), \\text{cat}(3), \\text{ran}(3), \\text{off}(3), \\text{with}(4), \\text{the}(3), \\text{meat}(4)"
+              "work": "\\(\\text{The}(3), \\text{ginger}(6), \\text{cat}(3), \\text{ran}(3), \\text{off}(3), \\text{with}(4), \\text{the}(3), \\text{meat}(4)\\)"
             },
             {
               "explain": "Five of the eight words have 3 letters: The, cat, ran, off and the.",
-              "work": "P(X=3) = \\dfrac{5}{8}"
+              "work": "\\(P(X=3) = \\dfrac{5}{8}\\)"
             },
             {
-              "explain": "Check the whole distribution: P(3) = 5/8, P(4) = 2/8 and P(6) = 1/8 add to 1.",
-              "work": "\\dfrac{5}{8} + \\dfrac{2}{8} + \\dfrac{1}{8} = 1"
+              "explain": "Check the whole distribution: \\(P(3) = \\dfrac{5}{8}\\), \\(P(4) = \\dfrac{2}{8}\\) and \\(P(6) = \\dfrac{1}{8}\\) add to 1.",
+              "work": "\\(\\dfrac{5}{8} + \\dfrac{2}{8} + \\dfrac{1}{8} = 1\\)"
             }
           ],
           "meta": {
@@ -511,15 +511,15 @@
           "steps": [
             {
               "explain": "Write out the 12 digits: 1, 4, 1, 4, 2, 1, 3, 5, 6, 2, 3, 7. Each is equally likely to be chosen.",
-              "work": "1, 4, 1, 4, 2, 1, 3, 5, 6, 2, 3, 7"
+              "work": "\\(1, 4, 1, 4, 2, 1, 3, 5, 6, 2, 3, 7\\)"
             },
             {
               "explain": "The digit 2 appears twice among the 12 digits.",
-              "work": "P(X=2) = \\dfrac{2}{12}"
+              "work": "\\(P(X=2) = \\dfrac{2}{12}\\)"
             },
             {
               "explain": "Simplify. We do not divide by 7, the number of different digits, because the digits are not equally likely.",
-              "work": "P(X=2) = \\dfrac{1}{6}"
+              "work": "\\(P(X=2) = \\dfrac{1}{6}\\)"
             }
           ],
           "meta": {
@@ -544,20 +544,20 @@
           "solution": "\\(P(X=2) = \\dfrac{1}{8} + \\dfrac{1}{8} = \\dfrac{1}{4}\\)",
           "steps": [
             {
-              "explain": "A 2 can come from the first bag, which has one 2 among its 4 marbles. The bag is chosen with probability 1/2.",
-              "work": "P(\\text{bag 1 and a 2}) = \\dfrac{1}{2} \\times \\dfrac{1}{4} = \\dfrac{1}{8}"
+              "explain": "A 2 can come from the first bag, which has one 2 among its 4 marbles. The bag is chosen with probability \\(\\dfrac{1}{2}\\).",
+              "work": "\\(P(\\text{bag 1 and a 2}) = \\dfrac{1}{2} \\times \\dfrac{1}{4} = \\dfrac{1}{8}\\)"
             },
             {
               "explain": "A 2 can also come from the second bag, which also has one 2 among its 4 marbles.",
-              "work": "P(\\text{bag 2 and a 2}) = \\dfrac{1}{2} \\times \\dfrac{1}{4} = \\dfrac{1}{8}"
+              "work": "\\(P(\\text{bag 2 and a 2}) = \\dfrac{1}{2} \\times \\dfrac{1}{4} = \\dfrac{1}{8}\\)"
             },
             {
               "explain": "The two ways are separate cases, so add the probabilities.",
-              "work": "P(X=2) = \\dfrac{1}{8} + \\dfrac{1}{8} = \\dfrac{1}{4}"
+              "work": "\\(P(X=2) = \\dfrac{1}{8} + \\dfrac{1}{8} = \\dfrac{1}{4}\\)"
             },
             {
               "explain": "This equals the answer you get by pooling all 8 marbles (2 out of 8), because the two bags have the same number of marbles.",
-              "work": "\\dfrac{2}{8} = \\dfrac{1}{4}"
+              "work": "\\(\\dfrac{2}{8} = \\dfrac{1}{4}\\)"
             }
           ],
           "meta": {
@@ -583,15 +583,15 @@
           "steps": [
             {
               "explain": "Name the 10c coin T and the two 5c coins F1 and F2. The seven non-empty scoops are listed below.",
-              "work": "\\{T\\},\\ \\{F_1\\},\\ \\{F_2\\},\\ \\{T,F_1\\},\\ \\{T,F_2\\},\\ \\{F_1,F_2\\},\\ \\{T,F_1,F_2\\}"
+              "work": "\\(\\{T\\},\\ \\{F_1\\},\\ \\{F_2\\},\\ \\{T,F_1\\},\\ \\{T,F_2\\},\\ \\{F_1,F_2\\},\\ \\{T,F_1,F_2\\}\\)"
             },
             {
               "explain": "Work out the value of each scoop: 10, 5, 5, 15, 15, 10 and 20 cents.",
-              "work": "10,\\ 5,\\ 5,\\ 15,\\ 15,\\ 10,\\ 20"
+              "work": "\\(10,\\ 5,\\ 5,\\ 15,\\ 15,\\ 10,\\ 20\\)"
             },
             {
               "explain": "Two scoops are worth 10c: {T} and {F1, F2}. Each of the seven scoops is equally likely.",
-              "work": "P(X=10) = \\dfrac{2}{7}"
+              "work": "\\(P(X=10) = \\dfrac{2}{7}\\)"
             }
           ],
           "meta": {
@@ -616,16 +616,16 @@
           "solution": "\\(0.1,\\ 0.6,\\ 0.2,\\ 0.1\\) (every value is between 0 and 1, and they sum to 1).",
           "steps": [
             {
-              "explain": "Test the list 0.5, 0.3, −0.2, 0.4. It adds to 1, but one probability is negative, so it fails.",
-              "work": "0.5 + 0.3 - 0.2 + 0.4 = 1,\\ \\text{but } -0.2 < 0"
+              "explain": "Test the list 0.5, 0.3, \\(-0.2\\), 0.4. It adds to 1, but one probability is negative, so it fails.",
+              "work": "\\(0.5 + 0.3 - 0.2 + 0.4 = 1,\\ \\text{but } -0.2 < 0\\)"
             },
             {
               "explain": "Test the lists 0.7, 0.2, 0.4, 0.2 and 0.4, 0.3, 0.2, 0.2. Their sums are 1.5 and 1.1, which are not 1.",
-              "work": "0.7 + 0.2 + 0.4 + 0.2 = 1.5,\\quad 0.4 + 0.3 + 0.2 + 0.2 = 1.1"
+              "work": "\\(0.7 + 0.2 + 0.4 + 0.2 = 1.5,\\quad 0.4 + 0.3 + 0.2 + 0.2 = 1.1\\)"
             },
             {
               "explain": "The list 0.1, 0.6, 0.2, 0.1 has all probabilities between 0 and 1, and it adds to 1.",
-              "work": "0.1 + 0.6 + 0.2 + 0.1 = 1"
+              "work": "\\(0.1 + 0.6 + 0.2 + 0.1 = 1\\)"
             }
           ],
           "meta": {
@@ -651,15 +651,15 @@
           "steps": [
             {
               "explain": "Write each list over the common denominator 12. A probability distribution must have every value between 0 and 1 and a total of exactly 1.",
-              "work": "\\dfrac{1}{6} = \\dfrac{2}{12},\\ \\dfrac{1}{3} = \\dfrac{4}{12},\\ \\dfrac{1}{4} = \\dfrac{3}{12}"
+              "work": "\\(\\dfrac{1}{6} = \\dfrac{2}{12},\\ \\dfrac{1}{3} = \\dfrac{4}{12},\\ \\dfrac{1}{4} = \\dfrac{3}{12}\\)"
             },
             {
-              "explain": "The first list gives 2 + 4 + 3 + 3 = 12 twelfths, which is exactly 1.",
-              "work": "\\dfrac{2 + 4 + 3 + 3}{12} = 1"
+              "explain": "The first list gives \\(2 + 4 + 3 + 3 = 12\\) twelfths, which is exactly 1.",
+              "work": "\\(\\dfrac{2 + 4 + 3 + 3}{12} = 1\\)"
             },
             {
-              "explain": "The other lists total 11/12, 15/12 and 16/12, none of which is 1.",
-              "work": "\\dfrac{11}{12},\\ \\dfrac{15}{12},\\ \\dfrac{16}{12}"
+              "explain": "The other lists total \\(\\dfrac{11}{12}\\), \\(\\dfrac{15}{12}\\) and \\(\\dfrac{16}{12}\\), none of which is 1.",
+              "work": "\\(\\dfrac{11}{12},\\ \\dfrac{15}{12},\\ \\dfrac{16}{12}\\)"
             }
           ],
           "meta": {
@@ -685,15 +685,15 @@
           "steps": [
             {
               "explain": "The same two rules apply when probabilities are written as percentages: each is between 0% and 100%, and the total is 100%.",
-              "work": "\\sum P(X=x) = 100\\%"
+              "work": "\\(\\sum P(X=x) = 100\\%\\)"
             },
             {
               "explain": "Add up each list. The totals are 100%, 110%, 90% and 110%.",
-              "work": "30 + 20 + 40 + 10 = 100"
+              "work": "\\(30 + 20 + 40 + 10 = 100\\)"
             },
             {
               "explain": "Only the first list totals 100%.",
-              "work": "30\\%,\\ 20\\%,\\ 40\\%,\\ 10\\%"
+              "work": "\\(30\\%,\\ 20\\%,\\ 40\\%,\\ 10\\%\\)"
             }
           ],
           "meta": {
@@ -714,20 +714,20 @@
             "\\(0.6\\)"
           ],
           "answer": 3,
-          "hint": "The symbol \\(\\le\\) includes both end values. So \\(2 \\le X \\le 4\\) means X = 2, 3 or 4.",
+          "hint": "The symbol \\(\\le\\) includes both end values. So \\(2 \\le X \\le 4\\) means \\(X\\) = 2, 3 or 4.",
           "solution": "\\(P(2 \\le X \\le 4) = 0.3 + 0.25 + 0.05 = 0.6\\)",
           "steps": [
             {
               "explain": "Both inequalities are \"less than or equal to\", so both end values 2 and 4 are included.",
-              "work": "2 \\le X \\le 4 \\Rightarrow X = 2,\\ 3,\\ 4"
+              "work": "\\(2 \\le X \\le 4 \\Rightarrow X = 2,\\ 3,\\ 4\\)"
             },
             {
               "explain": "Add the three probabilities from the table.",
-              "work": "P(2) + P(3) + P(4) = 0.3 + 0.25 + 0.05"
+              "work": "\\(P(2) + P(3) + P(4) = 0.3 + 0.25 + 0.05\\)"
             },
             {
               "explain": "Add.",
-              "work": "P(2 \\le X \\le 4) = 0.6"
+              "work": "\\(P(2 \\le X \\le 4) = 0.6\\)"
             }
           ],
           "meta": {
@@ -748,20 +748,20 @@
             "\\(0.5\\)"
           ],
           "answer": 0,
-          "hint": "\\(1 \\le X\\) includes 1, but \\(X < 4\\) does not include 4. So X = 1, 2 or 3.",
+          "hint": "\\(1 \\le X\\) includes 1, but \\(X < 4\\) does not include 4. So \\(X\\) = 1, 2 or 3.",
           "solution": "\\(P(1 \\le X < 4) = 0.2 + 0.3 + 0.25 = 0.75\\)",
           "steps": [
             {
               "explain": "The left end uses \"less than or equal to\", so 1 is included. The right end uses \"less than\", so 4 is not included.",
-              "work": "1 \\le X < 4 \\Rightarrow X = 1,\\ 2,\\ 3"
+              "work": "\\(1 \\le X < 4 \\Rightarrow X = 1,\\ 2,\\ 3\\)"
             },
             {
               "explain": "Add the probabilities of 1, 2 and 3.",
-              "work": "P(1) + P(2) + P(3) = 0.2 + 0.3 + 0.25"
+              "work": "\\(P(1) + P(2) + P(3) = 0.2 + 0.3 + 0.25\\)"
             },
             {
               "explain": "Add.",
-              "work": "P(1 \\le X < 4) = 0.75"
+              "work": "\\(P(1 \\le X < 4) = 0.75\\)"
             }
           ],
           "meta": {
@@ -783,15 +783,15 @@
           ],
           "answer": 2,
           "hint": "Look at the values in the top row of the table. Is 6 one of them?",
-          "solution": "\\(P(X=6) = 0\\), because X cannot take the value 6.",
+          "solution": "\\(P(X=6) = 0\\), because \\(X\\) cannot take the value 6.",
           "steps": [
             {
-              "explain": "The table lists every value that X can take: 0, 1, 2, 3, 4 and 5. The value 6 is not in the list.",
-              "work": "X \\in \\{0, 1, 2, 3, 4, 5\\}"
+              "explain": "The table lists every value that \\(X\\) can take: 0, 1, 2, 3, 4 and 5. The value 6 is not in the list.",
+              "work": "\\(X \\in \\{0, 1, 2, 3, 4, 5\\}\\)"
             },
             {
-              "explain": "A value that X cannot take has probability zero.",
-              "work": "P(X=6) = 0"
+              "explain": "A value that \\(X\\) cannot take has probability zero.",
+              "work": "\\(P(X=6) = 0\\)"
             }
           ],
           "meta": {
@@ -817,15 +817,15 @@
           "steps": [
             {
               "explain": "\"Greater than 1\" does not include the value 1, so we add the probabilities of 2, 3, 4 and 5.",
-              "work": "P(X>1) = P(2) + P(3) + P(4) + P(5)"
+              "work": "\\(P(X>1) = P(2) + P(3) + P(4) + P(5)\\)"
             },
             {
               "explain": "Add the four probabilities.",
-              "work": "0.3 + 0.25 + 0.05 + 0.1 = 0.7"
+              "work": "\\(0.3 + 0.25 + 0.05 + 0.1 = 0.7\\)"
             },
             {
-              "explain": "Check with the complement: P(X > 1) = 1 − P(X ≤ 1) = 1 − (0.1 + 0.2).",
-              "work": "1 - 0.3 = 0.7"
+              "explain": "Check with the complement: \\(P(X > 1) = 1 - P(X \\le 1) = 1 - (0.1 + 0.2)\\).",
+              "work": "\\(1 - 0.3 = 0.7\\)"
             }
           ],
           "meta": {
@@ -850,16 +850,16 @@
           "solution": "\\(P(X=1) = 2 \\times \\dfrac{3}{13} \\times \\dfrac{10}{13} = \\dfrac{60}{169}\\)",
           "steps": [
             {
-              "explain": "The card is replaced, so each draw is the same. A court card has probability 12/52 = 3/13, and not a court card has probability 10/13.",
-              "work": "P(C) = \\dfrac{3}{13},\\quad P(\\overline{C}) = \\dfrac{10}{13}"
+              "explain": "The card is replaced, so each draw is the same. A court card has probability \\(\\dfrac{12}{52} = \\dfrac{3}{13}\\), and not a court card has probability \\(\\dfrac{10}{13}\\).",
+              "work": "\\(P(C) = \\dfrac{3}{13},\\quad P(\\overline{C}) = \\dfrac{10}{13}\\)"
             },
             {
               "explain": "Exactly one court card can happen in two orders: court then not court, or not court then court. Each has the same probability.",
-              "work": "P(C\\overline{C}) = P(\\overline{C}C) = \\dfrac{3}{13} \\times \\dfrac{10}{13} = \\dfrac{30}{169}"
+              "work": "\\(P(C\\overline{C}) = P(\\overline{C}C) = \\dfrac{3}{13} \\times \\dfrac{10}{13} = \\dfrac{30}{169}\\)"
             },
             {
               "explain": "The two orders are separate cases, so add them.",
-              "work": "P(X=1) = \\dfrac{30}{169} + \\dfrac{30}{169} = \\dfrac{60}{169}"
+              "work": "\\(P(X=1) = \\dfrac{30}{169} + \\dfrac{30}{169} = \\dfrac{60}{169}\\)"
             }
           ],
           "meta": {
@@ -884,16 +884,16 @@
           "solution": "\\(P(X=2) = 3 \\times \\dfrac{1}{8} = \\dfrac{3}{8}\\)",
           "steps": [
             {
-              "explain": "Each die shows an even number with probability 1/2 and an odd number with probability 1/2. The three dice are identical stages, so each of the 8 outcomes EEE, EEO, …, OOO has probability 1/8.",
-              "work": "\\left(\\dfrac{1}{2}\\right)^3 = \\dfrac{1}{8}"
+              "explain": "Each die shows an even number with probability \\(\\dfrac{1}{2}\\) and an odd number with probability \\(\\dfrac{1}{2}\\). The three dice are identical stages, so each of the 8 outcomes EEE, EEO, …, OOO has probability \\(\\dfrac{1}{8}\\).",
+              "work": "\\(\\left(\\dfrac{1}{2}\\right)^3 = \\dfrac{1}{8}\\)"
             },
             {
               "explain": "Exactly two evens happens in three ways: EEO, EOE and OEE.",
-              "work": "\\text{EEO, EOE, OEE}"
+              "work": "\\(\\text{EEO, EOE, OEE}\\)"
             },
             {
-              "explain": "Add the three outcomes, each of probability 1/8.",
-              "work": "P(X=2) = 3 \\times \\dfrac{1}{8} = \\dfrac{3}{8}"
+              "explain": "Add the three outcomes, each of probability \\(\\dfrac{1}{8}\\).",
+              "work": "\\(P(X=2) = 3 \\times \\dfrac{1}{8} = \\dfrac{3}{8}\\)"
             }
           ],
           "meta": {
@@ -918,16 +918,16 @@
           "solution": "\\(P(X=2) = 3 \\times \\left(\\dfrac{2}{5}\\right)^2 \\times \\dfrac{3}{5} = \\dfrac{36}{125}\\)",
           "steps": [
             {
-              "explain": "The same student can be called again, so each call is identical. The probability of a girl is 10/25 = 2/5, and of a boy is 3/5.",
-              "work": "P(G) = \\dfrac{2}{5},\\quad P(B) = \\dfrac{3}{5}"
+              "explain": "The same student can be called again, so each call is identical. The probability of a girl is \\(\\dfrac{10}{25} = \\dfrac{2}{5}\\), and of a boy is \\(\\dfrac{3}{5}\\).",
+              "work": "\\(P(G) = \\dfrac{2}{5},\\quad P(B) = \\dfrac{3}{5}\\)"
             },
             {
-              "explain": "Exactly two girls can happen in three orders: GGB, GBG and BGG. Each has probability (2/5)² × (3/5).",
-              "work": "P(GGB) = \\dfrac{4}{25} \\times \\dfrac{3}{5} = \\dfrac{12}{125}"
+              "explain": "Exactly two girls can happen in three orders: GGB, GBG and BGG. Each has probability \\(\\left(\\dfrac{2}{5}\\right)^2 \\times \\dfrac{3}{5}\\).",
+              "work": "\\(P(GGB) = \\dfrac{4}{25} \\times \\dfrac{3}{5} = \\dfrac{12}{125}\\)"
             },
             {
-              "explain": "Add the three orders. (Note: 54/125 is the probability of exactly two boys, which is a different event.)",
-              "work": "P(X=2) = 3 \\times \\dfrac{12}{125} = \\dfrac{36}{125}"
+              "explain": "Add the three orders. (Note: \\(\\dfrac{54}{125}\\) is the probability of exactly two boys, which is a different event.)",
+              "work": "\\(P(X=2) = 3 \\times \\dfrac{12}{125} = \\dfrac{36}{125}\\)"
             }
           ],
           "meta": {
@@ -952,16 +952,16 @@
           "solution": "\\(P(X=2) = 3 \\times 0.3^2 \\times 0.7 = 0.189\\)",
           "steps": [
             {
-              "explain": "The wallaby is returned each day, so each day is identical. The probability of a Snake Gully wallaby is 6/20 = 0.3, so the probability of another wallaby is 0.7.",
-              "work": "P(S) = 0.3,\\quad P(\\overline{S}) = 0.7"
+              "explain": "The wallaby is returned each day, so each day is identical. The probability of a Snake Gully wallaby is \\(\\dfrac{6}{20} = 0.3\\), so the probability of another wallaby is 0.7.",
+              "work": "\\(P(S) = 0.3,\\quad P(\\overline{S}) = 0.7\\)"
             },
             {
-              "explain": "Exactly two Snake Gully wallabies happen in three orders: SS̅S̅ type outcomes with two S and one not S. Each order has the same probability.",
-              "work": "P(SS\\overline{S}) = 0.3 \\times 0.3 \\times 0.7 = 0.063"
+              "explain": "Exactly two Snake Gully wallabies happen in three orders: SSN, SNS and NSS, where N means not Snake Gully. Each order has the same probability.",
+              "work": "\\(P(SS\\overline{S}) = 0.3 \\times 0.3 \\times 0.7 = 0.063\\)"
             },
             {
               "explain": "Add the three orders.",
-              "work": "P(X=2) = 3 \\times 0.063 = 0.189"
+              "work": "\\(P(X=2) = 3 \\times 0.063 = 0.189\\)"
             }
           ],
           "meta": {
@@ -987,15 +987,15 @@
           "steps": [
             {
               "explain": "The probabilities of a probability distribution add up to 1.",
-              "work": "a + 3a + 5a + 7a + 11a = 1"
+              "work": "\\(a + 3a + 5a + 7a + 11a = 1\\)"
             },
             {
               "explain": "Collect the like terms. The coefficients add to 27.",
-              "work": "27a = 1"
+              "work": "\\(27a = 1\\)"
             },
             {
-              "explain": "Solve for a, then check each probability is between 0 and 1 (the largest is 11/27, which is fine).",
-              "work": "a = \\dfrac{1}{27}"
+              "explain": "Solve for \\(a\\), then check each probability is between 0 and 1 (the largest is \\(\\dfrac{11}{27}\\), which is fine).",
+              "work": "\\(a = \\dfrac{1}{27}\\)"
             }
           ],
           "meta": {
@@ -1021,19 +1021,19 @@
           "steps": [
             {
               "explain": "The probabilities must add to 1.",
-              "work": "(1-3a) + a + (1-9a) + (1-10a) + a = 1"
+              "work": "\\((1-3a) + a + (1-9a) + (1-10a) + a = 1\\)"
             },
             {
-              "explain": "Collect the constants (1 + 1 + 1 = 3) and the terms in a (−3a + a − 9a − 10a + a = −20a).",
-              "work": "3 - 20a = 1"
+              "explain": "Collect the constants (\\(1 + 1 + 1 = 3\\)) and the terms in \\(a\\) (\\(-3a + a - 9a - 10a + a = -20a\\)).",
+              "work": "\\(3 - 20a = 1\\)"
             },
             {
               "explain": "Solve for a.",
-              "work": "20a = 2 \\Rightarrow a = \\dfrac{1}{10}"
+              "work": "\\(20a = 2 \\Rightarrow a = \\dfrac{1}{10}\\)"
             },
             {
               "explain": "Check that every probability is between 0 and 1: they are 0.7, 0.1, 0.1, 0 and 0.1.",
-              "work": "0 \\le P(X=x) \\le 1 \\ \\checkmark"
+              "work": "\\(0 \\le P(X=x) \\le 1 \\ \\checkmark\\)"
             }
           ],
           "meta": {
@@ -1059,15 +1059,15 @@
           "steps": [
             {
               "explain": "The probabilities must add to 1.",
-              "work": "0.2a + 0.1a + 0.5a + 0.1a + 0.1a = 1"
+              "work": "\\(0.2a + 0.1a + 0.5a + 0.1a + 0.1a = 1\\)"
             },
             {
-              "explain": "Add the coefficients: 0.2 + 0.1 + 0.5 + 0.1 + 0.1 = 1.",
-              "work": "1.0a = 1"
+              "explain": "Add the coefficients: \\(0.2 + 0.1 + 0.5 + 0.1 + 0.1 = 1\\).",
+              "work": "\\(1.0a = 1\\)"
             },
             {
-              "explain": "So a = 1. In this case the table already gives the probabilities 0.2, 0.1, 0.5, 0.1 and 0.1, which are all between 0 and 1.",
-              "work": "a = 1"
+              "explain": "So \\(a = 1\\). In this case the table already gives the probabilities 0.2, 0.1, 0.5, 0.1 and 0.1, which are all between 0 and 1.",
+              "work": "\\(a = 1\\)"
             }
           ],
           "meta": {
@@ -1093,15 +1093,15 @@
           "steps": [
             {
               "explain": "The bag has 3 even marbles (2, 4, 6) and 3 odd marbles (1, 3, 5). The first marble is not replaced, so the second draw is from 5 marbles.",
-              "work": "P(E \\text{ first}) = \\dfrac{3}{6}"
+              "work": "\\(P(E \\text{ first}) = \\dfrac{3}{6}\\)"
             },
             {
               "explain": "Even then odd: after an even marble, 3 odd marbles remain out of 5.",
-              "work": "P(EO) = \\dfrac{3}{6} \\times \\dfrac{3}{5} = \\dfrac{3}{10}"
+              "work": "\\(P(EO) = \\dfrac{3}{6} \\times \\dfrac{3}{5} = \\dfrac{3}{10}\\)"
             },
             {
               "explain": "Odd then even happens in the same way, with the same probability. Add the two orders.",
-              "work": "P(X=1) = \\dfrac{3}{10} + \\dfrac{3}{10} = \\dfrac{3}{5}"
+              "work": "\\(P(X=1) = \\dfrac{3}{10} + \\dfrac{3}{10} = \\dfrac{3}{5}\\)"
             }
           ],
           "meta": {
@@ -1126,16 +1126,16 @@
           "solution": "\\(P(X=1) = \\dfrac{4}{15} + \\dfrac{4}{15} = \\dfrac{8}{15}\\)",
           "steps": [
             {
-              "explain": "No student can be chosen twice, so after the first student there are 5 left. A boy then a girl: 4/6 for the boy, then 2/5 for a girl.",
-              "work": "P(BG) = \\dfrac{4}{6} \\times \\dfrac{2}{5} = \\dfrac{4}{15}"
+              "explain": "No student can be chosen twice, so after the first student there are 5 left. A boy then a girl: \\(\\dfrac{4}{6}\\) for the boy, then \\(\\dfrac{2}{5}\\) for a girl.",
+              "work": "\\(P(BG) = \\dfrac{4}{6} \\times \\dfrac{2}{5} = \\dfrac{4}{15}\\)"
             },
             {
-              "explain": "A girl then a boy: 2/6 for the girl, then 4/5 for a boy. This has the same probability.",
-              "work": "P(GB) = \\dfrac{2}{6} \\times \\dfrac{4}{5} = \\dfrac{4}{15}"
+              "explain": "A girl then a boy: \\(\\dfrac{2}{6}\\) for the girl, then \\(\\dfrac{4}{5}\\) for a boy. This has the same probability.",
+              "work": "\\(P(GB) = \\dfrac{2}{6} \\times \\dfrac{4}{5} = \\dfrac{4}{15}\\)"
             },
             {
               "explain": "Add the two orders.",
-              "work": "P(X=1) = \\dfrac{4}{15} + \\dfrac{4}{15} = \\dfrac{8}{15}"
+              "work": "\\(P(X=1) = \\dfrac{4}{15} + \\dfrac{4}{15} = \\dfrac{8}{15}\\)"
             }
           ],
           "meta": {
@@ -1161,15 +1161,15 @@
           "steps": [
             {
               "explain": "For both tiles to be Es, the first tile must be an E: 3 of the 5 tiles.",
-              "work": "P(E \\text{ first}) = \\dfrac{3}{5}"
+              "work": "\\(P(E \\text{ first}) = \\dfrac{3}{5}\\)"
             },
             {
               "explain": "The first tile is not replaced, so 2 Es remain among the 4 tiles left.",
-              "work": "P(E \\text{ second} \\mid E \\text{ first}) = \\dfrac{2}{4}"
+              "work": "\\(P(E \\text{ second} \\mid E \\text{ first}) = \\dfrac{2}{4}\\)"
             },
             {
               "explain": "Multiply along the branch.",
-              "work": "P(X=2) = \\dfrac{3}{5} \\times \\dfrac{2}{4} = \\dfrac{6}{20} = \\dfrac{3}{10}"
+              "work": "\\(P(X=2) = \\dfrac{3}{5} \\times \\dfrac{2}{4} = \\dfrac{6}{20} = \\dfrac{3}{10}\\)"
             }
           ],
           "meta": {
@@ -1195,15 +1195,15 @@
           "steps": [
             {
               "explain": "For the game to end on the 4th roll, the first three rolls must not be sixes, and the 4th must be a six.",
-              "work": "\\text{not 6, not 6, not 6, then 6}"
+              "work": "\\(\\text{not 6, not 6, not 6, then 6}\\)"
             },
             {
               "explain": "Each roll is independent. Multiply the probabilities of the four rolls.",
-              "work": "P(X=4) = \\dfrac{5}{6} \\times \\dfrac{5}{6} \\times \\dfrac{5}{6} \\times \\dfrac{1}{6}"
+              "work": "\\(P(X=4) = \\dfrac{5}{6} \\times \\dfrac{5}{6} \\times \\dfrac{5}{6} \\times \\dfrac{1}{6}\\)"
             },
             {
               "explain": "Simplify.",
-              "work": "P(X=4) = \\dfrac{125}{1296}"
+              "work": "\\(P(X=4) = \\dfrac{125}{1296}\\)"
             }
           ],
           "meta": {
@@ -1228,20 +1228,20 @@
           "solution": "\\(P(X \\le x) = 1 - \\left(\\dfrac{5}{6}\\right)^x\\)",
           "steps": [
             {
-              "explain": "The terms 1/6, (1/6)(5/6), (1/6)(5/6)² and so on form a geometric series with first term 1/6 and common ratio 5/6.",
-              "work": "a = \\dfrac{1}{6},\\quad r = \\dfrac{5}{6}"
+              "explain": "The terms \\(\\dfrac{1}{6}\\), \\(\\dfrac{1}{6} \\cdot \\dfrac{5}{6}\\), \\(\\dfrac{1}{6}\\left(\\dfrac{5}{6}\\right)^2\\) and so on form a geometric series with first term \\(\\dfrac{1}{6}\\) and common ratio \\(\\dfrac{5}{6}\\).",
+              "work": "\\(a = \\dfrac{1}{6},\\quad r = \\dfrac{5}{6}\\)"
             },
             {
-              "explain": "The sum of the first x terms is S = a(1 − rˣ)/(1 − r).",
-              "work": "S_x = \\dfrac{\\frac{1}{6}\\left(1 - (5/6)^x\\right)}{1 - \\frac{5}{6}}"
+              "explain": "The sum of the first \\(x\\) terms is \\(S_x = \\dfrac{a(1 - r^x)}{1 - r}\\).",
+              "work": "\\(S_x = \\dfrac{\\frac{1}{6}\\left(1 - (5/6)^x\\right)}{1 - \\frac{5}{6}}\\)"
             },
             {
-              "explain": "The denominator is 1/6, which cancels the first term 1/6.",
-              "work": "S_x = 1 - \\left(\\dfrac{5}{6}\\right)^x"
+              "explain": "The denominator is \\(\\dfrac{1}{6}\\), which cancels the first term \\(\\dfrac{1}{6}\\).",
+              "work": "\\(S_x = 1 - \\left(\\dfrac{5}{6}\\right)^x\\)"
             },
             {
-              "explain": "Check with the complement: P(X > x) means the first x rolls are all not sixes, which has probability (5/6)ˣ.",
-              "work": "P(X \\le x) = 1 - \\left(\\dfrac{5}{6}\\right)^x"
+              "explain": "Check with the complement: \\(P(X > x)\\) means the first \\(x\\) rolls are all not sixes, which has probability \\(\\left(\\dfrac{5}{6}\\right)^x\\).",
+              "work": "\\(P(X \\le x) = 1 - \\left(\\dfrac{5}{6}\\right)^x\\)"
             }
           ],
           "meta": {
@@ -1267,15 +1267,15 @@
           "steps": [
             {
               "explain": "Write the condition and rearrange it.",
-              "work": "1 - \\left(\\dfrac{5}{6}\\right)^x > 0.9 \\Rightarrow \\left(\\dfrac{5}{6}\\right)^x < 0.1"
+              "work": "\\(1 - \\left(\\dfrac{5}{6}\\right)^x > 0.9 \\Rightarrow \\left(\\dfrac{5}{6}\\right)^x < 0.1\\)"
             },
             {
-              "explain": "Take logarithms of both sides. Since ln(5/6) is negative, dividing by it reverses the inequality.",
-              "work": "x \\ln\\dfrac{5}{6} < \\ln 0.1 \\Rightarrow x > \\dfrac{\\ln 0.1}{\\ln(5/6)} \\approx 12.6"
+              "explain": "Take logarithms of both sides. Since \\(\\ln\\dfrac{5}{6}\\) is negative, dividing by it reverses the inequality.",
+              "work": "\\(x \\ln\\dfrac{5}{6} < \\ln 0.1 \\Rightarrow x > \\dfrac{\\ln 0.1}{\\ln(5/6)} \\approx 12.6\\)"
             },
             {
-              "explain": "The smallest whole number greater than 12.6 is 13. Check: P(X ≤ 12) ≈ 0.89 (too small) and P(X ≤ 13) ≈ 0.91.",
-              "work": "x = 13"
+              "explain": "The smallest whole number greater than 12.6 is 13. Check: \\(P(X \\le 12) \\approx 0.89\\) (too small) and \\(P(X \\le 13) \\approx 0.91\\).",
+              "work": "\\(x = 13\\)"
             }
           ],
           "meta": {
@@ -1301,15 +1301,15 @@
           "steps": [
             {
               "explain": "The game needs more than 10 rolls exactly when none of the first 10 rolls is a six.",
-              "work": "P(X>10) = \\left(\\dfrac{5}{6}\\right)^{10}"
+              "work": "\\(P(X>10) = \\left(\\dfrac{5}{6}\\right)^{10}\\)"
             },
             {
-              "explain": "Check with the complement, using the cumulative formula P(X ≤ 10) = 1 − (5/6)¹⁰ ≈ 0.84.",
-              "work": "P(X>10) = 1 - P(X \\le 10) = 1 - 0.8385"
+              "explain": "Check with the complement, using the cumulative formula \\(P(X \\le 10) = 1 - \\left(\\dfrac{5}{6}\\right)^{10} \\approx 0.84\\).",
+              "work": "\\(P(X>10) = 1 - P(X \\le 10) = 1 - 0.8385\\)"
             },
             {
               "explain": "Evaluate and round to two decimal places.",
-              "work": "P(X>10) \\approx 0.1615 \\approx 0.16"
+              "work": "\\(P(X>10) \\approx 0.1615 \\approx 0.16\\)"
             }
           ],
           "meta": {
@@ -1334,16 +1334,16 @@
           "solution": "\\(P(\\text{a 2 and a 4}) = 2 \\times \\dfrac{2}{6} \\times \\dfrac{3}{6} = \\dfrac{1}{3}\\)",
           "steps": [
             {
-              "explain": "The card is replaced, so each draw is identical: P(2) = 2/6 = 1/3 and P(4) = 3/6 = 1/2.",
-              "work": "P(2) = \\dfrac{2}{6},\\quad P(4) = \\dfrac{3}{6}"
+              "explain": "The card is replaced, so each draw is identical: \\(P(2) = \\dfrac{2}{6} = \\dfrac{1}{3}\\) and \\(P(4) = \\dfrac{3}{6} = \\dfrac{1}{2}\\).",
+              "work": "\\(P(2) = \\dfrac{2}{6},\\quad P(4) = \\dfrac{3}{6}\\)"
             },
             {
-              "explain": "The order 2 then 4 has probability (2/6)(3/6) = 1/6. The order 4 then 2 has the same probability.",
-              "work": "P(2 \\text{ then } 4) = \\dfrac{2}{6} \\times \\dfrac{3}{6} = \\dfrac{1}{6}"
+              "explain": "The order 2 then 4 has probability \\(\\dfrac{2}{6} \\times \\dfrac{3}{6} = \\dfrac{1}{6}\\). The order 4 then 2 has the same probability.",
+              "work": "\\(P(2 \\text{ then } 4) = \\dfrac{2}{6} \\times \\dfrac{3}{6} = \\dfrac{1}{6}\\)"
             },
             {
               "explain": "\"Either order\" means add the two orders.",
-              "work": "P = \\dfrac{1}{6} + \\dfrac{1}{6} = \\dfrac{1}{3}"
+              "work": "\\(P = \\dfrac{1}{6} + \\dfrac{1}{6} = \\dfrac{1}{3}\\)"
             }
           ],
           "meta": {
@@ -1369,11 +1369,11 @@
           "steps": [
             {
               "explain": "The ball is returned, so the second draw is from the full bag of 7 balls.",
-              "work": "P(R \\text{ first}) = \\dfrac{4}{7},\\quad P(G \\text{ second}) = \\dfrac{3}{7}"
+              "work": "\\(P(R \\text{ first}) = \\dfrac{4}{7},\\quad P(G \\text{ second}) = \\dfrac{3}{7}\\)"
             },
             {
               "explain": "Multiply the probabilities along the branch R then G.",
-              "work": "P(RG) = \\dfrac{4}{7} \\times \\dfrac{3}{7} = \\dfrac{12}{49}"
+              "work": "\\(P(RG) = \\dfrac{4}{7} \\times \\dfrac{3}{7} = \\dfrac{12}{49}\\)"
             }
           ],
           "meta": {
@@ -1398,16 +1398,16 @@
           "solution": "\\(P(RR) = \\dfrac{4}{7} \\times \\dfrac{3}{6} = \\dfrac{2}{7}\\)",
           "steps": [
             {
-              "explain": "The first ball is red with probability 4/7.",
-              "work": "P(R \\text{ first}) = \\dfrac{4}{7}"
+              "explain": "The first ball is red with probability \\(\\dfrac{4}{7}\\).",
+              "work": "\\(P(R \\text{ first}) = \\dfrac{4}{7}\\)"
             },
             {
               "explain": "The first ball is not replaced. If it was red, there are now 3 red balls among 6 balls.",
-              "work": "P(R \\text{ second} \\mid R \\text{ first}) = \\dfrac{3}{6}"
+              "work": "\\(P(R \\text{ second} \\mid R \\text{ first}) = \\dfrac{3}{6}\\)"
             },
             {
-              "explain": "Multiply along the branch and simplify (12/42 = 2/7).",
-              "work": "P(RR) = \\dfrac{4}{7} \\times \\dfrac{3}{6} = \\dfrac{12}{42} = \\dfrac{2}{7}"
+              "explain": "Multiply along the branch and simplify (\\(\\dfrac{12}{42} = \\dfrac{2}{7}\\)).",
+              "work": "\\(P(RR) = \\dfrac{4}{7} \\times \\dfrac{3}{6} = \\dfrac{12}{42} = \\dfrac{2}{7}\\)"
             }
           ],
           "meta": {
@@ -1432,16 +1432,16 @@
           "solution": "\\(P(HH) = \\dfrac{13}{52} \\times \\dfrac{12}{51} = \\dfrac{1}{17}\\)",
           "steps": [
             {
-              "explain": "The first card is a heart with probability 13/52.",
-              "work": "P(H \\text{ first}) = \\dfrac{13}{52}"
+              "explain": "The first card is a heart with probability \\(\\dfrac{13}{52}\\).",
+              "work": "\\(P(H \\text{ first}) = \\dfrac{13}{52}\\)"
             },
             {
               "explain": "No card is replaced, so 12 hearts remain among 51 cards.",
-              "work": "P(H \\text{ second} \\mid H \\text{ first}) = \\dfrac{12}{51}"
+              "work": "\\(P(H \\text{ second} \\mid H \\text{ first}) = \\dfrac{12}{51}\\)"
             },
             {
-              "explain": "Multiply and simplify. The common factor 13 × 12 / (52 × 51) reduces to 1/17.",
-              "work": "P(HH) = \\dfrac{13}{52} \\times \\dfrac{12}{51} = \\dfrac{156}{2652} = \\dfrac{1}{17}"
+              "explain": "Multiply and simplify. The fraction \\(\\dfrac{13 \\times 12}{52 \\times 51}\\) reduces to \\(\\dfrac{1}{17}\\).",
+              "work": "\\(P(HH) = \\dfrac{13}{52} \\times \\dfrac{12}{51} = \\dfrac{156}{2652} = \\dfrac{1}{17}\\)"
             }
           ],
           "meta": {
@@ -1467,15 +1467,15 @@
           "steps": [
             {
               "explain": "There are 3 even marbles and 3 odd marbles, and none is replaced. Take the order E, O, O. The probabilities change as marbles are removed.",
-              "work": "P(EOO) = \\dfrac{3}{6} \\times \\dfrac{3}{5} \\times \\dfrac{2}{4} = \\dfrac{18}{120} = \\dfrac{3}{20}"
+              "work": "\\(P(EOO) = \\dfrac{3}{6} \\times \\dfrac{3}{5} \\times \\dfrac{2}{4} = \\dfrac{18}{120} = \\dfrac{3}{20}\\)"
             },
             {
               "explain": "The orders O, E, O and O, O, E give the same product, only with the numerators in a different order.",
-              "work": "P(OEO) = \\dfrac{3}{6} \\times \\dfrac{3}{5} \\times \\dfrac{2}{4} = \\dfrac{3}{20}"
+              "work": "\\(P(OEO) = \\dfrac{3}{6} \\times \\dfrac{3}{5} \\times \\dfrac{2}{4} = \\dfrac{3}{20}\\)"
             },
             {
               "explain": "Exactly one even marble can occur in these three orders. Add the three equal probabilities.",
-              "work": "P(X=1) = 3 \\times \\dfrac{3}{20} = \\dfrac{9}{20}"
+              "work": "\\(P(X=1) = 3 \\times \\dfrac{3}{20} = \\dfrac{9}{20}\\)"
             }
           ],
           "meta": {
@@ -1501,19 +1501,19 @@
           "steps": [
             {
               "explain": "The probabilities add to 1.",
-              "work": "a(a+1) + 3a^2 + (1-3a) + (1-4a) + a = 1"
+              "work": "\\(a(a+1) + 3a^2 + (1-3a) + (1-4a) + a = 1\\)"
             },
             {
               "explain": "Expand and collect like terms.",
-              "work": "4a^2 - 5a + 2 = 1 \\Rightarrow 4a^2 - 5a + 1 = 0"
+              "work": "\\(4a^2 - 5a + 2 = 1 \\Rightarrow 4a^2 - 5a + 1 = 0\\)"
             },
             {
               "explain": "Factorise the quadratic and find both roots.",
-              "work": "(4a - 1)(a - 1) = 0 \\Rightarrow a = \\dfrac{1}{4} \\text{ or } a = 1"
+              "work": "\\((4a - 1)(a - 1) = 0 \\Rightarrow a = \\dfrac{1}{4} \\text{ or } a = 1\\)"
             },
             {
-              "explain": "Check each root. If a = 1, then 1 − 3a = −2, which is a negative probability. So a = 1 is rejected. For a = 1/4 the probabilities are 5/16, 3/16, 1/4, 0 and 1/4, which are all valid.",
-              "work": "a = \\dfrac{1}{4}"
+              "explain": "Check each root. If \\(a = 1\\), then \\(1 - 3a = -2\\), which is a negative probability. So \\(a = 1\\) is rejected. For \\(a = \\dfrac{1}{4}\\) the probabilities are \\(\\dfrac{5}{16}\\), \\(\\dfrac{3}{16}\\), \\(\\dfrac{1}{4}\\), 0 and \\(\\dfrac{1}{4}\\), which are all valid.",
+              "work": "\\(a = \\dfrac{1}{4}\\)"
             }
           ],
           "meta": {
@@ -1538,20 +1538,20 @@
           "solution": "\\(P(\\text{sum} = 21) = \\dfrac{2}{4} = \\dfrac{1}{2}\\)",
           "steps": [
             {
-              "explain": "Taking three cards from four is the same as leaving one card in the hand. Each of the four cards is equally likely to be left out, so each has probability 1/4.",
-              "work": "\\text{4 equally likely cases}"
+              "explain": "Taking three cards from four is the same as leaving one card in the hand. Each of the four cards is equally likely to be left out, so each has probability \\(\\dfrac{1}{4}\\).",
+              "work": "\\(\\text{4 equally likely cases}\\)"
             },
             {
-              "explain": "The total of all four cards is 7 + 7 + 6 + 8 = 28. The sum on the table is 28 minus the card left out.",
-              "work": "\\text{sum} = 28 - (\\text{card left out})"
+              "explain": "The total of all four cards is \\(7 + 7 + 6 + 8 = 28\\). The sum on the table is 28 minus the card left out.",
+              "work": "\\(\\text{sum} = 28 - (\\text{card left out})\\)"
             },
             {
               "explain": "Leaving out a 7 gives 21. This can happen in 2 of the 4 cases (the 7 of hearts or the 7 of diamonds).",
-              "work": "P(\\text{sum} = 21) = \\dfrac{2}{4} = \\dfrac{1}{2}"
+              "work": "\\(P(\\text{sum} = 21) = \\dfrac{2}{4} = \\dfrac{1}{2}\\)"
             },
             {
-              "explain": "The other sums are 22 (leave out the 6) and 20 (leave out the 8), each with probability 1/4. So the three sums are not equally likely.",
-              "work": "P(20) = \\dfrac{1}{4},\\ P(21) = \\dfrac{1}{2},\\ P(22) = \\dfrac{1}{4}"
+              "explain": "The other sums are 22 (leave out the 6) and 20 (leave out the 8), each with probability \\(\\dfrac{1}{4}\\). So the three sums are not equally likely.",
+              "work": "\\(P(20) = \\dfrac{1}{4},\\ P(21) = \\dfrac{1}{2},\\ P(22) = \\dfrac{1}{4}\\)"
             }
           ],
           "meta": {
@@ -1577,19 +1577,19 @@
           "steps": [
             {
               "explain": "Choosing 3 cards from 5 is the same as choosing the 2 cards left out, so there are 10 equally likely selections.",
-              "work": "\\binom{5}{3} = \\binom{5}{2} = 10"
+              "work": "\\(\\binom{5}{3} = \\binom{5}{2} = 10\\)"
             },
             {
-              "explain": "The five cards total 7 + 7 + 7 + 6 + 8 = 35, so the sum is 35 minus the two cards left out. A sum of 21 needs the two left-out cards to total 14.",
-              "work": "35 - 21 = 14"
+              "explain": "The five cards total \\(7 + 7 + 7 + 6 + 8 = 35\\), so the sum is 35 minus the two cards left out. A sum of 21 needs the two left-out cards to total 14.",
+              "work": "\\(35 - 21 = 14\\)"
             },
             {
               "explain": "A total of 14 happens when the left-out cards are two 7s (3 ways) or the 6 and the 8 (1 way). That is 4 of the 10 selections.",
-              "work": "7+7:\\ \\dbinom{3}{2} = 3 \\text{ ways};\\quad 6+8:\\ 1 \\text{ way}"
+              "work": "\\(7+7:\\ \\dbinom{3}{2} = 3 \\text{ ways};\\quad 6+8:\\ 1 \\text{ way}\\)"
             },
             {
               "explain": "Write the probability and simplify.",
-              "work": "P(\\text{sum} = 21) = \\dfrac{4}{10} = \\dfrac{2}{5}"
+              "work": "\\(P(\\text{sum} = 21) = \\dfrac{4}{10} = \\dfrac{2}{5}\\)"
             }
           ],
           "meta": {
