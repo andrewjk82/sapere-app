@@ -2577,6 +2577,1157 @@
           "xp": 4
         }
       ]
+    },
+    {
+      "topicId": "y12a-9C",
+      "code": "9C",
+      "title": "Variance and standard deviation",
+      "questions": [
+        {
+          "id": "y12a-9c-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A random variable \\(X\\) has the distribution below. Use \\(\\mu = 2\\) to find the variance \\(\\mathrm{Var}(X)\\).\n\n\\(\\begin{array}{c|cccc} x & 1 & 2 & 3 & 4 \\\\ \\hline P(x) & 0.3 & 0.5 & 0.1 & 0.1 \\end{array}\\)",
+          "options": [
+            "\\(4.8\\)",
+            "\\(0.8\\)",
+            "\\(0.89\\)",
+            "\\(0.4\\)"
+          ],
+          "answer": 1,
+          "hint": "\\(\\mathrm{Var}(X) = \\sum (x-\\mu)^2 P(x)\\). Square each deviation from the mean before weighting by the probability.",
+          "solution": "\\(\\mathrm{Var}(X) = 0.3 + 0 + 0.1 + 0.4 = 0.8\\)",
+          "steps": [
+            {
+              "explain": "Find the squared deviation of each value from the mean \\(\\mu = 2\\).",
+              "work": "\\((1-2)^2 = 1,\\quad (2-2)^2 = 0,\\quad (3-2)^2 = 1,\\quad (4-2)^2 = 4\\)"
+            },
+            {
+              "explain": "Weight each squared deviation by its probability.",
+              "work": "\\(1(0.3) = 0.3,\\quad 0(0.5) = 0,\\quad 1(0.1) = 0.1,\\quad 4(0.1) = 0.4\\)"
+            },
+            {
+              "explain": "Add. The value 4.8 is \\(E(X^2)\\), which still needs \\(\\mu^2\\) taken away, and 0.89 is the standard deviation, not the variance.",
+              "work": "\\(\\mathrm{Var}(X) = 0.3 + 0 + 0.1 + 0.4 = 0.8\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q1a"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9c-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The random variable \\(X\\) has distribution\n\n\\(\\begin{array}{c|cccc} x & 1 & 2 & 3 & 4 \\\\ \\hline P(x) & 0.3 & 0.5 & 0.1 & 0.1 \\end{array}\\)\n\nGiven that \\(\\mathrm{Var}(X) = 0.8\\), find the standard deviation \\(\\sigma\\), correct to 2 decimal places.",
+          "options": [
+            "\\(0.64\\)",
+            "\\(0.8\\)",
+            "\\(1.79\\)",
+            "\\(0.89\\)"
+          ],
+          "answer": 3,
+          "hint": "The standard deviation is the non-negative square root of the variance.",
+          "solution": "\\(\\sigma = \\sqrt{0.8} \\approx 0.89\\)",
+          "steps": [
+            {
+              "explain": "The standard deviation is the square root of the variance.",
+              "work": "\\(\\sigma = \\sqrt{\\mathrm{Var}(X)}\\)"
+            },
+            {
+              "explain": "Substitute \\(\\mathrm{Var}(X) = 0.8\\). Do not square 0.8 (that gives 0.64), and do not leave it as the variance.",
+              "work": "\\(\\sigma = \\sqrt{0.8}\\)"
+            },
+            {
+              "explain": "Evaluate and round.",
+              "work": "\\(\\sigma \\approx 0.894 \\approx 0.89\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q1b"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9c-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "For the distribution\n\n\\(\\begin{array}{c|cccc} x & 1 & 2 & 3 & 4 \\\\ \\hline P(x) & 0.3 & 0.5 & 0.1 & 0.1 \\end{array}\\)\n\nfind \\(E(X^2)\\) and hence use \\(\\mathrm{Var}(X) = E(X^2) - \\mu^2\\) to find the variance, given \\(\\mu = 2\\). What is \\(E(X^2)\\)?",
+          "options": [
+            "\\(4.8\\)",
+            "\\(2\\)",
+            "\\(0.8\\)",
+            "\\(4\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(E(X^2) = \\sum x^2 P(x)\\): square each value of \\(x\\), not the probability.",
+          "solution": "\\(E(X^2) = 4.8\\), so \\(\\mathrm{Var}(X) = 4.8 - 4 = 0.8\\).",
+          "steps": [
+            {
+              "explain": "Square each value of \\(x\\) and multiply by its probability.",
+              "work": "\\(1^2(0.3) = 0.3,\\quad 2^2(0.5) = 2,\\quad 3^2(0.1) = 0.9,\\quad 4^2(0.1) = 1.6\\)"
+            },
+            {
+              "explain": "Add the products to get \\(E(X^2)\\).",
+              "work": "\\(E(X^2) = 0.3 + 2 + 0.9 + 1.6 = 4.8\\)"
+            },
+            {
+              "explain": "Then the variance follows. (2 is the mean \\(E(X)\\), and 0.8 is the variance, not \\(E(X^2)\\).)",
+              "work": "\\(\\mathrm{Var}(X) = 4.8 - 2^2 = 0.8\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q2"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9c-q3a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A random variable \\(X\\) takes the values 0, 1, 2, 3, 4, each with probability 0.2. Find \\(\\mathrm{Var}(X)\\).",
+          "options": [
+            "\\(6\\)",
+            "\\(4\\)",
+            "\\(2\\)",
+            "\\(2.5\\)"
+          ],
+          "answer": 2,
+          "hint": "Find \\(\\mu\\) first (it is the middle value), then use \\(E(X^2) - \\mu^2\\).",
+          "solution": "\\(\\mathrm{Var}(X) = 6 - 4 = 2\\)",
+          "steps": [
+            {
+              "explain": "The distribution is symmetric about 2, so the mean is 2.",
+              "work": "\\(\\mu = 0(0.2) + 1(0.2) + 2(0.2) + 3(0.2) + 4(0.2) = 2\\)"
+            },
+            {
+              "explain": "Find \\(E(X^2)\\). A common slip is to stop here: 6 is \\(E(X^2)\\), not the variance.",
+              "work": "\\(E(X^2) = 0.2(0 + 1 + 4 + 9 + 16) = 6\\)"
+            },
+            {
+              "explain": "Subtract the square of the mean.",
+              "work": "\\(\\mathrm{Var}(X) = 6 - 2^2 = 2\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q3a"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9c-q3b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A random variable \\(X\\) has the distribution\n\n\\(\\begin{array}{c|ccccc} x & 0 & 1 & 2 & 3 & 4 \\\\ \\hline P(x) & 0 & 0.1 & 0.2 & 0.3 & 0.4 \\end{array}\\)\n\nFind \\(\\mathrm{Var}(X)\\).",
+          "options": [
+            "\\(10\\)",
+            "\\(3\\)",
+            "\\(1\\)",
+            "\\(2\\)"
+          ],
+          "answer": 2,
+          "hint": "Find \\(\\mu = E(X)\\) and \\(E(X^2)\\), then subtract \\(\\mu^2\\).",
+          "solution": "\\(\\mathrm{Var}(X) = 10 - 9 = 1\\)",
+          "steps": [
+            {
+              "explain": "Find the mean.",
+              "work": "\\(\\mu = 0 + 0.1 + 0.4 + 0.9 + 1.6 = 3\\)"
+            },
+            {
+              "explain": "Find \\(E(X^2)\\).",
+              "work": "\\(E(X^2) = 0 + 0.1 + 0.8 + 2.7 + 6.4 = 10\\)"
+            },
+            {
+              "explain": "Subtract \\(\\mu^2\\). (10 is only \\(E(X^2)\\), and 3 is the mean.)",
+              "work": "\\(\\mathrm{Var}(X) = 10 - 3^2 = 1\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q3b"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9c-q3c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A random variable \\(X\\) has the distribution\n\n\\(\\begin{array}{c|ccccc} x & -2 & -1 & 0 & 1 & 2 \\\\ \\hline P(x) & 0.3 & 0.1 & 0.2 & 0.1 & 0.3 \\end{array}\\)\n\nFind \\(\\mathrm{Var}(X)\\).",
+          "options": [
+            "\\(2.6\\)",
+            "\\(0\\)",
+            "\\(1.6\\)",
+            "\\(3.6\\)"
+          ],
+          "answer": 0,
+          "hint": "The values are negative as well as positive, so the mean can be 0 — but the variance is not.",
+          "solution": "\\(\\mathrm{Var}(X) = 2.6 - 0 = 2.6\\)",
+          "steps": [
+            {
+              "explain": "Find the mean. The distribution is symmetric about 0.",
+              "work": "\\(\\mu = -0.6 - 0.1 + 0 + 0.1 + 0.6 = 0\\)"
+            },
+            {
+              "explain": "Find \\(E(X^2)\\). Squaring removes the negative signs.",
+              "work": "\\(E(X^2) = 4(0.3) + 1(0.1) + 0 + 1(0.1) + 4(0.3) = 2.6\\)"
+            },
+            {
+              "explain": "Subtract \\(\\mu^2 = 0\\). A mean of 0 does not mean no spread.",
+              "work": "\\(\\mathrm{Var}(X) = 2.6 - 0^2 = 2.6\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q3c"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9c-q3d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A random variable \\(X\\) has the distribution\n\n\\(\\begin{array}{c|ccccc} x & 1 & 2 & 3 & 4 & 5 \\\\ \\hline P(x) & 0.1 & 0.4 & 0.2 & 0.2 & 0.1 \\end{array}\\)\n\nFind \\(\\mathrm{Var}(X)\\).",
+          "options": [
+            "\\(9.2\\)",
+            "\\(2.8\\)",
+            "\\(1.17\\)",
+            "\\(1.36\\)"
+          ],
+          "answer": 3,
+          "hint": "The mean is not a whole number, so use the rearranged formula \\(E(X^2) - \\mu^2\\).",
+          "solution": "\\(\\mathrm{Var}(X) = 9.2 - 7.84 = 1.36\\)",
+          "steps": [
+            {
+              "explain": "Find the mean.",
+              "work": "\\(\\mu = 0.1 + 0.8 + 0.6 + 0.8 + 0.5 = 2.8\\)"
+            },
+            {
+              "explain": "Find \\(E(X^2)\\).",
+              "work": "\\(E(X^2) = 0.1 + 1.6 + 1.8 + 3.2 + 2.5 = 9.2\\)"
+            },
+            {
+              "explain": "Subtract \\(\\mu^2\\). (9.2 is \\(E(X^2)\\), 2.8 the mean, and 1.17 the standard deviation.)",
+              "work": "\\(\\mathrm{Var}(X) = 9.2 - 2.8^2 = 9.2 - 7.84 = 1.36\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q3d"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9c-q4a-ii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A random variable \\(Z\\) takes the value 0 with probability 0.5 and the value 4 with probability 0.5. Find its standard deviation \\(\\sigma\\).",
+          "options": [
+            "\\(4\\)",
+            "\\(2\\)",
+            "\\(1\\)",
+            "\\(0.5\\)"
+          ],
+          "answer": 1,
+          "hint": "The mean is halfway between 0 and 4. Both values are the same distance from it.",
+          "solution": "\\(\\sigma = \\sqrt{4} = 2\\)",
+          "steps": [
+            {
+              "explain": "The mean is halfway between the two equally likely values.",
+              "work": "\\(\\mu = 0(0.5) + 4(0.5) = 2\\)"
+            },
+            {
+              "explain": "Each value is 2 from the mean, so every squared deviation is 4.",
+              "work": "\\(\\mathrm{Var}(Z) = (0-2)^2(0.5) + (4-2)^2(0.5) = 2 + 2 = 4\\)"
+            },
+            {
+              "explain": "Take the square root. (4 is the variance, not the standard deviation.)",
+              "work": "\\(\\sigma = \\sqrt{4} = 2\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q4a-ii"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9c-q4b-i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "\\(Y\\) takes the values 1 and 3 with probability 0.5 each. \\(Z\\) takes the values 0 and 4 with probability 0.5 each. Which statement about \\(E(Y), E(Z), \\mathrm{Var}(Y)\\) and \\(\\mathrm{Var}(Z)\\) is correct?",
+          "options": [
+            "\\(E(Y) \\lt E(Z)\\), and the two variances are equal",
+            "\\(E(Y) = E(Z) = 2\\), and \\(Z\\) is more spread out, with \\(\\mathrm{Var}(Z) = 4\\) compared with \\(\\mathrm{Var}(Y) = 1\\)",
+            "\\(E(Y) = E(Z) = 2\\), and the two variances are equal",
+            "\\(E(Y) = E(Z) = 2\\), and \\(Y\\) is more spread out than \\(Z\\)"
+          ],
+          "answer": 1,
+          "hint": "Both distributions are centred halfway between their two values. Compare how far each value is from that centre.",
+          "solution": "\\(E(Y) = E(Z) = 2\\), \\(\\mathrm{Var}(Y) = 1\\) and \\(\\mathrm{Var}(Z) = 4\\), so \\(Z\\) is more spread out.",
+          "steps": [
+            {
+              "explain": "Both means are the midpoint of the two values.",
+              "work": "\\(E(Y) = 1(0.5) + 3(0.5) = 2,\\quad E(Z) = 0(0.5) + 4(0.5) = 2\\)"
+            },
+            {
+              "explain": "The values of \\(Y\\) are 1 from the mean; the values of \\(Z\\) are 2 from the mean.",
+              "work": "\\(\\mathrm{Var}(Y) = 1,\\quad \\mathrm{Var}(Z) = 4\\)"
+            },
+            {
+              "explain": "The centre is the same, but doubling the distances from the mean doubles the standard deviation (and quadruples the variance).",
+              "work": "\\(\\sigma_Z = 2\\sigma_Y\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q4b-i"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9c-q4a-iv",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "\\(V\\) has distribution\n\n\\(\\begin{array}{c|cccc} v & 0 & 1 & 2 & 3 \\\\ \\hline P(v) & 0.3 & 0.5 & 0.1 & 0.1 \\end{array}\\)\n\nand \\(W = 4 - V\\). Which statement is correct?",
+          "options": [
+            "\\(E(W) = 1\\) and \\(\\mathrm{Var}(W) = \\mathrm{Var}(V) = 0.8\\)",
+            "\\(E(W) = 3\\) and \\(\\mathrm{Var}(W) = 4 - 0.8 = 3.2\\)",
+            "\\(E(W) = 3\\) and \\(\\mathrm{Var}(W) = 16(0.8) = 12.8\\)",
+            "\\(E(W) = 3\\) and \\(\\mathrm{Var}(W) = \\mathrm{Var}(V) = 0.8\\)"
+          ],
+          "answer": 3,
+          "hint": "\\(E(aV + b) = aE(V) + b\\) and \\(\\mathrm{Var}(aV + b) = a^2\\mathrm{Var}(V)\\), here with \\(a = -1\\) and \\(b = 4\\).",
+          "solution": "\\(E(W) = 3\\) and \\(\\mathrm{Var}(W) = 0.8\\) — the centre moves but the spread is unchanged.",
+          "steps": [
+            {
+              "explain": "Find the mean and variance of \\(V\\).",
+              "work": "\\(E(V) = 0.5 + 0.2 + 0.3 = 1,\\quad E(V^2) = 0.5 + 0.4 + 0.9 = 1.8,\\quad \\mathrm{Var}(V) = 1.8 - 1 = 0.8\\)"
+            },
+            {
+              "explain": "The mean follows the rule \\(E(aV+b) = aE(V)+b\\) with \\(a = -1\\), \\(b = 4\\).",
+              "work": "\\(E(W) = -1(1) + 4 = 3\\)"
+            },
+            {
+              "explain": "Flipping the distribution and shifting it does not change the spread: \\(a^2 = (-1)^2 = 1\\).",
+              "work": "\\(\\mathrm{Var}(W) = (-1)^2(0.8) = 0.8\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q4a-iv"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9c-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A random variable \\(X\\) takes the value 2 with probability 1, and no other value. Find \\(E(X)\\) and \\(\\mathrm{Var}(X)\\).",
+          "options": [
+            "\\(E(X) = 2\\) and \\(\\mathrm{Var}(X) = 0\\)",
+            "\\(E(X) = 2\\) and \\(\\mathrm{Var}(X) = 4\\)",
+            "\\(E(X) = 1\\) and \\(\\mathrm{Var}(X) = 0\\)",
+            "\\(E(X) = 2\\) and \\(\\mathrm{Var}(X) = 1\\)"
+          ],
+          "answer": 0,
+          "hint": "If there is only one possible value, how far can any outcome be from the mean?",
+          "solution": "\\(E(X) = 2\\) and \\(\\mathrm{Var}(X) = (2-2)^2(1) = 0\\).",
+          "steps": [
+            {
+              "explain": "Only the value 2 has a non-zero probability.",
+              "work": "\\(E(X) = 2(1) = 2\\)"
+            },
+            {
+              "explain": "The only deviation is \\(2 - 2 = 0\\), so every squared deviation is zero.",
+              "work": "\\(\\mathrm{Var}(X) = (2-2)^2(1) = 0\\)"
+            },
+            {
+              "explain": "A variance of 0 is what we expect: there is no spread, because the outcome is certain.",
+              "work": "\\(\\sigma = 0\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q5"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9c-q6a-J",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "John and Liam score baskets in games. Their distributions are\n\n\\(\\begin{array}{c|ccccc} j & 0 & 1 & 2 & 3 & 4 \\\\ \\hline P(J=j) & 0.35 & 0.2 & 0.1 & 0.25 & 0.1 \\end{array}\\)\n\n\\(\\begin{array}{c|ccccc} \\ell & 0 & 1 & 2 & 3 & 4 \\\\ \\hline P(L=\\ell) & 0.2 & 0.3 & 0.4 & 0.1 & 0 \\end{array}\\)\n\nFind \\(\\mathrm{Var}(J)\\), correct to 2 decimal places.",
+          "options": [
+            "\\(4.45\\)",
+            "\\(1.55\\)",
+            "\\(2.05\\)",
+            "\\(0.84\\)"
+          ],
+          "answer": 2,
+          "hint": "Find \\(E(J)\\) and \\(E(J^2)\\) first, then \\(E(J^2) - \\mu^2\\).",
+          "solution": "\\(\\mathrm{Var}(J) = 4.45 - 2.4025 \\approx 2.05\\)",
+          "steps": [
+            {
+              "explain": "Find the mean of \\(J\\).",
+              "work": "\\(E(J) = 0.2 + 0.2 + 0.75 + 0.4 = 1.55\\)"
+            },
+            {
+              "explain": "Find \\(E(J^2)\\).",
+              "work": "\\(E(J^2) = 0.2 + 0.4 + 2.25 + 1.6 = 4.45\\)"
+            },
+            {
+              "explain": "Subtract \\(\\mu^2\\). (4.45 is \\(E(J^2)\\), 1.55 is the mean, and 0.84 is Liam's variance.)",
+              "work": "\\(\\mathrm{Var}(J) = 4.45 - 1.55^2 = 4.45 - 2.4025 \\approx 2.05\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q6a-J"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9c-q6c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "John and Liam score baskets in games. Their distributions are\n\n\\(\\begin{array}{c|ccccc} j & 0 & 1 & 2 & 3 & 4 \\\\ \\hline P(J=j) & 0.35 & 0.2 & 0.1 & 0.25 & 0.1 \\end{array}\\)\n\n\\(\\begin{array}{c|ccccc} \\ell & 0 & 1 & 2 & 3 & 4 \\\\ \\hline P(L=\\ell) & 0.2 & 0.3 & 0.4 & 0.1 & 0 \\end{array}\\)\n\nGiven \\(E(J) = 1.55,\\ \\mathrm{Var}(J) \\approx 2.05,\\ E(L) = 1.4\\) and \\(\\mathrm{Var}(L) = 0.84\\), who is the more consistent player?",
+          "options": [
+            "John, because his expected value \\(1.55\\) is higher",
+            "John, because his variance \\(2.05\\) is higher",
+            "Liam, because his variance \\(0.84\\) is lower than John's \\(2.05\\)",
+            "Neither: the expected values are almost the same"
+          ],
+          "answer": 2,
+          "hint": "Consistency is about spread, not about the centre. Which statistic measures spread?",
+          "solution": "Liam has the lower variance (\\(0.84\\) against \\(2.05\\)), so he is more consistent.",
+          "steps": [
+            {
+              "explain": "The expected value measures the centre — here John scores slightly more on average.",
+              "work": "\\(E(J) = 1.55 \\gt E(L) = 1.4\\)"
+            },
+            {
+              "explain": "The variance measures spread, so the smaller variance means results that stay closer to the mean.",
+              "work": "\\(\\mathrm{Var}(L) = 0.84 \\lt \\mathrm{Var}(J) \\approx 2.05\\)"
+            },
+            {
+              "explain": "So John is better on average, but Liam is the more consistent player.",
+              "work": "\\(\\text{Liam}\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q6c"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9c-q7c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A spinner has three equal sectors marked 1, 2 and 3. The random variable \\(X\\) is the number spun. Find \\(\\mathrm{Var}(X)\\).",
+          "options": [
+            "\\(\\dfrac{2}{3}\\)",
+            "\\(\\dfrac{14}{3}\\)",
+            "\\(2\\)",
+            "\\(\\dfrac{1}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Each outcome has probability \\(\\dfrac{1}{3}\\) and the mean is 2.",
+          "solution": "\\(\\mathrm{Var}(X) = \\dfrac{14}{3} - 4 = \\dfrac{2}{3}\\)",
+          "steps": [
+            {
+              "explain": "Each outcome has probability \\(\\dfrac{1}{3}\\), so the mean is the middle value.",
+              "work": "\\(\\mu = \\dfrac{1+2+3}{3} = 2\\)"
+            },
+            {
+              "explain": "Find \\(E(X^2)\\).",
+              "work": "\\(E(X^2) = \\dfrac{1 + 4 + 9}{3} = \\dfrac{14}{3}\\)"
+            },
+            {
+              "explain": "Subtract \\(\\mu^2\\). (\\(\\dfrac{14}{3}\\) is only \\(E(X^2)\\).)",
+              "work": "\\(\\mathrm{Var}(X) = \\dfrac{14}{3} - 2^2 = \\dfrac{2}{3}\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q7c"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9c-q8a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A random variable \\(X\\) has the distribution\n\n\\(\\begin{array}{c|ccccc} x & 1 & 3 & 5 & 7 & 9 \\\\ \\hline P(X=x) & 0.05 & 0.25 & 0.45 & 0.15 & 0.1 \\end{array}\\)\n\nThe mean is \\(\\mu = 5\\). Find the standard deviation of \\(X\\).",
+          "options": [
+            "\\(4\\)",
+            "\\(5\\)",
+            "\\(1.4\\)",
+            "\\(2\\)"
+          ],
+          "answer": 3,
+          "hint": "Use \\(\\mathrm{Var}(X) = \\sum (x-\\mu)^2 P(x)\\) with \\(\\mu = 5\\) — the deviations are whole numbers.",
+          "solution": "\\(\\mathrm{Var}(X) = 4\\), so \\(\\sigma = 2\\).",
+          "steps": [
+            {
+              "explain": "The squared deviations from 5 are easy.",
+              "work": "\\((1-5)^2 = 16,\\ (3-5)^2 = 4,\\ (5-5)^2 = 0,\\ (7-5)^2 = 4,\\ (9-5)^2 = 16\\)"
+            },
+            {
+              "explain": "Weight by the probabilities and add.",
+              "work": "\\(\\mathrm{Var}(X) = 16(0.05) + 4(0.25) + 0 + 4(0.15) + 16(0.1) = 0.8 + 1 + 0 + 0.6 + 1.6 = 4\\)"
+            },
+            {
+              "explain": "The standard deviation is the square root. (4 is the variance.)",
+              "work": "\\(\\sigma = \\sqrt{4} = 2\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q8a"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9c-q8c-i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For the distribution\n\n\\(\\begin{array}{c|ccccc} x & 1 & 3 & 5 & 7 & 9 \\\\ \\hline P(X=x) & 0.05 & 0.25 & 0.45 & 0.15 & 0.1 \\end{array}\\)\n\nit is known that \\(E(X) = 5\\) and \\(\\mathrm{Var}(X) = 4\\). A new random variable is \\(Y = 2X + 3\\). Find \\(\\mathrm{Var}(Y)\\).",
+          "options": [
+            "\\(8\\)",
+            "\\(16\\)",
+            "\\(11\\)",
+            "\\(4\\)"
+          ],
+          "answer": 1,
+          "hint": "\\(\\mathrm{Var}(aX + b) = a^2\\,\\mathrm{Var}(X)\\). Adding the constant \\(b\\) does not change the spread.",
+          "solution": "\\(\\mathrm{Var}(Y) = 2^2 \\times 4 = 16\\)",
+          "steps": [
+            {
+              "explain": "Adding 3 only shifts every value, so it does not change the variance. Multiplying by 2 doubles each deviation, so the variance is multiplied by \\(2^2\\).",
+              "work": "\\(\\mathrm{Var}(aX + b) = a^2\\,\\mathrm{Var}(X)\\)"
+            },
+            {
+              "explain": "Substitute \\(a = 2\\). (8 comes from multiplying by 2 instead of 4, and 11 from adding the 3.)",
+              "work": "\\(\\mathrm{Var}(Y) = 2^2 \\times 4 = 16\\)"
+            },
+            {
+              "explain": "Check by finding \\(\\sigma_Y = 2\\sigma_X = 4\\).",
+              "work": "\\(\\sigma_Y = \\sqrt{16} = 4\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q8c-i"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9c-q8c-ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The random variable \\(X\\) has \\(E(X) = 5\\) and standard deviation \\(\\sigma_X = 2\\). If \\(Y = 2X + 3\\), find the standard deviation \\(\\sigma_Y\\).",
+          "options": [
+            "\\(16\\)",
+            "\\(4\\)",
+            "\\(7\\)",
+            "\\(2\\)"
+          ],
+          "answer": 1,
+          "hint": "The standard deviation is multiplied by \\(|a|\\), and a constant added does not affect it.",
+          "solution": "\\(\\sigma_Y = 2 \\times 2 = 4\\)",
+          "steps": [
+            {
+              "explain": "A shift does not change the spread, and multiplying by 2 doubles every distance from the mean.",
+              "work": "\\(\\sigma_{aX + b} = |a|\\,\\sigma_X\\)"
+            },
+            {
+              "explain": "Substitute. (16 is the variance, and 7 treats the standard deviation like a mean.)",
+              "work": "\\(\\sigma_Y = 2 \\times 2 = 4\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q8c-ii"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9c-q8d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A random variable \\(X\\) has mean \\(\\mu\\) and standard deviation \\(\\sigma\\). Let \\(Z = \\dfrac{X - \\mu}{\\sigma}\\). What are the expected value and variance of \\(Z\\)?",
+          "options": [
+            "\\(E(Z) = 1\\) and \\(\\mathrm{Var}(Z) = 0\\)",
+            "\\(E(Z) = 0\\) and \\(\\mathrm{Var}(Z) = \\sigma\\)",
+            "\\(E(Z) = \\mu\\) and \\(\\mathrm{Var}(Z) = 1\\)",
+            "\\(E(Z) = 0\\) and \\(\\mathrm{Var}(Z) = 1\\)"
+          ],
+          "answer": 3,
+          "hint": "Write \\(Z = aX + b\\) with \\(a = \\dfrac{1}{\\sigma}\\) and \\(b = -\\dfrac{\\mu}{\\sigma}\\), then use \\(E(aX+b)\\) and \\(\\mathrm{Var}(aX+b)\\).",
+          "solution": "\\(E(Z) = 0\\) and \\(\\mathrm{Var}(Z) = 1\\).",
+          "steps": [
+            {
+              "explain": "Write \\(Z\\) in the form \\(aX + b\\).",
+              "work": "\\(Z = \\dfrac{1}{\\sigma}X - \\dfrac{\\mu}{\\sigma}\\)"
+            },
+            {
+              "explain": "Use \\(E(aX+b) = aE(X)+b\\).",
+              "work": "\\(E(Z) = \\dfrac{\\mu}{\\sigma} - \\dfrac{\\mu}{\\sigma} = 0\\)"
+            },
+            {
+              "explain": "Use \\(\\mathrm{Var}(aX+b) = a^2\\mathrm{Var}(X)\\).",
+              "work": "\\(\\mathrm{Var}(Z) = \\dfrac{1}{\\sigma^2}\\times\\sigma^2 = 1\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q8d"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9c-q9a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Englebert scored 55 in an English test with mean \\(\\mu = 65\\) and standard deviation \\(\\sigma = 5\\). How many standard deviations is his score from the mean? (A negative sign means below the mean.)",
+          "options": [
+            "\\(-2\\)",
+            "\\(2\\)",
+            "\\(-10\\)",
+            "\\(-0.5\\)"
+          ],
+          "answer": 0,
+          "hint": "Use \\(\\dfrac{x-\\mu}{\\sigma}\\).",
+          "solution": "\\(\\dfrac{55-65}{5} = -2\\), that is, 2 standard deviations below the mean.",
+          "steps": [
+            {
+              "explain": "Use the formula for the number of standard deviations from the mean.",
+              "work": "\\(\\dfrac{x - \\mu}{\\sigma}\\)"
+            },
+            {
+              "explain": "Substitute. The score is below the mean, so the answer is negative. (\\(-10\\) is the raw deviation, and 2 has lost the sign.)",
+              "work": "\\(\\dfrac{55 - 65}{5} = \\dfrac{-10}{5} = -2\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q9a"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9c-q9b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Matthew scored 54 in a Mathematics test with mean \\(\\mu = 72\\) and standard deviation \\(\\sigma = 12\\). How many standard deviations is his score from the mean?",
+          "options": [
+            "\\(1.5\\)",
+            "\\(-18\\)",
+            "\\(-1.5\\)",
+            "\\(-0.67\\)"
+          ],
+          "answer": 2,
+          "hint": "Use \\(\\dfrac{x-\\mu}{\\sigma}\\), keeping the sign.",
+          "solution": "\\(\\dfrac{54-72}{12} = -1.5\\), that is, one and a half standard deviations below the mean.",
+          "steps": [
+            {
+              "explain": "Find the deviation from the mean, then divide by the standard deviation.",
+              "work": "\\(x - \\mu = 54 - 72 = -18\\)"
+            },
+            {
+              "explain": "Divide by \\(\\sigma = 12\\). (Dividing the other way round gives \\(-0.67\\).)",
+              "work": "\\(\\dfrac{-18}{12} = -1.5\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q9b"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-9c-q9c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Englebert scored 55 in English (\\(\\mu = 65,\\ \\sigma = 5\\)) and Matthew scored 54 in Mathematics (\\(\\mu = 72,\\ \\sigma = 12\\)). Whose score was further from the mean, measured in standard deviations?",
+          "options": [
+            "Matthew's, because \\(72 - 54 = 18\\) is a larger gap than \\(65 - 55 = 10\\)",
+            "They are the same distance from the mean",
+            "Englebert's: \\(2\\) standard deviations below the mean, compared with \\(1.5\\) for Matthew",
+            "Matthew's: \\(2\\) standard deviations below the mean, compared with \\(1.5\\) for Englebert"
+          ],
+          "answer": 2,
+          "hint": "Compare \\(\\dfrac{x-\\mu}{\\sigma}\\) for each student, not the raw gaps.",
+          "solution": "Englebert is 2 standard deviations below the mean and Matthew only 1.5, so Englebert's score is further from the mean.",
+          "steps": [
+            {
+              "explain": "Englebert's number of standard deviations from the mean.",
+              "work": "\\(\\dfrac{55-65}{5} = -2\\)"
+            },
+            {
+              "explain": "Matthew's number of standard deviations from the mean. The raw gap of 18 is larger, but his test has a larger spread.",
+              "work": "\\(\\dfrac{54-72}{12} = -1.5\\)"
+            },
+            {
+              "explain": "Englebert's score is further below its mean in standard-deviation terms, so it is the less impressive of the two.",
+              "work": "\\(\\lvert -2 \\rvert \\gt \\lvert -1.5 \\rvert\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q9c"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9c-q10a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which is the better score, in standard deviations from the mean: 45 for Visual Arts (mean 60, standard deviation 15) or 46 for Music (mean 67, standard deviation 12)?",
+          "options": [
+            "Visual Arts: \\(-1\\) standard deviation, compared with \\(-1.75\\) for Music",
+            "Music: \\(-1\\) standard deviation, compared with \\(-1.75\\) for Visual Arts",
+            "Music, because its raw score of 46 is higher",
+            "They are equally good"
+          ],
+          "answer": 0,
+          "hint": "Work out \\(\\dfrac{x-\\mu}{\\sigma}\\) for each. The score closer to the mean (or further above it) is better.",
+          "solution": "Visual Arts is 1 standard deviation below its mean, Music 1.75 below, so Visual Arts is better.",
+          "steps": [
+            {
+              "explain": "Visual Arts.",
+              "work": "\\(\\dfrac{45 - 60}{15} = -1\\)"
+            },
+            {
+              "explain": "Music. The raw score is higher, but the mean is also higher and the spread smaller.",
+              "work": "\\(\\dfrac{46 - 67}{12} = -1.75\\)"
+            },
+            {
+              "explain": "Both are below their means, but \\(-1\\) is closer to the mean than \\(-1.75\\), so Visual Arts is the better result.",
+              "work": "\\(-1 \\gt -1.75\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q10a"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9c-q10b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which is the more impressive score: 88 for Earth Science (mean 70, standard deviation 9) or 90 for Biology (mean 75, standard deviation 10)?",
+          "options": [
+            "Biology: \\(+2\\) standard deviations, compared with \\(+1.5\\) for Earth Science",
+            "Biology, because its raw score of 90 is higher",
+            "They are equally impressive",
+            "Earth Science: \\(+2\\) standard deviations, compared with \\(+1.5\\) for Biology"
+          ],
+          "answer": 3,
+          "hint": "Compare how many standard deviations above the mean each score is.",
+          "solution": "Earth Science is 2 standard deviations above the mean, Biology 1.5, so Earth Science is more impressive.",
+          "steps": [
+            {
+              "explain": "Earth Science.",
+              "work": "\\(\\dfrac{88 - 70}{9} = 2\\)"
+            },
+            {
+              "explain": "Biology. The raw score is higher, but it is closer to its own mean in standard-deviation terms.",
+              "work": "\\(\\dfrac{90 - 75}{10} = 1.5\\)"
+            },
+            {
+              "explain": "Earth Science is further above its mean.",
+              "work": "\\(2 \\gt 1.5\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q10b"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9c-q10c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which is the better score: 62 for Chinese (mean 50, standard deviation 6) or 63 for Sanskrit (mean 55, standard deviation 4)?",
+          "options": [
+            "Sanskrit, because its raw score of 63 is higher",
+            "They are equally good: both are \\(2\\) standard deviations above the mean",
+            "Chinese, because it is \\(12\\) above the mean, more than \\(8\\)",
+            "Sanskrit: \\(2\\) standard deviations, compared with \\(1.5\\) for Chinese"
+          ],
+          "answer": 1,
+          "hint": "Work out \\(\\dfrac{x-\\mu}{\\sigma}\\) for both subjects before deciding.",
+          "solution": "Both scores are 2 standard deviations above the mean, so they are equally impressive.",
+          "steps": [
+            {
+              "explain": "Chinese.",
+              "work": "\\(\\dfrac{62 - 50}{6} = 2\\)"
+            },
+            {
+              "explain": "Sanskrit. The raw scores and gaps differ, but the standardised values do not.",
+              "work": "\\(\\dfrac{63 - 55}{4} = 2\\)"
+            },
+            {
+              "explain": "Both are 2 standard deviations above the mean.",
+              "work": "\\(2 = 2\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q10c"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9c-q11a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Jasmine fires 10 arrows and \\(X\\) is the number of bull's-eyes. Her results give\n\n\\(\\begin{array}{c|ccccccccc} x & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\\\ \\hline P(x) & 0 & 0.1 & 0.15 & 0.3 & 0.4 & 0 & 0 & 0 & 0.05 \\end{array}\\)\n\nFind the standard deviation of \\(X\\), correct to 2 decimal places.",
+          "options": [
+            "\\(2.11\\)",
+            "\\(1.45\\)",
+            "\\(3.3\\)",
+            "\\(1.14\\)"
+          ],
+          "answer": 1,
+          "hint": "Find \\(E(X)\\) and \\(E(X^2)\\) first. Remember the final square root.",
+          "solution": "\\(\\mathrm{Var}(X) = 13 - 10.89 = 2.11\\), so \\(\\sigma \\approx 1.45\\).",
+          "steps": [
+            {
+              "explain": "Find the mean.",
+              "work": "\\(\\mu = 0.1 + 0.3 + 0.9 + 1.6 + 0.4 = 3.3\\)"
+            },
+            {
+              "explain": "Find \\(E(X^2)\\).",
+              "work": "\\(E(X^2) = 0.1 + 0.6 + 2.7 + 6.4 + 3.2 = 13\\)"
+            },
+            {
+              "explain": "Find the variance, then take the square root. (2.11 is the variance, and 3.3 the mean.)",
+              "work": "\\(\\mathrm{Var}(X) = 13 - 3.3^2 = 2.11,\\quad \\sigma = \\sqrt{2.11} \\approx 1.45\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q11a"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9c-q11c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Jasmine's distribution is\n\n\\(\\begin{array}{c|ccccccccc} x & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\\\ \\hline P(x) & 0 & 0.1 & 0.15 & 0.3 & 0.4 & 0 & 0 & 0 & 0.05 \\end{array}\\)\n\nwith mean \\(\\mu = 3.3\\) and standard deviation \\(\\sigma \\approx 1.45\\). An outlier is defined as any value three or more standard deviations from the mean. Which value(s), if any, are outliers?",
+          "options": [
+            "There are no outliers",
+            "Only \\(x = 1\\), which is about \\(1.6\\) standard deviations below the mean",
+            "Both \\(x = 1\\) and \\(x = 8\\)",
+            "Only \\(x = 8\\), which is about \\(3.2\\) standard deviations above the mean"
+          ],
+          "answer": 3,
+          "hint": "Calculate \\(\\dfrac{x-\\mu}{\\sigma}\\) for the extreme values only. An outlier has \\(\\left|\\dfrac{x-\\mu}{\\sigma}\\right| \\ge 3\\).",
+          "solution": "\\(x = 8\\) is \\(\\dfrac{8-3.3}{1.45} \\approx 3.2\\) standard deviations above the mean, so it is the only outlier.",
+          "steps": [
+            {
+              "explain": "The extreme values are \\(x = 1\\) and \\(x = 8\\). Work out how many standard deviations each is from the mean.",
+              "work": "\\(\\dfrac{1 - 3.3}{1.4526} \\approx -1.58\\)"
+            },
+            {
+              "explain": "For the largest value.",
+              "work": "\\(\\dfrac{8 - 3.3}{1.4526} \\approx 3.24\\)"
+            },
+            {
+              "explain": "Only 8 is three or more standard deviations from the mean.",
+              "work": "\\(3.24 \\ge 3 \\gt 1.58\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q11c"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-9c-q11d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Jasmine corrects her results, so the value 8 becomes 5:\n\n\\(\\begin{array}{c|cccccc} x & 0 & 1 & 2 & 3 & 4 & 5 \\\\ \\hline P(x) & 0 & 0.1 & 0.15 & 0.3 & 0.4 & 0.05 \\end{array}\\)\n\nFind the new standard deviation, correct to 2 decimal places.",
+          "options": [
+            "\\(1.06\\)",
+            "\\(1.13\\)",
+            "\\(1.45\\)",
+            "\\(3.15\\)"
+          ],
+          "answer": 0,
+          "hint": "Find \\(E(X)\\) and \\(E(X^2)\\) for the new table.",
+          "solution": "\\(\\mathrm{Var}(X) = 11.05 - 9.9225 = 1.1275\\), so \\(\\sigma \\approx 1.06\\).",
+          "steps": [
+            {
+              "explain": "Find the new mean.",
+              "work": "\\(\\mu = 0.1 + 0.3 + 0.9 + 1.6 + 0.25 = 3.15\\)"
+            },
+            {
+              "explain": "Find the new \\(E(X^2)\\).",
+              "work": "\\(E(X^2) = 0.1 + 0.6 + 2.7 + 6.4 + 1.25 = 11.05\\)"
+            },
+            {
+              "explain": "Find the variance and take the square root. (1.13 is the variance, and 1.45 is the old standard deviation.)",
+              "work": "\\(\\mathrm{Var}(X) = 11.05 - 3.15^2 \\approx 1.1275,\\quad \\sigma \\approx 1.06\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q11d"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9c-q12",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A random variable \\(X\\) takes values 1, 2, 3, 4 with \\(P(X = x) = kx\\). Find the standard deviation of \\(X\\).",
+          "options": [
+            "\\(3\\)",
+            "\\(10\\)",
+            "\\(1\\)",
+            "\\(0.1\\)"
+          ],
+          "answer": 2,
+          "hint": "The probabilities must add to 1, which gives \\(k\\). Then find \\(E(X)\\) and \\(E(X^2)\\).",
+          "solution": "\\(k = \\dfrac{1}{10}\\), \\(E(X) = 3\\), \\(\\mathrm{Var}(X) = 10 - 9 = 1\\), so \\(\\sigma = 1\\).",
+          "steps": [
+            {
+              "explain": "The probabilities add to 1.",
+              "work": "\\(k(1 + 2 + 3 + 4) = 1 \\;\\Rightarrow\\; k = \\dfrac{1}{10}\\)"
+            },
+            {
+              "explain": "Find \\(E(X)\\) and \\(E(X^2)\\) using \\(P(x) = \\dfrac{x}{10}\\).",
+              "work": "\\(E(X) = \\dfrac{1 + 4 + 9 + 16}{10} = 3,\\quad E(X^2) = \\dfrac{1 + 8 + 27 + 64}{10} = 10\\)"
+            },
+            {
+              "explain": "Find the variance, then the standard deviation. (3 is the mean, and 10 is \\(E(X^2)\\).)",
+              "work": "\\(\\mathrm{Var}(X) = 10 - 3^2 = 1,\\quad \\sigma = 1\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q12"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9c-q13c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A uniform distribution has values \\(1, 2, \\dots, n\\), each with probability \\(\\dfrac{1}{n}\\). Using \\(1 + 2 + \\dots + n = \\tfrac{1}{2}n(n+1)\\) and \\(1^2 + 2^2 + \\dots + n^2 = \\tfrac{1}{6}n(n+1)(2n+1)\\), find \\(\\mathrm{Var}(X)\\).",
+          "options": [
+            "\\(\\dfrac{n^2 + 1}{12}\\)",
+            "\\(\\dfrac{n^2 - 1}{6}\\)",
+            "\\(\\dfrac{n^2 - 1}{12}\\)",
+            "\\(\\dfrac{(n+1)(2n+1)}{6}\\)"
+          ],
+          "answer": 2,
+          "hint": "\\(E(X) = \\dfrac{n+1}{2}\\). Find \\(E(X^2) = \\dfrac{1}{n}\\sum x^2\\), then subtract \\(\\mu^2\\).",
+          "solution": "\\(\\mathrm{Var}(X) = \\dfrac{n^2 - 1}{12}\\)",
+          "steps": [
+            {
+              "explain": "The mean.",
+              "work": "\\(E(X) = \\dfrac{1}{n}\\cdot\\dfrac{n(n+1)}{2} = \\dfrac{n+1}{2}\\)"
+            },
+            {
+              "explain": "Find \\(E(X^2)\\). (This alone is option d, which is not yet the variance.)",
+              "work": "\\(E(X^2) = \\dfrac{1}{n}\\cdot\\dfrac{n(n+1)(2n+1)}{6} = \\dfrac{(n+1)(2n+1)}{6}\\)"
+            },
+            {
+              "explain": "Subtract \\(\\mu^2\\) and simplify over a common denominator of 12.",
+              "work": "\\(\\mathrm{Var}(X) = \\dfrac{(n+1)(2n+1)}{6} - \\dfrac{(n+1)^2}{4} = \\dfrac{(n+1)\\left[2(2n+1) - 3(n+1)\\right]}{12} = \\dfrac{(n+1)(n-1)}{12}\\)"
+            },
+            {
+              "explain": "Check with \\(n = 6\\), a die: \\(\\dfrac{36 - 1}{12} = \\dfrac{35}{12}\\), which matches the value in the notes.",
+              "work": "\\(\\mathrm{Var}(X) = \\dfrac{n^2 - 1}{12}\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q13c"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-9c-q15",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A random variable \\(X\\) has standard deviation 3. What is the standard deviation of \\(5X - 2\\)?",
+          "options": [
+            "\\(15\\)",
+            "\\(13\\)",
+            "\\(45\\)",
+            "\\(225\\)"
+          ],
+          "answer": 0,
+          "hint": "A constant added or subtracted does not change the spread; multiplying by 5 multiplies the standard deviation by 5.",
+          "solution": "\\(\\sigma = 5 \\times 3 = 15\\)",
+          "steps": [
+            {
+              "explain": "Subtracting 2 shifts every value and does not change the spread. Multiplying by 5 multiplies the standard deviation by 5.",
+              "work": "\\(\\sigma_{kX + a} = |k|\\,\\sigma_X\\)"
+            },
+            {
+              "explain": "Substitute \\(k = 5\\), \\(\\sigma_X = 3\\). (13 wrongly applies the \\(-2\\), 45 multiplies by \\(5^2\\) and 225 squares everything.)",
+              "work": "\\(\\sigma = 5 \\times 3 = 15\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q15"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9c-q16a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Three dice are rolled and \\(X\\) is the number of dice showing 5 or 6.\n\n\\(\\begin{array}{c|cccc} x & 0 & 1 & 2 & 3 \\\\ \\hline p(x) & \\dfrac{8}{27} & \\dfrac{12}{27} & \\dfrac{6}{27} & \\dfrac{1}{27} \\end{array}\\)\n\nFind \\(\\mathrm{Var}(X)\\).",
+          "options": [
+            "\\(\\dfrac{5}{3}\\)",
+            "\\(1\\)",
+            "\\(\\dfrac{8}{27}\\)",
+            "\\(\\dfrac{2}{3}\\)"
+          ],
+          "answer": 3,
+          "hint": "Find \\(E(X)\\) and \\(E(X^2)\\) with denominator 27.",
+          "solution": "\\(\\mathrm{Var}(X) = \\dfrac{5}{3} - 1 = \\dfrac{2}{3}\\), so \\(\\sigma \\approx 0.82\\).",
+          "steps": [
+            {
+              "explain": "Find the mean.",
+              "work": "\\(\\mu = \\dfrac{0 + 12 + 12 + 3}{27} = \\dfrac{27}{27} = 1\\)"
+            },
+            {
+              "explain": "Find \\(E(X^2)\\).",
+              "work": "\\(E(X^2) = \\dfrac{0 + 12 + 24 + 9}{27} = \\dfrac{45}{27} = \\dfrac{5}{3}\\)"
+            },
+            {
+              "explain": "Subtract \\(\\mu^2\\). (\\(\\dfrac{5}{3}\\) is only \\(E(X^2)\\).)",
+              "work": "\\(\\mathrm{Var}(X) = \\dfrac{5}{3} - 1^2 = \\dfrac{2}{3}\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q16a"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-9c-q16b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The three-dice experiment where \\(X\\) is the number of dice showing 5 or 6 was done 100 times:\n\n\\(\\begin{array}{c|cccc} x & 0 & 1 & 2 & 3 \\\\ \\hline f & 33 & 47 & 16 & 4 \\end{array}\\)\n\nFind the standard deviation of the experimental data, correct to 2 decimal places.",
+          "options": [
+            "\\(0.64\\)",
+            "\\(0.8\\)",
+            "\\(0.82\\)",
+            "\\(1.47\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert to relative frequencies (divide by 100), then use \\(\\sum x^2 f_r - \\bar{x}^2\\).",
+          "solution": "\\(\\sigma^2 = 1.47 - 0.8281 = 0.6419\\), so \\(\\sigma \\approx 0.80\\).",
+          "steps": [
+            {
+              "explain": "Find the mean using relative frequencies 0.33, 0.47, 0.16, 0.04.",
+              "work": "\\(\\bar{x} = 0 + 0.47 + 0.32 + 0.12 = 0.91\\)"
+            },
+            {
+              "explain": "Find the mean of \\(x^2\\).",
+              "work": "\\(\\sum x^2 f_r = 0 + 0.47 + 0.64 + 0.36 = 1.47\\)"
+            },
+            {
+              "explain": "Variance, then the standard deviation. (0.64 is the variance; 0.82 is the theoretical standard deviation.)",
+              "work": "\\(\\sigma^2 = 1.47 - 0.91^2 = 0.6419,\\quad \\sigma \\approx 0.80\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q16b"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9c-q17a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Two dice are rolled and \\(X\\) is the sum. The table gives \\(\\mu = 7\\) and \\(\\sum x^2 p(x) = \\dfrac{1974}{36}\\). Find the variance \\(\\sigma^2\\).",
+          "options": [
+            "\\(7\\)",
+            "\\(\\dfrac{35}{6}\\)",
+            "\\(\\dfrac{35}{36}\\)",
+            "\\(2.42\\)"
+          ],
+          "answer": 1,
+          "hint": "Variance is \\(E(X^2) - \\mu^2\\). Simplify \\(\\dfrac{1974}{36}\\) first.",
+          "solution": "\\(\\sigma^2 = \\dfrac{329}{6} - 49 = \\dfrac{35}{6}\\), so \\(\\sigma \\approx 2.42\\).",
+          "steps": [
+            {
+              "explain": "Simplify \\(E(X^2)\\).",
+              "work": "\\(E(X^2) = \\dfrac{1974}{36} = \\dfrac{329}{6}\\)"
+            },
+            {
+              "explain": "Subtract \\(\\mu^2 = 49\\).",
+              "work": "\\(\\sigma^2 = \\dfrac{329}{6} - 49 = \\dfrac{329 - 294}{6}\\)"
+            },
+            {
+              "explain": "Simplify. (2.42 is the standard deviation \\(\\sqrt{\\tfrac{35}{6}}\\), not the variance.)",
+              "work": "\\(\\sigma^2 = \\dfrac{35}{6}\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q17a"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-9c-q18c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Two dice are rolled and \\(X\\) is the (positive) difference of the numbers.\n\n\\(\\begin{array}{c|cccccc} x & 0 & 1 & 2 & 3 & 4 & 5 \\\\ \\hline p(x) & \\dfrac{6}{36} & \\dfrac{10}{36} & \\dfrac{8}{36} & \\dfrac{6}{36} & \\dfrac{4}{36} & \\dfrac{2}{36} \\end{array}\\)\n\nFind the standard deviation, correct to 2 decimal places.",
+          "options": [
+            "\\(2.05\\)",
+            "\\(1.94\\)",
+            "\\(5.83\\)",
+            "\\(1.43\\)"
+          ],
+          "answer": 3,
+          "hint": "Find \\(\\mu = \\sum xp(x)\\) and \\(E(X^2) = \\sum x^2 p(x)\\), then take the square root of the variance.",
+          "solution": "\\(\\sigma^2 \\approx 5.83 - 3.78 = 2.05\\), so \\(\\sigma \\approx 1.43\\).",
+          "steps": [
+            {
+              "explain": "Find the mean.",
+              "work": "\\(\\mu = \\dfrac{0 + 10 + 16 + 18 + 16 + 10}{36} = \\dfrac{70}{36} \\approx 1.94\\)"
+            },
+            {
+              "explain": "Find \\(E(X^2)\\).",
+              "work": "\\(E(X^2) = \\dfrac{0 + 10 + 32 + 54 + 64 + 50}{36} = \\dfrac{210}{36} \\approx 5.83\\)"
+            },
+            {
+              "explain": "Find the variance, then the square root. (1.94 is the mean, 5.83 is \\(E(X^2)\\) and 2.05 the variance.)",
+              "work": "\\(\\sigma^2 = \\dfrac{210}{36} - \\left(\\dfrac{70}{36}\\right)^2 \\approx 2.05,\\quad \\sigma \\approx 1.43\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "9C Q18c"
+          },
+          "xp": 4
+        }
+      ]
     }
   ]
 }
