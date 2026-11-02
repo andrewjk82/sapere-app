@@ -17753,6 +17753,1267 @@
       ]
     },
     {
+      "topicId": "y12a-8F",
+      "code": "8F",
+      "title": "The pension from a super fund or annuity",
+      "questions": [
+        {
+          "id": "y12a-8f-p1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A superannuation account starts with \\(\\$80\\,000\\) on 1 January 2020 and earns 3% p.a., compounded annually. It pays a pension of \\(\\$21\\,522.16\\) at the end of each year (31 December) for four years. What is the total of the pension payments?",
+          "options": [
+            "\\(\\$80\\,000.00\\)",
+            "\\(\\$86\\,088.64\\)",
+            "\\(\\$64\\,566.48\\)",
+            "\\(\\$88\\,671.30\\)"
+          ],
+          "answer": 1,
+          "hint": "There are four equal payments, so multiply. Interest is not added to this total.",
+          "solution": "The total is \\(4 \\times \\$21\\,522.16 = \\$86\\,088.64\\), with the last payment on 31 December 2023.",
+          "steps": [
+            {
+              "explain": "The pension is paid at the end of each of the four years, 2020 to 2023, so there are four payments.",
+              "work": "\\(n = 4\\)"
+            },
+            {
+              "explain": "Total paid is the number of payments times the size of each payment. (The initial capital of 80 000 is not the total paid out, and the interest is already included in the size of each payment.)",
+              "work": "\\(4 \\times \\$21\\,522.16 = \\$86\\,088.64\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q1a"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-8f-p1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A superannuation account starts with \\(\\$80\\,000\\) and earns 3% p.a., compounded annually. If no pension payments were made, what would the initial capital have grown to after four years (by 31 December 2023)?",
+          "options": [
+            "\\(\\$87\\,418.16\\)",
+            "\\(\\$89\\,600.00\\)",
+            "\\(\\$92\\,741.93\\)",
+            "\\(\\$90\\,040.70\\)"
+          ],
+          "answer": 3,
+          "hint": "Compound interest: \\(A = P(1 + R)^n\\). How many times is interest added in four years?",
+          "solution": "\\(A = 80\\,000 \\times 1.03^4 = \\$90\\,040.70\\)",
+          "steps": [
+            {
+              "explain": "Use the compound interest formula with \\(R = 0.03\\) per year and \\(n = 4\\) years.",
+              "work": "\\(A = P(1 + R)^n\\)"
+            },
+            {
+              "explain": "Substitute. (Simple interest would give \\(\\$89\\,600.00\\), and using 3 or 5 years changes the number of compounding periods.)",
+              "work": "\\(A = 80\\,000 \\times 1.03^4 = \\$90\\,040.70\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q1b"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-8f-p1c-i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A pension of \\(\\$21\\,522.16\\) is paid at the end of each year for four years from a fund earning 3% p.a., compounded annually. If the first payment (at the end of year 1) had instead been invested until the end of year 4, what would it be worth?",
+          "options": [
+            "\\(\\$23\\,517.85\\)",
+            "\\(\\$24\\,223.38\\)",
+            "\\(\\$22\\,832.86\\)",
+            "\\(\\$22\\,167.82\\)"
+          ],
+          "answer": 0,
+          "hint": "The first payment is made at the end of year 1, so count how many years of interest it earns before the end of year 4.",
+          "solution": "\\(\\$21\\,522.16 \\times 1.03^3 = \\$23\\,517.85\\)",
+          "steps": [
+            {
+              "explain": "The first payment is made at the end of year 1, and it is invested until the end of year 4. That is 3 years of interest.",
+              "work": "\\(n = 4 - 1 = 3\\)"
+            },
+            {
+              "explain": "Grow it with the compound interest formula. (Using 4 years would be wrong, because there is no interest in the year it is paid.)",
+              "work": "\\(\\$21\\,522.16 \\times 1.03^3 = \\$23\\,517.85\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q1c-i"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-8f-p1d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The four pension payments of \\(\\$21\\,522.16\\) grow with 3% p.a. interest to the end of year 4, giving the values \\(\\$21\\,522.16\\), \\(\\$22\\,167.82\\), \\(\\$22\\,832.86\\) and \\(\\$23\\,517.85\\). These form a GP with \\(a = \\$21\\,522.16\\) and \\(r = 1.03\\). Use \\(S_n = \\dfrac{a(r^n - 1)}{r - 1}\\) to find their total.",
+          "options": [
+            "\\(\\$2\\,701.22\\)",
+            "\\(\\$66\\,522.84\\)",
+            "\\(\\$90\\,040.69\\)",
+            "\\(\\$86\\,088.64\\)"
+          ],
+          "answer": 2,
+          "hint": "There are four terms, so \\(n = 4\\), and \\(r - 1 = 0.03\\).",
+          "solution": "\\(S_4 = \\$90\\,040.69\\), which equals the final value of the initial capital, so no funds remain.",
+          "steps": [
+            {
+              "explain": "The GP has first term \\(a = 21\\,522.16\\), ratio \\(r = 1.03\\) and four terms.",
+              "work": "\\(S_4 = \\dfrac{a(r^4 - 1)}{r - 1}\\)"
+            },
+            {
+              "explain": "Substitute. (Forgetting to divide by \\(r - 1\\) gives a much smaller number, and \\(4 \\times 21\\,522.16\\) ignores interest.)",
+              "work": "\\(S_4 = \\dfrac{\\$21\\,522.16(1.03^4 - 1)}{0.03} = \\$90\\,040.69\\)"
+            },
+            {
+              "explain": "This equals the final value of the initial capital, so the fund is exactly used up.",
+              "work": "\\(\\$90\\,040.70\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q1d"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-8f-p2c-i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A superannuation account starts with \\(\\$120\\,000\\) on 1 July 2020 and earns 4% p.a., compounded annually. It pays \\(\\$26\\,955.25\\) at the end of each year (30 June) for five years. What would the first payment (30 June 2021) be worth on 30 June 2025 if it had been invested?",
+          "options": [
+            "\\(\\$32\\,795.18\\)",
+            "\\(\\$30\\,320.99\\)",
+            "\\(\\$31\\,533.83\\)",
+            "\\(\\$28\\,033.46\\)"
+          ],
+          "answer": 2,
+          "hint": "How many years pass between 30 June 2021 and 30 June 2025?",
+          "solution": "\\(\\$26\\,955.25 \\times 1.04^4 = \\$31\\,533.83\\)",
+          "steps": [
+            {
+              "explain": "From 30 June 2021 to 30 June 2025 is 4 years, so the first payment earns 4 years of interest.",
+              "work": "\\(n = 2025 - 2021 = 4\\)"
+            },
+            {
+              "explain": "Grow the payment. (Five years would count a year of interest that the payment does not earn.)",
+              "work": "\\(\\$26\\,955.25 \\times 1.04^4 = \\$31\\,533.83\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q2c-i"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-8f-p2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A fund starts with \\(\\$120\\,000\\) and earns 4% p.a., compounded annually. If no pension payments were made, what would the capital grow to after five years?",
+          "options": [
+            "\\(\\$145\\,998.35\\)",
+            "\\(\\$140\\,383.03\\)",
+            "\\(\\$144\\,000.00\\)",
+            "\\(\\$151\\,838.28\\)"
+          ],
+          "answer": 0,
+          "hint": "Use \\(A = P(1+R)^n\\) with \\(R = 0.04\\) and \\(n = 5\\).",
+          "solution": "\\(A = 120\\,000 \\times 1.04^5 = \\$145\\,998.35\\)",
+          "steps": [
+            {
+              "explain": "Use the compound interest formula.",
+              "work": "\\(A = P(1 + R)^n\\)"
+            },
+            {
+              "explain": "Substitute \\(P = 120\\,000\\), \\(R = 0.04\\) and \\(n = 5\\). (Simple interest would give \\(\\$144\\,000.00\\).)",
+              "work": "\\(A = 120\\,000 \\times 1.04^5 = \\$145\\,998.35\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q2b"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-8f-p3a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Situ deposits \\(\\$640\\,000\\) into a superannuation fund. It pays her \\(\\$65\\,896.17\\) at the end of each year for 15 years. What is the total of the pension payments?",
+          "options": [
+            "\\(\\$640\\,000.00\\)",
+            "\\(\\$922\\,546.38\\)",
+            "\\(\\$1\\,533\\,797.24\\)",
+            "\\(\\$988\\,442.55\\)"
+          ],
+          "answer": 3,
+          "hint": "Multiply the size of one payment by the number of payments.",
+          "solution": "\\(15 \\times \\$65\\,896.17 = \\$988\\,442.55\\)",
+          "steps": [
+            {
+              "explain": "There is one payment at the end of each of the 15 years.",
+              "work": "\\(n = 15\\)"
+            },
+            {
+              "explain": "Multiply. (The initial deposit is not the total paid out.)",
+              "work": "\\(15 \\times \\$65\\,896.17 = \\$988\\,442.55\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q3a"
+          },
+          "xp": 2
+        },
+        {
+          "id": "y12a-8f-p3b-ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Situ's fund earns 6% p.a., compounded annually, and pays \\(M = \\$65\\,896.17\\) at the end of each year for 15 years. Which expression gives the value at the end of year 15 of the first payment (made at the end of year 1)?",
+          "options": [
+            "\\(\\$65\\,896.17 \\times 1.06^{15}\\)",
+            "\\(\\$65\\,896.17 \\times 1.06^{14}\\)",
+            "\\(\\$65\\,896.17 \\times 1.06^{13}\\)",
+            "\\(\\$65\\,896.17 \\times 1.06 \\times 14\\)"
+          ],
+          "answer": 1,
+          "hint": "Count the years of interest from the end of year 1 to the end of year 15.",
+          "solution": "\\(\\$65\\,896.17 \\times 1.06^{14}\\)",
+          "steps": [
+            {
+              "explain": "From the end of year 1 to the end of year 15 is 14 years.",
+              "work": "\\(15 - 1 = 14\\)"
+            },
+            {
+              "explain": "So the first payment is multiplied by \\(1.06\\) fourteen times. (Using 15 would give the payment a year of interest it does not earn, and 13 is the second payment.)",
+              "work": "\\(\\$65\\,896.17 \\times 1.06^{14}\\)"
+            },
+            {
+              "explain": "The later payments earn fewer years of interest, down to the last, which earns none.",
+              "work": "\\(\\$65\\,896.17 \\times 1.06^{14},\\ \\$65\\,896.17 \\times 1.06^{13},\\ \\dots,\\ \\$65\\,896.17\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q3b-ii"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-8f-p3c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Situ's initial capital is \\(\\$640\\,000\\), the interest rate is 6% p.a. compounded annually, and she receives \\(M = \\$65\\,896.17\\) at the end of each year for 15 years. Which expression gives the balance \\(A_{15}\\) at the end of 15 years?",
+          "options": [
+            "\\(\\$640\\,000 \\times 1.06^{15} - \\$65\\,896.17 \\times \\dfrac{1.06^{14} - 1}{0.06}\\)",
+            "\\(\\$640\\,000 \\times 1.06^{15} - \\$65\\,896.17 \\times \\dfrac{1.06^{15} - 1}{0.06}\\)",
+            "\\(\\$640\\,000 \\times 1.06^{15} + \\$65\\,896.17 \\times \\dfrac{1.06^{15} - 1}{0.06}\\)",
+            "\\(\\$640\\,000 \\times 1.06^{15} - \\$65\\,896.17 \\times 15\\)"
+          ],
+          "answer": 1,
+          "hint": "The payments with interest form a GP \\(1 + 1.06 + \\dots + 1.06^{14}\\), which has 15 terms.",
+          "solution": "\\(A_{15} = \\$640\\,000 \\times 1.06^{15} - \\$65\\,896.17 \\times \\dfrac{1.06^{15} - 1}{0.06}\\)",
+          "steps": [
+            {
+              "explain": "Without any payments the capital would grow to this much.",
+              "work": "\\(640\\,000 \\times 1.06^{15}\\)"
+            },
+            {
+              "explain": "The payments, each earning interest from the date it was paid, are the GP below (15 terms, first term 1, ratio 1.06), multiplied by M.",
+              "work": "\\(M\\left(1 + 1.06 + 1.06^2 + \\dots + 1.06^{14}\\right)\\)"
+            },
+            {
+              "explain": "Sum the GP with \\(S_n = \\dfrac{a(r^n - 1)}{r - 1}\\), \\(n = 15\\): the exponent is 15 (not 14), because there are 15 terms.",
+              "work": "\\(S_{15} = \\dfrac{1.06^{15} - 1}{0.06}\\)"
+            },
+            {
+              "explain": "The balance is the grown capital minus the grown payments. (Adding the payments, or ignoring interest on them, is wrong.)",
+              "work": "\\(A_{15} = \\$640\\,000 \\times 1.06^{15} - \\$65\\,896.17 \\times \\dfrac{1.06^{15} - 1}{0.06}\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q3c"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-8f-p4a-i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Veronica invests \\(\\$900\\,000\\) in a pension scheme for 25 years at 5.4% p.a., compounded monthly, with payments at the end of each month. What would her initial investment have grown to after 25 years if no payments had been made, to the nearest dollar?",
+          "options": [
+            "\\(\\$3\\,351\\,643\\)",
+            "\\(\\$1\\,006\\,911\\)",
+            "\\(\\$3\\,445\\,680\\)",
+            "\\(\\$3\\,461\\,185\\)"
+          ],
+          "answer": 3,
+          "hint": "The rate per month is \\(5.4\\% \\div 12\\), and there are \\(25 \\times 12\\) months.",
+          "solution": "\\(900\\,000 \\times 1.0045^{300} \\approx \\$3\\,461\\,185\\)",
+          "steps": [
+            {
+              "explain": "Convert to monthly figures: the rate is \\(5.4\\% \\div 12 = 0.45\\%\\) per month, and 25 years is 300 months.",
+              "work": "\\(R = 0.0045,\\quad n = 300\\)"
+            },
+            {
+              "explain": "Apply the compound interest formula. (Using 25 years at 5.4% annually, or 25 months, are both wrong units.)",
+              "work": "\\(900\\,000 \\times 1.0045^{300} = \\$3\\,461\\,185\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q4a-i"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-8f-p4c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Veronica invests \\(\\$900\\,000\\) at 5.4% p.a., compounded monthly, and the fund pays her \\(M\\) at the end of each month for 25 years, leaving a final balance of zero. Find \\(M\\), correct to the nearest cent.",
+          "options": [
+            "\\(\\$5\\,473.17\\)",
+            "\\(\\$3\\,000.00\\)",
+            "\\(\\$4\\,050.00\\)",
+            "\\(\\$5\\,481.84\\)"
+          ],
+          "answer": 0,
+          "hint": "Set \\(A_{300} = 0\\) in \\(A_{300} = P \\times 1.0045^{300} - M\\,\\dfrac{1.0045^{300} - 1}{0.0045}\\) and solve for \\(M\\).",
+          "solution": "\\(M = \\dfrac{900\\,000 \\times 1.0045^{300} \\times 0.0045}{1.0045^{300} - 1} \\approx \\$5\\,473.17\\)",
+          "steps": [
+            {
+              "explain": "The balance after 300 payments is the grown capital minus the grown payments.",
+              "work": "\\(A_{300} = 900\\,000 \\times 1.0045^{300} - M \\times \\dfrac{1.0045^{300} - 1}{0.0045}\\)"
+            },
+            {
+              "explain": "The pension has finished, so \\(A_{300} = 0\\).",
+              "work": "\\(M \\times \\dfrac{1.0045^{300} - 1}{0.0045} = 900\\,000 \\times 1.0045^{300}\\)"
+            },
+            {
+              "explain": "Solve for \\(M\\). (Dividing 900 000 by 300 ignores interest, and \\(900\\,000 \\times 0.0045\\) would only keep the capital unchanged.)",
+              "work": "\\(M = \\dfrac{900\\,000 \\times 1.0045^{300} \\times 0.0045}{1.0045^{300} - 1} = \\$5\\,473.17\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q4c"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-8f-p4d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Veronica receives \\(\\$5\\,473.17\\) at the end of each month for 25 years. How much does she receive from the pension fund in total?",
+          "options": [
+            "\\(\\$136\\,829.25\\)",
+            "\\(\\$65\\,678.04\\)",
+            "\\(\\$1\\,641\\,951.00\\)",
+            "\\(\\$900\\,000.00\\)"
+          ],
+          "answer": 2,
+          "hint": "Count the number of monthly payments in 25 years.",
+          "solution": "\\(300 \\times \\$5\\,473.17 = \\$1\\,641\\,951.00\\)",
+          "steps": [
+            {
+              "explain": "25 years of monthly payments is 300 payments.",
+              "work": "\\(25 \\times 12 = 300\\)"
+            },
+            {
+              "explain": "Multiply. (The total is more than the 900 000 she put in, because of the interest the fund earned.)",
+              "work": "\\(300 \\times \\$5\\,473.17 = \\$1\\,641\\,951.00\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q4d"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-8f-p5c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Jake's pension has initial capital \\(\\$700\\,000\\), interest 6% p.a. compounded monthly, and monthly payments at the end of each month for 20 years, with nothing left at the end. Find the monthly payment \\(M\\), correct to the nearest cent.",
+          "options": [
+            "\\(\\$2\\,916.67\\)",
+            "\\(\\$5\\,025.90\\)",
+            "\\(\\$5\\,015.02\\)",
+            "\\(\\$3\\,500.00\\)"
+          ],
+          "answer": 2,
+          "hint": "Use \\(0 = 700\\,000 \\times 1.005^{240} - M\\,\\dfrac{1.005^{240} - 1}{0.005}\\).",
+          "solution": "\\(M = \\dfrac{700\\,000 \\times 1.005^{240} \\times 0.005}{1.005^{240} - 1} \\approx \\$5\\,015.02\\)",
+          "steps": [
+            {
+              "explain": "The monthly rate is \\(6\\% \\div 12 = 0.5\\%\\), and 20 years is 240 months. The final balance is zero.",
+              "work": "\\(0 = 700\\,000 \\times 1.005^{240} - M \\times \\dfrac{1.005^{240} - 1}{0.005}\\)"
+            },
+            {
+              "explain": "Rearrange for \\(M\\).",
+              "work": "\\(M = \\dfrac{700\\,000 \\times 1.005^{240} \\times 0.005}{1.005^{240} - 1}\\)"
+            },
+            {
+              "explain": "Evaluate. (\\(\\$2\\,916.67\\) is capital divided by months, with no interest, and \\(\\$3\\,500.00\\) is only the interest each month, which would never run the capital down.)",
+              "work": "\\(M = \\$5\\,015.02\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q5c"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-8f-pr1b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A fund starts with \\(\\$80\\,000\\), earns 3% p.a. compounded annually, and pays out \\(\\$21\\,522.16\\) at the end of each year. Let \\(A_n\\) be the balance at the end of year \\(n\\), just after the payment, with \\(A_1 = 80\\,000 \\times 1.03 - \\$21\\,522.16\\). Which expression gives \\(A_2\\)?",
+          "options": [
+            "\\(80\\,000 \\times 1.03^2 - \\$21\\,522.16(1 + 1.03)\\)",
+            "\\(80\\,000 \\times 1.03^2 - \\$21\\,522.16\\)",
+            "\\(80\\,000 \\times 1.03^2 - \\$21\\,522.16(1 + 1.03 + 1.03^2)\\)",
+            "\\(80\\,000 \\times 1.03 - 2 \\times \\$21\\,522.16\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(A_2 = A_1 \\times 1.03 - M\\). Substitute \\(A_1\\), then factor the two payment terms.",
+          "solution": "\\(A_2 = 80\\,000 \\times 1.03^2 - \\$21\\,522.16(1 + 1.03)\\)",
+          "steps": [
+            {
+              "explain": "Interest is added to \\(A_1\\) for the second year, then the second payment is taken out.",
+              "work": "\\(A_2 = A_1 \\times 1.03 - \\$21\\,522.16\\)"
+            },
+            {
+              "explain": "Substitute \\(A_1\\) and expand the first term.",
+              "work": "\\(A_2 = 80\\,000 \\times 1.03^2 - \\$21\\,522.16 \\times 1.03 - \\$21\\,522.16\\)"
+            },
+            {
+              "explain": "Factor out the payment: the first payment has earned one year of interest, the second none. (Leaving out the factor 1.03, or going to \\(1.03^2\\), is wrong.)",
+              "work": "\\(A_2 = 80\\,000 \\times 1.03^2 - \\$21\\,522.16(1 + 1.03)\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Qr1b"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-8f-pr1e",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A fund starts with \\(\\$80\\,000\\) at 3% p.a. compounded annually and pays \\(\\$21\\,522.16\\) at the end of each year. After four years, \\(A_4 = 80\\,000 \\times 1.03^4 - \\$21\\,522.16(1 + 1.03 + 1.03^2 + 1.03^3)\\). Evaluate \\(A_4\\).",
+          "options": [
+            "\\(\\$21\\,522.16\\)",
+            "\\(\\$90\\,040.70\\)",
+            "\\(\\$80\\,000.00\\)",
+            "\\(\\$0\\)"
+          ],
+          "answer": 3,
+          "hint": "The bracket is a GP with \\(a = 1\\), \\(r = 1.03\\) and 4 terms. Sum it, then evaluate.",
+          "solution": "\\(A_4 = 90\\,040.70 - 90\\,040.70 = 0\\), so the fund is fully paid out.",
+          "steps": [
+            {
+              "explain": "The bracket is a GP with first term 1, ratio 1.03 and 4 terms.",
+              "work": "\\(1 + 1.03 + 1.03^2 + 1.03^3 = \\dfrac{1.03^4 - 1}{0.03}\\)"
+            },
+            {
+              "explain": "So \\(A_4\\) can be written with the GP formula.",
+              "work": "\\(A_4 = 80\\,000 \\times 1.03^4 - \\$21\\,522.16 \\times \\dfrac{1.03^4 - 1}{0.03}\\)"
+            },
+            {
+              "explain": "Evaluate: the two terms are equal (\\(90\\,040.70 - 90\\,040.70\\)), so the fund is completely paid out. (The other values come from only evaluating one of the two terms.)",
+              "work": "\\(A_4 = 0\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Qr1e"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-8f-p6c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A retiree rolls \\(\\$600\\,000\\) into pension phase to receive monthly payments for 20 years, with interest 5.7% p.a. compounded monthly and nothing left at the end. Find his annual income from the pension, correct to the nearest dollar.",
+          "options": [
+            "\\(\\$4\\,195\\)",
+            "\\(\\$50\\,345\\)",
+            "\\(\\$612\\,528\\)",
+            "\\(\\$30\\,000\\)"
+          ],
+          "answer": 1,
+          "hint": "The monthly rate is \\(5.7\\% \\div 12 = 0.475\\%\\). Find the monthly payment first, then multiply by 12.",
+          "solution": "\\(M \\approx \\$4\\,195.39\\) per month, so the annual income is \\(12 \\times \\$4\\,195.39 \\approx \\$50\\,345\\).",
+          "steps": [
+            {
+              "explain": "With \\(R = 0.00475\\) per month and \\(n = 240\\), setting \\(A_{240} = 0\\) gives the monthly payment.",
+              "work": "\\(M = \\dfrac{600\\,000 \\times 1.00475^{240} \\times 0.00475}{1.00475^{240} - 1}\\)"
+            },
+            {
+              "explain": "Evaluate the monthly payment.",
+              "work": "\\(M = \\$4\\,195.39\\)"
+            },
+            {
+              "explain": "Annual income is 12 monthly payments. (The monthly amount alone is not annual, and 600 000 divided by 20 ignores interest.)",
+              "work": "\\(12 \\times \\$4\\,195.39 = \\$50\\,345\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q6c"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-8f-p7c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Robyn wants \\(\\$60\\,000\\) a year, paid as \\(\\$5\\,000\\) at the end of each month for 25 years from a fund earning 6.3% p.a. compounded monthly. With initial capital \\(P\\), \\(A_{300} = P \\times 1.00525^{300} - \\$5\\,000 \\times \\dfrac{1.00525^{300} - 1}{0.00525}\\). How much does she need initially, correct to the nearest \\(\\$10\\)?",
+          "options": [
+            "\\(\\$1\\,500\\,000\\)",
+            "\\(\\$754\\,420\\)",
+            "\\(\\$311\\,793\\)",
+            "\\(\\$3\\,629\\,410\\)"
+          ],
+          "answer": 1,
+          "hint": "Set \\(A_{300} = 0\\) and solve for \\(P\\). Divide both sides by \\(1.00525^{300}\\).",
+          "solution": "\\(P = 5000 \\times \\dfrac{1 - 1.00525^{-300}}{0.00525} \\approx \\$754\\,420\\)",
+          "steps": [
+            {
+              "explain": "The fund is exhausted after 300 payments, so \\(A_{300} = 0\\).",
+              "work": "\\(P \\times 1.00525^{300} = 5000 \\times \\dfrac{1.00525^{300} - 1}{0.00525}\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(1.00525^{300}\\).",
+              "work": "\\(P = 5000 \\times \\dfrac{1 - 1.00525^{-300}}{0.00525}\\)"
+            },
+            {
+              "explain": "Evaluate. (Simply multiplying 60 000 by 25 ignores the interest the fund earns, which is why the capital needed is much less.)",
+              "work": "\\(P \\approx \\$754\\,417 \\approx \\$754\\,420\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q7c"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-8f-p8b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Jack retires with \\(\\$1\\,300\\,000\\) in a fund earning 7.2% p.a., compounded monthly. He is paid \\(M\\) at the end of each month so that the fund lasts 25 years. Find \\(M\\), correct to the nearest cent.",
+          "options": [
+            "\\(\\$4\\,333.33\\)",
+            "\\(\\$7\\,800.00\\)",
+            "\\(\\$9\\,464.24\\)",
+            "\\(\\$9\\,354.65\\)"
+          ],
+          "answer": 3,
+          "hint": "Use \\(R = 0.006\\) per month, \\(n = 300\\), and set \\(A_{300} = 0\\) in \\(A_n = P \\times 1.006^n - M\\,\\dfrac{1.006^n - 1}{0.006}\\).",
+          "solution": "\\(M = \\dfrac{1\\,300\\,000 \\times 1.006^{300} \\times 0.006}{1.006^{300} - 1} \\approx \\$9\\,354.65\\)",
+          "steps": [
+            {
+              "explain": "The monthly rate is \\(7.2\\% \\div 12 = 0.6\\%\\), and 25 years is 300 months.",
+              "work": "\\(0 = 1\\,300\\,000 \\times 1.006^{300} - M \\times \\dfrac{1.006^{300} - 1}{0.006}\\)"
+            },
+            {
+              "explain": "Rearrange for \\(M\\).",
+              "work": "\\(M = \\dfrac{1\\,300\\,000 \\times 1.006^{300} \\times 0.006}{1.006^{300} - 1}\\)"
+            },
+            {
+              "explain": "Evaluate. (\\(\\$7\\,800.00\\) per month would only take the interest and never exhaust the fund, and \\(\\$4\\,333.33\\) ignores interest.)",
+              "work": "\\(M = \\$9\\,354.65\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q8b"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-8f-p8d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Jack's fund started with \\(\\$1\\,300\\,000\\) and earns 7.2% p.a., compounded monthly, with monthly payments of \\(\\$9\\,354.65\\). He dies after 21 years (252 payments), and the remaining balance \\(A_{252} = \\$389\\,144.27\\) is shared equally among his three children. How much does each child receive?",
+          "options": [
+            "\\(\\$129\\,714.76\\)",
+            "\\(\\$389\\,144.27\\)",
+            "\\(\\$194\\,572.13\\)",
+            "\\(\\$97\\,286.07\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide the balance remaining after 252 months by 3.",
+          "solution": "\\(\\dfrac{\\$389\\,144.27}{3} \\approx \\$129\\,714.76\\) each.",
+          "steps": [
+            {
+              "explain": "The balance after 21 years (252 months) is given.",
+              "work": "\\(A_{252} = \\$389\\,144.27\\)"
+            },
+            {
+              "explain": "Divide it equally among three children.",
+              "work": "\\(\\dfrac{\\$389\\,144.27}{3} = \\$129\\,714.76\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q8d"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-8f-p8c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Jack's monthly pension was \\(\\$9\\,354.65\\). He lived happily for 21 years after retiring and then died in the middle of the next month. How much had he received in total?",
+          "options": [
+            "\\(\\$196\\,447.65\\)",
+            "\\(\\$2\\,806\\,395.00\\)",
+            "\\(\\$2\\,357\\,371.80\\)",
+            "\\(\\$2\\,469\\,627.60\\)"
+          ],
+          "answer": 2,
+          "hint": "He is paid at the end of each month, so count the payments he lived to receive. He died mid-month, so the next payment was never made.",
+          "solution": "\\(252 \\times \\$9\\,354.65 = \\$2\\,357\\,371.80\\)",
+          "steps": [
+            {
+              "explain": "21 years of monthly payments is 252 payments. The payment for the month he died in falls at the end of the month, so he did not receive it.",
+              "work": "\\(21 \\times 12 = 252\\)"
+            },
+            {
+              "explain": "Multiply. (21 payments would be annual, and 300 payments is the full 25 years.)",
+              "work": "\\(252 \\times \\$9\\,354.65 = \\$2\\,357\\,371.80\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q8c"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-8f-p9a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Francesca invests \\(\\$950\\,000\\) at 4.8% p.a., compounded monthly, and is paid \\(\\$3\\,800\\) at the end of each month. Why is her balance still \\(\\$950\\,000\\) after 20 years?",
+          "options": [
+            "Because \\(3800 \\times 240\\) equals the initial capital",
+            "Because the interest rate is compounded monthly rather than annually",
+            "The payment equals one month's interest: \\(950\\,000 \\times 0.004 = 3800\\), so the capital never changes",
+            "Because the pension is taken at the start of each month"
+          ],
+          "answer": 2,
+          "hint": "The monthly rate is \\(4.8\\% \\div 12 = 0.4\\%\\). Compare 3800 with one month's interest.",
+          "solution": "Each month the fund earns \\(950\\,000 \\times 0.004 = 3800\\) in interest, which is exactly the payment, so the capital never changes.",
+          "steps": [
+            {
+              "explain": "Interest earned in one month on the capital.",
+              "work": "\\(950\\,000 \\times 0.004 = 3800\\)"
+            },
+            {
+              "explain": "The payment removes exactly the interest earned, so the balance is back to \\(950\\,000\\) at the end of every month. (\\(3800 \\times 240 = 912\\,000\\) is not the initial capital.)",
+              "work": "\\(A_n = 950\\,000 \\text{ for all } n\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q9a"
+          },
+          "xp": 3
+        },
+        {
+          "id": "y12a-8f-p9b-ii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Francesca's fund has \\(\\$950\\,000\\) at 4.8% p.a. compounded monthly. For it to last exactly 20 years with payments at the end of each month, what must \\(M\\) be, correct to the nearest cent?",
+          "options": [
+            "\\(\\$6\\,165.10\\)",
+            "\\(\\$3\\,800.00\\)",
+            "\\(\\$3\\,958.33\\)",
+            "\\(\\$6\\,180.48\\)"
+          ],
+          "answer": 0,
+          "hint": "Set \\(A_{240} = 0\\) in \\(A_{240} = 950\\,000 \\times 1.004^{240} - M\\,\\dfrac{1.004^{240} - 1}{0.004}\\).",
+          "solution": "\\(M = \\dfrac{950\\,000 \\times 1.004^{240} \\times 0.004}{1.004^{240} - 1} \\approx \\$6\\,165.10\\)",
+          "steps": [
+            {
+              "explain": "With \\(A_{240} = 0\\), the grown capital equals the grown payments.",
+              "work": "\\(M \\times \\dfrac{1.004^{240} - 1}{0.004} = 950\\,000 \\times 1.004^{240}\\)"
+            },
+            {
+              "explain": "Solve for \\(M\\). (3800 only pays the interest, so it would keep the capital but never use it up.)",
+              "work": "\\(M = \\dfrac{950\\,000 \\times 1.004^{240} \\times 0.004}{1.004^{240} - 1} = \\$6\\,165.10\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q9b-ii"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-8f-p9c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Francesca (initial capital \\(\\$950\\,000\\), 4.8% p.a. compounded monthly) takes \\(\\$5\\,500\\) at the end of each month instead. After 20 years the fund has \\(\\$267\\,152.44\\) left after the 240th regular payment, and this is paid out together with the final payment. What is her final payment?",
+          "options": [
+            "\\(\\$267\\,152.44\\)",
+            "\\(\\$5\\,500.00\\)",
+            "\\(\\$261\\,652.44\\)",
+            "\\(\\$272\\,652.44\\)"
+          ],
+          "answer": 3,
+          "hint": "The final payment is the regular payment plus the balance that is left.",
+          "solution": "\\(\\$5\\,500 + \\$267\\,152.44 = \\$272\\,652.44\\)",
+          "steps": [
+            {
+              "explain": "After the 240th regular payment of 5500, the balance is \\(A_{240}\\).",
+              "work": "\\(A_{240} = \\$267\\,152.44\\)"
+            },
+            {
+              "explain": "This balance is paid out together with the final payment. (Paying only the balance forgets the regular 5500; paying 5500 leaves the money in the fund.)",
+              "work": "\\(\\$5\\,500 + \\$267\\,152.44 = \\$272\\,652.44\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q9c"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-8f-p10b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Jocelyn retires with \\(\\$950\\,000\\) at 4.8% p.a. compounded monthly and receives \\(\\$6\\,165.10\\) each month. Then \\(A_{240} = 950\\,000 \\times 1.004^{240} - 6165.10 \\times \\dfrac{1.004^{240} - 1}{0.004} = -\\$1.62\\). What is her last payment?",
+          "options": [
+            "\\(\\$6\\,165.10\\)",
+            "\\(\\$6\\,163.48\\)",
+            "\\(\\$6\\,166.72\\)",
+            "\\(\\$1.62\\)"
+          ],
+          "answer": 1,
+          "hint": "A negative balance means the fund ran out slightly early. The last payment must be reduced by that amount.",
+          "solution": "\\(\\$6\\,165.10 - \\$1.62 = \\$6\\,163.48\\)",
+          "steps": [
+            {
+              "explain": "A balance of \\(-1.62\\) means the regular payments over-draw the fund by that amount.",
+              "work": "\\(A_{240} = -1.62\\)"
+            },
+            {
+              "explain": "So the last payment is reduced by 1.62. (Adding it, or paying the full 6165.10, would take money the fund does not have.)",
+              "work": "\\(\\$6\\,165.10 - \\$1.62 = \\$6\\,163.48\\)"
+            },
+            {
+              "explain": "The reason: the exact payment is 6165.0960, which was rounded up to the next cent.",
+              "work": "\\(6165.0960 \\to 6165.10\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q10b"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-8f-p11c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A couple have \\(\\$300\\,000\\) and draw equal monthly payments for 20 years, with the first payment at the beginning of the first month. The balance earns \\(5\\tfrac{1}{2}\\)% p.a. compounded monthly, and \\(B_{240} = 0\\), where \\(B_n = P(1+R)^{n-1} - M\\,\\dfrac{(1+R)^n - 1}{R}\\) and \\(R = \\dfrac{0.055}{12}\\). Find \\(M\\), correct to the nearest cent.",
+          "options": [
+            "\\(\\$2\\,063.66\\)",
+            "\\(\\$2\\,054.25\\)",
+            "\\(\\$1\\,250.00\\)",
+            "\\(\\$1\\,375.00\\)"
+          ],
+          "answer": 1,
+          "hint": "Set \\(B_{240} = 0\\) and solve for \\(M\\), using \\(n = 240\\).",
+          "solution": "\\(M = \\dfrac{300\\,000 \\times R \\times (1+R)^{239}}{(1+R)^{240} - 1} \\approx \\$2\\,054.25\\)",
+          "steps": [
+            {
+              "explain": "With \\(B_{240} = 0\\), the grown capital (one fewer period) equals the grown payments.",
+              "work": "\\(M \\times \\dfrac{(1+R)^{240} - 1}{R} = 300\\,000 \\times (1+R)^{239}\\)"
+            },
+            {
+              "explain": "Solve for \\(M\\).",
+              "work": "\\(M = \\dfrac{300\\,000 \\times R \\times (1+R)^{239}}{(1+R)^{240} - 1}\\)"
+            },
+            {
+              "explain": "Evaluate. The first payment is made straight away, so the payment is slightly smaller than for payments at the end of each month (\\(\\$2\\,063.66\\)).",
+              "work": "\\(M = \\$2\\,054.25\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q11c"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-8f-p12c-i",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Maria invests \\(\\$1\\,100\\,000\\) at 3% p.a. compounded annually and receives \\(\\$80\\,000\\) at the end of each year. Using \\(n = \\dfrac{\\ln\\frac{M}{M - PR}}{\\ln(1 + R)}\\), how many full payments of \\(\\$80\\,000\\) can she receive?",
+          "options": [
+            "\\(18\\)",
+            "\\(16\\)",
+            "\\(14\\)",
+            "\\(17\\)"
+          ],
+          "answer": 3,
+          "hint": "Calculate \\(PR = 1\\,100\\,000 \\times 0.03\\), then \\(M - PR\\), then the logarithms.",
+          "solution": "\\(n \\approx 17.99\\), so 17 full payments.",
+          "steps": [
+            {
+              "explain": "The yearly interest on the capital is \\(PR\\).",
+              "work": "\\(PR = 1\\,100\\,000 \\times 0.03 = 33\\,000\\)"
+            },
+            {
+              "explain": "Substitute into the formula.",
+              "work": "\\(n = \\dfrac{\\ln\\frac{80\\,000}{47\\,000}}{\\ln 1.03} \\approx 17.994\\)"
+            },
+            {
+              "explain": "The fund can make 17 full payments, and a part payment is made in the 18th year. (Rounding 17.99 up to 18 would count a payment that cannot be made in full.)",
+              "work": "\\(17 \\text{ full payments}\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q12c-i"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-8f-p12c-ii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Maria's fund (\\(\\$1\\,100\\,000\\) at 3% p.a. compounded annually, \\(\\$80\\,000\\) at the end of each year) makes 17 full payments. The part payment in year 18 is the whole remaining balance with a year's interest. What is it, correct to the nearest dollar?",
+          "options": [
+            "\\(\\$79\\,522\\)",
+            "\\(\\$80\\,000\\)",
+            "\\(\\$77\\,205\\)",
+            "\\(\\$478\\)"
+          ],
+          "answer": 0,
+          "hint": "Find \\(A_{17}\\), the balance after 17 payments, then add one year of interest.",
+          "solution": "\\(A_{17} \\times 1.03 \\approx \\$79\\,522\\)",
+          "steps": [
+            {
+              "explain": "The balance after 17 payments is the grown capital minus the grown payments.",
+              "work": "\\(A_{17} = 1\\,100\\,000 \\times 1.03^{17} - 80\\,000 \\times \\dfrac{1.03^{17} - 1}{0.03} = \\$77\\,205\\)"
+            },
+            {
+              "explain": "The last (part) payment is that balance with a year's interest added. (The balance alone leaves out the year of interest, and the full 80 000 is more than what is left.)",
+              "work": "\\(\\$77\\,205 \\times 1.03 \\approx \\$79\\,522\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q12c-ii"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-8f-p12d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Maria's fund (\\(\\$1\\,100\\,000\\) at 3% p.a. compounded annually) pays \\(\\$70\\,000\\) at the end of each year. Which describes the payments?",
+          "options": [
+            "There are 21 full payments of \\(\\$70\\,000\\), then a final payment of exactly \\(\\$70\\,000\\)",
+            "There are 22 full payments of \\(\\$70\\,000\\), with nothing left",
+            "There are 21 full payments of \\(\\$70\\,000\\), then a final part payment of about \\(\\$40\\,139\\)",
+            "There are 20 full payments of \\(\\$70\\,000\\), then a final part payment of about \\(\\$40\\,139\\)"
+          ],
+          "answer": 2,
+          "hint": "Find \\(n = \\dfrac{\\ln\\frac{M}{M - PR}}{\\ln 1.03}\\), where \\(M - PR = 70\\,000 - 33\\,000\\).",
+          "solution": "\\(n \\approx 21.4\\), so there are 21 full payments of \\(\\$70\\,000\\) and a final part payment of about \\(\\$40\\,139\\).",
+          "steps": [
+            {
+              "explain": "Use the formula for the number of payments.",
+              "work": "\\(n = \\dfrac{\\ln\\frac{70\\,000}{37\\,000}}{\\ln 1.03} \\approx 21.57\\)"
+            },
+            {
+              "explain": "So there are 21 full payments, and the fund has a balance left after the 21st.",
+              "work": "\\(A_{21} = \\$38\\,970\\)"
+            },
+            {
+              "explain": "The final part payment is that balance with a year's interest.",
+              "work": "\\(\\$38\\,970 \\times 1.03 \\approx \\$40\\,139\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q12d"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-8f-p12e",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Maria invests \\(\\$1\\,100\\,000\\) at 3% p.a. compounded annually. What happens if she is paid \\(\\$33\\,000\\) at the end of each year?",
+          "options": [
+            "The fund runs out after \\(\\dfrac{1\\,100\\,000}{33\\,000} \\approx 33\\) years",
+            "The fund runs out in the first year",
+            "The payment equals the yearly interest (\\(1\\,100\\,000 \\times 0.03 = 33\\,000\\)), so the capital stays at \\(\\$1\\,100\\,000\\) and the payments never end",
+            "The balance grows every year, because interest is compounded"
+          ],
+          "answer": 2,
+          "hint": "Compare the payment with one year's interest on the capital.",
+          "solution": "Each year's interest equals the payment, so the capital stays at \\(\\$1\\,100\\,000\\) and the payments continue indefinitely.",
+          "steps": [
+            {
+              "explain": "The interest earned in one year.",
+              "work": "\\(PR = 1\\,100\\,000 \\times 0.03 = 33\\,000\\)"
+            },
+            {
+              "explain": "Here \\(M = PR\\), so the denominator \\(M - PR\\) in the formula for \\(n\\) is 0 and the formula fails: the balance never decreases.",
+              "work": "\\(A_n = 1\\,100\\,000 \\text{ for all } n\\)"
+            },
+            {
+              "explain": "She receives the interest each year and the capital remains unchanged forever. (Dividing 1 100 000 by 33 000 ignores interest.)",
+              "work": "\\(\\text{payments continue forever}\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q12e"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-8f-p13b-i",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Sue opens a pension fund with \\(\\$1\\,125\\,000\\) at 6.6% p.a. compounded annually. She sets her annual payment, made at the end of each year, so that the fund lasts 25 years. Find the annual payment, correct to the nearest dollar.",
+          "options": [
+            "\\(\\$93\\,084\\)",
+            "\\(\\$45\\,000\\)",
+            "\\(\\$74\\,250\\)",
+            "\\(\\$94\\,669\\)"
+          ],
+          "answer": 0,
+          "hint": "Use \\(A_n = P(1+R)^n - M\\,\\dfrac{(1+R)^n - 1}{R}\\) with \\(A_{25} = 0\\).",
+          "solution": "\\(M \\approx \\$93\\,084\\)",
+          "steps": [
+            {
+              "explain": "Set \\(A_{25} = 0\\) with \\(R = 0.066\\).",
+              "work": "\\(M \\times \\dfrac{1.066^{25} - 1}{0.066} = 1\\,125\\,000 \\times 1.066^{25}\\)"
+            },
+            {
+              "explain": "Solve for \\(M\\).",
+              "work": "\\(M = \\dfrac{1\\,125\\,000 \\times 1.066^{25} \\times 0.066}{1.066^{25} - 1}\\)"
+            },
+            {
+              "explain": "Evaluate. (\\(\\$74\\,250\\) would only be the yearly interest, and \\(\\$45\\,000\\) would ignore interest altogether.)",
+              "work": "\\(M \\approx \\$93\\,084\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q13b-i"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-8f-p13b-ii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Sue pays herself \\(\\$93\\,084\\) at the end of each year from \\(\\$1\\,125\\,000\\) invested at 6.6% p.a. compounded annually. What is the balance of her fund at the end of 10 years, correct to the nearest dollar?",
+          "options": [
+            "\\(\\$903\\,124\\)",
+            "\\(\\$194\\,160\\)",
+            "\\(\\$666\\,049\\)",
+            "\\(\\$869\\,646\\)"
+          ],
+          "answer": 3,
+          "hint": "Use \\(A_{10} = P \\times 1.066^{10} - M\\,\\dfrac{1.066^{10} - 1}{0.066}\\).",
+          "solution": "\\(A_{10} \\approx \\$869\\,646\\)",
+          "steps": [
+            {
+              "explain": "Use the balance formula with \\(n = 10\\).",
+              "work": "\\(A_{10} = 1\\,125\\,000 \\times 1.066^{10} - 93\\,084 \\times \\dfrac{1.066^{10} - 1}{0.066}\\)"
+            },
+            {
+              "explain": "Evaluate. (Simply subtracting 10 payments gives \\(\\$194\\,160\\), which ignores the interest earned.)",
+              "work": "\\(A_{10} \\approx \\$869\\,646\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q13b-ii"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-8f-p13c-i",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "After 10 years, Sue's balance is \\(\\$869\\,646\\), and the interest rate drops to 4.8% p.a. compounded annually. She keeps taking \\(\\$93\\,084\\) at the end of each year. How many more full payments can she receive?",
+          "options": [
+            "\\(13\\)",
+            "\\(12\\)",
+            "\\(15\\)",
+            "\\(11\\)"
+          ],
+          "answer": 1,
+          "hint": "Use \\(n = \\dfrac{\\ln\\frac{M}{M - BR}}{\\ln(1+R)}\\), with \\(B\\) the current balance and \\(R = 0.048\\).",
+          "solution": "\\(n \\approx 12.69\\), so 12 more full payments.",
+          "steps": [
+            {
+              "explain": "The yearly interest on the current balance is \\(BR\\).",
+              "work": "\\(BR = \\$869\\,646 \\times 0.048 = \\$41\\,743\\)"
+            },
+            {
+              "explain": "Substitute into the formula.",
+              "work": "\\(n = \\dfrac{\\ln\\frac{93\\,084}{93\\,084 - 41\\,743}}{\\ln 1.048} \\approx 12.69\\)"
+            },
+            {
+              "explain": "So there are 12 more full payments (the 13th would be a part payment). The original plan was for 15 more.",
+              "work": "\\(12\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q13c-i"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-8f-p13c-ii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "After 10 years Sue's balance is \\(\\$869\\,646\\) and the rate falls to 4.8% p.a. compounded annually. She now reduces her annual payment so the fund lasts the remaining 15 years. What is her new annual payment, correct to the nearest dollar?",
+          "options": [
+            "\\(\\$93\\,084\\)",
+            "\\(\\$82\\,655\\)",
+            "\\(\\$57\\,976\\)",
+            "\\(\\$41\\,743\\)"
+          ],
+          "answer": 1,
+          "hint": "Treat the balance as new initial capital: \\(P = 869\\,646\\), \\(R = 0.048\\), \\(n = 15\\), final balance 0.",
+          "solution": "\\(M \\approx \\$82\\,655\\)",
+          "steps": [
+            {
+              "explain": "With \\(A_{15} = 0\\), the grown capital equals the grown payments.",
+              "work": "\\(M = \\dfrac{869\\,646 \\times 1.048^{15} \\times 0.048}{1.048^{15} - 1}\\)"
+            },
+            {
+              "explain": "Evaluate. (\\(\\$93\\,084\\) is the old payment, \\(\\$57\\,976\\) ignores interest, and \\(\\$41\\,743\\) is just the yearly interest.)",
+              "work": "\\(M \\approx \\$82\\,655\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q13c-ii"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-8f-p14a-iii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Angelina wants \\(\\$65\\,000\\) at the end of each year for 20 years, from a fund earning 6% p.a. compounded annually. The payments, grown with interest, total \\(\\$2\\,391\\,063.43\\) at the end of 20 years. What initial capital does she need, correct to the nearest dollar?",
+          "options": [
+            "\\(\\$1\\,300\\,000\\)",
+            "\\(\\$2\\,391\\,063\\)",
+            "\\(\\$790\\,278\\)",
+            "\\(\\$745\\,545\\)"
+          ],
+          "answer": 3,
+          "hint": "The initial capital, grown for 20 years, must equal the total of the grown payments. Divide by \\(1.06^{20}\\).",
+          "solution": "\\(P = \\dfrac{\\$2\\,391\\,063.43}{1.06^{20}} \\approx \\$745\\,545\\)",
+          "steps": [
+            {
+              "explain": "With \\(A_{20} = 0\\), the grown capital equals the grown payments.",
+              "work": "\\(P \\times 1.06^{20} = \\$2\\,391\\,063.43\\)"
+            },
+            {
+              "explain": "Divide by \\(1.06^{20}\\). (The total received, 1 300 000, is far more than she needs to invest, because the fund earns interest while she draws on it.)",
+              "work": "\\(P = \\dfrac{\\$2\\,391\\,063.43}{1.06^{20}} \\approx \\$745\\,545\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q14a-iii"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-8f-p14b-i",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Angelina needs \\(\\$745\\,545\\) when she retires and starts saving at the beginning of each year for 30 years, in a fund earning 6.5% p.a. compounded annually. Each instalment is \\(M\\), and the total saved is \\(M \\times 1.065 \\times \\dfrac{1.065^{30} - 1}{0.065}\\). Find \\(M\\), correct to the nearest cent.",
+          "options": [
+            "\\(\\$8\\,104.70\\)",
+            "\\(\\$24\\,851.50\\)",
+            "\\(\\$8\\,631.50\\)",
+            "\\(\\$9\\,192.55\\)"
+          ],
+          "answer": 0,
+          "hint": "Each instalment is paid at the beginning of a year, so the first one earns 30 years of interest. The series is \\(1.065 + 1.065^2 + \\dots + 1.065^{30}\\).",
+          "solution": "\\(M = \\dfrac{745\\,545 \\times 0.065}{1.065\\,(1.065^{30} - 1)} \\approx \\$8\\,104.70\\)",
+          "steps": [
+            {
+              "explain": "The instalments grow as a GP, first term \\(M \\times 1.065\\), ratio 1.065, 30 terms.",
+              "work": "\\(M(1.065 + 1.065^2 + \\dots + 1.065^{30}) = M \\times 1.065 \\times \\dfrac{1.065^{30} - 1}{0.065}\\)"
+            },
+            {
+              "explain": "Set it equal to the capital needed and solve for \\(M\\).",
+              "work": "\\(M = \\dfrac{745\\,545 \\times 0.065}{1.065\\,(1.065^{30} - 1)}\\)"
+            },
+            {
+              "explain": "Evaluate. (\\(\\$24\\,851.50\\) ignores interest, and leaving out the factor 1.065 treats the instalments as paid at the end of each year.)",
+              "work": "\\(M \\approx \\$8\\,104.70\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q14b-i"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-8f-p14b-ii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Angelina needs \\(\\$745\\,545\\) in 10 years and has already saved \\(\\$330\\,295\\), which earns 6.5% p.a. compounded annually. She deposits \\(M\\) at the beginning of each year for the 10 years. Find \\(M\\), correct to the nearest dollar.",
+          "options": [
+            "\\(\\$41\\,525\\)",
+            "\\(\\$51\\,876\\)",
+            "\\(\\$8\\,735\\)",
+            "\\(\\$8\\,202\\)"
+          ],
+          "answer": 2,
+          "hint": "The existing savings grow to \\(330\\,295 \\times 1.065^{10}\\). The instalments must make up the difference.",
+          "solution": "\\(M \\approx \\$8\\,735\\)",
+          "steps": [
+            {
+              "explain": "The existing savings grow for 10 years.",
+              "work": "\\(330\\,295 \\times 1.065^{10} = \\$620\\,009\\)"
+            },
+            {
+              "explain": "The instalments (paid at the beginning of each year) must make up the rest.",
+              "work": "\\(M \\times 1.065 \\times \\dfrac{1.065^{10} - 1}{0.065} = 745\\,545 - 620\\,009\\)"
+            },
+            {
+              "explain": "Solve for \\(M\\). (Dividing the shortfall of \\(\\$415\\,250\\) by 10 ignores interest, and ignoring the savings' own growth would overstate \\(M\\).)",
+              "work": "\\(M \\approx \\$8\\,735\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q14b-ii"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-8f-p16b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "For a fund that is paid out after \\(n\\) payments, \\(M = kP\\) with \\(k = \\dfrac{R(1+R)^n}{(1+R)^n - 1}\\). For Situ (\\(R = 0.06\\), \\(n = 15\\)), \\(k \\approx 0.102963\\). Using the same figures, find the annual pension for an initial capital of \\(\\$500\\,000\\), correct to the nearest cent.",
+          "options": [
+            "\\(\\$30\\,000.00\\)",
+            "\\(\\$33\\,333.33\\)",
+            "\\(\\$51\\,481.38\\)",
+            "\\(\\$71\\,896.75\\)"
+          ],
+          "answer": 2,
+          "hint": "\\(M\\) varies directly with \\(P\\), so multiply the capital by \\(k\\).",
+          "solution": "\\(M \\approx 0.102963 \\times 500\\,000 \\approx \\$51\\,481.38\\)",
+          "steps": [
+            {
+              "explain": "With \\(R\\) and \\(n\\) fixed, \\(M\\) is proportional to \\(P\\). (The graph of \\(M\\) against \\(P\\) is a straight line through the origin.)",
+              "work": "\\(M = kP\\)"
+            },
+            {
+              "explain": "Substitute. (\\(\\$30\\,000\\) would only be the yearly interest.)",
+              "work": "\\(M = 0.102963 \\times 500\\,000 \\approx \\$51\\,481.38\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q16b"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-8f-p16c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "When a fund is paid out after \\(n\\) payments, \\(P = \\dfrac{M}{R}\\left(1 - (1+R)^{-n}\\right)\\). If \\(M\\) and \\(R\\) are fixed and the number of payments \\(n\\) grows without limit, what happens to \\(P\\)?",
+          "options": [
+            "\\(P\\) approaches the horizontal asymptote \\(P = \\dfrac{M}{R}\\), because \\((1+R)^{-n} \\to 0\\)",
+            "\\(P\\) grows without limit, because more payments need more capital",
+            "\\(P\\) approaches 0, because \\((1+R)^{-n} \\to 0\\)",
+            "\\(P\\) approaches \\(MR\\)"
+          ],
+          "answer": 0,
+          "hint": "What happens to \\((1+R)^{-n}\\) as \\(n\\) becomes very large?",
+          "solution": "\\((1+R)^{-n} \\to 0\\), so \\(P \\to \\dfrac{M}{R}\\): a horizontal asymptote.",
+          "steps": [
+            {
+              "explain": "Since \\(1 + R \\gt 1\\), the power \\((1+R)^{-n}\\) shrinks towards 0 as \\(n\\) increases.",
+              "work": "\\((1+R)^{-n} \\to 0\\)"
+            },
+            {
+              "explain": "So the bracket tends to \\(1 - 0 = 1\\), and \\(P\\) tends to \\(\\dfrac{M}{R}\\). (This is the capital that earns exactly \\(M\\) per period in interest, so the payments could continue forever.)",
+              "work": "\\(P \\to \\dfrac{M}{R}\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q16c"
+          },
+          "xp": 4
+        },
+        {
+          "id": "y12a-8f-p16d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "When a fund is paid out after \\(n\\) payments, \\(M = \\dfrac{PR}{1 - (1+R)^{-n}}\\). If \\(P\\) and \\(R\\) are fixed and \\(n\\) grows without limit, what does \\(M\\) approach?",
+          "options": [
+            "\\(\\dfrac{P}{R}\\)",
+            "0, because more payments mean smaller payments",
+            "\\(P\\), the initial capital",
+            "\\(PR\\), the interest earned each period"
+          ],
+          "answer": 3,
+          "hint": "What happens to \\((1+R)^{-n}\\) as \\(n\\) becomes very large?",
+          "solution": "\\(M \\to PR\\) as \\(n \\to \\infty\\): a horizontal asymptote at the interest earned each period.",
+          "steps": [
+            {
+              "explain": "\\((1+R)^{-n}\\) tends to 0 as \\(n\\) increases.",
+              "work": "\\((1+R)^{-n} \\to 0\\)"
+            },
+            {
+              "explain": "So the denominator tends to 1, and \\(M\\) tends to \\(PR\\). The payments can never be smaller than the interest on the capital if the fund is to be paid out.",
+              "work": "\\(M \\to PR\\)"
+            },
+            {
+              "explain": "For Situ's figures this is \\(0.06 \\times 640\\,000 = 38\\,400\\), a horizontal asymptote.",
+              "work": "\\(M \\to 38\\,400\\)"
+            }
+          ],
+          "meta": {
+            "source": "CambridgeMATHS Advanced Year 12, 2nd ed.",
+            "number": "8F Q16d"
+          },
+          "xp": 4
+        }
+      ]
+    },
+    {
       "topicId": "y12a-8R",
       "code": "8R",
       "title": "Chapter Review Exercise",
