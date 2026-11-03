@@ -5703,6 +5703,494 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M45 80H435M60 80 Q95 125 140 160 Q195 190 240 178 Q290 173 340 150 Q390 125 420 80\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M180 80V145M300 80V130\" stroke=\"#dc2626\" stroke-width=\"2\"/><path d=\"M60 80L180 145L300 130L420 80Z\" fill=\"#bfdbfe\" opacity=\".4\"/><text x=\"60\" y=\"66\">A</text><text x=\"180\" y=\"162\">1.3</text><text x=\"300\" y=\"147\">1.7</text><text x=\"420\" y=\"66\">B</text><text x=\"115\" y=\"105\">4 m</text><text x=\"235\" y=\"105\">4 m</text><text x=\"355\" y=\"105\">4 m</text><text x=\"205\" y=\"235\">12 m wide</text></svg>"
           }
+        },
+        {
+          "id": "y12a-advanced-004-p204-q76-ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Water flows through this section of the creek at a speed of 0.5 m s⁻¹. Calculate the approximate volume of water that flows past this section in one hour.",
+          "options": [
+            "\\(21\\,600\\text{ m}^3\\)",
+            "\\(2160\\text{ m}^3\\)",
+            "\\(6000\\text{ m}^3\\)",
+            "\\(3600\\text{ m}^3\\)"
+          ],
+          "answer": 0,
+          "hint": "Use volume = cross-sectional area × distance travelled. In one hour the water travels at 0.5 m/s for 3600 s.",
+          "steps": [
+            {
+              "explain": "Use the approximate cross-sectional area from part (i), 12 m². Convert one hour to seconds.",
+              "work": "\\(t=1\\text{ hour}=3600\\text{ s}\\)"
+            },
+            {
+              "explain": "Find the distance the water moves in 3600 seconds.",
+              "work": "\\(d=vt=0.5(3600)=1800\\text{ m}\\)"
+            },
+            {
+              "explain": "Multiply the cross-sectional area by this length to get volume.",
+              "work": "\\(V=Ad=12(1800)=\\boxed{21\\,600\\text{ m}^3}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M45 80H435M60 80 Q95 125 140 160 Q195 190 240 178 Q290 173 340 150 Q390 125 420 80\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M180 80V145M300 80V130\" stroke=\"#dc2626\" stroke-width=\"2\"/><path d=\"M60 80L180 145L300 130L420 80Z\" fill=\"#bfdbfe\" opacity=\".4\"/><text x=\"60\" y=\"66\">A</text><text x=\"180\" y=\"162\">1.3</text><text x=\"300\" y=\"147\">1.7</text><text x=\"420\" y=\"66\">B</text><text x=\"115\" y=\"105\">4 m</text><text x=\"235\" y=\"105\">4 m</text><text x=\"355\" y=\"105\">4 m</text><text x=\"205\" y=\"235\">12 m wide</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "205",
+            "course": "Advanced",
+            "sourceQuestion": "Q76(ii)"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M45 80H435M60 80 Q95 125 140 160 Q195 190 240 178 Q290 173 340 150 Q390 125 420 80\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M180 80V145M300 80V130\" stroke=\"#dc2626\" stroke-width=\"2\"/><path d=\"M60 80L180 145L300 130L420 80Z\" fill=\"#bfdbfe\" opacity=\".4\"/><text x=\"60\" y=\"66\">A</text><text x=\"180\" y=\"162\">1.3</text><text x=\"300\" y=\"147\">1.7</text><text x=\"420\" y=\"66\">B</text><text x=\"115\" y=\"105\">4 m</text><text x=\"235\" y=\"105\">4 m</text><text x=\"355\" y=\"105\">4 m</text><text x=\"205\" y=\"235\">12 m wide</text></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p205-q77",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find \\(\\displaystyle\\int_{-2}^1\\frac{2}{x+3}\\,dx\\).",
+          "options": [
+            "\\(\\ln16\\)",
+            "\\(\\ln4\\)",
+            "\\(2\\ln4\\)",
+            "\\(\\frac43\\)"
+          ],
+          "answer": 0,
+          "hint": "The antiderivative is 2 ln(x+3); x+3 stays positive over the limits.",
+          "steps": [
+            {
+              "explain": "Integrate using the logarithm rule.",
+              "work": "\\(\\int\\frac{2}{x+3}dx=2\\ln(x+3)+C\\)"
+            },
+            {
+              "explain": "Evaluate at x=1 and x=−2.",
+              "work": "\\(2\\ln4-2\\ln1=2\\ln4=\\boxed{\\ln16}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "205",
+            "course": "Advanced",
+            "sourceQuestion": "Q77"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p205-q78",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The diagram shows the graphs of \\(y=x^2-2\\) and \\(y=x\\).",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 140H440M150 275V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M60 180L330 60\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M60 180 Q150 220 240 180 Q300 130 330 60\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M60 180 L330 60 Q300 130 240 180 Q150 220 60 180Z\" fill=\"#fde68a\" opacity=\".5\"/><circle cx=\"60\" cy=\"180\" r=\"3\" fill=\"#334155\"/><circle cx=\"330\" cy=\"60\" r=\"3\" fill=\"#334155\"/><text x=\"44\" y=\"200\">P(−1,−1)</text><text x=\"334\" y=\"60\">Q(2,2)</text><text x=\"440\" y=\"145\">x</text><text x=\"154\" y=\"28\">y</text><text x=\"190\" y=\"110\">y=x</text><text x=\"205\" y=\"200\">y=x²−2</text></svg>"
+          },
+          "hint": "Set the formulas equal to find the intersections. Between them the line is above the parabola, so integrate line minus parabola.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p205-q78-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the x-values of the points of intersection, P and Q.",
+              "options": [
+                "\\(-1,\\ 2\\)",
+                "\\(1,\\ 2\\)",
+                "\\(-2,\\ 1\\)",
+                "\\(-1,\\ 1\\)"
+              ],
+              "answer": 0,
+              "hint": "At an intersection x²−2=x. Solve the quadratic and list both roots.",
+              "steps": [
+                {
+                  "explain": "Set the two equations equal.",
+                  "work": "\\(x^2-2=x\\Rightarrow x^2-x-2=0\\)"
+                },
+                {
+                  "explain": "Factor the quadratic.",
+                  "work": "\\((x-2)(x+1)=0\\Rightarrow\\boxed{x=-1,\\ 2}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 140H440M150 275V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M60 180L330 60\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M60 180 Q150 220 240 180 Q300 130 330 60\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M60 180 L330 60 Q300 130 240 180 Q150 220 60 180Z\" fill=\"#fde68a\" opacity=\".5\"/><circle cx=\"60\" cy=\"180\" r=\"3\" fill=\"#334155\"/><circle cx=\"330\" cy=\"60\" r=\"3\" fill=\"#334155\"/><text x=\"44\" y=\"200\">P(−1,−1)</text><text x=\"334\" y=\"60\">Q(2,2)</text><text x=\"440\" y=\"145\">x</text><text x=\"154\" y=\"28\">y</text><text x=\"190\" y=\"110\">y=x</text><text x=\"205\" y=\"200\">y=x²−2</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "205",
+                "course": "Advanced",
+                "sourceQuestion": "Q78(i)"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 140H440M150 275V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M60 180L330 60\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M60 180 Q150 220 240 180 Q300 130 330 60\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M60 180 L330 60 Q300 130 240 180 Q150 220 60 180Z\" fill=\"#fde68a\" opacity=\".5\"/><circle cx=\"60\" cy=\"180\" r=\"3\" fill=\"#334155\"/><circle cx=\"330\" cy=\"60\" r=\"3\" fill=\"#334155\"/><text x=\"44\" y=\"200\">P(−1,−1)</text><text x=\"334\" y=\"60\">Q(2,2)</text><text x=\"440\" y=\"145\">x</text><text x=\"154\" y=\"28\">y</text><text x=\"190\" y=\"110\">y=x</text><text x=\"205\" y=\"200\">y=x²−2</text></svg>"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p205-q78-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Calculate the area of the shaded region.",
+              "options": [
+                "\\(\\frac92\\)",
+                "\\(\\frac32\\)",
+                "\\(\\frac{27}{2}\\)",
+                "\\(3\\)"
+              ],
+              "answer": 0,
+              "hint": "Use the intersection x-values as limits. The line y=x is above y=x²−2 on [−1,2].",
+              "steps": [
+                {
+                  "explain": "Subtract the lower curve from the upper curve.",
+                  "work": "\\(A=\\int_{-1}^2[x-(x^2-2)]dx=\\int_{-1}^2(-x^2+x+2)dx\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 140H440M150 275V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M60 180L330 60\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M60 180 Q150 220 240 180 Q300 130 330 60\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M60 180 L330 60 Q300 130 240 180 Q150 220 60 180Z\" fill=\"#fde68a\" opacity=\".5\"/><circle cx=\"60\" cy=\"180\" r=\"3\" fill=\"#334155\"/><circle cx=\"330\" cy=\"60\" r=\"3\" fill=\"#334155\"/><text x=\"44\" y=\"200\">P(−1,−1)</text><text x=\"334\" y=\"60\">Q(2,2)</text><text x=\"440\" y=\"145\">x</text><text x=\"154\" y=\"28\">y</text><text x=\"190\" y=\"110\">y=x</text><text x=\"205\" y=\"200\">y=x²−2</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Integrate each term.",
+                  "work": "\\(F(x)=-\\frac{x^3}{3}+\\frac{x^2}{2}+2x\\)"
+                },
+                {
+                  "explain": "Evaluate at 2 and subtract the value at −1.",
+                  "work": "\\(F(2)=\\frac{10}{3},\\quad F(-1)=-\\frac76,\\quad A=\\frac{10}{3}+\\frac76=\\boxed{\\frac92}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "205",
+                "course": "Advanced",
+                "sourceQuestion": "Q78(ii)"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 140H440M150 275V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M60 180L330 60\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M60 180 Q150 220 240 180 Q300 130 330 60\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M60 180 L330 60 Q300 130 240 180 Q150 220 60 180Z\" fill=\"#fde68a\" opacity=\".5\"/><circle cx=\"60\" cy=\"180\" r=\"3\" fill=\"#334155\"/><circle cx=\"330\" cy=\"60\" r=\"3\" fill=\"#334155\"/><text x=\"44\" y=\"200\">P(−1,−1)</text><text x=\"334\" y=\"60\">Q(2,2)</text><text x=\"440\" y=\"145\">x</text><text x=\"154\" y=\"28\">y</text><text x=\"190\" y=\"110\">y=x</text><text x=\"205\" y=\"200\">y=x²−2</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "205",
+            "course": "Advanced",
+            "sourceQuestion": "Q78"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p205-q79",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The diagram shows the graph of the function \\(y=4x-x^2\\).",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 220H440M100 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 220 Q240 65 380 220\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 220 Q240 65 380 220 L100 220Z\" fill=\"#bfdbfe\" opacity=\".5\"/><circle cx=\"100\" cy=\"220\" r=\"3\" fill=\"#334155\"/><circle cx=\"380\" cy=\"220\" r=\"3\" fill=\"#334155\"/><text x=\"94\" y=\"240\">O</text><text x=\"384\" y=\"220\">B</text><text x=\"445\" y=\"225\">x</text><text x=\"104\" y=\"28\">y</text><text x=\"255\" y=\"95\">y=4x−x²</text></svg>"
+          },
+          "hint": "Factor the expression to find its x-intercepts. The shaded area is the integral of the positive curve between the intercepts.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p205-q79-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the x-coordinate of the point B where the curve crosses the positive x-axis.",
+              "options": [
+                "\\(4\\)",
+                "\\(2\\)",
+                "\\(-4\\)",
+                "\\(16\\)"
+              ],
+              "answer": 0,
+              "hint": "Set y=0 and solve 4x−x²=0; choose the positive root other than zero.",
+              "steps": [
+                {
+                  "explain": "Find the x-intercepts by setting the curve equal to zero.",
+                  "work": "\\(4x-x^2=x(4-x)=0\\)"
+                },
+                {
+                  "explain": "The roots are 0 and 4. B is the positive intercept.",
+                  "work": "\\(\\boxed{x_B=4}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 220H440M100 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 220 Q240 65 380 220\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 220 Q240 65 380 220 L100 220Z\" fill=\"#bfdbfe\" opacity=\".5\"/><circle cx=\"100\" cy=\"220\" r=\"3\" fill=\"#334155\"/><circle cx=\"380\" cy=\"220\" r=\"3\" fill=\"#334155\"/><text x=\"94\" y=\"240\">O</text><text x=\"384\" y=\"220\">B</text><text x=\"445\" y=\"225\">x</text><text x=\"104\" y=\"28\">y</text><text x=\"255\" y=\"95\">y=4x−x²</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "205",
+                "course": "Advanced",
+                "sourceQuestion": "Q79(i)"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 220H440M100 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 220 Q240 65 380 220\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 220 Q240 65 380 220 L100 220Z\" fill=\"#bfdbfe\" opacity=\".5\"/><circle cx=\"100\" cy=\"220\" r=\"3\" fill=\"#334155\"/><circle cx=\"380\" cy=\"220\" r=\"3\" fill=\"#334155\"/><text x=\"94\" y=\"240\">O</text><text x=\"384\" y=\"220\">B</text><text x=\"445\" y=\"225\">x</text><text x=\"104\" y=\"28\">y</text><text x=\"255\" y=\"95\">y=4x−x²</text></svg>"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p205-q79-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the area bounded by the curve and the x-axis.",
+              "options": [
+                "\\(\\frac{32}{3}\\)",
+                "\\(16\\)",
+                "\\(\\frac{16}{3}\\)",
+                "\\(8\\)"
+              ],
+              "answer": 0,
+              "hint": "The curve is above the x-axis between x=0 and x=4. Integrate 4x−x² over this interval.",
+              "steps": [
+                {
+                  "explain": "Use the two x-intercepts as limits.",
+                  "work": "\\(A=\\int_0^4(4x-x^2)dx\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 220H440M100 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 220 Q240 65 380 220\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 220 Q240 65 380 220 L100 220Z\" fill=\"#bfdbfe\" opacity=\".5\"/><circle cx=\"100\" cy=\"220\" r=\"3\" fill=\"#334155\"/><circle cx=\"380\" cy=\"220\" r=\"3\" fill=\"#334155\"/><text x=\"94\" y=\"240\">O</text><text x=\"384\" y=\"220\">B</text><text x=\"445\" y=\"225\">x</text><text x=\"104\" y=\"28\">y</text><text x=\"255\" y=\"95\">y=4x−x²</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Integrate term by term and evaluate.",
+                  "work": "\\(A=[2x^2-\\frac{x^3}{3}]_0^4=32-\\frac{64}{3}=\\boxed{\\frac{32}{3}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "205",
+                "course": "Advanced",
+                "sourceQuestion": "Q79(ii)"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 220H440M100 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 220 Q240 65 380 220\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 220 Q240 65 380 220 L100 220Z\" fill=\"#bfdbfe\" opacity=\".5\"/><circle cx=\"100\" cy=\"220\" r=\"3\" fill=\"#334155\"/><circle cx=\"380\" cy=\"220\" r=\"3\" fill=\"#334155\"/><text x=\"94\" y=\"240\">O</text><text x=\"384\" y=\"220\">B</text><text x=\"445\" y=\"225\">x</text><text x=\"104\" y=\"28\">y</text><text x=\"255\" y=\"95\">y=4x−x²</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "205",
+            "course": "Advanced",
+            "sourceQuestion": "Q79"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p205-q80",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The shaded areas are bounded by \\(y=f(x)\\) and the x-axis. Area A is 8 square units, area B is 3 square units, and area C is 1 square unit. Evaluate \\(\\displaystyle\\int_{-2}^5f(x)\\,dx\\).",
+          "options": [
+            "\\(6\\)",
+            "\\(12\\)",
+            "\\(4\\)",
+            "\\(-6\\)"
+          ],
+          "answer": 0,
+          "hint": "A and C are above the x-axis and contribute positively. B is below the axis and contributes negatively.",
+          "steps": [
+            {
+              "explain": "Split the definite integral into the three labelled regions. Signed area below the x-axis is negative.",
+              "work": "\\(\\int_{-2}^5f(x)dx=A-B+C\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 150H445M80 265V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M80 150 C110 75 150 55 180 70 C205 85 220 145 240 150Z\" fill=\"#bfdbfe\" opacity=\".65\"/><path d=\"M240 150L280 260 L330 150Z\" fill=\"#fecaca\" opacity=\".7\"/><path d=\"M330 150 C360 115 395 110 430 150Z\" fill=\"#bbf7d0\" opacity=\".7\"/><path d=\"M80 150 C110 75 150 55 180 70 C205 85 220 145 240 150 C255 190 265 235 280 260 C300 230 315 180 330 150 C360 115 395 110 430 150\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><g font-family=\"Arial\" font-size=\"13\"><text x=\"130\" y=\"110\">A=8</text><text x=\"260\" y=\"210\">B=3</text><text x=\"370\" y=\"135\">C=1</text><text x=\"75\" y=\"170\">−2</text><text x=\"235\" y=\"170\">0</text><text x=\"275\" y=\"170\">2</text><text x=\"425\" y=\"170\">5</text><text x=\"450\" y=\"155\">x</text><text x=\"84\" y=\"32\">y</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Substitute the given areas.",
+              "work": "\\(8-3+1=\\boxed6\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "205",
+            "course": "Advanced",
+            "sourceQuestion": "Q80"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 150H445M80 265V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M80 150 C110 75 150 55 180 70 C205 85 220 145 240 150Z\" fill=\"#bfdbfe\" opacity=\".65\"/><path d=\"M240 150L280 260 L330 150Z\" fill=\"#fecaca\" opacity=\".7\"/><path d=\"M330 150 C360 115 395 110 430 150Z\" fill=\"#bbf7d0\" opacity=\".7\"/><path d=\"M80 150 C110 75 150 55 180 70 C205 85 220 145 240 150 C255 190 265 235 280 260 C300 230 315 180 330 150 C360 115 395 110 430 150\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><g font-family=\"Arial\" font-size=\"13\"><text x=\"130\" y=\"110\">A=8</text><text x=\"260\" y=\"210\">B=3</text><text x=\"370\" y=\"135\">C=1</text><text x=\"75\" y=\"170\">−2</text><text x=\"235\" y=\"170\">0</text><text x=\"275\" y=\"170\">2</text><text x=\"425\" y=\"170\">5</text><text x=\"450\" y=\"155\">x</text><text x=\"84\" y=\"32\">y</text></g></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p205-q81",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The diagram shows \\(y=\\sec^2x\\) and \\(y=x\\) between \\(x=0\\) and \\(x=\\frac\\pi4\\). Calculate the area of the shaded region.",
+          "options": [
+            "\\(1-\\frac{\\pi^2}{32}\\)",
+            "\\(1+\\frac{\\pi^2}{32}\\)",
+            "\\(\\frac\\pi4\\)",
+            "\\(\\tan\\frac\\pi4-\\frac\\pi4\\)"
+          ],
+          "answer": 0,
+          "hint": "The upper curve is sec²x and the lower curve is y=x. Integrate their difference from 0 to π/4.",
+          "steps": [
+            {
+              "explain": "Area is upper function minus lower function.",
+              "work": "\\(A=\\int_0^{\\pi/4}(\\sec^2x-x)dx\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 230H440M100 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 190 C170 185 245 175 330 140\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 230L330 214\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M100 190 C170 185 245 175 330 140 L330 214 L100 230Z\" fill=\"#fde68a\" opacity=\".55\"/><path d=\"M330 230V140\" stroke=\"#64748b\" stroke-dasharray=\"4 4\"/><text x=\"94\" y=\"252\">O</text><text x=\"320\" y=\"252\">π/4</text><text x=\"105\" y=\"185\">1</text><text x=\"335\" y=\"140\">y=sec²x</text><text x=\"336\" y=\"216\">y=x</text><text x=\"445\" y=\"235\">x</text><text x=\"104\" y=\"28\">y</text></svg>"
+              }
+            },
+            {
+              "explain": "Integrate both terms.",
+              "work": "\\(\\int(\\sec^2x-x)dx=\\tan x-\\frac{x^2}{2}+C\\)"
+            },
+            {
+              "explain": "Evaluate at π/4 and 0.",
+              "work": "\\(A=1-\\frac12(\\frac\\pi4)^2=\\boxed{1-\\frac{\\pi^2}{32}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "205",
+            "course": "Advanced",
+            "sourceQuestion": "Q81"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 230H440M100 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 190 C170 185 245 175 330 140\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 230L330 214\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M100 190 C170 185 245 175 330 140 L330 214 L100 230Z\" fill=\"#fde68a\" opacity=\".55\"/><path d=\"M330 230V140\" stroke=\"#64748b\" stroke-dasharray=\"4 4\"/><text x=\"94\" y=\"252\">O</text><text x=\"320\" y=\"252\">π/4</text><text x=\"105\" y=\"185\">1</text><text x=\"335\" y=\"140\">y=sec²x</text><text x=\"336\" y=\"216\">y=x</text><text x=\"445\" y=\"235\">x</text><text x=\"104\" y=\"28\">y</text></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p205-q82-i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(\\displaystyle\\int_1^2\\frac1{x^2}\\,dx\\).",
+          "options": [
+            "\\(\\frac12\\)",
+            "\\(1\\)",
+            "\\(\\frac32\\)",
+            "\\(\\ln2\\)"
+          ],
+          "answer": 0,
+          "hint": "Rewrite 1/x² as x^−2 and use the power rule.",
+          "steps": [
+            {
+              "explain": "Integrate the negative power.",
+              "work": "\\(\\int x^{-2}dx=-x^{-1}+C=-\\frac1x+C\\)"
+            },
+            {
+              "explain": "Evaluate at 2 and 1.",
+              "work": "\\([-\\frac1x]_1^2=-\\frac12-(-1)=\\boxed{\\frac12}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "205",
+            "course": "Advanced",
+            "sourceQuestion": "Q82(i)"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p205-q82-ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(\\displaystyle\\int_0^3e^{4x}\\,dx\\).",
+          "options": [
+            "\\(\\frac{e^{12}-1}{4}\\)",
+            "\\(e^{12}-1\\)",
+            "\\(\\frac{e^4-1}{4}\\)",
+            "\\(\\frac{e^{12}+1}{4}\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide by 4 when integrating e^(4x).",
+          "steps": [
+            {
+              "explain": "Integrate the exponential.",
+              "work": "\\(\\int e^{4x}dx=\\frac14e^{4x}+C\\)"
+            },
+            {
+              "explain": "Substitute x=3 and x=0.",
+              "work": "\\([\\frac14e^{4x}]_0^3=\\boxed{\\frac{e^{12}-1}{4}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "205",
+            "course": "Advanced",
+            "sourceQuestion": "Q82(ii)"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p205-q83",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The table lists values of a function for three values of x. Use these values to estimate \\(\\displaystyle\\int_1^3f(x)\\,dx\\) by the trapezoidal rule.",
+          "options": [
+            "\\(12\\)",
+            "\\(24\\)",
+            "\\(15\\)",
+            "\\(9\\)"
+          ],
+          "answer": 0,
+          "hint": "There are two equal intervals of width 1. Use one trapezoid on each interval.",
+          "steps": [
+            {
+              "explain": "Read the table: x=1,2,3 with function values 1.7,9.0,4.3. The spacing is h=1.",
+              "work": "\\(h=2-1=1,\\quad f_0=1.7,\\ f_1=9.0,\\ f_2=4.3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><rect x=\"70\" y=\"65\" width=\"340\" height=\"160\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M70 145H410M138 65V225M229 65V225M320 65V225\" stroke=\"#334155\" stroke-width=\"2\"/><g font-family=\"Arial\" font-size=\"17\" text-anchor=\"middle\"><text x=\"104\" y=\"116\">x</text><text x=\"183\" y=\"116\">1.0</text><text x=\"274\" y=\"116\">2.0</text><text x=\"365\" y=\"116\">3.0</text><text x=\"104\" y=\"194\">f(x)</text><text x=\"183\" y=\"194\">1.7</text><text x=\"274\" y=\"194\">9.0</text><text x=\"365\" y=\"194\">4.3</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Apply the composite trapezoidal rule.",
+              "work": "\\(\\int_1^3f(x)dx\\approx\\frac h2[f_0+2f_1+f_2]=\\frac12[1.7+18+4.3]\\)"
+            },
+            {
+              "explain": "Add the bracketed values and multiply by one half.",
+              "work": "\\(\\frac12(24)=\\boxed{12}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "205",
+            "course": "Advanced",
+            "sourceQuestion": "Q83"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><rect x=\"70\" y=\"65\" width=\"340\" height=\"160\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M70 145H410M138 65V225M229 65V225M320 65V225\" stroke=\"#334155\" stroke-width=\"2\"/><g font-family=\"Arial\" font-size=\"17\" text-anchor=\"middle\"><text x=\"104\" y=\"116\">x</text><text x=\"183\" y=\"116\">1.0</text><text x=\"274\" y=\"116\">2.0</text><text x=\"365\" y=\"116\">3.0</text><text x=\"104\" y=\"194\">f(x)</text><text x=\"183\" y=\"194\">1.7</text><text x=\"274\" y=\"194\">9.0</text><text x=\"365\" y=\"194\">4.3</text></g></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p205-q84-i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Sand is tipped from a truck onto a pile. The rate \\(R\\), in kg/s, at which the sand is flowing is \\(R=100t-t^3\\), for \\(0\\le t\\le T\\), where t is the time in seconds after the sand begins to flow. Find the rate of flow at \\(t=8\\).",
+          "options": [
+            "\\(288\\text{ kg/s}\\)",
+            "\\(512\\text{ kg/s}\\)",
+            "\\(800\\text{ kg/s}\\)",
+            "\\(224\\text{ kg/s}\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute t=8 into R=100t−t³ and calculate each term.",
+          "steps": [
+            {
+              "explain": "Replace t by 8.",
+              "work": "\\(R(8)=100(8)-8^3\\)"
+            },
+            {
+              "explain": "Calculate the multiplication and cube, then subtract.",
+              "work": "\\(800-512=\\boxed{288\\text{ kg/s}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "205",
+            "course": "Advanced",
+            "sourceQuestion": "Q84(i)"
+          }
         }
       ]
     },
