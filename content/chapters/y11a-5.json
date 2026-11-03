@@ -7832,39 +7832,113 @@
         },
         {
           "id": "y11a-5B-new-9",
-          "type": "review",
+          "type": "multipart",
           "difficulty": "medium",
-          "stem": "Consider the equation \\(x^2 + y^2 = r^2\\), representing a circle with its centre at the origin and radius \\(r\\).\n**a)** Show algebraically that this equation is unchanged when the graph is reflected in either the \\(x\\)-axis or the \\(y\\)-axis.\n**b)** Explain this result geometrically.",
-          "answer": "See solution steps.",
-          "options": [
-            "Reflection in either the \\(x\\)-axis or the \\(y\\)-axis",
-            "Reflection in the \\(x\\)-axis only",
-            "Reflection in the \\(y\\)-axis only",
-            "Translation by 1 unit vertically"
-          ],
-          "hint": "Substitute \\(-y\\) for \\(y\\) (for x-axis reflection) and \\(-x\\) for \\(x\\) (for y-axis reflection). Note that squares of negatives are positive.",
-          "solution": "See solution steps.",
-          "steps": [
+          "stem": "Consider the equation \\(x^2+y^2=r^2\\), representing a circle with its centre at the origin and radius \\(r\\).",
+          "parts": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Transformations and symmetry: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(\\text{Replace } y \\text{ with } -y: \\ x^2 + (-y)^2 = x^2 + y^2 = r^2\\)"
+              "id": "y11a-5B-new-9a",
+              "type": "review",
+              "manual": true,
+              "difficulty": "medium",
+              "stem": "a) Show algebraically that this equation is unchanged when the graph is reflected in either the \\(x\\)-axis or the \\(y\\)-axis.",
+              "answer": "x-axis: replace y by −y, giving x² + (−y)² = x² + y² = r². y-axis: replace x by −x, giving (−x)² + y² = x² + y² = r². Both give the original equation, so it is unchanged.",
+              "hint": "Reflecting in the x-axis changes y into −y; reflecting in the y-axis changes x into −x. Substitute, then remember that a negative number squared is positive.",
+              "keyPoints": [
+                {
+                  "text": "unchanged",
+                  "note": "After substituting and simplifying you must get exactly the original equation back."
+                },
+                {
+                  "text": "reflected in either the \\(x\\)-axis or the \\(y\\)-axis",
+                  "note": "There are TWO reflections to check: y → −y for the x-axis, and x → −x for the y-axis."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Reflecting a graph in the x-axis keeps every x-value but turns each y-value upside down: the point \\((x, y)\\) lands on \\((x, -y)\\). So the reflected graph is found by replacing \\(y\\) with \\(-y\\) in the equation.",
+                  "work": "\\((x,\\ y)\\ \\to\\ (x,\\ -y)\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 270\" width=\"100%\" height=\"auto\" style=\"max-width:320px\">\n<circle cx=\"160.0\" cy=\"125.0\" r=\"100.0\" fill=\"#eff6ff\" fill-opacity=\"0.9\" stroke=\"#475569\" stroke-width=\"2.4\"/>\n<line x1=\"25.0\" y1=\"125.0\" x2=\"295.0\" y2=\"125.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"295.0\" y1=\"125.0\" x2=\"289.0\" y2=\"128.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"295.0\" y1=\"125.0\" x2=\"289.0\" y2=\"121.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"160.0\" y1=\"243.0\" x2=\"160.0\" y2=\"7.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"160.0\" y1=\"7.0\" x2=\"163.6\" y2=\"13.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"160.0\" y1=\"7.0\" x2=\"156.4\" y2=\"13.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<text x=\"300.0\" y=\"141.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">x</text>\n<text x=\"148.0\" y=\"7.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">y</text>\n<circle cx=\"160.0\" cy=\"125.0\" r=\"3.5\" fill=\"#1e293b\"/>\n<text x=\"150.0\" y=\"140.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">O</text>\n<line x1=\"220.0\" y1=\"45.0\" x2=\"220.0\" y2=\"205.0\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/>\n<circle cx=\"220.0\" cy=\"45.0\" r=\"5.5\" fill=\"#2563eb\"/>\n<circle cx=\"220.0\" cy=\"205.0\" r=\"5.5\" fill=\"#ea580c\"/>\n<text x=\"230.0\" y=\"37.0\" text-anchor=\"start\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#2563eb\" font-style=\"italic\">(x, y)</text>\n<text x=\"230.0\" y=\"221.0\" text-anchor=\"start\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#ea580c\" font-style=\"italic\">(x, −y)</text>\n<text x=\"160.0\" y=\"262.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\">reflection in the x-axis: (x, y) goes to (x, −y)</text>\n</svg>"
+                  }
+                },
+                {
+                  "explain": "Replace \\(y\\) with \\(-y\\) in \\(x^2+y^2=r^2\\). Put the \\(-y\\) in brackets so the whole of it is squared.",
+                  "work": "\\(x^2+(-y)^2=r^2\\)"
+                },
+                {
+                  "explain": "Simplify \\((-y)^2\\). It means \\((-y)\\times(-y)\\), and a negative times a negative is positive, so \\((-y)^2=y^2\\).",
+                  "work": "\\((-y)\\times(-y)=y^2\\Rightarrow x^2+y^2=r^2\\)"
+                },
+                {
+                  "explain": "The result is exactly the original equation, so reflecting in the x-axis does not change it.",
+                  "work": "\\(x^2+y^2=r^2\\ \\text{(unchanged)}\\)"
+                },
+                {
+                  "explain": "Now the y-axis. Reflecting in the y-axis keeps every y-value but flips each x-value: the point \\((x, y)\\) lands on \\((-x, y)\\). So replace \\(x\\) with \\(-x\\).",
+                  "work": "\\((x,\\ y)\\ \\to\\ (-x,\\ y)\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 270\" width=\"100%\" height=\"auto\" style=\"max-width:320px\">\n<circle cx=\"160.0\" cy=\"125.0\" r=\"100.0\" fill=\"#eff6ff\" fill-opacity=\"0.9\" stroke=\"#475569\" stroke-width=\"2.4\"/>\n<line x1=\"25.0\" y1=\"125.0\" x2=\"295.0\" y2=\"125.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"295.0\" y1=\"125.0\" x2=\"289.0\" y2=\"128.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"295.0\" y1=\"125.0\" x2=\"289.0\" y2=\"121.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"160.0\" y1=\"243.0\" x2=\"160.0\" y2=\"7.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"160.0\" y1=\"7.0\" x2=\"163.6\" y2=\"13.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"160.0\" y1=\"7.0\" x2=\"156.4\" y2=\"13.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<text x=\"300.0\" y=\"141.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">x</text>\n<text x=\"148.0\" y=\"7.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">y</text>\n<circle cx=\"160.0\" cy=\"125.0\" r=\"3.5\" fill=\"#1e293b\"/>\n<text x=\"150.0\" y=\"140.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">O</text>\n<line x1=\"220.0\" y1=\"45.0\" x2=\"100.0\" y2=\"45.0\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/>\n<circle cx=\"220.0\" cy=\"45.0\" r=\"5.5\" fill=\"#2563eb\"/>\n<circle cx=\"100.0\" cy=\"45.0\" r=\"5.5\" fill=\"#16a34a\"/>\n<text x=\"230.0\" y=\"37.0\" text-anchor=\"start\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#2563eb\" font-style=\"italic\">(x, y)</text>\n<text x=\"90.0\" y=\"37.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#16a34a\" font-style=\"italic\">(−x, y)</text>\n<text x=\"160.0\" y=\"262.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#16a34a\">reflection in the y-axis: (x, y) goes to (−x, y)</text>\n</svg>"
+                  }
+                },
+                {
+                  "explain": "Replace \\(x\\) with \\(-x\\) in the equation (again use brackets) and simplify using \\((-x)^2=(-x)\\times(-x)=x^2\\).",
+                  "work": "\\((-x)^2+y^2=r^2\\Rightarrow x^2+y^2=r^2\\)"
+                },
+                {
+                  "explain": "Again we get the original equation, so reflecting in the y-axis does not change it either. This proves the equation is unchanged by both reflections.",
+                  "work": "\\(x^2+y^2=r^2\\ \\text{(unchanged)}\\)"
+                },
+                {
+                  "explain": "Check with numbers: take \\(r=5\\) and the point \\((3,4)\\), which is on the circle because \\(9+16=25\\). Its reflections \\((3,-4)\\) and \\((-3,4)\\) are on the circle too.",
+                  "work": "\\(3^2+(-4)^2=25,\\quad(-3)^2+4^2=25\\)"
+                }
+              ],
+              "timeLimit": 120,
+              "xp": 2
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(\\text{Replace } x \\text{ with } -x: \\ (-x)^2 + y^2 = x^2 + y^2 = r^2\\)"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(\\text{A circle centred at the origin is perfectly symmetrical about both the } x\\text{-axis and the } y\\text{-axis.}\\)"
-            },
-            {
-              "explain": "Final answer: See solution steps.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "See solution steps."
+              "id": "y11a-5B-new-9b",
+              "type": "review",
+              "manual": true,
+              "difficulty": "medium",
+              "stem": "b) Explain this result geometrically.",
+              "answer": "A circle with centre at the origin is symmetrical about both axes. A reflection in an axis sends each point of the circle to another point that is the same distance r from the centre (the origin lies on the axis), so the mirror image lies on the same circle and the graph maps onto itself.",
+              "hint": "Think about the distance from the origin. Does a reflection in an axis change how far a point is from the origin?",
+              "keyPoints": [
+                {
+                  "text": "Explain this result geometrically",
+                  "note": "Use words about the shape: centre, radius and symmetry, not just algebra."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "The equation \\(x^2+y^2=r^2\\) describes all the points whose distance from the origin (the centre) is exactly \\(r\\). That is the definition of a circle.",
+                  "work": "\\(\\text{distance from }O=\\sqrt{x^2+y^2}=r\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 270\" width=\"100%\" height=\"auto\" style=\"max-width:320px\">\n<circle cx=\"160.0\" cy=\"125.0\" r=\"100.0\" fill=\"#eff6ff\" fill-opacity=\"0.9\" stroke=\"#475569\" stroke-width=\"2.4\"/>\n<line x1=\"25.0\" y1=\"125.0\" x2=\"295.0\" y2=\"125.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"295.0\" y1=\"125.0\" x2=\"289.0\" y2=\"128.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"295.0\" y1=\"125.0\" x2=\"289.0\" y2=\"121.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"160.0\" y1=\"243.0\" x2=\"160.0\" y2=\"7.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"160.0\" y1=\"7.0\" x2=\"163.6\" y2=\"13.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"160.0\" y1=\"7.0\" x2=\"156.4\" y2=\"13.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<text x=\"300.0\" y=\"141.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">x</text>\n<text x=\"148.0\" y=\"7.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">y</text>\n<circle cx=\"160.0\" cy=\"125.0\" r=\"3.5\" fill=\"#1e293b\"/>\n<text x=\"150.0\" y=\"140.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">O</text>\n<line x1=\"160.0\" y1=\"125.0\" x2=\"220.0\" y2=\"45.0\" stroke=\"#ea580c\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<circle cx=\"220.0\" cy=\"45.0\" r=\"5.5\" fill=\"#2563eb\"/>\n<text x=\"230.0\" y=\"39.0\" text-anchor=\"start\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#2563eb\" font-style=\"italic\">P</text>\n<text x=\"174.0\" y=\"75.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"14\" font-weight=\"600\" fill=\"#ea580c\" font-style=\"italic\">r</text>\n<text x=\"160.0\" y=\"262.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\">every point of the circle is a distance r from O</text>\n</svg>"
+                  }
+                },
+                {
+                  "explain": "A reflection in an axis moves a point to the other side of the axis but keeps it the same distance from every point ON the axis. The centre O is on both axes, so the reflected point is still the same distance \\(r\\) from O.",
+                  "work": "\\(\\sqrt{x^2+(-y)^2}=\\sqrt{x^2+y^2}=r\\)"
+                },
+                {
+                  "explain": "So the mirror image of any point of the circle is also a point of the circle. Doing this for every point, the whole circle lands exactly on top of itself.",
+                  "work": "\\(\\text{circle}\\ \\to\\ \\text{same circle}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 270\" width=\"100%\" height=\"auto\" style=\"max-width:320px\">\n<circle cx=\"160.0\" cy=\"125.0\" r=\"100.0\" fill=\"#eff6ff\" fill-opacity=\"0.9\" stroke=\"#475569\" stroke-width=\"2.4\"/>\n<line x1=\"25.0\" y1=\"125.0\" x2=\"295.0\" y2=\"125.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"295.0\" y1=\"125.0\" x2=\"289.0\" y2=\"128.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"295.0\" y1=\"125.0\" x2=\"289.0\" y2=\"121.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"160.0\" y1=\"243.0\" x2=\"160.0\" y2=\"7.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"160.0\" y1=\"7.0\" x2=\"163.6\" y2=\"13.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<line x1=\"160.0\" y1=\"7.0\" x2=\"156.4\" y2=\"13.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<text x=\"300.0\" y=\"141.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">x</text>\n<text x=\"148.0\" y=\"7.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">y</text>\n<circle cx=\"160.0\" cy=\"125.0\" r=\"3.5\" fill=\"#1e293b\"/>\n<text x=\"150.0\" y=\"140.0\" text-anchor=\"middle\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">O</text>\n<line x1=\"160.0\" y1=\"125.0\" x2=\"220.0\" y2=\"45.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/>\n<circle cx=\"220.0\" cy=\"45.0\" r=\"5.5\" fill=\"#2563eb\"/>\n<text x=\"230.0\" y=\"37.0\" text-anchor=\"start\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\" font-style=\"italic\">(x, y)</text>\n<line x1=\"160.0\" y1=\"125.0\" x2=\"220.0\" y2=\"205.0\" stroke=\"#ea580c\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/>\n<circle cx=\"220.0\" cy=\"205.0\" r=\"5.5\" fill=\"#ea580c\"/>\n<text x=\"230.0\" y=\"221.0\" text-anchor=\"start\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\" font-style=\"italic\">(x, −y)</text>\n<line x1=\"160.0\" y1=\"125.0\" x2=\"100.0\" y2=\"45.0\" stroke=\"#16a34a\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/>\n<circle cx=\"100.0\" cy=\"45.0\" r=\"5.5\" fill=\"#16a34a\"/>\n<text x=\"90.0\" y=\"37.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#16a34a\" font-style=\"italic\">(−x, y)</text>\n<line x1=\"160.0\" y1=\"125.0\" x2=\"100.0\" y2=\"205.0\" stroke=\"#7c3aed\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/>\n<circle cx=\"100.0\" cy=\"205.0\" r=\"5.5\" fill=\"#7c3aed\"/>\n<text x=\"90.0\" y=\"221.0\" text-anchor=\"end\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"600\" fill=\"#7c3aed\" font-style=\"italic\">(−x, −y)</text>\n<text x=\"160.0\" y=\"262.0\" text-anchor=\"middle\" font-family=\"system-ui, Arial, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">all four points are the same distance r from O</text>\n</svg>"
+                  }
+                },
+                {
+                  "explain": "In other words the circle is symmetrical about the x-axis and about the y-axis (each axis is a line of symmetry). That is why the equation does not change.",
+                  "work": "\\(\\text{circle centred at }O\\Rightarrow\\text{symmetrical about both axes}\\)"
+                }
+              ],
+              "timeLimit": 90,
+              "xp": 1
             }
-          ],
-          "manual": true,
-          "timeLimit": 180,
-          "xp": 3
+          ]
         },
         {
           "id": "y11a-5B-new-12",
