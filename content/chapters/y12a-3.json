@@ -446,6 +446,108 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 260\"><rect width=\"480\" height=\"260\" fill=\"white\"/><path d=\"M45 130H445M65 225V25\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M65 70H185 A60 60 0 0 1 305 70L425 190\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><text x=\"47\" y=\"150\" font-family=\"Arial\" font-size=\"12\">0</text><text x=\"178\" y=\"150\" font-family=\"Arial\" font-size=\"12\">4</text><text x=\"299\" y=\"150\" font-family=\"Arial\" font-size=\"12\">8</text><text x=\"417\" y=\"150\" font-family=\"Arial\" font-size=\"12\">12</text><text x=\"448\" y=\"135\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"47\" y=\"70\" font-family=\"Arial\" font-size=\"12\">3</text><text x=\"47\" y=\"195\" font-family=\"Arial\" font-size=\"12\">−3</text></svg>"
           }
+        },
+        {
+          "id": "y12a-advanced-004-p198-q19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(\\displaystyle\\int_0^1\\frac{1}{(3x+2)^2}\\,dx\\).",
+          "options": [
+            "\\(\\frac1{10}\\)",
+            "\\(\\frac1{5}\\)",
+            "\\(\\frac1{6}\\)",
+            "\\(\\frac1{15}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the reverse chain rule, or substitute \\(u=3x+2\\). Remember the factor of 3 from differentiating the inside.",
+          "steps": [
+            {
+              "explain": "Rewrite the integrand as a power and integrate using the reverse chain rule.",
+              "work": "\\(\\int(3x+2)^{-2}dx=-\\frac{1}{3}(3x+2)^{-1}+C=-\\frac{1}{3(3x+2)}+C\\)"
+            },
+            {
+              "explain": "Substitute the upper limit, then subtract the value at the lower limit.",
+              "work": "\\(\\left[-\\frac{1}{3(3x+2)}\\right]_0^1=-\\frac1{15}-(-\\frac16)=\\frac16-\\frac1{15}=\\boxed{\\frac1{10}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "198",
+            "course": "Advanced",
+            "sourceQuestion": "Q19"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p198-q22",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The diagram shows the graph of \\(y=f(x)\\) with intercepts at \\(x=-1,0,3\\) and \\(4\\). The area of shaded region \\(R_1\\) is 2. The area of shaded region \\(R_2\\) is 3. It is given that \\(\\int_0^4 f(x)\\,dx=10\\). What is the value of \\(\\int_{-1}^3f(x)\\,dx\\)?",
+          "options": [
+            "\\(11\\)",
+            "\\(9\\)",
+            "\\(5\\)",
+            "\\(15\\)"
+          ],
+          "answer": 0,
+          "hint": "Remember that area below the x-axis contributes a negative value to a definite integral. Split the requested interval at x=0 and x=3.",
+          "steps": [
+            {
+              "explain": "From x=3 to x=4 the graph is below the axis, so its signed integral is −3. Subtract this from the given integral to find the integral from 0 to 3.",
+              "work": "\\(\\int_3^4f(x)\\,dx=-3\\)\n\\(\\int_0^3f(x)\\,dx=\\int_0^4f(x)\\,dx-\\int_3^4f(x)\\,dx=10-(-3)=13\\)"
+            },
+            {
+              "explain": "From x=−1 to x=0 the graph is also below the axis, so this contribution is −2. Add it to the integral from 0 to 3.",
+              "work": "\\(\\int_{-1}^0f(x)\\,dx=-2\\)\n\\(\\int_{-1}^3f(x)\\,dx=-2+13=\\boxed{11}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 520 300\"><rect width=\"520\" height=\"300\" fill=\"white\"/><path d=\"M50 155H480M110 260V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M110 155 C130 185 155 190 180 155 L110 155Z\" fill=\"#bfdbfe\" opacity=\".8\"/><path d=\"M370 155 C392 210 425 210 450 155 L370 155Z\" fill=\"#fecaca\" opacity=\".75\"/><path d=\"M110 155 C130 185 155 190 180 155 C218 80 260 70 300 80 C330 88 350 120 370 155 C392 210 425 210 450 155 C460 115 470 80 480 72\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><g font-family=\"Arial\" font-size=\"13\" text-anchor=\"middle\"><text x=\"110\" y=\"177\">−1</text><text x=\"180\" y=\"177\">0</text><text x=\"370\" y=\"177\">3</text><text x=\"450\" y=\"177\">4</text></g><text x=\"119\" y=\"218\" font-family=\"Arial\" font-size=\"13\">R₁ (area 2)</text><text x=\"384\" y=\"232\" font-family=\"Arial\" font-size=\"13\">R₂ (area 3)</text><text x=\"486\" y=\"160\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"114\" y=\"32\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"307\" y=\"65\" font-family=\"Arial\" font-size=\"14\">y = f(x)</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "198",
+            "course": "Advanced",
+            "sourceQuestion": "Q22"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p198-q23",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A trigonometric function \\(f(x)\\) satisfies the condition \\(\\int_0^\\pi f(x)\\,dx\\ne\\int_\\pi^{2\\pi}f(x)\\,dx\\). Which function could be \\(f(x)\\)?",
+          "options": [
+            "\\(f(x)=\\sin(2x)\\)",
+            "\\(f(x)=\\cos(2x)\\)",
+            "\\(f(x)=\\sin(\\frac{x}{2})\\)",
+            "\\(f(x)=\\cos(\\frac{x}{2})\\)"
+          ],
+          "answer": 3,
+          "hint": "Test the two integrals for each option. For the half-angle cosine, use its antiderivative and compare the two interval results.",
+          "steps": [
+            {
+              "explain": "For the first three choices, the integrals on [0,π] and [π,2π] are equal: both are zero for sin(2x) and cos(2x), and both are 2 for sin(x/2)."
+            },
+            {
+              "explain": "For cos(x/2), integrate using the antiderivative 2sin(x/2).",
+              "work": "\\(\\int_0^\\pi\\cos(\\frac x2)dx=[2\\sin(\\frac x2)]_0^\\pi=2\\)"
+            },
+            {
+              "explain": "Now calculate the second half. It is −2, which differs from 2, so this option satisfies the condition.",
+              "work": "\\(\\int_\\pi^{2\\pi}\\cos(\\frac x2)dx=[2\\sin(\\frac x2)]_\\pi^{2\\pi}=0-2=-2\\ne2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "198",
+            "course": "Advanced",
+            "sourceQuestion": "Q23"
+          }
         }
       ]
     },
@@ -913,6 +1015,38 @@
             "page": "196",
             "course": "Advanced",
             "sourceQuestion": "Q13, 2020 HSC"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p198-q24",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(\\displaystyle\\int_0^3e^{5x}\\,dx\\).",
+          "options": [
+            "\\(\\frac{e^{15}-1}{5}\\)",
+            "\\(e^{15}-1\\)",
+            "\\(\\frac{e^{15}}5\\)",
+            "\\(5(e^{15}-1)\\)"
+          ],
+          "answer": 0,
+          "hint": "The derivative of e^(5x) includes a factor of 5, so divide by 5 when integrating.",
+          "steps": [
+            {
+              "explain": "Use the reverse chain rule: the antiderivative of e^(5x) is e^(5x)/5.",
+              "work": "\\(\\int e^{5x}dx=\\frac15e^{5x}+C\\)"
+            },
+            {
+              "explain": "Substitute the upper and lower limits and simplify.",
+              "work": "\\(\\int_0^3e^{5x}dx=\\left[\\frac15e^{5x}\\right]_0^3=\\frac{e^{15}-1}{5}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "198",
+            "course": "Advanced",
+            "sourceQuestion": "Q24"
           }
         }
       ]
@@ -1977,6 +2111,298 @@
             "course": "Advanced",
             "sourceQuestion": "Q28, 2021 HSC"
           }
+        },
+        {
+          "id": "y12a-advanced-004-p197-q12",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The diagram shows two parabolas \\(y=4x-x^2\\) and \\(y=ax^2\\), where \\(a>0\\). The parabolas intersect at the origin, \\(O\\), and at \\(A\\).",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 520 340\"><rect width=\"520\" height=\"340\" fill=\"white\"/><path d=\"M55 285H475M105 310V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M105 285 C170 120 270 40 362 72 C300 160 180 276 105 285Z\" fill=\"#fde68a\" opacity=\".48\"/><path d=\"M105 285 C170 120 270 40 362 72 C388 65 406 87 420 124 C438 175 450 235 458 285\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M105 285 C180 276 280 160 362 72 C390 43 418 30 445 26\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"105\" cy=\"285\" r=\"4\" fill=\"#334155\"/><circle cx=\"362\" cy=\"72\" r=\"4\" fill=\"#334155\"/><path d=\"M362 72V300\" stroke=\"#64748b\" stroke-dasharray=\"5 5\"/><g font-family=\"Arial\" fill=\"#1e293b\"><text x=\"89\" y=\"306\" font-size=\"15\">O</text><text x=\"368\" y=\"67\" font-size=\"15\">A</text><text x=\"380\" y=\"104\" font-size=\"14\">y = 4x − x²</text><text x=\"374\" y=\"154\" font-size=\"14\">y = ax²</text><text x=\"480\" y=\"290\" font-size=\"15\">x</text><text x=\"110\" y=\"31\" font-size=\"15\">y</text><text x=\"344\" y=\"322\" font-size=\"14\">xₐ</text></g></svg>"
+          },
+          "hint": "At A, set the two equations equal and use the nonzero intersection to find its x-coordinate. Then integrate upper curve minus lower curve from O to A.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p197-q12-a",
+              "type": "review",
+              "manual": true,
+              "difficulty": "medium",
+              "stem": "Show that the x-coordinate of \\(A\\) is \\(\\frac{4}{a+1}\\).",
+              "answer": "\\(x_A=\\frac4{a+1}\\)",
+              "hint": "At an intersection, the y-values match. Factor the equation and take the nonzero root for point A.",
+              "steps": [
+                {
+                  "explain": "Set the two y-expressions equal at A.",
+                  "work": "\\(4x-x^2=ax^2\\)"
+                },
+                {
+                  "explain": "Move all terms to one side and factor out x. The root x=0 is O, so use the other root for A.",
+                  "work": "\\(4x=(a+1)x^2\\Rightarrow x[(a+1)x-4]=0\\)"
+                },
+                {
+                  "explain": "Solve the nonzero factor.",
+                  "work": "\\((a+1)x=4\\Rightarrow\\boxed{x_A=\\frac4{a+1}}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 460 300\"><rect width=\"460\" height=\"300\" fill=\"white\"/><path d=\"M45 250H420M145 270V25\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M145 250 C165 190 220 70 265 70 C285 70 300 90 315 101 C295 132 220 220 145 250Z\" fill=\"#f59e0b\" opacity=\".55\"/><path d=\"M95 370 C110 320 128 273 145 250 C165 190 220 70 265 70 C285 70 300 90 315 101 C330 130 360 205 385 250\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M145 250 C200 250 270 140 315 101 C350 70 380 45 400 35\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"145\" cy=\"250\" r=\"4\" fill=\"#334155\"/><circle cx=\"315\" cy=\"101\" r=\"4\" fill=\"#334155\"/><path d=\"M315 101V270\" stroke=\"#64748b\" stroke-dasharray=\"4 4\"/><text x=\"130\" y=\"270\" font-family=\"Arial\" font-size=\"13\">O</text><text x=\"320\" y=\"100\" font-family=\"Arial\" font-size=\"13\">A</text><text x=\"335\" y=\"73\" font-family=\"Arial\" font-size=\"13\">y=ax²</text><text x=\"345\" y=\"190\" font-family=\"Arial\" font-size=\"13\">y=4x−x²</text><text x=\"425\" y=\"255\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"150\" y=\"23\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"300\" y=\"288\" font-family=\"Arial\" font-size=\"13\">xₐ</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "197",
+                "course": "Advanced",
+                "sourceQuestion": "Q30, 2020 HSC"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p197-q12-b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the value of \\(a\\) such that the shaded area is \\(\\frac{16}{3}\\).",
+              "options": [
+                "\\(\\sqrt2-1\\)",
+                "\\(1\\)",
+                "\\(\\sqrt2+1\\)",
+                "\\(2\\sqrt2-1\\)"
+              ],
+              "answer": 0,
+              "hint": "Integrate the upper parabola minus the lower parabola from x=0 to the intersection \\(x=4/(a+1)\\), then set this area equal to \\(16/3\\).",
+              "steps": [
+                {
+                  "explain": "From x=0 to A, the concave-down curve is above the upward-opening curve. Use the intersection from part (a) as the upper limit.",
+                  "work": "\\(\\frac{16}{3}=\\int_0^{4/(a+1)}[(4x-x^2)-ax^2]dx\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 460 300\"><rect width=\"460\" height=\"300\" fill=\"white\"/><path d=\"M45 250H420M145 270V25\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M145 250 C165 190 220 70 265 70 C285 70 300 90 315 101 C295 132 220 220 145 250Z\" fill=\"#f59e0b\" opacity=\".55\"/><path d=\"M95 370 C110 320 128 273 145 250 C165 190 220 70 265 70 C285 70 300 90 315 101 C330 130 360 205 385 250\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M145 250 C200 250 270 140 315 101 C350 70 380 45 400 35\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"145\" cy=\"250\" r=\"4\" fill=\"#334155\"/><circle cx=\"315\" cy=\"101\" r=\"4\" fill=\"#334155\"/><path d=\"M315 101V270\" stroke=\"#64748b\" stroke-dasharray=\"4 4\"/><text x=\"130\" y=\"270\" font-family=\"Arial\" font-size=\"13\">O</text><text x=\"320\" y=\"100\" font-family=\"Arial\" font-size=\"13\">A</text><text x=\"335\" y=\"73\" font-family=\"Arial\" font-size=\"13\">y=ax²</text><text x=\"345\" y=\"190\" font-family=\"Arial\" font-size=\"13\">y=4x−x²</text><text x=\"425\" y=\"255\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"150\" y=\"23\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"300\" y=\"288\" font-family=\"Arial\" font-size=\"13\">xₐ</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Combine the quadratic terms and integrate.",
+                  "work": "\\(\\frac{16}{3}=\\left[2x^2-\\frac{(a+1)x^3}{3}\\right]_0^{4/(a+1)}=\\frac{32}{3(a+1)^2}\\)"
+                },
+                {
+                  "explain": "Solve for a. Since a is positive, choose the positive value of a+1.",
+                  "work": "\\((a+1)^2=2\\Rightarrow a+1=\\sqrt2\\Rightarrow\\boxed{a=\\sqrt2-1}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "197",
+                "course": "Advanced",
+                "sourceQuestion": "Q30, 2020 HSC"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "197",
+            "course": "Advanced",
+            "sourceQuestion": "Q12"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p198-q20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The diagram shows the graph of \\(y=\\frac{3x}{x^2+1}\\). The region enclosed by the graph, the x-axis and the line \\(x=3\\) is shaded. Calculate the exact value of the area of the shaded region.",
+          "options": [
+            "\\(\\frac32\\ln 10\\)",
+            "\\(3\\ln 10\\)",
+            "\\(\\frac32\\ln 3\\)",
+            "\\(\\ln 10\\)"
+          ],
+          "answer": 0,
+          "hint": "The shaded region runs from the intercept x=0 to x=3. Integrate \\(3x/(x^2+1)\\); the numerator is proportional to the derivative of the denominator.",
+          "steps": [
+            {
+              "explain": "Read the shaded region from the graph: it lies above the x-axis from x=0 to the vertical boundary x=3.",
+              "work": "\\(A=\\int_0^3\\frac{3x}{x^2+1}\\,dx\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 460 300\"><rect width=\"460\" height=\"300\" fill=\"white\"/><path d=\"M55 235H420M100 260V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 235 C116 187 133 131 163 103 C190 78 220 87 248 102 C278 117 306 135 334 150 L334 235Z\" fill=\"#bfdbfe\" opacity=\".72\"/><path d=\"M55 220 C75 228 91 235 100 235 C116 187 133 131 163 103 C190 78 220 87 248 102 C278 117 306 135 334 150 C360 163 388 171 420 178\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M334 150V235\" stroke=\"#64748b\" stroke-dasharray=\"5 4\"/><circle cx=\"100\" cy=\"235\" r=\"4\" fill=\"#334155\"/><text x=\"92\" y=\"254\" font-family=\"Arial\" font-size=\"13\">0</text><text x=\"330\" y=\"254\" font-family=\"Arial\" font-size=\"13\">3</text><text x=\"423\" y=\"239\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"105\" y=\"32\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"185\" y=\"70\" font-family=\"Arial\" font-size=\"14\">y = 3x/(x²+1)</text><text x=\"197\" y=\"218\" font-family=\"Arial\" font-size=\"13\">shaded area</text></svg>"
+              }
+            },
+            {
+              "explain": "Let \\(u=x^2+1\\). Then \\(du=2x\\,dx\\), so \\(3x\\,dx=\\frac32du\\).",
+              "work": "\\(A=\\frac32\\int_1^{10}\\frac1u\\,du\\)"
+            },
+            {
+              "explain": "Integrate \\(1/u\\), apply the transformed limits and simplify.",
+              "work": "\\(A=\\frac32[\\ln u]_1^{10}=\\frac32(\\ln10-\\ln1)=\\boxed{\\frac32\\ln10}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "198",
+            "course": "Advanced",
+            "sourceQuestion": "Q20"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p198-q21",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The diagram shows the region \\(R\\), bounded by the curve \\(y=x^r\\), where \\(r\\ge1\\), the x-axis and the tangent to the curve at the point \\((1,1)\\).",
+          "hint": "Use the diagram to identify the curve, tangent and x-axis. Work through each part in order, keeping the region boundaries clear.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p198-q21-i",
+              "type": "review",
+              "manual": true,
+              "difficulty": "medium",
+              "stem": "Show that the tangent to the curve at \\((1,1)\\) meets the x-axis at \\(\\left(\\frac{r-1}{r},0\\right)\\).",
+              "answer": "The tangent meets the x-axis at \\(\\left(\\frac{r-1}{r},0\\right)\\).",
+              "hint": "Differentiate \\(x^r\\) to get the tangent slope at x=1. Use point-slope form through (1,1), then set y=0.",
+              "steps": [
+                {
+                  "explain": "Differentiate the curve to find its gradient at x=1.",
+                  "work": "\\(y=x^r\\Rightarrow\\frac{dy}{dx}=rx^{r-1},\\quad m= r(1)^{r-1}=r\\)"
+                },
+                {
+                  "explain": "Use slope r and the point (1,1) to write the tangent equation.",
+                  "work": "\\(y-1=r(x-1)\\Rightarrow y=rx-r+1\\)"
+                },
+                {
+                  "explain": "At the x-axis y=0. Solve for x to find the intercept.",
+                  "work": "\\(0=rx-r+1\\Rightarrow rx=r-1\\Rightarrow x=\\frac{r-1}{r}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "198",
+                "course": "Advanced",
+                "sourceQuestion": "Q21"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p198-q21-ii",
+              "type": "review",
+              "manual": true,
+              "difficulty": "medium",
+              "stem": "Using the result of part i, or otherwise, show that the area of the region \\(R\\) is \\(\\frac{r-1}{2r(r+1)}\\).",
+              "answer": "\\(A_R=\\frac{r-1}{2r(r+1)}\\)",
+              "hint": "Split R at the tangent’s x-intercept: use the area under the curve from 0 to 1, then subtract the triangle under the tangent from its x-intercept to 1.",
+              "steps": [
+                {
+                  "explain": "The area under the curve from x=0 to x=1 is the integral of x^r.",
+                  "work": "\\(\\int_0^1x^r\\,dx=\\left[\\frac{x^{r+1}}{r+1}\\right]_0^1=\\frac1{r+1}\\)"
+                },
+                {
+                  "explain": "The tangent and x-axis form a triangle from x=(r−1)/r to x=1. Its base is 1/r and its height is 1.",
+                  "work": "\\(A_{\\triangle}=\\frac12\\cdot\\frac1r\\cdot1=\\frac1{2r}\\)"
+                },
+                {
+                  "explain": "Subtract the triangle from the area under the curve and combine fractions.",
+                  "work": "\\(A_R=\\frac1{r+1}-\\frac1{2r}=\\frac{2r-(r+1)}{2r(r+1)}=\\boxed{\\frac{r-1}{2r(r+1)}}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 330\"><rect width=\"480\" height=\"330\" fill=\"white\"/><path d=\"M45 270H440M95 295V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M95 270 C175 270 252 218 307 143 C331 110 347 72 355 45 L225 270Z\" fill=\"#fde68a\" opacity=\".52\"/><path d=\"M95 270 C175 270 252 218 307 143 C331 110 347 72 355 45\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M225 270L355 45\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.5\" stroke-dasharray=\"6 4\"/><circle cx=\"355\" cy=\"45\" r=\"4\" fill=\"#334155\"/><circle cx=\"225\" cy=\"270\" r=\"3\" fill=\"#334155\"/><text x=\"362\" y=\"42\" font-family=\"Arial\" font-size=\"14\">(1,1)</text><text x=\"72\" y=\"288\" font-family=\"Arial\" font-size=\"13\">O</text><text x=\"211\" y=\"290\" font-family=\"Arial\" font-size=\"12\">(r−1)/r</text><text x=\"443\" y=\"274\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"99\" y=\"32\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"278\" y=\"67\" font-family=\"Arial\" font-size=\"14\">y = xʳ</text><text x=\"279\" y=\"195\" font-family=\"Arial\" font-size=\"13\" fill=\"#b91c1c\">tangent</text><text x=\"127\" y=\"255\" font-family=\"Arial\" font-size=\"13\" fill=\"#92400e\">R</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "198",
+                "course": "Advanced",
+                "sourceQuestion": "Q21"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p198-q21-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the exact value of \\(r\\) for which the area of \\(R\\) is a maximum.",
+              "options": [
+                "\\(1+\\sqrt2\\)",
+                "\\(2+\\sqrt2\\)",
+                "\\(1+\\frac{\\sqrt2}{2}\\)",
+                "\\(\\sqrt2-1\\)"
+              ],
+              "answer": 0,
+              "hint": "Use the area formula from part ii as a function of r. Differentiate, set the derivative to zero, and keep the solution satisfying r≥1.",
+              "steps": [
+                {
+                  "explain": "Use the area formula and differentiate with respect to r. The positive denominator does not affect where the derivative is zero.",
+                  "work": "\\(A(r)=\\frac{r-1}{2r(r+1)}\\)\n\\(A'(r)=\\frac{-r^2+2r+1}{2r^2(r+1)^2}\\)"
+                },
+                {
+                  "explain": "Set the numerator equal to zero and solve the quadratic.",
+                  "work": "\\(-r^2+2r+1=0\\Rightarrow r^2-2r-1=0\\Rightarrow r=1\\pm\\sqrt2\\)"
+                },
+                {
+                  "explain": "Since r≥1, discard 1−√2. The remaining stationary value gives the maximum area.",
+                  "work": "\\(\\boxed{r=1+\\sqrt2}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "198",
+                "course": "Advanced",
+                "sourceQuestion": "y12a-advanced-004-p198-q21-iii"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 330\"><rect width=\"480\" height=\"330\" fill=\"white\"/><path d=\"M45 270H440M95 295V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M95 270 C175 270 252 218 307 143 C331 110 347 72 355 45 L225 270Z\" fill=\"#fde68a\" opacity=\".52\"/><path d=\"M95 270 C175 270 252 218 307 143 C331 110 347 72 355 45\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M225 270L355 45\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.5\" stroke-dasharray=\"6 4\"/><circle cx=\"355\" cy=\"45\" r=\"4\" fill=\"#334155\"/><circle cx=\"225\" cy=\"270\" r=\"3\" fill=\"#334155\"/><text x=\"362\" y=\"42\" font-family=\"Arial\" font-size=\"14\">(1,1)</text><text x=\"72\" y=\"288\" font-family=\"Arial\" font-size=\"13\">O</text><text x=\"211\" y=\"290\" font-family=\"Arial\" font-size=\"12\">(r−1)/r</text><text x=\"443\" y=\"274\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"99\" y=\"32\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"278\" y=\"67\" font-family=\"Arial\" font-size=\"14\">y = xʳ</text><text x=\"279\" y=\"195\" font-family=\"Arial\" font-size=\"13\" fill=\"#b91c1c\">tangent</text><text x=\"127\" y=\"255\" font-family=\"Arial\" font-size=\"13\" fill=\"#92400e\">R</text></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "198",
+            "course": "Advanced",
+            "sourceQuestion": "Q21"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p198-q25",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The region bounded by the curve \\(y=\\frac1{x+3}\\) and the lines \\(x=0\\), \\(x=45\\) and \\(y=0\\) is divided into two parts of equal area by the line \\(x=k\\), where \\(k\\) is a positive integer. What is the value of \\(k\\)?",
+          "options": [
+            "\\(9\\)",
+            "\\(12\\)",
+            "\\(15\\)",
+            "\\(6\\)"
+          ],
+          "answer": 0,
+          "hint": "Equal areas mean the integral from 0 to k is half the integral from 0 to 45. Integrate 1/(x+3) using a logarithm.",
+          "steps": [
+            {
+              "explain": "Find the total area under the curve from 0 to 45.",
+              "work": "\\(A_{total}=\\int_0^{45}\\frac1{x+3}dx=[\\ln(x+3)]_0^{45}=\\ln48-\\ln3=\\ln16\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 500 300\"><rect width=\"500\" height=\"300\" fill=\"white\"/><path d=\"M55 250H460M100 270V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 80 C145 115 190 153 235 174 C275 192 315 207 355 218 C390 227 425 233 450 238 L450 250H100Z\" fill=\"#dbeafe\" opacity=\".38\"/><path d=\"M100 80 C145 115 190 153 235 174 C275 192 315 207 355 218 L355 250H100Z\" fill=\"#93c5fd\" opacity=\".62\"/><path d=\"M100 80 C145 115 190 153 235 174 C275 192 315 207 355 218 C390 227 425 233 450 238\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 80V250M355 218V250M450 238V250\" stroke=\"#64748b\" stroke-dasharray=\"5 4\"/><text x=\"246\" y=\"272\" font-family=\"Arial\" font-size=\"14\">k</text><text x=\"430\" y=\"272\" font-family=\"Arial\" font-size=\"14\">45</text><text x=\"88\" y=\"272\" font-family=\"Arial\" font-size=\"14\">0</text><text x=\"315\" y=\"150\" font-family=\"Arial\" font-size=\"14\">y = 1/(x+3)</text><text x=\"160\" y=\"223\" font-family=\"Arial\" font-size=\"13\">equal area</text><text x=\"375\" y=\"235\" font-family=\"Arial\" font-size=\"13\">equal area</text><text x=\"464\" y=\"254\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"104\" y=\"31\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
+              }
+            },
+            {
+              "explain": "Each half has area half of ln 16, which is ln 4. Set the area from 0 to k equal to ln 4.",
+              "work": "\\(\\int_0^k\\frac1{x+3}dx=\\ln4\\)"
+            },
+            {
+              "explain": "Evaluate the integral, solve for k, and check it is a positive integer.",
+              "work": "\\(\\ln(k+3)-\\ln3=\\ln4\\Rightarrow\\ln\\left(\\frac{k+3}{3}\\right)=\\ln4\\Rightarrow k+3=12\\Rightarrow\\boxed{k=9}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "198",
+            "course": "Advanced",
+            "sourceQuestion": "Q25"
+          }
         }
       ]
     },
@@ -2492,6 +2918,373 @@
           },
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 620 180\"><rect width=\"620\" height=\"180\" fill=\"white\"/><rect x=\"30\" y=\"30\" width=\"560\" height=\"110\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M110 30V140M190 30V140M270 30V140M350 30V140M430 30V140M510 30V140M30 85H590\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"42\" y=\"64\" font-family=\"Arial\" font-size=\"14\">t (h)</text><text x=\"42\" y=\"118\" font-family=\"Arial\" font-size=\"14\">v (km/h)</text><g font-family=\"Arial\" font-size=\"13\" text-anchor=\"middle\"><text x=\"150\" y=\"64\">0</text><text x=\"230\" y=\"64\">1/60</text><text x=\"310\" y=\"64\">2/60</text><text x=\"390\" y=\"64\">3/60</text><text x=\"470\" y=\"64\">4/60</text><text x=\"550\" y=\"64\">5/60</text><text x=\"150\" y=\"118\">60</text><text x=\"230\" y=\"118\">55</text><text x=\"310\" y=\"118\">65</text><text x=\"390\" y=\"118\">68</text><text x=\"470\" y=\"118\">70</text><text x=\"550\" y=\"118\">67</text></g></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p197-q13",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Consider the integral \\(\\int_0^\\pi\\sin x\\,dx\\).",
+          "hint": "Evaluate the integral exactly first. For the trapezoidal estimate, use six equal subintervals and seven sine values.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p197-q13-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the exact value of \\(\\int_0^\\pi\\sin x\\,dx\\).",
+              "options": [
+                "\\(2\\)",
+                "\\(0\\)",
+                "\\(\\pi\\)",
+                "\\(1\\)"
+              ],
+              "answer": 0,
+              "hint": "The antiderivative of \\(\\sin x\\) is \\(-\\cos x\\). Substitute the limits 0 and \\(\\pi\\).",
+              "steps": [
+                {
+                  "explain": "Integrate sine.",
+                  "work": "\\(\\int\\sin x\\,dx=-\\cos x+C\\)"
+                },
+                {
+                  "explain": "Apply the limits and simplify.",
+                  "work": "\\(\\int_0^\\pi\\sin x\\,dx=[-\\cos x]_0^\\pi=1-(-1)=\\boxed2\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "197",
+                "course": "Advanced",
+                "sourceQuestion": "Bonus Q13"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p197-q13-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Using the trapezoidal rule with seven function values, find an approximation to \\(\\int_0^\\pi\\sin x\\,dx\\), leaving your answer in terms of \\(\\pi\\) and \\(\\sqrt3\\).",
+              "options": [
+                "\\(\\frac{\\pi}{6}(2+\\sqrt3)\\)",
+                "\\(\\frac{\\pi}{3}(2+\\sqrt3)\\)",
+                "\\(2+\\sqrt3\\)",
+                "\\(\\frac{\\pi}{12}(2+\\sqrt3)\\)"
+              ],
+              "answer": 0,
+              "hint": "Seven values mean six equal intervals of width \\(\\pi/6\\). Apply the trapezoidal rule using sine values at multiples of \\(\\pi/6\\).",
+              "steps": [
+                {
+                  "explain": "Calculate the interval width for the seven function values.",
+                  "work": "\\(h=\\frac{\\pi-0}{6}=\\frac\\pi6\\)"
+                },
+                {
+                  "explain": "List the sine values at all seven nodes.",
+                  "work": "\\(0,\\frac12,\\frac{\\sqrt3}{2},1,\\frac{\\sqrt3}{2},\\frac12,0\\)"
+                },
+                {
+                  "explain": "Apply the trapezoidal rule with endpoints once and interior values twice.",
+                  "work": "\\(T=\\frac h2[0+2(\\frac12+\\frac{\\sqrt3}{2}+1+\\frac{\\sqrt3}{2}+\\frac12)+0]=\\boxed{\\frac\\pi6(2+\\sqrt3)}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "197",
+                "course": "Advanced",
+                "sourceQuestion": "Bonus Q13"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p197-q13-iii",
+              "type": "review",
+              "manual": true,
+              "difficulty": "medium",
+              "stem": "Using parts (i) and (ii), explain why \\(\\frac{12}{2+\\sqrt3}\\) is a poor approximation for \\(\\pi\\).",
+              "answer": "The estimate is about \\(3.215\\), whereas \\(\\pi\\approx3.142\\). The error is about \\(0.073\\), so the estimate is not very accurate.",
+              "hint": "Equate the exact integral value 2 with the trapezoidal estimate from part (ii), solve for π, and compare the result with π.",
+              "steps": [
+                {
+                  "explain": "The exact value is \\(2\\), while the estimate is \\(\\frac{\\pi}{6}(2+\\sqrt3)\\).",
+                  "work": "\\(2\\approx\\frac\\pi6(2+\\sqrt3)\\)"
+                },
+                {
+                  "explain": "Rearrange to make π the subject.",
+                  "work": "\\(\\pi\\approx\\frac{12}{2+\\sqrt3}\\approx3.215\\)"
+                },
+                {
+                  "explain": "Compare this value with π≈3.142; the difference is about 0.073, which shows the estimate is noticeably high.",
+                  "work": "\\(3.215-3.142\\approx0.073\\Rightarrow\\boxed{\\text{poor approximation}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "197",
+                "course": "Advanced",
+                "sourceQuestion": "Bonus Q13"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "197",
+            "course": "Advanced",
+            "sourceQuestion": "Bonus Q13"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p197-q14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The diagram shows a paddock bounded by a river. One section of the fence along the river needs to be moved to alleviate erosion. Use the trapezoidal rule with the measurements in the two tables to calculate the approximate decrease in area.",
+          "options": [
+            "\\(760\\text{ m}^2\\)",
+            "\\(380\\text{ m}^2\\)",
+            "\\(1520\\text{ m}^2\\)",
+            "\\(760\\text{ m}\\)"
+          ],
+          "answer": 0,
+          "hint": "At each x-value, subtract the proposed height from the existing height. Apply the trapezoidal rule to these five differences with interval width 10 m.",
+          "steps": [
+            {
+              "explain": "Find the difference between the fence profiles at each x-coordinate: 0, 21, 34, 21 and 0 metres.",
+              "work": "\\(d_i=Y_{\\text{existing}}-Y_{\\text{proposed}}=(0,21,34,21,0)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 560 390\"><rect width=\"560\" height=\"390\" fill=\"white\"/><text x=\"25\" y=\"24\" font-family=\"Arial\" font-size=\"16\">Paddock profiles and measurements</text><path d=\"M45 180H515M280 210V45\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M70 160 C150 92 205 60 280 54 C355 60 410 92 490 160\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M70 160 C150 125 205 110 280 106 C355 110 410 125 490 160\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"3\"/><text x=\"355\" y=\"70\" font-family=\"Arial\" font-size=\"12\">Existing fence</text><text x=\"355\" y=\"132\" font-family=\"Arial\" font-size=\"12\">Proposed fence</text><g font-family=\"Arial\" font-size=\"12\" text-anchor=\"middle\"><text x=\"70\" y=\"198\">−20</text><text x=\"175\" y=\"198\">−10</text><text x=\"280\" y=\"198\">0</text><text x=\"385\" y=\"198\">10</text><text x=\"490\" y=\"198\">20</text></g><text x=\"518\" y=\"184\" font-family=\"Arial\" font-size=\"13\">x</text><rect x=\"20\" y=\"230\" width=\"520\" height=\"118\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M105 230V348M192 230V348M279 230V348M366 230V348M453 230V348M20 269H540M20 308H540\" stroke=\"#64748b\" stroke-width=\"1\"/><g font-family=\"Arial\" font-size=\"12\" text-anchor=\"middle\"><text x=\"62\" y=\"255\">x</text><text x=\"148\" y=\"255\">−20</text><text x=\"235\" y=\"255\">−10</text><text x=\"322\" y=\"255\">0</text><text x=\"409\" y=\"255\">10</text><text x=\"496\" y=\"255\">20</text><text x=\"62\" y=\"295\">Existing</text><text x=\"148\" y=\"295\">104</text><text x=\"235\" y=\"295\">148</text><text x=\"322\" y=\"295\">170</text><text x=\"409\" y=\"295\">148</text><text x=\"496\" y=\"295\">104</text><text x=\"62\" y=\"334\">Proposed</text><text x=\"148\" y=\"334\">104</text><text x=\"235\" y=\"334\">127</text><text x=\"322\" y=\"334\">136</text><text x=\"409\" y=\"334\">127</text><text x=\"496\" y=\"334\">104</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Use the five differences and the 10-metre spacing in the composite trapezoidal rule.",
+              "work": "\\(\\Delta A\\approx\\frac{10}{2}[0+2(21+34+21)+0]\\)"
+            },
+            {
+              "explain": "Evaluate the weighted sum. The result is an area, so use square metres.",
+              "work": "\\(\\Delta A\\approx5(152)=\\boxed{760\\text{ m}^2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "197",
+            "course": "Advanced",
+            "sourceQuestion": "Bonus Q14"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 560 390\"><rect width=\"560\" height=\"390\" fill=\"white\"/><text x=\"25\" y=\"24\" font-family=\"Arial\" font-size=\"16\">Paddock profiles and measurements</text><path d=\"M45 180H515M280 210V45\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M70 160 C150 92 205 60 280 54 C355 60 410 92 490 160\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M70 160 C150 125 205 110 280 106 C355 110 410 125 490 160\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"355\" y=\"70\" font-family=\"Arial\" font-size=\"12\">Existing fence</text><text x=\"355\" y=\"132\" font-family=\"Arial\" font-size=\"12\">Proposed fence</text><g font-family=\"Arial\" font-size=\"12\" text-anchor=\"middle\"><text x=\"70\" y=\"198\">−20</text><text x=\"175\" y=\"198\">−10</text><text x=\"280\" y=\"198\">0</text><text x=\"385\" y=\"198\">10</text><text x=\"490\" y=\"198\">20</text></g><text x=\"518\" y=\"184\" font-family=\"Arial\" font-size=\"13\">x</text><rect x=\"20\" y=\"230\" width=\"520\" height=\"118\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M105 230V348M192 230V348M279 230V348M366 230V348M453 230V348M20 269H540M20 308H540\" stroke=\"#64748b\" stroke-width=\"1\"/><g font-family=\"Arial\" font-size=\"12\" text-anchor=\"middle\"><text x=\"62\" y=\"255\">x</text><text x=\"148\" y=\"255\">−20</text><text x=\"235\" y=\"255\">−10</text><text x=\"322\" y=\"255\">0</text><text x=\"409\" y=\"255\">10</text><text x=\"496\" y=\"255\">20</text><text x=\"62\" y=\"295\">Existing</text><text x=\"148\" y=\"295\">104</text><text x=\"235\" y=\"295\">148</text><text x=\"322\" y=\"295\">170</text><text x=\"409\" y=\"295\">148</text><text x=\"496\" y=\"295\">104</text><text x=\"62\" y=\"334\">Proposed</text><text x=\"148\" y=\"334\">104</text><text x=\"235\" y=\"334\">127</text><text x=\"322\" y=\"334\">136</text><text x=\"409\" y=\"334\">127</text><text x=\"496\" y=\"334\">104</text></g></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p197-q15",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Use the trapezoidal rule with five function values to show that \\(\\int_{-\\pi/3}^{\\pi/3}\\sec x\\,dx\\approx\\frac{\\pi}{6}\\left(\\frac{4+3\\sqrt3}{\\sqrt3}\\right)\\).",
+          "answer": 0,
+          "hint": "Five values make four equal subintervals. Evaluate sec x at −π/3, −π/6, 0, π/6 and π/3, then substitute in the trapezoidal formula.",
+          "steps": [
+            {
+              "explain": "Find the width of each of the four equal intervals.",
+              "work": "\\(h=\\frac{\\pi/3-(-\\pi/3)}4=\\frac\\pi6\\)"
+            },
+            {
+              "explain": "Evaluate sec x at the five nodes. Secant is even, so the values are symmetric.",
+              "work": "\\(2,\\frac2{\\sqrt3},1,\\frac2{\\sqrt3},2\\)"
+            },
+            {
+              "explain": "Use the trapezoidal rule with the two endpoint values once and the three interior values twice.",
+              "work": "\\(T=\\frac h2[2+2(\\frac2{\\sqrt3}+1+\\frac2{\\sqrt3})+2]\\)"
+            },
+            {
+              "explain": "Simplify the expression to the required form.",
+              "work": "\\(T=\\frac\\pi{12}(6+\\frac8{\\sqrt3})=\\boxed{\\frac\\pi6\\left(\\frac{4+3\\sqrt3}{\\sqrt3}\\right)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "197",
+            "course": "Advanced",
+            "sourceQuestion": "Bonus Q15"
+          },
+          "options": [
+            "\\(\\frac{\\pi}{6}\\left(\\frac{4+3\\sqrt3}{\\sqrt3}\\right)\\)",
+            "\\(\\frac{\\pi}{6}\\left(\\frac{4+2\\sqrt3}{\\sqrt3}\\right)\\)",
+            "\\(\\frac{\\pi}{12}\\left(\\frac{4+3\\sqrt3}{\\sqrt3}\\right)\\)",
+            "\\(\\frac{\\pi}{6}\\left(\\frac{4+3\\sqrt3}{2\\sqrt3}\\right)\\)"
+          ]
+        },
+        {
+          "id": "y12a-advanced-004-p197-q16",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A river is 10 m wide at a certain location and the depth of the river, in metres, has been recorded at 2.5-m intervals. The cross-section, including those measurements, is shown below.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 520 300\"><rect width=\"520\" height=\"300\" fill=\"white\"/><path d=\"M70 80H450M70 80V250\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M70 87.5L165 185L260 207.5L355 152.5L450 122.5L450 80H70Z\" fill=\"#dbeafe\" opacity=\".55\"/><path d=\"M70 87.5L165 185L260 207.5L355 152.5L450 122.5\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M70 87.5V80M165 185V80M260 207.5V80M355 152.5V80M450 122.5V80\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"4 4\"/><g font-family=\"Arial\" font-size=\"13\" text-anchor=\"middle\"><text x=\"118\" y=\"68\">2.5 m</text><text x=\"213\" y=\"68\">2.5 m</text><text x=\"308\" y=\"68\">2.5 m</text><text x=\"403\" y=\"68\">2.5 m</text><text x=\"58\" y=\"108\">0.3</text><text x=\"165\" y=\"205\">4.2</text><text x=\"260\" y=\"229\">5.1</text><text x=\"355\" y=\"173\">2.9</text><text x=\"469\" y=\"125\">1.7</text></g><text x=\"42\" y=\"76\" font-family=\"Arial\" font-size=\"13\">water</text></svg>"
+          },
+          "hint": "Use the five recorded depths as trapezoid heights with equal width 2.5 m. For the volume per minute, multiply the cross-sectional area by the flow distance in one minute.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p197-q16-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Use the trapezoidal rule with the measurements to calculate the approximate area of the cross-section.",
+              "options": [
+                "\\(33\\text{ m}^2\\)",
+                "\\(26.4\\text{ m}^2\\)",
+                "\\(16.5\\text{ m}^2\\)",
+                "\\(66\\text{ m}^2\\)"
+              ],
+              "answer": 0,
+              "hint": "The five depths are measured at x=0, 2.5, 5, 7.5 and 10 m. Use 2.5 m for each trapezoid width.",
+              "steps": [
+                {
+                  "explain": "Read the five depths and note the constant horizontal spacing.",
+                  "work": "\\(h=2.5,\\quad y_0=0.3,\\;y_1=4.2,\\;y_2=5.1,\\;y_3=2.9,\\;y_4=1.7\\)"
+                },
+                {
+                  "explain": "Apply the composite trapezoidal rule: endpoints once and the three interior depths twice.",
+                  "work": "\\(A\\approx\\frac{2.5}{2}[0.3+2(4.2+5.1+2.9)+1.7]\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 520 300\"><rect width=\"520\" height=\"300\" fill=\"white\"/><path d=\"M70 80H450M70 80V250\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M70 87.5L165 185L260 207.5L355 152.5L450 122.5L450 80H70Z\" fill=\"#fde68a\" opacity=\".55\"/><path d=\"M70 87.5L165 185L260 207.5L355 152.5L450 122.5\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M70 87.5V80M165 185V80M260 207.5V80M355 152.5V80M450 122.5V80\" stroke=\"#f59e0b\" stroke-width=\"3\" stroke-dasharray=\"\"/><g font-family=\"Arial\" font-size=\"13\" text-anchor=\"middle\"><text x=\"118\" y=\"68\">2.5 m</text><text x=\"213\" y=\"68\">2.5 m</text><text x=\"308\" y=\"68\">2.5 m</text><text x=\"403\" y=\"68\">2.5 m</text><text x=\"58\" y=\"108\">0.3</text><text x=\"165\" y=\"205\">4.2</text><text x=\"260\" y=\"229\">5.1</text><text x=\"355\" y=\"173\">2.9</text><text x=\"469\" y=\"125\">1.7</text></g><text x=\"42\" y=\"76\" font-family=\"Arial\" font-size=\"13\">water</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Evaluate the bracket and multiply by 1.25.",
+                  "work": "\\(A\\approx1.25(26.4)=\\boxed{33\\text{ m}^2}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "197",
+                "course": "Advanced",
+                "sourceQuestion": "Bonus Q16i"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p197-q16-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "If the flow of the river is 0.3 metres per second, find the approximate volume of water flowing through the cross-section each minute.",
+              "options": [
+                "\\(594\\text{ m}^3\\text{ per minute}\\)",
+                "\\(9.9\\text{ m}^3\\text{ per minute}\\)",
+                "\\(1980\\text{ m}^3\\text{ per minute}\\)",
+                "\\(33\\text{ m}^3\\text{ per minute}\\)"
+              ],
+              "answer": 0,
+              "hint": "Multiply the cross-sectional area from part (i) by the distance water travels in 60 seconds.",
+              "steps": [
+                {
+                  "explain": "In one minute, water travels 0.3 m/s for 60 seconds.",
+                  "work": "\\(d=0.3(60)=18\\text{ m}\\)"
+                },
+                {
+                  "explain": "Volume equals the cross-sectional area times the length of the water column.",
+                  "work": "\\(V=33(18)=\\boxed{594\\text{ m}^3\\text{ per minute}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "197",
+                "course": "Advanced",
+                "sourceQuestion": "Bonus Q16ii"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "197",
+            "course": "Advanced",
+            "sourceQuestion": "Bonus Q16"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p197-q17",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A runner’s speed, in metres per minute, was recorded at 4-minute intervals over a 20-minute period. The speeds at times \\(0,4,8,12,16,20\\) minutes were \\(184,167,142,131,138,172\\). Use the trapezoidal rule to estimate the distance travelled.",
+          "options": [
+            "\\(3024\\text{ m}\\)",
+            "\\(1512\\text{ m}\\)",
+            "\\(3780\\text{ m}\\)",
+            "\\(3024\\text{ m}^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Use interval width 4 minutes. Count the first and last speed once and each of the four middle speeds twice.",
+          "steps": [
+            {
+              "explain": "The speeds are recorded every 4 minutes.",
+              "work": "\\(h=4\\text{ min}\\)"
+            },
+            {
+              "explain": "Set up the composite trapezoidal rule with endpoints once and interior values twice.",
+              "work": "\\(D\\approx\\frac42[184+2(167+142+131+138)+172]\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 560 180\"><rect width=\"560\" height=\"180\" fill=\"white\"/><rect x=\"20\" y=\"35\" width=\"520\" height=\"105\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 35V140M173 35V140M246 35V140M319 35V140M392 35V140M465 35V140M20 87H540\" stroke=\"#64748b\" stroke-width=\"1.5\"/><g font-family=\"Arial\" font-size=\"13\" text-anchor=\"middle\"><text x=\"60\" y=\"68\">t (min)</text><text x=\"136\" y=\"68\">0</text><text x=\"209\" y=\"68\">4</text><text x=\"282\" y=\"68\">8</text><text x=\"355\" y=\"68\">12</text><text x=\"428\" y=\"68\">16</text><text x=\"501\" y=\"68\">20</text><text x=\"60\" y=\"121\">v (m/min)</text><text x=\"136\" y=\"121\">184</text><text x=\"209\" y=\"121\">167</text><text x=\"282\" y=\"121\">142</text><text x=\"355\" y=\"121\">131</text><text x=\"428\" y=\"121\">138</text><text x=\"501\" y=\"121\">172</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Calculate and give the distance in metres.",
+              "work": "\\(D\\approx2[184+2(578)+172]=3024\\Rightarrow\\boxed{3024\\text{ m}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "197",
+            "course": "Advanced",
+            "sourceQuestion": "Bonus Q17"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 560 180\"><rect width=\"560\" height=\"180\" fill=\"white\"/><rect x=\"20\" y=\"35\" width=\"520\" height=\"105\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 35V140M173 35V140M246 35V140M319 35V140M392 35V140M465 35V140M20 87H540\" stroke=\"#64748b\" stroke-width=\"1.5\"/><g font-family=\"Arial\" font-size=\"13\" text-anchor=\"middle\"><text x=\"60\" y=\"68\">t (min)</text><text x=\"136\" y=\"68\">0</text><text x=\"209\" y=\"68\">4</text><text x=\"282\" y=\"68\">8</text><text x=\"355\" y=\"68\">12</text><text x=\"428\" y=\"68\">16</text><text x=\"501\" y=\"68\">20</text><text x=\"60\" y=\"121\">v (m/min)</text><text x=\"136\" y=\"121\">184</text><text x=\"209\" y=\"121\">167</text><text x=\"282\" y=\"121\">142</text><text x=\"355\" y=\"121\">131</text><text x=\"428\" y=\"121\">138</text><text x=\"501\" y=\"121\">172</text></g></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p198-q18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Use the trapezoidal rule with three subintervals to find an approximation for \\(\\int_0^\\pi x\\sin^2x\\,dx\\), using three subintervals.",
+          "options": [
+            "\\(\\frac{\\pi^2}{4}\\)",
+            "\\(\\frac{\\pi^2}{2}\\)",
+            "\\(\\frac{3\\pi^2}{4}\\)",
+            "\\(\\frac{\\pi^2}{8}\\)"
+          ],
+          "answer": 0,
+          "hint": "Three subintervals create four x-values: 0, \\(\\pi/3\\), \\(2\\pi/3\\), and \\(\\pi\\). Evaluate \\(x\\sin^2x\\) at each one, then use the trapezoidal formula.",
+          "steps": [
+            {
+              "explain": "Three equal intervals divide [0, π] into four points. The width is the total length divided by 3.",
+              "work": "\\(h=\\frac{\\pi-0}{3}=\\frac\\pi3\\)\n\\(x_0=0,\\;x_1=\\frac\\pi3,\\;x_2=\\frac{2\\pi}3,\\;x_3=\\pi\\)\\"
+            },
+            {
+              "explain": "Evaluate the function at those four points. At the two interior points, \\(\\sin^2(\\pi/3)=\\sin^2(2\\pi/3)=3/4\\).",
+              "work": "\\(f(x)=x\\sin^2x\\)\n\\(f_0=0,\\;f_1=\\frac\\pi3\\cdot\\frac34=\\frac\\pi4,\\;f_2=\\frac{2\\pi}3\\cdot\\frac34=\\frac\\pi2,\\;f_3=0\\)\\"
+            },
+            {
+              "explain": "Use the endpoints once and double the two interior heights.",
+              "work": "\\(T=\\frac h2[f_0+2f_1+2f_2+f_3]=\\frac{\\pi/3}{2}[0+2(\\frac\\pi4)+2(\\frac\\pi2)+0]=\\boxed{\\frac{\\pi^2}{4}}\\)\\"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "198",
+            "course": "Advanced",
+            "sourceQuestion": "Bonus Q18"
           }
         }
       ]
