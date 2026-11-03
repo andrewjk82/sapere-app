@@ -943,7 +943,7 @@
             "sourceQuestion": "Q6"
           },
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 190\" role=\"img\" aria-label=\"Milo box plot and score scale\"><rect width=\"760\" height=\"190\" fill=\"white\"/><g stroke=\"#dbe3ec\" stroke-width=\"1\"><path d=\"M70 150H720\"/><path d=\"M100 45V155M140 45V155M180 45V155M220 45V155M260 45V155M300 45V155M340 45V155M380 45V155M420 45V155M460 45V155M500 45V155M540 45V155M580 45V155M620 45V155M660 45V155M700 45V155\"/></g><path d=\"M140 75H180M140 68V82M180 60H460V90H180ZM300 60V90M460 75H580M580 68V82M70 150H720\" fill=\"none\" stroke=\"#475569\" stroke-width=\"3\"/><g font-family=\"Arial\" font-size=\"13\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"140\" y=\"173\">65</text><text x=\"180\" y=\"173\">66</text><text x=\"220\" y=\"173\">67</text><text x=\"300\" y=\"173\">69</text><text x=\"460\" y=\"173\">73</text><text x=\"580\" y=\"173\">76</text><text x=\"50\" y=\"80\" text-anchor=\"start\">Milo</text></g><text x=\"395\" y=\"188\" font-family=\"Arial\" font-size=\"12\" text-anchor=\"middle\" fill=\"#334155\">Test score</text></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 190\" role=\"img\" aria-label=\"Milo box plot and score scale\"><rect width=\"760\" height=\"190\" fill=\"white\"/><g stroke=\"#dbe3ec\" stroke-width=\"1\"><path d=\"M70 150H720\"/><path d=\"M100 45V155M140 45V155M180 45V155M220 45V155M260 45V155M300 45V155M340 45V155M380 45V155M420 45V155M460 45V155M500 45V155M540 45V155M580 45V155M620 45V155M660 45V155M700 45V155\"/></g><path d=\"M140 75H180M140 68V82M180 60H460V90H180ZM260 60V90M460 75H580M580 68V82M70 150H720\" fill=\"none\" stroke=\"#475569\" stroke-width=\"3\"/><g font-family=\"Arial\" font-size=\"13\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"140\" y=\"173\">65</text><text x=\"180\" y=\"173\">66</text><text x=\"220\" y=\"173\">67</text><text x=\"300\" y=\"173\">69</text><text x=\"460\" y=\"173\">73</text><text x=\"580\" y=\"173\">76</text><text x=\"50\" y=\"80\" text-anchor=\"start\">Milo</text></g><text x=\"395\" y=\"188\" font-family=\"Arial\" font-size=\"12\" text-anchor=\"middle\" fill=\"#334155\">Test score</text></svg>"
           }
         },
         {
@@ -1603,17 +1603,17 @@
               "difficulty": "medium",
               "stem": "The heights of 400 students were measured. Use the cumulative frequency polygon to estimate the interquartile range.",
               "options": [
-                "\\(34\\text{ cm}\\)",
+                "\\(36\\text{ cm}\\)",
                 "\\(24\\text{ cm}\\)",
                 "\\(50\\text{ cm}\\)",
                 "\\(68\\text{ cm}\\)"
               ],
               "answer": 0,
-              "hint": "For 400 students, Q1 is read at cumulative frequency 100 and Q3 at cumulative frequency 300. Subtract their height estimates.",
+              "hint": "For 400 students, read Q1 at cumulative frequency 100 and Q3 at 300. Subtract their height estimates.",
               "steps": [
                 {
-                  "explain": "The first quartile corresponds to 25% of 400, which is cumulative frequency 100. Read across to the curve, then down: about 138 cm.",
-                  "work": "\\(Q_1\\approx138\\text{ cm}\\)"
+                  "explain": "The first quartile corresponds to 25% of 400, which is cumulative frequency 100. Read across to the curve, then down: about 136 cm.",
+                  "work": "\\(Q_1\\approx136\\text{ cm}\\)"
                 },
                 {
                   "explain": "The third quartile corresponds to cumulative frequency 300. Read across to the curve, then down: about 172 cm.",
@@ -1621,7 +1621,7 @@
                 },
                 {
                   "explain": "Subtract the estimates.",
-                  "work": "\\(IQR\\approx172-138=\\boxed{34\\text{ cm}}\\)"
+                  "work": "\\(IQR\\approx172-136=\\boxed{36\\text{ cm}}\\)"
                 }
               ],
               "timeLimit": 60,
