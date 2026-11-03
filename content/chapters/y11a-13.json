@@ -576,120 +576,10 @@
       ]
     },
     {
-      "topicId": "y11a-13-13d",
+      "topicId": "y11a-13D",
       "code": "13D",
-      "title": "Review",
+      "title": "Scatterplots and correlation",
       "questions": [
-        {
-          "id": "bb2020-q25",
-          "type": "multipart",
-          "difficulty": "medium",
-          "stem": "A biologist measured the amount of fertiliser (\\(x\\), grams) given to 8 tomato plants and the resulting yield (\\(y\\), kg). The scatterplot below shows the 8 data points with a fitted line, and \\(R^2 = 0.9453\\).",
-          "figure": {
-            "svg": "fig:cdfaa83e2b"
-          },
-          "parts": [
-            {
-              "id": "bb2020-q25a",
-              "type": "mc",
-              "stem": "(a) Describe the association between yield and fertiliser in terms of strength and direction.",
-              "options": [
-                "Weak, positive, linear",
-                "Strong, positive, linear",
-                "Strong, negative, linear",
-                "No association"
-              ],
-              "answer": 1,
-              "hint": "Look at how tightly the points cluster around the line, and whether \\(y\\) increases or decreases as \\(x\\) increases.",
-              "steps": [
-                {
-                  "explain": "As fertiliser increases, yield also increases — a positive association. The points sit very close to a straight line, and \\(R^2=0.9453\\) is close to 1, confirming a strong linear relationship.",
-                  "work": "\\(\\therefore\\) Strong, positive, linear association",
-                  "figure": {
-                    "svg": "fig:cdfaa83e2b"
-                  }
-                }
-              ],
-              "xp": 2
-            },
-            {
-              "id": "bb2020-q25b",
-              "type": "mc",
-              "stem": "(b) Determine the equation of the least-squares regression line, rounding values to 2 significant figures.",
-              "options": [
-                "\\(y = 0.71x - 1.9\\)",
-                "\\(y = 2.6x + 1.4\\)",
-                "\\(y = 1.5x + 2.5\\)",
-                "\\(y = 1.4x + 2.6\\)"
-              ],
-              "answer": 3,
-              "hint": "Use linear regression (by calculator statistics mode, or estimate the gradient and intercept from two well-spaced points on the fitted line).",
-              "steps": [
-                {
-                  "explain": "Using calculator statistics (linear regression) mode on the 8 data pairs gives the slope and intercept directly.",
-                  "work": "\\(y=A+Bx: \\quad A \\approx 2.5920, \\; B\\approx 1.4371\\)",
-                  "figure": {
-                    "svg": "fig:cdfaa83e2b"
-                  }
-                },
-                {
-                  "explain": "Round each value to 2 significant figures.",
-                  "work": "\\(y \\approx 1.4x + 2.6\\)"
-                }
-              ],
-              "xp": 2
-            },
-            {
-              "id": "bb2020-q25c",
-              "type": "mc",
-              "stem": "(c) A plant with 2.2 grams of fertiliser was not recorded. Use the regression line from part (b) to predict its yield.",
-              "options": [
-                "\\(5.68\\text{ kg}\\)",
-                "\\(2.60\\text{ kg}\\)",
-                "\\(3.08\\text{ kg}\\)",
-                "\\(6.72\\text{ kg}\\)"
-              ],
-              "answer": 0,
-              "hint": "Substitute \\(x=2.2\\) into the regression equation from part (b).",
-              "steps": [
-                {
-                  "explain": "Substitute \\(x=2.2\\) into the regression line \\(y=1.4x+2.6\\).",
-                  "work": "\\(y = 1.4(2.2)+2.6\\)"
-                },
-                {
-                  "explain": "Evaluate.",
-                  "work": "\\(y = 3.08+2.6 = 5.68\\text{ kg}\\)"
-                }
-              ],
-              "xp": 2
-            },
-            {
-              "id": "bb2020-q25d",
-              "type": "review",
-              "stem": "(d) Explain why you should not extrapolate from this data to predict the yield for high rates of fertiliser usage.",
-              "answer": "",
-              "steps": [
-                {
-                  "explain": "The regression line is only reliable within the range of \\(x\\)-values that were actually tested (from 1.0 g to 3.5 g).",
-                  "work": "Data only spans \\(x \\in [1.0, 3.5]\\) grams."
-                },
-                {
-                  "explain": "Outside this range, there could be a point where extra fertiliser no longer produces extra yield — e.g. too much fertiliser can damage the plant, or other factors (sunlight, water) may limit yield regardless of fertiliser rate.",
-                  "work": "The linear trend may not continue — extrapolation assumes a relationship that was never actually observed."
-                }
-              ],
-              "manual": true,
-              "xp": 3
-            }
-          ],
-          "manual": true,
-          "meta": {
-            "source": "Blacktown Boys HS 2020 2U Trials",
-            "school": "Blacktown Boys High School",
-            "examType": "Trial HSC",
-            "grade": "12"
-          }
-        },
         {
           "id": "hg2020-q2",
           "type": "mc",
@@ -803,6 +693,123 @@
           "meta": {
             "origin": "teacher",
             "examPaper": "asc-2020"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y11a-13E",
+      "code": "13E",
+      "title": "Least-squares regression",
+      "questions": [
+        {
+          "id": "bb2020-q25",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A biologist measured the amount of fertiliser (\\(x\\), grams) given to 8 tomato plants and the resulting yield (\\(y\\), kg). The scatterplot below shows the 8 data points with a fitted line, and \\(R^2 = 0.9453\\).",
+          "figure": {
+            "svg": "fig:cdfaa83e2b"
+          },
+          "parts": [
+            {
+              "id": "bb2020-q25a",
+              "type": "mc",
+              "stem": "(a) Describe the association between yield and fertiliser in terms of strength and direction.",
+              "options": [
+                "Weak, positive, linear",
+                "Strong, positive, linear",
+                "Strong, negative, linear",
+                "No association"
+              ],
+              "answer": 1,
+              "hint": "Look at how tightly the points cluster around the line, and whether \\(y\\) increases or decreases as \\(x\\) increases.",
+              "steps": [
+                {
+                  "explain": "As fertiliser increases, yield also increases — a positive association. The points sit very close to a straight line, and \\(R^2=0.9453\\) is close to 1, confirming a strong linear relationship.",
+                  "work": "\\(\\therefore\\) Strong, positive, linear association",
+                  "figure": {
+                    "svg": "fig:cdfaa83e2b"
+                  }
+                }
+              ],
+              "xp": 2
+            },
+            {
+              "id": "bb2020-q25b",
+              "type": "mc",
+              "stem": "(b) Determine the equation of the least-squares regression line, rounding values to 2 significant figures.",
+              "options": [
+                "\\(y = 0.71x - 1.9\\)",
+                "\\(y = 2.6x + 1.4\\)",
+                "\\(y = 1.5x + 2.5\\)",
+                "\\(y = 1.4x + 2.6\\)"
+              ],
+              "answer": 3,
+              "hint": "Use linear regression (by calculator statistics mode, or estimate the gradient and intercept from two well-spaced points on the fitted line).",
+              "steps": [
+                {
+                  "explain": "Using calculator statistics (linear regression) mode on the 8 data pairs gives the slope and intercept directly.",
+                  "work": "\\(y=A+Bx: \\quad A \\approx 2.5920, \\; B\\approx 1.4371\\)",
+                  "figure": {
+                    "svg": "fig:cdfaa83e2b"
+                  }
+                },
+                {
+                  "explain": "Round each value to 2 significant figures.",
+                  "work": "\\(y \\approx 1.4x + 2.6\\)"
+                }
+              ],
+              "xp": 2
+            },
+            {
+              "id": "bb2020-q25c",
+              "type": "mc",
+              "stem": "(c) A plant with 2.2 grams of fertiliser was not recorded. Use the regression line from part (b) to predict its yield.",
+              "options": [
+                "\\(5.68\\text{ kg}\\)",
+                "\\(2.60\\text{ kg}\\)",
+                "\\(3.08\\text{ kg}\\)",
+                "\\(6.72\\text{ kg}\\)"
+              ],
+              "answer": 0,
+              "hint": "Substitute \\(x=2.2\\) into the regression equation from part (b).",
+              "steps": [
+                {
+                  "explain": "Substitute \\(x=2.2\\) into the regression line \\(y=1.4x+2.6\\).",
+                  "work": "\\(y = 1.4(2.2)+2.6\\)"
+                },
+                {
+                  "explain": "Evaluate.",
+                  "work": "\\(y = 3.08+2.6 = 5.68\\text{ kg}\\)"
+                }
+              ],
+              "xp": 2
+            },
+            {
+              "id": "bb2020-q25d",
+              "type": "review",
+              "stem": "(d) Explain why you should not extrapolate from this data to predict the yield for high rates of fertiliser usage.",
+              "answer": "",
+              "steps": [
+                {
+                  "explain": "The regression line is only reliable within the range of \\(x\\)-values that were actually tested (from 1.0 g to 3.5 g).",
+                  "work": "Data only spans \\(x \\in [1.0, 3.5]\\) grams."
+                },
+                {
+                  "explain": "Outside this range, there could be a point where extra fertiliser no longer produces extra yield — e.g. too much fertiliser can damage the plant, or other factors (sunlight, water) may limit yield regardless of fertiliser rate.",
+                  "work": "The linear trend may not continue — extrapolation assumes a relationship that was never actually observed."
+                }
+              ],
+              "manual": true,
+              "xp": 3
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "source": "Blacktown Boys HS 2020 2U Trials",
+            "school": "Blacktown Boys High School",
+            "examType": "Trial HSC",
+            "grade": "12"
           }
         },
         {
@@ -1583,6 +1590,12 @@
           }
         }
       ]
+    },
+    {
+      "topicId": "y11a-13-13d",
+      "code": "13F",
+      "title": "Review",
+      "questions": []
     }
   ]
 }

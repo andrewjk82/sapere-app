@@ -2438,7 +2438,9 @@ export const CURRICULUM_DATA = {
           { id: 'y11a-13A', code: '13A', title: 'Random variables and frequency tables' },
           { id: 'y11a-13B', code: '13B', title: 'Cumulative frequency' },
           { id: 'y11a-13C', code: '13C', title: 'Grouped data' },
-          { id: 'y11a-13-13d', code: '13D', title: 'Review' }
+          { id: 'y11a-13D', code: '13D', title: 'Scatterplots and correlation' },
+          { id: 'y11a-13E', code: '13E', title: 'Least-squares regression' },
+          { id: 'y11a-13-13d', code: '13F', title: 'Review' }
         ]
       }
     ],

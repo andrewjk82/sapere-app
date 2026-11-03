@@ -34,7 +34,7 @@ export const OLD_TO_NEW_TOPIC = {
   'y12a-8F': 'y12a-8R',
   // old 9 Displaying data → new 10A; bivariate data → Year 11 Advanced 13
   'y12a-9A': 'y12a-10A', 'y12a-9B': 'y12a-10A', 'y12a-9C': 'y12a-10A',
-  'y12a-9D': 'y11a-13-13d', 'y12a-9E': 'y11a-13-13d', 'y12a-9F': 'y11a-13-13d',
+  'y12a-9D': 'y11a-13D', 'y12a-9E': 'y11a-13E', 'y12a-9F': 'y11a-13E',
   // old 10 Continuous probability → 10 (old 10A relative frequency → new 10A cumulative frequency and grouping)
   'y12a-10G': 'y12a-10F', 'y12a-10-10h': 'y12a-10R',
 };
