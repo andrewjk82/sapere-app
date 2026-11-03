@@ -5,7 +5,7 @@ import {
   ArrowLeft, ArrowRight, CheckCircle2, XCircle, Clock,
   Lightbulb, RotateCcw, Trophy, ChevronDown, ChevronUp, Flag,
 } from 'lucide-react';
-import { addDoc, collection, doc, getDocs, increment, query, setDoc, serverTimestamp, where } from 'firebase/firestore';
+import { addDoc, collection, doc, getCountFromServer, increment, query, setDoc, serverTimestamp, where } from 'firebase/firestore';
 import { db } from '../../firebase/config';
 import { useAuth } from '../../context/AuthContext';
 import { useToast } from '../../context/ToastContext';
@@ -385,17 +385,24 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack, dnaLabels
     let cancelled = false;
     (async () => {
       try {
-        const evidenceQuery = query(
+        // Count aggregations instead of downloading every success doc: this collection only grows (one doc per
+        // warmup attempt), and reading all of them on each session open was billed per doc. A count costs one read
+        // per 1,000 matching entries. Equality-only filters, so still no composite index needed.
+        const base = [
           collection(db, 'users', user.uid, 'dna_step_evidence'),
           where('dna_id', '==', type.slug),
           where('step_id', '==', 'FINAL'),
           where('correct', '==', true),
-        );
-        const snap = await getDocs(evidenceQuery);
+        ];
+        const countOf = (...extra) => getCountFromServer(query(...base, ...extra)).then((r) => r.data().count);
+        const [allSuccesses, scaffoldedSuccesses, transferSuccesses] = await Promise.all([
+          countOf(),
+          countOf(where('mode', '==', 'scaffolded')),
+          countOf(where('mode', '==', 'transfer')),
+        ]);
         if (cancelled) return;
-        const docs = snap.docs.map((d) => d.data());
-        const guidedSuccesses = docs.filter((d) => d.mode !== 'scaffolded' && d.mode !== 'transfer').length;
-        const scaffoldedSuccesses = docs.filter((d) => d.mode === 'scaffolded').length;
+        // Guided = every success that is neither scaffolded nor transfer (older docs carry no mode at all).
+        const guidedSuccesses = allSuccesses - scaffoldedSuccesses - transferSuccesses;
         const nowScaffolded = guidedSuccesses >= GUIDED_TO_SCAFFOLDED_THRESHOLD;
         const nowTransfer = nowScaffolded && scaffoldedSuccesses >= SCAFFOLDED_TO_TRANSFER_THRESHOLD;
         setScaffolded(nowScaffolded);

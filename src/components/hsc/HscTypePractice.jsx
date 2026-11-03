@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { doc, getDoc, collection, getDocs } from 'firebase/firestore';
+import { doc, getDoc } from 'firebase/firestore';
+import { loadQuestionDna, loadQuestionTypes } from '../../services/hscTaxonomyService';
 import { db } from '../../firebase/config';
 import { ChevronRight, Trophy, Target, Compass } from 'lucide-react';
 import HscTypePracticeSession from './HscTypePracticeSession';
@@ -214,8 +215,9 @@ const HscTypePractice = ({ profile }) => {
     let cancelled = false;
     (async () => {
       try {
-        const snap = await getDocs(collection(db, 'question_dna'));
-        if (!cancelled) setDnaList(snap.docs.map(d => ({ dnaId: d.id, ...d.data() })));
+        // Device-cached (services/hscTaxonomyService) — re-read from Firestore at most once a day.
+        const list = await loadQuestionDna();
+        if (!cancelled) setDnaList(list);
       } catch (e) {
         console.warn('Failed to load question DNA:', e);
       }
@@ -247,11 +249,9 @@ const HscTypePractice = ({ profile }) => {
     (async () => {
       setLoading(true);
       try {
-        const snap = await getDocs(collection(db, 'question_types'));
+        const all = await loadQuestionTypes();
         if (cancelled) return;
-        const list = snap.docs
-          .map(d => ({ id: d.id, ...d.data() }))
-          .sort((a, b) => (b.count || 0) - (a.count || 0));
+        const list = [...all].sort((a, b) => (b.count || 0) - (a.count || 0));
         setTypes(list);
       } catch (e) {
         console.warn('Failed to load question types:', e);

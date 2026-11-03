@@ -1,8 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
-import { collection, getDocs } from 'firebase/firestore';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, Search, Shuffle } from 'lucide-react';
-import { db } from '../../firebase/config';
+import { loadQuestionDna } from '../../services/hscTaxonomyService';
 import ReasoningStepCard from './ReasoningStepCard';
 
 // Teacher-facing QA page: browse every DNA's warmup pool (the randomized
@@ -74,10 +73,9 @@ const DnaWarmupReviewPage = () => {
     let cancelled = false;
     (async () => {
       try {
-        const snap = await getDocs(collection(db, 'question_dna'));
-        if (!cancelled) {
-          setDnaList(snap.docs.map((d) => ({ dnaId: d.id, ...d.data() })));
-        }
+        // Teacher review: always fresh (also refreshes this device's cached copy).
+        const list = await loadQuestionDna({ force: true });
+        if (!cancelled) setDnaList(list);
       } catch (e) {
         console.warn('Failed to load question DNA:', e);
       } finally {

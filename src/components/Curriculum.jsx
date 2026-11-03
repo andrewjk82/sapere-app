@@ -24,6 +24,7 @@ import {
   loadCachedHscResults,
 } from '../services/hscResultsService';
 import { localCache } from '../services/localCacheService';
+import { loadQuestionTypes } from '../services/hscTaxonomyService';
 import { toThumbnailUrl, getChapterCheatSheets } from '../utils/cheatSheetUtils';
 import { toDrivePreviewUrl } from '../utils/homework';
 import CheatSheetLightbox from './CheatSheetLightbox';
@@ -535,10 +536,9 @@ const Curriculum = ({ initialSearchId = null, onInitialSearchConsumed } = {}) =>
     if (selectedYear !== 'Past Paper' || questionTypes.length > 0) return;
     let cancelled = false;
     setQuestionTypesLoading(true);
-    getDocs(collection(db, 'question_types')).then(snap => {
+    loadQuestionTypes().then(all => {
       if (cancelled) return;
-      const list = snap.docs.map(d => ({ id: d.id, ...d.data() }))
-        .sort((a, b) => (a.label || '').localeCompare(b.label || ''));
+      const list = [...all].sort((a, b) => (a.label || '').localeCompare(b.label || ''));
       setQuestionTypes(list);
       setQuestionTypesLoading(false);
     }).catch(() => { if (!cancelled) setQuestionTypesLoading(false); });

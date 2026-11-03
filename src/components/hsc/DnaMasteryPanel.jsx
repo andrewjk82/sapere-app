@@ -1,8 +1,40 @@
 import { useEffect, useMemo, useState } from 'react';
-import { collection, getDocs } from 'firebase/firestore';
+import { Timestamp, collection, getDocs, query, where } from 'firebase/firestore';
 import { BarChart3, Gauge } from 'lucide-react';
 import { db } from '../../firebase/config';
 import { useAuth } from '../../context/AuthContext';
+import { idbGet, idbSet } from '../../utils/idbStore';
+
+// Evidence docs are append-only (students may only create them — see firestore.rules), so the device keeps what it
+// has already read and each visit fetches only docs created since the newest one it holds. Reading the whole,
+// ever-growing subcollection on every visit used to bill every doc again. `>=` + de-dupe by id covers docs that
+// share the boundary millisecond.
+const EVIDENCE_CACHE_VERSION = 1;
+const evidenceCacheKey = (uid) => `dna-evidence:v${EVIDENCE_CACHE_VERSION}:${uid}`;
+const slimEvidence = (id, e) => ({
+  id,
+  dna_id: e.dna_id || '',
+  axis: e.axis || '',
+  step_id: e.step_id || '',
+  correct: e.correct === true,
+  confidence: e.confidence || null,
+  createdAt: typeof e.created_at?.toMillis === 'function' ? e.created_at.toMillis() : 0,
+});
+async function loadEvidence(uid) {
+  const col = collection(db, 'users', uid, 'dna_step_evidence');
+  const cached = await idbGet(evidenceCacheKey(uid));
+  const have = Array.isArray(cached?.docs) ? cached.docs : null;
+  const since = have ? Number(cached.lastMillis) || 0 : 0;
+  const snap = have && since > 0
+    ? await getDocs(query(col, where('created_at', '>=', Timestamp.fromMillis(since))))
+    : await getDocs(col);
+  const byId = new Map((have || []).map((d) => [d.id, d]));
+  snap.docs.forEach((d) => byId.set(d.id, slimEvidence(d.id, d.data())));
+  const docs = [...byId.values()];
+  const lastMillis = docs.reduce((m, d) => Math.max(m, d.createdAt || 0), since);
+  idbSet(evidenceCacheKey(uid), { docs, lastMillis }).catch(() => {});
+  return docs;
+}
 
 // 6-axis student model (Sapere_Question_DNA_v2.0 §8/§11) — reads this
 // student's own users/{uid}/dna_step_evidence (small subcollection, bounded
@@ -134,8 +166,8 @@ const DnaMasteryPanel = ({ dnaLabels = {} }) => {
     let cancelled = false;
     (async () => {
       try {
-        const snap = await getDocs(collection(db, 'users', user.uid, 'dna_step_evidence'));
-        if (!cancelled) setEvidence(snap.docs.map((d) => d.data()));
+        const list = await loadEvidence(user.uid);
+        if (!cancelled) setEvidence(list);
       } catch (e) {
         console.warn('Failed to load dna_step_evidence:', e);
         if (!cancelled) setEvidence([]);
