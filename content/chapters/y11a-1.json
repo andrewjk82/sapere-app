@@ -8154,6 +8154,701 @@
           "hint": "Apply formula and simplify.",
           "solution": "$x = \\frac{8 \\pm \\sqrt{64-40}}{10} = \\frac{8 \\pm \\sqrt{24}}{10} = \\frac{4 \\pm \\sqrt{6}}{5}$",
           "xp": 2
+        },
+        {
+          "id": "y11a-1-excel-algebra-q03",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the value of \\(p\\) so that \\(\\frac{a^2a^{-3}}{\\sqrt a}=a^p\\)?",
+          "options": [
+            "\\(-3\\)",
+            "\\(-\\frac32\\)",
+            "\\(-\\frac12\\)",
+            "\\(12\\)"
+          ],
+          "answer": 1,
+          "hint": "Write \\(\\sqrt a\\) as \\(a^{1/2}\\). When multiplying powers add exponents; when dividing subtract them.",
+          "steps": [
+            {
+              "explain": "Rewrite the square root using an index.",
+              "work": "\\(\\sqrt a=a^{1/2}\\)"
+            },
+            {
+              "explain": "Combine the powers in the numerator by adding their exponents.",
+              "work": "\\(a^2a^{-3}=a^{2+(-3)}=a^{-1}\\)"
+            },
+            {
+              "explain": "Divide by \\(a^{1/2}\\) by subtracting its exponent.",
+              "work": "\\(\\frac{a^{-1}}{a^{1/2}}=a^{-1-1/2}=a^{-3/2}\\)"
+            },
+            {
+              "explain": "Match the final exponent with p.",
+              "work": "\\(\\boxed{p=-\\frac32}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 7,
+            "sourceQuestion": 3,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "What is the value of \\(p\\) so that \\(\\frac{a^2a^{-3}}{\\sqrt a}=a^p\\)?",
+              "note": "Write \\(\\sqrt a\\) as \\(a^{1/2}\\). When multiplying powers add exponents; when dividing subtract them."
+            }
+          ]
+        },
+        {
+          "id": "y11a-1-excel-algebra-q04",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the value of \\(3x^0+1\\)?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "answer": 3,
+          "hint": "Any non-zero value raised to the power zero is 1. Substitute that into the expression.",
+          "steps": [
+            {
+              "explain": "Use the zero-index rule.",
+              "work": "\\(x^0=1\\)"
+            },
+            {
+              "explain": "Substitute 1 for \\(x^0\\), then multiply before adding.",
+              "work": "\\(3x^0+1=3(1)+1=3+1\\)"
+            },
+            {
+              "explain": "Add the final numbers.",
+              "work": "\\(\\boxed{4}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 7,
+            "sourceQuestion": 4,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "What is the value of \\(3x^0+1\\)?",
+              "note": "Any non-zero value raised to the power zero is 1. Substitute that into the expression."
+            }
+          ]
+        },
+        {
+          "id": "y11a-1-excel-algebra-q06",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following expresses \\(v\\) as the subject of \\(k=\\frac12mv^2\\)?",
+          "options": [
+            "\\(v=\\pm\\sqrt{\\frac{2k}{m}}\\)",
+            "\\(v=\\pm\\sqrt{\\frac{k}{2m}}\\)",
+            "\\(v=\\pm\\frac{2k}{m}\\)",
+            "\\(v=\\pm\\sqrt{\\frac{m}{2k}}\\)"
+          ],
+          "answer": 0,
+          "hint": "Undo the multiplication by \\(m/2\\) first, then take both square roots because \\(v^2\\) is given.",
+          "steps": [
+            {
+              "explain": "Multiply both sides by 2 to remove the factor one-half.",
+              "work": "\\(2k=mv^2\\)"
+            },
+            {
+              "explain": "Divide both sides by m.",
+              "work": "\\(v^2=\\frac{2k}{m}\\)"
+            },
+            {
+              "explain": "Take the positive and negative square roots.",
+              "work": "\\(v=\\pm\\sqrt{\\frac{2k}{m}}\\)"
+            },
+            {
+              "explain": "Both signs are needed because squaring either root gives the same value of \\(v^2\\).",
+              "work": "\\(\\boxed{v=\\pm\\sqrt{\\frac{2k}{m}}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 7,
+            "sourceQuestion": 6,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Which of the following expresses \\(v\\) as the subject of \\(k=\\frac12mv^2\\)?",
+              "note": "Undo the multiplication by \\(m/2\\) first, then take both square roots because \\(v^2\\) is given."
+            }
+          ]
+        },
+        {
+          "id": "y11a-1-excel-algebra-q15",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following is \\(3x^0+5x\\) in its simplest form?",
+          "options": [
+            "\\(6x\\)",
+            "\\(8x\\)",
+            "\\(1+5x\\)",
+            "\\(3+5x\\)"
+          ],
+          "answer": 3,
+          "hint": "Replace \\(x^0\\) by 1, then simplify the constant term.",
+          "steps": [
+            {
+              "explain": "Use the zero-index rule.",
+              "work": "\\(x^0=1\\)"
+            },
+            {
+              "explain": "Substitute and multiply.",
+              "work": "\\(3x^0+5x=3(1)+5x\\)"
+            },
+            {
+              "explain": "Write the simplified expression.",
+              "work": "\\(\\boxed{3+5x}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 7,
+            "sourceQuestion": 15,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Which of the following is \\(3x^0+5x\\) in its simplest form?",
+              "note": "Replace \\(x^0\\) by 1, then simplify the constant term."
+            }
+          ]
+        },
+        {
+          "id": "y11a-1-excel-algebra-q17",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(6w^4\\times\\frac13w^2\\).",
+          "options": [
+            "\\(2w^6\\)",
+            "\\(2w^8\\)",
+            "\\(18w^6\\)",
+            "\\(18w^8\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the number coefficients, and add the powers of w because the same base is being multiplied.",
+          "steps": [
+            {
+              "explain": "Multiply the coefficients.",
+              "work": "\\(6\\times\\frac13=2\\)"
+            },
+            {
+              "explain": "Use the index law \\(w^a w^b=w^{a+b}\\).",
+              "work": "\\(w^4w^2=w^{4+2}=w^6\\)"
+            },
+            {
+              "explain": "Combine coefficient and power.",
+              "work": "\\(\\boxed{2w^6}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 7,
+            "sourceQuestion": 17,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Simplify \\(6w^4\\times\\frac13w^2\\).",
+              "note": "Multiply the number coefficients, and add the powers of w because the same base is being multiplied."
+            }
+          ]
+        },
+        {
+          "id": "y11a-1-excel-algebra-q18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand \\(4x(7x^4-x^2)\\).",
+          "options": [
+            "\\(28x^5-4x^3\\)",
+            "\\(28x^5-4x^2\\)",
+            "\\(11x^5\\)",
+            "\\(28x^6-4x^3\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply 4x by each term inside the brackets separately.",
+          "steps": [
+            {
+              "explain": "Multiply the first term by \\(4x\\).",
+              "work": "\\(4x\\cdot7x^4=28x^{1+4}=28x^5\\)"
+            },
+            {
+              "explain": "Multiply the second term by \\(4x\\), keeping its negative sign.",
+              "work": "\\(4x\\cdot(-x^2)=-4x^{1+2}=-4x^3\\)"
+            },
+            {
+              "explain": "Write both expanded terms together.",
+              "work": "\\(\\boxed{28x^5-4x^3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 7,
+            "sourceQuestion": 18,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Expand \\(4x(7x^4-x^2)\\).",
+              "note": "Multiply 4x by each term inside the brackets separately."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q21",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What are the solutions of \\(2x^2-5x-1=0\\)?",
+          "options": [
+            "\\(x=\\dfrac{5\\pm\\sqrt{33}}4\\)",
+            "\\(x=\\dfrac{5\\pm\\sqrt{17}}4\\)",
+            "\\(x=\\dfrac{-5\\pm\\sqrt{33}}4\\)",
+            "\\(x=\\dfrac{5\\pm\\sqrt{33}}2\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the quadratic formula with \\(a=2\\), \\(b=-5\\), and \\(c=-1\\).",
+          "steps": [
+            {
+              "explain": "Identify the coefficients in standard form.",
+              "work": "\\(a=2,\\quad b=-5,\\quad c=-1\\)"
+            },
+            {
+              "explain": "Substitute them into the quadratic formula.",
+              "work": "\\(x=\\dfrac{-b\\pm\\sqrt{b^2-4ac}}{2a}=\\dfrac{5\\pm\\sqrt{(-5)^2-4(2)(-1)}}4\\)"
+            },
+            {
+              "explain": "Evaluate the discriminant carefully.",
+              "work": "\\((-5)^2-4(2)(-1)=25+8=33\\)"
+            },
+            {
+              "explain": "Write both roots in exact form.",
+              "work": "\\(\\boxed{x=\\dfrac{5+\\sqrt{33}}4\\text{ or }x=\\dfrac{5-\\sqrt{33}}4}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 21,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "What are the solutions of \\(2x^2-5x-1=0\\)?",
+              "note": "Use the quadratic formula with \\(a=2\\), \\(b=-5\\), and \\(c=-1\\)."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q22",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following is \\(\\dfrac{12T^2}{3T\\times2W}\\) in its simplest form?",
+          "options": [
+            "\\(\\dfrac{2T}{3W}\\)",
+            "\\(\\dfrac{2T}{W}\\)",
+            "\\(\\dfrac{2T^2}{W}\\)",
+            "\\(\\dfrac{8T}{W}\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply the denominator factors first, then cancel the common numerical and variable factors.",
+          "steps": [
+            {
+              "explain": "Multiply the two denominator factors.",
+              "work": "\\(3T\\times2W=6TW\\)"
+            },
+            {
+              "explain": "Write the fraction and cancel common factors.",
+              "work": "\\(\\dfrac{12T^2}{6TW}=\\dfrac{12}{6}\\cdot\\dfrac{T^2}{T}\\cdot\\dfrac1W\\)"
+            },
+            {
+              "explain": "Simplify each factor.",
+              "work": "\\(2\\cdot T\\cdot\\dfrac1W=\\boxed{\\dfrac{2T}{W}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 22,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Which of the following is \\(\\dfrac{12T^2}{3T\\times2W}\\) in its simplest form?",
+              "note": "Multiply the denominator factors first, then cancel the common numerical and variable factors."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q23",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Leanne wants to build a rectangular vegetable garden in her backyard. She has 20 metres of fencing and will use a wall as one side of the garden. The plan for her garden is shown, where \\(x\\) metres is the width of her garden. Which equation gives the area, \\(A\\), of the vegetable garden?",
+          "options": [
+            "\\(A=10x-x^2\\)",
+            "\\(A=10x-2x^2\\)",
+            "\\(A=20x-2x^2\\)",
+            "\\(A=20x-x^2\\)"
+          ],
+          "answer": 2,
+          "hint": "The wall is one long side, so the 20 m of fencing covers only the two widths and the other length. Let that fenced length be \\(l\\).",
+          "steps": [
+            {
+              "explain": "Read the diagram: the two short sides are each \\(x\\) m, and only three sides need fencing.",
+              "work": "\\(x+x+l=20\\)"
+            },
+            {
+              "explain": "Solve this fencing equation for the remaining length.",
+              "work": "\\(l=20-2x\\)"
+            },
+            {
+              "explain": "Area of a rectangle is length times width. Use width \\(x\\) and length \\(20-2x\\).",
+              "work": "\\(A=x(20-2x)\\)"
+            },
+            {
+              "explain": "Expand to match the answer choices.",
+              "work": "\\(\\boxed{A=20x-2x^2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 23,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" viewBox=\"0 0 420 250\" role=\"img\" aria-label=\"Rectangular vegetable garden against a wall, with width x metres and total fencing 20 metres\"><defs><marker id=\"arr23\" markerWidth=\"7\" markerHeight=\"7\" refX=\"3.5\" refY=\"3.5\" orient=\"auto\"><path d=\"M0,0 L7,3.5 L0,7 Z\" fill=\"#64748b\"/></marker></defs><rect x=\"95\" y=\"65\" width=\"230\" height=\"125\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"95\" y1=\"65\" x2=\"325\" y2=\"65\" stroke=\"#8b5cf6\" stroke-width=\"7\"/><text x=\"210\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\" fill=\"#6d28d9\">wall (no fencing)</text><text x=\"210\" y=\"135\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\" fill=\"#334155\">vegetable garden</text><line x1=\"74\" y1=\"65\" x2=\"74\" y2=\"190\" stroke=\"#10b981\" stroke-width=\"3\" marker-start=\"url(#arr23)\" marker-end=\"url(#arr23)\"/><text x=\"58\" y=\"132\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"17\" fill=\"#047857\" font-style=\"italic\">x m</text><line x1=\"346\" y1=\"65\" x2=\"346\" y2=\"190\" stroke=\"#10b981\" stroke-width=\"3\" marker-start=\"url(#arr23)\" marker-end=\"url(#arr23)\"/><text x=\"362\" y=\"132\" font-family=\"Arial\" font-size=\"17\" fill=\"#047857\" font-style=\"italic\">x m</text><line x1=\"95\" y1=\"213\" x2=\"325\" y2=\"213\" stroke=\"#f59e0b\" stroke-width=\"3\" marker-start=\"url(#arr23)\" marker-end=\"url(#arr23)\"/><text x=\"210\" y=\"238\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\" fill=\"#b45309\" font-style=\"italic\">l m</text><text x=\"210\" y=\"18\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" fill=\"#475569\">NOT TO SCALE</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "Leanne wants to build a rectangular vegetable garden in her backyard. She has 20 metres of fencing and will use a wall as one side of the garden. The plan for her garden is shown, where \\(x\\) metres is the width of her garden. Which equation gives the area, \\(A\\), of the vegetable garden?",
+              "note": "The wall is one long side, so the 20 m of fencing covers only the two widths and the other length. Let that fenced length be \\(l\\)."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q25",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which of the following expresses \\(2x^2(5-x)-x(x-2)\\) in its simplest form?",
+          "options": [
+            "\\(-2x^3+9x^2+2x\\)",
+            "\\(-2x^3+11x^2-2x\\)",
+            "\\(-2x^3+9x^2-2x\\)",
+            "\\(9x^2-2x+2\\)"
+          ],
+          "answer": 0,
+          "hint": "Distribute each outside factor to every term in its bracket; keep the subtraction in front of the second product.",
+          "steps": [
+            {
+              "explain": "Expand the first product term by term.",
+              "work": "\\(2x^2(5-x)=10x^2-2x^3\\)"
+            },
+            {
+              "explain": "Expand the product being subtracted.",
+              "work": "\\(x(x-2)=x^2-2x\\)"
+            },
+            {
+              "explain": "Subtract the entire second result, changing both signs.",
+              "work": "\\(10x^2-2x^3-(x^2-2x)=10x^2-2x^3-x^2+2x\\)"
+            },
+            {
+              "explain": "Collect like powers of x.",
+              "work": "\\(\\boxed{-2x^3+9x^2+2x}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 25,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Which of the following expresses \\(2x^2(5-x)-x(x-2)\\) in its simplest form?",
+              "note": "Distribute each outside factor to every term in its bracket; keep the subtraction in front of the second product."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q26",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify fully \\(\\dfrac{18ab}{3a^2}\\times\\dfrac cb\\).",
+          "options": [
+            "\\(\\dfrac{6ac}{b}\\)",
+            "\\(\\dfrac{6c}{a}\\)",
+            "\\(\\dfrac{6c}{a^2}\\)",
+            "\\(\\dfrac{6abc}{a^2}\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply the fractions, then cancel common factors of \\(a\\) and \\(b\\).",
+          "steps": [
+            {
+              "explain": "Write the product as one fraction.",
+              "work": "\\(\\dfrac{18ab}{3a^2}\\cdot\\dfrac cb=\\dfrac{18abc}{3a^2b}\\)"
+            },
+            {
+              "explain": "Reduce the numerical factors and cancel b.",
+              "work": "\\(\\dfrac{18abc}{3a^2b}=\\dfrac{6ac}{a^2}\\)"
+            },
+            {
+              "explain": "Cancel one factor of a.",
+              "work": "\\(\\dfrac{6ac}{a^2}=\\boxed{\\dfrac{6c}{a}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 26,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Simplify fully \\(\\dfrac{18ab}{3a^2}\\times\\dfrac cb\\).",
+              "note": "Multiply the fractions, then cancel common factors of \\(a\\) and \\(b\\)."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q34",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(\\dfrac2n-\\dfrac1{n+1}\\).",
+          "options": [
+            "\\(\\dfrac{n+1}{n(n+1)}\\)",
+            "\\(\\dfrac{n+2}{n(n+1)}\\)",
+            "\\(\\dfrac{n+2}{n+1}\\)",
+            "\\(\\dfrac1{n(n+1)}\\)"
+          ],
+          "answer": 1,
+          "hint": "Use the common denominator \\(n(n+1)\\), keeping the original restrictions \\(n\\ne0,-1\\).",
+          "steps": [
+            {
+              "explain": "Identify the common denominator.",
+              "work": "\\(n(n+1)\\)"
+            },
+            {
+              "explain": "Rewrite both fractions with that denominator.",
+              "work": "\\(\\dfrac2n=\\dfrac{2(n+1)}{n(n+1)},\\quad \\dfrac1{n+1}=\\dfrac n{n(n+1)}\\)"
+            },
+            {
+              "explain": "Subtract the numerators and expand.",
+              "work": "\\(\\dfrac{2(n+1)-n}{n(n+1)}=\\dfrac{2n+2-n}{n(n+1)}\\)"
+            },
+            {
+              "explain": "Combine like terms.",
+              "work": "\\(\\boxed{\\dfrac{n+2}{n(n+1)}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 34,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Simplify \\(\\dfrac2n-\\dfrac1{n+1}\\).",
+              "note": "Use the common denominator \\(n(n+1)\\), keeping the original restrictions \\(n\\ne0,-1\\)."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q40",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express \\(\\dfrac{2x-3}{2}-\\dfrac{x-1}{5}\\) as a single fraction in its simplest form.",
+          "options": [
+            "\\(\\dfrac{8x-17}{10}\\)",
+            "\\(\\dfrac{12x-17}{10}\\)",
+            "\\(\\dfrac{8x-13}{7}\\)",
+            "\\(\\dfrac{8x-13}{10}\\)"
+          ],
+          "answer": 3,
+          "hint": "Use common denominator 10, and remember the minus sign applies to the whole second numerator.",
+          "steps": [
+            {
+              "explain": "The least common denominator of 2 and 5 is 10.",
+              "work": "\\(\\dfrac{2x-3}{2}=\\dfrac{5(2x-3)}{10},\\quad\\dfrac{x-1}{5}=\\dfrac{2(x-1)}{10}\\)"
+            },
+            {
+              "explain": "Subtract the numerators.",
+              "work": "\\(\\dfrac{5(2x-3)-2(x-1)}{10}\\)"
+            },
+            {
+              "explain": "Expand both brackets, including the minus sign.",
+              "work": "\\(\\dfrac{10x-15-2x+2}{10}\\)"
+            },
+            {
+              "explain": "Collect like terms.",
+              "work": "\\(\\boxed{\\dfrac{8x-13}{10}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 40,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Express \\(\\dfrac{2x-3}{2}-\\dfrac{x-1}{5}\\) as a single fraction in its simplest form.",
+              "note": "Use common denominator 10, and remember the minus sign applies to the whole second numerator."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q55",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(\\dfrac23-\\dfrac{x-1}{4}\\).",
+          "options": [
+            "\\(\\dfrac{3x-11}{12}\\)",
+            "\\(\\dfrac{11-x}{12}\\)",
+            "\\(\\dfrac{11-3x}{12}\\)",
+            "\\(\\dfrac{8-3x}{12}\\)\\)"
+          ],
+          "answer": 2,
+          "hint": "Use denominator 12 and distribute the subtraction across \\(x-1\\).",
+          "steps": [
+            {
+              "explain": "Rewrite both fractions over 12.",
+              "work": "\\(\\dfrac23=\\dfrac8{12},\\quad\\dfrac{x-1}{4}=\\dfrac{3(x-1)}{12}\\)"
+            },
+            {
+              "explain": "Subtract the numerators.",
+              "work": "\\(\\dfrac{8-3(x-1)}{12}\\)"
+            },
+            {
+              "explain": "Expand the negative bracket.",
+              "work": "\\(\\dfrac{8-3x+3}{12}\\)"
+            },
+            {
+              "explain": "Combine constants.",
+              "work": "\\(\\boxed{\\dfrac{11-3x}{12}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 55,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Simplify \\(\\dfrac23-\\dfrac{x-1}{4}\\).",
+              "note": "Use denominator 12 and distribute the subtraction across \\(x-1\\)."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q57",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(\\dfrac x3+\\dfrac{3x-1}{2}\\).",
+          "options": [
+            "\\(\\dfrac{11x-3}{6}\\)",
+            "\\(\\dfrac{5x-1}{6}\\)",
+            "\\(\\dfrac{11x+3}{6}\\)",
+            "\\(\\dfrac{4x-1}{5}\\)\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the common denominator 6, then add the numerators.",
+          "steps": [
+            {
+              "explain": "Rewrite both terms with denominator 6.",
+              "work": "\\(\\dfrac x3=\\dfrac{2x}{6},\\quad\\dfrac{3x-1}{2}=\\dfrac{3(3x-1)}6\\)"
+            },
+            {
+              "explain": "Add the numerators.",
+              "work": "\\(\\dfrac{2x+3(3x-1)}6\\)"
+            },
+            {
+              "explain": "Expand and collect like terms.",
+              "work": "\\(\\dfrac{2x+9x-3}6=\\boxed{\\dfrac{11x-3}{6}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 57,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Simplify \\(\\dfrac x3+\\dfrac{3x-1}{2}\\).",
+              "note": "Use the common denominator 6, then add the numerators."
+            }
+          ]
         }
       ]
     },
@@ -16428,6 +17123,146 @@
           ],
           "timeLimit": 90,
           "xp": 3
+        },
+        {
+          "id": "y11a-1-excel-algebra-q09",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which expression is equal to \\(3x^2-x-2\\)?",
+          "options": [
+            "\\((3x-1)(x+2)\\)",
+            "\\((3x+1)(x-2)\\)",
+            "\\((3x-2)(x+1)\\)",
+            "\\((3x+2)(x-1)\\)"
+          ],
+          "answer": 3,
+          "hint": "Find two binomials whose leading terms multiply to \\(3x^2\\) and whose constants multiply to \\(-2\\); then expand to check.",
+          "steps": [
+            {
+              "explain": "U",
+              "work": "s"
+            },
+            {
+              "explain": "Expand the selected pair.",
+              "work": "\\((3x+2)(x-1)=3x^2-3x+2x-2\\)"
+            },
+            {
+              "explain": "Combine the middle terms.",
+              "work": "\\(3x^2-3x+2x-2=3x^2-x-2\\)"
+            },
+            {
+              "explain": "Therefore the matching factorisation is option D.",
+              "work": "\\(\\boxed{(3x+2)(x-1)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 7,
+            "sourceQuestion": 9,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Which expression is equal to \\(3x^2-x-2\\)?",
+              "note": "Find two binomials whose leading terms multiply to \\(3x^2\\) and whose constants multiply to \\(-2\\); then expand to check."
+            }
+          ]
+        },
+        {
+          "id": "y11a-1-excel-algebra-q13",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully \\(3x^2-27\\).",
+          "options": [
+            "\\(3(x-3)(x+3)\\)",
+            "\\(3(x^2-9)\\)",
+            "\\((3x-9)(x+3)\\)",
+            "\\(3(x-9)(x+1)\\)"
+          ],
+          "answer": 0,
+          "hint": "Take out the highest common factor first. Then factor the difference of two squares.",
+          "steps": [
+            {
+              "explain": "Both terms are divisible by 3.",
+              "work": "\\(3x^2-27=3(x^2-9)\\)"
+            },
+            {
+              "explain": "Recognise \\(x^2-9=x^2-3^2\\) as a difference of squares.",
+              "work": "\\(x^2-9=(x-3)(x+3)\\)"
+            },
+            {
+              "explain": "Combine the factors and check by expanding if needed.",
+              "work": "\\(\\boxed{3(x-3)(x+3)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 7,
+            "sourceQuestion": 13,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Factorise fully \\(3x^2-27\\).",
+              "note": "Take out the highest common factor first. Then factor the difference of two squares."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q37",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise \\(2x^2+5x-12\\).",
+          "options": [
+            "\\((2x-3)(x+4)\\)",
+            "\\((2x+3)(x-4)\\)",
+            "\\((2x-4)(x+3)\\)",
+            "\\((2x+4)(x-3)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find factors that produce \\(2x^2\\) and \\(-12\\), with middle terms adding to \\(5x\\).",
+          "steps": [
+            {
+              "explain": "Use the factor pair \\(2x\\) and \\(x\\) for the leading term.",
+              "work": "\\(2x^2=(2x)(x)\\)"
+            },
+            {
+              "explain": "Choose constants -3 and 4: their product is -12. Check the middle terms.",
+              "work": "\\((2x)(4)+(-3)(x)=8x-3x=5x\\)"
+            },
+            {
+              "explain": "Write the factors and expand to check.",
+              "work": "\\((2x-3)(x+4)=2x^2+8x-3x-12\\)"
+            },
+            {
+              "explain": "Combine the middle terms.",
+              "work": "\\(\\boxed{(2x-3)(x+4)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 37,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Factorise \\(2x^2+5x-12\\).",
+              "note": "Find factors that produce \\(2x^2\\) and \\(-12\\), with middle terms adding to \\(5x\\)."
+            }
+          ]
         }
       ]
     },
@@ -20519,6 +21354,242 @@
             "examPaper": "willoughby-2019-y9"
           },
           "xp": 4
+        },
+        {
+          "id": "y11a-1-excel-algebra-q02",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify \\(\\frac{x+2}{x}\\div\\frac{x^2-4}{2x}\\).",
+          "options": [
+            "\\(\\frac{2}{x-2}\\)",
+            "\\(\\frac{x-2}{2}\\)",
+            "\\(\\frac{2}{x+2}\\)",
+            "\\(\\frac{x+2}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Change division by a fraction to multiplication by its reciprocal, and factor the difference of squares.",
+          "steps": [
+            {
+              "explain": "Rewrite division by a fraction as multiplication by its reciprocal.",
+              "work": "\\(\\frac{x+2}{x}\\times\\frac{2x}{x^2-4}\\)"
+            },
+            {
+              "explain": "Factor the difference of squares in the denominator.",
+              "work": "\\(x^2-4=(x-2)(x+2)\\)"
+            },
+            {
+              "explain": "Cancel common factors carefully. The x in the first denominator cancels with the x in the second numerator; x+2 cancels as a factor.",
+              "work": "\\(\\frac{(x+2)2x}{x(x-2)(x+2)}=\\frac2{x-2}\\)"
+            },
+            {
+              "explain": "The simplified expression is the first option. The original expression requires \\(x\\ne0,-2,2\\).",
+              "work": "\\(\\boxed{\\frac2{x-2}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 7,
+            "sourceQuestion": 2,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Simplify \\(\\frac{x+2}{x}\\div\\frac{x^2-4}{2x}\\).",
+              "note": "Change division by a fraction to multiplication by its reciprocal, and factor the difference of squares."
+            }
+          ]
+        },
+        {
+          "id": "y11a-1-excel-algebra-q05",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which expression is equivalent to \\(\\frac{k^2}{10}\\div\\frac5k\\)?",
+          "options": [
+            "\\(\\frac2k\\)",
+            "\\(\\frac k2\\)",
+            "\\(\\frac{50}{k^3}\\)",
+            "\\(\\frac{k^3}{50}\\)"
+          ],
+          "answer": 3,
+          "hint": "Turn the division into multiplication by the reciprocal of \\(5/k\\).",
+          "steps": [
+            {
+              "explain": "Write the reciprocal of \\(5/k\\).",
+              "work": "\\(\\frac{k^2}{10}\\div\\frac5k=\\frac{k^2}{10}\\times\\frac k5\\)"
+            },
+            {
+              "explain": "Multiply the numerators and denominators.",
+              "work": "\\(\\frac{k^2\\cdot k}{10\\cdot5}=\\frac{k^3}{50}\\)"
+            },
+            {
+              "explain": "Choose the matching expression.",
+              "work": "\\(\\boxed{\\frac{k^3}{50}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 7,
+            "sourceQuestion": 5,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Which expression is equivalent to \\(\\frac{k^2}{10}\\div\\frac5k\\)?",
+              "note": "Turn the division into multiplication by the reciprocal of \\(5/k\\)."
+            }
+          ]
+        },
+        {
+          "id": "y11a-1-excel-algebra-q12",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(\\frac{8x^4y}{24x^3y^5}\\).",
+          "options": [
+            "\\(\\frac{x}{3y^4}\\)",
+            "\\(\\frac{x}{3y^6}\\)",
+            "\\(\\frac{3x}{y^4}\\)",
+            "\\(\\frac{x^7}{3y^4}\\)"
+          ],
+          "answer": 0,
+          "hint": "Reduce the number coefficients, then subtract exponents for each variable in the quotient.",
+          "steps": [
+            {
+              "explain": "Simplify the numerical fraction.",
+              "work": "\\(\\frac8{24}=\\frac13\\)"
+            },
+            {
+              "explain": "For x, subtract the denominator exponent from the numerator exponent.",
+              "work": "\\(\\frac{x^4}{x^3}=x^{4-3}=x\\)"
+            },
+            {
+              "explain": "For y, subtract the exponents in the same way.",
+              "work": "\\(\\frac{y}{y^5}=y^{1-5}=y^{-4}=\\frac1{y^4}\\)"
+            },
+            {
+              "explain": "Combine these simplified factors.",
+              "work": "\\(\\boxed{\\frac{x}{3y^4}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 7,
+            "sourceQuestion": 12,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Simplify \\(\\frac{8x^4y}{24x^3y^5}\\).",
+              "note": "Reduce the number coefficients, then subtract exponents for each variable in the quotient."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q27",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify \\(\\dfrac{n^2-25}{n-5}\\).",
+          "options": [
+            "\\(n-5\\), with \\(n\\ne5\\)",
+            "\\(n+5\\), for all real \\(n\\)",
+            "\\(n+5\\), with \\(n\\ne5\\)",
+            "\\(n^2-5\\)"
+          ],
+          "answer": 2,
+          "hint": "Factor the numerator as a difference of squares, and retain the restriction from the original denominator.",
+          "steps": [
+            {
+              "explain": "Factor the numerator.",
+              "work": "\\(n^2-25=(n-5)(n+5)\\)"
+            },
+            {
+              "explain": "Cancel the common factor, noting it can only be cancelled when the original denominator is non-zero.",
+              "work": "\\(\\dfrac{(n-5)(n+5)}{n-5}=n+5\\)"
+            },
+            {
+              "explain": "State the restriction from the original expression.",
+              "work": "\\(n-5\\ne0\\Rightarrow n\\ne5\\)"
+            },
+            {
+              "explain": "Give the simplified expression and domain restriction.",
+              "work": "\\(\\boxed{n+5,\\quad n\\ne5}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 27,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Simplify \\(\\dfrac{n^2-25}{n-5}\\).",
+              "note": "Factor the numerator as a difference of squares, and retain the restriction from the original denominator."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q47",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify \\(\\dfrac{x}{x^2-4}+\\dfrac2{x-2}\\).",
+          "options": [
+            "\\(\\dfrac{3x-4}{(x-2)(x+2)}\\)",
+            "\\(\\dfrac{3x+4}{x^2-4}\\)\\)",
+            "\\(\\dfrac{3x+4}{(x-2)(x+2)}\\)",
+            "\\(\\dfrac{x+2}{x-2}\\)\\)"
+          ],
+          "answer": 2,
+          "hint": "Factor \\(x^2-4\\), then rewrite the second fraction with the common denominator.",
+          "steps": [
+            {
+              "explain": "Factor the difference of squares and note \\(x\\ne2,-2\\).",
+              "work": "\\(x^2-4=(x-2)(x+2)\\)"
+            },
+            {
+              "explain": "Rewrite the second fraction using this denominator.",
+              "work": "\\(\\dfrac2{x-2}=\\dfrac{2(x+2)}{(x-2)(x+2)}\\)"
+            },
+            {
+              "explain": "Add the numerators.",
+              "work": "\\(\\dfrac{x+2(x+2)}{(x-2)(x+2)}=\\dfrac{x+2x+4}{(x-2)(x+2)}\\)"
+            },
+            {
+              "explain": "Combine like terms.",
+              "work": "\\(\\boxed{\\dfrac{3x+4}{(x-2)(x+2)}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 47,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Simplify \\(\\dfrac{x}{x^2-4}+\\dfrac2{x-2}\\).",
+              "note": "Factor \\(x^2-4\\), then rewrite the second fraction with the common denominator."
+            }
+          ]
         }
       ]
     },
@@ -26056,6 +27127,58 @@
           ],
           "timeLimit": 90,
           "xp": 3
+        },
+        {
+          "id": "y11a-1-excel-algebra-q11",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "By letting \\(m=t^{1/3}\\), or otherwise, solve \\(t^{2/3}+t^{1/3}-6=0\\).",
+          "options": [
+            "\\(t=8\\) only",
+            "\\(t=-27\\) only",
+            "\\(t=8\\) or \\(t=-27\\)",
+            "\\(t=2\\) or \\(t=-3\\)"
+          ],
+          "answer": 2,
+          "hint": "Let \\(m=t^{1/3}\\). Then \\(t^{2/3}=m^2\\), so solve a quadratic in m and cube each value of m.",
+          "steps": [
+            {
+              "explain": "Use the suggested substitution.",
+              "work": "\\(m=t^{1/3}\\quad\\Rightarrow\\quad t^{2/3}=m^2\\)"
+            },
+            {
+              "explain": "Rewrite and factor the quadratic.",
+              "work": "\\(m^2+m-6=0\\Rightarrow(m+3)(m-2)=0\\)"
+            },
+            {
+              "explain": "Solve for m.",
+              "work": "\\(m=-3\\quad\\text{or}\\quad m=2\\)"
+            },
+            {
+              "explain": "Convert back using \\(m=t^{1/3}\\), so cube both values.",
+              "work": "\\(t=(-3)^3=-27\\quad\\text{or}\\quad t=2^3=8\\)"
+            },
+            {
+              "explain": "Keep both real solutions.",
+              "work": "\\(\\boxed{t=-27\\text{ or }t=8}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 7,
+            "sourceQuestion": 11,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "By letting \\(m=t^{1/3}\\), or otherwise, solve \\(t^{2/3}+t^{1/3}-6=0\\).",
+              "note": "Let \\(m=t^{1/3}\\). Then \\(t^{2/3}=m^2\\), so solve a quadratic in m and cube each value of m."
+            }
+          ]
         }
       ]
     },
@@ -35801,6 +36924,374 @@
             "sourcePaper": "Ascham 2020 2U Trials",
             "sourceQuestion": 16
           }
+        },
+        {
+          "id": "y11a-1-excel-algebra-q07",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the values of \\(x\\) and \\(y\\) which satisfy the following equations simultaneously: \\(y=x+5\\), \\(3y-x=7\\).",
+          "options": [
+            "\\(x=-4,\\ y=1\\)",
+            "\\(x=4,\\ y=9\\)",
+            "\\(x=-1,\\ y=4\\)",
+            "\\(x=1,\\ y=6\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the first equation to replace y in the second equation, then substitute the x-value back.",
+          "steps": [
+            {
+              "explain": "Substitute \\(y=x+5\\) into the second equation.",
+              "work": "\\(3(x+5)-x=7\\)"
+            },
+            {
+              "explain": "Expand and collect like terms.",
+              "work": "\\(3x+15-x=7\\Rightarrow 2x+15=7\\)"
+            },
+            {
+              "explain": "Subtract 15 and divide by 2.",
+              "work": "\\(2x=-8\\Rightarrow x=-4\\)"
+            },
+            {
+              "explain": "Put \\(x=-4\\) into \\(y=x+5\\).",
+              "work": "\\(y=-4+5=1\\)"
+            },
+            {
+              "explain": "Check: \\(3(1)-(-4)=7\\), so both equations hold.",
+              "work": "\\(\\boxed{x=-4,\\ y=1}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 7,
+            "sourceQuestion": 7,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Find the values of \\(x\\) and \\(y\\) which satisfy the following equations simultaneously: \\(y=x+5\\), \\(3y-x=7\\).",
+              "note": "Use the first equation to replace y in the second equation, then substitute the x-value back."
+            }
+          ]
+        },
+        {
+          "id": "y11a-1-excel-algebra-q20",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve these simultaneous equations to find the values of \\(x\\) and \\(y\\): \\(y=2x+1\\), \\(x-2y-4=0\\).",
+          "options": [
+            "\\(x=-2,\\ y=-3\\)",
+            "\\(x=2,\\ y=5\\)",
+            "\\(x=-3,\\ y=-5\\)",
+            "\\(x=3,\\ y=7\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute the expression for y from the first equation into the second.",
+          "steps": [
+            {
+              "explain": "Substitute \\(y=2x+1\\) into the other equation.",
+              "work": "\\(x-2(2x+1)-4=0\\)"
+            },
+            {
+              "explain": "Expand the bracket and combine like terms.",
+              "work": "\\(x-4x-2-4=0\\Rightarrow -3x-6=0\\)"
+            },
+            {
+              "explain": "Add 6, then divide by -3.",
+              "work": "\\(-3x=6\\Rightarrow x=-2\\)"
+            },
+            {
+              "explain": "Substitute \\(x=-2\\) into \\(y=2x+1\\).",
+              "work": "\\(y=2(-2)+1=-3\\)"
+            },
+            {
+              "explain": "The ordered pair satisfies both equations.",
+              "work": "\\(\\boxed{x=-2,\\ y=-3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 7,
+            "sourceQuestion": 20,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Solve these simultaneous equations to find the values of \\(x\\) and \\(y\\): \\(y=2x+1\\), \\(x-2y-4=0\\).",
+              "note": "Substitute the expression for y from the first equation into the second."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q45",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the pair of simultaneous equations \\(x-2y=8\\), \\(2x+y=1\\).",
+          "options": [
+            "\\(x=2,\\ y=-3\\)",
+            "\\(x=-2,\\ y=-3\\)",
+            "\\(x=2,\\ y=3\\)",
+            "\\(x=3,\\ y=-2\\)"
+          ],
+          "answer": 0,
+          "hint": "Use elimination: double the first equation so the y-coefficients cancel when added to the second.",
+          "steps": [
+            {
+              "explain": "Double the first equation.",
+              "work": "\\(2x-4y=16\\)"
+            },
+            {
+              "explain": "Subtract the second equation \\(2x+y=1\\) from this equation.",
+              "work": "\\(-5y=15\\Rightarrow y=-3\\)"
+            },
+            {
+              "explain": "Substitute \\(y=-3\\) into the first equation.",
+              "work": "\\(x-2(-3)=8\\Rightarrow x+6=8\\)"
+            },
+            {
+              "explain": "Solve for x and check in the second equation.",
+              "work": "\\(x=2,\\quad 2(2)+(-3)=1\\)"
+            },
+            {
+              "explain": "State the ordered pair.",
+              "work": "\\(\\boxed{x=2,\\ y=-3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 45,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Solve the pair of simultaneous equations \\(x-2y=8\\), \\(2x+y=1\\).",
+              "note": "Use elimination: double the first equation so the y-coefficients cancel when added to the second."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q48",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the pair of simultaneous equations \\(x-y=2\\), \\(3x+2y=1\\).",
+          "options": [
+            "\\(x=-1,\\ y=1\\)",
+            "\\(x=1,\\ y=1\\)",
+            "\\(x=2,\\ y=0\\)",
+            "\\(x=1,\\ y=-1\\)"
+          ],
+          "answer": 3,
+          "hint": "From \\(x-y=2\\), write \\(x=y+2\\) and substitute into the second equation.",
+          "steps": [
+            {
+              "explain": "Rearrange the first equation for x.",
+              "work": "\\(x=y+2\\)"
+            },
+            {
+              "explain": "Substitute into the second equation.",
+              "work": "\\(3(y+2)+2y=1\\)"
+            },
+            {
+              "explain": "Expand and collect y-terms.",
+              "work": "\\(3y+6+2y=1\\Rightarrow5y=-5\\Rightarrow y=-1\\)"
+            },
+            {
+              "explain": "Substitute back to find x.",
+              "work": "\\(x=-1+2=1\\)"
+            },
+            {
+              "explain": "Check both equations and state the pair.",
+              "work": "\\(1-(-1)=2,\\quad3(1)+2(-1)=1\\)"
+            },
+            {
+              "explain": "Answer.",
+              "work": "\\(\\boxed{x=1,\\ y=-1}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 48,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Solve the pair of simultaneous equations \\(x-y=2\\), \\(3x+2y=1\\).",
+              "note": "From \\(x-y=2\\), write \\(x=y+2\\) and substitute into the second equation."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q50",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the simultaneous equations \\(x+y=1\\), \\(2x-y=5\\).",
+          "options": [
+            "\\(x=2,\\ y=1\\)",
+            "\\(x=2,\\ y=-1\\)",
+            "\\(x=-2,\\ y=3\\)",
+            "\\(x=3,\\ y=-2\\)"
+          ],
+          "answer": 1,
+          "hint": "Add the equations to eliminate y, then substitute back.",
+          "steps": [
+            {
+              "explain": "Add the two equations.",
+              "work": "\\((x+y)+(2x-y)=1+5\\)"
+            },
+            {
+              "explain": "Simplify and solve for x.",
+              "work": "\\(3x=6\\Rightarrow x=2\\)"
+            },
+            {
+              "explain": "Substitute \\(x=2\\) into \\(x+y=1\\).",
+              "work": "\\(2+y=1\\Rightarrow y=-1\\)"
+            },
+            {
+              "explain": "Check in the second equation.",
+              "work": "\\(2(2)-(-1)=5\\)"
+            },
+            {
+              "explain": "State the solution.",
+              "work": "\\(\\boxed{x=2,\\ y=-1}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 50,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Solve the simultaneous equations \\(x+y=1\\), \\(2x-y=5\\).",
+              "note": "Add the equations to eliminate y, then substitute back."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q59",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the pair of simultaneous equations \\(2x+y=7\\), \\(x-2y=1\\).",
+          "options": [
+            "\\(x=1,\\ y=3\\)",
+            "\\(x=3,\\ y=-1\\)",
+            "\\(x=3,\\ y=1\\)",
+            "\\(x=2,\\ y=3\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply the second equation by 2 so the y-terms cancel when you add.",
+          "steps": [
+            {
+              "explain": "Double the second equation.",
+              "work": "\\(2x-4y=2\\)"
+            },
+            {
+              "explain": "Subtract this equation from the first, or eliminate x consistently: subtract first from doubled equation.",
+              "work": "\\((2x-4y)-(2x+y)=2-7\\Rightarrow-5y=-5\\)"
+            },
+            {
+              "explain": "Solve for y.",
+              "work": "\\(y=1\\)"
+            },
+            {
+              "explain": "Substitute into \\(2x+y=7\\).",
+              "work": "\\(2x+1=7\\Rightarrow x=3\\)"
+            },
+            {
+              "explain": "Check the second equation and state the pair.",
+              "work": "\\(3-2(1)=1\\Rightarrow\\boxed{x=3,\\ y=1}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 9,
+            "sourceQuestion": 59,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Solve the pair of simultaneous equations \\(2x+y=7\\), \\(x-2y=1\\).",
+              "note": "Multiply the second equation by 2 so the y-terms cancel when you add."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q61",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the pair of simultaneous equations \\(x+y=2\\), \\(2x-y=7\\).",
+          "options": [
+            "\\(x=3,\\ y=-1\\)",
+            "\\(x=-1,\\ y=3\\)",
+            "\\(x=3,\\ y=1\\)",
+            "\\(x=2,\\ y=0\\)"
+          ],
+          "answer": 0,
+          "hint": "Add the equations to eliminate y, then substitute back to find x and y.",
+          "steps": [
+            {
+              "explain": "Add the two equations.",
+              "work": "\\((x+y)+(2x-y)=2+7\\)"
+            },
+            {
+              "explain": "Solve for x.",
+              "work": "\\(3x=9\\Rightarrow x=3\\)"
+            },
+            {
+              "explain": "Substitute into \\(x+y=2\\).",
+              "work": "\\(3+y=2\\Rightarrow y=-1\\)"
+            },
+            {
+              "explain": "Check in \\(2x-y=7\\).",
+              "work": "\\(2(3)-(-1)=7\\)"
+            },
+            {
+              "explain": "State the ordered pair.",
+              "work": "\\(\\boxed{x=3,\\ y=-1}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 61,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Solve the pair of simultaneous equations \\(x+y=2\\), \\(2x-y=7\\).",
+              "note": "Add the equations to eliminate y, then substitute back to find x and y."
+            }
+          ]
         }
       ]
     },

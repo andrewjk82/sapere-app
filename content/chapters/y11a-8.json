@@ -4773,6 +4773,669 @@
               "work": "\\(3x=-2\\Rightarrow x=-\\frac23\\quad\\boxed{x=-\\frac23}\\)"
             }
           ]
+        },
+        {
+          "id": "y11a-8-excel-expln-q15",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate e^{-0}·⁵ correct to three decimal places.",
+          "options": [
+            "0.607",
+            "0.6070",
+            "0.500",
+            "1.649"
+          ],
+          "answer": 0,
+          "hint": "Evaluate the exponential and round to three decimal places.",
+          "steps": [
+            {
+              "explain": "Evaluate e to the power −0.5.",
+              "work": "e^{-0}·⁵≈0.606530…"
+            },
+            {
+              "explain": "Round to three decimal places.",
+              "work": "0.606530…≈0.607"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 92,
+            "sourceQuestion": 15
+          },
+          "keyPoints": [
+            {
+              "text": "Evaluate e^{-0}·⁵ correct to three decimal places.",
+              "note": "Evaluate the exponential and round to three decimal places."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-expln-q17",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate e^{-3.5} correct to 3 significant figures.",
+          "options": [
+            "0.0302",
+            "0.0301",
+            "0.302",
+            "0.00302"
+          ],
+          "answer": 0,
+          "hint": "Evaluate the exponential first, then round to three significant figures.",
+          "steps": [
+            {
+              "explain": "Evaluate the negative power.",
+              "work": "e^{-3.5}≈0.0301974…"
+            },
+            {
+              "explain": "The first three significant digits are 3, 0, 1; the next digit is 9, so round the 1 up.",
+              "work": "0.0301974…≈0.0302"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 92,
+            "sourceQuestion": 17
+          },
+          "keyPoints": [
+            {
+              "text": "Evaluate e^{-3.5} correct to 3 significant figures.",
+              "note": "Evaluate the exponential first, then round to three significant figures."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-expln-q20",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the value of e^{3}, correct to three significant figures.",
+          "options": [
+            "20.1",
+            "20.0",
+            "19.1",
+            "2.01"
+          ],
+          "answer": 0,
+          "hint": "Evaluate e^{3} and round to three significant figures.",
+          "steps": [
+            {
+              "explain": "Evaluate the exponential.",
+              "work": "e^{3}≈20.0855…"
+            },
+            {
+              "explain": "Round to three significant figures.",
+              "work": "20.1"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 92,
+            "sourceQuestion": 20
+          },
+          "keyPoints": [
+            {
+              "text": "Find the value of e^{3}, correct to three significant figures.",
+              "note": "Evaluate e^{3} and round to three significant figures."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y11a-8C",
+      "code": "8C",
+      "title": "Logarithms",
+      "questions": [
+        {
+          "id": "y11a-8-excel-loglaws-q8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "It is given that logₐ8 = 1.893, correct to 3 decimal places. What is the value of logₐ4, correct to 2 decimal places?",
+          "options": [
+            "0.95",
+            "1.26",
+            "1.53",
+            "2.84"
+          ],
+          "answer": 1,
+          "hint": "Since 4=8^(2/3), multiply logₐ8 by 2/3.",
+          "steps": [
+            {
+              "explain": "Express 4 as a power of 8.",
+              "work": "4=8^(2/3)"
+            },
+            {
+              "explain": "Use the power law.",
+              "work": "logₐ4=logₐ(8^(2/3))=(2/3)logₐ8"
+            },
+            {
+              "explain": "Substitute the given approximation.",
+              "work": "(2/3)(1.893)=1.262"
+            },
+            {
+              "explain": "Round to two decimal places.",
+              "work": "1.26"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 88,
+            "sourceQuestion": 8
+          },
+          "keyPoints": [
+            {
+              "text": "It is given that logₐ8 = 1.893, correct to 3 decimal places. What is the value of logₐ4, correct to 2 decimal places?",
+              "note": "Since 4=8^(2/3), multiply logₐ8 by 2/3."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-loglaws-q11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use the change of base formula to evaluate log₃7, correct to two decimal places.",
+          "options": [
+            "1.77",
+            "0.56",
+            "2.81",
+            "1.95"
+          ],
+          "answer": 0,
+          "hint": "Use log₃7=log₁₀7/log₁₀3, or evaluate with a calculator and round to two decimal places.",
+          "steps": [
+            {
+              "explain": "Apply the change-of-base formula.",
+              "work": "log₃7=log₁₀7/log₁₀3"
+            },
+            {
+              "explain": "Evaluate the quotient.",
+              "work": "0.845098…/0.477121…≈1.7712…"
+            },
+            {
+              "explain": "Round to two decimal places.",
+              "work": "1.77"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 88,
+            "sourceQuestion": 11
+          },
+          "keyPoints": [
+            {
+              "text": "Use the change of base formula to evaluate log₃7, correct to two decimal places.",
+              "note": "Use log₃7=log₁₀7/log₁₀3, or evaluate with a calculator and round to two decimal places."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-expln-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following represents the domain of the function f(x)=ln(1−x)?",
+          "options": [
+            "[1,∞)",
+            "(1,∞)",
+            "(−∞,1]",
+            "(−∞,1)"
+          ],
+          "answer": 3,
+          "hint": "The argument of a natural logarithm must be strictly positive: 1−x>0.",
+          "steps": [
+            {
+              "explain": "For ln(1−x) to be defined, its argument must be greater than zero.",
+              "work": "1−x>0"
+            },
+            {
+              "explain": "Solve the inequality.",
+              "work": "−x>−1  ⇒  x<1"
+            },
+            {
+              "explain": "The endpoint x=1 is excluded because ln 0 is undefined.",
+              "work": "domain (−∞,1)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 92,
+            "sourceQuestion": 1
+          },
+          "keyPoints": [
+            {
+              "text": "Which of the following represents the domain of the function f(x)=ln(1−x)?",
+              "note": "The argument of a natural logarithm must be strictly positive: 1−x>0."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-expln-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is the domain of the function f(x)=ln(4−x)?",
+          "options": [
+            "x<4",
+            "x \\le 4",
+            "x>4",
+            "x \\ge 4"
+          ],
+          "answer": 0,
+          "hint": "The logarithm argument 4−x must be strictly positive.",
+          "steps": [
+            {
+              "explain": "Set the logarithm argument greater than zero.",
+              "work": "4−x>0"
+            },
+            {
+              "explain": "Rearrange.",
+              "work": "−x>−4  ⇒  x<4"
+            },
+            {
+              "explain": "The endpoint 4 is excluded because ln0 is undefined.",
+              "work": "x<4"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 92,
+            "sourceQuestion": 3
+          },
+          "keyPoints": [
+            {
+              "text": "What is the domain of the function f(x)=ln(4−x)?",
+              "note": "The logarithm argument 4−x must be strictly positive."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-expln-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate ln 3 correct to three significant figures.",
+          "options": [
+            "1.10",
+            "1.09",
+            "1.098",
+            "3.00"
+          ],
+          "answer": 0,
+          "hint": "Evaluate the natural logarithm, then round to three significant figures.",
+          "steps": [
+            {
+              "explain": "Evaluate using the natural logarithm function.",
+              "work": "ln3≈1.098612…"
+            },
+            {
+              "explain": "Keep three significant figures: the first three are 1, 0, 9; the next digit is 8, so round up.",
+              "work": "1.098612…≈1.10"
+            },
+            {
+              "explain": "State the rounded value.",
+              "work": "1.10"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 92,
+            "sourceQuestion": 6
+          },
+          "keyPoints": [
+            {
+              "text": "Evaluate ln 3 correct to three significant figures.",
+              "note": "Evaluate the natural logarithm, then round to three significant figures."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-expln-q8",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "What is the range of the function f(x)=ln(x^{2}+e)?",
+          "options": [
+            "y \\ge 1",
+            "y>1",
+            "y \\ge 0",
+            "all real values"
+          ],
+          "answer": 0,
+          "hint": "Since x^{2} \\ge 0, the logarithm argument has minimum e. Apply the increasing ln function.",
+          "steps": [
+            {
+              "explain": "The square x^{2} is always non-negative.",
+              "work": "x^{2} \\ge 0"
+            },
+            {
+              "explain": "Add e to find the minimum argument.",
+              "work": "x^{2}+e \\ge e"
+            },
+            {
+              "explain": "Because ln is increasing, apply ln to the inequality.",
+              "work": "ln(x^{2}+e) \\ge ln e=1"
+            },
+            {
+              "explain": "The minimum is attained at x=0.",
+              "work": "range \\([1,\\infty)\\), or \\(y \\ge 1\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 92,
+            "sourceQuestion": 8
+          },
+          "keyPoints": [
+            {
+              "text": "What is the range of the function f(x)=ln(x^{2}+e)?",
+              "note": "Since x^{2} \\ge 0, the logarithm argument has minimum e. Apply the increasing ln function."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-expln-q11",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the equation ln x = 2. Give your answer correct to four decimal places.",
+          "options": [
+            "7.3891",
+            "7.3890",
+            "2.7183",
+            "1.4142"
+          ],
+          "answer": 0,
+          "hint": "Undo the natural logarithm by exponentiating both sides.",
+          "steps": [
+            {
+              "explain": "Exponentiate both sides with base e.",
+              "work": "lnx=2  ⇒  x=e^{2}"
+            },
+            {
+              "explain": "Evaluate.",
+              "work": "e^{2}≈7.389056…"
+            },
+            {
+              "explain": "Round to four decimal places.",
+              "work": "x≈7.3891"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 92,
+            "sourceQuestion": 11
+          },
+          "keyPoints": [
+            {
+              "text": "Solve the equation ln x = 2. Give your answer correct to four decimal places.",
+              "note": "Undo the natural logarithm by exponentiating both sides."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-expln-q12",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Let f(x)=ln(x−3). What is the domain of f(x)?",
+          "options": [
+            "x>3",
+            "x \\ge 3",
+            "x<3",
+            "all real x"
+          ],
+          "answer": 0,
+          "hint": "The argument x−3 must be strictly positive.",
+          "steps": [
+            {
+              "explain": "Set the logarithm argument greater than zero.",
+              "work": "x−3>0"
+            },
+            {
+              "explain": "Solve the inequality.",
+              "work": "x>3"
+            },
+            {
+              "explain": "The boundary x=3 is excluded.",
+              "work": "domain (3,∞)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 92,
+            "sourceQuestion": 12
+          },
+          "keyPoints": [
+            {
+              "text": "Let f(x)=ln(x−3). What is the domain of f(x)?",
+              "note": "The argument x−3 must be strictly positive."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-expln-q19",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the value of logₑ8 correct to two decimal places.",
+          "options": [
+            "2.08",
+            "0.90",
+            "2.10",
+            "8.00"
+          ],
+          "answer": 0,
+          "hint": "Evaluate the natural logarithm and round to two decimal places.",
+          "steps": [
+            {
+              "explain": "Evaluate ln 8.",
+              "work": "ln8≈2.079441…"
+            },
+            {
+              "explain": "Round to two decimal places.",
+              "work": "2.08"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 92,
+            "sourceQuestion": 19
+          },
+          "keyPoints": [
+            {
+              "text": "Find the value of logₑ8 correct to two decimal places.",
+              "note": "Evaluate the natural logarithm and round to two decimal places."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-introlog-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which expression is equivalent to \\(x=\\log_{3}7\\)?",
+          "options": [
+            "\\(3=7^x\\)",
+            "\\(3=x^7\\)",
+            "\\(7=3^x\\)",
+            "\\(7=x^3\\)"
+          ],
+          "answer": 2,
+          "hint": "Convert from logarithmic to exponential form: the base is 3, the result is 7, and the exponent is x.",
+          "steps": [
+            {
+              "explain": "Use the equivalence \\(x=\\log_b a\\iff b^x=a\\). The base is 3 and the result is 7.",
+              "work": "\\(3^x=7\\)"
+            },
+            {
+              "explain": "Choose the option with base 3, exponent x, and value 7.",
+              "work": "\\(7=3^x\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Which expression is equivalent to \\(x=\\log_{3}7\\)?",
+              "note": "Focus on this exact question instruction; connect it to the rule and calculation shown in the worked steps."
+            }
+          ],
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 86,
+            "sourceQuestion": 1
+          }
+        },
+        {
+          "id": "y11a-8-excel-introlog-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the value of \\(\\log_{4}16-\\log_{2}16\\)?",
+          "options": [
+            "\\(-2\\)",
+            "\\(2\\)",
+            "\\(4\\)",
+            "\\(6\\)"
+          ],
+          "answer": 0,
+          "hint": "Work out each logarithm by asking which power of its base equals 16.",
+          "steps": [
+            {
+              "explain": "Since \\(4^2=16\\), the first logarithm is 2.",
+              "work": "\\(\\log_4 16=2\\)"
+            },
+            {
+              "explain": "Since \\(2^4=16\\), the second logarithm is 4.",
+              "work": "\\(\\log_2 16=4\\)"
+            },
+            {
+              "explain": "Subtract in the order shown.",
+              "work": "\\(2-4=-2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "What is the value of \\(\\log_{4}16-\\log_{2}16\\)?",
+              "note": "Focus on this exact question instruction; connect it to the rule and calculation shown in the worked steps."
+            }
+          ],
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 86,
+            "sourceQuestion": 2
+          }
+        },
+        {
+          "id": "y11a-8-excel-introlog-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which expression is equivalent to \\(y=p^5\\)?",
+          "options": [
+            "\\(5=\\log_p y\\)",
+            "\\(5=\\log_y p\\)",
+            "\\(p=\\log_y 5\\)",
+            "\\(p=\\log_5 y\\)"
+          ],
+          "answer": 0,
+          "hint": "Rewrite the exponential statement as a logarithm: keep the base p and the result y.",
+          "steps": [
+            {
+              "explain": "Use \\(a^b=c\\iff b=\\log_a c\\). In \\(p^5=y\\), the base is p, exponent is 5, and result is y.",
+              "work": "\\(p^5=y\\)"
+            },
+            {
+              "explain": "Write the equivalent logarithmic statement.",
+              "work": "\\(5=\\log_p y\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Which expression is equivalent to \\(y=p^5\\)?",
+              "note": "Focus on this exact question instruction; connect it to the rule and calculation shown in the worked steps."
+            }
+          ],
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 86,
+            "sourceQuestion": 3
+          }
+        },
+        {
+          "id": "y11a-8-excel-introlog-q4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of \\(x\\) if \\(\\log_x9=2\\). Briefly explain why there is only one value of \\(x\\).",
+          "options": [
+            "\\(x=3\\)",
+            "\\(x=-3\\)",
+            "\\(x=\\pm3\\)",
+            "\\(x=9\\)"
+          ],
+          "answer": 0,
+          "hint": "Convert the logarithm to an equation in powers. Remember a logarithm base must be positive.",
+          "steps": [
+            {
+              "explain": "Convert to exponential form: the base x raised to 2 gives 9.",
+              "work": "\\(x^2=9\\)"
+            },
+            {
+              "explain": "Solve the square equation.",
+              "work": "\\(x=3\\) or \\(x=-3\\)"
+            },
+            {
+              "explain": "A logarithm base must be positive (and not 1), so reject −3. Only one value remains.",
+              "work": "\\(x=3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Find the value of \\(x\\) if \\(\\log_x9=2\\). Briefly explain why there is only one value of \\(x\\).",
+              "note": "Focus on this exact question instruction; connect it to the rule and calculation shown in the worked steps."
+            }
+          ],
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 86,
+            "sourceQuestion": 4
+          }
         }
       ]
     },
@@ -4958,6 +5621,1479 @@
               "work": "\\(x=-1\\text{ is rejected};\\quad\\boxed{x=3}\\)"
             }
           ]
+        },
+        {
+          "id": "y11a-8-excel-loglaws-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following is equal to (log₂9)/(log₂3)?",
+          "options": [
+            "2",
+            "3",
+            "log₂3",
+            "log₂6"
+          ],
+          "answer": 0,
+          "hint": "Use change of base: log_a b/log_a c=log_c b.",
+          "steps": [
+            {
+              "explain": "Apply the change-of-base relation.",
+              "work": "log₂9/log₂3=log₃9"
+            },
+            {
+              "explain": "Recognize 9 as 3^{2}.",
+              "work": "log₃(3^{2})=2"
+            },
+            {
+              "explain": "Choose the equivalent value.",
+              "work": "2"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 88,
+            "sourceQuestion": 6
+          },
+          "keyPoints": [
+            {
+              "text": "Which of the following is equal to (log₂9)/(log₂3)?",
+              "note": "Use change of base: log_a b/log_a c=log_c b."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-loglaws-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following is equivalent to 4 + log₂x?",
+          "options": [
+            "log₂(2x)",
+            "log₂(16+x)",
+            "4 log₂(2x)",
+            "log₂(16x)"
+          ],
+          "answer": 3,
+          "hint": "Rewrite 4 as log₂16, then use the sum law to combine the logarithms.",
+          "steps": [
+            {
+              "explain": "Write the number 4 as a logarithm base 2.",
+              "work": "4=log₂(2^{4})=log₂16"
+            },
+            {
+              "explain": "Add logarithms with the same base using log a+log b=log(ab).",
+              "work": "log₂16+log₂x=log₂(16x)"
+            },
+            {
+              "explain": "Select the equivalent expression.",
+              "work": "log₂(16x)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 88,
+            "sourceQuestion": 9
+          },
+          "keyPoints": [
+            {
+              "text": "Which of the following is equivalent to 4 + log₂x?",
+              "note": "Rewrite 4 as log₂16, then use the sum law to combine the logarithms."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-loglaws-q15",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Let logₐ2 = x and logₐ3 = y. Find an expression for logₐ12 in terms of x and y.",
+          "options": [
+            "2x+y",
+            "x+2y",
+            "2xy",
+            "x+y"
+          ],
+          "answer": 0,
+          "hint": "Factor 12 as 3×2^{2}, then use the product and power laws.",
+          "steps": [
+            {
+              "explain": "Factor 12 into powers of 2 and 3.",
+              "work": "12=3×2^{2}"
+            },
+            {
+              "explain": "Apply the product and power laws.",
+              "work": "logₐ12=logₐ3+logₐ(2^{2})=y+2x"
+            },
+            {
+              "explain": "Write in terms of x and y.",
+              "work": "2x+y"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 89,
+            "sourceQuestion": 15
+          },
+          "keyPoints": [
+            {
+              "text": "Let logₐ2 = x and logₐ3 = y. Find an expression for logₐ12 in terms of x and y.",
+              "note": "Factor 12 as 3×2^{2}, then use the product and power laws."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-loglaws-q16",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given that log₂7 = 2.807 (to three decimal places), find log₂14.",
+          "options": [
+            "3.807",
+            "2.807",
+            "1.807",
+            "4.807"
+          ],
+          "answer": 0,
+          "hint": "Use 14=2×7 and the logarithm product law.",
+          "steps": [
+            {
+              "explain": "Factor 14.",
+              "work": "14=2×7"
+            },
+            {
+              "explain": "Use the product law.",
+              "work": "log₂14=log₂2+log₂7"
+            },
+            {
+              "explain": "Substitute the known values.",
+              "work": "1+2.807=3.807"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 89,
+            "sourceQuestion": 16
+          },
+          "keyPoints": [
+            {
+              "text": "Given that log₂7 = 2.807 (to three decimal places), find log₂14.",
+              "note": "Use 14=2×7 and the logarithm product law."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-loglaws-q17",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Given that logₐb = 2.8 and logₐc = 4.1, find logₐ(b/c).",
+          "options": [
+            "−1.3",
+            "1.3",
+            "6.9",
+            "−6.9"
+          ],
+          "answer": 0,
+          "hint": "Use the quotient law logₐ(b/c)=logₐb−logₐc.",
+          "steps": [
+            {
+              "explain": "Apply the quotient law.",
+              "work": "logₐ(b/c)=logₐb−logₐc"
+            },
+            {
+              "explain": "Substitute the given values.",
+              "work": "2.8−4.1=−1.3"
+            },
+            {
+              "explain": "State the result.",
+              "work": "−1.3"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 89,
+            "sourceQuestion": 17
+          },
+          "keyPoints": [
+            {
+              "text": "Given that logₐb = 2.8 and logₐc = 4.1, find logₐ(b/c).",
+              "note": "Use the quotient law logₐ(b/c)=logₐb−logₐc."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-loglaws-q19",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Given that logₐb = 2.75 and logₐc = 0.25, find the value of: (i) logₐ(b/c); (ii) logₐ(bc)^{2}.",
+          "hint": "Use the quotient rule for part (i). For part (ii), apply the power rule first, then the product rule.",
+          "steps": [],
+          "parts": [
+            {
+              "id": "y11a-8-excel-loglaws-q19i",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Given that logₐb = 2.75 and logₐc = 0.25, find logₐ(b/c).",
+              "options": [
+                "2.5",
+                "3.0",
+                "−2.5",
+                "−3.0"
+              ],
+              "answer": 0,
+              "hint": "Use the quotient law: subtract the logarithm of the denominator.",
+              "steps": [
+                {
+                  "explain": "Apply the quotient law.",
+                  "work": "logₐ(b/c)=logₐb−logₐc"
+                },
+                {
+                  "explain": "Substitute and subtract.",
+                  "work": "2.75−0.25=2.50"
+                },
+                {
+                  "explain": "State the value.",
+                  "work": "2.5"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "Given that logₐb = 2.75 and logₐc = 0.25, find logₐ(b/c).",
+                  "note": "Use the quotient law: subtract the logarithm of the denominator."
+                }
+              ]
+            },
+            {
+              "id": "y11a-8-excel-loglaws-q19ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Given that logₐb = 2.75 and logₐc = 0.25, find logₐ(bc)^{2}.",
+              "options": [
+                "6",
+                "3",
+                "9",
+                "12"
+              ],
+              "answer": 0,
+              "hint": "Interpret (bc)^{2} as the whole product raised to the second power. Use the power law and then the product law.",
+              "steps": [
+                {
+                  "explain": "Bring the outer exponent down.",
+                  "work": "logₐ((bc)^{2})=2 logₐ(bc)"
+                },
+                {
+                  "explain": "Expand the product logarithm.",
+                  "work": "2(logₐb+logₐc)"
+                },
+                {
+                  "explain": "Substitute the values.",
+                  "work": "2(2.75+0.25)=2(3)=6"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "Given that logₐb = 2.75 and logₐc = 0.25, find logₐ(bc)^{2}.",
+                  "note": "Interpret (bc)^{2} as the whole product raised to the second power. Use the power law and then the product law."
+                }
+              ]
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 89,
+            "sourceQuestion": 19
+          },
+          "keyPoints": [
+            {
+              "text": "Given that logₐb = 2.75 and logₐc = 0.25, find the value of: (i) logₐ(b/c); (ii) logₐ(bc)^{2}.",
+              "note": "Use the quotient rule for part (i). For part (ii), apply the power rule first, then the product rule."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-expln-q4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "It is given that ln a = ln b − ln c, where a, b, c > 0. Which statement is true?",
+          "options": [
+            "a=b−c",
+            "a=b/c",
+            "ln a=b/c",
+            "ln a=(ln b)/(ln c)"
+          ],
+          "answer": 1,
+          "hint": "Use the logarithm quotient law ln b−ln c=ln(b/c), then equate the positive arguments.",
+          "steps": [
+            {
+              "explain": "Apply the quotient law to the right side.",
+              "work": "ln b−ln c=ln(b/c)"
+            },
+            {
+              "explain": "Thus ln a=ln(b/c). Since ln is one-to-one for positive arguments, the arguments are equal.",
+              "work": "a=b/c"
+            },
+            {
+              "explain": "Choose the correct statement.",
+              "work": "a=b/c"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 92,
+            "sourceQuestion": 4
+          },
+          "keyPoints": [
+            {
+              "text": "It is given that ln a = ln b − ln c, where a, b, c > 0. Which statement is true?",
+              "note": "Use the logarithm quotient law ln b−ln c=ln(b/c), then equate the positive arguments."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-expln-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Let a=eˣ. Which expression is equal to logₑ(a^{2})?",
+          "options": [
+            "e^(2x)",
+            "e^(x^{2})",
+            "2x",
+            "x^{2}"
+          ],
+          "answer": 2,
+          "hint": "Substitute a=eˣ, then use the inverse relationship between ln and e raised to a power.",
+          "steps": [
+            {
+              "explain": "Substitute a=eˣ into the logarithm.",
+              "work": "logₑ(a^{2})=ln((eˣ)^{2})"
+            },
+            {
+              "explain": "Simplify the exponent.",
+              "work": "ln(e^(2x))"
+            },
+            {
+              "explain": "Use ln(e^u)=u.",
+              "work": "2x"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 92,
+            "sourceQuestion": 7
+          },
+          "keyPoints": [
+            {
+              "text": "Let a=eˣ. Which expression is equal to logₑ(a^{2})?",
+              "note": "Substitute a=eˣ, then use the inverse relationship between ln and e raised to a power."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-expln-q9",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Let f(x)=1+eˣ. Show that f(x)×f(−x)=f(x)+f(−x).",
+          "options": [
+            "Both sides equal 2+eˣ+e^{-}ˣ.",
+            "Both sides equal 1+eˣ+e^{-}ˣ.",
+            "The left side is always 1.",
+            "The right side is always 2."
+          ],
+          "answer": 0,
+          "hint": "Write f(−x)=1+e^{-}ˣ, expand the product, and compare with the sum.",
+          "steps": [
+            {
+              "explain": "Write each function value.",
+              "work": "f(x)=1+eˣ;  f(−x)=1+e^{-}ˣ"
+            },
+            {
+              "explain": "Expand the product.",
+              "work": "f(x)f(−x)=(1+eˣ)(1+e^{-}ˣ)=2+eˣ+e^{-}ˣ"
+            },
+            {
+              "explain": "Add the two function values.",
+              "work": "f(x)+f(−x)=2+eˣ+e^{-}ˣ"
+            },
+            {
+              "explain": "The two expressions are equal.",
+              "work": "f(x)f(−x)=f(x)+f(−x)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 92,
+            "sourceQuestion": 9
+          },
+          "keyPoints": [
+            {
+              "text": "Let f(x)=1+eˣ. Show that f(x)×f(−x)=f(x)+f(−x).",
+              "note": "Write f(−x)=1+e^{-}ˣ, expand the product, and compare with the sum."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y11a-8E",
+      "code": "8E",
+      "title": "Equations involving logarithms and indices",
+      "questions": [
+        {
+          "id": "y11a-8-excel-loglaws-q5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve log₄ x + log₄(x−12) = 3.",
+          "options": [
+            "x=16",
+            "x=−4",
+            "x=−4 and 16",
+            "x=12"
+          ],
+          "answer": 0,
+          "hint": "Combine the logs into one product. Remember each logarithm needs a positive argument, so x>12.",
+          "steps": [
+            {
+              "explain": "Use the product law for logarithms with the same base.",
+              "work": "log₄[x(x−12)]=3"
+            },
+            {
+              "explain": "Convert to exponential form.",
+              "work": "x(x−12)=4^{3}=64"
+            },
+            {
+              "explain": "Expand and solve the quadratic.",
+              "work": "x^{2}−12x−64=0=(x−16)(x+4)"
+            },
+            {
+              "explain": "The candidate roots are 16 and −4, but the domain requires x>12.",
+              "work": "x=16"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 88,
+            "sourceQuestion": 5
+          },
+          "keyPoints": [
+            {
+              "text": "Solve log₄ x + log₄(x−12) = 3.",
+              "note": "Combine the logs into one product. Remember each logarithm needs a positive argument, so x>12."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-loglaws-q7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve log₂5 + log₂(x−2) = 3.",
+          "options": [
+            "x=3.6",
+            "x=18",
+            "x=2.6",
+            "x=−3.6"
+          ],
+          "answer": 0,
+          "hint": "Combine the left side using the product law, convert to index form, and enforce x>2.",
+          "steps": [
+            {
+              "explain": "Combine the two logarithms.",
+              "work": "log₂[5(x−2)]=3"
+            },
+            {
+              "explain": "Convert to index form.",
+              "work": "5(x−2)=2^{3}=8"
+            },
+            {
+              "explain": "Solve the linear equation.",
+              "work": "5x−10=8  ⇒  5x=18  ⇒  x=18/5=3.6"
+            },
+            {
+              "explain": "Check the domain x−2>0. The solution 3.6 is valid.",
+              "work": "x=3.6"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 88,
+            "sourceQuestion": 7
+          },
+          "keyPoints": [
+            {
+              "text": "Solve log₂5 + log₂(x−2) = 3.",
+              "note": "Combine the left side using the product law, convert to index form, and enforce x>2."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-loglaws-q10",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is the solution to the equation log₂(x−1) = 8?",
+          "options": [
+            "4",
+            "17",
+            "65",
+            "257"
+          ],
+          "answer": 3,
+          "hint": "Convert to exponential form, then solve x−1=2^{8}.",
+          "steps": [
+            {
+              "explain": "Convert from logarithmic to index form.",
+              "work": "x−1=2^{8}"
+            },
+            {
+              "explain": "Evaluate the power.",
+              "work": "2^{8}=256"
+            },
+            {
+              "explain": "Solve for x.",
+              "work": "x=257"
+            },
+            {
+              "explain": "The argument x−1 is positive, so the value is in the domain.",
+              "work": "257"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 88,
+            "sourceQuestion": 10
+          },
+          "keyPoints": [
+            {
+              "text": "What is the solution to the equation log₂(x−1) = 8?",
+              "note": "Convert to exponential form, then solve x−1=2^{8}."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-loglaws-q12",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve log₂(3x−4) = 5.",
+          "options": [
+            "x=12",
+            "x=8",
+            "x=4",
+            "x=36"
+          ],
+          "answer": 0,
+          "hint": "Convert to exponential form, solve the linear equation, and check 3x−4>0.",
+          "steps": [
+            {
+              "explain": "Convert to index form.",
+              "work": "3x−4=2^{5}=32"
+            },
+            {
+              "explain": "Add 4, then divide by 3.",
+              "work": "3x=36  ⇒  x=12"
+            },
+            {
+              "explain": "Check the logarithm domain.",
+              "work": "3(12)−4=32>0"
+            },
+            {
+              "explain": "State the valid solution.",
+              "work": "x=12"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 88,
+            "sourceQuestion": 12
+          },
+          "keyPoints": [
+            {
+              "text": "Solve log₂(3x−4) = 5.",
+              "note": "Convert to exponential form, solve the linear equation, and check 3x−4>0."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-loglaws-q13",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve 2ˣ = 3. Express your answer correct to two decimal places.",
+          "options": [
+            "1.58",
+            "0.63",
+            "1.50",
+            "2.00"
+          ],
+          "answer": 0,
+          "hint": "Take logarithms of both sides and solve for x.",
+          "steps": [
+            {
+              "explain": "Take log base 2 of both sides.",
+              "work": "2ˣ=3  ⇒  x=log₂3"
+            },
+            {
+              "explain": "Use change of base to evaluate.",
+              "work": "x=ln3/ln2≈1.58496"
+            },
+            {
+              "explain": "Round to two decimal places.",
+              "work": "x≈1.58"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 88,
+            "sourceQuestion": 13
+          },
+          "keyPoints": [
+            {
+              "text": "Solve 2ˣ = 3. Express your answer correct to two decimal places.",
+              "note": "Take logarithms of both sides and solve for x."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-loglaws-q20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve 2 log₅3 = log₅x − log₅6.",
+          "options": [
+            "x=54",
+            "x=18",
+            "x=9",
+            "x=3"
+          ],
+          "answer": 0,
+          "hint": "Use the power law on the left and the quotient law on the right, then equate the positive arguments.",
+          "steps": [
+            {
+              "explain": "Use the power law and quotient law.",
+              "work": "2log₅3=log₅(3^{2});  log₅x−log₅6=log₅(x/6)"
+            },
+            {
+              "explain": "Both logarithms have base 5, so equate their arguments.",
+              "work": "9=x/6"
+            },
+            {
+              "explain": "Multiply by 6.",
+              "work": "x=54"
+            },
+            {
+              "explain": "Check x>0, as required by log₅x.",
+              "work": "54 is valid"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 89,
+            "sourceQuestion": 20
+          },
+          "keyPoints": [
+            {
+              "text": "Solve 2 log₅3 = log₅x − log₅6.",
+              "note": "Use the power law on the left and the quotient law on the right, then equate the positive arguments."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-expln-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve e^(2 ln x) = x + 6.",
+          "options": [
+            "x=3",
+            "x=−2",
+            "x=−2 and 3",
+            "x=6"
+          ],
+          "answer": 0,
+          "hint": "Use e^(ln x)=x, but remember ln x requires x>0.",
+          "steps": [
+            {
+              "explain": "Since e^(ln x)=x, simplify the left side.",
+              "work": "e^(2 ln x)=e^(ln x^{2})=x^{2}  (x>0)"
+            },
+            {
+              "explain": "Set the expressions equal.",
+              "work": "x^{2}=x+6"
+            },
+            {
+              "explain": "Factor and solve.",
+              "work": "x^{2}−x−6=0=(x−3)(x+2)"
+            },
+            {
+              "explain": "The logarithm requires x>0, so discard x=−2.",
+              "work": "x=3"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 92,
+            "sourceQuestion": 2
+          },
+          "keyPoints": [
+            {
+              "text": "Solve e^(2 ln x) = x + 6.",
+              "note": "Use e^(ln x)=x, but remember ln x requires x>0."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-expln-q10",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve ln(x+6) = 2 ln x.",
+          "options": [
+            "x=3",
+            "x=−2",
+            "x=−2 and 3",
+            "x=6"
+          ],
+          "answer": 0,
+          "hint": "The logarithms require x>0. Use 2lnx=ln(x^{2}), equate arguments and then check the domain.",
+          "steps": [
+            {
+              "explain": "The domain requires x>0. Combine the right side using the power law.",
+              "work": "2lnx=ln(x^{2})"
+            },
+            {
+              "explain": "Both sides are natural logarithms, so equate their positive arguments.",
+              "work": "x+6=x^{2}"
+            },
+            {
+              "explain": "Solve the quadratic.",
+              "work": "x^{2}−x−6=0=(x−3)(x+2)"
+            },
+            {
+              "explain": "Only x=3 satisfies x>0.",
+              "work": "x=3"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 92,
+            "sourceQuestion": 10
+          },
+          "keyPoints": [
+            {
+              "text": "Solve ln(x+6) = 2 ln x.",
+              "note": "The logarithms require x>0. Use 2lnx=ln(x^{2}), equate arguments and then check the domain."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-expln-q13",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Solve logₑx − 3/(logₑx) = 2.",
+          "options": [
+            "x=e^{3} or x=e^{-1}",
+            "x=e^{2} or x=e^{-3}",
+            "x=3 or x=−1",
+            "x=e^{3} only"
+          ],
+          "answer": 0,
+          "hint": "Let m=ln x, with m≠0 because it appears in a denominator. Solve the resulting quadratic.",
+          "steps": [
+            {
+              "explain": "Substitute m=ln x. Since m is in a denominator, m cannot be zero.",
+              "work": "m−3/m=2;  m≠0"
+            },
+            {
+              "explain": "Multiply through by m and rearrange.",
+              "work": "m^{2}−3=2m  ⇒  m^{2}−2m−3=0"
+            },
+            {
+              "explain": "Factor and solve.",
+              "work": "(m−3)(m+1)=0  ⇒  m=3 or m=−1"
+            },
+            {
+              "explain": "Return to x=e^m.",
+              "work": "\\(x=e^3\\) or \\(x=e^{-1}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 92,
+            "sourceQuestion": 13
+          },
+          "keyPoints": [
+            {
+              "text": "Solve logₑx − 3/(logₑx) = 2.",
+              "note": "Let m=ln x, with m≠0 because it appears in a denominator. Solve the resulting quadratic."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-expln-q14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the following equation for x: 2e^{2}ˣ − eˣ = 0.",
+          "options": [
+            "x=−ln2",
+            "x=ln2",
+            "x=0",
+            "no solution"
+          ],
+          "answer": 0,
+          "hint": "Let m=eˣ, so m>0. Factor the quadratic and discard the zero root.",
+          "steps": [
+            {
+              "explain": "Set m=eˣ. Exponentials are positive, so m>0.",
+              "work": "2m^{2}−m=0"
+            },
+            {
+              "explain": "Factor.",
+              "work": "m(2m−1)=0"
+            },
+            {
+              "explain": "m=0 is impossible. Therefore m=1/2.",
+              "work": "eˣ=1/2"
+            },
+            {
+              "explain": "Take natural logarithms.",
+              "work": "x=ln(1/2)=−ln2"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 92,
+            "sourceQuestion": 14
+          },
+          "keyPoints": [
+            {
+              "text": "Solve the following equation for x: 2e^{2}ˣ − eˣ = 0.",
+              "note": "Let m=eˣ, so m>0. Factor the quadratic and discard the zero root."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-expln-q16",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the following equation for x: e^{2}ˣ + 3eˣ − 10 = 0.",
+          "options": [
+            "x=ln2",
+            "x=ln5",
+            "x=2",
+            "no solution"
+          ],
+          "answer": 0,
+          "hint": "Set m=eˣ>0. Factor the quadratic in m, then keep the positive exponential value.",
+          "steps": [
+            {
+              "explain": "Let m=eˣ. Then e^{2}ˣ=m^{2}.",
+              "work": "m^{2}+3m−10=0"
+            },
+            {
+              "explain": "Factor.",
+              "work": "(m+5)(m−2)=0"
+            },
+            {
+              "explain": "The value m=eˣ must be positive, so reject m=−5.",
+              "work": "m=2"
+            },
+            {
+              "explain": "Take natural logarithms.",
+              "work": "x=ln2"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 92,
+            "sourceQuestion": 16
+          },
+          "keyPoints": [
+            {
+              "text": "Solve the following equation for x: e^{2}ˣ + 3eˣ − 10 = 0.",
+              "note": "Set m=eˣ>0. Factor the quadratic in m, then keep the positive exponential value."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-expln-q21",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve ln(7x−12) = 2 ln x.",
+          "options": [
+            "x=3 and x=4",
+            "x=3 only",
+            "x=4 only",
+            "x=−3 and 4"
+          ],
+          "answer": 0,
+          "hint": "Require x>0 and 7x−12>0. Then rewrite 2lnx as ln(x^{2}) and solve.",
+          "steps": [
+            {
+              "explain": "The domains require x>0 and 7x−12>0, so x>12/7. Rewrite the right side.",
+              "work": "ln(7x−12)=ln(x^{2})"
+            },
+            {
+              "explain": "Equate the positive arguments.",
+              "work": "7x−12=x^{2}"
+            },
+            {
+              "explain": "Solve the quadratic.",
+              "work": "x^{2}−7x+12=0=(x−3)(x−4)"
+            },
+            {
+              "explain": "Both 3 and 4 satisfy x>12/7.",
+              "work": "x=3 or x=4"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 92,
+            "sourceQuestion": 21
+          },
+          "keyPoints": [
+            {
+              "text": "Solve ln(7x−12) = 2 ln x.",
+              "note": "Require x>0 and 7x−12>0. Then rewrite 2lnx as ln(x^{2}) and solve."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-expln-q22",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the equation 2 ln x = ln(5+4x).",
+          "options": [
+            "x=5",
+            "x=−1",
+            "x=−1 and 5",
+            "x=4"
+          ],
+          "answer": 0,
+          "hint": "The domain requires x>0. Rewrite 2lnx as ln(x^{2}), equate arguments, and reject any non-positive root.",
+          "steps": [
+            {
+              "explain": "Since x>0 is required, use the power law.",
+              "work": "2lnx=ln(x^{2})"
+            },
+            {
+              "explain": "Equate the positive logarithm arguments.",
+              "work": "x^{2}=5+4x"
+            },
+            {
+              "explain": "Solve the quadratic.",
+              "work": "x^{2}−4x−5=0=(x−5)(x+1)"
+            },
+            {
+              "explain": "Only x=5 lies in the domain x>0.",
+              "work": "x=5"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 92,
+            "sourceQuestion": 22
+          },
+          "keyPoints": [
+            {
+              "text": "Solve the equation 2 ln x = ln(5+4x).",
+              "note": "The domain requires x>0. Rewrite 2lnx as ln(x^{2}), equate arguments, and reject any non-positive root."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-introlog-q7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of \\(x\\) for which \\(10^x=7\\). Give the answer to 4 decimal places.",
+          "options": [
+            "0.8451",
+            "0.8450",
+            "1.2041",
+            "7.0000"
+          ],
+          "answer": 0,
+          "hint": "Take logarithm base 10 of both sides, then round the result to four decimal places.",
+          "steps": [
+            {
+              "explain": "Take \\(\\log_{10}\\) of both sides to bring the exponent down.",
+              "work": "\\(x=\\log_{10}7\\)"
+            },
+            {
+              "explain": "Evaluate with a calculator.",
+              "work": "\\(x\\approx0.8450980\\ldots\\)"
+            },
+            {
+              "explain": "Round to four decimal places; the fifth decimal digit is 9, so round the fourth digit up.",
+              "work": "\\(x\\approx0.8451\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Find the value of \\(x\\) for which \\(10^x=7\\). Give the answer to 4 decimal places.",
+              "note": "Focus on this exact question instruction; connect it to the rule and calculation shown in the worked steps."
+            }
+          ],
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 86,
+            "sourceQuestion": 7
+          }
+        },
+        {
+          "id": "y11a-8-excel-introlog-q8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find \\(x\\) if \\(\\log_{9}x=4.5\\).",
+          "options": [
+            "19683",
+            "6561",
+            "81",
+            "9"
+          ],
+          "answer": 0,
+          "hint": "Convert to exponential form: x equals 9 raised to 4.5.",
+          "steps": [
+            {
+              "explain": "Convert from logarithmic to exponential form.",
+              "work": "\\(x=9^{4.5}\\)"
+            },
+            {
+              "explain": "Write \\(4.5=\\frac92\\) and evaluate: \\(9^{9/2}=(\\sqrt9)^9=3^9\\).",
+              "work": "\\(3^9=19683\\)"
+            },
+            {
+              "explain": "State the value.",
+              "work": "\\(x=19683\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Find \\(x\\) if \\(\\log_{9}x=4.5\\).",
+              "note": "Focus on this exact question instruction; connect it to the rule and calculation shown in the worked steps."
+            }
+          ],
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 86,
+            "sourceQuestion": 8
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y11a-8F",
+      "code": "8F",
+      "title": "Exponential and logarithmic graphs",
+      "questions": [
+        {
+          "id": "y11a-8-excel-expln-q5",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "The line y=mx is a tangent to the curve y=e^{2}ˣ at a point P.",
+          "hint": "A tangent has the same gradient and value as the curve at P. Differentiate the exponential, equate slopes, and use the shared point.",
+          "steps": [],
+          "parts": [
+            {
+              "id": "y11a-8-excel-expln-q5i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Sketch the line and the curve on one diagram.",
+              "options": [
+                "An increasing exponential through (0,1) and a straight line through the origin tangent to it at P.",
+                "A decreasing exponential and a horizontal line.",
+                "An increasing straight line through P and an exponential below it with no contact.",
+                "A decreasing straight line tangent at x=0."
+              ],
+              "answer": 0,
+              "hint": "The curve y=e^(2x) passes through (0,1). The line y=mx passes through the origin and just touches the curve at P.",
+              "steps": [
+                {
+                  "explain": "Use the basic shape of y=e^(2x): it is increasing, concave up, and passes through (0,1). The line y=mx passes through the origin.",
+                  "work": "y=e^(2x),  y=mx",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 390 260\" role=\"img\" aria-label=\"The exponential curve y=e^(2x) and its tangent line through the origin at P=(1/2,e). The common tangent slope is m=2e.\"><rect width=\"390\" height=\"260\" fill=\"white\"/><path d=\"M40 215 H360 M115 25 V230\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M55 207 C91 197 124 178 157 148 C204 105 248 63 341 32\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"4\"/><path d=\"M115 215 L341 34\" stroke=\"#f59e0b\" stroke-width=\"3\"/><circle cx=\"172\" cy=\"169\" r=\"5\" fill=\"#10b981\"/><text x=\"176\" y=\"164\" fill=\"#047857\">P(1/2,e)</text><text x=\"224\" y=\"109\" fill=\"#2563eb\">y=e^(2x)</text><text x=\"231\" y=\"145\" fill=\"#b45309\">y=mx</text><text x=\"365\" y=\"220\">x</text><text x=\"104\" y=\"20\">y</text><text x=\"117\" y=\"229\">0</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Because the line is tangent, it touches the curve at P with the same gradient there. Select the sketch that shows this single tangency.",
+                  "work": "the exponential and origin-line are tangent at P",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 390 260\" role=\"img\" aria-label=\"The exponential curve y=e^(2x) and its tangent line through the origin at P=(1/2,e). The common tangent slope is m=2e.\"><rect width=\"390\" height=\"260\" fill=\"white\"/><path d=\"M40 215 H360 M115 25 V230\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M55 207 C91 197 124 178 157 148 C204 105 248 63 341 32\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"4\"/><path d=\"M115 215 L341 34\" stroke=\"#f59e0b\" stroke-width=\"3\"/><circle cx=\"172\" cy=\"169\" r=\"5\" fill=\"#10b981\"/><text x=\"176\" y=\"164\" fill=\"#047857\">P(1/2,e)</text><text x=\"224\" y=\"109\" fill=\"#2563eb\">y=e^(2x)</text><text x=\"231\" y=\"145\" fill=\"#b45309\">y=mx</text><text x=\"365\" y=\"220\">x</text><text x=\"104\" y=\"20\">y</text><text x=\"117\" y=\"229\">0</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "Sketch the line and the curve on one diagram.",
+                  "note": "The curve y=e^(2x) passes through (0,1). The line y=mx passes through the origin and just touches the curve at P."
+                }
+              ]
+            },
+            {
+              "id": "y11a-8-excel-expln-q5ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the coordinates of P.",
+              "options": [
+                "(1/2,e)",
+                "(1,e^{2})",
+                "(0,1)",
+                "(1/2,2e)"
+              ],
+              "answer": 0,
+              "hint": "At tangency, the line and curve have equal y-values and equal gradients. Solve those two conditions.",
+              "steps": [
+                {
+                  "explain": "At P, the two equations share a y-value.",
+                  "work": "mx=e^(2x)"
+                },
+                {
+                  "explain": "The tangent gradient of the curve y=e^(2x) is 2e^(2x); the line gradient is m.",
+                  "work": "m=2e^(2x)"
+                },
+                {
+                  "explain": "Substitute m into the common-y equation.",
+                  "work": "2xe^(2x)=e^(2x)  ⇒  2x=1  ⇒  x=1/2"
+                },
+                {
+                  "explain": "Evaluate y on the curve.",
+                  "work": "y=e^(2·1/2)=e; hence P=(1/2,e)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "Find the coordinates of P.",
+                  "note": "At tangency, the line and curve have equal y-values and equal gradients. Solve those two conditions."
+                }
+              ]
+            },
+            {
+              "id": "y11a-8-excel-expln-q5iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the value of m.",
+              "options": [
+                "2e",
+                "e",
+                "1/e",
+                "e^{2}"
+              ],
+              "answer": 0,
+              "hint": "Use the slope of the tangent y=e^(2x) at x=1/2.",
+              "steps": [
+                {
+                  "explain": "Differentiate the exponential curve.",
+                  "work": "dy/dx=2e^(2x)"
+                },
+                {
+                  "explain": "Substitute x=1/2.",
+                  "work": "m=2e^(1)=2e"
+                },
+                {
+                  "explain": "This equals the line’s slope.",
+                  "work": "m=2e"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "Find the value of m.",
+                  "note": "Use the slope of the tangent y=e^(2x) at x=1/2."
+                }
+              ]
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 92,
+            "sourceQuestion": 5
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 390 260\" role=\"img\" aria-label=\"The exponential curve y=e^(2x) and its tangent line through the origin at P=(1/2,e). The common tangent slope is m=2e.\"><rect width=\"390\" height=\"260\" fill=\"white\"/><path d=\"M40 215 H360 M115 25 V230\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M55 207 C91 197 124 178 157 148 C204 105 248 63 341 32\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"4\"/><path d=\"M115 215 L341 34\" stroke=\"#f59e0b\" stroke-width=\"3\"/><circle cx=\"172\" cy=\"169\" r=\"5\" fill=\"#10b981\"/><text x=\"176\" y=\"164\" fill=\"#047857\">P(1/2,e)</text><text x=\"224\" y=\"109\" fill=\"#2563eb\">y=e^(2x)</text><text x=\"231\" y=\"145\" fill=\"#b45309\">y=mx</text><text x=\"365\" y=\"220\">x</text><text x=\"104\" y=\"20\">y</text><text x=\"117\" y=\"229\">0</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "The line y=mx is a tangent to the curve y=e^{2}ˣ at a point P.",
+              "note": "A tangent has the same gradient and value as the curve at P. Differentiate the exponential, equate slopes, and use the shared point."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-introlog-q5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which graph best represents \\(y=10^{-x}\\)?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 3,
+          "hint": "At x=0 the value is 1. As x increases, the exponential decreases toward 0 and never reaches the x-axis.",
+          "steps": [
+            {
+              "explain": "Substitute \\(x=0\\): \\(y=10^0=1\\), so the curve crosses the y-axis at 1.",
+              "work": "\\((0,1)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"70%\" viewBox=\"0 0 760 360\" role=\"img\" aria-label=\"Four graph options for y=10 to the negative x; the correct option D is a decreasing exponential through (0,1) that approaches the horizontal asymptote y=0.\"><rect width=\"100%\" height=\"100%\" fill=\"#fff\"/><rect x=\"13\" y=\"9\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"24\" y=\"29\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">A</text><path d=\"M60 37V144H356\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"51\" y=\"159\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"358\" y=\"148\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"50\" y=\"35\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M64 54 C92 83,152 124,342 143\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"387\" y=\"9\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"398\" y=\"29\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">B</text><path d=\"M434 37V144H730\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"425\" y=\"159\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"732\" y=\"148\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"424\" y=\"35\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M438 55 L716 143\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"13\" y=\"183\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"24\" y=\"203\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">C</text><path d=\"M60 211V318H356\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"51\" y=\"333\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"358\" y=\"322\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"50\" y=\"209\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M64 230 C130 247,211 288,342 317\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"387\" y=\"183\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"398\" y=\"203\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">D</text><path d=\"M434 211V318H730\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"425\" y=\"333\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"732\" y=\"322\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"424\" y=\"209\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M438 227 C453 276,488 308,716 316\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/></svg>"
+              }
+            },
+            {
+              "explain": "Because the exponent is negative, increasing x makes the value smaller: \\(10^{-1}=0.1\\), \\(10^{-2}=0.01\\).",
+              "work": "The curve decreases and approaches y=0 from above.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"70%\" viewBox=\"0 0 760 360\" role=\"img\" aria-label=\"Four candidate graphs; the highlighted correct graph has exponential decay towards the x-axis.\"><rect width=\"100%\" height=\"100%\" fill=\"#fff\"/><rect x=\"13\" y=\"9\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"24\" y=\"29\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">A</text><path d=\"M60 37V144H356\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"51\" y=\"159\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"358\" y=\"148\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"50\" y=\"35\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M64 54 C92 83,152 124,342 143\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"387\" y=\"9\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"398\" y=\"29\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">B</text><path d=\"M434 37V144H730\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"425\" y=\"159\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"732\" y=\"148\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"424\" y=\"35\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M438 55 L716 143\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"13\" y=\"183\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"24\" y=\"203\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">C</text><path d=\"M60 211V318H356\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"51\" y=\"333\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"358\" y=\"322\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"50\" y=\"209\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M64 230 C130 247,211 288,342 317\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"387\" y=\"183\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"398\" y=\"203\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">D</text><path d=\"M434 211V318H730\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"425\" y=\"333\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"732\" y=\"322\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"424\" y=\"209\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M438 227 C453 276,488 308,716 316\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/></svg>"
+              }
+            },
+            {
+              "explain": "The graph must be curved (not a straight line), stay above the x-axis, and approach y=0. This matches D.",
+              "work": "Answer D"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Which graph best represents \\(y=10^{-x}\\)?",
+              "note": "Focus on this exact question instruction; connect it to the rule and calculation shown in the worked steps."
+            }
+          ],
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 86,
+            "sourceQuestion": 5
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"70%\" viewBox=\"0 0 760 360\" role=\"img\" aria-label=\"Four candidate graphs for y=10 to the negative x, labelled A to D. D shows a decreasing exponential through (0,1) approaching the x-axis.\"><rect width=\"100%\" height=\"100%\" fill=\"#fff\"/><rect x=\"13\" y=\"9\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"24\" y=\"29\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">A</text><path d=\"M60 37V144H356\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"51\" y=\"159\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"358\" y=\"148\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"50\" y=\"35\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M64 54 C92 83,152 124,342 143\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"387\" y=\"9\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"398\" y=\"29\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">B</text><path d=\"M434 37V144H730\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"425\" y=\"159\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"732\" y=\"148\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"424\" y=\"35\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M438 55 L716 143\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"13\" y=\"183\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"24\" y=\"203\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">C</text><path d=\"M60 211V318H356\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"51\" y=\"333\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"358\" y=\"322\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"50\" y=\"209\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M64 230 C130 247,211 288,342 317\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"387\" y=\"183\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"398\" y=\"203\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">D</text><path d=\"M434 211V318H730\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"425\" y=\"333\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"732\" y=\"322\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"424\" y=\"209\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M438 227 C453 276,488 308,716 316\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/></svg>"
+          }
+        },
+        {
+          "id": "y11a-8-excel-introlog-q6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which is the graph of \\(y=\\log_{2}x\\)?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 0,
+          "hint": "A logarithmic graph has a vertical asymptote at x=0; check the points (1,0), (2,1), and (8,3).",
+          "steps": [
+            {
+              "explain": "Use \\(\\log_2 1=0\\), so the graph passes through (1,0). It is only defined for x>0 and approaches the y-axis without touching it.",
+              "work": "vertical asymptote x=0; point (1,0)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"70%\" viewBox=\"0 0 760 360\" role=\"img\" aria-label=\"Four candidate logarithm graphs. The correct option A crosses (1,0), increases, and has vertical asymptote x=0.\"><rect width=\"100%\" height=\"100%\" fill=\"#fff\"/><rect x=\"13\" y=\"9\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"24\" y=\"29\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">A</text><path d=\"M60 37V144H356\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"51\" y=\"159\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"358\" y=\"148\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"50\" y=\"35\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M78 141v6\" stroke=\"#64748b\"/><text x=\"74\" y=\"160\" font-size=\"9\" fill=\"#475569\">1</text><path d=\"M107 141v6\" stroke=\"#64748b\"/><text x=\"103\" y=\"160\" font-size=\"9\" fill=\"#475569\">2</text><path d=\"M192 141v6\" stroke=\"#64748b\"/><text x=\"188\" y=\"160\" font-size=\"9\" fill=\"#475569\">5</text><path d=\"M334 141v6\" stroke=\"#64748b\"/><text x=\"330\" y=\"160\" font-size=\"9\" fill=\"#475569\">8</text><circle cx=\"78\" cy=\"144\" r=\"3.4\" fill=\"#f59e0b\"/><circle cx=\"107\" cy=\"122\" r=\"3.4\" fill=\"#f59e0b\"/><path d=\"M78 146 C86 120,106 102,334 60\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"387\" y=\"9\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"398\" y=\"29\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">B</text><path d=\"M434 37V144H730\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"425\" y=\"159\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"732\" y=\"148\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"424\" y=\"35\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M452 141v6\" stroke=\"#64748b\"/><text x=\"448\" y=\"160\" font-size=\"9\" fill=\"#475569\">1</text><path d=\"M481 141v6\" stroke=\"#64748b\"/><text x=\"477\" y=\"160\" font-size=\"9\" fill=\"#475569\">2</text><path d=\"M566 141v6\" stroke=\"#64748b\"/><text x=\"562\" y=\"160\" font-size=\"9\" fill=\"#475569\">5</text><path d=\"M708 141v6\" stroke=\"#64748b\"/><text x=\"704\" y=\"160\" font-size=\"9\" fill=\"#475569\">8</text><path d=\"M452 146 C472 129,511 118,708 84\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"13\" y=\"183\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"24\" y=\"203\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">C</text><path d=\"M60 211V318H356\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"51\" y=\"333\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"358\" y=\"322\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"50\" y=\"209\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M78 315v6\" stroke=\"#64748b\"/><text x=\"74\" y=\"334\" font-size=\"9\" fill=\"#475569\">1</text><path d=\"M107 315v6\" stroke=\"#64748b\"/><text x=\"103\" y=\"334\" font-size=\"9\" fill=\"#475569\">2</text><path d=\"M192 315v6\" stroke=\"#64748b\"/><text x=\"188\" y=\"334\" font-size=\"9\" fill=\"#475569\">5</text><path d=\"M334 315v6\" stroke=\"#64748b\"/><text x=\"330\" y=\"334\" font-size=\"9\" fill=\"#475569\">8</text><path d=\"M78 320 C96 311,153 294,334 235\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"387\" y=\"183\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"398\" y=\"203\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">D</text><path d=\"M434 211V318H730\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"425\" y=\"333\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"732\" y=\"322\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"424\" y=\"209\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M452 315v6\" stroke=\"#64748b\"/><text x=\"448\" y=\"334\" font-size=\"9\" fill=\"#475569\">1</text><path d=\"M481 315v6\" stroke=\"#64748b\"/><text x=\"477\" y=\"334\" font-size=\"9\" fill=\"#475569\">2</text><path d=\"M566 315v6\" stroke=\"#64748b\"/><text x=\"562\" y=\"334\" font-size=\"9\" fill=\"#475569\">5</text><path d=\"M708 315v6\" stroke=\"#64748b\"/><text x=\"704\" y=\"334\" font-size=\"9\" fill=\"#475569\">8</text><path d=\"M493 320 C506 286,555 258,708 225\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/></svg>"
+              }
+            },
+            {
+              "explain": "Check two more values: \\(\\log_2 2=1\\) and \\(\\log_2 8=3\\). The curve rises slowly as x increases.",
+              "work": "(2,1) and (8,3)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"70%\" viewBox=\"0 0 760 360\" role=\"img\" aria-label=\"Graph options with key points (1,0), (2,1), and (8,3) highlighted on option A.\"><rect width=\"100%\" height=\"100%\" fill=\"#fff\"/><rect x=\"13\" y=\"9\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"24\" y=\"29\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">A</text><path d=\"M60 37V144H356\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"51\" y=\"159\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"358\" y=\"148\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"50\" y=\"35\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M78 141v6\" stroke=\"#64748b\"/><text x=\"74\" y=\"160\" font-size=\"9\" fill=\"#475569\">1</text><path d=\"M107 141v6\" stroke=\"#64748b\"/><text x=\"103\" y=\"160\" font-size=\"9\" fill=\"#475569\">2</text><path d=\"M192 141v6\" stroke=\"#64748b\"/><text x=\"188\" y=\"160\" font-size=\"9\" fill=\"#475569\">5</text><path d=\"M334 141v6\" stroke=\"#64748b\"/><text x=\"330\" y=\"160\" font-size=\"9\" fill=\"#475569\">8</text><circle cx=\"78\" cy=\"144\" r=\"3.4\" fill=\"#f59e0b\"/><circle cx=\"107\" cy=\"122\" r=\"3.4\" fill=\"#f59e0b\"/><path d=\"M78 146 C86 120,106 102,334 60\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"387\" y=\"9\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"398\" y=\"29\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">B</text><path d=\"M434 37V144H730\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"425\" y=\"159\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"732\" y=\"148\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"424\" y=\"35\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M452 141v6\" stroke=\"#64748b\"/><text x=\"448\" y=\"160\" font-size=\"9\" fill=\"#475569\">1</text><path d=\"M481 141v6\" stroke=\"#64748b\"/><text x=\"477\" y=\"160\" font-size=\"9\" fill=\"#475569\">2</text><path d=\"M566 141v6\" stroke=\"#64748b\"/><text x=\"562\" y=\"160\" font-size=\"9\" fill=\"#475569\">5</text><path d=\"M708 141v6\" stroke=\"#64748b\"/><text x=\"704\" y=\"160\" font-size=\"9\" fill=\"#475569\">8</text><path d=\"M452 146 C472 129,511 118,708 84\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"13\" y=\"183\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"24\" y=\"203\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">C</text><path d=\"M60 211V318H356\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"51\" y=\"333\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"358\" y=\"322\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"50\" y=\"209\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M78 315v6\" stroke=\"#64748b\"/><text x=\"74\" y=\"334\" font-size=\"9\" fill=\"#475569\">1</text><path d=\"M107 315v6\" stroke=\"#64748b\"/><text x=\"103\" y=\"334\" font-size=\"9\" fill=\"#475569\">2</text><path d=\"M192 315v6\" stroke=\"#64748b\"/><text x=\"188\" y=\"334\" font-size=\"9\" fill=\"#475569\">5</text><path d=\"M334 315v6\" stroke=\"#64748b\"/><text x=\"330\" y=\"334\" font-size=\"9\" fill=\"#475569\">8</text><path d=\"M78 320 C96 311,153 294,334 235\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"387\" y=\"183\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"398\" y=\"203\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">D</text><path d=\"M434 211V318H730\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"425\" y=\"333\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"732\" y=\"322\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"424\" y=\"209\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M452 315v6\" stroke=\"#64748b\"/><text x=\"448\" y=\"334\" font-size=\"9\" fill=\"#475569\">1</text><path d=\"M481 315v6\" stroke=\"#64748b\"/><text x=\"477\" y=\"334\" font-size=\"9\" fill=\"#475569\">2</text><path d=\"M566 315v6\" stroke=\"#64748b\"/><text x=\"562\" y=\"334\" font-size=\"9\" fill=\"#475569\">5</text><path d=\"M708 315v6\" stroke=\"#64748b\"/><text x=\"704\" y=\"334\" font-size=\"9\" fill=\"#475569\">8</text><path d=\"M493 320 C506 286,555 258,708 225\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/></svg>"
+              }
+            },
+            {
+              "explain": "Only graph A has the correct intercept and growth through these points.",
+              "work": "Answer A"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Which is the graph of \\(y=\\log_{2}x\\)?",
+              "note": "Focus on this exact question instruction; connect it to the rule and calculation shown in the worked steps."
+            }
+          ],
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 86,
+            "sourceQuestion": 6
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"70%\" viewBox=\"0 0 760 360\" role=\"img\" aria-label=\"Four candidate graphs for y=log base 2 of x. Option A has vertical asymptote x=0 and passes through (1,0), (2,1), and (8,3).\"><rect width=\"100%\" height=\"100%\" fill=\"#fff\"/><rect x=\"13\" y=\"9\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"24\" y=\"29\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">A</text><path d=\"M60 37V144H356\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"51\" y=\"159\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"358\" y=\"148\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"50\" y=\"35\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M78 141v6\" stroke=\"#64748b\"/><text x=\"74\" y=\"160\" font-size=\"9\" fill=\"#475569\">1</text><path d=\"M107 141v6\" stroke=\"#64748b\"/><text x=\"103\" y=\"160\" font-size=\"9\" fill=\"#475569\">2</text><path d=\"M192 141v6\" stroke=\"#64748b\"/><text x=\"188\" y=\"160\" font-size=\"9\" fill=\"#475569\">5</text><path d=\"M334 141v6\" stroke=\"#64748b\"/><text x=\"330\" y=\"160\" font-size=\"9\" fill=\"#475569\">8</text><circle cx=\"78\" cy=\"144\" r=\"3.4\" fill=\"#f59e0b\"/><circle cx=\"107\" cy=\"122\" r=\"3.4\" fill=\"#f59e0b\"/><path d=\"M78 146 C86 120,106 102,334 60\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"387\" y=\"9\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"398\" y=\"29\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">B</text><path d=\"M434 37V144H730\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"425\" y=\"159\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"732\" y=\"148\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"424\" y=\"35\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M452 141v6\" stroke=\"#64748b\"/><text x=\"448\" y=\"160\" font-size=\"9\" fill=\"#475569\">1</text><path d=\"M481 141v6\" stroke=\"#64748b\"/><text x=\"477\" y=\"160\" font-size=\"9\" fill=\"#475569\">2</text><path d=\"M566 141v6\" stroke=\"#64748b\"/><text x=\"562\" y=\"160\" font-size=\"9\" fill=\"#475569\">5</text><path d=\"M708 141v6\" stroke=\"#64748b\"/><text x=\"704\" y=\"160\" font-size=\"9\" fill=\"#475569\">8</text><path d=\"M452 146 C472 129,511 118,708 84\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"13\" y=\"183\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"24\" y=\"203\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">C</text><path d=\"M60 211V318H356\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"51\" y=\"333\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"358\" y=\"322\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"50\" y=\"209\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M78 315v6\" stroke=\"#64748b\"/><text x=\"74\" y=\"334\" font-size=\"9\" fill=\"#475569\">1</text><path d=\"M107 315v6\" stroke=\"#64748b\"/><text x=\"103\" y=\"334\" font-size=\"9\" fill=\"#475569\">2</text><path d=\"M192 315v6\" stroke=\"#64748b\"/><text x=\"188\" y=\"334\" font-size=\"9\" fill=\"#475569\">5</text><path d=\"M334 315v6\" stroke=\"#64748b\"/><text x=\"330\" y=\"334\" font-size=\"9\" fill=\"#475569\">8</text><path d=\"M78 320 C96 311,153 294,334 235\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"387\" y=\"183\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"398\" y=\"203\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">D</text><path d=\"M434 211V318H730\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"425\" y=\"333\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"732\" y=\"322\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"424\" y=\"209\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M452 315v6\" stroke=\"#64748b\"/><text x=\"448\" y=\"334\" font-size=\"9\" fill=\"#475569\">1</text><path d=\"M481 315v6\" stroke=\"#64748b\"/><text x=\"477\" y=\"334\" font-size=\"9\" fill=\"#475569\">2</text><path d=\"M566 315v6\" stroke=\"#64748b\"/><text x=\"562\" y=\"334\" font-size=\"9\" fill=\"#475569\">5</text><path d=\"M708 315v6\" stroke=\"#64748b\"/><text x=\"704\" y=\"334\" font-size=\"9\" fill=\"#475569\">8</text><path d=\"M493 320 C506 286,555 258,708 225\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/></svg>"
+          }
+        },
+        {
+          "id": "y11a-8-excel-introlog-q9",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which of the following graphs best represents the equation \\(y=a^x\\), where \\(a\\) is a positive number greater than 1?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 3,
+          "hint": "An exponential with base greater than 1 is increasing, concave up, and passes through (0,1). It is not a straight line.",
+          "steps": [
+            {
+              "explain": "At \\(x=0\\), \\(a^0=1\\), so the graph must pass through (0,1).",
+              "work": "\\((0,1)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"70%\" viewBox=\"0 0 760 360\" role=\"img\" aria-label=\"Four candidate graph types. Option D is exponential: it passes (0,1), rises, and curves upward.\"><rect width=\"100%\" height=\"100%\" fill=\"#fff\"/><rect x=\"13\" y=\"9\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"24\" y=\"29\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">A</text><path d=\"M60 37V144H356\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"51\" y=\"159\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"358\" y=\"148\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"50\" y=\"35\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M60 144 L342 48\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"387\" y=\"9\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"398\" y=\"29\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">B</text><path d=\"M434 37V144H730\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"425\" y=\"159\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"732\" y=\"148\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"424\" y=\"35\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M434 86 L716 47\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"13\" y=\"183\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"24\" y=\"203\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">C</text><path d=\"M60 211V318H356\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"51\" y=\"333\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"358\" y=\"322\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"50\" y=\"209\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M60 318 Q190 325 342 224\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"387\" y=\"183\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"398\" y=\"203\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">D</text><path d=\"M434 211V318H730\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"425\" y=\"333\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"732\" y=\"322\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"424\" y=\"209\" font-size=\"11\" fill=\"#334155\">y</text><circle cx=\"434\" cy=\"304\" r=\"3.5\" fill=\"#f59e0b\"/><path d=\"M434 304 C509 308,624 297,716 218\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/></svg>"
+              }
+            },
+            {
+              "explain": "Because \\(a>1\\), increasing x makes \\(a^x\\) increase. The curve is concave up, unlike a straight line.",
+              "work": "increasing exponential; concave up",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"70%\" viewBox=\"0 0 760 360\" role=\"img\" aria-label=\"Option D has the increasing concave-up shape of an exponential with base greater than one.\"><rect width=\"100%\" height=\"100%\" fill=\"#fff\"/><rect x=\"13\" y=\"9\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"24\" y=\"29\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">A</text><path d=\"M60 37V144H356\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"51\" y=\"159\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"358\" y=\"148\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"50\" y=\"35\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M60 144 L342 48\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"387\" y=\"9\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"398\" y=\"29\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">B</text><path d=\"M434 37V144H730\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"425\" y=\"159\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"732\" y=\"148\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"424\" y=\"35\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M434 86 L716 47\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"13\" y=\"183\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"24\" y=\"203\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">C</text><path d=\"M60 211V318H356\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"51\" y=\"333\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"358\" y=\"322\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"50\" y=\"209\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M60 318 Q190 325 342 224\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"387\" y=\"183\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"398\" y=\"203\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">D</text><path d=\"M434 211V318H730\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"425\" y=\"333\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"732\" y=\"322\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"424\" y=\"209\" font-size=\"11\" fill=\"#334155\">y</text><circle cx=\"434\" cy=\"304\" r=\"3.5\" fill=\"#f59e0b\"/><path d=\"M434 304 C509 308,624 297,716 218\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/></svg>"
+              }
+            },
+            {
+              "explain": "The graph matching both conditions is D.",
+              "work": "Answer D"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Which of the following graphs best represents the equation \\(y=a^x\\), where \\(a\\) is a positive number greater than 1?",
+              "note": "Focus on this exact question instruction; connect it to the rule and calculation shown in the worked steps."
+            }
+          ],
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 86,
+            "sourceQuestion": 9
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"70%\" viewBox=\"0 0 760 360\" role=\"img\" aria-label=\"Four options for y=a^x where a>1. Option D is the rising concave-up exponential through (0,1).\"><rect width=\"100%\" height=\"100%\" fill=\"#fff\"/><rect x=\"13\" y=\"9\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"24\" y=\"29\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">A</text><path d=\"M60 37V144H356\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"51\" y=\"159\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"358\" y=\"148\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"50\" y=\"35\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M60 144 L342 48\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"387\" y=\"9\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"398\" y=\"29\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">B</text><path d=\"M434 37V144H730\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"425\" y=\"159\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"732\" y=\"148\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"424\" y=\"35\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M434 86 L716 47\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"13\" y=\"183\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"24\" y=\"203\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">C</text><path d=\"M60 211V318H356\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"51\" y=\"333\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"358\" y=\"322\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"50\" y=\"209\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M60 318 Q190 325 342 224\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"387\" y=\"183\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"398\" y=\"203\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">D</text><path d=\"M434 211V318H730\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"425\" y=\"333\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"732\" y=\"322\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"424\" y=\"209\" font-size=\"11\" fill=\"#334155\">y</text><circle cx=\"434\" cy=\"304\" r=\"3.5\" fill=\"#f59e0b\"/><path d=\"M434 304 C509 308,624 297,716 218\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/></svg>"
+          }
+        },
+        {
+          "id": "y11a-8-excel-introlog-q10",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which graph best represents \\(y=3^x\\)?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 3,
+          "hint": "Check that the graph passes through (0,1), then use x=1 and x=2 to get points (1,3) and (2,9).",
+          "steps": [
+            {
+              "explain": "An exponential graph is curved, passes through \\( (0,1)\\), and increases because the base 3 is greater than 1. This rules out A and C.",
+              "work": "\\(3^0=1\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"70%\" viewBox=\"0 0 760 360\" role=\"img\" aria-label=\"Four graph choices for y=3^x; option D is an increasing exponential through (0,1).\"><rect width=\"100%\" height=\"100%\" fill=\"#fff\"/><rect x=\"13\" y=\"9\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"24\" y=\"29\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">A</text><path d=\"M60 37V144H356\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"51\" y=\"159\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"358\" y=\"148\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"50\" y=\"35\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M60 144 L342 45\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"387\" y=\"9\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"398\" y=\"29\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">B</text><path d=\"M434 37V144H730\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"425\" y=\"159\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"732\" y=\"148\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"424\" y=\"35\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M436 52 C464 96,535 134,716 142\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"13\" y=\"183\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"24\" y=\"203\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">C</text><path d=\"M60 211V318H356\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"51\" y=\"333\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"358\" y=\"322\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"50\" y=\"209\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M63 254 L342 316\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"387\" y=\"183\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"398\" y=\"203\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">D</text><path d=\"M434 211V318H730\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"425\" y=\"333\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"732\" y=\"322\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"424\" y=\"209\" font-size=\"11\" fill=\"#334155\">y</text><circle cx=\"529\" cy=\"286\" r=\"3.4\" fill=\"#f59e0b\"/><text x=\"534\" y=\"281\" font-size=\"9\" fill=\"#92400e\">3</text><circle cx=\"624\" cy=\"286\" r=\"3.4\" fill=\"#f59e0b\"/><text x=\"629\" y=\"281\" font-size=\"9\" fill=\"#92400e\">9</text><path d=\"M434 300 C508 306,621 295,716 214\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/></svg>"
+              }
+            },
+            {
+              "explain": "Calculate two points to distinguish the exponential options.",
+              "work": "\\(x=1\\Rightarrow y=3;\\quad x=2\\Rightarrow y=9\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"70%\" viewBox=\"0 0 760 360\" role=\"img\" aria-label=\"Option D is marked with the values y=3 at x=1 and y=9 at x=2.\"><rect width=\"100%\" height=\"100%\" fill=\"#fff\"/><rect x=\"13\" y=\"9\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"24\" y=\"29\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">A</text><path d=\"M60 37V144H356\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"51\" y=\"159\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"358\" y=\"148\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"50\" y=\"35\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M60 144 L342 45\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"387\" y=\"9\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"398\" y=\"29\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">B</text><path d=\"M434 37V144H730\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"425\" y=\"159\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"732\" y=\"148\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"424\" y=\"35\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M436 52 C464 96,535 134,716 142\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"13\" y=\"183\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"24\" y=\"203\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">C</text><path d=\"M60 211V318H356\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"51\" y=\"333\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"358\" y=\"322\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"50\" y=\"209\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M63 254 L342 316\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"387\" y=\"183\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"398\" y=\"203\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">D</text><path d=\"M434 211V318H730\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"425\" y=\"333\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"732\" y=\"322\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"424\" y=\"209\" font-size=\"11\" fill=\"#334155\">y</text><circle cx=\"529\" cy=\"286\" r=\"3.4\" fill=\"#f59e0b\"/><text x=\"534\" y=\"281\" font-size=\"9\" fill=\"#92400e\">3</text><circle cx=\"624\" cy=\"286\" r=\"3.4\" fill=\"#f59e0b\"/><text x=\"629\" y=\"281\" font-size=\"9\" fill=\"#92400e\">9</text><path d=\"M434 300 C508 306,621 295,716 214\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/></svg>"
+              }
+            },
+            {
+              "explain": "The increasing exponential curve with these values is graph D.",
+              "work": "Answer D"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Which graph best represents \\(y=3^x\\)?",
+              "note": "Focus on this exact question instruction; connect it to the rule and calculation shown in the worked steps."
+            }
+          ],
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 86,
+            "sourceQuestion": 10
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"70%\" viewBox=\"0 0 760 360\" role=\"img\" aria-label=\"Four candidate graphs for y=3^x, with option D increasing exponentially through (0,1), (1,3), and (2,9).\"><rect width=\"100%\" height=\"100%\" fill=\"#fff\"/><rect x=\"13\" y=\"9\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"24\" y=\"29\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">A</text><path d=\"M60 37V144H356\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"51\" y=\"159\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"358\" y=\"148\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"50\" y=\"35\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M60 144 L342 45\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"387\" y=\"9\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"398\" y=\"29\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">B</text><path d=\"M434 37V144H730\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"425\" y=\"159\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"732\" y=\"148\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"424\" y=\"35\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M436 52 C464 96,535 134,716 142\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"13\" y=\"183\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"24\" y=\"203\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">C</text><path d=\"M60 211V318H356\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"51\" y=\"333\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"358\" y=\"322\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"50\" y=\"209\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M63 254 L342 316\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"387\" y=\"183\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"398\" y=\"203\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">D</text><path d=\"M434 211V318H730\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"425\" y=\"333\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"732\" y=\"322\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"424\" y=\"209\" font-size=\"11\" fill=\"#334155\">y</text><circle cx=\"529\" cy=\"286\" r=\"3.4\" fill=\"#f59e0b\"/><text x=\"534\" y=\"281\" font-size=\"9\" fill=\"#92400e\">3</text><circle cx=\"624\" cy=\"286\" r=\"3.4\" fill=\"#f59e0b\"/><text x=\"629\" y=\"281\" font-size=\"9\" fill=\"#92400e\">9</text><path d=\"M434 300 C508 306,621 295,716 214\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/></svg>"
+          }
         }
       ]
     },
@@ -5087,6 +7223,428 @@
             {
               "explain": "As x tends to negative infinity, the exponential tends to zero, so f approaches 4 without reaching it; as x increases, f decreases without bound.",
               "work": "\\(f(x)\\in\\boxed{(-\\infty,4)}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-loglaws-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "On the decibel scale, the loudness L of a sound of intensity S is given by L=10 log₁₀(S/S₀), where S₀ is a reference intensity used for comparisons. How much louder is a sound of 47 decibels than a sound of 27 decibels?",
+          "options": [
+            "2 times",
+            "20 times",
+            "100 times",
+            "200 times"
+          ],
+          "answer": 2,
+          "hint": "Subtract the two decibel equations. The 20-decibel difference equals 10 log₁₀ of the intensity ratio.",
+          "steps": [
+            {
+              "explain": "Let S₁ be the 47 dB sound and S₂ the 27 dB sound. Subtract the two formulae so the reference S₀ cancels.",
+              "work": "47−27=10 log₁₀(S₁/S₂)"
+            },
+            {
+              "explain": "Divide by 10.",
+              "work": "2=log₁₀(S₁/S₂)"
+            },
+            {
+              "explain": "Convert from logarithmic to index form.",
+              "work": "S₁/S₂=10^{2}=100"
+            },
+            {
+              "explain": "The 47 dB sound has 100 times the intensity.",
+              "work": "100 times"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 88,
+            "sourceQuestion": 1
+          },
+          "keyPoints": [
+            {
+              "text": "On the decibel scale, the loudness L of a sound of intensity S is given by L=10 log₁₀(S/S₀), where S₀ is a reference intensity used for comparisons. How much louder is a sound of 47 decibels than a sound of 27 decibels?",
+              "note": "Subtract the two decibel equations. The 20-decibel difference equals 10 log₁₀ of the intensity ratio."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-loglaws-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "On the Richter scale, the magnitude R of an earthquake of intensity I is given by the formula R=log₁₀(I/I₀), where I₀ is a reference intensity used for comparisons. The 1989 Newcastle Earthquake measured a magnitude of 5.6 on the Richter scale. Which is the closest to I/I₀, the number of times the earthquake is more intense than the reference intensity?",
+          "options": [
+            "400 times",
+            "4000 times",
+            "40 000 times",
+            "400 000 times"
+          ],
+          "answer": 3,
+          "hint": "Undo the common logarithm: I/I₀=10^R. Estimate 10^5.6.",
+          "steps": [
+            {
+              "explain": "Write the Richter formula using R=5.6.",
+              "work": "5.6=log₁₀(I/I₀)"
+            },
+            {
+              "explain": "Convert to index form.",
+              "work": "I/I₀=10^5.6"
+            },
+            {
+              "explain": "Evaluate the power to estimate the ratio.",
+              "work": "10^5.6≈398 107"
+            },
+            {
+              "explain": "Choose the closest listed value.",
+              "work": "400 000 times"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 88,
+            "sourceQuestion": 2
+          },
+          "keyPoints": [
+            {
+              "text": "On the Richter scale, the magnitude R of an earthquake of intensity I is given by the formula R=log₁₀(I/I₀), where I₀ is a reference intensity used for comparisons. The 1989 Newcastle Earthquake measured a magnitude of 5.6 on the Richter scale. Which is the closest to I/I₀, the number of times the earthquake is more intense than the reference intensity?",
+              "note": "Undo the common logarithm: I/I₀=10^R. Estimate 10^5.6."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-loglaws-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The pH value of a solution is given by the formula pH=−log₁₀[H⁺], where [H⁺] is the concentration of hydrogen ions in moles per litre. Tylah tested a quantity of apple juice and determined it had a H⁺=3×10^{-4}. Sean tested a quantity of ammonia and determined it had a H⁺=1.3×10^{-9}. Which of these is closest to the difference in their pH?",
+          "options": [
+            "1.7",
+            "4.3",
+            "4.8",
+            "5.4"
+          ],
+          "answer": 3,
+          "hint": "Find each pH using the stated negative logarithm, then subtract the smaller from the larger.",
+          "steps": [
+            {
+              "explain": "Calculate the pH of the apple juice.",
+              "work": "pH=−log₁₀(3×10^{-4})≈3.5229"
+            },
+            {
+              "explain": "Calculate the pH of the ammonia.",
+              "work": "pH=−log₁₀(1.3×10^{-9})≈8.8861"
+            },
+            {
+              "explain": "Find the difference.",
+              "work": "8.8861−3.5229≈5.3632"
+            },
+            {
+              "explain": "Choose the nearest listed value.",
+              "work": "5.4"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 88,
+            "sourceQuestion": 3
+          },
+          "keyPoints": [
+            {
+              "text": "The pH value of a solution is given by the formula pH=−log₁₀[H⁺], where [H⁺] is the concentration of hydrogen ions in moles per litre. Tylah tested a quantity of apple juice and determined it had a H⁺=3×10^{-4}. Sean tested a quantity of ammonia and determined it had a H⁺=1.3×10^{-9}. Which of these is closest to the difference in their pH?",
+              "note": "Find each pH using the stated negative logarithm, then subtract the smaller from the larger."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-loglaws-q4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "On the decibel scale, the loudness L of a sound of intensity S is given by L=10 log₁₀(S/S₀), where S₀ is a reference intensity used for comparisons. How many times more intense is the sound in the front row of a concert of a heavy metal band (110 decibels) than a normal conversation (60 decibels)?",
+          "options": [
+            "1000 times",
+            "10 000 times",
+            "100 000 times",
+            "1 000 000 times"
+          ],
+          "answer": 2,
+          "hint": "Subtract the decibel levels to get the logarithm of the intensity ratio.",
+          "steps": [
+            {
+              "explain": "Let S₁ represent the 110 dB sound and S₂ the 60 dB sound. Subtract their decibel formulae.",
+              "work": "110−60=10 log₁₀(S₁/S₂)"
+            },
+            {
+              "explain": "Divide by 10.",
+              "work": "5=log₁₀(S₁/S₂)"
+            },
+            {
+              "explain": "Convert to index form.",
+              "work": "S₁/S₂=10^{5}=100 000"
+            },
+            {
+              "explain": "State the comparison.",
+              "work": "100 000 times more intense"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 88,
+            "sourceQuestion": 4
+          },
+          "keyPoints": [
+            {
+              "text": "On the decibel scale, the loudness L of a sound of intensity S is given by L=10 log₁₀(S/S₀), where S₀ is a reference intensity used for comparisons. How many times more intense is the sound in the front row of a concert of a heavy metal band (110 decibels) than a normal conversation (60 decibels)?",
+              "note": "Subtract the decibel levels to get the logarithm of the intensity ratio."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-loglaws-q14",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Find log₁₀(2^{1000}), correct to 3 decimal places. We know that 2^{10}=1024 can be represented by a 4 digit numeral. How many digits are there in 2^{1000} when written as a numeral?",
+          "hint": "Use the logarithm power law for part (i). For part (ii), a number with d digits has a common logarithm between d−1 and d.",
+          "steps": [],
+          "parts": [
+            {
+              "id": "y11a-8-excel-loglaws-q14i",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Find log₁₀(2^{1000}), correct to 3 decimal places.",
+              "options": [
+                "301.030",
+                "30.103",
+                "1000.000",
+                "302.000"
+              ],
+              "answer": 0,
+              "hint": "Use the power law: log₁₀(2^{1000})=1000 log₁₀2.",
+              "steps": [
+                {
+                  "explain": "Bring the exponent down using the power law.",
+                  "work": "log₁₀(2^{1000})=1000 log₁₀2"
+                },
+                {
+                  "explain": "Substitute log₁₀2≈0.3010299.",
+                  "work": "1000(0.3010299)=301.0299…"
+                },
+                {
+                  "explain": "Round to three decimal places.",
+                  "work": "301.030"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "Find log₁₀(2^{1000}), correct to 3 decimal places.",
+                  "note": "Use the power law: log₁₀(2^{1000})=1000 log₁₀2."
+                }
+              ]
+            },
+            {
+              "id": "y11a-8-excel-loglaws-q14ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "We know that 2^{10}=1024 can be represented by a 4 digit numeral. How many digits are there in 2^{1000} when written as a numeral?",
+              "options": [
+                "302 digits",
+                "301 digits",
+                "1000 digits",
+                "300 digits"
+              ],
+              "answer": 0,
+              "hint": "If log₁₀N=301.029…, then 301<log₁₀N<302. The number of digits is floor(log₁₀N)+1.",
+              "steps": [
+                {
+                  "explain": "For a positive integer N with d digits, 10^(d−1) \\le N<10^d, so d=floor(log₁₀N)+1.",
+                  "work": "log₁₀(2^{1000})≈301.030"
+                },
+                {
+                  "explain": "This logarithm lies between 301 and 302, so the number is at least 10^{301} but less than 10^{302}.",
+                  "work": "10^{301}<2^{1000}<10^{302}"
+                },
+                {
+                  "explain": "Therefore the digit count is 301+1.",
+                  "work": "302 digits"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "We know that 2^{10}=1024 can be represented by a 4 digit numeral. How many digits are there in 2^{1000} when written as a numeral?",
+                  "note": "If log₁₀N=301.029…, then 301<log₁₀N<302. The number of digits is floor(log₁₀N)+1."
+                }
+              ]
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 89,
+            "sourceQuestion": 14
+          },
+          "keyPoints": [
+            {
+              "text": "Find log₁₀(2^{1000}), correct to 3 decimal places. We know that 2^{10}=1024 can be represented by a 4 digit numeral. How many digits are there in 2^{1000} when written as a numeral?",
+              "note": "Use the logarithm power law for part (i). For part (ii), a number with d digits has a common logarithm between d−1 and d."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-loglaws-q18",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "A layer of plastic cuts out 15% of the light and lets through the remaining 85%.",
+          "hint": "Multiply by 0.85 for each layer. For part (ii), translate the 90% reduction into a maximum transmission of 10%, then solve the exponential inequality.",
+          "steps": [],
+          "parts": [
+            {
+              "id": "y11a-8-excel-loglaws-q18i",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Show that two layers of the plastic let through 72.25% of the light.",
+              "options": [
+                "72.25%",
+                "85%",
+                "70%",
+                "15%"
+              ],
+              "answer": 0,
+              "hint": "Each layer transmits 85% of the light reaching it. Multiply by 0.85 twice.",
+              "steps": [
+                {
+                  "explain": "One layer transmits 85% of the incoming light, which is the multiplier 0.85.",
+                  "work": "remaining fraction after one layer=0.85"
+                },
+                {
+                  "explain": "A second layer transmits 85% of what remains.",
+                  "work": "0.85×0.85=0.7225"
+                },
+                {
+                  "explain": "Convert the fraction to a percentage.",
+                  "work": "0.7225×100%=72.25%"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "Show that two layers of the plastic let through 72.25% of the light.",
+                  "note": "Each layer transmits 85% of the light reaching it. Multiply by 0.85 twice."
+                }
+              ]
+            },
+            {
+              "id": "y11a-8-excel-loglaws-q18ii",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "How many layers of the plastic are required to cut out at least 90% of the light?",
+              "options": [
+                "15 layers",
+                "14 layers",
+                "10 layers",
+                "16 layers"
+              ],
+              "answer": 0,
+              "hint": "Cutting out at least 90% means no more than 10% gets through. Solve 0.85ⁿ \\le 0.10 and round up to a whole layer.",
+              "steps": [
+                {
+                  "explain": "After n layers the transmitted fraction is 0.85ⁿ. At least 90% cut out means transmitted fraction is at most 0.10.",
+                  "work": "0.85ⁿ \\le 0.10"
+                },
+                {
+                  "explain": "Take logarithms. Because log(0.85)<0, dividing by it reverses the inequality.",
+                  "work": "n log(0.85) \\le log(0.10)  ⇒  n \\ge log(0.10)/log(0.85)"
+                },
+                {
+                  "explain": "Evaluate the lower bound.",
+                  "work": "n \\ge 14.168…"
+                },
+                {
+                  "explain": "The number of layers must be a whole number and must meet the bound, so round up.",
+                  "work": "15 layers"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "How many layers of the plastic are required to cut out at least 90% of the light?",
+                  "note": "Cutting out at least 90% means no more than 10% gets through. Solve 0.85ⁿ \\le 0.10 and round up to a whole layer."
+                }
+              ]
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 89,
+            "sourceQuestion": 18
+          },
+          "keyPoints": [
+            {
+              "text": "A layer of plastic cuts out 15% of the light and lets through the remaining 85%.",
+              "note": "Multiply by 0.85 for each layer. For part (ii), translate the 90% reduction into a maximum transmission of 10%, then solve the exponential inequality."
+            }
+          ]
+        },
+        {
+          "id": "y11a-8-excel-expln-q18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find α so that the equation P=100(1.23)ᵗ can be rewritten as P=100e^(αt). Give your answer in decimal form.",
+          "options": [
+            "α≈0.21",
+            "α≈1.23",
+            "α≈0.79",
+            "α≈2.10"
+          ],
+          "answer": 0,
+          "hint": "Use (1.23)ᵗ=e^(t ln1.23), so α=ln1.23.",
+          "steps": [
+            {
+              "explain": "Rewrite the exponential base using e.",
+              "work": "(1.23)ᵗ=e^{t ln(1.23)}"
+            },
+            {
+              "explain": "Compare the exponent with αt.",
+              "work": "α=ln(1.23)"
+            },
+            {
+              "explain": "Evaluate.",
+              "work": "α≈0.207639…≈0.21"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 92,
+            "sourceQuestion": 18
+          },
+          "keyPoints": [
+            {
+              "text": "Find α so that the equation P=100(1.23)ᵗ can be rewritten as P=100e^(αt). Give your answer in decimal form.",
+              "note": "Use (1.23)ᵗ=e^(t ln1.23), so α=ln1.23."
             }
           ]
         }

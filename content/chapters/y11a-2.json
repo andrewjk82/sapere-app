@@ -4305,6 +4305,238 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "y11a-excel-algebra-q32",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find integers \\(a\\) and \\(b\\) such that \\(\\dfrac1{\\sqrt5-2}=a+b\\sqrt5\\).",
+          "options": [
+            "\\(a=-2,\\ b=1\\)",
+            "\\(a=2,\\ b=-1\\)",
+            "\\(a=1,\\ b=2\\)",
+            "\\(a=2,\\ b=1\\)"
+          ],
+          "answer": 3,
+          "hint": "Rationalise the denominator by multiplying by \\(\\sqrt5+2\\).",
+          "steps": [
+            {
+              "explain": "Multiply by the conjugate over itself.",
+              "work": "\\(\\dfrac1{\\sqrt5-2}\\cdot\\dfrac{\\sqrt5+2}{\\sqrt5+2}\\)"
+            },
+            {
+              "explain": "Evaluate the denominator.",
+              "work": "\\((\\sqrt5)^2-2^2=5-4=1\\)"
+            },
+            {
+              "explain": "Write the result in the required form.",
+              "work": "\\(\\dfrac{\\sqrt5+2}{1}=2+\\sqrt5\\)"
+            },
+            {
+              "explain": "Match the constant and surd coefficients.",
+              "work": "\\(\\boxed{a=2,\\ b=1}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 32,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Find integers \\(a\\) and \\(b\\) such that \\(\\dfrac1{\\sqrt5-2}=a+b\\sqrt5\\).",
+              "note": "Rationalise the denominator by multiplying by \\(\\sqrt5+2\\)."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q35",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand and simplify \\((\\sqrt3-1)(2\\sqrt3+5)\\).",
+          "options": [
+            "\\(1-3\\sqrt3\\)",
+            "\\(11+3\\sqrt3\\)",
+            "\\(1+3\\sqrt3\\)",
+            "\\(1+7\\sqrt3\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply each term in the first bracket by each term in the second bracket.",
+          "steps": [
+            {
+              "explain": "Multiply the first terms.",
+              "work": "\\(\\sqrt3\\cdot2\\sqrt3=6\\)"
+            },
+            {
+              "explain": "Multiply the outside and inside terms.",
+              "work": "\\(\\sqrt3\\cdot5=5\\sqrt3,\\quad (-1)\\cdot2\\sqrt3=-2\\sqrt3\\)"
+            },
+            {
+              "explain": "Multiply the final terms.",
+              "work": "\\((-1)\\cdot5=-5\\)"
+            },
+            {
+              "explain": "Combine rational terms and like surds.",
+              "work": "\\(6-5+5\\sqrt3-2\\sqrt3=\\boxed{1+3\\sqrt3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 35,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Expand and simplify \\((\\sqrt3-1)(2\\sqrt3+5)\\).",
+              "note": "Multiply each term in the first bracket by each term in the second bracket."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q42",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find integers \\(a\\) and \\(b\\) such that \\((3-\\sqrt2)^2=a-b\\sqrt2\\).",
+          "options": [
+            "\\(a=11,\\ b=-6\\)",
+            "\\(a=11,\\ b=6\\)",
+            "\\(a=7,\\ b=6\\)",
+            "\\(a=11,\\ b=3\\)"
+          ],
+          "answer": 1,
+          "hint": "Expand the square as \\((3-\\sqrt2)(3-\\sqrt2)\\), then match the rational and surd parts.",
+          "steps": [
+            {
+              "explain": "Use \\((u-v)^2=u^2-2uv+v^2\\).",
+              "work": "\\((3-\\sqrt2)^2=3^2-2(3)(\\sqrt2)+(\\sqrt2)^2\\)"
+            },
+            {
+              "explain": "Evaluate the rational terms and the surd term.",
+              "work": "\\(9-6\\sqrt2+2=11-6\\sqrt2\\)"
+            },
+            {
+              "explain": "Compare with \\(a-b\\sqrt2\\).",
+              "work": "\\(\\boxed{a=11,\\quad b=6}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 42,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Find integers \\(a\\) and \\(b\\) such that \\((3-\\sqrt2)^2=a-b\\sqrt2\\).",
+              "note": "Expand the square as \\((3-\\sqrt2)(3-\\sqrt2)\\), then match the rational and surd parts."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q51",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find integers \\(a\\) and \\(b\\) such that \\((5-\\sqrt2)^2=a+b\\sqrt2\\).",
+          "options": [
+            "\\(a=27,\\ b=10\\)",
+            "\\(a=23,\\ b=-10\\)",
+            "\\(a=27,\\ b=-10\\)",
+            "\\(a=27,\\ b=-5\\)"
+          ],
+          "answer": 2,
+          "hint": "Expand with \\((u-v)^2=u^2-2uv+v^2\\), then match coefficients.",
+          "steps": [
+            {
+              "explain": "Expand the square.",
+              "work": "\\((5-\\sqrt2)^2=5^2-2(5)(\\sqrt2)+(\\sqrt2)^2\\)"
+            },
+            {
+              "explain": "Evaluate the terms.",
+              "work": "\\(25-10\\sqrt2+2=27-10\\sqrt2\\)"
+            },
+            {
+              "explain": "Compare with \\(a+b\\sqrt2\\).",
+              "work": "\\(\\boxed{a=27,\\quad b=-10}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 51,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Find integers \\(a\\) and \\(b\\) such that \\((5-\\sqrt2)^2=a+b\\sqrt2\\).",
+              "note": "Expand with \\((u-v)^2=u^2-2uv+v^2\\), then match coefficients."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q58",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of \\(4\\pi\\sqrt{\\dfrac ag}\\) if \\(a=4.1\\) and \\(g=9.8\\). Give your answer to 2 significant figures.",
+          "options": [
+            "5.1",
+            "8.1",
+            "6.4",
+            "8.2"
+          ],
+          "answer": 1,
+          "hint": "Substitute both values into the formula first; evaluate the square root before multiplying by \\(4\\pi\\).",
+          "steps": [
+            {
+              "explain": "Substitute the given values.",
+              "work": "\\(4\\pi\\sqrt{\\dfrac{4.1}{9.8}}\\)"
+            },
+            {
+              "explain": "Evaluate the ratio and square root.",
+              "work": "\\(\\dfrac{4.1}{9.8}\\approx0.41837,\\quad\\sqrt{0.41837}\\approx0.6468\\)"
+            },
+            {
+              "explain": "Multiply by \\(4\\pi\\).",
+              "work": "\\(4\\pi(0.6468)\\approx8.128\\)"
+            },
+            {
+              "explain": "Round to two significant figures.",
+              "work": "\\(\\boxed{8.1}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 9,
+            "sourceQuestion": 58,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Find the value of \\(4\\pi\\sqrt{\\dfrac ag}\\) if \\(a=4.1\\) and \\(g=9.8\\). Give your answer to 2 significant figures.",
+              "note": "Substitute both values into the formula first; evaluate the square root before multiplying by \\(4\\pi\\)."
+            }
+          ]
         }
       ]
     },
@@ -5285,6 +5517,108 @@
           "answer": 3,
           "solution": "$5\\sqrt{5} = \\sqrt{125}$",
           "xp": 3
+        },
+        {
+          "id": "y11a-excel-algebra-q30",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Rationalise the denominator of \\(\\dfrac1{\\sqrt n+\\sqrt{n+1}}\\), where \\(n\\) is an integer and \\(n\\ge1\\). Using the result from this part, or otherwise, find the value of \\(\\dfrac1{\\sqrt1+\\sqrt2}+\\dfrac1{\\sqrt2+\\sqrt3}+\\cdots+\\dfrac1{\\sqrt{99}+\\sqrt{100}}\\).",
+          "hint": "Rationalise using the conjugate. In the sum, look for consecutive terms that cancel.",
+          "steps": [],
+          "parts": [
+            {
+              "id": "y11a-excel-algebra-q30i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Rationalise the denominator of \\(\\dfrac1{\\sqrt n+\\sqrt{n+1}}\\), where \\(n\\) is an integer and \\(n\\ge1\\).",
+              "options": [
+                "\\(\\sqrt{n+1}-\\sqrt n\\)",
+                "\\(\\sqrt{n+1}+\\sqrt n\\)",
+                "\\(\\dfrac{\\sqrt{n+1}-\\sqrt n}{2n+1}\\)",
+                "\\(\\dfrac1{\\sqrt{n+1}-\\sqrt n}\\)"
+              ],
+              "answer": 0,
+              "hint": "Multiply by the conjugate; the denominator is a difference of two consecutive squares.",
+              "steps": [
+                {
+                  "explain": "Multiply numerator and denominator by the conjugate.",
+                  "work": "\\(\\dfrac1{\\sqrt n+\\sqrt{n+1}}\\cdot\\dfrac{\\sqrt{n+1}-\\sqrt n}{\\sqrt{n+1}-\\sqrt n}\\)"
+                },
+                {
+                  "explain": "Use difference of squares in the denominator.",
+                  "work": "\\((n+1)-n=1\\)"
+                },
+                {
+                  "explain": "The denominator is 1, so the numerator is the result.",
+                  "work": "\\(\\boxed{\\sqrt{n+1}-\\sqrt n}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "Rationalise the denominator of \\(\\dfrac1{\\sqrt n+\\sqrt{n+1}}\\), where \\(n\\) is an integer and \\(n\\ge1\\).",
+                  "note": "Multiply by the conjugate; the denominator is a difference of two consecutive squares."
+                }
+              ]
+            },
+            {
+              "id": "y11a-excel-algebra-q30ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Using the result from the previous part, or otherwise, find the value of \\(\\dfrac1{\\sqrt1+\\sqrt2}+\\dfrac1{\\sqrt2+\\sqrt3}+\\cdots+\\dfrac1{\\sqrt{99}+\\sqrt{100}}\\).",
+              "options": [
+                "9",
+                "10",
+                "99",
+                "100"
+              ],
+              "answer": 0,
+              "hint": "Use the previous result on each fraction; most terms cancel in pairs.",
+              "steps": [
+                {
+                  "explain": "Replace each fraction using the conjugate result from the previous part.",
+                  "work": "\\(\\dfrac1{\\sqrt k+\\sqrt{k+1}}=\\sqrt{k+1}-\\sqrt k\\)"
+                },
+                {
+                  "explain": "Write out the beginning and end of the sum.",
+                  "work": "\\((\\sqrt2-1)+(\\sqrt3-\\sqrt2)+\\cdots+(\\sqrt{100}-\\sqrt{99})\\)"
+                },
+                {
+                  "explain": "Every middle square-root term appears once positive and once negative, so those terms cancel.",
+                  "work": "\\(=\\sqrt{100}-\\sqrt1\\)"
+                },
+                {
+                  "explain": "Evaluate the two remaining square roots.",
+                  "work": "\\(10-1=\\boxed9\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "Using the result from the previous part, or otherwise, find the value of \\(\\dfrac1{\\sqrt1+\\sqrt2}+\\dfrac1{\\sqrt2+\\sqrt3}+\\cdots+\\dfrac1{\\sqrt{99}+\\sqrt{100}}\\).",
+                  "note": "Use the previous result on each fraction; most terms cancel in pairs."
+                }
+              ]
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 30,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Rationalise the denominator of \\(\\dfrac1{\\sqrt n+\\sqrt{n+1}}\\), where \\(n\\) is an integer and \\(n\\ge1\\). Using the result from this part, or otherwise, find the value of \\(\\dfrac1{\\sqrt1+\\sqrt2}+\\dfrac1{\\sqrt2+\\sqrt3}+\\cdots+\\dfrac1{\\sqrt{99}+\\sqrt{100}}\\).",
+              "note": "Rationalise using the conjugate. In the sum, look for consecutive terms that cancel."
+            }
+          ]
         }
       ]
     },
@@ -7520,6 +7854,470 @@
           "answer": 1,
           "solution": "$\\frac{2(\\sqrt{3}+1)}{3-1} = \\frac{2(\\sqrt{3}+1)}{2} = 1 + \\sqrt{3}$. So $a=1, b=1$.",
           "xp": 3
+        },
+        {
+          "id": "y11a-2-excel-algebra-q08",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Rationalise the denominator of \\(\\frac3{3+\\sqrt2}\\).",
+          "options": [
+            "\\(\\frac{9-3\\sqrt2}{7}\\)",
+            "\\(3-\\sqrt2\\)",
+            "\\(\\frac{9+3\\sqrt2}{7}\\)",
+            "\\(\\frac{3+\\sqrt2}{7}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply top and bottom by the conjugate \\(3-\\sqrt2\\); the denominator becomes a difference of squares.",
+          "steps": [
+            {
+              "explain": "Use the conjugate of \\(3+\\sqrt2\\).",
+              "work": "\\(\\frac3{3+\\sqrt2}\\times\\frac{3-\\sqrt2}{3-\\sqrt2}\\)"
+            },
+            {
+              "explain": "Multiply the denominators using \\((a+b)(a-b)=a^2-b^2\\).",
+              "work": "\\((3+\\sqrt2)(3-\\sqrt2)=9-2=7\\)"
+            },
+            {
+              "explain": "Multiply the numerator by the same conjugate.",
+              "work": "\\(3(3-\\sqrt2)=9-3\\sqrt2\\)"
+            },
+            {
+              "explain": "Write the quotient with its rational denominator.",
+              "work": "\\(\\boxed{\\frac{9-3\\sqrt2}{7}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 7,
+            "sourceQuestion": 8,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Rationalise the denominator of \\(\\frac3{3+\\sqrt2}\\).",
+              "note": "Multiply top and bottom by the conjugate \\(3-\\sqrt2\\); the denominator becomes a difference of squares."
+            }
+          ]
+        },
+        {
+          "id": "y11a-2-excel-algebra-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Rationalise the denominator of \\(\\frac2{\\sqrt5-1}\\).",
+          "options": [
+            "\\(\\frac{\\sqrt5+1}{2}\\)",
+            "\\(\\sqrt5-1\\)",
+            "\\(\\frac{\\sqrt5-1}{2}\\)",
+            "\\(2(\\sqrt5+1)\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the numerator and denominator by the conjugate \\(\\sqrt5+1\\).",
+          "steps": [
+            {
+              "explain": "Multiply by the conjugate over itself.",
+              "work": "\\(\\frac2{\\sqrt5-1}\\times\\frac{\\sqrt5+1}{\\sqrt5+1}\\)"
+            },
+            {
+              "explain": "Evaluate the denominator as a difference of squares.",
+              "work": "\\((\\sqrt5-1)(\\sqrt5+1)=5-1=4\\)"
+            },
+            {
+              "explain": "Simplify the fraction.",
+              "work": "\\(\\frac{2(\\sqrt5+1)}4=\\frac{\\sqrt5+1}{2}\\)"
+            },
+            {
+              "explain": "The denominator is now rational.",
+              "work": "\\(\\boxed{\\frac{\\sqrt5+1}{2}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 7,
+            "sourceQuestion": 10,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Rationalise the denominator of \\(\\frac2{\\sqrt5-1}\\).",
+              "note": "Multiply the numerator and denominator by the conjugate \\(\\sqrt5+1\\)."
+            }
+          ]
+        },
+        {
+          "id": "y11a-2-excel-algebra-q14",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express \\(\\frac8{2+\\sqrt7}\\) with a rational denominator.",
+          "options": [
+            "\\(\\frac{8(\\sqrt7-2)}3\\)",
+            "\\(\\frac{8(\\sqrt7+2)}3\\)",
+            "\\(8(\\sqrt7-2)\\)",
+            "\\(\\frac{2+\\sqrt7}{8}\\)"
+          ],
+          "answer": 0,
+          "hint": "The conjugate of \\(2+\\sqrt7\\) is \\(\\sqrt7-2\\). Multiply top and bottom by it.",
+          "steps": [
+            {
+              "explain": "Multiply by the conjugate over itself.",
+              "work": "\\(\\frac8{2+\\sqrt7}\\times\\frac{\\sqrt7-2}{\\sqrt7-2}\\)"
+            },
+            {
+              "explain": "Simplify the denominator.",
+              "work": "\\((2+\\sqrt7)(\\sqrt7-2)=7-4=3\\)"
+            },
+            {
+              "explain": "Multiply the numerator by the conjugate.",
+              "work": "\\(8(\\sqrt7-2)\\)"
+            },
+            {
+              "explain": "Place the rational denominator beneath the numerator.",
+              "work": "\\(\\boxed{\\frac{8(\\sqrt7-2)}3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 7,
+            "sourceQuestion": 14,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Express \\(\\frac8{2+\\sqrt7}\\) with a rational denominator.",
+              "note": "The conjugate of \\(2+\\sqrt7\\) is \\(\\sqrt7-2\\). Multiply top and bottom by it."
+            }
+          ]
+        },
+        {
+          "id": "y11a-2-excel-algebra-q16",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Rationalise the denominator of \\(\\frac1{\\sqrt5-2}\\).",
+          "options": [
+            "\\(\\sqrt5+2\\)",
+            "\\(\\sqrt5-2\\)",
+            "\\(\\frac{\\sqrt5+2}{9}\\)",
+            "\\(\\frac1{\\sqrt5+2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply by the conjugate \\(\\sqrt5+2\\); the denominator becomes \\(5-4\\).",
+          "steps": [
+            {
+              "explain": "Multiply by the conjugate over itself.",
+              "work": "\\(\\frac1{\\sqrt5-2}\\times\\frac{\\sqrt5+2}{\\sqrt5+2}\\)"
+            },
+            {
+              "explain": "Use the difference-of-squares identity in the denominator.",
+              "work": "\\((\\sqrt5-2)(\\sqrt5+2)=5-4=1\\)"
+            },
+            {
+              "explain": "Divide the numerator by 1.",
+              "work": "\\(\\frac{\\sqrt5+2}{1}=\\sqrt5+2\\)"
+            },
+            {
+              "explain": "The rationalised expression is exact.",
+              "work": "\\(\\boxed{\\sqrt5+2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 7,
+            "sourceQuestion": 16,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Rationalise the denominator of \\(\\frac1{\\sqrt5-2}\\).",
+              "note": "Multiply by the conjugate \\(\\sqrt5+2\\); the denominator becomes \\(5-4\\)."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q24",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which of the following is equal to \\(\\dfrac1{2\\sqrt5-\\sqrt3}\\)?",
+          "options": [
+            "\\(\\dfrac{2\\sqrt5-\\sqrt3}{17}\\)",
+            "\\(2\\sqrt5+\\sqrt3\\)",
+            "\\(\\dfrac{2\\sqrt5+\\sqrt3}{7}\\)",
+            "\\(\\dfrac{2\\sqrt5+\\sqrt3}{17}\\)"
+          ],
+          "answer": 3,
+          "hint": "Multiply top and bottom by the conjugate \\(2\\sqrt5+\\sqrt3\\).",
+          "steps": [
+            {
+              "explain": "Use the conjugate so the denominator becomes a difference of squares.",
+              "work": "\\(\\dfrac1{2\\sqrt5-\\sqrt3}\\cdot\\dfrac{2\\sqrt5+\\sqrt3}{2\\sqrt5+\\sqrt3}\\)"
+            },
+            {
+              "explain": "Evaluate the new denominator.",
+              "work": "\\((2\\sqrt5)^2-(\\sqrt3)^2=20-3=17\\)"
+            },
+            {
+              "explain": "Keep the new numerator over 17.",
+              "work": "\\(\\boxed{\\dfrac{2\\sqrt5+\\sqrt3}{17}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 24,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Which of the following is equal to \\(\\dfrac1{2\\sqrt5-\\sqrt3}\\)?",
+              "note": "Multiply top and bottom by the conjugate \\(2\\sqrt5+\\sqrt3\\)."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q29",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Rationalise the denominator of \\(\\dfrac4{\\sqrt5-\\sqrt3}\\). Give your answer in the simplest form.",
+          "options": [
+            "\\(2(\\sqrt5+\\sqrt3)\\)",
+            "\\(2(\\sqrt5-\\sqrt3)\\)",
+            "\\(\\dfrac{\\sqrt5+\\sqrt3}{2}\\)",
+            "\\(\\dfrac{4(\\sqrt5+\\sqrt3)}8\\)\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply top and bottom by the conjugate \\(\\sqrt5+\\sqrt3\\).",
+          "steps": [
+            {
+              "explain": "Multiply by the conjugate over itself.",
+              "work": "\\(\\dfrac4{\\sqrt5-\\sqrt3}\\cdot\\dfrac{\\sqrt5+\\sqrt3}{\\sqrt5+\\sqrt3}\\)"
+            },
+            {
+              "explain": "Simplify the denominator as a difference of squares.",
+              "work": "\\((\\sqrt5)^2-(\\sqrt3)^2=5-3=2\\)"
+            },
+            {
+              "explain": "Divide the numerator by 2 and simplify.",
+              "work": "\\(\\dfrac{4(\\sqrt5+\\sqrt3)}2=\\boxed{2(\\sqrt5+\\sqrt3)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 29,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Rationalise the denominator of \\(\\dfrac4{\\sqrt5-\\sqrt3}\\). Give your answer in the simplest form.",
+              "note": "Multiply top and bottom by the conjugate \\(\\sqrt5+\\sqrt3\\)."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q38",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Rationalise the denominator of \\(\\dfrac1{\\sqrt3-1}\\).",
+          "options": [
+            "\\(\\dfrac{\\sqrt3-1}{2}\\)",
+            "\\(\\dfrac{\\sqrt3+1}{2}\\)",
+            "\\(\\sqrt3+1\\)",
+            "\\(\\dfrac{\\sqrt3+1}{4}\\)\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply the numerator and denominator by the conjugate \\(\\sqrt3+1\\).",
+          "steps": [
+            {
+              "explain": "Multiply by the conjugate over itself.",
+              "work": "\\(\\dfrac1{\\sqrt3-1}\\cdot\\dfrac{\\sqrt3+1}{\\sqrt3+1}\\)"
+            },
+            {
+              "explain": "Use difference of squares in the denominator.",
+              "work": "\\((\\sqrt3)^2-1^2=3-1=2\\)"
+            },
+            {
+              "explain": "Write the simplified exact expression.",
+              "work": "\\(\\boxed{\\dfrac{\\sqrt3+1}{2}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 38,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Rationalise the denominator of \\(\\dfrac1{\\sqrt3-1}\\).",
+              "note": "Multiply the numerator and denominator by the conjugate \\(\\sqrt3+1\\)."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q52",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "By rationalising the denominators, express \\(\\dfrac1{3-\\sqrt2}+\\dfrac1{3+\\sqrt2}\\) in simplest form.",
+          "options": [
+            "\\(\\dfrac67+\\sqrt2\\)",
+            "\\(\\dfrac37\\)",
+            "\\(\\dfrac{6}{11}\\)",
+            "\\(\\dfrac67\\)"
+          ],
+          "answer": 3,
+          "hint": "The two denominators are conjugates. Rationalise each or combine them using their product.",
+          "steps": [
+            {
+              "explain": "Use the common denominator \\((3-\\sqrt2)(3+\\sqrt2)\\).",
+              "work": "\\((3-\\sqrt2)(3+\\sqrt2)=9-2=7\\)"
+            },
+            {
+              "explain": "Combine the numerators.",
+              "work": "\\((3+\\sqrt2)+(3-\\sqrt2)=6\\)"
+            },
+            {
+              "explain": "Divide by the common denominator.",
+              "work": "\\(\\boxed{\\dfrac67}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 52,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "By rationalising the denominators, express \\(\\dfrac1{3-\\sqrt2}+\\dfrac1{3+\\sqrt2}\\) in simplest form.",
+              "note": "The two denominators are conjugates. Rationalise each or combine them using their product."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q53",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "By rationalising the denominator, express \\(\\dfrac8{3-\\sqrt5}\\) in the form \\(a+b\\sqrt5\\).",
+          "options": [
+            "\\(6+2\\sqrt5\\)",
+            "\\(6-2\\sqrt5\\)",
+            "\\(4+2\\sqrt5\\)",
+            "\\(\\dfrac{8(3+\\sqrt5)}{14}\\)\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply by the conjugate \\(3+\\sqrt5\\), then simplify both numerator and denominator.",
+          "steps": [
+            {
+              "explain": "Multiply by the conjugate over itself.",
+              "work": "\\(\\dfrac8{3-\\sqrt5}\\cdot\\dfrac{3+\\sqrt5}{3+\\sqrt5}\\)"
+            },
+            {
+              "explain": "Simplify the denominator.",
+              "work": "\\(9-5=4\\)"
+            },
+            {
+              "explain": "Expand the numerator and divide each term by 4.",
+              "work": "\\(\\dfrac{24+8\\sqrt5}{4}=6+2\\sqrt5\\)"
+            },
+            {
+              "explain": "Match the requested form.",
+              "work": "\\(\\boxed{6+2\\sqrt5}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 53,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "By rationalising the denominator, express \\(\\dfrac8{3-\\sqrt5}\\) in the form \\(a+b\\sqrt5\\).",
+              "note": "Multiply by the conjugate \\(3+\\sqrt5\\), then simplify both numerator and denominator."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q54",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Rationalise the denominator of \\(\\dfrac4{\\sqrt5+2}\\).",
+          "options": [
+            "\\(4\\sqrt5+8\\)",
+            "\\(4\\sqrt5-8\\)",
+            "\\(\\sqrt5-2\\)",
+            "\\(\\dfrac{4\\sqrt5-8}{9}\\)\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply by the conjugate \\(\\sqrt5-2\\); here the denominator becomes \\(5-4=1\\).",
+          "steps": [
+            {
+              "explain": "Multiply by the conjugate over itself.",
+              "work": "\\(\\dfrac4{\\sqrt5+2}\\cdot\\dfrac{\\sqrt5-2}{\\sqrt5-2}\\)"
+            },
+            {
+              "explain": "Evaluate the denominator difference of squares.",
+              "work": "\\((\\sqrt5)^2-2^2=5-4=1\\)"
+            },
+            {
+              "explain": "Expand the numerator.",
+              "work": "\\(4(\\sqrt5-2)=4\\sqrt5-8\\)"
+            },
+            {
+              "explain": "Write the rationalised result.",
+              "work": "\\(\\boxed{4\\sqrt5-8}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 54,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Rationalise the denominator of \\(\\dfrac4{\\sqrt5+2}\\).",
+              "note": "Multiply by the conjugate \\(\\sqrt5-2\\); here the denominator becomes \\(5-4=1\\)."
+            }
+          ]
         }
       ]
     },

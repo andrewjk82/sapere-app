@@ -4684,6 +4684,833 @@
             "course": "Advanced"
           },
           "xp": 1
+        },
+        {
+          "id": "y11a-4-excel-algebra-q19",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation \\(\\frac{5x+1}{3}-4=5-7x\\).",
+          "options": [
+            "\\(x=1\\)",
+            "\\(x=-1\\)",
+            "\\(x=\\frac{26}{5}\\)",
+            "\\(x=\\frac{19}{26}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply every term by 3 to clear the denominator before collecting x-terms.",
+          "steps": [
+            {
+              "explain": "Multiply both sides by 3. Every term on both sides is multiplied.",
+              "work": "\\(5x+1-12=15-21x\\)"
+            },
+            {
+              "explain": "Simplify the left side, then add \\(21x\\) to both sides.",
+              "work": "\\(5x-11=15-21x\\Rightarrow26x-11=15\\)"
+            },
+            {
+              "explain": "Add 11 to both sides.",
+              "work": "\\(26x=26\\)"
+            },
+            {
+              "explain": "Divide by 26.",
+              "work": "\\(\\boxed{x=1}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 7,
+            "sourceQuestion": 19,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Solve the equation \\(\\frac{5x+1}{3}-4=5-7x\\).",
+              "note": "Multiply every term by 3 to clear the denominator before collecting x-terms."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q28",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve \\(2^{2x+1}=32\\).",
+          "options": [
+            "\\(x=\\dfrac32\\)",
+            "\\(x=5\\)",
+            "\\(x=\\dfrac52\\)",
+            "\\(x=2\\)"
+          ],
+          "answer": 3,
+          "hint": "Write 32 as a power of 2, then equate the exponents.",
+          "steps": [
+            {
+              "explain": "Express 32 using base 2.",
+              "work": "\\(32=2^5\\)"
+            },
+            {
+              "explain": "The bases match, so set the exponents equal.",
+              "work": "\\(2x+1=5\\)"
+            },
+            {
+              "explain": "Subtract 1 and divide by 2.",
+              "work": "\\(2x=4\\Rightarrow x=\\boxed2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 28,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Solve \\(2^{2x+1}=32\\).",
+              "note": "Write 32 as a power of 2, then equate the exponents."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q31",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve \\(x^2=4x\\).",
+          "options": [
+            "\\(x=4\\) only",
+            "\\(x=0\\) only",
+            "\\(x=0\\) or \\(x=4\\)",
+            "\\(x=-4\\) or \\(x=0\\)"
+          ],
+          "answer": 2,
+          "hint": "Bring all terms to one side and factor out the common factor.",
+          "steps": [
+            {
+              "explain": "Subtract 4x from both sides.",
+              "work": "\\(x^2-4x=0\\)"
+            },
+            {
+              "explain": "Factor out x.",
+              "work": "\\(x(x-4)=0\\)"
+            },
+            {
+              "explain": "A product is zero when at least one factor is zero.",
+              "work": "\\(x=0\\quad\\text{or}\\quad x-4=0\\)"
+            },
+            {
+              "explain": "Solve both possibilities.",
+              "work": "\\(\\boxed{x=0\\text{ or }x=4}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 31,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Solve \\(x^2=4x\\).",
+              "note": "Bring all terms to one side and factor out the common factor."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q33",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve \\(\\dfrac{5x-4}{x}=2\\).",
+          "options": [
+            "\\(x=\\dfrac43\\)",
+            "\\(x=4\\)",
+            "\\(x=-\\dfrac43\\)",
+            "\\(x=\\dfrac23\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply both sides by x, then solve the resulting linear equation. Check that x is not zero.",
+          "steps": [
+            {
+              "explain": "Note the denominator restriction.",
+              "work": "\\(x\\ne0\\)"
+            },
+            {
+              "explain": "Multiply both sides by x.",
+              "work": "\\(5x-4=2x\\)"
+            },
+            {
+              "explain": "Subtract 2x from both sides and add 4.",
+              "work": "\\(3x=4\\)"
+            },
+            {
+              "explain": "Divide by 3 and check it is non-zero.",
+              "work": "\\(\\boxed{x=\\dfrac43}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 33,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Solve \\(\\dfrac{5x-4}{x}=2\\).",
+              "note": "Multiply both sides by x, then solve the resulting linear equation. Check that x is not zero."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q36",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve \\(2x-5>-3\\) and graph the solution on a number line.",
+          "options": [
+            "\\(x<1\\)",
+            "\\(x\\ge1\\)",
+            "\\(x>-1\\)",
+            "\\(x>1\\)"
+          ],
+          "answer": 3,
+          "hint": "Undo subtracting 5 by adding 5; then divide by the positive number 2. Use an open circle because 1 is not included.",
+          "steps": [
+            {
+              "explain": "Add 5 to both sides. The inequality direction stays the same.",
+              "work": "\\(2x-5>-3\\Rightarrow2x>2\\)"
+            },
+            {
+              "explain": "Divide both sides by positive 2.",
+              "work": "\\(x>1\\)"
+            },
+            {
+              "explain": "On the number line, mark 1 with an open circle and shade to the right for values greater than 1.",
+              "work": "\\(\\boxed{x>1}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 36,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" viewBox=\"0 0 420 125\" role=\"img\" aria-label=\"Number line showing x greater than 1\"><defs><marker id=\"r36\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\"><path d=\"M0 0L8 4L0 8Z\" fill=\"#7c3aed\"/></marker></defs><line x1=\"50\" y1=\"65\" x2=\"370\" y2=\"65\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"190\" y1=\"65\" x2=\"355\" y2=\"65\" stroke=\"#7c3aed\" stroke-width=\"5\" marker-end=\"url(#r36)\"/><circle cx=\"190\" cy=\"65\" r=\"10\" fill=\"white\" stroke=\"#7c3aed\" stroke-width=\"4\"/><line x1=\"190\" y1=\"49\" x2=\"190\" y2=\"81\" stroke=\"#64748b\" stroke-width=\"2\"/><text x=\"190\" y=\"108\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"18\" fill=\"#334155\">1</text><text x=\"275\" y=\"42\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\" fill=\"#6d28d9\">solutions to the right</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "Solve \\(2x-5>-3\\) and graph the solution on a number line.",
+              "note": "Undo subtracting 5 by adding 5; then divide by the positive number 2. Use an open circle because 1 is not included."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q39",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve \\(3-5x\\le2\\).",
+          "options": [
+            "\\(x\\le\\dfrac15\\)",
+            "\\(x\\ge-\\dfrac15\\)",
+            "\\(x\\ge\\dfrac15\\)",
+            "\\(x\\le-\\dfrac15\\)"
+          ],
+          "answer": 2,
+          "hint": "After subtracting 3, divide by -5; dividing by a negative reverses the inequality sign.",
+          "steps": [
+            {
+              "explain": "Subtract 3 from both sides.",
+              "work": "\\(-5x\\le-1\\)"
+            },
+            {
+              "explain": "Divide both sides by -5. Reverse the inequality because the divisor is negative.",
+              "work": "\\(x\\ge\\dfrac15\\)"
+            },
+            {
+              "explain": "State the solution set.",
+              "work": "\\(\\boxed{x\\ge\\dfrac15}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 39,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Solve \\(3-5x\\le2\\).",
+              "note": "After subtracting 3, divide by -5; dividing by a negative reverses the inequality sign."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q41",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve \\(\\dfrac{x-5}{3}-\\dfrac{x+1}{4}=5\\).",
+          "options": [
+            "\\(x=83\\)",
+            "\\(x=17\\)",
+            "\\(x=23\\)",
+            "\\(x=−83\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply every term by 12 to clear both denominators.",
+          "steps": [
+            {
+              "explain": "Multiply each term by the common denominator 12.",
+              "work": "\\(4(x-5)-3(x+1)=60\\)"
+            },
+            {
+              "explain": "Expand both brackets.",
+              "work": "\\(4x-20-3x-3=60\\)"
+            },
+            {
+              "explain": "Combine like terms.",
+              "work": "\\(x-23=60\\)"
+            },
+            {
+              "explain": "Add 23 to both sides.",
+              "work": "\\(\\boxed{x=83}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 41,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Solve \\(\\dfrac{x-5}{3}-\\dfrac{x+1}{4}=5\\).",
+              "note": "Multiply every term by 12 to clear both denominators."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q43",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve \\(x^2=5x\\).",
+          "options": [
+            "\\(x=5\\) only",
+            "\\(x=0\\) only",
+            "\\(x=0\\) or \\(x=5\\)",
+            "\\(x=-5\\) or \\(x=0\\)"
+          ],
+          "answer": 2,
+          "hint": "Bring both terms to one side and factor out x; then set each factor equal to zero.",
+          "steps": [
+            {
+              "explain": "Subtract 5x from both sides.",
+              "work": "\\(x^2-5x=0\\)"
+            },
+            {
+              "explain": "Factor out x.",
+              "work": "\\(x(x-5)=0\\)"
+            },
+            {
+              "explain": "Set each factor to zero.",
+              "work": "\\(x=0\\quad\\text{or}\\quad x-5=0\\)"
+            },
+            {
+              "explain": "Solve both cases.",
+              "work": "\\(\\boxed{x=0\\text{ or }x=5}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 43,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Solve \\(x^2=5x\\).",
+              "note": "Bring both terms to one side and factor out x; then set each factor equal to zero."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q44",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve \\(3x-\\dfrac{2x-5}{2}=6\\).",
+          "options": [
+            "\\(x=\\dfrac{17}4\\)",
+            "\\(x=\\dfrac74\\)",
+            "\\(x=\\dfrac{11}4\\)",
+            "\\(x=\\dfrac74\\)"
+          ],
+          "answer": 3,
+          "hint": "Multiply both sides by 2 first, then collect the x-terms.",
+          "steps": [
+            {
+              "explain": "Multiply each term by 2.",
+              "work": "\\(6x-(2x-5)=12\\)"
+            },
+            {
+              "explain": "Remove the brackets carefully.",
+              "work": "\\(6x-2x+5=12\\)"
+            },
+            {
+              "explain": "Combine like terms and subtract 5.",
+              "work": "\\(4x=7\\)"
+            },
+            {
+              "explain": "Divide by 4.",
+              "work": "\\(\\boxed{x=\\dfrac74}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 44,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Solve \\(3x-\\dfrac{2x-5}{2}=6\\).",
+              "note": "Multiply both sides by 2 first, then collect the x-terms."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q46",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve \\(x^2-2x-8=0\\).",
+          "options": [
+            "\\(x=2\\) or \\(x=-4\\)",
+            "\\(x=4\\) or \\(x=-2\\)",
+            "\\(x=4\\) only",
+            "\\(x=-2\\) only"
+          ],
+          "answer": 1,
+          "hint": "Factor the quadratic into two binomials whose constants multiply to -8 and add to -2.",
+          "steps": [
+            {
+              "explain": "Find two numbers with product -8 and sum -2: -4 and 2.",
+              "work": "\\((-4)(2)=-8,\\quad -4+2=-2\\)"
+            },
+            {
+              "explain": "Factor the quadratic.",
+              "work": "\\(x^2-2x-8=(x-4)(x+2)\\)"
+            },
+            {
+              "explain": "Set each factor equal to zero.",
+              "work": "\\(x-4=0\\quad\\text{or}\\quad x+2=0\\)"
+            },
+            {
+              "explain": "Solve both equations.",
+              "work": "\\(\\boxed{x=4\\text{ or }x=-2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 46,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Solve \\(x^2-2x-8=0\\).",
+              "note": "Factor the quadratic into two binomials whose constants multiply to -8 and add to -2."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q49",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve \\(3-2x\\ge7\\).",
+          "options": [
+            "\\(x\\le-2\\)",
+            "\\(x\\ge-2\\)",
+            "\\(x\\le2\\)",
+            "\\(x\\ge2\\)"
+          ],
+          "answer": 0,
+          "hint": "Subtract 3, then divide by -2 and reverse the inequality sign.",
+          "steps": [
+            {
+              "explain": "Subtract 3 from both sides.",
+              "work": "\\(-2x\\ge4\\)"
+            },
+            {
+              "explain": "Divide by -2, reversing the inequality.",
+              "work": "\\(x\\le-2\\)"
+            },
+            {
+              "explain": "State the solution.",
+              "work": "\\(\\boxed{x\\le-2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 49,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Solve \\(3-2x\\ge7\\).",
+              "note": "Subtract 3, then divide by -2 and reverse the inequality sign."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q56",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the equation \\(u^2-u-1=0\\), correct to three decimal places.",
+          "options": [
+            "\\(u=1.618\\) only",
+            "\\(u=0.618\\) or \\(u=-1.618\\)",
+            "\\(u=1.732\\) or \\(u=-0.732\\)",
+            "\\(u=1.618\\) or \\(u=-0.618\\)"
+          ],
+          "answer": 3,
+          "hint": "Use the quadratic formula and round each of the two roots to three decimal places.",
+          "steps": [
+            {
+              "explain": "Identify coefficients and apply the quadratic formula.",
+              "work": "\\(a=1,b=-1,c=-1\\Rightarrow u=\\dfrac{1\\pm\\sqrt{1+4}}2\\)"
+            },
+            {
+              "explain": "Simplify the exact roots.",
+              "work": "\\(u=\\dfrac{1\\pm\\sqrt5}{2}\\)"
+            },
+            {
+              "explain": "Evaluate both roots and round to three decimal places.",
+              "work": "\\(u\\approx1.618033...,\\quad u\\approx-0.618033...\\)"
+            },
+            {
+              "explain": "State both rounded solutions.",
+              "work": "\\(\\boxed{u=1.618\\text{ or }u=-0.618}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 9,
+            "sourceQuestion": 56,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Solve the equation \\(u^2-u-1=0\\), correct to three decimal places.",
+              "note": "Use the quadratic formula and round each of the two roots to three decimal places."
+            }
+          ]
+        },
+        {
+          "id": "y11a-excel-algebra-q60",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve \\(4x+7=3(x-2)\\).",
+          "options": [
+            "\\(x=13\\)",
+            "\\(x=-1\\)",
+            "\\(x=-5\\)",
+            "\\(x=-13\\)"
+          ],
+          "answer": 3,
+          "hint": "Expand the right-hand side before collecting x-terms.",
+          "steps": [
+            {
+              "explain": "Expand the right-hand side.",
+              "work": "\\(4x+7=3x-6\\)"
+            },
+            {
+              "explain": "Subtract 3x from both sides.",
+              "work": "\\(x+7=-6\\)"
+            },
+            {
+              "explain": "Subtract 7 from both sides.",
+              "work": "\\(\\boxed{x=-13}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 8,
+            "sourceQuestion": 60,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Solve \\(4x+7=3(x-2)\\).",
+              "note": "Expand the right-hand side before collecting x-terms."
+            }
+          ]
+        },
+        {
+          "id": "y11a-4-excel-algebra-q01",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve \\(x+\\frac{x-1}{2}=9\\).",
+          "options": [
+            "\\(x=\\frac{19}{3}\\)",
+            "\\(x=\\frac{17}{3}\\)",
+            "\\(x=6\\)",
+            "\\(x=\\frac{20}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Clear the denominator by multiplying every term by 2, then collect the x-terms.",
+          "steps": [
+            {
+              "explain": "Multiply every term in the equation by 2 so the fraction disappears.",
+              "work": "\\(2x+(x-1)=18\\)"
+            },
+            {
+              "explain": "Remove the brackets, keeping the minus sign with the 1.",
+              "work": "\\(2x+x-1=18\\)"
+            },
+            {
+              "explain": "Combine the x-terms, then add 1 to both sides.",
+              "work": "\\(3x-1=18\\Rightarrow 3x=19\\)"
+            },
+            {
+              "explain": "Divide both sides by 3.",
+              "work": "\\(x=\\frac{19}{3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 7,
+            "sourceQuestion": 1,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Solve \\(x+\\frac{x-1}{2}=9\\).",
+              "note": "Clear the denominator by multiplying every term by 2, then collect the x-terms."
+            }
+          ]
+        },
+        {
+          "id": "y11a-4-excel-further-q14",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve \\(|3x-1|=2\\).",
+          "options": [
+            "\\(x=1\\) or \\(x=-\\dfrac13\\)",
+            "\\(x=1\\) only",
+            "\\(x=-1\\) or \\(x=\\dfrac13\\)",
+            "\\(x=\\dfrac13\\) only"
+          ],
+          "answer": 0,
+          "hint": "An absolute value equals 2 when the expression inside is 2 or −2.",
+          "steps": [
+            {
+              "explain": "Set the inside equal to the positive value.",
+              "work": "3x-1=2\\Rightarrow3x=3\\Rightarrow x=1"
+            },
+            {
+              "explain": "Set the inside equal to the negative value.",
+              "work": "3x-1=-2\\Rightarrow3x=-1\\Rightarrow x=-\\dfrac13"
+            },
+            {
+              "explain": "Both values make the absolute value equal 2.",
+              "work": "\boxed{x=1\text{ or }x=-\\dfrac13}"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 32,
+            "sourceQuestion": 14,
+            "courseYear": "Year 11"
+          },
+          "keyPoints": [
+            {
+              "text": "Solve \\(|3x-1|=2\\).",
+              "note": "An absolute value equals 2 when the expression inside is 2 or −2."
+            }
+          ]
+        },
+        {
+          "id": "y11a-4-excel-further-q16",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve \\(|x-2|\\leq3\\).",
+          "options": [
+            "\\(-1\\leq x\\leq5\\)",
+            "\\(x\\leq-1\\) or \\(x\\geq5\\)",
+            "\\(-5\\leq x\\leq1\\)",
+            "\\(-1<x<5\\)"
+          ],
+          "answer": 0,
+          "hint": "The distance from x to 2 is at most 3, so write −3≤x−2≤3.",
+          "steps": [
+            {
+              "explain": "Rewrite the absolute value inequality as a double inequality.",
+              "work": "-3\\le x-2\\le3"
+            },
+            {
+              "explain": "Add 2 to all three parts.",
+              "work": "-1\\le x\\le5"
+            },
+            {
+              "explain": "Include both endpoints because equality is allowed.",
+              "work": "\boxed{-1\\le x\\le5}"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 32,
+            "sourceQuestion": 16,
+            "courseYear": "Year 11"
+          },
+          "keyPoints": [
+            {
+              "text": "Solve \\(|x-2|\\leq3\\).",
+              "note": "The distance from x to 2 is at most 3, so write −3≤x−2≤3."
+            }
+          ]
+        },
+        {
+          "id": "y11a-4-excel-further-q21",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve \\(|2x+3|=9\\).",
+          "options": [
+            "\\(x=3\\) or \\(x=-6\\)",
+            "\\(x=6\\) or \\(x=-3\\)",
+            "\\(x=3\\) only",
+            "\\(x=-6\\) only"
+          ],
+          "answer": 0,
+          "hint": "Set 2x+3 equal to 9 and to −9.",
+          "steps": [
+            {
+              "explain": "First case: positive value.",
+              "work": "2x+3=9\\Rightarrow2x=6\\Rightarrow x=3"
+            },
+            {
+              "explain": "Second case: negative value.",
+              "work": "2x+3=-9\\Rightarrow2x=-12\\Rightarrow x=-6"
+            },
+            {
+              "explain": "State both solutions.",
+              "work": "\boxed{x=3\text{ or }x=-6}"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 32,
+            "sourceQuestion": 21,
+            "courseYear": "Year 11"
+          },
+          "keyPoints": [
+            {
+              "text": "Solve \\(|2x+3|=9\\).",
+              "note": "Set 2x+3 equal to 9 and to −9."
+            }
+          ]
+        },
+        {
+          "id": "y11a-4-excel-further-q23",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve \\(|x+1|=5\\).",
+          "options": [
+            "\\(x=4\\) or \\(x=-6\\)",
+            "\\(x=6\\) or \\(x=-4\\)",
+            "\\(x=4\\) only",
+            "\\(x=-6\\) only"
+          ],
+          "answer": 0,
+          "hint": "The expression x+1 can equal 5 or −5.",
+          "steps": [
+            {
+              "explain": "Solve the positive case.",
+              "work": "x+1=5\\Rightarrow x=4"
+            },
+            {
+              "explain": "Solve the negative case.",
+              "work": "x+1=-5\\Rightarrow x=-6"
+            },
+            {
+              "explain": "State both solutions.",
+              "work": "\boxed{x=4\text{ or }x=-6}"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 32,
+            "sourceQuestion": 23,
+            "courseYear": "Year 11"
+          },
+          "keyPoints": [
+            {
+              "text": "Solve \\(|x+1|=5\\).",
+              "note": "The expression x+1 can equal 5 or −5."
+            }
+          ]
         }
       ]
     },

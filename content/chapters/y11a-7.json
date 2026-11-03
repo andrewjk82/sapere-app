@@ -9063,6 +9063,335 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "y11a-3-excel-linear-q08",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the coordinates of the point \\(P\\) on the line \\(x=-4\\), such that the line joining \\(P\\) to \\(Q(1,-3)\\) is perpendicular to the line \\(3x-2y=12\\).",
+          "options": [
+            "\\(P\\left(-4,-\\dfrac13\\right)\\)",
+            "\\(P\\left(-4,\\dfrac{10}3\\right)\\)",
+            "\\(P\\left(-4,3\\right)\\)",
+            "\\(P\\left(-4,\\dfrac13\\right)\\)"
+          ],
+          "answer": 3,
+          "hint": "Rearrange the given line to find its gradient. A perpendicular line has the negative reciprocal gradient; use Q and x=-4.",
+          "steps": [
+            {
+              "explain": "Rearrange the given line into gradient-intercept form.",
+              "work": "\\(3x-2y=12\\Rightarrow y=\\dfrac32x-6\\), so its gradient is \\(\\dfrac32\\)."
+            },
+            {
+              "explain": "Find the perpendicular gradient by taking the negative reciprocal.",
+              "work": "\\(m_{PQ}=-\\dfrac23\\)"
+            },
+            {
+              "explain": "Use Q(1,-3) in point-gradient form for line PQ.",
+              "work": "\\(y+3=-\\dfrac23(x-1)\\)"
+            },
+            {
+              "explain": "Substitute x=-4 because P lies on that vertical line.",
+              "work": "\\(y+3=-\\dfrac23(-5)=\\dfrac{10}3\\Rightarrow y=\\dfrac13\\)"
+            },
+            {
+              "explain": "Combine the given x-coordinate and calculated y-coordinate.",
+              "work": "\\(\\boxed{P\\left(-4,\\dfrac13\\right)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 17,
+            "sourceQuestion": 8,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "Find the coordinates of the point \\(P\\) on the line \\(x=-4\\), such that the line joining \\(P\\) to \\(Q(1,-3)\\) is perpendicular to the line \\(3x-2y=12\\).",
+              "note": "Rearrange the given line to find its gradient. A perpendicular line has the negative reciprocal gradient; use Q and x=-4."
+            }
+          ]
+        },
+        {
+          "id": "y11a-3-excel-linear-q09",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The line \\(2x+3y-6=0\\) cuts the x-axis at \\(A\\). The line \\(x-2y+4=0\\) cuts the x-axis at \\(B\\). The lines \\(2x+3y-6=0\\) and \\(x-2y+4=0\\) intersect at \\(C\\). Find the area of triangle \\(ABC\\).",
+          "options": [
+            "\\(7\\text{ square units}\\)",
+            "\\(14\\text{ square units}\\)",
+            "\\(3.5\\text{ square units}\\)",
+            "\\(21\\text{ square units}\\)"
+          ],
+          "answer": 0,
+          "hint": "Find both x-intercepts by setting y=0, then solve the two line equations together for C. Use AB as the base.",
+          "steps": [
+            {
+              "explain": "Find A by setting y=0 in its line.",
+              "work": "\\(2x-6=0\\Rightarrow x=3\\Rightarrow A=(3,0)\\)"
+            },
+            {
+              "explain": "Find B by setting y=0 in its line.",
+              "work": "\\(x+4=0\\Rightarrow x=-4\\Rightarrow B=(-4,0)\\)"
+            },
+            {
+              "explain": "Solve the two equations together to find their intersection C. From the second, x=2y-4; substitute into the first.",
+              "work": "\\(2(2y-4)+3y-6=0\\Rightarrow7y=14\\Rightarrow y=2,\\ x=0\\)"
+            },
+            {
+              "explain": "Use AB as the horizontal base and the vertical distance from C to the x-axis as the height.",
+              "work": "\\(AB=3-(-4)=7,\\quad h=2\\)"
+            },
+            {
+              "explain": "Calculate the triangle area.",
+              "work": "\\(A=\\dfrac12(7)(2)=\\boxed{7\\text{ square units}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 17,
+            "sourceQuestion": 9,
+            "courseYear": "Year 11",
+            "reviewStatus": "independently-checked"
+          },
+          "keyPoints": [
+            {
+              "text": "The line \\(2x+3y-6=0\\) cuts the x-axis at \\(A\\). The line \\(x-2y+4=0\\) cuts the x-axis at \\(B\\). The lines \\(2x+3y-6=0\\) and \\(x-2y+4=0\\) intersect at \\(C\\). Find the area of triangle \\(ABC\\).",
+              "note": "Find both x-intercepts by setting y=0, then solve the two line equations together for C. Use AB as the base."
+            }
+          ]
+        },
+        {
+          "id": "y11a-3-excel-linear-q28",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The diagram shows the rhombus \\(OABC\\). The diagonal from the point \\(A(7,11)\\) to the point \\(C\\) lies on the line \\(\\ell_1\\). The other diagonal, from the origin \\(O\\) to the point \\(B\\), lies on the line \\(\\ell_2\\), which has equation \\(y=-\\dfrac x3\\).",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" viewBox=\"0 0 480 360\" role=\"img\" aria-label=\"Rhombus OABC with diagonals AC on line l1 and OB on line l2\"><rect x=\"35\" y=\"25\" width=\"410\" height=\"310\" fill=\"white\" stroke=\"#e2e8f0\"/><line x1=\"80\" y1=\"180\" x2=\"420\" y2=\"180\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><line x1=\"180\" y1=\"40\" x2=\"180\" y2=\"330\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><polygon points=\"180,180 355,70 330,200 155,310\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2.5\"/><line x1=\"155\" y1=\"310\" x2=\"355\" y2=\"70\" stroke=\"#64748b\" stroke-width=\"2.2\"/><line x1=\"180\" y1=\"180\" x2=\"330\" y2=\"200\" stroke=\"#64748b\" stroke-width=\"2.2\"/><circle cx=\"180\" cy=\"180\" r=\"4\" fill=\"#334155\"/><circle cx=\"355\" cy=\"70\" r=\"4\" fill=\"#334155\"/><circle cx=\"330\" cy=\"200\" r=\"4\" fill=\"#334155\"/><circle cx=\"155\" cy=\"310\" r=\"4\" fill=\"#334155\"/><circle cx=\"255\" cy=\"190\" r=\"4\" fill=\"#334155\"/><text x=\"263\" y=\"193\" font-family=\"Arial\" font-size=\"11\" fill=\"#334155\">D</text><text x=\"162\" y=\"196\" font-family=\"Arial\" font-size=\"12\" fill=\"#334155\">O</text><text x=\"361\" y=\"66\" font-family=\"Arial\" font-size=\"12\" fill=\"#334155\">A(7, 11)</text><text x=\"335\" y=\"216\" font-family=\"Arial\" font-size=\"12\" fill=\"#334155\">B</text><text x=\"129\" y=\"326\" font-family=\"Arial\" font-size=\"12\" fill=\"#334155\">C</text><text x=\"322\" y=\"104\" font-family=\"Arial\" font-size=\"13\" fill=\"#475569\">ℓ₁</text><text x=\"279\" y=\"204\" font-family=\"Arial\" font-size=\"13\" fill=\"#475569\">ℓ₂</text><text x=\"350\" y=\"326\" font-family=\"Arial\" font-size=\"10\" fill=\"#64748b\">NOT TO SCALE</text></svg>"
+          },
+          "hint": "A rhombus has perpendicular diagonals. Use that fact to find the slope of ℓ₁, then use the point A. At D, the two line equations are equal.",
+          "steps": [],
+          "parts": [
+            {
+              "id": "y11a-3-excel-linear-q28i",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Show that the equation of the line \\(\\ell_1\\) is \\(y=3x-10\\).",
+              "options": [
+                "\\(y=3x-10\\)",
+                "\\(y=-3x+10\\)",
+                "\\(y=\\dfrac13x-10\\)",
+                "\\(y=3x+10\\)"
+              ],
+              "answer": 0,
+              "hint": "The diagonals of a rhombus are perpendicular. Since \\(\\ell_2\\) has gradient \\(-1/3\\), find the perpendicular gradient and use A(7,11).",
+              "steps": [
+                {
+                  "explain": "Line ℓ₂ has equation y=−x/3, so its gradient is −1/3. The diagonals of a rhombus are perpendicular.",
+                  "work": "\\(m_{\\ell_2}=-\\dfrac13\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" viewBox=\"0 0 480 360\" role=\"img\" aria-label=\"Rhombus OABC with diagonals AC on line l1 and OB on line l2\"><rect x=\"35\" y=\"25\" width=\"410\" height=\"310\" fill=\"white\" stroke=\"#e2e8f0\"/><line x1=\"80\" y1=\"180\" x2=\"420\" y2=\"180\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><line x1=\"180\" y1=\"40\" x2=\"180\" y2=\"330\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><polygon points=\"180,180 355,70 330,200 155,310\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2.5\"/><line x1=\"155\" y1=\"310\" x2=\"355\" y2=\"70\" stroke=\"#64748b\" stroke-width=\"2.2\"/><line x1=\"180\" y1=\"180\" x2=\"330\" y2=\"200\" stroke=\"#7c3aed\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"180\" r=\"4\" fill=\"#334155\"/><circle cx=\"355\" cy=\"70\" r=\"4\" fill=\"#334155\"/><circle cx=\"330\" cy=\"200\" r=\"4\" fill=\"#334155\"/><circle cx=\"155\" cy=\"310\" r=\"4\" fill=\"#334155\"/><circle cx=\"255\" cy=\"190\" r=\"4\" fill=\"#334155\"/><text x=\"263\" y=\"193\" font-family=\"Arial\" font-size=\"11\" fill=\"#334155\">D</text><text x=\"162\" y=\"196\" font-family=\"Arial\" font-size=\"12\" fill=\"#334155\">O</text><text x=\"361\" y=\"66\" font-family=\"Arial\" font-size=\"12\" fill=\"#334155\">A(7, 11)</text><text x=\"335\" y=\"216\" font-family=\"Arial\" font-size=\"12\" fill=\"#334155\">B</text><text x=\"129\" y=\"326\" font-family=\"Arial\" font-size=\"12\" fill=\"#334155\">C</text><text x=\"322\" y=\"104\" font-family=\"Arial\" font-size=\"13\" fill=\"#475569\">ℓ₁</text><text x=\"279\" y=\"204\" font-family=\"Arial\" font-size=\"13\" fill=\"#475569\">ℓ₂</text><text x=\"350\" y=\"326\" font-family=\"Arial\" font-size=\"10\" fill=\"#64748b\">NOT TO SCALE</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Perpendicular gradients multiply to −1. Find the gradient of ℓ₁.",
+                  "work": "\\(m_{\\ell_1}\\left(-\\dfrac13\\right)=-1\\Rightarrow m_{\\ell_1}=3\\)"
+                },
+                {
+                  "explain": "Use point-gradient form with gradient 3 through A(7,11).",
+                  "work": "\\(y-11=3(x-7)\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" viewBox=\"0 0 480 360\" role=\"img\" aria-label=\"Rhombus OABC with diagonals AC on line l1 and OB on line l2\"><rect x=\"35\" y=\"25\" width=\"410\" height=\"310\" fill=\"white\" stroke=\"#e2e8f0\"/><line x1=\"80\" y1=\"180\" x2=\"420\" y2=\"180\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><line x1=\"180\" y1=\"40\" x2=\"180\" y2=\"330\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><polygon points=\"180,180 355,70 330,200 155,310\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2.5\"/><line x1=\"155\" y1=\"310\" x2=\"355\" y2=\"70\" stroke=\"#7c3aed\" stroke-width=\"4\"/><line x1=\"180\" y1=\"180\" x2=\"330\" y2=\"200\" stroke=\"#64748b\" stroke-width=\"2.2\"/><circle cx=\"180\" cy=\"180\" r=\"4\" fill=\"#334155\"/><circle cx=\"355\" cy=\"70\" r=\"4\" fill=\"#334155\"/><circle cx=\"330\" cy=\"200\" r=\"4\" fill=\"#334155\"/><circle cx=\"155\" cy=\"310\" r=\"4\" fill=\"#334155\"/><circle cx=\"255\" cy=\"190\" r=\"4\" fill=\"#334155\"/><text x=\"263\" y=\"193\" font-family=\"Arial\" font-size=\"11\" fill=\"#334155\">D</text><text x=\"162\" y=\"196\" font-family=\"Arial\" font-size=\"12\" fill=\"#334155\">O</text><text x=\"361\" y=\"66\" font-family=\"Arial\" font-size=\"12\" fill=\"#334155\">A(7, 11)</text><text x=\"335\" y=\"216\" font-family=\"Arial\" font-size=\"12\" fill=\"#334155\">B</text><text x=\"129\" y=\"326\" font-family=\"Arial\" font-size=\"12\" fill=\"#334155\">C</text><text x=\"322\" y=\"104\" font-family=\"Arial\" font-size=\"13\" fill=\"#475569\">ℓ₁</text><text x=\"279\" y=\"204\" font-family=\"Arial\" font-size=\"13\" fill=\"#475569\">ℓ₂</text><text x=\"350\" y=\"326\" font-family=\"Arial\" font-size=\"10\" fill=\"#64748b\">NOT TO SCALE</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Expand and simplify. This is the equation requested.",
+                  "work": "\\(y-11=3x-21\\Rightarrow\\boxed{y=3x-10}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+                "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+                "sourcePage": 20,
+                "sourceQuestion": "28i",
+                "courseYear": "Year 11"
+              },
+              "keyPoints": [
+                {
+                  "text": "Show that the equation of the line \\(\\ell_1\\) is \\(y=3x-10\\).",
+                  "note": "The diagonals of a rhombus are perpendicular. Since \\(\\ell_2\\) has gradient \\(-1/3\\), find the perpendicular gradient and use A(7,11)."
+                }
+              ]
+            },
+            {
+              "id": "y11a-3-excel-linear-q28ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The lines \\(\\ell_1\\) and \\(\\ell_2\\) intersect at the point \\(D\\). Find the coordinates of \\(D\\).",
+              "options": [
+                "\\((3,-1)\\)",
+                "\\((-3,1)\\)",
+                "\\((3,1)\\)",
+                "\\((10,-1)\\)"
+              ],
+              "answer": 0,
+              "hint": "At D, the two line equations have the same x- and y-values. Set \\(3x-10=-x/3\\).",
+              "steps": [
+                {
+                  "explain": "Use the two diagonal-line equations at their intersection.",
+                  "work": "\\(3x-10=-\\dfrac x3\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" viewBox=\"0 0 480 360\" role=\"img\" aria-label=\"Rhombus OABC with diagonals AC on line l1 and OB on line l2\"><rect x=\"35\" y=\"25\" width=\"410\" height=\"310\" fill=\"white\" stroke=\"#e2e8f0\"/><line x1=\"80\" y1=\"180\" x2=\"420\" y2=\"180\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><line x1=\"180\" y1=\"40\" x2=\"180\" y2=\"330\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><polygon points=\"180,180 355,70 330,200 155,310\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2.5\"/><line x1=\"155\" y1=\"310\" x2=\"355\" y2=\"70\" stroke=\"#7c3aed\" stroke-width=\"3\"/><line x1=\"180\" y1=\"180\" x2=\"330\" y2=\"200\" stroke=\"#7c3aed\" stroke-width=\"3\"/><circle cx=\"180\" cy=\"180\" r=\"4\" fill=\"#334155\"/><circle cx=\"355\" cy=\"70\" r=\"4\" fill=\"#334155\"/><circle cx=\"330\" cy=\"200\" r=\"4\" fill=\"#334155\"/><circle cx=\"155\" cy=\"310\" r=\"4\" fill=\"#334155\"/><circle cx=\"255\" cy=\"190\" r=\"7\" fill=\"#f59e0b\" stroke=\"white\" stroke-width=\"2\"/><text x=\"264\" y=\"190\" font-family=\"Arial\" font-size=\"12\" font-weight=\"bold\" fill=\"#b45309\">D</text><text x=\"162\" y=\"196\" font-family=\"Arial\" font-size=\"12\" fill=\"#334155\">O</text><text x=\"361\" y=\"66\" font-family=\"Arial\" font-size=\"12\" fill=\"#334155\">A(7, 11)</text><text x=\"335\" y=\"216\" font-family=\"Arial\" font-size=\"12\" fill=\"#334155\">B</text><text x=\"129\" y=\"326\" font-family=\"Arial\" font-size=\"12\" fill=\"#334155\">C</text><text x=\"322\" y=\"104\" font-family=\"Arial\" font-size=\"13\" fill=\"#475569\">ℓ₁</text><text x=\"279\" y=\"204\" font-family=\"Arial\" font-size=\"13\" fill=\"#475569\">ℓ₂</text><text x=\"350\" y=\"326\" font-family=\"Arial\" font-size=\"10\" fill=\"#64748b\">NOT TO SCALE</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Multiply by 3 to clear the denominator, then solve for x.",
+                  "work": "\\(9x-30=-x\\Rightarrow10x=30\\Rightarrow x=3\\)"
+                },
+                {
+                  "explain": "Substitute x=3 into either line equation.",
+                  "work": "\\(y=-\\dfrac{3}{3}=-1\\)"
+                },
+                {
+                  "explain": "Write the intersection as an ordered pair.",
+                  "work": "\\(\\boxed{D=(3,-1)}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+                "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+                "sourcePage": 20,
+                "sourceQuestion": "28ii",
+                "courseYear": "Year 11"
+              },
+              "keyPoints": [
+                {
+                  "text": "The lines \\(\\ell_1\\) and \\(\\ell_2\\) intersect at the point \\(D\\). Find the coordinates of \\(D\\).",
+                  "note": "At D, the two line equations have the same x- and y-values. Set \\(3x-10=-x/3\\)."
+                }
+              ]
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 20,
+            "sourceQuestion": 28,
+            "courseYear": "Year 11"
+          },
+          "keyPoints": [
+            {
+              "text": "The diagram shows the rhombus \\(OABC\\). The diagonal from the point \\(A(7,11)\\) to the point \\(C\\) lies on the line \\(\\ell_1\\). The other diagonal, from the origin \\(O\\) to the point \\(B\\), lies on the line \\(\\ell_2\\), which has equation \\(y=-\\dfrac x3\\).",
+              "note": "A rhombus has perpendicular diagonals. Use that fact to find the slope of ℓ₁, then use the point A. At D, the two line equations are equal."
+            }
+          ]
+        },
+        {
+          "id": "y11a-3-excel-linear-q35",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which equation represents the line perpendicular to \\(2x-3y=8\\), passing through the point \\((2,0)\\)?",
+          "hint": "Find the given gradient, take its negative reciprocal, and use the point (2,0).",
+          "steps": [
+            {
+              "explain": "Make y the subject to read the gradient.",
+              "work": "\\(2x-3y=8\\Rightarrow y=\\dfrac23x-\\dfrac83\\), so \\(m=\\dfrac23\\)"
+            },
+            {
+              "explain": "Take the negative reciprocal for the perpendicular line.",
+              "work": "\\(m_\\perp=-\\dfrac32\\)"
+            },
+            {
+              "explain": "Use point-gradient form with (2,0).",
+              "work": "\\(y-0=-\\dfrac32(x-2)\\)"
+            },
+            {
+              "explain": "Multiply out and rearrange.",
+              "work": "\\(2y=-3x+6\\Rightarrow\\boxed{3x+2y=6}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 21,
+            "sourceQuestion": 35,
+            "courseYear": "Year 11"
+          },
+          "options": [
+            "\\(3x+2y=6\\)",
+            "\\(3x+2y=4\\)",
+            "\\(3x-2y=6\\)",
+            "\\(3x-2y=4\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "Which equation represents the line perpendicular to \\(2x-3y=8\\), passing through the point \\((2,0)\\)?",
+              "note": "Find the given gradient, take its negative reciprocal, and use the point (2,0)."
+            }
+          ]
+        },
+        {
+          "id": "y11a-3-excel-linear-q47",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the equation of the line that passes through \\((-1,3)\\) and is perpendicular to \\(2x+y+4=0\\).",
+          "hint": "Find the original gradient, take its negative reciprocal and use the given point.",
+          "steps": [
+            {
+              "explain": "Rearrange the given line.",
+              "work": "\\(y=-2x-4\\), so its gradient is \\(-2\\)"
+            },
+            {
+              "explain": "Take the negative reciprocal.",
+              "work": "\\(m_\\perp=\\dfrac12\\)"
+            },
+            {
+              "explain": "Use point-gradient form through (-1,3).",
+              "work": "\\(y-3=\\dfrac12(x+1)\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(\\boxed{y=\\dfrac12x+\\dfrac72}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 23,
+            "sourceQuestion": 47,
+            "courseYear": "Year 11"
+          },
+          "options": [
+            "\\(y=\\dfrac12x+\\dfrac72\\)",
+            "\\(y=-\\dfrac12x+\\dfrac52\\)",
+            "\\(y=2x+5\\)",
+            "\\(y=-2x+1\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "Find the equation of the line that passes through \\((-1,3)\\) and is perpendicular to \\(2x+y+4=0\\).",
+              "note": "Find the original gradient, take its negative reciprocal and use the given point."
+            }
+          ]
         }
       ]
     }

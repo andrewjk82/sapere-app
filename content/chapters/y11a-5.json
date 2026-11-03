@@ -9937,7 +9937,13 @@
             "sourceQuestion": 9,
             "courseYear": "Year 11",
             "reviewStatus": "independently-checked"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "If \\(f(x)=ax^3+bx^2+cx+d\\), find \\(f(x)-f(-x)\\).",
+              "note": "Substitute \\(-x\\) for every x, keeping track of odd and even powers, then subtract the entire result."
+            }
+          ]
         },
         {
           "id": "y11a-5c-excel-intro-q13",
@@ -18311,7 +18317,13 @@
             "sourceQuestion": 4,
             "courseYear": "Year 11",
             "reviewStatus": "independently-checked"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "Let \\(f\\) and \\(g\\) be two functions such that \\(f(3)=2\\), \\(f(5)=3\\), \\(g(2)=3\\), \\(g(4)=5\\). What is the value of \\(f(g(4))\\)?",
+              "note": "Work from the inside out: evaluate \\(g(4)\\) first, then use that result as the input to \\(f\\)."
+            }
+          ]
         },
         {
           "id": "y11a-5f-excel-intro-q06",
@@ -18370,7 +18382,13 @@
                 "sourceQuestion": "6(i)",
                 "courseYear": "Year 11",
                 "reviewStatus": "independently-checked"
-              }
+              },
+              "keyPoints": [
+                {
+                  "text": "Write an expression for \\(g(f(x))\\).",
+                  "note": "In \\(g(u)=\\frac{4u}{u+2}\\), replace every u with the whole expression \\(x^2-3\\)."
+                }
+              ]
             },
             {
               "id": "y11a-5f-excel-intro-q06ii",
@@ -18408,7 +18426,19 @@
                 "sourceQuestion": "6(ii)",
                 "courseYear": "Year 11",
                 "reviewStatus": "independently-checked"
-              }
+              },
+              "keyPoints": [
+                {
+                  "text": "Hence or otherwise find the value of \\(g(f(-2))\\).",
+                  "note": "Follow the nesting: first calculate \\(f(-2)\\), then put that result into g."
+                }
+              ]
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Given that \\(f(x)=x^2-3\\) and \\(g(x)=\\frac{4x}{x+2}\\):",
+              "note": "For (i), substitute the complete expression \\(f(x)\\) wherever g has its input. For (ii), evaluate the inside function first."
             }
           ]
         }

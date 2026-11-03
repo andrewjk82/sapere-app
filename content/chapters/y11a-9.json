@@ -912,6 +912,526 @@
               "work": "\\(\\boxed{(a,b)=(2,1)}\\)"
             }
           ]
+        },
+        {
+          "id": "y11a-9-excel-derivativegraph-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Let h(x)=f(g(x)) where the function f(x) is an odd function and the function g(x) is an even function. The tangent to y=h(x) at x=k, where k>0, has the equation y=mx+c. What is the equation of the tangent to y=h(x) at x=−k?",
+          "options": [
+            "y=mx+c",
+            "y=−mx+c",
+            "y=mx−c",
+            "y=−mx−c"
+          ],
+          "answer": 1,
+          "hint": "First determine whether h is even or odd. Since g(−x)=g(x), h(−x)=f(g(x))=h(x), so h is even and its tangent slopes at opposite x-values have opposite signs.",
+          "steps": [
+            {
+              "explain": "Use the definitions: f is odd and g is even. Then g(−x)=g(x), so the input to f is unchanged when x changes sign.",
+              "work": "h(−x)=f(g(−x))=f(g(x))=h(x)"
+            },
+            {
+              "explain": "Thus h is even: the graph is symmetric about the y-axis. A point at x=−k has the same height c as the point at x=k.",
+              "work": "h(−k)=h(k)"
+            },
+            {
+              "explain": "Reflection across the y-axis reverses a tangent’s horizontal direction, so the slope changes from m to −m. The tangent through (−k,c) is therefore y−c=−m(x+k), which is equivalent to the matching line stated in the source answer.",
+              "work": "tangent slope at −k is −m; choose option B"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 77,
+            "sourceQuestion": 1
+          },
+          "keyPoints": [
+            {
+              "text": "Let h(x)=f(g(x)) where the function f(x) is an odd function and the function g(x) is an even function. The tangent to y=h(x) at x=k, where k>0, has the equation y=mx+c. What is the equation of the tangent to y=h(x) at x=−k?",
+              "note": "First determine whether h is even or odd. Since g(−x)=g(x), h(−x)=f(g(x))=h(x), so h is even and its tangent slopes at opposite x-values have opposite signs."
+            }
+          ]
+        },
+        {
+          "id": "y11a-9-excel-derivativegraph-q3",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The diagram shows the graph of a function y=f(x).",
+          "hint": "Read the tangent slope from the original curve: horizontal at turning points, positive when the curve rises, and negative when it falls.",
+          "steps": [],
+          "parts": [
+            {
+              "id": "y11a-9-excel-derivativegraph-q3i",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "What feature will the gradient function have when x = 5?",
+              "options": [
+                "f′(5)=0, so the gradient graph crosses or touches the x-axis at x=5.",
+                "f′(5)>0, so the gradient graph is above the x-axis.",
+                "f′(5)<0, so the gradient graph is below the x-axis.",
+                "f′(5) is undefined."
+              ],
+              "answer": 0,
+              "hint": "At x=5 the curve y=f(x) has a local minimum, so its tangent is horizontal.",
+              "steps": [
+                {
+                  "explain": "Locate x=5 on the given curve: it is the bottom of a smooth local minimum. Highlight the flat tangent there.",
+                  "work": "gradient of tangent at a smooth turning point is 0",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 250\" role=\"img\" aria-label=\"A cubic-like curve y=f(x) has a local maximum at x=1, decreases to a local minimum at x=5, and increases afterward.\"><rect width=\"380\" height=\"250\" fill=\"white\"/><path d=\"M36 180 H350 M85 30 V220\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M35 198 C62 145 78 92 108 78 C137 63 151 89 176 126 C202 168 224 206 247 200 C276 192 297 119 346 49\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M108 78 H176 M247 200 H310\" stroke=\"#f59e0b\" stroke-dasharray=\"5 4\" stroke-width=\"2\"/><path d=\"M95 78 H121 M235 200 H260\" stroke=\"#2563eb\" stroke-width=\"5\"/><text x=\"104\" y=\"67\">x=1</text><text x=\"242\" y=\"220\">x=5</text><text x=\"352\" y=\"185\">x</text><text x=\"75\" y=\"25\">y</text><text x=\"45\" y=\"198\">y=f(x)</text></svg>"
+                  }
+                },
+                {
+                  "explain": "The gradient function records the tangent gradient, so f′(5)=0.",
+                  "work": "f′(5)=0"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "What feature will the gradient function have when x = 5?",
+                  "note": "At x=5 the curve y=f(x) has a local minimum, so its tangent is horizontal."
+                }
+              ]
+            },
+            {
+              "id": "y11a-9-excel-derivativegraph-q3ii",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "For what values of x is the derivative f′(x) positive?",
+              "options": [
+                "x<1 or x>5",
+                "1<x<5",
+                "x<1 only",
+                "x>5 only"
+              ],
+              "answer": 0,
+              "hint": "f′ is positive where the original curve rises as you move from left to right.",
+              "steps": [
+                {
+                  "explain": "Before the local maximum at x=1 the curve rises; between x=1 and x=5 it falls; after the local minimum at x=5 it rises again. Highlight the two rising intervals.",
+                  "work": "f′(x)>0 on x<1 and x>5",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 250\" role=\"img\" aria-label=\"A cubic-like curve y=f(x) has a local maximum at x=1, decreases to a local minimum at x=5, and increases afterward.\"><rect width=\"380\" height=\"250\" fill=\"white\"/><path d=\"M36 180 H350 M85 30 V220\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M35 198 C62 145 78 92 108 78 C137 63 151 89 176 126 C202 168 224 206 247 200 C276 192 297 119 346 49\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M108 78 H176 M247 200 H310\" stroke=\"#f59e0b\" stroke-dasharray=\"5 4\" stroke-width=\"2\"/><path d=\"M95 78 H121 M235 200 H260\" stroke=\"#2563eb\" stroke-width=\"5\"/><text x=\"104\" y=\"67\">x=1</text><text x=\"242\" y=\"220\">x=5</text><text x=\"352\" y=\"185\">x</text><text x=\"75\" y=\"25\">y</text><text x=\"45\" y=\"198\">y=f(x)</text></svg>"
+                  }
+                },
+                {
+                  "explain": "The derivative is zero at x=1 and x=5, so those endpoints are not included in the positive intervals.",
+                  "work": "x<1 or x>5"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "For what values of x is the derivative f′(x) positive?",
+                  "note": "f′ is positive where the original curve rises as you move from left to right."
+                }
+              ]
+            },
+            {
+              "id": "y11a-9-excel-derivativegraph-q3iii",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "What, if anything, can be said about the graph of y=f′(x) when x = 2?",
+              "options": [
+                "It is below the x-axis because f is decreasing at x=2.",
+                "It crosses the x-axis because f has a maximum at x=2.",
+                "It is above the x-axis because f is increasing at x=2.",
+                "It has a vertical asymptote."
+              ],
+              "answer": 0,
+              "hint": "At x=2, check whether the original curve is increasing or decreasing; the derivative has the same sign as its tangent slope.",
+              "steps": [
+                {
+                  "explain": "At x=2 the curve lies between its maximum at 1 and minimum at 5, so it is decreasing.",
+                  "work": "tangent slope at x=2 is negative",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 250\" role=\"img\" aria-label=\"A cubic-like curve y=f(x) has a local maximum at x=1, decreases to a local minimum at x=5, and increases afterward.\"><rect width=\"380\" height=\"250\" fill=\"white\"/><path d=\"M36 180 H350 M85 30 V220\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M35 198 C62 145 78 92 108 78 C137 63 151 89 176 126 C202 168 224 206 247 200 C276 192 297 119 346 49\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M108 78 H176 M247 200 H310\" stroke=\"#f59e0b\" stroke-dasharray=\"5 4\" stroke-width=\"2\"/><path d=\"M95 78 H121 M235 200 H260\" stroke=\"#2563eb\" stroke-width=\"5\"/><text x=\"104\" y=\"67\">x=1</text><text x=\"242\" y=\"220\">x=5</text><text x=\"352\" y=\"185\">x</text><text x=\"75\" y=\"25\">y</text><text x=\"45\" y=\"198\">y=f(x)</text></svg>"
+                  }
+                },
+                {
+                  "explain": "A negative derivative value is plotted below the horizontal axis.",
+                  "work": "f′(2)<0"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "What, if anything, can be said about the graph of y=f′(x) when x = 2?",
+                  "note": "At x=2, check whether the original curve is increasing or decreasing; the derivative has the same sign as its tangent slope."
+                }
+              ]
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 77,
+            "sourceQuestion": 3
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 250\" role=\"img\" aria-label=\"A cubic-like curve y=f(x) has a local maximum at x=1, decreases to a local minimum at x=5, and increases afterward.\"><rect width=\"380\" height=\"250\" fill=\"white\"/><path d=\"M36 180 H350 M85 30 V220\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M35 198 C62 145 78 92 108 78 C137 63 151 89 176 126 C202 168 224 206 247 200 C276 192 297 119 346 49\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M108 78 H176 M247 200 H310\" stroke=\"#f59e0b\" stroke-dasharray=\"5 4\" stroke-width=\"2\"/><path d=\"M95 78 H121 M235 200 H260\" stroke=\"#2563eb\" stroke-width=\"5\"/><text x=\"104\" y=\"67\">x=1</text><text x=\"242\" y=\"220\">x=5</text><text x=\"352\" y=\"185\">x</text><text x=\"75\" y=\"25\">y</text><text x=\"45\" y=\"198\">y=f(x)</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "The diagram shows the graph of a function y=f(x).",
+              "note": "Read the tangent slope from the original curve: horizontal at turning points, positive when the curve rises, and negative when it falls."
+            }
+          ]
+        },
+        {
+          "id": "y11a-9-excel-derivativegraph-q5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The diagram shows the graph of the gradient function of the function f(x). For what value of x does f(x) have a local maximum? Justify your answer.",
+          "options": [
+            "x=−1 because f′ changes from negative to positive",
+            "x=3 because f′ changes from positive to negative",
+            "x=−1 because f′ changes from positive to negative",
+            "x=3 because f′=0 only there"
+          ],
+          "answer": 1,
+          "hint": "A local maximum occurs where f′ changes from positive to negative as x increases.",
+          "steps": [
+            {
+              "explain": "The graph shown is f′, so its sign tells whether f is rising or falling. At x=3 it crosses from above the x-axis to below it.",
+              "work": "f′>0 just before 3;  f′<0 just after 3",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 230\" role=\"img\" aria-label=\"Graph of f prime crosses the x-axis at x=-1 and x=3; it is negative before -1, positive between -1 and 3, and negative after 3.\"><rect width=\"360\" height=\"230\" fill=\"white\"/><path d=\"M35 115 H335 M70 30 V200\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M38 165 C53 145 60 118 83 115 C100 112 113 66 145 55 C174 45 194 88 220 115 C244 140 269 162 291 164 C309 165 322 151 334 145\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M38 165 C53 145 60 118 83 115\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"5\"/><path d=\"M220 115 C244 140 269 162 291 164 C309 165 322 151 334 145\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"5\"/><circle cx=\"83\" cy=\"115\" r=\"4\" fill=\"#334155\"/><circle cx=\"220\" cy=\"115\" r=\"4\" fill=\"#334155\"/><text x=\"77\" y=\"136\">−1</text><text x=\"215\" y=\"136\">3</text><text x=\"340\" y=\"120\">x</text><text x=\"60\" y=\"27\">f′(x)</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore f increases before x=3 and decreases after x=3. That change from increasing to decreasing gives a local maximum.",
+              "work": "local maximum at x=3"
+            },
+            {
+              "explain": "At x=−1 the sign changes negative to positive, giving a local minimum instead.",
+              "work": "answer: x=3"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 77,
+            "sourceQuestion": 5
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 230\" role=\"img\" aria-label=\"Graph of f prime crosses the x-axis at x=-1 and x=3; it is negative before -1, positive between -1 and 3, and negative after 3.\"><rect width=\"360\" height=\"230\" fill=\"white\"/><path d=\"M35 115 H335 M70 30 V200\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M38 165 C53 145 60 118 83 115 C100 112 113 66 145 55 C174 45 194 88 220 115 C244 140 269 162 291 164 C309 165 322 151 334 145\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M38 165 C53 145 60 118 83 115\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"5\"/><path d=\"M220 115 C244 140 269 162 291 164 C309 165 322 151 334 145\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"5\"/><circle cx=\"83\" cy=\"115\" r=\"4\" fill=\"#334155\"/><circle cx=\"220\" cy=\"115\" r=\"4\" fill=\"#334155\"/><text x=\"77\" y=\"136\">−1</text><text x=\"215\" y=\"136\">3</text><text x=\"340\" y=\"120\">x</text><text x=\"60\" y=\"27\">f′(x)</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "The diagram shows the graph of the gradient function of the function f(x). For what value of x does f(x) have a local maximum? Justify your answer.",
+              "note": "A local maximum occurs where f′ changes from positive to negative as x increases."
+            }
+          ]
+        },
+        {
+          "id": "y11a-9-excel-derivativegraph-q7",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The diagram shows the graph of a function y=f(x).",
+          "hint": "The derivative is the tangent gradient of the shown curve. Mark turning points as zeros, then read whether the original curve is rising or falling.",
+          "steps": [],
+          "parts": [
+            {
+              "id": "y11a-9-excel-derivativegraph-q7i",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "For which values of x is the derivative, f′(x), negative?",
+              "options": [
+                "−1<x<3",
+                "x<−1 or x>3",
+                "x<3",
+                "x>3"
+              ],
+              "answer": 0,
+              "hint": "The derivative is negative where the original function is decreasing.",
+              "steps": [
+                {
+                  "explain": "Read the original curve from left to right. It rises to a local maximum near x=−1, then falls until its local minimum near x=3. Highlight that falling interval.",
+                  "work": "f decreases for −1<x<3",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 430 240\" role=\"img\" aria-label=\"Graph y=f(x): crosses x-axis at about -4, 1 and 5; has a local maximum near -1 and a local minimum near 3; it approaches a horizontal value as x grows.\"><rect width=\"430\" height=\"240\" fill=\"white\"/><path d=\"M35 160 H405 M95 28 V210\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M38 170 C60 126 83 85 113 72 C146 57 166 89 185 132 C206 183 229 199 253 183 C284 162 301 112 324 94 C352 72 378 66 400 64\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M38 170 C60 126 83 85 95 79 M113 72 C146 57 166 89 185 132 C206 183 229 199 253 183 C284 162 301 112 324 94 M324 94 C352 72 378 66 400 64\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"5\"/><path d=\"M38 64 H400\" stroke=\"#94a3b8\" stroke-dasharray=\"5 4\"/><text x=\"64\" y=\"178\">−4</text><text x=\"89\" y=\"178\">−1</text><text x=\"183\" y=\"178\">1</text><text x=\"250\" y=\"178\">3</text><text x=\"321\" y=\"178\">5</text><text x=\"407\" y=\"164\">x</text><text x=\"77\" y=\"24\">y</text></svg>"
+                  }
+                },
+                {
+                  "explain": "A decreasing function has negative tangent gradient.",
+                  "work": "f′(x)<0 for −1<x<3"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "For which values of x is the derivative, f′(x), negative?",
+                  "note": "The derivative is negative where the original function is decreasing."
+                }
+              ]
+            },
+            {
+              "id": "y11a-9-excel-derivativegraph-q7ii",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "What happens to f′(x) for large values of x?",
+              "options": [
+                "f′(x) approaches 0",
+                "f′(x) approaches +∞",
+                "f′(x) approaches −∞",
+                "f′(x) stays equal to 1"
+              ],
+              "answer": 0,
+              "hint": "Look at how the original curve flattens toward a horizontal asymptote as x increases.",
+              "steps": [
+                {
+                  "explain": "At the far right, the graph y=f(x) becomes almost horizontal. Highlight the increasingly flat tail.",
+                  "work": "tangent gradients get closer to 0",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 430 240\" role=\"img\" aria-label=\"Graph y=f(x): crosses x-axis at about -4, 1 and 5; has a local maximum near -1 and a local minimum near 3; it approaches a horizontal value as x grows.\"><rect width=\"430\" height=\"240\" fill=\"white\"/><path d=\"M35 160 H405 M95 28 V210\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M38 170 C60 126 83 85 113 72 C146 57 166 89 185 132 C206 183 229 199 253 183 C284 162 301 112 324 94 C352 72 378 66 400 64\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M38 170 C60 126 83 85 95 79 M113 72 C146 57 166 89 185 132 C206 183 229 199 253 183 C284 162 301 112 324 94 M324 94 C352 72 378 66 400 64\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"5\"/><path d=\"M38 64 H400\" stroke=\"#94a3b8\" stroke-dasharray=\"5 4\"/><text x=\"64\" y=\"178\">−4</text><text x=\"89\" y=\"178\">−1</text><text x=\"183\" y=\"178\">1</text><text x=\"250\" y=\"178\">3</text><text x=\"321\" y=\"178\">5</text><text x=\"407\" y=\"164\">x</text><text x=\"77\" y=\"24\">y</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Therefore the derivative tends to zero.",
+                  "work": "as x→∞, f′(x)→0"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "What happens to f′(x) for large values of x?",
+                  "note": "Look at how the original curve flattens toward a horizontal asymptote as x increases."
+                }
+              ]
+            },
+            {
+              "id": "y11a-9-excel-derivativegraph-q7iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Sketch the graph y = f′(x).",
+              "options": [
+                "Graph shown in green: positive for x<−1 and x>3, negative for −1<x<3, and approaching 0 as x→∞.",
+                "Positive for −1<x<3 and negative outside.",
+                "Negative for every x.",
+                "Positive everywhere with no x-intercepts."
+              ],
+              "answer": 0,
+              "hint": "Put zeros of f′ at the turning points of f, use the sign of f’s slope between them, and make the far-right derivative approach 0.",
+              "steps": [
+                {
+                  "explain": "At a smooth local maximum or minimum of f, its tangent is horizontal. Thus f′=0 near x=−1 and x=3.",
+                  "work": "x-intercepts of f′: −1 and 3",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 430 240\" role=\"img\" aria-label=\"Graph y=f(x): crosses x-axis at about -4, 1 and 5; has a local maximum near -1 and a local minimum near 3; it approaches a horizontal value as x grows.\"><rect width=\"430\" height=\"240\" fill=\"white\"/><path d=\"M35 160 H405 M95 28 V210\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M38 170 C60 126 83 85 113 72 C146 57 166 89 185 132 C206 183 229 199 253 183 C284 162 301 112 324 94 C352 72 378 66 400 64\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M38 170 C60 126 83 85 95 79 M113 72 C146 57 166 89 185 132 C206 183 229 199 253 183 C284 162 301 112 324 94 M324 94 C352 72 378 66 400 64\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"5\"/><path d=\"M38 64 H400\" stroke=\"#94a3b8\" stroke-dasharray=\"5 4\"/><text x=\"64\" y=\"178\">−4</text><text x=\"89\" y=\"178\">−1</text><text x=\"183\" y=\"178\">1</text><text x=\"250\" y=\"178\">3</text><text x=\"321\" y=\"178\">5</text><text x=\"407\" y=\"164\">x</text><text x=\"77\" y=\"24\">y</text></svg>"
+                  }
+                },
+                {
+                  "explain": "The original f rises before −1, falls between −1 and 3, then rises after 3. Translate these intervals to positive, negative, positive derivative values.",
+                  "work": "f′>0; then f′<0; then f′>0",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 430 240\" role=\"img\" aria-label=\"Graph y=f(x): crosses x-axis at about -4, 1 and 5; has a local maximum near -1 and a local minimum near 3; it approaches a horizontal value as x grows.\"><rect width=\"430\" height=\"240\" fill=\"white\"/><path d=\"M35 160 H405 M95 28 V210\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M38 170 C60 126 83 85 113 72 C146 57 166 89 185 132 C206 183 229 199 253 183 C284 162 301 112 324 94 C352 72 378 66 400 64\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M38 170 C60 126 83 85 95 79 M113 72 C146 57 166 89 185 132 C206 183 229 199 253 183 C284 162 301 112 324 94 M324 94 C352 72 378 66 400 64\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"5\"/><path d=\"M38 64 H400\" stroke=\"#94a3b8\" stroke-dasharray=\"5 4\"/><text x=\"64\" y=\"178\">−4</text><text x=\"89\" y=\"178\">−1</text><text x=\"183\" y=\"178\">1</text><text x=\"250\" y=\"178\">3</text><text x=\"321\" y=\"178\">5</text><text x=\"407\" y=\"164\">x</text><text x=\"77\" y=\"24\">y</text></svg>"
+                  }
+                },
+                {
+                  "explain": "The flattening tail of f means its gradient tends to zero, so the right-hand branch of f′ approaches the x-axis from above.",
+                  "work": "as x→∞, f′(x)→0; select the first sketch",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 430 200\" role=\"img\" aria-label=\"A derivative graph positive to left of x=-1, zero at -1, negative between -1 and 3, zero at 3, positive after 3 and tending to zero from above for large x.\"><rect width=\"430\" height=\"200\" fill=\"white\"/><path d=\"M30 100 H405 M80 25 V180\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M32 25 C45 45 60 77 80 100 C98 125 115 146 146 154 C182 163 206 130 230 100 C255 72 282 49 310 46 C345 43 376 63 404 76\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><path d=\"M32 25 C45 45 60 77 80 100\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"5\"/><path d=\"M80 100 C98 125 115 146 146 154 C182 163 206 130 230 100\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"5\"/><path d=\"M230 100 C255 72 282 49 310 46 C345 43 376 63 404 76\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"5\"/><text x=\"74\" y=\"120\">−1</text><text x=\"225\" y=\"120\">3</text><text x=\"407\" y=\"106\">x</text><text x=\"49\" y=\"22\">f′(x)</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "Sketch the graph y = f′(x).",
+                  "note": "Put zeros of f′ at the turning points of f, use the sign of f’s slope between them, and make the far-right derivative approach 0."
+                }
+              ]
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 77,
+            "sourceQuestion": 7
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 430 240\" role=\"img\" aria-label=\"Graph y=f(x): crosses x-axis at about -4, 1 and 5; has a local maximum near -1 and a local minimum near 3; it approaches a horizontal value as x grows.\"><rect width=\"430\" height=\"240\" fill=\"white\"/><path d=\"M35 160 H405 M95 28 V210\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M38 170 C60 126 83 85 113 72 C146 57 166 89 185 132 C206 183 229 199 253 183 C284 162 301 112 324 94 C352 72 378 66 400 64\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M38 170 C60 126 83 85 95 79 M113 72 C146 57 166 89 185 132 C206 183 229 199 253 183 C284 162 301 112 324 94 M324 94 C352 72 378 66 400 64\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"5\"/><path d=\"M38 64 H400\" stroke=\"#94a3b8\" stroke-dasharray=\"5 4\"/><text x=\"64\" y=\"178\">−4</text><text x=\"89\" y=\"178\">−1</text><text x=\"183\" y=\"178\">1</text><text x=\"250\" y=\"178\">3</text><text x=\"321\" y=\"178\">5</text><text x=\"407\" y=\"164\">x</text><text x=\"77\" y=\"24\">y</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "The diagram shows the graph of a function y=f(x).",
+              "note": "The derivative is the tangent gradient of the shown curve. Mark turning points as zeros, then read whether the original curve is rising or falling."
+            }
+          ]
+        },
+        {
+          "id": "y11a-9-excel-derivativegraph-q9",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The above diagram shows a sketch of the gradient function of the curve y=f(x). In your Writing Booklet, draw a sketch of the function y=f(x) given that f(0)=0.",
+          "options": [
+            "f rises from (0,0), has a horizontal stationary point at x=1, reaches a local maximum at x=3, then falls.",
+            "f falls from (0,0), has a minimum at x=1, then rises forever.",
+            "f rises to a maximum at x=1 and then falls for all x.",
+            "f is a straight line through (0,0)."
+          ],
+          "answer": 0,
+          "hint": "f′ is positive until x=3 except that it touches zero at x=1, then f′ is negative. Therefore f rises, has a horizontal inflection at x=1, reaches a maximum at x=3, and then falls.",
+          "steps": [
+            {
+              "explain": "The graph of f′ is above the x-axis for x<3, except it touches zero at x=1. Thus f is increasing through x=1 but has a horizontal tangent there.",
+              "work": "f′>0 on both sides of x=1; f′(1)=0",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 220\" role=\"img\" aria-label=\"Gradient graph y=f prime starts positive at x=0, touches zero at x=1, rises to a maximum near x=2, then crosses zero at x=3 and becomes negative.\"><rect width=\"360\" height=\"220\" fill=\"white\"/><path d=\"M40 170 H330 M78 25 V200\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M42 68 C63 83 73 109 94 145 C112 181 125 171 139 145 C160 109 178 68 202 67 C228 65 244 95 258 132 C271 163 284 186 302 190\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M42 68 C63 83 73 109 94 145 C112 181 125 171 139 145 C160 109 178 68 202 67 C228 65 244 95 258 132\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"5\"/><circle cx=\"112\" cy=\"170\" r=\"4\" fill=\"#7c3aed\"/><circle cx=\"258\" cy=\"170\" r=\"4\" fill=\"#f59e0b\"/><text x=\"106\" y=\"190\">1</text><text x=\"252\" y=\"190\">3</text><text x=\"335\" y=\"175\">x</text><text x=\"52\" y=\"22\">f′(x)</text></svg>"
+              }
+            },
+            {
+              "explain": "At x=3, f′ crosses from positive to negative. This gives f a local maximum.",
+              "work": "f has a local maximum at x=3",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 220\" role=\"img\" aria-label=\"Gradient graph y=f prime starts positive at x=0, touches zero at x=1, rises to a maximum near x=2, then crosses zero at x=3 and becomes negative.\"><rect width=\"360\" height=\"220\" fill=\"white\"/><path d=\"M40 170 H330 M78 25 V200\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M42 68 C63 83 73 109 94 145 C112 181 125 171 139 145 C160 109 178 68 202 67 C228 65 244 95 258 132 C271 163 284 186 302 190\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M42 68 C63 83 73 109 94 145 C112 181 125 171 139 145 C160 109 178 68 202 67 C228 65 244 95 258 132\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"5\"/><circle cx=\"112\" cy=\"170\" r=\"4\" fill=\"#7c3aed\"/><circle cx=\"258\" cy=\"170\" r=\"4\" fill=\"#f59e0b\"/><text x=\"106\" y=\"190\">1</text><text x=\"252\" y=\"190\">3</text><text x=\"335\" y=\"175\">x</text><text x=\"52\" y=\"22\">f′(x)</text></svg>"
+              }
+            },
+            {
+              "explain": "Use f(0)=0 to anchor the sketch at the origin. Then draw an increasing curve with a flat inflection at 1, a peak at 3, and a decreasing branch afterward.",
+              "work": "select first description"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 77,
+            "sourceQuestion": 9
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 220\" role=\"img\" aria-label=\"Gradient graph y=f prime starts positive at x=0, touches zero at x=1, rises to a maximum near x=2, then crosses zero at x=3 and becomes negative.\"><rect width=\"360\" height=\"220\" fill=\"white\"/><path d=\"M40 170 H330 M78 25 V200\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M42 68 C63 83 73 109 94 145 C112 181 125 171 139 145 C160 109 178 68 202 67 C228 65 244 95 258 132 C271 163 284 186 302 190\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M42 68 C63 83 73 109 94 145 C112 181 125 171 139 145 C160 109 178 68 202 67 C228 65 244 95 258 132\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"5\"/><circle cx=\"112\" cy=\"170\" r=\"4\" fill=\"#7c3aed\"/><circle cx=\"258\" cy=\"170\" r=\"4\" fill=\"#f59e0b\"/><text x=\"106\" y=\"190\">1</text><text x=\"252\" y=\"190\">3</text><text x=\"335\" y=\"175\">x</text><text x=\"52\" y=\"22\">f′(x)</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "The above diagram shows a sketch of the gradient function of the curve y=f(x). In your Writing Booklet, draw a sketch of the function y=f(x) given that f(0)=0.",
+              "note": "f′ is positive until x=3 except that it touches zero at x=1, then f′ is negative. Therefore f rises, has a horizontal inflection at x=1, reaches a maximum at x=3, and then falls."
+            }
+          ]
+        },
+        {
+          "id": "y11a-9-excel-derivativegraph-q10",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The diagram shows the graph of a certain function f(x). On the same set of axes, choose the sketch of the derivative f′(x) of the function.",
+          "options": [
+            "Negative before the local minimum, zero at the minimum, positive between the turning points, zero at the maximum, then negative.",
+            "Positive before the local minimum and negative afterward.",
+            "Always positive because f(x) is mostly above the x-axis.",
+            "Zero at the x-intercepts of f(x)."
+          ],
+          "answer": 0,
+          "hint": "The derivative is the slope, not the height. It is zero at horizontal turning points, negative while f falls and positive while f rises.",
+          "steps": [
+            {
+              "explain": "The original curve first decreases to a local minimum at x=0. Its tangent slope is negative before the minimum and zero at the minimum. Highlight that part.",
+              "work": "f′<0 before the minimum; f′=0 at the minimum",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 240\" role=\"img\" aria-label=\"A smooth curve f(x) decreases to a local minimum at x=0, rises to a local maximum to the right, then decreases again.\"><rect width=\"360\" height=\"240\" fill=\"white\"/><path d=\"M35 170 H330 M112 25 V215\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M42 52 C71 87 89 155 112 156 C137 157 145 62 187 55 C225 49 265 81 304 151 C313 168 320 181 328 194\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M42 52 C71 87 89 155 112 156\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"5\"/><path d=\"M112 156 C137 157 145 62 187 55\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"5\"/><path d=\"M187 55 C225 49 265 81 304 151 C313 168 320 181 328 194\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"5\"/><circle cx=\"112\" cy=\"156\" r=\"4\" fill=\"#2563eb\"/><circle cx=\"187\" cy=\"55\" r=\"4\" fill=\"#2563eb\"/><text x=\"118\" y=\"177\">local minimum</text><text x=\"194\" y=\"49\">local maximum</text><text x=\"334\" y=\"175\">x</text><text x=\"97\" y=\"21\">y</text></svg>"
+              }
+            },
+            {
+              "explain": "The curve then increases to a local maximum. Its derivative is positive during the rise and zero at the peak.",
+              "work": "f′>0 between the minimum and maximum; f′=0 at the maximum",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 240\" role=\"img\" aria-label=\"A smooth curve f(x) decreases to a local minimum at x=0, rises to a local maximum to the right, then decreases again.\"><rect width=\"360\" height=\"240\" fill=\"white\"/><path d=\"M35 170 H330 M112 25 V215\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M42 52 C71 87 89 155 112 156 C137 157 145 62 187 55 C225 49 265 81 304 151 C313 168 320 181 328 194\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M42 52 C71 87 89 155 112 156\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"5\"/><path d=\"M112 156 C137 157 145 62 187 55\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"5\"/><path d=\"M187 55 C225 49 265 81 304 151 C313 168 320 181 328 194\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"5\"/><circle cx=\"112\" cy=\"156\" r=\"4\" fill=\"#2563eb\"/><circle cx=\"187\" cy=\"55\" r=\"4\" fill=\"#2563eb\"/><text x=\"118\" y=\"177\">local minimum</text><text x=\"194\" y=\"49\">local maximum</text><text x=\"334\" y=\"175\">x</text><text x=\"97\" y=\"21\">y</text></svg>"
+              }
+            },
+            {
+              "explain": "After the peak, f decreases, so f′ becomes negative. Select the sketch with sign pattern −,0,+,0,−.",
+              "work": "first description; see derivative sketch",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 220\" role=\"img\" aria-label=\"Derivative graph negative before the local minimum, zero at it, positive until the local maximum, then negative.\"><rect width=\"360\" height=\"220\" fill=\"white\"/><path d=\"M30 110 H330 M110 25 V195\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M35 45 C65 67 88 95 110 110 C132 124 150 78 190 50 C225 72 268 116 325 172\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"105\" y=\"132\">f′=0</text><text x=\"185\" y=\"42\">f′=0</text><text x=\"335\" y=\"114\">x</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 78,
+            "sourceQuestion": 10
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 240\" role=\"img\" aria-label=\"A smooth curve f(x) decreases to a local minimum at x=0, rises to a local maximum to the right, then decreases again.\"><rect width=\"360\" height=\"240\" fill=\"white\"/><path d=\"M35 170 H330 M112 25 V215\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M42 52 C71 87 89 155 112 156 C137 157 145 62 187 55 C225 49 265 81 304 151 C313 168 320 181 328 194\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M42 52 C71 87 89 155 112 156\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"5\"/><path d=\"M112 156 C137 157 145 62 187 55\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"5\"/><path d=\"M187 55 C225 49 265 81 304 151 C313 168 320 181 328 194\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"5\"/><circle cx=\"112\" cy=\"156\" r=\"4\" fill=\"#2563eb\"/><circle cx=\"187\" cy=\"55\" r=\"4\" fill=\"#2563eb\"/><text x=\"118\" y=\"177\">local minimum</text><text x=\"194\" y=\"49\">local maximum</text><text x=\"334\" y=\"175\">x</text><text x=\"97\" y=\"21\">y</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "The diagram shows the graph of a certain function f(x). On the same set of axes, choose the sketch of the derivative f′(x) of the function.",
+              "note": "The derivative is the slope, not the height. It is zero at horizontal turning points, negative while f falls and positive while f rises."
+            }
+          ]
+        },
+        {
+          "id": "y11a-9-excel-calculus-q6",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A particle is moving along a straight line. The graph shows the velocity, v, of the particle for time t  \\ge  0. How many times does the particle change direction?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "answer": 0,
+          "hint": "The particle changes direction only when velocity changes sign. Touching v=0 and returning to the same side does not change direction.",
+          "steps": [
+            {
+              "explain": "Read the sign of velocity from its position relative to the horizontal axis. A negative velocity means one direction; positive means the opposite direction.",
+              "work": "direction changes only at a sign crossing",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 220\" role=\"img\" aria-label=\"Velocity v against time t starts below zero, rises to touch zero at one local maximum without changing sign, becomes negative again, then crosses to positive once and stays positive as it approaches zero.\"><rect width=\"380\" height=\"220\" fill=\"white\"/><path d=\"M35 125 H350 M60 30 V190\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M62 163 C85 151 104 125 128 125 C150 125 166 177 194 174 C222 171 239 106 260 84 C282 63 304 69 320 88 C334 105 342 116 350 116\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M62 163 C85 151 104 125 128 125 C150 125 166 177 194 174 C222 171 239 106 260 84 C282 63 304 69 320 88 C334 105 342 116 350 116\" stroke=\"#2563eb\" stroke-width=\"4\" fill=\"none\"/><text x=\"355\" y=\"130\">t</text><text x=\"45\" y=\"28\">v</text><text x=\"40\" y=\"119\">0</text><circle cx=\"128\" cy=\"125\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"227\" cy=\"125\" r=\"4\" fill=\"#10b981\"/><text x=\"100\" y=\"145\" fill=\"#b45309\">touches 0</text><text x=\"207\" y=\"146\" fill=\"#047857\">sign changes</text></svg>"
+              }
+            },
+            {
+              "explain": "The first contact with v=0 is a touch: the graph remains below the axis before and after it. No direction change occurs there.",
+              "work": "v stays negative at the first zero",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 220\" role=\"img\" aria-label=\"Velocity v against time t starts below zero, rises to touch zero at one local maximum without changing sign, becomes negative again, then crosses to positive once and stays positive as it approaches zero.\"><rect width=\"380\" height=\"220\" fill=\"white\"/><path d=\"M35 125 H350 M60 30 V190\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M62 163 C85 151 104 125 128 125 C150 125 166 177 194 174 C222 171 239 106 260 84 C282 63 304 69 320 88 C334 105 342 116 350 116\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M62 163 C85 151 104 125 128 125 C150 125 166 177 194 174 C222 171 239 106 260 84 C282 63 304 69 320 88 C334 105 342 116 350 116\" stroke=\"#2563eb\" stroke-width=\"4\" fill=\"none\"/><text x=\"355\" y=\"130\">t</text><text x=\"45\" y=\"28\">v</text><text x=\"40\" y=\"119\">0</text><circle cx=\"128\" cy=\"125\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"227\" cy=\"125\" r=\"4\" fill=\"#10b981\"/><text x=\"100\" y=\"145\" fill=\"#b45309\">touches 0</text><text x=\"207\" y=\"146\" fill=\"#047857\">sign changes</text></svg>"
+              }
+            },
+            {
+              "explain": "Later the graph crosses from negative to positive once. This is the only sign change.",
+              "work": "one direction change"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 81,
+            "sourceQuestion": 6
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 220\" role=\"img\" aria-label=\"Velocity v against time t starts below zero, rises to touch zero at one local maximum without changing sign, becomes negative again, then crosses to positive once and stays positive as it approaches zero.\"><rect width=\"380\" height=\"220\" fill=\"white\"/><path d=\"M35 125 H350 M60 30 V190\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M62 163 C85 151 104 125 128 125 C150 125 166 177 194 174 C222 171 239 106 260 84 C282 63 304 69 320 88 C334 105 342 116 350 116\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M62 163 C85 151 104 125 128 125 C150 125 166 177 194 174 C222 171 239 106 260 84 C282 63 304 69 320 88 C334 105 342 116 350 116\" stroke=\"#2563eb\" stroke-width=\"4\" fill=\"none\"/><text x=\"355\" y=\"130\">t</text><text x=\"45\" y=\"28\">v</text><text x=\"40\" y=\"119\">0</text><circle cx=\"128\" cy=\"125\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"227\" cy=\"125\" r=\"4\" fill=\"#10b981\"/><text x=\"100\" y=\"145\" fill=\"#b45309\">touches 0</text><text x=\"207\" y=\"146\" fill=\"#047857\">sign changes</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "A particle is moving along a straight line. The graph shows the velocity, v, of the particle for time t  \\ge  0. How many times does the particle change direction?",
+              "note": "The particle changes direction only when velocity changes sign. Touching v=0 and returning to the same side does not change direction."
+            }
+          ]
         }
       ]
     },
@@ -994,6 +1514,280 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "y11a-9-excel-derivativegraph-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The derivative of a function is defined as f′(x)=limₕ→₀ [f(x+h)−f(x)]/h. Differentiate f(x)=3x−x^{2} from first principles.",
+          "options": [
+            "3−2x",
+            "3+2x",
+            "2x−3",
+            "−2x"
+          ],
+          "answer": 0,
+          "hint": "Substitute x+h into f, subtract f(x), simplify, and cancel h before taking the limit.",
+          "steps": [
+            {
+              "explain": "Write f(x+h) by replacing every x with x+h.",
+              "work": "f(x+h)=3(x+h)−(x+h)^{2}"
+            },
+            {
+              "explain": "Subtract f(x), expand, and combine like terms.",
+              "work": "[3x+3h−x^{2}−2xh−h^{2}−(3x−x^{2})]/h=(3h−2xh−h^{2})/h"
+            },
+            {
+              "explain": "Factor out h and cancel it for h≠0.",
+              "work": "[h(3−2x−h)]/h=3−2x−h"
+            },
+            {
+              "explain": "Now take the limit as h approaches 0.",
+              "work": "f′(x)=limₕ→₀(3−2x−h)=3−2x"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 77,
+            "sourceQuestion": 2
+          },
+          "keyPoints": [
+            {
+              "text": "The derivative of a function is defined as f′(x)=limₕ→₀ [f(x+h)−f(x)]/h. Differentiate f(x)=3x−x^{2} from first principles.",
+              "note": "Substitute x+h into f, subtract f(x), simplify, and cancel h before taking the limit."
+            }
+          ]
+        },
+        {
+          "id": "y11a-9-excel-derivativegraph-q4",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Use differentiation by first principles to find the gradient function y′ if y = 2x^{2} − 8x + 3.",
+          "hint": "Use the limit definition first. Then evaluate the derivative at x=3 and set it to zero to find a horizontal tangent.",
+          "steps": [],
+          "parts": [
+            {
+              "id": "y11a-9-excel-derivativegraph-q4i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Use differentiation by first principles to find the gradient function y′ if y = 2x^{2} − 8x + 3.",
+              "options": [
+                "4x−8",
+                "2x−8",
+                "4x+8",
+                "2x−8x"
+              ],
+              "answer": 0,
+              "hint": "Apply the limit definition with f(x+h)=2(x+h)^{2}−8(x+h)+3, then simplify.",
+              "steps": [
+                {
+                  "explain": "Start with the first-principles definition.",
+                  "work": "y′=limₕ→₀ [f(x+h)−f(x)]/h"
+                },
+                {
+                  "explain": "Substitute the quadratic at x+h and subtract the original expression.",
+                  "work": "[2(x+h)^{2}−8(x+h)+3−(2x^{2}−8x+3)]/h"
+                },
+                {
+                  "explain": "Expand and cancel matching terms.",
+                  "work": "[4xh+2h^{2}−8h]/h"
+                },
+                {
+                  "explain": "Factor and cancel h, then take the limit.",
+                  "work": "4x+2h−8 → 4x−8"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "Use differentiation by first principles to find the gradient function y′ if y = 2x^{2} − 8x + 3.",
+                  "note": "Apply the limit definition with f(x+h)=2(x+h)^{2}−8(x+h)+3, then simplify."
+                }
+              ]
+            },
+            {
+              "id": "y11a-9-excel-derivativegraph-q4ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What is the gradient of the tangent at x = 3?",
+              "options": [
+                "4",
+                "−4",
+                "12",
+                "0"
+              ],
+              "answer": 0,
+              "hint": "Substitute x=3 into the gradient function from part (i).",
+              "steps": [
+                {
+                  "explain": "Use y′=4x−8 from part (i).",
+                  "work": "y′(3)=4(3)−8"
+                },
+                {
+                  "explain": "Calculate.",
+                  "work": "12−8=4"
+                },
+                {
+                  "explain": "State the tangent gradient.",
+                  "work": "m=4"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "What is the gradient of the tangent at x = 3?",
+                  "note": "Substitute x=3 into the gradient function from part (i)."
+                }
+              ]
+            },
+            {
+              "id": "y11a-9-excel-derivativegraph-q4iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "At what point on the curve is the tangent parallel to the x-axis?",
+              "options": [
+                "(2,−5)",
+                "(2,0)",
+                "(−5,2)",
+                "(0,3)"
+              ],
+              "answer": 0,
+              "hint": "A tangent parallel to the x-axis has gradient 0. Solve y′=0, then substitute into the original curve.",
+              "steps": [
+                {
+                  "explain": "Set the gradient function equal to zero.",
+                  "work": "4x−8=0  ⇒  x=2"
+                },
+                {
+                  "explain": "Substitute x=2 into y=2x^{2}−8x+3.",
+                  "work": "y=2(2^{2})−8(2)+3=8−16+3=−5"
+                },
+                {
+                  "explain": "Give both coordinates.",
+                  "work": "(x,y)=(2,−5)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "At what point on the curve is the tangent parallel to the x-axis?",
+                  "note": "A tangent parallel to the x-axis has gradient 0. Solve y′=0, then substitute into the original curve."
+                }
+              ]
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 77,
+            "sourceQuestion": 4
+          },
+          "keyPoints": [
+            {
+              "text": "Use differentiation by first principles to find the gradient function y′ if y = 2x^{2} − 8x + 3.",
+              "note": "Use the limit definition first. Then evaluate the derivative at x=3 and set it to zero to find a horizontal tangent."
+            }
+          ]
+        },
+        {
+          "id": "y11a-9-excel-derivativegraph-q6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Use differentiation by first principles to find dx/dt if x = t^{3} + t.",
+          "options": [
+            "3t^{2}+1",
+            "3t^{2}−1",
+            "t^{2}+1",
+            "3t+1"
+          ],
+          "answer": 0,
+          "hint": "Use the difference quotient in t: [x(t+h)−x(t)]/h. Expand the cube and cancel h.",
+          "steps": [
+            {
+              "explain": "Substitute t+h into x=t^{3}+t.",
+              "work": "x(t+h)=(t+h)^{3}+(t+h)"
+            },
+            {
+              "explain": "Subtract x(t) and expand.",
+              "work": "[(t+h)^{3}+t+h−(t^{3}+t)]/h=(3t^{2}h+3th^{2}+h^{3}+h)/h"
+            },
+            {
+              "explain": "Factor h and cancel.",
+              "work": "3t^{2}+3th+h^{2}+1"
+            },
+            {
+              "explain": "Take the limit as h→0.",
+              "work": "dx/dt=3t^{2}+1"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 77,
+            "sourceQuestion": 6
+          },
+          "keyPoints": [
+            {
+              "text": "Use differentiation by first principles to find dx/dt if x = t^{3} + t.",
+              "note": "Use the difference quotient in t: [x(t+h)−x(t)]/h. Expand the cube and cancel h."
+            }
+          ]
+        },
+        {
+          "id": "y11a-9-excel-derivativegraph-q8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Use the definition of the derivative, f′(x)=limₕ→₀ [f(x+h)−f(x)]/h, to find f′(x) when f(x)=x^{2}+5x.",
+          "options": [
+            "2x+5",
+            "2x−5",
+            "x+5",
+            "2x+10"
+          ],
+          "answer": 0,
+          "hint": "Substitute x+h, expand, subtract f(x), cancel h, then take the limit.",
+          "steps": [
+            {
+              "explain": "Evaluate the function at x+h.",
+              "work": "f(x+h)=(x+h)^{2}+5(x+h)"
+            },
+            {
+              "explain": "Subtract the original function and divide by h.",
+              "work": "[(x+h)^{2}+5(x+h)−(x^{2}+5x)]/h"
+            },
+            {
+              "explain": "Expand and cancel common terms.",
+              "work": "[2xh+h^{2}+5h]/h=2x+h+5"
+            },
+            {
+              "explain": "Let h approach zero.",
+              "work": "f′(x)=2x+5"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 77,
+            "sourceQuestion": 8
+          },
+          "keyPoints": [
+            {
+              "text": "Use the definition of the derivative, f′(x)=limₕ→₀ [f(x+h)−f(x)]/h, to find f′(x) when f(x)=x^{2}+5x.",
+              "note": "Substitute x+h, expand, subtract f(x), cancel h, then take the limit."
+            }
+          ]
         }
       ]
     },
@@ -1186,6 +1980,182 @@
               "xp": 2
             }
           ]
+        },
+        {
+          "id": "y11a-9-excel-calculus-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For what values of x is f(x) increasing, where f(x)=x^{2}−2x^{3}?",
+          "options": [
+            "0<x<1/3",
+            "x<0 or x>1/3",
+            "x>1/3",
+            "x<0"
+          ],
+          "answer": 0,
+          "hint": "Differentiate and solve f′(x)>0. A function increases where its derivative is positive.",
+          "steps": [
+            {
+              "explain": "Differentiate using the power rule.",
+              "work": "f′(x)=2x−6x^{2}"
+            },
+            {
+              "explain": "Factor to identify the critical values.",
+              "work": "f′(x)=2x(1−3x);  f′(x)=0 at x=0 and x=1/3"
+            },
+            {
+              "explain": "Check the sign of the factors on the intervals made by 0 and 1/3. The product is positive only between the roots.",
+              "work": "f′(x)>0 for 0<x<1/3"
+            },
+            {
+              "explain": "Therefore f is increasing on this open interval.",
+              "work": "0<x<1/3"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 81,
+            "sourceQuestion": 2
+          },
+          "keyPoints": [
+            {
+              "text": "For what values of x is f(x) increasing, where f(x)=x^{2}−2x^{3}?",
+              "note": "Differentiate and solve f′(x)>0. A function increases where its derivative is positive."
+            }
+          ]
+        },
+        {
+          "id": "y11a-9-excel-calculus-q18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Differentiate x^{4} + 5x^{-1} with respect to x.",
+          "options": [
+            "4x^{3}−5x^{-2}",
+            "4x^{3}+5x^{-2}",
+            "4x^{3}−5x^{-1}",
+            "x^{3}−5x^{-2}"
+          ],
+          "answer": 0,
+          "hint": "Use the power rule on both terms. For 5x^{-1}, multiply by exponent −1 and reduce the exponent by 1.",
+          "steps": [
+            {
+              "explain": "Differentiate x^{4}.",
+              "work": "d(x^{4})/dx=4x^{3}"
+            },
+            {
+              "explain": "Differentiate 5x^{-1}.",
+              "work": "5(−1)x^{-2}=−5x^{-2}"
+            },
+            {
+              "explain": "Combine.",
+              "work": "4x^{3}−5x^{-2}"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 82,
+            "sourceQuestion": 18
+          },
+          "keyPoints": [
+            {
+              "text": "Differentiate x^{4} + 5x^{-1} with respect to x.",
+              "note": "Use the power rule on both terms. For 5x^{-1}, multiply by exponent −1 and reduce the exponent by 1."
+            }
+          ]
+        },
+        {
+          "id": "y11a-9-excel-calculus-q19",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Differentiate x^{3} + 2.",
+          "options": [
+            "3x^{2}",
+            "3x^{2}+2",
+            "x^{2}",
+            "3x"
+          ],
+          "answer": 0,
+          "hint": "The derivative of xⁿ is nxⁿ⁻¹; the derivative of a constant is zero.",
+          "steps": [
+            {
+              "explain": "Apply the power rule to x^{3}.",
+              "work": "d(x^{3})/dx=3x^{2}"
+            },
+            {
+              "explain": "The constant 2 differentiates to 0.",
+              "work": "d(2)/dx=0"
+            },
+            {
+              "explain": "Add the two results.",
+              "work": "dy/dx=3x^{2}"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 82,
+            "sourceQuestion": 19
+          },
+          "keyPoints": [
+            {
+              "text": "Differentiate x^{3} + 2.",
+              "note": "The derivative of xⁿ is nxⁿ⁻¹; the derivative of a constant is zero."
+            }
+          ]
+        },
+        {
+          "id": "y11a-9-excel-calculus-q26",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Differentiate 3x^{5} − 4x + 7.",
+          "options": [
+            "15x^{4}−4",
+            "15x^{4}+4",
+            "3x^{4}−4",
+            "15x^{4}−4x"
+          ],
+          "answer": 0,
+          "hint": "Differentiate each term separately; constants have derivative zero.",
+          "steps": [
+            {
+              "explain": "Differentiate 3x^{5} using the power rule.",
+              "work": "3·5x^{4}=15x^{4}"
+            },
+            {
+              "explain": "Differentiate −4x.",
+              "work": "−4"
+            },
+            {
+              "explain": "Differentiate constant 7.",
+              "work": "0"
+            },
+            {
+              "explain": "Combine the terms.",
+              "work": "15x^{4}−4"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 82,
+            "sourceQuestion": 26
+          },
+          "keyPoints": [
+            {
+              "text": "Differentiate 3x^{5} − 4x + 7.",
+              "note": "Differentiate each term separately; constants have derivative zero."
+            }
+          ]
         }
       ]
     },
@@ -1289,6 +2259,950 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "y11a-9-excel-calculus-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "By considering the equation of the tangent to y=x^{2}−1 at the point (a, a^{2}−1), find the equations of the two tangents to y=x^{2}−1 which pass through (3, −8).",
+          "options": [
+            "y=14x−50 and y=−2x−2",
+            "y=7x−29 and y=−x−5",
+            "y=14x−8 and y=−2x−8",
+            "y=2x−14 and y=−14x+34"
+          ],
+          "answer": 0,
+          "hint": "At x=a, the gradient is 2a. Write the tangent equation, substitute (3,−8), solve the resulting quadratic for a, then find each line.",
+          "steps": [
+            {
+              "explain": "Differentiate the parabola. At the contact point x=a, the tangent gradient is 2a and the point is (a,a^{2}−1).",
+              "work": "y−(a^{2}−1)=2a(x−a)"
+            },
+            {
+              "explain": "Use the fact that the tangent passes through (3,−8). Substitute x=3 and y=−8.",
+              "work": "−8−(a^{2}−1)=2a(3−a)"
+            },
+            {
+              "explain": "Expand and collect terms to form a quadratic in a.",
+              "work": "a^{2}−6a−7=0=(a−7)(a+1)"
+            },
+            {
+              "explain": "The two contact points have a=7 and a=−1, giving tangent gradients 14 and −2.",
+              "work": "m=2a=14 or −2"
+            },
+            {
+              "explain": "Use point-slope form with each contact point.",
+              "work": "at a=7: y=14x−50; at a=−1: y=−2x−2"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 81,
+            "sourceQuestion": 3
+          },
+          "keyPoints": [
+            {
+              "text": "By considering the equation of the tangent to y=x^{2}−1 at the point (a, a^{2}−1), find the equations of the two tangents to y=x^{2}−1 which pass through (3, −8).",
+              "note": "At x=a, the gradient is 2a. Write the tangent equation, substitute (3,−8), solve the resulting quadratic for a, then find each line."
+            }
+          ]
+        },
+        {
+          "id": "y11a-9-excel-calculus-q5",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The equation of the tangent to the curve y=x^{3}+ax^{2}+bx+4 at the point where x=2 is y=x−4. Find the values of a and b.",
+          "hint": "Use the tangent’s slope to make one equation, then use the contact point (2,−2) to make a second equation.",
+          "steps": [],
+          "parts": [
+            {
+              "id": "y11a-9-excel-calculus-q5i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The equation of the tangent to the curve y=x^{3}+ax^{2}+bx+4 at the point where x=2 is y=x−4. Find the values of a and b.",
+              "options": [
+                "a=−2, b=−3",
+                "a=2, b=−3",
+                "a=−2, b=3",
+                "a=−3, b=−2"
+              ],
+              "answer": 0,
+              "hint": "The tangent has gradient 1. Equate the curve derivative at x=2 to 1, and also make the curve point at x=2 lie on y=x−4.",
+              "steps": [
+                {
+                  "explain": "Differentiate the curve to get its gradient function.",
+                  "work": "y′=3x^{2}+2ax+b"
+                },
+                {
+                  "explain": "At x=2, the tangent gradient from y=x−4 is 1. Substitute x=2 into y′.",
+                  "work": "12+4a+b=1  ⇒  4a+b=−11"
+                },
+                {
+                  "explain": "The curve point at x=2 is also on y=x−4, whose y-value is −2. Substitute into the curve.",
+                  "work": "8+4a+2b+4=−2  ⇒  2a+b=−7"
+                },
+                {
+                  "explain": "Subtract the two linear equations to find a, then substitute to find b.",
+                  "work": "(4a+b)−(2a+b)=−11−(−7) ⇒ a=−2; then b=−3"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "The equation of the tangent to the curve y=x^{3}+ax^{2}+bx+4 at the point where x=2 is y=x−4. Find the values of a and b.",
+                  "note": "The tangent has gradient 1. Equate the curve derivative at x=2 to 1, and also make the curve point at x=2 lie on y=x−4."
+                }
+              ]
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 81,
+            "sourceQuestion": 5
+          },
+          "keyPoints": [
+            {
+              "text": "The equation of the tangent to the curve y=x^{3}+ax^{2}+bx+4 at the point where x=2 is y=x−4. Find the values of a and b.",
+              "note": "Use the tangent’s slope to make one equation, then use the contact point (2,−2) to make a second equation."
+            }
+          ]
+        },
+        {
+          "id": "y11a-9-excel-calculus-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the equation of the tangent to the curve y=x^{2}+4x−7 at the point (1, −2).",
+          "options": [
+            "y=6x−8",
+            "y=6x+8",
+            "y=−6x+4",
+            "y=2x−4"
+          ],
+          "answer": 0,
+          "hint": "Differentiate to find the tangent gradient at x=1, then use point-slope form through (1,−2).",
+          "steps": [
+            {
+              "explain": "Differentiate the curve.",
+              "work": "dy/dx=2x+4"
+            },
+            {
+              "explain": "Evaluate the gradient at x=1.",
+              "work": "m=2(1)+4=6"
+            },
+            {
+              "explain": "Use y−y₁=m(x−x₁) with point (1,−2).",
+              "work": "y+2=6(x−1)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "y=6x−8"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 81,
+            "sourceQuestion": 7
+          },
+          "keyPoints": [
+            {
+              "text": "Find the equation of the tangent to the curve y=x^{2}+4x−7 at the point (1, −2).",
+              "note": "Differentiate to find the tangent gradient at x=1, then use point-slope form through (1,−2)."
+            }
+          ]
+        },
+        {
+          "id": "y11a-9-excel-calculus-q11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the equation of the tangent to the curve y=x^{2} at the point where x=3.",
+          "options": [
+            "y=6x−9",
+            "y=3x",
+            "y=6x+9",
+            "y=9x−18"
+          ],
+          "answer": 0,
+          "hint": "At x=3, the point is (3,9) and the derivative 2x gives the tangent gradient.",
+          "steps": [
+            {
+              "explain": "Differentiate y=x^{2}.",
+              "work": "dy/dx=2x"
+            },
+            {
+              "explain": "At x=3, calculate the gradient and the point on the curve.",
+              "work": "m=6;  y=3^{2}=9, so point=(3,9)"
+            },
+            {
+              "explain": "Use point-slope form.",
+              "work": "y−9=6(x−3)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "y=6x−9"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 81,
+            "sourceQuestion": 11
+          },
+          "keyPoints": [
+            {
+              "text": "Find the equation of the tangent to the curve y=x^{2} at the point where x=3.",
+              "note": "At x=3, the point is (3,9) and the derivative 2x gives the tangent gradient."
+            }
+          ]
+        },
+        {
+          "id": "y11a-9-excel-calculus-q13",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "The parabola shown in the diagram is the graph y=x^{2}. The points A(−1,1) and B(2,4) are on the parabola.",
+          "hint": "Use the derivative 2x for each tangent slope. Find the midpoint and use equal x-coordinates to prove MC is vertical, then compare gradients at B.",
+          "steps": [],
+          "parts": [
+            {
+              "id": "y11a-9-excel-calculus-q13i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the equation of the tangent to the parabola at A.",
+              "options": [
+                "y=−2x−1",
+                "y=2x+3",
+                "y=−x+1",
+                "y=2x−1"
+              ],
+              "answer": 0,
+              "hint": "For y=x^{2}, the gradient is 2x. At A(−1,1), the gradient is −2.",
+              "steps": [
+                {
+                  "explain": "Differentiate the parabola.",
+                  "work": "dy/dx=2x",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 300\" role=\"img\" aria-label=\"Parabola y=x squared through A(-1,1) and B(2,4), with midpoint M of AB, point C vertically below M on the parabola, tangents at A and B, and line MC vertical.\"><rect width=\"420\" height=\"300\" fill=\"white\"/><path d=\"M35 245 H390 M175 25 V275\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M78 263 Q175 265 272 35\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"3\"/><path d=\"M72 185 L228 251 M70 80 L350 15\" stroke=\"#f59e0b\" stroke-width=\"3\"/><path d=\"M175 25 L175 246\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-dasharray=\"6 4\"/><circle cx=\"150\" cy=\"220\" r=\"5\" fill=\"#10b981\"/><circle cx=\"225\" cy=\"145\" r=\"5\" fill=\"#10b981\"/><circle cx=\"175\" cy=\"244\" r=\"5\" fill=\"#2563eb\"/><circle cx=\"260\" cy=\"82\" r=\"5\" fill=\"#f59e0b\"/><text x=\"131\" y=\"216\">A(−1,1)</text><text x=\"232\" y=\"140\">B(2,4)</text><text x=\"180\" y=\"243\">C(1/2,1/4)</text><text x=\"179\" y=\"220\" fill=\"#2563eb\">M</text><text x=\"264\" y=\"80\">T</text><text x=\"277\" y=\"50\">y=x^{2}</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Evaluate at x=−1 and use A(−1,1).",
+                  "work": "m=−2"
+                },
+                {
+                  "explain": "Use point-slope form.",
+                  "work": "y−1=−2(x+1)  ⇒  y=−2x−1",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 300\" role=\"img\" aria-label=\"Parabola y=x squared through A(-1,1) and B(2,4), with midpoint M of AB, point C vertically below M on the parabola, tangents at A and B, and line MC vertical.\"><rect width=\"420\" height=\"300\" fill=\"white\"/><path d=\"M35 245 H390 M175 25 V275\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M78 263 Q175 265 272 35\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"3\"/><path d=\"M72 185 L228 251 M70 80 L350 15\" stroke=\"#f59e0b\" stroke-width=\"3\"/><path d=\"M175 25 L175 246\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-dasharray=\"6 4\"/><circle cx=\"150\" cy=\"220\" r=\"5\" fill=\"#10b981\"/><circle cx=\"225\" cy=\"145\" r=\"5\" fill=\"#10b981\"/><circle cx=\"175\" cy=\"244\" r=\"5\" fill=\"#2563eb\"/><circle cx=\"260\" cy=\"82\" r=\"5\" fill=\"#f59e0b\"/><text x=\"131\" y=\"216\">A(−1,1)</text><text x=\"232\" y=\"140\">B(2,4)</text><text x=\"180\" y=\"243\">C(1/2,1/4)</text><text x=\"179\" y=\"220\" fill=\"#2563eb\">M</text><text x=\"264\" y=\"80\">T</text><text x=\"277\" y=\"50\">y=x^{2}</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "Find the equation of the tangent to the parabola at A.",
+                  "note": "For y=x^{2}, the gradient is 2x. At A(−1,1), the gradient is −2."
+                }
+              ]
+            },
+            {
+              "id": "y11a-9-excel-calculus-q13ii",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "Let M be the midpoint of AB. There is a point C on the parabola such that the tangent at C is parallel to AB. Show that the line MC is vertical.",
+              "options": [
+                "Both M and C have x-coordinate 1/2.",
+                "Both M and C have y-coordinate 1/2.",
+                "The gradient of MC is 1.",
+                "AB is vertical."
+              ],
+              "answer": 0,
+              "hint": "Find midpoint M. Then find the gradient of AB and set the parabola tangent gradient 2x equal to it.",
+              "steps": [
+                {
+                  "explain": "Find the midpoint of A(−1,1) and B(2,4).",
+                  "work": "M=((−1+2)/2,(1+4)/2)=(1/2,5/2)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 300\" role=\"img\" aria-label=\"Parabola y=x squared through A(-1,1) and B(2,4), with midpoint M of AB, point C vertically below M on the parabola, tangents at A and B, and line MC vertical.\"><rect width=\"420\" height=\"300\" fill=\"white\"/><path d=\"M35 245 H390 M175 25 V275\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M78 263 Q175 265 272 35\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"3\"/><path d=\"M72 185 L228 251 M70 80 L350 15\" stroke=\"#f59e0b\" stroke-width=\"3\"/><path d=\"M175 25 L175 246\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-dasharray=\"6 4\"/><circle cx=\"150\" cy=\"220\" r=\"5\" fill=\"#10b981\"/><circle cx=\"225\" cy=\"145\" r=\"5\" fill=\"#10b981\"/><circle cx=\"175\" cy=\"244\" r=\"5\" fill=\"#2563eb\"/><circle cx=\"260\" cy=\"82\" r=\"5\" fill=\"#f59e0b\"/><text x=\"131\" y=\"216\">A(−1,1)</text><text x=\"232\" y=\"140\">B(2,4)</text><text x=\"180\" y=\"243\">C(1/2,1/4)</text><text x=\"179\" y=\"220\" fill=\"#2563eb\">M</text><text x=\"264\" y=\"80\">T</text><text x=\"277\" y=\"50\">y=x^{2}</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Find gradient AB.",
+                  "work": "m_AB=(4−1)/(2−(−1))=1"
+                },
+                {
+                  "explain": "A tangent to y=x^{2} has gradient 2x. Set this equal to 1 to locate C.",
+                  "work": "2x_C=1  ⇒  x_C=1/2"
+                },
+                {
+                  "explain": "M and C share the same x-coordinate, so the segment MC is vertical.",
+                  "work": "x_M=x_C=1/2"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "Let M be the midpoint of AB. There is a point C on the parabola such that the tangent at C is parallel to AB. Show that the line MC is vertical.",
+                  "note": "Find midpoint M. Then find the gradient of AB and set the parabola tangent gradient 2x equal to it."
+                }
+              ]
+            },
+            {
+              "id": "y11a-9-excel-calculus-q13iii",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "The tangent at A meets the line MC at T. Show that the line BT is a tangent to the parabola.",
+              "options": [
+                "The gradient of BT is 4, which equals the parabola gradient 2x at B where x=2.",
+                "The gradient of BT is 2, which equals the parabola gradient at B.",
+                "BT passes through the origin, so it is a tangent.",
+                "The gradient of BT is −2, so it is parallel to the tangent at A."
+              ],
+              "answer": 0,
+              "hint": "Use the tangent at A and the vertical line x=1/2 to find T. Then calculate gradient BT and compare with dy/dx at B.",
+              "steps": [
+                {
+                  "explain": "Use the tangent at A, y=−2x−1, and the vertical line MC where x=1/2.",
+                  "work": "T=(1/2,−2)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 300\" role=\"img\" aria-label=\"Parabola y=x squared through A(-1,1) and B(2,4), with midpoint M of AB, point C vertically below M on the parabola, tangents at A and B, and line MC vertical.\"><rect width=\"420\" height=\"300\" fill=\"white\"/><path d=\"M35 245 H390 M175 25 V275\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M78 263 Q175 265 272 35\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"3\"/><path d=\"M72 185 L228 251 M70 80 L350 15\" stroke=\"#f59e0b\" stroke-width=\"3\"/><path d=\"M175 25 L175 246\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-dasharray=\"6 4\"/><circle cx=\"150\" cy=\"220\" r=\"5\" fill=\"#10b981\"/><circle cx=\"225\" cy=\"145\" r=\"5\" fill=\"#10b981\"/><circle cx=\"175\" cy=\"244\" r=\"5\" fill=\"#2563eb\"/><circle cx=\"260\" cy=\"82\" r=\"5\" fill=\"#f59e0b\"/><text x=\"131\" y=\"216\">A(−1,1)</text><text x=\"232\" y=\"140\">B(2,4)</text><text x=\"180\" y=\"243\">C(1/2,1/4)</text><text x=\"179\" y=\"220\" fill=\"#2563eb\">M</text><text x=\"264\" y=\"80\">T</text><text x=\"277\" y=\"50\">y=x^{2}</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Find the gradient of BT using B(2,4) and T(1/2,−2).",
+                  "work": "m_BT=(4−(−2))/(2−1/2)=6/(3/2)=4"
+                },
+                {
+                  "explain": "At B, x=2, so the gradient of the parabola is 2x=4. The line BT passes through B and has this tangent gradient.",
+                  "work": "m_BT=dy/dx at B=4; therefore BT is tangent"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "The tangent at A meets the line MC at T. Show that the line BT is a tangent to the parabola.",
+                  "note": "Use the tangent at A and the vertical line x=1/2 to find T. Then calculate gradient BT and compare with dy/dx at B."
+                }
+              ]
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 81,
+            "sourceQuestion": 13
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 300\" role=\"img\" aria-label=\"Parabola y=x squared through A(-1,1) and B(2,4), with midpoint M of AB, point C vertically below M on the parabola, tangents at A and B, and line MC vertical.\"><rect width=\"420\" height=\"300\" fill=\"white\"/><path d=\"M35 245 H390 M175 25 V275\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M78 263 Q175 265 272 35\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"3\"/><path d=\"M72 185 L228 251 M70 80 L350 15\" stroke=\"#f59e0b\" stroke-width=\"3\"/><path d=\"M175 25 L175 246\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-dasharray=\"6 4\"/><circle cx=\"150\" cy=\"220\" r=\"5\" fill=\"#10b981\"/><circle cx=\"225\" cy=\"145\" r=\"5\" fill=\"#10b981\"/><circle cx=\"175\" cy=\"244\" r=\"5\" fill=\"#2563eb\"/><circle cx=\"260\" cy=\"82\" r=\"5\" fill=\"#f59e0b\"/><text x=\"131\" y=\"216\">A(−1,1)</text><text x=\"232\" y=\"140\">B(2,4)</text><text x=\"180\" y=\"243\">C(1/2,1/4)</text><text x=\"179\" y=\"220\" fill=\"#2563eb\">M</text><text x=\"264\" y=\"80\">T</text><text x=\"277\" y=\"50\">y=x^{2}</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "The parabola shown in the diagram is the graph y=x^{2}. The points A(−1,1) and B(2,4) are on the parabola.",
+              "note": "Use the derivative 2x for each tangent slope. Find the midpoint and use equal x-coordinates to prove MC is vertical, then compare gradients at B."
+            }
+          ]
+        },
+        {
+          "id": "y11a-9-excel-calculus-q14",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the gradient of the tangent to the curve y=x^{4}−3x at the point (1,−2).",
+          "options": [
+            "1",
+            "−1",
+            "4",
+            "−3"
+          ],
+          "answer": 0,
+          "hint": "Differentiate the function, then substitute x=1.",
+          "steps": [
+            {
+              "explain": "Differentiate each term.",
+              "work": "dy/dx=4x^{3}−3"
+            },
+            {
+              "explain": "Evaluate at x=1.",
+              "work": "4(1)^{3}−3=1"
+            },
+            {
+              "explain": "This is the tangent gradient.",
+              "work": "m=1"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 81,
+            "sourceQuestion": 14
+          },
+          "keyPoints": [
+            {
+              "text": "Find the gradient of the tangent to the curve y=x^{4}−3x at the point (1,−2).",
+              "note": "Differentiate the function, then substitute x=1."
+            }
+          ]
+        },
+        {
+          "id": "y11a-9-excel-calculus-q15",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The diagram illustrates the design for part of a roller-coaster track. The section OP is a parabola y=ax^{2}+bx. The horizontal distance from the y-axis to P is 30 m. In order that the ride is smooth, the straight line sections must be tangent to the parabola at O and at P.",
+          "hint": "Smooth joins mean equal gradients. Match the parabola derivative with the straight-line slopes at O and P, then use the vertex and P coordinates to calculate d.",
+          "steps": [],
+          "parts": [
+            {
+              "id": "y11a-9-excel-calculus-q15i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the values of a and b so that the ride is smooth.",
+              "options": [
+                "a=−0.05, b=1.2",
+                "a=0.05, b=−1.2",
+                "a=−0.1, b=1.2",
+                "a=−0.05, b=−1.8"
+              ],
+              "answer": 0,
+              "hint": "At O (x=0), the parabola’s derivative must match slope 1.2. At P (x=30), it must match slope −1.8.",
+              "steps": [
+                {
+                  "explain": "Differentiate the parabola y=ax^{2}+bx.",
+                  "work": "dy/dx=2ax+b",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 450 280\" role=\"img\" aria-label=\"Roller coaster path OP is a parabola y=ax squared+bx, tangent at O to a straight section of slope 1.2 and tangent at P (x=30 metres) to a straight section of slope negative 1.8. d is the vertical distance from the vertex to the horizontal level through P.\"><rect width=\"450\" height=\"280\" fill=\"white\"/><path d=\"M58 208 H404 M92 36 V246\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M58 246 L92 208\" stroke=\"#f59e0b\" stroke-width=\"4\"/><path d=\"M92 208 Q178 95 350 176\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"5\"/><path d=\"M350 176 L414 215\" stroke=\"#f59e0b\" stroke-width=\"4\"/><path d=\"M280 125 V208 M350 176 V208\" stroke=\"#10b981\" stroke-width=\"3\" stroke-dasharray=\"5 4\"/><path d=\"M92 208 H153\" stroke=\"#7c3aed\" stroke-width=\"4\"/><text x=\"82\" y=\"226\">O</text><text x=\"353\" y=\"173\">P</text><text x=\"75\" y=\"31\">y</text><text x=\"408\" y=\"204\">x</text><text x=\"107\" y=\"194\" fill=\"#7c3aed\">slope 1.2</text><text x=\"367\" y=\"208\" fill=\"#f59e0b\">slope −1.8</text><text x=\"305\" y=\"222\" fill=\"#10b981\">30 m</text><text x=\"283\" y=\"165\" fill=\"#10b981\">d</text><text x=\"117\" y=\"110\" fill=\"#2563eb\">y=ax^{2}+bx</text></svg>"
+                  }
+                },
+                {
+                  "explain": "At O, x=0 and the adjoining straight line has slope 1.2.",
+                  "work": "b=1.2",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 450 280\" role=\"img\" aria-label=\"Roller coaster path OP is a parabola y=ax squared+bx, tangent at O to a straight section of slope 1.2 and tangent at P (x=30 metres) to a straight section of slope negative 1.8. d is the vertical distance from the vertex to the horizontal level through P.\"><rect width=\"450\" height=\"280\" fill=\"white\"/><path d=\"M58 208 H404 M92 36 V246\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M58 246 L92 208\" stroke=\"#f59e0b\" stroke-width=\"4\"/><path d=\"M92 208 Q178 95 350 176\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"5\"/><path d=\"M350 176 L414 215\" stroke=\"#f59e0b\" stroke-width=\"4\"/><path d=\"M280 125 V208 M350 176 V208\" stroke=\"#10b981\" stroke-width=\"3\" stroke-dasharray=\"5 4\"/><path d=\"M92 208 H153\" stroke=\"#7c3aed\" stroke-width=\"4\"/><text x=\"82\" y=\"226\">O</text><text x=\"353\" y=\"173\">P</text><text x=\"75\" y=\"31\">y</text><text x=\"408\" y=\"204\">x</text><text x=\"107\" y=\"194\" fill=\"#7c3aed\">slope 1.2</text><text x=\"367\" y=\"208\" fill=\"#f59e0b\">slope −1.8</text><text x=\"305\" y=\"222\" fill=\"#10b981\">30 m</text><text x=\"283\" y=\"165\" fill=\"#10b981\">d</text><text x=\"117\" y=\"110\" fill=\"#2563eb\">y=ax^{2}+bx</text></svg>"
+                  }
+                },
+                {
+                  "explain": "At P, x=30 and the adjoining section has slope −1.8.",
+                  "work": "60a+b=−1.8"
+                },
+                {
+                  "explain": "Substitute b=1.2 and solve.",
+                  "work": "60a+1.2=−1.8  ⇒  a=−0.05"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "Find the values of a and b so that the ride is smooth.",
+                  "note": "At O (x=0), the parabola’s derivative must match slope 1.2. At P (x=30), it must match slope −1.8."
+                }
+              ]
+            },
+            {
+              "id": "y11a-9-excel-calculus-q15ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the distance d, from the vertex of the parabola to the horizontal line through P as shown on the diagram.",
+              "options": [
+                "16.2 m",
+                "7.2 m",
+                "9 m",
+                "12 m"
+              ],
+              "answer": 0,
+              "hint": "Use a=−0.05 and b=1.2. Find the vertex and the height of P, then take the vertical difference.",
+              "steps": [
+                {
+                  "explain": "The vertex x-coordinate is −b/(2a).",
+                  "work": "x_v=−1.2/[2(−0.05)]=12",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 450 280\" role=\"img\" aria-label=\"Roller coaster path OP is a parabola y=ax squared+bx, tangent at O to a straight section of slope 1.2 and tangent at P (x=30 metres) to a straight section of slope negative 1.8. d is the vertical distance from the vertex to the horizontal level through P.\"><rect width=\"450\" height=\"280\" fill=\"white\"/><path d=\"M58 208 H404 M92 36 V246\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M58 246 L92 208\" stroke=\"#f59e0b\" stroke-width=\"4\"/><path d=\"M92 208 Q178 95 350 176\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"5\"/><path d=\"M350 176 L414 215\" stroke=\"#f59e0b\" stroke-width=\"4\"/><path d=\"M280 125 V208 M350 176 V208\" stroke=\"#10b981\" stroke-width=\"3\" stroke-dasharray=\"5 4\"/><path d=\"M92 208 H153\" stroke=\"#7c3aed\" stroke-width=\"4\"/><text x=\"82\" y=\"226\">O</text><text x=\"353\" y=\"173\">P</text><text x=\"75\" y=\"31\">y</text><text x=\"408\" y=\"204\">x</text><text x=\"107\" y=\"194\" fill=\"#7c3aed\">slope 1.2</text><text x=\"367\" y=\"208\" fill=\"#f59e0b\">slope −1.8</text><text x=\"305\" y=\"222\" fill=\"#10b981\">30 m</text><text x=\"283\" y=\"165\" fill=\"#10b981\">d</text><text x=\"117\" y=\"110\" fill=\"#2563eb\">y=ax^{2}+bx</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Find the vertex height.",
+                  "work": "y_v=−0.05(12^{2})+1.2(12)=7.2",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 450 280\" role=\"img\" aria-label=\"Roller coaster path OP is a parabola y=ax squared+bx, tangent at O to a straight section of slope 1.2 and tangent at P (x=30 metres) to a straight section of slope negative 1.8. d is the vertical distance from the vertex to the horizontal level through P.\"><rect width=\"450\" height=\"280\" fill=\"white\"/><path d=\"M58 208 H404 M92 36 V246\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M58 246 L92 208\" stroke=\"#f59e0b\" stroke-width=\"4\"/><path d=\"M92 208 Q178 95 350 176\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"5\"/><path d=\"M350 176 L414 215\" stroke=\"#f59e0b\" stroke-width=\"4\"/><path d=\"M280 125 V208 M350 176 V208\" stroke=\"#10b981\" stroke-width=\"3\" stroke-dasharray=\"5 4\"/><path d=\"M92 208 H153\" stroke=\"#7c3aed\" stroke-width=\"4\"/><text x=\"82\" y=\"226\">O</text><text x=\"353\" y=\"173\">P</text><text x=\"75\" y=\"31\">y</text><text x=\"408\" y=\"204\">x</text><text x=\"107\" y=\"194\" fill=\"#7c3aed\">slope 1.2</text><text x=\"367\" y=\"208\" fill=\"#f59e0b\">slope −1.8</text><text x=\"305\" y=\"222\" fill=\"#10b981\">30 m</text><text x=\"283\" y=\"165\" fill=\"#10b981\">d</text><text x=\"117\" y=\"110\" fill=\"#2563eb\">y=ax^{2}+bx</text></svg>"
+                  }
+                },
+                {
+                  "explain": "At P, x=30. Find its height.",
+                  "work": "y_P=−0.05(30^{2})+1.2(30)=−9",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 450 280\" role=\"img\" aria-label=\"Roller coaster path OP is a parabola y=ax squared+bx, tangent at O to a straight section of slope 1.2 and tangent at P (x=30 metres) to a straight section of slope negative 1.8. d is the vertical distance from the vertex to the horizontal level through P.\"><rect width=\"450\" height=\"280\" fill=\"white\"/><path d=\"M58 208 H404 M92 36 V246\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M58 246 L92 208\" stroke=\"#f59e0b\" stroke-width=\"4\"/><path d=\"M92 208 Q178 95 350 176\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"5\"/><path d=\"M350 176 L414 215\" stroke=\"#f59e0b\" stroke-width=\"4\"/><path d=\"M280 125 V208 M350 176 V208\" stroke=\"#10b981\" stroke-width=\"3\" stroke-dasharray=\"5 4\"/><path d=\"M92 208 H153\" stroke=\"#7c3aed\" stroke-width=\"4\"/><text x=\"82\" y=\"226\">O</text><text x=\"353\" y=\"173\">P</text><text x=\"75\" y=\"31\">y</text><text x=\"408\" y=\"204\">x</text><text x=\"107\" y=\"194\" fill=\"#7c3aed\">slope 1.2</text><text x=\"367\" y=\"208\" fill=\"#f59e0b\">slope −1.8</text><text x=\"305\" y=\"222\" fill=\"#10b981\">30 m</text><text x=\"283\" y=\"165\" fill=\"#10b981\">d</text><text x=\"117\" y=\"110\" fill=\"#2563eb\">y=ax^{2}+bx</text></svg>"
+                  }
+                },
+                {
+                  "explain": "The vertical distance is the difference in y-values.",
+                  "work": "d=7.2−(−9)=16.2 m"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "Find the distance d, from the vertex of the parabola to the horizontal line through P as shown on the diagram.",
+                  "note": "Use a=−0.05 and b=1.2. Find the vertex and the height of P, then take the vertical difference."
+                }
+              ]
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 82,
+            "sourceQuestion": 15
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 450 280\" role=\"img\" aria-label=\"Roller coaster path OP is a parabola y=ax squared+bx, tangent at O to a straight section of slope 1.2 and tangent at P (x=30 metres) to a straight section of slope negative 1.8. d is the vertical distance from the vertex to the horizontal level through P.\"><rect width=\"450\" height=\"280\" fill=\"white\"/><path d=\"M58 208 H404 M92 36 V246\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M58 246 L92 208\" stroke=\"#f59e0b\" stroke-width=\"4\"/><path d=\"M92 208 Q178 95 350 176\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"5\"/><path d=\"M350 176 L414 215\" stroke=\"#f59e0b\" stroke-width=\"4\"/><path d=\"M280 125 V208 M350 176 V208\" stroke=\"#10b981\" stroke-width=\"3\" stroke-dasharray=\"5 4\"/><path d=\"M92 208 H153\" stroke=\"#7c3aed\" stroke-width=\"4\"/><text x=\"82\" y=\"226\">O</text><text x=\"353\" y=\"173\">P</text><text x=\"75\" y=\"31\">y</text><text x=\"408\" y=\"204\">x</text><text x=\"107\" y=\"194\" fill=\"#7c3aed\">slope 1.2</text><text x=\"367\" y=\"208\" fill=\"#f59e0b\">slope −1.8</text><text x=\"305\" y=\"222\" fill=\"#10b981\">30 m</text><text x=\"283\" y=\"165\" fill=\"#10b981\">d</text><text x=\"117\" y=\"110\" fill=\"#2563eb\">y=ax^{2}+bx</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "The diagram illustrates the design for part of a roller-coaster track. The section OP is a parabola y=ax^{2}+bx. The horizontal distance from the y-axis to P is 30 m. In order that the ride is smooth, the straight line sections must be tangent to the parabola at O and at P.",
+              "note": "Smooth joins mean equal gradients. Match the parabola derivative with the straight-line slopes at O and P, then use the vertex and P coordinates to calculate d."
+            }
+          ]
+        },
+        {
+          "id": "y11a-9-excel-calculus-q20",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the equation of the tangent to the curve y=x^{2}+3x at the point (1,4).",
+          "options": [
+            "y=5x−1",
+            "y=5x+1",
+            "y=−5x+9",
+            "y=2x+2"
+          ],
+          "answer": 0,
+          "hint": "Differentiate to find the slope at x=1, then use the given point.",
+          "steps": [
+            {
+              "explain": "Differentiate.",
+              "work": "dy/dx=2x+3"
+            },
+            {
+              "explain": "Evaluate the slope at x=1.",
+              "work": "m=2(1)+3=5"
+            },
+            {
+              "explain": "Use point-slope form at (1,4).",
+              "work": "y−4=5(x−1)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "y=5x−1"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 82,
+            "sourceQuestion": 20
+          },
+          "keyPoints": [
+            {
+              "text": "Find the equation of the tangent to the curve y=x^{2}+3x at the point (1,4).",
+              "note": "Differentiate to find the slope at x=1, then use the given point."
+            }
+          ]
+        },
+        {
+          "id": "y11a-9-excel-calculus-q21",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the equation of the normal to the curve y=√(x+2) at the point (7,3).",
+          "options": [
+            "y=−6x+45",
+            "y=6x−39",
+            "y=−x/6+25/6",
+            "y=−6x−45"
+          ],
+          "answer": 0,
+          "hint": "The normal gradient is the negative reciprocal of the tangent gradient. Differentiate y=(x+2)^(1/2).",
+          "steps": [
+            {
+              "explain": "Differentiate using a fractional power.",
+              "work": "dy/dx=½(x+2)^{-1}/²=1/[2√(x+2)]"
+            },
+            {
+              "explain": "At x=7, find the tangent gradient.",
+              "work": "m_t=1/(2√9)=1/6"
+            },
+            {
+              "explain": "Take the negative reciprocal for the normal.",
+              "work": "m_n=−6"
+            },
+            {
+              "explain": "Use point (7,3) in point-slope form.",
+              "work": "y−3=−6(x−7)  ⇒  y=−6x+45"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 82,
+            "sourceQuestion": 21
+          },
+          "keyPoints": [
+            {
+              "text": "Find the equation of the normal to the curve y=√(x+2) at the point (7,3).",
+              "note": "The normal gradient is the negative reciprocal of the tangent gradient. Differentiate y=(x+2)^(1/2)."
+            }
+          ]
+        },
+        {
+          "id": "y11a-9-excel-calculus-q29",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The line y=mx+b is a tangent to the curve y=x^{3}−3x+1 at the point (−2,−1). Find m and b.",
+          "options": [
+            "m=9, b=17",
+            "m=9, b=−17",
+            "m=−9, b=17",
+            "m=−9, b=−17"
+          ],
+          "answer": 0,
+          "hint": "The tangent gradient equals the derivative at x=−2. Then substitute the point into y=mx+b.",
+          "steps": [
+            {
+              "explain": "Differentiate the curve.",
+              "work": "dy/dx=3x^{2}−3"
+            },
+            {
+              "explain": "Find the gradient at x=−2.",
+              "work": "m=3(−2)^{2}−3=12−3=9"
+            },
+            {
+              "explain": "Use point (−2,−1) in y=mx+b.",
+              "work": "−1=9(−2)+b"
+            },
+            {
+              "explain": "Solve for the intercept.",
+              "work": "b=17; therefore m=9, b=17"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 82,
+            "sourceQuestion": 29
+          },
+          "keyPoints": [
+            {
+              "text": "The line y=mx+b is a tangent to the curve y=x^{3}−3x+1 at the point (−2,−1). Find m and b.",
+              "note": "The tangent gradient equals the derivative at x=−2. Then substitute the point into y=mx+b."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y11a-9E",
+      "code": "9E",
+      "title": "The quotient rule",
+      "questions": [
+        {
+          "id": "y11a-9-excel-calculus-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Let h(x)=f(x)/g(x), where f(1)=2, f′(1)=4, g(1)=8 and g′(1)=12. What is the gradient of the tangent to the graph of y=h(x) at x=1?",
+          "options": [
+            "−8",
+            "8",
+            "−1/8",
+            "1/8"
+          ],
+          "answer": 3,
+          "hint": "Use the quotient rule h′=(g f′−f g′)/g^{2}, then substitute the four values at x=1.",
+          "steps": [
+            {
+              "explain": "The gradient of the tangent at x=1 is h′(1). Apply the quotient rule.",
+              "work": "h′(1)=[g(1)f′(1)−f(1)g′(1)]/[g(1)]^{2}"
+            },
+            {
+              "explain": "Substitute f(1)=2, f′(1)=4, g(1)=8 and g′(1)=12.",
+              "work": "h′(1)=[8(4)−2(12)]/8^{2}"
+            },
+            {
+              "explain": "Calculate the numerator and denominator.",
+              "work": "(32−24)/64=8/64=1/8"
+            },
+            {
+              "explain": "State the tangent gradient.",
+              "work": "m=1/8"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 81,
+            "sourceQuestion": 1,
+            "curriculumTopic": "9E The quotient rule"
+          },
+          "keyPoints": [
+            {
+              "text": "Let h(x)=f(x)/g(x), where f(1)=2, f′(1)=4, g(1)=8 and g′(1)=12. What is the gradient of the tangent to the graph of y=h(x) at x=1?",
+              "note": "Use the quotient rule h′=(g f′−f g′)/g^{2}, then substitute the four values at x=1."
+            }
+          ]
+        },
+        {
+          "id": "y11a-9-excel-calculus-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Differentiate (2x+1)/(x+5).",
+          "options": [
+            "9/(x+5)^{2}",
+            "(2x+1)/(x+5)^{2}",
+            "(9x+11)/(x+5)^{2}",
+            "2/(x+5)"
+          ],
+          "answer": 0,
+          "hint": "Use the quotient rule with numerator 2x+1 and denominator x+5.",
+          "steps": [
+            {
+              "explain": "Name the numerator u=2x+1 and denominator v=x+5, so u′=2 and v′=1.",
+              "work": "d(u/v)/dx=(vu′−uv′)/v^{2}"
+            },
+            {
+              "explain": "Substitute into the quotient rule.",
+              "work": "[(x+5)(2)−(2x+1)(1)]/(x+5)^{2}"
+            },
+            {
+              "explain": "Simplify the numerator.",
+              "work": "(2x+10−2x−1)/(x+5)^{2}=9/(x+5)^{2}"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 81,
+            "sourceQuestion": 4,
+            "curriculumTopic": "9E The quotient rule"
+          },
+          "keyPoints": [
+            {
+              "text": "Differentiate (2x+1)/(x+5).",
+              "note": "Use the quotient rule with numerator 2x+1 and denominator x+5."
+            }
+          ]
+        },
+        {
+          "id": "y11a-9-excel-calculus-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Differentiate (x+2)/(3x−4).",
+          "options": [
+            "−10/(3x−4)^{2}",
+            "10/(3x−4)^{2}",
+            "(3x−4)^{2}/−10",
+            "−2/(3x−4)"
+          ],
+          "answer": 0,
+          "hint": "Use quotient rule: numerator derivative 1, denominator derivative 3.",
+          "steps": [
+            {
+              "explain": "Set u=x+2 and v=3x−4. Then u′=1 and v′=3.",
+              "work": "(u/v)′=(vu′−uv′)/v^{2}"
+            },
+            {
+              "explain": "Apply the quotient rule.",
+              "work": "[(3x−4)(1)−(x+2)(3)]/(3x−4)^{2}"
+            },
+            {
+              "explain": "Simplify the numerator.",
+              "work": "3x−4−3x−6=−10"
+            },
+            {
+              "explain": "Write the derivative.",
+              "work": "−10/(3x−4)^{2}"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 81,
+            "sourceQuestion": 8,
+            "curriculumTopic": "9E The quotient rule"
+          },
+          "keyPoints": [
+            {
+              "text": "Differentiate (x+2)/(3x−4).",
+              "note": "Use quotient rule: numerator derivative 1, denominator derivative 3."
+            }
+          ]
+        },
+        {
+          "id": "y11a-9-excel-calculus-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find f′(x), where f(x)=(x^{2}+3)/(x−1).",
+          "options": [
+            "(x^{2}−2x−3)/(x−1)^{2}",
+            "(x^{2}+2x−3)/(x−1)^{2}",
+            "(2x)/(x−1)",
+            "(x^{2}−3)/(x−1)^{2}"
+          ],
+          "answer": 0,
+          "hint": "Apply the quotient rule, carefully subtracting (x^{2}+3) times the derivative of the denominator.",
+          "steps": [
+            {
+              "explain": "Let u=x^{2}+3 and v=x−1. Then u′=2x and v′=1.",
+              "work": "f′=(vu′−uv′)/v^{2}"
+            },
+            {
+              "explain": "Substitute.",
+              "work": "f′=[(x−1)(2x)−(x^{2}+3)]/(x−1)^{2}"
+            },
+            {
+              "explain": "Expand and simplify the numerator.",
+              "work": "2x^{2}−2x−x^{2}−3=x^{2}−2x−3"
+            },
+            {
+              "explain": "State the derivative.",
+              "work": "f′(x)=(x^{2}−2x−3)/(x−1)^{2}"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 81,
+            "sourceQuestion": 9,
+            "curriculumTopic": "9E The quotient rule"
+          },
+          "keyPoints": [
+            {
+              "text": "Find f′(x), where f(x)=(x^{2}+3)/(x−1).",
+              "note": "Apply the quotient rule, carefully subtracting (x^{2}+3) times the derivative of the denominator."
+            }
+          ]
+        },
+        {
+          "id": "y11a-9-excel-calculus-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Differentiate x^{3}/(x+1).",
+          "options": [
+            "(2x^{3}+3x^{2})/(x+1)^{2}",
+            "(3x^{2})/(x+1)",
+            "(x^{3}−3x^{2})/(x+1)^{2}",
+            "(2x^{3}−3x^{2})/(x+1)^{2}"
+          ],
+          "answer": 0,
+          "hint": "Use the quotient rule with u=x^{3} and v=x+1.",
+          "steps": [
+            {
+              "explain": "Set u=x^{3}, u′=3x^{2}, v=x+1 and v′=1.",
+              "work": "(u/v)′=(vu′−uv′)/v^{2}"
+            },
+            {
+              "explain": "Substitute in the rule.",
+              "work": "[(x+1)(3x^{2})−x^{3}]/(x+1)^{2}"
+            },
+            {
+              "explain": "Expand the numerator.",
+              "work": "3x^{3}+3x^{2}−x^{3}=2x^{3}+3x^{2}"
+            },
+            {
+              "explain": "Write the simplified derivative.",
+              "work": "(2x^{3}+3x^{2})/(x+1)^{2}"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 81,
+            "sourceQuestion": 10,
+            "curriculumTopic": "9E The quotient rule"
+          },
+          "keyPoints": [
+            {
+              "text": "Differentiate x^{3}/(x+1).",
+              "note": "Use the quotient rule with u=x^{3} and v=x+1."
+            }
+          ]
+        },
+        {
+          "id": "y11a-9-excel-calculus-q17",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Differentiate with respect to x: x^{2}/(x−1).",
+          "options": [
+            "x(x−2)/(x−1)^{2}",
+            "x(x+2)/(x−1)^{2}",
+            "2x/(x−1)",
+            "(x^{2}−1)/(x−1)^{2}"
+          ],
+          "answer": 0,
+          "hint": "Use the quotient rule; simplify the numerator only after applying it.",
+          "steps": [
+            {
+              "explain": "Set u=x^{2}, u′=2x, v=x−1 and v′=1.",
+              "work": "(u/v)′=(vu′−uv′)/v^{2}"
+            },
+            {
+              "explain": "Substitute.",
+              "work": "[(x−1)(2x)−x^{2}]/(x−1)^{2}"
+            },
+            {
+              "explain": "Simplify the numerator and factor.",
+              "work": "2x^{2}−2x−x^{2}=x^{2}−2x=x(x−2)"
+            },
+            {
+              "explain": "Write the result.",
+              "work": "x(x−2)/(x−1)^{2}"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 82,
+            "sourceQuestion": 17,
+            "curriculumTopic": "9E The quotient rule"
+          },
+          "keyPoints": [
+            {
+              "text": "Differentiate with respect to x: x^{2}/(x−1).",
+              "note": "Use the quotient rule; simplify the numerator only after applying it."
+            }
+          ]
         }
       ]
     },
@@ -1362,6 +3276,174 @@
             "examType": "Trial HSC",
             "grade": "12"
           }
+        },
+        {
+          "id": "y11a-9-excel-calculus-q24",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Differentiate: √x.",
+          "options": [
+            "1/(2√x)",
+            "2√x",
+            "1/√x",
+            "√x/2"
+          ],
+          "answer": 0,
+          "hint": "Rewrite √x as x^(1/2), then apply the power rule.",
+          "steps": [
+            {
+              "explain": "Write the radical as a fractional power.",
+              "work": "√x=x^(1/2)"
+            },
+            {
+              "explain": "Apply d(xⁿ)/dx=nxⁿ⁻¹.",
+              "work": "d(x^(1/2))/dx=½x^(−1/2)"
+            },
+            {
+              "explain": "Rewrite with a radical in the denominator.",
+              "work": "1/(2√x)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 82,
+            "sourceQuestion": 24
+          },
+          "keyPoints": [
+            {
+              "text": "Differentiate: √x.",
+              "note": "Rewrite √x as x^(1/2), then apply the power rule."
+            }
+          ]
+        },
+        {
+          "id": "y11a-9-excel-calculus-q25",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Differentiate: 2x^{-3}.",
+          "options": [
+            "−6x^{-4}",
+            "6x^{-4}",
+            "−3x^{-2}",
+            "−6x^{-3}"
+          ],
+          "answer": 0,
+          "hint": "Bring the exponent −3 down as a multiplier, then subtract 1 from the exponent.",
+          "steps": [
+            {
+              "explain": "Apply the power rule and keep the coefficient 2.",
+              "work": "d(2x^{-3})/dx=2(−3)x^(−4)"
+            },
+            {
+              "explain": "Multiply the coefficients.",
+              "work": "2(−3)=−6"
+            },
+            {
+              "explain": "State the derivative.",
+              "work": "−6x^{-4}"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 82,
+            "sourceQuestion": 25
+          },
+          "keyPoints": [
+            {
+              "text": "Differentiate: 2x^{-3}.",
+              "note": "Bring the exponent −3 down as a multiplier, then subtract 1 from the exponent."
+            }
+          ]
+        },
+        {
+          "id": "y11a-9-excel-calculus-q27",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the derivative of 1/x^{4}.",
+          "options": [
+            "−4/x^{5}",
+            "4/x^{5}",
+            "−1/(4x^{5})",
+            "−4/x^{4}"
+          ],
+          "answer": 0,
+          "hint": "Rewrite 1/x^{4} as x^{-4} and use the power rule.",
+          "steps": [
+            {
+              "explain": "Rewrite the reciprocal using a negative index.",
+              "work": "1/x^{4}=x^{-4}"
+            },
+            {
+              "explain": "Apply the power rule.",
+              "work": "d(x^{-4})/dx=−4x^{-5}"
+            },
+            {
+              "explain": "Rewrite with positive powers in the denominator.",
+              "work": "−4/x^{5}"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 82,
+            "sourceQuestion": 27
+          },
+          "keyPoints": [
+            {
+              "text": "Find the derivative of 1/x^{4}.",
+              "note": "Rewrite 1/x^{4} as x^{-4} and use the power rule."
+            }
+          ]
+        },
+        {
+          "id": "y11a-9-excel-calculus-q28",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Differentiate: 1/x^{3}.",
+          "options": [
+            "−3/x^{4}",
+            "3/x^{4}",
+            "−1/(3x^{4})",
+            "−3/x^{3}"
+          ],
+          "answer": 0,
+          "hint": "Write x^{-3}, then lower the exponent by one after multiplying by −3.",
+          "steps": [
+            {
+              "explain": "Rewrite as a negative power.",
+              "work": "1/x^{3}=x^{-3}"
+            },
+            {
+              "explain": "Differentiate.",
+              "work": "d(x^{-3})/dx=−3x^{-4}"
+            },
+            {
+              "explain": "Express the answer as a fraction.",
+              "work": "−3/x^{4}"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 82,
+            "sourceQuestion": 28
+          },
+          "keyPoints": [
+            {
+              "text": "Differentiate: 1/x^{3}.",
+              "note": "Write x^{-3}, then lower the exponent by one after multiplying by −3."
+            }
+          ]
         }
       ]
     },
@@ -1574,6 +3656,224 @@
             "sourcePage": null,
             "sourceTopic": "y11a-9G"
           }
+        },
+        {
+          "id": "y11a-9-excel-calculus-q12",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the equation of the tangent to the curve y=(2x+1)^{4} at the point where x=−1.",
+          "options": [
+            "y=−8x−7",
+            "y=8x+9",
+            "y=−8x+7",
+            "y=−4x−3"
+          ],
+          "answer": 0,
+          "hint": "Use the chain rule, evaluate the derivative at x=−1, and find the curve point at x=−1.",
+          "steps": [
+            {
+              "explain": "Differentiate the outer fourth power, then multiply by the derivative of the inner expression 2x+1.",
+              "work": "dy/dx=4(2x+1)^{3}·2=8(2x+1)^{3}"
+            },
+            {
+              "explain": "At x=−1, find the gradient and y-coordinate.",
+              "work": "m=8(−1)^{3}=−8;  y=(−1)^{4}=1"
+            },
+            {
+              "explain": "Use the tangent point (−1,1).",
+              "work": "y−1=−8(x+1)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "y=−8x−7"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 81,
+            "sourceQuestion": 12
+          },
+          "keyPoints": [
+            {
+              "text": "Find the equation of the tangent to the curve y=(2x+1)^{4} at the point where x=−1.",
+              "note": "Use the chain rule, evaluate the derivative at x=−1, and find the curve point at x=−1."
+            }
+          ]
+        },
+        {
+          "id": "y11a-9-excel-calculus-q16",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Differentiate with respect to x: (x^{2}+3)^{9}.",
+          "options": [
+            "18x(x^{2}+3)^{8}",
+            "9(x^{2}+3)^{8}",
+            "18(x^{2}+3)^{8}",
+            "9x(x^{2}+3)^{9}"
+          ],
+          "answer": 0,
+          "hint": "Apply the chain rule: differentiate the outer ninth power, then multiply by the derivative 2x of the inside.",
+          "steps": [
+            {
+              "explain": "Let u=x^{2}+3. Then the outer function is u^{9}.",
+              "work": "d(u^{9})/du=9u^{8}"
+            },
+            {
+              "explain": "Differentiate the inside.",
+              "work": "du/dx=2x"
+            },
+            {
+              "explain": "Multiply the two derivatives.",
+              "work": "dy/dx=9(x^{2}+3)^{8}(2x)=18x(x^{2}+3)^{8}"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 82,
+            "sourceQuestion": 16
+          },
+          "keyPoints": [
+            {
+              "text": "Differentiate with respect to x: (x^{2}+3)^{9}.",
+              "note": "Apply the chain rule: differentiate the outer ninth power, then multiply by the derivative 2x of the inside."
+            }
+          ]
+        },
+        {
+          "id": "y11a-9-excel-calculus-q22",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Differentiate the following function: (3x^{2}+4)^{5}.",
+          "options": [
+            "30x(3x^{2}+4)^{4}",
+            "5(3x^{2}+4)^{4}",
+            "30x(3x^{2}+4)^{5}",
+            "10x(3x^{2}+4)^{4}"
+          ],
+          "answer": 0,
+          "hint": "Use the chain rule: multiply by 5, reduce the outer power by one, then multiply by the derivative 6x of the inside.",
+          "steps": [
+            {
+              "explain": "Differentiate the outer power while keeping the inside.",
+              "work": "5(3x^{2}+4)^{4}"
+            },
+            {
+              "explain": "Differentiate the inside expression.",
+              "work": "d(3x^{2}+4)/dx=6x"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "dy/dx=5(3x^{2}+4)^{4}(6x)=30x(3x^{2}+4)^{4}"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 82,
+            "sourceQuestion": 22
+          },
+          "keyPoints": [
+            {
+              "text": "Differentiate the following function: (3x^{2}+4)^{5}.",
+              "note": "Use the chain rule: multiply by 5, reduce the outer power by one, then multiply by the derivative 6x of the inside."
+            }
+          ]
+        },
+        {
+          "id": "y11a-9-excel-calculus-q23",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Differentiate the following function: (x^{2}+5)^{3}.",
+          "options": [
+            "6x(x^{2}+5)^{2}",
+            "3(x^{2}+5)^{2}",
+            "6x(x^{2}+5)^{3}",
+            "3x(x^{2}+5)^{2}"
+          ],
+          "answer": 0,
+          "hint": "Use the chain rule on the outer cube and inner x^{2}+5.",
+          "steps": [
+            {
+              "explain": "Differentiate the outer function.",
+              "work": "3(x^{2}+5)^{2}"
+            },
+            {
+              "explain": "Multiply by the derivative of x^{2}+5.",
+              "work": "d(x^{2}+5)/dx=2x"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "dy/dx=3(x^{2}+5)^{2}(2x)=6x(x^{2}+5)^{2}"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 82,
+            "sourceQuestion": 23
+          },
+          "keyPoints": [
+            {
+              "text": "Differentiate the following function: (x^{2}+5)^{3}.",
+              "note": "Use the chain rule on the outer cube and inner x^{2}+5."
+            }
+          ]
+        },
+        {
+          "id": "y11a-9-excel-calculus-q30",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Differentiate 1/√(1+x^{2}).",
+          "options": [
+            "−x/(1+x^{2})^(3/2)",
+            "x/(1+x^{2})^(3/2)",
+            "−1/[2(1+x^{2})^(3/2)]",
+            "−x/√(1+x^{2})"
+          ],
+          "answer": 0,
+          "hint": "Rewrite the function as (1+x^{2})^(-1/2) and apply the chain rule.",
+          "steps": [
+            {
+              "explain": "Rewrite the denominator as a negative fractional power.",
+              "work": "y=(1+x^{2})^(−1/2)"
+            },
+            {
+              "explain": "Differentiate the outer power and multiply by the inner derivative 2x.",
+              "work": "dy/dx=−½(1+x^{2})^(−3/2)(2x)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "dy/dx=−x(1+x^{2})^(−3/2)"
+            },
+            {
+              "explain": "Write with a positive exponent in the denominator.",
+              "work": "−x/(1+x^{2})^(3/2)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
+            "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
+            "sourcePage": 82,
+            "sourceQuestion": 30
+          },
+          "keyPoints": [
+            {
+              "text": "Differentiate 1/√(1+x^{2}).",
+              "note": "Rewrite the function as (1+x^{2})^(-1/2) and apply the chain rule."
+            }
+          ]
         }
       ]
     },
