@@ -9,7 +9,9 @@ import { loadHomeworkLocalChecked, saveHomeworkLocal, mergeHomeworkLocal, reques
 import { useWorksheetPdf } from '../../utils/useWorksheetPdf';
 import { StudyTimerStartButton } from '../studyTimer/StudyTimerPill';
 import HomeworkStorageWarning from './HomeworkStorageWarning';
-import { submitHomework, loadTopicPdfMap, studentDisplayName } from '../../services/homeworkService';
+import { submitHomework, studentDisplayName } from '../../services/homeworkService';
+import { useTopicPdfMap } from '../../utils/useTopicPdfMap';
+import WorksheetPlaceholder from './WorksheetPlaceholder';
 import { toDriveOpenUrl, MAX_HOMEWORK_PAGES } from '../../utils/homework';
 
 const waitForCanvasCommit = () => new Promise((resolve) => {
@@ -35,7 +37,9 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
   const topics = useMemo(() => (session?.learnedTopics || []).filter((t) => t?.id), [session?.learnedTopics]);
   const firstTopicId = topics[0]?.id || '';
 
-  const [pdfMap, setPdfMap] = useState({});
+  const topicIds = useMemo(() => topics.map((t) => t.id), [topics]);
+  const worksheets = useTopicPdfMap(profile, topicIds);
+  const pdfMap = worksheets.map;
   const [topicIdx, setTopicIdx] = useState(0);
   const [activeNotebook, setActiveNotebook] = useState(topics[0]?.id || '');
   const [hasEarlierNotes, setHasEarlierNotes] = useState(false);
@@ -54,12 +58,6 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
   // overwrite the real notebooks with this visit's blank ones). `loadAttempt` re-runs the load.
   const [storageError, setStorageError] = useState(false);
   const [loadAttempt, setLoadAttempt] = useState(0);
-
-  useEffect(() => {
-    let cancelled = false;
-    loadTopicPdfMap(profile).then((map) => { if (!cancelled) setPdfMap(map); }).catch(() => {});
-    return () => { cancelled = true; };
-  }, [profile]);
 
   // Every notebook in memory → the device store (merged, never wiping). Used when the app is hidden / closed
   // and when this screen goes away, so writing done just before that is never lost to the autosave delay.
@@ -295,9 +293,7 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
             style={{ width: '100%', height: '100%' }}
           />
         ) : (
-          <div style={{ height: '100%', display: 'grid', placeItems: 'center', color: '#94a3b8', fontWeight: 600, padding: 24, textAlign: 'center' }}>
-            No worksheet for this topic.
-          </div>
+          <WorksheetPlaceholder status={worksheets.status} error={worksheets.error} onRetry={worksheets.retry} />
         )}
       </div>
       {rawPdf && (

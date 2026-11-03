@@ -109,6 +109,23 @@ export const curriculumDocIdsForProfile = (profile = {}) => {
   return ids;
 };
 
+// The curriculum doc a topic id lives in: 'y7-1k' → 'Year_7', 'y11a-2A' → 'Year_11_Advanced', 'y12e1-3B' →
+// 'Year_12_Extension 1'. Lets homework find its worksheets from the session's own topics even when the profile on
+// this device names a different year (a Year 6 student doing Year 7 topics).
+const SENIOR_COURSES = { a: 'Advanced', e1: 'Extension 1', e2: 'Extension 2' };
+export const curriculumDocIdForTopic = (topicId) => {
+  const m = /^y(\d+)(a|e1|e2)?-/.exec(String(topicId || ''));
+  if (!m) return '';
+  const n = Number(m[1]);
+  if (n >= 11) return SENIOR_COURSES[m[2]] ? `Year_${n}_${SENIOR_COURSES[m[2]]}` : '';
+  return m[2] ? '' : `Year_${n}`;
+};
+
+export const curriculumDocIdsForHomework = (profile, topicIds = []) => [...new Set([
+  ...topicIds.map(curriculumDocIdForTopic).filter(Boolean),
+  ...curriculumDocIdsForProfile(profile || {}),
+])];
+
 export const buildTopicPdfMap = (curriculumDocs) => {
   const map = {};
   (Array.isArray(curriculumDocs) ? curriculumDocs : []).forEach((d) => {

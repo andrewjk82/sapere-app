@@ -11,7 +11,9 @@ import { loadHomeworkLocalChecked, mergeHomeworkLocal, requestPersistentStorage 
 import HomeworkStorageWarning from './HomeworkStorageWarning';
 import { useWorksheetPdf } from '../../utils/useWorksheetPdf';
 import { StudyTimerStartButton } from '../studyTimer/StudyTimerPill';
-import { loadTopicPdfMap, fetchAnswerKeys } from '../../services/homeworkService';
+import { fetchAnswerKeys } from '../../services/homeworkService';
+import { useTopicPdfMap } from '../../utils/useTopicPdfMap';
+import WorksheetPlaceholder from './WorksheetPlaceholder';
 import { getHomeworkQuestionIndex, getQuestionsByIds } from '../../services/contentLoader';
 import { resolveHomeworkQuestion } from '../../utils/homeworkQuestionLink';
 import { isSafeImageDataUrl } from '../../utils/homework';
@@ -46,7 +48,9 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
   const [inkMap, setInkMap] = useState({});
   const [statusMap, setStatusMap] = useState({});
   const [ready, setReady] = useState(false);
-  const [pdfMap, setPdfMap] = useState({});
+  const topicIds = useMemo(() => (item?.topics || []).map((t) => t?.id).filter(Boolean), [item?.topics]);
+  const worksheets = useTopicPdfMap(profile, topicIds);
+  const pdfMap = worksheets.map;
   const [questionIndex, setQuestionIndex] = useState({});
   const [linkedQuestion, setLinkedQuestion] = useState(null);
   // Side by side or worksheet on top (the student's pick, per orientation); tabs on a phone.
@@ -61,12 +65,6 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
   const sourceMatch = useMemo(() => active
     ? resolveHomeworkQuestion(homeworkReferenceFor(active), questionIndex)
     : { status: 'missing' }, [active, questionIndex]);
-
-  useEffect(() => {
-    let cancelled = false;
-    loadTopicPdfMap(profile).then((map) => { if (!cancelled) setPdfMap(map); }).catch(() => {});
-    return () => { cancelled = true; };
-  }, [profile]);
 
   useEffect(() => {
     let cancelled = false;
@@ -230,9 +228,7 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
           style={{ width: '100%', height: '100%' }}
         />
       ) : (
-        <div style={{ height: '100%', display: 'grid', placeItems: 'center', color: '#94a3b8', fontWeight: 600, padding: 24, textAlign: 'center' }}>
-          No worksheet for this topic.
-        </div>
+        <WorksheetPlaceholder status={worksheets.status} error={worksheets.error} onRetry={worksheets.retry} />
       )}
       {sheet && (
         <div style={{ position: 'absolute', inset: 8, background: '#fff', borderRadius: 16, border: '1px solid #e2e8f0', boxShadow: '0 12px 32px rgba(15,23,42,0.22)', display: 'flex', flexDirection: 'column', zIndex: 6 }}>

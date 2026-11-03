@@ -7,7 +7,7 @@ import { db, ADMIN_UID, ADMIN_EMAIL } from '../firebase/config';
 import { resizeDataUrlImage } from '../utils/imageResize';
 import { createAnswerKeyCache, idbAnswerKeyAdapter } from '../utils/answerKeyCache';
 import {
-  MAX_HOMEWORK_PAGES, dataUrlBytes, purgeAfterDate, curriculumDocIdsForProfile, buildTopicPdfMap, planUploadBatches,
+  MAX_HOMEWORK_PAGES, dataUrlBytes, purgeAfterDate, curriculumDocIdsForHomework, buildTopicPdfMap, planUploadBatches,
 } from '../utils/homework';
 
 const SUBMISSIONS = 'homework_submissions';
@@ -312,10 +312,34 @@ export async function fetchAnswerKeys(topicIds = []) {
   ]));
 }
 
-// 1–2 reads per homework open. Fetched fresh (not from LearningPath's cache)
-// so a PDF the teacher just added shows up immediately.
-export async function loadTopicPdfMap(profile) {
-  const ids = curriculumDocIdsForProfile(profile);
-  const snaps = await Promise.all(ids.map((id) => getDoc(doc(db, 'curriculum', id)).catch(() => null)));
-  return buildTopicPdfMap(snaps.filter((s) => s?.exists()).map((s) => s.data()));
+const PDF_MAP_TIMEOUT_MS = 10000;
+const PDF_MAP_STORE_KEY = 'sapere:hwPdfMap';
+const readSavedPdfMap = () => {
+  try { return JSON.parse(localStorage.getItem(PDF_MAP_STORE_KEY) || '{}') || {}; } catch { return {}; }
+};
+const savePdfMap = (map) => {
+  try { localStorage.setItem(PDF_MAP_STORE_KEY, JSON.stringify({ ...readSavedPdfMap(), ...map })); } catch { /* storage full / blocked */ }
+};
+
+// 1–3 reads per homework open. Fetched fresh (not from LearningPath's cache)
+// so a PDF the teacher just added shows up immediately. The docs come from the
+// homework's own topic ids as well as the profile. A read that fails or gets no
+// answer used to be swallowed, so a blocked connection looked like "No worksheet
+// for this topic" (2026-11-03, Noah): now the last list this device loaded fills
+// in, and if a topic is still missing the error is thrown for the screen to show.
+export async function loadTopicPdfMap(profile, topicIds = []) {
+  const ids = curriculumDocIdsForHomework(profile, topicIds);
+  const results = await Promise.all(ids.map((id) => withTimeout(getDoc(doc(db, 'curriculum', id)), PDF_MAP_TIMEOUT_MS)
+    .then((snap) => ({ snap }), (error) => ({ id, error }))));
+  const map = buildTopicPdfMap(results.filter((r) => r.snap?.exists()).map((r) => r.snap.data()));
+  const failed = results.filter((r) => r.error);
+  if (failed.length === 0) {
+    savePdfMap(map);
+    return map;
+  }
+  failed.forEach((r) => console.warn('[homework] worksheet list load failed:', r.id, r.error?.code || r.error?.message || r.error));
+  const merged = { ...readSavedPdfMap(), ...map };
+  if (topicIds.every((id) => merged[id])) return merged;
+  const err = failed[0].error;
+  throw Object.assign(new Error(err?.message || 'worksheet list load failed'), { code: err?.code || err?.message || 'unknown' });
 }

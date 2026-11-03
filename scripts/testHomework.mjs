@@ -12,6 +12,8 @@ import {
   getHomeworkItems,
   getHomeworkHistory,
   curriculumDocIdsForProfile,
+  curriculumDocIdForTopic,
+  curriculumDocIdsForHomework,
   buildTopicPdfMap,
   dataUrlBytes,
   purgeAfterDate,
@@ -90,6 +92,22 @@ test('getHomeworkItems keeps sessions with learnedTopics, newest first, drops st
 test('getHomeworkItems tolerates junk input', () => {
   assert.deepEqual(getHomeworkItems(null), []);
   assert.deepEqual(getHomeworkItems([null, {}]), []);
+});
+
+test('curriculumDocIdForTopic names the curriculum doc a topic id lives in', () => {
+  assert.equal(curriculumDocIdForTopic('y7-1k'), 'Year_7');
+  assert.equal(curriculumDocIdForTopic('y10-12A'), 'Year_10');
+  assert.equal(curriculumDocIdForTopic('y11a-13D'), 'Year_11_Advanced');
+  assert.equal(curriculumDocIdForTopic('y11e1-2B'), 'Year_11_Extension 1');
+  assert.equal(curriculumDocIdForTopic('y12e2-1A'), 'Year_12_Extension 2');
+  assert.equal(curriculumDocIdForTopic('calc-1'), '');
+  assert.equal(curriculumDocIdForTopic(''), '');
+});
+
+test('curriculumDocIdsForHomework reads the topics\' docs even when the profile names another year', () => {
+  assert.deepEqual(curriculumDocIdsForHomework({ assignedYear: ['6'] }, ['y7-1k', 'y7-2a']), ['Year_7', 'Year_6']);
+  assert.deepEqual(curriculumDocIdsForHomework({ assignedYear: ['Year 7'] }, ['y7-1k']), ['Year_7']);
+  assert.deepEqual(curriculumDocIdsForHomework(null, []), []);
 });
 
 test('curriculumDocIdsForProfile mirrors LearningPath doc ids', () => {
