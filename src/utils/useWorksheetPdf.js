@@ -1,10 +1,35 @@
 import { useEffect, useState } from 'react';
 import { extractDriveFileId, toDrivePreviewUrl } from './homework';
 import { loadCachedPdf, cachePdf } from './homeworkLocalStore';
+import { withTimeout } from './withTimeout';
+
+// IndexedDB on iPad Safari can stop answering (a known WebKit hang after the app was backgrounded for a long time),
+// and a download on weak school Wi-Fi can stall without ever erroring. Either used to leave "Loading worksheet…"
+// spinning forever; past these limits we move on (download, then Drive's own viewer).
+const CACHE_READ_TIMEOUT_MS = 3000;
+const DOWNLOAD_TIMEOUT_MS = 30000;
+
+const downloadPdf = async (fileId) => {
+  const controller = typeof AbortController === 'function' ? new AbortController() : null;
+  const timer = setTimeout(() => controller?.abort(), DOWNLOAD_TIMEOUT_MS);
+  try {
+    return await withTimeout(
+      fetch(`/api/worksheet?id=${encodeURIComponent(fileId)}`, controller ? { signal: controller.signal } : undefined)
+        .then(async (r) => {
+          if (!r.ok) throw new Error(`HTTP ${r.status}`);
+          return r.blob();
+        }),
+      DOWNLOAD_TIMEOUT_MS + 1000,
+    );
+  } finally {
+    clearTimeout(timer);
+  }
+};
 
 const isPdfBlob = async (blob) => {
   try {
-    const head = new Uint8Array(await blob.slice(0, 5).arrayBuffer());
+    // A Blob read back from IndexedDB can hang on Safari when its backing file is gone — time-box it too.
+    const head = new Uint8Array(await withTimeout(blob.slice(0, 5).arrayBuffer(), CACHE_READ_TIMEOUT_MS));
     return String.fromCharCode(...head) === '%PDF-';
   } catch {
     return false;
@@ -30,13 +55,11 @@ export function useWorksheetPdf(rawUrl) {
     let objectUrl = '';
 
     (async () => {
-      let blob = await loadCachedPdf(fileId);
+      let blob = await withTimeout(loadCachedPdf(fileId), CACHE_READ_TIMEOUT_MS).catch(() => null);
       if (blob && !(await isPdfBlob(blob))) blob = null;
-      if (!blob) {
+      if (!blob && !cancelled) {
         try {
-          const res = await fetch(`/api/worksheet?id=${encodeURIComponent(fileId)}`);
-          if (!res.ok) throw new Error(`HTTP ${res.status}`);
-          const downloaded = await res.blob();
+          const downloaded = await downloadPdf(fileId);
           if (!(await isPdfBlob(downloaded))) throw new Error('not a PDF');
           blob = downloaded;
           cachePdf(fileId, downloaded);

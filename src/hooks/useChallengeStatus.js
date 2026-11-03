@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { doc, getDoc, onSnapshot } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { localCache } from '../services/localCacheService';
@@ -8,6 +8,7 @@ import {
   getChallengeBootMetaId,
 } from '../utils/challengeUtils';
 import { getDailyAssignmentCacheKey } from '../services/dailyAssignmentService';
+import { useProfile } from '../context/ProfileContext';
 
 /**
  * Manages today's challenge completion status, student profile, and chapter
@@ -24,6 +25,20 @@ export const useChallengeStatus = (uid) => {
   const [todayStatusReady, setTodayStatusReady] = useState(false);
   const [studentProfile, setStudentProfile] = useState(null);
   const [chapterProgress, setChapterProgress] = useState(null);
+
+  // ProfileContext already keeps a live listener on users/{uid}; reading the same doc again here was a duplicate
+  // read on every Daily Challenge open, and on a fresh device the challenge could start before that read landed
+  // (an empty profile → wrong curriculum signature → a needless regeneration).
+  const { profile: liveProfile } = useProfile();
+  const sharedProfile = liveProfile && typeof liveProfile === 'object' ? liveProfile : null;
+  const sharedProfileRef = useRef(sharedProfile);
+  useEffect(() => {
+    sharedProfileRef.current = sharedProfile;
+    if (!uid || !sharedProfile) return;
+    const key = getChallengeBootCacheKey(uid);
+    const boot = localCache.get(key);
+    if (boot) localCache.set(key, { ...boot, studentProfile: sharedProfile });
+  }, [uid, sharedProfile]);
 
   // ── Apply status flags from local cache ──
   const applyStatusFromCache = useCallback(() => {
@@ -81,7 +96,9 @@ export const useChallengeStatus = (uid) => {
           Object.keys(localBoot.studentProfile).length === 0 ||
           profileAge > PROFILE_TTL_MS;
 
-        if (shouldFetchProfile) {
+        if (sharedProfileRef.current) {
+          nextBoot.studentProfile = sharedProfileRef.current;
+        } else if (shouldFetchProfile) {
           const snap = await getDoc(doc(db, 'users', uid));
           if (cancelled) return;
           nextBoot.studentProfile = snap.exists() ? snap.data() : (localBoot.studentProfile || {});
@@ -259,7 +276,8 @@ export const useChallengeStatus = (uid) => {
     calcCompletedToday, setCalcCompletedToday,
     calcAbandonedToday, setCalcAbandonedToday,
     todayStatusReady,
-    studentProfile,     setStudentProfile,
+    // The live shared profile wins; the locally fetched/cached one covers the moment before it arrives.
+    studentProfile: sharedProfile || studentProfile, setStudentProfile,
     chapterProgress,    setChapterProgress,
     refreshStudentProfile,
   };

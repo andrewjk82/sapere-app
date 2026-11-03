@@ -6,6 +6,7 @@
 // so this can't be used as a general proxy.
 
 export const MAX_WORKSHEET_BYTES = 4 * 1024 * 1024; // Vercel function responses cap at 4.5MB
+const UPSTREAM_TIMEOUT_MS = 20000;
 const ID_RE = /^[A-Za-z0-9_-]{10,128}$/;
 
 const fail = (res, status, error) => {
@@ -34,7 +35,10 @@ export function createWorksheetHandler({ getAllowedIds, fetchImpl = fetch }) {
 
     let upstream;
     try {
-      upstream = await fetchImpl(`https://drive.usercontent.google.com/download?id=${id}&export=download`, { redirect: 'follow' });
+      // Drive sometimes accepts the connection and then never sends the body; without a limit the student's
+      // "Loading worksheet…" waited the function's full 60s before falling back to Drive's viewer.
+      const signal = typeof AbortSignal?.timeout === 'function' ? AbortSignal.timeout(UPSTREAM_TIMEOUT_MS) : undefined;
+      upstream = await fetchImpl(`https://drive.usercontent.google.com/download?id=${id}&export=download`, { redirect: 'follow', signal });
     } catch (err) {
       console.error('[worksheet] drive fetch failed:', err?.message || err);
       return fail(res, 502, 'drive unavailable');
@@ -42,7 +46,13 @@ export function createWorksheetHandler({ getAllowedIds, fetchImpl = fetch }) {
     if (!upstream.ok) return fail(res, 502, `drive responded ${upstream.status}`);
     if (Number(upstream.headers.get('content-length') || 0) > MAX_WORKSHEET_BYTES) return fail(res, 413, 'too large');
 
-    const body = Buffer.from(await upstream.arrayBuffer());
+    let body;
+    try {
+      body = Buffer.from(await upstream.arrayBuffer());
+    } catch (err) {
+      console.error('[worksheet] drive body read failed:', err?.message || err);
+      return fail(res, 504, 'drive timed out');
+    }
     if (body.length > MAX_WORKSHEET_BYTES) return fail(res, 413, 'too large');
     // Unshared/quota-limited files come back as an HTML page, not a PDF.
     if (body.subarray(0, 5).toString('latin1') !== '%PDF-') return fail(res, 502, 'not a pdf');

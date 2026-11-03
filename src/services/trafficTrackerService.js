@@ -10,6 +10,12 @@ let buffer = {
 };
 
 let flushTimeout = null;
+let lastFlushAt = 0;
+// Hiding the tab used to write a traffic_logs doc every time — an iPad student flicking between apps wrote dozens a
+// day of near-empty logs. Hide-flushes within this window of the last one are skipped unless the buffer is large;
+// the 5-minute timer still flushes whatever accumulated.
+const MIN_HIDE_FLUSH_GAP_MS = 2 * 60 * 1000;
+const HIDE_FLUSH_MIN_OPS = 50;
 let currentUid = 'guest';
 let currentRole = 'guest';
 
@@ -70,6 +76,7 @@ export const flushBuffer = async () => {
   if (flushTimeout) clearTimeout(flushTimeout);
   flushTimeout = null;
   if (buffer.reads === 0 && buffer.writes === 0 && buffer.apiCalls === 0) return;
+  lastFlushAt = Date.now();
 
   const logPayload = {
     uid: currentUid,
@@ -108,8 +115,9 @@ if (typeof window !== 'undefined') {
     flushBuffer();
   });
   document.addEventListener('visibilitychange', () => {
-    if (document.visibilityState === 'hidden') {
-      flushBuffer();
-    }
+    if (document.visibilityState !== 'hidden') return;
+    const ops = buffer.reads + buffer.writes + buffer.apiCalls;
+    if (Date.now() - lastFlushAt < MIN_HIDE_FLUSH_GAP_MS && ops < HIDE_FLUSH_MIN_OPS) return;
+    flushBuffer();
   });
 }

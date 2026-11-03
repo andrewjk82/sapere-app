@@ -14,7 +14,11 @@
  */
 import { memo, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { Loader2, AlertTriangle, ZoomIn, ZoomOut, Highlighter, PenLine, Eraser, Undo2, Redo2, Trash2, Hand } from 'lucide-react';
-import * as pdfjsLib from 'pdfjs-dist';
+// The LEGACY build, not the default one: pdf.js 4.x's default build calls
+// Promise.withResolvers (and other ES2024 APIs) unpolyfilled, which throws on
+// Safari < 17.4 — every school iPad still on iPadOS 16 / early 17 got
+// "worksheet never opens" (2026-11). The legacy build ships those polyfills.
+import * as pdfjsLib from 'pdfjs-dist/legacy/build/pdf.mjs';
 import {
   HIGHLIGHT_COLORS, HIGHLIGHT_WIDTH, HIGHLIGHT_OPACITY, ERASE_RADIUS, PEN_COLORS, PEN_WIDTH, PEN_MIN_GAP, isPenStroke,
   penWidthFor, penPointsInPx,
@@ -27,10 +31,14 @@ import { classifyMultiTap } from '../utils/padView';
 import { drawPenSegments, drawTip } from '../utils/inkRender';
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.mjs',
+  'pdfjs-dist/legacy/build/pdf.worker.min.mjs',
   import.meta.url,
 ).toString();
 
+// A document that hasn't opened by then (worker failed to load, a stalled
+// blob read on a low-memory iPad) falls back to the Drive viewer instead of
+// leaving a blank pane forever.
+const OPEN_TIMEOUT_MS = 20000;
 const PAGE_GAP = 12;
 const MAX_PAGE_WIDTH = 1000;
 const MAX_RENDER_WIDTH = 3200;
@@ -665,18 +673,38 @@ const PdfViewer = ({ src, loading, fallback, style, storageKey }) => {
   useEffect(() => {
     if (!src) return undefined;
     let cancelled = false;
-    const task = pdfjsLib.getDocument(src);
+    let settled = false;
+    const fail = (err) => {
+      if (settled || cancelled) return;
+      settled = true;
+      console.warn('[PdfViewer] open failed:', err);
+      setOpened({ src, failed: true });
+    };
+    let task = null;
+    try {
+      // getDocument throws synchronously when the browser lacks an API it needs — that used to escape the effect
+      // and take the whole screen down instead of falling back to the Drive viewer.
+      task = pdfjsLib.getDocument({ url: src, isEvalSupported: false });
+    } catch (err) {
+      fail(err);
+      return () => { cancelled = true; };
+    }
+    const timer = window.setTimeout(() => fail(new Error('open timed out')), OPEN_TIMEOUT_MS);
     task.promise
       .then(async (pdf) => {
         const first = await pdf.getPage(1);
         const base = first.getViewport({ scale: 1 });
-        if (!cancelled) setOpened({ src, pdf, numPages: pdf.numPages, ratio: base.height / base.width });
+        if (cancelled || settled) return;
+        settled = true;
+        setOpened({ src, pdf, numPages: pdf.numPages, ratio: base.height / base.width });
       })
-      .catch((err) => {
-        console.warn('[PdfViewer] open failed:', err);
-        if (!cancelled) setOpened({ src, failed: true });
-      });
-    return () => { cancelled = true; task.destroy(); };
+      .catch(fail)
+      .finally(() => window.clearTimeout(timer));
+    return () => {
+      cancelled = true;
+      window.clearTimeout(timer);
+      try { task.destroy(); } catch { /* already torn down */ }
+    };
   }, [src]);
 
   useEffect(() => {
