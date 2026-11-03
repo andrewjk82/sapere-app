@@ -4652,7 +4652,7 @@
             "sourceQuestion": "7"
           },
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 200\" role=\"img\" aria-label=\"Original two-row table pairing eight maximum temperatures and drinks sold\"><rect width=\"760\" height=\"200\" fill=\"white\"/><text x=\"380\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">Temperature and vending-machine drinks</text><rect x=\"20\" y=\"50\" width=\"720\" height=\"55\" fill=\"#dcfce7\" stroke=\"#475569\"/><path d=\"M210 50V105\" stroke=\"#64748b\"/><text x=\"115.0\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\" fill=\"#172554\">Maximum temperature T (°C)</text><text x=\"243.1\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#172554\">28</text><text x=\"309.4\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#172554\">25</text><text x=\"375.6\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#172554\">36</text><text x=\"441.9\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#172554\">34</text><text x=\"508.1\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#172554\">37</text><text x=\"574.4\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#172554\">31</text><text x=\"640.6\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#172554\">32</text><text x=\"706.9\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#172554\">30</text><path d=\"M276.2 50V105\" stroke=\"#94a3b8\"/><path d=\"M342.5 50V105\" stroke=\"#94a3b8\"/><path d=\"M408.8 50V105\" stroke=\"#94a3b8\"/><path d=\"M475.0 50V105\" stroke=\"#94a3b8\"/><path d=\"M541.2 50V105\" stroke=\"#94a3b8\"/><path d=\"M607.5 50V105\" stroke=\"#94a3b8\"/><path d=\"M673.8 50V105\" stroke=\"#94a3b8\"/><rect x=\"20\" y=\"105\" width=\"720\" height=\"55\" fill=\"#f8fafc\" stroke=\"#475569\"/><path d=\"M210 105V160\" stroke=\"#64748b\"/><text x=\"115.0\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\" fill=\"#172554\">Number of drinks sold D</text><text x=\"243.1\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#172554\">20</text><text x=\"309.4\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#172554\">16</text><text x=\"375.6\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#172554\">48</text><text x=\"441.9\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#172554\">34</text><text x=\"508.1\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#172554\">46</text><text x=\"574.4\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#172554\">24</text><text x=\"640.6\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#172554\">40</text><text x=\"706.9\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#172554\">32</text><path d=\"M276.2 105V160\" stroke=\"#94a3b8\"/><path d=\"M342.5 105V160\" stroke=\"#94a3b8\"/><path d=\"M408.8 105V160\" stroke=\"#94a3b8\"/><path d=\"M475.0 105V160\" stroke=\"#94a3b8\"/><path d=\"M541.2 105V160\" stroke=\"#94a3b8\"/><path d=\"M607.5 105V160\" stroke=\"#94a3b8\"/><path d=\"M673.8 105V160\" stroke=\"#94a3b8\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 610\" role=\"img\" aria-label=\"Original temperature and drink-sales table with scatterplot and regression line\"><rect width=\"760\" height=\"610\" fill=\"white\"/><g><rect width=\"760\" height=\"200\" fill=\"white\"/><text x=\"380\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">Temperature and vending-machine drinks</text><rect x=\"20\" y=\"50\" width=\"720\" height=\"55\" fill=\"#dcfce7\" stroke=\"#475569\"/><path d=\"M210 50V105\" stroke=\"#64748b\"/><text x=\"115.0\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\" fill=\"#172554\">Maximum temperature T (°C)</text><text x=\"243.1\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#172554\">28</text><text x=\"309.4\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#172554\">25</text><text x=\"375.6\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#172554\">36</text><text x=\"441.9\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#172554\">34</text><text x=\"508.1\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#172554\">37</text><text x=\"574.4\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#172554\">31</text><text x=\"640.6\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#172554\">32</text><text x=\"706.9\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#172554\">30</text><path d=\"M276.2 50V105\" stroke=\"#94a3b8\"/><path d=\"M342.5 50V105\" stroke=\"#94a3b8\"/><path d=\"M408.8 50V105\" stroke=\"#94a3b8\"/><path d=\"M475.0 50V105\" stroke=\"#94a3b8\"/><path d=\"M541.2 50V105\" stroke=\"#94a3b8\"/><path d=\"M607.5 50V105\" stroke=\"#94a3b8\"/><path d=\"M673.8 50V105\" stroke=\"#94a3b8\"/><rect x=\"20\" y=\"105\" width=\"720\" height=\"55\" fill=\"#f8fafc\" stroke=\"#475569\"/><path d=\"M210 105V160\" stroke=\"#64748b\"/><text x=\"115.0\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\" fill=\"#172554\">Number of drinks sold D</text><text x=\"243.1\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#172554\">20</text><text x=\"309.4\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#172554\">16</text><text x=\"375.6\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#172554\">48</text><text x=\"441.9\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#172554\">34</text><text x=\"508.1\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#172554\">46</text><text x=\"574.4\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#172554\">24</text><text x=\"640.6\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#172554\">40</text><text x=\"706.9\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#172554\">32</text><path d=\"M276.2 105V160\" stroke=\"#94a3b8\"/><path d=\"M342.5 105V160\" stroke=\"#94a3b8\"/><path d=\"M408.8 105V160\" stroke=\"#94a3b8\"/><path d=\"M475.0 105V160\" stroke=\"#94a3b8\"/><path d=\"M541.2 105V160\" stroke=\"#94a3b8\"/><path d=\"M607.5 105V160\" stroke=\"#94a3b8\"/><path d=\"M673.8 105V160\" stroke=\"#94a3b8\"/></g><g transform=\"translate(0 205)\"><rect width=\"760\" height=\"390\" fill=\"white\"/><text x=\"380\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" fill=\"#334155\" font-weight=\"bold\">Source regression line passes through the highlighted points</text><path d=\"M85.0 65V315 M85 65.0H700\" stroke=\"#e2e8f0\"/><path d=\"M146.5 65V315 M85 90.0H700\" stroke=\"#e2e8f0\"/><path d=\"M208.0 65V315 M85 115.0H700\" stroke=\"#e2e8f0\"/><path d=\"M269.5 65V315 M85 140.0H700\" stroke=\"#e2e8f0\"/><path d=\"M331.0 65V315 M85 165.0H700\" stroke=\"#e2e8f0\"/><path d=\"M392.5 65V315 M85 190.0H700\" stroke=\"#e2e8f0\"/><path d=\"M454.0 65V315 M85 215.0H700\" stroke=\"#e2e8f0\"/><path d=\"M515.5 65V315 M85 240.0H700\" stroke=\"#e2e8f0\"/><path d=\"M577.0 65V315 M85 265.0H700\" stroke=\"#e2e8f0\"/><path d=\"M638.5 65V315 M85 290.0H700\" stroke=\"#e2e8f0\"/><path d=\"M700.0 65V315 M85 315.0H700\" stroke=\"#e2e8f0\"/><path d=\"M85 65V315H700\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"85.0\" y=\"334\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">24</text><text x=\"73\" y=\"69.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">52</text><text x=\"208.0\" y=\"334\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">26.8</text><text x=\"73\" y=\"119.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">43.6</text><text x=\"331.0\" y=\"334\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">29.6</text><text x=\"73\" y=\"169.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">35.2</text><text x=\"454.0\" y=\"334\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">32.4</text><text x=\"73\" y=\"219.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">26.8</text><text x=\"577.0\" y=\"334\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">35.2</text><text x=\"73\" y=\"269.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">18.4</text><text x=\"700.0\" y=\"334\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">38</text><text x=\"73\" y=\"319.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">10</text><path d=\"M128.9 279.3L656.1 100.7\" stroke=\"#7c3aed\" stroke-width=\"3\"/><circle cx=\"260.7\" cy=\"255.5\" r=\"4\" fill=\"#334155\"/><circle cx=\"128.9\" cy=\"279.3\" r=\"6\" fill=\"#16a34a\"/><circle cx=\"128.9\" cy=\"279.3\" r=\"10\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/><circle cx=\"612.1\" cy=\"88.8\" r=\"4\" fill=\"#334155\"/><circle cx=\"524.3\" cy=\"172.1\" r=\"4\" fill=\"#334155\"/><circle cx=\"656.1\" cy=\"100.7\" r=\"6\" fill=\"#16a34a\"/><circle cx=\"656.1\" cy=\"100.7\" r=\"10\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/><circle cx=\"392.5\" cy=\"231.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"436.4\" cy=\"136.4\" r=\"4\" fill=\"#334155\"/><circle cx=\"348.6\" cy=\"184.0\" r=\"4\" fill=\"#334155\"/><text x=\"392.5\" y=\"365\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"normal\">Temperature, T (°C)</text><text x=\"22\" y=\"190\" transform=\"rotate(-90 22 190)\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Drinks sold, D</text></g></svg>"
           }
         },
         {
@@ -4779,7 +4779,7 @@
             "sourceQuestion": "8"
           },
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 200\" role=\"img\" aria-label=\"Original table of ten mother and daughter height pairs\"><rect width=\"760\" height=\"200\" fill=\"white\"/><text x=\"380\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">Heights of mothers and daughters</text><rect x=\"20\" y=\"50\" width=\"720\" height=\"55\" fill=\"#dcfce7\" stroke=\"#475569\"/><path d=\"M170 50V105\" stroke=\"#64748b\"/><text x=\"95.0\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">Mother m (cm)</text><text x=\"198.5\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">170</text><text x=\"255.5\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">163</text><text x=\"312.5\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">160</text><text x=\"369.5\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">172</text><text x=\"426.5\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">164</text><text x=\"483.5\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">158</text><text x=\"540.5\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">164</text><text x=\"597.5\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">166</text><text x=\"654.5\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">167</text><text x=\"711.5\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">165</text><rect x=\"20\" y=\"105\" width=\"720\" height=\"55\" fill=\"#f8fafc\" stroke=\"#475569\"/><path d=\"M170 105V160\" stroke=\"#64748b\"/><text x=\"95.0\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">Daughter d (cm)</text><text x=\"198.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">175</text><text x=\"255.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">170</text><text x=\"312.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">168</text><text x=\"369.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">176</text><text x=\"426.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">170</text><text x=\"483.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">166</text><text x=\"540.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">171</text><text x=\"597.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">170</text><text x=\"654.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">173</text><text x=\"711.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">174</text><path d=\"M227.0 50V160\" stroke=\"#94a3b8\"/><path d=\"M284.0 50V160\" stroke=\"#94a3b8\"/><path d=\"M341.0 50V160\" stroke=\"#94a3b8\"/><path d=\"M398.0 50V160\" stroke=\"#94a3b8\"/><path d=\"M455.0 50V160\" stroke=\"#94a3b8\"/><path d=\"M512.0 50V160\" stroke=\"#94a3b8\"/><path d=\"M569.0 50V160\" stroke=\"#94a3b8\"/><path d=\"M626.0 50V160\" stroke=\"#94a3b8\"/><path d=\"M683.0 50V160\" stroke=\"#94a3b8\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 610\" role=\"img\" aria-label=\"Mother and daughter height table with the scatterplot and line of best fit\"><rect width=\"760\" height=\"610\" fill=\"white\"/><g><rect width=\"760\" height=\"200\" fill=\"white\"/><text x=\"380\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">Heights of mothers and daughters</text><rect x=\"20\" y=\"50\" width=\"720\" height=\"55\" fill=\"#dcfce7\" stroke=\"#475569\"/><path d=\"M170 50V105\" stroke=\"#64748b\"/><text x=\"95.0\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">Mother m (cm)</text><text x=\"198.5\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">170</text><text x=\"255.5\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">163</text><text x=\"312.5\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">160</text><text x=\"369.5\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">172</text><text x=\"426.5\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">164</text><text x=\"483.5\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">158</text><text x=\"540.5\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">164</text><text x=\"597.5\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">166</text><text x=\"654.5\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">167</text><text x=\"711.5\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">165</text><rect x=\"20\" y=\"105\" width=\"720\" height=\"55\" fill=\"#f8fafc\" stroke=\"#475569\"/><path d=\"M170 105V160\" stroke=\"#64748b\"/><text x=\"95.0\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">Daughter d (cm)</text><text x=\"198.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">175</text><text x=\"255.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">170</text><text x=\"312.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">168</text><text x=\"369.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">176</text><text x=\"426.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">170</text><text x=\"483.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">166</text><text x=\"540.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">171</text><text x=\"597.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">170</text><text x=\"654.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">173</text><text x=\"711.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">174</text><path d=\"M227.0 50V160\" stroke=\"#94a3b8\"/><path d=\"M284.0 50V160\" stroke=\"#94a3b8\"/><path d=\"M341.0 50V160\" stroke=\"#94a3b8\"/><path d=\"M398.0 50V160\" stroke=\"#94a3b8\"/><path d=\"M455.0 50V160\" stroke=\"#94a3b8\"/><path d=\"M512.0 50V160\" stroke=\"#94a3b8\"/><path d=\"M569.0 50V160\" stroke=\"#94a3b8\"/><path d=\"M626.0 50V160\" stroke=\"#94a3b8\"/><path d=\"M683.0 50V160\" stroke=\"#94a3b8\"/></g><g transform=\"translate(0 205)\"><rect width=\"760\" height=\"390\" fill=\"white\"/><text x=\"380\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\" font-weight=\"bold\">Heights of mothers and daughters with Melia’s fitted line</text><path d=\"M85.0 65V315 M85 65.0H700\" stroke=\"#e2e8f0\"/><path d=\"M146.5 65V315 M85 90.0H700\" stroke=\"#e2e8f0\"/><path d=\"M208.0 65V315 M85 115.0H700\" stroke=\"#e2e8f0\"/><path d=\"M269.5 65V315 M85 140.0H700\" stroke=\"#e2e8f0\"/><path d=\"M331.0 65V315 M85 165.0H700\" stroke=\"#e2e8f0\"/><path d=\"M392.5 65V315 M85 190.0H700\" stroke=\"#e2e8f0\"/><path d=\"M454.0 65V315 M85 215.0H700\" stroke=\"#e2e8f0\"/><path d=\"M515.5 65V315 M85 240.0H700\" stroke=\"#e2e8f0\"/><path d=\"M577.0 65V315 M85 265.0H700\" stroke=\"#e2e8f0\"/><path d=\"M638.5 65V315 M85 290.0H700\" stroke=\"#e2e8f0\"/><path d=\"M700.0 65V315 M85 315.0H700\" stroke=\"#e2e8f0\"/><path d=\"M85 65V315H700\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"85.0\" y=\"334\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">156</text><text x=\"73\" y=\"69.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">178</text><text x=\"146.5\" y=\"334\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">157.8</text><text x=\"73\" y=\"94.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">176.6</text><text x=\"208.0\" y=\"334\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">159.6</text><text x=\"73\" y=\"119.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">175.2</text><text x=\"269.5\" y=\"334\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">161.4</text><text x=\"73\" y=\"144.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">173.8</text><text x=\"331.0\" y=\"334\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">163.2</text><text x=\"73\" y=\"169.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">172.4</text><text x=\"392.5\" y=\"334\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">165</text><text x=\"73\" y=\"194.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">171</text><text x=\"454.0\" y=\"334\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">166.8</text><text x=\"73\" y=\"219.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">169.6</text><text x=\"515.5\" y=\"334\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">168.6</text><text x=\"73\" y=\"244.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">168.2</text><text x=\"577.0\" y=\"334\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">170.4</text><text x=\"73\" y=\"269.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">166.8</text><text x=\"638.5\" y=\"334\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">172.2</text><text x=\"73\" y=\"294.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">165.4</text><path d=\"M221.7 243.6L563.3 118.6\" stroke=\"#7c3aed\" stroke-width=\"3\"/><circle cx=\"563.3\" cy=\"118.6\" r=\"6\" fill=\"#16a34a\"/><circle cx=\"563.3\" cy=\"118.6\" r=\"10\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/><circle cx=\"324.2\" cy=\"207.9\" r=\"4\" fill=\"#334155\"/><circle cx=\"221.7\" cy=\"243.6\" r=\"6\" fill=\"#16a34a\"/><circle cx=\"221.7\" cy=\"243.6\" r=\"10\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/><circle cx=\"631.7\" cy=\"100.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"358.3\" cy=\"207.9\" r=\"4\" fill=\"#334155\"/><circle cx=\"153.3\" cy=\"279.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"358.3\" cy=\"190.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"426.7\" cy=\"207.9\" r=\"4\" fill=\"#334155\"/><circle cx=\"460.8\" cy=\"154.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"392.5\" cy=\"136.4\" r=\"4\" fill=\"#334155\"/><text x=\"392\" y=\"365\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Mother height, m (cm)</text><text x=\"22\" y=\"190\" transform=\"rotate(-90 22 190)\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Daughter height, d (cm)</text></g></svg>"
           }
         },
         {
@@ -5037,6 +5037,757 @@
             "page": "274–275",
             "course": "Advanced",
             "sourceQuestion": "11"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p275-q12",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The shoe size and height of ten students were recorded.",
+          "hint": "Keep each column as a pair. Plot all ten points, use the fit line for estimates, and remember r=1 means a perfect straight-line pattern.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p275-q12-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Complete the scatter plot AND draw a line of fit by eye.",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "answer": 0,
+              "hint": "Match every shoe size with the height directly below it. The points should rise overall; a fit line should run through the middle of the cloud.",
+              "steps": [
+                {
+                  "explain": "Each column in the table is one student, so pair the shoe size with the height in the same column. For example, the first pairs are (6,155) and (7,150).",
+                  "work": "\\((6,155),(7,150),(7,165),(8,175),(8.5,170),\\ldots\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 200\" role=\"img\" aria-label=\"Shoe size and height of ten students source data table\"><rect width=\"760\" height=\"200\" fill=\"white\"/><text x=\"380\" y=\"24\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">Shoe size and height of ten students</text><rect x=\"20\" y=\"45\" width=\"720\" height=\"58\" fill=\"#dcfce7\" stroke=\"#64748b\"/><path d=\"M170 45V103\" stroke=\"#64748b\"/><text x=\"95.0\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">Shoe size</text><text x=\"198.5\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">6</text><text x=\"255.5\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">7</text><text x=\"312.5\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">7</text><text x=\"369.5\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">8</text><text x=\"426.5\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">8.5</text><text x=\"483.5\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">9.5</text><text x=\"540.5\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">10</text><text x=\"597.5\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">11</text><text x=\"654.5\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">12</text><text x=\"711.5\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">12</text><path d=\"M227.0 45V103\" stroke=\"#94a3b8\"/><path d=\"M284.0 45V103\" stroke=\"#94a3b8\"/><path d=\"M341.0 45V103\" stroke=\"#94a3b8\"/><path d=\"M398.0 45V103\" stroke=\"#94a3b8\"/><path d=\"M455.0 45V103\" stroke=\"#94a3b8\"/><path d=\"M512.0 45V103\" stroke=\"#94a3b8\"/><path d=\"M569.0 45V103\" stroke=\"#94a3b8\"/><path d=\"M626.0 45V103\" stroke=\"#94a3b8\"/><path d=\"M683.0 45V103\" stroke=\"#94a3b8\"/><rect x=\"20\" y=\"103\" width=\"720\" height=\"58\" fill=\"#f8fafc\" stroke=\"#64748b\"/><path d=\"M170 103V161\" stroke=\"#64748b\"/><text x=\"95.0\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">Height (cm)</text><text x=\"198.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">155</text><text x=\"255.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">150</text><text x=\"312.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">165</text><text x=\"369.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">175</text><text x=\"426.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">170</text><text x=\"483.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">170</text><text x=\"540.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">190</text><text x=\"597.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">185</text><text x=\"654.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">200</text><text x=\"711.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">195</text><path d=\"M227.0 103V161\" stroke=\"#94a3b8\"/><path d=\"M284.0 103V161\" stroke=\"#94a3b8\"/><path d=\"M341.0 103V161\" stroke=\"#94a3b8\"/><path d=\"M398.0 103V161\" stroke=\"#94a3b8\"/><path d=\"M455.0 103V161\" stroke=\"#94a3b8\"/><path d=\"M512.0 103V161\" stroke=\"#94a3b8\"/><path d=\"M569.0 103V161\" stroke=\"#94a3b8\"/><path d=\"M626.0 103V161\" stroke=\"#94a3b8\"/><path d=\"M683.0 103V161\" stroke=\"#94a3b8\"/></svg>"
+                  }
+                },
+                {
+                  "explain": "Plot shoe size on the horizontal axis and height on the vertical axis. Check that the duplicate shoe size 7 has two separate heights, and size 12 also has two heights.",
+                  "work": "The plotted pairs are the ten ordered pairs in the table. Height generally rises as shoe size increases.",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 390\" role=\"img\" aria-label=\"Shoe size versus student height scatterplot with labelled axes; selected data or line highlighted\"><rect width=\"760\" height=\"390\" fill=\"white\"/><text x=\"380\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" fill=\"#334155\" font-weight=\"bold\">Shoe size versus student height</text><path d=\"M78.0 60V310 M78 60.0H700\" stroke=\"#e2e8f0\"/><path d=\"M140.2 60V310 M78 85.0H700\" stroke=\"#e2e8f0\"/><path d=\"M202.4 60V310 M78 110.0H700\" stroke=\"#e2e8f0\"/><path d=\"M264.6 60V310 M78 135.0H700\" stroke=\"#e2e8f0\"/><path d=\"M326.8 60V310 M78 160.0H700\" stroke=\"#e2e8f0\"/><path d=\"M389.0 60V310 M78 185.0H700\" stroke=\"#e2e8f0\"/><path d=\"M451.2 60V310 M78 210.0H700\" stroke=\"#e2e8f0\"/><path d=\"M513.4 60V310 M78 235.0H700\" stroke=\"#e2e8f0\"/><path d=\"M575.6 60V310 M78 260.0H700\" stroke=\"#e2e8f0\"/><path d=\"M637.8 60V310 M78 285.0H700\" stroke=\"#e2e8f0\"/><path d=\"M700.0 60V310 M78 310.0H700\" stroke=\"#e2e8f0\"/><path d=\"M78 60V310H700\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"78.0\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">5.5</text><text x=\"68\" y=\"64.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">205</text><text x=\"202.4\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">6.9</text><text x=\"68\" y=\"114.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">193</text><text x=\"326.8\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">8.3</text><text x=\"68\" y=\"164.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">181</text><text x=\"451.2\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">9.7</text><text x=\"68\" y=\"214.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">169</text><text x=\"575.6\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">11.1</text><text x=\"68\" y=\"264.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">157</text><text x=\"700.0\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">12.5</text><text x=\"68\" y=\"314.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">145</text><path d=\"M122.4 314.2L700.0 43.3\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\"/><circle cx=\"122.4\" cy=\"268.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"211.3\" cy=\"289.2\" r=\"4\" fill=\"#334155\"/><circle cx=\"211.3\" cy=\"226.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"300.1\" cy=\"185.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"344.6\" cy=\"205.8\" r=\"4\" fill=\"#334155\"/><circle cx=\"433.4\" cy=\"205.8\" r=\"4\" fill=\"#334155\"/><circle cx=\"477.9\" cy=\"122.5\" r=\"4\" fill=\"#334155\"/><circle cx=\"566.7\" cy=\"143.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"655.6\" cy=\"80.8\" r=\"4\" fill=\"#334155\"/><circle cx=\"655.6\" cy=\"101.7\" r=\"4\" fill=\"#334155\"/><text x=\"389.0\" y=\"365\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"normal\">Shoe size</text><text x=\"20\" y=\"190\" transform=\"rotate(-90 20 190)\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Height (cm)</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Draw a straight line through the middle of the points, with about as many points above as below. Option A shows the correctly paired data and an increasing line of fit.",
+                  "work": "\\(\\boxed{\\text{A}}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 430\" role=\"img\" aria-label=\"Four candidate scatterplots for shoe size and height\"><rect width=\"760\" height=\"430\" fill=\"white\"/><text x=\"380\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" fill=\"#334155\" font-weight=\"bold\">Possible completed scatterplots</text><text x=\"195\" y=\"70\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\" font-weight=\"bold\">A</text><path d=\"M60 200V83H365\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><circle cx=\"81.8\" cy=\"180.5\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"125.4\" cy=\"190.2\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"125.4\" cy=\"161.0\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"168.9\" cy=\"141.5\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"190.7\" cy=\"151.2\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"234.3\" cy=\"151.2\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"256.1\" cy=\"112.2\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"299.6\" cy=\"122.0\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"343.2\" cy=\"92.8\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"343.2\" cy=\"102.5\" r=\"2.5\" fill=\"#475569\"/><path d=\"M90.5 181.3L334.5 97.0\" stroke=\"#7c3aed\" stroke-width=\"2\"/><text x=\"560\" y=\"70\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\" font-weight=\"bold\">B</text><path d=\"M425 200V83H730\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><circle cx=\"475.8\" cy=\"191.6\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"450.4\" cy=\"174.9\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"526.7\" cy=\"174.9\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"577.5\" cy=\"158.2\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"552.1\" cy=\"149.9\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"552.1\" cy=\"133.1\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"653.8\" cy=\"124.8\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"628.3\" cy=\"108.1\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"704.6\" cy=\"91.4\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"679.2\" cy=\"91.4\" r=\"2.5\" fill=\"#475569\"/><path d=\"M455.5 100.5L699.5 182.4\" stroke=\"#7c3aed\" stroke-width=\"2\"/><text x=\"195\" y=\"255\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\" font-weight=\"bold\">C</text><path d=\"M60 385V268H365\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><circle cx=\"81.8\" cy=\"287.5\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"125.4\" cy=\"277.8\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"125.4\" cy=\"307.0\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"168.9\" cy=\"326.5\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"190.7\" cy=\"316.8\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"234.3\" cy=\"316.8\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"256.1\" cy=\"355.8\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"299.6\" cy=\"346.0\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"343.2\" cy=\"375.2\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"343.2\" cy=\"365.5\" r=\"2.5\" fill=\"#475569\"/><path d=\"M90.5 367.4L334.5 282.0\" stroke=\"#7c3aed\" stroke-width=\"2\"/><text x=\"560\" y=\"255\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\" font-weight=\"bold\">D</text><path d=\"M425 385V268H730\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><circle cx=\"446.8\" cy=\"365.5\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"490.4\" cy=\"375.2\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"490.4\" cy=\"346.0\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"533.9\" cy=\"326.5\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"555.7\" cy=\"336.2\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"599.3\" cy=\"336.2\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"621.1\" cy=\"297.2\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"664.6\" cy=\"307.0\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"708.2\" cy=\"277.8\" r=\"2.5\" fill=\"#475569\"/><circle cx=\"708.2\" cy=\"287.5\" r=\"2.5\" fill=\"#475569\"/><path d=\"M455.5 303.1L699.5 349.9\" stroke=\"#7c3aed\" stroke-width=\"2\"/></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "ten students",
+                  "note": "Plot ten paired points."
+                },
+                {
+                  "text": "shoe size AND height",
+                  "note": "Keep the values in the same column together."
+                }
+              ],
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "275–276",
+                "course": "Advanced",
+                "sourceQuestion": "12-i"
+              }
+            },
+            {
+              "id": "y12a-advanced-005-p275-q12-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Use the line of fit to estimate the height difference between a student who wears a size 7.5 shoe and one who wears a size 9 shoe.",
+              "options": [
+                "15 cm",
+                "9 cm",
+                "75 cm",
+                "174 cm"
+              ],
+              "answer": 0,
+              "hint": "Read the fitted line at shoe sizes 7.5 and 9. Then subtract the smaller predicted height from the larger one.",
+              "steps": [
+                {
+                  "explain": "Move up from shoe size 7.5 to the line, then across to the height axis. The source fit gives about 159 cm.",
+                  "work": "\\(h(7.5)\\approx159\\text{ cm}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 390\" role=\"img\" aria-label=\"Read the line of fit at shoe size 7.5 and 9 scatterplot with labelled axes; selected data or line highlighted\"><rect width=\"760\" height=\"390\" fill=\"white\"/><text x=\"380\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" fill=\"#334155\" font-weight=\"bold\">Read the line of fit at shoe size 7.5 and 9</text><path d=\"M78.0 60V310 M78 60.0H700\" stroke=\"#e2e8f0\"/><path d=\"M140.2 60V310 M78 85.0H700\" stroke=\"#e2e8f0\"/><path d=\"M202.4 60V310 M78 110.0H700\" stroke=\"#e2e8f0\"/><path d=\"M264.6 60V310 M78 135.0H700\" stroke=\"#e2e8f0\"/><path d=\"M326.8 60V310 M78 160.0H700\" stroke=\"#e2e8f0\"/><path d=\"M389.0 60V310 M78 185.0H700\" stroke=\"#e2e8f0\"/><path d=\"M451.2 60V310 M78 210.0H700\" stroke=\"#e2e8f0\"/><path d=\"M513.4 60V310 M78 235.0H700\" stroke=\"#e2e8f0\"/><path d=\"M575.6 60V310 M78 260.0H700\" stroke=\"#e2e8f0\"/><path d=\"M637.8 60V310 M78 285.0H700\" stroke=\"#e2e8f0\"/><path d=\"M700.0 60V310 M78 310.0H700\" stroke=\"#e2e8f0\"/><path d=\"M78 60V310H700\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"78.0\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">5.5</text><text x=\"68\" y=\"64.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">205</text><text x=\"202.4\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">6.9</text><text x=\"68\" y=\"114.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">193</text><text x=\"326.8\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">8.3</text><text x=\"68\" y=\"164.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">181</text><text x=\"451.2\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">9.7</text><text x=\"68\" y=\"214.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">169</text><text x=\"575.6\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">11.1</text><text x=\"68\" y=\"264.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">157</text><text x=\"700.0\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">12.5</text><text x=\"68\" y=\"314.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">145</text><path d=\"M122.4 314.2L700.0 43.3\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\"/><path d=\"M255.7 310V251.7H78\" stroke=\"#16a34a\" stroke-width=\"2.5\" stroke-dasharray=\"7 5\"/><path d=\"M389.0 310V189.2H78\" stroke=\"#16a34a\" stroke-width=\"2.5\" stroke-dasharray=\"7 5\"/><circle cx=\"122.4\" cy=\"268.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"211.3\" cy=\"289.2\" r=\"4\" fill=\"#334155\"/><circle cx=\"211.3\" cy=\"226.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"300.1\" cy=\"185.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"344.6\" cy=\"205.8\" r=\"4\" fill=\"#334155\"/><circle cx=\"433.4\" cy=\"205.8\" r=\"4\" fill=\"#334155\"/><circle cx=\"477.9\" cy=\"122.5\" r=\"4\" fill=\"#334155\"/><circle cx=\"566.7\" cy=\"143.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"655.6\" cy=\"80.8\" r=\"4\" fill=\"#334155\"/><circle cx=\"655.6\" cy=\"101.7\" r=\"4\" fill=\"#334155\"/><text x=\"389.0\" y=\"365\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"normal\">Shoe size</text><text x=\"20\" y=\"190\" transform=\"rotate(-90 20 190)\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Height (cm)</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Repeat at shoe size 9. The predicted height is about 174 cm.",
+                  "work": "\\(h(9)\\approx174\\text{ cm}\\)"
+                },
+                {
+                  "explain": "The question asks for the difference, so subtract the two estimates.",
+                  "work": "\\(174-159=\\boxed{15\\text{ cm}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "shoe size 7.5",
+                  "note": "Estimated height from line is about 159 cm."
+                },
+                {
+                  "text": "shoe size 9",
+                  "note": "Estimated height from line is about 174 cm."
+                }
+              ],
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "275–276",
+                "course": "Advanced",
+                "sourceQuestion": "12-ii"
+              }
+            },
+            {
+              "id": "y12a-advanced-005-p275-q12-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "A student calculated the correlation coefficient to be 1 for this set of data. Explain why this cannot be correct.",
+              "options": [
+                "A correlation of 1 requires all points to lie exactly on one increasing straight line; these points do not.",
+                "A correlation coefficient cannot be positive.",
+                "A correlation of 1 means the line has zero gradient.",
+                "There are ten students, so a correlation coefficient cannot be calculated."
+              ],
+              "answer": 0,
+              "hint": "A correlation coefficient of 1 describes a perfect positive straight-line relationship. Check whether every plotted point lies exactly on one straight line.",
+              "steps": [
+                {
+                  "explain": "For r=1, every point must lie exactly on one straight line with positive slope. The table has heights that vary at the same shoe size and points that do not all line up.",
+                  "work": "For shoe size 7, for example, the recorded heights include 150 cm and 165 cm, so the points cannot all lie on a single line.",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 200\" role=\"img\" aria-label=\"Shoe size and height of ten students source data table\"><rect width=\"760\" height=\"200\" fill=\"white\"/><text x=\"380\" y=\"24\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">Shoe size and height of ten students</text><rect x=\"20\" y=\"45\" width=\"720\" height=\"58\" fill=\"#dcfce7\" stroke=\"#64748b\"/><path d=\"M170 45V103\" stroke=\"#64748b\"/><text x=\"95.0\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">Shoe size</text><text x=\"198.5\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">6</text><text x=\"255.5\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">7</text><text x=\"312.5\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">7</text><text x=\"369.5\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">8</text><text x=\"426.5\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">8.5</text><text x=\"483.5\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">9.5</text><text x=\"540.5\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">10</text><text x=\"597.5\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">11</text><text x=\"654.5\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">12</text><text x=\"711.5\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">12</text><path d=\"M227.0 45V103\" stroke=\"#94a3b8\"/><path d=\"M284.0 45V103\" stroke=\"#94a3b8\"/><path d=\"M341.0 45V103\" stroke=\"#94a3b8\"/><path d=\"M398.0 45V103\" stroke=\"#94a3b8\"/><path d=\"M455.0 45V103\" stroke=\"#94a3b8\"/><path d=\"M512.0 45V103\" stroke=\"#94a3b8\"/><path d=\"M569.0 45V103\" stroke=\"#94a3b8\"/><path d=\"M626.0 45V103\" stroke=\"#94a3b8\"/><path d=\"M683.0 45V103\" stroke=\"#94a3b8\"/><rect x=\"20\" y=\"103\" width=\"720\" height=\"58\" fill=\"#f8fafc\" stroke=\"#64748b\"/><path d=\"M170 103V161\" stroke=\"#64748b\"/><text x=\"95.0\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">Height (cm)</text><text x=\"198.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">155</text><text x=\"255.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">150</text><text x=\"312.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">165</text><text x=\"369.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">175</text><text x=\"426.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">170</text><text x=\"483.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">170</text><text x=\"540.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">190</text><text x=\"597.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">185</text><text x=\"654.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">200</text><text x=\"711.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">195</text><path d=\"M227.0 103V161\" stroke=\"#94a3b8\"/><path d=\"M284.0 103V161\" stroke=\"#94a3b8\"/><path d=\"M341.0 103V161\" stroke=\"#94a3b8\"/><path d=\"M398.0 103V161\" stroke=\"#94a3b8\"/><path d=\"M455.0 103V161\" stroke=\"#94a3b8\"/><path d=\"M512.0 103V161\" stroke=\"#94a3b8\"/><path d=\"M569.0 103V161\" stroke=\"#94a3b8\"/><path d=\"M626.0 103V161\" stroke=\"#94a3b8\"/><path d=\"M683.0 103V161\" stroke=\"#94a3b8\"/></svg>"
+                  }
+                },
+                {
+                  "explain": "Therefore the relationship is positive but not perfectly linear.",
+                  "work": "\\(r\\ne1\\). The value 1 is impossible for this data."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "correlation coefficient to be 1",
+                  "note": "This would mean perfect positive linear correlation."
+                },
+                {
+                  "text": "height varies for the same shoe size",
+                  "note": "The two size-7 students have different heights."
+                }
+              ],
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "275–276",
+                "course": "Advanced",
+                "sourceQuestion": "12-iii"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 200\" role=\"img\" aria-label=\"Shoe size and height of ten students source data table\"><rect width=\"760\" height=\"200\" fill=\"white\"/><text x=\"380\" y=\"24\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">Shoe size and height of ten students</text><rect x=\"20\" y=\"45\" width=\"720\" height=\"58\" fill=\"#dcfce7\" stroke=\"#64748b\"/><path d=\"M170 45V103\" stroke=\"#64748b\"/><text x=\"95.0\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">Shoe size</text><text x=\"198.5\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">6</text><text x=\"255.5\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">7</text><text x=\"312.5\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">7</text><text x=\"369.5\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">8</text><text x=\"426.5\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">8.5</text><text x=\"483.5\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">9.5</text><text x=\"540.5\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">10</text><text x=\"597.5\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">11</text><text x=\"654.5\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">12</text><text x=\"711.5\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">12</text><path d=\"M227.0 45V103\" stroke=\"#94a3b8\"/><path d=\"M284.0 45V103\" stroke=\"#94a3b8\"/><path d=\"M341.0 45V103\" stroke=\"#94a3b8\"/><path d=\"M398.0 45V103\" stroke=\"#94a3b8\"/><path d=\"M455.0 45V103\" stroke=\"#94a3b8\"/><path d=\"M512.0 45V103\" stroke=\"#94a3b8\"/><path d=\"M569.0 45V103\" stroke=\"#94a3b8\"/><path d=\"M626.0 45V103\" stroke=\"#94a3b8\"/><path d=\"M683.0 45V103\" stroke=\"#94a3b8\"/><rect x=\"20\" y=\"103\" width=\"720\" height=\"58\" fill=\"#f8fafc\" stroke=\"#64748b\"/><path d=\"M170 103V161\" stroke=\"#64748b\"/><text x=\"95.0\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">Height (cm)</text><text x=\"198.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">155</text><text x=\"255.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">150</text><text x=\"312.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">165</text><text x=\"369.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">175</text><text x=\"426.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">170</text><text x=\"483.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">170</text><text x=\"540.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">190</text><text x=\"597.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">185</text><text x=\"654.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">200</text><text x=\"711.5\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">195</text><path d=\"M227.0 103V161\" stroke=\"#94a3b8\"/><path d=\"M284.0 103V161\" stroke=\"#94a3b8\"/><path d=\"M341.0 103V161\" stroke=\"#94a3b8\"/><path d=\"M398.0 103V161\" stroke=\"#94a3b8\"/><path d=\"M455.0 103V161\" stroke=\"#94a3b8\"/><path d=\"M512.0 103V161\" stroke=\"#94a3b8\"/><path d=\"M569.0 103V161\" stroke=\"#94a3b8\"/><path d=\"M626.0 103V161\" stroke=\"#94a3b8\"/><path d=\"M683.0 103V161\" stroke=\"#94a3b8\"/></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Keep the variables, units and data pairs in the order shown.",
+              "note": "Use graph coordinates as (horizontal variable, vertical variable)."
+            }
+          ],
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "275–276",
+            "course": "Advanced",
+            "sourceQuestion": "12"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p275-q13",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which graph best shows data with a correlation coefficient closest to 0.3?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 0,
+          "hint": "A coefficient of 0.3 is positive but weak. Look for a slight upward trend with plenty of scatter.",
+          "steps": [
+            {
+              "explain": "A positive correlation slopes upward from left to right. A weak correlation has noticeable scatter rather than points tightly following a line.",
+              "work": "Option A shows a mild upward trend with substantial scatter.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 430\" role=\"img\" aria-label=\"Four scatterplot choices; A shows a weak positive relationship\"><rect width=\"760\" height=\"430\" fill=\"white\"/><text x=\"380\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" fill=\"#334155\" font-weight=\"bold\">Which scatterplot has correlation closest to 0.3?</text><text x=\"195\" y=\"70\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\" font-weight=\"bold\">A</text><path d=\"M60 200V83H365\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><circle cx=\"84.4\" cy=\"159.1\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"114.9\" cy=\"124.0\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"142.4\" cy=\"155.5\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"172.8\" cy=\"135.6\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"203.3\" cy=\"164.9\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"233.8\" cy=\"127.5\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"264.4\" cy=\"150.9\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"297.9\" cy=\"119.3\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"334.5\" cy=\"141.5\" r=\"3.4\" fill=\"#334155\"/><text x=\"560\" y=\"70\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\" font-weight=\"bold\">B</text><path d=\"M425 200V83H730\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><circle cx=\"449.4\" cy=\"106.4\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"486.0\" cy=\"115.8\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"516.5\" cy=\"122.8\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"553.1\" cy=\"129.8\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"589.7\" cy=\"138.0\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"626.3\" cy=\"146.2\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"662.9\" cy=\"153.2\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"699.5\" cy=\"162.6\" r=\"3.4\" fill=\"#334155\"/><text x=\"195\" y=\"255\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\" font-weight=\"bold\">C</text><path d=\"M60 385V268H365\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><circle cx=\"84.4\" cy=\"284.4\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"121.0\" cy=\"296.1\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"157.6\" cy=\"312.5\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"197.2\" cy=\"323.0\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"236.9\" cy=\"339.4\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"279.6\" cy=\"352.2\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"334.5\" cy=\"368.6\" r=\"3.4\" fill=\"#334155\"/><text x=\"560\" y=\"255\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\" font-weight=\"bold\">D</text><path d=\"M425 385V268H730\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><circle cx=\"449.4\" cy=\"371.0\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"486.0\" cy=\"355.8\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"522.6\" cy=\"340.5\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"562.2\" cy=\"323.0\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"601.9\" cy=\"308.9\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"644.6\" cy=\"293.7\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"699.5\" cy=\"279.7\" r=\"3.4\" fill=\"#334155\"/></svg>"
+              }
+            },
+            {
+              "explain": "The other plots are negative (B and C) or strongly positive (D), so they do not match r close to 0.3.",
+              "work": "\\(\\boxed{\\text{A}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "correlation coefficient closest to 0.3",
+              "note": "Positive, but not a strong linear pattern."
+            }
+          ],
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "275",
+            "course": "Advanced",
+            "sourceQuestion": "13"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 430\" role=\"img\" aria-label=\"Four scatterplot choices; A shows a weak positive relationship\"><rect width=\"760\" height=\"430\" fill=\"white\"/><text x=\"380\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" fill=\"#334155\" font-weight=\"bold\">Which scatterplot has correlation closest to 0.3?</text><text x=\"195\" y=\"70\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\" font-weight=\"bold\">A</text><path d=\"M60 200V83H365\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><circle cx=\"84.4\" cy=\"159.1\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"114.9\" cy=\"124.0\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"142.4\" cy=\"155.5\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"172.8\" cy=\"135.6\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"203.3\" cy=\"164.9\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"233.8\" cy=\"127.5\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"264.4\" cy=\"150.9\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"297.9\" cy=\"119.3\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"334.5\" cy=\"141.5\" r=\"3.4\" fill=\"#334155\"/><text x=\"560\" y=\"70\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\" font-weight=\"bold\">B</text><path d=\"M425 200V83H730\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><circle cx=\"449.4\" cy=\"106.4\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"486.0\" cy=\"115.8\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"516.5\" cy=\"122.8\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"553.1\" cy=\"129.8\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"589.7\" cy=\"138.0\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"626.3\" cy=\"146.2\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"662.9\" cy=\"153.2\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"699.5\" cy=\"162.6\" r=\"3.4\" fill=\"#334155\"/><text x=\"195\" y=\"255\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\" font-weight=\"bold\">C</text><path d=\"M60 385V268H365\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><circle cx=\"84.4\" cy=\"284.4\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"121.0\" cy=\"296.1\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"157.6\" cy=\"312.5\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"197.2\" cy=\"323.0\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"236.9\" cy=\"339.4\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"279.6\" cy=\"352.2\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"334.5\" cy=\"368.6\" r=\"3.4\" fill=\"#334155\"/><text x=\"560\" y=\"255\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\" font-weight=\"bold\">D</text><path d=\"M425 385V268H730\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><circle cx=\"449.4\" cy=\"371.0\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"486.0\" cy=\"355.8\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"522.6\" cy=\"340.5\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"562.2\" cy=\"323.0\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"601.9\" cy=\"308.9\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"644.6\" cy=\"293.7\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"699.5\" cy=\"279.7\" r=\"3.4\" fill=\"#334155\"/></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p276-q14",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Ahmed collected data on the age (a) and height (h) of males aged 11 to 16 years. He created a scatterplot of the data and constructed a line of best fit to model the relationship between the age and height of males.",
+          "hint": "Read the line rather than individual dots. Find gradient as change in height over change in age, interpret its units, then substitute a point to find the intercept.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p276-q14-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Determine the gradient of the line of best fit shown on the graph.",
+              "options": [
+                "6",
+                "5",
+                "30",
+                "−6"
+              ],
+              "answer": 0,
+              "hint": "Choose two clear points on the purple best-fit line, for example (11,146) and (15,170). Gradient is vertical change divided by horizontal change.",
+              "steps": [
+                {
+                  "explain": "The horizontal coordinate is age a in years and the vertical coordinate is height h in centimetres. Use the two highlighted points on the fitted line.",
+                  "work": "\\((a,h)=(11,146)\\quad\\text{and}\\quad(15,170)\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 390\" role=\"img\" aria-label=\"Age and height of males scatterplot with labelled axes; selected data or line highlighted\"><rect width=\"760\" height=\"390\" fill=\"white\"/><text x=\"380\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" fill=\"#334155\" font-weight=\"bold\">Age and height of males</text><path d=\"M78.0 60V310 M78 60.0H700\" stroke=\"#e2e8f0\"/><path d=\"M140.2 60V310 M78 85.0H700\" stroke=\"#e2e8f0\"/><path d=\"M202.4 60V310 M78 110.0H700\" stroke=\"#e2e8f0\"/><path d=\"M264.6 60V310 M78 135.0H700\" stroke=\"#e2e8f0\"/><path d=\"M326.8 60V310 M78 160.0H700\" stroke=\"#e2e8f0\"/><path d=\"M389.0 60V310 M78 185.0H700\" stroke=\"#e2e8f0\"/><path d=\"M451.2 60V310 M78 210.0H700\" stroke=\"#e2e8f0\"/><path d=\"M513.4 60V310 M78 235.0H700\" stroke=\"#e2e8f0\"/><path d=\"M575.6 60V310 M78 260.0H700\" stroke=\"#e2e8f0\"/><path d=\"M637.8 60V310 M78 285.0H700\" stroke=\"#e2e8f0\"/><path d=\"M700.0 60V310 M78 310.0H700\" stroke=\"#e2e8f0\"/><path d=\"M78 60V310H700\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"78.0\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">10</text><text x=\"68\" y=\"64.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">200</text><text x=\"202.4\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">11.4</text><text x=\"68\" y=\"114.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">186</text><text x=\"326.8\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">12.8</text><text x=\"68\" y=\"164.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">172</text><text x=\"451.2\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">14.2</text><text x=\"68\" y=\"214.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">158</text><text x=\"575.6\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">15.6</text><text x=\"68\" y=\"264.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">144</text><text x=\"700.0\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">17</text><text x=\"68\" y=\"314.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">130</text><path d=\"M166.9 252.9L611.1 145.7\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\"/><circle cx=\"166.9\" cy=\"281.4\" r=\"6\" fill=\"#16a34a\"/><circle cx=\"166.9\" cy=\"281.4\" r=\"10\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/><circle cx=\"166.9\" cy=\"242.1\" r=\"4\" fill=\"#334155\"/><circle cx=\"255.7\" cy=\"274.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"255.7\" cy=\"267.1\" r=\"4\" fill=\"#334155\"/><circle cx=\"255.7\" cy=\"242.1\" r=\"4\" fill=\"#334155\"/><circle cx=\"255.7\" cy=\"227.9\" r=\"4\" fill=\"#334155\"/><circle cx=\"255.7\" cy=\"195.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"255.7\" cy=\"177.9\" r=\"4\" fill=\"#334155\"/><circle cx=\"344.6\" cy=\"249.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"344.6\" cy=\"213.6\" r=\"4\" fill=\"#334155\"/><circle cx=\"344.6\" cy=\"174.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"344.6\" cy=\"167.1\" r=\"4\" fill=\"#334155\"/><circle cx=\"344.6\" cy=\"149.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"433.4\" cy=\"220.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"433.4\" cy=\"199.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"433.4\" cy=\"192.1\" r=\"4\" fill=\"#334155\"/><circle cx=\"433.4\" cy=\"167.1\" r=\"4\" fill=\"#334155\"/><circle cx=\"433.4\" cy=\"95.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"522.3\" cy=\"202.9\" r=\"4\" fill=\"#334155\"/><circle cx=\"522.3\" cy=\"167.1\" r=\"6\" fill=\"#16a34a\"/><circle cx=\"522.3\" cy=\"167.1\" r=\"10\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/><circle cx=\"611.1\" cy=\"231.4\" r=\"4\" fill=\"#334155\"/><circle cx=\"611.1\" cy=\"152.9\" r=\"4\" fill=\"#334155\"/><circle cx=\"611.1\" cy=\"138.6\" r=\"4\" fill=\"#334155\"/><circle cx=\"611.1\" cy=\"106.4\" r=\"4\" fill=\"#334155\"/><text x=\"389.0\" y=\"365\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"normal\">Age, a (years)</text><text x=\"20\" y=\"190\" transform=\"rotate(-90 20 190)\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Height, h (cm)</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Find the change in height and divide by the change in age.",
+                  "work": "\\(m=\\frac{170-146}{15-11}=\\frac{24}{4}=6\\)"
+                },
+                {
+                  "explain": "The gradient is measured in centimetres per year.",
+                  "work": "\\(\\boxed{6\\text{ cm per year}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "age and height of males",
+                  "note": "Age is horizontal; height is vertical."
+                },
+                {
+                  "text": "gradient of the line of best fit",
+                  "note": "Use two points on the line, not the scatter dots."
+                }
+              ],
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "275–276",
+                "course": "Advanced",
+                "sourceQuestion": "14-i"
+              }
+            },
+            {
+              "id": "y12a-advanced-005-p276-q14-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Explain the meaning of the gradient in the context of the data.",
+              "options": [
+                "The line predicts an average height increase of about 6 cm for each additional year of age.",
+                "Each male grows exactly 6 cm every year.",
+                "The average age increases by 6 years for each centimetre.",
+                "The tallest male is 6 cm taller than the shortest."
+              ],
+              "answer": 0,
+              "hint": "Attach units to the gradient: vertical units are centimetres and horizontal units are years.",
+              "steps": [
+                {
+                  "explain": "The gradient 6 is calculated as 6 centimetres of height change for every 1 year of age change.",
+                  "work": "\\(6\\frac{\\text{cm}}{\\text{year}}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 390\" role=\"img\" aria-label=\"Age and height of males scatterplot with labelled axes; selected data or line highlighted\"><rect width=\"760\" height=\"390\" fill=\"white\"/><text x=\"380\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" fill=\"#334155\" font-weight=\"bold\">Age and height of males</text><path d=\"M78.0 60V310 M78 60.0H700\" stroke=\"#e2e8f0\"/><path d=\"M140.2 60V310 M78 85.0H700\" stroke=\"#e2e8f0\"/><path d=\"M202.4 60V310 M78 110.0H700\" stroke=\"#e2e8f0\"/><path d=\"M264.6 60V310 M78 135.0H700\" stroke=\"#e2e8f0\"/><path d=\"M326.8 60V310 M78 160.0H700\" stroke=\"#e2e8f0\"/><path d=\"M389.0 60V310 M78 185.0H700\" stroke=\"#e2e8f0\"/><path d=\"M451.2 60V310 M78 210.0H700\" stroke=\"#e2e8f0\"/><path d=\"M513.4 60V310 M78 235.0H700\" stroke=\"#e2e8f0\"/><path d=\"M575.6 60V310 M78 260.0H700\" stroke=\"#e2e8f0\"/><path d=\"M637.8 60V310 M78 285.0H700\" stroke=\"#e2e8f0\"/><path d=\"M700.0 60V310 M78 310.0H700\" stroke=\"#e2e8f0\"/><path d=\"M78 60V310H700\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"78.0\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">10</text><text x=\"68\" y=\"64.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">200</text><text x=\"202.4\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">11.4</text><text x=\"68\" y=\"114.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">186</text><text x=\"326.8\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">12.8</text><text x=\"68\" y=\"164.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">172</text><text x=\"451.2\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">14.2</text><text x=\"68\" y=\"214.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">158</text><text x=\"575.6\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">15.6</text><text x=\"68\" y=\"264.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">144</text><text x=\"700.0\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">17</text><text x=\"68\" y=\"314.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">130</text><path d=\"M166.9 252.9L611.1 145.7\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\"/><circle cx=\"166.9\" cy=\"281.4\" r=\"6\" fill=\"#16a34a\"/><circle cx=\"166.9\" cy=\"281.4\" r=\"10\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/><circle cx=\"166.9\" cy=\"242.1\" r=\"4\" fill=\"#334155\"/><circle cx=\"255.7\" cy=\"274.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"255.7\" cy=\"267.1\" r=\"4\" fill=\"#334155\"/><circle cx=\"255.7\" cy=\"242.1\" r=\"4\" fill=\"#334155\"/><circle cx=\"255.7\" cy=\"227.9\" r=\"4\" fill=\"#334155\"/><circle cx=\"255.7\" cy=\"195.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"255.7\" cy=\"177.9\" r=\"4\" fill=\"#334155\"/><circle cx=\"344.6\" cy=\"249.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"344.6\" cy=\"213.6\" r=\"4\" fill=\"#334155\"/><circle cx=\"344.6\" cy=\"174.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"344.6\" cy=\"167.1\" r=\"4\" fill=\"#334155\"/><circle cx=\"344.6\" cy=\"149.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"433.4\" cy=\"220.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"433.4\" cy=\"199.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"433.4\" cy=\"192.1\" r=\"4\" fill=\"#334155\"/><circle cx=\"433.4\" cy=\"167.1\" r=\"4\" fill=\"#334155\"/><circle cx=\"433.4\" cy=\"95.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"522.3\" cy=\"202.9\" r=\"4\" fill=\"#334155\"/><circle cx=\"522.3\" cy=\"167.1\" r=\"6\" fill=\"#16a34a\"/><circle cx=\"522.3\" cy=\"167.1\" r=\"10\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/><circle cx=\"611.1\" cy=\"231.4\" r=\"4\" fill=\"#334155\"/><circle cx=\"611.1\" cy=\"152.9\" r=\"4\" fill=\"#334155\"/><circle cx=\"611.1\" cy=\"138.6\" r=\"4\" fill=\"#334155\"/><circle cx=\"611.1\" cy=\"106.4\" r=\"4\" fill=\"#334155\"/><text x=\"389.0\" y=\"365\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"normal\">Age, a (years)</text><text x=\"20\" y=\"190\" transform=\"rotate(-90 20 190)\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Height, h (cm)</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Because these are sample data and a line of best fit, describe an average trend rather than claiming each individual grows exactly this amount.",
+                  "work": "The fitted relationship suggests a male’s height increases by about 6 cm on average for each extra year of age."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "gradient",
+                  "note": "It describes the average vertical change for one horizontal unit."
+                }
+              ],
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "275–276",
+                "course": "Advanced",
+                "sourceQuestion": "14-ii"
+              }
+            },
+            {
+              "id": "y12a-advanced-005-p276-q14-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Determine the equation of the line of best fit shown on the graph.",
+              "options": [
+                "h = 6a + 80",
+                "h = 6a − 80",
+                "h = 80a + 6",
+                "h = a + 80"
+              ],
+              "answer": 0,
+              "hint": "Use h=ma+b with the gradient you found. Substitute one point from the line to find b.",
+              "steps": [
+                {
+                  "explain": "Use h=ma+b, with gradient m=6. Substitute the line point (11,146).",
+                  "work": "\\(146=6(11)+b\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 390\" role=\"img\" aria-label=\"Age and height of males scatterplot with labelled axes; selected data or line highlighted\"><rect width=\"760\" height=\"390\" fill=\"white\"/><text x=\"380\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" fill=\"#334155\" font-weight=\"bold\">Age and height of males</text><path d=\"M78.0 60V310 M78 60.0H700\" stroke=\"#e2e8f0\"/><path d=\"M140.2 60V310 M78 85.0H700\" stroke=\"#e2e8f0\"/><path d=\"M202.4 60V310 M78 110.0H700\" stroke=\"#e2e8f0\"/><path d=\"M264.6 60V310 M78 135.0H700\" stroke=\"#e2e8f0\"/><path d=\"M326.8 60V310 M78 160.0H700\" stroke=\"#e2e8f0\"/><path d=\"M389.0 60V310 M78 185.0H700\" stroke=\"#e2e8f0\"/><path d=\"M451.2 60V310 M78 210.0H700\" stroke=\"#e2e8f0\"/><path d=\"M513.4 60V310 M78 235.0H700\" stroke=\"#e2e8f0\"/><path d=\"M575.6 60V310 M78 260.0H700\" stroke=\"#e2e8f0\"/><path d=\"M637.8 60V310 M78 285.0H700\" stroke=\"#e2e8f0\"/><path d=\"M700.0 60V310 M78 310.0H700\" stroke=\"#e2e8f0\"/><path d=\"M78 60V310H700\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"78.0\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">10</text><text x=\"68\" y=\"64.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">200</text><text x=\"202.4\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">11.4</text><text x=\"68\" y=\"114.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">186</text><text x=\"326.8\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">12.8</text><text x=\"68\" y=\"164.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">172</text><text x=\"451.2\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">14.2</text><text x=\"68\" y=\"214.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">158</text><text x=\"575.6\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">15.6</text><text x=\"68\" y=\"264.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">144</text><text x=\"700.0\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">17</text><text x=\"68\" y=\"314.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">130</text><path d=\"M166.9 252.9L611.1 145.7\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\"/><circle cx=\"166.9\" cy=\"281.4\" r=\"6\" fill=\"#16a34a\"/><circle cx=\"166.9\" cy=\"281.4\" r=\"10\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/><circle cx=\"166.9\" cy=\"242.1\" r=\"4\" fill=\"#334155\"/><circle cx=\"255.7\" cy=\"274.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"255.7\" cy=\"267.1\" r=\"4\" fill=\"#334155\"/><circle cx=\"255.7\" cy=\"242.1\" r=\"4\" fill=\"#334155\"/><circle cx=\"255.7\" cy=\"227.9\" r=\"4\" fill=\"#334155\"/><circle cx=\"255.7\" cy=\"195.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"255.7\" cy=\"177.9\" r=\"4\" fill=\"#334155\"/><circle cx=\"344.6\" cy=\"249.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"344.6\" cy=\"213.6\" r=\"4\" fill=\"#334155\"/><circle cx=\"344.6\" cy=\"174.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"344.6\" cy=\"167.1\" r=\"4\" fill=\"#334155\"/><circle cx=\"344.6\" cy=\"149.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"433.4\" cy=\"220.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"433.4\" cy=\"199.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"433.4\" cy=\"192.1\" r=\"4\" fill=\"#334155\"/><circle cx=\"433.4\" cy=\"167.1\" r=\"4\" fill=\"#334155\"/><circle cx=\"433.4\" cy=\"95.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"522.3\" cy=\"202.9\" r=\"4\" fill=\"#334155\"/><circle cx=\"522.3\" cy=\"167.1\" r=\"6\" fill=\"#16a34a\"/><circle cx=\"522.3\" cy=\"167.1\" r=\"10\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/><circle cx=\"611.1\" cy=\"231.4\" r=\"4\" fill=\"#334155\"/><circle cx=\"611.1\" cy=\"152.9\" r=\"4\" fill=\"#334155\"/><circle cx=\"611.1\" cy=\"138.6\" r=\"4\" fill=\"#334155\"/><circle cx=\"611.1\" cy=\"106.4\" r=\"4\" fill=\"#334155\"/><text x=\"389.0\" y=\"365\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"normal\">Age, a (years)</text><text x=\"20\" y=\"190\" transform=\"rotate(-90 20 190)\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Height, h (cm)</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Calculate the product, then isolate b.",
+                  "work": "\\(146=66+b\\)\\n\\(b=146-66=80\\)"
+                },
+                {
+                  "explain": "Put m=6 and b=80 into h=ma+b.",
+                  "work": "\\(\\boxed{h=6a+80}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "age a",
+                  "note": "Use a as the horizontal variable."
+                },
+                {
+                  "text": "height h",
+                  "note": "Use h as the vertical variable."
+                }
+              ],
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "275–276",
+                "course": "Advanced",
+                "sourceQuestion": "14-iii"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 390\" role=\"img\" aria-label=\"Age and height of males scatterplot with labelled axes; selected data or line highlighted\"><rect width=\"760\" height=\"390\" fill=\"white\"/><text x=\"380\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" fill=\"#334155\" font-weight=\"bold\">Age and height of males</text><path d=\"M78.0 60V310 M78 60.0H700\" stroke=\"#e2e8f0\"/><path d=\"M140.2 60V310 M78 85.0H700\" stroke=\"#e2e8f0\"/><path d=\"M202.4 60V310 M78 110.0H700\" stroke=\"#e2e8f0\"/><path d=\"M264.6 60V310 M78 135.0H700\" stroke=\"#e2e8f0\"/><path d=\"M326.8 60V310 M78 160.0H700\" stroke=\"#e2e8f0\"/><path d=\"M389.0 60V310 M78 185.0H700\" stroke=\"#e2e8f0\"/><path d=\"M451.2 60V310 M78 210.0H700\" stroke=\"#e2e8f0\"/><path d=\"M513.4 60V310 M78 235.0H700\" stroke=\"#e2e8f0\"/><path d=\"M575.6 60V310 M78 260.0H700\" stroke=\"#e2e8f0\"/><path d=\"M637.8 60V310 M78 285.0H700\" stroke=\"#e2e8f0\"/><path d=\"M700.0 60V310 M78 310.0H700\" stroke=\"#e2e8f0\"/><path d=\"M78 60V310H700\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"78.0\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">10</text><text x=\"68\" y=\"64.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">200</text><text x=\"202.4\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">11.4</text><text x=\"68\" y=\"114.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">186</text><text x=\"326.8\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">12.8</text><text x=\"68\" y=\"164.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">172</text><text x=\"451.2\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">14.2</text><text x=\"68\" y=\"214.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">158</text><text x=\"575.6\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">15.6</text><text x=\"68\" y=\"264.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">144</text><text x=\"700.0\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">17</text><text x=\"68\" y=\"314.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">130</text><path d=\"M166.9 252.9L611.1 145.7\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\"/><circle cx=\"166.9\" cy=\"281.4\" r=\"6\" fill=\"#16a34a\"/><circle cx=\"166.9\" cy=\"281.4\" r=\"10\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/><circle cx=\"166.9\" cy=\"242.1\" r=\"4\" fill=\"#334155\"/><circle cx=\"255.7\" cy=\"274.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"255.7\" cy=\"267.1\" r=\"4\" fill=\"#334155\"/><circle cx=\"255.7\" cy=\"242.1\" r=\"4\" fill=\"#334155\"/><circle cx=\"255.7\" cy=\"227.9\" r=\"4\" fill=\"#334155\"/><circle cx=\"255.7\" cy=\"195.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"255.7\" cy=\"177.9\" r=\"4\" fill=\"#334155\"/><circle cx=\"344.6\" cy=\"249.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"344.6\" cy=\"213.6\" r=\"4\" fill=\"#334155\"/><circle cx=\"344.6\" cy=\"174.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"344.6\" cy=\"167.1\" r=\"4\" fill=\"#334155\"/><circle cx=\"344.6\" cy=\"149.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"433.4\" cy=\"220.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"433.4\" cy=\"199.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"433.4\" cy=\"192.1\" r=\"4\" fill=\"#334155\"/><circle cx=\"433.4\" cy=\"167.1\" r=\"4\" fill=\"#334155\"/><circle cx=\"433.4\" cy=\"95.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"522.3\" cy=\"202.9\" r=\"4\" fill=\"#334155\"/><circle cx=\"522.3\" cy=\"167.1\" r=\"6\" fill=\"#16a34a\"/><circle cx=\"522.3\" cy=\"167.1\" r=\"10\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/><circle cx=\"611.1\" cy=\"231.4\" r=\"4\" fill=\"#334155\"/><circle cx=\"611.1\" cy=\"152.9\" r=\"4\" fill=\"#334155\"/><circle cx=\"611.1\" cy=\"138.6\" r=\"4\" fill=\"#334155\"/><circle cx=\"611.1\" cy=\"106.4\" r=\"4\" fill=\"#334155\"/><text x=\"389.0\" y=\"365\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"normal\">Age, a (years)</text><text x=\"20\" y=\"190\" transform=\"rotate(-90 20 190)\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Height, h (cm)</text></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Keep the variables, units and data pairs in the order shown.",
+              "note": "Use graph coordinates as (horizontal variable, vertical variable)."
+            }
+          ],
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "275–276",
+            "course": "Advanced",
+            "sourceQuestion": "14"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p276-q15",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which of the following relationships would most likely show a negative correlation?",
+          "options": [
+            "The population of a town and the number of hospitals in that town.",
+            "The hours spent training for a race and the time taken to complete the race.",
+            "The price per litre of petrol and the number of people riding bicycles to work.",
+            "The number of pets per household and the number of computers per household."
+          ],
+          "answer": 1,
+          "hint": "Negative correlation means one variable tends to go down as the other goes up. Think about how more training affects race completion time.",
+          "steps": [
+            {
+              "explain": "For negative correlation, increases in one variable are associated with decreases in the other.",
+              "work": "Check which option has a clear reason for one quantity to decrease when the other increases."
+            },
+            {
+              "explain": "As training hours increase, the time needed to finish the race tends to decrease. This is a negative association.",
+              "work": "\\(\\boxed{\\text{Hours spent training and time taken to complete the race}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "negative correlation",
+              "note": "One variable tends to decrease while the other increases."
+            }
+          ],
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "276",
+            "course": "Advanced",
+            "sourceQuestion": "15"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p276-q16",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Tourists visit a park where steam erupts from a particular geyser. The brochure for the park has a graph of the data collected for this geyser over a period of time. The graph shows the duration of an eruption and the time until the next eruption, timed from the end of one eruption to the beginning of the next.",
+          "hint": "Use the horizontal axis for duration and the vertical axis for waiting time. Convert one hour to 60 minutes before reading the second answer.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p276-q16-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Tony sees an eruption that lasts 4 minutes. Based on the data in the graph, what is the minimum time that he can expect to wait for the next eruption?",
+              "options": [
+                "70 minutes",
+                "60 minutes",
+                "80 minutes",
+                "90 minutes"
+              ],
+              "answer": 0,
+              "hint": "At duration 4 minutes, look at the plotted points with x=4 and select the smallest wait time.",
+              "steps": [
+                {
+                  "explain": "The horizontal axis gives eruption duration. Locate 4 minutes and move vertically through the points at that duration.",
+                  "work": "\\(x=4\\text{ minutes}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 390\" role=\"img\" aria-label=\"At 4 minutes duration, identify the minimum observed wait scatterplot with labelled axes; selected data or line highlighted\"><rect width=\"760\" height=\"390\" fill=\"white\"/><text x=\"380\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" fill=\"#334155\" font-weight=\"bold\">At 4 minutes duration, identify the minimum observed wait</text><path d=\"M78.0 60V310 M78 60.0H700\" stroke=\"#e2e8f0\"/><path d=\"M140.2 60V310 M78 85.0H700\" stroke=\"#e2e8f0\"/><path d=\"M202.4 60V310 M78 110.0H700\" stroke=\"#e2e8f0\"/><path d=\"M264.6 60V310 M78 135.0H700\" stroke=\"#e2e8f0\"/><path d=\"M326.8 60V310 M78 160.0H700\" stroke=\"#e2e8f0\"/><path d=\"M389.0 60V310 M78 185.0H700\" stroke=\"#e2e8f0\"/><path d=\"M451.2 60V310 M78 210.0H700\" stroke=\"#e2e8f0\"/><path d=\"M513.4 60V310 M78 235.0H700\" stroke=\"#e2e8f0\"/><path d=\"M575.6 60V310 M78 260.0H700\" stroke=\"#e2e8f0\"/><path d=\"M637.8 60V310 M78 285.0H700\" stroke=\"#e2e8f0\"/><path d=\"M700.0 60V310 M78 310.0H700\" stroke=\"#e2e8f0\"/><path d=\"M78 60V310H700\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"78.0\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">1.4</text><text x=\"68\" y=\"64.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">100</text><text x=\"202.4\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">2.16</text><text x=\"68\" y=\"114.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">88</text><text x=\"326.8\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">2.92</text><text x=\"68\" y=\"164.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">76</text><text x=\"451.2\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">3.68</text><text x=\"68\" y=\"214.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">64</text><text x=\"575.6\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">4.44</text><text x=\"68\" y=\"264.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">52</text><text x=\"700.0\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">5.2</text><text x=\"68\" y=\"314.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">40</text><path d=\"M503.6 310V185.0H78\" stroke=\"#16a34a\" stroke-width=\"2.5\" stroke-dasharray=\"7 5\"/><circle cx=\"110.7\" cy=\"260.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"127.1\" cy=\"276.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"143.5\" cy=\"251.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"159.8\" cy=\"289.2\" r=\"4\" fill=\"#334155\"/><circle cx=\"176.2\" cy=\"264.2\" r=\"4\" fill=\"#334155\"/><circle cx=\"192.6\" cy=\"239.2\" r=\"4\" fill=\"#334155\"/><circle cx=\"208.9\" cy=\"218.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"225.3\" cy=\"272.5\" r=\"4\" fill=\"#334155\"/><circle cx=\"241.7\" cy=\"205.8\" r=\"4\" fill=\"#334155\"/><circle cx=\"274.4\" cy=\"243.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"307.2\" cy=\"222.5\" r=\"4\" fill=\"#334155\"/><circle cx=\"339.9\" cy=\"235.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"372.6\" cy=\"193.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"405.4\" cy=\"210.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"438.1\" cy=\"176.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"454.5\" cy=\"143.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"470.8\" cy=\"160.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"487.2\" cy=\"130.8\" r=\"4\" fill=\"#334155\"/><circle cx=\"503.6\" cy=\"185.0\" r=\"6\" fill=\"#16a34a\"/><circle cx=\"503.6\" cy=\"185.0\" r=\"10\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/><circle cx=\"503.6\" cy=\"168.3\" r=\"6\" fill=\"#16a34a\"/><circle cx=\"503.6\" cy=\"168.3\" r=\"10\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/><circle cx=\"519.9\" cy=\"151.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"536.3\" cy=\"135.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"552.7\" cy=\"118.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"569.1\" cy=\"143.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"585.4\" cy=\"105.8\" r=\"4\" fill=\"#334155\"/><circle cx=\"601.8\" cy=\"122.5\" r=\"4\" fill=\"#334155\"/><circle cx=\"634.5\" cy=\"93.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"683.6\" cy=\"76.7\" r=\"4\" fill=\"#334155\"/><text x=\"389.0\" y=\"365\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"normal\">Duration (minutes)</text><text x=\"20\" y=\"190\" transform=\"rotate(-90 20 190)\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Wait until next eruption (minutes)</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Read the smallest vertical coordinate among those points. The lowest observed wait is 70 minutes.",
+                  "work": "\\(\\boxed{70\\text{ minutes}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "minimum time",
+                  "note": "Choose the lowest y-value among points at x=4."
+                },
+                {
+                  "text": "timed from the end of one eruption",
+                  "note": "This is the waiting-time vertical axis."
+                }
+              ],
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "275–276",
+                "course": "Advanced",
+                "sourceQuestion": "16-i"
+              }
+            },
+            {
+              "id": "y12a-advanced-005-p276-q16-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Julie saw two consecutive eruptions, one hour apart. Based on the data in the graph, what was the longest possible duration of the first eruption that she saw?",
+              "options": [
+                "3 minutes",
+                "4 minutes",
+                "2 minutes",
+                "5 minutes"
+              ],
+              "answer": 0,
+              "hint": "One hour is 60 minutes. Draw a horizontal line at wait time 60 and read the greatest duration among data points at that level.",
+              "steps": [
+                {
+                  "explain": "Convert one hour to the graph’s units. The vertical axis is measured in minutes.",
+                  "work": "\\(1\\text{ hour}=60\\text{ minutes}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 390\" role=\"img\" aria-label=\"At a 60-minute wait, identify the greatest observed duration scatterplot with labelled axes; selected data or line highlighted\"><rect width=\"760\" height=\"390\" fill=\"white\"/><text x=\"380\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" fill=\"#334155\" font-weight=\"bold\">At a 60-minute wait, identify the greatest observed duration</text><path d=\"M78.0 60V310 M78 60.0H700\" stroke=\"#e2e8f0\"/><path d=\"M140.2 60V310 M78 85.0H700\" stroke=\"#e2e8f0\"/><path d=\"M202.4 60V310 M78 110.0H700\" stroke=\"#e2e8f0\"/><path d=\"M264.6 60V310 M78 135.0H700\" stroke=\"#e2e8f0\"/><path d=\"M326.8 60V310 M78 160.0H700\" stroke=\"#e2e8f0\"/><path d=\"M389.0 60V310 M78 185.0H700\" stroke=\"#e2e8f0\"/><path d=\"M451.2 60V310 M78 210.0H700\" stroke=\"#e2e8f0\"/><path d=\"M513.4 60V310 M78 235.0H700\" stroke=\"#e2e8f0\"/><path d=\"M575.6 60V310 M78 260.0H700\" stroke=\"#e2e8f0\"/><path d=\"M637.8 60V310 M78 285.0H700\" stroke=\"#e2e8f0\"/><path d=\"M700.0 60V310 M78 310.0H700\" stroke=\"#e2e8f0\"/><path d=\"M78 60V310H700\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"78.0\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">1.4</text><text x=\"68\" y=\"64.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">100</text><text x=\"202.4\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">2.16</text><text x=\"68\" y=\"114.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">88</text><text x=\"326.8\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">2.92</text><text x=\"68\" y=\"164.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">76</text><text x=\"451.2\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">3.68</text><text x=\"68\" y=\"214.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">64</text><text x=\"575.6\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">4.44</text><text x=\"68\" y=\"264.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">52</text><text x=\"700.0\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">5.2</text><text x=\"68\" y=\"314.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">40</text><path d=\"M339.9 310V226.7H78\" stroke=\"#16a34a\" stroke-width=\"2.5\" stroke-dasharray=\"7 5\"/><circle cx=\"110.7\" cy=\"260.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"127.1\" cy=\"276.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"143.5\" cy=\"251.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"159.8\" cy=\"289.2\" r=\"4\" fill=\"#334155\"/><circle cx=\"176.2\" cy=\"264.2\" r=\"4\" fill=\"#334155\"/><circle cx=\"192.6\" cy=\"239.2\" r=\"4\" fill=\"#334155\"/><circle cx=\"208.9\" cy=\"218.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"225.3\" cy=\"272.5\" r=\"4\" fill=\"#334155\"/><circle cx=\"241.7\" cy=\"205.8\" r=\"6\" fill=\"#16a34a\"/><circle cx=\"241.7\" cy=\"205.8\" r=\"10\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/><circle cx=\"274.4\" cy=\"243.3\" r=\"6\" fill=\"#16a34a\"/><circle cx=\"274.4\" cy=\"243.3\" r=\"10\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/><circle cx=\"307.2\" cy=\"222.5\" r=\"6\" fill=\"#16a34a\"/><circle cx=\"307.2\" cy=\"222.5\" r=\"10\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/><circle cx=\"339.9\" cy=\"235.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"372.6\" cy=\"193.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"405.4\" cy=\"210.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"438.1\" cy=\"176.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"454.5\" cy=\"143.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"470.8\" cy=\"160.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"487.2\" cy=\"130.8\" r=\"4\" fill=\"#334155\"/><circle cx=\"503.6\" cy=\"185.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"503.6\" cy=\"168.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"519.9\" cy=\"151.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"536.3\" cy=\"135.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"552.7\" cy=\"118.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"569.1\" cy=\"143.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"585.4\" cy=\"105.8\" r=\"4\" fill=\"#334155\"/><circle cx=\"601.8\" cy=\"122.5\" r=\"4\" fill=\"#334155\"/><circle cx=\"634.5\" cy=\"93.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"683.6\" cy=\"76.7\" r=\"4\" fill=\"#334155\"/><text x=\"389.0\" y=\"365\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"normal\">Duration (minutes)</text><text x=\"20\" y=\"190\" transform=\"rotate(-90 20 190)\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Wait until next eruption (minutes)</text></svg>"
+                  }
+                },
+                {
+                  "explain": "At a wait of 60 minutes, move across the graph and consider observed data at or around that level. The rightmost duration represented is about 3 minutes.",
+                  "work": "\\(x_{\\max}\\approx3\\text{ minutes}\\)"
+                },
+                {
+                  "explain": "The question asks for the longest possible duration based on the data, so select that greatest horizontal coordinate.",
+                  "work": "\\(\\boxed{3\\text{ minutes}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "one hour apart",
+                  "note": "Convert this to 60 minutes on the y-axis."
+                },
+                {
+                  "text": "longest possible duration",
+                  "note": "Read the rightmost x-value at that wait time."
+                }
+              ],
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "275–276",
+                "course": "Advanced",
+                "sourceQuestion": "16-ii"
+              }
+            },
+            {
+              "id": "y12a-advanced-005-p276-q16-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What does the graph suggest about the relationship between the duration of an eruption and the time to the next eruption?",
+              "options": [
+                "There is a strong positive relationship: longer eruptions tend to be followed by longer waits.",
+                "There is a strong negative relationship: longer eruptions tend to be followed by shorter waits.",
+                "There is no relationship between the variables.",
+                "The relationship is exactly linear with no scatter."
+              ],
+              "answer": 0,
+              "hint": "Describe the direction and strength of the overall point cloud, not any one dot.",
+              "steps": [
+                {
+                  "explain": "The cloud rises from lower-left to upper-right, so longer eruptions tend to be followed by longer waits.",
+                  "work": "The direction is positive.",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 390\" role=\"img\" aria-label=\"Steam eruptions: duration and wait until next eruption scatterplot with labelled axes; selected data or line highlighted\"><rect width=\"760\" height=\"390\" fill=\"white\"/><text x=\"380\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" fill=\"#334155\" font-weight=\"bold\">Steam eruptions: duration and wait until next eruption</text><path d=\"M78.0 60V310 M78 60.0H700\" stroke=\"#e2e8f0\"/><path d=\"M140.2 60V310 M78 85.0H700\" stroke=\"#e2e8f0\"/><path d=\"M202.4 60V310 M78 110.0H700\" stroke=\"#e2e8f0\"/><path d=\"M264.6 60V310 M78 135.0H700\" stroke=\"#e2e8f0\"/><path d=\"M326.8 60V310 M78 160.0H700\" stroke=\"#e2e8f0\"/><path d=\"M389.0 60V310 M78 185.0H700\" stroke=\"#e2e8f0\"/><path d=\"M451.2 60V310 M78 210.0H700\" stroke=\"#e2e8f0\"/><path d=\"M513.4 60V310 M78 235.0H700\" stroke=\"#e2e8f0\"/><path d=\"M575.6 60V310 M78 260.0H700\" stroke=\"#e2e8f0\"/><path d=\"M637.8 60V310 M78 285.0H700\" stroke=\"#e2e8f0\"/><path d=\"M700.0 60V310 M78 310.0H700\" stroke=\"#e2e8f0\"/><path d=\"M78 60V310H700\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"78.0\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">1.4</text><text x=\"68\" y=\"64.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">100</text><text x=\"202.4\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">2.16</text><text x=\"68\" y=\"114.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">88</text><text x=\"326.8\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">2.92</text><text x=\"68\" y=\"164.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">76</text><text x=\"451.2\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">3.68</text><text x=\"68\" y=\"214.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">64</text><text x=\"575.6\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">4.44</text><text x=\"68\" y=\"264.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">52</text><text x=\"700.0\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">5.2</text><text x=\"68\" y=\"314.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">40</text><circle cx=\"110.7\" cy=\"260.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"127.1\" cy=\"276.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"143.5\" cy=\"251.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"159.8\" cy=\"289.2\" r=\"4\" fill=\"#334155\"/><circle cx=\"176.2\" cy=\"264.2\" r=\"4\" fill=\"#334155\"/><circle cx=\"192.6\" cy=\"239.2\" r=\"4\" fill=\"#334155\"/><circle cx=\"208.9\" cy=\"218.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"225.3\" cy=\"272.5\" r=\"4\" fill=\"#334155\"/><circle cx=\"241.7\" cy=\"205.8\" r=\"4\" fill=\"#334155\"/><circle cx=\"274.4\" cy=\"243.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"307.2\" cy=\"222.5\" r=\"4\" fill=\"#334155\"/><circle cx=\"339.9\" cy=\"235.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"372.6\" cy=\"193.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"405.4\" cy=\"210.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"438.1\" cy=\"176.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"454.5\" cy=\"143.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"470.8\" cy=\"160.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"487.2\" cy=\"130.8\" r=\"4\" fill=\"#334155\"/><circle cx=\"503.6\" cy=\"185.0\" r=\"6\" fill=\"#16a34a\"/><circle cx=\"503.6\" cy=\"185.0\" r=\"10\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/><circle cx=\"503.6\" cy=\"168.3\" r=\"6\" fill=\"#16a34a\"/><circle cx=\"503.6\" cy=\"168.3\" r=\"10\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/><circle cx=\"519.9\" cy=\"151.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"536.3\" cy=\"135.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"552.7\" cy=\"118.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"569.1\" cy=\"143.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"585.4\" cy=\"105.8\" r=\"4\" fill=\"#334155\"/><circle cx=\"601.8\" cy=\"122.5\" r=\"4\" fill=\"#334155\"/><circle cx=\"634.5\" cy=\"93.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"683.6\" cy=\"76.7\" r=\"4\" fill=\"#334155\"/><text x=\"389.0\" y=\"365\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"normal\">Duration of eruption (minutes)</text><text x=\"20\" y=\"190\" transform=\"rotate(-90 20 190)\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Wait until next eruption (minutes)</text></svg>"
+                  }
+                },
+                {
+                  "explain": "The data points cluster around this upward trend, though they are not exactly on a line.",
+                  "work": "The relationship is strong and positive, but not perfectly linear."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "duration of an eruption",
+                  "note": "Horizontal variable."
+                },
+                {
+                  "text": "time until the next eruption",
+                  "note": "Vertical variable; timed from the end of one eruption."
+                }
+              ],
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "275–276",
+                "course": "Advanced",
+                "sourceQuestion": "16-iii"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 390\" role=\"img\" aria-label=\"Steam eruptions: duration and wait until next eruption scatterplot with labelled axes; selected data or line highlighted\"><rect width=\"760\" height=\"390\" fill=\"white\"/><text x=\"380\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" fill=\"#334155\" font-weight=\"bold\">Steam eruptions: duration and wait until next eruption</text><path d=\"M78.0 60V310 M78 60.0H700\" stroke=\"#e2e8f0\"/><path d=\"M140.2 60V310 M78 85.0H700\" stroke=\"#e2e8f0\"/><path d=\"M202.4 60V310 M78 110.0H700\" stroke=\"#e2e8f0\"/><path d=\"M264.6 60V310 M78 135.0H700\" stroke=\"#e2e8f0\"/><path d=\"M326.8 60V310 M78 160.0H700\" stroke=\"#e2e8f0\"/><path d=\"M389.0 60V310 M78 185.0H700\" stroke=\"#e2e8f0\"/><path d=\"M451.2 60V310 M78 210.0H700\" stroke=\"#e2e8f0\"/><path d=\"M513.4 60V310 M78 235.0H700\" stroke=\"#e2e8f0\"/><path d=\"M575.6 60V310 M78 260.0H700\" stroke=\"#e2e8f0\"/><path d=\"M637.8 60V310 M78 285.0H700\" stroke=\"#e2e8f0\"/><path d=\"M700.0 60V310 M78 310.0H700\" stroke=\"#e2e8f0\"/><path d=\"M78 60V310H700\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"78.0\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">1.4</text><text x=\"68\" y=\"64.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">100</text><text x=\"202.4\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">2.16</text><text x=\"68\" y=\"114.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">88</text><text x=\"326.8\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">2.92</text><text x=\"68\" y=\"164.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">76</text><text x=\"451.2\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">3.68</text><text x=\"68\" y=\"214.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">64</text><text x=\"575.6\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">4.44</text><text x=\"68\" y=\"264.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">52</text><text x=\"700.0\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">5.2</text><text x=\"68\" y=\"314.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">40</text><circle cx=\"110.7\" cy=\"260.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"127.1\" cy=\"276.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"143.5\" cy=\"251.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"159.8\" cy=\"289.2\" r=\"4\" fill=\"#334155\"/><circle cx=\"176.2\" cy=\"264.2\" r=\"4\" fill=\"#334155\"/><circle cx=\"192.6\" cy=\"239.2\" r=\"4\" fill=\"#334155\"/><circle cx=\"208.9\" cy=\"218.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"225.3\" cy=\"272.5\" r=\"4\" fill=\"#334155\"/><circle cx=\"241.7\" cy=\"205.8\" r=\"4\" fill=\"#334155\"/><circle cx=\"274.4\" cy=\"243.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"307.2\" cy=\"222.5\" r=\"4\" fill=\"#334155\"/><circle cx=\"339.9\" cy=\"235.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"372.6\" cy=\"193.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"405.4\" cy=\"210.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"438.1\" cy=\"176.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"454.5\" cy=\"143.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"470.8\" cy=\"160.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"487.2\" cy=\"130.8\" r=\"4\" fill=\"#334155\"/><circle cx=\"503.6\" cy=\"185.0\" r=\"6\" fill=\"#16a34a\"/><circle cx=\"503.6\" cy=\"185.0\" r=\"10\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/><circle cx=\"503.6\" cy=\"168.3\" r=\"6\" fill=\"#16a34a\"/><circle cx=\"503.6\" cy=\"168.3\" r=\"10\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/><circle cx=\"519.9\" cy=\"151.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"536.3\" cy=\"135.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"552.7\" cy=\"118.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"569.1\" cy=\"143.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"585.4\" cy=\"105.8\" r=\"4\" fill=\"#334155\"/><circle cx=\"601.8\" cy=\"122.5\" r=\"4\" fill=\"#334155\"/><circle cx=\"634.5\" cy=\"93.3\" r=\"4\" fill=\"#334155\"/><circle cx=\"683.6\" cy=\"76.7\" r=\"4\" fill=\"#334155\"/><text x=\"389.0\" y=\"365\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"normal\">Duration of eruption (minutes)</text><text x=\"20\" y=\"190\" transform=\"rotate(-90 20 190)\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Wait until next eruption (minutes)</text></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Keep the variables, units and data pairs in the order shown.",
+              "note": "Use graph coordinates as (horizontal variable, vertical variable)."
+            }
+          ],
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "275–276",
+            "course": "Advanced",
+            "sourceQuestion": "16"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p276-q17",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In which graph would the data have a correlation coefficient closest to −0.9?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 3,
+          "hint": "A coefficient near −0.9 is a strong negative association: points should closely follow a downward line.",
+          "steps": [
+            {
+              "explain": "A negative association falls from left to right. A value close to −1 requires the points to lie close to a straight decreasing line.",
+              "work": "Option D has a clear, tight downward pattern.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 430\" role=\"img\" aria-label=\"Four scatterplot choices; D has a strong negative association\"><rect width=\"760\" height=\"430\" fill=\"white\"/><text x=\"380\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" fill=\"#334155\" font-weight=\"bold\">Select the scatterplot with r closest to −0.9</text><text x=\"195\" y=\"70\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\" font-weight=\"bold\">A</text><path d=\"M60 200V83H365\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><circle cx=\"90.5\" cy=\"106.4\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"121.0\" cy=\"153.2\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"151.5\" cy=\"112.2\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"182.0\" cy=\"170.8\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"227.8\" cy=\"124.0\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"273.5\" cy=\"159.1\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"319.2\" cy=\"135.6\" r=\"3.4\" fill=\"#334155\"/><text x=\"560\" y=\"70\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\" font-weight=\"bold\">B</text><path d=\"M425 200V83H730\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><circle cx=\"455.5\" cy=\"100.5\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"501.2\" cy=\"124.0\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"547.0\" cy=\"135.6\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"592.8\" cy=\"150.9\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"638.5\" cy=\"159.1\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"684.2\" cy=\"178.9\" r=\"3.4\" fill=\"#334155\"/><text x=\"195\" y=\"255\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\" font-weight=\"bold\">C</text><path d=\"M60 385V268H365\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><circle cx=\"90.5\" cy=\"361.6\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"121.0\" cy=\"344.1\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"166.8\" cy=\"349.9\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"197.2\" cy=\"314.8\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"227.8\" cy=\"332.4\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"273.5\" cy=\"291.4\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"319.2\" cy=\"308.9\" r=\"3.4\" fill=\"#334155\"/><text x=\"560\" y=\"255\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\" font-weight=\"bold\">D</text><path d=\"M425 385V268H730\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><circle cx=\"455.5\" cy=\"279.7\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"492.1\" cy=\"293.7\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"531.8\" cy=\"307.8\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"571.4\" cy=\"321.8\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"614.1\" cy=\"335.9\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"653.8\" cy=\"349.9\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"699.5\" cy=\"367.4\" r=\"3.4\" fill=\"#334155\"/></svg>"
+              }
+            },
+            {
+              "explain": "The other plots are weaker or have a positive direction.",
+              "work": "\\(\\boxed{\\text{D}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "correlation coefficient closest to −0.9",
+              "note": "Strong negative linear relationship."
+            }
+          ],
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "276",
+            "course": "Advanced",
+            "sourceQuestion": "17"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 430\" role=\"img\" aria-label=\"Four scatterplot choices; D has a strong negative association\"><rect width=\"760\" height=\"430\" fill=\"white\"/><text x=\"380\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" fill=\"#334155\" font-weight=\"bold\">Select the scatterplot with r closest to −0.9</text><text x=\"195\" y=\"70\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\" font-weight=\"bold\">A</text><path d=\"M60 200V83H365\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><circle cx=\"90.5\" cy=\"106.4\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"121.0\" cy=\"153.2\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"151.5\" cy=\"112.2\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"182.0\" cy=\"170.8\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"227.8\" cy=\"124.0\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"273.5\" cy=\"159.1\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"319.2\" cy=\"135.6\" r=\"3.4\" fill=\"#334155\"/><text x=\"560\" y=\"70\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\" font-weight=\"bold\">B</text><path d=\"M425 200V83H730\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><circle cx=\"455.5\" cy=\"100.5\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"501.2\" cy=\"124.0\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"547.0\" cy=\"135.6\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"592.8\" cy=\"150.9\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"638.5\" cy=\"159.1\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"684.2\" cy=\"178.9\" r=\"3.4\" fill=\"#334155\"/><text x=\"195\" y=\"255\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\" font-weight=\"bold\">C</text><path d=\"M60 385V268H365\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><circle cx=\"90.5\" cy=\"361.6\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"121.0\" cy=\"344.1\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"166.8\" cy=\"349.9\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"197.2\" cy=\"314.8\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"227.8\" cy=\"332.4\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"273.5\" cy=\"291.4\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"319.2\" cy=\"308.9\" r=\"3.4\" fill=\"#334155\"/><text x=\"560\" y=\"255\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\" font-weight=\"bold\">D</text><path d=\"M425 385V268H730\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><circle cx=\"455.5\" cy=\"279.7\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"492.1\" cy=\"293.7\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"531.8\" cy=\"307.8\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"571.4\" cy=\"321.8\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"614.1\" cy=\"335.9\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"653.8\" cy=\"349.9\" r=\"3.4\" fill=\"#334155\"/><circle cx=\"699.5\" cy=\"367.4\" r=\"3.4\" fill=\"#334155\"/></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p276-q18",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The height and mass of a child are measured and recorded over its first two years. This information is displayed in a scatter graph.",
+          "hint": "The equation is in the form M=mH+b. Use the highlighted line points to calculate the gradient and intercept.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p276-q18-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Describe the correlation between the height and mass of this child, as shown in the graph.",
+              "options": [
+                "Strong positive correlation",
+                "Strong negative correlation",
+                "Weak negative correlation",
+                "No correlation"
+              ],
+              "answer": 0,
+              "hint": "Read the overall direction and how close the points are to a straight-line pattern.",
+              "steps": [
+                {
+                  "explain": "As height increases, mass also tends to increase, so the direction is positive.",
+                  "work": "The plotted points rise from left to right.",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 390\" role=\"img\" aria-label=\"Height versus mass scatterplot with labelled axes; selected data or line highlighted\"><rect width=\"760\" height=\"390\" fill=\"white\"/><text x=\"380\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" fill=\"#334155\" font-weight=\"bold\">Height versus mass</text><path d=\"M78.0 60V310 M78 60.0H700\" stroke=\"#e2e8f0\"/><path d=\"M140.2 60V310 M78 85.0H700\" stroke=\"#e2e8f0\"/><path d=\"M202.4 60V310 M78 110.0H700\" stroke=\"#e2e8f0\"/><path d=\"M264.6 60V310 M78 135.0H700\" stroke=\"#e2e8f0\"/><path d=\"M326.8 60V310 M78 160.0H700\" stroke=\"#e2e8f0\"/><path d=\"M389.0 60V310 M78 185.0H700\" stroke=\"#e2e8f0\"/><path d=\"M451.2 60V310 M78 210.0H700\" stroke=\"#e2e8f0\"/><path d=\"M513.4 60V310 M78 235.0H700\" stroke=\"#e2e8f0\"/><path d=\"M575.6 60V310 M78 260.0H700\" stroke=\"#e2e8f0\"/><path d=\"M637.8 60V310 M78 285.0H700\" stroke=\"#e2e8f0\"/><path d=\"M700.0 60V310 M78 310.0H700\" stroke=\"#e2e8f0\"/><path d=\"M78 60V310H700\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"78.0\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">40</text><text x=\"68\" y=\"64.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">11</text><text x=\"202.4\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">48</text><text x=\"68\" y=\"114.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">8.8</text><text x=\"326.8\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">56</text><text x=\"68\" y=\"164.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">6.6</text><text x=\"451.2\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">64</text><text x=\"68\" y=\"214.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">4.4</text><text x=\"575.6\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">72</text><text x=\"68\" y=\"264.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">2.2</text><text x=\"700.0\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">80</text><text x=\"68\" y=\"314.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">0</text><path d=\"M78.0 282.7L700.0 73.6\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\"/><circle cx=\"155.8\" cy=\"257.7\" r=\"6\" fill=\"#16a34a\"/><circle cx=\"155.8\" cy=\"257.7\" r=\"10\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/><circle cx=\"233.5\" cy=\"223.6\" r=\"4\" fill=\"#334155\"/><circle cx=\"311.2\" cy=\"203.2\" r=\"4\" fill=\"#334155\"/><circle cx=\"389.0\" cy=\"169.1\" r=\"6\" fill=\"#16a34a\"/><circle cx=\"389.0\" cy=\"169.1\" r=\"10\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/><circle cx=\"466.8\" cy=\"148.6\" r=\"4\" fill=\"#334155\"/><circle cx=\"544.5\" cy=\"132.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"622.2\" cy=\"110.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"700.0\" cy=\"78.2\" r=\"4\" fill=\"#334155\"/><text x=\"389.0\" y=\"365\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"normal\">Height H (cm)</text><text x=\"20\" y=\"190\" transform=\"rotate(-90 20 190)\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Mass M (kg)</text></svg>"
+                  }
+                },
+                {
+                  "explain": "The points lie fairly close to an increasing straight-line pattern, so the correlation is strong and positive.",
+                  "work": "Strong positive correlation."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "height and mass",
+                  "note": "Height is horizontal and mass is vertical."
+                }
+              ],
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "275–276",
+                "course": "Advanced",
+                "sourceQuestion": "18-i"
+              }
+            },
+            {
+              "id": "y12a-advanced-005-p276-q18-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "A line of best fit has been drawn on the graph. Find the equation of this line.",
+              "options": [
+                "M = 0.23H − 8",
+                "M = 0.23H + 8",
+                "M = 8H − 0.23",
+                "M = 0.23 − 8H"
+              ],
+              "answer": 0,
+              "hint": "Use M=mH+b. The graph’s line passes through (40,1.2) and (60,5.8). Calculate the gradient, then the intercept.",
+              "steps": [
+                {
+                  "explain": "The horizontal variable is height H, and the vertical variable is mass M. Read two highlighted points from the fitted line.",
+                  "work": "\\((H,M)=(40,1.2)\\quad\\text{and}\\quad(60,5.8)\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 390\" role=\"img\" aria-label=\"Height versus mass scatterplot with labelled axes; selected data or line highlighted\"><rect width=\"760\" height=\"390\" fill=\"white\"/><text x=\"380\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" fill=\"#334155\" font-weight=\"bold\">Height versus mass</text><path d=\"M78.0 60V310 M78 60.0H700\" stroke=\"#e2e8f0\"/><path d=\"M140.2 60V310 M78 85.0H700\" stroke=\"#e2e8f0\"/><path d=\"M202.4 60V310 M78 110.0H700\" stroke=\"#e2e8f0\"/><path d=\"M264.6 60V310 M78 135.0H700\" stroke=\"#e2e8f0\"/><path d=\"M326.8 60V310 M78 160.0H700\" stroke=\"#e2e8f0\"/><path d=\"M389.0 60V310 M78 185.0H700\" stroke=\"#e2e8f0\"/><path d=\"M451.2 60V310 M78 210.0H700\" stroke=\"#e2e8f0\"/><path d=\"M513.4 60V310 M78 235.0H700\" stroke=\"#e2e8f0\"/><path d=\"M575.6 60V310 M78 260.0H700\" stroke=\"#e2e8f0\"/><path d=\"M637.8 60V310 M78 285.0H700\" stroke=\"#e2e8f0\"/><path d=\"M700.0 60V310 M78 310.0H700\" stroke=\"#e2e8f0\"/><path d=\"M78 60V310H700\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"78.0\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">40</text><text x=\"68\" y=\"64.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">11</text><text x=\"202.4\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">48</text><text x=\"68\" y=\"114.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">8.8</text><text x=\"326.8\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">56</text><text x=\"68\" y=\"164.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">6.6</text><text x=\"451.2\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">64</text><text x=\"68\" y=\"214.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">4.4</text><text x=\"575.6\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">72</text><text x=\"68\" y=\"264.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">2.2</text><text x=\"700.0\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">80</text><text x=\"68\" y=\"314.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">0</text><path d=\"M78.0 282.7L700.0 73.6\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\"/><circle cx=\"155.8\" cy=\"257.7\" r=\"6\" fill=\"#16a34a\"/><circle cx=\"155.8\" cy=\"257.7\" r=\"10\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/><circle cx=\"233.5\" cy=\"223.6\" r=\"4\" fill=\"#334155\"/><circle cx=\"311.2\" cy=\"203.2\" r=\"4\" fill=\"#334155\"/><circle cx=\"389.0\" cy=\"169.1\" r=\"6\" fill=\"#16a34a\"/><circle cx=\"389.0\" cy=\"169.1\" r=\"10\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/><circle cx=\"466.8\" cy=\"148.6\" r=\"4\" fill=\"#334155\"/><circle cx=\"544.5\" cy=\"132.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"622.2\" cy=\"110.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"700.0\" cy=\"78.2\" r=\"4\" fill=\"#334155\"/><text x=\"389.0\" y=\"365\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"normal\">Height H (cm)</text><text x=\"20\" y=\"190\" transform=\"rotate(-90 20 190)\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Mass M (kg)</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Calculate the vertical change divided by the horizontal change.",
+                  "work": "\\(m=\\frac{5.8-1.2}{60-40}=\\frac{4.6}{20}=0.23\\)"
+                },
+                {
+                  "explain": "Substitute (40,1.2) into M=0.23H+b and solve for b.",
+                  "work": "\\(1.2=0.23(40)+b\\)\\n\\(1.2=9.2+b\\)\\n\\(b=-8\\)"
+                },
+                {
+                  "explain": "Write the model with M as the predicted mass and H as height.",
+                  "work": "\\(\\boxed{M=0.23H-8}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "line of best fit",
+                  "note": "Use points on the drawn line."
+                },
+                {
+                  "text": "find the equation",
+                  "note": "Find gradient then vertical intercept."
+                }
+              ],
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "275–276",
+                "course": "Advanced",
+                "sourceQuestion": "18-ii"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 610\" role=\"img\" aria-label=\"Height and mass table and scatterplot with fitted line\"><rect width=\"760\" height=\"610\" fill=\"white\"/><g><rect width=\"760\" height=\"200\" fill=\"white\"/><text x=\"380\" y=\"24\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">Height and mass of a child</text><rect x=\"20\" y=\"45\" width=\"720\" height=\"58\" fill=\"#dcfce7\" stroke=\"#64748b\"/><path d=\"M170 45V103\" stroke=\"#64748b\"/><text x=\"95.0\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">Height H (cm)</text><text x=\"205.6\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">45</text><text x=\"276.9\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">50</text><text x=\"348.1\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">55</text><text x=\"419.4\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">60</text><text x=\"490.6\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">65</text><text x=\"561.9\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">70</text><text x=\"633.1\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">75</text><text x=\"704.4\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">80</text><path d=\"M241.2 45V103\" stroke=\"#94a3b8\"/><path d=\"M312.5 45V103\" stroke=\"#94a3b8\"/><path d=\"M383.8 45V103\" stroke=\"#94a3b8\"/><path d=\"M455.0 45V103\" stroke=\"#94a3b8\"/><path d=\"M526.2 45V103\" stroke=\"#94a3b8\"/><path d=\"M597.5 45V103\" stroke=\"#94a3b8\"/><path d=\"M668.8 45V103\" stroke=\"#94a3b8\"/><rect x=\"20\" y=\"103\" width=\"720\" height=\"58\" fill=\"#f8fafc\" stroke=\"#64748b\"/><path d=\"M170 103V161\" stroke=\"#64748b\"/><text x=\"95.0\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">Mass M (kg)</text><text x=\"205.6\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">2.3</text><text x=\"276.9\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">3.8</text><text x=\"348.1\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">4.7</text><text x=\"419.4\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">6.2</text><text x=\"490.6\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">7.1</text><text x=\"561.9\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">7.8</text><text x=\"633.1\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">8.8</text><text x=\"704.4\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">10.2</text><path d=\"M241.2 103V161\" stroke=\"#94a3b8\"/><path d=\"M312.5 103V161\" stroke=\"#94a3b8\"/><path d=\"M383.8 103V161\" stroke=\"#94a3b8\"/><path d=\"M455.0 103V161\" stroke=\"#94a3b8\"/><path d=\"M526.2 103V161\" stroke=\"#94a3b8\"/><path d=\"M597.5 103V161\" stroke=\"#94a3b8\"/><path d=\"M668.8 103V161\" stroke=\"#94a3b8\"/></g><g transform=\"translate(0 205)\"><rect width=\"760\" height=\"390\" fill=\"white\"/><text x=\"380\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" fill=\"#334155\" font-weight=\"bold\">Height versus mass</text><path d=\"M78.0 60V310 M78 60.0H700\" stroke=\"#e2e8f0\"/><path d=\"M140.2 60V310 M78 85.0H700\" stroke=\"#e2e8f0\"/><path d=\"M202.4 60V310 M78 110.0H700\" stroke=\"#e2e8f0\"/><path d=\"M264.6 60V310 M78 135.0H700\" stroke=\"#e2e8f0\"/><path d=\"M326.8 60V310 M78 160.0H700\" stroke=\"#e2e8f0\"/><path d=\"M389.0 60V310 M78 185.0H700\" stroke=\"#e2e8f0\"/><path d=\"M451.2 60V310 M78 210.0H700\" stroke=\"#e2e8f0\"/><path d=\"M513.4 60V310 M78 235.0H700\" stroke=\"#e2e8f0\"/><path d=\"M575.6 60V310 M78 260.0H700\" stroke=\"#e2e8f0\"/><path d=\"M637.8 60V310 M78 285.0H700\" stroke=\"#e2e8f0\"/><path d=\"M700.0 60V310 M78 310.0H700\" stroke=\"#e2e8f0\"/><path d=\"M78 60V310H700\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"78.0\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">40</text><text x=\"68\" y=\"64.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">11</text><text x=\"202.4\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">48</text><text x=\"68\" y=\"114.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">8.8</text><text x=\"326.8\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">56</text><text x=\"68\" y=\"164.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">6.6</text><text x=\"451.2\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">64</text><text x=\"68\" y=\"214.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">4.4</text><text x=\"575.6\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">72</text><text x=\"68\" y=\"264.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">2.2</text><text x=\"700.0\" y=\"329\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">80</text><text x=\"68\" y=\"314.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\" font-weight=\"normal\">0</text><path d=\"M78.0 282.7L700.0 73.6\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\"/><circle cx=\"155.8\" cy=\"257.7\" r=\"6\" fill=\"#16a34a\"/><circle cx=\"155.8\" cy=\"257.7\" r=\"10\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/><circle cx=\"233.5\" cy=\"223.6\" r=\"4\" fill=\"#334155\"/><circle cx=\"311.2\" cy=\"203.2\" r=\"4\" fill=\"#334155\"/><circle cx=\"389.0\" cy=\"169.1\" r=\"6\" fill=\"#16a34a\"/><circle cx=\"389.0\" cy=\"169.1\" r=\"10\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/><circle cx=\"466.8\" cy=\"148.6\" r=\"4\" fill=\"#334155\"/><circle cx=\"544.5\" cy=\"132.7\" r=\"4\" fill=\"#334155\"/><circle cx=\"622.2\" cy=\"110.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"700.0\" cy=\"78.2\" r=\"4\" fill=\"#334155\"/><text x=\"389.0\" y=\"365\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"normal\">Height H (cm)</text><text x=\"20\" y=\"190\" transform=\"rotate(-90 20 190)\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Mass M (kg)</text></g></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Keep the variables, units and data pairs in the order shown.",
+              "note": "Use graph coordinates as (horizontal variable, vertical variable)."
+            }
+          ],
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "276",
+            "course": "Advanced",
+            "sourceQuestion": "18"
           }
         }
       ]
