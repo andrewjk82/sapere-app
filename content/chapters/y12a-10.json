@@ -3189,6 +3189,558 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 620 340\" role=\"img\" aria-label=\"Cumulative frequency histogram of number of movies watched by students\"><rect width=\"620\" height=\"340\" fill=\"white\"/><path d=\"M75 270V35M75 270H560\" stroke=\"#334155\" stroke-width=\"2\"/><g stroke=\"#e2e8f0\"><path d=\"M75 220H560M75 170H560M75 120H560M75 70H560\"/></g><g fill=\"#d1d5db\" stroke=\"#475569\" stroke-width=\"2\"><rect x=\"125\" y=\"245\" width=\"65\" height=\"25\"/><rect x=\"190\" y=\"195\" width=\"65\" height=\"50\"/><rect x=\"255\" y=\"145\" width=\"65\" height=\"50\"/><rect x=\"320\" y=\"95\" width=\"65\" height=\"50\"/><rect x=\"385\" y=\"70\" width=\"65\" height=\"25\"/></g><g font-family=\"Arial\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"157\" y=\"295\">1</text><text x=\"222\" y=\"295\">2</text><text x=\"287\" y=\"295\">3</text><text x=\"352\" y=\"295\">4</text><text x=\"417\" y=\"295\">5</text><text x=\"320\" y=\"322\">Number of movies</text><text x=\"62\" y=\"274\">0</text><text x=\"62\" y=\"224\">10</text><text x=\"62\" y=\"174\">20</text><text x=\"62\" y=\"124\">30</text><text x=\"62\" y=\"74\">40</text><text x=\"22\" y=\"170\" transform=\"rotate(-90 22 170)\">Cumulative students</text></g></svg>"
           }
+        },
+        {
+          "id": "y12a-advanced-005-p266-q38",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Barry constructed a back-to-back stem-and-leaf plot to compare the ages of students attending Barry's Ballroom Dancing Studio.",
+          "hint": "Use the key to read ages. Count leaves, compare tails, and remember grouped-data means use class centres.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p266-q38-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Write a brief statement that compares the distribution of the ages of males and females from this set of data.",
+              "options": [
+                "There are more males; male ages are positively skewed and female ages negatively skewed",
+                "There are more females; both are positively skewed",
+                "There are equal numbers; both are symmetric",
+                "There are more males; both are negatively skewed"
+              ],
+              "answer": 0,
+              "hint": "Count the leaves on each side, then look for the longer tail in each distribution.",
+              "steps": [
+                {
+                  "explain": "Count the leaves: there are more leaves on the male side. The male values extend toward older ages, with a longer high-age tail.",
+                  "work": "More males; male tail toward older ages"
+                },
+                {
+                  "explain": "Female ages extend farther toward the younger end, giving a negative skew. Male ages have positive skew.",
+                  "work": "Females: negative skew; males: positive skew"
+                },
+                {
+                  "explain": "This matches the first statement.",
+                  "work": "\\(\\boxed{\text{Option A}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "266",
+                "course": "Advanced",
+                "sourceQuestion": "Q38(i)"
+              },
+              "keyPoints": [
+                {
+                  "text": "distribution of the ages of males and females",
+                  "note": "Compare the two sides of the plot."
+                }
+              ]
+            },
+            {
+              "id": "y12a-advanced-005-p266-q38-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What is the mode of this set of data?",
+              "options": [
+                "24 years",
+                "42 years",
+                "54 years",
+                "64 years"
+              ],
+              "answer": 3,
+              "hint": "Combine both sides and find the age that occurs most often.",
+              "steps": [
+                {
+                  "explain": "Use each stem as the tens digit and each leaf as the ones digit. The age 64 appears twice among males and twice among females.",
+                  "work": "\\(64\text{ occurs }4\text{ times}\\)"
+                },
+                {
+                  "explain": "No other age appears as often in the combined data.",
+                  "work": "Most frequent age = 64"
+                },
+                {
+                  "explain": "Therefore the mode is 64 years.",
+                  "work": "\\(\\boxed{64\text{ years}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "266",
+                "course": "Advanced",
+                "sourceQuestion": "Q38(ii)"
+              },
+              "keyPoints": [
+                {
+                  "text": "mode of this set of data",
+                  "note": "Find the value that occurs most often."
+                }
+              ]
+            },
+            {
+              "id": "y12a-advanced-005-p266-q38-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Liam decided to use a grouped frequency distribution table to calculate the mean age of the students at Barry’s Ballroom Dancing Studio. For the age group 30–39 years, what is the value of the product of the class centre and the frequency?",
+              "options": [
+                "34.5",
+                "172.5",
+                "39",
+                "5"
+              ],
+              "answer": 1,
+              "hint": "Find the midpoint of 30–39 and count all ages in the 30s.",
+              "steps": [
+                {
+                  "explain": "The class centre is the midpoint of the class limits.",
+                  "work": "\\(\\frac{30+39}{2}=34.5\\)"
+                },
+                {
+                  "explain": "There are five students aged 30–39 in total.",
+                  "work": "Frequency \\(=5\\)"
+                },
+                {
+                  "explain": "Multiply centre by frequency.",
+                  "work": "\\(34.5(5)=\\boxed{172.5}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "266",
+                "course": "Advanced",
+                "sourceQuestion": "Q38(iii)"
+              },
+              "keyPoints": [
+                {
+                  "text": "age group 30–39 years",
+                  "note": "Use the class midpoint and count leaves in that interval."
+                }
+              ]
+            },
+            {
+              "id": "y12a-advanced-005-p266-q38-iv",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Liam correctly calculated the mean from the grouped frequency distribution table to be 39.5. What is the reason for the difference in the two answers?",
+              "options": [
+                "Grouped data uses class centres as approximations; the original ages give an exact mean",
+                "The grouped mean always includes an outlier",
+                "The original ages are rounded to class centres",
+                "A grouped mean is always smaller"
+              ],
+              "answer": 0,
+              "hint": "A grouped frequency table replaces all values in a class by one representative value.",
+              "steps": [
+                {
+                  "explain": "The original mean uses each student’s exact age.",
+                  "work": "Raw data: each age is used"
+                },
+                {
+                  "explain": "For grouped data, every age in a class is represented by that class centre. This is an approximation.",
+                  "work": "Grouped data uses class centres"
+                },
+                {
+                  "explain": "Therefore the grouped mean can differ from the exact mean based on the original ages.",
+                  "work": "\\(\\boxed{\text{Class centres make the grouped mean approximate}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "266",
+                "course": "Advanced",
+                "sourceQuestion": "Q38(iv)"
+              },
+              "keyPoints": [
+                {
+                  "text": "mean from the grouped frequency distribution table",
+                  "note": "Grouped data uses class centres."
+                }
+              ]
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 720 410\" role=\"img\" aria-label=\"Back-to-back stem-and-leaf plot comparing ages of female and male dance students\"><rect width=\"720\" height=\"410\" fill=\"white\"/><text x=\"250\" y=\"35\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"19\" font-style=\"italic\">Females</text><text x=\"470\" y=\"35\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"19\" font-style=\"italic\">Males</text><path d=\"M360 55V350\" stroke=\"#334155\" stroke-width=\"2\"/><g font-family=\"Arial\" font-size=\"19\" fill=\"#172554\" text-anchor=\"middle\"><text x=\"360\" y=\"100\">1</text><text x=\"360\" y=\"145\">2</text><text x=\"360\" y=\"190\">3</text><text x=\"360\" y=\"235\">4</text><text x=\"360\" y=\"280\">5</text><text x=\"360\" y=\"325\">6</text></g><g font-family=\"monospace\" font-size=\"18\" fill=\"#172554\" text-anchor=\"end\"><text x=\"340\" y=\"100\">9</text><text x=\"340\" y=\"145\">7</text><text x=\"340\" y=\"190\">5</text><text x=\"340\" y=\"235\">5 2</text><text x=\"340\" y=\"280\">3 2 0</text><text x=\"340\" y=\"325\">4 4 2 1</text></g><g font-family=\"monospace\" font-size=\"18\" fill=\"#172554\"><text x=\"380\" y=\"100\">1 2 3</text><text x=\"380\" y=\"145\">0 2 2 2 4 5</text><text x=\"380\" y=\"190\">0 0 1 7</text><text x=\"380\" y=\"235\">6 7</text><text x=\"380\" y=\"280\">2</text><text x=\"380\" y=\"325\">4 4</text></g><text x=\"360\" y=\"385\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\">Key: 2 | 5 = 25 years</text></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "266",
+            "course": "Advanced",
+            "sourceQuestion": "Q38"
+          },
+          "keyPoints": [
+            {
+              "text": "back-to-back stem-and-leaf plot",
+              "note": "Read the stem in the middle and the leaves on each side."
+            },
+            {
+              "text": "ages of students",
+              "note": "The values represent ages in years."
+            }
+          ]
+        },
+        {
+          "id": "y12a-advanced-005-p267-q41",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The sector graph shows the proportion of people, as a percentage, living in each region of Sumcity. There are 24 000 people living in the Eastern Suburbs. Jake used the information above to draw a column graph.",
+          "hint": "Use the Eastern sector’s 15% to find the total population, then check each region’s expected population against the column graph.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p267-q41-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Show that the total number of people living in Sumcity is 160 000.",
+              "options": [
+                "160,000",
+                "120,000",
+                "240,000",
+                "360,000"
+              ],
+              "answer": 0,
+              "hint": "The Eastern Suburbs are 15% of the total. Divide 24,000 by 0.15.",
+              "steps": [
+                {
+                  "explain": "The Eastern population is 15% of the total.",
+                  "work": "\\(0.15N=24\\,000\\)"
+                },
+                {
+                  "explain": "Divide by 0.15.",
+                  "work": "\\(N=24\\,000/0.15=160\\,000\\)"
+                },
+                {
+                  "explain": "The total population is 160,000.",
+                  "work": "\\(\\boxed{160\\,000}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "267",
+                "course": "Advanced",
+                "sourceQuestion": "Q41(i)"
+              },
+              "keyPoints": [
+                {
+                  "text": "Show that the total number of people living in Sumcity is 160 000.",
+                  "note": "Use the Eastern Suburbs population and its 15% share."
+                }
+              ]
+            },
+            {
+              "id": "y12a-advanced-005-p267-q41-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The column graph height is incorrect for one region. Identify this region and justify your answer.",
+              "options": [
+                "Northern Suburbs; 45% of 160,000 is 72,000, which matches the graph",
+                "Southern Suburbs; 30% of 160,000 is 48,000, which matches the graph",
+                "Eastern Suburbs; 15% of 160,000 is 24,000, which matches the graph",
+                "Western Suburbs; 10% of 160,000 is 16,000, but the graph shows 12,000"
+              ],
+              "answer": 3,
+              "hint": "Use the total population and the sector percentage to calculate the correct population for each region.",
+              "steps": [
+                {
+                  "explain": "From part (i), the total is 160,000. Western Suburbs are 10% of the total.",
+                  "work": "\\(0.10(160\\,000)=16\\,000\\)"
+                },
+                {
+                  "explain": "Jake’s graph shows 12,000 for Western Suburbs, not 16,000.",
+                  "work": "Graph shows 12,000; correct value 16,000"
+                },
+                {
+                  "explain": "Therefore the Western Suburbs column is incorrect.",
+                  "work": "\\(\\boxed{\text{Western Suburbs}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "267",
+                "course": "Advanced",
+                "sourceQuestion": "Q41(ii)"
+              },
+              "keyPoints": [
+                {
+                  "text": "Identify this region and justify your answer",
+                  "note": "Calculate each expected regional population and compare it with the bar."
+                }
+              ]
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 900 470\" role=\"img\" aria-label=\"Sumcity sector graph and column graph of regional populations\"><rect width=\"900\" height=\"470\" fill=\"white\"/><text x=\"230\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">Proportion of people in Sumcity</text><path d=\"M230 205L230.00 65.00A140 140 0 0 1 363.15 248.26Z\" fill=\"#e2e8f0\" stroke=\"#475569\" stroke-width=\"2\"/><path d=\"M230 205L363.15 248.26A140 140 0 0 1 273.26 338.15Z\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\"/><path d=\"M230 205L273.26 338.15A140 140 0 0 1 186.74 338.15Z\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"2\"/><path d=\"M230 205L186.74 338.15A140 140 0 0 1 230.00 65.00Z\" fill=\"#cbd5e1\" stroke=\"#475569\" stroke-width=\"2\"/><g font-family=\"Arial\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"285\" y=\"170\">Southern</text><text x=\"285\" y=\"188\">Suburbs (30%)</text><text x=\"270\" y=\"265\">Eastern (15%)</text><text x=\"155\" y=\"230\">South Western</text><text x=\"155\" y=\"248\">(10%)</text><text x=\"160\" y=\"140\">Northern</text><text x=\"160\" y=\"158\">Suburbs (45%)</text></g><text x=\"670\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">Jake’s column graph</text><path d=\"M490 350V55M490 350H875\" stroke=\"#334155\" stroke-width=\"2\"/><g stroke=\"#e2e8f0\"><path d=\"M490 300H875M490 250H875M490 200H875M490 150H875M490 100H875M490 50H875\"/></g><g fill=\"#cbd5e1\" stroke=\"#475569\"><rect x=\"525\" y=\"80\" width=\"45\" height=\"270\"/><rect x=\"610\" y=\"190\" width=\"45\" height=\"160\"/><rect x=\"695\" y=\"270\" width=\"45\" height=\"80\"/><rect x=\"780\" y=\"310\" width=\"45\" height=\"40\"/></g><g font-family=\"Arial\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"547\" y=\"372\">Northern</text><text x=\"632\" y=\"372\">Southern</text><text x=\"717\" y=\"372\">Eastern</text><text x=\"802\" y=\"372\">Western</text><text x=\"690\" y=\"405\">Region</text><text x=\"480\" y=\"354\">0</text><text x=\"480\" y=\"304\">12k</text><text x=\"480\" y=\"254\">24k</text><text x=\"480\" y=\"204\">36k</text><text x=\"480\" y=\"154\">48k</text><text x=\"480\" y=\"104\">60k</text><text x=\"480\" y=\"54\">72k</text></g></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "267",
+            "course": "Advanced",
+            "sourceQuestion": "Q41"
+          },
+          "keyPoints": [
+            {
+              "text": "24 000 people living in the Eastern Suburbs",
+              "note": "The Eastern Suburbs are 15% of the total."
+            },
+            {
+              "text": "column graph",
+              "note": "Compare each bar with its percentage of the total."
+            }
+          ]
+        },
+        {
+          "id": "y12a-advanced-005-p267-q42",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A census was conducted of the 33 171 households in Sunnytown. Each household was asked to indicate the number of cars registered to that household. The results are summarised in the following table.",
+          "hint": "Read frequencies for the mode, use cars × households for total stickers, and multiply the no-car fraction by 360° for its sector angle. Use the step graph for parking cost.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p267-q42-i1",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Determine the mode number of cars in a household.",
+              "options": [
+                "0",
+                "1",
+                "2",
+                "3"
+              ],
+              "answer": 2,
+              "hint": "The mode is the number of cars with the greatest frequency.",
+              "steps": [
+                {
+                  "explain": "Compare the frequencies in the table. The largest count is 13,918.",
+                  "work": "\\(13\\,918\\) is the greatest frequency"
+                },
+                {
+                  "explain": "That frequency corresponds to households with 2 cars.",
+                  "work": "Cars = 2"
+                },
+                {
+                  "explain": "So the mode is 2 cars.",
+                  "work": "\\(\\boxed{2}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "267",
+                "course": "Advanced",
+                "sourceQuestion": "Q42(i)(1)"
+              },
+              "keyPoints": [
+                {
+                  "text": "mode number of cars in a household",
+                  "note": "The mode is the category with the greatest frequency."
+                }
+              ]
+            },
+            {
+              "id": "y12a-advanced-005-p267-q42-i2",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Explain what is meant by the mode number of cars in a household.",
+              "options": [
+                "The number of cars with the greatest frequency registered per household; in this survey, the greatest number of households had 2 cars",
+                "The number of cars that is the average for all households",
+                "The number of cars held by half of all households",
+                "The largest number of cars registered by any household"
+              ],
+              "answer": 0,
+              "hint": "The mode is the value that occurs most often.",
+              "steps": [
+                {
+                  "explain": "The mode is the category with the greatest frequency.",
+                  "work": "Highest frequency category"
+                },
+                {
+                  "explain": "The table shows 2 cars has the greatest number of households.",
+                  "work": "2 cars is most frequent"
+                },
+                {
+                  "explain": "So most households surveyed had 2 cars.",
+                  "work": "\\(\\boxed{\text{Most had 2 cars}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "267",
+                "course": "Advanced",
+                "sourceQuestion": "Q42(i)(2)"
+              },
+              "keyPoints": [
+                {
+                  "text": "mode number of cars in a household",
+                  "note": "In words, describe what the most frequent car count tells you."
+                }
+              ]
+            },
+            {
+              "id": "y12a-advanced-005-p267-q42-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Sunnytown Council issued a “free parking” sticker for each car registered to a household in Sunnytown. How many parking stickers were issued?",
+              "options": [
+                "33,171",
+                "53,013",
+                "40,141",
+                "16,918"
+              ],
+              "answer": 1,
+              "hint": "Multiply each car count by its frequency and add the products.",
+              "steps": [
+                {
+                  "explain": "Households with 0 cars receive no stickers. Count the cars in the other groups.",
+                  "work": "\\(1(12\\,305)+2(13\\,918)+3(3\\,980)+4(233)\\)"
+                },
+                {
+                  "explain": "Calculate each product and add.",
+                  "work": "\\(12\\,305+27\\,836+11\\,940+932=53\\,013\\)"
+                },
+                {
+                  "explain": "That is the number of registered cars and stickers.",
+                  "work": "\\(\\boxed{53\\,013}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "267",
+                "course": "Advanced",
+                "sourceQuestion": "Q42(ii)"
+              },
+              "keyPoints": [
+                {
+                  "text": "each car registered to a household",
+                  "note": "Multiply each car count by its frequency, then add."
+                }
+              ]
+            },
+            {
+              "id": "y12a-advanced-005-p267-q42-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The council represented the results of the census in a sector graph. What is the angle in the sector representing the households with no cars? Give your answer to the nearest degree.",
+              "options": [
+                "20°",
+                "30°",
+                "45°",
+                "60°"
+              ],
+              "answer": 1,
+              "hint": "The angle is the no-car proportion of the total, multiplied by 360°.",
+              "steps": [
+                {
+                  "explain": "There are 2,735 households with no cars out of 33,171 total.",
+                  "work": "\\(\text{fraction}=\\frac{2735}{33171}\\)"
+                },
+                {
+                  "explain": "Multiply the fraction by a full circle.",
+                  "work": "\\(\\frac{2735}{33171}\times360^\\circ\\approx29.68^\\circ\\)"
+                },
+                {
+                  "explain": "Round to the nearest degree.",
+                  "work": "\\(\\boxed{30^\\circ}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "267",
+                "course": "Advanced",
+                "sourceQuestion": "Q42(iii)"
+              },
+              "keyPoints": [
+                {
+                  "text": "households with no cars",
+                  "note": "Use this group’s share of the total to find a fraction of 360°."
+                }
+              ]
+            },
+            {
+              "id": "y12a-advanced-005-p267-q42-iv",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Visitors to Sunnytown Airport have to pay for parking. The following step graph shows the cost of parking for t hours. What is the cost for a car that is parked one evening from 6 pm to 8:30 pm?",
+              "options": [
+                "$5",
+                "$10",
+                "$15",
+                "$20"
+              ],
+              "answer": 1,
+              "hint": "Find the horizontal interval containing 2.5 hours and read its step height.",
+              "steps": [
+                {
+                  "explain": "The parking time 2.5 hours lies between 1 and 3 hours.",
+                  "work": "\\(1<2.5<3\\)"
+                },
+                {
+                  "explain": "The step graph shows a cost of $10 throughout that interval.",
+                  "work": "Cost = $10"
+                },
+                {
+                  "explain": "Therefore the visitor pays $10.",
+                  "work": "\\(\\boxed{\\$10}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "267",
+                "course": "Advanced",
+                "sourceQuestion": "Q42(iv)"
+              },
+              "keyPoints": [
+                {
+                  "text": "6 pm to 8:30 pm",
+                  "note": "Convert the parking time to hours and read that interval on the step graph."
+                }
+              ]
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 860 450\" role=\"img\" aria-label=\"Car ownership frequency table and step graph of parking cost\"><rect width=\"860\" height=\"430\" fill=\"white\"/><text x=\"220\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">Cars registered per household</text><g stroke=\"#475569\" fill=\"none\"><path d=\"M30 45H420M30 90H420M30 135H420M30 180H420M30 225H420M30 270H420M30 315H420M30 360H420M30 45V360M220 45V360M420 45V360\"/></g><g font-family=\"Arial\" font-size=\"15\" fill=\"#172554\" text-anchor=\"middle\"><text x=\"125\" y=\"75\">Number of cars</text><text x=\"320\" y=\"75\">Frequency</text><text x=\"125\" y=\"120\">0</text><text x=\"320\" y=\"120\">2,735</text><text x=\"125\" y=\"165\">1</text><text x=\"320\" y=\"165\">12,305</text><text x=\"125\" y=\"210\">2</text><text x=\"320\" y=\"210\">13,918</text><text x=\"125\" y=\"255\">3</text><text x=\"320\" y=\"255\">3,980</text><text x=\"125\" y=\"300\">4</text><text x=\"320\" y=\"300\">233</text><text x=\"125\" y=\"345\">Total</text><text x=\"320\" y=\"345\">33,171</text></g><text x=\"640\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">Parking cost</text><path d=\"M480 315V75M480 315H830\" stroke=\"#334155\" stroke-width=\"2\"/><g stroke=\"#e2e8f0\"><path d=\"M480 275H830M480 235H830M480 195H830M480 155H830M480 115H830M480 75H830\"/></g><path d=\"M480 275H510M510 275V235H560M560 235V195H630M630 195V155H750M750 155V75H830\" fill=\"none\" stroke=\"#475569\" stroke-width=\"4\"/><g fill=\"white\" stroke=\"#475569\" stroke-width=\"2\"><circle cx=\"510\" cy=\"275\" r=\"3.5\"/><circle cx=\"560\" cy=\"235\" r=\"3.5\"/><circle cx=\"630\" cy=\"195\" r=\"3.5\"/><circle cx=\"750\" cy=\"155\" r=\"3.5\"/></g><g fill=\"#475569\"><circle cx=\"480\" cy=\"275\" r=\"3.5\"/><circle cx=\"510\" cy=\"235\" r=\"3.5\"/><circle cx=\"560\" cy=\"195\" r=\"3.5\"/><circle cx=\"630\" cy=\"155\" r=\"3.5\"/><circle cx=\"750\" cy=\"75\" r=\"3.5\"/></g><path d=\"M750 75H830\" fill=\"none\" stroke=\"#475569\" stroke-width=\"4\" marker-end=\"url(#arr)\"/><defs><marker id=\"arr\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0 0L6 3L0 6Z\" fill=\"#475569\"/></marker></defs><g font-family=\"Arial\" font-size=\"13\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"480\" y=\"340\">0</text><text x=\"510\" y=\"340\">1</text><text x=\"560\" y=\"340\">3</text><text x=\"630\" y=\"340\">6</text><text x=\"750\" y=\"340\">12</text><text x=\"655\" y=\"370\">Time parked (hours)</text><text x=\"465\" y=\"319\">0</text><text x=\"465\" y=\"279\">5</text><text x=\"465\" y=\"239\">10</text><text x=\"465\" y=\"199\">15</text><text x=\"465\" y=\"159\">20</text><text x=\"465\" y=\"119\">25</text><text x=\"465\" y=\"79\">30</text><text x=\"445\" y=\"195\" transform=\"rotate(-90 445 195)\">Cost ($)</text></g></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "267",
+            "course": "Advanced",
+            "sourceQuestion": "Q42"
+          },
+          "keyPoints": [
+            {
+              "text": "33 171 households",
+              "note": "This is the total number of households in the census."
+            },
+            {
+              "text": "number of cars registered",
+              "note": "Use each car count with its frequency."
+            }
+          ]
         }
       ]
     },
