@@ -6775,6 +6775,678 @@
             "course": "Advanced",
             "sourceQuestion": "Q84"
           }
+        },
+        {
+          "id": "y12a-advanced-004-p207-q91",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Two particles P and Q start moving along the x-axis at time \\(t=0\\) and never meet. Particle P is initially at \\(x=4\\) and its velocity \\(v\\) at time \\(t\\) is given by \\(v=2t+4\\). The position of particle Q is \\(x=1+3\\log_e(t+1)\\). The diagram shows the graph of the position of Q.",
+          "hint": "Integrate P’s velocity and use its initial position. The midpoint is the mean of the two positions; differentiate its formula to find acceleration.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M55 250H445M100 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 220 C145 210 190 175 240 130 C300 75 360 45 420 35\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 245 C160 210 220 175 280 150 C340 130 385 115 420 105\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"3\"/><circle cx=\"100\" cy=\"220\" r=\"3\" fill=\"#4f46e5\"/><circle cx=\"100\" cy=\"245\" r=\"3\" fill=\"#16a34a\"/><text x=\"105\" y=\"213\">P(t)</text><text x=\"105\" y=\"263\">Q(t)</text><text x=\"95\" y=\"268\">0</text><text x=\"445\" y=\"255\">t</text><text x=\"105\" y=\"28\">position x</text></svg>"
+          },
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p207-q91-a",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find an expression for the position of P at time t.",
+              "options": [
+                "\\(t^2+4t+4\\)",
+                "\\(t^2+4t\\)",
+                "\\(2t^2+4t+4\\)",
+                "\\(t^2+2t+4\\)"
+              ],
+              "answer": 0,
+              "hint": "Velocity is the derivative of position. Integrate v=2t+4 and use P(0)=4.",
+              "steps": [
+                {
+                  "explain": "Integrate the velocity to get position plus a constant.",
+                  "work": "\\(x_P=\\int(2t+4)dt=t^2+4t+C\\)"
+                },
+                {
+                  "explain": "Initially P is at x=4, so substitute t=0 and xP=4.",
+                  "work": "\\(4=0+0+C\\Rightarrow C=4\\)"
+                },
+                {
+                  "explain": "Write the position function.",
+                  "work": "\\(\\boxed{x_P=t^2+4t+4}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "207",
+                "course": "Advanced",
+                "sourceQuestion": "Q91(a)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p207-q91-b",
+              "type": "review",
+              "manual": true,
+              "difficulty": "hard",
+              "stem": "Copy the diagram and, on the same axes, draw the graph of the function found in part (a).",
+              "answer": "The P graph is the upward-opening parabola xP=t²+4t+4, starting at (0,4). The given Q graph xQ=1+3ln(t+1) starts at (0,1) and rises more slowly, concave down.",
+              "hint": "Use t on the horizontal axis. Plot the initial values, then a few points from each formula. P curves upward; Q increases slowly and bends downward.",
+              "steps": [
+                {
+                  "explain": "For P, compute a few positions to plot: t=0,1,2 give 4,9,16.",
+                  "work": "\\(x_P(0)=4,\\quad x_P(1)=9,\\quad x_P(2)=16\\)"
+                },
+                {
+                  "explain": "For Q, the given function starts at 1 and increases logarithmically. Keep its curve below P; the particles never meet.",
+                  "work": "\\(x_Q(0)=1,\\quad x_Q=1+3\\ln(t+1)\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M55 250H445M100 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 220 C145 210 190 175 240 130 C300 75 360 45 420 35\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 245 C160 210 220 175 280 150 C340 130 385 115 420 105\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"3\"/><circle cx=\"100\" cy=\"220\" r=\"3\" fill=\"#4f46e5\"/><circle cx=\"100\" cy=\"245\" r=\"3\" fill=\"#16a34a\"/><text x=\"105\" y=\"213\">P(t)</text><text x=\"105\" y=\"263\">Q(t)</text><text x=\"95\" y=\"268\">0</text><text x=\"445\" y=\"255\">t</text><text x=\"105\" y=\"28\">position x</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "207",
+                "course": "Advanced",
+                "sourceQuestion": "Q91(b)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p207-q91-c",
+              "type": "review",
+              "manual": true,
+              "difficulty": "hard",
+              "stem": "P and Q are joined by an elastic string and M is the midpoint of the string. Show that the position of M at time t is \\(x=\\frac12[t^2+4t+3\\log_e(t+1)+5]\\).",
+              "answer": "The midpoint position is the average of the positions of P and Q.",
+              "hint": "Write xM=(xP+xQ)/2, substitute both position formulas and collect the terms.",
+              "steps": [
+                {
+                  "explain": "The midpoint lies halfway between the particle positions.",
+                  "work": "\\(x_M=\\frac{x_P+x_Q}{2}\\)"
+                },
+                {
+                  "explain": "Substitute xP=t²+4t+4 and xQ=1+3ln(t+1).",
+                  "work": "\\(x_M=\\frac12[(t^2+4t+4)+(1+3\\ln(t+1))]\\)"
+                },
+                {
+                  "explain": "Combine constants and use log_e(t+1)=ln(t+1).",
+                  "work": "\\(\\boxed{x_M=\\frac12[t^2+4t+3\\ln(t+1)+5]}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M55 250H445M100 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 220 C145 210 190 175 240 130 C300 75 360 45 420 35\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 245 C160 210 220 175 280 150 C340 130 385 115 420 105\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"3\"/><circle cx=\"100\" cy=\"220\" r=\"3\" fill=\"#4f46e5\"/><circle cx=\"100\" cy=\"245\" r=\"3\" fill=\"#16a34a\"/><text x=\"105\" y=\"213\">P(t)</text><text x=\"105\" y=\"263\">Q(t)</text><text x=\"95\" y=\"268\">0</text><text x=\"445\" y=\"255\">t</text><text x=\"105\" y=\"28\">position x</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "207",
+                "course": "Advanced",
+                "sourceQuestion": "Q91(c)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p207-q91-d",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the time at which the acceleration of M is zero.",
+              "options": [
+                "\\(\\frac{\\sqrt6}{2}-1\\)",
+                "\\(\\sqrt{\\frac32}+1\\)",
+                "\\(\\frac12\\)",
+                "\\(1\\)"
+              ],
+              "answer": 0,
+              "hint": "Differentiate the midpoint position twice, then solve xM″=0 for t≥0.",
+              "steps": [
+                {
+                  "explain": "Differentiate the midpoint position once to find velocity.",
+                  "work": "\\(v_M=\\frac12[2t+4+\\frac3{t+1}]=t+2+\\frac{3}{2(t+1)}\\)"
+                },
+                {
+                  "explain": "Differentiate again to find acceleration.",
+                  "work": "\\(a_M=1-\\frac{3}{2(t+1)^2}\\)"
+                },
+                {
+                  "explain": "Set acceleration to zero and keep the nonnegative time solution.",
+                  "work": "\\(1=\\frac{3}{2(t+1)^2}\\Rightarrow(t+1)^2=\\frac32\\Rightarrow t=\\sqrt{\\frac32}-1=\\boxed{\\frac{\\sqrt6}{2}-1}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "207",
+                "course": "Advanced",
+                "sourceQuestion": "Q91(d)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p207-q91-e",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the minimum distance between P and Q.",
+              "options": [
+                "\\(3\\)",
+                "\\(1\\)",
+                "\\(4\\)",
+                "\\(0\\)"
+              ],
+              "answer": 0,
+              "hint": "Subtract Q position from P position. Check whether the separation increases for t≥0.",
+              "steps": [
+                {
+                  "explain": "Form the separation; the particles never meet, so it stays positive.",
+                  "work": "\\(D=x_P-x_Q=t^2+4t+3-3\\ln(t+1)\\)"
+                },
+                {
+                  "explain": "Differentiate the separation. For t≥0, its derivative is positive because 2t+4≥4 while 3/(t+1)≤3.",
+                  "work": "\\(D\\'=2t+4-\\frac3{t+1}>0\\quad(t\\\\ge0)\\)"
+                },
+                {
+                  "explain": "So the smallest separation is at t=0.",
+                  "work": "\\(D(0)=4-1=\\boxed{3}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "207",
+                "course": "Advanced",
+                "sourceQuestion": "Q91(e)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "207",
+            "course": "Advanced",
+            "sourceQuestion": "Q91"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p207-q92",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(\\displaystyle\\int_0^{\\pi/2}\\sin2x\\,dx\\).",
+          "options": [
+            "\\(1\\)",
+            "\\(2\\)",
+            "\\(\\frac12\\)",
+            "\\(0\\)"
+          ],
+          "answer": 0,
+          "hint": "An antiderivative is −½cos2x.",
+          "steps": [
+            {
+              "explain": "Integrate using the reverse chain rule.",
+              "work": "\\(\\int\\sin2x\\,dx=-\\frac12\\cos2x+C\\)"
+            },
+            {
+              "explain": "Evaluate at π/2 and at 0.",
+              "work": "\\([-\\frac12\\cos2x]_0^{\\pi/2}=-\\frac12\\cos\\pi+\\frac12\\cos0=\\boxed1\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "207",
+            "course": "Advanced",
+            "sourceQuestion": "Q92"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p207-q93",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The diagram shows the graphs of \\(y=\\frac4x\\) and \\(y=5-x\\). The graphs intersect at A and B as shown.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M45 230H445M95 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M115 65L405 220\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M115 65 C160 105 220 155 270 183 C320 205 365 218 405 220\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M115 65 L405 220 C340 217 310 205 270 183 C220 155 160 105 115 65Z\" fill=\"#fde68a\" opacity=\".5\"/><circle cx=\"115\" cy=\"65\" r=\"3\" fill=\"#334155\"/><circle cx=\"405\" cy=\"220\" r=\"3\" fill=\"#334155\"/><text x=\"105\" y=\"55\">A</text><text x=\"409\" y=\"220\">B</text><text x=\"135\" y=\"220\">y=5−x</text><text x=\"280\" y=\"204\">y=4/x</text><text x=\"445\" y=\"235\">x</text><text x=\"98\" y=\"28\">y</text></svg>"
+          },
+          "hint": "Set 4/x equal to 5−x to find the intersection x-values. Integrate the upper line minus the lower curve between them.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p207-q93-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the x-coordinates of A and B.",
+              "options": [
+                "\\(1,\\ 4\\)",
+                "\\(2,\\ 3\\)",
+                "\\(0,\\ 5\\)",
+                "\\(-1,\\ 4\\)"
+              ],
+              "answer": 0,
+              "hint": "Solve 4/x=5−x; multiply by x and factor.",
+              "steps": [
+                {
+                  "explain": "Equate the two function values.",
+                  "work": "\\(\\frac4x=5-x\\Rightarrow x^2-5x+4=0\\)"
+                },
+                {
+                  "explain": "Factor to find both positive intersections.",
+                  "work": "\\((x-1)(x-4)=0\\Rightarrow\\boxed{x=1,\\ 4}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M45 230H445M95 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M115 65L405 220\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M115 65 C160 105 220 155 270 183 C320 205 365 218 405 220\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M115 65 L405 220 C340 217 310 205 270 183 C220 155 160 105 115 65Z\" fill=\"#fde68a\" opacity=\".5\"/><circle cx=\"115\" cy=\"65\" r=\"3\" fill=\"#334155\"/><circle cx=\"405\" cy=\"220\" r=\"3\" fill=\"#334155\"/><text x=\"105\" y=\"55\">A</text><text x=\"409\" y=\"220\">B</text><text x=\"135\" y=\"220\">y=5−x</text><text x=\"280\" y=\"204\">y=4/x</text><text x=\"445\" y=\"235\">x</text><text x=\"98\" y=\"28\">y</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "207",
+                "course": "Advanced",
+                "sourceQuestion": "Q93(i)"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M45 230H445M95 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M115 65L405 220\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M115 65 C160 105 220 155 270 183 C320 205 365 218 405 220\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M115 65 L405 220 C340 217 310 205 270 183 C220 155 160 105 115 65Z\" fill=\"#fde68a\" opacity=\".5\"/><circle cx=\"115\" cy=\"65\" r=\"3\" fill=\"#334155\"/><circle cx=\"405\" cy=\"220\" r=\"3\" fill=\"#334155\"/><text x=\"105\" y=\"55\">A</text><text x=\"409\" y=\"220\">B</text><text x=\"135\" y=\"220\">y=5−x</text><text x=\"280\" y=\"204\">y=4/x</text><text x=\"445\" y=\"235\">x</text><text x=\"98\" y=\"28\">y</text></svg>"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p207-q93-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the area of the shaded region between the graphs.",
+              "options": [
+                "\\(\\frac{15}{2}-8\\ln2\\)",
+                "\\(8\\ln2-\\frac{15}{2}\\)",
+                "\\(\\frac{15}{2}-4\\ln2\\)",
+                "\\(4\\ln2\\)"
+              ],
+              "answer": 0,
+              "hint": "Between x=1 and x=4, y=5−x is above y=4/x. Integrate their difference.",
+              "steps": [
+                {
+                  "explain": "Set up line minus curve between the intersections.",
+                  "work": "\\(A=\\int_1^4(5-x-\\frac4x)dx\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M45 230H445M95 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M115 65L405 220\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M115 65 C160 105 220 155 270 183 C320 205 365 218 405 220\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M115 65 L405 220 C340 217 310 205 270 183 C220 155 160 105 115 65Z\" fill=\"#fde68a\" opacity=\".5\"/><circle cx=\"115\" cy=\"65\" r=\"3\" fill=\"#334155\"/><circle cx=\"405\" cy=\"220\" r=\"3\" fill=\"#334155\"/><text x=\"105\" y=\"55\">A</text><text x=\"409\" y=\"220\">B</text><text x=\"135\" y=\"220\">y=5−x</text><text x=\"280\" y=\"204\">y=4/x</text><text x=\"445\" y=\"235\">x</text><text x=\"98\" y=\"28\">y</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Integrate each term.",
+                  "work": "\\(F(x)=5x-\\frac{x^2}{2}-4\\ln x\\)"
+                },
+                {
+                  "explain": "Evaluate at 4 and 1, using ln1=0 and ln4=2ln2.",
+                  "work": "\\(A=[F]_1^4=\\frac{15}{2}-4\\ln4=\\boxed{\\frac{15}{2}-8\\ln2}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "207",
+                "course": "Advanced",
+                "sourceQuestion": "Q93(ii)"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M45 230H445M95 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M115 65L405 220\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M115 65 C160 105 220 155 270 183 C320 205 365 218 405 220\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M115 65 L405 220 C340 217 310 205 270 183 C220 155 160 105 115 65Z\" fill=\"#fde68a\" opacity=\".5\"/><circle cx=\"115\" cy=\"65\" r=\"3\" fill=\"#334155\"/><circle cx=\"405\" cy=\"220\" r=\"3\" fill=\"#334155\"/><text x=\"105\" y=\"55\">A</text><text x=\"409\" y=\"220\">B</text><text x=\"135\" y=\"220\">y=5−x</text><text x=\"280\" y=\"204\">y=4/x</text><text x=\"445\" y=\"235\">x</text><text x=\"98\" y=\"28\">y</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "207",
+            "course": "Advanced",
+            "sourceQuestion": "Q93"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p207-q94",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A particle is observed as it moves in a straight line between t=0 and t=10. Its velocity v at time t is shown on the graph.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M50 180H445M80 270V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M80 180 C115 178 130 80 180 55 C220 35 245 65 275 110 C305 150 320 180 350 180 C380 180 390 205 415 205 C435 205 440 180 445 180\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><circle cx=\"205\" cy=\"50\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"415\" cy=\"205\" r=\"4\" fill=\"#f59e0b\"/><path d=\"M350 180V187M445 180V187\" stroke=\"#64748b\"/><text x=\"75\" y=\"202\">0</text><text x=\"345\" y=\"202\">7</text><text x=\"438\" y=\"202\">10</text><text x=\"445\" y=\"185\">t</text><text x=\"83\" y=\"32\">v</text><text x=\"188\" y=\"39\">Z</text><text x=\"408\" y=\"228\">Z</text><text x=\"135\" y=\"110\">G</text></svg>"
+          },
+          "hint": "Acceleration is the slope of the velocity graph. Z marks a turning point of v; the greatest acceleration is where the graph rises most steeply. Compare signed areas for the rest times.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p207-q94-i",
+              "type": "review",
+              "manual": true,
+              "difficulty": "hard",
+              "stem": "On the time axis, mark and clearly label with Z the times when the acceleration of the particle is zero.",
+              "answer": "At the local maximum of v (about t=3) and local minimum (about t=8.5), the velocity graph has horizontal tangents, so a=dv/dt=0.",
+              "hint": "Acceleration is the gradient of the velocity-time graph. It is zero where the velocity graph has a horizontal tangent.",
+              "steps": [
+                {
+                  "explain": "Locate the local maximum and local minimum of the velocity curve. At both points its tangent is horizontal.",
+                  "work": "\\(a=\\frac{dv}{dt}=0\\text{ at the turning points of }v\\)"
+                },
+                {
+                  "explain": "Mark these two approximate times on the t-axis.",
+                  "work": "\\(Z\\approx3,\\quad Z\\approx8.5\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M50 180H445M80 270V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M80 180 C115 178 130 80 180 55 C220 35 245 65 275 110 C305 150 320 180 350 180 C380 180 390 205 415 205 C435 205 440 180 445 180\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><circle cx=\"205\" cy=\"50\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"415\" cy=\"205\" r=\"4\" fill=\"#f59e0b\"/><path d=\"M350 180V187M445 180V187\" stroke=\"#64748b\"/><text x=\"75\" y=\"202\">0</text><text x=\"345\" y=\"202\">7</text><text x=\"438\" y=\"202\">10</text><text x=\"445\" y=\"185\">t</text><text x=\"83\" y=\"32\">v</text><text x=\"188\" y=\"39\">Z</text><text x=\"408\" y=\"228\">Z</text><text x=\"135\" y=\"110\">G</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "207",
+                "course": "Advanced",
+                "sourceQuestion": "Q94(i)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p207-q94-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "On the time axis, mark and clearly label with G the time when the acceleration is greatest.",
+              "options": [
+                "\\(t\\approx2\\)",
+                "\\(t\\approx3\\)",
+                "\\(t=7\\)",
+                "\\(t\\approx8.5\\)"
+              ],
+              "answer": 0,
+              "hint": "The greatest acceleration is the steepest positive slope on the velocity graph.",
+              "steps": [
+                {
+                  "explain": "Acceleration equals the slope of the v-versus-t graph. Compare how steeply the curve rises at different times.",
+                  "work": "\\(a=\\frac{dv}{dt}\\)"
+                },
+                {
+                  "explain": "The steepest upward section occurs on the rising part before the velocity maximum. Mark G there.",
+                  "work": "\\(\\boxed{G\\text{ at about }t=2}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M50 180H445M80 270V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M80 180 C115 178 130 80 180 55 C220 35 245 65 275 110 C305 150 320 180 350 180 C380 180 390 205 415 205 C435 205 440 180 445 180\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><circle cx=\"205\" cy=\"50\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"415\" cy=\"205\" r=\"4\" fill=\"#f59e0b\"/><path d=\"M350 180V187M445 180V187\" stroke=\"#64748b\"/><text x=\"75\" y=\"202\">0</text><text x=\"345\" y=\"202\">7</text><text x=\"438\" y=\"202\">10</text><text x=\"445\" y=\"185\">t</text><text x=\"83\" y=\"32\">v</text><text x=\"188\" y=\"39\">Z</text><text x=\"408\" y=\"228\">Z</text><text x=\"135\" y=\"110\">G</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "207",
+                "course": "Advanced",
+                "sourceQuestion": "Q94(ii)"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M50 180H445M80 270V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M80 180 C115 178 130 80 180 55 C220 35 245 65 275 110 C305 150 320 180 350 180 C380 180 390 205 415 205 C435 205 440 180 445 180\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><circle cx=\"205\" cy=\"50\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"415\" cy=\"205\" r=\"4\" fill=\"#f59e0b\"/><path d=\"M350 180V187M445 180V187\" stroke=\"#64748b\"/><text x=\"75\" y=\"202\">0</text><text x=\"345\" y=\"202\">7</text><text x=\"438\" y=\"202\">10</text><text x=\"445\" y=\"185\">t</text><text x=\"83\" y=\"32\">v</text><text x=\"188\" y=\"39\">Z</text><text x=\"408\" y=\"228\">Z</text><text x=\"135\" y=\"110\">G</text></svg>"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p207-q94-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The particle is at rest at t=0, t=7 and t=10. At which of these times is it furthest from its initial position?",
+              "options": [
+                "\\(t=7\\)",
+                "\\(t=0\\)",
+                "\\(t=10\\)",
+                "\\(t=0\\text{ and }10\\)"
+              ],
+              "answer": 0,
+              "hint": "Displacement is the signed area under the velocity curve. Compare the large positive area before t=7 with the smaller negative area after t=7.",
+              "steps": [
+                {
+                  "explain": "From 0 to 7 velocity is positive, so the particle moves in the positive direction and its displacement grows.",
+                  "work": "\\(x(7)-x(0)=\\int_0^7v(t)dt>0\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M50 180H445M80 270V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M80 180 C115 178 130 80 180 55 C220 35 245 65 275 110 C305 150 320 180 350 180 C380 180 390 205 415 205 C435 205 440 180 445 180\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><circle cx=\"205\" cy=\"50\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"415\" cy=\"205\" r=\"4\" fill=\"#f59e0b\"/><path d=\"M350 180V187M445 180V187\" stroke=\"#64748b\"/><text x=\"75\" y=\"202\">0</text><text x=\"345\" y=\"202\">7</text><text x=\"438\" y=\"202\">10</text><text x=\"445\" y=\"185\">t</text><text x=\"83\" y=\"32\">v</text><text x=\"188\" y=\"39\">Z</text><text x=\"408\" y=\"228\">Z</text><text x=\"135\" y=\"110\">G</text></svg>"
+                  }
+                },
+                {
+                  "explain": "From 7 to 10 velocity is negative, so the particle moves back, but the negative area is smaller than the positive area accumulated before t=7. It does not return to its initial position.",
+                  "work": "\\(\\int_0^{10}v(t)dt>0,\\quad |x(7)-x(0)|>|x(10)-x(0)|\\)"
+                },
+                {
+                  "explain": "At t=0 the displacement is zero. Therefore the greatest distance from the starting position occurs at t=7.",
+                  "work": "\\(\\boxed{t=7}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "207",
+                "course": "Advanced",
+                "sourceQuestion": "Q94(iii)"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M50 180H445M80 270V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M80 180 C115 178 130 80 180 55 C220 35 245 65 275 110 C305 150 320 180 350 180 C380 180 390 205 415 205 C435 205 440 180 445 180\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><circle cx=\"205\" cy=\"50\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"415\" cy=\"205\" r=\"4\" fill=\"#f59e0b\"/><path d=\"M350 180V187M445 180V187\" stroke=\"#64748b\"/><text x=\"75\" y=\"202\">0</text><text x=\"345\" y=\"202\">7</text><text x=\"438\" y=\"202\">10</text><text x=\"445\" y=\"185\">t</text><text x=\"83\" y=\"32\">v</text><text x=\"188\" y=\"39\">Z</text><text x=\"408\" y=\"228\">Z</text><text x=\"135\" y=\"110\">G</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "207",
+            "course": "Advanced",
+            "sourceQuestion": "Q94"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p207-q95",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find \\(\\displaystyle\\int_1^9(1+\\sqrt{x})\\,dx\\).",
+          "options": [
+            "\\(\\frac{76}{3}\\)",
+            "\\(24\\)",
+            "\\(\\frac{80}{3}\\)",
+            "\\(28\\)"
+          ],
+          "answer": 0,
+          "hint": "Rewrite √x as x^(1/2) and integrate using the power rule.",
+          "steps": [
+            {
+              "explain": "Integrate 1 and x^(1/2) separately.",
+              "work": "\\(\\int(1+\\sqrt{x})dx=x+\\frac23x^{3/2}+C\\)"
+            },
+            {
+              "explain": "Evaluate at 9 and subtract the value at 1.",
+              "work": "\\([x+\\frac23x^{3/2}]_1^9=(9+18)-(1+\\frac23)=\\boxed{\\frac{76}{3}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "207",
+            "course": "Advanced",
+            "sourceQuestion": "Q95"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p207-q96",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given that \\(\\frac{d}{dx}(e^{x^2})=2xe^{x^2}\\), evaluate \\(\\displaystyle\\int_0^1xe^{x^2}\\,dx\\).",
+          "options": [
+            "\\(\\frac{e-1}{2}\\)",
+            "\\(e-1\\)",
+            "\\(\\frac e2\\)",
+            "\\(\\frac{e^2-1}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "The integrand is half the derivative of e^(x²).",
+          "steps": [
+            {
+              "explain": "Compare the given derivative with the integrand.",
+              "work": "\\(xe^{x^2}=\\frac12\\frac{d}{dx}(e^{x^2})\\)"
+            },
+            {
+              "explain": "Integrate and use the limits 0 and 1.",
+              "work": "\\(\\int_0^1xe^{x^2}dx=\\frac12[e^{x^2}]_0^1=\\boxed{\\frac{e-1}{2}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "207",
+            "course": "Advanced",
+            "sourceQuestion": "Q96"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p207-q97",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "i Prove that the line \\(y=x+2\\) is a tangent to the parabola \\(y=x^2-5x+11\\). ii Let Q be the point where the line touches the parabola. Show that the normal to the parabola at Q is \\(y=-x+8\\). iii Find the area of the region enclosed between the parabola and the line \\(y=-x+8\\).",
+          "hint": "For tangency, solve the intersection equation and check for a repeated root. The tangent slope comes from the derivative; the normal slope is its negative reciprocal.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p207-q97-i",
+              "type": "review",
+              "manual": true,
+              "difficulty": "hard",
+              "stem": "Prove that y=x+2 is tangent to y=x²−5x+11.",
+              "answer": "The intersection equation has a repeated root x=3, so the line touches the parabola there.",
+              "hint": "Set the two formulas equal. A repeated root means one point of contact.",
+              "steps": [
+                {
+                  "explain": "Equate the line and parabola.",
+                  "work": "\\(x+2=x^2-5x+11\\Rightarrow x^2-6x+9=0\\)"
+                },
+                {
+                  "explain": "Factor the perfect square.",
+                  "work": "\\((x-3)^2=0\\Rightarrow x=3\\text{ is a repeated root}\\)"
+                },
+                {
+                  "explain": "There is one intersection point, so the line is tangent. Its contact point is (3,5).",
+                  "work": "\\(y=3+2=5\\Rightarrow Q=(3,5)\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "207",
+                "course": "Advanced",
+                "sourceQuestion": "Q97(i)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p207-q97-ii",
+              "type": "review",
+              "manual": true,
+              "difficulty": "hard",
+              "stem": "Show that the normal to the parabola at Q is y=−x+8.",
+              "answer": "At x=3 the tangent gradient is 1, so the normal gradient is −1; through (3,5), its equation is y=−x+8.",
+              "hint": "Differentiate the parabola for its tangent gradient at Q. The normal is perpendicular, so its gradient is −1.",
+              "steps": [
+                {
+                  "explain": "Differentiate y=x²−5x+11.",
+                  "work": "\\(\\frac{dy}{dx}=2x-5\\)"
+                },
+                {
+                  "explain": "At x=3 the tangent gradient is 1. The perpendicular normal gradient is −1.",
+                  "work": "\\(m_{\\text{tangent}}=2(3)-5=1,\\quad m_{\\text{normal}}=-1\\)"
+                },
+                {
+                  "explain": "Use point-slope form through Q=(3,5).",
+                  "work": "\\(y-5=-(x-3)\\Rightarrow\\boxed{y=-x+8}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "207",
+                "course": "Advanced",
+                "sourceQuestion": "Q97(ii)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p207-q97-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the area enclosed between the parabola and the normal y=−x+8.",
+              "options": [
+                "\\(\\frac43\\)",
+                "\\(\\frac23\\)",
+                "\\(4\\)",
+                "\\(\\frac83\\)"
+              ],
+              "answer": 0,
+              "hint": "Find both intersections, then integrate the upper line minus the lower parabola.",
+              "steps": [
+                {
+                  "explain": "Equate the normal and parabola to find the interval endpoints.",
+                  "work": "\\(-x+8=x^2-5x+11\\Rightarrow x^2-4x+3=0\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M45 220H445M100 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M155 75L335 220\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M155 220 Q245 290 335 220\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M155 75L335 220 Q245 290 155 220Z\" fill=\"#fde68a\" opacity=\".5\"/><text x=\"150\" y=\"240\">1</text><text x=\"330\" y=\"240\">3</text><text x=\"445\" y=\"225\">x</text><text x=\"104\" y=\"28\">y</text></svg>"
+                  }
+                },
+                {
+                  "explain": "The roots are 1 and 3. On this interval the normal line is above the parabola.",
+                  "work": "\\((x-1)(x-3)=0\\Rightarrow x=1,3\\)"
+                },
+                {
+                  "explain": "Integrate line minus parabola.",
+                  "work": "\\(A=\\int_1^3[(-x+8)-(x^2-5x+11)]dx=\\int_1^3(-x^2+4x-3)dx\\)"
+                },
+                {
+                  "explain": "An antiderivative is −x³/3+2x²−3x. Evaluate at 3 and 1.",
+                  "work": "\\(A=0-(-\\frac43)=\\boxed{\\frac43}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "207",
+                "course": "Advanced",
+                "sourceQuestion": "Q97(iii)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "207",
+            "course": "Advanced",
+            "sourceQuestion": "Q97"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p207-q98",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(\\displaystyle\\int_0^{\\pi/2}\\sin2x\\,dx\\).",
+          "options": [
+            "\\(1\\)",
+            "\\(2\\)",
+            "\\(\\frac12\\)",
+            "\\(0\\)"
+          ],
+          "answer": 0,
+          "hint": "Use −½cos2x as the antiderivative.",
+          "steps": [
+            {
+              "explain": "Integrate by reverse chain rule.",
+              "work": "\\(\\int\\sin2x\\,dx=-\\frac12\\cos2x+C\\)"
+            },
+            {
+              "explain": "Evaluate at both limits.",
+              "work": "\\([-\\frac12\\cos2x]_0^{\\pi/2}=1\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "207",
+            "course": "Advanced",
+            "sourceQuestion": "Q98"
+          }
         }
       ]
     },
