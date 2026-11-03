@@ -1528,6 +1528,42 @@
             "course": "Advanced",
             "sourceQuestion": "41"
           }
+        },
+        {
+          "id": "y12a-advanced-003-app-q11",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A particle is moving along a straight line with displacement \\(x\\) at time \\(t\\). The particle is stationary when \\(t=11\\) and when \\(t=13\\). Which of the following MUST be true?",
+          "options": [
+            "The particle changes direction at some time between \\(t=11\\) and \\(t=13\\).",
+            "The displacement function has a stationary point at some time between \\(t=11\\) and \\(t=13\\).",
+            "The acceleration is zero at some time between \\(t=11\\) and \\(t=13\\).",
+            "The acceleration function has a stationary point at some time between \\(t=11\\) and \\(t=13\\)."
+          ],
+          "answer": 2,
+          "hint": "Consider the velocity at the two times, then apply Rolle’s theorem to the velocity function between them.",
+          "steps": [
+            {
+              "explain": "“Stationary” means the velocity is zero at both stated times.",
+              "work": "\\(v(11)=0,\\qquad v(13)=0\\)"
+            },
+            {
+              "explain": "The velocity has equal values at the ends of this interval. Since it is differentiable, Rolle’s theorem says its derivative is zero somewhere between 11 and 13.",
+              "work": "\\(\\exists c\\in(11,13):v\\prime(c)=0\\)"
+            },
+            {
+              "explain": "The derivative of velocity is acceleration. So the acceleration must be zero at some time in the interval.",
+              "work": "\\(v\\prime(t)=a(t)\\Rightarrow\\boxed{a(c)=0\\text{ for some }11<c<13}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 003",
+            "course": "Advanced",
+            "sourceQuestion": "Q10, 2019 HSC",
+            "page": "143"
+          }
         }
       ]
     },

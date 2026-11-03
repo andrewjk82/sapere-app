@@ -6631,6 +6631,114 @@
             "course": "Advanced",
             "sourceQuestion": "q36"
           }
+        },
+        {
+          "id": "y12a-advanced-003-app-q53",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the equation of the tangent to \\(y=\\ln x\\) at the point \\((e,1)\\).",
+          "options": [
+            "\\(y=\\frac{x}{e}\\)",
+            "\\(y=ex\\)",
+            "\\(y-1=e(x-e)\\)",
+            "\\(y=\\ln x+1\\)"
+          ],
+          "answer": 0,
+          "hint": "The derivative gives the tangent gradient. Then use the given point \\((e,1)\\) in point-slope form.",
+          "steps": [
+            {
+              "explain": "Differentiate ln x to find the gradient function.",
+              "work": "\\(y\\prime=\\frac1x\\)"
+            },
+            {
+              "explain": "At x=e, the gradient is 1/e.",
+              "work": "\\(m=y\\prime(e)=\\frac1e\\)"
+            },
+            {
+              "explain": "Use the point (e,1) in the line equation and simplify.",
+              "work": "\\(y-1=\\frac1e(x-e)\\Rightarrow y-1=\\frac xe-1\\Rightarrow\\boxed{y=\\frac xe}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 003",
+            "page": "150",
+            "course": "Advanced",
+            "sourceQuestion": "Q2d, 2005 HSC"
+          }
+        },
+        {
+          "id": "y12a-advanced-003-app-q62",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the equation of the normal to the curve \\(y=2\\ln x\\) at the point \\((e,2)\\).",
+          "options": [
+            "\\(y-2=-\\frac e2(x-e)\\)",
+            "\\(y-2=\\frac2e(x-e)\\)",
+            "\\(y-2=\\frac e2(x-e)\\)",
+            "\\(y=2x\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the tangent gradient at x=e. The normal gradient is the negative reciprocal of that tangent gradient.",
+          "steps": [
+            {
+              "explain": "Differentiate the curve.",
+              "work": "\\(y\\prime=\\frac2x\\)"
+            },
+            {
+              "explain": "At x=e, the tangent gradient is 2/e, so the perpendicular normal gradient is −e/2.",
+              "work": "\\(m_{\\text{tangent}}=\\frac2e,\\qquad m_{\\text{normal}}=-\\frac e2\\)"
+            },
+            {
+              "explain": "Use point-slope form through the given point (e,2).",
+              "work": "\\(\\boxed{y-2=-\\frac e2(x-e)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 003",
+            "page": "151",
+            "course": "Advanced",
+            "sourceQuestion": "Q2a, 2003 HSC"
+          }
+        },
+        {
+          "id": "y12a-advanced-003-app-q73",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the equation of the tangent to the curve \\(y=2\\ln x\\) at \\((1,0)\\).",
+          "options": [
+            "\\(y=2x-2\\)",
+            "\\(y=\\frac12x-\\frac12\\)",
+            "\\(y=2x+2\\)",
+            "\\(y=\\ln(2x)\\)"
+          ],
+          "answer": 0,
+          "hint": "Differentiate \\(2\\ln x\\), evaluate its gradient at x=1, and use the point (1,0).",
+          "steps": [
+            {
+              "explain": "Differentiate the curve.",
+              "work": "\\(y\\prime=\\frac2x\\)"
+            },
+            {
+              "explain": "At x=1, the point is (1,0) and the tangent gradient is 2.",
+              "work": "\\(y\\prime(1)=2\\)"
+            },
+            {
+              "explain": "Use point-slope form.",
+              "work": "\\(y-0=2(x-1)\\Rightarrow\\boxed{y=2x-2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 003",
+            "page": "153",
+            "course": "Advanced",
+            "sourceQuestion": "Q3d, 2000 HSC"
+          }
         }
       ]
     },
@@ -10372,7 +10480,7 @@
           "timeLimit": 300
         },
         {
-          "id": "y12a-advanced-003-app-y12a-advanced-003-app-q05",
+          "id": "y12a-advanced-003-app-q05",
           "type": "mc",
           "difficulty": "hard",
           "stem": "A population, P, which is initially 5000, varies according to P = 5000b^(−t/10), where b is a positive constant and t is time in years, t ≥ 0. The population is 1250 after 20 years. Find the value of t, correct to one decimal place, for which the instantaneous rate of decrease is 30 people per year.",
@@ -10425,6 +10533,88 @@
             "page": "142-143, 156-157",
             "course": "Advanced",
             "sourceQuestion": "y12a"
+          }
+        },
+        {
+          "id": "y12a-advanced-003-app-q09",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "The diagram shows the graph of \\(y=c\\ln x\\), \\(c>0\\).",
+          "hint": "Use the derivative for the tangent gradient at \\(x=p\\). Then use the gradient and the condition that the tangent passes through the origin.",
+          "parts": [
+            {
+              "id": "y12a-advanced-003-app-q09-a",
+              "type": "review",
+              "manual": true,
+              "difficulty": "medium",
+              "stem": "Show that the equation of the tangent to \\(y=c\\ln x\\) at \\(x=p\\), where \\(p>0\\), is \\(y=\\frac{c}{p}x-c+c\\ln p\\).",
+              "hint": "Differentiate \\(c\\ln x\\), then use the point \\((p,c\\ln p)\\) in point-slope form.",
+              "steps": [
+                {
+                  "explain": "Differentiate to get the tangent gradient at x=p.",
+                  "work": "\\(y\\prime=\\frac{c}{x}\\Rightarrow m=\\frac{c}{p}\\)"
+                },
+                {
+                  "explain": "The point on the curve at x=p is (p,c ln p). Substitute this point and the gradient in the point-slope formula.",
+                  "work": "\\(y-c\\ln p=\\frac{c}{p}(x-p)\\)"
+                },
+                {
+                  "explain": "Expand the right-hand side and isolate y.",
+                  "work": "\\(y-c\\ln p=\\frac{c}{p}x-c\\Rightarrow y=\\frac{c}{p}x-c+c\\ln p\\)"
+                },
+                {
+                  "explain": "This is the required tangent equation.",
+                  "work": "\\(\\boxed{y=\\frac{c}{p}x-c+c\\ln p}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "answer": "\\(y=\\frac{c}{p}x-c+c\\ln p\\)"
+            },
+            {
+              "id": "y12a-advanced-003-app-q09-b",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "Find the value of \\(c\\) such that the tangent from part (a) has gradient \\(1\\) and passes through the origin.",
+              "options": [
+                "\\(c=e\\)",
+                "\\(c=1\\)",
+                "\\(c=\\ln 2\\)",
+                "\\(c=2\\)"
+              ],
+              "answer": 0,
+              "hint": "Set the tangent gradient \\(c/p\\) equal to 1. Then set the tangent intercept equal to 0.",
+              "steps": [
+                {
+                  "explain": "For the tangent to pass through the origin, its y-intercept must be zero. For its gradient to be 1, c/p=1.",
+                  "work": "\\(\\frac{c}{p}=1\\Rightarrow c=p,\\qquad -c+c\\ln p=0\\)"
+                },
+                {
+                  "explain": "Since c>0, divide the intercept equation by c. This gives ln p=1.",
+                  "work": "\\(\\ln p=1\\Rightarrow p=e\\)"
+                },
+                {
+                  "explain": "Use c=p from the gradient condition.",
+                  "work": "\\(\\boxed{c=e}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 003",
+                "course": "Advanced",
+                "sourceQuestion": "Q29, 2020 HSC",
+                "page": "143"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 003",
+            "page": "143",
+            "course": "Advanced",
+            "sourceQuestion": "Q29, 2020 HSC"
           }
         }
       ]

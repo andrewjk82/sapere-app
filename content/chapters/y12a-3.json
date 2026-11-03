@@ -46,6 +46,167 @@
             "grade": "12"
           },
           "xp": 2
+        },
+        {
+          "id": "y12a-advanced-004-p196-q07",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "Kenzo has a solar-powered phone charger. Its power, \\(P\\), can be modelled by \\(P(t)=400\\sin\\left(\\frac{\\pi t}{12}\\right)\\), \\(0\\le t\\le12\\), where \\(t\\) is the number of hours after sunrise.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 240\"><rect width=\"440\" height=\"240\" fill=\"white\"/><path d=\"M50 200H400M55 215V25\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M55 200 C105 200 115 70 225 70 C335 70 345 200 395 200\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><circle cx=\"225\" cy=\"70\" r=\"4\" fill=\"#f59e0b\"/><text x=\"217\" y=\"55\" font-family=\"Arial\" font-size=\"14\">400</text><text x=\"50\" y=\"220\" font-family=\"Arial\" font-size=\"13\">0</text><text x=\"220\" y=\"220\" font-family=\"Arial\" font-size=\"13\">6</text><text x=\"386\" y=\"220\" font-family=\"Arial\" font-size=\"13\">12</text><text x=\"405\" y=\"204\" font-family=\"Arial\" font-size=\"14\">t</text><text x=\"32\" y=\"22\" font-family=\"Arial\" font-size=\"14\">P</text></svg>"
+          },
+          "hint": "The power curve is a half-sine wave over 12 hours. Energy is the area under the power graph; use the antiderivative and match the starting and ending times.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p196-q07-a",
+              "type": "review",
+              "manual": true,
+              "difficulty": "medium",
+              "stem": "Sketch the graph of \\(P\\) for \\(0\\le t\\le12\\).",
+              "answer": "A half-sine curve starting at (0,0), reaching its maximum 400 at t=6, and returning to (12,0).",
+              "hint": "Use the endpoints of the interval and the sine maximum at angle π/2 to plot the key points.",
+              "steps": [
+                {
+                  "explain": "At t=0 and t=12, the sine is zero, so power is zero at sunrise and after 12 hours.",
+                  "work": "\\(P(0)=400\\sin0=0,\\quad P(12)=400\\sin\\pi=0\\)"
+                },
+                {
+                  "explain": "The sine reaches its maximum 1 when πt/12=π/2, which gives t=6. Thus the peak power is 400.",
+                  "work": "\\(\\frac{\\pi t}{12}=\\frac\\pi2\\Rightarrow t=6,\\quad P(6)=400\\)"
+                },
+                {
+                  "explain": "Draw a smooth half-sine curve through these points. Power rises to 400 and then falls back to zero.",
+                  "work": "\\((0,0),\\quad(6,400),\\quad(12,0)\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 240\"><rect width=\"440\" height=\"240\" fill=\"white\"/><path d=\"M50 200H400M55 215V25\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M55 200 C105 200 115 70 225 70 C335 70 345 200 395 200\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><circle cx=\"225\" cy=\"70\" r=\"4\" fill=\"#f59e0b\"/><text x=\"217\" y=\"55\" font-family=\"Arial\" font-size=\"14\">400</text><text x=\"50\" y=\"220\" font-family=\"Arial\" font-size=\"13\">0</text><text x=\"220\" y=\"220\" font-family=\"Arial\" font-size=\"13\">6</text><text x=\"386\" y=\"220\" font-family=\"Arial\" font-size=\"13\">12</text><text x=\"405\" y=\"204\" font-family=\"Arial\" font-size=\"14\">t</text><text x=\"32\" y=\"22\" font-family=\"Arial\" font-size=\"14\">P</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "196",
+                "course": "Advanced",
+                "sourceQuestion": "Q27, 2021 HSC"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 240\"><rect width=\"440\" height=\"240\" fill=\"white\"/><path d=\"M50 200H400M55 215V25\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M55 200 C105 200 115 70 225 70 C335 70 345 200 395 200\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><circle cx=\"225\" cy=\"70\" r=\"4\" fill=\"#f59e0b\"/><text x=\"217\" y=\"55\" font-family=\"Arial\" font-size=\"14\">400</text><text x=\"50\" y=\"220\" font-family=\"Arial\" font-size=\"13\">0</text><text x=\"220\" y=\"220\" font-family=\"Arial\" font-size=\"13\">6</text><text x=\"386\" y=\"220\" font-family=\"Arial\" font-size=\"13\">12</text><text x=\"405\" y=\"204\" font-family=\"Arial\" font-size=\"14\">t</text><text x=\"32\" y=\"22\" font-family=\"Arial\" font-size=\"14\">P</text></svg>"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p196-q07-b",
+              "type": "review",
+              "manual": true,
+              "difficulty": "medium",
+              "stem": "Show that the energy generated from \\(t=a\\) to \\(t=b\\) is \\(E=\\frac{4800}{\\pi}\\left(\\cos\\frac{a\\pi}{12}-\\cos\\frac{b\\pi}{12}\\right)\\).",
+              "answer": "\\(E=\\frac{4800}{\\pi}\\left(\\cos\\frac{a\\pi}{12}-\\cos\\frac{b\\pi}{12}\\right)\\)",
+              "hint": "Energy is the integral of power. Integrate the sine function, including its inner factor \\(\\pi/12\\), and substitute the limits.",
+              "steps": [
+                {
+                  "explain": "Energy is the area under the power curve between the times a and b.",
+                  "work": "\\(E=\\int_a^b P(t)\\,dt=\\int_a^b400\\sin\\left(\\frac{\\pi t}{12}\\right)dt\\)"
+                },
+                {
+                  "explain": "The antiderivative includes the reciprocal of the inner derivative π/12.",
+                  "work": "\\(\\int400\\sin\\left(\\frac{\\pi t}{12}\\right)dt=-\\frac{4800}{\\pi}\\cos\\left(\\frac{\\pi t}{12}\\right)\\)"
+                },
+                {
+                  "explain": "Evaluate at b and subtract the value at a, then rearrange the cosine terms.",
+                  "work": "\\(E=-\\frac{4800}{\\pi}\\cos\\frac{b\\pi}{12}+\\frac{4800}{\\pi}\\cos\\frac{a\\pi}{12}=\\boxed{\\frac{4800}{\\pi}\\left(\\cos\\frac{a\\pi}{12}-\\cos\\frac{b\\pi}{12}\\right)}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "196",
+                "course": "Advanced",
+                "sourceQuestion": "Q27, 2021 HSC"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p196-q07-c",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "Kenzo wakes 3 hours after sunrise with no stored energy. Find the least amount of time he must wait to collect 300 units of energy. Give your answer to the nearest minute.",
+              "options": [
+                "57 minutes",
+                "45 minutes",
+                "1 hour 3 minutes",
+                "30 minutes"
+              ],
+              "answer": 0,
+              "hint": "Set the energy from t=3 to the later time T equal to 300. Solve for T in hours, then subtract 3 and convert the fraction of an hour to minutes.",
+              "steps": [
+                {
+                  "explain": "Use the energy formula with a=3 and set the collected energy equal to 300.",
+                  "work": "\\(300=\\frac{4800}{\\pi}\\left(\\cos\\frac{\\pi}{4}-\\cos\\frac{T\\pi}{12}\\right)\\)"
+                },
+                {
+                  "explain": "Rearrange to isolate the cosine, then use inverse cosine to find the clock time T after sunrise.",
+                  "work": "\\(\\cos\\frac{T\\pi}{12}=\\frac{\\sqrt2}{2}-\\frac{\\pi}{16}\\Rightarrow T=\\frac{12}{\\pi}\\cos^{-1}\\left(\\frac{\\sqrt2}{2}-\\frac{\\pi}{16}\\right)\\approx3.9524\\text{ h}\\)"
+                },
+                {
+                  "explain": "This is the time after sunrise. Subtract the 3 hours when Kenzo woke, then convert hours to minutes.",
+                  "work": "\\((3.9524-3)\\times60\\approx57.14\\Rightarrow\\boxed{57\\text{ minutes}}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 240\"><rect width=\"440\" height=\"240\" fill=\"white\"/><path d=\"M50 200H400M55 215V25\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M55 200 C105 200 115 70 225 70 C335 70 345 200 395 200\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M140 108 C149 88 159 76 167 73 L167 200 L140 200Z\" fill=\"#fde68a\" opacity=\".8\"/><path d=\"M140 108 C149 88 159 76 167 73\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><circle cx=\"140\" cy=\"108\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"167\" cy=\"73\" r=\"4\" fill=\"#f59e0b\"/><text x=\"130\" y=\"221\" font-family=\"Arial\" font-size=\"13\">3</text><text x=\"160\" y=\"221\" font-family=\"Arial\" font-size=\"13\">T≈3.95</text><text x=\"405\" y=\"204\" font-family=\"Arial\" font-size=\"14\">t</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "196",
+                "course": "Advanced",
+                "sourceQuestion": "Q27, 2021 HSC"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p196-q07-d",
+              "type": "review",
+              "manual": true,
+              "difficulty": "hard",
+              "stem": "The next day Kenzo wakes 6 hours after sunrise with no stored energy. Would he need more time, less time or the same time to collect 300 units, compared with part (c)? Explain by referring to the graph.",
+              "answer": "Less time: the power is higher near t=6 than near t=3, so the area under the graph reaches 300 units sooner. Solving gives about 45 minutes, compared with 57 minutes in part (c).",
+              "hint": "Compare the areas under the same power curve beginning at t=3 and t=6. The graph is at its 400-unit maximum at t=6.",
+              "steps": [
+                {
+                  "explain": "At t=6, the charger is at maximum power. Solve the same energy equation with a=6.",
+                  "work": "\\(300=\\frac{4800}{\\pi}\\left(\\cos\\frac{\\pi}{2}-\\cos\\frac{T\\pi}{12}\\right)\\)"
+                },
+                {
+                  "explain": "Solving gives T≈6.7549 hours after sunrise. Kenzo began at hour 6.",
+                  "work": "\\(T=\\frac{12}{\\pi}\\cos^{-1}\\left(-\\frac{\\pi}{16}\\right)\\approx6.7549\\text{ h}\\)"
+                },
+                {
+                  "explain": "The wait is about 0.7549 hours, or 45 minutes. This is less than 57 minutes; on the graph the power is higher around hour 6, so each minute adds more energy.",
+                  "work": "\\((6.7549-6)\\times60\\approx45.3\\text{ min}<57.1\\text{ min}\\Rightarrow\\boxed{\\text{less time}}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 240\"><rect width=\"440\" height=\"240\" fill=\"white\"/><path d=\"M50 200H400M55 215V25\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M55 200 C105 200 115 70 225 70 C335 70 345 200 395 200\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M225 70 C232 71 240 76 246 83 L246 200 L225 200Z\" fill=\"#bbf7d0\" opacity=\".85\"/><path d=\"M225 70 C232 71 240 76 246 83\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"3\"/><circle cx=\"225\" cy=\"70\" r=\"4\" fill=\"#16a34a\"/><circle cx=\"246\" cy=\"83\" r=\"4\" fill=\"#16a34a\"/><text x=\"215\" y=\"221\" font-family=\"Arial\" font-size=\"13\">6</text><text x=\"240\" y=\"221\" font-family=\"Arial\" font-size=\"13\">T≈6.75</text><text x=\"405\" y=\"204\" font-family=\"Arial\" font-size=\"14\">t</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "196",
+                "course": "Advanced",
+                "sourceQuestion": "Q27, 2021 HSC"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "196",
+            "course": "Advanced",
+            "sourceQuestion": "Q27, 2021 HSC"
+          }
         }
       ]
     },
@@ -196,6 +357,94 @@
             "sourcePart": null,
             "sourcePage": null,
             "sourceTopic": "y12a-4C"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p195-q01",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The graph of the even function \\(y=f(x)\\) is shown. The area of shaded region \\(A\\) is \\(\\frac12\\) and the area of shaded region \\(B\\) is \\(\\frac32\\). What is the value of \\(\\int_{-2}^{2}f(x)\\,dx\\)?",
+          "options": [
+            "\\(4\\)",
+            "\\(2\\)",
+            "\\(-2\\)",
+            "\\(-4\\)"
+          ],
+          "answer": 2,
+          "hint": "Because f is even, the left and right halves have equal signed area. Remember that area below the x-axis contributes negatively.",
+          "steps": [
+            {
+              "explain": "Use even symmetry: the integral from −2 to 2 is twice the integral from 0 to 2.",
+              "work": "\\(\\int_{-2}^{2}f(x)\\,dx=2\\int_0^2f(x)\\,dx\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 460 280\"><rect width=\"460\" height=\"280\" fill=\"white\"/><path d=\"M45 190H420M230 25V250\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M55 220 C95 220 115 88 150 115 C180 140 200 175 230 165 C260 155 280 115 310 145 C350 185 370 220 410 220\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M90 190C104 155 118 120 136 116M324 158C340 183 353 207 367 218\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"7\" opacity=\".55\"/><text x=\"116\" y=\"100\" font-family=\"Arial\" font-size=\"16\" fill=\"#b45309\">A</text><text x=\"350\" y=\"200\" font-family=\"Arial\" font-size=\"16\" fill=\"#b45309\">B</text><text x=\"39\" y=\"210\" font-family=\"Arial\" font-size=\"14\">−2</text><text x=\"140\" y=\"210\" font-family=\"Arial\" font-size=\"14\">−1</text><text x=\"309\" y=\"210\" font-family=\"Arial\" font-size=\"14\">1</text><text x=\"407\" y=\"210\" font-family=\"Arial\" font-size=\"14\">2</text><text x=\"425\" y=\"194\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"235\" y=\"22\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"246\" y=\"180\" font-family=\"Arial\" font-size=\"14\">O</text></svg>"
+              }
+            },
+            {
+              "explain": "On the right half, region A is above the axis and region B is below it, so subtract B from A.",
+              "work": "\\(\\int_0^2f(x)\\,dx=A-B=\\frac12-\\frac32=-1\\)"
+            },
+            {
+              "explain": "Double this signed area to include the matching left half.",
+              "work": "\\(\\int_{-2}^{2}f(x)\\,dx=2(-1)=\\boxed{-2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "195",
+            "course": "Advanced",
+            "sourceQuestion": "Q8, 2022 HSC"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 460 280\"><rect width=\"460\" height=\"280\" fill=\"white\"/><path d=\"M45 190H420M230 25V250\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M55 220 C95 220 115 88 150 115 C180 140 200 175 230 165 C260 155 280 115 310 145 C350 185 370 220 410 220\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M90 190C104 155 118 120 136 116M324 158C340 183 353 207 367 218\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"7\" opacity=\".55\"/><text x=\"116\" y=\"100\" font-family=\"Arial\" font-size=\"16\" fill=\"#b45309\">A</text><text x=\"350\" y=\"200\" font-family=\"Arial\" font-size=\"16\" fill=\"#b45309\">B</text><text x=\"39\" y=\"210\" font-family=\"Arial\" font-size=\"14\">−2</text><text x=\"140\" y=\"210\" font-family=\"Arial\" font-size=\"14\">−1</text><text x=\"309\" y=\"210\" font-family=\"Arial\" font-size=\"14\">1</text><text x=\"407\" y=\"210\" font-family=\"Arial\" font-size=\"14\">2</text><text x=\"425\" y=\"194\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"235\" y=\"22\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"246\" y=\"180\" font-family=\"Arial\" font-size=\"14\">O</text></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p196-q09",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The graph of \\(y=f(x)\\) is made up of line segments and a semicircle. What is the value of \\(\\int_0^{12}f(x)\\,dx\\)?",
+          "options": [
+            "\\(24+2\\pi\\)",
+            "\\(30+2\\pi\\)",
+            "\\(24+4\\pi\\)",
+            "\\(30+4\\pi\\)"
+          ],
+          "answer": 0,
+          "hint": "Split the integral into the flat segment, the semicircle sitting above y=3, and the final straight segment. Signed area below the axis is negative.",
+          "steps": [
+            {
+              "explain": "From x=0 to 4, the graph is y=3, giving a rectangle area 3×4=12.",
+              "work": "\\(A_1=3(4)=12\\)"
+            },
+            {
+              "explain": "From x=4 to 8, include a 3-by-4 rectangle and a semicircle of radius 2 above that baseline.",
+              "work": "\\(A_2=3(4)+\\frac12\\pi(2)^2=12+2\\pi\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 260\"><rect width=\"480\" height=\"260\" fill=\"white\"/><path d=\"M45 130H445M65 225V25\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M65 70H185 A60 60 0 0 1 305 70L425 190\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M65 70H185 A60 60 0 0 1 305 70L365 130H65Z\" fill=\"#fde68a\" opacity=\".55\"/><path d=\"M305 70L365 130L305 130Z\" fill=\"#bbf7d0\" opacity=\".8\"/><path d=\"M365 130L425 190L365 190Z\" fill=\"#fecaca\" opacity=\".8\"/><text x=\"47\" y=\"150\" font-family=\"Arial\" font-size=\"12\">0</text><text x=\"178\" y=\"150\" font-family=\"Arial\" font-size=\"12\">4</text><text x=\"299\" y=\"150\" font-family=\"Arial\" font-size=\"12\">8</text><text x=\"417\" y=\"150\" font-family=\"Arial\" font-size=\"12\">12</text><text x=\"448\" y=\"135\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"47\" y=\"70\" font-family=\"Arial\" font-size=\"12\">3</text><text x=\"47\" y=\"195\" font-family=\"Arial\" font-size=\"12\">−3</text></svg>"
+              }
+            },
+            {
+              "explain": "The line from (8,3) to (12,−3) has equal positive and negative triangular areas, so its signed integral is zero.",
+              "work": "\\(A_3=0\\)"
+            },
+            {
+              "explain": "Add the signed areas.",
+              "work": "\\(\\int_0^{12}f(x)dx=12+(12+2\\pi)+0=\\boxed{24+2\\pi}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "196",
+            "course": "Advanced",
+            "sourceQuestion": "Q7, 2020 HSC"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 260\"><rect width=\"480\" height=\"260\" fill=\"white\"/><path d=\"M45 130H445M65 225V25\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M65 70H185 A60 60 0 0 1 305 70L425 190\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><text x=\"47\" y=\"150\" font-family=\"Arial\" font-size=\"12\">0</text><text x=\"178\" y=\"150\" font-family=\"Arial\" font-size=\"12\">4</text><text x=\"299\" y=\"150\" font-family=\"Arial\" font-size=\"12\">8</text><text x=\"417\" y=\"150\" font-family=\"Arial\" font-size=\"12\">12</text><text x=\"448\" y=\"135\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"47\" y=\"70\" font-family=\"Arial\" font-size=\"12\">3</text><text x=\"47\" y=\"195\" font-family=\"Arial\" font-size=\"12\">−3</text></svg>"
           }
         }
       ]
@@ -596,6 +845,74 @@
             "sourcePart": "b",
             "sourcePage": null,
             "sourceTopic": "y12a-4E"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p195-q05",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(\\int_{-2}^{0}\\sqrt{2x+4}\\,dx\\).",
+          "options": [
+            "\\(\\frac{16\\sqrt2}{3}\\)",
+            "\\(8\\sqrt2\\)",
+            "\\(\\frac{8\\sqrt2}{3}\\)",
+            "\\(4\\sqrt2\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the reverse chain rule: an antiderivative of \\(\\sqrt{2x+4}\\) is \\(\\frac{(2x+4)^{3/2}}{3}\\). Evaluate it at both limits.",
+          "steps": [
+            {
+              "explain": "Use the reverse chain rule: differentiating \\((2x+4)^{3/2}/3\\) gives \\(√{2x+4}\\).",
+              "work": "\\(\\int\\sqrt{2x+4}\\,dx=\\frac{(2x+4)^{3/2}}{3}+C\\)"
+            },
+            {
+              "explain": "Apply the limits 0 and −2.",
+              "work": "\\(\\int_{-2}^{0}\\sqrt{2x+4}dx=\\left[\\frac{(2x+4)^{3/2}}3\\right]_{-2}^{0}=\\frac{8^{3/2}}3-0\\)"
+            },
+            {
+              "explain": "Simplify \\(8^{3/2}=16\\sqrt2\\), then state the exact value.",
+              "work": "\\(\\boxed{\\frac{16\\sqrt2}{3}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "195",
+            "course": "Advanced",
+            "sourceQuestion": "Q15, 2021 HSC"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p196-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\(\\int_0^{\\pi/4}\\sec^2x\\,dx\\).",
+          "options": [
+            "\\(1\\)",
+            "\\(\\sqrt3\\)",
+            "\\(\\frac12\\)",
+            "\\(\\frac{\\pi}{4}\\)"
+          ],
+          "answer": 0,
+          "hint": "The antiderivative of sec²x is tan x. Substitute the two limits.",
+          "steps": [
+            {
+              "explain": "Use the standard derivative relationship d/dx(tan x)=sec²x.",
+              "work": "\\(\\int\\sec^2x\\,dx=\\tan x+C\\)"
+            },
+            {
+              "explain": "Evaluate at π/4 and 0.",
+              "work": "\\(\\int_0^{\\pi/4}\\sec^2x\\,dx=[\\tan x]_0^{\\pi/4}=1-0=\\boxed1\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "196",
+            "course": "Advanced",
+            "sourceQuestion": "Q13, 2020 HSC"
           }
         }
       ]
@@ -1320,6 +1637,346 @@
             "sourcePage": null,
             "sourceTopic": "y12a-4G"
           }
+        },
+        {
+          "id": "y12a-advanced-004-p195-q03",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The parabola \\(y=x^2\\) meets the line \\(y=2x+3\\) at \\((-1,1)\\) and \\((3,9)\\), as shown. Find the area enclosed by the parabola and the line.",
+          "options": [
+            "\\(\\frac{32}{3}\\)",
+            "\\(\\frac{16}{3}\\)",
+            "\\(8\\)",
+            "\\(12\\)"
+          ],
+          "answer": 0,
+          "hint": "The line is above the parabola between the two intersections. Integrate line minus parabola from x=−1 to x=3.",
+          "steps": [
+            {
+              "explain": "The intersection x-values provide the integration limits. Subtract the lower curve y=x² from the upper line y=2x+3.",
+              "work": "\\(A=\\int_{-1}^{3}[(2x+3)-x^2]\\,dx\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 300\"><rect width=\"440\" height=\"300\" fill=\"white\"/><path d=\"M48 250H400M175 270V25\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M125 230L325 70 C285 165 225 248 175 250 C154 248 138 239 125 230Z\" fill=\"#f59e0b\" opacity=\"0.65\"/><path d=\"M50 125 C82 190 105 230 125 230 C145 230 160 250 175 250 C222 248 275 170 325 70 C342 38 353 12 365 0\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M82 265L365 38\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"125\" cy=\"230\" r=\"4\" fill=\"#334155\"/><circle cx=\"325\" cy=\"70\" r=\"4\" fill=\"#334155\"/><text x=\"63\" y=\"220\" font-size=\"13\" font-family=\"Arial\">(−1,1)</text><text x=\"340\" y=\"35\" font-size=\"13\" font-family=\"Arial\">(3,9)</text><text x=\"402\" y=\"255\" font-size=\"14\" font-family=\"Arial\">x</text><text x=\"180\" y=\"22\" font-size=\"14\" font-family=\"Arial\">y</text><text x=\"72\" y=\"110\" font-size=\"13\" font-family=\"Arial\">y=x²</text></svg>"
+              }
+            },
+            {
+              "explain": "Integrate each term.",
+              "work": "\\(A=\\left[x^2+3x-\\frac{x^3}{3}\\right]_{-1}^{3}\\)"
+            },
+            {
+              "explain": "Substitute the upper limit, then subtract the value at the lower limit.",
+              "work": "\\(A=(9+9-9)-\\left(1-3+\\frac13\\right)=9-\\left(-\\frac53\\right)=\\boxed{\\frac{32}{3}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "195",
+            "course": "Advanced",
+            "sourceQuestion": "Q16, 2022 HSC"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 300\"><rect width=\"440\" height=\"300\" fill=\"white\"/><path d=\"M48 250H400M175 270V25\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M125 230L325 70 C285 165 225 248 175 250 C154 248 138 239 125 230Z\" fill=\"#fde68a\" opacity=\"0.55\"/><path d=\"M50 125 C82 190 105 230 125 230 C145 230 160 250 175 250 C222 248 275 170 325 70 C342 38 353 12 365 0\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M82 265L365 38\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"125\" cy=\"230\" r=\"4\" fill=\"#334155\"/><circle cx=\"325\" cy=\"70\" r=\"4\" fill=\"#334155\"/><text x=\"63\" y=\"220\" font-size=\"13\" font-family=\"Arial\">(−1,1)</text><text x=\"340\" y=\"35\" font-size=\"13\" font-family=\"Arial\">(3,9)</text><text x=\"402\" y=\"255\" font-size=\"14\" font-family=\"Arial\">x</text><text x=\"180\" y=\"22\" font-size=\"14\" font-family=\"Arial\">y</text><text x=\"72\" y=\"110\" font-size=\"13\" font-family=\"Arial\">y=x²</text></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p195-q04",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "The graph of the circle \\(x^2+y^2=2\\) is shown. The interval connecting the origin, \\(O\\), and the point \\((1,1)\\) makes an angle \\(\\theta\\) with the positive \\(x\\)-axis. A part of the hyperbola \\(y=\\frac{a}{b-x}-1\\), which passes through \\((0,0)\\) and \\((1,1)\\), is also shown.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 520 270\"><rect width=\"520\" height=\"270\" fill=\"white\"/><text x=\"95\" y=\"25\" font-family=\"Arial\" font-size=\"15\">Circle and sector</text><path d=\"M120 145H360M260 245V45\" stroke=\"#334155\" stroke-width=\"1.5\"/><circle cx=\"260\" cy=\"145\" r=\"100\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><path d=\"M260 145L360 145A100 100 0 0 0 330.7 74.3Z\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\"/><circle cx=\"330.7\" cy=\"74.3\" r=\"3\" fill=\"#334155\"/><text x=\"337\" y=\"69\" font-family=\"Arial\" font-size=\"13\">(1,1)</text><text x=\"242\" y=\"162\" font-family=\"Arial\" font-size=\"13\">O</text><text x=\"284\" y=\"128\" font-family=\"Arial\" font-size=\"13\">θ</text><text x=\"382\" y=\"25\" font-family=\"Arial\" font-size=\"15\">Hyperbola and circle</text><path d=\"M400 225H510M430 245V48\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M430 225 C445 218 464 196 480 175\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M480 175 A70.7 70.7 0 0 1 500.7 225\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"2.5\"/><path d=\"M430 225 C445 218 464 196 480 175 A70.7 70.7 0 0 1 500.7 225 Z\" fill=\"#fef3c7\" opacity=\".65\"/><circle cx=\"480\" cy=\"175\" r=\"4\" fill=\"#334155\"/><text x=\"481\" y=\"166\" font-family=\"Arial\" font-size=\"12\">(1,1)</text><text x=\"504\" y=\"239\" font-family=\"Arial\" font-size=\"12\">x</text></svg>"
+          },
+          "hint": "Use the point (1,1) to find the angle and sector area. Substitute both given points into the hyperbola to find a and b. For the final region, split it into the area under the hyperbola and the remaining circular segment.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p195-q04-a",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "By considering the value of \\(\\theta\\), find the exact area of the shaded sector.",
+              "options": [
+                "\\(\\frac{\\pi}{4}\\)",
+                "\\(\\frac{\\pi}{2}\\)",
+                "\\(\\frac{\\pi}{8}\\)",
+                "\\(1\\)"
+              ],
+              "answer": 0,
+              "hint": "The point (1,1) gives a 45° angle from the positive x-axis. The circle radius is √2; use sector area ½r²θ with θ in radians.",
+              "steps": [
+                {
+                  "explain": "The point (1,1) lies equally far along the x- and y-directions, so the radius makes a 45° angle, or π/4 radians.",
+                  "work": "\\(\\theta=\\frac{\\pi}{4}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 520 270\"><rect width=\"520\" height=\"270\" fill=\"white\"/><text x=\"95\" y=\"25\" font-family=\"Arial\" font-size=\"15\">Circle and sector</text><path d=\"M120 145H360M260 245V45\" stroke=\"#334155\" stroke-width=\"1.5\"/><circle cx=\"260\" cy=\"145\" r=\"100\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><path d=\"M260 145L360 145A100 100 0 0 0 330.7 74.3Z\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\"/><circle cx=\"330.7\" cy=\"74.3\" r=\"3\" fill=\"#334155\"/><text x=\"337\" y=\"69\" font-family=\"Arial\" font-size=\"13\">(1,1)</text><text x=\"242\" y=\"162\" font-family=\"Arial\" font-size=\"13\">O</text><text x=\"284\" y=\"128\" font-family=\"Arial\" font-size=\"13\">θ</text><text x=\"382\" y=\"25\" font-family=\"Arial\" font-size=\"15\">Hyperbola and circle</text><path d=\"M400 225H510M430 245V48\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M430 225 C445 218 464 196 480 175\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M480 175 A70.7 70.7 0 0 1 500.7 225\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"2.5\"/><path d=\"M430 225 C445 218 464 196 480 175 A70.7 70.7 0 0 1 500.7 225 Z\" fill=\"#fef3c7\" opacity=\".65\"/><circle cx=\"480\" cy=\"175\" r=\"4\" fill=\"#334155\"/><text x=\"481\" y=\"166\" font-family=\"Arial\" font-size=\"12\">(1,1)</text><text x=\"504\" y=\"239\" font-family=\"Arial\" font-size=\"12\">x</text></svg>"
+                  }
+                },
+                {
+                  "explain": "The circle equation gives radius squared equal to 2. Substitute into the sector-area formula.",
+                  "work": "\\(A=\\frac12r^2\\theta=\\frac12(2)\\left(\\frac{\\pi}{4}\\right)=\\boxed{\\frac{\\pi}{4}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "195",
+                "course": "Advanced",
+                "sourceQuestion": "Q28, 2022 HSC"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p195-q04-b",
+              "type": "review",
+              "difficulty": "easy",
+              "manual": true,
+              "stem": "Show that \\(a=b=2\\).",
+              "answer": "\\(a=b=2\\)",
+              "hint": "Substitute (0,0) first to get a relation between a and b. Then use the point (1,1).",
+              "steps": [
+                {
+                  "explain": "Substitute x=0 and y=0 into the hyperbola equation.",
+                  "work": "\\(0=\\frac{a}{b}-1\\Rightarrow a=b\\)"
+                },
+                {
+                  "explain": "Substitute x=1 and y=1. The denominator b−1 must be nonzero.",
+                  "work": "\\(1=\\frac{a}{b-1}-1\\Rightarrow 2=\\frac{a}{b-1}\\Rightarrow a=2b-2\\)"
+                },
+                {
+                  "explain": "Combine a=b and a=2b−2, then substitute back for a.",
+                  "work": "\\(b=2b-2\\Rightarrow b=2,\\qquad a=2\\Rightarrow\\boxed{a=b=2}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "195",
+                "course": "Advanced",
+                "sourceQuestion": "Q28, 2022 HSC"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p195-q04-c",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Using parts (a) and (b), find the exact area of the region bounded by the hyperbola, the positive \\(x\\)-axis and the circle.",
+              "options": [
+                "\\(2\\ln2+\\frac{\\pi}{4}-\\frac32\\)",
+                "\\(2\\ln2+\\frac{\\pi}{4}\\)",
+                "\\(\\frac{\\pi}{4}-1\\)",
+                "\\(2\\ln2-\\frac{\\pi}{4}\\)"
+              ],
+              "answer": 0,
+              "hint": "With a=b=2, the hyperbola is y=x/(2−x). Split the required region at x=1: integrate the hyperbola from 0 to 1 and the circle’s upper arc from 1 to √2.",
+              "steps": [
+                {
+                  "explain": "Use a=b=2 to simplify the hyperbola equation. The circle meets the positive x-axis at x=√2, while both curves meet at x=1.",
+                  "work": "\\(y=\\frac{2}{2-x}-1=\\frac{x}{2-x},\\qquad y_{\\text{circle}}=\\sqrt{2-x^2}\\)"
+                },
+                {
+                  "explain": "The region consists of the area under the hyperbola from 0 to 1 plus the circular area under the upper arc from 1 to √2.",
+                  "work": "\\(A=\\int_0^1\\frac{x}{2-x}\\,dx+\\int_1^{\\sqrt2}\\sqrt{2-x^2}\\,dx\\)"
+                },
+                {
+                  "explain": "The first integral is 2 ln 2−1. For the second, use the circle-sector area: it is the quarter-sector area π/4 minus the triangle with legs 1, whose area is 1/2.",
+                  "work": "\\(\\int_0^1\\frac{x}{2-x}dx=2\\ln2-1,\\quad\\int_1^{\\sqrt2}\\sqrt{2-x^2}dx=\\frac{\\pi}{4}-\\frac12\\)"
+                },
+                {
+                  "explain": "Add the two pieces.",
+                  "work": "\\(A=2\\ln2-1+\\frac{\\pi}{4}-\\frac12=\\boxed{2\\ln2+\\frac{\\pi}{4}-\\frac32}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "195",
+                "course": "Advanced",
+                "sourceQuestion": "Q28, 2022 HSC"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "195",
+            "course": "Advanced",
+            "sourceQuestion": "Q28, 2022 HSC"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p195-q06",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The curve \\(y=\\frac{3}{x-1}\\) intersects the line \\(y=\\frac32x\\) at \\((2,3)\\). The region bounded by the curve, the line, the \\(x\\)-axis and \\(x=4\\) is shaded. Find the exact area of the shaded region.",
+          "options": [
+            "\\(3+3\\ln3\\)",
+            "\\(3\\ln3\\)",
+            "\\(6+3\\ln3\\)",
+            "\\(3+\\ln3\\)"
+          ],
+          "answer": 0,
+          "hint": "Split the shaded region at the intersection x=2. From 0 to 2 its top is the line; from 2 to 4 its top is the curve.",
+          "steps": [
+            {
+              "explain": "Between x=0 and x=2, use the line as the upper boundary. From x=2 to x=4, use the curve. Subtract the x-axis (zero) on both intervals.",
+              "work": "\\(A=\\int_0^2\\frac32x\\,dx+\\int_2^4\\frac3{x-1}\\,dx\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 280\"><rect width=\"440\" height=\"280\" fill=\"white\"/><path d=\"M55 230H390M125 250V28\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M125 230L225 110L325 50\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M225 110 C240 151 258 171 275 170 C293 169 309 183 325 190\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M125 230L225 110 C252 171 289 178 325 190 L325 230Z\" fill=\"#fde68a\" opacity=\".65\"/><circle cx=\"225\" cy=\"110\" r=\"4\" fill=\"#334155\"/><text x=\"235\" y=\"92\" font-family=\"Arial\" font-size=\"13\">(2,3)</text><text x=\"322\" y=\"248\" font-family=\"Arial\" font-size=\"13\">4</text><text x=\"396\" y=\"235\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"130\" y=\"24\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"324\" y=\"145\" font-family=\"Arial\" font-size=\"12\">y=3/(x−1)</text><text x=\"156\" y=\"170\" font-family=\"Arial\" font-size=\"12\">y=3x/2</text></svg>"
+              }
+            },
+            {
+              "explain": "Integrate each piece separately.",
+              "work": "\\(\\int_0^2\\frac32x\\,dx=\\left[\\frac{3x^2}{4}\\right]_0^2=3,\\quad\\int_2^4\\frac3{x-1}dx=3[\\ln(x-1)]_2^4=3\\ln3\\)"
+            },
+            {
+              "explain": "Add the two areas.",
+              "work": "\\(A=3+3\\ln3=\\boxed{3+3\\ln3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "195",
+            "course": "Advanced",
+            "sourceQuestion": "Q24, 2021 HSC"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 280\"><rect width=\"440\" height=\"280\" fill=\"white\"/><path d=\"M55 230H390M125 250V28\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M125 230L225 110L325 50\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M225 110 C240 151 258 171 275 170 C293 169 309 183 325 190\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M125 230L225 110 C252 171 289 178 325 190 L325 230Z\" fill=\"#fde68a\" opacity=\".65\"/><circle cx=\"225\" cy=\"110\" r=\"4\" fill=\"#334155\"/><text x=\"235\" y=\"92\" font-family=\"Arial\" font-size=\"13\">(2,3)</text><text x=\"322\" y=\"248\" font-family=\"Arial\" font-size=\"13\">4</text><text x=\"396\" y=\"235\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"130\" y=\"24\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"324\" y=\"145\" font-family=\"Arial\" font-size=\"12\">y=3/(x−1)</text><text x=\"156\" y=\"170\" font-family=\"Arial\" font-size=\"12\">y=3x/2</text></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p196-q08",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "The region bounded by the graph of \\(f(x)=8-2^x\\) and the coordinate axes is shown.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 270\"><rect width=\"440\" height=\"270\" fill=\"white\"/><path d=\"M55 210H400M100 245V30\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M55 55H390\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"6 5\"/><path d=\"M100 65 C160 70 210 87 252 120 C292 151 315 190 325 210\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 65V210H325\" fill=\"#fde68a\" opacity=\".45\"/><circle cx=\"325\" cy=\"210\" r=\"4\" fill=\"#334155\"/><text x=\"106\" y=\"52\" font-family=\"Arial\" font-size=\"14\">y=f(x)</text><text x=\"60\" y=\"51\" font-family=\"Arial\" font-size=\"13\">8</text><text x=\"328\" y=\"229\" font-family=\"Arial\" font-size=\"13\">3</text><text x=\"405\" y=\"214\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"105\" y=\"25\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"365\" y=\"48\" font-family=\"Arial\" font-size=\"12\">y=8</text></svg>"
+          },
+          "hint": "Find where f crosses the x-axis to set the area limits. For the new graph, apply reflection first, then the shift 5 units right.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p196-q08-a",
+              "type": "review",
+              "manual": true,
+              "difficulty": "medium",
+              "stem": "Show that the exact area of the shaded region is \\(24-\\frac{7}{\\ln2}\\).",
+              "answer": "\\(24-\\frac{7}{\\ln2}\\)",
+              "hint": "Find the x-intercept from 8−2ˣ=0, then integrate f(x) from x=0 to that intercept.",
+              "steps": [
+                {
+                  "explain": "The shaded region runs from the y-axis to the x-intercept. Solve 8−2ˣ=0 to find the right endpoint.",
+                  "work": "\\(2^x=8=2^3\\Rightarrow x=3\\)"
+                },
+                {
+                  "explain": "Integrate each term in 8−2ˣ. The antiderivative of 2ˣ is 2ˣ/ln 2.",
+                  "work": "\\(A=\\int_0^3(8-2^x)dx=\\left[8x-\\frac{2^x}{\\ln2}\\right]_0^3\\)"
+                },
+                {
+                  "explain": "Substitute the endpoints and simplify.",
+                  "work": "\\(A=24-\\frac8{\\ln2}+\\frac1{\\ln2}=\\boxed{24-\\frac7{\\ln2}}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 270\"><rect width=\"440\" height=\"270\" fill=\"white\"/><path d=\"M55 210H400M100 245V30\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M55 55H390\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"6 5\"/><path d=\"M100 65 C160 70 210 87 252 120 C292 151 315 190 325 210\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 65 C160 70 210 87 252 120 C292 151 315 190 325 210 L100 210Z\" fill=\"#fde68a\" opacity=\".45\"/><circle cx=\"325\" cy=\"210\" r=\"4\" fill=\"#334155\"/><text x=\"106\" y=\"52\" font-family=\"Arial\" font-size=\"14\">y=f(x)</text><text x=\"60\" y=\"51\" font-family=\"Arial\" font-size=\"13\">8</text><text x=\"328\" y=\"229\" font-family=\"Arial\" font-size=\"13\">3</text><text x=\"405\" y=\"214\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"105\" y=\"25\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"365\" y=\"48\" font-family=\"Arial\" font-size=\"12\">y=8</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "196",
+                "course": "Advanced",
+                "sourceQuestion": "Q28, 2021 HSC"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 270\"><rect width=\"440\" height=\"270\" fill=\"white\"/><path d=\"M55 210H400M100 245V30\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M55 55H390\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"6 5\"/><path d=\"M100 65 C160 70 210 87 252 120 C292 151 315 190 325 210\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 65 C160 70 210 87 252 120 C292 151 315 190 325 210 L100 210Z\" fill=\"#fde68a\" opacity=\".45\"/><circle cx=\"325\" cy=\"210\" r=\"4\" fill=\"#334155\"/><text x=\"106\" y=\"52\" font-family=\"Arial\" font-size=\"14\">y=f(x)</text><text x=\"60\" y=\"51\" font-family=\"Arial\" font-size=\"13\">8</text><text x=\"328\" y=\"229\" font-family=\"Arial\" font-size=\"13\">3</text><text x=\"405\" y=\"214\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"105\" y=\"25\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"365\" y=\"48\" font-family=\"Arial\" font-size=\"12\">y=8</text></svg>"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p196-q08-b",
+              "type": "review",
+              "manual": true,
+              "difficulty": "medium",
+              "stem": "A new function \\(g(x)\\) is found by taking the graph of \\(y=-f(-x)\\) and translating it 5 units to the right. Sketch \\(y=g(x)\\), showing the x-intercept and asymptote.",
+              "answer": "\\(g(x)=2^{5-x}-8\\); x-intercept \\((2,0)\\); horizontal asymptote \\(y=-8\\).",
+              "hint": "Reflect f in the y-axis by replacing x with −x, reflect in the x-axis by changing the sign, then replace x by x−5 for the shift right.",
+              "steps": [
+                {
+                  "explain": "First reflect in the y-axis: replace x by −x in f(x)=8−2ˣ.",
+                  "work": "\\(f(-x)=8-2^{-x}\\)"
+                },
+                {
+                  "explain": "Now reflect in the x-axis by multiplying the whole function by −1. Translate this new graph 5 units right by replacing x with x−5.",
+                  "work": "\\(-f(-x)=2^{-x}-8,\\quad g(x)=2^{-(x-5)}-8=2^{5-x}-8\\)"
+                },
+                {
+                  "explain": "Set g(x)=0 to find the x-intercept. As x increases, the exponential term tends to zero, so the horizontal asymptote is y=−8.",
+                  "work": "\\(2^{5-x}=8=2^3\\Rightarrow x=2;\\qquad y=-8\\text{ is the asymptote}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 270\"><rect width=\"440\" height=\"270\" fill=\"white\"/><path d=\"M45 140H400M130 245V25\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M45 220H390\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"6 5\"/><path d=\"M55 28 C105 50 150 91 190 140 C230 185 270 207 310 215 C343 219 372 220 395 220\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><circle cx=\"190\" cy=\"140\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"130\" cy=\"43\" r=\"4\" fill=\"#334155\"/><text x=\"196\" y=\"132\" font-family=\"Arial\" font-size=\"13\">(2,0)</text><text x=\"342\" y=\"207\" font-family=\"Arial\" font-size=\"13\">y=−8</text><text x=\"128\" y=\"159\" font-family=\"Arial\" font-size=\"13\">0</text><text x=\"185\" y=\"159\" font-family=\"Arial\" font-size=\"13\">2</text><text x=\"405\" y=\"145\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"136\" y=\"25\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"135\" y=\"40\" font-family=\"Arial\" font-size=\"13\">24</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "196",
+                "course": "Advanced",
+                "sourceQuestion": "Q28, 2021 HSC"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 270\"><rect width=\"440\" height=\"270\" fill=\"white\"/><path d=\"M45 140H400M130 245V25\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M45 220H390\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"6 5\"/><path d=\"M55 28 C105 50 150 91 190 140 C230 185 270 207 310 215 C343 219 372 220 395 220\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><circle cx=\"190\" cy=\"140\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"130\" cy=\"43\" r=\"4\" fill=\"#334155\"/><text x=\"196\" y=\"132\" font-family=\"Arial\" font-size=\"13\">(2,0)</text><text x=\"342\" y=\"207\" font-family=\"Arial\" font-size=\"13\">y=−8</text><text x=\"128\" y=\"159\" font-family=\"Arial\" font-size=\"13\">0</text><text x=\"185\" y=\"159\" font-family=\"Arial\" font-size=\"13\">2</text><text x=\"405\" y=\"145\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"136\" y=\"25\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"135\" y=\"40\" font-family=\"Arial\" font-size=\"13\">24</text></svg>"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p196-q08-c",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "Hence, find the exact value of \\(\\int_2^5g(x)\\,dx\\).",
+              "options": [
+                "\\(\\frac7{\\ln2}-24\\)",
+                "\\(24-\\frac7{\\ln2}\\)",
+                "\\(\\frac8{\\ln2}-24\\)",
+                "\\(-\\frac7{\\ln2}\\)"
+              ],
+              "answer": 0,
+              "hint": "Use \\(g(x)=2^{5-x}-8\\) from part (b) and integrate from 2 to 5.",
+              "steps": [
+                {
+                  "explain": "Substitute the expression for g(x) into the integral.",
+                  "work": "\\(\\int_2^5g(x)dx=\\int_2^5(2^{5-x}-8)dx\\)"
+                },
+                {
+                  "explain": "An antiderivative of 2^(5−x) is −2^(5−x)/ln 2.",
+                  "work": "\\(\\int(2^{5-x}-8)dx=-\\frac{2^{5-x}}{\\ln2}-8x\\)"
+                },
+                {
+                  "explain": "Evaluate at 5 and 2 and subtract.",
+                  "work": "\\(\\left[-\\frac{2^{5-x}}{\\ln2}-8x\\right]_2^5=\\left(-\\frac1{\\ln2}-40\\right)-\\left(-\\frac8{\\ln2}-16\\right)=\\boxed{\\frac7{\\ln2}-24}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "196",
+                "course": "Advanced",
+                "sourceQuestion": "Q28, 2021 HSC"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "196",
+            "course": "Advanced",
+            "sourceQuestion": "Q28, 2021 HSC"
+          }
         }
       ]
     },
@@ -1753,6 +2410,88 @@
             "examType": "Assessment Task",
             "grade": 11,
             "origin": "teacher"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p195-q02",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Use two applications of the trapezoidal rule to find an approximate value of \\(\\int_0^2\\sqrt{1+x^2}\\,dx\\). Give your answer correct to 2 decimal places.",
+          "options": [
+            "\\(3.03\\)",
+            "\\(2.83\\)",
+            "\\(3.24\\)",
+            "\\(2.41\\)"
+          ],
+          "answer": 0,
+          "hint": "Two trapezoids over [0,2] means use x=0,1,2. Evaluate the function at each point and apply the composite trapezoidal rule.",
+          "steps": [
+            {
+              "explain": "With two equal intervals from 0 to 2, the width is h=1 and the x-values are 0, 1, and 2.",
+              "work": "\\(h=\\frac{2-0}{2}=1\\)"
+            },
+            {
+              "explain": "Find the three heights by substituting the x-values into √(1+x²).",
+              "work": "\\(f(0)=1,\\quad f(1)=\\sqrt2,\\quad f(2)=\\sqrt5\\)"
+            },
+            {
+              "explain": "Apply T₂=h/2[f(0)+2f(1)+f(2)], then round to two decimal places.",
+              "work": "\\(T_2=\\frac12(1+2\\sqrt2+\\sqrt5)\\approx3.03\\Rightarrow\\boxed{3.03}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "195",
+            "course": "Advanced",
+            "sourceQuestion": "Q13, 2022 HSC"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p196-q11",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Kenzo is driving his car along a road while his friend records the velocity of the car, \\(v(t)\\), in km/h every minute over a 5-minute period. The table gives the velocity \\(v(t)\\) at time \\(t\\) hours. The distance covered by the car over the 5-minute period is given by \\(\\int_0^{5/60}v(t)\\,dt\\). Use the trapezoidal rule and the velocity at each of the six time values to find the approximate distance in kilometres the car has travelled in the 5-minute period. Give your answer correct to one decimal place.",
+          "options": [
+            "\\(5.4\\text{ km}\\)",
+            "\\(6.4\\text{ km}\\)",
+            "\\(5.1\\text{ km}\\)",
+            "\\(4.8\\text{ km}\\)"
+          ],
+          "answer": 0,
+          "hint": "The interval width is 1/60 hour. Apply the composite trapezoidal rule to the six velocity readings, then round to one decimal place.",
+          "steps": [
+            {
+              "explain": "There are five equal time intervals, each 1 minute = 1/60 hour. The distance is the area under the velocity-time graph.",
+              "work": "\\(h=\\frac1{60}\\text{ h}\\)"
+            },
+            {
+              "explain": "Use the trapezoidal rule: endpoints once and each of the four interior velocities twice.",
+              "work": "\\(D\\approx\\frac h2[v_0+2(v_1+v_2+v_3+v_4)+v_5]\\)"
+            },
+            {
+              "explain": "Substitute the readings and calculate the distance in kilometres.",
+              "work": "\\(D\\approx\\frac1{120}[60+2(55+65+68+70)+67]=\\frac{643}{120}\\approx5.358\\)"
+            },
+            {
+              "explain": "Round to one decimal place.",
+              "work": "\\(\\boxed{5.4\\text{ km}}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 620 180\"><rect width=\"620\" height=\"180\" fill=\"white\"/><rect x=\"30\" y=\"30\" width=\"560\" height=\"110\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M110 30V140M190 30V140M270 30V140M350 30V140M430 30V140M510 30V140M30 85H590\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"42\" y=\"64\" font-family=\"Arial\" font-size=\"14\">t (h)</text><text x=\"42\" y=\"118\" font-family=\"Arial\" font-size=\"14\">v (km/h)</text><g font-family=\"Arial\" font-size=\"13\" text-anchor=\"middle\"><text x=\"150\" y=\"64\">0</text><text x=\"230\" y=\"64\">1/60</text><text x=\"310\" y=\"64\">2/60</text><text x=\"390\" y=\"64\">3/60</text><text x=\"470\" y=\"64\">4/60</text><text x=\"550\" y=\"64\">5/60</text><text x=\"150\" y=\"118\">60</text><text x=\"230\" y=\"118\">55</text><text x=\"310\" y=\"118\">65</text><text x=\"390\" y=\"118\">68</text><text x=\"470\" y=\"118\">70</text><text x=\"550\" y=\"118\">67</text></g></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "196",
+            "course": "Advanced",
+            "sourceQuestion": "Q20, 2020 HSC"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 620 180\"><rect width=\"620\" height=\"180\" fill=\"white\"/><rect x=\"30\" y=\"30\" width=\"560\" height=\"110\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M110 30V140M190 30V140M270 30V140M350 30V140M430 30V140M510 30V140M30 85H590\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"42\" y=\"64\" font-family=\"Arial\" font-size=\"14\">t (h)</text><text x=\"42\" y=\"118\" font-family=\"Arial\" font-size=\"14\">v (km/h)</text><g font-family=\"Arial\" font-size=\"13\" text-anchor=\"middle\"><text x=\"150\" y=\"64\">0</text><text x=\"230\" y=\"64\">1/60</text><text x=\"310\" y=\"64\">2/60</text><text x=\"390\" y=\"64\">3/60</text><text x=\"470\" y=\"64\">4/60</text><text x=\"550\" y=\"64\">5/60</text><text x=\"150\" y=\"118\">60</text><text x=\"230\" y=\"118\">55</text><text x=\"310\" y=\"118\">65</text><text x=\"390\" y=\"118\">68</text><text x=\"470\" y=\"118\">70</text><text x=\"550\" y=\"118\">67</text></g></svg>"
           }
         }
       ]

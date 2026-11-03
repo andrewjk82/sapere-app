@@ -8303,6 +8303,78 @@
             "sourceQuestion": "50i",
             "course": "Advanced"
           }
+        },
+        {
+          "id": "y12a-advanced-003-app-q55",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the coordinates of the point \\(P\\) on the curve \\(y=2e^x+3x\\) at which the tangent to the curve is parallel to the line \\(y=5x-3\\).",
+          "options": [
+            "\\((0,2)\\)",
+            "\\((1,5+2e)\\)",
+            "\\((0,5)\\)",
+            "\\((\\ln 1,3)\\)"
+          ],
+          "answer": 0,
+          "hint": "Parallel lines have equal gradients. Differentiate the curve, set its gradient equal to 5, and then find y.",
+          "steps": [
+            {
+              "explain": "The line y=5x−3 has gradient 5. Differentiate the curve to get its tangent gradient.",
+              "work": "\\(y\\prime=2e^x+3\\)"
+            },
+            {
+              "explain": "Set the tangent gradient equal to 5 and solve.",
+              "work": "\\(2e^x+3=5\\Rightarrow e^x=1\\Rightarrow x=0\\)"
+            },
+            {
+              "explain": "Substitute x=0 into the original curve.",
+              "work": "\\(y=2e^0+3(0)=2\\Rightarrow\\boxed{P=(0,2)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 003",
+            "page": "150",
+            "course": "Advanced",
+            "sourceQuestion": "Q5c, 2005 HSC"
+          }
+        },
+        {
+          "id": "y12a-advanced-003-app-q67",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the equation of the tangent to \\(y=e^x\\) at the point \\((0,1)\\).",
+          "options": [
+            "\\(y=x+1\\)",
+            "\\(y=-x+1\\)",
+            "\\(y=e^x+1\\)",
+            "\\(y=1\\)"
+          ],
+          "answer": 0,
+          "hint": "For \\(e^x\\), the derivative is also \\(e^x\\). Evaluate the gradient at x=0 and use the given point.",
+          "steps": [
+            {
+              "explain": "Differentiate to find the tangent gradient function.",
+              "work": "\\(y\\prime=e^x\\)"
+            },
+            {
+              "explain": "At x=0, the point is (0,1) and the gradient is 1.",
+              "work": "\\(y(0)=1,\\qquad y\\prime(0)=1\\)"
+            },
+            {
+              "explain": "Use point-slope form and simplify.",
+              "work": "\\(y-1=1(x-0)\\Rightarrow\\boxed{y=x+1}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 003",
+            "page": "152",
+            "course": "Advanced",
+            "sourceQuestion": "Q2a, 2002 HSC"
+          }
         }
       ]
     },
@@ -11353,6 +11425,127 @@
             "page": "147-160",
             "course": "Advanced",
             "sourceQuestion": "40"
+          }
+        },
+        {
+          "id": "y12a-advanced-003-app-q12",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The number of leaves, \\(L(t)\\), on a tree \\(t\\) days after the start of autumn can be modelled by \\(L(t)=200\\,000e^{-0.14t}\\).",
+          "hint": "Substitute \\(t=31\\) for the count. Differentiate for the rate. Use natural logarithms to solve when the count is 100.",
+          "parts": [
+            {
+              "id": "y12a-advanced-003-app-q12-i",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "What is the number of leaves on the tree when \\(t=31\\)?",
+              "options": [
+                "About \\(2607\\) leaves",
+                "About \\(365\\) leaves",
+                "About \\(20\\,000\\) leaves",
+                "About \\(100\\) leaves"
+              ],
+              "answer": 0,
+              "hint": "Substitute \\(t=31\\) into the model and evaluate the exponential.",
+              "steps": [
+                {
+                  "explain": "Replace t by 31 in the given model.",
+                  "work": "\\(L(31)=200000e^{-0.14(31)}=200000e^{-4.34}\\)"
+                },
+                {
+                  "explain": "Evaluate and round to the nearest whole leaf.",
+                  "work": "\\(L(31)\\approx2607.3\\Rightarrow\\boxed{2607\\text{ leaves}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 003",
+                "course": "Advanced",
+                "sourceQuestion": "Q12c, 2019 HSC",
+                "page": "143"
+              }
+            },
+            {
+              "id": "y12a-advanced-003-app-q12-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What is the rate of change of the number of leaves when \\(t=31\\)?",
+              "options": [
+                "About \\(-365\\) leaves per day",
+                "About \\(365\\) leaves per day",
+                "About \\(-2607\\) leaves per day",
+                "About \\(0\\) leaves per day"
+              ],
+              "answer": 0,
+              "hint": "Differentiate the exponential model using the chain rule, then substitute \\(t=31\\).",
+              "steps": [
+                {
+                  "explain": "Differentiate. The derivative of the exponent −0.14t contributes a factor of −0.14.",
+                  "work": "\\(L\\prime(t)=200000e^{-0.14t}(-0.14)=-28000e^{-0.14t}\\)"
+                },
+                {
+                  "explain": "Substitute t=31 and evaluate. The negative sign shows the leaf count is falling.",
+                  "work": "\\(L\\prime(31)=-28000e^{-4.34}\\approx-365.0\\)"
+                },
+                {
+                  "explain": "State the rate with units.",
+                  "work": "\\(\\boxed{-365\\text{ leaves per day (approximately)}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 003",
+                "course": "Advanced",
+                "sourceQuestion": "Q12c, 2019 HSC",
+                "page": "143"
+              }
+            },
+            {
+              "id": "y12a-advanced-003-app-q12-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "For what value of \\(t\\) are there \\(100\\) leaves on the tree?",
+              "options": [
+                "About \\(54.3\\) days",
+                "About \\(31.0\\) days",
+                "About \\(7.1\\) days",
+                "About \\(100\\) days"
+              ],
+              "answer": 0,
+              "hint": "Set the model equal to 100, isolate the exponential, then take natural logarithms.",
+              "steps": [
+                {
+                  "explain": "Set L(t)=100 and divide both sides by 200,000.",
+                  "work": "\\(100=200000e^{-0.14t}\\Rightarrow e^{-0.14t}=0.0005\\)"
+                },
+                {
+                  "explain": "Take natural logarithms of both sides to bring down the exponent.",
+                  "work": "\\(-0.14t=\\ln(0.0005)\\)"
+                },
+                {
+                  "explain": "Divide by −0.14 and round to one decimal place.",
+                  "work": "\\(t=\\frac{\\ln(0.0005)}{-0.14}\\approx54.3\\Rightarrow\\boxed{54.3\\text{ days}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 003",
+                "course": "Advanced",
+                "sourceQuestion": "Q12c, 2019 HSC",
+                "page": "143"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 003",
+            "page": "143",
+            "course": "Advanced",
+            "sourceQuestion": "Q12c, 2019 HSC"
           }
         }
       ]

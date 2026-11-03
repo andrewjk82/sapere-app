@@ -2810,6 +2810,137 @@
             "course": "Advanced",
             "grade": "12"
           }
+        },
+        {
+          "id": "y12a-advanced-003-app-q10",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "The population of mice on an isolated island can be modelled by \\(m(t)=a\\sin\\left(\\frac{\\pi t}{26}\\right)+b\\), where \\(t\\) is the time in weeks and \\(0\\le t\\le52\\). The population of mice reaches a maximum of \\(35\\,000\\) when \\(t=13\\) and a minimum of \\(5\\,000\\) when \\(t=39\\).",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 520 300\"><rect width=\"520\" height=\"300\" fill=\"white\"/><path d=\"M60 240H475M60 35V240\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M60 125 C92 105 125 65 155 55 C188 46 215 87 245 125 C275 163 305 205 335 215 C370 226 406 183 435 150 C450 133 463 125 475 125\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"4\"/><path d=\"M155 55V240M335 215V240\" stroke=\"#94a3b8\" stroke-dasharray=\"5 5\"/><circle cx=\"155\" cy=\"55\" r=\"6\" fill=\"#e11d48\"/><circle cx=\"335\" cy=\"215\" r=\"6\" fill=\"#0f766e\"/><text x=\"113\" y=\"42\" font-family=\"Arial\" font-size=\"15\" fill=\"#334155\">(13, 35000)</text><text x=\"298\" y=\"242\" font-family=\"Arial\" font-size=\"15\" fill=\"#334155\">(39, 5000)</text><text x=\"32\" y=\"59\" font-family=\"Arial\" font-size=\"14\" fill=\"#334155\">35000</text><text x=\"33\" y=\"220\" font-family=\"Arial\" font-size=\"14\" fill=\"#334155\">5000</text><text x=\"50\" y=\"263\" font-family=\"Arial\" font-size=\"14\" fill=\"#334155\">0</text><text x=\"146\" y=\"263\" font-family=\"Arial\" font-size=\"14\" fill=\"#334155\">13</text><text x=\"327\" y=\"263\" font-family=\"Arial\" font-size=\"14\" fill=\"#334155\">39</text><text x=\"460\" y=\"263\" font-family=\"Arial\" font-size=\"14\" fill=\"#334155\">52</text><text x=\"483\" y=\"245\" font-family=\"Arial\" font-size=\"16\" fill=\"#334155\">t</text><text x=\"17\" y=\"30\" font-family=\"Arial\" font-size=\"16\" fill=\"#334155\">m(t)</text></svg>"
+          },
+          "hint": "Use the maximum and minimum to find the midline and amplitude. For increasing intervals, inspect the derivative signs and intersect the intervals for both populations.",
+          "parts": [
+            {
+              "id": "y12a-advanced-003-app-q10-a",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What are the values of \\(a\\) and \\(b\\)?",
+              "options": [
+                "\\(a=15\\,000,\\ b=20\\,000\\)",
+                "\\(a=20\\,000,\\ b=15\\,000\\)",
+                "\\(a=35\\,000,\\ b=5\\,000\\)",
+                "\\(a=15\\,000,\\ b=35\\,000\\)"
+              ],
+              "answer": 0,
+              "hint": "The midline is halfway between the maximum and minimum; the amplitude is half their difference.",
+              "steps": [
+                {
+                  "explain": "The maximum and minimum are 35,000 and 5,000. Their midpoint gives b, the centre line.",
+                  "work": "\\(b=\\frac{35\\,000+5\\,000}{2}=20\\,000\\)"
+                },
+                {
+                  "explain": "Half the vertical distance from the minimum to the maximum gives the amplitude a. The given graph reaches its maximum when the sine is 1.",
+                  "work": "\\(a=\\frac{35\\,000-5\\,000}{2}=15\\,000\\)"
+                },
+                {
+                  "explain": "State the model constants.",
+                  "work": "\\(\\boxed{a=15\\,000,\\quad b=20\\,000}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 003",
+                "course": "Advanced",
+                "sourceQuestion": "Q31, 2020 HSC",
+                "page": "143"
+              }
+            },
+            {
+              "id": "y12a-advanced-003-app-q10-b",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "Find the values of \\(t\\), \\(0\\le t\\le52\\), for which both populations are increasing. The cat population is \\(c(t)=-80\\cos\\left(\\frac{\\pi}{26}(t-10)\\right)+120\\).",
+              "options": [
+                "\\(10<t<13\\)",
+                "\\(0<t<13\\)",
+                "\\(13<t<36\\)",
+                "\\(39<t<52\\)"
+              ],
+              "answer": 0,
+              "hint": "Differentiate each model. The mice increase while their sine graph rises; the cats increase when their derivative is positive.",
+              "steps": [
+                {
+                  "explain": "For mice, differentiate. The derivative is positive when the cosine is positive.",
+                  "work": "\\(m\\prime(t)=\\frac{15000\\pi}{26}\\cos\\left(\\frac{\\pi t}{26}\\right)>0\\Rightarrow 0<t<13\\text{ or }39<t<52\\)"
+                },
+                {
+                  "explain": "For cats, differentiate the negative cosine model. Its derivative is positive when the sine is positive.",
+                  "work": "\\(c\\prime(t)=\\frac{80\\pi}{26}\\sin\\left(\\frac{\\pi}{26}(t-10)\\right)>0\\Rightarrow10<t<36\\)"
+                },
+                {
+                  "explain": "The interval where both conditions hold is the overlap of these intervals.",
+                  "work": "\\( (0,13)\\cap(10,36)=(10,13)\\Rightarrow\\boxed{10<t<13}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 520 150\"><rect width=\"520\" height=\"150\" fill=\"white\"/><path d=\"M60 75H475\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M140 75H180\" stroke=\"#f59e0b\" stroke-width=\"14\" stroke-linecap=\"round\"/><path d=\"M140 58V92M180 58V92\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"130\" y=\"120\" font-family=\"Arial\" font-size=\"16\">10</text><text x=\"173\" y=\"120\" font-family=\"Arial\" font-size=\"16\">13</text><text x=\"260\" y=\"43\" font-family=\"Arial\" font-size=\"15\" fill=\"#b45309\">both populations increase</text><text x=\"485\" y=\"80\" font-family=\"Arial\" font-size=\"15\">t</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 003",
+                "course": "Advanced",
+                "sourceQuestion": "Q31, 2020 HSC",
+                "page": "143"
+              }
+            },
+            {
+              "id": "y12a-advanced-003-app-q10-c",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "Find the rate of change of the mice population when the cat population reaches a maximum.",
+              "options": [
+                "\\(-643\\text{ mice per week (approximately)}\\)",
+                "\\(643\\text{ mice per week (approximately)}\\)",
+                "\\(0\\text{ mice per week}\\)",
+                "\\(-15000\\text{ mice per week}\\)"
+              ],
+              "answer": 0,
+              "hint": "Find when the cosine model for cats is at its maximum, then substitute that time into \\(m\\prime(t)\\).",
+              "steps": [
+                {
+                  "explain": "The cat model reaches its maximum when its cosine is −1. In the given interval, this occurs at t=36.",
+                  "work": "\\(\\frac{\\pi}{26}(t-10)=\\pi\\Rightarrow t=36\\)"
+                },
+                {
+                  "explain": "Differentiate the mice model and substitute t=36.",
+                  "work": "\\(m\\prime(36)=\\frac{15000\\pi}{26}\\cos\\left(\\frac{36\\pi}{26}\\right)\\)"
+                },
+                {
+                  "explain": "Evaluate the expression. A negative rate means the mouse population is decreasing at that instant.",
+                  "work": "\\(m\\prime(36)\\approx-642.7\\Rightarrow\\boxed{-643\\text{ mice per week}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 003",
+                "course": "Advanced",
+                "sourceQuestion": "Q31, 2020 HSC",
+                "page": "143"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 003",
+            "page": "143",
+            "course": "Advanced",
+            "sourceQuestion": "Q31, 2020 HSC"
+          }
         }
       ]
     },
@@ -9316,6 +9447,42 @@
             "page": "147-160",
             "course": "Advanced",
             "sourceQuestion": "q44"
+          }
+        },
+        {
+          "id": "y12a-advanced-003-app-q48",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the equation of the tangent to the curve \\(y=\\cos 2x\\) at the point whose \\(x\\)-coordinate is \\(\\frac{\\pi}{6}\\).",
+          "options": [
+            "\\(y-\\frac12=-\\sqrt3\\left(x-\\frac{\\pi}{6}\\right)\\)",
+            "\\(y-\\frac12=\\sqrt3\\left(x-\\frac{\\pi}{6}\\right)\\)",
+            "\\(y-\\frac{\\sqrt3}{2}=-\\left(x-\\frac{\\pi}{6}\\right)\\)",
+            "\\(y=\\cos\\left(2x-\\frac{\\pi}{6}\\right)\\)"
+          ],
+          "answer": 0,
+          "hint": "Differentiate using the chain rule. Evaluate both y and the gradient at \\(x=\\frac{\\pi}{6}\\), then use point-slope form.",
+          "steps": [
+            {
+              "explain": "Differentiate cos(2x); the inner derivative contributes the factor 2.",
+              "work": "\\(y\\prime=-2\\sin2x\\)"
+            },
+            {
+              "explain": "At x=π/6, the point has y-coordinate cos(π/3)=1/2. The tangent gradient is −2sin(π/3)=−√3.",
+              "work": "\\(y\\left(\\frac{\\pi}{6}\\right)=\\frac12,\\quad y\\prime\\left(\\frac{\\pi}{6}\\right)=-\\sqrt3\\)"
+            },
+            {
+              "explain": "Substitute the point and gradient into y−y₁=m(x−x₁).",
+              "work": "\\(\\boxed{y-\\frac12=-\\sqrt3\\left(x-\\frac{\\pi}{6}\\right)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 003",
+            "page": "149",
+            "course": "Advanced",
+            "sourceQuestion": "Q2c, 2006 HSC"
           }
         }
       ]

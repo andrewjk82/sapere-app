@@ -7236,7 +7236,7 @@
           "stem": "The graphs of the functions y=kxⁿ and y=logₑx have a common tangent at x=a, as shown in the diagram.",
           "parts": [
             {
-              "id": "y12a-advanced-003-app-q46",
+              "id": "y12a-advanced-003-app-q46-i",
               "type": "mc",
               "difficulty": "hard",
               "stem": "By considering gradients, show that \\(a^n=\\frac1{nk}\\).",
@@ -17930,47 +17930,39 @@
           }
         },
         {
-          "id": "y12a-advanced-003-app-y12a-advanced-003-app-q02",
+          "id": "y12a-advanced-003-app-q02",
           "type": "mc",
-          "difficulty": "easy",
-          "stem": "Find the global maximum and minimum values of y = x³ − 6x² + 8, where −1 ≤ x ≤ 7.",
+          "difficulty": "medium",
+          "stem": "Find the global maximum and minimum values of \\(y=x^3-6x+8\\), where \\(-1\\le x\\le7\\).",
           "options": [
-            {
-              "text": "Maximum 57; minimum −24"
-            },
-            {
-              "text": "Maximum 8; minimum −24"
-            },
-            {
-              "text": "Maximum 57; minimum 1"
-            },
-            {
-              "text": "Maximum 8; minimum 1"
-            }
+            "Maximum \\(309\\); minimum \\(8-4\\sqrt2\\)",
+            "Maximum \\(8+4\\sqrt2\\); minimum \\(8-4\\sqrt2\\)",
+            "Maximum \\(309\\); minimum \\(13\\)",
+            "Maximum \\(13\\); minimum \\(8-4\\sqrt2\\)"
           ],
           "answer": 0,
-          "hint": "For a closed interval, test the endpoints and every stationary point inside it.",
+          "hint": "On a closed interval, check both endpoints and every stationary point inside it. Differentiate first to locate the stationary points.",
           "steps": [
             {
-              "explain": "Differentiate and find stationary x-values.",
-              "work": "\\(y\\prime=3x^2-12x=3x(x-4)=0\\Rightarrow x=0,4\\)"
+              "explain": "Differentiate the cubic. A stationary point can occur where the derivative is zero.",
+              "work": "\\(y'=3x^2-6=3(x^2-2)=0\\Rightarrow x=\\pm\\sqrt2\\)"
             },
             {
-              "explain": "Both stationary values are inside [−1,7]. Evaluate y at x=−1, 0, 4 and 7.",
-              "work": "\\(y(-1)=1,\\quad y(0)=8,\\quad y(4)=64-96+8=-24,\\quad y(7)=343-294+8=57\\)"
+              "explain": "Both stationary x-values lie between −1 and 7, so evaluate the function at both of them and at the two endpoints.",
+              "work": "\\(y(-1)=13,\\quad y(7)=309,\\quad y(-\\sqrt2)=8+4\\sqrt2,\\quad y(\\sqrt2)=8-4\\sqrt2\\)"
             },
             {
-              "explain": "Compare all four values. The largest is 57 and the smallest is −24.",
-              "work": "\\(\\boxed{y_{\\max}=57,\\quad y_{\\min}=-24}\\)"
+              "explain": "Compare the four values: 309 is the largest, while \\(8-4\\sqrt2\\approx2.34\\) is the smallest.",
+              "work": "\\(\\boxed{y_{\\max}=309,\\quad y_{\\min}=8-4\\sqrt2}\\)"
             }
           ],
           "timeLimit": 60,
           "xp": 1,
           "meta": {
             "source": "Y12 Advanced Topic by topic 003",
-            "page": "142-143, 156-157",
+            "page": "142",
             "course": "Advanced",
-            "sourceQuestion": "y12a"
+            "sourceQuestion": "Q22, 2022 HSC"
           }
         },
         {
@@ -28504,6 +28496,1676 @@
                 {
                   "explain": "Write the displacement as a function of time.",
                   "work": "\\(x=t+1-\\cos2t\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            }
+          ]
+        },
+        {
+          "id": "y12a-advanced-003-ant-q35",
+          "type": "multipart",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Find the following antiderivatives.",
+          "parts": [
+            {
+              "id": "y12a-advanced-003-ant-q35-i",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Find \\(\\int 5\\,dx\\).",
+              "options": [
+                "\\(5x+C\\)",
+                "\\(5+C\\)",
+                "\\(x^5+C\\)",
+                "\\(\\frac{x^5}{5}+C\\)"
+              ],
+              "answer": 0,
+              "hint": "The antiderivative of a constant is that constant multiplied by \\(x\\), plus \\(C\\).",
+              "steps": [
+                {
+                  "explain": "The derivative of \\(5x\\) is 5, so \\(5x\\) is an antiderivative of the constant 5.",
+                  "work": "\\(\\int5\\,dx=5x+C\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-ant-q35-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find \\(\\int\\frac{3}{(x-6)^2}\\,dx\\).",
+              "options": [
+                "\\(-\\frac{3}{x-6}+C\\)",
+                "\\(\\frac{3}{x-6}+C\\)",
+                "\\(3\\ln|x-6|+C\\)",
+                "\\(-\\frac{3}{(x-6)^3}+C\\)"
+              ],
+              "answer": 0,
+              "hint": "Rewrite the denominator as \\((x-6)^{-2}\\), then increase the power by one and divide by the new power.",
+              "steps": [
+                {
+                  "explain": "Rewrite using a negative exponent and take the constant outside.",
+                  "work": "\\(\\int\\frac{3}{(x-6)^2}dx=3\\int(x-6)^{-2}dx\\)"
+                },
+                {
+                  "explain": "The inner derivative of \\(x-6\\) is 1. Apply the power rule.",
+                  "work": "\\(3\\cdot\\frac{(x-6)^{-1}}{-1}+C=-\\frac{3}{x-6}+C\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            }
+          ]
+        },
+        {
+          "id": "y12a-advanced-003-ant-q36",
+          "type": "multipart",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "The acceleration of a particle is given by \\(\\ddot{x}=8e^{-2t}+3e^{-t}\\), where \\(x\\) is displacement in metres and \\(t\\) is time in seconds. Initially its velocity is \\(-6\\text{ m/s}\\) and its displacement is \\(5\\text{ m}\\).",
+          "parts": [
+            {
+              "id": "y12a-advanced-003-ant-q36-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Show that the displacement of the particle is given by \\(x=2e^{-2t}+3e^{-t}+t\\).",
+              "options": [
+                "\\(x=2e^{-2t}+3e^{-t}+t\\)",
+                "\\(x=-4e^{-2t}-3e^{-t}+t+5\\)",
+                "\\(x=2e^{-2t}-3e^{-t}+t+5\\)",
+                "\\(x=4e^{-2t}+3e^{-t}+t\\)"
+              ],
+              "answer": 0,
+              "hint": "Integrate acceleration to velocity and then to displacement. Apply both given initial conditions to determine the integration constants.",
+              "steps": [
+                {
+                  "explain": "Integrate acceleration to get velocity.",
+                  "work": "\\(\\dot{x}=\\int(8e^{-2t}+3e^{-t})dt=-4e^{-2t}-3e^{-t}+C_1\\)"
+                },
+                {
+                  "explain": "Use \\(\\dot{x}(0)=-6\\).",
+                  "work": "\\(-6=-4-3+C_1\\Rightarrow C_1=1\\quad\\therefore\\quad\\dot{x}=-4e^{-2t}-3e^{-t}+1\\)"
+                },
+                {
+                  "explain": "Integrate velocity to get displacement.",
+                  "work": "\\(x=2e^{-2t}+3e^{-t}+t+C_2\\)"
+                },
+                {
+                  "explain": "Use \\(x(0)=5\\) to find \\(C_2\\).",
+                  "work": "\\(5=2+3+C_2\\Rightarrow C_2=0\\quad\\therefore\\quad x=2e^{-2t}+3e^{-t}+t\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-ant-q36-ii",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "Find the time when the particle comes to rest.",
+              "options": [
+                "\\(t=\\ln4\\text{ s}\\)",
+                "\\(t=\\ln2\\text{ s}\\)",
+                "\\(t=4\\text{ s}\\)",
+                "\\(t=\\frac14\\text{ s}\\)"
+              ],
+              "answer": 0,
+              "hint": "Set velocity equal to zero. Substitute \\(u=e^{-t}\\) to turn the exponential equation into a quadratic.",
+              "steps": [
+                {
+                  "explain": "Set the velocity from part (i) equal to zero.",
+                  "work": "\\(-4e^{-2t}-3e^{-t}+1=0\\)"
+                },
+                {
+                  "explain": "Let \\(u=e^{-t}\\). Then \\(e^{-2t}=u^2\\), giving a quadratic.",
+                  "work": "\\(4u^2+3u-1=0=(4u-1)(u+1)\\)"
+                },
+                {
+                  "explain": "Since \\(u=e^{-t}>0\\), use \\(u=\frac14\\); discard \\(u=-1\\). Solve for time.",
+                  "work": "\\(e^{-t}=\\frac14\\Rightarrow -t=\\ln\\frac14=-\\ln4\\Rightarrow t=\\ln4\\text{ s}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-ant-q36-iii",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "Find the displacement when the particle comes to rest.",
+              "options": [
+                "\\(\\ln4+\\frac78\\text{ m}\\)",
+                "\\(\\ln4+\\frac14\\text{ m}\\)",
+                "\\(\\ln4+\\frac38\\text{ m}\\)",
+                "\\(\\ln4+\\frac18\\text{ m}\\)"
+              ],
+              "answer": 0,
+              "hint": "Use the stopping time \\(t=\\ln4\\) and substitute \\(e^{-t}=1/4\\), \\(e^{-2t}=1/16\\) into the displacement formula.",
+              "steps": [
+                {
+                  "explain": "From part (ii), at rest \\(t=\\ln4\\). Therefore \\(e^{-t}=1/4\\) and \\(e^{-2t}=1/16\\).",
+                  "work": "\\(x=2e^{-2t}+3e^{-t}+t\\)"
+                },
+                {
+                  "explain": "Substitute these values and combine the fractions.",
+                  "work": "\\(x=2\\left(\\frac1{16}\\right)+3\\left(\\frac14\\right)+\\ln4=\\frac18+\\frac34+\\ln4=\\ln4+\\frac78\\text{ m}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            }
+          ]
+        },
+        {
+          "id": "y12a-advanced-003-ant-q37",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find \\(\\int\\frac{1}{x+5}\\,dx\\).",
+          "options": [
+            "\\(\\ln|x+5|+C\\)",
+            "\\(-\\frac{1}{x+5}+C\\)",
+            "\\(\\frac12(x+5)^2+C\\)",
+            "\\(\\ln|x|+5+C\\)"
+          ],
+          "answer": 0,
+          "hint": "The integrand has the form \\(u\\prime/u\\), with \\(u=x+5\\). Use the logarithm rule.",
+          "steps": [
+            {
+              "explain": "The denominator \\(x+5\\) has derivative 1, matching the numerator.",
+              "work": "\\(\\int\\frac{1}{x+5}dx=\\int\\frac{1}{x+5}\\cdot1\\,dx\\)"
+            },
+            {
+              "explain": "Apply \\(\\int u\\prime/u\\,dx=\\ln|u|+C\\).",
+              "work": "\\(\\int\\frac{1}{x+5}dx=\\ln|x+5|+C\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y12a-advanced-003-ant-q38",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The gradient of a curve is given by \\(\\frac{dy}{dx}=1-6\\sin3x\\). The curve passes through the point \\((0,7)\\). What is the equation of the curve?",
+          "options": [
+            "\\(y=x+2\\cos3x+5\\)",
+            "\\(y=x-2\\cos3x+9\\)",
+            "\\(y=1-2\\cos3x+7\\)",
+            "\\(y=x+6\\cos3x+5\\)"
+          ],
+          "answer": 0,
+          "hint": "Integrate both terms in the gradient. The chain rule means integrating \\(-6\\sin3x\\) gives \\(2\\cos3x\\). Then use the point.",
+          "steps": [
+            {
+              "explain": "Integrate the gradient to find the general curve.",
+              "work": "\\(y=\\int(1-6\\sin3x)dx=x+2\\cos3x+C\\)"
+            },
+            {
+              "explain": "Substitute the point \\((0,7)\\).",
+              "work": "\\(7=0+2\\cos0+C=2+C\\Rightarrow C=5\\)"
+            },
+            {
+              "explain": "Write the equation.",
+              "work": "\\(y=x+2\\cos3x+5\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y12a-advanced-003-ant-q39",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find \\(\\int(1+\\cos3x)\\,dx\\).",
+          "options": [
+            "\\(x+\\sin3x+C\\)",
+            "\\(x+\\frac13\\sin3x+C\\)",
+            "\\(1+\\frac13\\sin3x+C\\)",
+            "\\(x+3\\sin3x+C\\)"
+          ],
+          "answer": 1,
+          "hint": "Integrate 1 to get \\(x\\). For \\(\\cos3x\\), divide by the derivative of the inside angle, 3.",
+          "steps": [
+            {
+              "explain": "Integrate the two terms separately.",
+              "work": "\\(\\int(1+\\cos3x)dx=\\int1dx+\\int\\cos3x\\,dx\\)"
+            },
+            {
+              "explain": "The first integral is \\(x\\). Reverse the chain rule for the second.",
+              "work": "\\(\\int\\cos3x\\,dx=\\frac13\\sin3x\\)"
+            },
+            {
+              "explain": "Combine the terms and add the constant.",
+              "work": "\\(\\int(1+\\cos3x)dx=x+\\frac13\\sin3x+C\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y12a-advanced-003-ant-q40",
+          "type": "multipart",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "A particle is moving on the \\(x\\)-axis and is initially at the origin. Its velocity, \\(v\\) metres per second, at time \\(t\\) seconds is given by \\(v=\\frac{2t}{16+t^2}\\).",
+          "parts": [
+            {
+              "id": "y12a-advanced-003-ant-q40-i",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "What is the initial velocity of the particle?",
+              "options": [
+                "\\(0\\text{ m/s}\\)",
+                "\\(\\frac18\\text{ m/s}\\)",
+                "\\(2\\text{ m/s}\\)",
+                "\\(16\\text{ m/s}\\)"
+              ],
+              "answer": 0,
+              "hint": "Substitute \\(t=0\\) into the velocity formula.",
+              "steps": [
+                {
+                  "explain": "Initial velocity is the value at time zero.",
+                  "work": "\\(v(0)=\\frac{2(0)}{16+0^2}=0\\text{ m/s}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-ant-q40-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find an expression for the acceleration of the particle.",
+              "options": [
+                "\\(\\frac{2(16-t^2)}{(16+t^2)^2}\\)",
+                "\\(\\frac{2}{16+t^2}\\)",
+                "\\(\\frac{2t}{(16+t^2)^2}\\)",
+                "\\(\\frac{2(16+t^2)}{(16-t^2)^2}\\)"
+              ],
+              "answer": 0,
+              "hint": "Acceleration is the derivative of velocity. Use the quotient rule on \\(2t/(16+t^2)\\).",
+              "steps": [
+                {
+                  "explain": "Use the quotient rule \\((u/v)\\prime=(u\\prime v-uv\\prime)/v^2\\), with \\(u=2t\\), \\(v=16+t^2\\).",
+                  "work": "\\(a=\\frac{2(16+t^2)-(2t)(2t)}{(16+t^2)^2}\\)"
+                },
+                {
+                  "explain": "Simplify the numerator.",
+                  "work": "\\(a=\\frac{32+2t^2-4t^2}{(16+t^2)^2}=\\frac{2(16-t^2)}{(16+t^2)^2}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-ant-q40-iii",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Find the time when the acceleration of the particle is zero.",
+              "options": [
+                "\\(t=4\\text{ s}\\)",
+                "\\(t=16\\text{ s}\\)",
+                "\\(t=0\\text{ s}\\)",
+                "\\(t=8\\text{ s}\\)"
+              ],
+              "answer": 0,
+              "hint": "The denominator of the acceleration is always positive. Set its numerator equal to zero and use \\(t\\geq0\\).",
+              "steps": [
+                {
+                  "explain": "Set the acceleration numerator equal to zero; the denominator cannot be zero.",
+                  "work": "\\(2(16-t^2)=0\\Rightarrow t^2=16\\)"
+                },
+                {
+                  "explain": "Solve and keep the nonnegative time.",
+                  "work": "\\(t=\\pm4\\Rightarrow t=4\\text{ s}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-ant-q40-iv",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "Find the position of the particle when \\(t=4\\).",
+              "options": [
+                "\\(\\ln2\\text{ m}\\)",
+                "\\(2\\ln2\\text{ m}\\)",
+                "\\(4\\ln2\\text{ m}\\)",
+                "\\(\\frac12\\text{ m}\\)"
+              ],
+              "answer": 0,
+              "hint": "Position is the integral of velocity. Use the initial position \\(x(0)=0\\), then evaluate at 4.",
+              "steps": [
+                {
+                  "explain": "Integrate the velocity. The numerator \\(2t\\) is the derivative of the denominator \\(16+t^2\\).",
+                  "work": "\\(x=\\int\\frac{2t}{16+t^2}dt=\\ln(16+t^2)+C\\)"
+                },
+                {
+                  "explain": "Use the initial position at the origin to find the constant.",
+                  "work": "\\(0=\\ln16+C\\Rightarrow C=-\\ln16\\)"
+                },
+                {
+                  "explain": "Evaluate at \\(t=4\\).",
+                  "work": "\\(x(4)=\\ln32-\\ln16=\\ln2\\text{ m}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            }
+          ]
+        },
+        {
+          "id": "y12a-advanced-003-ant-q41",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find \\(\\int(1+e^{7x})\\,dx\\).",
+          "options": [
+            "\\(x+\\frac17e^{7x}+C\\)",
+            "\\(1+7e^{7x}+C\\)",
+            "\\(x+7e^{7x}+C\\)",
+            "\\(\\frac{x^2}{2}+\\frac17e^{7x}+C\\)"
+          ],
+          "answer": 0,
+          "hint": "Integrate each term separately. For \\(e^{7x}\\), divide by the derivative of its exponent, 7.",
+          "steps": [
+            {
+              "explain": "Integrate the constant term and exponential term separately.",
+              "work": "\\(\\int1dx=x,\\qquad\\int e^{7x}dx=\\frac17e^{7x}\\)"
+            },
+            {
+              "explain": "Combine the two results and include the integration constant.",
+              "work": "\\(\\int(1+e^{7x})dx=x+\\frac17e^{7x}+C\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y12a-advanced-003-ant-q42",
+          "type": "multipart",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "During a storm, water flows into a 7000-litre tank at a rate of \\(\\frac{dV}{dt}=120+26t-t^2\\) litres per minute, where \\(t\\) is the time in minutes since the storm began. Initially, the tank contains 1500 litres. The storm finishes 30 minutes after it began, and at that time the tank is overflowing.",
+          "parts": [
+            {
+              "id": "y12a-advanced-003-ant-q42-i",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "At what times is the tank filling at twice the initial rate?",
+              "options": [
+                "\\(t=6\\text{ min and }20\\text{ min}\\)",
+                "\\(t=10\\text{ min and }16\\text{ min}\\)",
+                "\\(t=6\\text{ min only}\\)",
+                "\\(t=20\\text{ min only}\\)"
+              ],
+              "answer": 0,
+              "hint": "Find twice the initial rate, then solve \\(120+26t-t^2\\) equal to that rate.",
+              "steps": [
+                {
+                  "explain": "At \\(t=0\\), the initial filling rate is \\(120\\) L/min. Twice this is 240 L/min.",
+                  "work": "\\(V\\prime(0)=120,\\qquad 2V\\prime(0)=240\\)"
+                },
+                {
+                  "explain": "Set the rate equal to 240 and solve the quadratic.",
+                  "work": "\\(120+26t-t^2=240\\Rightarrow t^2-26t+120=0=(t-6)(t-20)\\)"
+                },
+                {
+                  "explain": "State both times.",
+                  "work": "\\(t=6\\text{ min or }t=20\\text{ min}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-ant-q42-ii",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Find the volume of water that has flowed into the tank since the start of the storm as a function of \\(t\\).",
+              "options": [
+                "\\(120t+13t^2-\\frac13t^3\\text{ L}\\)",
+                "\\(120+26t-t^2\\text{ L}\\)",
+                "\\(120t+26t^2-\\frac13t^3\\text{ L}\\)",
+                "\\(120t+13t^2-t^3\\text{ L}\\)"
+              ],
+              "answer": 0,
+              "hint": "Integrate the inflow rate with respect to time. Since the question asks for water flowed since the start, this amount is zero at \\(t=0\\).",
+              "steps": [
+                {
+                  "explain": "The total volume that has flowed in is the integral of the rate.",
+                  "work": "\\(W(t)=\\int(120+26t-t^2)dt=120t+13t^2-\\frac13t^3+C\\)"
+                },
+                {
+                  "explain": "At the start, no storm water has flowed into the tank, so \\(W(0)=0\\), giving \\(C=0\\).",
+                  "work": "\\(W(0)=C=0\\)"
+                },
+                {
+                  "explain": "Write the volume function.",
+                  "work": "\\(W(t)=120t+13t^2-\\frac13t^3\\text{ L}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-ant-q42-iii",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "How many litres of water have been lost when the storm finishes?",
+              "options": [
+                "\\(800\\text{ L}\\)",
+                "\\(500\\text{ L}\\)",
+                "\\(1300\\text{ L}\\)",
+                "\\(7800\\text{ L}\\)"
+              ],
+              "answer": 0,
+              "hint": "Calculate the total inflow over 30 minutes, add the initial 1500 L, then subtract the tank capacity of 7000 L.",
+              "steps": [
+                {
+                  "explain": "Use the inflow function from part (ii) and substitute \\(t=30\\).",
+                  "work": "\\(W(30)=120(30)+13(30)^2-\\frac13(30)^3=3600+11700-9000=6300\\text{ L}\\)"
+                },
+                {
+                  "explain": "Add the initial water to find the amount present before overflow.",
+                  "work": "\\(1500+6300=7800\\text{ L}\\)"
+                },
+                {
+                  "explain": "The tank holds 7000 L, so subtract its capacity to find the amount lost.",
+                  "work": "\\(7800-7000=800\\text{ L lost}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            }
+          ]
+        },
+        {
+          "id": "y12a-advanced-003-ant-q43",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find a primitive of \\(4+\\sec^2x\\).",
+          "options": [
+            "\\(4x+\\tan x+C\\)",
+            "\\(4x+\\sec x+C\\)",
+            "\\(4+\\tan x+C\\)",
+            "\\(4x+\\tan^2x+C\\)"
+          ],
+          "answer": 0,
+          "hint": "Integrate the constant 4 and use that the derivative of \\(\tan x\\) is \\(\\sec^2x\\).",
+          "steps": [
+            {
+              "explain": "Integrate each term.",
+              "work": "\\(\\int4dx=4x,\\qquad\\int\\sec^2x\\,dx=\\tan x\\)"
+            },
+            {
+              "explain": "Combine the primitives and include \\(C\\).",
+              "work": "\\(\\int(4+\\sec^2x)dx=4x+\\tan x+C\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y12a-advanced-003-ant-q44",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find \\(\\int\\frac{6x^2}{x^3+1}\\,dx\\).",
+          "options": [
+            "\\(2\\ln|x^3+1|+C\\)",
+            "\\(\\ln|x^3+1|+C\\)",
+            "\\(6\\ln|x^3+1|+C\\)",
+            "\\(\\frac{2}{x^3+1}+C\\)"
+          ],
+          "answer": 0,
+          "hint": "The derivative of the denominator \\(x^3+1\\) is \\(3x^2\\), half the numerator. Apply the logarithm rule.",
+          "steps": [
+            {
+              "explain": "Differentiate the denominator and compare with the numerator.",
+              "work": "\\(\\frac{d}{dx}(x^3+1)=3x^2,\\qquad 6x^2=2(3x^2)\\)"
+            },
+            {
+              "explain": "Factor out 2 and integrate using \\(\\int u\\prime/u\\,dx=\\ln|u|+C\\).",
+              "work": "\\(\\int\\frac{6x^2}{x^3+1}dx=2\\ln|x^3+1|+C\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y12a-advanced-003-ant-q45",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find \\(\\int\\frac{x}{x^2-3}\\,dx\\).",
+          "options": [
+            "\\(\\ln|x^2-3|+C\\)",
+            "\\(\\frac12\\ln|x^2-3|+C\\)",
+            "\\(-\\frac{1}{x^2-3}+C\\)",
+            "\\(\\frac12(x^2-3)^{-1}+C\\)"
+          ],
+          "answer": 1,
+          "hint": "The derivative of \\(x^2-3\\) is \\(2x\\), so the numerator is half the derivative of the denominator.",
+          "steps": [
+            {
+              "explain": "Write the numerator as half the derivative of the denominator.",
+              "work": "\\(\\frac{x}{x^2-3}=\\frac12\\frac{2x}{x^2-3}\\)"
+            },
+            {
+              "explain": "Use the logarithm rule.",
+              "work": "\\(\\int\\frac{x}{x^2-3}dx=\\frac12\\ln|x^2-3|+C\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y12a-advanced-003-ant-q46",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find a primitive of \\(3x^2-8\\).",
+          "options": [
+            "\\(x^3-8x+C\\)",
+            "\\(x^3-4x+C\\)",
+            "\\(6x-8+C\\)",
+            "\\(3x^3-8x+C\\)"
+          ],
+          "answer": 0,
+          "hint": "Integrate the power term with the power rule and the constant term separately.",
+          "steps": [
+            {
+              "explain": "Integrate \\(3x^2\\) by raising the power to 3 and dividing by 3.",
+              "work": "\\(\\int3x^2dx=3\\cdot\\frac{x^3}{3}=x^3\\)"
+            },
+            {
+              "explain": "Integrate \\(-8\\) to get \\(-8x\\), then include the constant.",
+              "work": "\\(\\int(3x^2-8)dx=x^3-8x+C\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y12a-advanced-003-ant-q47",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find \\(\\int\\frac{2x}{x^2+5}\\,dx\\).",
+          "options": [
+            "\\(\\ln(x^2+5)+C\\)",
+            "\\(2\\ln(x^2+5)+C\\)",
+            "\\(\\frac{1}{x^2+5}+C\\)",
+            "\\(\\tan^{-1}(x/\\sqrt5)+C\\)"
+          ],
+          "answer": 0,
+          "hint": "The numerator is the derivative of the denominator. Use the logarithm integration rule.",
+          "steps": [
+            {
+              "explain": "The derivative of \\(x^2+5\\) is exactly the numerator \\(2x\\).",
+              "work": "\\(\\frac{d}{dx}(x^2+5)=2x\\)"
+            },
+            {
+              "explain": "Apply the rule \\(\\int u\\prime/u\\,dx=\\ln|u|+C\\). Since \\(x^2+5>0\\), no absolute value is needed.",
+              "work": "\\(\\int\\frac{2x}{x^2+5}dx=\\ln(x^2+5)+C\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y12a-advanced-003-ant-q48",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Integrate \\(\\frac{3}{x}\\).",
+          "options": [
+            "\\(3\\ln|x|+C\\)",
+            "\\(\\frac{3}{x^2}+C\\)",
+            "\\(\\ln|3x|+C\\)",
+            "\\(3x+C\\)"
+          ],
+          "answer": 0,
+          "hint": "Take 3 outside the integral and use \\(\\int1/x\\,dx=\\ln|x|+C\\).",
+          "steps": [
+            {
+              "explain": "Factor out the constant.",
+              "work": "\\(\\int\\frac{3}{x}dx=3\\int\\frac1x dx\\)"
+            },
+            {
+              "explain": "Use the natural logarithm antiderivative.",
+              "work": "\\(3\\int\\frac1x dx=3\\ln|x|+C\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y12a-advanced-003-ant-q49",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find \\(\\int\\cos3x\\,dx\\).",
+          "options": [
+            "\\(\\sin3x+C\\)",
+            "\\(\\frac13\\sin3x+C\\)",
+            "\\(3\\sin3x+C\\)",
+            "\\(-\\frac13\\sin3x+C\\)"
+          ],
+          "answer": 1,
+          "hint": "The inside angle is \\(3x\\), whose derivative is 3. Divide by 3 when reversing the chain rule.",
+          "steps": [
+            {
+              "explain": "The derivative of \\(\\sin3x\\) would be \\(3\\cos3x\\). Therefore divide by 3 to obtain the desired integrand.",
+              "work": "\\(\\int\\cos3x\\,dx=\\frac13\\sin3x+C\\)"
+            },
+            {
+              "explain": "Check by differentiating.",
+              "work": "\\(\\frac{d}{dx}\\left(\\frac13\\sin3x\\right)=\\frac13(3\\cos3x)=\\cos3x\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y12a-advanced-003-ant-q50",
+          "type": "multipart",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "The gradient function of a curve is given by \\(f\\prime(x)=3(x+1)(x-3)\\), and the curve \\(y=f(x)\\) passes through the point \\((0,12)\\).",
+          "parts": [
+            {
+              "id": "y12a-advanced-003-ant-q50-i",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Find the equation of the curve \\(y=f(x)\\).",
+              "options": [
+                "\\(y=x^3-3x^2-9x+12\\)",
+                "\\(y=x^3-3x^2-9x\\)",
+                "\\(y=3x^3-6x^2-9x+12\\)",
+                "\\(y=x^3+3x^2-9x+12\\)"
+              ],
+              "answer": 0,
+              "hint": "Expand the gradient function, integrate term by term, then use \\(f(0)=12\\) to find the constant.",
+              "steps": [
+                {
+                  "explain": "Expand the derivative first.",
+                  "work": "\\(f\\prime(x)=3(x^2-2x-3)=3x^2-6x-9\\)"
+                },
+                {
+                  "explain": "Integrate each term.",
+                  "work": "\\(f(x)=\\int(3x^2-6x-9)dx=x^3-3x^2-9x+C\\)"
+                },
+                {
+                  "explain": "Use the point \\((0,12)\\) to find the constant.",
+                  "work": "\\(12=0-0-0+C\\Rightarrow C=12\\)"
+                },
+                {
+                  "explain": "Write the curve equation.",
+                  "work": "\\(y=x^3-3x^2-9x+12\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-ant-q50-ii",
+              "type": "review",
+              "difficulty": "hard",
+              "manual": true,
+              "answer": "Sketch a cubic with local maximum (-1,17), local minimum (3,-15), y-intercept (0,12), rising for x<−1 and x>3 and falling for −1<x<3.",
+              "stem": "Sketch the curve, clearly labelling turning points and the y-intercept.",
+              "hint": "Use the equation from part (i). Set its derivative to zero for the turning points, then substitute those x-values into the curve to find their coordinates.",
+              "steps": [
+                {
+                  "explain": "Find the stationary x-values by setting the gradient equal to zero.",
+                  "work": "\\(3(x+1)(x-3)=0\\Rightarrow x=-1,3\\)"
+                },
+                {
+                  "explain": "Substitute each x-value into \\(f(x)=x^3-3x^2-9x+12\\) and classify the turning points using the derivative sign.",
+                  "work": "\\(f(-1)=17\\text{ (local maximum)},\\qquad f(3)=-15\\text{ (local minimum)}\\)"
+                },
+                {
+                  "explain": "The curve passes through \\((0,12)\\). Mark this y-intercept and both turning points, then draw a smooth cubic with the correct increasing/decreasing intervals.",
+                  "work": "\\(\\text{turning points }(-1,17),(3,-15);\\quad y\\text{-intercept }(0,12)\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 400 270\"><rect width=\"400\" height=\"270\" fill=\"white\"/><path d=\"M30 180H370M160 20V260\" stroke=\"#475569\" stroke-width=\"2\"/><path d=\"M40.0,255.0 L43.5,239.7 L47.0,225.3 L50.5,211.8 L54.0,199.1 L57.5,187.3 L61.0,176.3 L64.5,166.1 L68.0,156.7 L71.5,148.0 L75.0,140.1 L78.5,132.9 L82.0,126.4 L85.5,120.5 L89.0,115.3 L92.5,110.8 L96.0,106.9 L99.5,103.6 L103.0,100.8 L106.5,98.6 L110.0,97.0 L113.5,95.8 L117.0,95.2 L120.5,95.0 L124.0,95.3 L127.5,96.0 L131.0,97.2 L134.5,98.7 L138.0,100.6 L141.5,102.9 L145.0,105.5 L148.5,108.4 L152.0,111.6 L155.5,115.1 L159.0,118.9 L162.5,122.9 L166.0,127.1 L169.5,131.5 L173.0,136.0 L176.5,140.8 L180.0,145.6 L183.5,150.6 L187.0,155.7 L190.5,160.8 L194.0,166.0 L197.5,171.3 L201.0,176.5 L204.5,181.7 L208.0,187.0 L211.5,192.1 L215.0,197.2 L218.5,202.3 L222.0,207.2 L225.5,212.0 L229.0,216.6 L232.5,221.1 L236.0,225.4 L239.5,229.4 L243.0,233.3 L246.5,236.9 L250.0,240.2 L253.5,243.3 L257.0,246.0 L260.5,248.4 L264.0,250.5 L267.5,252.2 L271.0,253.5 L274.5,254.4 L278.0,254.9 L281.5,255.0 L285.0,254.5 L288.5,253.6 L292.0,252.2 L295.5,250.2 L299.0,247.7 L302.5,244.6 L306.0,241.0 L309.5,236.7 L313.0,231.8 L316.5,226.2 L320.0,220.0\" fill=\"none\" stroke=\"#5b4ce2\" stroke-width=\"3\"/><circle cx=\"120\" cy=\"95\" r=\"5\" fill=\"#f59e0b\"/><circle cx=\"280\" cy=\"255\" r=\"5\" fill=\"#06a77d\"/><circle cx=\"160\" cy=\"120\" r=\"4\" fill=\"#2563eb\"/><text x=\"69\" y=\"79\" font-family=\"Arial\" font-size=\"12\">max (−1, 17)</text><text x=\"285\" y=\"238\" font-family=\"Arial\" font-size=\"12\">min (3, −15)</text><text x=\"164\" y=\"115\" font-family=\"Arial\" font-size=\"12\">(0, 12)</text><text x=\"374\" y=\"184\" font-family=\"Arial\" font-size=\"13\">x</text><text x=\"164\" y=\"18\" font-family=\"Arial\" font-size=\"13\">y</text></svg>"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "y12a-advanced-003-ant-q50-iii",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "For what values of \\(x\\) is the curve concave up?",
+              "options": [
+                "\\(x>1\\)",
+                "\\(x<1\\)",
+                "\\(x>3\\)",
+                "\\(-1<x<3\\)"
+              ],
+              "answer": 0,
+              "hint": "Differentiate the gradient again. The curve is concave up where the second derivative is positive.",
+              "steps": [
+                {
+                  "explain": "Expand the gradient and differentiate to get the second derivative.",
+                  "work": "\\(f\\prime(x)=3x^2-6x-9\\Rightarrow f\\prime\\prime(x)=6x-6\\)"
+                },
+                {
+                  "explain": "Solve \\(f\\prime\\prime(x)>0\\).",
+                  "work": "\\(6x-6>0\\Rightarrow6x>6\\Rightarrow x>1\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            }
+          ]
+        },
+        {
+          "id": "y12a-advanced-003-ant-q51",
+          "type": "multipart",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "A car and a jet race one another from rest down a runway. The car increases its speed \\(v_1\\) at a constant rate, while the speed of the jet is given by \\(v_2=2t^2\\). After 5 seconds the car and the jet have the same speed of 50 m/s, as shown on the graph.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 360 240\"><rect width=\"360\" height=\"240\" fill=\"white\"/><path d=\"M45 190H320M60 210V25\" stroke=\"#475569\" stroke-width=\"2\"/><path d=\"M60 190L285 55\" stroke=\"#5b4ce2\" stroke-width=\"3\"/><path d=\"M60 190Q170 172 285 55\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><circle cx=\"60\" cy=\"190\" r=\"4\" fill=\"#334155\"/><circle cx=\"285\" cy=\"55\" r=\"4\" fill=\"#06a77d\"/><path d=\"M285 55V190M60 190H285\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 4\"/><text x=\"48\" y=\"207\" font-family=\"Arial\" font-size=\"12\">0</text><text x=\"281\" y=\"207\" font-family=\"Arial\" font-size=\"12\">5</text><text x=\"35\" y=\"61\" font-family=\"Arial\" font-size=\"12\">50</text><text x=\"322\" y=\"195\" font-family=\"Arial\" font-size=\"13\">t (s)</text><text x=\"62\" y=\"22\" font-family=\"Arial\" font-size=\"13\">v (m/s)</text><text x=\"178\" y=\"156\" font-family=\"Arial\" font-size=\"12\" fill=\"#5b4ce2\">car</text><text x=\"194\" y=\"133\" font-family=\"Arial\" font-size=\"12\" fill=\"#b45309\">jet</text></svg>"
+          },
+          "parts": [
+            {
+              "id": "y12a-advanced-003-ant-q51-i",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Find an equation for the speed \\(v_1\\) of the car in terms of \\(t\\).",
+              "options": [
+                "\\(v_1=10t\\)",
+                "\\(v_1=5t\\)",
+                "\\(v_1=2t^2\\)",
+                "\\(v_1=50t\\)"
+              ],
+              "answer": 0,
+              "hint": "The car starts from rest and increases speed at a constant rate, so its velocity-time graph is a straight line through \\((0,0)\\) and \\((5,50)\\). Find its gradient.",
+              "steps": [
+                {
+                  "explain": "A constant rate of increase means the car’s velocity is linear: \\(v_1=mt\\), since it starts from rest.",
+                  "work": "\\(m=\\frac{50-0}{5-0}=10\\text{ m/s}^2\\)"
+                },
+                {
+                  "explain": "Use this gradient in the line equation.",
+                  "work": "\\(v_1=10t\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 360 240\"><rect width=\"360\" height=\"240\" fill=\"white\"/><path d=\"M45 190H320M60 210V25\" stroke=\"#475569\" stroke-width=\"2\"/><path d=\"M60 190L285 55\" stroke=\"#5b4ce2\" stroke-width=\"3\"/><path d=\"M60 190Q170 172 285 55\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><circle cx=\"60\" cy=\"190\" r=\"4\" fill=\"#334155\"/><circle cx=\"285\" cy=\"55\" r=\"4\" fill=\"#06a77d\"/><path d=\"M285 55V190M60 190H285\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 4\"/><text x=\"48\" y=\"207\" font-family=\"Arial\" font-size=\"12\">0</text><text x=\"281\" y=\"207\" font-family=\"Arial\" font-size=\"12\">5</text><text x=\"35\" y=\"61\" font-family=\"Arial\" font-size=\"12\">50</text><text x=\"322\" y=\"195\" font-family=\"Arial\" font-size=\"13\">t (s)</text><text x=\"62\" y=\"22\" font-family=\"Arial\" font-size=\"13\">v (m/s)</text><text x=\"178\" y=\"156\" font-family=\"Arial\" font-size=\"12\" fill=\"#5b4ce2\">car</text><text x=\"194\" y=\"133\" font-family=\"Arial\" font-size=\"12\" fill=\"#b45309\">jet</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-ant-q51-ii",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "How far behind the car is the jet after 5 seconds?",
+              "options": [
+                "\\(\\frac{125}{3}\\text{ m}\\)",
+                "\\(\\frac{250}{3}\\text{ m}\\)",
+                "\\(125\\text{ m}\\)",
+                "\\(50\\text{ m}\\)"
+              ],
+              "answer": 0,
+              "hint": "Distance travelled is the area under each speed-time graph. Find the car’s triangular area and the jet’s area by integrating \\(2t^2\\).",
+              "steps": [
+                {
+                  "explain": "The car’s graph from 0 to 5 seconds is a triangle with base 5 and height 50.",
+                  "work": "\\(d_{car}=\\frac12(5)(50)=125\\text{ m}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 360 240\"><rect width=\"360\" height=\"240\" fill=\"white\"/><path d=\"M45 190H320M60 210V25\" stroke=\"#475569\" stroke-width=\"2\"/><path d=\"M60 190L285 55\" stroke=\"#5b4ce2\" stroke-width=\"3\"/><path d=\"M60 190Q170 172 285 55\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><circle cx=\"60\" cy=\"190\" r=\"4\" fill=\"#334155\"/><circle cx=\"285\" cy=\"55\" r=\"4\" fill=\"#06a77d\"/><path d=\"M285 55V190M60 190H285\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 4\"/><text x=\"48\" y=\"207\" font-family=\"Arial\" font-size=\"12\">0</text><text x=\"281\" y=\"207\" font-family=\"Arial\" font-size=\"12\">5</text><text x=\"35\" y=\"61\" font-family=\"Arial\" font-size=\"12\">50</text><text x=\"322\" y=\"195\" font-family=\"Arial\" font-size=\"13\">t (s)</text><text x=\"62\" y=\"22\" font-family=\"Arial\" font-size=\"13\">v (m/s)</text><text x=\"178\" y=\"156\" font-family=\"Arial\" font-size=\"12\" fill=\"#5b4ce2\">car</text><text x=\"194\" y=\"133\" font-family=\"Arial\" font-size=\"12\" fill=\"#b45309\">jet</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Integrate the jet’s speed from 0 to 5 seconds.",
+                  "work": "\\(d_{jet}=\\int_0^5 2t^2dt=\\left[\\frac23t^3\\right]_0^5=\\frac{250}{3}\\text{ m}\\)"
+                },
+                {
+                  "explain": "Subtract the jet distance from the car distance to find how far behind it is.",
+                  "work": "\\(125-\\frac{250}{3}=\\frac{375-250}{3}=\\frac{125}{3}\\text{ m}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-ant-q51-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "After how many seconds does the jet catch up with the car?",
+              "options": [
+                "\\(7.5\\text{ s}\\)",
+                "\\(5\\text{ s}\\)",
+                "\\(10\\text{ s}\\)",
+                "\\(15\\text{ s}\\)"
+              ],
+              "answer": 0,
+              "hint": "Set the distances travelled equal. Integrate each speed from the common starting point, then solve for the positive time after the start.",
+              "steps": [
+                {
+                  "explain": "Integrate the speeds to get distances from the start.",
+                  "work": "\\(d_{car}=\\int10t\\,dt=5t^2,\\qquad d_{jet}=\\int2t^2dt=\\frac23t^3\\)"
+                },
+                {
+                  "explain": "Set distances equal. Exclude \\(t=0\\), when both were together at the start.",
+                  "work": "\\(5t^2=\\frac23t^3\\Rightarrow t^2(5-\\frac23t)=0\\)"
+                },
+                {
+                  "explain": "For the later meeting, solve the remaining factor.",
+                  "work": "\\(5-\\frac23t=0\\Rightarrow t=\\frac{15}{2}=7.5\\text{ s}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            }
+          ]
+        },
+        {
+          "id": "y12a-advanced-003-ant-q52",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find a primitive of \\(3+\\frac1x\\).",
+          "options": [
+            "\\(3x+\\ln|x|+C\\)",
+            "\\(3+\\ln|x|+C\\)",
+            "\\(3x+\\frac1x+C\\)",
+            "\\(\\frac32x^2+\\ln|x|+C\\)"
+          ],
+          "answer": 0,
+          "hint": "Integrate the constant and use the standard primitive of \\(1/x\\).",
+          "steps": [
+            {
+              "explain": "Integrate the two terms separately.",
+              "work": "\\(\\int3dx=3x,\\qquad\\int\\frac1x dx=\\ln|x|\\)"
+            },
+            {
+              "explain": "Add the results and the integration constant.",
+              "work": "\\(\\int(3+\\frac1x)dx=3x+\\ln|x|+C\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y12a-advanced-003-ant-q53",
+          "type": "multipart",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "When a valve is released, a chemical flows into a large tank that is initially empty. The volume, \\(V\\) litres, of chemical in the tank increases at the rate \\(\\frac{dV}{dt}=2e^t+2e^{-t}\\), where \\(t\\) is measured in hours from the time the valve is released.",
+          "parts": [
+            {
+              "id": "y12a-advanced-003-ant-q53-i",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "At what rate does the chemical initially enter the tank?",
+              "options": [
+                "\\(4\\text{ L/h}\\)",
+                "\\(2\\text{ L/h}\\)",
+                "\\(0\\text{ L/h}\\)",
+                "\\(2e\\text{ L/h}\\)"
+              ],
+              "answer": 0,
+              "hint": "Evaluate the given rate at the start, \\(t=0\\). Remember that both exponentials equal 1 there.",
+              "steps": [
+                {
+                  "explain": "Substitute \\(t=0\\) into the rate formula.",
+                  "work": "\\(\\left.\\frac{dV}{dt}\\right|_{t=0}=2e^0+2e^0=2+2=4\\text{ L/h}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-ant-q53-ii",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Use integration to find an expression for \\(V\\) in terms of \\(t\\).",
+              "options": [
+                "\\(V=2e^t-2e^{-t}\\)",
+                "\\(V=2e^t+2e^{-t}\\)",
+                "\\(V=e^t-e^{-t}\\)",
+                "\\(V=2e^t-2e^{-t}+4\\)"
+              ],
+              "answer": 0,
+              "hint": "Integrate the rate and use the fact that the tank is empty at \\(t=0\\) to determine the constant.",
+              "steps": [
+                {
+                  "explain": "Integrate the two exponential terms. The antiderivative of \\(2e^{-t}\\) is \\(-2e^{-t}\\).",
+                  "work": "\\(V=\\int(2e^t+2e^{-t})dt=2e^t-2e^{-t}+C\\)"
+                },
+                {
+                  "explain": "The tank starts empty, so \\(V(0)=0\\). Substitute to find \\(C\\).",
+                  "work": "\\(0=2-2+C\\Rightarrow C=0\\)"
+                },
+                {
+                  "explain": "State the volume function.",
+                  "work": "\\(V=2e^t-2e^{-t}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-ant-q53-iii",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Show that \\(2e^{2t}-3e^t-2=0\\) when \\(V=3\\).",
+              "options": [
+                "\\(2e^{2t}-3e^t-2=0\\)",
+                "\\(2e^{2t}+3e^t-2=0\\)",
+                "\\(2e^{2t}-3e^t+2=0\\)",
+                "\\(e^{2t}-3e^t-2=0\\)"
+              ],
+              "answer": 0,
+              "hint": "Substitute \\(V=3\\) into the expression for volume, then multiply through by \\(e^t\\) to remove the negative exponent.",
+              "steps": [
+                {
+                  "explain": "Set the volume formula equal to 3.",
+                  "work": "\\(2e^t-2e^{-t}=3\\)"
+                },
+                {
+                  "explain": "Multiply every term by \\(e^t\\).",
+                  "work": "\\(2e^{2t}-2=3e^t\\)"
+                },
+                {
+                  "explain": "Move all terms to one side.",
+                  "work": "\\(2e^{2t}-3e^t-2=0\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-ant-q53-iv",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "Find \\(t\\), to the nearest minute, when \\(V=3\\).",
+              "options": [
+                "\\(42\\text{ minutes}\\)",
+                "\\(30\\text{ minutes}\\)",
+                "\\(60\\text{ minutes}\\)",
+                "\\(69\\text{ minutes}\\)"
+              ],
+              "answer": 0,
+              "hint": "Use the quadratic from part (iii) with \\(u=e^t\\), keep the positive solution, and convert the time from hours to minutes.",
+              "steps": [
+                {
+                  "explain": "Let \\(u=e^t\\). The equation becomes a quadratic.",
+                  "work": "\\(2u^2-3u-2=0=(2u+1)(u-2)\\)"
+                },
+                {
+                  "explain": "Since \\(u=e^t>0\\), take \\(u=2\\) and solve for \\(t\\).",
+                  "work": "\\(e^t=2\\Rightarrow t=\\ln2\\text{ hours}\\)"
+                },
+                {
+                  "explain": "Convert hours to minutes and round to the nearest minute.",
+                  "work": "\\(60\\ln2\\approx41.59\\text{ min}\\Rightarrow42\\text{ minutes}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            }
+          ]
+        },
+        {
+          "id": "y12a-advanced-003-ant-q54",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find \\(\\int\\sec^2 5x\\,dx\\).",
+          "options": [
+            "\\(\\tan5x+C\\)",
+            "\\(\\frac15\\tan5x+C\\)",
+            "\\(5\\tan5x+C\\)",
+            "\\(-\\frac15\\cot5x+C\\)"
+          ],
+          "answer": 1,
+          "hint": "The derivative of \\(\tan(5x)\\) is \\(5\\sec^2(5x)\\), so divide by 5.",
+          "steps": [
+            {
+              "explain": "Use the fact that \\(\frac{d}{dx}\tan(5x)=5\\sec^2(5x)\\).",
+              "work": "\\(\\sec^2(5x)=\\frac15\\frac{d}{dx}\\tan(5x)\\)"
+            },
+            {
+              "explain": "Integrate and include the constant.",
+              "work": "\\(\\int\\sec^2(5x)dx=\\frac15\\tan(5x)+C\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y12a-advanced-003-ant-q55",
+          "type": "review",
+          "difficulty": "medium",
+          "manual": true,
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "The diagram shows a sketch of the gradient function \\(y=f\\prime(x)\\). Draw a sketch of the function \\(y=f(x)\\), given that \\(f(0)=0\\).",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 360 230\"><rect width=\"360\" height=\"230\" fill=\"white\"/><path d=\"M40 180H325M75 205V20\" stroke=\"#475569\" stroke-width=\"2\"/><path d=\"M40 58 C53 60 66 60 75 60 C96 79 109 151 125 180 C146 180 164 137 190 80 C205 50 215 40 225 44 C247 48 264 115 278 180 C293 208 308 203 323 199\" fill=\"none\" stroke=\"#5b4ce2\" stroke-width=\"3\"/><text x=\"326\" y=\"184\" font-family=\"Arial\" font-size=\"13\">x</text><text x=\"78\" y=\"18\" font-family=\"Arial\" font-size=\"13\">y</text><text x=\"182\" y=\"33\" font-family=\"Arial\" font-size=\"13\">y = f′(x)</text><text x=\"116\" y=\"199\" font-family=\"Arial\" font-size=\"12\">1</text><text x=\"274\" y=\"199\" font-family=\"Arial\" font-size=\"12\">3</text><text x=\"52\" y=\"62\" font-family=\"Arial\" font-size=\"12\">2</text></svg>"
+          },
+          "answer": "Sketch an increasing curve through (0,0), with a horizontal stationary point of inflection at x=1, and a local maximum at x=3; the curve decreases for x>3.",
+          "hint": "Where the gradient graph is above the x-axis, f is increasing; where it is below, f is decreasing. A touch at x=1 gives a horizontal stationary point but does not change the increasing direction.",
+          "steps": [
+            {
+              "explain": "Read the sign of the gradient graph. It is above the x-axis before and after \\(x=1\\) until it crosses at \\(x=3\\), so \\(f\\) increases on both sides of 1 and continues increasing until 3.",
+              "work": "\\(f\\prime(x)>0\\text{ for }x<3,\\ x\\ne1\\)"
+            },
+            {
+              "explain": "At \\(x=1\\), the gradient touches zero but stays positive on both sides. So \\(f\\) has a horizontal stationary point of inflection there, not a maximum or minimum.",
+              "work": "\\(f\\prime(1)=0\\text{ with no sign change}\\)"
+            },
+            {
+              "explain": "At \\(x=3\\), the gradient changes from positive to negative, so \\(f\\) has a local maximum. Anchor the sketch at \\((0,0)\\), as given.",
+              "work": "\\(f(0)=0;\\quad x=3\\text{ is a local maximum}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 360 230\"><rect width=\"360\" height=\"230\" fill=\"white\"/><path d=\"M40 180H325M75 205V20\" stroke=\"#475569\" stroke-width=\"2\"/><path d=\"M43 180 C70 151 99 121 125 113 C151 109 181 97 210 77 C240 54 266 33 286 28 C302 26 314 35 325 52\" fill=\"none\" stroke=\"#5b4ce2\" stroke-width=\"3\"/><circle cx=\"75\" cy=\"180\" r=\"4\" fill=\"#2563eb\"/><circle cx=\"125\" cy=\"113\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"286\" cy=\"28\" r=\"4\" fill=\"#ef4444\"/><text x=\"80\" y=\"195\" font-family=\"Arial\" font-size=\"12\">f(0)=0</text><text x=\"126\" y=\"106\" font-family=\"Arial\" font-size=\"12\">stationary inflection</text><text x=\"245\" y=\"20\" font-family=\"Arial\" font-size=\"12\">local maximum</text><text x=\"326\" y=\"184\" font-family=\"Arial\" font-size=\"13\">x</text><text x=\"78\" y=\"18\" font-family=\"Arial\" font-size=\"13\">y</text></svg>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "y12a-advanced-003-ant-q56",
+          "type": "multipart",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "The first snow of the season begins to fall during the night. The depth of snow, \\(h\\), increases at a constant rate through the night and the following day. At 6 am a snow plough begins to clear the road of snow. The speed, \\(v\\) km/h, of the snow plough is inversely proportional to the depth of snow: \\(v=\\frac{A}{h}\\), where \\(A\\) is a constant. Let \\(x\\) km be the distance the snow plough has cleared and let \\(t\\) be the time in hours from the beginning of the snowfall. Let \\(t=T\\) correspond to 6 am.",
+          "parts": [
+            {
+              "id": "y12a-advanced-003-ant-q56-i",
+              "type": "review",
+              "difficulty": "hard",
+              "manual": true,
+              "answer": "Since snow depth increases at a constant rate from zero, h=ct for some constant c. Then dx/dt=v=A/h=A/(ct)=k/t, where k=A/c.",
+              "stem": "Explain carefully why, for \\(t\\geq T\\), \\(\\frac{dx}{dt}=\\frac{k}{t}\\), where \\(k\\) is a constant.",
+              "hint": "Write the constant rate of increase in snow depth as \\(h=ct\\). Then substitute this expression into \\(v=A/h\\), and use \\(v=dx/dt\\).",
+              "steps": [
+                {
+                  "explain": "The snow depth starts at zero and increases at a constant rate, so it is proportional to time. Let \\(h=ct\\), where \\(c\\) is a positive constant.",
+                  "work": "\\(h=ct\\)"
+                },
+                {
+                  "explain": "The plough speed is the rate of change of distance, so \\(v=dx/dt\\). Substitute \\(h=ct\\) into the inverse-proportion rule.",
+                  "work": "\\(\\frac{dx}{dt}=v=\\frac{A}{h}=\\frac{A}{ct}\\)"
+                },
+                {
+                  "explain": "Combine the constants by setting \\(k=A/c\\).",
+                  "work": "\\(\\frac{dx}{dt}=\\frac{A/c}{t}=\\frac{k}{t}\\)"
+                }
+              ]
+            },
+            {
+              "id": "y12a-advanced-003-ant-q56-ii",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "At what time did it begin snowing if the plough clears 1 km from 6 am to 8 am, then takes a further 3.5 hours to clear the next kilometre?",
+              "options": [
+                "\\(3{:}20\\text{ am}\\)",
+                "\\(2{:}40\\text{ am}\\)",
+                "\\(4{:}00\\text{ am}\\)",
+                "\\(5{:}20\\text{ am}\\)"
+              ],
+              "answer": 0,
+              "hint": "Integrate \\(dx/dt=k/t\\) over each 1 km interval. Equate the two logarithmic distance expressions to solve for \\(T\\), the number of hours from snowfall start to 6 am.",
+              "steps": [
+                {
+                  "explain": "The first kilometre is cleared from \\(t=T\\) to \\(t=T+2\\). Integrate the speed law.",
+                  "work": "\\(1=\\int_T^{T+2}\\frac{k}{t}dt=k\\ln\\frac{T+2}{T}\\)"
+                },
+                {
+                  "explain": "The next kilometre takes 3.5 hours, so it is cleared from \\(T+2\\) to \\(T+5.5\\). Its distance is also 1 km.",
+                  "work": "\\(1=k\\ln\\frac{T+5.5}{T+2}\\)"
+                },
+                {
+                  "explain": "Equate the logarithms and solve for \\(T\\).",
+                  "work": "\\(\\frac{T+2}{T}=\\frac{T+5.5}{T+2}\\Rightarrow(T+2)^2=T(T+5.5)\\Rightarrow4T+4=5.5T\\Rightarrow T=\\frac83\\text{ h}\\)"
+                },
+                {
+                  "explain": "Convert \\(8/3\\) hours to 2 hours 40 minutes before 6 am.",
+                  "work": "\\(6{:}00\\text{ am}-2\\text{ h }40\\text{ min}=3{:}20\\text{ am}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            }
+          ]
+        },
+        {
+          "id": "y12a-advanced-003-ant-q57",
+          "type": "multipart",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Find the following integrals.",
+          "parts": [
+            {
+              "id": "y12a-advanced-003-ant-q57-i",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Find \\(\\int(\\frac1{x^2}+\\frac1x)\\,dx\\).",
+              "options": [
+                "\\(-\\frac1x+\\ln|x|+C\\)",
+                "\\(\\frac1x+\\ln|x|+C\\)",
+                "\\(-\\frac1{x^2}+\\ln|x|+C\\)",
+                "\\(\\frac{x^3}{3}+\\ln|x|+C\\)"
+              ],
+              "answer": 0,
+              "hint": "Integrate the two terms separately: rewrite \\(1/x^2\\) as \\(x^{-2}\\), and use the logarithm rule for \\(1/x\\).",
+              "steps": [
+                {
+                  "explain": "Rewrite the first term as a power and integrate each term.",
+                  "work": "\\(\\int(x^{-2}+x^{-1})dx=-x^{-1}+\\ln|x|+C\\)"
+                },
+                {
+                  "explain": "Write the negative power as a fraction.",
+                  "work": "\\(-\\frac1x+\\ln|x|+C\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-ant-q57-ii",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Find \\(\\int\\cos(2x+1)\\,dx\\).",
+              "options": [
+                "\\(\\frac12\\sin(2x+1)+C\\)",
+                "\\(2\\sin(2x+1)+C\\)",
+                "\\(-\\frac12\\sin(2x+1)+C\\)",
+                "\\(\\sin(2x+1)+C\\)"
+              ],
+              "answer": 0,
+              "hint": "The inside angle has derivative 2. Divide the sine antiderivative by 2.",
+              "steps": [
+                {
+                  "explain": "The derivative of \\(\\sin(2x+1)\\) is \\(2\\cos(2x+1)\\), twice the integrand.",
+                  "work": "\\(\\cos(2x+1)=\\frac12\\frac{d}{dx}\\sin(2x+1)\\)"
+                },
+                {
+                  "explain": "Integrate and include the constant.",
+                  "work": "\\(\\int\\cos(2x+1)dx=\\frac12\\sin(2x+1)+C\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            }
+          ]
+        },
+        {
+          "id": "y12a-advanced-003-ant-q58",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find a primitive of \\(x^2+7\\).",
+          "options": [
+            "\\(\\frac{x^3}{3}+7x+C\\)",
+            "\\(2x+7+C\\)",
+            "\\(\\frac{x^3}{3}+7+C\\)",
+            "\\(x^3+7x+C\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the power rule for \\(x^2\\), then integrate the constant 7.",
+          "steps": [
+            {
+              "explain": "Integrate each term.",
+              "work": "\\(\\int x^2dx=\\frac{x^3}{3},\\qquad\\int7dx=7x\\)"
+            },
+            {
+              "explain": "Combine and add the integration constant.",
+              "work": "\\(\\int(x^2+7)dx=\\frac{x^3}{3}+7x+C\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y12a-advanced-003-ant-q59",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find \\(\\int\\frac{x}{x^2+3}\\,dx\\).",
+          "options": [
+            "\\(\\frac12\\ln(x^2+3)+C\\)",
+            "\\(\\ln(x^2+3)+C\\)",
+            "\\(2\\ln(x^2+3)+C\\)",
+            "\\(-\\frac{1}{x^2+3}+C\\)"
+          ],
+          "answer": 0,
+          "hint": "The numerator is half the derivative of the denominator. Use the logarithm rule.",
+          "steps": [
+            {
+              "explain": "The derivative of \\(x^2+3\\) is \\(2x\\), so the numerator \\(x\\) is half of it.",
+              "work": "\\(\\frac{x}{x^2+3}=\\frac12\\frac{2x}{x^2+3}\\)"
+            },
+            {
+              "explain": "Apply the logarithm rule. Since \\(x^2+3>0\\), absolute value bars are not needed.",
+              "work": "\\(\\int\\frac{x}{x^2+3}dx=\\frac12\\ln(x^2+3)+C\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y12a-advanced-003-ant-q60",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The graph of \\(y=f(x)\\) passes through \\((1,4)\\) and \\(f\\prime(x)=2x+7\\). Find \\(f(x)\\).",
+          "options": [
+            "\\(x^2+7x-4\\)",
+            "\\(x^2+7x+4\\)",
+            "\\(2x^2+7x-4\\)",
+            "\\(x^2+2x+1\\)"
+          ],
+          "answer": 0,
+          "hint": "Integrate \\(f\\prime(x)\\) and use the given point to find the integration constant.",
+          "steps": [
+            {
+              "explain": "Integrate the gradient function.",
+              "work": "\\(f(x)=\\int(2x+7)dx=x^2+7x+C\\)"
+            },
+            {
+              "explain": "Use \\(f(1)=4\\) to solve for the constant.",
+              "work": "\\(4=1+7+C\\Rightarrow C=-4\\)"
+            },
+            {
+              "explain": "State the function.",
+              "work": "\\(f(x)=x^2+7x-4\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y12a-advanced-003-ant-q61",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find a primitive of \\(\\frac{2x}{x^2+1}\\).",
+          "options": [
+            "\\(\\ln(x^2+1)+C\\)",
+            "\\(2\\ln(x^2+1)+C\\)",
+            "\\(\\frac{1}{x^2+1}+C\\)",
+            "\\(\\tan^{-1}x+C\\)"
+          ],
+          "answer": 0,
+          "hint": "The numerator is the derivative of the denominator. Use \\(\\int u\\prime/u\\,dx=\\ln|u|+C\\).",
+          "steps": [
+            {
+              "explain": "The denominator derivative is \\(2x\\), exactly the numerator.",
+              "work": "\\(\\frac{d}{dx}(x^2+1)=2x\\)"
+            },
+            {
+              "explain": "Apply the logarithm rule; \\(x^2+1\\) is always positive.",
+              "work": "\\(\\int\\frac{2x}{x^2+1}dx=\\ln(x^2+1)+C\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y12a-advanced-003-ant-q62",
+          "type": "multipart",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "A pen moves along the \\(x\\)-axis, ruling a line. The diagram shows the graph of the velocity of the tip of the pen as a function of time. The velocity is \\(v=4t^3-24t^2+20t\\) cm/s. When \\(t=0\\), the tip is at \\(x=3\\) cm.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 360 230\"><rect width=\"360\" height=\"230\" fill=\"white\"/><path d=\"M40 100H340M60 210V25\" stroke=\"#475569\" stroke-width=\"2\"/><path d=\"M60.0,100.0 L62.4,99.5 L64.8,99.0 L67.2,98.6 L69.6,98.3 L72.0,98.0 L74.4,97.8 L76.8,97.7 L79.2,97.6 L81.6,97.5 L84.0,97.5 L86.4,97.6 L88.8,97.7 L91.2,97.8 L93.6,98.0 L96.0,98.2 L98.4,98.5 L100.8,98.8 L103.2,99.2 L105.6,99.6 L108.0,100.0 L110.4,100.5 L112.8,100.9 L115.2,101.5 L117.6,102.0 L120.0,102.6 L122.4,103.2 L124.8,103.8 L127.2,104.4 L129.6,105.1 L132.0,105.8 L134.4,106.5 L136.8,107.2 L139.2,107.9 L141.6,108.6 L144.0,109.4 L146.4,110.1 L148.8,110.9 L151.2,111.7 L153.6,112.4 L156.0,113.2 L158.4,114.0 L160.8,114.7 L163.2,115.5 L165.6,116.3 L168.0,117.0 L170.4,117.8 L172.8,118.5 L175.2,119.2 L177.6,119.9 L180.0,120.6 L182.4,121.3 L184.8,122.0 L187.2,122.6 L189.6,123.2 L192.0,123.8 L194.4,124.4 L196.8,124.9 L199.2,125.5 L201.6,125.9 L204.0,126.4 L206.4,126.8 L208.8,127.2 L211.2,127.6 L213.6,127.9 L216.0,128.2 L218.4,128.4 L220.8,128.6 L223.2,128.7 L225.6,128.8 L228.0,128.9 L230.4,128.9 L232.8,128.8 L235.2,128.7 L237.6,128.6 L240.0,128.4 L242.4,128.1 L244.8,127.8 L247.2,127.4 L249.6,126.9 L252.0,126.4 L254.4,125.8 L256.8,125.2 L259.2,124.4 L261.6,123.7 L264.0,122.8 L266.4,121.9 L268.8,120.8 L271.2,119.7 L273.6,118.6 L276.0,117.3 L278.4,116.0 L280.8,114.6 L283.2,113.1 L285.6,111.5 L288.0,109.8 L290.4,108.0 L292.8,106.2 L295.2,104.2 L297.6,102.2 L300.0,100.0 L302.4,97.8 L304.8,95.4 L307.2,92.9 L309.6,90.4 L312.0,87.7 L314.4,85.0 L316.8,82.1 L319.2,79.1 L321.6,76.0 L324.0,72.8 L326.4,69.4 L328.8,66.0 L331.2,62.4 L333.6,58.7 L336.0,54.9 L338.4,51.0 L340.8,46.9 L343.2,42.8 L345.6,38.4 L348.0,34.0\" fill=\"none\" stroke=\"#5b4ce2\" stroke-width=\"3\"/><text x=\"40\" y=\"119\" font-family=\"Arial\" font-size=\"12\">0</text><text x=\"104\" y=\"119\" font-family=\"Arial\" font-size=\"12\">1</text><text x=\"298\" y=\"119\" font-family=\"Arial\" font-size=\"12\">5</text><text x=\"343\" y=\"105\" font-family=\"Arial\" font-size=\"13\">t</text><text x=\"64\" y=\"23\" font-family=\"Arial\" font-size=\"13\">v</text></svg>"
+          },
+          "parts": [
+            {
+              "id": "y12a-advanced-003-ant-q62-i",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Find an expression for \\(x\\), the position of the tip of the pen, as a function of time.",
+              "options": [
+                "\\(x=t^4-8t^3+10t^2+3\\)",
+                "\\(x=4t^4-24t^3+20t+3\\)",
+                "\\(x=t^4-8t^3+10t^2\\)",
+                "\\(x=t^4-4t^3+10t^2+3\\)"
+              ],
+              "answer": 0,
+              "hint": "Position is an antiderivative of velocity. Integrate term by term, then use \\(x(0)=3\\).",
+              "steps": [
+                {
+                  "explain": "Integrate the velocity polynomial.",
+                  "work": "\\(x=\\int(4t^3-24t^2+20t)dt=t^4-8t^3+10t^2+C\\)"
+                },
+                {
+                  "explain": "Use the initial position to find the constant.",
+                  "work": "\\(3=x(0)=C\\)"
+                },
+                {
+                  "explain": "Write the position function.",
+                  "work": "\\(x=t^4-8t^3+10t^2+3\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-ant-q62-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What feature will the graph of \\(x\\) as a function of \\(t\\) have at \\(t=1\\)?",
+              "options": [
+                "A local maximum at \\((1,6)\\)",
+                "A local minimum at \\((1,6)\\)",
+                "A stationary point of inflection at \\((1,6)\\)",
+                "No stationary point"
+              ],
+              "answer": 0,
+              "hint": "The gradient of the position graph is velocity. Check whether velocity changes sign as it passes through zero at \\(t=1\\), then find the position there.",
+              "steps": [
+                {
+                  "explain": "Factor the velocity to identify its zeros and sign changes.",
+                  "work": "\\(v=4t^3-24t^2+20t=4t(t-1)(t-5)\\)"
+                },
+                {
+                  "explain": "At \\(t=1\\), velocity changes from positive to negative, so position changes from increasing to decreasing: this is a local maximum.",
+                  "work": "\\(v>0\\text{ for }0<t<1,\\qquad v<0\\text{ for }1<t<5\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 360 230\"><rect width=\"360\" height=\"230\" fill=\"white\"/><path d=\"M40 100H340M60 210V25\" stroke=\"#475569\" stroke-width=\"2\"/><path d=\"M60.0,100.0 L62.4,99.5 L64.8,99.0 L67.2,98.6 L69.6,98.3 L72.0,98.0 L74.4,97.8 L76.8,97.7 L79.2,97.6 L81.6,97.5 L84.0,97.5 L86.4,97.6 L88.8,97.7 L91.2,97.8 L93.6,98.0 L96.0,98.2 L98.4,98.5 L100.8,98.8 L103.2,99.2 L105.6,99.6 L108.0,100.0 L110.4,100.5 L112.8,100.9 L115.2,101.5 L117.6,102.0 L120.0,102.6 L122.4,103.2 L124.8,103.8 L127.2,104.4 L129.6,105.1 L132.0,105.8 L134.4,106.5 L136.8,107.2 L139.2,107.9 L141.6,108.6 L144.0,109.4 L146.4,110.1 L148.8,110.9 L151.2,111.7 L153.6,112.4 L156.0,113.2 L158.4,114.0 L160.8,114.7 L163.2,115.5 L165.6,116.3 L168.0,117.0 L170.4,117.8 L172.8,118.5 L175.2,119.2 L177.6,119.9 L180.0,120.6 L182.4,121.3 L184.8,122.0 L187.2,122.6 L189.6,123.2 L192.0,123.8 L194.4,124.4 L196.8,124.9 L199.2,125.5 L201.6,125.9 L204.0,126.4 L206.4,126.8 L208.8,127.2 L211.2,127.6 L213.6,127.9 L216.0,128.2 L218.4,128.4 L220.8,128.6 L223.2,128.7 L225.6,128.8 L228.0,128.9 L230.4,128.9 L232.8,128.8 L235.2,128.7 L237.6,128.6 L240.0,128.4 L242.4,128.1 L244.8,127.8 L247.2,127.4 L249.6,126.9 L252.0,126.4 L254.4,125.8 L256.8,125.2 L259.2,124.4 L261.6,123.7 L264.0,122.8 L266.4,121.9 L268.8,120.8 L271.2,119.7 L273.6,118.6 L276.0,117.3 L278.4,116.0 L280.8,114.6 L283.2,113.1 L285.6,111.5 L288.0,109.8 L290.4,108.0 L292.8,106.2 L295.2,104.2 L297.6,102.2 L300.0,100.0 L302.4,97.8 L304.8,95.4 L307.2,92.9 L309.6,90.4 L312.0,87.7 L314.4,85.0 L316.8,82.1 L319.2,79.1 L321.6,76.0 L324.0,72.8 L326.4,69.4 L328.8,66.0 L331.2,62.4 L333.6,58.7 L336.0,54.9 L338.4,51.0 L340.8,46.9 L343.2,42.8 L345.6,38.4 L348.0,34.0\" fill=\"none\" stroke=\"#5b4ce2\" stroke-width=\"3\"/><path d=\"M108.0 100V100.0\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-dasharray=\"4 3\"/><circle cx=\"108.0\" cy=\"100.0\" r=\"5\" fill=\"#f59e0b\"/><text x=\"40\" y=\"119\" font-family=\"Arial\" font-size=\"12\">0</text><text x=\"104\" y=\"119\" font-family=\"Arial\" font-size=\"12\">1</text><text x=\"298\" y=\"119\" font-family=\"Arial\" font-size=\"12\">5</text><text x=\"343\" y=\"105\" font-family=\"Arial\" font-size=\"13\">t</text><text x=\"64\" y=\"23\" font-family=\"Arial\" font-size=\"13\">v</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Find the position at that time.",
+                  "work": "\\(x(1)=1-8+10+3=6\\text{ cm}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-ant-q62-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "How much ink is used between \\(t=0\\) and \\(t=2\\) if the pen uses 0.05 milligrams per centimetre travelled?",
+              "options": [
+                "\\(0.7\\text{ mg}\\)",
+                "\\(0.15\\text{ mg}\\)",
+                "\\(0.5\\text{ mg}\\)",
+                "\\(1.4\\text{ mg}\\)"
+              ],
+              "answer": 0,
+              "hint": "The pen reverses direction at \\(t=1\\). Find the distance from 0 to 1 and from 1 to 2 separately, add them, then multiply by 0.05 mg/cm.",
+              "steps": [
+                {
+                  "explain": "Use \\(x=t^4-8t^3+10t^2+3\\). From \\(t=0\\) to 1, position goes from 3 cm to 6 cm.",
+                  "work": "\\(d_1=|x(1)-x(0)|=|6-3|=3\\text{ cm}\\)"
+                },
+                {
+                  "explain": "From \\(t=1\\) to 2, position goes from 6 cm to \\(x(2)=-5\\) cm. The distance is 11 cm.",
+                  "work": "\\(x(2)=16-64+40+3=-5,\\qquad d_2=|-5-6|=11\\text{ cm}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 360 230\"><rect width=\"360\" height=\"230\" fill=\"white\"/><path d=\"M40 100H340M60 210V25\" stroke=\"#475569\" stroke-width=\"2\"/><path d=\"M60.0,100 L60.0,100.0 L61.6,99.6 L63.2,99.3 L64.8,99.0 L66.4,98.8 L68.0,98.5 L69.6,98.3 L71.2,98.1 L72.8,98.0 L74.4,97.8 L76.0,97.7 L77.6,97.6 L79.2,97.6 L80.8,97.5 L82.4,97.5 L84.0,97.5 L85.6,97.6 L87.2,97.6 L88.8,97.7 L90.4,97.8 L92.0,97.9 L93.6,98.0 L95.2,98.2 L96.8,98.3 L98.4,98.5 L100.0,98.7 L101.6,98.9 L103.2,99.2 L104.8,99.4 L106.4,99.7 L108.0,100.0 L108.0,100 Z\" fill=\"#f59e0b\" fill-opacity=\".4\" stroke=\"#f59e0b\" stroke-width=\"1.5\"/><path d=\"M108.0,100 L108.0,100.0 L109.6,100.3 L111.2,100.6 L112.8,100.9 L114.4,101.3 L116.0,101.6 L117.6,102.0 L119.2,102.4 L120.8,102.8 L122.4,103.2 L124.0,103.6 L125.6,104.0 L127.2,104.4 L128.8,104.9 L130.4,105.3 L132.0,105.8 L133.6,106.2 L135.2,106.7 L136.8,107.2 L138.4,107.7 L140.0,108.1 L141.6,108.6 L143.2,109.1 L144.8,109.6 L146.4,110.1 L148.0,110.6 L149.6,111.2 L151.2,111.7 L152.8,112.2 L154.4,112.7 L156.0,113.2 L156.0,100 Z\" fill=\"#38bdf8\" fill-opacity=\".4\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><path d=\"M60.0,100.0 L62.4,99.5 L64.8,99.0 L67.2,98.6 L69.6,98.3 L72.0,98.0 L74.4,97.8 L76.8,97.7 L79.2,97.6 L81.6,97.5 L84.0,97.5 L86.4,97.6 L88.8,97.7 L91.2,97.8 L93.6,98.0 L96.0,98.2 L98.4,98.5 L100.8,98.8 L103.2,99.2 L105.6,99.6 L108.0,100.0 L110.4,100.5 L112.8,100.9 L115.2,101.5 L117.6,102.0 L120.0,102.6 L122.4,103.2 L124.8,103.8 L127.2,104.4 L129.6,105.1 L132.0,105.8 L134.4,106.5 L136.8,107.2 L139.2,107.9 L141.6,108.6 L144.0,109.4 L146.4,110.1 L148.8,110.9 L151.2,111.7 L153.6,112.4 L156.0,113.2 L158.4,114.0 L160.8,114.7 L163.2,115.5 L165.6,116.3 L168.0,117.0 L170.4,117.8 L172.8,118.5 L175.2,119.2 L177.6,119.9 L180.0,120.6 L182.4,121.3 L184.8,122.0 L187.2,122.6 L189.6,123.2 L192.0,123.8 L194.4,124.4 L196.8,124.9 L199.2,125.5 L201.6,125.9 L204.0,126.4 L206.4,126.8 L208.8,127.2 L211.2,127.6 L213.6,127.9 L216.0,128.2 L218.4,128.4 L220.8,128.6 L223.2,128.7 L225.6,128.8 L228.0,128.9 L230.4,128.9 L232.8,128.8 L235.2,128.7 L237.6,128.6 L240.0,128.4 L242.4,128.1 L244.8,127.8 L247.2,127.4 L249.6,126.9 L252.0,126.4 L254.4,125.8 L256.8,125.2 L259.2,124.4 L261.6,123.7 L264.0,122.8 L266.4,121.9 L268.8,120.8 L271.2,119.7 L273.6,118.6 L276.0,117.3 L278.4,116.0 L280.8,114.6 L283.2,113.1 L285.6,111.5 L288.0,109.8 L290.4,108.0 L292.8,106.2 L295.2,104.2 L297.6,102.2 L300.0,100.0 L302.4,97.8 L304.8,95.4 L307.2,92.9 L309.6,90.4 L312.0,87.7 L314.4,85.0 L316.8,82.1 L319.2,79.1 L321.6,76.0 L324.0,72.8 L326.4,69.4 L328.8,66.0 L331.2,62.4 L333.6,58.7 L336.0,54.9 L338.4,51.0 L340.8,46.9 L343.2,42.8 L345.6,38.4 L348.0,34.0\" fill=\"none\" stroke=\"#5b4ce2\" stroke-width=\"3\"/><text x=\"40\" y=\"119\" font-family=\"Arial\" font-size=\"12\">0</text><text x=\"104\" y=\"119\" font-family=\"Arial\" font-size=\"12\">1</text><text x=\"298\" y=\"119\" font-family=\"Arial\" font-size=\"12\">5</text><text x=\"343\" y=\"105\" font-family=\"Arial\" font-size=\"13\">t</text><text x=\"64\" y=\"23\" font-family=\"Arial\" font-size=\"13\">v</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Find total distance and multiply by the ink use per centimetre.",
+                  "work": "\\(d=3+11=14\\text{ cm},\\qquad 14(0.05)=0.7\\text{ mg}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            }
+          ]
+        },
+        {
+          "id": "y12a-advanced-003-ant-q63",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find a primitive function of \\(6-x^{-3}\\).",
+          "options": [
+            "\\(6x+\\frac{1}{2x^2}+C\\)",
+            "\\(6x-\\frac{1}{2x^2}+C\\)",
+            "\\(6-x^{-2}+C\\)",
+            "\\(6x+\\frac{1}{3x^3}+C\\)"
+          ],
+          "answer": 0,
+          "hint": "Integrate the constant 6 and the power \\(-x^{-3}\\) separately using the power rule.",
+          "steps": [
+            {
+              "explain": "Integrate the constant.",
+              "work": "\\(\\int6dx=6x\\)"
+            },
+            {
+              "explain": "For the second term, raise the exponent from \\(-3\\) to \\(-2\\) and divide by \\(-2\\), including the minus sign already in the term.",
+              "work": "\\(\\int -x^{-3}dx=\\frac12x^{-2}=\\frac{1}{2x^2}\\)"
+            },
+            {
+              "explain": "Combine both terms and add \\(C\\).",
+              "work": "\\(6x+\\frac{1}{2x^2}+C\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y12a-advanced-003-ant-q64",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find \\(\\int\\sec^2 6x\\,dx\\).",
+          "options": [
+            "\\(\\tan6x+C\\)",
+            "\\(\\frac16\\tan6x+C\\)",
+            "\\(6\\tan6x+C\\)",
+            "\\(-\\frac16\\cot6x+C\\)"
+          ],
+          "answer": 1,
+          "hint": "The derivative of \\(\tan(6x)\\) contains a factor of 6. Divide by 6.",
+          "steps": [
+            {
+              "explain": "The derivative of \\(\tan(6x)\\) is \\(6\\sec^2(6x)\\), so the desired antiderivative is scaled by \\(1/6\\).",
+              "work": "\\(\\frac{d}{dx}\\left(\\frac16\\tan6x\\right)=\\sec^2 6x\\)"
+            },
+            {
+              "explain": "Include the integration constant.",
+              "work": "\\(\\int\\sec^2 6x\\,dx=\\frac16\\tan6x+C\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y12a-advanced-003-ant-q65",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The graph of \\(y=f(x)\\) passes through \\((1,3)\\), and \\(f\\prime(x)=3x^2-2\\). Find \\(f(x)\\).",
+          "options": [
+            "\\(x^3-2x+4\\)",
+            "\\(x^3-2x+3\\)",
+            "\\(3x^3-2x+2\\)",
+            "\\(x^3-2x-4\\)"
+          ],
+          "answer": 0,
+          "hint": "Integrate the derivative and use the given point to determine the constant.",
+          "steps": [
+            {
+              "explain": "Integrate \\(f\\prime(x)=3x^2-2\\).",
+              "work": "\\(f(x)=x^3-2x+C\\)"
+            },
+            {
+              "explain": "Substitute \\((1,3)\\).",
+              "work": "\\(3=1-2+C\\Rightarrow C=4\\)"
+            },
+            {
+              "explain": "Write the function.",
+              "work": "\\(f(x)=x^3-2x+4\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y12a-advanced-003-ant-q66",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find a primitive function of \\(2x+11\\).",
+          "options": [
+            "\\(x^2+11x+C\\)",
+            "\\(2+11x+C\\)",
+            "\\(x^2+11+C\\)",
+            "\\(2x^2+11x+C\\)"
+          ],
+          "answer": 0,
+          "hint": "Integrate \\(2x\\) using the power rule and integrate 11 as a constant.",
+          "steps": [
+            {
+              "explain": "Integrate the two terms separately.",
+              "work": "\\(\\int2x\\,dx=x^2,\\qquad\\int11\\,dx=11x\\)"
+            },
+            {
+              "explain": "Combine the results and add \\(C\\).",
+              "work": "\\(\\int(2x+11)dx=x^2+11x+C\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y12a-advanced-003-ant-q67",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find \\(\\int e^{3x}\\,dx\\).",
+          "options": [
+            "\\(\\frac13e^{3x}+C\\)",
+            "\\(3e^{3x}+C\\)",
+            "\\(e^{3x}+C\\)",
+            "\\(\\frac13e^x+C\\)"
+          ],
+          "answer": 0,
+          "hint": "The exponent has derivative 3, so divide by 3 when integrating.",
+          "steps": [
+            {
+              "explain": "Reverse the chain rule for the exponent \\(3x\\).",
+              "work": "\\(\\int e^{3x}dx=\\frac13e^{3x}+C\\)"
+            },
+            {
+              "explain": "Check by differentiating to confirm the factor cancels.",
+              "work": "\\(\\frac{d}{dx}\\left(\\frac13e^{3x}\\right)=e^{3x}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y12a-advanced-003-ant-q68",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find \\(\\int e^{2x}\\,dx\\).",
+          "options": [
+            "\\(\\frac12e^{2x}+C\\)",
+            "\\(2e^{2x}+C\\)",
+            "\\(e^{2x}+C\\)",
+            "\\(\\frac12e^x+C\\)"
+          ],
+          "answer": 0,
+          "hint": "The exponent has derivative 2. Divide by this factor.",
+          "steps": [
+            {
+              "explain": "Use the reverse chain rule.",
+              "work": "\\(\\int e^{2x}dx=\\frac12e^{2x}+C\\)"
+            },
+            {
+              "explain": "Differentiate to check.",
+              "work": "\\(\\frac{d}{dx}\\left(\\frac12e^{2x}\\right)=e^{2x}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y12a-advanced-003-ant-q69",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find \\(\\int(x-1)^3\\,dx\\).",
+          "options": [
+            "\\(\\frac14(x-1)^4+C\\)",
+            "\\((x-1)^4+C\\)",
+            "\\(\\frac13(x-1)^2+C\\)",
+            "\\(\\frac14(x-1)^3+C\\)"
+          ],
+          "answer": 0,
+          "hint": "Increase the power from 3 to 4 and divide by 4. The inside derivative is 1.",
+          "steps": [
+            {
+              "explain": "Apply the power rule to the shifted expression.",
+              "work": "\\(\\int(x-1)^3dx=\\frac{(x-1)^4}{4}+C\\)"
+            },
+            {
+              "explain": "The derivative of \\(x-1\\) is 1, so no additional scaling factor is needed.",
+              "work": "\\(\\frac{d}{dx}\\left(\\frac14(x-1)^4\\right)=(x-1)^3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y12a-advanced-003-ant-q70",
+          "type": "multipart",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Find the following integrals.",
+          "parts": [
+            {
+              "id": "y12a-advanced-003-ant-q70-i",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Find \\(\\int(2x+3)^{10}\\,dx\\).",
+              "options": [
+                "\\(\\frac{(2x+3)^{11}}{22}+C\\)",
+                "\\(\\frac{(2x+3)^{11}}{11}+C\\)",
+                "\\(10(2x+3)^9+C\\)",
+                "\\(\\frac{(2x+3)^{10}}{20}+C\\)"
+              ],
+              "answer": 0,
+              "hint": "Increase the exponent by one, divide by 11, and also divide by the inside derivative 2.",
+              "steps": [
+                {
+                  "explain": "The inside derivative of \\(2x+3\\) is 2. Use the reverse chain rule and the power rule.",
+                  "work": "\\(\\int(2x+3)^{10}dx=\\frac12\\cdot\\frac{(2x+3)^{11}}{11}+C\\)"
+                },
+                {
+                  "explain": "Simplify the denominator.",
+                  "work": "\\(\\frac12\\cdot\\frac1{11}=\\frac1{22}\\quad\\therefore\\quad\\int(2x+3)^{10}dx=\\frac{(2x+3)^{11}}{22}+C\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-ant-q70-ii",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Find \\(\\int\\sin\\frac{x}{2}\\,dx\\).",
+              "options": [
+                "\\(-2\\cos\\frac{x}{2}+C\\)",
+                "\\(2\\cos\\frac{x}{2}+C\\)",
+                "\\(-\\frac12\\cos\\frac{x}{2}+C\\)",
+                "\\(2\\sin\\frac{x}{2}+C\\)"
+              ],
+              "answer": 0,
+              "hint": "The derivative of \\(x/2\\) is \\(1/2\\). A factor of 2 is needed when integrating the sine.",
+              "steps": [
+                {
+                  "explain": "The derivative of \\(\\cos(x/2)\\) is \\(-\frac12\\sin(x/2)\\). Multiply by \\(-2\\) to obtain the given integrand.",
+                  "work": "\\(\\frac{d}{dx}\\left(-2\\cos\\frac{x}{2}\\right)=\\sin\\frac{x}{2}\\)"
+                },
+                {
+                  "explain": "Therefore the antiderivative is",
+                  "work": "\\(\\int\\sin\\frac{x}{2}dx=-2\\cos\\frac{x}{2}+C\\)"
                 }
               ],
               "timeLimit": 60,
