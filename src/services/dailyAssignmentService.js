@@ -35,6 +35,60 @@ const ASSIGNMENT_CACHE_VERSION = 1;
 
 const getDateKey = (date = new Date()) => date.toLocaleDateString("en-CA");
 
+// sync_meta/questions changes at most once a day (the off-peak cron bumps membershipVersion when the published
+// question set changes), yet every Daily Practice start and every next-day prep re-read it. Keep the last answer
+// for a while, on this device, and never wait long for it: a stale counter only delays a pool rebuild, while a
+// read that hangs on bad Wi-Fi used to hold the "Loading…" screen until the 45s timeout.
+const SYNC_META_CACHE_KEY = "sync-meta-questions:v1";
+const SYNC_META_TTL_MS = 15 * 60 * 1000;
+const SYNC_META_READ_TIMEOUT_MS = 6000;
+let syncMetaMemo = null; // { data, at }
+
+const readCachedSyncMeta = () => {
+  if (syncMetaMemo) return syncMetaMemo;
+  const stored = localCache.get(SYNC_META_CACHE_KEY);
+  if (stored && typeof stored === "object" && stored.data) syncMetaMemo = stored;
+  return syncMetaMemo;
+};
+
+export const readQuestionsSyncMeta = async ({ maxAgeMs = SYNC_META_TTL_MS } = {}) => {
+  const cached = readCachedSyncMeta();
+  if (cached && Date.now() - Number(cached.at || 0) < maxAgeMs) return cached.data;
+  try {
+    const snap = await Promise.race([
+      getDoc(doc(db, "sync_meta", "questions")),
+      new Promise((_, reject) => setTimeout(() => reject(new Error("timeout")), SYNC_META_READ_TIMEOUT_MS)),
+    ]);
+    const data = snap?.exists() ? snap.data() : {};
+    // Only the version counters are needed — don't park anything else in localStorage.
+    const slim = { version: data.version ?? null, membershipVersion: data.membershipVersion ?? null };
+    syncMetaMemo = { data: slim, at: Date.now() };
+    localCache.set(SYNC_META_CACHE_KEY, syncMetaMemo);
+    return slim;
+  } catch {
+    return cached?.data || {};
+  }
+};
+
+// Daily assignments are cached per date and were never cleaned up, so a device used for months kept every past
+// day's full question set in localStorage. Once that fills the quota, Firestore's multi-tab manager (also
+// localStorage-backed) throws an internal assertion and Daily Challenge / Secret Note spin forever.
+export const pruneStaleDailyAssignmentCache = (uid, keepDateKeys = [getDateKey()]) => {
+  if (typeof window === "undefined" || !uid) return;
+  try {
+    const keep = new Set(keepDateKeys.map((d) => `sapere-cache:${getDailyAssignmentCacheKey(uid, d)}`));
+    Object.keys(window.localStorage)
+      .filter((k) => k.startsWith("sapere-cache:daily-assignment:") && !keep.has(k))
+      .forEach((k) => window.localStorage.removeItem(k));
+  } catch { /* cache only */ }
+};
+
+// A Firestore write promise only settles on server acknowledgement — on a stalled connection it never does. The
+// persistent cache queues the write and sends it when the connection recovers, so the screen must not wait for it.
+const writeInBackground = (promise, label) => {
+  Promise.resolve(promise).catch((e) => console.warn(`[dailyAssignment] ${label} write failed (non-fatal):`, e?.code || e));
+};
+
 // Recursively strips `undefined` values — Firestore's setDoc/updateDoc reject
 // them ("Unsupported field value: undefined"). Generated questions sometimes
 // carry undefined optional fields (hint/extras/etc.).
@@ -809,11 +863,7 @@ export const createDailyAssignment = async ({
   // assignment to detect future content edits; `membershipVersion` (add/delete)
   // feeds the practice_pool signature so the pool rebuilds ONLY when the set of
   // question IDs changed — not on every content edit.
-  let syncData = presetSyncData;
-  if (!syncData) {
-    const syncMetaSnap = await getDoc(doc(db, "sync_meta", "questions")).catch(() => null);
-    syncData = syncMetaSnap?.exists() ? syncMetaSnap.data() : {};
-  }
+  const syncData = presetSyncData || await readQuestionsSyncMeta();
   const questionsVersion = syncData.version || 0;
   const membershipVersion = syncData.membershipVersion ?? questionsVersion;
 
@@ -843,9 +893,9 @@ export const createDailyAssignment = async ({
     updatedAt: serverTimestamp(),
   };
 
-  await setDoc(doc(db, "users", uid, "daily_assignments", dateKey), stripUndefined(assignment), { merge: false });
   const cacheValue = { ...assignment, updatedAt: null, savedAt: Date.now() };
   localCache.set(getDailyAssignmentCacheKey(uid, dateKey), cacheValue);
+  writeInBackground(setDoc(doc(db, "users", uid, "daily_assignments", dateKey), stripUndefined(assignment), { merge: false }), "assignment");
   return cacheValue;
 };
 
@@ -856,8 +906,7 @@ export const prepareNextDailyAssignment = async ({
 }) => {
   if (!uid) throw new Error("Daily assignment prep requires a user id.");
   const resolvedQuestionCount = Math.max(1, Math.min(50, Number(questionCount || studentProfile?.dailyQuestionCount || 10)));
-  const syncMetaSnap = await getDoc(doc(db, "sync_meta", "questions")).catch(() => null);
-  const syncData = syncMetaSnap?.exists() ? syncMetaSnap.data() : {};
+  const syncData = await readQuestionsSyncMeta();
   const questionsVersion = syncData.version || 0;
   const membershipVersion = syncData.membershipVersion ?? questionsVersion;
   const { questions, source } = await buildQuestionsForStudent(studentProfile, resolvedQuestionCount, uid, membershipVersion);
@@ -908,16 +957,37 @@ export const fetchOrCreateDailyAssignment = async ({
   const expectedSignature = getCurriculumSignature(studentProfile);
   const cacheKey = getDailyAssignmentCacheKey(uid, dateKey);
   const cached = localCache.get(cacheKey);
+  pruneStaleDailyAssignmentCache(uid, [dateKey]);
+
+  // Cache-first: today's assignment was already built (or started) on this device for exactly this curriculum
+  // and question count → use it, with zero Firestore reads and no network wait. A teacher config change alters
+  // the curriculum signature (and StudentDetail drops this cache key), so it still falls through to regenerate.
+  if (
+    cached
+    && cached.date === dateKey
+    && Array.isArray(cached.questions)
+    && cached.questions.length > 0
+    && (
+      cached.status === "started"
+      || cached.status === "completed"
+      || (
+        cached.status === "open"
+        && Number(cached.requestedQuestionCount || cached.questionCount || 0) === expectedQuestionCount
+        && cached.curriculumSignature === expectedSignature
+      )
+    )
+  ) {
+    return cached;
+  }
 
   // Fetch the latest question-bank versions so we can detect structural changes.
   // membershipVersion bumps only on question add/delete (pool must rebuild).
   // contentVersion bumps on content edits (solutionSteps, LaTeX etc.) — does NOT
   // trigger assignment regeneration, so editing questions doesn't cost every student a re-gen.
-  const [assignmentSnap, syncMetaSnap] = await Promise.all([
+  const [assignmentSnap, syncData] = await Promise.all([
     getDoc(doc(db, "users", uid, "daily_assignments", dateKey)),
-    getDoc(doc(db, "sync_meta", "questions")),
+    readQuestionsSyncMeta(),
   ]);
-  const syncData = syncMetaSnap.exists() ? syncMetaSnap.data() : {};
   // membershipVersion tracks add/delete only. Prefer it over content `version`
   // so pure text/option edits do not force every open assignment to regenerate
   // (and every practice_pool to rebuild). Fall back to version only for legacy
@@ -1023,17 +1093,14 @@ export const fetchOrCreateDailyAssignment = async ({
       updatedAt: serverTimestamp(),
     };
     
-    // Save to today's dateKey
-    await setDoc(doc(db, "users", uid, "daily_assignments", dateKey), stripUndefined(stampedAssignment), { merge: false });
-    
-    // Cleanup the prep data
-    await deleteDoc(doc(db, "users", uid, "daily_assignments", "next_prep")).catch(() => {});
-    localCache.remove(prepCacheKey);
-    
-    // Cache the active assignment
+    // Cache the active assignment, then save it to today's dateKey and drop the prep doc. The writes are
+    // queued in order by the Firestore client; the student doesn't wait for the server to acknowledge them.
     const cacheValue = { ...stampedAssignment, updatedAt: null, savedAt: Date.now() };
     localCache.set(cacheKey, cacheValue);
-    
+    localCache.remove(prepCacheKey);
+    writeInBackground(setDoc(doc(db, "users", uid, "daily_assignments", dateKey), stripUndefined(stampedAssignment), { merge: false }), "stamped prep");
+    writeInBackground(deleteDoc(doc(db, "users", uid, "daily_assignments", "next_prep")), "prep cleanup");
+
     return cacheValue;
   }
 
@@ -1051,26 +1118,28 @@ export const fetchOrCreateDailyAssignment = async ({
 
 export const markDailyAssignmentStarted = async (uid, dateKey = getDateKey()) => {
   if (!uid) return;
+  // Local cache first: if the server write stalls, this device still knows the assignment is started.
+  const cacheKey = getDailyAssignmentCacheKey(uid, dateKey);
+  const cached = localCache.get(cacheKey);
+  if (cached) localCache.set(cacheKey, { ...cached, status: "started", startedAt: new Date().toISOString() });
   await setDoc(doc(db, "users", uid, "daily_assignments", dateKey), {
     status: "started",
     startedAt: new Date().toISOString(),
     updatedAt: serverTimestamp(),
   }, { merge: true });
-  const cacheKey = getDailyAssignmentCacheKey(uid, dateKey);
-  const cached = localCache.get(cacheKey);
-  if (cached) localCache.set(cacheKey, { ...cached, status: "started", startedAt: new Date().toISOString() });
 };
 
 export const markDailyAssignmentCompleted = async (uid, dateKey = getDateKey()) => {
   if (!uid) return;
+  // Local cache first: if the server write stalls, this device still knows the assignment is completed.
+  const cacheKey = getDailyAssignmentCacheKey(uid, dateKey);
+  const cached = localCache.get(cacheKey);
+  if (cached) localCache.set(cacheKey, { ...cached, status: "completed", completedAt: new Date().toISOString() });
   await setDoc(doc(db, "users", uid, "daily_assignments", dateKey), {
     status: "completed",
     completedAt: new Date().toISOString(),
     updatedAt: serverTimestamp(),
   }, { merge: true });
-  const cacheKey = getDailyAssignmentCacheKey(uid, dateKey);
-  const cached = localCache.get(cacheKey);
-  if (cached) localCache.set(cacheKey, { ...cached, status: "completed", completedAt: new Date().toISOString() });
 };
 
 export const getDefaultDailyBlueprint = () => DEFAULT_BLUEPRINT;

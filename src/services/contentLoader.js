@@ -18,15 +18,31 @@ let idsCache = null;          // Promise<{ id: topicId }>
 let homeworkQuestionIndexCache = null; // Promise<{ homework reference key: [{ questionId, topicId }] }>
 
 // ---------- fetch ------------------------------------------------------------------------------
+// A request on weak Wi-Fi can stall without ever failing; give up so the caller's error/retry path runs instead
+// of a spinner that never ends. Topic files are small (tens of KB), so this is generous.
+const FETCH_TIMEOUT_MS = 20000;
 const fetchJson = async (url, options = {}) => {
-  const r = await fetch(url, { cache: 'default', ...options });
-  if (!r.ok) {
-    const error = new Error(`${url} → ${r.status}`);
-    error.status = r.status;
-    error.url = url;
-    throw error;
+  const controller = typeof AbortController === 'function' && !options.signal ? new AbortController() : null;
+  const timer = controller ? setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS) : null;
+  try {
+    const r = await fetch(url, { cache: 'default', ...(controller ? { signal: controller.signal } : {}), ...options });
+    if (!r.ok) {
+      const error = new Error(`${url} → ${r.status}`);
+      error.status = r.status;
+      error.url = url;
+      throw error;
+    }
+    return await r.json();
+  } catch (e) {
+    if (controller?.signal.aborted) {
+      const error = new Error(`${url} → timeout`);
+      error.url = url;
+      throw error;
+    }
+    throw e;
+  } finally {
+    if (timer) clearTimeout(timer);
   }
-  return r.json();
 };
 
 export const getManifest = async () => {
