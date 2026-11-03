@@ -4778,7 +4778,7 @@
           "id": "y11a-8-excel-expln-q15",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Evaluate e^{-0}·⁵ correct to three decimal places.",
+          "stem": "Evaluate \\(e^{-0.5}\\) correct to three decimal places.",
           "options": [
             "0.607",
             "0.6070",
@@ -4790,11 +4790,11 @@
           "steps": [
             {
               "explain": "Evaluate e to the power −0.5.",
-              "work": "e^{-0}·⁵≈0.606530…"
+              "work": "\\(e^{-0.5}\\approx0.606530\\ldots\\)"
             },
             {
               "explain": "Round to three decimal places.",
-              "work": "0.606530…≈0.607"
+              "work": "\\(0.606530…\\approx 0.607\\)"
             }
           ],
           "timeLimit": 60,
@@ -4816,7 +4816,7 @@
           "id": "y11a-8-excel-expln-q17",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Evaluate e^{-3.5} correct to 3 significant figures.",
+          "stem": "Evaluate \\(e^{-3.5}\\) correct to 3 significant figures.",
           "options": [
             "0.0302",
             "0.0301",
@@ -4828,11 +4828,11 @@
           "steps": [
             {
               "explain": "Evaluate the negative power.",
-              "work": "e^{-3.5}≈0.0301974…"
+              "work": "\\(e^{-3.5}\\approx 0.0301974…\\)"
             },
             {
               "explain": "The first three significant digits are 3, 0, 1; the next digit is 9, so round the 1 up.",
-              "work": "0.0301974…≈0.0302"
+              "work": "\\(0.0301974…\\approx 0.0302\\)"
             }
           ],
           "timeLimit": 60,
@@ -4854,7 +4854,7 @@
           "id": "y11a-8-excel-expln-q20",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Find the value of e^{3}, correct to three significant figures.",
+          "stem": "Find the value of \\(e^{3}\\), correct to three significant figures.",
           "options": [
             "20.1",
             "20.0",
@@ -4866,7 +4866,7 @@
           "steps": [
             {
               "explain": "Evaluate the exponential.",
-              "work": "e^{3}≈20.0855…"
+              "work": "\\(e^{3}\\approx 20.0855…\\)"
             },
             {
               "explain": "Round to three significant figures.",
@@ -4987,27 +4987,27 @@
           "id": "y11a-8-excel-expln-q1",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Which of the following represents the domain of the function f(x)=ln(1−x)?",
+          "stem": "Which of the following represents the domain of the function \\(f(x)=\\ln(1-x)\\)?",
           "options": [
-            "[1,∞)",
-            "(1,∞)",
-            "(−∞,1]",
-            "(−∞,1)"
+            "\\([1,\\infty)\\)",
+            "\\((1,\\infty)\\)",
+            "\\((-\\infty,1]\\)",
+            "\\((-\\infty,1)\\)"
           ],
           "answer": 3,
-          "hint": "The argument of a natural logarithm must be strictly positive: 1−x>0.",
+          "hint": "The argument of a natural logarithm must be strictly positive: \\(1-x>0\\).",
           "steps": [
             {
-              "explain": "For ln(1−x) to be defined, its argument must be greater than zero.",
-              "work": "1−x>0"
+              "explain": "For \\(\\ln(1-x)\\) to be defined, its argument must be greater than zero.",
+              "work": "\\(1-x>0\\)"
             },
             {
               "explain": "Solve the inequality.",
-              "work": "−x>−1  ⇒  x<1"
+              "work": "\\(-x>-1  \\Longrightarrow   x<1\\)"
             },
             {
-              "explain": "The endpoint x=1 is excluded because ln 0 is undefined.",
-              "work": "domain (−∞,1)"
+              "explain": "The endpoint \\(x=1\\) is excluded because \\(\\ln 0\\) is undefined.",
+              "work": "\\(\\text{domain }(-\\infty,1)\\)"
             }
           ],
           "timeLimit": 60,
@@ -5029,27 +5029,27 @@
           "id": "y11a-8-excel-expln-q3",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "What is the domain of the function f(x)=ln(4−x)?",
+          "stem": "What is the domain of the function \\(f(x)=\\ln(4-x)\\)?",
           "options": [
-            "x<4",
-            "x \\le 4",
-            "x>4",
-            "x \\ge 4"
+            "\\(x<4\\)",
+            "\\(x \\le 4\\)",
+            "\\(x>4\\)",
+            "\\(x \\ge 4\\)"
           ],
           "answer": 0,
-          "hint": "The logarithm argument 4−x must be strictly positive.",
+          "hint": "The logarithm argument \\(4-x\\) must be strictly positive.",
           "steps": [
             {
               "explain": "Set the logarithm argument greater than zero.",
-              "work": "4−x>0"
+              "work": "\\(4-x>0\\)"
             },
             {
               "explain": "Rearrange.",
-              "work": "−x>−4  ⇒  x<4"
+              "work": "\\(-x>-4  \\Longrightarrow   x<4\\)"
             },
             {
-              "explain": "The endpoint 4 is excluded because ln0 is undefined.",
-              "work": "x<4"
+              "explain": "The endpoint \\(4\\) is excluded because \\(\\ln 0\\) is undefined.",
+              "work": "\\(x<4\\)"
             }
           ],
           "timeLimit": 60,
@@ -5071,7 +5071,7 @@
           "id": "y11a-8-excel-expln-q6",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Evaluate ln 3 correct to three significant figures.",
+          "stem": "Evaluate \\(\\ln 3\\) correct to three significant figures.",
           "options": [
             "1.10",
             "1.09",
@@ -5083,11 +5083,11 @@
           "steps": [
             {
               "explain": "Evaluate using the natural logarithm function.",
-              "work": "ln3≈1.098612…"
+              "work": "\\(\\ln 3\\approx 1.098612…\\)"
             },
             {
               "explain": "Keep three significant figures: the first three are 1, 0, 9; the next digit is 8, so round up.",
-              "work": "1.098612…≈1.10"
+              "work": "\\(1.098612…\\approx 1.10\\)"
             },
             {
               "explain": "State the rounded value.",
@@ -5113,7 +5113,7 @@
           "id": "y11a-8-excel-expln-q8",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "What is the range of the function f(x)=ln(x^{2}+e)?",
+          "stem": "What is the range of the function \\(f(x)=\\ln(x^{2}+e)\\)?",
           "options": [
             "y \\ge 1",
             "y>1",
@@ -5121,22 +5121,22 @@
             "all real values"
           ],
           "answer": 0,
-          "hint": "Since x^{2} \\ge 0, the logarithm argument has minimum e. Apply the increasing ln function.",
+          "hint": "Since \\(x^{2}\\ge0\\), the logarithm argument has minimum \\(e\\). Apply the increasing \\(\\ln\\) function.",
           "steps": [
             {
               "explain": "The square x^{2} is always non-negative.",
-              "work": "x^{2} \\ge 0"
+              "work": "\\(x^{2} \\ge 0\\)"
             },
             {
               "explain": "Add e to find the minimum argument.",
-              "work": "x^{2}+e \\ge e"
+              "work": "\\(x^{2}+e \\ge e\\)"
             },
             {
-              "explain": "Because ln is increasing, apply ln to the inequality.",
-              "work": "ln(x^{2}+e) \\ge ln e=1"
+              "explain": "Because \\(\\ln\\) is increasing, apply \\(\\ln\\) to the inequality.",
+              "work": "\\(\\ln (x^{2}+e) \\ge \\ln  e=1\\)"
             },
             {
-              "explain": "The minimum is attained at x=0.",
+              "explain": "The minimum is attained at \\(x=0\\).",
               "work": "range \\([1,\\infty)\\), or \\(y \\ge 1\\)"
             }
           ],
@@ -5159,7 +5159,7 @@
           "id": "y11a-8-excel-expln-q11",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Solve the equation ln x = 2. Give your answer correct to four decimal places.",
+          "stem": "Solve the equation \\(\\ln x=2\\). Give your answer correct to four decimal places.",
           "options": [
             "7.3891",
             "7.3890",
@@ -5171,15 +5171,15 @@
           "steps": [
             {
               "explain": "Exponentiate both sides with base e.",
-              "work": "lnx=2  ⇒  x=e^{2}"
+              "work": "\\(\\ln x=2  \\Longrightarrow   x=e^{2}\\)"
             },
             {
               "explain": "Evaluate.",
-              "work": "e^{2}≈7.389056…"
+              "work": "\\(e^{2}\\approx 7.389056…\\)"
             },
             {
               "explain": "Round to four decimal places.",
-              "work": "x≈7.3891"
+              "work": "\\(x\\approx 7.3891\\)"
             }
           ],
           "timeLimit": 60,
@@ -5201,7 +5201,7 @@
           "id": "y11a-8-excel-expln-q12",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Let f(x)=ln(x−3). What is the domain of f(x)?",
+          "stem": "Let \\(f(x)=\\ln(x-3)\\). What is the domain of \\(f(x)\\)?",
           "options": [
             "x>3",
             "x \\ge 3",
@@ -5213,15 +5213,15 @@
           "steps": [
             {
               "explain": "Set the logarithm argument greater than zero.",
-              "work": "x−3>0"
+              "work": "\\(x-3>0\\)"
             },
             {
               "explain": "Solve the inequality.",
-              "work": "x>3"
+              "work": "\\(x>3\\)"
             },
             {
-              "explain": "The boundary x=3 is excluded.",
-              "work": "domain (3,∞)"
+              "explain": "The boundary \\(x=3\\) is excluded.",
+              "work": "\\(\\text{domain }(3,\\infty)\\)"
             }
           ],
           "timeLimit": 60,
@@ -5243,7 +5243,7 @@
           "id": "y11a-8-excel-expln-q19",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Find the value of logₑ8 correct to two decimal places.",
+          "stem": "Find the value of \\(\\log_e 8\\) correct to two decimal places.",
           "options": [
             "2.08",
             "0.90",
@@ -5254,8 +5254,8 @@
           "hint": "Evaluate the natural logarithm and round to two decimal places.",
           "steps": [
             {
-              "explain": "Evaluate ln 8.",
-              "work": "ln8≈2.079441…"
+              "explain": "Evaluate \\(\\ln 8\\).",
+              "work": "\\(\\ln 8\\approx 2.079441…\\)"
             },
             {
               "explain": "Round to two decimal places.",
@@ -5435,6 +5435,50 @@
             "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
             "sourcePage": 86,
             "sourceQuestion": 4
+          }
+        },
+        {
+          "id": "y12a-graphtech-p116-q18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Let \\(f(x)=\\log_e[(x-3)(5-x)]\\). What is the domain of \\(f(x)\\)?",
+          "options": [
+            "\\(3<x<5\\)",
+            "\\(x<3\\text{ or }x>5\\)",
+            "\\(x\\le3\\text{ or }x\\ge5\\)",
+            "\\(x>3\\)"
+          ],
+          "answer": 0,
+          "solution": "\\(3<x<5\\)",
+          "hint": "The expression inside a logarithm must be strictly positive. Find where the two factors have the same sign.",
+          "steps": [
+            {
+              "explain": "The logarithm is defined only when its argument is greater than zero.",
+              "work": "\\((x-3)(5-x)>0\\)"
+            },
+            {
+              "explain": "The critical values are 3 and 5. Between them both factors are positive; outside, their product is negative.",
+              "work": "\\(x-3>0\\text{ and }5-x>0\\Rightarrow x>3,\\ x<5\\)"
+            },
+            {
+              "explain": "The endpoints make the logarithm argument zero, so neither is included.",
+              "work": "\\(\\boxed{3<x<5}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the domain of",
+              "note": "Require the logarithm argument to be strictly positive; exclude zeros."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePdf": "Y12 Advanced Topic by topic 002 (1).pdf",
+            "sourcePage": 116,
+            "sourceQuestion": "18",
+            "course": "Advanced",
+            "grade": "12"
           }
         }
       ]
@@ -5932,27 +5976,27 @@
           "id": "y11a-8-excel-expln-q4",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "It is given that ln a = ln b − ln c, where a, b, c > 0. Which statement is true?",
+          "stem": "It is given that \\(\\ln a=\\ln b-\\ln c\\), where \\(a,b,c>0\\). Which statement is true?",
           "options": [
-            "a=b−c",
-            "a=b/c",
-            "ln a=b/c",
-            "ln a=(ln b)/(ln c)"
+            "\\(a=b-c\\)",
+            "\\(a=b/c\\)",
+            "\\(\\ln a=b/c\\)",
+            "\\(\\ln a=\\dfrac{\\ln b}{\\ln c}\\)"
           ],
           "answer": 1,
-          "hint": "Use the logarithm quotient law ln b−ln c=ln(b/c), then equate the positive arguments.",
+          "hint": "Use the logarithm quotient law \\(\\ln b-\\ln c=\\ln(b/c)\\), then equate the positive arguments.",
           "steps": [
             {
               "explain": "Apply the quotient law to the right side.",
-              "work": "ln b−ln c=ln(b/c)"
+              "work": "\\(\\ln  b-\\ln  c=\\ln (b/c)\\)"
             },
             {
-              "explain": "Thus ln a=ln(b/c). Since ln is one-to-one for positive arguments, the arguments are equal.",
-              "work": "a=b/c"
+              "explain": "Thus \\(\\ln a=\\ln(b/c)\\). Since \\(\\ln\\) is one-to-one for positive arguments, the arguments are equal.",
+              "work": "\\(a=b/c\\)"
             },
             {
               "explain": "Choose the correct statement.",
-              "work": "a=b/c"
+              "work": "\\(a=b/c\\)"
             }
           ],
           "timeLimit": 60,
@@ -5974,27 +6018,27 @@
           "id": "y11a-8-excel-expln-q7",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Let a=eˣ. Which expression is equal to logₑ(a^{2})?",
+          "stem": "Let \\(a=e^x\\). Which expression is equal to \\(\\log_e(a^{2})\\)?",
           "options": [
-            "e^(2x)",
-            "e^(x^{2})",
-            "2x",
-            "x^{2}"
+            "\\(e^{2x}\\)",
+            "\\(e^{x^{2}}\\)",
+            "\\(2x\\)",
+            "\\(x^{2}\\)"
           ],
           "answer": 2,
-          "hint": "Substitute a=eˣ, then use the inverse relationship between ln and e raised to a power.",
+          "hint": "Substitute \\(a=e^x\\), then use the inverse relationship between \\(\\ln\\) and \\(e\\) raised to a power.",
           "steps": [
             {
-              "explain": "Substitute a=eˣ into the logarithm.",
-              "work": "logₑ(a^{2})=ln((eˣ)^{2})"
+              "explain": "Substitute \\(a=e^x\\) into the logarithm.",
+              "work": "\\(\\log_e(a^{2})=\\ln ((e^x)^{2})\\)"
             },
             {
               "explain": "Simplify the exponent.",
-              "work": "ln(e^(2x))"
+              "work": "\\(\\ln (e^{2x})\\)"
             },
             {
-              "explain": "Use ln(e^u)=u.",
-              "work": "2x"
+              "explain": "Use \\(\\ln(e^u)=u\\).",
+              "work": "\\(2x\\)"
             }
           ],
           "timeLimit": 60,
@@ -6016,31 +6060,31 @@
           "id": "y11a-8-excel-expln-q9",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Let f(x)=1+eˣ. Show that f(x)×f(−x)=f(x)+f(−x).",
+          "stem": "Let \\(f(x)=1+e^x\\). Show that \\(f(x)f(-x)=f(x)+f(-x)\\).",
           "options": [
-            "Both sides equal 2+eˣ+e^{-}ˣ.",
-            "Both sides equal 1+eˣ+e^{-}ˣ.",
+            "Both sides equal \\(2+e^x+e^{-x}\\).",
+            "Both sides equal \\(1+e^x+e^{-x}\\).",
             "The left side is always 1.",
             "The right side is always 2."
           ],
           "answer": 0,
-          "hint": "Write f(−x)=1+e^{-}ˣ, expand the product, and compare with the sum.",
+          "hint": "Write \\(f(-x)=1+e^{-x}\\), expand the product, and compare with the sum.",
           "steps": [
             {
               "explain": "Write each function value.",
-              "work": "f(x)=1+eˣ;  f(−x)=1+e^{-}ˣ"
+              "work": "\\(f(x)=1+e^x;  f(-x)=1+e^{-x}\\)"
             },
             {
               "explain": "Expand the product.",
-              "work": "f(x)f(−x)=(1+eˣ)(1+e^{-}ˣ)=2+eˣ+e^{-}ˣ"
+              "work": "\\(f(x)f(-x)=(1+e^x)(1+e^{-x})=2+e^x+e^{-x}\\)"
             },
             {
               "explain": "Add the two function values.",
-              "work": "f(x)+f(−x)=2+eˣ+e^{-}ˣ"
+              "work": "\\(f(x)+f(-x)=2+e^x+e^{-x}\\)"
             },
             {
               "explain": "The two expressions are equal.",
-              "work": "f(x)f(−x)=f(x)+f(−x)"
+              "work": "\\(f(x)f(-x)=f(x)+f(-x)\\)"
             }
           ],
           "timeLimit": 60,
@@ -6341,31 +6385,31 @@
           "id": "y11a-8-excel-expln-q2",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Solve e^(2 ln x) = x + 6.",
+          "stem": "Solve \\(e^{2\\ln x}=x+6\\).",
           "options": [
-            "x=3",
-            "x=−2",
-            "x=−2 and 3",
-            "x=6"
+            "\\(x=3\\)",
+            "\\(x=-2\\)",
+            "\\(x=-2\\text{ and }3\\)",
+            "\\(x=6\\)"
           ],
           "answer": 0,
-          "hint": "Use e^(ln x)=x, but remember ln x requires x>0.",
+          "hint": "Use \\(e^{\\ln x}=x\\), but remember \\(\\ln x\\) requires \\(x>0\\).",
           "steps": [
             {
-              "explain": "Since e^(ln x)=x, simplify the left side.",
-              "work": "e^(2 ln x)=e^(ln x^{2})=x^{2}  (x>0)"
+              "explain": "Since \\(e^{\\ln x}=x\\), simplify the left side.",
+              "work": "\\(e^{2 \\ln  x}=e^{\\ln  x^{2}}=x^{2}  (x>0)\\)"
             },
             {
               "explain": "Set the expressions equal.",
-              "work": "x^{2}=x+6"
+              "work": "\\(x^{2}=x+6\\)"
             },
             {
               "explain": "Factor and solve.",
-              "work": "x^{2}−x−6=0=(x−3)(x+2)"
+              "work": "\\(x^{2}-x-6=0=(x-3)(x+2)\\)"
             },
             {
-              "explain": "The logarithm requires x>0, so discard x=−2.",
-              "work": "x=3"
+              "explain": "The logarithm requires \\(x>0\\), so discard \\(x=-2\\).",
+              "work": "\\(x=3\\)"
             }
           ],
           "timeLimit": 60,
@@ -6387,31 +6431,31 @@
           "id": "y11a-8-excel-expln-q10",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Solve ln(x+6) = 2 ln x.",
+          "stem": "Solve \\(\\ln(x+6)=2\\ln x\\).",
           "options": [
-            "x=3",
-            "x=−2",
-            "x=−2 and 3",
-            "x=6"
+            "\\(x=3\\)",
+            "\\(x=-2\\)",
+            "\\(x=-2\\text{ and }3\\)",
+            "\\(x=6\\)"
           ],
           "answer": 0,
-          "hint": "The logarithms require x>0. Use 2lnx=ln(x^{2}), equate arguments and then check the domain.",
+          "hint": "The logarithms require \\(x>0\\). Use \\(2\\ln x=\\ln(x^{2})\\), equate arguments and then check the domain.",
           "steps": [
             {
-              "explain": "The domain requires x>0. Combine the right side using the power law.",
-              "work": "2lnx=ln(x^{2})"
+              "explain": "The domain requires \\(x>0\\). Combine the right side using the power law.",
+              "work": "\\(2\\ln x=\\ln(x^{2})\\)"
             },
             {
               "explain": "Both sides are natural logarithms, so equate their positive arguments.",
-              "work": "x+6=x^{2}"
+              "work": "\\(x+6=x^{2}\\)"
             },
             {
               "explain": "Solve the quadratic.",
-              "work": "x^{2}−x−6=0=(x−3)(x+2)"
+              "work": "\\(x^{2}-x-6=0=(x-3)(x+2)\\)"
             },
             {
-              "explain": "Only x=3 satisfies x>0.",
-              "work": "x=3"
+              "explain": "Only \\(x=3\\) satisfies \\(x>0\\).",
+              "work": "\\(x=3\\)"
             }
           ],
           "timeLimit": 60,
@@ -6424,8 +6468,8 @@
           },
           "keyPoints": [
             {
-              "text": "Solve ln(x+6) = 2 ln x.",
-              "note": "The logarithms require x>0. Use 2lnx=ln(x^{2}), equate arguments and then check the domain."
+              "text": "Solve \\(\\ln(x+6)=2\\ln x\\).",
+              "note": "The logarithms require \\(x>0\\). Use \\(2\\ln x=\\ln(x^{2})\\), equate arguments and then check the domain."
             }
           ]
         },
@@ -6433,31 +6477,31 @@
           "id": "y11a-8-excel-expln-q13",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Solve logₑx − 3/(logₑx) = 2.",
+          "stem": "Solve \\(\\log_e x-\\dfrac{3}{\\log_e x}=2\\).",
           "options": [
-            "x=e^{3} or x=e^{-1}",
-            "x=e^{2} or x=e^{-3}",
-            "x=3 or x=−1",
-            "x=e^{3} only"
+            "\\(x=e^{3}\\text{ or }x=e^{-1}\\)",
+            "\\(x=e^{2}\\text{ or }x=e^{-3}\\)",
+            "\\(x=3\\text{ or }x=-1\\)",
+            "\\(x=e^{3}\\text{ only}\\)"
           ],
           "answer": 0,
-          "hint": "Let m=ln x, with m≠0 because it appears in a denominator. Solve the resulting quadratic.",
+          "hint": "Let \\(m=\\ln x\\), with \\(m\\ne0\\) because it appears in a denominator. Solve the resulting quadratic.",
           "steps": [
             {
-              "explain": "Substitute m=ln x. Since m is in a denominator, m cannot be zero.",
-              "work": "m−3/m=2;  m≠0"
+              "explain": "Substitute \\(m=\\ln x\\). Since \\(m\\) is in a denominator, \\(m\\ne0\\).",
+              "work": "\\(m-\\dfrac{3}{m}=2,\\quad m\\ne0\\)"
             },
             {
               "explain": "Multiply through by m and rearrange.",
-              "work": "m^{2}−3=2m  ⇒  m^{2}−2m−3=0"
+              "work": "\\(m^{2}-3=2m\\quad\\Longrightarrow\\quad m^{2}-2m-3=0\\)"
             },
             {
               "explain": "Factor and solve.",
-              "work": "(m−3)(m+1)=0  ⇒  m=3 or m=−1"
+              "work": "\\((m-3)(m+1)=0\\quad\\Longrightarrow\\quad m=3\\text{ or }m=-1\\)"
             },
             {
-              "explain": "Return to x=e^m.",
-              "work": "\\(x=e^3\\) or \\(x=e^{-1}\\)"
+              "explain": "Return to \\(x=e^{m}\\) to find the corresponding values of \\(x\\).",
+              "work": "\\(x=e^{3}\\quad\\text{or}\\quad x=e^{-1}\\)"
             }
           ],
           "timeLimit": 60,
@@ -6471,7 +6515,7 @@
           "keyPoints": [
             {
               "text": "Solve logₑx − 3/(logₑx) = 2.",
-              "note": "Let m=ln x, with m≠0 because it appears in a denominator. Solve the resulting quadratic."
+              "note": "Let \\(m=\\ln x\\), with \\(m\\ne0\\) because it appears in a denominator. Solve the resulting quadratic."
             }
           ]
         },
@@ -6479,31 +6523,31 @@
           "id": "y11a-8-excel-expln-q14",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Solve the following equation for x: 2e^{2}ˣ − eˣ = 0.",
+          "stem": "Solve the following equation for \\(x\\): \\(2e^{2x}-e^x=0\\).",
           "options": [
-            "x=−ln2",
-            "x=ln2",
-            "x=0",
+            "\\(x=-\\ln 2\\)",
+            "\\(x=\\ln 2\\)",
+            "\\(x=0\\)",
             "no solution"
           ],
           "answer": 0,
-          "hint": "Let m=eˣ, so m>0. Factor the quadratic and discard the zero root.",
+          "hint": "Let \\(m=e^x\\), so \\(m>0\\). Factor the quadratic and discard the zero root.",
           "steps": [
             {
-              "explain": "Set m=eˣ. Exponentials are positive, so m>0.",
-              "work": "2m^{2}−m=0"
+              "explain": "Set \\(m=e^x\\). Exponentials are positive, so \\(m>0\\).",
+              "work": "\\(2m^{2}-m=0\\)"
             },
             {
               "explain": "Factor.",
-              "work": "m(2m−1)=0"
+              "work": "\\(m(2m-1)=0\\)"
             },
             {
-              "explain": "m=0 is impossible. Therefore m=1/2.",
-              "work": "eˣ=1/2"
+              "explain": "\\(m=0\\) is impossible. Therefore \\(m=\\frac12\\).",
+              "work": "\\(e^x=\\frac{1}{2}\\)"
             },
             {
               "explain": "Take natural logarithms.",
-              "work": "x=ln(1/2)=−ln2"
+              "work": "\\(x=\\ln (1/2)=-ln2\\)"
             }
           ],
           "timeLimit": 60,
@@ -6525,31 +6569,31 @@
           "id": "y11a-8-excel-expln-q16",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Solve the following equation for x: e^{2}ˣ + 3eˣ − 10 = 0.",
+          "stem": "Solve the following equation for \\(x\\): \\(e^{2x}+3e^x-10=0\\).",
           "options": [
-            "x=ln2",
-            "x=ln5",
-            "x=2",
+            "\\(x=\\ln 2\\)",
+            "\\(x=\\ln 5\\)",
+            "\\(x=2\\)",
             "no solution"
           ],
           "answer": 0,
-          "hint": "Set m=eˣ>0. Factor the quadratic in m, then keep the positive exponential value.",
+          "hint": "Set \\(m=e^x>0\\). Factor the quadratic in \\(m\\), then keep the positive exponential value.",
           "steps": [
             {
-              "explain": "Let m=eˣ. Then e^{2}ˣ=m^{2}.",
-              "work": "m^{2}+3m−10=0"
+              "explain": "Let \\(m=e^x\\). Then \\(e^{2x}=m^{2}\\).",
+              "work": "\\(m^{2}+3m-10=0\\)"
             },
             {
               "explain": "Factor.",
-              "work": "(m+5)(m−2)=0"
+              "work": "\\((m+5)(m-2)=0\\)"
             },
             {
-              "explain": "The value m=eˣ must be positive, so reject m=−5.",
-              "work": "m=2"
+              "explain": "The value \\(m=e^x\\) must be positive, so reject \\(m=-5\\).",
+              "work": "\\(m=2\\)"
             },
             {
               "explain": "Take natural logarithms.",
-              "work": "x=ln2"
+              "work": "\\(x=ln2\\)"
             }
           ],
           "timeLimit": 60,
@@ -6571,31 +6615,31 @@
           "id": "y11a-8-excel-expln-q21",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Solve ln(7x−12) = 2 ln x.",
+          "stem": "Solve \\(\\ln(7x-12)=2\\ln x\\).",
           "options": [
-            "x=3 and x=4",
-            "x=3 only",
-            "x=4 only",
-            "x=−3 and 4"
+            "\\(x=3 and x=4\\)",
+            "\\(x=3 only\\)",
+            "\\(x=4 only\\)",
+            "\\(x=-3 and 4\\)"
           ],
           "answer": 0,
-          "hint": "Require x>0 and 7x−12>0. Then rewrite 2lnx as ln(x^{2}) and solve.",
+          "hint": "Require \\(x>0\\) and \\(7x-12>0\\). Then rewrite \\(2\\ln x\\) as \\(\\ln(x^{2})\\) and solve.",
           "steps": [
             {
-              "explain": "The domains require x>0 and 7x−12>0, so x>12/7. Rewrite the right side.",
-              "work": "ln(7x−12)=ln(x^{2})"
+              "explain": "The domains require \\(x>0\\) and \\(7x-12>0\\), so \\(x>\\frac{12}{7}\\). Rewrite the right side.",
+              "work": "\\(\\ln (7x-12)=\\ln (x^{2})\\)"
             },
             {
               "explain": "Equate the positive arguments.",
-              "work": "7x−12=x^{2}"
+              "work": "\\(7x-12=x^{2}\\)"
             },
             {
               "explain": "Solve the quadratic.",
-              "work": "x^{2}−7x+12=0=(x−3)(x−4)"
+              "work": "\\(x^{2}-7x+12=0=(x-3)(x-4)\\)"
             },
             {
-              "explain": "Both 3 and 4 satisfy x>12/7.",
-              "work": "x=3 or x=4"
+              "explain": "Both \\(3\\) and \\(4\\) satisfy \\(x>\\frac{12}{7}\\).",
+              "work": "\\(x=3 \\text{ or } x=4\\)"
             }
           ],
           "timeLimit": 60,
@@ -6617,31 +6661,31 @@
           "id": "y11a-8-excel-expln-q22",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Solve the equation 2 ln x = ln(5+4x).",
+          "stem": "Solve the equation \\(2\\ln x=\\ln(5+4x)\\).",
           "options": [
-            "x=5",
-            "x=−1",
-            "x=−1 and 5",
-            "x=4"
+            "\\(x=5\\)",
+            "\\(x=-1\\)",
+            "\\(x=-1 and 5\\)",
+            "\\(x=4\\)"
           ],
           "answer": 0,
-          "hint": "The domain requires x>0. Rewrite 2lnx as ln(x^{2}), equate arguments, and reject any non-positive root.",
+          "hint": "The domain requires \\(x>0\\). Rewrite \\(2\\ln x\\) as \\(\\ln(x^{2})\\), equate arguments, and reject any non-positive root.",
           "steps": [
             {
-              "explain": "Since x>0 is required, use the power law.",
-              "work": "2lnx=ln(x^{2})"
+              "explain": "Since \\(x>0\\) is required, use the power law.",
+              "work": "\\(2\\ln x=\\ln (x^{2})\\)"
             },
             {
               "explain": "Equate the positive logarithm arguments.",
-              "work": "x^{2}=5+4x"
+              "work": "\\(x^{2}=5+4x\\)"
             },
             {
               "explain": "Solve the quadratic.",
-              "work": "x^{2}−4x−5=0=(x−5)(x+1)"
+              "work": "\\(x^{2}-4x-5=0=(x-5)(x+1)\\)"
             },
             {
-              "explain": "Only x=5 lies in the domain x>0.",
-              "work": "x=5"
+              "explain": "Only \\(x=5\\) lies in the domain \\(x>0\\).",
+              "work": "\\(x=5\\)"
             }
           ],
           "timeLimit": 60,
@@ -6754,7 +6798,7 @@
           "id": "y11a-8-excel-expln-q5",
           "type": "multipart",
           "difficulty": "hard",
-          "stem": "The line y=mx is a tangent to the curve y=e^{2}ˣ at a point P.",
+          "stem": "The line \\(y=mx\\) is a tangent to the curve \\(y=e^{2x}\\) at a point \\(P\\).",
           "hint": "A tangent has the same gradient and value as the curve at P. Differentiate the exponential, equate slopes, and use the shared point.",
           "steps": [],
           "parts": [
@@ -6767,21 +6811,21 @@
                 "An increasing exponential through (0,1) and a straight line through the origin tangent to it at P.",
                 "A decreasing exponential and a horizontal line.",
                 "An increasing straight line through P and an exponential below it with no contact.",
-                "A decreasing straight line tangent at x=0."
+                "A decreasing straight line tangent at \\(x=0\\)."
               ],
               "answer": 0,
-              "hint": "The curve y=e^(2x) passes through (0,1). The line y=mx passes through the origin and just touches the curve at P.",
+              "hint": "The curve \\(y=e^{2x}\\) passes through \\((0,1)\\). The line \\(y=mx\\) passes through the origin and just touches the curve at \\(P\\).",
               "steps": [
                 {
-                  "explain": "Use the basic shape of y=e^(2x): it is increasing, concave up, and passes through (0,1). The line y=mx passes through the origin.",
-                  "work": "y=e^(2x),  y=mx",
+                  "explain": "Use the basic shape of \\(y=e^{2x}\\): it is increasing, concave up, and passes through \\((0,1)\\). The line \\(y=mx\\) passes through the origin.",
+                  "work": "\\(y=e^{2x},  y=mx\\)",
                   "figure": {
                     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 390 260\" role=\"img\" aria-label=\"The exponential curve y=e^(2x) and its tangent line through the origin at P=(1/2,e). The common tangent slope is m=2e.\"><rect width=\"390\" height=\"260\" fill=\"white\"/><path d=\"M40 215 H360 M115 25 V230\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M55 207 C91 197 124 178 157 148 C204 105 248 63 341 32\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"4\"/><path d=\"M115 215 L341 34\" stroke=\"#f59e0b\" stroke-width=\"3\"/><circle cx=\"172\" cy=\"169\" r=\"5\" fill=\"#10b981\"/><text x=\"176\" y=\"164\" fill=\"#047857\">P(1/2,e)</text><text x=\"224\" y=\"109\" fill=\"#2563eb\">y=e^(2x)</text><text x=\"231\" y=\"145\" fill=\"#b45309\">y=mx</text><text x=\"365\" y=\"220\">x</text><text x=\"104\" y=\"20\">y</text><text x=\"117\" y=\"229\">0</text></svg>"
                   }
                 },
                 {
                   "explain": "Because the line is tangent, it touches the curve at P with the same gradient there. Select the sketch that shows this single tangency.",
-                  "work": "the exponential and origin-line are tangent at P",
+                  "work": "\\(the exponential and origin-line are tangent at P\\)",
                   "figure": {
                     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 390 260\" role=\"img\" aria-label=\"The exponential curve y=e^(2x) and its tangent line through the origin at P=(1/2,e). The common tangent slope is m=2e.\"><rect width=\"390\" height=\"260\" fill=\"white\"/><path d=\"M40 215 H360 M115 25 V230\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M55 207 C91 197 124 178 157 148 C204 105 248 63 341 32\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"4\"/><path d=\"M115 215 L341 34\" stroke=\"#f59e0b\" stroke-width=\"3\"/><circle cx=\"172\" cy=\"169\" r=\"5\" fill=\"#10b981\"/><text x=\"176\" y=\"164\" fill=\"#047857\">P(1/2,e)</text><text x=\"224\" y=\"109\" fill=\"#2563eb\">y=e^(2x)</text><text x=\"231\" y=\"145\" fill=\"#b45309\">y=mx</text><text x=\"365\" y=\"220\">x</text><text x=\"104\" y=\"20\">y</text><text x=\"117\" y=\"229\">0</text></svg>"
                   }
@@ -6802,29 +6846,29 @@
               "difficulty": "medium",
               "stem": "Find the coordinates of P.",
               "options": [
-                "(1/2,e)",
-                "(1,e^{2})",
-                "(0,1)",
-                "(1/2,2e)"
+                "\\((1/2,e)\\)",
+                "\\((1,e^{2})\\)",
+                "\\((0,1)\\)",
+                "\\((1/2,2e)\\)"
               ],
               "answer": 0,
               "hint": "At tangency, the line and curve have equal y-values and equal gradients. Solve those two conditions.",
               "steps": [
                 {
                   "explain": "At P, the two equations share a y-value.",
-                  "work": "mx=e^(2x)"
+                  "work": "\\(mx=e^{2x}\\)"
                 },
                 {
-                  "explain": "The tangent gradient of the curve y=e^(2x) is 2e^(2x); the line gradient is m.",
-                  "work": "m=2e^(2x)"
+                  "explain": "The tangent gradient of the curve \\(y=e^{2x}\\) is \\(2e^{2x}\\); the line gradient is \\(m\\).",
+                  "work": "\\(m=2e^{2x}\\)"
                 },
                 {
                   "explain": "Substitute m into the common-y equation.",
-                  "work": "2xe^(2x)=e^(2x)  ⇒  2x=1  ⇒  x=1/2"
+                  "work": "\\(2xe^{2x}=e^{2x}  \\Longrightarrow   2x=1  \\Longrightarrow   x=\\frac{1}{2}\\)"
                 },
                 {
                   "explain": "Evaluate y on the curve.",
-                  "work": "y=e^(2·1/2)=e; hence P=(1/2,e)"
+                  "work": "\\(y=e^{2·1/2}=e; \\text{ hence } P=(1/2,e)\\)"
                 }
               ],
               "timeLimit": 60,
@@ -6844,23 +6888,23 @@
               "options": [
                 "2e",
                 "e",
-                "1/e",
-                "e^{2}"
+                "\\(1/e\\)",
+                "\\(e^{2}\\)"
               ],
               "answer": 0,
-              "hint": "Use the slope of the tangent y=e^(2x) at x=1/2.",
+              "hint": "Use the slope of the tangent \\(y=e^{2x}\\) at \\(x=\\frac12\\).",
               "steps": [
                 {
                   "explain": "Differentiate the exponential curve.",
-                  "work": "dy/dx=2e^(2x)"
+                  "work": "\\(dy/dx=2e^{2x}\\)"
                 },
                 {
-                  "explain": "Substitute x=1/2.",
-                  "work": "m=2e^(1)=2e"
+                  "explain": "Substitute \\(x=\\frac12\\).",
+                  "work": "\\(m=2e^{1}=2e\\)"
                 },
                 {
                   "explain": "This equals the line’s slope.",
-                  "work": "m=2e"
+                  "work": "\\(m=2e\\)"
                 }
               ],
               "timeLimit": 60,
@@ -7093,6 +7137,75 @@
           },
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"70%\" viewBox=\"0 0 760 360\" role=\"img\" aria-label=\"Four candidate graphs for y=3^x, with option D increasing exponentially through (0,1), (1,3), and (2,9).\"><rect width=\"100%\" height=\"100%\" fill=\"#fff\"/><rect x=\"13\" y=\"9\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"24\" y=\"29\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">A</text><path d=\"M60 37V144H356\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"51\" y=\"159\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"358\" y=\"148\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"50\" y=\"35\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M60 144 L342 45\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"387\" y=\"9\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"398\" y=\"29\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">B</text><path d=\"M434 37V144H730\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"425\" y=\"159\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"732\" y=\"148\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"424\" y=\"35\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M436 52 C464 96,535 134,716 142\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"13\" y=\"183\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"24\" y=\"203\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">C</text><path d=\"M60 211V318H356\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"51\" y=\"333\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"358\" y=\"322\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"50\" y=\"209\" font-size=\"11\" fill=\"#334155\">y</text><path d=\"M63 254 L342 316\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"387\" y=\"183\" width=\"360\" height=\"164\" rx=\"4\" fill=\"white\" stroke=\"#d6deea\"/><text x=\"398\" y=\"203\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">D</text><path d=\"M434 211V318H730\" stroke=\"#475569\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"425\" y=\"333\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"732\" y=\"322\" font-size=\"11\" fill=\"#334155\">x</text><text x=\"424\" y=\"209\" font-size=\"11\" fill=\"#334155\">y</text><circle cx=\"529\" cy=\"286\" r=\"3.4\" fill=\"#f59e0b\"/><text x=\"534\" y=\"281\" font-size=\"9\" fill=\"#92400e\">3</text><circle cx=\"624\" cy=\"286\" r=\"3.4\" fill=\"#f59e0b\"/><text x=\"629\" y=\"281\" font-size=\"9\" fill=\"#92400e\">9</text><path d=\"M434 300 C508 306,621 295,716 214\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/></svg>"
+          }
+        },
+        {
+          "id": "y12a-graphtech-p115-q12",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The function \\(y=e^x\\) is translated right 2 units and up by 1 unit to give the function \\(f(x)\\).",
+          "parts": [
+            {
+              "id": "y12a-graphtech-p115-q12-i",
+              "type": "mc",
+              "stem": "i) Write down the equation for \\(f(x)\\).",
+              "options": [
+                "\\(f(x)=e^{x-2}+1\\)",
+                "\\(f(x)=e^{x+2}+1\\)",
+                "\\(f(x)=e^x+3\\)",
+                "\\(f(x)=e^{x-2}-1\\)"
+              ],
+              "answer": 0,
+              "solution": "\\(f(x)=e^{x-2}+1\\)",
+              "hint": "A shift right by 2 replaces x by x−2 inside the exponent. A shift up by 1 adds 1 outside.",
+              "steps": [
+                {
+                  "explain": "The original graph is y=e^x. A horizontal shift right by 2 changes the input from x to x−2.",
+                  "work": "\\(e^x\\longrightarrow e^{x-2}\\)"
+                },
+                {
+                  "explain": "The vertical shift up by 1 adds 1 to every output.",
+                  "work": "\\(\\boxed{f(x)=e^{x-2}+1}\\)"
+                }
+              ]
+            },
+            {
+              "id": "y12a-graphtech-p115-q12-ii",
+              "type": "review",
+              "stem": "ii) Sketch \\(y=f(x)\\) on the number plane below.",
+              "answer": "An increasing exponential curve with horizontal asymptote y=1, passing through (2,2).",
+              "manual": true,
+              "hint": "Move the asymptote y=0 of y=e^x up to y=1. The point (0,1) on y=e^x moves to (2,2).",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 360 230\"><rect width=\"360\" height=\"230\" fill=\"white\"/><path d=\"M28 202H332 M166.1818181818182 202V28\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M28 200V204\" stroke=\"#64748b\"/><text x=\"28\" y=\"214\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\" fill=\"#475569\">-5</text><path d=\"M55.63636363636364 200V204\" stroke=\"#64748b\"/><text x=\"55.63636363636364\" y=\"214\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\" fill=\"#475569\">-4</text><path d=\"M83.27272727272728 200V204\" stroke=\"#64748b\"/><text x=\"83.27272727272728\" y=\"214\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\" fill=\"#475569\">-3</text><path d=\"M110.9090909090909 200V204\" stroke=\"#64748b\"/><text x=\"110.9090909090909\" y=\"214\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\" fill=\"#475569\">-2</text><path d=\"M138.54545454545456 200V204\" stroke=\"#64748b\"/><text x=\"138.54545454545456\" y=\"214\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\" fill=\"#475569\">-1</text><path d=\"M193.8181818181818 200V204\" stroke=\"#64748b\"/><text x=\"193.8181818181818\" y=\"214\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\" fill=\"#475569\">1</text><path d=\"M221.45454545454547 200V204\" stroke=\"#64748b\"/><text x=\"221.45454545454547\" y=\"214\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\" fill=\"#475569\">2</text><path d=\"M249.0909090909091 200V204\" stroke=\"#64748b\"/><text x=\"249.0909090909091\" y=\"214\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\" fill=\"#475569\">3</text><path d=\"M276.72727272727275 200V204\" stroke=\"#64748b\"/><text x=\"276.72727272727275\" y=\"214\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\" fill=\"#475569\">4</text><path d=\"M304.3636363636364 200V204\" stroke=\"#64748b\"/><text x=\"304.3636363636364\" y=\"214\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\" fill=\"#475569\">5</text><path d=\"M332 200V204\" stroke=\"#64748b\"/><text x=\"332\" y=\"214\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\" fill=\"#475569\">6</text><path d=\"M164.1818181818182 173H168.1818181818182\" stroke=\"#64748b\"/><text x=\"160.1818181818182\" y=\"176\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"end\" fill=\"#475569\">1</text><path d=\"M164.1818181818182 144H168.1818181818182\" stroke=\"#64748b\"/><text x=\"160.1818181818182\" y=\"147\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"end\" fill=\"#475569\">2</text><path d=\"M164.1818181818182 115H168.1818181818182\" stroke=\"#64748b\"/><text x=\"160.1818181818182\" y=\"118\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"end\" fill=\"#475569\">3</text><path d=\"M164.1818181818182 86H168.1818181818182\" stroke=\"#64748b\"/><text x=\"160.1818181818182\" y=\"89\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"end\" fill=\"#475569\">4</text><path d=\"M164.1818181818182 57H168.1818181818182\" stroke=\"#64748b\"/><text x=\"160.1818181818182\" y=\"60\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"end\" fill=\"#475569\">5</text><path d=\"M164.1818181818182 28H168.1818181818182\" stroke=\"#64748b\"/><text x=\"160.1818181818182\" y=\"31\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"end\" fill=\"#475569\">6</text><text x=\"329\" y=\"196\" font-family=\"Arial\" font-size=\"10\" fill=\"#334155\">x</text><text x=\"171.1818181818182\" y=\"37\" font-family=\"Arial\" font-size=\"10\" fill=\"#334155\">y</text></svg>"
+              },
+              "steps": [
+                {
+                  "explain": "The original exponential has horizontal asymptote y=0. Moving the graph up 1 moves this asymptote to y=1.",
+                  "work": "\\(y=0\\longrightarrow y=1\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 360 230\"><rect width=\"360\" height=\"230\" fill=\"white\"/><path d=\"M28 202H332 M166.1818181818182 202V28\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M28 200V204\" stroke=\"#64748b\"/><text x=\"28\" y=\"214\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\" fill=\"#475569\">-5</text><path d=\"M55.63636363636364 200V204\" stroke=\"#64748b\"/><text x=\"55.63636363636364\" y=\"214\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\" fill=\"#475569\">-4</text><path d=\"M83.27272727272728 200V204\" stroke=\"#64748b\"/><text x=\"83.27272727272728\" y=\"214\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\" fill=\"#475569\">-3</text><path d=\"M110.9090909090909 200V204\" stroke=\"#64748b\"/><text x=\"110.9090909090909\" y=\"214\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\" fill=\"#475569\">-2</text><path d=\"M138.54545454545456 200V204\" stroke=\"#64748b\"/><text x=\"138.54545454545456\" y=\"214\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\" fill=\"#475569\">-1</text><path d=\"M193.8181818181818 200V204\" stroke=\"#64748b\"/><text x=\"193.8181818181818\" y=\"214\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\" fill=\"#475569\">1</text><path d=\"M221.45454545454547 200V204\" stroke=\"#64748b\"/><text x=\"221.45454545454547\" y=\"214\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\" fill=\"#475569\">2</text><path d=\"M249.0909090909091 200V204\" stroke=\"#64748b\"/><text x=\"249.0909090909091\" y=\"214\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\" fill=\"#475569\">3</text><path d=\"M276.72727272727275 200V204\" stroke=\"#64748b\"/><text x=\"276.72727272727275\" y=\"214\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\" fill=\"#475569\">4</text><path d=\"M304.3636363636364 200V204\" stroke=\"#64748b\"/><text x=\"304.3636363636364\" y=\"214\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\" fill=\"#475569\">5</text><path d=\"M332 200V204\" stroke=\"#64748b\"/><text x=\"332\" y=\"214\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\" fill=\"#475569\">6</text><path d=\"M164.1818181818182 173H168.1818181818182\" stroke=\"#64748b\"/><text x=\"160.1818181818182\" y=\"176\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"end\" fill=\"#475569\">1</text><path d=\"M164.1818181818182 144H168.1818181818182\" stroke=\"#64748b\"/><text x=\"160.1818181818182\" y=\"147\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"end\" fill=\"#475569\">2</text><path d=\"M164.1818181818182 115H168.1818181818182\" stroke=\"#64748b\"/><text x=\"160.1818181818182\" y=\"118\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"end\" fill=\"#475569\">3</text><path d=\"M164.1818181818182 86H168.1818181818182\" stroke=\"#64748b\"/><text x=\"160.1818181818182\" y=\"89\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"end\" fill=\"#475569\">4</text><path d=\"M164.1818181818182 57H168.1818181818182\" stroke=\"#64748b\"/><text x=\"160.1818181818182\" y=\"60\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"end\" fill=\"#475569\">5</text><path d=\"M164.1818181818182 28H168.1818181818182\" stroke=\"#64748b\"/><text x=\"160.1818181818182\" y=\"31\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"end\" fill=\"#475569\">6</text><text x=\"329\" y=\"196\" font-family=\"Arial\" font-size=\"10\" fill=\"#334155\">x</text><text x=\"171.1818181818182\" y=\"37\" font-family=\"Arial\" font-size=\"10\" fill=\"#334155\">y</text><path d=\"M28 173H332\" stroke=\"#f59e0b\" stroke-dasharray=\"5 4\"/></svg>"
+                  }
+                },
+                {
+                  "explain": "The point (0,1) on y=e^x shifts right 2 and up 1, becoming (2,2). Plot it and draw a smooth increasing exponential curve approaching y=1 on the left.",
+                  "work": "\\((0,1)\\mapsto(2,2);\\quad f(x)=e^{x-2}+1\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 360 230\"><rect width=\"360\" height=\"230\" fill=\"white\"/><path d=\"M28 202H332 M166.1818181818182 202V28\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M28 200V204\" stroke=\"#64748b\"/><text x=\"28\" y=\"214\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\" fill=\"#475569\">-5</text><path d=\"M55.63636363636364 200V204\" stroke=\"#64748b\"/><text x=\"55.63636363636364\" y=\"214\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\" fill=\"#475569\">-4</text><path d=\"M83.27272727272728 200V204\" stroke=\"#64748b\"/><text x=\"83.27272727272728\" y=\"214\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\" fill=\"#475569\">-3</text><path d=\"M110.9090909090909 200V204\" stroke=\"#64748b\"/><text x=\"110.9090909090909\" y=\"214\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\" fill=\"#475569\">-2</text><path d=\"M138.54545454545456 200V204\" stroke=\"#64748b\"/><text x=\"138.54545454545456\" y=\"214\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\" fill=\"#475569\">-1</text><path d=\"M193.8181818181818 200V204\" stroke=\"#64748b\"/><text x=\"193.8181818181818\" y=\"214\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\" fill=\"#475569\">1</text><path d=\"M221.45454545454547 200V204\" stroke=\"#64748b\"/><text x=\"221.45454545454547\" y=\"214\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\" fill=\"#475569\">2</text><path d=\"M249.0909090909091 200V204\" stroke=\"#64748b\"/><text x=\"249.0909090909091\" y=\"214\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\" fill=\"#475569\">3</text><path d=\"M276.72727272727275 200V204\" stroke=\"#64748b\"/><text x=\"276.72727272727275\" y=\"214\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\" fill=\"#475569\">4</text><path d=\"M304.3636363636364 200V204\" stroke=\"#64748b\"/><text x=\"304.3636363636364\" y=\"214\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\" fill=\"#475569\">5</text><path d=\"M332 200V204\" stroke=\"#64748b\"/><text x=\"332\" y=\"214\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"middle\" fill=\"#475569\">6</text><path d=\"M164.1818181818182 173H168.1818181818182\" stroke=\"#64748b\"/><text x=\"160.1818181818182\" y=\"176\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"end\" fill=\"#475569\">1</text><path d=\"M164.1818181818182 144H168.1818181818182\" stroke=\"#64748b\"/><text x=\"160.1818181818182\" y=\"147\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"end\" fill=\"#475569\">2</text><path d=\"M164.1818181818182 115H168.1818181818182\" stroke=\"#64748b\"/><text x=\"160.1818181818182\" y=\"118\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"end\" fill=\"#475569\">3</text><path d=\"M164.1818181818182 86H168.1818181818182\" stroke=\"#64748b\"/><text x=\"160.1818181818182\" y=\"89\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"end\" fill=\"#475569\">4</text><path d=\"M164.1818181818182 57H168.1818181818182\" stroke=\"#64748b\"/><text x=\"160.1818181818182\" y=\"60\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"end\" fill=\"#475569\">5</text><path d=\"M164.1818181818182 28H168.1818181818182\" stroke=\"#64748b\"/><text x=\"160.1818181818182\" y=\"31\" font-family=\"Arial\" font-size=\"8\" text-anchor=\"end\" fill=\"#475569\">6</text><text x=\"329\" y=\"196\" font-family=\"Arial\" font-size=\"10\" fill=\"#334155\">x</text><text x=\"171.1818181818182\" y=\"37\" font-family=\"Arial\" font-size=\"10\" fill=\"#334155\">y</text><path d=\"M28.0 173.0 L28.5 173.0 L29.0 173.0 L29.5 173.0 L30.0 173.0 L30.5 173.0 L31.0 173.0 L31.5 173.0 L32.1 173.0 L32.6 173.0 L33.1 173.0 L33.6 173.0 L34.1 173.0 L34.6 173.0 L35.1 173.0 L35.6 173.0 L36.1 173.0 L36.6 173.0 L37.1 173.0 L37.6 173.0 L38.1 173.0 L38.6 173.0 L39.1 173.0 L39.7 173.0 L40.2 173.0 L40.7 173.0 L41.2 173.0 L41.7 173.0 L42.2 173.0 L42.7 173.0 L43.2 173.0 L43.7 173.0 L44.2 173.0 L44.7 173.0 L45.2 173.0 L45.7 172.9 L46.2 172.9 L46.7 172.9 L47.3 172.9 L47.8 172.9 L48.3 172.9 L48.8 172.9 L49.3 172.9 L49.8 172.9 L50.3 172.9 L50.8 172.9 L51.3 172.9 L51.8 172.9 L52.3 172.9 L52.8 172.9 L53.3 172.9 L53.8 172.9 L54.3 172.9 L54.9 172.9 L55.4 172.9 L55.9 172.9 L56.4 172.9 L56.9 172.9 L57.4 172.9 L57.9 172.9 L58.4 172.9 L58.9 172.9 L59.4 172.9 L59.9 172.9 L60.4 172.9 L60.9 172.9 L61.4 172.9 L61.9 172.9 L62.5 172.9 L63.0 172.9 L63.5 172.9 L64.0 172.9 L64.5 172.9 L65.0 172.9 L65.5 172.9 L66.0 172.9 L66.5 172.9 L67.0 172.9 L67.5 172.9 L68.0 172.9 L68.5 172.9 L69.0 172.9 L69.5 172.9 L70.1 172.9 L70.6 172.9 L71.1 172.9 L71.6 172.9 L72.1 172.9 L72.6 172.9 L73.1 172.9 L73.6 172.9 L74.1 172.9 L74.6 172.9 L75.1 172.9 L75.6 172.9 L76.1 172.8 L76.6 172.8 L77.1 172.8 L77.7 172.8 L78.2 172.8 L78.7 172.8 L79.2 172.8 L79.7 172.8 L80.2 172.8 L80.7 172.8 L81.2 172.8 L81.7 172.8 L82.2 172.8 L82.7 172.8 L83.2 172.8 L83.7 172.8 L84.2 172.8 L84.7 172.8 L85.3 172.8 L85.8 172.8 L86.3 172.8 L86.8 172.8 L87.3 172.8 L87.8 172.8 L88.3 172.8 L88.8 172.8 L89.3 172.8 L89.8 172.8 L90.3 172.7 L90.8 172.7 L91.3 172.7 L91.8 172.7 L92.3 172.7 L92.9 172.7 L93.4 172.7 L93.9 172.7 L94.4 172.7 L94.9 172.7 L95.4 172.7 L95.9 172.7 L96.4 172.7 L96.9 172.7 L97.4 172.7 L97.9 172.7 L98.4 172.7 L98.9 172.7 L99.4 172.6 L99.9 172.6 L100.5 172.6 L101.0 172.6 L101.5 172.6 L102.0 172.6 L102.5 172.6 L103.0 172.6 L103.5 172.6 L104.0 172.6 L104.5 172.6 L105.0 172.6 L105.5 172.6 L106.0 172.6 L106.5 172.5 L107.0 172.5 L107.5 172.5 L108.1 172.5 L108.6 172.5 L109.1 172.5 L109.6 172.5 L110.1 172.5 L110.6 172.5 L111.1 172.5 L111.6 172.5 L112.1 172.4 L112.6 172.4 L113.1 172.4 L113.6 172.4 L114.1 172.4 L114.6 172.4 L115.1 172.4 L115.7 172.4 L116.2 172.4 L116.7 172.3 L117.2 172.3 L117.7 172.3 L118.2 172.3 L118.7 172.3 L119.2 172.3 L119.7 172.3 L120.2 172.3 L120.7 172.2 L121.2 172.2 L121.7 172.2 L122.2 172.2 L122.7 172.2 L123.3 172.2 L123.8 172.2 L124.3 172.1 L124.8 172.1 L125.3 172.1 L125.8 172.1 L126.3 172.1 L126.8 172.1 L127.3 172.0 L127.8 172.0 L128.3 172.0 L128.8 172.0 L129.3 172.0 L129.8 171.9 L130.3 171.9 L130.9 171.9 L131.4 171.9 L131.9 171.9 L132.4 171.8 L132.9 171.8 L133.4 171.8 L133.9 171.8 L134.4 171.8 L134.9 171.7 L135.4 171.7 L135.9 171.7 L136.4 171.7 L136.9 171.6 L137.4 171.6 L137.9 171.6 L138.5 171.6 L139.0 171.5 L139.5 171.5 L140.0 171.5 L140.5 171.5 L141.0 171.4 L141.5 171.4 L142.0 171.4 L142.5 171.3 L143.0 171.3 L143.5 171.3 L144.0 171.2 L144.5 171.2 L145.0 171.2 L145.5 171.1 L146.1 171.1 L146.6 171.1 L147.1 171.0 L147.6 171.0 L148.1 171.0 L148.6 170.9 L149.1 170.9 L149.6 170.8 L150.1 170.8 L150.6 170.8 L151.1 170.7 L151.6 170.7 L152.1 170.6 L152.6 170.6 L153.1 170.6 L153.7 170.5 L154.2 170.5 L154.7 170.4 L155.2 170.4 L155.7 170.3 L156.2 170.3 L156.7 170.2 L157.2 170.2 L157.7 170.1 L158.2 170.1 L158.7 170.0 L159.2 169.9 L159.7 169.9 L160.2 169.8 L160.7 169.8 L161.3 169.7 L161.8 169.7 L162.3 169.6 L162.8 169.5 L163.3 169.5 L163.8 169.4 L164.3 169.3 L164.8 169.3 L165.3 169.2 L165.8 169.1 L166.3 169.1 L166.8 169.0 L167.3 168.9 L167.8 168.8 L168.3 168.8 L168.9 168.7 L169.4 168.6 L169.9 168.5 L170.4 168.4 L170.9 168.3 L171.4 168.3 L171.9 168.2 L172.4 168.1 L172.9 168.0 L173.4 167.9 L173.9 167.8 L174.4 167.7 L174.9 167.6 L175.4 167.5 L175.9 167.4 L176.5 167.3 L177.0 167.2 L177.5 167.1 L178.0 167.0 L178.5 166.9 L179.0 166.8 L179.5 166.6 L180.0 166.5 L180.5 166.4 L181.0 166.3 L181.5 166.2 L182.0 166.0 L182.5 165.9 L183.0 165.8 L183.5 165.6 L184.1 165.5 L184.6 165.4 L185.1 165.2 L185.6 165.1 L186.1 164.9 L186.6 164.8 L187.1 164.6 L187.6 164.5 L188.1 164.3 L188.6 164.2 L189.1 164.0 L189.6 163.8 L190.1 163.7 L190.6 163.5 L191.1 163.3 L191.7 163.1 L192.2 163.0 L192.7 162.8 L193.2 162.6 L193.7 162.4 L194.2 162.2 L194.7 162.0 L195.2 161.8 L195.7 161.6 L196.2 161.4 L196.7 161.2 L197.2 160.9 L197.7 160.7 L198.2 160.5 L198.7 160.2 L199.3 160.0 L199.8 159.8 L200.3 159.5 L200.8 159.3 L201.3 159.0 L201.8 158.8 L202.3 158.5 L202.8 158.2 L203.3 158.0 L203.8 157.7 L204.3 157.4 L204.8 157.1 L205.3 156.8 L205.8 156.5 L206.3 156.2 L206.9 155.9 L207.4 155.6 L207.9 155.3 L208.4 154.9 L208.9 154.6 L209.4 154.3 L209.9 153.9 L210.4 153.6 L210.9 153.2 L211.4 152.8 L211.9 152.5 L212.4 152.1 L212.9 151.7 L213.4 151.3 L213.9 150.9 L214.5 150.5 L215.0 150.1 L215.5 149.6 L216.0 149.2 L216.5 148.8 L217.0 148.3 L217.5 147.9 L218.0 147.4 L218.5 146.9 L219.0 146.5 L219.5 146.0 L220.0 145.5 L220.5 145.0 L221.0 144.4 L221.5 143.9 L222.1 143.4 L222.6 142.8 L223.1 142.3 L223.6 141.7 L224.1 141.1 L224.6 140.5 L225.1 139.9 L225.6 139.3 L226.1 138.7 L226.6 138.0 L227.1 137.4 L227.6 136.7 L228.1 136.1 L228.6 135.4 L229.1 134.7 L229.7 134.0 L230.2 133.3 L230.7 132.5 L231.2 131.8 L231.7 131.0 L232.2 130.2 L232.7 129.4 L233.2 128.6 L233.7 127.8 L234.2 127.0 L234.7 126.1 L235.2 125.3 L235.7 124.4 L236.2 123.5 L236.7 122.6 L237.3 121.6 L237.8 120.7 L238.3 119.7 L238.8 118.7 L239.3 117.7 L239.8 116.7 L240.3 115.7 L240.8 114.6 L241.3 113.5 L241.8 112.4 L242.3 111.3 L242.8 110.2 L243.3 109.0 L243.8 107.8 L244.3 106.6 L244.9 105.4 L245.4 104.1 L245.9 102.9 L246.4 101.6 L246.9 100.2 L247.4 98.9 L247.9 97.5 L248.4 96.1 L248.9 94.7 L249.4 93.2 L249.9 91.8 L250.4 90.3 L250.9 88.7 L251.4 87.2 L251.9 85.6 L252.5 84.0 L253.0 82.3 L253.5 80.6 L254.0 78.9 L254.5 77.2 L255.0 75.4 L255.5 73.6 L256.0 71.8 L256.5 69.9 L257.0 68.0 L257.5 66.1 L258.0 64.1 L258.5 62.1 L259.0 60.0 L259.5 57.9 L260.1 55.8 L260.6 53.6 L261.1 51.4 L261.6 49.2 L262.1 46.9 L262.6 44.5 L263.1 42.2 L263.6 39.7 L264.1 37.3 L264.6 34.8 L265.1 32.2 L265.6 29.6 L266.1 26.9 L266.6 24.2 L267.1 21.5 L267.7 18.7 L268.2 15.8 L268.7 12.9 L269.2 10.0 L269.7 6.9 L270.2 3.9 L270.7 0.7 \" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\"/><path d=\"M28 173H332\" stroke=\"#f59e0b\" stroke-dasharray=\"5 4\"/><circle cx=\"221.45454545454547\" cy=\"144\" r=\"4\" fill=\"#ef4444\"/><text x=\"226.45454545454547\" y=\"138\" font-family=\"Arial\" font-size=\"10\" fill=\"#b91c1c\">(2,2)</text></svg>"
+                  }
+                }
+              ]
+            }
+          ],
+          "hint": "Apply the right shift inside the exponent and the upward shift outside; use the moved asymptote and a transformed point to sketch.",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePdf": "Y12 Advanced Topic by topic 002 (1).pdf",
+            "sourcePage": 115,
+            "sourceQuestion": "12",
+            "course": "Advanced",
+            "grade": "12"
           }
         }
       ]
@@ -7610,7 +7723,7 @@
           "id": "y11a-8-excel-expln-q18",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Find α so that the equation P=100(1.23)ᵗ can be rewritten as P=100e^(αt). Give your answer in decimal form.",
+          "stem": "Find \\(\\alpha\\) so that the equation \\(P=100(1.23)^t\\) can be rewritten as \\(P=100e^{\\alpha t}\\). Give your answer in decimal form.",
           "options": [
             "α≈0.21",
             "α≈1.23",
@@ -7618,19 +7731,19 @@
             "α≈2.10"
           ],
           "answer": 0,
-          "hint": "Use (1.23)ᵗ=e^(t ln1.23), so α=ln1.23.",
+          "hint": "Use \\((1.23)^t=e^{t\\ln(1.23)}\\), so \\(\\alpha=\\ln(1.23)\\).",
           "steps": [
             {
               "explain": "Rewrite the exponential base using e.",
-              "work": "(1.23)ᵗ=e^{t ln(1.23)}"
+              "work": "\\((1.23)^t=e^{t \\ln (1.23)}\\)"
             },
             {
               "explain": "Compare the exponent with αt.",
-              "work": "α=ln(1.23)"
+              "work": "\\(α=\\ln (1.23)\\)"
             },
             {
               "explain": "Evaluate.",
-              "work": "α≈0.207639…≈0.21"
+              "work": "\\(α\\approx 0.207639…\\approx 0.21\\)"
             }
           ],
           "timeLimit": 60,

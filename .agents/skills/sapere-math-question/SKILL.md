@@ -610,6 +610,15 @@ the defects in the student UI.
   for fractions, `\sqrt{...}` for roots, `\sin`/`\cos` etc. for functions,
   and `^\circ` for degree symbols. Do not leave slash fractions such as
   `a/b`, raw trig equations, or bare LaTeX commands that render as prose.
+- Do not rely on the UI to infer math mode. Wrap math inside mixed prose too,
+  especially stems and choices such as `x=-2 and 3`; use `\text{...}` for the
+  words inside a math choice. Apply the same check to hints, explanations,
+  key points, and nested multipart entries. Keep exponents grouped (for
+  example, `e^{2x}`); never reconstruct them from Unicode superscript pieces.
+- In every batch, parse all changed math spans with KaTeX and visually inspect
+  at least one rendered question that mixes prose and math. Check each option
+  independently because a single unwrapped choice can render in a different
+  font or as literal text while neighboring choices look correct.
 - Wrap each separate math line individually, including multiline working.
   Check radicals and nested fractions for balanced braces and delimiters.
 - Recalculate the answer independently. Confirm exactly one correct option,

@@ -89,6 +89,28 @@ recurring student-facing problems the user has reported across Years 7–10.
 - Check that the final working agrees with the marked answer, and that MC
   choices are unique and only one is correct.
 
+### 2026-11-03 LaTeX rendering regression — logarithm and exponential batch
+
+- A question can look partly correct while still containing unwrapped formulas:
+  `ln(x+6)=2 ln x` appeared as ordinary prose, and a mixed choice such as
+  `x=-2 and 3` rendered differently from the other algebraic choices. Never
+  rely on automatic math detection or assume that one well-rendered choice
+  proves the rest are correct.
+- Put every mathematical span in stems, every mathematical choice (including
+  choices that mix words and symbols), hints, explanations, key points, and
+  each working line inside valid `\(...\)` delimiters. Use `\text{...}` for
+  words that must appear inside a math choice, for example
+  `\(x=-2\text{ and }3\)`.
+- Write logarithms as `\ln`/`\log` functions, fractions with `\frac` or
+  `\dfrac`, and exponents as a single grouped exponent (`e^{2x}`, `e^{-x}`).
+  Do not combine braces, Unicode superscript fragments, or adjacent symbols to
+  imitate an exponent (for example, `e^{2}ˣ` or `e^{-}ˣ`).
+- For every import or repair batch, inspect all affected fields and nested
+  parts. Run a delimiter scan and parse every newly added/changed math span
+  with the same KaTeX configuration as the app; then visually preview a
+  question with a mixed prose/math choice. A JSON parse or a successful parse
+  of only the working field is not sufficient.
+
 ## Layout and release gate
 
 - Ensure tables, diagrams, and long expressions fit inside the question card
