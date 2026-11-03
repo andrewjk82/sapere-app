@@ -510,6 +510,1141 @@
             "sourcePage": null,
             "sourceTopic": "y12a-9C"
           }
+        },
+        {
+          "id": "y12a-advanced-005-p260-q01",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Consider the following dataset: 13, 16, 17, 17, 21, 24. Which row of the table shows how the median and mean are affected when a score of 5 is added to the dataset?",
+          "hint": "Sort the data before finding the median. For the mean, compare the total and number of values before and after adding 5.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p260-q01",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Consider the data set 13, 16, 17, 17, 21, 24. Which row shows how the median and mean are affected when a score of 5 is added to the data set?",
+              "options": [
+                "A: median changes; mean changes",
+                "B: median stays the same; mean stays the same",
+                "C: median changes; mean stays the same",
+                "D: median stays the same; mean changes"
+              ],
+              "answer": 3,
+              "hint": "Sort the seven values to find the new middle value. Compare the old and new means using totals and counts.",
+              "steps": [
+                {
+                  "explain": "The original ordered values have six entries, so the median is the average of the 3rd and 4th values.",
+                  "work": "\\(13,16,17,17,21,24;\\quad \\text{median}=17\\)"
+                },
+                {
+                  "explain": "After adding 5, the ordered list has seven entries. The 4th value remains 17, so the median stays the same.",
+                  "work": "\\(5,13,16,17,17,21,24;\\quad \\text{median}=17\\)"
+                },
+                {
+                  "explain": "The original mean is 108÷6=18. The new mean is 113÷7≈16.14, so the mean changes.",
+                  "work": "\\(\\bar{x}_{old}=18,\\quad \\bar{x}_{new}=16.14\\ldots\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "260",
+                "course": "Advanced",
+                "sourceQuestion": "Q1"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "260",
+            "course": "Advanced",
+            "sourceQuestion": "Q1"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p260-q02",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The table shows the types of customer complaints received by an online business in a month. The data are also shown in the Pareto chart. Answer (a) and (b).",
+          "hint": "Use the cumulative frequency column for A and divide cumulative frequency by the total to find B. In a Pareto chart, categories are ordered from most frequent to least frequent.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p260-q02-a",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What are the values of A and B in the cumulative frequency table?",
+              "options": [
+                "A=160, B=96",
+                "A=160, B=92",
+                "A=98, B=96",
+                "A=184, B=99"
+              ],
+              "answer": 0,
+              "hint": "Add the frequencies down the table. Convert cumulative frequency 192 out of 200 to a percentage.",
+              "steps": [
+                {
+                  "explain": "The cumulative frequency after delivery fee is 98+62.",
+                  "work": "\\(A=98+62=160\\)"
+                },
+                {
+                  "explain": "For damaged items, divide cumulative frequency by total frequency and convert to a percent.",
+                  "work": "\\(B=\\frac{192}{200}\\times100=96\\%\\)"
+                },
+                {
+                  "explain": "Therefore the missing entries are 160 and 96.",
+                  "work": "\\(\\boxed{A=160,\\quad B=96}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "260",
+                "course": "Advanced",
+                "sourceQuestion": "Q2(a)"
+              }
+            },
+            {
+              "id": "y12a-advanced-005-p260-q02-b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The manager will address 80% of the complaints. Which types of complaints will be addressed?",
+              "options": [
+                "Stock shortage and delivery fee",
+                "Stock shortage only",
+                "Stock shortage, delivery fee and delivery time",
+                "All complaint types"
+              ],
+              "answer": 0,
+              "hint": "Read the cumulative percentage column. Identify the categories included when it first reaches 80%.",
+              "steps": [
+                {
+                  "explain": "Stock shortage accounts for 49% cumulatively. Adding delivery fee raises the cumulative percentage to 80%.",
+                  "work": "\\(49\\%+31\\%=80\\%\\)"
+                },
+                {
+                  "explain": "So the first two categories together make up 80% of all complaints.",
+                  "work": "Stock shortage + delivery fee"
+                },
+                {
+                  "explain": "These are the complaint types the manager should address.",
+                  "work": "\\(\\boxed{\\text{Stock shortage and delivery fee}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "260",
+                "course": "Advanced",
+                "sourceQuestion": "Q2(b)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "260",
+            "course": "Advanced",
+            "sourceQuestion": "Q2"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 900 470\" role=\"img\" aria-label=\"Customer complaint frequency table and Pareto chart\"><rect width=\"900\" height=\"470\" fill=\"white\"/><text x=\"225\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\" fill=\"#1e293b\">Complaint data</text><g stroke=\"#475569\" stroke-width=\"1.5\" fill=\"none\"><path d=\"M20 40H430M20 80H430M20 120H430M20 160H430M20 200H430M20 240H430M20 280H430M20 320H430\"/><path d=\"M20 40V320M200 40V320M280 40V320M350 40V320M430 40V320\"/></g><g font-family=\"Arial\" font-size=\"12\" fill=\"#0f172a\" text-anchor=\"middle\"><text x=\"110\" y=\"64\">Type</text><text x=\"240\" y=\"56\">Frequency</text><text x=\"240\" y=\"72\">Cumulative</text><text x=\"315\" y=\"56\">Cumulative</text><text x=\"315\" y=\"72\">frequency</text><text x=\"390\" y=\"56\">Cumulative</text><text x=\"390\" y=\"72\">percentage</text></g><g font-family=\"Arial\" font-size=\"12\" fill=\"#0f172a\"><text x=\"28\" y=\"104\">Stock shortage</text><text x=\"28\" y=\"144\">Delivery fee</text><text x=\"28\" y=\"184\">Delivery time</text><text x=\"28\" y=\"224\">Damaged item</text><text x=\"28\" y=\"264\">Returns policy</text><text x=\"28\" y=\"304\">Product information</text></g><g font-family=\"Arial\" font-size=\"12\" fill=\"#0f172a\" text-anchor=\"middle\"><text x=\"240\" y=\"104\">98</text><text x=\"315\" y=\"104\">98</text><text x=\"390\" y=\"104\">49</text><text x=\"240\" y=\"144\">62</text><text x=\"315\" y=\"144\">A</text><text x=\"390\" y=\"144\">80</text><text x=\"240\" y=\"184\">24</text><text x=\"315\" y=\"184\">184</text><text x=\"390\" y=\"184\">92</text><text x=\"240\" y=\"224\">8</text><text x=\"315\" y=\"224\">192</text><text x=\"390\" y=\"224\">B</text><text x=\"240\" y=\"264\">6</text><text x=\"315\" y=\"264\">198</text><text x=\"390\" y=\"264\">99</text><text x=\"240\" y=\"304\">2</text><text x=\"315\" y=\"304\">200</text><text x=\"390\" y=\"304\">100</text></g><text x=\"665\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\" fill=\"#1e293b\">Customer complaints (Pareto chart)</text><path d=\"M480 320V55H860M480 320H860\" stroke=\"#334155\" stroke-width=\"2\"/><g stroke=\"#cbd5e1\" stroke-width=\"1\"><path d=\"M480 275H860M480 230H860M480 185H860M480 140H860M480 95H860\"/></g><g fill=\"#94a3b8\"><rect x=\"500\" y=\"100\" width=\"36\" height=\"220\"/><rect x=\"558\" y=\"181\" width=\"36\" height=\"139\"/><rect x=\"616\" y=\"266\" width=\"36\" height=\"54\"/><rect x=\"674\" y=\"302\" width=\"36\" height=\"18\"/><rect x=\"732\" y=\"307\" width=\"36\" height=\"13\"/><rect x=\"790\" y=\"314\" width=\"36\" height=\"6\"/></g><path d=\"M518 200L576 100L634 62L692 51L750 45L808 40\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"3\"/><g font-family=\"Arial\" font-size=\"11\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"518\" y=\"340\">Stock</text><text x=\"576\" y=\"340\">Delivery</text><text x=\"634\" y=\"340\">Time</text><text x=\"692\" y=\"340\">Damaged</text><text x=\"750\" y=\"340\">Returns</text><text x=\"808\" y=\"340\">Other</text><text x=\"670\" y=\"370\">Complaint type</text><text x=\"470\" y=\"50\">200</text><text x=\"470\" y=\"323\">0</text><text x=\"855\" y=\"50\">100%</text></g></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p260-q03",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The number of downloads of a song on each of twenty consecutive days is shown in the following graph. Which of the following graphs best shows the cumulative number of downloads up to and including each day?",
+          "hint": "Cumulative totals do not fall. The steepest section must match the days with the largest daily download bars.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p260-q03",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The number of downloads of a song on each of twenty consecutive days is shown in the graph. Which graph best shows the cumulative number of downloads up to and including each day?",
+              "options": [
+                "Graph A",
+                "Graph B",
+                "Graph C",
+                "Graph D"
+              ],
+              "answer": 2,
+              "hint": "A cumulative graph never decreases. It rises fastest where the daily bars are tallest and becomes nearly flat when daily downloads are small.",
+              "steps": [
+                {
+                  "explain": "Cumulative totals add each day’s downloads to all previous days, so the graph can only rise or stay level.",
+                  "work": "\\(C_n=C_{n-1}+d_n\\)"
+                },
+                {
+                  "explain": "The daily graph has its largest bars around days 8–11. The cumulative graph must therefore have its steepest rise in this middle region.",
+                  "work": "Days 8–11: largest increase in cumulative total"
+                },
+                {
+                  "explain": "After about day 14 the daily downloads are small, so the cumulative curve should flatten. Graph C has both features.",
+                  "work": "\\(\\boxed{\\text{Graph C}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "260",
+                "course": "Advanced",
+                "sourceQuestion": "Q3"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "260",
+            "course": "Advanced",
+            "sourceQuestion": "Q3"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 900 430\" role=\"img\" aria-label=\"Daily downloads histogram and four cumulative graph choices\"><rect width=\"900\" height=\"430\" fill=\"white\"/><text x=\"245\" y=\"24\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\" font-weight=\"bold\" fill=\"#1e293b\">Downloads each day</text><path d=\"M55 190H435M55 45V190\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M55 172H435\" stroke=\"#e2e8f0\"/><path d=\"M55 154H435\" stroke=\"#e2e8f0\"/><path d=\"M55 136H435\" stroke=\"#e2e8f0\"/><path d=\"M55 118H435\" stroke=\"#e2e8f0\"/><path d=\"M55 100H435\" stroke=\"#e2e8f0\"/><path d=\"M55 82H435\" stroke=\"#e2e8f0\"/><path d=\"M55 64H435\" stroke=\"#e2e8f0\"/><rect x=\"65\" y=\"190.0\" width=\"13\" height=\"0.0\" fill=\"#9ca3af\"/><rect x=\"83\" y=\"186.6\" width=\"13\" height=\"3.4\" fill=\"#9ca3af\"/><rect x=\"101\" y=\"180.8\" width=\"13\" height=\"9.2\" fill=\"#9ca3af\"/><rect x=\"119\" y=\"176.2\" width=\"13\" height=\"13.8\" fill=\"#9ca3af\"/><rect x=\"137\" y=\"169.3\" width=\"13\" height=\"20.7\" fill=\"#9ca3af\"/><rect x=\"155\" y=\"157.8\" width=\"13\" height=\"32.2\" fill=\"#9ca3af\"/><rect x=\"173\" y=\"144.0\" width=\"13\" height=\"46.0\" fill=\"#9ca3af\"/><rect x=\"191\" y=\"115.2\" width=\"13\" height=\"74.8\" fill=\"#9ca3af\"/><rect x=\"209\" y=\"84.2\" width=\"13\" height=\"105.8\" fill=\"#9ca3af\"/><rect x=\"227\" y=\"63.5\" width=\"13\" height=\"126.5\" fill=\"#9ca3af\"/><rect x=\"245\" y=\"80.8\" width=\"13\" height=\"109.2\" fill=\"#9ca3af\"/><rect x=\"263\" y=\"107.2\" width=\"13\" height=\"82.8\" fill=\"#9ca3af\"/><rect x=\"281\" y=\"132.5\" width=\"13\" height=\"57.5\" fill=\"#9ca3af\"/><rect x=\"299\" y=\"149.8\" width=\"13\" height=\"40.2\" fill=\"#9ca3af\"/><rect x=\"317\" y=\"163.6\" width=\"13\" height=\"26.4\" fill=\"#9ca3af\"/><rect x=\"335\" y=\"172.8\" width=\"13\" height=\"17.2\" fill=\"#9ca3af\"/><rect x=\"353\" y=\"179.7\" width=\"13\" height=\"10.3\" fill=\"#9ca3af\"/><rect x=\"371\" y=\"184.2\" width=\"13\" height=\"5.8\" fill=\"#9ca3af\"/><rect x=\"389\" y=\"187.7\" width=\"13\" height=\"2.3\" fill=\"#9ca3af\"/><rect x=\"407\" y=\"190.0\" width=\"13\" height=\"0.0\" fill=\"#9ca3af\"/><text x=\"245\" y=\"220\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">Day (1–20)</text><text x=\"25\" y=\"115\" transform=\"rotate(-90 25 115)\" font-family=\"Arial\" font-size=\"12\">Downloads</text><text x=\"580\" y=\"61\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">A</text><path d=\"M500 160V70H660\" stroke=\"#475569\" fill=\"none\"/><polyline points=\"500,151 522,137 545,125 567,115 590,106 620,98 650,95\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"3\"/><text x=\"770\" y=\"61\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">B</text><path d=\"M690 160V70H850\" stroke=\"#475569\" fill=\"none\"/><polyline points=\"690,151 720,148 750,143 780,133 810,113 840,88\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"3\"/><text x=\"580\" y=\"231\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">C</text><path d=\"M500 330V240H660\" stroke=\"#475569\" fill=\"none\"/><polyline points=\"500,321 537,319 560,312 579,289 597,267 620,256 650,253\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"3\"/><text x=\"770\" y=\"231\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">D</text><path d=\"M690 330V240H850\" stroke=\"#475569\" fill=\"none\"/><polyline points=\"690,321 727,303 765,294 795,289 817,280 840,253\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"3\"/></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p260-q04",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The five-number summary of a dataset is given: lowest score 1, lower quartile Q₁=4, median Q₂=7, upper quartile Q₃=10, highest score 20. Is 20 an outlier? Justify your answer with calculations.",
+          "hint": "Use the 1.5×IQR rule to calculate the upper fence, then compare the maximum value with it.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p260-q04",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The five-number summary of a dataset is: lowest score 1, lower quartile 4, median 7, upper quartile 10, highest score 20. Is 20 an outlier? Justify with calculations.",
+              "options": [
+                "Yes; 20 is above the upper outlier fence 19",
+                "No; 20 is within the upper fence 25",
+                "Yes; the IQR is 10",
+                "No; the range is 19"
+              ],
+              "answer": 0,
+              "hint": "Calculate IQR=Q3−Q1, then find the upper fence Q3+1.5×IQR.",
+              "steps": [
+                {
+                  "explain": "Find the interquartile range.",
+                  "work": "\\(IQR=Q_3-Q_1=10-4=6\\)"
+                },
+                {
+                  "explain": "Calculate the upper outlier fence.",
+                  "work": "\\(Q_3+1.5(IQR)=10+1.5(6)=19\\)"
+                },
+                {
+                  "explain": "Since 20 is greater than 19, it lies beyond the upper fence and is an outlier.",
+                  "work": "\\(20>19\\Rightarrow\\boxed{\\text{Yes, 20 is an outlier}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "260",
+                "course": "Advanced",
+                "sourceQuestion": "Q4"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "260",
+            "course": "Advanced",
+            "sourceQuestion": "Q4"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p260-q05",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Consider the dataset 1, 5, 9, 10, 15. Suppose a new value x is added, giving 1, 5, 9, 10, 15, x. It is known that x>15 and the difference between the means equals ten times the difference between the medians. Calculate x.",
+          "hint": "Since x>15, the new value is the largest. Find the old and new medians before setting up the mean equation.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p260-q05",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The dataset 1, 5, 9, 10, 15 is enlarged by adding x, where x>15. The difference between the means of the two datasets is ten times the difference between their medians. Find x.",
+              "options": [
+                "\\(38\\)",
+                "\\(32\\)",
+                "\\(35\\)",
+                "\\(40\\)"
+              ],
+              "answer": 0,
+              "hint": "Find each median and mean. For the six-value set, the median is the average of the two middle values.",
+              "steps": [
+                {
+                  "explain": "Original median is 9 and original mean is (1+5+9+10+15)÷5=8.",
+                  "work": "\\({1,5,9,10,15\\u007d: \\quad median=9,\\quad mean=8\\)"
+                },
+                {
+                  "explain": "Because x>15, the new ordered list ends in x. Its median is (9+10)÷2=9.5, so the median difference is 0.5.",
+                  "work": "\\(median_{new}=9.5;\\quad \\Delta median=0.5\\)"
+                },
+                {
+                  "explain": "The new mean is (40+x)÷6. Set the mean difference to 10×0.5=5.",
+                  "work": "\\(\\frac{40+x}{6}-8=5\\Rightarrow40+x=78\\Rightarrow\\boxed{x=38}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "261",
+                "course": "Advanced",
+                "sourceQuestion": "Q5"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "260",
+            "course": "Advanced",
+            "sourceQuestion": "Q5"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p261-q06",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Milo and Aurora each sat twelve class tests. Milo’s results are displayed in the box-and-whisker plot. Aurora’s 5-number summary is 65, 68, 70, 72, 75. Answer (i)–(iii).",
+          "hint": "Read the median and quartiles from the box plot. The median describes a typical score; the relative lengths of the box sections and whiskers describe skewness.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p261-q06-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Milo’s box-and-whisker plot is shown. Aurora’s five-number summary is 65, 68, 70, 72, 75. Which box-and-whisker plot should be drawn for Aurora below Milo’s?",
+              "options": [
+                "Minimum 65, Q1 68, median 70, Q3 72, maximum 75",
+                "Minimum 65, Q1 70, median 68, Q3 72, maximum 75",
+                "Minimum 65, Q1 68, median 72, Q3 70, maximum 75",
+                "Minimum 68, Q1 65, median 70, Q3 75, maximum 72"
+              ],
+              "answer": 0,
+              "hint": "Place the five values in increasing order: minimum, lower quartile, median, upper quartile, maximum.",
+              "steps": [
+                {
+                  "explain": "A box plot places the five-number summary from smallest to largest.",
+                  "work": "\\(65<68<70<72<75\\)"
+                },
+                {
+                  "explain": "The whiskers end at 65 and 75. The box runs from 68 to 72, with the median line at 70.",
+                  "work": "minimum 65; box 68–72; median 70; maximum 75"
+                },
+                {
+                  "explain": "This matches the first option.",
+                  "work": "\\(\\boxed{65,68,70,72,75}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "261",
+                "course": "Advanced",
+                "sourceQuestion": "Q6(i)"
+              }
+            },
+            {
+              "id": "y12a-advanced-005-p261-q06-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What percentage of Milo’s test results were below 68?",
+              "options": [
+                "\\(50\\%\\)",
+                "\\(25\\%\\)",
+                "\\(75\\%\\)",
+                "\\(100\\%\\)"
+              ],
+              "answer": 0,
+              "hint": "The median divides the ordered data into two equal halves. Milo’s median is marked at 68.",
+              "steps": [
+                {
+                  "explain": "Read the vertical median line in Milo’s box plot. It is at score 68.",
+                  "work": "\\(Q_2=68\\)"
+                },
+                {
+                  "explain": "Half of the observations lie below the median.",
+                  "work": "\\(\\frac{1}{2}\\times100\\%=50\\%\\)"
+                },
+                {
+                  "explain": "Therefore 50% of Milo’s results were below 68.",
+                  "work": "\\(\\boxed{50\\%}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "261",
+                "course": "Advanced",
+                "sourceQuestion": "Q6(ii)"
+              }
+            },
+            {
+              "id": "y12a-advanced-005-p261-q06-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Aurora claims her results were better than Milo’s. Is she correct? Use the summary statistics and skewness of the distributions.",
+              "options": [
+                "Yes: Aurora’s median is 70 versus Milo’s 68, and Milo’s results are positively skewed",
+                "No: Milo’s median is higher, and Aurora’s results are positively skewed",
+                "Yes: both medians are equal and both distributions are symmetrical",
+                "No: Aurora has a lower median and a larger range"
+              ],
+              "answer": 0,
+              "hint": "Compare the medians for typical score. Use the relative lengths of each box plot’s sides and whiskers to describe skewness.",
+              "steps": [
+                {
+                  "explain": "Compare the medians: Aurora’s median is 70; Milo’s is 68. Aurora’s typical score is higher.",
+                  "work": "\\(70>68\\)"
+                },
+                {
+                  "explain": "Milo’s upper half and upper whisker are much longer, indicating positive (right) skew. Aurora’s five-number summary is approximately balanced around its median.",
+                  "work": "Milo: positive skew; Aurora: approximately symmetric"
+                },
+                {
+                  "explain": "The higher median supports Aurora’s claim about typical results.",
+                  "work": "\\(\\boxed{\\text{Yes, Aurora’s results were better by median}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "261",
+                "course": "Advanced",
+                "sourceQuestion": "Q6(iii)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "261",
+            "course": "Advanced",
+            "sourceQuestion": "Q6"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 190\" role=\"img\" aria-label=\"Milo box plot and score scale\"><rect width=\"760\" height=\"190\" fill=\"white\"/><g stroke=\"#dbe3ec\" stroke-width=\"1\"><path d=\"M70 150H720\"/><path d=\"M100 45V155M140 45V155M180 45V155M220 45V155M260 45V155M300 45V155M340 45V155M380 45V155M420 45V155M460 45V155M500 45V155M540 45V155M580 45V155M620 45V155M660 45V155M700 45V155\"/></g><path d=\"M140 75H180M140 68V82M180 60H460V90H180ZM300 60V90M460 75H580M580 68V82M70 150H720\" fill=\"none\" stroke=\"#475569\" stroke-width=\"3\"/><g font-family=\"Arial\" font-size=\"13\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"140\" y=\"173\">65</text><text x=\"180\" y=\"173\">66</text><text x=\"220\" y=\"173\">67</text><text x=\"300\" y=\"173\">69</text><text x=\"460\" y=\"173\">73</text><text x=\"580\" y=\"173\">76</text><text x=\"50\" y=\"80\" text-anchor=\"start\">Milo</text></g><text x=\"395\" y=\"188\" font-family=\"Arial\" font-size=\"12\" text-anchor=\"middle\" fill=\"#334155\">Test score</text></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p261-q07",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A set of data has a lower quartile (Q_L) of 24 and an upper quartile (Q_U) of 42. What is the maximum possible range for this set of data if there are no outliers?",
+          "hint": "Use the 1.5×IQR outlier fences as the furthest possible minimum and maximum values.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p261-q07",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "A set of data has lower quartile Q_L=24 and upper quartile Q_U=42. What is the maximum possible range if there are no outliers?",
+              "options": [
+                "\\(72\\)",
+                "\\(69\\)",
+                "\\(45\\)",
+                "\\(18\\)"
+              ],
+              "answer": 0,
+              "hint": "Find IQR. The no-outlier fences are QL−1.5IQR and QU+1.5IQR.",
+              "steps": [
+                {
+                  "explain": "Calculate the interquartile range.",
+                  "work": "\\(IQR=42-24=18\\)"
+                },
+                {
+                  "explain": "With no outliers, the data can extend down to the lower fence and up to the upper fence.",
+                  "work": "\\(L=24-1.5(18)=-3;\\quad U=42+1.5(18)=69\\)"
+                },
+                {
+                  "explain": "The largest possible range is upper fence minus lower fence.",
+                  "work": "\\(69-(-3)=\\boxed{72}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "261",
+                "course": "Advanced",
+                "sourceQuestion": "Q7"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "261",
+            "course": "Advanced",
+            "sourceQuestion": "Q7"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p261-q08",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A school collected data related to the reasons given by students for arriving late. The Pareto chart shows the data collected. What percentage of students gave the reason “Train or bus delay”?",
+          "hint": "A percentage is the category frequency divided by the total frequency, multiplied by 100.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p261-q08",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The Pareto chart shows reasons students gave for arriving late. What percentage of students gave “Train or bus delay”?",
+              "options": [
+                "6%",
+                "15%",
+                "30%",
+                "92%"
+              ],
+              "answer": 0,
+              "hint": "Use the frequency bar for train/bus delay divided by the total number of students, then convert to a percentage.",
+              "steps": [
+                {
+                  "explain": "Read the train/bus delay frequency from the chart and compare it with the total across all categories.",
+                  "work": "\\(\\text{percentage}=\\frac{\\text{train/bus frequency}}{\\text{total frequency}}\\times100\\%\\)"
+                },
+                {
+                  "explain": "The train/bus bar is about 30 students out of about 500 total.",
+                  "work": "\\(\\frac{30}{500}\\times100\\%=6\\%\\)"
+                },
+                {
+                  "explain": "So the answer is 6%.",
+                  "work": "\\(\\boxed{6\\%}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "261",
+                "course": "Advanced",
+                "sourceQuestion": "Q8"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "261",
+            "course": "Advanced",
+            "sourceQuestion": "Q8"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 720 300\" role=\"img\" aria-label=\"Pareto chart of reasons students arrive late\"><rect width=\"720\" height=\"300\" fill=\"white\"/><path d=\"M65 240V35M65 240H670\" stroke=\"#334155\" stroke-width=\"2\"/><g stroke=\"#e2e8f0\"><path d=\"M65 199H670M65 158H670M65 117H670M65 76H670M65 35H670\"/></g><g fill=\"#a8b0bb\"><rect x=\"95\" y=\"42\" width=\"55\" height=\"198\"/><rect x=\"185\" y=\"100\" width=\"55\" height=\"140\"/><rect x=\"275\" y=\"144\" width=\"55\" height=\"96\"/><rect x=\"365\" y=\"210\" width=\"55\" height=\"30\"/><rect x=\"455\" y=\"220\" width=\"55\" height=\"20\"/><rect x=\"545\" y=\"230\" width=\"55\" height=\"10\"/></g><polyline points=\"122,158 212,100 302,60 392,48 482,40 572,35\" fill=\"none\" stroke=\"#596579\" stroke-width=\"3\"/><g font-family=\"Arial\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"122\" y=\"258\">Sleep in</text><text x=\"212\" y=\"258\">Family</text><text x=\"302\" y=\"258\">Appointment</text><text x=\"392\" y=\"258\">Train/bus</text><text x=\"482\" y=\"258\">Traffic</text><text x=\"572\" y=\"258\">Car breakdown</text><text x=\"360\" y=\"286\">Reason for arriving late</text><text x=\"53\" y=\"242\">0</text><text x=\"50\" y=\"45\">200</text><text x=\"665\" y=\"45\">100%</text></g></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p261-q09",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The heights, in centimetres, of 10 players on a basketball team are shown: 170, 180, 185, 188, 192, 193, 193, 194, 196, 202. Is the height of the shortest player on the team considered an outlier? Justify your answer with calculations.",
+          "hint": "Use the median of each half of the ordered data to find the quartiles, then calculate the lower outlier fence.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p261-q09",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The heights of 10 basketball players are 170, 180, 185, 188, 192, 193, 193, 194, 196, 202 cm. Is the height of the shortest player an outlier? Justify with calculations.",
+              "options": [
+                "Yes; 170 cm is below the lower fence 171.5 cm",
+                "No; the lower fence is 160 cm",
+                "Yes; the IQR is 9 cm",
+                "No; 170 cm is the minimum"
+              ],
+              "answer": 0,
+              "hint": "Find Q1 and Q3 from the lower and upper halves, then apply the lower 1.5×IQR fence.",
+              "steps": [
+                {
+                  "explain": "Split the ordered ten values into two groups of five. Q1 is the middle of the lower group; Q3 is the middle of the upper group.",
+                  "work": "\\(Q_1=185,\\quad Q_3=194\\)"
+                },
+                {
+                  "explain": "Calculate IQR and the lower fence.",
+                  "work": "\\(IQR=194-185=9;\\quad L=185-1.5(9)=171.5\\)"
+                },
+                {
+                  "explain": "The minimum 170 is below 171.5, so it is an outlier.",
+                  "work": "\\(170<171.5\\Rightarrow\\boxed{\\text{Yes}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "261",
+                "course": "Advanced",
+                "sourceQuestion": "Q9"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "261",
+            "course": "Advanced",
+            "sourceQuestion": "Q9"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p261-q10",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Two netball teams, Team A and Team B, each played 15 games in a tournament. For each team, the number of goals scored in each game was recorded. The frequency table shows Team A’s data and the box plot shows Team B’s. Compare the distributions, supporting your answer by constructing a box plot for Team A.",
+          "hint": "Use the frequency table to write Team A’s 15 scores in order. Compare the medians for typical performance and IQR/range for spread.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p261-q10",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Team A and Team B each played 15 games. Team A’s frequency table and Team B’s box plot are shown. Compare the distributions, constructing a box plot for Team A.",
+              "options": [
+                "Team B has a slightly higher median; Team A has a smaller IQR and range, so Team A is more consistent",
+                "Team A has a higher median and a larger spread",
+                "Both teams have the same median and spread",
+                "Team A has a lower median and a larger spread"
+              ],
+              "answer": 0,
+              "hint": "List Team A’s scores in order from the frequency table. Find its five-number summary and compare the medians and spreads with Team B.",
+              "steps": [
+                {
+                  "explain": "Expand the frequency table into ordered scores: 19; 21; 22; 23; 24,24,24; 26,26,26,26; 27,27,27; 28.",
+                  "work": "\\(19,21,22,23,24,24,24,26,26,26,26,27,27,27,28\\)"
+                },
+                {
+                  "explain": "For 15 scores, the median is the 8th value. Q1 is the 4th value of the lower seven and Q3 is the 4th value of the upper seven.",
+                  "work": "\\(A: min=19,Q_1=23,median=26,Q_3=27,max=28\\)"
+                },
+                {
+                  "explain": "Team B’s plot gives 21,24,27,31,35. Its median 27 is slightly higher, while its IQR is 7 and range is 14; Team A’s IQR is 4 and range is 9.",
+                  "work": "Team A is more consistent; Team B median is slightly higher"
+                },
+                {
+                  "explain": "Conclusion: Team B scores slightly higher typically, while Team A’s results vary less.",
+                  "work": "\\(\\boxed{\\text{Option A}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "261",
+                "course": "Advanced",
+                "sourceQuestion": "Q10"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "261",
+            "course": "Advanced",
+            "sourceQuestion": "Q10"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 230\" role=\"img\" aria-label=\"Team B box plot and blank Team A box plot scale\"><rect width=\"760\" height=\"230\" fill=\"white\"/><g stroke=\"#d8dee8\" stroke-width=\"1\" stroke-dasharray=\"2 3\"><path d=\"M80 35V165\"/><path d=\"M105 35V165\"/><path d=\"M130 35V165\"/><path d=\"M155 35V165\"/><path d=\"M180 35V165\"/><path d=\"M205 35V165\"/><path d=\"M230 35V165\"/><path d=\"M255 35V165\"/><path d=\"M280 35V165\"/><path d=\"M305 35V165\"/><path d=\"M330 35V165\"/><path d=\"M355 35V165\"/><path d=\"M380 35V165\"/><path d=\"M405 35V165\"/><path d=\"M430 35V165\"/><path d=\"M455 35V165\"/><path d=\"M480 35V165\"/><path d=\"M505 35V165\"/><path d=\"M530 35V165\"/><path d=\"M555 35V165\"/><path d=\"M580 35V165\"/><path d=\"M605 35V165\"/><path d=\"M630 35V165\"/><path d=\"M655 35V165\"/><path d=\"M680 35V165\"/></g><path d=\"M205 125H280M205 117V133M280 95H455V145H280ZM355 95V145M455 125H555M555 117V133\" fill=\"none\" stroke=\"#475569\" stroke-width=\"3\"/><path d=\"M80 165H680\" stroke=\"#334155\" stroke-width=\"2\"/><g font-family=\"Arial\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"205\" y=\"190\">21</text><text x=\"280\" y=\"190\">24</text><text x=\"355\" y=\"190\">27</text><text x=\"455\" y=\"190\">31</text><text x=\"555\" y=\"190\">35</text><text x=\"45\" y=\"78\">Team A</text><text x=\"45\" y=\"130\">Team B</text></g></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p261-q11",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A set of data is displayed in this dot plot. Which of the following best describes this set of data?",
+          "hint": "Look at which side contains the long tail. Skew is named for the direction of the tail, not the location of the peak.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p261-q11",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "A set of data is displayed in this dot plot. Which description best fits the data?",
+              "options": [
+                "Symmetrical",
+                "Positively skewed",
+                "Negatively skewed",
+                "Normally distributed"
+              ],
+              "answer": 2,
+              "hint": "Most values are near the right side of the plot. Identify the direction of the longer tail.",
+              "steps": [
+                {
+                  "explain": "Most dots are clustered at the larger values, 9 and 10.",
+                  "work": "Peak near the high values"
+                },
+                {
+                  "explain": "The tail stretches toward the smaller values on the left. A distribution with its tail to the left is negatively skewed.",
+                  "work": "Tail points left"
+                },
+                {
+                  "explain": "Therefore the data are negatively skewed.",
+                  "work": "\\(\\boxed{\\text{Negatively skewed}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "261",
+                "course": "Advanced",
+                "sourceQuestion": "Q11"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "261",
+            "course": "Advanced",
+            "sourceQuestion": "Q11"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 260\" role=\"img\" aria-label=\"Dot plot with most scores near 9 and 10 and a left tail\"><rect width=\"520\" height=\"260\" fill=\"white\"/><path d=\"M50 210H470\" stroke=\"#334155\" stroke-width=\"2\"/><g font-family=\"Arial\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"80\" y=\"235\">4</text><text x=\"120\" y=\"235\">5</text><text x=\"160\" y=\"235\">6</text><text x=\"200\" y=\"235\">7</text><text x=\"240\" y=\"235\">8</text><text x=\"280\" y=\"235\">9</text><text x=\"320\" y=\"235\">10</text></g><circle cx=\"80\" cy=\"200\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"120\" cy=\"200\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"120\" cy=\"176\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"160\" cy=\"200\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"160\" cy=\"176\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"160\" cy=\"152\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"200\" cy=\"200\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"200\" cy=\"176\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"200\" cy=\"152\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"200\" cy=\"128\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"240\" cy=\"200\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"240\" cy=\"176\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"240\" cy=\"152\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"240\" cy=\"128\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"240\" cy=\"104\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"280\" cy=\"200\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"280\" cy=\"176\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"280\" cy=\"152\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"280\" cy=\"128\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"280\" cy=\"104\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"280\" cy=\"80\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"280\" cy=\"56\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"320\" cy=\"200\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"320\" cy=\"176\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"320\" cy=\"152\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"320\" cy=\"128\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"320\" cy=\"104\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"320\" cy=\"80\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"320\" cy=\"56\" r=\"4.5\" fill=\"#334155\"/></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p262-q12",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The graph displays the mean monthly rainfall in Sydney and Perth. Answer (i) and (ii).",
+          "hint": "Compare the paired bars for each month. Standard deviation describes the spread of the monthly rainfall values.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p262-q12-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "For how many months is the mean monthly rainfall higher in Perth than in Sydney?",
+              "options": [
+                "\\(1\\)",
+                "\\(2\\)",
+                "\\(3\\)",
+                "\\(4\\)"
+              ],
+              "answer": 0,
+              "hint": "Compare the Perth and Sydney bars month by month. Count months where the Perth bar is taller.",
+              "steps": [
+                {
+                  "explain": "Scan the paired bars for each month. Perth’s bar is taller only in July.",
+                  "work": "July: Perth > Sydney"
+                },
+                {
+                  "explain": "No other month has Perth’s bar above Sydney’s.",
+                  "work": "Count = 1 month"
+                },
+                {
+                  "explain": "Therefore the answer is one month.",
+                  "work": "\\(\\boxed{1}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "262",
+                "course": "Advanced",
+                "sourceQuestion": "Q12(i)"
+              }
+            },
+            {
+              "id": "y12a-advanced-005-p262-q12-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "For which city is the standard deviation of the mean monthly rainfall smaller? Justify without calculations.",
+              "options": [
+                "Sydney, because its monthly rainfall varies less across the year",
+                "Perth, because its highest month is larger",
+                "Sydney, because it has a lower average",
+                "Perth, because most monthly values are below 50 mm"
+              ],
+              "answer": 0,
+              "hint": "Standard deviation measures spread around the mean. Compare how widely each city’s monthly bars vary.",
+              "steps": [
+                {
+                  "explain": "Sydney’s rainfall bars remain within a narrower vertical range over the year. Perth has very low months and a much higher peak.",
+                  "work": "Sydney has less spread"
+                },
+                {
+                  "explain": "A smaller spread indicates a smaller standard deviation.",
+                  "work": "Less variability → smaller SD"
+                },
+                {
+                  "explain": "Choose Sydney.",
+                  "work": "\\(\\boxed{\\text{Sydney}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "262",
+                "course": "Advanced",
+                "sourceQuestion": "Q12(ii)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "262",
+            "course": "Advanced",
+            "sourceQuestion": "Q12"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 300\" role=\"img\" aria-label=\"Grouped bar chart of mean monthly rainfall in Sydney and Perth\"><rect width=\"760\" height=\"300\" fill=\"white\"/><text x=\"380\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\" font-weight=\"bold\">Mean monthly rainfall in Sydney and Perth</text><path d=\"M55 245V45M55 245H730\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M55 45H730\" stroke=\"#e2e8f0\"/><path d=\"M55 85H730\" stroke=\"#e2e8f0\"/><path d=\"M55 125H730\" stroke=\"#e2e8f0\"/><path d=\"M55 165H730\" stroke=\"#e2e8f0\"/><path d=\"M55 205H730\" stroke=\"#e2e8f0\"/><path d=\"M55 245H730\" stroke=\"#e2e8f0\"/><rect x=\"70\" y=\"145\" width=\"18\" height=\"100\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"90\" y=\"230\" width=\"18\" height=\"15\" fill=\"#64748b\"/><text x=\"89\" y=\"266\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">Jan</text><rect x=\"124\" y=\"133\" width=\"18\" height=\"112\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"144\" y=\"225\" width=\"18\" height=\"20\" fill=\"#64748b\"/><text x=\"143\" y=\"266\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">Feb</text><rect x=\"178\" y=\"115\" width=\"18\" height=\"130\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"198\" y=\"223\" width=\"18\" height=\"22\" fill=\"#64748b\"/><text x=\"197\" y=\"266\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">Mar</text><rect x=\"232\" y=\"120\" width=\"18\" height=\"125\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"252\" y=\"209\" width=\"18\" height=\"36\" fill=\"#64748b\"/><text x=\"251\" y=\"266\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">Apr</text><rect x=\"286\" y=\"133\" width=\"18\" height=\"112\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"306\" y=\"157\" width=\"18\" height=\"88\" fill=\"#64748b\"/><text x=\"305\" y=\"266\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">May</text><rect x=\"340\" y=\"127\" width=\"18\" height=\"118\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"360\" y=\"133\" width=\"18\" height=\"112\" fill=\"#64748b\"/><text x=\"359\" y=\"266\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">Jun</text><rect x=\"394\" y=\"117\" width=\"18\" height=\"128\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"414\" y=\"105\" width=\"18\" height=\"140\" fill=\"#64748b\"/><text x=\"413\" y=\"266\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">Jul</text><rect x=\"448\" y=\"132\" width=\"18\" height=\"113\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"468\" y=\"125\" width=\"18\" height=\"120\" fill=\"#64748b\"/><text x=\"467\" y=\"266\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">Aug</text><rect x=\"502\" y=\"152\" width=\"18\" height=\"93\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"522\" y=\"183\" width=\"18\" height=\"62\" fill=\"#64748b\"/><text x=\"521\" y=\"266\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">Sep</text><rect x=\"556\" y=\"163\" width=\"18\" height=\"82\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"576\" y=\"208\" width=\"18\" height=\"37\" fill=\"#64748b\"/><text x=\"575\" y=\"266\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">Oct</text><rect x=\"610\" y=\"167\" width=\"18\" height=\"78\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"630\" y=\"223\" width=\"18\" height=\"22\" fill=\"#64748b\"/><text x=\"629\" y=\"266\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">Nov</text><rect x=\"664\" y=\"171\" width=\"18\" height=\"74\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"684\" y=\"229\" width=\"18\" height=\"16\" fill=\"#64748b\"/><text x=\"683\" y=\"266\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">Dec</text><rect x=\"550\" y=\"38\" width=\"14\" height=\"12\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><text x=\"570\" y=\"49\" font-family=\"Arial\" font-size=\"12\">Sydney</text><rect x=\"630\" y=\"38\" width=\"14\" height=\"12\" fill=\"#64748b\"/><text x=\"650\" y=\"49\" font-family=\"Arial\" font-size=\"12\">Perth</text><text x=\"20\" y=\"130\" transform=\"rotate(-90 20 130)\" font-family=\"Arial\" font-size=\"12\">Rainfall (mm)</text></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p262-q13",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A cumulative frequency table for a data set is shown. What is the interquartile range of the data set?",
+          "hint": "Use the cumulative frequencies to locate the middle 50%: find the scores at the first and third quartiles.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p262-q13",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "A cumulative frequency table for a data set is shown. What is the interquartile range?",
+              "options": [
+                "\\(2\\)",
+                "\\(3\\)",
+                "\\(4\\)",
+                "\\(1\\)"
+              ],
+              "answer": 0,
+              "hint": "There are 42 data values. Find the scores at the 25th and 75th percentiles using the cumulative frequencies.",
+              "steps": [
+                {
+                  "explain": "The first quartile is around the 10.5th value. Cumulative frequency is 9 through score 2 and 16 through score 3, so Q1=3.",
+                  "work": "\\(Q_1=3\\)"
+                },
+                {
+                  "explain": "The third quartile is around the 31.5th value. Cumulative frequency is 20 through score 4 and 34 through score 5, so Q3=5.",
+                  "work": "\\(Q_3=5\\)"
+                },
+                {
+                  "explain": "Subtract to find the interquartile range.",
+                  "work": "\\(IQR=Q_3-Q_1=5-3=\\boxed{2}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "262",
+                "course": "Advanced",
+                "sourceQuestion": "Q13"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "262",
+            "course": "Advanced",
+            "sourceQuestion": "Q13"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 430 310\" role=\"img\" aria-label=\"Score and cumulative frequency table\"><rect width=\"430\" height=\"260\" fill=\"white\"/><g stroke=\"#475569\" stroke-width=\"1.5\" fill=\"none\"><path d=\"M40 30H390M40 72H390M40 110H390M40 148H390M40 186H390M40 224H390M40 300H390M40 30V300M210 30V262M390 30V300\"/></g><g font-family=\"Arial\" font-size=\"16\" fill=\"#172554\" text-anchor=\"middle\"><text x=\"125\" y=\"56\">Score</text><text x=\"300\" y=\"56\">Cumulative frequency</text><text x=\"125\" y=\"98\">1</text><text x=\"300\" y=\"98\">5</text><text x=\"125\" y=\"136\">2</text><text x=\"300\" y=\"136\">9</text><text x=\"125\" y=\"174\">3</text><text x=\"300\" y=\"174\">16</text><text x=\"125\" y=\"212\">4</text><text x=\"300\" y=\"212\">20</text><text x=\"125\" y=\"250\">5</text><text x=\"300\" y=\"250\">34</text><text x=\"125\" y=\"288\">6</text><text x=\"300\" y=\"288\">42</text></g></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p262-q14",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A set of data has a lower quartile (Q_L) of 10 and an upper quartile (Q_U) of 16. What is the maximum possible range of the data if there are no outliers?",
+          "hint": "Use the outlier fences as the extreme values for a dataset with no outliers.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p262-q14",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "A set of data has a lower quartile Q_L of 10 and an upper quartile Q_U of 16. What is the maximum possible range of the data if there are no outliers?",
+              "options": [
+                "\\(24\\)",
+                "\\(15\\)",
+                "\\(6\\)",
+                "\\(18\\)"
+              ],
+              "answer": 0,
+              "hint": "Calculate IQR=16−10, then use the lower and upper 1.5×IQR fences.",
+              "steps": [
+                {
+                  "explain": "Find the interquartile range.",
+                  "work": "\\(IQR=16-10=6\\)"
+                },
+                {
+                  "explain": "Find the lowest and highest values possible without outliers.",
+                  "work": "\\(L=10-1.5(6)=1;\\quad U=16+1.5(6)=25\\)"
+                },
+                {
+                  "explain": "Maximum range is 25−1.",
+                  "work": "\\(25-1=\\boxed{24}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "262",
+                "course": "Advanced",
+                "sourceQuestion": "Q14"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "262",
+            "course": "Advanced",
+            "sourceQuestion": "Q14"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p262-q15",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A soccer referee wrote down the number of goals scored in 9 different games during the season: 2, 3, 3, 3, 5, 5, 8, 9, [omitted]. The last number has been omitted. The range is 10. What is the five-number summary for this data set?",
+          "hint": "Use the range to find the missing value first. Then use the ordered nine values to find the quartiles and median.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p262-q15",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "A soccer referee recorded the goals scored in 9 games: 2, 3, 3, 3, 5, 5, 8, 9, and one omitted value. The range is 10. What is the five-number summary?",
+              "options": [
+                "2, 3, 5, 8.5, 12",
+                "2, 3, 5, 8.5, 10",
+                "2, 3, 4, 8.5, 12",
+                "2, 3, 5, 8, 12"
+              ],
+              "answer": 0,
+              "hint": "The missing value must make the range 10. Then find the median and the medians of the lower and upper halves.",
+              "steps": [
+                {
+                  "explain": "The current minimum is 2 and current maximum is 9. To make the range 10, the missing value must be 12.",
+                  "work": "\\(12-2=10\\)"
+                },
+                {
+                  "explain": "The ordered list is 2,3,3,3,5,5,8,9,12. The fifth value is the median 5. The lower-half median is 3; the upper-half median is (8+9)/2=8.5.",
+                  "work": "\\(Q_1=3,\\quad Q_2=5,\\quad Q_3=8.5\\)"
+                },
+                {
+                  "explain": "Include the minimum and maximum.",
+                  "work": "\\(\\boxed{2,3,5,8.5,12}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "262",
+                "course": "Advanced",
+                "sourceQuestion": "Q15"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "262",
+            "course": "Advanced",
+            "sourceQuestion": "Q15"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p262-q16",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A grouped data frequency table is shown. What is the mean for this set of data?",
+          "hint": "Use the midpoint of each interval as its representative value. Find the weighted mean.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p262-q16",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "A grouped-data frequency table is shown. What is the mean for this set of data?",
+              "options": [
+                "\\(6.5\\)",
+                "\\(10.5\\)",
+                "\\(11.9\\)",
+                "\\(12.4\\)"
+              ],
+              "answer": 3,
+              "hint": "Use each class midpoint: 3, 8, 13 and 18. Multiply each midpoint by its frequency, then divide by total frequency.",
+              "steps": [
+                {
+                  "explain": "Find each class midpoint: (1+5)/2=3, 8, 13 and 18.",
+                  "work": "\\(x_i=3,8,13,18\\)"
+                },
+                {
+                  "explain": "Multiply by the class frequencies and add.",
+                  "work": "\\(3(3)+8(6)+13(8)+18(9)=323\\)"
+                },
+                {
+                  "explain": "Divide by the total frequency, 3+6+8+9=26.",
+                  "work": "\\(\\bar{x}=323/26=12.423\\ldots\\approx\\boxed{12.4}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "262",
+                "course": "Advanced",
+                "sourceQuestion": "Q16"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "262",
+            "course": "Advanced",
+            "sourceQuestion": "Q16"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 450 270\" role=\"img\" aria-label=\"Grouped frequency table\"><rect width=\"450\" height=\"270\" fill=\"white\"/><g stroke=\"#475569\" stroke-width=\"1.5\" fill=\"none\"><path d=\"M40 30H410M40 75H410M40 120H410M40 165H410M40 210H410M40 30V210M250 30V210M410 30V210\"/></g><g font-family=\"Arial\" font-size=\"17\" fill=\"#172554\" text-anchor=\"middle\"><text x=\"145\" y=\"58\">Class interval</text><text x=\"330\" y=\"58\">Frequency</text><text x=\"145\" y=\"103\">1–5</text><text x=\"330\" y=\"103\">3</text><text x=\"145\" y=\"148\">6–10</text><text x=\"330\" y=\"148\">6</text><text x=\"145\" y=\"193\">11–15</text><text x=\"330\" y=\"193\">8</text></g><text x=\"145\" y=\"238\" font-family=\"Arial\" font-size=\"17\" fill=\"#172554\" text-anchor=\"middle\">16–20</text><text x=\"330\" y=\"238\" font-family=\"Arial\" font-size=\"17\" fill=\"#172554\" text-anchor=\"middle\">9</text></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p262-q17",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The box-and-whisker plots show the results of a History test and a Geography test. In History, 112 students completed the test. The number of students who scored above 30 marks was the same for both tests. How many students completed the Geography test?",
+          "hint": "Read the quartile/median positions of 30 on each plot, then equate the proportions above 30.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p262-q17",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The box-and-whisker plots show History and Geography test results. In History, 112 students completed the test. The number of students who scored above 30 marks was the same for both tests. How many students completed the Geography test?",
+              "options": [
+                "\\(8\\)",
+                "\\(50\\)",
+                "\\(56\\)",
+                "\\(112\\)"
+              ],
+              "answer": 2,
+              "hint": "On the History plot, 30 is the upper quartile, so about 25% scored above 30. On the Geography plot, 30 is the median, so about 50% scored above 30.",
+              "steps": [
+                {
+                  "explain": "In History, 30 marks is the upper quartile. One quarter of 112 students scored above 30.",
+                  "work": "\\(0.25(112)=28\\)"
+                },
+                {
+                  "explain": "In Geography, 30 marks is the median. Half of Geography students scored above 30. This equals 28.",
+                  "work": "\\(0.5N=28\\)"
+                },
+                {
+                  "explain": "Solve for N.",
+                  "work": "\\(N=56\\Rightarrow\\boxed{56\\text{ students}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "262",
+                "course": "Advanced",
+                "sourceQuestion": "Q17"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "262",
+            "course": "Advanced",
+            "sourceQuestion": "Q17"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 230\" role=\"img\" aria-label=\"History and Geography test box plots\"><rect width=\"760\" height=\"230\" fill=\"white\"/><g stroke=\"#dbe3ec\" stroke-dasharray=\"2 3\"><path d=\"M80 30V170M180 30V170M280 30V170M380 30V170M480 30V170M580 30V170M680 30V170\"/></g><path d=\"M230 65H580M230 57V73M230 50H480V80H480M380 50V80M480 65H580M580 57V73\" fill=\"none\" stroke=\"#475569\" stroke-width=\"3\"/><path d=\"M230 130H530M230 122V138M330 115H505V145H330ZM405 115V145M505 130H580M580 122V138\" fill=\"none\" stroke=\"#475569\" stroke-width=\"3\"/><path d=\"M80 170H680\" stroke=\"#334155\" stroke-width=\"2\"/><g font-family=\"Arial\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"230\" y=\"195\">10</text><text x=\"280\" y=\"195\">15</text><text x=\"330\" y=\"195\">20</text><text x=\"380\" y=\"195\">25</text><text x=\"430\" y=\"195\">30</text><text x=\"480\" y=\"195\">35</text><text x=\"530\" y=\"195\">40</text><text x=\"50\" y=\"70\">History</text><text x=\"50\" y=\"135\">Geography</text></g></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p262-q18",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The heights of 400 students were measured. The results are displayed in this cumulative frequency polygon. Use the polygon to estimate the interquartile range.",
+          "hint": "Read the height at cumulative frequency 100 for Q1 and at 300 for Q3. The IQR is Q3−Q1.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p262-q18",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The heights of 400 students were measured. Use the cumulative frequency polygon to estimate the interquartile range.",
+              "options": [
+                "\\(34\\text{ cm}\\)",
+                "\\(24\\text{ cm}\\)",
+                "\\(50\\text{ cm}\\)",
+                "\\(68\\text{ cm}\\)"
+              ],
+              "answer": 0,
+              "hint": "For 400 students, Q1 is read at cumulative frequency 100 and Q3 at cumulative frequency 300. Subtract their height estimates.",
+              "steps": [
+                {
+                  "explain": "The first quartile corresponds to 25% of 400, which is cumulative frequency 100. Read across to the curve, then down: about 138 cm.",
+                  "work": "\\(Q_1\\approx138\\text{ cm}\\)"
+                },
+                {
+                  "explain": "The third quartile corresponds to cumulative frequency 300. Read across to the curve, then down: about 172 cm.",
+                  "work": "\\(Q_3\\approx172\\text{ cm}\\)"
+                },
+                {
+                  "explain": "Subtract the estimates.",
+                  "work": "\\(IQR\\approx172-138=\\boxed{34\\text{ cm}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "262",
+                "course": "Advanced",
+                "sourceQuestion": "Q18"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "262",
+            "course": "Advanced",
+            "sourceQuestion": "Q18"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 650 420\" role=\"img\" aria-label=\"Cumulative frequency polygon of 400 student heights\"><rect width=\"650\" height=\"420\" fill=\"white\"/><path d=\"M80 340V35M80 340H590\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M80 40.0H590\" stroke=\"#e2e8f0\"/><path d=\"M80 78.0H590\" stroke=\"#e2e8f0\"/><path d=\"M80 116.0H590\" stroke=\"#e2e8f0\"/><path d=\"M80 154.0H590\" stroke=\"#e2e8f0\"/><path d=\"M80 192.0H590\" stroke=\"#e2e8f0\"/><path d=\"M80 230.0H590\" stroke=\"#e2e8f0\"/><path d=\"M80 268.0H590\" stroke=\"#e2e8f0\"/><path d=\"M80 306.0H590\" stroke=\"#e2e8f0\"/><path d=\"M80 40V340\" stroke=\"#e2e8f0\"/><path d=\"M131 40V340\" stroke=\"#e2e8f0\"/><path d=\"M182 40V340\" stroke=\"#e2e8f0\"/><path d=\"M233 40V340\" stroke=\"#e2e8f0\"/><path d=\"M284 40V340\" stroke=\"#e2e8f0\"/><path d=\"M335 40V340\" stroke=\"#e2e8f0\"/><path d=\"M386 40V340\" stroke=\"#e2e8f0\"/><path d=\"M437 40V340\" stroke=\"#e2e8f0\"/><path d=\"M488 40V340\" stroke=\"#e2e8f0\"/><path d=\"M539 40V340\" stroke=\"#e2e8f0\"/><path d=\"M590 40V340\" stroke=\"#e2e8f0\"/><polyline points=\"80.0,340.0 182.0,302.5 284.0,257.5 386.0,175.0 488.0,77.5 539.0,58.75 590.0,40.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"4\"/><g font-family=\"Arial\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"80.0\" y=\"360\">100</text><text x=\"131.0\" y=\"360\">110</text><text x=\"182.0\" y=\"360\">120</text><text x=\"233.0\" y=\"360\">130</text><text x=\"284.0\" y=\"360\">140</text><text x=\"335.0\" y=\"360\">150</text><text x=\"386.0\" y=\"360\">160</text><text x=\"437.0\" y=\"360\">170</text><text x=\"488.0\" y=\"360\">180</text><text x=\"539.0\" y=\"360\">190</text><text x=\"590.0\" y=\"360\">200</text><text x=\"62\" y=\"344.0\">0</text><text x=\"62\" y=\"306.5\">50</text><text x=\"62\" y=\"269.0\">100</text><text x=\"62\" y=\"231.5\">150</text><text x=\"62\" y=\"194.0\">200</text><text x=\"62\" y=\"156.5\">250</text><text x=\"62\" y=\"119.0\">300</text><text x=\"62\" y=\"81.5\">350</text><text x=\"62\" y=\"44.0\">400</text></g><text x=\"335\" y=\"390\" font-family=\"Arial\" font-size=\"13\" text-anchor=\"middle\">Height (cm)</text><text x=\"20\" y=\"180\" transform=\"rotate(-90 20 180)\" font-family=\"Arial\" font-size=\"13\">Cumulative frequency</text></svg>"
+          }
         }
       ]
     },
