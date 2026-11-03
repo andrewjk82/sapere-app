@@ -18,9 +18,14 @@ let idsCache = null;          // Promise<{ id: topicId }>
 let homeworkQuestionIndexCache = null; // Promise<{ homework reference key: [{ questionId, topicId }] }>
 
 // ---------- fetch ------------------------------------------------------------------------------
-const fetchJson = async (url) => {
-  const r = await fetch(url, { cache: 'default' });
-  if (!r.ok) throw new Error(`${url} → ${r.status}`);
+const fetchJson = async (url, options = {}) => {
+  const r = await fetch(url, { cache: 'default', ...options });
+  if (!r.ok) {
+    const error = new Error(`${url} → ${r.status}`);
+    error.status = r.status;
+    error.url = url;
+    throw error;
+  }
   return r.json();
 };
 
@@ -201,11 +206,34 @@ export const adminInactiveQuestions = async () => {
 export const adminPendingQuestions = async () => (await adminInactiveQuestions()).filter((d) => d.reviewStatus === 'pending');
 /** Every active id with its chapter/topic — loaded once, for id-prefix search. */
 let allIdsCache = null;
+const refreshManifest = async () => {
+  manifestAt = Date.now();
+  allIdsCache = null;
+  const url = `${MANIFEST_URL}?refresh=${manifestAt}`;
+  manifestPromise = fetchJson(url, { cache: 'no-store' }).catch((e) => {
+    manifestPromise = null;
+    throw e;
+  });
+  return manifestPromise;
+};
+const getAllIds = (file) => {
+  if (!allIdsCache) allIdsCache = fetchJson(`/content/${file}`).catch((e) => { allIdsCache = null; throw e; });
+  return allIdsCache;
+};
 export const searchIds = async (prefix) => {
-  const m = await getManifest();
-  if (!allIdsCache) allIdsCache = fetchJson(`/content/${m.allIds}`).catch((e) => { allIdsCache = null; throw e; });
+  let m = await getManifest();
+  let rows;
+  try {
+    rows = await getAllIds(m.allIds);
+  } catch (error) {
+    // During a deployment, an edge may briefly serve the prior manifest after its
+    // hash-named all-ids file has been removed. Bypass that cached manifest once.
+    if (error?.status !== 404) throw error;
+    m = await refreshManifest();
+    rows = await getAllIds(m.allIds);
+  }
   const p = String(prefix).toLowerCase();
-  return (await allIdsCache).filter(([id]) => id.toLowerCase().startsWith(p)).map(([id, chapterId, topicId]) => ({ id, chapterId, topicId }));
+  return rows.filter(([id]) => id.toLowerCase().startsWith(p)).map(([id, chapterId, topicId]) => ({ id, chapterId, topicId }));
 };
 /**
  * Single question by id, overlay-aware, for admin use. If `id` is a SUB-QUESTION's own id — never
