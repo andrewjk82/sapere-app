@@ -391,10 +391,11 @@ service cloud.firestore {
       allow read, write: if isSignedIn();
     }
 
-    // Traffic tracking logs — anyone can write (append), admin can read
+    // Traffic tracking was removed (2026-11). No client writes any more; the daily
+    // retention cron (Admin SDK, bypasses rules) drains the old docs. An outdated
+    // cached app still trying to log is refused here.
     match /traffic_logs/{logId} {
-      allow create: if true;
-      allow read, update, delete: if isAdmin();
+      allow read, delete: if isAdmin();
     }
   }
 }

@@ -21,8 +21,7 @@ import HomeworkCard from '../homework/HomeworkCard';
 import SpecialDailyCards from '../SpecialDailyCards';
 import { KIND } from './sessionKinds';
 import { useProfile } from '../../context/ProfileContext';
-import { collection, query, where, onSnapshot } from 'firebase/firestore';
-import { db } from '../../firebase/config';
+import { subscribeStudentSessions } from '../../services/studentSessionsService';
 
 // ── Secret Notebook footer strip ───────────────────────────────────────────
 const SecretNoteStrip = ({ kind, note, onOpen }) => {
@@ -456,11 +455,8 @@ const ChallengeStartView = ({
   const [hwSessions, setHwSessions] = useState([]);
   useEffect(() => {
     if (!user?.uid) return;
-    const q = query(collection(db, 'sessions'), where('studentId', '==', user.uid));
-    const unsub = onSnapshot(q, (snap) => {
-      setHwSessions(snap.docs.map(d => ({ id: d.id, ...d.data() })));
-    }, () => {});
-    return () => unsub();
+    // Shared with Dashboard / Schedule — one date-windowed listener, not the full lesson history.
+    return subscribeStudentSessions(user.uid, setHwSessions);
   }, [user?.uid]);
 
 

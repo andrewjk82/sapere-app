@@ -31,7 +31,7 @@ import {
   getDoc,
   runTransaction,
   serverTimestamp,
-} from '../firebase/firestoreWrapper';
+} from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { readChapterIndex } from './questionIndexService';
 import { buildDailyTargets, getCurriculumSignature } from './dailyAssignmentService';

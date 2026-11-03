@@ -13,7 +13,6 @@ import {
   Bell,
   ChevronRight,
   Upload,
-  Activity,
 } from 'lucide-react';
 import { db } from '../firebase/config';
 import taxonomyData from '../../tools/scripts/output/question_types_taxonomy.json';
@@ -254,7 +253,6 @@ const AdminDashboard = ({
   onReviewAll,
   onSendReminders,
   setActiveTab,
-  onNavigateToTraffic,
 }) => {
   const buckets = useMemo(() => buildBuckets(students), [students]);
   const [todayCompletionSummary, setTodayCompletionSummary] = useState(null);
@@ -572,22 +570,6 @@ const AdminDashboard = ({
               <span className="ad__send-info">
                 <strong>{importStatus === 'running' ? 'Importing...' : importStatus === 'done' ? 'Import Complete' : 'Import Question Types'}</strong>
                 <span>{importMsg || `${taxonomyData.types?.length || 21} HSC types → Firestore (one-time)`}</span>
-              </span>
-              <ChevronRight size={18} className="ad__send-arr" />
-            </button>
-            <button
-              type="button"
-              className="ad__send"
-              onClick={onNavigateToTraffic}
-              title="Open the real-time telemetry and database traffic monitor"
-              style={{ marginTop: '8px' }}
-            >
-              <span className="ad__send-ic" style={{ color: '#6366f1' }}>
-                <Activity size={18} />
-              </span>
-              <span className="ad__send-info">
-                <strong>Traffic Live Monitor</strong>
-                <span>Inspect Firestore Reads, Writes and page hotspots</span>
               </span>
               <ChevronRight size={18} className="ad__send-arr" />
             </button>

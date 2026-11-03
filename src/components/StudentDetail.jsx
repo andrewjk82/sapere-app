@@ -37,6 +37,7 @@ import {
   limit,
   orderBy,
   documentId,
+  deleteField,
 } from "firebase/firestore";
 
 // Stat docs are date-keyed (YYYY-MM-DD) and grow by 1-2/day per student, so an
@@ -1601,6 +1602,11 @@ const StudentDetail = ({ studentId, onBack }) => {
       if (syncUid !== activeStudentId) {
         await deleteDoc(doc(db, "users", syncUid, statCollection, stat.id)).catch(() => {});
       }
+      // Drop the day from the student's recentPractice summary (utils/recentPractice), which their Dashboard and
+      // FlameBuddy read instead of the stat docs — otherwise the reset day would still show as done.
+      updateDoc(doc(db, "users", syncUid), {
+        [`recentPractice.${isDailyReset ? "daily" : "calc"}.${stat.id}`]: deleteField(),
+      }).catch((e) => console.warn("recentPractice reset skipped:", e?.code || e));
 
       // Step 3: Recreate daily assignment if needed
       if (isDailyReset) {

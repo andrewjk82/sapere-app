@@ -9,7 +9,7 @@ import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
 import { db } from '../firebase/config';
 import {
-  doc, getDoc, setDoc, deleteDoc, collection, addDoc, getDocs, query, updateDoc, serverTimestamp, runTransaction,
+  doc, getDoc, setDoc, deleteDoc, collection, addDoc, getDocs, query, updateDoc, serverTimestamp, runTransaction, deleteField,
 } from 'firebase/firestore';
 import { localCache } from '../services/localCacheService';
 import { generateCalculationSet } from '../services/calculationGenerator';
@@ -66,6 +66,7 @@ import {
 } from '../utils/mcOptionShuffle';
 import { parseHintSteps } from '../utils/hintSteps';
 import { takePlanStart } from '../utils/planStart';
+import { buildRecentPracticePatch } from '../utils/recentPractice';
 import LoadingScreen from './LoadingScreen';
 
 // FlameBuddy's hint bubble wants one plain string. `hint` is not always a
@@ -1787,6 +1788,17 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
         const pruneCol = challengeType === 'calc' ? 'calc_stats' : 'daily_stats';
         pruneOldChallengeStats(user.uid, pruneCol).catch(() => {});
 
+        // Summary for Dashboard / FlameBuddy (utils/recentPractice) — rides along on the users/{uid} write below.
+        const recentPracticeInput = {
+          type: challengeType,
+          date: today,
+          score: questionsCorrect,
+          total: displayTotal,
+          completed: !isAbandoned,
+          topicStats,
+          deleteMarker: deleteField(),
+        };
+
         // 2. Atomic Update for XP and Progress
         try {
           await runTransaction(db, async (transaction) => {
@@ -1826,6 +1838,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
               totalXP: newXP,
               challengesCompleted: currentCount + 1,
               lastActive: now.toISOString(),
+              recentPractice: buildRecentPracticePatch(userData.recentPractice, recentPracticeInput),
               // Secret Notebook summary for the teacher's student profile.
               ...(secretNoteSync || {}),
             }, { merge: true });
@@ -1852,6 +1865,9 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
           });
         } catch (err) {
           console.warn('progress/xp sync failed after challenge save (non-critical):', err?.code || err?.message || err);
+          setDoc(doc(db, 'users', user.uid), {
+            recentPractice: buildRecentPracticePatch(studentProfile?.recentPractice, recentPracticeInput),
+          }, { merge: true }).catch(() => {});
           setDoc(ref, {
             progressSyncFailed: true,
             progressSyncError: err?.code || err?.message || 'unknown',

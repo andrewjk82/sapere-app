@@ -25,7 +25,6 @@ import {
 } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { localCache } from './localCacheService';
-import { trackRead, trackWrite } from './trafficTrackerService';
 
 export const TOTALS_COLLECTION = 'study_time_totals';
 export const META_DOC_PATH = ['study_time_leaderboard', 'top10'];
@@ -63,7 +62,6 @@ export const subscribeStudyTimeMeta = (onChange) => {
       const data = snap.exists()
         ? snap.data()
         : { version: 0, signature: '', top10: [] };
-      if (!snap.metadata.fromCache) trackRead(1, 'studytime_meta');
       writeCachedTop10(data);
       onChange(data);
     },
@@ -99,7 +97,6 @@ export const refreshTop10 = async () => {
     orderBy('totalSec', 'desc'),
     limit(TOP_N),
   ));
-  trackRead(snap.size || 1, 'studytime_top10');
 
   const top10 = snap.docs.map((d) => {
     const data = d.data();
@@ -131,7 +128,6 @@ export const refreshTop10 = async () => {
     tx.set(metaRef, published, { merge: true });
   });
 
-  if (published) trackWrite(1, 'studytime_meta');
   return published;
 };
 
@@ -148,7 +144,6 @@ export const fetchOwnRank = async (totalSec) => {
       collection(db, TOTALS_COLLECTION),
       where('totalSec', '>', totalSec),
     ));
-    trackRead(1, 'studytime_rank');
     return (agg.data().count || 0) + 1;
   } catch (err) {
     console.warn('[studytime] rank lookup failed:', err?.code || err);
@@ -161,7 +156,6 @@ export const fetchMyTotal = async (uid) => {
   if (!uid) return null;
   try {
     const snap = await getDoc(doc(db, TOTALS_COLLECTION, uid));
-    trackRead(1, 'studytime_my_total');
     return snap.exists() ? snap.data() : null;
   } catch (err) {
     console.warn('[studytime] own total fetch failed:', err?.code || err);
@@ -217,7 +211,6 @@ export const flushStudySession = async ({ uid, dateStr, subject, deltaSec, avata
     updatedAt: serverTimestamp(),
   }, { merge: true });
   await batch.commit();
-  trackWrite(2, 'studytime_flush');
 
   let totalSec;
   if (Number.isFinite(priorTotalSec)) {

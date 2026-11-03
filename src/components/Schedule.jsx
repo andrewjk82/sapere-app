@@ -10,7 +10,8 @@ import { normalizeSubjectLabel } from '../utils/subjectLabels';
 import { normalizeExamEntry, formatExamTime } from '../utils/examCountdown';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { localCache } from '../services/localCacheService';
-import { getCachedSessions, setCachedSessions } from '../utils/sessionsCache';
+import { getCachedSessions } from '../utils/sessionsCache';
+import { subscribeStudentSessions, fetchStudentSessionsRange, sessionWindowStart } from '../services/studentSessionsService';
 import ScheduleLessonModal from './ScheduleLessonModal';
 import LessonTopicPicker from './schedule/LessonTopicPicker';
 import LessonWorkspace from './LessonWorkspace';
@@ -302,6 +303,10 @@ const Schedule = ({ students = [] }) => {
   const [isSaving, setIsSaving] = useState(false);
   const [currentDate, setCurrentDate] = useState(new Date());
   const gridBodyRef = useRef(null);
+  // Student view: the shared listener covers the last ~90 days + upcoming lessons; weeks the student scrolls back
+  // to before that are read once on demand and merged in (keyed by week start).
+  const studentWindowDocsRef = useRef([]);
+  const olderStudentWeeksRef = useRef(new Map()); // weekStart → sessions[] (null while loading)
   const [slotH, setSlotH] = useState(DEFAULT_SLOT_H);
   const [editData, setEditData] = useState({
     notes: '',
@@ -393,12 +398,14 @@ const Schedule = ({ students = [] }) => {
           setLoading(false);
         }
 
-        const qId = query(collection(db, 'sessions'), where('studentId', '==', user.uid));
-        unsub1 = onSnapshot(qId, (snap) => {
-          const docs = sortSessions(snap.docs.map(d => ({ id: d.id, ...d.data() })));
-          setSessions(docs);
+        // Shared, date-windowed listener (services/studentSessionsService) — it also refreshes the sessions cache.
+        unsub1 = subscribeStudentSessions(user.uid, (docs) => {
+          studentWindowDocsRef.current = docs;
+          const byId = new Map();
+          olderStudentWeeksRef.current.forEach((week) => (week || []).forEach((d) => byId.set(d.id, d)));
+          docs.forEach((d) => byId.set(d.id, d));
+          setSessions(sortSessions([...byId.values()]));
           setLoading(false);
-          setCachedSessions(user.uid, docs);
         }, (err) => {
           console.error('Firestore session query error:', err);
           setLoading(false);
@@ -749,6 +756,31 @@ const Schedule = ({ students = [] }) => {
     if (period === 'am' && h === 12) h = 0;
     return h + m / 60;
   }, []);
+
+  // A student scrolled to a week before the shared listener's window → read just that week, once, and merge it in.
+  const visibleWeekStart = weekDays[0] ? weekDays[0].toLocaleDateString('en-CA') : '';
+  const visibleWeekEnd = weekDays[6] ? weekDays[6].toLocaleDateString('en-CA') : '';
+  useEffect(() => {
+    if (isAdmin || !user?.uid || !visibleWeekStart) return undefined;
+    const older = olderStudentWeeksRef.current;
+    if (visibleWeekStart >= sessionWindowStart() || older.has(visibleWeekStart)) return undefined;
+    older.set(visibleWeekStart, null);
+    fetchStudentSessionsRange(user.uid, visibleWeekStart, visibleWeekEnd)
+      .then((docs) => {
+        older.set(visibleWeekStart, docs);
+        if (docs.length === 0) return;
+        const byId = new Map();
+        older.forEach((week) => (week || []).forEach((d) => byId.set(d.id, d)));
+        studentWindowDocsRef.current.forEach((d) => byId.set(d.id, d));
+        setSessions([...byId.values()].sort((x, y) => (x.date || '').localeCompare(y.date || '')
+          || parseTime(x.startTime) - parseTime(y.startTime)));
+      })
+      .catch((err) => {
+        older.delete(visibleWeekStart);
+        console.warn('[Schedule] older week fetch failed:', err?.code || err);
+      });
+    return undefined;
+  }, [isAdmin, user?.uid, visibleWeekStart, visibleWeekEnd, parseTime]);
 
   const nowStr = formatDateKey(new Date());
   const upcomingSessions = useMemo(() => {
