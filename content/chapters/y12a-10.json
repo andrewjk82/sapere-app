@@ -2236,6 +2236,169 @@
             "course": "Advanced",
             "sourceQuestion": "Q26"
           }
+        },
+        {
+          "id": "y12a-advanced-005-p265-q31",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The mean of a set of ten scores is 14. Another two scores are included and the new mean is 16. What is the mean of the two additional scores?",
+          "hint": "Use mean × number of values to find each total. Subtract totals to isolate the two new scores.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p265-q31",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The mean of a set of ten scores is 14. Another two scores are included and the new mean is 16. What is the mean of the two additional scores?",
+              "options": [
+                "4",
+                "16",
+                "18",
+                "26"
+              ],
+              "answer": 2,
+              "hint": "Find the total of the original 10 scores and the new 12 scores. Subtract to get the sum of the two added scores.",
+              "steps": [
+                {
+                  "explain": "The original total is mean × number of scores.",
+                  "work": "\\(10(14)=140\\)"
+                },
+                {
+                  "explain": "The new total is 12 scores with mean 16.",
+                  "work": "\\(12(16)=192\\)"
+                },
+                {
+                  "explain": "The two new scores total 192−140=52. Divide by 2 to find their mean.",
+                  "work": "\\(\frac{52}{2}=\boxed{26}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "265",
+                "course": "Advanced",
+                "sourceQuestion": "Q31"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "265",
+            "course": "Advanced",
+            "sourceQuestion": "Q31"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p265-q33",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Christina has completed three Mathematics tests. Her mean mark is 72%. What mark (out of 100) does she have to get in her next test to increase her mean mark to 73%?",
+          "hint": "Calculate the total marks needed after four tests and subtract the marks she already has.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p265-q33",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Christina has completed three Mathematics tests. Her mean mark is 72%. What mark out of 100 does she need in her next test to increase her mean mark to 73%?",
+              "options": [
+                "73",
+                "75",
+                "76",
+                "78"
+              ],
+              "answer": 2,
+              "hint": "Work out the total marks for three tests at 72%, then find the four-test total needed for a 73% mean.",
+              "steps": [
+                {
+                  "explain": "Her first three tests total 3×72=216 marks.",
+                  "work": "\\(3(72)=216\\)"
+                },
+                {
+                  "explain": "A mean of 73 after four tests requires a total of 4×73=292 marks.",
+                  "work": "\\(4(73)=292\\)"
+                },
+                {
+                  "explain": "Subtract the current total from the target total to find the required fourth mark.",
+                  "work": "\\(292-216=\boxed{76}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "265",
+                "course": "Advanced",
+                "sourceQuestion": "Q33"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "265",
+            "course": "Advanced",
+            "sourceQuestion": "Q33"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p265-q35",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "This set of data is arranged in order from smallest to largest: 5, 6, 11, x, 13, 18, 25. The range is six less than twice the value of x. Which one of the following is true?",
+          "hint": "First form an equation from the range. Once x is known, read the median and quartiles from the ordered list.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p265-q35",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "This set of data is arranged in order from smallest to largest: 5, 6, 11, x, 13, 18, 25. The range is six less than twice the value of x. Which statement is true?",
+              "options": [
+                "The median is 12 and the interquartile range is 7",
+                "The median is 12 and the interquartile range is 12",
+                "The median is 13 and the interquartile range is 7",
+                "The median is 13 and the interquartile range is 12"
+              ],
+              "answer": 3,
+              "hint": "Use the range equation to find x. Then read the median and quartiles from the ordered seven values.",
+              "steps": [
+                {
+                  "explain": "The range is maximum minus minimum: 25−5=20. It is six less than twice x, so 20=2x−6.",
+                  "work": "\\(20=2x-6\\)"
+                },
+                {
+                  "explain": "Solve for x.",
+                  "work": "\\(2x=26\\Rightarrow x=13\\)"
+                },
+                {
+                  "explain": "The ordered values are 5,6,11,13,13,18,25. The median is the 4th value, 13. Q1 is 6 and Q3 is 18.",
+                  "work": "\\(Q_1=6,\\quad Q_2=13,\\quad Q_3=18\\)"
+                },
+                {
+                  "explain": "Subtract quartiles to find IQR.",
+                  "work": "\\(IQR=18-6=12\\Rightarrow\boxed{\text{median }13,\\ IQR=12}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "265",
+                "course": "Advanced",
+                "sourceQuestion": "Q35"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "265",
+            "course": "Advanced",
+            "sourceQuestion": "Q35"
+          }
         }
       ]
     },
