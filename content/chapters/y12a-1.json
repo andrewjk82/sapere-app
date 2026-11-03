@@ -38594,6 +38594,95 @@
             }
           ],
           "xp": 3
+        },
+        {
+          "id": "y12a-advanced-005-p244-q08",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A gardener expects a spray to kill 35% of insects each day and exactly 5000 new insects to be produced daily. The trial begins with 100000 insects. Let A_n be the expected number at the end of day n.",
+          "hint": "Each day 65% survive, then 5000 are added. Expand the recurrence to see the geometric series.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p244-q08-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "There are 100000 insects. Each day 35% die and 5000 new insects are produced. If A_n is the number at the end of day n, which recurrence is correct?",
+              "options": [
+                "\\(A_1=0.65(0.65(100000)+5000)+5000\\)",
+                "\\(A_1=0.35(100000)+5000\\)",
+                "\\(A_1=0.65(100000)+5000\\)",
+                "\\(A_1=0.65(100000-5000)\\)"
+              ],
+              "answer": 0,
+              "hint": "After each day, 65% survive; then add 5000 new insects. Apply the rule twice to express A2.",
+              "steps": [
+                {
+                  "explain": "After the first day, 65% of 100000 survive and 5000 are added.",
+                  "work": "\\(A_1=0.65(100000)+5000=70000\\)"
+                },
+                {
+                  "explain": "Apply the same daily rule again to obtain A2.",
+                  "work": "\\(A_2=0.65A_1+5000=0.65(0.65(100000)+5000)+5000\\)"
+                },
+                {
+                  "explain": "Choose the expression matching that recurrence.",
+                  "work": "\\(\\boxed{A_2=0.65(0.65\\times100000+5000)+5000}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "244",
+                "course": "Advanced",
+                "sourceQuestion": "Q8(i)"
+              }
+            },
+            {
+              "id": "y12a-advanced-005-p244-q08-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Show the general term for the insect model is \\(A_n=0.65^n(100000)+5000(1-0.65^n)/0.35\\). Which expression is equivalent?",
+              "options": [
+                "\\(100000(0.65)^n+\\frac{5000(1-0.65^n)}{0.35}\\)",
+                "\\(100000+5000n\\)",
+                "\\(100000(0.35)^n+5000\\)",
+                "\\(100000(0.65)^n-5000n\\)"
+              ],
+              "answer": 0,
+              "hint": "Solve the recurrence by repeated substitution. The constant additions form a finite geometric series.",
+              "steps": [
+                {
+                  "explain": "Repeated substitution gives the initial population term plus a geometric sum of daily births that survive.",
+                  "work": "\\(A_n=100000(0.65)^n+5000[1+0.65+\\cdots+0.65^{n-1}]\\)"
+                },
+                {
+                  "explain": "Sum the geometric series with first term 1 and common ratio 0.65.",
+                  "work": "\\(1+0.65+\\cdots+0.65^{n-1}=\\frac{1-0.65^n}{1-0.65}\\)"
+                },
+                {
+                  "explain": "Since 1−0.65=0.35, obtain the stated expression.",
+                  "work": "\\(\\boxed{A_n=100000(0.65)^n+\\frac{5000(1-0.65^n)}{0.35}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "244",
+                "course": "Advanced",
+                "sourceQuestion": "Q8(ii)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "244",
+            "course": "Advanced",
+            "sourceQuestion": "Q8"
+          }
         }
       ]
     },
