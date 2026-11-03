@@ -14,7 +14,7 @@ import { isScribbleEraseOn, setScribbleEraseOn } from '../utils/scribbleErase';
 import { isHoldToShapeOn, setHoldToShapeOn } from '../utils/shapeSnap';
 import { requestSecretNoteClearModalPreview } from '../services/secretNoteBonusService';
 import { SPRINT_PAYOUT_PREVIEW_EVENT } from '../services/timesTableSprintService';
-import { MAX_DREAM_CHARS } from '../utils/avatarUtils';
+import { compressAvatarImage } from '../utils/avatarUtils';
 
 // Extra QR codes in the teacher's Share dialog (students only see the app's own).
 const TEACHER_QR_LINKS = [{ id: 'jjmoney', label: 'JJ Money', url: 'https://jjmoney-public.vercel.app', display: 'jjmoney-public.vercel.app' }];
@@ -163,41 +163,13 @@ const Settings = () => {
     reader.onload = (event) => {
       const img = new Image();
       img.onload = async () => {
-        const MAX_SIZE = 400; // shown at card/avatar size; this string is copied into every read of the profile + leaderboard docs
-        let width = img.width;
-        let height = img.height;
-
-        if (width > MAX_SIZE || height > MAX_SIZE) {
-          if (width > height) {
-            height = Math.round((height * MAX_SIZE) / width);
-            width = MAX_SIZE;
-          } else {
-            width = Math.round((width * MAX_SIZE) / height);
-            height = MAX_SIZE;
-          }
-        }
-
-        const canvas = document.createElement('canvas');
-        canvas.width = width;
-        canvas.height = height;
-        const ctx = canvas.getContext('2d');
-        ctx.drawImage(img, 0, 0, width, height);
-        
-        let quality = 0.7;
-        let compressedDataUrl = canvas.toDataURL('image/jpeg', quality);
-        
-        // Iteratively compress until under ~45KB (it is stored inline in users/{uid} and leaderboard/{uid})
-        while (compressedDataUrl.length > MAX_DREAM_CHARS && quality > 0.1) {
-           quality -= 0.1;
-           compressedDataUrl = canvas.toDataURL('image/jpeg', quality);
-        }
-
-        if (compressedDataUrl.length > MAX_DREAM_CHARS) {
+        const compressedDataUrl = compressAvatarImage(img);
+        if (!compressedDataUrl) {
           showToast("Image is too large. Please try a smaller photo.", 'warning');
           setUploading(false);
           return;
         }
-        
+
         try {
           await setDoc(doc(db, 'users', user.uid), { dreamImageUrl: compressedDataUrl }, { merge: true });
           setEditData(prev => ({ ...prev, dreamImageUrl: compressedDataUrl }));
