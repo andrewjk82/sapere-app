@@ -7613,6 +7613,696 @@
             "sourcePage": null,
             "sourceTopic": "y12a-5B"
           }
+        },
+        {
+          "id": "y12a-advanced-002-p128-q07",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Differentiate \\(\\frac{e^x}{x+1}\\).",
+          "options": [
+            "\\(\\frac{2 x^{2} + x e^{x} + 4 x + 2}{x^{2} + 2 x + 1}\\)",
+            "\\(\\frac{e^{x}}{x + 1}\\)",
+            "\\(\\frac{e^{x}}{\\left(x + 1\\right)^{2}}\\)",
+            "\\(\\frac{x e^{x}}{x^{2} + 2 x + 1}\\)"
+          ],
+          "answer": 3,
+          "hint": "Use the quotient rule carefully: keep the numerator order and square the whole denominator.",
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{e^x}{x+1}\\)",
+              "note": "This is the expression to differentiate; identify its structure before applying a rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Let \\(u=e^{x}\\), \\(v=x + 1\\). Apply \\( (u/v)\\prime=(u\\prime v-uv\\prime)/v^2\\).",
+              "work": "\\(u\\prime=e^{x},\\quad v\\prime=1\\)"
+            },
+            {
+              "explain": "Form the numerator in the order derivative of the top times the bottom, minus the top times derivative of the bottom; then divide by the squared denominator.",
+              "work": "\\(\\frac{e^{x}\\cdot(x + 1)-(e^{x})\\cdot(1)}{(x + 1)^2}\\)"
+            },
+            {
+              "explain": "Simplify the quotient-rule numerator and denominator.",
+              "work": "\\(\\frac{x e^{x}}{x^{2} + 2 x + 1}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "128",
+            "sourceQuestion": "7",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p128-q08",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is the derivative of \\(e^{x^2}\\)?",
+          "options": [
+            "\\(2 x e^{x^{2}}\\)",
+            "\\(x e^{x^{2}}\\)",
+            "\\(- 2 x e^{x^{2}}\\)",
+            "\\(e^{x^{2}}\\)",
+            "\\(2 x e^{x^{2}} + 2\\)",
+            "\\(2 x e^{x^{2}} - 2\\)",
+            "\\(2 x e^{x^{2}} + 3\\)",
+            "\\(2 x e^{x^{2}} - 3\\)",
+            "\\(2 x e^{x^{2}} + 5\\)",
+            "\\(2 x e^{x^{2}} - 5\\)"
+          ],
+          "answer": 0,
+          "hint": "Differentiate the outer function and multiply by the derivative of the inner expression.",
+          "keyPoints": [
+            {
+              "text": "\\(e^{x^2}\\)",
+              "note": "This is the expression to differentiate; identify its structure before applying a rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the outside function and the inside expression. Differentiate the outside, then multiply by the derivative of the inside.",
+              "work": "\\(\\text{chain rule gives }2 x e^{x^{2}}\\)"
+            },
+            {
+              "explain": "Simplify the factors and keep any coefficient from the inside derivative.",
+              "work": "\\(2 x e^{x^{2}}\\)"
+            },
+            {
+              "explain": "State the simplified derivative.",
+              "work": "\\(2 x e^{x^{2}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "128",
+            "sourceQuestion": "8",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p128-q13",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Differentiate \\((e^x+x)^5\\).",
+          "options": [
+            "\\(\\frac{5 \\left(x + e^{x}\\right)^{4} \\left(e^{x} + 1\\right)}{2}\\)",
+            "\\(5 \\left(x + e^{x}\\right)^{4} \\left(e^{x} + 1\\right)\\)",
+            "\\(- 5 \\left(x + e^{x}\\right)^{4} \\left(e^{x} + 1\\right)\\)",
+            "\\(\\left(x + e^{x}\\right)^{5}\\)",
+            "\\(5 \\left(x + e^{x}\\right)^{4} \\left(e^{x} + 1\\right) + 2\\)",
+            "\\(5 \\left(x + e^{x}\\right)^{4} \\left(e^{x} + 1\\right) - 2\\)",
+            "\\(5 \\left(x + e^{x}\\right)^{4} \\left(e^{x} + 1\\right) + 3\\)",
+            "\\(5 \\left(x + e^{x}\\right)^{4} \\left(e^{x} + 1\\right) - 3\\)",
+            "\\(5 \\left(x + e^{x}\\right)^{4} \\left(e^{x} + 1\\right) + 5\\)",
+            "\\(5 \\left(x + e^{x}\\right)^{4} \\left(e^{x} + 1\\right) - 5\\)"
+          ],
+          "answer": 1,
+          "hint": "Differentiate the outer function and multiply by the derivative of the inner expression.",
+          "keyPoints": [
+            {
+              "text": "\\((e^x+x)^5\\)",
+              "note": "This is the expression to differentiate; identify its structure before applying a rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the outside function and the inside expression. Differentiate the outside, then multiply by the derivative of the inside.",
+              "work": "\\(\\text{chain rule gives }5 \\left(x + e^{x}\\right)^{4} \\left(e^{x} + 1\\right)\\)"
+            },
+            {
+              "explain": "Simplify the factors and keep any coefficient from the inside derivative.",
+              "work": "\\(5 \\left(x + e^{x}\\right)^{4} \\left(e^{x} + 1\\right)\\)"
+            },
+            {
+              "explain": "State the simplified derivative.",
+              "work": "\\(5 \\left(x + e^{x}\\right)^{4} \\left(e^{x} + 1\\right)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "128",
+            "sourceQuestion": "13",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p128-q18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Differentiate \\((3+e^{2x})^5\\).",
+          "options": [
+            "\\(- 10 \\left(e^{2 x} + 3\\right)^{4} e^{2 x}\\)",
+            "\\(5 \\left(e^{2 x} + 3\\right)^{4} e^{2 x}\\)",
+            "\\(10 \\left(e^{2 x} + 3\\right)^{4} e^{2 x}\\)",
+            "\\(\\left(e^{2 x} + 3\\right)^{5}\\)",
+            "\\(10 \\left(e^{2 x} + 3\\right)^{4} e^{2 x} + 2\\)",
+            "\\(10 \\left(e^{2 x} + 3\\right)^{4} e^{2 x} - 2\\)",
+            "\\(10 \\left(e^{2 x} + 3\\right)^{4} e^{2 x} + 3\\)",
+            "\\(10 \\left(e^{2 x} + 3\\right)^{4} e^{2 x} - 3\\)",
+            "\\(10 \\left(e^{2 x} + 3\\right)^{4} e^{2 x} + 5\\)",
+            "\\(10 \\left(e^{2 x} + 3\\right)^{4} e^{2 x} - 5\\)"
+          ],
+          "answer": 2,
+          "hint": "Differentiate the outer function and multiply by the derivative of the inner expression.",
+          "keyPoints": [
+            {
+              "text": "\\((3+e^{2x})^5\\)",
+              "note": "This is the expression to differentiate; identify its structure before applying a rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the outside function and the inside expression. Differentiate the outside, then multiply by the derivative of the inside.",
+              "work": "\\(\\text{chain rule gives }10 \\left(e^{2 x} + 3\\right)^{4} e^{2 x}\\)"
+            },
+            {
+              "explain": "Simplify the factors and keep any coefficient from the inside derivative.",
+              "work": "\\(10 \\left(e^{2 x} + 3\\right)^{4} e^{2 x}\\)"
+            },
+            {
+              "explain": "State the simplified derivative.",
+              "work": "\\(10 \\left(e^{2 x} + 3\\right)^{4} e^{2 x}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "128",
+            "sourceQuestion": "18",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p128-q22",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the derivative of \\(y=x^2e^x\\) with respect to \\(x\\).",
+          "options": [
+            "\\(x^{2} e^{x}\\)",
+            "\\(2 x e^{x}\\)",
+            "\\(x \\left(x + 2\\right) e^{x}\\)",
+            "\\(x \\left(x + 2\\right) e^{x} + 2\\)"
+          ],
+          "answer": 2,
+          "hint": "Name the two factors first, then apply the product rule and include both terms.",
+          "keyPoints": [
+            {
+              "text": "\\(y=x^2e^x\\)",
+              "note": "This is the expression to differentiate; identify its structure before applying a rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the two factors: \\(u=x^{2}\\) and \\(v=e^{x}\\). Use the product rule \\( (uv)\\prime=u\\prime v+uv\\prime\\).",
+              "work": "\\(u\\prime=2 x,\\quad v\\prime=e^{x}\\)"
+            },
+            {
+              "explain": "Substitute both product-rule terms; keep both terms in the sum.",
+              "work": "\\(2 x\\cdot e^{x}+x^{2}\\cdot e^{x}\\)"
+            },
+            {
+              "explain": "Add the two contributions and simplify.",
+              "work": "\\(x \\left(x + 2\\right) e^{x}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "128",
+            "sourceQuestion": "22",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p129-q27-ii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Differentiate with respect to \\(x\\): \\((e^x+1)^2\\).",
+          "options": [
+            "\\(\\left(e^{x} + 1\\right) e^{x}\\)",
+            "\\(2 \\left(e^{x} + 1\\right) e^{x}\\)",
+            "\\(- 2 \\left(e^{x} + 1\\right) e^{x}\\)",
+            "\\(\\left(e^{x} + 1\\right)^{2}\\)",
+            "\\(2 \\left(e^{x} + 1\\right) e^{x} + 2\\)",
+            "\\(2 \\left(e^{x} + 1\\right) e^{x} - 2\\)",
+            "\\(2 \\left(e^{x} + 1\\right) e^{x} + 3\\)",
+            "\\(2 \\left(e^{x} + 1\\right) e^{x} - 3\\)",
+            "\\(2 \\left(e^{x} + 1\\right) e^{x} + 5\\)",
+            "\\(2 \\left(e^{x} + 1\\right) e^{x} - 5\\)"
+          ],
+          "answer": 1,
+          "hint": "Differentiate the outer function and multiply by the derivative of the inner expression.",
+          "keyPoints": [
+            {
+              "text": "\\(x\\)",
+              "note": "This is the expression to differentiate; identify its structure before applying a rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the outside function and the inside expression. Differentiate the outside, then multiply by the derivative of the inside.",
+              "work": "\\(\\text{chain rule gives }2 \\left(e^{x} + 1\\right) e^{x}\\)"
+            },
+            {
+              "explain": "Simplify the factors and keep any coefficient from the inside derivative.",
+              "work": "\\(2 \\left(e^{x} + 1\\right) e^{x}\\)"
+            },
+            {
+              "explain": "State the simplified derivative.",
+              "work": "\\(2 \\left(e^{x} + 1\\right) e^{x}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "129",
+            "sourceQuestion": "27ii",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p129-q30-i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Differentiate with respect to \\(x\\): \\(\\frac{2x}{e^x+1}\\).",
+          "options": [
+            "\\(\\frac{2 x}{e^{x} + 1}\\)",
+            "\\(\\frac{2}{e^{x} + 1}\\)",
+            "\\(\\frac{x}{\\cosh{\\left(x \\right)} + 1}\\)",
+            "\\(\\frac{2 \\left(- x e^{x} + e^{x} + 1\\right)}{\\left(e^{x} + 1\\right)^{2}}\\)",
+            "\\(\\frac{2 \\left(- x e^{x} + \\left(e^{x} + 1\\right)^{2} + e^{x} + 1\\right)}{\\left(e^{x} + 1\\right)^{2}}\\)",
+            "\\(\\frac{2 \\left(- x - e^{x} - 1\\right) e^{x}}{e^{2 x} + 2 e^{x} + 1}\\)",
+            "\\(\\frac{- 2 x e^{x} + 3 \\left(e^{x} + 1\\right)^{2} + 2 e^{x} + 2}{\\left(e^{x} + 1\\right)^{2}}\\)",
+            "\\(\\frac{- 2 x e^{x} - 3 \\left(e^{x} + 1\\right)^{2} + 2 e^{x} + 2}{\\left(e^{x} + 1\\right)^{2}}\\)",
+            "\\(\\frac{- 2 x e^{x} + 5 \\left(e^{x} + 1\\right)^{2} + 2 e^{x} + 2}{\\left(e^{x} + 1\\right)^{2}}\\)",
+            "\\(\\frac{- 2 x e^{x} - 5 \\left(e^{x} + 1\\right)^{2} + 2 e^{x} + 2}{\\left(e^{x} + 1\\right)^{2}}\\)"
+          ],
+          "answer": 3,
+          "hint": "Use the quotient rule carefully: keep the numerator order and square the whole denominator.",
+          "keyPoints": [
+            {
+              "text": "\\(x\\)",
+              "note": "This is the expression to differentiate; identify its structure before applying a rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Let \\(u=2 x\\), \\(v=e^{x} + 1\\). Apply \\( (u/v)\\prime=(u\\prime v-uv\\prime)/v^2\\).",
+              "work": "\\(u\\prime=2,\\quad v\\prime=e^{x}\\)"
+            },
+            {
+              "explain": "Form the numerator in the order derivative of the top times the bottom, minus the top times derivative of the bottom; then divide by the squared denominator.",
+              "work": "\\(\\frac{2\\cdot(e^{x} + 1)-(2 x)\\cdot(e^{x})}{(e^{x} + 1)^2}\\)"
+            },
+            {
+              "explain": "Simplify the quotient-rule numerator and denominator.",
+              "work": "\\(\\frac{2 \\left(- x e^{x} + e^{x} + 1\\right)}{\\left(e^{x} + 1\\right)^{2}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "129",
+            "sourceQuestion": "30i",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p129-q35-i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Differentiate with respect to \\(x\\): \\((2e^x-4)^9\\).",
+          "options": [
+            "\\(4608 \\left(e^{x} - 2\\right)^{8} e^{x}\\)",
+            "\\(2304 \\left(e^{x} - 2\\right)^{8} e^{x}\\)",
+            "\\(- 4608 \\left(e^{x} - 2\\right)^{8} e^{x}\\)",
+            "\\(512 \\left(e^{x} - 2\\right)^{9}\\)",
+            "\\(4608 \\left(e^{x} - 2\\right)^{8} e^{x} + 2\\)",
+            "\\(4608 \\left(e^{x} - 2\\right)^{8} e^{x} - 2\\)",
+            "\\(4608 \\left(e^{x} - 2\\right)^{8} e^{x} + 3\\)",
+            "\\(4608 \\left(e^{x} - 2\\right)^{8} e^{x} - 3\\)",
+            "\\(4608 \\left(e^{x} - 2\\right)^{8} e^{x} + 5\\)",
+            "\\(4608 \\left(e^{x} - 2\\right)^{8} e^{x} - 5\\)"
+          ],
+          "answer": 0,
+          "hint": "Differentiate the outer function and multiply by the derivative of the inner expression.",
+          "keyPoints": [
+            {
+              "text": "\\(x\\)",
+              "note": "This is the expression to differentiate; identify its structure before applying a rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the outside function and the inside expression. Differentiate the outside, then multiply by the derivative of the inside.",
+              "work": "\\(\\text{chain rule gives }4608 \\left(e^{x} - 2\\right)^{8} e^{x}\\)"
+            },
+            {
+              "explain": "Simplify the factors and keep any coefficient from the inside derivative.",
+              "work": "\\(4608 \\left(e^{x} - 2\\right)^{8} e^{x}\\)"
+            },
+            {
+              "explain": "State the simplified derivative.",
+              "work": "\\(4608 \\left(e^{x} - 2\\right)^{8} e^{x}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "129",
+            "sourceQuestion": "35i",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p129-q38-ii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Differentiate with respect to \\(x\\): \\(\\frac{x}{e^x}\\).",
+          "options": [
+            "\\(\\left(1 - x\\right) e^{- x}\\)",
+            "\\(e^{- x}\\)",
+            "\\(- x e^{- x}\\)",
+            "\\(x e^{- x}\\)",
+            "\\(\\left(- x + 2 e^{x} + 1\\right) e^{- x}\\)",
+            "\\(\\left(- x - 2 e^{x} + 1\\right) e^{- x}\\)",
+            "\\(\\left(- x + 3 e^{x} + 1\\right) e^{- x}\\)",
+            "\\(\\left(- x - 3 e^{x} + 1\\right) e^{- x}\\)",
+            "\\(\\left(- x + 5 e^{x} + 1\\right) e^{- x}\\)",
+            "\\(\\left(- x - 5 e^{x} + 1\\right) e^{- x}\\)"
+          ],
+          "answer": 0,
+          "hint": "Name the two factors first, then apply the product rule and include both terms.",
+          "keyPoints": [
+            {
+              "text": "\\(x\\)",
+              "note": "This is the expression to differentiate; identify its structure before applying a rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the two factors: \\(u=x\\) and \\(v=e^{- x}\\). Use the product rule \\( (uv)\\prime=u\\prime v+uv\\prime\\).",
+              "work": "\\(u\\prime=1,\\quad v\\prime=- e^{- x}\\)"
+            },
+            {
+              "explain": "Substitute both product-rule terms; keep both terms in the sum.",
+              "work": "\\(1\\cdot e^{- x}+x\\cdot- e^{- x}\\)"
+            },
+            {
+              "explain": "Add the two contributions and simplify.",
+              "work": "\\(\\left(1 - x\\right) e^{- x}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "129",
+            "sourceQuestion": "38ii",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p129-q40-i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Differentiate the following: \\(3xe^x\\).",
+          "options": [
+            "\\(0\\)",
+            "\\(3 \\left(x + 1\\right) e^{x}\\)",
+            "\\(3 x e^{x}\\)",
+            "\\(3 \\left(x + 1\\right) e^{x} + 2\\)"
+          ],
+          "answer": 1,
+          "hint": "Name the two factors first, then apply the product rule and include both terms.",
+          "keyPoints": [
+            {
+              "text": "\\(3xe^x\\)",
+              "note": "This is the expression to differentiate; identify its structure before applying a rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the two factors: \\(u=3\\) and \\(v=x e^{x}\\). Use the product rule \\( (uv)\\prime=u\\prime v+uv\\prime\\).",
+              "work": "\\(u\\prime=0,\\quad v\\prime=\\left(x + 1\\right) e^{x}\\)"
+            },
+            {
+              "explain": "Substitute both product-rule terms; keep both terms in the sum.",
+              "work": "\\(0\\cdot x e^{x}+3\\cdot\\left(x + 1\\right) e^{x}\\)"
+            },
+            {
+              "explain": "Add the two contributions and simplify.",
+              "work": "\\(3 \\left(x + 1\\right) e^{x}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "129",
+            "sourceQuestion": "40i",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p129-q41-ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Differentiate the following function: \\(\\frac{e^x}{1+x^2}\\).",
+          "options": [
+            "\\(\\frac{2 \\left(x^{2} + 1\\right)^{2} + \\left(x^{2} - 2 x + 1\\right) e^{x}}{\\left(x^{2} + 1\\right)^{2}}\\)",
+            "\\(\\frac{e^{x}}{x^{2} + 1}\\)",
+            "\\(\\frac{2 x e^{x}}{\\left(x^{2} + 1\\right)^{2}}\\)",
+            "\\(\\frac{\\left(x^{2} - 2 x + 1\\right) e^{x}}{\\left(x^{2} + 1\\right)^{2}}\\)"
+          ],
+          "answer": 3,
+          "hint": "Use the quotient rule carefully: keep the numerator order and square the whole denominator.",
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{e^x}{1+x^2}\\)",
+              "note": "This is the expression to differentiate; identify its structure before applying a rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Let \\(u=e^{x}\\), \\(v=x^{2} + 1\\). Apply \\( (u/v)\\prime=(u\\prime v-uv\\prime)/v^2\\).",
+              "work": "\\(u\\prime=e^{x},\\quad v\\prime=2 x\\)"
+            },
+            {
+              "explain": "Form the numerator in the order derivative of the top times the bottom, minus the top times derivative of the bottom; then divide by the squared denominator.",
+              "work": "\\(\\frac{e^{x}\\cdot(x^{2} + 1)-(e^{x})\\cdot(2 x)}{(x^{2} + 1)^2}\\)"
+            },
+            {
+              "explain": "Simplify the quotient-rule numerator and denominator.",
+              "work": "\\(\\frac{\\left(x^{2} - 2 x + 1\\right) e^{x}}{\\left(x^{2} + 1\\right)^{2}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "129",
+            "sourceQuestion": "41ii",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p129-q45",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Differentiate \\(e^{3x}\\cos x\\).",
+          "options": [
+            "\\(- e^{3 x} \\sin{\\left(x \\right)}\\)",
+            "\\(\\left(- \\sin{\\left(x \\right)} + 3 \\cos{\\left(x \\right)}\\right) e^{3 x}\\)",
+            "\\(3 e^{3 x} \\cos{\\left(x \\right)}\\)",
+            "\\(e^{3 x} \\cos{\\left(x \\right)}\\)",
+            "\\(\\left(- \\sin{\\left(x \\right)} + 3 \\cos{\\left(x \\right)}\\right) e^{3 x} + 2\\)",
+            "\\(\\left(- \\sin{\\left(x \\right)} + 3 \\cos{\\left(x \\right)}\\right) e^{3 x} - 2\\)",
+            "\\(\\left(- \\sin{\\left(x \\right)} + 3 \\cos{\\left(x \\right)}\\right) e^{3 x} + 3\\)",
+            "\\(\\left(- \\sin{\\left(x \\right)} + 3 \\cos{\\left(x \\right)}\\right) e^{3 x} - 3\\)",
+            "\\(\\left(- \\sin{\\left(x \\right)} + 3 \\cos{\\left(x \\right)}\\right) e^{3 x} + 5\\)",
+            "\\(\\left(- \\sin{\\left(x \\right)} + 3 \\cos{\\left(x \\right)}\\right) e^{3 x} - 5\\)"
+          ],
+          "answer": 1,
+          "hint": "Name the two factors first, then apply the product rule and include both terms.",
+          "keyPoints": [
+            {
+              "text": "\\(e^{3x}\\cos x\\)",
+              "note": "This is the expression to differentiate; identify its structure before applying a rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the two factors: \\(u=\\cos{\\left(x \\right)}\\) and \\(v=e^{3 x}\\). Use the product rule \\( (uv)\\prime=u\\prime v+uv\\prime\\).",
+              "work": "\\(u\\prime=- \\sin{\\left(x \\right)},\\quad v\\prime=3 e^{3 x}\\)"
+            },
+            {
+              "explain": "Substitute both product-rule terms; keep both terms in the sum.",
+              "work": "\\(- \\sin{\\left(x \\right)}\\cdot e^{3 x}+\\cos{\\left(x \\right)}\\cdot3 e^{3 x}\\)"
+            },
+            {
+              "explain": "Add the two contributions and simplify.",
+              "work": "\\(\\left(- \\sin{\\left(x \\right)} + 3 \\cos{\\left(x \\right)}\\right) e^{3 x}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "129",
+            "sourceQuestion": "45",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p130-q46-ii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Differentiate \\(xe^{2x}\\).",
+          "options": [
+            "\\(\\left(2 x + 1\\right) e^{2 x}\\)",
+            "\\(e^{2 x}\\)",
+            "\\(2 x e^{2 x}\\)",
+            "\\(x e^{2 x}\\)",
+            "\\(\\left(2 x + 1\\right) e^{2 x} + 2\\)",
+            "\\(\\left(2 x + 1\\right) e^{2 x} - 2\\)",
+            "\\(\\left(2 x + 1\\right) e^{2 x} + 3\\)",
+            "\\(\\left(2 x + 1\\right) e^{2 x} - 3\\)",
+            "\\(\\left(2 x + 1\\right) e^{2 x} + 5\\)",
+            "\\(\\left(2 x + 1\\right) e^{2 x} - 5\\)"
+          ],
+          "answer": 0,
+          "hint": "Name the two factors first, then apply the product rule and include both terms.",
+          "keyPoints": [
+            {
+              "text": "\\(xe^{2x}\\)",
+              "note": "This is the expression to differentiate; identify its structure before applying a rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the two factors: \\(u=x\\) and \\(v=e^{2 x}\\). Use the product rule \\( (uv)\\prime=u\\prime v+uv\\prime\\).",
+              "work": "\\(u\\prime=1,\\quad v\\prime=2 e^{2 x}\\)"
+            },
+            {
+              "explain": "Substitute both product-rule terms; keep both terms in the sum.",
+              "work": "\\(1\\cdot e^{2 x}+x\\cdot2 e^{2 x}\\)"
+            },
+            {
+              "explain": "Add the two contributions and simplify.",
+              "work": "\\(\\left(2 x + 1\\right) e^{2 x}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "130",
+            "sourceQuestion": "46ii",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p130-q47-ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Differentiate \\(4^{2x}\\).",
+          "options": [
+            "\\(2^{4 x + 1} \\log{\\left(2 \\right)}\\)",
+            "\\(2^{4 x + 2} \\log{\\left(2 \\right)}\\)",
+            "\\(- 2^{4 x + 2} \\log{\\left(2 \\right)}\\)",
+            "\\(16^{x}\\)",
+            "\\(\\log{\\left(16^{2^{4 x}} \\right)} + 2\\)",
+            "\\(\\log{\\left(16^{2^{4 x}} \\right)} - 2\\)",
+            "\\(2^{4 x + 2} \\log{\\left(2 \\right)} + 3\\)",
+            "\\(2^{4 x + 2} \\log{\\left(2 \\right)} - 3\\)",
+            "\\(2^{4 x + 2} \\log{\\left(2 \\right)} + 5\\)",
+            "\\(2^{4 x + 2} \\log{\\left(2 \\right)} - 5\\)"
+          ],
+          "answer": 1,
+          "hint": "Differentiate the outer function and multiply by the derivative of the inner expression.",
+          "keyPoints": [
+            {
+              "text": "\\(4^{2x}\\)",
+              "note": "This is the expression to differentiate; identify its structure before applying a rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the outside function and the inside expression. Differentiate the outside, then multiply by the derivative of the inside.",
+              "work": "\\(\\text{chain rule gives }2^{4 x + 2} \\log{\\left(2 \\right)}\\)"
+            },
+            {
+              "explain": "Simplify the factors and keep any coefficient from the inside derivative.",
+              "work": "\\(2^{4 x + 2} \\log{\\left(2 \\right)}\\)"
+            },
+            {
+              "explain": "State the simplified derivative.",
+              "work": "\\(2^{4 x + 2} \\log{\\left(2 \\right)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "130",
+            "sourceQuestion": "47ii",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p130-q50-i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Differentiate \\(e^x\\).",
+          "options": [
+            "\\(e^{x} + 2\\)",
+            "\\(\\frac{e^{x}}{2}\\)",
+            "\\(- e^{x}\\)",
+            "\\(e^{x}\\)"
+          ],
+          "answer": 3,
+          "hint": "Use the standard derivative rule for this function.",
+          "keyPoints": [
+            {
+              "text": "\\(e^x\\)",
+              "note": "This is the expression to differentiate; identify its structure before applying a rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the outside function and the inside expression. Differentiate the outside, then multiply by the derivative of the inside.",
+              "work": "\\(\\text{chain rule gives }e^{x}\\)"
+            },
+            {
+              "explain": "Simplify the factors and keep any coefficient from the inside derivative.",
+              "work": "\\(e^{x}\\)"
+            },
+            {
+              "explain": "State the simplified derivative.",
+              "work": "\\(e^{x}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "130",
+            "sourceQuestion": "50i",
+            "course": "Advanced"
+          }
         }
       ]
     },
@@ -9667,6 +10357,1003 @@
           ],
           "timeLimit": 240,
           "xp": 3
+        },
+        {
+          "id": "y12a-advanced-003-app-q01",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A scientist is studying the growth of bacteria. The scientist models the number of bacteria, N, by the equation N(t) = 200e^(0.013t), where t is the number of hours after starting the experiment.",
+          "parts": [
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q01-a",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "What is the initial number of bacteria in the experiment?",
+              "options": [
+                {
+                  "text": "200"
+                },
+                {
+                  "text": "201"
+                },
+                {
+                  "text": "273"
+                },
+                {
+                  "text": "0"
+                }
+              ],
+              "answer": 0,
+              "hint": "The initial time is t=0. Substitute zero into the given model.",
+              "steps": [
+                {
+                  "explain": "The initial amount is the value of N when the experiment starts, t=0.",
+                  "work": "\\(N(0)=200e^{0.013(0)}\\)"
+                },
+                {
+                  "explain": "The exponent is zero and e⁰=1.",
+                  "work": "\\(N(0)=200\\times1=200\\)"
+                },
+                {
+                  "explain": "So there are 200 bacteria at the start.",
+                  "work": "\\(\\boxed{200}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q01-b",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "What is the number of bacteria 24 hours after starting the experiment?",
+              "options": [
+                {
+                  "text": "273 bacteria"
+                },
+                {
+                  "text": "200 bacteria"
+                },
+                {
+                  "text": "274 bacteria"
+                },
+                {
+                  "text": "273.23 bacteria"
+                }
+              ],
+              "answer": 0,
+              "hint": "Substitute t=24 into N(t). The question asks for a whole-number count.",
+              "steps": [
+                {
+                  "explain": "Use the model with t=24 hours.",
+                  "work": "\\(N(24)=200e^{0.013(24)}\\)"
+                },
+                {
+                  "explain": "Calculate the exponent and evaluate.",
+                  "work": "\\(0.013(24)=0.312,\\quad N(24)=200e^{0.312}\\approx273.2309\\)"
+                },
+                {
+                  "explain": "A number of bacteria is given to the nearest whole number.",
+                  "work": "\\(\\boxed{273\\text{ bacteria}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q01-c",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "What is the rate of increase in the number of bacteria 24 hours after starting the experiment?",
+              "options": [
+                {
+                  "text": "3.55 bacteria/hour"
+                },
+                {
+                  "text": "273.23 bacteria/hour"
+                },
+                {
+                  "text": "0.013 bacteria/hour"
+                },
+                {
+                  "text": "3.55 bacteria"
+                }
+              ],
+              "answer": 0,
+              "hint": "Differentiate N(t). For an exponential model, N′(t)=0.013N(t). Use the value from part (b).",
+              "steps": [
+                {
+                  "explain": "Differentiate N(t)=200e^(0.013t) using the chain rule.",
+                  "work": "\\(N\\prime(t)=200(0.013)e^{0.013t}=0.013N(t)\\)"
+                },
+                {
+                  "explain": "At t=24, use N(24)≈273.2309.",
+                  "work": "\\(N\\prime(24)=0.013(273.2309)\\approx3.55199\\)"
+                },
+                {
+                  "explain": "The units are bacteria per hour because this is a rate of change in N with respect to hours.",
+                  "work": "\\(\\boxed{3.55\\text{ bacteria/hour}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 003",
+            "page": "142-143, 156-157",
+            "course": "Advanced",
+            "sourceQuestion": "1"
+          }
+        },
+        {
+          "id": "y12a-advanced-003-app-q03",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Let f(x) = xe^(−2x). It is given that f′(x) = e^(−2x) − 2xe^(−2x).",
+          "parts": [
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q03-a",
+              "type": "review",
+              "difficulty": "medium",
+              "stem": "Show that f′′(x) = 4(x − 1)e^(−2x).",
+              "answer": "f′′(x)=4(x−1)e^(−2x).",
+              "manual": true,
+              "hint": "Differentiate the given f′ using the product rule, then collect the common factor e^(−2x).",
+              "steps": [
+                {
+                  "explain": "Start from the given first derivative and identify the two factors in each product.",
+                  "work": "\\(f\\prime(x)=e^{-2x}-2xe^{-2x}\\)"
+                },
+                {
+                  "explain": "Differentiate e^(−2x) by the chain rule. For the product xe^(−2x), use the product rule.",
+                  "work": "\\(f\\prime\\prime(x)=-2e^{-2x}-2\\left(e^{-2x}-2xe^{-2x}\\right)\\)"
+                },
+                {
+                  "explain": "Expand the brackets and combine like terms.",
+                  "work": "\\(f\\prime\\prime(x)=-2e^{-2x}-2e^{-2x}+4xe^{-2x}\\)"
+                },
+                {
+                  "explain": "Factor out 4e^(−2x).",
+                  "work": "\\(f\\prime\\prime(x)=4(x-1)e^{-2x}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q03-b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find any stationary points of f(x) and determine their nature.",
+              "options": [
+                {
+                  "text": "Maximum at \\((1/2,1/(2e))\\)"
+                },
+                {
+                  "text": "Minimum at \\((1/2,1/(2e))\\)"
+                },
+                {
+                  "text": "Maximum at \\((1,1/(2e^2))\\)"
+                },
+                {
+                  "text": "No stationary points."
+                }
+              ],
+              "answer": 0,
+              "hint": "Factor f′(x), set it to zero, then use f′′ to classify the point.",
+              "steps": [
+                {
+                  "explain": "Factor the given derivative. Since an exponential is never zero, only the bracket can be zero.",
+                  "work": "\\(f\\prime(x)=e^{-2x}(1-2x)=0\\Rightarrow x=\\frac12\\)"
+                },
+                {
+                  "explain": "Substitute x=1/2 into f(x)=xe^(−2x).",
+                  "work": "\\(f(\\frac12)=\\frac12e^{-1}=\\frac1{2e}\\)"
+                },
+                {
+                  "explain": "Use f′′(x)=4(x−1)e^(−2x). At x=1/2, the exponential is positive and x−1 is negative, so f′′<0.",
+                  "work": "\\(f\\prime\\prime(\\frac12)=4(-\\frac12)e^{-1}<0\\Rightarrow\\text{local maximum}\\)"
+                },
+                {
+                  "explain": "The stationary point is a maximum at the coordinate found.",
+                  "work": "\\(\\boxed{(\\frac12,\\frac1{2e})\\text{ maximum}}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 280\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M35 225H410M160 250V20\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M45 228 C90 210 122 161 160 122 C199 82 243 82 282 112 C324 144 363 180 405 202\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><circle cx=\"210\" cy=\"82\" r=\"5\" fill=\"#ef4444\"/><circle cx=\"282\" cy=\"112\" r=\"5\" fill=\"#8b5cf6\"/><circle cx=\"160\" cy=\"225\" r=\"4\" fill=\"#f59e0b\"/><text x=\"212\" y=\"66\" font-family=\"Arial\" font-size=\"12\">max (1/2,1/2e)</text><text x=\"286\" y=\"133\" font-family=\"Arial\" font-size=\"12\">inflection (1,1/2e²)</text><text x=\"406\" y=\"220\" font-family=\"Arial\" font-size=\"13\">x</text><text x=\"166\" y=\"23\" font-family=\"Arial\" font-size=\"13\">y</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q03-c",
+              "type": "review",
+              "difficulty": "medium",
+              "stem": "Sketch the curve y = xe^(−2x), showing any stationary points, points of inflection and intercepts with the axes.",
+              "answer": "The curve passes through (0,0), has a maximum at (1/2,1/(2e)), an inflection point at (1,1/(2e²)), and approaches y=0 from above as x→∞.",
+              "manual": true,
+              "hint": "Use f′=0 for the stationary point, f′′=0 for the inflection point, and y=0 for intercepts. The exponential factor stays positive.",
+              "steps": [
+                {
+                  "explain": "For stationary points set f′=e^(−2x)(1−2x)=0. Since the exponential is positive, x=1/2.",
+                  "work": "\\(x=\\frac12,\\quad f(\\frac12)=\\frac1{2e}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 280\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M35 225H410M160 250V20\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M45 228 C90 210 122 161 160 122 C199 82 243 82 282 112 C324 144 363 180 405 202\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><circle cx=\"210\" cy=\"82\" r=\"5\" fill=\"#ef4444\"/><circle cx=\"282\" cy=\"112\" r=\"5\" fill=\"#8b5cf6\"/><circle cx=\"160\" cy=\"225\" r=\"4\" fill=\"#f59e0b\"/><text x=\"212\" y=\"66\" font-family=\"Arial\" font-size=\"12\">max (1/2,1/2e)</text><text x=\"286\" y=\"133\" font-family=\"Arial\" font-size=\"12\">inflection (1,1/2e²)</text><text x=\"406\" y=\"220\" font-family=\"Arial\" font-size=\"13\">x</text><text x=\"166\" y=\"23\" font-family=\"Arial\" font-size=\"13\">y</text></svg>"
+                  }
+                },
+                {
+                  "explain": "For an inflection point set f′′=4(x−1)e^(−2x)=0. Again the exponential is not zero, so x=1.",
+                  "work": "\\(x=1,\\quad f(1)=e^{-2}=\\frac1{e^2}\\)"
+                },
+                {
+                  "explain": "At an intercept y=0. Since xe^(−2x)=0 and e^(−2x) is never zero, x=0.",
+                  "work": "\\((0,0)\\text{ is the x- and y-intercept}\\)"
+                },
+                {
+                  "explain": "For large positive x, e^(−2x) tends to zero, so the curve approaches the x-axis from above.",
+                  "work": "\\(\\lim_{x\\to\\infty}xe^{-2x}=0^+\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 280\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M35 225H410M160 250V20\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M45 228 C90 210 122 161 160 122 C199 82 243 82 282 112 C324 144 363 180 405 202\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><circle cx=\"210\" cy=\"82\" r=\"5\" fill=\"#ef4444\"/><circle cx=\"282\" cy=\"112\" r=\"5\" fill=\"#8b5cf6\"/><circle cx=\"160\" cy=\"225\" r=\"4\" fill=\"#f59e0b\"/><text x=\"212\" y=\"66\" font-family=\"Arial\" font-size=\"12\">max (1/2,1/2e)</text><text x=\"286\" y=\"133\" font-family=\"Arial\" font-size=\"12\">inflection (1,1/2e²)</text><text x=\"406\" y=\"220\" font-family=\"Arial\" font-size=\"13\">x</text><text x=\"166\" y=\"23\" font-family=\"Arial\" font-size=\"13\">y</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 003",
+            "page": "142-143, 156-157",
+            "course": "Advanced",
+            "sourceQuestion": "3"
+          }
+        },
+        {
+          "id": "y12a-advanced-003-app-q07",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Hot tea is poured into a cup. The temperature of the tea can be modelled by T = 25 + 70(1.5)^(−0.4t), where T is the temperature of the tea, in degrees Celsius, t minutes after it is poured.",
+          "parts": [
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q07-a",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "What is the temperature of the tea 4 minutes after it has been poured?",
+              "options": [
+                {
+                  "text": "\\(25+70(1.5)^{-1.6}\\,^{\\circ}\\!C\\)"
+                },
+                {
+                  "text": "\\(25+70(1.5)^{1.6}\\,^{\\circ}\\!C\\)"
+                },
+                {
+                  "text": "\\(70(1.5)^{-1.6}\\,^{\\circ}\\!C\\)"
+                },
+                {
+                  "text": "\\(25+70(1.5)^{-0.4}\\,^{\\circ}\\!C\\)"
+                }
+              ],
+              "answer": 0,
+              "hint": "Substitute t=4 into the given temperature model. The exponent is −0.4×4.",
+              "steps": [
+                {
+                  "explain": "Use the model T=25+70(1.5)^(−0.4t).",
+                  "work": "\\(T(4)=25+70(1.5)^{-0.4(4)}\\)"
+                },
+                {
+                  "explain": "Multiply the exponent: −0.4×4=−1.6.",
+                  "work": "\\(T(4)=25+70(1.5)^{-1.6}\\)"
+                },
+                {
+                  "explain": "Evaluate if a decimal is wanted: T(4)≈55.8°C.",
+                  "work": "\\(\\boxed{T(4)\\approx55.8^{\\circ}\\mathrm C}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q07-b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "At what rate is the tea cooling 4 minutes after it has been poured?",
+              "options": [
+                {
+                  "text": "\\(-28\\ln(1.5)(1.5)^{-1.6}\\,^{\\circ}\\!C/\text{min}\\)"
+                },
+                {
+                  "text": "\\(28\\ln(1.5)(1.5)^{-1.6}\\,^{\\circ}\\!C/\text{min}\\)"
+                },
+                {
+                  "text": "\\(-70(1.5)^{-1.6}\\,^{\\circ}\\!C/\text{min}\\)"
+                },
+                {
+                  "text": "\\(-0.4(1.5)^{-1.6}\\,^{\\circ}\\!C/\text{min}\\)"
+                }
+              ],
+              "answer": 0,
+              "hint": "Differentiate T(t) with the chain rule, then substitute t=4. The rate is negative because the tea is cooling.",
+              "steps": [
+                {
+                  "explain": "Differentiate the exponential term. The derivative of (1.5)^(−0.4t) includes ln(1.5) and the inner derivative −0.4.",
+                  "work": "\\(T\\prime(t)=70(1.5)^{-0.4t}\\ln(1.5)(-0.4)\\)"
+                },
+                {
+                  "explain": "Combine the constants.",
+                  "work": "\\(T\\prime(t)=-28\\ln(1.5)(1.5)^{-0.4t}\\)"
+                },
+                {
+                  "explain": "Substitute t=4.",
+                  "work": "\\(T\\prime(4)=-28\\ln(1.5)(1.5)^{-1.6}\\approx-12.4^{\\circ}\\mathrm C/\\text{min}\\)"
+                },
+                {
+                  "explain": "The negative value confirms the temperature is falling.",
+                  "work": "\\(\\boxed{-28\\ln(1.5)(1.5)^{-1.6}\\ ^{\\circ}\\mathrm C/\\text{min}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q07-c",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "How long after the tea is poured will it take for its temperature to reach 55°C?",
+              "options": [
+                {
+                  "text": "\\(\frac{\\ln(7/3)}{0.4\\ln(1.5)}\text{ min}\\)"
+                },
+                {
+                  "text": "\\(\frac{\\ln(3/7)}{0.4\\ln(1.5)}\text{ min}\\)"
+                },
+                {
+                  "text": "\\(4\text{ min}\\)"
+                },
+                {
+                  "text": "\\(\frac{7}{3}\text{ min}\\)"
+                }
+              ],
+              "answer": 0,
+              "hint": "Set T=55, isolate the exponential, then take natural logarithms.",
+              "steps": [
+                {
+                  "explain": "Set the model equal to 55°C.",
+                  "work": "\\(55=25+70(1.5)^{-0.4t}\\)"
+                },
+                {
+                  "explain": "Subtract 25 and divide by 70.",
+                  "work": "\\((1.5)^{-0.4t}=\\frac{30}{70}=\\frac37\\)"
+                },
+                {
+                  "explain": "Take natural logarithms and solve for t.",
+                  "work": "\\(-0.4t\\ln(1.5)=\\ln(\\frac37)\\Rightarrow t=\\frac{\\ln(7/3)}{0.4\\ln(1.5)}\\)"
+                },
+                {
+                  "explain": "This is approximately 6.97 minutes.",
+                  "work": "\\(\\boxed{t\\approx6.97\\text{ min}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 003",
+            "page": "142-143, 156-157",
+            "course": "Advanced",
+            "sourceQuestion": "7"
+          }
+        },
+        {
+          "id": "y12a-advanced-003-app-q23",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Some yabbies are introduced into a small dam. The size of the population, y, can be modelled by y = 200/(1 + 19e^(−0.5t)), where t is the time in months after the yabbies are introduced into the dam.",
+          "parts": [
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q23-i",
+              "type": "review",
+              "difficulty": "medium",
+              "stem": "Show that the rate of growth of the size of the population is 1900e^(−0.5t)/(1 + 19e^(−0.5t))².",
+              "answer": "y′=1900e^(−0.5t)/(1+19e^(−0.5t))².",
+              "manual": true,
+              "hint": "Differentiate 200(1+19e^(−0.5t))⁻¹ using the chain rule.",
+              "steps": [
+                {
+                  "explain": "Rewrite the model as a power of the denominator.",
+                  "work": "\\(y=200(1+19e^{-0.5t})^{-1}\\)"
+                },
+                {
+                  "explain": "Differentiate the outside power and multiply by the derivative of the inside expression.",
+                  "work": "\\(y\\prime=200(-1)(1+19e^{-0.5t})^{-2}(19)(-0.5)e^{-0.5t}\\)"
+                },
+                {
+                  "explain": "The two negative factors give a positive rate. Simplify the constants 200×19×0.5=1900.",
+                  "work": "\\(\\boxed{y\\prime=\\frac{1900e^{-0.5t}}{(1+19e^{-0.5t})^2}}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 280\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 230H410M75 255V20\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M76 210 C110 205 125 166 155 127 C186 90 220 69 258 58 C310 42 361 39 402 38\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><path d=\"M75 38H405\" stroke=\"#f59e0b\" stroke-dasharray=\"5 4\"/><text x=\"47\" y=\"44\" font-family=\"Arial\" font-size=\"12\">200</text><text x=\"46\" y=\"214\" font-family=\"Arial\" font-size=\"12\">10</text><text x=\"403\" y=\"228\" font-family=\"Arial\" font-size=\"13\">t</text><text x=\"82\" y=\"22\" font-family=\"Arial\" font-size=\"13\">y</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q23-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the range of the function y, justifying your answer.",
+              "options": [
+                {
+                  "text": "\\(10\\le y<200\\)"
+                },
+                {
+                  "text": "\\(0<y\\le200\\)"
+                },
+                {
+                  "text": "\\(10<y\\le200\\)"
+                },
+                {
+                  "text": "\\(0\\le y<200\\)"
+                }
+              ],
+              "answer": 0,
+              "hint": "Check the starting population at t=0 and the limiting value as t grows. The model is defined for t≥0.",
+              "steps": [
+                {
+                  "explain": "At t=0, e⁰=1, so the population starts at 200/(1+19).",
+                  "work": "\\(y(0)=\\frac{200}{20}=10\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 280\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 230H410M75 255V20\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M76 210 C110 205 125 166 155 127 C186 90 220 69 258 58 C310 42 361 39 402 38\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><path d=\"M75 38H405\" stroke=\"#f59e0b\" stroke-dasharray=\"5 4\"/><text x=\"47\" y=\"44\" font-family=\"Arial\" font-size=\"12\">200</text><text x=\"46\" y=\"214\" font-family=\"Arial\" font-size=\"12\">10</text><text x=\"403\" y=\"228\" font-family=\"Arial\" font-size=\"13\">t</text><text x=\"82\" y=\"22\" font-family=\"Arial\" font-size=\"13\">y</text></svg>"
+                  }
+                },
+                {
+                  "explain": "As t increases, e^(−0.5t) decreases toward zero, so the denominator approaches 1. The population approaches 200 from below.",
+                  "work": "\\(\\lim_{t\\to\\infty}y(t)=200\\)"
+                },
+                {
+                  "explain": "The initial value 10 is included, while 200 is approached but never reached at finite t.",
+                  "work": "\\(\\boxed{10\\le y<200}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 280\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 230H410M75 255V20\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M76 210 C110 205 125 166 155 127 C186 90 220 69 258 58 C310 42 361 39 402 38\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><path d=\"M75 38H405\" stroke=\"#f59e0b\" stroke-dasharray=\"5 4\"/><text x=\"47\" y=\"44\" font-family=\"Arial\" font-size=\"12\">200</text><text x=\"46\" y=\"214\" font-family=\"Arial\" font-size=\"12\">10</text><text x=\"403\" y=\"228\" font-family=\"Arial\" font-size=\"13\">t</text><text x=\"82\" y=\"22\" font-family=\"Arial\" font-size=\"13\">y</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q23-iii",
+              "type": "review",
+              "difficulty": "medium",
+              "stem": "Show that the rate of growth of the size of the population can be rewritten as (y/400)(200 − y).",
+              "answer": "y′=y(200−y)/400.",
+              "manual": true,
+              "hint": "Use y=200/(1+19e^(−0.5t)) to rewrite 200−y, then multiply the two expressions.",
+              "steps": [
+                {
+                  "explain": "Start with the population model. Subtract it from 200 using a common denominator.",
+                  "work": "\\(200-y=200-\\frac{200}{1+19e^{-0.5t}}=\\frac{3800e^{-0.5t}}{1+19e^{-0.5t}}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 280\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 230H410M75 255V20\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M76 210 C110 205 125 166 155 127 C186 90 220 69 258 58 C310 42 361 39 402 38\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><path d=\"M75 38H405\" stroke=\"#f59e0b\" stroke-dasharray=\"5 4\"/><text x=\"47\" y=\"44\" font-family=\"Arial\" font-size=\"12\">200</text><text x=\"46\" y=\"214\" font-family=\"Arial\" font-size=\"12\">10</text><text x=\"403\" y=\"228\" font-family=\"Arial\" font-size=\"13\">t</text><text x=\"82\" y=\"22\" font-family=\"Arial\" font-size=\"13\">y</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Multiply y by (200−y) and divide by 400.",
+                  "work": "\\(\\frac{y}{400}(200-y)=\\frac{1}{400}\\cdot\\frac{200}{1+19e^{-0.5t}}\\cdot\\frac{3800e^{-0.5t}}{1+19e^{-0.5t}}\\)"
+                },
+                {
+                  "explain": "Simplify 200×3800/400=1900. This is the derivative from part (i).",
+                  "work": "\\(\\frac{y}{400}(200-y)=\\frac{1900e^{-0.5t}}{(1+19e^{-0.5t})^2}=y\\prime\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 280\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 230H410M75 255V20\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M76 210 C110 205 125 166 155 127 C186 90 220 69 258 58 C310 42 361 39 402 38\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><path d=\"M75 38H405\" stroke=\"#f59e0b\" stroke-dasharray=\"5 4\"/><text x=\"47\" y=\"44\" font-family=\"Arial\" font-size=\"12\">200</text><text x=\"46\" y=\"214\" font-family=\"Arial\" font-size=\"12\">10</text><text x=\"403\" y=\"228\" font-family=\"Arial\" font-size=\"13\">t</text><text x=\"82\" y=\"22\" font-family=\"Arial\" font-size=\"13\">y</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q23-iv",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Hence, find the size of the population when it is growing at its fastest rate.",
+              "options": [
+                {
+                  "text": "100 yabbies"
+                },
+                {
+                  "text": "50 yabbies"
+                },
+                {
+                  "text": "190 yabbies"
+                },
+                {
+                  "text": "200 yabbies"
+                }
+              ],
+              "answer": 0,
+              "hint": "The growth rate is a quadratic in y. Complete the square or use the vertex of y(200−y)/400.",
+              "steps": [
+                {
+                  "explain": "Use the expression for growth rate from part (iii).",
+                  "work": "\\(y\\prime=\\frac{y}{400}(200-y)\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 280\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 230H410M75 255V20\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M76 210 C110 205 125 166 155 127 C186 90 220 69 258 58 C310 42 361 39 402 38\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><path d=\"M75 38H405\" stroke=\"#f59e0b\" stroke-dasharray=\"5 4\"/><text x=\"47\" y=\"44\" font-family=\"Arial\" font-size=\"12\">200</text><text x=\"46\" y=\"214\" font-family=\"Arial\" font-size=\"12\">10</text><text x=\"403\" y=\"228\" font-family=\"Arial\" font-size=\"13\">t</text><text x=\"82\" y=\"22\" font-family=\"Arial\" font-size=\"13\">y</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Rewrite the numerator by completing the square.",
+                  "work": "\\(y(200-y)=10000-(y-100)^2\\)"
+                },
+                {
+                  "explain": "This is largest when the square term is zero, at y=100.",
+                  "work": "\\(\\max y\\prime\\text{ occurs when }(y-100)^2=0\\Rightarrow y=100\\)"
+                },
+                {
+                  "explain": "The population grows fastest when it reaches 100 yabbies.",
+                  "work": "\\(\\boxed{100\\text{ yabbies}}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 280\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 230H410M75 255V20\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M76 210 C110 205 125 166 155 127 C186 90 220 69 258 58 C310 42 361 39 402 38\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><path d=\"M75 38H405\" stroke=\"#f59e0b\" stroke-dasharray=\"5 4\"/><text x=\"47\" y=\"44\" font-family=\"Arial\" font-size=\"12\">200</text><text x=\"46\" y=\"214\" font-family=\"Arial\" font-size=\"12\">10</text><text x=\"403\" y=\"228\" font-family=\"Arial\" font-size=\"13\">t</text><text x=\"82\" y=\"22\" font-family=\"Arial\" font-size=\"13\">y</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 003",
+            "page": "145-146, 158-159",
+            "course": "Advanced",
+            "sourceQuestion": "23"
+          }
+        },
+        {
+          "id": "y12a-advanced-003-app-q26",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the coordinates of the stationary point on the graph y = e^x − ex, and determine its nature.",
+          "options": [
+            {
+              "text": "(1,0), minimum"
+            },
+            {
+              "text": "(1,0), maximum"
+            },
+            {
+              "text": "(0,1), minimum"
+            },
+            {
+              "text": "(e,0), maximum"
+            }
+          ],
+          "answer": 0,
+          "hint": "Differentiate and solve y′=0. Check y′′ to classify the stationary point.",
+          "steps": [
+            {
+              "explain": "Differentiate y=e^x−ex.",
+              "work": "\\(y\\prime=e^x-e\\)"
+            },
+            {
+              "explain": "Set the derivative to zero.",
+              "work": "\\(e^x-e=0\\Rightarrow e^x=e\\Rightarrow x=1\\)"
+            },
+            {
+              "explain": "Substitute x=1 into y.",
+              "work": "\\(y(1)=e-e=0\\)"
+            },
+            {
+              "explain": "The second derivative is e^x, which is positive for all x. Therefore the stationary point is a minimum.",
+              "work": "\\(y\\prime\\prime=e^x>0\\Rightarrow\\boxed{(1,0)\\text{ minimum}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 003",
+            "page": "145-146, 158-159",
+            "course": "Advanced",
+            "sourceQuestion": "q26"
+          }
+        },
+        {
+          "id": "y12a-advanced-003-app-q34",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Consider the function f(x) = e^(−x) − 2e^(−2x).",
+          "parts": [
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q34-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Consider the function f(x)=e^(−x)−2e^(−2x). Find f′(x).",
+              "options": [
+                {
+                  "text": "\\(-e^{-x}+4e^{-2x}\\)"
+                },
+                {
+                  "text": "\\(-e^{-x}-4e^{-2x}\\)"
+                },
+                {
+                  "text": "\\(e^{-x}+2e^{-2x}\\)"
+                },
+                {
+                  "text": "\\(e^x-4e^{2x}\\)"
+                }
+              ],
+              "answer": 0,
+              "hint": "Differentiate each exponential using the chain rule.",
+              "steps": [
+                {
+                  "explain": "Differentiate e^(−x). Its inner derivative is −1.",
+                  "work": "\\(\\frac{d}{dx}e^{-x}=-e^{-x}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 280\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M35 220H405M205 255V20\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M42 65 C85 87 126 128 162 184 C193 230 220 196 255 142 C292 90 342 61 400 46\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><circle cx=\"205\" cy=\"220\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"278\" cy=\"157\" r=\"5\" fill=\"#ef4444\"/><text x=\"210\" y=\"238\" font-family=\"Arial\" font-size=\"12\">(0,−1)</text><text x=\"282\" y=\"151\" font-family=\"Arial\" font-size=\"12\">(ln 4,1/8)</text><text x=\"406\" y=\"216\" font-family=\"Arial\" font-size=\"13\">x</text><text x=\"211\" y=\"22\" font-family=\"Arial\" font-size=\"13\">y</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Differentiate −2e^(−2x). The chain rule contributes another factor of −2.",
+                  "work": "\\(\\frac{d}{dx}[-2e^{-2x}]=-2(-2)e^{-2x}=4e^{-2x}\\)"
+                },
+                {
+                  "explain": "Combine the terms.",
+                  "work": "\\(\\boxed{f\\prime(x)=-e^{-x}+4e^{-2x}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q34-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The graph y=f(x) has one maximum turning point. Find its coordinates.",
+              "options": [
+                {
+                  "text": "\\((\\ln4,\frac18)\\)"
+                },
+                {
+                  "text": "\\((\\ln2,0)\\)"
+                },
+                {
+                  "text": "\\((0,-1)\\)"
+                },
+                {
+                  "text": "\\((\\ln4,-\frac18)\\)"
+                }
+              ],
+              "answer": 0,
+              "hint": "Set f′=0, solve for x, substitute into f, and classify using the sign change or f′′.",
+              "steps": [
+                {
+                  "explain": "Use f′(x)=−e^(−x)+4e^(−2x) and set it equal to zero.",
+                  "work": "\\(-e^{-x}+4e^{-2x}=0\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 280\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M35 220H405M205 255V20\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M42 65 C85 87 126 128 162 184 C193 230 220 196 255 142 C292 90 342 61 400 46\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><circle cx=\"205\" cy=\"220\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"278\" cy=\"157\" r=\"5\" fill=\"#ef4444\"/><text x=\"210\" y=\"238\" font-family=\"Arial\" font-size=\"12\">(0,−1)</text><text x=\"282\" y=\"151\" font-family=\"Arial\" font-size=\"12\">(ln 4,1/8)</text><text x=\"406\" y=\"216\" font-family=\"Arial\" font-size=\"13\">x</text><text x=\"211\" y=\"22\" font-family=\"Arial\" font-size=\"13\">y</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Factor e^(−2x), which is never zero.",
+                  "work": "\\(e^{-2x}(4-e^x)=0\\Rightarrow e^x=4\\Rightarrow x=\\ln4\\)"
+                },
+                {
+                  "explain": "Substitute into f. Since e^(−ln4)=1/4 and e^(−2ln4)=1/16:",
+                  "work": "\\(f(\\ln4)=\\frac14-2(\\frac1{16})=\\frac18\\)"
+                },
+                {
+                  "explain": "The derivative changes from positive to negative at ln4, so this is the maximum.",
+                  "work": "\\(\\boxed{(\\ln4,\\frac18)}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 280\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M35 220H405M205 255V20\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M42 65 C85 87 126 128 162 184 C193 230 220 196 255 142 C292 90 342 61 400 46\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><circle cx=\"205\" cy=\"220\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"278\" cy=\"157\" r=\"5\" fill=\"#ef4444\"/><text x=\"210\" y=\"238\" font-family=\"Arial\" font-size=\"12\">(0,−1)</text><text x=\"282\" y=\"151\" font-family=\"Arial\" font-size=\"12\">(ln 4,1/8)</text><text x=\"406\" y=\"216\" font-family=\"Arial\" font-size=\"13\">x</text><text x=\"211\" y=\"22\" font-family=\"Arial\" font-size=\"13\">y</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q34-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Evaluate f(ln 2).",
+              "options": [
+                {
+                  "text": "0"
+                },
+                {
+                  "text": "1/2"
+                },
+                {
+                  "text": "−1/2"
+                },
+                {
+                  "text": "1/8"
+                }
+              ],
+              "answer": 0,
+              "hint": "Substitute x=ln2 and simplify e^(−ln2) and e^(−2ln2).",
+              "steps": [
+                {
+                  "explain": "Substitute x=ln2 into the function.",
+                  "work": "\\(f(\\ln2)=e^{-\\ln2}-2e^{-2\\ln2}\\)"
+                },
+                {
+                  "explain": "Use e^(−ln2)=1/2 and e^(−2ln2)=1/4.",
+                  "work": "\\(f(\\ln2)=\\frac12-2(\\frac14)=0\\)"
+                },
+                {
+                  "explain": "Therefore the value is zero.",
+                  "work": "\\(\\boxed{0}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q34-iv",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Describe the behaviour of f(x) as x→∞.",
+              "options": [
+                {
+                  "text": "It approaches 0 from above."
+                },
+                {
+                  "text": "It approaches 0 from below."
+                },
+                {
+                  "text": "It approaches 1."
+                },
+                {
+                  "text": "It increases without bound."
+                }
+              ],
+              "answer": 0,
+              "hint": "As x→∞, both e^(−x) and e^(−2x) tend to zero. Check the sign of f for large x.",
+              "steps": [
+                {
+                  "explain": "Both exponential terms tend to zero as x becomes large.",
+                  "work": "\\(\\lim_{x\\to\\infty}e^{-x}=0,\\quad\\lim_{x\\to\\infty}e^{-2x}=0\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 280\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M35 220H405M205 255V20\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M42 65 C85 87 126 128 162 184 C193 230 220 196 255 142 C292 90 342 61 400 46\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><circle cx=\"205\" cy=\"220\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"278\" cy=\"157\" r=\"5\" fill=\"#ef4444\"/><text x=\"210\" y=\"238\" font-family=\"Arial\" font-size=\"12\">(0,−1)</text><text x=\"282\" y=\"151\" font-family=\"Arial\" font-size=\"12\">(ln 4,1/8)</text><text x=\"406\" y=\"216\" font-family=\"Arial\" font-size=\"13\">x</text><text x=\"211\" y=\"22\" font-family=\"Arial\" font-size=\"13\">y</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Factor f=e^(−2x)(e^x−2). For large x, both factors are positive, so f approaches zero from above.",
+                  "work": "\\(f(x)=e^{-2x}(e^x-2)>0\\text{ for }x>\\ln2\\)"
+                },
+                {
+                  "explain": "Thus the horizontal asymptote is y=0, approached from above.",
+                  "work": "\\(\\boxed{f(x)\\to0^+}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q34-v",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the y-intercept of the graph y=f(x).",
+              "options": [
+                {
+                  "text": "(0,−1)"
+                },
+                {
+                  "text": "(−1,0)"
+                },
+                {
+                  "text": "(0,1)"
+                },
+                {
+                  "text": "(1,0)"
+                }
+              ],
+              "answer": 0,
+              "hint": "At the y-intercept, x=0.",
+              "steps": [
+                {
+                  "explain": "Set x=0 in f(x).",
+                  "work": "\\(f(0)=e^0-2e^0\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 280\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M35 220H405M205 255V20\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M42 65 C85 87 126 128 162 184 C193 230 220 196 255 142 C292 90 342 61 400 46\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><circle cx=\"205\" cy=\"220\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"278\" cy=\"157\" r=\"5\" fill=\"#ef4444\"/><text x=\"210\" y=\"238\" font-family=\"Arial\" font-size=\"12\">(0,−1)</text><text x=\"282\" y=\"151\" font-family=\"Arial\" font-size=\"12\">(ln 4,1/8)</text><text x=\"406\" y=\"216\" font-family=\"Arial\" font-size=\"13\">x</text><text x=\"211\" y=\"22\" font-family=\"Arial\" font-size=\"13\">y</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Since e⁰=1, f(0)=1−2=−1.",
+                  "work": "\\(f(0)=-1\\)"
+                },
+                {
+                  "explain": "The y-intercept is (0,−1).",
+                  "work": "\\(\\boxed{(0,-1)}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q34-vi",
+              "type": "review",
+              "difficulty": "medium",
+              "stem": "Sketch the graph y=f(x) showing the features from parts ii–v. You are not required to find any points of inflexion.",
+              "answer": "The graph crosses the x-axis at x=ln2, has y-intercept (0,−1), maximum (ln4,1/8), and approaches y=0 from above as x→∞.",
+              "manual": true,
+              "hint": "Mark both intercepts, the maximum, and the horizontal asymptote. Use the sign of f on either side of x=ln2.",
+              "steps": [
+                {
+                  "explain": "Find the x-intercept by solving f(x)=0. Factoring gives e^(−2x)(e^x−2)=0, so x=ln2.",
+                  "work": "\\(x=\\ln2\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 280\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M35 220H405M205 255V20\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M42 65 C85 87 126 128 162 184 C193 230 220 196 255 142 C292 90 342 61 400 46\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><circle cx=\"205\" cy=\"220\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"278\" cy=\"157\" r=\"5\" fill=\"#ef4444\"/><text x=\"210\" y=\"238\" font-family=\"Arial\" font-size=\"12\">(0,−1)</text><text x=\"282\" y=\"151\" font-family=\"Arial\" font-size=\"12\">(ln 4,1/8)</text><text x=\"406\" y=\"216\" font-family=\"Arial\" font-size=\"13\">x</text><text x=\"211\" y=\"22\" font-family=\"Arial\" font-size=\"13\">y</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Mark the y-intercept (0,−1) and the maximum (ln4,1/8).",
+                  "work": "\\((0,-1),\\quad(\\ln4,\\frac18)\\)"
+                },
+                {
+                  "explain": "As x→∞, the curve approaches the horizontal asymptote y=0 from above. Draw a smooth curve through all these features.",
+                  "work": "\\(y=0\\text{ is a horizontal asymptote}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 280\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M35 220H405M205 255V20\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M42 65 C85 87 126 128 162 184 C193 230 220 196 255 142 C292 90 342 61 400 46\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><circle cx=\"205\" cy=\"220\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"278\" cy=\"157\" r=\"5\" fill=\"#ef4444\"/><text x=\"210\" y=\"238\" font-family=\"Arial\" font-size=\"12\">(0,−1)</text><text x=\"282\" y=\"151\" font-family=\"Arial\" font-size=\"12\">(ln 4,1/8)</text><text x=\"406\" y=\"216\" font-family=\"Arial\" font-size=\"13\">x</text><text x=\"211\" y=\"22\" font-family=\"Arial\" font-size=\"13\">y</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 003",
+            "page": "147-159",
+            "course": "Advanced",
+            "sourceQuestion": "34"
+          }
+        },
+        {
+          "id": "y12a-advanced-003-app-q40",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Light intensity is measured in lux. The light intensity at the surface of a lake is 6000 lux. The light intensity, I lux, a distance s metres below the surface of the lake is given by I = Ae^(−ks), where A and k are constants.",
+          "parts": [
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q40-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Write down the value of A.",
+              "options": [
+                {
+                  "text": "6000"
+                },
+                {
+                  "text": "1000"
+                },
+                {
+                  "text": "6"
+                },
+                {
+                  "text": "0"
+                }
+              ],
+              "answer": 0,
+              "hint": "At the lake surface, s=0 and the intensity is 6000 lux.",
+              "steps": [
+                {
+                  "explain": "Use I=Ae^(−ks) at the surface, where s=0.",
+                  "work": "\\(6000=Ae^0\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 300 180\"><path d=\"M30 55H270\" stroke=\"#0284c7\" stroke-width=\"3\"/><path d=\"M90 55V145\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"32\" y=\"42\" font-family=\"Arial\" font-size=\"13\">lake surface</text><text x=\"100\" y=\"105\" font-family=\"Arial\" font-size=\"13\">depth s</text><text x=\"103\" y=\"52\" font-family=\"Arial\" font-size=\"12\">I=6000</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Since e⁰=1, A=6000.",
+                  "work": "\\(\\boxed{A=6000}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q40-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The light intensity 6 metres below the surface of the lake is 1000 lux. Find the value of k.",
+              "options": [
+                {
+                  "text": "\\(\\ln6/6\\)"
+                },
+                {
+                  "text": "\\(6/\\ln6\\)"
+                },
+                {
+                  "text": "\\(\\ln(1/6)/6\\)"
+                },
+                {
+                  "text": "\\(\\ln6\\)"
+                }
+              ],
+              "answer": 0,
+              "hint": "Substitute I=1000 and s=6 into I=6000e^(−ks), then take natural logarithms.",
+              "steps": [
+                {
+                  "explain": "Use A=6000 and the data at s=6.",
+                  "work": "\\(1000=6000e^{-6k}\\)"
+                },
+                {
+                  "explain": "Divide by 6000.",
+                  "work": "\\(e^{-6k}=\\frac16\\)"
+                },
+                {
+                  "explain": "Take natural logs and solve for k.",
+                  "work": "\\(-6k=\\ln(\\frac16)=-\\ln6\\Rightarrow k=\\frac{\\ln6}{6}\\)"
+                },
+                {
+                  "explain": "Thus k is positive, as expected for decreasing light intensity with depth.",
+                  "work": "\\(\\boxed{k=\\frac{\\ln6}{6}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q40-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "At what rate, in lux per metre, is the light intensity decreasing 6 metres below the surface of the lake?",
+              "options": [
+                {
+                  "text": "\\(\frac{1000\\ln6}{6}\text{ lux/m}\\)"
+                },
+                {
+                  "text": "\\(-1000\\ln6\text{ lux/m}\\)"
+                },
+                {
+                  "text": "\\(1000\text{ lux/m}\\)"
+                },
+                {
+                  "text": "\\(\frac{6000\\ln6}{6}\text{ lux/m}\\)"
+                }
+              ],
+              "answer": 0,
+              "hint": "Differentiate I(s)=6000e^(−ks). At s=6 use I=1000 and k=ln6/6. “Rate of decreasing” is the positive magnitude.",
+              "steps": [
+                {
+                  "explain": "Differentiate with respect to depth s.",
+                  "work": "\\(\\frac{dI}{ds}=-kAe^{-ks}=-kI\\)"
+                },
+                {
+                  "explain": "At s=6, I=1000 and k=ln6/6.",
+                  "work": "\\(\\frac{dI}{ds}=-\\frac{\\ln6}{6}(1000)\\)"
+                },
+                {
+                  "explain": "The derivative is negative; the positive rate of decrease is its magnitude.",
+                  "work": "\\(\\boxed{\\frac{1000\\ln6}{6}\\approx298.6\\text{ lux/m}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 003",
+            "page": "147-160",
+            "course": "Advanced",
+            "sourceQuestion": "40"
+          }
         }
       ]
     },
@@ -16801,6 +18488,191 @@
           "alsoIn": [
             "exam:year12ch5k"
           ]
+        },
+        {
+          "id": "y12a-advanced-002-p126-q02",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the derivative of \\(7^x\\).",
+          "options": [
+            "\\(7^x\\)",
+            "\\(\\dfrac{7^x}{\\ln7}\\)",
+            "\\((\\ln7)7^x\\)",
+            "\\(\\log_7x\\)"
+          ],
+          "answer": 2,
+          "hint": "For an exponential with base (a), use \\((a^x)prime=a^x\\ln a\\).",
+          "keyPoints": [],
+          "steps": [
+            {
+              "explain": "Use the rule \\((a^x)prime=a^x\\ln a\\).",
+              "work": "\\((a^x)prime=a^x\\ln a\\)"
+            },
+            {
+              "explain": "Here \\(a=7\\), so \\((7^x)prime=7^x\\ln 7\\).",
+              "work": "\\(a=7\\)"
+            },
+            {
+              "explain": "The factor \\(\\ln 7\\) is required when the base is not \\(e\\).",
+              "work": "\\(\\ln 7\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "126-127",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p126-q05",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find \\(f\\prime(1)\\) if \\(f(x)=5^x\\).",
+          "options": [
+            "\\(5\\)",
+            "\\(5\\ln 5\\)",
+            "\\(\\ln 5\\)",
+            "\\(5^4\\ln 5\\)"
+          ],
+          "answer": 1,
+          "hint": "Differentiate \\(5^x\\) using \\((a^x)prime=a^x\\ln a\\), then put \\(x=1\\).",
+          "keyPoints": [
+            {
+              "text": "Find \\(f\\prime(1)\\) if \\(f(x)=5^x\\).",
+              "note": "Focus on this given expression or condition before choosing the derivative rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Differentiate: \\(fprime(x)=5^x\\ln5\\).",
+              "work": "\\(fprime(x)=5^x\\ln5\\)"
+            },
+            {
+              "explain": "Substitute \\(x=1\\): \\(fprime(1)=5^1\\ln5\\).",
+              "work": "\\(x=1\\)"
+            },
+            {
+              "explain": "Thus \\(\\boxed{fprime(1)=5\\ln5}\\).",
+              "work": "\\(\\boxed{fprime(1)=5\\ln5}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "126-127",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p126-q10-i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the equation of the tangent to \\(y=e^x\\) at \\(x=0\\).",
+          "options": [
+            "\\(y=x+1\\)",
+            "\\(y=x-1\\)",
+            "\\(y=e^x\\)",
+            "\\(y=1\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the point and gradient at \\(x=0\\), then use \\(y-y_1=m(x-x_1)\\).",
+          "keyPoints": [],
+          "steps": [
+            {
+              "explain": "At \\(x=0\\), \\(y=e^0=1\\), so the point is \\((0,1)\\).",
+              "work": "\\(x=0\\)"
+            },
+            {
+              "explain": "Differentiate: \\(yprime=e^x\\), hence the gradient at 0 is \\(m=e^0=1\\).",
+              "work": "\\(yprime=e^x\\)"
+            },
+            {
+              "explain": "Use point-slope form: \\(y-1=1(x-0)\\), so \\(\\boxed{y=x+1}\\).",
+              "work": "\\(y-1=1(x-0)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "126-127",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p126-q10-ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the equation of the tangent to \\(y=\\ln x\\) at \\(x=1\\).",
+          "options": [
+            "\\(y=x-1\\)",
+            "\\(y=x+1\\)",
+            "\\(y=\\ln x\\)",
+            "\\(y=1-x\\)"
+          ],
+          "answer": 0,
+          "hint": "At \\(x=1\\), find \\(y\\) and the derivative \\(yprime=1/x\\).",
+          "keyPoints": [],
+          "steps": [
+            {
+              "explain": "The point is \\((1,\\ln1)=(1,0)\\).",
+              "work": "\\((1,\\ln1)=(1,0)\\)"
+            },
+            {
+              "explain": "The gradient is \\(yprime(1)=1/1=1\\).",
+              "work": "\\(yprime(1)=1/1=1\\)"
+            },
+            {
+              "explain": "Use point-slope form: \\(y-0=1(x-1)\\), so \\(\\boxed{y=x-1}\\).",
+              "work": "\\(y-0=1(x-1)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "126-127",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p126-q10-iii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What conclusion can be made about the two tangents?",
+          "options": [
+            "They are parallel.",
+            "They are perpendicular.",
+            "They have the same equation.",
+            "They intersect at right angles."
+          ],
+          "answer": 0,
+          "hint": "Compare the gradients of the two tangent lines.",
+          "keyPoints": [],
+          "steps": [
+            {
+              "explain": "The tangent to \\(y=e^x\\) has gradient 1.",
+              "work": "\\(y=e^x\\)"
+            },
+            {
+              "explain": "The tangent to \\(y=\\ln x\\) also has gradient 1.",
+              "work": "\\(y=\\ln x\\)"
+            },
+            {
+              "explain": "Distinct lines with equal gradients are parallel, so the two tangents are parallel.",
+              "work": ""
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "126-127",
+            "course": "Advanced"
+          }
         }
       ]
     },

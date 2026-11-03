@@ -690,6 +690,844 @@
               "work": "\\(\\boxed{v\\lt 0\\text{ for all }t\\ge0,\\text{ so the particle never rests}}\\)"
             }
           ]
+        },
+        {
+          "id": "y12a-advanced-003-p136-q11",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The graph shows the displacement x of a particle moving along a straight line as a function of time t. Which statement describes the motion of the particle at the point P?",
+          "options": [
+            "The velocity is negative and the acceleration is positive.",
+            "The velocity is negative and the acceleration is negative.",
+            "The velocity is positive and the acceleration is positive.",
+            "The velocity is positive and the acceleration is negative."
+          ],
+          "answer": 0,
+          "hint": "On a displacement-time graph, the tangent slope gives velocity. The way that slope changes gives acceleration.",
+          "steps": [
+            {
+              "explain": "At P the curve slopes down as time increases, so the tangent gradient and velocity are negative.",
+              "work": "\\(v=\\frac{dx}{dt}<0\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 260\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M40 220H390M55 242V28\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M55 220 C88 160 105 79 162 66 C206 54 236 108 263 155 C279 176 296 176 311 187 C335 206 365 212 390 151\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.4\"/><circle cx=\"279\" cy=\"176\" r=\"5\" fill=\"#f59e0b\"/><text x=\"287\" y=\"171\" font-family=\"Arial\" font-size=\"14\">P</text><text x=\"394\" y=\"217\" font-family=\"Arial\" font-size=\"14\">t</text><text x=\"60\" y=\"30\" font-family=\"Arial\" font-size=\"14\">x</text></svg>"
+              }
+            },
+            {
+              "explain": "The curve is bending upward near P as it approaches a local minimum. Its gradient is increasing, so acceleration is positive.",
+              "work": "\\(a=\\frac{d^2x}{dt^2}>0\\)"
+            },
+            {
+              "explain": "Therefore the particle has negative velocity and positive acceleration.",
+              "work": "\\(\\boxed{v<0,\\ a>0}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 260\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M40 220H390M55 242V28\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M55 220 C88 160 105 79 162 66 C206 54 236 108 263 155 C279 176 296 176 311 187 C335 206 365 212 390 151\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.4\"/><circle cx=\"279\" cy=\"176\" r=\"5\" fill=\"#f59e0b\"/><text x=\"287\" y=\"171\" font-family=\"Arial\" font-size=\"14\">P</text><text x=\"394\" y=\"217\" font-family=\"Arial\" font-size=\"14\">t</text><text x=\"60\" y=\"30\" font-family=\"Arial\" font-size=\"14\">x</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 003",
+            "page": "136-137, 139",
+            "course": "Advanced",
+            "sourceQuestion": "11"
+          }
+        },
+        {
+          "id": "y12a-advanced-003-p136-q12",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The displacement of a particle moving along the x-axis is given by \\(x=t-\\frac{1}{1+t}\\), where x is the displacement from the origin in metres, t is the time in seconds, and \\(t\\geq0\\).",
+          "parts": [
+            {
+              "id": "y12a-advanced-003-p136-q12-i",
+              "type": "review",
+              "difficulty": "medium",
+              "manual": true,
+              "stem": "Show that the acceleration of the particle is always negative.",
+              "answer": "\\(a(t)=-\\frac{2}{(1+t)^3}<0\\) for all \\(t\\geq0\\).",
+              "hint": "Differentiate displacement once to find velocity, then again to find acceleration. Use t≥0 to check the denominator is positive.",
+              "steps": [
+                {
+                  "explain": "Rewrite the reciprocal as a negative power.",
+                  "work": "\\(x=t-(1+t)^{-1}\\)"
+                },
+                {
+                  "explain": "Differentiate. The derivative of t is 1, and the chain rule gives a positive reciprocal square for the second term.",
+                  "work": "\\(v=\\frac{dx}{dt}=1+(1+t)^{-2}\\)"
+                },
+                {
+                  "explain": "Differentiate again using the chain rule. Since t≥0, (1+t)^3 is positive, while the numerator is negative.",
+                  "work": "\\(a=\\frac{dv}{dt}=-2(1+t)^{-3}=-\\frac{2}{(1+t)^3}<0\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-p136-q12-ii",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "What value does the velocity approach as t increases indefinitely?",
+              "options": [
+                {
+                  "text": "0"
+                },
+                {
+                  "text": "1 m s⁻¹"
+                },
+                {
+                  "text": "2 m s⁻¹"
+                },
+                {
+                  "text": "It increases without bound."
+                }
+              ],
+              "answer": 1,
+              "hint": "Use the velocity from part (i). As t becomes very large, what happens to the reciprocal-square term?",
+              "steps": [
+                {
+                  "explain": "From part (i), velocity is one plus a reciprocal square.",
+                  "work": "\\(v(t)=1+\\frac{1}{(1+t)^2}\\)"
+                },
+                {
+                  "explain": "As t increases without bound, the denominator becomes very large, so this fraction tends to zero.",
+                  "work": "\\(\\lim_{t\\to\\infty}\\frac{1}{(1+t)^2}=0\\)"
+                },
+                {
+                  "explain": "The remaining value is 1 metre per second.",
+                  "work": "\\(\\lim_{t\\to\\infty}v(t)=1\\text{ m s}^{-1}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 003",
+            "page": "136-137, 139",
+            "course": "Advanced",
+            "sourceQuestion": "12"
+          }
+        },
+        {
+          "id": "y12a-advanced-003-app-q06",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A particle is shot vertically upwards from a point 100 metres above ground level. The position of the particle, y metres above the ground after t seconds, is given by y(t) = −5t² + 70t + 100.",
+          "parts": [
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q06-a",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the maximum height above ground level reached by the particle.",
+              "options": [
+                {
+                  "text": "345 m"
+                },
+                {
+                  "text": "100 m"
+                },
+                {
+                  "text": "170 m"
+                },
+                {
+                  "text": "350 m"
+                }
+              ],
+              "answer": 0,
+              "hint": "At maximum height the vertical velocity is zero. Differentiate y(t), find that time, then substitute it into y.",
+              "steps": [
+                {
+                  "explain": "Differentiate the height function to get vertical velocity.",
+                  "work": "\\(v(t)=y\\prime(t)=-10t+70\\)"
+                },
+                {
+                  "explain": "At the maximum height, velocity is zero. Solve for t.",
+                  "work": "\\(-10t+70=0\\Rightarrow t=7\\text{ s}\\)"
+                },
+                {
+                  "explain": "Substitute t=7 into the position function.",
+                  "work": "\\(y(7)=-5(7)^2+70(7)+100=-245+490+100=345\\)"
+                },
+                {
+                  "explain": "So the maximum height is 345 metres.",
+                  "work": "\\(\\boxed{345\\text{ m}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q06-b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the velocity of the particle, in metres per second, immediately before it hits the ground, leaving your answer in the form a√b, where a and b are integers.",
+              "options": [
+                {
+                  "text": "\\(-10\\sqrt{69}\text{ m/s}\\)"
+                },
+                {
+                  "text": "\\(10\\sqrt{69}\text{ m/s}\\)"
+                },
+                {
+                  "text": "\\(-70\text{ m/s}\\)"
+                },
+                {
+                  "text": "\\(-10\\sqrt{29}\text{ m/s}\\)"
+                }
+              ],
+              "answer": 0,
+              "hint": "Set y=0 to find the positive time when it reaches ground level. Substitute that time into v=−10t+70.",
+              "steps": [
+                {
+                  "explain": "The particle hits the ground when y=0. Solve the quadratic and keep the positive time.",
+                  "work": "\\(-5t^2+70t+100=0\\Rightarrow t^2-14t-20=0\\Rightarrow t=7+\\sqrt{69}\\)"
+                },
+                {
+                  "explain": "Differentiate y(t) to get velocity v(t)=−10t+70.",
+                  "work": "\\(v(t)=-10t+70\\)"
+                },
+                {
+                  "explain": "Substitute the impact time.",
+                  "work": "\\(v=-10(7+\\sqrt{69})+70=-10\\sqrt{69}\\)"
+                },
+                {
+                  "explain": "The negative sign means the particle is moving downward immediately before impact.",
+                  "work": "\\(\\boxed{-10\\sqrt{69}\\text{ m/s}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 003",
+            "page": "142-143, 156-157",
+            "course": "Advanced",
+            "sourceQuestion": "6"
+          }
+        },
+        {
+          "id": "y12a-advanced-003-app-q15",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The displacement of a particle moving along the x-axis is given by x = t³/3 − 2t² + 3t, where x is the displacement from the origin in metres and t is the time in seconds, for t ≥ 0.",
+          "parts": [
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q15-i",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "What is the initial velocity of the particle?",
+              "options": [
+                {
+                  "text": "3 m/s"
+                },
+                {
+                  "text": "0 m/s"
+                },
+                {
+                  "text": "−2 m/s"
+                },
+                {
+                  "text": "1 m/s"
+                }
+              ],
+              "answer": 0,
+              "hint": "Velocity is dx/dt. Differentiate the displacement formula and substitute t=0.",
+              "steps": [
+                {
+                  "explain": "Differentiate each term in x=t³/3−2t²+3t.",
+                  "work": "\\(v=\\frac{dx}{dt}=t^2-4t+3\\)"
+                },
+                {
+                  "explain": "The initial time is t=0. Substitute it into v.",
+                  "work": "\\(v(0)=0-0+3=3\\)"
+                },
+                {
+                  "explain": "Thus the initial velocity is 3 metres per second.",
+                  "work": "\\(\\boxed{3\\text{ m/s}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q15-ii",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "At which times is the particle stationary?",
+              "options": [
+                {
+                  "text": "t=1 s and t=3 s"
+                },
+                {
+                  "text": "t=0 s and t=4 s"
+                },
+                {
+                  "text": "t=2 s only"
+                },
+                {
+                  "text": "t=3 s only"
+                }
+              ],
+              "answer": 0,
+              "hint": "A particle is stationary when its velocity is zero. Factor the expression for v(t).",
+              "steps": [
+                {
+                  "explain": "Use v(t)=t²−4t+3 from part (i).",
+                  "work": "\\(v(t)=t^2-4t+3\\)"
+                },
+                {
+                  "explain": "Factor the quadratic and set each factor to zero.",
+                  "work": "\\(t^2-4t+3=(t-1)(t-3)=0\\Rightarrow t=1,3\\)"
+                },
+                {
+                  "explain": "Both times are allowed because t≥0.",
+                  "work": "\\(\\boxed{t=1\\text{ s and }t=3\\text{ s}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q15-iii",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Find the position of the particle when the acceleration is zero.",
+              "options": [
+                {
+                  "text": "\\(\frac23\text{ m}\\)"
+                },
+                {
+                  "text": "\\(0\text{ m}\\)"
+                },
+                {
+                  "text": "\\(2\text{ m}\\)"
+                },
+                {
+                  "text": "\\(3\text{ m}\\)"
+                }
+              ],
+              "answer": 0,
+              "hint": "Differentiate velocity to get acceleration, find the time when it is zero, then substitute that time into x(t).",
+              "steps": [
+                {
+                  "explain": "Differentiate v(t)=t²−4t+3.",
+                  "work": "\\(a=\\frac{dv}{dt}=2t-4\\)"
+                },
+                {
+                  "explain": "Set acceleration equal to zero.",
+                  "work": "\\(2t-4=0\\Rightarrow t=2\\text{ s}\\)"
+                },
+                {
+                  "explain": "Substitute t=2 into the displacement function.",
+                  "work": "\\(x(2)=\\frac{2^3}{3}-2(2^2)+3(2)=\\frac83-8+6=\\frac23\\)"
+                },
+                {
+                  "explain": "The position at that moment is two-thirds of a metre from the origin.",
+                  "work": "\\(\\boxed{\\frac23\\text{ m}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 003",
+            "page": "144-145, 157-158",
+            "course": "Advanced",
+            "sourceQuestion": "15"
+          }
+        },
+        {
+          "id": "y12a-advanced-003-app-q28",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A particle is moving along the x-axis. The displacement of the particle at time t seconds is x metres. At a certain time, ẋ = −3 m s⁻¹ and ẍ = 2 m s⁻². Which statement describes the motion of the particle at that time?",
+          "options": [
+            {
+              "text": "The particle is moving to the right with increasing speed."
+            },
+            {
+              "text": "The particle is moving to the left with increasing speed."
+            },
+            {
+              "text": "The particle is moving to the right with decreasing speed."
+            },
+            {
+              "text": "The particle is moving to the left with decreasing speed."
+            }
+          ],
+          "answer": 3,
+          "hint": "The velocity sign tells direction. Since velocity and acceleration have opposite signs, the speed is decreasing.",
+          "steps": [
+            {
+              "explain": "The velocity is ẋ=−3 m/s. A negative velocity means motion to the left.",
+              "work": "\\(v=-3<0\\Rightarrow\\text{moving left}\\)"
+            },
+            {
+              "explain": "The acceleration is positive, so it points to the right. It acts opposite the leftward velocity.",
+              "work": "\\(a=2>0\\)"
+            },
+            {
+              "explain": "When acceleration is opposite to velocity, the magnitude of velocity (speed) decreases.",
+              "work": "\\(v\\cdot a=(-3)(2)<0\\Rightarrow\\text{speed decreasing}\\)"
+            },
+            {
+              "explain": "Therefore the particle moves left with decreasing speed.",
+              "work": "\\(\\boxed{\\text{left with decreasing speed}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 003",
+            "page": "146, 159",
+            "course": "Advanced",
+            "sourceQuestion": "q28"
+          }
+        },
+        {
+          "id": "y12a-advanced-003-app-q29",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Two straight roads meet at R at an angle of 60°. At time t=0 car A leaves R on one road, and car B is 100 km from R on the other road. Car A travels away from R at a speed of 80 km/h, and car B travels towards R at a speed of 50 km/h. The distance between the cars at time t hours is r km.",
+          "parts": [
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q29-i",
+              "type": "review",
+              "difficulty": "medium",
+              "stem": "Show that r² = 12900t² − 18000t + 10000.",
+              "answer": "r²=12900t²−18000t+10000.",
+              "manual": true,
+              "hint": "Find each car’s distance from R after t hours and use the cosine rule with included angle 60°.",
+              "steps": [
+                {
+                  "explain": "Car A starts at R and travels away at 80 km/h, so after t hours it is 80t km from R.",
+                  "work": "\\(RA=80t\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 430 270\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M55 200L375 65M55 200L380 245\" stroke=\"#334155\" stroke-width=\"2.5\"/><path d=\"M55 200A45 45 0 0 1 97 181\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.2\"/><circle cx=\"245\" cy=\"120\" r=\"5\" fill=\"#8b5cf6\"/><circle cx=\"235\" cy=\"225\" r=\"5\" fill=\"#f59e0b\"/><path d=\"M245 120L235 225\" stroke=\"#475569\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><text x=\"41\" y=\"218\" font-family=\"Arial\" font-size=\"13\">R</text><text x=\"248\" y=\"112\" font-family=\"Arial\" font-size=\"13\">B</text><text x=\"232\" y=\"244\" font-family=\"Arial\" font-size=\"13\">A</text><text x=\"73\" y=\"180\" font-family=\"Arial\" font-size=\"12\">60°</text><text x=\"268\" y=\"91\" font-family=\"Arial\" font-size=\"12\">B: 100−50t km</text><text x=\"246\" y=\"244\" font-family=\"Arial\" font-size=\"12\">A: 80t km</text><text x=\"213\" y=\"175\" font-family=\"Arial\" font-size=\"13\">r</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Car B starts 100 km from R and travels toward R at 50 km/h, so its distance from R is 100−50t.",
+                  "work": "\\(RB=100-50t\\)"
+                },
+                {
+                  "explain": "Use the cosine rule. The angle between the roads is 60°, so cos60°=1/2.",
+                  "work": "\\(r^2=(80t)^2+(100-50t)^2-2(80t)(100-50t)\\cos60^\\circ\\)"
+                },
+                {
+                  "explain": "Expand each term and collect powers of t.",
+                  "work": "\\(r^2=6400t^2+10000-10000t+2500t^2-8000t+4000t^2=12900t^2-18000t+10000\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 430 270\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M55 200L375 65M55 200L380 245\" stroke=\"#334155\" stroke-width=\"2.5\"/><path d=\"M55 200A45 45 0 0 1 97 181\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.2\"/><circle cx=\"245\" cy=\"120\" r=\"5\" fill=\"#8b5cf6\"/><circle cx=\"235\" cy=\"225\" r=\"5\" fill=\"#f59e0b\"/><path d=\"M245 120L235 225\" stroke=\"#475569\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><text x=\"41\" y=\"218\" font-family=\"Arial\" font-size=\"13\">R</text><text x=\"248\" y=\"112\" font-family=\"Arial\" font-size=\"13\">B</text><text x=\"232\" y=\"244\" font-family=\"Arial\" font-size=\"13\">A</text><text x=\"73\" y=\"180\" font-family=\"Arial\" font-size=\"12\">60°</text><text x=\"268\" y=\"91\" font-family=\"Arial\" font-size=\"12\">B: 100−50t km</text><text x=\"246\" y=\"244\" font-family=\"Arial\" font-size=\"12\">A: 80t km</text><text x=\"213\" y=\"175\" font-family=\"Arial\" font-size=\"13\">r</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q29-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the minimum distance between the cars.",
+              "options": [
+                {
+                  "text": "\\(\frac{400}{\\sqrt{43}}\text{ km}\\) (about 61.0 km)"
+                },
+                {
+                  "text": "\\(\frac{30}{43}\text{ km}\\)"
+                },
+                {
+                  "text": "100 km"
+                },
+                {
+                  "text": "\\(\frac{400}{43}\text{ km}\\)"
+                }
+              ],
+              "answer": 0,
+              "hint": "Minimise r² instead of r. Differentiate the quadratic, find the time, then substitute back and take a square root.",
+              "steps": [
+                {
+                  "explain": "Since r≥0, the distance r is smallest when r² is smallest. Differentiate the quadratic.",
+                  "work": "\\(\\frac{d(r^2)}{dt}=25800t-18000\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 430 270\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M55 200L375 65M55 200L380 245\" stroke=\"#334155\" stroke-width=\"2.5\"/><path d=\"M55 200A45 45 0 0 1 97 181\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.2\"/><circle cx=\"245\" cy=\"120\" r=\"5\" fill=\"#8b5cf6\"/><circle cx=\"235\" cy=\"225\" r=\"5\" fill=\"#f59e0b\"/><path d=\"M245 120L235 225\" stroke=\"#475569\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><text x=\"41\" y=\"218\" font-family=\"Arial\" font-size=\"13\">R</text><text x=\"248\" y=\"112\" font-family=\"Arial\" font-size=\"13\">B</text><text x=\"232\" y=\"244\" font-family=\"Arial\" font-size=\"13\">A</text><text x=\"73\" y=\"180\" font-family=\"Arial\" font-size=\"12\">60°</text><text x=\"268\" y=\"91\" font-family=\"Arial\" font-size=\"12\">B: 100−50t km</text><text x=\"246\" y=\"244\" font-family=\"Arial\" font-size=\"12\">A: 80t km</text><text x=\"213\" y=\"175\" font-family=\"Arial\" font-size=\"13\">r</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Set the derivative to zero to find the time of closest approach.",
+                  "work": "\\(25800t-18000=0\\Rightarrow t=\\frac{30}{43}\\text{ h}\\)"
+                },
+                {
+                  "explain": "Substitute t=30/43 into r².",
+                  "work": "\\(r^2=\\frac{160000}{43}\\)"
+                },
+                {
+                  "explain": "Take the positive square root because distance cannot be negative.",
+                  "work": "\\(r=\\frac{400}{\\sqrt{43}}\\approx61.0\\text{ km}\\)"
+                },
+                {
+                  "explain": "So the minimum separation is about 61.0 km.",
+                  "work": "\\(\\boxed{\\frac{400}{\\sqrt{43}}\\text{ km}}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 430 270\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M55 200L375 65M55 200L380 245\" stroke=\"#334155\" stroke-width=\"2.5\"/><path d=\"M55 200A45 45 0 0 1 97 181\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.2\"/><circle cx=\"245\" cy=\"120\" r=\"5\" fill=\"#8b5cf6\"/><circle cx=\"235\" cy=\"225\" r=\"5\" fill=\"#f59e0b\"/><path d=\"M245 120L235 225\" stroke=\"#475569\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><text x=\"41\" y=\"218\" font-family=\"Arial\" font-size=\"13\">R</text><text x=\"248\" y=\"112\" font-family=\"Arial\" font-size=\"13\">B</text><text x=\"232\" y=\"244\" font-family=\"Arial\" font-size=\"13\">A</text><text x=\"73\" y=\"180\" font-family=\"Arial\" font-size=\"12\">60°</text><text x=\"268\" y=\"91\" font-family=\"Arial\" font-size=\"12\">B: 100−50t km</text><text x=\"246\" y=\"244\" font-family=\"Arial\" font-size=\"12\">A: 80t km</text><text x=\"213\" y=\"175\" font-family=\"Arial\" font-size=\"13\">r</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 003",
+            "page": "146, 159",
+            "course": "Advanced",
+            "sourceQuestion": "29"
+          }
+        },
+        {
+          "id": "y12a-advanced-003-app-q33",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The velocity of a particle moving along the x-axis is given by v = 8 − 8e^(−2t), where t is the time in seconds and x is the displacement in metres.",
+          "parts": [
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q33-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Show that the particle is initially at rest.",
+              "options": [
+                {
+                  "text": "\\(v(0)=0\text{ m/s}\\)"
+                },
+                {
+                  "text": "\\(v(0)=8\text{ m/s}\\)"
+                },
+                {
+                  "text": "\\(a(0)=0\text{ m/s}^2\\)"
+                },
+                {
+                  "text": "\\(x(0)=8\text{ m}\\)"
+                }
+              ],
+              "answer": 0,
+              "hint": "Substitute t=0 into the given velocity function.",
+              "steps": [
+                {
+                  "explain": "The velocity is given directly as v(t)=8−8e^(−2t).",
+                  "work": "\\(v(t)=8-8e^{-2t}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 250\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M40 205H390M65 230V20\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M65 205 C112 100 177 60 250 48 C306 40 351 38 389 38\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.6\"/><path d=\"M65 38H390\" stroke=\"#f59e0b\" stroke-dasharray=\"5 4\"/><circle cx=\"65\" cy=\"205\" r=\"4\" fill=\"#ef4444\"/><text x=\"395\" y=\"202\" font-family=\"Arial\" font-size=\"13\">t</text><text x=\"71\" y=\"22\" font-family=\"Arial\" font-size=\"13\">v</text><text x=\"340\" y=\"33\" font-family=\"Arial\" font-size=\"12\">v=8</text></svg>"
+                  }
+                },
+                {
+                  "explain": "At the initial instant t=0, e⁰=1.",
+                  "work": "\\(v(0)=8-8(1)=0\\)"
+                },
+                {
+                  "explain": "Zero velocity means the particle is initially at rest.",
+                  "work": "\\(\\boxed{v(0)=0\\text{ m/s}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q33-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Show that the acceleration of the particle is always positive.",
+              "options": [
+                {
+                  "text": "\\(a(t)=16e^{-2t}>0\\)"
+                },
+                {
+                  "text": "\\(a(t)=-16e^{-2t}<0\\)"
+                },
+                {
+                  "text": "\\(a(t)=8e^{-2t}>0\\)"
+                },
+                {
+                  "text": "\\(a(t)=0\\)"
+                }
+              ],
+              "answer": 0,
+              "hint": "Acceleration is the derivative of velocity. Remember the chain-rule factor when differentiating e^(−2t).",
+              "steps": [
+                {
+                  "explain": "Differentiate v(t)=8−8e^(−2t).",
+                  "work": "\\(a(t)=v\\prime(t)=-8(-2)e^{-2t}=16e^{-2t}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 250\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M40 205H390M65 230V20\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M65 205 C112 100 177 60 250 48 C306 40 351 38 389 38\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.6\"/><path d=\"M65 38H390\" stroke=\"#f59e0b\" stroke-dasharray=\"5 4\"/><circle cx=\"65\" cy=\"205\" r=\"4\" fill=\"#ef4444\"/><text x=\"395\" y=\"202\" font-family=\"Arial\" font-size=\"13\">t</text><text x=\"71\" y=\"22\" font-family=\"Arial\" font-size=\"13\">v</text><text x=\"340\" y=\"33\" font-family=\"Arial\" font-size=\"12\">v=8</text></svg>"
+                  }
+                },
+                {
+                  "explain": "An exponential is positive for every real t, and 16 is positive.",
+                  "work": "\\(e^{-2t}>0\\Rightarrow16e^{-2t}>0\\)"
+                },
+                {
+                  "explain": "Therefore acceleration is positive for all t.",
+                  "work": "\\(\\boxed{a(t)>0\\text{ for all }t}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q33-iii",
+              "type": "review",
+              "difficulty": "medium",
+              "stem": "Explain why the particle is moving in the positive direction for all t > 0.",
+              "answer": "For t>0, e^(−2t)<1, so v=8(1−e^(−2t))>0.",
+              "manual": true,
+              "hint": "Factor the velocity and compare e^(−2t) with 1 for positive t.",
+              "steps": [
+                {
+                  "explain": "Factor the given velocity.",
+                  "work": "\\(v(t)=8-8e^{-2t}=8(1-e^{-2t})\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 250\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M40 205H390M65 230V20\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M65 205 C112 100 177 60 250 48 C306 40 351 38 389 38\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.6\"/><path d=\"M65 38H390\" stroke=\"#f59e0b\" stroke-dasharray=\"5 4\"/><circle cx=\"65\" cy=\"205\" r=\"4\" fill=\"#ef4444\"/><text x=\"395\" y=\"202\" font-family=\"Arial\" font-size=\"13\">t</text><text x=\"71\" y=\"22\" font-family=\"Arial\" font-size=\"13\">v</text><text x=\"340\" y=\"33\" font-family=\"Arial\" font-size=\"12\">v=8</text></svg>"
+                  }
+                },
+                {
+                  "explain": "When t>0, −2t<0, so 0<e^(−2t)<1.",
+                  "work": "\\(t>0\\Rightarrow0<e^{-2t}<1\\)"
+                },
+                {
+                  "explain": "Thus 1−e^(−2t)>0, and multiplying by 8 keeps it positive. Positive velocity means positive direction.",
+                  "work": "\\(v(t)>0\\Rightarrow\\text{motion is in the positive direction}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q33-iv",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "As t→∞, the velocity of the particle approaches a constant. Find the value of this constant.",
+              "options": [
+                {
+                  "text": "8 m/s"
+                },
+                {
+                  "text": "0 m/s"
+                },
+                {
+                  "text": "16 m/s"
+                },
+                {
+                  "text": "−8 m/s"
+                }
+              ],
+              "answer": 0,
+              "hint": "As t→∞, e^(−2t) tends to zero.",
+              "steps": [
+                {
+                  "explain": "Use v(t)=8−8e^(−2t).",
+                  "work": "\\(v(t)=8-8e^{-2t}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 250\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M40 205H390M65 230V20\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M65 205 C112 100 177 60 250 48 C306 40 351 38 389 38\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.6\"/><path d=\"M65 38H390\" stroke=\"#f59e0b\" stroke-dasharray=\"5 4\"/><circle cx=\"65\" cy=\"205\" r=\"4\" fill=\"#ef4444\"/><text x=\"395\" y=\"202\" font-family=\"Arial\" font-size=\"13\">t</text><text x=\"71\" y=\"22\" font-family=\"Arial\" font-size=\"13\">v</text><text x=\"340\" y=\"33\" font-family=\"Arial\" font-size=\"12\">v=8</text></svg>"
+                  }
+                },
+                {
+                  "explain": "As t becomes large, the exponential term tends to zero.",
+                  "work": "\\(\\lim_{t\\to\\infty}e^{-2t}=0\\)"
+                },
+                {
+                  "explain": "The velocity therefore tends to 8.",
+                  "work": "\\(\\boxed{8\\text{ m/s}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q33-v",
+              "type": "review",
+              "difficulty": "medium",
+              "stem": "Sketch the graph of the particle’s velocity as a function of time.",
+              "answer": "An increasing, concave-down curve starting at (0,0) and approaching the horizontal asymptote v=8.",
+              "manual": true,
+              "hint": "Use the initial velocity, positive acceleration, and limiting velocity. The acceleration decreases toward zero, so the v(t) curve flattens.",
+              "steps": [
+                {
+                  "explain": "At t=0, v=0, so mark the origin.",
+                  "work": "\\(v(0)=0\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 250\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M40 205H390M65 230V20\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M65 205 C112 100 177 60 250 48 C306 40 351 38 389 38\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.6\"/><path d=\"M65 38H390\" stroke=\"#f59e0b\" stroke-dasharray=\"5 4\"/><circle cx=\"65\" cy=\"205\" r=\"4\" fill=\"#ef4444\"/><text x=\"395\" y=\"202\" font-family=\"Arial\" font-size=\"13\">t</text><text x=\"71\" y=\"22\" font-family=\"Arial\" font-size=\"13\">v</text><text x=\"340\" y=\"33\" font-family=\"Arial\" font-size=\"12\">v=8</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Since acceleration is positive, velocity increases. Since a(t)=16e^(−2t) decreases toward zero, the slope of the velocity graph gets smaller.",
+                  "work": "\\(v\\prime(t)>0,\\quad v\\prime\\prime(t)=-32e^{-2t}<0\\)"
+                },
+                {
+                  "explain": "As t→∞, v→8, so draw a horizontal asymptote at v=8.",
+                  "work": "\\(\\lim_{t\\to\\infty}v(t)=8\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 250\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M40 205H390M65 230V20\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M65 205 C112 100 177 60 250 48 C306 40 351 38 389 38\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.6\"/><path d=\"M65 38H390\" stroke=\"#f59e0b\" stroke-dasharray=\"5 4\"/><circle cx=\"65\" cy=\"205\" r=\"4\" fill=\"#ef4444\"/><text x=\"395\" y=\"202\" font-family=\"Arial\" font-size=\"13\">t</text><text x=\"71\" y=\"22\" font-family=\"Arial\" font-size=\"13\">v</text><text x=\"340\" y=\"33\" font-family=\"Arial\" font-size=\"12\">v=8</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 003",
+            "page": "147-159",
+            "course": "Advanced",
+            "sourceQuestion": "33"
+          }
+        },
+        {
+          "id": "y12a-advanced-003-app-q41",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The graph shows the velocity of a particle, v metres per second, as a function of time, t seconds.",
+          "parts": [
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q41-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What is the initial velocity of the particle?",
+              "options": [
+                {
+                  "text": "20 m/s"
+                },
+                {
+                  "text": "0 m/s"
+                },
+                {
+                  "text": "80 m/s"
+                },
+                {
+                  "text": "10 m/s"
+                }
+              ],
+              "answer": 0,
+              "hint": "Read the velocity graph at t=0.",
+              "steps": [
+                {
+                  "explain": "Initial time is t=0. Locate where the curve meets the vertical axis.",
+                  "work": "\\(v(0)=20\\text{ m/s}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 280\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 230H410M75 250V20\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M75 190 C118 132 165 82 224 59 C262 45 286 42 307 53 C343 72 364 128 389 235\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><path d=\"M75 190H390\" stroke=\"#94a3b8\" stroke-dasharray=\"4 4\"/><path d=\"M307 230V53\" stroke=\"#f59e0b\" stroke-dasharray=\"4 4\"/><text x=\"69\" y=\"209\" font-family=\"Arial\" font-size=\"12\">20</text><text x=\"299\" y=\"248\" font-family=\"Arial\" font-size=\"12\">6</text><text x=\"407\" y=\"227\" font-family=\"Arial\" font-size=\"13\">t</text><text x=\"81\" y=\"22\" font-family=\"Arial\" font-size=\"13\">v</text></svg>"
+                  }
+                },
+                {
+                  "explain": "So the initial velocity is 20 metres per second.",
+                  "work": "\\(\\boxed{20\\text{ m/s}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q41-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "When is the velocity of the particle equal to zero?",
+              "options": [
+                {
+                  "text": "10 seconds"
+                },
+                {
+                  "text": "6 seconds"
+                },
+                {
+                  "text": "2 seconds"
+                },
+                {
+                  "text": "12 seconds"
+                }
+              ],
+              "answer": 0,
+              "hint": "Velocity is zero where the graph crosses the horizontal time axis.",
+              "steps": [
+                {
+                  "explain": "Find the point where the velocity curve crosses v=0.",
+                  "work": "\\(v(t)=0\\text{ at the horizontal-axis crossing}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 280\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 230H410M75 250V20\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M75 190 C118 132 165 82 224 59 C262 45 286 42 307 53 C343 72 364 128 389 235\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><path d=\"M75 190H390\" stroke=\"#94a3b8\" stroke-dasharray=\"4 4\"/><path d=\"M307 230V53\" stroke=\"#f59e0b\" stroke-dasharray=\"4 4\"/><text x=\"69\" y=\"209\" font-family=\"Arial\" font-size=\"12\">20</text><text x=\"299\" y=\"248\" font-family=\"Arial\" font-size=\"12\">6</text><text x=\"407\" y=\"227\" font-family=\"Arial\" font-size=\"13\">t</text><text x=\"81\" y=\"22\" font-family=\"Arial\" font-size=\"13\">v</text></svg>"
+                  }
+                },
+                {
+                  "explain": "The graph crosses the axis at about t=10.",
+                  "work": "\\(\\boxed{t=10\\text{ s}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            },
+            {
+              "id": "y12a-advanced-003-app-y12a-advanced-003-app-q41-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "When is the acceleration of the particle equal to zero?",
+              "options": [
+                {
+                  "text": "6 seconds"
+                },
+                {
+                  "text": "10 seconds"
+                },
+                {
+                  "text": "0 seconds"
+                },
+                {
+                  "text": "8 seconds"
+                }
+              ],
+              "answer": 0,
+              "hint": "Acceleration is the gradient of the velocity-time graph. It is zero where that graph has a horizontal tangent.",
+              "steps": [
+                {
+                  "explain": "Acceleration is dv/dt, so it is the slope of the velocity graph.",
+                  "work": "\\(a=\\frac{dv}{dt}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 280\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 230H410M75 250V20\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M75 190 C118 132 165 82 224 59 C262 45 286 42 307 53 C343 72 364 128 389 235\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><path d=\"M75 190H390\" stroke=\"#94a3b8\" stroke-dasharray=\"4 4\"/><path d=\"M307 230V53\" stroke=\"#f59e0b\" stroke-dasharray=\"4 4\"/><text x=\"69\" y=\"209\" font-family=\"Arial\" font-size=\"12\">20</text><text x=\"299\" y=\"248\" font-family=\"Arial\" font-size=\"12\">6</text><text x=\"407\" y=\"227\" font-family=\"Arial\" font-size=\"13\">t</text><text x=\"81\" y=\"22\" font-family=\"Arial\" font-size=\"13\">v</text></svg>"
+                  }
+                },
+                {
+                  "explain": "The velocity graph has a horizontal tangent at its maximum, around t=6.",
+                  "work": "\\(\\frac{dv}{dt}=0\\text{ at }t\\approx6\\)"
+                },
+                {
+                  "explain": "Therefore acceleration is zero at 6 seconds.",
+                  "work": "\\(\\boxed{6\\text{ s}}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 280\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 230H410M75 250V20\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M75 190 C118 132 165 82 224 59 C262 45 286 42 307 53 C343 72 364 128 389 235\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><path d=\"M75 190H390\" stroke=\"#94a3b8\" stroke-dasharray=\"4 4\"/><path d=\"M307 230V53\" stroke=\"#f59e0b\" stroke-dasharray=\"4 4\"/><text x=\"69\" y=\"209\" font-family=\"Arial\" font-size=\"12\">20</text><text x=\"299\" y=\"248\" font-family=\"Arial\" font-size=\"12\">6</text><text x=\"407\" y=\"227\" font-family=\"Arial\" font-size=\"13\">t</text><text x=\"81\" y=\"22\" font-family=\"Arial\" font-size=\"13\">v</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 003",
+            "page": "147-160",
+            "course": "Advanced",
+            "sourceQuestion": "41"
+          }
         }
       ]
     },

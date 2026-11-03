@@ -5729,6 +5729,908 @@
             "sourcePage": null,
             "sourceTopic": "y12a-5G"
           }
+        },
+        {
+          "id": "y12a-advanced-002-p128-q02",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which of these is the derivative of \\(\\log_2(x+1)\\)?",
+          "options": [
+            "\\(- \\frac{1}{\\left(x + 1\\right) \\log{\\left(2 \\right)}}\\)",
+            "\\(\\frac{1}{2 \\left(x + 1\\right) \\log{\\left(2 \\right)}}\\)",
+            "\\(\\frac{1}{\\left(x + 1\\right) \\log{\\left(2 \\right)}}\\)",
+            "\\(\\frac{\\log{\\left(x + 1 \\right)}}{\\log{\\left(2 \\right)}}\\)",
+            "\\(2 + \\frac{1}{\\left(x + 1\\right) \\log{\\left(2 \\right)}}\\)",
+            "\\(-2 + \\frac{1}{\\left(x + 1\\right) \\log{\\left(2 \\right)}}\\)",
+            "\\(3 + \\frac{1}{\\left(x + 1\\right) \\log{\\left(2 \\right)}}\\)",
+            "\\(-3 + \\frac{1}{\\left(x + 1\\right) \\log{\\left(2 \\right)}}\\)",
+            "\\(5 + \\frac{1}{\\left(x + 1\\right) \\log{\\left(2 \\right)}}\\)",
+            "\\(-5 + \\frac{1}{\\left(x + 1\\right) \\log{\\left(2 \\right)}}\\)"
+          ],
+          "answer": 2,
+          "hint": "Differentiate the outer function and multiply by the derivative of the inner expression.",
+          "keyPoints": [
+            {
+              "text": "\\(\\log_2(x+1)\\)",
+              "note": "This is the expression to differentiate; identify its structure before applying a rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the outside function and the inside expression. Differentiate the outside, then multiply by the derivative of the inside.",
+              "work": "\\(\\text{chain rule gives }\\frac{1}{\\left(x + 1\\right) \\log{\\left(2 \\right)}}\\)"
+            },
+            {
+              "explain": "Simplify the factors and keep any coefficient from the inside derivative.",
+              "work": "\\(\\frac{1}{\\left(x + 1\\right) \\log{\\left(2 \\right)}}\\)"
+            },
+            {
+              "explain": "State the simplified derivative.",
+              "work": "\\(\\frac{1}{\\left(x + 1\\right) \\log{\\left(2 \\right)}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "128",
+            "sourceQuestion": "2",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p128-q03",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Differentiate \\(\\log_2(x^2+1)\\).",
+          "options": [
+            "\\(\\frac{\\log{\\left(x^{2} + 1 \\right)}}{\\log{\\left(2 \\right)}}\\)",
+            "\\(\\frac{x}{\\left(x^{2} + 1\\right) \\log{\\left(2 \\right)}}\\)",
+            "\\(- \\frac{2 x}{\\left(x^{2} + 1\\right) \\log{\\left(2 \\right)}}\\)",
+            "\\(\\frac{2 x}{\\left(x^{2} + 1\\right) \\log{\\left(2 \\right)}}\\)",
+            "\\(\\frac{2 x}{\\left(x^{2} + 1\\right) \\log{\\left(2 \\right)}} + 2\\)",
+            "\\(\\frac{2 x}{\\left(x^{2} + 1\\right) \\log{\\left(2 \\right)}} - 2\\)",
+            "\\(\\frac{2 x}{\\left(x^{2} + 1\\right) \\log{\\left(2 \\right)}} + 3\\)",
+            "\\(\\frac{2 x}{\\left(x^{2} + 1\\right) \\log{\\left(2 \\right)}} - 3\\)",
+            "\\(\\frac{2 x}{\\left(x^{2} + 1\\right) \\log{\\left(2 \\right)}} + 5\\)",
+            "\\(\\frac{2 x}{\\left(x^{2} + 1\\right) \\log{\\left(2 \\right)}} - 5\\)"
+          ],
+          "answer": 3,
+          "hint": "Differentiate the outer function and multiply by the derivative of the inner expression.",
+          "keyPoints": [
+            {
+              "text": "\\(\\log_2(x^2+1)\\)",
+              "note": "This is the expression to differentiate; identify its structure before applying a rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the outside function and the inside expression. Differentiate the outside, then multiply by the derivative of the inside.",
+              "work": "\\(\\text{chain rule gives }\\frac{2 x}{\\left(x^{2} + 1\\right) \\log{\\left(2 \\right)}}\\)"
+            },
+            {
+              "explain": "Simplify the factors and keep any coefficient from the inside derivative.",
+              "work": "\\(\\frac{2 x}{\\left(x^{2} + 1\\right) \\log{\\left(2 \\right)}}\\)"
+            },
+            {
+              "explain": "State the simplified derivative.",
+              "work": "\\(\\frac{2 x}{\\left(x^{2} + 1\\right) \\log{\\left(2 \\right)}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "128",
+            "sourceQuestion": "3",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p128-q05",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is the derivative of \\(\\sin(\\ln x)\\), where \\(x>0\\)?",
+          "options": [
+            "\\(\\frac{\\cos{\\left(\\ln x \\right)}}{2 x}\\)",
+            "\\(\\frac{\\cos{\\left(\\ln x \\right)}}{x}\\)",
+            "\\(- \\frac{\\cos{\\left(\\ln x \\right)}}{x}\\)",
+            "\\(\\sin{\\left(\\ln x \\right)}\\)",
+            "\\(2 + \\frac{\\cos{\\left(\\ln x \\right)}}{x}\\)",
+            "\\(-2 + \\frac{\\cos{\\left(\\ln x \\right)}}{x}\\)",
+            "\\(3 + \\frac{\\cos{\\left(\\ln x \\right)}}{x}\\)",
+            "\\(-3 + \\frac{\\cos{\\left(\\ln x \\right)}}{x}\\)",
+            "\\(5 + \\frac{\\cos{\\left(\\ln x \\right)}}{x}\\)",
+            "\\(-5 + \\frac{\\cos{\\left(\\ln x \\right)}}{x}\\)"
+          ],
+          "answer": 1,
+          "hint": "Differentiate the outer function and multiply by the derivative of the inner expression.",
+          "keyPoints": [
+            {
+              "text": "\\(\\sin(\\ln x)\\)",
+              "note": "This is the expression to differentiate; identify its structure before applying a rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the outside function and the inside expression. Differentiate the outside, then multiply by the derivative of the inside.",
+              "work": "\\(\\text{chain rule gives }\\frac{\\cos{\\left(\\ln x \\right)}}{x}\\)"
+            },
+            {
+              "explain": "Simplify the factors and keep any coefficient from the inside derivative.",
+              "work": "\\(\\frac{\\cos{\\left(\\ln x \\right)}}{x}\\)"
+            },
+            {
+              "explain": "State the simplified derivative.",
+              "work": "\\(\\frac{\\cos{\\left(\\ln x \\right)}}{x}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "128",
+            "sourceQuestion": "5",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p128-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Differentiate \\(x^3\\ln x\\).",
+          "options": [
+            "\\(x^{2}\\)",
+            "\\(3 x^{2} \\ln x\\)",
+            "\\(x^{2} \\left(3 \\ln x + 1\\right)\\)",
+            "\\(x^{3} \\ln x\\)",
+            "\\(x^{2} \\left(3 \\ln x + 1\\right) + 2\\)",
+            "\\(x^{2} \\left(3 \\ln x + 1\\right) - 2\\)",
+            "\\(x^{2} \\left(3 \\ln x + 1\\right) + 3\\)",
+            "\\(x^{2} \\left(3 \\ln x + 1\\right) - 3\\)",
+            "\\(x^{2} \\left(3 \\ln x + 1\\right) + 5\\)",
+            "\\(x^{2} \\left(3 \\ln x + 1\\right) - 5\\)"
+          ],
+          "answer": 2,
+          "hint": "Name the two factors first, then apply the product rule and include both terms.",
+          "keyPoints": [
+            {
+              "text": "\\(x^3\\ln x\\)",
+              "note": "This is the expression to differentiate; identify its structure before applying a rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the two factors: \\(u=x^{3}\\) and \\(v=\\ln x\\). Use the product rule \\( (uv)\\prime=u\\prime v+uv\\prime\\).",
+              "work": "\\(u\\prime=3 x^{2},\\quad v\\prime=\\frac{1}{x}\\)"
+            },
+            {
+              "explain": "Substitute both product-rule terms; keep both terms in the sum.",
+              "work": "\\(3 x^{2}\\cdot\\ln x+x^{3}\\cdot\\frac{1}{x}\\)"
+            },
+            {
+              "explain": "Add the two contributions and simplify.",
+              "work": "\\(x^{2} \\left(3 \\ln x + 1\\right)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "128",
+            "sourceQuestion": "10",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p128-q11",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is the derivative of \\(\\ln(\\cos x)\\)?",
+          "options": [
+            "\\(\\log{\\left(\\cos{\\left(x \\right)} \\right)}\\)",
+            "\\(- \\frac{\\tan{\\left(x \\right)}}{2}\\)",
+            "\\(\\tan{\\left(x \\right)}\\)",
+            "\\(- \\tan{\\left(x \\right)}\\)",
+            "\\(2 - \\tan{\\left(x \\right)}\\)",
+            "\\(- \\tan{\\left(x \\right)} - 2\\)",
+            "\\(3 - \\tan{\\left(x \\right)}\\)",
+            "\\(- \\tan{\\left(x \\right)} - 3\\)",
+            "\\(5 - \\tan{\\left(x \\right)}\\)",
+            "\\(- \\tan{\\left(x \\right)} - 5\\)"
+          ],
+          "answer": 3,
+          "hint": "Differentiate the outer function and multiply by the derivative of the inner expression.",
+          "keyPoints": [
+            {
+              "text": "\\(\\ln(\\cos x)\\)",
+              "note": "This is the expression to differentiate; identify its structure before applying a rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the outside function and the inside expression. Differentiate the outside, then multiply by the derivative of the inside.",
+              "work": "\\(\\text{chain rule gives }- \\tan{\\left(x \\right)}\\)"
+            },
+            {
+              "explain": "Simplify the factors and keep any coefficient from the inside derivative.",
+              "work": "\\(- \\tan{\\left(x \\right)}\\)"
+            },
+            {
+              "explain": "State the simplified derivative.",
+              "work": "\\(- \\tan{\\left(x \\right)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "128",
+            "sourceQuestion": "11",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p128-q14",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Differentiate \\(y=(x+4)\\ln x\\).",
+          "options": [
+            "\\(\\frac{x + 4}{x}\\)",
+            "\\(\\ln x\\)",
+            "\\(\\ln x + 1 + \\frac{4}{x}\\)",
+            "\\(\\left(x + 4\\right) \\ln x\\)",
+            "\\(\\ln x + 3 + \\frac{4}{x}\\)",
+            "\\(\\ln x - 1 + \\frac{4}{x}\\)",
+            "\\(\\ln x + 4 + \\frac{4}{x}\\)",
+            "\\(\\ln x - 2 + \\frac{4}{x}\\)",
+            "\\(\\ln x + 6 + \\frac{4}{x}\\)",
+            "\\(\\ln x - 4 + \\frac{4}{x}\\)"
+          ],
+          "answer": 2,
+          "hint": "Name the two factors first, then apply the product rule and include both terms.",
+          "keyPoints": [
+            {
+              "text": "\\(y=(x+4)\\ln x\\)",
+              "note": "This is the expression to differentiate; identify its structure before applying a rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the two factors: \\(u=x + 4\\) and \\(v=\\ln x\\). Use the product rule \\( (uv)\\prime=u\\prime v+uv\\prime\\).",
+              "work": "\\(u\\prime=1,\\quad v\\prime=\\frac{1}{x}\\)"
+            },
+            {
+              "explain": "Substitute both product-rule terms; keep both terms in the sum.",
+              "work": "\\(1\\cdot\\ln x+x + 4\\cdot\\frac{1}{x}\\)"
+            },
+            {
+              "explain": "Add the two contributions and simplify.",
+              "work": "\\(\\ln x + 1 + \\frac{4}{x}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "128",
+            "sourceQuestion": "14",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p128-q15",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Differentiate \\(\\frac{e^x\\ln x}{x}\\).",
+          "options": [
+            "\\(\\frac{e^{x} \\ln x}{x}\\)",
+            "\\(\\frac{\\left(x \\ln x + 1\\right) e^{x}}{x^{2}}\\)",
+            "\\(\\frac{e^{x} \\ln x}{x^{2}}\\)",
+            "\\(\\frac{\\left(x \\ln x - \\ln x + 1\\right) e^{x}}{x^{2}}\\)",
+            "\\(\\frac{2 x^{2} + \\left(x \\ln x - \\ln x + 1\\right) e^{x}}{x^{2}}\\)",
+            "\\(\\frac{- 2 x^{2} + \\left(x \\ln x - \\ln x + 1\\right) e^{x}}{x^{2}}\\)",
+            "\\(\\frac{3 x^{2} + \\left(x \\ln x - \\ln x + 1\\right) e^{x}}{x^{2}}\\)",
+            "\\(\\frac{- 3 x^{2} + \\left(x \\ln x - \\ln x + 1\\right) e^{x}}{x^{2}}\\)",
+            "\\(\\frac{5 x^{2} + \\left(x \\ln x - \\ln x + 1\\right) e^{x}}{x^{2}}\\)",
+            "\\(\\frac{- 5 x^{2} + \\left(x \\ln x - \\ln x + 1\\right) e^{x}}{x^{2}}\\)"
+          ],
+          "answer": 3,
+          "hint": "Use the quotient rule carefully: keep the numerator order and square the whole denominator.",
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{e^x\\ln x}{x}\\)",
+              "note": "This is the expression to differentiate; identify its structure before applying a rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Let \\(u=e^{x} \\ln x\\), \\(v=x\\). Apply \\( (u/v)\\prime=(u\\prime v-uv\\prime)/v^2\\).",
+              "work": "\\(u\\prime=\\frac{\\left(x \\ln x + 1\\right) e^{x}}{x},\\quad v\\prime=1\\)"
+            },
+            {
+              "explain": "Form the numerator in the order derivative of the top times the bottom, minus the top times derivative of the bottom; then divide by the squared denominator.",
+              "work": "\\(\\frac{\\frac{\\left(x \\ln x + 1\\right) e^{x}}{x}\\cdot(x)-(e^{x} \\ln x)\\cdot(1)}{(x)^2}\\)"
+            },
+            {
+              "explain": "Simplify the quotient-rule numerator and denominator.",
+              "work": "\\(\\frac{\\left(x \\ln x - \\ln x + 1\\right) e^{x}}{x^{2}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "128",
+            "sourceQuestion": "15",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p128-q19-i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Differentiate with respect to \\(x\\): \\((x-1)\\log_e x\\).",
+          "options": [
+            "\\(\\ln x + 1 - \\frac{1}{x}\\)",
+            "\\(\\ln x\\)",
+            "\\(\\frac{x - 1}{x}\\)",
+            "\\(\\left(x - 1\\right) \\ln x\\)",
+            "\\(\\ln x + 3 - \\frac{1}{x}\\)",
+            "\\(\\ln x - 1 - \\frac{1}{x}\\)",
+            "\\(\\ln x + 4 - \\frac{1}{x}\\)",
+            "\\(\\ln x - 2 - \\frac{1}{x}\\)",
+            "\\(\\ln x + 6 - \\frac{1}{x}\\)",
+            "\\(\\ln x - 4 - \\frac{1}{x}\\)"
+          ],
+          "answer": 0,
+          "hint": "Name the two factors first, then apply the product rule and include both terms.",
+          "keyPoints": [
+            {
+              "text": "\\(x\\)",
+              "note": "This is the expression to differentiate; identify its structure before applying a rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the two factors: \\(u=x - 1\\) and \\(v=\\ln x\\). Use the product rule \\( (uv)\\prime=u\\prime v+uv\\prime\\).",
+              "work": "\\(u\\prime=1,\\quad v\\prime=\\frac{1}{x}\\)"
+            },
+            {
+              "explain": "Substitute both product-rule terms; keep both terms in the sum.",
+              "work": "\\(1\\cdot\\ln x+x - 1\\cdot\\frac{1}{x}\\)"
+            },
+            {
+              "explain": "Add the two contributions and simplify.",
+              "work": "\\(\\ln x + 1 - \\frac{1}{x}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "128",
+            "sourceQuestion": "19i",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p128-q21",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Differentiate \\(\\ln(5x+2)\\) with respect to \\(x\\).",
+          "options": [
+            "\\(\\frac{5}{2 \\left(5 x + 2\\right)}\\)",
+            "\\(\\frac{5}{5 x + 2}\\)",
+            "\\(- \\frac{5}{5 x + 2}\\)",
+            "\\(\\log{\\left(5 x + 2 \\right)}\\)",
+            "\\(\\frac{10 x + 9}{5 x + 2}\\)",
+            "\\(\\frac{1 - 10 x}{5 x + 2}\\)",
+            "\\(\\frac{15 x + 11}{5 x + 2}\\)",
+            "\\(\\frac{- 15 x - 1}{5 x + 2}\\)",
+            "\\(\\frac{5 \\left(5 x + 3\\right)}{5 x + 2}\\)",
+            "\\(\\frac{5 \\left(- 5 x - 1\\right)}{5 x + 2}\\)"
+          ],
+          "answer": 1,
+          "hint": "Differentiate the outer function and multiply by the derivative of the inner expression.",
+          "keyPoints": [
+            {
+              "text": "\\(\\ln(5x+2)\\)",
+              "note": "This is the expression to differentiate; identify its structure before applying a rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the outside function and the inside expression. Differentiate the outside, then multiply by the derivative of the inside.",
+              "work": "\\(\\text{chain rule gives }\\frac{5}{5 x + 2}\\)"
+            },
+            {
+              "explain": "Simplify the factors and keep any coefficient from the inside derivative.",
+              "work": "\\(\\frac{5}{5 x + 2}\\)"
+            },
+            {
+              "explain": "State the simplified derivative.",
+              "work": "\\(\\frac{5}{5 x + 2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "128",
+            "sourceQuestion": "21",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p129-q29-ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Differentiate with respect to \\(x\\): \\(x^2\\log_e x\\).",
+          "options": [
+            "\\(x^{2} \\ln x\\)",
+            "\\(2 x \\ln x\\)",
+            "\\(x\\)",
+            "\\(x \\left(2 \\ln x + 1\\right)\\)",
+            "\\(x \\left(2 \\ln x + 1\\right) + 2\\)",
+            "\\(x \\left(2 \\ln x + 1\\right) - 2\\)",
+            "\\(x \\left(2 \\ln x + 1\\right) + 3\\)",
+            "\\(x \\left(2 \\ln x + 1\\right) - 3\\)",
+            "\\(x \\left(2 \\ln x + 1\\right) + 5\\)",
+            "\\(x \\left(2 \\ln x + 1\\right) - 5\\)"
+          ],
+          "answer": 3,
+          "hint": "Name the two factors first, then apply the product rule and include both terms.",
+          "keyPoints": [
+            {
+              "text": "\\(x\\)",
+              "note": "This is the expression to differentiate; identify its structure before applying a rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the two factors: \\(u=x^{2}\\) and \\(v=\\ln x\\). Use the product rule \\( (uv)\\prime=u\\prime v+uv\\prime\\).",
+              "work": "\\(u\\prime=2 x,\\quad v\\prime=\\frac{1}{x}\\)"
+            },
+            {
+              "explain": "Substitute both product-rule terms; keep both terms in the sum.",
+              "work": "\\(2 x\\cdot\\ln x+x^{2}\\cdot\\frac{1}{x}\\)"
+            },
+            {
+              "explain": "Add the two contributions and simplify.",
+              "work": "\\(x \\left(2 \\ln x + 1\\right)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "129",
+            "sourceQuestion": "29ii",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p129-q33-i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Differentiate with respect to \\(x\\): \\(x^2\\log_e x\\).",
+          "options": [
+            "\\(x\\)",
+            "\\(2 x \\ln x\\)",
+            "\\(x \\left(2 \\ln x + 1\\right)\\)",
+            "\\(x^{2} \\ln x\\)",
+            "\\(x \\left(2 \\ln x + 1\\right) + 2\\)",
+            "\\(x \\left(2 \\ln x + 1\\right) - 2\\)",
+            "\\(x \\left(2 \\ln x + 1\\right) + 3\\)",
+            "\\(x \\left(2 \\ln x + 1\\right) - 3\\)",
+            "\\(x \\left(2 \\ln x + 1\\right) + 5\\)",
+            "\\(x \\left(2 \\ln x + 1\\right) - 5\\)"
+          ],
+          "answer": 2,
+          "hint": "Name the two factors first, then apply the product rule and include both terms.",
+          "keyPoints": [
+            {
+              "text": "\\(x\\)",
+              "note": "This is the expression to differentiate; identify its structure before applying a rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the two factors: \\(u=x^{2}\\) and \\(v=\\ln x\\). Use the product rule \\( (uv)\\prime=u\\prime v+uv\\prime\\).",
+              "work": "\\(u\\prime=2 x,\\quad v\\prime=\\frac{1}{x}\\)"
+            },
+            {
+              "explain": "Substitute both product-rule terms; keep both terms in the sum.",
+              "work": "\\(2 x\\cdot\\ln x+x^{2}\\cdot\\frac{1}{x}\\)"
+            },
+            {
+              "explain": "Add the two contributions and simplify.",
+              "work": "\\(x \\left(2 \\ln x + 1\\right)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "129",
+            "sourceQuestion": "33i",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p129-q36-ii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Differentiate: \\(\\frac{\\ln x}{x^2}\\).",
+          "options": [
+            "\\(\\frac{2 \\ln x}{x^{3}}\\)",
+            "\\(\\frac{1}{x^{3}}\\)",
+            "\\(\\frac{1 - 2 \\ln x}{x^{3}}\\)",
+            "\\(\\frac{\\ln x}{x^{2}}\\)",
+            "\\(\\frac{2 x^{3} - 2 \\ln x + 1}{x^{3}}\\)",
+            "\\(\\frac{- 2 x^{3} - 2 \\ln x + 1}{x^{3}}\\)",
+            "\\(\\frac{3 x^{3} - 2 \\ln x + 1}{x^{3}}\\)",
+            "\\(\\frac{- 3 x^{3} - 2 \\ln x + 1}{x^{3}}\\)",
+            "\\(\\frac{5 x^{3} - 2 \\ln x + 1}{x^{3}}\\)",
+            "\\(\\frac{- 5 x^{3} - 2 \\ln x + 1}{x^{3}}\\)"
+          ],
+          "answer": 2,
+          "hint": "Use the quotient rule carefully: keep the numerator order and square the whole denominator.",
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{\\ln x}{x^2}\\)",
+              "note": "This is the expression to differentiate; identify its structure before applying a rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Let \\(u=\\ln x\\), \\(v=x^{2}\\). Apply \\( (u/v)\\prime=(u\\prime v-uv\\prime)/v^2\\).",
+              "work": "\\(u\\prime=\\frac{1}{x},\\quad v\\prime=2 x\\)"
+            },
+            {
+              "explain": "Form the numerator in the order derivative of the top times the bottom, minus the top times derivative of the bottom; then divide by the squared denominator.",
+              "work": "\\(\\frac{\\frac{1}{x}\\cdot(x^{2})-(\\ln x)\\cdot(2 x)}{(x^{2})^2}\\)"
+            },
+            {
+              "explain": "Simplify the quotient-rule numerator and denominator.",
+              "work": "\\(\\frac{1 - 2 \\ln x}{x^{3}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "129",
+            "sourceQuestion": "36ii",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p129-q37",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find \\(\\frac{d}{dx}(3x^2\\ln x)\\) for \\(x>0\\).",
+          "options": [
+            "\\(0\\)",
+            "\\(3 x \\left(2 \\ln x + 1\\right)\\)",
+            "\\(3 x^{2} \\ln x\\)",
+            "\\(3 x \\left(2 \\ln x + 1\\right) + 2\\)"
+          ],
+          "answer": 1,
+          "hint": "Name the two factors first, then apply the product rule and include both terms.",
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{d}{dx}(3x^2\\ln x)\\)",
+              "note": "This is the expression to differentiate; identify its structure before applying a rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the two factors: \\(u=3\\) and \\(v=x^{2} \\ln x\\). Use the product rule \\( (uv)\\prime=u\\prime v+uv\\prime\\).",
+              "work": "\\(u\\prime=0,\\quad v\\prime=x \\left(2 \\ln x + 1\\right)\\)"
+            },
+            {
+              "explain": "Substitute both product-rule terms; keep both terms in the sum.",
+              "work": "\\(0\\cdot x^{2} \\ln x+3\\cdot x \\left(2 \\ln x + 1\\right)\\)"
+            },
+            {
+              "explain": "Add the two contributions and simplify.",
+              "work": "\\(3 x \\left(2 \\ln x + 1\\right)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "129",
+            "sourceQuestion": "37",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p129-q38-i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Differentiate with respect to \\(x\\): \\(\\ln(x^2-9)\\).",
+          "options": [
+            "\\(\\log{\\left(x^{2} - 9 \\right)}\\)",
+            "\\(\\frac{x}{x^{2} - 9}\\)",
+            "\\(- \\frac{2 x}{x^{2} - 9}\\)",
+            "\\(\\frac{2 x}{x^{2} - 9}\\)",
+            "\\(\\frac{2 \\left(x^{2} + x - 9\\right)}{x^{2} - 9}\\)",
+            "\\(\\frac{2 \\left(- x^{2} + x + 9\\right)}{x^{2} - 9}\\)",
+            "\\(\\frac{3 x^{2} + 2 x - 27}{x^{2} - 9}\\)",
+            "\\(\\frac{- 3 x^{2} + 2 x + 27}{x^{2} - 9}\\)",
+            "\\(\\frac{5 x^{2} + 2 x - 45}{x^{2} - 9}\\)",
+            "\\(\\frac{- 5 x^{2} + 2 x + 45}{x^{2} - 9}\\)"
+          ],
+          "answer": 3,
+          "hint": "Differentiate the outer function and multiply by the derivative of the inner expression.",
+          "keyPoints": [
+            {
+              "text": "\\(x\\)",
+              "note": "This is the expression to differentiate; identify its structure before applying a rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the outside function and the inside expression. Differentiate the outside, then multiply by the derivative of the inside.",
+              "work": "\\(\\text{chain rule gives }\\frac{2 x}{x^{2} - 9}\\)"
+            },
+            {
+              "explain": "Simplify the factors and keep any coefficient from the inside derivative.",
+              "work": "\\(\\frac{2 x}{x^{2} - 9}\\)"
+            },
+            {
+              "explain": "State the simplified derivative.",
+              "work": "\\(\\frac{2 x}{x^{2} - 9}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "129",
+            "sourceQuestion": "38i",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p129-q44-iii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Differentiate the following function: \\(x^2\\ln x\\).",
+          "options": [
+            "\\(x^{2} \\ln x\\)",
+            "\\(2 x \\ln x\\)",
+            "\\(x\\)",
+            "\\(x \\left(2 \\ln x + 1\\right)\\)",
+            "\\(x \\left(2 \\ln x + 1\\right) + 2\\)",
+            "\\(x \\left(2 \\ln x + 1\\right) - 2\\)",
+            "\\(x \\left(2 \\ln x + 1\\right) + 3\\)",
+            "\\(x \\left(2 \\ln x + 1\\right) - 3\\)",
+            "\\(x \\left(2 \\ln x + 1\\right) + 5\\)",
+            "\\(x \\left(2 \\ln x + 1\\right) - 5\\)"
+          ],
+          "answer": 3,
+          "hint": "Name the two factors first, then apply the product rule and include both terms.",
+          "keyPoints": [
+            {
+              "text": "\\(x^2\\ln x\\)",
+              "note": "This is the expression to differentiate; identify its structure before applying a rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the two factors: \\(u=x^{2}\\) and \\(v=\\ln x\\). Use the product rule \\( (uv)\\prime=u\\prime v+uv\\prime\\).",
+              "work": "\\(u\\prime=2 x,\\quad v\\prime=\\frac{1}{x}\\)"
+            },
+            {
+              "explain": "Substitute both product-rule terms; keep both terms in the sum.",
+              "work": "\\(2 x\\cdot\\ln x+x^{2}\\cdot\\frac{1}{x}\\)"
+            },
+            {
+              "explain": "Add the two contributions and simplify.",
+              "work": "\\(x \\left(2 \\ln x + 1\\right)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "129",
+            "sourceQuestion": "44iii",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p130-q47-iii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Differentiate \\(x\\log_2x\\).",
+          "options": [
+            "\\(\\frac{1}{\\log{\\left(2 \\right)}}\\)",
+            "\\(\\frac{\\ln x}{\\log{\\left(2 \\right)}}\\)",
+            "\\(\\frac{\\ln x + 1}{\\log{\\left(2 \\right)}}\\)",
+            "\\(\\frac{x \\ln x}{\\log{\\left(2 \\right)}}\\)",
+            "\\(\\frac{\\ln x + 1 + \\log{\\left(4 \\right)}}{\\log{\\left(2 \\right)}}\\)",
+            "\\(\\frac{\\ln x - \\log{\\left(4 \\right)} + 1}{\\log{\\left(2 \\right)}}\\)",
+            "\\(\\frac{\\ln x + 1 + \\log{\\left(8 \\right)}}{\\log{\\left(2 \\right)}}\\)",
+            "\\(\\frac{\\ln x - \\log{\\left(8 \\right)} + 1}{\\log{\\left(2 \\right)}}\\)",
+            "\\(\\frac{\\ln x + 1 + \\log{\\left(32 \\right)}}{\\log{\\left(2 \\right)}}\\)",
+            "\\(\\frac{\\ln x - \\log{\\left(32 \\right)} + 1}{\\log{\\left(2 \\right)}}\\)"
+          ],
+          "answer": 2,
+          "hint": "Name the two factors first, then apply the product rule and include both terms.",
+          "keyPoints": [
+            {
+              "text": "\\(x\\log_2x\\)",
+              "note": "This is the expression to differentiate; identify its structure before applying a rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the two factors: \\(u=x\\) and \\(v=\\frac{\\ln x}{\\log{\\left(2 \\right)}}\\). Use the product rule \\( (uv)\\prime=u\\prime v+uv\\prime\\).",
+              "work": "\\(u\\prime=1,\\quad v\\prime=\\frac{1}{x \\log{\\left(2 \\right)}}\\)"
+            },
+            {
+              "explain": "Substitute both product-rule terms; keep both terms in the sum.",
+              "work": "\\(1\\cdot\\frac{\\ln x}{\\log{\\left(2 \\right)}}+x\\cdot\\frac{1}{x \\log{\\left(2 \\right)}}\\)"
+            },
+            {
+              "explain": "Add the two contributions and simplify.",
+              "work": "\\(\\frac{\\ln x + 1}{\\log{\\left(2 \\right)}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "130",
+            "sourceQuestion": "47iii",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p130-q49-iii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Differentiate \\(x^2\\ln x\\).",
+          "options": [
+            "\\(x \\left(2 \\ln x + 1\\right)\\)",
+            "\\(2 x \\ln x\\)",
+            "\\(x\\)",
+            "\\(x^{2} \\ln x\\)",
+            "\\(x \\left(2 \\ln x + 1\\right) + 2\\)",
+            "\\(x \\left(2 \\ln x + 1\\right) - 2\\)",
+            "\\(x \\left(2 \\ln x + 1\\right) + 3\\)",
+            "\\(x \\left(2 \\ln x + 1\\right) - 3\\)",
+            "\\(x \\left(2 \\ln x + 1\\right) + 5\\)",
+            "\\(x \\left(2 \\ln x + 1\\right) - 5\\)"
+          ],
+          "answer": 0,
+          "hint": "Name the two factors first, then apply the product rule and include both terms.",
+          "keyPoints": [
+            {
+              "text": "\\(x^2\\ln x\\)",
+              "note": "This is the expression to differentiate; identify its structure before applying a rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the two factors: \\(u=x^{2}\\) and \\(v=\\ln x\\). Use the product rule \\( (uv)\\prime=u\\prime v+uv\\prime\\).",
+              "work": "\\(u\\prime=2 x,\\quad v\\prime=\\frac{1}{x}\\)"
+            },
+            {
+              "explain": "Substitute both product-rule terms; keep both terms in the sum.",
+              "work": "\\(2 x\\cdot\\ln x+x^{2}\\cdot\\frac{1}{x}\\)"
+            },
+            {
+              "explain": "Add the two contributions and simplify.",
+              "work": "\\(x \\left(2 \\ln x + 1\\right)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "130",
+            "sourceQuestion": "49iii",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p130-q50-ii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Differentiate \\(\\ln(5x-1)\\).",
+          "options": [
+            "\\(\\frac{5}{5 x - 1}\\)",
+            "\\(\\frac{5}{2 \\left(5 x - 1\\right)}\\)",
+            "\\(- \\frac{5}{5 x - 1}\\)",
+            "\\(\\log{\\left(5 x - 1 \\right)}\\)",
+            "\\(\\frac{10 x + 3}{5 x - 1}\\)",
+            "\\(\\frac{7 - 10 x}{5 x - 1}\\)",
+            "\\(\\frac{15 x + 2}{5 x - 1}\\)",
+            "\\(\\frac{8 - 15 x}{5 x - 1}\\)",
+            "\\(\\frac{25 x}{5 x - 1}\\)",
+            "\\(\\frac{5 \\left(2 - 5 x\\right)}{5 x - 1}\\)"
+          ],
+          "answer": 0,
+          "hint": "Differentiate the outer function and multiply by the derivative of the inner expression.",
+          "keyPoints": [
+            {
+              "text": "\\(\\ln(5x-1)\\)",
+              "note": "This is the expression to differentiate; identify its structure before applying a rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the outside function and the inside expression. Differentiate the outside, then multiply by the derivative of the inside.",
+              "work": "\\(\\text{chain rule gives }\\frac{5}{5 x - 1}\\)"
+            },
+            {
+              "explain": "Simplify the factors and keep any coefficient from the inside derivative.",
+              "work": "\\(\\frac{5}{5 x - 1}\\)"
+            },
+            {
+              "explain": "State the simplified derivative.",
+              "work": "\\(\\frac{5}{5 x - 1}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "130",
+            "sourceQuestion": "50ii",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-003-app-q36",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the gradient of the tangent to the curve y = ln(3x) at the point where x = 2.",
+          "options": [
+            {
+              "text": "1/2"
+            },
+            {
+              "text": "1/6"
+            },
+            {
+              "text": "3/2"
+            },
+            {
+              "text": "1/3"
+            }
+          ],
+          "answer": 0,
+          "hint": "The derivative of ln(3x) is 1/x by the chain rule. Substitute x=2.",
+          "steps": [
+            {
+              "explain": "Differentiate using the chain rule.",
+              "work": "\\(\\frac{dy}{dx}=\\frac{1}{3x}\\cdot3=\\frac1x\\)"
+            },
+            {
+              "explain": "Substitute x=2.",
+              "work": "\\(\\frac{dy}{dx}\\big|_{x=2}=\\frac12\\)"
+            },
+            {
+              "explain": "This derivative value is the tangent gradient.",
+              "work": "\\(\\boxed{\\frac12}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 003",
+            "page": "147-159",
+            "course": "Advanced",
+            "sourceQuestion": "q36"
+          }
         }
       ]
     },
@@ -9468,6 +10370,62 @@
           "hint": "Work through the parts in order; later parts often use earlier results.",
           "solution": "See parts — each sub-question has a full model solution.",
           "timeLimit": 300
+        },
+        {
+          "id": "y12a-advanced-003-app-y12a-advanced-003-app-q05",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A population, P, which is initially 5000, varies according to P = 5000b^(−t/10), where b is a positive constant and t is time in years, t ≥ 0. The population is 1250 after 20 years. Find the value of t, correct to one decimal place, for which the instantaneous rate of decrease is 30 people per year.",
+          "options": [
+            {
+              "text": "35.3 years"
+            },
+            {
+              "text": "20.0 years"
+            },
+            {
+              "text": "30.0 years"
+            },
+            {
+              "text": "50.0 years"
+            }
+          ],
+          "answer": 0,
+          "hint": "First use P(20)=1250 to determine b. Differentiate P(t), set dP/dt=−30, then solve the exponential equation with logarithms.",
+          "steps": [
+            {
+              "explain": "Use the known population at t=20 to find b.",
+              "work": "\\(1250=5000b^{-20/10}=5000b^{-2}\\Rightarrow b^2=4\\)"
+            },
+            {
+              "explain": "Because b is positive, choose b=2. Rewrite the model as P=5000·2^(−t/10).",
+              "work": "\\(b=2,\\quad P=5000\\cdot2^{-t/10}\\)"
+            },
+            {
+              "explain": "Differentiate with the chain rule. The factor from differentiating −t/10 is −1/10.",
+              "work": "\\(\\frac{dP}{dt}=5000\\ln2\\cdot2^{-t/10}(-\\frac1{10})=-500\\ln2\\cdot2^{-t/10}\\)"
+            },
+            {
+              "explain": "A rate of decrease of 30 people per year means dP/dt=−30. Isolate the exponential term.",
+              "work": "\\(-30=-500\\ln2\\cdot2^{-t/10}\\Rightarrow2^{-t/10}=\\frac{3}{50\\ln2}\\)"
+            },
+            {
+              "explain": "Take natural logarithms of both sides and solve for t.",
+              "work": "\\(-\\frac{t}{10}\\ln2=\\ln(\\frac{3}{50\\ln2})\\Rightarrow t=-10\\frac{\\ln(\\frac{3}{50\\ln2})}{\\ln2}\\approx35.3\\)"
+            },
+            {
+              "explain": "Round to one decimal place as requested.",
+              "work": "\\(\\boxed{35.3\\text{ years}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 003",
+            "page": "142-143, 156-157",
+            "course": "Advanced",
+            "sourceQuestion": "y12a"
+          }
         }
       ]
     },
@@ -15810,6 +16768,237 @@
               "note": "The inner function is tan x and its derivative is sec²x."
             }
           ]
+        },
+        {
+          "id": "y12a-advanced-002-p126-q01",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the derivative of \\(\\log_a x\\).",
+          "options": [
+            "\\(\\dfrac{x}{\\ln a}\\)",
+            "\\(\\dfrac{1}{x\\ln a}\\)",
+            "\\(\\dfrac{\\ln a}{x}\\)",
+            "\\(\\dfrac{1}{\\ln(ax)}\\)"
+          ],
+          "answer": 1,
+          "hint": "Rewrite the logarithm using natural logarithms: \\(\\log_a x=\\dfrac{\\ln x}{\\ln a}\\).",
+          "keyPoints": [
+            {
+              "text": "Find the derivative of \\(\\log_a x\\).",
+              "note": "Focus on this given expression or condition before choosing the derivative rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write \\(\\log_a x=\\dfrac{\\ln x}{\\ln a}\\). The denominator \\(\\ln a\\) is constant.",
+              "work": "\\(\\log_a x=\\dfrac{\\ln x}{\\ln a}\\)"
+            },
+            {
+              "explain": "Differentiate the numerator: \\((\\ln x)prime=\\dfrac1x\\).",
+              "work": "\\((\\ln x)prime=\\dfrac1x\\)"
+            },
+            {
+              "explain": "Therefore \\((\\log_a x)prime=\\dfrac1{\\ln a}\\cdot\\dfrac1x=\\boxed{\\dfrac1{x\\ln a}}\\).",
+              "work": "\\((\\log_a x)prime=\\dfrac1{\\ln a}\\cdot\\dfrac1x=\\boxed{\\dfrac1{x\\ln a}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "126-127",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p126-q07-i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Use the logarithmic laws to simplify \\(6\\log_e(x^3)\\).",
+          "options": [
+            "\\(18\\ln x\\)",
+            "\\(6\\ln(3x)\\)",
+            "\\(3\\ln(6x)\\)",
+            "\\(6\\ln x+3\\)"
+          ],
+          "answer": 0,
+          "hint": "Use \\(\\ln(x^3)=3\\ln x\\), then multiply by 6.",
+          "keyPoints": [
+            {
+              "text": "Use the logarithmic laws to simplify \\(6\\log_e(x^3)\\).",
+              "note": "Focus on this given expression or condition before choosing the derivative rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Rewrite \\(\\log_e(x^3)\\) as \\(\\ln(x^3)\\).",
+              "work": "\\(\\log_e(x^3)\\)"
+            },
+            {
+              "explain": "Apply the power law: \\(\\ln(x^3)=3\\ln x\\).",
+              "work": "\\(\\ln(x^3)=3\\ln x\\)"
+            },
+            {
+              "explain": "Multiply by 6: \\(6(3\\ln x)=\\boxed{18\\ln x}\\).",
+              "work": "\\(6(3\\ln x)=\\boxed{18\\ln x}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "126-127",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p126-q07-ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Hence find \\(f\\prime(9)\\) if \\(f(x)=6\\log_e(x^3)\\).",
+          "options": [
+            "\\(2\\)",
+            "\\(6\\)",
+            "\\(18\\)",
+            "\\(\\dfrac{2}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "First simplify the function to \\(f(x)=18\\ln x\\), then differentiate.",
+          "keyPoints": [
+            {
+              "text": "Hence find \\(f\\prime(9)\\)",
+              "note": "Focus on this given expression or condition before choosing the derivative rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "From the previous part, \\(f(x)=18\\ln x\\).",
+              "work": "\\(f(x)=18\\ln x\\)"
+            },
+            {
+              "explain": "Differentiate: \\(fprime(x)=\\dfrac{18}{x}\\).",
+              "work": "\\(fprime(x)=\\dfrac{18}{x}\\)"
+            },
+            {
+              "explain": "Substitute \\(x=9\\): \\(fprime(9)=\\dfrac{18}{9}=\\boxed2\\).",
+              "work": "\\(x=9\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "126-127",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p126-q12-i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the approximate number of animals after 10 years and after 20 years if \\(f(x)=1000-65\\ln x\\), where \\(x\\) is the number of years after the start of the program.",
+          "options": [
+            "About 850 after 10 years and 805 after 20 years",
+            "About 805 after 10 years and 850 after 20 years",
+            "About 935 after 10 years and 870 after 20 years",
+            "About 1000 after both 10 and 20 years"
+          ],
+          "answer": 0,
+          "hint": "Substitute 10 and 20 into \\(f(x)=1000-65\\ln x\\), using natural logarithms.",
+          "keyPoints": [],
+          "steps": [
+            {
+              "explain": "At 10 years: \\(f(10)=1000-65\\ln10\\approx1000-149.67\\approx850\\).",
+              "work": "\\(f(10)=1000-65\\ln10\\approx1000-149.67\\approx850\\)"
+            },
+            {
+              "explain": "At 20 years: \\(f(20)=1000-65\\ln20\\approx1000-194.70\\approx805\\).",
+              "work": "\\(f(20)=1000-65\\ln20\\approx1000-194.70\\approx805\\)"
+            },
+            {
+              "explain": "So the estimates are about 850 animals after 10 years and 805 after 20 years.",
+              "work": ""
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "126-127",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p126-q12-ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find \\(f\\prime(10)\\) and \\(f\\prime(20)\\) if \\(f(x)=1000-65\\ln x\\).",
+          "options": [
+            "\\(f\\prime(10)=-6.5,\\ f\\prime(20)=-3.25\\)",
+            "\\(f\\prime(10)=6.5,\\ f\\prime(20)=3.25\\)",
+            "\\(f\\prime(10)=-65,\\ f\\prime(20)=-65\\)",
+            "\\(f\\prime(10)=-3.25,\\ f\\prime(20)=-6.5\\)"
+          ],
+          "answer": 0,
+          "hint": "Differentiate \\(1000-65\\ln x\\) first.",
+          "keyPoints": [],
+          "steps": [
+            {
+              "explain": "Differentiate: \\(fprime(x)=-65\\cdot\\frac1x=-\\frac{65}{x}\\).",
+              "work": "\\(fprime(x)=-65\\cdot\\frac1x=-\\frac{65}{x}\\)"
+            },
+            {
+              "explain": "At \\(x=10\\): \\(fprime(10)=-\\frac{65}{10}=-6.5\\).",
+              "work": "\\(x=10\\)"
+            },
+            {
+              "explain": "At \\(x=20\\): \\(fprime(20)=-\\frac{65}{20}=-3.25\\).",
+              "work": "\\(x=20\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "126-127",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12a-advanced-002-p126-q12-iii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Briefly explain what conclusion can be reached about the number of those animals in the park over that time.",
+          "options": [
+            "The number is increasing at an increasing rate.",
+            "The number is decreasing, but at a decreasing rate.",
+            "The number is constant.",
+            "The number is decreasing at an increasing rate."
+          ],
+          "answer": 1,
+          "hint": "Use the negative values of \\(fprime(10)\\) and \\(fprime(20)\\), and compare their magnitudes.",
+          "keyPoints": [],
+          "steps": [
+            {
+              "explain": "Both derivatives are negative, so the modelled number of animals is decreasing.",
+              "work": ""
+            },
+            {
+              "explain": "The rate changes from \\(6.5\\) animals per year in magnitude to \\(3.25\\) animals per year.",
+              "work": "\\(6.5\\)"
+            },
+            {
+              "explain": "The decrease is slower later, so the number is decreasing at a decreasing rate.",
+              "work": ""
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 002",
+            "page": "126-127",
+            "course": "Advanced"
+          }
         }
       ]
     },
