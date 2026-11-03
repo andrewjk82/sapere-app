@@ -6,7 +6,7 @@ import {
   serverTimestamp,
   setDoc,
   deleteDoc,
-} from "../firebase/firestoreWrapper";
+} from "firebase/firestore";
 import { readChapterIndex } from "./questionIndexService";
 import { getQuestionsByIds as cdnByIds } from "./contentLoader";
 import { db } from "../firebase/config";

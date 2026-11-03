@@ -15,7 +15,6 @@
 
 import { doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
 import { db } from '../firebase/config';
-import { trackRead, trackWrite } from './trafficTrackerService';
 
 const DEVICE_ID_KEY = 'sapere:device_id';
 
@@ -55,7 +54,6 @@ export const publishSessionTransition = async ({ uid, phase, subject, deviceId }
       updatedAt: serverTimestamp(),
       clientUpdatedMs: Date.now(),
     }, { merge: true });
-    trackWrite(1, 'study_session_state');
   } catch (err) {
     console.warn('[studySessionSync] publish failed:', err?.code || err);
   }
@@ -73,7 +71,6 @@ export const fetchRemoteSessionState = async (uid, timeoutMs = REMOTE_CHECK_TIME
   if (!uid) return null;
   try {
     const read = getDoc(sessionDocRef(uid)).then((snap) => {
-      trackRead(1, 'study_session_state');
       return snap.exists() ? snap.data() : null;
     });
     const timeout = new Promise((resolve) => { setTimeout(() => resolve(null), timeoutMs); });

@@ -8,6 +8,8 @@ import { useToast } from '../context/ToastContext';
 import { useAdminFeed } from '../context/AdminFeedContext';
 import { useProfile } from '../context/ProfileContext';
 import { db } from '../firebase/config';
+import { subscribeStudentSessions } from '../services/studentSessionsService';
+import { hasRecentPractice, recentPracticeDay } from '../utils/recentPractice';
 import { doc, onSnapshot, setDoc, updateDoc, deleteDoc, getDoc, getDocs, increment, serverTimestamp, collection, addDoc, query, where, or, orderBy, limit } from 'firebase/firestore';
 import { gradeSubmission } from '../services/gradingService';
 import { localCache } from '../services/localCacheService';
@@ -83,7 +85,21 @@ const TodayPlanCard = ({ items }) => {
   );
 };
 
-const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent, setActiveTab, onShowLeaderboard, onOpenJourneyMap, onNavigateToTraffic }) => {
+// Mon→Sun of the current week: [{ day, dateStr, isToday }].
+const buildPracticeWeekDays = (now = new Date()) => {
+  const DAY_LABELS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+  const dow = now.getDay(); // 0 = Sun
+  const mondayOffset = dow === 0 ? -6 : 1 - dow;
+  const todayStr = now.toLocaleDateString('en-CA');
+  return DAY_LABELS.map((day, i) => {
+    const d = new Date(now);
+    d.setDate(now.getDate() + mondayOffset + i);
+    const dateStr = d.toLocaleDateString('en-CA');
+    return { day, dateStr, isToday: dateStr === todayStr };
+  });
+};
+
+const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent, setActiveTab, onShowLeaderboard, onOpenJourneyMap }) => {
   const { user, isAdmin } = useAuth();
   const { showToast } = useToast();
   const { profile } = useProfile();
@@ -96,10 +112,21 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
   const [selectedViewSession, setSelectedViewSession] = useState(null);
   const [lastSync, setLastSync] = useState(null);
   const [isSyncing, setIsSyncing] = useState(false);
-  const [dailyStats, setDailyStats] = useState([]);
   // Mon→Sun daily practice results for the dashboard bar chart.
   // [{ day, dateStr, score, total, completed, isToday }]
-  const [weekPractice, setWeekPractice] = useState([]);
+  const [legacyWeekPractice, setWeekPractice] = useState([]);
+  // Students whose users/{uid} already carries the recentPractice summary get the chart from the live profile —
+  // zero reads. Everyone else (until their first quiz after this shipped) keeps the 7 point reads below.
+  const summaryWeekPractice = useMemo(() => {
+    if (isAdmin || !hasRecentPractice(profile)) return null;
+    return buildPracticeWeekDays().map((w) => {
+      const e = recentPracticeDay(profile, 'daily', w.dateStr);
+      return e
+        ? { ...w, score: Number(e.score) || 0, total: Number(e.total) || 0, completed: e.completed === true }
+        : { ...w, score: 0, total: 0, completed: false };
+    });
+  }, [isAdmin, profile]);
+  const weekPractice = summaryWeekPractice || legacyWeekPractice;
   // Bumped when Daily Practice finishes so we re-fetch even within the same day.
   const [weekPracticeEpoch, setWeekPracticeEpoch] = useState(0);
   const { pendingGrading: feedPendingGrading } = useAdminFeed();
@@ -111,44 +138,6 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
   const [importDone, setImportDone] = useState(false);
   const [isSeedingLeaderboard, setIsSeedingLeaderboard] = useState(false);
   const [isRefreshing, setIsRefreshing] = useState(false);
-
-  // Fetch student daily stats for insights. Stat docs are heavy (full question
-  // arrays) and insights only change when a new challenge is submitted, so
-  // read once per day per device (date-keyed cache) instead of subscribing.
-  useEffect(() => {
-    if (!user?.uid || isAdmin) return undefined;
-    const today = new Date().toLocaleDateString('en-CA');
-    const cacheKey = `dashboard-insights-${user.uid}`;
-    const cached = localCache.get(cacheKey);
-    if (cached?.date === today && Array.isArray(cached.stats)) {
-      setDailyStats(cached.stats);
-      return undefined;
-    }
-    let cancelled = false;
-    const statsQuery = query(
-      collection(db, 'users', user.uid, 'daily_stats'),
-      orderBy('timestamp', 'desc'),
-      limit(7)
-    );
-    getDocs(statsQuery).then((snap) => {
-      if (cancelled) return;
-      // Keep only the fields learningInsights reads — full stat docs carry
-      // question arrays/sketches too large for the localStorage cache.
-      const stats = snap.docs.map((d) => {
-        const data = d.data();
-        return {
-          id: d.id,
-          userAnswers: data.userAnswers,
-          questions: Array.isArray(data.questions)
-            ? data.questions.map((q) => ({ type: q?.type, answer: q?.answer }))
-            : data.questions,
-        };
-      });
-      setDailyStats(stats);
-      localCache.set(cacheKey, { date: today, stats });
-    }).catch((err) => console.warn('insights stats fetch failed:', err?.code || err));
-    return () => { cancelled = true; };
-  }, [user?.uid, isAdmin]);
 
   // Live-refresh: when Daily Practice finishes, patch today's bar immediately
   // and bump epoch so we re-read from Firestore (truth) in the background.
@@ -179,23 +168,12 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
   // 7 point-reads by doc id — no collection scan.
   // Cached for the calendar day, but invalidated when practice finishes
   // (see finishQuiz + weekPracticeEpoch).
+  const useWeekSummary = Boolean(summaryWeekPractice);
   useEffect(() => {
-    if (!user?.uid || isAdmin) return undefined;
+    if (!user?.uid || isAdmin || useWeekSummary) return undefined;
 
-    const DAY_LABELS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
     const now = new Date();
-    const dow = now.getDay(); // 0 = Sun
-    const mondayOffset = dow === 0 ? -6 : 1 - dow;
-    const weekDays = DAY_LABELS.map((day, i) => {
-      const d = new Date(now);
-      d.setDate(now.getDate() + mondayOffset + i);
-      const dateStr = d.toLocaleDateString('en-CA');
-      return {
-        day,
-        dateStr,
-        isToday: dateStr === now.toLocaleDateString('en-CA'),
-      };
-    });
+    const weekDays = buildPracticeWeekDays(now);
     const weekStart = weekDays[0].dateStr;
     const today = now.toLocaleDateString('en-CA');
     const cacheKey = `dashboard-week-practice-v1-${user.uid}`;
@@ -234,35 +212,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
       }
     })();
     return () => { cancelled = true; };
-  }, [user?.uid, isAdmin, weekPracticeEpoch]);
-
-  const learningInsights = useMemo(() => {
-    if (dailyStats.length === 0) return [];
-    
-    const topicMistakes = {};
-    const topicTotals = {};
-    
-    dailyStats.forEach(stat => {
-      if (!stat.questions || !stat.userAnswers) return;
-      stat.questions.forEach((q, idx) => {
-        const type = q.type ? q.type.split('_').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ') : 'General';
-        topicTotals[type] = (topicTotals[type] || 0) + 1;
-        if (q.answer !== stat.userAnswers[idx]) {
-          topicMistakes[type] = (topicMistakes[type] || 0) + 1;
-        }
-      });
-    });
-    
-    const topics = Object.keys(topicTotals).map(type => ({
-      type,
-      mistakes: topicMistakes[type] || 0,
-      total: topicTotals[type],
-      errorRate: ((topicMistakes[type] || 0) / topicTotals[type]) * 100
-    }));
-    
-    topics.sort((a, b) => b.errorRate - a.errorRate);
-    return topics.filter(t => t.total >= 3 && t.errorRate > 0).slice(0, 3);
-  }, [dailyStats]);
+  }, [user?.uid, isAdmin, weekPracticeEpoch, useWeekSummary]);
 
   // ── Fetch Last Sync Info ──
   useEffect(() => {
@@ -318,16 +268,14 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
 
   useEffect(() => {
     if (!user?.uid || isAdmin) return undefined;
-    const qId = query(collection(db, 'sessions'), where('studentId', '==', user.uid));
-    const unsubId = onSnapshot(qId, (snap) => {
-      const docs = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+    // Shared, date-windowed listener (services/studentSessionsService) — not the whole lesson history.
+    return subscribeStudentSessions(user.uid, (docs) => {
       setStudentSessions(docs);
       setSessionsLoading(false);
     }, (error) => {
-      console.warn("Dashboard session fetch error:", error.message);
+      console.warn("Dashboard session fetch error:", error?.message || error);
       setSessionsLoading(false);
     });
-    return () => unsubId();
   }, [user?.uid, isAdmin]);
 
   // Small "Continue" chip on the Next Lesson card: straight back to what was last studied (this browser only).
@@ -425,12 +373,21 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
   // once completed (an open calc can still finish while the app is open).
   const calcEnabled = !isAdmin && profile?.calculationEnabled !== false;
   const calcCacheKey = `dashboard-calc-today-v1-${user?.uid}`;
-  const [calcToday, setCalcToday] = useState(() => {
+  const [legacyCalcToday, setCalcToday] = useState(() => {
     const cached = localCache.get(calcCacheKey);
     return cached?.date === new Date().toLocaleDateString('en-CA') && cached.completed ? cached : null;
   });
+  // From the live profile's recentPractice summary when present — no read at all.
+  const summaryCalcToday = useMemo(() => {
+    if (!calcEnabled || !hasRecentPractice(profile)) return null;
+    const today = new Date().toLocaleDateString('en-CA');
+    const e = recentPracticeDay(profile, 'calc', today);
+    return { date: today, completed: e?.completed === true, score: Number(e?.score) || 0, total: Number(e?.total) || 0 };
+  }, [calcEnabled, profile]);
+  const calcToday = summaryCalcToday || legacyCalcToday;
+  const useCalcSummary = Boolean(summaryCalcToday);
   useEffect(() => {
-    if (!user?.uid || !calcEnabled) return undefined;
+    if (!user?.uid || !calcEnabled || useCalcSummary) return undefined;
     const today = new Date().toLocaleDateString('en-CA');
     if (calcToday?.date === today && calcToday.completed) return undefined;
     let cancelled = false;
@@ -443,7 +400,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
     }).catch((err) => console.warn('calc today fetch failed:', err?.code || err));
     return () => { cancelled = true; };
     // eslint-disable-next-line react-hooks/exhaustive-deps -- calcToday is only the cache short-circuit
-  }, [user?.uid, calcEnabled]);
+  }, [user?.uid, calcEnabled, useCalcSummary]);
 
   // A finished OC / Selective / Scholarship daily set ticks its row (the set's history is on this device).
   const [specialTick, setSpecialTick] = useState(0);
@@ -932,7 +889,6 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
             onReviewAll={() => setActiveTab('Reports')}
             onSendReminders={handleManualSync}
             setActiveTab={setActiveTab}
-            onNavigateToTraffic={onNavigateToTraffic}
           />
         )}
       </motion.div>

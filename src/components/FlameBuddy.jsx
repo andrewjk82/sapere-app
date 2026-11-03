@@ -5,14 +5,15 @@
  */
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { collection, doc, getDoc, getDocs, limit, orderBy, query, where } from 'firebase/firestore';
+import { collection, doc, getDoc, getDocs, limit, orderBy, query } from 'firebase/firestore';
 import { db } from '../firebase/config';
+import { subscribeStudentSessions } from '../services/studentSessionsService';
+import { hasRecentPractice, recentPracticeDay, recentPracticeList } from '../utils/recentPractice';
 import { localCache } from '../services/localCacheService';
 import { getDueCount } from '../utils/secretNote';
 import { normalizeSubjectLabel } from '../utils/subjectLabels';
 import {
   getCachedSessions,
-  setCachedSessions,
   pickNextSession,
   SESSIONS_CACHE_EVENT,
 } from '../utils/sessionsCache';
@@ -1627,10 +1628,10 @@ function FlameSvg({ idPrefix = '' } = {}) {
  */
 export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidden = false }) {
   const hour = useLocalHour();
-  const [tasks, setTasks] = useState({ dailyDone: false, calcDone: false, loaded: false });
+  const [legacyTasks, setTasks] = useState({ dailyDone: false, calcDone: false, loaded: false });
   const [nextSession, setNextSession] = useState(null);
   // Recent daily_stats for Challenge-tab performance briefing (topicStats only).
-  const [recentPerf, setRecentPerf] = useState([]);
+  const [legacyRecentPerf, setRecentPerf] = useState([]);
   // Exam Prep local snapshot for tab-specific coaching (IDB pool + localStorage).
   const [examPrepSnap, setExamPrepSnap] = useState(null);
   const [bubbleOpen, setBubbleOpen] = useState(false);
@@ -1660,6 +1661,24 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
 
   const calcEnabled = profile?.calculationEnabled !== false;
   const today = new Date().toLocaleDateString('en-CA');
+  // Today's task status and the recent-performance briefing come from the live profile's recentPractice summary
+  // (utils/recentPractice) when it exists — no daily_stats / calc_stats reads. Older profiles keep the reads below.
+  const usePracticeSummary = hasRecentPractice(profile);
+  const summaryTasks = useMemo(() => {
+    if (!usePracticeSummary) return null;
+    return {
+      dailyDone: recentPracticeDay(profile, 'daily', today)?.completed === true,
+      calcDone: !calcEnabled || recentPracticeDay(profile, 'calc', today)?.completed === true,
+      loaded: true,
+    };
+  }, [usePracticeSummary, profile, today, calcEnabled]);
+  const tasks = summaryTasks || legacyTasks;
+  const summaryRecentPerf = useMemo(() => (usePracticeSummary
+    ? recentPracticeList(profile, 'daily').slice(0, 7).map((e) => ({
+        id: e.id, score: e.score, total: e.total, topicStats: e.topicStats || null, answerResults: null,
+      }))
+    : null), [usePracticeSummary, profile]);
+  const recentPerf = summaryRecentPerf || legacyRecentPerf;
   const firstName = useMemo(() => studentFirstName(profile), [profile]);
   const unreadFeedback = Number(profile?.unreadFeedbackCount) || 0;
 
@@ -1721,7 +1740,7 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
 
   // Load today's completion (same cheap point-reads as old nudge cards).
   const refreshTasks = useCallback(async () => {
-    if (!uid) return;
+    if (!uid || usePracticeSummary) return;
     const cacheKey = `flame-buddy-tasks-${uid}`;
     const cached = localCache.get(cacheKey);
     if (cached?.date === today && cached.dailyDone && (cached.calcDone || !calcEnabled)) {
@@ -1742,7 +1761,7 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
       console.warn('[FlameBuddy] task status failed:', e?.code || e);
       setTasks((t) => ({ ...t, loaded: true }));
     }
-  }, [uid, today, calcEnabled]);
+  }, [uid, today, calcEnabled, usePracticeSummary]);
 
   useEffect(() => {
     refreshTasks();
@@ -1770,24 +1789,22 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
     };
     window.addEventListener(SESSIONS_CACHE_EVENT, onCacheUpdated);
 
-    let cancelled = false;
+    // One-shot bootstrap when nothing is cached: take the first answer of the shared, date-windowed sessions
+    // listener (free if Dashboard / Schedule already hold it), then let go — they keep the cache fresh.
+    let stopBootstrap = () => {};
     if (!getCachedSessions(uid)) {
-      (async () => {
-        try {
-          // One-shot bootstrap only. Schedule will keep the cache fresh thereafter.
-          const snap = await getDocs(query(collection(db, 'sessions'), where('studentId', '==', uid)));
-          if (cancelled) return;
-          const docs = snap.docs.map((d) => ({ id: d.id, ...d.data() }));
-          setCachedSessions(uid, docs);
-          setNextSession(pickNextSession(docs));
-        } catch (e) {
-          console.warn('[FlameBuddy] session bootstrap failed:', e?.code || e);
-        }
-      })();
+      let done = false;
+      stopBootstrap = subscribeStudentSessions(uid, (docs) => {
+        if (done) return;
+        done = true;
+        setNextSession(pickNextSession(docs));
+        // Unsubscribing synchronously inside the callback would race the listener set being iterated.
+        setTimeout(() => stopBootstrap(), 0);
+      }, (e) => console.warn('[FlameBuddy] session bootstrap failed:', e?.code || e));
     }
 
     return () => {
-      cancelled = true;
+      stopBootstrap();
       window.removeEventListener(SESSIONS_CACHE_EVENT, onCacheUpdated);
     };
   }, [uid]);
@@ -1830,7 +1847,7 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
 
   // Recent performance for Challenge-tab briefing (last 7 daily_stats, slim fields).
   useEffect(() => {
-    if (!uid) return undefined;
+    if (!uid || usePracticeSummary) return undefined;
     // Load when opening Challenge, or once in the background after arrive.
     if (activeTab !== 'Challenge' && recentPerf.length > 0) return undefined;
 
@@ -1879,7 +1896,7 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
       }
     })();
     return () => { cancelled = true; };
-  }, [uid, today, activeTab, recentPerf.length]);
+  }, [uid, today, activeTab, recentPerf.length, usePracticeSummary]);
 
   // Cheer when daily practice completes (task flags + legacy short cheer).
   useEffect(() => {

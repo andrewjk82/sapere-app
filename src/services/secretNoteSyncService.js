@@ -21,7 +21,6 @@
 
 import { doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
 import { db } from '../firebase/config';
-import { trackRead, trackWrite } from './trafficTrackerService';
 
 const LAST_SYNCED_KEY = (uid, kind) => `sapere:sn-last-synced:${uid || 'anon'}:${kind}`;
 const LAST_PUSHED_SIG_KEY = (uid, kind) => `sapere:sn-last-pushed-sig:${uid || 'anon'}:${kind}`;
@@ -73,7 +72,6 @@ export const pullRemoteNoteIfNewer = async (uid, kind) => {
   if (!uid || !kind) return null;
   try {
     const snap = await getDoc(noteDocRef(uid, kind));
-    trackRead(1, 'secret_note_sync');
     if (!snap.exists()) return null;
     const data = snap.data();
     const remoteMs = Number(data?.updatedAtMs) || 0;
@@ -103,7 +101,6 @@ export const pushLocalNote = async (uid, kind, items) => {
       updatedAtMs,
       updatedAt: serverTimestamp(),
     });
-    trackWrite(1, 'secret_note_sync');
     setLastSyncedMs(uid, kind, updatedAtMs);
     setLastPushedSignature(uid, kind, sig);
   } catch (err) {

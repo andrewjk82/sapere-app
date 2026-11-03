@@ -17,7 +17,6 @@ import {
   collection, doc, getDocs, limit, query, serverTimestamp, setDoc, where,
 } from 'firebase/firestore';
 import { db } from '../firebase/config';
-import { trackRead, trackWrite } from './trafficTrackerService';
 
 const DRAFT_KEY_PREFIX = 'studytimer:notes:';
 
@@ -58,7 +57,6 @@ export const saveSessionNotes = async ({ uid, subject, items, durationSec, dateS
     durationSec: Math.max(0, Math.floor(durationSec || 0)),
     createdAt: serverTimestamp(),
   });
-  trackWrite(1, 'study_notes');
   return id;
 };
 
@@ -69,7 +67,6 @@ export const fetchSubjectNotes = async (uid, subject, max = 60) => {
     where('subjectKey', '==', subjectKey(subject)),
     limit(max),
   ));
-  trackRead(Math.max(1, snap.size), 'study_notes');
   const msOf = (d) => Number(d.createdMs) || Number(String(d.id).split('__').pop()) || 0;
   return snap.docs
     .map((d) => ({ id: d.id, ...d.data() }))
@@ -80,7 +77,6 @@ export const fetchSubjectNotes = async (uid, subject, max = 60) => {
 export const fetchAllNotes = async (uid, max = 100) => {
   if (!uid) return [];
   const snap = await getDocs(query(collection(db, 'users', uid, 'study_notes'), limit(max)));
-  trackRead(Math.max(1, snap.size), 'study_notes');
   const msOf = (d) => Number(d.createdMs) || Number(String(d.id).split('__').pop()) || 0;
   return snap.docs
     .map((d) => ({ id: d.id, ...d.data() }))

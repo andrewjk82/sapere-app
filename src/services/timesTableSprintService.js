@@ -26,7 +26,6 @@ import {
 } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { localCache } from './localCacheService';
-import { trackRead, trackWrite } from './trafficTrackerService';
 import { buildAvatarUrl, buildDisplayName } from '../utils/avatarUtils';
 import { getPreviousSprintWeekId } from '../utils/sprintWeek';
 import { SPRINT_TYPES, sprintBoardId } from '../utils/sprintTypes';
@@ -104,7 +103,6 @@ export const subscribeSprintMeta = (boardId, onChange) => {
         ? { weekId: boardId, ...snap.data() }
         : { weekId: boardId, version: 0, signature: '', top5: [], participantCount: 0 };
       // Cache hits are served locally by the SDK and cost nothing.
-      if (!snap.metadata.fromCache) trackRead(1, 'ttsprint_meta');
       writeCachedSprintMeta(boardId, data);
       onChange(data);
     },
@@ -141,7 +139,6 @@ const refreshTop5 = async (boardId) => {
     orderBy('bestTimeMs', 'asc'),
     limit(TOP_N),
   ));
-  trackRead(snap.size || 1, 'ttsprint_top5');
 
   const top5 = snap.docs.map((d) => {
     const data = d.data();
@@ -162,7 +159,6 @@ const refreshTop5 = async (boardId) => {
       where('weekId', '==', boardId),
     ));
     participantCount = agg.data().count || 0;
-    trackRead(1, 'ttsprint_count');
   } catch {
     /* count is decorative — never fail a run over it */
   }
@@ -189,7 +185,6 @@ const refreshTop5 = async (boardId) => {
     tx.set(metaRef, published, { merge: true });
   });
 
-  if (published) trackWrite(1, 'ttsprint_meta');
   return published;
 };
 
@@ -207,7 +202,6 @@ export const fetchSprintRank = async (boardId, bestTimeMs) => {
       where('weekId', '==', boardId),
       where('bestTimeMs', '<', bestTimeMs),
     ));
-    trackRead(1, 'ttsprint_rank');
     return (agg.data().count || 0) + 1;
   } catch (err) {
     console.warn('[ttsprint] rank lookup failed:', err?.code || err);
@@ -220,7 +214,6 @@ export const fetchMySprintResult = async (boardId, userId) => {
   if (!boardId || !userId) return null;
   try {
     const snap = await getDoc(doc(db, RESULTS_COLLECTION, `${boardId}_${userId}`));
-    trackRead(1, 'ttsprint_my_result');
     if (!snap.exists()) return null;
     const data = snap.data();
     writeCachedMyBest(boardId, userId, Number(data.bestTimeMs), Number(data.attemptsCount) || 0);
@@ -348,13 +341,12 @@ export const submitSprintRun = async ({
       updatedAt: serverTimestamp(),
     }, { merge: true });
   });
-  trackWrite(1, 'ttsprint_result');
   writeCachedMyBest(boardId, userId, bestTimeMs, attemptsCount);
 
   // Append-only audit trail. Never read on the hot path; failure is harmless.
   addDoc(collection(db, ATTEMPTS_COLLECTION), {
     userId, weekId: boardId, sprintType, timeMs, wrongCount, createdAt: serverTimestamp(),
-  }).then(() => trackWrite(1, 'ttsprint_attempt')).catch(() => {});
+  }).catch(() => {});
 
   let meta = currentMeta;
   if (improved && couldChangeTop5(currentMeta, userId, bestTimeMs)) {
