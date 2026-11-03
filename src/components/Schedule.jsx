@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useMemo, useCallback, useRef } from 'react';
-import { Calendar, Clock, ChevronLeft, ChevronRight, CheckCircle2, Trash2, X, Save, Check, List, BookOpen } from 'lucide-react';
+import { Calendar, Clock, ChevronLeft, ChevronRight, CheckCircle2, Trash2, X, Save, Check, List, BookOpen, PenLine } from 'lucide-react';
 import { db } from '../firebase/config';
 import { collection, query, where, onSnapshot, doc, updateDoc, deleteDoc, getDoc, getDocs, writeBatch } from 'firebase/firestore';
 import { useAuth } from '../context/AuthContext';
@@ -14,6 +14,9 @@ import { getCachedSessions, setCachedSessions } from '../utils/sessionsCache';
 import ScheduleLessonModal from './ScheduleLessonModal';
 import LessonTopicPicker from './schedule/LessonTopicPicker';
 import LessonWorkspace from './LessonWorkspace';
+import HomeworkRedo from './homework/HomeworkRedo';
+import { loadLessonMistakes, flushLessonMistakesIfDue, markLessonMistakesDone, onLessonMistakesChange } from '../services/lessonMistakesService';
+import { mistakesForLesson } from '../utils/lessonMistakes';
 import {
   groupMeta, findPreviousCoveredSession, findNextTopic, splitHomeworkExtra, composeHomework,
 } from '../utils/lessonTopics';
@@ -285,6 +288,10 @@ const Schedule = ({ students = [] }) => {
   }, [isAdmin, profile?.studySubjectExamDates]);
   const [selectedSession, setSelectedSession] = useState(null);
   const [lessonSession, setLessonSession] = useState(null);   // the lesson screen (PDF + notes) for this session
+  // "Check the mistake": the ✗ / ½ homework questions carried to this lesson, per student.
+  const [lessonMistakes, setLessonMistakes] = useState({});   // studentId → [{ sessionId, date, topics, marks, ... }]
+  const [mistakeReview, setMistakeReview] = useState(null);   // { item, studentId, studentName }
+  const [mistakesTick, setMistakesTick] = useState(0);
   // The red "now" line on today's column: moves once a minute.
   const [nowTick, setNowTick] = useState(() => new Date());
   useEffect(() => {
@@ -419,6 +426,41 @@ const Schedule = ({ students = [] }) => {
       unsub1();
     };
   }, [user?.uid, isAdmin]);
+
+  // Homework mistakes queued on this device are written once a day, in one batch.
+  useEffect(() => {
+    if (!isAdmin) return undefined;
+    flushLessonMistakesIfDue();
+    const onVisible = () => { if (document.visibilityState === 'visible') flushLessonMistakesIfDue(); };
+    document.addEventListener('visibilitychange', onVisible);
+    const off = onLessonMistakesChange(() => setMistakesTick((n) => n + 1));
+    return () => { document.removeEventListener('visibilitychange', onVisible); off(); };
+  }, [isAdmin]);
+
+  // One read per student (cached), only when the teacher opens a lesson.
+  const selectedStudents = useMemo(() => {
+    if (!selectedSession) return [];
+    const list = selectedSession.isGroupedClass
+      ? (selectedSession.groupStudents || []).map((g) => ({ studentId: g.studentId, studentName: g.studentName }))
+      : [{ studentId: selectedSession.studentId, studentName: selectedSession.studentName }];
+    return list.filter((s, i, all) => s.studentId && all.findIndex((o) => o.studentId === s.studentId) === i);
+  }, [selectedSession]);
+  useEffect(() => {
+    if (!isAdmin || selectedStudents.length === 0) return undefined;
+    let cancelled = false;
+    selectedStudents.forEach(({ studentId }) => {
+      loadLessonMistakes(studentId).then((items) => {
+        if (!cancelled) setLessonMistakes((prev) => ({ ...prev, [studentId]: items }));
+      });
+    });
+    return () => { cancelled = true; };
+  }, [isAdmin, selectedStudents, mistakesTick]);
+  const selectedMistakes = useMemo(() => (
+    selectedSession
+      ? selectedStudents.flatMap(({ studentId, studentName }) => mistakesForLesson(lessonMistakes[studentId] || [], selectedSession.date)
+        .map((item) => ({ item, studentId, studentName })))
+      : []
+  ), [selectedSession, selectedStudents, lessonMistakes]);
 
   // ── Helpers ────────────────────────────────────────────────────────────────
   const handleOpenDetails = (session) => {
@@ -1235,6 +1277,26 @@ const Schedule = ({ students = [] }) => {
                         <BookOpen size={17} /> Open lesson
                       </button>
                     )}
+                    {isAdmin && selectedMistakes.length > 0 && (
+                      <div style={{ marginTop: 10, display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+                        {selectedMistakes.map((m) => {
+                          const count = Object.keys(m.item.marks || {}).length;
+                          const who = selectedMistakes.some((o) => o.studentId !== m.studentId) ? ` · ${m.studentName || ''}` : '';
+                          const when = selectedMistakes.filter((o) => o.studentId === m.studentId).length > 1 ? ` · ${m.item.date}` : '';
+                          return (
+                            <button
+                              key={`${m.studentId}:${m.item.sessionId}`}
+                              type="button"
+                              onClick={() => setMistakeReview(m)}
+                              title={`Homework from ${m.item.date}${m.item.mark ? ` (${m.item.mark})` : ''}`}
+                              style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '10px 16px', borderRadius: 12, border: 0, background: '#fef2f2', color: '#b91c1c', fontWeight: 900, fontSize: '0.88rem', cursor: 'pointer', boxShadow: '0 6px 16px rgba(15,23,42,0.18)' }}
+                            >
+                              <PenLine size={17} /> Check the mistake ({count}){who}{when}
+                            </button>
+                          );
+                        })}
+                      </div>
+                    )}
                     
                     {(selectedSession.isGroupedClass || selectedSession.groupStudentNames) && (
                       <div style={{ marginTop: '16px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
@@ -1663,6 +1725,22 @@ const Schedule = ({ students = [] }) => {
         )}
       </AnimatePresence>
 
+      {mistakeReview && (
+        <HomeworkRedo
+          item={mistakeReview.item}
+          user={user}
+          teacher={{
+            studentId: mistakeReview.studentId,
+            studentName: mistakeReview.studentName,
+            studentProfile: studentProfileCache[mistakeReview.studentId] || null,
+            onDone: () => {
+              markLessonMistakesDone({ studentId: mistakeReview.studentId, sessionId: mistakeReview.item.sessionId });
+              setMistakeReview(null);
+            },
+          }}
+          onClose={() => setMistakeReview(null)}
+        />
+      )}
       {lessonSession && <LessonWorkspace session={lessonSession} students={[...Object.values(studentProfileCache), ...students]} onClose={() => setLessonSession(null)} />}
     </div>
   );

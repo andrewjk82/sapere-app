@@ -25,7 +25,9 @@ const GLYPH = { c: '✓', x: '✗', h: '½' };
 const MARK_BG = { c: '#10b981', x: '#ef4444', h: '#f59e0b' };
 
 // Local storage key: a separate "uid" so this never touches the real homework record.
+// The teacher's copy in a lesson ("Check the mistake") is kept apart from anything of their own.
 const storeUid = (uid) => `redo-${uid}`;
+const lessonStoreUid = (studentId) => `lesson-${studentId}`;
 
 /**
  * Redo the questions the teacher marked wrong (✗ / ½). Worksheet on the left, the
@@ -33,8 +35,14 @@ const storeUid = (uid) => `redo-${uid}`;
  * the student can look at the answer and say "Got it" / "Still wrong". Notes and
  * verdicts live only on this device (no Firestore writes), so the teacher can look at
  * them in class; the only read is the answer image, cached on the device.
+ *
+ * `teacher` ({ studentId, studentName, studentProfile, onDone }) opens the same screen for the
+ * teacher in the student's next lesson ("Check the mistake"), to go through it together. The
+ * teacher's notes stay on the teacher's device; "Done together" calls onDone.
  */
-const HomeworkRedo = ({ item, user, profile, onClose }) => {
+const HomeworkRedo = ({ item, user, profile, onClose, teacher = null }) => {
+  const storeKey = teacher ? lessonStoreUid(teacher.studentId) : storeUid(user?.uid);
+  const pdfProfile = teacher ? teacher.studentProfile : profile;
   const canvasRef = useRef(null);
   const draftsRef = useRef({});
   const statusRef = useRef({});
@@ -49,7 +57,7 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
   const [statusMap, setStatusMap] = useState({});
   const [ready, setReady] = useState(false);
   const topicIds = useMemo(() => (item?.topics || []).map((t) => t?.id).filter(Boolean), [item?.topics]);
-  const worksheets = useTopicPdfMap(profile, topicIds);
+  const worksheets = useTopicPdfMap(pdfProfile, topicIds);
   const pdfMap = worksheets.map;
   const [questionIndex, setQuestionIndex] = useState({});
   const [linkedQuestion, setLinkedQuestion] = useState(null);
@@ -79,7 +87,7 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
   useEffect(() => {
     let cancelled = false;
     loadedRef.current = false;
-    const uid = storeUid(user?.uid);
+    const uid = storeKey;
     requestPersistentStorage();
     loadHomeworkLocalChecked(uid, sessionId)
       .then(({ ok, record }) => {
@@ -105,15 +113,15 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
       // Leaving before the debounced autosave ran: draftsRef already holds the latest ink (captureActive).
       if (loadedRef.current) mergeHomeworkLocal(uid, sessionId, { maps: { redoDrafts: draftsRef.current, redoStatus: statusRef.current } });
     };
-  }, [user?.uid, sessionId, questions, loadAttempt]);
+  }, [storeKey, sessionId, questions, loadAttempt]);
 
   // Merged into the stored record (per question), so a save never drops other questions' work.
   const persist = useCallback(() => {
     if (!loadedRef.current) return Promise.resolve(false);
-    return mergeHomeworkLocal(storeUid(user?.uid), sessionId, {
+    return mergeHomeworkLocal(storeKey, sessionId, {
       maps: { redoDrafts: draftsRef.current, redoStatus: statusRef.current },
     });
-  }, [user?.uid, sessionId]);
+  }, [storeKey, sessionId]);
 
 
   const captureActive = useCallback(() => {
@@ -328,7 +336,7 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
       {/* Covers the new notes without unmounting the pad, so nothing written is lost. */}
       {showSubmitted && (
         <div style={{ position: 'absolute', inset: 0, background: '#f8fafc', zIndex: 4 }}>
-          <SubmittedPages uid={user?.uid} sessionId={sessionId} topicId={active?.topicId} />
+          <SubmittedPages uid={teacher ? teacher.studentId : user?.uid} sessionId={sessionId} topicId={active?.topicId} />
         </div>
       )}
       </div>
@@ -346,7 +354,9 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
           <ArrowLeft size={20} />
         </button>
         <div style={{ flex: 1, minWidth: 0 }}>
-          <div style={{ fontWeight: 800, color: '#1e1b4b' }}>Redo wrong questions</div>
+          <div style={{ fontWeight: 800, color: '#1e1b4b' }}>
+            {teacher ? `Check the mistakes${teacher.studentName ? ` · ${teacher.studentName}` : ''}` : 'Redo wrong questions'}
+          </div>
           <div style={{ fontSize: '0.75rem', color: '#64748b', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
             {[item?.mark, item?.date, (item?.topics || []).map((t) => t.label).join(', ')].filter(Boolean).join(' · ')}
           </div>
@@ -354,7 +364,7 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
             <div style={{ fontSize: '0.8rem', fontWeight: 700, color: '#4f46e5', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>“{item.comment}”</div>
           )}
         </div>
-        <StudyTimerStartButton />
+        {!teacher && <StudyTimerStartButton />}
         {canChoose && questions.length > 0 && <SplitLayoutToggle layout={layout} onChange={setLayoutChoice} />}
         {questions.length > 0 && (
           <button
@@ -363,12 +373,26 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
             onClick={() => { setShowSubmitted((v) => !v); setPane('notes'); }}
             style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '8px 12px', borderRadius: 10, border: '1.5px solid', borderColor: showSubmitted ? '#7c3aed' : '#e2e8f0', background: showSubmitted ? '#7c3aed' : '#fff', color: showSubmitted ? '#fff' : '#475569', fontWeight: 800, fontSize: '0.8rem', cursor: 'pointer', whiteSpace: 'nowrap' }}
           >
-            {showSubmitted ? <PenLine size={15} /> : <Images size={15} />} {showSubmitted ? 'New notes' : 'My submission'}
+            {showSubmitted ? <PenLine size={15} /> : <Images size={15} />} {showSubmitted ? 'New notes' : teacher ? 'Their submission' : 'My submission'}
           </button>
         )}
         <span style={{ display: 'flex', alignItems: 'center', gap: 5, fontWeight: 800, color: summary.got === summary.total && summary.total > 0 ? '#047857' : '#64748b', fontSize: '0.85rem' }}>
           <CheckCircle2 size={16} /> {summary.got}/{summary.total}
         </span>
+        {teacher?.onDone && (
+          <button
+            type="button"
+            onClick={() => {
+              if (!window.confirm('Mark these mistakes as checked together? They will stop showing on the next lessons.')) return;
+              window.clearTimeout(saveTimerRef.current);
+              if (loadedRef.current) { captureActive(); persist(); }
+              teacher.onDone();
+            }}
+            style={{ padding: '8px 12px', borderRadius: 10, border: 0, background: '#10b981', color: '#fff', fontWeight: 800, fontSize: '0.8rem', cursor: 'pointer', whiteSpace: 'nowrap' }}
+          >
+            Done together
+          </button>
+        )}
       </div>
 
       {marksStrip}
