@@ -40,6 +40,8 @@ Other books use the same idea: `question_labels.py` takes a per-book JSON config
 
 Cambridge 1st-edition Extension 1 Year 12 (2019): `cambridge_adv12.py` with `PAGE_TOP` (photo banner on the first answers page) and side-tab-safe crop bounds (55–541pt); the book comes as per-chapter PDFs plus `Ch18_Ans.pdf`.
 
+Cambridge Extension 2 Year 12 (2026): the keys were uploaded with question numbers only ("1"…"17", from `cambridge_ext2_2026.py`), so the marking panel had no part buttons. `ext2_2026_question_labels.sh "<dir with the chapter PDFs>"` reads the part labels from the QUESTION pages (`pdf_text_fonts.mjs` → `question_labels.py` per chapter, merged) and dry-runs `update_labels.mjs --questions`; add `--write` to store them, then bump `ANSWER_KEY_CACHE_VERSION`.
+
 Cambridge Extension 2 Year 12 (Sadler & Ward, 2020): `cambridge_ext2.py` — "Answers to Exercises" PDF, two wide columns (x=80 / x=320), headings "Exercise 1A (Page 8)" / "Review Exercise 1H", labels like `7(a)`. Review keys map to the "Chapter Review Exercise" topic of each chapter (`y12e2-1H`).
 
 ## ICE-EM Year 8 (two whole-book PDFs, answers at the back)
