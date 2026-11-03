@@ -1048,6 +1048,119 @@
             "course": "Advanced",
             "sourceQuestion": "Q24"
           }
+        },
+        {
+          "id": "y12a-advanced-004-p199-q29",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(\\displaystyle\\int_0^1(2x+1)^3\\,dx\\).",
+          "options": [
+            "\\(10\\)",
+            "\\(8\\)",
+            "\\(\\frac{81}{8}\\)",
+            "\\(\\frac{11}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use u=2x+1, or apply the reverse chain rule. Remember to divide by the derivative 2.",
+          "steps": [
+            {
+              "explain": "The antiderivative of (2x+1)³ is (2x+1)⁴ divided by 4×2.",
+              "work": "\\(\\int(2x+1)^3dx=\\frac{(2x+1)^4}{8}+C\\)"
+            },
+            {
+              "explain": "Substitute the limits 1 and 0.",
+              "work": "\\(\\left[\\frac{(2x+1)^4}{8}\\right]_0^1=\\frac{3^4-1^4}{8}=\\frac{80}{8}=\\boxed{10}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "199",
+            "course": "Advanced",
+            "sourceQuestion": "Q29"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p199-q30",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Let \\(y=xe^{3x}\\).",
+          "hint": "Use the product rule for the derivative. Then recognise that the integrand in part ii is three times that derivative.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p199-q30-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Differentiate \\(y=xe^{3x}\\).",
+              "options": [
+                "\\(e^{3x}(1+3x)\\)",
+                "\\(3xe^{3x}\\)",
+                "\\(e^{3x}(1+x)\\)",
+                "\\(3e^{3x}(1+3x)\\)"
+              ],
+              "answer": 0,
+              "hint": "This is a product of x and e^(3x). Use the product rule, and apply the chain rule to the exponential.",
+              "steps": [
+                {
+                  "explain": "Differentiate each factor: the derivative of x is 1, and the derivative of e^(3x) is 3e^(3x).",
+                  "work": "\\(\\frac{d}{dx}(xe^{3x})=1\\cdot e^{3x}+x\\cdot3e^{3x}\\)"
+                },
+                {
+                  "explain": "Factor out e^(3x).",
+                  "work": "\\(y'=e^{3x}+3xe^{3x}=\\boxed{e^{3x}(1+3x)}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "199",
+                "course": "Advanced",
+                "sourceQuestion": "Q30(i)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p199-q30-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Hence find the exact value of \\(\\displaystyle\\int_0^2 e^{3x}(3+9x)\\,dx\\).",
+              "options": [
+                "\\(6e^6\\)",
+                "\\(2e^6\\)",
+                "\\(6e^3\\)",
+                "\\(2e^6-2\\)"
+              ],
+              "answer": 0,
+              "hint": "The integrand is three times the derivative found in part i. Therefore an antiderivative is 3xe^(3x).",
+              "steps": [
+                {
+                  "explain": "Multiply the derivative in part i by 3 to match the integrand.",
+                  "work": "\\(3\\frac{d}{dx}(xe^{3x})=3e^{3x}(1+3x)=e^{3x}(3+9x)\\)"
+                },
+                {
+                  "explain": "Integrate using this antiderivative and substitute 2 and 0.",
+                  "work": "\\(\\int_0^2e^{3x}(3+9x)dx=[3xe^{3x}]_0^2=6e^6-0=\\boxed{6e^6}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "199",
+                "course": "Advanced",
+                "sourceQuestion": "Q30(ii)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "199",
+            "course": "Advanced",
+            "sourceQuestion": "Q30"
+          }
         }
       ]
     },
@@ -2403,6 +2516,358 @@
             "course": "Advanced",
             "sourceQuestion": "Q25"
           }
+        },
+        {
+          "id": "y12a-advanced-004-p199-q26",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The shaded region is enclosed by the curve \\(y=x^3-7x\\) and the line \\(y=2x\\), as shown in the diagram. The line \\(y=2x\\) meets the curve \\(y=x^3-7x\\) at \\(O(0,0)\\) and \\(A(3,6)\\). Do NOT prove this.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 360\"><rect width=\"480\" height=\"360\" fill=\"white\"/><path d=\"M45 170H455M120 335V25\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M120 170 L345 56 L345.0 56.0 L341.3 74.6 L337.5 92.3 L333.8 109.2 L330.0 125.3 L326.3 140.6 L322.5 155.1 L318.8 168.9 L315.0 181.9 L311.3 194.1 L307.5 205.6 L303.8 216.4 L300.0 226.5 L296.3 236.0 L292.5 244.7 L288.8 252.8 L285.0 260.3 L281.3 267.1 L277.5 273.3 L273.8 279.0 L270.0 284.0 L266.3 288.5 L262.5 292.4 L258.8 295.7 L255.0 298.6 L251.3 300.9 L247.5 302.8 L243.8 304.1 L240.0 305.0 L236.3 305.4 L232.5 305.4 L228.8 304.9 L225.0 304.1 L221.3 302.8 L217.5 301.2 L213.8 299.1 L210.0 296.8 L206.3 294.1 L202.5 291.0 L198.8 287.7 L195.0 284.0 L191.3 280.1 L187.5 275.8 L183.8 271.4 L180.0 266.7 L176.3 261.7 L172.5 256.6 L168.8 251.2 L165.0 245.7 L161.3 240.0 L157.5 234.1 L153.8 228.1 L150.0 222.0 L146.3 215.7 L142.5 209.4 L138.8 203.0 L135.0 196.4 L131.3 189.9 L127.5 183.3 L123.8 176.6 L120.0 170.0 Z\" fill=\"#fde68a\" opacity=\".5\"/><path d=\"M37.5 49.0 L41.7 52.8 L45.9 57.0 L50.2 61.5 L54.4 66.4 L58.6 71.5 L62.8 77.0 L67.0 82.8 L71.3 88.8 L75.5 95.0 L79.7 101.5 L83.9 108.1 L88.1 114.9 L92.3 121.9 L96.6 129.0 L100.8 136.2 L105.0 143.6 L109.2 150.9 L113.4 158.4 L117.7 165.8 L121.9 173.3 L126.1 180.8 L130.3 188.2 L134.5 195.6 L138.7 203.0 L143.0 210.2 L147.2 217.3 L151.4 224.3 L155.6 231.1 L159.8 237.8 L164.1 244.3 L168.3 250.5 L172.5 256.6 L176.7 262.4 L180.9 267.9 L185.2 273.1 L189.4 278.0 L193.6 282.6 L197.8 286.8 L202.0 290.6 L206.3 294.1 L210.5 297.1 L214.7 299.7 L218.9 301.8 L223.1 303.5 L227.3 304.7 L231.6 305.3 L235.8 305.4 L240.0 305.0 L244.2 304.0 L248.4 302.3 L252.7 300.1 L256.9 297.2 L261.1 293.7 L265.3 289.5 L269.5 284.6 L273.7 279.0 L278.0 272.6 L282.2 265.5 L286.4 257.6 L290.6 248.9 L294.8 239.3 L299.1 229.0 L303.3 217.7 L307.5 205.6 L311.7 192.6 L315.9 178.7 L320.2 163.8 L324.4 148.0 L328.6 131.1 L332.8 113.3 L337.0 94.5 L341.3 74.6\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M120 170L345 56\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"120\" cy=\"170\" r=\"4\" fill=\"#334155\"/><circle cx=\"345\" cy=\"56\" r=\"4\" fill=\"#334155\"/><text x=\"104\" y=\"190\" font-family=\"Arial\" font-size=\"13\">O</text><text x=\"352\" y=\"53\" font-family=\"Arial\" font-size=\"13\">A (3,6)</text><text x=\"373\" y=\"88\" font-family=\"Arial\" font-size=\"13\">y=2x</text><text x=\"160\" y=\"310\" font-family=\"Arial\" font-size=\"13\">y=x³−7x</text><text x=\"458\" y=\"175\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"124\" y=\"22\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"207\" y=\"205\" font-family=\"Arial\" font-size=\"12\" fill=\"#92400e\">shaded region</text></svg>"
+          },
+          "hint": "Read the diagram and the given equations together. Use the stated boundaries to set up each integral, and keep signed areas distinct from ordinary geometric areas.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p199-q26-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Use integration to find the area of the shaded region.",
+              "options": [
+                "\\(\\frac{81}{4}\\)",
+                "\\(\\frac{27}{4}\\)",
+                "\\(\\frac{45}{2}\\)",
+                "\\(\\frac{9}{2}\\)"
+              ],
+              "answer": 0,
+              "hint": "Between x=0 and x=3 the line is above the cubic. Integrate line minus curve between those x-values.",
+              "steps": [
+                {
+                  "explain": "The diagram marks the intersection limits O at x=0 and A at x=3. On this interval the straight line y=2x is above y=x³−7x.",
+                  "work": "\\(A=\\int_0^3[2x-(x^3-7x)]\\,dx=\\int_0^3(9x-x^3)\\,dx\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 360\"><rect width=\"480\" height=\"360\" fill=\"white\"/><path d=\"M45 170H455M120 335V25\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M120 170 L345 56 L345.0 56.0 L341.3 74.6 L337.5 92.3 L333.8 109.2 L330.0 125.3 L326.3 140.6 L322.5 155.1 L318.8 168.9 L315.0 181.9 L311.3 194.1 L307.5 205.6 L303.8 216.4 L300.0 226.5 L296.3 236.0 L292.5 244.7 L288.8 252.8 L285.0 260.3 L281.3 267.1 L277.5 273.3 L273.8 279.0 L270.0 284.0 L266.3 288.5 L262.5 292.4 L258.8 295.7 L255.0 298.6 L251.3 300.9 L247.5 302.8 L243.8 304.1 L240.0 305.0 L236.3 305.4 L232.5 305.4 L228.8 304.9 L225.0 304.1 L221.3 302.8 L217.5 301.2 L213.8 299.1 L210.0 296.8 L206.3 294.1 L202.5 291.0 L198.8 287.7 L195.0 284.0 L191.3 280.1 L187.5 275.8 L183.8 271.4 L180.0 266.7 L176.3 261.7 L172.5 256.6 L168.8 251.2 L165.0 245.7 L161.3 240.0 L157.5 234.1 L153.8 228.1 L150.0 222.0 L146.3 215.7 L142.5 209.4 L138.8 203.0 L135.0 196.4 L131.3 189.9 L127.5 183.3 L123.8 176.6 L120.0 170.0 Z\" fill=\"#fde68a\" opacity=\".5\"/><path d=\"M37.5 49.0 L41.7 52.8 L45.9 57.0 L50.2 61.5 L54.4 66.4 L58.6 71.5 L62.8 77.0 L67.0 82.8 L71.3 88.8 L75.5 95.0 L79.7 101.5 L83.9 108.1 L88.1 114.9 L92.3 121.9 L96.6 129.0 L100.8 136.2 L105.0 143.6 L109.2 150.9 L113.4 158.4 L117.7 165.8 L121.9 173.3 L126.1 180.8 L130.3 188.2 L134.5 195.6 L138.7 203.0 L143.0 210.2 L147.2 217.3 L151.4 224.3 L155.6 231.1 L159.8 237.8 L164.1 244.3 L168.3 250.5 L172.5 256.6 L176.7 262.4 L180.9 267.9 L185.2 273.1 L189.4 278.0 L193.6 282.6 L197.8 286.8 L202.0 290.6 L206.3 294.1 L210.5 297.1 L214.7 299.7 L218.9 301.8 L223.1 303.5 L227.3 304.7 L231.6 305.3 L235.8 305.4 L240.0 305.0 L244.2 304.0 L248.4 302.3 L252.7 300.1 L256.9 297.2 L261.1 293.7 L265.3 289.5 L269.5 284.6 L273.7 279.0 L278.0 272.6 L282.2 265.5 L286.4 257.6 L290.6 248.9 L294.8 239.3 L299.1 229.0 L303.3 217.7 L307.5 205.6 L311.7 192.6 L315.9 178.7 L320.2 163.8 L324.4 148.0 L328.6 131.1 L332.8 113.3 L337.0 94.5 L341.3 74.6\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M120 170L345 56\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"120\" cy=\"170\" r=\"4\" fill=\"#334155\"/><circle cx=\"345\" cy=\"56\" r=\"4\" fill=\"#334155\"/><text x=\"104\" y=\"190\" font-family=\"Arial\" font-size=\"13\">O</text><text x=\"352\" y=\"53\" font-family=\"Arial\" font-size=\"13\">A (3,6)</text><text x=\"373\" y=\"88\" font-family=\"Arial\" font-size=\"13\">y=2x</text><text x=\"160\" y=\"310\" font-family=\"Arial\" font-size=\"13\">y=x³−7x</text><text x=\"458\" y=\"175\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"124\" y=\"22\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"207\" y=\"205\" font-family=\"Arial\" font-size=\"12\" fill=\"#92400e\">shaded region</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Integrate each term, then substitute 3 and 0.",
+                  "work": "\\(A=\\left[\\frac92x^2-\\frac14x^4\\right]_0^3=\\frac92(9)-\\frac14(81)=\\frac{81}{2}-\\frac{81}{4}=\\boxed{\\frac{81}{4}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "199",
+                "course": "Advanced",
+                "sourceQuestion": "Q26(i)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p199-q26-ii",
+              "type": "review",
+              "manual": true,
+              "difficulty": "medium",
+              "stem": "The point \\(P\\) is chosen on the curve \\(y=x^3-7x\\) so that the tangent at \\(P\\) is parallel to the line \\(y=2x\\) and the x-coordinate of \\(P\\) is positive. Show that the coordinates of \\(P\\) are \\( (\\sqrt3,-4\\sqrt3)\\).",
+              "answer": "\\(P=(\\sqrt3,-4\\sqrt3)\\)",
+              "hint": "Parallel lines have equal gradients. Differentiate the curve, set its gradient equal to 2, and use the positive x-coordinate.",
+              "steps": [
+                {
+                  "explain": "The line y=2x has gradient 2. Differentiate the cubic to get the gradient at x.",
+                  "work": "\\(y=x^3-7x\\Rightarrow\\frac{dy}{dx}=3x^2-7\\)"
+                },
+                {
+                  "explain": "For the tangent to be parallel, set its gradient equal to 2. Solve for x and use the stated positive root.",
+                  "work": "\\(3x^2-7=2\\Rightarrow3x^2=9\\Rightarrow x^2=3\\Rightarrow x=\\sqrt3\\)"
+                },
+                {
+                  "explain": "Substitute x=√3 into the curve to find the y-coordinate.",
+                  "work": "\\(y=(\\sqrt3)^3-7\\sqrt3=3\\sqrt3-7\\sqrt3=-4\\sqrt3\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "199",
+                "course": "Advanced",
+                "sourceQuestion": "Q26(ii)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "199",
+            "course": "Advanced",
+            "sourceQuestion": "Q26"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p199-q27",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The shaded region shown is enclosed by two parabolas, each with x-intercepts at \\(x=-1\\) and \\(x=1\\). The parabolas have equations \\(y=2k(x^2-1)\\) and \\(y=k(1-x^2)\\), where \\(k>0\\). Given that the area of the shaded region is 8, find the value of \\(k\\).",
+          "options": [
+            "\\(2\\)",
+            "\\(1\\)",
+            "\\(3\\)",
+            "\\(4\\)"
+          ],
+          "answer": 0,
+          "hint": "The upper curve is k(1−x²). Subtract the lower curve 2k(x²−1), integrate from −1 to 1, then use the area 8.",
+          "steps": [
+            {
+              "explain": "The intersections shown in the diagram are x=−1 and x=1. Between them, find upper minus lower.",
+              "work": "\\(k(1-x^2)-2k(x^2-1)=3k(1-x^2)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 360\"><rect width=\"480\" height=\"360\" fill=\"white\"/><path d=\"M45 170H440M240 330V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M103.5 165.8 L108.8 159.7 L114.0 153.8 L119.3 148.2 L124.5 142.9 L129.8 137.7 L135.0 132.8 L140.3 128.2 L145.5 123.7 L150.8 119.5 L156.0 115.6 L161.3 111.9 L166.5 108.4 L171.8 105.2 L177.0 102.2 L182.3 99.5 L187.5 97.0 L192.8 94.7 L198.0 92.7 L203.3 90.9 L208.5 89.3 L213.8 88.0 L219.0 86.9 L224.3 86.1 L229.5 85.5 L234.8 85.1 L240.0 85.0 L245.3 85.1 L250.5 85.5 L255.8 86.1 L261.0 86.9 L266.3 88.0 L271.5 89.3 L276.8 90.9 L282.0 92.7 L287.3 94.7 L292.5 97.0 L297.8 99.5 L303.0 102.2 L308.3 105.2 L313.5 108.4 L318.8 111.9 L324.0 115.6 L329.3 119.5 L334.5 123.7 L339.8 128.2 L345.0 132.8 L350.3 137.7 L355.5 142.9 L360.8 148.2 L366.0 153.8 L371.3 159.7 L376.5 165.8 L376.5 178.4 L371.3 190.6 L366.0 202.3 L360.8 213.5 L355.5 224.3 L350.3 234.6 L345.0 244.4 L339.8 253.7 L334.5 262.5 L329.3 270.9 L324.0 278.8 L318.8 286.2 L313.5 293.1 L308.3 299.6 L303.0 305.6 L297.8 311.1 L292.5 316.1 L287.3 320.6 L282.0 324.7 L276.8 328.3 L271.5 331.4 L266.3 334.0 L261.0 336.2 L255.8 337.8 L250.5 339.0 L245.3 339.8 L240.0 340.0 L234.8 339.8 L229.5 339.0 L224.3 337.8 L219.0 336.2 L213.8 334.0 L208.5 331.4 L203.3 328.3 L198.0 324.7 L192.8 320.6 L187.5 316.1 L182.3 311.1 L177.0 305.6 L171.8 299.6 L166.5 293.1 L161.3 286.2 L156.0 278.8 L150.8 270.9 L145.5 262.5 L140.3 253.7 L135.0 244.4 L129.8 234.6 L124.5 224.3 L119.3 213.5 L114.0 202.3 L108.8 190.6 L103.5 178.4 Z\" fill=\"#bfdbfe\" opacity=\".58\"/><path d=\"M30.0 276.3 L35.3 266.8 L40.5 257.6 L45.8 248.6 L51.0 239.9 L56.3 231.4 L61.5 223.2 L66.8 215.2 L72.0 207.4 L77.3 199.9 L82.5 192.6 L87.8 185.5 L93.0 178.7 L98.3 172.1 L103.5 165.8 L108.8 159.7 L114.0 153.8 L119.3 148.2 L124.5 142.9 L129.8 137.7 L135.0 132.8 L140.3 128.2 L145.5 123.7 L150.8 119.5 L156.0 115.6 L161.3 111.9 L166.5 108.4 L171.8 105.2 L177.0 102.2 L182.3 99.5 L187.5 97.0 L192.8 94.7 L198.0 92.7 L203.3 90.9 L208.5 89.3 L213.8 88.0 L219.0 86.9 L224.3 86.1 L229.5 85.5 L234.8 85.1 L240.0 85.0 L245.3 85.1 L250.5 85.5 L255.8 86.1 L261.0 86.9 L266.3 88.0 L271.5 89.3 L276.8 90.9 L282.0 92.7 L287.3 94.7 L292.5 97.0 L297.8 99.5 L303.0 102.2 L308.3 105.2 L313.5 108.4 L318.8 111.9 L324.0 115.6 L329.3 119.5 L334.5 123.7 L339.8 128.2 L345.0 132.8 L350.3 137.7 L355.5 142.9 L360.8 148.2 L366.0 153.8 L371.3 159.7 L376.5 165.8 L381.8 172.1 L387.0 178.7 L392.3 185.5 L397.5 192.6 L402.8 199.9 L408.0 207.4 L413.3 215.2 L418.5 223.2 L423.8 231.4 L429.0 239.9 L434.3 248.6 L439.5 257.6 L444.8 266.8 L450.0 276.3\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M30.0 -42.5 L35.3 -23.6 L40.5 -5.2 L45.8 12.7 L51.0 30.2 L56.3 47.1 L61.5 63.6 L66.8 79.7 L72.0 95.2 L77.3 110.3 L82.5 124.8 L87.8 138.9 L93.0 152.6 L98.3 165.7 L103.5 178.4 L108.8 190.6 L114.0 202.3 L119.3 213.5 L124.5 224.3 L129.8 234.6 L135.0 244.4 L140.3 253.7 L145.5 262.5 L150.8 270.9 L156.0 278.8 L161.3 286.2 L166.5 293.1 L171.8 299.6 L177.0 305.6 L182.3 311.1 L187.5 316.1 L192.8 320.6 L198.0 324.7 L203.3 328.3 L208.5 331.4 L213.8 334.0 L219.0 336.2 L224.3 337.8 L229.5 339.0 L234.8 339.8 L240.0 340.0 L245.3 339.8 L250.5 339.0 L255.8 337.8 L261.0 336.2 L266.3 334.0 L271.5 331.4 L276.8 328.3 L282.0 324.7 L287.3 320.6 L292.5 316.1 L297.8 311.1 L303.0 305.6 L308.3 299.6 L313.5 293.1 L318.8 286.2 L324.0 278.8 L329.3 270.9 L334.5 262.5 L339.8 253.7 L345.0 244.4 L350.3 234.6 L355.5 224.3 L360.8 213.5 L366.0 202.3 L371.3 190.6 L376.5 178.4 L381.8 165.7 L387.0 152.6 L392.3 138.9 L397.5 124.8 L402.8 110.3 L408.0 95.2 L413.3 79.7 L418.5 63.6 L423.8 47.1 L429.0 30.2 L434.3 12.7 L439.5 -5.2 L444.8 -23.6 L450.0 -42.5\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><text x=\"86\" y=\"202\" font-family=\"Arial\" font-size=\"13\">(−1,0)</text><text x=\"366\" y=\"202\" font-family=\"Arial\" font-size=\"13\">(1,0)</text><text x=\"285\" y=\"76\" font-family=\"Arial\" font-size=\"13\">y=k(1−x²)</text><text x=\"286\" y=\"295\" font-family=\"Arial\" font-size=\"13\">y=2k(x²−1)</text><text x=\"444\" y=\"175\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"244\" y=\"25\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
+              }
+            },
+            {
+              "explain": "Integrate the height difference across the shaded interval.",
+              "work": "\\(A=\\int_{-1}^1 3k(1-x^2)dx=3k\\left[x-\\frac{x^3}{3}\\right]_{-1}^1=4k\\)"
+            },
+            {
+              "explain": "Set the area equal to 8 and solve.",
+              "work": "\\(4k=8\\Rightarrow\\boxed{k=2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "199",
+            "course": "Advanced",
+            "sourceQuestion": "Q27"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 360\"><rect width=\"480\" height=\"360\" fill=\"white\"/><path d=\"M45 170H440M240 330V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M103.5 165.8 L108.8 159.7 L114.0 153.8 L119.3 148.2 L124.5 142.9 L129.8 137.7 L135.0 132.8 L140.3 128.2 L145.5 123.7 L150.8 119.5 L156.0 115.6 L161.3 111.9 L166.5 108.4 L171.8 105.2 L177.0 102.2 L182.3 99.5 L187.5 97.0 L192.8 94.7 L198.0 92.7 L203.3 90.9 L208.5 89.3 L213.8 88.0 L219.0 86.9 L224.3 86.1 L229.5 85.5 L234.8 85.1 L240.0 85.0 L245.3 85.1 L250.5 85.5 L255.8 86.1 L261.0 86.9 L266.3 88.0 L271.5 89.3 L276.8 90.9 L282.0 92.7 L287.3 94.7 L292.5 97.0 L297.8 99.5 L303.0 102.2 L308.3 105.2 L313.5 108.4 L318.8 111.9 L324.0 115.6 L329.3 119.5 L334.5 123.7 L339.8 128.2 L345.0 132.8 L350.3 137.7 L355.5 142.9 L360.8 148.2 L366.0 153.8 L371.3 159.7 L376.5 165.8 L376.5 178.4 L371.3 190.6 L366.0 202.3 L360.8 213.5 L355.5 224.3 L350.3 234.6 L345.0 244.4 L339.8 253.7 L334.5 262.5 L329.3 270.9 L324.0 278.8 L318.8 286.2 L313.5 293.1 L308.3 299.6 L303.0 305.6 L297.8 311.1 L292.5 316.1 L287.3 320.6 L282.0 324.7 L276.8 328.3 L271.5 331.4 L266.3 334.0 L261.0 336.2 L255.8 337.8 L250.5 339.0 L245.3 339.8 L240.0 340.0 L234.8 339.8 L229.5 339.0 L224.3 337.8 L219.0 336.2 L213.8 334.0 L208.5 331.4 L203.3 328.3 L198.0 324.7 L192.8 320.6 L187.5 316.1 L182.3 311.1 L177.0 305.6 L171.8 299.6 L166.5 293.1 L161.3 286.2 L156.0 278.8 L150.8 270.9 L145.5 262.5 L140.3 253.7 L135.0 244.4 L129.8 234.6 L124.5 224.3 L119.3 213.5 L114.0 202.3 L108.8 190.6 L103.5 178.4 Z\" fill=\"#bfdbfe\" opacity=\".58\"/><path d=\"M30.0 276.3 L35.3 266.8 L40.5 257.6 L45.8 248.6 L51.0 239.9 L56.3 231.4 L61.5 223.2 L66.8 215.2 L72.0 207.4 L77.3 199.9 L82.5 192.6 L87.8 185.5 L93.0 178.7 L98.3 172.1 L103.5 165.8 L108.8 159.7 L114.0 153.8 L119.3 148.2 L124.5 142.9 L129.8 137.7 L135.0 132.8 L140.3 128.2 L145.5 123.7 L150.8 119.5 L156.0 115.6 L161.3 111.9 L166.5 108.4 L171.8 105.2 L177.0 102.2 L182.3 99.5 L187.5 97.0 L192.8 94.7 L198.0 92.7 L203.3 90.9 L208.5 89.3 L213.8 88.0 L219.0 86.9 L224.3 86.1 L229.5 85.5 L234.8 85.1 L240.0 85.0 L245.3 85.1 L250.5 85.5 L255.8 86.1 L261.0 86.9 L266.3 88.0 L271.5 89.3 L276.8 90.9 L282.0 92.7 L287.3 94.7 L292.5 97.0 L297.8 99.5 L303.0 102.2 L308.3 105.2 L313.5 108.4 L318.8 111.9 L324.0 115.6 L329.3 119.5 L334.5 123.7 L339.8 128.2 L345.0 132.8 L350.3 137.7 L355.5 142.9 L360.8 148.2 L366.0 153.8 L371.3 159.7 L376.5 165.8 L381.8 172.1 L387.0 178.7 L392.3 185.5 L397.5 192.6 L402.8 199.9 L408.0 207.4 L413.3 215.2 L418.5 223.2 L423.8 231.4 L429.0 239.9 L434.3 248.6 L439.5 257.6 L444.8 266.8 L450.0 276.3\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M30.0 -42.5 L35.3 -23.6 L40.5 -5.2 L45.8 12.7 L51.0 30.2 L56.3 47.1 L61.5 63.6 L66.8 79.7 L72.0 95.2 L77.3 110.3 L82.5 124.8 L87.8 138.9 L93.0 152.6 L98.3 165.7 L103.5 178.4 L108.8 190.6 L114.0 202.3 L119.3 213.5 L124.5 224.3 L129.8 234.6 L135.0 244.4 L140.3 253.7 L145.5 262.5 L150.8 270.9 L156.0 278.8 L161.3 286.2 L166.5 293.1 L171.8 299.6 L177.0 305.6 L182.3 311.1 L187.5 316.1 L192.8 320.6 L198.0 324.7 L203.3 328.3 L208.5 331.4 L213.8 334.0 L219.0 336.2 L224.3 337.8 L229.5 339.0 L234.8 339.8 L240.0 340.0 L245.3 339.8 L250.5 339.0 L255.8 337.8 L261.0 336.2 L266.3 334.0 L271.5 331.4 L276.8 328.3 L282.0 324.7 L287.3 320.6 L292.5 316.1 L297.8 311.1 L303.0 305.6 L308.3 299.6 L313.5 293.1 L318.8 286.2 L324.0 278.8 L329.3 270.9 L334.5 262.5 L339.8 253.7 L345.0 244.4 L350.3 234.6 L355.5 224.3 L360.8 213.5 L366.0 202.3 L371.3 190.6 L376.5 178.4 L381.8 165.7 L387.0 152.6 L392.3 138.9 L397.5 124.8 L402.8 110.3 L408.0 95.2 L413.3 79.7 L418.5 63.6 L423.8 47.1 L429.0 30.2 L434.3 12.7 L439.5 -5.2 L444.8 -23.6 L450.0 -42.5\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><text x=\"86\" y=\"202\" font-family=\"Arial\" font-size=\"13\">(−1,0)</text><text x=\"366\" y=\"202\" font-family=\"Arial\" font-size=\"13\">(1,0)</text><text x=\"285\" y=\"76\" font-family=\"Arial\" font-size=\"13\">y=k(1−x²)</text><text x=\"286\" y=\"295\" font-family=\"Arial\" font-size=\"13\">y=2k(x²−1)</text><text x=\"444\" y=\"175\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"244\" y=\"25\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p199-q28",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is the value of \\(\\displaystyle\\int_{-3}^{2}|x+1|\\,dx\\)?",
+          "options": [
+            "\\(\\frac52\\)",
+            "\\(\\frac{11}{2}\\)",
+            "\\(\\frac{13}{2}\\)",
+            "\\(\\frac{17}{2}\\)"
+          ],
+          "answer": 2,
+          "hint": "The expression inside the absolute value changes sign at x=−1. Split the integral there; both resulting areas count positively.",
+          "steps": [
+            {
+              "explain": "Find where x+1=0. It is negative from −3 to −1 and positive from −1 to 2.",
+              "work": "\\(x+1=0\\Rightarrow x=-1\\)"
+            },
+            {
+              "explain": "Remove the absolute value with the correct sign on each interval.",
+              "work": "\\(\\int_{-3}^2|x+1|dx=\\int_{-3}^{-1}-(x+1)dx+\\int_{-1}^2(x+1)dx\\)"
+            },
+            {
+              "explain": "Evaluate both integrals and add their positive areas.",
+              "work": "\\(=\\left[-\\frac{(x+1)^2}{2}\\right]_{-3}^{-1}+\\left[\\frac{(x+1)^2}{2}\\right]_{-1}^{2}=2+\\frac92=\\boxed{\\frac{13}{2}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "199",
+            "course": "Advanced",
+            "sourceQuestion": "Q28"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p199-q31",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The curve \\(y=\\sqrt2\\cos(\\frac{\\pi x}{4})\\) meets the line \\(y=x\\) at \\(P(1,1)\\), as shown in the diagram. Find the exact value of the shaded area.",
+          "options": [
+            "\\(\\frac4\\pi-\\frac12\\)",
+            "\\(\\frac2\\pi-\\frac12\\)",
+            "\\(\\frac4\\pi+\\frac12\\)",
+            "\\(\\frac{2\\sqrt2}{\\pi}-1\\)"
+          ],
+          "answer": 0,
+          "hint": "Between x=0 and x=1 the cosine curve is above y=x. Integrate curve minus line over this interval.",
+          "steps": [
+            {
+              "explain": "The shaded region is between the curve and the line from O (x=0) to P (x=1). The upper boundary is the cosine curve.",
+              "work": "\\(A=\\int_0^1[\\sqrt2\\cos(\\frac{\\pi x}{4})-x]dx\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M55 240H440M100 265V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 75 C150 90 200 123 245 160 L245 240H100Z\" fill=\"#fde68a\" opacity=\".5\"/><path d=\"M100 75 C145 93 195 127 245 160 C290 190 340 220 390 240\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 240L245 160\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"245\" cy=\"160\" r=\"4\" fill=\"#334155\"/><text x=\"251\" y=\"157\" font-family=\"Arial\" font-size=\"13\">P(1,1)</text><text x=\"93\" y=\"257\" font-family=\"Arial\" font-size=\"13\">O</text><text x=\"395\" y=\"245\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"104\" y=\"27\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"302\" y=\"114\" font-family=\"Arial\" font-size=\"13\">y=√2 cos(πx/4)</text><text x=\"150\" y=\"206\" font-family=\"Arial\" font-size=\"13\">y=x</text></svg>"
+              }
+            },
+            {
+              "explain": "Integrate the cosine term using the chain rule factor 4/π, then integrate x.",
+              "work": "\\(A=\\left[\\frac{4\\sqrt2}{\\pi}\\sin(\\frac{\\pi x}{4})-\\frac{x^2}{2}\\right]_0^1\\)"
+            },
+            {
+              "explain": "Use sin(π/4)=√2/2 and simplify.",
+              "work": "\\(A=\\frac{4\\sqrt2}{\\pi}\\cdot\\frac{\\sqrt2}{2}-\\frac12=\\boxed{\\frac4\\pi-\\frac12}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "199",
+            "course": "Advanced",
+            "sourceQuestion": "Q31"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M55 240H440M100 265V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 75 C145 93 195 127 245 160 L100 240Z\" fill=\"#fde68a\" opacity=\".5\"/><path d=\"M100 75 C145 93 195 127 245 160 C290 190 340 220 390 240\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 240L245 160\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"245\" cy=\"160\" r=\"4\" fill=\"#334155\"/><text x=\"251\" y=\"157\" font-family=\"Arial\" font-size=\"13\">P(1,1)</text><text x=\"93\" y=\"257\" font-family=\"Arial\" font-size=\"13\">O</text><text x=\"395\" y=\"245\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"104\" y=\"27\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"302\" y=\"114\" font-family=\"Arial\" font-size=\"13\">y=√2 cos(πx/4)</text><text x=\"150\" y=\"206\" font-family=\"Arial\" font-size=\"13\">y=x</text></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p199-q32",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A particle moves in a straight line. Its velocity \\(v\\) ms⁻¹ at time \\(t\\) seconds is given by \\(v=2-\\frac4{t+1}\\).",
+          "hint": "Velocity is the derivative of displacement. A stationary particle has v=0. For total distance, split the time interval where velocity changes sign.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p199-q32-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the initial velocity.",
+              "options": [
+                "\\(-2\\text{ m s}^{-1}\\)",
+                "\\(2\\text{ m s}^{-1}\\)",
+                "\\(-4\\text{ m s}^{-1}\\)",
+                "\\(0\\text{ m s}^{-1}\\)"
+              ],
+              "answer": 0,
+              "hint": "Initial means t=0. Substitute 0 into the velocity formula.",
+              "steps": [
+                {
+                  "explain": "Substitute t=0 into v=2−4/(t+1).",
+                  "work": "\\(v(0)=2-\\frac4{1}=-2\\text{ m s}^{-1}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "199",
+                "course": "Advanced",
+                "sourceQuestion": "Q32(i)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p199-q32-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the acceleration of the particle when the particle is stationary.",
+              "options": [
+                "\\(1\\text{ m s}^{-2}\\)",
+                "\\(2\\text{ m s}^{-2}\\)",
+                "\\(4\\text{ m s}^{-2}\\)",
+                "\\(0\\text{ m s}^{-2}\\)"
+              ],
+              "answer": 0,
+              "hint": "First solve v=0 to find when the particle is stationary. Then differentiate v with respect to t.",
+              "steps": [
+                {
+                  "explain": "At a stationary instant v=0. Solve the velocity equation for t.",
+                  "work": "\\(2-\\frac4{t+1}=0\\Rightarrow2(t+1)=4\\Rightarrow t=1\\)"
+                },
+                {
+                  "explain": "Acceleration is dv/dt. Differentiate and substitute t=1.",
+                  "work": "\\(a=\\frac{dv}{dt}=\\frac4{(t+1)^2},\\quad a(1)=\\frac4{2^2}=\\boxed{1\\text{ m s}^{-2}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "199",
+                "course": "Advanced",
+                "sourceQuestion": "Q32(ii)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p199-q32-iii",
+              "type": "review",
+              "manual": true,
+              "difficulty": "medium",
+              "stem": "By considering the behaviour of \\(v\\) for large \\(t\\), sketch a graph of \\(v\\) against \\(t\\) for \\(t\\ge0\\), showing any intercepts.",
+              "answer": "The curve starts at (0,−2), crosses the t-axis at (1,0), increases and approaches the horizontal asymptote v=2 from below.",
+              "hint": "Mark v(0)=−2 and solve v=0 for the t-intercept. As t becomes large, 4/(t+1) approaches 0, so v approaches 2.",
+              "steps": [
+                {
+                  "explain": "Use the initial value for the vertical intercept and solve v=0 for the horizontal intercept.",
+                  "work": "\\(v(0)=-2,\\qquad 2-\\frac4{t+1}=0\\Rightarrow t=1\\)"
+                },
+                {
+                  "explain": "For large t, the fraction tends to zero, so the graph approaches v=2. Since dv/dt=4/(t+1)²>0, it increases throughout t≥0.",
+                  "work": "\\(\\lim_{t\\to\\infty}v=2\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 360\"><rect width=\"480\" height=\"360\" fill=\"white\"/><path d=\"M65 200H445M100 330V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 80H445\" stroke=\"#dc2626\" stroke-dasharray=\"5 4\"/><path d=\"M100 320 C120 275 135 238 140 200 C180 157 215 132 250 115 C300 93 365 85 440 82\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><circle cx=\"100\" cy=\"320\" r=\"4\" fill=\"#334155\"/><circle cx=\"140\" cy=\"200\" r=\"4\" fill=\"#334155\"/><text x=\"76\" y=\"345\" font-family=\"Arial\" font-size=\"13\">(0,−2)</text><text x=\"145\" y=\"195\" font-family=\"Arial\" font-size=\"13\">(1,0)</text><text x=\"370\" y=\"71\" font-family=\"Arial\" font-size=\"13\">v=2</text><text x=\"448\" y=\"205\" font-family=\"Arial\" font-size=\"14\">t</text><text x=\"104\" y=\"31\" font-family=\"Arial\" font-size=\"14\">v</text><text x=\"250\" y=\"168\" font-family=\"Arial\" font-size=\"13\">v=2−4/(t+1)</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "199",
+                "course": "Advanced",
+                "sourceQuestion": "Q32(iii)"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M65 230H445M100 260V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 230 C135 190 175 150 205 130 C240 108 275 93 310 83 C350 72 395 68 440 66\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 230H445\" stroke=\"#94a3b8\" stroke-dasharray=\"5 4\"/><path d=\"M100 66H445\" stroke=\"#dc2626\" stroke-dasharray=\"5 4\"/><circle cx=\"100\" cy=\"230\" r=\"4\" fill=\"#334155\"/><circle cx=\"205\" cy=\"130\" r=\"4\" fill=\"#334155\"/><text x=\"80\" y=\"250\" font-family=\"Arial\" font-size=\"13\">(0,−2)</text><text x=\"192\" y=\"122\" font-family=\"Arial\" font-size=\"13\">(1,0)</text><text x=\"370\" y=\"58\" font-family=\"Arial\" font-size=\"13\">v=2</text><text x=\"448\" y=\"234\" font-family=\"Arial\" font-size=\"14\">t</text><text x=\"104\" y=\"31\" font-family=\"Arial\" font-size=\"14\">v</text><text x=\"250\" y=\"178\" font-family=\"Arial\" font-size=\"13\">v=2−4/(t+1)</text></svg>"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p199-q32-iv",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the exact distance travelled by the particle in the first 7 seconds.",
+              "options": [
+                "\\(10-4\\ln2\\text{ m}\\)",
+                "\\(12-8\\ln2\\text{ m}\\)",
+                "\\(14-12\\ln2\\text{ m}\\)",
+                "\\(8\\ln2-12\\text{ m}\\)"
+              ],
+              "answer": 0,
+              "hint": "The particle moves backwards until v=0 at t=1, then forwards. Integrate speed separately on [0,1] and [1,7].",
+              "steps": [
+                {
+                  "explain": "The velocity changes sign at t=1. An antiderivative of v=2−4/(t+1) is F(t)=2t−4ln(t+1).",
+                  "work": "\\(F(t)=\\int v\\,dt=2t-4\\ln(t+1)\\)"
+                },
+                {
+                  "explain": "On [0,1], v is negative, so distance is the negative of the displacement. On [1,7], v is positive.",
+                  "work": "\\(D=-[F(1)-F(0)]+[F(7)-F(1)]\\)"
+                },
+                {
+                  "explain": "Substitute endpoint values and combine the logarithms.",
+                  "work": "\\(D=-(F(1)-F(0))+(F(7)-F(1))=F(7)-2F(1)\\)\n\\(=(14-12\\ln2)-2(2-4\\ln2)=\\boxed{10-4\\ln2\\text{ m}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "199",
+                "course": "Advanced",
+                "sourceQuestion": "Q32(iv)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "199",
+            "course": "Advanced",
+            "sourceQuestion": "Q32"
+          }
         }
       ]
     },
@@ -3285,6 +3750,42 @@
             "page": "198",
             "course": "Advanced",
             "sourceQuestion": "Bonus Q18"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p199-q33",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using the trapezoidal rule with 4 subintervals, which expression gives the approximate area under the curve \\(y=xe^x\\) between \\(x=1\\) and \\(x=3\\)?",
+          "options": [
+            "\\(\\frac14(e+3e^{1.5}+4e^2+5e^{2.5}+3e^3)\\)",
+            "\\(\\frac12(e+3e^{1.5}+4e^2+5e^{2.5}+3e^3)\\)",
+            "\\(\\frac14(e+6e^{1.5}+4e^2+10e^{2.5}+3e^3)\\)",
+            "\\(\\frac12(e+6e^{1.5}+4e^2+10e^{2.5}+3e^3)\\)"
+          ],
+          "answer": 1,
+          "hint": "Four subintervals from 1 to 3 have width 0.5. Use the endpoints once and each of the three interior function values twice.",
+          "steps": [
+            {
+              "explain": "Find the width and list the five x-values.",
+              "work": "\\(h=\\frac{3-1}{4}=0.5,\\qquad x=1,1.5,2,2.5,3\\)"
+            },
+            {
+              "explain": "Evaluate y=xe^x at the five points.",
+              "work": "\\(e,\\;1.5e^{1.5},\\;2e^2,\\;2.5e^{2.5},\\;3e^3\\)"
+            },
+            {
+              "explain": "Apply T=(h/2)[first+2(interior values)+last]. This gives the listed expression.",
+              "work": "\\(T=\\frac{0.5}{2}[e+2(1.5e^{1.5}+2e^2+2.5e^{2.5})+3e^3]\\)\n\\(=\\boxed{\\frac14(e+3e^{1.5}+4e^2+5e^{2.5}+3e^3)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "199",
+            "course": "Advanced",
+            "sourceQuestion": "Q33"
           }
         }
       ]
