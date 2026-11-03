@@ -38,8 +38,25 @@ for f in "${pdfs[@]}"; do
 done
 
 python3 - "$WORK" "$i" <<'EOF'
-import json, sys
+import json, re, sys
 work, n = sys.argv[1], int(sys.argv[2])
+ROMAN = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x']
+
+def in_order(labels):
+    # Parts are often set out in columns (a b c d down, e f g h next), so they are read a e i b f j …:
+    # put each question's parts back in order (a, b, c … or i, ii, iii …), questions in their first-seen order.
+    groups = {}
+    for l in labels:
+        m = re.fullmatch(r'(\d+)([a-z]*)', l)
+        num, part = (m.group(1), m.group(2)) if m else (l, '')
+        groups.setdefault(num, []).append(part)
+    out = []
+    for num, parts in groups.items():
+        roman = any(p in ('ii', 'iii', 'iv', 'vi', 'vii', 'viii') for p in parts)
+        key = (lambda p: ROMAN.index(p) if p in ROMAN else 99) if roman else (lambda p: p)
+        out += [f'{num}{p}' for p in sorted(parts, key=key)]
+    return out
+
 merged = {}
 for k in range(1, n + 1):
     for key, labels in json.load(open(f'{work}/labels_{k}.json')).items():
@@ -47,6 +64,7 @@ for k in range(1, n + 1):
             print(f'WARNING: {key} found in two files; keeping the longer list')
             if len(labels) <= len(merged[key]): continue
         merged[key] = labels
+merged = {k: in_order(v) for k, v in merged.items()}
 json.dump(merged, open(f'{work}/labels.json', 'w'), indent=0)
 parts = sum(1 for v in merged.values() for l in v if not l.isdigit())
 print(f'{len(merged)} sections, {sum(len(v) for v in merged.values())} labels ({parts} with a part letter)')
