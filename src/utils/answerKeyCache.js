@@ -11,6 +11,7 @@
 // 5: Extension 2 answer keys replaced by the 2026 textbook's (2026-10-20).
 // 6: Year 12 Extension 1 answer keys replaced by the 2026 2nd edition's (2026-11-01).
 // 7: Year 12 Advanced answer keys replaced by the 2026 2nd edition's (2026-11-02).
+// 8: Extension 2 Year 12 (2026) labels made part-level from the question pages (2026-11-04).
 export const ANSWER_KEY_CACHE_VERSION = 8;
 export const ANSWER_KEY_TTL_MS = 14 * 24 * 60 * 60 * 1000;
 
