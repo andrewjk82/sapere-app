@@ -4995,6 +4995,714 @@
             "course": "Advanced",
             "sourceQuestion": "Q66"
           }
+        },
+        {
+          "id": "y12a-advanced-004-p204-q67",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A particle is initially at rest at the origin. Its acceleration as a function of time, \\(t\\), is given by \\(\\ddot{x}=4\\sin2t\\).",
+          "hint": "Integrate acceleration to get velocity, then use the initial velocity. Distance is the area under a nonnegative velocity graph.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M45 150H445M100 265V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 150 C125 150 145 72 175 70 C205 72 225 150 250 150 C275 150 295 72 325 70 C355 72 375 150 400 150\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><text x=\"100\" y=\"170\" font-family=\"Arial\" font-size=\"12\">0</text><text x=\"245\" y=\"170\" font-family=\"Arial\" font-size=\"12\">π</text><text x=\"385\" y=\"170\" font-family=\"Arial\" font-size=\"12\">2π</text><text x=\"450\" y=\"155\" font-family=\"Arial\" font-size=\"13\">t</text><text x=\"105\" y=\"30\" font-family=\"Arial\" font-size=\"13\">v</text><text x=\"110\" y=\"67\" font-family=\"Arial\" font-size=\"12\">4</text></svg>"
+          },
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p204-q67-i",
+              "type": "review",
+              "manual": true,
+              "difficulty": "hard",
+              "stem": "Show that the velocity of the particle is given by \\(\\dot{x}=2-2\\cos 2t\\).",
+              "answer": "",
+              "hint": "Integrate acceleration and use the initial rest condition to find the constant.",
+              "steps": [
+                {
+                  "explain": "Integrate acceleration. The derivative of cos 2t is −2 sin 2t, so the antiderivative of 4 sin 2t is −2 cos 2t.",
+                  "work": "\\(v=-2\\cos2t+C\\)"
+                },
+                {
+                  "explain": "Initially the particle is at rest, so v(0)=0. Substitute t=0 to find C.",
+                  "work": "\\(0=-2\\cos0+C\\Rightarrow C=2\\)"
+                },
+                {
+                  "explain": "Substitute C into the velocity formula.",
+                  "work": "\\(\\boxed{\\dot{x}=2-2\\cos2t}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "204",
+                "course": "Advanced",
+                "sourceQuestion": "Q67(i)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p204-q67-ii",
+              "type": "review",
+              "manual": true,
+              "difficulty": "hard",
+              "stem": "Sketch the graph of \\(v\\) for \\(0\\le t\\le2\\pi\\) and determine the time at which the particle first comes to rest after \\(t=0\\).",
+              "answer": "A cosine-shaped graph \\(v=2-2\\cos2t\\) through (0,0), (\\(\\pi/2\\),4), (\\(\\pi\\),0), (\\(3\\pi/2\\),4), (\\(2\\pi\\),0). The first positive rest time is \\(t=\\pi\\).",
+              "hint": "Set v=0 to find the first positive root, then plot the key values to sketch the curve.",
+              "steps": [
+                {
+                  "explain": "Set the velocity equal to zero. The first solution after t=0 occurs when 2t=2π.",
+                  "work": "\\(2-2\\cos2t=0\\Rightarrow\\cos2t=1\\Rightarrow t=\\pi\\)"
+                },
+                {
+                  "explain": "Evaluate at quarter-period points and draw a smooth cosine-shaped curve.",
+                  "work": "\\(v(0)=0,\\ v(\\pi/2)=4,\\ v(\\pi)=0,\\ v(3\\pi/2)=4,\\ v(2\\pi)=0\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M45 150H445M100 265V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 150 C125 150 145 72 175 70 C205 72 225 150 250 150 C275 150 295 72 325 70 C355 72 375 150 400 150\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><text x=\"100\" y=\"170\" font-family=\"Arial\" font-size=\"12\">0</text><text x=\"245\" y=\"170\" font-family=\"Arial\" font-size=\"12\">π</text><text x=\"385\" y=\"170\" font-family=\"Arial\" font-size=\"12\">2π</text><text x=\"450\" y=\"155\" font-family=\"Arial\" font-size=\"13\">t</text><text x=\"105\" y=\"30\" font-family=\"Arial\" font-size=\"13\">v</text><text x=\"110\" y=\"67\" font-family=\"Arial\" font-size=\"12\">4</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "204",
+                "course": "Advanced",
+                "sourceQuestion": "Q67(ii)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p204-q67-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the distance travelled between t=0 and the time when the particle first comes to rest after t=0.",
+              "options": [
+                "\\(2\\pi\\)",
+                "\\(\\pi\\)",
+                "\\(4\\pi\\)",
+                "\\(0\\)"
+              ],
+              "answer": 0,
+              "hint": "The particle first stops at t=π. Velocity is nonnegative on this interval, so distance is the integral of velocity.",
+              "steps": [
+                {
+                  "explain": "Integrate the velocity from 0 to π; it stays at or above zero.",
+                  "work": "\\(D=\\int_0^\\pi(2-2\\cos2t)\\,dt\\)"
+                },
+                {
+                  "explain": "Evaluate the antiderivative at both endpoints.",
+                  "work": "\\(D=[2t-\\sin2t]_0^\\pi=2\\pi=\\boxed{2\\pi}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M45 150H445M100 265V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 150 C125 150 145 72 175 70 C205 72 225 150 250 150 C275 150 295 72 325 70 C355 72 375 150 400 150\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><text x=\"100\" y=\"170\" font-family=\"Arial\" font-size=\"12\">0</text><text x=\"245\" y=\"170\" font-family=\"Arial\" font-size=\"12\">π</text><text x=\"385\" y=\"170\" font-family=\"Arial\" font-size=\"12\">2π</text><text x=\"450\" y=\"155\" font-family=\"Arial\" font-size=\"13\">t</text><text x=\"105\" y=\"30\" font-family=\"Arial\" font-size=\"13\">v</text><text x=\"110\" y=\"67\" font-family=\"Arial\" font-size=\"12\">4</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "204",
+                "course": "Advanced",
+                "sourceQuestion": "Q67(iii)"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M45 150H445M100 265V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 150 C125 150 145 72 175 70 C205 72 225 150 250 150 C275 150 295 72 325 70 C355 72 375 150 400 150\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><text x=\"100\" y=\"170\" font-family=\"Arial\" font-size=\"12\">0</text><text x=\"245\" y=\"170\" font-family=\"Arial\" font-size=\"12\">π</text><text x=\"385\" y=\"170\" font-family=\"Arial\" font-size=\"12\">2π</text><text x=\"450\" y=\"155\" font-family=\"Arial\" font-size=\"13\">t</text><text x=\"105\" y=\"30\" font-family=\"Arial\" font-size=\"13\">v</text><text x=\"110\" y=\"67\" font-family=\"Arial\" font-size=\"12\">4</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "204",
+            "course": "Advanced",
+            "sourceQuestion": "Q67"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p204-q68",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(\\displaystyle\\int_1^2e^{3x}\\,dx\\).",
+          "options": [
+            "\\(\\frac{e^6-e^3}{3}\\)",
+            "\\(e^6-e^3\\)",
+            "\\(\\frac{e^6+e^3}{3}\\)",
+            "\\(\\frac{e^2-e}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide by 3 when integrating e^(3x).",
+          "steps": [
+            {
+              "explain": "Integrate the exponential, accounting for the inner derivative 3.",
+              "work": "\\(\\int e^{3x}dx=\\frac13e^{3x}+C\\)"
+            },
+            {
+              "explain": "Substitute x=2 and subtract the value at x=1.",
+              "work": "\\(\\left[\\frac13e^{3x}\\right]_1^2=\\frac{e^6-e^3}{3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "204",
+            "course": "Advanced",
+            "sourceQuestion": "Q68"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p204-q69",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A particle moves along the x-axis. Initially it is at rest at the origin. The graph shows the acceleration, \\(a\\), as a function of time \\(t\\), for \\(0\\le t\\le5\\).",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M55 150H445M100 265V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 70H160L280 230H400\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><g font-family=\"Arial\" font-size=\"12\" text-anchor=\"middle\"><text x=\"100\" y=\"169\">0</text><text x=\"160\" y=\"169\">1</text><text x=\"220\" y=\"169\">2</text><text x=\"280\" y=\"169\">3</text><text x=\"340\" y=\"169\">4</text><text x=\"400\" y=\"169\">5</text></g><text x=\"450\" y=\"155\">t</text><text x=\"103\" y=\"32\">a</text><text x=\"108\" y=\"66\">3</text><text x=\"108\" y=\"234\">−3</text><text x=\"164\" y=\"60\">(1,3)</text><text x=\"284\" y=\"247\">(3,−3)</text><text x=\"404\" y=\"247\">(5,−3)</text></svg>"
+          },
+          "hint": "Acceleration is the gradient of velocity. Find velocity by accumulating signed areas under the acceleration graph. The particle turns when velocity changes sign.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p204-q69-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Write down the time at which the velocity is a maximum.",
+              "options": [
+                "\\(2\\)",
+                "\\(1\\)",
+                "\\(3\\)",
+                "\\(4\\)"
+              ],
+              "answer": 0,
+              "hint": "Velocity increases while acceleration is positive and decreases when acceleration is negative.",
+              "steps": [
+                {
+                  "explain": "The acceleration crosses zero at t=2, changing from positive to negative.",
+                  "work": "\\(a>0\\ (t<2),\\quad a<0\\ (t>2)\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M55 150H445M100 265V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 70H160L280 230H400\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><g font-family=\"Arial\" font-size=\"12\" text-anchor=\"middle\"><text x=\"100\" y=\"169\">0</text><text x=\"160\" y=\"169\">1</text><text x=\"220\" y=\"169\">2</text><text x=\"280\" y=\"169\">3</text><text x=\"340\" y=\"169\">4</text><text x=\"400\" y=\"169\">5</text></g><text x=\"450\" y=\"155\">t</text><text x=\"103\" y=\"32\">a</text><text x=\"108\" y=\"66\">3</text><text x=\"108\" y=\"234\">−3</text><text x=\"164\" y=\"60\">(1,3)</text><text x=\"284\" y=\"247\">(3,−3)</text><text x=\"404\" y=\"247\">(5,−3)</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Thus velocity changes from increasing to decreasing at t=2.",
+                  "work": "\\(\\boxed{t=2}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "204",
+                "course": "Advanced",
+                "sourceQuestion": "Q69(i)"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M55 150H445M100 265V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 70H160L280 230H400\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><g font-family=\"Arial\" font-size=\"12\" text-anchor=\"middle\"><text x=\"100\" y=\"169\">0</text><text x=\"160\" y=\"169\">1</text><text x=\"220\" y=\"169\">2</text><text x=\"280\" y=\"169\">3</text><text x=\"340\" y=\"169\">4</text><text x=\"400\" y=\"169\">5</text></g><text x=\"450\" y=\"155\">t</text><text x=\"103\" y=\"32\">a</text><text x=\"108\" y=\"66\">3</text><text x=\"108\" y=\"234\">−3</text><text x=\"164\" y=\"60\">(1,3)</text><text x=\"284\" y=\"247\">(3,−3)</text><text x=\"404\" y=\"247\">(5,−3)</text></svg>"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p204-q69-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "At what time during \\(0\\le t\\le5\\) is the particle furthest from the origin? Give a brief reason.",
+              "options": [
+                "\\(t=4\\)",
+                "\\(t=2\\)",
+                "\\(t=3\\)",
+                "\\(t=5\\)"
+              ],
+              "answer": 0,
+              "hint": "Use areas under a(t) to find v. Then track x: it increases while v is positive and decreases after v becomes negative.",
+              "steps": [
+                {
+                  "explain": "From t=0 to 1, a=3, so v(1)=0+3(1)=3. From 1 to 3, the straight acceleration graph has equal positive and negative triangular areas, so v(3)=3.",
+                  "work": "\\(v(1)=3,\\quad \\int_1^3a(t)dt=\\frac12(1)(3)-\\frac12(1)(3)=0,\\quad v(3)=3\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M55 150H445M100 265V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 70H160L280 230H400\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><g font-family=\"Arial\" font-size=\"12\" text-anchor=\"middle\"><text x=\"100\" y=\"169\">0</text><text x=\"160\" y=\"169\">1</text><text x=\"220\" y=\"169\">2</text><text x=\"280\" y=\"169\">3</text><text x=\"340\" y=\"169\">4</text><text x=\"400\" y=\"169\">5</text></g><text x=\"450\" y=\"155\">t</text><text x=\"103\" y=\"32\">a</text><text x=\"108\" y=\"66\">3</text><text x=\"108\" y=\"234\">−3</text><text x=\"164\" y=\"60\">(1,3)</text><text x=\"284\" y=\"247\">(3,−3)</text><text x=\"404\" y=\"247\">(5,−3)</text></svg>"
+                  }
+                },
+                {
+                  "explain": "From t=3 to 4 the velocity falls linearly from 3 to 0, so the displacement gain is a triangle of area 3/2. From t=4 to 5 it falls from 0 to −3, giving a negative triangle of area −3/2. The displacement is therefore greatest at t=4.",
+                  "work": "\\(x(4)=x(3)+\\frac12(1)(3)=11;\\quad x(5)=x(4)-\\frac12(1)(3)=\\frac{19}{2}=9.5<11\\Rightarrow\\boxed{t=4}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "204",
+                "course": "Advanced",
+                "sourceQuestion": "Q69(ii)"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M55 150H445M100 265V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 70H160L280 230H400\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><g font-family=\"Arial\" font-size=\"12\" text-anchor=\"middle\"><text x=\"100\" y=\"169\">0</text><text x=\"160\" y=\"169\">1</text><text x=\"220\" y=\"169\">2</text><text x=\"280\" y=\"169\">3</text><text x=\"340\" y=\"169\">4</text><text x=\"400\" y=\"169\">5</text></g><text x=\"450\" y=\"155\">t</text><text x=\"103\" y=\"32\">a</text><text x=\"108\" y=\"66\">3</text><text x=\"108\" y=\"234\">−3</text><text x=\"164\" y=\"60\">(1,3)</text><text x=\"284\" y=\"247\">(3,−3)</text><text x=\"404\" y=\"247\">(5,−3)</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "204",
+            "course": "Advanced",
+            "sourceQuestion": "Q69"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p204-q70",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(\\displaystyle\\int_{\\pi/4}^{\\pi/3}\\sec^2x\\,dx\\).",
+          "options": [
+            "\\(\\sqrt3-1\\)",
+            "\\(\\sqrt3+1\\)",
+            "\\(1-\\sqrt3\\)",
+            "\\(\\frac13\\)"
+          ],
+          "answer": 0,
+          "hint": "The antiderivative of sec²x is tan x.",
+          "steps": [
+            {
+              "explain": "Use the standard antiderivative.",
+              "work": "\\(\\int\\sec^2x\\,dx=\\tan x+C\\)"
+            },
+            {
+              "explain": "Evaluate tan at both limits.",
+              "work": "\\(\\tan\\frac\\pi3-\\tan\\frac\\pi4=\\sqrt3-1\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "204",
+            "course": "Advanced",
+            "sourceQuestion": "Q70"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p204-q71",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The graphs of \\(y=x-4\\) and \\(y=x^2-4x\\) intersect at the points \\((4,0)\\) and A, as shown in the diagram.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 340\"><rect width=\"480\" height=\"340\" fill=\"white\"/><path d=\"M50 220H450M100 325V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 320L360 220\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M100 220 C120 260 135 285 165 295 C190 308 210 320 230 320 C280 315 325 260 360 220\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M165 295 L360 220 C325 260 280 315 230 320 C210 320 190 308 165 295Z\" fill=\"#fde68a\" opacity=\".52\"/><circle cx=\"165\" cy=\"295\" r=\"3\" fill=\"#334155\"/><circle cx=\"360\" cy=\"220\" r=\"3\" fill=\"#334155\"/><text x=\"130\" y=\"315\" font-family=\"Arial\" font-size=\"12\">A(1,−3)</text><text x=\"364\" y=\"218\" font-family=\"Arial\" font-size=\"12\">(4,0)</text><text x=\"160\" y=\"240\" font-family=\"Arial\" font-size=\"12\">1</text><text x=\"355\" y=\"240\" font-family=\"Arial\" font-size=\"12\">4</text><text x=\"452\" y=\"225\" font-family=\"Arial\" font-size=\"13\">x</text><text x=\"104\" y=\"32\" font-family=\"Arial\" font-size=\"13\">y</text></svg>"
+          },
+          "hint": "At intersections set the y-expressions equal. For area integrate upper curve minus lower curve between the two intersection x-values.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p204-q71-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the coordinates of A.",
+              "options": [
+                "\\((1,-3)\\)",
+                "\\((1,3)\\)",
+                "\\((-1,-5)\\)",
+                "\\((3,-1)\\)"
+              ],
+              "answer": 0,
+              "hint": "At an intersection equate the two formulas, solve the quadratic and substitute the root other than 4.",
+              "steps": [
+                {
+                  "explain": "Set the line equal to the parabola.",
+                  "work": "\\(x-4=x^2-4x\\Rightarrow x^2-5x+4=0\\)"
+                },
+                {
+                  "explain": "Factor and use the intersection other than x=4.",
+                  "work": "\\((x-1)(x-4)=0\\Rightarrow x=1\\text{ or }4\\)"
+                },
+                {
+                  "explain": "Substitute x=1 into y=x−4.",
+                  "work": "\\(y=-3\\Rightarrow\\boxed{A=(1,-3)}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 340\"><rect width=\"480\" height=\"340\" fill=\"white\"/><path d=\"M50 220H450M100 325V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 320L360 220\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M100 220 C120 260 135 285 165 295 C190 308 210 320 230 320 C280 315 325 260 360 220\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M165 295 L360 220 C325 260 280 315 230 320 C210 320 190 308 165 295Z\" fill=\"#fde68a\" opacity=\".52\"/><circle cx=\"165\" cy=\"295\" r=\"3\" fill=\"#334155\"/><circle cx=\"360\" cy=\"220\" r=\"3\" fill=\"#334155\"/><text x=\"130\" y=\"315\" font-family=\"Arial\" font-size=\"12\">A(1,−3)</text><text x=\"364\" y=\"218\" font-family=\"Arial\" font-size=\"12\">(4,0)</text><text x=\"160\" y=\"240\" font-family=\"Arial\" font-size=\"12\">1</text><text x=\"355\" y=\"240\" font-family=\"Arial\" font-size=\"12\">4</text><text x=\"452\" y=\"225\" font-family=\"Arial\" font-size=\"13\">x</text><text x=\"104\" y=\"32\" font-family=\"Arial\" font-size=\"13\">y</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "204",
+                "course": "Advanced",
+                "sourceQuestion": "Q71(i)"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 340\"><rect width=\"480\" height=\"340\" fill=\"white\"/><path d=\"M50 220H450M100 325V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 320L360 220\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M100 220 C120 260 135 285 165 295 C190 308 210 320 230 320 C280 315 325 260 360 220\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M165 295 L360 220 C325 260 280 315 230 320 C210 320 190 308 165 295Z\" fill=\"#fde68a\" opacity=\".52\"/><circle cx=\"165\" cy=\"295\" r=\"3\" fill=\"#334155\"/><circle cx=\"360\" cy=\"220\" r=\"3\" fill=\"#334155\"/><text x=\"130\" y=\"315\" font-family=\"Arial\" font-size=\"12\">A(1,−3)</text><text x=\"364\" y=\"218\" font-family=\"Arial\" font-size=\"12\">(4,0)</text><text x=\"160\" y=\"240\" font-family=\"Arial\" font-size=\"12\">1</text><text x=\"355\" y=\"240\" font-family=\"Arial\" font-size=\"12\">4</text><text x=\"452\" y=\"225\" font-family=\"Arial\" font-size=\"13\">x</text><text x=\"104\" y=\"32\" font-family=\"Arial\" font-size=\"13\">y</text></svg>"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p204-q71-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the shaded area bounded by the two graphs.",
+              "options": [
+                "\\(\\frac92\\)",
+                "\\(\\frac{27}{2}\\)",
+                "\\(\\frac32\\)",
+                "\\(9\\)"
+              ],
+              "answer": 0,
+              "hint": "From x=1 to x=4, the line is above the parabola. Integrate line minus parabola.",
+              "steps": [
+                {
+                  "explain": "Use the two intersection x-values as limits and subtract lower from upper.",
+                  "work": "\\(A=\\int_1^4[(x-4)-(x^2-4x)]dx=\\int_1^4(-x^2+5x-4)dx\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 340\"><rect width=\"480\" height=\"340\" fill=\"white\"/><path d=\"M50 220H450M100 325V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 320L360 220\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M100 220 C120 260 135 285 165 295 C190 308 210 320 230 320 C280 315 325 260 360 220\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M165 295 L360 220 C325 260 280 315 230 320 C210 320 190 308 165 295Z\" fill=\"#fde68a\" opacity=\".52\"/><circle cx=\"165\" cy=\"295\" r=\"3\" fill=\"#334155\"/><circle cx=\"360\" cy=\"220\" r=\"3\" fill=\"#334155\"/><text x=\"130\" y=\"315\" font-family=\"Arial\" font-size=\"12\">A(1,−3)</text><text x=\"364\" y=\"218\" font-family=\"Arial\" font-size=\"12\">(4,0)</text><text x=\"160\" y=\"240\" font-family=\"Arial\" font-size=\"12\">1</text><text x=\"355\" y=\"240\" font-family=\"Arial\" font-size=\"12\">4</text><text x=\"452\" y=\"225\" font-family=\"Arial\" font-size=\"13\">x</text><text x=\"104\" y=\"32\" font-family=\"Arial\" font-size=\"13\">y</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Integrate each term.",
+                  "work": "\\(F(x)=-\\frac{x^3}{3}+\\frac{5x^2}{2}-4x\\)"
+                },
+                {
+                  "explain": "Evaluate upper minus lower.",
+                  "work": "\\(F(4)-F(1)=\\frac83-(-\\frac{11}{6})=\\boxed{\\frac92}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "204",
+                "course": "Advanced",
+                "sourceQuestion": "Q71(ii)"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 340\"><rect width=\"480\" height=\"340\" fill=\"white\"/><path d=\"M50 220H450M100 325V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 320L360 220\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M100 220 C120 260 135 285 165 295 C190 308 210 320 230 320 C280 315 325 260 360 220\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M165 295 L360 220 C325 260 280 315 230 320 C210 320 190 308 165 295Z\" fill=\"#fde68a\" opacity=\".52\"/><circle cx=\"165\" cy=\"295\" r=\"3\" fill=\"#334155\"/><circle cx=\"360\" cy=\"220\" r=\"3\" fill=\"#334155\"/><text x=\"130\" y=\"315\" font-family=\"Arial\" font-size=\"12\">A(1,−3)</text><text x=\"364\" y=\"218\" font-family=\"Arial\" font-size=\"12\">(4,0)</text><text x=\"160\" y=\"240\" font-family=\"Arial\" font-size=\"12\">1</text><text x=\"355\" y=\"240\" font-family=\"Arial\" font-size=\"12\">4</text><text x=\"452\" y=\"225\" font-family=\"Arial\" font-size=\"13\">x</text><text x=\"104\" y=\"32\" font-family=\"Arial\" font-size=\"13\">y</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "204",
+            "course": "Advanced",
+            "sourceQuestion": "Q71"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p204-q72",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(\\displaystyle\\int_0^1(e^{5x}-1)\\,dx\\).",
+          "options": [
+            "\\(\\frac{e^5-6}{5}\\)",
+            "\\(\\frac{e^5-1}{5}\\)",
+            "\\(e^5-6\\)",
+            "\\(\\frac{e^5+4}{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "Integrate the exponential with a factor 1/5 and integrate −1 as −x.",
+          "steps": [
+            {
+              "explain": "Integrate both terms.",
+              "work": "\\(\\int(e^{5x}-1)dx=\\frac15e^{5x}-x+C\\)"
+            },
+            {
+              "explain": "Evaluate at x=1 and subtract the value at x=0.",
+              "work": "\\([\\frac15e^{5x}-x]_0^1=(\\frac{e^5}{5}-1)-\\frac15=\\boxed{\\frac{e^5-6}{5}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "204",
+            "course": "Advanced",
+            "sourceQuestion": "Q72"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p204-q73",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The graphs of \\(y=2x\\) and \\(y=6x-x^2\\) intersect at the origin and point B.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M55 225H450M120 270V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M120 225L400 65\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M120 225 Q260 5 400 65\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M120 225 Q260 5 400 65 L120 225Z\" fill=\"#bfdbfe\" opacity=\".55\"/><text x=\"106\" y=\"245\">O</text><text x=\"402\" y=\"64\">B(4,8)</text><text x=\"428\" y=\"220\">x</text><text x=\"123\" y=\"32\">y</text><text x=\"265\" y=\"45\">y=6x−x²</text><text x=\"286\" y=\"158\">y=2x</text></svg>"
+          },
+          "hint": "Find the second intersection first. Then subtract the line from the parabola over the interval between intersections.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p204-q73-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Show that the coordinates of B are (4,8).",
+              "options": [
+                "\\((4,8)\\)",
+                "\\((2,4)\\)",
+                "\\((4,4)\\)",
+                "\\((8,4)\\)"
+              ],
+              "answer": 0,
+              "hint": "Set 2x=6x−x², solve for the nonzero root, then find y.",
+              "steps": [
+                {
+                  "explain": "Equate the formulas at an intersection.",
+                  "work": "\\(2x=6x-x^2\\Rightarrow x(x-4)=0\\)"
+                },
+                {
+                  "explain": "The non-origin intersection has x=4; substitute into y=2x.",
+                  "work": "\\(y=2(4)=8\\Rightarrow\\boxed{B=(4,8)}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M55 225H450M120 270V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M120 225L400 65\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M120 225 Q260 5 400 65\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M120 225 Q260 5 400 65 L120 225Z\" fill=\"#bfdbfe\" opacity=\".55\"/><text x=\"106\" y=\"245\">O</text><text x=\"402\" y=\"64\">B(4,8)</text><text x=\"428\" y=\"220\">x</text><text x=\"123\" y=\"32\">y</text><text x=\"265\" y=\"45\">y=6x−x²</text><text x=\"286\" y=\"158\">y=2x</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "204",
+                "course": "Advanced",
+                "sourceQuestion": "Q73(i)"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M55 225H450M120 270V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M120 225L400 65\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M120 225 Q260 5 400 65\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M120 225 Q260 5 400 65 L120 225Z\" fill=\"#bfdbfe\" opacity=\".55\"/><text x=\"106\" y=\"245\">O</text><text x=\"402\" y=\"64\">B(4,8)</text><text x=\"428\" y=\"220\">x</text><text x=\"123\" y=\"32\">y</text><text x=\"265\" y=\"45\">y=6x−x²</text><text x=\"286\" y=\"158\">y=2x</text></svg>"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p204-q73-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the shaded area bounded by the graphs.",
+              "options": [
+                "\\(\\frac{32}{3}\\)",
+                "\\(\\frac{16}{3}\\)",
+                "\\(16\\)",
+                "\\(\\frac{64}{3}\\)"
+              ],
+              "answer": 0,
+              "hint": "The parabola is above the line between x=0 and x=4. Integrate their difference.",
+              "steps": [
+                {
+                  "explain": "Set up upper curve minus lower curve using the intersection limits.",
+                  "work": "\\(A=\\int_0^4[(6x-x^2)-2x]dx=\\int_0^4(4x-x^2)dx\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M55 225H450M120 270V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M120 225L400 65\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M120 225 Q260 5 400 65\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M120 225 Q260 5 400 65 L120 225Z\" fill=\"#bfdbfe\" opacity=\".55\"/><text x=\"106\" y=\"245\">O</text><text x=\"402\" y=\"64\">B(4,8)</text><text x=\"428\" y=\"220\">x</text><text x=\"123\" y=\"32\">y</text><text x=\"265\" y=\"45\">y=6x−x²</text><text x=\"286\" y=\"158\">y=2x</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Integrate and evaluate at the endpoints.",
+                  "work": "\\(A=[2x^2-\\frac{x^3}{3}]_0^4=32-\\frac{64}{3}=\\boxed{\\frac{32}{3}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "204",
+                "course": "Advanced",
+                "sourceQuestion": "Q73(ii)"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M55 225H450M120 270V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M120 225L400 65\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M120 225 Q260 5 400 65\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M120 225 Q260 5 400 65 L120 225Z\" fill=\"#bfdbfe\" opacity=\".55\"/><text x=\"106\" y=\"245\">O</text><text x=\"402\" y=\"64\">B(4,8)</text><text x=\"428\" y=\"220\">x</text><text x=\"123\" y=\"32\">y</text><text x=\"265\" y=\"45\">y=6x−x²</text><text x=\"286\" y=\"158\">y=2x</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "204",
+            "course": "Advanced",
+            "sourceQuestion": "Q73"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p204-q74",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(\\displaystyle\\int_0^1\\frac{dx}{x+4}\\).",
+          "options": [
+            "\\(\\ln\\frac54\\)",
+            "\\(\\ln5\\)",
+            "\\(\\ln4\\)",
+            "\\(\\frac15\\)"
+          ],
+          "answer": 0,
+          "hint": "The antiderivative is ln(x+4).",
+          "steps": [
+            {
+              "explain": "Apply the logarithmic integral rule.",
+              "work": "\\(\\int\\frac{dx}{x+4}=\\ln(x+4)+C\\)"
+            },
+            {
+              "explain": "Substitute the upper and lower limits.",
+              "work": "\\(\\ln5-\\ln4=\\boxed{\\ln\\frac54}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "204",
+            "course": "Advanced",
+            "sourceQuestion": "Q74"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p204-q75",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "i Sketch the curve \\(y=3\\sin2x\\) for \\(-\\frac\\pi2\\le x\\le\\frac\\pi2\\). ii On your diagram for part i, sketch the line \\(y=\\frac14x\\), and shade the region represented by \\(\\displaystyle\\int_0^{\\pi/4}(3\\sin2x-\\frac14x)\\,dx\\). iii Find the exact value of the integral in part ii.",
+          "hint": "Sketch the curve first, then use it and the line to identify the area represented by the integral.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p204-q75-i",
+              "type": "review",
+              "manual": true,
+              "difficulty": "hard",
+              "stem": "Sketch \\(y=3\\sin2x\\) for \\(-\\frac\\pi2\\le x\\le\\frac\\pi2\\).",
+              "answer": "A sine curve with amplitude 3, zeros at −π/2, 0, π/2; minimum −3 at −π/4; maximum 3 at π/4.",
+              "hint": "The coefficient 3 is the amplitude. The factor 2 makes the period π. Plot zeros and turning points first.",
+              "steps": [
+                {
+                  "explain": "Solve sin2x=0 for the zeros on the given interval.",
+                  "work": "\\(x=-\\frac\\pi2,0,\\frac\\pi2\\)"
+                },
+                {
+                  "explain": "The extrema occur when 2x=±π/2. Multiply sine values by 3.",
+                  "work": "\\((-\\frac\\pi4,-3),\\quad(\\frac\\pi4,3)\\)"
+                },
+                {
+                  "explain": "Plot the five key points and join them smoothly.",
+                  "work": "\\((-\\frac\\pi2,0),(-\\frac\\pi4,-3),(0,0),(\\frac\\pi4,3),(\\frac\\pi2,0)\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 340\"><rect width=\"480\" height=\"340\" fill=\"white\"/><path d=\"M45 190H450M240 315V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M40 190 C80 190 105 255 140 255 C175 255 205 190 240 190 C275 190 305 125 340 125 C375 125 400 190 440 190\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M240 190 C275 190 305 125 340 125 L340 186Z\" fill=\"#fde68a\" opacity=\".58\"/><path d=\"M240 190L340 186\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M340 190V125\" stroke=\"#94a3b8\" stroke-dasharray=\"4 4\"/><g font-family=\"Arial\" font-size=\"12\"><text x=\"36\" y=\"211\">−π/2</text><text x=\"234\" y=\"211\">0</text><text x=\"327\" y=\"211\">π/4</text><text x=\"430\" y=\"211\">π/2</text><text x=\"244\" y=\"28\">y</text><text x=\"452\" y=\"194\">x</text><text x=\"360\" y=\"105\">y=3 sin 2x</text><text x=\"344\" y=\"186\">y=x/4</text><text x=\"130\" y=\"277\">−3</text><text x=\"330\" y=\"114\">3</text></g></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "204",
+                "course": "Advanced",
+                "sourceQuestion": "Q75(i)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p204-q75-ii",
+              "type": "review",
+              "manual": true,
+              "difficulty": "hard",
+              "stem": "On the same diagram sketch \\(y=\\frac14x\\), and shade the region represented by \\(\\displaystyle\\int_0^{\\pi/4}(3\\sin2x-\\frac14x)\\,dx\\).",
+              "answer": "Shade between the sine curve above and the line below, from x=0 to x=π/4.",
+              "hint": "The integral limits give the left and right edges; the integrand gives upper graph minus lower graph.",
+              "steps": [
+                {
+                  "explain": "Both graphs pass through (0,0). At x=π/4, the curve is 3 and the line is π/16, so the curve is above the line.",
+                  "work": "\\(3\\sin(\\frac\\pi2)=3>\\frac14(\\frac\\pi4)=\\frac\\pi{16}\\)"
+                },
+                {
+                  "explain": "Shade only between the two vertical boundaries.",
+                  "work": "\\(A=\\int_0^{\\pi/4}(3\\sin2x-\\frac{x}{4})dx\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 340\"><rect width=\"480\" height=\"340\" fill=\"white\"/><path d=\"M45 190H450M240 315V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M40 190 C80 190 105 255 140 255 C175 255 205 190 240 190 C275 190 305 125 340 125 C375 125 400 190 440 190\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M240 190 C275 190 305 125 340 125 L340 186Z\" fill=\"#fde68a\" opacity=\".58\"/><path d=\"M240 190L340 186\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M340 190V125\" stroke=\"#94a3b8\" stroke-dasharray=\"4 4\"/><g font-family=\"Arial\" font-size=\"12\"><text x=\"36\" y=\"211\">−π/2</text><text x=\"234\" y=\"211\">0</text><text x=\"327\" y=\"211\">π/4</text><text x=\"430\" y=\"211\">π/2</text><text x=\"244\" y=\"28\">y</text><text x=\"452\" y=\"194\">x</text><text x=\"360\" y=\"105\">y=3 sin 2x</text><text x=\"344\" y=\"186\">y=x/4</text><text x=\"130\" y=\"277\">−3</text><text x=\"330\" y=\"114\">3</text></g></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "204",
+                "course": "Advanced",
+                "sourceQuestion": "Q75(ii)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p204-q75-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the exact value of \\(\\displaystyle\\int_0^{\\pi/4}(3\\sin2x-\\frac14x)\\,dx\\).",
+              "options": [
+                "\\(\\frac32-\\frac{\\pi^2}{128}\\)",
+                "\\(3-\\frac{\\pi^2}{64}\\)",
+                "\\(\\frac32+\\frac{\\pi^2}{128}\\)",
+                "\\(\\frac{3\\pi}{4}-\\frac{\\pi^2}{128}\\)"
+              ],
+              "answer": 0,
+              "hint": "Integrate the sine and linear terms separately, then substitute both limits.",
+              "steps": [
+                {
+                  "explain": "Integrate each term.",
+                  "work": "\\(\\int(3\\sin2x-\\frac{x}{4})dx=-\\frac32\\cos2x-\\frac{x^2}{8}+C\\)"
+                },
+                {
+                  "explain": "At x=π/4, cos(π/2)=0.",
+                  "work": "\\(-\\frac32(0)-\\frac{(\\pi/4)^2}{8}=-\\frac{\\pi^2}{128}\\)"
+                },
+                {
+                  "explain": "At x=0 the antiderivative is −3/2. Subtract it.",
+                  "work": "\\(I=-\\frac{\\pi^2}{128}-(-\\frac32)=\\boxed{\\frac32-\\frac{\\pi^2}{128}}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 340\"><rect width=\"480\" height=\"340\" fill=\"white\"/><path d=\"M45 190H450M240 315V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M40 190 C80 190 105 255 140 255 C175 255 205 190 240 190 C275 190 305 125 340 125 C375 125 400 190 440 190\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M240 190 C275 190 305 125 340 125 L340 186Z\" fill=\"#fde68a\" opacity=\".58\"/><path d=\"M240 190L340 186\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M340 190V125\" stroke=\"#94a3b8\" stroke-dasharray=\"4 4\"/><g font-family=\"Arial\" font-size=\"12\"><text x=\"36\" y=\"211\">−π/2</text><text x=\"234\" y=\"211\">0</text><text x=\"327\" y=\"211\">π/4</text><text x=\"430\" y=\"211\">π/2</text><text x=\"244\" y=\"28\">y</text><text x=\"452\" y=\"194\">x</text><text x=\"344\" y=\"128\">y=3 sin 2x</text><text x=\"344\" y=\"186\">y=x/4</text><text x=\"130\" y=\"277\">−3</text><text x=\"344\" y=\"119\">3</text></g></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "204",
+                "course": "Advanced",
+                "sourceQuestion": "Q75(iii)"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 340\"><rect width=\"480\" height=\"340\" fill=\"white\"/><path d=\"M45 190H450M240 315V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M40 190 C80 190 105 255 140 255 C175 255 205 190 240 190 C275 190 305 125 340 125 C375 125 400 190 440 190\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M240 190 C275 190 305 125 340 125 L340 186Z\" fill=\"#fde68a\" opacity=\".58\"/><path d=\"M240 190L340 186\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M340 190V125\" stroke=\"#94a3b8\" stroke-dasharray=\"4 4\"/><g font-family=\"Arial\" font-size=\"12\"><text x=\"36\" y=\"211\">−π/2</text><text x=\"234\" y=\"211\">0</text><text x=\"327\" y=\"211\">π/4</text><text x=\"430\" y=\"211\">π/2</text><text x=\"244\" y=\"28\">y</text><text x=\"452\" y=\"194\">x</text><text x=\"344\" y=\"128\">y=3 sin 2x</text><text x=\"344\" y=\"186\">y=x/4</text><text x=\"130\" y=\"277\">−3</text><text x=\"344\" y=\"119\">3</text></g></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "204",
+            "course": "Advanced",
+            "sourceQuestion": "Q75"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p204-q76-i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The diagram shows the cross-section of a creek, with the depths of the creek shown in metres, at 4 metre intervals. The creek is 12 metres wide. Use the trapezoidal rule to find an approximate value for the area of the cross-section.",
+          "options": [
+            "\\(12\\text{ m}^2\\)",
+            "\\(18\\text{ m}^2\\)",
+            "\\(24\\text{ m}^2\\)",
+            "\\(6\\text{ m}^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Use width h=4 and depths 0, 1.3, 1.7, 0 in the composite trapezoidal rule.",
+          "steps": [
+            {
+              "explain": "The banks are at the water surface, so the two endpoint depths are zero. The 12 m width contains three strips of width 4 m.",
+              "work": "\\(h=4,\\quad y_0=0,\\ y_1=1.3,\\ y_2=1.7,\\ y_3=0\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M45 80H435M60 80 Q95 125 140 160 Q195 190 240 178 Q290 173 340 150 Q390 125 420 80\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M180 80V145M300 80V130\" stroke=\"#dc2626\" stroke-width=\"2\"/><path d=\"M60 80L180 145L300 130L420 80Z\" fill=\"#bfdbfe\" opacity=\".4\"/><text x=\"60\" y=\"66\">A</text><text x=\"180\" y=\"162\">1.3</text><text x=\"300\" y=\"147\">1.7</text><text x=\"420\" y=\"66\">B</text><text x=\"115\" y=\"105\">4 m</text><text x=\"235\" y=\"105\">4 m</text><text x=\"355\" y=\"105\">4 m</text><text x=\"205\" y=\"235\">12 m wide</text></svg>"
+              }
+            },
+            {
+              "explain": "Apply the trapezoidal rule for three equal strips.",
+              "work": "\\(A\\approx\\frac h2[y_0+2y_1+2y_2+y_3]=\\frac42[0+2(1.3)+2(1.7)+0]\\)"
+            },
+            {
+              "explain": "Add the weighted depths and multiply by 2.",
+              "work": "\\(A\\approx2(2.6+3.4)=\\boxed{12\\text{ m}^2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "204",
+            "course": "Advanced",
+            "sourceQuestion": "Q76(i)"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M45 80H435M60 80 Q95 125 140 160 Q195 190 240 178 Q290 173 340 150 Q390 125 420 80\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M180 80V145M300 80V130\" stroke=\"#dc2626\" stroke-width=\"2\"/><path d=\"M60 80L180 145L300 130L420 80Z\" fill=\"#bfdbfe\" opacity=\".4\"/><text x=\"60\" y=\"66\">A</text><text x=\"180\" y=\"162\">1.3</text><text x=\"300\" y=\"147\">1.7</text><text x=\"420\" y=\"66\">B</text><text x=\"115\" y=\"105\">4 m</text><text x=\"235\" y=\"105\">4 m</text><text x=\"355\" y=\"105\">4 m</text><text x=\"205\" y=\"235\">12 m wide</text></svg>"
+          }
         }
       ]
     },
