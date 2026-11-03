@@ -2123,6 +2123,119 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 280\" role=\"img\" aria-label=\"Terry's box plot and number line for drawing Kim's box plot\"><rect width=\"760\" height=\"280\" fill=\"white\"/><g stroke=\"#cbd5e1\" stroke-width=\"1\"><path d=\"M100 225H680\"/><path d=\"M120 205V235M160 205V235M200 205V235M240 205V235M280 205V235M320 205V235M360 205V235M400 205V235M440 205V235M480 205V235M520 205V235M560 205V235M600 205V235M640 205V235\"/></g><path d=\"M200 80H240M200 68V92M240 62H440V98H240ZM280 62V98M480 80H560M520 68V92\" fill=\"none\" stroke=\"#475569\" stroke-width=\"4\"/><g font-family=\"Arial\" font-size=\"17\" fill=\"#334155\"><text x=\"75\" y=\"86\">Terry</text><text x=\"75\" y=\"158\">Kim</text></g><g font-family=\"Arial\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"120\" y=\"255\">65</text><text x=\"160\" y=\"255\">66</text><text x=\"200\" y=\"255\">67</text><text x=\"240\" y=\"255\">68</text><text x=\"280\" y=\"255\">69</text><text x=\"320\" y=\"255\">70</text><text x=\"360\" y=\"255\">71</text><text x=\"400\" y=\"255\">72</text><text x=\"440\" y=\"255\">73</text><text x=\"480\" y=\"255\">74</text><text x=\"520\" y=\"255\">75</text><text x=\"560\" y=\"255\">76</text><text x=\"600\" y=\"255\">77</text></g><text x=\"385\" y=\"35\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">Test scores</text></svg>"
           }
+        },
+        {
+          "id": "y12a-advanced-005-p264-q25",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A survey was conducted where people were asked which of two brands of smartphones they preferred. 48% preferred Brand X and 52% preferred Brand Y. A graph displaying the data is to be included in a magazine article. The editor wishes to ensure that the graph is not misleading in any way. Which graph should the editor choose?",
+          "hint": "A fair column graph should start its vertical axis at zero so a small difference is not visually exaggerated.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p264-q25",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "A survey found that 48% preferred Brand X and 52% preferred Brand Y. The editor wants a column graph that is not misleading. Which graph should be used?",
+              "options": [
+                "Graph A",
+                "Graph B",
+                "Graph C",
+                "Graph D"
+              ],
+              "answer": 1,
+              "hint": "Choose a scale that starts at 0 so the small 4 percentage-point difference is not exaggerated.",
+              "steps": [
+                {
+                  "explain": "The data differ by only four percentage points.",
+                  "work": "\\(52\\%-48\\%=4\text{ percentage points}\\)"
+                },
+                {
+                  "explain": "A vertical axis that starts at 46% makes the bars look very different even though the actual difference is small.",
+                  "work": "Truncated axis exaggerates the difference"
+                },
+                {
+                  "explain": "Graph B starts at 0 and shows the bars on a full percentage scale, so it represents the comparison fairly.",
+                  "work": "\\(\boxed{\text{Graph B}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "264",
+                "course": "Advanced",
+                "sourceQuestion": "Q25"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 720 900\" role=\"img\" aria-label=\"Four bar chart designs comparing 48 percent Brand X and 52 percent Brand Y\"><rect width=\"720\" height=\"900\" fill=\"white\"/><text x=\"185\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"22\" font-weight=\"bold\">A</text><text x=\"185\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\">Survey results (%)</text><path d=\"M90 115V345H340\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M90 345.0H340\" stroke=\"#e2e8f0\"/><text x=\"80\" y=\"350.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">46</text><path d=\"M90 287.5H340\" stroke=\"#e2e8f0\"/><text x=\"80\" y=\"292.5\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">49</text><path d=\"M90 230.0H340\" stroke=\"#e2e8f0\"/><text x=\"80\" y=\"235.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">52</text><path d=\"M90 172.5H340\" stroke=\"#e2e8f0\"/><text x=\"80\" y=\"177.5\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">55</text><path d=\"M90 115.0H340\" stroke=\"#e2e8f0\"/><text x=\"80\" y=\"120.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">58</text><rect x=\"140\" y=\"306.7\" width=\"58\" height=\"38.3\" fill=\"#cbd5e1\" stroke=\"#475569\"/><text x=\"169\" y=\"368\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Brand X</text><rect x=\"245\" y=\"230.0\" width=\"58\" height=\"115.0\" fill=\"#cbd5e1\" stroke=\"#475569\"/><text x=\"274\" y=\"368\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Brand Y</text><text x=\"530\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"22\" font-weight=\"bold\">B</text><text x=\"530\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\">Survey results (%)</text><path d=\"M435 115V345H685\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M435 345.0H685\" stroke=\"#e2e8f0\"/><text x=\"425\" y=\"350.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">0</text><path d=\"M435 287.5H685\" stroke=\"#e2e8f0\"/><text x=\"425\" y=\"292.5\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">15</text><path d=\"M435 230.0H685\" stroke=\"#e2e8f0\"/><text x=\"425\" y=\"235.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">30</text><path d=\"M435 172.5H685\" stroke=\"#e2e8f0\"/><text x=\"425\" y=\"177.5\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">45</text><path d=\"M435 115.0H685\" stroke=\"#e2e8f0\"/><text x=\"425\" y=\"120.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">60</text><rect x=\"485\" y=\"161.0\" width=\"58\" height=\"184.0\" fill=\"#cbd5e1\" stroke=\"#475569\"/><text x=\"514\" y=\"368\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Brand X</text><rect x=\"590\" y=\"145.7\" width=\"58\" height=\"199.3\" fill=\"#cbd5e1\" stroke=\"#475569\"/><text x=\"619\" y=\"368\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Brand Y</text><text x=\"185\" y=\"483\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"22\" font-weight=\"bold\">C</text><text x=\"185\" y=\"510\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\">Survey results (%)</text><path d=\"M90 540V770H340\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M90 770.0H340\" stroke=\"#e2e8f0\"/><text x=\"80\" y=\"775.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">46</text><path d=\"M90 712.5H340\" stroke=\"#e2e8f0\"/><text x=\"80\" y=\"717.5\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">49</text><path d=\"M90 655.0H340\" stroke=\"#e2e8f0\"/><text x=\"80\" y=\"660.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">52</text><path d=\"M90 597.5H340\" stroke=\"#e2e8f0\"/><text x=\"80\" y=\"602.5\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">55</text><path d=\"M90 540.0H340\" stroke=\"#e2e8f0\"/><text x=\"80\" y=\"545.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">58</text><rect x=\"140\" y=\"731.7\" width=\"58\" height=\"38.3\" fill=\"#cbd5e1\" stroke=\"#475569\"/><text x=\"169\" y=\"793\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Brand X</text><rect x=\"245\" y=\"655.0\" width=\"58\" height=\"115.0\" fill=\"#cbd5e1\" stroke=\"#475569\"/><text x=\"274\" y=\"793\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Brand Y</text><text x=\"530\" y=\"483\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"22\" font-weight=\"bold\">D</text><text x=\"530\" y=\"510\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\">Survey results (%)</text><path d=\"M435 540V770H685\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M435 770.0H685\" stroke=\"#e2e8f0\"/><text x=\"425\" y=\"775.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">0</text><path d=\"M435 712.5H685\" stroke=\"#e2e8f0\"/><text x=\"425\" y=\"717.5\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">15</text><path d=\"M435 655.0H685\" stroke=\"#e2e8f0\"/><text x=\"425\" y=\"660.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">30</text><path d=\"M435 597.5H685\" stroke=\"#e2e8f0\"/><text x=\"425\" y=\"602.5\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">45</text><path d=\"M435 540.0H685\" stroke=\"#e2e8f0\"/><text x=\"425\" y=\"545.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">60</text><rect x=\"485\" y=\"586.0\" width=\"58\" height=\"184.0\" fill=\"#cbd5e1\" stroke=\"#475569\"/><text x=\"514\" y=\"793\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Brand X</text><rect x=\"590\" y=\"570.7\" width=\"58\" height=\"199.3\" fill=\"#cbd5e1\" stroke=\"#475569\"/><text x=\"619\" y=\"793\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Brand Y</text></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "264",
+            "course": "Advanced",
+            "sourceQuestion": "Q25"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p264-q26",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The July sale prices for properties in a suburb were $552 000, $595 000, $607 000, $607 000, $682 000 and $685 000. On 1 August, another property in the same suburb was sold for over one million dollars. If this property had been sold in July, what effect would it have had on the mean and median sale prices for July?",
+          "hint": "Place the very large value at the end of the ordered data. Check which middle value(s) determine the median and how the total changes.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p264-q26",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The July sale prices for properties in a suburb were $552,000, $595,000, $607,000, $607,000, $682,000 and $685,000. A further property in the suburb sold for over $1,000,000. If it had been sold in July, what effect would it have had on the mean and median sale prices?",
+              "options": [
+                "The mean changes and the median stays the same",
+                "Both the mean and median change",
+                "The mean stays the same and the median changes",
+                "Neither the mean nor the median changes"
+              ],
+              "answer": 0,
+              "hint": "Insert the new high value into the ordered list. Compare the new middle value with the original median, and note its effect on the total.",
+              "steps": [
+                {
+                  "explain": "The original six prices have middle values $607,000 and $607,000, so the median is $607,000.",
+                  "work": "Original median \\(=(607000+607000)/2=607000\\)"
+                },
+                {
+                  "explain": "A seventh price above $1,000,000 goes at the end. The fourth value is still $607,000, so the median is unchanged.",
+                  "work": "New median = 4th value = $607,000"
+                },
+                {
+                  "explain": "The new price is much larger than the previous prices, so it increases the total and therefore the mean.",
+                  "work": "Mean increases; median unchanged"
+                },
+                {
+                  "explain": "Thus only the mean changes.",
+                  "work": "\\(\boxed{\text{Mean changes; median stays the same}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "264",
+                "course": "Advanced",
+                "sourceQuestion": "Q26"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "264",
+            "course": "Advanced",
+            "sourceQuestion": "Q26"
+          }
         }
       ]
     },
