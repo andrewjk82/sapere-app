@@ -1677,7 +1677,7 @@
                 },
                 {
                   "explain": "Therefore the required mean is 165 cm.",
-                  "work": "\\(\boxed{165\text{ cm}}\\)"
+                  "work": "\\(\\boxed{165\text{ cm}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -1730,7 +1730,7 @@
                 },
                 {
                   "explain": "Since $970 is greater than $965, it is an outlier.",
-                  "work": "\\(970>965\\Rightarrow\boxed{\text{Yes}}\\)"
+                  "work": "\\(970>965\\Rightarrow\\boxed{\text{Yes}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -1766,7 +1766,7 @@
                 },
                 {
                   "explain": "Standard deviation is based on these deviations, so it is unchanged.",
-                  "work": "\\(\boxed{\text{Standard deviation stays the same}}\\)"
+                  "work": "\\(\\boxed{\text{Standard deviation stays the same}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -1811,7 +1811,7 @@
               "steps": [
                 {
                   "explain": "Half of 200 sales is 100. Locate cumulative frequency 100 on the vertical scale.",
-                  "work": "\\(\frac{200}{2}=100\\)"
+                  "work": "\\(\\frac{200}{2}=100\\)"
                 },
                 {
                   "explain": "Read horizontally to the cumulative curve/graph, then down to the price axis. The estimate is about $393 000.",
@@ -1819,7 +1819,7 @@
                 },
                 {
                   "explain": "State the estimate in dollars.",
-                  "work": "\\(\boxed{\\$393\\,000}\\)"
+                  "work": "\\(\\boxed{\\$393\\,000}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -1855,7 +1855,7 @@
                 },
                 {
                   "explain": "Divide the weighted total by 200. The result is in thousands of dollars.",
-                  "work": "\\(\bar{x}=78\\,400/200=392\\Rightarrow\boxed{\\$392\\,000}\\)"
+                  "work": "\\(\\bar{x}=78\\,400/200=392\\Rightarrow\\boxed{\\$392\\,000}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -1911,7 +1911,7 @@
                 },
                 {
                   "explain": "Divide by the total frequency, 20.",
-                  "work": "\\(\bar{x}=86/20=4.3\\Rightarrow\boxed{4.3\text{ hours}}\\)"
+                  "work": "\\(\\bar{x}=86/20=4.3\\Rightarrow\\boxed{4.3\text{ hours}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -1971,7 +1971,7 @@
                 },
                 {
                   "explain": "The women’s median is higher, so Pat’s claim is supported.",
-                  "work": "\\(56.5>45\\Rightarrow\boxed{\text{Yes}}\\)"
+                  "work": "\\(56.5>45\\Rightarrow\\boxed{\text{Yes}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -2027,7 +2027,7 @@
                 },
                 {
                   "explain": "This is the first option.",
-                  "work": "\\(\boxed{67,69,71,73,75}\\)"
+                  "work": "\\(\\boxed{67,69,71,73,75}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -2059,11 +2059,11 @@
                 },
                 {
                   "explain": "Half the results lie below the median.",
-                  "work": "\\(\frac12\times100\\%=50\\%\\)"
+                  "work": "\\(\\frac12\\times100\\%=50\\%\\)"
                 },
                 {
                   "explain": "Therefore, 50% of Terry’s results were below 69.",
-                  "work": "\\(\boxed{50\\%}\\)"
+                  "work": "\\(\\boxed{50\\%}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -2099,7 +2099,7 @@
                 },
                 {
                   "explain": "Therefore Terry’s claim is not supported; Kim’s results were generally better and more consistent.",
-                  "work": "\\(\boxed{\text{No}}\\)"
+                  "work": "\\(\\boxed{\text{No}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -2155,7 +2155,7 @@
                 },
                 {
                   "explain": "Graph B starts at 0 and shows the bars on a full percentage scale, so it represents the comparison fairly.",
-                  "work": "\\(\boxed{\text{Graph B}}\\)"
+                  "work": "\\(\\boxed{\text{Graph B}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -2215,7 +2215,7 @@
                 },
                 {
                   "explain": "Thus only the mean changes.",
-                  "work": "\\(\boxed{\text{Mean changes; median stays the same}}\\)"
+                  "work": "\\(\\boxed{\text{Mean changes; median stays the same}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -2268,7 +2268,7 @@
                 },
                 {
                   "explain": "The two new scores total 192−140=52. Divide by 2 to find their mean.",
-                  "work": "\\(\frac{52}{2}=\boxed{26}\\)"
+                  "work": "\\(\\frac{52}{2}=\\boxed{26}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -2321,7 +2321,7 @@
                 },
                 {
                   "explain": "Subtract the current total from the target total to find the required fourth mark.",
-                  "work": "\\(292-216=\boxed{76}\\)"
+                  "work": "\\(292-216=\\boxed{76}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -2378,7 +2378,7 @@
                 },
                 {
                   "explain": "Subtract quartiles to find IQR.",
-                  "work": "\\(IQR=18-6=12\\Rightarrow\boxed{\text{median }13,\\ IQR=12}\\)"
+                  "work": "\\(IQR=18-6=12\\Rightarrow\\boxed{\text{median }13,\\ IQR=12}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -2398,6 +2398,371 @@
             "page": "265",
             "course": "Advanced",
             "sourceQuestion": "Q35"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p264-q27",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Jason travels to work by car on all five days of his working week, leaving home at 7 am each day. He compares his travel times using roads without tolls and roads with tolls over a period of 12 working weeks. He records his travel times (in minutes) in the back-to-back stem-and-leaf plot. Answer (i)–(iii).",
+          "hint": "Use the stem as the tens digit and the leaves as ones. Compare middle values for the median and overall spread/tails for the distributions.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p264-q27-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What is the modal travel time when Jason uses roads without tolls?",
+              "options": [
+                "42 minutes",
+                "50 minutes",
+                "52 minutes",
+                "58 minutes"
+              ],
+              "answer": 2,
+              "hint": "Find the stem-and-leaf value that appears most often on the “Without tolls” side.",
+              "steps": [
+                {
+                  "explain": "The mode is the value that occurs most often. Use the stem as the tens and the leaf as the ones.",
+                  "work": "\\(5|2=52\text{ minutes}\\)"
+                },
+                {
+                  "explain": "The leaf 2 appears four times in the stem 5 row, more often than any other travel time.",
+                  "work": "52 minutes occurs 4 times"
+                },
+                {
+                  "explain": "So the modal travel time is 52 minutes.",
+                  "work": "\\(\\boxed{52\text{ minutes}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "264",
+                "course": "Advanced",
+                "sourceQuestion": "Q27(i)"
+              }
+            },
+            {
+              "id": "y12a-advanced-005-p264-q27-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What is the median travel time when Jason uses roads without tolls?",
+              "options": [
+                "49.5 minutes",
+                "50.5 minutes",
+                "52 minutes",
+                "55 minutes"
+              ],
+              "answer": 1,
+              "hint": "There are 30 values on the “Without tolls” side. Average the 15th and 16th ordered values.",
+              "steps": [
+                {
+                  "explain": "There are 30 travel times. For an even number of values, the median is the mean of the two middle values.",
+                  "work": "Middle positions: 15th and 16th"
+                },
+                {
+                  "explain": "Reading the ordered data gives 50 and 51 minutes in those positions.",
+                  "work": "\\(\\frac{50+51}{2}\\)"
+                },
+                {
+                  "explain": "Calculate their average.",
+                  "work": "\\(\\boxed{50.5\text{ minutes}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "264",
+                "course": "Advanced",
+                "sourceQuestion": "Q27(ii)"
+              }
+            },
+            {
+              "id": "y12a-advanced-005-p264-q27-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "How do the two travel-time distributions compare in spread and skewness?",
+              "options": [
+                "Without tolls has much greater spread and is fairly symmetric; with tolls has smaller spread and is positively skewed",
+                "Without tolls is positively skewed and has smaller spread",
+                "With tolls has greater spread and is negatively skewed",
+                "Both have equal spread and are symmetric"
+              ],
+              "answer": 0,
+              "hint": "Compare the ranges and look for the direction of the longer tail in each distribution.",
+              "steps": [
+                {
+                  "explain": "The no-toll times run from 39 to 61 minutes, while toll-road times run from 35 to 90 minutes.",
+                  "work": "No tolls range \\(=61-39=22\\); with tolls range \\(=90-35=55\\)"
+                },
+                {
+                  "explain": "The no-toll values cluster fairly evenly around the middle. The toll-road values cluster at the lower end with a tail toward longer times.",
+                  "work": "No tolls: fairly symmetric; with tolls: right tail"
+                },
+                {
+                  "explain": "Thus no-toll times have the smaller spread; toll-road times are more spread and positively skewed.",
+                  "work": "\\(\\boxed{\text{No tolls: smaller spread, roughly symmetric; tolls: larger spread, positive skew}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "264",
+                "course": "Advanced",
+                "sourceQuestion": "Q27(iii)"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 780 470\" role=\"img\" aria-label=\"Back-to-back stem-and-leaf plot of weekly travel times without and with tolls\"><rect width=\"780\" height=\"470\" fill=\"white\"/><text x=\"260\" y=\"40\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"20\" font-style=\"italic\">Without tolls</text><text x=\"525\" y=\"40\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"20\" font-style=\"italic\">With tolls</text><path d=\"M390 65V385\" stroke=\"#334155\" stroke-width=\"2\"/><g font-family=\"Arial\" font-size=\"19\" fill=\"#172554\" text-anchor=\"middle\"><text x=\"390\" y=\"110\">3</text><text x=\"390\" y=\"155\">4</text><text x=\"390\" y=\"200\">5</text><text x=\"390\" y=\"245\">6</text><text x=\"390\" y=\"290\">7</text><text x=\"390\" y=\"335\">8</text><text x=\"390\" y=\"380\">9</text></g><g font-family=\"monospace\" font-size=\"16\" fill=\"#172554\" text-anchor=\"end\"><text x=\"370\" y=\"110\">9</text><text x=\"370\" y=\"155\">9 9 8 7 7 6 5 5 4 4 3 2 0</text><text x=\"370\" y=\"200\">9 8 7 5 4 3 3 3 2 2 2 2 1 1 0</text><text x=\"370\" y=\"245\">1</text></g><g font-family=\"monospace\" font-size=\"16\" fill=\"#172554\"><text x=\"410\" y=\"110\">5 8 9 9</text><text x=\"410\" y=\"155\">0 1 2 6 7 7 8 8 8 9</text><text x=\"410\" y=\"200\">2 4 4 5 6 8 9</text><text x=\"410\" y=\"245\">1 3 5 7</text><text x=\"410\" y=\"290\">0 2 8</text><text x=\"410\" y=\"335\">2</text><text x=\"410\" y=\"380\">0</text></g><text x=\"390\" y=\"435\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\">Key: 5 | 2 = 52 minutes</text></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "264",
+            "course": "Advanced",
+            "sourceQuestion": "Q27"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p265-q28",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A retailer has collected data on the number of televisions that he sold each week in 2012. He grouped the data into classes and displayed the data using a cumulative frequency histogram and polygon (ogive). Answer (i) and (ii).",
+          "hint": "For the quartiles, use cumulative frequencies 13 and 39 out of 52 weeks. Remember a grouped class gives an interval, not an exact weekly sales value.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p265-q28-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Use the cumulative frequency polygon to determine the interquartile range of weekly television sales.",
+              "options": [
+                "280 televisions",
+                "190 televisions",
+                "300 televisions",
+                "470 televisions"
+              ],
+              "answer": 0,
+              "hint": "The maximum cumulative frequency is 52. Find Q1 at cumulative frequency 13 and Q3 at 39.",
+              "steps": [
+                {
+                  "explain": "There are 52 weeks. The lower quartile is at 52÷4=13 and the upper quartile at 3×13=39.",
+                  "work": "\\(Q_1: CF=13;\\quad Q_3: CF=39\\)"
+                },
+                {
+                  "explain": "Read from the graph: Q1 is about 190 televisions and Q3 about 470 televisions.",
+                  "work": "\\(Q_1\\approx190,\\quad Q_3\\approx470\\)"
+                },
+                {
+                  "explain": "Subtract the quartiles.",
+                  "work": "\\(IQR\\approx470-190=\\boxed{280}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "265",
+                "course": "Advanced",
+                "sourceQuestion": "Q28(i)"
+              }
+            },
+            {
+              "id": "y12a-advanced-005-p265-q28-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Oscar says the retailer sold exactly 300 televisions in 6 weeks. Is he correct?",
+              "options": [
+                "Yes, the graph gives exactly 300 for six weeks",
+                "No; grouped data only show that sales were between 250 and 350 in 6 weeks",
+                "No; sales were between 350 and 450 in 6 weeks",
+                "Yes; the median is 300"
+              ],
+              "answer": 1,
+              "hint": "The graph groups sales into intervals. Use the rise in cumulative frequency around the 300 class centre.",
+              "steps": [
+                {
+                  "explain": "The cumulative frequency rises from about 22 to 28 across the class centred at 300.",
+                  "work": "\\(28-22=6\text{ weeks}\\)"
+                },
+                {
+                  "explain": "That class represents weekly sales between 250 and 350, not exactly 300.",
+                  "work": "Class interval: 250–350 televisions"
+                },
+                {
+                  "explain": "So it is not possible to say they sold exactly 300 in each of 6 weeks.",
+                  "work": "\\(\\boxed{\text{No; between 250 and 350 in 6 weeks}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "265",
+                "course": "Advanced",
+                "sourceQuestion": "Q28(ii)"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 430\" role=\"img\" aria-label=\"Cumulative frequency histogram and ogive for weekly television sales\"><rect width=\"700\" height=\"430\" fill=\"white\"/><text x=\"350\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">Television sales for 2012</text><path d=\"M75 350V50M75 350H630\" stroke=\"#334155\" stroke-width=\"2\"/><g stroke=\"#e2e8f0\"><path d=\"M75 292H630M75 234H630M75 176H630M75 118H630M75 60H630\"/><path d=\"M167 50V350M259 50V350M351 50V350M443 50V350M535 50V350\"/></g><g fill=\"#d1d5db\" stroke=\"#475569\" stroke-width=\"2\"><rect x=\"100\" y=\"310\" width=\"92\" height=\"40\"/><rect x=\"192\" y=\"223\" width=\"92\" height=\"87\"/><rect x=\"284\" y=\"189\" width=\"92\" height=\"34\"/><rect x=\"376\" y=\"143\" width=\"92\" height=\"46\"/><rect x=\"468\" y=\"49\" width=\"92\" height=\"94\"/></g><polyline points=\"146,310 238,223 330,189 422,143 514,49\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><g font-family=\"Arial\" font-size=\"13\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"146\" y=\"375\">100</text><text x=\"238\" y=\"375\">200</text><text x=\"330\" y=\"375\">300</text><text x=\"422\" y=\"375\">400</text><text x=\"514\" y=\"375\">500</text><text x=\"590\" y=\"375\">600</text><text x=\"350\" y=\"405\">Number sold in a week (class centre)</text><text x=\"60\" y=\"354\">0</text><text x=\"60\" y=\"296\">10</text><text x=\"60\" y=\"238\">20</text><text x=\"60\" y=\"180\">30</text><text x=\"60\" y=\"122\">40</text><text x=\"60\" y=\"64\">50</text></g><text x=\"22\" y=\"220\" transform=\"rotate(-90 22 220)\" font-family=\"Arial\" font-size=\"13\">Cumulative frequency</text></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "265",
+            "course": "Advanced",
+            "sourceQuestion": "Q28"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p265-q29",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The test results in English and Mathematics for a class were recorded and displayed in the box-and-whisker plots. Answer (i) and (ii).",
+          "hint": "Use the box edges for quartiles, the centre line for median, and whisker ends for extremes. Compare spread and tail direction.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p265-q29-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What is the interquartile range for English?",
+              "options": [
+                "30 marks",
+                "15 marks",
+                "40 marks",
+                "85 marks"
+              ],
+              "answer": 0,
+              "hint": "Read the lower and upper edges of the English box; these are Q1 and Q3.",
+              "steps": [
+                {
+                  "explain": "From the English box plot, the lower quartile is 50 and the upper quartile is 80.",
+                  "work": "\\(Q_1=50,\\quad Q_3=80\\)"
+                },
+                {
+                  "explain": "The interquartile range is Q3 minus Q1.",
+                  "work": "\\(IQR=80-50\\)"
+                },
+                {
+                  "explain": "Therefore the English IQR is 30 marks.",
+                  "work": "\\(\\boxed{30\text{ marks}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "265",
+                "course": "Advanced",
+                "sourceQuestion": "Q29(i)"
+              }
+            },
+            {
+              "id": "y12a-advanced-005-p265-q29-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Which comparison of the English and Mathematics distributions is correct?",
+              "options": [
+                "Both are negatively skewed; English has a wider spread and a higher maximum, while Mathematics has a higher median",
+                "Both are positively skewed and have the same spread",
+                "English has a higher median and smaller spread",
+                "Mathematics has a lower median and wider spread"
+              ],
+              "answer": 0,
+              "hint": "Compare medians, quartile ranges, ranges and the balance of each box plot.",
+              "steps": [
+                {
+                  "explain": "Both plots have longer lower sides/whiskers, indicating negative skew. English has Q1=50,Q3=80, so IQR=30; Mathematics has Q1=65,Q3=80, so IQR=15.",
+                  "work": "Both negatively skewed; English IQR 30, Mathematics IQR 15"
+                },
+                {
+                  "explain": "English range is 95−10=85; Mathematics range is 90−50=40. English maximum is higher, while Mathematics median 75 exceeds English median 70.",
+                  "work": "Ranges: English 85, Mathematics 40; medians 70 and 75"
+                },
+                {
+                  "explain": "Therefore English scores are more spread and have a higher maximum, but Mathematics has the higher median.",
+                  "work": "\\(\\boxed{\text{Option A}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "265",
+                "course": "Advanced",
+                "sourceQuestion": "Q29(ii)"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 250\" role=\"img\" aria-label=\"English and Mathematics test box plots\"><rect width=\"760\" height=\"250\" fill=\"white\"/><g stroke=\"#e2e8f0\"><path d=\"M80 195H700\"/><path d=\"M110 40V200M170 40V200M230 40V200M290 40V200M350 40V200M410 40V200M470 40V200M530 40V200M590 40V200M650 40V200\"/></g><path d=\"M140 80H680M140 72V88M380 62H560V98H380ZM500 62V98M560 80H650M650 72V88\" fill=\"none\" stroke=\"#475569\" stroke-width=\"3\"/><path d=\"M380 145H620M380 137V153M470 127H560V163H470ZM500 127V163M560 145H620M620 137V153\" fill=\"none\" stroke=\"#475569\" stroke-width=\"3\"/><g font-family=\"Arial\" font-size=\"15\" fill=\"#334155\"><text x=\"25\" y=\"85\">English</text><text x=\"25\" y=\"150\">Mathematics</text></g><g font-family=\"Arial\" font-size=\"13\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"110\" y=\"220\">0</text><text x=\"170\" y=\"220\">10</text><text x=\"230\" y=\"220\">20</text><text x=\"290\" y=\"220\">30</text><text x=\"350\" y=\"220\">40</text><text x=\"410\" y=\"220\">50</text><text x=\"470\" y=\"220\">60</text><text x=\"530\" y=\"220\">70</text><text x=\"590\" y=\"220\">80</text><text x=\"650\" y=\"220\">90</text><text x=\"700\" y=\"220\">100</text></g></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "265",
+            "course": "Advanced",
+            "sourceQuestion": "Q29"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p265-q30",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A data set of nine scores has a median of 7. The scores 6, 6, 12 and 17 are added to this data set. What is the median of the data set now?",
+          "hint": "The original middle score is 7. Check how many new scores go below 7 and how many go above 7.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p265-q30",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "A data set of nine scores has a median of 7. The scores 6, 6, 12 and 17 are added to this data set. What is the median of the data set now?",
+              "options": [
+                "6",
+                "7",
+                "8",
+                "9"
+              ],
+              "answer": 1,
+              "hint": "The original median is 7. Count how many added values fall below and above 7.",
+              "steps": [
+                {
+                  "explain": "With nine scores, the original 5th score is 7.",
+                  "work": "Original median = 7"
+                },
+                {
+                  "explain": "Two new scores, 6 and 6, are below 7; two new scores, 12 and 17, are above 7. The middle position remains at the original middle value.",
+                  "work": "Two added below, two added above"
+                },
+                {
+                  "explain": "So the median does not change.",
+                  "work": "\\(\\boxed{7}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "265",
+                "course": "Advanced",
+                "sourceQuestion": "Q30"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "265",
+            "course": "Advanced",
+            "sourceQuestion": "Q30"
           }
         }
       ]
