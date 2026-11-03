@@ -6161,35 +6161,619 @@
           }
         },
         {
-          "id": "y12a-advanced-004-p205-q84-i",
+          "id": "y12a-advanced-004-p206-q85",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Sand is tipped from a truck onto a pile. The rate \\(R\\), in kg/s, at which the sand is flowing is \\(R=100t-t^3\\), for \\(0\\le t\\le T\\), where t is the time in seconds after the sand begins to flow. Find the rate of flow at \\(t=8\\).",
+          "stem": "The diagram shows y=cos 2x and y=sin x for −π/2≤x≤π/2. The graphs intersect at x=−π/2 and x=π/6. Calculate the shaded area.",
           "options": [
-            "\\(288\\text{ kg/s}\\)",
-            "\\(512\\text{ kg/s}\\)",
-            "\\(800\\text{ kg/s}\\)",
-            "\\(224\\text{ kg/s}\\)"
+            "\\(\\frac{3\\sqrt3}{4}\\)",
+            "\\(\\frac{\\sqrt3}{4}\\)",
+            "\\(\\frac34\\)",
+            "\\(\\frac{3\\pi}{4}\\)"
           ],
           "answer": 0,
-          "hint": "Substitute t=8 into R=100t−t³ and calculate each term.",
+          "hint": "Between the two intersections cos 2x is above sin x. Integrate their difference using the stated limits.",
           "steps": [
             {
-              "explain": "Replace t by 8.",
-              "work": "\\(R(8)=100(8)-8^3\\)"
+              "explain": "Use upper curve minus lower curve. The intersections give the integration limits.",
+              "work": "\\(A=\\int_{-\\pi/2}^{\\pi/6}(\\cos2x-\\sin x)\\,dx\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M50 150H445M240 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M51 230 C95 230 115 160 145 150 C175 130 205 70 240 70 C265 70 285 95 303 110 C335 135 365 185 429 230\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M51 230 C95 225 115 195 145 185 C180 170 210 150 240 150 C265 130 285 110 303 110 C345 95 385 75 429 70\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M51 230 C95 230 115 160 145 150 C175 130 205 70 240 70 C265 78 285 95 303 110 C285 110 265 130 240 150 C210 170 180 190 145 205 C110 220 75 230 51 230Z\" fill=\"#fde68a\" opacity=\".5\"/><path d=\"M51 150V230M303 150V110\" stroke=\"#64748b\" stroke-dasharray=\"4 4\"/><text x=\"51\" y=\"170\">−π/2</text><text x=\"293\" y=\"170\">π/6</text><text x=\"445\" y=\"155\">x</text><text x=\"244\" y=\"28\">y</text><text x=\"335\" y=\"235\">cos 2x</text><text x=\"355\" y=\"95\">sin x</text></svg>"
+              }
             },
             {
-              "explain": "Calculate the multiplication and cube, then subtract.",
-              "work": "\\(800-512=\\boxed{288\\text{ kg/s}}\\)"
+              "explain": "Integrate each term.",
+              "work": "\\(\\int(\\cos2x-\\sin x)dx=\\frac12\\sin2x+\\cos x+C\\)"
+            },
+            {
+              "explain": "Evaluate at π/6 and −π/2.",
+              "work": "\\(A=(\\frac12\\sin\\frac\\pi3+\\cos\\frac\\pi6)-(\\frac12\\sin(-\\pi)+\\cos(-\\frac\\pi2))=\\boxed{\\frac{3\\sqrt3}{4}}\\)"
             }
           ],
           "timeLimit": 60,
           "xp": 1,
           "meta": {
             "source": "Y12 Advanced Topic by topic 004",
-            "page": "205",
+            "page": "206",
             "course": "Advanced",
-            "sourceQuestion": "Q84(i)"
+            "sourceQuestion": "Q85"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M50 150H445M240 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M51 230 C95 230 115 160 145 150 C175 130 205 70 240 70 C265 70 285 95 303 110 C335 135 365 185 429 230\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M51 230 C95 225 115 195 145 185 C180 170 210 150 240 150 C265 130 285 110 303 110 C345 95 385 75 429 70\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M51 230 C95 230 115 160 145 150 C175 130 205 70 240 70 C265 78 285 95 303 110 C285 110 265 130 240 150 C210 170 180 190 145 205 C110 220 75 230 51 230Z\" fill=\"#fde68a\" opacity=\".5\"/><path d=\"M51 150V230M303 150V110\" stroke=\"#64748b\" stroke-dasharray=\"4 4\"/><text x=\"51\" y=\"170\">−π/2</text><text x=\"293\" y=\"170\">π/6</text><text x=\"445\" y=\"155\">x</text><text x=\"244\" y=\"28\">y</text><text x=\"335\" y=\"235\">cos 2x</text><text x=\"355\" y=\"95\">sin x</text></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p206-q86",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The diagram shows y=cos x and y=sin 2x between x=0 and x=π/2. The curves intersect at x=π/6 and x=π/2. Calculate the shaded area.",
+          "options": [
+            "\\(\\frac34\\)",
+            "\\(\\frac12\\)",
+            "\\(\\frac{\\sqrt3}{2}\\)",
+            "\\(\\frac54\\)"
+          ],
+          "answer": 0,
+          "hint": "The shaded region is under the lower curve and above the x-axis: sin 2x on [0,π/6], then cos x on [π/6,π/2].",
+          "steps": [
+            {
+              "explain": "Split at the intersection x=π/6, where the lower boundary curve changes.",
+              "work": "\\(A=\\int_0^{\\pi/6}\\sin2x\\,dx+\\int_{\\pi/6}^{\\pi/2}\\cos x\\,dx\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M45 220H445M80 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 85 C160 90 225 115 320 220\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 220 C145 190 170 95 205 85 C250 75 290 130 320 220\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M100 220 C135 190 170 100 205 85 C250 95 290 155 320 220Z\" fill=\"#bfdbfe\" opacity=\".55\"/><path d=\"M205 220V85\" stroke=\"#64748b\" stroke-dasharray=\"4 4\"/><text x=\"195\" y=\"242\">π/6</text><text x=\"309\" y=\"242\">π/2</text><text x=\"445\" y=\"225\">x</text><text x=\"83\" y=\"28\">y</text><text x=\"104\" y=\"78\">cos x</text><text x=\"225\" y=\"72\">sin 2x</text></svg>"
+              }
+            },
+            {
+              "explain": "Integrate each piece.",
+              "work": "\\(A=[-\\frac12\\cos2x]_0^{\\pi/6}+[\\sin x]_{\\pi/6}^{\\pi/2}\\)"
+            },
+            {
+              "explain": "Evaluate: the first area is 1/4 and the second is 1−1/2. Add them.",
+              "work": "\\(A=\\frac14+\\frac12=\\boxed{\\frac34}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "206",
+            "course": "Advanced",
+            "sourceQuestion": "Q86"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M45 220H445M80 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 85 C160 90 225 115 320 220\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 220 C145 190 170 95 205 85 C250 75 290 130 320 220\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M100 220 C135 190 170 100 205 85 C250 95 290 155 320 220Z\" fill=\"#bfdbfe\" opacity=\".55\"/><path d=\"M205 220V85\" stroke=\"#64748b\" stroke-dasharray=\"4 4\"/><text x=\"195\" y=\"242\">π/6</text><text x=\"309\" y=\"242\">π/2</text><text x=\"445\" y=\"225\">x</text><text x=\"83\" y=\"28\">y</text><text x=\"104\" y=\"78\">cos x</text><text x=\"225\" y=\"72\">sin 2x</text></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p206-q87",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(\\displaystyle\\int_0^{\\ln7}e^{-x}\\,dx\\).",
+          "options": [
+            "\\(\\frac67\\)",
+            "\\(\\frac17\\)",
+            "\\(7\\)",
+            "\\(\\ln7\\)"
+          ],
+          "answer": 0,
+          "hint": "An antiderivative of e^(−x) is −e^(−x).",
+          "steps": [
+            {
+              "explain": "Integrate using the chain rule in reverse.",
+              "work": "\\(\\int e^{-x}dx=-e^{-x}+C\\)"
+            },
+            {
+              "explain": "Evaluate at x=ln 7 and x=0.",
+              "work": "\\([-e^{-x}]_0^{\\ln7}=-e^{-\\ln7}+1=1-\\frac17=\\boxed{\\frac67}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "206",
+            "course": "Advanced",
+            "sourceQuestion": "Q87"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p206-q88",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(\\displaystyle\\int_1^{e^3}\\frac5x\\,dx\\).",
+          "options": [
+            "\\(15\\)",
+            "\\(5\\)",
+            "\\(3\\)",
+            "\\(5e^3\\)"
+          ],
+          "answer": 0,
+          "hint": "The antiderivative of 1/x is ln x. Evaluate ln(e³).",
+          "steps": [
+            {
+              "explain": "Integrate 5/x.",
+              "work": "\\(\\int\\frac5x dx=5\\ln x+C\\)"
+            },
+            {
+              "explain": "Substitute the limits.",
+              "work": "\\(5(\\ln(e^3)-\\ln1)=5(3-0)=\\boxed{15}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "206",
+            "course": "Advanced",
+            "sourceQuestion": "Q88"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p206-q89",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Let \\(f(x)=\\sqrt{25-x^2}\\). i Copy the following table of values into your Writing Booklet and supply the missing values. ii Use these six values of the function and the trapezoidal rule to find the approximate value of \\(\\int_0^5\\sqrt{25-x^2}\\,dx\\). iii Draw the graph of \\(x^2+y^2=25\\) and shade the region whose area is represented by the integral. iv Use your answer to part iii to explain why the exact value of the integral is \\(25\\pi/4\\). v Use your answers to parts ii and iv to find an approximate value for \\(\\pi\\).",
+          "hint": "The curve is the upper half of x²+y²=25. The integral from 0 to 5 is a quarter-circle area; the trapezoidal rule gives a numerical estimate of that area.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p206-q89-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "For f(x)=√(25−x²), complete the missing values in the table at x=1, 3 and 4.",
+              "options": [
+                "\\(4.899,\\ 4.000,\\ 3.000\\)",
+                "\\(4.000,\\ 4.899,\\ 3.000\\)",
+                "\\(4.899,\\ 3.000,\\ 4.000\\)",
+                "\\(5.000,\\ 4.000,\\ 3.000\\)"
+              ],
+              "answer": 0,
+              "hint": "Substitute each x into √(25−x²), then round to three decimal places as shown in the table.",
+              "steps": [
+                {
+                  "explain": "At x=1, calculate the square root.",
+                  "work": "\\(f(1)=\\sqrt{25-1}=\\sqrt{24}\\approx4.899\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 280\"><rect width=\"480\" height=\"280\" fill=\"white\"/><rect x=\"20\" y=\"65\" width=\"440\" height=\"160\" fill=\"white\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M20 135H460M90 65V225M148 65V225M206 65V225M264 65V225M322 65V225M380 65V225\" stroke=\"#334155\" stroke-width=\"2\"/><g font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\"><text x=\"55\" y=\"108\">x</text><text x=\"55\" y=\"194\">f(x)</text><text x=\"119\" y=\"108\">0</text><text x=\"177\" y=\"108\">1</text><text x=\"235\" y=\"108\">2</text><text x=\"293\" y=\"108\">3</text><text x=\"351\" y=\"108\">4</text><text x=\"410\" y=\"108\">5</text><text x=\"119\" y=\"194\">5.000</text><text x=\"177\" y=\"194\"></text><text x=\"235\" y=\"194\">4.583</text><text x=\"293\" y=\"194\"></text><text x=\"351\" y=\"194\"></text><text x=\"410\" y=\"194\">0.000</text></g></svg>"
+                  }
+                },
+                {
+                  "explain": "At x=3, then x=4, substitute and simplify.",
+                  "work": "\\(f(3)=\\sqrt{16}=4.000,\\quad f(4)=\\sqrt9=3.000\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 280\"><rect width=\"480\" height=\"280\" fill=\"white\"/><rect x=\"20\" y=\"65\" width=\"440\" height=\"160\" fill=\"white\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M20 135H460M90 65V225M148 65V225M206 65V225M264 65V225M322 65V225M380 65V225\" stroke=\"#334155\" stroke-width=\"2\"/><g font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\"><text x=\"55\" y=\"108\">x</text><text x=\"55\" y=\"194\">f(x)</text><text x=\"119\" y=\"108\">0</text><text x=\"177\" y=\"108\">1</text><text x=\"235\" y=\"108\">2</text><text x=\"293\" y=\"108\">3</text><text x=\"351\" y=\"108\">4</text><text x=\"410\" y=\"108\">5</text><text x=\"119\" y=\"194\">5.000</text><text x=\"177\" y=\"194\">4.899</text><text x=\"235\" y=\"194\">4.583</text><text x=\"293\" y=\"194\">4.000</text><text x=\"351\" y=\"194\">3.000</text><text x=\"410\" y=\"194\">0.000</text></g></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "206",
+                "course": "Advanced",
+                "sourceQuestion": "Q89(i)"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 280\"><rect width=\"480\" height=\"280\" fill=\"white\"/><rect x=\"20\" y=\"65\" width=\"440\" height=\"160\" fill=\"white\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M20 135H460M90 65V225M148 65V225M206 65V225M264 65V225M322 65V225M380 65V225\" stroke=\"#334155\" stroke-width=\"2\"/><g font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\"><text x=\"55\" y=\"108\">x</text><text x=\"55\" y=\"194\">f(x)</text><text x=\"119\" y=\"108\">0</text><text x=\"177\" y=\"108\">1</text><text x=\"235\" y=\"108\">2</text><text x=\"293\" y=\"108\">3</text><text x=\"351\" y=\"108\">4</text><text x=\"410\" y=\"108\">5</text><text x=\"119\" y=\"194\">5.000</text><text x=\"177\" y=\"194\"></text><text x=\"235\" y=\"194\">4.583</text><text x=\"293\" y=\"194\"></text><text x=\"351\" y=\"194\"></text><text x=\"410\" y=\"194\">0.000</text></g></svg>"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p206-q89-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Use the six table values and the trapezoidal rule to estimate \\(\\int_0^5\\sqrt{25-x^2}\\,dx\\).",
+              "options": [
+                "\\(18.982\\)",
+                "\\(25.000\\)",
+                "\\(15.000\\)",
+                "\\(20.000\\)"
+              ],
+              "answer": 0,
+              "hint": "The spacing is 1. Use h/2 times first plus twice each interior value plus last.",
+              "steps": [
+                {
+                  "explain": "There are five strips of width 1. Use the listed values 5.000, 4.899, 4.583, 4.000, 3.000, 0.000.",
+                  "work": "\\(h=1,\\quad A\\approx\\frac12[y_0+2(y_1+y_2+y_3+y_4)+y_5]\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 280\"><rect width=\"480\" height=\"280\" fill=\"white\"/><rect x=\"20\" y=\"65\" width=\"440\" height=\"160\" fill=\"white\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M20 135H460M90 65V225M148 65V225M206 65V225M264 65V225M322 65V225M380 65V225\" stroke=\"#334155\" stroke-width=\"2\"/><g font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\"><text x=\"55\" y=\"108\">x</text><text x=\"55\" y=\"194\">f(x)</text><text x=\"119\" y=\"108\">0</text><text x=\"177\" y=\"108\">1</text><text x=\"235\" y=\"108\">2</text><text x=\"293\" y=\"108\">3</text><text x=\"351\" y=\"108\">4</text><text x=\"410\" y=\"108\">5</text><text x=\"119\" y=\"194\">5.000</text><text x=\"177\" y=\"194\">4.899</text><text x=\"235\" y=\"194\">4.583</text><text x=\"293\" y=\"194\">4.000</text><text x=\"351\" y=\"194\">3.000</text><text x=\"410\" y=\"194\">0.000</text></g></svg>"
+                  }
+                },
+                {
+                  "explain": "Substitute the values and add.",
+                  "work": "\\(A\\approx\\frac12[5+2(4.899+4.583+4+3)+0]=\\boxed{18.982}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "206",
+                "course": "Advanced",
+                "sourceQuestion": "Q89(ii)"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 280\"><rect width=\"480\" height=\"280\" fill=\"white\"/><rect x=\"20\" y=\"65\" width=\"440\" height=\"160\" fill=\"white\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M20 135H460M90 65V225M148 65V225M206 65V225M264 65V225M322 65V225M380 65V225\" stroke=\"#334155\" stroke-width=\"2\"/><g font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\"><text x=\"55\" y=\"108\">x</text><text x=\"55\" y=\"194\">f(x)</text><text x=\"119\" y=\"108\">0</text><text x=\"177\" y=\"108\">1</text><text x=\"235\" y=\"108\">2</text><text x=\"293\" y=\"108\">3</text><text x=\"351\" y=\"108\">4</text><text x=\"410\" y=\"108\">5</text><text x=\"119\" y=\"194\">5.000</text><text x=\"177\" y=\"194\">4.899</text><text x=\"235\" y=\"194\">4.583</text><text x=\"293\" y=\"194\">4.000</text><text x=\"351\" y=\"194\">3.000</text><text x=\"410\" y=\"194\">0.000</text></g></svg>"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p206-q89-iii",
+              "type": "review",
+              "manual": true,
+              "difficulty": "hard",
+              "stem": "Draw the graph of x²+y²=25 and shade the region whose area is represented by the integral in part ii.",
+              "answer": "The integral from x=0 to 5 under y=√(25−x²) is the first-quadrant quarter of the circle of radius 5.",
+              "hint": "The equation is a circle centred at the origin. Since y is the positive square root and x runs from 0 to 5, shade only the first-quadrant quarter-circle.",
+              "steps": [
+                {
+                  "explain": "Rewrite the equation as a circle with centre (0,0) and radius 5. The positive square root is its upper semicircle.",
+                  "work": "\\(x^2+y^2=25,\\quad r=5\\)"
+                },
+                {
+                  "explain": "The limits x=0 to x=5 select the first quadrant, so shade the quarter-circle under the arc.",
+                  "work": "\\(\\int_0^5\\sqrt{25-x^2}\\,dx=\\text{area of one quarter-circle}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M70 235H430M110 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M110 60 A150 150 0 0 1 410 210\" fill=\"#bfdbfe\" opacity=\".5\"/><path d=\"M110 60 A150 150 0 0 1 410 210\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M110 210H410\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"100\" y=\"255\">0</text><text x=\"405\" y=\"255\">5</text><text x=\"435\" y=\"240\">x</text><text x=\"114\" y=\"28\">y</text><text x=\"215\" y=\"130\">x²+y²=25</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "206",
+                "course": "Advanced",
+                "sourceQuestion": "Q89(iii)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p206-q89-iv",
+              "type": "review",
+              "manual": true,
+              "difficulty": "hard",
+              "stem": "Use your answer to part iii to explain why the exact value of the integral is 25π/4.",
+              "answer": "A circle of radius 5 has area 25π. One quarter has area 25π/4.",
+              "hint": "Use the quarter-circle formula: one quarter of πr² with r=5.",
+              "steps": [
+                {
+                  "explain": "The quarter-circle area is one quarter of the full circle area.",
+                  "work": "\\(A=\\frac14\\pi(5)^2=\\boxed{\\frac{25\\pi}{4}}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M70 235H430M110 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M110 60 A150 150 0 0 1 410 210\" fill=\"#bfdbfe\" opacity=\".5\"/><path d=\"M110 60 A150 150 0 0 1 410 210\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M110 210H410\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"100\" y=\"255\">0</text><text x=\"405\" y=\"255\">5</text><text x=\"435\" y=\"240\">x</text><text x=\"114\" y=\"28\">y</text><text x=\"215\" y=\"130\">x²+y²=25</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "206",
+                "course": "Advanced",
+                "sourceQuestion": "Q89(iv)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p206-q89-v",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Use the trapezoidal estimate from part ii and the exact value from part iv to estimate π.",
+              "options": [
+                "\\(3.037\\)",
+                "\\(3.142\\)",
+                "\\(3.800\\)",
+                "\\(4.000\\)"
+              ],
+              "answer": 0,
+              "hint": "Set the estimate 18.982 approximately equal to 25π/4 and solve for π.",
+              "steps": [
+                {
+                  "explain": "Equate the approximate integral with the quarter-circle area.",
+                  "work": "\\(18.982\\approx\\frac{25\\pi}{4}\\)"
+                },
+                {
+                  "explain": "Multiply both sides by 4/25.",
+                  "work": "\\(\\pi\\approx\\frac{4(18.982)}{25}=\\boxed{3.037}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "206",
+                "course": "Advanced",
+                "sourceQuestion": "Q89(v)"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M70 235H430M110 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M110 60 A150 150 0 0 1 410 210\" fill=\"#bfdbfe\" opacity=\".5\"/><path d=\"M110 60 A150 150 0 0 1 410 210\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M110 210H410\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"100\" y=\"255\">0</text><text x=\"405\" y=\"255\">5</text><text x=\"435\" y=\"240\">x</text><text x=\"114\" y=\"28\">y</text><text x=\"215\" y=\"130\">x²+y²=25</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "206",
+            "course": "Advanced",
+            "sourceQuestion": "Q89"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p206-q90",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The diagram shows the graphs of \\(y=e^x-1\\) and \\(y=e^{-x}\\).",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M45 210H445M220 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M80 235 C150 210 220 175 300 130 C350 95 390 55 425 35\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M80 45 C150 75 220 125 300 165 C350 190 390 205 425 210\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M300 130 C345 105 385 65 400 55 L400 199 C365 198 330 180 300 165Z\" fill=\"#fde68a\" opacity=\".5\"/><text x=\"295\" y=\"230\">1</text><text x=\"400\" y=\"230\">2</text><text x=\"445\" y=\"215\">x</text><text x=\"224\" y=\"28\">y</text><text x=\"350\" y=\"75\">y=eˣ−1</text><text x=\"350\" y=\"194\">y=e⁻ˣ</text></svg>"
+          },
+          "hint": "For the area, identify which curve is above on [1,2] and integrate upper minus lower. For an intersection, set the two expressions equal and multiply by e^x.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p206-q90-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the area between the curves from x=1 to x=2. Leave your answer in terms of e.",
+              "options": [
+                "\\(e^2+e^{-2}-e-e^{-1}-1\\)",
+                "\\(e^2-e\\)",
+                "\\(e+e^{-1}\\)",
+                "\\(e^2+e^{-2}\\)"
+              ],
+              "answer": 0,
+              "hint": "On [1,2], e^x−1 is above e^(−x). Integrate their difference.",
+              "steps": [
+                {
+                  "explain": "Set up upper curve minus lower curve.",
+                  "work": "\\(A=\\int_1^2[(e^x-1)-e^{-x}]dx\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M45 210H445M220 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M80 235 C150 210 220 175 300 130 C350 95 390 55 425 35\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M80 45 C150 75 220 125 300 165 C350 190 390 205 425 210\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M300 130 C345 105 385 65 400 55 L400 199 C365 198 330 180 300 165Z\" fill=\"#fde68a\" opacity=\".5\"/><text x=\"295\" y=\"230\">1</text><text x=\"400\" y=\"230\">2</text><text x=\"445\" y=\"215\">x</text><text x=\"224\" y=\"28\">y</text><text x=\"350\" y=\"75\">y=eˣ−1</text><text x=\"350\" y=\"194\">y=e⁻ˣ</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Integrate term by term.",
+                  "work": "\\(\\int(e^x-1-e^{-x})dx=e^x-x+e^{-x}\\)"
+                },
+                {
+                  "explain": "Evaluate at 2 and subtract the value at 1.",
+                  "work": "\\(A=(e^2-2+e^{-2})-(e-1+e^{-1})=\\boxed{e^2+e^{-2}-e-e^{-1}-1}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "206",
+                "course": "Advanced",
+                "sourceQuestion": "Q90(i)"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M45 210H445M220 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M80 235 C150 210 220 175 300 130 C350 95 390 55 425 35\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M80 45 C150 75 220 125 300 165 C350 190 390 205 425 210\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M300 130 C345 105 385 65 400 55 L400 199 C365 198 330 180 300 165Z\" fill=\"#fde68a\" opacity=\".5\"/><text x=\"295\" y=\"230\">1</text><text x=\"400\" y=\"230\">2</text><text x=\"445\" y=\"215\">x</text><text x=\"224\" y=\"28\">y</text><text x=\"350\" y=\"75\">y=eˣ−1</text><text x=\"350\" y=\"194\">y=e⁻ˣ</text></svg>"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p206-q90-ii",
+              "type": "review",
+              "manual": true,
+              "difficulty": "hard",
+              "stem": "Show that the curves intersect when \\(e^{2x}-e^x-1=0\\).",
+              "answer": "Equating eˣ−1 and e⁻ˣ and multiplying by eˣ gives the required equation.",
+              "hint": "At an intersection the y-values are equal. Then multiply both sides by e^x to remove the negative exponent.",
+              "steps": [
+                {
+                  "explain": "Set the two functions equal.",
+                  "work": "\\(e^x-1=e^{-x}\\)"
+                },
+                {
+                  "explain": "Multiply both sides by e^x.",
+                  "work": "\\(e^{2x}-e^x=1\\)"
+                },
+                {
+                  "explain": "Bring every term to the left.",
+                  "work": "\\(\\boxed{e^{2x}-e^x-1=0}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M45 210H445M220 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M80 235 C150 210 220 175 300 130 C350 95 390 55 425 35\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M80 45 C150 75 220 125 300 165 C350 190 390 205 425 210\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M300 130 C345 105 385 65 400 55 L400 199 C365 198 330 180 300 165Z\" fill=\"#fde68a\" opacity=\".5\"/><text x=\"295\" y=\"230\">1</text><text x=\"400\" y=\"230\">2</text><text x=\"445\" y=\"215\">x</text><text x=\"224\" y=\"28\">y</text><text x=\"350\" y=\"75\">y=eˣ−1</text><text x=\"350\" y=\"194\">y=e⁻ˣ</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "206",
+                "course": "Advanced",
+                "sourceQuestion": "Q90(ii)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "206",
+            "course": "Advanced",
+            "sourceQuestion": "Q90"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p205-q84",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Sand is tipped from a truck onto a pile. The rate, \\(R\\) kg/s, at which the sand is flowing is given by \\(R=100t-t^3\\), for \\(0\\le t\\le T\\), where t is the time in seconds after the sand begins to flow.",
+          "hint": "The rate is the derivative of the pile mass. Keep the initial 300 kg separate from the amount delivered by the truck.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p205-q84-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Sand is tipped from a truck onto a pile. The rate \\(R\\), in kg/s, at which the sand is flowing is \\(R=100t-t^3\\), for \\(0\\le t\\le T\\), where t is the time in seconds after the sand begins to flow. Find the rate of flow at \\(t=8\\).",
+              "options": [
+                "\\(288\\text{ kg/s}\\)",
+                "\\(512\\text{ kg/s}\\)",
+                "\\(800\\text{ kg/s}\\)",
+                "\\(224\\text{ kg/s}\\)"
+              ],
+              "answer": 0,
+              "hint": "Substitute t=8 into R=100t−t³ and calculate each term.",
+              "steps": [
+                {
+                  "explain": "Replace t by 8.",
+                  "work": "\\(R(8)=100(8)-8^3\\)"
+                },
+                {
+                  "explain": "Calculate the multiplication and cube, then subtract.",
+                  "work": "\\(800-512=\\boxed{288\\text{ kg/s}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "205-206",
+                "course": "Advanced",
+                "sourceQuestion": "Q84(i)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p205-q84-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What is the largest value of T for which the expression for R is physically reasonable?",
+              "options": [
+                "\\(10\\)",
+                "\\(8\\)",
+                "\\(\\frac{10}{\\sqrt3}\\)",
+                "\\(100\\)"
+              ],
+              "answer": 0,
+              "hint": "A physical flow rate cannot be negative. Find the positive time when R returns to zero.",
+              "steps": [
+                {
+                  "explain": "Factor the rate.",
+                  "work": "\\(R=t(100-t^2)\\)"
+                },
+                {
+                  "explain": "For t≥0, the nonzero root is t=10; the rate is nonnegative from 0 through 10.",
+                  "work": "\\(100-t^2=0\\Rightarrow\\boxed{T=10\\text{ s}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "205-206",
+                "course": "Advanced",
+                "sourceQuestion": "Q84(ii)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p205-q84-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the maximum rate of flow of sand.",
+              "options": [
+                "\\(\\frac{2000}{3\\sqrt3}\\text{ kg/s}\\)",
+                "\\(\\frac{1000}{3}\\text{ kg/s}\\)",
+                "\\(288\\text{ kg/s}\\)",
+                "\\(1000\\text{ kg/s}\\)"
+              ],
+              "answer": 0,
+              "hint": "Differentiate R and set dR/dt=0 on the physically valid interval.",
+              "steps": [
+                {
+                  "explain": "Differentiate the rate function.",
+                  "work": "\\(R=100t-t^3,\\quad R\\'=100-3t^2\\)"
+                },
+                {
+                  "explain": "Solve for the positive critical time.",
+                  "work": "\\(100-3t^2=0\\Rightarrow t=\\frac{10}{\\sqrt3}\\)"
+                },
+                {
+                  "explain": "At this time t²=100/3. Substitute into R and simplify.",
+                  "work": "\\(R=100t-t(t^2)=\\frac{200}{3}t=\\boxed{\\frac{2000}{3\\sqrt3}\\text{ kg/s}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "205-206",
+                "course": "Advanced",
+                "sourceQuestion": "Q84(iii)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p205-q84-iv",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "When the sand starts to flow, the pile already contains 300 kg of sand. Find an expression for the amount of sand in the pile at time t.",
+              "options": [
+                "\\(300+50t^2-\\frac14t^4\\)",
+                "\\(300+100t-t^3\\)",
+                "\\(50t^2-\\frac14t^4\\)",
+                "\\(300+100t^2-t^4\\)"
+              ],
+              "answer": 0,
+              "hint": "The mass gained is the integral of the rate. Add the initial 300 kg.",
+              "steps": [
+                {
+                  "explain": "Integrate the rate function to obtain pile mass up to a constant.",
+                  "work": "\\(\\int(100t-t^3)dt=50t^2-\\frac14t^4+C\\)"
+                },
+                {
+                  "explain": "At t=0 the pile has 300 kg, so C=300.",
+                  "work": "\\(M(0)=C=300\\)"
+                },
+                {
+                  "explain": "Write the full amount of sand.",
+                  "work": "\\(\\boxed{M(t)=300+50t^2-\\frac14t^4\\text{ kg}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "205-206",
+                "course": "Advanced",
+                "sourceQuestion": "Q84(iv)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p205-q84-v",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Calculate the total weight of sand tipped from the truck in the first 8 seconds.",
+              "options": [
+                "\\(2176\\text{ kg}\\)",
+                "\\(2476\\text{ kg}\\)",
+                "\\(288\\text{ kg}\\)",
+                "\\(3200\\text{ kg}\\)"
+              ],
+              "answer": 0,
+              "hint": "Integrate the flow rate from 0 to 8. Do not include the sand already in the pile.",
+              "steps": [
+                {
+                  "explain": "The delivered mass is the change due to the flow.",
+                  "work": "\\(m=\\int_0^8(100t-t^3)dt=[50t^2-\\frac14t^4]_0^8\\)"
+                },
+                {
+                  "explain": "Evaluate at 8 seconds.",
+                  "work": "\\(50(8^2)-\\frac14(8^4)=3200-1024=\\boxed{2176\\text{ kg}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "205-206",
+                "course": "Advanced",
+                "sourceQuestion": "Q84(v)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "205-206",
+            "course": "Advanced",
+            "sourceQuestion": "Q84"
           }
         }
       ]
