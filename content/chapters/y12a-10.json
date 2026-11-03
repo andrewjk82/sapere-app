@@ -2764,6 +2764,431 @@
             "course": "Advanced",
             "sourceQuestion": "Q30"
           }
+        },
+        {
+          "id": "y12a-advanced-005-p265-q32",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The marks for a Science test and a Mathematics test are presented in box-and-whisker plots. Which measure must be the same for both tests?",
+          "hint": "A box extends from the lower quartile to the upper quartile. Its length represents the interquartile range.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p265-q32",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The box-and-whisker plots show the marks for a Science test and a Mathematics test. Which measure must be the same for both tests?",
+              "options": [
+                "Mean",
+                "Range",
+                "Median",
+                "Interquartile range"
+              ],
+              "answer": 3,
+              "hint": "The interquartile range is the width of the box. Compare the two box widths.",
+              "steps": [
+                {
+                  "explain": "In a box plot, the left and right edges of the box are Q1 and Q3.",
+                  "work": "Box width = Q3−Q1"
+                },
+                {
+                  "explain": "The two boxes have equal widths, so their Q3−Q1 values are equal.",
+                  "work": "Science box width = Mathematics box width"
+                },
+                {
+                  "explain": "Therefore the interquartile ranges must be equal.",
+                  "work": "\\(\\boxed{\text{Interquartile range}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "265",
+                "course": "Advanced",
+                "sourceQuestion": "Q32"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "265",
+            "course": "Advanced",
+            "sourceQuestion": "Q32"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 720 220\" role=\"img\" aria-label=\"Science and Mathematics test box plots with equal box widths\"><rect width=\"720\" height=\"220\" fill=\"white\"/><path d=\"M80 185H680\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M210 65H590M210 57V73M300 45H390V85H300ZM330 45V85M390 65H590M590 57V73\" fill=\"none\" stroke=\"#475569\" stroke-width=\"3\"/><path d=\"M140 135H650M140 127V143M300 115H390V155H300ZM350 115V155M390 135H650M650 127V143\" fill=\"none\" stroke=\"#475569\" stroke-width=\"3\"/><g font-family=\"Arial\" font-size=\"15\" fill=\"#334155\"><text x=\"20\" y=\"70\">Science</text><text x=\"20\" y=\"140\">Mathematics</text></g><g font-family=\"Arial\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"140\" y=\"205\">0</text><text x=\"230\" y=\"205\">15</text><text x=\"320\" y=\"205\">30</text><text x=\"410\" y=\"205\">45</text><text x=\"500\" y=\"205\">60</text><text x=\"590\" y=\"205\">75</text><text x=\"680\" y=\"205\">90</text></g></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p265-q34",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Leanne copied a two-way table into her book. Leanne made an error in copying one of the values in the shaded section of the table. Which value has been incorrectly copied?",
+          "hint": "Use row and column totals to check the shaded entry. The correct female part-time count is the female total minus female full-time count.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p265-q34",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Leanne copied a two-way table into her book. One value in the shaded section is incorrect. Which value has been incorrectly copied?",
+              "options": [
+                "The number of males in full-time work",
+                "The number of males in part-time work",
+                "The number of females in full-time work",
+                "The number of females in part-time work"
+              ],
+              "answer": 3,
+              "hint": "Check whether the row and column totals agree with the entries. Find the shaded cell that makes a total inconsistent.",
+              "steps": [
+                {
+                  "explain": "Check the full-time row: 279+356=635, so these entries agree.",
+                  "work": "\\(279+356=635\\)"
+                },
+                {
+                  "explain": "Check the male column: 279+187=466, also correct. The female part-time entry should equal 885−356=529.",
+                  "work": "\\(885-356=529\\)"
+                },
+                {
+                  "explain": "The table lists 439 in that cell, so this is the copied value that is wrong.",
+                  "work": "\\(\\boxed{\text{Females in part-time work}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "265",
+                "course": "Advanced",
+                "sourceQuestion": "Q34"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "265",
+            "course": "Advanced",
+            "sourceQuestion": "Q34"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 340\" role=\"img\" aria-label=\"Two-way table of work status by gender\"><rect width=\"700\" height=\"340\" fill=\"white\"/><g stroke=\"#475569\" stroke-width=\"1.5\" fill=\"none\"><path d=\"M50 45H650M50 100H650M50 155H650M50 210H650M50 265H650M50 45V265M230 45V265M370 45V265M510 45V265M650 45V265\"/></g><rect x=\"370\" y=\"155\" width=\"140\" height=\"55\" fill=\"#fef3c7\"/><g font-family=\"Arial\" font-size=\"17\" fill=\"#172554\" text-anchor=\"middle\"><text x=\"140\" y=\"80\">Work status</text><text x=\"300\" y=\"80\">Male</text><text x=\"440\" y=\"80\">Female</text><text x=\"580\" y=\"80\">Totals</text><text x=\"140\" y=\"135\">Full-time</text><text x=\"300\" y=\"135\">279</text><text x=\"440\" y=\"135\">356</text><text x=\"580\" y=\"135\">635</text><text x=\"140\" y=\"190\">Part-time</text><text x=\"300\" y=\"190\">187</text><text x=\"440\" y=\"190\">439</text><text x=\"580\" y=\"190\">716</text><text x=\"140\" y=\"245\">Totals</text><text x=\"300\" y=\"245\">466</text><text x=\"440\" y=\"245\">885</text><text x=\"580\" y=\"245\">1351</text></g></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p266-q36",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A set of examination results is displayed in a cumulative frequency polygon (ogive). Sanath knows that his examination mark is in the 4th decile. Which of the following could have been Sanath’s examination mark?",
+          "hint": "The fourth decile is the 40th percentile. Convert 40% of the total into a cumulative frequency and read the corresponding mark.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p266-q36",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "A set of examination results is displayed in a cumulative frequency polygon. Sanath knows his examination mark is in the 4th decile. Which mark could it be?",
+              "options": [
+                "37",
+                "57",
+                "67",
+                "77"
+              ],
+              "answer": 1,
+              "hint": "The 4th decile is the 40th percentile. Find 40% of the 50 students, then read the mark at that cumulative frequency.",
+              "steps": [
+                {
+                  "explain": "The 4th decile is the 40th percentile.",
+                  "work": "\\(0.40(50)=20\\)"
+                },
+                {
+                  "explain": "At cumulative frequency 20, the graph gives a mark between 55 and 60.",
+                  "work": "20th value is between 55 and 60 marks"
+                },
+                {
+                  "explain": "Of the choices, only 57 is in this interval.",
+                  "work": "\\(\\boxed{57}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "266",
+                "course": "Advanced",
+                "sourceQuestion": "Q36"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "266",
+            "course": "Advanced",
+            "sourceQuestion": "Q36"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 650 370\" role=\"img\" aria-label=\"Cumulative frequency polygon of 50 examination scores\"><rect width=\"650\" height=\"370\" fill=\"white\"/><path d=\"M80 300V35M80 300H590\" stroke=\"#334155\" stroke-width=\"2\"/><g stroke=\"#e2e8f0\"><path d=\"M80 247H590M80 194H590M80 141H590M80 88H590M165 35V300M250 35V300M335 35V300M420 35V300M505 35V300\"/></g><polyline points=\"80,300 165,258 250,236 335,194 420,173 505,78 590,35\" fill=\"none\" stroke=\"#475569\" stroke-width=\"3\"/><g font-family=\"Arial\" font-size=\"13\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"125\" y=\"323\">35</text><text x=\"210\" y=\"323\">45</text><text x=\"295\" y=\"323\">55</text><text x=\"380\" y=\"323\">65</text><text x=\"465\" y=\"323\">75</text><text x=\"550\" y=\"323\">85</text><text x=\"80\" y=\"320\">25</text><text x=\"65\" y=\"304\">0</text><text x=\"65\" y=\"251\">10</text><text x=\"65\" y=\"198\">20</text><text x=\"65\" y=\"145\">30</text><text x=\"65\" y=\"92\">40</text><text x=\"65\" y=\"39\">50</text><text x=\"340\" y=\"352\">Examination mark</text></g><text x=\"20\" y=\"190\" transform=\"rotate(-90 20 190)\" font-family=\"Arial\" font-size=\"13\">Cumulative frequency</text></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p266-q37",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Consider the following set of scores: 3, 5, 5, 6, 8, 8, 9, 10, 10, 50. Answer (i) and (ii).",
+          "hint": "Calculate the mean from the total and count. For the median, use the middle value(s) in the ordered scores.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p266-q37-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The scores are 3, 5, 5, 6, 8, 8, 9, 10, 10 and 50. Calculate the mean.",
+              "options": [
+                "10.4",
+                "11.4",
+                "12.4",
+                "14.0"
+              ],
+              "answer": 1,
+              "hint": "Add all ten scores and divide the total by 10.",
+              "steps": [
+                {
+                  "explain": "Add the scores, keeping repeated values.",
+                  "work": "\\(3+2(5)+6+2(8)+9+2(10)+50=114\\)"
+                },
+                {
+                  "explain": "There are 10 scores.",
+                  "work": "\\(n=10\\)"
+                },
+                {
+                  "explain": "Divide total by count.",
+                  "work": "\\(\\bar{x}=114/10=\\boxed{11.4}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "266",
+                "course": "Advanced",
+                "sourceQuestion": "Q37(i)"
+              }
+            },
+            {
+              "id": "y12a-advanced-005-p266-q37-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What is the effect on the mean and median of removing the outlier 50?",
+              "options": [
+                "The mean decreases; the median stays 8",
+                "The mean stays the same; the median changes",
+                "Both the mean and median decrease",
+                "The mean decreases; the median increases"
+              ],
+              "answer": 0,
+              "hint": "Recalculate the total and count without 50. The median is the average of the two middle values for ten values.",
+              "steps": [
+                {
+                  "explain": "Without 50, the sum is 114−50=64 and there are 9 values.",
+                  "work": "\\(\\bar{x}_{new}=64/9\\approx7.1\\)"
+                },
+                {
+                  "explain": "The middle value among the remaining nine scores is 8. The original median was the average of the 5th and 6th values, also 8.",
+                  "work": "Original median \\(=(8+8)/2=8\\); new median \\(=8\\)"
+                },
+                {
+                  "explain": "Thus the mean falls substantially while the median remains unchanged.",
+                  "work": "Mean: \\(11.4\to7.1\\); median: \\(8\to8\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "266",
+                "course": "Advanced",
+                "sourceQuestion": "Q37(ii)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "266",
+            "course": "Advanced",
+            "sourceQuestion": "Q37"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p266-q39",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A set of data is represented by the cumulative frequency histogram and ogive. What is the best approximation for the interquartile range for this set of data?",
+          "hint": "Find the scores at cumulative frequencies 200 and 600 for a total of 800 values.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p266-q39",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "A set of data is represented by a cumulative frequency histogram and ogive. What is the best approximation for the interquartile range?",
+              "options": [
+                "25",
+                "30",
+                "35",
+                "40"
+              ],
+              "answer": 2,
+              "hint": "There are 800 values. Read Q1 at cumulative frequency 200 and Q3 at 600, then subtract.",
+              "steps": [
+                {
+                  "explain": "Find the quartile cumulative frequencies.",
+                  "work": "\\(Q_1: CF=800/4=200;\\quad Q_3: CF=3(800)/4=600\\)"
+                },
+                {
+                  "explain": "Read the graph: the lower quartile is about 45 and the upper quartile about 80.",
+                  "work": "\\(Q_1\\approx45,\\quad Q_3\\approx80\\)"
+                },
+                {
+                  "explain": "Subtract.",
+                  "work": "\\(IQR\\approx80-45=\\boxed{35}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "266",
+                "course": "Advanced",
+                "sourceQuestion": "Q39"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "266",
+            "course": "Advanced",
+            "sourceQuestion": "Q39"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 650 370\" role=\"img\" aria-label=\"Cumulative frequency graph of scores for 800 data values\"><rect width=\"650\" height=\"370\" fill=\"white\"/><path d=\"M80 300V35M80 300H590\" stroke=\"#334155\" stroke-width=\"2\"/><g stroke=\"#e2e8f0\"><path d=\"M80 240H590M80 180H590M80 120H590M80 60H590M145 35V300M210 35V300M275 35V300M340 35V300M405 35V300M470 35V300M535 35V300\"/></g><polyline points=\"105,296 170,260 235,210 300,160 365,125 430,95 495,75 560,40\" fill=\"none\" stroke=\"#475569\" stroke-width=\"3\"/><g font-family=\"Arial\" font-size=\"13\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"105\" y=\"323\">25</text><text x=\"170\" y=\"323\">35</text><text x=\"235\" y=\"323\">45</text><text x=\"300\" y=\"323\">55</text><text x=\"365\" y=\"323\">65</text><text x=\"430\" y=\"323\">75</text><text x=\"495\" y=\"323\">85</text><text x=\"560\" y=\"323\">95</text><text x=\"335\" y=\"350\">Score</text><text x=\"65\" y=\"304\">0</text><text x=\"65\" y=\"244\">200</text><text x=\"65\" y=\"184\">400</text><text x=\"65\" y=\"124\">600</text><text x=\"65\" y=\"64\">800</text></g><text x=\"20\" y=\"190\" transform=\"rotate(-90 20 190)\" font-family=\"Arial\" font-size=\"13\">Cumulative frequency</text></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p266-q40",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Two groups of people were surveyed about their weekly wages. The results are shown in the box-and-whisker plots. Which of the following statements is true for the people surveyed?",
+          "hint": "Use the quartile positions: about 75% of values lie below the upper quartile.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p266-q40",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Two groups of people were surveyed about their weekly wages. Which statement is true?",
+              "options": [
+                "The same percentage in each group earned more than $325 per week",
+                "Approximately 75% of people under 21 earned less than $350 per week",
+                "Approximately 75% of people aged 21 and older earned more than $350 per week",
+                "Approximately 50% of people in each group earned between $325 and $350 per week"
+              ],
+              "answer": 1,
+              "hint": "Read $350 on the plots. For the under-21 group, it is about the upper quartile, so about 75% of that group is below it.",
+              "steps": [
+                {
+                  "explain": "Locate $350 on the horizontal scale and compare it with the quartiles for the under-21 box plot.",
+                  "work": "Under-21 upper quartile \\(\\approx\\$350\\)"
+                },
+                {
+                  "explain": "By definition, about 75% of observations lie below the upper quartile.",
+                  "work": "\\(75\\%\\) of under-21 wages are below about $350"
+                },
+                {
+                  "explain": "This matches statement B.",
+                  "work": "\\(\\boxed{\text{Option B}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "266",
+                "course": "Advanced",
+                "sourceQuestion": "Q40"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "266",
+            "course": "Advanced",
+            "sourceQuestion": "Q40"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 240\" role=\"img\" aria-label=\"Box plots of weekly wages for people under 21 and people 21 and older\"><rect width=\"760\" height=\"240\" fill=\"white\"/><g stroke=\"#e2e8f0\"><path d=\"M80 185H690\"/><path d=\"M120 40V190M200 40V190M280 40V190M360 40V190M440 40V190M520 40V190M600 40V190M680 40V190\"/></g><path d=\"M120 80H640M120 72V88M240 62H440V98H240ZM320 62V98M440 80H640M640 72V88\" fill=\"none\" stroke=\"#475569\" stroke-width=\"3\"/><path d=\"M240 145H520M240 137V153M360 127H400V163H360ZM380 127V163M400 145H520M520 137V153\" fill=\"none\" stroke=\"#475569\" stroke-width=\"3\"/><g font-family=\"Arial\" font-size=\"15\" fill=\"#334155\"><text x=\"15\" y=\"85\">Under 21</text><text x=\"15\" y=\"150\">21 and older</text></g><g font-family=\"Arial\" font-size=\"13\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"120\" y=\"210\">200</text><text x=\"200\" y=\"210\">250</text><text x=\"280\" y=\"210\">300</text><text x=\"360\" y=\"210\">350</text><text x=\"440\" y=\"210\">400</text><text x=\"520\" y=\"210\">450</text></g><text x=\"390\" y=\"233\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Weekly wages ($)</text></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p267-q43",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Students were surveyed about the number of movies they had watched in the last week. The results are shown in this cumulative frequency histogram. How many students said they watched four movies last week?",
+          "hint": "A cumulative frequency counts students who watched that many movies or fewer. Subtract CF(3) from CF(4).",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p267-q43",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Students were surveyed about how many movies they had watched in the last week. The results are shown in this cumulative frequency histogram. How many students said they watched four movies last week?",
+              "options": [
+                "5",
+                "10",
+                "25",
+                "35"
+              ],
+              "answer": 1,
+              "hint": "Read the cumulative frequency at 3 movies and at 4 movies. The number who watched exactly 4 is the difference.",
+              "steps": [
+                {
+                  "explain": "The cumulative frequency through 3 movies is 25 students.",
+                  "work": "At most 3 movies: 25 students"
+                },
+                {
+                  "explain": "The cumulative frequency through 4 movies is 35 students.",
+                  "work": "At most 4 movies: 35 students"
+                },
+                {
+                  "explain": "Subtract to find the number who watched exactly 4.",
+                  "work": "\\(35-25=\\boxed{10}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "267",
+                "course": "Advanced",
+                "sourceQuestion": "Q43"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "267",
+            "course": "Advanced",
+            "sourceQuestion": "Q43"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 620 340\" role=\"img\" aria-label=\"Cumulative frequency histogram of number of movies watched by students\"><rect width=\"620\" height=\"340\" fill=\"white\"/><path d=\"M75 270V35M75 270H560\" stroke=\"#334155\" stroke-width=\"2\"/><g stroke=\"#e2e8f0\"><path d=\"M75 220H560M75 170H560M75 120H560M75 70H560\"/></g><g fill=\"#d1d5db\" stroke=\"#475569\" stroke-width=\"2\"><rect x=\"125\" y=\"245\" width=\"65\" height=\"25\"/><rect x=\"190\" y=\"195\" width=\"65\" height=\"50\"/><rect x=\"255\" y=\"145\" width=\"65\" height=\"50\"/><rect x=\"320\" y=\"95\" width=\"65\" height=\"50\"/><rect x=\"385\" y=\"70\" width=\"65\" height=\"25\"/></g><g font-family=\"Arial\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"157\" y=\"295\">1</text><text x=\"222\" y=\"295\">2</text><text x=\"287\" y=\"295\">3</text><text x=\"352\" y=\"295\">4</text><text x=\"417\" y=\"295\">5</text><text x=\"320\" y=\"322\">Number of movies</text><text x=\"62\" y=\"274\">0</text><text x=\"62\" y=\"224\">10</text><text x=\"62\" y=\"174\">20</text><text x=\"62\" y=\"124\">30</text><text x=\"62\" y=\"74\">40</text><text x=\"22\" y=\"170\" transform=\"rotate(-90 22 170)\">Cumulative students</text></g></svg>"
+          }
         }
       ]
     },
