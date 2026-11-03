@@ -652,6 +652,403 @@
             "course": "Advanced",
             "sourceQuestion": "Q40"
           }
+        },
+        {
+          "id": "y12a-advanced-004-p201-q42",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The diagram shows the graph \\(y=f(x)\\). What is the value of \\(a\\), where \\(a>0\\), so that \\(\\displaystyle\\int_{-a}^{a}f(x)\\,dx=0\\)?",
+          "options": [
+            "\\(\\frac92\\)",
+            "\\(4\\)",
+            "\\(5\\)",
+            "\\(3\\)"
+          ],
+          "answer": 0,
+          "hint": "First total the signed area from x=−3 to x=3. Then account for the two outer sections where f(x)=−1.",
+          "steps": [
+            {
+              "explain": "From x=−3 to −1 the straight section rises from −1 to 1, so its negative and positive triangular areas cancel. From x=2 to 3, the line falls from 1 to −1, so those signed areas also cancel.",
+              "work": "\\(\\int_{-3}^{-1}f(x)dx=0,\\quad\\int_2^3f(x)dx=0\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 520 310\"><rect width=\"520\" height=\"310\" fill=\"white\"/><path d=\"M45 160H490M260 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M45 240H125L215 80H350L395 240H490\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><g font-family=\"Arial\" font-size=\"13\" text-anchor=\"middle\"><text x=\"125\" y=\"181\">−3</text><text x=\"170\" y=\"181\">−2</text><text x=\"215\" y=\"181\">−1</text><text x=\"260\" y=\"181\">0</text><text x=\"305\" y=\"181\">1</text><text x=\"350\" y=\"181\">2</text><text x=\"395\" y=\"181\">3</text></g><text x=\"245\" y=\"74\" font-family=\"Arial\" font-size=\"13\">1</text><text x=\"245\" y=\"245\" font-family=\"Arial\" font-size=\"13\">−1</text><text x=\"495\" y=\"165\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"264\" y=\"28\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"275\" y=\"70\" font-family=\"Arial\" font-size=\"13\">y=f(x)</text></svg>"
+              }
+            },
+            {
+              "explain": "Between −1 and 2 the graph is at height 1 over a width of 3, giving signed area 3. Thus the central interval contributes 3.",
+              "work": "\\(\\int_{-1}^{2}1\\,dx=3\\)"
+            },
+            {
+              "explain": "For a>3, each outer tail has length a−3 and height −1. The two tails contribute −2(a−3). Set the total signed area to zero.",
+              "work": "\\(3-2(a-3)=0\\Rightarrow2(a-3)=3\\Rightarrow\\boxed{a=\\frac92}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "201",
+            "course": "Advanced",
+            "sourceQuestion": "Q42"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 520 310\"><rect width=\"520\" height=\"310\" fill=\"white\"/><path d=\"M45 160H490M260 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M45 240H125L215 80H350L395 240H490\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><g font-family=\"Arial\" font-size=\"13\" text-anchor=\"middle\"><text x=\"125\" y=\"181\">−3</text><text x=\"170\" y=\"181\">−2</text><text x=\"215\" y=\"181\">−1</text><text x=\"260\" y=\"181\">0</text><text x=\"305\" y=\"181\">1</text><text x=\"350\" y=\"181\">2</text><text x=\"395\" y=\"181\">3</text></g><text x=\"245\" y=\"74\" font-family=\"Arial\" font-size=\"13\">1</text><text x=\"245\" y=\"245\" font-family=\"Arial\" font-size=\"13\">−1</text><text x=\"495\" y=\"165\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"264\" y=\"28\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"275\" y=\"70\" font-family=\"Arial\" font-size=\"13\">y=f(x)</text></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p201-q43",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is the value of \\(\\displaystyle\\int_1^4\\frac{1}{3x}\\,dx\\)?",
+          "options": [
+            "\\(\\frac13\\ln3\\)",
+            "\\(\\frac13\\ln4\\)",
+            "\\(\\ln9\\)",
+            "\\(\\ln12\\)"
+          ],
+          "answer": 1,
+          "hint": "Take the constant 1/3 outside the integral and use the antiderivative ln x.",
+          "steps": [
+            {
+              "explain": "Rewrite 1/(3x) as (1/3)(1/x).",
+              "work": "\\(\\int_1^4\\frac1{3x}dx=\\frac13\\int_1^4\\frac1x dx\\)"
+            },
+            {
+              "explain": "Integrate and evaluate at 4 and 1.",
+              "work": "\\(=\\frac13[\\ln x]_1^4=\\frac13(\\ln4-\\ln1)=\\boxed{\\frac13\\ln4}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "201",
+            "course": "Advanced",
+            "sourceQuestion": "Q43"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p201-q44",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The graph of \\(y=f(x)\\) has been drawn to scale for \\(0\\le x\\le8\\). Which of the following integrals has the greatest value?",
+          "options": [
+            "\\(\\int_0^1f(x)dx\\)",
+            "\\(\\int_0^2f(x)dx\\)",
+            "\\(\\int_0^7f(x)dx\\)",
+            "\\(\\int_0^8f(x)dx\\)"
+          ],
+          "answer": 1,
+          "hint": "Compare signed areas. The first option includes only part of the initial positive region; the second includes all of it before the large negative region begins.",
+          "steps": [
+            {
+              "explain": "From the graph, f is positive from x=0 to about 2. Therefore the integral to x=2 includes the entire first positive lobe.",
+              "work": "\\(\\int_0^2f(x)dx\\text{ includes all of the initial positive area.}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 500 300\"><rect width=\"500\" height=\"300\" fill=\"white\"/><path d=\"M45 170H470M80 260V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M80 170 C98 115 122 78 145 72 C160 68 170 110 172 170 C195 230 235 255 270 252 C310 248 340 205 358 170 C377 145 400 148 422 160 C438 169 445 182 450 170\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><g font-family=\"Arial\" font-size=\"12\" text-anchor=\"middle\"><text x=\"80\" y=\"190\">0</text><text x=\"126\" y=\"190\">1</text><text x=\"172\" y=\"190\">2</text><text x=\"219\" y=\"190\">3</text><text x=\"265\" y=\"190\">4</text><text x=\"311\" y=\"190\">5</text><text x=\"358\" y=\"190\">6</text><text x=\"404\" y=\"190\">7</text><text x=\"450\" y=\"190\">8</text></g><text x=\"128\" y=\"98\" font-family=\"Arial\" font-size=\"13\">y=f(x)</text><text x=\"475\" y=\"175\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"84\" y=\"32\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
+              }
+            },
+            {
+              "explain": "The integrals to 7 or 8 also include the much larger negative lobe between approximately 2 and 6, which reduces their values. The integral to 1 omits part of the positive lobe.",
+              "work": "\\(\\int_0^2f(x)dx>\\int_0^1f(x)dx,\\quad\\int_0^2f(x)dx>\\int_0^7f(x)dx,\\int_0^8f(x)dx\\)"
+            },
+            {
+              "explain": "Thus the greatest value is the integral from 0 to 2.",
+              "work": "\\(\\boxed{\\int_0^2f(x)dx}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "201",
+            "course": "Advanced",
+            "sourceQuestion": "Q44"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 500 300\"><rect width=\"500\" height=\"300\" fill=\"white\"/><path d=\"M45 170H470M80 260V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M80 170 C98 115 122 78 145 72 C160 68 170 110 172 170 C195 230 235 255 270 252 C310 248 340 205 358 170 C377 145 400 148 422 160 C438 169 445 182 450 170\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><g font-family=\"Arial\" font-size=\"12\" text-anchor=\"middle\"><text x=\"80\" y=\"190\">0</text><text x=\"126\" y=\"190\">1</text><text x=\"172\" y=\"190\">2</text><text x=\"219\" y=\"190\">3</text><text x=\"265\" y=\"190\">4</text><text x=\"311\" y=\"190\">5</text><text x=\"358\" y=\"190\">6</text><text x=\"404\" y=\"190\">7</text><text x=\"450\" y=\"190\">8</text></g><text x=\"125\" y=\"50\" font-family=\"Arial\" font-size=\"13\">y=f(x)</text><text x=\"475\" y=\"175\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"84\" y=\"32\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p201-q45",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(\\displaystyle\\int_0^{\\pi/2}\\sec^2\\frac{x}{2}\\,dx\\).",
+          "options": [
+            "\\(2\\)",
+            "\\(1\\)",
+            "\\(\\sqrt2\\)",
+            "\\(\\frac{\\pi}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "The derivative of tan(x/2) is (1/2)sec²(x/2), so the antiderivative needs a factor of 2.",
+          "steps": [
+            {
+              "explain": "Apply the reverse chain rule to sec²(x/2).",
+              "work": "\\(\\int\\sec^2\\frac{x}{2}dx=2\\tan\\frac{x}{2}+C\\)"
+            },
+            {
+              "explain": "Substitute the upper and lower limits.",
+              "work": "\\(\\left[2\\tan\\frac{x}{2}\\right]_0^{\\pi/2}=2(\\tan\\frac\\pi4-\\tan0)=\\boxed2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "201",
+            "course": "Advanced",
+            "sourceQuestion": "Q45"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p201-q48",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The diagram shows the graph \\(y=2\\cos x\\).",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 520 310\"><rect width=\"520\" height=\"310\" fill=\"white\"/><path d=\"M45 160H480M120 275V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M75 160 C90 115 105 75 120 70 C145 65 170 95 190 160 C215 230 250 260 280 265 C310 260 345 230 370 160 C390 105 415 70 440 70 C465 70 480 105 495 160\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M120 160V70M280 160V265M440 160V70\" stroke=\"#94a3b8\" stroke-dasharray=\"4 4\"/><text x=\"111\" y=\"62\" font-family=\"Arial\" font-size=\"13\">P</text><text x=\"86\" y=\"180\" font-family=\"Arial\" font-size=\"13\">O</text><text x=\"188\" y=\"180\" font-family=\"Arial\" font-size=\"12\">π/2</text><text x=\"274\" y=\"180\" font-family=\"Arial\" font-size=\"12\">π</text><text x=\"433\" y=\"180\" font-family=\"Arial\" font-size=\"12\">2π</text><text x=\"150\" y=\"128\" font-family=\"Arial\" font-size=\"13\">A</text><text x=\"270\" y=\"235\" font-family=\"Arial\" font-size=\"13\">B</text><text x=\"396\" y=\"128\" font-family=\"Arial\" font-size=\"13\">C</text><text x=\"463\" y=\"128\" font-family=\"Arial\" font-size=\"13\">D</text><text x=\"484\" y=\"165\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"124\" y=\"32\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"324\" y=\"56\" font-family=\"Arial\" font-size=\"13\">y=2 cos x</text></svg>"
+          },
+          "hint": "Use the cosine graph to read the intercept and identify each region. Definite integrals below the x-axis are negative, while geometric areas are positive.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p201-q48-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "State the coordinates of \\(P\\).",
+              "options": [
+                "\\((0,2)\\)",
+                "\\((2,0)\\)",
+                "\\((0,1)\\)",
+                "\\((\\pi,0)\\)"
+              ],
+              "answer": 0,
+              "hint": "Point P is the y-intercept. Substitute x=0 into y=2cos x.",
+              "steps": [
+                {
+                  "explain": "At the y-intercept x=0. Evaluate the function there.",
+                  "work": "\\(y=2\\cos0=2\\Rightarrow\\boxed{P=(0,2)}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "201",
+                "course": "Advanced",
+                "sourceQuestion": "Q48(i)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p201-q48-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Evaluate \\(\\displaystyle\\int_0^{\\pi/2}2\\cos x\\,dx\\).",
+              "options": [
+                "\\(2\\)",
+                "\\(0\\)",
+                "\\(-2\\)",
+                "\\(4\\)"
+              ],
+              "answer": 0,
+              "hint": "An antiderivative of 2cos x is 2sin x.",
+              "steps": [
+                {
+                  "explain": "Integrate 2cos x.",
+                  "work": "\\(\\int2\\cos xdx=2\\sin x+C\\)"
+                },
+                {
+                  "explain": "Substitute π/2 and 0.",
+                  "work": "\\(2[\\sin x]_0^{\\pi/2}=2(1-0)=\\boxed2\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "201",
+                "course": "Advanced",
+                "sourceQuestion": "Q48(ii)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p201-q48-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Indicate which area in the diagram, A, B, C or D, is represented by \\(\\displaystyle\\int_{3\\pi/2}^{2\\pi}2\\cos x\\,dx\\).",
+              "options": [
+                "Area A",
+                "Area B",
+                "Area C",
+                "Area D"
+              ],
+              "answer": 2,
+              "hint": "The interval starts at 3π/2 and ends at 2π. Locate that final positive quarter-wave before the 2π maximum.",
+              "steps": [
+                {
+                  "explain": "On the graph, x=3π/2 is the zero crossing before the peak at 2π. This interval is the positive region immediately to the left of x=2π.",
+                  "work": "\\(\\frac{3\\pi}{2}\\le x\\le2\\pi\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 520 310\"><rect width=\"520\" height=\"310\" fill=\"white\"/><path d=\"M45 160H480M120 275V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M370 160 C390 105 415 70 440 70 L440 160Z\" fill=\"#bbf7d0\" opacity=\".9\"/><path d=\"M75 160 C90 115 105 75 120 70 C145 65 170 95 190 160 C215 230 250 260 280 265 C310 260 345 230 370 160 C390 105 415 70 440 70 C465 70 480 105 495 160\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M120 160V70M280 160V265M440 160V70\" stroke=\"#94a3b8\" stroke-dasharray=\"4 4\"/><text x=\"111\" y=\"62\" font-family=\"Arial\" font-size=\"13\">P</text><text x=\"86\" y=\"180\" font-family=\"Arial\" font-size=\"13\">O</text><text x=\"188\" y=\"180\" font-family=\"Arial\" font-size=\"12\">π/2</text><text x=\"274\" y=\"180\" font-family=\"Arial\" font-size=\"12\">π</text><text x=\"433\" y=\"180\" font-family=\"Arial\" font-size=\"12\">2π</text><text x=\"150\" y=\"128\" font-family=\"Arial\" font-size=\"13\">A</text><text x=\"270\" y=\"235\" font-family=\"Arial\" font-size=\"13\">B</text><text x=\"396\" y=\"128\" font-family=\"Arial\" font-size=\"13\">C</text><text x=\"463\" y=\"128\" font-family=\"Arial\" font-size=\"13\">D</text><text x=\"484\" y=\"165\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"124\" y=\"32\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"324\" y=\"56\" font-family=\"Arial\" font-size=\"13\">y=2 cos x</text></svg>"
+                  }
+                },
+                {
+                  "explain": "That region is labelled C.",
+                  "work": "\\(\\boxed{\\text{Area C}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "201",
+                "course": "Advanced",
+                "sourceQuestion": "Q48(iii)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p201-q48-iv",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Using parts ii and iii, or otherwise, find the area of the region bounded by the curve \\(y=2\\cos x\\) and the x-axis, between \\(x=0\\) and \\(x=2\\pi\\).",
+              "options": [
+                "\\(8\\)",
+                "\\(4\\)",
+                "\\(0\\)",
+                "\\(2\\)"
+              ],
+              "answer": 0,
+              "hint": "Geometric area is always positive. The graph has a positive lobe of area 2, a negative lobe with geometric area 4, and another positive lobe of area 2.",
+              "steps": [
+                {
+                  "explain": "Area A is 2 by part ii. Region B is below the axis; its signed integral is −4, so its geometric area is 4. Region C has area 2 by part iii.",
+                  "work": "\\(A_A=2,\\quad A_B=4,\\quad A_C=2\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 520 310\"><rect width=\"520\" height=\"310\" fill=\"white\"/><path d=\"M45 160H480M120 275V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M120 70 C145 75 170 95 190 160H120Z\" fill=\"#bbf7d0\" opacity=\".9\"/><path d=\"M190 160 C215 230 250 260 280 265 C310 260 345 230 370 160H190Z\" fill=\"#fecaca\" opacity=\".8\"/><path d=\"M370 160 C390 105 415 70 440 70 L440 160Z\" fill=\"#bbf7d0\" opacity=\".9\"/><path d=\"M75 160 C90 115 105 75 120 70 C145 65 170 95 190 160 C215 230 250 260 280 265 C310 260 345 230 370 160 C390 105 415 70 440 70 C465 70 480 105 495 160\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M120 160V70M280 160V265M440 160V70\" stroke=\"#94a3b8\" stroke-dasharray=\"4 4\"/><text x=\"111\" y=\"62\" font-family=\"Arial\" font-size=\"13\">P</text><text x=\"86\" y=\"180\" font-family=\"Arial\" font-size=\"13\">O</text><text x=\"188\" y=\"180\" font-family=\"Arial\" font-size=\"12\">π/2</text><text x=\"274\" y=\"180\" font-family=\"Arial\" font-size=\"12\">π</text><text x=\"433\" y=\"180\" font-family=\"Arial\" font-size=\"12\">2π</text><text x=\"150\" y=\"128\" font-family=\"Arial\" font-size=\"13\">A</text><text x=\"270\" y=\"235\" font-family=\"Arial\" font-size=\"13\">B</text><text x=\"396\" y=\"128\" font-family=\"Arial\" font-size=\"13\">C</text><text x=\"463\" y=\"128\" font-family=\"Arial\" font-size=\"13\">D</text><text x=\"484\" y=\"165\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"124\" y=\"32\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"324\" y=\"56\" font-family=\"Arial\" font-size=\"13\">y=2 cos x</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Add the positive geometric areas, including the magnitude of the part below the axis.",
+                  "work": "\\(A_{total}=2+4+2=\\boxed8\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "201",
+                "course": "Advanced",
+                "sourceQuestion": "Q48(iv)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p201-q48-v",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Using the parts above, write down the value of \\(\\displaystyle\\int_{\\pi/2}^{2\\pi}2\\cos x\\,dx\\).",
+              "options": [
+                "\\(-2\\)",
+                "\\(2\\)",
+                "\\(-6\\)",
+                "\\(6\\)"
+              ],
+              "answer": 0,
+              "hint": "This interval includes region B below the axis and region C above it. Add their signed contributions.",
+              "steps": [
+                {
+                  "explain": "Region B contributes −4 to the integral because it lies below the x-axis; region C contributes +2.",
+                  "work": "\\(\\int_{\\pi/2}^{2\\pi}2\\cos xdx=-4+2=\\boxed{-2}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 520 310\"><rect width=\"520\" height=\"310\" fill=\"white\"/><path d=\"M45 160H480M120 275V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M190 160 C215 230 250 260 280 265 C310 260 345 230 370 160H190Z\" fill=\"#fecaca\" opacity=\".8\"/><path d=\"M370 160 C390 105 415 70 440 70 L440 160Z\" fill=\"#bbf7d0\" opacity=\".9\"/><path d=\"M75 160 C90 115 105 75 120 70 C145 65 170 95 190 160 C215 230 250 260 280 265 C310 260 345 230 370 160 C390 105 415 70 440 70 C465 70 480 105 495 160\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M120 160V70M280 160V265M440 160V70\" stroke=\"#94a3b8\" stroke-dasharray=\"4 4\"/><text x=\"111\" y=\"62\" font-family=\"Arial\" font-size=\"13\">P</text><text x=\"86\" y=\"180\" font-family=\"Arial\" font-size=\"13\">O</text><text x=\"188\" y=\"180\" font-family=\"Arial\" font-size=\"12\">π/2</text><text x=\"274\" y=\"180\" font-family=\"Arial\" font-size=\"12\">π</text><text x=\"433\" y=\"180\" font-family=\"Arial\" font-size=\"12\">2π</text><text x=\"150\" y=\"128\" font-family=\"Arial\" font-size=\"13\">A</text><text x=\"270\" y=\"235\" font-family=\"Arial\" font-size=\"13\">B</text><text x=\"396\" y=\"128\" font-family=\"Arial\" font-size=\"13\">C</text><text x=\"463\" y=\"128\" font-family=\"Arial\" font-size=\"13\">D</text><text x=\"484\" y=\"165\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"124\" y=\"32\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"324\" y=\"56\" font-family=\"Arial\" font-size=\"13\">y=2 cos x</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "201",
+                "course": "Advanced",
+                "sourceQuestion": "Q48(v)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "201",
+            "course": "Advanced",
+            "sourceQuestion": "Q48"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p201-q49",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given that \\(\\displaystyle\\int_0^6(x+k)\\,dx=30\\), and \\(k\\) is a constant, find the value of \\(k\\).",
+          "options": [
+            "\\(2\\)",
+            "\\(3\\)",
+            "\\(4\\)",
+            "\\(5\\)"
+          ],
+          "answer": 0,
+          "hint": "Integrate x+k, evaluate between 0 and 6, then solve the resulting linear equation.",
+          "steps": [
+            {
+              "explain": "Find an antiderivative of x+k.",
+              "work": "\\(\\int(x+k)dx=\\frac{x^2}{2}+kx+C\\)"
+            },
+            {
+              "explain": "Apply the limits and set the expression equal to 30.",
+              "work": "\\(\\left[\\frac{x^2}{2}+kx\\right]_0^6=18+6k=30\\)"
+            },
+            {
+              "explain": "Solve for k.",
+              "work": "\\(6k=12\\Rightarrow\\boxed{k=2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "201",
+            "course": "Advanced",
+            "sourceQuestion": "Q49"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p203-q59",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(\\displaystyle\\int_1^4\\frac8{x^2}\\,dx\\).",
+          "options": [
+            "\\(6\\)",
+            "\\(8\\)",
+            "\\(4\\)",
+            "\\(\\frac{15}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Rewrite 8/x² as 8x^(−2), then apply the power rule.",
+          "steps": [
+            {
+              "explain": "Write the integrand as a negative power and integrate.",
+              "work": "\\(\\int8x^{-2}dx=-8x^{-1}+C=-\\frac8x+C\\)"
+            },
+            {
+              "explain": "Substitute the upper and lower limits.",
+              "work": "\\(\\left[-\\frac8x\\right]_1^4=-2-(-8)=\\boxed6\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "203",
+            "course": "Advanced",
+            "sourceQuestion": "Q59"
+          }
         }
       ]
     },
@@ -1264,6 +1661,392 @@
             "page": "199",
             "course": "Advanced",
             "sourceQuestion": "Q30"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p202-q54",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(\\displaystyle\\int_1^4(x^2+\\sqrt{x})\\,dx\\).",
+          "options": [
+            "\\(\\frac{77}{3}\\)",
+            "\\(\\frac{80}{3}\\)",
+            "\\(\\frac{79}{3}\\)",
+            "\\(25\\)"
+          ],
+          "answer": 0,
+          "hint": "Rewrite √x as x^(1/2), integrate both powers, then substitute 4 and 1.",
+          "steps": [
+            {
+              "explain": "Write the integrand using powers and integrate term by term.",
+              "work": "\\(\\int(x^2+\\sqrt{x})dx=\\frac{x^3}{3}+\\frac23x^{3/2}+C\\)"
+            },
+            {
+              "explain": "Evaluate the antiderivative at 4 and subtract its value at 1.",
+              "work": "\\(\\left[\\frac{x^3}{3}+\\frac23x^{3/2}\\right]_1^4=(\\frac{64}{3}+\\frac{16}{3})-(\\frac13+\\frac23)=\\boxed{\\frac{77}{3}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "202",
+            "course": "Advanced",
+            "sourceQuestion": "Q54"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p202-q55",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(\\displaystyle\\int_0^{\\pi/12}\\sec^2(3x)\\,dx\\).",
+          "options": [
+            "\\(\\frac13\\)",
+            "\\(1\\)",
+            "\\(\\frac{\\sqrt3}{3}\\)",
+            "\\(\\frac{\\pi}{12}\\)"
+          ],
+          "answer": 0,
+          "hint": "The derivative of tan(3x) is 3sec²(3x), so divide by 3.",
+          "steps": [
+            {
+              "explain": "Integrate using the reverse chain rule.",
+              "work": "\\(\\int\\sec^2(3x)dx=\\frac13\\tan(3x)+C\\)"
+            },
+            {
+              "explain": "Apply the limits 0 and π/12. The upper angle becomes π/4.",
+              "work": "\\(\\left[\\frac13\\tan(3x)\\right]_0^{\\pi/12}=\\frac13(\\tan\\frac\\pi4-\\tan0)=\\boxed{\\frac13}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "202",
+            "course": "Advanced",
+            "sourceQuestion": "Q55"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p202-q56",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "",
+          "hint": "Use the chain rule for the logarithm of cos x. Then use the result to integrate tan x.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p202-q56-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Differentiate \\(\\log_e(\\cos x)\\) with respect to \\(x\\).",
+              "options": [
+                "\\(-\\tan x\\)",
+                "\\(\\tan x\\)",
+                "\\(-\\cot x\\)",
+                "\\(\\sec x\\)"
+              ],
+              "answer": 0,
+              "hint": "For ln(cos x), the chain rule gives (1/cos x)(−sin x).",
+              "steps": [
+                {
+                  "explain": "Differentiate the outside logarithm, then multiply by the derivative of cos x.",
+                  "work": "\\(\\frac{d}{dx}\\ln(\\cos x)=\\frac1{\\cos x}(-\\sin x)=-\\tan x\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "202",
+                "course": "Advanced",
+                "sourceQuestion": "Q56(i)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p202-q56-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Hence, or otherwise, evaluate \\(\\displaystyle\\int_0^{\\pi/4}\\tan x\\,dx\\).",
+              "options": [
+                "\\(\\frac12\\ln2\\)",
+                "\\(\\ln2\\)",
+                "\\(-\\frac12\\ln2\\)",
+                "\\(1\\)"
+              ],
+              "answer": 0,
+              "hint": "Since d/dx ln(cos x)=−tan x, an antiderivative of tan x is −ln(cos x).",
+              "steps": [
+                {
+                  "explain": "Use the result from part i to identify the antiderivative.",
+                  "work": "\\(\\int\\tan xdx=-\\ln(\\cos x)+C\\)"
+                },
+                {
+                  "explain": "Substitute π/4 and 0. Since cos(π/4)=1/√2 and cos(0)=1, simplify the logarithm.",
+                  "work": "\\(\\left[-\\ln(\\cos x)\\right]_0^{\\pi/4}=-\\ln(\\frac1{\\sqrt2})+\\ln1=\\ln\\sqrt2=\\boxed{\\frac12\\ln2}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "202",
+                "course": "Advanced",
+                "sourceQuestion": "Q56(ii)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "202",
+            "course": "Advanced",
+            "sourceQuestion": "Q56"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p202-q57",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "A beam is supported at \\((-b,0)\\) and \\((b,0)\\) as shown in the diagram. It is known that the shape formed by the beam has equation \\(y=f(x)\\), where \\(f(x)\\) satisfies \\(f''(x)=k(b^2-x^2)\\) (\\(k\\) is a positive constant) and \\(f'(-b)=-f'(b)\\).",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 270\"><rect width=\"480\" height=\"270\" fill=\"white\"/><path d=\"M45 145H440M240 240V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 145 C145 175 185 192 240 198 C295 192 335 175 380 145\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"4\"/><circle cx=\"100\" cy=\"145\" r=\"4\" fill=\"#334155\"/><circle cx=\"380\" cy=\"145\" r=\"4\" fill=\"#334155\"/><path d=\"M100 145H380\" stroke=\"#94a3b8\" stroke-dasharray=\"5 4\"/><text x=\"69\" y=\"164\" font-family=\"Arial\" font-size=\"13\">(−b,0)</text><text x=\"363\" y=\"164\" font-family=\"Arial\" font-size=\"13\">(b,0)</text><text x=\"245\" y=\"220\" font-family=\"Arial\" font-size=\"13\">maximum drop at x=0</text><text x=\"444\" y=\"150\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"244\" y=\"27\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
+          },
+          "hint": "Integrate f″ to find f′, and use the symmetry condition to determine the integration constant. Integrate again and use the support condition f(−b)=f(b)=0.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p202-q57-i",
+              "type": "review",
+              "manual": true,
+              "difficulty": "hard",
+              "stem": "Show that \\(\\displaystyle f'(x)=k\\left(b^2x-\\frac{x^3}{3}\\right)\\).",
+              "answer": "\\(f'(x)=k\\left(b^2x-\\frac{x^3}{3}\\right)\\)",
+              "hint": "Integrate f″, include a constant, then use f′(−b)=−f′(b) to show that constant is zero.",
+              "steps": [
+                {
+                  "explain": "Integrate f″ with respect to x and include the integration constant C.",
+                  "work": "\\(f'(x)=k\\left(b^2x-\\frac{x^3}{3}\\right)+C\\)"
+                },
+                {
+                  "explain": "Substitute x=−b and x=b into f′. Use f′(−b)=−f′(b).",
+                  "work": "\\(-\\frac23kb^3+C=-\\left(\\frac23kb^3+C\\right)\\Rightarrow C=0\\)"
+                },
+                {
+                  "explain": "Replace C with zero to obtain the required expression.",
+                  "work": "\\(\\boxed{f'(x)=k\\left(b^2x-\\frac{x^3}{3}\\right)}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "202",
+                "course": "Advanced",
+                "sourceQuestion": "Q57(i)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p202-q57-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "How far is the beam below the x-axis at \\(x=0\\)?",
+              "options": [
+                "\\(\\frac{5kb^4}{12}\\)",
+                "\\(\\frac{kb^4}{12}\\)",
+                "\\(\\frac{kb^4}{3}\\)",
+                "\\(\\frac{5kb^4}{6}\\)"
+              ],
+              "answer": 0,
+              "hint": "Integrate the expression for f′ from part i. Use f(−b)=0 because the beam is supported at (−b,0).",
+              "steps": [
+                {
+                  "explain": "Integrate f′ from part i to obtain f(x), including a constant D.",
+                  "work": "\\(f(x)=k\\left(\\frac{b^2x^2}{2}-\\frac{x^4}{12}\\right)+D\\)"
+                },
+                {
+                  "explain": "Use the left support f(−b)=0 to determine D.",
+                  "work": "\\(0=k(\\frac{b^4}{2}-\\frac{b^4}{12})+D=\\frac{5kb^4}{12}+D\\Rightarrow D=-\\frac{5kb^4}{12}\\)"
+                },
+                {
+                  "explain": "At x=0 the polynomial terms vanish. The value is negative, so its distance below the axis is the positive magnitude.",
+                  "work": "\\(f(0)=-\\frac{5kb^4}{12}\\Rightarrow\\boxed{\\text{distance}=\\frac{5kb^4}{12}}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 270\"><rect width=\"480\" height=\"270\" fill=\"white\"/><path d=\"M45 145H440M240 240V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 145 C145 175 185 192 240 198 C295 192 335 175 380 145\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"4\"/><circle cx=\"100\" cy=\"145\" r=\"4\" fill=\"#334155\"/><circle cx=\"380\" cy=\"145\" r=\"4\" fill=\"#334155\"/><path d=\"M100 145H380\" stroke=\"#94a3b8\" stroke-dasharray=\"5 4\"/><text x=\"69\" y=\"164\" font-family=\"Arial\" font-size=\"13\">(−b,0)</text><text x=\"363\" y=\"164\" font-family=\"Arial\" font-size=\"13\">(b,0)</text><text x=\"245\" y=\"220\" font-family=\"Arial\" font-size=\"13\">maximum drop at x=0</text><text x=\"444\" y=\"150\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"244\" y=\"27\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "202",
+                "course": "Advanced",
+                "sourceQuestion": "Q57(ii)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "202",
+            "course": "Advanced",
+            "sourceQuestion": "Q57"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p203-q61",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(\\displaystyle\\int_0^3\\frac{8x}{1+x^2}\\,dx\\).",
+          "options": [
+            "\\(4\\ln10\\)",
+            "\\(8\\ln10\\)",
+            "\\(4\\ln3\\)",
+            "\\(\\ln10\\)"
+          ],
+          "answer": 0,
+          "hint": "The denominator 1+x² has derivative 2x. Use u=1+x² and account for the factor 8.",
+          "steps": [
+            {
+              "explain": "Let u=1+x², so du=2x dx and 8x dx=4du. The limits change from 1 to 10.",
+              "work": "\\(u=1+x^2,\\quad du=2x\\,dx\\)"
+            },
+            {
+              "explain": "Rewrite the integral in terms of u.",
+              "work": "\\(\\int_0^3\\frac{8x}{1+x^2}dx=4\\int_1^{10}\\frac1u du\\)"
+            },
+            {
+              "explain": "Integrate 1/u and evaluate.",
+              "work": "\\(=4[\\ln u]_1^{10}=\\boxed{4\\ln10}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "203",
+            "course": "Advanced",
+            "sourceQuestion": "Q61"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p203-q62",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "",
+          "hint": "Differentiate ln(cos x) using the chain rule. For the shaded area, tan x is above y=x on 0<x≤π/4.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p203-q62-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Show that \\(\\displaystyle\\frac{d}{dx}\\log_e(\\cos x)=-\\tan x\\).",
+              "options": [
+                "\\(-\\tan x\\)",
+                "\\(\\tan x\\)",
+                "\\(-\\cot x\\)",
+                "\\(\\sec x\\)"
+              ],
+              "answer": 0,
+              "hint": "Apply the chain rule: derivative of ln u is u′/u, with u=cos x.",
+              "steps": [
+                {
+                  "explain": "Differentiate ln(cos x) by the chain rule.",
+                  "work": "\\(\\frac{d}{dx}\\ln(\\cos x)=\\frac{-\\sin x}{\\cos x}=-\\tan x\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "203",
+                "course": "Advanced",
+                "sourceQuestion": "Q62(i)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p203-q62-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The shaded region is bounded by the curve \\(y=\\tan x\\) and the lines \\(y=x\\) and \\(x=\\frac\\pi4\\). Find its exact area.",
+              "options": [
+                "\\(\\frac12\\ln2-\\frac{\\pi^2}{32}\\)",
+                "\\(\\frac12\\ln2+\\frac{\\pi^2}{32}\\)",
+                "\\(\\ln2-\\frac{\\pi^2}{16}\\)",
+                "\\(\\frac{\\pi}{4}-1\\)"
+              ],
+              "answer": 0,
+              "hint": "The curves meet at x=0. Integrate tan x−x from 0 to π/4. Use part i for the tan integral.",
+              "steps": [
+                {
+                  "explain": "The shaded region starts where tan x=x at x=0 and ends at x=π/4. On this interval tan x is above y=x.",
+                  "work": "\\(A=\\int_0^{\\pi/4}(\\tan x-x)dx\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 460 290\"><rect width=\"460\" height=\"290\" fill=\"white\"/><path d=\"M45 240H430M100 260V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 240 C150 210 210 165 260 125 L260 110 C210 170 150 220 100 240Z\" fill=\"#fde68a\" opacity=\".55\"/><path d=\"M100 240 C150 205 210 130 260 55\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 240L260 80M260 80V240\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.5\"/><text x=\"268\" y=\"84\" font-family=\"Arial\" font-size=\"13\">x=π/4</text><text x=\"195\" y=\"165\" font-family=\"Arial\" font-size=\"13\">y=tan x</text><text x=\"135\" y=\"229\" font-family=\"Arial\" font-size=\"13\">y=x</text><text x=\"433\" y=\"245\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"104\" y=\"27\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
+                  }
+                },
+                {
+                  "explain": "An antiderivative of tan x is −ln(cos x), and an antiderivative of x is x²/2.",
+                  "work": "\\(A=[-\\ln(\\cos x)-\\frac{x^2}{2}]_0^{\\pi/4}\\)"
+                },
+                {
+                  "explain": "Use cos(π/4)=1/√2 and simplify.",
+                  "work": "\\(A=\\frac12\\ln2-\\frac12(\\frac{\\pi}{4})^2=\\boxed{\\frac12\\ln2-\\frac{\\pi^2}{32}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "203",
+                "course": "Advanced",
+                "sourceQuestion": "Q62(ii)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "203",
+            "course": "Advanced",
+            "sourceQuestion": "Q62"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 460 290\"><rect width=\"460\" height=\"290\" fill=\"white\"/><path d=\"M45 240H430M100 260V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 240 C150 210 210 165 260 125 L260 110 C210 170 150 220 100 240Z\" fill=\"#fde68a\" opacity=\".55\"/><path d=\"M100 240 C150 205 210 130 260 55\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 240L260 80M260 80V240\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.5\"/><text x=\"268\" y=\"84\" font-family=\"Arial\" font-size=\"13\">x=π/4</text><text x=\"195\" y=\"165\" font-family=\"Arial\" font-size=\"13\">y=tan x</text><text x=\"135\" y=\"229\" font-family=\"Arial\" font-size=\"13\">y=x</text><text x=\"433\" y=\"245\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"104\" y=\"27\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p203-q64",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(\\displaystyle\\int_0^{\\pi/6}\\cos3x\\,dx\\).",
+          "options": [
+            "\\(\\frac13\\)",
+            "\\(\\frac12\\)",
+            "\\(1\\)",
+            "\\(\\frac{\\sqrt3}{6}\\)"
+          ],
+          "answer": 0,
+          "hint": "The reverse chain rule gives sin(3x)/3.",
+          "steps": [
+            {
+              "explain": "Integrate cos(3x), dividing by 3 for the inside derivative.",
+              "work": "\\(\\int\\cos3x dx=\\frac13\\sin3x+C\\)"
+            },
+            {
+              "explain": "Substitute the upper limit π/6, which makes 3x=π/2.",
+              "work": "\\(\\left[\\frac13\\sin3x\\right]_0^{\\pi/6}=\\frac13(1-0)=\\boxed{\\frac13}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "203",
+            "course": "Advanced",
+            "sourceQuestion": "Q64"
           }
         }
       ]
@@ -3408,6 +4191,810 @@
             "course": "Advanced",
             "sourceQuestion": "Q41"
           }
+        },
+        {
+          "id": "y12a-advanced-004-p201-q47",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(\\displaystyle\\int_e^{e^5}\\frac5x\\,dx\\).",
+          "options": [
+            "\\(20\\)",
+            "\\(25\\)",
+            "\\(5\\)",
+            "\\(4\\)"
+          ],
+          "answer": 0,
+          "hint": "The antiderivative of 1/x is ln x. Substitute e^5 and e carefully.",
+          "steps": [
+            {
+              "explain": "Integrate 5/x by taking the constant 5 outside.",
+              "work": "\\(\\int\\frac5x dx=5\\ln x+C\\)"
+            },
+            {
+              "explain": "Evaluate at e^5 and e, using ln(e^5)=5 and ln(e)=1.",
+              "work": "\\(5[\\ln x]_e^{e^5}=5(5-1)=\\boxed{20}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "201",
+            "course": "Advanced",
+            "sourceQuestion": "Q47"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p201-q46",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The diagram shows the parabolas \\(y=5x-x^2\\) and \\(y=x^2-3x\\). The parabolas intersect at the origin \\(O\\) and at the point \\(A\\). The region between the two parabolas is shaded.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 320\"><rect width=\"480\" height=\"320\" fill=\"white\"/><path d=\"M45 250H445M100 285V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 250 C150 135 200 74 250 72 C300 74 340 132 370 190 C345 209 310 235 280 240 C220 267 160 275 100 250Z\" fill=\"#fde68a\" opacity=\".5\"/><path d=\"M100 250 C150 135 200 74 250 72 C300 74 340 132 370 190 C400 230 425 250 440 255\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 250 C160 275 220 267 280 240 C320 222 350 202 370 190\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"100\" cy=\"250\" r=\"4\" fill=\"#334155\"/><circle cx=\"370\" cy=\"190\" r=\"4\" fill=\"#334155\"/><text x=\"85\" y=\"270\" font-family=\"Arial\" font-size=\"13\">O</text><text x=\"376\" y=\"186\" font-family=\"Arial\" font-size=\"13\">A</text><text x=\"325\" y=\"48\" font-family=\"Arial\" font-size=\"13\">y=5x−x²</text><text x=\"260\" y=\"300\" font-family=\"Arial\" font-size=\"13\">y=x²−3x</text><text x=\"448\" y=\"255\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"104\" y=\"27\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
+          },
+          "hint": "At an intersection, the two y-values are equal. For the area, integrate the upper parabola minus the lower parabola between the intersections.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p201-q46-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the x-coordinate of point A.",
+              "options": [
+                "\\(4\\)",
+                "\\(3\\)",
+                "\\(5\\)",
+                "\\(2\\)"
+              ],
+              "answer": 0,
+              "hint": "Set 5x−x² equal to x²−3x and factor. Ignore the root x=0 because that is the origin.",
+              "steps": [
+                {
+                  "explain": "Equate the two expressions at an intersection.",
+                  "work": "\\(5x-x^2=x^2-3x\\)"
+                },
+                {
+                  "explain": "Rearrange and factor out 2x.",
+                  "work": "\\(2x^2-8x=0\\Rightarrow2x(x-4)=0\\)"
+                },
+                {
+                  "explain": "The roots are x=0 and x=4. Since A is the second intersection, use x=4.",
+                  "work": "\\(\\boxed{x_A=4}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "201",
+                "course": "Advanced",
+                "sourceQuestion": "Q46(i)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p201-q46-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the area of the shaded region.",
+              "options": [
+                "\\(\\frac{64}{3}\\)",
+                "\\(\\frac{32}{3}\\)",
+                "\\(16\\)",
+                "\\(\\frac{128}{3}\\)"
+              ],
+              "answer": 0,
+              "hint": "The upper curve is y=5x−x² and the lower curve is y=x²−3x. Integrate their difference from 0 to the x-coordinate of A.",
+              "steps": [
+                {
+                  "explain": "Use the intersections O and A as limits x=0 and x=4. The first parabola is above the second on this interval.",
+                  "work": "\\(A=\\int_0^4[(5x-x^2)-(x^2-3x)]dx=\\int_0^4(8x-2x^2)dx\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 320\"><rect width=\"480\" height=\"320\" fill=\"white\"/><path d=\"M45 250H445M100 285V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 250 C150 135 200 74 250 72 C300 74 340 132 370 190 C345 209 310 235 280 240 C220 267 160 275 100 250Z\" fill=\"#fde68a\" opacity=\".5\"/><path d=\"M100 250 C150 135 200 74 250 72 C300 74 340 132 370 190 C400 230 425 250 440 255\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 250 C160 275 220 267 280 240 C320 222 350 202 370 190\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"100\" cy=\"250\" r=\"4\" fill=\"#334155\"/><circle cx=\"370\" cy=\"190\" r=\"4\" fill=\"#334155\"/><text x=\"85\" y=\"270\" font-family=\"Arial\" font-size=\"13\">O</text><text x=\"376\" y=\"186\" font-family=\"Arial\" font-size=\"13\">A</text><text x=\"325\" y=\"48\" font-family=\"Arial\" font-size=\"13\">y=5x−x²</text><text x=\"260\" y=\"300\" font-family=\"Arial\" font-size=\"13\">y=x²−3x</text><text x=\"448\" y=\"255\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"104\" y=\"27\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Integrate the difference and evaluate at x=4 and x=0.",
+                  "work": "\\(A=\\left[4x^2-\\frac23x^3\\right]_0^4=64-\\frac{128}{3}=\\boxed{\\frac{64}{3}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "201",
+                "course": "Advanced",
+                "sourceQuestion": "Q46(ii)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "201",
+            "course": "Advanced",
+            "sourceQuestion": "Q46"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p202-q51",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The curves \\(y=e^{2x}\\) and \\(y=e^{-x}\\) intersect at the point \\((0,1)\\), as shown in the diagram. Find the exact area enclosed by the curves and the line \\(x=2\\).",
+          "options": [
+            "\\(\\frac{e^4}{2}+e^{-2}-\\frac32\\)",
+            "\\(\\frac{e^4}{2}-e^{-2}+\\frac32\\)",
+            "\\(e^4+e^{-2}-2\\)",
+            "\\(\\frac{e^2}{2}+e^{-1}-\\frac32\\)"
+          ],
+          "answer": 0,
+          "hint": "For x between 0 and 2, e^(2x) is the upper curve and e^(−x) is the lower curve. Integrate top minus bottom.",
+          "steps": [
+            {
+              "explain": "The intersection gives the left limit x=0, and the vertical line gives the right limit x=2.",
+              "work": "\\(A=\\int_0^2(e^{2x}-e^{-x})dx\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M45 245H445M100 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 90 C145 70 200 38 255 30 L255 235 C200 190 145 115 100 90Z\" fill=\"#fde68a\" opacity=\".5\"/><path d=\"M60 130 C80 110 95 95 100 90 C145 68 200 40 255 30 C300 26 345 24 390 24\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M60 210 C80 170 93 120 100 90 C145 115 200 190 255 235 C300 260 345 270 390 275\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M255 30V275\" stroke=\"#64748b\" stroke-dasharray=\"5 4\"/><circle cx=\"100\" cy=\"90\" r=\"4\" fill=\"#334155\"/><text x=\"82\" y=\"82\" font-family=\"Arial\" font-size=\"13\">(0,1)</text><text x=\"252\" y=\"292\" font-family=\"Arial\" font-size=\"13\">x=2</text><text x=\"330\" y=\"38\" font-family=\"Arial\" font-size=\"13\">y=e²ˣ</text><text x=\"332\" y=\"263\" font-family=\"Arial\" font-size=\"13\">y=e⁻ˣ</text><text x=\"450\" y=\"249\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"104\" y=\"27\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
+              }
+            },
+            {
+              "explain": "Integrate each exponential using the reverse chain rule.",
+              "work": "\\(A=\\left[\\frac12e^{2x}+e^{-x}\\right]_0^2\\)"
+            },
+            {
+              "explain": "Substitute 2 and 0, then simplify.",
+              "work": "\\(A=(\\frac12e^4+e^{-2})-(\\frac12+1)=\\boxed{\\frac{e^4}{2}+e^{-2}-\\frac32}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "202",
+            "course": "Advanced",
+            "sourceQuestion": "Q51"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M45 245H445M100 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 90 C135 80 205 35 255 30 L255 235 C205 190 145 115 100 90Z\" fill=\"#fde68a\" opacity=\".5\"/><path d=\"M60 130 C82 112 95 95 100 90 C135 80 205 35 255 30 C305 18 345 15 390 12\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M60 210 C82 170 95 120 100 90 C145 115 205 190 255 235 C305 238 345 239 390 240\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M255 30V275\" stroke=\"#64748b\" stroke-dasharray=\"5 4\"/><circle cx=\"100\" cy=\"90\" r=\"4\" fill=\"#334155\"/><text x=\"82\" y=\"82\" font-family=\"Arial\" font-size=\"13\">(0,1)</text><text x=\"252\" y=\"292\" font-family=\"Arial\" font-size=\"13\">x=2</text><text x=\"318\" y=\"48\" font-family=\"Arial\" font-size=\"13\">y=e<tspan baseline-shift=\"super\" font-size=\"10\">2x</tspan></text><text x=\"318\" y=\"292\" font-family=\"Arial\" font-size=\"13\">y=e<tspan baseline-shift=\"super\" font-size=\"10\">−x</tspan></text><text x=\"450\" y=\"249\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"104\" y=\"27\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p202-q52",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The diagram shows the curve \\(y=\\frac1x\\), for \\(x>0\\). The area under the curve between \\(x=a\\) and \\(x=1\\) is \\(A_1\\). The area under the curve between \\(x=1\\) and \\(x=b\\) is \\(A_2\\). The areas \\(A_1\\) and \\(A_2\\) are each equal to 1 square unit. Find the values of \\(a\\) and \\(b\\).",
+          "options": [
+            "\\(a=e^{-1},\\;b=e\\)",
+            "\\(a=e,\\;b=e^{-1}\\)",
+            "\\(a=\\frac12,\\;b=2\\)",
+            "\\(a=e^{-2},\\;b=e^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Integrate 1/x. The left area gives ln(1/a)=1; the right area gives ln b=1.",
+          "steps": [
+            {
+              "explain": "For the left area, integrate from a to 1 and set it equal to 1.",
+              "work": "\\(1=\\int_a^1\\frac1x dx=\\ln1-\\ln a=-\\ln a\\Rightarrow a=e^{-1}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M45 250H445M100 270V25\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M118 70 C150 100 195 145 240 175 C285 202 330 220 380 232 L380 250H118Z\" fill=\"#bfdbfe\" opacity=\".38\"/><path d=\"M100 55 C130 65 150 90 180 130 C210 168 230 180 240 182 C280 200 330 220 380 232 C410 240 430 244 445 246\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M118 250V70M240 250V182M380 250V232\" stroke=\"#64748b\" stroke-dasharray=\"5 4\"/><text x=\"111\" y=\"269\" font-family=\"Arial\" font-size=\"14\">a</text><text x=\"235\" y=\"269\" font-family=\"Arial\" font-size=\"14\">1</text><text x=\"377\" y=\"269\" font-family=\"Arial\" font-size=\"14\">b</text><text x=\"140\" y=\"205\" font-family=\"Arial\" font-size=\"13\">A₁=1</text><text x=\"294\" y=\"225\" font-family=\"Arial\" font-size=\"13\">A₂=1</text><text x=\"316\" y=\"122\" font-family=\"Arial\" font-size=\"14\">y=1/x</text><text x=\"449\" y=\"255\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"104\" y=\"22\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
+              }
+            },
+            {
+              "explain": "For the right area, integrate from 1 to b and set it equal to 1.",
+              "work": "\\(1=\\int_1^b\\frac1x dx=\\ln b-\\ln1=\\ln b\\Rightarrow b=e\\)"
+            },
+            {
+              "explain": "Combine the two values.",
+              "work": "\\(\\boxed{a=e^{-1},\\quad b=e}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "202",
+            "course": "Advanced",
+            "sourceQuestion": "Q52"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M45 250H445M100 270V25\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M118 70 C150 100 195 145 240 175 C285 202 330 220 380 232 L380 250H118Z\" fill=\"#bfdbfe\" opacity=\".38\"/><path d=\"M100 55 C130 65 150 90 180 130 C210 168 230 180 240 182 C280 200 330 220 380 232 C410 240 430 244 445 246\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M118 250V70M240 250V182M380 250V232\" stroke=\"#64748b\" stroke-dasharray=\"5 4\"/><text x=\"111\" y=\"269\" font-family=\"Arial\" font-size=\"14\">a</text><text x=\"235\" y=\"269\" font-family=\"Arial\" font-size=\"14\">1</text><text x=\"377\" y=\"269\" font-family=\"Arial\" font-size=\"14\">b</text><text x=\"140\" y=\"205\" font-family=\"Arial\" font-size=\"13\">A<tspan baseline-shift=\"sub\" font-size=\"10\">1</tspan>=1</text><text x=\"294\" y=\"225\" font-family=\"Arial\" font-size=\"13\">A<tspan baseline-shift=\"sub\" font-size=\"10\">2</tspan>=1</text><text x=\"316\" y=\"122\" font-family=\"Arial\" font-size=\"14\">y=1/x</text><text x=\"449\" y=\"255\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"104\" y=\"22\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p201-q53",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Let \\(y=f(x)\\) be a function defined for \\(0\\le x\\le6\\), with \\(f(0)=0\\). The diagram shows the graph of the derivative \\(f'(x)\\). The shaded regions \\(A_1\\) and \\(A_2\\) each have area 4 square units.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M45 150H445M100 265V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 50 C135 52 165 70 200 150 C230 215 250 240 300 240 H400\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 50 C135 52 165 70 200 150 L100 150Z\" fill=\"#bbf7d0\" opacity=\".6\"/><path d=\"M200 150 C230 215 250 240 300 240 L300 150Z\" fill=\"#fecaca\" opacity=\".68\"/><path d=\"M100 50V150M200 150V150M300 240V150\" stroke=\"#64748b\" stroke-dasharray=\"4 4\"/><text x=\"112\" y=\"100\" font-family=\"Arial\" font-size=\"13\">A<tspan baseline-shift=\"sub\" font-size=\"9\">1</tspan>=4</text><text x=\"230\" y=\"205\" font-family=\"Arial\" font-size=\"13\">A<tspan baseline-shift=\"sub\" font-size=\"9\">2</tspan>=4</text><text x=\"104\" y=\"43\" font-family=\"Arial\" font-size=\"13\">3</text><text x=\"104\" y=\"171\" font-family=\"Arial\" font-size=\"13\">0</text><text x=\"104\" y=\"257\" font-family=\"Arial\" font-size=\"13\">−3</text><text x=\"193\" y=\"172\" font-family=\"Arial\" font-size=\"12\">2</text><text x=\"292\" y=\"172\" font-family=\"Arial\" font-size=\"12\">4</text><text x=\"397\" y=\"172\" font-family=\"Arial\" font-size=\"12\">6</text><text x=\"450\" y=\"155\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"104\" y=\"31\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"128\" y=\"40\" font-family=\"Arial\" font-size=\"13\">f′(x)</text></svg>"
+          },
+          "hint": "The sign of f′ tells whether f rises or falls. The signed area under f′ from 0 to x gives the change in f(x); area below the axis counts negatively.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p201-q53-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "For which values of \\(x\\) is \\(f(x)\\) increasing?",
+              "options": [
+                "\\(0\\le x<2\\)",
+                "\\(2<x\\le6\\)",
+                "\\(0<x<6\\)",
+                "\\(4<x\\le6\\)"
+              ],
+              "answer": 0,
+              "hint": "A function increases where its derivative is positive. Read the interval where the f′ graph lies above the x-axis.",
+              "steps": [
+                {
+                  "explain": "From the graph, f′(x) is above the horizontal axis from x=0 until it crosses at x=2.",
+                  "work": "\\(f'(x)>0\\quad\\text{for }0\\le x<2\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M45 150H445M100 265V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 50 C135 52 165 70 200 150 C230 215 250 240 300 240 H400\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 50 C135 52 165 70 200 150 L200 150Z\" fill=\"#bbf7d0\" opacity=\".6\"/><path d=\"M200 150 C230 215 250 240 300 240 L200 150Z\" fill=\"#fecaca\" opacity=\".68\"/><path d=\"M100 50V150M200 150V150M300 240V150\" stroke=\"#64748b\" stroke-dasharray=\"4 4\"/><text x=\"112\" y=\"100\" font-family=\"Arial\" font-size=\"13\">A₁=4</text><text x=\"230\" y=\"205\" font-family=\"Arial\" font-size=\"13\">A₂=4</text><text x=\"104\" y=\"43\" font-family=\"Arial\" font-size=\"13\">3</text><text x=\"104\" y=\"171\" font-family=\"Arial\" font-size=\"13\">0</text><text x=\"104\" y=\"257\" font-family=\"Arial\" font-size=\"13\">−3</text><text x=\"193\" y=\"172\" font-family=\"Arial\" font-size=\"12\">2</text><text x=\"292\" y=\"172\" font-family=\"Arial\" font-size=\"12\">4</text><text x=\"397\" y=\"172\" font-family=\"Arial\" font-size=\"12\">6</text><text x=\"450\" y=\"155\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"104\" y=\"31\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"128\" y=\"40\" font-family=\"Arial\" font-size=\"13\">f′(x)</text></svg>"
+                  }
+                },
+                {
+                  "explain": "After x=2, f′ is negative, so f decreases. Therefore the increasing interval is up to but not including x=2.",
+                  "work": "\\(\\boxed{0\\le x<2}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "201-202",
+                "course": "Advanced",
+                "sourceQuestion": "Q53(i)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p201-q53-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What is the maximum value of \\(f(x)\\)?",
+              "options": [
+                "\\(4\\)",
+                "\\(8\\)",
+                "\\(0\\)",
+                "\\(-4\\)"
+              ],
+              "answer": 0,
+              "hint": "The derivative changes from positive to negative at x=2, so f has its maximum there. Use the area A1 to calculate f(2).",
+              "steps": [
+                {
+                  "explain": "The graph of f′ changes sign from positive to negative at x=2, so f rises until x=2 and falls after it. The maximum occurs at x=2.",
+                  "work": "\\(x_{max}=2\\)"
+                },
+                {
+                  "explain": "Since f(0)=0, the change in f from 0 to 2 is the signed area under f′. Region A1 is above the axis and has area 4.",
+                  "work": "\\(f(2)=f(0)+\\int_0^2f'(x)dx=0+A_1=4\\)"
+                },
+                {
+                  "explain": "Thus the maximum value is 4.",
+                  "work": "\\(\\boxed{4}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M45 150H445M100 265V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 50 C135 52 165 70 200 150 C230 215 250 240 300 240 H400\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 50 C135 52 165 70 200 150 L200 150Z\" fill=\"#bbf7d0\" opacity=\".6\"/><path d=\"M200 150 C230 215 250 240 300 240 L200 150Z\" fill=\"#fecaca\" opacity=\".68\"/><path d=\"M100 50V150M200 150V150M300 240V150\" stroke=\"#64748b\" stroke-dasharray=\"4 4\"/><text x=\"112\" y=\"100\" font-family=\"Arial\" font-size=\"13\">A₁=4</text><text x=\"230\" y=\"205\" font-family=\"Arial\" font-size=\"13\">A₂=4</text><text x=\"104\" y=\"43\" font-family=\"Arial\" font-size=\"13\">3</text><text x=\"104\" y=\"171\" font-family=\"Arial\" font-size=\"13\">0</text><text x=\"104\" y=\"257\" font-family=\"Arial\" font-size=\"13\">−3</text><text x=\"193\" y=\"172\" font-family=\"Arial\" font-size=\"12\">2</text><text x=\"292\" y=\"172\" font-family=\"Arial\" font-size=\"12\">4</text><text x=\"397\" y=\"172\" font-family=\"Arial\" font-size=\"12\">6</text><text x=\"450\" y=\"155\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"104\" y=\"31\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"128\" y=\"40\" font-family=\"Arial\" font-size=\"13\">f′(x)</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "201-202",
+                "course": "Advanced",
+                "sourceQuestion": "Q53(ii)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p201-q53-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the value of \\(f(6)\\).",
+              "options": [
+                "\\(-6\\)",
+                "\\(-2\\)",
+                "\\(0\\)",
+                "\\(6\\)"
+              ],
+              "answer": 0,
+              "hint": "Start from f(0)=0 and add signed areas under f′ from 0 to 6. Area A2 is below the axis, so subtract 4; the final rectangle has height −3 and width 2.",
+              "steps": [
+                {
+                  "explain": "From 0 to 2, A1 contributes +4. From 2 to 4, A2 lies below the axis and contributes −4.",
+                  "work": "\\(f(4)=0+4-4=0\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M45 150H445M100 265V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 50 C135 52 165 70 200 150 C230 215 250 240 300 240 H400\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 50 C135 52 165 70 200 150 L200 150Z\" fill=\"#bbf7d0\" opacity=\".6\"/><path d=\"M200 150 C230 215 250 240 300 240 L200 150Z\" fill=\"#fecaca\" opacity=\".68\"/><path d=\"M100 50V150M200 150V150M300 240V150\" stroke=\"#64748b\" stroke-dasharray=\"4 4\"/><text x=\"112\" y=\"100\" font-family=\"Arial\" font-size=\"13\">A₁=4</text><text x=\"230\" y=\"205\" font-family=\"Arial\" font-size=\"13\">A₂=4</text><text x=\"104\" y=\"43\" font-family=\"Arial\" font-size=\"13\">3</text><text x=\"104\" y=\"171\" font-family=\"Arial\" font-size=\"13\">0</text><text x=\"104\" y=\"257\" font-family=\"Arial\" font-size=\"13\">−3</text><text x=\"193\" y=\"172\" font-family=\"Arial\" font-size=\"12\">2</text><text x=\"292\" y=\"172\" font-family=\"Arial\" font-size=\"12\">4</text><text x=\"397\" y=\"172\" font-family=\"Arial\" font-size=\"12\">6</text><text x=\"450\" y=\"155\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"104\" y=\"31\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"128\" y=\"40\" font-family=\"Arial\" font-size=\"13\">f′(x)</text></svg>"
+                  }
+                },
+                {
+                  "explain": "From x=4 to x=6, the derivative is constant at −3. Its signed area is a rectangle of width 2 and height −3.",
+                  "work": "\\(\\int_4^6 f'(x)dx=2(-3)=-6\\)"
+                },
+                {
+                  "explain": "Add the last change to f(4).",
+                  "work": "\\(f(6)=0-6=\\boxed{-6}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "201-202",
+                "course": "Advanced",
+                "sourceQuestion": "Q53(iii)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p201-q53-iv",
+              "type": "review",
+              "manual": true,
+              "difficulty": "hard",
+              "stem": "Draw a sketch of \\(y=f(x)\\) for \\(0\\le x\\le6\\).",
+              "answer": "A graph through (0,0), rising to a maximum at (2,4), then decreasing through (4,0) to (6,−6). It is concave down while f′ is decreasing on 0<x<4, and linear with slope −3 on 4≤x≤6.",
+              "hint": "Use f(0)=0, the maximum f(2)=4, f(4)=0 and f(6)=−6. The slope of f is f′: positive before 2 and negative after 2.",
+              "steps": [
+                {
+                  "explain": "Plot the starting point and maximum. Because f′ is positive until x=2 and then negative, f rises to (2,4) and falls afterward.",
+                  "work": "\\(f(0)=0,\\qquad f(2)=4\\)"
+                },
+                {
+                  "explain": "Use the signed derivative areas: A2 removes 4 units from f(2), so f(4)=0. The final constant derivative −3 over two units lowers f by 6.",
+                  "work": "\\(f(4)=4-4=0,\\qquad f(6)=0+2(-3)=-6\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M45 150H445M100 265V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 50 C135 52 165 70 200 150 C230 215 250 240 300 240 H400\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 50 C135 52 165 70 200 150 L200 150Z\" fill=\"#bbf7d0\" opacity=\".6\"/><path d=\"M200 150 C230 215 250 240 300 240 L200 150Z\" fill=\"#fecaca\" opacity=\".68\"/><path d=\"M100 50V150M200 150V150M300 240V150\" stroke=\"#64748b\" stroke-dasharray=\"4 4\"/><text x=\"112\" y=\"100\" font-family=\"Arial\" font-size=\"13\">A₁=4</text><text x=\"230\" y=\"205\" font-family=\"Arial\" font-size=\"13\">A₂=4</text><text x=\"104\" y=\"43\" font-family=\"Arial\" font-size=\"13\">3</text><text x=\"104\" y=\"171\" font-family=\"Arial\" font-size=\"13\">0</text><text x=\"104\" y=\"257\" font-family=\"Arial\" font-size=\"13\">−3</text><text x=\"193\" y=\"172\" font-family=\"Arial\" font-size=\"12\">2</text><text x=\"292\" y=\"172\" font-family=\"Arial\" font-size=\"12\">4</text><text x=\"397\" y=\"172\" font-family=\"Arial\" font-size=\"12\">6</text><text x=\"450\" y=\"155\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"104\" y=\"31\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"128\" y=\"40\" font-family=\"Arial\" font-size=\"13\">f′(x)</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Join these points with a smooth curve whose gradient equals the displayed f′ graph. It has a horizontal tangent at x=2 and a straight final segment of gradient −3.",
+                  "work": "\\((0,0),\\;(2,4),\\;(4,0),\\;(6,-6)\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "201-202",
+                "course": "Advanced",
+                "sourceQuestion": "Q53(iv)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "201-202",
+            "course": "Advanced",
+            "sourceQuestion": "Q53"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p203-q58",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In the diagram, the shaded region is bounded by \\(y=\\log_e(x-2)\\), the x-axis and the line \\(x=7\\). Find the exact value of the area of the shaded region.",
+          "options": [
+            "\\(5\\ln5-4\\)",
+            "\\(5\\ln5-5\\)",
+            "\\(7\\ln5-4\\)",
+            "\\(5\\ln7-4\\)"
+          ],
+          "answer": 0,
+          "hint": "The curve meets the x-axis where ln(x−2)=0, at x=3. Integrate ln(x−2) from 3 to 7.",
+          "steps": [
+            {
+              "explain": "Find the left boundary where the curve crosses the x-axis.",
+              "work": "\\(\\ln(x-2)=0\\Rightarrow x-2=1\\Rightarrow x=3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 290\"><rect width=\"480\" height=\"290\" fill=\"white\"/><path d=\"M45 230H445M100 255V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M190 230 C225 180 265 120 315 88 C350 65 385 55 410 52 L410 230H190Z\" fill=\"#bfdbfe\" opacity=\".55\"/><path d=\"M110 250 C140 230 165 210 190 190 C220 150 250 120 285 98 C330 73 370 59 410 52\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M190 230V190M410 230V52\" stroke=\"#64748b\" stroke-dasharray=\"5 4\"/><text x=\"184\" y=\"251\" font-family=\"Arial\" font-size=\"13\">3</text><text x=\"405\" y=\"251\" font-family=\"Arial\" font-size=\"13\">7</text><text x=\"330\" y=\"80\" font-family=\"Arial\" font-size=\"13\">y=ln(x−2)</text><text x=\"448\" y=\"235\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"104\" y=\"27\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
+              }
+            },
+            {
+              "explain": "Integrate ln(x−2) by parts, or use the standard antiderivative u ln u−u with u=x−2.",
+              "work": "\\(\\int\\ln(x-2)dx=(x-2)\\ln(x-2)-(x-2)+C\\)"
+            },
+            {
+              "explain": "Evaluate from x=3 to x=7.",
+              "work": "\\(A=[u\\ln u-u]_1^5=(5\\ln5-5)-(0-1)=\\boxed{5\\ln5-4}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "203",
+            "course": "Advanced",
+            "sourceQuestion": "Q58"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 290\"><rect width=\"480\" height=\"290\" fill=\"white\"/><path d=\"M45 230H445M100 255V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M190 230 C225 180 265 120 315 88 C350 65 385 55 410 52 L410 230H190Z\" fill=\"#bfdbfe\" opacity=\".55\"/><path d=\"M110 250 C140 230 165 210 190 190 C220 150 250 120 285 98 C330 73 370 59 410 52\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M190 230V190M410 230V52\" stroke=\"#64748b\" stroke-dasharray=\"5 4\"/><text x=\"184\" y=\"251\" font-family=\"Arial\" font-size=\"13\">3</text><text x=\"405\" y=\"251\" font-family=\"Arial\" font-size=\"13\">7</text><text x=\"330\" y=\"80\" font-family=\"Arial\" font-size=\"13\">y=ln(x−2)</text><text x=\"448\" y=\"235\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"104\" y=\"27\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p203-q60",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The diagram shows the graphs of \\(y=\\sqrt3\\cos x\\) and \\(y=\\sin x\\). The first two points of intersection to the right of the y-axis are labelled \\(A\\) and \\(B\\).",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 500 300\"><rect width=\"500\" height=\"300\" fill=\"white\"/><path d=\"M45 155H460M110 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M180 95 C220 140 260 175 315 205 C350 220 385 230 410 232 L410 65 C350 80 260 110 180 95Z\" fill=\"#fde68a\" opacity=\".45\"/><path d=\"M60 130 C95 105 135 80 180 95 C225 112 270 155 315 205 C355 240 390 250 425 235\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M60 185 C95 160 135 110 180 95 C225 80 270 85 315 105 C355 120 390 140 425 155\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"180\" cy=\"95\" r=\"4\" fill=\"#334155\"/><circle cx=\"315\" cy=\"105\" r=\"4\" fill=\"#334155\"/><text x=\"181\" y=\"86\" font-family=\"Arial\" font-size=\"13\">A</text><text x=\"318\" y=\"101\" font-family=\"Arial\" font-size=\"13\">B</text><text x=\"370\" y=\"225\" font-family=\"Arial\" font-size=\"13\">shaded</text><text x=\"464\" y=\"160\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"114\" y=\"27\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"110\" y=\"290\" font-family=\"Arial\" font-size=\"12\">π/3</text><text x=\"313\" y=\"290\" font-family=\"Arial\" font-size=\"12\">4π/3</text></svg>"
+          },
+          "hint": "Equate the functions to find where they intersect. Between the first two positive intersections, identify which curve lies above the other before integrating.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p203-q60-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Solve the equation \\(\\sqrt3\\cos x=\\sin x\\) to find the x-coordinates of A and B.",
+              "options": [
+                "\\(\\frac\\pi3,\\;\\frac{4\\pi}3\\)",
+                "\\(\\frac\\pi6,\\;\\frac{7\\pi}6\\)",
+                "\\(\\frac\\pi3,\\;\\frac{2\\pi}3\\)",
+                "\\(\\frac{2\\pi}3,\\;\\frac{5\\pi}3\\)"
+              ],
+              "answer": 0,
+              "hint": "Divide by cos x to obtain tan x=√3. The solutions repeat every π; choose the first two to the right of zero.",
+              "steps": [
+                {
+                  "explain": "Set the two function values equal at an intersection.",
+                  "work": "\\(\\sqrt3\\cos x=\\sin x\\Rightarrow\\tan x=\\sqrt3\\)"
+                },
+                {
+                  "explain": "The reference angle is π/3 and tangent has period π. The first two positive solutions are π/3 and π/3+π.",
+                  "work": "\\(x_A=\\frac\\pi3,\\qquad x_B=\\frac{4\\pi}3\\)"
+                },
+                {
+                  "explain": "These are the x-coordinates labelled A and B.",
+                  "work": "\\(\\boxed{\\frac\\pi3,\\;\\frac{4\\pi}3}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "203",
+                "course": "Advanced",
+                "sourceQuestion": "Q60(i)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p203-q60-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the area of the shaded region in the diagram.",
+              "options": [
+                "\\(4\\)",
+                "\\(2\\sqrt3\\)",
+                "\\(2\\)",
+                "\\(2+\\sqrt3\\)"
+              ],
+              "answer": 0,
+              "hint": "From A to B, sin x is above √3 cos x. Integrate the difference between x=π/3 and 4π/3.",
+              "steps": [
+                {
+                  "explain": "Use the intersection values as limits. The vertical height is upper curve minus lower curve.",
+                  "work": "\\(A=\\int_{\\pi/3}^{4\\pi/3}(\\sin x-\\sqrt3\\cos x)dx\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 500 300\"><rect width=\"500\" height=\"300\" fill=\"white\"/><path d=\"M45 155H460M110 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M180 95 C220 140 260 175 315 205 C350 220 385 230 410 232 L410 65 C350 80 260 110 180 95Z\" fill=\"#fde68a\" opacity=\".45\"/><path d=\"M60 130 C95 105 135 80 180 95 C225 112 270 155 315 205 C355 240 390 250 425 235\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M60 185 C95 160 135 110 180 95 C225 80 270 85 315 105 C355 120 390 140 425 155\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"180\" cy=\"95\" r=\"4\" fill=\"#334155\"/><circle cx=\"315\" cy=\"105\" r=\"4\" fill=\"#334155\"/><text x=\"181\" y=\"86\" font-family=\"Arial\" font-size=\"13\">A</text><text x=\"318\" y=\"101\" font-family=\"Arial\" font-size=\"13\">B</text><text x=\"370\" y=\"225\" font-family=\"Arial\" font-size=\"13\">shaded</text><text x=\"464\" y=\"160\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"114\" y=\"27\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"110\" y=\"290\" font-family=\"Arial\" font-size=\"12\">π/3</text><text x=\"313\" y=\"290\" font-family=\"Arial\" font-size=\"12\">4π/3</text></svg>"
+                  }
+                },
+                {
+                  "explain": "An antiderivative is −cos x−√3 sin x.",
+                  "work": "\\(A=[-\\cos x-\\sqrt3\\sin x]_{\\pi/3}^{4\\pi/3}\\)"
+                },
+                {
+                  "explain": "At 4π/3 the antiderivative is 2; at π/3 it is −2. Subtract to get the area.",
+                  "work": "\\(A=2-(-2)=\\boxed4\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "203",
+                "course": "Advanced",
+                "sourceQuestion": "Q60(ii)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "203",
+            "course": "Advanced",
+            "sourceQuestion": "Q60"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p203-q63",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A function \\(f(x)\\) is defined by \\(f(x)=1+2\\cos x\\).",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 500 300\"><rect width=\"500\" height=\"300\" fill=\"white\"/><path d=\"M45 155H465M250 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M80 70 C120 100 170 132 220 155 C250 166 285 166 315 155 C365 132 415 100 450 70\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><circle cx=\"135\" cy=\"155\" r=\"4\" fill=\"#334155\"/><circle cx=\"365\" cy=\"155\" r=\"4\" fill=\"#334155\"/><text x=\"125\" y=\"177\" font-family=\"Arial\" font-size=\"12\">−2π/3</text><text x=\"352\" y=\"177\" font-family=\"Arial\" font-size=\"12\">2π/3</text><text x=\"260\" y=\"76\" font-family=\"Arial\" font-size=\"13\">f(x)=1+2 cos x</text><text x=\"470\" y=\"160\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"254\" y=\"27\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
+          },
+          "hint": "Solve 1+2cos x=0 to locate the x-intercepts. The area is the integral of f(x) over the stated interval, where the curve stays above the x-axis.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p203-q63-i",
+              "type": "review",
+              "manual": true,
+              "difficulty": "medium",
+              "stem": "Show that the graph of \\(y=f(x)\\) cuts the x-axis at \\(x=\\frac{2\\pi}{3}\\).",
+              "answer": "In the stated interval the positive intercept is x=2π/3; the other intercept is −2π/3.",
+              "hint": "At an x-intercept, set 1+2cos x equal to zero.",
+              "steps": [
+                {
+                  "explain": "At the x-axis y=0, so solve 1+2cos x=0.",
+                  "work": "\\(1+2\\cos x=0\\Rightarrow\\cos x=-\\frac12\\)"
+                },
+                {
+                  "explain": "Cosine equals −1/2 at angles with reference angle π/3 in quadrants II and III.",
+                  "work": "\\(x=\\frac{2\\pi}{3}\\quad\\text{or}\\quad x=\\frac{4\\pi}{3}\\)"
+                },
+                {
+                  "explain": "On the displayed interval −π≤x≤π, the corresponding intercepts are ±2π/3.",
+                  "work": "\\(\\boxed{x=\\pm\\frac{2\\pi}{3}}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 500 300\"><rect width=\"500\" height=\"300\" fill=\"white\"/><path d=\"M45 155H465M250 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M80 70 C120 100 170 132 220 155 C250 166 285 166 315 155 C365 132 415 100 450 70\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><circle cx=\"135\" cy=\"155\" r=\"4\" fill=\"#334155\"/><circle cx=\"365\" cy=\"155\" r=\"4\" fill=\"#334155\"/><text x=\"125\" y=\"177\" font-family=\"Arial\" font-size=\"12\">−2π/3</text><text x=\"352\" y=\"177\" font-family=\"Arial\" font-size=\"12\">2π/3</text><text x=\"260\" y=\"76\" font-family=\"Arial\" font-size=\"13\">f(x)=1+2 cos x</text><text x=\"470\" y=\"160\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"254\" y=\"27\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "203",
+                "course": "Advanced",
+                "sourceQuestion": "Q63(i)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p203-q63-ii",
+              "type": "review",
+              "manual": true,
+              "difficulty": "medium",
+              "stem": "Sketch the graph of \\(y=f(x)\\) for \\(-\\pi\\le x\\le\\pi\\), showing where the graph cuts each of the axes.",
+              "answer": "A cosine curve with maximum (0,3), x-intercepts (−2π/3,0) and (2π/3,0), and endpoints (−π,−1) and (π,−1).",
+              "hint": "Use the intercepts from part i, the y-intercept f(0)=3, and the endpoint values f(±π)=−1.",
+              "steps": [
+                {
+                  "explain": "Mark the x-intercepts at ±2π/3 and the y-intercept at x=0.",
+                  "work": "\\(f(\\pm\\frac{2\\pi}{3})=0,\\qquad f(0)=3\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 500 300\"><rect width=\"500\" height=\"300\" fill=\"white\"/><path d=\"M45 155H465M250 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M80 70 C120 100 170 132 220 155 C250 166 285 166 315 155 C365 132 415 100 450 70\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><circle cx=\"135\" cy=\"155\" r=\"4\" fill=\"#334155\"/><circle cx=\"365\" cy=\"155\" r=\"4\" fill=\"#334155\"/><text x=\"125\" y=\"177\" font-family=\"Arial\" font-size=\"12\">−2π/3</text><text x=\"352\" y=\"177\" font-family=\"Arial\" font-size=\"12\">2π/3</text><text x=\"260\" y=\"76\" font-family=\"Arial\" font-size=\"13\">f(x)=1+2 cos x</text><text x=\"470\" y=\"160\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"254\" y=\"27\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
+                  }
+                },
+                {
+                  "explain": "At both endpoints x=±π, cos x=−1, so f=−1. Draw a smooth symmetric cosine curve through these key points.",
+                  "work": "\\(f(-\\pi)=f(\\pi)=1+2(-1)=-1\\)"
+                },
+                {
+                  "explain": "Label the interval −π≤x≤π and both axes intercepts.",
+                  "work": "\\((-\\frac{2\\pi}{3},0),\\;(0,3),\\;(\\frac{2\\pi}{3},0)\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "203",
+                "course": "Advanced",
+                "sourceQuestion": "Q63(ii)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p203-q63-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the area under the curve \\(y=f(x)\\) between \\(x=-\\frac\\pi2\\) and \\(x=\\frac{2\\pi}{3}\\).",
+              "options": [
+                "\\(2+\\sqrt3+\\frac{7\\pi}{6}\\)",
+                "\\(2+\\sqrt3+\\frac{\\pi}{6}\\)",
+                "\\(\\sqrt3+\\frac{7\\pi}{6}\\)",
+                "\\(2-\\sqrt3+\\frac{7\\pi}{6}\\)"
+              ],
+              "answer": 0,
+              "hint": "On the given interval the curve is above the x-axis. Integrate 1+2cos x using x+2sin x.",
+              "steps": [
+                {
+                  "explain": "Set up the area integral on the requested interval.",
+                  "work": "\\(A=\\int_{-\\pi/2}^{2\\pi/3}(1+2\\cos x)dx\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 500 300\"><rect width=\"500\" height=\"300\" fill=\"white\"/><path d=\"M45 155H465M250 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M80 70 C120 100 170 132 220 155 C250 166 285 166 315 155 C365 132 415 100 450 70\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><circle cx=\"135\" cy=\"155\" r=\"4\" fill=\"#334155\"/><circle cx=\"365\" cy=\"155\" r=\"4\" fill=\"#334155\"/><text x=\"125\" y=\"177\" font-family=\"Arial\" font-size=\"12\">−2π/3</text><text x=\"352\" y=\"177\" font-family=\"Arial\" font-size=\"12\">2π/3</text><text x=\"260\" y=\"76\" font-family=\"Arial\" font-size=\"13\">f(x)=1+2 cos x</text><text x=\"470\" y=\"160\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"254\" y=\"27\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
+                  }
+                },
+                {
+                  "explain": "An antiderivative is x+2sin x.",
+                  "work": "\\(A=[x+2\\sin x]_{-\\pi/2}^{2\\pi/3}\\)"
+                },
+                {
+                  "explain": "Evaluate the sine values and subtract the lower endpoint.",
+                  "work": "\\(A=\\frac{2\\pi}{3}+\\sqrt3-(-\\frac\\pi2-2)=\\boxed{2+\\sqrt3+\\frac{7\\pi}{6}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "203",
+                "course": "Advanced",
+                "sourceQuestion": "Q63(iii)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "203",
+            "course": "Advanced",
+            "sourceQuestion": "Q63"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p203-q65",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The graph shows the velocity, \\(\\frac{dx}{dt}\\), of a particle as a function of time. Initially the particle is at the origin.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 500 300\"><rect width=\"500\" height=\"300\" fill=\"white\"/><path d=\"M50 150H465M100 265V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 70H160 C190 70 205 95 220 150 C235 205 250 230 280 230 H395 C420 230 430 185 445 150\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><circle cx=\"160\" cy=\"70\" r=\"4\" fill=\"#334155\"/><circle cx=\"280\" cy=\"230\" r=\"4\" fill=\"#334155\"/><circle cx=\"395\" cy=\"230\" r=\"4\" fill=\"#334155\"/><text x=\"150\" y=\"58\" font-family=\"Arial\" font-size=\"12\">(1,2)</text><text x=\"267\" y=\"252\" font-family=\"Arial\" font-size=\"12\">(3,−2)</text><text x=\"383\" y=\"252\" font-family=\"Arial\" font-size=\"12\">(5,−2)</text><text x=\"439\" y=\"171\" font-family=\"Arial\" font-size=\"12\">(6,0)</text><text x=\"470\" y=\"155\" font-family=\"Arial\" font-size=\"14\">t</text><text x=\"104\" y=\"32\" font-family=\"Arial\" font-size=\"14\">v=dx/dt</text></svg>"
+          },
+          "hint": "Velocity is the slope of displacement. The displacement is greatest when velocity changes from positive to negative. To return to the origin, the signed area under the velocity graph must return to zero.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p203-q65-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "At what time is the displacement \\(x\\) from the origin a maximum?",
+              "options": [
+                "\\(2\\text{ s}\\)",
+                "\\(1\\text{ s}\\)",
+                "\\(3\\text{ s}\\)",
+                "\\(4\\text{ s}\\)"
+              ],
+              "answer": 0,
+              "hint": "Displacement increases while velocity is positive and decreases when velocity is negative. Find when the graph crosses v=0 from above.",
+              "steps": [
+                {
+                  "explain": "The velocity is positive before t=2 and negative after t=2, where the graph crosses the time axis.",
+                  "work": "\\(v>0\\;(t<2),\\qquad v<0\\;(t>2)\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 500 300\"><rect width=\"500\" height=\"300\" fill=\"white\"/><path d=\"M50 150H465M100 265V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 70H160 C190 70 205 95 220 150 C235 205 250 230 280 230 H395 C420 230 430 185 445 150\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><circle cx=\"160\" cy=\"70\" r=\"4\" fill=\"#334155\"/><circle cx=\"280\" cy=\"230\" r=\"4\" fill=\"#334155\"/><circle cx=\"395\" cy=\"230\" r=\"4\" fill=\"#334155\"/><text x=\"150\" y=\"58\" font-family=\"Arial\" font-size=\"12\">(1,2)</text><text x=\"267\" y=\"252\" font-family=\"Arial\" font-size=\"12\">(3,−2)</text><text x=\"383\" y=\"252\" font-family=\"Arial\" font-size=\"12\">(5,−2)</text><text x=\"439\" y=\"171\" font-family=\"Arial\" font-size=\"12\">(6,0)</text><text x=\"470\" y=\"155\" font-family=\"Arial\" font-size=\"14\">t</text><text x=\"104\" y=\"32\" font-family=\"Arial\" font-size=\"14\">v=dx/dt</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Thus the displacement stops increasing and starts decreasing at t=2 seconds.",
+                  "work": "\\(\\boxed{t=2\\text{ s}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "203",
+                "course": "Advanced",
+                "sourceQuestion": "Q65(i)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p203-q65-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "At what time does the particle return to the origin? Justify your answer.",
+              "options": [
+                "\\(4\\text{ s}\\)",
+                "\\(3\\text{ s}\\)",
+                "\\(5\\text{ s}\\)",
+                "\\(6\\text{ s}\\)"
+              ],
+              "answer": 0,
+              "hint": "The particle returns when the net signed area under v from t=0 is zero. Add the positive areas and the negative areas up to t=4.",
+              "steps": [
+                {
+                  "explain": "From 0 to 1, velocity is 2, giving a positive rectangle of area 2. From 1 to 2 the triangle has area +1; from 2 to 3 the triangle has area −1.",
+                  "work": "\\(\\Delta x_{0\to3}=2+1-1=2\\)"
+                },
+                {
+                  "explain": "From 3 to 4, velocity is −2, so the displacement changes by −2. The total signed area from 0 to 4 is zero.",
+                  "work": "\\(\\Delta x_{0\to4}=2+(4-3)(-2)=0\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 500 300\"><rect width=\"500\" height=\"300\" fill=\"white\"/><path d=\"M50 150H465M100 265V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 70H160 C190 70 205 95 220 150 C235 205 250 230 280 230 H395 C420 230 430 185 445 150\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><circle cx=\"160\" cy=\"70\" r=\"4\" fill=\"#334155\"/><circle cx=\"280\" cy=\"230\" r=\"4\" fill=\"#334155\"/><circle cx=\"395\" cy=\"230\" r=\"4\" fill=\"#334155\"/><text x=\"150\" y=\"58\" font-family=\"Arial\" font-size=\"12\">(1,2)</text><text x=\"267\" y=\"252\" font-family=\"Arial\" font-size=\"12\">(3,−2)</text><text x=\"383\" y=\"252\" font-family=\"Arial\" font-size=\"12\">(5,−2)</text><text x=\"439\" y=\"171\" font-family=\"Arial\" font-size=\"12\">(6,0)</text><text x=\"470\" y=\"155\" font-family=\"Arial\" font-size=\"14\">t</text><text x=\"104\" y=\"32\" font-family=\"Arial\" font-size=\"14\">v=dx/dt</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Since the particle starts at x=0, zero net displacement means it is back at the origin.",
+                  "work": "\\(\\boxed{t=4\\text{ s}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "203",
+                "course": "Advanced",
+                "sourceQuestion": "Q65(ii)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p203-q65-iii",
+              "type": "review",
+              "manual": true,
+              "difficulty": "hard",
+              "stem": "Draw a sketch of the acceleration, \\(\\frac{d^2x}{dt^2}\\), as a function of time for \\(0\\le t\\le6\\).",
+              "answer": "A qualitative sketch: a=0 on 0<t<1, a<0 while velocity decreases on 1<t<3, a=0 on 3<t<5, and a>0 while velocity increases on 5<t<6.",
+              "hint": "Acceleration is the gradient of the velocity-time graph. Horizontal parts have zero acceleration; a decreasing velocity gives negative acceleration and an increasing velocity gives positive acceleration.",
+              "steps": [
+                {
+                  "explain": "Read the gradient of the velocity graph on each time interval. It is horizontal on 0–1 and 3–5, decreases on 1–3 and increases on 5–6.",
+                  "work": "\\(a=0\\;(0<t<1),\\quad a<0\\;(1<t<3),\\quad a=0\\;(3<t<5),\\quad a>0\\;(5<t<6)\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 500 300\"><rect width=\"500\" height=\"300\" fill=\"white\"/><path d=\"M50 150H465M100 265V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 70H160 C190 70 205 95 220 150 C235 205 250 230 280 230 H395 C420 230 430 185 445 150\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><circle cx=\"160\" cy=\"70\" r=\"4\" fill=\"#334155\"/><circle cx=\"280\" cy=\"230\" r=\"4\" fill=\"#334155\"/><circle cx=\"395\" cy=\"230\" r=\"4\" fill=\"#334155\"/><text x=\"150\" y=\"58\" font-family=\"Arial\" font-size=\"12\">(1,2)</text><text x=\"267\" y=\"252\" font-family=\"Arial\" font-size=\"12\">(3,−2)</text><text x=\"383\" y=\"252\" font-family=\"Arial\" font-size=\"12\">(5,−2)</text><text x=\"439\" y=\"171\" font-family=\"Arial\" font-size=\"12\">(6,0)</text><text x=\"470\" y=\"155\" font-family=\"Arial\" font-size=\"14\">t</text><text x=\"104\" y=\"32\" font-family=\"Arial\" font-size=\"14\">v=dx/dt</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Sketch the acceleration sign pattern: zero, negative, zero, positive. If the velocity sections are treated as straight lines, use their slopes −2 and +2 on the two changing intervals.",
+                  "work": "\\(a(t)=0,\\;-2,\\;0,\\;+2\\quad\\text{on the four consecutive intervals}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "203",
+                "course": "Advanced",
+                "sourceQuestion": "Q65(iii)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "203",
+            "course": "Advanced",
+            "sourceQuestion": "Q65"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p203-q66",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The shaded region in the diagram is bounded by the circle of radius 2 centred at the origin, the parabola \\(y=x^2-3x+2\\), and the \\(x\\)-axis. By considering the difference of two areas, find the area of the shaded region.",
+          "options": [
+            "\\(\\pi-\\frac{2}{3}\\)",
+            "\\(\\pi-2\\)",
+            "\\(2\\pi-\\frac{2}{3}\\)",
+            "\\(\\frac{2\\pi}{3}\\)"
+          ],
+          "answer": 0,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 300\"><rect width=\"420\" height=\"300\" fill=\"white\"/><path d=\"M48 150H385M210 272V28\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M210 50 A100 100 0 0 1 310 150 Q260 168 210 50Z\" fill=\"#bfdbfe\" opacity=\".6\"/><circle cx=\"210\" cy=\"150\" r=\"100\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\"/><path d=\"M210 50 Q260 168 310 150\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M210 150V155M310 150V155\" stroke=\"#64748b\" stroke-dasharray=\"4 4\"/><circle cx=\"210\" cy=\"50\" r=\"3\" fill=\"#334155\"/><circle cx=\"310\" cy=\"150\" r=\"3\" fill=\"#334155\"/><text x=\"215\" y=\"44\" font-family=\"Arial\" font-size=\"13\">(0,2)</text><text x=\"313\" y=\"169\" font-family=\"Arial\" font-size=\"13\">(2,0)</text><text x=\"193\" y=\"69\" font-family=\"Arial\" font-size=\"13\">A</text><text x=\"280\" y=\"116\" font-family=\"Arial\" font-size=\"13\">shaded</text><text x=\"389\" y=\"155\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"214\" y=\"25\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"256\" y=\"171\" font-family=\"Arial\" font-size=\"12\">1</text></svg>"
+          },
+          "hint": "Use the first-quadrant quarter-circle area, then subtract the area under the parabola between its x-intercepts. Find where the circle and parabola meet to confirm the shaded interval.",
+          "steps": [
+            {
+              "explain": "The circle is centred at the origin with radius 2, so its upper boundary is (y=sqrt{4-x^2}). The parabola meets the x-axis where (x^2-3x+2=(x-1)(x-2)=0), at x=1 and x=2. From the diagram, the shaded section runs from the common point A=(0,2) to (2,0).",
+              "work": "\\(x^2-3x+2=0\\Rightarrow x=1,2;\\quad (0,2)\\text{ and }(2,0)\\text{ are the endpoints of the shaded region}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 300\"><rect width=\"420\" height=\"300\" fill=\"white\"/><path d=\"M48 150H385M210 272V28\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M210 50 A100 100 0 0 1 310 150 C282 162 252 180 210 150Z\" fill=\"#bfdbfe\" opacity=\".6\"/><path d=\"M110 150 A100 100 0 1 1 310 150\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\"/><path d=\"M110 150 Q162 99 210 150 Q260 207 310 150\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M110 150V155M310 150V155\" stroke=\"#64748b\" stroke-dasharray=\"4 4\"/><circle cx=\"210\" cy=\"50\" r=\"3\" fill=\"#334155\"/><circle cx=\"310\" cy=\"150\" r=\"3\" fill=\"#334155\"/><text x=\"216\" y=\"47\" font-family=\"Arial\" font-size=\"13\">(0,2)</text><text x=\"313\" y=\"169\" font-family=\"Arial\" font-size=\"13\">(2,0)</text><text x=\"170\" y=\"178\" font-family=\"Arial\" font-size=\"13\">A</text><text x=\"280\" y=\"116\" font-family=\"Arial\" font-size=\"13\">shaded</text><text x=\"389\" y=\"155\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"214\" y=\"25\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"112\" y=\"171\" font-family=\"Arial\" font-size=\"12\">−2</text><text x=\"306\" y=\"171\" font-family=\"Arial\" font-size=\"12\">2</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the shaded area as the area under the quarter-circle from x=0 to 2 minus the area under the parabola over the same interval. The quarter-circle has radius 2.",
+              "work": "\\(A_{\\text{circle}}=\\frac14\\pi(2)^2=\\pi\\)"
+            },
+            {
+              "explain": "Integrate the parabola from 0 to 2, then subtract. This is the requested difference of two areas.",
+              "work": "\\(A_{\\text{parabola}}=\\int_0^2 (x^2-3x+2)\\,dx=\\left[\\frac{x^3}{3}-\\frac{3x^2}{2}+2x\\right]_0^2=\\frac{8}{3}-6+4=\\frac{2}{3}\\)\\\\\\(A=\\pi-\\frac{2}{3}=\\boxed{\\pi-\\frac{2}{3}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "203-204",
+            "course": "Advanced",
+            "sourceQuestion": "Q66"
+          }
         }
       ]
     },
@@ -4326,6 +5913,122 @@
             "page": "199",
             "course": "Advanced",
             "sourceQuestion": "Q33"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p202-q50",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Consider the integral \\(\\displaystyle\\int_1^3\\ln x\\,dx\\).",
+          "hint": "For the approximation, three function values mean two equal intervals. Since ln x is concave down, compare the curve with the straight trapezoid edges.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p202-q50-i",
+              "type": "review",
+              "manual": true,
+              "difficulty": "medium",
+              "stem": "Sketch the curve \\(y=\\ln x\\).",
+              "answer": "An increasing, concave-down logarithmic curve passing through (1,0), (e,1) and (3,ln 3).",
+              "hint": "For x>0, ln x increases and bends downward. It crosses the x-axis at x=1.",
+              "steps": [
+                {
+                  "explain": "Mark the intercept: ln 1=0, so the curve passes through (1,0).",
+                  "work": "\\(\\ln1=0\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 460 290\"><rect width=\"460\" height=\"290\" fill=\"white\"/><path d=\"M55 230H425M95 255V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M125 230 C165 170 205 135 245 105 C285 82 330 67 390 55 L390 230H125Z\" fill=\"#bfdbfe\" opacity=\".48\"/><path d=\"M95 260 C110 245 118 238 125 230 C165 170 205 135 245 105 C285 82 330 67 390 55\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><g font-family=\"Arial\" font-size=\"13\" text-anchor=\"middle\"><text x=\"125\" y=\"251\">1</text><text x=\"245\" y=\"251\">2</text><text x=\"390\" y=\"251\">3</text></g><text x=\"315\" y=\"48\" font-family=\"Arial\" font-size=\"14\">y=ln x</text><text x=\"428\" y=\"235\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"99\" y=\"27\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
+                  }
+                },
+                {
+                  "explain": "The gradient is 1/x>0, so the curve increases. Its second derivative is −1/x²<0, so it is concave down.",
+                  "work": "\\((\\ln x)'=\\frac1x>0,\\quad(\\ln x)''=-\\frac1{x^2}<0\\)"
+                },
+                {
+                  "explain": "Draw a smooth increasing curve that bends downward over x from 1 to 3.",
+                  "work": "\\(y=\\ln x\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "202",
+                "course": "Advanced",
+                "sourceQuestion": "Q50(i)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p202-q50-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Use the trapezoidal rule with three function values to find an approximation to \\(\\displaystyle\\int_1^3\\ln x\\,dx\\).",
+              "options": [
+                "\\(\\ln2+\\frac12\\ln3\\)",
+                "\\(\\frac12(\\ln2+\\ln3)\\)",
+                "\\(2\\ln2+\\ln3\\)",
+                "\\(\\ln3\\)"
+              ],
+              "answer": 0,
+              "hint": "Three function values create two equal subintervals, of width 1. Use ln 1, ln 2 and ln 3 in the trapezoidal formula.",
+              "steps": [
+                {
+                  "explain": "The three nodes are x=1, 2 and 3, so h=(3−1)/2=1.",
+                  "work": "\\(h=1,\\quad y_0=\\ln1=0,\\;y_1=\\ln2,\\;y_2=\\ln3\\)"
+                },
+                {
+                  "explain": "Apply T=h/2[first+2(middle)+last].",
+                  "work": "\\(T=\\frac12[0+2\\ln2+\\ln3]=\\boxed{\\ln2+\\frac12\\ln3}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 460 290\"><rect width=\"460\" height=\"290\" fill=\"white\"/><path d=\"M55 230H425M95 255V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M125 230 C165 170 205 135 245 105 C285 82 330 67 390 55 L390 230H125Z\" fill=\"#bfdbfe\" opacity=\".48\"/><path d=\"M95 260 C110 245 118 238 125 230 C165 170 205 135 245 105 C285 82 330 67 390 55\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><g font-family=\"Arial\" font-size=\"13\" text-anchor=\"middle\"><text x=\"125\" y=\"251\">1</text><text x=\"245\" y=\"251\">2</text><text x=\"390\" y=\"251\">3</text></g><text x=\"315\" y=\"48\" font-family=\"Arial\" font-size=\"14\">y=ln x</text><text x=\"428\" y=\"235\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"99\" y=\"27\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "202",
+                "course": "Advanced",
+                "sourceQuestion": "Q50(ii)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p202-q50-iii",
+              "type": "review",
+              "manual": true,
+              "difficulty": "hard",
+              "stem": "State whether the approximation found in part ii is greater than or less than the exact value of \\(\\displaystyle\\int_1^3\\ln x\\,dx\\). Justify your answer.",
+              "answer": "The trapezoidal approximation is less than the exact value because ln x is concave down on [1,3], so each chord lies below the curve.",
+              "hint": "Use the concavity of ln x. A concave-down curve lies above the straight line segments used by the trapezoidal rule.",
+              "steps": [
+                {
+                  "explain": "Differentiate twice to determine the concavity on the interval.",
+                  "work": "\\((\\ln x)''=-\\frac1{x^2}<0\\quad(1\\le x\\le3)\\)"
+                },
+                {
+                  "explain": "A concave-down curve lies above each chord joining two sampled points. The trapezoids therefore have less area than the region under the curve.",
+                  "work": "\\(T<\\int_1^3\\ln x\\,dx\\Rightarrow\\text{the approximation is less than the exact value.}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 460 290\"><rect width=\"460\" height=\"290\" fill=\"white\"/><path d=\"M55 230H425M95 255V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M125 230 C165 170 205 135 245 105 C285 82 330 67 390 55 L390 230H125Z\" fill=\"#bfdbfe\" opacity=\".48\"/><path d=\"M95 260 C110 245 118 238 125 230 C165 170 205 135 245 105 C285 82 330 67 390 55\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><g font-family=\"Arial\" font-size=\"13\" text-anchor=\"middle\"><text x=\"125\" y=\"251\">1</text><text x=\"245\" y=\"251\">2</text><text x=\"390\" y=\"251\">3</text></g><text x=\"315\" y=\"48\" font-family=\"Arial\" font-size=\"14\">y=ln x</text><text x=\"428\" y=\"235\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"99\" y=\"27\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "202",
+                "course": "Advanced",
+                "sourceQuestion": "Q50(iii)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "202",
+            "course": "Advanced",
+            "sourceQuestion": "Q50"
           }
         }
       ]
