@@ -548,6 +548,110 @@
             "course": "Advanced",
             "sourceQuestion": "Q23"
           }
+        },
+        {
+          "id": "y12a-advanced-004-p200-q36",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(\\displaystyle\\int_0^{\\pi/4}\\cos2x\\,dx\\).",
+          "options": [
+            "\\(\\frac12\\)",
+            "\\(1\\)",
+            "\\(\\frac{\\sqrt2}{2}\\)",
+            "\\(0\\)"
+          ],
+          "answer": 0,
+          "hint": "The reverse chain rule gives an antiderivative of cos(2x) as sin(2x)/2.",
+          "steps": [
+            {
+              "explain": "Integrate cos(2x), dividing by 2 because the derivative of 2x is 2.",
+              "work": "\\(\\int\\cos2x\\,dx=\\frac12\\sin2x+C\\)"
+            },
+            {
+              "explain": "Substitute the limits π/4 and 0.",
+              "work": "\\(\\left[\\frac12\\sin2x\\right]_0^{\\pi/4}=\\frac12(\\sin\\frac\\pi2-\\sin0)=\\boxed{\\frac12}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "200",
+            "course": "Advanced",
+            "sourceQuestion": "Q36"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p200-q38",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(\\displaystyle\\int_0^{\\pi/2}x\\sin\\frac{x}{2}\\,dx\\).",
+          "options": [
+            "\\(2\\sqrt2-\\frac{\\pi\\sqrt2}{2}\\)",
+            "\\(2\\sqrt2+\\frac{\\pi\\sqrt2}{2}\\)",
+            "\\(4-\\pi\\)",
+            "\\(\\frac{\\pi}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use integration by parts with u=x and dv=sin(x/2)dx. The antiderivative of sin(x/2) is −2cos(x/2).",
+          "steps": [
+            {
+              "explain": "Choose u=x and dv=sin(x/2)dx. Then du=dx and v=−2cos(x/2).",
+              "work": "\\(\\int x\\sin\\frac{x}{2}dx=-2x\\cos\\frac{x}{2}+2\\int\\cos\\frac{x}{2}dx\\)"
+            },
+            {
+              "explain": "Integrate the remaining cosine term. Its antiderivative is 2sin(x/2).",
+              "work": "\\(\\int x\\sin\\frac{x}{2}dx=-2x\\cos\\frac{x}{2}+4\\sin\\frac{x}{2}\\)"
+            },
+            {
+              "explain": "Apply the limits 0 and π/2, using sin(π/4)=cos(π/4)=√2/2.",
+              "work": "\\(\\left[-2x\\cos\\frac{x}{2}+4\\sin\\frac{x}{2}\\right]_0^{\\pi/2}=-\\pi\\frac{\\sqrt2}{2}+2\\sqrt2=\\boxed{2\\sqrt2-\\frac{\\pi\\sqrt2}{2}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "200",
+            "course": "Advanced",
+            "sourceQuestion": "Q38"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p200-q40",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(\\displaystyle\\int_0^1\\frac{x^2}{x^3+1}\\,dx\\).",
+          "options": [
+            "\\(\\frac13\\ln2\\)",
+            "\\(\\ln2\\)",
+            "\\(\\frac12\\ln2\\)",
+            "\\(\\frac13\\ln4\\)"
+          ],
+          "answer": 0,
+          "hint": "The derivative of x³+1 is 3x². Use the substitution u=x³+1.",
+          "steps": [
+            {
+              "explain": "Let u=x³+1. Then du=3x²dx, so x²dx=du/3. The limits become u=1 and u=2.",
+              "work": "\\(u=x^3+1,\\quad \\frac{du}{3}=x^2dx\\)"
+            },
+            {
+              "explain": "Rewrite the integral using the substitution and integrate 1/u.",
+              "work": "\\(\\int_0^1\\frac{x^2}{x^3+1}dx=\\frac13\\int_1^2\\frac1u du\\)"
+            },
+            {
+              "explain": "Evaluate the logarithm at the new limits.",
+              "work": "\\(=\\frac13[\\ln u]_1^2=\\boxed{\\frac13\\ln2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "200",
+            "course": "Advanced",
+            "sourceQuestion": "Q40"
+          }
         }
       ]
     },
@@ -2867,6 +2971,442 @@
             "page": "199",
             "course": "Advanced",
             "sourceQuestion": "Q32"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p200-q34",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The diagram shows the parabola \\(y=4x-x^2\\) meeting the line \\(y=2x\\) at \\((0,0)\\) and \\((2,4)\\). Which expression gives the area of the shaded region bounded by the parabola and the line?",
+          "options": [
+            "\\(\\int_0^2(x^2-2x)\\,dx\\)",
+            "\\(\\int_0^2(2x-x^2)\\,dx\\)",
+            "\\(\\int_0^4(x^2-2x)\\,dx\\)",
+            "\\(\\int_0^4(2x-x^2)\\,dx\\)"
+          ],
+          "answer": 1,
+          "hint": "The horizontal limits are the intersection x-values 0 and 2. On this interval subtract the lower line from the upper parabola.",
+          "steps": [
+            {
+              "explain": "Use the diagram to read the boundary x-values: 0 at the origin and 2 at (2,4).",
+              "work": "\\(0\\le x\\le2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 460 300\"><rect width=\"460\" height=\"300\" fill=\"white\"/><path d=\"M45 230H425M100 260V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 230 C150 135 205 88 250 87 L100 230Z\" fill=\"#fde68a\" opacity=\".55\"/><path d=\"M55 250 C80 245 92 240 100 230 C145 151 200 87 250 87 C295 90 340 150 400 260\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 230L250 87\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"100\" cy=\"230\" r=\"4\" fill=\"#334155\"/><circle cx=\"250\" cy=\"87\" r=\"4\" fill=\"#334155\"/><text x=\"84\" y=\"250\" font-family=\"Arial\" font-size=\"13\">(0,0)</text><text x=\"256\" y=\"83\" font-family=\"Arial\" font-size=\"13\">(2,4)</text><text x=\"360\" y=\"185\" font-family=\"Arial\" font-size=\"13\">y=2x</text><text x=\"300\" y=\"122\" font-family=\"Arial\" font-size=\"13\">y=4x−x²</text><text x=\"428\" y=\"235\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"104\" y=\"32\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
+              }
+            },
+            {
+              "explain": "The parabola is above the line between the intersections. Subtract y=2x from y=4x−x².",
+              "work": "\\((4x-x^2)-2x=2x-x^2\\)"
+            },
+            {
+              "explain": "Therefore the area is represented by the integral of this positive vertical gap from 0 to 2.",
+              "work": "\\(\\boxed{\\int_0^2(2x-x^2)\\,dx}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "200",
+            "course": "Advanced",
+            "sourceQuestion": "Q34"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 460 300\"><rect width=\"460\" height=\"300\" fill=\"white\"/><path d=\"M45 230H425M100 260V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 230 C150 135 205 88 250 87 L100 230Z\" fill=\"#fde68a\" opacity=\".55\"/><path d=\"M55 250 C80 245 92 240 100 230 C145 151 200 87 250 87 C295 90 340 150 400 260\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 230L250 87\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"100\" cy=\"230\" r=\"4\" fill=\"#334155\"/><circle cx=\"250\" cy=\"87\" r=\"4\" fill=\"#334155\"/><text x=\"84\" y=\"250\" font-family=\"Arial\" font-size=\"13\">(0,0)</text><text x=\"256\" y=\"83\" font-family=\"Arial\" font-size=\"13\">(2,4)</text><text x=\"360\" y=\"185\" font-family=\"Arial\" font-size=\"13\">y=2x</text><text x=\"292\" y=\"60\" font-family=\"Arial\" font-size=\"13\">y=4x−x²</text><text x=\"428\" y=\"235\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"104\" y=\"32\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p200-q35",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The diagram shows the area under the curve \\(y=\\frac2x\\) from \\(x=1\\) to \\(x=d\\). What value of \\(d\\) makes the shaded area equal to 2?",
+          "options": [
+            "\\(e\\)",
+            "\\(e+1\\)",
+            "\\(2e\\)",
+            "\\(e^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Integrate 2/x from 1 to d, then set the result equal to the stated area 2.",
+          "steps": [
+            {
+              "explain": "The shaded area is the integral of y=2/x between x=1 and x=d.",
+              "work": "\\(2=\\int_1^d\\frac2x\\,dx\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 460 290\"><rect width=\"460\" height=\"290\" fill=\"white\"/><path d=\"M55 230H430M100 255V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M160 70 C205 105 250 145 305 173 L305 230H160Z\" fill=\"#bfdbfe\" opacity=\".6\"/><path d=\"M100 55 C130 60 145 65 160 70 C205 105 250 145 305 173 C345 190 385 205 420 215\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M160 70V230M305 173V230\" stroke=\"#64748b\" stroke-dasharray=\"5 4\"/><text x=\"154\" y=\"251\" font-family=\"Arial\" font-size=\"13\">1</text><text x=\"301\" y=\"251\" font-family=\"Arial\" font-size=\"13\">d</text><text x=\"340\" y=\"127\" font-family=\"Arial\" font-size=\"14\">y=2/x</text><text x=\"433\" y=\"235\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"104\" y=\"32\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"191\" y=\"215\" font-family=\"Arial\" font-size=\"13\">area 2</text></svg>"
+              }
+            },
+            {
+              "explain": "Integrate and use the logarithm rule.",
+              "work": "\\(2=2[\\ln x]_1^d=2(\\ln d-\\ln1)=2\\ln d\\)"
+            },
+            {
+              "explain": "Divide by 2, then exponentiate both sides.",
+              "work": "\\(\\ln d=1\\Rightarrow\\boxed{d=e}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "200",
+            "course": "Advanced",
+            "sourceQuestion": "Q35"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 460 290\"><rect width=\"460\" height=\"290\" fill=\"white\"/><path d=\"M55 230H430M100 255V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M160 70 C205 105 250 145 305 173 L305 230H160Z\" fill=\"#bfdbfe\" opacity=\".6\"/><path d=\"M100 55 C130 60 145 65 160 70 C205 105 250 145 305 173 C345 190 385 205 420 215\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M160 70V230M305 173V230\" stroke=\"#64748b\" stroke-dasharray=\"5 4\"/><text x=\"154\" y=\"251\" font-family=\"Arial\" font-size=\"13\">1</text><text x=\"301\" y=\"251\" font-family=\"Arial\" font-size=\"13\">d</text><text x=\"340\" y=\"127\" font-family=\"Arial\" font-size=\"14\">y=2/x</text><text x=\"433\" y=\"235\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"104\" y=\"32\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"191\" y=\"215\" font-family=\"Arial\" font-size=\"13\">area 2</text></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p200-q37",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The diagram shows the curve with equation \\(y=x^2-7x+10\\). The curve intersects the x-axis at points \\(A\\) and \\(B\\). The point \\(C\\) on the curve has the same y-coordinate as the y-intercept of the curve.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 500 360\"><rect width=\"500\" height=\"360\" fill=\"white\"/><path d=\"M45 260H455M100 320V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M275 260L345 60 C325 100 300 200 275 260Z\" fill=\"#fde68a\" opacity=\".55\"/><path d=\"M100 60 C135 130 155 220 170 260 C195 300 245 305 275 260 C305 210 330 120 345 60 C375 5 410 -20 445 -30\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M275 260L345 60\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M100 60H345\" stroke=\"#94a3b8\" stroke-dasharray=\"5 4\"/><circle cx=\"100\" cy=\"60\" r=\"4\" fill=\"#334155\"/><circle cx=\"170\" cy=\"260\" r=\"4\" fill=\"#334155\"/><circle cx=\"275\" cy=\"260\" r=\"4\" fill=\"#334155\"/><circle cx=\"345\" cy=\"60\" r=\"4\" fill=\"#334155\"/><text x=\"143\" y=\"285\" font-family=\"Arial\" font-size=\"13\">A(2,0)</text><text x=\"279\" y=\"285\" font-family=\"Arial\" font-size=\"13\">B(5,0)</text><text x=\"351\" y=\"56\" font-family=\"Arial\" font-size=\"13\">C(7,10)</text><text x=\"105\" y=\"50\" font-family=\"Arial\" font-size=\"12\">(0,10)</text><text x=\"458\" y=\"264\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"104\" y=\"27\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
+          },
+          "hint": "Factor the quadratic to locate A and B. For C, set the curve’s y-value equal to the y-intercept. Use the diagram to identify which boundary lengths define the shaded area.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p200-q37-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the x-coordinates of points A and B.",
+              "options": [
+                "\\(2,5\\)",
+                "\\(-2,-5\\)",
+                "\\(1,6\\)",
+                "\\(5,7\\)"
+              ],
+              "answer": 0,
+              "hint": "At x-intercepts y=0. Solve x²−7x+10=0 by factorising.",
+              "steps": [
+                {
+                  "explain": "Set the quadratic equal to zero because A and B lie on the x-axis.",
+                  "work": "\\(x^2-7x+10=0\\Rightarrow(x-2)(x-5)=0\\)"
+                },
+                {
+                  "explain": "Set each factor equal to zero.",
+                  "work": "\\(x=2\\quad\\text{or}\\quad x=5\\)"
+                },
+                {
+                  "explain": "Read the roots as the x-coordinates of A and B.",
+                  "work": "\\(\\boxed{A:2,\\;B:5}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 500 360\"><rect width=\"500\" height=\"360\" fill=\"white\"/><path d=\"M45 260H455M100 320V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M275 260L345 60 C325 100 300 200 275 260Z\" fill=\"#fde68a\" opacity=\".55\"/><path d=\"M100 60 C135 130 155 220 170 260 C195 300 245 305 275 260 C305 210 330 120 345 60 C375 5 410 -20 445 -30\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M275 260L345 60\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M100 60H345\" stroke=\"#94a3b8\" stroke-dasharray=\"5 4\"/><circle cx=\"100\" cy=\"60\" r=\"4\" fill=\"#334155\"/><circle cx=\"170\" cy=\"260\" r=\"4\" fill=\"#334155\"/><circle cx=\"275\" cy=\"260\" r=\"4\" fill=\"#334155\"/><circle cx=\"345\" cy=\"60\" r=\"4\" fill=\"#334155\"/><text x=\"143\" y=\"285\" font-family=\"Arial\" font-size=\"13\">A(2,0)</text><text x=\"279\" y=\"285\" font-family=\"Arial\" font-size=\"13\">B(5,0)</text><text x=\"351\" y=\"56\" font-family=\"Arial\" font-size=\"13\">C(7,10)</text><text x=\"105\" y=\"50\" font-family=\"Arial\" font-size=\"12\">(0,10)</text><text x=\"458\" y=\"264\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"104\" y=\"27\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "200",
+                "course": "Advanced",
+                "sourceQuestion": "Q37(i)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p200-q37-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Write down the coordinates of C.",
+              "options": [
+                "\\((7,10)\\)",
+                "\\((0,10)\\)",
+                "\\((7,0)\\)",
+                "\\((5,10)\\)"
+              ],
+              "answer": 0,
+              "hint": "The y-intercept is found at x=0. C has that same y-value, so substitute y=10 in the curve equation.",
+              "steps": [
+                {
+                  "explain": "At x=0 the curve has y-intercept 10.",
+                  "work": "\\(y(0)=0-0+10=10\\)"
+                },
+                {
+                  "explain": "Set y=10 and solve for x. The point C is the nonzero solution shown to the right.",
+                  "work": "\\(x^2-7x+10=10\\Rightarrow x(x-7)=0\\Rightarrow x=0\\text{ or }7\\)"
+                },
+                {
+                  "explain": "The nonzero point is C.",
+                  "work": "\\(\\boxed{C=(7,10)}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "200",
+                "course": "Advanced",
+                "sourceQuestion": "Q37(ii)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p200-q37-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Evaluate \\(\\displaystyle\\int_0^2(x^2-7x+10)\\,dx\\).",
+              "options": [
+                "\\(\\frac{26}{3}\\)",
+                "\\(\\frac{14}{3}\\)",
+                "\\(\\frac{20}{3}\\)",
+                "\\(\\frac{10}{3}\\)"
+              ],
+              "answer": 0,
+              "hint": "Integrate each polynomial term, then substitute the limits 2 and 0.",
+              "steps": [
+                {
+                  "explain": "Find an antiderivative term by term.",
+                  "work": "\\(\\int(x^2-7x+10)dx=\\frac{x^3}{3}-\\frac{7x^2}{2}+10x+C\\)"
+                },
+                {
+                  "explain": "Evaluate at x=2 and subtract the value at x=0.",
+                  "work": "\\(\\left[\\frac{x^3}{3}-\\frac{7x^2}{2}+10x\\right]_0^2=\\frac83-14+20=\\boxed{\\frac{26}{3}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "200",
+                "course": "Advanced",
+                "sourceQuestion": "Q37(iii)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p200-q37-iv",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Hence, or otherwise, find the area of the shaded region.",
+              "options": [
+                "\\(\\frac43\\)",
+                "\\(\\frac83\\)",
+                "\\(4\\)",
+                "\\(\\frac{10}{3}\\)"
+              ],
+              "answer": 0,
+              "hint": "The shaded region lies between the straight segment BC and the curve from x=5 to x=7. First find the equation of BC using B(5,0) and C(7,10).",
+              "steps": [
+                {
+                  "explain": "Use the diagram points B(5,0) and C(7,10) to find the slope and equation of the straight boundary.",
+                  "work": "\\(m=\\frac{10-0}{7-5}=5,\\quad BC:y=5x-25\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 500 360\"><rect width=\"500\" height=\"360\" fill=\"white\"/><path d=\"M45 260H455M100 320V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M275 260L345 60 C325 100 300 200 275 260Z\" fill=\"#fde68a\" opacity=\".55\"/><path d=\"M100 60 C135 130 155 220 170 260 C195 300 245 305 275 260 C305 210 330 120 345 60 C375 5 410 -20 445 -30\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M275 260L345 60\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M100 60H345\" stroke=\"#94a3b8\" stroke-dasharray=\"5 4\"/><circle cx=\"100\" cy=\"60\" r=\"4\" fill=\"#334155\"/><circle cx=\"170\" cy=\"260\" r=\"4\" fill=\"#334155\"/><circle cx=\"275\" cy=\"260\" r=\"4\" fill=\"#334155\"/><circle cx=\"345\" cy=\"60\" r=\"4\" fill=\"#334155\"/><text x=\"143\" y=\"285\" font-family=\"Arial\" font-size=\"13\">A(2,0)</text><text x=\"279\" y=\"285\" font-family=\"Arial\" font-size=\"13\">B(5,0)</text><text x=\"351\" y=\"56\" font-family=\"Arial\" font-size=\"13\">C(7,10)</text><text x=\"105\" y=\"50\" font-family=\"Arial\" font-size=\"12\">(0,10)</text><text x=\"458\" y=\"264\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"104\" y=\"27\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Between x=5 and x=7 the line is above the curve. Integrate line minus curve.",
+                  "work": "\\(A=\\int_5^7[(5x-25)-(x^2-7x+10)]dx=\\int_5^7(-x^2+12x-35)dx\\)"
+                },
+                {
+                  "explain": "Evaluate the antiderivative at both endpoints.",
+                  "work": "\\(A=\\left[-\\frac{x^3}{3}+6x^2-35x\\right]_5^7=\\boxed{\\frac43}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "200",
+                "course": "Advanced",
+                "sourceQuestion": "Q37(iv)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "200",
+            "course": "Advanced",
+            "sourceQuestion": "Q37"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p200-q39",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The parabola \\(y=-2x^2+8x\\) and the line \\(y=2x\\) intersect at the origin and at the point \\(A\\).",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 460 300\"><rect width=\"460\" height=\"300\" fill=\"white\"/><path d=\"M45 230H430M100 270V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 230 C150 120 205 86 250 86 C278 90 303 108 325 122 L100 230Z\" fill=\"#fde68a\" opacity=\".52\"/><path d=\"M100 230 C150 120 205 86 250 86 C300 86 350 130 400 230\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 230L325 122\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"100\" cy=\"230\" r=\"4\" fill=\"#334155\"/><circle cx=\"325\" cy=\"122\" r=\"4\" fill=\"#334155\"/><text x=\"84\" y=\"250\" font-family=\"Arial\" font-size=\"13\">O</text><text x=\"332\" y=\"119\" font-family=\"Arial\" font-size=\"13\">A(3,6)</text><text x=\"370\" y=\"215\" font-family=\"Arial\" font-size=\"13\">y=2x</text><text x=\"278\" y=\"55\" font-family=\"Arial\" font-size=\"13\">y=−2x²+8x</text><text x=\"433\" y=\"235\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"104\" y=\"32\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
+          },
+          "hint": "At an intersection, set the parabola and line equations equal. The enclosed region is between x=0 and the second intersection.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p200-q39-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the x-coordinate of point A.",
+              "options": [
+                "\\(3\\)",
+                "\\(4\\)",
+                "\\(2\\)",
+                "\\(6\\)"
+              ],
+              "answer": 0,
+              "hint": "Set −2x²+8x equal to 2x, then factor. One root is x=0 at the origin; the other is A.",
+              "steps": [
+                {
+                  "explain": "Set the two y-expressions equal because the curves intersect.",
+                  "work": "\\(-2x^2+8x=2x\\)"
+                },
+                {
+                  "explain": "Rearrange and factor.",
+                  "work": "\\(-2x^2+6x=0\\Rightarrow-2x(x-3)=0\\)"
+                },
+                {
+                  "explain": "The roots are 0 and 3; x=0 is the origin, so A has x-coordinate 3.",
+                  "work": "\\(\\boxed{x_A=3}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "200",
+                "course": "Advanced",
+                "sourceQuestion": "Q39(i)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p200-q39-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Calculate the area enclosed by the parabola and the line.",
+              "options": [
+                "\\(9\\)",
+                "\\(6\\)",
+                "\\(12\\)",
+                "\\(18\\)"
+              ],
+              "answer": 0,
+              "hint": "From part i, integrate the vertical gap between the parabola and line from x=0 to x=3.",
+              "steps": [
+                {
+                  "explain": "Between the intersections, the parabola is above the line. Subtract y=2x from y=−2x²+8x.",
+                  "work": "\\(A=\\int_0^3[(-2x^2+8x)-2x]dx=\\int_0^3(-2x^2+6x)dx\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 460 300\"><rect width=\"460\" height=\"300\" fill=\"white\"/><path d=\"M45 230H430M100 270V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 230 C150 120 205 86 250 86 C278 90 303 108 325 122 L100 230Z\" fill=\"#fde68a\" opacity=\".52\"/><path d=\"M100 230 C150 120 205 86 250 86 C300 86 350 130 400 230\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 230L325 122\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"100\" cy=\"230\" r=\"4\" fill=\"#334155\"/><circle cx=\"325\" cy=\"122\" r=\"4\" fill=\"#334155\"/><text x=\"84\" y=\"250\" font-family=\"Arial\" font-size=\"13\">O</text><text x=\"332\" y=\"119\" font-family=\"Arial\" font-size=\"13\">A(3,6)</text><text x=\"370\" y=\"215\" font-family=\"Arial\" font-size=\"13\">y=2x</text><text x=\"278\" y=\"55\" font-family=\"Arial\" font-size=\"13\">y=−2x²+8x</text><text x=\"433\" y=\"235\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"104\" y=\"32\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Integrate and evaluate at 3 and 0.",
+                  "work": "\\(A=\\left[-\\frac23x^3+3x^2\\right]_0^3=-18+27=\\boxed9\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "200",
+                "course": "Advanced",
+                "sourceQuestion": "Q39(ii)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "200",
+            "course": "Advanced",
+            "sourceQuestion": "Q39"
+          }
+        },
+        {
+          "id": "y12a-advanced-004-p200-q41",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The diagram shows the graphs of the functions \\(f(x)=4x^3-4x^2+3x\\) and \\(g(x)=2x\\). The graphs meet at \\(O\\) and \\(T\\).",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M45 245H445M100 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 245 C145 190 170 145 205 122 L100 245Z\" fill=\"#fde68a\" opacity=\".6\"/><path d=\"M100 245 C145 190 170 145 205 122 C245 85 290 54 345 38\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 245L205 122L345 38\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"100\" cy=\"245\" r=\"4\" fill=\"#334155\"/><circle cx=\"205\" cy=\"122\" r=\"4\" fill=\"#334155\"/><text x=\"86\" y=\"264\" font-family=\"Arial\" font-size=\"13\">O</text><text x=\"210\" y=\"118\" font-family=\"Arial\" font-size=\"13\">T</text><text x=\"280\" y=\"30\" font-family=\"Arial\" font-size=\"13\">f(x)=4x³−4x²+3x</text><text x=\"300\" y=\"132\" font-family=\"Arial\" font-size=\"13\">g(x)=2x</text><text x=\"449\" y=\"250\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"104\" y=\"27\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
+          },
+          "hint": "Set f(x)=g(x) to find T. Factor the difference to identify the two limits, then integrate the function that is above minus the one below.",
+          "parts": [
+            {
+              "id": "y12a-advanced-004-p200-q41-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the x-coordinate of T.",
+              "options": [
+                "\\(\\frac12\\)",
+                "\\(1\\)",
+                "\\(\\frac14\\)",
+                "\\(2\\)"
+              ],
+              "answer": 0,
+              "hint": "Set f(x)=g(x) and factor. The nonzero intersection is the double root.",
+              "steps": [
+                {
+                  "explain": "At T the two function values are equal.",
+                  "work": "\\(4x^3-4x^2+3x=2x\\)"
+                },
+                {
+                  "explain": "Move all terms to one side and factor.",
+                  "work": "\\(4x^3-4x^2+x=0\\Rightarrow x(4x^2-4x+1)=x(2x-1)^2=0\\)"
+                },
+                {
+                  "explain": "The intersections are x=0 at O and x=1/2 at T.",
+                  "work": "\\(\\boxed{x_T=\\frac12}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "200",
+                "course": "Advanced",
+                "sourceQuestion": "Q41(i)"
+              }
+            },
+            {
+              "id": "y12a-advanced-004-p200-q41-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the area of the shaded region between the graphs of \\(f(x)\\) and \\(g(x)\\).",
+              "options": [
+                "\\(\\frac1{48}\\)",
+                "\\(\\frac1{24}\\)",
+                "\\(\\frac1{16}\\)",
+                "\\(\\frac1{12}\\)"
+              ],
+              "answer": 0,
+              "hint": "From x=0 to x=1/2, f(x) is above g(x). Integrate f−g across this interval.",
+              "steps": [
+                {
+                  "explain": "The shaded width is between the intersections O at x=0 and T at x=1/2. The diagram shows f above g.",
+                  "work": "\\(A=\\int_0^{1/2}[f(x)-g(x)]dx=\\int_0^{1/2}(4x^3-4x^2+x)dx\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 300\"><rect width=\"480\" height=\"300\" fill=\"white\"/><path d=\"M45 245H445M100 270V30\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 245 C145 190 170 145 205 122 L100 245Z\" fill=\"#fde68a\" opacity=\".6\"/><path d=\"M100 245 C145 190 170 145 205 122 C245 85 290 54 345 38\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><path d=\"M100 245L205 122L345 38\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"100\" cy=\"245\" r=\"4\" fill=\"#334155\"/><circle cx=\"205\" cy=\"122\" r=\"4\" fill=\"#334155\"/><text x=\"86\" y=\"264\" font-family=\"Arial\" font-size=\"13\">O</text><text x=\"210\" y=\"118\" font-family=\"Arial\" font-size=\"13\">T</text><text x=\"280\" y=\"30\" font-family=\"Arial\" font-size=\"13\">f(x)=4x³−4x²+3x</text><text x=\"300\" y=\"132\" font-family=\"Arial\" font-size=\"13\">g(x)=2x</text><text x=\"449\" y=\"250\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"104\" y=\"27\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Integrate each term.",
+                  "work": "\\(A=\\left[x^4-\\frac43x^3+\\frac{x^2}{2}\\right]_0^{1/2}\\)"
+                },
+                {
+                  "explain": "Substitute x=1/2 and simplify.",
+                  "work": "\\(A=\\frac1{16}-\\frac16+\\frac18=\\frac{3-8+6}{48}=\\boxed{\\frac1{48}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 004",
+                "page": "200",
+                "course": "Advanced",
+                "sourceQuestion": "Q41(ii)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 004",
+            "page": "200",
+            "course": "Advanced",
+            "sourceQuestion": "Q41"
           }
         }
       ]
