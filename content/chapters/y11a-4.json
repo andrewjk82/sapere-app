@@ -7747,8 +7747,8 @@
         {
           "id": "y11a-4d-q1",
           "type": "multipart",
-          "difficulty": "easy",
           "stem": "It is known that \\(a(x+3) + b(x-2) = 6x + 8\\) for all values of \\(x\\). Complete the sub-questions.",
+          "difficulty": "easy",
           "parts": [
             {
               "id": "y11a-4d-q1a",
@@ -7774,8 +7774,7 @@
                   "explain": "Solve for \\(a\\) by dividing by 5.",
                   "work": "a = 4"
                 }
-              ],
-              "xp": 2
+              ]
             },
             {
               "id": "y11a-4d-q1b",
@@ -7801,8 +7800,7 @@
                   "explain": "Solve for \\(b\\) by dividing by -5.",
                   "work": "b = 2"
                 }
-              ],
-              "xp": 2
+              ]
             },
             {
               "id": "y11a-4d-q1c",
@@ -7828,8 +7826,7 @@
                   "explain": "Choosing these values makes one of the coefficients zero, which simplifies the equation to directly solve for the other constant.",
                   "work": "\\mathrm{Isolates\\:one\\:variable\\:at\\:a\\:time}"
                 }
-              ],
-              "xp": 2
+              ]
             },
             {
               "id": "y11a-4d-q1d",
@@ -7859,12 +7856,10 @@
                   "explain": "Substitute \\(a = 4\\) back to find \\(b\\), confirming it yields the same values.",
                   "work": "4 + b = 6 \\implies b = 2"
                 }
-              ],
-              "xp": 3
+              ]
             }
           ],
           "solution": "See detailed steps below.",
-          "manual": true,
           "timeLimit": 180,
           "meta": {
             "origin": "teacher"
