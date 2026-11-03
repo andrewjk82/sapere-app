@@ -1645,6 +1645,484 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 650 420\" role=\"img\" aria-label=\"Cumulative frequency polygon of 400 student heights\"><rect width=\"650\" height=\"420\" fill=\"white\"/><path d=\"M80 340V35M80 340H590\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M80 40.0H590\" stroke=\"#e2e8f0\"/><path d=\"M80 78.0H590\" stroke=\"#e2e8f0\"/><path d=\"M80 116.0H590\" stroke=\"#e2e8f0\"/><path d=\"M80 154.0H590\" stroke=\"#e2e8f0\"/><path d=\"M80 192.0H590\" stroke=\"#e2e8f0\"/><path d=\"M80 230.0H590\" stroke=\"#e2e8f0\"/><path d=\"M80 268.0H590\" stroke=\"#e2e8f0\"/><path d=\"M80 306.0H590\" stroke=\"#e2e8f0\"/><path d=\"M80 40V340\" stroke=\"#e2e8f0\"/><path d=\"M131 40V340\" stroke=\"#e2e8f0\"/><path d=\"M182 40V340\" stroke=\"#e2e8f0\"/><path d=\"M233 40V340\" stroke=\"#e2e8f0\"/><path d=\"M284 40V340\" stroke=\"#e2e8f0\"/><path d=\"M335 40V340\" stroke=\"#e2e8f0\"/><path d=\"M386 40V340\" stroke=\"#e2e8f0\"/><path d=\"M437 40V340\" stroke=\"#e2e8f0\"/><path d=\"M488 40V340\" stroke=\"#e2e8f0\"/><path d=\"M539 40V340\" stroke=\"#e2e8f0\"/><path d=\"M590 40V340\" stroke=\"#e2e8f0\"/><polyline points=\"80.0,340.0 182.0,302.5 284.0,257.5 386.0,175.0 488.0,77.5 539.0,58.75 590.0,40.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"4\"/><g font-family=\"Arial\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"80.0\" y=\"360\">100</text><text x=\"131.0\" y=\"360\">110</text><text x=\"182.0\" y=\"360\">120</text><text x=\"233.0\" y=\"360\">130</text><text x=\"284.0\" y=\"360\">140</text><text x=\"335.0\" y=\"360\">150</text><text x=\"386.0\" y=\"360\">160</text><text x=\"437.0\" y=\"360\">170</text><text x=\"488.0\" y=\"360\">180</text><text x=\"539.0\" y=\"360\">190</text><text x=\"590.0\" y=\"360\">200</text><text x=\"62\" y=\"344.0\">0</text><text x=\"62\" y=\"306.5\">50</text><text x=\"62\" y=\"269.0\">100</text><text x=\"62\" y=\"231.5\">150</text><text x=\"62\" y=\"194.0\">200</text><text x=\"62\" y=\"156.5\">250</text><text x=\"62\" y=\"119.0\">300</text><text x=\"62\" y=\"81.5\">350</text><text x=\"62\" y=\"44.0\">400</text></g><text x=\"335\" y=\"390\" font-family=\"Arial\" font-size=\"13\" text-anchor=\"middle\">Height (cm)</text><text x=\"20\" y=\"180\" transform=\"rotate(-90 20 180)\" font-family=\"Arial\" font-size=\"13\">Cumulative frequency</text></svg>"
           }
+        },
+        {
+          "id": "y12a-advanced-005-p263-q19",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A small population consists of three students with heights 153 cm, 168 cm and 174 cm. Samples of varying sizes can be taken from this population. What is the mean of the mean heights of all the possible samples?",
+          "hint": "First calculate the population mean. The mean of the sampling distribution of the sample mean equals the population mean.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p263-q19",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "A small population consists of three students with heights 153 cm, 168 cm and 174 cm. Samples of varying sizes can be taken from this population. What is the mean of the mean heights of all possible samples?",
+              "options": [
+                "153 cm",
+                "165 cm",
+                "168 cm",
+                "174 cm"
+              ],
+              "answer": 1,
+              "hint": "The mean of the means of all possible samples equals the mean of the population.",
+              "steps": [
+                {
+                  "explain": "Find the population mean by adding the three heights and dividing by 3.",
+                  "work": "\\(\\bar{x}_{pop}=\\frac{153+168+174}{3}=\\frac{495}{3}=165\\text{ cm}\\)"
+                },
+                {
+                  "explain": "For every sample size, the average of all possible sample means equals the population mean.",
+                  "work": "Mean of all sample means = population mean"
+                },
+                {
+                  "explain": "Therefore the required mean is 165 cm.",
+                  "work": "\\(\boxed{165\text{ cm}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "263",
+                "course": "Advanced",
+                "sourceQuestion": "Q19"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "263",
+            "course": "Advanced",
+            "sourceQuestion": "Q19"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p263-q21",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "In a small business, the seven employees earn the following wages per week: $300, $490, $520, $590, $660, $680, $970. Answer (i) and (ii).",
+          "hint": "For (i), find the quartiles and compare the highest wage with the upper fence. For (ii), consider whether adding the same amount changes distances from the mean.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p263-q21-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The weekly wages are $300, $490, $520, $590, $660, $680 and $970. Is $970 an outlier? Justify using the 1.5×IQR rule.",
+              "options": [
+                "Yes, because $970 is above the upper fence $965",
+                "No, because the upper fence is $970",
+                "Yes, because the IQR is $970",
+                "No, because $970 is the maximum"
+              ],
+              "answer": 0,
+              "hint": "Find Q1 and Q3 from the ordered seven wages, then calculate the upper outlier fence.",
+              "steps": [
+                {
+                  "explain": "The middle wage is $590. The lower and upper halves have medians $490 and $680.",
+                  "work": "\\(Q_1=490,\\quad Q_3=680\\)"
+                },
+                {
+                  "explain": "Calculate the interquartile range and upper fence.",
+                  "work": "\\(IQR=680-490=190;\\quad U=680+1.5(190)=965\\)"
+                },
+                {
+                  "explain": "Since $970 is greater than $965, it is an outlier.",
+                  "work": "\\(970>965\\Rightarrow\boxed{\text{Yes}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "263",
+                "course": "Advanced",
+                "sourceQuestion": "Q21(i)"
+              }
+            },
+            {
+              "id": "y12a-advanced-005-p263-q21-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Each employee receives a $20 pay increase. What happens to the standard deviation of the wages?",
+              "options": [
+                "It stays the same",
+                "It increases by $20",
+                "It decreases by $20",
+                "It doubles"
+              ],
+              "answer": 0,
+              "hint": "Adding the same amount to every value shifts all data equally without changing their distances from the mean.",
+              "steps": [
+                {
+                  "explain": "Adding $20 changes every wage by the same amount, so the mean also increases by $20.",
+                  "work": "New wage = old wage + 20"
+                },
+                {
+                  "explain": "Each distance from the mean remains unchanged: (wage+20)−(mean+20)=wage−mean.",
+                  "work": "Deviation from new mean = original deviation"
+                },
+                {
+                  "explain": "Standard deviation is based on these deviations, so it is unchanged.",
+                  "work": "\\(\boxed{\text{Standard deviation stays the same}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "263",
+                "course": "Advanced",
+                "sourceQuestion": "Q21(ii)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "263",
+            "course": "Advanced",
+            "sourceQuestion": "Q21"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p263-q22",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Data from 200 recent house sales are grouped into class intervals and a cumulative frequency histogram is drawn. Answer (i) and (ii).",
+          "hint": "For (i), use cumulative frequency 100. For (ii), multiply each class centre by its frequency, add, then divide by the total number of sales.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p263-q22-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Use the cumulative frequency graph to estimate the median house price.",
+              "options": [
+                "\\(\\$393\\,000\\)",
+                "\\(\\$380\\,000\\)",
+                "\\(\\$400\\,000\\)",
+                "\\(\\$410\\,000\\)"
+              ],
+              "answer": 0,
+              "hint": "There are 200 sales, so the median is read at cumulative frequency 100.",
+              "steps": [
+                {
+                  "explain": "Half of 200 sales is 100. Locate cumulative frequency 100 on the vertical scale.",
+                  "work": "\\(\frac{200}{2}=100\\)"
+                },
+                {
+                  "explain": "Read horizontally to the cumulative curve/graph, then down to the price axis. The estimate is about $393 000.",
+                  "work": "Median price \\(\\approx\\$393\\,000\\)"
+                },
+                {
+                  "explain": "State the estimate in dollars.",
+                  "work": "\\(\boxed{\\$393\\,000}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "263",
+                "course": "Advanced",
+                "sourceQuestion": "Q22(i)"
+              }
+            },
+            {
+              "id": "y12a-advanced-005-p263-q22-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Complete the class-centre frequency table and calculate the mean house price.",
+              "options": [
+                "\\(\\$392\\,000\\)",
+                "\\(\\$393\\,000\\)",
+                "\\(\\$395\\,000\\)",
+                "\\(\\$400\\,000\\)"
+              ],
+              "answer": 0,
+              "hint": "Use the four class centres 375, 385, 395 and 405 ($000), with frequencies 30, 50, 70 and 50.",
+              "steps": [
+                {
+                  "explain": "Multiply each class centre by its frequency and add.",
+                  "work": "\\(375(30)+385(50)+395(70)+405(50)=78\\,400\\)"
+                },
+                {
+                  "explain": "Add the frequencies.",
+                  "work": "\\(30+50+70+50=200\\)"
+                },
+                {
+                  "explain": "Divide the weighted total by 200. The result is in thousands of dollars.",
+                  "work": "\\(\bar{x}=78\\,400/200=392\\Rightarrow\boxed{\\$392\\,000}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "263",
+                "course": "Advanced",
+                "sourceQuestion": "Q22(ii)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "263",
+            "course": "Advanced",
+            "sourceQuestion": "Q22"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 650 380\" role=\"img\" aria-label=\"Cumulative frequency histogram of 200 house prices\"><rect width=\"650\" height=\"380\" fill=\"white\"/><path d=\"M85 310V40M85 310H485\" stroke=\"#334155\" stroke-width=\"2\"/><g stroke=\"#e2e8f0\"><path d=\"M85 250H590M85 190H590M85 130H590M85 70H590\"/><path d=\"M185 40V310M285 40V310M385 40V310M485 40V310\"/></g><g fill=\"#cbd5e1\" stroke=\"#475569\" stroke-width=\"2\"><rect x=\"85\" y=\"274\" width=\"100\" height=\"36\"/><rect x=\"185\" y=\"214\" width=\"100\" height=\"96\"/><rect x=\"285\" y=\"130\" width=\"100\" height=\"180\"/><rect x=\"385\" y=\"70\" width=\"100\" height=\"240\"/></g><g font-family=\"Arial\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"85\" y=\"332\">370</text><text x=\"185\" y=\"332\">380</text><text x=\"285\" y=\"332\">390</text><text x=\"385\" y=\"332\">400</text><text x=\"485\" y=\"332\">410</text><text x=\"335\" y=\"360\">House price ($000)</text><text x=\"68\" y=\"315\">0</text><text x=\"68\" y=\"255\">50</text><text x=\"68\" y=\"195\">100</text><text x=\"68\" y=\"135\">150</text><text x=\"68\" y=\"75\">200</text></g><text x=\"25\" y=\"185\" transform=\"rotate(-90 25 185)\" font-family=\"Arial\" font-size=\"13\">Cumulative frequency</text></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p263-q23",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Twenty Year 12 students were surveyed. These students were asked how many hours of sport they play per week, to the nearest hour. The results are shown in the frequency table. What is the mean number of hours of sport played by the students per week?",
+          "hint": "Estimate each class by its midpoint, multiply by frequency, and divide the total by 20 students.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p263-q23",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Twenty Year 12 students were surveyed about how many hours of sport they play each week. The frequency table is shown. What is the mean number of hours per week?",
+              "options": [
+                "3.3",
+                "4.3",
+                "5.0",
+                "5.3"
+              ],
+              "answer": 1,
+              "hint": "Use each interval midpoint (1, 4, 7, 10) as the representative number of hours.",
+              "steps": [
+                {
+                  "explain": "Find the midpoint of each class interval.",
+                  "work": "\\(0\text{–}2\to1;\\quad3\text{–}5\to4;\\quad6\text{–}8\to7;\\quad9\text{–}11\to10\\)"
+                },
+                {
+                  "explain": "Multiply each midpoint by the frequency and add.",
+                  "work": "\\(1(5)+4(10)+7(3)+10(2)=86\\)"
+                },
+                {
+                  "explain": "Divide by the total frequency, 20.",
+                  "work": "\\(\bar{x}=86/20=4.3\\Rightarrow\boxed{4.3\text{ hours}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "263",
+                "course": "Advanced",
+                "sourceQuestion": "Q23"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "263",
+            "course": "Advanced",
+            "sourceQuestion": "Q23"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 540 320\" role=\"img\" aria-label=\"Frequency table of hours of sport per week\"><rect width=\"540\" height=\"320\" fill=\"white\"/><g stroke=\"#475569\" stroke-width=\"1.5\" fill=\"none\"><path d=\"M60 35H480M60 90H480M60 145H480M60 200H480M60 255H480M60 35V255M300 35V255M480 35V255\"/></g><g font-family=\"Arial\" font-size=\"19\" fill=\"#172554\" text-anchor=\"middle\"><text x=\"180\" y=\"70\">Hours per week</text><text x=\"390\" y=\"70\">Frequency</text><text x=\"180\" y=\"125\">0–2</text><text x=\"390\" y=\"125\">5</text><text x=\"180\" y=\"180\">3–5</text><text x=\"390\" y=\"180\">10</text><text x=\"180\" y=\"235\">6–8</text><text x=\"390\" y=\"235\">3</text><text x=\"180\" y=\"290\">9–11</text><text x=\"390\" y=\"290\">2</text></g></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p263-q20",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The ages of members of a dance class are shown in the back-to-back stem-and-leaf plot. Pat claims that the women who attend the dance class are generally older than the men. Is Pat correct? Justify your answer by referring to the median and skewness of the two sets of data.",
+          "hint": "Read the ages from the stem-and-leaf plot, compare the medians, and describe the direction of each tail.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p263-q20",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The back-to-back stem-and-leaf plot compares the ages of women and men in a dance class. Pat says the women are generally older than the men. Is Pat correct? Refer to the medians and skewness.",
+              "options": [
+                "Yes; the women’s median age is 56.5, greater than the men’s 45; women are negatively skewed and men positively skewed",
+                "No; the men’s median age is greater",
+                "Yes; both medians are equal",
+                "No; the women’s median is lower"
+              ],
+              "answer": 0,
+              "hint": "Use the key to list the ages, find each median, then identify the direction of each distribution’s tail.",
+              "steps": [
+                {
+                  "explain": "Read the leaves using the key. The women’s ordered ages are 32, 42, 44, 50, 54, 55, 58, 58, 63, 63, 64, 69.",
+                  "work": "Women: 32,42,44,50,54,55,58,58,63,63,64,69"
+                },
+                {
+                  "explain": "There are 12 women, so their median is the average of the 6th and 7th values. Men’s ordered ages are 34,36,42,42,45,46,48,53,63, giving median 45.",
+                  "work": "Women median \\(=(55+58)/2=56.5\\); men median \\(=45\\)"
+                },
+                {
+                  "explain": "The women’s data have a longer tail toward younger ages (negative skew), while the men’s data have a longer tail toward older ages (positive skew).",
+                  "work": "Women: negative skew; men: positive skew"
+                },
+                {
+                  "explain": "The women’s median is higher, so Pat’s claim is supported.",
+                  "work": "\\(56.5>45\\Rightarrow\boxed{\text{Yes}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "263",
+                "course": "Advanced",
+                "sourceQuestion": "Q20"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "263",
+            "course": "Advanced",
+            "sourceQuestion": "Q20"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 650 340\" role=\"img\" aria-label=\"Back-to-back stem-and-leaf plot of ages of women and men\"><rect width=\"650\" height=\"340\" fill=\"white\"/><text x=\"230\" y=\"35\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"20\" font-style=\"italic\">Women</text><text x=\"420\" y=\"35\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"20\" font-style=\"italic\">Men</text><path d=\"M325 55V310\" stroke=\"#334155\" stroke-width=\"2\"/><g font-family=\"Arial\" font-size=\"20\" fill=\"#172554\" text-anchor=\"middle\"><text x=\"325\" y=\"95\">3</text><text x=\"325\" y=\"150\">4</text><text x=\"325\" y=\"205\">5</text><text x=\"325\" y=\"260\">6</text></g><g font-family=\"monospace\" font-size=\"18\" fill=\"#172554\" text-anchor=\"end\"><text x=\"305\" y=\"95\">2</text><text x=\"305\" y=\"150\">4 2</text><text x=\"305\" y=\"205\">8 8 5 4 0</text><text x=\"305\" y=\"260\">9 4 3 3</text></g><g font-family=\"monospace\" font-size=\"18\" fill=\"#172554\"><text x=\"345\" y=\"95\">4 6</text><text x=\"345\" y=\"150\">2 2 5 6 8</text><text x=\"345\" y=\"205\">3</text><text x=\"345\" y=\"260\">3</text></g><text x=\"325\" y=\"315\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\">Key: 3 | 2 = 32 years</text></svg>"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p263-q24",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Terry and Kim each sat twenty class tests. Terry’s results are displayed in the box-and-whisker plot. Kim’s five-number summary is 67, 69, 71, 73, 75. Answer (i)–(iii).",
+          "hint": "Read Terry’s median and spread from the box plot. Use Kim’s five-number summary to compare typical score and variability.",
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p263-q24-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Kim’s five-number summary is 67, 69, 71, 73, 75. Which set of values should be used to draw Kim’s box-and-whisker plot?",
+              "options": [
+                "Minimum 67, Q1 69, median 71, Q3 73, maximum 75",
+                "Minimum 69, Q1 67, median 71, Q3 75, maximum 73",
+                "Minimum 67, Q1 71, median 69, Q3 73, maximum 75",
+                "Minimum 67, Q1 69, median 73, Q3 71, maximum 75"
+              ],
+              "answer": 0,
+              "hint": "A five-number summary is listed in order: minimum, lower quartile, median, upper quartile, maximum.",
+              "steps": [
+                {
+                  "explain": "Match each value to its place in the ordered five-number summary.",
+                  "work": "\\(67<69<71<73<75\\)"
+                },
+                {
+                  "explain": "The whiskers go to the minimum 67 and maximum 75. The box runs from Q1=69 to Q3=73, with its median line at 71.",
+                  "work": "min 67; box 69–73; median 71; max 75"
+                },
+                {
+                  "explain": "This is the first option.",
+                  "work": "\\(\boxed{67,69,71,73,75}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "263",
+                "course": "Advanced",
+                "sourceQuestion": "Q24(i)"
+              }
+            },
+            {
+              "id": "y12a-advanced-005-p263-q24-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What percentage of Terry’s test results were below 69?",
+              "options": [
+                "\\(25\\%\\)",
+                "\\(50\\%\\)",
+                "\\(75\\%\\)",
+                "\\(100\\%\\)"
+              ],
+              "answer": 1,
+              "hint": "Locate 69 on Terry’s box plot. It is the median.",
+              "steps": [
+                {
+                  "explain": "The median line on Terry’s box plot is at 69.",
+                  "work": "\\(Q_2=69\\)"
+                },
+                {
+                  "explain": "Half the results lie below the median.",
+                  "work": "\\(\frac12\times100\\%=50\\%\\)"
+                },
+                {
+                  "explain": "Therefore, 50% of Terry’s results were below 69.",
+                  "work": "\\(\boxed{50\\%}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "263",
+                "course": "Advanced",
+                "sourceQuestion": "Q24(ii)"
+              }
+            },
+            {
+              "id": "y12a-advanced-005-p263-q24-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Terry claims his results were better than Kim’s. Is he correct? Compare the summary statistics and skewness.",
+              "options": [
+                "Yes; Terry has the higher maximum",
+                "No; Kim’s median is higher and Kim’s scores are more consistent",
+                "Yes; Terry’s median is higher",
+                "No; Terry’s range is smaller and his plot is symmetric"
+              ],
+              "answer": 1,
+              "hint": "Compare the medians for typical performance, then compare the spreads and skewness shown by the box plots.",
+              "steps": [
+                {
+                  "explain": "Terry’s median is 69. Kim’s median is 71, so Kim’s typical score is higher. At 69, 50% of Terry’s results but about 75% of Kim’s are above the mark.",
+                  "work": "\\(71>69\\)"
+                },
+                {
+                  "explain": "Terry’s upper half and upper whisker are much longer than the lower side, so his scores are positively skewed. Kim’s five-number summary is balanced around 71, and her IQR and range are smaller.",
+                  "work": "Terry: positive skew; Kim: more symmetric and less spread"
+                },
+                {
+                  "explain": "Therefore Terry’s claim is not supported; Kim’s results were generally better and more consistent.",
+                  "work": "\\(\boxed{\text{No}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "263",
+                "course": "Advanced",
+                "sourceQuestion": "Q24(iii)"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "263",
+            "course": "Advanced",
+            "sourceQuestion": "Q24"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 280\" role=\"img\" aria-label=\"Terry's box plot and number line for drawing Kim's box plot\"><rect width=\"760\" height=\"280\" fill=\"white\"/><g stroke=\"#cbd5e1\" stroke-width=\"1\"><path d=\"M100 225H680\"/><path d=\"M120 205V235M160 205V235M200 205V235M240 205V235M280 205V235M320 205V235M360 205V235M400 205V235M440 205V235M480 205V235M520 205V235M560 205V235M600 205V235M640 205V235\"/></g><path d=\"M200 80H240M200 68V92M240 62H440V98H240ZM280 62V98M480 80H560M520 68V92\" fill=\"none\" stroke=\"#475569\" stroke-width=\"4\"/><g font-family=\"Arial\" font-size=\"17\" fill=\"#334155\"><text x=\"75\" y=\"86\">Terry</text><text x=\"75\" y=\"158\">Kim</text></g><g font-family=\"Arial\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"120\" y=\"255\">65</text><text x=\"160\" y=\"255\">66</text><text x=\"200\" y=\"255\">67</text><text x=\"240\" y=\"255\">68</text><text x=\"280\" y=\"255\">69</text><text x=\"320\" y=\"255\">70</text><text x=\"360\" y=\"255\">71</text><text x=\"400\" y=\"255\">72</text><text x=\"440\" y=\"255\">73</text><text x=\"480\" y=\"255\">74</text><text x=\"520\" y=\"255\">75</text><text x=\"560\" y=\"255\">76</text><text x=\"600\" y=\"255\">77</text></g><text x=\"385\" y=\"35\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">Test scores</text></svg>"
+          }
         }
       ]
     },
