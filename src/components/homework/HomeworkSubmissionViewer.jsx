@@ -128,7 +128,6 @@ const HomeworkSubmissionViewer = ({ sessionId, mode, uid, info, onClose, onCheck
       await markHomeworkChecked(sessionId, grade, {
         studentId: submission?.studentId,
         topics: submission?.topics || info?.topics || [],
-        sessionDate: submission?.sessionDate || info?.date || '',
       });
       setSubmission((s) => ({ ...s, status: 'checked' }));
       onChecked?.(sessionId);

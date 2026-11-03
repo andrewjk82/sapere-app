@@ -15,8 +15,7 @@ import ScheduleLessonModal from './ScheduleLessonModal';
 import LessonTopicPicker from './schedule/LessonTopicPicker';
 import LessonWorkspace from './LessonWorkspace';
 import HomeworkRedo from './homework/HomeworkRedo';
-import { loadLessonMistakes, flushLessonMistakesIfDue, markLessonMistakesDone, onLessonMistakesChange } from '../services/lessonMistakesService';
-import { mistakesForLesson } from '../utils/lessonMistakes';
+import { mistakesForLesson, MISTAKES_REVIEWED_FIELD } from '../utils/lessonMistakes';
 import {
   groupMeta, findPreviousCoveredSession, findNextTopic, splitHomeworkExtra, composeHomework,
 } from '../utils/lessonTopics';
@@ -288,10 +287,8 @@ const Schedule = ({ students = [] }) => {
   }, [isAdmin, profile?.studySubjectExamDates]);
   const [selectedSession, setSelectedSession] = useState(null);
   const [lessonSession, setLessonSession] = useState(null);   // the lesson screen (PDF + notes) for this session
-  // "Check the mistake": the ✗ / ½ homework questions carried to this lesson, per student.
-  const [lessonMistakes, setLessonMistakes] = useState({});   // studentId → [{ sessionId, date, topics, marks, ... }]
+  // "Check the mistake": earlier homework's ✗ / ½ questions, redone together in this lesson.
   const [mistakeReview, setMistakeReview] = useState(null);   // { item, studentId, studentName }
-  const [mistakesTick, setMistakesTick] = useState(0);
   // The red "now" line on today's column: moves once a minute.
   const [nowTick, setNowTick] = useState(() => new Date());
   useEffect(() => {
@@ -427,17 +424,7 @@ const Schedule = ({ students = [] }) => {
     };
   }, [user?.uid, isAdmin]);
 
-  // Homework mistakes queued on this device are written once a day, in one batch.
-  useEffect(() => {
-    if (!isAdmin) return undefined;
-    flushLessonMistakesIfDue();
-    const onVisible = () => { if (document.visibilityState === 'visible') flushLessonMistakesIfDue(); };
-    document.addEventListener('visibilitychange', onVisible);
-    const off = onLessonMistakesChange(() => setMistakesTick((n) => n + 1));
-    return () => { document.removeEventListener('visibilitychange', onVisible); off(); };
-  }, [isAdmin]);
-
-  // One read per student (cached), only when the teacher opens a lesson.
+  // From the sessions already loaded (homeworkMarks) — no extra reads.
   const selectedStudents = useMemo(() => {
     if (!selectedSession) return [];
     const list = selectedSession.isGroupedClass
@@ -445,22 +432,23 @@ const Schedule = ({ students = [] }) => {
       : [{ studentId: selectedSession.studentId, studentName: selectedSession.studentName }];
     return list.filter((s, i, all) => s.studentId && all.findIndex((o) => o.studentId === s.studentId) === i);
   }, [selectedSession]);
-  useEffect(() => {
-    if (!isAdmin || selectedStudents.length === 0) return undefined;
-    let cancelled = false;
-    selectedStudents.forEach(({ studentId }) => {
-      loadLessonMistakes(studentId).then((items) => {
-        if (!cancelled) setLessonMistakes((prev) => ({ ...prev, [studentId]: items }));
-      });
-    });
-    return () => { cancelled = true; };
-  }, [isAdmin, selectedStudents, mistakesTick]);
   const selectedMistakes = useMemo(() => (
-    selectedSession
-      ? selectedStudents.flatMap(({ studentId, studentName }) => mistakesForLesson(lessonMistakes[studentId] || [], selectedSession.date)
+    isAdmin && selectedSession
+      ? selectedStudents.flatMap(({ studentId, studentName }) => mistakesForLesson(sessions, { studentId, lessonDate: selectedSession.date })
         .map((item) => ({ item, studentId, studentName })))
       : []
-  ), [selectedSession, selectedStudents, lessonMistakes]);
+  ), [isAdmin, selectedSession, selectedStudents, sessions]);
+
+  // One write, on that homework's own session: the live session listener then hides the button on every device.
+  const markMistakesDone = async ({ item }) => {
+    try {
+      await updateDoc(doc(db, 'sessions', item.sessionId), { [MISTAKES_REVIEWED_FIELD]: new Date().toISOString() });
+      setMistakeReview(null);
+    } catch (err) {
+      console.error(err);
+      showToast('Could not save. Try again.', 'error');
+    }
+  };
 
   // ── Helpers ────────────────────────────────────────────────────────────────
   const handleOpenDetails = (session) => {
@@ -1733,10 +1721,7 @@ const Schedule = ({ students = [] }) => {
             studentId: mistakeReview.studentId,
             studentName: mistakeReview.studentName,
             studentProfile: studentProfileCache[mistakeReview.studentId] || null,
-            onDone: () => {
-              markLessonMistakesDone({ studentId: mistakeReview.studentId, sessionId: mistakeReview.item.sessionId });
-              setMistakeReview(null);
-            },
+            onDone: () => markMistakesDone(mistakeReview),
           }}
           onClose={() => setMistakeReview(null)}
         />

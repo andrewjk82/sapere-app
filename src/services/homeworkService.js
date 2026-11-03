@@ -4,7 +4,6 @@ import {
   collection, doc, getDoc, getDocs, query, where, writeBatch, serverTimestamp,
 } from 'firebase/firestore';
 import { db, ADMIN_UID, ADMIN_EMAIL } from '../firebase/config';
-import { queueLessonMistakes } from './lessonMistakesService';
 import { resizeDataUrlImage } from '../utils/imageResize';
 import { createAnswerKeyCache, idbAnswerKeyAdapter } from '../utils/answerKeyCache';
 import {
@@ -263,19 +262,6 @@ export async function markHomeworkChecked(sessionId, grade = null, notify = null
   });
   await batch.commit();
   assignmentsCache = null;
-  // The ✗ / ½ questions go to the student's next lesson ("Check the mistake"). Queued on this
-  // device only; written once a day in one batch (lessonMistakesService), never here.
-  if (notify?.studentId && grade?.marks) {
-    try {
-      queueLessonMistakes({
-        studentId: notify.studentId,
-        sessionId,
-        sessionDate: notify.sessionDate || '',
-        topics: notify.topics || [],
-        grade,
-      });
-    } catch (err) { console.warn('[homework] lesson mistakes queue failed (non-fatal):', err?.message || err); }
-  }
   // Tell the student it is back. Push + in-app only (no email), and never blocks or fails the check.
   if (notify?.studentId) {
     notifyStudentHomeworkChecked({ studentId: notify.studentId, sessionId, topics: notify.topics || [], grade })
