@@ -4175,15 +4175,15 @@
               "hint": "Read two points from the drawn line, calculate its gradient, then substitute one point to find the intercept.",
               "steps": [
                 {
-                  "explain": "Read two convenient points on the line of best fit, approximately \\((50,3.6)\\) and \\((80,12)\\). The horizontal change is 30 cm and the vertical change is 8.4 kg.",
-                  "work": "\\(\\Delta h=80-50=30,\\quad\\Delta M=12-3.6=8.4\\)",
+                  "explain": "Read two convenient points on the line of best fit, approximately \\((50,3.5)\\) and \\((80,12)\\). The horizontal change is 30 cm and the vertical change is 8.4 kg.",
+                  "work": "\\(\\Delta h=80-50=30,\\quad\\Delta M=12-3.5=8.5\\)",
                   "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 490 400\" role=\"img\" aria-label=\"Scatterplot of Baby Logan’s height and mass with line of best fit\"><rect width=\"490\" height=\"400\" fill=\"white\"/><text x=\"260\" y=\"24\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">Height and mass of a baby</text><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M90.0 70V320\"/><path d=\"M125.0 70V320\"/><path d=\"M160.0 70V320\"/><path d=\"M195.0 70V320\"/><path d=\"M230.0 70V320\"/><path d=\"M265.0 70V320\"/><path d=\"M300.0 70V320\"/><path d=\"M335.0 70V320\"/><path d=\"M370.0 70V320\"/><path d=\"M405.0 70V320\"/><path d=\"M440.0 70V320\"/><path d=\"M90 320.0H440\"/><path d=\"M90 300.8H440\"/><path d=\"M90 281.5H440\"/><path d=\"M90 262.3H440\"/><path d=\"M90 243.1H440\"/><path d=\"M90 223.8H440\"/><path d=\"M90 204.6H440\"/><path d=\"M90 185.4H440\"/><path d=\"M90 166.2H440\"/><path d=\"M90 146.9H440\"/><path d=\"M90 127.7H440\"/><path d=\"M90 108.5H440\"/><path d=\"M90 89.2H440\"/><path d=\"M90 70.0H440\"/></g><path d=\"M90 70V320H440\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"90.0\" y=\"343\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">40</text><text x=\"160.0\" y=\"343\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">50</text><text x=\"230.0\" y=\"343\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">60</text><text x=\"300.0\" y=\"343\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">70</text><text x=\"370.0\" y=\"343\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">80</text><text x=\"440.0\" y=\"343\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">90</text><text x=\"80\" y=\"324.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">1</text><text x=\"80\" y=\"285.5\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">3</text><text x=\"80\" y=\"247.1\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">5</text><text x=\"80\" y=\"208.6\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">7</text><text x=\"80\" y=\"170.2\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">9</text><text x=\"80\" y=\"131.7\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">11</text><text x=\"80\" y=\"93.2\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">13</text><path d=\"M90 323.8L440 81.5\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/><circle cx=\"125.0\" cy=\"289.2\" r=\"3.7\" fill=\"#334155\"/><circle cx=\"160.0\" cy=\"271.9\" r=\"3.7\" fill=\"#334155\"/><circle cx=\"195.0\" cy=\"237.3\" r=\"3.7\" fill=\"#334155\"/><circle cx=\"230.0\" cy=\"216.2\" r=\"3.7\" fill=\"#334155\"/><circle cx=\"265.0\" cy=\"193.1\" r=\"3.7\" fill=\"#334155\"/><circle cx=\"300.0\" cy=\"171.9\" r=\"3.7\" fill=\"#334155\"/><circle cx=\"335.0\" cy=\"133.5\" r=\"3.7\" fill=\"#334155\"/><circle cx=\"370.0\" cy=\"108.5\" r=\"3.7\" fill=\"#334155\"/><circle cx=\"405.0\" cy=\"83.5\" r=\"3.7\" fill=\"#334155\"/><circle cx=\"160.0\" cy=\"270.0\" r=\"7\" fill=\"#22c55e\" stroke=\"white\" stroke-width=\"2\"/><text x=\"170.0\" y=\"260.0\" font-family=\"Arial\" font-size=\"12\" fill=\"#166534\">(50, 3.6)</text><circle cx=\"370.0\" cy=\"108.5\" r=\"7\" fill=\"#22c55e\" stroke=\"white\" stroke-width=\"2\"/><text x=\"380.0\" y=\"98.5\" font-family=\"Arial\" font-size=\"12\" fill=\"#166534\">(80, 12)</text><rect x=\"255\" y=\"37\" width=\"215\" height=\"36\" rx=\"7\" fill=\"#dcfce7\" stroke=\"#16a34a\"/><text x=\"362\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\" fill=\"#166534\">Selected points on fitted line</text><text x=\"265\" y=\"375\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Height (cm)</text><text x=\"22\" y=\"195\" transform=\"rotate(-90 22 195)\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Mass (kg)</text></svg>"
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 490 400\" role=\"img\" aria-label=\"Scatterplot of Baby Logan’s height and mass with line of best fit\"><rect width=\"490\" height=\"400\" fill=\"white\"/><text x=\"260\" y=\"24\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">Height and mass of a baby</text><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M90.0 70V320\"/><path d=\"M125.0 70V320\"/><path d=\"M160.0 70V320\"/><path d=\"M195.0 70V320\"/><path d=\"M230.0 70V320\"/><path d=\"M265.0 70V320\"/><path d=\"M300.0 70V320\"/><path d=\"M335.0 70V320\"/><path d=\"M370.0 70V320\"/><path d=\"M405.0 70V320\"/><path d=\"M440.0 70V320\"/><path d=\"M90 320.0H440\"/><path d=\"M90 300.8H440\"/><path d=\"M90 281.5H440\"/><path d=\"M90 262.3H440\"/><path d=\"M90 243.1H440\"/><path d=\"M90 223.8H440\"/><path d=\"M90 204.6H440\"/><path d=\"M90 185.4H440\"/><path d=\"M90 166.2H440\"/><path d=\"M90 146.9H440\"/><path d=\"M90 127.7H440\"/><path d=\"M90 108.5H440\"/><path d=\"M90 89.2H440\"/><path d=\"M90 70.0H440\"/></g><path d=\"M90 70V320H440\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"90.0\" y=\"343\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">40</text><text x=\"160.0\" y=\"343\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">50</text><text x=\"230.0\" y=\"343\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">60</text><text x=\"300.0\" y=\"343\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">70</text><text x=\"370.0\" y=\"343\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">80</text><text x=\"440.0\" y=\"343\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">90</text><text x=\"80\" y=\"324.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">1</text><text x=\"80\" y=\"285.5\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">3</text><text x=\"80\" y=\"247.1\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">5</text><text x=\"80\" y=\"208.6\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">7</text><text x=\"80\" y=\"170.2\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">9</text><text x=\"80\" y=\"131.7\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">11</text><text x=\"80\" y=\"93.2\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">13</text><path d=\"M90 323.8L440 81.5\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/><circle cx=\"125.0\" cy=\"289.2\" r=\"3.7\" fill=\"#334155\"/><circle cx=\"160.0\" cy=\"271.9\" r=\"3.7\" fill=\"#334155\"/><circle cx=\"195.0\" cy=\"237.3\" r=\"3.7\" fill=\"#334155\"/><circle cx=\"230.0\" cy=\"216.2\" r=\"3.7\" fill=\"#334155\"/><circle cx=\"265.0\" cy=\"193.1\" r=\"3.7\" fill=\"#334155\"/><circle cx=\"300.0\" cy=\"171.9\" r=\"3.7\" fill=\"#334155\"/><circle cx=\"335.0\" cy=\"133.5\" r=\"3.7\" fill=\"#334155\"/><circle cx=\"370.0\" cy=\"108.5\" r=\"3.7\" fill=\"#334155\"/><circle cx=\"405.0\" cy=\"83.5\" r=\"3.7\" fill=\"#334155\"/><circle cx=\"160.0\" cy=\"271.9\" r=\"7\" fill=\"#22c55e\" stroke=\"white\" stroke-width=\"2\"/><text x=\"170.0\" y=\"262.0\" font-family=\"Arial\" font-size=\"12\" fill=\"#166534\">(50, 3.5)</text><circle cx=\"370.0\" cy=\"108.5\" r=\"7\" fill=\"#22c55e\" stroke=\"white\" stroke-width=\"2\"/><text x=\"380.0\" y=\"98.5\" font-family=\"Arial\" font-size=\"12\" fill=\"#166534\">(80, 12)</text><rect x=\"255\" y=\"37\" width=\"215\" height=\"36\" rx=\"7\" fill=\"#dcfce7\" stroke=\"#16a34a\"/><text x=\"362\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\" fill=\"#166534\">Selected points on fitted line</text><text x=\"265\" y=\"375\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Height (cm)</text><text x=\"22\" y=\"195\" transform=\"rotate(-90 22 195)\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Mass (kg)</text></svg>"
                   }
                 },
                 {
                   "explain": "The gradient is rise over run. Use the point (80,12) in \\(M=0.28h+c\\) to find c.",
-                  "work": "\\(m=\\frac{8.4}{30}=0.28\\)\\n\\(12=0.28(80)+c\\Rightarrow c=12-22.4=-10.4\\)"
+                  "work": "\\(m=\\frac{8.5}{30}=0.28333\\ldots\\approx0.28\\)\\n\\(12=0.28(80)+c\\Rightarrow c=12-22.4=-10.4\\)"
                 },
                 {
                   "explain": "Combine the gradient and intercept.",
@@ -4307,6 +4307,219 @@
             "page": "273",
             "course": "Advanced",
             "sourceQuestion": "Bivariate Q5"
+          }
+        },
+        {
+          "id": "y12a-advanced-005-p273-q6",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Jim is a plumber and wants to buy a second-hand work truck. The following table shows the price (y) in dollars of eight trucks, and the distance (x) in kilometres they had travelled. The data is recorded on a scatterplot and Jim has drawn a regression line by eye.",
+          "hint": "For the relationship, calculate or read Pearson’s r. For the line, read two points and use rise over run. For the later value, decrease by 25% each year by multiplying by 0.75.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1040 420\" role=\"img\" aria-label=\"Data table and scatterplot with a by-eye regression line for eight second-hand trucks\"><rect width=\"1040\" height=\"420\" fill=\"white\"/><g transform=\"translate(0 50)\"><text x=\"250\" y=\"24\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">Eight work trucks</text><rect x=\"10\" y=\"48\" width=\"481\" height=\"70\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><path d=\"M155 48V118\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M197 48V118\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M239 48V118\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M281 48V118\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M323 48V118\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M365 48V118\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M407 48V118\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M449 48V118\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"10\" y=\"118\" width=\"481\" height=\"70\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><path d=\"M155 118V188\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M197 118V188\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M239 118V188\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M281 118V188\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M323 118V188\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M365 118V188\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M407 118V188\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M449 118V188\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"82.5\" y=\"90\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">Distance x (km)</text><text x=\"176.0\" y=\"90\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">25,000</text><text x=\"218.0\" y=\"90\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">60,000</text><text x=\"260.0\" y=\"90\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">85,000</text><text x=\"302.0\" y=\"90\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">40,000</text><text x=\"344.0\" y=\"90\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">50,000</text><text x=\"386.0\" y=\"90\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">75,000</text><text x=\"428.0\" y=\"90\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">30,000</text><text x=\"470.0\" y=\"90\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">45,000</text><text x=\"82.5\" y=\"160\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">Price y ($)</text><text x=\"176.0\" y=\"160\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">43,000</text><text x=\"218.0\" y=\"160\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">26,000</text><text x=\"260.0\" y=\"160\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">22,000</text><text x=\"302.0\" y=\"160\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">32,000</text><text x=\"344.0\" y=\"160\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">38,000</text><text x=\"386.0\" y=\"160\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">28,000</text><text x=\"428.0\" y=\"160\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">40,000</text><text x=\"470.0\" y=\"160\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">34,000</text></g><g transform=\"translate(515 8)\"><text x=\"260\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">Truck distance and price</text><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M75.0 60V325\"/><path d=\"M128.6 60V325\"/><path d=\"M182.1 60V325\"/><path d=\"M235.7 60V325\"/><path d=\"M289.3 60V325\"/><path d=\"M342.9 60V325\"/><path d=\"M396.4 60V325\"/><path d=\"M450.0 60V325\"/><path d=\"M75 325.0H450\"/><path d=\"M75 272.0H450\"/><path d=\"M75 219.0H450\"/><path d=\"M75 166.0H450\"/><path d=\"M75 113.0H450\"/><path d=\"M75 60.0H450\"/></g><path d=\"M75 60V325H450\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"75.0\" y=\"347\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">20</text><text x=\"128.6\" y=\"347\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">30</text><text x=\"182.1\" y=\"347\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">40</text><text x=\"235.7\" y=\"347\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">50</text><text x=\"289.3\" y=\"347\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">60</text><text x=\"342.9\" y=\"347\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">70</text><text x=\"396.4\" y=\"347\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">80</text><text x=\"450.0\" y=\"347\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">90</text><text x=\"66\" y=\"329.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">20</text><text x=\"66\" y=\"276.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">25</text><text x=\"66\" y=\"223.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">30</text><text x=\"66\" y=\"170.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">35</text><text x=\"66\" y=\"117.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">40</text><text x=\"66\" y=\"64.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">45</text><circle cx=\"101.8\" cy=\"81.2\" r=\"4\" fill=\"#334155\"/><circle cx=\"289.3\" cy=\"261.4\" r=\"4\" fill=\"#334155\"/><circle cx=\"423.2\" cy=\"303.8\" r=\"4\" fill=\"#334155\"/><circle cx=\"182.1\" cy=\"197.8\" r=\"4\" fill=\"#334155\"/><circle cx=\"235.7\" cy=\"134.2\" r=\"4\" fill=\"#334155\"/><circle cx=\"369.6\" cy=\"240.2\" r=\"4\" fill=\"#334155\"/><circle cx=\"128.6\" cy=\"113.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"208.9\" cy=\"176.6\" r=\"4\" fill=\"#334155\"/><path d=\"M128.6 113.0L423.2 303.8\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/><text x=\"260\" y=\"378\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">Distance travelled (000 km)</text><text x=\"18\" y=\"195\" transform=\"rotate(-90 18 195)\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">Price ($000)</text></g></svg>"
+          },
+          "parts": [
+            {
+              "id": "y12a-advanced-005-p273-q6-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Comment on the association between x and y with reference to the value of Pearson’s correlation coefficient.",
+              "options": [
+                "The association is weak and positive; \\(r\\) is close to 0",
+                "The association is strong and positive; \\(r\\) is close to 1",
+                "There is no association; \\(r=0\\)",
+                "The association is strong and negative; \\(r\\) is close to −1"
+              ],
+              "answer": 3,
+              "hint": "Use the table to find r, or note that the points go down closely as distance increases. State both strength and direction.",
+              "steps": [
+                {
+                  "explain": "The table gives 8 paired distances and prices. Calculate Pearson’s coefficient using the paired values. The means are 51.25 thousand km and 32.875 thousand dollars.",
+                  "work": "\\(\\bar{x}=\\frac{25+60+85+40+50+75+30+45}{8}=\\frac{410}{8}=51.25\\)\\n\\(\\bar{y}=\\frac{43+26+22+32+38+28+40+34}{8}=\\frac{263}{8}=32.875\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 280\" role=\"img\" aria-label=\"Distances travelled and prices of eight second-hand work trucks\"><rect width=\"500\" height=\"280\" fill=\"white\"/><text x=\"250\" y=\"24\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">Eight work trucks</text><rect x=\"10\" y=\"48\" width=\"481\" height=\"70\" fill=\"#dcfce7\" stroke=\"#475569\" stroke-width=\"1.2\"/><path d=\"M155 48V118\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M197 48V118\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M239 48V118\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M281 48V118\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M323 48V118\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M365 48V118\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M407 48V118\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M449 48V118\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"10\" y=\"118\" width=\"481\" height=\"70\" fill=\"#dcfce7\" stroke=\"#475569\" stroke-width=\"1.2\"/><path d=\"M155 118V188\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M197 118V188\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M239 118V188\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M281 118V188\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M323 118V188\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M365 118V188\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M407 118V188\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M449 118V188\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"82.5\" y=\"90\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">Distance x (km)</text><text x=\"176.0\" y=\"90\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">25,000</text><text x=\"218.0\" y=\"90\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">60,000</text><text x=\"260.0\" y=\"90\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">85,000</text><text x=\"302.0\" y=\"90\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">40,000</text><text x=\"344.0\" y=\"90\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">50,000</text><text x=\"386.0\" y=\"90\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">75,000</text><text x=\"428.0\" y=\"90\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">30,000</text><text x=\"470.0\" y=\"90\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">45,000</text><text x=\"82.5\" y=\"160\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">Price y ($)</text><text x=\"176.0\" y=\"160\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">43,000</text><text x=\"218.0\" y=\"160\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">26,000</text><text x=\"260.0\" y=\"160\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">22,000</text><text x=\"302.0\" y=\"160\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">32,000</text><text x=\"344.0\" y=\"160\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">38,000</text><text x=\"386.0\" y=\"160\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">28,000</text><text x=\"428.0\" y=\"160\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">40,000</text><text x=\"470.0\" y=\"160\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"10.5\" fill=\"#172554\">34,000</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Using the centred sums from the paired data gives a negative coefficient with magnitude close to 1.",
+                  "work": "\\(\\sum(x-\\bar{x})(y-\\bar{y})=-963.75,\\quad\\sum(x-\\bar{x})^2=3087.5,\\quad\\sum(y-\\bar{y})^2=370.875\\)\\n\\(r=\\frac{-963.75}{\\sqrt{3087.5(370.875)}}\\approx-0.9006\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 390\" role=\"img\" aria-label=\"Truck scatterplot showing a strong downward association and correlation minus 0.9006\"><rect width=\"500\" height=\"390\" fill=\"white\"/><rect width=\"500\" height=\"390\" fill=\"white\"/><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M75.0 60V325\"/><path d=\"M128.6 60V325\"/><path d=\"M182.1 60V325\"/><path d=\"M235.7 60V325\"/><path d=\"M289.3 60V325\"/><path d=\"M342.9 60V325\"/><path d=\"M396.4 60V325\"/><path d=\"M450.0 60V325\"/><path d=\"M75 325.0H450\"/><path d=\"M75 272.0H450\"/><path d=\"M75 219.0H450\"/><path d=\"M75 166.0H450\"/><path d=\"M75 113.0H450\"/><path d=\"M75 60.0H450\"/></g><path d=\"M75 60V325H450\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"75.0\" y=\"347\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">20</text><text x=\"128.6\" y=\"347\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">30</text><text x=\"182.1\" y=\"347\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">40</text><text x=\"235.7\" y=\"347\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">50</text><text x=\"289.3\" y=\"347\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">60</text><text x=\"342.9\" y=\"347\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">70</text><text x=\"396.4\" y=\"347\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">80</text><text x=\"450.0\" y=\"347\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">90</text><text x=\"66\" y=\"329.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">20</text><text x=\"66\" y=\"276.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">25</text><text x=\"66\" y=\"223.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">30</text><text x=\"66\" y=\"170.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">35</text><text x=\"66\" y=\"117.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">40</text><text x=\"66\" y=\"64.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">45</text><circle cx=\"101.8\" cy=\"81.2\" r=\"4\" fill=\"#334155\"/><circle cx=\"289.3\" cy=\"261.4\" r=\"4\" fill=\"#334155\"/><circle cx=\"423.2\" cy=\"303.8\" r=\"4\" fill=\"#334155\"/><circle cx=\"182.1\" cy=\"197.8\" r=\"4\" fill=\"#334155\"/><circle cx=\"235.7\" cy=\"134.2\" r=\"4\" fill=\"#334155\"/><circle cx=\"369.6\" cy=\"240.2\" r=\"4\" fill=\"#334155\"/><circle cx=\"128.6\" cy=\"113.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"208.9\" cy=\"176.6\" r=\"4\" fill=\"#334155\"/><path d=\"M128.6 113.0L423.2 303.8\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/><text x=\"260\" y=\"378\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">Distance travelled (000 km)</text><text x=\"18\" y=\"195\" transform=\"rotate(-90 18 195)\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">Price ($000)</text><rect x=\"110\" y=\"35\" width=\"230\" height=\"36\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\"/><text x=\"225\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\">r = −0.9006: strong negative</text></svg>"
+                  }
+                },
+                {
+                  "explain": "The negative sign means price tends to fall as distance travelled increases. Since |r| is about 0.90, the linear association is strong.",
+                  "work": "\\(r\\approx-0.9006\\Rightarrow\\boxed{\\text{strong negative association}}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "association between x and y",
+                  "note": "Describe direction and strength using r."
+                }
+              ],
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "273–274",
+                "course": "Advanced",
+                "sourceQuestion": "Bivariate Q6"
+              }
+            },
+            {
+              "id": "y12a-advanced-005-p273-q6-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The data is recorded on a scatterplot and Jim has drawn a regression line by eye. Find the equation of Jim’s regression line, in the form \\(y=mx+c\\). Give your answers correct to 2 decimal places.",
+              "options": [
+                "\\(y=0.33x+49.82\\)",
+                "\\(y=-0.33x+49.82\\)",
+                "\\(y=-0.33x+43.00\\)",
+                "\\(y=-3.30x+49.82\\)"
+              ],
+              "answer": 1,
+              "hint": "Read two clear points on the drawn line. The graph axes are in thousands: x is 000 km and y is $000.",
+              "steps": [
+                {
+                  "explain": "Read two approximate points on Jim’s drawn line: (30,40) and (85,22). These graph values mean 30,000 km and $40,000, and 85,000 km and $22,000.",
+                  "work": "\\(\\Delta x=85-30=55,\\quad\\Delta y=22-40=-18\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 390\" role=\"img\" aria-label=\"Scatterplot of truck distance in thousands of kilometres against price in thousands of dollars, with regression line drawn by eye\"><rect width=\"500\" height=\"390\" fill=\"white\"/><text x=\"260\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">Truck distance and price</text><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M75.0 60V325\"/><path d=\"M128.6 60V325\"/><path d=\"M182.1 60V325\"/><path d=\"M235.7 60V325\"/><path d=\"M289.3 60V325\"/><path d=\"M342.9 60V325\"/><path d=\"M396.4 60V325\"/><path d=\"M450.0 60V325\"/><path d=\"M75 325.0H450\"/><path d=\"M75 272.0H450\"/><path d=\"M75 219.0H450\"/><path d=\"M75 166.0H450\"/><path d=\"M75 113.0H450\"/><path d=\"M75 60.0H450\"/></g><path d=\"M75 60V325H450\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"75.0\" y=\"347\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">20</text><text x=\"128.6\" y=\"347\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">30</text><text x=\"182.1\" y=\"347\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">40</text><text x=\"235.7\" y=\"347\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">50</text><text x=\"289.3\" y=\"347\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">60</text><text x=\"342.9\" y=\"347\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">70</text><text x=\"396.4\" y=\"347\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">80</text><text x=\"450.0\" y=\"347\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">90</text><text x=\"66\" y=\"329.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">20</text><text x=\"66\" y=\"276.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">25</text><text x=\"66\" y=\"223.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">30</text><text x=\"66\" y=\"170.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">35</text><text x=\"66\" y=\"117.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">40</text><text x=\"66\" y=\"64.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">45</text><circle cx=\"101.8\" cy=\"81.2\" r=\"4\" fill=\"#334155\"/><circle cx=\"289.3\" cy=\"261.4\" r=\"4\" fill=\"#334155\"/><circle cx=\"423.2\" cy=\"303.8\" r=\"4\" fill=\"#334155\"/><circle cx=\"182.1\" cy=\"197.8\" r=\"4\" fill=\"#334155\"/><circle cx=\"235.7\" cy=\"134.2\" r=\"4\" fill=\"#334155\"/><circle cx=\"369.6\" cy=\"240.2\" r=\"4\" fill=\"#334155\"/><circle cx=\"128.6\" cy=\"113.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"208.9\" cy=\"176.6\" r=\"4\" fill=\"#334155\"/><path d=\"M128.6 113.0L423.2 303.8\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/><circle cx=\"128.6\" cy=\"113.0\" r=\"7\" fill=\"#22c55e\" stroke=\"white\" stroke-width=\"2\"/><text x=\"124.6\" y=\"101.0\" font-family=\"Arial\" font-size=\"12\" fill=\"#166534\">(30, 40)</text><circle cx=\"423.2\" cy=\"303.8\" r=\"7\" fill=\"#22c55e\" stroke=\"white\" stroke-width=\"2\"/><text x=\"378.2\" y=\"321.8\" font-family=\"Arial\" font-size=\"12\" fill=\"#166534\">(85, 22)</text><path d=\"M128.6 113.0V303.8H423.2\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><rect x=\"105\" y=\"35\" width=\"260\" height=\"32\" rx=\"7\" fill=\"#dcfce7\" stroke=\"#16a34a\"/><text x=\"235\" y=\"56\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\" fill=\"#166534\">Use these two points to estimate gradient</text><text x=\"260\" y=\"378\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">Distance travelled (000 km)</text><text x=\"18\" y=\"195\" transform=\"rotate(-90 18 195)\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">Price ($000)</text></svg>"
+                  }
+                },
+                {
+                  "explain": "The gradient is change in y divided by change in x. Use the unrounded gradient with one point to find c.",
+                  "work": "\\(m=\\frac{-18}{55}=-0.32727\\ldots\\)\n\\(40=(-0.32727\\ldots)(30)+c\\Rightarrow c\\approx49.818\\)"
+                },
+                {
+                  "explain": "Round m and c to two decimal places and write the equation in the requested form.",
+                  "work": "\\(m=-0.33,\\quad c=49.82\\)\n\\(\\boxed{y=-0.33x+49.82}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "Find the equation of Jim’s regression line",
+                  "note": "Read points from the line, find its gradient, then its intercept."
+                }
+              ],
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "273–274",
+                "course": "Advanced",
+                "sourceQuestion": "Bivariate Q6"
+              }
+            },
+            {
+              "id": "y12a-advanced-005-p273-q6-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Use Jim’s regression equation to estimate the price of a vehicle that has travelled 55 000 kilometres.",
+              "options": [
+                "$30,670",
+                "$33,670",
+                "$31,670",
+                "$49,820"
+              ],
+              "answer": 2,
+              "hint": "The graph uses x in thousands of kilometres. For 55,000 km, substitute x=55.",
+              "steps": [
+                {
+                  "explain": "Convert 55,000 kilometres to the x-units used in the fitted equation.",
+                  "work": "\\(55,000\\text{ km}=55\\text{ thousand km}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 390\" role=\"img\" aria-label=\"Scatterplot of truck distance in thousands of kilometres against price in thousands of dollars, with regression line drawn by eye\"><rect width=\"500\" height=\"390\" fill=\"white\"/><text x=\"260\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\">Truck distance and price</text><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M75.0 60V325\"/><path d=\"M128.6 60V325\"/><path d=\"M182.1 60V325\"/><path d=\"M235.7 60V325\"/><path d=\"M289.3 60V325\"/><path d=\"M342.9 60V325\"/><path d=\"M396.4 60V325\"/><path d=\"M450.0 60V325\"/><path d=\"M75 325.0H450\"/><path d=\"M75 272.0H450\"/><path d=\"M75 219.0H450\"/><path d=\"M75 166.0H450\"/><path d=\"M75 113.0H450\"/><path d=\"M75 60.0H450\"/></g><path d=\"M75 60V325H450\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"75.0\" y=\"347\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">20</text><text x=\"128.6\" y=\"347\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">30</text><text x=\"182.1\" y=\"347\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">40</text><text x=\"235.7\" y=\"347\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">50</text><text x=\"289.3\" y=\"347\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">60</text><text x=\"342.9\" y=\"347\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">70</text><text x=\"396.4\" y=\"347\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">80</text><text x=\"450.0\" y=\"347\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">90</text><text x=\"66\" y=\"329.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">20</text><text x=\"66\" y=\"276.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">25</text><text x=\"66\" y=\"223.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">30</text><text x=\"66\" y=\"170.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">35</text><text x=\"66\" y=\"117.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">40</text><text x=\"66\" y=\"64.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"11\">45</text><circle cx=\"101.8\" cy=\"81.2\" r=\"4\" fill=\"#334155\"/><circle cx=\"289.3\" cy=\"261.4\" r=\"4\" fill=\"#334155\"/><circle cx=\"423.2\" cy=\"303.8\" r=\"4\" fill=\"#334155\"/><circle cx=\"182.1\" cy=\"197.8\" r=\"4\" fill=\"#334155\"/><circle cx=\"235.7\" cy=\"134.2\" r=\"4\" fill=\"#334155\"/><circle cx=\"369.6\" cy=\"240.2\" r=\"4\" fill=\"#334155\"/><circle cx=\"128.6\" cy=\"113.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"208.9\" cy=\"176.6\" r=\"4\" fill=\"#334155\"/><path d=\"M128.6 113.0L423.2 303.8\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/><path d=\"M262.5 325V201.3H75\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"3\" stroke-dasharray=\"5 4\"/><circle cx=\"262.5\" cy=\"201.3\" r=\"7\" fill=\"#22c55e\"/><rect x=\"105\" y=\"35\" width=\"260\" height=\"32\" rx=\"7\" fill=\"#dcfce7\" stroke=\"#16a34a\"/><text x=\"235\" y=\"56\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\" fill=\"#166534\">At x=55, predicted y=31.67 ($000)</text><text x=\"260\" y=\"378\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">Distance travelled (000 km)</text><text x=\"18\" y=\"195\" transform=\"rotate(-90 18 195)\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">Price ($000)</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Substitute x=55 into Jim’s regression equation. The predicted y is in thousands of dollars.",
+                  "work": "\\(y=-0.33(55)+49.82=-18.15+49.82=31.67\\)"
+                },
+                {
+                  "explain": "Convert $31.67 thousand to dollars.",
+                  "work": "\\(31.67\\times1000=\\boxed{\\$31,670}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "55 000 kilometres",
+                  "note": "Use x=55 because the graph and equation measure distance in thousands of kilometres."
+                }
+              ],
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "273–274",
+                "course": "Advanced",
+                "sourceQuestion": "Bivariate Q6"
+              }
+            },
+            {
+              "id": "y12a-advanced-005-p273-q6-iv",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "At the start of 2020, Jim decides to buy the truck that has travelled 55 000 kilometres. The value of the truck decreases by 25% each year. During which year will the truck be valued at less than $5000?",
+              "options": [
+                "2026",
+                "2025",
+                "2027",
+                "2028"
+              ],
+              "answer": 0,
+              "hint": "A 25% decrease leaves 75% of the previous year’s value. Use $31,670 as the starting value, then find when it drops below $5,000.",
+              "steps": [
+                {
+                  "explain": "A 25% yearly decrease means the value is multiplied by 75%, or 0.75, each year. Start with the predicted purchase price.",
+                  "work": "\\(V_n=31,670(0.75)^n\\)"
+                },
+                {
+                  "explain": "Find when the value reaches $5,000.",
+                  "work": "\\(5,000=31,670(0.75)^n\\)\n\\(n=\\frac{\\ln(5,000/31,670)}{\\ln(0.75)}\\approx6.4166\\)"
+                },
+                {
+                  "explain": "The truck must be held for more than 6.4166 years to be below $5,000. Check the surrounding whole years: after 6 years it is still above $5,000, and after 7 it is below. Starting at the beginning of 2020, the threshold is crossed during 2026.",
+                  "work": "\\(V_6=31,670(0.75)^6\\approx\\$5,636.58\\)\n\\(V_7=31,670(0.75)^7\\approx\\$4,227.43\\)\n\\(\\boxed{2026}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 620 210\" role=\"img\" aria-label=\"Truck value after six years remains above $5000 and after seven years is below $5000\"><rect width=\"620\" height=\"210\" fill=\"white\"/><text x=\"310\" y=\"26\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\" font-weight=\"bold\">Check the two whole years around 6.42 years</text><rect x=\"45\" y=\"55\" width=\"250\" height=\"95\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"170\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\">After 6 years</text><text x=\"170\" y=\"122\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">$5,636.58 &gt; $5,000</text><rect x=\"325\" y=\"55\" width=\"250\" height=\"95\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"3\"/><text x=\"450\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\">After 7 years</text><text x=\"450\" y=\"122\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\">$4,227.43 &lt; $5,000</text><text x=\"310\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\">Threshold crossed during 2026.</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "decreases by 25% each year",
+                  "note": "A 25% reduction means keep 75% of the value each year."
+                }
+              ],
+              "meta": {
+                "source": "Y12 Advanced Topic by topic 005",
+                "page": "273–274",
+                "course": "Advanced",
+                "sourceQuestion": "Bivariate Q6"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "price (y) in dollars of eight trucks",
+              "note": "Pair each truck’s price with the distance in the same table column."
+            },
+            {
+              "text": "regression line by eye",
+              "note": "Use two points read from the drawn line to estimate its equation."
+            }
+          ],
+          "meta": {
+            "source": "Y12 Advanced Topic by topic 005",
+            "page": "273–274",
+            "course": "Advanced",
+            "sourceQuestion": "Bivariate Q6"
           }
         }
       ]
