@@ -24470,10 +24470,10 @@
           "difficulty": "medium",
           "stem": "The cost of a jewellery box varies directly with the cube of its height. A jewellery box with a height of \\(10\\) cm costs \\(\\$50\\). Calculate the cost of a jewellery box with a height of \\(12\\) cm.",
           "options": [
-            "\\$86.40",
-            "\\$72.00",
-            "\\$60.00",
-            "\\$90.00"
+            "\\(\\$86.40\\)",
+            "\\(\\$72.00\\)",
+            "\\(\\$60.00\\)",
+            "\\(\\$90.00\\)"
           ],
           "answer": 0,
           "hint": "Direct variation with the cube means \\(C=kh^3\\). Use the first box to find \\(k\\), then substitute \\(h=12\\).",
@@ -24483,7 +24483,7 @@
               "work": "\\(C=kh^3\\)"
             },
             {
-              "explain": "Use the known box to find k.",
+              "explain": "Use the known box to find \\(k\\).",
               "work": "\\(50=k(10^3)=1000k\\Rightarrow k=0.05\\)"
             },
             {
