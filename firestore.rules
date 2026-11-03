@@ -89,13 +89,6 @@ service cloud.firestore {
       allow write: if isAdmin();
     }
 
-    // "Check the mistake": the ✗ / ½ homework questions carried to the student's next
-    // lesson, one doc per student. Teacher-only; written once a day in one batch
-    // from the teacher's device (lessonMistakesService.flushLessonMistakesIfDue).
-    match /lesson_mistakes/{studentId} {
-      allow read, write: if isAdmin();
-    }
-
     // Homework submissions — one per session (doc id = sessions/{sessionId} id);
     // full-size pages in pages/{i}. The student writes pages + this doc + the
     // session's homeworkStatus in ONE batch (homeworkService.submitHomework).
