@@ -4277,7 +4277,6 @@
               ]
             }
           ],
-          "solution": "In \\(\\triangle OAC\\), \\(OA^2 + AC^2 = 1 + 3 = 4 = OC^2\\), so \\(\\angle OAC = 90^\\circ = \\dfrac{\\pi}{2}\\). Since \\(\\sin\\angle ACO = \\dfrac{OA}{OC} = \\dfrac{1}{2}\\), \\(\\angle ACO = 30^\\circ\\) and \\(\\angle AOC = 60^\\circ\\).",
           "timeLimit": 60,
           "xp": 1,
           "meta": {
@@ -5507,7 +5506,6 @@
           ],
           "timeLimit": 60,
           "xp": 1,
-          "solution": "Arc length gives \\(\\theta = \\dfrac{9}{5} = 1.8\\text{ rad}\\). The two right triangles \\(OPT\\) and \\(OQT\\) together have area \\(2\\left(\\dfrac{1}{2} \\times 5 \\times PT\\right)\\), where \\(PT = 5\\tan 0.9 \\approx 6.303\\), giving \\(31.516\\text{ cm}^2\\). Sector \\(OPQ\\) has area \\(\\dfrac{1}{2}(5^2)(1.8) = 22.5\\text{ cm}^2\\). Shaded area \\(= 31.516 - 22.5 \\approx 9.0\\text{ cm}^2\\).",
           "meta": {
             "source": "Excel Success One HSC Topic-by-Topic Mathematics Advanced",
             "sourcePdf": "Y12 Advanced Topic by topic 001 (1).pdf",
@@ -5647,7 +5645,6 @@
               ]
             }
           ],
-          "solution": "The triangle area is \\(2\\sin\\theta = \\sqrt{3}\\), so \\(\\sin\\theta = \\dfrac{\\sqrt{3}}{2}\\) and the other angle is \\(\\dfrac{2\\pi}{3}\\). For \\(\\theta = \\dfrac{\\pi}{3}\\), sector area is \\(\\dfrac{1}{2}(4)\\left(\\dfrac{\\pi}{3}\\right) = \\dfrac{2\\pi}{3}\\text{ cm}^2\\). The minor-segment perimeter is arc \\(\\dfrac{2\\pi}{3}\\) plus chord \\(4\\sin\\left(\\dfrac{\\pi}{6}\\right) = 2\\), giving \\(2 + \\dfrac{2\\pi}{3}\\text{ cm}\\).",
           "timeLimit": 60,
           "xp": 1,
           "meta": {
@@ -5746,7 +5743,6 @@
               ]
             }
           ],
-          "solution": "From \\(s = r\\theta\\) and \\(\\theta \\le 2\\pi\\), \\(r = \\dfrac{10\\pi/3}{\\theta} \\ge \\dfrac{10\\pi/3}{2\\pi} = \\dfrac{5}{3}\\). When \\(r = 4\\), sector area \\(A = \\dfrac{1}{2}rs = \\dfrac{1}{2}(4)\\left(\\dfrac{10\\pi}{3}\\right) = \\dfrac{20\\pi}{3}\\).",
           "timeLimit": 60,
           "xp": 1,
           "meta": {
@@ -5917,8 +5913,7 @@
               "text": "In the diagram, ABCD represents a garden. The sector BCD has centre B and ∠DBC=5π/6. The points A, B and C lie on a straight line and AB=AD=3 metres. Copy or trace the diagram into your writing booklet.",
               "note": "The straight line at B gives a supplementary angle. Then use the equal sides AB and AD, the sine rule, and split the garden into a triangle and a sector."
             }
-          ],
-          "solution": "\\(\\angle ABD = \\pi - \\dfrac{5\\pi}{6} = \\dfrac{\\pi}{6}\\). Since \\(AB = AD = 3\\), \\(\\angle ADB = \\dfrac{\\pi}{6}\\) and \\(\\angle DAB = \\pi - 2\\left(\\dfrac{\\pi}{6}\\right) = \\dfrac{2\\pi}{3}\\). By the sine rule, \\(BD = \\dfrac{3\\sin(2\\pi/3)}{\\sin(\\pi/6)} = 3\\sqrt{3}\\text{ m}\\). Area of garden \\(= \\triangle ABD + \\text{sector }BCD = \\dfrac{1}{2}(3)(3)\\sin\\left(\\dfrac{2\\pi}{3}\\right) + \\dfrac{1}{2}(3\\sqrt{3})^2\\left(\\dfrac{5\\pi}{6}\\right) = \\dfrac{45\\pi + 9\\sqrt{3}}{4}\\text{ m}^2\\)."
+          ]
         },
         {
           "id": "y11a-11-excel-radians-q16",
