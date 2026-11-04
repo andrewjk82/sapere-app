@@ -13,6 +13,7 @@ import {
   getHomeworkHistory,
   curriculumDocIdsForProfile,
   curriculumDocIdForTopic,
+  isAssignedOverAWeekAgo,
   curriculumDocIdsForHomework,
   buildTopicPdfMap,
   dataUrlBytes,
@@ -92,6 +93,13 @@ test('getHomeworkItems keeps sessions with learnedTopics, newest first, drops st
 test('getHomeworkItems tolerates junk input', () => {
   assert.deepEqual(getHomeworkItems(null), []);
   assert.deepEqual(getHomeworkItems([null, {}]), []);
+});
+
+test('isAssignedOverAWeekAgo: more than 7 days, across month ends; a missing date is not flagged', () => {
+  assert.equal(isAssignedOverAWeekAgo('2026-10-27', '2026-11-04'), true);
+  assert.equal(isAssignedOverAWeekAgo('2026-10-28', '2026-11-04'), false);
+  assert.equal(isAssignedOverAWeekAgo('2026-11-03', '2026-11-04'), false);
+  assert.equal(isAssignedOverAWeekAgo(undefined, '2026-11-04'), false);
 });
 
 test('curriculumDocIdForTopic names the curriculum doc a topic id lives in', () => {

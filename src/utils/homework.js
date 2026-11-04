@@ -126,6 +126,12 @@ export const curriculumDocIdsForHomework = (profile, topicIds = []) => [...new S
   ...curriculumDocIdsForProfile(profile || {}),
 ])];
 
+// True when a 'YYYY-MM-DD' assigned date is more than 7 days before today (exactly 7 days is not yet over).
+export const isAssignedOverAWeekAgo = (date, today = new Date().toLocaleDateString('en-CA')) => {
+  const days = (Date.parse(`${today}T00:00:00Z`) - Date.parse(`${date}T00:00:00Z`)) / 86400000;
+  return days > 7;
+};
+
 export const buildTopicPdfMap = (curriculumDocs) => {
   const map = {};
   (Array.isArray(curriculumDocs) ? curriculumDocs : []).forEach((d) => {

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { BookOpenCheck } from 'lucide-react';
 import { fetchHomeworkAssignments, fetchPendingSubmissions } from '../../services/homeworkService';
 import HomeworkSubmissionViewer from './HomeworkSubmissionViewer';
+import { isAssignedOverAWeekAgo } from '../../utils/homework';
 
 // Admin dashboard strip of homework submissions awaiting a check.
 // Shows submissions awaiting teacher review and homework assignments still
@@ -89,21 +90,25 @@ const HomeworkInbox = () => {
             <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#7c3aed', background: '#f3edff', borderRadius: 999, padding: '3px 8px' }}>{assignedItems.length}</span>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 300px), 1fr))', gap: 8 }}>
-            {assignedItems.map((assignment) => (
-              <div key={assignment.id} style={{ display: 'flex', alignItems: 'center', gap: 12, minWidth: 0, padding: '12px 14px', border: '1px solid #eceaf5', borderRadius: 14, background: '#fbfaff' }}>
+            {assignedItems.map((assignment) => {
+              const overAWeek = isAssignedOverAWeekAgo(assignment.date);
+              const muted = overAWeek ? '#6b5b63' : '#77758f';
+              return (
+              <div key={assignment.id} style={{ display: 'flex', alignItems: 'center', gap: 12, minWidth: 0, padding: '12px 14px', border: `1px solid ${overAWeek ? '#fca5a5' : '#eceaf5'}`, borderRadius: 14, background: overAWeek ? '#fee2e2' : '#fbfaff' }}>
                 <div style={{ flex: 1, minWidth: 0 }}>
                   <div style={{ color: '#1e1b4b', fontWeight: 800, fontSize: '0.84rem' }}>{assignment.studentName || 'Student'}</div>
-                  <div style={{ color: '#77758f', fontSize: '0.74rem', lineHeight: 1.4, marginTop: 3, overflow: 'hidden', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>
+                  <div style={{ color: muted, fontSize: '0.74rem', lineHeight: 1.4, marginTop: 3, overflow: 'hidden', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>
                     {(assignment.learnedTopics || []).map((topic) => topic?.label || topic?.title || topic?.id).filter(Boolean).join(', ') || assignment.homework}
                   </div>
                 </div>
-                <div style={{ flex: '0 0 auto', textAlign: 'right', fontSize: '0.68rem', color: '#77758f', lineHeight: 1.5 }}>
+                <div style={{ flex: '0 0 auto', textAlign: 'right', fontSize: '0.68rem', color: muted, lineHeight: 1.5 }}>
                   <div>Assigned {assignment.date || '—'}</div>
                   <div style={{ color: assignment.homeworkDueDate ? '#6d45e8' : '#9b99ad', fontWeight: 750 }}>Due {assignment.homeworkDueDate || 'not scheduled'}</div>
                   <div style={{ color: assignment.displayHomeworkStatus === 'Checked' ? '#15803d' : assignment.displayHomeworkStatus === 'Submitted' ? '#b45309' : '#64748b', fontWeight: 800, marginTop: 2 }}>{assignment.displayHomeworkStatus}</div>
                 </div>
               </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       )}
