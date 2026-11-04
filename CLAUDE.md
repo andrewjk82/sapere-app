@@ -159,6 +159,14 @@ version/timestamp as the freshness key for chapter/topic question caches** —
 scope any future cache-invalidation signal to the chapter (or narrower) it
 actually belongs to.
 
+## Never leak the answer in a question's figure (2026-11-04)
+
+A question's own `figure` (stem-level, or a multipart part's `figure`) must show **only what the
+question gives** — never the answer: no intersection points/“Solution: x = …” badges, no completed
+sketch for a “Sketch…” part, no highlighted result. Answer-bearing diagrams belong in
+`steps[].figure`. Red flag: a part's `figure.svg` byte-identical to one of its own `steps[].figure.svg`.
+(Incident: `y11a-4-excel-further-q12i/ii` showed the solved graph above the options.)
+
 ## Question DNA reasoning-blueprint authoring
 
 See the `sapere-question-dna` skill (`.agents/skills/sapere-question-dna/SKILL.md`)
