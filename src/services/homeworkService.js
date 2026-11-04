@@ -1,13 +1,13 @@
 import { buildCheckedNotification } from '../utils/homeworkMarking';
 import { withTimeout, TIMEOUT_MESSAGE } from '../utils/withTimeout';
 import {
-  collection, doc, getDoc, getDocs, query, where, writeBatch, serverTimestamp,
+  collection, doc, getDoc, getDocs, query, updateDoc, where, writeBatch, serverTimestamp,
 } from 'firebase/firestore';
 import { db, ADMIN_UID, ADMIN_EMAIL } from '../firebase/config';
 import { resizeDataUrlImage } from '../utils/imageResize';
 import { createAnswerKeyCache, idbAnswerKeyAdapter } from '../utils/answerKeyCache';
 import {
-  MAX_HOMEWORK_PAGES, dataUrlBytes, purgeAfterDate, curriculumDocIdsForHomework, buildTopicPdfMap, planUploadBatches,
+  MAX_HOMEWORK_PAGES, dataUrlBytes, purgeAfterDate, curriculumDocIdsForHomework, buildTopicPdfMap, HOMEWORK_ACTIVE_WINDOW_DAYS, planUploadBatches,
 } from '../utils/homework';
 
 const SUBMISSIONS = 'homework_submissions';
@@ -196,7 +196,7 @@ export async function fetchPendingSubmissions() {
 // Only the last ASSIGNMENT_WINDOW_DAYS of sessions are read (a range query on
 // `date`), and the result is reused for ASSIGNMENT_CACHE_MS, so reopening the
 // dashboard does not re-read it. The old version read every session ever.
-const ASSIGNMENT_WINDOW_DAYS = 56;
+const ASSIGNMENT_WINDOW_DAYS = HOMEWORK_ACTIVE_WINDOW_DAYS;
 const ASSIGNMENT_CACHE_MS = 10 * 60 * 1000;
 let assignmentsCache = null; // { at, list }
 
@@ -221,6 +221,8 @@ export async function fetchHomeworkAssignments({ force = false } = {}) {
     .filter((assignment) => (
       assignment.homeworkStatus !== 'checked'
       && assignment.isHomeworkCompleted !== true
+      && assignment.homeworkStatus !== 'excused'
+      && assignment.homeworkStatus !== 'deleted'
     ))
     .map((assignment) => {
       const next = sessions
@@ -236,6 +238,18 @@ export async function fetchHomeworkAssignments({ force = false } = {}) {
   assignmentsCache = { at: Date.now(), list };
   return list;
 }
+
+// One write each, no reads: the cached list just drops the card, so the dashboard does not re-read every session.
+const closeAssignment = async (sessionId, fields) => {
+  await withTimeout(updateDoc(doc(db, 'sessions', sessionId), fields), 15000);
+  if (assignmentsCache) assignmentsCache = { ...assignmentsCache, list: assignmentsCache.list.filter((a) => a.id !== sessionId) };
+};
+
+// The student no longer has to do it; it stays in their history as "Excused".
+export const excuseHomework = (sessionId) => closeAssignment(sessionId, { homeworkStatus: 'excused' });
+
+// As if it was never assigned. learnedTopics stay: they are also the record of what the lesson covered.
+export const deleteHomework = (sessionId) => closeAssignment(sessionId, { homeworkStatus: 'deleted', homework: '', homeworkDueDate: '' });
 
 // `grade` (optional, from the marking panel): { score, total, marks, comment }.
 // Stored on the session so the weekly report's Homework Mark and the

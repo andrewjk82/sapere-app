@@ -7,8 +7,10 @@ export const MAX_HOMEWORK_PAGES = 40;
 export const UPLOAD_BATCH_MAX_PAGES = 8;
 export const UPLOAD_BATCH_MAX_BYTES = 5 * 1024 * 1024;
 export const HOMEWORK_RETENTION_DAYS = 3;
-// Lessons older than this with homework never started don't clutter the student's list.
-export const HOMEWORK_ACTIVE_WINDOW_DAYS = 14;
+// An unsubmitted homework stays a to-do this long, the same window the teacher's "Homework assigned" list reads, so
+// the two screens agree. It was 14 days: older ones vanished for the student, who then looked finished (and could
+// no longer submit) while the teacher still saw Awaiting (2026-11-04, Hyunjin).
+export const HOMEWORK_ACTIVE_WINDOW_DAYS = 56;
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 
@@ -46,6 +48,8 @@ export const toDriveOpenUrl = (url) => {
 export const getHomeworkStatus = (session) => {
   if (session?.isHomeworkCompleted === true || session?.homeworkStatus === 'checked') return 'checked';
   if (session?.homeworkStatus === 'submitted') return 'submitted';
+  // Set by the teacher: excused stays in the student's history, deleted is gone from every homework list.
+  if (session?.homeworkStatus === 'excused' || session?.homeworkStatus === 'deleted') return session.homeworkStatus;
   return 'todo';
 };
 
@@ -63,6 +67,7 @@ export const getHomeworkItems = (sessions, { today = new Date() } = {}) => {
         .filter((t) => t.id),
       status: getHomeworkStatus(s),
     }))
+    .filter((item) => item.status !== 'excused' && item.status !== 'deleted')
     .filter((item) => item.status !== 'todo' || item.date >= cutoff)
     .sort((a, b) => b.date.localeCompare(a.date));
 };
@@ -91,6 +96,7 @@ export const getHomeworkHistory = (sessions, { today = new Date() } = {}) => {
         wrongCount: Object.values(s.homeworkMarks || {}).filter(isWrongMark).length,
       };
     })
+    .filter((item) => item.status !== 'deleted')
     .sort((a, b) => b.date.localeCompare(a.date));
 };
 

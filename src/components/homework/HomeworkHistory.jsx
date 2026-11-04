@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { ArrowLeft, CheckCircle2, Clock, PenLine, XCircle, BookOpenCheck } from 'lucide-react';
+import { ArrowLeft, CheckCircle2, Clock, MinusCircle, PenLine, XCircle, BookOpenCheck } from 'lucide-react';
 import { getHomeworkHistory } from '../../utils/homework';
 
 const BADGE = {
@@ -8,6 +8,7 @@ const BADGE = {
   submitted: { label: 'Submitted', color: '#b45309', bg: '#fffbeb', Icon: Clock },
   checked: { label: 'Checked', color: '#15803d', bg: '#f0fdf4', Icon: CheckCircle2 },
   missed: { label: 'Not submitted', color: '#64748b', bg: '#f1f5f9', Icon: XCircle },
+  excused: { label: 'Excused', color: '#64748b', bg: '#f1f5f9', Icon: MinusCircle },
 };
 
 const FILTERS = [
@@ -93,7 +94,7 @@ const HomeworkHistory = ({ sessions, onOpen, onClose }) => {
                 {month.items.map((item) => {
                   const b = BADGE[item.status] || BADGE.todo;
                   const BadgeIcon = b.Icon;
-                  const openable = item.status !== 'missed';
+                  const openable = item.status !== 'missed' && item.status !== 'excused';
                   return (
                     <button
                       key={item.sessionId}

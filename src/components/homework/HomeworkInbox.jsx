@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { BookOpenCheck } from 'lucide-react';
-import { fetchHomeworkAssignments, fetchPendingSubmissions } from '../../services/homeworkService';
+import { deleteHomework, excuseHomework, fetchHomeworkAssignments, fetchPendingSubmissions } from '../../services/homeworkService';
+import { useToast } from '../../context/ToastContext';
 import HomeworkSubmissionViewer from './HomeworkSubmissionViewer';
 import { isAssignedOverAWeekAgo } from '../../utils/homework';
 
@@ -12,6 +13,27 @@ const HomeworkInbox = () => {
   const [assignedItems, setAssignedItems] = useState([]);
   const [loaded, setLoaded] = useState(false);
   const [openId, setOpenId] = useState(null);
+  const [closingId, setClosingId] = useState(null);
+  const { showToast } = useToast();
+
+  const closeAssignment = async (assignment, kind) => {
+    const name = assignment.studentName || 'this student';
+    const question = kind === 'delete'
+      ? `Delete this homework for ${name}? It will disappear from their app and their history.`
+      : `Excuse ${name} from this homework? It will leave their to-do list and show as Excused in their history.`;
+    if (!window.confirm(question)) return;
+    setClosingId(assignment.id);
+    try {
+      await (kind === 'delete' ? deleteHomework : excuseHomework)(assignment.id);
+      setAssignedItems((prev) => prev.filter((a) => a.id !== assignment.id));
+      showToast(kind === 'delete' ? 'Homework deleted.' : 'Homework excused.', 'success');
+    } catch (err) {
+      console.warn('[homework] close assignment failed:', err?.code || err?.message || err);
+      showToast('Could not update this homework. Please try again.', 'error');
+    } finally {
+      setClosingId(null);
+    }
+  };
 
   useEffect(() => {
     let cancelled = false;
@@ -105,6 +127,13 @@ const HomeworkInbox = () => {
                   <div>Assigned {assignment.date || '—'}</div>
                   <div style={{ color: assignment.homeworkDueDate ? '#6d45e8' : '#9b99ad', fontWeight: 750 }}>Due {assignment.homeworkDueDate || 'not scheduled'}</div>
                   <div style={{ color: assignment.displayHomeworkStatus === 'Checked' ? '#15803d' : assignment.displayHomeworkStatus === 'Submitted' ? '#b45309' : '#64748b', fontWeight: 800, marginTop: 2 }}>{assignment.displayHomeworkStatus}</div>
+                  {assignment.displayHomeworkStatus === 'Awaiting' && (
+                    <div style={{ display: 'flex', gap: 4, justifyContent: 'flex-end', marginTop: 5 }}>
+                      {[['excuse', 'Excuse', '#6d45e8'], ['delete', 'Delete', '#b91c1c']].map(([kind, label, color]) => (
+                        <button key={kind} type="button" disabled={closingId === assignment.id} onClick={() => closeAssignment(assignment, kind)} style={{ padding: '3px 8px', borderRadius: 8, border: `1px solid ${color}55`, background: '#fff', color, fontSize: '0.68rem', fontWeight: 800, cursor: closingId === assignment.id ? 'default' : 'pointer', opacity: closingId === assignment.id ? 0.5 : 1 }}>{label}</button>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
               );

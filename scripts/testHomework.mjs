@@ -90,6 +90,24 @@ test('getHomeworkItems keeps sessions with learnedTopics, newest first, drops st
   assert.equal(items[2].status, 'checked');
 });
 
+test('an unsubmitted homework stays a to-do for the whole 56-day window (16 days old used to vanish)', () => {
+  const today = new Date('2026-11-04T12:00:00');
+  const session = (id, date, extra = {}) => ({ id, date, learnedTopics: [{ id: 'y12a-10B', label: '10B' }], ...extra });
+  assert.deepEqual(getHomeworkItems([session('a', '2026-10-19')], { today }).map((i) => i.status), ['todo']);
+  assert.deepEqual(getHomeworkItems([session('b', '2026-09-01')], { today }), []);
+  assert.equal(getHomeworkHistory([session('b', '2026-09-01')], { today })[0].status, 'missed');
+  assert.equal(getHomeworkHistory([session('a', '2026-10-19')], { today })[0].status, 'todo');
+});
+
+test('excused leaves the to-do list but stays in history; deleted leaves both', () => {
+  const today = new Date('2026-11-04T12:00:00');
+  const session = (id, homeworkStatus) => ({ id, date: '2026-11-01', learnedTopics: [{ id: 'y7-1a', label: '1A' }], homeworkStatus });
+  const sessions = [session('e', 'excused'), session('d', 'deleted')];
+  assert.deepEqual(getHomeworkItems(sessions, { today }), []);
+  assert.deepEqual(getHomeworkHistory(sessions, { today }).map((i) => [i.sessionId, i.status]), [['e', 'excused']]);
+  assert.equal(getHomeworkStatus({ homeworkStatus: 'excused', isHomeworkCompleted: true }), 'checked');
+});
+
 test('getHomeworkItems tolerates junk input', () => {
   assert.deepEqual(getHomeworkItems(null), []);
   assert.deepEqual(getHomeworkItems([null, {}]), []);

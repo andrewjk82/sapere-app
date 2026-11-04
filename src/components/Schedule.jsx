@@ -114,7 +114,8 @@ const buildSessionUpdatePayload = (editData) => ({
   notes: editData.notes || '',
   // Covered topics are the homework; the saved text (emails, weekly report)
   // is those topic lines plus the teacher's optional extra note.
-  homework: composeHomework(Array.isArray(editData.learnedTopics) ? editData.learnedTopics : [], editData.homeworkExtra),
+  // A homework the teacher deleted stays deleted when the lesson is saved again (topics would otherwise rebuild it).
+  homework: editData.homeworkDeleted ? '' : composeHomework(Array.isArray(editData.learnedTopics) ? editData.learnedTopics : [], editData.homeworkExtra),
   isHomeworkCompleted: Boolean(editData.isHomeworkCompleted),
   attendance: editData.attendance || '',
   homeworkScore: editData.homeworkScore === '' ? null : Number(editData.homeworkScore),
@@ -486,6 +487,7 @@ const Schedule = ({ students = [] }) => {
     setEditData({
       notes: session.notes || '',
       homeworkExtra: splitHomeworkExtra(session.homework, Array.isArray(session.learnedTopics) ? session.learnedTopics : []),
+      homeworkDeleted: session.homeworkStatus === 'deleted',
       isHomeworkCompleted: session.isHomeworkCompleted || false,
       attendance: session.attendance || '',
       homeworkScore: session.homeworkScore ?? '',

@@ -356,11 +356,12 @@ export function renderWeeklyReportBody({ name, label, days, dailyByDate, calcByD
       hwSessions.map((ses, idx) => {
         const hasMark = ses.homeworkScore != null && ses.homeworkTotal != null && Number(ses.homeworkTotal) > 0;
         const done = ses.isHomeworkCompleted === true;
+        const excused = ses.homeworkStatus === 'excused';
         const markPct = hasMark ? (Number(ses.homeworkScore) / Number(ses.homeworkTotal)) * 100 : null;
         const markColor = markPct == null ? C.sub : markPct >= 80 ? '#16a34a' : markPct >= 50 ? '#d97706' : '#dc2626';
         const right = hasMark
           ? `<span style="font-size:14px;font-weight:900;color:${markColor};">${Number(ses.homeworkScore)}/${Number(ses.homeworkTotal)}</span>`
-          : `<span style="font-size:10.5px;font-weight:800;padding:3px 9px;border-radius:999px;background:${done ? '#f0fdf4' : '#fff7ed'};color:${done ? '#166534' : '#9a3412'};">${done ? 'Submitted' : 'Pending'}</span>`;
+          : `<span style="font-size:10.5px;font-weight:800;padding:3px 9px;border-radius:999px;background:${done ? '#f0fdf4' : excused ? '#f1f5f9' : '#fff7ed'};color:${done ? '#166534' : excused ? '#64748b' : '#9a3412'};">${done ? 'Submitted' : excused ? 'Excused' : 'Pending'}</span>`;
         return `<tr><td style="padding:13px 0;${idx < hwSessions.length - 1 ? `border-bottom:1px solid ${C.lineSoft};` : ''}">
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
             <td style="font-size:13.5px;font-weight:700;color:${C.ink};line-height:1.5;">${esc((ses.homework || 'Homework').trim())}

@@ -2216,7 +2216,8 @@ const StudentDetail = ({ studentId, onBack }) => {
             ) : (
               homeworkSessions.map((session) => {
                 const done = session.isHomeworkCompleted === true;
-                const hasPending = session.homework && !done;
+                const excused = session.homeworkStatus === 'excused';
+                const hasPending = session.homework && !done && !excused;
                 return (
                   <div key={session.id} style={{
                     background: '#fff',
@@ -2238,7 +2239,7 @@ const StudentDetail = ({ studentId, onBack }) => {
                         color: done ? '#15803d' : hasPending ? '#b45309' : '#64748b',
                         border: `1px solid ${done ? '#bbf7d0' : hasPending ? '#fde68a' : '#e2e8f0'}`,
                       }}>
-                        {done ? <><CheckCircle2 size={12} /> Done</> : hasPending ? <><Circle size={12} /> Pending</> : 'No homework'}
+                        {done ? <><CheckCircle2 size={12} /> Done</> : hasPending ? <><Circle size={12} /> Pending</> : excused ? 'Excused' : 'No homework'}
                       </span>
                     </div>
 
