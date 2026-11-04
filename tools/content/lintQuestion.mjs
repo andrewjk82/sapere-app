@@ -7,7 +7,7 @@ const re = new RegExp(pat || '.');
 const d = JSON.parse(fs.readFileSync(file, 'utf8'));
 const out = [];
 const stripMath = (s) => s.replace(/\\\([\s\S]*?\\\)/g, '').replace(/\\\[[\s\S]*?\\\]/g, '').replace(/\$[^$]*\$/g, '');
-const texty = (s) => /\\[a-zA-Z]{2,}|[A-Za-z0-9)}]\^[\d{(a-z]|_\{/.test(s);
+const texty = (s) => /\\[a-zA-Z]{2,}|[A-Za-z0-9)}]\^[\d{(a-z]|_\{|√|π|θ|\b[A-Za-z]{1,3}\s?=\s?[-−(\d]|\d\s?\/\s?[\d√]|\bcos\s?\d|\bsin\s?\d|\btan\s?\d/.test(s);
 const check = (q, ctxId) => {
   const id = q.id || ctxId;
   const flag = (m) => out.push(`${id}: ${m}`);
