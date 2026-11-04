@@ -9,7 +9,7 @@ import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
 import { db } from '../firebase/config';
 import {
-  doc, getDoc, setDoc, deleteDoc, collection, addDoc, getDocs, query, updateDoc, serverTimestamp, runTransaction, deleteField,
+  doc, getDoc, setDoc, deleteDoc, collection, addDoc, getDocs, query, updateDoc, serverTimestamp, writeBatch, increment, deleteField,
 } from 'firebase/firestore';
 import { localCache } from '../services/localCacheService';
 import { generateCalculationSet } from '../services/calculationGenerator';
@@ -18,7 +18,7 @@ import MathView, { toDisplayText } from './MathView';
 import {
   fetchOrCreateDailyAssignment,
   prepareNextDailyAssignment,
-  markDailyAssignmentCompleted,
+  queueDailyAssignmentCompleted,
   markDailyAssignmentStarted,
   getAssignedChapters,
   fetchQuestionsByIds,
@@ -67,6 +67,7 @@ import {
 import { parseHintSteps } from '../utils/hintSteps';
 import { takePlanStart } from '../utils/planStart';
 import { buildRecentPracticePatch } from '../utils/recentPractice';
+import { queueWriteGroups } from '../utils/queueWriteGroups';
 import LoadingScreen from './LoadingScreen';
 
 // FlameBuddy's hint bubble wants one plain string. `hint` is not always a
@@ -86,6 +87,7 @@ import {
   applyChallengeStatus,
   getChallengeStatusState,
   writeChallengeStatusMeta,
+  queueChallengeStatusMeta,
   mergeChallengeBootCache,
   summarizeResults,
   summarizeByKey,
@@ -93,6 +95,7 @@ import {
   notifyTeacherChallengeCompleted,
   notifyTeacherPendingReview,
   updateAdminDailySummary,
+  queueAdminDailySummary,
   pruneOldChallengeStats,
   createSessionSeed,
   correctQuestionAnswer,
@@ -1506,19 +1509,15 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
             return withoutWorkingOutImages(r);
           }
           const woRef = doc(db, 'users', user.uid, statColName, today, 'working_out', String(idx));
-          workingOutWrites.push(
-            setDoc(woRef, {
-              questionIdx: idx,
-              workingOut: single,
-              workingOutPages: pages,
-              savedAt: now.toISOString(),
-            }).catch(e => console.warn(`working_out[${idx}] save failed (non-fatal):`, e?.code || e))
-          );
+          workingOutWrites.push(() => setDoc(woRef, {
+            questionIdx: idx,
+            workingOut: single,
+            workingOutPages: pages,
+            savedAt: now.toISOString(),
+          }).catch(e => console.warn(`working_out[${idx}] save failed (non-fatal):`, e?.code || e)));
           const rest = withoutWorkingOutImages(r);
           return { ...rest, hasWorkingOut: true };
         });
-        // Best-effort — don't block the main save on these
-        Promise.allSettled(workingOutWrites);
 
         // Also strip any embedded base64 image data that might have leaked into
         // questions/options or userAnswers (defence-in-depth — should never
@@ -1679,10 +1678,114 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
             setCalcAbandonedToday(false);
           }
         }
-        // 1. Save the lightweight challenge stat record first. Detail/working-out
-        // saves are best-effort so large payloads never turn completion into a
-        // false "Session Ended" state.
-        await setDoc(ref, record, { merge: true });
+        // 1. Queue every write for this result in one pass, without waiting for the server, so a student who closes
+        // the app during a stalled connection still gets all of it once the device reconnects (see queueWriteGroups).
+        // Images and the detail snapshot start afterwards: the SDK sends writes in order, and these can be megabytes.
+        const adminSummaryPayload = {
+          userId: user.uid,
+          date: today,
+          challengeType,
+          score: questionsCorrect,
+          total: displayTotal,
+          xpEarned,
+          studentProfile,
+          user,
+        };
+        // Summary for Dashboard / FlameBuddy (utils/recentPractice) — rides along on the users/{uid} write below.
+        const recentPracticeInput = {
+          type: challengeType,
+          date: today,
+          score: questionsCorrect,
+          total: displayTotal,
+          completed: !isAbandoned,
+          topicStats,
+          deleteMarker: deleteField(),
+        };
+        const leaderboardName = studentProfile?.name || studentProfile?.displayName ||
+          (studentProfile?.firstName ? `${studentProfile.firstName} ${studentProfile.lastName || ''}`.trim() : '') ||
+          user?.displayName || 'Student';
+        const leaderboardAvatarUrl = studentProfile?.dreamImageUrl || studentProfile?.avatarUrl ||
+          (studentProfile?.avatarStyle && studentProfile?.avatarSeed
+            ? `https://api.dicebear.com/7.x/${studentProfile.avatarStyle}/svg?seed=${encodeURIComponent(studentProfile.avatarSeed)}`
+            : `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(user?.email || leaderboardName || 'sapere')}`);
+        const [resultSaved, xpSaved] = queueWriteGroups(() => writeBatch(db), [
+          // The result and what the teacher's dashboard shows.
+          [
+            (batch) => batch.set(ref, record, { merge: true }),
+            (batch) => queueAdminDailySummary(batch, adminSummaryPayload),
+            (batch) => queueChallengeStatusMeta(batch, user.uid, today, challengeType, isAbandoned ? 'abandoned' : 'completed'),
+            ...(challengeType === 'daily' && !isAbandoned
+              ? [(batch) => queueDailyAssignmentCompleted(batch, user.uid, today)]
+              : []),
+          ],
+          // XP and progress. increment() instead of a transaction: a transaction needs the server, so it cannot be
+          // queued. The leaderboard keeps an absolute total so it still self-corrects and works for a first entry.
+          [
+            (batch) => batch.set(doc(db, 'users', user.uid, 'chapterProgress', `${String(assignedYear || 'General').replace(' ', '_')}_daily`), {
+              year: assignedYear || 'General',
+              chapterId: record.chapterId,
+              chapterTitle: record.chapterTitle,
+              assignedChapters,
+              assignedTopics,
+              difficultyMix: nextDifficultyMix,
+              lastResultStats: resultStats,
+              lastTopicStats: topicStats,
+              lastChapterStats: chapterStats,
+              lastScore: actualScore,
+              lastTotal: totalPossibleScore,
+              updatedAt: now.toISOString(),
+            }, { merge: true }),
+            (batch) => batch.set(doc(db, 'sync_meta', getChallengeBootMetaId(user.uid, today)), {
+              version: Date.now(),
+              progressVersion: Date.now(),
+              updatedAt: serverTimestamp(),
+            }, { merge: true }),
+            (batch) => batch.set(doc(db, 'users', user.uid), {
+              totalXP: increment(xpEarned),
+              challengesCompleted: increment(1),
+              lastActive: now.toISOString(),
+              recentPractice: buildRecentPracticePatch(studentProfile?.recentPractice, recentPracticeInput),
+              // Secret Notebook summary for the teacher's student profile.
+              ...(secretNoteSync || {}),
+            }, { merge: true }),
+            (batch) => batch.set(doc(db, 'leaderboard', user.uid), {
+              name: leaderboardName,
+              avatarUrl: leaderboardAvatarUrl,
+              ...(studentProfile ? { totalXP: xpBefore + xpEarned } : {}),
+              lastUpdated: serverTimestamp(),
+              role: studentProfile?.role || 'student',
+              year: assignedYear || '',
+            }, { merge: true }),
+          ],
+        ]);
+        resultSaved.catch((err) => {
+          console.error('Challenge result save failed:', err);
+          showToast(`Save Failed: ${err?.message || 'Database error'}. Your score was ${actualScore}/${TOTAL_QUESTIONS}`, 'error');
+        });
+        xpSaved.catch((err) => {
+          console.warn('progress/xp sync failed after challenge save (non-critical):', err?.code || err?.message || err);
+          setDoc(doc(db, 'users', user.uid), {
+            recentPractice: buildRecentPracticePatch(studentProfile?.recentPractice, recentPracticeInput),
+          }, { merge: true }).catch(() => {});
+          setDoc(ref, {
+            progressSyncFailed: true,
+            progressSyncError: err?.code || err?.message || 'unknown',
+          }, { merge: true }).catch(() => {});
+        });
+
+        // Best-effort: none of these block anything else.
+        workingOutWrites.forEach((startWrite) => startWrite());
+        if (detailSnapshot) {
+          setDoc(doc(db, 'users', user.uid, statColName, today, 'detail_snapshot', 'main'), detailSnapshot, { merge: true })
+            .catch((err) => {
+              console.warn('detail snapshot save failed (non-critical):', err?.code || err);
+              setDoc(ref, {
+                detailSaveFailed: true,
+                detailAvailable: false,
+                detailSaveError: err?.code || err?.message || 'unknown',
+              }, { merge: true }).catch(() => {});
+            });
+        }
 
         // New stat → Dashboard week bar chart + insights are stale; drop caches
         // so the next Dashboard visit (or live listener) re-reads immediately.
@@ -1745,134 +1848,9 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
             }
           }
         } catch (_) { /* non-fatal */ }
-        if (detailSnapshot) {
-          try {
-            await setDoc(doc(db, 'users', user.uid, statColName, today, 'detail_snapshot', 'main'), detailSnapshot, { merge: true });
-          } catch (err) {
-            console.warn('detail snapshot save failed (non-critical):', err?.code || err);
-            setDoc(ref, {
-              detailSaveFailed: true,
-              detailAvailable: false,
-              detailSaveError: err?.code || err?.message || 'unknown',
-            }, { merge: true }).catch(() => {});
-          }
-        }
-        // Awaited (with one retry) rather than fire-and-forget — a silently
-        // dropped write here leaves the teacher's dashboard showing "Not
-        // started" for a student who actually finished (2026-08-03 incident:
-        // daily_stats saved fine, but this summary write never landed and
-        // nothing surfaced the failure). Still non-fatal to finishQuiz itself
-        // if both attempts fail — the student's own stats are unaffected.
-        const adminSummaryPayload = {
-          userId: user.uid,
-          date: today,
-          challengeType,
-          score: questionsCorrect,
-          total: displayTotal,
-          xpEarned,
-          studentProfile,
-          user,
-        };
-        try {
-          await updateAdminDailySummary(adminSummaryPayload);
-        } catch (err) {
-          console.warn('admin daily summary update failed, retrying once:', err?.code || err);
-          try {
-            await updateAdminDailySummary(adminSummaryPayload);
-          } catch (err2) {
-            console.warn('admin daily summary update failed after retry (non-critical):', err2?.code || err2);
-          }
-        }
-
         // Point-delete old YYYY-MM-DD stat docs (no full subcollection scan).
         const pruneCol = challengeType === 'calc' ? 'calc_stats' : 'daily_stats';
         pruneOldChallengeStats(user.uid, pruneCol).catch(() => {});
-
-        // Summary for Dashboard / FlameBuddy (utils/recentPractice) — rides along on the users/{uid} write below.
-        const recentPracticeInput = {
-          type: challengeType,
-          date: today,
-          score: questionsCorrect,
-          total: displayTotal,
-          completed: !isAbandoned,
-          topicStats,
-          deleteMarker: deleteField(),
-        };
-
-        // 2. Atomic Update for XP and Progress
-        try {
-          await runTransaction(db, async (transaction) => {
-            const userRef = doc(db, 'users', user.uid);
-            const progressRef = doc(db, 'users', user.uid, 'chapterProgress', `${String(assignedYear || 'General').replace(' ', '_')}_daily`);
-
-            const userSnap = await transaction.get(userRef);
-
-            // Update chapter progress
-            transaction.set(progressRef, {
-              year: assignedYear || 'General',
-              chapterId: record.chapterId,
-              chapterTitle: record.chapterTitle,
-              assignedChapters,
-              assignedTopics,
-              difficultyMix: nextDifficultyMix,
-              lastResultStats: resultStats,
-              lastTopicStats: topicStats,
-              lastChapterStats: chapterStats,
-              lastScore: actualScore,
-              lastTotal: totalPossibleScore,
-              updatedAt: now.toISOString(),
-            }, { merge: true });
-            transaction.set(doc(db, 'sync_meta', getChallengeBootMetaId(user.uid, today)), {
-              version: Date.now(),
-              progressVersion: Date.now(),
-              updatedAt: serverTimestamp(),
-            }, { merge: true });
-
-            // Update overall XP/Points - Use set with merge for maximum robustness
-            const userData = userSnap.data() || {};
-            const currentXP = Number(userData.totalXP) || 0;
-            const currentCount = Number(userData.challengesCompleted) || 0;
-
-            const newXP = currentXP + xpEarned;
-            transaction.set(userRef, {
-              totalXP: newXP,
-              challengesCompleted: currentCount + 1,
-              lastActive: now.toISOString(),
-              recentPractice: buildRecentPracticePatch(userData.recentPractice, recentPracticeInput),
-              // Secret Notebook summary for the teacher's student profile.
-              ...(secretNoteSync || {}),
-            }, { merge: true });
-
-            // 3. Update dedicated Leaderboard collection for efficient global reads
-            const leaderboardRef = doc(db, 'leaderboard', user.uid);
-            const displayName = studentProfile?.name || studentProfile?.displayName ||
-                              (studentProfile?.firstName ? `${studentProfile.firstName} ${studentProfile.lastName || ''}`.trim() : '') ||
-                              user?.displayName || 'Student';
-
-            const avatarUrl = studentProfile?.dreamImageUrl || studentProfile?.avatarUrl ||
-                             (studentProfile?.avatarStyle && studentProfile?.avatarSeed
-                               ? `https://api.dicebear.com/7.x/${studentProfile.avatarStyle}/svg?seed=${encodeURIComponent(studentProfile.avatarSeed)}`
-                               : `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(user?.email || displayName || 'sapere')}`);
-
-            transaction.set(leaderboardRef, {
-              name: displayName,
-              avatarUrl: avatarUrl,
-              totalXP: newXP,
-              lastUpdated: serverTimestamp(),
-              role: userData.role || 'student',
-              year: assignedYear || ''
-            }, { merge: true });
-          });
-        } catch (err) {
-          console.warn('progress/xp sync failed after challenge save (non-critical):', err?.code || err?.message || err);
-          setDoc(doc(db, 'users', user.uid), {
-            recentPractice: buildRecentPracticePatch(studentProfile?.recentPractice, recentPracticeInput),
-          }, { merge: true }).catch(() => {});
-          setDoc(ref, {
-            progressSyncFailed: true,
-            progressSyncError: err?.code || err?.message || 'unknown',
-          }, { merge: true }).catch(() => {});
-        }
 
         if (!isAbandoned) {
           const displayName = studentProfile?.name || studentProfile?.displayName ||
@@ -1972,15 +1950,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
           },
           savedAt: Date.now(),
         });
-        writeChallengeStatusMeta(user.uid, today, challengeType, isAbandoned ? 'abandoned' : 'completed')
-          .catch((err) => console.warn('challenge status meta update failed (non-critical):', err?.code || err));
-
         if (challengeType === 'daily') {
-          if (!isAbandoned) {
-            markDailyAssignmentCompleted(user.uid, today)
-              .catch((err) => console.warn('daily assignment completion update failed (non-critical):', err?.code || err));
-          }
-          
           // --- PROACTIVE GENERATION ---
           // Re-fetch the profile once so any teacher curriculum change made
           // during the test is applied, then pre-build the NEXT daily

@@ -482,7 +482,7 @@ export const pruneOldChallengeStats = async (userId, statCollection, keep = MAX_
   if (deletes.length) await Promise.all(deletes);
 };
 
-export const updateAdminDailySummary = async ({
+const buildAdminDailySummary = ({
   userId,
   date,
   challengeType,
@@ -493,13 +493,12 @@ export const updateAdminDailySummary = async ({
   user,
   status = 'completed',
 }) => {
-  if (!userId || !date) return;
   const displayName = studentProfile?.name || studentProfile?.displayName ||
     (studentProfile?.firstName ? `${studentProfile.firstName} ${studentProfile.lastName || ''}`.trim() : '') ||
     user?.displayName || user?.email || 'Student';
   const isCalc = challengeType === 'calc';
   const isCompleted = status === 'completed';
-  await setDoc(doc(db, 'admin_daily_summary', date), {
+  return {
     date,
     updatedAt: serverTimestamp(),
     students: {
@@ -519,7 +518,17 @@ export const updateAdminDailySummary = async ({
         ...(isCompleted ? { lastCompletedAt: new Date().toISOString() } : {}),
       },
     },
-  }, { merge: true });
+  };
+};
+
+export const updateAdminDailySummary = async (payload) => {
+  if (!payload.userId || !payload.date) return;
+  await setDoc(doc(db, 'admin_daily_summary', payload.date), buildAdminDailySummary(payload), { merge: true });
+};
+
+export const queueAdminDailySummary = (batch, payload) => {
+  if (!payload.userId || !payload.date) return;
+  batch.set(doc(db, 'admin_daily_summary', payload.date), buildAdminDailySummary(payload), { merge: true });
 };
 
 export const writeChallengeStatusMeta = async (uid, date, challengeType, state) => {
@@ -544,6 +553,17 @@ export const writeChallengeStatusMeta = async (uid, date, challengeType, state) 
   await updateDoc(ref, {
     [`status.${statusField}`]: state,
   });
+};
+
+// One merged set, so it fits in a batch: merge:true keeps the other challenge type's status (nested maps merge).
+export const queueChallengeStatusMeta = (batch, uid, date, challengeType, state) => {
+  if (!uid || !date) return;
+  batch.set(doc(db, 'sync_meta', getChallengeBootMetaId(uid, date)), {
+    version: Date.now(),
+    statusVersion: Date.now(),
+    updatedAt: serverTimestamp(),
+    status: { [challengeType === 'calc' ? 'calc' : 'daily']: state },
+  }, { merge: true });
 };
 
 export const mergeChallengeBootCache = (uid, patch) => {

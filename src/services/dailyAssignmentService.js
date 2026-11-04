@@ -1129,13 +1129,13 @@ export const markDailyAssignmentStarted = async (uid, dateKey = getDateKey()) =>
   }, { merge: true });
 };
 
-export const markDailyAssignmentCompleted = async (uid, dateKey = getDateKey()) => {
+export const queueDailyAssignmentCompleted = (batch, uid, dateKey = getDateKey()) => {
   if (!uid) return;
   // Local cache first: if the server write stalls, this device still knows the assignment is completed.
   const cacheKey = getDailyAssignmentCacheKey(uid, dateKey);
   const cached = localCache.get(cacheKey);
   if (cached) localCache.set(cacheKey, { ...cached, status: "completed", completedAt: new Date().toISOString() });
-  await setDoc(doc(db, "users", uid, "daily_assignments", dateKey), {
+  batch.set(doc(db, "users", uid, "daily_assignments", dateKey), {
     status: "completed",
     completedAt: new Date().toISOString(),
     updatedAt: serverTimestamp(),
