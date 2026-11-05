@@ -11465,32 +11465,32 @@
           "id": "y11a-5D-new-3a",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "On the basis of the previous exercises, complete these two sentences about the intercepts of the graph of a function with the axes:\nA zero (\\(x\\)-intercept) of a function is unchanged by a _____ dilation.",
+          "stem": "The graph of \\(y = f(x)\\) is dilated by a factor \\(k\\) (where \\(k > 0\\) and \\(k \\neq 1\\)) in one direction only:<br>• a <b>vertical</b> dilation gives \\(y = k\\,f(x)\\) (every \\(y\\)-value is multiplied by \\(k\\));<br>• a <b>horizontal</b> dilation gives \\(y = f\\!\\left(\\dfrac{x}{k}\\right)\\) (every \\(x\\)-value is multiplied by \\(k\\)).\nComplete the sentence: a zero of \\(f\\) (an \\(x\\)-intercept, not at the origin) is unchanged by a _____ dilation.",
           "options": [
-            "\\(neither\\)",
-            "\\(horizontal\\)",
+            "neither",
+            "horizontal",
             "both horizontal and vertical",
-            "\\(vertical\\)"
+            "vertical"
           ],
           "answer": 3,
-          "hint": "A zero has \\(y = 0\\). Which dilation keeps \\(y\\)-values the same?",
-          "solution": "A vertical dilation multiplies all \\(y\\)-values by a constant. Since a zero has \\(y = 0\\), and \\(k \\times 0 = 0\\), the zero is unchanged. So a zero is unchanged by a vertical dilation.",
+          "hint": "A zero has \\(y = 0\\). Which dilation leaves \\(y\\)-values unchanged at that point?",
+          "solution": "A vertical dilation multiplies every \\(y\\)-value by \\(k\\). A zero has \\(y = 0\\) and \\(k \\times 0 = 0\\), so it stays where it is. A horizontal dilation moves the zero from \\(x = a\\) to \\(x = ka\\).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Transformations and symmetry: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y_{\\text{new}} = k \\times y_{\\text{old}} = k \\times 0 = 0\\)"
+              "explain": "A zero (\\(x\\)-intercept) is a point \\((a, 0)\\) on the graph, with \\(a \\neq 0\\). Test each dilation on this point.",
+              "work": "\\((a,\\ 0)\\)"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(\\text{zero position unchanged}\\)"
+              "explain": "Vertical dilation: the \\(y\\)-value is multiplied by \\(k\\). Since \\(y = 0\\), it stays \\(0\\) and the point does not move.",
+              "work": "\\((a,\\ 0) \\to (a,\\ k \\times 0) = (a,\\ 0)\\)"
             },
             {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(\\text{Answer: vertical}\\)"
+              "explain": "Horizontal dilation: the \\(x\\)-value is multiplied by \\(k\\). Because \\(a \\neq 0\\) and \\(k \\neq 1\\), the point moves along the \\(x\\)-axis.",
+              "work": "\\((a,\\ 0) \\to (ka,\\ 0)\\), and \\(ka \\neq a\\)"
             },
             {
-              "explain": "Final answer: vertical. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(vertical\\)"
+              "explain": "Only the vertical dilation keeps the zero in place.",
+              "work": "\\(\\text{A zero is unchanged by a vertical dilation.}\\)"
             }
           ],
           "xp": 1
@@ -11499,32 +11499,32 @@
           "id": "y11a-5D-new-3b",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "On the basis of the previous exercises, complete these two sentences about the intercepts of the graph of a function with the axes:\nThe \\(y\\)-intercept (the value of \\(f(0)\\)) is unchanged by a _____ dilation.",
+          "stem": "The graph of \\(y = f(x)\\) is dilated by a factor \\(k\\) (where \\(k > 0\\) and \\(k \\neq 1\\)) in one direction only:<br>• a <b>vertical</b> dilation gives \\(y = k\\,f(x)\\) (every \\(y\\)-value is multiplied by \\(k\\));<br>• a <b>horizontal</b> dilation gives \\(y = f\\!\\left(\\dfrac{x}{k}\\right)\\) (every \\(x\\)-value is multiplied by \\(k\\)).\nComplete the sentence: the \\(y\\)-intercept of \\(f\\) (the point \\((0,\\ f(0))\\), with \\(f(0) \\neq 0\\)) is unchanged by a _____ dilation.",
           "options": [
-            "\\(neither\\)",
-            "\\(horizontal\\)",
-            "\\(vertical\\)",
+            "neither",
+            "horizontal",
+            "vertical",
             "both horizontal and vertical"
           ],
           "answer": 1,
-          "hint": "The \\(y\\)-intercept occurs at \\(x = 0\\). Which dilation keeps \\(x\\)-values the same?",
-          "solution": "A horizontal dilation replaces \\(x\\) with \\(\\frac{x}{k}\\). At \\(x = 0\\): \\(\\frac{0}{k} = 0\\). So \\(f(0)\\) is unchanged. The \\(y\\)-intercept is unchanged by a horizontal dilation.",
+          "hint": "The \\(y\\)-intercept is at \\(x = 0\\). Which dilation leaves \\(x = 0\\) where it is?",
+          "solution": "A horizontal dilation replaces \\(x\\) with \\(\\dfrac{x}{k}\\), and \\(\\dfrac{0}{k} = 0\\), so \\(f(0)\\) is unchanged. A vertical dilation turns \\(f(0)\\) into \\(k\\,f(0)\\), which is different when \\(f(0) \\neq 0\\).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Transformations and symmetry: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(f_{\\text{new}}(x) = f\\!\\left(\\frac{x}{k}\\right)\\)"
+              "explain": "The \\(y\\)-intercept is the point \\((0,\\ f(0))\\), with \\(f(0) \\neq 0\\). Test each dilation on this point.",
+              "work": "\\((0,\\ f(0))\\)"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(f_{\\text{new}}(0) = f(0) \\text{ (unchanged)}\\)"
+              "explain": "Horizontal dilation: the \\(x\\)-value is multiplied by \\(k\\). Since \\(x = 0\\), it stays \\(0\\) and the point does not move.",
+              "work": "\\(y = f\\!\\left(\\dfrac{x}{k}\\right)\\)<br>\\(\\text{at } x = 0:\\ f\\!\\left(\\dfrac{0}{k}\\right) = f(0)\\)"
             },
             {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(\\text{Answer: horizontal}\\)"
+              "explain": "Vertical dilation: the \\(y\\)-value is multiplied by \\(k\\). Because \\(f(0) \\neq 0\\) and \\(k \\neq 1\\), the point moves up or down the \\(y\\)-axis.",
+              "work": "\\((0,\\ f(0)) \\to (0,\\ k\\,f(0))\\), and \\(k\\,f(0) \\neq f(0)\\)"
             },
             {
-              "explain": "Final answer: horizontal. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(horizontal\\)"
+              "explain": "Only the horizontal dilation keeps the \\(y\\)-intercept in place.",
+              "work": "\\(\\text{The } y\\text{-intercept is unchanged by a horizontal dilation.}\\)"
             }
           ],
           "xp": 1
