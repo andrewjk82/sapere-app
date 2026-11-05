@@ -5730,7 +5730,7 @@
             "\\(f'(1) = -e^{-2},\\; f''(1) = 0\\)"
           ],
           "answer": 3,
-          "hint": "Use the product rule for both derivatives. f''(1) simplifies to 0.",
+          "hint": "Use the product rule for both derivatives. \\(f''(1)\\) simplifies to 0.",
           "solution": "Product rule: \\(f'(x)=e^{-2x}(1-2x)\\). At \\(x=1\\): \\(f'(1)=-e^{-2}\\). Second derivative: \\(f''(x)=e^{-2x}(4x-4)\\). At \\(x=1\\): \\(f''(1)=0\\).",
           "steps": [
             {
@@ -5769,7 +5769,7 @@
             "\\(f'(0) = 0,\\; f''(0) = 0\\)"
           ],
           "answer": 1,
-          "hint": "f' has a factor of x so f'(0)=0. Use the product rule for f''.",
+          "hint": "\\(f'\\) has a factor of x so \\(f'(0)=0\\). Use the product rule for \\(f''\\).",
           "solution": "Chain rule: \\(f'(x)=-6x e^{-3x^{2}}\\), so \\(f'(0)=0\\). Product rule on \\(f'\\): \\(f''(x)=-6e^{-3x^{2}}(1-6x^{2})\\), so \\(f''(0)=-6\\).",
           "steps": [
             {
@@ -7588,8 +7588,8 @@
           ],
           "steps": [
             {
-              "explain": "Use the exponential chain rule: \\(\\frac{d}{dx}a^{u}=a^u\\ln(a)u\\prime\\). Here the base is 3 and the exponent is x².",
-              "work": "\\(u=x^2,\\quad u\\prime=2x\\)"
+              "explain": "Use the exponential chain rule: \\(\\frac{d}{dx}a^{u}=a^u\\ln(a)u'\\). Here the base is 3 and the exponent is x².",
+              "work": "\\(u=x^2,\\quad u'=2x\\)"
             },
             {
               "explain": "Substitute the base, exponent, and exponent derivative.",
@@ -7635,8 +7635,8 @@
           ],
           "steps": [
             {
-              "explain": "Let \\(u=e^{x}\\), \\(v=x + 1\\). Apply \\( (u/v)\\prime=(u\\prime v-uv\\prime)/v^2\\).",
-              "work": "\\(u\\prime=e^{x},\\quad v\\prime=1\\)"
+              "explain": "Let \\(u=e^{x}\\), \\(v=x + 1\\). Apply \\( (u/v)'=(u' v-uv')/v^2\\).",
+              "work": "\\(u'=e^{x},\\quad v'=1\\)"
             },
             {
               "explain": "Form the numerator in the order derivative of the top times the bottom, minus the top times derivative of the bottom; then divide by the squared denominator.",
@@ -7821,8 +7821,8 @@
           ],
           "steps": [
             {
-              "explain": "Identify the two factors: \\(u=x^{2}\\) and \\(v=e^{x}\\). Use the product rule \\( (uv)\\prime=u\\prime v+uv\\prime\\).",
-              "work": "\\(u\\prime=2 x,\\quad v\\prime=e^{x}\\)"
+              "explain": "Identify the two factors: \\(u=x^{2}\\) and \\(v=e^{x}\\). Use the product rule \\( (uv)'=u' v+uv'\\).",
+              "work": "\\(u'=2 x,\\quad v'=e^{x}\\)"
             },
             {
               "explain": "Substitute both product-rule terms; keep both terms in the sum.",
@@ -7917,8 +7917,8 @@
           ],
           "steps": [
             {
-              "explain": "Let \\(u=2 x\\), \\(v=e^{x} + 1\\). Apply \\( (u/v)\\prime=(u\\prime v-uv\\prime)/v^2\\).",
-              "work": "\\(u\\prime=2,\\quad v\\prime=e^{x}\\)"
+              "explain": "Let \\(u=2 x\\), \\(v=e^{x} + 1\\). Apply \\( (u/v)'=(u' v-uv')/v^2\\).",
+              "work": "\\(u'=2,\\quad v'=e^{x}\\)"
             },
             {
               "explain": "Form the numerator in the order derivative of the top times the bottom, minus the top times derivative of the bottom; then divide by the squared denominator.",
@@ -8013,8 +8013,8 @@
           ],
           "steps": [
             {
-              "explain": "Identify the two factors: \\(u=x\\) and \\(v=e^{- x}\\). Use the product rule \\( (uv)\\prime=u\\prime v+uv\\prime\\).",
-              "work": "\\(u\\prime=1,\\quad v\\prime=- e^{- x}\\)"
+              "explain": "Identify the two factors: \\(u=x\\) and \\(v=e^{- x}\\). Use the product rule \\( (uv)'=u' v+uv'\\).",
+              "work": "\\(u'=1,\\quad v'=- e^{- x}\\)"
             },
             {
               "explain": "Substitute both product-rule terms; keep both terms in the sum.",
@@ -8055,8 +8055,8 @@
           ],
           "steps": [
             {
-              "explain": "Identify the two factors: \\(u=3\\) and \\(v=x e^{x}\\). Use the product rule \\( (uv)\\prime=u\\prime v+uv\\prime\\).",
-              "work": "\\(u\\prime=0,\\quad v\\prime=\\left(x + 1\\right) e^{x}\\)"
+              "explain": "Identify the two factors: \\(u=3\\) and \\(v=x e^{x}\\). Use the product rule \\( (uv)'=u' v+uv'\\).",
+              "work": "\\(u'=0,\\quad v'=\\left(x + 1\\right) e^{x}\\)"
             },
             {
               "explain": "Substitute both product-rule terms; keep both terms in the sum.",
@@ -8097,8 +8097,8 @@
           ],
           "steps": [
             {
-              "explain": "Let \\(u=e^{x}\\), \\(v=x^{2} + 1\\). Apply \\( (u/v)\\prime=(u\\prime v-uv\\prime)/v^2\\).",
-              "work": "\\(u\\prime=e^{x},\\quad v\\prime=2 x\\)"
+              "explain": "Let \\(u=e^{x}\\), \\(v=x^{2} + 1\\). Apply \\( (u/v)'=(u' v-uv')/v^2\\).",
+              "work": "\\(u'=e^{x},\\quad v'=2 x\\)"
             },
             {
               "explain": "Form the numerator in the order derivative of the top times the bottom, minus the top times derivative of the bottom; then divide by the squared denominator.",
@@ -8145,8 +8145,8 @@
           ],
           "steps": [
             {
-              "explain": "Identify the two factors: \\(u=\\cos{\\left(x \\right)}\\) and \\(v=e^{3 x}\\). Use the product rule \\( (uv)\\prime=u\\prime v+uv\\prime\\).",
-              "work": "\\(u\\prime=- \\sin{\\left(x \\right)},\\quad v\\prime=3 e^{3 x}\\)"
+              "explain": "Identify the two factors: \\(u=\\cos{\\left(x \\right)}\\) and \\(v=e^{3 x}\\). Use the product rule \\( (uv)'=u' v+uv'\\).",
+              "work": "\\(u'=- \\sin{\\left(x \\right)},\\quad v'=3 e^{3 x}\\)"
             },
             {
               "explain": "Substitute both product-rule terms; keep both terms in the sum.",
@@ -8193,8 +8193,8 @@
           ],
           "steps": [
             {
-              "explain": "Identify the two factors: \\(u=x\\) and \\(v=e^{2 x}\\). Use the product rule \\( (uv)\\prime=u\\prime v+uv\\prime\\).",
-              "work": "\\(u\\prime=1,\\quad v\\prime=2 e^{2 x}\\)"
+              "explain": "Identify the two factors: \\(u=x\\) and \\(v=e^{2 x}\\). Use the product rule \\( (uv)'=u' v+uv'\\).",
+              "work": "\\(u'=1,\\quad v'=2 e^{2 x}\\)"
             },
             {
               "explain": "Substitute both product-rule terms; keep both terms in the sum.",
@@ -8320,7 +8320,7 @@
           "steps": [
             {
               "explain": "The line y=5x−3 has gradient 5. Differentiate the curve to get its tangent gradient.",
-              "work": "\\(y\\prime=2e^x+3\\)"
+              "work": "\\(y'=2e^x+3\\)"
             },
             {
               "explain": "Set the tangent gradient equal to 5 and solve.",
@@ -8356,11 +8356,11 @@
           "steps": [
             {
               "explain": "Differentiate to find the tangent gradient function.",
-              "work": "\\(y\\prime=e^x\\)"
+              "work": "\\(y'=e^x\\)"
             },
             {
               "explain": "At x=0, the point is (0,1) and the gradient is 1.",
-              "work": "\\(y(0)=1,\\qquad y\\prime(0)=1\\)"
+              "work": "\\(y(0)=1,\\qquad y'(0)=1\\)"
             },
             {
               "explain": "Use point-slope form and simplify.",
@@ -9852,7 +9852,7 @@
             "&#8203;\\((-1,-e^{-2})\\), local minimum"
           ],
           "answer": 0,
-          "hint": "Solve y'=0; use y'' test.",
+          "hint": "Solve \\(y'=0\\); use \\(y''\\) test.",
           "solution": "2x+1=0 ⇒ x=-1/2, y=-1/(2e). y''(-1/2)>0 ⇒ local min.",
           "steps": [
             {
@@ -9883,7 +9883,7 @@
             "\\((1,e^{2})\\)"
           ],
           "answer": 0,
-          "hint": "Solve y''=0.",
+          "hint": "Solve \\(y''=0.\\)",
           "solution": "4x+4=0 ⇒ x=-1, y=-e^{-2}. Point (-1,-e^{-2}).",
           "steps": [
             {
@@ -9995,7 +9995,7 @@
             "\\((-2,e^{-2})\\) and \\((2,e^{-2})\\)"
           ],
           "answer": 0,
-          "hint": "Solve y''=0: x²-1=0.",
+          "hint": "Solve \\(y''=0\\): x²-1=0.",
           "solution": "x=±1, y=e^{-1/2}. Points (±1, e^{-1/2}).",
           "steps": [
             {
@@ -10532,15 +10532,15 @@
                 }
               ],
               "answer": 0,
-              "hint": "Differentiate N(t). For an exponential model, N′(t)=0.013N(t). Use the value from part (b).",
+              "hint": "Differentiate N(t). For an exponential model, N'(t)=0.013N(t). Use the value from part (b).",
               "steps": [
                 {
                   "explain": "Differentiate N(t)=200e^(0.013t) using the chain rule.",
-                  "work": "\\(N\\prime(t)=200(0.013)e^{0.013t}=0.013N(t)\\)"
+                  "work": "\\(N'(t)=200(0.013)e^{0.013t}=0.013N(t)\\)"
                 },
                 {
                   "explain": "At t=24, use N(24)≈273.2309.",
-                  "work": "\\(N\\prime(24)=0.013(273.2309)\\approx3.55199\\)"
+                  "work": "\\(N'(24)=0.013(273.2309)\\approx3.55199\\)"
                 },
                 {
                   "explain": "The units are bacteria per hour because this is a rate of change in N with respect to hours.",
@@ -10564,32 +10564,32 @@
           "id": "y12a-advanced-003-app-q03",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "Let f(x) = xe^(−2x). It is given that f′(x) = e^(−2x) − 2xe^(−2x).",
+          "stem": "Let f(x) = xe^(−2x). It is given that \\(f'(x) = e^(\\)−2x) − 2xe^(−2x).",
           "parts": [
             {
               "id": "y12a-advanced-003-app-y12a-advanced-003-app-q03-a",
               "type": "review",
               "difficulty": "medium",
-              "stem": "Show that f′′(x) = 4(x − 1)e^(−2x).",
-              "answer": "f′′(x)=4(x−1)e^(−2x).",
+              "stem": "Show that \\(f''(x) = 4(x\\) − 1)e^(−2x).",
+              "answer": "\\(f''(x)=4(x\\)−1)e^(−2x).",
               "manual": true,
-              "hint": "Differentiate the given f′ using the product rule, then collect the common factor e^(−2x).",
+              "hint": "Differentiate the given \\(f'\\) using the product rule, then collect the common factor e^(−2x).",
               "steps": [
                 {
                   "explain": "Start from the given first derivative and identify the two factors in each product.",
-                  "work": "\\(f\\prime(x)=e^{-2x}-2xe^{-2x}\\)"
+                  "work": "\\(f'(x)=e^{-2x}-2xe^{-2x}\\)"
                 },
                 {
                   "explain": "Differentiate e^(−2x) by the chain rule. For the product xe^(−2x), use the product rule.",
-                  "work": "\\(f\\prime\\prime(x)=-2e^{-2x}-2\\left(e^{-2x}-2xe^{-2x}\\right)\\)"
+                  "work": "\\(f''(x)=-2e^{-2x}-2\\left(e^{-2x}-2xe^{-2x}\\right)\\)"
                 },
                 {
                   "explain": "Expand the brackets and combine like terms.",
-                  "work": "\\(f\\prime\\prime(x)=-2e^{-2x}-2e^{-2x}+4xe^{-2x}\\)"
+                  "work": "\\(f''(x)=-2e^{-2x}-2e^{-2x}+4xe^{-2x}\\)"
                 },
                 {
                   "explain": "Factor out 4e^(−2x).",
-                  "work": "\\(f\\prime\\prime(x)=4(x-1)e^{-2x}\\)"
+                  "work": "\\(f''(x)=4(x-1)e^{-2x}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -10615,19 +10615,19 @@
                 }
               ],
               "answer": 0,
-              "hint": "Factor f′(x), set it to zero, then use f′′ to classify the point.",
+              "hint": "Factor \\(f'(x)\\), set it to zero, then use \\(f''\\) to classify the point.",
               "steps": [
                 {
                   "explain": "Factor the given derivative. Since an exponential is never zero, only the bracket can be zero.",
-                  "work": "\\(f\\prime(x)=e^{-2x}(1-2x)=0\\Rightarrow x=\\frac12\\)"
+                  "work": "\\(f'(x)=e^{-2x}(1-2x)=0\\Rightarrow x=\\frac12\\)"
                 },
                 {
                   "explain": "Substitute x=1/2 into f(x)=xe^(−2x).",
                   "work": "\\(f(\\frac12)=\\frac12e^{-1}=\\frac1{2e}\\)"
                 },
                 {
-                  "explain": "Use f′′(x)=4(x−1)e^(−2x). At x=1/2, the exponential is positive and x−1 is negative, so f′′<0.",
-                  "work": "\\(f\\prime\\prime(\\frac12)=4(-\\frac12)e^{-1}<0\\Rightarrow\\text{local maximum}\\)"
+                  "explain": "Use \\(f''(x)=4(x\\)−1)e^(−2x). At x=1/2, the exponential is positive and x−1 is negative, so \\(f''<0.\\)",
+                  "work": "\\(f''(\\frac12)=4(-\\frac12)e^{-1}<0\\Rightarrow\\text{local maximum}\\)"
                 },
                 {
                   "explain": "The stationary point is a maximum at the coordinate found.",
@@ -10647,17 +10647,17 @@
               "stem": "Sketch the curve y = xe^(−2x), showing any stationary points, points of inflection and intercepts with the axes.",
               "answer": "The curve passes through (0,0), has a maximum at (1/2,1/(2e)), an inflection point at (1,1/(2e²)), and approaches y=0 from above as x→∞.",
               "manual": true,
-              "hint": "Use f′=0 for the stationary point, f′′=0 for the inflection point, and y=0 for intercepts. The exponential factor stays positive.",
+              "hint": "Use \\(f'=0\\) for the stationary point, \\(f''=0\\) for the inflection point, and y=0 for intercepts. The exponential factor stays positive.",
               "steps": [
                 {
-                  "explain": "For stationary points set f′=e^(−2x)(1−2x)=0. Since the exponential is positive, x=1/2.",
+                  "explain": "For stationary points set \\(f'=e\\)^(−2x)(1−2x)=0. Since the exponential is positive, x=1/2.",
                   "work": "\\(x=\\frac12,\\quad f(\\frac12)=\\frac1{2e}\\)",
                   "figure": {
                     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 280\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M35 225H410M160 250V20\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M45 228 C90 210 122 161 160 122 C199 82 243 82 282 112 C324 144 363 180 405 202\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><circle cx=\"210\" cy=\"82\" r=\"5\" fill=\"#ef4444\"/><circle cx=\"282\" cy=\"112\" r=\"5\" fill=\"#8b5cf6\"/><circle cx=\"160\" cy=\"225\" r=\"4\" fill=\"#f59e0b\"/><text x=\"212\" y=\"66\" font-family=\"Arial\" font-size=\"12\">max (1/2,1/2e)</text><text x=\"286\" y=\"133\" font-family=\"Arial\" font-size=\"12\">inflection (1,1/2e²)</text><text x=\"406\" y=\"220\" font-family=\"Arial\" font-size=\"13\">x</text><text x=\"166\" y=\"23\" font-family=\"Arial\" font-size=\"13\">y</text></svg>"
                   }
                 },
                 {
-                  "explain": "For an inflection point set f′′=4(x−1)e^(−2x)=0. Again the exponential is not zero, so x=1.",
+                  "explain": "For an inflection point set \\(f''=4\\)(x−1)e^(−2x)=0. Again the exponential is not zero, so x=1.",
                   "work": "\\(x=1,\\quad f(1)=e^{-2}=\\frac1{e^2}\\)"
                 },
                 {
@@ -10753,15 +10753,15 @@
               "steps": [
                 {
                   "explain": "Differentiate the exponential term. The derivative of (1.5)^(−0.4t) includes ln(1.5) and the inner derivative −0.4.",
-                  "work": "\\(T\\prime(t)=70(1.5)^{-0.4t}\\ln(1.5)(-0.4)\\)"
+                  "work": "\\(T'(t)=70(1.5)^{-0.4t}\\ln(1.5)(-0.4)\\)"
                 },
                 {
                   "explain": "Combine the constants.",
-                  "work": "\\(T\\prime(t)=-28\\ln(1.5)(1.5)^{-0.4t}\\)"
+                  "work": "\\(T'(t)=-28\\ln(1.5)(1.5)^{-0.4t}\\)"
                 },
                 {
                   "explain": "Substitute t=4.",
-                  "work": "\\(T\\prime(4)=-28\\ln(1.5)(1.5)^{-1.6}\\approx-12.4^{\\circ}\\mathrm C/\\text{min}\\)"
+                  "work": "\\(T'(4)=-28\\ln(1.5)(1.5)^{-1.6}\\approx-12.4^{\\circ}\\mathrm C/\\text{min}\\)"
                 },
                 {
                   "explain": "The negative value confirms the temperature is falling.",
@@ -10834,7 +10834,7 @@
               "type": "review",
               "difficulty": "medium",
               "stem": "Show that the rate of growth of the size of the population is 1900e^(−0.5t)/(1 + 19e^(−0.5t))².",
-              "answer": "y′=1900e^(−0.5t)/(1+19e^(−0.5t))².",
+              "answer": "\\(y'=1900e\\)^(−0.5t)/(1+19e^(−0.5t))².",
               "manual": true,
               "hint": "Differentiate 200(1+19e^(−0.5t))⁻¹ using the chain rule.",
               "steps": [
@@ -10844,11 +10844,11 @@
                 },
                 {
                   "explain": "Differentiate the outside power and multiply by the derivative of the inside expression.",
-                  "work": "\\(y\\prime=200(-1)(1+19e^{-0.5t})^{-2}(19)(-0.5)e^{-0.5t}\\)"
+                  "work": "\\(y'=200(-1)(1+19e^{-0.5t})^{-2}(19)(-0.5)e^{-0.5t}\\)"
                 },
                 {
                   "explain": "The two negative factors give a positive rate. Simplify the constants 200×19×0.5=1900.",
-                  "work": "\\(\\boxed{y\\prime=\\frac{1900e^{-0.5t}}{(1+19e^{-0.5t})^2}}\\)",
+                  "work": "\\(\\boxed{y'=\\frac{1900e^{-0.5t}}{(1+19e^{-0.5t})^2}}\\)",
                   "figure": {
                     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 280\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 230H410M75 255V20\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M76 210 C110 205 125 166 155 127 C186 90 220 69 258 58 C310 42 361 39 402 38\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><path d=\"M75 38H405\" stroke=\"#f59e0b\" stroke-dasharray=\"5 4\"/><text x=\"47\" y=\"44\" font-family=\"Arial\" font-size=\"12\">200</text><text x=\"46\" y=\"214\" font-family=\"Arial\" font-size=\"12\">10</text><text x=\"403\" y=\"228\" font-family=\"Arial\" font-size=\"13\">t</text><text x=\"82\" y=\"22\" font-family=\"Arial\" font-size=\"13\">y</text></svg>"
                   }
@@ -10906,7 +10906,7 @@
               "type": "review",
               "difficulty": "medium",
               "stem": "Show that the rate of growth of the size of the population can be rewritten as (y/400)(200 − y).",
-              "answer": "y′=y(200−y)/400.",
+              "answer": "\\(y'=y\\)(200−y)/400.",
               "manual": true,
               "hint": "Use y=200/(1+19e^(−0.5t)) to rewrite 200−y, then multiply the two expressions.",
               "steps": [
@@ -10923,7 +10923,7 @@
                 },
                 {
                   "explain": "Simplify 200×3800/400=1900. This is the derivative from part (i).",
-                  "work": "\\(\\frac{y}{400}(200-y)=\\frac{1900e^{-0.5t}}{(1+19e^{-0.5t})^2}=y\\prime\\)",
+                  "work": "\\(\\frac{y}{400}(200-y)=\\frac{1900e^{-0.5t}}{(1+19e^{-0.5t})^2}=y'\\)",
                   "figure": {
                     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 280\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 230H410M75 255V20\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M76 210 C110 205 125 166 155 127 C186 90 220 69 258 58 C310 42 361 39 402 38\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><path d=\"M75 38H405\" stroke=\"#f59e0b\" stroke-dasharray=\"5 4\"/><text x=\"47\" y=\"44\" font-family=\"Arial\" font-size=\"12\">200</text><text x=\"46\" y=\"214\" font-family=\"Arial\" font-size=\"12\">10</text><text x=\"403\" y=\"228\" font-family=\"Arial\" font-size=\"13\">t</text><text x=\"82\" y=\"22\" font-family=\"Arial\" font-size=\"13\">y</text></svg>"
                   }
@@ -10956,7 +10956,7 @@
               "steps": [
                 {
                   "explain": "Use the expression for growth rate from part (iii).",
-                  "work": "\\(y\\prime=\\frac{y}{400}(200-y)\\)",
+                  "work": "\\(y'=\\frac{y}{400}(200-y)\\)",
                   "figure": {
                     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 280\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 230H410M75 255V20\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M76 210 C110 205 125 166 155 127 C186 90 220 69 258 58 C310 42 361 39 402 38\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><path d=\"M75 38H405\" stroke=\"#f59e0b\" stroke-dasharray=\"5 4\"/><text x=\"47\" y=\"44\" font-family=\"Arial\" font-size=\"12\">200</text><text x=\"46\" y=\"214\" font-family=\"Arial\" font-size=\"12\">10</text><text x=\"403\" y=\"228\" font-family=\"Arial\" font-size=\"13\">t</text><text x=\"82\" y=\"22\" font-family=\"Arial\" font-size=\"13\">y</text></svg>"
                   }
@@ -10967,7 +10967,7 @@
                 },
                 {
                   "explain": "This is largest when the square term is zero, at y=100.",
-                  "work": "\\(\\max y\\prime\\text{ occurs when }(y-100)^2=0\\Rightarrow y=100\\)"
+                  "work": "\\(\\max y'\\text{ occurs when }(y-100)^2=0\\Rightarrow y=100\\)"
                 },
                 {
                   "explain": "The population grows fastest when it reaches 100 yabbies.",
@@ -11010,11 +11010,11 @@
             }
           ],
           "answer": 0,
-          "hint": "Differentiate and solve y′=0. Check y′′ to classify the stationary point.",
+          "hint": "Differentiate and solve \\(y'=0.\\) Check \\(y''\\) to classify the stationary point.",
           "steps": [
             {
               "explain": "Differentiate y=e^x−ex.",
-              "work": "\\(y\\prime=e^x-e\\)"
+              "work": "\\(y'=e^x-e\\)"
             },
             {
               "explain": "Set the derivative to zero.",
@@ -11026,7 +11026,7 @@
             },
             {
               "explain": "The second derivative is e^x, which is positive for all x. Therefore the stationary point is a minimum.",
-              "work": "\\(y\\prime\\prime=e^x>0\\Rightarrow\\boxed{(1,0)\\text{ minimum}}\\)"
+              "work": "\\(y''=e^x>0\\Rightarrow\\boxed{(1,0)\\text{ minimum}}\\)"
             }
           ],
           "timeLimit": 60,
@@ -11048,7 +11048,7 @@
               "id": "y12a-advanced-003-app-y12a-advanced-003-app-q34-i",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Consider the function f(x)=e^(−x)−2e^(−2x). Find f′(x).",
+              "stem": "Consider the function f(x)=e^(−x)−2e^(−2x). Find \\(f'(x)\\).",
               "options": [
                 {
                   "text": "\\(-e^{-x}+4e^{-2x}\\)"
@@ -11079,7 +11079,7 @@
                 },
                 {
                   "explain": "Combine the terms.",
-                  "work": "\\(\\boxed{f\\prime(x)=-e^{-x}+4e^{-2x}}\\)"
+                  "work": "\\(\\boxed{f'(x)=-e^{-x}+4e^{-2x}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -11105,10 +11105,10 @@
                 }
               ],
               "answer": 0,
-              "hint": "Set f′=0, solve for x, substitute into f, and classify using the sign change or f′′.",
+              "hint": "Set \\(f'=0\\), solve for x, substitute into f, and classify using the sign change or \\(f''\\).",
               "steps": [
                 {
-                  "explain": "Use f′(x)=−e^(−x)+4e^(−2x) and set it equal to zero.",
+                  "explain": "Use \\(f'(x)=-e^(\\)−x)+4e^(−2x) and set it equal to zero.",
                   "work": "\\(-e^{-x}+4e^{-2x}=0\\)",
                   "figure": {
                     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 280\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M35 220H405M205 255V20\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M42 65 C85 87 126 128 162 184 C193 230 220 196 255 142 C292 90 342 61 400 46\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><circle cx=\"205\" cy=\"220\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"278\" cy=\"157\" r=\"5\" fill=\"#ef4444\"/><text x=\"210\" y=\"238\" font-family=\"Arial\" font-size=\"12\">(0,−1)</text><text x=\"282\" y=\"151\" font-family=\"Arial\" font-size=\"12\">(ln 4,1/8)</text><text x=\"406\" y=\"216\" font-family=\"Arial\" font-size=\"13\">x</text><text x=\"211\" y=\"22\" font-family=\"Arial\" font-size=\"13\">y</text></svg>"
@@ -11482,11 +11482,11 @@
               "steps": [
                 {
                   "explain": "Differentiate. The derivative of the exponent −0.14t contributes a factor of −0.14.",
-                  "work": "\\(L\\prime(t)=200000e^{-0.14t}(-0.14)=-28000e^{-0.14t}\\)"
+                  "work": "\\(L'(t)=200000e^{-0.14t}(-0.14)=-28000e^{-0.14t}\\)"
                 },
                 {
                   "explain": "Substitute t=31 and evaluate. The negative sign shows the leaf count is falling.",
-                  "work": "\\(L\\prime(31)=-28000e^{-4.34}\\approx-365.0\\)"
+                  "work": "\\(L'(31)=-28000e^{-4.34}\\approx-365.0\\)"
                 },
                 {
                   "explain": "State the rate with units.",
@@ -12840,7 +12840,7 @@
           "solution": "Find general antiderivative:\n\\( f(x) = \\int (2 + 3e^x) \\, dx = 2x + 3e^x + C \\).\nUse the initial condition \\( f(0) = 2 \\):\n\\( 2 = 2(0) + 3e^0 + C \\implies 2 = 3 + C \\implies C = -1 \\).\nSo, \\( f(x) = 2x + 3e^x - 1 \\).",
           "steps": [
             {
-              "explain": "Integrate f'(x) term-by-term. Work carefully with the exponential coefficients and simplify fully before moving on.",
+              "explain": "Integrate \\(f'(x)\\) term-by-term. Work carefully with the exponential coefficients and simplify fully before moving on.",
               "work": "\\(f(x) = 2x + 3e^x + C\\)"
             },
             {
@@ -12875,7 +12875,7 @@
           "solution": "Find general antiderivative:\n\\( f(x) = \\int (2 - 4e^x) \\, dx = 2x - 4e^x + C \\).\nUse the initial condition \\( f(0) = -2 \\):\n\\( -2 = 2(0) - 4e^0 + C \\implies -2 = -4 + C \\implies C = 2 \\).\nSo, \\( f(x) = 2x - 4e^x + 2 \\).",
           "steps": [
             {
-              "explain": "Integrate f'(x). Work carefully with the exponential coefficients and simplify fully before moving on.",
+              "explain": "Integrate \\(f'(x)\\). Work carefully with the exponential coefficients and simplify fully before moving on.",
               "work": "\\(f(x) = 2x - 4e^x + C\\)"
             },
             {
@@ -12910,7 +12910,7 @@
           "solution": "Find general antiderivative:\n\\( f(x) = \\int (3 + e^{-x}) \\, dx = 3x - e^{-x} + C \\).\nUse the initial condition \\( f(0) = 1 \\):\n\\( 1 = 3(0) - e^0 + C \\implies 1 = -1 + C \\implies C = 2 \\).\nSo, \\( f(x) = 3x - e^{-x} + 2 \\).",
           "steps": [
             {
-              "explain": "Integrate f'(x). Work carefully with the exponential coefficients and simplify fully before moving on.",
+              "explain": "Integrate \\(f'(x)\\). Work carefully with the exponential coefficients and simplify fully before moving on.",
               "work": "\\(f(x) = 3x - e^{-x} + C\\)"
             },
             {
@@ -12945,7 +12945,7 @@
           "solution": "Find general antiderivative:\n\\( f(x) = \\int (5 - e^{-x}) \\, dx = 5x - (-e^{-x}) + C = 5x + e^{-x} + C \\).\nUse the initial condition \\( f(0) = 3 \\):\n\\( 3 = 5(0) + e^0 + C \\implies 3 = 1 + C \\implies C = 2 \\).\nSo, \\( f(x) = 5x + e^{-x} + 2 \\).",
           "steps": [
             {
-              "explain": "Integrate f'(x). Work carefully with the exponential coefficients and simplify fully before moving on.",
+              "explain": "Integrate \\(f'(x)\\). Work carefully with the exponential coefficients and simplify fully before moving on.",
               "work": "\\(f(x) = 5x + e^{-x} + C\\)"
             },
             {
@@ -13015,7 +13015,7 @@
           "solution": "Find general antiderivative:\n\\( f(x) = \\int e^{1-2x} \\, dx = -\\frac{1}{2}e^{1-2x} + C \\).\nUse initial condition \\( f(0.5) = 2 \\):\n\\( 2 = -\\frac{1}{2}e^{1-2(0.5)} + C \\implies 2 = -\\frac{1}{2}(1) + C \\implies C = 2.5 \\).\nSo, \\( f(x) = -\\frac{1}{2}e^{1-2x} + 2.5 \\).",
           "steps": [
             {
-              "explain": "Integrate f'(x). Work carefully with the exponential coefficients and simplify fully before moving on.",
+              "explain": "Integrate \\(f'(x)\\). Work carefully with the exponential coefficients and simplify fully before moving on.",
               "work": "\\(f(x) = -\\dfrac{1}{2}e^{1-2x} + C\\)"
             },
             {
@@ -14345,7 +14345,7 @@
           "solution": "Integrate the derivative:\n\\( f(x) = \\int \\left(e^x + 2e^{-1}\\right) \\, dx = e^x + 2e^{-1}x + C \\).\nUse the boundary condition \\( f(-1) = -1 \\):\n\\( -1 = e^{-1} + 2e^{-1}(-1) + C \\implies -1 = e^{-1} - 2e^{-1} + C \\implies -1 = -e^{-1} + C \\implies C = e^{-1} - 1 \\).\nSo, \\( f(x) = e^x + 2e^{-1}x + e^{-1} - 1 \\).\nNow evaluate at \\( x = 0 \\):\n\\( f(0) = e^0 + 2e^{-1}(0) + e^{-1} - 1 = 1 + 0 + e^{-1} - 1 = e^{-1} \\).",
           "steps": [
             {
-              "explain": "Integrate f'(x). Work carefully with the exponential coefficients and simplify fully before moving on.",
+              "explain": "Integrate \\(f'(x)\\). Work carefully with the exponential coefficients and simplify fully before moving on.",
               "work": "\\(f(x) = e^x + 2e^{-1}x + C\\)"
             },
             {
@@ -14380,7 +14380,7 @@
           "solution": "Integrate the derivative:\n\\( f(x) = \\int (e^x - e^{-x}) \\, dx = e^x + e^{-x} + C \\).\nSince the curve passes through the origin \\( (0, 0) \\):\n\\( 0 = e^0 + e^{-0} + C \\implies 0 = 1 + 1 + C \\implies C = -2 \\).\nSo, \\( f(x) = e^x + e^{-x} - 2 \\).",
           "steps": [
             {
-              "explain": "Integrate f'(x). Work carefully with the exponential coefficients and simplify fully before moving on.",
+              "explain": "Integrate \\(f'(x)\\). Work carefully with the exponential coefficients and simplify fully before moving on.",
               "work": "\\(f(x) = e^x + e^{-x} + C\\)"
             },
             {
@@ -18722,7 +18722,7 @@
           "id": "y12a-advanced-002-p126-q05",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Find \\(f\\prime(1)\\) if \\(f(x)=5^x\\).",
+          "stem": "Find \\(f'(1)\\) if \\(f(x)=5^x\\).",
           "options": [
             "\\(5\\)",
             "\\(5\\ln 5\\)",
@@ -18733,7 +18733,7 @@
           "hint": "Differentiate \\(5^x\\) using \\((a^x)prime=a^x\\ln a\\), then put \\(x=1\\).",
           "keyPoints": [
             {
-              "text": "Find \\(f\\prime(1)\\) if \\(f(x)=5^x\\).",
+              "text": "Find \\(f'(1)\\) if \\(f(x)=5^x\\).",
               "note": "Focus on this given expression or condition before choosing the derivative rule."
             }
           ],

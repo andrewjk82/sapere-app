@@ -842,7 +842,7 @@
               "steps": [
                 {
                   "explain": "Differentiate the height function to get vertical velocity.",
-                  "work": "\\(v(t)=y\\prime(t)=-10t+70\\)"
+                  "work": "\\(v(t)=y'(t)=-10t+70\\)"
                 },
                 {
                   "explain": "At the maximum height, velocity is zero. Solve for t.",
@@ -1268,7 +1268,7 @@
               "steps": [
                 {
                   "explain": "Differentiate v(t)=8−8e^(−2t).",
-                  "work": "\\(a(t)=v\\prime(t)=-8(-2)e^{-2t}=16e^{-2t}\\)",
+                  "work": "\\(a(t)=v'(t)=-8(-2)e^{-2t}=16e^{-2t}\\)",
                   "figure": {
                     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 250\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M40 205H390M65 230V20\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M65 205 C112 100 177 60 250 48 C306 40 351 38 389 38\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.6\"/><path d=\"M65 38H390\" stroke=\"#f59e0b\" stroke-dasharray=\"5 4\"/><circle cx=\"65\" cy=\"205\" r=\"4\" fill=\"#ef4444\"/><text x=\"395\" y=\"202\" font-family=\"Arial\" font-size=\"13\">t</text><text x=\"71\" y=\"22\" font-family=\"Arial\" font-size=\"13\">v</text><text x=\"340\" y=\"33\" font-family=\"Arial\" font-size=\"12\">v=8</text></svg>"
                   }
@@ -1372,7 +1372,7 @@
                 },
                 {
                   "explain": "Since acceleration is positive, velocity increases. Since a(t)=16e^(−2t) decreases toward zero, the slope of the velocity graph gets smaller.",
-                  "work": "\\(v\\prime(t)>0,\\quad v\\prime\\prime(t)=-32e^{-2t}<0\\)"
+                  "work": "\\(v'(t)>0,\\quad v''(t)=-32e^{-2t}<0\\)"
                 },
                 {
                   "explain": "As t→∞, v→8, so draw a horizontal asymptote at v=8.",
@@ -1549,11 +1549,11 @@
             },
             {
               "explain": "The velocity has equal values at the ends of this interval. Since it is differentiable, Rolle’s theorem says its derivative is zero somewhere between 11 and 13.",
-              "work": "\\(\\exists c\\in(11,13):v\\prime(c)=0\\)"
+              "work": "\\(\\exists c\\in(11,13):v'(c)=0\\)"
             },
             {
               "explain": "The derivative of velocity is acceleration. So the acceleration must be zero at some time in the interval.",
-              "work": "\\(v\\prime(t)=a(t)\\Rightarrow\\boxed{a(c)=0\\text{ for some }11<c<13}\\)"
+              "work": "\\(v'(t)=a(t)\\Rightarrow\\boxed{a(c)=0\\text{ for some }11<c<13}\\)"
             }
           ],
           "timeLimit": 60,
