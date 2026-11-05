@@ -7828,7 +7828,8 @@
                   "explain": "Choosing these values makes one of the coefficients zero, which simplifies the equation to directly solve for the other constant.",
                   "work": "\\mathrm{Isolates\\:one\\:variable\\:at\\:a\\:time}"
                 }
-              ]
+              ],
+              "xp": 1
             },
             {
               "id": "y11a-4d-q1d",
