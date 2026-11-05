@@ -39041,28 +39041,28 @@
           "stem": "I am hiding in one of three rooms. On the door of each room I have written two statements, some true, some false. However, no more than one statement on each door is false.\n\nRoom 1: “My name is Kerry.” / “I am not in this room.”\nRoom 2: “I am not in this room.” / “I am in Room 1 or 3.”\nRoom 3: “My name is Luke.” / “I am not in Room 1.”\n\nWhich one of the following statements must be true?",
           "options": [
             "My name is Kerry.",
-            "I am not in Room 1.",
-            "I am in Room 2.",
+            "I am in Room 1.",
+            "I am in Room 1 or 3.",
             "My name is Luke."
           ],
-          "answer": 1,
-          "hint": "Try each room. If a door then has two false statements, that room is impossible.",
+          "answer": 2,
+          "hint": "Start with Room 2 — what do its two statements have in common?",
           "steps": [
             {
-              "explain": "Room 2's two statements say the same thing. They cannot both be false, so both are true: I am not in Room 2.",
-              "work": "I am in Room 1 or Room 3."
+              "explain": "Look at Room 2. Its two statements say the same thing: ‘not in Room 2’ means ‘in Room 1 or 3’. If one were false, the other would be false too — but a door can have at most one false statement.",
+              "work": ""
             },
             {
-              "explain": "Suppose I am in Room 1. Then 'I am not in this room' (door 1) is false, so 'My name is Kerry' must be true. Also 'I am not in Room 1' (door 3) is false, so 'My name is Luke' must be true. I can't be both Kerry and Luke!",
-              "work": "Room 1 is impossible."
+              "explain": "So both statements on Room 2's door are true.",
+              "work": "I am in Room 1 or 3 ✓"
             },
             {
-              "explain": "So I am in Room 3, and my name could be Kerry, Luke or something else — we cannot tell.",
-              "work": "Must be true: I am not in Room 1."
+              "explain": "Checking the others: if I were in Room 1, door 1 and door 3 would each have one false statement, forcing both ‘My name is Kerry’ and ‘My name is Luke’ to be true — impossible. So B is false, and my name could be Kerry, Luke or neither (A and D are not certain).",
+              "work": ""
             },
             {
               "explain": "",
-              "work": "Answer: B"
+              "work": "Answer: C"
             }
           ],
           "timeLimit": 90,
@@ -39073,7 +39073,7 @@
             "number": 9,
             "page": 6,
             "category": "logic puzzle",
-            "note": "Option C changed from 'I am in Room 1 or 3' (also always true) to 'I am in Room 2' so there is one correct answer."
+            "note": "Source option B ('I am not in Room 1') is also always true; replaced with 'I am in Room 1' so the book's answer C is the only correct one."
           }
         },
         {
@@ -39587,7 +39587,7 @@
           "difficulty": "hard",
           "stem": "The diagrams below illustrate four views of a solid figure.\n\nWhich of the responses below illustrates the view of the figure from the direction shown by the arrow on the fourth diagram?",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 230\" width=\"100%\" height=\"auto\" style=\"max-width:520px\"><circle cx=\"60\" cy=\"60\" r=\"45\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\"/><circle cx=\"45\" cy=\"60\" r=\"30\" fill=\"#eff6ff\" stroke=\"#475569\" stroke-width=\"2\"/><circle cx=\"170\" cy=\"60\" r=\"45\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\"/><path d=\"M240 30 L240 95 Q240 103 262 103 L280 103 L330 30\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><ellipse cx=\"285\" cy=\"30\" rx=\"45\" ry=\"9\" fill=\"#eff6ff\" stroke=\"#475569\" stroke-width=\"2\"/><polygon points=\"360,22 450,22 400,100 360,100\" fill=\"#dbeafe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"505\" y1=\"61\" x2=\"462\" y2=\"61\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"462,61 469.2,57.5 469.2,64.5\" fill=\"#475569\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"60\" y=\"125\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">top</text><text x=\"170\" y=\"125\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">bottom</text><text x=\"285\" y=\"125\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">solid</text><text x=\"405\" y=\"125\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">side</text><rect x=\"25\" y=\"160\" width=\"90\" height=\"50\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"70\" y=\"150\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">A</text><polygon points=\"150,160 240,160 215,210 175,210\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"195\" y=\"150\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">B</text><path d=\"M290 160 L360 160 Q372 185 360 210 L290 210 Q278 185 290 160 Z\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"325\" y=\"150\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">C</text><path d=\"M405 160 L495 160 L495 192 Q450 222 405 192 Z\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"450\" y=\"150\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">D</text></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 230\" width=\"100%\" height=\"auto\" style=\"max-width:520px\"><circle cx=\"60\" cy=\"60\" r=\"45\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\"/><circle cx=\"45\" cy=\"60\" r=\"30\" fill=\"#eff6ff\" stroke=\"#475569\" stroke-width=\"2\"/><circle cx=\"170\" cy=\"60\" r=\"45\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\"/><path d=\"M240 30 L240 95 Q240 103 262 103 L280 103 L330 30\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><ellipse cx=\"285\" cy=\"30\" rx=\"45\" ry=\"9\" fill=\"#eff6ff\" stroke=\"#475569\" stroke-width=\"2\"/><polygon points=\"360,22 450,22 400,100 360,100\" fill=\"#dbeafe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"505\" y1=\"61\" x2=\"462\" y2=\"61\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"462,61 469.2,57.5 469.2,64.5\" fill=\"#475569\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1\" stroke-linejoin=\"round\"/><rect x=\"25\" y=\"160\" width=\"90\" height=\"50\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"70\" y=\"150\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">A</text><polygon points=\"150,160 240,160 215,210 175,210\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"195\" y=\"150\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">B</text><path d=\"M290 160 L360 160 Q372 185 360 210 L290 210 Q278 185 290 160 Z\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"325\" y=\"150\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">C</text><path d=\"M405 160 L495 160 L495 192 Q450 222 405 192 Z\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"450\" y=\"150\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">D</text></svg>"
           },
           "options": [
             "A",
@@ -39595,23 +39595,23 @@
             "C",
             "D"
           ],
-          "answer": 3,
+          "answer": 1,
           "steps": [
             {
-              "explain": "The solid is a cylinder with a slanted slice cut off one side: the top is a full circle, but the bottom is only part of a circle.",
+              "explain": "The views show a solid with a large circle on top and a smaller circle at the bottom, pushed to one side: one side is straight up and down, the other side slopes.",
+              "work": "large top circle, small bottom circle"
+            },
+            {
+              "explain": "Looking from the arrow, you see the full width of the large top circle as a long straight top edge, and the small bottom circle as a shorter straight bottom edge.",
+              "work": "top edge longer than bottom edge"
+            },
+            {
+              "explain": "The two edges are joined by straight sloping sides, so the view is a trapezium that is wider at the top.",
               "work": ""
             },
             {
-              "explain": "Looking from the arrow, you face the slanted cut. The top edge is the full width of the cylinder, so it is a straight line across the top.",
-              "work": "flat top, full width"
-            },
-            {
-              "explain": "The cut face is part of an ellipse. Seen from the front, its lower edge curves — it is lowest in the middle where the bottom of the cylinder remains and rises towards the sides.",
-              "work": "curved bottom edge"
-            },
-            {
-              "explain": "Only D has a straight top, straight sides and a curved bottom.",
-              "work": "Answer: D"
+              "explain": "Only B is wider at the top and narrower at the bottom with straight edges.",
+              "work": "Answer: B"
             }
           ],
           "timeLimit": 90,
@@ -40322,23 +40322,23 @@
             "Living in apartments in the city can grant you a new lifestyle change which provides more comfort.",
             "Apartments provide a gated door system so you feel more secure."
           ],
-          "answer": 1,
+          "answer": 0,
           "steps": [
             {
-              "explain": "The argument: a house is better because it gives you more space — a garage for storage and yards for outdoor space.",
+              "explain": "The argument says living in a house is better because it gives you more space — a garage and yards.",
               "work": ""
             },
             {
-              "explain": "A weakener should show that the extra space is not really an advantage over an apartment.",
+              "explain": "A weakener should show a downside of houses that the argument ignores.",
               "work": ""
             },
             {
-              "explain": "B shows apartments also offer extra spaces to use — pools, gyms and saunas — so the ‘more space’ benefit of a house is reduced.",
-              "work": ""
+              "explain": "A points out that houses come with many maintenance jobs (plumbing, electrical) — the extra space brings extra work and cost.",
+              "work": "A ✓"
             },
             {
-              "explain": "A is a downside of houses but not about space. C is vague. D is about security, not space.",
-              "work": "Answer: B"
+              "explain": "B, C and D praise apartments, but don't directly challenge the claimed benefit of a house.",
+              "work": "Answer: A"
             }
           ],
           "timeLimit": 60,
@@ -40362,11 +40362,11 @@
             "Both Mia and Larry",
             "Neither Mia nor Larry"
           ],
-          "answer": 1,
+          "answer": 2,
           "steps": [
             {
-              "explain": "Mia: the passage only says business owners sometimes SEE them as ‘red cans’, and that they have different coloured bands. It never says that ALL extinguishers are red.",
-              "work": "Mia ✗"
+              "explain": "Mia: the passage calls fire extinguishers ‘red cans’ and says ‘these red cans serve a very useful purpose’. Different types are told apart by the coloured BAND around them — the bottles themselves are red.",
+              "work": "Mia ✓"
             },
             {
               "explain": "Larry: the passage says extinguishers contain or put out fires, prevent costly damage and keep you safe — as long as the right type is used.",
@@ -40374,7 +40374,7 @@
             },
             {
               "explain": "",
-              "work": "Answer: B"
+              "work": "Answer: C"
             }
           ],
           "timeLimit": 60,
@@ -41132,19 +41132,19 @@
             "Travelling to space takes 6 to 12-month missions and years of training before that.",
             "Ensuring astronauts get quality sleep is very important as there is no clear difference between day and night like we have on Earth."
           ],
-          "answer": 1,
+          "answer": 0,
           "steps": [
             {
-              "explain": "The passage argues that being an astronaut is very hard — stress, isolation, radiation and gravity changes.",
+              "explain": "The passage focuses only on how hard and risky space travel is — stress, isolation, radiation and gravity changes.",
               "work": ""
             },
             {
-              "explain": "B shows one of those difficulties (isolation and mood) can be reduced, so space travel is less hard than claimed.",
-              "work": "B ✓"
+              "explain": "A gives a strong reason in favour of space travel: exploring space may find new planets and help solve Earth's overpopulation. This shows the difficulties may be worth it.",
+              "work": "A ✓"
             },
             {
-              "explain": "A is about the benefits of exploring space, not the difficulty. C and D add more difficulties — they strengthen the argument.",
-              "work": "Answer: B"
+              "explain": "B only eases one small problem. C and D describe more difficulties, so they support the passage.",
+              "work": "Answer: A"
             }
           ],
           "timeLimit": 60,
@@ -42024,7 +42024,8 @@
             "test": "Thinking Skills Test 3",
             "number": 6,
             "page": 50,
-            "category": "sets and overlap"
+            "category": "sets and overlap",
+            "note": "Book key says A, but A is possible (exactly 10 play both → all 50 play one); C is the statement that cannot be true."
           }
         },
         {
@@ -42205,7 +42206,8 @@
             "test": "Thinking Skills Test 3",
             "number": 11,
             "page": 53,
-            "category": "best value"
+            "category": "best value",
+            "note": "Book key says C ($153), but two 7-day passes (days 1–7 and 10–16) cost $150, which is cheaper."
           }
         },
         {
@@ -42596,19 +42598,19 @@
             "Both Jessica and Whitney",
             "Neither Jessica nor Whitney"
           ],
-          "answer": 2,
+          "answer": 1,
           "steps": [
             {
-              "explain": "The alert only comes when the car is unlocked; otherwise nothing happens.",
+              "explain": "The box says the phone gets an alert ONLY when the car is unlocked; otherwise nothing happens.",
               "work": ""
             },
             {
-              "explain": "So if the alert keeps coming, the car is still unlocked — Whitney is right.",
+              "explain": "So if the alert keeps coming, the car really is still unlocked. Whitney is right.",
               "work": "Whitney ✓"
             },
             {
-              "explain": "Jessica's conclusion says the same thing: her attempt to lock didn't work, so the car still counts as unlocked. Both conclusions follow from the box.",
-              "work": "Jessica ✓   →   Answer: C"
+              "explain": "Jessica blames the car for not ‘registering’ that it is locked — but by the rule, an alert means the car is unlocked, so her locking didn't work. Her explanation doesn't follow from the box.",
+              "work": "Jessica ✗   →   Answer: B"
             }
           ],
           "timeLimit": 60,
@@ -43208,6 +43210,1352 @@
             "number": 40,
             "page": 72,
             "category": "family relationships"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The beef and dairy cattle industry is one of the main contributors to global greenhouse gases. Methane makes up about half of the total greenhouse gases on earth. Cows generate methane in two main ways: through their digestion and through their waste.\n\nTom: “Methane gas emissions from livestock are a huge problem to the environment.”\n\nPeter: “If more people become vegans, it would have a positive impact on the environment.”\n\nIf the information in the box is true, whose reasoning is correct?",
+          "options": [
+            "Tom only",
+            "Peter only",
+            "Both Tom and Peter",
+            "Neither Tom nor Peter"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "The box says cattle are one of the main sources of greenhouse gases, mostly through methane.",
+              "work": ""
+            },
+            {
+              "explain": "Tom: methane from livestock is a big environmental problem — this matches the box.",
+              "work": "Tom ✓"
+            },
+            {
+              "explain": "Peter: vegans eat no meat, dairy or eggs. More vegans means fewer cattle are raised, so less methane — good for the environment.",
+              "work": "Peter ✓"
+            },
+            {
+              "explain": "",
+              "work": "Answer: C"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 1,
+            "page": 73,
+            "category": "whose reasoning is correct"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "All year 6 students from Heights Primary School went to Lune Park for their mid-year excursion. There were three rides that were most popular among the students.\nThe rides were: Tango Train, Hair Raiser and Moon Ranger.\n\n• Most children who rode Tango Train also rode Moon Ranger.\n• All children who rode Tango Train also rode Hair Raiser.\n• Some students who rode Moon Ranger also rode Hair Raiser.\n\nWe know that Joseph rode Hair Raiser. Which one of the following statements must be true?",
+          "options": [
+            "Joseph rode Tango Train, but did not ride Moon Ranger.",
+            "Joseph rode Moon Ranger, but did not ride Tango Train.",
+            "Joseph rode both Tango Train and Moon Ranger.",
+            "There is not enough information to confirm whether Joseph rode either Tango Train or Moon Ranger."
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "The rules only go one way: Tango Train → Hair Raiser. Riding Hair Raiser does NOT mean you rode Tango Train.",
+              "work": ""
+            },
+            {
+              "explain": "Some Moon Ranger riders also rode Hair Raiser — but that doesn't mean every Hair Raiser rider rode Moon Ranger.",
+              "work": ""
+            },
+            {
+              "explain": "So knowing Joseph rode Hair Raiser tells us nothing certain about the other two rides.",
+              "work": "Answer: D"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 2,
+            "page": 73,
+            "category": "conditional reasoning"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Elise broke her necklace.\n\nShe found one quarter of the beads on the carpet, one third down the side of the stool, one fifth in her bag, while one sixth remained in her hand; five beads were never found.\n\nHow many beads were there to start with?",
+          "options": [
+            "100",
+            "74",
+            "56",
+            "30"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Add up the fractions that were found (use 60ths).",
+              "work": "\\(\\frac{1}{4}+\\frac{1}{3}+\\frac{1}{5}+\\frac{1}{6} = \\frac{15+20+12+10}{60} = \\frac{57}{60}\\)"
+            },
+            {
+              "explain": "The part never found:",
+              "work": "\\(1 - \\frac{57}{60} = \\frac{3}{60} = \\frac{1}{20}\\)"
+            },
+            {
+              "explain": "\\(\\frac{1}{20}\\) of the beads is 5 beads.",
+              "work": "5 × 20 = 100   →   Answer: A"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 3,
+            "page": 74,
+            "category": "fractions"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Every year there are nearly 25 000 car fires, but not all drivers travel with a fire extinguisher in their car. Sam thinks that if more drivers could be encouraged to carry fire extinguishers then the number of car fires could be considerably reduced.\n\nWhich one of these statements, if true, most weakens Sam's argument?",
+          "options": [
+            "Research shows that fire extinguishers are very effective in most car fires.",
+            "Most drivers never experience a car fire.",
+            "There is a possibility that the car fires cannot be put out with an extinguisher.",
+            "Whether a car is carrying an extinguisher or not does not affect the possibility of a car fire."
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Sam claims carrying extinguishers would REDUCE THE NUMBER of car fires.",
+              "work": ""
+            },
+            {
+              "explain": "An extinguisher can put a fire out once it starts, but it can't stop a fire from starting.",
+              "work": ""
+            },
+            {
+              "explain": "D says exactly that — carrying an extinguisher doesn't change whether a fire happens — so the number of fires would not drop.",
+              "work": "Answer: D"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 4,
+            "page": 74,
+            "category": "weaken an argument"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q5",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "There are 3 pieces of blocks shown below. They are all made up of equally sized squares.\n\nWhich one of the following pieces will fit with the three pieces above to make a 6 × 5 rectangle? You can rotate the shapes if needed.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 210\" width=\"100%\" height=\"auto\" style=\"max-width:460px\"><rect x=\"40\" y=\"50\" width=\"20\" height=\"20\" fill=\"#fef08a\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"60\" y=\"30\" width=\"20\" height=\"20\" fill=\"#fef08a\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"80\" y=\"30\" width=\"20\" height=\"20\" fill=\"#fef08a\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"60\" y=\"10\" width=\"20\" height=\"20\" fill=\"#fef08a\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"80\" y=\"10\" width=\"20\" height=\"20\" fill=\"#fef08a\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"20\" y=\"50\" width=\"20\" height=\"20\" fill=\"#fef08a\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"60\" y=\"50\" width=\"20\" height=\"20\" fill=\"#fef08a\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"80\" y=\"50\" width=\"20\" height=\"20\" fill=\"#fef08a\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"40\" y1=\"50\" x2=\"60\" y2=\"50\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"40\" y1=\"70\" x2=\"60\" y2=\"70\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"50\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"100\" y1=\"30\" x2=\"100\" y2=\"50\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"60\" y1=\"10\" x2=\"80\" y2=\"10\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"60\" y1=\"10\" x2=\"60\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"80\" y1=\"10\" x2=\"100\" y2=\"10\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"100\" y1=\"10\" x2=\"100\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"20\" y1=\"50\" x2=\"40\" y2=\"50\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"20\" y1=\"70\" x2=\"40\" y2=\"70\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"20\" y1=\"50\" x2=\"20\" y2=\"70\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"60\" y1=\"70\" x2=\"80\" y2=\"70\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"80\" y1=\"70\" x2=\"100\" y2=\"70\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"100\" y1=\"50\" x2=\"100\" y2=\"70\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><rect x=\"150\" y=\"10\" width=\"20\" height=\"20\" fill=\"#bbf7d0\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"150\" y=\"30\" width=\"20\" height=\"20\" fill=\"#bbf7d0\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"130\" y=\"10\" width=\"20\" height=\"20\" fill=\"#bbf7d0\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"130\" y=\"30\" width=\"20\" height=\"20\" fill=\"#bbf7d0\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"150\" y1=\"10\" x2=\"170\" y2=\"10\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"170\" y1=\"10\" x2=\"170\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"150\" y1=\"50\" x2=\"170\" y2=\"50\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"170\" y1=\"30\" x2=\"170\" y2=\"50\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"130\" y1=\"10\" x2=\"150\" y2=\"10\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"130\" y1=\"10\" x2=\"130\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"130\" y1=\"50\" x2=\"150\" y2=\"50\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"130\" y1=\"30\" x2=\"130\" y2=\"50\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><rect x=\"200\" y=\"30\" width=\"20\" height=\"20\" fill=\"#fed7aa\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"200\" y=\"50\" width=\"20\" height=\"20\" fill=\"#fed7aa\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"220\" y=\"50\" width=\"20\" height=\"20\" fill=\"#fed7aa\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"200\" y=\"10\" width=\"20\" height=\"20\" fill=\"#fed7aa\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"200\" y=\"70\" width=\"20\" height=\"20\" fill=\"#fed7aa\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"220\" y=\"70\" width=\"20\" height=\"20\" fill=\"#fed7aa\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"200\" y1=\"30\" x2=\"200\" y2=\"50\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"220\" y1=\"30\" x2=\"220\" y2=\"50\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"200\" y1=\"50\" x2=\"200\" y2=\"70\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"220\" y1=\"50\" x2=\"240\" y2=\"50\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"240\" y1=\"50\" x2=\"240\" y2=\"70\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"200\" y1=\"10\" x2=\"220\" y2=\"10\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"200\" y1=\"10\" x2=\"200\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"220\" y1=\"10\" x2=\"220\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"200\" y1=\"90\" x2=\"220\" y2=\"90\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"200\" y1=\"70\" x2=\"200\" y2=\"90\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"220\" y1=\"90\" x2=\"240\" y2=\"90\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"240\" y1=\"70\" x2=\"240\" y2=\"90\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><rect x=\"20\" y=\"140\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"60\" y=\"140\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"20\" y=\"120\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"80\" y=\"140\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"40\" y=\"140\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"60\" y=\"120\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"80\" y=\"120\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"60\" y=\"180\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"80\" y=\"180\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"60\" y=\"160\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"40\" y=\"120\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"80\" y=\"160\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"20\" y1=\"160\" x2=\"40\" y2=\"160\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"20\" y1=\"140\" x2=\"20\" y2=\"160\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"20\" y1=\"120\" x2=\"40\" y2=\"120\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"20\" y1=\"120\" x2=\"20\" y2=\"140\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"100\" y1=\"140\" x2=\"100\" y2=\"160\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"40\" y1=\"160\" x2=\"60\" y2=\"160\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"60\" y1=\"120\" x2=\"80\" y2=\"120\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"80\" y1=\"120\" x2=\"100\" y2=\"120\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"100\" y1=\"120\" x2=\"100\" y2=\"140\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"60\" y1=\"200\" x2=\"80\" y2=\"200\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"60\" y1=\"180\" x2=\"60\" y2=\"200\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"80\" y1=\"200\" x2=\"100\" y2=\"200\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"100\" y1=\"180\" x2=\"100\" y2=\"200\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"60\" y1=\"160\" x2=\"60\" y2=\"180\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"40\" y1=\"120\" x2=\"60\" y2=\"120\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"100\" y1=\"160\" x2=\"100\" y2=\"180\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><text x=\"60\" y=\"112\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">A</text><rect x=\"125\" y=\"140\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"145\" y=\"160\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"125\" y=\"120\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"185\" y=\"140\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"145\" y=\"140\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"125\" y=\"180\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"185\" y=\"120\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"165\" y=\"180\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"165\" y=\"160\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"145\" y=\"120\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"185\" y=\"160\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"145\" y=\"180\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"125\" y1=\"160\" x2=\"145\" y2=\"160\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"125\" y1=\"140\" x2=\"125\" y2=\"160\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"145\" y1=\"160\" x2=\"145\" y2=\"180\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"125\" y1=\"120\" x2=\"145\" y2=\"120\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"125\" y1=\"120\" x2=\"125\" y2=\"140\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"185\" y1=\"140\" x2=\"185\" y2=\"160\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"205\" y1=\"140\" x2=\"205\" y2=\"160\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"165\" y1=\"140\" x2=\"165\" y2=\"160\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"125\" y1=\"180\" x2=\"145\" y2=\"180\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"125\" y1=\"200\" x2=\"145\" y2=\"200\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"125\" y1=\"180\" x2=\"125\" y2=\"200\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"185\" y1=\"120\" x2=\"205\" y2=\"120\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"185\" y1=\"120\" x2=\"185\" y2=\"140\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"205\" y1=\"120\" x2=\"205\" y2=\"140\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"165\" y1=\"200\" x2=\"185\" y2=\"200\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"185\" y1=\"180\" x2=\"185\" y2=\"200\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"165\" y1=\"160\" x2=\"185\" y2=\"160\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"145\" y1=\"120\" x2=\"165\" y2=\"120\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"165\" y1=\"120\" x2=\"165\" y2=\"140\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"185\" y1=\"180\" x2=\"205\" y2=\"180\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"205\" y1=\"160\" x2=\"205\" y2=\"180\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"145\" y1=\"200\" x2=\"165\" y2=\"200\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><text x=\"165\" y=\"112\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">B</text><rect x=\"250\" y=\"160\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"270\" y=\"140\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"230\" y=\"120\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"290\" y=\"140\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"250\" y=\"140\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"290\" y=\"120\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"270\" y=\"180\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"230\" y=\"160\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"290\" y=\"180\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"270\" y=\"160\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"250\" y=\"120\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"290\" y=\"160\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"250\" y1=\"180\" x2=\"270\" y2=\"180\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"270\" y1=\"140\" x2=\"290\" y2=\"140\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"230\" y1=\"120\" x2=\"250\" y2=\"120\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"230\" y1=\"140\" x2=\"250\" y2=\"140\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"230\" y1=\"120\" x2=\"230\" y2=\"140\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"310\" y1=\"140\" x2=\"310\" y2=\"160\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"250\" y1=\"140\" x2=\"250\" y2=\"160\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"290\" y1=\"120\" x2=\"310\" y2=\"120\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"290\" y1=\"120\" x2=\"290\" y2=\"140\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"310\" y1=\"120\" x2=\"310\" y2=\"140\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"270\" y1=\"200\" x2=\"290\" y2=\"200\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"270\" y1=\"180\" x2=\"270\" y2=\"200\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"230\" y1=\"160\" x2=\"250\" y2=\"160\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"230\" y1=\"180\" x2=\"250\" y2=\"180\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"230\" y1=\"160\" x2=\"230\" y2=\"180\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"290\" y1=\"200\" x2=\"310\" y2=\"200\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"310\" y1=\"180\" x2=\"310\" y2=\"200\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"250\" y1=\"120\" x2=\"270\" y2=\"120\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"270\" y1=\"120\" x2=\"270\" y2=\"140\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"310\" y1=\"160\" x2=\"310\" y2=\"180\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><text x=\"270\" y=\"112\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">C</text><rect x=\"335\" y=\"140\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"355\" y=\"160\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"375\" y=\"140\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"395\" y=\"140\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"355\" y=\"140\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"375\" y=\"120\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"375\" y=\"180\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"335\" y=\"160\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"375\" y=\"160\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"355\" y=\"120\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"395\" y=\"160\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><rect x=\"355\" y=\"180\" width=\"20\" height=\"20\" fill=\"#dbeafe\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"335\" y1=\"140\" x2=\"355\" y2=\"140\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"335\" y1=\"140\" x2=\"335\" y2=\"160\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"395\" y1=\"140\" x2=\"415\" y2=\"140\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"415\" y1=\"140\" x2=\"415\" y2=\"160\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"375\" y1=\"120\" x2=\"395\" y2=\"120\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"395\" y1=\"120\" x2=\"395\" y2=\"140\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"375\" y1=\"200\" x2=\"395\" y2=\"200\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"395\" y1=\"180\" x2=\"395\" y2=\"200\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"335\" y1=\"180\" x2=\"355\" y2=\"180\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"335\" y1=\"160\" x2=\"335\" y2=\"180\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"355\" y1=\"120\" x2=\"375\" y2=\"120\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"355\" y1=\"120\" x2=\"355\" y2=\"140\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"395\" y1=\"180\" x2=\"415\" y2=\"180\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"415\" y1=\"160\" x2=\"415\" y2=\"180\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"355\" y1=\"200\" x2=\"375\" y2=\"200\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"355\" y1=\"180\" x2=\"355\" y2=\"200\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><text x=\"375\" y=\"112\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">D</text></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Count the squares: the three pieces have 8 + 4 + 6 = 18 squares, and a 6 × 5 rectangle has 30, so the missing piece has 12 squares (every option does).",
+              "work": ""
+            },
+            {
+              "explain": "Put the yellow L along the left: its long row of 4 runs along the middle, with its 2 × 2 block standing at the top left. The green square fits under it at the bottom left, and the orange piece lies flat along the bottom right.",
+              "work": ""
+            },
+            {
+              "explain": "That leaves a space 4 wide across the top two rows on the right, plus 2 × 2 below it at the far right — exactly the shape of A.",
+              "work": "Answer: A"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 5,
+            "page": 75,
+            "category": "spatial reasoning · jigsaw",
+            "note": "Source said '6 × 6 square' but the pieces make a 6 × 5 rectangle (book solution shows 6 × 5); option B was also changed because the original B fitted too."
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Vitamin E is an essential nutrient for the body. It can be used externally on skin and hair. It fights free radicals and protects skin from oxidative damages.\nIt is reported that although Vitamin E, present in fresh fruits and vegetables is beneficial for the human body, capsule Vitamin E does not have the same effect.\n\nIf the information in the box is true, which of these statements most strengthens the argument?",
+          "options": [
+            "Vitamin E is crucial to the health of animals.",
+            "Vitamin E in capsules allows healthier hair to grow.",
+            "Only Vitamin E in fruits is absorbed entirely by the small intestine.",
+            "The sale of capsule Vitamin E should be banned."
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "The argument: Vitamin E from fruit and vegetables helps the body, but capsules don't work as well.",
+              "work": ""
+            },
+            {
+              "explain": "C gives a reason why: only the Vitamin E in fruit is fully absorbed. That explains and supports the claim.",
+              "work": "C ✓"
+            },
+            {
+              "explain": "A is about animals. B praises capsules (weakens). D is an opinion, not evidence.",
+              "work": "Answer: C"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 6,
+            "page": 76,
+            "category": "strengthen an argument"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Andy, Bobby and Harvey are playing with coins. They take turns to toss the coin on the table.\n\n• If the coin shows heads, then that player must receive $1 from each of the two other players.\n• If the coin shows tails, then that player must give $1 to each of the other two players.\n\nAndy's and Bobby's coins show heads and Harvey's coin shows tails.\n\nIf Andy started with $10, how much does he have now?",
+          "options": [
+            "$9",
+            "$10",
+            "$11",
+            "$12"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Andy's heads: he gets $1 from each of the other two.",
+              "work": "$10 + $2 = $12"
+            },
+            {
+              "explain": "Bobby's heads: Andy pays Bobby $1.",
+              "work": "$12 − $1 = $11"
+            },
+            {
+              "explain": "Harvey's tails: Harvey gives Andy $1.",
+              "work": "$11 + $1 = $12   →   Answer: D"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 7,
+            "page": 76,
+            "category": "number reasoning"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q8",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "It's normal for children to be fussy eaters. But food allergy is an immune system reaction that occurs soon after eating a certain food. Even tiny amounts of the allergy-causing food can trigger signs and symptoms. Anaphylaxis is a severe allergic reaction that needs urgent medical attention.\n\nWhich of the following best weakens the above argument?",
+          "options": [
+            "Fussy eating is a natural part of children's development.",
+            "Some people like sweet food which can cause cavities and tooth decay.",
+            "The most common foods that cause allergic reactions are nuts, milk and shellfish.",
+            "People do not eat certain foods due to allergies that can harm them."
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "The passage separates fussy eating (‘normal’) from food allergies.",
+              "work": ""
+            },
+            {
+              "explain": "D suggests that some children who refuse foods may not be fussy at all — they may be avoiding foods that harm them. That challenges the idea that refusing food is just ‘normal’ fussiness.",
+              "work": "D ✓"
+            },
+            {
+              "explain": "A agrees with the passage; B and C don't affect the argument.",
+              "work": "Answer: D"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 8,
+            "page": 77,
+            "category": "weaken an argument"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q9",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Jenny lives in Liverpool. On Sunday she plans to visit her friend Sandra who lives in Mascot for lunch.\n\nHer journey will consist of a 10-minute walk to Liverpool station, then a train ride to Mascot station and finally a bus ride to Sandra's house.\n\nTrains leave Liverpool at 06:45 and then every 30 minutes until 21:15, taking 1 hour 20 minutes to reach Mascot.\n\nBuses leave Mascot station at 08:00 and then every 20 minutes until 21:00, arriving at Sandra's house 12 minutes later.\n\nJenny left her house at 10:00 am.\n\nWhat is the earliest time she can arrive at Sandra's house for lunch?",
+          "options": [
+            "11:52 am",
+            "11:42 am",
+            "12:05 pm",
+            "1:12 pm"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "She reaches Liverpool station at 10:10. Trains leave at :15 and :45 past each hour, so she catches the 10:15.",
+              "work": "train 10:15 → Mascot 11:35"
+            },
+            {
+              "explain": "Buses leave Mascot at :00, :20 and :40. The next one after 11:35 is 11:40.",
+              "work": "bus 11:40 → Sandra's 11:52"
+            },
+            {
+              "explain": "",
+              "work": "Answer: A"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 9,
+            "page": 77,
+            "category": "timetables"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "I saw 9 cars with bicycles on the roof in the parking lot.\n\nSome of the cars were carrying one bicycle, and some had two.\nCounting the wheels of the cars and the bicycles, there was a total of 60 wheels.\n\nHow many cars had 2 bicycles on the roof?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Car wheels:",
+              "work": "9 × 4 = 36"
+            },
+            {
+              "explain": "Bicycle wheels and number of bicycles:",
+              "work": "60 − 36 = 24 wheels → 24 ÷ 2 = 12 bicycles"
+            },
+            {
+              "explain": "Each car has at least 1 bicycle (9); the extra 3 bicycles are second bikes.",
+              "work": "12 − 9 = 3 cars with 2 bicycles   →   Answer: C"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 10,
+            "page": 78,
+            "category": "number reasoning"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q11",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Hypochondriacs are people with illness anxiety disorder. They have an unrealistic fear that they have a serious medical condition or fear that they are at high risk of becoming ill. They misinterpret typical body functions as signs of illness. Even after medical tests show no problems, people with hypochondriasis are still preoccupied with the idea that they are seriously sick. It is important to treat hypochondriacs in the early stages.\n\nIf the information in the box is true, which of the following most strengthens the above argument?",
+          "options": [
+            "Hypochondriacs don't trust doctors that they are taking their illness seriously.",
+            "Hypochondriasis is extremely rare.",
+            "Hypochondriasis typically appears during early adulthood but can affect all ages and genders.",
+            "Hypochondriacs can develop depression, anxiety or other mood changes."
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "The conclusion is that hypochondriacs should be treated EARLY.",
+              "work": ""
+            },
+            {
+              "explain": "D shows what can happen if it isn't treated — it can lead to depression, anxiety and other problems. That is a reason to treat it early.",
+              "work": "D ✓"
+            },
+            {
+              "explain": "B weakens it (rare = less urgent). A and C give facts but no reason for early treatment.",
+              "work": "Answer: D"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 11,
+            "page": 78,
+            "category": "strengthen an argument"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q12",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Miss Brown needed to select one picture from her class to be sent to the Visual Art competition. She wanted to choose from 4 pictures.\nIn order to be selected, the picture needed to be creative and colourful.\n\nWhich two of the missing answers must be known in order to determine which picture will be chosen?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 140\" width=\"100%\" height=\"auto\" style=\"max-width:400px\"><rect x=\"10\" y=\"10\" width=\"380\" height=\"24\" rx=\"0\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"50.0\" y=\"26.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">Picture</text><text x=\"165.0\" y=\"26.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">Was it creative?</text><line x1=\"90\" y1=\"10\" x2=\"90\" y2=\"34\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"315.0\" y=\"26.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">Was it colourful?</text><line x1=\"240\" y1=\"10\" x2=\"240\" y2=\"34\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"34\" width=\"380\" height=\"24\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"50.0\" y=\"50.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">1</text><text x=\"165.0\" y=\"50.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">(a)</text><line x1=\"90\" y1=\"34\" x2=\"90\" y2=\"58\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"315.0\" y=\"50.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">Yes</text><line x1=\"240\" y1=\"34\" x2=\"240\" y2=\"58\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"58\" width=\"380\" height=\"24\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"50.0\" y=\"74.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">2</text><text x=\"165.0\" y=\"74.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">Yes</text><line x1=\"90\" y1=\"58\" x2=\"90\" y2=\"82\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"315.0\" y=\"74.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">(c)</text><line x1=\"240\" y1=\"58\" x2=\"240\" y2=\"82\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"82\" width=\"380\" height=\"24\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"50.0\" y=\"98.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">3</text><text x=\"165.0\" y=\"98.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">(b)</text><line x1=\"90\" y1=\"82\" x2=\"90\" y2=\"106\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"315.0\" y=\"98.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">No</text><line x1=\"240\" y1=\"82\" x2=\"240\" y2=\"106\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"106\" width=\"380\" height=\"24\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"50.0\" y=\"122.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">4</text><text x=\"165.0\" y=\"122.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">No</text><line x1=\"90\" y1=\"106\" x2=\"90\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"315.0\" y=\"122.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">(d)</text><line x1=\"240\" y1=\"106\" x2=\"240\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/></svg>"
+          },
+          "options": [
+            "(a) and (c)",
+            "(b) and (d)",
+            "(b) and (c)",
+            "(c) and (d)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "A picture must be BOTH creative and colourful.",
+              "work": ""
+            },
+            {
+              "explain": "Picture 3 is not colourful and picture 4 is not creative, so neither can be chosen — (b) and (d) don't matter.",
+              "work": ""
+            },
+            {
+              "explain": "Pictures 1 and 2 could still be chosen: we need to know whether picture 1 is creative (a) and whether picture 2 is colourful (c).",
+              "work": "Answer: A"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 12,
+            "page": 79,
+            "category": "conditional reasoning"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q13",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Victor is planning a trip to Movie World and is calculating his budget.\nHe wants to go on the following rides:\n\nSuperman Escape*, DC Rivals⁺, Wild Wild West, Scooby-Doo*, Looney Tunes, Ghost Train⁺, Double Dragon of Fire*, Barrels of Fun*, Power Surge and Hair Raise.\n\nPricing: 1 ride costs $10 (* rides cost an extra $5, ⁺ rides cost an extra $10). A Day Pass costs $85, or $110 for rides including * or ⁺.\n\nHow much would Victor save by buying the Day Pass instead of buying individual tickets?",
+          "options": [
+            "$30",
+            "$10",
+            "$11",
+            "$20"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Individual tickets: 4 plain rides at $10, 4 * rides at $15 and 2 ⁺ rides at $20.",
+              "work": "4 × $10 + 4 × $15 + 2 × $20 = $40 + $60 + $40 = $140"
+            },
+            {
+              "explain": "His rides include * and ⁺ rides, so he needs the $110 Day Pass.",
+              "work": ""
+            },
+            {
+              "explain": "",
+              "work": "$140 − $110 = $30   →   Answer: A"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 13,
+            "page": 80,
+            "category": "best value"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q14",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Laughter establishes or restores a positive emotional climate and a sense of connection between two people. In fact, some researchers believe that the major function of laughter is to bring people together – the more social a person is and the more social support a person receives, the more likely that laughter will result from that social connection.\n\nIf the information in the box is true, which one of the following most strengthens the above argument?",
+          "options": [
+            "Laughing reduces pain and allows a higher toleration of discomfort.",
+            "People should not laugh too loudly in public places.",
+            "People who laugh a lot can overcome relationship problems more quickly.",
+            "When you laugh a lot, your heart rate increases rapidly."
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "The passage says laughter's main job is to connect people.",
+              "work": ""
+            },
+            {
+              "explain": "C shows laughter helping relationships — a social benefit, which supports the argument.",
+              "work": "C ✓"
+            },
+            {
+              "explain": "A and D are physical effects, and B is an opinion about manners.",
+              "work": "Answer: C"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 14,
+            "page": 80,
+            "category": "strengthen an argument"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q16",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "100 people were asked to name their favourite holiday destination.\n\nNo other destinations were chosen.\n\nThe information was entered into a computer in order to construct a pie chart. However, one of the destinations was left out. As a result, this was the pie chart that appeared on the screen.\n\nWhich destination was left out?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 140\" width=\"100%\" height=\"auto\" style=\"max-width:400px\"><rect x=\"10\" y=\"10\" width=\"200\" height=\"24\" rx=\"0\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"75.0\" y=\"26.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">Destination</text><text x=\"175.0\" y=\"26.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">Votes</text><line x1=\"140\" y1=\"10\" x2=\"140\" y2=\"34\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"34\" width=\"200\" height=\"24\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"75.0\" y=\"50.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">King Island</text><text x=\"175.0\" y=\"50.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">17</text><line x1=\"140\" y1=\"34\" x2=\"140\" y2=\"58\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"58\" width=\"200\" height=\"24\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"75.0\" y=\"74.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">Silver Coast</text><text x=\"175.0\" y=\"74.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">9</text><line x1=\"140\" y1=\"58\" x2=\"140\" y2=\"82\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"82\" width=\"200\" height=\"24\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"75.0\" y=\"98.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">Mac Port</text><text x=\"175.0\" y=\"98.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">31</text><line x1=\"140\" y1=\"82\" x2=\"140\" y2=\"106\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"106\" width=\"200\" height=\"24\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"75.0\" y=\"122.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">Kangaroo Resort</text><text x=\"175.0\" y=\"122.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">43</text><line x1=\"140\" y1=\"106\" x2=\"140\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><path d=\"M300 70 L300.0 128.0 A58 58 0 1 0 259.5 28.5 Z\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M300 70 L259.5 28.5 A58 58 0 0 0 242.0 71.3 Z\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M300 70 L242.0 71.3 A58 58 0 0 0 300.0 128.0 Z\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/></svg>"
+          },
+          "options": [
+            "King Island",
+            "Silver Coast",
+            "Mac Port",
+            "Kangaroo Resort"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "In the pie chart, the biggest sector is more than double the next one, and the middle sector is about double the smallest.",
+              "work": ""
+            },
+            {
+              "explain": "Without Mac Port, the numbers are 43, 17 and 9: 43 is more than twice 17, and 17 is about twice 9 ✓.",
+              "work": ""
+            },
+            {
+              "explain": "Leaving out any other destination keeps Mac Port (31), which is not small enough to fit, e.g. without King Island: 43, 31, 9 — the two biggest would be close in size.",
+              "work": "Answer: C"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 16,
+            "page": 82,
+            "category": "pie charts"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q17",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Life on Earth relies on energy – such as light and heat – from the sun. In fact, energy from the sun, called solar energy, is the most abundant energy resource on Earth.\n\nYou can feel the sun's energy as heat and see it as light. But how do we harness that energy to cook dinner or charge a phone? Solar panels!\n\nYou may have seen solar panels on the roof of a house or other buildings. These solar panels capture light energy from the sun and convert it into electricity that can be used by the people inside the building. Some power companies use solar panels as a source of electricity, too.\n\nClouds can block light from the sun, but depending on the types of clouds and where those clouds are, certain cloudy conditions can be great for the production of solar energy.\n\nSam: “Today is a cloudy day so our solar panel won't produce enough solar energy!”\n\nBexley: “We have solar panels on our roof. We can save a lot on electricity bills.”\n\nIf the information in the box is true, whose reasoning is correct?",
+          "options": [
+            "Sam only",
+            "Bexley only",
+            "Both Sam and Bexley",
+            "Neither Sam nor Bexley"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "The box says some cloudy conditions can be great for solar energy, so a cloudy day doesn't mean too little energy.",
+              "work": "Sam ✗"
+            },
+            {
+              "explain": "Solar panels make electricity for the people in the building, so they need less electricity from the power company — lower bills.",
+              "work": "Bexley ✓"
+            },
+            {
+              "explain": "",
+              "work": "Answer: B"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 17,
+            "page": 83,
+            "category": "whose reasoning is correct"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "There are three blocks named A, B and C.\n\nWhich two blocks can be joined together to make the large figure shown below?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 190\" width=\"100%\" height=\"auto\" style=\"max-width:360px\"><polygon points=\"43.0,70.0 52.0,61.9 52.0,41.9 43.0,50.0\" fill=\"#bfdbfe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"25.0,50.0 43.0,50.0 52.0,41.9 34.0,41.9\" fill=\"#eff6ff\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"25.0,70.0 43.0,70.0 43.0,50.0 25.0,50.0\" fill=\"#dbeafe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"61.0,70.0 70.0,61.9 70.0,41.9 61.0,50.0\" fill=\"#bfdbfe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"43.0,50.0 61.0,50.0 70.0,41.9 52.0,41.9\" fill=\"#eff6ff\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"43.0,70.0 61.0,70.0 61.0,50.0 43.0,50.0\" fill=\"#dbeafe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"61.0,50.0 70.0,41.9 70.0,21.9 61.0,30.0\" fill=\"#bfdbfe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"43.0,30.0 61.0,30.0 70.0,21.9 52.0,21.9\" fill=\"#eff6ff\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"43.0,50.0 61.0,50.0 61.0,30.0 43.0,30.0\" fill=\"#dbeafe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><text x=\"47\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">A</text><polygon points=\"183.0,61.9 192.0,53.8 192.0,33.8 183.0,41.9\" fill=\"#bfdbfe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"165.0,41.9 183.0,41.9 192.0,33.8 174.0,33.8\" fill=\"#eff6ff\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"165.0,61.9 183.0,61.9 183.0,41.9 165.0,41.9\" fill=\"#dbeafe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"138.0,70.0 147.0,61.9 147.0,41.9 138.0,50.0\" fill=\"#bfdbfe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"120.0,50.0 138.0,50.0 147.0,41.9 129.0,41.9\" fill=\"#eff6ff\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"120.0,70.0 138.0,70.0 138.0,50.0 120.0,50.0\" fill=\"#dbeafe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"156.0,70.0 165.0,61.9 165.0,41.9 156.0,50.0\" fill=\"#bfdbfe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"138.0,50.0 156.0,50.0 165.0,41.9 147.0,41.9\" fill=\"#eff6ff\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"138.0,70.0 156.0,70.0 156.0,50.0 138.0,50.0\" fill=\"#dbeafe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"174.0,70.0 183.0,61.9 183.0,41.9 174.0,50.0\" fill=\"#bfdbfe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"156.0,50.0 174.0,50.0 183.0,41.9 165.0,41.9\" fill=\"#eff6ff\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"156.0,70.0 174.0,70.0 174.0,50.0 156.0,50.0\" fill=\"#dbeafe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><text x=\"142\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">B</text><polygon points=\"233.0,70.0 242.0,61.9 242.0,41.9 233.0,50.0\" fill=\"#bfdbfe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"215.0,50.0 233.0,50.0 242.0,41.9 224.0,41.9\" fill=\"#eff6ff\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"215.0,70.0 233.0,70.0 233.0,50.0 215.0,50.0\" fill=\"#dbeafe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"251.0,70.0 260.0,61.9 260.0,41.9 251.0,50.0\" fill=\"#bfdbfe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"233.0,50.0 251.0,50.0 260.0,41.9 242.0,41.9\" fill=\"#eff6ff\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"233.0,70.0 251.0,70.0 251.0,50.0 233.0,50.0\" fill=\"#dbeafe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"269.0,70.0 278.0,61.9 278.0,41.9 269.0,50.0\" fill=\"#bfdbfe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"251.0,50.0 269.0,50.0 278.0,41.9 260.0,41.9\" fill=\"#eff6ff\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"251.0,70.0 269.0,70.0 269.0,50.0 251.0,50.0\" fill=\"#dbeafe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"251.0,50.0 260.0,41.9 260.0,21.9 251.0,30.0\" fill=\"#bfdbfe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"233.0,30.0 251.0,30.0 260.0,21.9 242.0,21.9\" fill=\"#eff6ff\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"233.0,50.0 251.0,50.0 251.0,30.0 233.0,30.0\" fill=\"#dbeafe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><text x=\"237\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">C</text><polygon points=\"147.0,166.9 156.0,158.8 156.0,138.8 147.0,146.9\" fill=\"#bfdbfe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"129.0,146.9 147.0,146.9 156.0,138.8 138.0,138.8\" fill=\"#eff6ff\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"129.0,166.9 147.0,166.9 147.0,146.9 129.0,146.9\" fill=\"#dbeafe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"165.0,166.9 174.0,158.8 174.0,138.8 165.0,146.9\" fill=\"#bfdbfe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"147.0,146.9 165.0,146.9 174.0,138.8 156.0,138.8\" fill=\"#eff6ff\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"147.0,166.9 165.0,166.9 165.0,146.9 147.0,146.9\" fill=\"#dbeafe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"183.0,166.9 192.0,158.8 192.0,138.8 183.0,146.9\" fill=\"#bfdbfe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"165.0,146.9 183.0,146.9 192.0,138.8 174.0,138.8\" fill=\"#eff6ff\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"165.0,166.9 183.0,166.9 183.0,146.9 165.0,146.9\" fill=\"#dbeafe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"138.0,175.0 147.0,166.9 147.0,146.9 138.0,155.0\" fill=\"#bfdbfe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"120.0,155.0 138.0,155.0 147.0,146.9 129.0,146.9\" fill=\"#eff6ff\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"120.0,175.0 138.0,175.0 138.0,155.0 120.0,155.0\" fill=\"#dbeafe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"156.0,175.0 165.0,166.9 165.0,146.9 156.0,155.0\" fill=\"#bfdbfe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"138.0,155.0 156.0,155.0 165.0,146.9 147.0,146.9\" fill=\"#eff6ff\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"138.0,175.0 156.0,175.0 156.0,155.0 138.0,155.0\" fill=\"#dbeafe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"174.0,175.0 183.0,166.9 183.0,146.9 174.0,155.0\" fill=\"#bfdbfe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"156.0,155.0 174.0,155.0 183.0,146.9 165.0,146.9\" fill=\"#eff6ff\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"156.0,175.0 174.0,175.0 174.0,155.0 156.0,155.0\" fill=\"#dbeafe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"129.0,183.1 138.0,175.0 138.0,155.0 129.0,163.1\" fill=\"#bfdbfe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"111.0,163.1 129.0,163.1 138.0,155.0 120.0,155.0\" fill=\"#eff6ff\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"111.0,183.1 129.0,183.1 129.0,163.1 111.0,163.1\" fill=\"#dbeafe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"165.0,146.9 174.0,138.8 174.0,118.8 165.0,126.9\" fill=\"#bfdbfe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"147.0,126.9 165.0,126.9 174.0,118.8 156.0,118.8\" fill=\"#eff6ff\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"147.0,146.9 165.0,146.9 165.0,126.9 147.0,126.9\" fill=\"#dbeafe\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/></svg>"
+          },
+          "options": [
+            "A and B",
+            "B and C",
+            "A and C",
+            "Not possible"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Count the cubes: A has 3, B has 4 and C has 4. The large figure has 8 cubes, so it must be B and C (4 + 4). A with either other block would only make 7.",
+              "work": "8 = 4 + 4"
+            },
+            {
+              "explain": "Check the shape: C (a row of three with one cube on top of the middle) forms the back row with the raised cube; B (a row of three with one cube sticking out at the end) forms the front row with the cube sticking out to the side.",
+              "work": ""
+            },
+            {
+              "explain": "",
+              "work": "Answer: B"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 18,
+            "page": 84,
+            "category": "spatial reasoning · blocks",
+            "note": "Blocks and large figure redrawn as a self-consistent version of the source figure."
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q19",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Three friends, Sam, Alex and Harry have pencil cases with a different number of pens in each.\n\nSam: “Harry's pencil case has 5 pens less than Alex's pencil case.”\nAlex: “Sam's pencil case has 3 more pens than the Harry's pencil case.”\n\nIf the information in the box is true, whose pencil case has the most number of pens?",
+          "options": [
+            "Sam",
+            "Alex",
+            "Harry",
+            "Both Alex and Harry"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Compare everyone with Harry: Alex has Harry + 5 and Sam has Harry + 3.",
+              "work": ""
+            },
+            {
+              "explain": "For example, if Harry has 10 pens, Alex has 15 and Sam has 13.",
+              "work": "Alex > Sam > Harry"
+            },
+            {
+              "explain": "",
+              "work": "Answer: B"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 19,
+            "page": 85,
+            "category": "ordering and logic"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Liam, Mary and Ben have 30 $1 coins each.\n\nThey take turns to roll a dice.\n\n• If the number rolled is 1, 2 or 3, then that player gives the number of coins shown on the dice to each of the other two players.\n• If the number rolled is 4, 5 or 6, then that player receives the number of coins shown on the dice from each of the other two players.\n\nLiam rolls a 1.\n\nMary rolls a 3.\n\nIf the friends end up with $27, $21 and $42 respectively, which number did Ben roll?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Liam rolls 1: he gives $1 to each.",
+              "work": "Liam 28, Mary 31, Ben 31"
+            },
+            {
+              "explain": "Mary rolls 3: she gives $3 to each.",
+              "work": "Liam 31, Mary 25, Ben 34"
+            },
+            {
+              "explain": "Ben ends with $42, so he gained $8 — $4 from each of the others. Check: Liam 31 − 4 = 27 ✓, Mary 25 − 4 = 21 ✓.",
+              "work": "Ben rolled 4   →   Answer: C"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 20,
+            "page": 85,
+            "category": "number reasoning"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q21",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "To get into a Sports High School, a student must be a member of the talented sport program they are seeking to represent. In a Sports High School, all students benefit from access to state-of-the-art onsite facilities and programs. All Sports High Schools offer a talented program in football.\n\nTo gain entry, students need to complete an application form and then attend a number of selection trials.\n\nEva: “I've been playing tennis since 5 years old so I should be able to get into a Sports High School.”\n\nIf the information in the box is true, which of the following shows the mistake Eva has made?",
+          "options": [
+            "Eva is a member of the talented tennis program.",
+            "People who are only good at tennis will not be accepted to the Sport High School.",
+            "All talents sports people like to train in venues with state-of-the-art facilities.",
+            "All students must first attend the selection trials in order to be selected."
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Eva thinks years of playing tennis are enough to get in.",
+              "work": ""
+            },
+            {
+              "explain": "But every student must apply AND go through selection trials — experience alone doesn't guarantee entry.",
+              "work": "D ✓"
+            },
+            {
+              "explain": "A and C don't show a mistake, and B is not stated in the box.",
+              "work": "Answer: D"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 21,
+            "page": 86,
+            "category": "identify the mistake"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q23",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Asbestos is the name used for a group of natural occurring minerals. They have resistance to high temperatures, fire, electricity and corrosion. These qualities make effective insulators, so they were popular in building products before the 1980s. They can also be added to cloth, paper, cement, plastic and other materials to make them stronger.\n\nKirk: “When asbestos dust is inhaled or ingested, the fibres can become permanently trapped in the body and cause inflammation, scarring and eventually genetic damage.”\n\nIf the information in the box is true, which of the following statements most strengthens Kirk's argument?",
+          "options": [
+            "Exposure to asbestos can cause cancer and other health conditions.",
+            "Asbestos related diseases have a long latency period, often taking decades to develop.",
+            "Small amounts of asbestos may be allowed in some consumer products.",
+            "Extra protective gear needs to be worn when demolishing buildings comprising of asbestos."
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Kirk's point is about asbestos DUST being breathed in or swallowed and harming the body.",
+              "work": ""
+            },
+            {
+              "explain": "D connects to this directly: when old asbestos buildings are knocked down, dust fills the air, so workers must wear masks and protective gear to avoid breathing it in.",
+              "work": "D ✓"
+            },
+            {
+              "explain": "C weakens the worry. A and B talk about disease in general rather than the dust being inhaled.",
+              "work": "Answer: D"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 23,
+            "page": 87,
+            "category": "strengthen an argument"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q24",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Kate wants to buy 6 board games. There are 4 shops that sell the board games that she wants.\n\nKate wants to buy all her board games from the same shop and to spend as little as possible.\n\nWhich shop should Kate buy her board games from?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 450 140\" width=\"100%\" height=\"auto\" style=\"max-width:450px\"><rect x=\"10\" y=\"10\" width=\"430\" height=\"24\" rx=\"0\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"50.0\" y=\"26.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\"></text><text x=\"145.0\" y=\"26.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">Standard price</text><line x1=\"90\" y1=\"10\" x2=\"90\" y2=\"34\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"320.0\" y=\"26.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">Special offer</text><line x1=\"200\" y1=\"10\" x2=\"200\" y2=\"34\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"34\" width=\"430\" height=\"24\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"50.0\" y=\"50.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">Shop A</text><text x=\"145.0\" y=\"50.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">$32</text><line x1=\"90\" y1=\"34\" x2=\"90\" y2=\"58\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"320.0\" y=\"50.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">Buy 1, get 2nd for half price</text><line x1=\"200\" y1=\"34\" x2=\"200\" y2=\"58\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"58\" width=\"430\" height=\"24\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"50.0\" y=\"74.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">Shop B</text><text x=\"145.0\" y=\"74.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">$33</text><line x1=\"90\" y1=\"58\" x2=\"90\" y2=\"82\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"320.0\" y=\"74.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">Buy 2, get the 3rd one free</text><line x1=\"200\" y1=\"58\" x2=\"200\" y2=\"82\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"82\" width=\"430\" height=\"24\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"50.0\" y=\"98.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">Shop C</text><text x=\"145.0\" y=\"98.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">$30</text><line x1=\"90\" y1=\"82\" x2=\"90\" y2=\"106\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"320.0\" y=\"98.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">Buy 5 or more, get 15% off</text><line x1=\"200\" y1=\"82\" x2=\"200\" y2=\"106\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"106\" width=\"430\" height=\"24\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"50.0\" y=\"122.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">Shop D</text><text x=\"145.0\" y=\"122.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">$24</text><line x1=\"90\" y1=\"106\" x2=\"90\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"320.0\" y=\"122.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">none</text><line x1=\"200\" y1=\"106\" x2=\"200\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/></svg>"
+          },
+          "options": [
+            "Shop A",
+            "Shop B",
+            "Shop C",
+            "Shop D"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Shop A: every second game is half price.",
+              "work": "3 × ($32 + $16) = $144"
+            },
+            {
+              "explain": "Shop B: buy 2, get the 3rd free — she pays for 4 of the 6.",
+              "work": "4 × $33 = $132"
+            },
+            {
+              "explain": "Shop C: 15% off 6 games.  Shop D: no offer.",
+              "work": "C: $180 × 0.85 = $153    D: 6 × $24 = $144"
+            },
+            {
+              "explain": "",
+              "work": "Cheapest is Shop B   →   Answer: B"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 24,
+            "page": 88,
+            "category": "best value"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q25",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Five people are standing in the same row during the school assembly. Each person owns a different pet and they all have different types of hobbies. We also know that:\n\n• Only 2 people own a pet with four legs and they are directly next to each other.\n• Bob owns a spider and he does not like to watch movies.\n• Emma is standing next to Ashley, who dislikes snakes.\n• The person who likes swimming is next to the person who likes reading.\n• Dennis likes to take pictures and is standing next to a person who swims.\n• Ashley owns a dog and there are 2 people in between her and Dennis.\n• Coleman is standing in the middle and he owns a goldfish.\n• The person who likes computer games is standing on the right end of the row and owns a cat.\n\nUsing the information above, which pet does a swimmer own?",
+          "options": [
+            "Cat",
+            "Snake",
+            "Dog",
+            "Spider"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Coleman is in the middle (position 3). Ashley and Dennis have 2 people between them, so they are at positions 1 and 4, or 2 and 5.",
+              "work": ""
+            },
+            {
+              "explain": "The cat owner (computer games) is at position 5, and the two four-legged pets (dog and cat) are next to each other — so Ashley (dog) is at 4 and the cat owner at 5. Then Dennis is at 1.",
+              "work": "1 Dennis, 3 Coleman, 4 Ashley, 5 cat"
+            },
+            {
+              "explain": "Emma stands next to Ashley, so Emma is at 5 (cat, computer games), and Bob is at 2 (spider). Dennis owns the last pet, the snake.",
+              "work": "Dennis, Bob, Coleman, Ashley, Emma"
+            },
+            {
+              "explain": "Dennis is next to a swimmer — that must be Bob. (The swimmer is also next to the reader, Coleman.)",
+              "work": "swimmer = Bob, who owns a spider   →   Answer: D"
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 25,
+            "page": 89,
+            "category": "logic puzzle"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q26",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "In Joanne's class, whoever completes and submits more than 90% of the homework gets an award as the student of the month at the assembly every month. No one has ever been awarded student of the month twice in a row before.\n\nJoanne: “Well, I was just awarded student of the month last month. This means I won't be able to get the award again this month.”\n\nWhich one of the following sentences shows the mistake Joanne has made?",
+          "options": [
+            "No one else did the homework in her class last month.",
+            "There was too much homework to be completed this month so not many students were able to finish.",
+            "Joanne can still get the award if she completes and submits more than 90% of the homework this month.",
+            "Joanne only competed 85% of her homework."
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Joanne thinks that because nobody has won twice in a row before, she can't.",
+              "work": ""
+            },
+            {
+              "explain": "But the only rule is: submit more than 90% of the homework. Nothing stops someone from winning two months running.",
+              "work": "C ✓"
+            },
+            {
+              "explain": "",
+              "work": "Answer: C"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 26,
+            "page": 90,
+            "category": "identify the mistake"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q27",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Even if all new cars were electric now, focusing solely on electric vehicles will not slow down carbon emissions to zero. This is partly because electric cars aren't truly zero-carbon. Mining the raw materials for their batteries and manufacturing them causes carbon emissions too. Transport is one of the most challenging sectors to decarbonise. One way to reduce transport emission relatively quickly is to swap cars for cycling – active travel. Active travel is cheaper, healthier, better for the environment, and no slower on congested streets.\n\nWhich one of these statements, if true, most weakens the above argument?",
+          "options": [
+            "Electricity costs more and more every year.",
+            "All cars should be solar powered cars.",
+            "Bicycles are hard to spot so it's dangerous on the road.",
+            "Electric cars are not as powerful as their petrol-powered counterparts."
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "The passage argues that swapping cars for bicycles is a better way to cut emissions.",
+              "work": ""
+            },
+            {
+              "explain": "C gives a real disadvantage of cycling — it can be dangerous — which makes the suggested swap less attractive.",
+              "work": "C ✓"
+            },
+            {
+              "explain": "A and D are about electric cars and support the passage; B is a suggestion, not evidence.",
+              "work": "Answer: C"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 27,
+            "page": 90,
+            "category": "weaken an argument"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q28",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Jasmine's method of constructing computer passwords is to take a word of the required length and replace some or all of the letters in the word with numbers or symbols that she thinks resemble the letter. She is careful to distinguish between upper and lower case letters.\n\nTwo of the passwords she could make from Jasmine are Ja5mine and J@5mine.\n\nCounting the name itself (with no changes), there are 4 different passwords she can make using her name.\n\nHow many different passwords can she construct from the word Schools?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 70\" width=\"100%\" height=\"auto\" style=\"max-width:460px\"><rect x=\"10\" y=\"10\" width=\"432\" height=\"24\" rx=\"0\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"28.0\" y=\"26.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">a</text><text x=\"64.0\" y=\"26.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">b</text><line x1=\"46\" y1=\"10\" x2=\"46\" y2=\"34\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"100.0\" y=\"26.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">B</text><line x1=\"82\" y1=\"10\" x2=\"82\" y2=\"34\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"136.0\" y=\"26.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">E</text><line x1=\"118\" y1=\"10\" x2=\"118\" y2=\"34\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"172.0\" y=\"26.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">g</text><line x1=\"154\" y1=\"10\" x2=\"154\" y2=\"34\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"208.0\" y=\"26.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">o</text><line x1=\"190\" y1=\"10\" x2=\"190\" y2=\"34\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"244.0\" y=\"26.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">s</text><line x1=\"226\" y1=\"10\" x2=\"226\" y2=\"34\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"280.0\" y=\"26.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">S</text><line x1=\"262\" y1=\"10\" x2=\"262\" y2=\"34\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"316.0\" y=\"26.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">T</text><line x1=\"298\" y1=\"10\" x2=\"298\" y2=\"34\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"352.0\" y=\"26.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">u</text><line x1=\"334\" y1=\"10\" x2=\"334\" y2=\"34\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"388.0\" y=\"26.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">X</text><line x1=\"370\" y1=\"10\" x2=\"370\" y2=\"34\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"424.0\" y=\"26.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">z</text><line x1=\"406\" y1=\"10\" x2=\"406\" y2=\"34\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"34\" width=\"432\" height=\"24\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"28.0\" y=\"50.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">@</text><text x=\"64.0\" y=\"50.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">6</text><line x1=\"46\" y1=\"34\" x2=\"46\" y2=\"58\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"100.0\" y=\"50.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">8</text><line x1=\"82\" y1=\"34\" x2=\"82\" y2=\"58\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"136.0\" y=\"50.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">£</text><line x1=\"118\" y1=\"34\" x2=\"118\" y2=\"58\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"172.0\" y=\"50.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">9</text><line x1=\"154\" y1=\"34\" x2=\"154\" y2=\"58\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"208.0\" y=\"50.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">0</text><line x1=\"190\" y1=\"34\" x2=\"190\" y2=\"58\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"244.0\" y=\"50.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">5</text><line x1=\"226\" y1=\"34\" x2=\"226\" y2=\"58\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"280.0\" y=\"50.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">$</text><line x1=\"262\" y1=\"34\" x2=\"262\" y2=\"58\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"316.0\" y=\"50.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">7</text><line x1=\"298\" y1=\"34\" x2=\"298\" y2=\"58\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"352.0\" y=\"50.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">“</text><line x1=\"334\" y1=\"34\" x2=\"334\" y2=\"58\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"388.0\" y=\"50.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">%</text><line x1=\"370\" y1=\"34\" x2=\"370\" y2=\"58\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"424.0\" y=\"50.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">2</text><line x1=\"406\" y1=\"34\" x2=\"406\" y2=\"58\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/></svg>"
+          },
+          "options": [
+            "5",
+            "16",
+            "32",
+            "12"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Only the listed letters can change, and upper and lower case are different. In ‘Jasmine’ only a and s can change: 2 × 2 = 4 passwords (counting the name itself).",
+              "work": ""
+            },
+            {
+              "explain": "In ‘Schools’: S → $, c no, h no, o → 0, o → 0, l no, s → 5. Four letters can each be kept or replaced.",
+              "work": "S, o, o, s"
+            },
+            {
+              "explain": "",
+              "work": "2 × 2 × 2 × 2 = 16   →   Answer: B"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 28,
+            "page": 91,
+            "category": "counting combinations",
+            "note": "Source said there are 8 passwords from 'Jasmine'; only a and s are replaceable, giving 4 — sentence corrected so the counting convention is consistent."
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q29",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The figure above shows four villas in a complex, numbered 1 to 4 from left to right.\nIn this complex, each villa is occupied by one person only.\nHeather lives next to Sam, and Paul lives next to Heather and Diane.\n\nIn which villa could Heather live?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 90\" width=\"100%\" height=\"auto\" style=\"max-width:280px\"><polygon points=\"20,40 130,8 240,40\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"55\" y=\"40\" width=\"150\" height=\"40\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"92.5\" y1=\"40\" x2=\"92.5\" y2=\"80\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"130.0\" y1=\"40\" x2=\"130.0\" y2=\"80\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"167.5\" y1=\"40\" x2=\"167.5\" y2=\"80\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"73.75\" y=\"65\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">1</text><text x=\"111.25\" y=\"65\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">2</text><text x=\"148.75\" y=\"65\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">3</text><text x=\"186.25\" y=\"65\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">4</text></svg>"
+          },
+          "options": [
+            "2 only",
+            "3 only",
+            "2 or 3",
+            "1 or 4"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Paul lives between Heather and Diane, and Heather is also next to Sam — so Heather is between Sam and Paul.",
+              "work": "Sam – Heather – Paul – Diane"
+            },
+            {
+              "explain": "This order can go left-to-right or right-to-left.",
+              "work": "Sam, Heather, Paul, Diane  or  Diane, Paul, Heather, Sam"
+            },
+            {
+              "explain": "",
+              "work": "Heather is in villa 2 or 3   →   Answer: C"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 29,
+            "page": 91,
+            "category": "ordering and position"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q30",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Fake news is not new, but the rate at which it can spread is. Many people have a hard time sorting real news from fake news on the internet, causing confusion.\nSocial media is becoming a more common way for readers to get their news and information. However, not all information on these sites can be trusted.\n\nWhich one of the following, if true, most strengthens the above argument?",
+          "options": [
+            "Many celebrities use social media as a way to reach to their fans and promote their upcoming movies and song.",
+            "Digital news sites can deliver news globally in no time.",
+            "Disinformation can cause mistrust, as its main goal is deception.",
+            "Social media is a venue where you can meet anyone and share any topic."
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "The passage warns that information on social media can't always be trusted and that fake news causes confusion.",
+              "work": ""
+            },
+            {
+              "explain": "C adds that disinformation is designed to deceive and causes mistrust — backing up the concern.",
+              "work": "C ✓"
+            },
+            {
+              "explain": "A, B and D describe social media or news sites without supporting the warning.",
+              "work": "Answer: C"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 30,
+            "page": 92,
+            "category": "strengthen an argument"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q31",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Adam, Beckie, Cynthia and Douglas are making waffles according to the recipe below.\n\nTo make 10 waffles:\n100 g flour\n2 eggs\n500 ml milk\n\nThis table shows the amount of each ingredient that each person has.\n\nWhich person can make the most waffles?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 115\" width=\"100%\" height=\"auto\" style=\"max-width:420px\"><rect x=\"10\" y=\"10\" width=\"400\" height=\"24\" rx=\"0\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"60.0\" y=\"26.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\"></text><text x=\"147.5\" y=\"26.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">Adam</text><line x1=\"110\" y1=\"10\" x2=\"110\" y2=\"34\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"222.5\" y=\"26.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">Beckie</text><line x1=\"185\" y1=\"10\" x2=\"185\" y2=\"34\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"297.5\" y=\"26.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">Cynthia</text><line x1=\"260\" y1=\"10\" x2=\"260\" y2=\"34\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"372.5\" y=\"26.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">Douglas</text><line x1=\"335\" y1=\"10\" x2=\"335\" y2=\"34\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"34\" width=\"400\" height=\"24\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"60.0\" y=\"50.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">Flour (g)</text><text x=\"147.5\" y=\"50.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">150</text><line x1=\"110\" y1=\"34\" x2=\"110\" y2=\"58\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"222.5\" y=\"50.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">200</text><line x1=\"185\" y1=\"34\" x2=\"185\" y2=\"58\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"297.5\" y=\"50.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">200</text><line x1=\"260\" y1=\"34\" x2=\"260\" y2=\"58\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"372.5\" y=\"50.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">250</text><line x1=\"335\" y1=\"34\" x2=\"335\" y2=\"58\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"58\" width=\"400\" height=\"24\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"60.0\" y=\"74.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">Eggs</text><text x=\"147.5\" y=\"74.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">4</text><line x1=\"110\" y1=\"58\" x2=\"110\" y2=\"82\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"222.5\" y=\"74.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">6</text><line x1=\"185\" y1=\"58\" x2=\"185\" y2=\"82\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"297.5\" y=\"74.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">4</text><line x1=\"260\" y1=\"58\" x2=\"260\" y2=\"82\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"372.5\" y=\"74.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">3</text><line x1=\"335\" y1=\"58\" x2=\"335\" y2=\"82\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"82\" width=\"400\" height=\"24\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"60.0\" y=\"98.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">Milk (ml)</text><text x=\"147.5\" y=\"98.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">500</text><line x1=\"110\" y1=\"82\" x2=\"110\" y2=\"106\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"222.5\" y=\"98.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">400</text><line x1=\"185\" y1=\"82\" x2=\"185\" y2=\"106\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"297.5\" y=\"98.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">600</text><line x1=\"260\" y1=\"82\" x2=\"260\" y2=\"106\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"372.5\" y=\"98.2\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">800</text><line x1=\"335\" y1=\"82\" x2=\"335\" y2=\"106\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/></svg>"
+          },
+          "options": [
+            "Adam",
+            "Beckie",
+            "Cynthia",
+            "Douglas"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Work out how many waffles each ingredient allows: flour 10 g, eggs \\(\\frac{1}{5}\\) egg and milk 50 ml per waffle.",
+              "work": ""
+            },
+            {
+              "explain": "",
+              "work": "Adam: flour 15, eggs 20, milk 10 → 10 · Beckie: 20, 30, 8 → 8 · Cynthia: 20, 20, 12 → 12 · Douglas: 25, 15, 16 → 15"
+            },
+            {
+              "explain": "Each person is limited by the ingredient that runs out first. Douglas can make the most.",
+              "work": "Answer: D"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 31,
+            "page": 92,
+            "category": "reading tables"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q32",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A group of friends plan to make a round trip using a boat service along a river so that they can see the city from the waterfront. The trip will start from Lavender Bay and they will take the boat service to both ends, finishing back at Lavender Bay.\nThe friends are ready to take their first boat at 07:55. They want as little time as possible waiting for a boat, so they will always get the next available boat.\n\nFerry wharf stops are shown below.\n\nAt what time will they return to Lavender Bay?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 355\" width=\"100%\" height=\"auto\" style=\"max-width:470px\"><line x1=\"30\" y1=\"20\" x2=\"430\" y2=\"20\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"14\" x2=\"30\" y2=\"26\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"30\" y=\"42\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#1e293b\">Newington</text><line x1=\"110\" y1=\"14\" x2=\"110\" y2=\"26\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"110\" y=\"42\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#1e293b\">Wentworth</text><line x1=\"190\" y1=\"14\" x2=\"190\" y2=\"26\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"190\" y=\"42\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#1e293b\">Lavender Bay</text><line x1=\"270\" y1=\"14\" x2=\"270\" y2=\"26\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"270\" y=\"42\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#1e293b\">Concord</text><line x1=\"350\" y1=\"14\" x2=\"350\" y2=\"26\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"350\" y=\"42\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#1e293b\">Embank</text><line x1=\"430\" y1=\"14\" x2=\"430\" y2=\"26\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"430\" y=\"42\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#1e293b\">Blaxland</text><rect x=\"10\" y=\"60\" width=\"370\" height=\"20\" rx=\"0\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"65.0\" y=\"73.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\">Westbound</text><text x=\"152.5\" y=\"73.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\"></text><line x1=\"120\" y1=\"60\" x2=\"120\" y2=\"80\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"217.5\" y=\"73.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\"></text><line x1=\"185\" y1=\"60\" x2=\"185\" y2=\"80\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"282.5\" y=\"73.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\"></text><line x1=\"250\" y1=\"60\" x2=\"250\" y2=\"80\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"347.5\" y=\"73.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\"></text><line x1=\"315\" y1=\"60\" x2=\"315\" y2=\"80\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"80\" width=\"370\" height=\"20\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"65.0\" y=\"93.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">Blaxland</text><text x=\"152.5\" y=\"93.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">07:20</text><line x1=\"120\" y1=\"80\" x2=\"120\" y2=\"100\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"217.5\" y=\"93.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">08:25</text><line x1=\"185\" y1=\"80\" x2=\"185\" y2=\"100\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"282.5\" y=\"93.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">09:10</text><line x1=\"250\" y1=\"80\" x2=\"250\" y2=\"100\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"347.5\" y=\"93.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">09:50</text><line x1=\"315\" y1=\"80\" x2=\"315\" y2=\"100\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"100\" width=\"370\" height=\"20\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"65.0\" y=\"113.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">Embank</text><text x=\"152.5\" y=\"113.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">07:30</text><line x1=\"120\" y1=\"100\" x2=\"120\" y2=\"120\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"217.5\" y=\"113.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">08:35</text><line x1=\"185\" y1=\"100\" x2=\"185\" y2=\"120\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"282.5\" y=\"113.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">09:20</text><line x1=\"250\" y1=\"100\" x2=\"250\" y2=\"120\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"347.5\" y=\"113.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">10:00</text><line x1=\"315\" y1=\"100\" x2=\"315\" y2=\"120\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"120\" width=\"370\" height=\"20\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"65.0\" y=\"133.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">Concord</text><text x=\"152.5\" y=\"133.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">07:50</text><line x1=\"120\" y1=\"120\" x2=\"120\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"217.5\" y=\"133.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">08:55</text><line x1=\"185\" y1=\"120\" x2=\"185\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"282.5\" y=\"133.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">09:40</text><line x1=\"250\" y1=\"120\" x2=\"250\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"347.5\" y=\"133.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">10:20</text><line x1=\"315\" y1=\"120\" x2=\"315\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"140\" width=\"370\" height=\"20\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"65.0\" y=\"153.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">Lavender Bay</text><text x=\"152.5\" y=\"153.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">07:55</text><line x1=\"120\" y1=\"140\" x2=\"120\" y2=\"160\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"217.5\" y=\"153.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">09:00</text><line x1=\"185\" y1=\"140\" x2=\"185\" y2=\"160\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"282.5\" y=\"153.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">09:45</text><line x1=\"250\" y1=\"140\" x2=\"250\" y2=\"160\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"347.5\" y=\"153.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">10:25</text><line x1=\"315\" y1=\"140\" x2=\"315\" y2=\"160\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"160\" width=\"370\" height=\"20\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"65.0\" y=\"173.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">Wentworth</text><text x=\"152.5\" y=\"173.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">08:05</text><line x1=\"120\" y1=\"160\" x2=\"120\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"217.5\" y=\"173.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">09:10</text><line x1=\"185\" y1=\"160\" x2=\"185\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"282.5\" y=\"173.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">09:55</text><line x1=\"250\" y1=\"160\" x2=\"250\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"347.5\" y=\"173.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">10:35</text><line x1=\"315\" y1=\"160\" x2=\"315\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"180\" width=\"370\" height=\"20\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"65.0\" y=\"193.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">Newington</text><text x=\"152.5\" y=\"193.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">08:15</text><line x1=\"120\" y1=\"180\" x2=\"120\" y2=\"200\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"217.5\" y=\"193.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">09:20</text><line x1=\"185\" y1=\"180\" x2=\"185\" y2=\"200\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"282.5\" y=\"193.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">10:05</text><line x1=\"250\" y1=\"180\" x2=\"250\" y2=\"200\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"347.5\" y=\"193.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">10:45</text><line x1=\"315\" y1=\"180\" x2=\"315\" y2=\"200\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"210\" width=\"435\" height=\"20\" rx=\"0\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"65.0\" y=\"223.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\">Eastbound</text><text x=\"152.5\" y=\"223.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\"></text><line x1=\"120\" y1=\"210\" x2=\"120\" y2=\"230\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"217.5\" y=\"223.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\"></text><line x1=\"185\" y1=\"210\" x2=\"185\" y2=\"230\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"282.5\" y=\"223.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\"></text><line x1=\"250\" y1=\"210\" x2=\"250\" y2=\"230\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"347.5\" y=\"223.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\"></text><line x1=\"315\" y1=\"210\" x2=\"315\" y2=\"230\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"412.5\" y=\"223.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\"></text><line x1=\"380\" y1=\"210\" x2=\"380\" y2=\"230\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"230\" width=\"435\" height=\"20\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"65.0\" y=\"243.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">Newington</text><text x=\"152.5\" y=\"243.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">07:25</text><line x1=\"120\" y1=\"230\" x2=\"120\" y2=\"250\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"217.5\" y=\"243.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">08:00</text><line x1=\"185\" y1=\"230\" x2=\"185\" y2=\"250\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"282.5\" y=\"243.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">08:40</text><line x1=\"250\" y1=\"230\" x2=\"250\" y2=\"250\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"347.5\" y=\"243.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">09:25</text><line x1=\"315\" y1=\"230\" x2=\"315\" y2=\"250\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"412.5\" y=\"243.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">10:10</text><line x1=\"380\" y1=\"230\" x2=\"380\" y2=\"250\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"250\" width=\"435\" height=\"20\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"65.0\" y=\"263.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">Wentworth</text><text x=\"152.5\" y=\"263.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">07:35</text><line x1=\"120\" y1=\"250\" x2=\"120\" y2=\"270\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"217.5\" y=\"263.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">08:10</text><line x1=\"185\" y1=\"250\" x2=\"185\" y2=\"270\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"282.5\" y=\"263.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">08:50</text><line x1=\"250\" y1=\"250\" x2=\"250\" y2=\"270\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"347.5\" y=\"263.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">09:35</text><line x1=\"315\" y1=\"250\" x2=\"315\" y2=\"270\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"412.5\" y=\"263.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">10:20</text><line x1=\"380\" y1=\"250\" x2=\"380\" y2=\"270\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"270\" width=\"435\" height=\"20\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"65.0\" y=\"283.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">Lavender Bay</text><text x=\"152.5\" y=\"283.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">07:45</text><line x1=\"120\" y1=\"270\" x2=\"120\" y2=\"290\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"217.5\" y=\"283.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">08:20</text><line x1=\"185\" y1=\"270\" x2=\"185\" y2=\"290\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"282.5\" y=\"283.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">09:00</text><line x1=\"250\" y1=\"270\" x2=\"250\" y2=\"290\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"347.5\" y=\"283.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">09:45</text><line x1=\"315\" y1=\"270\" x2=\"315\" y2=\"290\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"412.5\" y=\"283.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">10:30</text><line x1=\"380\" y1=\"270\" x2=\"380\" y2=\"290\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"290\" width=\"435\" height=\"20\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"65.0\" y=\"303.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">Concord</text><text x=\"152.5\" y=\"303.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">07:50</text><line x1=\"120\" y1=\"290\" x2=\"120\" y2=\"310\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"217.5\" y=\"303.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">08:25</text><line x1=\"185\" y1=\"290\" x2=\"185\" y2=\"310\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"282.5\" y=\"303.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">09:05</text><line x1=\"250\" y1=\"290\" x2=\"250\" y2=\"310\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"347.5\" y=\"303.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">09:50</text><line x1=\"315\" y1=\"290\" x2=\"315\" y2=\"310\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"412.5\" y=\"303.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">10:35</text><line x1=\"380\" y1=\"290\" x2=\"380\" y2=\"310\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"310\" width=\"435\" height=\"20\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"65.0\" y=\"323.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">Embank</text><text x=\"152.5\" y=\"323.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">08:10</text><line x1=\"120\" y1=\"310\" x2=\"120\" y2=\"330\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"217.5\" y=\"323.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">08:45</text><line x1=\"185\" y1=\"310\" x2=\"185\" y2=\"330\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"282.5\" y=\"323.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">09:25</text><line x1=\"250\" y1=\"310\" x2=\"250\" y2=\"330\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"347.5\" y=\"323.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">10:10</text><line x1=\"315\" y1=\"310\" x2=\"315\" y2=\"330\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"412.5\" y=\"323.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">10:55</text><line x1=\"380\" y1=\"310\" x2=\"380\" y2=\"330\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"330\" width=\"435\" height=\"20\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"65.0\" y=\"343.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">Blaxland</text><text x=\"152.5\" y=\"343.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">08:20</text><line x1=\"120\" y1=\"330\" x2=\"120\" y2=\"350\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"217.5\" y=\"343.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">08:55</text><line x1=\"185\" y1=\"330\" x2=\"185\" y2=\"350\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"282.5\" y=\"343.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">09:35</text><line x1=\"250\" y1=\"330\" x2=\"250\" y2=\"350\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"347.5\" y=\"343.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">10:20</text><line x1=\"315\" y1=\"330\" x2=\"315\" y2=\"350\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"412.5\" y=\"343.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">11:05</text><line x1=\"380\" y1=\"330\" x2=\"380\" y2=\"350\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/></svg>"
+          },
+          "options": [
+            "09:40",
+            "09:45",
+            "10:25",
+            "10:30"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "At 07:55 the boat leaving Lavender Bay is westbound, so they go west first.",
+              "work": "07:55 Lavender Bay → 08:15 Newington"
+            },
+            {
+              "explain": "The next eastbound boat from Newington after 08:15 leaves at 08:40.",
+              "work": "08:40 Newington → 09:35 Blaxland"
+            },
+            {
+              "explain": "The next westbound boat from Blaxland after 09:35 leaves at 09:50.",
+              "work": "09:50 Blaxland → 10:25 Lavender Bay"
+            },
+            {
+              "explain": "",
+              "work": "Answer: C"
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 32,
+            "page": 93,
+            "category": "timetables"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q34",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Mr Urban, a driving instructor who only works from Tuesday to Saturday, has to arrange bookings for some of his students.\nHe has 8 new students who wish to book either a morning or afternoon of a particular day. These are 2-hour introductory lessons, so he only sees one student each morning or afternoon.\n\n• Ms Thomas is only available Tuesday AM but Mr Clark can make any time on Wednesday.\n• Mrs Adam is free on Tuesday all day but Mr Wilson is only free Wednesday afternoon.\n• Ms Bonville is only available Friday AM whereas Miss Castle can only make Saturday PM.\n• Mrs Kellyville is available all day Friday whereas Mr Parker can make any time on Saturday.\n\nMr Urban wants to arrange his schedule so he can teach everyone at different times during the week.\n\nWhen should he teach Mrs Kellyville?",
+          "options": [
+            "Wednesday afternoon.",
+            "Tuesday afternoon",
+            "Saturday morning",
+            "Friday afternoon"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Place the people with only one option first: Thomas Tue AM, Wilson Wed PM, Bonville Fri AM, Castle Sat PM.",
+              "work": ""
+            },
+            {
+              "explain": "That fills in the rest: Adam Tue PM, Clark Wed AM, Parker Sat AM.",
+              "work": ""
+            },
+            {
+              "explain": "Mrs Kellyville can only come on Friday, and Friday morning is taken by Ms Bonville.",
+              "work": "Kellyville: Friday afternoon   →   Answer: D"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 34,
+            "page": 95,
+            "category": "scheduling"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q35",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Benjamin was born in 2013. He was playing with his name and the year he was born.\nHe wrote the letters BENJAMIN and the digits 2013 so that they are \"cycled\" separately as follows and put them together in a numbered list:\n\nBENJAMIN 2013\n1  ENJAMINB 0132\n2  NJAMINBE 1320\n3  JAMINBEN 3201\n…\n\nWhat is the number of the line in which BENJAMIN 2013 will appear for the first time?",
+          "options": [
+            "8",
+            "10",
+            "12",
+            "18"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Each line moves the first letter (or digit) to the end.",
+              "work": ""
+            },
+            {
+              "explain": "BENJAMIN has 8 letters, so it is back to BENJAMIN on lines 8, 16, 24, … The year 2013 has 4 digits, so it is back on lines 4, 8, 12, …",
+              "work": ""
+            },
+            {
+              "explain": "Both are back together first on line 8 (the smallest number in both lists).",
+              "work": "Answer: A"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 35,
+            "page": 96,
+            "category": "number patterns"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q36",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For the last four years, the soccer league has been won by a different team every year. Every year four teams entered: Lightning Bolts, The Blues, The Tigers and Daredevils.\nThree years ago, the winner was The Tigers and Daredevil was runner-up.\nTwo years ago, the winner was the team that was the runner-up from the previous year.\nLast year, a player from The Blues got a red ticket so they finished last.\n\nWhich team is the winner of this year?",
+          "options": [
+            "Daredevil",
+            "The Tigers",
+            "The Blues",
+            "Lightning Bolts"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Three years ago: Tigers. Two years ago: the previous runner-up, Daredevils.",
+              "work": ""
+            },
+            {
+              "explain": "Every year has a different winner, so last year and this year were won by The Blues and Lightning Bolts in some order.",
+              "work": ""
+            },
+            {
+              "explain": "The Blues finished last last year, so Lightning Bolts won last year and The Blues win this year.",
+              "work": "Answer: C"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 36,
+            "page": 96,
+            "category": "logic puzzle",
+            "note": "Source said 'last five years' with only four teams; changed to 'four years' to match the four winners described."
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q38",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Do you know why worms come out to the surface after rain?\nWorms don't have lungs but instead breathe through their skin; their skin must stay moist for oxygen to pass through it. Even though they don't have eyes, they have light sensitive tissues in their head so they don't surface in the day time. When it's raining, worms can move farther across the surface of soil than through it underground.\nHowever coming to the surface poses hazards. They can be dried out under the sun, or with their instinct they try to dig out by banging their heads on the pavement until they die.\n\nAnna: “Worms come out when it's raining so they can migrate over to the other side for more food.”\n\nJane: “Worms come out to the surface to breathe more easily when it rains.”\n\nIf the information in the box is true, whose reasoning is correct?",
+          "options": [
+            "Anna only",
+            "Jane only",
+            "Both Anna and Jane",
+            "Neither Anna nor Jane"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "The box says that when it rains, worms can travel farther across the surface than underground, and the wet ground keeps their skin moist — so rain lets them move to new places.",
+              "work": "Anna ✓"
+            },
+            {
+              "explain": "The box doesn't say they come up to breathe more easily — they breathe through moist skin, which they can do underground too.",
+              "work": "Jane ✗"
+            },
+            {
+              "explain": "",
+              "work": "Answer: A"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 38,
+            "page": 98,
+            "category": "whose reasoning is correct"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q39",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If Mina doesn't practice ballet, then she is unlikely to be chosen as the leader of her group.\n\nIf she is not chosen as a leader, then she will not be chosen for the end of the year performance.\n\nIf she performs well at the end of year, she might be offered a scholarship for her school. Otherwise she doesn't stand a chance.\n\nIf the above statements are correct, which one of the following is not possible?",
+          "options": [
+            "Mina wasn't a leader and performed at the end of year performance.",
+            "Mina didn't practice ballet and didn't get the scholarship for her school.",
+            "Mina performed well at the end of year but didn't get the scholarship for her school.",
+            "Mina didn't practice but was chosen as a leader."
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Not a leader → not chosen for the end of year performance. So A breaks a rule.",
+              "work": "A is impossible"
+            },
+            {
+              "explain": "B is possible. C is possible (performing well means she MIGHT get a scholarship). D is possible (not practising only makes being leader UNLIKELY).",
+              "work": "Answer: A"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 39,
+            "page": 98,
+            "category": "conditional reasoning"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q40",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The following code is based on the substitution cipher developed by Polybius in the second century before Christ.\n\nThe letters are coded by noting the row number followed by the column number.\n\nThe letter “N” would be coded as 34 and THINKING SKILLS would be coded as\n\n45.23.24.34.31.24.34.22..44.31.24.32.32.44\n\nWhich of the codes below do not form a proper word when decoded?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 165\" width=\"100%\" height=\"auto\" style=\"max-width:280px\"><rect x=\"10\" y=\"10\" width=\"228\" height=\"24\" rx=\"0\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"29.0\" y=\"26.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\"></text><text x=\"67.0\" y=\"26.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">1</text><line x1=\"48\" y1=\"10\" x2=\"48\" y2=\"34\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"105.0\" y=\"26.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">2</text><line x1=\"86\" y1=\"10\" x2=\"86\" y2=\"34\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"143.0\" y=\"26.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">3</text><line x1=\"124\" y1=\"10\" x2=\"124\" y2=\"34\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"181.0\" y=\"26.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">4</text><line x1=\"162\" y1=\"10\" x2=\"162\" y2=\"34\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"219.0\" y=\"26.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">5</text><line x1=\"200\" y1=\"10\" x2=\"200\" y2=\"34\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"34\" width=\"228\" height=\"24\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"29.0\" y=\"50.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">1</text><text x=\"67.0\" y=\"50.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">A</text><line x1=\"48\" y1=\"34\" x2=\"48\" y2=\"58\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"105.0\" y=\"50.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">B</text><line x1=\"86\" y1=\"34\" x2=\"86\" y2=\"58\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"143.0\" y=\"50.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">C</text><line x1=\"124\" y1=\"34\" x2=\"124\" y2=\"58\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"181.0\" y=\"50.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">D</text><line x1=\"162\" y1=\"34\" x2=\"162\" y2=\"58\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"219.0\" y=\"50.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">E</text><line x1=\"200\" y1=\"34\" x2=\"200\" y2=\"58\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"58\" width=\"228\" height=\"24\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"29.0\" y=\"74.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">2</text><text x=\"67.0\" y=\"74.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">F</text><line x1=\"48\" y1=\"58\" x2=\"48\" y2=\"82\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"105.0\" y=\"74.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">G</text><line x1=\"86\" y1=\"58\" x2=\"86\" y2=\"82\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"143.0\" y=\"74.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">H</text><line x1=\"124\" y1=\"58\" x2=\"124\" y2=\"82\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"181.0\" y=\"74.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">I</text><line x1=\"162\" y1=\"58\" x2=\"162\" y2=\"82\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"219.0\" y=\"74.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">J</text><line x1=\"200\" y1=\"58\" x2=\"200\" y2=\"82\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"82\" width=\"228\" height=\"24\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"29.0\" y=\"98.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">3</text><text x=\"67.0\" y=\"98.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">K</text><line x1=\"48\" y1=\"82\" x2=\"48\" y2=\"106\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"105.0\" y=\"98.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">L</text><line x1=\"86\" y1=\"82\" x2=\"86\" y2=\"106\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"143.0\" y=\"98.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">M</text><line x1=\"124\" y1=\"82\" x2=\"124\" y2=\"106\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"181.0\" y=\"98.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">N</text><line x1=\"162\" y1=\"82\" x2=\"162\" y2=\"106\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"219.0\" y=\"98.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">O</text><line x1=\"200\" y1=\"82\" x2=\"200\" y2=\"106\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"106\" width=\"228\" height=\"24\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"29.0\" y=\"122.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">4</text><text x=\"67.0\" y=\"122.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">P</text><line x1=\"48\" y1=\"106\" x2=\"48\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"105.0\" y=\"122.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">Q</text><line x1=\"86\" y1=\"106\" x2=\"86\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"143.0\" y=\"122.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">R</text><line x1=\"124\" y1=\"106\" x2=\"124\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"181.0\" y=\"122.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">S</text><line x1=\"162\" y1=\"106\" x2=\"162\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"219.0\" y=\"122.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">T</text><line x1=\"200\" y1=\"106\" x2=\"200\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"130\" width=\"228\" height=\"24\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"29.0\" y=\"146.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">5</text><text x=\"67.0\" y=\"146.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">U</text><line x1=\"48\" y1=\"130\" x2=\"48\" y2=\"154\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"105.0\" y=\"146.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">V</text><line x1=\"86\" y1=\"130\" x2=\"86\" y2=\"154\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"143.0\" y=\"146.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">W</text><line x1=\"124\" y1=\"130\" x2=\"124\" y2=\"154\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"181.0\" y=\"146.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">X</text><line x1=\"162\" y1=\"130\" x2=\"162\" y2=\"154\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"219.0\" y=\"146.55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">YZ</text><line x1=\"200\" y1=\"130\" x2=\"200\" y2=\"154\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/></svg>"
+          },
+          "options": [
+            "55.35.35.32.35.22.24.44.45",
+            "21.32.32.43.24.44.45",
+            "53.15.12..14.15.52.15.32.35.41.15.43",
+            "44.35.13.24.11.32..53.35.43.31.15.43"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Decode each one, row number first, then column.",
+              "work": ""
+            },
+            {
+              "explain": "A: 55 = Z, 35 = O, 35 = O, 32 = L, 35 = O, 22 = G, 24 = I, 44 = S, 45 = T",
+              "work": "ZOOLOGIST ✓"
+            },
+            {
+              "explain": "C: WEB DEVELOPER ✓   D: SOCIAL WORKER ✓",
+              "work": ""
+            },
+            {
+              "explain": "B: 21 = F, 32 = L, 32 = L, 43 = R, 24 = I, 44 = S, 45 = T → FLLRIST (not a word — ‘florist’ would need 35 = O).",
+              "work": "Answer: B"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 40,
+            "page": 99,
+            "category": "codes and patterns"
           }
         }
       ]
