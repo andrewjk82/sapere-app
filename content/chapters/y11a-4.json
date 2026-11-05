@@ -7755,24 +7755,24 @@
               "type": "mc",
               "stem": "Substitute \\(x = 2\\) to find \\(a\\).",
               "options": [
-                "2",
-                "3",
-                "4",
-                "5"
+                "\\(a = 2\\)",
+                "\\(a = 3\\)",
+                "\\(a = 4\\)",
+                "\\(a = 5\\)"
               ],
               "answer": 2,
               "steps": [
                 {
                   "explain": "Substitute \\(x = 2\\) into the identity to eliminate the term containing \\(b\\).",
-                  "work": "a(2+3) + b(2-2) = 6(2) + 8"
+                  "work": "\\(a(2+3) + b(2-2) = 6(2) + 8\\)"
                 },
                 {
                   "explain": "Simplify both sides of the equation.",
-                  "work": "5a + 0 = 12 + 8 \\implies 5a = 20"
+                  "work": "\\(5a + 0 = 12 + 8\\)<br>\\(5a = 20\\)"
                 },
                 {
                   "explain": "Solve for \\(a\\) by dividing by 5.",
-                  "work": "a = 4"
+                  "work": "\\(a = \\dfrac{20}{5} = 4\\)"
                 }
               ],
               "xp": 1
@@ -7782,24 +7782,24 @@
               "type": "mc",
               "stem": "Substitute \\(x = -3\\) to find \\(b\\).",
               "options": [
-                "1",
-                "2",
-                "3",
-                "4"
+                "\\(b = 1\\)",
+                "\\(b = 2\\)",
+                "\\(b = 3\\)",
+                "\\(b = 4\\)"
               ],
               "answer": 1,
               "steps": [
                 {
                   "explain": "Substitute \\(x = -3\\) into the identity to eliminate the term containing \\(a\\).",
-                  "work": "a(-3+3) + b(-3-2) = 6(-3) + 8"
+                  "work": "\\(a(-3+3) + b(-3-2) = 6(-3) + 8\\)"
                 },
                 {
                   "explain": "Simplify the resulting expression.",
-                  "work": "0 - 5b = -18 + 8 \\implies -5b = -10"
+                  "work": "\\(0 - 5b = -18 + 8\\)<br>\\(-5b = -10\\)"
                 },
                 {
                   "explain": "Solve for \\(b\\) by dividing by -5.",
-                  "work": "b = 2"
+                  "work": "\\(b = \\dfrac{-10}{-5} = 2\\)"
                 }
               ],
               "xp": 1
@@ -7818,15 +7818,15 @@
               "steps": [
                 {
                   "explain": "Identify the linear factors attached to the coefficients \\(a\\) and \\(b\\).",
-                  "work": "\\mathrm{Factors\\:are\\:} (x+3) \\mathrm{\\:and\\:} (x-2)"
+                  "work": "\\(\\text{Factors: } (x+3) \\text{ and } (x-2)\\)"
                 },
                 {
                   "explain": "Find the roots of these linear factors by setting them to zero.",
-                  "work": "x + 3 = 0 \\implies x = -3 \\\\ x - 2 = 0 \\implies x = 2"
+                  "work": "\\(x + 3 = 0 \\implies x = -3\\)<br>\\(x - 2 = 0 \\implies x = 2\\)"
                 },
                 {
                   "explain": "Choosing these values makes one of the coefficients zero, which simplifies the equation to directly solve for the other constant.",
-                  "work": "\\mathrm{Isolates\\:one\\:variable\\:at\\:a\\:time}"
+                  "work": "\\(\\text{Each substitution leaves only one unknown.}\\)"
                 }
               ],
               "xp": 1
@@ -7845,25 +7845,25 @@
               "steps": [
                 {
                   "explain": "Expand the left-hand side of the identity and group the terms by powers of \\(x\\).",
-                  "work": "ax + 3a + bx - 2b = (a+b)x + (3a-2b)"
+                  "work": "\\(ax + 3a + bx - 2b = (a+b)x + (3a-2b)\\)"
                 },
                 {
                   "explain": "Equate the coefficients of \\(x\\) and the constant terms to the right-hand side \\(6x + 8\\).",
-                  "work": "a + b = 6 \\quad \\mathrm{and} \\quad 3a - 2b = 8"
+                  "work": "\\(a + b = 6\\)<br>\\(3a - 2b = 8\\)"
                 },
                 {
                   "explain": "Solve the simultaneous equations. Multiply the first equation by 2 and add to the second.",
-                  "work": "2(a+b) + (3a-2b) = 2(6) + 8 \\implies 5a = 20 \\implies a = 4"
+                  "work": "\\(2(a+b) + (3a-2b) = 2(6) + 8\\)<br>\\(5a = 20 \\Rightarrow a = 4\\)"
                 },
                 {
                   "explain": "Substitute \\(a = 4\\) back to find \\(b\\), confirming it yields the same values.",
-                  "work": "4 + b = 6 \\implies b = 2"
+                  "work": "\\(4 + b = 6 \\Rightarrow b = 2\\)"
                 }
               ],
               "xp": 1
             }
           ],
-          "solution": "See detailed steps below.",
+          "solution": "Substituting \\(x = 2\\) gives \\(5a = 20\\), so \\(a = 4\\). Substituting \\(x = -3\\) gives \\(-5b = -10\\), so \\(b = 2\\). Check: \\(4(x+3) + 2(x-2) = 6x + 8\\).",
           "timeLimit": 180,
           "meta": {
             "origin": "teacher"
