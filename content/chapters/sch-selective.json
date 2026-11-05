@@ -41588,6 +41588,46 @@
           }
         },
         {
+          "id": "sch-sel-mts1-t2-q34",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Shown below are the three small pieces of a puzzle.\n\nWhich one of the following big pieces can be combined with the three small pieces to make a square?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 950 642\" width=\"100%\" height=\"auto\" style=\"max-width:560px\"><image href=\"/mts1/mts1-t2-q34.jpg\" x=\"0\" y=\"0\" width=\"950\" height=\"642\"/></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Each small piece has a sloping edge. In the finished square these slopes must line up with the sloping sides of the big piece, and the steps on top of each small piece must slot into the notches of the big piece.",
+              "work": ""
+            },
+            {
+              "explain": "Place the three small pieces around the big piece: one on each sloping side and one upside-down across the top, so that their outer edges form the four straight sides of the square.",
+              "work": ""
+            },
+            {
+              "explain": "Only in D do the notches and slopes match all three small pieces exactly, with no gaps or overlaps.",
+              "work": "Answer: D"
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 2",
+            "number": 34,
+            "page": 43,
+            "category": "spatial reasoning · jigsaw",
+            "note": "Figure is the original book image (scanned)."
+          }
+        },
+        {
           "id": "sch-sel-mts1-t2-q35",
           "type": "mc",
           "difficulty": "easy",
@@ -42990,6 +43030,46 @@
           }
         },
         {
+          "id": "sch-sel-mts1-t3-q33",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "This is part of a tiled wall in my house that has a regular, repeating pattern. Nine tiles have fallen off the wall and broken, leaving a square space.\n\nWhich one of the following tiles could be used to replace the central tile of the group of nine?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 729 887\" width=\"100%\" height=\"auto\" style=\"max-width:560px\"><image href=\"/mts1/mts1-t3-q33.jpg\" x=\"0\" y=\"0\" width=\"729\" height=\"887\"/></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Each shape in the pattern (circle, square, diamond, pentagon) is made from four quarter-pieces on four neighbouring tiles that meet at a corner.",
+              "work": ""
+            },
+            {
+              "explain": "Follow the repeating rows and columns into the gap. The central missing tile sits where a diamond meets it at one corner and a square meets it at the opposite corner.",
+              "work": "diamond corner = short diagonal line;  square corner = small right-angle"
+            },
+            {
+              "explain": "D has a diagonal corner and a square corner (rotate it into place), so it completes both shapes.",
+              "work": "Answer: D"
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 3",
+            "number": 33,
+            "page": 67,
+            "category": "spatial reasoning · patterns",
+            "note": "Figure is the original book image (scanned)."
+          }
+        },
+        {
           "id": "sch-sel-mts1-t3-q34",
           "type": "mc",
           "difficulty": "easy",
@@ -43138,6 +43218,46 @@
             "number": 37,
             "page": 70,
             "category": "pie charts"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t3-q38",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The tangram, known as a Chinese puzzle, is a collection of seven polygons, called tans: five isosceles right triangles (two large, one medium and two small triangles), a square with sides of length 1 and a parallelogram.\n\nThese seven pieces are arranged.\n\nWhich one of the following is not a tangram?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 950 610\" width=\"100%\" height=\"auto\" style=\"max-width:560px\"><image href=\"/mts1/mts1-t3-q38.jpg\" x=\"0\" y=\"0\" width=\"950\" height=\"610\"/></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "A tangram uses all seven pieces exactly once: 2 large triangles, 1 medium triangle, 2 small triangles, 1 square and 1 parallelogram.",
+              "work": ""
+            },
+            {
+              "explain": "Count the pieces in each shape. A, B and C each contain all seven pieces.",
+              "work": ""
+            },
+            {
+              "explain": "D is missing one of the large triangles, so it is not a tangram.",
+              "work": "Answer: D"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 3",
+            "number": 38,
+            "page": 71,
+            "category": "spatial reasoning · shapes",
+            "note": "Figure is the original book image (scanned)."
           }
         },
         {
@@ -43725,6 +43845,46 @@
             "number": 14,
             "page": 80,
             "category": "strengthen an argument"
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q15",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The floor board tiles in my living room has a regular, repeating pattern. Part of the floor board has been taken off, leaving a square space.\n\nWhich one of the following tiles could be used to fill the missing gap?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 745 840\" width=\"100%\" height=\"auto\" style=\"max-width:560px\"><image href=\"/mts1/mts1-t4-q15.jpg\" x=\"0\" y=\"0\" width=\"745\" height=\"840\"/></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "The floor is made of boards laid in diagonal strips, with small squares where the strips meet.",
+              "work": ""
+            },
+            {
+              "explain": "Look at the pattern to the right of the gap: a group of parallel boards running down from top-left to bottom-right. The same group repeats in the gap's position on the left.",
+              "work": ""
+            },
+            {
+              "explain": "B continues the boards in the right direction and joins the lines at every edge of the gap.",
+              "work": "Answer: B"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 15,
+            "page": 81,
+            "category": "spatial reasoning · patterns",
+            "note": "Figure is the original book image (scanned)."
           }
         },
         {
@@ -44339,6 +44499,46 @@
           }
         },
         {
+          "id": "sch-sel-mts1-t4-q33",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "When viewed from one side, an object looks like the picture below.\n\nWhich one of the following objects could give the view above?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 808 816\" width=\"100%\" height=\"auto\" style=\"max-width:560px\"><image href=\"/mts1/mts1-t4-q33.jpg\" x=\"0\" y=\"0\" width=\"808\" height=\"816\"/></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "The view is a thick bar across the top, with a leg going down on the left and a shorter, separate block going down on the right.",
+              "work": ""
+            },
+            {
+              "explain": "Look down on each object from above. D has a long bar along the back, a wall down one side, and a separate block on the other side — from above it gives exactly this shape.",
+              "work": ""
+            },
+            {
+              "explain": "A and B are U-shapes (no top bar), and C's blocks are in the wrong places.",
+              "work": "Answer: D"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 33,
+            "page": 94,
+            "category": "spatial reasoning · views of solids",
+            "note": "Figure is the original book image (scanned)."
+          }
+        },
+        {
           "id": "sch-sel-mts1-t4-q34",
           "type": "mc",
           "difficulty": "medium",
@@ -44445,6 +44645,46 @@
             "page": 96,
             "category": "logic puzzle",
             "note": "Source said 'last five years' with only four teams; changed to 'four years' to match the four winners described."
+          }
+        },
+        {
+          "id": "sch-sel-mts1-t4-q37",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Three different shapes are shown below.\n\nWhich one of the following shapes is needed to make a square together with the three shapes given above?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 871 927\" width=\"100%\" height=\"auto\" style=\"max-width:560px\"><image href=\"/mts1/mts1-t4-q37.jpg\" x=\"0\" y=\"0\" width=\"871\" height=\"927\"/></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "The long piece with the cut corner fits along one side of the square, and the small triangle fills a corner.",
+              "work": ""
+            },
+            {
+              "explain": "The wide piece with the sloping top fits along the bottom. What's left is the top-left part of the square: a rectangle with one corner cut off at 45°.",
+              "work": ""
+            },
+            {
+              "explain": "That is shape A.",
+              "work": "Answer: A"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 37,
+            "page": 97,
+            "category": "spatial reasoning · jigsaw",
+            "note": "Figure is the original book image (scanned)."
           }
         },
         {
