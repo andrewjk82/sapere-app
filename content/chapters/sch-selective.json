@@ -44111,6 +44111,46 @@
           }
         },
         {
+          "id": "sch-sel-mts1-t4-q22",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "There is a statement written on each chest, but only one of the four statements is true.\n\nChest 1: “The gold is in Chest 4 only.”\nChest 2: “The gold is in Chest 4.”\nChest 3: “The gold is in every chest except for Chest 4.”\nChest 4: “The gold is here.”\n\nWhich chest must have the true statement?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 90\" width=\"100%\" height=\"auto\" style=\"max-width:600px\"><rect x=\"10\" y=\"10\" width=\"620\" height=\"30\" rx=\"0\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"87.5\" y=\"28.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\">Chest 1</text><text x=\"242.5\" y=\"28.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\">Chest 2</text><line x1=\"165\" y1=\"10\" x2=\"165\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"397.5\" y=\"28.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\">Chest 3</text><line x1=\"320\" y1=\"10\" x2=\"320\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"552.5\" y=\"28.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\">Chest 4</text><line x1=\"475\" y1=\"10\" x2=\"475\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><rect x=\"10\" y=\"40\" width=\"620\" height=\"30\" rx=\"0\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"87.5\" y=\"58.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">Gold in Chest 4 only.</text><text x=\"242.5\" y=\"58.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">Gold is in Chest 4.</text><line x1=\"165\" y1=\"40\" x2=\"165\" y2=\"70\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"397.5\" y=\"58.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">Gold in every chest but 4.</text><line x1=\"320\" y1=\"40\" x2=\"320\" y2=\"70\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"552.5\" y=\"58.85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">The gold is here.</text><line x1=\"475\" y1=\"40\" x2=\"475\" y2=\"70\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/></svg>"
+          },
+          "options": [
+            "Chest 1",
+            "Chest 2",
+            "Chest 3",
+            "Chest 4"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Chest 2 and Chest 4 say the same thing: there is gold in Chest 4. They are either both true or both false.",
+              "work": ""
+            },
+            {
+              "explain": "Only one statement is true, so they can't both be true — both are false. There is no gold in Chest 4.",
+              "work": "Chest 2 ✗, Chest 4 ✗"
+            },
+            {
+              "explain": "With no gold in Chest 4, Chest 1 (‘in Chest 4 only’) is false too. So the one true statement must be on Chest 3 — the gold is in Chests 1, 2 and 3.",
+              "work": "Answer: C"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Mastering Thinking Skills Book 1 · Selective and Scholarship Tests",
+            "test": "Thinking Skills Test 4",
+            "number": 22,
+            "page": 87,
+            "category": "logic puzzle",
+            "note": "Source Chest 2 said 'There are 2 chests with gold', which allowed Chest 2 or Chest 4 to be the true one as well; changed so the book's answer C is the only solution."
+          }
+        },
+        {
           "id": "sch-sel-mts1-t4-q23",
           "type": "mc",
           "difficulty": "hard",
