@@ -3695,23 +3695,31 @@
           "id": "jr2013-q1",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "The numbers \\(A=5.6\\times10^{-2}\\), \\(B=0.93\\times10^{-1}\\) and \\(C=71\\times10^{-3}\\), listed in ascending order, is:",
+          "stem": "Consider the numbers \\(A=5.6\\times10^{-2}\\), \\(B=0.93\\times10^{-1}\\) and \\(C=71\\times10^{-3}\\). Which option lists them in ascending order (smallest to largest)?",
           "options": [
-            "\\(C, A, B\\)",
-            "\\(B, A, C\\)",
-            "\\(A, C, B\\)",
-            "\\(A, B, C\\)"
+            "\\(C < A < B\\)",
+            "\\(B < A < C\\)",
+            "\\(A < C < B\\)",
+            "\\(A < B < C\\)"
           ],
           "answer": 2,
-          "hint": "Convert all three to the same power of 10 (or to ordinary decimal form) before comparing.",
+          "hint": "Write all three as ordinary decimals (or with the same power of 10) before comparing. Note that \\(0.93\\times10^{-1}\\) and \\(71\\times10^{-3}\\) are not in scientific notation.",
           "steps": [
             {
-              "explain": "Convert each number to ordinary decimal form for easy comparison.",
-              "work": "\\(A = 5.6\\times10^{-2} = 0.056; \\quad B = 0.93\\times10^{-1} = 0.093; \\quad C = 71\\times10^{-3} = 0.071\\)"
+              "explain": "The numbers are not all in the same form, so compare them as ordinary decimals. Multiplying by \\(10^{-n}\\) moves the decimal point \\(n\\) places to the left.",
+              "work": "\\(A = 5.6\\times10^{-2} = 0.056\\)"
             },
             {
-              "explain": "Order the decimal values from smallest to largest.",
-              "work": "\\(0.056 < 0.071 < 0.093 \\Rightarrow A < C < B\\)"
+              "explain": "For \\(B\\), move the decimal point 1 place left. Careful: \\(0.93\\) is already less than 1, so \\(B\\) is small, not \\(0.93\\).",
+              "work": "\\(B = 0.93\\times10^{-1} = 0.093\\)"
+            },
+            {
+              "explain": "For \\(C\\), move the decimal point 3 places left.",
+              "work": "\\(C = 71\\times10^{-3} = 0.071\\)"
+            },
+            {
+              "explain": "Compare the decimals from smallest to largest: \\(0.056 < 0.071 < 0.093\\). So the order is \\(A\\), then \\(C\\), then \\(B\\). A common mistake is to compare only the front numbers (5.6, 0.93, 71) and ignore the powers of 10.",
+              "work": "\\(A < C < B\\)"
             }
           ],
           "meta": {
@@ -3720,7 +3728,14 @@
             "examType": "Yearly",
             "grade": "10"
           },
-          "xp": 1
+          "xp": 1,
+          "solution": "\\(A = 0.056\\), \\(B = 0.093\\), \\(C = 0.071\\), so \\(A < C < B\\).",
+          "keyPoints": [
+            {
+              "text": "ascending order",
+              "note": "Ascending means smallest to largest."
+            }
+          ]
         },
         {
           "id": "jr2013-q3",
