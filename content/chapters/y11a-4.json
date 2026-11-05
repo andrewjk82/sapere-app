@@ -7859,7 +7859,8 @@
                   "explain": "Substitute \\(a = 4\\) back to find \\(b\\), confirming it yields the same values.",
                   "work": "4 + b = 6 \\implies b = 2"
                 }
-              ]
+              ],
+              "xp": 1
             }
           ],
           "solution": "See detailed steps below.",
