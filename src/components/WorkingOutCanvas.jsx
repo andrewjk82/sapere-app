@@ -1819,7 +1819,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
             {historyFlash.label}
           </div>
         )}
-        <div style={{ position: 'absolute', left: pagePos.x, top: pagePos.y, width: PAGE_W * u, height: PAGE_H * u, visibility: cssScale > 0 ? 'visible' : 'hidden', boxShadow: '0 1px 6px rgba(15,23,42,0.18)', overflow: 'hidden', ...bgStyle }}>
+        <div style={{ position: 'absolute', left: pagePos.x, top: pagePos.y, width: PAGE_W * u, height: PAGE_H * u, visibility: cssScale > 0 ? 'inherit' : 'hidden', boxShadow: '0 1px 6px rgba(15,23,42,0.18)', overflow: 'hidden', ...bgStyle }}>
           {isGraph && (
             <>
               <div style={{ position: 'absolute', top: '50%', left: 0, right: 0, height: '2px', background: '#94a3b8', transform: 'translateY(-50%)', pointerEvents: 'none' }} />

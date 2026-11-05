@@ -4,16 +4,23 @@ import { useCallback, useEffect, useState } from 'react';
 // notes below) or 'tabs' (a phone: one pane at a time). The student picks side / stack with a
 // button, remembered on this device separately for upright and sideways, and drags the divider
 // to set the share, also remembered (per layout).
-export const STACK_MIN_WIDTH = 600;
+//
+// Tabs are for phones only, upright or sideways. That is decided by the device's screen, not the window: a
+// tablet in a small window (Split View, Stage Manager) is still a tablet. Phones top out around 480 on their
+// short side and small tablets start around 533.
+export const PHONE_MAX_SHORT_SIDE = 520;
 const CHOICE_KEY = 'sapere:splitLayout:v1';
 const RATIO_KEY = 'sapere:splitRatio:v1';
 const DEFAULT_CHOICE = { portrait: 'stack', landscape: 'side' };
 
 export const orientationOf = (width, height) => (height > width ? 'portrait' : 'landscape');
 
-// `choice` is { portrait, landscape } (missing → default). Narrow screens always use tabs.
-export const splitLayoutFor = (width, height, choice = DEFAULT_CHOICE) => {
-  if (width < STACK_MIN_WIDTH) return 'tabs';
+const isPhoneScreen = (screenSize) => Math.min(screenSize.w, screenSize.h) < PHONE_MAX_SHORT_SIDE;
+
+// `choice` is { portrait, landscape } (missing → default). `screenSize` is the device's screen; it defaults to
+// the window for callers without one.
+export const splitLayoutFor = (width, height, choice = DEFAULT_CHOICE, screenSize = { w: width, h: height }) => {
+  if (isPhoneScreen(screenSize)) return 'tabs';
   const picked = (choice || {})[orientationOf(width, height)];
   return picked === 'side' || picked === 'stack' ? picked : DEFAULT_CHOICE[orientationOf(width, height)];
 };
@@ -32,6 +39,10 @@ const writeJson = (key, value) => {
   try { globalThis.localStorage?.setItem(key, JSON.stringify(value)); } catch { /* private mode: not remembered */ }
 };
 const viewport = () => (typeof window === 'undefined' ? { w: 1200, h: 800 } : { w: window.innerWidth, h: window.innerHeight });
+const deviceScreen = () => {
+  const s = typeof window === 'undefined' ? null : window.screen;
+  return s?.width > 0 && s?.height > 0 ? { w: s.width, h: s.height } : viewport();
+};
 
 export const useSplitLayout = () => {
   const [size, setSize] = useState(viewport);
@@ -55,7 +66,7 @@ export const useSplitLayout = () => {
       document.removeEventListener('visibilitychange', onVisible);
     };
   }, []);
-  const layout = splitLayoutFor(size.w, size.h, choice);
+  const layout = splitLayoutFor(size.w, size.h, choice, deviceScreen());
   const setLayoutChoice = useCallback((next) => {
     // The orientation is read at the tap, not from state: a stale one would save the choice for the other
     // orientation and the button would seem to do nothing.

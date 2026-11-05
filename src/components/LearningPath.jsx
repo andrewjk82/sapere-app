@@ -26,7 +26,7 @@ import { loadLastStudy, saveLastStudy, shortChapterLabel, peekContinueStudy, con
 import { findTopicAfter } from '../utils/lessonTopics';
 import { recordTopicWriting } from '../utils/lessonWriting';
 import './learning-path.css';
-import { useSplitLayout } from '../utils/useSplitLayout';
+import { useSplitLayout, PHONE_MAX_SHORT_SIDE } from '../utils/useSplitLayout';
 import { SplitPanes, SplitLayoutToggle } from './SplitPanes';
 
 const normalizeCurriculumTopics = (chapters) => (Array.isArray(chapters) ? chapters : []).map((chapter) => {
@@ -57,7 +57,7 @@ const isTabletDevice = () => {
   const touch = navigator.maxTouchPoints > 0 || window.matchMedia('(pointer: coarse)').matches;
   const short = Math.min(window.screen?.width || 0, window.screen?.height || 0);
   const long = Math.max(window.screen?.width || 0, window.screen?.height || 0);
-  return touch && short >= 600 && long <= 1600;
+  return touch && short >= PHONE_MAX_SHORT_SIDE && long <= 1600;
 };
 
 const worksheetNavBtn = (enabled) => ({

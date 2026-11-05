@@ -152,7 +152,7 @@ const HighlightGroup = ({ hl, setHl, canUndo, canRedo, onUndo, onRedo, hasAny, o
 const PdfToolbar = ({ zoom, onZoomChange, highlight, visible = true, onInteract }) => (
   <div
     onPointerDownCapture={onInteract}
-    style={{ position: 'absolute', top: 8, left: 8, right: 8, zIndex: 5, display: 'flex', flexWrap: 'wrap', alignItems: 'flex-start', gap: 8, pointerEvents: 'none', opacity: visible ? 1 : 0, transform: visible ? 'none' : 'translateY(-6px)', transition: 'opacity 0.18s ease, transform 0.18s ease', visibility: visible ? 'visible' : 'hidden' }}
+    style={{ position: 'absolute', top: 8, left: 8, right: 8, zIndex: 5, display: 'flex', flexWrap: 'wrap', alignItems: 'flex-start', gap: 8, pointerEvents: 'none', opacity: visible ? 1 : 0, transform: visible ? 'none' : 'translateY(-6px)', transition: 'opacity 0.18s ease, transform 0.18s ease', visibility: visible ? 'inherit' : 'hidden' }}
   >
     <div style={{ pointerEvents: visible ? 'auto' : 'none' }}><ZoomGroup zoom={zoom} onZoomChange={onZoomChange} /></div>
     {highlight && <div style={{ pointerEvents: visible ? 'auto' : 'none' }}><HighlightGroup {...highlight} /></div>}
