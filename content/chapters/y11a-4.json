@@ -7774,7 +7774,8 @@
                   "explain": "Solve for \\(a\\) by dividing by 5.",
                   "work": "a = 4"
                 }
-              ]
+              ],
+              "xp": 1
             },
             {
               "id": "y11a-4d-q1b",
