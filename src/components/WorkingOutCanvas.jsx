@@ -4,7 +4,7 @@ import { PenTool, PenLine, Highlighter, Eraser, MousePointer2, RotateCcw, Rotate
 import StickerLayer from './StickerLayer';
 import LassoOverlay from './LassoOverlay';
 import { useLassoTool } from '../utils/useLassoTool';
-import { drawPenSegments, drawTip } from '../utils/inkRender';
+import { drawPenSegments, drawTip, drawHighlighterStroke } from '../utils/inkRender';
 import { eraseStrokesAlong, STROKE_ERASE_RADIUS } from '../utils/strokeErase';
 import { isScribbleEraseOn, scribbleErase } from '../utils/scribbleErase';
 import { recognizeShape, isHoldToShapeOn, HOLD_MS, HOLD_MOVE } from '../utils/shapeSnap';
@@ -113,6 +113,10 @@ function drawStroke(ctx, stroke, dpr, includeTip = false) {
     for (let i = 1; i < pts.length; i++) ctx.lineTo(pts[i][0] * dpr, pts[i][1] * dpr);
     ctx.stroke();
     ctx.restore();
+    return;
+  }
+  if (stroke?.penStyle === 'highlighter') {
+    drawHighlighterStroke(ctx, stroke.points, stroke.color, dpr);
     return;
   }
   drawPenSegments(ctx, stroke.points, 1, stroke.color, dpr, includeTip);
@@ -460,6 +464,15 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
       clearCanvas(liveCanvasRef.current, getLiveCtx());
       clearCanvas(displayCanvasRef.current, getTipCtx());
       drawStroke(getLiveCtx(), stroke, dpr);
+      liveDrawnIdxRef.current = pts.length;
+      return;
+    }
+
+    if (stroke.penStyle === 'highlighter') {
+      // Repainted whole each frame: adding to it piece by piece would stack the translucent colour.
+      clearCanvas(liveCanvasRef.current, getLiveCtx());
+      clearCanvas(displayCanvasRef.current, getTipCtx());
+      drawHighlighterStroke(getLiveCtx(), pts, stroke.color, dpr, predictedPtsRef.current);
       liveDrawnIdxRef.current = pts.length;
       return;
     }
@@ -1833,7 +1846,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
           />
           <canvas
             ref={liveCanvasRef}
-            style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none' }}
+            style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', mixBlendMode: activeTool === 'highlighter' ? 'multiply' : undefined }}
           />
           <canvas
             ref={displayCanvasRef}

@@ -85,3 +85,36 @@ export function drawTip(ctx, stroke, dpr, predicted) {
   ctx.stroke();
   ctx.restore();
 }
+
+// A highlighter stroke is one path, stroked once, at one width. The pen's segment-by-segment drawing cannot be used
+// here: with a translucent colour every overlapping segment adds another layer, so a 0.48 pastel built up to almost
+// solid paint. 'multiply' keeps whatever is already on the canvas showing through, however many times it is marked.
+export function drawHighlighterStroke(ctx, pts, color, dpr, predicted = []) {
+  if (!ctx || !pts || pts.length === 0) return;
+  const width = Math.max(0.4, pts[0][2]) * dpr;
+  ctx.save();
+  ctx.globalCompositeOperation = 'multiply';
+  ctx.strokeStyle = color;
+  ctx.fillStyle = color;
+  ctx.lineCap = 'round';
+  ctx.lineJoin = 'round';
+  ctx.lineWidth = width;
+  ctx.beginPath();
+  if (pts.length === 1 && predicted.length === 0) {
+    ctx.arc(pts[0][0] * dpr, pts[0][1] * dpr, width / 2, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.restore();
+    return;
+  }
+  ctx.moveTo(pts[0][0] * dpr, pts[0][1] * dpr);
+  for (let i = 1; i < pts.length - 1; i++) {
+    const midX = (pts[i][0] + pts[i + 1][0]) / 2;
+    const midY = (pts[i][1] + pts[i + 1][1]) / 2;
+    ctx.quadraticCurveTo(pts[i][0] * dpr, pts[i][1] * dpr, midX * dpr, midY * dpr);
+  }
+  const last = pts[pts.length - 1];
+  ctx.lineTo(last[0] * dpr, last[1] * dpr);
+  predicted.forEach((p) => ctx.lineTo(p[0] * dpr, p[1] * dpr));
+  ctx.stroke();
+  ctx.restore();
+}
