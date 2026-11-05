@@ -7801,7 +7801,8 @@
                   "explain": "Solve for \\(b\\) by dividing by -5.",
                   "work": "b = 2"
                 }
-              ]
+              ],
+              "xp": 1
             },
             {
               "id": "y11a-4d-q1c",
