@@ -16984,12 +16984,12 @@
               "work": "\\(\\log_a x=\\dfrac{\\ln x}{\\ln a}\\)"
             },
             {
-              "explain": "Differentiate the numerator: \\((\\ln x)prime=\\dfrac1x\\).",
-              "work": "\\((\\ln x)prime=\\dfrac1x\\)"
+              "explain": "Differentiate the numerator: \\((\\ln x)'=\\dfrac1x\\).",
+              "work": "\\((\\ln x)'=\\dfrac1x\\)"
             },
             {
-              "explain": "Therefore \\((\\log_a x)prime=\\dfrac1{\\ln a}\\cdot\\dfrac1x=\\boxed{\\dfrac1{x\\ln a}}\\).",
-              "work": "\\((\\log_a x)prime=\\dfrac1{\\ln a}\\cdot\\dfrac1x=\\boxed{\\dfrac1{x\\ln a}}\\)"
+              "explain": "Therefore \\((\\log_a x)'=\\dfrac1{\\ln a}\\cdot\\dfrac1x=\\boxed{\\dfrac1{x\\ln a}}\\).",
+              "work": "\\((\\log_a x)'=\\dfrac1{\\ln a}\\cdot\\dfrac1x=\\boxed{\\dfrac1{x\\ln a}}\\)"
             }
           ],
           "timeLimit": 60,
@@ -17066,11 +17066,11 @@
               "work": "\\(f(x)=18\\ln x\\)"
             },
             {
-              "explain": "Differentiate: \\(fprime(x)=\\dfrac{18}{x}\\).",
-              "work": "\\(fprime(x)=\\dfrac{18}{x}\\)"
+              "explain": "Differentiate: \\(f'(x)=\\dfrac{18}{x}\\).",
+              "work": "\\(f'(x)=\\dfrac{18}{x}\\)"
             },
             {
-              "explain": "Substitute \\(x=9\\): \\(fprime(9)=\\dfrac{18}{9}=\\boxed2\\).",
+              "explain": "Substitute \\(x=9\\): \\(f'(9)=\\dfrac{18}{9}=\\boxed2\\).",
               "work": "\\(x=9\\)"
             }
           ],
@@ -17134,15 +17134,15 @@
           "keyPoints": [],
           "steps": [
             {
-              "explain": "Differentiate: \\(fprime(x)=-65\\cdot\\frac1x=-\\frac{65}{x}\\).",
-              "work": "\\(fprime(x)=-65\\cdot\\frac1x=-\\frac{65}{x}\\)"
+              "explain": "Differentiate: \\(f'(x)=-65\\cdot\\frac1x=-\\frac{65}{x}\\).",
+              "work": "\\(f'(x)=-65\\cdot\\frac1x=-\\frac{65}{x}\\)"
             },
             {
-              "explain": "At \\(x=10\\): \\(fprime(10)=-\\frac{65}{10}=-6.5\\).",
+              "explain": "At \\(x=10\\): \\(f'(10)=-\\frac{65}{10}=-6.5\\).",
               "work": "\\(x=10\\)"
             },
             {
-              "explain": "At \\(x=20\\): \\(fprime(20)=-\\frac{65}{20}=-3.25\\).",
+              "explain": "At \\(x=20\\): \\(f'(20)=-\\frac{65}{20}=-3.25\\).",
               "work": "\\(x=20\\)"
             }
           ],
@@ -17166,7 +17166,7 @@
             "The number is decreasing at an increasing rate."
           ],
           "answer": 1,
-          "hint": "Use the negative values of \\(fprime(10)\\) and \\(fprime(20)\\), and compare their magnitudes.",
+          "hint": "Use the negative values of \\(f'(10)\\) and \\(f'(20)\\), and compare their magnitudes.",
           "keyPoints": [],
           "steps": [
             {

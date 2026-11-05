@@ -7310,7 +7310,7 @@
             "\\(\\cos x+\\sin x\\)"
           ],
           "answer": 0,
-          "hint": "Differentiate each term separately, remembering \\((\\sin x)prime=\\cos x\\) and \\((\\cos x)prime=-\\sin x\\).",
+          "hint": "Differentiate each term separately, remembering \\((\\sin x)'=\\cos x\\) and \\((\\cos x)'=-\\sin x\\).",
           "keyPoints": [
             {
               "text": "What is the derivative of \\(\\cos x-\\sin x\\)?",
@@ -7360,12 +7360,12 @@
           ],
           "steps": [
             {
-              "explain": "For \\(y=\\sin x\\), the gradient function is \\(yprime=\\cos x\\).",
+              "explain": "For \\(y=\\sin x\\), the gradient function is \\(y'=\\cos x\\).",
               "work": "\\(y=\\sin x\\)"
             },
             {
-              "explain": "Substitute the given x-coordinate: \\(yprime(\\frac{\\pi}{3})=\\cos(\\frac{\\pi}{3})\\).",
-              "work": "\\(yprime(\\frac{\\pi}{3})=\\cos(\\frac{\\pi}{3})\\)"
+              "explain": "Substitute the given x-coordinate: \\(y'(\\frac{\\pi}{3})=\\cos(\\frac{\\pi}{3})\\).",
+              "work": "\\(y'(\\frac{\\pi}{3})=\\cos(\\frac{\\pi}{3})\\)"
             },
             {
               "explain": "Since \\(\\cos(\\frac{\\pi}{3})=\\frac12\\), the exact tangent gradient is \\(\\boxed{\\frac12}\\).",
@@ -7401,11 +7401,11 @@
           ],
           "steps": [
             {
-              "explain": "Differentiate term by term: \\(fprime(x)=3\\cos x-4\\sin x\\).",
-              "work": "\\(fprime(x)=3\\cos x-4\\sin x\\)"
+              "explain": "Differentiate term by term: \\(f'(x)=3\\cos x-4\\sin x\\).",
+              "work": "\\(f'(x)=3\\cos x-4\\sin x\\)"
             },
             {
-              "explain": "Substitute \\(x=\\frac{2\\pi}{3}\\): \\(fprime(\\frac{2\\pi}{3})=3\\cos(\\frac{2\\pi}{3})-4\\sin(\\frac{2\\pi}{3})\\).",
+              "explain": "Substitute \\(x=\\frac{2\\pi}{3}\\): \\(f'(\\frac{2\\pi}{3})=3\\cos(\\frac{2\\pi}{3})-4\\sin(\\frac{2\\pi}{3})\\).",
               "work": "\\(x=\\frac{2\\pi}{3}\\)"
             },
             {
@@ -7524,12 +7524,12 @@
           ],
           "steps": [
             {
-              "explain": "Differentiate the first term: \\((7x)prime=7\\).",
-              "work": "\\((7x)prime=7\\)"
+              "explain": "Differentiate the first term: \\((7x)'=7\\).",
+              "work": "\\((7x)'=7\\)"
             },
             {
-              "explain": "Differentiate the second term: \\((-2\\sin x)prime=-2\\cos x\\).",
-              "work": "\\((-2\\sin x)prime=-2\\cos x\\)"
+              "explain": "Differentiate the second term: \\((-2\\sin x)'=-2\\cos x\\).",
+              "work": "\\((-2\\sin x)'=-2\\cos x\\)"
             },
             {
               "explain": "Combine: \\(\\boxed{7-2\\cos x}\\).",
@@ -9775,7 +9775,7 @@
               "stem": "(d) Hence sketch the curve for \\( -2\\pi \\le x \\le 2\\pi \\).",
               "answer": "Sketch of \\(y = x + \\sin x\\) on \\([-2\\pi,2\\pi]\\): non-decreasing about \\(y=x\\), horizontal POI at \\((\\pm\\pi,\\pm\\pi)\\).",
               "hint": "Show all working clearly; match gradients and substitute the given point.",
-              "solution": "Sketch \\(y = x + \\sin x\\) for \\(-2\\pi \\le x \\le 2\\pi\\).\n\nFeatures from earlier parts:\n• \\(y^{prime} = 1 + \\cos x \\ge 0\\), so the curve is non-decreasing;\n• horizontal points of inflection at \\((-\\pi,-\\pi)\\) and \\((\\pi,\\pi)\\);\n• inflection at the origin;\n• the curve oscillates gently about the line \\(y = x\\) with amplitude 1.\n\nDraw a smooth increasing curve about the dashed line \\(y = x\\), marking the POI.",
+              "solution": "Sketch \\(y = x + \\sin x\\) for \\(-2\\pi \\le x \\le 2\\pi\\).\n\nFeatures from earlier parts:\n• \\(y' = 1 + \\cos x \\ge 0\\), so the curve is non-decreasing;\n• horizontal points of inflection at \\((-\\pi,-\\pi)\\) and \\((\\pi,\\pi)\\);\n• inflection at the origin;\n• the curve oscillates gently about the line \\(y = x\\) with amplitude 1.\n\nDraw a smooth increasing curve about the dashed line \\(y = x\\), marking the POI.",
               "steps": [
                 {
                   "explain": "Why sketch last? Parts (a)–(c) already give \\(y' = 1\\) + cos x ≥ 0, horizontal points of inflection at (±π, ±π), and an inflection at the origin. What we do now is assemble those features into one accurate diagram on [-2π, 2π]. A common mistake is drawing a pure sine wave and forgetting the underlying line y = x.",
@@ -9938,7 +9938,7 @@
               "stem": "(d) Hence sketch the curve for \\( -2\\pi \\le x \\le 2\\pi \\).",
               "answer": "Sketch of \\(y = x - \\cos x\\) on \\([-2\\pi,2\\pi]\\): non-decreasing about \\(y=x\\) with horizontal POI marked.",
               "hint": "Show all working clearly; match gradients and substitute the given point.",
-              "solution": "Sketch \\(y = x - \\cos x\\) for \\(-2\\pi \\le x \\le 2\\pi\\).\n\nFeatures:\n• \\(y^{prime} = 1 + \\sin x \\ge 0\\), so non-decreasing overall;\n• the curve rides about the line \\(y = x\\) as \\(-\\cos x\\) oscillates;\n• mark horizontal points of inflection consistent with earlier parts (where \\(y^{prime} = 0\\) and \\(y^{primeprime} = 0\\)).\n\nDraw a smooth non-decreasing curve about dashed \\(y = x\\) with the correct POI marked.",
+              "solution": "Sketch \\(y = x - \\cos x\\) for \\(-2\\pi \\le x \\le 2\\pi\\).\n\nFeatures:\n• \\(y' = 1 + \\sin x \\ge 0\\), so non-decreasing overall;\n• the curve rides about the line \\(y = x\\) as \\(-\\cos x\\) oscillates;\n• mark horizontal points of inflection consistent with earlier parts (where \\(y' = 0\\) and \\(y'' = 0\\)).\n\nDraw a smooth non-decreasing curve about dashed \\(y = x\\) with the correct POI marked.",
               "steps": [
                 {
                   "explain": "From earlier parts: \\(y' = 1\\) + sin x ≥ 0 so the curve is non-decreasing; \\(y'' = cos\\) x. Why sketch now? To combine stationary/inflection information into one diagram on [-2π, 2π]. A common slip is swapping x − cos x for x + cos x.",
@@ -10326,7 +10326,7 @@
               "type": "review",
               "difficulty": "hard",
               "stem": "(c) Hence show that, as \\(\\theta\\) varies, \\(\\triangle PQR\\) has its maximum possible area when it is equilateral.",
-              "answer": "From \\(A = \\sin\\theta(1+\\cos\\theta)\\), set \\(A^{prime}=0\\) to show the maximum when the triangle is equilateral.",
+              "answer": "From \\(A = \\sin\\theta(1+\\cos\\theta)\\), set \\(A'=0\\) to show the maximum when the triangle is equilateral.",
               "hint": "Show all working clearly; match gradients and substitute the given point.",
               "solution": "Given \\(A = \\sin\\theta(\\cos\\theta + 1)\\) from part (b).\n\nDifferentiate with respect to \\(\\theta\\) and set \\(\\dfrac{dA}{d\\theta} = 0\\) to locate the maximum.\n\nMaximise \\(A(\\theta) = \\sin\\theta(1 + \\cos\\theta)\\) for acute \\(\\theta\\) in the geometric range. Differentiate using the product rule. \\(A' = \\cos\\theta(1 + \\cos\\theta) + \\sin\\theta(-\\sin\\theta) = \\cos\\theta + \\cos^{2}\\theta - \\sin^{2}\\theta\\). Use \\(\\cos^{2} - \\sin^{2} = \\cos 2\\theta\\) and rewrite: \\(A' = \\cos\\theta + \\cos 2\\theta\\). Set \\(A' = 0\\): \\(\\cos 2\\theta = -\\cos\\theta = \\cos(\\pi - \\theta)\\). Solving in the domain gives \\(2\\theta = \\pi - \\theta\\) so \\(\\theta = \\dfrac{\\pi}{3}\\) (acute solution). Second-derivative or endpoint checks confirm a maximum. When \\(\\theta = \\dfrac{\\pi}{3}\\), central angle \\(2\\theta = \\dfrac{2\\pi}{3}\\) and the three central angles at \\(O\\) are equal, so the inscribed triangle is equilateral. Hence maximum area occurs for the equilateral case.\n\nConclusion: as \\(\\theta\\) varies, the maximum area of \\(\\triangle PQR\\) occurs when the triangle is equilateral (matching the required “show that” statement).",
               "steps": [
@@ -11308,9 +11308,9 @@
           "type": "review",
           "difficulty": "medium",
           "stem": "The point \\( P\\!\\left(\\dfrac{\\pi}{6}, \\dfrac{1}{2}\\right) \\) lies on the curve \\( y = 2 \\sin x - \\cos 2x \\). Show that the tangent at \\( P \\) has equation \\( 2\\sqrt{3}\\, x - y = \\dfrac{1}{3}\\pi\\sqrt{3} - \\dfrac{1}{2} \\).",
-          "answer": "At \\(P\\), \\(y^{prime} = 2\\sqrt{3}\\); tangent rearranges to \\(2\\sqrt{3}\\,x - y = \\dfrac{\\pi\\sqrt{3}}{3} - \\dfrac{1}{2}\\).",
+          "answer": "At \\(P\\), \\(y' = 2\\sqrt{3}\\); tangent rearranges to \\(2\\sqrt{3}\\,x - y = \\dfrac{\\pi\\sqrt{3}}{3} - \\dfrac{1}{2}\\).",
           "hint": "Show all working clearly; match gradients and substitute the given point.",
-          "solution": "Given \\(y = 2\\sin x - \\cos 2x\\) and \\(P\\!\\left(\\dfrac{\\pi}{6}, \\dfrac{1}{2}\\right)\\).\n\nDifferentiate: \\(y^{prime} = 2\\cos x + 2\\sin 2x\\).\n\nAt \\(x = \\dfrac{\\pi}{6}\\):\n\\[y^{prime} = 2\\cos\\dfrac{\\pi}{6} + 2\\sin\\dfrac{\\pi}{3} = 2\\cdot\\dfrac{\\sqrt{3}}{2} + 2\\cdot\\dfrac{\\sqrt{3}}{2} = 2\\sqrt{3}.\\]\n\nTangent at \\(P\\):\n\\[y - \\dfrac{1}{2} = 2\\sqrt{3}\\left(x - \\dfrac{\\pi}{6}\\right).\\]\nRearrange:\n\\[y - \\dfrac{1}{2} = 2\\sqrt{3}\\,x - 2\\sqrt{3}\\cdot\\dfrac{\\pi}{6} = 2\\sqrt{3}\\,x - \\dfrac{\\pi\\sqrt{3}}{3},\\]\n\\[2\\sqrt{3}\\,x - y = \\dfrac{\\pi\\sqrt{3}}{3} - \\dfrac{1}{2},\\]\nwhich is the required equation.",
+          "solution": "Given \\(y = 2\\sin x - \\cos 2x\\) and \\(P\\!\\left(\\dfrac{\\pi}{6}, \\dfrac{1}{2}\\right)\\).\n\nDifferentiate: \\(y' = 2\\cos x + 2\\sin 2x\\).\n\nAt \\(x = \\dfrac{\\pi}{6}\\):\n\\[y' = 2\\cos\\dfrac{\\pi}{6} + 2\\sin\\dfrac{\\pi}{3} = 2\\cdot\\dfrac{\\sqrt{3}}{2} + 2\\cdot\\dfrac{\\sqrt{3}}{2} = 2\\sqrt{3}.\\]\n\nTangent at \\(P\\):\n\\[y - \\dfrac{1}{2} = 2\\sqrt{3}\\left(x - \\dfrac{\\pi}{6}\\right).\\]\nRearrange:\n\\[y - \\dfrac{1}{2} = 2\\sqrt{3}\\,x - 2\\sqrt{3}\\cdot\\dfrac{\\pi}{6} = 2\\sqrt{3}\\,x - \\dfrac{\\pi\\sqrt{3}}{3},\\]\n\\[2\\sqrt{3}\\,x - y = \\dfrac{\\pi\\sqrt{3}}{3} - \\dfrac{1}{2},\\]\nwhich is the required equation.",
           "steps": [
             {
               "explain": "Show the stated tangent equation. Strategy: differentiate, evaluate the gradient at \\(P\\), form the tangent, then rearrange into the given linear form. Why rearrange? Exam “show that” answers must match the printed equation exactly.",
@@ -11374,9 +11374,9 @@
               "type": "review",
               "difficulty": "easy",
               "stem": "(a) Show that \\( y = \\sin^{2} x \\) has derivative \\( y' = 2 \\sin x \\cos x \\).",
-              "answer": "\\(y = \\sin^{2}x\\) \\(\\Rightarrow\\) \\(y^{prime} = 2\\sin x\\cos x\\) by the chain rule.",
+              "answer": "\\(y = \\sin^{2}x\\) \\(\\Rightarrow\\) \\(y' = 2\\sin x\\cos x\\) by the chain rule.",
               "hint": "Show all working clearly; match gradients and substitute the given point.",
-              "solution": "Write \\(y = \\sin^{2}x = (\\sin x)^{2}\\).\n\nLet \\(u = \\sin x\\), so \\(y = u^{2}\\). Then\n\\[\\dfrac{dy}{dx} = 2u\\,\\dfrac{du}{dx} = 2\\sin x\\cdot\\cos x = 2\\sin x\\cos x.\\]\n\nAlternatively, by the product rule on \\(y = (\\sin x)(\\sin x)\\):\n\\[y^{prime} = \\cos x\\sin x + \\sin x\\cos x = 2\\sin x\\cos x.\\]\n\nHence \\(y^{prime} = 2\\sin x\\cos x\\), as required. (Note also \\(y^{prime} = \\sin 2x\\).)",
+              "solution": "Write \\(y = \\sin^{2}x = (\\sin x)^{2}\\).\n\nLet \\(u = \\sin x\\), so \\(y = u^{2}\\). Then\n\\[\\dfrac{dy}{dx} = 2u\\,\\dfrac{du}{dx} = 2\\sin x\\cdot\\cos x = 2\\sin x\\cos x.\\]\n\nAlternatively, by the product rule on \\(y = (\\sin x)(\\sin x)\\):\n\\[y' = \\cos x\\sin x + \\sin x\\cos x = 2\\sin x\\cos x.\\]\n\nHence \\(y' = 2\\sin x\\cos x\\), as required. (Note also \\(y' = \\sin 2x\\).)",
               "steps": [
                 {
                   "explain": "Show the derivative of \\(y = \\sin^{2}x\\) is \\(2\\sin x\\cos x\\). Strategy: chain rule treating \\(\\sin x\\) as the inside of a square, or product rule on \\(\\sin x\\cdot\\sin x\\).",

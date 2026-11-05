@@ -33,7 +33,7 @@
               "work": "\\(\\frac{dy}{dx}=1\\cdot\\cos^{-1}(4x)+x\\cdot\\frac{d}{dx}[\\cos^{-1}(4x)]\\)"
             },
             {
-              "explain": "Use \\(\\frac{d}{dx}\\cos^{-1}(u)=-uprime/\\sqrt{1-u^2}\\) with \\(u=4x\\).",
+              "explain": "Use \\(\\frac{d}{dx}\\cos^{-1}(u)=-\\frac{u'}{\\sqrt{1-u^2}}\\) with \\(u=4x\\).",
               "work": "\\(\\frac{d}{dx}\\cos^{-1}(4x)=-\\frac4{\\sqrt{1-(4x)^2}}=-\\frac4{\\sqrt{1-16x^2}}\\)"
             },
             {

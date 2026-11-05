@@ -18694,15 +18694,15 @@
             "\\(\\log_7x\\)"
           ],
           "answer": 2,
-          "hint": "For an exponential with base (a), use \\((a^x)prime=a^x\\ln a\\).",
+          "hint": "For an exponential with base (a), use \\((a^x)'=a^x\\ln a\\).",
           "keyPoints": [],
           "steps": [
             {
-              "explain": "Use the rule \\((a^x)prime=a^x\\ln a\\).",
-              "work": "\\((a^x)prime=a^x\\ln a\\)"
+              "explain": "Use the rule \\((a^x)'=a^x\\ln a\\).",
+              "work": "\\((a^x)'=a^x\\ln a\\)"
             },
             {
-              "explain": "Here \\(a=7\\), so \\((7^x)prime=7^x\\ln 7\\).",
+              "explain": "Here \\(a=7\\), so \\((7^x)'=7^x\\ln 7\\).",
               "work": "\\(a=7\\)"
             },
             {
@@ -18730,7 +18730,7 @@
             "\\(5^4\\ln 5\\)"
           ],
           "answer": 1,
-          "hint": "Differentiate \\(5^x\\) using \\((a^x)prime=a^x\\ln a\\), then put \\(x=1\\).",
+          "hint": "Differentiate \\(5^x\\) using \\((a^x)'=a^x\\ln a\\), then put \\(x=1\\).",
           "keyPoints": [
             {
               "text": "Find \\(f'(1)\\) if \\(f(x)=5^x\\).",
@@ -18739,16 +18739,16 @@
           ],
           "steps": [
             {
-              "explain": "Differentiate: \\(fprime(x)=5^x\\ln5\\).",
-              "work": "\\(fprime(x)=5^x\\ln5\\)"
+              "explain": "Differentiate: \\(f'(x)=5^x\\ln5\\).",
+              "work": "\\(f'(x)=5^x\\ln5\\)"
             },
             {
-              "explain": "Substitute \\(x=1\\): \\(fprime(1)=5^1\\ln5\\).",
+              "explain": "Substitute \\(x=1\\): \\(f'(1)=5^1\\ln5\\).",
               "work": "\\(x=1\\)"
             },
             {
-              "explain": "Thus \\(\\boxed{fprime(1)=5\\ln5}\\).",
-              "work": "\\(\\boxed{fprime(1)=5\\ln5}\\)"
+              "explain": "Thus \\(\\boxed{f'(1)=5\\ln5}\\).",
+              "work": "\\(\\boxed{f'(1)=5\\ln5}\\)"
             }
           ],
           "timeLimit": 60,
@@ -18779,8 +18779,8 @@
               "work": "\\(x=0\\)"
             },
             {
-              "explain": "Differentiate: \\(yprime=e^x\\), hence the gradient at 0 is \\(m=e^0=1\\).",
-              "work": "\\(yprime=e^x\\)"
+              "explain": "Differentiate: \\(y'=e^x\\), hence the gradient at 0 is \\(m=e^0=1\\).",
+              "work": "\\(y'=e^x\\)"
             },
             {
               "explain": "Use point-slope form: \\(y-1=1(x-0)\\), so \\(\\boxed{y=x+1}\\).",
@@ -18807,7 +18807,7 @@
             "\\(y=1-x\\)"
           ],
           "answer": 0,
-          "hint": "At \\(x=1\\), find \\(y\\) and the derivative \\(yprime=1/x\\).",
+          "hint": "At \\(x=1\\), find \\(y\\) and the derivative \\(y'=1/x\\).",
           "keyPoints": [],
           "steps": [
             {
@@ -18815,8 +18815,8 @@
               "work": "\\((1,\\ln1)=(1,0)\\)"
             },
             {
-              "explain": "The gradient is \\(yprime(1)=1/1=1\\).",
-              "work": "\\(yprime(1)=1/1=1\\)"
+              "explain": "The gradient is \\(y'(1)=1/1=1\\).",
+              "work": "\\(y'(1)=1/1=1\\)"
             },
             {
               "explain": "Use point-slope form: \\(y-0=1(x-1)\\), so \\(\\boxed{y=x-1}\\).",
