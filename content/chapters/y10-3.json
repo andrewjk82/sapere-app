@@ -5767,38 +5767,38 @@
           "id": "y10-3c-4",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Solve the linear equation containing fractions: \\\\(\\\\frac{2x}{3} - 1 = 5\\\\)",
+          "stem": "Solve the linear equation containing fractions: \\(\\dfrac{2x}{3} - 1 = 5\\)",
           "options": [
-            "\\\\(x = 10\\\\)",
-            "\\\\(x = 9\\\\)",
-            "\\\\(x = 12\\\\)",
-            "\\\\(x = 6\\\\)"
+            "\\(x = 10\\)",
+            "\\(x = 9\\)",
+            "\\(x = 12\\)",
+            "\\(x = 6\\)"
           ],
           "answer": 1,
-          "hint": "Add 1 to both sides first, then multiply by 3 and divide by 2.",
+          "hint": "Add 1 to both sides first, then multiply both sides by 3 and divide by 2.",
           "steps": [
             {
-              "explain": "Identify the equation and plan to isolate the fraction term.",
-              "work": "\\\\(\\frac{2x}{3} - 1 = 5\\\\)"
+              "explain": "The unknown \\(x\\) is inside a fraction. Plan: get the fraction term alone on one side, then clear the denominator.",
+              "work": "\\(\\dfrac{2x}{3} - 1 = 5\\)"
             },
             {
-              "explain": "Add 1 to both sides of the equation.",
-              "work": "\\\\(\\frac{2x}{3} = 6\\\\)"
+              "explain": "Add 1 to both sides to move the \\(-1\\) away from the fraction.",
+              "work": "\\(\\dfrac{2x}{3} = 5 + 1 = 6\\)"
             },
             {
               "explain": "Multiply both sides by 3 to clear the denominator.",
-              "work": "\\\\(2x = 18\\\\)"
+              "work": "\\(2x = 6 \\times 3 = 18\\)"
             },
             {
-              "explain": "Divide by 2 to solve for x.",
-              "work": "\\\\(x = 9\\\\)"
+              "explain": "Divide both sides by 2 to find \\(x\\). Check: \\(\\dfrac{2(9)}{3} - 1 = 6 - 1 = 5\\) ✓",
+              "work": "\\(x = \\dfrac{18}{2} = 9\\)"
             }
           ],
           "xp": 1,
           "keyPoints": [
             {
-              "text": "Solve the linear equation containing fractions: \\\\(\\\\frac{2x}{3} - 1 = 5\\\\)",
-              "note": "Multiply every term by the lowest common multiple of the numerical denominators, then solve the resulting linear equation."
+              "text": "linear equation containing fractions",
+              "note": "Multiply every term by the lowest common multiple of the denominators, or isolate the fraction first, then solve the resulting linear equation."
             }
           ]
         },

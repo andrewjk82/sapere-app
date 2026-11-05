@@ -9957,29 +9957,29 @@
           "difficulty": "hard",
           "stem": "A chemical blending vat contains \\( 180 \\) liters of a chemical solution with a concentration of \\( 12\\% \\) acid. If the technician wants to dilute it to a concentration of \\( 10\\% \\) acid, how many liters of pure water must be added?",
           "options": [
-            "\\(36.00\\)",
-            "\\(36.001\\)",
-            "\\(15.00\\)",
-            "\\(20.00\\)"
+            "\\(21.6\\text{ L}\\)",
+            "\\(36\\text{ L}\\)",
+            "\\(30\\text{ L}\\)",
+            "\\(3.6\\text{ L}\\)"
           ],
-          "answer": 0,
-          "solution": "0",
+          "answer": 1,
+          "solution": "Acid \\(= 0.12 \\times 180 = 21.6\\) L. Let \\(w\\) be the water added: \\(\\dfrac{21.6}{180 + w} = 0.10 \\Rightarrow 180 + w = 216 \\Rightarrow w = 36\\) L.",
           "steps": [
             {
-              "explain": "Formulate variables for the two investments.",
-              "work": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 11168\\)"
+              "explain": "Adding pure water does not change the amount of acid. Find the acid in the original \\(180\\) L at \\(12\\%\\).",
+              "work": "\\(\\text{Acid} = 12\\% \\times 180 = 0.12 \\times 180 = 21.6\\text{ L}\\)"
             },
             {
-              "explain": "Write down the interest equation.",
-              "work": "\\(\\frac{4}{100}x + \\frac{10}{100}y = 858.80\\ \\rightarrow\\ 4x + 10y = 85880\\)"
+              "explain": "Let \\(w\\) litres of water be added. The total volume becomes \\(180 + w\\), and the acid must make up \\(10\\%\\) of it.",
+              "work": "\\(\\dfrac{21.6}{180 + w} = 0.10\\)"
             },
             {
-              "explain": "Substitute the value of y into the interest equation.",
-              "work": "\\(4x + 10(11168 - x) = 85880\\)"
+              "explain": "Solve for \\(w\\): the new total volume must be \\(21.6 \\div 0.10\\).",
+              "work": "\\(180 + w = \\dfrac{21.6}{0.10} = 216\\)<br>\\(w = 216 - 180 = 36\\)"
             },
             {
-              "explain": "Solve the linear equation to find the value of x.",
-              "work": "\\(4x + 111680 - 10x = 85880 \\implies -6x = -25800 \\implies x = 4300\\)"
+              "explain": "Check: \\(21.6 \\div 216 = 0.10 = 10\\%\\) ✓. So \\(36\\) litres of water must be added.",
+              "work": "\\(w = 36\\text{ L}\\)"
             }
           ],
           "xp": 3,
@@ -9996,7 +9996,8 @@
               "text": "concentration",
               "note": "The amount of active substance stays fixed when water or inert material is added. Divide it by the new total volume/mass for the new concentration."
             }
-          ]
+          ],
+          "hint": "The amount of acid stays the same when you add water. Find it first, then use \\(\\dfrac{\\text{acid}}{\\text{new total}} = 10\\%\\)."
         },
         {
           "id": "y10-1b-high-q17",

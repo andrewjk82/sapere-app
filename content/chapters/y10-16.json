@@ -3853,24 +3853,24 @@
             "It is multiplied by 4"
           ],
           "answer": 0,
-          "hint": "Substitute \\(2d\\) into \\(F = \\frac{k m_1 m_2}{d^2}\\).",
-          "solution": "F = k m_1 m_2 / d^2\nIf d is doubled (d' = 2d):\nF' = k m_1 m_2 / (2d)^2 = k m_1 m_2 / 4d^2 = F / 4. It is divided by 4.",
+          "hint": "Write the relationship as \\(F = \\dfrac{k m_1 m_2}{d^2}\\), then replace \\(d\\) with \\(2d\\).",
+          "solution": "\\(F = \\dfrac{k m_1 m_2}{d^2}\\). If \\(d\\) is doubled, \\(F' = \\dfrac{k m_1 m_2}{(2d)^2} = \\dfrac{k m_1 m_2}{4d^2} = \\dfrac{F}{4}\\). So \\(F\\) is divided by 4.",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Proportionality in several variables: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-              "work": "\\(F = \\frac{k m_1 m_2}{d^2}\\)"
+              "explain": "\"Varies directly as the product of the masses\" means \\(F\\) is proportional to \\(m_1 m_2\\). \"Inversely as the square of the distance\" means \\(F\\) is proportional to \\(\\dfrac{1}{d^2}\\). Combine both with a constant \\(k\\).",
+              "work": "\\(F = \\dfrac{k\\,m_1 m_2}{d^2}\\)"
             },
             {
-              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-              "work": "\\(F' = \\frac{k m_1 m_2}{(2d)^2}\\)"
+              "explain": "The masses stay the same, only the distance changes. Replace \\(d\\) with \\(2d\\) everywhere it appears. Remember the whole \\(2d\\) is squared, not just the \\(d\\).",
+              "work": "\\(F' = \\dfrac{k\\,m_1 m_2}{(2d)^2}\\)"
             },
             {
-              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-              "work": "\\(F' = \\frac{k m_1 m_2}{4d^2} = \\frac{1}{4} F\\)"
+              "explain": "Square the bracket: \\((2d)^2 = 4d^2\\). Then pull out the original expression for \\(F\\).",
+              "work": "\\(F' = \\dfrac{k\\,m_1 m_2}{4d^2} = \\dfrac{1}{4}\\times\\dfrac{k\\,m_1 m_2}{d^2} = \\dfrac{1}{4}F\\)"
             },
             {
-              "explain": "Final answer: It is divided by 4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-              "work": "It is divided by 4"
+              "explain": "The new force is one quarter of the original, so \\(F\\) is divided by 4. A common mistake is to divide by 2, which forgets that the distance is squared.",
+              "work": "\\(F' = \\dfrac{F}{4}\\)"
             }
           ],
           "xp": 3

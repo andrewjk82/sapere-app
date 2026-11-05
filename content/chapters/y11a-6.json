@@ -10383,14 +10383,14 @@
           "id": "y11a-6d-q4h",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Use the trigonometric graphs to find the value of \\(\\tan 90^{\\circ}\\) (if it exists). If it does not exist, write 'undefined'.",
+          "stem": "Find the value of \\(\\tan 90^{\\circ}\\) (if it exists). If it does not exist, choose undefined.",
           "options": [
             "\\(-1\\)",
             "\\(1\\)",
             "\\(0\\)",
             "undefined"
           ],
-          "answer": 2,
+          "answer": 3,
           "hint": "Recall the asymptotes of the tangent graph.",
           "solution": "At \\(90^{\\circ}\\), the tangent function has a vertical asymptote, meaning it is undefined.",
           "steps": [
@@ -10398,22 +10398,12 @@
               "explain": "Find the coordinates on the unit circle for \\(90^{\\circ}\\).",
               "work": "At \\(90^{\\circ}\\), the point on the unit circle lies on the positive y-axis.<br>Its coordinates are \\((0, 1)\\).",
               "figure": {
-                "jsxGraph": {
-                  "width": 350,
-                  "height": 350,
-                  "boundingbox": [
-                    -1.5,
-                    1.5,
-                    1.5,
-                    -1.5
-                  ],
-                  "script": "board.suspendUpdate();\nboard.create('axis', [[0,0], [1,0]], {strokeColor:'#cbd5e1'});\nboard.create('axis', [[0,0], [0,1]], {strokeColor:'#cbd5e1'});\nboard.create('circle', [[0,0], 1], {strokeColor:'#e2e8f0', strokeWidth:1, dash:2});\nboard.create('segment', [[0,0], [6.123233995736766e-17, 1]], {strokeColor:'#3b82f6', strokeWidth:2});\nboard.create('point', [6.123233995736766e-17, 1], {name:'(0, 1)', size:3, color:'#ef4444', label:{offset:[10,10], color:'#ef4444', fontSize:14}});\nboard.unsuspendUpdate();"
-                }
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 340\" width=\"100%\" style=\"max-width:400px\"><line x1=\"20\" y1=\"170\" x2=\"340\" y2=\"170\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"180\" y1=\"320\" x2=\"180\" y2=\"20\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><circle cx=\"180\" cy=\"170\" r=\"120\" fill=\"#dbeafe\" fill-opacity=\"0.4\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"180\" y1=\"170\" x2=\"180\" y2=\"50\" stroke=\"#2563eb\" stroke-width=\"3\"/><circle cx=\"180\" cy=\"50\" r=\"5\" fill=\"#ef4444\"/><text x=\"192\" y=\"46\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"600\" fill=\"#ef4444\">(0, 1)</text><text x=\"344\" y=\"186\" font-family=\"system-ui\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">x</text><text x=\"190\" y=\"30\" font-family=\"system-ui\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">y</text><text x=\"196\" y=\"190\" font-family=\"system-ui\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\">90°</text></svg>"
               }
             },
             {
               "explain": "Determine the tangent value.",
-              "work": "Tangent is the ratio of the y-coordinate to the x-coordinate (\\(\\tan = \\frac{y}{x}\\)).<br>\\(\\tan 90^{\\circ} = \\frac{1}{0}\\).<br>Since division by zero is mathematically undefined, the value does not exist (undefined)."
+              "work": "Tangent is the ratio of the y-coordinate to the x-coordinate: \\(\\tan\\theta = \\dfrac{y}{x}\\).<br>\\(\\tan 90^{\\circ} = \\dfrac{1}{0}\\).<br>Division by zero is not defined, so \\(\\tan 90^{\\circ}\\) does not exist (undefined)."
             }
           ],
           "timeLimit": 60,

@@ -4250,24 +4250,24 @@
           "solution": "Add the two equations to eliminate \\( y \\):\n\\( (3x - y) + (4x + y) = 5 + 16 \\implies 7x = 21 \\implies x = 3 \\).\nSubstitute \\( x = 3 \\) into the second equation:\n\\( 4(3) + y = 16 \\implies 12 + y = 16 \\implies y = 4 \\).\nThus, \\( x = 3, \\; y = 4 \\).",
           "steps": [
             {
-              "explain": "Step 1: Label the given equations.",
+              "explain": "Label the two equations. The \\(y\\) terms are \\(-y\\) and \\(+y\\), so adding will eliminate \\(y\\).",
               "work": "Equation (1): \\(3x - y = 5\\)<br>Equation (2): \\(4x + y = 16\\)"
             },
             {
-              "explain": "Step 2: Add the equations to eliminate \\(y\\).",
-              "work": "\\((3x - y = 5) + (4x + y = 16)\\)"
+              "explain": "Add the left sides and add the right sides.",
+              "work": "\\((3x - y) + (4x + y) = 5 + 16\\)<br>\\(7x = 21\\)"
             },
             {
-              "explain": "Step 3: Solve the resulting equation for \\(x\\).",
-              "work": "\\(7x = 21 \\implies x = 3\\)"
+              "explain": "Divide both sides by 7 to find \\(x\\).",
+              "work": "\\(x = 3\\)"
             },
             {
-              "explain": "Step 4: Substitute \\(x = 3\\) into Equation (1) to solve for \\(y\\).",
-              "work": "\\(3(3) - y = 5\\) \\(\\implies y = 4\\)"
+              "explain": "Substitute \\(x = 3\\) into Equation (1) to find \\(y\\).",
+              "work": "\\(3(3) - y = 5\\)<br>\\(9 - y = 5 \\Rightarrow y = 4\\)"
             },
             {
-              "explain": "Step 5: State the final solution.",
-              "work": "\\(x = 3, \\; y = 4\\)"
+              "explain": "State the solution. Check in Equation (2): \\(4(3) + 4 = 16\\) ✓",
+              "work": "\\(x = 3,; y = 4\\)"
             }
           ],
           "timeLimit": 90,
@@ -5605,28 +5605,24 @@
           "solution": "Multiply the first equation by 2:\n\\( 2x - 4y = 2 \\).\nSubtract this from the second equation:\n\\( (3x - 4y) - (2x - 4y) = 5 - 2 \\implies x = 3 \\).\nSubstitute \\( x = 3 \\) into the first equation:\n\\( 3 - 2y = 1 \\implies 2y = 2 \\implies y = 1 \\).\nThus, \\( x = 3, \\; y = 1 \\).",
           "steps": [
             {
-              "explain": "Step 1: Label the given equations.",
+              "explain": "Label the two equations.",
               "work": "Equation (1): \\(x - 2y = 1\\)<br>Equation (2): \\(3x - 4y = 5\\)"
             },
             {
-              "explain": "Step 2: Multiply to align the coefficients.",
-              "work": "Multiply Equation (1) by 3: \\(3x - 6y = 3\\)"
+              "explain": "Multiply Equation (1) by 2 so the \\(y\\)-coefficients match (both \\(-4y\\)).",
+              "work": "\\(2x - 4y = 2\\)  (call this Equation (3))"
             },
             {
-              "explain": "Step 3: Subtract the equations to eliminate \\(x\\).",
-              "work": "\\((3x - 4y = 5) - (3x - 6y = 3)\\)"
+              "explain": "Subtract Equation (3) from Equation (2). The \\(y\\) terms cancel.",
+              "work": "\\((3x - 4y) - (2x - 4y) = 5 - 2\\)<br>\\(x = 3\\)"
             },
             {
-              "explain": "Step 4: Solve the resulting equation for \\(y\\).",
-              "work": "\\(2y = 2 \\implies y = 1\\)"
+              "explain": "Substitute \\(x = 3\\) into Equation (1) to find \\(y\\).",
+              "work": "\\(3 - 2y = 1\\)<br>\\(2y = 2 \\Rightarrow y = 1\\)"
             },
             {
-              "explain": "Step 5: Substitute \\(y = 1\\) into Equation (1) to solve for \\(x\\).",
-              "work": "\\(x - 2(1) = 1\\) \\(\\implies x = 3\\)"
-            },
-            {
-              "explain": "Step 6: State the final solution.",
-              "work": "\\(x = 3, \\; y = 1\\)"
+              "explain": "State the solution. Check in Equation (2): \\(3(3) - 4(1) = 5\\) ✓",
+              "work": "\\(x = 3,; y = 1\\)"
             }
           ],
           "timeLimit": 90,
