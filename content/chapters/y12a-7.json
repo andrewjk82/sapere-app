@@ -916,7 +916,7 @@
           "id": "y12a-advanced-003-app-q15",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "The displacement of a particle moving along the x-axis is given by x = t³/3 − 2t² + 3t, where x is the displacement from the origin in metres and t is the time in seconds, for t ≥ 0.",
+          "stem": "The displacement of a particle moving along the \\(x\\)-axis is given by \\(x=\\dfrac{t^3}{3}-2t^2+3t\\), where \\(x\\) is the displacement from the origin in metres and \\(t\\) is the time in seconds, for \\(t\\ge0\\).",
           "parts": [
             {
               "id": "y12a-advanced-003-app-y12a-advanced-003-app-q15-i",
@@ -925,27 +925,27 @@
               "stem": "What is the initial velocity of the particle?",
               "options": [
                 {
-                  "text": "3 m/s"
+                  "text": "\\(3\\text{ m/s}\\)"
                 },
                 {
-                  "text": "0 m/s"
+                  "text": "\\(0\\text{ m/s}\\)"
                 },
                 {
-                  "text": "−2 m/s"
+                  "text": "\\(-2\\text{ m/s}\\)"
                 },
                 {
-                  "text": "1 m/s"
+                  "text": "\\(1\\text{ m/s}\\)"
                 }
               ],
               "answer": 0,
-              "hint": "Velocity is dx/dt. Differentiate the displacement formula and substitute t=0.",
+              "hint": "Velocity is \\(\\dfrac{dx}{dt}\\). Differentiate the displacement formula and substitute \\(t=0\\).",
               "steps": [
                 {
-                  "explain": "Differentiate each term in x=t³/3−2t²+3t.",
+                  "explain": "Differentiate each term in \\(x=\\dfrac{t^3}{3}-2t^2+3t\\).",
                   "work": "\\(v=\\frac{dx}{dt}=t^2-4t+3\\)"
                 },
                 {
-                  "explain": "The initial time is t=0. Substitute it into v.",
+                  "explain": "The initial time is \\(t=0\\). Substitute it into \\(v\\).",
                   "work": "\\(v(0)=0-0+3=3\\)"
                 },
                 {
@@ -963,23 +963,23 @@
               "stem": "At which times is the particle stationary?",
               "options": [
                 {
-                  "text": "t=1 s and t=3 s"
+                  "text": "\\(t=1\\text{ s and }t=3\\text{ s}\\)"
                 },
                 {
-                  "text": "t=0 s and t=4 s"
+                  "text": "\\(t=0\\text{ s and }t=4\\text{ s}\\)"
                 },
                 {
-                  "text": "t=2 s only"
+                  "text": "\\(t=2\\text{ s only}\\)"
                 },
                 {
-                  "text": "t=3 s only"
+                  "text": "\\(t=3\\text{ s only}\\)"
                 }
               ],
               "answer": 0,
-              "hint": "A particle is stationary when its velocity is zero. Factor the expression for v(t).",
+              "hint": "A particle is stationary when its velocity is zero. Factor the expression for \\(v(t)\\).",
               "steps": [
                 {
-                  "explain": "Use v(t)=t²−4t+3 from part (i).",
+                  "explain": "Use \\(v(t)=t^2-4t+3\\) from part (i).",
                   "work": "\\(v(t)=t^2-4t+3\\)"
                 },
                 {
@@ -987,7 +987,7 @@
                   "work": "\\(t^2-4t+3=(t-1)(t-3)=0\\Rightarrow t=1,3\\)"
                 },
                 {
-                  "explain": "Both times are allowed because t≥0.",
+                  "explain": "Both times are allowed because \\(t\\ge0\\).",
                   "work": "\\(\\boxed{t=1\\text{ s and }t=3\\text{ s}}\\)"
                 }
               ],
@@ -1001,23 +1001,23 @@
               "stem": "Find the position of the particle when the acceleration is zero.",
               "options": [
                 {
-                  "text": "\\(\frac23\text{ m}\\)"
+                  "text": "\\(\\frac23\\text{ m}\\)"
                 },
                 {
-                  "text": "\\(0\text{ m}\\)"
+                  "text": "\\(0\\text{ m}\\)"
                 },
                 {
-                  "text": "\\(2\text{ m}\\)"
+                  "text": "\\(2\\text{ m}\\)"
                 },
                 {
-                  "text": "\\(3\text{ m}\\)"
+                  "text": "\\(3\\text{ m}\\)"
                 }
               ],
               "answer": 0,
               "hint": "Differentiate velocity to get acceleration, find the time when it is zero, then substitute that time into x(t).",
               "steps": [
                 {
-                  "explain": "Differentiate v(t)=t²−4t+3.",
+                  "explain": "Differentiate \\(v(t)=t^2-4t+3\\).",
                   "work": "\\(a=\\frac{dv}{dt}=2t-4\\)"
                 },
                 {
@@ -1025,7 +1025,7 @@
                   "work": "\\(2t-4=0\\Rightarrow t=2\\text{ s}\\)"
                 },
                 {
-                  "explain": "Substitute t=2 into the displacement function.",
+                  "explain": "Substitute \\(t=2\\) into the displacement function.",
                   "work": "\\(x(2)=\\frac{2^3}{3}-2(2^2)+3(2)=\\frac83-8+6=\\frac23\\)"
                 },
                 {
