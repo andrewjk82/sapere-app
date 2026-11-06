@@ -22260,8 +22260,8 @@
         {
           "id": "hh2020-q31",
           "type": "multipart",
-          "difficulty": "hard",
           "stem": "Let \\(f(x) = 2e^{-x/5}\\) for \\(x \\ge 0\\). A right-angled triangle \\(OQP\\) has vertex \\(O\\) at the origin, vertex \\(Q\\) on the \\(x\\)-axis and vertex \\(P\\) on the graph of \\(f(x)\\), with coordinates \\((x,f(x))\\).",
+          "difficulty": "hard",
           "figure": {
             "svg": "fig:0f46261166"
           },
@@ -22290,8 +22290,7 @@
                   "explain": "Simplify.",
                   "work": "\\(A = xe^{-x/5}\\)"
                 }
-              ],
-              "xp": 4
+              ]
             },
             {
               "id": "hh2020-q31b",
@@ -22322,16 +22321,12 @@
                   "explain": "Substitute \\(x=5\\) into the area formula to find the maximum area.",
                   "work": "\\(A_{\\max} = 5e^{-5/5} = 5e^{-1}\\) units\\(^2\\)"
                 }
-              ],
-              "xp": 4
+              ]
             },
             {
               "id": "hh2020-q31c",
               "type": "mc",
               "stem": "(c) Let \\(S\\) be the point on the graph of \\(f(x)\\) on the \\(y\\)-axis, and let \\(T\\) be the point on the graph with \\(y\\)-coordinate \\(\\dfrac12\\). Find the exact area of the region bounded by the graph of \\(f(x)\\) and the line segment \\(ST\\).",
-              "figure": {
-                "svg": "fig:d004b4505f"
-              },
               "options": [
                 "\\(\\dfrac{15}{2}\\) units\\(^2\\)",
                 "\\(\\left(\\dfrac{25}{4}\\ln4+\\dfrac{15}{2}\\right)\\) units\\(^2\\)",
@@ -22364,16 +22359,15 @@
                   "explain": "Subtract the integral from the trapezium area.",
                   "work": "\\(A = \\dfrac{25}{4}\\ln4-\\dfrac{15}{2}\\) units\\(^2\\)"
                 }
-              ],
-              "xp": 4
+              ]
             }
           ],
-          "manual": true,
           "meta": {
             "source": "Hunters Hill HS 2020 2U Trials",
             "school": "Hunters Hill High School",
             "examType": "Trial HSC",
-            "grade": "12"
+            "grade": "12",
+            "origin": "teacher"
           }
         },
         {
