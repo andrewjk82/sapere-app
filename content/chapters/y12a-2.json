@@ -23017,37 +23017,43 @@
           "id": "y12a-advanced-003-app-q13",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "A new straight road is to be built joining these roads and passing through P. Points A and B on the access roads are to be chosen to minimise the distance, D km, from A to B. Let the distance QA be x km.",
+          "stem": "Two straight access roads meet at right angles at \\(R\\). A point \\(P\\) is \\(1\\) km from one road and \\(8\\) km from the other, and \\(Q\\) is the foot of the perpendicular from \\(P\\) to road \\(RA\\), so \\(PQ=1\\) km and \\(RQ=8\\) km. A new straight road is to be built joining the two access roads and passing through \\(P\\). Points \\(A\\) and \\(B\\) on the access roads are to be chosen to minimise the distance, \\(D\\) km, from \\(A\\) to \\(B\\). Let the distance \\(QA\\) be \\(x\\) km.",
           "parts": [
             {
               "id": "y12a-advanced-003-app-y12a-advanced-003-app-q13-i",
               "type": "review",
               "difficulty": "medium",
-              "stem": "Show that D² = (x + 8)² + (8/x + 1)².",
-              "answer": "D²=(x+8)²+(8/x+1)².",
+              "stem": "Show that \\(D^2 = (x + 8)^2 + \\left(\\dfrac{8}{x} + 1\\right)^2\\).",
+              "answer": "\\(D^2=(x+8)^2+\\left(\\dfrac{8}{x}+1\\right)^2\\)",
               "manual": true,
               "hint": "Use the straight-line alignment through A, P and B. Similar right triangles give the vertical rise from R to B.",
               "steps": [
                 {
-                  "explain": "The total horizontal distance from A to B is QA+RP=x+8 km.",
-                  "work": "\\(\\text{horizontal separation}=x+8\\)",
+                  "explain": "The orange bracket shows the total horizontal distance from \\(R\\) to \\(A\\): \\(RQ=8\\) plus \\(QA=x\\).",
+                  "work": "\\(RA=RQ+QA=x+8\\)",
                   "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 460 300\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 220H420M90 252V35\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M90 92L388 220\" stroke=\"#475569\" stroke-width=\"2.5\"/><path d=\"M90 92V220H388M330 194V220\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.8\"/><path d=\"M90 207H103V220M330 207H343V220\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"90\" cy=\"92\" r=\"4\" fill=\"#334155\"/><circle cx=\"330\" cy=\"194\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"388\" cy=\"220\" r=\"4\" fill=\"#334155\"/><text x=\"73\" y=\"88\" font-family=\"Arial\" font-size=\"13\">B</text><text x=\"77\" y=\"237\" font-family=\"Arial\" font-size=\"13\">R</text><text x=\"325\" y=\"189\" font-family=\"Arial\" font-size=\"13\">P</text><text x=\"321\" y=\"241\" font-family=\"Arial\" font-size=\"13\">Q</text><text x=\"392\" y=\"239\" font-family=\"Arial\" font-size=\"13\">A</text><text x=\"185\" y=\"244\" font-family=\"Arial\" font-size=\"12\">8 km</text><text x=\"339\" y=\"216\" font-family=\"Arial\" font-size=\"12\">1 km</text><text x=\"354\" y=\"237\" font-family=\"Arial\" font-size=\"12\">x km</text><text x=\"407\" y=\"216\" font-family=\"Arial\" font-size=\"13\">river</text><text x=\"40\" y=\"224\" font-family=\"Arial\" font-size=\"13\">C</text></svg>"
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 460 315\" style=\"max-width:460px\"><rect width=\"460\" height=\"315\" fill=\"white\"/><path d=\"M40 250H420M70 275V25\" stroke=\"#94a3b8\" stroke-width=\"6\" stroke-linecap=\"round\"/><path d=\"M70 147L378 250\" stroke=\"#475569\" stroke-width=\"3\"/><path d=\"M294 222V250\" stroke=\"#64748b\" stroke-width=\"1.8\"/><circle cx=\"70\" cy=\"147\" r=\"4\" fill=\"#334155\"/><circle cx=\"70\" cy=\"250\" r=\"4\" fill=\"#334155\"/><circle cx=\"294\" cy=\"222\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"294\" cy=\"250\" r=\"4\" fill=\"#334155\"/><circle cx=\"378\" cy=\"250\" r=\"4\" fill=\"#334155\"/><path d=\"M70 288H378\" stroke=\"#ea580c\" stroke-width=\"3\"/><path d=\"M70 280V296M378 280V296\" stroke=\"#ea580c\" stroke-width=\"2\"/><path d=\"M70 236H84V250\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.3\"/><text x=\"52\" y=\"151\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\" >B</text><text x=\"54\" y=\"270\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\" >R</text><text x=\"302\" y=\"214\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\" >P</text><text x=\"294\" y=\"270\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\" >Q</text><text x=\"382\" y=\"270\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\" >A</text><text x=\"224\" y=\"306\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\" fill=\"#b45309\" >RA = RQ + QA = 8 + x  (horizontal separation)</text></svg>"
                   }
                 },
                 {
-                  "explain": "Because A, P and B lie on one straight road, the small right triangle with rise PQ=1 and run QA=x is similar to the larger one with run RP=8 and rise RB.",
-                  "work": "\\(\\frac{RB}{8}=\\frac{1}{x}\\Rightarrow RB=\\frac8x\\)"
-                },
-                {
-                  "explain": "The total vertical separation between A and B is RB+PQ=8/x+1.",
-                  "work": "\\(\\text{vertical separation}=\\frac8x+1\\)"
-                },
-                {
-                  "explain": "Apply Pythagoras to the right triangle whose legs are the horizontal and vertical separations.",
-                  "work": "\\(D^2=(x+8)^2+(\\frac8x+1)^2\\)",
+                  "explain": "Let \\(S\\) be the point on \\(RB\\) level with \\(P\\), so \\(SP=RQ=8\\) and \\(RS=PQ=1\\). Because \\(A\\), \\(P\\) and \\(B\\) lie on one straight road, the small yellow triangle \\(PQA\\) (rise \\(1\\), run \\(x\\)) is similar to the blue triangle \\(BSP\\) (run \\(8\\), rise \\(SB\\)).",
+                  "work": "\\(\\dfrac{SB}{8}=\\dfrac{1}{x}\\Rightarrow SB=\\dfrac{8}{x}\\)",
                   "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 460 300\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 220H420M90 252V35\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M90 92L388 220\" stroke=\"#475569\" stroke-width=\"2.5\"/><path d=\"M90 92V220H388M330 194V220\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.8\"/><path d=\"M90 207H103V220M330 207H343V220\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"90\" cy=\"92\" r=\"4\" fill=\"#334155\"/><circle cx=\"330\" cy=\"194\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"388\" cy=\"220\" r=\"4\" fill=\"#334155\"/><text x=\"73\" y=\"88\" font-family=\"Arial\" font-size=\"13\">B</text><text x=\"77\" y=\"237\" font-family=\"Arial\" font-size=\"13\">R</text><text x=\"325\" y=\"189\" font-family=\"Arial\" font-size=\"13\">P</text><text x=\"321\" y=\"241\" font-family=\"Arial\" font-size=\"13\">Q</text><text x=\"392\" y=\"239\" font-family=\"Arial\" font-size=\"13\">A</text><text x=\"185\" y=\"244\" font-family=\"Arial\" font-size=\"12\">8 km</text><text x=\"339\" y=\"216\" font-family=\"Arial\" font-size=\"12\">1 km</text><text x=\"354\" y=\"237\" font-family=\"Arial\" font-size=\"12\">x km</text><text x=\"407\" y=\"216\" font-family=\"Arial\" font-size=\"13\">river</text><text x=\"40\" y=\"224\" font-family=\"Arial\" font-size=\"13\">C</text></svg>"
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 460 300\" style=\"max-width:460px\"><rect width=\"460\" height=\"300\" fill=\"white\"/><path d=\"M40 250H420M70 275V25\" stroke=\"#94a3b8\" stroke-width=\"6\" stroke-linecap=\"round\"/><path d=\"M294 222V250H378Z\" fill=\"#fde68a\" fill-opacity=\".8\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M70 222L70 147L294 222Z\" fill=\"#bfdbfe\" fill-opacity=\".8\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M70 147L378 250\" stroke=\"#475569\" stroke-width=\"3\"/><path d=\"M70 222H294\" stroke=\"#64748b\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><text x=\"62\" y=\"218\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\" >S</text><path d=\"M294 222V250\" stroke=\"#64748b\" stroke-width=\"1.8\"/><circle cx=\"70\" cy=\"147\" r=\"4\" fill=\"#334155\"/><circle cx=\"70\" cy=\"250\" r=\"4\" fill=\"#334155\"/><circle cx=\"294\" cy=\"222\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"294\" cy=\"250\" r=\"4\" fill=\"#334155\"/><circle cx=\"378\" cy=\"250\" r=\"4\" fill=\"#334155\"/><path d=\"M70 236H84V250\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.3\"/><text x=\"52\" y=\"151\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\" >B</text><text x=\"54\" y=\"270\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\" >R</text><text x=\"302\" y=\"214\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\" >P</text><text x=\"294\" y=\"270\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\" >Q</text><text x=\"382\" y=\"270\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\" >A</text><text x=\"180\" y=\"216\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\" fill=\"#1e293b\" >8 km</text><text x=\"288\" y=\"242\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"13\" fill=\"#1e293b\" >1 km</text><text x=\"336\" y=\"274\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\" fill=\"#1e293b\" >x km</text><text x=\"60\" y=\"189\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\" fill=\"#1d4ed8\" >SB = 8/x</text><path d=\"M62 222\" /><text x=\"236\" y=\"60\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"12\" fill=\"#92400e\" >small triangle PQA (yellow)</text><text x=\"236\" y=\"78\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"12\" fill=\"#1d4ed8\" >is similar to triangle BSP (blue):</text><text x=\"236\" y=\"96\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"13\" fill=\"#1e293b\" >SB / 8 = 1 / x</text></svg>"
+                  }
+                },
+                {
+                  "explain": "The total vertical separation is \\(RB=RS+SB\\), the green and purple parts of road \\(RB\\) in the diagram.",
+                  "work": "\\(RB=1+\\dfrac{8}{x}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 460 300\" style=\"max-width:460px\"><rect width=\"460\" height=\"300\" fill=\"white\"/><path d=\"M40 250H420M70 275V25\" stroke=\"#94a3b8\" stroke-width=\"6\" stroke-linecap=\"round\"/><path d=\"M70 147L378 250\" stroke=\"#475569\" stroke-width=\"3\"/><path d=\"M70 222H294\" stroke=\"#64748b\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><text x=\"62\" y=\"218\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\" >S</text><path d=\"M294 222V250\" stroke=\"#64748b\" stroke-width=\"1.8\"/><circle cx=\"70\" cy=\"147\" r=\"4\" fill=\"#334155\"/><circle cx=\"70\" cy=\"250\" r=\"4\" fill=\"#334155\"/><circle cx=\"294\" cy=\"222\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"294\" cy=\"250\" r=\"4\" fill=\"#334155\"/><circle cx=\"378\" cy=\"250\" r=\"4\" fill=\"#334155\"/><path d=\"M70 222V250\" stroke=\"#16a34a\" stroke-width=\"6\"/><path d=\"M70 147V222\" stroke=\"#7c3aed\" stroke-width=\"6\"/><path d=\"M70 236H84V250\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.3\"/><text x=\"52\" y=\"151\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\" >B</text><text x=\"54\" y=\"270\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\" >R</text><text x=\"302\" y=\"214\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\" >P</text><text x=\"294\" y=\"270\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\" >Q</text><text x=\"382\" y=\"270\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\" >A</text><text x=\"58\" y=\"243\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\" fill=\"#15803d\" >RS = 1</text><text x=\"58\" y=\"189\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\" fill=\"#6d28d9\" >SB = 8/x</text><text x=\"100\" y=\"24\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"13\" fill=\"#1e293b\" >RB = RS + SB = 1 + 8/x</text><text x=\"182\" y=\"274\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\" fill=\"#1e293b\" >8 km</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Triangle \\(BRA\\) is right-angled at \\(R\\) with legs \\(x+8\\) and \\(1+\\frac{8}{x}\\); \\(D\\) is its hypotenuse. Apply Pythagoras.",
+                  "work": "\\(D^2=(x+8)^2+\\left(\\dfrac{8}{x}+1\\right)^2\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 460 300\" style=\"max-width:460px\"><rect width=\"460\" height=\"300\" fill=\"white\"/><path d=\"M40 250H420M70 275V25\" stroke=\"#cbd5e1\" stroke-width=\"6\" stroke-linecap=\"round\"/><path d=\"M70 147V250H378Z\" fill=\"#e0e7ff\" fill-opacity=\".7\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M70 147L378 250\" stroke=\"#ea580c\" stroke-width=\"4\"/><circle cx=\"70\" cy=\"147\" r=\"4\" fill=\"#334155\"/><circle cx=\"70\" cy=\"250\" r=\"4\" fill=\"#334155\"/><circle cx=\"294\" cy=\"222\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"294\" cy=\"250\" r=\"4\" fill=\"#334155\"/><circle cx=\"378\" cy=\"250\" r=\"4\" fill=\"#334155\"/><path d=\"M70 236H84V250\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.3\"/><text x=\"52\" y=\"151\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\" >B</text><text x=\"54\" y=\"270\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\" >R</text><text x=\"302\" y=\"214\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\" >P</text><text x=\"294\" y=\"270\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\" >Q</text><text x=\"382\" y=\"270\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\" >A</text><text x=\"224\" y=\"272\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\" >x + 8</text><text x=\"52\" y=\"200\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"13\" fill=\"#1e293b\" >1 + 8/x</text><text x=\"250\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\" fill=\"#c2410c\" >D</text></svg>"
                   }
                 }
               ],
@@ -23058,19 +23064,19 @@
               "id": "y12a-advanced-003-app-y12a-advanced-003-app-q13-ii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Show that x = 2 gives the minimum value of D².",
+              "stem": "Show that \\(x = 2\\) gives the minimum value of \\(D^2\\).",
               "options": [
                 {
-                  "text": "At x=2, D² is a minimum."
+                  "text": "At \\(x=2\\), \\(D^2\\) is a minimum."
                 },
                 {
-                  "text": "At x=2, D² is a maximum."
+                  "text": "At \\(x=2\\), \\(D^2\\) is a maximum."
                 },
                 {
-                  "text": "The minimum occurs at x=8."
+                  "text": "The minimum occurs at \\(x=8\\)."
                 },
                 {
-                  "text": "The minimum occurs at x=1."
+                  "text": "The minimum occurs at \\(x=1\\)."
                 }
               ],
               "answer": 0,
@@ -23078,29 +23084,23 @@
               "steps": [
                 {
                   "explain": "Start with the expression from part (i) and differentiate.",
-                  "work": "\\(D^2=(x+8)^2+(\\frac8x+1)^2\\)",
-                  "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 460 300\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 220H420M90 252V35\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M90 92L388 220\" stroke=\"#475569\" stroke-width=\"2.5\"/><path d=\"M90 92V220H388M330 194V220\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.8\"/><path d=\"M90 207H103V220M330 207H343V220\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"90\" cy=\"92\" r=\"4\" fill=\"#334155\"/><circle cx=\"330\" cy=\"194\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"388\" cy=\"220\" r=\"4\" fill=\"#334155\"/><text x=\"73\" y=\"88\" font-family=\"Arial\" font-size=\"13\">B</text><text x=\"77\" y=\"237\" font-family=\"Arial\" font-size=\"13\">R</text><text x=\"325\" y=\"189\" font-family=\"Arial\" font-size=\"13\">P</text><text x=\"321\" y=\"241\" font-family=\"Arial\" font-size=\"13\">Q</text><text x=\"392\" y=\"239\" font-family=\"Arial\" font-size=\"13\">A</text><text x=\"185\" y=\"244\" font-family=\"Arial\" font-size=\"12\">8 km</text><text x=\"339\" y=\"216\" font-family=\"Arial\" font-size=\"12\">1 km</text><text x=\"354\" y=\"237\" font-family=\"Arial\" font-size=\"12\">x km</text><text x=\"407\" y=\"216\" font-family=\"Arial\" font-size=\"13\">river</text><text x=\"40\" y=\"224\" font-family=\"Arial\" font-size=\"13\">C</text></svg>"
-                  }
+                  "work": "\\(D^2=(x+8)^2+(\\frac8x+1)^2\\)"
                 },
                 {
                   "explain": "Differentiate each square using the chain rule.",
                   "work": "\\(\\frac{d(D^2)}{dx}=2(x+8)+2(\\frac8x+1)(-\\frac8{x^2})\\)"
                 },
                 {
-                  "explain": "Substitute x=2.",
+                  "explain": "Substitute \\(x=2\\).",
                   "work": "\\(2(10)+2(5)(-2)=20-20=0\\)"
                 },
                 {
-                  "explain": "The second derivative is positive at x=2 (indeed, D²''(2)=15), so this stationary value is a minimum.",
-                  "work": "\\(\\frac{d^2(D^2)}{dx^2}\\big|_{x=2}=30>0\\)"
+                  "explain": "The second derivative is positive at \\(x=2\\), so this stationary value is a minimum.",
+                  "work": "\\(\\dfrac{d^2(D^2)}{dx^2}=2+\\dfrac{32}{x^3}+\\dfrac{384}{x^4}\\Rightarrow 2+4+24=30>0\\)"
                 },
                 {
-                  "explain": "Therefore x=2 gives the minimum value of D².",
-                  "work": "\\(\\boxed{x=2\\text{ gives the minimum}}\\)",
-                  "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 460 300\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 220H420M90 252V35\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M90 92L388 220\" stroke=\"#475569\" stroke-width=\"2.5\"/><path d=\"M90 92V220H388M330 194V220\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.8\"/><path d=\"M90 207H103V220M330 207H343V220\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"90\" cy=\"92\" r=\"4\" fill=\"#334155\"/><circle cx=\"330\" cy=\"194\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"388\" cy=\"220\" r=\"4\" fill=\"#334155\"/><text x=\"73\" y=\"88\" font-family=\"Arial\" font-size=\"13\">B</text><text x=\"77\" y=\"237\" font-family=\"Arial\" font-size=\"13\">R</text><text x=\"325\" y=\"189\" font-family=\"Arial\" font-size=\"13\">P</text><text x=\"321\" y=\"241\" font-family=\"Arial\" font-size=\"13\">Q</text><text x=\"392\" y=\"239\" font-family=\"Arial\" font-size=\"13\">A</text><text x=\"185\" y=\"244\" font-family=\"Arial\" font-size=\"12\">8 km</text><text x=\"339\" y=\"216\" font-family=\"Arial\" font-size=\"12\">1 km</text><text x=\"354\" y=\"237\" font-family=\"Arial\" font-size=\"12\">x km</text><text x=\"407\" y=\"216\" font-family=\"Arial\" font-size=\"13\">river</text><text x=\"40\" y=\"224\" font-family=\"Arial\" font-size=\"13\">C</text></svg>"
-                  }
+                  "explain": "Therefore \\(x=2\\) gives the minimum value of \\(D^2\\).",
+                  "work": "\\(\\boxed{x=2\\text{ gives the minimum}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -23114,6 +23114,9 @@
             "page": "143-144, 145, 158",
             "course": "Advanced",
             "sourceQuestion": "13"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 460 300\" style=\"max-width:460px\"><rect width=\"460\" height=\"300\" fill=\"white\"/><path d=\"M40 250H420M70 275V25\" stroke=\"#94a3b8\" stroke-width=\"6\" stroke-linecap=\"round\"/><path d=\"M70 147L378 250\" stroke=\"#475569\" stroke-width=\"3\"/><path d=\"M294 222V250\" stroke=\"#64748b\" stroke-width=\"1.8\"/><circle cx=\"70\" cy=\"147\" r=\"4\" fill=\"#334155\"/><circle cx=\"70\" cy=\"250\" r=\"4\" fill=\"#334155\"/><circle cx=\"294\" cy=\"222\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"294\" cy=\"250\" r=\"4\" fill=\"#334155\"/><circle cx=\"378\" cy=\"250\" r=\"4\" fill=\"#334155\"/><path d=\"M70 236H84V250\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.3\"/><text x=\"52\" y=\"151\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\" >B</text><text x=\"54\" y=\"270\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\" >R</text><text x=\"302\" y=\"214\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\" >P</text><text x=\"294\" y=\"270\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\" >Q</text><text x=\"382\" y=\"270\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\" >A</text><text x=\"182\" y=\"274\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\" fill=\"#1e293b\" >8 km</text><text x=\"336\" y=\"274\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\" fill=\"#1e293b\" >x km</text><text x=\"288\" y=\"242\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"13\" fill=\"#1e293b\" >1 km</text><text x=\"430\" y=\"255\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"13\" fill=\"#64748b\" >road</text><text x=\"80\" y=\"24\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"13\" fill=\"#64748b\" >road</text></svg>"
           }
         },
         {
