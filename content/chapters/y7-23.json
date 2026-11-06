@@ -59873,7 +59873,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 4=4;\\quad 2\times 2=4,\\quad 2+2=4\\;\\ v^{2} + 4 v + 4 = \\left(v + 2\\right)^{2}\\)"
+              "work": "\\(1\\cdot 4=4;\\quad 2\\times 2=4,\\quad 2+2=4\\;\\ v^{2} + 4 v + 4 = \\left(v + 2\\right)^{2}\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -59917,7 +59917,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 90=90;\\quad 9\times 10=90,\\quad 9+10=19\\;\\ t^{2} + 19 t + 90 = \\left(t + 9\\right) \\left(t + 10\\right)\\)"
+              "work": "\\(1\\cdot 90=90;\\quad 9\\times 10=90,\\quad 9+10=19\\;\\ t^{2} + 19 t + 90 = \\left(t + 9\\right) \\left(t + 10\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -59961,7 +59961,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 26=26;\\quad 2\times 13=26,\\quad 2+13=15\\;\\ w^{2} + 15 w + 26 = \\left(w + 2\\right) \\left(w + 13\\right)\\)"
+              "work": "\\(1\\cdot 26=26;\\quad 2\\times 13=26,\\quad 2+13=15\\;\\ w^{2} + 15 w + 26 = \\left(w + 2\\right) \\left(w + 13\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -60005,7 +60005,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot -39=-39;\\quad -3\times 13=-39,\\quad -3+13=10\\;\\ v^{2} + 10 v - 39 = \\left(v - 3\\right) \\left(v + 13\\right)\\)"
+              "work": "\\(1\\cdot -39=-39;\\quad -3\\times 13=-39,\\quad -3+13=10\\;\\ v^{2} + 10 v - 39 = \\left(v - 3\\right) \\left(v + 13\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -60049,7 +60049,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 132=132;\\quad 11\times 12=132,\\quad 11+12=23\\;\\ v^{2} + 23 v + 132 = \\left(v + 11\\right) \\left(v + 12\\right)\\)"
+              "work": "\\(1\\cdot 132=132;\\quad 11\\times 12=132,\\quad 11+12=23\\;\\ v^{2} + 23 v + 132 = \\left(v + 11\\right) \\left(v + 12\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -60093,7 +60093,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot -80=-80;\\quad -8\times 10=-80,\\quad -8+10=2\\;\\ u^{2} + 2 u - 80 = \\left(u - 8\\right) \\left(u + 10\\right)\\)"
+              "work": "\\(1\\cdot -80=-80;\\quad -8\\times 10=-80,\\quad -8+10=2\\;\\ u^{2} + 2 u - 80 = \\left(u - 8\\right) \\left(u + 10\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -60137,7 +60137,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 40=40;\\quad 5\times 8=40,\\quad 5+8=13\\;\\ w^{2} + 13 w + 40 = \\left(w + 5\\right) \\left(w + 8\\right)\\)"
+              "work": "\\(1\\cdot 40=40;\\quad 5\\times 8=40,\\quad 5+8=13\\;\\ w^{2} + 13 w + 40 = \\left(w + 5\\right) \\left(w + 8\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -60181,7 +60181,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 70=70;\\quad 7\times 10=70,\\quad 7+10=17\\;\\ u^{2} + 17 u + 70 = \\left(u + 7\\right) \\left(u + 10\\right)\\)"
+              "work": "\\(1\\cdot 70=70;\\quad 7\\times 10=70,\\quad 7+10=17\\;\\ u^{2} + 17 u + 70 = \\left(u + 7\\right) \\left(u + 10\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -60225,7 +60225,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 48=48;\\quad 4\times 12=48,\\quad 4+12=16\\;\\ t^{2} + 16 t + 48 = \\left(t + 4\\right) \\left(t + 12\\right)\\)"
+              "work": "\\(1\\cdot 48=48;\\quad 4\\times 12=48,\\quad 4+12=16\\;\\ t^{2} + 16 t + 48 = \\left(t + 4\\right) \\left(t + 12\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -60269,7 +60269,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot -33=-33;\\quad -3\times 11=-33,\\quad -3+11=8\\;\\ u^{2} + 8 u - 33 = \\left(u - 3\\right) \\left(u + 11\\right)\\)"
+              "work": "\\(1\\cdot -33=-33;\\quad -3\\times 11=-33,\\quad -3+11=8\\;\\ u^{2} + 8 u - 33 = \\left(u - 3\\right) \\left(u + 11\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -60313,7 +60313,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 30=30;\\quad 5\times 6=30,\\quad 5+6=11\\;\\ u^{2} + 11 u + 30 = \\left(u + 5\\right) \\left(u + 6\\right)\\)"
+              "work": "\\(1\\cdot 30=30;\\quad 5\\times 6=30,\\quad 5+6=11\\;\\ u^{2} + 11 u + 30 = \\left(u + 5\\right) \\left(u + 6\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -60357,7 +60357,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 104=104;\\quad 8\times 13=104,\\quad 8+13=21\\;\\ u^{2} + 21 u + 104 = \\left(u + 8\\right) \\left(u + 13\\right)\\)"
+              "work": "\\(1\\cdot 104=104;\\quad 8\\times 13=104,\\quad 8+13=21\\;\\ u^{2} + 21 u + 104 = \\left(u + 8\\right) \\left(u + 13\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -60401,7 +60401,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 72=72;\\quad 8\times 9=72,\\quad 8+9=17\\;\\ t^{2} + 17 t + 72 = \\left(t + 8\\right) \\left(t + 9\\right)\\)"
+              "work": "\\(1\\cdot 72=72;\\quad 8\\times 9=72,\\quad 8+9=17\\;\\ t^{2} + 17 t + 72 = \\left(t + 8\\right) \\left(t + 9\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -60445,7 +60445,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 39=39;\\quad 3\times 13=39,\\quad 3+13=16\\;\\ u^{2} + 16 u + 39 = \\left(u + 3\\right) \\left(u + 13\\right)\\)"
+              "work": "\\(1\\cdot 39=39;\\quad 3\\times 13=39,\\quad 3+13=16\\;\\ u^{2} + 16 u + 39 = \\left(u + 3\\right) \\left(u + 13\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -60489,7 +60489,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 132=132;\\quad 11\times 12=132,\\quad 11+12=23\\;\\ u^{2} + 23 u + 132 = \\left(u + 11\\right) \\left(u + 12\\right)\\)"
+              "work": "\\(1\\cdot 132=132;\\quad 11\\times 12=132,\\quad 11+12=23\\;\\ u^{2} + 23 u + 132 = \\left(u + 11\\right) \\left(u + 12\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -60533,7 +60533,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 60=60;\\quad 5\times 12=60,\\quad 5+12=17\\;\\ w^{2} + 17 w + 60 = \\left(w + 5\\right) \\left(w + 12\\right)\\)"
+              "work": "\\(1\\cdot 60=60;\\quad 5\\times 12=60,\\quad 5+12=17\\;\\ w^{2} + 17 w + 60 = \\left(w + 5\\right) \\left(w + 12\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -60577,7 +60577,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot -26=-26;\\quad -2\times 13=-26,\\quad -2+13=11\\;\\ w^{2} + 11 w - 26 = \\left(w - 2\\right) \\left(w + 13\\right)\\)"
+              "work": "\\(1\\cdot -26=-26;\\quad -2\\times 13=-26,\\quad -2+13=11\\;\\ w^{2} + 11 w - 26 = \\left(w - 2\\right) \\left(w + 13\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -60621,7 +60621,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 16=16;\\quad 2\times 8=16,\\quad 2+8=10\\;\\ u^{2} + 10 u + 16 = \\left(u + 2\\right) \\left(u + 8\\right)\\)"
+              "work": "\\(1\\cdot 16=16;\\quad 2\\times 8=16,\\quad 2+8=10\\;\\ u^{2} + 10 u + 16 = \\left(u + 2\\right) \\left(u + 8\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -60665,7 +60665,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 15=15;\\quad 3\times 5=15,\\quad 3+5=8\\;\\ v^{2} + 8 v + 15 = \\left(v + 3\\right) \\left(v + 5\\right)\\)"
+              "work": "\\(1\\cdot 15=15;\\quad 3\\times 5=15,\\quad 3+5=8\\;\\ v^{2} + 8 v + 15 = \\left(v + 3\\right) \\left(v + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -60709,7 +60709,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 24=24;\\quad 2\times 12=24,\\quad 2+12=14\\;\\ w^{2} + 14 w + 24 = \\left(w + 2\\right) \\left(w + 12\\right)\\)"
+              "work": "\\(1\\cdot 24=24;\\quad 2\\times 12=24,\\quad 2+12=14\\;\\ w^{2} + 14 w + 24 = \\left(w + 2\\right) \\left(w + 12\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -60753,7 +60753,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 48=48;\\quad 4\times 12=48,\\quad 4+12=16\\;\\ v^{2} + 16 v + 48 = \\left(v + 4\\right) \\left(v + 12\\right)\\)"
+              "work": "\\(1\\cdot 48=48;\\quad 4\\times 12=48,\\quad 4+12=16\\;\\ v^{2} + 16 v + 48 = \\left(v + 4\\right) \\left(v + 12\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -60797,7 +60797,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 72=72;\\quad 6\times 12=72,\\quad 6+12=18\\;\\ w^{2} + 18 w + 72 = \\left(w + 6\\right) \\left(w + 12\\right)\\)"
+              "work": "\\(1\\cdot 72=72;\\quad 6\\times 12=72,\\quad 6+12=18\\;\\ w^{2} + 18 w + 72 = \\left(w + 6\\right) \\left(w + 12\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -60841,7 +60841,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 40=40;\\quad 5\times 8=40,\\quad 5+8=13\\;\\ w^{2} + 13 w + 40 = \\left(w + 5\\right) \\left(w + 8\\right)\\)"
+              "work": "\\(1\\cdot 40=40;\\quad 5\\times 8=40,\\quad 5+8=13\\;\\ w^{2} + 13 w + 40 = \\left(w + 5\\right) \\left(w + 8\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -60885,7 +60885,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 78=78;\\quad 6\times 13=78,\\quad 6+13=19\\;\\ u^{2} + 19 u + 78 = \\left(u + 6\\right) \\left(u + 13\\right)\\)"
+              "work": "\\(1\\cdot 78=78;\\quad 6\\times 13=78,\\quad 6+13=19\\;\\ u^{2} + 19 u + 78 = \\left(u + 6\\right) \\left(u + 13\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -60929,7 +60929,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot -77=-77;\\quad -11\times 7=-77,\\quad -11+7=-4\\;\\ v^{2} - 4 v - 77 = \\left(v - 11\\right) \\left(v + 7\\right)\\)"
+              "work": "\\(1\\cdot -77=-77;\\quad -11\\times 7=-77,\\quad -11+7=-4\\;\\ v^{2} - 4 v - 77 = \\left(v - 11\\right) \\left(v + 7\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -60973,7 +60973,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 50=50;\\quad 5\times 10=50,\\quad 5+10=15\\;\\ u^{2} + 15 u + 50 = \\left(u + 5\\right) \\left(u + 10\\right)\\)"
+              "work": "\\(1\\cdot 50=50;\\quad 5\\times 10=50,\\quad 5+10=15\\;\\ u^{2} + 15 u + 50 = \\left(u + 5\\right) \\left(u + 10\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -61017,7 +61017,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 72=72;\\quad 6\times 12=72,\\quad 6+12=18\\;\\ w^{2} + 18 w + 72 = \\left(w + 6\\right) \\left(w + 12\\right)\\)"
+              "work": "\\(1\\cdot 72=72;\\quad 6\\times 12=72,\\quad 6+12=18\\;\\ w^{2} + 18 w + 72 = \\left(w + 6\\right) \\left(w + 12\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -61061,7 +61061,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 8=8;\\quad 2\times 4=8,\\quad 2+4=6\\;\\ v^{2} + 6 v + 8 = \\left(v + 2\\right) \\left(v + 4\\right)\\)"
+              "work": "\\(1\\cdot 8=8;\\quad 2\\times 4=8,\\quad 2+4=6\\;\\ v^{2} + 6 v + 8 = \\left(v + 2\\right) \\left(v + 4\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -61105,7 +61105,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 81=81;\\quad 9\times 9=81,\\quad 9+9=18\\;\\ w^{2} + 18 w + 81 = \\left(w + 9\\right)^{2}\\)"
+              "work": "\\(1\\cdot 81=81;\\quad 9\\times 9=81,\\quad 9+9=18\\;\\ w^{2} + 18 w + 81 = \\left(w + 9\\right)^{2}\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -61149,7 +61149,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 22=22;\\quad 2\times 11=22,\\quad 2+11=13\\;\\ v^{2} + 13 v + 22 = \\left(v + 2\\right) \\left(v + 11\\right)\\)"
+              "work": "\\(1\\cdot 22=22;\\quad 2\\times 11=22,\\quad 2+11=13\\;\\ v^{2} + 13 v + 22 = \\left(v + 2\\right) \\left(v + 11\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -61193,7 +61193,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 56=56;\\quad 7\times 8=56,\\quad 7+8=15\\;\\ w^{2} + 15 w + 56 = \\left(w + 7\\right) \\left(w + 8\\right)\\)"
+              "work": "\\(1\\cdot 56=56;\\quad 7\\times 8=56,\\quad 7+8=15\\;\\ w^{2} + 15 w + 56 = \\left(w + 7\\right) \\left(w + 8\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -61237,7 +61237,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 143=143;\\quad 11\times 13=143,\\quad 11+13=24\\;\\ w^{2} + 24 w + 143 = \\left(w + 11\\right) \\left(w + 13\\right)\\)"
+              "work": "\\(1\\cdot 143=143;\\quad 11\\times 13=143,\\quad 11+13=24\\;\\ w^{2} + 24 w + 143 = \\left(w + 11\\right) \\left(w + 13\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -61281,7 +61281,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot -143=-143;\\quad -13\times 11=-143,\\quad -13+11=-2\\;\\ v^{2} - 2 v - 143 = \\left(v - 13\\right) \\left(v + 11\\right)\\)"
+              "work": "\\(1\\cdot -143=-143;\\quad -13\\times 11=-143,\\quad -13+11=-2\\;\\ v^{2} - 2 v - 143 = \\left(v - 13\\right) \\left(v + 11\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -61325,7 +61325,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 77=77;\\quad 7\times 11=77,\\quad 7+11=18\\;\\ v^{2} + 18 v + 77 = \\left(v + 7\\right) \\left(v + 11\\right)\\)"
+              "work": "\\(1\\cdot 77=77;\\quad 7\\times 11=77,\\quad 7+11=18\\;\\ v^{2} + 18 v + 77 = \\left(v + 7\\right) \\left(v + 11\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -61369,7 +61369,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot -48=-48;\\quad -12\times 4=-48,\\quad -12+4=-8\\;\\ t^{2} - 8 t - 48 = \\left(t - 12\\right) \\left(t + 4\\right)\\)"
+              "work": "\\(1\\cdot -48=-48;\\quad -12\\times 4=-48,\\quad -12+4=-8\\;\\ t^{2} - 8 t - 48 = \\left(t - 12\\right) \\left(t + 4\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -61413,7 +61413,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 36=36;\\quad 3\times 12=36,\\quad 3+12=15\\;\\ w^{2} + 15 w + 36 = \\left(w + 3\\right) \\left(w + 12\\right)\\)"
+              "work": "\\(1\\cdot 36=36;\\quad 3\\times 12=36,\\quad 3+12=15\\;\\ w^{2} + 15 w + 36 = \\left(w + 3\\right) \\left(w + 12\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -61457,7 +61457,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 48=48;\\quad 6\times 8=48,\\quad 6+8=14\\;\\ w^{2} + 14 w + 48 = \\left(w + 6\\right) \\left(w + 8\\right)\\)"
+              "work": "\\(1\\cdot 48=48;\\quad 6\\times 8=48,\\quad 6+8=14\\;\\ w^{2} + 14 w + 48 = \\left(w + 6\\right) \\left(w + 8\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -61501,7 +61501,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 72=72;\\quad 8\times 9=72,\\quad 8+9=17\\;\\ t^{2} + 17 t + 72 = \\left(t + 8\\right) \\left(t + 9\\right)\\)"
+              "work": "\\(1\\cdot 72=72;\\quad 8\\times 9=72,\\quad 8+9=17\\;\\ t^{2} + 17 t + 72 = \\left(t + 8\\right) \\left(t + 9\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -61545,7 +61545,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 30=30;\\quad 3\times 10=30,\\quad 3+10=13\\;\\ v^{2} + 13 v + 30 = \\left(v + 3\\right) \\left(v + 10\\right)\\)"
+              "work": "\\(1\\cdot 30=30;\\quad 3\\times 10=30,\\quad 3+10=13\\;\\ v^{2} + 13 v + 30 = \\left(v + 3\\right) \\left(v + 10\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -61589,7 +61589,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot -80=-80;\\quad -8\times 10=-80,\\quad -8+10=2\\;\\ v^{2} + 2 v - 80 = \\left(v - 8\\right) \\left(v + 10\\right)\\)"
+              "work": "\\(1\\cdot -80=-80;\\quad -8\\times 10=-80,\\quad -8+10=2\\;\\ v^{2} + 2 v - 80 = \\left(v - 8\\right) \\left(v + 10\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -61633,7 +61633,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 10=10;\\quad 2\times 5=10,\\quad 2+5=7\\;\\ x^{2} + 7 x + 10 = \\left(x + 2\\right) \\left(x + 5\\right)\\)"
+              "work": "\\(1\\cdot 10=10;\\quad 2\\times 5=10,\\quad 2+5=7\\;\\ x^{2} + 7 x + 10 = \\left(x + 2\\right) \\left(x + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -61677,7 +61677,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 56=56;\\quad 7\times 8=56,\\quad 7+8=15\\;\\ x^{2} + 15 x + 56 = \\left(x + 7\\right) \\left(x + 8\\right)\\)"
+              "work": "\\(1\\cdot 56=56;\\quad 7\\times 8=56,\\quad 7+8=15\\;\\ x^{2} + 15 x + 56 = \\left(x + 7\\right) \\left(x + 8\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -61721,7 +61721,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 130=130;\\quad 10\times 13=130,\\quad 10+13=23\\;\\ v^{2} + 23 v + 130 = \\left(v + 10\\right) \\left(v + 13\\right)\\)"
+              "work": "\\(1\\cdot 130=130;\\quad 10\\times 13=130,\\quad 10+13=23\\;\\ v^{2} + 23 v + 130 = \\left(v + 10\\right) \\left(v + 13\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -61765,7 +61765,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 77=77;\\quad 7\times 11=77,\\quad 7+11=18\\;\\ x^{2} + 18 x + 77 = \\left(x + 7\\right) \\left(x + 11\\right)\\)"
+              "work": "\\(1\\cdot 77=77;\\quad 7\\times 11=77,\\quad 7+11=18\\;\\ x^{2} + 18 x + 77 = \\left(x + 7\\right) \\left(x + 11\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -61809,7 +61809,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 22=22;\\quad 2\times 11=22,\\quad 2+11=13\\;\\ t^{2} + 13 t + 22 = \\left(t + 2\\right) \\left(t + 11\\right)\\)"
+              "work": "\\(1\\cdot 22=22;\\quad 2\\times 11=22,\\quad 2+11=13\\;\\ t^{2} + 13 t + 22 = \\left(t + 2\\right) \\left(t + 11\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -61853,7 +61853,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot -48=-48;\\quad -4\times 12=-48,\\quad -4+12=8\\;\\ t^{2} + 8 t - 48 = \\left(t - 4\\right) \\left(t + 12\\right)\\)"
+              "work": "\\(1\\cdot -48=-48;\\quad -4\\times 12=-48,\\quad -4+12=8\\;\\ t^{2} + 8 t - 48 = \\left(t - 4\\right) \\left(t + 12\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -61897,7 +61897,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot -63=-63;\\quad -7\times 9=-63,\\quad -7+9=2\\;\\ w^{2} + 2 w - 63 = \\left(w - 7\\right) \\left(w + 9\\right)\\)"
+              "work": "\\(1\\cdot -63=-63;\\quad -7\\times 9=-63,\\quad -7+9=2\\;\\ w^{2} + 2 w - 63 = \\left(w - 7\\right) \\left(w + 9\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -61941,7 +61941,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot -12=-12;\\quad -2\times 6=-12,\\quad -2+6=4\\;\\ t^{2} + 4 t - 12 = \\left(t - 2\\right) \\left(t + 6\\right)\\)"
+              "work": "\\(1\\cdot -12=-12;\\quad -2\\times 6=-12,\\quad -2+6=4\\;\\ t^{2} + 4 t - 12 = \\left(t - 2\\right) \\left(t + 6\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -61985,7 +61985,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 143=143;\\quad 11\times 13=143,\\quad 11+13=24\\;\\ x^{2} + 24 x + 143 = \\left(x + 11\\right) \\left(x + 13\\right)\\)"
+              "work": "\\(1\\cdot 143=143;\\quad 11\\times 13=143,\\quad 11+13=24\\;\\ x^{2} + 24 x + 143 = \\left(x + 11\\right) \\left(x + 13\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -62029,7 +62029,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 21=21;\\quad 3\times 7=21,\\quad 3+7=10\\;\\ v^{2} + 10 v + 21 = \\left(v + 3\\right) \\left(v + 7\\right)\\)"
+              "work": "\\(1\\cdot 21=21;\\quad 3\\times 7=21,\\quad 3+7=10\\;\\ v^{2} + 10 v + 21 = \\left(v + 3\\right) \\left(v + 7\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -62073,7 +62073,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot -55=-55;\\quad -11\times 5=-55,\\quad -11+5=-6\\;\\ x^{2} - 6 x - 55 = \\left(x - 11\\right) \\left(x + 5\\right)\\)"
+              "work": "\\(1\\cdot -55=-55;\\quad -11\\times 5=-55,\\quad -11+5=-6\\;\\ x^{2} - 6 x - 55 = \\left(x - 11\\right) \\left(x + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -62117,7 +62117,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 96=96;\\quad 8\times 12=96,\\quad 8+12=20\\;\\ w^{2} + 20 w + 96 = \\left(w + 8\\right) \\left(w + 12\\right)\\)"
+              "work": "\\(1\\cdot 96=96;\\quad 8\\times 12=96,\\quad 8+12=20\\;\\ w^{2} + 20 w + 96 = \\left(w + 8\\right) \\left(w + 12\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -62161,7 +62161,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 48=48;\\quad 6\times 8=48,\\quad 6+8=14\\;\\ u^{2} + 14 u + 48 = \\left(u + 6\\right) \\left(u + 8\\right)\\)"
+              "work": "\\(1\\cdot 48=48;\\quad 6\\times 8=48,\\quad 6+8=14\\;\\ u^{2} + 14 u + 48 = \\left(u + 6\\right) \\left(u + 8\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -62205,7 +62205,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 55=55;\\quad 5\times 11=55,\\quad 5+11=16\\;\\ u^{2} + 16 u + 55 = \\left(u + 5\\right) \\left(u + 11\\right)\\)"
+              "work": "\\(1\\cdot 55=55;\\quad 5\\times 11=55,\\quad 5+11=16\\;\\ u^{2} + 16 u + 55 = \\left(u + 5\\right) \\left(u + 11\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -62249,7 +62249,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 36=36;\\quad 3\times 12=36,\\quad 3+12=15\\;\\ w^{2} + 15 w + 36 = \\left(w + 3\\right) \\left(w + 12\\right)\\)"
+              "work": "\\(1\\cdot 36=36;\\quad 3\\times 12=36,\\quad 3+12=15\\;\\ w^{2} + 15 w + 36 = \\left(w + 3\\right) \\left(w + 12\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -62293,7 +62293,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot -42=-42;\\quad -7\times 6=-42,\\quad -7+6=-1\\;\\ u^{2} - u - 42 = \\left(u - 7\\right) \\left(u + 6\\right)\\)"
+              "work": "\\(1\\cdot -42=-42;\\quad -7\\times 6=-42,\\quad -7+6=-1\\;\\ u^{2} - u - 42 = \\left(u - 7\\right) \\left(u + 6\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -62337,7 +62337,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 12=12;\\quad 3\times 4=12,\\quad 3+4=7\\;\\ u^{2} + 7 u + 12 = \\left(u + 3\\right) \\left(u + 4\\right)\\)"
+              "work": "\\(1\\cdot 12=12;\\quad 3\\times 4=12,\\quad 3+4=7\\;\\ u^{2} + 7 u + 12 = \\left(u + 3\\right) \\left(u + 4\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -62381,7 +62381,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot -20=-20;\\quad -10\times 2=-20,\\quad -10+2=-8\\;\\ w^{2} - 8 w - 20 = \\left(w - 10\\right) \\left(w + 2\\right)\\)"
+              "work": "\\(1\\cdot -20=-20;\\quad -10\\times 2=-20,\\quad -10+2=-8\\;\\ w^{2} - 8 w - 20 = \\left(w - 10\\right) \\left(w + 2\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -62425,7 +62425,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 28=28;\\quad 4\times 7=28,\\quad 4+7=11\\;\\ u^{2} + 11 u + 28 = \\left(u + 4\\right) \\left(u + 7\\right)\\)"
+              "work": "\\(1\\cdot 28=28;\\quad 4\\times 7=28,\\quad 4+7=11\\;\\ u^{2} + 11 u + 28 = \\left(u + 4\\right) \\left(u + 7\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -62469,7 +62469,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 130=130;\\quad 10\times 13=130,\\quad 10+13=23\\;\\ u^{2} + 23 u + 130 = \\left(u + 10\\right) \\left(u + 13\\right)\\)"
+              "work": "\\(1\\cdot 130=130;\\quad 10\\times 13=130,\\quad 10+13=23\\;\\ u^{2} + 23 u + 130 = \\left(u + 10\\right) \\left(u + 13\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -62513,7 +62513,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 110=110;\\quad 10\times 11=110,\\quad 10+11=21\\;\\ t^{2} + 21 t + 110 = \\left(t + 10\\right) \\left(t + 11\\right)\\)"
+              "work": "\\(1\\cdot 110=110;\\quad 10\\times 11=110,\\quad 10+11=21\\;\\ t^{2} + 21 t + 110 = \\left(t + 10\\right) \\left(t + 11\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -62557,7 +62557,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 64=64;\\quad 8\times 8=64,\\quad 8+8=16\\;\\ w^{2} + 16 w + 64 = \\left(w + 8\\right)^{2}\\)"
+              "work": "\\(1\\cdot 64=64;\\quad 8\\times 8=64,\\quad 8+8=16\\;\\ w^{2} + 16 w + 64 = \\left(w + 8\\right)^{2}\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -62601,7 +62601,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 156=156;\\quad 12\times 13=156,\\quad 12+13=25\\;\\ w^{2} + 25 w + 156 = \\left(w + 12\\right) \\left(w + 13\\right)\\)"
+              "work": "\\(1\\cdot 156=156;\\quad 12\\times 13=156,\\quad 12+13=25\\;\\ w^{2} + 25 w + 156 = \\left(w + 12\\right) \\left(w + 13\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -62645,7 +62645,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 156=156;\\quad 12\times 13=156,\\quad 12+13=25\\;\\ t^{2} + 25 t + 156 = \\left(t + 12\\right) \\left(t + 13\\right)\\)"
+              "work": "\\(1\\cdot 156=156;\\quad 12\\times 13=156,\\quad 12+13=25\\;\\ t^{2} + 25 t + 156 = \\left(t + 12\\right) \\left(t + 13\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -62689,7 +62689,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 48=48;\\quad 6\times 8=48,\\quad 6+8=14\\;\\ x^{2} + 14 x + 48 = \\left(x + 6\\right) \\left(x + 8\\right)\\)"
+              "work": "\\(1\\cdot 48=48;\\quad 6\\times 8=48,\\quad 6+8=14\\;\\ x^{2} + 14 x + 48 = \\left(x + 6\\right) \\left(x + 8\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -62733,7 +62733,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 80=80;\\quad 8\times 10=80,\\quad 8+10=18\\;\\ u^{2} + 18 u + 80 = \\left(u + 8\\right) \\left(u + 10\\right)\\)"
+              "work": "\\(1\\cdot 80=80;\\quad 8\\times 10=80,\\quad 8+10=18\\;\\ u^{2} + 18 u + 80 = \\left(u + 8\\right) \\left(u + 10\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -62777,7 +62777,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 56=56;\\quad 7\times 8=56,\\quad 7+8=15\\;\\ t^{2} + 15 t + 56 = \\left(t + 7\\right) \\left(t + 8\\right)\\)"
+              "work": "\\(1\\cdot 56=56;\\quad 7\\times 8=56,\\quad 7+8=15\\;\\ t^{2} + 15 t + 56 = \\left(t + 7\\right) \\left(t + 8\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -62821,7 +62821,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 72=72;\\quad 6\times 12=72,\\quad 6+12=18\\;\\ x^{2} + 18 x + 72 = \\left(x + 6\\right) \\left(x + 12\\right)\\)"
+              "work": "\\(1\\cdot 72=72;\\quad 6\\times 12=72,\\quad 6+12=18\\;\\ x^{2} + 18 x + 72 = \\left(x + 6\\right) \\left(x + 12\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -62865,7 +62865,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot -60=-60;\\quad -5\times 12=-60,\\quad -5+12=7\\;\\ x^{2} + 7 x - 60 = \\left(x - 5\\right) \\left(x + 12\\right)\\)"
+              "work": "\\(1\\cdot -60=-60;\\quad -5\\times 12=-60,\\quad -5+12=7\\;\\ x^{2} + 7 x - 60 = \\left(x - 5\\right) \\left(x + 12\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -62909,7 +62909,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 96=96;\\quad 8\times 12=96,\\quad 8+12=20\\;\\ u^{2} + 20 u + 96 = \\left(u + 8\\right) \\left(u + 12\\right)\\)"
+              "work": "\\(1\\cdot 96=96;\\quad 8\\times 12=96,\\quad 8+12=20\\;\\ u^{2} + 20 u + 96 = \\left(u + 8\\right) \\left(u + 12\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -62953,7 +62953,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 24=24;\\quad 3\times 8=24,\\quad 3+8=11\\;\\ t^{2} + 11 t + 24 = \\left(t + 3\\right) \\left(t + 8\\right)\\)"
+              "work": "\\(1\\cdot 24=24;\\quad 3\\times 8=24,\\quad 3+8=11\\;\\ t^{2} + 11 t + 24 = \\left(t + 3\\right) \\left(t + 8\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -62997,7 +62997,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot -84=-84;\\quad -7\times 12=-84,\\quad -7+12=5\\;\\ t^{2} + 5 t - 84 = \\left(t - 7\\right) \\left(t + 12\\right)\\)"
+              "work": "\\(1\\cdot -84=-84;\\quad -7\\times 12=-84,\\quad -7+12=5\\;\\ t^{2} + 5 t - 84 = \\left(t - 7\\right) \\left(t + 12\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -63041,7 +63041,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 24=24;\\quad 2\times 12=24,\\quad 2+12=14\\;\\ t^{2} + 14 t + 24 = \\left(t + 2\\right) \\left(t + 12\\right)\\)"
+              "work": "\\(1\\cdot 24=24;\\quad 2\\times 12=24,\\quad 2+12=14\\;\\ t^{2} + 14 t + 24 = \\left(t + 2\\right) \\left(t + 12\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -63085,7 +63085,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 55=55;\\quad 5\times 11=55,\\quad 5+11=16\\;\\ w^{2} + 16 w + 55 = \\left(w + 5\\right) \\left(w + 11\\right)\\)"
+              "work": "\\(1\\cdot 55=55;\\quad 5\\times 11=55,\\quad 5+11=16\\;\\ w^{2} + 16 w + 55 = \\left(w + 5\\right) \\left(w + 11\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -63129,7 +63129,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 52=52;\\quad 4\times 13=52,\\quad 4+13=17\\;\\ t^{2} + 17 t + 52 = \\left(t + 4\\right) \\left(t + 13\\right)\\)"
+              "work": "\\(1\\cdot 52=52;\\quad 4\\times 13=52,\\quad 4+13=17\\;\\ t^{2} + 17 t + 52 = \\left(t + 4\\right) \\left(t + 13\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -63173,7 +63173,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 96=96;\\quad 8\times 12=96,\\quad 8+12=20\\;\\ x^{2} + 20 x + 96 = \\left(x + 8\\right) \\left(x + 12\\right)\\)"
+              "work": "\\(1\\cdot 96=96;\\quad 8\\times 12=96,\\quad 8+12=20\\;\\ x^{2} + 20 x + 96 = \\left(x + 8\\right) \\left(x + 12\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -63217,7 +63217,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 108=108;\\quad 9\times 12=108,\\quad 9+12=21\\;\\ w^{2} + 21 w + 108 = \\left(w + 9\\right) \\left(w + 12\\right)\\)"
+              "work": "\\(1\\cdot 108=108;\\quad 9\\times 12=108,\\quad 9+12=21\\;\\ w^{2} + 21 w + 108 = \\left(w + 9\\right) \\left(w + 12\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -63261,7 +63261,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(-155\\cdot 0=0;\\quad -1\times 0=0,\\quad -1+0=-1\\;\\ - 155 x^{2} - x = - x \\left(155 x + 1\\right)\\)"
+              "work": "\\(-155\\cdot 0=0;\\quad -1\\times 0=0,\\quad -1+0=-1\\;\\ - 155 x^{2} - x = - x \\left(155 x + 1\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -63305,7 +63305,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 45=45;\\quad 5\times 9=45,\\quad 5+9=14\\;\\ w^{2} + 14 w + 45 = \\left(w + 5\\right) \\left(w + 9\\right)\\)"
+              "work": "\\(1\\cdot 45=45;\\quad 5\\times 9=45,\\quad 5+9=14\\;\\ w^{2} + 14 w + 45 = \\left(w + 5\\right) \\left(w + 9\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -63349,7 +63349,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 24=24;\\quad 2\times 12=24,\\quad 2+12=14\\;\\ w^{2} + 14 w + 24 = \\left(w + 2\\right) \\left(w + 12\\right)\\)"
+              "work": "\\(1\\cdot 24=24;\\quad 2\\times 12=24,\\quad 2+12=14\\;\\ w^{2} + 14 w + 24 = \\left(w + 2\\right) \\left(w + 12\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -63393,7 +63393,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot -143=-143;\\quad -11\times 13=-143,\\quad -11+13=2\\;\\ w^{2} + 2 w - 143 = \\left(w - 11\\right) \\left(w + 13\\right)\\)"
+              "work": "\\(1\\cdot -143=-143;\\quad -11\\times 13=-143,\\quad -11+13=2\\;\\ w^{2} + 2 w - 143 = \\left(w - 11\\right) \\left(w + 13\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -63437,7 +63437,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 70=70;\\quad 7\times 10=70,\\quad 7+10=17\\;\\ u^{2} + 17 u + 70 = \\left(u + 7\\right) \\left(u + 10\\right)\\)"
+              "work": "\\(1\\cdot 70=70;\\quad 7\\times 10=70,\\quad 7+10=17\\;\\ u^{2} + 17 u + 70 = \\left(u + 7\\right) \\left(u + 10\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -63481,7 +63481,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 12=12;\\quad 2\times 6=12,\\quad 2+6=8\\;\\ u^{2} + 8 u + 12 = \\left(u + 2\\right) \\left(u + 6\\right)\\)"
+              "work": "\\(1\\cdot 12=12;\\quad 2\\times 6=12,\\quad 2+6=8\\;\\ u^{2} + 8 u + 12 = \\left(u + 2\\right) \\left(u + 6\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -63525,7 +63525,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 8=8;\\quad 2\times 4=8,\\quad 2+4=6\\;\\ w^{2} + 6 w + 8 = \\left(w + 2\\right) \\left(w + 4\\right)\\)"
+              "work": "\\(1\\cdot 8=8;\\quad 2\\times 4=8,\\quad 2+4=6\\;\\ w^{2} + 6 w + 8 = \\left(w + 2\\right) \\left(w + 4\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -63569,7 +63569,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 36=36;\\quad 4\times 9=36,\\quad 4+9=13\\;\\ t^{2} + 13 t + 36 = \\left(t + 4\\right) \\left(t + 9\\right)\\)"
+              "work": "\\(1\\cdot 36=36;\\quad 4\\times 9=36,\\quad 4+9=13\\;\\ t^{2} + 13 t + 36 = \\left(t + 4\\right) \\left(t + 9\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -63613,7 +63613,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 91=91;\\quad 7\times 13=91,\\quad 7+13=20\\;\\ t^{2} + 20 t + 91 = \\left(t + 7\\right) \\left(t + 13\\right)\\)"
+              "work": "\\(1\\cdot 91=91;\\quad 7\\times 13=91,\\quad 7+13=20\\;\\ t^{2} + 20 t + 91 = \\left(t + 7\\right) \\left(t + 13\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -63657,7 +63657,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot -30=-30;\\quad -5\times 6=-30,\\quad -5+6=1\\;\\ t^{2} + t - 30 = \\left(t - 5\\right) \\left(t + 6\\right)\\)"
+              "work": "\\(1\\cdot -30=-30;\\quad -5\\times 6=-30,\\quad -5+6=1\\;\\ t^{2} + t - 30 = \\left(t - 5\\right) \\left(t + 6\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -63701,7 +63701,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 130=130;\\quad 10\times 13=130,\\quad 10+13=23\\;\\ u^{2} + 23 u + 130 = \\left(u + 10\\right) \\left(u + 13\\right)\\)"
+              "work": "\\(1\\cdot 130=130;\\quad 10\\times 13=130,\\quad 10+13=23\\;\\ u^{2} + 23 u + 130 = \\left(u + 10\\right) \\left(u + 13\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -63745,7 +63745,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 156=156;\\quad 12\times 13=156,\\quad 12+13=25\\;\\ u^{2} + 25 u + 156 = \\left(u + 12\\right) \\left(u + 13\\right)\\)"
+              "work": "\\(1\\cdot 156=156;\\quad 12\\times 13=156,\\quad 12+13=25\\;\\ u^{2} + 25 u + 156 = \\left(u + 12\\right) \\left(u + 13\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -63789,7 +63789,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 130=130;\\quad 10\times 13=130,\\quad 10+13=23\\;\\ x^{2} + 23 x + 130 = \\left(x + 10\\right) \\left(x + 13\\right)\\)"
+              "work": "\\(1\\cdot 130=130;\\quad 10\\times 13=130,\\quad 10+13=23\\;\\ x^{2} + 23 x + 130 = \\left(x + 10\\right) \\left(x + 13\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -63833,7 +63833,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 132=132;\\quad 11\times 12=132,\\quad 11+12=23\\;\\ x^{2} + 23 x + 132 = \\left(x + 11\\right) \\left(x + 12\\right)\\)"
+              "work": "\\(1\\cdot 132=132;\\quad 11\\times 12=132,\\quad 11+12=23\\;\\ x^{2} + 23 x + 132 = \\left(x + 11\\right) \\left(x + 12\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -63877,7 +63877,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 32=32;\\quad 4\times 8=32,\\quad 4+8=12\\;\\ v^{2} + 12 v + 32 = \\left(v + 4\\right) \\left(v + 8\\right)\\)"
+              "work": "\\(1\\cdot 32=32;\\quad 4\\times 8=32,\\quad 4+8=12\\;\\ v^{2} + 12 v + 32 = \\left(v + 4\\right) \\left(v + 8\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -63921,7 +63921,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 96=96;\\quad 8\times 12=96,\\quad 8+12=20\\;\\ t^{2} + 20 t + 96 = \\left(t + 8\\right) \\left(t + 12\\right)\\)"
+              "work": "\\(1\\cdot 96=96;\\quad 8\\times 12=96,\\quad 8+12=20\\;\\ t^{2} + 20 t + 96 = \\left(t + 8\\right) \\left(t + 12\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -63965,7 +63965,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 99=99;\\quad 9\times 11=99,\\quad 9+11=20\\;\\ t^{2} + 20 t + 99 = \\left(t + 9\\right) \\left(t + 11\\right)\\)"
+              "work": "\\(1\\cdot 99=99;\\quad 9\\times 11=99,\\quad 9+11=20\\;\\ t^{2} + 20 t + 99 = \\left(t + 9\\right) \\left(t + 11\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -64009,7 +64009,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 84=84;\\quad 7\times 12=84,\\quad 7+12=19\\;\\ x^{2} + 19 x + 84 = \\left(x + 7\\right) \\left(x + 12\\right)\\)"
+              "work": "\\(1\\cdot 84=84;\\quad 7\\times 12=84,\\quad 7+12=19\\;\\ x^{2} + 19 x + 84 = \\left(x + 7\\right) \\left(x + 12\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -64053,7 +64053,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 60=60;\\quad 6\times 10=60,\\quad 6+10=16\\;\\ u^{2} + 16 u + 60 = \\left(u + 6\\right) \\left(u + 10\\right)\\)"
+              "work": "\\(1\\cdot 60=60;\\quad 6\\times 10=60,\\quad 6+10=16\\;\\ u^{2} + 16 u + 60 = \\left(u + 6\\right) \\left(u + 10\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -64097,7 +64097,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 143=143;\\quad 11\times 13=143,\\quad 11+13=24\\;\\ w^{2} + 24 w + 143 = \\left(w + 11\\right) \\left(w + 13\\right)\\)"
+              "work": "\\(1\\cdot 143=143;\\quad 11\\times 13=143,\\quad 11+13=24\\;\\ w^{2} + 24 w + 143 = \\left(w + 11\\right) \\left(w + 13\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -64141,7 +64141,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 108=108;\\quad 9\times 12=108,\\quad 9+12=21\\;\\ v^{2} + 21 v + 108 = \\left(v + 9\\right) \\left(v + 12\\right)\\)"
+              "work": "\\(1\\cdot 108=108;\\quad 9\\times 12=108,\\quad 9+12=21\\;\\ v^{2} + 21 v + 108 = \\left(v + 9\\right) \\left(v + 12\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -64185,7 +64185,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 70=70;\\quad 7\times 10=70,\\quad 7+10=17\\;\\ u^{2} + 17 u + 70 = \\left(u + 7\\right) \\left(u + 10\\right)\\)"
+              "work": "\\(1\\cdot 70=70;\\quad 7\\times 10=70,\\quad 7+10=17\\;\\ u^{2} + 17 u + 70 = \\left(u + 7\\right) \\left(u + 10\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -64229,7 +64229,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 110=110;\\quad 10\times 11=110,\\quad 10+11=21\\;\\ w^{2} + 21 w + 110 = \\left(w + 10\\right) \\left(w + 11\\right)\\)"
+              "work": "\\(1\\cdot 110=110;\\quad 10\\times 11=110,\\quad 10+11=21\\;\\ w^{2} + 21 w + 110 = \\left(w + 10\\right) \\left(w + 11\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -64273,7 +64273,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 78=78;\\quad 6\times 13=78,\\quad 6+13=19\\;\\ u^{2} + 19 u + 78 = \\left(u + 6\\right) \\left(u + 13\\right)\\)"
+              "work": "\\(1\\cdot 78=78;\\quad 6\\times 13=78,\\quad 6+13=19\\;\\ u^{2} + 19 u + 78 = \\left(u + 6\\right) \\left(u + 13\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -64317,7 +64317,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 96=96;\\quad 8\times 12=96,\\quad 8+12=20\\;\\ u^{2} + 20 u + 96 = \\left(u + 8\\right) \\left(u + 12\\right)\\)"
+              "work": "\\(1\\cdot 96=96;\\quad 8\\times 12=96,\\quad 8+12=20\\;\\ u^{2} + 20 u + 96 = \\left(u + 8\\right) \\left(u + 12\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -64361,7 +64361,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 77=77;\\quad 7\times 11=77,\\quad 7+11=18\\;\\ u^{2} + 18 u + 77 = \\left(u + 7\\right) \\left(u + 11\\right)\\)"
+              "work": "\\(1\\cdot 77=77;\\quad 7\\times 11=77,\\quad 7+11=18\\;\\ u^{2} + 18 u + 77 = \\left(u + 7\\right) \\left(u + 11\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -64405,7 +64405,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot -44=-44;\\quad -4\times 11=-44,\\quad -4+11=7\\;\\ x^{2} + 7 x - 44 = \\left(x - 4\\right) \\left(x + 11\\right)\\)"
+              "work": "\\(1\\cdot -44=-44;\\quad -4\\times 11=-44,\\quad -4+11=7\\;\\ x^{2} + 7 x - 44 = \\left(x - 4\\right) \\left(x + 11\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -64449,7 +64449,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot -32=-32;\\quad -8\times 4=-32,\\quad -8+4=-4\\;\\ v^{2} - 4 v - 32 = \\left(v - 8\\right) \\left(v + 4\\right)\\)"
+              "work": "\\(1\\cdot -32=-32;\\quad -8\\times 4=-32,\\quad -8+4=-4\\;\\ v^{2} - 4 v - 32 = \\left(v - 8\\right) \\left(v + 4\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -64493,7 +64493,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 52=52;\\quad 4\times 13=52,\\quad 4+13=17\\;\\ x^{2} + 17 x + 52 = \\left(x + 4\\right) \\left(x + 13\\right)\\)"
+              "work": "\\(1\\cdot 52=52;\\quad 4\\times 13=52,\\quad 4+13=17\\;\\ x^{2} + 17 x + 52 = \\left(x + 4\\right) \\left(x + 13\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -64537,7 +64537,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 40=40;\\quad 5\times 8=40,\\quad 5+8=13\\;\\ w^{2} + 13 w + 40 = \\left(w + 5\\right) \\left(w + 8\\right)\\)"
+              "work": "\\(1\\cdot 40=40;\\quad 5\\times 8=40,\\quad 5+8=13\\;\\ w^{2} + 13 w + 40 = \\left(w + 5\\right) \\left(w + 8\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -64581,7 +64581,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 20=20;\\quad 2\times 10=20,\\quad 2+10=12\\;\\ t^{2} + 12 t + 20 = \\left(t + 2\\right) \\left(t + 10\\right)\\)"
+              "work": "\\(1\\cdot 20=20;\\quad 2\\times 10=20,\\quad 2+10=12\\;\\ t^{2} + 12 t + 20 = \\left(t + 2\\right) \\left(t + 10\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -64625,7 +64625,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 25=25;\\quad 5\times 5=25,\\quad 5+5=10\\;\\ u^{2} + 10 u + 25 = \\left(u + 5\\right)^{2}\\)"
+              "work": "\\(1\\cdot 25=25;\\quad 5\\times 5=25,\\quad 5+5=10\\;\\ u^{2} + 10 u + 25 = \\left(u + 5\\right)^{2}\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -64669,7 +64669,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 117=117;\\quad 9\times 13=117,\\quad 9+13=22\\;\\ v^{2} + 22 v + 117 = \\left(v + 9\\right) \\left(v + 13\\right)\\)"
+              "work": "\\(1\\cdot 117=117;\\quad 9\\times 13=117,\\quad 9+13=22\\;\\ v^{2} + 22 v + 117 = \\left(v + 9\\right) \\left(v + 13\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -64713,7 +64713,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 30=30;\\quad 3\times 10=30,\\quad 3+10=13\\;\\ t^{2} + 13 t + 30 = \\left(t + 3\\right) \\left(t + 10\\right)\\)"
+              "work": "\\(1\\cdot 30=30;\\quad 3\\times 10=30,\\quad 3+10=13\\;\\ t^{2} + 13 t + 30 = \\left(t + 3\\right) \\left(t + 10\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -64757,7 +64757,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 48=48;\\quad 6\times 8=48,\\quad 6+8=14\\;\\ x^{2} + 14 x + 48 = \\left(x + 6\\right) \\left(x + 8\\right)\\)"
+              "work": "\\(1\\cdot 48=48;\\quad 6\\times 8=48,\\quad 6+8=14\\;\\ x^{2} + 14 x + 48 = \\left(x + 6\\right) \\left(x + 8\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -64801,7 +64801,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 56=56;\\quad 7\times 8=56,\\quad 7+8=15\\;\\ w^{2} + 15 w + 56 = \\left(w + 7\\right) \\left(w + 8\\right)\\)"
+              "work": "\\(1\\cdot 56=56;\\quad 7\\times 8=56,\\quad 7+8=15\\;\\ w^{2} + 15 w + 56 = \\left(w + 7\\right) \\left(w + 8\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -64845,7 +64845,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot -52=-52;\\quad -4\times 13=-52,\\quad -4+13=9\\;\\ w^{2} + 9 w - 52 = \\left(w - 4\\right) \\left(w + 13\\right)\\)"
+              "work": "\\(1\\cdot -52=-52;\\quad -4\\times 13=-52,\\quad -4+13=9\\;\\ w^{2} + 9 w - 52 = \\left(w - 4\\right) \\left(w + 13\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -64889,7 +64889,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 15=15;\\quad 3\times 5=15,\\quad 3+5=8\\;\\ v^{2} + 8 v + 15 = \\left(v + 3\\right) \\left(v + 5\\right)\\)"
+              "work": "\\(1\\cdot 15=15;\\quad 3\\times 5=15,\\quad 3+5=8\\;\\ v^{2} + 8 v + 15 = \\left(v + 3\\right) \\left(v + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -64933,7 +64933,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 110=110;\\quad 10\times 11=110,\\quad 10+11=21\\;\\ w^{2} + 21 w + 110 = \\left(w + 10\\right) \\left(w + 11\\right)\\)"
+              "work": "\\(1\\cdot 110=110;\\quad 10\\times 11=110,\\quad 10+11=21\\;\\ w^{2} + 21 w + 110 = \\left(w + 10\\right) \\left(w + 11\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -64977,7 +64977,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 16=16;\\quad 2\times 8=16,\\quad 2+8=10\\;\\ w^{2} + 10 w + 16 = \\left(w + 2\\right) \\left(w + 8\\right)\\)"
+              "work": "\\(1\\cdot 16=16;\\quad 2\\times 8=16,\\quad 2+8=10\\;\\ w^{2} + 10 w + 16 = \\left(w + 2\\right) \\left(w + 8\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -65021,7 +65021,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 44=44;\\quad 4\times 11=44,\\quad 4+11=15\\;\\ u^{2} + 15 u + 44 = \\left(u + 4\\right) \\left(u + 11\\right)\\)"
+              "work": "\\(1\\cdot 44=44;\\quad 4\\times 11=44,\\quad 4+11=15\\;\\ u^{2} + 15 u + 44 = \\left(u + 4\\right) \\left(u + 11\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -65065,7 +65065,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(1\\cdot 99=99;\\quad 9\times 11=99,\\quad 9+11=20\\;\\ w^{2} + 20 w + 99 = \\left(w + 9\\right) \\left(w + 11\\right)\\)"
+              "work": "\\(1\\cdot 99=99;\\quad 9\\times 11=99,\\quad 9+11=20\\;\\ w^{2} + 20 w + 99 = \\left(w + 9\\right) \\left(w + 11\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -65153,7 +65153,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(10\\cdot 35=350;\\quad 10\times 35=350,\\quad 10+35=45\\;\\ 10 p^{2} + 45 p + 35 = 5 \\left(p + 1\\right) \\left(2 p + 7\\right)\\)"
+              "work": "\\(10\\cdot 35=350;\\quad 10\\times 35=350,\\quad 10+35=45\\;\\ 10 p^{2} + 45 p + 35 = 5 \\left(p + 1\\right) \\left(2 p + 7\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -65197,7 +65197,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(16\\cdot 36=576;\\quad 18\times 32=576,\\quad 18+32=50\\;\\ 16 v^{2} + 50 v + 36 = 2 \\left(v + 2\\right) \\left(8 v + 9\\right)\\)"
+              "work": "\\(16\\cdot 36=576;\\quad 18\\times 32=576,\\quad 18+32=50\\;\\ 16 v^{2} + 50 v + 36 = 2 \\left(v + 2\\right) \\left(8 v + 9\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -65241,7 +65241,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(36\\cdot 18=648;\\quad 18\times 36=648,\\quad 18+36=54\\;\\ 36 w^{2} + 54 w + 18 = 18 \\left(w + 1\\right) \\left(2 w + 1\\right)\\)"
+              "work": "\\(36\\cdot 18=648;\\quad 18\\times 36=648,\\quad 18+36=54\\;\\ 36 w^{2} + 54 w + 18 = 18 \\left(w + 1\\right) \\left(2 w + 1\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -65285,7 +65285,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(36\\cdot 72=2592;\\quad 32\times 81=2592,\\quad 32+81=113\\;\\ 36 r^{2} + 113 r + 72 = \\left(4 r + 9\\right) \\left(9 r + 8\\right)\\)"
+              "work": "\\(36\\cdot 72=2592;\\quad 32\\times 81=2592,\\quad 32+81=113\\;\\ 36 r^{2} + 113 r + 72 = \\left(4 r + 9\\right) \\left(9 r + 8\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -65329,7 +65329,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(15\\cdot 63=945;\\quad 21\times 45=945,\\quad 21+45=66\\;\\ 15 s^{2} + 66 s + 63 = 3 \\left(s + 3\\right) \\left(5 s + 7\\right)\\)"
+              "work": "\\(15\\cdot 63=945;\\quad 21\\times 45=945,\\quad 21+45=66\\;\\ 15 s^{2} + 66 s + 63 = 3 \\left(s + 3\\right) \\left(5 s + 7\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -65373,7 +65373,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(35\\cdot 24=840;\\quad 21\times 40=840,\\quad 21+40=61\\;\\ 35 u^{2} + 61 u + 24 = \\left(5 u + 3\\right) \\left(7 u + 8\\right)\\)"
+              "work": "\\(35\\cdot 24=840;\\quad 21\\times 40=840,\\quad 21+40=61\\;\\ 35 u^{2} + 61 u + 24 = \\left(5 u + 3\\right) \\left(7 u + 8\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -65417,7 +65417,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(81\\cdot 6=486;\\quad 18\times 27=486,\\quad 18+27=45\\;\\ 81 w^{2} + 45 w + 6 = 3 \\left(3 w + 1\\right) \\left(9 w + 2\\right)\\)"
+              "work": "\\(81\\cdot 6=486;\\quad 18\\times 27=486,\\quad 18+27=45\\;\\ 81 w^{2} + 45 w + 6 = 3 \\left(3 w + 1\\right) \\left(9 w + 2\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -65461,7 +65461,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(36\\cdot 48=1728;\\quad 36\times 48=1728,\\quad 36+48=84\\;\\ 36 t^{2} + 84 t + 48 = 12 \\left(t + 1\\right) \\left(3 t + 4\\right)\\)"
+              "work": "\\(36\\cdot 48=1728;\\quad 36\\times 48=1728,\\quad 36+48=84\\;\\ 36 t^{2} + 84 t + 48 = 12 \\left(t + 1\\right) \\left(3 t + 4\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -65505,7 +65505,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(16\\cdot 16=256;\\quad 8\times 32=256,\\quad 8+32=40\\;\\ 16 r^{2} + 40 r + 16 = 8 \\left(r + 2\\right) \\left(2 r + 1\\right)\\)"
+              "work": "\\(16\\cdot 16=256;\\quad 8\\times 32=256,\\quad 8+32=40\\;\\ 16 r^{2} + 40 r + 16 = 8 \\left(r + 2\\right) \\left(2 r + 1\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -65549,7 +65549,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(24\\cdot 64=1536;\\quad 32\times 48=1536,\\quad 32+48=80\\;\\ 24 t^{2} + 80 t + 64 = 8 \\left(t + 2\\right) \\left(3 t + 4\\right)\\)"
+              "work": "\\(24\\cdot 64=1536;\\quad 32\\times 48=1536,\\quad 32+48=80\\;\\ 24 t^{2} + 80 t + 64 = 8 \\left(t + 2\\right) \\left(3 t + 4\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -65593,7 +65593,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(12\\cdot 36=432;\\quad 12\times 36=432,\\quad 12+36=48\\;\\ 12 t^{2} + 48 t + 36 = 12 \\left(t + 1\\right) \\left(t + 3\\right)\\)"
+              "work": "\\(12\\cdot 36=432;\\quad 12\\times 36=432,\\quad 12+36=48\\;\\ 12 t^{2} + 48 t + 36 = 12 \\left(t + 1\\right) \\left(t + 3\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -65637,7 +65637,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(36\\cdot 30=1080;\\quad 20\times 54=1080,\\quad 20+54=74\\;\\ 36 w^{2} + 74 w + 30 = 2 \\left(2 w + 3\\right) \\left(9 w + 5\\right)\\)"
+              "work": "\\(36\\cdot 30=1080;\\quad 20\\times 54=1080,\\quad 20+54=74\\;\\ 36 w^{2} + 74 w + 30 = 2 \\left(2 w + 3\\right) \\left(9 w + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -65681,7 +65681,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(12\\cdot 35=420;\\quad 10\times 42=420,\\quad 10+42=52\\;\\ 12 t^{2} + 52 t + 35 = \\left(2 t + 7\\right) \\left(6 t + 5\\right)\\)"
+              "work": "\\(12\\cdot 35=420;\\quad 10\\times 42=420,\\quad 10+42=52\\;\\ 12 t^{2} + 52 t + 35 = \\left(2 t + 7\\right) \\left(6 t + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -65725,7 +65725,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(36\\cdot 16=576;\\quad 24\times 24=576,\\quad 24+24=48\\;\\ 36 t^{2} + 48 t + 16 = 4 \\left(3 t + 2\\right)^{2}\\)"
+              "work": "\\(36\\cdot 16=576;\\quad 24\\times 24=576,\\quad 24+24=48\\;\\ 36 t^{2} + 48 t + 16 = 4 \\left(3 t + 2\\right)^{2}\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -65769,7 +65769,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(18\\cdot 8=144;\\quad 12\times 12=144,\\quad 12+12=24\\;\\ 18 q^{2} + 24 q + 8 = 2 \\left(3 q + 2\\right)^{2}\\)"
+              "work": "\\(18\\cdot 8=144;\\quad 12\\times 12=144,\\quad 12+12=24\\;\\ 18 q^{2} + 24 q + 8 = 2 \\left(3 q + 2\\right)^{2}\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -65813,7 +65813,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(15\\cdot 10=150;\\quad 6\times 25=150,\\quad 6+25=31\\;\\ 15 s^{2} + 31 s + 10 = \\left(3 s + 5\\right) \\left(5 s + 2\\right)\\)"
+              "work": "\\(15\\cdot 10=150;\\quad 6\\times 25=150,\\quad 6+25=31\\;\\ 15 s^{2} + 31 s + 10 = \\left(3 s + 5\\right) \\left(5 s + 2\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -65857,7 +65857,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(24\\cdot 40=960;\\quad 15\times 64=960,\\quad 15+64=79\\;\\ 24 v^{2} + 79 v + 40 = \\left(3 v + 8\\right) \\left(8 v + 5\\right)\\)"
+              "work": "\\(24\\cdot 40=960;\\quad 15\\times 64=960,\\quad 15+64=79\\;\\ 24 v^{2} + 79 v + 40 = \\left(3 v + 8\\right) \\left(8 v + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -65901,7 +65901,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(63\\cdot 14=882;\\quad 14\times 63=882,\\quad 14+63=77\\;\\ 63 u^{2} + 77 u + 14 = 7 \\left(u + 1\\right) \\left(9 u + 2\\right)\\)"
+              "work": "\\(63\\cdot 14=882;\\quad 14\\times 63=882,\\quad 14+63=77\\;\\ 63 u^{2} + 77 u + 14 = 7 \\left(u + 1\\right) \\left(9 u + 2\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -65945,7 +65945,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(8\\cdot 30=240;\\quad 12\times 20=240,\\quad 12+20=32\\;\\ 8 r^{2} + 32 r + 30 = 2 \\left(2 r + 3\\right) \\left(2 r + 5\\right)\\)"
+              "work": "\\(8\\cdot 30=240;\\quad 12\\times 20=240,\\quad 12+20=32\\;\\ 8 r^{2} + 32 r + 30 = 2 \\left(2 r + 3\\right) \\left(2 r + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -65989,7 +65989,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(16\\cdot 15=240;\\quad 12\times 20=240,\\quad 12+20=32\\;\\ 16 r^{2} + 32 r + 15 = \\left(4 r + 3\\right) \\left(4 r + 5\\right)\\)"
+              "work": "\\(16\\cdot 15=240;\\quad 12\\times 20=240,\\quad 12+20=32\\;\\ 16 r^{2} + 32 r + 15 = \\left(4 r + 3\\right) \\left(4 r + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -66033,7 +66033,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(45\\cdot 20=900;\\quad 25\times 36=900,\\quad 25+36=61\\;\\ 45 s^{2} + 61 s + 20 = \\left(5 s + 4\\right) \\left(9 s + 5\\right)\\)"
+              "work": "\\(45\\cdot 20=900;\\quad 25\\times 36=900,\\quad 25+36=61\\;\\ 45 s^{2} + 61 s + 20 = \\left(5 s + 4\\right) \\left(9 s + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -66077,7 +66077,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(15\\cdot 30=450;\\quad 18\times 25=450,\\quad 18+25=43\\;\\ 15 s^{2} + 43 s + 30 = \\left(3 s + 5\\right) \\left(5 s + 6\\right)\\)"
+              "work": "\\(15\\cdot 30=450;\\quad 18\\times 25=450,\\quad 18+25=43\\;\\ 15 s^{2} + 43 s + 30 = \\left(3 s + 5\\right) \\left(5 s + 6\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -66121,7 +66121,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(8\\cdot 12=96;\\quad 8\times 12=96,\\quad 8+12=20\\;\\ 8 r^{2} + 20 r + 12 = 4 \\left(r + 1\\right) \\left(2 r + 3\\right)\\)"
+              "work": "\\(8\\cdot 12=96;\\quad 8\\times 12=96,\\quad 8+12=20\\;\\ 8 r^{2} + 20 r + 12 = 4 \\left(r + 1\\right) \\left(2 r + 3\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -66165,7 +66165,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(8\\cdot 56=448;\\quad 14\times 32=448,\\quad 14+32=46\\;\\ 8 r^{2} + 46 r + 56 = 2 \\left(r + 4\\right) \\left(4 r + 7\\right)\\)"
+              "work": "\\(8\\cdot 56=448;\\quad 14\\times 32=448,\\quad 14+32=46\\;\\ 8 r^{2} + 46 r + 56 = 2 \\left(r + 4\\right) \\left(4 r + 7\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -66209,7 +66209,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(48\\cdot 10=480;\\quad 16\times 30=480,\\quad 16+30=46\\;\\ 48 t^{2} + 46 t + 10 = 2 \\left(3 t + 1\\right) \\left(8 t + 5\\right)\\)"
+              "work": "\\(48\\cdot 10=480;\\quad 16\\times 30=480,\\quad 16+30=46\\;\\ 48 t^{2} + 46 t + 10 = 2 \\left(3 t + 1\\right) \\left(8 t + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -66253,7 +66253,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(24\\cdot 49=1176;\\quad 21\times 56=1176,\\quad 21+56=77\\;\\ 24 q^{2} + 77 q + 49 = \\left(3 q + 7\\right) \\left(8 q + 7\\right)\\)"
+              "work": "\\(24\\cdot 49=1176;\\quad 21\\times 56=1176,\\quad 21+56=77\\;\\ 24 q^{2} + 77 q + 49 = \\left(3 q + 7\\right) \\left(8 q + 7\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -66297,7 +66297,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(10\\cdot 21=210;\\quad 6\times 35=210,\\quad 6+35=41\\;\\ 10 s^{2} + 41 s + 21 = \\left(2 s + 7\\right) \\left(5 s + 3\\right)\\)"
+              "work": "\\(10\\cdot 21=210;\\quad 6\\times 35=210,\\quad 6+35=41\\;\\ 10 s^{2} + 41 s + 21 = \\left(2 s + 7\\right) \\left(5 s + 3\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -66341,7 +66341,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(48\\cdot 24=1152;\\quad 24\times 48=1152,\\quad 24+48=72\\;\\ 48 v^{2} + 72 v + 24 = 24 \\left(v + 1\\right) \\left(2 v + 1\\right)\\)"
+              "work": "\\(48\\cdot 24=1152;\\quad 24\\times 48=1152,\\quad 24+48=72\\;\\ 48 v^{2} + 72 v + 24 = 24 \\left(v + 1\\right) \\left(2 v + 1\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -66385,7 +66385,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(15\\cdot 30=450;\\quad 15\times 30=450,\\quad 15+30=45\\;\\ 15 s^{2} + 45 s + 30 = 15 \\left(s + 1\\right) \\left(s + 2\\right)\\)"
+              "work": "\\(15\\cdot 30=450;\\quad 15\\times 30=450,\\quad 15+30=45\\;\\ 15 s^{2} + 45 s + 30 = 15 \\left(s + 1\\right) \\left(s + 2\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -66429,7 +66429,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(64\\cdot 28=1792;\\quad 32\times 56=1792,\\quad 32+56=88\\;\\ 64 v^{2} + 88 v + 28 = 4 \\left(2 v + 1\\right) \\left(8 v + 7\\right)\\)"
+              "work": "\\(64\\cdot 28=1792;\\quad 32\\times 56=1792,\\quad 32+56=88\\;\\ 64 v^{2} + 88 v + 28 = 4 \\left(2 v + 1\\right) \\left(8 v + 7\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -66473,7 +66473,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(54\\cdot 27=1458;\\quad 18\times 81=1458,\\quad 18+81=99\\;\\ 54 w^{2} + 99 w + 27 = 9 \\left(2 w + 3\\right) \\left(3 w + 1\\right)\\)"
+              "work": "\\(54\\cdot 27=1458;\\quad 18\\times 81=1458,\\quad 18+81=99\\;\\ 54 w^{2} + 99 w + 27 = 9 \\left(2 w + 3\\right) \\left(3 w + 1\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -66517,7 +66517,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(36\\cdot 54=1944;\\quad 36\times 54=1944,\\quad 36+54=90\\;\\ 36 w^{2} + 90 w + 54 = 18 \\left(w + 1\\right) \\left(2 w + 3\\right)\\)"
+              "work": "\\(36\\cdot 54=1944;\\quad 36\\times 54=1944,\\quad 36+54=90\\;\\ 36 w^{2} + 90 w + 54 = 18 \\left(w + 1\\right) \\left(2 w + 3\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -66561,7 +66561,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(16\\cdot 12=192;\\quad 4\times 48=192,\\quad 4+48=52\\;\\ 16 p^{2} + 52 p + 12 = 4 \\left(p + 3\\right) \\left(4 p + 1\\right)\\)"
+              "work": "\\(16\\cdot 12=192;\\quad 4\\times 48=192,\\quad 4+48=52\\;\\ 16 p^{2} + 52 p + 12 = 4 \\left(p + 3\\right) \\left(4 p + 1\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -66605,7 +66605,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(14\\cdot 42=588;\\quad 14\times 42=588,\\quad 14+42=56\\;\\ 14 u^{2} + 56 u + 42 = 14 \\left(u + 1\\right) \\left(u + 3\\right)\\)"
+              "work": "\\(14\\cdot 42=588;\\quad 14\\times 42=588,\\quad 14+42=56\\;\\ 14 u^{2} + 56 u + 42 = 14 \\left(u + 1\\right) \\left(u + 3\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -66649,7 +66649,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(30\\cdot 20=600;\\quad 24\times 25=600,\\quad 24+25=49\\;\\ 30 s^{2} + 49 s + 20 = \\left(5 s + 4\\right) \\left(6 s + 5\\right)\\)"
+              "work": "\\(30\\cdot 20=600;\\quad 24\\times 25=600,\\quad 24+25=49\\;\\ 30 s^{2} + 49 s + 20 = \\left(5 s + 4\\right) \\left(6 s + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -66737,7 +66737,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(30\\cdot 45=1350;\\quad 25\times 54=1350,\\quad 25+54=79\\;\\ 30 s^{2} + 79 s + 45 = \\left(5 s + 9\\right) \\left(6 s + 5\\right)\\)"
+              "work": "\\(30\\cdot 45=1350;\\quad 25\\times 54=1350,\\quad 25+54=79\\;\\ 30 s^{2} + 79 s + 45 = \\left(5 s + 9\\right) \\left(6 s + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -66781,7 +66781,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(42\\cdot 35=1470;\\quad 30\times 49=1470,\\quad 30+49=79\\;\\ 42 u^{2} + 79 u + 35 = \\left(6 u + 7\\right) \\left(7 u + 5\\right)\\)"
+              "work": "\\(42\\cdot 35=1470;\\quad 30\\times 49=1470,\\quad 30+49=79\\;\\ 42 u^{2} + 79 u + 35 = \\left(6 u + 7\\right) \\left(7 u + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -66825,7 +66825,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(21\\cdot 35=735;\\quad 15\times 49=735,\\quad 15+49=64\\;\\ 21 q^{2} + 64 q + 35 = \\left(3 q + 7\\right) \\left(7 q + 5\\right)\\)"
+              "work": "\\(21\\cdot 35=735;\\quad 15\\times 49=735,\\quad 15+49=64\\;\\ 21 q^{2} + 64 q + 35 = \\left(3 q + 7\\right) \\left(7 q + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -66869,7 +66869,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(42\\cdot 27=1134;\\quad 18\times 63=1134,\\quad 18+63=81\\;\\ 42 t^{2} + 81 t + 27 = 3 \\left(2 t + 3\\right) \\left(7 t + 3\\right)\\)"
+              "work": "\\(42\\cdot 27=1134;\\quad 18\\times 63=1134,\\quad 18+63=81\\;\\ 42 t^{2} + 81 t + 27 = 3 \\left(2 t + 3\\right) \\left(7 t + 3\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -66913,7 +66913,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(16\\cdot 14=224;\\quad 8\times 28=224,\\quad 8+28=36\\;\\ 16 r^{2} + 36 r + 14 = 2 \\left(2 r + 1\\right) \\left(4 r + 7\\right)\\)"
+              "work": "\\(16\\cdot 14=224;\\quad 8\\times 28=224,\\quad 8+28=36\\;\\ 16 r^{2} + 36 r + 14 = 2 \\left(2 r + 1\\right) \\left(4 r + 7\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -66957,7 +66957,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(72\\cdot 30=2160;\\quad 45\times 48=2160,\\quad 45+48=93\\;\\ 72 w^{2} + 93 w + 30 = 3 \\left(3 w + 2\\right) \\left(8 w + 5\\right)\\)"
+              "work": "\\(72\\cdot 30=2160;\\quad 45\\times 48=2160,\\quad 45+48=93\\;\\ 72 w^{2} + 93 w + 30 = 3 \\left(3 w + 2\\right) \\left(8 w + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -67001,7 +67001,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(54\\cdot 30=1620;\\quad 36\times 45=1620,\\quad 36+45=81\\;\\ 54 w^{2} + 81 w + 30 = 3 \\left(3 w + 2\\right) \\left(6 w + 5\\right)\\)"
+              "work": "\\(54\\cdot 30=1620;\\quad 36\\times 45=1620,\\quad 36+45=81\\;\\ 54 w^{2} + 81 w + 30 = 3 \\left(3 w + 2\\right) \\left(6 w + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -67045,7 +67045,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(64\\cdot 6=384;\\quad 16\times 24=384,\\quad 16+24=40\\;\\ 64 v^{2} + 40 v + 6 = 2 \\left(4 v + 1\\right) \\left(8 v + 3\\right)\\)"
+              "work": "\\(64\\cdot 6=384;\\quad 16\\times 24=384,\\quad 16+24=40\\;\\ 64 v^{2} + 40 v + 6 = 2 \\left(4 v + 1\\right) \\left(8 v + 3\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -67089,7 +67089,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(6\\cdot 36=216;\\quad 8\times 27=216,\\quad 8+27=35\\;\\ 6 p^{2} + 35 p + 36 = \\left(2 p + 9\\right) \\left(3 p + 4\\right)\\)"
+              "work": "\\(6\\cdot 36=216;\\quad 8\\times 27=216,\\quad 8+27=35\\;\\ 6 p^{2} + 35 p + 36 = \\left(2 p + 9\\right) \\left(3 p + 4\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -67133,7 +67133,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(30\\cdot 28=840;\\quad 24\times 35=840,\\quad 24+35=59\\;\\ 30 s^{2} + 59 s + 28 = \\left(5 s + 4\\right) \\left(6 s + 7\\right)\\)"
+              "work": "\\(30\\cdot 28=840;\\quad 24\\times 35=840,\\quad 24+35=59\\;\\ 30 s^{2} + 59 s + 28 = \\left(5 s + 4\\right) \\left(6 s + 7\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -67177,7 +67177,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(24\\cdot 12=288;\\quad 16\times 18=288,\\quad 16+18=34\\;\\ 24 r^{2} + 34 r + 12 = 2 \\left(3 r + 2\\right) \\left(4 r + 3\\right)\\)"
+              "work": "\\(24\\cdot 12=288;\\quad 16\\times 18=288,\\quad 16+18=34\\;\\ 24 r^{2} + 34 r + 12 = 2 \\left(3 r + 2\\right) \\left(4 r + 3\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -67221,7 +67221,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(36\\cdot 14=504;\\quad 18\times 28=504,\\quad 18+28=46\\;\\ 36 w^{2} + 46 w + 14 = 2 \\left(2 w + 1\\right) \\left(9 w + 7\\right)\\)"
+              "work": "\\(36\\cdot 14=504;\\quad 18\\times 28=504,\\quad 18+28=46\\;\\ 36 w^{2} + 46 w + 14 = 2 \\left(2 w + 1\\right) \\left(9 w + 7\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -67265,7 +67265,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(63\\cdot 14=882;\\quad 18\times 49=882,\\quad 18+49=67\\;\\ 63 w^{2} + 67 w + 14 = \\left(7 w + 2\\right) \\left(9 w + 7\\right)\\)"
+              "work": "\\(63\\cdot 14=882;\\quad 18\\times 49=882,\\quad 18+49=67\\;\\ 63 w^{2} + 67 w + 14 = \\left(7 w + 2\\right) \\left(9 w + 7\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -67353,7 +67353,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(56\\cdot 40=2240;\\quad 35\times 64=2240,\\quad 35+64=99\\;\\ 56 v^{2} + 99 v + 40 = \\left(7 v + 8\\right) \\left(8 v + 5\\right)\\)"
+              "work": "\\(56\\cdot 40=2240;\\quad 35\\times 64=2240,\\quad 35+64=99\\;\\ 56 v^{2} + 99 v + 40 = \\left(7 v + 8\\right) \\left(8 v + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -67397,7 +67397,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(81\\cdot 20=1620;\\quad 36\times 45=1620,\\quad 36+45=81\\;\\ 81 w^{2} + 81 w + 20 = \\left(9 w + 4\\right) \\left(9 w + 5\\right)\\)"
+              "work": "\\(81\\cdot 20=1620;\\quad 36\\times 45=1620,\\quad 36+45=81\\;\\ 81 w^{2} + 81 w + 20 = \\left(9 w + 4\\right) \\left(9 w + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -67441,7 +67441,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(45\\cdot 40=1800;\\quad 40\times 45=1800,\\quad 40+45=85\\;\\ 45 w^{2} + 85 w + 40 = 5 \\left(w + 1\\right) \\left(9 w + 8\\right)\\)"
+              "work": "\\(45\\cdot 40=1800;\\quad 40\\times 45=1800,\\quad 40+45=85\\;\\ 45 w^{2} + 85 w + 40 = 5 \\left(w + 1\\right) \\left(9 w + 8\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -67485,7 +67485,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(28\\cdot 32=896;\\quad 16\times 56=896,\\quad 16+56=72\\;\\ 28 r^{2} + 72 r + 32 = 4 \\left(r + 2\\right) \\left(7 r + 4\\right)\\)"
+              "work": "\\(28\\cdot 32=896;\\quad 16\\times 56=896,\\quad 16+56=72\\;\\ 28 r^{2} + 72 r + 32 = 4 \\left(r + 2\\right) \\left(7 r + 4\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -67529,7 +67529,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(27\\cdot 24=648;\\quad 9\times 72=648,\\quad 9+72=81\\;\\ 27 w^{2} + 81 w + 24 = 3 \\left(3 w + 1\\right) \\left(3 w + 8\\right)\\)"
+              "work": "\\(27\\cdot 24=648;\\quad 9\\times 72=648,\\quad 9+72=81\\;\\ 27 w^{2} + 81 w + 24 = 3 \\left(3 w + 1\\right) \\left(3 w + 8\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -67573,7 +67573,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(24\\cdot 45=1080;\\quad 30\times 36=1080,\\quad 30+36=66\\;\\ 24 t^{2} + 66 t + 45 = 3 \\left(2 t + 3\\right) \\left(4 t + 5\\right)\\)"
+              "work": "\\(24\\cdot 45=1080;\\quad 30\\times 36=1080,\\quad 30+36=66\\;\\ 24 t^{2} + 66 t + 45 = 3 \\left(2 t + 3\\right) \\left(4 t + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -67617,7 +67617,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(21\\cdot 18=378;\\quad 14\times 27=378,\\quad 14+27=41\\;\\ 21 u^{2} + 41 u + 18 = \\left(3 u + 2\\right) \\left(7 u + 9\\right)\\)"
+              "work": "\\(21\\cdot 18=378;\\quad 14\\times 27=378,\\quad 14+27=41\\;\\ 21 u^{2} + 41 u + 18 = \\left(3 u + 2\\right) \\left(7 u + 9\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -67661,7 +67661,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(24\\cdot 27=648;\\quad 9\times 72=648,\\quad 9+72=81\\;\\ 24 q^{2} + 81 q + 27 = 3 \\left(q + 3\\right) \\left(8 q + 3\\right)\\)"
+              "work": "\\(24\\cdot 27=648;\\quad 9\\times 72=648,\\quad 9+72=81\\;\\ 24 q^{2} + 81 q + 27 = 3 \\left(q + 3\\right) \\left(8 q + 3\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -67749,7 +67749,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(8\\cdot 15=120;\\quad 10\times 12=120,\\quad 10+12=22\\;\\ 8 r^{2} + 22 r + 15 = \\left(2 r + 3\\right) \\left(4 r + 5\\right)\\)"
+              "work": "\\(8\\cdot 15=120;\\quad 10\\times 12=120,\\quad 10+12=22\\;\\ 8 r^{2} + 22 r + 15 = \\left(2 r + 3\\right) \\left(4 r + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -67793,7 +67793,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(30\\cdot 45=1350;\\quad 25\times 54=1350,\\quad 25+54=79\\;\\ 30 t^{2} + 79 t + 45 = \\left(5 t + 9\\right) \\left(6 t + 5\\right)\\)"
+              "work": "\\(30\\cdot 45=1350;\\quad 25\\times 54=1350,\\quad 25+54=79\\;\\ 30 t^{2} + 79 t + 45 = \\left(5 t + 9\\right) \\left(6 t + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -67837,7 +67837,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(40\\cdot 20=800;\\quad 20\times 40=800,\\quad 20+40=60\\;\\ 40 s^{2} + 60 s + 20 = 20 \\left(s + 1\\right) \\left(2 s + 1\\right)\\)"
+              "work": "\\(40\\cdot 20=800;\\quad 20\\times 40=800,\\quad 20+40=60\\;\\ 40 s^{2} + 60 s + 20 = 20 \\left(s + 1\\right) \\left(2 s + 1\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -67881,7 +67881,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(42\\cdot 14=588;\\quad 12\times 49=588,\\quad 12+49=61\\;\\ 42 u^{2} + 61 u + 14 = \\left(6 u + 7\\right) \\left(7 u + 2\\right)\\)"
+              "work": "\\(42\\cdot 14=588;\\quad 12\\times 49=588,\\quad 12+49=61\\;\\ 42 u^{2} + 61 u + 14 = \\left(6 u + 7\\right) \\left(7 u + 2\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -67925,7 +67925,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(27\\cdot 8=216;\\quad 12\times 18=216,\\quad 12+18=30\\;\\ 27 q^{2} + 30 q + 8 = \\left(3 q + 2\\right) \\left(9 q + 4\\right)\\)"
+              "work": "\\(27\\cdot 8=216;\\quad 12\\times 18=216,\\quad 12+18=30\\;\\ 27 q^{2} + 30 q + 8 = \\left(3 q + 2\\right) \\left(9 q + 4\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -67969,7 +67969,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(36\\cdot 32=1152;\\quad 32\times 36=1152,\\quad 32+36=68\\;\\ 36 w^{2} + 68 w + 32 = 4 \\left(w + 1\\right) \\left(9 w + 8\\right)\\)"
+              "work": "\\(36\\cdot 32=1152;\\quad 32\\times 36=1152,\\quad 32+36=68\\;\\ 36 w^{2} + 68 w + 32 = 4 \\left(w + 1\\right) \\left(9 w + 8\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -68013,7 +68013,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(10\\cdot 18=180;\\quad 6\times 30=180,\\quad 6+30=36\\;\\ 10 s^{2} + 36 s + 18 = 2 \\left(s + 3\\right) \\left(5 s + 3\\right)\\)"
+              "work": "\\(10\\cdot 18=180;\\quad 6\\times 30=180,\\quad 6+30=36\\;\\ 10 s^{2} + 36 s + 18 = 2 \\left(s + 3\\right) \\left(5 s + 3\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -68101,7 +68101,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(45\\cdot 9=405;\\quad 15\times 27=405,\\quad 15+27=42\\;\\ 45 s^{2} + 42 s + 9 = 3 \\left(3 s + 1\\right) \\left(5 s + 3\\right)\\)"
+              "work": "\\(45\\cdot 9=405;\\quad 15\\times 27=405,\\quad 15+27=42\\;\\ 45 s^{2} + 42 s + 9 = 3 \\left(3 s + 1\\right) \\left(5 s + 3\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -68189,7 +68189,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(32\\cdot 30=960;\\quad 20\times 48=960,\\quad 20+48=68\\;\\ 32 r^{2} + 68 r + 30 = 2 \\left(2 r + 3\\right) \\left(8 r + 5\\right)\\)"
+              "work": "\\(32\\cdot 30=960;\\quad 20\\times 48=960,\\quad 20+48=68\\;\\ 32 r^{2} + 68 r + 30 = 2 \\left(2 r + 3\\right) \\left(8 r + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -68233,7 +68233,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(18\\cdot 48=864;\\quad 12\times 72=864,\\quad 12+72=84\\;\\ 18 p^{2} + 84 p + 48 = 6 \\left(p + 4\\right) \\left(3 p + 2\\right)\\)"
+              "work": "\\(18\\cdot 48=864;\\quad 12\\times 72=864,\\quad 12+72=84\\;\\ 18 p^{2} + 84 p + 48 = 6 \\left(p + 4\\right) \\left(3 p + 2\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -68277,7 +68277,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(32\\cdot 15=480;\\quad 20\times 24=480,\\quad 20+24=44\\;\\ 32 r^{2} + 44 r + 15 = \\left(4 r + 3\\right) \\left(8 r + 5\\right)\\)"
+              "work": "\\(32\\cdot 15=480;\\quad 20\\times 24=480,\\quad 20+24=44\\;\\ 32 r^{2} + 44 r + 15 = \\left(4 r + 3\\right) \\left(8 r + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -68321,7 +68321,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(32\\cdot 81=2592;\\quad 36\times 72=2592,\\quad 36+72=108\\;\\ 32 r^{2} + 108 r + 81 = \\left(4 r + 9\\right) \\left(8 r + 9\\right)\\)"
+              "work": "\\(32\\cdot 81=2592;\\quad 36\\times 72=2592,\\quad 36+72=108\\;\\ 32 r^{2} + 108 r + 81 = \\left(4 r + 9\\right) \\left(8 r + 9\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -68453,7 +68453,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(10\\cdot 4=40;\\quad 4\times 10=40,\\quad 4+10=14\\;\\ 10 p^{2} + 14 p + 4 = 2 \\left(p + 1\\right) \\left(5 p + 2\\right)\\)"
+              "work": "\\(10\\cdot 4=40;\\quad 4\\times 10=40,\\quad 4+10=14\\;\\ 10 p^{2} + 14 p + 4 = 2 \\left(p + 1\\right) \\left(5 p + 2\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -68497,7 +68497,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(12\\cdot 15=180;\\quad 9\times 20=180,\\quad 9+20=29\\;\\ 12 r^{2} + 29 r + 15 = \\left(3 r + 5\\right) \\left(4 r + 3\\right)\\)"
+              "work": "\\(12\\cdot 15=180;\\quad 9\\times 20=180,\\quad 9+20=29\\;\\ 12 r^{2} + 29 r + 15 = \\left(3 r + 5\\right) \\left(4 r + 3\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -68541,7 +68541,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(14\\cdot 48=672;\\quad 16\times 42=672,\\quad 16+42=58\\;\\ 14 p^{2} + 58 p + 48 = 2 \\left(p + 3\\right) \\left(7 p + 8\\right)\\)"
+              "work": "\\(14\\cdot 48=672;\\quad 16\\times 42=672,\\quad 16+42=58\\;\\ 14 p^{2} + 58 p + 48 = 2 \\left(p + 3\\right) \\left(7 p + 8\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -68585,7 +68585,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(64\\cdot 9=576;\\quad 24\times 24=576,\\quad 24+24=48\\;\\ 64 v^{2} + 48 v + 9 = \\left(8 v + 3\\right)^{2}\\)"
+              "work": "\\(64\\cdot 9=576;\\quad 24\\times 24=576,\\quad 24+24=48\\;\\ 64 v^{2} + 48 v + 9 = \\left(8 v + 3\\right)^{2}\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -68629,7 +68629,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(63\\cdot 6=378;\\quad 18\times 21=378,\\quad 18+21=39\\;\\ 63 u^{2} + 39 u + 6 = 3 \\left(3 u + 1\\right) \\left(7 u + 2\\right)\\)"
+              "work": "\\(63\\cdot 6=378;\\quad 18\\times 21=378,\\quad 18+21=39\\;\\ 63 u^{2} + 39 u + 6 = 3 \\left(3 u + 1\\right) \\left(7 u + 2\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -68673,7 +68673,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(21\\cdot 25=525;\\quad 15\times 35=525,\\quad 15+35=50\\;\\ 21 q^{2} + 50 q + 25 = \\left(3 q + 5\\right) \\left(7 q + 5\\right)\\)"
+              "work": "\\(21\\cdot 25=525;\\quad 15\\times 35=525,\\quad 15+35=50\\;\\ 21 q^{2} + 50 q + 25 = \\left(3 q + 5\\right) \\left(7 q + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -68717,7 +68717,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(21\\cdot 28=588;\\quad 21\times 28=588,\\quad 21+28=49\\;\\ 21 u^{2} + 49 u + 28 = 7 \\left(u + 1\\right) \\left(3 u + 4\\right)\\)"
+              "work": "\\(21\\cdot 28=588;\\quad 21\\times 28=588,\\quad 21+28=49\\;\\ 21 u^{2} + 49 u + 28 = 7 \\left(u + 1\\right) \\left(3 u + 4\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -68761,7 +68761,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(24\\cdot 56=1344;\\quad 24\times 56=1344,\\quad 24+56=80\\;\\ 24 q^{2} + 80 q + 56 = 8 \\left(q + 1\\right) \\left(3 q + 7\\right)\\)"
+              "work": "\\(24\\cdot 56=1344;\\quad 24\\times 56=1344,\\quad 24+56=80\\;\\ 24 q^{2} + 80 q + 56 = 8 \\left(q + 1\\right) \\left(3 q + 7\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -68805,7 +68805,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(12\\cdot 8=96;\\quad 8\times 12=96,\\quad 8+12=20\\;\\ 12 t^{2} + 20 t + 8 = 4 \\left(t + 1\\right) \\left(3 t + 2\\right)\\)"
+              "work": "\\(12\\cdot 8=96;\\quad 8\\times 12=96,\\quad 8+12=20\\;\\ 12 t^{2} + 20 t + 8 = 4 \\left(t + 1\\right) \\left(3 t + 2\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -68849,7 +68849,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(12\\cdot 28=336;\\quad 12\times 28=336,\\quad 12+28=40\\;\\ 12 r^{2} + 40 r + 28 = 4 \\left(r + 1\\right) \\left(3 r + 7\\right)\\)"
+              "work": "\\(12\\cdot 28=336;\\quad 12\\times 28=336,\\quad 12+28=40\\;\\ 12 r^{2} + 40 r + 28 = 4 \\left(r + 1\\right) \\left(3 r + 7\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -68893,7 +68893,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(18\\cdot 8=144;\\quad 6\times 24=144,\\quad 6+24=30\\;\\ 18 t^{2} + 30 t + 8 = 2 \\left(3 t + 1\\right) \\left(3 t + 4\\right)\\)"
+              "work": "\\(18\\cdot 8=144;\\quad 6\\times 24=144,\\quad 6+24=30\\;\\ 18 t^{2} + 30 t + 8 = 2 \\left(3 t + 1\\right) \\left(3 t + 4\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -68937,7 +68937,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(32\\cdot 28=896;\\quad 16\times 56=896,\\quad 16+56=72\\;\\ 32 r^{2} + 72 r + 28 = 4 \\left(2 r + 1\\right) \\left(4 r + 7\\right)\\)"
+              "work": "\\(32\\cdot 28=896;\\quad 16\\times 56=896,\\quad 16+56=72\\;\\ 32 r^{2} + 72 r + 28 = 4 \\left(2 r + 1\\right) \\left(4 r + 7\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -68981,7 +68981,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(30\\cdot 72=2160;\\quad 45\times 48=2160,\\quad 45+48=93\\;\\ 30 t^{2} + 93 t + 72 = 3 \\left(2 t + 3\\right) \\left(5 t + 8\\right)\\)"
+              "work": "\\(30\\cdot 72=2160;\\quad 45\\times 48=2160,\\quad 45+48=93\\;\\ 30 t^{2} + 93 t + 72 = 3 \\left(2 t + 3\\right) \\left(5 t + 8\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -69025,7 +69025,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(32\\cdot 42=1344;\\quad 28\times 48=1344,\\quad 28+48=76\\;\\ 32 v^{2} + 76 v + 42 = 2 \\left(2 v + 3\\right) \\left(8 v + 7\\right)\\)"
+              "work": "\\(32\\cdot 42=1344;\\quad 28\\times 48=1344,\\quad 28+48=76\\;\\ 32 v^{2} + 76 v + 42 = 2 \\left(2 v + 3\\right) \\left(8 v + 7\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -69069,7 +69069,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(20\\cdot 20=400;\\quad 16\times 25=400,\\quad 16+25=41\\;\\ 20 s^{2} + 41 s + 20 = \\left(4 s + 5\\right) \\left(5 s + 4\\right)\\)"
+              "work": "\\(20\\cdot 20=400;\\quad 16\\times 25=400,\\quad 16+25=41\\;\\ 20 s^{2} + 41 s + 20 = \\left(4 s + 5\\right) \\left(5 s + 4\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -69113,7 +69113,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(27\\cdot 45=1215;\\quad 15\times 81=1215,\\quad 15+81=96\\;\\ 27 w^{2} + 96 w + 45 = 3 \\left(w + 3\\right) \\left(9 w + 5\\right)\\)"
+              "work": "\\(27\\cdot 45=1215;\\quad 15\\times 81=1215,\\quad 15+81=96\\;\\ 27 w^{2} + 96 w + 45 = 3 \\left(w + 3\\right) \\left(9 w + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -69157,7 +69157,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(14\\cdot 36=504;\\quad 8\times 63=504,\\quad 8+63=71\\;\\ 14 p^{2} + 71 p + 36 = \\left(2 p + 9\\right) \\left(7 p + 4\\right)\\)"
+              "work": "\\(14\\cdot 36=504;\\quad 8\\times 63=504,\\quad 8+63=71\\;\\ 14 p^{2} + 71 p + 36 = \\left(2 p + 9\\right) \\left(7 p + 4\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -69201,7 +69201,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(20\\cdot 9=180;\\quad 12\times 15=180,\\quad 12+15=27\\;\\ 20 r^{2} + 27 r + 9 = \\left(4 r + 3\\right) \\left(5 r + 3\\right)\\)"
+              "work": "\\(20\\cdot 9=180;\\quad 12\\times 15=180,\\quad 12+15=27\\;\\ 20 r^{2} + 27 r + 9 = \\left(4 r + 3\\right) \\left(5 r + 3\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -69245,7 +69245,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(15\\cdot 9=135;\\quad 9\times 15=135,\\quad 9+15=24\\;\\ 15 q^{2} + 24 q + 9 = 3 \\left(q + 1\\right) \\left(5 q + 3\\right)\\)"
+              "work": "\\(15\\cdot 9=135;\\quad 9\\times 15=135,\\quad 9+15=24\\;\\ 15 q^{2} + 24 q + 9 = 3 \\left(q + 1\\right) \\left(5 q + 3\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -69289,7 +69289,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(14\\cdot 24=336;\\quad 6\times 56=336,\\quad 6+56=62\\;\\ 14 u^{2} + 62 u + 24 = 2 \\left(u + 4\\right) \\left(7 u + 3\\right)\\)"
+              "work": "\\(14\\cdot 24=336;\\quad 6\\times 56=336,\\quad 6+56=62\\;\\ 14 u^{2} + 62 u + 24 = 2 \\left(u + 4\\right) \\left(7 u + 3\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -69333,7 +69333,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(21\\cdot 12=252;\\quad 14\times 18=252,\\quad 14+18=32\\;\\ 21 u^{2} + 32 u + 12 = \\left(3 u + 2\\right) \\left(7 u + 6\\right)\\)"
+              "work": "\\(21\\cdot 12=252;\\quad 14\\times 18=252,\\quad 14+18=32\\;\\ 21 u^{2} + 32 u + 12 = \\left(3 u + 2\\right) \\left(7 u + 6\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -69377,7 +69377,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(4\\cdot 48=192;\\quad 12\times 16=192,\\quad 12+16=28\\;\\ 4 p^{2} + 28 p + 48 = 4 \\left(p + 3\\right) \\left(p + 4\\right)\\)"
+              "work": "\\(4\\cdot 48=192;\\quad 12\\times 16=192,\\quad 12+16=28\\;\\ 4 p^{2} + 28 p + 48 = 4 \\left(p + 3\\right) \\left(p + 4\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -69421,7 +69421,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(16\\cdot 25=400;\\quad 10\times 40=400,\\quad 10+40=50\\;\\ 16 v^{2} + 50 v + 25 = \\left(2 v + 5\\right) \\left(8 v + 5\\right)\\)"
+              "work": "\\(16\\cdot 25=400;\\quad 10\\times 40=400,\\quad 10+40=50\\;\\ 16 v^{2} + 50 v + 25 = \\left(2 v + 5\\right) \\left(8 v + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -69509,7 +69509,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(63\\cdot 14=882;\\quad 14\times 63=882,\\quad 14+63=77\\;\\ 63 w^{2} + 77 w + 14 = 7 \\left(w + 1\\right) \\left(9 w + 2\\right)\\)"
+              "work": "\\(63\\cdot 14=882;\\quad 14\\times 63=882,\\quad 14+63=77\\;\\ 63 w^{2} + 77 w + 14 = 7 \\left(w + 1\\right) \\left(9 w + 2\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -69553,7 +69553,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(15\\cdot 45=675;\\quad 25\times 27=675,\\quad 25+27=52\\;\\ 15 s^{2} + 52 s + 45 = \\left(3 s + 5\\right) \\left(5 s + 9\\right)\\)"
+              "work": "\\(15\\cdot 45=675;\\quad 25\\times 27=675,\\quad 25+27=52\\;\\ 15 s^{2} + 52 s + 45 = \\left(3 s + 5\\right) \\left(5 s + 9\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -69597,7 +69597,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(18\\cdot 24=432;\\quad 16\times 27=432,\\quad 16+27=43\\;\\ 18 p^{2} + 43 p + 24 = \\left(2 p + 3\\right) \\left(9 p + 8\\right)\\)"
+              "work": "\\(18\\cdot 24=432;\\quad 16\\times 27=432,\\quad 16+27=43\\;\\ 18 p^{2} + 43 p + 24 = \\left(2 p + 3\\right) \\left(9 p + 8\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -69641,7 +69641,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(15\\cdot 36=540;\\quad 18\times 30=540,\\quad 18+30=48\\;\\ 15 q^{2} + 48 q + 36 = 3 \\left(q + 2\\right) \\left(5 q + 6\\right)\\)"
+              "work": "\\(15\\cdot 36=540;\\quad 18\\times 30=540,\\quad 18+30=48\\;\\ 15 q^{2} + 48 q + 36 = 3 \\left(q + 2\\right) \\left(5 q + 6\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -69685,7 +69685,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(16\\cdot 16=256;\\quad 4\times 64=256,\\quad 4+64=68\\;\\ 16 p^{2} + 68 p + 16 = 4 \\left(p + 4\\right) \\left(4 p + 1\\right)\\)"
+              "work": "\\(16\\cdot 16=256;\\quad 4\\times 64=256,\\quad 4+64=68\\;\\ 16 p^{2} + 68 p + 16 = 4 \\left(p + 4\\right) \\left(4 p + 1\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -69729,7 +69729,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(36\\cdot 16=576;\\quad 12\times 48=576,\\quad 12+48=60\\;\\ 36 t^{2} + 60 t + 16 = 4 \\left(3 t + 1\\right) \\left(3 t + 4\\right)\\)"
+              "work": "\\(36\\cdot 16=576;\\quad 12\\times 48=576,\\quad 12+48=60\\;\\ 36 t^{2} + 60 t + 16 = 4 \\left(3 t + 1\\right) \\left(3 t + 4\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -69773,7 +69773,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(63\\cdot 14=882;\\quad 18\times 49=882,\\quad 18+49=67\\;\\ 63 u^{2} + 67 u + 14 = \\left(7 u + 2\\right) \\left(9 u + 7\\right)\\)"
+              "work": "\\(63\\cdot 14=882;\\quad 18\\times 49=882,\\quad 18+49=67\\;\\ 63 u^{2} + 67 u + 14 = \\left(7 u + 2\\right) \\left(9 u + 7\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -69817,7 +69817,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(36\\cdot 54=1944;\\quad 36\times 54=1944,\\quad 36+54=90\\;\\ 36 t^{2} + 90 t + 54 = 18 \\left(t + 1\\right) \\left(2 t + 3\\right)\\)"
+              "work": "\\(36\\cdot 54=1944;\\quad 36\\times 54=1944,\\quad 36+54=90\\;\\ 36 t^{2} + 90 t + 54 = 18 \\left(t + 1\\right) \\left(2 t + 3\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -69861,7 +69861,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(20\\cdot 36=720;\\quad 16\times 45=720,\\quad 16+45=61\\;\\ 20 r^{2} + 61 r + 36 = \\left(4 r + 9\\right) \\left(5 r + 4\\right)\\)"
+              "work": "\\(20\\cdot 36=720;\\quad 16\\times 45=720,\\quad 16+45=61\\;\\ 20 r^{2} + 61 r + 36 = \\left(4 r + 9\\right) \\left(5 r + 4\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -69905,7 +69905,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(18\\cdot 16=288;\\quad 8\times 36=288,\\quad 8+36=44\\;\\ 18 w^{2} + 44 w + 16 = 2 \\left(w + 2\\right) \\left(9 w + 4\\right)\\)"
+              "work": "\\(18\\cdot 16=288;\\quad 8\\times 36=288,\\quad 8+36=44\\;\\ 18 w^{2} + 44 w + 16 = 2 \\left(w + 2\\right) \\left(9 w + 4\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -69949,7 +69949,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(4\\cdot 42=168;\\quad 12\times 14=168,\\quad 12+14=26\\;\\ 4 p^{2} + 26 p + 42 = 2 \\left(p + 3\\right) \\left(2 p + 7\\right)\\)"
+              "work": "\\(4\\cdot 42=168;\\quad 12\\times 14=168,\\quad 12+14=26\\;\\ 4 p^{2} + 26 p + 42 = 2 \\left(p + 3\\right) \\left(2 p + 7\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -70081,7 +70081,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(28\\cdot 8=224;\\quad 8\times 28=224,\\quad 8+28=36\\;\\ 28 r^{2} + 36 r + 8 = 4 \\left(r + 1\\right) \\left(7 r + 2\\right)\\)"
+              "work": "\\(28\\cdot 8=224;\\quad 8\\times 28=224,\\quad 8+28=36\\;\\ 28 r^{2} + 36 r + 8 = 4 \\left(r + 1\\right) \\left(7 r + 2\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -70125,7 +70125,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(10\\cdot 40=400;\\quad 16\times 25=400,\\quad 16+25=41\\;\\ 10 s^{2} + 41 s + 40 = \\left(2 s + 5\\right) \\left(5 s + 8\\right)\\)"
+              "work": "\\(10\\cdot 40=400;\\quad 16\\times 25=400,\\quad 16+25=41\\;\\ 10 s^{2} + 41 s + 40 = \\left(2 s + 5\\right) \\left(5 s + 8\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -70169,7 +70169,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(4\\cdot 18=72;\\quad 4\times 18=72,\\quad 4+18=22\\;\\ 4 p^{2} + 22 p + 18 = 2 \\left(p + 1\\right) \\left(2 p + 9\\right)\\)"
+              "work": "\\(4\\cdot 18=72;\\quad 4\\times 18=72,\\quad 4+18=22\\;\\ 4 p^{2} + 22 p + 18 = 2 \\left(p + 1\\right) \\left(2 p + 9\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -70257,7 +70257,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(72\\cdot 28=2016;\\quad 36\times 56=2016,\\quad 36+56=92\\;\\ 72 v^{2} + 92 v + 28 = 4 \\left(2 v + 1\\right) \\left(9 v + 7\\right)\\)"
+              "work": "\\(72\\cdot 28=2016;\\quad 36\\times 56=2016,\\quad 36+56=92\\;\\ 72 v^{2} + 92 v + 28 = 4 \\left(2 v + 1\\right) \\left(9 v + 7\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -70301,7 +70301,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(12\\cdot 24=288;\\quad 6\times 48=288,\\quad 6+48=54\\;\\ 12 p^{2} + 54 p + 24 = 6 \\left(p + 4\\right) \\left(2 p + 1\\right)\\)"
+              "work": "\\(12\\cdot 24=288;\\quad 6\\times 48=288,\\quad 6+48=54\\;\\ 12 p^{2} + 54 p + 24 = 6 \\left(p + 4\\right) \\left(2 p + 1\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -70345,7 +70345,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(36\\cdot 9=324;\\quad 12\times 27=324,\\quad 12+27=39\\;\\ 36 r^{2} + 39 r + 9 = 3 \\left(3 r + 1\\right) \\left(4 r + 3\\right)\\)"
+              "work": "\\(36\\cdot 9=324;\\quad 12\\times 27=324,\\quad 12+27=39\\;\\ 36 r^{2} + 39 r + 9 = 3 \\left(3 r + 1\\right) \\left(4 r + 3\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -70389,7 +70389,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(49\\cdot 32=1568;\\quad 28\times 56=1568,\\quad 28+56=84\\;\\ 49 u^{2} + 84 u + 32 = \\left(7 u + 4\\right) \\left(7 u + 8\\right)\\)"
+              "work": "\\(49\\cdot 32=1568;\\quad 28\\times 56=1568,\\quad 28+56=84\\;\\ 49 u^{2} + 84 u + 32 = \\left(7 u + 4\\right) \\left(7 u + 8\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -70433,7 +70433,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(35\\cdot 40=1400;\\quad 25\times 56=1400,\\quad 25+56=81\\;\\ 35 u^{2} + 81 u + 40 = \\left(5 u + 8\\right) \\left(7 u + 5\\right)\\)"
+              "work": "\\(35\\cdot 40=1400;\\quad 25\\times 56=1400,\\quad 25+56=81\\;\\ 35 u^{2} + 81 u + 40 = \\left(5 u + 8\\right) \\left(7 u + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -70477,7 +70477,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(9\\cdot 63=567;\\quad 21\times 27=567,\\quad 21+27=48\\;\\ 9 q^{2} + 48 q + 63 = 3 \\left(q + 3\\right) \\left(3 q + 7\\right)\\)"
+              "work": "\\(9\\cdot 63=567;\\quad 21\\times 27=567,\\quad 21+27=48\\;\\ 9 q^{2} + 48 q + 63 = 3 \\left(q + 3\\right) \\left(3 q + 7\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -70521,7 +70521,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(756\\cdot 1=756;\\quad 18\times 42=756,\\quad 18+42=60\\;\\ 756 q^{2} + 60 q + 1 = \\left(18 q + 1\\right) \\left(42 q + 1\\right)\\)"
+              "work": "\\(756\\cdot 1=756;\\quad 18\\times 42=756,\\quad 18+42=60\\;\\ 756 q^{2} + 60 q + 1 = \\left(18 q + 1\\right) \\left(42 q + 1\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -70565,7 +70565,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(25\\cdot 42=1050;\\quad 30\times 35=1050,\\quad 30+35=65\\;\\ 25 s^{2} + 65 s + 42 = \\left(5 s + 6\\right) \\left(5 s + 7\\right)\\)"
+              "work": "\\(25\\cdot 42=1050;\\quad 30\\times 35=1050,\\quad 30+35=65\\;\\ 25 s^{2} + 65 s + 42 = \\left(5 s + 6\\right) \\left(5 s + 7\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -70609,7 +70609,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(14\\cdot 56=784;\\quad 14\times 56=784,\\quad 14+56=70\\;\\ 14 u^{2} + 70 u + 56 = 14 \\left(u + 1\\right) \\left(u + 4\\right)\\)"
+              "work": "\\(14\\cdot 56=784;\\quad 14\\times 56=784,\\quad 14+56=70\\;\\ 14 u^{2} + 70 u + 56 = 14 \\left(u + 1\\right) \\left(u + 4\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -70653,7 +70653,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(14\\cdot 24=336;\\quad 6\times 56=336,\\quad 6+56=62\\;\\ 14 p^{2} + 62 p + 24 = 2 \\left(p + 4\\right) \\left(7 p + 3\\right)\\)"
+              "work": "\\(14\\cdot 24=336;\\quad 6\\times 56=336,\\quad 6+56=62\\;\\ 14 p^{2} + 62 p + 24 = 2 \\left(p + 4\\right) \\left(7 p + 3\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -70697,7 +70697,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(32\\cdot 10=320;\\quad 8\times 40=320,\\quad 8+40=48\\;\\ 32 r^{2} + 48 r + 10 = 2 \\left(4 r + 1\\right) \\left(4 r + 5\\right)\\)"
+              "work": "\\(32\\cdot 10=320;\\quad 8\\times 40=320,\\quad 8+40=48\\;\\ 32 r^{2} + 48 r + 10 = 2 \\left(4 r + 1\\right) \\left(4 r + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -70741,7 +70741,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(72\\cdot 15=1080;\\quad 24\times 45=1080,\\quad 24+45=69\\;\\ 72 v^{2} + 69 v + 15 = 3 \\left(3 v + 1\\right) \\left(8 v + 5\\right)\\)"
+              "work": "\\(72\\cdot 15=1080;\\quad 24\\times 45=1080,\\quad 24+45=69\\;\\ 72 v^{2} + 69 v + 15 = 3 \\left(3 v + 1\\right) \\left(8 v + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -70785,7 +70785,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(12\\cdot 14=168;\\quad 12\times 14=168,\\quad 12+14=26\\;\\ 12 p^{2} + 26 p + 14 = 2 \\left(p + 1\\right) \\left(6 p + 7\\right)\\)"
+              "work": "\\(12\\cdot 14=168;\\quad 12\\times 14=168,\\quad 12+14=26\\;\\ 12 p^{2} + 26 p + 14 = 2 \\left(p + 1\\right) \\left(6 p + 7\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -70829,7 +70829,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(56\\cdot 32=1792;\\quad 32\times 56=1792,\\quad 32+56=88\\;\\ 56 v^{2} + 88 v + 32 = 8 \\left(v + 1\\right) \\left(7 v + 4\\right)\\)"
+              "work": "\\(56\\cdot 32=1792;\\quad 32\\times 56=1792,\\quad 32+56=88\\;\\ 56 v^{2} + 88 v + 32 = 8 \\left(v + 1\\right) \\left(7 v + 4\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -70873,7 +70873,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(27\\cdot 20=540;\\quad 15\times 36=540,\\quad 15+36=51\\;\\ 27 w^{2} + 51 w + 20 = \\left(3 w + 4\\right) \\left(9 w + 5\\right)\\)"
+              "work": "\\(27\\cdot 20=540;\\quad 15\\times 36=540,\\quad 15+36=51\\;\\ 27 w^{2} + 51 w + 20 = \\left(3 w + 4\\right) \\left(9 w + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -70917,7 +70917,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(28\\cdot 24=672;\\quad 12\times 56=672,\\quad 12+56=68\\;\\ 28 u^{2} + 68 u + 24 = 4 \\left(u + 2\\right) \\left(7 u + 3\\right)\\)"
+              "work": "\\(28\\cdot 24=672;\\quad 12\\times 56=672,\\quad 12+56=68\\;\\ 28 u^{2} + 68 u + 24 = 4 \\left(u + 2\\right) \\left(7 u + 3\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -70961,7 +70961,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(16\\cdot 30=480;\\quad 10\times 48=480,\\quad 10+48=58\\;\\ 16 p^{2} + 58 p + 30 = 2 \\left(p + 3\\right) \\left(8 p + 5\\right)\\)"
+              "work": "\\(16\\cdot 30=480;\\quad 10\\times 48=480,\\quad 10+48=58\\;\\ 16 p^{2} + 58 p + 30 = 2 \\left(p + 3\\right) \\left(8 p + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -71005,7 +71005,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(25\\cdot 24=600;\\quad 20\times 30=600,\\quad 20+30=50\\;\\ 25 s^{2} + 50 s + 24 = \\left(5 s + 4\\right) \\left(5 s + 6\\right)\\)"
+              "work": "\\(25\\cdot 24=600;\\quad 20\\times 30=600,\\quad 20+30=50\\;\\ 25 s^{2} + 50 s + 24 = \\left(5 s + 4\\right) \\left(5 s + 6\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -71049,7 +71049,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(24\\cdot 45=1080;\\quad 30\times 36=1080,\\quad 30+36=66\\;\\ 24 r^{2} + 66 r + 45 = 3 \\left(2 r + 3\\right) \\left(4 r + 5\\right)\\)"
+              "work": "\\(24\\cdot 45=1080;\\quad 30\\times 36=1080,\\quad 30+36=66\\;\\ 24 r^{2} + 66 r + 45 = 3 \\left(2 r + 3\\right) \\left(4 r + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -71093,7 +71093,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(10\\cdot 18=180;\\quad 6\times 30=180,\\quad 6+30=36\\;\\ 10 s^{2} + 36 s + 18 = 2 \\left(s + 3\\right) \\left(5 s + 3\\right)\\)"
+              "work": "\\(10\\cdot 18=180;\\quad 6\\times 30=180,\\quad 6+30=36\\;\\ 10 s^{2} + 36 s + 18 = 2 \\left(s + 3\\right) \\left(5 s + 3\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -71137,7 +71137,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(27\\cdot 21=567;\\quad 21\times 27=567,\\quad 21+27=48\\;\\ 27 q^{2} + 48 q + 21 = 3 \\left(q + 1\\right) \\left(9 q + 7\\right)\\)"
+              "work": "\\(27\\cdot 21=567;\\quad 21\\times 27=567,\\quad 21+27=48\\;\\ 27 q^{2} + 48 q + 21 = 3 \\left(q + 1\\right) \\left(9 q + 7\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -71181,7 +71181,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(8\\cdot 30=240;\\quad 10\times 24=240,\\quad 10+24=34\\;\\ 8 r^{2} + 34 r + 30 = 2 \\left(r + 3\\right) \\left(4 r + 5\\right)\\)"
+              "work": "\\(8\\cdot 30=240;\\quad 10\\times 24=240,\\quad 10+24=34\\;\\ 8 r^{2} + 34 r + 30 = 2 \\left(r + 3\\right) \\left(4 r + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -71225,7 +71225,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(36\\cdot 56=2016;\\quad 32\times 63=2016,\\quad 32+63=95\\;\\ 36 r^{2} + 95 r + 56 = \\left(4 r + 7\\right) \\left(9 r + 8\\right)\\)"
+              "work": "\\(36\\cdot 56=2016;\\quad 32\\times 63=2016,\\quad 32+63=95\\;\\ 36 r^{2} + 95 r + 56 = \\left(4 r + 7\\right) \\left(9 r + 8\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -71269,7 +71269,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(18\\cdot 4=72;\\quad 6\times 12=72,\\quad 6+12=18\\;\\ 18 t^{2} + 18 t + 4 = 2 \\left(3 t + 1\\right) \\left(3 t + 2\\right)\\)"
+              "work": "\\(18\\cdot 4=72;\\quad 6\\times 12=72,\\quad 6+12=18\\;\\ 18 t^{2} + 18 t + 4 = 2 \\left(3 t + 1\\right) \\left(3 t + 2\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -71313,7 +71313,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(40\\cdot 15=600;\\quad 15\times 40=600,\\quad 15+40=55\\;\\ 40 v^{2} + 55 v + 15 = 5 \\left(v + 1\\right) \\left(8 v + 3\\right)\\)"
+              "work": "\\(40\\cdot 15=600;\\quad 15\\times 40=600,\\quad 15+40=55\\;\\ 40 v^{2} + 55 v + 15 = 5 \\left(v + 1\\right) \\left(8 v + 3\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -71357,7 +71357,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(40\\cdot 72=2880;\\quad 45\times 64=2880,\\quad 45+64=109\\;\\ 40 s^{2} + 109 s + 72 = \\left(5 s + 8\\right) \\left(8 s + 9\\right)\\)"
+              "work": "\\(40\\cdot 72=2880;\\quad 45\\times 64=2880,\\quad 45+64=109\\;\\ 40 s^{2} + 109 s + 72 = \\left(5 s + 8\\right) \\left(8 s + 9\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -71401,7 +71401,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(12\\cdot 42=504;\\quad 14\times 36=504,\\quad 14+36=50\\;\\ 12 p^{2} + 50 p + 42 = 2 \\left(p + 3\\right) \\left(6 p + 7\\right)\\)"
+              "work": "\\(12\\cdot 42=504;\\quad 14\\times 36=504,\\quad 14+36=50\\;\\ 12 p^{2} + 50 p + 42 = 2 \\left(p + 3\\right) \\left(6 p + 7\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -71445,7 +71445,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(20\\cdot 45=900;\\quad 25\times 36=900,\\quad 25+36=61\\;\\ 20 s^{2} + 61 s + 45 = \\left(4 s + 5\\right) \\left(5 s + 9\\right)\\)"
+              "work": "\\(20\\cdot 45=900;\\quad 25\\times 36=900,\\quad 25+36=61\\;\\ 20 s^{2} + 61 s + 45 = \\left(4 s + 5\\right) \\left(5 s + 9\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -71489,7 +71489,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(30\\cdot 24=720;\\quad 18\times 40=720,\\quad 18+40=58\\;\\ 30 t^{2} + 58 t + 24 = 2 \\left(3 t + 4\\right) \\left(5 t + 3\\right)\\)"
+              "work": "\\(30\\cdot 24=720;\\quad 18\\times 40=720,\\quad 18+40=58\\;\\ 30 t^{2} + 58 t + 24 = 2 \\left(3 t + 4\\right) \\left(5 t + 3\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -71533,7 +71533,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(54\\cdot 18=972;\\quad 27\times 36=972,\\quad 27+36=63\\;\\ 54 t^{2} + 63 t + 18 = 9 \\left(2 t + 1\\right) \\left(3 t + 2\\right)\\)"
+              "work": "\\(54\\cdot 18=972;\\quad 27\\times 36=972,\\quad 27+36=63\\;\\ 54 t^{2} + 63 t + 18 = 9 \\left(2 t + 1\\right) \\left(3 t + 2\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -71577,7 +71577,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(14\\cdot 48=672;\\quad 12\times 56=672,\\quad 12+56=68\\;\\ 14 u^{2} + 68 u + 48 = 2 \\left(u + 4\\right) \\left(7 u + 6\\right)\\)"
+              "work": "\\(14\\cdot 48=672;\\quad 12\\times 56=672,\\quad 12+56=68\\;\\ 14 u^{2} + 68 u + 48 = 2 \\left(u + 4\\right) \\left(7 u + 6\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -71621,7 +71621,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(48\\cdot 45=2160;\\quad 40\times 54=2160,\\quad 40+54=94\\;\\ 48 v^{2} + 94 v + 45 = \\left(6 v + 5\\right) \\left(8 v + 9\\right)\\)"
+              "work": "\\(48\\cdot 45=2160;\\quad 40\\times 54=2160,\\quad 40+54=94\\;\\ 48 v^{2} + 94 v + 45 = \\left(6 v + 5\\right) \\left(8 v + 9\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -71665,7 +71665,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(21\\cdot 32=672;\\quad 12\times 56=672,\\quad 12+56=68\\;\\ 21 q^{2} + 68 q + 32 = \\left(3 q + 8\\right) \\left(7 q + 4\\right)\\)"
+              "work": "\\(21\\cdot 32=672;\\quad 12\\times 56=672,\\quad 12+56=68\\;\\ 21 q^{2} + 68 q + 32 = \\left(3 q + 8\\right) \\left(7 q + 4\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -71709,7 +71709,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(6\\cdot 28=168;\\quad 12\times 14=168,\\quad 12+14=26\\;\\ 6 q^{2} + 26 q + 28 = 2 \\left(q + 2\\right) \\left(3 q + 7\\right)\\)"
+              "work": "\\(6\\cdot 28=168;\\quad 12\\times 14=168,\\quad 12+14=26\\;\\ 6 q^{2} + 26 q + 28 = 2 \\left(q + 2\\right) \\left(3 q + 7\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -71753,7 +71753,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(54\\cdot 32=1728;\\quad 24\times 72=1728,\\quad 24+72=96\\;\\ 54 t^{2} + 96 t + 32 = 2 \\left(3 t + 4\\right) \\left(9 t + 4\\right)\\)"
+              "work": "\\(54\\cdot 32=1728;\\quad 24\\times 72=1728,\\quad 24+72=96\\;\\ 54 t^{2} + 96 t + 32 = 2 \\left(3 t + 4\\right) \\left(9 t + 4\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -71797,7 +71797,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(24\\cdot 10=240;\\quad 15\times 16=240,\\quad 15+16=31\\;\\ 24 v^{2} + 31 v + 10 = \\left(3 v + 2\\right) \\left(8 v + 5\\right)\\)"
+              "work": "\\(24\\cdot 10=240;\\quad 15\\times 16=240,\\quad 15+16=31\\;\\ 24 v^{2} + 31 v + 10 = \\left(3 v + 2\\right) \\left(8 v + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -71841,7 +71841,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(27\\cdot 64=1728;\\quad 24\times 72=1728,\\quad 24+72=96\\;\\ 27 w^{2} + 96 w + 64 = \\left(3 w + 8\\right) \\left(9 w + 8\\right)\\)"
+              "work": "\\(27\\cdot 64=1728;\\quad 24\\times 72=1728,\\quad 24+72=96\\;\\ 27 w^{2} + 96 w + 64 = \\left(3 w + 8\\right) \\left(9 w + 8\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -71885,7 +71885,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(72\\cdot 14=1008;\\quad 18\times 56=1008,\\quad 18+56=74\\;\\ 72 w^{2} + 74 w + 14 = 2 \\left(4 w + 1\\right) \\left(9 w + 7\\right)\\)"
+              "work": "\\(72\\cdot 14=1008;\\quad 18\\times 56=1008,\\quad 18+56=74\\;\\ 72 w^{2} + 74 w + 14 = 2 \\left(4 w + 1\\right) \\left(9 w + 7\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -71929,7 +71929,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(12\\cdot 63=756;\\quad 14\times 54=756,\\quad 14+54=68\\;\\ 12 t^{2} + 68 t + 63 = \\left(2 t + 9\\right) \\left(6 t + 7\\right)\\)"
+              "work": "\\(12\\cdot 63=756;\\quad 14\\times 54=756,\\quad 14+54=68\\;\\ 12 t^{2} + 68 t + 63 = \\left(2 t + 9\\right) \\left(6 t + 7\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -71973,7 +71973,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(10\\cdot 18=180;\\quad 6\times 30=180,\\quad 6+30=36\\;\\ 10 s^{2} + 36 s + 18 = 2 \\left(s + 3\\right) \\left(5 s + 3\\right)\\)"
+              "work": "\\(10\\cdot 18=180;\\quad 6\\times 30=180,\\quad 6+30=36\\;\\ 10 s^{2} + 36 s + 18 = 2 \\left(s + 3\\right) \\left(5 s + 3\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -72017,7 +72017,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(63\\cdot 21=1323;\\quad 21\times 63=1323,\\quad 21+63=84\\;\\ 63 u^{2} + 84 u + 21 = 21 \\left(u + 1\\right) \\left(3 u + 1\\right)\\)"
+              "work": "\\(63\\cdot 21=1323;\\quad 21\\times 63=1323,\\quad 21+63=84\\;\\ 63 u^{2} + 84 u + 21 = 21 \\left(u + 1\\right) \\left(3 u + 1\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -72061,7 +72061,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(8\\cdot 72=576;\\quad 16\times 36=576,\\quad 16+36=52\\;\\ 8 r^{2} + 52 r + 72 = 4 \\left(r + 2\\right) \\left(2 r + 9\\right)\\)"
+              "work": "\\(8\\cdot 72=576;\\quad 16\\times 36=576,\\quad 16+36=52\\;\\ 8 r^{2} + 52 r + 72 = 4 \\left(r + 2\\right) \\left(2 r + 9\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -72105,7 +72105,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(21\\cdot 49=1029;\\quad 21\times 49=1029,\\quad 21+49=70\\;\\ 21 u^{2} + 70 u + 49 = 7 \\left(u + 1\\right) \\left(3 u + 7\\right)\\)"
+              "work": "\\(21\\cdot 49=1029;\\quad 21\\times 49=1029,\\quad 21+49=70\\;\\ 21 u^{2} + 70 u + 49 = 7 \\left(u + 1\\right) \\left(3 u + 7\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -72149,7 +72149,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(27\\cdot 14=378;\\quad 6\times 63=378,\\quad 6+63=69\\;\\ 27 w^{2} + 69 w + 14 = \\left(3 w + 7\\right) \\left(9 w + 2\\right)\\)"
+              "work": "\\(27\\cdot 14=378;\\quad 6\\times 63=378,\\quad 6+63=69\\;\\ 27 w^{2} + 69 w + 14 = \\left(3 w + 7\\right) \\left(9 w + 2\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -72193,7 +72193,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(21\\cdot 40=840;\\quad 24\times 35=840,\\quad 24+35=59\\;\\ 21 q^{2} + 59 q + 40 = \\left(3 q + 5\\right) \\left(7 q + 8\\right)\\)"
+              "work": "\\(21\\cdot 40=840;\\quad 24\\times 35=840,\\quad 24+35=59\\;\\ 21 q^{2} + 59 q + 40 = \\left(3 q + 5\\right) \\left(7 q + 8\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -72237,7 +72237,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(9\\cdot 35=315;\\quad 15\times 21=315,\\quad 15+21=36\\;\\ 9 q^{2} + 36 q + 35 = \\left(3 q + 5\\right) \\left(3 q + 7\\right)\\)"
+              "work": "\\(9\\cdot 35=315;\\quad 15\\times 21=315,\\quad 15+21=36\\;\\ 9 q^{2} + 36 q + 35 = \\left(3 q + 5\\right) \\left(3 q + 7\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -72281,7 +72281,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(18\\cdot 64=1152;\\quad 24\times 48=1152,\\quad 24+48=72\\;\\ 18 t^{2} + 72 t + 64 = 2 \\left(3 t + 4\\right) \\left(3 t + 8\\right)\\)"
+              "work": "\\(18\\cdot 64=1152;\\quad 24\\times 48=1152,\\quad 24+48=72\\;\\ 18 t^{2} + 72 t + 64 = 2 \\left(3 t + 4\\right) \\left(3 t + 8\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -72325,7 +72325,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(12\\cdot 24=288;\\quad 12\times 24=288,\\quad 12+24=36\\;\\ 12 p^{2} + 36 p + 24 = 12 \\left(p + 1\\right) \\left(p + 2\\right)\\)"
+              "work": "\\(12\\cdot 24=288;\\quad 12\\times 24=288,\\quad 12+24=36\\;\\ 12 p^{2} + 36 p + 24 = 12 \\left(p + 1\\right) \\left(p + 2\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -72369,7 +72369,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(24\\cdot 21=504;\\quad 18\times 28=504,\\quad 18+28=46\\;\\ 24 t^{2} + 46 t + 21 = \\left(4 t + 3\\right) \\left(6 t + 7\\right)\\)"
+              "work": "\\(24\\cdot 21=504;\\quad 18\\times 28=504,\\quad 18+28=46\\;\\ 24 t^{2} + 46 t + 21 = \\left(4 t + 3\\right) \\left(6 t + 7\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -72413,7 +72413,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(45\\cdot 18=810;\\quad 10\times 81=810,\\quad 10+81=91\\;\\ 45 s^{2} + 91 s + 18 = \\left(5 s + 9\\right) \\left(9 s + 2\\right)\\)"
+              "work": "\\(45\\cdot 18=810;\\quad 10\\times 81=810,\\quad 10+81=91\\;\\ 45 s^{2} + 91 s + 18 = \\left(5 s + 9\\right) \\left(9 s + 2\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -72457,7 +72457,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(64\\cdot 18=1152;\\quad 16\times 72=1152,\\quad 16+72=88\\;\\ 64 v^{2} + 88 v + 18 = 2 \\left(4 v + 1\\right) \\left(8 v + 9\\right)\\)"
+              "work": "\\(64\\cdot 18=1152;\\quad 16\\times 72=1152,\\quad 16+72=88\\;\\ 64 v^{2} + 88 v + 18 = 2 \\left(4 v + 1\\right) \\left(8 v + 9\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -72501,7 +72501,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(45\\cdot 48=2160;\\quad 40\times 54=2160,\\quad 40+54=94\\;\\ 45 s^{2} + 94 s + 48 = \\left(5 s + 6\\right) \\left(9 s + 8\\right)\\)"
+              "work": "\\(45\\cdot 48=2160;\\quad 40\\times 54=2160,\\quad 40+54=94\\;\\ 45 s^{2} + 94 s + 48 = \\left(5 s + 6\\right) \\left(9 s + 8\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -72545,7 +72545,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(14\\cdot 4=56;\\quad 4\times 14=56,\\quad 4+14=18\\;\\ 14 u^{2} + 18 u + 4 = 2 \\left(u + 1\\right) \\left(7 u + 2\\right)\\)"
+              "work": "\\(14\\cdot 4=56;\\quad 4\\times 14=56,\\quad 4+14=18\\;\\ 14 u^{2} + 18 u + 4 = 2 \\left(u + 1\\right) \\left(7 u + 2\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -72589,7 +72589,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(28\\cdot 16=448;\\quad 14\times 32=448,\\quad 14+32=46\\;\\ 28 u^{2} + 46 u + 16 = 2 \\left(2 u + 1\\right) \\left(7 u + 8\\right)\\)"
+              "work": "\\(28\\cdot 16=448;\\quad 14\\times 32=448,\\quad 14+32=46\\;\\ 28 u^{2} + 46 u + 16 = 2 \\left(2 u + 1\\right) \\left(7 u + 8\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -72633,7 +72633,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(48\\cdot 45=2160;\\quad 30\times 72=2160,\\quad 30+72=102\\;\\ 48 t^{2} + 102 t + 45 = 3 \\left(2 t + 3\\right) \\left(8 t + 5\\right)\\)"
+              "work": "\\(48\\cdot 45=2160;\\quad 30\\times 72=2160,\\quad 30+72=102\\;\\ 48 t^{2} + 102 t + 45 = 3 \\left(2 t + 3\\right) \\left(8 t + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -72677,7 +72677,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(21\\cdot 42=882;\\quad 21\times 42=882,\\quad 21+42=63\\;\\ 21 q^{2} + 63 q + 42 = 21 \\left(q + 1\\right) \\left(q + 2\\right)\\)"
+              "work": "\\(21\\cdot 42=882;\\quad 21\\times 42=882,\\quad 21+42=63\\;\\ 21 q^{2} + 63 q + 42 = 21 \\left(q + 1\\right) \\left(q + 2\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -72721,7 +72721,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(35\\cdot 42=1470;\\quad 35\times 42=1470,\\quad 35+42=77\\;\\ 35 s^{2} + 77 s + 42 = 7 \\left(s + 1\\right) \\left(5 s + 6\\right)\\)"
+              "work": "\\(35\\cdot 42=1470;\\quad 35\\times 42=1470,\\quad 35+42=77\\;\\ 35 s^{2} + 77 s + 42 = 7 \\left(s + 1\\right) \\left(5 s + 6\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -72765,7 +72765,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(36\\cdot 45=1620;\\quad 30\times 54=1620,\\quad 30+54=84\\;\\ 36 t^{2} + 84 t + 45 = 3 \\left(2 t + 3\\right) \\left(6 t + 5\\right)\\)"
+              "work": "\\(36\\cdot 45=1620;\\quad 30\\times 54=1620,\\quad 30+54=84\\;\\ 36 t^{2} + 84 t + 45 = 3 \\left(2 t + 3\\right) \\left(6 t + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -72809,7 +72809,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(36\\cdot 45=1620;\\quad 30\times 54=1620,\\quad 30+54=84\\;\\ 36 t^{2} + 84 t + 45 = 3 \\left(2 t + 3\\right) \\left(6 t + 5\\right)\\)"
+              "work": "\\(36\\cdot 45=1620;\\quad 30\\times 54=1620,\\quad 30+54=84\\;\\ 36 t^{2} + 84 t + 45 = 3 \\left(2 t + 3\\right) \\left(6 t + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -72853,7 +72853,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(45\\cdot 30=1350;\\quad 25\times 54=1350,\\quad 25+54=79\\;\\ 45 w^{2} + 79 w + 30 = \\left(5 w + 6\\right) \\left(9 w + 5\\right)\\)"
+              "work": "\\(45\\cdot 30=1350;\\quad 25\\times 54=1350,\\quad 25+54=79\\;\\ 45 w^{2} + 79 w + 30 = \\left(5 w + 6\\right) \\left(9 w + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -72897,7 +72897,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(18\\cdot 8=144;\\quad 12\times 12=144,\\quad 12+12=24\\;\\ 18 q^{2} + 24 q + 8 = 2 \\left(3 q + 2\\right)^{2}\\)"
+              "work": "\\(18\\cdot 8=144;\\quad 12\\times 12=144,\\quad 12+12=24\\;\\ 18 q^{2} + 24 q + 8 = 2 \\left(3 q + 2\\right)^{2}\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -72941,7 +72941,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(32\\cdot 12=384;\\quad 16\times 24=384,\\quad 16+24=40\\;\\ 32 v^{2} + 40 v + 12 = 4 \\left(2 v + 1\\right) \\left(4 v + 3\\right)\\)"
+              "work": "\\(32\\cdot 12=384;\\quad 16\\times 24=384,\\quad 16+24=40\\;\\ 32 v^{2} + 40 v + 12 = 4 \\left(2 v + 1\\right) \\left(4 v + 3\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -72985,7 +72985,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(9\\cdot 15=135;\\quad 9\times 15=135,\\quad 9+15=24\\;\\ 9 q^{2} + 24 q + 15 = 3 \\left(q + 1\\right) \\left(3 q + 5\\right)\\)"
+              "work": "\\(9\\cdot 15=135;\\quad 9\\times 15=135,\\quad 9+15=24\\;\\ 9 q^{2} + 24 q + 15 = 3 \\left(q + 1\\right) \\left(3 q + 5\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",
@@ -73029,7 +73029,7 @@
             },
             {
               "explain": "Choose a factor pair whose product is a times c and whose sum is b; split the middle term and factor by grouping.",
-              "work": "\\(12\\cdot 24=288;\\quad 12\times 24=288,\\quad 12+24=36\\;\\ 12 r^{2} + 36 r + 24 = 12 \\left(r + 1\\right) \\left(r + 2\\right)\\)"
+              "work": "\\(12\\cdot 24=288;\\quad 12\\times 24=288,\\quad 12+24=36\\;\\ 12 r^{2} + 36 r + 24 = 12 \\left(r + 1\\right) \\left(r + 2\\right)\\)"
             },
             {
               "explain": "Expand the factors to check the result.",

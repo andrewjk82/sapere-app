@@ -116,7 +116,7 @@
             },
             {
               "explain": "Eliminate option A: \\(P(B|A)\\) is the conditional probability of \\(B\\) given \\(A\\), not the probability of both occurring.",
-              "work": "\\(P(B|A) = \\frac{P(A \\cap B)}{P(A)} \neq P(A)P(B) \\text{ in general}\\)"
+              "work": "\\(P(B|A) = \\frac{P(A \\cap B)}{P(A)} \\neq P(A)P(B) \\text{ in general}\\)"
             },
             {
               "explain": "Eliminate option C: \\(P(A \\cup B)\\) is the probability that at least one of \\(A\\) or \\(B\\) occurs, which is not what is asked.",

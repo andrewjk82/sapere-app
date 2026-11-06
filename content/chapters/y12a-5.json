@@ -706,7 +706,7 @@
           "solution": "Using change of base, \\(\\log_{3} 8 = \\dfrac{\\ln 8}{\\ln 3} \\approx 1.893\\) (4 s.f.).",
           "steps": [
             {
-              "explain": "Given: approximate \\(\\log_{3} 8\\) correct to four significant figures. Strategy: calculators evaluate natural logs easily, so apply the change-of-base formula \\(\\log_{b} a = \\dfrac{\\ln a}{\\ln b}\\) (valid for \\(a>0\\) and \\(b>0\\), \\(b\neq 1\\)). Why change base? The definition \\(\\log_{3} 8\\) is the exponent that turns 3 into 8, and writing it as a ratio of natural logs lets you use the \\(\\ln\\) key. A common mistake is swapping numerator and denominator (\\(\\ln 3/\\ln 8\\)).",
+              "explain": "Given: approximate \\(\\log_{3} 8\\) correct to four significant figures. Strategy: calculators evaluate natural logs easily, so apply the change-of-base formula \\(\\log_{b} a = \\dfrac{\\ln a}{\\ln b}\\) (valid for \\(a>0\\) and \\(b>0\\), \\(b\\neq 1\\)). Why change base? The definition \\(\\log_{3} 8\\) is the exponent that turns 3 into 8, and writing it as a ratio of natural logs lets you use the \\(\\ln\\) key. A common mistake is swapping numerator and denominator (\\(\\ln 3/\\ln 8\\)).",
               "work": "\\(\\log_{3} 8 = \\dfrac{\\ln 8}{\\ln 3}\\)"
             },
             {
@@ -4194,7 +4194,7 @@
               "work": "\\(\\dfrac{2(\\ln x - 1)}{(\\ln x)^{2}}\\)"
             },
             {
-              "explain": "Final answer: \\(\\dfrac{2(\\ln x - 1)}{(\\ln x)^{2}}\\). Domain: \\(x > 0\\), \\(x \neq 1\\) (so \\(\\ln x \neq 0\\)).",
+              "explain": "Final answer: \\(\\dfrac{2(\\ln x - 1)}{(\\ln x)^{2}}\\). Domain: \\(x > 0\\), \\(x \\neq 1\\) (so \\(\\ln x \\neq 0\\)).",
               "work": "\\(\\dfrac{2(\\ln x - 1)}{(\\ln x)^{2}}\\)"
             }
           ],
@@ -4228,7 +4228,7 @@
               "work": "\\(y' = \\dfrac{x^{2}(3\\ln x - 1)}{(\\ln x)^{2}}\\)"
             },
             {
-              "explain": "Final answer: \\(\\dfrac{x^{2}(3\\ln x - 1)}{(\\ln x)^{2}}\\). Domain: \\(x > 0\\), \\(x \neq 1\\). Why this step? It isolates one clear rule so the next algebra stays clean. A common slip is a sign error or forgetting a chain-rule factor — re-check before continuing.",
+              "explain": "Final answer: \\(\\dfrac{x^{2}(3\\ln x - 1)}{(\\ln x)^{2}}\\). Domain: \\(x > 0\\), \\(x \\neq 1\\). Why this step? It isolates one clear rule so the next algebra stays clean. A common slip is a sign error or forgetting a chain-rule factor — re-check before continuing.",
               "work": "\\(\\dfrac{x^{2}(3\\ln x - 1)}{(\\ln x)^{2}}\\)"
             }
           ],
@@ -4304,7 +4304,7 @@
               "work": "\\(y' = \\dfrac{e^{2x}(2x\\ln x - 1)}{x(\\ln x)^{2}}\\)"
             },
             {
-              "explain": "Final simplified answer: \\(\\dfrac{e^{2x}(2x\\ln x - 1)}{x(\\ln x)^{2}}\\). Domain: \\(x > 0\\), \\(x \neq 1\\).",
+              "explain": "Final simplified answer: \\(\\dfrac{e^{2x}(2x\\ln x - 1)}{x(\\ln x)^{2}}\\). Domain: \\(x > 0\\), \\(x \\neq 1\\).",
               "work": "\\(\\dfrac{e^{2x}(2x\\ln x - 1)}{x(\\ln x)^{2}}\\)"
             }
           ],
@@ -5053,7 +5053,7 @@
               "work": "\\(\\dfrac{y}{x} - 2\\left(\\dfrac{y}{x}\\right)^{2} = \\dfrac{\\ln x - 1}{2(\\ln x)^{2}}\\)"
             },
             {
-              "explain": "Compare with the left-hand side. The two sides are identical, so the DE holds. State the domain: \\(x > 0\\) and \\(\\ln x \neq 0\\) (i.e. \\(x \neq 1\\)).",
+              "explain": "Compare with the left-hand side. The two sides are identical, so the DE holds. State the domain: \\(x > 0\\) and \\(\\ln x \\neq 0\\) (i.e. \\(x \\neq 1\\)).",
               "work": "\\(\\dfrac{dy}{dx} = \\dfrac{y}{x} - 2\\left(\\dfrac{y}{x}\\right)^{2}\\)"
             },
             {
@@ -5462,8 +5462,8 @@
               "work": "\\(x < 0:\\ \\dfrac{d}{dx}\\ln(-x) = \\dfrac{1}{x}\\)"
             },
             {
-              "explain": "Both branches give the same formula. Therefore \\(\\dfrac{d}{dx}\\ln|x| = \\dfrac{1}{x}\\) for every \\(x \neq 0\\).",
-              "work": "\\(\\dfrac{d}{dx}\\ln|x| = \\dfrac{1}{x}\\quad (x \neq 0)\\)"
+              "explain": "Both branches give the same formula. Therefore \\(\\dfrac{d}{dx}\\ln|x| = \\dfrac{1}{x}\\) for every \\(x \\neq 0\\).",
+              "work": "\\(\\dfrac{d}{dx}\\ln|x| = \\dfrac{1}{x}\\quad (x \\neq 0)\\)"
             }
           ],
           "manual": true,
@@ -5491,7 +5491,7 @@
             },
             {
               "explain": "Therefore \\(x = 0\\) is excluded from the domain. Geometrically, the curve approaches a vertical asymptote along the \\(y\\)-axis and never meets the origin.",
-              "work": "\\(\\text{Domain: } x \neq 0\\)"
+              "work": "\\(\\text{Domain: } x \\neq 0\\)"
             },
             {
               "explain": "Final answer: \\(\\ln|0|\\) is undefined because the argument of \\(\\ln\\) must be positive.",
@@ -5679,7 +5679,7 @@
           "id": "ascham2020-q14",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Given \\(f(x)=\\frac{x}{\\ln x}\\), solve \\(f'(x)=0\\) in the domain \\(x>0,\\ x\ne1\\).",
+          "stem": "Given \\(f(x)=\\frac{x}{\\ln x}\\), solve \\(f'(x)=0\\) in the domain \\(x>0,\\ x\\ne1\\).",
           "options": [
             "\\(x=e\\)",
             "\\(x=1\\)",
@@ -5687,7 +5687,7 @@
             "No solution"
           ],
           "answer": 0,
-          "hint": "Use the quotient rule, then set the numerator equal to zero; remember \\(\\ln x\ne0\\).",
+          "hint": "Use the quotient rule, then set the numerator equal to zero; remember \\(\\ln x\\ne0\\).",
           "keyPoints": [
             {
               "text": "\\(f'(x)=0\\)",
@@ -5708,7 +5708,7 @@
               "work": "\\(\\ln x-1=0\\Rightarrow\\ln x=1\\)"
             },
             {
-              "explain": "Exponentiate both sides using base e; this value satisfies \\(x>0,x\ne1\\).",
+              "explain": "Exponentiate both sides using base e; this value satisfies \\(x>0,x\\ne1\\).",
               "work": "\\(x=e^1=e\\)"
             },
             {
@@ -8744,7 +8744,7 @@
           "solution": "The correct answer is \\(x = \\pm 2\\).",
           "steps": [
             {
-              "explain": "Inflection candidates where \\(y'' = 0\\) and denominator \\(\neq 0\\): \\(4 - x^{2} = 0\\).",
+              "explain": "Inflection candidates where \\(y'' = 0\\) and denominator \\(\\neq 0\\): \\(4 - x^{2} = 0\\).",
               "work": "\\(4 - x^{2} = 0\\)"
             },
             {
@@ -13131,7 +13131,7 @@
               "work": "\\(\\int \\dfrac{1}{x\\ln x}\\,dx = \\ln|\\ln x| + C\\)"
             },
             {
-              "explain": "Final family of primitives: \\(\\ln|\\ln x| + C\\) (equivalently \\(\\ln|2\\ln x| + C\\)). Domain requires \\(x > 1\\) or \\(0 < x < 1\\) carefully so \\(\\ln x \neq 0\\).",
+              "explain": "Final family of primitives: \\(\\ln|\\ln x| + C\\) (equivalently \\(\\ln|2\\ln x| + C\\)). Domain requires \\(x > 1\\) or \\(0 < x < 1\\) carefully so \\(\\ln x \\neq 0\\).",
               "work": "\\(\\ln|\\ln x| + C\\)"
             }
           ],

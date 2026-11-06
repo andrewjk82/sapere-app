@@ -1385,7 +1385,7 @@
           "dna": {
             "dnaId": "CALC-INT-01"
           },
-          "hint": "For (a), use (u=\tan(2x)). For (b), identify the derivative of the denominator.",
+          "hint": "For (a), use (u=\\tan(2x)). For (b), identify the derivative of the denominator.",
           "keyPoints": [
             {
               "text": "indefinite integrals",
@@ -4891,11 +4891,11 @@
               "steps": [
                 {
                   "explain": "From 0 to 1, velocity is 2, giving a positive rectangle of area 2. From 1 to 2 the triangle has area +1; from 2 to 3 the triangle has area −1.",
-                  "work": "\\(\\Delta x_{0\to3}=2+1-1=2\\)"
+                  "work": "\\(\\Delta x_{0\\to3}=2+1-1=2\\)"
                 },
                 {
                   "explain": "From 3 to 4, velocity is −2, so the displacement changes by −2. The total signed area from 0 to 4 is zero.",
-                  "work": "\\(\\Delta x_{0\to4}=2+(4-3)(-2)=0\\)",
+                  "work": "\\(\\Delta x_{0\\to4}=2+(4-3)(-2)=0\\)",
                   "figure": {
                     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 500 300\"><rect width=\"500\" height=\"300\" fill=\"white\"/><path d=\"M50 150H465M100 265V35\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M100 70H160 C190 70 205 95 220 150 C235 205 250 230 280 230 H395 C420 230 430 185 445 150\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><circle cx=\"160\" cy=\"70\" r=\"4\" fill=\"#334155\"/><circle cx=\"280\" cy=\"230\" r=\"4\" fill=\"#334155\"/><circle cx=\"395\" cy=\"230\" r=\"4\" fill=\"#334155\"/><text x=\"150\" y=\"58\" font-family=\"Arial\" font-size=\"12\">(1,2)</text><text x=\"267\" y=\"252\" font-family=\"Arial\" font-size=\"12\">(3,−2)</text><text x=\"383\" y=\"252\" font-family=\"Arial\" font-size=\"12\">(5,−2)</text><text x=\"439\" y=\"171\" font-family=\"Arial\" font-size=\"12\">(6,0)</text><text x=\"470\" y=\"155\" font-family=\"Arial\" font-size=\"14\">t</text><text x=\"104\" y=\"32\" font-family=\"Arial\" font-size=\"14\">v=dx/dt</text></svg>"
                   }

@@ -9647,7 +9647,7 @@
               "work": "\\(y=e^{t}(x-t+1)\\)"
             },
             {
-              "explain": "Set \\(y=0\\): \\(e^{t}(x-t+1)=0\\Rightarrow x=t-1\\) (since \\(e^{t}\neq 0\\)).",
+              "explain": "Set \\(y=0\\): \\(e^{t}(x-t+1)=0\\Rightarrow x=t-1\\) (since \\(e^{t}\\neq 0\\)).",
               "work": "\\(x=t-1\\)"
             }
           ],
@@ -9856,7 +9856,7 @@
           "solution": "2x+1=0 ⇒ x=-1/2, y=-1/(2e). y''(-1/2)>0 ⇒ local min.",
           "steps": [
             {
-              "explain": "Set \\(y'=0\\). Since \\(e^{2x}\neq 0\\), we need \\(2x+1=0\\Rightarrow x=-\\dfrac{1}{2}\\). Only one stationary point.",
+              "explain": "Set \\(y'=0\\). Since \\(e^{2x}\\neq 0\\), we need \\(2x+1=0\\Rightarrow x=-\\dfrac{1}{2}\\). Only one stationary point.",
               "work": "\\(x=-\\dfrac{1}{2}\\)"
             },
             {
@@ -9887,7 +9887,7 @@
           "solution": "4x+4=0 ⇒ x=-1, y=-e^{-2}. Point (-1,-e^{-2}).",
           "steps": [
             {
-              "explain": "Inflection points require \\(y''=0\\). With \\(e^{2x}\neq 0\\), solve \\(4x+4=0\\Rightarrow x=-1\\).",
+              "explain": "Inflection points require \\(y''=0\\). With \\(e^{2x}\\neq 0\\), solve \\(4x+4=0\\Rightarrow x=-1\\).",
               "work": "\\(x=-1\\)"
             },
             {
@@ -10046,7 +10046,7 @@
           "solution": "Zero at \\(x=1\\). Sign of \\(y\\) matches sign of \\((1-x)\\).",
           "steps": [
             {
-              "explain": "Set \\(y=0\\): \\((1-x)e^{x}=0\\Rightarrow x=1\\) (because \\(e^{x}\neq 0\\)).",
+              "explain": "Set \\(y=0\\): \\((1-x)e^{x}=0\\Rightarrow x=1\\) (because \\(e^{x}\\neq 0\\)).",
               "work": "\\(x=1\\)"
             },
             {
@@ -10341,7 +10341,7 @@
           "solution": "\\(y'=0\\) at \\(x=0,2\\). \\(y''(0)>0\\) min; \\(y''(2)<0\\) max at \\((2,4e^{-2})\\).",
           "steps": [
             {
-              "explain": "From \\(y'=x(2-x)e^{-x}=0\\): \\(x=0\\) or \\(x=2\\) (since \\(e^{-x}\neq 0\\)).",
+              "explain": "From \\(y'=x(2-x)e^{-x}=0\\): \\(x=0\\) or \\(x=2\\) (since \\(e^{-x}\\neq 0\\)).",
               "work": "\\(x=0\\text{ or }2\\)"
             },
             {
@@ -10736,16 +10736,16 @@
               "stem": "At what rate is the tea cooling 4 minutes after it has been poured?",
               "options": [
                 {
-                  "text": "\\(-28\\ln(1.5)(1.5)^{-1.6}\\,^{\\circ}\\!C/\text{min}\\)"
+                  "text": "\\(-28\\ln(1.5)(1.5)^{-1.6}\\,^{\\circ}\\!C/\\text{min}\\)"
                 },
                 {
-                  "text": "\\(28\\ln(1.5)(1.5)^{-1.6}\\,^{\\circ}\\!C/\text{min}\\)"
+                  "text": "\\(28\\ln(1.5)(1.5)^{-1.6}\\,^{\\circ}\\!C/\\text{min}\\)"
                 },
                 {
-                  "text": "\\(-70(1.5)^{-1.6}\\,^{\\circ}\\!C/\text{min}\\)"
+                  "text": "\\(-70(1.5)^{-1.6}\\,^{\\circ}\\!C/\\text{min}\\)"
                 },
                 {
-                  "text": "\\(-0.4(1.5)^{-1.6}\\,^{\\circ}\\!C/\text{min}\\)"
+                  "text": "\\(-0.4(1.5)^{-1.6}\\,^{\\circ}\\!C/\\text{min}\\)"
                 }
               ],
               "answer": 0,
@@ -10778,16 +10778,16 @@
               "stem": "How long after the tea is poured will it take for its temperature to reach 55°C?",
               "options": [
                 {
-                  "text": "\\(\frac{\\ln(7/3)}{0.4\\ln(1.5)}\text{ min}\\)"
+                  "text": "\\(\\frac{\\ln(7/3)}{0.4\\ln(1.5)}\\text{ min}\\)"
                 },
                 {
-                  "text": "\\(\frac{\\ln(3/7)}{0.4\\ln(1.5)}\text{ min}\\)"
+                  "text": "\\(\\frac{\\ln(3/7)}{0.4\\ln(1.5)}\\text{ min}\\)"
                 },
                 {
-                  "text": "\\(4\text{ min}\\)"
+                  "text": "\\(4\\text{ min}\\)"
                 },
                 {
-                  "text": "\\(\frac{7}{3}\text{ min}\\)"
+                  "text": "\\(\\frac{7}{3}\\text{ min}\\)"
                 }
               ],
               "answer": 0,
@@ -11086,7 +11086,7 @@
               "stem": "The graph y=f(x) has one maximum turning point. Find its coordinates.",
               "options": [
                 {
-                  "text": "\\((\\ln4,\frac18)\\)"
+                  "text": "\\((\\ln4,\\frac18)\\)"
                 },
                 {
                   "text": "\\((\\ln2,0)\\)"
@@ -11095,7 +11095,7 @@
                   "text": "\\((0,-1)\\)"
                 },
                 {
-                  "text": "\\((\\ln4,-\frac18)\\)"
+                  "text": "\\((\\ln4,-\\frac18)\\)"
                 }
               ],
               "answer": 0,
@@ -11380,16 +11380,16 @@
               "stem": "At what rate, in lux per metre, is the light intensity decreasing 6 metres below the surface of the lake?",
               "options": [
                 {
-                  "text": "\\(\frac{1000\\ln6}{6}\text{ lux/m}\\)"
+                  "text": "\\(\\frac{1000\\ln6}{6}\\text{ lux/m}\\)"
                 },
                 {
-                  "text": "\\(-1000\\ln6\text{ lux/m}\\)"
+                  "text": "\\(-1000\\ln6\\text{ lux/m}\\)"
                 },
                 {
-                  "text": "\\(1000\text{ lux/m}\\)"
+                  "text": "\\(1000\\text{ lux/m}\\)"
                 },
                 {
-                  "text": "\\(\frac{6000\\ln6}{6}\text{ lux/m}\\)"
+                  "text": "\\(\\frac{6000\\ln6}{6}\\text{ lux/m}\\)"
                 }
               ],
               "answer": 0,
@@ -11565,7 +11565,7 @@
           "solution": "Using the standard formula \\( \\int e^{ax+b} \\, dx = \\frac{1}{a}e^{ax+b} + C \\) with \\( a = 4, b = 0 \\):\n\\( \\int e^{4x} \\, dx = \\frac{1}{4}e^{4x} + C \\).",
           "steps": [
             {
-              "explain": "We integrate an exponential of the form \\(e^{ax}\\). The standard result is \\(\\int e^{ax}\\,dx=\\dfrac{1}{a}e^{ax}+C\\) for \\(a\neq 0\\). Here the exponent is \\(4x\\), so identify \\(a=4\\).",
+              "explain": "We integrate an exponential of the form \\(e^{ax}\\). The standard result is \\(\\int e^{ax}\\,dx=\\dfrac{1}{a}e^{ax}+C\\) for \\(a\\neq 0\\). Here the exponent is \\(4x\\), so identify \\(a=4\\).",
               "work": "\\(a=4\\)"
             },
             {
@@ -17839,7 +17839,7 @@
           "solution": "The correct answer is \\(\\dfrac{3^{x}}{\\ln 3}+C\\).",
           "steps": [
             {
-              "explain": "Standard form: \\(\\displaystyle\\int a^{x}\\,dx = \\dfrac{a^{x}}{\\ln a} + C\\) for \\(a>0,\\ a\neq 1\\).",
+              "explain": "Standard form: \\(\\displaystyle\\int a^{x}\\,dx = \\dfrac{a^{x}}{\\ln a} + C\\) for \\(a>0,\\ a\\neq 1\\).",
               "work": "\\(\\int 3^{x}\\,dx\\)"
             },
             {
@@ -17869,7 +17869,7 @@
           "solution": "The correct answer is \\(\\dfrac{5^{x}}{\\ln 5}+C\\).",
           "steps": [
             {
-              "explain": "Standard form: \\(\\displaystyle\\int a^{x}\\,dx = \\dfrac{a^{x}}{\\ln a} + C\\) for \\(a>0,\\ a\neq 1\\).",
+              "explain": "Standard form: \\(\\displaystyle\\int a^{x}\\,dx = \\dfrac{a^{x}}{\\ln a} + C\\) for \\(a>0,\\ a\\neq 1\\).",
               "work": "\\(\\int 5^{x}\\,dx\\)"
             },
             {
@@ -17899,7 +17899,7 @@
           "solution": "The correct answer is \\(\\dfrac{4^{x}}{\\ln 4}+C\\).",
           "steps": [
             {
-              "explain": "Standard form: \\(\\displaystyle\\int a^{x}\\,dx = \\dfrac{a^{x}}{\\ln a} + C\\) for \\(a>0,\\ a\neq 1\\).",
+              "explain": "Standard form: \\(\\displaystyle\\int a^{x}\\,dx = \\dfrac{a^{x}}{\\ln a} + C\\) for \\(a>0,\\ a\\neq 1\\).",
               "work": "\\(\\int 4^{x}\\,dx\\)"
             },
             {
@@ -17929,7 +17929,7 @@
           "solution": "The correct answer is \\(\\dfrac{8^{x}}{\\ln 8}+C\\).",
           "steps": [
             {
-              "explain": "Standard form: \\(\\displaystyle\\int a^{x}\\,dx = \\dfrac{a^{x}}{\\ln a} + C\\) for \\(a>0,\\ a\neq 1\\).",
+              "explain": "Standard form: \\(\\displaystyle\\int a^{x}\\,dx = \\dfrac{a^{x}}{\\ln a} + C\\) for \\(a>0,\\ a\\neq 1\\).",
               "work": "\\(\\int 8^{x}\\,dx\\)"
             },
             {

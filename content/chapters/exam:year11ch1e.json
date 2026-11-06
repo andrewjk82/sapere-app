@@ -339,7 +339,7 @@
             },
             {
               "explain": "Convert back to x and y.",
-              "work": "\\( u = 2 \\Rightarrow x = 4, v = 3 \\Rightarrow y = 9 \\\text{ (or vice versa \\)})"
+              "work": "\\( u = 2 \\Rightarrow x = 4, v = 3 \\Rightarrow y = 9 \\\\text{ (or vice versa \\)})"
             }
           ],
           "manual": true,
@@ -429,7 +429,7 @@
             },
             {
               "explain": "Since w must be positive, w = 10, l = 15.",
-              "work": "\\( w = 10 \\\text{ m}, quad l = 15 \\\text{ m} \\)"
+              "work": "\\( w = 10 \\\\text{ m}, quad l = 15 \\\\text{ m} \\)"
             }
           ],
           "manual": true,
@@ -446,7 +446,7 @@
           "steps": [
             {
               "explain": "Let x = number of \\(2 coins, y = number of \\)1 coins.",
-              "work": "\\( x + y = 25 \\quad \\\text{and} \\quad 2x + y = 38 \\)"
+              "work": "\\( x + y = 25 \\quad \\\\text{and} \\quad 2x + y = 38 \\)"
             },
             {
               "explain": "Subtract the first equation from the second.",
@@ -628,7 +628,7 @@
             },
             {
               "explain": "The numbers are 5 and 7.",
-              "work": "\\( t = 5 \\\text{ or } t = 7 \\)"
+              "work": "\\( t = 5 \\\\text{ or } t = 7 \\)"
             }
           ],
           "manual": true,

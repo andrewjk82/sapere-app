@@ -236,7 +236,7 @@
           "hint": "Can \\(\\sqrt{2}\\) be written as a fraction \\(p/q\\) where \\(p\\) and \\(q\\) are integers?",
           "steps": [
             {
-              "explain": "A rational number can be expressed as \\(p/q\\) where \\(p, q\\) are integers and \\(q \ne 0\\)."
+              "explain": "A rational number can be expressed as \\(p/q\\) where \\(p, q\\) are integers and \\(q \\ne 0\\)."
             },
             {
               "explain": "\\(\\sqrt{2}\\) cannot be written as such a fraction — its decimal expansion is non-terminating and non-repeating.",
@@ -8338,10 +8338,10 @@
             "Rational; \\\\(\\\\frac{7}{1}\\\\)"
           ],
           "answer": 3,
-          "hint": "A rational number can be written as a fraction \\\\(\\\\frac{a}{b}\\\\) of two integers with \\\\(b \\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
+          "hint": "A rational number can be written as a fraction \\\\(\\\\frac{a}{b}\\\\) of two integers with \\\\(b \\\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
           "steps": [
             {
-              "explain": "Recall that a rational number can be written as a fraction \\(a/b\\) of two integers with \\(b \neq 0\\); an irrational number cannot."
+              "explain": "Recall that a rational number can be written as a fraction \\(a/b\\) of two integers with \\(b \\neq 0\\); an irrational number cannot."
             },
             {
               "explain": "Evaluate/simplify the given number \\\\(7\\\\) to see its exact value.",
@@ -8371,10 +8371,10 @@
             "Irrational (cannot be written as a fraction of integers)"
           ],
           "answer": 2,
-          "hint": "A rational number can be written as a fraction \\\\(\\\\frac{a}{b}\\\\) of two integers with \\\\(b \\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
+          "hint": "A rational number can be written as a fraction \\\\(\\\\frac{a}{b}\\\\) of two integers with \\\\(b \\\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
           "steps": [
             {
-              "explain": "Recall that a rational number can be written as a fraction \\(a/b\\) of two integers with \\(b \neq 0\\); an irrational number cannot."
+              "explain": "Recall that a rational number can be written as a fraction \\(a/b\\) of two integers with \\(b \\neq 0\\); an irrational number cannot."
             },
             {
               "explain": "Evaluate/simplify the given number \\\\(-2\\\\frac{1}{4}\\\\) to see its exact value.",
@@ -8404,10 +8404,10 @@
             "Rational; \\\\(\\\\frac{3}{1}\\\\)"
           ],
           "answer": 3,
-          "hint": "A rational number can be written as a fraction \\\\(\\\\frac{a}{b}\\\\) of two integers with \\\\(b \\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
+          "hint": "A rational number can be written as a fraction \\\\(\\\\frac{a}{b}\\\\) of two integers with \\\\(b \\\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
           "steps": [
             {
-              "explain": "Recall that a rational number can be written as a fraction \\(a/b\\) of two integers with \\(b \neq 0\\); an irrational number cannot."
+              "explain": "Recall that a rational number can be written as a fraction \\(a/b\\) of two integers with \\(b \\neq 0\\); an irrational number cannot."
             },
             {
               "explain": "Evaluate/simplify the given number \\\\(\\\\sqrt{9}\\\\) to see its exact value.",
@@ -8437,10 +8437,10 @@
             "Rational, but the fraction has not been simplified"
           ],
           "answer": 2,
-          "hint": "A rational number can be written as a fraction \\\\(\\\\frac{a}{b}\\\\) of two integers with \\\\(b \\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
+          "hint": "A rational number can be written as a fraction \\\\(\\\\frac{a}{b}\\\\) of two integers with \\\\(b \\\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
           "steps": [
             {
-              "explain": "Recall that a rational number can be written as a fraction \\(a/b\\) of two integers with \\(b \neq 0\\); an irrational number cannot."
+              "explain": "Recall that a rational number can be written as a fraction \\(a/b\\) of two integers with \\(b \\neq 0\\); an irrational number cannot."
             },
             {
               "explain": "Consider the given number \\\\(\\\\sqrt{10}\\\\) and check whether it simplifies to a whole number, terminating decimal or recurring decimal.",
@@ -8470,10 +8470,10 @@
             "Irrational (cannot be written as a fraction of integers)"
           ],
           "answer": 3,
-          "hint": "A rational number can be written as a fraction \\\\(\\\\frac{a}{b}\\\\) of two integers with \\\\(b \\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
+          "hint": "A rational number can be written as a fraction \\\\(\\\\frac{a}{b}\\\\) of two integers with \\\\(b \\\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
           "steps": [
             {
-              "explain": "Recall that a rational number can be written as a fraction \\(a/b\\) of two integers with \\(b \neq 0\\); an irrational number cannot."
+              "explain": "Recall that a rational number can be written as a fraction \\(a/b\\) of two integers with \\(b \\neq 0\\); an irrational number cannot."
             },
             {
               "explain": "Consider the given number \\\\(\\\\sqrt[3]{15}\\\\) and check whether it simplifies to a whole number, terminating decimal or recurring decimal.",
@@ -8503,10 +8503,10 @@
             "Rational; \\\\(\\\\frac{2}{1}\\\\)"
           ],
           "answer": 3,
-          "hint": "A rational number can be written as a fraction \\\\(\\\\frac{a}{b}\\\\) of two integers with \\\\(b \\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
+          "hint": "A rational number can be written as a fraction \\\\(\\\\frac{a}{b}\\\\) of two integers with \\\\(b \\\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
           "steps": [
             {
-              "explain": "Recall that a rational number can be written as a fraction \\(a/b\\) of two integers with \\(b \neq 0\\); an irrational number cannot."
+              "explain": "Recall that a rational number can be written as a fraction \\(a/b\\) of two integers with \\(b \\neq 0\\); an irrational number cannot."
             },
             {
               "explain": "Evaluate/simplify the given number \\\\(\\\\sqrt[4]{16}\\\\) to see its exact value.",
@@ -8536,10 +8536,10 @@
             "Cannot be classified as rational or irrational"
           ],
           "answer": 2,
-          "hint": "A rational number can be written as a fraction \\\\(\\\\frac{a}{b}\\\\) of two integers with \\\\(b \\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
+          "hint": "A rational number can be written as a fraction \\\\(\\\\frac{a}{b}\\\\) of two integers with \\\\(b \\\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
           "steps": [
             {
-              "explain": "Recall that a rational number can be written as a fraction \\(a/b\\) of two integers with \\(b \neq 0\\); an irrational number cannot."
+              "explain": "Recall that a rational number can be written as a fraction \\(a/b\\) of two integers with \\(b \\neq 0\\); an irrational number cannot."
             },
             {
               "explain": "Evaluate/simplify the given number \\\\(-0.16\\\\) to see its exact value.",
@@ -8569,10 +8569,10 @@
             "Rational; it can be written as a recurring decimal fraction"
           ],
           "answer": 2,
-          "hint": "A rational number can be written as a fraction \\\\(\\\\frac{a}{b}\\\\) of two integers with \\\\(b \\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
+          "hint": "A rational number can be written as a fraction \\\\(\\\\frac{a}{b}\\\\) of two integers with \\\\(b \\\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
           "steps": [
             {
-              "explain": "Recall that a rational number can be written as a fraction \\(a/b\\) of two integers with \\(b \neq 0\\); an irrational number cannot."
+              "explain": "Recall that a rational number can be written as a fraction \\(a/b\\) of two integers with \\(b \\neq 0\\); an irrational number cannot."
             },
             {
               "explain": "Consider the given number \\\\(\\\\pi\\\\) and check whether it simplifies to a whole number, terminating decimal or recurring decimal.",

@@ -29,7 +29,7 @@
             },
             {
               "explain": "Apply the definitions of set operations (union, intersection, subset, etc.) to determine the correct relationship or elements.",
-              "work": "\\(\\text{I. } A = B? \\quad 8 \\in A \\text{ but } 8 \notin B \\Rightarrow \\textbf{False} \\\\ \\text{II. } |A|=4? \\quad A \\text{ has } 4 \\text{ elements} \\Rightarrow \\textbf{True} \\\\ \\text{III. } |B|=6? \\quad B \\text{ has } 5 \\text{ elements} \\Rightarrow \\textbf{False} \\\\ \\text{IV. } A \\subset B? \\quad 8 \\in A \\text{ but } 8 \notin B \\Rightarrow \\textbf{False}\\)"
+              "work": "\\(\\text{I. } A = B? \\quad 8 \\in A \\text{ but } 8 \\notin B \\Rightarrow \\textbf{False} \\\\ \\text{II. } |A|=4? \\quad A \\text{ has } 4 \\text{ elements} \\Rightarrow \\textbf{True} \\\\ \\text{III. } |B|=6? \\quad B \\text{ has } 5 \\text{ elements} \\Rightarrow \\textbf{False} \\\\ \\text{IV. } A \\subset B? \\quad 8 \\in A \\text{ but } 8 \\notin B \\Rightarrow \\textbf{False}\\)"
             },
             {
               "explain": "Carefully calculate or combine the elements, ensuring there are no duplicates and all conditions are met.",
@@ -4032,7 +4032,7 @@
               "steps": [
                 {
                   "explain": "If Xuan arrives first, then \\(x-y\\le1/4\\). If Yvette arrives first, then \\(y-x\\le1/4\\). These two cases must be joined with “and,” because whichever person arrives first must still be within the waiting time.",
-                  "work": "\\(x-y\\le\\frac14\\quad\textbf{and}quad y-x\\le\\frac14\\)"
+                  "work": "\\(x-y\\le\\frac14\\quad\\textbf{and}quad y-x\\le\\frac14\\)"
                 },
                 {
                   "explain": "The source page prints “or.” For any real x and y, at least one of x−y or y−x is non-positive, so the printed OR statement is always true and cannot describe the meeting region. Preserve the wording, but flag the likely source typo.",

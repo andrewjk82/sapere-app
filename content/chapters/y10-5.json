@@ -4205,19 +4205,19 @@
           "steps": [
             {
               "explain": "Identify the common factor of both terms, which is \\(x\\).",
-              "work": "\\(\frac{1}{3}x^2 - 4x = 0\\)"
+              "work": "\\(\\frac{1}{3}x^2 - 4x = 0\\)"
             },
             {
               "explain": "Factor out \\(x\\).",
-              "work": "\\(x(\frac{1}{3}x - 4) = 0\\)"
+              "work": "\\(x(\\frac{1}{3}x - 4) = 0\\)"
             },
             {
               "explain": "Apply the Null Factor Law by setting each factor to zero.",
-              "work": "\\(x = 0 \\quad \\text{or} \\quad \frac{1}{3}x - 4 = 0\\)"
+              "work": "\\(x = 0 \\quad \\text{or} \\quad \\frac{1}{3}x - 4 = 0\\)"
             },
             {
               "explain": "Solve each equation for \\(x\\).",
-              "work": "\\(x = 0 \\quad \\text{or} \\quad \frac{1}{3}x = 4 \\\\ x = 12\\)"
+              "work": "\\(x = 0 \\quad \\text{or} \\quad \\frac{1}{3}x = 4 \\\\ x = 12\\)"
             },
             {
               "explain": "State the final solutions.",

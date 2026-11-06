@@ -5266,7 +5266,7 @@
           "id": "y5-rn-2-p63-q11c",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Solve: 5 \times $3.47",
+          "stem": "Solve: 5 \\times $3.47",
           "options": [
             "$17.35",
             "$15.35",

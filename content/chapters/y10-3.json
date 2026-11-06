@@ -3035,7 +3035,7 @@
           "id": "sbh2019-y10-d03",
           "difficulty": "medium",
           "stem": "Expand and simplify \\(9x^2+4xy\\left(\\frac y4+\\frac yx\\right)-(3x+2y)^2\\).",
-          "hint": "Distribute (4xy) across both fraction terms, expand the squared bracket, then combine like terms. Assume (x\ne0) because (y/x) appears.",
+          "hint": "Distribute (4xy) across both fraction terms, expand the squared bracket, then combine like terms. Assume (x\\ne0) because (y/x) appears.",
           "steps": [
             {
               "explain": "Distribute (4xy) into the parentheses.",
@@ -3063,7 +3063,7 @@
           "keyPoints": [
             {
               "text": "Expand and simplify \\(9x^2+4xy\\left(\\frac y4+\\frac yx\\right)-(3x+2y)^2\\).",
-              "note": "Distribute (4xy) across both fraction terms, expand the squared bracket, then combine like terms. Assume (x\ne0) because (y/x) appears."
+              "note": "Distribute (4xy) across both fraction terms, expand the squared bracket, then combine like terms. Assume (x\\ne0) because (y/x) appears."
             }
           ],
           "type": "mc",

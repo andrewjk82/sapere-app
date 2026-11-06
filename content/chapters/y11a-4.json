@@ -5364,7 +5364,7 @@
             },
             {
               "explain": "Both values make the absolute value equal 2.",
-              "work": "\boxed{x=1\text{ or }x=-\\dfrac13}"
+              "work": "\\boxed{x=1\\text{ or }x=-\\dfrac13}"
             }
           ],
           "timeLimit": 60,
@@ -5407,7 +5407,7 @@
             },
             {
               "explain": "Include both endpoints because equality is allowed.",
-              "work": "\boxed{-1\\le x\\le5}"
+              "work": "\\boxed{-1\\le x\\le5}"
             }
           ],
           "timeLimit": 60,
@@ -5450,7 +5450,7 @@
             },
             {
               "explain": "State both solutions.",
-              "work": "\boxed{x=3\text{ or }x=-6}"
+              "work": "\\boxed{x=3\\text{ or }x=-6}"
             }
           ],
           "timeLimit": 60,
@@ -5493,7 +5493,7 @@
             },
             {
               "explain": "State both solutions.",
-              "work": "\boxed{x=4\text{ or }x=-6}"
+              "work": "\\boxed{x=4\\text{ or }x=-6}"
             }
           ],
           "timeLimit": 60,
@@ -7686,7 +7686,7 @@
           "id": "ascham2020-q23",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Find the value(s) of \\(k\\), where \\(k\ne0\\), given that \\(x^2+8kx+k=0\\) has two equal roots.",
+          "stem": "Find the value(s) of \\(k\\), where \\(k\\ne0\\), given that \\(x^2+8kx+k=0\\) has two equal roots.",
           "options": [
             "\\(k=0\\)",
             "\\(k=\\frac1{16}\\)",

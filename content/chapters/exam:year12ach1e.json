@@ -1379,7 +1379,7 @@
           "id": "y12a-1e-hard-c9-q2",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "The \\(1\\)-st, \\(3\\)-rd, and \\(9\\)-th terms of an AP form the first three terms of a GP. If the first term of the AP is \\(3\\), find the common ratio \\(r\\) of the GP (assume common difference \\(d \ne 0\\)).",
+          "stem": "The \\(1\\)-st, \\(3\\)-rd, and \\(9\\)-th terms of an AP form the first three terms of a GP. If the first term of the AP is \\(3\\), find the common ratio \\(r\\) of the GP (assume common difference \\(d \\ne 0\\)).",
           "options": [
             "\\(2\\)",
             "\\(3\\)",
@@ -1398,7 +1398,7 @@
               "work": "\\(3(3+8d) = (3+2d)^2\\)"
             },
             {
-              "explain": "Expand and solve for \\(d\\) (where \\(d \ne 0\\)).",
+              "explain": "Expand and solve for \\(d\\) (where \\(d \\ne 0\\)).",
               "work": "\\(9 + 24d = 9 + 12d + 4d^2 \\Rightarrow 4d^2 - 12d = 0 \\Rightarrow d = 3\\)"
             },
             {

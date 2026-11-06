@@ -1677,7 +1677,7 @@
                 },
                 {
                   "explain": "Therefore the required mean is 165 cm.",
-                  "work": "\\(\\boxed{165\text{ cm}}\\)"
+                  "work": "\\(\\boxed{165\\text{ cm}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -1730,7 +1730,7 @@
                 },
                 {
                   "explain": "Since $970 is greater than $965, it is an outlier.",
-                  "work": "\\(970>965\\Rightarrow\\boxed{\text{Yes}}\\)"
+                  "work": "\\(970>965\\Rightarrow\\boxed{\\text{Yes}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -1766,7 +1766,7 @@
                 },
                 {
                   "explain": "Standard deviation is based on these deviations, so it is unchanged.",
-                  "work": "\\(\\boxed{\text{Standard deviation stays the same}}\\)"
+                  "work": "\\(\\boxed{\\text{Standard deviation stays the same}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -1903,7 +1903,7 @@
               "steps": [
                 {
                   "explain": "Find the midpoint of each class interval.",
-                  "work": "\\(0\text{–}2\to1;\\quad3\text{–}5\to4;\\quad6\text{–}8\to7;\\quad9\text{–}11\to10\\)"
+                  "work": "\\(0\\text{–}2\\to1;\\quad3\\text{–}5\\to4;\\quad6\\text{–}8\\to7;\\quad9\\text{–}11\\to10\\)"
                 },
                 {
                   "explain": "Multiply each midpoint by the frequency and add.",
@@ -1911,7 +1911,7 @@
                 },
                 {
                   "explain": "Divide by the total frequency, 20.",
-                  "work": "\\(\\bar{x}=86/20=4.3\\Rightarrow\\boxed{4.3\text{ hours}}\\)"
+                  "work": "\\(\\bar{x}=86/20=4.3\\Rightarrow\\boxed{4.3\\text{ hours}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -1971,7 +1971,7 @@
                 },
                 {
                   "explain": "The women’s median is higher, so Pat’s claim is supported.",
-                  "work": "\\(56.5>45\\Rightarrow\\boxed{\text{Yes}}\\)"
+                  "work": "\\(56.5>45\\Rightarrow\\boxed{\\text{Yes}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -2099,7 +2099,7 @@
                 },
                 {
                   "explain": "Therefore Terry’s claim is not supported; Kim’s results were generally better and more consistent.",
-                  "work": "\\(\\boxed{\text{No}}\\)"
+                  "work": "\\(\\boxed{\\text{No}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -2147,7 +2147,7 @@
               "steps": [
                 {
                   "explain": "The data differ by only four percentage points.",
-                  "work": "\\(52\\%-48\\%=4\text{ percentage points}\\)"
+                  "work": "\\(52\\%-48\\%=4\\text{ percentage points}\\)"
                 },
                 {
                   "explain": "A vertical axis that starts at 46% makes the bars look very different even though the actual difference is small.",
@@ -2155,7 +2155,7 @@
                 },
                 {
                   "explain": "Graph B starts at 0 and shows the bars on a full percentage scale, so it represents the comparison fairly.",
-                  "work": "\\(\\boxed{\text{Graph B}}\\)"
+                  "work": "\\(\\boxed{\\text{Graph B}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -2215,7 +2215,7 @@
                 },
                 {
                   "explain": "Thus only the mean changes.",
-                  "work": "\\(\\boxed{\text{Mean changes; median stays the same}}\\)"
+                  "work": "\\(\\boxed{\\text{Mean changes; median stays the same}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -2378,7 +2378,7 @@
                 },
                 {
                   "explain": "Subtract quartiles to find IQR.",
-                  "work": "\\(IQR=18-6=12\\Rightarrow\\boxed{\text{median }13,\\ IQR=12}\\)"
+                  "work": "\\(IQR=18-6=12\\Rightarrow\\boxed{\\text{median }13,\\ IQR=12}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -2423,7 +2423,7 @@
               "steps": [
                 {
                   "explain": "The mode is the value that occurs most often. Use the stem as the tens and the leaf as the ones.",
-                  "work": "\\(5|2=52\text{ minutes}\\)"
+                  "work": "\\(5|2=52\\text{ minutes}\\)"
                 },
                 {
                   "explain": "The leaf 2 appears four times in the stem 5 row, more often than any other travel time.",
@@ -2431,7 +2431,7 @@
                 },
                 {
                   "explain": "So the modal travel time is 52 minutes.",
-                  "work": "\\(\\boxed{52\text{ minutes}}\\)"
+                  "work": "\\(\\boxed{52\\text{ minutes}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -2467,7 +2467,7 @@
                 },
                 {
                   "explain": "Calculate their average.",
-                  "work": "\\(\\boxed{50.5\text{ minutes}}\\)"
+                  "work": "\\(\\boxed{50.5\\text{ minutes}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -2503,7 +2503,7 @@
                 },
                 {
                   "explain": "Thus no-toll times have the smaller spread; toll-road times are more spread and positively skewed.",
-                  "work": "\\(\\boxed{\text{No tolls: smaller spread, roughly symmetric; tolls: larger spread, positive skew}}\\)"
+                  "work": "\\(\\boxed{\\text{No tolls: smaller spread, roughly symmetric; tolls: larger spread, positive skew}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -2587,7 +2587,7 @@
               "steps": [
                 {
                   "explain": "The cumulative frequency rises from about 22 to 28 across the class centred at 300.",
-                  "work": "\\(28-22=6\text{ weeks}\\)"
+                  "work": "\\(28-22=6\\text{ weeks}\\)"
                 },
                 {
                   "explain": "That class represents weekly sales between 250 and 350, not exactly 300.",
@@ -2595,7 +2595,7 @@
                 },
                 {
                   "explain": "So it is not possible to say they sold exactly 300 in each of 6 weeks.",
-                  "work": "\\(\\boxed{\text{No; between 250 and 350 in 6 weeks}}\\)"
+                  "work": "\\(\\boxed{\\text{No; between 250 and 350 in 6 weeks}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -2651,7 +2651,7 @@
                 },
                 {
                   "explain": "Therefore the English IQR is 30 marks.",
-                  "work": "\\(\\boxed{30\text{ marks}}\\)"
+                  "work": "\\(\\boxed{30\\text{ marks}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -2687,7 +2687,7 @@
                 },
                 {
                   "explain": "Therefore English scores are more spread and have a higher maximum, but Mathematics has the higher median.",
-                  "work": "\\(\\boxed{\text{Option A}}\\)"
+                  "work": "\\(\\boxed{\\text{Option A}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -2796,7 +2796,7 @@
                 },
                 {
                   "explain": "Therefore the interquartile ranges must be equal.",
-                  "work": "\\(\\boxed{\text{Interquartile range}}\\)"
+                  "work": "\\(\\boxed{\\text{Interquartile range}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -2852,7 +2852,7 @@
                 },
                 {
                   "explain": "The table lists 439 in that cell, so this is the copied value that is wrong.",
-                  "work": "\\(\\boxed{\text{Females in part-time work}}\\)"
+                  "work": "\\(\\boxed{\\text{Females in part-time work}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -3000,7 +3000,7 @@
                 },
                 {
                   "explain": "Thus the mean falls substantially while the median remains unchanged.",
-                  "work": "Mean: \\(11.4\to7.1\\); median: \\(8\to8\\)"
+                  "work": "Mean: \\(11.4\\to7.1\\); median: \\(8\\to8\\)"
                 }
               ],
               "timeLimit": 60,
@@ -3109,7 +3109,7 @@
                 },
                 {
                   "explain": "This matches statement B.",
-                  "work": "\\(\\boxed{\text{Option B}}\\)"
+                  "work": "\\(\\boxed{\\text{Option B}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -3221,7 +3221,7 @@
                 },
                 {
                   "explain": "This matches the first statement.",
-                  "work": "\\(\\boxed{\text{Option A}}\\)"
+                  "work": "\\(\\boxed{\\text{Option A}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -3255,7 +3255,7 @@
               "steps": [
                 {
                   "explain": "Use each stem as the tens digit and each leaf as the ones digit. The age 64 appears twice among males and twice among females.",
-                  "work": "\\(64\text{ occurs }4\text{ times}\\)"
+                  "work": "\\(64\\text{ occurs }4\\text{ times}\\)"
                 },
                 {
                   "explain": "No other age appears as often in the combined data.",
@@ -3263,7 +3263,7 @@
                 },
                 {
                   "explain": "Therefore the mode is 64 years.",
-                  "work": "\\(\\boxed{64\text{ years}}\\)"
+                  "work": "\\(\\boxed{64\\text{ years}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -3347,7 +3347,7 @@
                 },
                 {
                   "explain": "Therefore the grouped mean can differ from the exact mean based on the original ages.",
-                  "work": "\\(\\boxed{\text{Class centres make the grouped mean approximate}}\\)"
+                  "work": "\\(\\boxed{\\text{Class centres make the grouped mean approximate}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -3461,7 +3461,7 @@
                 },
                 {
                   "explain": "Therefore the Western Suburbs column is incorrect.",
-                  "work": "\\(\\boxed{\text{Western Suburbs}}\\)"
+                  "work": "\\(\\boxed{\\text{Western Suburbs}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -3575,7 +3575,7 @@
                 },
                 {
                   "explain": "So most households surveyed had 2 cars.",
-                  "work": "\\(\\boxed{\text{Most had 2 cars}}\\)"
+                  "work": "\\(\\boxed{\\text{Most had 2 cars}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -3651,11 +3651,11 @@
               "steps": [
                 {
                   "explain": "There are 2,735 households with no cars out of 33,171 total.",
-                  "work": "\\(\text{fraction}=\\frac{2735}{33171}\\)"
+                  "work": "\\(\\text{fraction}=\\frac{2735}{33171}\\)"
                 },
                 {
                   "explain": "Multiply the fraction by a full circle.",
-                  "work": "\\(\\frac{2735}{33171}\times360^\\circ\\approx29.68^\\circ\\)"
+                  "work": "\\(\\frac{2735}{33171}\\times360^\\circ\\approx29.68^\\circ\\)"
                 },
                 {
                   "explain": "Round to the nearest degree.",
@@ -6967,7 +6967,7 @@
           "id": "y12a-advanced-005-p279-q02",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "A continuous random variable X has cumulative distribution function given by \\(F(x)=1\\) for \\(x>e^3\\), \\(F(x)=\frac{1}{k}\\ln x\\) for \\(1\\le x\\le e^3\\), and \\(F(x)=0\\) for \\(x<1\\).",
+          "stem": "A continuous random variable X has cumulative distribution function given by \\(F(x)=1\\) for \\(x>e^3\\), \\(F(x)=\\frac{1}{k}\\ln x\\) for \\(1\\le x\\le e^3\\), and \\(F(x)=0\\) for \\(x<1\\).",
           "hint": "Use F(e³)=1 to determine k. For the second part, turn the probability statement into an equation for F(c).",
           "parts": [
             {
@@ -7138,7 +7138,7 @@
           "id": "y12a-advanced-005-p279-q04",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "People are given a maximum of six hours to complete a puzzle. The time spent on the puzzle, in hours, can be modelled using the continuous random variable X with probability density function \\(f(x)=\frac{Ax}{x^2+4}\\) for 0≤x≤6, where A>0, and 0 otherwise. The graph of the probability density function is shown below. The graph has a local maximum.",
+          "stem": "People are given a maximum of six hours to complete a puzzle. The time spent on the puzzle, in hours, can be modelled using the continuous random variable X with probability density function \\(f(x)=\\frac{Ax}{x^2+4}\\) for 0≤x≤6, where A>0, and 0 otherwise. The graph of the probability density function is shown below. The graph has a local maximum.",
           "hint": "Use total area 1 for the density constant. Differentiate to find the mode, integrate for the CDF probability, and use conditional probability for the IQ part.",
           "parts": [
             {
@@ -7468,7 +7468,7 @@
           "id": "y12a-advanced-005-p279-q06",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "The probability density function, f, of a random variable X is given by \\(f(x)=\frac{3}{76}(x^2+1)\\) for 0≤x≤k and 0 elsewhere.",
+          "stem": "The probability density function, f, of a random variable X is given by \\(f(x)=\\frac{3}{76}(x^2+1)\\) for 0≤x≤k and 0 elsewhere.",
           "hint": "Use area 1 to confirm the support endpoint. Then integrate the density over the interval x>2.",
           "parts": [
             {
@@ -7712,7 +7712,7 @@
           "id": "y12a-advanced-005-p280-q11",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "The probability density function, f, of a random variable X is given by \\(f(x)=\frac{x+2}{k}\\) for 0≤x≤4 and 0 elsewhere.",
+          "stem": "The probability density function, f, of a random variable X is given by \\(f(x)=\\frac{x+2}{k}\\) for 0≤x≤4 and 0 elsewhere.",
           "hint": "Use total area 1 to find k. Then integrate from 0 to a and solve the resulting quadratic, keeping the value in the support.",
           "parts": [
             {
@@ -7832,7 +7832,7 @@
           "id": "y12a-advanced-005-p280-q12",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "The probability density function, f, of a random variable X is given by \\(f(x)=\frac1k(x^2+5)\\) for 0≤x≤3 and 0 elsewhere.",
+          "stem": "The probability density function, f, of a random variable X is given by \\(f(x)=\\frac1k(x^2+5)\\) for 0≤x≤3 and 0 elsewhere.",
           "hint": "First use total area 1 to find k, then integrate the density between 0.5 and 2.",
           "parts": [
             {
@@ -8109,7 +8109,7 @@
           "id": "y12a-advanced-005-p280-q14",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "The probability density function, f, of a random variable X is given by \\(f(x)=\frac{x}{8}(x^2+2)\\) for 0≤x≤k and 0 elsewhere.",
+          "stem": "The probability density function, f, of a random variable X is given by \\(f(x)=\\frac{x}{8}(x^2+2)\\) for 0≤x≤k and 0 elsewhere.",
           "hint": "Verify the endpoint using total area 1. Then integrate over the specified intervals.",
           "parts": [
             {
@@ -9086,7 +9086,7 @@
           "id": "y12a-advanced-005-p280-q08",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "The probability density function, f, of a random variable X is given by \\(f(x)=\frac37(x^2+2)\\) for 0≤x≤1, and 0 elsewhere. Find, correct to 2 decimal places: (i) P(X≤0.8); (ii) the mean.",
+          "stem": "The probability density function, f, of a random variable X is given by \\(f(x)=\\frac37(x^2+2)\\) for 0≤x≤1, and 0 elsewhere. Find, correct to 2 decimal places: (i) P(X≤0.8); (ii) the mean.",
           "hint": "Part i is an area under f(x). For the mean, use E(X)=∫xf(x)dx over the full support.",
           "parts": [
             {
@@ -9206,7 +9206,7 @@
           "id": "y12a-advanced-005-p280-q09",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "The probability density function of a random variable X is given by \\(f(x)=\frac{3}{32}x(k-x)\\) for 0≤x≤k and 0 elsewhere.",
+          "stem": "The probability density function of a random variable X is given by \\(f(x)=\\frac{3}{32}x(k-x)\\) for 0≤x≤k and 0 elsewhere.",
           "hint": "Use area 1 to find k. The density is symmetric, and variance is E(X²) minus the square of the mean.",
           "parts": [
             {
@@ -9367,7 +9367,7 @@
           "id": "y12a-advanced-005-p280-q10",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "A pizza shop estimates that the time X, in hours, to deliver a pizza from when it is ordered can be modelled as a continuous random variable with probability density function \\(f(x)=\frac25(3-x)\\) for 0≤x≤1 and 0 elsewhere.",
+          "stem": "A pizza shop estimates that the time X, in hours, to deliver a pizza from when it is ordered can be modelled as a continuous random variable with probability density function \\(f(x)=\\frac25(3-x)\\) for 0≤x≤1 and 0 elsewhere.",
           "hint": "Integrate for the probability and moments. Use Var(X)=E(X²)−[E(X)]², then convert the standard deviation from hours to minutes.",
           "parts": [
             {

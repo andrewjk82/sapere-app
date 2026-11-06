@@ -746,7 +746,7 @@
           "steps": [
             {
               "explain": "List all integers that strictly satisfy the inequality conditions.",
-              "work": "\\\\( x \\\\in \\left\\{ -3, -2, -1, 0, 1, 2, 3 \\\right\\} \\\\)"
+              "work": "\\\\( x \\\\in \\left\\{ -3, -2, -1, 0, 1, 2, 3 \\\\right\\} \\\\)"
             },
             {
               "explain": "Add the negative and positive parts of the set.",
@@ -1098,7 +1098,7 @@
           "steps": [
             {
               "explain": "List all integers that strictly satisfy the inequality conditions.",
-              "work": "\\\\( x \\\\in \\left\\{ -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5 \\\right\\} \\\\)"
+              "work": "\\\\( x \\\\in \\left\\{ -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5 \\\\right\\} \\\\)"
             },
             {
               "explain": "Add the negative and positive parts of the set.",
@@ -1441,7 +1441,7 @@
           "steps": [
             {
               "explain": "List all integers that strictly satisfy the inequality conditions.",
-              "work": "\\\\( x \\\\in \\left\\{ -3, -2, -1, 0, 1, 2, 3, 4, 5, 6 \\\right\\} \\\\)"
+              "work": "\\\\( x \\\\in \\left\\{ -3, -2, -1, 0, 1, 2, 3, 4, 5, 6 \\\\right\\} \\\\)"
             },
             {
               "explain": "Add the negative and positive parts of the set.",
@@ -1780,7 +1780,7 @@
           "steps": [
             {
               "explain": "List all integers that strictly satisfy the inequality conditions.",
-              "work": "\\\\( x \\\\in \\left\\{ -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6 \\\right\\} \\\\)"
+              "work": "\\\\( x \\\\in \\left\\{ -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6 \\\\right\\} \\\\)"
             },
             {
               "explain": "Add the negative and positive parts of the set.",
@@ -2120,7 +2120,7 @@
           "steps": [
             {
               "explain": "List all integers that strictly satisfy the inequality conditions.",
-              "work": "\\\\( x \\\\in \\left\\{ -3, -2, -1, 0, 1, 2, 3, 4, 5 \\\right\\} \\\\)"
+              "work": "\\\\( x \\\\in \\left\\{ -3, -2, -1, 0, 1, 2, 3, 4, 5 \\\\right\\} \\\\)"
             },
             {
               "explain": "Add the negative and positive parts of the set.",
@@ -2460,7 +2460,7 @@
           "steps": [
             {
               "explain": "List all integers that strictly satisfy the inequality conditions.",
-              "work": "\\\\( x \\\\in \\left\\{ -5, -4, -3, -2, -1, 0, 1, 2, 3 \\\right\\} \\\\)"
+              "work": "\\\\( x \\\\in \\left\\{ -5, -4, -3, -2, -1, 0, 1, 2, 3 \\\\right\\} \\\\)"
             },
             {
               "explain": "Add the negative and positive parts of the set.",
@@ -2800,7 +2800,7 @@
           "steps": [
             {
               "explain": "List all integers that strictly satisfy the inequality conditions.",
-              "work": "\\\\( x \\\\in \\left\\{ -4, -3, -2, -1, 0, 1, 2, 3, 4 \\\right\\} \\\\)"
+              "work": "\\\\( x \\\\in \\left\\{ -4, -3, -2, -1, 0, 1, 2, 3, 4 \\\\right\\} \\\\)"
             },
             {
               "explain": "Add the negative and positive parts of the set.",
@@ -3139,7 +3139,7 @@
           "steps": [
             {
               "explain": "List all integers that strictly satisfy the inequality conditions.",
-              "work": "\\\\( x \\\\in \\left\\{ -4, -3, -2, -1, 0, 1, 2, 3, 4, 5 \\\right\\} \\\\)"
+              "work": "\\\\( x \\\\in \\left\\{ -4, -3, -2, -1, 0, 1, 2, 3, 4, 5 \\\\right\\} \\\\)"
             },
             {
               "explain": "Add the negative and positive parts of the set.",
@@ -3478,7 +3478,7 @@
           "steps": [
             {
               "explain": "List all integers that strictly satisfy the inequality conditions.",
-              "work": "\\\\( x \\\\in \\left\\{ -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6 \\\right\\} \\\\)"
+              "work": "\\\\( x \\\\in \\left\\{ -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6 \\\\right\\} \\\\)"
             },
             {
               "explain": "Add the negative and positive parts of the set.",
@@ -19610,7 +19610,7 @@
           "id": "y7-1e-q1a",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Perform the multiplication: \\( 23 \times 10 \\)",
+          "stem": "Perform the multiplication: \\( 23 \\times 10 \\)",
           "options": [
             "\\( 207 \\)",
             "\\( 220 \\)",
@@ -19621,14 +19621,14 @@
           "steps": [
             {
               "explain": "When multiplying any number by 10, simply append one zero to the end of the number.",
-              "work": "\\( (23 \times 10 = 230) \\)"
+              "work": "\\( (23 \\times 10 = 230) \\)"
             }
           ],
           "timeLimit": 60,
           "xp": 1,
           "keyPoints": [
             {
-              "text": "\\( 23 \times 10 \\)",
+              "text": "\\( 23 \\times 10 \\)",
               "note": "Multiplying by 10, 100 or 1000 moves every digit 1, 2 or 3 places left — add that many zeros."
             }
           ]
@@ -19637,7 +19637,7 @@
           "id": "y7-1e-q1b",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Perform the multiplication: \\( 47 \times 0 \\)",
+          "stem": "Perform the multiplication: \\( 47 \\times 0 \\)",
           "options": [
             "\\( 10 \\)",
             "\\( 50 \\)",
@@ -19647,14 +19647,14 @@
           "steps": [
             {
               "explain": "Any number multiplied by 0 always results in 0.",
-              "work": "\\( (47 \times 0 = 0) \\)"
+              "work": "\\( (47 \\times 0 = 0) \\)"
             }
           ],
           "timeLimit": 60,
           "xp": 1,
           "keyPoints": [
             {
-              "text": "\\( 47 \times 0 \\)",
+              "text": "\\( 47 \\times 0 \\)",
               "note": "Multiplying by 10, 100 or 1000 moves every digit 1, 2 or 3 places left — add that many zeros."
             }
           ]
@@ -19663,7 +19663,7 @@
           "id": "y7-1e-q1c",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Perform the multiplication: \\( 100 \times 1 \\)",
+          "stem": "Perform the multiplication: \\( 100 \\times 1 \\)",
           "options": [
             "\\( 90 \\)",
             "\\( 99 \\)",
@@ -19674,14 +19674,14 @@
           "steps": [
             {
               "explain": "Any number multiplied by 1 remains unchanged.",
-              "work": "\\( (100 \times 1 = 100) \\)"
+              "work": "\\( (100 \\times 1 = 100) \\)"
             }
           ],
           "timeLimit": 60,
           "xp": 1,
           "keyPoints": [
             {
-              "text": "\\( 100 \times 1 \\)",
+              "text": "\\( 100 \\times 1 \\)",
               "note": "Multiplying by 10, 100 or 1000 moves every digit 1, 2 or 3 places left — add that many zeros."
             }
           ]
@@ -19690,7 +19690,7 @@
           "id": "y7-1e-q1d",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Perform the multiplication: \\( 26 \times 1000 \\)",
+          "stem": "Perform the multiplication: \\( 26 \\times 1000 \\)",
           "options": [
             "\\( 25000 \\)",
             "\\( 25974 \\)",
@@ -19701,14 +19701,14 @@
           "steps": [
             {
               "explain": "When multiplying a number by 1000, append three zeroes to the end of the number.",
-              "work": "\\( (26 \times 1000 = 26000) \\)"
+              "work": "\\( (26 \\times 1000 = 26000) \\)"
             }
           ],
           "timeLimit": 60,
           "xp": 1,
           "keyPoints": [
             {
-              "text": "\\( 26 \times 1000 \\)",
+              "text": "\\( 26 \\times 1000 \\)",
               "note": "Multiplying by 10, 100 or 1000 moves every digit 1, 2 or 3 places left — add that many zeros."
             }
           ]
@@ -19717,7 +19717,7 @@
           "id": "y7-1e-q1e",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Perform the multiplication: \\( 340 \times 100 \\)",
+          "stem": "Perform the multiplication: \\( 340 \\times 100 \\)",
           "options": [
             "\\( 33660 \\)",
             "\\( 33900 \\)",
@@ -19728,14 +19728,14 @@
           "steps": [
             {
               "explain": "When multiplying a number by 100, append two zeroes to the end of the number.",
-              "work": "\\( (340 \times 100 = 34000) \\)"
+              "work": "\\( (340 \\times 100 = 34000) \\)"
             }
           ],
           "timeLimit": 60,
           "xp": 1,
           "keyPoints": [
             {
-              "text": "\\( 340 \times 100 \\)",
+              "text": "\\( 340 \\times 100 \\)",
               "note": "Multiplying by 10, 100 or 1000 moves every digit 1, 2 or 3 places left — add that many zeros."
             }
           ]
@@ -19744,7 +19744,7 @@
           "id": "y7-1e-q1f",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Perform the multiplication: \\( 100 \times 100 \\)",
+          "stem": "Perform the multiplication: \\( 100 \\times 100 \\)",
           "options": [
             "\\( 9900 \\)",
             "\\( 9990 \\)",
@@ -19755,18 +19755,18 @@
           "steps": [
             {
               "explain": "When multiplying numbers with zeroes, multiply the leading digits first.",
-              "work": "\\( (1 \times 1 = 1) \\)"
+              "work": "\\( (1 \\times 1 = 1) \\)"
             },
             {
               "explain": "Since both numbers have two zeroes each, append a total of four zeroes.",
-              "work": "\\( (100 \times 100 = 10000) \\)"
+              "work": "\\( (100 \\times 100 = 10000) \\)"
             }
           ],
           "timeLimit": 60,
           "xp": 1,
           "keyPoints": [
             {
-              "text": "\\( 100 \times 100 \\)",
+              "text": "\\( 100 \\times 100 \\)",
               "note": "Multiplying by 10, 100 or 1000 moves every digit 1, 2 or 3 places left — add that many zeros."
             }
           ]
@@ -19775,7 +19775,7 @@
           "id": "y7-1e-q1g",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Perform the multiplication: \\( 1000 \times 81 \\)",
+          "stem": "Perform the multiplication: \\( 1000 \\times 81 \\)",
           "options": [
             "\\( 80000 \\)",
             "\\( 80919 \\)",
@@ -19786,14 +19786,14 @@
           "steps": [
             {
               "explain": "When multiplying by 1000, append three zeroes to the end of the number.",
-              "work": "\\( (1000 \times 81 = 81000) \\)"
+              "work": "\\( (1000 \\times 81 = 81000) \\)"
             }
           ],
           "timeLimit": 60,
           "xp": 1,
           "keyPoints": [
             {
-              "text": "\\( 1000 \times 81 \\)",
+              "text": "\\( 1000 \\times 81 \\)",
               "note": "Multiplying by 10, 100 or 1000 moves every digit 1, 2 or 3 places left — add that many zeros."
             }
           ]
@@ -19802,7 +19802,7 @@
           "id": "y7-1e-q1h",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Perform the multiplication: \\( 10000 \times 100 \\)",
+          "stem": "Perform the multiplication: \\( 10000 \\times 100 \\)",
           "options": [
             "\\( 990000 \\)",
             "\\( 999900 \\)",
@@ -19813,18 +19813,18 @@
           "steps": [
             {
               "explain": "When multiplying numbers with zeroes, multiply the leading digits first.",
-              "work": "\\( (1 \times 1 = 1) \\)"
+              "work": "\\( (1 \\times 1 = 1) \\)"
             },
             {
               "explain": "The first number has four zeroes and the second has two, so we append a total of six zeroes.",
-              "work": "\\( (10000 \times 100 = 1000000) \\)"
+              "work": "\\( (10000 \\times 100 = 1000000) \\)"
             }
           ],
           "timeLimit": 60,
           "xp": 1,
           "keyPoints": [
             {
-              "text": "\\( 10000 \times 100 \\)",
+              "text": "\\( 10000 \\times 100 \\)",
               "note": "Multiplying by 10, 100 or 1000 moves every digit 1, 2 or 3 places left — add that many zeros."
             }
           ]
@@ -19833,7 +19833,7 @@
           "id": "y7-1e-q1i",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Perform the multiplication: \\( 42910 \times 1000 \\)",
+          "stem": "Perform the multiplication: \\( 42910 \\times 1000 \\)",
           "options": [
             "\\( 42867090 \\)",
             "\\( 42909000 \\)",
@@ -19844,14 +19844,14 @@
           "steps": [
             {
               "explain": "When multiplying a number by 1000, append three zeroes to the end of the number.",
-              "work": "\\( (42910 \times 1000 = 42910000) \\)"
+              "work": "\\( (42910 \\times 1000 = 42910000) \\)"
             }
           ],
           "timeLimit": 60,
           "xp": 1,
           "keyPoints": [
             {
-              "text": "\\( 42910 \times 1000 \\)",
+              "text": "\\( 42910 \\times 1000 \\)",
               "note": "Multiplying by 10, 100 or 1000 moves every digit 1, 2 or 3 places left — add that many zeros."
             }
           ]
@@ -19860,7 +19860,7 @@
           "id": "y7-1e-q2a",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Carry out the calculation, using the any-order property for multiplication: \\( 25 \times 4 \times 8 \\)",
+          "stem": "Carry out the calculation, using the any-order property for multiplication: \\( 25 \\times 4 \\times 8 \\)",
           "options": [
             "\\( 790 \\)",
             "\\( 800 \\)",
@@ -19871,22 +19871,22 @@
           "steps": [
             {
               "explain": "Using the commutative and associative properties, multiply the numbers that are easiest first. 25 multiplied by 4 gives 100.",
-              "work": "\\( (25 \times 4 = 100) \\)"
+              "work": "\\( (25 \\times 4 = 100) \\)"
             },
             {
               "explain": "Now multiply that result by 8.",
-              "work": "\\( (100 \times 8 = 800) \\)"
+              "work": "\\( (100 \\times 8 = 800) \\)"
             },
             {
               "explain": "We have found the final answer.",
-              "work": "\\( (\therefore; 25 \times 4 \times 8 = 800) \\)"
+              "work": "\\( (\\therefore; 25 \\times 4 \\times 8 = 800) \\)"
             }
           ],
           "timeLimit": 60,
           "xp": 1,
           "keyPoints": [
             {
-              "text": "\\( 25 \times 4 \times 8 \\)",
+              "text": "\\( 25 \\times 4 \\times 8 \\)",
               "note": "Multiply in any order — pair numbers that make 10, 100 or 1000 first."
             }
           ]
@@ -19895,7 +19895,7 @@
           "id": "y7-1e-q2b",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Carry out the calculation, using the any-order property for multiplication: \\( 5 \times 34 \times 2 \\)",
+          "stem": "Carry out the calculation, using the any-order property for multiplication: \\( 5 \\times 34 \\times 2 \\)",
           "options": [
             "\\( 330 \\)",
             "\\( 340 \\)",
@@ -19906,22 +19906,22 @@
           "steps": [
             {
               "explain": "Using the commutative and associative properties, first multiply 5 and 2. This gives 10, making the calculation easier.",
-              "work": "\\( (5 \times 2 = 10) \\)"
+              "work": "\\( (5 \\times 2 = 10) \\)"
             },
             {
               "explain": "Now multiply that result by 34.",
-              "work": "\\( (10 \times 34 = 340) \\)"
+              "work": "\\( (10 \\times 34 = 340) \\)"
             },
             {
               "explain": "We have found the final answer.",
-              "work": "\\( (\therefore; 5 \times 34 \times 2 = 340) \\)"
+              "work": "\\( (\\therefore; 5 \\times 34 \\times 2 = 340) \\)"
             }
           ],
           "timeLimit": 60,
           "xp": 1,
           "keyPoints": [
             {
-              "text": "\\( 5 \times 34 \times 2 \\)",
+              "text": "\\( 5 \\times 34 \\times 2 \\)",
               "note": "Multiply in any order — pair numbers that make 10, 100 or 1000 first."
             }
           ]
@@ -19930,7 +19930,7 @@
           "id": "y7-1e-q2c",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Carry out the calculation, using the any-order property for multiplication: \\( 5 \times 67 \times 20 \\)",
+          "stem": "Carry out the calculation, using the any-order property for multiplication: \\( 5 \\times 67 \\times 20 \\)",
           "options": [
             "\\( 6690 \\)",
             "\\( 6700 \\)",
@@ -19941,22 +19941,22 @@
           "steps": [
             {
               "explain": "Using the commutative property, multiply 5 and 20 first. This gives 100.",
-              "work": "\\( (5 \times 20 = 100) \\)"
+              "work": "\\( (5 \\times 20 = 100) \\)"
             },
             {
               "explain": "Now multiply 100 by 67.",
-              "work": "\\( (100 \times 67 = 6700) \\)"
+              "work": "\\( (100 \\times 67 = 6700) \\)"
             },
             {
               "explain": "We have found the final answer.",
-              "work": "\\( (\therefore; 5 \times 67 \times 20 = 6700) \\)"
+              "work": "\\( (\\therefore; 5 \\times 67 \\times 20 = 6700) \\)"
             }
           ],
           "timeLimit": 60,
           "xp": 1,
           "keyPoints": [
             {
-              "text": "\\( 5 \times 67 \times 20 \\)",
+              "text": "\\( 5 \\times 67 \\times 20 \\)",
               "note": "Multiply in any order — pair numbers that make 10, 100 or 1000 first."
             }
           ]
@@ -19965,7 +19965,7 @@
           "id": "y7-1e-q2d",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Carry out the calculation, using the any-order property for multiplication: \\( 50 \times 81 \times 2 \\)",
+          "stem": "Carry out the calculation, using the any-order property for multiplication: \\( 50 \\times 81 \\times 2 \\)",
           "options": [
             "\\( 8090 \\)",
             "\\( 8100 \\)",
@@ -19976,22 +19976,22 @@
           "steps": [
             {
               "explain": "Using the commutative property, multiply 50 and 2 first to get 100.",
-              "work": "\\( (50 \times 2 = 100) \\)"
+              "work": "\\( (50 \\times 2 = 100) \\)"
             },
             {
               "explain": "Now multiply 100 by 81.",
-              "work": "\\( (100 \times 81 = 8100) \\)"
+              "work": "\\( (100 \\times 81 = 8100) \\)"
             },
             {
               "explain": "We have found the final answer.",
-              "work": "\\( (\therefore; 50 \times 81 \times 2 = 8100) \\)"
+              "work": "\\( (\\therefore; 50 \\times 81 \\times 2 = 8100) \\)"
             }
           ],
           "timeLimit": 60,
           "xp": 1,
           "keyPoints": [
             {
-              "text": "\\( 50 \times 81 \times 2 \\)",
+              "text": "\\( 50 \\times 81 \\times 2 \\)",
               "note": "Multiply in any order — pair numbers that make 10, 100 or 1000 first."
             }
           ]
@@ -20000,7 +20000,7 @@
           "id": "y7-1e-q2e",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Carry out the calculation, using the any-order property for multiplication: \\( 24 \times 5 \times 40 \\)",
+          "stem": "Carry out the calculation, using the any-order property for multiplication: \\( 24 \\times 5 \\times 40 \\)",
           "options": [
             "\\( 4790 \\)",
             "\\( 4800 \\)",
@@ -20011,22 +20011,22 @@
           "steps": [
             {
               "explain": "Using the associative property, multiply 5 and 40 first.",
-              "work": "\\( (5 \times 40 = 200) \\)"
+              "work": "\\( (5 \\times 40 = 200) \\)"
             },
             {
               "explain": "Now multiply 24 by 200. We can do this by multiplying 24 by 2 and appending two zeroes.",
-              "work": "\\( (24 \times 2 = 48) \\)"
+              "work": "\\( (24 \\times 2 = 48) \\)"
             },
             {
               "explain": "Append two zeroes to get the final result.",
-              "work": "\\( (\therefore; 48 \times 100 = 4800) \\)"
+              "work": "\\( (\\therefore; 48 \\times 100 = 4800) \\)"
             }
           ],
           "timeLimit": 60,
           "xp": 1,
           "keyPoints": [
             {
-              "text": "\\( 24 \times 5 \times 40 \\)",
+              "text": "\\( 24 \\times 5 \\times 40 \\)",
               "note": "Multiply in any order — pair numbers that make 10, 100 or 1000 first."
             }
           ]
@@ -20035,7 +20035,7 @@
           "id": "y7-1e-q2f",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Carry out the calculation, using the any-order property for multiplication: \\( 19 \times 8 \times 0 \\)",
+          "stem": "Carry out the calculation, using the any-order property for multiplication: \\( 19 \\times 8 \\times 0 \\)",
           "options": [
             "\\( 10 \\)",
             "\\( 50 \\)",
@@ -20045,18 +20045,18 @@
           "steps": [
             {
               "explain": "Any multiplication sequence that includes a 0 always evaluates to 0.",
-              "work": "\\( (x \times 0 = 0) \\)"
+              "work": "\\( (x \\times 0 = 0) \\)"
             },
             {
               "explain": "Therefore, we can immediately know the answer without multiplying the other numbers.",
-              "work": "\\( (\therefore; 19 \times 8 \times 0 = 0) \\)"
+              "work": "\\( (\\therefore; 19 \\times 8 \\times 0 = 0) \\)"
             }
           ],
           "timeLimit": 60,
           "xp": 1,
           "keyPoints": [
             {
-              "text": "\\( 19 \times 8 \times 0 \\)",
+              "text": "\\( 19 \\times 8 \\times 0 \\)",
               "note": "Multiply in any order — pair numbers that make 10, 100 or 1000 first."
             }
           ]
@@ -20065,7 +20065,7 @@
           "id": "y7-1e-q2g",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Carry out the calculation, using the any-order property for multiplication: \\( 1 \times 47 \times 20 \\)",
+          "stem": "Carry out the calculation, using the any-order property for multiplication: \\( 1 \\times 47 \\times 20 \\)",
           "options": [
             "\\( 930 \\)",
             "\\( 940 \\)",
@@ -20076,22 +20076,22 @@
           "steps": [
             {
               "explain": "Multiplying by 1 does not change the value, so this is equivalent to multiplying 47 and 20.",
-              "work": "\\( (1 \times 47 = 47) \\)"
+              "work": "\\( (1 \\times 47 = 47) \\)"
             },
             {
               "explain": "Multiply 47 by 2, then append one zero.",
-              "work": "\\( (47 \times 2 = 94) \\)"
+              "work": "\\( (47 \\times 2 = 94) \\)"
             },
             {
               "explain": "We have found the final answer.",
-              "work": "\\( (\therefore; 94 \times 10 = 940) \\)"
+              "work": "\\( (\\therefore; 94 \\times 10 = 940) \\)"
             }
           ],
           "timeLimit": 60,
           "xp": 1,
           "keyPoints": [
             {
-              "text": "\\( 1 \times 47 \times 20 \\)",
+              "text": "\\( 1 \\times 47 \\times 20 \\)",
               "note": "Multiply in any order — pair numbers that make 10, 100 or 1000 first."
             }
           ]
@@ -20100,7 +20100,7 @@
           "id": "y7-1e-q2h",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Carry out the calculation, using the any-order property for multiplication: \\( 8 \times 10 \times 10 \times 2 \\)",
+          "stem": "Carry out the calculation, using the any-order property for multiplication: \\( 8 \\times 10 \\times 10 \\times 2 \\)",
           "options": [
             "\\( 1590 \\)",
             "\\( 1600 \\)",
@@ -20111,22 +20111,22 @@
           "steps": [
             {
               "explain": "Using the commutative property, first multiply the single-digit numbers 8 and 2.",
-              "work": "\\( (8 \times 2 = 16) \\)"
+              "work": "\\( (8 \\times 2 = 16) \\)"
             },
             {
               "explain": "Multiply the two 10s together to get 100.",
-              "work": "\\( (10 \times 10 = 100) \\)"
+              "work": "\\( (10 \\times 10 = 100) \\)"
             },
             {
               "explain": "Multiply the two results to get the final answer.",
-              "work": "\\( (\therefore; 16 \times 100 = 1600) \\)"
+              "work": "\\( (\\therefore; 16 \\times 100 = 1600) \\)"
             }
           ],
           "timeLimit": 60,
           "xp": 1,
           "keyPoints": [
             {
-              "text": "\\( 8 \times 10 \times 10 \times 2 \\)",
+              "text": "\\( 8 \\times 10 \\times 10 \\times 2 \\)",
               "note": "Multiply in any order — pair numbers that make 10, 100 or 1000 first."
             }
           ]
@@ -20135,7 +20135,7 @@
           "id": "y7-1e-q2i",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Carry out the calculation, using the any-order property for multiplication: \\( 6 \times 9 \times 4 \times 5 \\)",
+          "stem": "Carry out the calculation, using the any-order property for multiplication: \\( 6 \\times 9 \\times 4 \\times 5 \\)",
           "options": [
             "\\( 1070 \\)",
             "\\( 1080 \\)",
@@ -20146,22 +20146,22 @@
           "steps": [
             {
               "explain": "Using the commutative property, first multiply 4 and 5 to get 20.",
-              "work": "\\( (4 \times 5 = 20) \\)"
+              "work": "\\( (4 \\times 5 = 20) \\)"
             },
             {
               "explain": "Multiply the remaining two numbers, 6 and 9.",
-              "work": "\\( (6 \times 9 = 54) \\)"
+              "work": "\\( (6 \\times 9 = 54) \\)"
             },
             {
               "explain": "Multiply the two results. Multiply 54 by 2 and append one zero.",
-              "work": "\\( (\therefore; 54 \times 20 = 1080) \\)"
+              "work": "\\( (\\therefore; 54 \\times 20 = 1080) \\)"
             }
           ],
           "timeLimit": 60,
           "xp": 1,
           "keyPoints": [
             {
-              "text": "\\( 6 \times 9 \times 4 \times 5 \\)",
+              "text": "\\( 6 \\times 9 \\times 4 \\times 5 \\)",
               "note": "Multiply in any order — pair numbers that make 10, 100 or 1000 first."
             }
           ]
@@ -20170,7 +20170,7 @@
           "id": "y7-1e-q3a",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Fill in the box with a number to make the statement true: \\( (4 \times 5 \\) \times 8 = 4 \times \\( Box \times 8 \\))",
+          "stem": "Fill in the box with a number to make the statement true: \\( (4 \\times 5 \\) \\times 8 = 4 \\times \\( Box \\times 8 \\))",
           "options": [
             "\\( 5 \\)",
             "\\( 15 \\)",
@@ -20181,22 +20181,22 @@
           "steps": [
             {
               "explain": "According to the associative property of multiplication, changing the grouping of numbers does not change the product.",
-              "work": "\\( ((a \times b) \times c = a \times (b \times c)) \\)"
+              "work": "\\( ((a \\times b) \\times c = a \\times (b \\times c)) \\)"
             },
             {
               "explain": "Therefore, both sides of the equation must contain the same numbers. The missing number on the right side is 5.",
-              "work": "\\( ((4 \times 5) \times 8 = 4 \times (5 \times 8)) \\)"
+              "work": "\\( ((4 \\times 5) \\times 8 = 4 \\times (5 \\times 8)) \\)"
             },
             {
               "explain": "We have found the correct number for the box.",
-              "work": "\\( (\therefore; \text{Box} = 5) \\)"
+              "work": "\\( (\\therefore; \\text{Box} = 5) \\)"
             }
           ],
           "timeLimit": 60,
           "xp": 1,
           "keyPoints": [
             {
-              "text": "\\( Box \times 8 \\)",
+              "text": "\\( Box \\times 8 \\)",
               "note": "In multiplication the brackets can move (associative law) — match the numbers on both sides."
             }
           ]
@@ -20205,7 +20205,7 @@
           "id": "y7-1e-q3b",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Fill in the box with a number to make the statement true: \\( (6 \times 7 \\) \times \\( 3 \times 4 \\) = 7 \times 4 \times \\( Box \times 3 \\))",
+          "stem": "Fill in the box with a number to make the statement true: \\( (6 \\times 7 \\) \\times \\( 3 \\times 4 \\) = 7 \\times 4 \\times \\( Box \\times 3 \\))",
           "options": [
             "\\( 6 \\)",
             "\\( 8 \\)",
@@ -20216,22 +20216,22 @@
           "steps": [
             {
               "explain": "According to the commutative and associative properties of multiplication, we can reorder and group numbers freely.",
-              "work": "\\( ((6 \times 7) \times (3 \times 4) = 6 \times 7 \times 3 \times 4) \\)"
+              "work": "\\( ((6 \\times 7) \\times (3 \\times 4) = 6 \\times 7 \\times 3 \\times 4) \\)"
             },
             {
               "explain": "Looking at the right side, the numbers 7, 4, and 3 are present. We need to find the number that is on the left side but missing on the right.",
-              "work": "\\( (7 \times 4 \times (Box \times 3)) \\)"
+              "work": "\\( (7 \\times 4 \\times (Box \\times 3)) \\)"
             },
             {
               "explain": "The remaining number is 6, so the value in the box is 6.",
-              "work": "\\( (\therefore; \text{Box} = 6) \\)"
+              "work": "\\( (\\therefore; \\text{Box} = 6) \\)"
             }
           ],
           "timeLimit": 60,
           "xp": 1,
           "keyPoints": [
             {
-              "text": "\\( Box \times 3 \\)",
+              "text": "\\( Box \\times 3 \\)",
               "note": "In multiplication the brackets can move (associative law) — match the numbers on both sides."
             }
           ]
@@ -20251,15 +20251,15 @@
           "steps": [
             {
               "explain": "First, find the total number of marbles Liam has. Since there are 17 boxes with 30 marbles each, multiply them.",
-              "work": "\\( (\text{Total marbles} = 17 \times 30) \\)"
+              "work": "\\( (\\text{Total marbles} = 17 \\times 30) \\)"
             },
             {
               "explain": "Since these marbles need to be redistributed equally among 30 boxes, divide the total number by 30.",
-              "work": "\\( (\text{Marbles per box} = (17 \times 30) div 30) \\)"
+              "work": "\\( (\\text{Marbles per box} = (17 \\times 30) div 30) \\)"
             },
             {
               "explain": "Multiplying by 30 and then dividing by 30 leaves the original number, 17. Therefore, each box gets 17 marbles.",
-              "work": "\\( (\therefore; 17 \text{ marbles}) \\)"
+              "work": "\\( (\\therefore; 17 \\text{ marbles}) \\)"
             }
           ],
           "timeLimit": 90,
@@ -20286,15 +20286,15 @@
           "steps": [
             {
               "explain": "First, find the total number of lollipops one person needs. Since they need 3 of each of the 4 flavours, multiply them.",
-              "work": "\\( (\text{Lollipops per person} = 4 \times 3 = 12) \\)"
+              "work": "\\( (\\text{Lollipops per person} = 4 \\times 3 = 12) \\)"
             },
             {
               "explain": "Since there are 8 friends, multiply the number needed per person by 8 to find the total required.",
-              "work": "\\( (\text{Total lollipops} = 12 \times 8) \\)"
+              "work": "\\( (\\text{Total lollipops} = 12 \\times 8) \\)"
             },
             {
               "explain": "Multiply 12 by 8 to get the final answer.",
-              "work": "\\( (\therefore; 96 \text{ lollipops}) \\)"
+              "work": "\\( (\\therefore; 96 \\text{ lollipops}) \\)"
             }
           ],
           "timeLimit": 90,
@@ -20325,19 +20325,19 @@
           "steps": [
             {
               "explain": "To find the total number of tiles in one layer on the floor, multiply the 15 rows by the 20 columns.",
-              "work": "\\( (\text{Tiles per layer} = 15 \times 20) \\)"
+              "work": "\\( (\\text{Tiles per layer} = 15 \\times 20) \\)"
             },
             {
               "explain": "Multiply 15 by 2 and append one zero to get 300.",
-              "work": "\\( (15 \times 20 = 300) \\)"
+              "work": "\\( (15 \\times 20 = 300) \\)"
             },
             {
               "explain": "Since there are 6 layers stacked, multiply the number of tiles in one layer by 6.",
-              "work": "\\( (\text{Total tiles} = 300 \times 6) \\)"
+              "work": "\\( (\\text{Total tiles} = 300 \\times 6) \\)"
             },
             {
               "explain": "Multiply 3 by 6 and append two zeroes to find the total number of tiles.",
-              "work": "\\( (\therefore; 1800 \text{ tiles}) \\)"
+              "work": "\\( (\\therefore; 1800 \\text{ tiles}) \\)"
             }
           ],
           "timeLimit": 90,
@@ -20364,19 +20364,19 @@
           "steps": [
             {
               "explain": "First, find the total number of trading cards Sarah has. Multiply the 36 packets by the 8 cards in each packet.",
-              "work": "\\( (\text{Total cards} = 36 \times 8) \\)"
+              "work": "\\( (\\text{Total cards} = 36 \\times 8) \\)"
             },
             {
               "explain": "Multiply 36 by 8 to determine the total number of cards.",
-              "work": "\\( (36 \times 8 = 288) \\)"
+              "work": "\\( (36 \\times 8 = 288) \\)"
             },
             {
               "explain": "Now, these 288 cards must be divided equally into 12 new packets, so divide the total cards by 12.",
-              "work": "\\( (\text{Cards per new packet} = 288 div 12) \\)"
+              "work": "\\( (\\text{Cards per new packet} = 288 div 12) \\)"
             },
             {
               "explain": "Divide 288 by 12 to find the number of cards in each new packet.",
-              "work": "\\( (\therefore; 24 \text{ cards}) \\)"
+              "work": "\\( (\\therefore; 24 \\text{ cards}) \\)"
             }
           ],
           "xp": 2,

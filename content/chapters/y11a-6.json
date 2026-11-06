@@ -6991,7 +6991,7 @@
           "steps": [
             {
               "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric functions of a general angle: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(x \neq 90^{\\circ} + 180^{\\circ}n\\)",
+              "work": "\\(x \\neq 90^{\\circ} + 180^{\\circ}n\\)",
               "figure": {
                 "jsxGraph": {
                   "width": 360,
@@ -7261,7 +7261,7 @@
           "steps": [
             {
               "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric functions of a general angle: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(x \neq 180^{\\circ}n\\)"
+              "work": "\\(x \\neq 180^{\\circ}n\\)"
             },
             {
               "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
@@ -7401,7 +7401,7 @@
           "steps": [
             {
               "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric functions of a general angle: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(x \neq 90^{\\circ} + 180^{\\circ}n\\)"
+              "work": "\\(x \\neq 90^{\\circ} + 180^{\\circ}n\\)"
             },
             {
               "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
@@ -7541,7 +7541,7 @@
           "steps": [
             {
               "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric functions of a general angle: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(x \neq 180^{\\circ}n\\)"
+              "work": "\\(x \\neq 180^{\\circ}n\\)"
             },
             {
               "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
@@ -14241,7 +14241,7 @@
             "\\(\\sin \\theta\\)"
           ],
           "answer": 1,
-          "hint": "180° - \theta is in Quadrant II.",
+          "hint": "180° - \\theta is in Quadrant II.",
           "solution": "In Quadrant II, cosine is negative. The reference angle is \\(\\theta\\). Thus, \\(\\cos(180^{\\circ} - \\theta) = -\\cos \\theta\\).",
           "steps": [
             {
@@ -14294,7 +14294,7 @@
             "\\(-\\sin \\theta\\)"
           ],
           "answer": 2,
-          "hint": "360° - \theta is in Quadrant IV.",
+          "hint": "360° - \\theta is in Quadrant IV.",
           "solution": "In Quadrant IV, cosine is positive. The reference angle is \\(\\theta\\). Thus, \\(\\cos(360^{\\circ} - \\theta) = \\cos \\theta\\).",
           "steps": [
             {
@@ -14347,7 +14347,7 @@
             "\\(\\cos \\theta\\)"
           ],
           "answer": 0,
-          "hint": "180° + \theta is in Quadrant III.",
+          "hint": "180° + \\theta is in Quadrant III.",
           "solution": "In Quadrant III, sine is negative. The reference angle is \\(\\theta\\). Thus, \\(\\sin(180^{\\circ} + \\theta) = -\\sin \\theta\\).",
           "steps": [
             {
@@ -14400,7 +14400,7 @@
             "\\(\\cot \\theta\\)"
           ],
           "answer": 1,
-          "hint": "180° - \theta is in Quadrant II.",
+          "hint": "180° - \\theta is in Quadrant II.",
           "solution": "In Quadrant II, tangent is negative. The reference angle is \\(\\theta\\). Thus, \\(\\tan(180^{\\circ} - \\theta) = -\\tan \\theta\\).",
           "steps": [
             {
@@ -15615,7 +15615,7 @@
             "\\(\\frac{5}{13}\\)"
           ],
           "answer": 0,
-          "hint": "Quadrant IV. Apply sin^2 \theta + cos^2 \theta = 1.",
+          "hint": "Quadrant IV. Apply sin^2 \\theta + cos^2 \\theta = 1.",
           "solution": "In Quadrant IV, sine is negative. Since \\(\\cos \\theta = \\frac{5}{13}\\), \\(\\sin \\theta = -\\sqrt{1 - \\cos^2 \\theta} = -\\sqrt{1 - \\left(\\frac{5}{13}\\right)^2} = -\\sqrt{1 - \\frac{25}{169}} = -\\sqrt{\\frac{144}{169}} = -\\frac{12}{13}\\).",
           "steps": [
             {
@@ -15775,7 +15775,7 @@
             "\\(\\pm \\frac{1}{3}\\)"
           ],
           "answer": 1,
-          "hint": "Find cos^2 \theta = 1 - sin^2 \theta, then take square root.",
+          "hint": "Find cos^2 \\theta = 1 - sin^2 \\theta, then take square root.",
           "solution": "Using \\(\\cos^2 \\theta = 1 - \\sin^2 \\theta = 1 - \\left(-\\frac{\\sqrt{5}}{3}\\right)^2 = 1 - \\frac{5}{9} = \\frac{4}{9}\\). Taking the square root, \\(\\cos \\theta = \\pm \\frac{2}{3}\\). Hence, the possible values are \\(2/3 \\text{ or } -2/3\\).",
           "steps": [
             {
@@ -15855,7 +15855,7 @@
             "\\(\\pm \\frac{2}{3}\\)"
           ],
           "answer": 0,
-          "hint": "Find sin^2 \theta = 1 - cos^2 \theta.",
+          "hint": "Find sin^2 \\theta = 1 - cos^2 \\theta.",
           "solution": "We have \\(\\sin^2 \\theta = 1 - \\cos^2 \\theta = 1 - \\left(-\\frac{1}{3}\\right)^2 = 1 - \\frac{1}{9} = \\frac{8}{9}\\). Thus, \\(\\sin \\theta = \\pm \\frac{\\sqrt{8}}{3}\\).",
           "steps": [
             {
@@ -15935,7 +15935,7 @@
             "\\(-\\frac{\\sqrt{15}}{15}\\)"
           ],
           "answer": 0,
-          "hint": "Since \theta is acute, tan is positive.",
+          "hint": "Since \\theta is acute, tan is positive.",
           "solution": "Since \\(\\theta\\) is acute (Quadrant I), \\(\\tan \\theta\\) is positive. \\(\\sin \\theta = \\sqrt{1 - \\cos^2 \\theta} = \\sqrt{1 - \\frac{1}{16}} = \\frac{\\sqrt{15}}{4}\\). Thus, \\(\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta} = \\frac{\\sqrt{15}/4}{1/4} = \\sqrt{15}\\).",
           "steps": [
             {
@@ -16655,7 +16655,7 @@
             "\\(-\\frac{\\sqrt{3}}{\\sqrt{2}}\\)"
           ],
           "answer": 0,
-          "hint": "Find cos \theta, then take its reciprocal.",
+          "hint": "Find cos \\theta, then take its reciprocal.",
           "solution": "We have \\(\\cos^2 \\theta = 1 - \\sin^2 \\theta = 1 - \\frac{1}{3} = \\frac{2}{3} \\implies \\cos \\theta = pm \\frac{\\sqrt{2}}{\\sqrt{3}}\\). Thus, \\(\\sec \\theta = \\frac{1}{\\cos \\theta} = pm \\frac{\\sqrt{3}}{\\sqrt{2}}\\).",
           "steps": [
             {
@@ -16695,7 +16695,7 @@
             "\\(-\\frac{12}{5}\\)"
           ],
           "answer": 0,
-          "hint": "Recall secant is 1/cos, so cos \theta = -5/13.",
+          "hint": "Recall secant is 1/cos, so cos \\theta = -5/13.",
           "solution": "Since \\(\\sec \\theta = -\\frac{13}{5}\\), \\(\\cos \\theta = -\\frac{5}{13}\\). Thus, \\(\\sin \\theta = pm \\frac{12}{13}\\). Therefore, \\(\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta} = pm \\frac{12}{5}\\).",
           "steps": [
             {
@@ -17015,7 +17015,7 @@
             "\\(\\frac{\\sqrt{b^2 + a^2}}{b}\\)"
           ],
           "answer": 0,
-          "hint": "Since \theta is obtuse (Quadrant II), cosine is negative. Apply sin^2 \theta + cos^2 \theta = 1.",
+          "hint": "Since \\theta is obtuse (Quadrant II), cosine is negative. Apply sin^2 \\theta + cos^2 \\theta = 1.",
           "solution": "In Quadrant II, cosine is negative. Since \\(\\sin \\theta = \\frac{a}{b}\\), we have \\(\\cos \\theta = -\\sqrt{1 - \\sin^2 \\theta} = -\\sqrt{1 - \\frac{a^2}{b^2}} = -\\sqrt{\\frac{b^2 - a^2}{b^2}} = -\\frac{\\sqrt{b^2 - a^2}}{b}\\).",
           "steps": [
             {
@@ -17928,7 +17928,7 @@
             "\\\\(\\\\cot \\\\theta\\\\)"
           ],
           "answer": 2,
-          "hint": "Simplify the denominator first: \\\\tan(90° - \theta) = \\\\cot \theta.",
+          "hint": "Simplify the denominator first: \\\\tan(90° - \\theta) = \\\\cot \\theta.",
           "solution": "The denominator \\(\\tan(90^{\\circ} - \\theta) = \\cot \\theta\\). Thus, the expression becomes \\(\\frac{1}{\\cot \\theta} = \\tan \\theta\\).",
           "steps": [
             {

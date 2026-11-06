@@ -194,7 +194,7 @@
             "\\(2 units right, 4 units down\\)"
           ],
           "answer": 0,
-          "solution": "<div style=\"text-align: left;\"><p>Let's track the translation of corresponding vertices, such as \\(A\\) to \\(A'\\):</p><ul><li>Starting at \\(A\\), move <strong>4 units to the right</strong> and then <strong>2 units down</strong> to reach \\(A'\\).</li><li>Verifying other vertices: \\(B \to B'\\) is also 4 units right and 2 units down. \\(C \to C'\\) is also 4 units right and 2 units down.</li></ul><p>Hence, the translation is <strong>4 units right, 2 units down</strong>.</p></div>",
+          "solution": "<div style=\"text-align: left;\"><p>Let's track the translation of corresponding vertices, such as \\(A\\) to \\(A'\\):</p><ul><li>Starting at \\(A\\), move <strong>4 units to the right</strong> and then <strong>2 units down</strong> to reach \\(A'\\).</li><li>Verifying other vertices: \\(B \\to B'\\) is also 4 units right and 2 units down. \\(C \\to C'\\) is also 4 units right and 2 units down.</li></ul><p>Hence, the translation is <strong>4 units right, 2 units down</strong>.</p></div>",
           "steps": [
             {
               "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
@@ -202,7 +202,7 @@
             },
             {
               "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
-              "work": "<div style=\"text-align: left;\"><p>Let's track the translation of corresponding vertices, such as \\(A\\) to \\(A'\\):</p><ul><li>Starting at \\(A\\), move <strong>4 units to the right</strong> and then <strong>2 units down</strong> to reach \\(A'\\).</li><li>Verifying other vertices: \\(B \to B'\\) is also 4 units right and 2 units down. \\(C \to C'\\) is also 4 units right and 2 units down.</li></ul><p>Hence, the translation is <strong>4 units right, 2 units down</strong>.</p></div>"
+              "work": "<div style=\"text-align: left;\"><p>Let's track the translation of corresponding vertices, such as \\(A\\) to \\(A'\\):</p><ul><li>Starting at \\(A\\), move <strong>4 units to the right</strong> and then <strong>2 units down</strong> to reach \\(A'\\).</li><li>Verifying other vertices: \\(B \\to B'\\) is also 4 units right and 2 units down. \\(C \\to C'\\) is also 4 units right and 2 units down.</li></ul><p>Hence, the translation is <strong>4 units right, 2 units down</strong>.</p></div>"
             },
             {
               "explain": "State the final simplified answer and match it to the correct option.",
@@ -339,7 +339,7 @@
             "\\(2 units right, 3 units down\\)"
           ],
           "answer": 0,
-          "solution": "<div style=\"text-align: left;\"><p>Let's track corresponding vertex \\(A\\) to \\(A'\\):</p><ul><li>Starting at \\(A\\), move <strong>3 units to the right</strong> and <strong>2 units down</strong> to arrive at \\(A'\\).</li><li>Checking vertex \\(B \to B'\\) and \\(C \to C'\\) confirms this exact same translation (3 units right, 2 units down).</li></ul><p>Therefore, the translation is <strong>3 units right, 2 units down</strong>.</p></div>",
+          "solution": "<div style=\"text-align: left;\"><p>Let's track corresponding vertex \\(A\\) to \\(A'\\):</p><ul><li>Starting at \\(A\\), move <strong>3 units to the right</strong> and <strong>2 units down</strong> to arrive at \\(A'\\).</li><li>Checking vertex \\(B \\to B'\\) and \\(C \\to C'\\) confirms this exact same translation (3 units right, 2 units down).</li></ul><p>Therefore, the translation is <strong>3 units right, 2 units down</strong>.</p></div>",
           "steps": [
             {
               "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
@@ -347,7 +347,7 @@
             },
             {
               "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
-              "work": "<div style=\"text-align: left;\"><p>Let's track corresponding vertex \\(A\\) to \\(A'\\):</p><ul><li>Starting at \\(A\\), move <strong>3 units to the right</strong> and <strong>2 units down</strong> to arrive at \\(A'\\).</li><li>Checking vertex \\(B \to B'\\) and \\(C \to C'\\) confirms this exact same translation (3 units right, 2 units down).</li></ul><p>Therefore, the translation is <strong>3 units right, 2 units down</strong>.</p></div>"
+              "work": "<div style=\"text-align: left;\"><p>Let's track corresponding vertex \\(A\\) to \\(A'\\):</p><ul><li>Starting at \\(A\\), move <strong>3 units to the right</strong> and <strong>2 units down</strong> to arrive at \\(A'\\).</li><li>Checking vertex \\(B \\to B'\\) and \\(C \\to C'\\) confirms this exact same translation (3 units right, 2 units down).</li></ul><p>Therefore, the translation is <strong>3 units right, 2 units down</strong>.</p></div>"
             },
             {
               "explain": "State the final simplified answer and match it to the correct option.",

@@ -3298,7 +3298,7 @@
           "id": "y11a-5-newq46",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "A thermal fluid channel boundary follows the curve \\(y = \frac{6}{x}\\). If the channel is translated 3 units to the right and 1 unit downward, find the new boundary equation.",
+          "stem": "A thermal fluid channel boundary follows the curve \\(y = \\frac{6}{x}\\). If the channel is translated 3 units to the right and 1 unit downward, find the new boundary equation.",
           "options": [
             "\\(y = \\frac{6}{x - 3} - 1\\)",
             "\\(y = \\frac{6}{x + 3} - 1\\)",
@@ -11824,7 +11824,7 @@
           ],
           "answer": 0,
           "hint": "Replace every \\(x\\) in \\(y = 2x^2 + 8x\\) with \\(\\frac{x}{3}\\).",
-          "solution": "Replace \\(x\\) with \\(\\frac{x}{3}\\): \\(y = 2\\left(\\frac{x}{3}\\right)^2 + 8\\left(\\frac{x}{3}\right) = \\frac{2x^2}{9} + \\frac{8x}{3}\\).",
+          "solution": "Replace \\(x\\) with \\(\\frac{x}{3}\\): \\(y = 2\\left(\\frac{x}{3}\\right)^2 + 8\\left(\\frac{x}{3}\\right) = \\frac{2x^2}{9} + \\frac{8x}{3}\\).",
           "steps": [
             {
               "explain": "Stretching horizontally by factor 3 requires replacing every \\(x\\) in the current equation \\(y = 2x^2 + 8x\\) with \\(\\frac{x}{3}\\).",
@@ -11888,11 +11888,11 @@
           ],
           "answer": 0,
           "hint": "Replace every \\(x\\) with \\(\\frac{x}{3}\\).",
-          "solution": "Replace \\(x\\) with \\(\\frac{x}{3}\\): \\(g(x) = \\left(\\frac{x}{3}\right)^3 - 4\\left(\\frac{x}{3}\right) = \\frac{x^3}{27} - \\frac{4x}{3}\\).",
+          "solution": "Replace \\(x\\) with \\(\\frac{x}{3}\\): \\(g(x) = \\left(\\frac{x}{3}\\right)^3 - 4\\left(\\frac{x}{3}\\right) = \\frac{x^3}{27} - \\frac{4x}{3}\\).",
           "steps": [
             {
               "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Transformations and symmetry: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(g(x) = \\left(\\frac{x}{3}\right)^3 - 4\\left(\\frac{x}{3}\right)\\)"
+              "work": "\\(g(x) = \\left(\\frac{x}{3}\\right)^3 - 4\\left(\\frac{x}{3}\\right)\\)"
             },
             {
               "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",

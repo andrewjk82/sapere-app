@@ -1516,7 +1516,7 @@
           "type": "mc",
           "difficulty": "medium",
           "timeLimit": 60,
-          "stem": "If \\(\\omega^3=1\\) and \\(\\omega\ne1\\), simplify \\((1+\\omega)^2+(1+\\omega^2)^2\\).",
+          "stem": "If \\(\\omega^3=1\\) and \\(\\omega\\ne1\\), simplify \\((1+\\omega)^2+(1+\\omega^2)^2\\).",
           "hint": "Use \\(1+\\omega+\\omega^2=0\\) for the non-real cube roots of unity.",
           "solution": "\\(-1\\)",
           "steps": [
@@ -1543,7 +1543,7 @@
           "answer": 0,
           "keyPoints": [
             {
-              "text": "If \\(\\omega^3=1\\) and \\(\\omega\ne1\\), simplify \\((1+\\omega)^2+(1+\\omega^2)^2\\)",
+              "text": "If \\(\\omega^3=1\\) and \\(\\omega\\ne1\\), simplify \\((1+\\omega)^2+(1+\\omega^2)^2\\)",
               "note": "Use \\(1+\\omega+\\omega^2=0\\) for the non-real cube roots of unity."
             }
           ]
@@ -1589,7 +1589,7 @@
           "type": "mc",
           "difficulty": "medium",
           "timeLimit": 60,
-          "stem": "Given \\(P_n=2n\\sin(\\pi/n)\\) and \\(\\lim_{x\\\to 0}\\sin x/x=1\\), find \\(\\lim_{n\\\to \\infty}P_n\\).",
+          "stem": "Given \\(P_n=2n\\sin(\\pi/n)\\) and \\(\\lim_{x\\\\to 0}\\sin x/x=1\\), find \\(\\lim_{n\\\\to \\infty}P_n\\).",
           "hint": "Rewrite the perimeter as \\(2\\pi\\,\\frac{\\sin(\\pi/n)}{\\pi/n}\\).",
           "solution": "\\(2\\pi\\)",
           "steps": [
@@ -1599,11 +1599,11 @@
             },
             {
               "explain": "Take the limit.",
-              "work": "As \\(n\\\to \\infty\\), \\(\\pi/n\\\to 0\\), so the ratio tends to 1."
+              "work": "As \\(n\\\\to \\infty\\), \\(\\pi/n\\\\to 0\\), so the ratio tends to 1."
             },
             {
               "explain": "Conclude.",
-              "work": "\\(P_n\\\to 2\\pi.\\)"
+              "work": "\\(P_n\\\\to 2\\pi.\\)"
             }
           ],
           "xp": 1,
@@ -1620,7 +1620,7 @@
           "answer": 0,
           "keyPoints": [
             {
-              "text": "Given \\(P_n=2n\\sin(\\pi/n)\\) and \\(\\lim_{x\\\to 0}\\sin x/x=1\\), find \\(\\lim_{n\\\to \\infty}P_n\\)",
+              "text": "Given \\(P_n=2n\\sin(\\pi/n)\\) and \\(\\lim_{x\\\\to 0}\\sin x/x=1\\), find \\(\\lim_{n\\\\to \\infty}P_n\\)",
               "note": "Rewrite the perimeter as \\(2\\pi\\,\\frac{\\sin(\\pi/n)}{\\pi/n}\\)."
             }
           ]

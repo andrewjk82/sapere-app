@@ -37,7 +37,7 @@
               "work": "\\(7(-c)^3+9(-c)^2-5c(-c)= -7c^3+14c^2\\)"
             },
             {
-              "explain": "Use the condition (c\ne0), then solve.",
+              "explain": "Use the condition (c\\ne0), then solve.",
               "work": "\\(-7c^3+14c^2=7c^2(2-c)=0\\Rightarrow c=2\\)"
             }
           ],

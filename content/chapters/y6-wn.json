@@ -4858,7 +4858,7 @@
             "\\\\(<\\\\)",
             "\\\\(=\\\\)",
             "\\\\(>\\\\)",
-            "\\\\(\ne\\\\)"
+            "\\\\(\\ne\\\\)"
           ],
           "answer": 1,
           "hint": "First evaluate the exponent: \\\\(5^2 = 5 \\\\times 5\\\\).",
@@ -6198,17 +6198,17 @@
           "stem": "Choose the mathematical statement that represents the phrase:\\n\\\\(7\\\\) is not equal to \\\\(6\\\\).",
           "options": [
             "\\\\(7 > 6\\\\)",
-            "\\\\(7 \\\neq 6\\\\)",
+            "\\\\(7 \\\\neq 6\\\\)",
             "\\\\(7 = 6\\\\)",
             "\\\\(7 < 6\\\\)"
           ],
           "answer": 1,
-          "hint": "The symbol for 'not equal' is a slash through an equals sign: \\\\(\neq\\\\).",
-          "solution": "Identify the symbols:\n- 'is not equal to' is represented by \\\\(\neq\\\\).\n- Therefore, the statement is \\\\(7 \\\neq 6\\\\).",
+          "hint": "The symbol for 'not equal' is a slash through an equals sign: \\\\(\\neq\\\\).",
+          "solution": "Identify the symbols:\n- 'is not equal to' is represented by \\\\(\\neq\\\\).\n- Therefore, the statement is \\\\(7 \\\\neq 6\\\\).",
           "steps": [
             {
               "explain": "Recall the symbols for mathematical relations.",
-              "work": "\\\\(\\begin{aligned} = &\\quad \\text{equal} \\\\ \neq &\\quad \\text{not equal} \\\\ > &\\quad \\text{greater than} \\end{aligned}\\\\)"
+              "work": "\\\\(\\begin{aligned} = &\\quad \\text{equal} \\\\ \\neq &\\quad \\text{not equal} \\\\ > &\\quad \\text{greater than} \\end{aligned}\\\\)"
             },
             {
               "explain": "Write the numbers 7 and 6 on either side of the relation symbol.",
@@ -6216,7 +6216,7 @@
             },
             {
               "explain": "Insert the 'not equal to' symbol to complete the statement.",
-              "work": "\\\\(7 \\\neq 6\\\\)"
+              "work": "\\\\(7 \\\\neq 6\\\\)"
             }
           ],
           "timeLimit": 90,
@@ -6228,7 +6228,7 @@
           "difficulty": "medium",
           "stem": "Choose the mathematical statement that represents the phrase:\\nTherefore, the square of \\\\(6\\\\) is equal to \\\\(36\\\\).",
           "options": [
-            "\\\\(\\therefore 6^2 \\\neq 36\\\\)",
+            "\\\\(\\therefore 6^2 \\\\neq 36\\\\)",
             "\\\\(\\because 6^2 = 36\\\\)",
             "\\\\(\\therefore 6 \\\\times 2 = 36\\\\)",
             "\\\\(\\therefore 6^2 = 36\\\\)"

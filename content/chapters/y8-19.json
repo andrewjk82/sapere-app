@@ -1686,7 +1686,7 @@
                 },
                 {
                   "explain": "Read the ordered frequencies. The four zeroes occupy positions 1–4. The five ones occupy positions 5–9.",
-                  "work": "\\(0: 1\text{st–}4\text{th},\\qquad1:5\text{th–}9\text{th}\\)"
+                  "work": "\\(0: 1\\text{st–}4\\text{th},\\qquad1:5\\text{th–}9\\text{th}\\)"
                 },
                 {
                   "explain": "The 9th observation is therefore 1.",

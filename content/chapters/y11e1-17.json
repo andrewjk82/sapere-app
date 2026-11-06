@@ -63,10 +63,10 @@
           "difficulty": "medium",
           "stem": "In how many different queues can 5 boys and 3 girls stand if the 3 girls must stand next to one another?",
           "options": [
-            "\\(6!\times3!=4320\\)",
+            "\\(6!\\times3!=4320\\)",
             "\\(8!=40320\\)",
             "\\(6!=720\\)",
-            "\\(5!\times3!=720\\)"
+            "\\(5!\\times3!=720\\)"
           ],
           "answer": 0,
           "hint": "Treat the three girls as one block first, then arrange the girls within that block.",

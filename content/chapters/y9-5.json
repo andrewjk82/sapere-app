@@ -14130,7 +14130,7 @@
           ],
           "answer": 2,
           "hint": "Let her age be x, and construct the equation using the fractions of (x - 5) and (x - 1).",
-          "solution": "Let the teacher's age be \\(x\\).\nAge five years ago = \\(x - 5\\).\nAge last year = \\(x - 1\\).\nAge nine years ago = \\(x - 9\\).\nEquation:\n\\[\\frac{x - 5}{4} + \frac{x - 1}{2} = x - 9\\]\nMultiply both sides by 4:\n\\[(x - 5) + 2(x - 1) = 4(x - 9)\\]\n\\[x - 5 + 2x - 2 = 4x - 36\\]\n\\[3x - 7 = 4x - 36 \\Rightarrow x = 29\\]\nSo she is \\(29\\) years old.",
+          "solution": "Let the teacher's age be \\(x\\).\nAge five years ago = \\(x - 5\\).\nAge last year = \\(x - 1\\).\nAge nine years ago = \\(x - 9\\).\nEquation:\n\\[\\frac{x - 5}{4} + \\frac{x - 1}{2} = x - 9\\]\nMultiply both sides by 4:\n\\[(x - 5) + 2(x - 1) = 4(x - 9)\\]\n\\[x - 5 + 2x - 2 = 4x - 36\\]\n\\[3x - 7 = 4x - 36 \\Rightarrow x = 29\\]\nSo she is \\(29\\) years old.",
           "steps": [
             {
               "explain": "Write the equation representing the word problem.",

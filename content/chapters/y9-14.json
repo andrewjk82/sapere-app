@@ -102,7 +102,7 @@
           ],
           "answer": 1,
           "hint": "Substitute x = -2 and y = 5 into the equations and verify if they are true.",
-          "solution": "Substituting \\( x = -2 \\) and \\( y = 5 \\) into the equations: \n\\( -2 + 5 = 3 \neq 4 \\) (False).\nSince the first equation is not satisfied, the point is not a solution.",
+          "solution": "Substituting \\( x = -2 \\) and \\( y = 5 \\) into the equations: \n\\( -2 + 5 = 3 \\neq 4 \\) (False).\nSince the first equation is not satisfied, the point is not a solution.",
           "steps": [
             {
               "explain": "Substitute \\( x = -2 \\) and \\( y = 5 \\) into the first equation.",
@@ -8521,7 +8521,7 @@
             },
             {
               "explain": "Solve the resulting single-variable equation.",
-              "work": "\\(3 \neq -1 \\implies \\text{Lines intersect at exactly one point}\\)"
+              "work": "\\(3 \\neq -1 \\implies \\text{Lines intersect at exactly one point}\\)"
             },
             {
               "explain": "Substitute the found value back into an original equation to solve for the second variable.",
@@ -8569,7 +8569,7 @@
             },
             {
               "explain": "Solve the resulting single-variable equation.",
-              "work": "\\(-2 \neq 1 \\implies \\text{One solution}\\)"
+              "work": "\\(-2 \\neq 1 \\implies \\text{One solution}\\)"
             },
             {
               "explain": "Substitute the found value back into an original equation to solve for the second variable.",
@@ -8617,7 +8617,7 @@
             },
             {
               "explain": "Solve the resulting single-variable equation.",
-              "work": "\\(-\\frac{2}{3} \neq 2 \\implies \\text{One solution}\\)"
+              "work": "\\(-\\frac{2}{3} \\neq 2 \\implies \\text{One solution}\\)"
             },
             {
               "explain": "Substitute the found value back into an original equation to solve for the second variable.",
@@ -8665,7 +8665,7 @@
             },
             {
               "explain": "Solve the resulting single-variable equation.",
-              "work": "\\(m_1 = m_2 = 3 \\text{ but } -2 \neq 4 \\implies \\text{Parallel lines}\\)"
+              "work": "\\(m_1 = m_2 = 3 \\text{ but } -2 \\neq 4 \\implies \\text{Parallel lines}\\)"
             },
             {
               "explain": "Substitute the found value back into an original equation to solve for the second variable.",
@@ -9014,7 +9014,7 @@
             },
             {
               "explain": "Substitute this coordinate point into the third equation. If the Left Hand Side (LHS) equals the Right Hand Side (RHS), the point lies on the third line, proving they are concurrent.",
-              "work": "\\(y = 3(2) + 3 = 9 \neq 6 \\implies \\text{Not concurrent}\\)"
+              "work": "\\(y = 3(2) + 3 = 9 \\neq 6 \\implies \\text{Not concurrent}\\)"
             },
             {
               "explain": "State your final conclusion based on the substitution result. The graph visually confirms the relationship between the three lines.",

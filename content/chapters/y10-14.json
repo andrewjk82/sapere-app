@@ -4004,7 +4004,7 @@
           "steps": [
             {
               "explain": "Use the change of base formula to express both logarithms in a common base, such as base \\(10\\) or natural log.",
-              "work": "\\(log_{x} y = \frac{log y}{log x}\\) and \\(log_{y} x = \frac{log x}{log y}\\)"
+              "work": "\\(log_{x} y = \\frac{log y}{log x}\\) and \\(log_{y} x = \\frac{log x}{log y}\\)"
             },
             {
               "explain": "Substitute these fractions into the original expression and multiply.",

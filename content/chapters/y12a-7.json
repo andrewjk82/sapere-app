@@ -867,16 +867,16 @@
               "stem": "Find the velocity of the particle, in metres per second, immediately before it hits the ground, leaving your answer in the form a√b, where a and b are integers.",
               "options": [
                 {
-                  "text": "\\(-10\\sqrt{69}\text{ m/s}\\)"
+                  "text": "\\(-10\\sqrt{69}\\text{ m/s}\\)"
                 },
                 {
-                  "text": "\\(10\\sqrt{69}\text{ m/s}\\)"
+                  "text": "\\(10\\sqrt{69}\\text{ m/s}\\)"
                 },
                 {
-                  "text": "\\(-70\text{ m/s}\\)"
+                  "text": "\\(-70\\text{ m/s}\\)"
                 },
                 {
-                  "text": "\\(-10\\sqrt{29}\text{ m/s}\\)"
+                  "text": "\\(-10\\sqrt{29}\\text{ m/s}\\)"
                 }
               ],
               "answer": 0,
@@ -1142,16 +1142,16 @@
               "stem": "Find the minimum distance between the cars.",
               "options": [
                 {
-                  "text": "\\(\frac{400}{\\sqrt{43}}\text{ km}\\) (about 61.0 km)"
+                  "text": "\\(\\frac{400}{\\sqrt{43}}\\text{ km}\\) (about 61.0 km)"
                 },
                 {
-                  "text": "\\(\frac{30}{43}\text{ km}\\)"
+                  "text": "\\(\\frac{30}{43}\\text{ km}\\)"
                 },
                 {
                   "text": "100 km"
                 },
                 {
-                  "text": "\\(\frac{400}{43}\text{ km}\\)"
+                  "text": "\\(\\frac{400}{43}\\text{ km}\\)"
                 }
               ],
               "answer": 0,
@@ -1210,16 +1210,16 @@
               "stem": "Show that the particle is initially at rest.",
               "options": [
                 {
-                  "text": "\\(v(0)=0\text{ m/s}\\)"
+                  "text": "\\(v(0)=0\\text{ m/s}\\)"
                 },
                 {
-                  "text": "\\(v(0)=8\text{ m/s}\\)"
+                  "text": "\\(v(0)=8\\text{ m/s}\\)"
                 },
                 {
-                  "text": "\\(a(0)=0\text{ m/s}^2\\)"
+                  "text": "\\(a(0)=0\\text{ m/s}^2\\)"
                 },
                 {
-                  "text": "\\(x(0)=8\text{ m}\\)"
+                  "text": "\\(x(0)=8\\text{ m}\\)"
                 }
               ],
               "answer": 0,

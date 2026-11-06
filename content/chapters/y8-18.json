@@ -2950,7 +2950,7 @@
             },
             {
               "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-              "work": "\\(-5 \neq 5 \\Rightarrow \\text{No}\\)"
+              "work": "\\(-5 \\neq 5 \\Rightarrow \\text{No}\\)"
             },
             {
               "explain": "Final answer: No. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
@@ -3142,7 +3142,7 @@
             },
             {
               "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-              "work": "\\(11 \neq -11 \\Rightarrow \\text{No}\\)"
+              "work": "\\(11 \\neq -11 \\Rightarrow \\text{No}\\)"
             },
             {
               "explain": "Final answer: No. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",

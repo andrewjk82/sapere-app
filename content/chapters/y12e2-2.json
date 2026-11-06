@@ -117,17 +117,17 @@
           "type": "mc",
           "difficulty": "medium",
           "timeLimit": 60,
-          "stem": "Negate: \\(\\exists x\\in\\mathbb R^+,\\ \\\forall y\\in\\mathbb R^+: xy=1\\).",
+          "stem": "Negate: \\(\\exists x\\in\\mathbb R^+,\\ \\\\forall y\\in\\mathbb R^+: xy=1\\).",
           "hint": "Negate each quantifier in turn and negate the statement after the quantifiers.",
-          "solution": "\\(\\\forall x\\in\\mathbb R^+,\\exists y\\in\\mathbb R^+:xy \\neq 1\\)",
+          "solution": "\\(\\\\forall x\\in\\mathbb R^+,\\exists y\\in\\mathbb R^+:xy \\neq 1\\)",
           "steps": [
             {
               "explain": "Negate the existential quantifier.",
-              "work": "\\(\neg\\exists x\\) becomes \\(\\\forall x\\)."
+              "work": "\\(\\neg\\exists x\\) becomes \\(\\\\forall x\\)."
             },
             {
               "explain": "Negate the universal quantifier.",
-              "work": "\\(\neg\\\forall y\\) becomes \\(\\exists y\\)."
+              "work": "\\(\\neg\\\\forall y\\) becomes \\(\\exists y\\)."
             },
             {
               "explain": "Negate the equality.",
@@ -140,15 +140,15 @@
             "school": "Abbotsleigh"
           },
           "options": [
-            "\\(\\\forall x\\in\\mathbb R^+,\\exists y\\in\\mathbb R^+:xy \\neq 1\\)",
-            "\\(\\exists x\\in\\mathbb R^+,\\\forall y\\in\\mathbb R^+:xy \\neq 1\\)",
-            "\\(\\\forall x\\in\\mathbb R^+,\\\forall y\\in\\mathbb R^+:xy \\neq 1\\)",
+            "\\(\\\\forall x\\in\\mathbb R^+,\\exists y\\in\\mathbb R^+:xy \\neq 1\\)",
+            "\\(\\exists x\\in\\mathbb R^+,\\\\forall y\\in\\mathbb R^+:xy \\neq 1\\)",
+            "\\(\\\\forall x\\in\\mathbb R^+,\\\\forall y\\in\\mathbb R^+:xy \\neq 1\\)",
             "\\(\\exists x\\in\\mathbb R^+,\\exists y\\in\\mathbb R^+:xy \\neq 1\\)"
           ],
           "answer": 0,
           "keyPoints": [
             {
-              "text": "Negate: \\(\\exists x\\in\\mathbb R^+,\\ \\\forall y\\in\\mathbb R^+: xy=1\\)",
+              "text": "Negate: \\(\\exists x\\in\\mathbb R^+,\\ \\\\forall y\\in\\mathbb R^+: xy=1\\)",
               "note": "Negate each quantifier in turn and negate the statement after the quantifiers."
             }
           ]
@@ -973,7 +973,7 @@
             },
             {
               "explain": "Form the contrapositive.",
-              "work": "\\(\neg Q\\Rightarrow\neg P.\\)"
+              "work": "\\(\\neg Q\\Rightarrow\\neg P.\\)"
             },
             {
               "explain": "Translate back into words.",
@@ -1091,11 +1091,11 @@
           "steps": [
             {
               "explain": "Combine the two equal angles.",
-              "work": "\\(\tan(2\\arctan(1/4))=\\frac{2(1/4)}{1-(1/4)^2}=\\frac8{15}.\\)"
+              "work": "\\(\\tan(2\\arctan(1/4))=\\frac{2(1/4)}{1-(1/4)^2}=\\frac8{15}.\\)"
             },
             {
               "explain": "Add the first angle using the tangent formula.",
-              "work": "\\(\tan(A+B)=\\frac{7/23+8/15}{1-(7/23)(8/15)}=1.\\)"
+              "work": "\\(\\tan(A+B)=\\frac{7/23+8/15}{1-(7/23)(8/15)}=1.\\)"
             },
             {
               "explain": "Choose the correct angle.",
@@ -2159,7 +2159,7 @@
           "type": "review",
           "difficulty": "medium",
           "timeLimit": 60,
-          "stem": "Prove by induction that if \\(S_1=a\\) and \\(S_n-S_{n-1}=ar^{n-1}\\), then \\(S_n=\\frac{a(1-r^n)}{1-r}\\) for \\(r\ne1\\).",
+          "stem": "Prove by induction that if \\(S_1=a\\) and \\(S_n-S_{n-1}=ar^{n-1}\\), then \\(S_n=\\frac{a(1-r^n)}{1-r}\\) for \\(r\\ne1\\).",
           "hint": "Verify n=1, then use the recurrence to add the next term to the assumed geometric sum.",
           "solution": "Sample answer: The base case is true. Assume the formula holds for n. Then S_(n+1)=S_n+ar^n = a(1−r^n)/(1−r)+ar^n = a(1−r^(n+1))/(1−r). By induction it holds for all n≥1.",
           "steps": [
@@ -2189,7 +2189,7 @@
           "manual": true,
           "keyPoints": [
             {
-              "text": "Prove by induction that if \\(S_1=a\\) and \\(S_n-S_{n-1}=ar^{n-1}\\), then \\(S_n=\\frac{a(1-r^n)}{1-r}\\) for \\(r\ne1\\)",
+              "text": "Prove by induction that if \\(S_1=a\\) and \\(S_n-S_{n-1}=ar^{n-1}\\), then \\(S_n=\\frac{a(1-r^n)}{1-r}\\) for \\(r\\ne1\\)",
               "note": "Verify n=1, then use the recurrence to add the next term to the assumed geometric sum."
             }
           ]
@@ -2199,21 +2199,21 @@
           "type": "review",
           "difficulty": "medium",
           "timeLimit": 60,
-          "stem": "Let \\(S_n=\\sum_{p=1}^{n}\\arctan\\left(\\frac{1}{2p^2}\\right)\\). Prove by induction that \\(\tan S_n=\\frac{n}{n+1}\\).",
+          "stem": "Let \\(S_n=\\sum_{p=1}^{n}\\arctan\\left(\\frac{1}{2p^2}\\right)\\). Prove by induction that \\(\\tan S_n=\\frac{n}{n+1}\\).",
           "hint": "For the induction step, use the tangent addition formula with the new term arctan(1/(2(n+1)²)).",
           "solution": "Sample answer: Base case n=1 is immediate. Assume tan(S_n)=n/(n+1). The tangent addition formula gives tan(S_(n+1))=[n/(n+1)+1/(2(n+1)^2)]/[1−n/(2(n+1)^3)]=(n+1)/(n+2). Thus the claim follows by induction.",
           "steps": [
             {
               "explain": "Check n=1.",
-              "work": "\\(\tan S_1=1/2=1/(1+1).\\)"
+              "work": "\\(\\tan S_1=1/2=1/(1+1).\\)"
             },
             {
               "explain": "Assume the result for n.",
-              "work": "\\(\tan S_n=n/(n+1).\\)"
+              "work": "\\(\\tan S_n=n/(n+1).\\)"
             },
             {
               "explain": "Add the next term.",
-              "work": "\\(\tan S_{n+1}=\\frac{\\frac n{n+1}+\\frac1{2(n+1)^2}}{1-\\frac n{2(n+1)^3}}.\\)"
+              "work": "\\(\\tan S_{n+1}=\\frac{\\frac n{n+1}+\\frac1{2(n+1)^2}}{1-\\frac n{2(n+1)^3}}.\\)"
             },
             {
               "explain": "Simplify.",

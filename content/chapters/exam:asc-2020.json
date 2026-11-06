@@ -393,7 +393,7 @@
             },
             {
               "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(0.23 + 0.16 + 0.35 + 0.25 = 0.99 \neq 1 \\Rightarrow \\text{invalid}\\)"
+              "work": "\\(0.23 + 0.16 + 0.35 + 0.25 = 0.99 \\neq 1 \\Rightarrow \\text{invalid}\\)"
             },
             {
               "explain": "Final answer: (A) \\(P(X=x)\\): 0.23, 0.16, 0.35, 0.25. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
@@ -436,11 +436,11 @@
             },
             {
               "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(4 \\times 0.3 = 1.2 \neq 1\\)"
+              "work": "\\(4 \\times 0.3 = 1.2 \\neq 1\\)"
             },
             {
               "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(4 \\times 0.5 = 2.0 \neq 1\\)"
+              "work": "\\(4 \\times 0.5 = 2.0 \\neq 1\\)"
             },
             {
               "explain": "Final answer: (B) \\(P(X=x)\\): 0.1, 0.4, 0.3, 0.2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
@@ -5311,7 +5311,7 @@
           "solution": "The correct answer is \\(t = 30\\) minutes after 9:45 am (10:15 am).",
           "steps": [
             {
-              "explain": "Flow rate zero means \\(\\dfrac{dV}{dt} = 0\\). Given \\(\\dfrac{dV}{dt} = -0.3\\sin\\dfrac{\\pi t}{30}\\), and \\(-0.3 \neq 0\\), we need \\(\\sin\\dfrac{\\pi t}{30} = 0\\).",
+              "explain": "Flow rate zero means \\(\\dfrac{dV}{dt} = 0\\). Given \\(\\dfrac{dV}{dt} = -0.3\\sin\\dfrac{\\pi t}{30}\\), and \\(-0.3 \\neq 0\\), we need \\(\\sin\\dfrac{\\pi t}{30} = 0\\).",
               "work": "\\(\\sin\\dfrac{\\pi t}{30} = 0\\)"
             },
             {

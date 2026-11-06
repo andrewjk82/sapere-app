@@ -230,7 +230,7 @@
               "work": "\\(\\text{range of } f(g(x)) = (0, infty)\\)"
             },
             {
-              "explain": "Form the second composite \\(g(f(x)) = \\dfrac{1}{\\sqrt{x} - 1}\\). It requires \\(x \\geq 0\\) for the square root and \\(\\sqrt{x} \neq 1\\) (i.e. \\(x \neq 1\\)) so the denominator is non-zero.",
+              "explain": "Form the second composite \\(g(f(x)) = \\dfrac{1}{\\sqrt{x} - 1}\\). It requires \\(x \\geq 0\\) for the square root and \\(\\sqrt{x} \\neq 1\\) (i.e. \\(x \\neq 1\\)) so the denominator is non-zero.",
               "work": "\\(g(f(x)) = \\dfrac{1}{\\sqrt{x}-1}, quad \\text{domain: } [0, infty)\\setminus{1}\\)"
             },
             {
@@ -3231,7 +3231,7 @@
               "work": "\\(\\text{range of } f(g(x)) = (0, infty)\\)"
             },
             {
-              "explain": "Form \\(g(f(x)) = \\dfrac{1}{\\sqrt{x}-2}\\), which requires \\(x \\geq 0\\) and \\(\\sqrt{x} \neq 2\\), i.e. \\(x \neq 4\\). Its range: \\(\\sqrt{x} - 2\\) covers \\([-2, infty)\\setminus{0}\\), so the reciprocal covers \\((-\\infty, -\\tfrac{1}{2}] \\cup (0, infty)\\).",
+              "explain": "Form \\(g(f(x)) = \\dfrac{1}{\\sqrt{x}-2}\\), which requires \\(x \\geq 0\\) and \\(\\sqrt{x} \\neq 2\\), i.e. \\(x \\neq 4\\). Its range: \\(\\sqrt{x} - 2\\) covers \\([-2, infty)\\setminus{0}\\), so the reciprocal covers \\((-\\infty, -\\tfrac{1}{2}] \\cup (0, infty)\\).",
               "work": "\\(g(f(x)) = \\dfrac{1}{\\sqrt{x}-2}, quad \\text{domain: } [0, infty)\\setminus{4}\\)"
             },
             {

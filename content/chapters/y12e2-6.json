@@ -2553,13 +2553,13 @@
           "type": "mc",
           "difficulty": "medium",
           "timeLimit": 60,
-          "stem": "Evaluate \\(16\\int_0^{\\pi/2}\\sin^5\theta\\,d\theta\\).",
+          "stem": "Evaluate \\(16\\int_0^{\\pi/2}\\sin^5\\theta\\,d\\theta\\).",
           "hint": "Use the identity for sin^5θ and integrate the three sine terms, or apply the reduction formula.",
           "solution": "\\(\\frac{128}{15}\\)",
           "steps": [
             {
               "explain": "Use the standard odd-power integral.",
-              "work": "\\(\\int_0^{\\pi/2}\\sin^5\theta\\,d\theta=\\frac{4}{5}\\cdot\\frac{2}{3}\\cdot1=\\frac{8}{15}.\\)"
+              "work": "\\(\\int_0^{\\pi/2}\\sin^5\\theta\\,d\\theta=\\frac{4}{5}\\cdot\\frac{2}{3}\\cdot1=\\frac{8}{15}.\\)"
             },
             {
               "explain": "Multiply by 16.",
@@ -2580,7 +2580,7 @@
           "answer": 0,
           "keyPoints": [
             {
-              "text": "Evaluate \\(16\\int_0^{\\pi/2}\\sin^5\theta\\,d\theta\\)",
+              "text": "Evaluate \\(16\\int_0^{\\pi/2}\\sin^5\\theta\\,d\\theta\\)",
               "note": "Use the identity for sin^5θ and integrate the three sine terms, or apply the reduction formula."
             }
           ]

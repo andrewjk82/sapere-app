@@ -310,7 +310,7 @@
           "solution": "The correct answer is \\(1456\\).",
           "steps": [
             {
-              "explain": "Given: \\(a = 4\\), \\(r = 3\\), \\(n = 6\\). Why this sum formula? For a finite GP with \\(r \ne 1\\), the closed form \\(S_n = \\dfrac{a(r^n-1)}{r-1}\\) avoids adding six growing terms by hand. Strategy: evaluate \\(r^n\\) first. A common slip is using the infinite-sum formula or the version for \\(|r|<1\\) with \\(1-r^n\\) without adjusting the denominator.",
+              "explain": "Given: \\(a = 4\\), \\(r = 3\\), \\(n = 6\\). Why this sum formula? For a finite GP with \\(r \\ne 1\\), the closed form \\(S_n = \\dfrac{a(r^n-1)}{r-1}\\) avoids adding six growing terms by hand. Strategy: evaluate \\(r^n\\) first. A common slip is using the infinite-sum formula or the version for \\(|r|<1\\) with \\(1-r^n\\) without adjusting the denominator.",
               "work": "\\(S_n = \\dfrac{a(r^n-1)}{r-1}\\)"
             },
             {
@@ -4964,7 +4964,7 @@
             },
             {
               "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(\\text{For } n = 5, \\; 32 \ngtr 40. \\quad \\text{For } n = 6, \\; 64 > 40. \\implies n = 6\\)"
+              "work": "\\(\\text{For } n = 5, \\; 32 \\ngtr 40. \\quad \\text{For } n = 6, \\; 64 > 40. \\implies n = 6\\)"
             },
             {
               "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
@@ -5001,7 +5001,7 @@
             },
             {
               "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(\\text{For } n = 14, \\; 16\\,384 \ngtr 25\\,000. \\quad \\text{For } n = 15, \\; 32\\,768 > 25\\,000. \\implies n = 15\\)"
+              "work": "\\(\\text{For } n = 14, \\; 16\\,384 \\ngtr 25\\,000. \\quad \\text{For } n = 15, \\; 32\\,768 > 25\\,000. \\implies n = 15\\)"
             },
             {
               "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
@@ -5038,7 +5038,7 @@
             },
             {
               "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(\\text{For } n = 22, \\; 4\\,194\\,304 \ngtr 5\\,000\\,000. \\quad \\text{For } n = 23, \\; 8\\,388\\,608 > 5\\,000\\,000. \\implies n = 23\\)"
+              "work": "\\(\\text{For } n = 22, \\; 4\\,194\\,304 \\ngtr 5\\,000\\,000. \\quad \\text{For } n = 23, \\; 8\\,388\\,608 > 5\\,000\\,000. \\implies n = 23\\)"
             },
             {
               "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
@@ -5069,7 +5069,7 @@
             },
             {
               "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(\\text{For } n = 2, \\; 9 \ngtr 20. \\quad \\text{For } n = 3, \\; 27 > 20. \\implies n = 3\\)"
+              "work": "\\(\\text{For } n = 2, \\; 9 \\ngtr 20. \\quad \\text{For } n = 3, \\; 27 > 20. \\implies n = 3\\)"
             },
             {
               "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
@@ -5107,7 +5107,7 @@
             },
             {
               "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(\\text{For } n = 9, \\; 19\\,683 \ngtr 25\\,000. \\quad \\text{For } n = 10, \\; 59\\,049 > 25\\,000. \\implies n = 10\\)"
+              "work": "\\(\\text{For } n = 9, \\; 19\\,683 \\ngtr 25\\,000. \\quad \\text{For } n = 10, \\; 59\\,049 > 25\\,000. \\implies n = 10\\)"
             },
             {
               "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
@@ -5144,7 +5144,7 @@
             },
             {
               "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(\\text{For } n = 14, \\; 4\\,782\\,969 \ngtr 8\\,000\\,000. \\quad \\text{For } n = 15, \\; 14\\,348\\,907 > 8\\,000\\,000. \\implies n = 15\\)"
+              "work": "\\(\\text{For } n = 14, \\; 4\\,782\\,969 \\ngtr 8\\,000\\,000. \\quad \\text{For } n = 15, \\; 14\\,348\\,907 > 8\\,000\\,000. \\implies n = 15\\)"
             },
             {
               "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
@@ -5181,7 +5181,7 @@
             },
             {
               "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(\\text{For } n = 4, \\; 0.0625 \nless 0.05. \\quad \\text{For } n = 5, \\; 0.03125 < 0.05. \\implies n = 5\\)"
+              "work": "\\(\\text{For } n = 4, \\; 0.0625 \\nless 0.05. \\quad \\text{For } n = 5, \\; 0.03125 < 0.05. \\implies n = 5\\)"
             },
             {
               "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
@@ -5218,7 +5218,7 @@
             },
             {
               "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(\\text{For } n = 8, \\; 0.00390625 \nless 0.002. \\quad \\text{For } n = 9, \\; 0.001953125 < 0.002. \\implies n = 9\\)"
+              "work": "\\(\\text{For } n = 8, \\; 0.00390625 \\nless 0.002. \\quad \\text{For } n = 9, \\; 0.001953125 < 0.002. \\implies n = 9\\)"
             },
             {
               "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
@@ -5255,7 +5255,7 @@
             },
             {
               "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(\\text{For } n = 14, \\; 0.000061 \nless 0.00005. \\quad \\text{For } n = 15, \\; 0.000031 < 0.00005. \\implies n = 15\\)"
+              "work": "\\(\\text{For } n = 14, \\; 0.000061 \\nless 0.00005. \\quad \\text{For } n = 15, \\; 0.000031 < 0.00005. \\implies n = 15\\)"
             },
             {
               "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
@@ -5286,7 +5286,7 @@
             },
             {
               "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(\\text{For } n = 2, \\; 0.111 \nless 0.1. \\quad \\text{For } n = 3, \\; 0.037 < 0.1. \\implies n = 3\\)"
+              "work": "\\(\\text{For } n = 2, \\; 0.111 \\nless 0.1. \\quad \\text{For } n = 3, \\; 0.037 < 0.1. \\implies n = 3\\)"
             },
             {
               "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
@@ -5324,7 +5324,7 @@
             },
             {
               "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(\\text{For } n = 4, \\; 0.0123 \nless 0.005. \\quad \\text{For } n = 5, \\; 0.0041 < 0.005. \\implies n = 5\\)"
+              "work": "\\(\\text{For } n = 4, \\; 0.0123 \\nless 0.005. \\quad \\text{For } n = 5, \\; 0.0041 < 0.005. \\implies n = 5\\)"
             },
             {
               "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
@@ -5361,7 +5361,7 @@
             },
             {
               "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(\\text{For } n = 9, \\; 0.000051 \nless 0.00002. \\quad \\text{For } n = 10, \\; 0.000017 < 0.00002. \\implies n = 10\\)"
+              "work": "\\(\\text{For } n = 9, \\; 0.000051 \\nless 0.00002. \\quad \\text{For } n = 10, \\; 0.000017 < 0.00002. \\implies n = 10\\)"
             },
             {
               "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
@@ -12098,10 +12098,10 @@
           "id": "y12a-8d-q4b",
           "type": "review",
           "difficulty": "easy",
-          "stem": "Sarah makes 36 contributions of \\( \\$400 \\) to her superannuation scheme on the first day of each month. The money earns interest at \\( 4.8\\% \\) per annum, compounded monthly. She calculates the scheme's value at a target date 36 months later.\nb) Show that the total value of the fund after contributions have been made for three years is \\( A_{36} = \\frac{400 \times 1.004 \times (1.004^{36} - 1)}{0.004} \\), and evaluate this correct to the nearest dollar.",
-          "answer": "Using GP sum formula with \\( a = 400 \\times 1.004 = 401.6 \\), \\( r = 1.004 \\), and \\( n = 36 \\):\n\\( A_{36} = \\frac{401.6(1.004^{36} - 1)}{1.004 - 1} = \\frac{400 \\times 1.004 \times (1.004^{36} - 1)}{0.004} \\).\nEvaluating: \\( A_{36} \\approx 100400(1.004^{36} - 1) = 15486.90 \\approx \\$15487 \\).",
+          "stem": "Sarah makes 36 contributions of \\( \\$400 \\) to her superannuation scheme on the first day of each month. The money earns interest at \\( 4.8\\% \\) per annum, compounded monthly. She calculates the scheme's value at a target date 36 months later.\nb) Show that the total value of the fund after contributions have been made for three years is \\( A_{36} = \\frac{400 \\times 1.004 \\times (1.004^{36} - 1)}{0.004} \\), and evaluate this correct to the nearest dollar.",
+          "answer": "Using GP sum formula with \\( a = 400 \\times 1.004 = 401.6 \\), \\( r = 1.004 \\), and \\( n = 36 \\):\n\\( A_{36} = \\frac{401.6(1.004^{36} - 1)}{1.004 - 1} = \\frac{400 \\times 1.004 \\times (1.004^{36} - 1)}{0.004} \\).\nEvaluating: \\( A_{36} \\approx 100400(1.004^{36} - 1) = 15486.90 \\approx \\$15487 \\).",
           "hint": "Write a full structured solution for the teacher to mark.",
-          "solution": "Using GP sum formula with \\( a = 400 \\times 1.004 = 401.6 \\), \\( r = 1.004 \\), and \\( n = 36 \\):\n\\( A_{36} = \\frac{401.6(1.004^{36} - 1)}{1.004 - 1} = \\frac{400 \\times 1.004 \times (1.004^{36} - 1)}{0.004} \\).\nEvaluating: \\( A_{36} \\approx 100400(1.004^{36} - 1) = 15486.90 \\approx \\$15487 \\).",
+          "solution": "Using GP sum formula with \\( a = 400 \\times 1.004 = 401.6 \\), \\( r = 1.004 \\), and \\( n = 36 \\):\n\\( A_{36} = \\frac{401.6(1.004^{36} - 1)}{1.004 - 1} = \\frac{400 \\times 1.004 \\times (1.004^{36} - 1)}{0.004} \\).\nEvaluating: \\( A_{36} \\approx 100400(1.004^{36} - 1) = 15486.90 \\approx \\$15487 \\).",
           "steps": [
             {
               "explain": "Write the sum as a geometric progression starting from the last instalment to the first instalment.",
@@ -12296,7 +12296,7 @@
           "id": "y12a-8d-q6a",
           "type": "review",
           "difficulty": "medium",
-          "stem": "Finster and Finster Superannuation offer a superannuation scheme with annual contributions of \\( \\$15000 \\) invested at an interest rate of \\( 8\\% \\) pa, compounded annually. Contributions are paid on 1st of January each year.\na) Zoya decides to invest in the fund for the next 25 years. Show that the final value of her investment is given by \\( A_{25} = \\frac{15000 \\times 1.08 \times (1.08^{25} - 1)}{0.08} \\).",
+          "stem": "Finster and Finster Superannuation offer a superannuation scheme with annual contributions of \\( \\$15000 \\) invested at an interest rate of \\( 8\\% \\) pa, compounded annually. Contributions are paid on 1st of January each year.\na) Zoya decides to invest in the fund for the next 25 years. Show that the final value of her investment is given by \\( A_{25} = \\frac{15000 \\times 1.08 \\times (1.08^{25} - 1)}{0.08} \\).",
           "answer": "Each contribution of \\( \\$15000 \\) earns compound interest.\nThe first compounds for 25 years, the last for 1 year.\n\\( A_{25} = 15000(1.08) + 15000(1.08)^2 + \\dots + 15000(1.08)^{25} \\).\nThis is a GP with \\( a = 15000(1.08) = 16200 \\), \\( r = 1.08 \\), and \\( n = 25 \\).\n\\( A_{25} = \\frac{16200(1.08^{25} - 1)}{1.08 - 1} = \\frac{15000 \\times 1.08 \\times (1.08^{25} - 1)}{0.08} \\).",
           "hint": "Write a full structured solution for the teacher to mark.",
           "solution": "Each contribution of \\( \\$15000 \\) earns compound interest.\nThe first compounds for 25 years, the last for 1 year.\n\\( A_{25} = 15000(1.08) + 15000(1.08)^2 + \\dots + 15000(1.08)^{25} \\).\nThis is a GP with \\( a = 15000(1.08) = 16200 \\), \\( r = 1.08 \\), and \\( n = 25 \\).\n\\( A_{25} = \\frac{16200(1.08^{25} - 1)}{1.08 - 1} = \\frac{15000 \\times 1.08 \\times (1.08^{25} - 1)}{0.08} \\).",
@@ -12483,9 +12483,9 @@
           "type": "review",
           "difficulty": "medium",
           "stem": "The company that Itsushi works for makes contributions to his superannuation scheme on 1st January each year. Any amount invested in this scheme earns interest at the rate of \\( 6.5\\% \\) pa.\nc) i) The first year that Itsushi's superannuation is worth more than \\( \\$1000000 \\), he decides to change jobs. Let this year be \\( n \\).\nShow that \\( n \\) is the smallest integer solution of \\( (1.065)^n > \\frac{1000000 \\times 0.065}{21741.66 \\times 1.065} + 1 \\).",
-          "answer": "Set the value of the fund greater than 1000000:\n\\( \\frac{21741.66 \\times 1.065 \\times (1.065^n - 1)}{0.065} > 1000000 \\).\nRearrange to isolate the term with n:\n\\( 1.065^n - 1 > \\frac{1000000 \\times 0.065}{21741.66 \\times 1.065} \\implies (1.065)^n > \\frac{1000000 \\times 0.065}{21741.66 \times 1.065} + 1 \\).",
+          "answer": "Set the value of the fund greater than 1000000:\n\\( \\frac{21741.66 \\times 1.065 \\times (1.065^n - 1)}{0.065} > 1000000 \\).\nRearrange to isolate the term with n:\n\\( 1.065^n - 1 > \\frac{1000000 \\times 0.065}{21741.66 \\times 1.065} \\implies (1.065)^n > \\frac{1000000 \\times 0.065}{21741.66 \\times 1.065} + 1 \\).",
           "hint": "Write a full structured solution for the teacher to mark.",
-          "solution": "Set the value of the fund greater than 1000000:\n\\( \\frac{21741.66 \\times 1.065 \\times (1.065^n - 1)}{0.065} > 1000000 \\).\nRearrange to isolate the term with n:\n\\( 1.065^n - 1 > \\frac{1000000 \\times 0.065}{21741.66 \\times 1.065} \\implies (1.065)^n > \\frac{1000000 \\times 0.065}{21741.66 \times 1.065} + 1 \\).",
+          "solution": "Set the value of the fund greater than 1000000:\n\\( \\frac{21741.66 \\times 1.065 \\times (1.065^n - 1)}{0.065} > 1000000 \\).\nRearrange to isolate the term with n:\n\\( 1.065^n - 1 > \\frac{1000000 \\times 0.065}{21741.66 \\times 1.065} \\implies (1.065)^n > \\frac{1000000 \\times 0.065}{21741.66 \\times 1.065} + 1 \\).",
           "steps": [
             {
               "explain": "Set up the inequality for the future value to exceed \\$1000000 using \\( M = 21741.66 \\).",
@@ -13819,8 +13819,8 @@
             {
               "id": "y12a-8d-q4b",
               "type": "review",
-              "stem": "b) Show that the total value of the fund after contributions have been made for three years is \\( A_{36} = \\frac{400 \times 1.004 \times (1.004^{36} - 1)}{0.004} \\), and evaluate this correct to the nearest dollar.",
-              "answer": "Using GP sum formula with \\( a = 400 \\times 1.004 = 401.6 \\), \\( r = 1.004 \\), and \\( n = 36 \\):\n\\( A_{36} = \\frac{401.6(1.004^{36} - 1)}{1.004 - 1} = \\frac{400 \\times 1.004 \times (1.004^{36} - 1)}{0.004} \\).\nEvaluating: \\( A_{36} \\approx 100400(1.004^{36} - 1) = 15486.90 \\approx \\$15487 \\).",
+              "stem": "b) Show that the total value of the fund after contributions have been made for three years is \\( A_{36} = \\frac{400 \\times 1.004 \\times (1.004^{36} - 1)}{0.004} \\), and evaluate this correct to the nearest dollar.",
+              "answer": "Using GP sum formula with \\( a = 400 \\times 1.004 = 401.6 \\), \\( r = 1.004 \\), and \\( n = 36 \\):\n\\( A_{36} = \\frac{401.6(1.004^{36} - 1)}{1.004 - 1} = \\frac{400 \\times 1.004 \\times (1.004^{36} - 1)}{0.004} \\).\nEvaluating: \\( A_{36} \\approx 100400(1.004^{36} - 1) = 15486.90 \\approx \\$15487 \\).",
               "steps": [
                 {
                   "explain": "Apply GP sum formula",
@@ -13952,7 +13952,7 @@
             {
               "id": "y12a-8d-q6a",
               "type": "review",
-              "stem": "a) Zoya decides to invest in the fund for the next 25 years. Show that the final value of her investment is given by \\( A_{25} = \\frac{15000 \\times 1.08 \times (1.08^{25} - 1)}{0.08} \\).",
+              "stem": "a) Zoya decides to invest in the fund for the next 25 years. Show that the final value of her investment is given by \\( A_{25} = \\frac{15000 \\times 1.08 \\times (1.08^{25} - 1)}{0.08} \\).",
               "answer": "Each contribution of \\( \\$15000 \\) earns compound interest. The first compounds for 25 years, the last for 1 year.\n\\( A_{25} = 15000(1.08) + 15000(1.08)^2 + \\dots + 15000(1.08)^{25} \\).\nThis is a GP with \\( a = 15000(1.08) = 16200 \\), \\( r = 1.08 \\), and \\( n = 25 \\).\n\\( A_{25} = \\frac{16200(1.08^{25} - 1)}{1.08 - 1} = \\frac{15000 \\times 1.08 \\times (1.08^{25} - 1)}{0.08} \\).",
               "steps": [
                 {
@@ -14107,7 +14107,7 @@
               "id": "y12a-8d-q7ci",
               "type": "review",
               "stem": "c) i) The first year that Itsushi's superannuation is worth more than \\( \\$1000000 \\), he decides to change jobs. Let this year be \\( n \\).\nShow that \\( n \\) is the smallest integer solution of \\( (1.065)^n > \\frac{1000000 \\times 0.065}{21741.66 \\times 1.065} + 1 \\).",
-              "answer": "Set the value of the fund greater than 1000000:\n\\( \\frac{21741.66 \\times 1.065 \\times (1.065^n - 1)}{0.065} > 1000000 \\).\nRearrange to isolate the term with n:\n\\( 1.065^n - 1 > \\frac{1000000 \\times 0.065}{21741.66 \\times 1.065} \\implies (1.065)^n > \\frac{1000000 \\times 0.065}{21741.66 \times 1.065} + 1 \\).",
+              "answer": "Set the value of the fund greater than 1000000:\n\\( \\frac{21741.66 \\times 1.065 \\times (1.065^n - 1)}{0.065} > 1000000 \\).\nRearrange to isolate the term with n:\n\\( 1.065^n - 1 > \\frac{1000000 \\times 0.065}{21741.66 \\times 1.065} \\implies (1.065)^n > \\frac{1000000 \\times 0.065}{21741.66 \\times 1.065} + 1 \\).",
               "steps": [
                 {
                   "explain": "Write inequality",
@@ -17336,7 +17336,7 @@
           "stem": "A personal loan for \\( \\$40000 \\) is approved with the following conditions: the reducible interest rate is 11.2% per annum, with payments to be made at six-monthly intervals over five years.\nUsing the rounded instalment amount of \\\\( \\\\$5332 \\\\), show that \\( A_{10} \\neq 0 \\), that is, the loan is not paid off exactly in five years.",
           "answer": "Evaluate \\( A_{10} = 40000 \\times 1.056^{10} - \\frac{5332 \\times (1.056^{10} - 1)}{0.056} \\approx 68976.19 - 68973.67 = \\$2.52 \\neq 0 \\).",
           "hint": "Write a full structured solution for the teacher to mark.",
-          "solution": "Evaluate \\( A_{10} = 40000 \\times 1.056^{10} - \\frac{5332 \times (1.056^{10} - 1)}{0.056} \\approx 68977.44 - 68976.62 = \\$0.82 \\neq 0 \\).",
+          "solution": "Evaluate \\( A_{10} = 40000 \\times 1.056^{10} - \\frac{5332 \\times (1.056^{10} - 1)}{0.056} \\approx 68977.44 - 68976.62 = \\$0.82 \\neq 0 \\).",
           "steps": [
             {
               "explain": "Evaluate the loan balance after 10 half-yearly periods (5 years) using the rounded instalment amount of $5332.",
@@ -18341,7 +18341,7 @@
               "id": "y12a-8e-q11b",
               "type": "review",
               "stem": "b) Using this rounded instalment amount, show that \\( A_{10} \\neq 0 \\), that is, the loan is not paid off exactly in five years.",
-              "answer": "Evaluate \\( A_{10} = 40000 \\times 1.056^{10} - \\frac{5332 \times (1.056^{10} - 1)}{0.056} \\approx 68977.44 - 68976.62 = \\$0.82 \\neq 0 \\).",
+              "answer": "Evaluate \\( A_{10} = 40000 \\times 1.056^{10} - \\frac{5332 \\times (1.056^{10} - 1)}{0.056} \\approx 68977.44 - 68976.62 = \\$0.82 \\neq 0 \\).",
               "steps": [
                 {
                   "explain": "Write the balance equation at \\( n = 10 \\) using \\( M = 5332 \\).",
@@ -24606,7 +24606,7 @@
             {
               "id": "y12a-8f-q14e",
               "type": "review",
-              "stem": "e) If it is paid out after \\( n \\) months (that is, put \\( A_n = 0 \\)), show that \\( 1.004^n = \\frac{11}{7} \\), and hence that \\( n = \frac{\\log_{10}(11/7)}{\\log_{10}1.004} \\).",
+              "stem": "e) If it is paid out after \\( n \\) months (that is, put \\( A_n = 0 \\)), show that \\( 1.004^n = \\frac{11}{7} \\), and hence that \\( n = \\frac{\\log_{10}(11/7)}{\\log_{10}1.004} \\).",
               "answer": "Set \\( A_n = 0 \\implies 1500000 \\times 1.004^n - 4125000(1.004^n - 1) = 0 \\implies 2625000 \\times 1.004^n = 4125000 \\implies 1.004^n = \\frac{4125000}{2625000} = \\frac{11}{7} \\). Taking base-10 logarithms: \\( n \\log_{10} 1.004 = \\log_{10}(11/7) \\implies n = \\frac{\\log_{10}(11/7)}{\\log_{10} 1.004} \\).",
               "steps": [
                 {
@@ -24751,7 +24751,7 @@
           "dna": {
             "dnaId": "FIN-INTEREST-01"
           },
-          "hint": "There are (3\times2=6) half-year periods, so use the 2% column and the row for 6 deposits.",
+          "hint": "There are (3\\times2=6) half-year periods, so use the 2% column and the row for 6 deposits.",
           "keyPoints": [
             {
               "text": "annuity",

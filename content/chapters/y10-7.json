@@ -3809,12 +3809,12 @@
               "work": "(0 = 0.003125x(200 - x))"
             },
             {
-              "explain": "Since the product is zero and (0.003125 \neq 0), set each factor to zero to find the x-intercepts.",
-              "work": "(x = 0 quad \text{or} quad 200 - x = 0)"
+              "explain": "Since the product is zero and (0.003125 \\neq 0), set each factor to zero to find the x-intercepts.",
+              "work": "(x = 0 quad \\text{or} quad 200 - x = 0)"
             },
             {
               "explain": "The ball starts at (x = 0), so the landing distance is the second root.",
-              "work": "(\boxed{200 \text{ m}}\\)"
+              "work": "(\\boxed{200 \\text{ m}}\\)"
             }
           ],
           "timeLimit": 60,

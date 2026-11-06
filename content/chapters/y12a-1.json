@@ -3127,9 +3127,9 @@
           "type": "review",
           "difficulty": "hard",
           "stem": "Prove that the sum of the first \\(n\\) terms of the arithmetic-geometric progression satisfies \\\\(\\sum_{k=1}^{n} \\frac{k}{2^k} = 2 - \\frac{n+2}{2^n}\\\\).",
-          "answer": "Let \\(S_n = \\sum_{k=1}^n \\frac{k}{2^k}\\). Then \\(\\frac{1}{2}S_n = \\sum_{k=1}^n \\frac{k}{2^{k+1}}\\). Subtracting the second equation from the first yields \\(\frac{1}{2}S_n = \\frac{1}{2} + \\sum_{k=2}^n \\frac{1}{2^k} - \\frac{n}{2^{n+1}} = \\left(1 - \\frac{1}{2^n}\\right) - \\frac{n}{2^{n+1}}\\), which simplifies to \\(S_n = 2 - \\frac{n+2}{2^n}\\).",
+          "answer": "Let \\(S_n = \\sum_{k=1}^n \\frac{k}{2^k}\\). Then \\(\\frac{1}{2}S_n = \\sum_{k=1}^n \\frac{k}{2^{k+1}}\\). Subtracting the second equation from the first yields \\(\\frac{1}{2}S_n = \\frac{1}{2} + \\sum_{k=2}^n \\frac{1}{2^k} - \\frac{n}{2^{n+1}} = \\left(1 - \\frac{1}{2^n}\\right) - \\frac{n}{2^{n+1}}\\), which simplifies to \\(S_n = 2 - \\frac{n+2}{2^n}\\).",
           "hint": "Set the sum equal to \\(S_n\\), write \\(\\frac{1}{2}S_n\\), and subtract the two equations.",
-          "solution": "Let \\(S_n = \\sum_{k=1}^n \\frac{k}{2^k}\\). Then \\(\\frac{1}{2}S_n = \\sum_{k=1}^n \\frac{k}{2^{k+1}}\\). Subtracting the second equation from the first yields \\(\frac{1}{2}S_n = \\frac{1}{2} + \\sum_{k=2}^n \\frac{1}{2^k} - \\frac{n}{2^{n+1}} = \\left(1 - \\frac{1}{2^n}\\right) - \\frac{n}{2^{n+1}}\\), which simplifies to \\(S_n = 2 - \\frac{n+2}{2^n}\\).",
+          "solution": "Let \\(S_n = \\sum_{k=1}^n \\frac{k}{2^k}\\). Then \\(\\frac{1}{2}S_n = \\sum_{k=1}^n \\frac{k}{2^{k+1}}\\). Subtracting the second equation from the first yields \\(\\frac{1}{2}S_n = \\frac{1}{2} + \\sum_{k=2}^n \\frac{1}{2^k} - \\frac{n}{2^{n+1}} = \\left(1 - \\frac{1}{2^n}\\right) - \\frac{n}{2^{n+1}}\\), which simplifies to \\(S_n = 2 - \\frac{n+2}{2^n}\\).",
           "steps": [
             {
               "explain": "Write the sum equation.",
@@ -8256,7 +8256,7 @@
             },
             {
               "explain": "Since \\( n = 10.75 \\) is a decimal and not a positive integer, 45 cannot be a term of the sequence.",
-              "work": "\\[n = 10.75 \notin \\mathbb{Z}^+\\]"
+              "work": "\\[n = 10.75 \\notin \\mathbb{Z}^+\\]"
             }
           ],
           "manual": true,
@@ -11088,7 +11088,7 @@
             },
             {
               "explain": "Find the equivalent index modulo 6.",
-              "work": "(50 = 6 \times 8 + 2) (so 50 divided by 6 leaves a remainder of 2)."
+              "work": "(50 = 6 \\times 8 + 2) (so 50 divided by 6 leaves a remainder of 2)."
             },
             {
               "explain": "State the value of the term.",
@@ -13175,7 +13175,7 @@
           "stem": "Determine whether the following sequence is a geometric progression (GP), and if so, identify its first term \\(a\\) and common ratio \\(r\\):\n\\[4, 8, 16, \\dots\\]",
           "options": [
             "It is a GP with \\(a = 4\\) and \\(r = 2\\)",
-            "It is not a GP because \\(\\dfrac{16}{8} \neq \\dfrac{8}{4}\\)",
+            "It is not a GP because \\(\\dfrac{16}{8} \\neq \\dfrac{8}{4}\\)",
             "It is a GP with \\(a = 4\\) and \\(r = 4\\)",
             "It is a GP with \\(a = 2\\) and \\(r = 2\\)"
           ],
@@ -13317,7 +13317,7 @@
             },
             {
               "explain": "Compare the two ratios to test for a geometric progression.",
-              "work": "\\(2 \neq 1.5\\)"
+              "work": "\\(2 \\neq 1.5\\)"
             }
           ],
           "timeLimit": 60,
@@ -13441,7 +13441,7 @@
             },
             {
               "explain": "Compare the two ratios.",
-              "work": "\\(4 \neq 2.25\\)"
+              "work": "\\(4 \\neq 2.25\\)"
             }
           ],
           "timeLimit": 60,
@@ -14254,7 +14254,7 @@
             },
             {
               "explain": "Compare the two ratios.",
-              "work": "\\(1.265625 \neq 1.234568\\)"
+              "work": "\\(1.265625 \\neq 1.234568\\)"
             }
           ],
           "timeLimit": 60,
@@ -14281,7 +14281,7 @@
             },
             {
               "explain": "Since the ratios are unequal, the sequence is not a geometric progression.",
-              "work": "\\(\\dfrac{10}{7} \neq 1.3\\)"
+              "work": "\\(\\dfrac{10}{7} \\neq 1.3\\)"
             }
           ],
           "timeLimit": 60,
@@ -40724,7 +40724,7 @@
               "work": "\\(\\frac{a}{1-r} = 4a\\)"
             },
             {
-              "explain": "Divide both sides by \\(a\\) (assuming \\(a \neq 0\\)) and solve for \\(r\\).",
+              "explain": "Divide both sides by \\(a\\) (assuming \\(a \\neq 0\\)) and solve for \\(r\\).",
               "work": "\\(\\frac{1}{1-r} = 4 \\implies 1-r = \\frac{1}{4} \\implies r = 1 - \\frac{1}{4} = \\frac{3}{4}\\)"
             }
           ],
@@ -40838,7 +40838,7 @@
               "work": "\\(\\frac{ar^2}{1-r} = ar\\)"
             },
             {
-              "explain": "Assuming \\(a \neq 0\\) and \\(r \neq 0\\), divide both sides by \\(ar\\).",
+              "explain": "Assuming \\(a \\neq 0\\) and \\(r \\neq 0\\), divide both sides by \\(ar\\).",
               "work": "\\(\\frac{r}{1-r} = 1\\)"
             },
             {
@@ -40941,7 +40941,7 @@
             },
             {
               "explain": "Since \\(x^2 \\geq 0\\), the denominator \\(2+x^2\\) is always positive. Solve the inequality.",
-              "work": "\\(\\frac{2}{2+x^2} < 1 \\implies 2 < 2 + x^2 \\implies x^2 > 0 \\implies x \neq 0\\)"
+              "work": "\\(\\frac{2}{2+x^2} < 1 \\implies 2 < 2 + x^2 \\implies x^2 > 0 \\implies x \\neq 0\\)"
             },
             {
               "explain": "Calculate and simplify the limiting sum.",
@@ -42368,7 +42368,7 @@
             },
             {
               "explain": "Solve this inequality to find the range of valid \\(x\\) values.",
-              "work": "\\(x \neq n\\pi\\)"
+              "work": "\\(x \\neq n\\pi\\)"
             }
           ],
           "xp": 3
@@ -42397,7 +42397,7 @@
             },
             {
               "explain": "Solve this inequality to find the range of valid \\(x\\) values.",
-              "work": "\\(x \neq \\frac{\\pi}{2} + n\\pi\\)"
+              "work": "\\(x \\neq \\frac{\\pi}{2} + n\\pi\\)"
             }
           ],
           "xp": 3
@@ -42546,7 +42546,7 @@
             },
             {
               "explain": "Solve this inequality to find the range of valid \\(x\\) values.",
-              "work": "\\(x \neq \\frac{n\\pi}{2}\\)"
+              "work": "\\(x \\neq \\frac{n\\pi}{2}\\)"
             }
           ],
           "xp": 3
@@ -42575,7 +42575,7 @@
             },
             {
               "explain": "Solve this inequality to find the range of valid \\(x\\) values.",
-              "work": "\\(x \neq \\pi + 2n\\pi\\)"
+              "work": "\\(x \\neq \\pi + 2n\\pi\\)"
             }
           ],
           "xp": 3
@@ -42783,7 +42783,7 @@
             },
             {
               "explain": "Solve this inequality to find the range of valid \\(x\\) values.",
-              "work": "\\(-\\sqrt{2} < x < \\sqrt{2}, x \neq 0\\)"
+              "work": "\\(-\\sqrt{2} < x < \\sqrt{2}, x \\neq 0\\)"
             }
           ],
           "xp": 3
@@ -42813,7 +42813,7 @@
             },
             {
               "explain": "Solve this inequality to find the range of valid \\(x\\) values.",
-              "work": "\\(x \neq 3n\\pi\\)"
+              "work": "\\(x \\neq 3n\\pi\\)"
             }
           ],
           "xp": 3
@@ -42933,7 +42933,7 @@
             },
             {
               "explain": "Solve this inequality to find the range of valid \\(x\\) values.",
-              "work": "\\(x \neq \\frac{\\pi}{2} + n\\pi\\)"
+              "work": "\\(x \\neq \\frac{\\pi}{2} + n\\pi\\)"
             }
           ],
           "xp": 3
@@ -42992,7 +42992,7 @@
             },
             {
               "explain": "Solve this inequality to find the range of valid \\(x\\) values.",
-              "work": "\\(x \neq n\\pi\\)"
+              "work": "\\(x \\neq n\\pi\\)"
             }
           ],
           "xp": 3
@@ -48998,7 +48998,7 @@
             },
             {
               "explain": "Simplify the equation to find a relation between \\(a\\) and \\(d\\).",
-              "work": "\\(4d^2 = 4ad \\implies d = a \\quad \\text{(since } d \ne 0\\text{)}\\)"
+              "work": "\\(4d^2 = 4ad \\implies d = a \\quad \\text{(since } d \\ne 0\\text{)}\\)"
             },
             {
               "explain": "Substitute \\(d = a\\) back into the terms and find the common ratio of the GP.",
