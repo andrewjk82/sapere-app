@@ -23523,7 +23523,7 @@
           "id": "y12a-advanced-003-app-q27",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "The diagram shows a window consisting of two sections. The top section is a semicircle of diameter \\(x\\) m. The bottom section is a rectangle of width \\(x\\) m and height \\(y\\) m. The entire frame of the window, including the piece that separates the two sections, is made using \\(10\\) m of thin metal. The semicircular section is made of coloured glass and the rectangular section is made of clear glass. Under test conditions the amount of light coming through one square metre of the coloured glass is \\(1\\) unit and the amount of light coming through one square metre of the clear glass is \\(3\\) units. The total amount of light coming through the window under test conditions is \\(L\\) units.",
+          "stem": "A window consists of two sections. The top section is a semicircle of diameter \\(x\\) m. The bottom section is a rectangle of width \\(x\\) m and height \\(y\\) m. The entire frame of the window, including the piece that separates the two sections, is made using \\(10\\) m of thin metal. The semicircular section is made of coloured glass and the rectangular section is made of clear glass. Under test conditions the amount of light coming through one square metre of the coloured glass is \\(1\\) unit and the amount of light coming through one square metre of the clear glass is \\(3\\) units. The total amount of light coming through the window under test conditions is \\(L\\) units.",
           "parts": [
             {
               "id": "y12a-advanced-003-app-y12a-advanced-003-app-q27-i",
@@ -23652,9 +23652,6 @@
             "page": "145-146, 158-159",
             "course": "Advanced",
             "sourceQuestion": "27"
-          },
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 420 330\" style=\"max-width:420px\"><rect width=\"420\" height=\"330\" fill=\"white\"/><path d=\"M100.0 300.0L260.0 300.0L260.0 170.0L100.0 170.0Z\" fill=\"#bfdbfe\" fill-opacity=\"0.8\" stroke=\"none\" stroke-width=\"0\"/><path d=\"M100 170A80.0 80.0 0 0 1 260 170Z\" fill=\"#fde68a\" fill-opacity=\".85\" stroke=\"none\"/><path d=\"M100.0 300.0L260.0 300.0\" stroke=\"#475569\" stroke-width=\"2.5\" fill=\"none\"/><path d=\"M100.0 170.0L260.0 170.0\" stroke=\"#475569\" stroke-width=\"2.5\" fill=\"none\"/><path d=\"M100.0 300.0L100.0 170.0\" stroke=\"#475569\" stroke-width=\"2.5\" fill=\"none\"/><path d=\"M260.0 300.0L260.0 170.0\" stroke=\"#475569\" stroke-width=\"2.5\" fill=\"none\"/><path d=\"M100 170A80.0 80.0 0 0 1 260 170\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><text x=\"180.0\" y=\"322.0\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" fill=\"#b45309\" font-weight=\"700\">x</text><text x=\"90.0\" y=\"240.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"15\" fill=\"#be123c\" font-weight=\"700\">y</text><text x=\"180.0\" y=\"76.0\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\" fill=\"#92400e\">coloured glass (semicircle)</text><text x=\"180.0\" y=\"240.0\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\" fill=\"#1d4ed8\">clear glass</text></svg>"
           }
         },
         {
