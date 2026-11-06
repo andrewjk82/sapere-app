@@ -474,7 +474,10 @@ export const pruneOldChallengeStats = async (userId, statCollection, keep = MAX_
     const ref = doc(db, 'users', userId, statCollection, dateKey);
     try {
       const snap = await getDoc(ref);
-      if (snap.exists()) deletes.push(deleteDoc(ref));
+      if (snap.exists()) {
+        deletes.push(deleteDoc(ref));
+        if (snap.data()?.hasExtraRounds) deletes.push(deleteDoc(doc(ref, 'detail_snapshot', 'extra')));
+      }
     } catch {
       /* non-fatal */
     }

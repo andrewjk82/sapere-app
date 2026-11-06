@@ -124,6 +124,8 @@ const ChallengeResultView = ({
   newTotalXP = null,
   modeBonusXp = 0,
   challengeMode = 'normal',
+  onAnotherRound = null,
+  anotherRoundBusy = false,
 }) => {
   const isAbandoned =
     (answerResults || []).some(r => r === 'abandoned') ||
@@ -220,7 +222,7 @@ const ChallengeResultView = ({
         <div className="cr__eyebrow">
           {challengeType === 'calc'
             ? 'Daily Calculation Complete'
-            : 'Daily Challenge Complete'}
+            : challengeType === 'extra' ? 'Extra Round Complete' : 'Daily Challenge Complete'}
         </div>
         <h1 className="cr__title">
           {userName ? `Well done, ${userName}` : 'Well done!'}
@@ -409,7 +411,12 @@ const ChallengeResultView = ({
         >
           Review answers
         </button>
-        <button onClick={onBack} className="cr__btn cr__btn--primary">
+        {onAnotherRound && (
+          <button onClick={onAnotherRound} disabled={anotherRoundBusy} className="cr__btn cr__btn--primary">
+            {anotherRoundBusy ? 'Loading…' : 'Extra round (half XP)'}
+          </button>
+        )}
+        <button onClick={onBack} className={onAnotherRound ? 'cr__btn cr__btn--ghost' : 'cr__btn cr__btn--primary'}>
           Back to Dashboard <ArrowRight size={18} />
         </button>
       </div>

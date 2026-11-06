@@ -18,6 +18,7 @@ import {
 } from "./questionGenerator";
 import { localCache } from "./localCacheService";
 import { pickPrepAssignment } from "../utils/prepAssignment";
+import { canGrade } from "../utils/secretNote";
 import {
   getYearNumber,
   normalizeYearLabel,
@@ -897,6 +898,50 @@ export const createDailyAssignment = async ({
   localCache.set(getDailyAssignmentCacheKey(uid, dateKey), cacheValue);
   writeInBackground(setDoc(doc(db, "users", uid, "daily_assignments", dateKey), stripUndefined(assignment), { merge: false }), "assignment");
   return cacheValue;
+};
+
+// ── Extra rounds ─────────────────────────────────────────────────────────────
+// A round is built with no Firestore reads beyond the pool document (see pickExtraRoundPoolIds); the questions come
+// from the published content files. Only machine-marked questions: extra rounds never add to the teacher's marking.
+const extraRoundSeenKey = (uid) => `extra-round-seen:${uid}`;
+const extraRoundSeenToday = (uid, dateKey) => {
+  const seen = localCache.get(extraRoundSeenKey(uid));
+  return seen?.date === dateKey ? seen.ids || [] : [];
+};
+
+// Today's questions, tomorrow's prepared set when this device has it, and everything already shown in extra rounds today.
+const extraRoundExcludeIds = (uid, dateKey) => [
+  ...(localCache.get(getDailyAssignmentCacheKey(uid, dateKey))?.questionIds || []),
+  ...(localCache.get(`next-daily-assignment:${uid}`)?.questionIds || []),
+  ...extraRoundSeenToday(uid, dateKey),
+].map(String);
+
+export const buildExtraRound = async ({ uid, studentProfile, questionCount = 10, sessionIds = [] }) => {
+  const { pickExtraRoundPoolIds } = await import("./practicePoolService");
+  const dateKey = getDateKey();
+  const targets = buildDailyTargets(studentProfile);
+  const years = new Set(targets.assignedYears.map(getYearNumber));
+  const isPrimary = targets.assignedYears.some((y) => getYearNumber(y) < 5);
+  const usable = (d) => Boolean(d) && d.isActive !== false && Boolean(d.year) && years.has(getYearNumber(d.year))
+    && canGrade(d) && (!isPrimary || (Array.isArray(d.options) && d.options.length >= 2));
+
+  const used = new Set([...extraRoundExcludeIds(uid, dateKey), ...sessionIds.map(String)]);
+  const questions = [];
+  for (let round = 0; round < 4 && questions.length < questionCount; round += 1) {
+    const ids = await pickExtraRoundPoolIds(uid, { excludeIds: [...used], count: questionCount - questions.length + 5 });
+    if (ids.length === 0) break;
+    ids.forEach((id) => used.add(String(id)));
+    const docs = await fetchQuestionsByIds(ids);
+    docs.filter(usable).slice(0, questionCount - questions.length).forEach((d) => {
+      questions.push(correctQuestionAnswer(slimQuestion(d)));
+    });
+  }
+
+  localCache.set(extraRoundSeenKey(uid), {
+    date: dateKey,
+    ids: [...extraRoundSeenToday(uid, dateKey), ...questions.map((q) => String(q.id))],
+  });
+  return shuffle(questions);
 };
 
 export const prepareNextDailyAssignment = async ({

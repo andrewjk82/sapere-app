@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { Fragment, useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { TIME_OPTIONS } from "../constants/timeOptions";
 import {
@@ -65,6 +65,7 @@ import HscTab from "./studentDetail/HscTab";
 import CurriculumTab from "./studentDetail/CurriculumTab";
 import WeeklyProgressTrackers from "./studentDetail/WeeklyProgressTrackers";
 import ChallengeDetailModal from "./studentDetail/ChallengeDetailModal";
+import ExtraRoundsPanel from "./challenge/ExtraRoundsPanel";
 import BasicCalculationPanel from "./studentDetail/BasicCalculationPanel";
 import DailyPracticeSettings from "./studentDetail/DailyPracticeSettings";
 import ChallengeAnalyticsPanel from "./studentDetail/ChallengeAnalyticsPanel";
@@ -2041,12 +2042,16 @@ const StudentDetail = ({ studentId, onBack }) => {
                 </div>
                 {dailyPracticeStats.length > 0 ? (
                   dailyPracticeStats.map((stat) => (
-                    <ChallengeHistoryCard
-                      key={`${stat.statCollection || stat.challengeType || 'daily'}-${stat.id}`}
-                      stat={stat}
-                      onSelect={setSelectedChallenge}
-                      onReset={handleResetChallenge}
-                    />
+                    <Fragment key={`${stat.statCollection || stat.challengeType || 'daily'}-${stat.id}`}>
+                      <ChallengeHistoryCard
+                        stat={stat}
+                        onSelect={setSelectedChallenge}
+                        onReset={handleResetChallenge}
+                      />
+                      {stat.hasExtraRounds && (
+                        <ExtraRoundsPanel uid={challengeResultsUid} date={stat.id} summary={stat.extraSummary} />
+                      )}
+                    </Fragment>
                   ))
                 ) : (
                   <div

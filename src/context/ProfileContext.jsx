@@ -4,6 +4,7 @@ import { db } from '../firebase/config';
 import { useAuth } from './AuthContext';
 import { recoverMissingXP } from '../services/xpRecoveryService';
 import { tryAwardSecretNoteClearBonus } from '../services/secretNoteBonusService';
+import { flushExtraRounds } from '../services/extraRoundService';
 
 /**
  * Single shared realtime listener for the signed-in user's own
@@ -34,6 +35,24 @@ export const ProfileProvider = ({ children }) => {
     recoveryRanRef.current = true;
     recoverMissingXP(user.uid).catch(() => {});
   }, [user?.uid]);
+
+  // Extra rounds still on this device: send them when the app opens (it may have been closed from the result screen)
+  // and whenever it goes to the background. Nothing waiting means no network at all.
+  const profileRef = useRef(null);
+  useEffect(() => { profileRef.current = profile; }, [profile]);
+  const hasProfile = Boolean(profile);
+  useEffect(() => {
+    if (!user?.uid || !hasProfile || profileRef.current?.role === 'admin') return undefined;
+    const flush = () => flushExtraRounds({ uid: user.uid, profile: profileRef.current });
+    flush();
+    const onVisibility = () => { if (document.visibilityState === 'hidden') flush(); };
+    document.addEventListener('visibilitychange', onVisibility);
+    window.addEventListener('pagehide', flush);
+    return () => {
+      document.removeEventListener('visibilitychange', onVisibility);
+      window.removeEventListener('pagehide', flush);
+    };
+  }, [user?.uid, hasProfile]);
 
   // Secret-Note clear bonus: local note counts + users.secretNoteClearBonus stamp.
   // Ineligible / already-claimed paths do zero network. Award = 1 txn max/day.

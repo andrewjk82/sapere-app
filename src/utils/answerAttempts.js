@@ -12,7 +12,11 @@ export const HINT_TRY = 2;
 export const PRACTICE = 3;
 
 // Daily Calculation is timed speed training: one go per question, as before.
-export const usesAnswerAttempts = (challengeType) => challengeType === 'daily';
+export const usesAnswerAttempts = (challengeType) => challengeType === 'daily' || challengeType === 'extra';
+
+// An extra round is scored like Daily Practice, at half the XP.
+export const EXTRA_ROUND_XP_SHARE = 0.5;
+export const extraRoundXp = (dailyXp) => Math.round((Number(dailyXp) || 0) * EXTRA_ROUND_XP_SHARE);
 
 export const nextAttempt = (attempt, correct) => (correct ? attempt : Math.min(attempt + 1, PRACTICE));
 

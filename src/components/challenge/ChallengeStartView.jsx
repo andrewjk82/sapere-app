@@ -430,6 +430,9 @@ const ChallengeStartView = ({
   calcAbandonedToday,
   history,
   onStartDailyQuiz,
+  onStartExtraRound,
+  extraRoundBusy = false,
+  extraRoundsToday = null,
   onStartCalculationQuiz,
   onViewHistory,
   // onBack and getChallengeMaxXp kept for prop compatibility
@@ -618,6 +621,20 @@ const ChallengeStartView = ({
             note={dailyNote}
             onOpenNote={onOpenSecretNote}
           />
+          {dailyState === 'completed' && onStartExtraRound && (
+            <button
+              type="button"
+              onClick={onStartExtraRound}
+              disabled={extraRoundBusy}
+              style={{ width: '100%', padding: '14px 18px', borderRadius: 18, border: '1.5px solid #ddd6fe', background: '#f5f3ff', color: '#5b21b6', fontWeight: 800, fontSize: '0.95rem', cursor: extraRoundBusy ? 'wait' : 'pointer', textAlign: 'left' }}
+            >
+              {extraRoundBusy ? 'Loading…' : 'Extra round'}
+              <span style={{ display: 'block', marginTop: 2, fontWeight: 600, fontSize: '0.8rem', color: '#7c3aed' }}>
+                Keep practising for half XP, as many rounds as you like
+              </span>
+            </button>
+          )}
+          {dailyState === 'completed' && extraRoundsToday}
           {calculationEnabled && (
             <TestRow
               kind="calc"

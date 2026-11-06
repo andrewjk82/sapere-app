@@ -30,12 +30,15 @@ import {
   doc,
   getDoc,
   runTransaction,
+  FieldPath,
+  arrayUnion,
+  increment,
   serverTimestamp,
 } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { readChapterIndex } from './questionIndexService';
 import { buildDailyTargets, getCurriculumSignature } from './dailyAssignmentService';
-import { allocateQuotas, easyAllowanceFor } from '../utils/poolAllocation';
+import { allocateQuotas, easyAllowanceFor, pickExtraRoundIds } from '../utils/poolAllocation';
 
 // ─── helpers ────────────────────────────────────────────────────────────────
 
@@ -501,6 +504,50 @@ export const pickExtraPoolIds = async (uid, { excludeIds = [], count = 10 } = {}
     pick.push(...shuffle(recycled).filter((id) => !pick.includes(id)));
   }
   return pick.slice(0, count);
+};
+
+// ─── extra rounds ────────────────────────────────────────────────────────────
+
+// Ids for an extra round: at most one read, once per page load; later rounds reuse the document already in memory.
+export const pickExtraRoundPoolIds = async (uid, options) => {
+  if (!uid) return [];
+  let data = _poolCache.get(uid)?.data || null;
+  if (!data) {
+    const snap = await getDoc(poolRef(uid));
+    if (!snap.exists()) return [];
+    data = snap.data();
+    setCached(uid, data.curriculumSignature, data);
+  }
+  return pickExtraRoundIds(data, options);
+};
+
+// Adds "these were shown" to a batch without reading the document: one write however many rounds it covers, instead of
+// updatePoolAfterQuiz's transaction per round. Keeps the copy in memory up to date when there is one (after a reload
+// there is none; the ids came from the pool, and a chapter the pool no longer has is ignored when questions are drawn).
+export const queueExtraRoundDone = (batch, uid, results) => {
+  const data = _poolCache.get(uid)?.data || null;
+  const pools = data?.chapter_pools || null;
+  const byChapter = {};
+  results.forEach(({ id, chapterId, correct }) => {
+    if (!id || !chapterId || (pools && !pools[chapterId])) return;
+    if (!byChapter[chapterId]) byChapter[chapterId] = { ids: [], correct: 0 };
+    byChapter[chapterId].ids.push(String(id));
+    if (correct) byChapter[chapterId].correct += 1;
+  });
+  const fields = [];
+  Object.entries(byChapter).forEach(([cid, { ids, correct }]) => {
+    fields.push(new FieldPath('chapter_pools', cid, 'done'), arrayUnion(...ids));
+    fields.push(new FieldPath('chapter_accuracy', cid, 'correct'), increment(correct));
+    fields.push(new FieldPath('chapter_accuracy', cid, 'total'), increment(ids.length));
+    if (!data) return;
+    pools[cid] = { ...pools[cid], done: [...new Set([...(pools[cid].done || []), ...ids])] };
+    const previous = data.chapter_accuracy?.[cid] || { correct: 0, total: 0 };
+    data.chapter_accuracy = {
+      ...(data.chapter_accuracy || {}),
+      [cid]: { correct: previous.correct + correct, total: previous.total + ids.length },
+    };
+  });
+  if (fields.length > 0) batch.update(poolRef(uid), ...fields);
 };
 
 // ─── update pool after quiz ──────────────────────────────────────────────────

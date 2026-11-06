@@ -1,4 +1,6 @@
 import { useState, useEffect, useMemo, useCallback, useRef, lazy, Suspense } from 'react';
+import WhatsNewModal from './components/WhatsNewModal';
+import { shouldShowWhatsNew } from './utils/whatsNew';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion';
 import { useAuth } from './context/AuthContext';
@@ -1459,6 +1461,8 @@ function App() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      {!isLocked && shouldShowWhatsNew({ isAdmin, role: profile?.role }) && createPortal(<WhatsNewModal />, document.body)}
 
       {celebrationMedals && celebrationMedals.length > 0 && createPortal(
         <MedalCelebrationModal

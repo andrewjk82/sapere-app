@@ -94,3 +94,56 @@ export const allocateQuotas = ({ chapterIds, sizes, accuracy = {}, count, rng = 
   }
   return quotas;
 };
+
+// Question ids for an extra round, chosen from the pool document alone (no Firestore). Same spread as a daily draw:
+// chapters by size with a nudge towards weak ones, and few easy questions in chapters already mastered. Once nothing
+// new is left it reuses questions already done, so the student can keep going.
+export const pickExtraRoundIds = (pool, { excludeIds = [], count = 10, rng = Math.random } = {}) => {
+  const exclude = new Set((excludeIds || []).map(String));
+  const chapterPools = pool?.chapter_pools || {};
+  const accuracy = pool?.chapter_accuracy || {};
+  const shuffled = (items) => {
+    const out = [...items];
+    for (let i = out.length - 1; i > 0; i -= 1) {
+      const j = Math.floor(rng() * (i + 1));
+      [out[i], out[j]] = [out[j], out[i]];
+    }
+    return out;
+  };
+  const chapterIds = Object.keys(chapterPools);
+  const fresh = {};
+  const recycled = [];
+  chapterIds.forEach((cid) => {
+    const done = new Set((chapterPools[cid]?.done || []).map(String));
+    const ids = (chapterPools[cid]?.ids || []).map(String).filter((id) => id && !exclude.has(id));
+    fresh[cid] = shuffled(ids.filter((id) => !done.has(id)));
+    recycled.push(...ids.filter((id) => done.has(id)));
+  });
+
+  const sizes = {};
+  chapterIds.forEach((cid) => { sizes[cid] = fresh[cid].length; });
+  const totalFresh = chapterIds.reduce((sum, cid) => sum + sizes[cid], 0);
+  const wanted = Math.min(count, totalFresh);
+  const picked = [];
+  if (wanted > 0) {
+    const targets = allocateQuotas({ chapterIds, sizes, accuracy, count: wanted, rng });
+    const easyLeft = easyAllowanceFor({ chapterIds, targets, accuracy, rng });
+    chapterIds.forEach((cid) => {
+      const quota = Math.min(targets[cid] || 0, sizes[cid]);
+      if (easyLeft[cid] === undefined) {
+        picked.push(...fresh[cid].slice(0, quota));
+        return;
+      }
+      const easy = new Set((chapterPools[cid]?.easy || []).map(String));
+      const allowedEasy = fresh[cid].filter((id) => easy.has(id)).slice(0, easyLeft[cid]);
+      const others = fresh[cid].filter((id) => !easy.has(id));
+      const chosen = [...allowedEasy, ...others].slice(0, quota);
+      // Only easy questions left in this chapter: better over the limit than short.
+      const spare = fresh[cid].filter((id) => !chosen.includes(id));
+      picked.push(...chosen, ...spare.slice(0, quota - chosen.length));
+    });
+  }
+  const chosen = new Set(picked);
+  const remaining = shuffled(chapterIds.flatMap((cid) => fresh[cid].filter((id) => !chosen.has(id))));
+  return [...shuffled(picked), ...remaining, ...shuffled(recycled)].slice(0, count);
+};

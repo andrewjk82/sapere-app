@@ -167,6 +167,7 @@ const ChallengeQuizView = ({
   TOTAL_QUESTIONS,
   timeLeft,
   timed = false,
+  sessionLabel = 'Daily Study',
   attempt = FIRST_TRY,
   showFirstTryHint = true,
   lockedParts = {},
@@ -375,7 +376,7 @@ const ChallengeQuizView = ({
           {/* Top Progress & Header */}
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '8px' }}>
             <div style={{ textAlign: 'left' }}>
-              <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Daily Study</span>
+              <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em' }}>{sessionLabel}</span>
               <div style={{ fontSize: '1.1rem', fontWeight: 900, color: '#1e1b4b' }}>Question {currentIdx + 1} of {TOTAL_QUESTIONS}</div>
             </div>
             {timed && (

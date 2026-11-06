@@ -18,6 +18,7 @@ import MathView, { toDisplayText } from './MathView';
 import {
   fetchOrCreateDailyAssignment,
   prepareNextDailyAssignment,
+  buildExtraRound,
   queueDailyAssignmentCompleted,
   markDailyAssignmentStarted,
   getAssignedChapters,
@@ -25,6 +26,9 @@ import {
 } from '../services/dailyAssignmentService';
 import { applyLiveContent, liveLookupIds } from '../utils/liveQuestionContent';
 import { updatePoolAfterQuiz } from '../services/practicePoolService';
+import { flushExtraRounds } from '../services/extraRoundService';
+import { addPendingRound, buildRound, loadRunningTotals, newestTotals, pendingXp } from '../utils/extraRoundStore';
+import ExtraRoundsPanel from './challenge/ExtraRoundsPanel';
 import {
   ensureCalcProgress,
   evaluateWeeklyProgress,
@@ -57,7 +61,7 @@ import { useChallengeHistory } from '../hooks/useChallengeHistory';
 
 // Secret Notebook (local-only mistake review)
 import {
-  FIRST_TRY, HINT_TRY, PRACTICE, usesAnswerAttempts, nextAttempt, pointsForAttempt, applyPartResults, pointsForParts, sessionScore,
+  FIRST_TRY, HINT_TRY, PRACTICE, usesAnswerAttempts, extraRoundXp, nextAttempt, pointsForAttempt, applyPartResults, pointsForParts, sessionScore,
 } from '../utils/answerAttempts';
 import { addMistakes, canGrade, getSyncSnapshot, getNoteCount, getDueCount, getNextDueAt } from '../utils/secretNote';
 import { markLocalChallengeCompleted } from '../services/secretNoteBonusService';
@@ -779,6 +783,53 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
     startDailyQuiz();
   };
 
+  // Extra rounds, open once today's Daily Practice is done. Nothing is written when one starts, and leaving part-way
+  // costs nothing: only a finished round touches Firestore (see finishExtraRound).
+  const [extraRoundBusy, setExtraRoundBusy] = useState(false);
+  const extraRoundIdsRef = useRef([]);
+  const knownXpRef = useRef(0);
+  // The student has stopped: send what is waiting. Backing out to the start screen and leaving this page both count;
+  // sending the app to the background and reopening it are handled in ProfileContext.
+  const profileForFlushRef = useRef(null);
+  profileForFlushRef.current = studentProfile;
+  useEffect(() => {
+    if (step === 'start' && user?.uid) flushExtraRounds({ uid: user.uid, profile: profileForFlushRef.current });
+  }, [step, user?.uid]);
+  useEffect(() => () => {
+    if (user?.uid) flushExtraRounds({ uid: user.uid, profile: profileForFlushRef.current });
+  }, [user?.uid]);
+
+  const startExtraRound = async () => {
+    if (!todayCompleted || extraRoundBusy || !user?.uid) return;
+    setExtraRoundBusy(true);
+    try {
+      const qs = await buildExtraRound({
+        uid: user.uid,
+        studentProfile,
+        questionCount: getQuestionCount('daily'),
+        sessionIds: extraRoundIdsRef.current,
+      });
+      if (qs.length === 0) {
+        showToast('No more questions are available right now. Please try again tomorrow.', 'info');
+        return;
+      }
+      extraRoundIdsRef.current = [...extraRoundIdsRef.current, ...qs.map((q) => String(q.id))];
+      challengeModeRef.current = 'normal';
+      setChallengeMode('normal');
+      setChallengeType('extra');
+      setCurrentSessionId(null);
+      setCalcSessionMeta(null);
+      setResultXpSnapshot(null);
+      initQuizState(qs);
+      beginQuiz(qs);
+    } catch (err) {
+      console.error('Extra round failed to start:', err);
+      showToast('Could not start an extra round. Please check your connection and try again.', 'error');
+    } finally {
+      setExtraRoundBusy(false);
+    }
+  };
+
   const requestStartCalc = () => {
     if (calcCompletedToday || calcAbandonedToday) {
       showToast("Today's Daily Calculation has already been used. Please try again tomorrow.", 'info');
@@ -1485,7 +1536,51 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
       isFinishingRef.current = false;
     }
   };
+  // A finished extra round goes on the device only. Everything is sent in one batch when the student stops (see
+  // services/extraRoundService), so playing more rounds costs Firestore nothing more.
+  const finishExtraRound = () => {
+    clearDraft();
+    try {
+      window.dispatchEvent(new CustomEvent('sapere:quiz-session', { detail: { uid: user?.uid, phase: 'end', challengeType } }));
+    } catch { /* ignore */ }
+    const results = answerResults || [];
+    const roundScore = sessionScore(results);
+    const xpEarned = extraRoundXp(getEarnedXp(roundScore, TOTAL_QUESTIONS, 'daily', hasCalculationTest));
+    const xpBefore = Math.max((Number(studentProfile?.totalXP) || 0) + pendingXp(user?.uid), knownXpRef.current);
+    knownXpRef.current = xpBefore + xpEarned;
+    if (quizStartTimeRef.current) setElapsedSeconds(Math.round((Date.now() - quizStartTimeRef.current) / 1000));
+    setResultXpSnapshot({
+      score: roundScore,
+      total: TOTAL_QUESTIONS,
+      earned: xpEarned,
+      baseXp: xpEarned,
+      modeBonus: 0,
+      challengeMode: 'normal',
+      previousTotal: xpBefore,
+      newTotal: xpBefore + xpEarned,
+    });
+    if (setIsLocked) setIsLocked(false);
+    setStep('result');
+    if (!user?.uid) return;
+
+    const round = buildRound({
+      date: new Date().toLocaleDateString('en-CA'),
+      finishedAt: Date.now(),
+      xp: xpEarned,
+      score: roundScore,
+      total: TOTAL_QUESTIONS,
+      questions,
+      userAnswers,
+      answerResults: results,
+    });
+    if (!addPendingRound(user.uid, round)) flushExtraRounds({ uid: user.uid, profile: studentProfile, extraRounds: [round] });
+  };
+
   const finishQuizInner = async (isAbandoned = false) => {
+    if (challengeType === 'extra') {
+      finishExtraRound();
+      return;
+    }
     clearDraft();
     // Release FlameBuddy quiz hold so post-result / briefing can speak again.
     try {
@@ -1531,6 +1626,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
       const xpEarned = isAbandoned ? 0 : baseXp + modeBonus;
       const maxXpWithBonus = Math.round(maxXp * (1 + (Number(mode.bonusPercent) || 0)));
       const xpBefore = Number(studentProfile?.totalXP) || 0;
+      knownXpRef.current = xpBefore + xpEarned;
       setResultXpSnapshot({
         score: isAbandoned ? 0 : questionsCorrect,
         total: displayTotal,
@@ -2283,8 +2379,8 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
       <div className="challenge-container" style={{ maxWidth: '600px', margin: '0 auto', width: '100%', paddingBottom: '40px' }}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
           {history.length > 0 ? history.map((item, idx) => (
-            <motion.div 
-              key={`${item.statCollection || item.challengeType || 'daily'}-${item.id || idx}`}
+            <React.Fragment key={`${item.statCollection || item.challengeType || 'daily'}-${item.id || idx}`}>
+            <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: idx * 0.05 }}
@@ -2309,6 +2405,8 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
                 </div>
               </div>
             </motion.div>
+            {item.hasExtraRounds && <ExtraRoundsPanel uid={user?.uid} date={item.id} summary={item.extraSummary} isMobile={isMobile} />}
+            </React.Fragment>
           )) : (
             <div className="app-empty" style={{ padding: '60px 0', background: '#f8fafc', borderRadius: '24px' }}>
               <Trophy size={48} style={{ color: '#cbd5e1', margin: '0 auto 16px', opacity: 0.5 }} />
@@ -2507,6 +2605,16 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
                   calcAbandonedToday={calcAbandonedToday}
                   history={history}
                   onStartDailyQuiz={requestStartDaily}
+                  onStartExtraRound={startExtraRound}
+                  extraRoundBusy={extraRoundBusy}
+                  extraRoundsToday={(
+                    <ExtraRoundsPanel
+                      uid={user?.uid}
+                      date={new Date().toLocaleDateString('en-CA')}
+                      summary={newestTotals(studentProfile?.extraPractice, loadRunningTotals(user?.uid), new Date().toLocaleDateString('en-CA'))}
+                      isMobile={isMobile}
+                    />
+                  )}
                   onStartCalculationQuiz={requestStartCalc}
                   onViewHistory={handleViewFeedback}
                   newFeedbackCount={Number(studentProfile?.unreadFeedbackCount) || 0}
@@ -2541,6 +2649,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
                   TOTAL_QUESTIONS={TOTAL_QUESTIONS}
                   timeLeft={timeLeft}
                   timed={isTimedSession(challengeType)}
+                  sessionLabel={challengeType === 'extra' ? 'Extra round' : 'Daily Study'}
                   attempt={usesAnswerAttempts(challengeType) ? attempt : FIRST_TRY}
                   showFirstTryHint={!usesAnswerAttempts(challengeType)}
                   lockedParts={usesAnswerAttempts(challengeType) ? solvedParts : {}}
@@ -2573,6 +2682,8 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
               {step === 'result' && (
                 <ChallengeResultView
                   key="result"
+                  onAnotherRound={challengeType !== 'calc' && todayCompleted ? startExtraRound : null}
+                  anotherRoundBusy={extraRoundBusy}
                   questions={questions}
                   userAnswers={userAnswers}
                   answerResults={answerResults}
