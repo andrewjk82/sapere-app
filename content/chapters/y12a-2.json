@@ -22794,22 +22794,22 @@
           "id": "y12a-advanced-003-app-q08",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "A landscape gardener wants to build a garden bed in the shape of a rectangle attached to a quarter-circle. Let x and y be the dimensions of the rectangle in metres, as shown in the diagram.",
+          "stem": "A landscape gardener wants to build a garden bed in the shape of a rectangle attached to a quarter-circle. Let \\(x\\) and \\(y\\) be the dimensions of the rectangle in metres, as shown in the diagram.",
           "parts": [
             {
               "id": "y12a-advanced-003-app-y12a-advanced-003-app-q08-a",
               "type": "review",
               "difficulty": "medium",
-              "stem": "The garden bed is required to have an area of 36 m² and to have a perimeter which is as small as possible. Let P metres be the perimeter of the garden bed. Show that P = 2x + 72/x.",
-              "answer": "P=2x+72/x.",
+              "stem": "The garden bed is required to have an area of \\(36\\text{ m}^2\\) and to have a perimeter which is as small as possible. Let \\(P\\) metres be the perimeter of the garden bed. Show that \\(P = 2x + \\dfrac{72}{x}\\).",
+              "answer": "\\(P=2x+\\dfrac{72}{x}\\)",
               "manual": true,
               "hint": "The shape is a rectangle of dimensions x by y with a quarter-circle of radius x attached. Write area and perimeter, then use the fixed area 36 to eliminate y.",
               "steps": [
                 {
-                  "explain": "The rectangle contributes area xy. The attached quarter-circle has radius x, so its area is one quarter of πx².",
+                  "explain": "The shaded blue rectangle (width \\(y\\), height \\(x\\)) has area \\(xy\\). The yellow quarter-circle has radius \\(x\\) (the rectangle's height), so its area is one quarter of \\(\\pi x^2\\). Together they must equal 36.",
                   "work": "\\(36=xy+\\frac14\\pi x^2\\)",
                   "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 240\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M55 190V55H300 A135 135 0 0 1 435 190H55Z\" fill=\"#dbeafe\" fill-opacity=\".35\" stroke=\"#334155\" stroke-width=\"2.5\"/><path d=\"M300 55V190\" stroke=\"#94a3b8\" stroke-dasharray=\"5 4\"/><path d=\"M55 66H300M67 55V190\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"170\" y=\"45\" font-family=\"Arial\" font-size=\"15\">y</text><text x=\"35\" y=\"128\" font-family=\"Arial\" font-size=\"15\">x</text><text x=\"307\" y=\"122\" font-family=\"Arial\" font-size=\"12\">radius x</text><text x=\"425\" y=\"211\" font-family=\"Arial\" font-size=\"13\">quarter-circle</text></svg>"
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 480 240\" style=\"max-width:480px\"><rect width=\"480\" height=\"240\" fill=\"white\"/><path d=\"M55 190V55H300V190Z\" fill=\"#bfdbfe\" stroke=\"#334155\" stroke-width=\"2.5\"/><path d=\"M300 55A135 135 0 0 1 435 190H300Z\" fill=\"#fde68a\" stroke=\"#334155\" stroke-width=\"2.5\"/><text x=\"177\" y=\"44\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\" fill=\"#1e293b\" >y</text><text x=\"40\" y=\"128\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\" fill=\"#1e293b\" >x</text><text x=\"177\" y=\"112\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\" >rectangle</text><text x=\"177\" y=\"134\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\" >area = xy</text><text x=\"352\" y=\"112\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\" fill=\"#1e293b\" >quarter-circle</text><text x=\"326\" y=\"142\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"13\" fill=\"#1e293b\" >A =</text><text x=\"366\" y=\"136\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\" fill=\"#1e293b\" >πx²</text><path d=\"M354 140H378\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><text x=\"366\" y=\"153\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\" fill=\"#1e293b\" >4</text><text x=\"326\" y=\"205\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"12\" fill=\"#1e293b\" >radius x</text><path d=\"M300 190H435\" stroke=\"#334155\" stroke-width=\"2.5\"/></svg>"
                   }
                 },
                 {
@@ -22817,15 +22817,15 @@
                   "work": "\\(y=\\frac{36}{x}-\\frac{\\pi x}{4}\\)"
                 },
                 {
-                  "explain": "For the outer perimeter, add the left side x, the bottom x+y, the top y, and the quarter-circle arc length πx/2.",
-                  "work": "\\(P=x+(x+y)+y+\\frac{\\pi x}{2}=2x+2y+\\frac{\\pi x}{2}\\)"
+                  "explain": "Only the outer boundary (orange) counts toward the perimeter: the left side \\(x\\), the top \\(y\\), the arc \\(\\tfrac{\\pi x}{2}\\) (a quarter of the circumference \\(2\\pi x\\)), and the bottom \\(x+y\\). The dashed line between the rectangle and the quarter-circle is inside the shape, so it is not included.",
+                  "work": "\\(P=x+(x+y)+y+\\frac{\\pi x}{2}=2x+2y+\\frac{\\pi x}{2}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 480 240\" style=\"max-width:480px\"><rect width=\"480\" height=\"240\" fill=\"white\"/><path d=\"M55 190V55H300A135 135 0 0 1 435 190H55Z\" fill=\"#f8fafc\" stroke=\"none\"/><path d=\"M300 55V190\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M55 190V55H300A135 135 0 0 1 435 190H55\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"4\"/><text x=\"177\" y=\"44\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\" fill=\"#1e293b\" >y</text><text x=\"40\" y=\"128\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\" fill=\"#1e293b\" >x</text><text x=\"177\" y=\"214\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\" fill=\"#1e293b\" >x + y</text><text x=\"306\" y=\"122\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"11\" fill=\"#64748b\">not part of P</text><text x=\"412\" y=\"66\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\" >πx</text><path d=\"M403 70H421\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><text x=\"412\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\" >2</text><text x=\"412\" y=\"50\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\" fill=\"#1e293b\" >arc</text></svg>"
+                  }
                 },
                 {
-                  "explain": "Substitute y from the area condition; the πx terms cancel.",
-                  "work": "\\(P=2x+2(\\frac{36}{x}-\\frac{\\pi x}{4})+\\frac{\\pi x}{2}=2x+\\frac{72}{x}\\)",
-                  "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 240\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M55 190V55H300 A135 135 0 0 1 435 190H55Z\" fill=\"#dbeafe\" fill-opacity=\".35\" stroke=\"#334155\" stroke-width=\"2.5\"/><path d=\"M300 55V190\" stroke=\"#94a3b8\" stroke-dasharray=\"5 4\"/><path d=\"M55 66H300M67 55V190\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"170\" y=\"45\" font-family=\"Arial\" font-size=\"15\">y</text><text x=\"35\" y=\"128\" font-family=\"Arial\" font-size=\"15\">x</text><text x=\"307\" y=\"122\" font-family=\"Arial\" font-size=\"12\">radius x</text><text x=\"425\" y=\"211\" font-family=\"Arial\" font-size=\"13\">quarter-circle</text></svg>"
-                  }
+                  "explain": "Substitute \\(y\\) from the area condition; the \\(\\pi x\\) terms cancel.",
+                  "work": "\\(P=2x+2(\\frac{36}{x}-\\frac{\\pi x}{4})+\\frac{\\pi x}{2}=2x+\\frac{72}{x}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -22862,18 +22862,18 @@
                   "work": "\\(2-\\frac{72}{x^2}=0\\Rightarrow x^2=36\\Rightarrow x=6\\)"
                 },
                 {
-                  "explain": "For x<6, P'<0; for x>6, P'>0. Thus P decreases then increases, giving a minimum at x=6.",
+                  "explain": "For \\(x<6\\), \\(P'<0\\); for \\(x>6\\), \\(P'>0\\). Thus \\(P\\) decreases then increases, giving a minimum at \\(x=6\\).",
                   "work": "\\(P'(5)<0,\\quad P'(7)>0\\)"
                 },
                 {
-                  "explain": "Substitute x=6 into P.",
+                  "explain": "Substitute \\(x=6\\) into \\(P\\).",
                   "work": "\\(P(6)=2(6)+\\frac{72}{6}=12+12=24\\text{ m}\\)"
                 },
                 {
-                  "explain": "The smallest possible perimeter is 24 m.",
+                  "explain": "The smallest possible perimeter is 24 m. The diagram shows the optimal bed: \\(x=6\\) and \\(y=\\frac{36}{6}-\\frac{6\\pi}{4}\\approx1.29\\), so the quarter-circle takes up most of the area.",
                   "work": "\\(\\boxed{24\\text{ m}}\\)",
                   "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 480 240\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M55 190V55H300 A135 135 0 0 1 435 190H55Z\" fill=\"#dbeafe\" fill-opacity=\".35\" stroke=\"#334155\" stroke-width=\"2.5\"/><path d=\"M300 55V190\" stroke=\"#94a3b8\" stroke-dasharray=\"5 4\"/><path d=\"M55 66H300M67 55V190\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"170\" y=\"45\" font-family=\"Arial\" font-size=\"15\">y</text><text x=\"35\" y=\"128\" font-family=\"Arial\" font-size=\"15\">x</text><text x=\"307\" y=\"122\" font-family=\"Arial\" font-size=\"12\">radius x</text><text x=\"425\" y=\"211\" font-family=\"Arial\" font-size=\"13\">quarter-circle</text></svg>"
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 480 240\" style=\"max-width:480px\"><rect width=\"480\" height=\"240\" fill=\"white\"/><path d=\"M80 192V60H108A132 132 0 0 1 240 192H80Z\" fill=\"#dbeafe\" fill-opacity=\".45\" stroke=\"#334155\" stroke-width=\"2.5\"/><path d=\"M108 60V192\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><text x=\"68\" y=\"128\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"13\" fill=\"#1e293b\" >x = 6 m</text><text x=\"94\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\" fill=\"#1e293b\" >y ≈ 1.29 m</text><text x=\"175\" y=\"222\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\" >P = 24 m (minimum)</text></svg>"
                   }
                 }
               ],
@@ -22888,6 +22888,9 @@
             "page": "142-143, 156-157",
             "course": "Advanced",
             "sourceQuestion": "8"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 480 240\" style=\"max-width:480px\"><rect width=\"480\" height=\"240\" fill=\"white\"/><path d=\"M55 190V55H300A135 135 0 0 1 435 190H55Z\" fill=\"#dbeafe\" fill-opacity=\".45\" stroke=\"#334155\" stroke-width=\"2.5\"/><path d=\"M300 55V190\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><text x=\"177\" y=\"44\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\" fill=\"#1e293b\" >y</text><text x=\"40\" y=\"128\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\" fill=\"#1e293b\" >x</text><text x=\"311\" y=\"128\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"16\" fill=\"#1e293b\" >x</text><text x=\"346\" y=\"170\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\" fill=\"#1e293b\" >quarter-circle</text></svg>"
           }
         },
         {
