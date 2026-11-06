@@ -6592,30 +6592,30 @@
           "id": "y12a-advanced-003-app-q36",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Find the gradient of the tangent to the curve y = ln(3x) at the point where x = 2.",
+          "stem": "Find the gradient of the tangent to the curve \\(y=\\ln(3x)\\) at the point where \\(x=2\\).",
           "options": [
             {
-              "text": "1/2"
+              "text": "\\(\\frac12\\)"
             },
             {
-              "text": "1/6"
+              "text": "\\(\\frac16\\)"
             },
             {
-              "text": "3/2"
+              "text": "\\(\\frac32\\)"
             },
             {
-              "text": "1/3"
+              "text": "\\(\\frac13\\)"
             }
           ],
           "answer": 0,
-          "hint": "The derivative of ln(3x) is 1/x by the chain rule. Substitute x=2.",
+          "hint": "The derivative of \\(\\ln(3x)\\) is \\(\\frac1x\\) by the chain rule. Substitute \\(x=2\\).",
           "steps": [
             {
               "explain": "Differentiate using the chain rule.",
               "work": "\\(\\frac{dy}{dx}=\\frac{1}{3x}\\cdot3=\\frac1x\\)"
             },
             {
-              "explain": "Substitute x=2.",
+              "explain": "Substitute \\(x=2\\).",
               "work": "\\(\\frac{dy}{dx}\\big|_{x=2}=\\frac12\\)"
             },
             {
