@@ -46,6 +46,7 @@ import {
   applyModeTimeScale,
   getModeBonusXp,
   getChallengeMode,
+  isTimedSession,
 } from '../constants/challengeModes';
 
 // Custom hooks
@@ -225,7 +226,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
     finishQuizRef,
   });
 
-  // ── Quiz draft persistence — timer keeps running even when window is closed ──
+  // ── Quiz draft persistence — a timed session's clock keeps running even when the window is closed ──
   const draftKey = user?.uid ? `quiz_draft_${user.uid}` : null;
   const today = new Date().toLocaleDateString('en-CA');
 
@@ -267,6 +268,12 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
       if (!raw) return;
       const draft = JSON.parse(raw);
       if (draft.date !== today) { localStorage.removeItem(draftKey); return; }
+
+      // No clock, nothing to burn: an untimed session resumes exactly where the student left it.
+      if (!isTimedSession(draft.challengeType)) {
+        setRestoredDraft({ ...draft, allExpired: false });
+        return;
+      }
 
       // How many seconds elapsed since the window was closed?
       let elapsed = Math.max(0, (Date.now() - (draft.savedAt || Date.now())) / 1000);
@@ -909,7 +916,8 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
 
       if (remaining <= 0) {
         clearInterval(timer);
-        if (stepRef.current === 'quiz') {
+        // Untimed sessions still count down silently (it paces the hint nudge above) but never submit for the student.
+        if (stepRef.current === 'quiz' && isTimedSession(challengeType)) {
           // Pass whatever the student has typed so far — avoids "No answer recorded"
           // when the timer runs out while a student is mid-entry.
           const typed = selectedOptionRef.current ?? answerInputRef.current?.value ?? null;
@@ -935,9 +943,9 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
       clearInterval(timer);
       document.removeEventListener('visibilitychange', handleVisibility);
     };
-  }, [step, questionStartTime, currentIdx]);
+  }, [step, questionStartTime, currentIdx, challengeType]);
 
-  // Keep the screen awake during a timed question so the OS doesn't
+  // Keep the screen awake during a question so the OS doesn't
   // auto-sleep the display mid-countdown in the first place.
   useEffect(() => {
     if (step !== 'quiz' || !('wakeLock' in navigator)) return undefined;
@@ -2449,6 +2457,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
                   currentIdx={currentIdx}
                   TOTAL_QUESTIONS={TOTAL_QUESTIONS}
                   timeLeft={timeLeft}
+                  timed={isTimedSession(challengeType)}
                   countdown={countdown}
                   flash={flash}
                   selectedOption={selectedOption}

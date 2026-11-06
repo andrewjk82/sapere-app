@@ -79,8 +79,6 @@ const QuestionPreviewModal = ({ question, chapter, topic, onClose, initialTab = 
   const [showHint, setShowHint] = useState(false);
   const [flash, setFlash] = useState(null);
   const [countdown, setCountdown] = useState(0);
-  const [timeLeft, setTimeLeft] = useState(0);
-  const [questionStartTime, setQuestionStartTime] = useState(null);
   const autoTransitionRef = useRef(null);
   const canvasRef = useRef(null);
   const answerInputRef = useRef(null);
@@ -89,8 +87,6 @@ const QuestionPreviewModal = ({ question, chapter, topic, onClose, initialTab = 
   // the app-wide `sapere:quiz-session` event dispatch (no other component is
   // listening for a teacher preview session).
   const setupQuestion = (q) => {
-    setTimeLeft(q.timeLimit || 30);
-    setQuestionStartTime(Date.now());
     setSelectedOption(null);
     setSelectedOptionIdx(null);
     setIsCorrect(null);
@@ -236,42 +232,6 @@ const QuestionPreviewModal = ({ question, chapter, topic, onClose, initialTab = 
     }
   }, []);
 
-  // Timer countdown — wall-clock based (avoids drift), mirrors
-  // DailyChallenge.jsx's effect using refs so the interval callback always
-  // reads the latest step/selection without stale closures.
-  const stepRef = useRef(step);
-  useEffect(() => { stepRef.current = step; }, [step]);
-  const selectedOptionRef = useRef(selectedOption);
-  useEffect(() => { selectedOptionRef.current = selectedOption; }, [selectedOption]);
-  const selectedOptionIdxRef = useRef(selectedOptionIdx);
-  useEffect(() => { selectedOptionIdxRef.current = selectedOptionIdx; }, [selectedOptionIdx]);
-  const handleAnswerRef = useRef(handleAnswer);
-  useEffect(() => { handleAnswerRef.current = handleAnswer; });
-
-  useEffect(() => {
-    // No countdown on the Hint tab — the teacher is editing, not answering against the clock.
-    if (step !== 'quiz' || !questionStartTime || activeTab === 'hint') return undefined;
-    const timeLimit = (dailyQuestion?.timeLimit || 30) * 1000;
-    const endTime = questionStartTime + timeLimit;
-
-    const timer = setInterval(() => {
-      if (stepRef.current !== 'quiz') { clearInterval(timer); return; }
-      if (selectedOptionRef.current !== null && selectedOptionIdxRef.current !== null) { clearInterval(timer); return; }
-      const now = Date.now();
-      const remaining = Math.max(0, Math.ceil((endTime - now) / 1000));
-      setTimeLeft(remaining);
-      if (remaining <= 0) {
-        clearInterval(timer);
-        if (stepRef.current === 'quiz') {
-          handleAnswerRef.current?.(selectedOptionRef.current ?? null, null);
-        }
-      }
-    }, 100);
-
-    return () => clearInterval(timer);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [step, questionStartTime, activeTab]);
-
   return (
     <>
       {(activeTab === 'daily' || activeTab === 'hint') && (
@@ -282,7 +242,6 @@ const QuestionPreviewModal = ({ question, chapter, topic, onClose, initialTab = 
           questions={[dailyQuestion]}
           currentIdx={0}
           TOTAL_QUESTIONS={1}
-          timeLeft={timeLeft}
           countdown={countdown}
           flash={flash}
           selectedOption={selectedOption}

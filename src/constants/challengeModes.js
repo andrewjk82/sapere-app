@@ -54,6 +54,9 @@ export const CHALLENGE_MODE_LIST = [
   CHALLENGE_MODES.extreme,
 ];
 
+// Only Daily Calculation runs against the clock (the teacher sets its limit per student). Daily Practice has no time limit.
+export const isTimedSession = (challengeType) => challengeType === 'calc';
+
 export const getChallengeMode = (id) =>
   CHALLENGE_MODES[id] || CHALLENGE_MODES.normal;
 

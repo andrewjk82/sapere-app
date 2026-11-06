@@ -164,6 +164,7 @@ const ChallengeQuizView = ({
   currentIdx,
   TOTAL_QUESTIONS,
   timeLeft,
+  timed = false,
   countdown,
   selectedOption,
   setSelectedOption,
@@ -370,6 +371,7 @@ const ChallengeQuizView = ({
               <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Daily Study</span>
               <div style={{ fontSize: '1.1rem', fontWeight: 900, color: '#1e1b4b' }}>Question {currentIdx + 1} of {TOTAL_QUESTIONS}</div>
             </div>
+            {timed && (
             <div style={{ textAlign: 'right', display: 'flex', flexWrap: 'nowrap', alignItems: 'center', gap: '8px' }}>
                <div style={{
                  fontSize: '0.9rem', fontWeight: 800,
@@ -383,10 +385,11 @@ const ChallengeQuizView = ({
                  <Clock size={16} /> {timeLeft}s
                </div>
             </div>
+            )}
           </div>
 
           {/* Time Progress Bar */}
-          {(() => {
+          {timed && (() => {
             const pct = (timeLeft / (currentQuestion?.timeLimit || 30)) * 100;
             const barColor = timeLeft <= 5 ? '#f43f5e' : timeLeft <= 10 ? '#f97316' : '#6366f1';
             const glowColor = timeLeft <= 5 ? 'rgba(244,63,94,0.35)' : timeLeft <= 10 ? 'rgba(249,115,22,0.25)' : 'transparent';

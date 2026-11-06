@@ -809,8 +809,8 @@ const buildInQuizSpeech = (firstName, seedBase, session = {}) => {
   if (mode === 'hint') {
     const hintText = formatHintForBubble(session.hintText);
     const openers = [
-      `${hey} — halfway on the clock. Here's a hint:`,
-      `Mid-timer tip${n ? ` for ${n}` : ''}:`,
+      `${hey} — here's a hint:`,
+      `A quick tip${n ? ` for ${n}` : ''}:`,
       `${hey}, try this:`,
     ];
     const opener = openers[Math.abs(Number(session.questionIndex) || 0) % openers.length];
