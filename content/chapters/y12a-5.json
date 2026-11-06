@@ -10483,7 +10483,7 @@
           "id": "y12a-advanced-003-app-q05",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "A population, P, which is initially 5000, varies according to P = 5000b^(−t/10), where b is a positive constant and t is time in years, t ≥ 0. The population is 1250 after 20 years. Find the value of t, correct to one decimal place, for which the instantaneous rate of decrease is 30 people per year.",
+          "stem": "A population, \\(P\\), which is initially \\(5000\\), varies according to \\(P = 5000b^{-t/10}\\), where \\(b\\) is a positive constant and \\(t\\) is time in years, \\(t \\ge 0\\). The population is \\(1250\\) after \\(20\\) years. Find the value of \\(t\\), correct to one decimal place, for which the instantaneous rate of decrease is \\(30\\) people per year.",
           "options": [
             {
               "text": "35.3 years"
@@ -10499,26 +10499,26 @@
             }
           ],
           "answer": 0,
-          "hint": "First use P(20)=1250 to determine b. Differentiate P(t), set dP/dt=−30, then solve the exponential equation with logarithms.",
+          "hint": "First use \\(P(20)=1250\\) to determine \\(b\\). Differentiate \\(P(t)\\), set \\(\\frac{dP}{dt}=-30\\), then solve the exponential equation with logarithms.",
           "steps": [
             {
-              "explain": "Use the known population at t=20 to find b.",
+              "explain": "Use the known population at \\(t=20\\) to find \\(b\\).",
               "work": "\\(1250=5000b^{-20/10}=5000b^{-2}\\Rightarrow b^2=4\\)"
             },
             {
-              "explain": "Because b is positive, choose b=2. Rewrite the model as P=5000·2^(−t/10).",
+              "explain": "Because \\(b\\) is positive, choose \\(b=2\\). Rewrite the model as \\(P=5000\\cdot2^{-t/10}\\).",
               "work": "\\(b=2,\\quad P=5000\\cdot2^{-t/10}\\)"
             },
             {
-              "explain": "Differentiate with the chain rule. The factor from differentiating −t/10 is −1/10.",
+              "explain": "Differentiate with the chain rule. The factor from differentiating \\(-\\frac{t}{10}\\) is \\(-\\frac1{10}\\).",
               "work": "\\(\\frac{dP}{dt}=5000\\ln2\\cdot2^{-t/10}(-\\frac1{10})=-500\\ln2\\cdot2^{-t/10}\\)"
             },
             {
-              "explain": "A rate of decrease of 30 people per year means dP/dt=−30. Isolate the exponential term.",
+              "explain": "A rate of decrease of \\(30\\) people per year means \\(\\frac{dP}{dt}=-30\\). Isolate the exponential term.",
               "work": "\\(-30=-500\\ln2\\cdot2^{-t/10}\\Rightarrow2^{-t/10}=\\frac{3}{50\\ln2}\\)"
             },
             {
-              "explain": "Take natural logarithms of both sides and solve for t.",
+              "explain": "Take natural logarithms of both sides and solve for \\(t\\).",
               "work": "\\(-\\frac{t}{10}\\ln2=\\ln(\\frac{3}{50\\ln2})\\Rightarrow t=-10\\frac{\\ln(\\frac{3}{50\\ln2})}{\\ln2}\\approx35.3\\)"
             },
             {

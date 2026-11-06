@@ -9318,7 +9318,7 @@
           "id": "y12a-advanced-003-app-q14",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Find the equation of the tangent to the curve y = cos 2x at x = π/6.",
+          "stem": "Find the equation of the tangent to the curve \\(y = \\cos 2x\\) at \\(x = \\frac{\\pi}{6}\\).",
           "options": [
             {
               "text": "\\(y-\\frac12=-\\sqrt3(x-\\frac\\pi6)\\)"
@@ -9334,22 +9334,22 @@
             }
           ],
           "answer": 0,
-          "hint": "Find the point on the curve and its gradient using dy/dx. Then use point-slope form.",
+          "hint": "Find the point on the curve and its gradient using \\(\\frac{dy}{dx}\\). Then use point-slope form.",
           "steps": [
             {
-              "explain": "Differentiate y=cos(2x) using the chain rule.",
+              "explain": "Differentiate \\(y=\\cos 2x\\) using the chain rule.",
               "work": "\\(\\frac{dy}{dx}=-2\\sin(2x)\\)"
             },
             {
-              "explain": "At x=π/6, the y-coordinate is cos(π/3)=1/2.",
+              "explain": "At \\(x=\\frac\\pi6\\), the \\(y\\)-coordinate is \\(\\cos\\frac\\pi3=\\frac12\\).",
               "work": "\\(y=\\cos(2\\cdot\\frac\\pi6)=\\cos\\frac\\pi3=\\frac12\\)"
             },
             {
-              "explain": "Evaluate the gradient at x=π/6.",
+              "explain": "Evaluate the gradient at \\(x=\\frac\\pi6\\).",
               "work": "\\(m=-2\\sin\\frac\\pi3=-2\\cdot\\frac{\\sqrt3}{2}=-\\sqrt3\\)"
             },
             {
-              "explain": "Use y−y₁=m(x−x₁) with point (π/6,1/2).",
+              "explain": "Use \\(y-y_1=m(x-x_1)\\) with point \\(\\left(\\frac\\pi6,\\frac12\\right)\\).",
               "work": "\\(\\boxed{y-\\frac12=-\\sqrt3(x-\\frac\\pi6)}\\)"
             }
           ],
