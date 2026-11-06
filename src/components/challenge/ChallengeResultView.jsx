@@ -233,6 +233,7 @@ const ChallengeResultView = ({
           className="cr__score-num"
           from={0}
           to={score}
+          format={(n) => (Number.isInteger(score) ? String(Math.round(n)) : String(Number(n.toFixed(2))))}
           duration={1.05}
           delay={0.15}
         />

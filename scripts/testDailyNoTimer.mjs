@@ -18,8 +18,8 @@ test('only Daily Calculation is timed', () => {
 
 test('running out of time submits only in a timed session', () => {
   const src = source('DailyChallenge.jsx');
-  const expiry = src.slice(src.indexOf('if (remaining <= 0) {'), src.indexOf('handleAnswerRef.current?.(typed, null)'));
-  assert.match(expiry, /stepRef\.current === 'quiz' && isTimedSession\(challengeType\)/);
+  const guard = src.indexOf("!questionStartTime || !isTimedSession(challengeType)) return;");
+  assert.ok(guard > 0 && guard < src.indexOf('handleAnswerRef.current?.(typed, null)'));
 });
 
 test('reopening an untimed session does not burn questions', () => {
@@ -35,6 +35,13 @@ test('the clock and the bar are shown only when timed', () => {
   assert.ok(src.includes('{timed && (() => {'));
   assert.ok(src.includes('timed = false'));
   assert.ok(source('DailyChallenge.jsx').includes('timed={isTimedSession(challengeType)}'));
+});
+
+test('Daily Practice shows no hint before the first answer', () => {
+  const src = source('DailyChallenge.jsx');
+  assert.ok(src.includes('showFirstTryHint={!usesAnswerAttempts(challengeType)}'));
+  assert.ok(src.includes("!user?.uid || usesAnswerAttempts(challengeType)) return;"));
+  assert.ok(source('challenge/ChallengeQuizView.jsx').includes('attempt === FIRST_TRY && showFirstTryHint'));
 });
 
 console.log(`daily no timer: ${passed} passed`);

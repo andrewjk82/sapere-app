@@ -442,8 +442,13 @@ const ChallengeReviewView = ({
                       ? <CheckCircle2 size={20} color="#10b981" />
                       : <XCircle size={20} color="#ef4444" />}
                   <span style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase', color: statusBadge.text }}>
-                    Your answer
+                    {result?.attempts ? 'Your first answer' : 'Your answer'}
                   </span>
+                  {result?.solvedOnAttempt === 2 && (
+                    <span style={{ fontSize: '0.72rem', fontWeight: 800, color: '#92400e', background: '#fef3c7', padding: '3px 9px', borderRadius: '999px' }}>
+                      Solved on the 2nd try: half points
+                    </span>
+                  )}
                 </div>
                 {q.type === 'interactive_grid' ? (
                   Array.isArray(studentRaw) && studentRaw.length > 0 ? (
@@ -626,6 +631,8 @@ const ChallengeReviewView = ({
                     borderRadius: '999px',
                     background: i === idx
                       ? '#7c3aed'
+                      : answerResults[i]?.solvedOnAttempt === 2
+                        ? '#fcd34d'
                       : answerResults[i]?.correct === true
                         ? '#86efac'
                         : answerResults[i]?.correct === false

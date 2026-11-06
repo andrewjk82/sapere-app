@@ -237,6 +237,7 @@ const QuestionPreviewModal = ({ question, chapter, topic, onClose, initialTab = 
       {(activeTab === 'daily' || activeTab === 'hint') && (
         <ChallengeQuizView
           keyPoints={activeTab === 'hint' ? kpDraft.main : null}
+          showFirstTryHint={activeTab === 'hint'}
           partKeyPoints={activeTab === 'hint' ? (dailyQuestion.subQuestions || []).map((_, i) => kpDraft[`p${i}`] || []) : null}
           step={step}
           questions={[dailyQuestion]}

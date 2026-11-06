@@ -18,6 +18,8 @@ import InteractiveFractionGrid from './InteractiveFractionGrid';
 import { answersMatch } from '../../utils/answerMatching';
 import { isDisplayedOptionCorrect } from '../../utils/mcOptionShuffle';
 import { parseHintSteps } from '../../utils/hintSteps';
+import AttemptCoach from './AttemptCoach';
+import { FIRST_TRY, HINT_TRY, PRACTICE } from '../../utils/answerAttempts';
 
 // A sub-question the teacher must check by hand — no machine-checkable
 // answer exists, so there is nothing to type and nothing to auto-grade.
@@ -165,6 +167,9 @@ const ChallengeQuizView = ({
   TOTAL_QUESTIONS,
   timeLeft,
   timed = false,
+  attempt = FIRST_TRY,
+  showFirstTryHint = true,
+  lockedParts = {},
   countdown,
   selectedOption,
   setSelectedOption,
@@ -197,6 +202,8 @@ const ChallengeQuizView = ({
   // Use pre-shuffled options if provided, else fall back to question's own options
   const displayOptions = shuffledOptions && shuffledOptions.length > 0 ? shuffledOptions : getOptions(currentQuestion);
   const isFeedback = step === 'feedback';
+  // Highlights from a wrong answer on, or whatever the teacher preview passes in.
+  const stemKeyPoints = keyPoints || (attempt > FIRST_TRY && currentQuestion?.keyPoints?.length ? currentQuestion.keyPoints : null);
   const [kpBubble, setKpBubble] = useState(null); // { note, top, left }
   const openKpBubble = (list) => (idx, mark) => {
     const note = list?.[idx]?.note;
@@ -425,14 +432,14 @@ const ChallengeQuizView = ({
                 submitting — do not lump them in with graph_sketch. */}
             <MathView
               content={currentQuestion?.question}
-              keyPoints={keyPoints || undefined}
-              onKeyPointClick={keyPoints ? openKpBubble(keyPoints) : undefined}
+              keyPoints={stemKeyPoints || undefined}
+              onKeyPointClick={stemKeyPoints ? openKpBubble(stemKeyPoints) : undefined}
               graphData={currentQuestion?.type === 'graph_sketch' ? (isFeedback ? currentQuestion?.graphData : null) : currentQuestion?.graphData}
               style={{ fontSize: '0.98rem', fontWeight: 500, color: '#1e1b4b', lineHeight: 1.7, margin: 0 }}
             />
 
             {/* Step-by-step hint — shown only while solving (hidden after feedback) */}
-            {!isFeedback && (
+            {!isFeedback && attempt === FIRST_TRY && showFirstTryHint && (
               <StepwiseHint hint={currentQuestion?.hint} questionKey={`${currentIdx}-${currentQuestion?.id}`} />
             )}
 
@@ -441,17 +448,29 @@ const ChallengeQuizView = ({
             )}
           </div>
 
+          {attempt > FIRST_TRY && (attempt === PRACTICE || !isFeedback) && (
+            <AttemptCoach
+              attempt={attempt}
+              question={currentQuestion}
+              lockedParts={lockedParts}
+              isLast={currentIdx === TOTAL_QUESTIONS - 1}
+              onNext={isFeedback ? null : nextQuestion}
+            />
+          )}
+
           {currentQuestion?.subQuestions?.length > 0 ? (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
               {currentQuestion.subQuestions.map((sq, sIdx) => {
                 const sqTeacher = subNeedsTeacher(sq);
+                const partDone = isFeedback || lockedParts[sq.id || sIdx] !== undefined;
+                const partKp = attempt > FIRST_TRY && lockedParts[sq.id || sIdx] === undefined && sq.keyPoints?.length ? sq.keyPoints : partKeyPoints?.[sIdx];
                 return (
                 <div key={sq.id || sIdx} style={{ padding: '24px', borderRadius: '24px', background: 'white', border: '1px solid #e2e8f0', boxShadow: '0 4px 12px rgba(0,0,0,0.02)' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
                     <div style={{ width: '28px', height: '28px', borderRadius: '8px', background: '#6366f1', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.85rem', fontWeight: 900, flexShrink: 0 }}>
                       {String.fromCharCode(97 + sIdx)}
                     </div>
-                    <MathView content={sq.question} keyPoints={partKeyPoints?.[sIdx] || undefined} onKeyPointClick={partKeyPoints?.[sIdx] ? openKpBubble(partKeyPoints[sIdx]) : undefined} graphData={sq.type === 'graph_sketch' ? (isFeedback ? sq.graphData : null) : sq.graphData} style={{ fontWeight: 700, color: '#1e293b', fontSize: '1rem' }} />
+                    <MathView content={sq.question} keyPoints={partKp || undefined} onKeyPointClick={partKp ? openKpBubble(partKp) : undefined} graphData={sq.type === 'graph_sketch' ? (isFeedback ? sq.graphData : null) : sq.graphData} style={{ fontWeight: 700, color: '#1e293b', fontSize: '1rem' }} />
                   </div>
 
                   {sqTeacher ? (
@@ -469,15 +488,15 @@ const ChallengeQuizView = ({
                         // Sub-question options are not shuffled today, so the raw
                         // index still resolves — but let the shared helper decide
                         // so this stays correct if they ever are.
-                        const isCorrectAnswer = step === 'feedback'
+                        const isCorrectAnswer = partDone
                           && isDisplayedOptionCorrect(sq, sq.options || [], oIdx);
-                        const isWrong = step === 'feedback' && isSelected && !isCorrectAnswer;
+                        const isWrong = partDone && isSelected && !isCorrectAnswer;
 
                         return (
                           <button
                             key={oIdx}
-                            onClick={() => step !== 'feedback' && setSubAnswers(prev => ({ ...prev, [sq.id || sIdx]: (typeof opt === 'string' ? opt : opt.text) }))}
-                            aria-disabled={isFeedback}
+                            onClick={() => !partDone && setSubAnswers(prev => ({ ...prev, [sq.id || sIdx]: (typeof opt === 'string' ? opt : opt.text) }))}
+                            aria-disabled={partDone}
                             style={{
                               padding: '14px 22px',
                               borderRadius: '100px',
@@ -486,7 +505,7 @@ const ChallengeQuizView = ({
                               display: 'flex',
                               alignItems: 'center',
                               gap: '14px',
-                              cursor: step === 'feedback' ? 'default' : 'pointer',
+                              cursor: partDone ? 'default' : 'pointer',
                               boxShadow: '0 4px 12px rgba(0,0,0,0.03)',
                               textAlign: 'left',
                               transition: 'all 0.2s',
@@ -512,15 +531,15 @@ const ChallengeQuizView = ({
                         autoCorrect="off"
                         autoCapitalize="off"
                         spellCheck={false}
-                        readOnly={isFeedback}
+                        readOnly={partDone}
                         value={subAnswers[sq.id || sIdx] || ''}
-                        onChange={(e) => step !== 'feedback' && setSubAnswers(prev => ({ ...prev, [sq.id || sIdx]: e.target.value }))}
+                        onChange={(e) => !partDone && setSubAnswers(prev => ({ ...prev, [sq.id || sIdx]: e.target.value }))}
                         placeholder="Type answer..."
                         style={{ 
                           width: '100%',
                           padding: '12px 16px', 
                           borderRadius: '12px', 
-                          border: `2px solid ${step === 'feedback' ? (String(subAnswers[sq.id || sIdx]).replace(/\s+/g, '').toLowerCase() === String(sq.answer).replace(/\s+/g, '').toLowerCase() ? '#10b981' : '#ef4444') : '#f1f5f9'}`, 
+                          border: `2px solid ${!isFeedback && partDone ? '#10b981' : step === 'feedback' ? (String(subAnswers[sq.id || sIdx]).replace(/\s+/g, '').toLowerCase() === String(sq.answer).replace(/\s+/g, '').toLowerCase() ? '#10b981' : '#ef4444') : '#f1f5f9'}`, 
                           background: 'white',
                           fontWeight: 700,
                           fontSize: '0.95rem'
@@ -554,7 +573,7 @@ const ChallengeQuizView = ({
               if (Array.isArray(val)) return [...val, ...Array(Math.max(0, blanks.length - val.length)).fill('')].slice(0, blanks.length);
               return Array(blanks.length).fill('');
             };
-            const answersArr = isFeedback ? ensureArr(userAnswers[currentIdx]) : ensureArr(selectedOption);
+            const answersArr = isFeedback && attempt === FIRST_TRY ? ensureArr(userAnswers[currentIdx]) : ensureArr(selectedOption);
             const perBlank = currentQuestion.lastBlankResults || [];
             const updateBlank = (idx, val) => {
               if (isFeedback) return;
@@ -671,7 +690,7 @@ const ChallengeQuizView = ({
               )}
               <MathInput
                 ref={mathInputRef}
-                value={step === 'feedback' ? (userAnswers[currentIdx] || '') : (selectedOption || '')}
+                value={step === 'feedback' && attempt === FIRST_TRY ? (userAnswers[currentIdx] || '') : (selectedOption || '')}
                 onChange={(latex) => { if (step !== 'feedback') setSelectedOption(latex); }}
                 onEnter={() => { if (selectedOption) handleAnswer(selectedOption); }}
                 readOnly={isFeedback}
@@ -829,6 +848,8 @@ const ChallengeQuizView = ({
               : isCorrect
                 ? { accent: '#10b981', text: '#065f46', iconBg: '#d1fae5', barBg: '#ecfdf5', shadow: 'rgba(16,185,129,0.20)', label: 'Correct', icon: <CheckCircle2 size={32} color="#10b981" /> }
                 : { accent: '#ef4444', text: '#7f1d1d', iconBg: '#fee2e2', barBg: '#fef2f2', shadow: 'rgba(239,68,68,0.18)', label: 'Not quite', icon: <XCircle size={32} color="#ef4444" /> };
+            if (!isPendingReview && isCorrect && attempt === HINT_TRY) palette.label = currentQuestion?.subQuestions?.length > 0 ? 'Correct: half points for retried parts' : 'Correct: half points';
+            if (!isPendingReview && isCorrect && attempt === PRACTICE) palette.label = 'Correct: well practised';
             const isLast = currentIdx === TOTAL_QUESTIONS - 1;
             return (
               <motion.div
@@ -878,8 +899,8 @@ const ChallengeQuizView = ({
                   {palette.label}
                 </div>
 
-                {/* Thin animated countdown bar */}
-                <div style={{ width: '180px', height: '3px', background: palette.barBg, borderRadius: '999px', overflow: 'hidden' }}>
+                {/* Thin animated countdown bar (practice has no countdown: the student moves on when ready) */}
+                {attempt !== PRACTICE && <div style={{ width: '180px', height: '3px', background: palette.barBg, borderRadius: '999px', overflow: 'hidden' }}>
                   <motion.div
                     key={`countdown-bar-${currentIdx}`}
                     initial={{ width: '100%' }}
@@ -887,14 +908,14 @@ const ChallengeQuizView = ({
                     transition={{ duration: 3, ease: 'linear' }}
                     style={{ height: '100%', background: palette.accent }}
                   />
-                </div>
+                </div>}
 
                 {/* Small countdown label */}
-                <div style={{ fontSize: '0.68rem', fontWeight: 800, color: palette.text, opacity: 0.55, textTransform: 'uppercase', letterSpacing: '0.12em' }}>
+                {attempt !== PRACTICE && <div style={{ fontSize: '0.68rem', fontWeight: 800, color: palette.text, opacity: 0.55, textTransform: 'uppercase', letterSpacing: '0.12em' }}>
                   {isLast
                     ? (countdown > 0 ? `Finishing in ${countdown}` : 'Finishing')
                     : (countdown > 0 ? `Next in ${countdown}` : 'Next')}
-                </div>
+                </div>}
 
                 {/* Purple gradient pill Next button */}
                 <button

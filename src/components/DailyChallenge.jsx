@@ -56,6 +56,9 @@ import { useChallengeStatus } from '../hooks/useChallengeStatus';
 import { useChallengeHistory } from '../hooks/useChallengeHistory';
 
 // Secret Notebook (local-only mistake review)
+import {
+  FIRST_TRY, HINT_TRY, PRACTICE, usesAnswerAttempts, nextAttempt, pointsForAttempt, applyPartResults, pointsForParts, sessionScore,
+} from '../utils/answerAttempts';
 import { addMistakes, canGrade, getSyncSnapshot, getNoteCount, getDueCount, getNextDueAt } from '../utils/secretNote';
 import { markLocalChallengeCompleted } from '../services/secretNoteBonusService';
 
@@ -142,6 +145,9 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
   const [flash, setFlash] = useState(null);
   const [countdown, setCountdown] = useState(0);
   const [questionStartTime, setQuestionStartTime] = useState(null);
+  // Daily Practice: which go this is on the current question, and which parts of a multi-part question are already right.
+  const [attempt, setAttempt] = useState(FIRST_TRY);
+  const [solvedParts, setSolvedParts] = useState({});
   // Duration (seconds) the countdown effect should run for from questionStartTime.
   // Normally the question's full (mode-scaled) timeLimit, but on draft-resume this
   // must be the fast-forwarded remaining time — see resumeDurationRef usage below.
@@ -247,10 +253,12 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
       shuffledOptions,
       subAnswers,
       timeLeft,
+      attempt,
+      solvedParts,
       savedAt: Date.now(),
     };
     try { localStorage.setItem(draftKey, JSON.stringify(draft)); } catch {}
-  }, [step, currentIdx, score, userAnswers, answerResults, shuffledOptions, subAnswers, timeLeft]);
+  }, [step, currentIdx, score, userAnswers, answerResults, shuffledOptions, subAnswers, timeLeft, attempt, solvedParts]);
 
   // Clear draft when quiz finishes (normally or abandoned).
   const clearDraft = () => { if (draftKey) try { localStorage.removeItem(draftKey); } catch {} };
@@ -382,11 +390,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
   // Question-based correct count for display (a multi-part question counts as
   // correct only when every part is right). Keeps the headline/denominator in
   // terms of assigned questions while XP stays point-based.
-  const resultQuestionsCorrect = useMemo(() => (answerResults || []).filter((r) => {
-    if (!r || typeof r !== 'object') return false;
-    if (r.totalPoints) return Number(r.pointsEarned || 0) >= Number(r.totalPoints);
-    return !!r.correct || Number(r.pointsEarned || 0) >= 1;
-  }).length, [answerResults]);
+  const resultQuestionsCorrect = useMemo(() => sessionScore(answerResults), [answerResults]);
 
   const learningInsights = useMemo(() => {
     if (dailyStats.length === 0) return [];
@@ -799,6 +803,8 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
   const setupQuestion = (q, idx = currentIdx) => {
     setTimeLeft(q.timeLimit || 30);
     setQuestionStartTime(Date.now());
+    setAttempt(FIRST_TRY);
+    setSolvedParts({});
     setSelectedOption(null);
     setSelectedOptionIdx(null);
     setIsCorrect(null);
@@ -855,7 +861,8 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
 
   // ~50% time remaining → FlameBuddy hint nudge (if this question has a hint).
   useEffect(() => {
-    if (step !== 'quiz' || !user?.uid) return;
+    // Daily Practice gives hints only after a wrong answer.
+    if (step !== 'quiz' || !user?.uid || usesAnswerAttempts(challengeType)) return;
     const q = questions[currentIdx];
     if (!q) return;
     const limit = Number(q.timeLimit) || 30;
@@ -895,7 +902,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
   }, [step, currentIdx, timeLeft, questions]);
 
   useEffect(() => {
-    if (step !== 'quiz' || !questionStartTime) return;
+    if (step !== 'quiz' || !questionStartTime || !isTimedSession(challengeType)) return;
 
     // Use the fast-forwarded remaining duration on draft-resume (if set); otherwise
     // this is a fresh question and the full mode-scaled timeLimit applies.
@@ -916,8 +923,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
 
       if (remaining <= 0) {
         clearInterval(timer);
-        // Untimed sessions still count down silently (it paces the hint nudge above) but never submit for the student.
-        if (stepRef.current === 'quiz' && isTimedSession(challengeType)) {
+        if (stepRef.current === 'quiz') {
           // Pass whatever the student has typed so far — avoids "No answer recorded"
           // when the timer runs out while a student is mid-entry.
           const typed = selectedOptionRef.current ?? answerInputRef.current?.value ?? null;
@@ -1041,14 +1047,33 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
     setReportMessage('');
   }, []);
 
+  // Ready for another go: nothing selected, MC options reshuffled, right parts of a multi-part question left in place.
+  const resetAnswerForRetry = (q, partResults) => {
+    setSelectedOption(null);
+    setSelectedOptionIdx(null);
+    setIsCorrect(null);
+    if (answerInputRef.current && 'value' in answerInputRef.current) answerInputRef.current.value = '';
+    if (partResults) {
+      setSubAnswers((prev) => {
+        const next = { ...prev };
+        partResults.forEach((r) => { if (!r.correct && !r.pending) delete next[r.id]; });
+        return next;
+      });
+    } else if (getOptions(q).length > 1 && q.type !== 'short_answer') {
+      setShuffledOptions(prepareShuffledMcOptions(q));
+    }
+  };
+
   const handleAnswer = async (optionText, optIdx = null) => {
     if (step === 'feedback' || isSubmittingCanvas) return;
-    
+
     const currentQ = questions[currentIdx];
+    const inPractice = usesAnswerAttempts(challengeType) && attempt === PRACTICE;
     const isShortAnswer = currentQ?.type === 'short_answer';
     const isGraphSketch = currentQ?.type === 'graph_sketch' || currentQ?.type === 'teacher_review' || currentQ?.requiresManualGrading === true;
     
     let correct = false;
+    let partResults = null;
     let canvasDataUrl = null;
     let canvasPageImages = [];
 
@@ -1068,7 +1093,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
     }
 
     // Capture canvas for graph_sketch always, or for any question if split screen is active (Senior Students)
-    if (canvasRef.current && (isGraphSketch || (showSplitScreen && canvasRef.current?.hasContent?.()))) {
+    if (!inPractice && canvasRef.current && (isGraphSketch || (showSplitScreen && canvasRef.current?.hasContent?.()))) {
       try {
         canvasPageImages = await canvasExportWithTimeout(() => Promise.resolve(canvasRef.current.exportPageImages?.() || []));
         canvasDataUrl = canvasPageImages[0] || await canvasExportWithTimeout(() => Promise.resolve(canvasRef.current.exportImage()));
@@ -1128,18 +1153,21 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
 
       correct = gradableResults.length === 0 || gradableResults.every(r => r.correct);
       const pointsEarned = gradableResults.filter(r => r.correct).length;
+      partResults = subResults;
 
-      // Store sub-results in result object for history view
-      currentQ.lastSubResults = subResults;
-      currentQ.pointsEarned = pointsEarned;
-      currentQ.totalPoints = gradableResults.length;
+      // Store sub-results in result object for history view (Daily Practice: the first go is what review shows)
+      if (!usesAnswerAttempts(challengeType) || attempt === FIRST_TRY) {
+        currentQ.lastSubResults = subResults;
+        currentQ.pointsEarned = pointsEarned;
+        currentQ.totalPoints = gradableResults.length;
+      }
 
-      if (pointsEarned > 0) {
+      if (pointsEarned > 0 && !usesAnswerAttempts(challengeType)) {
         setScore(prev => prev + pointsEarned);
       }
     } else if (isShortAnswer) {
       correct = answersMatch(optionText, currentQ.answer);
-      if (correct) setScore(prev => prev + 1);
+      if (correct && !usesAnswerAttempts(challengeType)) setScore(prev => prev + 1);
     } else if (currentQ?.type === 'fill_blank') {
       // Per-blank grading: every blank must match its expected answer.
       // `optionText` arrives as an array of user-entered strings.
@@ -1150,15 +1178,30 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
       currentQ.lastBlankResults = perBlank;
       currentQ.pointsEarned = perBlank.filter(Boolean).length;
       currentQ.totalPoints = blanks.length;
-      if (correct) setScore(prev => prev + 1);
+      if (correct && !usesAnswerAttempts(challengeType)) setScore(prev => prev + 1);
     } else if (currentQ?.type === 'interactive_grid') {
       correct = Array.isArray(optionText) && optionText.length === parseInt(currentQ.answer, 10);
-      if (correct) setScore(prev => prev + 1);
+      if (correct && !usesAnswerAttempts(challengeType)) setScore(prev => prev + 1);
     } else {
       // Shared MC grading — handles index seeds + post-shuffle remapping.
       const displayOpts = (shuffledOptions?.length ? shuffledOptions : getOptions(currentQ));
       correct = gradeMcSelection(currentQ, optionText, optIdx, displayOpts);
-      if (correct) setScore(prev => prev + 1);
+      if (correct && !usesAnswerAttempts(challengeType)) setScore(prev => prev + 1);
+    }
+
+    // Practice after the solution: tell the student how it went. The result is already settled at no points.
+    if (inPractice) {
+      playAnswerResult(correct);
+      setFlash(correct ? 'correct' : 'wrong');
+      if (correct) {
+        setSelectedOption(optionText);
+        setSelectedOptionIdx(optIdx);
+        setIsCorrect(true);
+        setStep('feedback');
+      } else {
+        resetAnswerForRetry(currentQ, partResults);
+      }
+      return;
     }
 
     if (isGraphSketch) {
@@ -1266,11 +1309,22 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
     
     // Scoring is now handled in the logic above based on sub-questions or individual results
     
-    setUserAnswers(prev => {
-      const newAnswers = [...prev];
-      newAnswers[currentIdx] = optionText;
-      return newAnswers;
-    });
+    const attemptFlow = usesAnswerAttempts(challengeType) && !isGraphSketch
+      && !(partResults && partResults.every((r) => r.pending));
+    const parts = attemptFlow && partResults ? applyPartResults(solvedParts, partResults, attempt) : null;
+    const allPartsSolved = parts ? partResults.every((r) => r.pending || parts[r.id] !== undefined) : false;
+    const solved = parts ? allPartsSolved : correct;
+    const attemptPoints = parts ? pointsForParts(parts) : (correct ? pointsForAttempt(attempt) : 0);
+    const attemptTotal = parts ? partResults.filter((r) => !r.pending).length : 1;
+
+    // What was picked first stays the record of this question; a retry only adds to it.
+    if (!attemptFlow || attempt === FIRST_TRY) {
+      setUserAnswers(prev => {
+        const newAnswers = [...prev];
+        newAnswers[currentIdx] = optionText;
+        return newAnswers;
+      });
+    }
 
     // Sketch ink for this submit — shared by answerResults + FlameBuddy speech.
     // empty | light (dots) | substantial (real steps)
@@ -1294,7 +1348,20 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
     const hadWorkingOut = inkLevel === 'substantial';
     const hadAnyInk = inkLevel === 'light' || inkLevel === 'substantial';
 
-    setAnswerResults(prev => {
+    if (attemptFlow && attempt === HINT_TRY) {
+      setAnswerResults(prev => {
+        const newResults = [...prev];
+        newResults[currentIdx] = {
+          ...newResults[currentIdx],
+          attempts: HINT_TRY,
+          retryAnswer: optionText,
+          pointsEarned: attemptPoints,
+          solvedOnAttempt: solved ? HINT_TRY : null,
+          ...(canvasDataUrl ? { workingOut: canvasDataUrl, workingOutPages: canvasPageImages } : {}),
+        };
+        return newResults;
+      });
+    } else setAnswerResults(prev => {
       const newResults = [...prev];
       const pEarned = currentQ?.subQuestions?.length > 0 
         ? (currentQ.pointsEarned || 0)
@@ -1323,8 +1390,9 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
         // `_shuffledOrder` to recover exactly which option was picked.
         selectedOptionIdx: optIdx,
         correct,
-        pointsEarned: pEarned,
-        totalPoints: tPoints,
+        pointsEarned: attemptFlow ? attemptPoints : pEarned,
+        totalPoints: attemptFlow ? attemptTotal : tPoints,
+        ...(attemptFlow ? { attempts: FIRST_TRY, solvedOnAttempt: solved ? FIRST_TRY : null } : {}),
         isPending: isGraphSketch,
         isManual: Boolean(currentQ?.isManual),
         workingOut: canvasDataUrl, // Store the handwritten work
@@ -1338,6 +1406,23 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
       };
       return newResults;
     });
+
+    if (parts) setSolvedParts(parts);
+
+    if (attemptFlow && !solved) {
+      // Stays on this question: a hint, then the worked solution. It is in the Secret Note from the first wrong answer.
+      if (attempt === FIRST_TRY && user?.uid) {
+        try {
+          addMistakes('daily', user.uid, [currentQ]);
+        } catch (e) {
+          console.warn('secret note capture failed (non-fatal):', e);
+        }
+      }
+      setFlash('wrong');
+      setAttempt(nextAttempt(attempt, false));
+      resetAnswerForRetry(currentQ, partResults);
+      return;
+    }
 
     setStep('feedback');
     // Brief pastel flash on the quiz view to give an instant emotional cue.
@@ -1416,12 +1501,8 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
     // number of assigned questions (e.g. 15), not the expanded sub-question
     // point total (e.g. 21). A multi-part question counts as fully correct only
     // when every part is right.
-    const isQuestionFullyCorrect = (r) => {
-      if (!r || typeof r !== 'object') return false;
-      if (r.totalPoints) return Number(r.pointsEarned || 0) >= Number(r.totalPoints);
-      return !!r.correct || Number(r.pointsEarned || 0) >= 1;
-    };
-    const questionsCorrect = isAbandoned ? 0 : currentAnswerResults.filter(isQuestionFullyCorrect).length;
+    // A question solved on the second go counts as half, so this can be a decimal in Daily Practice.
+    const questionsCorrect = isAbandoned ? 0 : sessionScore(currentAnswerResults);
     const displayTotal = TOTAL_QUESTIONS;
 
     try {
@@ -2375,6 +2456,8 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
                         setShuffledOptions(d.shuffledOptions || []);
                         setSubAnswers(d.subAnswers || {});
                         setTimeLeft(d.timeLeft);
+                        setAttempt(d.attempt || FIRST_TRY);
+                        setSolvedParts(d.solvedParts || {});
                         // The per-question countdown effect only runs once questionStartTime
                         // is set (normally done by setupQuestion() on a fresh start / next
                         // question). This resume path skips that, so questionStartTime
@@ -2458,6 +2541,9 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
                   TOTAL_QUESTIONS={TOTAL_QUESTIONS}
                   timeLeft={timeLeft}
                   timed={isTimedSession(challengeType)}
+                  attempt={usesAnswerAttempts(challengeType) ? attempt : FIRST_TRY}
+                  showFirstTryHint={!usesAnswerAttempts(challengeType)}
+                  lockedParts={usesAnswerAttempts(challengeType) ? solvedParts : {}}
                   countdown={countdown}
                   flash={flash}
                   selectedOption={selectedOption}
