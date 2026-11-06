@@ -8014,28 +8014,28 @@
           "id": "y9-1c-q6e",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Rewrite the expression as a single simplified fraction: \\\\(\\\\frac{2}{5a} \\\\times \\\\frac{1}{4a}\\\\)",
+          "stem": "Rewrite the expression as a single simplified fraction: \\(\\frac{2}{5a} \\times \\frac{1}{4a}\\)",
           "options": [
-            "\\\\(\\\\frac{1}{9a^2}\\\\)",
-            "\\\\(\\\\frac{1}{20a^2}\\\\)",
-            "\\\\(\\\\frac{1}{20a}\\\\)",
-            "\\\\(\\\\frac{2}{20a^2}\\\\)"
+            "\\(\\frac{1}{9a^2}\\)",
+            "\\(\\frac{1}{10a^2}\\)",
+            "\\(\\frac{1}{20a^2}\\)",
+            "\\(\\frac{1}{10a}\\)"
           ],
           "answer": 1,
           "hint": "Multiply the numerators together and the denominators together, then cancel out common factors.",
-          "solution": "\\\\frac{1}{20a^2}",
+          "solution": "\\(\\frac{2}{5a}\\times\\frac{1}{4a}=\\frac{2}{20a^2}=\\frac{1}{10a^2}\\)",
           "steps": [
             {
-              "explain": "Multiply the numerators and denominators to form a single fraction.",
-              "work": "\\\\(\\\\frac{2}{5a} \\\\times \\\\frac{1}{4a}\\\\)"
+              "explain": "Multiply the numerators together and the denominators together.",
+              "work": "\\(\\frac{2}{5a} \\times \\frac{1}{4a}=\\frac{2\\times1}{5a\\times4a}\\)"
             },
             {
-              "explain": "Factor coefficients and variable terms in both numerator and denominator.",
-              "work": "Combine the terms together."
+              "explain": "Multiply the numbers and the pronumerals: \\(5\\times4=20\\) and \\(a\\times a=a^2\\).",
+              "work": "\\(=\\frac{2}{20a^2}\\)"
             },
             {
-              "explain": "Cancel common factors to arrive at the final simplified fraction.",
-              "work": "\\\\(\\\\frac{1}{20a^2}\\\\)"
+              "explain": "Cancel the common factor of \\(2\\) in the numerator and denominator to simplify.",
+              "work": "\\(=\\frac{1}{10a^2}\\)"
             }
           ],
           "timeLimit": 90,
