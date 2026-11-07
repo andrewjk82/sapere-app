@@ -1254,20 +1254,20 @@
                 "\\(3\\)",
                 "\\(4\\)"
               ],
-              "answer": 0,
-              "hint": "Compare the Perth and Sydney bars month by month. Count months where the Perth bar is taller.",
+              "answer": 1,
+              "hint": "Compare the Perth and Sydney bars month by month. Count the months where the Perth bar is taller.",
               "steps": [
                 {
-                  "explain": "Scan the paired bars for each month. Perth’s bar is taller only in July.",
-                  "work": "\\(July: Perth > Sydney\\)"
+                  "explain": "Compare the paired bars month by month. Perth’s bar is taller in July (\\(140\\) mm vs \\(128\\) mm) and in August (\\(120\\) mm vs \\(113\\) mm). In June Sydney is higher (\\(120\\) mm vs \\(110\\) mm).",
+                  "work": "\\(\\text{July and August: Perth}>\\text{Sydney}\\)"
                 },
                 {
                   "explain": "No other month has Perth’s bar above Sydney’s.",
-                  "work": "\\(Count = 1 month\\)"
+                  "work": "\\(\\text{Count}=2\\text{ months}\\)"
                 },
                 {
-                  "explain": "Therefore the answer is one month.",
-                  "work": "\\(\\boxed{1}\\)"
+                  "explain": "Therefore Perth is higher in two months.",
+                  "work": "\\(\\boxed{2}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -1325,7 +1325,7 @@
             "sourceQuestion": "Q12"
           },
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 300\" role=\"img\" aria-label=\"Grouped bar chart of mean monthly rainfall in Sydney and Perth\"><rect width=\"760\" height=\"300\" fill=\"white\"/><text x=\"380\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"17\" font-weight=\"bold\">Mean monthly rainfall in Sydney and Perth</text><path fill=\"none\" d=\"M55 245V45M55 245H730\" stroke=\"#334155\" stroke-width=\"2\"/><path fill=\"none\" d=\"M55 45H730\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M55 85H730\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M55 125H730\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M55 165H730\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M55 205H730\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M55 245H730\" stroke=\"#e2e8f0\"/><rect x=\"70\" y=\"145\" width=\"18\" height=\"100\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"90\" y=\"230\" width=\"18\" height=\"15\" fill=\"#64748b\"/><text x=\"89\" y=\"266\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">Jan</text><rect x=\"124\" y=\"133\" width=\"18\" height=\"112\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"144\" y=\"225\" width=\"18\" height=\"20\" fill=\"#64748b\"/><text x=\"143\" y=\"266\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">Feb</text><rect x=\"178\" y=\"115\" width=\"18\" height=\"130\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"198\" y=\"223\" width=\"18\" height=\"22\" fill=\"#64748b\"/><text x=\"197\" y=\"266\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">Mar</text><rect x=\"232\" y=\"120\" width=\"18\" height=\"125\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"252\" y=\"209\" width=\"18\" height=\"36\" fill=\"#64748b\"/><text x=\"251\" y=\"266\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">Apr</text><rect x=\"286\" y=\"133\" width=\"18\" height=\"112\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"306\" y=\"157\" width=\"18\" height=\"88\" fill=\"#64748b\"/><text x=\"305\" y=\"266\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">May</text><rect x=\"340\" y=\"127\" width=\"18\" height=\"118\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"360\" y=\"133\" width=\"18\" height=\"112\" fill=\"#64748b\"/><text x=\"359\" y=\"266\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">Jun</text><rect x=\"394\" y=\"117\" width=\"18\" height=\"128\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"414\" y=\"105\" width=\"18\" height=\"140\" fill=\"#64748b\"/><text x=\"413\" y=\"266\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">Jul</text><rect x=\"448\" y=\"132\" width=\"18\" height=\"113\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"468\" y=\"125\" width=\"18\" height=\"120\" fill=\"#64748b\"/><text x=\"467\" y=\"266\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">Aug</text><rect x=\"502\" y=\"152\" width=\"18\" height=\"93\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"522\" y=\"183\" width=\"18\" height=\"62\" fill=\"#64748b\"/><text x=\"521\" y=\"266\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">Sep</text><rect x=\"556\" y=\"163\" width=\"18\" height=\"82\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"576\" y=\"208\" width=\"18\" height=\"37\" fill=\"#64748b\"/><text x=\"575\" y=\"266\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">Oct</text><rect x=\"610\" y=\"167\" width=\"18\" height=\"78\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"630\" y=\"223\" width=\"18\" height=\"22\" fill=\"#64748b\"/><text x=\"629\" y=\"266\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">Nov</text><rect x=\"664\" y=\"171\" width=\"18\" height=\"74\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"684\" y=\"229\" width=\"18\" height=\"16\" fill=\"#64748b\"/><text x=\"683\" y=\"266\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\">Dec</text><rect x=\"550\" y=\"38\" width=\"14\" height=\"12\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><text x=\"570\" y=\"49\" font-family=\"Arial\" font-size=\"12\">Sydney</text><rect x=\"630\" y=\"38\" width=\"14\" height=\"12\" fill=\"#64748b\"/><text x=\"650\" y=\"49\" font-family=\"Arial\" font-size=\"12\">Perth</text><text x=\"20\" y=\"130\" transform=\"rotate(-90 20 130)\" font-family=\"Arial\" font-size=\"12\">Rainfall (mm)</text></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 340\" width=\"100%\" style=\"max-width:760px\" font-family=\"system-ui,sans-serif\"><rect width=\"760\" height=\"340\" fill=\"#fff\"/><text x=\"380\" y=\"24\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"700\">Mean monthly rainfall in Sydney and Perth</text><path d=\"M60 280.0H720\" stroke=\"#e2e8f0\"/><text x=\"54\" y=\"284.0\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\" font-weight=\"400\">0</text><path d=\"M60 241.7H720\" stroke=\"#e2e8f0\"/><text x=\"54\" y=\"245.66666666666669\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\" font-weight=\"400\">25</text><path d=\"M60 203.3H720\" stroke=\"#e2e8f0\"/><text x=\"54\" y=\"207.33333333333334\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\" font-weight=\"400\">50</text><path d=\"M60 165.0H720\" stroke=\"#e2e8f0\"/><text x=\"54\" y=\"169.0\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\" font-weight=\"400\">75</text><path d=\"M60 126.7H720\" stroke=\"#e2e8f0\"/><text x=\"54\" y=\"130.66666666666669\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\" font-weight=\"400\">100</text><path d=\"M60 88.3H720\" stroke=\"#e2e8f0\"/><text x=\"54\" y=\"92.33333333333331\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\" font-weight=\"400\">125</text><path d=\"M60 50.0H720\" stroke=\"#e2e8f0\"/><text x=\"54\" y=\"54.0\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\" font-weight=\"400\">150</text><path d=\"M60 50V280H720\" stroke=\"#334155\" stroke-width=\"1.6\" fill=\"none\"/><text transform=\"rotate(-90 18 165)\" x=\"18\" y=\"165.0\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">Rainfall (mm)</text><rect x=\"68.5\" y=\"126.7\" width=\"18\" height=\"153.3\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"88.5\" y=\"257.0\" width=\"18\" height=\"23.0\" fill=\"#475569\" stroke=\"#475569\"/><text x=\"87.5\" y=\"296\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">Jan</text><rect x=\"123.5\" y=\"108.3\" width=\"18\" height=\"171.7\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"143.5\" y=\"249.3\" width=\"18\" height=\"30.7\" fill=\"#475569\" stroke=\"#475569\"/><text x=\"142.5\" y=\"296\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">Feb</text><rect x=\"178.5\" y=\"80.7\" width=\"18\" height=\"199.3\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"198.5\" y=\"246.3\" width=\"18\" height=\"33.7\" fill=\"#475569\" stroke=\"#475569\"/><text x=\"197.5\" y=\"296\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">Mar</text><rect x=\"233.5\" y=\"88.3\" width=\"18\" height=\"191.7\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"253.5\" y=\"224.8\" width=\"18\" height=\"55.2\" fill=\"#475569\" stroke=\"#475569\"/><text x=\"252.5\" y=\"296\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">Apr</text><rect x=\"288.5\" y=\"108.3\" width=\"18\" height=\"171.7\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"308.5\" y=\"145.1\" width=\"18\" height=\"134.9\" fill=\"#475569\" stroke=\"#475569\"/><text x=\"307.5\" y=\"296\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">May</text><rect x=\"343.5\" y=\"96.0\" width=\"18\" height=\"184.0\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"363.5\" y=\"111.3\" width=\"18\" height=\"168.7\" fill=\"#475569\" stroke=\"#475569\"/><text x=\"362.5\" y=\"296\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">Jun</text><rect x=\"398.5\" y=\"83.7\" width=\"18\" height=\"196.3\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"418.5\" y=\"65.3\" width=\"18\" height=\"214.7\" fill=\"#475569\" stroke=\"#475569\"/><text x=\"417.5\" y=\"296\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">Jul</text><rect x=\"453.5\" y=\"106.7\" width=\"18\" height=\"173.3\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"473.5\" y=\"96.0\" width=\"18\" height=\"184.0\" fill=\"#475569\" stroke=\"#475569\"/><text x=\"472.5\" y=\"296\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">Aug</text><rect x=\"508.5\" y=\"137.4\" width=\"18\" height=\"142.6\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"528.5\" y=\"184.9\" width=\"18\" height=\"95.1\" fill=\"#475569\" stroke=\"#475569\"/><text x=\"527.5\" y=\"296\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">Sep</text><rect x=\"563.5\" y=\"154.3\" width=\"18\" height=\"125.7\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"583.5\" y=\"223.3\" width=\"18\" height=\"56.7\" fill=\"#475569\" stroke=\"#475569\"/><text x=\"582.5\" y=\"296\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">Oct</text><rect x=\"618.5\" y=\"160.4\" width=\"18\" height=\"119.6\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"638.5\" y=\"246.3\" width=\"18\" height=\"33.7\" fill=\"#475569\" stroke=\"#475569\"/><text x=\"637.5\" y=\"296\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">Nov</text><rect x=\"673.5\" y=\"166.5\" width=\"18\" height=\"113.5\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><rect x=\"693.5\" y=\"255.5\" width=\"18\" height=\"24.5\" fill=\"#475569\" stroke=\"#475569\"/><text x=\"692.5\" y=\"296\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">Dec</text><rect x=\"540\" y=\"30\" width=\"14\" height=\"12\" fill=\"#e5e7eb\" stroke=\"#64748b\"/><text x=\"560\" y=\"41\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"start\" font-weight=\"400\">Sydney</text><rect x=\"630\" y=\"30\" width=\"14\" height=\"12\" fill=\"#475569\"/><text x=\"650\" y=\"41\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"start\" font-weight=\"400\">Perth</text></svg>"
           }
         },
         {
@@ -1347,7 +1347,7 @@
                 "\\(1\\)"
               ],
               "answer": 0,
-              "hint": "There are \\(42\\) data values. Find the scores at the \\(25th\\) and \\(75th\\) percentiles using the cumulative frequencies.",
+              "hint": "There are \\(42\\) data values. Find the scores at the \\(25\\)th and \\(75\\)th percentiles using the cumulative frequencies.",
               "steps": [
                 {
                   "explain": "The first quartile is around the \\(10.5th\\) value. Cumulative frequency is \\(9\\) through score \\(2\\) and \\(16\\) through score \\(3\\), so \\(Q1=3\\).",
@@ -1381,21 +1381,21 @@
             "sourceQuestion": "Q13"
           },
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 430 310\" role=\"img\" aria-label=\"Score and cumulative frequency table\"><rect width=\"430\" height=\"310\" fill=\"white\"/><g stroke=\"#475569\" stroke-width=\"1.5\" fill=\"none\"><path d=\"M40 30H390M40 72H390M40 110H390M40 148H390M40 186H390M40 224H390M40 300H390M40 30V300M210 30V262M390 30V300\"/></g><g font-family=\"Arial\" font-size=\"16\" fill=\"#172554\" text-anchor=\"middle\"><text x=\"125\" y=\"56\">Score</text><text x=\"300\" y=\"56\">Cumulative frequency</text><text x=\"125\" y=\"98\">1</text><text x=\"300\" y=\"98\">5</text><text x=\"125\" y=\"136\">2</text><text x=\"300\" y=\"136\">9</text><text x=\"125\" y=\"174\">3</text><text x=\"300\" y=\"174\">16</text><text x=\"125\" y=\"212\">4</text><text x=\"300\" y=\"212\">20</text><text x=\"125\" y=\"250\">5</text><text x=\"300\" y=\"250\">34</text><text x=\"125\" y=\"288\">6</text><text x=\"300\" y=\"288\">42</text></g></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 390 216\" width=\"100%\" style=\"max-width:390px\" font-family=\"system-ui,sans-serif\"><rect width=\"390\" height=\"216\" fill=\"#fff\"/><rect x=\"20\" y=\"10\" width=\"350\" height=\"202\" fill=\"#fff\" stroke=\"#475569\"/><rect x=\"20\" y=\"10\" width=\"350\" height=\"34\" fill=\"#eef2f7\" stroke=\"#475569\"/><path d=\"M170 10V212\" stroke=\"#475569\"/><path d=\"M20 44H370\" stroke=\"#475569\"/><path d=\"M20 72H370\" stroke=\"#475569\"/><path d=\"M20 100H370\" stroke=\"#475569\"/><path d=\"M20 128H370\" stroke=\"#475569\"/><path d=\"M20 156H370\" stroke=\"#475569\"/><path d=\"M20 184H370\" stroke=\"#475569\"/><text x=\"95.0\" y=\"31.0\" font-size=\"11.5\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"700\">Score</text><text x=\"270.0\" y=\"31.0\" font-size=\"11.5\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"700\">Cumulative frequency</text><text x=\"28\" y=\"61\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"start\" font-weight=\"400\">1</text><text x=\"270.0\" y=\"61\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">5</text><text x=\"28\" y=\"89\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"start\" font-weight=\"400\">2</text><text x=\"270.0\" y=\"89\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">9</text><text x=\"28\" y=\"117\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"start\" font-weight=\"400\">3</text><text x=\"270.0\" y=\"117\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">16</text><text x=\"28\" y=\"145\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"start\" font-weight=\"400\">4</text><text x=\"270.0\" y=\"145\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">20</text><text x=\"28\" y=\"173\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"start\" font-weight=\"400\">5</text><text x=\"270.0\" y=\"173\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">34</text><text x=\"28\" y=\"201\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"start\" font-weight=\"400\">6</text><text x=\"270.0\" y=\"201\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">42</text></svg>"
           }
         },
         {
           "id": "y12a-advanced-005-p262-q14",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "A set of data has a lower quartile (Q_L) of \\(10\\) and an upper quartile (Q_U) of \\(16\\). What is the maximum possible range of the data if there are no outliers?",
+          "stem": "A set of data has a lower quartile \\(Q_L\\) of \\(10\\) and an upper quartile \\(Q_U\\) of \\(16\\). What is the maximum possible range of the data if there are no outliers?",
           "hint": "Use the outlier fences as the extreme values for a dataset with no outliers.",
           "parts": [
             {
               "id": "y12a-advanced-005-p262-q14",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "A set of data has a lower quartile Q_L of \\(10\\) and an upper quartile Q_U of \\(16\\). What is the maximum possible range of the data if there are no outliers?",
+              "stem": "A set of data has a lower quartile \\(Q_L\\) of \\(10\\) and an upper quartile \\(Q_U\\) of \\(16\\). What is the maximum possible range of the data if there are no outliers?",
               "options": [
                 "\\(24\\)",
                 "\\(15\\)",
@@ -1441,14 +1441,14 @@
           "id": "y12a-advanced-005-p262-q15",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "A soccer referee wrote down the number of goals scored in \\(9\\) different games during the season: \\(2, 3, 3, 3, 5, 5, 8, 9\\), [omitted]. The last number has been omitted. The range is \\(10\\). What is the five-number summary for this data set?",
+          "stem": "A soccer referee wrote down the number of goals scored in \\(9\\) different games during the season: \\(2, 3, 3, 3, 5, 5, 8, 9\\) and one omitted value. The range is \\(10\\). What is the five-number summary for this data set?",
           "hint": "Use the range to find the missing value first. Then use the ordered nine values to find the quartiles and median.",
           "parts": [
             {
               "id": "y12a-advanced-005-p262-q15",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "A soccer referee recorded the goals scored in \\(9\\) games: \\(2, 3, 3, 3, 5, 5, 8, 9\\), and one omitted value. The range is \\(10\\). What is the five-number summary?",
+              "stem": "A soccer referee wrote down the number of goals scored in \\(9\\) different games during the season: \\(2, 3, 3, 3, 5, 5, 8, 9\\) and one omitted value. The range is \\(10\\). What is the five-number summary for this data set?",
               "options": [
                 "\\(2, 3, 5, 8.5, 12\\)",
                 "\\(2, 3, 5, 8.5, 10\\)",
@@ -1456,7 +1456,7 @@
                 "\\(2, 3, 5, 8, 12\\)"
               ],
               "answer": 0,
-              "hint": "The missing value must make the range \\(10\\). Then find the median and the medians of the lower and upper halves.",
+              "hint": "Use the range to find the missing value first. Then use the ordered nine values to find the quartiles and median.",
               "steps": [
                 {
                   "explain": "The current minimum is \\(2\\) and current maximum is \\(9\\). To make the range \\(10\\), the missing value must be \\(12\\).",
@@ -1521,7 +1521,7 @@
                 },
                 {
                   "explain": "Divide by the total frequency, \\(3+6+8+9=26\\).",
-                  "work": "\\(\\bar{x}=323/26=12.423\\ldots\\approx\\boxed{12.4}\\)"
+                  "work": "\\(\\bar{x}=\\dfrac{323}{26}=12.423\\ldots\\approx\\boxed{12.4}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -1543,7 +1543,7 @@
             "sourceQuestion": "Q16"
           },
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 450 270\" role=\"img\" aria-label=\"Grouped frequency table\"><rect width=\"450\" height=\"270\" fill=\"white\"/><g stroke=\"#475569\" stroke-width=\"1.5\" fill=\"none\"><path d=\"M40 30H410M40 75H410M40 120H410M40 165H410M40 210H410M40 30V210M250 30V210M410 30V210\"/></g><g font-family=\"Arial\" font-size=\"17\" fill=\"#172554\" text-anchor=\"middle\"><text x=\"145\" y=\"58\">Class interval</text><text x=\"330\" y=\"58\">Frequency</text><text x=\"145\" y=\"103\">1–5</text><text x=\"330\" y=\"103\">3</text><text x=\"145\" y=\"148\">6–10</text><text x=\"330\" y=\"148\">6</text><text x=\"145\" y=\"193\">11–15</text><text x=\"330\" y=\"193\">8</text></g><text x=\"145\" y=\"238\" font-family=\"Arial\" font-size=\"17\" fill=\"#172554\" text-anchor=\"middle\">16–20</text><text x=\"330\" y=\"238\" font-family=\"Arial\" font-size=\"17\" fill=\"#172554\" text-anchor=\"middle\">9</text></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 164\" width=\"100%\" style=\"max-width:340px\" font-family=\"system-ui,sans-serif\"><rect width=\"340\" height=\"164\" fill=\"#fff\"/><rect x=\"20\" y=\"10\" width=\"300\" height=\"146\" fill=\"#fff\" stroke=\"#475569\"/><rect x=\"20\" y=\"10\" width=\"300\" height=\"34\" fill=\"#eef2f7\" stroke=\"#475569\"/><path d=\"M160 10V156\" stroke=\"#475569\"/><path d=\"M20 44H320\" stroke=\"#475569\"/><path d=\"M20 72H320\" stroke=\"#475569\"/><path d=\"M20 100H320\" stroke=\"#475569\"/><path d=\"M20 128H320\" stroke=\"#475569\"/><text x=\"90.0\" y=\"31.0\" font-size=\"11.5\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"700\">Class interval</text><text x=\"240.0\" y=\"31.0\" font-size=\"11.5\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"700\">Frequency</text><text x=\"28\" y=\"61\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"start\" font-weight=\"400\">1–5</text><text x=\"240.0\" y=\"61\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">3</text><text x=\"28\" y=\"89\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"start\" font-weight=\"400\">6–10</text><text x=\"240.0\" y=\"89\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">6</text><text x=\"28\" y=\"117\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"start\" font-weight=\"400\">11–15</text><text x=\"240.0\" y=\"117\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">8</text><text x=\"28\" y=\"145\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"start\" font-weight=\"400\">16–20</text><text x=\"240.0\" y=\"145\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">9</text></svg>"
           }
         },
         {
@@ -1576,7 +1576,7 @@
                   "work": "\\(0.5N=28\\)"
                 },
                 {
-                  "explain": "Solve for N.",
+                  "explain": "Solve for \\(N\\).",
                   "work": "\\(N=56\\Rightarrow\\boxed{56\\text{ students}}\\)"
                 }
               ],
@@ -1599,7 +1599,7 @@
             "sourceQuestion": "Q17"
           },
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 230\" role=\"img\" aria-label=\"History and Geography test box plots\"><rect width=\"760\" height=\"230\" fill=\"white\"/><g stroke=\"#dbe3ec\" stroke-dasharray=\"2 3\"><path d=\"M80 30V170M180 30V170M280 30V170M380 30V170M480 30V170M580 30V170M680 30V170\"/></g><path d=\"M230 65H580M230 57V73M230 50H480V80H480M380 50V80M480 65H580M580 57V73\" fill=\"none\" stroke=\"#475569\" stroke-width=\"3\"/><path d=\"M230 130H530M230 122V138M330 115H505V145H330ZM405 115V145M505 130H580M580 122V138\" fill=\"none\" stroke=\"#475569\" stroke-width=\"3\"/><path fill=\"none\" d=\"M80 170H680\" stroke=\"#334155\" stroke-width=\"2\"/><g font-family=\"Arial\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"230\" y=\"195\">10</text><text x=\"280\" y=\"195\">15</text><text x=\"330\" y=\"195\">20</text><text x=\"380\" y=\"195\">25</text><text x=\"430\" y=\"195\">30</text><text x=\"480\" y=\"195\">35</text><text x=\"530\" y=\"195\">40</text><text x=\"50\" y=\"70\">History</text><text x=\"50\" y=\"135\">Geography</text></g></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 230\" width=\"100%\" style=\"max-width:760px\" font-family=\"system-ui,sans-serif\"><rect width=\"760\" height=\"230\" fill=\"#fff\"/><path d=\"M120 20V175\" stroke=\"#e2e8f0\"/><path d=\"M180 20V175\" stroke=\"#e2e8f0\"/><path d=\"M240 20V175\" stroke=\"#e2e8f0\"/><path d=\"M300 20V175\" stroke=\"#e2e8f0\"/><path d=\"M360 20V175\" stroke=\"#e2e8f0\"/><path d=\"M420 20V175\" stroke=\"#e2e8f0\"/><path d=\"M480 20V175\" stroke=\"#e2e8f0\"/><path d=\"M540 20V175\" stroke=\"#e2e8f0\"/><path d=\"M600 20V175\" stroke=\"#e2e8f0\"/><path d=\"M660 20V175\" stroke=\"#e2e8f0\"/><path d=\"M120 175H660\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M120 20V175\" stroke=\"#e2e8f0\"/><path d=\"M120 175v5\" stroke=\"#334155\"/><text x=\"120\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">5</text><path d=\"M180 20V175\" stroke=\"#e2e8f0\"/><path d=\"M180 175v5\" stroke=\"#334155\"/><text x=\"180\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">10</text><path d=\"M240 20V175\" stroke=\"#e2e8f0\"/><path d=\"M240 175v5\" stroke=\"#334155\"/><text x=\"240\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">15</text><path d=\"M300 20V175\" stroke=\"#e2e8f0\"/><path d=\"M300 175v5\" stroke=\"#334155\"/><text x=\"300\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">20</text><path d=\"M360 20V175\" stroke=\"#e2e8f0\"/><path d=\"M360 175v5\" stroke=\"#334155\"/><text x=\"360\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">25</text><path d=\"M420 20V175\" stroke=\"#e2e8f0\"/><path d=\"M420 175v5\" stroke=\"#334155\"/><text x=\"420\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">30</text><path d=\"M480 20V175\" stroke=\"#e2e8f0\"/><path d=\"M480 175v5\" stroke=\"#334155\"/><text x=\"480\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">35</text><path d=\"M540 20V175\" stroke=\"#e2e8f0\"/><path d=\"M540 175v5\" stroke=\"#334155\"/><text x=\"540\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">40</text><path d=\"M600 20V175\" stroke=\"#e2e8f0\"/><path d=\"M600 175v5\" stroke=\"#334155\"/><text x=\"600\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">45</text><path d=\"M660 20V175\" stroke=\"#e2e8f0\"/><path d=\"M660 175v5\" stroke=\"#334155\"/><text x=\"660\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">50</text><text x=\"390.0\" y=\"215\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">Marks</text><text x=\"10\" y=\"59\" font-size=\"13\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"700\">History</text><path d=\"M180 52.0H300M420 52.0H600M180 43.0V61.0M600 43.0V61.0\" stroke=\"#475569\" stroke-width=\"2.4\" fill=\"none\"/><rect x=\"300\" y=\"34\" width=\"120\" height=\"36\" fill=\"#e2e8f0\" stroke=\"#475569\" stroke-width=\"2.4\"/><path d=\"M360 34V70\" stroke=\"#475569\" stroke-width=\"3\"/><text x=\"10\" y=\"129\" font-size=\"13\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"700\">Geography</text><path d=\"M204 122.0H324M516 122.0H612M204 113.0V131.0M612 113.0V131.0\" stroke=\"#475569\" stroke-width=\"2.4\" fill=\"none\"/><rect x=\"324\" y=\"104\" width=\"192\" height=\"36\" fill=\"#e2e8f0\" stroke=\"#475569\" stroke-width=\"2.4\"/><path d=\"M420 104V140\" stroke=\"#475569\" stroke-width=\"3\"/></svg>"
           }
         },
         {
@@ -1607,7 +1607,7 @@
           "type": "multipart",
           "difficulty": "medium",
           "stem": "The heights of \\(400\\) students were measured. The results are displayed in this cumulative frequency polygon. Use the polygon to estimate the interquartile range.",
-          "hint": "Read the height at cumulative frequency \\(100\\) for \\(Q1\\) and at \\(300\\) for \\(Q3\\). The IQR is \\(Q3-Q1\\).",
+          "hint": "Read the height at cumulative frequency \\(100\\) for \\(Q_1\\) and at \\(300\\) for \\(Q_3\\). The IQR is \\(Q3-Q1\\).",
           "parts": [
             {
               "id": "y12a-advanced-005-p262-q18",
@@ -1621,7 +1621,7 @@
                 "\\(68\\text{ cm}\\)"
               ],
               "answer": 0,
-              "hint": "For \\(400\\) students, read \\(Q1\\) at cumulative frequency \\(100\\) and \\(Q3\\) at \\(300\\). Subtract their height estimates.",
+              "hint": "For \\(400\\) students, read \\(Q_1\\) at cumulative frequency \\(100\\) and \\(Q_3\\) at \\(300\\). Subtract their height estimates.",
               "steps": [
                 {
                   "explain": "The first quartile corresponds to 25% of \\(400\\), which is cumulative frequency \\(100\\). Read across to the curve, then down: about \\(136\\) cm.",
@@ -1655,7 +1655,7 @@
             "sourceQuestion": "Q18"
           },
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 650 420\" role=\"img\" aria-label=\"Cumulative frequency polygon of 400 student heights\"><rect width=\"650\" height=\"420\" fill=\"white\"/><path fill=\"none\" d=\"M80 340V35M80 340H590\" stroke=\"#334155\" stroke-width=\"2\"/><path fill=\"none\" d=\"M80 40.0H590\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M80 78.0H590\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M80 116.0H590\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M80 154.0H590\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M80 192.0H590\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M80 230.0H590\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M80 268.0H590\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M80 306.0H590\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M80 40V340\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M131 40V340\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M182 40V340\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M233 40V340\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M284 40V340\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M335 40V340\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M386 40V340\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M437 40V340\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M488 40V340\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M539 40V340\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M590 40V340\" stroke=\"#e2e8f0\"/><polyline points=\"80.0,340.0 182.0,302.5 284.0,257.5 386.0,175.0 488.0,77.5 539.0,58.75 590.0,40.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"4\"/><g font-family=\"Arial\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"80.0\" y=\"360\">100</text><text x=\"131.0\" y=\"360\">110</text><text x=\"182.0\" y=\"360\">120</text><text x=\"233.0\" y=\"360\">130</text><text x=\"284.0\" y=\"360\">140</text><text x=\"335.0\" y=\"360\">150</text><text x=\"386.0\" y=\"360\">160</text><text x=\"437.0\" y=\"360\">170</text><text x=\"488.0\" y=\"360\">180</text><text x=\"539.0\" y=\"360\">190</text><text x=\"590.0\" y=\"360\">200</text><text x=\"62\" y=\"344.0\">0</text><text x=\"62\" y=\"306.5\">50</text><text x=\"62\" y=\"269.0\">100</text><text x=\"62\" y=\"231.5\">150</text><text x=\"62\" y=\"194.0\">200</text><text x=\"62\" y=\"156.5\">250</text><text x=\"62\" y=\"119.0\">300</text><text x=\"62\" y=\"81.5\">350</text><text x=\"62\" y=\"44.0\">400</text></g><text x=\"335\" y=\"390\" font-family=\"Arial\" font-size=\"13\" text-anchor=\"middle\">Height (cm)</text><text x=\"20\" y=\"180\" transform=\"rotate(-90 20 180)\" font-family=\"Arial\" font-size=\"13\">Cumulative frequency</text></svg>"
+            "svg": "<svg width=\"100%\" style=\"max-width:650px\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 650 420\" role=\"img\" aria-label=\"Cumulative frequency polygon of 400 student heights\"><rect width=\"650\" height=\"420\" fill=\"white\"/><path fill=\"none\" d=\"M80 340V35M80 340H590\" stroke=\"#334155\" stroke-width=\"2\"/><path fill=\"none\" d=\"M80 40.0H590\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M80 78.0H590\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M80 116.0H590\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M80 154.0H590\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M80 192.0H590\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M80 230.0H590\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M80 268.0H590\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M80 306.0H590\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M80 40V340\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M131 40V340\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M182 40V340\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M233 40V340\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M284 40V340\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M335 40V340\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M386 40V340\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M437 40V340\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M488 40V340\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M539 40V340\" stroke=\"#e2e8f0\"/><path fill=\"none\" d=\"M590 40V340\" stroke=\"#e2e8f0\"/><polyline points=\"80.0,340.0 182.0,302.5 284.0,257.5 386.0,175.0 488.0,77.5 539.0,58.75 590.0,40.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"4\"/><g font-family=\"Arial\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"80.0\" y=\"360\">100</text><text x=\"131.0\" y=\"360\">110</text><text x=\"182.0\" y=\"360\">120</text><text x=\"233.0\" y=\"360\">130</text><text x=\"284.0\" y=\"360\">140</text><text x=\"335.0\" y=\"360\">150</text><text x=\"386.0\" y=\"360\">160</text><text x=\"437.0\" y=\"360\">170</text><text x=\"488.0\" y=\"360\">180</text><text x=\"539.0\" y=\"360\">190</text><text x=\"590.0\" y=\"360\">200</text><text x=\"62\" y=\"344.0\">0</text><text x=\"62\" y=\"306.5\">50</text><text x=\"62\" y=\"269.0\">100</text><text x=\"62\" y=\"231.5\">150</text><text x=\"62\" y=\"194.0\">200</text><text x=\"62\" y=\"156.5\">250</text><text x=\"62\" y=\"119.0\">300</text><text x=\"62\" y=\"81.5\">350</text><text x=\"62\" y=\"44.0\">400</text></g><text x=\"335\" y=\"390\" font-family=\"Arial\" font-size=\"13\" text-anchor=\"middle\">Height (cm)</text><text x=\"20\" y=\"180\" transform=\"rotate(-90 20 180)\" font-family=\"Arial\" font-size=\"13\">Cumulative frequency</text></svg>"
           }
         },
         {
@@ -1685,7 +1685,7 @@
                 },
                 {
                   "explain": "For every sample size, the average of all possible sample means equals the population mean.",
-                  "work": "\\(Mean of all sample means = population mean\\)"
+                  "work": "\\(\\text{Mean of all sample means}=\\text{population mean}\\)"
                 },
                 {
                   "explain": "Therefore the required mean is \\(165\\) cm.",
@@ -1715,25 +1715,25 @@
           "id": "y12a-advanced-005-p263-q21",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "In a small business, the seven employees earn the following wages per week: $300, $490, $520, $590, $660, $680, $970. Answer (i) and (ii).",
+          "stem": "In a small business, the seven employees earn the following wages per week: \\(\\$300\\), \\(\\$490\\), \\(\\$520\\), \\(\\$590\\), \\(\\$660\\), \\(\\$680\\), \\(\\$970\\). Answer (i) and (ii).",
           "hint": "For (i), find the quartiles and compare the highest wage with the upper fence. For (ii), consider whether adding the same amount changes distances from the mean.",
           "parts": [
             {
               "id": "y12a-advanced-005-p263-q21-i",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "The weekly wages are $300, $490, $520, $590, $660, $680 and $970. Is $970 an outlier? Justify using the 1.5×IQR rule.",
+              "stem": "The weekly wages are \\(\\$300\\), \\(\\$490\\), \\(\\$520\\), \\(\\$590\\), \\(\\$660\\), \\(\\$680\\) and \\(\\$970\\). Is \\(\\$970\\) an outlier? Justify using the 1.5×IQR rule.",
               "options": [
-                "Yes, because $970 is above the upper fence $965",
-                "No, because the upper fence is $970",
-                "Yes, because the IQR is $970",
-                "No, because $970 is the maximum"
+                "Yes, because \\(\\$970\\) is above the upper fence \\(\\$965\\)",
+                "No, because the upper fence is \\(\\$970\\)",
+                "Yes, because the IQR is \\(\\$970\\)",
+                "No, because \\(\\$970\\) is the maximum"
               ],
               "answer": 0,
-              "hint": "Find \\(Q1\\) and \\(Q3\\) from the ordered seven wages, then calculate the upper outlier fence.",
+              "hint": "Find \\(Q_1\\) and \\(Q_3\\) from the ordered seven wages, then calculate the upper outlier fence.",
               "steps": [
                 {
-                  "explain": "The middle wage is $590. The lower and upper halves have medians $490 and $680.",
+                  "explain": "The middle wage is \\(\\$590\\). The lower and upper halves have medians \\(\\$490\\) and \\(\\$680\\).",
                   "work": "\\(Q_1=490,\\quad Q_3=680\\)"
                 },
                 {
@@ -1741,7 +1741,7 @@
                   "work": "\\(IQR=680-490=190;\\quad U=680+1.5(190)=965\\)"
                 },
                 {
-                  "explain": "Since $970 is greater than $965, it is an outlier.",
+                  "explain": "Since \\(\\$970\\) is greater than \\(\\$965\\), it is an outlier.",
                   "work": "\\(970>965\\Rightarrow\\boxed{\\text{Yes}}\\)"
                 }
               ],
@@ -1758,18 +1758,18 @@
               "id": "y12a-advanced-005-p263-q21-ii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Each employee receives a $20 pay increase. What happens to the standard deviation of the wages?",
+              "stem": "Each employee receives a \\(\\$20\\) pay increase. What happens to the standard deviation of the wages?",
               "options": [
                 "It stays the same",
-                "It increases by $20",
-                "It decreases by $20",
+                "It increases by \\(\\$20\\)",
+                "It decreases by \\(\\$20\\)",
                 "It doubles"
               ],
               "answer": 0,
               "hint": "Adding the same amount to every value shifts all data equally without changing their distances from the mean.",
               "steps": [
                 {
-                  "explain": "Adding $20 changes every wage by the same amount, so the mean also increases by $20.",
+                  "explain": "Adding \\(\\$20\\) changes every wage by the same amount, so the mean also increases by \\(\\$20\\).",
                   "work": "\\(New wage = old wage + 20\\)"
                 },
                 {
@@ -1826,7 +1826,7 @@
                   "work": "\\(\\frac{200}{2}=100\\)"
                 },
                 {
-                  "explain": "Read horizontally to the cumulative curve/graph, then down to the price axis. The estimate is about $393 000.",
+                  "explain": "Read horizontally to the cumulative curve/graph, then down to the price axis. The estimate is about \\(\\$393 000\\).",
                   "work": "Median price \\(\\approx\\$393\\,000\\)"
                 },
                 {
@@ -1855,7 +1855,7 @@
                 "\\(\\$400\\,000\\)"
               ],
               "answer": 0,
-              "hint": "Use the four class centres \\(375, 385, 395\\) and 405 ($000), with frequencies \\(30, 50, 70\\) and 50.",
+              "hint": "Use the four class centres \\(375, 385, 395\\) and \\(405\\) (in thousands of dollars), with frequencies \\(30, 50, 70\\) and \\(50\\).",
               "steps": [
                 {
                   "explain": "Multiply each class centre by its frequency and add.",
@@ -1867,7 +1867,7 @@
                 },
                 {
                   "explain": "Divide the weighted total by \\(200\\). The result is in thousands of dollars.",
-                  "work": "\\(\\bar{x}=78\\,400/200=392\\Rightarrow\\boxed{\\$392\\,000}\\)"
+                  "work": "\\(\\bar{x}=\\dfrac{78\\,400}{200}=392\\Rightarrow\\boxed{\\$392\\,000}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -1889,7 +1889,7 @@
             "sourceQuestion": "Q22"
           },
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 650 380\" role=\"img\" aria-label=\"Cumulative frequency histogram of 200 house prices\"><rect width=\"650\" height=\"380\" fill=\"white\"/><path fill=\"none\" d=\"M85 310V40M85 310H485\" stroke=\"#334155\" stroke-width=\"2\"/><g stroke=\"#e2e8f0\"><path d=\"M85 250H590M85 190H590M85 130H590M85 70H590\"/><path d=\"M185 40V310M285 40V310M385 40V310M485 40V310\"/></g><g fill=\"#cbd5e1\" stroke=\"#475569\" stroke-width=\"2\"><rect x=\"85\" y=\"274\" width=\"100\" height=\"36\"/><rect x=\"185\" y=\"214\" width=\"100\" height=\"96\"/><rect x=\"285\" y=\"130\" width=\"100\" height=\"180\"/><rect x=\"385\" y=\"70\" width=\"100\" height=\"240\"/></g><g font-family=\"Arial\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"85\" y=\"332\">370</text><text x=\"185\" y=\"332\">380</text><text x=\"285\" y=\"332\">390</text><text x=\"385\" y=\"332\">400</text><text x=\"485\" y=\"332\">410</text><text x=\"335\" y=\"360\">House price ($000)</text><text x=\"68\" y=\"315\">0</text><text x=\"68\" y=\"255\">50</text><text x=\"68\" y=\"195\">100</text><text x=\"68\" y=\"135\">150</text><text x=\"68\" y=\"75\">200</text></g><text x=\"25\" y=\"185\" transform=\"rotate(-90 25 185)\" font-family=\"Arial\" font-size=\"13\">Cumulative frequency</text></svg>"
+            "svg": "<svg width=\"100%\" style=\"max-width:650px\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 650 380\" role=\"img\" aria-label=\"Cumulative frequency histogram of 200 house prices\"><rect width=\"650\" height=\"380\" fill=\"white\"/><path fill=\"none\" d=\"M85 310V40M85 310H485\" stroke=\"#334155\" stroke-width=\"2\"/><g stroke=\"#e2e8f0\"><path d=\"M85 250H590M85 190H590M85 130H590M85 70H590\"/><path d=\"M185 40V310M285 40V310M385 40V310M485 40V310\"/></g><g fill=\"#cbd5e1\" stroke=\"#475569\" stroke-width=\"2\"><rect x=\"85\" y=\"274\" width=\"100\" height=\"36\"/><rect x=\"185\" y=\"214\" width=\"100\" height=\"96\"/><rect x=\"285\" y=\"130\" width=\"100\" height=\"180\"/><rect x=\"385\" y=\"70\" width=\"100\" height=\"240\"/></g><g font-family=\"Arial\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"85\" y=\"332\">370</text><text x=\"185\" y=\"332\">380</text><text x=\"285\" y=\"332\">390</text><text x=\"385\" y=\"332\">400</text><text x=\"485\" y=\"332\">410</text><text x=\"335\" y=\"360\">House price ($000)</text><text x=\"68\" y=\"315\">0</text><text x=\"68\" y=\"255\">50</text><text x=\"68\" y=\"195\">100</text><text x=\"68\" y=\"135\">150</text><text x=\"68\" y=\"75\">200</text></g><text x=\"25\" y=\"185\" transform=\"rotate(-90 25 185)\" font-family=\"Arial\" font-size=\"13\">Cumulative frequency</text></svg>"
           }
         },
         {
@@ -1923,7 +1923,7 @@
                 },
                 {
                   "explain": "Divide by the total frequency, \\(20\\).",
-                  "work": "\\(\\bar{x}=86/20=4.3\\Rightarrow\\boxed{4.3\\text{ hours}}\\)"
+                  "work": "\\(\\bar{x}=\\dfrac{86}{20}=4.3\\Rightarrow\\boxed{4.3\\text{ hours}}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -1945,7 +1945,7 @@
             "sourceQuestion": "Q23"
           },
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 540 320\" role=\"img\" aria-label=\"Frequency table of hours of sport per week\"><rect width=\"540\" height=\"320\" fill=\"white\"/><g stroke=\"#475569\" stroke-width=\"1.5\" fill=\"none\"><path d=\"M60 35H480M60 90H480M60 145H480M60 200H480M60 255H480M60 35V255M300 35V255M480 35V255\"/></g><g font-family=\"Arial\" font-size=\"19\" fill=\"#172554\" text-anchor=\"middle\"><text x=\"180\" y=\"70\">Hours per week</text><text x=\"390\" y=\"70\">Frequency</text><text x=\"180\" y=\"125\">0–2</text><text x=\"390\" y=\"125\">5</text><text x=\"180\" y=\"180\">3–5</text><text x=\"390\" y=\"180\">10</text><text x=\"180\" y=\"235\">6–8</text><text x=\"390\" y=\"235\">3</text><text x=\"180\" y=\"290\">9–11</text><text x=\"390\" y=\"290\">2</text></g></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 164\" width=\"100%\" style=\"max-width:360px\" font-family=\"system-ui,sans-serif\"><rect width=\"360\" height=\"164\" fill=\"#fff\"/><rect x=\"20\" y=\"10\" width=\"320\" height=\"146\" fill=\"#fff\" stroke=\"#475569\"/><rect x=\"20\" y=\"10\" width=\"320\" height=\"34\" fill=\"#eef2f7\" stroke=\"#475569\"/><path d=\"M180 10V156\" stroke=\"#475569\"/><path d=\"M20 44H340\" stroke=\"#475569\"/><path d=\"M20 72H340\" stroke=\"#475569\"/><path d=\"M20 100H340\" stroke=\"#475569\"/><path d=\"M20 128H340\" stroke=\"#475569\"/><text x=\"100.0\" y=\"31.0\" font-size=\"11.5\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"700\">Hours per week</text><text x=\"260.0\" y=\"31.0\" font-size=\"11.5\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"700\">Frequency</text><text x=\"28\" y=\"61\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"start\" font-weight=\"400\">0–2</text><text x=\"260.0\" y=\"61\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">5</text><text x=\"28\" y=\"89\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"start\" font-weight=\"400\">3–5</text><text x=\"260.0\" y=\"89\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">10</text><text x=\"28\" y=\"117\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"start\" font-weight=\"400\">6–8</text><text x=\"260.0\" y=\"117\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">3</text><text x=\"28\" y=\"145\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"start\" font-weight=\"400\">9–11</text><text x=\"260.0\" y=\"145\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">2</text></svg>"
           }
         },
         {
@@ -1974,7 +1974,7 @@
                   "work": "Women: 32,42,44,50,54,55,58,58,63,63,64,69"
                 },
                 {
-                  "explain": "There are \\(12\\) women, so their median is the average of the \\(6th\\) and \\(7th\\) values. Men’s ordered ages are \\(34,36,42,42,45,46,48,53,63\\), giving median \\(45\\).",
+                  "explain": "There are \\(12\\) women, so their median is the average of the \\(6\\)th and \\(7\\)th values. Men’s ordered ages are \\(34,36,42,42,45,46,48,53,63\\), giving median \\(45\\).",
                   "work": "\\(\\text{Women median}=\\frac{55+58}{2}=56.5;\\quad\\text{men median}=45\\)"
                 },
                 {
@@ -2005,7 +2005,7 @@
             "sourceQuestion": "Q20"
           },
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 650 340\" role=\"img\" aria-label=\"Back-to-back stem-and-leaf plot of ages of women and men\"><rect width=\"650\" height=\"340\" fill=\"white\"/><text x=\"230\" y=\"35\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"20\" font-style=\"italic\">Women</text><text x=\"420\" y=\"35\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"20\" font-style=\"italic\">Men</text><path fill=\"none\" d=\"M325 55V310\" stroke=\"#334155\" stroke-width=\"2\"/><g font-family=\"Arial\" font-size=\"20\" fill=\"#172554\" text-anchor=\"middle\"><text x=\"325\" y=\"95\">3</text><text x=\"325\" y=\"150\">4</text><text x=\"325\" y=\"205\">5</text><text x=\"325\" y=\"260\">6</text></g><g font-family=\"monospace\" font-size=\"18\" fill=\"#172554\" text-anchor=\"end\"><text x=\"305\" y=\"95\">2</text><text x=\"305\" y=\"150\">4 2</text><text x=\"305\" y=\"205\">8 8 5 4 0</text><text x=\"305\" y=\"260\">9 4 3 3</text></g><g font-family=\"monospace\" font-size=\"18\" fill=\"#172554\"><text x=\"345\" y=\"95\">4 6</text><text x=\"345\" y=\"150\">2 2 5 6 8</text><text x=\"345\" y=\"205\">3</text><text x=\"345\" y=\"260\">3</text></g><text x=\"325\" y=\"315\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\">Key: 3 | 2 = 32 years</text></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 246\" width=\"100%\" style=\"max-width:760px\" font-family=\"system-ui,sans-serif\"><rect width=\"760\" height=\"246\" fill=\"#fff\"/><text x=\"210.0\" y=\"28\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"700\">Women</text><text x=\"550.0\" y=\"28\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"700\">Men</text><path d=\"M354.0 40V196M406.0 40V196\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"380.0\" y=\"64\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"700\">3</text><text x=\"344.0\" y=\"64\" font-size=\"14\" text-anchor=\"end\" font-family=\"ui-monospace,monospace\" letter-spacing=\"4\" fill=\"#1e293b\">2</text><text x=\"416.0\" y=\"64\" font-size=\"14\" text-anchor=\"start\" font-family=\"ui-monospace,monospace\" letter-spacing=\"4\" fill=\"#1e293b\">46</text><text x=\"380.0\" y=\"98\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"700\">4</text><text x=\"344.0\" y=\"98\" font-size=\"14\" text-anchor=\"end\" font-family=\"ui-monospace,monospace\" letter-spacing=\"4\" fill=\"#1e293b\">42</text><text x=\"416.0\" y=\"98\" font-size=\"14\" text-anchor=\"start\" font-family=\"ui-monospace,monospace\" letter-spacing=\"4\" fill=\"#1e293b\">22568</text><text x=\"380.0\" y=\"132\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"700\">5</text><text x=\"344.0\" y=\"132\" font-size=\"14\" text-anchor=\"end\" font-family=\"ui-monospace,monospace\" letter-spacing=\"4\" fill=\"#1e293b\">88540</text><text x=\"416.0\" y=\"132\" font-size=\"14\" text-anchor=\"start\" font-family=\"ui-monospace,monospace\" letter-spacing=\"4\" fill=\"#1e293b\">3</text><text x=\"380.0\" y=\"166\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"700\">6</text><text x=\"344.0\" y=\"166\" font-size=\"14\" text-anchor=\"end\" font-family=\"ui-monospace,monospace\" letter-spacing=\"4\" fill=\"#1e293b\">9433</text><text x=\"416.0\" y=\"166\" font-size=\"14\" text-anchor=\"start\" font-family=\"ui-monospace,monospace\" letter-spacing=\"4\" fill=\"#1e293b\">3</text><text x=\"380.0\" y=\"228\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">Key: 3 | 2 means 32 years</text></svg>"
           }
         },
         {
@@ -2021,10 +2021,10 @@
               "difficulty": "medium",
               "stem": "Kim’s five-number summary is \\(67, 69, 71, 73, 75\\). Which set of values should be used to draw Kim’s box-and-whisker plot?",
               "options": [
-                "Minimum \\(67, Q1 69\\), median \\(71, Q3 73\\), maximum \\(75\\)",
-                "Minimum \\(69, Q1 67\\), median \\(71, Q3 75\\), maximum \\(73\\)",
-                "Minimum \\(67, Q1 71\\), median \\(69, Q3 73\\), maximum \\(75\\)",
-                "Minimum \\(67, Q1 69\\), median \\(73, Q3 71\\), maximum \\(75\\)"
+                "Minimum \\(67\\), \\(Q_1=69\\), median \\(71\\), \\(Q_3=73\\), maximum \\(75\\)",
+                "Minimum \\(69\\), \\(Q_1=67\\), median \\(71\\), \\(Q_3=75\\), maximum \\(73\\)",
+                "Minimum \\(67\\), \\(Q_1=71\\), median \\(69\\), \\(Q_3=73\\), maximum \\(75\\)",
+                "Minimum \\(67\\), \\(Q_1=69\\), median \\(73\\), \\(Q_3=71\\), maximum \\(75\\)"
               ],
               "answer": 0,
               "hint": "A five-number summary is listed in order: minimum, lower quartile, median, upper quartile, maximum.",
@@ -2035,7 +2035,10 @@
                 },
                 {
                   "explain": "The whiskers go to the minimum \\(67\\) and maximum \\(75\\). The box runs from \\(Q1=69\\) to \\(Q3=73\\), with its median line at \\(71\\).",
-                  "work": "min 67; box 69–73; median 71; max 75"
+                  "work": "min 67; box 69–73; median 71; max 75",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 230\" width=\"100%\" style=\"max-width:760px\" font-family=\"system-ui,sans-serif\"><rect width=\"760\" height=\"230\" fill=\"#fff\"/><path d=\"M100 20V175\" stroke=\"#e2e8f0\"/><path d=\"M145 20V175\" stroke=\"#e2e8f0\"/><path d=\"M190 20V175\" stroke=\"#e2e8f0\"/><path d=\"M235 20V175\" stroke=\"#e2e8f0\"/><path d=\"M280 20V175\" stroke=\"#e2e8f0\"/><path d=\"M325 20V175\" stroke=\"#e2e8f0\"/><path d=\"M370 20V175\" stroke=\"#e2e8f0\"/><path d=\"M415 20V175\" stroke=\"#e2e8f0\"/><path d=\"M460 20V175\" stroke=\"#e2e8f0\"/><path d=\"M505 20V175\" stroke=\"#e2e8f0\"/><path d=\"M550 20V175\" stroke=\"#e2e8f0\"/><path d=\"M595 20V175\" stroke=\"#e2e8f0\"/><path d=\"M640 20V175\" stroke=\"#e2e8f0\"/><path d=\"M685 20V175\" stroke=\"#e2e8f0\"/><path d=\"M100 175H685\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M100 20V175\" stroke=\"#e2e8f0\"/><path d=\"M100 175v5\" stroke=\"#334155\"/><text x=\"100\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">64</text><path d=\"M145 20V175\" stroke=\"#e2e8f0\"/><path d=\"M145 175v5\" stroke=\"#334155\"/><text x=\"145\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">65</text><path d=\"M190 20V175\" stroke=\"#e2e8f0\"/><path d=\"M190 175v5\" stroke=\"#334155\"/><text x=\"190\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">66</text><path d=\"M235 20V175\" stroke=\"#e2e8f0\"/><path d=\"M235 175v5\" stroke=\"#334155\"/><text x=\"235\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">67</text><path d=\"M280 20V175\" stroke=\"#e2e8f0\"/><path d=\"M280 175v5\" stroke=\"#334155\"/><text x=\"280\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">68</text><path d=\"M325 20V175\" stroke=\"#e2e8f0\"/><path d=\"M325 175v5\" stroke=\"#334155\"/><text x=\"325\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">69</text><path d=\"M370 20V175\" stroke=\"#e2e8f0\"/><path d=\"M370 175v5\" stroke=\"#334155\"/><text x=\"370\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">70</text><path d=\"M415 20V175\" stroke=\"#e2e8f0\"/><path d=\"M415 175v5\" stroke=\"#334155\"/><text x=\"415\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">71</text><path d=\"M460 20V175\" stroke=\"#e2e8f0\"/><path d=\"M460 175v5\" stroke=\"#334155\"/><text x=\"460\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">72</text><path d=\"M505 20V175\" stroke=\"#e2e8f0\"/><path d=\"M505 175v5\" stroke=\"#334155\"/><text x=\"505\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">73</text><path d=\"M550 20V175\" stroke=\"#e2e8f0\"/><path d=\"M550 175v5\" stroke=\"#334155\"/><text x=\"550\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">74</text><path d=\"M595 20V175\" stroke=\"#e2e8f0\"/><path d=\"M595 175v5\" stroke=\"#334155\"/><text x=\"595\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">75</text><path d=\"M640 20V175\" stroke=\"#e2e8f0\"/><path d=\"M640 175v5\" stroke=\"#334155\"/><text x=\"640\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">76</text><path d=\"M685 20V175\" stroke=\"#e2e8f0\"/><path d=\"M685 175v5\" stroke=\"#334155\"/><text x=\"685\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">77</text><text x=\"392.5\" y=\"215\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">Test score</text><text x=\"10\" y=\"59\" font-size=\"13\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"700\">Terry</text><path d=\"M235 52.0H280M505 52.0H640M235 43.0V61.0M640 43.0V61.0\" stroke=\"#475569\" stroke-width=\"2.4\" fill=\"none\"/><rect x=\"280\" y=\"34\" width=\"225\" height=\"36\" fill=\"#e2e8f0\" stroke=\"#475569\" stroke-width=\"2.4\"/><path d=\"M325 34V70\" stroke=\"#475569\" stroke-width=\"3\"/><text x=\"10\" y=\"129\" font-size=\"13\" fill=\"#ea580c\" text-anchor=\"start\" font-weight=\"700\">Kim</text><path d=\"M235 122.0H325M505 122.0H595M235 113.0V131.0M595 113.0V131.0\" stroke=\"#ea580c\" stroke-width=\"2.4\" fill=\"none\"/><rect x=\"325\" y=\"104\" width=\"180\" height=\"36\" fill=\"#ffedd5\" stroke=\"#ea580c\" stroke-width=\"2.4\"/><path d=\"M415 104V140\" stroke=\"#ea580c\" stroke-width=\"3\"/></svg>"
+                  }
                 },
                 {
                   "explain": "This is the first option.",
@@ -2133,21 +2136,21 @@
             "sourceQuestion": "Q24"
           },
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 280\" role=\"img\" aria-label=\"Terry's box plot and number line for drawing Kim's box plot\"><rect width=\"760\" height=\"280\" fill=\"white\"/><g stroke=\"#cbd5e1\" stroke-width=\"1\"><path d=\"M100 225H680\"/><path d=\"M120 205V235M160 205V235M200 205V235M240 205V235M280 205V235M320 205V235M360 205V235M400 205V235M440 205V235M480 205V235M520 205V235M560 205V235M600 205V235M640 205V235\"/></g><path d=\"M200 80H240M200 68V92M240 62H440V98H240ZM280 62V98M480 80H560M520 68V92\" fill=\"none\" stroke=\"#475569\" stroke-width=\"4\"/><g font-family=\"Arial\" font-size=\"17\" fill=\"#334155\"><text x=\"75\" y=\"86\">Terry</text><text x=\"75\" y=\"158\">Kim</text></g><g font-family=\"Arial\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"120\" y=\"255\">65</text><text x=\"160\" y=\"255\">66</text><text x=\"200\" y=\"255\">67</text><text x=\"240\" y=\"255\">68</text><text x=\"280\" y=\"255\">69</text><text x=\"320\" y=\"255\">70</text><text x=\"360\" y=\"255\">71</text><text x=\"400\" y=\"255\">72</text><text x=\"440\" y=\"255\">73</text><text x=\"480\" y=\"255\">74</text><text x=\"520\" y=\"255\">75</text><text x=\"560\" y=\"255\">76</text><text x=\"600\" y=\"255\">77</text></g><text x=\"385\" y=\"35\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">Test scores</text></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 230\" width=\"100%\" style=\"max-width:760px\" font-family=\"system-ui,sans-serif\"><rect width=\"760\" height=\"230\" fill=\"#fff\"/><path d=\"M100 20V175\" stroke=\"#e2e8f0\"/><path d=\"M145 20V175\" stroke=\"#e2e8f0\"/><path d=\"M190 20V175\" stroke=\"#e2e8f0\"/><path d=\"M235 20V175\" stroke=\"#e2e8f0\"/><path d=\"M280 20V175\" stroke=\"#e2e8f0\"/><path d=\"M325 20V175\" stroke=\"#e2e8f0\"/><path d=\"M370 20V175\" stroke=\"#e2e8f0\"/><path d=\"M415 20V175\" stroke=\"#e2e8f0\"/><path d=\"M460 20V175\" stroke=\"#e2e8f0\"/><path d=\"M505 20V175\" stroke=\"#e2e8f0\"/><path d=\"M550 20V175\" stroke=\"#e2e8f0\"/><path d=\"M595 20V175\" stroke=\"#e2e8f0\"/><path d=\"M640 20V175\" stroke=\"#e2e8f0\"/><path d=\"M685 20V175\" stroke=\"#e2e8f0\"/><path d=\"M100 175H685\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M100 20V175\" stroke=\"#e2e8f0\"/><path d=\"M100 175v5\" stroke=\"#334155\"/><text x=\"100\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">64</text><path d=\"M145 20V175\" stroke=\"#e2e8f0\"/><path d=\"M145 175v5\" stroke=\"#334155\"/><text x=\"145\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">65</text><path d=\"M190 20V175\" stroke=\"#e2e8f0\"/><path d=\"M190 175v5\" stroke=\"#334155\"/><text x=\"190\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">66</text><path d=\"M235 20V175\" stroke=\"#e2e8f0\"/><path d=\"M235 175v5\" stroke=\"#334155\"/><text x=\"235\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">67</text><path d=\"M280 20V175\" stroke=\"#e2e8f0\"/><path d=\"M280 175v5\" stroke=\"#334155\"/><text x=\"280\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">68</text><path d=\"M325 20V175\" stroke=\"#e2e8f0\"/><path d=\"M325 175v5\" stroke=\"#334155\"/><text x=\"325\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">69</text><path d=\"M370 20V175\" stroke=\"#e2e8f0\"/><path d=\"M370 175v5\" stroke=\"#334155\"/><text x=\"370\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">70</text><path d=\"M415 20V175\" stroke=\"#e2e8f0\"/><path d=\"M415 175v5\" stroke=\"#334155\"/><text x=\"415\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">71</text><path d=\"M460 20V175\" stroke=\"#e2e8f0\"/><path d=\"M460 175v5\" stroke=\"#334155\"/><text x=\"460\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">72</text><path d=\"M505 20V175\" stroke=\"#e2e8f0\"/><path d=\"M505 175v5\" stroke=\"#334155\"/><text x=\"505\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">73</text><path d=\"M550 20V175\" stroke=\"#e2e8f0\"/><path d=\"M550 175v5\" stroke=\"#334155\"/><text x=\"550\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">74</text><path d=\"M595 20V175\" stroke=\"#e2e8f0\"/><path d=\"M595 175v5\" stroke=\"#334155\"/><text x=\"595\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">75</text><path d=\"M640 20V175\" stroke=\"#e2e8f0\"/><path d=\"M640 175v5\" stroke=\"#334155\"/><text x=\"640\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">76</text><path d=\"M685 20V175\" stroke=\"#e2e8f0\"/><path d=\"M685 175v5\" stroke=\"#334155\"/><text x=\"685\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">77</text><text x=\"392.5\" y=\"215\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">Test score</text><text x=\"10\" y=\"59\" font-size=\"13\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"700\">Terry</text><path d=\"M235 52.0H280M505 52.0H640M235 43.0V61.0M640 43.0V61.0\" stroke=\"#475569\" stroke-width=\"2.4\" fill=\"none\"/><rect x=\"280\" y=\"34\" width=\"225\" height=\"36\" fill=\"#e2e8f0\" stroke=\"#475569\" stroke-width=\"2.4\"/><path d=\"M325 34V70\" stroke=\"#475569\" stroke-width=\"3\"/><text x=\"10\" y=\"129\" font-size=\"13\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"700\">Kim</text></svg>"
           }
         },
         {
           "id": "y12a-advanced-005-p264-q25",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "A survey was conducted where people were asked which of two brands of smartphones they preferred. 48% preferred Brand X and 52% preferred Brand Y. A graph displaying the data is to be included in a magazine article. The editor wishes to ensure that the graph is not misleading in any way. Which graph should the editor choose?",
+          "stem": "A survey was conducted where people were asked which of two brands of smartphones they preferred. 48% preferred Brand \\(X\\) and 52% preferred Brand Y. A graph displaying the data is to be included in a magazine article. The editor wishes to ensure that the graph is not misleading in any way. Which graph should the editor choose?",
           "hint": "A fair column graph should start its vertical axis at zero so a small difference is not visually exaggerated.",
           "parts": [
             {
               "id": "y12a-advanced-005-p264-q25",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "A survey found that 48% preferred Brand X and 52% preferred Brand Y. The editor wants a column graph that is not misleading. Which graph should be used?",
+              "stem": "A survey found that 48% preferred Brand \\(X\\) and 52% preferred Brand Y. The editor wants a column graph that is not misleading. Which graph should be used?",
               "options": [
                 "Graph A",
                 "Graph B",
@@ -2162,11 +2165,11 @@
                   "work": "\\(52\\%-48\\%=4\\text{ percentage points}\\)"
                 },
                 {
-                  "explain": "A vertical axis that starts at 46% makes the bars look very different even though the actual difference is small.",
-                  "work": "Truncated axis exaggerates the difference"
+                  "explain": "Graphs A and C start their vertical axes above zero (at \\(46\\) and \\(40\\)), which exaggerates the small difference. Graph D has a zero baseline but draws Brand Y’s column twice as wide, which also exaggerates it.",
+                  "work": "\\(\\text{A, C: truncated axis; D: unequal column widths}\\)"
                 },
                 {
-                  "explain": "Graph B starts at \\(0\\) and shows the bars on a full percentage scale, so it represents the comparison fairly.",
+                  "explain": "Graph B starts at \\(0\\) and uses equal column widths, so it represents the comparison fairly.",
                   "work": "\\(\\boxed{\\text{Graph B}}\\)"
                 }
               ],
@@ -2181,7 +2184,7 @@
             }
           ],
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 720 900\" role=\"img\" aria-label=\"Four bar chart designs comparing 48 percent Brand X and 52 percent Brand Y\"><rect width=\"720\" height=\"900\" fill=\"white\"/><text x=\"185\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"22\" font-weight=\"bold\">A</text><text x=\"185\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\">Survey results (%)</text><path fill=\"none\" d=\"M90 115V345H340\" stroke=\"#334155\" stroke-width=\"2\"/><path fill=\"none\" d=\"M90 345.0H340\" stroke=\"#e2e8f0\"/><text x=\"80\" y=\"350.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">46</text><path fill=\"none\" d=\"M90 287.5H340\" stroke=\"#e2e8f0\"/><text x=\"80\" y=\"292.5\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">49</text><path fill=\"none\" d=\"M90 230.0H340\" stroke=\"#e2e8f0\"/><text x=\"80\" y=\"235.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">52</text><path fill=\"none\" d=\"M90 172.5H340\" stroke=\"#e2e8f0\"/><text x=\"80\" y=\"177.5\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">55</text><path fill=\"none\" d=\"M90 115.0H340\" stroke=\"#e2e8f0\"/><text x=\"80\" y=\"120.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">58</text><rect x=\"140\" y=\"306.7\" width=\"58\" height=\"38.3\" fill=\"#cbd5e1\" stroke=\"#475569\"/><text x=\"169\" y=\"368\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Brand X</text><rect x=\"245\" y=\"230.0\" width=\"58\" height=\"115.0\" fill=\"#cbd5e1\" stroke=\"#475569\"/><text x=\"274\" y=\"368\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Brand Y</text><text x=\"530\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"22\" font-weight=\"bold\">B</text><text x=\"530\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\">Survey results (%)</text><path fill=\"none\" d=\"M435 115V345H685\" stroke=\"#334155\" stroke-width=\"2\"/><path fill=\"none\" d=\"M435 345.0H685\" stroke=\"#e2e8f0\"/><text x=\"425\" y=\"350.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">0</text><path fill=\"none\" d=\"M435 287.5H685\" stroke=\"#e2e8f0\"/><text x=\"425\" y=\"292.5\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">15</text><path fill=\"none\" d=\"M435 230.0H685\" stroke=\"#e2e8f0\"/><text x=\"425\" y=\"235.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">30</text><path fill=\"none\" d=\"M435 172.5H685\" stroke=\"#e2e8f0\"/><text x=\"425\" y=\"177.5\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">45</text><path fill=\"none\" d=\"M435 115.0H685\" stroke=\"#e2e8f0\"/><text x=\"425\" y=\"120.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">60</text><rect x=\"485\" y=\"161.0\" width=\"58\" height=\"184.0\" fill=\"#cbd5e1\" stroke=\"#475569\"/><text x=\"514\" y=\"368\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Brand X</text><rect x=\"590\" y=\"145.7\" width=\"58\" height=\"199.3\" fill=\"#cbd5e1\" stroke=\"#475569\"/><text x=\"619\" y=\"368\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Brand Y</text><text x=\"185\" y=\"483\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"22\" font-weight=\"bold\">C</text><text x=\"185\" y=\"510\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\">Survey results (%)</text><path fill=\"none\" d=\"M90 540V770H340\" stroke=\"#334155\" stroke-width=\"2\"/><path fill=\"none\" d=\"M90 770.0H340\" stroke=\"#e2e8f0\"/><text x=\"80\" y=\"775.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">46</text><path fill=\"none\" d=\"M90 712.5H340\" stroke=\"#e2e8f0\"/><text x=\"80\" y=\"717.5\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">49</text><path fill=\"none\" d=\"M90 655.0H340\" stroke=\"#e2e8f0\"/><text x=\"80\" y=\"660.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">52</text><path fill=\"none\" d=\"M90 597.5H340\" stroke=\"#e2e8f0\"/><text x=\"80\" y=\"602.5\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">55</text><path fill=\"none\" d=\"M90 540.0H340\" stroke=\"#e2e8f0\"/><text x=\"80\" y=\"545.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">58</text><rect x=\"140\" y=\"731.7\" width=\"58\" height=\"38.3\" fill=\"#cbd5e1\" stroke=\"#475569\"/><text x=\"169\" y=\"793\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Brand X</text><rect x=\"245\" y=\"655.0\" width=\"58\" height=\"115.0\" fill=\"#cbd5e1\" stroke=\"#475569\"/><text x=\"274\" y=\"793\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Brand Y</text><text x=\"530\" y=\"483\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"22\" font-weight=\"bold\">D</text><text x=\"530\" y=\"510\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\">Survey results (%)</text><path fill=\"none\" d=\"M435 540V770H685\" stroke=\"#334155\" stroke-width=\"2\"/><path fill=\"none\" d=\"M435 770.0H685\" stroke=\"#e2e8f0\"/><text x=\"425\" y=\"775.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">0</text><path fill=\"none\" d=\"M435 712.5H685\" stroke=\"#e2e8f0\"/><text x=\"425\" y=\"717.5\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">15</text><path fill=\"none\" d=\"M435 655.0H685\" stroke=\"#e2e8f0\"/><text x=\"425\" y=\"660.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">30</text><path fill=\"none\" d=\"M435 597.5H685\" stroke=\"#e2e8f0\"/><text x=\"425\" y=\"602.5\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">45</text><path fill=\"none\" d=\"M435 540.0H685\" stroke=\"#e2e8f0\"/><text x=\"425\" y=\"545.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">60</text><rect x=\"485\" y=\"586.0\" width=\"58\" height=\"184.0\" fill=\"#cbd5e1\" stroke=\"#475569\"/><text x=\"514\" y=\"793\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Brand X</text><rect x=\"590\" y=\"570.7\" width=\"58\" height=\"199.3\" fill=\"#cbd5e1\" stroke=\"#475569\"/><text x=\"619\" y=\"793\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Brand Y</text></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 520\" width=\"100%\" style=\"max-width:760px\" font-family=\"system-ui,sans-serif\"><rect width=\"760\" height=\"520\" fill=\"#fff\"/><text x=\"190.0\" y=\"28\" font-size=\"16\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"700\">A</text><text x=\"190.0\" y=\"44\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">Survey results (%)</text><path d=\"M60 220.0H320\" stroke=\"#e2e8f0\"/><text x=\"54\" y=\"224.0\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\" font-weight=\"400\">46</text><path d=\"M60 177.5H320\" stroke=\"#e2e8f0\"/><text x=\"54\" y=\"181.5\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\" font-weight=\"400\">49</text><path d=\"M60 135.0H320\" stroke=\"#e2e8f0\"/><text x=\"54\" y=\"139.0\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\" font-weight=\"400\">52</text><path d=\"M60 92.5H320\" stroke=\"#e2e8f0\"/><text x=\"54\" y=\"96.5\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\" font-weight=\"400\">55</text><path d=\"M60 50.0H320\" stroke=\"#e2e8f0\"/><text x=\"54\" y=\"54.0\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\" font-weight=\"400\">58</text><path d=\"M60 50V220H320\" stroke=\"#334155\" stroke-width=\"1.6\" fill=\"none\"/><rect x=\"118.0\" y=\"191.7\" width=\"40\" height=\"28.3\" fill=\"#cbd5e1\" stroke=\"#64748b\"/><text x=\"138.0\" y=\"236\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">Brand X</text><rect x=\"222.0\" y=\"135.0\" width=\"40\" height=\"85.0\" fill=\"#cbd5e1\" stroke=\"#64748b\"/><text x=\"242.0\" y=\"236\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">Brand Y</text><text x=\"560.0\" y=\"28\" font-size=\"16\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"700\">B</text><text x=\"560.0\" y=\"44\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">Survey results (%)</text><path d=\"M430 220.0H690\" stroke=\"#e2e8f0\"/><text x=\"424\" y=\"224.0\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\" font-weight=\"400\">0</text><path d=\"M430 177.5H690\" stroke=\"#e2e8f0\"/><text x=\"424\" y=\"181.5\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\" font-weight=\"400\">15</text><path d=\"M430 135.0H690\" stroke=\"#e2e8f0\"/><text x=\"424\" y=\"139.0\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\" font-weight=\"400\">30</text><path d=\"M430 92.5H690\" stroke=\"#e2e8f0\"/><text x=\"424\" y=\"96.5\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\" font-weight=\"400\">45</text><path d=\"M430 50.0H690\" stroke=\"#e2e8f0\"/><text x=\"424\" y=\"54.0\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\" font-weight=\"400\">60</text><path d=\"M430 50V220H690\" stroke=\"#334155\" stroke-width=\"1.6\" fill=\"none\"/><rect x=\"488.0\" y=\"84.0\" width=\"40\" height=\"136.0\" fill=\"#cbd5e1\" stroke=\"#64748b\"/><text x=\"508.0\" y=\"236\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">Brand X</text><rect x=\"592.0\" y=\"72.7\" width=\"40\" height=\"147.3\" fill=\"#cbd5e1\" stroke=\"#64748b\"/><text x=\"612.0\" y=\"236\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">Brand Y</text><text x=\"190.0\" y=\"278\" font-size=\"16\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"700\">C</text><text x=\"190.0\" y=\"294\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">Survey results (%)</text><path d=\"M60 470.0H320\" stroke=\"#e2e8f0\"/><text x=\"54\" y=\"474.0\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\" font-weight=\"400\">40</text><path d=\"M60 427.5H320\" stroke=\"#e2e8f0\"/><text x=\"54\" y=\"431.5\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\" font-weight=\"400\">44</text><path d=\"M60 385.0H320\" stroke=\"#e2e8f0\"/><text x=\"54\" y=\"389.0\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\" font-weight=\"400\">48</text><path d=\"M60 342.5H320\" stroke=\"#e2e8f0\"/><text x=\"54\" y=\"346.5\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\" font-weight=\"400\">52</text><path d=\"M60 300.0H320\" stroke=\"#e2e8f0\"/><text x=\"54\" y=\"304.0\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\" font-weight=\"400\">56</text><path d=\"M60 300V470H320\" stroke=\"#334155\" stroke-width=\"1.6\" fill=\"none\"/><rect x=\"118.0\" y=\"385.0\" width=\"40\" height=\"85.0\" fill=\"#cbd5e1\" stroke=\"#64748b\"/><text x=\"138.0\" y=\"486\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">Brand X</text><rect x=\"222.0\" y=\"342.5\" width=\"40\" height=\"127.5\" fill=\"#cbd5e1\" stroke=\"#64748b\"/><text x=\"242.0\" y=\"486\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">Brand Y</text><text x=\"560.0\" y=\"278\" font-size=\"16\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"700\">D</text><text x=\"560.0\" y=\"294\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">Survey results (%)</text><path d=\"M430 470.0H690\" stroke=\"#e2e8f0\"/><text x=\"424\" y=\"474.0\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\" font-weight=\"400\">0</text><path d=\"M430 427.5H690\" stroke=\"#e2e8f0\"/><text x=\"424\" y=\"431.5\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\" font-weight=\"400\">15</text><path d=\"M430 385.0H690\" stroke=\"#e2e8f0\"/><text x=\"424\" y=\"389.0\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\" font-weight=\"400\">30</text><path d=\"M430 342.5H690\" stroke=\"#e2e8f0\"/><text x=\"424\" y=\"346.5\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\" font-weight=\"400\">45</text><path d=\"M430 300.0H690\" stroke=\"#e2e8f0\"/><text x=\"424\" y=\"304.0\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\" font-weight=\"400\">60</text><path d=\"M430 300V470H690\" stroke=\"#334155\" stroke-width=\"1.6\" fill=\"none\"/><rect x=\"488.0\" y=\"334.0\" width=\"40\" height=\"136.0\" fill=\"#cbd5e1\" stroke=\"#64748b\"/><text x=\"508.0\" y=\"486\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">Brand X</text><rect x=\"562.0\" y=\"322.7\" width=\"100\" height=\"147.3\" fill=\"#cbd5e1\" stroke=\"#64748b\"/><text x=\"612.0\" y=\"486\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"400\">Brand Y</text></svg>"
           },
           "timeLimit": 60,
           "xp": 1,
@@ -2196,14 +2199,14 @@
           "id": "y12a-advanced-005-p264-q26",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "The July sale prices for properties in a suburb were $552 000, $595 000, $607 000, $607 000, $682 000 and $685 000. On 1 August, another property in the same suburb was sold for over one million dollars. If this property had been sold in July, what effect would it have had on the mean and median sale prices for July?",
+          "stem": "The July sale prices for properties in a suburb were \\(\\$552 000\\), \\(\\$595 000\\), \\(\\$607 000\\), \\(\\$607 000\\), \\(\\$682 000\\) and \\(\\$685 000\\). On 1 August, another property in the same suburb was sold for over one million dollars. If this property had been sold in July, what effect would it have had on the mean and median sale prices for July?",
           "hint": "Place the very large value at the end of the ordered data. Check which middle value(s) determine the median and how the total changes.",
           "parts": [
             {
               "id": "y12a-advanced-005-p264-q26",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "The July sale prices for properties in a suburb were $552,000, $595,000, $607,000, $607,000, $682,000 and $685,000. A further property in the suburb sold for over $1,000,000. If it had been sold in July, what effect would it have had on the mean and median sale prices?",
+              "stem": "The July sale prices for properties in a suburb were \\(\\$552,000\\), \\(\\$595,000\\), \\(\\$607,000\\), \\(\\$607,000\\), \\(\\$682,000\\) and \\(\\$685,000\\). A further property in the suburb sold for over \\(\\$1,000,000\\). If it had been sold in July, what effect would it have had on the mean and median sale prices?",
               "options": [
                 "The mean changes and the median stays the same",
                 "Both the mean and median change",
@@ -2214,12 +2217,12 @@
               "hint": "Insert the new high value into the ordered list. Compare the new middle value with the original median, and note its effect on the total.",
               "steps": [
                 {
-                  "explain": "The original six prices have middle values $607,000 and $607,000, so the median is $607,000.",
+                  "explain": "The original six prices have middle values \\(\\$607,000\\) and \\(\\$607,000\\), so the median is \\(\\$607,000\\).",
                   "work": "\\(\\text{Original median}=\\frac{607000+607000}{2}=607000\\)"
                 },
                 {
-                  "explain": "A seventh price above $1,000,000 goes at the end. The fourth value is still $607,000, so the median is unchanged.",
-                  "work": "New median = 4th value = $607,000"
+                  "explain": "A seventh price above \\(\\$1,000,000\\) goes at the end. The fourth value is still \\(\\$607,000\\), so the median is unchanged.",
+                  "work": "New median = 4th value = \\(\\$607,000\\)"
                 },
                 {
                   "explain": "The new price is much larger than the previous prices, so it increases the total and therefore the mean.",
@@ -2267,7 +2270,7 @@
                 "18",
                 "26"
               ],
-              "answer": 2,
+              "answer": 3,
               "hint": "Find the total of the original \\(10\\) scores and the new \\(12\\) scores. Subtract to get the sum of the two added scores.",
               "steps": [
                 {
@@ -2306,14 +2309,14 @@
           "id": "y12a-advanced-005-p265-q33",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "Christina has completed three Mathematics tests. Her mean mark is 72%. What mark (out of \\(100)\\) does she have to get in her next test to increase her mean mark to 73%?",
+          "stem": "Christina has completed three Mathematics tests. Her mean mark is \\(72\\%\\). What mark (out of \\(100\\)) does she have to get in her next test to increase her mean mark to \\(73\\%\\)?",
           "hint": "Calculate the total marks needed after four tests and subtract the marks she already has.",
           "parts": [
             {
               "id": "y12a-advanced-005-p265-q33",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Christina has completed three Mathematics tests. Her mean mark is 72%. What mark out of \\(100\\) does she need in her next test to increase her mean mark to 73%?",
+              "stem": "Christina has completed three Mathematics tests. Her mean mark is \\(72\\%\\). What mark (out of \\(100\\)) does she have to get in her next test to increase her mean mark to \\(73\\%\\)?",
               "options": [
                 "73",
                 "75",
@@ -2359,14 +2362,14 @@
           "id": "y12a-advanced-005-p265-q35",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "This set of data is arranged in order from smallest to largest: \\(5, 6, 11, x, 13, 18, 25\\). The range is six less than twice the value of x. Which one of the following is true?",
-          "hint": "First form an equation from the range. Once x is known, read the median and quartiles from the ordered list.",
+          "stem": "This set of data is arranged in order from smallest to largest: \\(5, 6, 11, x, 13, 18, 25\\). The range is six less than twice the value of \\(x\\). Which one of the following is true?",
+          "hint": "First form an equation from the range. Once \\(x\\) is known, read the median and quartiles from the ordered list.",
           "parts": [
             {
               "id": "y12a-advanced-005-p265-q35",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "This set of data is arranged in order from smallest to largest: \\(5, 6, 11, x, 13, 18, 25\\). The range is six less than twice the value of x. Which statement is true?",
+              "stem": "This set of data is arranged in order from smallest to largest: \\(5, 6, 11, x, 13, 18, 25\\). The range is six less than twice the value of \\(x\\). Which statement is true?",
               "options": [
                 "The median is \\(12\\) and the interquartile range is \\(7\\)",
                 "The median is \\(12\\) and the interquartile range is \\(12\\)",
@@ -2374,18 +2377,18 @@
                 "The median is \\(13\\) and the interquartile range is \\(12\\)"
               ],
               "answer": 3,
-              "hint": "Use the range equation to find x. Then read the median and quartiles from the ordered seven values.",
+              "hint": "Use the range equation to find \\(x\\). Then read the median and quartiles from the ordered seven values.",
               "steps": [
                 {
-                  "explain": "The range is maximum minus minimum: \\(25-5=20\\). It is six less than twice x, so \\(20=2x-6\\).",
+                  "explain": "The range is maximum minus minimum: \\(25-5=20\\). It is six less than twice \\(x\\), so \\(20=2x-6\\).",
                   "work": "\\(20=2x-6\\)"
                 },
                 {
-                  "explain": "Solve for x.",
+                  "explain": "Solve for \\(x\\).",
                   "work": "\\(2x=26\\Rightarrow x=13\\)"
                 },
                 {
-                  "explain": "The ordered values are \\(5,6,11,13,13,18,25\\). The median is the \\(4th\\) value, \\(13\\). \\(Q1\\) is \\(6\\) and \\(Q3\\) is \\(18\\).",
+                  "explain": "The ordered values are \\(5,6,11,13,13,18,25\\). The median is the \\(4\\)th value, \\(13\\). \\(Q_1\\) is \\(6\\) and \\(Q_3\\) is \\(18\\).",
                   "work": "\\(Q_1=6,\\quad Q_2=13,\\quad Q_3=18\\)"
                 },
                 {
@@ -2439,7 +2442,7 @@
                 },
                 {
                   "explain": "The leaf \\(2\\) appears four times in the stem \\(5\\) row, more often than any other travel time.",
-                  "work": "52 minutes occurs 4 times"
+                  "work": "\\(\\text{52 minutes occurs 4 times}\\)"
                 },
                 {
                   "explain": "So the modal travel time is \\(52\\) minutes.",
@@ -2467,7 +2470,7 @@
                 "\\(55\\) minutes"
               ],
               "answer": 1,
-              "hint": "There are \\(30\\) values on the “Without tolls” side. Average the \\(15th\\) and \\(16th\\) ordered values.",
+              "hint": "There are \\(30\\) values on the “Without tolls” side. Average the \\(15\\)th and \\(16\\)th ordered values.",
               "steps": [
                 {
                   "explain": "There are \\(30\\) travel times. For an even number of values, the median is the mean of the two middle values.",
@@ -2529,7 +2532,7 @@
             }
           ],
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 780 470\" role=\"img\" aria-label=\"Back-to-back stem-and-leaf plot of weekly travel times without and with tolls\"><rect width=\"780\" height=\"470\" fill=\"white\"/><text x=\"260\" y=\"40\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"20\" font-style=\"italic\">Without tolls</text><text x=\"525\" y=\"40\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"20\" font-style=\"italic\">With tolls</text><path fill=\"none\" d=\"M390 65V385\" stroke=\"#334155\" stroke-width=\"2\"/><g font-family=\"Arial\" font-size=\"19\" fill=\"#172554\" text-anchor=\"middle\"><text x=\"390\" y=\"110\">3</text><text x=\"390\" y=\"155\">4</text><text x=\"390\" y=\"200\">5</text><text x=\"390\" y=\"245\">6</text><text x=\"390\" y=\"290\">7</text><text x=\"390\" y=\"335\">8</text><text x=\"390\" y=\"380\">9</text></g><g font-family=\"monospace\" font-size=\"16\" fill=\"#172554\" text-anchor=\"end\"><text x=\"370\" y=\"110\">9</text><text x=\"370\" y=\"155\">9 9 8 7 7 6 5 5 4 4 3 2 0</text><text x=\"370\" y=\"200\">9 8 7 5 4 3 3 3 2 2 2 2 1 1 0</text><text x=\"370\" y=\"245\">1</text></g><g font-family=\"monospace\" font-size=\"16\" fill=\"#172554\"><text x=\"410\" y=\"110\">5 8 9 9</text><text x=\"410\" y=\"155\">0 1 2 6 7 7 8 8 8 9</text><text x=\"410\" y=\"200\">2 4 4 5 6 8 9</text><text x=\"410\" y=\"245\">1 3 5 7</text><text x=\"410\" y=\"290\">0 2 8</text><text x=\"410\" y=\"335\">2</text><text x=\"410\" y=\"380\">0</text></g><text x=\"390\" y=\"435\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\">Key: 5 | 2 = 52 minutes</text></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 348\" width=\"100%\" style=\"max-width:760px\" font-family=\"system-ui,sans-serif\"><rect width=\"760\" height=\"348\" fill=\"#fff\"/><text x=\"210.0\" y=\"28\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"700\">Without tolls</text><text x=\"550.0\" y=\"28\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"700\">With tolls</text><path d=\"M354.0 40V298M406.0 40V298\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"380.0\" y=\"64\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"700\">3</text><text x=\"344.0\" y=\"64\" font-size=\"14\" text-anchor=\"end\" font-family=\"ui-monospace,monospace\" letter-spacing=\"4\" fill=\"#1e293b\">9</text><text x=\"416.0\" y=\"64\" font-size=\"14\" text-anchor=\"start\" font-family=\"ui-monospace,monospace\" letter-spacing=\"4\" fill=\"#1e293b\">5899</text><text x=\"380.0\" y=\"98\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"700\">4</text><text x=\"344.0\" y=\"98\" font-size=\"14\" text-anchor=\"end\" font-family=\"ui-monospace,monospace\" letter-spacing=\"4\" fill=\"#1e293b\">9987765544320</text><text x=\"416.0\" y=\"98\" font-size=\"14\" text-anchor=\"start\" font-family=\"ui-monospace,monospace\" letter-spacing=\"4\" fill=\"#1e293b\">0126778889</text><text x=\"380.0\" y=\"132\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"700\">5</text><text x=\"344.0\" y=\"132\" font-size=\"14\" text-anchor=\"end\" font-family=\"ui-monospace,monospace\" letter-spacing=\"4\" fill=\"#1e293b\">987543332222110</text><text x=\"416.0\" y=\"132\" font-size=\"14\" text-anchor=\"start\" font-family=\"ui-monospace,monospace\" letter-spacing=\"4\" fill=\"#1e293b\">2445689</text><text x=\"380.0\" y=\"166\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"700\">6</text><text x=\"344.0\" y=\"166\" font-size=\"14\" text-anchor=\"end\" font-family=\"ui-monospace,monospace\" letter-spacing=\"4\" fill=\"#1e293b\">1</text><text x=\"416.0\" y=\"166\" font-size=\"14\" text-anchor=\"start\" font-family=\"ui-monospace,monospace\" letter-spacing=\"4\" fill=\"#1e293b\">1357</text><text x=\"380.0\" y=\"200\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"700\">7</text><text x=\"344.0\" y=\"200\" font-size=\"14\" text-anchor=\"end\" font-family=\"ui-monospace,monospace\" letter-spacing=\"4\" fill=\"#1e293b\"></text><text x=\"416.0\" y=\"200\" font-size=\"14\" text-anchor=\"start\" font-family=\"ui-monospace,monospace\" letter-spacing=\"4\" fill=\"#1e293b\">028</text><text x=\"380.0\" y=\"234\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"700\">8</text><text x=\"344.0\" y=\"234\" font-size=\"14\" text-anchor=\"end\" font-family=\"ui-monospace,monospace\" letter-spacing=\"4\" fill=\"#1e293b\"></text><text x=\"416.0\" y=\"234\" font-size=\"14\" text-anchor=\"start\" font-family=\"ui-monospace,monospace\" letter-spacing=\"4\" fill=\"#1e293b\">2</text><text x=\"380.0\" y=\"268\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"700\">9</text><text x=\"344.0\" y=\"268\" font-size=\"14\" text-anchor=\"end\" font-family=\"ui-monospace,monospace\" letter-spacing=\"4\" fill=\"#1e293b\"></text><text x=\"416.0\" y=\"268\" font-size=\"14\" text-anchor=\"start\" font-family=\"ui-monospace,monospace\" letter-spacing=\"4\" fill=\"#1e293b\">0</text><text x=\"380.0\" y=\"330\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">Key: 5 | 2 means 52 minutes</text></svg>"
           },
           "timeLimit": 60,
           "xp": 1,
@@ -2559,19 +2562,19 @@
                 "\\(470\\) televisions"
               ],
               "answer": 0,
-              "hint": "The maximum cumulative frequency is \\(52\\). Find \\(Q1\\) at cumulative frequency \\(13\\) and \\(Q3\\) at \\(39\\).",
+              "hint": "The maximum cumulative frequency is \\(52\\). Find \\(Q_1\\) at cumulative frequency \\(13\\) and \\(Q_3\\) at \\(39\\).",
               "steps": [
                 {
                   "explain": "There are \\(52\\) weeks. The lower quartile is at 52÷4=13 and the upper quartile at 3×13=39.",
                   "work": "\\(Q_1: CF=13;\\quad Q_3: CF=39\\)"
                 },
                 {
-                  "explain": "Read from the graph: \\(Q1\\) is about \\(190\\) televisions and \\(Q3\\) about \\(470\\) televisions.",
-                  "work": "\\(Q_1\\approx190,\\quad Q_3\\approx470\\)"
+                  "explain": "Read from the polygon. \\(Q_1\\) lies where \\(CF=13\\), between \\((100,7)\\) and \\((200,22)\\): about \\(140\\). \\(Q_3\\) lies where \\(CF=39\\), between \\((400,36)\\) and \\((500,52)\\): about \\(419\\).",
+                  "work": "\\(Q_1\\approx140,\\quad Q_3\\approx419\\)"
                 },
                 {
-                  "explain": "Subtract the quartiles.",
-                  "work": "\\(IQR\\approx470-190=\\boxed{280}\\)"
+                  "explain": "Subtract the quartiles (the answer is approximate because it is read from a graph).",
+                  "work": "\\(IQR\\approx419-140\\approx\\boxed{280}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -2621,7 +2624,7 @@
             }
           ],
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 430\" role=\"img\" aria-label=\"Cumulative frequency histogram and ogive for weekly television sales\"><rect width=\"700\" height=\"430\" fill=\"white\"/><text x=\"350\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">Television sales for 2012</text><path fill=\"none\" d=\"M75 350V50M75 350H630\" stroke=\"#334155\" stroke-width=\"2\"/><g stroke=\"#e2e8f0\"><path d=\"M75 292H630M75 234H630M75 176H630M75 118H630M75 60H630\"/><path d=\"M167 50V350M259 50V350M351 50V350M443 50V350M535 50V350\"/></g><g fill=\"#d1d5db\" stroke=\"#475569\" stroke-width=\"2\"><rect x=\"100\" y=\"310\" width=\"92\" height=\"40\"/><rect x=\"192\" y=\"223\" width=\"92\" height=\"87\"/><rect x=\"284\" y=\"189\" width=\"92\" height=\"34\"/><rect x=\"376\" y=\"143\" width=\"92\" height=\"46\"/><rect x=\"468\" y=\"49\" width=\"92\" height=\"94\"/></g><polyline points=\"146,310 238,223 330,189 422,143 514,49\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><g font-family=\"Arial\" font-size=\"13\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"146\" y=\"375\">100</text><text x=\"238\" y=\"375\">200</text><text x=\"330\" y=\"375\">300</text><text x=\"422\" y=\"375\">400</text><text x=\"514\" y=\"375\">500</text><text x=\"590\" y=\"375\">600</text><text x=\"350\" y=\"405\">Number sold in a week (class centre)</text><text x=\"60\" y=\"354\">0</text><text x=\"60\" y=\"296\">10</text><text x=\"60\" y=\"238\">20</text><text x=\"60\" y=\"180\">30</text><text x=\"60\" y=\"122\">40</text><text x=\"60\" y=\"64\">50</text></g><text x=\"22\" y=\"220\" transform=\"rotate(-90 22 220)\" font-family=\"Arial\" font-size=\"13\">Cumulative frequency</text></svg>"
+            "svg": "<svg width=\"100%\" style=\"max-width:700px\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 430\" role=\"img\" aria-label=\"Cumulative frequency histogram and ogive for weekly television sales\"><rect width=\"700\" height=\"430\" fill=\"white\"/><text x=\"350\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"18\" font-weight=\"bold\">Television sales for 2012</text><path fill=\"none\" d=\"M75 350V50M75 350H630\" stroke=\"#334155\" stroke-width=\"2\"/><g stroke=\"#e2e8f0\"><path d=\"M75 292H630M75 234H630M75 176H630M75 118H630M75 60H630\"/><path d=\"M167 50V350M259 50V350M351 50V350M443 50V350M535 50V350\"/></g><g fill=\"#d1d5db\" stroke=\"#475569\" stroke-width=\"2\"><rect x=\"100\" y=\"310\" width=\"92\" height=\"40\"/><rect x=\"192\" y=\"223\" width=\"92\" height=\"87\"/><rect x=\"284\" y=\"189\" width=\"92\" height=\"34\"/><rect x=\"376\" y=\"143\" width=\"92\" height=\"46\"/><rect x=\"468\" y=\"49\" width=\"92\" height=\"94\"/></g><polyline points=\"146,310 238,223 330,189 422,143 514,49\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><g font-family=\"Arial\" font-size=\"13\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"146\" y=\"375\">100</text><text x=\"238\" y=\"375\">200</text><text x=\"330\" y=\"375\">300</text><text x=\"422\" y=\"375\">400</text><text x=\"514\" y=\"375\">500</text><text x=\"590\" y=\"375\">600</text><text x=\"350\" y=\"405\">Number sold in a week (class centre)</text><text x=\"60\" y=\"354\">0</text><text x=\"60\" y=\"296\">10</text><text x=\"60\" y=\"238\">20</text><text x=\"60\" y=\"180\">30</text><text x=\"60\" y=\"122\">40</text><text x=\"60\" y=\"64\">50</text></g><text x=\"22\" y=\"220\" transform=\"rotate(-90 22 220)\" font-family=\"Arial\" font-size=\"13\">Cumulative frequency</text></svg>"
           },
           "timeLimit": 60,
           "xp": 1,
@@ -2651,14 +2654,14 @@
                 "\\(85\\) marks"
               ],
               "answer": 0,
-              "hint": "Read the lower and upper edges of the English box; these are \\(Q1\\) and \\(Q3\\).",
+              "hint": "Read the lower and upper edges of the English box; these are \\(Q_1\\) and \\(Q_3\\).",
               "steps": [
                 {
                   "explain": "From the English box plot, the lower quartile is \\(50\\) and the upper quartile is \\(80\\).",
                   "work": "\\(Q_1=50,\\quad Q_3=80\\)"
                 },
                 {
-                  "explain": "The interquartile range is \\(Q3\\) minus \\(Q1\\).",
+                  "explain": "The interquartile range is \\(Q_3\\) minus \\(Q_1\\).",
                   "work": "\\(IQR=80-50\\)"
                 },
                 {
@@ -2713,7 +2716,7 @@
             }
           ],
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 250\" role=\"img\" aria-label=\"English and Mathematics test box plots\"><rect width=\"760\" height=\"250\" fill=\"white\"/><g stroke=\"#e2e8f0\"><path d=\"M80 195H700\"/><path d=\"M110 40V200M170 40V200M230 40V200M290 40V200M350 40V200M410 40V200M470 40V200M530 40V200M590 40V200M650 40V200\"/></g><path d=\"M140 80H680M140 72V88M380 62H560V98H380ZM500 62V98M560 80H650M650 72V88\" fill=\"none\" stroke=\"#475569\" stroke-width=\"3\"/><path d=\"M380 145H620M380 137V153M470 127H560V163H470ZM500 127V163M560 145H620M620 137V153\" fill=\"none\" stroke=\"#475569\" stroke-width=\"3\"/><g font-family=\"Arial\" font-size=\"15\" fill=\"#334155\"><text x=\"25\" y=\"85\">English</text><text x=\"25\" y=\"150\">Mathematics</text></g><g font-family=\"Arial\" font-size=\"13\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"110\" y=\"220\">0</text><text x=\"170\" y=\"220\">10</text><text x=\"230\" y=\"220\">20</text><text x=\"290\" y=\"220\">30</text><text x=\"350\" y=\"220\">40</text><text x=\"410\" y=\"220\">50</text><text x=\"470\" y=\"220\">60</text><text x=\"530\" y=\"220\">70</text><text x=\"590\" y=\"220\">80</text><text x=\"650\" y=\"220\">90</text><text x=\"700\" y=\"220\">100</text></g></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 230\" width=\"100%\" style=\"max-width:760px\" font-family=\"system-ui,sans-serif\"><rect width=\"760\" height=\"230\" fill=\"#fff\"/><path d=\"M110.0 20V175\" stroke=\"#e2e8f0\"/><path d=\"M172.0 20V175\" stroke=\"#e2e8f0\"/><path d=\"M234.0 20V175\" stroke=\"#e2e8f0\"/><path d=\"M296.0 20V175\" stroke=\"#e2e8f0\"/><path d=\"M358.0 20V175\" stroke=\"#e2e8f0\"/><path d=\"M420.0 20V175\" stroke=\"#e2e8f0\"/><path d=\"M482.0 20V175\" stroke=\"#e2e8f0\"/><path d=\"M544.0 20V175\" stroke=\"#e2e8f0\"/><path d=\"M606.0 20V175\" stroke=\"#e2e8f0\"/><path d=\"M668.0 20V175\" stroke=\"#e2e8f0\"/><path d=\"M730.0 20V175\" stroke=\"#e2e8f0\"/><path d=\"M110.0 175H730.0\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M110.0 20V175\" stroke=\"#e2e8f0\"/><path d=\"M110.0 175v5\" stroke=\"#334155\"/><text x=\"110.0\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">0</text><path d=\"M172.0 20V175\" stroke=\"#e2e8f0\"/><path d=\"M172.0 175v5\" stroke=\"#334155\"/><text x=\"172.0\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">10</text><path d=\"M234.0 20V175\" stroke=\"#e2e8f0\"/><path d=\"M234.0 175v5\" stroke=\"#334155\"/><text x=\"234.0\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">20</text><path d=\"M296.0 20V175\" stroke=\"#e2e8f0\"/><path d=\"M296.0 175v5\" stroke=\"#334155\"/><text x=\"296.0\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">30</text><path d=\"M358.0 20V175\" stroke=\"#e2e8f0\"/><path d=\"M358.0 175v5\" stroke=\"#334155\"/><text x=\"358.0\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">40</text><path d=\"M420.0 20V175\" stroke=\"#e2e8f0\"/><path d=\"M420.0 175v5\" stroke=\"#334155\"/><text x=\"420.0\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">50</text><path d=\"M482.0 20V175\" stroke=\"#e2e8f0\"/><path d=\"M482.0 175v5\" stroke=\"#334155\"/><text x=\"482.0\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">60</text><path d=\"M544.0 20V175\" stroke=\"#e2e8f0\"/><path d=\"M544.0 175v5\" stroke=\"#334155\"/><text x=\"544.0\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">70</text><path d=\"M606.0 20V175\" stroke=\"#e2e8f0\"/><path d=\"M606.0 175v5\" stroke=\"#334155\"/><text x=\"606.0\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">80</text><path d=\"M668.0 20V175\" stroke=\"#e2e8f0\"/><path d=\"M668.0 175v5\" stroke=\"#334155\"/><text x=\"668.0\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">90</text><path d=\"M730.0 20V175\" stroke=\"#e2e8f0\"/><path d=\"M730.0 175v5\" stroke=\"#334155\"/><text x=\"730.0\" y=\"194\" font-size=\"11.5\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">100</text><text x=\"420.0\" y=\"215\" font-size=\"12\" fill=\"#64748b\" text-anchor=\"middle\" font-weight=\"400\">Marks</text><text x=\"10\" y=\"59\" font-size=\"13\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"700\">English</text><path d=\"M172.0 52.0H420.0M606.0 52.0H699.0M172.0 43.0V61.0M699.0 43.0V61.0\" stroke=\"#475569\" stroke-width=\"2.4\" fill=\"none\"/><rect x=\"420.0\" y=\"34\" width=\"186.0\" height=\"36\" fill=\"#e2e8f0\" stroke=\"#475569\" stroke-width=\"2.4\"/><path d=\"M544.0 34V70\" stroke=\"#475569\" stroke-width=\"3\"/><text x=\"10\" y=\"129\" font-size=\"13\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"700\">Mathematics</text><path d=\"M420.0 122.0H513.0M606.0 122.0H668.0M420.0 113.0V131.0M668.0 113.0V131.0\" stroke=\"#475569\" stroke-width=\"2.4\" fill=\"none\"/><rect x=\"513.0\" y=\"104\" width=\"93.0\" height=\"36\" fill=\"#e2e8f0\" stroke=\"#475569\" stroke-width=\"2.4\"/><path d=\"M575.0 104V140\" stroke=\"#475569\" stroke-width=\"3\"/></svg>"
           },
           "timeLimit": 60,
           "xp": 1,
@@ -2746,7 +2749,7 @@
               "hint": "The original median is \\(7\\). Count how many added values fall below and above \\(7\\).",
               "steps": [
                 {
-                  "explain": "With nine scores, the original \\(5th\\) score is \\(7\\).",
+                  "explain": "With nine scores, the original \\(5\\)th score is \\(7\\).",
                   "work": "\\(Original median = 7\\)"
                 },
                 {
@@ -2799,12 +2802,12 @@
               "hint": "The interquartile range is the width of the box. Compare the two box widths.",
               "steps": [
                 {
-                  "explain": "In a box plot, the left and right edges of the box are \\(Q1\\) and \\(Q3\\).",
-                  "work": "\\(Box width = Q3-Q1\\)"
+                  "explain": "In a box plot, the left and right edges of the box are \\(Q_1\\) and \\(Q_3\\).",
+                  "work": "\\(\\text{Box width}=Q_3-Q_1\\)"
                 },
                 {
                   "explain": "The two boxes have equal widths, so their \\(Q3-Q1\\) values are equal.",
-                  "work": "\\(Science box width = Mathematics box width\\)"
+                  "work": "\\(\\text{Science box width}=\\text{Mathematics box width}\\)"
                 },
                 {
                   "explain": "Therefore the interquartile ranges must be equal.",
@@ -2830,7 +2833,7 @@
             "sourceQuestion": "Q32"
           },
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 720 220\" role=\"img\" aria-label=\"Science and Mathematics test box plots with equal box widths\"><rect width=\"720\" height=\"220\" fill=\"white\"/><path fill=\"none\" d=\"M80 185H680\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M210 65H590M210 57V73M300 45H390V85H300ZM330 45V85M390 65H590M590 57V73\" fill=\"none\" stroke=\"#475569\" stroke-width=\"3\"/><path d=\"M140 135H650M140 127V143M300 115H390V155H300ZM350 115V155M390 135H650M650 127V143\" fill=\"none\" stroke=\"#475569\" stroke-width=\"3\"/><g font-family=\"Arial\" font-size=\"15\" fill=\"#334155\"><text x=\"20\" y=\"70\">Science</text><text x=\"20\" y=\"140\">Mathematics</text></g><g font-family=\"Arial\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"140\" y=\"205\">0</text><text x=\"230\" y=\"205\">15</text><text x=\"320\" y=\"205\">30</text><text x=\"410\" y=\"205\">45</text><text x=\"500\" y=\"205\">60</text><text x=\"590\" y=\"205\">75</text><text x=\"680\" y=\"205\">90</text></g></svg>"
+            "svg": "<svg width=\"100%\" style=\"max-width:720px\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 720 220\" role=\"img\" aria-label=\"Science and Mathematics test box plots with equal box widths\"><rect width=\"720\" height=\"220\" fill=\"white\"/><path fill=\"none\" d=\"M80 185H680\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M210 65H590M210 57V73M300 45H390V85H300ZM330 45V85M390 65H590M590 57V73\" fill=\"none\" stroke=\"#475569\" stroke-width=\"3\"/><path d=\"M140 135H650M140 127V143M300 115H390V155H300ZM350 115V155M390 135H650M650 127V143\" fill=\"none\" stroke=\"#475569\" stroke-width=\"3\"/><g font-family=\"Arial\" font-size=\"15\" fill=\"#334155\"><text x=\"20\" y=\"70\">Science</text><text x=\"20\" y=\"140\">Mathematics</text></g><g font-family=\"Arial\" font-size=\"12\" fill=\"#334155\" text-anchor=\"middle\"><text x=\"140\" y=\"205\">0</text><text x=\"230\" y=\"205\">15</text><text x=\"320\" y=\"205\">30</text><text x=\"410\" y=\"205\">45</text><text x=\"500\" y=\"205\">60</text><text x=\"590\" y=\"205\">75</text><text x=\"680\" y=\"205\">90</text></g></svg>"
           }
         },
         {
@@ -2886,7 +2889,7 @@
             "sourceQuestion": "Q34"
           },
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 340\" role=\"img\" aria-label=\"Two-way table of work status by gender\"><rect width=\"700\" height=\"340\" fill=\"white\"/><g stroke=\"#475569\" stroke-width=\"1.5\" fill=\"none\"><path d=\"M50 45H650M50 100H650M50 155H650M50 210H650M50 265H650M50 45V265M230 45V265M370 45V265M510 45V265M650 45V265\"/></g><rect x=\"370\" y=\"155\" width=\"140\" height=\"55\" fill=\"#fef3c7\"/><g font-family=\"Arial\" font-size=\"17\" fill=\"#172554\" text-anchor=\"middle\"><text x=\"140\" y=\"80\">Work status</text><text x=\"300\" y=\"80\">Male</text><text x=\"440\" y=\"80\">Female</text><text x=\"580\" y=\"80\">Totals</text><text x=\"140\" y=\"135\">Full-time</text><text x=\"300\" y=\"135\">279</text><text x=\"440\" y=\"135\">356</text><text x=\"580\" y=\"135\">635</text><text x=\"140\" y=\"190\">Part-time</text><text x=\"300\" y=\"190\">187</text><text x=\"440\" y=\"190\">439</text><text x=\"580\" y=\"190\">716</text><text x=\"140\" y=\"245\">Totals</text><text x=\"300\" y=\"245\">466</text><text x=\"440\" y=\"245\">885</text><text x=\"580\" y=\"245\">1351</text></g></svg>"
+            "svg": "<svg width=\"100%\" style=\"max-width:700px\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 340\" role=\"img\" aria-label=\"Two-way table of work status by gender\"><rect width=\"700\" height=\"340\" fill=\"white\"/><g stroke=\"#475569\" stroke-width=\"1.5\" fill=\"none\"><path d=\"M50 45H650M50 100H650M50 155H650M50 210H650M50 265H650M50 45V265M230 45V265M370 45V265M510 45V265M650 45V265\"/></g><rect x=\"370\" y=\"155\" width=\"140\" height=\"55\" fill=\"#fef3c7\"/><g font-family=\"Arial\" font-size=\"17\" fill=\"#172554\" text-anchor=\"middle\"><text x=\"140\" y=\"80\">Work status</text><text x=\"300\" y=\"80\">Male</text><text x=\"440\" y=\"80\">Female</text><text x=\"580\" y=\"80\">Totals</text><text x=\"140\" y=\"135\">Full-time</text><text x=\"300\" y=\"135\">279</text><text x=\"440\" y=\"135\">356</text><text x=\"580\" y=\"135\">635</text><text x=\"140\" y=\"190\">Part-time</text><text x=\"300\" y=\"190\">187</text><text x=\"440\" y=\"190\">439</text><text x=\"580\" y=\"190\">716</text><text x=\"140\" y=\"245\">Totals</text><text x=\"300\" y=\"245\">466</text><text x=\"440\" y=\"245\">885</text><text x=\"580\" y=\"245\">1351</text></g></svg>"
           }
         },
         {
