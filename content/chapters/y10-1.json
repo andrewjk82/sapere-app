@@ -11063,48 +11063,44 @@
           "difficulty": "hard",
           "stem": "A luxury tax levies \\( 8\\% \\) on jewelry purchases over \\( 10000 \\) dollars. For a diamond ring priced at \\( 25000 \\) dollars, if the luxury tax rate increases to \\( 10\\% \\), find the percentage increase in luxury tax paid.",
           "options": [
-            "\\(26.00\\%\\)",
+            "\\(20.00\\%\\)",
             "\\(25.00\\%\\)",
-            "\\(24.00\\%\\)",
-            "\\(22.50\\%\\)"
+            "\\(2.00\\%\\)",
+            "\\(12.50\\%\\)"
           ],
           "answer": 1,
-          "solution": "1",
+          "solution": "\\(\\text{Taxable amount}=25000-10000=15000\\); original tax \\(=0.08\\times15000=1200\\); new tax \\(=0.10\\times15000=1500\\); increase \\(=\\frac{300}{1200}\\times100\\%=25\\%\\).",
           "steps": [
             {
-              "explain": "Let the variables represent the original prices.",
-              "work": "\\(\\text{Let } x \\text{ be the price of the } \\text{drone} \\text{ and } y \\text{ be the price of the } \\text{spare battery pack}.\\ \\rightarrow\\ x + y = 884\\)"
+              "explain": "The tax applies only to the part of the price over \\(10000\\) dollars, so find the taxable amount.",
+              "work": "\\(25000-10000=15000\\)"
             },
             {
-              "explain": "Set up the updated total pricing equation.",
-              "work": "\\((1 + \\frac{7}{100})x + (1 - \\frac{12}{100})y = 924.41 \\implies 1.07x + 0.88y = 924.41\\)"
+              "explain": "Find the tax paid at the original rate of \\(8\\%\\).",
+              "work": "\\(0.08\\times15000=1200\\)"
             },
             {
-              "explain": "Substitute y to eliminate variables and isolate x.",
-              "work": "\\(1.07x + 0.88(884 - x) = 924.41\\)"
+              "explain": "Find the tax paid at the new rate of \\(10\\%\\).",
+              "work": "\\(0.10\\times15000=1500\\)"
             },
             {
-              "explain": "Solve the resulting equation for x.",
-              "work": "\\(0.19x + 777.92 = 924.41 \\implies x = 771\\)"
+              "explain": "Percentage increase = change ÷ original × 100%. Do not just subtract the rates (that gives 2%).",
+              "work": "\\(\\frac{1500-1200}{1200}\\times100\\%=\\frac{300}{1200}\\times100\\%=25\\%\\)"
             }
           ],
           "xp": 2,
           "keyPoints": [
             {
-              "text": "10000",
-              "note": "This is the original value and the denominator for percentage change."
+              "text": "over \\( 10000 \\) dollars",
+              "note": "The tax is charged only on the part of the price above this amount."
             },
             {
-              "text": "25000",
-              "note": "This is the new value; subtract the original to find the change."
+              "text": "priced at \\( 25000 \\) dollars",
+              "note": "Subtract 10000 to get the amount that is taxed."
             },
             {
               "text": "find the percentage increase in luxury tax paid",
-              "note": "Percentage change = (new − original) ÷ original × 100%. The sign shows increase or decrease."
-            },
-            {
-              "text": "\\( 8\\% \\)",
-              "note": "Apply this tax rate only to the amount within this tax band, then add the tax from the other bands."
+              "note": "Compare the tax paid (in dollars) before and after, not the two rates."
             }
           ]
         },

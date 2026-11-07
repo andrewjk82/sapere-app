@@ -1225,9 +1225,9 @@
               "type": "mc",
               "stem": "What is the \\(y\\)-coordinate of \\(P\\)?",
               "options": [
-                "-\\(\\dfrac{1}{4}\\)",
+                "\\(-\\dfrac{1}{4}\\)",
                 "\\(\\dfrac{1}{4}\\)",
-                "-\\(\\dfrac{1}{2}\\)",
+                "\\(-\\dfrac{1}{2}\\)",
                 "\\(0\\)"
               ],
               "answer": 0,
