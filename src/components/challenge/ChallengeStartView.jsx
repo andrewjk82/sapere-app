@@ -630,7 +630,7 @@ const ChallengeStartView = ({
             >
               {extraRoundBusy ? 'Loading…' : 'Extra round'}
               <span style={{ display: 'block', marginTop: 2, fontWeight: 600, fontSize: '0.8rem', color: '#7c3aed' }}>
-                Keep practising for half XP, as many rounds as you like
+                Keep practising for bonus XP, as many rounds as you like
               </span>
             </button>
           )}

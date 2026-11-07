@@ -1545,7 +1545,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
     } catch { /* ignore */ }
     const results = answerResults || [];
     const roundScore = sessionScore(results);
-    const xpEarned = extraRoundXp(getEarnedXp(roundScore, TOTAL_QUESTIONS, 'daily', hasCalculationTest));
+    const xpEarned = extraRoundXp(getEarnedXp(roundScore, TOTAL_QUESTIONS, 'daily', hasCalculationTest), studentProfile?.year || assignedYear);
     const xpBefore = Math.max((Number(studentProfile?.totalXP) || 0) + pendingXp(user?.uid), knownXpRef.current);
     knownXpRef.current = xpBefore + xpEarned;
     if (quizStartTimeRef.current) setElapsedSeconds(Math.round((Date.now() - quizStartTimeRef.current) / 1000));

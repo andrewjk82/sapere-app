@@ -413,7 +413,7 @@ const ChallengeResultView = ({
         </button>
         {onAnotherRound && (
           <button onClick={onAnotherRound} disabled={anotherRoundBusy} className="cr__btn cr__btn--primary">
-            {anotherRoundBusy ? 'Loading…' : 'Extra round (half XP)'}
+            {anotherRoundBusy ? 'Loading…' : 'Extra round (bonus XP)'}
           </button>
         )}
         <button onClick={onBack} className={onAnotherRound ? 'cr__btn cr__btn--ghost' : 'cr__btn cr__btn--primary'}>

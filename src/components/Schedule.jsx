@@ -538,6 +538,11 @@ const Schedule = ({ students = [] }) => {
   const handleSaveDetails = async (choice = 'single') => {
     if (!selectedSession || !isAdmin) return;
     setIsSaving(true);
+    // Firestore calls wait forever when the connection or write quota stalls; never leave the button on "Saving..." for good.
+    const stuckTimer = window.setTimeout(() => {
+      setIsSaving(false);
+      showToast('Still waiting for the server. Check the connection and that the change shows on the lesson, then try again.', 'error');
+    }, 20000);
     try {
       const updatePayload = buildSessionUpdatePayload(editData);
       let homeworkChanged = false;
@@ -681,6 +686,7 @@ const Schedule = ({ students = [] }) => {
       console.error('Failed to update session:', e);
       showToast('Failed to update.', 'error');
     } finally {
+      window.clearTimeout(stuckTimer);
       setIsSaving(false);
     }
   };
