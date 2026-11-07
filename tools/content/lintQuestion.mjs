@@ -13,6 +13,9 @@ const check = (q, ctxId) => {
   const flag = (m) => out.push(`${id}: ${m}`);
   const txt = (label, s) => { if (typeof s === 'string' && texty(stripMath(s))) flag(`${label} has LaTeX outside \\( \\): ${s.slice(0, 70).replace(/\n/g, ' ')}`); };
   txt('stem', q.stem); txt('hint', q.hint);
+  // slash fractions inside math (e.g. \pi/4, 4/(a+1)) must be stacked \frac{}{}; exponents like ^{3/2} are fine
+  const slash = (label, s) => { if (typeof s !== 'string') return; for (const m of s.matchAll(/\\\(([\s\S]*?)\\\)/g)) { const t = m[1].replace(/\^\{[^{}]*\}/g, ''); if (/[\\A-Za-z0-9)}]\s*\/\s*[\\(A-Za-z0-9]/.test(t)) flag(`${label} has slash fraction in math (use \\frac): ${m[1].slice(0, 60)}`); } };
+  slash('stem', q.stem); slash('hint', q.hint); (q.options || []).forEach((o, i) => slash(`option${i}`, typeof o === 'string' ? o : o?.text)); (q.steps || []).forEach((s, i) => { slash(`step${i + 1}.explain`, s.explain); slash(`step${i + 1}.work`, s.work); });
   (q.options || []).forEach((o, i) => txt(`option${i}`, typeof o === 'string' ? o : o?.text));
   (q.keyPoints || []).forEach((k) => { txt('keyPoint.note', k.note); if (q.stem && !q.stem.includes(k.text)) flag(`keyPoint text not a substring of stem: ${k.text.slice(0, 50)}`); });
   const figs = [];
