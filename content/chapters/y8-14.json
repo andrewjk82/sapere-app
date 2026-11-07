@@ -1325,8 +1325,8 @@
         {
           "id": "y8-14e-q1d",
           "type": "review",
-          "difficulty": "easy",
           "stem": "Use your compasses and ruler to draw a quadrant with a radius of \\(4\\text{ cm}\\).",
+          "difficulty": "easy",
           "answer": "A quadrant with a radius of \\(4\\text{ cm}\\) (quarter of a circle with a \\(90^\\circ\\) angle).",
           "hint": "A quadrant is a quarter of a circle, which contains a right angle (\\(90^\\circ\\)).",
           "solution": "A quadrant with a radius of \\(4\\text{ cm}\\) (quarter of a circle with a \\(90^\\circ\\) angle).",
@@ -1350,7 +1350,11 @@
           ],
           "manual": true,
           "timeLimit": 180,
-          "xp": 1
+          "xp": 1,
+          "inactive": true,
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y8-14e-q2ai",
