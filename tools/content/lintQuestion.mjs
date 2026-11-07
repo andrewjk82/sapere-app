@@ -31,6 +31,9 @@ const check = (q, ctxId) => {
     if (/<text[^>]*>[^<]*[π√][^<]*\/[^<]*<\/text>/.test(sv) && /π\/\d/.test(sv)) flag(`${n} has plain-text π/n (draw stacked fraction)`);
   });
   if (!q.figure?.svg && /diagram|as shown|shown above/i.test(`${q.stem} ${q.hint || ''}`)) flag('mentions the diagram but has no question figure');
+  // sketch/draw questions: the stem figure would be the answer; and a graph question whose solution has steps needs a per-step highlighted figure
+  if (q.figure?.svg && /\b(sketch|draw)\b/i.test(q.stem || '')) flag('Sketch/Draw question has a stem figure — OK only if it is a GIVEN graph (e.g. sketch the derivative from f); if it shows the answer curve, move it to steps[].figure');
+  if (/\b(sketch|draw)\b/i.test(q.stem || '') && (q.steps || []).length >= 3 && !(q.steps || []).some((s) => s.figure?.svg)) flag('Sketch/Draw question has no step figures (highlight each step on the graph)');
   (q.parts || []).forEach((p) => check(p, id));
 };
 const walk = (x) => { if (Array.isArray(x)) x.forEach(walk); else if (x && typeof x === 'object') { if (typeof x.id === 'string' && x.type && re.test(x.id)) check(x); else Object.values(x).forEach(walk); } };
