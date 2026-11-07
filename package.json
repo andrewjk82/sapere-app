@@ -41,6 +41,7 @@
     "test:content": "npm run test:content-parity && npm run test:content-api",
     "test:content-readfile": "node --no-warnings tools/content/tests/readFileGithub.mjs",
     "test:content-parts": "npm run content:publish && node --no-warnings tools/content/tests/partResolution.mjs",
+    "test:generated": "node --import ./scripts/extResolve.mjs scripts/testGeneratedQuestions.mjs",
     "test:answer-sound": "node scripts/testAnswerSound.mjs"
   },
   "dependencies": {

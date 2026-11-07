@@ -1,5 +1,6 @@
 import { CURRICULUM_DATA } from '../constants/curriculumData.js';
 import {
+  optionText,
   deriveBinaryMathAnswer,
   verifyAndRepairGeneratedQuestion,
 } from '../utils/generatedAnswerGuard.js';
@@ -93,15 +94,34 @@ const getUniqueOptions = (answer, distractors, min = 0, max = 100) => {
 
 const wordOptions = (answer, pool) => {
   const filtered = pool.filter(item => String(item) !== String(answer));
-  const chosen = shuffle(filtered).slice(0, 3);
-  // Pad with generated fallbacks if not enough unique distractors
-  const fallbacks = ['Other', 'None of these', '—', '??'];
-  let i = 0;
-  while (chosen.length < 3 && i < fallbacks.length) {
-    const fb = fallbacks[i++];
-    if (String(fb) !== String(answer) && !chosen.includes(fb)) chosen.push(fb);
-  }
+  const chosen = shuffle([...new Set(filtered.map(String))]).slice(0, 3);
+  // Fewer real choices beat padding with "Other" / "None of these".
   return shuffle([answer, ...chosen]);
+};
+
+// A data set with exactly one most-frequent value: "find the mode" has no answer otherwise.
+const dataWithUniqueMode = (count, min, max) => {
+  const modeVal = randomInt(min, max);
+  const others = [];
+  for (let v = min; v <= max; v += 1) if (v !== modeVal) others.push(v, v);
+  const data = [modeVal, modeVal, modeVal, ...shuffle(others).slice(0, count - 3)].sort((a, b) => a - b);
+  return { data, modeVal };
+};
+
+// A digit that appears once and is not 0: "the value of the digit 1 in 255,181" has two answers.
+const singleDigitIndex = (digits, maxIdx = digits.length - 1) => {
+  const text = digits.map(String);
+  const usable = text
+    .map((d, i) => i)
+    .filter((i) => i <= maxIdx && text[i] !== '0' && text.indexOf(text[i]) === text.lastIndexOf(text[i]));
+  return usable.length ? pick(usable) : -1;
+};
+
+// Same family as the pattern, so A/B options are never mixed with colours or shapes.
+const patternFamilyPool = (unit) => {
+  if (unit.every((t) => t.length === 1)) return ['A', 'B', 'C', 'D'];
+  if (unit.every((t) => ['red', 'blue', 'green', 'yellow'].includes(t))) return ['red', 'blue', 'green', 'yellow'];
+  return ['circle', 'square', 'triangle', 'star'];
 };
 const pickGeneratorType = (value, fallback = 'generic_year1') => Array.isArray(value) ? pick(value) : (value || fallback);
 
@@ -137,7 +157,19 @@ const deriveSimpleMathAnswer = (questionText) => deriveBinaryMathAnswer(question
 const validateGeneratedQuestion = (question) => {
   // Full integrity pass: re-derive known stems, keep answer as option VALUE
   // (never 0-based index), inject answer into options if missing.
-  const repaired = verifyAndRepairGeneratedQuestion(question);
+  const checked = verifyAndRepairGeneratedQuestion(question);
+  const seenOptions = new Set();
+  const repaired = Array.isArray(checked.options)
+    ? {
+      ...checked,
+      options: checked.options.filter((option) => {
+        const text = optionText(option);
+        if (seenOptions.has(text)) return false;
+        seenOptions.add(text);
+        return true;
+      }),
+    }
+    : checked;
   const expectedBinary = deriveBinaryMathAnswer(question?.question);
   if (expectedBinary != null && !repaired.solution) {
     return {
@@ -758,13 +790,7 @@ const genRepeatingPattern = () => {
   // so "A,B,B,A,B,B,A,B,___" stored A instead of the true next value B.
   const answer = sequence[sequence.length - 1];
   const shown = sequence.slice(0, -1);
-  // Prefer distractors from the same pattern family so A/B options aren't mixed
-  // with unrelated shape words when the unit is letters (and vice versa).
-  const pool = unit.every((t) => t === 'A' || t === 'B')
-    ? ['A', 'B', 'C', 'D']
-    : unit.every((t) => t === 'red' || t === 'blue')
-      ? ['red', 'blue', 'green', 'yellow']
-      : ['circle', 'square', 'triangle', 'star'];
+  const pool = patternFamilyPool(unit);
   return q(
     'repeating_pattern',
     `What comes next? ${shown.join(', ')}, ___`,
@@ -782,37 +808,63 @@ const genPatternMissing = () => {
   const answer = sequence[missingIdx];
   const shown = [...sequence];
   shown[missingIdx] = '___';
-  return q('pattern_missing', `What is missing? ${shown.join(', ')}`, wordOptions(answer, [...new Set(sequence)]), answer, `The pattern repeats: ${unit.join(', ')}.`, 25);
+  return q('pattern_missing', `What is missing? ${shown.join(', ')}`, wordOptions(answer, patternFamilyPool(unit)), answer, `The pattern repeats: ${unit.join(', ')}.`, 25);
 };
 
 const genPatternRule = () => {
   const patterns = [
-    { unit: ['red', 'blue'], rule: 'red, blue' },
-    { unit: ['A', 'A', 'B'], rule: 'A, A, B' },
-    { unit: ['circle', 'square', 'triangle'], rule: 'circle, square, triangle' },
+    { unit: ['red', 'blue'], rule: 'red, blue', wrong: ['red, red, blue', 'red, blue, blue', 'blue, blue'] },
+    { unit: ['A', 'A', 'B'], rule: 'A, A, B', wrong: ['A, B', 'A, B, B', 'A, A, A, B'] },
+    { unit: ['circle', 'square', 'triangle'], rule: 'circle, square, triangle', wrong: ['circle, square', 'circle, triangle, square', 'circle, square, square'] },
   ];
   const item = pick(patterns);
-  return q('pattern_rule', `What is the rule? ${[...item.unit, ...item.unit].join(', ')}...`, wordOptions(item.rule, patterns.map(p => p.rule)), item.rule, `The repeating unit is ${item.rule}.`, 30);
+  return q('pattern_rule', `What is the rule? ${[...item.unit, ...item.unit].join(', ')}...`, wordOptions(item.rule, item.wrong), item.rule, `The repeating unit is ${item.rule}.`, 30);
+};
+
+// The group keeps repeating, so a position past the end of it wraps round: A-F repeating, the 9th is C.
+const genPatternNth = (difficulty) => {
+  const { unit, extra } = pick([
+    { unit: ['A', 'B', 'C'], extra: ['D'] },
+    { unit: ['A', 'A', 'B'], extra: ['C', 'D'] },
+    { unit: ['A', 'B', 'C', 'D'], extra: [] },
+    { unit: ['A', 'B', 'C', 'D', 'E'], extra: [] },
+    { unit: ['A', 'B', 'C', 'D', 'E', 'F'], extra: [] },
+    { unit: ['red', 'blue', 'green'], extra: ['yellow'] },
+    { unit: ['big', 'small', 'small'], extra: ['medium', 'tiny'] },
+    { unit: ['circle', 'square', 'square'], extra: ['triangle', 'star'] },
+  ]);
+  const groups = { easy: 2, medium: 3, hard: 4 }[difficulty] || 2;
+  const position = randomInt(unit.length + 1, unit.length * groups);
+  const written = Array.from({ length: position }, (_, i) => unit[i % unit.length]);
+  const answer = written[position - 1];
+  const tail = position % 100 >= 11 && position % 100 <= 13 ? 'th' : ({ 1: 'st', 2: 'nd', 3: 'rd' }[position % 10] || 'th');
+  const place = `${position}${tail}`;
+  return q('pattern_nth', `This group keeps repeating: ${unit.join(', ')}. What is the ${place} item?`,
+    wordOptions(answer, [...unit, ...extra]), answer,
+    `Keep writing the group out: ${written.join(', ')}. The ${place} item is ${answer}.`, 35,
+    `When the group ends, start it again from the beginning and count along to the ${place} item.`);
 };
 
 const genPatternError = () => {
   const templates = [
-    { unit: ['red', 'blue'], error: { idx: 3, wrong: 'red', right: 'blue' } },
-    { unit: ['A', 'B', 'C'], error: { idx: 4, wrong: 'A', right: 'C' } },
-    { unit: ['circle', 'square'], error: { idx: 2, wrong: 'square', right: 'circle' } },
-    { unit: ['triangle', 'square', 'circle'], error: { idx: 5, wrong: 'square', right: 'circle' } },
-    { unit: ['big', 'small', 'small'], error: { idx: 3, wrong: 'big', right: 'small' } },
+    { unit: ['red', 'blue'], error: { idx: 3, wrong: 'red' }, extra: ['green', 'yellow'] },
+    { unit: ['A', 'B', 'C'], error: { idx: 4, wrong: 'A' }, extra: ['D'] },
+    { unit: ['circle', 'square'], error: { idx: 2, wrong: 'square' }, extra: ['triangle', 'star'] },
+    { unit: ['triangle', 'square', 'circle'], error: { idx: 5, wrong: 'square' }, extra: ['star'] },
+    { unit: ['big', 'small', 'small'], error: { idx: 4, wrong: 'big' }, extra: ['medium', 'tiny'] },
   ];
   const t = pick(templates);
-  // Build a 6-element correct sequence then corrupt it
   const correct = Array.from({ length: 6 }, (_, i) => t.unit[i % t.unit.length]);
   const corrupted = [...correct];
   corrupted[t.error.idx] = t.error.wrong;
-  const ordinals = ['1st', '2nd', '3rd', '4th', '5th', '6th'];
-  const wrongPos = ordinals[t.error.idx];
-  const opts = ordinals.slice(0, 6).filter(o => o !== wrongPos);
-  shuffle(opts);
-  return q('pattern_error', `The pattern rule is: ${t.unit.join(', ')}, repeating. Which item is wrong? ${corrupted.join(', ')}`, [wrongPos, ...opts.slice(0, 3)], wrongPos, `The ${wrongPos} item should be "${t.error.right}", not "${t.error.wrong}".`, 30);
+  const place = ['1st', '2nd', '3rd', '4th', '5th', '6th'][t.error.idx];
+  const answer = correct[t.error.idx];
+  // Asks what belongs there, not where it is: the answer comes from the pattern, not from counting along the row.
+  return q('pattern_error',
+    `The group ${t.unit.join(', ')} keeps repeating, but someone wrote: ${corrupted.join(', ')}. The ${place} item is wrong. What should it be?`,
+    wordOptions(answer, [...t.unit, ...t.extra]), answer,
+    `Following the group, the row should be ${correct.join(', ')}. The ${place} item should be "${answer}", not "${t.error.wrong}".`, 30,
+    `Say the repeating group in order along the row until you reach the ${place} item.`);
 };
 
 const genEqualsBalance = () => {
@@ -1328,7 +1380,8 @@ const genStagePlaceValue = (difficulty) => {
   const maxDigits = maxByDifficulty(difficulty, 4, 6, 9);
   const number = randomInt(10 ** (Math.min(maxDigits, 6) - 1), (10 ** Math.min(maxDigits, 6)) - 1);
   const digits = String(number).split('').map(Number);
-  const idx = randomInt(0, digits.length - 1);
+  const idx = singleDigitIndex(digits);
+  if (idx < 0) return genStagePlaceValue(difficulty);
   const place = 10 ** (digits.length - idx - 1);
   const answer = digits[idx] * place;
   return q('stage_place_value', `In ${number.toLocaleString('en-AU')}, what is the value of the digit ${digits[idx]}?`, getUniqueOptions(answer, [digits[idx], answer / 10, answer * 10], 0, 100000000), answer, `The digit ${digits[idx]} is in the ${place.toLocaleString('en-AU')}s place, so its value is ${answer.toLocaleString('en-AU')}.`, 35);
@@ -1706,15 +1759,22 @@ const genOrdinalNumbers = () => {
   const ord = ordinals[pos - 1];
   const mode = pick(['name_ordinal', 'find_position']);
   if (mode === 'name_ordinal') {
-    return q('ordinal_numbers', `A race has 10 runners. What position is the runner who came ${pos}${ord.slice(-2)}?`,
+    const ahead = pos - 1;
+    const aheadText = ahead === 0 ? 'No runners finish' : ahead === 1 ? '1 runner finishes' : `${ahead} runners finish`;
+    return q('ordinal_numbers', `${aheadText} ahead of Mia in a race. What place does Mia come?`,
       wordOptions(ord, ordinals.filter(o => o !== ord)),
-      ord, `The ${pos}${ord.slice(-2)} place is written as "${ord}".`, 20);
+      ord, `${ahead} ahead of Mia means Mia is number ${pos} across the line: ${ord}.`, 20);
   }
-  const row = items.slice(0, 5);
-  const targetItem = row[pos <= 5 ? pos - 1 : 4];
-  return q('ordinal_numbers', `In this row: ${row.join(', ')}. Which item is in the ${ord} position?`,
-    wordOptions(targetItem, row.filter(i => i !== targetItem)),
-    targetItem, `Count from the left: position ${pos} is "${targetItem}".`, 20);
+  // The position is always past the end of the row: the student continues the pattern in their head.
+  const row = shuffle(items).slice(0, randomInt(3, 5));
+  const position = randomInt(row.length + 1, ordinals.length);
+  const place = ordinals[position - 1];
+  const written = Array.from({ length: position }, (_, i) => row[i % row.length]);
+  const targetItem = written[position - 1];
+  return q('ordinal_numbers', `This row keeps repeating: ${row.join(', ')}. Which item is in the ${place} position?`,
+    wordOptions(targetItem, row), targetItem,
+    `Keep the row going: ${written.join(', ')}. The ${place} item is "${targetItem}".`, 30,
+    `When the row ends, start it again from the beginning and keep counting to the ${place} position.`);
 };
 
 // ── Year 1-2: Equal groups (intro to multiplication) ────────────────────────
@@ -2067,15 +2127,16 @@ const genFactorsMultiples = (difficulty) => {
     const pos = randomInt(3, 10);
     const answer = n * pos;
     return q('factors_multiples', `Which of these is a multiple of ${n}?`,
-      wordOptions(String(answer), [answer-1, answer+1, answer+n-1].map(String)),
+      wordOptions(String(answer), [answer-1, answer+1, answer+n+1].map(String)),
       String(answer), `${n} × ${pos} = ${answer}, so ${answer} is a multiple of ${n}.`, 25);
   }
   if (mode === 'common_factor') {
     const shared = pick([2,3,4,5]);
     const a = shared * randomInt(2,5), b = shared * randomInt(2,5);
     const answer = shared;
-    return q('factors_multiples', `What is a common factor of ${a} and ${b}?`,
-      getUniqueOptions(answer, [answer+1, answer-1, a], 1, 20), answer,
+    const notCommon = Array.from({ length: 19 }, (_, i) => i + 2).filter((n) => a % n !== 0 || b % n !== 0);
+    return q('factors_multiples', `Which of these is a common factor of ${a} and ${b}?`,
+      wordOptions(String(answer), notCommon.map(String)), String(answer),
       `Both ${a} and ${b} are divisible by ${answer}.`, 35);
   }
   if (mode === 'lcm') {
@@ -2192,9 +2253,10 @@ const genMeanMedianMode = (difficulty) => {
       answer, `Sort the data: ${data.join(', ')}. Middle value = ${answer}.`, 45);
   }
   if (mode_stat === 'mode') {
-    return q('mean_median_mode', `Find the mode of: ${data.join(', ')}`,
-      getUniqueOptions(modeVal, [data[0], data[data.length-1], modeVal+1], 0, 30),
-      modeVal, `The mode is the most frequent value. ${modeVal} appears most often.`, 35);
+    const single = dataWithUniqueMode(count, 2, 15);
+    return q('mean_median_mode', `Find the mode of: ${single.data.join(', ')}`,
+      wordOptions(String(single.modeVal), single.data.map(String)),
+      String(single.modeVal), `The mode is the most frequent value. ${single.modeVal} appears most often.`, 35);
   }
   const range = data[data.length-1] - data[0];
   return q('mean_median_mode', `Find the range of: ${data.join(', ')}`,
@@ -2272,7 +2334,9 @@ const genLineGraph = () => {
 
 // ── Year 6: Stem-and-leaf plots ──────────────────────────────────────────────
 const genStemLeaf = () => {
-  const data = Array.from({length: 8}, () => randomInt(11, 59)).sort((a,b) => a-b);
+  const mode = pick(['find_median', 'find_range', 'find_mode']);
+  const single = dataWithUniqueMode(8, 11, 59);
+  const data = mode === 'find_mode' ? single.data : Array.from({length: 8}, () => randomInt(11, 59)).sort((a,b) => a-b);
   const stemMap = {};
   data.forEach(n => {
     const stem = Math.floor(n/10);
@@ -2280,7 +2344,6 @@ const genStemLeaf = () => {
     stemMap[stem].push(n % 10);
   });
   const stemStr = Object.entries(stemMap).map(([s,l]) => `${s} | ${l.join(' ')}`).join(', ');
-  const mode = pick(['find_median', 'find_range', 'find_mode']);
   if (mode === 'find_range') {
     const answer = data[data.length-1] - data[0];
     return q('stem_leaf', `Stem-and-leaf plot: ${stemStr}. What is the range?`,
@@ -2288,9 +2351,7 @@ const genStemLeaf = () => {
       answer, `Range = ${data[data.length-1]} − ${data[0]} = ${answer}.`, 40);
   }
   if (mode === 'find_mode') {
-    const freq = {};
-    data.forEach(n => { freq[n] = (freq[n]||0)+1; });
-    const modeVal = Number(Object.entries(freq).sort((a,b)=>b[1]-a[1])[0][0]);
+    const { modeVal } = single;
     return q('stem_leaf', `Stem-and-leaf plot: ${stemStr}. What is the mode?`,
       getUniqueOptions(modeVal, [data[0], data[data.length-1], modeVal+1], 0, 60),
       modeVal, `${modeVal} appears most frequently in the data.`, 40);
@@ -2328,7 +2389,7 @@ const genAngleRelationships = (difficulty) => {
   const sides = pick([5,6,7,8]);
   const totalInterior = (sides - 2) * 180;
   const answer = totalInterior;
-  return q('angle_relationships', `What is the sum of interior angles of a ${['','','','','pentagon','hexagon','heptagon','octagon'][sides]}?`,
+  return q('angle_relationships', `What is the sum of interior angles of a ${{ 5: 'pentagon', 6: 'hexagon', 7: 'heptagon', 8: 'octagon' }[sides]}?`,
     getUniqueOptions(answer, [answer - 180, answer + 180, sides * 90], 0, 1800),
     answer, `Sum of interior angles = (${sides} − 2) × 180° = ${sides-2} × 180° = ${answer}°.`, 40);
 };
@@ -2557,13 +2618,15 @@ const genSymmetry = () => {
 
 // ── Year 3-4: Money (dollars) ─────────────────────────────────────────────────
 const genMoneyAddSub = (difficulty) => {
-  const a = (randomInt(1, difficulty === 'hard' ? 99 : 20) * 100 + pick([0,25,50,75]));
-  const b = (randomInt(1, difficulty === 'hard' ? 50 : 10) * 100 + pick([0,25,50,75]));
+  const first = (randomInt(1, difficulty === 'hard' ? 99 : 20) * 100 + pick([0,25,50,75]));
+  const second = (randomInt(1, difficulty === 'hard' ? 50 : 10) * 100 + pick([0,25,50,75]));
   const isAdd = Math.random() > 0.5;
-  const answer = isAdd ? a + b : Math.abs(a - b);
+  const a = isAdd ? first : Math.max(first, second);
+  const b = isAdd ? second : Math.min(first, second);
+  const answer = isAdd ? a + b : a - b;
   const fmt = v => `$${(v/100).toFixed(2)}`;
   return q('money_add_sub', `${fmt(a)} ${isAdd ? '+' : '−'} ${fmt(b)} = ?`,
-    wordOptions(fmt(answer), [fmt(answer+50), fmt(answer-50 < 0 ? answer+100 : answer-50), fmt(a+b)].filter(v=>v!==fmt(answer))),
+    wordOptions(fmt(answer), [fmt(answer+50), fmt(answer+100), fmt(answer < 50 ? answer+150 : answer-50), fmt(a+b)]),
     fmt(answer), `${fmt(a)} ${isAdd ? '+' : '−'} ${fmt(b)} = ${fmt(answer)}.`, 35);
 };
 
@@ -2596,28 +2659,27 @@ const genPerimeterPolygon = (difficulty) => {
 const genPercentageProblems = (difficulty) => {
   const mode = pick(['percent_of', 'find_percent', 'percent_increase', 'percent_decrease', 'gst']);
   if (mode === 'percent_increase') {
-    const original = randomInt(5,40) * 10;
+    const original = randomInt(3,20) * 20;
     const pct = pick(difficulty === 'easy' ? [10,25,50] : [5,10,15,20,25,30]);
-    const increase = Math.round(original * pct / 100);
+    const increase = original * pct / 100;
     const answer = original + increase;
     return q('percentage_problems', `A price of $${original} is increased by ${pct}%. What is the new price?`,
       getUniqueOptions(answer, [original + pct, increase, original - increase], 0, 1000),
       answer, `${pct}% of $${original} = $${increase}. New price = $${original} + $${increase} = $${answer}.`, 50);
   }
   if (mode === 'percent_decrease') {
-    const original = randomInt(5,40) * 10;
+    const original = randomInt(3,20) * 20;
     const pct = pick([10,20,25,30,50]);
-    const decrease = Math.round(original * pct / 100);
+    const decrease = original * pct / 100;
     const answer = original - decrease;
     return q('percentage_problems', `A price of $${original} is discounted by ${pct}%. What is the sale price?`,
       getUniqueOptions(answer, [original + decrease, decrease, original + pct], 0, 1000),
       answer, `${pct}% of $${original} = $${decrease}. Sale price = $${original} − $${decrease} = $${answer}.`, 50);
   }
   if (mode === 'find_percent') {
-    const total = randomInt(5,20) * 10;
-    const part = randomInt(1, total - 1);
-    const pct = Math.round(part / total * 100);
-    const cleanPart = Math.round(pct * total / 100);
+    const total = randomInt(3,10) * 20;
+    const pct = randomInt(1,19) * 5;
+    const cleanPart = total * pct / 100;
     return q('percentage_problems', `What percentage is ${cleanPart} out of ${total}?`,
       getUniqueOptions(pct, [100-pct, pct+5, pct-5], 0, 100),
       pct, `${cleanPart} ÷ ${total} × 100 = ${pct}%.`, 45);
@@ -2713,11 +2775,12 @@ const genNumberPatternStage2 = (difficulty) => {
 
 // ── Year 6: Dot plots ────────────────────────────────────────────────────────
 const genDotPlot = () => {
-  const values = Array.from({length: 10}, () => randomInt(1, 8));
+  const mode = pick(['mode', 'range', 'median', 'read_frequency']);
+  const single = dataWithUniqueMode(10, 1, 8);
+  const values = mode === 'mode' ? single.data : Array.from({length: 10}, () => randomInt(1, 8));
   const freq = {};
   values.forEach(v => { freq[v] = (freq[v]||0)+1; });
   const sorted = values.sort((a,b) => a-b);
-  const mode = pick(['mode', 'range', 'median', 'read_frequency']);
   if (mode === 'read_frequency') {
     const val = pick(Object.keys(freq).map(Number));
     const answer = freq[val];
@@ -2894,8 +2957,8 @@ const genFractionNumberLine = () => {
   const frac = `$\\dfrac{${numer}}{${denom}}$`;
   const decApprox = (numer/denom).toFixed(2);
   const mode = pick(['locate', 'compare', 'name']);
-  if (mode === 'compare') {
-    const numer2 = randomInt(1, denom - 1);
+  if (mode === 'compare' && denom > 2) {
+    const numer2 = pick(Array.from({ length: denom - 1 }, (_, i) => i + 1).filter((n) => n !== numer));
     const bigger = numer > numer2 ? `${numer}/${denom}` : `${numer2}/${denom}`;
     const smaller = numer > numer2 ? `${numer2}/${denom}` : `${numer}/${denom}`;
     return q('fraction_number_line',
@@ -3063,7 +3126,8 @@ const genPlaceValueTo100000 = (difficulty) => {
   const mode = pick(['digit_value', 'expanded', 'compare', 'times_larger']);
   if (mode === 'digit_value') {
     const s = String(n);
-    const pos = randomInt(0, s.length - 1);
+    const pos = singleDigitIndex(s.split(''));
+    if (pos < 0) return genPlaceValueTo100000(difficulty);
     const digit = Number(s[pos]);
     const placeVal = digit * Math.pow(10, s.length - 1 - pos);
     return q('place_value_to_100000', `What is the value of the digit ${digit} in ${n.toLocaleString()}?`,
@@ -3078,7 +3142,8 @@ const genPlaceValueTo100000 = (difficulty) => {
       getUniqueOptions(result, [result+factor, result-factor, base*factor/10], 0, 999999), result,
       `${base} × ${factor} = ${result}.`, 25);
   }
-  const n2 = n + randomInt(-5000, 5000);
+  const gap5k = randomInt(1, 5000);
+  const n2 = n > gap5k && Math.random() < 0.5 ? n - gap5k : n + gap5k;
   const larger = Math.max(n, n2);
   return q('place_value_to_100000', `Which is larger: ${n.toLocaleString()} or ${n2.toLocaleString()}?`,
     [n.toLocaleString(), n2.toLocaleString(), 'They are equal', 'Cannot tell'],
@@ -3102,8 +3167,10 @@ const genDecimalTenthsHundredths = (difficulty) => {
       [`${t}/10`, `${t}/100`, `1/${t}`, `${t}/1000`], `${t}/10`,
       `0.${t} = ${t}/10 (tenths).`, 25);
   }
-  const a = parseFloat((randomInt(10, 99) / 10).toFixed(1));
-  const b = parseFloat((randomInt(10, 99) / 10).toFixed(1));
+  const tenthsA = randomInt(10, 99);
+  const tenthsB = pick(Array.from({ length: 90 }, (_, i) => i + 10).filter((n) => n !== tenthsA));
+  const a = parseFloat((tenthsA / 10).toFixed(1));
+  const b = parseFloat((tenthsB / 10).toFixed(1));
   const larger = Math.max(a, b);
   return q('decimal_tenths_hundredths', `Which decimal is larger: ${a} or ${b}?`,
     [String(a), String(b), 'They are equal', 'Cannot tell'], String(larger),
@@ -3252,7 +3319,8 @@ const genPlaceValueMillions = (difficulty) => {
   const mode = pick(['read', 'compare', 'digit_value']);
   if (mode === 'digit_value') {
     const s = String(n);
-    const pos = randomInt(0, Math.min(s.length-1, 5));
+    const pos = singleDigitIndex(s.split(''), 5);
+    if (pos < 0) return genPlaceValueMillions(difficulty);
     const digit = Number(s[pos]);
     const pv = digit * Math.pow(10, s.length - 1 - pos);
     const placeNames = ['ones','tens','hundreds','thousands','ten-thousands','hundred-thousands','millions','ten-millions'];
@@ -3260,7 +3328,8 @@ const genPlaceValueMillions = (difficulty) => {
       [pv.toLocaleString(), (pv*10).toLocaleString(), (Math.max(1,Math.floor(pv/10))).toLocaleString(), (pv+digit).toLocaleString()],
       pv.toLocaleString(), `${digit} is in the ${placeNames[s.length-1-pos]} place → value = ${pv.toLocaleString()}.`, 30);
   }
-  const n2 = n + randomInt(-500000, 500000);
+  const gap500k = randomInt(1, 500000);
+  const n2 = n > gap500k && Math.random() < 0.5 ? n - gap500k : n + gap500k;
   const larger = Math.max(n, n2);
   return q('place_value_millions', `Which is greater: ${n.toLocaleString()} or ${n2.toLocaleString()}?`,
     [n.toLocaleString(), n2.toLocaleString(), 'Equal', 'Cannot tell'],
@@ -3715,12 +3784,17 @@ const genProbabilityObservedExpected = () => {
   const observed = randomInt(Math.floor(trials * 0.3), Math.ceil(trials * 0.7));
   const mode = pick(['compare', 'more_trials', 'expected_calc']);
   if (mode === 'expected_calc') {
-    const p = pick([{frac:'1/2',val:0.5},{frac:'1/6',val:1/6},{frac:'1/4',val:0.25}]);
-    const exp = Math.round(trials * p.val);
+    const p = pick([
+      { frac: '1/2', denom: 2, setup: 'A coin is tossed', event: 'Heads' },
+      { frac: '1/6', denom: 6, setup: 'A fair dice is rolled', event: 'sixes' },
+      { frac: '1/4', denom: 4, setup: 'A spinner with 4 equal sections is spun', event: 'landings on red (one section is red)' },
+    ]);
+    const runs = pick([12, 24, 60, 120]);
+    const exp = runs / p.denom;
     return q('probability_observed_expected',
-      `A coin is tossed ${trials} times. The theoretical probability of Heads is ${p.frac}. How many Heads do you expect?`,
-      getUniqueOptions(exp, [exp+5, exp-5, trials], 0, trials), exp,
-      `Expected = ${trials} × ${p.frac} = ${exp}.`, 28);
+      `${p.setup} ${runs} times. How many ${p.event} do you expect?`,
+      getUniqueOptions(exp, [exp+5, exp-5, runs], 0, runs), exp,
+      `Expected = ${runs} × ${p.frac} = ${exp}.`, 28);
   }
   if (mode === 'more_trials') {
     return q('probability_observed_expected',
@@ -3774,6 +3848,7 @@ const GENERATORS_BY_TYPE = {
   pattern_missing: genPatternMissing,
   pattern_rule: genPatternRule,
   pattern_error: genPatternError,
+  pattern_nth: genPatternNth,
   equals_balance: genEqualsBalance,
   equals_true_false: genEqualsTrueFalse,
   equals_symbol: genSymbolEquals,
@@ -4104,7 +4179,7 @@ const GROUP_GENERATOR_MAP = {
   'Odd & Even': ['odd_even', 'sort_odd_even'],
   Fractions: ['fraction_half_quarter', 'equal_parts'],
   Money: ['money_coin_value', 'money_change', 'coin_name', 'money_enough'],
-  'Repeating Patterns': ['repeating_pattern', 'pattern_missing', 'pattern_rule', 'pattern_error'],
+  'Repeating Patterns': ['repeating_pattern', 'pattern_missing', 'pattern_rule', 'pattern_error', 'pattern_nth'],
   'Understanding Equals': ['equals_balance', 'equals_true_false', 'equals_symbol'],
   'Number Patterns': ['number_pattern', 'skip_counting'],
   Length: ['length_compare', 'length_order', 'informal_units'],
@@ -4272,9 +4347,9 @@ const TOPIC_GENERATOR_MAP = {
   'y1-num-043': ['coin_name', 'money_coin_value'],
   'y1-num-044': ['money_change', 'money_enough'],
   'y1-alg-001': ['repeating_pattern', 'pattern_missing'],
-  'y1-alg-002': ['repeating_pattern', 'pattern_missing'],
-  'y1-alg-003': ['pattern_missing', 'repeating_pattern'],
-  'y1-alg-004': ['repeating_pattern', 'pattern_rule'],
+  'y1-alg-002': ['repeating_pattern', 'pattern_missing', 'pattern_nth'],
+  'y1-alg-003': ['pattern_missing', 'repeating_pattern', 'pattern_nth'],
+  'y1-alg-004': ['repeating_pattern', 'pattern_rule', 'pattern_nth'],
   'y1-alg-005': ['pattern_rule', 'repeating_pattern'],
   'y1-alg-006': ['pattern_error', 'pattern_missing'],
   'y1-alg-007': ['pattern_rule', 'repeating_pattern'],

@@ -31,6 +31,17 @@ export const normalizeQuestionText = (value) =>
     .replace(/\s+/g, ' ')
     .trim();
 
+/** "4 remainder 6" / "4 r 6" / "4 r6" that really is a ÷ b. */
+const isCorrectRemainderAnswer = (questionText, answer) => {
+  const stem = normalizeQuestionText(questionText).match(/^(\d+)\s*÷\s*(\d+)\s*=\s*\?$/);
+  const ans = String(answer ?? '').trim().match(/^(\d+)\s*(?:r|remainder)\s*(\d+)$/i);
+  if (!stem || !ans) return false;
+  const dividend = Number(stem[1]);
+  const divisor = Number(stem[2]);
+  const remainder = Number(ans[2]);
+  return remainder < divisor && Number(ans[1]) * divisor + remainder === dividend;
+};
+
 /** Simple a ±×÷ b = ? (no brackets). */
 export const deriveBinaryMathAnswer = (questionText) => {
   const text = normalizeQuestionText(questionText)
@@ -221,8 +232,10 @@ export const verifyAndRepairGeneratedQuestion = (question) => {
     }
   }
 
-  const derivedBinary = deriveBinaryMathAnswer(qText);
-  if (derivedBinary != null) {
+  const derivedBinary = isCorrectRemainderAnswer(qText, answer) ? null : deriveBinaryMathAnswer(qText);
+  if (isCorrectRemainderAnswer(qText, answer)) {
+    // Right as written. The decimal form must not replace it.
+  } else if (derivedBinary != null) {
     if (!answersMatch(String(answer ?? ''), derivedBinary)) {
       notes.push(`binary: ${answer} → ${derivedBinary}`);
       answer = derivedBinary;
