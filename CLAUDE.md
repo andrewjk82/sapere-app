@@ -184,6 +184,28 @@ common-mistake questions (one target mistake each, with a "Common mistake" line 
 bank has too few questions for (1) — e.g. Ch 9 has one, Ch 10 has none — say so and, where sensible, build
 (1) from questions of the related chapters instead.
 
+**Printable-paper wording and layout rules (2026-11-07, after review feedback — apply to every paper, never needs repeating):**
+
+- **Be self-contained: no term or formula a student has not been taught.** If a question uses a concept
+  outside the normal year-level syllabus wording — e.g. *real income / purchasing power*, *real value
+  after inflation*, *effective annual rate*, *annuity-style regular deposits*, *tax effect of
+  depreciation* — add an italic `(Hint: …)` with the formula or method at the end of the stem. This
+  applies to verbatim-from-bank papers too (the hint is the only permitted edit to a verbatim stem,
+  besides the two below). The same applies to papers 2–4 when they use such a term.
+- **Say which interest type is meant.** Every interest question must state *simple* or *compound*
+  (and the compounding period, e.g. annually / quarterly / monthly / daily). If a bank stem does not,
+  append `(Use simple interest.)` or `(Use compound interest, compounded annually.)` — even when the
+  result is identical (e.g. one year).
+- **Minimal, disclosed edits to verbatim stems.** Only allowed: removing MC options, fixing a clear
+  typo (e.g. a stray `2.` inside `\frac`), turning an option-dependent ending such as "equals:" into a
+  question, and the hint/interest-type clarifications above. Mention every edit in the delivery note.
+- **Diagrams must never be clipped.** Every figure in the builds is auto-fitted before printing
+  (`getBBox()` → `viewBox` + padding in the build script). Keep that step in any new build script and
+  check a rendered page with a figure before sending.
+- **Chapter numbering.** The app's chapter *title* number is what the user means by "ChN" (e.g.
+  `y7-5.json` is "Chapter 6: An introduction to geometry"; `y7-8.json` is "Chapter 9: Measurement").
+  File numbers do not always match — if "ChN" maps to two different files, ask which one before building.
+
 ## Question DNA reasoning-blueprint authoring
 
 See the `sapere-question-dna` skill (`.agents/skills/sapere-question-dna/SKILL.md`)
