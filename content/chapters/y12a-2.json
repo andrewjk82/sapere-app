@@ -4864,7 +4864,7 @@
               "work": "\\(\\Delta=(2k)^2-4(3)(3)=4k^2-36<0\\)"
             },
             {
-              "explain": "Divide by 4 and solve the inequality. Equality would give one stationary point, so the endpoints are excluded.",
+              "explain": "Divide by \\(4\\) and solve the inequality. Equality would give one stationary point, so the endpoints are excluded.",
               "work": "\\(k^2<9\\Rightarrow\\boxed{-3<k<3}\\)"
             }
           ],
@@ -6698,7 +6698,7 @@
             "\\(f''(-2)<f(0)<f'(3)\\)"
           ],
           "answer": 0,
-          "hint": "A local minimum makes the second derivative positive; a local maximum makes the first derivative zero. Read f(0) from the graph.",
+          "hint": "A local minimum makes the second derivative positive; a local maximum makes the first derivative zero. Read \\(f(0)\\) from the graph.",
           "steps": [
             {
               "explain": "At the local minimum, the curve is concave up. Therefore the second derivative at that point is positive.",
@@ -6710,10 +6710,7 @@
             },
             {
               "explain": "At a smooth local maximum, the tangent is horizontal, so the first derivative is zero. Put these signs in order.",
-              "work": "\\(f(0)<0=f'(3)<f''(-2)\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 280\"><rect width=\"420\" height=\"280\" fill=\"#fff\"/><path d=\"M35 142H390M205 25V258\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M55 70 C88 82 83 190 130 215 C160 230 181 193 205 170 C238 137 248 75 288 64 C326 52 340 132 365 177 C378 201 384 216 390 220\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.4\"/><circle cx=\"130\" cy=\"215\" r=\"5\" fill=\"#8b5cf6\"/><circle cx=\"205\" cy=\"170\" r=\"5\" fill=\"#0ea5e9\"/><circle cx=\"288\" cy=\"64\" r=\"5\" fill=\"#f59e0b\"/><path d=\"M130 215V142M205 170V142M288 64V142\" stroke=\"#94a3b8\" stroke-dasharray=\"4 3\"/><text x=\"130\" y=\"240\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">x=−2</text><text x=\"205\" y=\"193\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">x=0</text><text x=\"288\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">x=3</text><text x=\"395\" y=\"138\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"211\" y=\"24\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
-              }
+              "work": "\\(f(0)<0=f'(3)<f''(-2)\\)"
             }
           ],
           "timeLimit": 60,
@@ -6740,22 +6737,19 @@
             "\\(0<f''(1)<f(1)<f'(1)\\)"
           ],
           "answer": 0,
-          "hint": "At x=1, check three things on the graph: whether the point is above the axis, whether the curve rises, and whether it bends upward or downward.",
+          "hint": "At \\(x=1\\), check three things on the graph: whether the point is above the axis, whether the curve rises, and whether it bends upward or downward.",
           "steps": [
             {
-              "explain": "The marked point at x=1 is above the x-axis, so the function value is positive.",
+              "explain": "The marked point at \\(x=1\\) is above the x-axis, so the function value is positive.",
               "work": "\\(f(1)>0\\)"
             },
             {
-              "explain": "The curve is rising at x=1, so its gradient is positive.",
+              "explain": "The curve is rising at \\(x=1\\), so its gradient is positive.",
               "work": "\\(f'(1)>0\\)"
             },
             {
-              "explain": "The curve bends downward there, so the second derivative is negative. The source graph indicates the slope is about 1 and the function value is greater than 1.",
-              "work": "\\(f''(1)<0<f'(1)<f(1)\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 270\"><rect width=\"420\" height=\"270\" fill=\"#fff\"/><path d=\"M42 218H385M115 245V30\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M116 218 C142 183 168 127 207 95 C245 65 296 48 365 42\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><path d=\"M210 218V95\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><circle cx=\"210\" cy=\"95\" r=\"6\" fill=\"#f59e0b\"/><text x=\"210\" y=\"239\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\">x=1</text><text x=\"392\" y=\"214\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"122\" y=\"34\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"222\" y=\"89\" font-family=\"Arial\" font-size=\"13\">(1,f(1))</text></svg>"
-              }
+              "explain": "The curve bends downward there, so the second derivative is negative. The source graph indicates the slope is about \\(1\\) and the function value is greater than \\(1\\).",
+              "work": "\\(f''(1)<0<f'(1)<f(1)\\)"
             }
           ],
           "timeLimit": 60,
@@ -6782,21 +6776,21 @@
             "3"
           ],
           "answer": 3,
-          "hint": "Use the chain rule: \\(h'\\)(x)=\\(g'(x)f'(g(x))\\). Count where either factor is zero on the interval.",
+          "hint": "Use the chain rule: \\(h'(x)=g'(x)f'(g(x))\\). Count where either factor is zero on the interval.",
           "steps": [
             {
               "explain": "Apply the chain rule to the composite function.",
               "work": "\\(h'(x)=g'(x)f'(g(x))\\)"
             },
             {
-              "explain": "From the graph, g has one stationary point in the interval, at x=3. This gives one stationary point of h.",
+              "explain": "From the graph, g has one stationary point in the interval, at \\(x=3\\). This gives one stationary point of h.",
               "work": "\\(g'(3)=0\\)"
             },
             {
-              "explain": "The graph of f has stationary points at input values 1 and 4. Over the displayed interval, g(x) reaches one of those values twice; together with x=3 this gives three stationary points.",
+              "explain": "The graph of \\(f\\) has stationary points at input values \\(1\\) and \\(4\\). Over the displayed interval, \\(g(x)\\) reaches the value \\(1\\) twice; together with \\(x=3\\) this gives three stationary points.",
               "work": "\\(g'(x)=0\\text{ once},\\quad f'(g(x))=0\\text{ twice}\\Rightarrow 1+2=\\boxed3\\)",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 280\"><rect width=\"420\" height=\"280\" fill=\"#fff\"/><path d=\"M35 235H390M210 255V25\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M45 205 C80 165 112 128 155 120 C195 112 222 150 252 190 C279 222 310 238 350 222 C369 214 382 196 395 169\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/><path d=\"M45 70 C100 115 135 193 210 220 C278 193 318 110 390 62\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"2.5\"/><circle cx=\"210\" cy=\"220\" r=\"5\" fill=\"#f59e0b\"/><circle cx=\"133\" cy=\"126\" r=\"5\" fill=\"#ef4444\"/><circle cx=\"288\" cy=\"136\" r=\"5\" fill=\"#ef4444\"/><text x=\"375\" y=\"165\" font-family=\"Arial\" font-size=\"13\" fill=\"#7c3aed\">f</text><text x=\"378\" y=\"59\" font-family=\"Arial\" font-size=\"13\" fill=\"#0f766e\">g</text><text x=\"210\" y=\"245\" font-family=\"Arial\" font-size=\"13\" text-anchor=\"middle\">g'(3)=0</text><text x=\"125\" y=\"112\" font-family=\"Arial\" font-size=\"12\">g(x)=1</text><text x=\"280\" y=\"121\" font-family=\"Arial\" font-size=\"12\">g(x)=1</text></svg>"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 460 300\" style=\"max-width:460px\"><rect width=\"460\" height=\"300\" fill=\"white\"/><path d=\"M50 260.0H446M60.0 282V44\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"450.0\" y=\"264.0\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\">x</text><text x=\"68.0\" y=\"42.0\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\">y</text><path d=\"M60.0 155.0 L61.8 153.3 L63.5 151.6 L65.2 150.0 L67.0 148.4 L68.8 146.9 L70.5 145.5 L72.2 144.1 L74.0 142.7 L75.8 141.4 L77.5 140.1 L79.2 138.9 L81.0 137.8 L82.8 136.7 L84.5 135.6 L86.2 134.6 L88.0 133.6 L89.8 132.7 L91.5 131.8 L93.2 131.0 L95.0 130.2 L96.8 129.5 L98.5 128.8 L100.2 128.1 L102.0 127.5 L103.8 126.9 L105.5 126.4 L107.2 125.9 L109.0 125.4 L110.8 125.0 L112.5 124.6 L114.2 124.3 L116.0 124.0 L117.8 123.8 L119.5 123.5 L121.2 123.3 L123.0 123.2 L124.8 123.1 L126.5 123.0 L128.2 122.9 L130.0 122.9 L131.8 122.9 L133.5 123.0 L135.2 123.1 L137.0 123.2 L138.8 123.3 L140.5 123.5 L142.2 123.7 L144.0 123.9 L145.8 124.2 L147.5 124.5 L149.2 124.8 L151.0 125.1 L152.8 125.5 L154.5 125.9 L156.2 126.3 L158.0 126.7 L159.8 127.2 L161.5 127.7 L163.2 128.2 L165.0 128.8 L166.8 129.3 L168.5 129.9 L170.2 130.5 L172.0 131.1 L173.8 131.7 L175.5 132.4 L177.2 133.1 L179.0 133.8 L180.8 134.5 L182.5 135.2 L184.2 136.0 L186.0 136.7 L187.8 137.5 L189.5 138.3 L191.2 139.1 L193.0 139.9 L194.8 140.8 L196.5 141.6 L198.2 142.5 L200.0 143.3 L201.8 144.2 L203.5 145.1 L205.2 146.0 L207.0 146.9 L208.8 147.8 L210.5 148.8 L212.2 149.7 L214.0 150.6 L215.8 151.6 L217.5 152.5 L219.2 153.5 L221.0 154.5 L222.8 155.4 L224.5 156.4 L226.2 157.4 L228.0 158.4 L229.8 159.3 L231.5 160.3 L233.2 161.3 L235.0 162.3 L236.8 163.3 L238.5 164.3 L240.2 165.2 L242.0 166.2 L243.8 167.2 L245.5 168.2 L247.2 169.2 L249.0 170.1 L250.8 171.1 L252.5 172.0 L254.2 173.0 L256.0 173.9 L257.8 174.9 L259.5 175.8 L261.2 176.7 L263.0 177.7 L264.8 178.6 L266.5 179.5 L268.2 180.4 L270.0 181.2 L271.8 182.1 L273.5 183.0 L275.2 183.8 L277.0 184.7 L278.8 185.5 L280.5 186.3 L282.2 187.1 L284.0 187.9 L285.8 188.6 L287.5 189.4 L289.2 190.1 L291.0 190.8 L292.8 191.5 L294.5 192.2 L296.2 192.8 L298.0 193.5 L299.8 194.1 L301.5 194.7 L303.2 195.3 L305.0 195.8 L306.8 196.4 L308.5 196.9 L310.2 197.4 L312.0 197.8 L313.8 198.3 L315.5 198.7 L317.2 199.1 L319.0 199.5 L320.8 199.8 L322.5 200.1 L324.2 200.4 L326.0 200.7 L327.8 200.9 L329.5 201.1 L331.2 201.3 L333.0 201.4 L334.8 201.5 L336.5 201.6 L338.2 201.7 L340.0 201.7 L341.8 201.7 L343.5 201.6 L345.2 201.5 L347.0 201.4 L348.8 201.2 L350.5 201.1 L352.2 200.8 L354.0 200.6 L355.8 200.3 L357.5 199.9 L359.2 199.6 L361.0 199.1 L362.8 198.7 L364.5 198.2 L366.2 197.7 L368.0 197.1 L369.8 196.5 L371.5 195.8 L373.2 195.1 L375.0 194.4 L376.8 193.6 L378.5 192.8 L380.2 191.9 L382.0 191.0 L383.8 190.0 L385.5 189.0 L387.2 187.9 L389.0 186.8 L390.8 185.6 L392.5 184.4 L394.2 183.2 L396.0 181.9 L397.8 180.5 L399.5 179.1 L401.2 177.7 L403.0 176.2 L404.8 174.6 L406.5 173.0 L408.2 171.3 L410.0 169.6\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><path d=\"M130.0 85.0 L131.4 88.1 L132.8 91.1 L134.2 94.1 L135.6 97.1 L137.0 100.0 L138.4 102.9 L139.8 105.8 L141.2 108.7 L142.6 111.5 L144.0 114.3 L145.4 117.0 L146.8 119.7 L148.2 122.4 L149.6 125.1 L151.0 127.7 L152.4 130.3 L153.8 132.9 L155.2 135.5 L156.6 138.0 L158.0 140.4 L159.4 142.9 L160.8 145.3 L162.2 147.7 L163.6 150.0 L165.0 152.4 L166.4 154.7 L167.8 156.9 L169.2 159.2 L170.6 161.4 L172.0 163.5 L173.4 165.7 L174.8 167.8 L176.2 169.9 L177.6 171.9 L179.0 173.9 L180.4 175.9 L181.8 177.9 L183.2 179.8 L184.6 181.7 L186.0 183.6 L187.4 185.4 L188.8 187.2 L190.2 189.0 L191.6 190.7 L193.0 192.4 L194.4 194.1 L195.8 195.7 L197.2 197.4 L198.6 198.9 L200.0 200.5 L201.4 202.0 L202.8 203.5 L204.2 205.0 L205.6 206.4 L207.0 207.8 L208.4 209.2 L209.8 210.5 L211.2 211.8 L212.6 213.1 L214.0 214.4 L215.4 215.6 L216.8 216.8 L218.2 217.9 L219.6 219.0 L221.0 220.1 L222.4 221.2 L223.8 222.2 L225.2 223.2 L226.6 224.2 L228.0 225.1 L229.4 226.0 L230.8 226.9 L232.2 227.8 L233.6 228.6 L235.0 229.4 L236.4 230.1 L237.8 230.9 L239.2 231.5 L240.6 232.2 L242.0 232.8 L243.4 233.4 L244.8 234.0 L246.2 234.5 L247.6 235.1 L249.0 235.5 L250.4 236.0 L251.8 236.4 L253.2 236.8 L254.6 237.1 L256.0 237.5 L257.4 237.8 L258.8 238.0 L260.2 238.2 L261.6 238.4 L263.0 238.6 L264.4 238.8 L265.8 238.9 L267.2 238.9 L268.6 239.0 L270.0 239.0 L271.4 239.0 L272.8 238.9 L274.2 238.9 L275.6 238.8 L277.0 238.6 L278.4 238.4 L279.8 238.2 L281.2 238.0 L282.6 237.8 L284.0 237.5 L285.4 237.1 L286.8 236.8 L288.2 236.4 L289.6 236.0 L291.0 235.5 L292.4 235.1 L293.8 234.5 L295.2 234.0 L296.6 233.4 L298.0 232.8 L299.4 232.2 L300.8 231.5 L302.2 230.9 L303.6 230.1 L305.0 229.4 L306.4 228.6 L307.8 227.8 L309.2 226.9 L310.6 226.0 L312.0 225.1 L313.4 224.2 L314.8 223.2 L316.2 222.2 L317.6 221.2 L319.0 220.1 L320.4 219.0 L321.8 217.9 L323.2 216.8 L324.6 215.6 L326.0 214.4 L327.4 213.1 L328.8 211.8 L330.2 210.5 L331.6 209.2 L333.0 207.8 L334.4 206.4 L335.8 205.0 L337.2 203.5 L338.6 202.0 L340.0 200.5 L341.4 198.9 L342.8 197.4 L344.2 195.7 L345.6 194.1 L347.0 192.4 L348.4 190.7 L349.8 189.0 L351.2 187.2 L352.6 185.4 L354.0 183.6 L355.4 181.7 L356.8 179.8 L358.2 177.9 L359.6 175.9 L361.0 173.9 L362.4 171.9 L363.8 169.9 L365.2 167.8 L366.6 165.7 L368.0 163.5 L369.4 161.4 L370.8 159.2 L372.2 156.9 L373.6 154.7 L375.0 152.4 L376.4 150.0 L377.8 147.7 L379.2 145.3 L380.6 142.9 L382.0 140.4 L383.4 138.0 L384.8 135.5 L386.2 132.9 L387.6 130.3 L389.0 127.7 L390.4 125.1 L391.8 122.4 L393.2 119.7 L394.6 117.0 L396.0 114.3 L397.4 111.5 L398.8 108.7 L400.2 105.8 L401.6 102.9 L403.0 100.0 L404.4 97.1 L405.8 94.1 L407.2 91.1 L408.6 88.1 L410.0 85.0\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><path d=\"M130.0 256.0V264.0\" stroke=\"#334155\"/><text x=\"127.2\" y=\"278.0\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"12\" fill=\"#64748b\">1</text><path d=\"M200.0 256.0V264.0\" stroke=\"#334155\"/><text x=\"197.2\" y=\"278.0\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"12\" fill=\"#64748b\">2</text><path d=\"M270.0 256.0V264.0\" stroke=\"#334155\"/><text x=\"267.2\" y=\"278.0\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"12\" fill=\"#64748b\">3</text><path d=\"M340.0 256.0V264.0\" stroke=\"#334155\"/><text x=\"337.2\" y=\"278.0\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"12\" fill=\"#64748b\">4</text><path d=\"M410.0 256.0V264.0\" stroke=\"#334155\"/><text x=\"407.2\" y=\"278.0\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"12\" fill=\"#64748b\">5</text><text x=\"416.0\" y=\"169.6\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"14\" fill=\"#7c3aed\" font-weight=\"700\">f</text><text x=\"416.0\" y=\"85.0\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"14\" fill=\"#0f766e\" font-weight=\"700\">g</text><path d=\"M60.0 190.0H424.0\" stroke=\"#ef4444\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><circle cx=\"270.0\" cy=\"239.0\" r=\"6\" fill=\"#f59e0b\"/><text x=\"280.0\" y=\"227.0\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"12\" fill=\"#b45309\" font-weight=\"700\">g′(3) = 0</text><circle cx=\"191.0\" cy=\"190.0\" r=\"6\" fill=\"#ef4444\"/><circle cx=\"349.0\" cy=\"190.0\" r=\"6\" fill=\"#ef4444\"/><text x=\"378.9\" y=\"182.0\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"12\" fill=\"#b91c1c\" font-weight=\"700\">g(x) = 1</text><text x=\"113.3\" y=\"210.0\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"12\" fill=\"#b91c1c\" font-weight=\"700\">f′(g(x)) = 0</text></svg>"
               }
             }
           ],
@@ -6809,7 +6803,7 @@
             "sourceQuestion": "4"
           },
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 280\"><rect width=\"420\" height=\"280\" fill=\"#fff\"/><path d=\"M35 235H390M210 255V25\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M45 205 C80 165 112 128 155 120 C195 112 222 150 252 190 C279 222 310 238 350 222 C369 214 382 196 395 169\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/><path d=\"M45 70 C100 115 135 193 210 220 C278 193 318 110 390 62\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"2.5\"/><circle cx=\"210\" cy=\"220\" r=\"5\" fill=\"#f59e0b\"/><circle cx=\"133\" cy=\"126\" r=\"5\" fill=\"#ef4444\"/><circle cx=\"288\" cy=\"136\" r=\"5\" fill=\"#ef4444\"/><text x=\"375\" y=\"165\" font-family=\"Arial\" font-size=\"13\" fill=\"#7c3aed\">f</text><text x=\"378\" y=\"59\" font-family=\"Arial\" font-size=\"13\" fill=\"#0f766e\">g</text><text x=\"210\" y=\"245\" font-family=\"Arial\" font-size=\"13\" text-anchor=\"middle\">g'(3)=0</text><text x=\"125\" y=\"112\" font-family=\"Arial\" font-size=\"12\">g(x)=1</text><text x=\"280\" y=\"121\" font-family=\"Arial\" font-size=\"12\">g(x)=1</text></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 460 300\" style=\"max-width:460px\"><rect width=\"460\" height=\"300\" fill=\"white\"/><path d=\"M50 260.0H446M60.0 282V44\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"450.0\" y=\"264.0\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\">x</text><text x=\"68.0\" y=\"42.0\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\">y</text><path d=\"M60.0 155.0 L61.8 153.3 L63.5 151.6 L65.2 150.0 L67.0 148.4 L68.8 146.9 L70.5 145.5 L72.2 144.1 L74.0 142.7 L75.8 141.4 L77.5 140.1 L79.2 138.9 L81.0 137.8 L82.8 136.7 L84.5 135.6 L86.2 134.6 L88.0 133.6 L89.8 132.7 L91.5 131.8 L93.2 131.0 L95.0 130.2 L96.8 129.5 L98.5 128.8 L100.2 128.1 L102.0 127.5 L103.8 126.9 L105.5 126.4 L107.2 125.9 L109.0 125.4 L110.8 125.0 L112.5 124.6 L114.2 124.3 L116.0 124.0 L117.8 123.8 L119.5 123.5 L121.2 123.3 L123.0 123.2 L124.8 123.1 L126.5 123.0 L128.2 122.9 L130.0 122.9 L131.8 122.9 L133.5 123.0 L135.2 123.1 L137.0 123.2 L138.8 123.3 L140.5 123.5 L142.2 123.7 L144.0 123.9 L145.8 124.2 L147.5 124.5 L149.2 124.8 L151.0 125.1 L152.8 125.5 L154.5 125.9 L156.2 126.3 L158.0 126.7 L159.8 127.2 L161.5 127.7 L163.2 128.2 L165.0 128.8 L166.8 129.3 L168.5 129.9 L170.2 130.5 L172.0 131.1 L173.8 131.7 L175.5 132.4 L177.2 133.1 L179.0 133.8 L180.8 134.5 L182.5 135.2 L184.2 136.0 L186.0 136.7 L187.8 137.5 L189.5 138.3 L191.2 139.1 L193.0 139.9 L194.8 140.8 L196.5 141.6 L198.2 142.5 L200.0 143.3 L201.8 144.2 L203.5 145.1 L205.2 146.0 L207.0 146.9 L208.8 147.8 L210.5 148.8 L212.2 149.7 L214.0 150.6 L215.8 151.6 L217.5 152.5 L219.2 153.5 L221.0 154.5 L222.8 155.4 L224.5 156.4 L226.2 157.4 L228.0 158.4 L229.8 159.3 L231.5 160.3 L233.2 161.3 L235.0 162.3 L236.8 163.3 L238.5 164.3 L240.2 165.2 L242.0 166.2 L243.8 167.2 L245.5 168.2 L247.2 169.2 L249.0 170.1 L250.8 171.1 L252.5 172.0 L254.2 173.0 L256.0 173.9 L257.8 174.9 L259.5 175.8 L261.2 176.7 L263.0 177.7 L264.8 178.6 L266.5 179.5 L268.2 180.4 L270.0 181.2 L271.8 182.1 L273.5 183.0 L275.2 183.8 L277.0 184.7 L278.8 185.5 L280.5 186.3 L282.2 187.1 L284.0 187.9 L285.8 188.6 L287.5 189.4 L289.2 190.1 L291.0 190.8 L292.8 191.5 L294.5 192.2 L296.2 192.8 L298.0 193.5 L299.8 194.1 L301.5 194.7 L303.2 195.3 L305.0 195.8 L306.8 196.4 L308.5 196.9 L310.2 197.4 L312.0 197.8 L313.8 198.3 L315.5 198.7 L317.2 199.1 L319.0 199.5 L320.8 199.8 L322.5 200.1 L324.2 200.4 L326.0 200.7 L327.8 200.9 L329.5 201.1 L331.2 201.3 L333.0 201.4 L334.8 201.5 L336.5 201.6 L338.2 201.7 L340.0 201.7 L341.8 201.7 L343.5 201.6 L345.2 201.5 L347.0 201.4 L348.8 201.2 L350.5 201.1 L352.2 200.8 L354.0 200.6 L355.8 200.3 L357.5 199.9 L359.2 199.6 L361.0 199.1 L362.8 198.7 L364.5 198.2 L366.2 197.7 L368.0 197.1 L369.8 196.5 L371.5 195.8 L373.2 195.1 L375.0 194.4 L376.8 193.6 L378.5 192.8 L380.2 191.9 L382.0 191.0 L383.8 190.0 L385.5 189.0 L387.2 187.9 L389.0 186.8 L390.8 185.6 L392.5 184.4 L394.2 183.2 L396.0 181.9 L397.8 180.5 L399.5 179.1 L401.2 177.7 L403.0 176.2 L404.8 174.6 L406.5 173.0 L408.2 171.3 L410.0 169.6\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><path d=\"M130.0 85.0 L131.4 88.1 L132.8 91.1 L134.2 94.1 L135.6 97.1 L137.0 100.0 L138.4 102.9 L139.8 105.8 L141.2 108.7 L142.6 111.5 L144.0 114.3 L145.4 117.0 L146.8 119.7 L148.2 122.4 L149.6 125.1 L151.0 127.7 L152.4 130.3 L153.8 132.9 L155.2 135.5 L156.6 138.0 L158.0 140.4 L159.4 142.9 L160.8 145.3 L162.2 147.7 L163.6 150.0 L165.0 152.4 L166.4 154.7 L167.8 156.9 L169.2 159.2 L170.6 161.4 L172.0 163.5 L173.4 165.7 L174.8 167.8 L176.2 169.9 L177.6 171.9 L179.0 173.9 L180.4 175.9 L181.8 177.9 L183.2 179.8 L184.6 181.7 L186.0 183.6 L187.4 185.4 L188.8 187.2 L190.2 189.0 L191.6 190.7 L193.0 192.4 L194.4 194.1 L195.8 195.7 L197.2 197.4 L198.6 198.9 L200.0 200.5 L201.4 202.0 L202.8 203.5 L204.2 205.0 L205.6 206.4 L207.0 207.8 L208.4 209.2 L209.8 210.5 L211.2 211.8 L212.6 213.1 L214.0 214.4 L215.4 215.6 L216.8 216.8 L218.2 217.9 L219.6 219.0 L221.0 220.1 L222.4 221.2 L223.8 222.2 L225.2 223.2 L226.6 224.2 L228.0 225.1 L229.4 226.0 L230.8 226.9 L232.2 227.8 L233.6 228.6 L235.0 229.4 L236.4 230.1 L237.8 230.9 L239.2 231.5 L240.6 232.2 L242.0 232.8 L243.4 233.4 L244.8 234.0 L246.2 234.5 L247.6 235.1 L249.0 235.5 L250.4 236.0 L251.8 236.4 L253.2 236.8 L254.6 237.1 L256.0 237.5 L257.4 237.8 L258.8 238.0 L260.2 238.2 L261.6 238.4 L263.0 238.6 L264.4 238.8 L265.8 238.9 L267.2 238.9 L268.6 239.0 L270.0 239.0 L271.4 239.0 L272.8 238.9 L274.2 238.9 L275.6 238.8 L277.0 238.6 L278.4 238.4 L279.8 238.2 L281.2 238.0 L282.6 237.8 L284.0 237.5 L285.4 237.1 L286.8 236.8 L288.2 236.4 L289.6 236.0 L291.0 235.5 L292.4 235.1 L293.8 234.5 L295.2 234.0 L296.6 233.4 L298.0 232.8 L299.4 232.2 L300.8 231.5 L302.2 230.9 L303.6 230.1 L305.0 229.4 L306.4 228.6 L307.8 227.8 L309.2 226.9 L310.6 226.0 L312.0 225.1 L313.4 224.2 L314.8 223.2 L316.2 222.2 L317.6 221.2 L319.0 220.1 L320.4 219.0 L321.8 217.9 L323.2 216.8 L324.6 215.6 L326.0 214.4 L327.4 213.1 L328.8 211.8 L330.2 210.5 L331.6 209.2 L333.0 207.8 L334.4 206.4 L335.8 205.0 L337.2 203.5 L338.6 202.0 L340.0 200.5 L341.4 198.9 L342.8 197.4 L344.2 195.7 L345.6 194.1 L347.0 192.4 L348.4 190.7 L349.8 189.0 L351.2 187.2 L352.6 185.4 L354.0 183.6 L355.4 181.7 L356.8 179.8 L358.2 177.9 L359.6 175.9 L361.0 173.9 L362.4 171.9 L363.8 169.9 L365.2 167.8 L366.6 165.7 L368.0 163.5 L369.4 161.4 L370.8 159.2 L372.2 156.9 L373.6 154.7 L375.0 152.4 L376.4 150.0 L377.8 147.7 L379.2 145.3 L380.6 142.9 L382.0 140.4 L383.4 138.0 L384.8 135.5 L386.2 132.9 L387.6 130.3 L389.0 127.7 L390.4 125.1 L391.8 122.4 L393.2 119.7 L394.6 117.0 L396.0 114.3 L397.4 111.5 L398.8 108.7 L400.2 105.8 L401.6 102.9 L403.0 100.0 L404.4 97.1 L405.8 94.1 L407.2 91.1 L408.6 88.1 L410.0 85.0\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><path d=\"M130.0 256.0V264.0\" stroke=\"#334155\"/><text x=\"127.2\" y=\"278.0\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"12\" fill=\"#64748b\">1</text><path d=\"M200.0 256.0V264.0\" stroke=\"#334155\"/><text x=\"197.2\" y=\"278.0\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"12\" fill=\"#64748b\">2</text><path d=\"M270.0 256.0V264.0\" stroke=\"#334155\"/><text x=\"267.2\" y=\"278.0\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"12\" fill=\"#64748b\">3</text><path d=\"M340.0 256.0V264.0\" stroke=\"#334155\"/><text x=\"337.2\" y=\"278.0\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"12\" fill=\"#64748b\">4</text><path d=\"M410.0 256.0V264.0\" stroke=\"#334155\"/><text x=\"407.2\" y=\"278.0\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"12\" fill=\"#64748b\">5</text><text x=\"416.0\" y=\"169.6\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"14\" fill=\"#7c3aed\" font-weight=\"700\">f</text><text x=\"416.0\" y=\"85.0\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"14\" fill=\"#0f766e\" font-weight=\"700\">g</text><circle cx=\"130.0\" cy=\"122.9\" r=\"5\" fill=\"#7c3aed\"/><circle cx=\"340.0\" cy=\"201.7\" r=\"5\" fill=\"#7c3aed\"/><path d=\"M130.0 260.0V122.9\" stroke=\"#c4b5fd\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M340.0 260.0V201.7\" stroke=\"#c4b5fd\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><text x=\"88.2\" y=\"112.9\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"12\" fill=\"#6d28d9\" font-weight=\"700\">f′ = 0</text><text x=\"348.0\" y=\"219.7\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"12\" fill=\"#6d28d9\" font-weight=\"700\">f′ = 0</text><circle cx=\"270.0\" cy=\"239.0\" r=\"5\" fill=\"#0f766e\"/><text x=\"280.0\" y=\"227.0\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"12\" fill=\"#0f766e\" font-weight=\"700\">g′ = 0</text></svg>"
           }
         },
         {
@@ -6831,15 +6825,12 @@
               "work": "\\(a(t)>0\\Rightarrow v\\text{ increases}\\)"
             },
             {
-              "explain": "At t=3 the acceleration graph crosses from above the axis to below it, so velocity changes from increasing to decreasing.",
+              "explain": "At \\(t=3\\) the acceleration graph crosses from above the axis to below it, so velocity changes from increasing to decreasing.",
               "work": "\\(a(t):+\\to-\\text{ at }t=3\\)"
             },
             {
               "explain": "Therefore velocity reaches its maximum at that turning time.",
-              "work": "\\(\\boxed{t=3}\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 270\"><rect width=\"420\" height=\"270\" fill=\"#fff\"/><path d=\"M38 220H390M60 245V30\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M60 220 C90 117 132 65 170 74 C211 82 247 145 275 219 C295 265 320 246 345 220 C365 197 379 176 390 165\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.4\"/><path d=\"M275 220V245M345 220V245\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-dasharray=\"4 3\"/><circle cx=\"275\" cy=\"220\" r=\"5\" fill=\"#ef4444\"/><circle cx=\"345\" cy=\"220\" r=\"5\" fill=\"#94a3b8\"/><text x=\"275\" y=\"260\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">t=3</text><text x=\"345\" y=\"260\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">t=5</text><text x=\"395\" y=\"216\" font-family=\"Arial\" font-size=\"14\">t</text><text x=\"65\" y=\"32\" font-family=\"Arial\" font-size=\"14\">a</text></svg>"
-              }
+              "work": "\\(\\boxed{t=3}\\)"
             }
           ],
           "timeLimit": 60,
@@ -6858,10 +6849,10 @@
           "id": "y12a-advanced-003-p136-q15",
           "type": "review",
           "difficulty": "medium",
-          "stem": "The cubic y = ax³ + bx² + cx + d has a point of inflexion at x = p. Show that p = −b/(3a).",
+          "stem": "The cubic \\(y=ax^3+bx^2+cx+d\\) has a point of inflexion at \\(x=p\\). Show that \\(p=-\\frac{b}{3a}\\).",
           "answer": "\\(p=-\\frac{b}{3a}\\)",
           "manual": true,
-          "hint": "At a point of inflexion the second derivative is zero. Differentiate twice, substitute x=p, then solve.",
+          "hint": "At a point of inflexion the second derivative is zero. Differentiate twice, substitute \\(x=p\\), then solve.",
           "steps": [
             {
               "explain": "Differentiate the cubic term by term.",
@@ -6872,11 +6863,11 @@
               "work": "\\(y''=6ax+2b\\)"
             },
             {
-              "explain": "At an inflection point x=p, set the second derivative equal to zero.",
+              "explain": "At an inflection point \\(x=p\\), set the second derivative equal to zero.",
               "work": "\\(6ap+2b=0\\)"
             },
             {
-              "explain": "Subtract 2b, then divide by 6a (a≠0 for a cubic). Simplify the fraction.",
+              "explain": "Subtract \\(2b\\), then divide by \\(6a\\) (a≠0 for a cubic). Simplify the fraction.",
               "work": "\\(6ap=-2b\\Rightarrow p=-\\frac{2b}{6a}=-\\frac{b}{3a}\\)"
             }
           ],
@@ -14813,15 +14804,12 @@
               "work": "\\(f''(x)=0\\text{ with a sign change}\\)"
             },
             {
-              "explain": "On the given derivative graph, the local maximum occurs at x=b.",
+              "explain": "On the given derivative graph, the local maximum occurs at \\(x=b\\).",
               "work": "\\(f'(x)\\text{ has a maximum at }x=b\\)"
             },
             {
-              "explain": "Thus f has a point of inflexion at x=b.",
-              "work": "\\(\\boxed{x=b}\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 270\"><rect width=\"420\" height=\"270\" fill=\"#fff\"/><path d=\"M40 225H390M210 245V30\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M58 220 C98 192 122 142 165 103 C195 76 218 59 246 62 C275 65 289 112 318 140 C344 165 371 168 393 164\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.4\"/><path d=\"M246 62V225\" stroke=\"#f59e0b\" stroke-dasharray=\"4 4\" stroke-width=\"2\"/><circle cx=\"246\" cy=\"62\" r=\"5\" fill=\"#f59e0b\"/><text x=\"246\" y=\"245\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\">b</text><text x=\"394\" y=\"222\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"216\" y=\"32\" font-family=\"Arial\" font-size=\"14\">y</text><text x=\"326\" y=\"138\" font-family=\"Arial\" font-size=\"13\">y=f′(x)</text></svg>"
-              }
+              "explain": "Thus f has a point of inflexion at \\(x=b\\).",
+              "work": "\\(\\boxed{x=b}\\)"
             }
           ],
           "timeLimit": 60,
@@ -14840,7 +14828,7 @@
           "id": "y12a-advanced-003-p136-q09",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "The function f(x) is defined for a ≤ x ≤ b. On this interval, \\(f'(x)\\) > 0 and \\(f''(x)\\) < 0. Which graph best represents y = f(x)?",
+          "stem": "The function \\(f(x)\\) is defined for \\(a\\le x\\le b\\). On this interval, \\(f'(x)>0\\) and \\(f''(x)<0\\). Which graph best represents \\(y=f(x)\\)?",
           "options": [
             {
               "text": "Graph A",
@@ -14871,7 +14859,7 @@
           "hint": "\\(f'>0\\) means the graph rises as x increases. \\(f''<0\\) means its slope gets smaller, so it bends down.",
           "steps": [
             {
-              "explain": "The first derivative is positive throughout the interval, so y=f(x) must rise from x=a to x=b.",
+              "explain": "The first derivative is positive throughout the interval, so \\(y=f(x)\\) must rise from \\(x=a\\) to \\(x=b\\).",
               "work": "\\(f'(x)>0\\Rightarrow f\\text{ is increasing}\\)"
             },
             {
@@ -14896,7 +14884,7 @@
           "id": "y12a-advanced-003-p136-q10",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "The diagram shows the graph of y = f(x). Which of the following is a correct statement?",
+          "stem": "The diagram shows the graph of \\(y=f(x)\\). Which of the following is a correct statement?",
           "options": [
             "\\(f''(1)<f(1)<1<f'(1)\\)",
             "\\(f''(1)<f'(1)<f(1)<1\\)",
@@ -14904,25 +14892,19 @@
             "\\(f'(1)<f(1)<1<f''(1)\\)"
           ],
           "answer": 0,
-          "hint": "At x=1, compare the graph height f(1), its tangent slope \\(f'(1)\\), and its concavity \\(f''(1)\\) with 1 and 0.",
+          "hint": "At \\(x=1\\), compare the graph height \\(f(1)\\), its tangent slope \\(f'(1)\\), and its concavity \\(f''(1)\\) with \\(1\\) and \\(0\\).",
           "steps": [
             {
-              "explain": "The dotted vertical line locates x=1. The point on the curve is below the dotted horizontal line y=1, so f(1)<1.",
-              "work": "\\(f(1)<1\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 280\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 235H390M75 255V25\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"394\" y=\"232\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"82\" y=\"27\" font-family=\"Arial\" font-size=\"14\">y</text><path d=\"M75 225 C145 225 169 218 194 160 C214 112 226 77 253 74 C283 70 298 105 323 140 C348 174 368 190 390 198\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><path d=\"M194 235V153M75 60H390\" stroke=\"#94a3b8\" stroke-dasharray=\"4 4\"/><circle cx=\"194\" cy=\"153\" r=\"5\" fill=\"#f59e0b\"/><text x=\"194\" y=\"255\" font-family=\"Arial\" font-size=\"13\" text-anchor=\"middle\">1</text><text x=\"55\" y=\"64\" font-family=\"Arial\" font-size=\"13\">1</text><text x=\"164\" y=\"143\" font-family=\"Arial\" font-size=\"13\">(1,f(1))</text></svg>"
-              }
+              "explain": "The dotted vertical line locates \\(x=1\\). The point on the curve is below the dotted horizontal line \\(y=1\\), so \\(f(1)<1\\).",
+              "work": "\\(f(1)<1\\)"
             },
             {
-              "explain": "At that point the curve rises steeply; its tangent slope is greater than 1.",
+              "explain": "At that point the curve rises steeply; its tangent slope is greater than \\(1\\).",
               "work": "\\(f'(1)>1\\)"
             },
             {
-              "explain": "At x=1 the curve changes concavity, so it is an inflection point and \\(f''(1)=0\\). The point height is positive but below 1, while the tangent gradient is greater than 1.",
-              "work": "\\(f''(1)=0<f(1)<1<f'(1)\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 280\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M45 235H390M75 255V25\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"394\" y=\"232\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"82\" y=\"27\" font-family=\"Arial\" font-size=\"14\">y</text><path d=\"M75 225 C145 225 169 218 194 160 C214 112 226 77 253 74 C283 70 298 105 323 140 C348 174 368 190 390 198\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\"/><path d=\"M194 235V153M75 60H390\" stroke=\"#94a3b8\" stroke-dasharray=\"4 4\"/><circle cx=\"194\" cy=\"153\" r=\"5\" fill=\"#f59e0b\"/><text x=\"194\" y=\"255\" font-family=\"Arial\" font-size=\"13\" text-anchor=\"middle\">1</text><text x=\"55\" y=\"64\" font-family=\"Arial\" font-size=\"13\">1</text><text x=\"164\" y=\"143\" font-family=\"Arial\" font-size=\"13\">(1,f(1))</text></svg>"
-              }
+              "explain": "At \\(x=1\\) the curve changes concavity, so it is an inflection point and \\(f''(1)=0\\). The point height is positive but below \\(1\\), while the tangent gradient is greater than \\(1\\).",
+              "work": "\\(f''(1)=0<f(1)<1<f'(1)\\)"
             }
           ],
           "timeLimit": 60,
@@ -14948,21 +14930,15 @@
           "steps": [
             {
               "explain": "At A, f has a horizontal tangent and continues increasing. Thus \\(f'(A)=0\\), but \\(f'\\) stays positive on both sides: its graph touches the x-axis there.",
-              "work": "\\(f'(A)=0,\\quad f'>0\\text{ on both sides}\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 280\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M35 210H390M200 250V25\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M55 210 C92 210 102 185 115 163 C133 128 157 101 200 98 C239 95 269 80 291 61 C315 43 333 46 350 68 C369 90 378 145 392 210\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><path d=\"M115 210V163M200 210V98M350 210V68\" stroke=\"#f59e0b\" stroke-dasharray=\"4 3\"/><circle cx=\"115\" cy=\"163\" r=\"5\" fill=\"#ef4444\"/><circle cx=\"200\" cy=\"98\" r=\"5\" fill=\"#8b5cf6\"/><circle cx=\"350\" cy=\"68\" r=\"5\" fill=\"#0ea5e9\"/><text x=\"115\" y=\"233\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">A, x=−2</text><text x=\"200\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">B, x=1</text><text x=\"350\" y=\"52\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">C, x=3</text><text x=\"394\" y=\"207\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"206\" y=\"26\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
-              }
+              "work": "\\(f'(A)=0,\\quad f'>0\\text{ on both sides}\\)"
             },
             {
-              "explain": "At B, the concavity of f changes. Since \\(f''\\) changes sign, \\(f'\\) has a turning point at B. The original graph is still rising there, so \\(f'(B)\\)>0.",
+              "explain": "At B, the concavity of f changes. Since \\(f''\\) changes sign, \\(f'\\) has a turning point at B. The original graph is still rising there, so \\(f'(B)>0\\).",
               "work": "\\(f''\\text{ changes sign at }B\\Rightarrow f'\\text{ has a local maximum at }B\\)"
             },
             {
               "explain": "At C, f has a maximum and a horizontal tangent. The slope changes from positive to negative, so \\(f'\\) crosses the x-axis at C.",
-              "work": "\\(f'(C)=0,\\quad +\\to-\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 280\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M35 210H390M200 250V25\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M55 210 C92 210 102 185 115 163 C133 128 157 101 200 98 C239 95 269 80 291 61 C315 43 333 46 350 68 C369 90 378 145 392 210\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><path d=\"M115 210V163M200 210V98M350 210V68\" stroke=\"#f59e0b\" stroke-dasharray=\"4 3\"/><circle cx=\"115\" cy=\"163\" r=\"5\" fill=\"#ef4444\"/><circle cx=\"200\" cy=\"98\" r=\"5\" fill=\"#8b5cf6\"/><circle cx=\"350\" cy=\"68\" r=\"5\" fill=\"#0ea5e9\"/><text x=\"115\" y=\"233\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">A, x=−2</text><text x=\"200\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">B, x=1</text><text x=\"350\" y=\"52\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">C, x=3</text><text x=\"394\" y=\"207\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"206\" y=\"26\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
-              }
+              "work": "\\(f'(C)=0,\\quad +\\to-\\)"
             },
             {
               "explain": "Draw a smooth curve through these features in the order A, B, C and below the axis after C.",
@@ -14988,7 +14964,7 @@
           "id": "y12a-advanced-003-p136-q14",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "The diagram shows points A, B, C and D on the graph y = f(x). At which point is \\(f'(x)\\) > 0 and \\(f''(x) = 0\\)?",
+          "stem": "The diagram shows points A, B, C and D on the graph \\(y=f(x)\\). At which point is \\(f'(x)>0\\) and \\(f''(x)=0\\)?",
           "options": [
             "A",
             "B",
@@ -14999,18 +14975,12 @@
           "hint": "Find a point where the curve is rising and changing concavity (an inflection point).",
           "steps": [
             {
-              "explain": "At A the curve is falling, so \\(f'(A)\\)<0. It cannot satisfy the positive-gradient condition.",
-              "work": "\\(f'(A)<0\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 280\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M40 235H390M80 250V25\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M80 44 C111 45 124 90 149 145 C173 199 201 221 231 198 C258 177 276 142 306 141 C334 140 353 151 370 119 C381 97 386 62 394 37\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.4\"/><circle cx=\"149\" cy=\"145\" r=\"5\" fill=\"#94a3b8\"/><circle cx=\"231\" cy=\"198\" r=\"5\" fill=\"#f59e0b\"/><circle cx=\"306\" cy=\"141\" r=\"5\" fill=\"#8b5cf6\"/><circle cx=\"370\" cy=\"119\" r=\"5\" fill=\"#94a3b8\"/><text x=\"149\" y=\"167\" font-family=\"Arial\" font-size=\"14\">A</text><text x=\"231\" y=\"221\" font-family=\"Arial\" font-size=\"14\">B</text><text x=\"306\" y=\"164\" font-family=\"Arial\" font-size=\"14\">C</text><text x=\"370\" y=\"106\" font-family=\"Arial\" font-size=\"14\">D</text><text x=\"394\" y=\"232\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"86\" y=\"27\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
-              }
+              "explain": "At A the curve is falling, so \\(f'(A)<0\\). It cannot satisfy the positive-gradient condition.",
+              "work": "\\(f'(A)<0\\)"
             },
             {
-              "explain": "B lies on the rising part of the curve where its bend changes from concave up to concave down. Thus \\(f'(B)\\)>0 and \\(f''(B)=0\\).",
-              "work": "\\(f'(B)>0,\\quad f''(B)=0\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 280\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M40 235H390M80 250V25\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M80 44 C111 45 124 90 149 145 C173 199 201 221 231 198 C258 177 276 142 306 141 C334 140 353 151 370 119 C381 97 386 62 394 37\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.4\"/><circle cx=\"149\" cy=\"145\" r=\"5\" fill=\"#94a3b8\"/><circle cx=\"231\" cy=\"198\" r=\"5\" fill=\"#f59e0b\"/><circle cx=\"306\" cy=\"141\" r=\"5\" fill=\"#8b5cf6\"/><circle cx=\"370\" cy=\"119\" r=\"5\" fill=\"#94a3b8\"/><text x=\"149\" y=\"167\" font-family=\"Arial\" font-size=\"14\">A</text><text x=\"231\" y=\"221\" font-family=\"Arial\" font-size=\"14\">B</text><text x=\"306\" y=\"164\" font-family=\"Arial\" font-size=\"14\">C</text><text x=\"370\" y=\"106\" font-family=\"Arial\" font-size=\"14\">D</text><text x=\"394\" y=\"232\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"86\" y=\"27\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
-              }
+              "explain": "B lies on the rising part of the curve where its bend changes from concave up to concave down. Thus \\(f'(B)>0\\) and \\(f''(B)=0\\).",
+              "work": "\\(f'(B)>0,\\quad f''(B)=0\\)"
             },
             {
               "explain": "C is on a nearly horizontal section, while D is rising with concave-up curvature. B is the required point.",
@@ -16354,10 +16324,7 @@
             },
             {
               "explain": "Label the minimum, maximum, and inflection point on the completed curve; no x-intercepts are required.",
-              "work": "\\(\\min(0,-1),\\quad\\max(2,3),\\quad\\text{inflection }(1,1)\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 280\"><rect width=\"420\" height=\"280\" fill=\"#fff\"/><path d=\"M35 150H390M150 25V260\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M62 28 C100 66 118 220 150 235 C181 251 204 159 232 115 C252 83 267 43 287 43 C322 42 339 131 390 239\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.4\"/><circle cx=\"150\" cy=\"235\" r=\"5\" fill=\"#8b5cf6\"/><circle cx=\"287\" cy=\"43\" r=\"5\" fill=\"#f59e0b\"/><circle cx=\"218\" cy=\"109\" r=\"5\" fill=\"#0ea5e9\"/><text x=\"150\" y=\"257\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">Min (0,−1)</text><text x=\"300\" y=\"35\" font-family=\"Arial\" font-size=\"13\">Max (2,3)</text><text x=\"224\" y=\"97\" font-family=\"Arial\" font-size=\"13\">Inflection (1,1)</text><text x=\"394\" y=\"146\" font-family=\"Arial\" font-size=\"14\">x</text><text x=\"156\" y=\"23\" font-family=\"Arial\" font-size=\"14\">y</text></svg>"
-              }
+              "work": "\\(\\min(0,-1),\\quad\\max(2,3),\\quad\\text{inflection }(1,1)\\)"
             }
           ],
           "timeLimit": 60,
@@ -16368,7 +16335,7 @@
             "course": "Advanced",
             "sourceQuestion": "5"
           },
-          "answer": "Stationary points: minimum (0, −1) and maximum (2, 3); point of inflection (1, 1). Do not include x-intercepts."
+          "answer": "Stationary points: minimum \\((0, -1)\\) and maximum \\((2, 3)\\); point of inflection \\((1, 1)\\). Do not include x-intercepts."
         },
         {
           "id": "y12a-advanced-003-p136-q17",

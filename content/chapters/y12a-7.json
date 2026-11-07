@@ -707,10 +707,7 @@
           "steps": [
             {
               "explain": "At P the curve slopes down as time increases, so the tangent gradient and velocity are negative.",
-              "work": "\\(v=\\frac{dx}{dt}<0\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 260\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M40 220H390M55 242V28\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M55 220 C88 160 105 79 162 66 C206 54 236 108 263 155 C279 176 296 176 311 187 C335 206 365 212 390 151\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.4\"/><circle cx=\"279\" cy=\"176\" r=\"5\" fill=\"#f59e0b\"/><text x=\"287\" y=\"171\" font-family=\"Arial\" font-size=\"14\">P</text><text x=\"394\" y=\"217\" font-family=\"Arial\" font-size=\"14\">t</text><text x=\"60\" y=\"30\" font-family=\"Arial\" font-size=\"14\">x</text></svg>"
-              }
+              "work": "\\(v=\\frac{dx}{dt}<0\\)"
             },
             {
               "explain": "The curve is bending upward near P as it approaches a local minimum. Its gradient is increasing, so acceleration is positive.",
@@ -718,10 +715,7 @@
             },
             {
               "explain": "Therefore the particle has negative velocity and positive acceleration.",
-              "work": "\\(\\boxed{v<0,\\ a>0}\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 260\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M40 220H390M55 242V28\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M55 220 C88 160 105 79 162 66 C206 54 236 108 263 155 C279 176 296 176 311 187 C335 206 365 212 390 151\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.4\"/><circle cx=\"279\" cy=\"176\" r=\"5\" fill=\"#f59e0b\"/><text x=\"287\" y=\"171\" font-family=\"Arial\" font-size=\"14\">P</text><text x=\"394\" y=\"217\" font-family=\"Arial\" font-size=\"14\">t</text><text x=\"60\" y=\"30\" font-family=\"Arial\" font-size=\"14\">x</text></svg>"
-              }
+              "work": "\\(\\boxed{v<0,\\ a>0}\\)"
             }
           ],
           "timeLimit": 60,
@@ -731,6 +725,9 @@
             "page": "136-137, 139",
             "course": "Advanced",
             "sourceQuestion": "11"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 420 260\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M40 220H390M55 242V28\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M55 220 C88 160 105 79 162 66 C206 54 236 108 263 155 C279 176 296 176 311 187 C335 206 365 212 390 151\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.4\"/><circle cx=\"279\" cy=\"176\" r=\"5\" fill=\"#f59e0b\"/><text x=\"287\" y=\"171\" font-family=\"Arial\" font-size=\"14\">P</text><text x=\"394\" y=\"217\" font-family=\"Arial\" font-size=\"14\">t</text><text x=\"60\" y=\"30\" font-family=\"Arial\" font-size=\"14\">x</text></svg>"
           }
         },
         {
@@ -746,18 +743,18 @@
               "manual": true,
               "stem": "Show that the acceleration of the particle is always negative.",
               "answer": "\\(a(t)=-\\frac{2}{(1+t)^3}<0\\) for all \\(t\\geq0\\).",
-              "hint": "Differentiate displacement once to find velocity, then again to find acceleration. Use t≥0 to check the denominator is positive.",
+              "hint": "Differentiate displacement once to find velocity, then again to find acceleration. Use \\(t\\ge 0\\) to check the denominator is positive.",
               "steps": [
                 {
                   "explain": "Rewrite the reciprocal as a negative power.",
                   "work": "\\(x=t-(1+t)^{-1}\\)"
                 },
                 {
-                  "explain": "Differentiate. The derivative of t is 1, and the chain rule gives a positive reciprocal square for the second term.",
+                  "explain": "Differentiate. The derivative of t is \\(1\\), and the chain rule gives a positive reciprocal square for the second term.",
                   "work": "\\(v=\\frac{dx}{dt}=1+(1+t)^{-2}\\)"
                 },
                 {
-                  "explain": "Differentiate again using the chain rule. Since t≥0, (1+t)^3 is positive, while the numerator is negative.",
+                  "explain": "Differentiate again using the chain rule. Since \\(t\\ge0\\), \\((1+t)^3\\) is positive, while the numerator is negative.",
                   "work": "\\(a=\\frac{dv}{dt}=-2(1+t)^{-3}=-\\frac{2}{(1+t)^3}<0\\)"
                 }
               ],
@@ -771,13 +768,13 @@
               "stem": "What value does the velocity approach as t increases indefinitely?",
               "options": [
                 {
-                  "text": "0"
+                  "text": "\\(0\\)"
                 },
                 {
-                  "text": "1 m s⁻¹"
+                  "text": "\\(1\\text{ m s}^{-1}\\)"
                 },
                 {
-                  "text": "2 m s⁻¹"
+                  "text": "\\(2\\text{ m s}^{-1}\\)"
                 },
                 {
                   "text": "It increases without bound."
@@ -795,7 +792,7 @@
                   "work": "\\(\\lim_{t\\to\\infty}\\frac{1}{(1+t)^2}=0\\)"
                 },
                 {
-                  "explain": "The remaining value is 1 metre per second.",
+                  "explain": "The remaining value is \\(1\\) metre per second.",
                   "work": "\\(\\lim_{t\\to\\infty}v(t)=1\\text{ m s}^{-1}\\)"
                 }
               ],
