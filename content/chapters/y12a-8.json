@@ -14830,14 +14830,14 @@
           "id": "y12a-advanced-005-p243-q03",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "Tina inherits $60000 and invests it in an account earning interest at a rate of 0.5% per month. Each month, immediately after the interest has been paid, Tina withdraws $800. The amount in the account immediately after the nth withdrawal can be determined using \\(A_n=A_(n-1)(1.005)-800\\), where \\(n=1,2\\),... and \\(A_0=60000\\). Answer parts (a)–(c).",
-          "hint": "Track the timing carefully: monthly interest is added before each withdrawal. For the first three months, repeat the recurrence; for the \\(94th\\), use the geometric sum.",
+          "stem": "Tina inherits \\(\\$60000\\) and invests it in an account earning interest at a rate of 0.5% per month. Each month, immediately after the interest has been paid, Tina withdraws \\(\\$800\\). The amount in the account immediately after the nth withdrawal can be determined using \\(A_n=A_{n-1}(1.005)-800\\), where \\(n=1,2\\),... and \\(A_0=60000\\). Answer parts (a)–(c).",
+          "hint": "Track the timing carefully: monthly interest is added before each withdrawal. For the first three months, repeat the recurrence; for the \\(94\\text{th}\\), use the geometric sum.",
           "parts": [
             {
               "id": "y12a-advanced-005-p243-q03-a",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Tina starts with $60000, earns 0.5% interest monthly, then withdraws $800. Find the balance immediately after the third withdrawal.",
+              "stem": "Tina starts with \\(\\$60000,\\) earns 0.5% interest monthly, then withdraws \\(\\$800\\). Find the balance immediately after the third withdrawal.",
               "options": [
                 "\\(\\$58492.49\\)",
                 "\\(\\$60000\\)",
@@ -14848,7 +14848,7 @@
               "hint": "Apply the same recurrence three times: multiply by \\(1.005\\), then subtract \\(800\\).",
               "steps": [
                 {
-                  "explain": "For each month, add 0.5% interest to the current amount, then subtract the $800 withdrawal.",
+                  "explain": "For each month, add 0.5% interest to the current amount, then subtract the \\(\\$800\\) withdrawal.",
                   "work": "\\(A_1=60000(1.005)-800=59500\\)"
                 },
                 {
@@ -14884,11 +14884,11 @@
               "hint": "Total interest equals the final balance plus all withdrawals minus the starting balance.",
               "steps": [
                 {
-                  "explain": "Over three months, Tina withdraws 3×$800. Add these withdrawals back to the final balance to recover the amount after interest but before withdrawals.",
+                  "explain": "Over three months, Tina withdraws 3×\\(\\$800\\). Add these withdrawals back to the final balance to recover the amount after interest but before withdrawals.",
                   "work": "\\(I=A_3+3(800)-60000\\)"
                 },
                 {
-                  "explain": "Substitute \\(A3\\).",
+                  "explain": "Substitute \\(A_3\\).",
                   "work": "\\(I=58492.4875+2400-60000=892.4875\\)"
                 },
                 {
@@ -14909,7 +14909,7 @@
               "id": "y12a-advanced-005-p243-q03-c",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Using \\(A_n=A_{n-1}(1.005)-800\\), \\(A_0=60000\\), find the balance immediately after the \\(94th\\) withdrawal.",
+              "stem": "Using \\(A_n=A_{n-1}(1.005)-800\\), \\(A_0=60000\\), find the balance immediately after the \\(94\\text{th}\\) withdrawal.",
               "options": [
                 "\\(\\$187.85\\)",
                 "\\(\\$0.00\\)",
@@ -14917,7 +14917,7 @@
                 "\\(\\$1878.45\\)"
               ],
               "answer": 0,
-              "hint": "Expand the recurrence: the initial balance grows for 94 months, and the $800 withdrawals form a geometric series.",
+              "hint": "Expand the recurrence: the initial balance grows for 94 months, and the \\(\\$800\\) withdrawals form a geometric series.",
               "steps": [
                 {
                   "explain": "Write the balance after \\(94\\) iterations.",
@@ -15298,14 +15298,14 @@
           "id": "y12a-advanced-005-p243-q02",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "On the day that Megan was born, her grandfather deposited $5000 into an account earning 3% per annum compounded annually. On each birthday after this, her grandfather deposited $1000 into the same account, making his final deposit on Megan’s 17th birthday. Let A_n be the amount in the account on Megan’s nth birthday, after the deposit is made. Answer (a) and (b) as printed.",
-          "hint": "On a birthday, the previous balance earns 3% first, and then the $1000 deposit is added. Later, for withdrawals, interest is added before subtracting $2000.",
+          "stem": "On the day that Megan was born, her grandfather deposited \\(\\$5000\\) into an account earning 3% per annum compounded annually. On each birthday after this, her grandfather deposited \\(\\$1000\\) into the same account, making his final deposit on Megan’s 17th birthday. Let \\(A_n\\) be the amount in the account on Megan’s nth birthday, after the deposit is made. Answer parts (a) and (b).",
+          "hint": "On a birthday, the previous balance earns 3% first, and then the \\(\\$1000\\) deposit is added. Later, for withdrawals, interest is added before subtracting \\(\\$2000\\).",
           "parts": [
             {
               "id": "y12a-advanced-005-p243-q02-a",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "On the day Megan was born, her grandfather deposited $5000 into an account earning 3% per annum compounded annually. On each birthday after this, he deposited $1000. Show that A_3=$8554.54.",
+              "stem": "On the day Megan was born, her grandfather deposited \\(\\$5000\\) into an account earning 3% per annum compounded annually. On each birthday after this, he deposited \\(\\$1000\\). Show that \\(A_3=\\$8554.54\\).",
               "options": [
                 "\\(\\$8554.54\\)",
                 "\\(\\$8654.54\\)",
@@ -15313,10 +15313,10 @@
                 "\\(\\$30025.83\\)"
               ],
               "answer": 0,
-              "hint": "Start with $5000. Each birthday, grow the current balance by 1.03 and then add $1000. Repeat for three birthdays.",
+              "hint": "Start with \\(\\$5000\\). Each birthday, grow the current balance by 1.03 and then add \\(\\$1000\\). Repeat for three birthdays.",
               "steps": [
                 {
-                  "explain": "On each birthday the account first earns 3% interest. The $1000 birthday deposit is made after interest.",
+                  "explain": "On each birthday the account first earns 3% interest. The \\(\\$1000\\) birthday deposit is made after interest.",
                   "work": "\\(A_1=5000(1.03)+1000\\)"
                 },
                 {
@@ -15324,8 +15324,8 @@
                   "work": "\\(A_2=6150(1.03)+1000=7334.50;\\quad A_3=7334.50(1.03)+1000=8554.535\\)"
                 },
                 {
-                  "explain": "Hold on: use the source timing: A_n is on Megan’s nth birthday after the deposit is made. The worked source gives $8554.54; check the sequence values against the given balance convention.",
-                  "work": "\\(A_1=5000(1.03)+1000=6150;\\ A_2=6150(1.03)+1000=7334.50;\\ A_3=7334.50(1.03)+1000=8554.535\\approx\\boxed{\\$8554.54}\\)"
+                  "explain": "Apply the same interest-then-deposit rule once more and round to the nearest cent. \\(A_n\\) is the balance on Megan's \\(n\\)th birthday, after the deposit is made.",
+                  "work": "\\(A_3=7334.50(1.03)+1000=8554.535\\approx\\boxed{\\$8554.54}\\)"
                 }
               ],
               "timeLimit": 60,
@@ -15341,7 +15341,7 @@
               "id": "y12a-advanced-005-p243-q02-b",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "On her 17th birthday, just after the final deposit is made, Megan has $30025.83 in her account. She leaves the money invested at 3% per annum compounded annually. On her 18th birthday and on each birthday after this, she withdraws $2000. How many withdrawals of $2000 will Megan be able to make?",
+              "stem": "On her 17th birthday, just after the final deposit is made, Megan has \\(\\$30025.83\\) in her account. She leaves the money invested at 3% per annum compounded annually. On her 18th birthday and on each birthday after this, she withdraws \\(\\$2000\\). How many withdrawals of \\(\\$2000\\) will Megan be able to make?",
               "options": [
                 "\\(20\\)",
                 "\\(21\\)",
@@ -15349,18 +15349,18 @@
                 "\\(18\\)"
               ],
               "answer": 0,
-              "hint": "At each birthday, add 3% interest first, then subtract $2000. Use the balance after each withdrawal to find the last full withdrawal.",
+              "hint": "At each birthday, add 3% interest first, then subtract \\(\\$2000\\). Use the balance after each withdrawal to find the last full withdrawal.",
               "steps": [
                 {
-                  "explain": "Let A_0=$30025.83 at age 17. Each year the balance earns 3%, then $2000 is withdrawn.",
+                  "explain": "Let A_0=\\(\\$30025.83\\) at age 17. Each year the balance earns 3%, then \\(\\$2000\\) is withdrawn.",
                   "work": "\\(A_n=30025.83(1.03)^n-2000[1+1.03+\\cdots+1.03^{n-1}]\\)"
                 },
                 {
                   "explain": "Use a geometric sum and check the balance around the final withdrawal.",
-                  "work": "\\(A_n=30025.83(1.03)^n-2000\\frac{1.03^n-1}{0.03};\\quad A_{20}>0,\\ A_{21}<0\\)"
+                  "work": "\\(A_n=30025.83(1.03)^n-2000\\frac{1.03^n-1}{0.03};\\quad A_{20}\\approx489.24>0,\\ A_{21}\\approx-1496.08<0\\)"
                 },
                 {
-                  "explain": "Twenty complete $2000 withdrawals can be made.",
+                  "explain": "Twenty complete \\(\\$2000\\) withdrawals can be made.",
                   "work": "\\(\\boxed{20}\\)"
                 }
               ],
@@ -15387,14 +15387,14 @@
           "id": "y12a-advanced-005-p243-q04",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "Elliot deposited $5000 at the end of each year for 10 years in an annuity earning 2.15% per annum, compounded annually. The table shows the balance at the end of each year, with the total at the end of year 4 equal to $20654.29. The shaded cells are A (year \\(5)\\) and B (year \\(10)\\).",
+          "stem": "Elliot deposited \\(\\$5000\\) at the end of each year for 10 years in an annuity earning 2.15% per annum, compounded annually. The table shows the balance at the end of each year, with the total at the end of year 4 equal to \\(\\$20654.29\\). The shaded cells are A (year \\(5\\)) and B (year \\(10\\)).",
           "hint": "For A, carry forward the year \\(4\\) total by one year and add the new deposit. For B, add the ten deposits as a geometric series.",
           "parts": [
             {
               "id": "y12a-advanced-005-p243-q04-i",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Elliot deposited $5000 at the end of each year for 10 years in an annuity earning 2.15% per annum, compounded annually. The table gives a total of $20654.29 at the end of year 4. Find the value of A, the total at the end of year 5.",
+              "stem": "Elliot deposited \\(\\$5000\\) at the end of each year for 10 years in an annuity earning 2.15% per annum, compounded annually. The table gives a total of \\(\\$20654.29\\) at the end of year 4. Find the value of A, the total at the end of year 5.",
               "options": [
                 "\\(\\$26098.36\\)",
                 "\\(\\$25654.29\\)",
@@ -15402,14 +15402,14 @@
                 "\\(\\$5000.00\\)"
               ],
               "answer": 0,
-              "hint": "At the start of year 5 the balance is $20654.29. It earns 2.15% interest, then Elliot deposits $5000 at year end.",
+              "hint": "At the start of year 5 the balance is \\(\\$20654.29\\). It earns 2.15% interest, then Elliot deposits \\(\\$5000\\) at year end.",
               "steps": [
                 {
                   "explain": "Grow the year-4 balance by 2.15%.",
                   "work": "\\(20654.29(1.0215)\\)"
                 },
                 {
-                  "explain": "Add the year-5 deposit of $5000.",
+                  "explain": "Add the year-5 deposit of \\(\\$5000\\).",
                   "work": "\\(A=20654.29(1.0215)+5000\\)"
                 },
                 {
@@ -15472,7 +15472,7 @@
             "sourceQuestion": "Q4"
           },
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 760 390\" role=\"img\" aria-label=\"Elliot’s yearly savings table\"><rect width=\"760\" height=\"390\" rx=\"14\" fill=\"#fff\"/><g stroke=\"#475569\" stroke-width=\"2\" fill=\"none\"><path d=\"M24 30H736M24 96H736M24 144H736M24 192H736M24 240H736M24 288H736M24 336H736M24 384H736\"/><path d=\"M24 30V384M118 30V384M300 30V384M446 30V384M582 30V384M736 30V384\"/></g><g fill=\"#eef2ff\"><rect x=\"24\" y=\"240\" width=\"712\" height=\"48\"/><rect x=\"24\" y=\"288\" width=\"712\" height=\"48\"/><rect x=\"24\" y=\"336\" width=\"712\" height=\"48\"/></g><g fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"15\" text-anchor=\"middle\"><text x=\"71\" y=\"56\">Year</text><text x=\"209\" y=\"50\">Balance at</text><text x=\"209\" y=\"70\">beginning of year</text><text x=\"373\" y=\"50\">Interest on</text><text x=\"373\" y=\"70\">balance</text><text x=\"514\" y=\"50\">Annual</text><text x=\"514\" y=\"70\">deposit</text><text x=\"659\" y=\"50\">Total at end</text><text x=\"659\" y=\"70\">of year</text></g><g fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" text-anchor=\"middle\"><text x=\"71\" y=\"127\">1</text><text x=\"209\" y=\"127\">0.00</text><text x=\"373\" y=\"127\">0.00</text><text x=\"514\" y=\"127\">5000.00</text><text x=\"659\" y=\"127\">5000.00</text><text x=\"71\" y=\"175\">2</text><text x=\"209\" y=\"175\">5000.00</text><text x=\"373\" y=\"175\">107.50</text><text x=\"514\" y=\"175\">5000.00</text><text x=\"659\" y=\"175\">10107.50</text><text x=\"71\" y=\"223\">3</text><text x=\"209\" y=\"223\">10107.50</text><text x=\"373\" y=\"223\">217.31</text><text x=\"514\" y=\"223\">5000.00</text><text x=\"659\" y=\"223\">15324.81</text><text x=\"71\" y=\"271\">4</text><text x=\"209\" y=\"271\">15324.81</text><text x=\"373\" y=\"271\">329.48</text><text x=\"514\" y=\"271\">5000.00</text><text x=\"659\" y=\"271\">20654.29</text><text x=\"71\" y=\"319\">5</text><text x=\"659\" y=\"319\" font-weight=\"700\">A</text><text x=\"71\" y=\"367\">10</text><text x=\"659\" y=\"367\" font-weight=\"700\">B</text></g></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" style=\"max-width:760px\" viewBox=\"0 0 760 390\" role=\"img\" aria-label=\"Elliot’s yearly savings table\"><rect width=\"760\" height=\"390\" rx=\"14\" fill=\"#fff\"/><g stroke=\"#475569\" stroke-width=\"2\" fill=\"none\"><path d=\"M24 30H736M24 96H736M24 144H736M24 192H736M24 240H736M24 288H736M24 336H736M24 384H736\"/><path d=\"M24 30V384M118 30V384M300 30V384M446 30V384M582 30V384M736 30V384\"/></g><g fill=\"#eef2ff\"><rect x=\"24\" y=\"240\" width=\"712\" height=\"48\"/><rect x=\"24\" y=\"288\" width=\"712\" height=\"48\"/><rect x=\"24\" y=\"336\" width=\"712\" height=\"48\"/></g><g fill=\"#172554\" font-family=\"Arial,sans-serif\" font-size=\"15\" text-anchor=\"middle\"><text x=\"71\" y=\"56\">Year</text><text x=\"209\" y=\"50\">Balance at</text><text x=\"209\" y=\"70\">beginning of year</text><text x=\"373\" y=\"50\">Interest on</text><text x=\"373\" y=\"70\">balance</text><text x=\"514\" y=\"50\">Annual</text><text x=\"514\" y=\"70\">deposit</text><text x=\"659\" y=\"50\">Total at end</text><text x=\"659\" y=\"70\">of year</text></g><g fill=\"#0f172a\" font-family=\"Arial,sans-serif\" font-size=\"15\" text-anchor=\"middle\"><text x=\"71\" y=\"127\">1</text><text x=\"209\" y=\"127\">0.00</text><text x=\"373\" y=\"127\">0.00</text><text x=\"514\" y=\"127\">5000.00</text><text x=\"659\" y=\"127\">5000.00</text><text x=\"71\" y=\"175\">2</text><text x=\"209\" y=\"175\">5000.00</text><text x=\"373\" y=\"175\">107.50</text><text x=\"514\" y=\"175\">5000.00</text><text x=\"659\" y=\"175\">10107.50</text><text x=\"71\" y=\"223\">3</text><text x=\"209\" y=\"223\">10107.50</text><text x=\"373\" y=\"223\">217.31</text><text x=\"514\" y=\"223\">5000.00</text><text x=\"659\" y=\"223\">15324.81</text><text x=\"71\" y=\"271\">4</text><text x=\"209\" y=\"271\">15324.81</text><text x=\"373\" y=\"271\">329.48</text><text x=\"514\" y=\"271\">5000.00</text><text x=\"659\" y=\"271\">20654.29</text><text x=\"71\" y=\"319\">5</text><text x=\"659\" y=\"319\" font-weight=\"700\">A</text><text x=\"71\" y=\"367\">10</text><text x=\"659\" y=\"367\" font-weight=\"700\">B</text></g></svg>"
           }
         },
         {
@@ -18814,14 +18814,14 @@
           "id": "y12a-advanced-005-p243-q01",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "In a reducing-balance loan, an amount P is borrowed for n months at an interest rate of 0.25% per month, compounded monthly. At the end of each month, a repayment of M is made. After the nth repayment has been made, the amount owing is given by \\(A_n=P(1.0025)^n-M(1+(1.0025)+...+(1.0025)^{n-1})\\). Jane borrows $200000 in a reducing-balance loan. The loan is to be repaid in 180 monthly repayments. After 100 repayments of $1381.16 have been made, the interest rate changes to 0.35% per month. At this stage, the amount owing to the nearest dollar is $100032. Jane continues to make the same monthly repayments. Answer parts (a)–(c).",
+          "stem": "In a reducing-balance loan, an amount P is borrowed for n months at an interest rate of 0.25% per month, compounded monthly. At the end of each month, a repayment of M is made. After the nth repayment has been made, the amount owing is given by \\(A_n=P(1.0025)^n-M(1+(1.0025)+...+(1.0025)^{n-1})\\). Jane borrows \\(\\$200000\\) in a reducing-balance loan. The loan is to be repaid in 180 monthly repayments. After 100 repayments of \\(\\$1381.16\\) have been made, the interest rate changes to 0.35% per month. At this stage, the amount owing to the nearest dollar is \\(\\$100032\\). Jane continues to make the same monthly repayments. Answer parts (a)–(c).",
           "hint": "Use the present-value formula for part (a). For the later parts, update the balance monthly: interest is added first, then the fixed repayment is subtracted.",
           "parts": [
             {
               "id": "y12a-advanced-005-p243-q01-a-copy",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Which monthly repayment, to the nearest cent, pays off $200000 in 180 months at 0.25% per month?",
+              "stem": "Which monthly repayment, to the nearest cent, pays off \\(\\$200000\\) in 180 months at 0.25% per month?",
               "options": [
                 "\\(\\$1381.16\\)",
                 "\\(\\$1281.16\\)",
@@ -18857,7 +18857,7 @@
               "id": "y12a-advanced-005-p243-q01-b1",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "After 100 repayments of $1381.16, the interest rate changes to 0.35% per month. The amount owing is $100032. Jane continues to make the same monthly repayments. How many more full monthly payments of $1381.16 will she need to make?",
+              "stem": "After 100 repayments of \\(\\$1381.16\\), the interest rate changes to 0.35% per month. The amount owing is \\(\\$100032\\). Jane continues to make the same monthly repayments. How many more full monthly payments of \\(\\$1381.16\\) will she need to make?",
               "options": [
                 "\\(83\\)",
                 "\\(84\\)",
@@ -18868,11 +18868,11 @@
               "hint": "Use the new rate \\(r=0.0035\\) to evolve the balance after each end-of-month payment. Count only payments that can still be made in full.",
               "steps": [
                 {
-                  "explain": "Each month first increases the balance by 0.35%, then the $1381.16 repayment is subtracted.",
+                  "explain": "Each month first increases the balance by 0.35%, then the \\(\\$1381.16\\) repayment is subtracted.",
                   "work": "\\(A_{k}=100032(1.0035)^k-1381.16\\frac{(1.0035)^k-1}{0.0035}\\)"
                 },
                 {
-                  "explain": "Evaluate successive balances. After \\(83\\) full repayments the balance is still positive; the \\(84th\\) full repayment would exceed the amount owed.",
+                  "explain": "Evaluate successive balances. After \\(83\\) full repayments the balance is still positive; the \\(84\\text{th}\\) full repayment would exceed the amount owed.",
                   "work": "\\(A_{83}\\approx928.29>0,\\quad A_{84}<0\\)"
                 },
                 {
@@ -18893,7 +18893,7 @@
               "id": "y12a-advanced-005-p243-q01-b2",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "The final repayment will be less than $1381.16. How much is the final payment needed to pay off the remaining loan?",
+              "stem": "The final repayment will be less than \\(\\$1381.16\\). How much is the final payment needed to pay off the remaining loan?",
               "options": [
                 "\\(\\$931.54\\)",
                 "\\(\\$928.29\\)",
@@ -18904,7 +18904,7 @@
               "hint": "After the last full payment, apply one month of interest to the remaining balance; that is the amount due for the final smaller payment.",
               "steps": [
                 {
-                  "explain": "After 83 full payments, the remaining balance is about $928.29. Interest for the next month is added before the final payment.",
+                  "explain": "After 83 full payments, the remaining balance is about \\(\\$928.29\\). Interest for the next month is added before the final payment.",
                   "work": "\\(A_{83}\\approx928.2918\\)"
                 },
                 {
@@ -21575,14 +21575,14 @@
           "id": "y12a-advanced-005-p243-q05",
           "type": "multipart",
           "difficulty": "hard",
-          "stem": "A person wins $1000000 in a competition and invests the money in an account earning 6% per annum compounded quarterly. The person withdraws $80000 at the end of every fourth quarter. Let A_n be the amount remaining after the nth withdrawal. Answer parts (i) and (ii).",
+          "stem": "A person wins \\(\\$1000000\\) in a competition and invests the money in an account earning 6% per annum compounded quarterly. The person withdraws \\(\\$80000\\) at the end of every fourth quarter. Let \\(A_n\\) be the amount remaining after the nth withdrawal. Answer parts (i) and (ii).",
           "hint": "Convert the annual rate to a quarterly rate. Each annual withdrawal happens after four quarters.",
           "parts": [
             {
               "id": "y12a-advanced-005-p243-q05-i",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "A person wins $1000000 and invests it at 6% per annum compounded quarterly, withdrawing $80000 at the end of every fourth quarter. Let A_n be the balance after the nth withdrawal. Which expression gives \\(A_2\\), the balance after the eighth quarter?",
+              "stem": "A person wins \\(\\$1000000\\) and invests it at 6% per annum compounded quarterly, withdrawing \\(\\$80000\\) at the end of every fourth quarter. Let \\(A_n\\) be the balance after the nth withdrawal. Which expression gives \\(A_2\\), the balance after the eighth quarter?",
               "options": [
                 "\\(1000000(1.015)^8-80000(1+1.015^4)\\)",
                 "\\(1000000(1.015)^8-160000\\)",
@@ -21593,11 +21593,11 @@
               "hint": "The quarterly rate is 6%÷4=1.5%. Grow the original amount for \\(8\\) quarters. The first withdrawal earns interest for \\(4\\) more quarters; the second is at the end of quarter \\(8\\).",
               "steps": [
                 {
-                  "explain": "Convert to a quarterly multiplier and grow $1000000 for eight quarters.",
+                  "explain": "Convert to a quarterly multiplier and grow \\(\\$1000000\\) for eight quarters.",
                   "work": "\\(1000000(1.015)^8\\)"
                 },
                 {
-                  "explain": "The first $80000 withdrawal is made after quarter 4 and then grows for four more quarters. The second is made at quarter 8.",
+                  "explain": "The first \\(\\$80000\\) withdrawal is made after quarter 4 and then grows for four more quarters. The second is made at quarter 8.",
                   "work": "\\(80000(1.015)^4+80000\\)"
                 },
                 {
@@ -21618,7 +21618,7 @@
               "id": "y12a-advanced-005-p243-q05-ii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "A person invests \\$1000000 earning 6% per annum compounded quarterly and withdraws \\$80000 at the end of every fourth quarter. For how many full years can the full \\$80000 be withdrawn?",
+              "stem": "A person invests \\(\\$1000000\\) earning 6% per annum compounded quarterly and withdraws \\(\\$80000\\) at the end of every fourth quarter. For how many full years can the full \\(\\$80000\\) be withdrawn?",
               "options": [
                 "\\(24\\text{ years}\\)",
                 "\\(25\\text{ years}\\)",
@@ -21629,7 +21629,7 @@
               "hint": "Convert the annual rate to 1.5% each quarter. There are four quarterly growth periods between withdrawals.",
               "steps": [
                 {
-                  "explain": "The quarterly interest rate is \\(\\frac{0.06}{4}=0.015\\). After one year, first grow the balance for four quarters, then subtract $80000.",
+                  "explain": "The quarterly interest rate is \\(\\frac{0.06}{4}=0.015\\). After one year, first grow the balance for four quarters, then subtract \\(\\$80000\\).",
                   "work": "\\(A_1=1000000(1.015)^4-80000\\)"
                 },
                 {
@@ -21637,7 +21637,7 @@
                   "work": "\\(A_n=1000000(1.015)^{4n}-80000[1+1.015^4+\\cdots+1.015^{4(n-1)}]\\)"
                 },
                 {
-                  "explain": "The geometric-series expression reaches a negative balance at the \\(25th\\) withdrawal; after \\(24\\) full withdrawals the balance remains positive.",
+                  "explain": "The geometric-series expression reaches a negative balance at the \\(25\\text{th}\\) withdrawal; after \\(24\\) full withdrawals the balance remains positive.",
                   "work": "\\(A_{24}>0,\\quad A_{25}<0\\)"
                 },
                 {
