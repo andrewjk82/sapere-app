@@ -47,6 +47,49 @@ const MAX_ZOOM = 2.5;
 const ZOOM_STEP = 0.1;
 const MIN_PINCH_DISTANCE = 1;
 const PINCH_RESPONSE = 0.6;
+// One page bitmap never exceeds this many pixels. At 250% zoom a page used to be ~14 MP (58 MB) and pdf.js
+// drew each into a second buffer first, so a few visible pages pushed an iPad past its memory limit and iOS
+// reloaded the whole app (2026-11).
+const MAX_CANVAS_PIXELS = 7_000_000;
+
+// Device-pixel ratio for a page drawn `cssWidth` wide with height/width = `ratio`, within the pixel budget.
+const safeDpr = (cssWidth, ratio) => {
+  const wanted = Math.min(window.devicePixelRatio || 1, 2, MAX_RENDER_WIDTH / Math.max(1, cssWidth));
+  const budget = Math.sqrt(MAX_CANVAS_PIXELS / Math.max(1, cssWidth * cssWidth * (ratio || 1.414)));
+  return Math.max(0.5, Math.min(wanted, budget));
+};
+
+// The page under a screen point, as fractions of that page's own box, so the same spot can be put back under
+// the finger after the pages are re-laid out at a new size (page gaps do not scale with zoom, so a
+// "document x zoom" formula drifts further the lower down the document you are).
+const captureAnchor = (stack, root, clientX, clientY) => {
+  if (!stack || !root || stack.children.length === 0) return null;
+  let best = 0;
+  let bestDist = Infinity;
+  for (let i = 0; i < stack.children.length; i += 1) {
+    const r = stack.children[i].getBoundingClientRect();
+    const d = clientY < r.top ? r.top - clientY : clientY > r.bottom ? clientY - r.bottom : 0;
+    if (d < bestDist) { best = i; bestDist = d; if (d === 0) break; }
+  }
+  const r = stack.children[best].getBoundingClientRect();
+  const rr = root.getBoundingClientRect();
+  return {
+    index: best,
+    fx: r.width ? (clientX - r.left) / r.width : 0.5,
+    fy: r.height ? (clientY - r.top) / r.height : 0,
+    localX: clientX - rr.left,
+    localY: clientY - rr.top,
+  };
+};
+
+const applyAnchor = (stack, root, anchor) => {
+  const kid = stack?.children[anchor.index];
+  if (!kid || !root) return;
+  const r = kid.getBoundingClientRect();
+  const rr = root.getBoundingClientRect();
+  root.scrollLeft += r.left + anchor.fx * r.width - (rr.left + anchor.localX);
+  root.scrollTop += r.top + anchor.fy * r.height - (rr.top + anchor.localY);
+};
 
 const distanceBetween = ([first, second]) => Math.hypot(
   second.x - first.x,
@@ -228,7 +271,7 @@ const PdfPage = memo(({ pdf, pageNumber, width, renderWidth, initialRatio, scrol
   const liveRef = useRef(null);                // pen stroke in progress
   const inkDrawnRef = useRef({ size: '', ids: new Set() });
   const penStrokes = useMemo(() => (strokes || []).filter(isPenStroke), [strokes]);
-  const inkDpr = Math.min(window.devicePixelRatio || 1, 2, MAX_RENDER_WIDTH / Math.max(1, width));
+  const inkDpr = safeDpr(width, ratio);
   const inkW = Math.max(1, Math.round(width * inkDpr));
   const inkH = Math.max(1, Math.round(width * ratio * inkDpr));
   const drawPenStroke = (ctx, stroke) => drawPenSegments(ctx, penPointsInPx(stroke, width), 1, stroke.color, inkDpr, true);
@@ -394,15 +437,22 @@ const PdfPage = memo(({ pdf, pageNumber, width, renderWidth, initialRatio, scrol
     paintDraft(null);
   };
 
+  // Pages that scroll far away give their bitmap back; they are drawn again when they come near.
   useEffect(() => {
-    if (near || !holderRef.current || !scrollRoot) return undefined;
+    if (!holderRef.current || !scrollRoot) return undefined;
     const io = new IntersectionObserver(
-      (entries) => { if (entries.some((e) => e.isIntersecting)) setNear(true); },
-      { root: scrollRoot, rootMargin: '1200px 0px' },
+      (entries) => { const last = entries[entries.length - 1]; if (last) setNear(last.isIntersecting || pageNumber === 1); },
+      { root: scrollRoot, rootMargin: '900px 0px' },
     );
     io.observe(holderRef.current);
     return () => io.disconnect();
-  }, [near, scrollRoot]);
+  }, [scrollRoot, pageNumber]);
+
+  useEffect(() => {
+    if (near) return;
+    const canvas = canvasRef.current;
+    if (canvas && canvas.width > 1) { canvas.width = 1; canvas.height = 1; }
+  }, [near]);
 
   useEffect(() => {
     if (!near || !renderWidth) return undefined;
@@ -414,7 +464,7 @@ const PdfPage = memo(({ pdf, pageNumber, width, renderWidth, initialRatio, scrol
         if (cancelled) return;
         const base = page.getViewport({ scale: 1 });
         setRatio(base.height / base.width);
-        const dpr = Math.min(window.devicePixelRatio || 1, 2, MAX_RENDER_WIDTH / renderWidth);
+        const dpr = safeDpr(renderWidth, base.height / base.width);
         const viewport = page.getViewport({ scale: (renderWidth / base.width) * dpr });
         const canvas = canvasRef.current;
         if (!canvas) return;
@@ -647,12 +697,9 @@ const PdfViewer = ({ src, loading, fallback, style, storageKey }) => {
     const root = scrollRef.current;
     if (!anchor || !root) return;
     pendingZoomAnchorRef.current = null;
-    // Page content begins after the fixed outer padding. Keep the same PDF
-    // point under the gesture (or viewport centre for the toolbar) as its
-    // rendered width changes, instead of leaving it pinned to the left edge.
-    const origin = PAGE_GAP;
-    root.scrollLeft = Math.max(0, anchor.docX * renderZoom - anchor.localX);
-    root.scrollTop = Math.max(0, origin + anchor.docY * renderZoom - anchor.localY);
+    // Keep the same PDF point under the gesture (or viewport centre for the
+    // toolbar) as the pages change size.
+    applyAnchor(stack, root, anchor);
   }, [renderZoom, width]);
 
   // The pane got narrower / wider: the pages changed height with it, so put the remembered spot back at the top.
@@ -738,15 +785,10 @@ const PdfViewer = ({ src, loading, fallback, style, storageKey }) => {
     const current = zoomRef.current;
     const next = typeof nextValue === 'function' ? nextValue(current) : nextValue;
     const root = scrollRef.current;
+    if (pinchRef.current) return;   // a pinch is still settling; it commits the zoom itself
     if (root && width && next !== current) {
-      const localX = root.clientWidth / 2;
-      const localY = root.clientHeight / 2;
-      pendingZoomAnchorRef.current = {
-        docX: (root.scrollLeft + localX) / current,
-        docY: (root.scrollTop + localY - PAGE_GAP) / current,
-        localX,
-        localY,
-      };
+      const rr = root.getBoundingClientRect();
+      pendingZoomAnchorRef.current = captureAnchor(pageStackRef.current, root, rr.left + root.clientWidth / 2, rr.top + root.clientHeight / 2);
     }
     zoomRef.current = next;
     setZoom(next);
@@ -780,16 +822,20 @@ const PdfViewer = ({ src, loading, fallback, style, storageKey }) => {
       root.scrollTop = Math.max(0, PAGE_GAP + pinch.docY * pinch.visualZoom - localY);
 
       if (settled && pinch.finishRequested) {
-        pendingZoomAnchorRef.current = {
-          docX: pinch.docX,
-          docY: pinch.docY,
-          localX,
-          localY,
-        };
+        pinchRef.current = null;
+        if (pinch.targetZoom === pinch.startZoom) {
+          // Nothing to re-render: put the pages back exactly as they were.
+          stack.style.transform = 'none';
+          spacer.style.width = `${Math.max(root.clientWidth, Math.round(widthRef.current * pinch.startZoom) + PAGE_GAP * 2)}px`;
+          spacer.style.height = 'auto';
+          setZoom(pinch.startZoom);
+          return;
+        }
+        // Remember the spot from the pages as they look right now, and put it back once they are laid out at the new size.
+        pendingZoomAnchorRef.current = captureAnchor(stack, root, pinch.center.x, pinch.center.y);
         zoomRef.current = pinch.targetZoom;
         setZoom(pinch.targetZoom);
         setRenderZoom(pinch.targetZoom);
-        pinchRef.current = null;
         return;
       }
       if (!settled || pinch.finishRequested) schedulePinchFrameRef.current?.();
@@ -841,6 +887,8 @@ const PdfViewer = ({ src, loading, fallback, style, storageKey }) => {
       if (hlOnRef.current && event.cancelable && event.target?.closest?.('[data-pdf-marks]')
         && Array.from(event.changedTouches).some((t) => t.touchType === 'stylus')) event.preventDefault();
       if (event.touches.length !== 2) return;
+      // The last pinch is still easing into place: starting another now would reset its transform mid-way.
+      if (pinchRef.current?.finishRequested) { if (event.cancelable) event.preventDefault(); return; }
       const points = pointsOf(event.touches);
       const center = midpoint(points);
       const rect = scrollEl.getBoundingClientRect();
