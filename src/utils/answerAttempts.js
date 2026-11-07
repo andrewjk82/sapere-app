@@ -14,12 +14,15 @@ export const PRACTICE = 3;
 // Daily Calculation is timed speed training: one go per question, as before.
 export const usesAnswerAttempts = (challengeType) => challengeType === 'daily' || challengeType === 'extra';
 
-// An extra round is scored like Daily Practice, at half the XP (a fifth for primary school, Years 1-6).
+// An extra round is scored like Daily Practice, at half the XP (a fifth for Years 1-6, 35% for Years 7-9).
 export const EXTRA_ROUND_XP_SHARE = 0.5;
 export const EXTRA_ROUND_XP_SHARE_PRIMARY = 0.2;
+export const EXTRA_ROUND_XP_SHARE_JUNIOR = 0.35;
 export const extraRoundXp = (dailyXp, year) => {
   const n = parseInt(String(year ?? '').replace(/\D/g, ''), 10);
-  const share = Number.isFinite(n) && n >= 1 && n <= 6 ? EXTRA_ROUND_XP_SHARE_PRIMARY : EXTRA_ROUND_XP_SHARE;
+  let share = EXTRA_ROUND_XP_SHARE;
+  if (Number.isFinite(n) && n >= 1 && n <= 6) share = EXTRA_ROUND_XP_SHARE_PRIMARY;
+  else if (n >= 7 && n <= 9) share = EXTRA_ROUND_XP_SHARE_JUNIOR;
   return Math.round((Number(dailyXp) || 0) * share);
 };
 
