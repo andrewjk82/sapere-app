@@ -38599,14 +38599,14 @@
           "id": "y12a-advanced-005-p244-q08",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "A gardener expects a spray to kill 35% of insects each day and exactly 5000 new insects to be produced daily. The trial begins with 100000 insects. Let A_n be the expected number at the end of day n.",
-          "hint": "Each day 65% survive, then 5000 are added. Expand the recurrence to see the geometric series.",
+          "stem": "A gardener expects a spray to kill 35% of insects each day and exactly \\(5000\\) new insects to be produced daily. The trial begins with \\(100000\\) insects. Let A_n be the expected number at the end of day n.",
+          "hint": "Each day 65% survive, then \\(5000\\) are added. Expand the recurrence to see the geometric series.",
           "parts": [
             {
               "id": "y12a-advanced-005-p244-q08-i",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "There are 100000 insects. Each day 35% die and 5000 new insects are produced. If A_n is the number at the end of day n, which recurrence is correct?",
+              "stem": "There are \\(100000\\) insects. Each day 35% die and \\(5000\\) new insects are produced. If A_n is the number at the end of day n, which recurrence is correct?",
               "options": [
                 "\\(A_1=0.65(0.65(100000)+5000)+5000\\)",
                 "\\(A_1=0.35(100000)+5000\\)",
@@ -38614,14 +38614,14 @@
                 "\\(A_1=0.65(100000-5000)\\)"
               ],
               "answer": 0,
-              "hint": "After each day, 65% survive; then add 5000 new insects. Apply the rule twice to express A2.",
+              "hint": "After each day, 65% survive; then add \\(5000\\) new insects. Apply the rule twice to express \\(A2\\).",
               "steps": [
                 {
-                  "explain": "After the first day, 65% of 100000 survive and 5000 are added.",
+                  "explain": "After the first day, 65% of \\(100000\\) survive and \\(5000\\) are added.",
                   "work": "\\(A_1=0.65(100000)+5000=70000\\)"
                 },
                 {
-                  "explain": "Apply the same daily rule again to obtain A2.",
+                  "explain": "Apply the same daily rule again to obtain \\(A2\\).",
                   "work": "\\(A_2=0.65A_1+5000=0.65(0.65(100000)+5000)+5000\\)"
                 },
                 {
@@ -38657,11 +38657,11 @@
                   "work": "\\(A_n=100000(0.65)^n+5000[1+0.65+\\cdots+0.65^{n-1}]\\)"
                 },
                 {
-                  "explain": "Sum the geometric series with first term 1 and common ratio 0.65.",
+                  "explain": "Sum the geometric series with first term \\(1\\) and common ratio \\(0.65\\).",
                   "work": "\\(1+0.65+\\cdots+0.65^{n-1}=\\frac{1-0.65^n}{1-0.65}\\)"
                 },
                 {
-                  "explain": "Since 1−0.65=0.35, obtain the stated expression.",
+                  "explain": "Since \\(1-0.65=0.35\\), obtain the stated expression.",
                   "work": "\\(\\boxed{A_n=100000(0.65)^n+\\frac{5000(1-0.65^n)}{0.35}}\\)"
                 }
               ],

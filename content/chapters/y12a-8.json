@@ -4787,7 +4787,7 @@
               "id": "y12a-advanced-005-p248-q27-i",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "A fish farmer starts with 100000 fish on 1 January 1998. Each December, 15400 fish are sold. Before each harvest, the number of fish increases by 10%. Find the number of fish just after the second harvest.",
+              "stem": "A fish farmer starts with \\(100000\\) fish on \\(1\\) January \\(1998\\). Each December, \\(15400\\) fish are sold. Before each harvest, the number of fish increases by 10%. Find the number of fish just after the second harvest.",
               "options": [
                 "\\(88660\\)",
                 "\\(94600\\)",
@@ -4795,14 +4795,14 @@
                 "\\(8866\\)"
               ],
               "answer": 0,
-              "hint": "For each year: increase the current stock by 10%, then subtract the 15400 fish sold.",
+              "hint": "For each year: increase the current stock by 10%, then subtract the \\(15400\\) fish sold.",
               "steps": [
                 {
-                  "explain": "First harvest: increase 100000 by 10%, then subtract 15400.",
+                  "explain": "First harvest: increase \\(100000\\) by 10%, then subtract \\(15400\\).",
                   "work": "\\(F_1=100000(1.1)-15400=94600\\)"
                 },
                 {
-                  "explain": "Second harvest: increase 94600 by 10%, then subtract 15400.",
+                  "explain": "Second harvest: increase \\(94600\\) by 10%, then subtract \\(15400\\).",
                   "work": "\\(F_2=94600(1.1)-15400=88660\\)"
                 },
                 {
@@ -4831,10 +4831,10 @@
                 "\\(F_n=15400-100000(1.1)^n\\)"
               ],
               "answer": 0,
-              "hint": "The recurrence is F_n=1.1F_(n−1)−15400. Solve it by expanding the repeated harvest rule.",
+              "hint": "The recurrence is \\(F_n=1.1F_(n-1)-15400\\). Solve it by expanding the repeated harvest rule.",
               "steps": [
                 {
-                  "explain": "Write the stock update: it grows by 10%, then 15400 fish are removed.",
+                  "explain": "Write the stock update: it grows by 10%, then \\(15400\\) fish are removed.",
                   "work": "\\(F_n=1.1F_{n-1}-15400,\\quad F_0=100000\\)"
                 },
                 {
@@ -4867,14 +4867,14 @@
                 "December 2007; \\(\\$1694000\\)"
               ],
               "answer": 0,
-              "hint": "Find the first harvest where the fish available before harvest are at most 15400. Add the revenue from earlier full harvests and the final smaller harvest.",
+              "hint": "Find the first harvest where the fish available before harvest are at most \\(15400\\). Add the revenue from earlier full harvests and the final smaller harvest.",
               "steps": [
                 {
-                  "explain": "After ten full harvests, F_10≈13937.91 fish remain. Before the next harvest, the stock grows by 10%.",
+                  "explain": "After ten full harvests, \\(F_10\\approx 13937.91\\) fish remain. Before the next harvest, the stock grows by 10%.",
                   "work": "\\(1.1F_{10}=1.1(13937.91)\\approx15331.70\\)"
                 },
                 {
-                  "explain": "This is the 11th harvest, in December 2008. The farmer sells the remaining approximately 15331.70 fish then.",
+                  "explain": "This is the \\(11th\\) harvest, in December \\(2008\\). The farmer sells the remaining approximately \\(15331.70\\) fish then.",
                   "work": "\\(15400(10)+15331.70\\approx169331.70\\text{ fish sold}\\)"
                 },
                 {
@@ -4897,16 +4897,16 @@
               "difficulty": "medium",
               "stem": "Each December a retailer offers to buy the farmer’s business by paying $15 for each fish in the stock. If the farmer first sells the annual harvest and then sells the remaining business, after which harvest year is total income greatest?",
               "options": [
-                "After the 7th harvest (December 2004)",
-                "After the 6th harvest (December 2003)",
-                "After the 8th harvest (December 2005)",
-                "At the start of 1998"
+                "After the \\(7th\\) harvest (December \\(2004)\\)",
+                "After the \\(6th\\) harvest (December \\(2003)\\)",
+                "After the \\(8th\\) harvest (December \\(2005)\\)",
+                "At the start of \\(1998\\)"
               ],
               "answer": 0,
               "hint": "For each possible year n, add $154000 per earlier full harvest to $15 times the remaining stock F_n. Compare nearby totals.",
               "steps": [
                 {
-                  "explain": "After n harvests, income from fish sold is $154000n, and the remaining stock is F_n=154000−54000(1.1)^n.",
+                  "explain": "After n harvests, income from fish sold is $154000n, and the remaining stock is \\(F_n=154000-54000(1.1)^n\\).",
                   "work": "\\(R_n=154000n+15F_n\\)"
                 },
                 {
@@ -4914,7 +4914,7 @@
                   "work": "\\(R_6\\approx1799036,\\quad R_7\\approx1809539,\\quad R_8\\approx1805693\\)"
                 },
                 {
-                  "explain": "The greatest total occurs after harvest 7. The first harvest is December 1998, so harvest 7 is December 2004.",
+                  "explain": "The greatest total occurs after harvest \\(7\\). The first harvest is December \\(1998\\), so harvest \\(7\\) is December \\(2004\\).",
                   "work": "\\(\\boxed{\\text{December 2004}}\\)"
                 }
               ],
@@ -11309,10 +11309,10 @@
                 "\\(\\$35478.00\\)"
               ],
               "answer": 0,
-              "hint": "There are ten annual compounding periods from 1 July 1985 to 1 July 1995.",
+              "hint": "There are ten annual compounding periods from \\(1\\) July \\(1985\\) to \\(1\\) July \\(1995\\).",
               "steps": [
                 {
-                  "explain": "Count the years: 1995−1985=10. Grow the initial deposit for ten years.",
+                  "explain": "Count the years: \\(1995-1985=10\\). Grow the initial deposit for ten years.",
                   "work": "\\(A=10000(1.08)^{10}\\)"
                 },
                 {
@@ -11345,7 +11345,7 @@
                 "\\(\\$21589.25\\)"
               ],
               "answer": 0,
-              "hint": "Grow the original $10000 for ten years. The ten $1000 deposits earn interest for 9, 8, …, 0 years.",
+              "hint": "Grow the original $10000 for ten years. The ten $1000 deposits earn interest for \\(9, 8\\), …, 0 years.",
               "steps": [
                 {
                   "explain": "Value the original deposit and list each annual deposit at the target date.",
@@ -11381,14 +11381,14 @@
                 "\\(15.0\\%\\)"
               ],
               "answer": 0,
-              "hint": "Use 10000(1+r)^10=35478. Divide by the initial deposit, take the tenth root, then subtract 1.",
+              "hint": "Use \\(10000(1+r)^10=35478\\). Divide by the initial deposit, take the tenth root, then subtract \\(1\\).",
               "steps": [
                 {
                   "explain": "Write the compound-interest equation for ten years.",
                   "work": "\\(10000(1+r)^{10}=35478\\)"
                 },
                 {
-                  "explain": "Divide by 10000 and take the tenth root.",
+                  "explain": "Divide by \\(10000\\) and take the tenth root.",
                   "work": "\\((1+r)^{10}=3.5478;\\quad r=3.5478^{1/10}-1\\)"
                 },
                 {
@@ -14830,8 +14830,8 @@
           "id": "y12a-advanced-005-p243-q03",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "Tina inherits $60000 and invests it in an account earning interest at a rate of 0.5% per month. Each month, immediately after the interest has been paid, Tina withdraws $800. The amount in the account immediately after the nth withdrawal can be determined using A_n=A_(n-1)(1.005)-800, where n=1,2,... and A_0=60000. Answer parts (a)–(c).",
-          "hint": "Track the timing carefully: monthly interest is added before each withdrawal. For the first three months, repeat the recurrence; for the 94th, use the geometric sum.",
+          "stem": "Tina inherits $60000 and invests it in an account earning interest at a rate of 0.5% per month. Each month, immediately after the interest has been paid, Tina withdraws $800. The amount in the account immediately after the nth withdrawal can be determined using \\(A_n=A_(n-1)(1.005)-800\\), where \\(n=1,2\\),... and \\(A_0=60000\\). Answer parts (a)–(c).",
+          "hint": "Track the timing carefully: monthly interest is added before each withdrawal. For the first three months, repeat the recurrence; for the \\(94th\\), use the geometric sum.",
           "parts": [
             {
               "id": "y12a-advanced-005-p243-q03-a",
@@ -14845,7 +14845,7 @@
                 "\\(\\$5892.49\\)"
               ],
               "answer": 0,
-              "hint": "Apply the same recurrence three times: multiply by 1.005, then subtract 800.",
+              "hint": "Apply the same recurrence three times: multiply by \\(1.005\\), then subtract \\(800\\).",
               "steps": [
                 {
                   "explain": "For each month, add 0.5% interest to the current amount, then subtract the $800 withdrawal.",
@@ -14888,7 +14888,7 @@
                   "work": "\\(I=A_3+3(800)-60000\\)"
                 },
                 {
-                  "explain": "Substitute A3.",
+                  "explain": "Substitute \\(A3\\).",
                   "work": "\\(I=58492.4875+2400-60000=892.4875\\)"
                 },
                 {
@@ -14909,7 +14909,7 @@
               "id": "y12a-advanced-005-p243-q03-c",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Using \\(A_n=A_{n-1}(1.005)-800\\), \\(A_0=60000\\), find the balance immediately after the 94th withdrawal.",
+              "stem": "Using \\(A_n=A_{n-1}(1.005)-800\\), \\(A_0=60000\\), find the balance immediately after the \\(94th\\) withdrawal.",
               "options": [
                 "\\(\\$187.85\\)",
                 "\\(\\$0.00\\)",
@@ -14920,7 +14920,7 @@
               "hint": "Expand the recurrence: the initial balance grows for 94 months, and the $800 withdrawals form a geometric series.",
               "steps": [
                 {
-                  "explain": "Write the balance after 94 iterations.",
+                  "explain": "Write the balance after \\(94\\) iterations.",
                   "work": "\\(A_{94}=60000(1.005)^{94}-800[1+1.005+\\cdots+1.005^{93}]\\)"
                 },
                 {
@@ -14970,14 +14970,14 @@
                 "\\(300000(1.04)^2-P(1.04^2+1.05)\\)"
               ],
               "answer": 0,
-              "hint": "The first withdrawal is P at year 1, then grows one more year. The second withdrawal is 1.05P and is made at year 2.",
+              "hint": "The first withdrawal is P at year \\(1\\), then grows one more year. The second withdrawal is \\(1.05P\\) and is made at year \\(2\\).",
               "steps": [
                 {
                   "explain": "Grow the original deposit for two years.",
                   "work": "\\(300000(1.04)^2\\)"
                 },
                 {
-                  "explain": "The first withdrawal P is made after year-one interest, so by the end of year two its deducted value has grown by one year: P(1.04). The second withdrawal is 1.05P.",
+                  "explain": "The first withdrawal P is made after year-one interest, so by the end of year two its deducted value has grown by one year: \\(P(1.04)\\). The second withdrawal is \\(1.05P\\).",
                   "work": "\\(A_2=300000(1.04)^2-P(1.04)-1.05P\\)"
                 },
                 {
@@ -15013,7 +15013,7 @@
                   "work": "\\(300000(1.04)^3\\)"
                 },
                 {
-                  "explain": "The first withdrawal P is made after year 1, so it earns two more years of interest; the second withdrawal 1.05P earns one more year; the third withdrawal 1.05²P earns none.",
+                  "explain": "The first withdrawal P is made after year \\(1\\), so it earns two more years of interest; the second withdrawal \\(1.05P\\) earns one more year; the third withdrawal \\(1.05^{2}P\\) earns none.",
                   "work": "\\(P(1.04)^2+1.05P(1.04)+1.05^2P\\)"
                 },
                 {
@@ -15042,18 +15042,18 @@
                 "\\(\\left(\\frac{105}{104}\\right)^n<\\frac{3000}{P}\\)"
               ],
               "answer": 0,
-              "hint": "Use the general balance after n withdrawals, express the deduction as a geometric series, then rearrange A_n>0.",
+              "hint": "Use the general balance after n withdrawals, express the deduction as a geometric series, then rearrange \\(A_n>0\\).",
               "steps": [
                 {
-                  "explain": "After n years, the original deposit is \\(300000(1.04)^n\\). The withdrawals are P,1.05P,…,1.05^(n−1)P, each compounded to year n.",
+                  "explain": "After \\(n\\) years, the original deposit is \\(300000(1.04)^n\\). The withdrawals are \\(P,\\ 1.05P,\\ \\dots,\\ 1.05^{n-1}P\\), each compounded to year \\(n\\).",
                   "work": "\\(A_n=300000(1.04)^n-P\\sum_{j=0}^{n-1}(1.05)^j(1.04)^{n-j}\\)"
                 },
                 {
-                  "explain": "Factor and sum the geometric series with common ratio 1.05/1.04=105/104.",
+                  "explain": "Factor and sum the geometric series with common ratio \\(\\frac{1.05}{1.04}=\\frac{105}{104}\\).",
                   "work": "\\(A_n=300000(1.04)^n-P(1.04)^n\\left[\\frac{(1.05/1.04)^n-1}{1.05/1.04-1}\\right]\\)"
                 },
                 {
-                  "explain": "Set A_n>0, divide by positive factors, and simplify.",
+                  "explain": "Set \\(A_n>0\\), divide by positive factors, and simplify.",
                   "work": "\\(\\boxed{(105/104)^n<1+3000/P}\\)"
                 }
               ],
@@ -15081,13 +15081,13 @@
           "type": "multipart",
           "difficulty": "medium",
           "stem": "Anita deposits X at the start of each month. At the end of each month, after interest at 4.2% p.a. compounded monthly is added, the bank withdraws $2500 as a loan repayment. Let M_n be the balance after the nth withdrawal.",
-          "hint": "Use a monthly multiplier 1.0035. For each cashflow, count how many month-end interest periods remain until the date being calculated.",
+          "hint": "Use a monthly multiplier \\(1.0035\\). For each cashflow, count how many month-end interest periods remain until the date being calculated.",
           "parts": [
             {
               "id": "y12a-advanced-005-p244-q07-i",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Anita deposits X at the start of each month. At month-end the account earns 4.2% p.a. compounded monthly and then the bank withdraws $2500. What is M2, the balance after the second withdrawal?",
+              "stem": "Anita deposits X at the start of each month. At month-end the account earns 4.2% p.a. compounded monthly and then the bank withdraws $2500. What is \\(M2\\), the balance after the second withdrawal?",
               "options": [
                 "\\(X(1.0035^2+1.0035)-2500(1.0035+1)\\)",
                 "\\(X(1.0035^2+1)-2500\\)",
@@ -15098,11 +15098,11 @@
               "hint": "Convert 4.2% p.a. to 0.35% per month. Track the two deposits and two repayments through the second month.",
               "steps": [
                 {
-                  "explain": "The monthly interest rate is 0.042/12=0.0035. The first deposit earns interest in months 1 and 2; the second deposit earns it in month 2.",
+                  "explain": "The monthly interest rate is \\(\\frac{0.042}{12}=0.0035\\). The first deposit earns interest in months \\(1\\) and \\(2\\); the second deposit earns it in month \\(2\\).",
                   "work": "\\(X(1.0035^2)+X(1.0035)\\)"
                 },
                 {
-                  "explain": "The first repayment earns one further month of interest before the second month-end; the second repayment is made at the end of month 2.",
+                  "explain": "The first repayment earns one further month of interest before the second month-end; the second repayment is made at the end of month \\(2\\).",
                   "work": "\\(-2500(1.0035)-2500\\)"
                 },
                 {
@@ -15131,10 +15131,10 @@
                 "\\(\\$80000\\)"
               ],
               "answer": 0,
-              "hint": "There are 48 monthly deposits and withdrawals. Sum each growing geometric series, then solve for X.",
+              "hint": "There are \\(48\\) monthly deposits and withdrawals. Sum each growing geometric series, then solve for X.",
               "steps": [
                 {
-                  "explain": "There are 4×12=48 months. Sum the deposits at the start of each month, compounded to the end of month 48.",
+                  "explain": "There are 4×12=48 months. Sum the deposits at the start of each month, compounded to the end of month \\(48\\).",
                   "work": "\\(X[1.0035+1.0035^2+\\cdots+1.0035^{48}]\\)"
                 },
                 {
@@ -15174,7 +15174,7 @@
           "type": "multipart",
           "difficulty": "medium",
           "stem": "At the start of month 1, Jo deposits $500. Each subsequent month the deposit is 1% greater than the previous deposit. At the end of each month, the balance earns 0.3% interest. Find the expression for month 2 and the balance at the end of month 60.",
-          "hint": "Build a timeline for the deposits. Each deposit earns interest from the end of its deposit month until the end of month 60.",
+          "hint": "Build a timeline for the deposits. Each deposit earns interest from the end of its deposit month until the end of month \\(60\\).",
           "parts": [
             {
               "id": "y12a-advanced-005-p244-q10-i",
@@ -15216,7 +15216,7 @@
               "id": "y12a-advanced-005-p244-q10-ii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Using Jo’s deposit and interest pattern, what is the balance at the end of month 60, to the nearest dollar?",
+              "stem": "Using Jo’s deposit and interest pattern, what is the balance at the end of month \\(60\\), to the nearest dollar?",
               "options": [
                 "\\(\\$44404\\)",
                 "\\(\\$50000\\)",
@@ -15224,10 +15224,10 @@
                 "\\(\\$40000\\)"
               ],
               "answer": 0,
-              "hint": "Write the 60 deposits with their growth factors. They form a geometric sequence with ratio 1.01/1.003 when read in reverse.",
+              "hint": "Write the \\(60\\) deposits with their growth factors. They form a geometric sequence with ratio \\(\\frac{1.01}{1.003}\\) when read in reverse.",
               "steps": [
                 {
-                  "explain": "The first deposit compounds for 60 months; the second deposit is larger by 1% and compounds for 59 months, continuing to the 60th deposit.",
+                  "explain": "The first deposit compounds for \\(60\\) months; the second deposit is larger by 1% and compounds for \\(59\\) months, continuing to the \\(60th\\) deposit.",
                   "work": "\\(A_{60}=500[1.003^{60}+(1.01)(1.003)^{59}+\\cdots+(1.01)^{59}(1.003)]\\)"
                 },
                 {
@@ -15270,10 +15270,10 @@
             "\\(\\$5094.55\\)"
           ],
           "answer": 0,
-          "hint": "There are four half-year deposits from the first deposit to two years after it. Use a geometric sum with r=1.015.",
+          "hint": "There are four half-year deposits from the first deposit to two years after it. Use a geometric sum with \\(r=1.015\\).",
           "steps": [
             {
-              "explain": "The half-year interest rate is 0.03/2=0.015. At the target date the four deposits have growth factors \\(1,1.015,1.015^2,1.015^3\\).",
+              "explain": "The half-year interest rate is \\(\\frac{0.03}{2}=0.015\\). At the target date the four deposits have growth factors \\(1,1.015,1.015^2,1.015^3\\).",
               "work": "\\(A=1200(1+1.015+1.015^2+1.015^3)\\)"
             },
             {
@@ -15320,7 +15320,7 @@
                   "work": "\\(A_1=5000(1.03)+1000\\)"
                 },
                 {
-                  "explain": "Repeat the same interest-then-deposit update on birthdays 2 and 3.",
+                  "explain": "Repeat the same interest-then-deposit update on birthdays \\(2\\) and \\(3\\).",
                   "work": "\\(A_2=6150(1.03)+1000=7334.50;\\quad A_3=7334.50(1.03)+1000=8554.535\\)"
                 },
                 {
@@ -15387,8 +15387,8 @@
           "id": "y12a-advanced-005-p243-q04",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "Elliot deposited $5000 at the end of each year for 10 years in an annuity earning 2.15% per annum, compounded annually. The table shows the balance at the end of each year, with the total at the end of year 4 equal to $20654.29. The shaded cells are A (year 5) and B (year 10).",
-          "hint": "For A, carry forward the year 4 total by one year and add the new deposit. For B, add the ten deposits as a geometric series.",
+          "stem": "Elliot deposited $5000 at the end of each year for 10 years in an annuity earning 2.15% per annum, compounded annually. The table shows the balance at the end of each year, with the total at the end of year 4 equal to $20654.29. The shaded cells are A (year \\(5)\\) and B (year \\(10)\\).",
+          "hint": "For A, carry forward the year \\(4\\) total by one year and add the new deposit. For B, add the ten deposits as a geometric series.",
           "parts": [
             {
               "id": "y12a-advanced-005-p243-q04-i",
@@ -15430,7 +15430,7 @@
               "id": "y12a-advanced-005-p243-q04-ii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Use the sum of a geometric series to find B, the total at the end of year 10.",
+              "stem": "Use the sum of a geometric series to find B, the total at the end of year \\(10\\).",
               "options": [
                 "\\(\\$55125.56\\)",
                 "\\(\\$50000.00\\)",
@@ -15438,10 +15438,10 @@
                 "\\(\\$5512.56\\)"
               ],
               "answer": 0,
-              "hint": "There are 10 end-of-year deposits. At the end of year 10 their growth factors are 1, 1.0215, …, 1.0215^9.",
+              "hint": "There are \\(10\\) end-of-year deposits. At the end of year \\(10\\) their growth factors are \\(1, 1.0215\\), …, \\(1.0215^9\\).",
               "steps": [
                 {
-                  "explain": "Write the value of the 10 deposits at the common valuation date.",
+                  "explain": "Write the value of the \\(10\\) deposits at the common valuation date.",
                   "work": "\\(B=5000(1+1.0215+\\cdots+1.0215^9)\\)"
                 },
                 {
@@ -15494,10 +15494,10 @@
                 "\\(\\$34759.99\\)"
               ],
               "answer": 0,
-              "hint": "There are 18 contributions. They earn interest for 18, 17, …, 1 years respectively.",
+              "hint": "There are \\(18\\) contributions. They earn interest for \\(18, 17\\), …, \\(1\\) years respectively.",
               "steps": [
                 {
-                  "explain": "The first contribution is made at birth, so it earns 18 years of interest. The last contribution earns one year.",
+                  "explain": "The first contribution is made at birth, so it earns \\(18\\) years of interest. The last contribution earns one year.",
                   "work": "\\(V=1000(1.06+1.06^2+\\cdots+1.06^{18})\\)"
                 },
                 {
@@ -15537,7 +15537,7 @@
                   "work": "\\(1000,\\quad1000(1.06),\\quad1000(1.06)^2\\)"
                 },
                 {
-                  "explain": "Grow them for 3, 2 and 1 years respectively. Because contribution growth and account interest are both 6%, each becomes $1000(1.06)^3.",
+                  "explain": "Grow them for \\(3,\\ 2\\) and \\(1\\) years respectively. Because contribution growth and account interest are both 6%, each becomes \\(\\$1000(1.06)^3\\).",
                   "work": "\\(V=1000(1.06)^3+1000(1.06)(1.06)^2+1000(1.06)^2(1.06)\\)"
                 },
                 {
@@ -15558,7 +15558,7 @@
               "id": "y12a-advanced-005-p246-q18-iii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Mrs Caine makes her final contribution on her son’s 17th birthday. Find the total value of her investment on his 18th birthday.",
+              "stem": "Mrs Caine makes her final contribution on her son’s \\(17th\\) birthday. Find the total value of her investment on his \\(18th\\) birthday.",
               "options": [
                 "\\(\\$51378.10\\)",
                 "\\(\\$32759.99\\)",
@@ -15566,14 +15566,14 @@
                 "\\(\\$53500.00\\)"
               ],
               "answer": 0,
-              "hint": "There are 18 contributions. The contribution made on birthday k is $1000(1.06)^k and earns interest for 18−k years.",
+              "hint": "There are 18 contributions. The contribution made on birthday \\(k\\) is \\(\\$1000(1.06)^k\\) and earns interest for \\(18-k\\) years.",
               "steps": [
                 {
-                  "explain": "For each contribution, multiply the growing deposit amount by the growth it earns until age 18.",
+                  "explain": "For each contribution, multiply the growing deposit amount by the growth it earns until age \\(18\\).",
                   "work": "\\(1000(1.06)^k(1.06)^{18-k}=1000(1.06)^{18}\\)"
                 },
                 {
-                  "explain": "There are 18 birthdays from age 0 through 17, and each contribution has this same value at age 18.",
+                  "explain": "There are \\(18\\) birthdays from age \\(0\\) through \\(17\\), and each contribution has this same value at age \\(18\\).",
                   "work": "\\(V=18\\times1000(1.06)^{18}\\)"
                 },
                 {
@@ -18814,7 +18814,7 @@
           "id": "y12a-advanced-005-p243-q01",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "In a reducing-balance loan, an amount P is borrowed for n months at an interest rate of 0.25% per month, compounded monthly. At the end of each month, a repayment of M is made. After the nth repayment has been made, the amount owing is given by A_n=P(1.0025)^n-M(1+(1.0025)+...+(1.0025)^(n-1)). Jane borrows $200000 in a reducing-balance loan. The loan is to be repaid in 180 monthly repayments. After 100 repayments of $1381.16 have been made, the interest rate changes to 0.35% per month. At this stage, the amount owing to the nearest dollar is $100032. Jane continues to make the same monthly repayments. Answer parts (a)–(c).",
+          "stem": "In a reducing-balance loan, an amount P is borrowed for n months at an interest rate of 0.25% per month, compounded monthly. At the end of each month, a repayment of M is made. After the nth repayment has been made, the amount owing is given by \\(A_n=P(1.0025)^n-M(1+(1.0025)+...+(1.0025)^{n-1})\\). Jane borrows $200000 in a reducing-balance loan. The loan is to be repaid in 180 monthly repayments. After 100 repayments of $1381.16 have been made, the interest rate changes to 0.35% per month. At this stage, the amount owing to the nearest dollar is $100032. Jane continues to make the same monthly repayments. Answer parts (a)–(c).",
           "hint": "Use the present-value formula for part (a). For the later parts, update the balance monthly: interest is added first, then the fixed repayment is subtracted.",
           "parts": [
             {
@@ -18865,18 +18865,18 @@
                 "\\(100\\)"
               ],
               "answer": 0,
-              "hint": "Use the new rate r=0.0035 to evolve the balance after each end-of-month payment. Count only payments that can still be made in full.",
+              "hint": "Use the new rate \\(r=0.0035\\) to evolve the balance after each end-of-month payment. Count only payments that can still be made in full.",
               "steps": [
                 {
                   "explain": "Each month first increases the balance by 0.35%, then the $1381.16 repayment is subtracted.",
                   "work": "\\(A_{k}=100032(1.0035)^k-1381.16\\frac{(1.0035)^k-1}{0.0035}\\)"
                 },
                 {
-                  "explain": "Evaluate successive balances. After 83 full repayments the balance is still positive; the 84th full repayment would exceed the amount owed.",
+                  "explain": "Evaluate successive balances. After \\(83\\) full repayments the balance is still positive; the \\(84th\\) full repayment would exceed the amount owed.",
                   "work": "\\(A_{83}\\approx928.29>0,\\quad A_{84}<0\\)"
                 },
                 {
-                  "explain": "Therefore she can make 83 further full repayments.",
+                  "explain": "Therefore she can make \\(83\\) further full repayments.",
                   "work": "\\(\\boxed{83}\\)"
                 }
               ],
@@ -18908,7 +18908,7 @@
                   "work": "\\(A_{83}\\approx928.2918\\)"
                 },
                 {
-                  "explain": "Multiply this balance by 1.0035.",
+                  "explain": "Multiply this balance by \\(1.0035\\).",
                   "work": "\\(928.2918(1.0035)=931.5408\\)"
                 },
                 {
@@ -18946,7 +18946,7 @@
               "id": "y12a-advanced-005-p244-q09-i",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Let A_n be the amount owing at the end of n months and M be the monthly repayment. Which expression gives A_2 for a $100000 loan at 0.6% per month?",
+              "stem": "Let A_n be the amount owing at the end of n months and M be the monthly repayment. Which expression gives \\(A_2\\) for a $100000 loan at 0.6% per month?",
               "options": [
                 "\\(100000(1.006)^2-M(1+1.006)\\)",
                 "\\(100000(1.006)^2-2M\\)",
@@ -18954,14 +18954,14 @@
                 "\\(100000-M(1+1.006)\\)"
               ],
               "answer": 0,
-              "hint": "The original loan earns interest for two months. The first repayment earns one more month of interest; the second occurs at the end of month 2.",
+              "hint": "The original loan earns interest for two months. The first repayment earns one more month of interest; the second occurs at the end of month \\(2\\).",
               "steps": [
                 {
                   "explain": "Grow the original balance for two months.",
                   "work": "\\(100000(1.006)^2\\)"
                 },
                 {
-                  "explain": "The first repayment is made at month 1 and grows for one month. The second repayment is made at month 2.",
+                  "explain": "The first repayment is made at month \\(1\\) and grows for one month. The second repayment is made at month \\(2\\).",
                   "work": "\\(-M(1.006)-M\\)"
                 },
                 {
@@ -18993,7 +18993,7 @@
               "hint": "The initial loan grows n months. The n repayments form a geometric series of accumulated values.",
               "steps": [
                 {
-                  "explain": "The loan grows for n months. Payments made at the end of each month accumulate with factors 1, 1.006, …, 1.006^(n−1).",
+                  "explain": "The loan grows for n months. Payments made at the end of each month accumulate with factors \\(1, 1.006\\), …, \\(1.006^{n-1}\\).",
                   "work": "\\(A_n=100000(1.006)^n-M[1+1.006+\\cdots+1.006^{n-1}]\\)"
                 },
                 {
@@ -19026,10 +19026,10 @@
                 "\\(\\$48500\\)"
               ],
               "answer": 0,
-              "hint": "Accumulate the original loan for 120 months and subtract the future value of the 120 repayments.",
+              "hint": "Accumulate the original loan for \\(120\\) months and subtract the future value of the \\(120\\) repayments.",
               "steps": [
                 {
-                  "explain": "Monthly multiplier is 1.006.",
+                  "explain": "Monthly multiplier is \\(1.006\\).",
                   "work": "\\(A_{120}=100000(1.006)^{120}-780[1+1.006+\\cdots+1.006^{119}]\\)"
                 },
                 {
@@ -19069,11 +19069,11 @@
                   "work": "\\(A_n=48500(1.006)^n-780\\frac{1.006^n-1}{0.006}\\)"
                 },
                 {
-                  "explain": "Solving gives n≈78.055 repayment periods. Therefore 78 payments of $780 fit in full, with a smaller final payment in the next month.",
+                  "explain": "Solving gives \\(n\\approx 78.055\\) repayment periods. Therefore 78 payments of $780 fit in full, with a smaller final payment in the next month.",
                   "work": "\\(n=\\frac{\\ln(1300/815)}{\\ln(1.006)}\\approx78.055\\)"
                 },
                 {
-                  "explain": "Count the month containing the final smaller repayment as well: total 79 more months.",
+                  "explain": "Count the month containing the final smaller repayment as well: total \\(79\\) more months.",
                   "work": "\\(78+1=\\\\boxed{79\\\\text{ months}}\\)"
                 }
               ],
@@ -19115,10 +19115,10 @@
                 "\\(\\$5000\\)"
               ],
               "answer": 0,
-              "hint": "Use r=0.005 per month and n=360 in the present-value annuity formula.",
+              "hint": "Use \\(r=0.005\\) per month and \\(n=360\\) in the present-value annuity formula.",
               "steps": [
                 {
-                  "explain": "Convert 6% per annum to 0.5% per month and 30 years to 360 months.",
+                  "explain": "Convert 6% per annum to 0.5% per month and \\(30\\) years to \\(360\\) months.",
                   "work": "\\(r=0.005,\\quad n=360,\\quad P=500000\\)"
                 },
                 {
@@ -19151,10 +19151,10 @@
                 "\\(\\$500000\\)"
               ],
               "answer": 0,
-              "hint": "After 240 repayments, use the original loan grown 240 months minus the accumulated repayments.",
+              "hint": "After \\(240\\) repayments, use the original loan grown \\(240\\) months minus the accumulated repayments.",
               "steps": [
                 {
-                  "explain": "Substitute n=240 into the reducing-balance formula.",
+                  "explain": "Substitute \\(n=240\\) into the reducing-balance formula.",
                   "work": "\\(A_{240}=500000(1.005)^{240}-2998\\frac{(1.005)^{240}-1}{0.005}\\)"
                 },
                 {
@@ -19194,7 +19194,7 @@
                   "work": "\\(0=370000(1.005)^n-2998\\frac{(1.005)^n-1}{0.005}\\)"
                 },
                 {
-                  "explain": "Collect terms containing (1.005)^n.",
+                  "explain": "Collect terms containing \\((1.005)^n\\).",
                   "work": "\\(229600(1.005)^n=599600\\Rightarrow(1.005)^n=\\frac{5996}{2296}\\)"
                 },
                 {
@@ -19280,7 +19280,7 @@
                 "\\(\\$2391.50\\)"
               ],
               "answer": 0,
-              "hint": "Use the present value annuity formula with 0.5% monthly for 300 months.",
+              "hint": "Use the present value annuity formula with 0.5% monthly for \\(300\\) months.",
               "steps": [
                 {
                   "explain": "Set present value of payments equal to $360000.",
@@ -19323,7 +19323,7 @@
                   "work": "\\(180000=360000(1.005)^n-2319.50\\frac{(1.005)^n-1}{0.005}\\)"
                 },
                 {
-                  "explain": "Rearrange to isolate (1.005)^n.",
+                  "explain": "Rearrange to isolate \\((1.005)^n\\).",
                   "work": "\\(519.5(1.005)^n=1419.5\\Rightarrow(1.005)^n=1419.5/519.5\\)"
                 },
                 {
@@ -19409,7 +19409,7 @@
                 "\\(\\$2937.00\\)"
               ],
               "answer": 0,
-              "hint": "Use the present value of 288 equal monthly payments at 0.5% per month.",
+              "hint": "Use the present value of \\(288\\) equal monthly payments at 0.5% per month.",
               "steps": [
                 {
                   "explain": "The monthly rate is 0.06÷12=0.005. The present value of the 288 payments must equal $346095.",
@@ -19448,7 +19448,7 @@
               "hint": "Set the balance formula to zero, solve for n with logarithms, then round up because the final payment occurs in a whole month.",
               "steps": [
                 {
-                  "explain": "The monthly rate is 0.005. Set the balance after n payments to zero.",
+                  "explain": "The monthly rate is \\(0.005\\). Set the balance after n payments to zero.",
                   "work": "\\(0=346095(1.005)^n-2937[1+1.005+\\cdots+1.005^{n-1}]\\)"
                 },
                 {
@@ -19460,7 +19460,7 @@
                   "work": "\\(n=\\frac{\\ln(2937/1206.525)}{\\ln(1.005)}=178.373\\ldots\\)"
                 },
                 {
-                  "explain": "He makes 178 full payments and a smaller final payment in month 179.",
+                  "explain": "He makes \\(178\\) full payments and a smaller final payment in month \\(179\\).",
                   "work": "\\(\\boxed{179\\text{ months}}\\)"
                 }
               ],
@@ -19530,7 +19530,7 @@
               "id": "y12a-advanced-005-p246-q19-i",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "The minimum monthly repayment is the amount required to repay the loan in 300 instalments. Find the minimum monthly repayment to the nearest dollar.",
+              "stem": "The minimum monthly repayment is the amount required to repay the loan in \\(300\\) instalments. Find the minimum monthly repayment to the nearest dollar.",
               "options": [
                 "\\(\\$1439\\)",
                 "\\(\\$1394\\)",
@@ -19538,10 +19538,10 @@
                 "\\(\\$2000\\)"
               ],
               "answer": 0,
-              "hint": "The monthly rate is 7.2%÷12=0.6%. Use the present value of 300 end-of-month payments.",
+              "hint": "The monthly rate is 7.2%÷12=0.6%. Use the present value of \\(300\\) end-of-month payments.",
               "steps": [
                 {
-                  "explain": "Set the loan equal to the present value of the 300 monthly repayments.",
+                  "explain": "Set the loan equal to the present value of the \\(300\\) monthly repayments.",
                   "work": "\\(200000=M\\frac{1-(1.006)^{-300}}{0.006}\\)"
                 },
                 {
@@ -19581,7 +19581,7 @@
                   "work": "\\(A_n=200000(1.006)^n-2800\\frac{(1.006)^n-1}{0.006}\\)"
                 },
                 {
-                  "explain": "Set A_n=0 and rearrange.",
+                  "explain": "Set \\(A_n=0\\) and rearrange.",
                   "work": "\\(200000(1.006)^n=\\frac{2800}{0.006}[(1.006)^n-1]\\)"
                 },
                 {
@@ -19617,13 +19617,13 @@
           "type": "multipart",
           "difficulty": "hard",
           "stem": "Weelabarrabak Shire Council borrowed $3000000 at the beginning of 2005. The annual interest rate is 12%. Each year interest is calculated on the balance at the beginning of the year and added to the balance owing. The debt is repaid by equal annual repayments of $480000, with the first repayment at the end of 2005. Let A_n be the balance after the nth repayment. Answer parts (i)–(iii).",
-          "hint": "Add one year of interest, then subtract the repayment. The final repayment year requires counting from the first end-of-year payment in 2005.",
+          "hint": "Add one year of interest, then subtract the repayment. The final repayment year requires counting from the first end-of-year payment in \\(2005\\).",
           "parts": [
             {
               "id": "y12a-advanced-005-p247-q20-i",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Weelabarrabak Shire Council borrowed $3000000 at the beginning of 2005. Interest is 12% annually, and a $480000 repayment is made at the end of each year. Which expression gives A_2, the balance after the second repayment?",
+              "stem": "Weelabarrabak Shire Council borrowed $3000000 at the beginning of 2005. Interest is 12% annually, and a $480000 repayment is made at the end of each year. Which expression gives \\(A_2\\), the balance after the second repayment?",
               "options": [
                 "\\(3000000(1.12)^2-480000(1+1.12)\\)",
                 "\\(3000000(1.12)^2-960000\\)",
@@ -19631,7 +19631,7 @@
                 "\\(3000000-480000(1+1.12)\\)"
               ],
               "answer": 0,
-              "hint": "Grow the original loan for two years. The first repayment earns one year of interest; the second is at the end of year 2.",
+              "hint": "Grow the original loan for two years. The first repayment earns one year of interest; the second is at the end of year \\(2\\).",
               "steps": [
                 {
                   "explain": "The initial debt grows for two years at 12% per annum.",
@@ -19703,7 +19703,7 @@
                 "2019"
               ],
               "answer": 0,
-              "hint": "Find when 10^6[4−(1.12)^n] reaches zero. The number of annual repayment periods is rounded up.",
+              "hint": "Find when \\(10^6\\left[4-(1.12)^n\\right]\\) reaches zero. The number of annual repayment periods is rounded up.",
               "steps": [
                 {
                   "explain": "Solve for the number of years n at which the balance reaches zero.",
@@ -19714,7 +19714,7 @@
                   "work": "\\(n=\\frac{\\ln4}{\\ln1.12}=12.23\\ldots\\)"
                 },
                 {
-                  "explain": "The final payment is made at the end of year 13. The first repayment is at the end of 2005, so the 13th is at the end of 2017.",
+                  "explain": "The final payment is made at the end of year \\(13\\). The first repayment is at the end of \\(2005\\), so the \\(13th\\) is at the end of \\(2017\\).",
                   "work": "\\(2005+(13-1)=\\boxed{2017}\\)"
                 }
               ],
@@ -19767,7 +19767,7 @@
                   "work": "\\(A_2=(120000\\alpha-F)\\alpha-F=120000\\alpha^2-F(1+\\alpha)\\)"
                 },
                 {
-                  "explain": "Replace α by 1+0.06/k.",
+                  "explain": "Replace α by \\(1+\\frac{0.06}{k}\\).",
                   "work": "\\(A_2=120000(1+0.06/k)^2-F(2+0.06/k)\\)"
                 }
               ],
@@ -19820,7 +19820,7 @@
               "id": "y12a-advanced-005-p247-q22-iii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Barbara repays quarterly over 25 years. Find each quarterly repayment to the nearest cent.",
+              "stem": "Barbara repays quarterly over \\(25\\) years. Find each quarterly repayment to the nearest cent.",
               "options": [
                 "\\(\\$2324.47\\)",
                 "\\(\\$773.16\\)",
@@ -19828,10 +19828,10 @@
                 "\\(\\$1200.00\\)"
               ],
               "answer": 0,
-              "hint": "For quarterly repayments, k=4 and there are 25×4=100 payments. The periodic rate is 0.06/4.",
+              "hint": "For quarterly repayments, \\(k=4\\) and there are 25×4=100 payments. The periodic rate is \\(\\frac{0.06}{4}\\).",
               "steps": [
                 {
-                  "explain": "There are 100 quarterly payments and α=1+0.06/4=1.015. To finish the loan, set A_100=0.",
+                  "explain": "There are \\(100\\) quarterly payments and \\(\\alpha=1+\\frac{0.06}{4}=1.015\\). To finish the loan, set \\(A_{100}=0\\).",
                   "work": "\\(0=120000(1.015)^{100}-F[1+1.015+\\cdots+1.015^{99}]\\)"
                 },
                 {
@@ -19864,10 +19864,10 @@
                 "\\(\\$773\\)"
               ],
               "answer": 0,
-              "hint": "Find the monthly payment with 300 periods and the quarterly payment with 100 periods, then compare the total paid.",
+              "hint": "Find the monthly payment with \\(300\\) periods and the quarterly payment with \\(100\\) periods, then compare the total paid.",
               "steps": [
                 {
-                  "explain": "For quarterly payments, F_4≈$2324.47, so the rounded total is 100×$2324.47. For monthly payments use k=12, n=300 and α=1.005.",
+                  "explain": "For quarterly payments, F_4≈$2324.47, so the rounded total is 100×$2324.47. For monthly payments use \\(k=12, n=300\\) and α=1.005.",
                   "work": "\\(T_4=100F_4;\\quad F_{12}=120000(0.005)\\frac{(1.005)^{300}}{(1.005)^{300}-1}\\)"
                 },
                 {
@@ -19903,13 +19903,13 @@
           "type": "multipart",
           "difficulty": "hard",
           "stem": "A store offers a loan of $5000 on a computer, charging interest at 1% per month. As a special deal, the store does not charge interest for the first three months; the first repayment is due at the end of the first month. A customer repays the loan over three years by making 36 equal monthly repayments of $M. Let A_n be the amount owing at the end of the nth repayment. Answer (i)–(iv).",
-          "hint": "Separate the three no-interest months from the remaining 33 months. After month 3, use the 1.01 monthly multiplier.",
+          "hint": "Separate the three no-interest months from the remaining \\(33\\) months. After month \\(3\\), use the \\(1.01\\) monthly multiplier.",
           "parts": [
             {
               "id": "y12a-advanced-005-p247-q25-i",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "A store lends $5000 for a computer at 1% per month, but charges no interest during the first three months. The first of 36 equal monthly repayments M is due at the end of month 1. Which expression gives A_3, the amount owing after the third repayment?",
+              "stem": "A store lends $5000 for a computer at 1% per month, but charges no interest during the first three months. The first of 36 equal monthly repayments M is due at the end of month 1. Which expression gives \\(A_3\\), the amount owing after the third repayment?",
               "options": [
                 "\\(5000-3M\\)",
                 "\\(5000(1.01)^3-3M\\)",
@@ -19917,10 +19917,10 @@
                 "\\(5000-2M\\)"
               ],
               "answer": 0,
-              "hint": "There is no interest during the first three months, and three repayments have been made by the end of month 3.",
+              "hint": "There is no interest during the first three months, and three repayments have been made by the end of month \\(3\\).",
               "steps": [
                 {
-                  "explain": "Start with $5000. The special offer means no interest is added in months 1, 2 or 3.",
+                  "explain": "Start with $5000. The special offer means no interest is added in months \\(1, 2\\) or 3.",
                   "work": "\\(5000\\)"
                 },
                 {
@@ -19945,7 +19945,7 @@
               "id": "y12a-advanced-005-p247-q25-ii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "After the first three months with no interest, which expression gives A_5?",
+              "stem": "After the first three months with no interest, which expression gives \\(A_5\\)?",
               "options": [
                 "\\((5000-3M)(1.01)^2-M(1+1.01)\\)",
                 "\\((5000-3M)(1.01)^2-2M\\)",
@@ -19953,14 +19953,14 @@
                 "\\(5000(1.01)^5-5M\\)"
               ],
               "answer": 0,
-              "hint": "Begin with A_3=5000−3M. In months 4 and 5, interest is added and then a repayment is made.",
+              "hint": "Begin with \\(A_3=5000-3M\\). In months \\(4\\) and \\(5\\), interest is added and then a repayment is made.",
               "steps": [
                 {
-                  "explain": "From month 3 to month 5, the balance earns interest twice.",
+                  "explain": "From month \\(3\\) to month \\(5\\), the balance earns interest twice.",
                   "work": "\\((5000-3M)(1.01)^2\\)"
                 },
                 {
-                  "explain": "The month-4 repayment earns one more month of interest by month 5. The month-5 payment earns none.",
+                  "explain": "The month-4 repayment earns one more month of interest by month \\(5\\). The month-5 payment earns none.",
                   "work": "\\(-M(1.01)-M\\)"
                 },
                 {
@@ -19981,7 +19981,7 @@
               "id": "y12a-advanced-005-p247-q25-iii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Which expression gives the amount owing after the 36th monthly repayment?",
+              "stem": "Which expression gives the amount owing after the \\(36th\\) monthly repayment?",
               "options": [
                 "\\((5000-3M)(1.01)^{33}-M\\frac{(1.01)^{33}-1}{0.01}\\)",
                 "\\(5000(1.01)^{36}-36M\\)",
@@ -19989,14 +19989,14 @@
                 "\\((5000-3M)(1.01)^{33}-33M\\)"
               ],
               "answer": 0,
-              "hint": "After month 3 there are 33 interest-bearing months and 33 repayments. Accumulate those repayments as a geometric series.",
+              "hint": "After month \\(3\\) there are \\(33\\) interest-bearing months and \\(33\\) repayments. Accumulate those repayments as a geometric series.",
               "steps": [
                 {
-                  "explain": "The balance after three months is A_3=5000−3M. It grows for the remaining 33 months.",
+                  "explain": "The balance after three months is \\(A_3=5000-3M\\). It grows for the remaining \\(33\\) months.",
                   "work": "\\((5000-3M)(1.01)^{33}\\)"
                 },
                 {
-                  "explain": "The remaining 33 payments accumulate with factors 1, 1.01, …, 1.01^32.",
+                  "explain": "The remaining \\(33\\) payments accumulate with factors \\(1, 1.01\\), …, \\(1.01^32\\).",
                   "work": "\\(M[1+1.01+\\cdots+1.01^{32}]=M\\frac{(1.01)^{33}-1}{0.01}\\)"
                 },
                 {
@@ -20025,7 +20025,7 @@
                 "\\(\\$500.00\\)"
               ],
               "answer": 0,
-              "hint": "Set A_36=0 in the expression from part (iii) and solve for M.",
+              "hint": "Set \\(A_36=0\\) in the expression from part (iii) and solve for M.",
               "steps": [
                 {
                   "explain": "Set the end balance to zero.",
@@ -21342,7 +21342,7 @@
               "hint": "This is an annuity due: 420 beginning-of-month contributions of $100 at 0.5% per month.",
               "steps": [
                 {
-                  "explain": "The monthly rate is 0.06/12=0.005. Beginning-of-month payments accumulate for 1 through 420 months.",
+                  "explain": "The monthly rate is \\(\\frac{0.06}{12}=0.005\\). Beginning-of-month payments accumulate for \\(1\\) through \\(420\\) months.",
                   "work": "\\(P=100(1.005+1.005^2+\\cdots+1.005^{420})\\)"
                 },
                 {
@@ -21375,7 +21375,7 @@
                 "\\(29227+M(1.005+1.005^2)\\)"
               ],
               "answer": 0,
-              "hint": "Grow the existing balance for two months. The month 1 contribution earns interest for two months and the month 2 contribution for one month.",
+              "hint": "Grow the existing balance for two months. The month \\(1\\) contribution earns interest for two months and the month \\(2\\) contribution for one month.",
               "steps": [
                 {
                   "explain": "The existing $29227 is present for both months.",
@@ -21403,7 +21403,7 @@
               "id": "y12a-advanced-005-p245-q14-ii3",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Find the value of M so that Jules will have $800000 in her fund after the remaining 20 years (240 months).",
+              "stem": "Find the value of M so that Jules will have $800000 in her fund after the remaining 20 years \\((240\\) months).",
               "options": [
                 "\\(\\$1514.48\\)",
                 "\\(\\$1415.48\\)",
@@ -21414,7 +21414,7 @@
               "hint": "First grow $29227 for 240 months. Then add the future value of 240 beginning-of-month payments M.",
               "steps": [
                 {
-                  "explain": "The existing savings grow for 240 months. The new monthly payments are made at the beginning of each month, so they grow by factors 1.005 through 1.005^240.",
+                  "explain": "The existing savings grow for \\(240\\) months. The new monthly payments are made at the beginning of each month, so they grow by factors \\(1.005\\) through \\(1.005^240\\).",
                   "work": "\\(800000=29227(1.005)^{240}+M(1.005+1.005^2+\\cdots+1.005^{240})\\)"
                 },
                 {
@@ -21464,10 +21464,10 @@
                 "\\(\\$243175.55\\)"
               ],
               "answer": 0,
-              "hint": "Use an annuity due with 240 deposits and monthly rate 0.005.",
+              "hint": "Use an annuity due with \\(240\\) deposits and monthly rate \\(0.005\\).",
               "steps": [
                 {
-                  "explain": "Beginning-of-month deposits grow for 1 through 240 periods.",
+                  "explain": "Beginning-of-month deposits grow for \\(1\\) through \\(240\\) periods.",
                   "work": "\\(P=500(1.005+1.005^2+\\cdots+1.005^{240})\\)"
                 },
                 {
@@ -21511,7 +21511,7 @@
                   "work": "\\(A_n=P(1.005)^n-2000\\frac{(1.005)^n-1}{0.005}\\)"
                 },
                 {
-                  "explain": "Since 2000/0.005=400000, collect the terms.",
+                  "explain": "Since \\(\\frac{2000}{0.005}=400000\\), collect the terms.",
                   "work": "\\(A_n=(P-400000)(1.005)^n+400000\\)"
                 }
               ],
@@ -21536,7 +21536,7 @@
                 "\\(240\\text{ months}\\)"
               ],
               "answer": 0,
-              "hint": "Solve A_n=0 using the formula from the previous part. Round up to the next month because the final withdrawal is smaller.",
+              "hint": "Solve \\(A_n=0\\) using the formula from the previous part. Round up to the next month because the final withdrawal is smaller.",
               "steps": [
                 {
                   "explain": "Set the balance formula to zero to locate when the fund is exhausted.",
@@ -21582,7 +21582,7 @@
               "id": "y12a-advanced-005-p243-q05-i",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "A person wins $1000000 and invests it at 6% per annum compounded quarterly, withdrawing $80000 at the end of every fourth quarter. Let A_n be the balance after the nth withdrawal. Which expression gives A_2, the balance after the eighth quarter?",
+              "stem": "A person wins $1000000 and invests it at 6% per annum compounded quarterly, withdrawing $80000 at the end of every fourth quarter. Let A_n be the balance after the nth withdrawal. Which expression gives \\(A_2\\), the balance after the eighth quarter?",
               "options": [
                 "\\(1000000(1.015)^8-80000(1+1.015^4)\\)",
                 "\\(1000000(1.015)^8-160000\\)",
@@ -21590,7 +21590,7 @@
                 "\\(1000000(1.015)^4-80000\\)"
               ],
               "answer": 0,
-              "hint": "The quarterly rate is 6%÷4=1.5%. Grow the original amount for 8 quarters. The first withdrawal earns interest for 4 more quarters; the second is at the end of quarter 8.",
+              "hint": "The quarterly rate is 6%÷4=1.5%. Grow the original amount for \\(8\\) quarters. The first withdrawal earns interest for \\(4\\) more quarters; the second is at the end of quarter \\(8\\).",
               "steps": [
                 {
                   "explain": "Convert to a quarterly multiplier and grow $1000000 for eight quarters.",
@@ -21629,7 +21629,7 @@
               "hint": "Convert the annual rate to 1.5% each quarter. There are four quarterly growth periods between withdrawals.",
               "steps": [
                 {
-                  "explain": "The quarterly interest rate is 0.06/4=0.015. After one year, first grow the balance for four quarters, then subtract $80000.",
+                  "explain": "The quarterly interest rate is \\(\\frac{0.06}{4}=0.015\\). After one year, first grow the balance for four quarters, then subtract $80000.",
                   "work": "\\(A_1=1000000(1.015)^4-80000\\)"
                 },
                 {
@@ -21637,11 +21637,11 @@
                   "work": "\\(A_n=1000000(1.015)^{4n}-80000[1+1.015^4+\\cdots+1.015^{4(n-1)}]\\)"
                 },
                 {
-                  "explain": "The geometric-series expression reaches a negative balance at the 25th withdrawal; after 24 full withdrawals the balance remains positive.",
+                  "explain": "The geometric-series expression reaches a negative balance at the \\(25th\\) withdrawal; after \\(24\\) full withdrawals the balance remains positive.",
                   "work": "\\(A_{24}>0,\\quad A_{25}<0\\)"
                 },
                 {
-                  "explain": "Thus the full withdrawal can be made for 24 years.",
+                  "explain": "Thus the full withdrawal can be made for \\(24\\) years.",
                   "work": "\\(\\boxed{24\\text{ years}}\\)"
                 }
               ],
@@ -21668,7 +21668,7 @@
           "id": "y12a-advanced-005-p246-q17",
           "type": "multipart",
           "difficulty": "hard",
-          "stem": "Peter retires with a lump sum of $100000. The money is invested in a fund which pays interest each month at a rate of 6% per annum, and Peter receives a fixed monthly payment of $M from the fund. Find a formula for A_n, the amount left in the fund after n monthly payments, and find M so that nothing is left after 12 years (144 payments).",
+          "stem": "Peter retires with a lump sum of $100000. The money is invested in a fund which pays interest each month at a rate of 6% per annum, and Peter receives a fixed monthly payment of $M from the fund. Find a formula for A_n, the amount left in the fund after n monthly payments, and find M so that nothing is left after 12 years \\((144\\) payments).",
           "hint": "Interest is credited monthly before each fixed payment. Write the balance recurrence, then use a geometric sum.",
           "parts": [
             {
@@ -21690,7 +21690,7 @@
                   "work": "\\(A_n=100000(1.005)^n-M(1+1.005+\\cdots+1.005^{n-1})\\)"
                 },
                 {
-                  "explain": "The withdrawal values form a geometric series with first term 1, ratio 1.005 and n terms.",
+                  "explain": "The withdrawal values form a geometric series with first term \\(1\\), ratio \\(1.005\\) and n terms.",
                   "work": "\\(1+1.005+\\cdots+1.005^{n-1}=\\frac{(1.005)^n-1}{0.005}\\)"
                 },
                 {
@@ -21711,7 +21711,7 @@
               "id": "y12a-advanced-005-p246-q17-ii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Peter wants the fund to be empty after 12 years (144 monthly payments). Find M to the nearest cent.",
+              "stem": "Peter wants the fund to be empty after \\(12\\) years \\((144\\) monthly payments). Find M to the nearest cent.",
               "options": [
                 "\\(\\$975.85\\)",
                 "\\(\\$957.85\\)",
@@ -21719,10 +21719,10 @@
                 "\\(\\$995.85\\)"
               ],
               "answer": 0,
-              "hint": "Set A_144=0 in the formula. The monthly interest rate is 0.005.",
+              "hint": "Set \\(A_144=0\\) in the formula. The monthly interest rate is \\(0.005\\).",
               "steps": [
                 {
-                  "explain": "Use the balance equation with n=144 and set the final balance to zero.",
+                  "explain": "Use the balance equation with \\(n=144\\) and set the final balance to zero.",
                   "work": "\\(0=100000(1.005)^{144}-M\\frac{(1.005)^{144}-1}{0.005}\\)"
                 },
                 {
@@ -21758,7 +21758,7 @@
           "type": "multipart",
           "difficulty": "hard",
           "stem": "Betty decides to set up a trust fund for her grandson, Luis. She invests $80 at the beginning of each month. The money is invested at 6% per annum compounded monthly. The trust fund matures at the end of the month of her final investment, 25 years after her first investment. This means Betty makes 300 monthly investments. Answer (i) and (ii).",
-          "hint": "Beginning-of-month payments earn interest during that month. Write the growth factor for the first investment and then sum all 300 factors.",
+          "hint": "Beginning-of-month payments earn interest during that month. Write the growth factor for the first investment and then sum all \\(300\\) factors.",
           "parts": [
             {
               "id": "y12a-advanced-005-p247-q21-i",
@@ -21772,7 +21772,7 @@
                 "\\(\\$55716.71\\)"
               ],
               "answer": 0,
-              "hint": "The monthly rate is 0.5%. The first deposit earns interest for all 300 months.",
+              "hint": "The monthly rate is 0.5%. The first deposit earns interest for all \\(300\\) months.",
               "steps": [
                 {
                   "explain": "There are 25×12=300 monthly periods. The first $80 is invested at the start, so it grows for all 300 months.",
@@ -21808,7 +21808,7 @@
                 "\\(\\$60000.00\\)"
               ],
               "answer": 0,
-              "hint": "At maturity, the 300 deposits have growth factors 1.005, 1.005², …, 1.005^300.",
+              "hint": "At maturity, the \\(300\\) deposits have growth factors \\(1.005, 1.005^{2}\\), …, \\(1.005^300\\).",
               "steps": [
                 {
                   "explain": "Each $80 deposit is made at the start of a month. At maturity, the first has grown 300 months and the last has grown one month.",
@@ -21854,10 +21854,10 @@
             "\\(\\$259605\\)"
           ],
           "answer": 0,
-          "hint": "Count the annual investments from 2003 through 2023 inclusive. Each beginning-of-year deposit earns interest through that year.",
+          "hint": "Count the annual investments from \\(2003\\) through \\(2023\\) inclusive. Each beginning-of-year deposit earns interest through that year.",
           "steps": [
             {
-              "explain": "There are 21 investments, from 1 January 2003 to 1 January 2023. At 31 December 2023, the deposits have earned 21, 20, …, 1 years of interest.",
+              "explain": "There are \\(21\\) investments, from \\(1\\) January \\(2003\\) to \\(1\\) January \\(2023\\). At \\(31\\) December \\(2023\\), the deposits have earned \\(21, 20\\), …, \\(1\\) years of interest.",
               "work": "\\(V=5000(1.0875+1.0875^2+\\cdots+1.0875^{21})\\)"
             },
             {
@@ -21972,7 +21972,7 @@
               "hint": "Find the balance after year 10, then apply 6% interest and subtract $90 each year. Count full prizes before the balance is too small.",
               "steps": [
                 {
-                  "explain": "Use the given balance formula at n=10.",
+                  "explain": "Use the given balance formula at \\(n=10\\).",
                   "work": "\\(B_{10}=1200-200(1.06)^{10}=841.83\\ldots\\)"
                 },
                 {
@@ -21980,7 +21980,7 @@
                   "work": "\\(0=B_{10}(1.06)^n-90\\frac{(1.06)^n-1}{0.06}\\Rightarrow n=14.137\\ldots\\)"
                 },
                 {
-                  "explain": "The balance supports 14 full annual prizes; the 15th cannot be paid in full.",
+                  "explain": "The balance supports \\(14\\) full annual prizes; the \\(15th\\) cannot be paid in full.",
                   "work": "\\(\\boxed{14\\text{ more years}}\\)"
                 }
               ],
@@ -22014,7 +22014,7 @@
               "id": "y12a-advanced-005-p247-q26-i",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Isabella invests $P at 8% per annum compounded annually and withdraws $3000 at the end of each of the next six years. Which expression gives A_1 after the first withdrawal?",
+              "stem": "Isabella invests $P at 8% per annum compounded annually and withdraws $3000 at the end of each of the next six years. Which expression gives \\(A_1\\) after the first withdrawal?",
               "options": [
                 "\\(\\$1.08P-3000\\)",
                 "\\(\\$1.08(P-3000)\\)",
@@ -22025,7 +22025,7 @@
               "hint": "Apply one year of 8% interest to P, then subtract the $3000 withdrawal.",
               "steps": [
                 {
-                  "explain": "After one year, the investment has grown by a factor of 1.08.",
+                  "explain": "After one year, the investment has grown by a factor of \\(1.08\\).",
                   "work": "\\(P\\times1.08\\)"
                 },
                 {
@@ -22050,7 +22050,7 @@
               "id": "y12a-advanced-005-p247-q26-ii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Which expression gives A_2, the balance after the second $3000 withdrawal?",
+              "stem": "Which expression gives \\(A_2\\), the balance after the second $3000 withdrawal?",
               "options": [
                 "\\(\\$1.08^2P-3000(1+1.08)\\)",
                 "\\(\\$1.08^2P-6000\\)",
@@ -22058,7 +22058,7 @@
                 "\\(\\$1.08^2(P-3000)\\)"
               ],
               "answer": 0,
-              "hint": "The original investment earns two years of interest. The first withdrawal earns one further year of interest; the second withdrawal is at year 2.",
+              "hint": "The original investment earns two years of interest. The first withdrawal earns one further year of interest; the second withdrawal is at year \\(2\\).",
               "steps": [
                 {
                   "explain": "Grow P for two years.",
@@ -22139,7 +22139,7 @@
               "id": "y12a-advanced-005-p248-q29-i",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Ezzat invests $50000 at 8% interest compounded annually and withdraws M at each year end. Which expression gives the balance A_1 immediately after the first withdrawal?",
+              "stem": "Ezzat invests $50000 at 8% interest compounded annually and withdraws M at each year end. Which expression gives the balance \\(A_1\\) immediately after the first withdrawal?",
               "options": [
                 "\\(\\$54000-M\\)",
                 "\\(\\$50000(1.08-M)\\)",
@@ -22186,7 +22186,7 @@
               "hint": "Grow the initial investment n years and subtract the accumulated value of the n withdrawals.",
               "steps": [
                 {
-                  "explain": "At the end of year n, the original amount has grown for n years. The withdrawals have growth factors 1, 1.08, …, 1.08^(n−1).",
+                  "explain": "At the end of year n, the original amount has grown for n years. The withdrawals have growth factors \\(1, 1.08\\), …, \\(1.08^{n-1}\\).",
                   "work": "\\(A_n=50000(1.08)^n-M[1+1.08+\\cdots+1.08^{n-1}]\\)"
                 },
                 {
@@ -22211,7 +22211,7 @@
               "id": "y12a-advanced-005-p248-q29-iii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Ezzat wants the account empty after the 20th withdrawal. Find M to the nearest cent.",
+              "stem": "Ezzat wants the account empty after the \\(20th\\) withdrawal. Find M to the nearest cent.",
               "options": [
                 "\\(\\$5092.61\\)",
                 "\\(\\$5000.00\\)",
@@ -22219,10 +22219,10 @@
                 "\\(\\$5292.61\\)"
               ],
               "answer": 0,
-              "hint": "Set A_20=0 in the annuity-withdrawal formula and solve for M.",
+              "hint": "Set \\(A_20=0\\) in the annuity-withdrawal formula and solve for M.",
               "steps": [
                 {
-                  "explain": "Set the balance after 20 withdrawals to zero.",
+                  "explain": "Set the balance after \\(20\\) withdrawals to zero.",
                   "work": "\\(0=50000(1.08)^{20}-M\\frac{(1.08)^{20}-1}{0.08}\\)"
                 },
                 {
@@ -22258,7 +22258,7 @@
               "hint": "Use a calculator to solve 50000=8000[1−(1+r)^−20]/r for r.",
               "steps": [
                 {
-                  "explain": "The starting amount must equal the present value of 20 end-of-year withdrawals.",
+                  "explain": "The starting amount must equal the present value of \\(20\\) end-of-year withdrawals.",
                   "work": "\\(50000=8000\\frac{1-(1+r)^{-20}}{r}\\)"
                 },
                 {
@@ -22266,7 +22266,7 @@
                   "work": "\\(f(r)=8000\\frac{1-(1+r)^{-20}}{r}-50000=0\\)"
                 },
                 {
-                  "explain": "The solution is r≈0.15027, which rounds to the nearest per cent as:",
+                  "explain": "The solution is \\(r\\approx 0.15027\\), which rounds to the nearest per cent as:",
                   "work": "\\(\\boxed{15\\%}\\)"
                 }
               ],
