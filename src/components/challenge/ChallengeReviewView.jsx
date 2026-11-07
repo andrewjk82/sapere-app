@@ -396,8 +396,9 @@ const ChallengeReviewView = ({
                 const rawSqAns = typeof studentRaw === 'object' && studentRaw !== null ? studentRaw[sqKey] : '';
                 const sqAnsText = formatStudentAnswer(sq, rawSqAns);
                 // A review built from a graded test supplies per-part results; otherwise compare the answer text.
-                const isSqCorrect = Array.isArray(result?.partCorrect) ? result.partCorrect[sIdx] === true : answersMatch(sqAnsText || '', sq.answer);
-                const showCorrect = !isSqCorrect && sq.answer;
+                const isSqCorrect = Array.isArray(result?.partCorrect) ? result.partCorrect[sIdx] === true : answersMatch(sqAnsText || '', sqCorrectText || sq.answer);
+                const sqCorrectText = getCorrectAnswerText(sq);
+                const showCorrect = !isSqCorrect && (sqCorrectText || sq.answer);
                 
                 return (
                   <div key={sqKey} style={{ padding: '20px 22px', borderRadius: '20px', background: '#fff', border: '1px solid #e2e8f0', boxShadow: '0 4px 12px rgba(0,0,0,0.02)' }}>
@@ -424,7 +425,7 @@ const ChallengeReviewView = ({
                       <div style={{ padding: '12px 14px', borderRadius: '12px', background: '#f8fafc', border: '1px solid #e2e8f0', display: 'flex', alignItems: 'center', gap: '8px' }}>
                         <CheckCircle2 size={16} color="#10b981" />
                         <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#065f46', textTransform: 'uppercase', marginRight: '6px' }}>Correct answer:</span>
-                        <MathView content={wrapMath(String(sq.answer))} style={{ color: '#065f46', fontWeight: 600, fontSize: '0.92rem' }} />
+                        <MathView content={wrapMath(String(sqCorrectText || sq.answer))} style={{ color: '#065f46', fontWeight: 600, fontSize: '0.92rem' }} />
                       </div>
                     )}
                   </div>
