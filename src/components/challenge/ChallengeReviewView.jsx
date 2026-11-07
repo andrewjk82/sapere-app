@@ -395,9 +395,9 @@ const ChallengeReviewView = ({
                 const sqKey = sq.id || sIdx;
                 const rawSqAns = typeof studentRaw === 'object' && studentRaw !== null ? studentRaw[sqKey] : '';
                 const sqAnsText = formatStudentAnswer(sq, rawSqAns);
+                const sqCorrectText = getCorrectAnswerText(sq);
                 // A review built from a graded test supplies per-part results; otherwise compare the answer text.
                 const isSqCorrect = Array.isArray(result?.partCorrect) ? result.partCorrect[sIdx] === true : answersMatch(sqAnsText || '', sqCorrectText || sq.answer);
-                const sqCorrectText = getCorrectAnswerText(sq);
                 const showCorrect = !isSqCorrect && (sqCorrectText || sq.answer);
                 
                 return (
