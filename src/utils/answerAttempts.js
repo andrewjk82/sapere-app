@@ -64,6 +64,18 @@ const givesAnswerAway = (text, answer) => {
   return t === a || t.endsWith(`=${a}`);
 };
 
+// Generated questions (primary years) often write the answer into the hint: "The answer is 2:15", "They are equal",
+// "10c - 5c = 5c more needed". There a short answer counts anywhere as a whole word.
+const generatedHintGivesAway = (text, answer) => {
+  const a = String(answer ?? '').trim();
+  if (!a) return false;
+  if (/\bthe answer\b/i.test(String(text))) return true;
+  const escaped = a.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  // A number may carry a unit in the hint: answer 5, hint "5c change".
+  const tail = /^\d/.test(a) ? '[a-z]*' : '';
+  return new RegExp(`(^|[^\\w.])${escaped}${tail}($|[^\\w])`, 'i').test(String(text));
+};
+
 export const answerText = (q) => {
   if (Array.isArray(q?.blanks) && q.blanks.length > 0) return q.blanks.map((b) => b?.answer ?? '').join(', ');
   return resolveCorrectOptionText(q) ?? '';
@@ -72,17 +84,19 @@ export const answerText = (q) => {
 // The help for one question or part: its own hint, else the first step of its solution without anything that hands
 // over the answer. Returns null when there is nothing safe to show.
 const hintFor = (q) => {
-  const hint = parseHintSteps(q?.hint);
+  const answer = answerText(q);
+  const generated = String(q?.id ?? '').startsWith('gen-');
+  const safe = (text) => !givesAnswerAway(text, answer) && !(generated && generatedHintGivesAway(text, answer));
+  const hint = parseHintSteps(q?.hint).filter(safe);
   if (hint.length > 0) return { lines: hint };
   const [first, ...rest] = parseSolutionSteps(q) || [];
   if (!first) return null;
-  const answer = answerText(q);
   const explanation = typeof first === 'string' ? first : first.explanation;
   const work = typeof first === 'string' ? '' : first.workingOut;
   const lines = [];
-  if (explanation && !givesAnswerAway(explanation, answer)) lines.push(explanation);
+  if (explanation && safe(explanation)) lines.push(explanation);
   // A one-step solution's working is the answer.
-  if (work && rest.length > 0 && !givesAnswerAway(work, answer)) lines.push(work);
+  if (work && rest.length > 0 && safe(work)) lines.push(work);
   return lines.length > 0 ? { lines } : null;
 };
 

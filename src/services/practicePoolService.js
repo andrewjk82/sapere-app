@@ -529,7 +529,8 @@ export const queueExtraRoundDone = (batch, uid, results) => {
   const pools = data?.chapter_pools || null;
   const byChapter = {};
   results.forEach(({ id, chapterId, correct }) => {
-    if (!id || !chapterId || (pools && !pools[chapterId])) return;
+    // Generated questions (primary years) are never in the pool, so there is nothing to mark.
+    if (!id || !chapterId || String(id).startsWith('gen-') || (pools && !pools[chapterId])) return;
     if (!byChapter[chapterId]) byChapter[chapterId] = { ids: [], correct: 0 };
     byChapter[chapterId].ids.push(String(id));
     if (correct) byChapter[chapterId].correct += 1;

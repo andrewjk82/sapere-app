@@ -70,6 +70,17 @@ test('step 1 never hands over the answer', () => {
   assert.ok(!nothingSafe[0].lines.join().includes('3.75'));
 });
 
+test('a hint that states the answer is not shown', () => {
+  const bank = mc({ hint: 'The sum is 123', options: ['100', '123'], answer: 1 });
+  assert.ok(!retryHints(bank)[0].lines.join().includes('123'));
+  const gen = (hint, answer) => retryHints({ id: 'gen-x', type: 'multiple_choice', question: 'Q', options: [answer, 'other'], answer: 0, hint })[0].lines.join();
+  assert.ok(!gen('The answer is 2:15.', '2:15').includes('2:15'));
+  assert.ok(!gen('10c - 5c = 5c more needed.', '5c').includes('5c'));
+  assert.ok(!gen('Compare 6 and 6. They are equal.', 'equal').includes('equal'));
+  assert.equal(gen('Count back from 6.', '3'), 'Count back from 6.');
+  assert.ok(!gen('25c - 20c = 5c change.', '5').includes('5c'));
+});
+
 test('a multi-part question gets hints only for the parts still open', () => {
   const q = { type: 'multipart', question: 'Q', subQuestions: [
     mc({ id: 'a', hint: 'Hint A' }), mc({ id: 'b', hint: 'Hint B' }),

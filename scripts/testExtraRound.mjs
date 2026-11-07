@@ -141,6 +141,15 @@ test('one send is a single pass with no reads', () => {
   assert.ok(!queue.includes('transaction') && !queue.includes('getDoc('));
 });
 
+// Jordan, 2026-11-07: Year 1 and 2 pools hold almost nothing, because their Daily Practice is generated.
+test('primary years top up an extra round with generated questions, as Daily Practice does', () => {
+  const src = readFileSync(new URL('../src/services/dailyAssignmentService.js', import.meta.url), 'utf8');
+  const build = src.slice(src.indexOf('export const buildExtraRound'), src.indexOf('export const prepareNextDailyAssignment'));
+  assert.ok(build.includes('addGeneratedQuestions(targets, questions, used, questionCount)'));
+  const pool = readFileSync(new URL('../src/services/practicePoolService.js', import.meta.url), 'utf8');
+  assert.ok(pool.includes("String(id).startsWith('gen-')"));
+});
+
 test('starting a round is gated on finishing Daily Practice and writes nothing', () => {
   const src = readFileSync(new URL('../src/components/DailyChallenge.jsx', import.meta.url), 'utf8');
   const start = src.slice(src.indexOf('const startExtraRound = async'), src.indexOf('const requestStartCalc'));

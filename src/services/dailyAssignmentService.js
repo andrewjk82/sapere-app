@@ -685,6 +685,37 @@ const fetchHscPastPaperQuestions = async (uid, count, excludeIds = new Set()) =>
   }
 };
 
+// Year 1-4 banks are thin on multiple choice, so what the pool cannot supply is made procedurally. Year 5+ stay
+// bank-only. Adds to `questions` and `usedIds`; returns how many it made.
+const addGeneratedQuestions = (targets, questions, usedIds, questionCount) => {
+  const generationYears = targets.assignedYears.filter((y) => getYearNumber(y) < 5);
+  if (generationYears.length === 0 || questions.length >= questionCount) return 0;
+  const need = questionCount - questions.length;
+  const difficulties = ["easy", "medium", "hard"];
+  const maxAttempts = need * 6 + 6;
+  let generatedCount = 0;
+  for (let attempt = 0; attempt < maxAttempts && generatedCount < need; attempt += 1) {
+    let generated;
+    try {
+      generated = generateQuestion({
+        year: generationYears,
+        course: targets.assignedCourses,
+        assignedChapters: targets.assignedChapters,
+        assignedTopics: targets.assignedTopics,
+      }, difficulties[generatedCount % difficulties.length]);
+    } catch (err) {
+      console.warn("Daily question generation failed:", err?.message || err);
+      break;
+    }
+    const withId = correctQuestionAnswer({ ...generated, id: hashGeneratedQuestion(generated) });
+    if (usedIds.has(String(withId.id))) continue;
+    usedIds.add(String(withId.id));
+    questions.push(withId);
+    generatedCount += 1;
+  }
+  return generatedCount;
+};
+
 const buildQuestionsForStudent = async (studentProfile, questionCount, uid, membershipVersion) => {
   const { ensurePracticePool, selectDailyQuestions, pickExtraPoolIds } = await import("./practicePoolService");
 
@@ -784,32 +815,7 @@ const buildQuestionsForStudent = async (studentProfile, questionCount, uid, memb
   // Top up any remaining shortfall with procedural generation for Year 1–4 only.
   // Year 5+ stay seed-only (pool top-up above is their fill path).
   // Primary (Y1–4) bank is thin on MCQs — without this, students get 0 questions.
-  const generationYears = targets.assignedYears.filter((y) => getYearNumber(y) < 5);
-  let generatedCount = 0;
-  if (generationYears.length > 0 && questions.length < questionCount) {
-    const need = questionCount - questions.length;
-    const difficulties = ["easy", "medium", "hard"];
-    const maxAttempts = need * 6 + 6;
-    for (let attempt = 0; attempt < maxAttempts && generatedCount < need; attempt += 1) {
-      let generated;
-      try {
-        generated = generateQuestion({
-          year: generationYears,
-          course: targets.assignedCourses,
-          assignedChapters: targets.assignedChapters,
-          assignedTopics: targets.assignedTopics,
-        }, difficulties[generatedCount % difficulties.length]);
-      } catch (err) {
-        console.warn("Daily question generation failed:", err?.message || err);
-        break;
-      }
-      const withId = correctQuestionAnswer({ ...generated, id: hashGeneratedQuestion(generated) });
-      if (usedIds.has(String(withId.id))) continue;
-      usedIds.add(String(withId.id));
-      questions.push(withId);
-      generatedCount += 1;
-    }
-  }
+  const generatedCount = addGeneratedQuestions(targets, questions, usedIds, questionCount);
 
   // ── HSC past-paper add-on (teacher-controlled, additive to questionCount) ──
   // These questions live under exam:* chapters, which aren't part of any
@@ -936,6 +942,7 @@ export const buildExtraRound = async ({ uid, studentProfile, questionCount = 10,
       questions.push(correctQuestionAnswer(slimQuestion(d)));
     });
   }
+  addGeneratedQuestions(targets, questions, used, questionCount);
 
   localCache.set(extraRoundSeenKey(uid), {
     date: dateKey,
