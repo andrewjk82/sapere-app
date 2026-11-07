@@ -4780,8 +4780,8 @@
           "id": "y12a-advanced-005-p248-q27",
           "type": "multipart",
           "difficulty": "hard",
-          "stem": "A fish farmer began business on 1 January 1998 with a stock of 100000 fish. He had a contract to supply 15400 fish at $10 per fish to a retailer in December each year. From January to the December harvest, the number of fish increases by 10%. Answer parts (i)–(iv), including the retailer’s later offer of $15 per fish for the entire stock.",
-          "hint": "Use the yearly recurrence: increase the stock by 10%, then subtract fish sold. To compare selling the business, include both past sales and the $15 value of the stock remaining.",
+          "stem": "A fish farmer began business on 1 January 1998 with a stock of 100000 fish. He had a contract to supply 15400 fish at \\(\\$10\\) per fish to a retailer in December each year. From January to the December harvest, the number of fish increases by 10%. Answer parts (i)–(iv), including the retailer’s later offer of \\(\\$15\\) per fish for the entire stock.",
+          "hint": "Use the yearly recurrence: increase the stock by 10%, then subtract fish sold. To compare selling the business, include both past sales and the \\(\\$15\\) value of the stock remaining.",
           "parts": [
             {
               "id": "y12a-advanced-005-p248-q27-i",
@@ -4823,7 +4823,7 @@
               "id": "y12a-advanced-005-p248-q27-ii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Let F_n be the number of fish just after the nth harvest. Which formula is correct?",
+              "stem": "Let \\(F_n\\) be the number of fish just after the nth harvest. Which formula is correct?",
               "options": [
                 "\\(F_n=154000-54000(1.1)^n\\)",
                 "\\(F_n=100000(1.1)^n-15400n\\)",
@@ -4831,7 +4831,7 @@
                 "\\(F_n=15400-100000(1.1)^n\\)"
               ],
               "answer": 0,
-              "hint": "The recurrence is \\(F_n=1.1F_(n-1)-15400\\). Solve it by expanding the repeated harvest rule.",
+              "hint": "The recurrence is \\(F_n=1.1F_{n-1}-15400\\). Solve it by expanding the repeated harvest rule.",
               "steps": [
                 {
                   "explain": "Write the stock update: it grows by 10%, then \\(15400\\) fish are removed.",
@@ -4843,7 +4843,7 @@
                 },
                 {
                   "explain": "Sum and simplify.",
-                  "work": "\\(F_n=100000(1.1)^n-154000((1.1)^n-1)=154000-54000(1.1)^n\\)"
+                  "work": "\\(F_n=100000(1.1)^n-154000\\left((1.1)^n-1\\right)=154000-54000(1.1)^n\\)"
                 }
               ],
               "timeLimit": 60,
@@ -4861,25 +4861,25 @@
               "difficulty": "medium",
               "stem": "When will the farmer have sold all his fish, and what will his total income be?",
               "options": [
-                "December 2008; \\(\\$1694000\\)",
-                "December 2009; \\(\\$1694000\\)",
-                "December 2008; \\(\\$1540000\\)",
-                "December 2007; \\(\\$1694000\\)"
+                "December \\(2008\\); \\(\\$1693317\\)",
+                "December \\(2009\\); \\(\\$1693317\\)",
+                "December \\(2008\\); \\(\\$1694000\\)",
+                "December \\(2007\\); \\(\\$1693317\\)"
               ],
               "answer": 0,
               "hint": "Find the first harvest where the fish available before harvest are at most \\(15400\\). Add the revenue from earlier full harvests and the final smaller harvest.",
               "steps": [
                 {
-                  "explain": "After ten full harvests, \\(F_10\\approx 13937.91\\) fish remain. Before the next harvest, the stock grows by 10%.",
+                  "explain": "After ten full harvests, \\(F_{10}\\approx13937.91\\) fish remain. Before the next harvest, the stock grows by \\(10\\%\\).",
                   "work": "\\(1.1F_{10}=1.1(13937.91)\\approx15331.70\\)"
                 },
                 {
-                  "explain": "This is the \\(11th\\) harvest, in December \\(2008\\). The farmer sells the remaining approximately \\(15331.70\\) fish then.",
-                  "work": "\\(15400(10)+15331.70\\approx169331.70\\text{ fish sold}\\)"
+                  "explain": "This is less than \\(15400\\), so at the \\(11\\)th harvest (December \\(2008\\)) the farmer sells all the remaining fish. Income from the first ten harvests plus this last sale:",
+                  "work": "\\(10\\times15400\\times10+15331.70\\times10\\approx1540000+153317\\)"
                 },
                 {
-                  "explain": "The worked solution counts 11 harvests of 15400 fish at $10 each.",
-                  "work": "\\(11(15400)(10)=\\boxed{\\$1694000};\\quad \\text{11th harvest: December 2008}\\)"
+                  "explain": "The business has sold all its fish after the \\(11\\)th harvest, in December \\(2008\\). Using \\(11\\) full harvests (\\(\\$1694000\\)) would overstate the income.",
+                  "work": "\\(\\text{Total}\\approx\\boxed{\\$1693317};\\quad\\text{December }2008\\)"
                 }
               ],
               "timeLimit": 60,
@@ -4895,18 +4895,18 @@
               "id": "y12a-advanced-005-p248-q27-iv",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Each December a retailer offers to buy the farmer’s business by paying $15 for each fish in the stock. If the farmer first sells the annual harvest and then sells the remaining business, after which harvest year is total income greatest?",
+              "stem": "Each December a retailer offers to buy the farmer’s business by paying \\(\\$15\\) for each fish in the stock. If the farmer first sells the annual harvest and then sells the remaining business, after which harvest year is total income greatest?",
               "options": [
-                "After the \\(7th\\) harvest (December \\(2004)\\)",
-                "After the \\(6th\\) harvest (December \\(2003)\\)",
-                "After the \\(8th\\) harvest (December \\(2005)\\)",
+                "After the \\(7\\)th harvest (December \\(2004\\))",
+                "After the \\(6\\)th harvest (December \\(2003\\))",
+                "After the \\(10\\)th harvest (December \\(2007\\))",
                 "At the start of \\(1998\\)"
               ],
               "answer": 0,
-              "hint": "For each possible year n, add $154000 per earlier full harvest to $15 times the remaining stock F_n. Compare nearby totals.",
+              "hint": "For each possible year \\(n\\), add \\(\\$154000\\) per earlier full harvest to \\(\\$15\\) times the remaining stock \\(F_n\\). Compare nearby totals.",
               "steps": [
                 {
-                  "explain": "After n harvests, income from fish sold is $154000n, and the remaining stock is \\(F_n=154000-54000(1.1)^n\\).",
+                  "explain": "After \\(n\\) harvests, income from fish sold is \\(\\$154000\\)\\(n\\), and the remaining stock is \\(F_n=154000-54000(1.1)^n\\).",
                   "work": "\\(R_n=154000n+15F_n\\)"
                 },
                 {
@@ -11294,14 +11294,14 @@
           "id": "y12a-advanced-005-p248-q28",
           "type": "multipart",
           "difficulty": "hard",
-          "stem": "On 1 July 1985, Anna invested $10000 in a bank account that paid interest at a fixed rate of 8% per annum, compounded annually. Answer parts (i)–(iii), including Jennifer’s account, which grew from $10000 to $35478 by 1 July 1995.",
+          "stem": "On 1 July 1985, Anna invested \\(\\$10000\\) in a bank account that paid interest at a fixed rate of 8% per annum, compounded annually. Answer parts (i)–(iii), including Jennifer’s account, which grew from \\(\\$10000\\) to \\(\\$35478\\) by 1 July 1995.",
           "hint": "Count the annual compounding periods carefully. For the unknown rate, first divide final balance by the initial deposit.",
           "parts": [
             {
               "id": "y12a-advanced-005-p248-q28-i",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "On 1 July 1985 Anna invests $10000 in an account earning 8% per annum compounded annually. If there are no further deposits, how much is in the account on 1 July 1995 after interest is paid?",
+              "stem": "On 1 July 1985 Anna invests \\(\\$10000\\) in an account earning 8% per annum compounded annually. If there are no further deposits, how much is in the account on 1 July 1995 after interest is paid?",
               "options": [
                 "\\(\\$21589.25\\)",
                 "\\(\\$20000.00\\)",
@@ -11337,7 +11337,7 @@
               "id": "y12a-advanced-005-p248-q28-ii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Anna adds $1000 on 1 July each year, beginning on 1 July 1986. How much is in the account on 1 July 1995 after interest and her 1995 deposit?",
+              "stem": "Anna adds \\(\\$1000\\) on 1 July each year, beginning on 1 July 1986. How much is in the account on 1 July 1995 after interest and her 1995 deposit?",
               "options": [
                 "\\(\\$36075.81\\)",
                 "\\(\\$35478.00\\)",
@@ -11345,7 +11345,7 @@
                 "\\(\\$21589.25\\)"
               ],
               "answer": 0,
-              "hint": "Grow the original $10000 for ten years. The ten $1000 deposits earn interest for \\(9, 8\\), …, 0 years.",
+              "hint": "Grow the original \\(\\$10000\\) for ten years. The ten \\(\\$1000\\) deposits earn interest for \\(9, 8\\), …, 0 years.",
               "steps": [
                 {
                   "explain": "Value the original deposit and list each annual deposit at the target date.",
@@ -11373,7 +11373,7 @@
               "id": "y12a-advanced-005-p248-q28-iii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Jennifer invests $10000 on 1 July 1985 and makes no further deposits. On 1 July 1995 her account balance is $35478. What annual compound interest rate did the account earn, to the nearest 0.1%?",
+              "stem": "Jennifer invests \\(\\$10000\\) on 1 July 1985 and makes no further deposits. On 1 July 1995 her account balance is \\(\\$35478.\\) What annual compound interest rate did the account earn, to the nearest 0.1%?",
               "options": [
                 "\\(13.5\\%\\)",
                 "\\(8.0\\%\\)",
@@ -19620,14 +19620,14 @@
           "id": "y12a-advanced-005-p247-q20",
           "type": "multipart",
           "difficulty": "hard",
-          "stem": "Weelabarrabak Shire Council borrowed $3000000 at the beginning of 2005. The annual interest rate is 12%. Each year interest is calculated on the balance at the beginning of the year and added to the balance owing. The debt is repaid by equal annual repayments of $480000, with the first repayment at the end of 2005. Let A_n be the balance after the nth repayment. Answer parts (i)–(iii).",
+          "stem": "Weelabarrabak Shire Council borrowed \\(\\$3000000\\) at the beginning of 2005. The annual interest rate is 12%. Each year interest is calculated on the balance at the beginning of the year and added to the balance owing. The debt is repaid by equal annual repayments of \\(\\$480000\\), with the first repayment at the end of 2005. Let \\(A_n\\) be the balance after the nth repayment. Answer parts (i)–(iii).",
           "hint": "Add one year of interest, then subtract the repayment. The final repayment year requires counting from the first end-of-year payment in \\(2005\\).",
           "parts": [
             {
               "id": "y12a-advanced-005-p247-q20-i",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Weelabarrabak Shire Council borrowed $3000000 at the beginning of 2005. Interest is 12% annually, and a $480000 repayment is made at the end of each year. Which expression gives \\(A_2\\), the balance after the second repayment?",
+              "stem": "Weelabarrabak Shire Council borrowed \\(\\$3000000\\) at the beginning of 2005. Interest is 12% annually, and a \\(\\$480000\\) repayment is made at the end of each year. Which expression gives \\(A_2\\), the balance after the second repayment?",
               "options": [
                 "\\(3000000(1.12)^2-480000(1+1.12)\\)",
                 "\\(3000000(1.12)^2-960000\\)",
@@ -19642,7 +19642,7 @@
                   "work": "\\(3000000(1.12)^2\\)"
                 },
                 {
-                  "explain": "The first $480000 payment is made at the end of 2005 and grows through 2006. The second payment is made at the end of 2006.",
+                  "explain": "The first \\(\\$480000\\) payment is made at the end of 2005 and grows through 2006. The second payment is made at the end of 2006.",
                   "work": "\\(480000(1.12)+480000\\)"
                 },
                 {
@@ -19663,7 +19663,7 @@
               "id": "y12a-advanced-005-p247-q20-ii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Which formula gives A_n, the balance after n equal annual repayments of $480000?",
+              "stem": "Which formula gives \\(A_n\\), the balance after \\(n\\) equal annual repayments of \\(\\$480000\\)?",
               "options": [
                 "\\(10^6[4-(1.12)^n]\\)",
                 "\\(10^6[(1.12)^n-4]\\)",
@@ -19674,7 +19674,7 @@
               "hint": "Use the reducing-balance formula, then sum the annual payment values as a geometric series.",
               "steps": [
                 {
-                  "explain": "Start with the loan grown n years and subtract the accumulated values of the payments.",
+                  "explain": "Start with the loan grown \\(n\\) years and subtract the accumulated values of the payments.",
                   "work": "\\(A_n=3000000(1.12)^n-480000[1+1.12+\\cdots+1.12^{n-1}]\\)"
                 },
                 {
@@ -19704,13 +19704,13 @@
                 "2017",
                 "2016",
                 "2018",
-                "2019"
+                "2010"
               ],
               "answer": 0,
               "hint": "Find when \\(10^6\\left[4-(1.12)^n\\right]\\) reaches zero. The number of annual repayment periods is rounded up.",
               "steps": [
                 {
-                  "explain": "Solve for the number of years n at which the balance reaches zero.",
+                  "explain": "Solve for the number of years \\(n\\) at which the balance reaches zero.",
                   "work": "\\(10^6[4-(1.12)^n]=0\\Rightarrow(1.12)^n=4\\)"
                 },
                 {
@@ -19718,7 +19718,7 @@
                   "work": "\\(n=\\frac{\\ln4}{\\ln1.12}=12.23\\ldots\\)"
                 },
                 {
-                  "explain": "The final payment is made at the end of year \\(13\\). The first repayment is at the end of \\(2005\\), so the \\(13th\\) is at the end of \\(2017\\).",
+                  "explain": "The final payment is made at the end of year \\(13\\). The first repayment is at the end of \\(2005\\), so the \\(13\\)th is at the end of \\(2017\\).",
                   "work": "\\(2005+(13-1)=\\boxed{2017}\\)"
                 }
               ],
@@ -19745,25 +19745,25 @@
           "id": "y12a-advanced-005-p247-q22",
           "type": "multipart",
           "difficulty": "hard",
-          "stem": "Barbara borrows $120000 to be repaid over 25 years at 6% per annum reducible interest. Each year there are k regular repayments of $F. Interest is calculated and charged just before each repayment. Answer parts (i)–(iv), comparing quarterly and monthly repayments.",
+          "stem": "Barbara borrows \\(\\$120000\\) to be repaid over 25 years at 6% per annum reducible interest. Each year there are \\(k\\) regular repayments of \\(\\$F\\). Interest is calculated and charged just before each repayment. Answer parts (i)–(iv), comparing quarterly and monthly repayments.",
           "hint": "Use the payment frequency to set the periodic rate and number of payments. Each period the balance earns interest just before payment.",
           "parts": [
             {
               "id": "y12a-advanced-005-p247-q22-i",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Barbara borrows $120000 at 6% per annum reducible interest. There are k repayments each year of $F, with interest charged immediately before each repayment. Which expression gives the amount owing after two repayments?",
+              "stem": "Barbara borrows \\(\\$120000\\) at 6% per annum reducible interest. There are \\(k\\) repayments each year of \\(\\$F\\), with interest charged immediately before each repayment. Which expression gives the amount owing after two repayments?",
               "options": [
-                "\\(120000(1+0.06/k)^2-F(2+0.06/k)\\)",
-                "\\(120000(1+0.06/k)^2-2F\\)",
+                "\\(120000\\left(1+\\dfrac{0.06}{k}\\right)^2-F\\left(2+\\dfrac{0.06}{k}\\right)\\)",
+                "\\(120000\\left(1+\\dfrac{0.06}{k}\\right)^2-2F\\)",
                 "\\(120000(1+0.06)^2-F\\)",
-                "\\(120000-F(1+0.06/k)\\)"
+                "\\(120000-F\\left(1+\\dfrac{0.06}{k}\\right)\\)"
               ],
               "answer": 0,
-              "hint": "Let α=1+0.06/k. Apply interest then subtract F twice.",
+              "hint": "Let \\(\\alpha=1+\\dfrac{0.06}{k}\\). Apply interest then subtract \\(F\\) twice.",
               "steps": [
                 {
-                  "explain": "After one repayment the balance is the original balance multiplied by α, then reduced by F.",
+                  "explain": "After one repayment the balance is the original balance multiplied by α, then reduced by \\(F\\).",
                   "work": "\\(A_1=120000\\alpha-F\\)"
                 },
                 {
@@ -19771,8 +19771,8 @@
                   "work": "\\(A_2=(120000\\alpha-F)\\alpha-F=120000\\alpha^2-F(1+\\alpha)\\)"
                 },
                 {
-                  "explain": "Replace α by \\(1+\\frac{0.06}{k}\\).",
-                  "work": "\\(A_2=120000(1+0.06/k)^2-F(2+0.06/k)\\)"
+                  "explain": "Replace \\(\\alpha\\) by \\(1+\\dfrac{0.06}{k}\\).",
+                  "work": "\\(A_2=120000\\left(1+\\dfrac{0.06}{k}\\right)^2-F\\left(2+\\dfrac{0.06}{k}\\right)\\)"
                 }
               ],
               "timeLimit": 60,
@@ -19788,7 +19788,7 @@
               "id": "y12a-advanced-005-p247-q22-ii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "The amount owing after n repayments is A_n=120000α^n−kF(α^n−1)/0.06, where α=1+0.06/k. Which expression is equivalent to the accumulated-value form?",
+              "stem": "The amount owing after \\(n\\) repayments is \\(A_n=120000\\alpha^n-\\dfrac{kF(\\alpha^n-1)}{0.06}\\), where \\(\\alpha=1+\\dfrac{0.06}{k}\\). Which expression is equivalent to the accumulated-value form?",
               "options": [
                 "\\(120000\\alpha^n-F(1+\\alpha+\\cdots+\\alpha^{n-1})\\)",
                 "\\(120000\\alpha^n-nF\\)",
@@ -19799,11 +19799,11 @@
               "hint": "Every repayment is multiplied by α for each remaining period. The repayments form a geometric series.",
               "steps": [
                 {
-                  "explain": "The initial $120000 grows through n interest periods. A repayment made earlier contributes its accumulated value to the reduction.",
+                  "explain": "The initial \\(\\$120000\\) grows through \\(n\\) interest periods. A repayment made earlier contributes its accumulated value to the reduction.",
                   "work": "\\(A_n=120000\\alpha^n-F(1+\\alpha+\\cdots+\\alpha^{n-1})\\)"
                 },
                 {
-                  "explain": "Use the geometric series sum, noting α−1=0.06/k.",
+                  "explain": "Use the geometric series sum, noting α−1=0.06/\\(k\\).",
                   "work": "\\(F\\frac{\\alpha^n-1}{\\alpha-1}=F\\frac{k(\\alpha^n-1)}{0.06}\\)"
                 },
                 {
@@ -19832,15 +19832,15 @@
                 "\\(\\$1200.00\\)"
               ],
               "answer": 0,
-              "hint": "For quarterly repayments, \\(k=4\\) and there are 25×4=100 payments. The periodic rate is \\(\\frac{0.06}{4}\\).",
+              "hint": "For quarterly repayments, \\(k=4\\) and there are \\(25\\times4=100\\) payments. The periodic rate is \\(\\dfrac{0.06}{4}\\).",
               "steps": [
                 {
                   "explain": "There are \\(100\\) quarterly payments and \\(\\alpha=1+\\frac{0.06}{4}=1.015\\). To finish the loan, set \\(A_{100}=0\\).",
                   "work": "\\(0=120000(1.015)^{100}-F[1+1.015+\\cdots+1.015^{99}]\\)"
                 },
                 {
-                  "explain": "Sum the payment factors and solve for F.",
-                  "work": "\\(F=\\frac{120000(1.015)^{100}}{((1.015)^{100}-1)/0.015}\\)"
+                  "explain": "Sum the payment factors and solve for \\(F\\).",
+                  "work": "\\(F=\\dfrac{120000(1.015)^{100}}{\\dfrac{(1.015)^{100}-1}{0.015}}\\)"
                 },
                 {
                   "explain": "Calculate and round to cents.",
@@ -19860,7 +19860,7 @@
               "id": "y12a-advanced-005-p247-q22-iv",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "How much would Barbara have saved over the 25-year term if she had chosen monthly rather than quarterly repayments?",
+              "stem": "Using repayments rounded to the nearest cent, how much would Barbara have saved over the \\(25\\)-year term if she had chosen monthly rather than quarterly repayments?",
               "options": [
                 "\\(\\$499\\)",
                 "\\(\\$498\\)",
@@ -19871,15 +19871,15 @@
               "hint": "Find the monthly payment with \\(300\\) periods and the quarterly payment with \\(100\\) periods, then compare the total paid.",
               "steps": [
                 {
-                  "explain": "For quarterly payments, F_4≈$2324.47, so the rounded total is 100×$2324.47. For monthly payments use \\(k=12, n=300\\) and α=1.005.",
-                  "work": "\\(T_4=100F_4;\\quad F_{12}=120000(0.005)\\frac{(1.005)^{300}}{(1.005)^{300}-1}\\)"
+                  "explain": "For quarterly payments, \\(F_4\\approx\\$2324.47\\), so the rounded total is \\(100\\times2324.47\\). For monthly payments use \\(k=12\\), \\(n=300\\) and \\(\\alpha=1.005\\).",
+                  "work": "\\(F_{12}=120000(0.005)\\dfrac{(1.005)^{300}}{(1.005)^{300}-1}=773.16\\ldots\\)"
                 },
                 {
-                  "explain": "Using the repayments rounded to cents, the quarterly total is $232447 and the monthly total is $231948.",
+                  "explain": "Using the repayments rounded to cents, the quarterly total is \\(\\$232447\\) and the monthly total is \\(\\$231948\\).",
                   "work": "\\(T_4=100(2324.47)=232447;\\quad T_{12}=300(773.16)=231948\\)"
                 },
                 {
-                  "explain": "The saving is about $498.35 over the term.",
+                  "explain": "The saving over the term is about \\(\\$499\\). (Using unrounded repayments would give \\(\\$498.35\\), which is why the question specifies rounded repayments.)",
                   "work": "\\(T_4-T_{12}=232447-231948=\\boxed{\\$499}\\)"
                 }
               ],
@@ -19906,14 +19906,14 @@
           "id": "y12a-advanced-005-p247-q25",
           "type": "multipart",
           "difficulty": "hard",
-          "stem": "A store offers a loan of $5000 on a computer, charging interest at 1% per month. As a special deal, the store does not charge interest for the first three months; the first repayment is due at the end of the first month. A customer repays the loan over three years by making 36 equal monthly repayments of $M. Let A_n be the amount owing at the end of the nth repayment. Answer (i)–(iv).",
+          "stem": "A store offers a loan of \\(\\$5000\\) on a computer, charging interest at 1% per month. As a special deal, the store does not charge interest for the first three months; the first repayment is due at the end of the first month. A customer repays the loan over three years by making 36 equal monthly repayments of \\(\\$M\\). Let \\(A_n\\) be the amount owing at the end of the nth repayment. Answer (i)–(iv).",
           "hint": "Separate the three no-interest months from the remaining \\(33\\) months. After month \\(3\\), use the \\(1.01\\) monthly multiplier.",
           "parts": [
             {
               "id": "y12a-advanced-005-p247-q25-i",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "A store lends $5000 for a computer at 1% per month, but charges no interest during the first three months. The first of 36 equal monthly repayments M is due at the end of month 1. Which expression gives \\(A_3\\), the amount owing after the third repayment?",
+              "stem": "A store lends \\(\\$5000\\) for a computer at 1% per month, but charges no interest during the first three months. The first of 36 equal monthly repayments \\(M\\) is due at the end of month 1. Which expression gives \\(A_3\\), the amount owing after the third repayment?",
               "options": [
                 "\\(5000-3M\\)",
                 "\\(5000(1.01)^3-3M\\)",
@@ -19924,7 +19924,7 @@
               "hint": "There is no interest during the first three months, and three repayments have been made by the end of month \\(3\\).",
               "steps": [
                 {
-                  "explain": "Start with $5000. The special offer means no interest is added in months \\(1, 2\\) or 3.",
+                  "explain": "Start with \\(\\$5000.\\) The special offer means no interest is added in months \\(1, 2\\) or 3.",
                   "work": "\\(5000\\)"
                 },
                 {
@@ -19985,7 +19985,7 @@
               "id": "y12a-advanced-005-p247-q25-iii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Which expression gives the amount owing after the \\(36th\\) monthly repayment?",
+              "stem": "Which expression gives the amount owing after the \\(36\\)th monthly repayment?",
               "options": [
                 "\\((5000-3M)(1.01)^{33}-M\\frac{(1.01)^{33}-1}{0.01}\\)",
                 "\\(5000(1.01)^{36}-36M\\)",
@@ -20021,7 +20021,7 @@
               "id": "y12a-advanced-005-p247-q25-iv",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Find the monthly repayment M that clears the $5000 loan in 36 months.",
+              "stem": "Find the monthly repayment \\(M\\) that clears the \\(\\$5000\\) loan in 36 months.",
               "options": [
                 "\\(\\$161.34\\)",
                 "\\(\\$151.34\\)",
@@ -20029,15 +20029,15 @@
                 "\\(\\$500.00\\)"
               ],
               "answer": 0,
-              "hint": "Set \\(A_36=0\\) in the expression from part (iii) and solve for M.",
+              "hint": "Set \\(A_36=0\\) in the expression from part (iii) and solve for \\(M\\).",
               "steps": [
                 {
                   "explain": "Set the end balance to zero.",
                   "work": "\\(0=(5000-3M)(1.01)^{33}-M\\frac{(1.01)^{33}-1}{0.01}\\)"
                 },
                 {
-                  "explain": "Expand and collect the terms containing M.",
-                  "work": "\\(5000(1.01)^{33}=M[3(1.01)^{33}+((1.01)^{33}-1)/0.01]\\)"
+                  "explain": "Expand and collect the terms containing \\(M\\).",
+                  "work": "\\(5000(1.01)^{33}=M\\left[3(1.01)^{33}+\\dfrac{(1.01)^{33}-1}{0.01}\\right]\\)"
                 },
                 {
                   "explain": "Solve and round to cents.",
@@ -21761,14 +21761,14 @@
           "id": "y12a-advanced-005-p247-q21",
           "type": "multipart",
           "difficulty": "hard",
-          "stem": "Betty decides to set up a trust fund for her grandson, Luis. She invests $80 at the beginning of each month. The money is invested at 6% per annum compounded monthly. The trust fund matures at the end of the month of her final investment, 25 years after her first investment. This means Betty makes 300 monthly investments. Answer (i) and (ii).",
+          "stem": "Betty decides to set up a trust fund for her grandson, Luis. She invests \\(\\$80\\) at the beginning of each month. The money is invested at 6% per annum compounded monthly. The trust fund matures at the end of the month of her final investment, 25 years after her first investment. This means Betty makes 300 monthly investments. Answer (i) and (ii).",
           "hint": "Beginning-of-month payments earn interest during that month. Write the growth factor for the first investment and then sum all \\(300\\) factors.",
           "parts": [
             {
               "id": "y12a-advanced-005-p247-q21-i",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Betty invests $80 at the beginning of each month. The fund earns 6% per annum compounded monthly and matures 25 years after the first investment. What is the value of the first $80 investment after 25 years?",
+              "stem": "Betty invests \\(\\$80\\) at the beginning of each month. The fund earns 6% per annum compounded monthly and matures 25 years after the first investment. What is the value of the first \\(\\$80\\) investment after 25 years?",
               "options": [
                 "\\(\\$357.20\\)",
                 "\\(\\$300.00\\)",
@@ -21779,7 +21779,7 @@
               "hint": "The monthly rate is 0.5%. The first deposit earns interest for all \\(300\\) months.",
               "steps": [
                 {
-                  "explain": "There are 25×12=300 monthly periods. The first $80 is invested at the start, so it grows for all 300 months.",
+                  "explain": "There are 25×12=300 monthly periods. The first \\(\\$80\\) is invested at the start, so it grows for all 300 months.",
                   "work": "\\(V=80(1.005)^{300}\\)"
                 },
                 {
@@ -21804,7 +21804,7 @@
               "id": "y12a-advanced-005-p247-q21-ii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Betty makes 300 monthly investments of $80 at the beginning of each month. Use a geometric series to calculate the final value of Luis’s trust fund at maturity.",
+              "stem": "Betty makes 300 monthly investments of \\(\\$80\\) at the beginning of each month. Use a geometric series to calculate the final value of Luis’s trust fund at maturity.",
               "options": [
                 "\\(\\$55716.71\\)",
                 "\\(\\$5571.67\\)",
@@ -21815,7 +21815,7 @@
               "hint": "At maturity, the \\(300\\) deposits have growth factors \\(1.005, 1.005^{2}\\), …, \\(1.005^300\\).",
               "steps": [
                 {
-                  "explain": "Each $80 deposit is made at the start of a month. At maturity, the first has grown 300 months and the last has grown one month.",
+                  "explain": "Each \\(\\$80\\) deposit is made at the start of a month. At maturity, the first has grown 300 months and the last has grown one month.",
                   "work": "\\(V=80(1.005+1.005^2+\\cdots+1.005^{300})\\)"
                 },
                 {
@@ -21850,7 +21850,7 @@
           "id": "y12a-advanced-005-p247-q23",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "A superannuation fund pays 8.75% per annum compounded annually. Stephanie invests $5000 in the fund at the beginning of each year, commencing on 1 January 2003. What will the value be when she retires on 31 December 2023?",
+          "stem": "A superannuation fund pays 8.75% per annum compounded annually. Stephanie invests \\(\\$5000\\) in the fund at the beginning of each year, commencing on 1 January 2003. What will the value be when she retires on 31 December 2023?",
           "options": [
             "\\(\\$299605\\)",
             "\\(\\$294605\\)",
@@ -21886,14 +21886,14 @@
           "id": "y12a-advanced-005-p247-q24",
           "type": "multipart",
           "difficulty": "hard",
-          "stem": "Helen sets up a prize fund with a single investment of $1000 to provide her school with an annual prize valued at $72. The fund accrues interest at 6% per annum, compounded annually. The first prize is awarded one year after the investment is set up. After the tenth prize, the prize value increases to $90. Answer parts (i)–(iii).",
+          "stem": "Helen sets up a prize fund with a single investment of \\(\\$1000\\) to provide her school with an annual prize valued at \\(\\$72.\\) The fund accrues interest at 6% per annum, compounded annually. The first prize is awarded one year after the investment is set up. After the tenth prize, the prize value increases to \\(\\$90.\\) Answer parts (i)–(iii).",
           "hint": "For each year, credit interest first and then subtract the prize. Use the balance after the tenth prize as the starting point for the changed prize amount.",
           "parts": [
             {
               "id": "y12a-advanced-005-p247-q24-i",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Helen invests $1000 in a prize fund earning 6% per annum compounded annually. The first $72 prize is awarded one year later. Calculate the balance at the beginning of the second year, after the first prize.",
+              "stem": "Helen invests \\(\\$1000\\) in a prize fund earning 6% per annum compounded annually. The first \\(\\$72\\) prize is awarded one year later. Calculate the balance at the beginning of the second year, after the first prize.",
               "options": [
                 "\\(\\$988.00\\)",
                 "\\(\\$1060.00\\)",
@@ -21901,18 +21901,18 @@
                 "\\(\\$1000.00\\)"
               ],
               "answer": 0,
-              "hint": "Add 6% interest to $1000, then subtract the $72 prize.",
+              "hint": "Add 6% interest to \\(\\$1000\\), then subtract the \\(\\$72\\) prize.",
               "steps": [
                 {
-                  "explain": "The first year’s interest is 6% of $1000.",
+                  "explain": "The first year’s interest is 6% of \\(\\$1000.\\)",
                   "work": "\\(1000(0.06)=60\\)"
                 },
                 {
-                  "explain": "Add the interest, then pay the $72 prize.",
+                  "explain": "Add the interest, then pay the \\(\\$72\\) prize.",
                   "work": "\\(1000+60-72=988\\)"
                 },
                 {
-                  "explain": "The beginning-of-year-2 balance is $988.",
+                  "explain": "The beginning-of-year-2 balance is \\(\\$988.\\)",
                   "work": "\\(\\boxed{\\$988}\\)"
                 }
               ],
@@ -21929,7 +21929,7 @@
               "id": "y12a-advanced-005-p247-q24-ii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Let B_n be the balance at the end of n years after the nth prize has been awarded. Which formula gives B_n?",
+              "stem": "Let \\(B_n\\) be the balance at the end of \\(n\\) years after the nth prize has been awarded. Which formula gives \\(B_n\\)?",
               "options": [
                 "\\(1200-200(1.06)^n\\)",
                 "\\(1000(1.06)^n-72n\\)",
@@ -21937,10 +21937,10 @@
                 "\\(1000-72(1.06)^n\\)"
               ],
               "answer": 0,
-              "hint": "Each year the balance earns 6% and then $72 is paid. Repeated payment values form a geometric sum.",
+              "hint": "Each year the balance earns 6% and then \\(\\$72\\) is paid. Repeated payment values form a geometric sum.",
               "steps": [
                 {
-                  "explain": "After n years, grow the original $1000 and subtract the accumulated prizes.",
+                  "explain": "After \\(n\\) years, grow the original \\(\\$1000\\) and subtract the accumulated prizes.",
                   "work": "\\(B_n=1000(1.06)^n-72[1+1.06+\\cdots+1.06^{n-1}]\\)"
                 },
                 {
@@ -21965,26 +21965,26 @@
               "id": "y12a-advanced-005-p247-q24-iii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "At the end of year 10, after the tenth $72 prize, the annual prize increases to $90. For how many more years can the fund award the full $90 prize?",
+              "stem": "At the end of year 10, after the tenth \\(\\$72\\) prize, the annual prize increases to \\(\\$90.\\) For how many more years can the fund award the full \\(\\$90\\) prize?",
               "options": [
                 "\\(14\\text{ years}\\)",
                 "\\(15\\text{ years}\\)",
-                "\\(13\\text{ years}\\)",
-                "\\(10\\text{ years}\\)"
+                "\\(9\\text{ years}\\)",
+                "\\(24\\text{ years}\\)"
               ],
               "answer": 0,
-              "hint": "Find the balance after year 10, then apply 6% interest and subtract $90 each year. Count full prizes before the balance is too small.",
+              "hint": "Find the balance after year 10, then apply 6% interest and subtract \\(\\$90\\) each year. Count full prizes before the balance is too small.",
               "steps": [
                 {
                   "explain": "Use the given balance formula at \\(n=10\\).",
                   "work": "\\(B_{10}=1200-200(1.06)^{10}=841.83\\ldots\\)"
                 },
                 {
-                  "explain": "With $90 annual prizes, set the new balance after n more years equal to zero and solve.",
+                  "explain": "With \\(\\$90\\) annual prizes, set the new balance after \\(n\\) more years equal to zero and solve.",
                   "work": "\\(0=B_{10}(1.06)^n-90\\frac{(1.06)^n-1}{0.06}\\Rightarrow n=14.137\\ldots\\)"
                 },
                 {
-                  "explain": "The balance supports \\(14\\) full annual prizes; the \\(15th\\) cannot be paid in full.",
+                  "explain": "The balance supports \\(14\\) full annual prizes; the \\(15\\)th cannot be paid in full.",
                   "work": "\\(\\boxed{14\\text{ more years}}\\)"
                 }
               ],
@@ -22011,29 +22011,29 @@
           "id": "y12a-advanced-005-p247-q26",
           "type": "multipart",
           "difficulty": "hard",
-          "stem": "Isabella invests $P at 8% per annum compounded annually. She intends to withdraw $3000 at the end of each of the next six years to cover school fees. Answer parts (i)–(iii).",
+          "stem": "Isabella invests \\(\\$P\\) at 8% per annum compounded annually. She intends to withdraw \\(\\$3000\\) at the end of each of the next six years to cover school fees. Answer parts (i)–(iii).",
           "hint": "Interest is added at each year end before the withdrawal. Work from the first two withdrawals, then use the geometric sum for six years.",
           "parts": [
             {
               "id": "y12a-advanced-005-p247-q26-i",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Isabella invests $P at 8% per annum compounded annually and withdraws $3000 at the end of each of the next six years. Which expression gives \\(A_1\\) after the first withdrawal?",
+              "stem": "Isabella invests \\(\\$P\\) at 8% per annum compounded annually and withdraws \\(\\$3000\\) at the end of each of the next six years. Which expression gives \\(A_1\\) after the first withdrawal?",
               "options": [
-                "\\(\\$1.08P-3000\\)",
-                "\\(\\$1.08(P-3000)\\)",
-                "\\(\\$P-3000\\)",
-                "\\(\\$1.08P+3000\\)"
+                "\\(1.08P-3000\\)",
+                "\\(1.08(P-3000)\\)",
+                "\\(P-3000\\)",
+                "\\(1.08P+3000\\)"
               ],
               "answer": 0,
-              "hint": "Apply one year of 8% interest to P, then subtract the $3000 withdrawal.",
+              "hint": "Apply one year of 8% interest to \\(P\\), then subtract the \\(\\$3000\\) withdrawal.",
               "steps": [
                 {
                   "explain": "After one year, the investment has grown by a factor of \\(1.08\\).",
                   "work": "\\(P\\times1.08\\)"
                 },
                 {
-                  "explain": "The $3000 fee withdrawal happens after interest has been credited.",
+                  "explain": "The \\(\\$3000\\) fee withdrawal happens after interest has been credited.",
                   "work": "\\(A_1=1.08P-3000\\)"
                 },
                 {
@@ -22054,22 +22054,22 @@
               "id": "y12a-advanced-005-p247-q26-ii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Which expression gives \\(A_2\\), the balance after the second $3000 withdrawal?",
+              "stem": "Which expression gives \\(A_2\\), the balance after the second \\(\\$3000\\) withdrawal?",
               "options": [
-                "\\(\\$1.08^2P-3000(1+1.08)\\)",
-                "\\(\\$1.08^2P-6000\\)",
-                "\\(\\$1.08P-3000(1+1.08)\\)",
-                "\\(\\$1.08^2(P-3000)\\)"
+                "\\(1.08^2P-3000(1+1.08)\\)",
+                "\\(1.08^2P-6000\\)",
+                "\\(1.08P-3000(1+1.08)\\)",
+                "\\(1.08^2(P-3000)\\)"
               ],
               "answer": 0,
               "hint": "The original investment earns two years of interest. The first withdrawal earns one further year of interest; the second withdrawal is at year \\(2\\).",
               "steps": [
                 {
-                  "explain": "Grow P for two years.",
+                  "explain": "Grow \\(P\\) for two years.",
                   "work": "\\(P(1.08)^2\\)"
                 },
                 {
-                  "explain": "The first $3000 is withdrawn after year 1 and is multiplied by 1.08 for year 2; the second is withdrawn at the end of year 2.",
+                  "explain": "The first \\(\\$3000\\) is withdrawn after year 1 and is multiplied by 1.08 for year 2; the second is withdrawn at the end of year 2.",
                   "work": "\\(3000(1.08)+3000=3000(1+1.08)\\)"
                 },
                 {
@@ -22090,7 +22090,7 @@
               "id": "y12a-advanced-005-p247-q26-iii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "What initial investment P will allow Isabella to withdraw $3000 at the end of each of six years and leave the account empty after the sixth withdrawal?",
+              "stem": "What initial investment \\(P\\) will allow Isabella to withdraw \\(\\$3000\\) at the end of each of six years and leave the account empty after the sixth withdrawal?",
               "options": [
                 "\\(\\$13869\\)",
                 "\\(\\$13000\\)",
@@ -22098,14 +22098,14 @@
                 "\\(\\$18000\\)"
               ],
               "answer": 0,
-              "hint": "Set the six-year balance to zero and solve for the initial amount P.",
+              "hint": "Set the six-year balance to zero and solve for the initial amount \\(P\\).",
               "steps": [
                 {
-                  "explain": "At year 6, P has grown six years. Each $3000 withdrawal accumulates to the end of year 6.",
+                  "explain": "At year 6, \\(P\\) has grown six years. Each \\(\\$3000\\) withdrawal accumulates to the end of year 6.",
                   "work": "\\(0=P(1.08)^6-3000[1+1.08+\\cdots+1.08^5]\\)"
                 },
                 {
-                  "explain": "Sum the geometric series and solve for P.",
+                  "explain": "Sum the geometric series and solve for \\(P\\).",
                   "work": "\\(P=3000\\frac{(1.08)^6-1}{0.08(1.08)^6}\\)"
                 },
                 {
@@ -22136,25 +22136,25 @@
           "id": "y12a-advanced-005-p248-q29",
           "type": "multipart",
           "difficulty": "hard",
-          "stem": "Ezzat invests $50000 in an account earning 8% interest, compounded annually. He withdraws $M at the end of each year, immediately after interest has been paid, for 20 years. Answer parts (i)–(iv).",
+          "stem": "Ezzat invests \\(\\$50000\\) in an account earning 8% interest, compounded annually. He withdraws \\(\\$M\\) at the end of each year, immediately after interest has been paid, for 20 years. Answer parts (i)–(iv).",
           "hint": "Treat the withdrawals as end-of-year payments. For the final rate question, the interest rate is found numerically from a present-value equation.",
           "parts": [
             {
               "id": "y12a-advanced-005-p248-q29-i",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Ezzat invests $50000 at 8% interest compounded annually and withdraws M at each year end. Which expression gives the balance \\(A_1\\) immediately after the first withdrawal?",
+              "stem": "Ezzat invests \\(\\$50000\\) at 8% interest compounded annually and withdraws \\(M\\) at each year end. Which expression gives the balance \\(A_1\\) immediately after the first withdrawal?",
               "options": [
-                "\\(\\$54000-M\\)",
-                "\\(\\$50000(1.08-M)\\)",
-                "\\(\\$50000-M\\)",
-                "\\(\\$54000+M\\)"
+                "\\(54000-M\\)",
+                "\\(50000(1.08-M)\\)",
+                "\\(50000-M\\)",
+                "\\(54000+M\\)"
               ],
               "answer": 0,
-              "hint": "Apply one year of 8% interest, then subtract the first M withdrawal.",
+              "hint": "Apply one year of 8% interest, then subtract the first \\(M\\) withdrawal.",
               "steps": [
                 {
-                  "explain": "Interest on $50000 for one year is $50000×0.08=$4000.",
+                  "explain": "Interest on \\(\\$50000\\) for one year is \\(\\$50000\\)×0.08=\\(\\$4000.\\)",
                   "work": "\\(50000(1.08)=54000\\)"
                 },
                 {
@@ -22179,7 +22179,7 @@
               "id": "y12a-advanced-005-p248-q29-ii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Which expression gives the balance A_n immediately after the nth year-end withdrawal?",
+              "stem": "Which expression gives the balance \\(A_n\\) immediately after the nth year-end withdrawal?",
               "options": [
                 "\\(50000(1.08)^n-M\\frac{(1.08)^n-1}{0.08}\\)",
                 "\\(50000(1.08)^n-Mn\\)",
@@ -22187,10 +22187,10 @@
                 "\\((50000-M)(1.08)^n\\)"
               ],
               "answer": 0,
-              "hint": "Grow the initial investment n years and subtract the accumulated value of the n withdrawals.",
+              "hint": "Grow the initial investment \\(n\\) years and subtract the accumulated value of the \\(n\\) withdrawals.",
               "steps": [
                 {
-                  "explain": "At the end of year n, the original amount has grown for n years. The withdrawals have growth factors \\(1, 1.08\\), …, \\(1.08^{n-1}\\).",
+                  "explain": "At the end of year \\(n\\), the original amount has grown for \\(n\\) years. The withdrawals have growth factors \\(1, 1.08\\), …, \\(1.08^{n-1}\\).",
                   "work": "\\(A_n=50000(1.08)^n-M[1+1.08+\\cdots+1.08^{n-1}]\\)"
                 },
                 {
@@ -22215,7 +22215,7 @@
               "id": "y12a-advanced-005-p248-q29-iii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "Ezzat wants the account empty after the \\(20th\\) withdrawal. Find M to the nearest cent.",
+              "stem": "Ezzat wants the account empty after the \\(20\\)th withdrawal. Find \\(M\\) to the nearest cent.",
               "options": [
                 "\\(\\$5092.61\\)",
                 "\\(\\$5000.00\\)",
@@ -22223,14 +22223,14 @@
                 "\\(\\$5292.61\\)"
               ],
               "answer": 0,
-              "hint": "Set \\(A_20=0\\) in the annuity-withdrawal formula and solve for M.",
+              "hint": "Set \\(A_20=0\\) in the annuity-withdrawal formula and solve for \\(M\\).",
               "steps": [
                 {
                   "explain": "Set the balance after \\(20\\) withdrawals to zero.",
                   "work": "\\(0=50000(1.08)^{20}-M\\frac{(1.08)^{20}-1}{0.08}\\)"
                 },
                 {
-                  "explain": "Rearrange to find M.",
+                  "explain": "Rearrange to find \\(M\\).",
                   "work": "\\(M=50000(0.08)\\frac{(1.08)^{20}}{(1.08)^{20}-1}\\)"
                 },
                 {
@@ -22251,7 +22251,7 @@
               "id": "y12a-advanced-005-p248-q29-iv",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "If Ezzat instead withdraws $8000 annually for 20 years, estimate to the nearest per cent the interest rate needed to empty the account.",
+              "stem": "If Ezzat instead withdraws \\(\\$8000\\) annually for 20 years, estimate to the nearest per cent the interest rate needed to empty the account.",
               "options": [
                 "\\(15\\%\\)",
                 "\\(8\\%\\)",
@@ -22259,7 +22259,7 @@
                 "\\(20\\%\\)"
               ],
               "answer": 0,
-              "hint": "Use a calculator to solve 50000=8000[1−(1+r)^−20]/r for r.",
+              "hint": "Use a calculator to solve \\(50000=8000\\,\\dfrac{1-(1+r)^{-20}}{r}\\) for \\(r\\).",
               "steps": [
                 {
                   "explain": "The starting amount must equal the present value of \\(20\\) end-of-year withdrawals.",
