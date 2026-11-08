@@ -1766,7 +1766,7 @@ const Schedule = ({ students = [] }) => {
           onClose={() => setMistakeReview(null)}
         />
       )}
-      {lessonSession && <LessonWorkspace session={lessonSession} students={[...Object.values(studentProfileCache), ...students]} onClose={() => setLessonSession(null)} />}
+      {lessonSession && <LessonWorkspace session={lessonSession} sessions={sessions} students={[...Object.values(studentProfileCache), ...students]} onClose={() => setLessonSession(null)} />}
     </div>
   );
 };

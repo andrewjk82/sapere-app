@@ -91,13 +91,16 @@ const badge = (bg, color) => ({ fontSize: '0.64rem', fontWeight: 900, letterSpac
 
 // Pick the student's PDF: a worksheet from their curriculum, or a file from this device. With more than one book
 // (several years / courses), the books come first; the book and chapter of the current worksheet are highlighted.
-const PdfPicker = ({ student, state, currentTopicId, onPickTopic, onUpload, onClose }) => {
+const PdfPicker = ({ student, state, currentTopicId, covered, onPickTopic, onUpload, onClose }) => {
   const books = useMemo(() => groupTopicPdfsByBook(state.topics), [state.topics]);
   const current = state.topics.find((t) => t.id === currentTopicId) || null;
   const [openBookId, setOpenBookId] = useState(null);
   const openBook = books.length === 1 ? books[0] : books.find((b) => b.id === openBookId) || null;
   const currentRef = useRef(null);
   useEffect(() => { currentRef.current?.scrollIntoView({ block: 'center' }); }, [openBook?.id]);
+
+  // Topics already taught in this student's lessons (from the "Today covered" picker), shown in green.
+  const coveredIn = (node) => (node.chapters ? node.chapters.reduce((n, c) => n + coveredIn(c), 0) : node.topics.filter((t) => covered.has(t.id)).length);
 
   const bookList = (
     <>
@@ -122,6 +125,7 @@ const PdfPicker = ({ student, state, currentTopicId, onPickTopic, onUpload, onCl
               <span style={{ display: 'block', fontSize: '0.72rem', color: '#94a3b8', fontWeight: 700 }}>{b.chapters.length} chapters · {b.total} worksheets</span>
             </span>
             {isCurrent && <span style={badge('#ede9fe', '#6d28d9')}>Last used</span>}
+            {coveredIn(b) > 0 && <span style={badge('#d1fae5', '#047857')}>{coveredIn(b)} covered</span>}
             {b.assigned > 0 && <span style={badge('#dcfce7', '#15803d')}>Assigned</span>}
             <ChevronRight size={16} color="#94a3b8" style={{ flexShrink: 0 }} />
           </button>
@@ -144,13 +148,16 @@ const PdfPicker = ({ student, state, currentTopicId, onPickTopic, onUpload, onCl
           <div key={c.id} style={{ margin: '6px 0', borderRadius: 14, background: isCurrentChapter ? '#f5f3ff' : 'transparent', border: isCurrentChapter ? '1px solid #ddd6fe' : '1px solid transparent', padding: '4px 0' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '6px 12px 2px' }}>
               <span style={{ flex: 1, fontSize: '0.72rem', fontWeight: 900, color: isCurrentChapter ? '#6d28d9' : '#6366f1' }}>{c.title}</span>
+              {coveredIn(c) > 0 && <span style={badge('#d1fae5', '#047857')}>{coveredIn(c)}/{c.topics.length} covered</span>}
               {c.assigned > 0 && <span style={badge('#dcfce7', '#15803d')}>Assigned</span>}
             </div>
             {c.topics.map((t) => {
               const isCurrent = t.id === current?.id;
+              const coveredOn = covered.get(t.id);
               return (
-                <button key={t.id} ref={isCurrent ? currentRef : undefined} type="button" onClick={() => onPickTopic(t)} style={{ ...pickerRow, padding: '8px 12px', fontWeight: isCurrent ? 900 : 700, fontSize: '0.86rem', background: isCurrent ? '#ede9fe' : 'transparent' }}>
+                <button key={t.id} ref={isCurrent ? currentRef : undefined} type="button" onClick={() => onPickTopic(t)} style={{ ...pickerRow, padding: '8px 12px', fontWeight: isCurrent ? 900 : 700, fontSize: '0.86rem', background: isCurrent ? '#ede9fe' : coveredOn ? '#ecfdf5' : 'transparent' }}>
                   <span style={{ flex: 1, minWidth: 0 }}>{t.label}</span>
+                  {coveredOn && <span style={badge('#d1fae5', '#047857')}>✓ {coveredOn}</span>}
                   {isCurrent && <span style={badge('#7c3aed', '#fff')}>Last used</span>}
                 </button>
               );
@@ -193,7 +200,7 @@ const PdfPicker = ({ student, state, currentTopicId, onPickTopic, onUpload, onCl
  * the student's curriculum (kept on the device after its first download) or an uploaded file; the notes are per
  * student and lesson date. All of it stays on this device. A group class has one tab per student.
  */
-const LessonWorkspace = ({ session, students: profiles = [], onClose }) => {
+const LessonWorkspace = ({ session, students: profiles = [], sessions = [], onClose }) => {
   const students = (session.isGroupedClass ? session.groupStudents : [session])
     .map((s) => ({ id: s.studentId, name: s.studentName, email: s.studentEmail }))
     .filter((s) => s.id);
@@ -210,6 +217,25 @@ const LessonWorkspace = ({ session, students: profiles = [], onClose }) => {
   const fileRef = useRef(null);
   const canvasRef = useRef(null);
   const { layout, setLayoutChoice, split, setSplit } = useSplitLayout();
+
+  // Topic id → date of the latest lesson (up to this one) where it was recorded as covered, for the active student.
+  const lessonDate = session.date || '';
+  const buildCovered = () => {
+    const map = new Map();
+    (Array.isArray(sessions) ? sessions : []).forEach((s) => {
+      const mine = s?.studentId === activeStudentId || (Array.isArray(s?.groupStudents) && s.groupStudents.some((g) => g.studentId === activeStudentId));
+      if (!mine || !Array.isArray(s.learnedTopics) || (s.date || '') > (lessonDate || '9999')) return;
+      s.learnedTopics.forEach((t) => {
+        if (t?.id && (s.date || '') >= (map.get(t.id) || '')) map.set(t.id, s.date || '');
+      });
+    });
+    // "2026-11-03" → "3 Nov"
+    map.forEach((date, id) => {
+      const d = new Date(`${date}T00:00:00`);
+      map.set(id, Number.isNaN(d.getTime()) ? date : d.toLocaleDateString('en-AU', { day: 'numeric', month: 'short' }));
+    });
+    return map;
+  };
 
   const noteKey = active ? lessonNoteKey(active.id, session.date) : null;
   const { ready, unsaved, saveNow, onInkChange, retry } = useCurriculumNote(canvasRef, noteKey, Boolean(noteKey), null);
@@ -354,7 +380,7 @@ const LessonWorkspace = ({ session, students: profiles = [], onClose }) => {
         <input ref={fileRef} type="file" accept="application/pdf,.pdf" onChange={upload} style={{ display: 'none' }} />
       </div>
       <SplitPanes layout={notesOpen ? layout : 'tabs'} split={split} onSplitChange={setSplit} first={pdfPane} second={notePane} activePane={notesOpen && tabs ? 'second' : 'first'} />
-      {picking && <PdfPicker student={active} state={topicPdfs} currentTopicId={isDrive ? record.topicId : readLastTopic(active.id)} onPickTopic={pickTopic} onUpload={() => fileRef.current?.click()} onClose={() => setPicking(false)} />}
+      {picking && <PdfPicker student={active} state={topicPdfs} covered={buildCovered()} currentTopicId={isDrive ? record.topicId : readLastTopic(active.id)} onPickTopic={pickTopic} onUpload={() => fileRef.current?.click()} onClose={() => setPicking(false)} />}
     </div>
   );
 };
