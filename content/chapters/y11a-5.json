@@ -17868,43 +17868,31 @@
           "difficulty": "medium",
           "stem": "Let \\(f(x)=|2x-4|-3\\). The domain and range of \\(f(x)\\) are:",
           "options": [
-            "&#8203;Domain: \\([2,\\infty)\\), Range: \\([-3,\\infty)\\)",
-            "&#8203;Domain: \\((-\\infty,\\infty)\\), Range: \\((-3,\\infty)\\)",
-            "&#8203;Domain: \\((-\\infty,2)\\cup(2,\\infty)\\), Range: \\([0,\\infty)\\)",
-            "&#8203;Domain: \\((-\\infty,\\infty)\\), Range: \\([-3,\\infty)\\)"
+            "Domain: \\([2,\\infty)\\), Range: \\([-3,\\infty)\\)",
+            "Domain: \\((-\\infty,\\infty)\\), Range: \\((-3,\\infty)\\)",
+            "Domain: \\((-\\infty,2)\\cup(2,\\infty)\\), Range: \\([0,\\infty)\\)",
+            "Domain: \\((-\\infty,\\infty)\\), Range: \\([-3,\\infty)\\)"
           ],
           "answer": 3,
-          "hint": "An absolute value expression \\(|2x-4|\\) is defined for every real \\(x\\), and its minimum value is 0.",
+          "hint": "An absolute value expression \\(|2x-4|\\) is defined for every real \\(x\\), and its minimum value is \\(0\\).",
           "steps": [
             {
-              "explain": "First, analyze the domain of an absolute value function. The expression inside the absolute value, \\(2x - 4\\), is a linear polynomial, which is defined for all real numbers. The absolute value operation also has no restrictions.",
-              "work": "Domain: \\((-\\\\infty, \\\\infty)\\)"
+              "explain": "First, analyse the domain. The expression inside the absolute value, \\(2x-4\\), is linear, so it is defined for every real number. The absolute value operation adds no restriction.",
+              "work": "\\(\\text{Domain: }(-\\infty,\\infty)\\)"
             },
             {
-              "explain": "Next, analyze the range. The absolute value of any real number is always non-negative: \\(|2x - 4| \\\\ge 0\\).",
-              "work": "\\(|2x - 4| \\\\ge 0\\)"
+              "explain": "Next, analyse the range. The absolute value of any real number is non-negative.",
+              "work": "\\(|2x-4|\\ge0\\)"
             },
             {
-              "explain": "Subtract 3 from both sides of the inequality to match our function \\(f(x)\\).",
-              "work": "\\(|2x - 4| - 3 \\\\ge 0 - 3 \\\\implies f(x) \\\\ge -3\\)"
+              "explain": "Subtract \\(3\\) from both sides to match \\(f(x)\\).",
+              "work": "\\(|2x-4|-3\\ge0-3\\ \\Rightarrow\\ f(x)\\ge-3\\)"
             },
             {
-              "explain": "The minimum value is exactly -3 (which occurs when \\(2x - 4 = 0\\), or \\(x = 2\\)). As \\(x\\) moves in either direction, \\(f(x)\\) increases to infinity.",
-              "work": "Range: \\([-3, \\\\infty)\\)",
+              "explain": "The minimum value is exactly \\(-3\\), which occurs when \\(2x-4=0\\), that is \\(x=2\\). As \\(x\\) moves in either direction, \\(f(x)\\) increases without bound.",
+              "work": "\\(\\text{Range: }[-3,\\infty)\\)",
               "figure": {
-                "jsxGraph": {
-                  "attributes": {
-                    "boundingbox": [
-                      -2,
-                      6,
-                      6,
-                      -4
-                    ],
-                    "axis": true,
-                    "showNavigation": false
-                  },
-                  "script": "var f = function(x){ return Math.abs(2*x - 4) - 3; };\nboard.create('functiongraph', [f, -2, 6], {strokeColor: '#3b82f6', strokeWidth: 3});\nvar vertex = board.create('point', [2, -3], {name: 'Min: (2, -3)', size: 4, fillColor: '#ef4444', strokeColor: '#ef4444'});\n\n\nboard.create('text', [3.5, 2, 'Domain: all real numbers'], {fontSize: 14});\nboard.create('text', [3.5, 1, 'Range: y &ge; -3'], {fontSize: 14});"
-                }
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 304\" width=\"100%\" style=\"max-width:520px\"><rect width=\"520\" height=\"304\" fill=\"#fff\"/><rect x=\"2\" y=\"2\" width=\"516\" height=\"300\" rx=\"6\" fill=\"#fff\" stroke=\"#e2e8f0\" stroke-width=\"1.2\"/><path d=\"M36.0 187.2 H504.0 M121.1 280.0 V18.0\" stroke=\"(317.2469723721951, 357.46484332720803)\" stroke-width=\"1.6\" fill=\"none\"/><text x=\"502.0\" y=\"201.2\" font-size=\"12\" fill=\"(317.2469723721951, 357.46484332720803)\" font-family=\"system-ui\">x</text><text x=\"126.1\" y=\"28.0\" font-size=\"12\" fill=\"(317.2469723721951, 357.46484332720803)\" font-family=\"system-ui\">y</text><path d=\"M192.0 187.2 v4\" stroke=\"(317.2469723721951, 357.46484332720803)\"/><text x=\"192.0\" y=\"202.2\" font-size=\"11\" text-anchor=\"middle\" fill=\"(317.2469723721951, 357.46484332720803)\" font-family=\"system-ui\">1</text><path d=\"M262.9 187.2 v4\" stroke=\"(317.2469723721951, 357.46484332720803)\"/><text x=\"262.9\" y=\"202.2\" font-size=\"11\" text-anchor=\"middle\" fill=\"(317.2469723721951, 357.46484332720803)\" font-family=\"system-ui\">2</text><path d=\"M333.8 187.2 v4\" stroke=\"(317.2469723721951, 357.46484332720803)\"/><text x=\"333.8\" y=\"202.2\" font-size=\"11\" text-anchor=\"middle\" fill=\"(317.2469723721951, 357.46484332720803)\" font-family=\"system-ui\">3</text><path d=\"M404.7 187.2 v4\" stroke=\"(317.2469723721951, 357.46484332720803)\"/><text x=\"404.7\" y=\"202.2\" font-size=\"11\" text-anchor=\"middle\" fill=\"(317.2469723721951, 357.46484332720803)\" font-family=\"system-ui\">4</text><path d=\"M475.6 187.2 v4\" stroke=\"(317.2469723721951, 357.46484332720803)\"/><text x=\"475.6\" y=\"202.2\" font-size=\"11\" text-anchor=\"middle\" fill=\"(317.2469723721951, 357.46484332720803)\" font-family=\"system-ui\">5</text><path d=\"M121.1 249.1 h-4\" stroke=\"(317.2469723721951, 357.46484332720803)\"/><text x=\"115.1\" y=\"253.1\" font-size=\"11\" text-anchor=\"end\" fill=\"(317.2469723721951, 357.46484332720803)\" font-family=\"system-ui\">−3</text><path d=\"M121.1 84.0 h-4\" stroke=\"(317.2469723721951, 357.46484332720803)\"/><text x=\"115.1\" y=\"88.0\" font-size=\"11\" text-anchor=\"end\" fill=\"(317.2469723721951, 357.46484332720803)\" font-family=\"system-ui\">5</text><path d=\"M121.1 249.1 H262.9 M262.9 187.2 V249.1\" stroke=\"#f97316\" stroke-dasharray=\"4 3\" stroke-width=\"1.3\"/><path d=\"M36.0 117.0 L38.0 118.2 L39.9 119.3 L41.9 120.4 L43.8 121.6 L45.8 122.7 L47.7 123.8 L49.7 125.0 L51.6 126.1 L53.6 127.2 L55.5 128.4 L57.5 129.5 L59.4 130.6 L61.4 131.8 L63.3 132.9 L65.2 134.0 L67.2 135.2 L69.2 136.3 L71.1 137.4 L73.1 138.6 L75.0 139.7 L77.0 140.9 L78.9 142.0 L80.8 143.1 L82.8 144.3 L84.8 145.4 L86.7 146.5 L88.7 147.7 L90.6 148.8 L92.5 149.9 L94.5 151.1 L96.5 152.2 L98.4 153.3 L100.4 154.5 L102.3 155.6 L104.2 156.7 L106.2 157.9 L108.2 159.0 L110.1 160.1 L112.1 161.3 L114.0 162.4 L116.0 163.5 L117.9 164.7 L119.8 165.8 L121.8 166.9 L123.8 168.1 L125.7 169.2 L127.7 170.4 L129.6 171.5 L131.6 172.6 L133.5 173.8 L135.4 174.9 L137.4 176.0 L139.3 177.2 L141.3 178.3 L143.2 179.4 L145.2 180.6 L147.1 181.7 L149.1 182.8 L151.1 184.0 L153.0 185.1 L154.9 186.2 L156.9 187.4 L158.9 188.5 L160.8 189.6 L162.8 190.8 L164.7 191.9 L166.7 193.0 L168.6 194.2 L170.5 195.3 L172.5 196.4 L174.4 197.6 L176.4 198.7 L178.3 199.9 L180.3 201.0 L182.3 202.1 L184.2 203.3 L186.2 204.4 L188.1 205.5 L190.1 206.7 L192.0 207.8 L193.9 208.9 L195.9 210.1 L197.8 211.2 L199.8 212.3 L201.7 213.5 L203.7 214.6 L205.7 215.7 L207.6 216.9 L209.6 218.0 L211.5 219.1 L213.4 220.3 L215.4 221.4 L217.3 222.5 L219.3 223.7 L221.2 224.8 L223.2 225.9 L225.1 227.1 L227.1 228.2 L229.1 229.4 L231.0 230.5 L232.9 231.6 L234.9 232.8 L236.9 233.9 L238.8 235.0 L240.8 236.2 L242.7 237.3 L244.7 238.4 L246.6 239.6 L248.6 240.7 L250.5 241.8 L252.5 243.0 L254.4 244.1 L256.4 245.2 L258.3 246.4 L260.2 247.5 L262.2 248.6 L264.1 248.3 L266.1 247.2 L268.1 246.1 L270.0 244.9 L272.0 243.8 L273.9 242.7 L275.8 241.5 L277.8 240.4 L279.8 239.3 L281.7 238.1 L283.6 237.0 L285.6 235.9 L287.5 234.7 L289.5 233.6 L291.4 232.4 L293.4 231.3 L295.4 230.2 L297.3 229.0 L299.2 227.9 L301.2 226.8 L303.1 225.6 L305.1 224.5 L307.1 223.4 L309.0 222.2 L310.9 221.1 L312.9 220.0 L314.9 218.8 L316.8 217.7 L318.8 216.6 L320.7 215.4 L322.7 214.3 L324.6 213.2 L326.6 212.0 L328.5 210.9 L330.5 209.8 L332.4 208.6 L334.4 207.5 L336.3 206.4 L338.2 205.2 L340.2 204.1 L342.1 202.9 L344.1 201.8 L346.1 200.7 L348.0 199.5 L349.9 198.4 L351.9 197.3 L353.9 196.1 L355.8 195.0 L357.7 193.9 L359.7 192.7 L361.6 191.6 L363.6 190.5 L365.5 189.3 L367.5 188.2 L369.4 187.1 L371.4 185.9 L373.4 184.8 L375.3 183.7 L377.2 182.5 L379.2 181.4 L381.2 180.3 L383.1 179.1 L385.1 178.0 L387.0 176.9 L389.0 175.7 L390.9 174.6 L392.9 173.4 L394.8 172.3 L396.8 171.2 L398.7 170.0 L400.6 168.9 L402.6 167.8 L404.6 166.6 L406.5 165.5 L408.4 164.4 L410.4 163.2 L412.4 162.1 L414.3 161.0 L416.2 159.8 L418.2 158.7 L420.1 157.6 L422.1 156.4 L424.0 155.3 L426.0 154.2 L427.9 153.0 L429.9 151.9 L431.9 150.8 L433.8 149.6 L435.8 148.5 L437.7 147.3 L439.6 146.2 L441.6 145.1 L443.6 143.9 L445.5 142.8 L447.4 141.7 L449.4 140.5 L451.4 139.4 L453.3 138.3 L455.2 137.1 L457.2 136.0 L459.1 134.9 L461.1 133.7 L463.0 132.6 L465.0 131.5 L467.0 130.3 L468.9 129.2 L470.9 128.1 L472.8 126.9 L474.8 125.8 L476.7 124.7 L478.6 123.5 L480.6 122.4 L482.5 121.3 L484.5 120.1 L486.4 119.0 L488.4 117.8 L490.4 116.7 L492.3 115.6 L494.3 114.4 L496.2 113.3 L498.1 112.2 L500.1 111.0 L502.1 109.9 L504.0 108.8\" fill=\"none\" stroke=\"(317.2469723721951, 357.46484332720803)\" stroke-width=\"2.4\"/><circle cx=\"262.9\" cy=\"249.1\" r=\"4.5\" fill=\"#f97316\"/><text x=\"272.9\" y=\"271.1\" font-size=\"12\" font-weight=\"700\" fill=\"#c2410c\" font-family=\"system-ui\">minimum (2, −3)</text></svg>"
               }
             }
           ],
