@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { FileUp, X, Loader2, FileText, BookOpen, ChevronLeft, ChevronRight } from 'lucide-react';
+import { FileUp, X, Loader2, FileText, BookOpen, ChevronLeft, ChevronRight, NotebookPen } from 'lucide-react';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import PdfViewer from './PdfViewer';
@@ -204,7 +204,9 @@ const LessonWorkspace = ({ session, students: profiles = [], onClose }) => {
   const [pdf, setPdf] = useState({ status: 'loading', record: null, url: '' });   // loading | none | ready | error
   const topicPdfs = useTopicPdfs(profile);
   const [picking, setPicking] = useState(false);
-  const [pane, setPane] = useState('first');
+  // The lesson opens with the worksheet filling the screen; the Notes button brings the notepad in beside it and
+  // a second tap hides it again. The notepad stays mounted while hidden (tab-style, full size), so its ink is kept.
+  const [notesOpen, setNotesOpen] = useState(false);
   const fileRef = useRef(null);
   const canvasRef = useRef(null);
   const { layout, setLayoutChoice, split, setSplit } = useSplitLayout();
@@ -346,16 +348,12 @@ const LessonWorkspace = ({ session, students: profiles = [], onClose }) => {
         {status === 'ready' && (
           <button type="button" onClick={() => setPicking(true)} style={headBtn}><FileUp size={15} /> Change PDF</button>
         )}
-        {tabs ? (
-          <div style={{ display: 'flex', gap: 6 }}>
-            <button type="button" onClick={() => setPane('first')} style={chip(pane === 'first')}>PDF</button>
-            <button type="button" onClick={() => setPane('second')} style={chip(pane === 'second')}>Notes</button>
-          </div>
-        ) : <SplitLayoutToggle layout={layout} onChange={setLayoutChoice} />}
+        {notesOpen && !tabs && <SplitLayoutToggle layout={layout} onChange={setLayoutChoice} />}
+        <button type="button" aria-pressed={notesOpen} aria-label={notesOpen ? 'Hide notes' : 'Show notes'} onClick={() => setNotesOpen((v) => !v)} style={{ ...headBtn, ...(notesOpen ? { background: '#e0e7ff', borderColor: '#a5b4fc', color: '#4338ca' } : null) }}><NotebookPen size={15} /> Notes</button>
         <button type="button" aria-label="Close lesson" onClick={close} style={{ border: 0, background: 'transparent', cursor: 'pointer', padding: 4, display: 'flex', color: '#64748b' }}><X size={22} /></button>
         <input ref={fileRef} type="file" accept="application/pdf,.pdf" onChange={upload} style={{ display: 'none' }} />
       </div>
-      <SplitPanes layout={layout} split={split} onSplitChange={setSplit} first={pdfPane} second={notePane} activePane={pane} />
+      <SplitPanes layout={notesOpen ? layout : 'tabs'} split={split} onSplitChange={setSplit} first={pdfPane} second={notePane} activePane={notesOpen && tabs ? 'second' : 'first'} />
       {picking && <PdfPicker student={active} state={topicPdfs} currentTopicId={isDrive ? record.topicId : readLastTopic(active.id)} onPickTopic={pickTopic} onUpload={() => fileRef.current?.click()} onClose={() => setPicking(false)} />}
     </div>
   );

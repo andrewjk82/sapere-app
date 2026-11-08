@@ -444,7 +444,8 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack, dnaLabels
 
   const q = queue[0]; // always the front of the queue
   const isMC = q && q.options?.length > 0 && q.type !== 'short_answer';
-  const timeLimit = q?.timeLimit || null;
+  // No per-question time limit (removed 2026-11, like Exam Prep): null hides the badge and the auto-submit countdown.
+  const timeLimit = null;
 
   // ── Reset per question (when front of queue changes) ──────────────────────
   useEffect(() => {
