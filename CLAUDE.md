@@ -199,6 +199,11 @@ bank has too few questions for (1) — e.g. Ch 9 has one, Ch 10 has none — say
 - **Minimal, disclosed edits to verbatim stems.** Only allowed: removing MC options, fixing a clear
   typo (e.g. a stray `2.` inside `\frac`), turning an option-dependent ending such as "equals:" into a
   question, and the hint/interest-type clarifications above. Mention every edit in the delivery note.
+- **No option-dependent wording left behind.** After removing MC options, rewrite any stem that only
+  makes sense with the options — "which of the following / of the expressions below / of these",
+  "is equal to which…", "Which statement(s) must be true" — into a direct task ("Make x the subject",
+  "Write down all …", "Find …"), or leave the question out. Before delivering, grep every verbatim stem
+  for `which of|following|below|these|options|correct` and read each hit.
 - **Diagrams must never be clipped.** Every figure in the builds is auto-fitted before printing
   (`getBBox()` → `viewBox` + padding in the build script). Keep that step in any new build script and
   check a rendered page with a figure before sending.
