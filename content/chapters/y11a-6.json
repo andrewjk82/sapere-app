@@ -20865,43 +20865,6 @@
           "xp": 4
         },
         {
-          "id": "killara2026-q23",
-          "type": "mc",
-          "difficulty": "hard",
-          "stem": "Solve \\(3\\sin^2x-\\cos^2x=1\\) for \\(-\\pi\\le x\\le\\pi\\). Give all solutions in exact form.",
-          "options": [
-            "&#8203;\\(x=\\dfrac{\\pi}{4},\\ -\\dfrac{\\pi}{4}\\text{ only}\\)",
-            "&#8203;\\(x=\\dfrac{\\pi}{3},\\ -\\dfrac{\\pi}{3},\\ \\dfrac{2\\pi}{3},\\ -\\dfrac{2\\pi}{3}\\)",
-            "&#8203;\\(x=\\dfrac{\\pi}{4},\\ \\dfrac{3\\pi}{4}\\text{ only}\\)",
-            "&#8203;\\(x=\\dfrac{\\pi}{4},\\ -\\dfrac{\\pi}{4},\\ \\dfrac{3\\pi}{4},\\ -\\dfrac{3\\pi}{4}\\)"
-          ],
-          "answer": 3,
-          "hint": "Replace \\(\\cos^2x\\) with \\(1-\\sin^2x\\) so the whole equation is in terms of \\(\\sin x\\).",
-          "steps": [
-            {
-              "explain": "Use the Pythagorean identity to write \\\\(\\\\cos^2x=1-\\\\sin^2x\\\\).",
-              "work": "\\\\(3\\\\sin^2x-(1-\\\\sin^2x)=1\\\\)"
-            },
-            {
-              "explain": "Expand and collect like terms.",
-              "work": "\\\\(4\\\\sin^2x-1=1 \\\\Rightarrow 4\\\\sin^2x=2 \\\\Rightarrow \\\\sin^2x=\\\\dfrac12\\\\)"
-            },
-            {
-              "explain": "Take the square root of both sides. On the unit circle, \\\\(\\\\sin x\\\\) corresponds to the y-coordinate. So we are finding where the y-coordinate is \\\\(\\\\frac{1}{\\\\sqrt2}\\\\) or \\\\(-\\\\frac{1}{\\\\sqrt2}\\\\).",
-              "work": "\\\\(\\\\sin x=\\\\dfrac{1}{\\\\sqrt2} \\\\quad \\\\text{or} \\\\quad \\\\sin x=-\\\\dfrac{1}{\\\\sqrt2}\\\\)\\n<svg viewBox=\"0 0 300 300\" style=\"background:#f8fafc; border-radius:8px; max-width:400px; margin:auto; display:block;\">\n              <line x1=\"20\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1\" />\n              <line x1=\"150\" y1=\"20\" x2=\"150\" y2=\"280\" stroke=\"#94a3b8\" stroke-width=\"1\" />\n              <circle cx=\"150\" cy=\"150\" r=\"100\" fill=\"none\" stroke=\"#94a3b8\" stroke-dasharray=\"4\" stroke-width=\"2\" />\n              <line x1=\"50\" y1=\"79.29\" x2=\"250\" y2=\"79.29\" stroke=\"#ef4444\" stroke-width=\"2\" />\n              <line x1=\"50\" y1=\"220.71\" x2=\"250\" y2=\"220.71\" stroke=\"#ef4444\" stroke-width=\"2\" />\n              <text x=\"155\" y=\"70\" fill=\"#ef4444\" font-family=\"sans-serif\">y = 1/&radic;2</text>\n              <text x=\"155\" y=\"235\" fill=\"#ef4444\" font-family=\"sans-serif\">y = -1/&radic;2</text>\n              <circle cx=\"79.29\" cy=\"79.29\" r=\"4\" fill=\"#3b82f6\" />\n              <circle cx=\"220.71\" cy=\"79.29\" r=\"4\" fill=\"#3b82f6\" />\n              <circle cx=\"79.29\" cy=\"220.71\" r=\"4\" fill=\"#3b82f6\" />\n              <circle cx=\"220.71\" cy=\"220.71\" r=\"4\" fill=\"#3b82f6\" />\n            </svg>"
-            },
-            {
-              "explain": "The reference angle (기준각) is \\\\(45^\\\\circ=\\\\dfrac{\\\\pi}{4}\\\\). This forms four congruent right triangles (the 'bow tie') in all four quadrants.",
-              "work": "\\\\(\\\\text{Reference angle} = \\\\dfrac{\\\\pi}{4}\\\\)\\n<svg viewBox=\"0 0 300 300\" style=\"background:#f8fafc; border-radius:8px; max-width:400px; margin:auto; display:block;\">\n              <line x1=\"20\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1\" />\n              <line x1=\"150\" y1=\"20\" x2=\"150\" y2=\"280\" stroke=\"#94a3b8\" stroke-width=\"1\" />\n              <circle cx=\"150\" cy=\"150\" r=\"100\" fill=\"none\" stroke=\"#94a3b8\" stroke-dasharray=\"4\" stroke-width=\"2\" />\n              <polygon points=\"150,150 220.71,150 220.71,79.29\" fill=\"#10b981\" fill-opacity=\"0.3\" stroke=\"#10b981\" stroke-width=\"1.5\" />\n              <polygon points=\"150,150 79.29,150 79.29,79.29\" fill=\"#10b981\" fill-opacity=\"0.3\" stroke=\"#10b981\" stroke-width=\"1.5\" />\n              <polygon points=\"150,150 79.29,150 79.29,220.71\" fill=\"#10b981\" fill-opacity=\"0.3\" stroke=\"#10b981\" stroke-width=\"1.5\" />\n              <polygon points=\"150,150 220.71,150 220.71,220.71\" fill=\"#10b981\" fill-opacity=\"0.3\" stroke=\"#10b981\" stroke-width=\"1.5\" />\n              <text x=\"175\" y=\"145\" fill=\"#059669\" font-family=\"sans-serif\" font-size=\"12\">&pi;/4</text>\n              <text x=\"105\" y=\"145\" fill=\"#059669\" font-family=\"sans-serif\" font-size=\"12\">&pi;/4</text>\n              <text x=\"105\" y=\"165\" fill=\"#059669\" font-family=\"sans-serif\" font-size=\"12\">&pi;/4</text>\n              <text x=\"175\" y=\"165\" fill=\"#059669\" font-family=\"sans-serif\" font-size=\"12\">&pi;/4</text>\n            </svg>"
-            },
-            {
-              "explain": "Finally, measure the angles from the positive x-axis within the domain \\\\([-\\\\pi,\\\\pi]\\\\). Go counter-clockwise for positive values, and clockwise for negative values.",
-              "work": "\\\\(x=\\\\dfrac{\\\\pi}{4},\\\\ \\\\dfrac{3\\\\pi}{4},\\\\ -\\\\dfrac{\\\\pi}{4},\\\\ -\\\\dfrac{3\\\\pi}{4}\\\\)\\n<svg viewBox=\"0 0 300 300\" style=\"background:#f8fafc; border-radius:8px; max-width:400px; margin:auto; display:block;\">\n              <line x1=\"20\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1\" />\n              <line x1=\"150\" y1=\"20\" x2=\"150\" y2=\"280\" stroke=\"#94a3b8\" stroke-width=\"1\" />\n              <circle cx=\"150\" cy=\"150\" r=\"100\" fill=\"none\" stroke=\"#94a3b8\" stroke-dasharray=\"4\" stroke-width=\"2\" />\n              <line x1=\"150\" y1=\"150\" x2=\"220.71\" y2=\"79.29\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n              <line x1=\"150\" y1=\"150\" x2=\"79.29\" y2=\"79.29\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n              <line x1=\"150\" y1=\"150\" x2=\"79.29\" y2=\"220.71\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n              <line x1=\"150\" y1=\"150\" x2=\"220.71\" y2=\"220.71\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n              <path d=\"M 250 150 A 100 100 0 0 0 220.71 79.29\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"3\" />\n              <path d=\"M 250 150 A 100 100 0 0 0 79.29 79.29\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"3\" />\n              <path d=\"M 250 150 A 100 100 0 0 1 220.71 220.71\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\" />\n              <path d=\"M 250 150 A 100 100 0 0 1 79.29 220.71\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\" />\n              <circle cx=\"220.71\" cy=\"79.29\" r=\"5\" fill=\"#8b5cf6\" />\n              <circle cx=\"79.29\" cy=\"79.29\" r=\"5\" fill=\"#8b5cf6\" />\n              <circle cx=\"79.29\" cy=\"220.71\" r=\"5\" fill=\"#8b5cf6\" />\n              <circle cx=\"220.71\" cy=\"220.71\" r=\"5\" fill=\"#8b5cf6\" />\n              <text x=\"230\" y=\"70\" fill=\"#8b5cf6\" font-family=\"sans-serif\" font-weight=\"bold\">&pi;/4</text>\n              <text x=\"40\" y=\"70\" fill=\"#8b5cf6\" font-family=\"sans-serif\" font-weight=\"bold\">3&pi;/4</text>\n              <text x=\"30\" y=\"240\" fill=\"#8b5cf6\" font-family=\"sans-serif\" font-weight=\"bold\">-3&pi;/4</text>\n              <text x=\"230\" y=\"240\" fill=\"#8b5cf6\" font-family=\"sans-serif\" font-weight=\"bold\">-&pi;/4</text>\n            </svg>"
-            }
-          ],
-          "xp": 4
-        },
-        {
           "id": "y11a-6-excel-trigidentity-q6",
           "type": "mc",
           "difficulty": "medium",
