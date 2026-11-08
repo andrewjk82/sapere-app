@@ -10037,30 +10037,37 @@
           "id": "killara2026-q13b",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Using \\(k=4\\), so that \\(f(x)=x^5-5x^3+4x\\), which statement about \\(f(x)\\) is true?",
+          "stem": "The function \\(f(x)\\) is defined by \\(f(x)=x^5-5x^3+kx\\). Using \\(k=4\\), show that \\(f(x)\\) is an odd function.",
           "options": [
-            "&#8203;The function \\(f(x)\\) is an even function, since \\(f(-x)=f(x)\\)",
-            "&#8203;The function \\(f(x)\\) is neither odd nor even",
-            "&#8203;The function \\(f(x)\\) is an odd function, since \\(f(-x)=-f(x)\\)",
-            "&#8203;The function \\(f(x)\\) is both odd and even"
+            "&#8203;\\(f(-x)=f(x)\\), so \\(f\\) is even",
+            "&#8203;\\(f(-x)=-f(x)\\), so \\(f\\) is odd",
+            "&#8203;\\(f(0)=0\\), so \\(f\\) is odd",
+            "&#8203;\\(f(-x)=-f(x)\\) only when \\(x>0\\), so \\(f\\) is neither"
           ],
-          "answer": 2,
+          "answer": 1,
           "hint": "Compute \\(f(-x)\\) and compare it with \\(f(x)\\) and \\(-f(x)\\).",
           "steps": [
             {
-              "explain": "Substitute \\(-x\\) into every term.",
-              "work": "\\(f(-x)=(-x)^5-5(-x)^3+4(-x)=-x^5+5x^3-4x\\)"
+              "explain": "Substitute −x for x in the formula. Keep the odd powers visible so their signs can be checked.",
+              "work": "f(−x)=(−x)^5−5(−x)^3+4(−x)"
             },
             {
-              "explain": "Compare this with \\(-f(x)\\).",
-              "work": "\\(-f(x)=-(x^5-5x^3+4x)=-x^5+5x^3-4x\\)"
+              "explain": "An odd power keeps the negative sign. The term −5(−x)^3 becomes +5x³.",
+              "work": "f(−x)=−x^5+5x^3−4x"
             },
             {
-              "explain": "Since \\(f(-x)=-f(x)\\) for every \\(x\\), \\(f(x)\\) is an odd function.",
-              "work": "\\(f(x)\\text{ is odd}\\)"
+              "explain": "Factor out −1 and compare with the original expression f(x)=x⁵−5x³+4x.",
+              "work": "f(−x)=−(x^5−5x^3+4x)=−f(x)\nTherefore f is odd."
             }
           ],
-          "xp": 2
+          "xp": 1,
+          "timeLimit": 60,
+          "meta": {
+            "course": "Advanced",
+            "source": "Killara High School Year 11 Preliminary Examination Mathematics Advanced",
+            "sourcePage": 11,
+            "sourceQuestion": 13
+          }
         },
         {
           "id": "y11a-5c-excel-intro-q09",
@@ -17870,20 +17877,20 @@
           "hint": "An absolute value expression \\(|2x-4|\\) is defined for every real \\(x\\), and its minimum value is 0.",
           "steps": [
             {
-              "explain": "First, analyze the domain of an absolute value function. The expression inside the absolute value, \\\\(2x - 4\\\\), is a linear polynomial, which is defined for all real numbers. The absolute value operation also has no restrictions.",
-              "work": "Domain: \\\\((-\\\\infty, \\\\infty)\\\\)"
+              "explain": "First, analyze the domain of an absolute value function. The expression inside the absolute value, \\(2x - 4\\), is a linear polynomial, which is defined for all real numbers. The absolute value operation also has no restrictions.",
+              "work": "Domain: \\((-\\\\infty, \\\\infty)\\)"
             },
             {
-              "explain": "Next, analyze the range. The absolute value of any real number is always non-negative: \\\\(|2x - 4| \\\\ge 0\\\\).",
-              "work": "\\\\(|2x - 4| \\\\ge 0\\\\)"
+              "explain": "Next, analyze the range. The absolute value of any real number is always non-negative: \\(|2x - 4| \\\\ge 0\\).",
+              "work": "\\(|2x - 4| \\\\ge 0\\)"
             },
             {
-              "explain": "Subtract 3 from both sides of the inequality to match our function \\\\(f(x)\\\\).",
-              "work": "\\\\(|2x - 4| - 3 \\\\ge 0 - 3 \\\\implies f(x) \\\\ge -3\\\\)"
+              "explain": "Subtract 3 from both sides of the inequality to match our function \\(f(x)\\).",
+              "work": "\\(|2x - 4| - 3 \\\\ge 0 - 3 \\\\implies f(x) \\\\ge -3\\)"
             },
             {
-              "explain": "The minimum value is exactly -3 (which occurs when \\\\(2x - 4 = 0\\\\), or \\\\(x = 2\\\\)). As \\\\(x\\\\) moves in either direction, \\\\(f(x)\\\\) increases to infinity.",
-              "work": "Range: \\\\([-3, \\\\infty)\\\\)",
+              "explain": "The minimum value is exactly -3 (which occurs when \\(2x - 4 = 0\\), or \\(x = 2\\)). As \\(x\\) moves in either direction, \\(f(x)\\) increases to infinity.",
+              "work": "Range: \\([-3, \\\\infty)\\)",
               "figure": {
                 "jsxGraph": {
                   "attributes": {
@@ -17901,7 +17908,14 @@
               }
             }
           ],
-          "xp": 3
+          "xp": 1,
+          "timeLimit": 60,
+          "meta": {
+            "course": "Advanced",
+            "source": "Killara High School Year 11 Preliminary Examination Mathematics Advanced",
+            "sourcePage": 10,
+            "sourceQuestion": 5
+          }
         },
         {
           "id": "ascham2020-q11",
@@ -18843,12 +18857,12 @@
           "id": "killara2026-q17",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "Let \\\\(f(x)=x^4-2x^2\\\\) and \\\\(g(x)=\\\\sqrt{3-x}\\\\).",
+          "stem": "Let \\(f(x)=x^4-2x^2\\) and \\(g(x)=\\\\sqrt{3-x}\\).",
           "parts": [
             {
               "id": "killara2026-q17a",
               "type": "mc",
-              "stem": "Find \\\\(f(g(x))\\\\).",
+              "stem": "Find \\(f(g(x))\\).",
               "options": [
                 "&#8203;\\(x^2+4x-3\\)",
                 "&#8203;\\(9-x^2\\)",
@@ -18871,12 +18885,19 @@
                   "work": "\\(9-6x+x^2-6+2x=x^2-4x+3\\)"
                 }
               ],
-              "xp": 2
+              "xp": 1,
+              "timeLimit": 60,
+              "meta": {
+                "course": "Advanced",
+                "source": "Killara High School Year 11 Preliminary Examination Mathematics Advanced",
+                "sourcePage": 14,
+                "sourceQuestion": 17
+              }
             },
             {
               "id": "killara2026-q17b",
               "type": "mc",
-              "stem": "Hence, find the domain of \\\\(f(g(x))\\\\).",
+              "stem": "Hence, find the domain of \\(f(g(x))\\).",
               "options": [
                 "&#8203;\\(x\\le 3\\)",
                 "&#8203;\\(x\\ge 3\\)",
@@ -18899,9 +18920,24 @@
                   "work": "\\(\\text{Domain: }x\\le 3\\)"
                 }
               ],
-              "xp": 3
+              "xp": 1,
+              "timeLimit": 60,
+              "meta": {
+                "course": "Advanced",
+                "source": "Killara High School Year 11 Preliminary Examination Mathematics Advanced",
+                "sourcePage": 14,
+                "sourceQuestion": 17
+              }
             }
-          ]
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "course": "Advanced",
+            "source": "Killara High School Year 11 Preliminary Examination Mathematics Advanced",
+            "sourcePage": 14,
+            "sourceQuestion": 17
+          }
         },
         {
           "id": "ascham2020-q19",
@@ -24840,12 +24876,12 @@
           "id": "killara2026-q24",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "Consider \\\\(f(x)=\\\\begin{cases}2x^2 & x<1\\\\\\\\ kx-1 & 1\\\\le x<3\\\\\\\\ 2 & x\\\\ge 3\\\\end{cases}\\\\).",
+          "stem": "Consider the function:<br><br><span style=\"display:inline-block;text-align:left;margin-left:2rem\">\\(f(x)=\\begin{cases}2x^2 & \\text{if } x<1 \\\\ kx-1 & \\text{if }1\\le x<3 \\\\ 2 & \\text{if }x\\ge3\\end{cases}\\)</span>",
           "parts": [
             {
               "id": "killara2026-q24a",
               "type": "mc",
-              "stem": "Find the value of \\\\(k\\\\) that makes \\\\(f(x)\\\\) continuous at \\\\(x=1\\\\).",
+              "stem": "Find the value of \\(k\\) that makes \\(f(x)\\) continuous at \\(x=1\\).",
               "options": [
                 "&#8203;\\(2\\)",
                 "&#8203;\\(3\\)",
@@ -24856,16 +24892,16 @@
               "hint": "For continuity at \\(x=1\\), the two pieces must meet: \\(2(1)^2=k(1)-1\\).",
               "steps": [
                 {
-                  "explain": "For continuity at \\\\(x=1\\\\), the left-hand limit (from the first piece) must equal the right-hand limit and function value (from the second piece). First, evaluate the left-hand limit as \\\\(x \\\\to 1^-\\\\).",
-                  "work": "\\\\(\\\\lim_{x \\\\to 1^-} 2x^2 = 2(1)^2 = 2\\\\)"
+                  "explain": "For continuity at \\(x=1\\), the left-hand limit (from the first piece) must equal the right-hand limit and function value (from the second piece). First, evaluate the left-hand limit as \\(x \\\\to 1^-\\).",
+                  "work": "\\(\\\\lim_{x \\\\to 1^-} 2x^2 = 2(1)^2 = 2\\)"
                 },
                 {
-                  "explain": "Evaluate the right-hand limit and function value as \\\\(x \\\\to 1^+\\\\).",
-                  "work": "\\\\(\\\\lim_{x \\\\to 1^+} (kx - 1) = k(1) - 1 = k - 1\\\\)"
+                  "explain": "Evaluate the right-hand limit and function value as \\(x \\\\to 1^+\\).",
+                  "work": "\\(\\\\lim_{x \\\\to 1^+} (kx - 1) = k(1) - 1 = k - 1\\)"
                 },
                 {
-                  "explain": "Set them equal and solve for \\\\(k\\\\).",
-                  "work": "\\\\(k - 1 = 2 \\\\implies k = 3\\\\)",
+                  "explain": "Set them equal and solve for \\(k\\).",
+                  "work": "\\(k - 1 = 2 \\\\implies k = 3\\)",
                   "figure": {
                     "jsxGraph": {
                       "attributes": {
@@ -24883,52 +24919,70 @@
                   }
                 }
               ],
-              "xp": 3
+              "xp": 1,
+              "timeLimit": 60,
+              "meta": {
+                "course": "Advanced",
+                "source": "Killara High School Year 11 Preliminary Examination Mathematics Advanced",
+                "sourcePage": 21,
+                "sourceQuestion": 24
+              }
             },
             {
               "id": "killara2026-q24b",
-              "type": "mc",
-              "stem": "Using \\\\(k=3\\\\), the graph of \\\\(f(x)\\\\) has a discontinuity at \\\\(x=3\\\\). What are the two y-values on either side of this jump?",
-              "options": [
-                "&#8203;\\(2\\) (open circle) jumping up to \\(8\\) (closed circle)",
-                "&#8203;\\(6\\) (open circle) jumping down to \\(2\\) (closed circle)",
-                "&#8203;\\(8\\) (open circle) jumping down to \\(2\\) (closed circle)",
-                "&#8203;There is no discontinuity at \\(x=3\\)"
-              ],
-              "answer": 2,
-              "hint": "Evaluate the middle piece \\(3x-1\\) as \\(x\\to 3^-\\), and the third piece at \\(x=3\\).",
+              "type": "review",
+              "stem": "Using your value of \\(k\\), sketch the graph of \\(f(x)\\) for \\(x\\) in the domain \\([0,5]\\).",
+              "answer": "Part (a): continuity at x=1 gives 2(1)²=k(1)−1, so k=3. On [0,1), draw y=2x²; on [1,3), draw y=3x−1; on [3,5], draw y=2. At x=1 the first branch is open at (1,2), while the middle branch includes that point. At x=3 the middle branch is open at (3,8), and the last branch is closed at (3,2).",
+              "hint": "Use k from part (a) in each rule. At x=1 and x=3, check whether the endpoint belongs to the interval for that rule; this determines open or closed circles.",
               "steps": [
                 {
-                  "explain": "Analyze the limits at \\\\(x=3\\\\). As \\\\(x\\\\to 3^-\\\\), use the middle piece \\\\(f(x)=3x-1\\\\).",
-                  "work": "\\\\(\\\\lim_{x \\\\to 3^-} (3x - 1) = 3(3) - 1 = 8\\\\) (open circle, not included)"
+                  "explain": "Use continuity at x=1: the left-hand formula and middle formula must give the same y-value there.",
+                  "work": "2(1)^2=k(1)−1 ⇒ 2=k−1 ⇒ k=3"
                 },
                 {
-                  "explain": "At \\\\(x=3\\\\) and beyond (\\\\(x \\\\to 3^+\\\\)), use the third piece \\\\(f(x)=2\\\\).",
-                  "work": "\\\\(f(3) = 2\\\\) (closed circle)"
-                },
-                {
-                  "explain": "So the graph jumps from an open circle at \\\\(y=8\\\\) down to a closed circle at \\\\(y=2\\\\).",
-                  "work": "\\\\(8 \\\\to 2\\\\)",
+                  "explain": "Draw the first part on 0≤x<1. It is the upward curve y=2x². Because x=1 is excluded from this branch, its endpoint at (1,2) is open.",
+                  "work": "\\(0\\le x<1:\\;y=2x^2\\)",
                   "figure": {
-                    "jsxGraph": {
-                      "attributes": {
-                        "boundingbox": [
-                          -2,
-                          10,
-                          8,
-                          -2
-                        ],
-                        "axis": true,
-                        "showNavigation": false
-                      },
-                      "script": "var f1 = function(x){ return 2*x*x; };\nvar f2 = function(x){ return 3*x-1; };\nvar f3 = function(x){ return 2; };\n\nboard.create('functiongraph', [f1, -1, 1], {strokeColor: '#3b82f6', strokeWidth: 3});\nboard.create('functiongraph', [f2, 1, 3], {strokeColor: '#3b82f6', strokeWidth: 3});\nboard.create('functiongraph', [f3, 3, 5], {strokeColor: '#3b82f6', strokeWidth: 3});\n\nboard.create('point', [1, 2], {fillColor: '#3b82f6', strokeColor: '#3b82f6', size: 4, name: ''});\nboard.create('point', [3, 8], {fillColor: 'white', strokeColor: '#3b82f6', strokeWidth: 2, size: 4, name: 'y=8'});\nboard.create('point', [3, 2], {fillColor: '#3b82f6', strokeColor: '#3b82f6', size: 4, name: 'y=2'});\n\nboard.create('segment', [[3,0], [3,8]], {dash: 2, strokeColor: 'gray'});\nboard.create('segment', [[0,8], [3,8]], {dash: 2, strokeColor: 'gray'});\nboard.create('segment', [[0,2], [3,2]], {dash: 2, strokeColor: 'gray'});\n\n// Jump arrow\nboard.create('arrow', [[3, 7.5], [3, 2.5]], {strokeColor: '#ef4444', strokeWidth: 2});\nboard.create('text', [3.2, 5, 'Jump'], {strokeColor: '#ef4444', fontSize: 16});"
-                    }
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Piecewise graph with endpoint values highlighted\" width=\"700\" height=\"360\" viewBox=\"0 0 700 360\" style=\"display:block;width:50%;max-width:680px;height:auto;margin:1rem auto;overflow:visible\" preserveAspectRatio=\"xMidYMid meet\"><style>text{font-family:Arial,Helvetica,sans-serif;fill:#334155}.axis{stroke:#334155;stroke-width:2}.grid{stroke:#dbe3ed;stroke-width:1}.light{fill:#eef4ff}.given{stroke:#334155;stroke-width:3;fill:none}.used{stroke:#7c3aed;stroke-width:5;fill:none}.hl{fill:#fef3c7;stroke:#f59e0b;stroke-width:3}.point{fill:#7c3aed;stroke:white;stroke-width:2}</style><line class=\"grid\" x1=\"110\" y1=\"55\" x2=\"110\" y2=\"315\"/><line class=\"grid\" x1=\"160\" y1=\"55\" x2=\"160\" y2=\"315\"/><line class=\"grid\" x1=\"210\" y1=\"55\" x2=\"210\" y2=\"315\"/><line class=\"grid\" x1=\"260\" y1=\"55\" x2=\"260\" y2=\"315\"/><line class=\"grid\" x1=\"310\" y1=\"55\" x2=\"310\" y2=\"315\"/><line class=\"grid\" x1=\"360\" y1=\"55\" x2=\"360\" y2=\"315\"/><line class=\"grid\" x1=\"410\" y1=\"55\" x2=\"410\" y2=\"315\"/><line class=\"grid\" x1=\"460\" y1=\"55\" x2=\"460\" y2=\"315\"/><line class=\"grid\" x1=\"510\" y1=\"55\" x2=\"510\" y2=\"315\"/><line class=\"grid\" x1=\"560\" y1=\"55\" x2=\"560\" y2=\"315\"/><line class=\"grid\" x1=\"610\" y1=\"55\" x2=\"610\" y2=\"315\"/><line class=\"grid\" x1=\"90\" y1=\"75\" x2=\"640\" y2=\"75\"/><line class=\"grid\" x1=\"90\" y1=\"105\" x2=\"640\" y2=\"105\"/><line class=\"grid\" x1=\"90\" y1=\"135\" x2=\"640\" y2=\"135\"/><line class=\"grid\" x1=\"90\" y1=\"165\" x2=\"640\" y2=\"165\"/><line class=\"grid\" x1=\"90\" y1=\"195\" x2=\"640\" y2=\"195\"/><line class=\"grid\" x1=\"90\" y1=\"225\" x2=\"640\" y2=\"225\"/><line class=\"grid\" x1=\"90\" y1=\"255\" x2=\"640\" y2=\"255\"/><line class=\"grid\" x1=\"90\" y1=\"285\" x2=\"640\" y2=\"285\"/><line class=\"grid\" x1=\"90\" y1=\"315\" x2=\"640\" y2=\"315\"/><line class=\"axis\" x1=\"90\" y1=\"285\" x2=\"645\" y2=\"285\"/><line class=\"axis\" x1=\"110\" y1=\"320\" x2=\"110\" y2=\"45\"/><text x=\"650\" y=\"291\" font-size=\"16\">x</text><text x=\"114\" y=\"45\" font-size=\"16\">y</text><text x=\"110\" y=\"307\" font-size=\"14\" text-anchor=\"middle\">0</text><text x=\"210\" y=\"307\" font-size=\"14\" text-anchor=\"middle\">1</text><text x=\"310\" y=\"307\" font-size=\"14\" text-anchor=\"middle\">2</text><text x=\"410\" y=\"307\" font-size=\"14\" text-anchor=\"middle\">3</text><text x=\"510\" y=\"307\" font-size=\"14\" text-anchor=\"middle\">4</text><text x=\"610\" y=\"307\" font-size=\"14\" text-anchor=\"middle\">5</text><path d=\"M110 285 Q160 264 210 225\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"3\"/><circle cx=\"210\" cy=\"225\" r=\"6\" fill=\"white\" stroke=\"#64748b\" stroke-width=\"3\"/><text x=\"125\" y=\"250\" font-size=\"14\">y=2x², 0≤x&lt;1</text></svg>"
+                  }
+                },
+                {
+                  "explain": "For 1≤x<3 use y=3x−1. It includes (1,2), so that point is closed; it excludes x=3, so (3,8) is open.",
+                  "work": "1≤x<3: y=3x−1;   f(1)=2,   lim(x→3−)f(x)=8",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Piecewise graph with endpoint values highlighted\" width=\"700\" height=\"360\" viewBox=\"0 0 700 360\" style=\"display:block;width:50%;max-width:680px;height:auto;margin:1rem auto;overflow:visible\" preserveAspectRatio=\"xMidYMid meet\"><style>text{font-family:Arial,Helvetica,sans-serif;fill:#334155}.axis{stroke:#334155;stroke-width:2}.grid{stroke:#dbe3ed;stroke-width:1}.light{fill:#eef4ff}.given{stroke:#334155;stroke-width:3;fill:none}.used{stroke:#7c3aed;stroke-width:5;fill:none}.hl{fill:#fef3c7;stroke:#f59e0b;stroke-width:3}.point{fill:#7c3aed;stroke:white;stroke-width:2}</style><line class=\"grid\" x1=\"110\" y1=\"55\" x2=\"110\" y2=\"315\"/><line class=\"grid\" x1=\"160\" y1=\"55\" x2=\"160\" y2=\"315\"/><line class=\"grid\" x1=\"210\" y1=\"55\" x2=\"210\" y2=\"315\"/><line class=\"grid\" x1=\"260\" y1=\"55\" x2=\"260\" y2=\"315\"/><line class=\"grid\" x1=\"310\" y1=\"55\" x2=\"310\" y2=\"315\"/><line class=\"grid\" x1=\"360\" y1=\"55\" x2=\"360\" y2=\"315\"/><line class=\"grid\" x1=\"410\" y1=\"55\" x2=\"410\" y2=\"315\"/><line class=\"grid\" x1=\"460\" y1=\"55\" x2=\"460\" y2=\"315\"/><line class=\"grid\" x1=\"510\" y1=\"55\" x2=\"510\" y2=\"315\"/><line class=\"grid\" x1=\"560\" y1=\"55\" x2=\"560\" y2=\"315\"/><line class=\"grid\" x1=\"610\" y1=\"55\" x2=\"610\" y2=\"315\"/><line class=\"grid\" x1=\"90\" y1=\"75\" x2=\"640\" y2=\"75\"/><line class=\"grid\" x1=\"90\" y1=\"105\" x2=\"640\" y2=\"105\"/><line class=\"grid\" x1=\"90\" y1=\"135\" x2=\"640\" y2=\"135\"/><line class=\"grid\" x1=\"90\" y1=\"165\" x2=\"640\" y2=\"165\"/><line class=\"grid\" x1=\"90\" y1=\"195\" x2=\"640\" y2=\"195\"/><line class=\"grid\" x1=\"90\" y1=\"225\" x2=\"640\" y2=\"225\"/><line class=\"grid\" x1=\"90\" y1=\"255\" x2=\"640\" y2=\"255\"/><line class=\"grid\" x1=\"90\" y1=\"285\" x2=\"640\" y2=\"285\"/><line class=\"grid\" x1=\"90\" y1=\"315\" x2=\"640\" y2=\"315\"/><line class=\"axis\" x1=\"90\" y1=\"285\" x2=\"645\" y2=\"285\"/><line class=\"axis\" x1=\"110\" y1=\"320\" x2=\"110\" y2=\"45\"/><text x=\"650\" y=\"291\" font-size=\"16\">x</text><text x=\"114\" y=\"45\" font-size=\"16\">y</text><text x=\"110\" y=\"307\" font-size=\"14\" text-anchor=\"middle\">0</text><text x=\"210\" y=\"307\" font-size=\"14\" text-anchor=\"middle\">1</text><text x=\"310\" y=\"307\" font-size=\"14\" text-anchor=\"middle\">2</text><text x=\"410\" y=\"307\" font-size=\"14\" text-anchor=\"middle\">3</text><text x=\"510\" y=\"307\" font-size=\"14\" text-anchor=\"middle\">4</text><text x=\"610\" y=\"307\" font-size=\"14\" text-anchor=\"middle\">5</text><path d=\"M110 285 Q160 264 210 225\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"3\"/><circle cx=\"210\" cy=\"225\" r=\"6\" fill=\"white\" stroke=\"#64748b\" stroke-width=\"3\"/><text x=\"125\" y=\"250\" font-size=\"14\">y=2x², 0≤x&lt;1</text><path d=\"M210 225 L410 75\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"4\"/><circle cx=\"210\" cy=\"225\" r=\"6\" fill=\"#7c3aed\"/><circle cx=\"410\" cy=\"75\" r=\"6\" fill=\"white\" stroke=\"#7c3aed\" stroke-width=\"3\"/><text x=\"285\" y=\"120\" font-size=\"14\" fill=\"#7c3aed\">y=3x−1, 1≤x&lt;3</text><circle cx=\"410\" cy=\"225\" r=\"6\" fill=\"#f59e0b\"/><text x=\"420\" y=\"220\" font-size=\"13\" fill=\"#b45309\">(3,2) filled</text></svg>"
+                  }
+                },
+                {
+                  "explain": "For 3≤x≤5 use the constant value y=2. Mark (3,2) closed, then draw the horizontal segment to x=5.",
+                  "work": "\\(3\\le x\\le5:\\;y=2,\\quad f(3)=2\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Piecewise graph with endpoint values highlighted\" width=\"700\" height=\"360\" viewBox=\"0 0 700 360\" style=\"display:block;width:50%;max-width:680px;height:auto;margin:1rem auto;overflow:visible\" preserveAspectRatio=\"xMidYMid meet\"><style>text{font-family:Arial,Helvetica,sans-serif;fill:#334155}.axis{stroke:#334155;stroke-width:2}.grid{stroke:#dbe3ed;stroke-width:1}.light{fill:#eef4ff}.given{stroke:#334155;stroke-width:3;fill:none}.used{stroke:#7c3aed;stroke-width:5;fill:none}.hl{fill:#fef3c7;stroke:#f59e0b;stroke-width:3}.point{fill:#7c3aed;stroke:white;stroke-width:2}</style><line class=\"grid\" x1=\"110\" y1=\"55\" x2=\"110\" y2=\"315\"/><line class=\"grid\" x1=\"160\" y1=\"55\" x2=\"160\" y2=\"315\"/><line class=\"grid\" x1=\"210\" y1=\"55\" x2=\"210\" y2=\"315\"/><line class=\"grid\" x1=\"260\" y1=\"55\" x2=\"260\" y2=\"315\"/><line class=\"grid\" x1=\"310\" y1=\"55\" x2=\"310\" y2=\"315\"/><line class=\"grid\" x1=\"360\" y1=\"55\" x2=\"360\" y2=\"315\"/><line class=\"grid\" x1=\"410\" y1=\"55\" x2=\"410\" y2=\"315\"/><line class=\"grid\" x1=\"460\" y1=\"55\" x2=\"460\" y2=\"315\"/><line class=\"grid\" x1=\"510\" y1=\"55\" x2=\"510\" y2=\"315\"/><line class=\"grid\" x1=\"560\" y1=\"55\" x2=\"560\" y2=\"315\"/><line class=\"grid\" x1=\"610\" y1=\"55\" x2=\"610\" y2=\"315\"/><line class=\"grid\" x1=\"90\" y1=\"75\" x2=\"640\" y2=\"75\"/><line class=\"grid\" x1=\"90\" y1=\"105\" x2=\"640\" y2=\"105\"/><line class=\"grid\" x1=\"90\" y1=\"135\" x2=\"640\" y2=\"135\"/><line class=\"grid\" x1=\"90\" y1=\"165\" x2=\"640\" y2=\"165\"/><line class=\"grid\" x1=\"90\" y1=\"195\" x2=\"640\" y2=\"195\"/><line class=\"grid\" x1=\"90\" y1=\"225\" x2=\"640\" y2=\"225\"/><line class=\"grid\" x1=\"90\" y1=\"255\" x2=\"640\" y2=\"255\"/><line class=\"grid\" x1=\"90\" y1=\"285\" x2=\"640\" y2=\"285\"/><line class=\"grid\" x1=\"90\" y1=\"315\" x2=\"640\" y2=\"315\"/><line class=\"axis\" x1=\"90\" y1=\"285\" x2=\"645\" y2=\"285\"/><line class=\"axis\" x1=\"110\" y1=\"320\" x2=\"110\" y2=\"45\"/><text x=\"650\" y=\"291\" font-size=\"16\">x</text><text x=\"114\" y=\"45\" font-size=\"16\">y</text><text x=\"110\" y=\"307\" font-size=\"14\" text-anchor=\"middle\">0</text><text x=\"210\" y=\"307\" font-size=\"14\" text-anchor=\"middle\">1</text><text x=\"310\" y=\"307\" font-size=\"14\" text-anchor=\"middle\">2</text><text x=\"410\" y=\"307\" font-size=\"14\" text-anchor=\"middle\">3</text><text x=\"510\" y=\"307\" font-size=\"14\" text-anchor=\"middle\">4</text><text x=\"610\" y=\"307\" font-size=\"14\" text-anchor=\"middle\">5</text><path d=\"M110 285 Q160 264 210 225\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"3\"/><circle cx=\"210\" cy=\"225\" r=\"6\" fill=\"white\" stroke=\"#64748b\" stroke-width=\"3\"/><text x=\"125\" y=\"250\" font-size=\"14\">y=2x², 0≤x&lt;1</text><path d=\"M210 225 L410 75\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"4\"/><circle cx=\"210\" cy=\"225\" r=\"6\" fill=\"#7c3aed\"/><circle cx=\"410\" cy=\"75\" r=\"6\" fill=\"white\" stroke=\"#7c3aed\" stroke-width=\"3\"/><text x=\"285\" y=\"120\" font-size=\"14\" fill=\"#7c3aed\">y=3x−1, 1≤x&lt;3</text><circle cx=\"410\" cy=\"225\" r=\"6\" fill=\"#f59e0b\"/><text x=\"420\" y=\"220\" font-size=\"13\" fill=\"#b45309\">(3,2) filled</text><path d=\"M410 225 L610 225\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"4\"/><circle cx=\"410\" cy=\"75\" r=\"6\" fill=\"white\" stroke=\"#7c3aed\" stroke-width=\"3\"/><circle cx=\"410\" cy=\"225\" r=\"6\" fill=\"#10b981\"/><text x=\"470\" y=\"210\" font-size=\"14\" fill=\"#047857\">y=2, 3≤x≤5</text></svg>"
                   }
                 }
               ],
-              "xp": 3
+              "xp": 1,
+              "timeLimit": 60,
+              "manual": true,
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Blank axes for the piecewise graph\" width=\"700\" height=\"360\" viewBox=\"0 0 700 360\" style=\"display:block;width:50%;max-width:680px;height:auto;margin:1rem auto;overflow:visible\" preserveAspectRatio=\"xMidYMid meet\"><style>text{font-family:Arial,Helvetica,sans-serif;fill:#334155}.axis{stroke:#334155;stroke-width:2}.grid{stroke:#dbe3ed;stroke-width:1}.light{fill:#eef4ff}.given{stroke:#334155;stroke-width:3;fill:none}.used{stroke:#7c3aed;stroke-width:5;fill:none}.hl{fill:#fef3c7;stroke:#f59e0b;stroke-width:3}.point{fill:#7c3aed;stroke:white;stroke-width:2}</style><line class=\"grid\" x1=\"110\" y1=\"55\" x2=\"110\" y2=\"315\"/><line class=\"grid\" x1=\"160\" y1=\"55\" x2=\"160\" y2=\"315\"/><line class=\"grid\" x1=\"210\" y1=\"55\" x2=\"210\" y2=\"315\"/><line class=\"grid\" x1=\"260\" y1=\"55\" x2=\"260\" y2=\"315\"/><line class=\"grid\" x1=\"310\" y1=\"55\" x2=\"310\" y2=\"315\"/><line class=\"grid\" x1=\"360\" y1=\"55\" x2=\"360\" y2=\"315\"/><line class=\"grid\" x1=\"410\" y1=\"55\" x2=\"410\" y2=\"315\"/><line class=\"grid\" x1=\"460\" y1=\"55\" x2=\"460\" y2=\"315\"/><line class=\"grid\" x1=\"510\" y1=\"55\" x2=\"510\" y2=\"315\"/><line class=\"grid\" x1=\"560\" y1=\"55\" x2=\"560\" y2=\"315\"/><line class=\"grid\" x1=\"610\" y1=\"55\" x2=\"610\" y2=\"315\"/><line class=\"grid\" x1=\"90\" y1=\"75\" x2=\"640\" y2=\"75\"/><line class=\"grid\" x1=\"90\" y1=\"105\" x2=\"640\" y2=\"105\"/><line class=\"grid\" x1=\"90\" y1=\"135\" x2=\"640\" y2=\"135\"/><line class=\"grid\" x1=\"90\" y1=\"165\" x2=\"640\" y2=\"165\"/><line class=\"grid\" x1=\"90\" y1=\"195\" x2=\"640\" y2=\"195\"/><line class=\"grid\" x1=\"90\" y1=\"225\" x2=\"640\" y2=\"225\"/><line class=\"grid\" x1=\"90\" y1=\"255\" x2=\"640\" y2=\"255\"/><line class=\"grid\" x1=\"90\" y1=\"285\" x2=\"640\" y2=\"285\"/><line class=\"grid\" x1=\"90\" y1=\"315\" x2=\"640\" y2=\"315\"/><line class=\"axis\" x1=\"90\" y1=\"285\" x2=\"645\" y2=\"285\"/><line class=\"axis\" x1=\"110\" y1=\"320\" x2=\"110\" y2=\"45\"/><text x=\"650\" y=\"291\" font-size=\"16\">x</text><text x=\"114\" y=\"45\" font-size=\"16\">y</text><text x=\"110\" y=\"307\" font-size=\"14\" text-anchor=\"middle\">0</text><text x=\"210\" y=\"307\" font-size=\"14\" text-anchor=\"middle\">1</text><text x=\"310\" y=\"307\" font-size=\"14\" text-anchor=\"middle\">2</text><text x=\"410\" y=\"307\" font-size=\"14\" text-anchor=\"middle\">3</text><text x=\"510\" y=\"307\" font-size=\"14\" text-anchor=\"middle\">4</text><text x=\"610\" y=\"307\" font-size=\"14\" text-anchor=\"middle\">5</text></svg>"
+              },
+              "meta": {
+                "course": "Advanced",
+                "source": "Killara High School Year 11 Preliminary Examination Mathematics Advanced",
+                "sourcePage": 21,
+                "sourceQuestion": 24
+              }
             }
-          ]
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "course": "Advanced",
+            "source": "Killara High School Year 11 Preliminary Examination Mathematics Advanced",
+            "sourcePage": 21,
+            "sourceQuestion": 24
+          }
         }
       ]
     },

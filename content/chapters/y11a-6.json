@@ -17340,7 +17340,14 @@
               "work": "\\\\(\\sin\\\\theta = \\\\dfrac{5}{13}\\\\)"
             }
           ],
-          "xp": 1
+          "xp": 1,
+          "timeLimit": 60,
+          "meta": {
+            "course": "Advanced",
+            "source": "Killara High School Year 11 Preliminary Examination Mathematics Advanced",
+            "sourcePage": 10,
+            "sourceQuestion": 2
+          }
         },
         {
           "timeLimit": 60,

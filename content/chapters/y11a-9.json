@@ -715,8 +715,8 @@
           "hint": "Point \\(a\\) lies deep below the x-axis (a large negative function value), \\(b\\) is a stationary point so \\(f'(b)=0\\), and \\(c\\) is on a steep rising part of the curve.",
           "steps": [
             {
-              "explain": "Let's evaluate \\\\(f(a)\\\\). Point \\(a\\) is located far below the x-axis, which means its function value (y-coordinate) is a large negative number.",
-              "work": "\\\\(f(a) < 0\\\\) (specifically, it is very negative)",
+              "explain": "Let's evaluate \\(f(a)\\). Point \\(a\\) is located far below the x-axis, which means its function value (y-coordinate) is a large negative number.",
+              "work": "\\(f(a) < 0\\) (specifically, it is very negative)",
               "figure": {
                 "jsxGraph": {
                   "attributes": {
@@ -734,8 +734,8 @@
               }
             },
             {
-              "explain": "Next, let's look at point \\(b\\). It is a local minimum (a stationary point). The tangent line here is perfectly horizontal, meaning its gradient \\\\(f'(b)\\\\) is exactly 0.",
-              "work": "\\\\(f'(b) = 0\\\\)",
+              "explain": "Next, let's look at point \\(b\\). It is a local minimum (a stationary point). The tangent line here is perfectly horizontal, meaning its gradient \\(f'(b)\\) is exactly 0.",
+              "work": "\\(f'(b) = 0\\)",
               "figure": {
                 "jsxGraph": {
                   "attributes": {
@@ -753,8 +753,8 @@
               }
             },
             {
-              "explain": "Finally, consider point \\(c\\). The curve at \\(c\\) is rising steeply from left to right. Therefore, the gradient of the tangent at \\(c\\), \\\\(f'(c)\\\\), is a large positive number.",
-              "work": "\\\\(f'(c) > 0\\\\) (large positive)",
+              "explain": "Finally, consider point \\(c\\). The curve at \\(c\\) is rising steeply from left to right. Therefore, the gradient of the tangent at \\(c\\), \\(f'(c)\\), is a large positive number.",
+              "work": "\\(f'(c) > 0\\) (large positive)",
               "figure": {
                 "jsxGraph": {
                   "attributes": {
@@ -773,102 +773,54 @@
             },
             {
               "explain": "Now we can order these three values from smallest to largest: (1) \\(f(a)\\) is a large negative number. (2) \\(f'(b)\\) is exactly 0. (3) \\(f'(c)\\) is a large positive number.",
-              "work": "\\\\(f(a) < f'(b) < f'(c)\\\\)"
+              "work": "\\(f(a) < f'(b) < f'(c)\\)"
             }
           ],
-          "xp": 3
+          "xp": 1,
+          "timeLimit": 60,
+          "meta": {
+            "course": "Advanced",
+            "source": "Killara High School Year 11 Preliminary Examination Mathematics Advanced",
+            "sourcePage": 10,
+            "sourceQuestion": 9
+          }
         },
         {
           "id": "killara2026-q16",
-          "type": "mc",
+          "type": "review",
           "difficulty": "medium",
-          "stem": "The graph below shows a function \\(f(x)\\) with a horizontal asymptote at \\(y=a\\). As \\(x\\to\\infty\\), what must be true about \\(f'(x)\\)?",
+          "stem": "The graph below shows the function \\(f(x)\\). \\(f(x)\\) has a horizontal asymptote at \\(y=a\\).<br><br>Sketch the derivative function on the same set of axes.",
           "figure": {
-            "svg": "fig:12869f9380"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Function with horizontal asymptote for Question 16\" width=\"700\" height=\"360\" viewBox=\"0 0 700 360\" style=\"display:block;width:50%;max-width:680px;height:auto;margin:1rem auto;overflow:visible\" preserveAspectRatio=\"xMidYMid meet\"><style>text{font-family:Arial,Helvetica,sans-serif;fill:#334155}.axis{stroke:#334155;stroke-width:2}.grid{stroke:#dbe3ed;stroke-width:1}.light{fill:#eef4ff}.given{stroke:#334155;stroke-width:3;fill:none}.used{stroke:#7c3aed;stroke-width:5;fill:none}.hl{fill:#fef3c7;stroke:#f59e0b;stroke-width:3}.point{fill:#7c3aed;stroke:white;stroke-width:2}</style><line class=\"axis\" x1=\"55\" y1=\"245\" x2=\"650\" y2=\"245\"/><line class=\"axis\" x1=\"355\" y1=\"330\" x2=\"355\" y2=\"35\"/><line x1=\"75\" y1=\"125\" x2=\"635\" y2=\"125\" stroke=\"#64748b\" stroke-dasharray=\"8 6\" stroke-width=\"2\"/><text x=\"335\" y=\"115\" font-size=\"18\">a</text><text x=\"655\" y=\"250\" font-size=\"17\">x</text><text x=\"360\" y=\"37\" font-size=\"17\">y</text><path d=\"M75 128 C180 130 245 145 300 210 C330 260 355 270 385 230 C430 170 490 137 635 126\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><circle cx=\"355\" cy=\"255\" r=\"6\" fill=\"#334155\"/><text x=\"369\" y=\"273\" font-size=\"14\">local minimum</text></svg>"
           },
-          "options": [
-            "&#8203;\\(f'(x)\\to a\\)",
-            "&#8203;\\(f'(x)\\to 0\\)",
-            "&#8203;\\(f'(x)\\to \\infty\\)",
-            "&#8203;\\(f'(x)\\) is undefined"
-          ],
-          "answer": 1,
-          "hint": "A horizontal asymptote means the curve flattens out and stops rising or falling as \\(x\\) gets large.",
+          "answer": "The original function is decreasing before its local minimum and increasing after it. Therefore f′(x)<0 to the left of the minimum, f′(x)=0 at the minimum, and f′(x)>0 to the right. Since the original curve flattens toward its horizontal asymptote, f′(x) approaches 0 at both ends.",
+          "hint": "A rising function has positive derivative and a falling function has negative derivative. The derivative is zero at a horizontal tangent; use the horizontal asymptote to see what happens to the derivative at both ends.",
           "steps": [
             {
-              "explain": "As \\(x\\to\\infty\\), \\(f(x)\\) approaches the constant value \\(a\\) and the curve becomes flatter and flatter.",
-              "work": "\\(f(x)\\to a\\)"
+              "explain": "Read the slope of the original curve from left to right. Before the lowest point, the curve goes down as x increases, so its tangent gradients are negative.",
+              "work": "Left of the minimum: f′(x)<0"
             },
             {
-              "explain": "The gradient of a curve that is flattening out towards a constant height must itself approach zero.",
-              "work": "\\(f'(x)\\to 0\\)"
+              "explain": "At the turning point the tangent is horizontal. Mark the derivative as zero at the x-coordinate of this minimum.",
+              "work": "At the minimum: f′(x)=0"
+            },
+            {
+              "explain": "After the minimum the original curve rises, so the derivative is positive. Far to the right and left the curve becomes almost horizontal, so sketch f′ approaching 0. The orange curve below shows these sign and flattening features.",
+              "work": "Right of the minimum: f′(x)>0;   as x→±∞, f′(x)→0",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Original function and highlighted derivative sketch\" width=\"700\" height=\"360\" viewBox=\"0 0 700 360\" style=\"display:block;width:50%;max-width:680px;height:auto;margin:1rem auto;overflow:visible\" preserveAspectRatio=\"xMidYMid meet\"><style>text{font-family:Arial,Helvetica,sans-serif;fill:#334155}.axis{stroke:#334155;stroke-width:2}.grid{stroke:#dbe3ed;stroke-width:1}.light{fill:#eef4ff}.given{stroke:#334155;stroke-width:3;fill:none}.used{stroke:#7c3aed;stroke-width:5;fill:none}.hl{fill:#fef3c7;stroke:#f59e0b;stroke-width:3}.point{fill:#7c3aed;stroke:white;stroke-width:2}</style><line class=\"axis\" x1=\"55\" y1=\"245\" x2=\"650\" y2=\"245\"/><line class=\"axis\" x1=\"355\" y1=\"330\" x2=\"355\" y2=\"35\"/><line x1=\"75\" y1=\"125\" x2=\"635\" y2=\"125\" stroke=\"#64748b\" stroke-dasharray=\"8 6\" stroke-width=\"2\"/><text x=\"335\" y=\"115\" font-size=\"18\">a</text><text x=\"655\" y=\"250\" font-size=\"17\">x</text><text x=\"360\" y=\"37\" font-size=\"17\">y</text><path d=\"M75 128 C180 130 245 145 300 210 C330 260 355 270 385 230 C430 170 490 137 635 126\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><circle cx=\"355\" cy=\"255\" r=\"6\" fill=\"#334155\"/><text x=\"369\" y=\"273\" font-size=\"14\">local minimum</text><path d=\"M75 246 C190 247 245 282 300 307 C328 315 343 278 355 245 C376 195 420 210 470 226 C525 240 580 243 635 244\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"4\"/><text x=\"490\" y=\"286\" font-size=\"14\" fill=\"#b45309\">f′(x)</text></svg>"
+              }
             }
           ],
-          "xp": 2
-        },
-        {
-          "id": "killara2026-q21",
-          "type": "multipart",
-          "difficulty": "medium",
-          "stem": "A car's speed at time \\\\(t\\\\) seconds is \\\\(v(t)=\\\\dfrac{500t}{t^2+100}\\\\) m/s.",
-          "parts": [
-            {
-              "id": "killara2026-q21a",
-              "type": "mc",
-              "stem": "Calculate the average rate of change of the car's speed between \\\\(t=5\\\\) and \\\\(t=10\\\\) seconds.",
-              "options": [
-                "&#8203;\\(1\\ \\text{m/s}^2\\)",
-                "&#8203;\\(5\\ \\text{m/s}^2\\)",
-                "&#8203;\\(0.2\\ \\text{m/s}^2\\)",
-                "&#8203;\\(20\\ \\text{m/s}^2\\)"
-              ],
-              "answer": 0,
-              "hint": "Average rate of change \\(=\\dfrac{v(10)-v(5)}{10-5}\\).",
-              "steps": [
-                {
-                  "explain": "Evaluate \\(v(5)\\).",
-                  "work": "\\(v(5)=\\dfrac{500(5)}{25+100}=\\dfrac{2500}{125}=20\\)"
-                },
-                {
-                  "explain": "Evaluate \\(v(10)\\).",
-                  "work": "\\(v(10)=\\dfrac{500(10)}{100+100}=\\dfrac{5000}{200}=25\\)"
-                },
-                {
-                  "explain": "Divide the change in speed by the change in time.",
-                  "work": "\\(\\dfrac{25-20}{10-5}=\\dfrac{5}{5}=1\\ \\text{m/s}^2\\)"
-                }
-              ],
-              "xp": 2
-            },
-            {
-              "id": "killara2026-q21b",
-              "type": "mc",
-              "stem": "Find the instantaneous rate of change of the car's speed at \\\\(t=5\\\\) seconds.",
-              "options": [
-                "&#8203;\\(1\\ \\text{m/s}^2\\)",
-                "&#8203;\\(20\\ \\text{m/s}^2\\)",
-                "&#8203;\\(\\dfrac{5}{12}\\ \\text{m/s}^2\\)",
-                "&#8203;\\(\\dfrac{12}{5}\\ \\text{m/s}^2\\)"
-              ],
-              "answer": 3,
-              "hint": "Use the quotient rule with \\(u=500t\\), \\(v=t^2+100\\), then evaluate \\(v'(5)\\).",
-              "steps": [
-                {
-                  "explain": "Apply the quotient rule \\(v'(t)=\\dfrac{u'v-uv'}{v^2}\\) with \\(u=500t,\\ u'=500,\\ v=t^2+100,\\ v'=2t\\).",
-                  "work": "\\(v'(t)=\\dfrac{500(t^2+100)-500t(2t)}{(t^2+100)^2}=\\dfrac{500(100-t^2)}{(t^2+100)^2}\\)"
-                },
-                {
-                  "explain": "Substitute \\(t=5\\).",
-                  "work": "\\(v'(5)=\\dfrac{500(100-25)}{(125)^2}=\\dfrac{37500}{15625}\\)"
-                },
-                {
-                  "explain": "Simplify the fraction.",
-                  "work": "\\(v'(5)=\\dfrac{12}{5}\\ \\text{m/s}^2\\)"
-                }
-              ],
-              "xp": 2
-            }
-          ]
+          "xp": 1,
+          "timeLimit": 60,
+          "manual": true,
+          "meta": {
+            "course": "Advanced",
+            "source": "Killara High School Year 11 Preliminary Examination Mathematics Advanced",
+            "sourcePage": 14,
+            "sourceQuestion": 16
+          }
         },
         {
           "timeLimit": 60,
@@ -1438,6 +1390,41 @@
               "note": "The particle changes direction only when velocity changes sign. Touching \\(v=0\\) and returning to the same side does not change direction."
             }
           ]
+        },
+        {
+          "id": "killara2026-q21a",
+          "type": "mc",
+          "stem": "A car travels along a straight stretch of road. Its speed at time \\(t\\) seconds is given by<br><br>\\(v(t)=\\dfrac{500t}{t^2+100}\\)<br><br>where \\(v(t)\\) is measured in meters per second.<br><br>Calculate the average rate of change of the car’s speed between \\(t=5\\) seconds and \\(t=10\\) seconds.",
+          "options": [
+            "&#8203;\\(1\\ \\text{m/s}^2\\)",
+            "&#8203;\\(5\\ \\text{m/s}^2\\)",
+            "&#8203;\\(0.2\\ \\text{m/s}^2\\)",
+            "&#8203;\\(20\\ \\text{m/s}^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Average rate of change \\(=\\dfrac{v(10)-v(5)}{10-5}\\).",
+          "steps": [
+            {
+              "explain": "Evaluate \\(v(5)\\).",
+              "work": "\\(v(5)=\\dfrac{500(5)}{25+100}=\\dfrac{2500}{125}=20\\)"
+            },
+            {
+              "explain": "Evaluate \\(v(10)\\).",
+              "work": "\\(v(10)=\\dfrac{500(10)}{100+100}=\\dfrac{5000}{200}=25\\)"
+            },
+            {
+              "explain": "Divide the change in speed by the change in time.",
+              "work": "\\(\\dfrac{25-20}{10-5}=\\dfrac{5}{5}=1\\ \\text{m/s}^2\\)"
+            }
+          ],
+          "xp": 1,
+          "timeLimit": 60,
+          "meta": {
+            "course": "Advanced",
+            "source": "Killara High School Year 11 Preliminary Examination Mathematics Advanced",
+            "sourcePage": 18,
+            "sourceQuestion": 21
+          }
         }
       ]
     },
@@ -1519,7 +1506,14 @@
               "work": "\\(f'(x)=2x\\)"
             }
           ],
-          "xp": 2
+          "xp": 1,
+          "timeLimit": 60,
+          "meta": {
+            "course": "Advanced",
+            "source": "Killara High School Year 11 Preliminary Examination Mathematics Advanced",
+            "sourcePage": 12,
+            "sourceQuestion": 14
+          }
         },
         {
           "id": "y11a-9-excel-derivativegraph-q2",
@@ -1879,12 +1873,12 @@
           "id": "killara2026-q26",
           "type": "multipart",
           "difficulty": "hard",
-          "stem": "A delivery robot's displacement is \\\\(x(t)=t(t-4)^2\\\\) metres for \\\\(0\\\\le t\\\\le 6\\\\).",
+          "stem": "A delivery robot travels along a straight path in a warehouse. Its displacement, \\(x\\) metres, from the loading station after \\(t\\) seconds is modelled by<br><br>\\(x(t)=t(t-4)^2\\).",
           "parts": [
             {
               "id": "killara2026-q26a",
               "type": "mc",
-              "stem": "Determine the velocity function \\\\(v(t)\\\\) of the robot.",
+              "stem": "Determine the velocity function, \\(v(t)\\), of the robot.",
               "options": [
                 "&#8203;\\(v(t)=3t^2-8t+16\\)",
                 "&#8203;\\(v(t)=3t^2-16t+16\\)",
@@ -1895,20 +1889,27 @@
               "hint": "First expand \\(x(t)=t(t-4)^2\\) into a cubic in \\(t\\), then differentiate term by term.",
               "steps": [
                 {
-                  "explain": "Expand \\\\((t-4)^2\\\\) then multiply by \\\\(t\\\\) to get the position in polynomial form.",
-                  "work": "\\\\(x(t)=t(t^2-8t+16)=t^3-8t^2+16t\\\\)"
+                  "explain": "Expand \\((t-4)^2\\) then multiply by \\(t\\) to get the position in polynomial form.",
+                  "work": "\\(x(t)=t(t^2-8t+16)=t^3-8t^2+16t\\)"
                 },
                 {
                   "explain": "Differentiate term by term to find the velocity.",
-                  "work": "\\\\(v(t)=x'(t)=3t^2-16t+16\\\\)\\n<svg viewBox=\"0 0 400 300\" style=\"background:#f8fafc; border-radius:8px; max-width:400px; margin:auto; display:block; overflow:hidden;\">\\n<line x1=\"20\" y1=\"225\" x2=\"380\" y2=\"225\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><line x1=\"50\" y1=\"280\" x2=\"50\" y2=\"20\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><line x1=\"100\" y1=\"222\" x2=\"100\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"100\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">1</text><line x1=\"150\" y1=\"222\" x2=\"150\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"150\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">2</text><line x1=\"200\" y1=\"222\" x2=\"200\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"200\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">3</text><line x1=\"250\" y1=\"222\" x2=\"250\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"250\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">4</text><line x1=\"300\" y1=\"222\" x2=\"300\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"300\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">5</text><line x1=\"350\" y1=\"222\" x2=\"350\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"350\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">6</text><line x1=\"47\" y1=\"262.5\" x2=\"53\" y2=\"262.5\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"266.5\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">-5</text><line x1=\"47\" y1=\"187.5\" x2=\"53\" y2=\"187.5\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"191.5\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">5</text><line x1=\"47\" y1=\"150\" x2=\"53\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"154\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">10</text><line x1=\"47\" y1=\"112.5\" x2=\"53\" y2=\"112.5\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"116.5\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">15</text><line x1=\"47\" y1=\"75\" x2=\"53\" y2=\"75\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"79\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">20</text><line x1=\"47\" y1=\"37.5\" x2=\"53\" y2=\"37.5\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"41.5\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">25</text><text x=\"390\" y=\"229\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"12\" font-style=\"italic\">t</text><polyline points=\"25.0,300.9 30.0,283.1 35.0,266.6 40.0,251.5 45.0,237.6 50.0,225.0 55.0,213.6 60.0,203.3 65.0,194.2 70.0,186.1 75.0,179.1 80.0,173.0 85.0,167.8 90.0,163.6 95.0,160.1 100.0,157.5 105.0,155.6 110.0,154.4 115.0,153.9 120.0,154.0 125.0,154.7 130.0,155.9 135.0,157.6 140.0,159.7 145.0,162.2 150.0,165.0 155.0,168.1 160.0,171.5 165.0,175.1 170.0,178.9 175.0,182.8 180.0,186.8 185.0,190.8 190.0,194.8 195.0,198.7 200.0,202.5 205.0,206.2 210.0,209.6 215.0,212.9 220.0,215.8 225.0,218.4 230.0,220.7 235.0,222.5 240.0,223.9 245.0,224.7 250.0,225.0 255.0,224.7 260.0,223.7 265.0,222.1 270.0,219.7 275.0,216.6 280.0,212.6 285.0,207.7 290.0,202.0 295.0,195.2 300.0,187.5 305.0,178.7 310.0,168.8 315.0,157.8 320.0,145.6 325.0,132.2 330.0,117.5 335.0,101.5 340.0,84.1 345.0,65.3 350.0,45.0 355.0,23.2 360.0,-0.1 365.0,-25.0\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"3\"  /><polyline points=\"25.0,39.4 30.0,53.4 35.0,67.0 40.0,80.1 45.0,92.8 50.0,105.0 55.0,116.8 60.0,128.1 65.0,139.0 70.0,149.4 75.0,159.4 80.0,168.9 85.0,178.0 90.0,186.6 95.0,194.8 100.0,202.5 105.0,209.8 110.0,216.6 115.0,223.0 120.0,228.9 125.0,234.4 130.0,239.4 135.0,244.0 140.0,248.1 145.0,251.8 150.0,255.0 155.0,257.8 160.0,260.1 165.0,262.0 170.0,263.4 175.0,264.4 180.0,264.9 185.0,265.0 190.0,264.6 195.0,263.8 200.0,262.5 205.0,260.8 210.0,258.6 215.0,256.0 220.0,252.9 225.0,249.4 230.0,245.4 235.0,241.0 240.0,236.1 245.0,230.8 250.0,225.0 255.0,218.8 260.0,212.1 265.0,205.0 270.0,197.4 275.0,189.4 280.0,180.9 285.0,172.0 290.0,162.6 295.0,152.8 300.0,142.5 305.0,131.8 310.0,120.6 315.0,109.0 320.0,96.9 325.0,84.4 330.0,71.4 335.0,58.0 340.0,44.1 345.0,29.8 350.0,15.0 355.0,-0.2 360.0,-15.9 365.0,-32.0\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-dasharray=\"6,4\" /><text x=\"250\" y=\"40\" fill=\"#3b82f6\" font-family=\"sans-serif\" font-weight=\"bold\">x(t) - Displacement</text><text x=\"250\" y=\"60\" fill=\"#ef4444\" font-family=\"sans-serif\" font-weight=\"bold\" stroke-dasharray=\"2\">v(t) - Velocity</text>\\n</svg>"
+                  "work": "\\(v(t)=x'(t)=3t^2-16t+16\\)\\n<svg viewBox=\"0 0 400 300\" style=\"background:#f8fafc; border-radius:8px; max-width:400px; margin:auto; display:block; overflow:hidden;\">\\n<line x1=\"20\" y1=\"225\" x2=\"380\" y2=\"225\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><line x1=\"50\" y1=\"280\" x2=\"50\" y2=\"20\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><line x1=\"100\" y1=\"222\" x2=\"100\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"100\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">1</text><line x1=\"150\" y1=\"222\" x2=\"150\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"150\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">2</text><line x1=\"200\" y1=\"222\" x2=\"200\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"200\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">3</text><line x1=\"250\" y1=\"222\" x2=\"250\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"250\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">4</text><line x1=\"300\" y1=\"222\" x2=\"300\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"300\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">5</text><line x1=\"350\" y1=\"222\" x2=\"350\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"350\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">6</text><line x1=\"47\" y1=\"262.5\" x2=\"53\" y2=\"262.5\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"266.5\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">-5</text><line x1=\"47\" y1=\"187.5\" x2=\"53\" y2=\"187.5\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"191.5\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">5</text><line x1=\"47\" y1=\"150\" x2=\"53\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"154\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">10</text><line x1=\"47\" y1=\"112.5\" x2=\"53\" y2=\"112.5\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"116.5\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">15</text><line x1=\"47\" y1=\"75\" x2=\"53\" y2=\"75\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"79\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">20</text><line x1=\"47\" y1=\"37.5\" x2=\"53\" y2=\"37.5\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"41.5\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">25</text><text x=\"390\" y=\"229\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"12\" font-style=\"italic\">t</text><polyline points=\"25.0,300.9 30.0,283.1 35.0,266.6 40.0,251.5 45.0,237.6 50.0,225.0 55.0,213.6 60.0,203.3 65.0,194.2 70.0,186.1 75.0,179.1 80.0,173.0 85.0,167.8 90.0,163.6 95.0,160.1 100.0,157.5 105.0,155.6 110.0,154.4 115.0,153.9 120.0,154.0 125.0,154.7 130.0,155.9 135.0,157.6 140.0,159.7 145.0,162.2 150.0,165.0 155.0,168.1 160.0,171.5 165.0,175.1 170.0,178.9 175.0,182.8 180.0,186.8 185.0,190.8 190.0,194.8 195.0,198.7 200.0,202.5 205.0,206.2 210.0,209.6 215.0,212.9 220.0,215.8 225.0,218.4 230.0,220.7 235.0,222.5 240.0,223.9 245.0,224.7 250.0,225.0 255.0,224.7 260.0,223.7 265.0,222.1 270.0,219.7 275.0,216.6 280.0,212.6 285.0,207.7 290.0,202.0 295.0,195.2 300.0,187.5 305.0,178.7 310.0,168.8 315.0,157.8 320.0,145.6 325.0,132.2 330.0,117.5 335.0,101.5 340.0,84.1 345.0,65.3 350.0,45.0 355.0,23.2 360.0,-0.1 365.0,-25.0\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"3\"  /><polyline points=\"25.0,39.4 30.0,53.4 35.0,67.0 40.0,80.1 45.0,92.8 50.0,105.0 55.0,116.8 60.0,128.1 65.0,139.0 70.0,149.4 75.0,159.4 80.0,168.9 85.0,178.0 90.0,186.6 95.0,194.8 100.0,202.5 105.0,209.8 110.0,216.6 115.0,223.0 120.0,228.9 125.0,234.4 130.0,239.4 135.0,244.0 140.0,248.1 145.0,251.8 150.0,255.0 155.0,257.8 160.0,260.1 165.0,262.0 170.0,263.4 175.0,264.4 180.0,264.9 185.0,265.0 190.0,264.6 195.0,263.8 200.0,262.5 205.0,260.8 210.0,258.6 215.0,256.0 220.0,252.9 225.0,249.4 230.0,245.4 235.0,241.0 240.0,236.1 245.0,230.8 250.0,225.0 255.0,218.8 260.0,212.1 265.0,205.0 270.0,197.4 275.0,189.4 280.0,180.9 285.0,172.0 290.0,162.6 295.0,152.8 300.0,142.5 305.0,131.8 310.0,120.6 315.0,109.0 320.0,96.9 325.0,84.4 330.0,71.4 335.0,58.0 340.0,44.1 345.0,29.8 350.0,15.0 355.0,-0.2 360.0,-15.9 365.0,-32.0\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-dasharray=\"6,4\" /><text x=\"250\" y=\"40\" fill=\"#3b82f6\" font-family=\"sans-serif\" font-weight=\"bold\">x(t) - Displacement</text><text x=\"250\" y=\"60\" fill=\"#ef4444\" font-family=\"sans-serif\" font-weight=\"bold\" stroke-dasharray=\"2\">v(t) - Velocity</text>\\n</svg>"
                 }
               ],
-              "xp": 2
+              "xp": 1,
+              "timeLimit": 60,
+              "meta": {
+                "course": "Advanced",
+                "source": "Killara High School Year 11 Preliminary Examination Mathematics Advanced",
+                "sourcePage": 23,
+                "sourceQuestion": 26
+              }
             },
             {
               "id": "killara2026-q26b",
               "type": "mc",
-              "stem": "Using \\\\(v(t)=3t^2-16t+16\\\\), find the times at which the robot is stationary.",
+              "stem": "Find the times at which the robot is stationary for \\(0\\le t\\le6\\).",
               "options": [
                 "&#8203;\\(t=4\\ \\text{only}\\)",
                 "&#8203;\\(t=8\\ \\text{or}\\ t=\\dfrac{8}{3}\\)",
@@ -1919,15 +1920,22 @@
               "hint": "The robot is stationary when \\(v(t)=0\\). Solve the quadratic \\(3t^2-16t+16=0\\).",
               "steps": [
                 {
-                  "explain": "The robot is stationary when velocity is zero. Set \\\\(v(t)=0\\\\) and solve using the quadratic formula (or factoring).",
-                  "work": "\\\\(t=\\\\dfrac{16\\\\pm\\\\sqrt{256-192}}{6}=\\\\dfrac{16\\\\pm8}{6}\\\\)"
+                  "explain": "The robot is stationary when velocity is zero. Set \\(v(t)=0\\) and solve using the quadratic formula (or factoring).",
+                  "work": "\\(t=\\\\dfrac{16\\\\pm\\\\sqrt{256-192}}{6}=\\\\dfrac{16\\\\pm8}{6}\\)"
                 },
                 {
                   "explain": "Evaluate both solutions.",
-                  "work": "\\\\(t=4\\\\ \\\\text{or}\\\\ t=\\\\dfrac{4}{3}\\\\)\\n<svg viewBox=\"0 0 400 300\" style=\"background:#f8fafc; border-radius:8px; max-width:400px; margin:auto; display:block; overflow:hidden;\">\\n<line x1=\"20\" y1=\"225\" x2=\"380\" y2=\"225\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><line x1=\"50\" y1=\"280\" x2=\"50\" y2=\"20\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><line x1=\"100\" y1=\"222\" x2=\"100\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"100\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">1</text><line x1=\"150\" y1=\"222\" x2=\"150\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"150\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">2</text><line x1=\"200\" y1=\"222\" x2=\"200\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"200\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">3</text><line x1=\"250\" y1=\"222\" x2=\"250\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"250\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">4</text><line x1=\"300\" y1=\"222\" x2=\"300\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"300\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">5</text><line x1=\"350\" y1=\"222\" x2=\"350\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"350\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">6</text><line x1=\"47\" y1=\"262.5\" x2=\"53\" y2=\"262.5\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"266.5\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">-5</text><line x1=\"47\" y1=\"187.5\" x2=\"53\" y2=\"187.5\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"191.5\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">5</text><line x1=\"47\" y1=\"150\" x2=\"53\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"154\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">10</text><line x1=\"47\" y1=\"112.5\" x2=\"53\" y2=\"112.5\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"116.5\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">15</text><line x1=\"47\" y1=\"75\" x2=\"53\" y2=\"75\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"79\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">20</text><line x1=\"47\" y1=\"37.5\" x2=\"53\" y2=\"37.5\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"41.5\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">25</text><text x=\"390\" y=\"229\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"12\" font-style=\"italic\">t</text><polyline points=\"25.0,39.4 30.0,53.4 35.0,67.0 40.0,80.1 45.0,92.8 50.0,105.0 55.0,116.8 60.0,128.1 65.0,139.0 70.0,149.4 75.0,159.4 80.0,168.9 85.0,178.0 90.0,186.6 95.0,194.8 100.0,202.5 105.0,209.8 110.0,216.6 115.0,223.0 120.0,228.9 125.0,234.4 130.0,239.4 135.0,244.0 140.0,248.1 145.0,251.8 150.0,255.0 155.0,257.8 160.0,260.1 165.0,262.0 170.0,263.4 175.0,264.4 180.0,264.9 185.0,265.0 190.0,264.6 195.0,263.8 200.0,262.5 205.0,260.8 210.0,258.6 215.0,256.0 220.0,252.9 225.0,249.4 230.0,245.4 235.0,241.0 240.0,236.1 245.0,230.8 250.0,225.0 255.0,218.8 260.0,212.1 265.0,205.0 270.0,197.4 275.0,189.4 280.0,180.9 285.0,172.0 290.0,162.6 295.0,152.8 300.0,142.5 305.0,131.8 310.0,120.6 315.0,109.0 320.0,96.9 325.0,84.4 330.0,71.4 335.0,58.0 340.0,44.1 345.0,29.8 350.0,15.0 355.0,-0.2 360.0,-15.9 365.0,-32.0\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"3\"  /><circle cx=\"116.66666666666666\" cy=\"225\" r=\"4\" fill=\"#10b981\" /><text x=\"111.66666666666666\" y=\"215\" fill=\"#10b981\" font-family=\"sans-serif\" font-weight=\"bold\" text-anchor=\"end\">t = 4/3</text><circle cx=\"250\" cy=\"225\" r=\"4\" fill=\"#10b981\" /><text x=\"255\" y=\"215\" fill=\"#10b981\" font-family=\"sans-serif\" font-weight=\"bold\" text-anchor=\"start\">t = 4</text><text x=\"150\" y=\"75\" fill=\"#1e293b\" font-family=\"sans-serif\" font-weight=\"bold\" font-size=\"14\">Stationary: v(t)=0</text>\\n</svg>"
+                  "work": "\\(t=4\\\\ \\\\text{or}\\\\ t=\\\\dfrac{4}{3}\\)\\n<svg viewBox=\"0 0 400 300\" style=\"background:#f8fafc; border-radius:8px; max-width:400px; margin:auto; display:block; overflow:hidden;\">\\n<line x1=\"20\" y1=\"225\" x2=\"380\" y2=\"225\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><line x1=\"50\" y1=\"280\" x2=\"50\" y2=\"20\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><line x1=\"100\" y1=\"222\" x2=\"100\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"100\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">1</text><line x1=\"150\" y1=\"222\" x2=\"150\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"150\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">2</text><line x1=\"200\" y1=\"222\" x2=\"200\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"200\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">3</text><line x1=\"250\" y1=\"222\" x2=\"250\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"250\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">4</text><line x1=\"300\" y1=\"222\" x2=\"300\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"300\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">5</text><line x1=\"350\" y1=\"222\" x2=\"350\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"350\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">6</text><line x1=\"47\" y1=\"262.5\" x2=\"53\" y2=\"262.5\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"266.5\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">-5</text><line x1=\"47\" y1=\"187.5\" x2=\"53\" y2=\"187.5\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"191.5\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">5</text><line x1=\"47\" y1=\"150\" x2=\"53\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"154\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">10</text><line x1=\"47\" y1=\"112.5\" x2=\"53\" y2=\"112.5\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"116.5\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">15</text><line x1=\"47\" y1=\"75\" x2=\"53\" y2=\"75\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"79\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">20</text><line x1=\"47\" y1=\"37.5\" x2=\"53\" y2=\"37.5\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"41.5\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">25</text><text x=\"390\" y=\"229\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"12\" font-style=\"italic\">t</text><polyline points=\"25.0,39.4 30.0,53.4 35.0,67.0 40.0,80.1 45.0,92.8 50.0,105.0 55.0,116.8 60.0,128.1 65.0,139.0 70.0,149.4 75.0,159.4 80.0,168.9 85.0,178.0 90.0,186.6 95.0,194.8 100.0,202.5 105.0,209.8 110.0,216.6 115.0,223.0 120.0,228.9 125.0,234.4 130.0,239.4 135.0,244.0 140.0,248.1 145.0,251.8 150.0,255.0 155.0,257.8 160.0,260.1 165.0,262.0 170.0,263.4 175.0,264.4 180.0,264.9 185.0,265.0 190.0,264.6 195.0,263.8 200.0,262.5 205.0,260.8 210.0,258.6 215.0,256.0 220.0,252.9 225.0,249.4 230.0,245.4 235.0,241.0 240.0,236.1 245.0,230.8 250.0,225.0 255.0,218.8 260.0,212.1 265.0,205.0 270.0,197.4 275.0,189.4 280.0,180.9 285.0,172.0 290.0,162.6 295.0,152.8 300.0,142.5 305.0,131.8 310.0,120.6 315.0,109.0 320.0,96.9 325.0,84.4 330.0,71.4 335.0,58.0 340.0,44.1 345.0,29.8 350.0,15.0 355.0,-0.2 360.0,-15.9 365.0,-32.0\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"3\"  /><circle cx=\"116.66666666666666\" cy=\"225\" r=\"4\" fill=\"#10b981\" /><text x=\"111.66666666666666\" y=\"215\" fill=\"#10b981\" font-family=\"sans-serif\" font-weight=\"bold\" text-anchor=\"end\">t = 4/3</text><circle cx=\"250\" cy=\"225\" r=\"4\" fill=\"#10b981\" /><text x=\"255\" y=\"215\" fill=\"#10b981\" font-family=\"sans-serif\" font-weight=\"bold\" text-anchor=\"start\">t = 4</text><text x=\"150\" y=\"75\" fill=\"#1e293b\" font-family=\"sans-serif\" font-weight=\"bold\" font-size=\"14\">Stationary: v(t)=0</text>\\n</svg>"
                 }
               ],
-              "xp": 2
+              "xp": 1,
+              "timeLimit": 60,
+              "meta": {
+                "course": "Advanced",
+                "source": "Killara High School Year 11 Preliminary Examination Mathematics Advanced",
+                "sourcePage": 23,
+                "sourceQuestion": 26
+              }
             },
             {
               "id": "killara2026-q26c",
@@ -1943,24 +1951,31 @@
               "hint": "Find \\(a(t)=v'(t)\\), set it to 0 to find the time, then substitute that time back into \\(v(t)\\).",
               "steps": [
                 {
-                  "explain": "Differentiate \\\\(v(t)\\\\) to get the acceleration function.",
-                  "work": "\\\\(a(t)=v'(t)=6t-16\\\\)"
+                  "explain": "Differentiate \\(v(t)\\) to get the acceleration function.",
+                  "work": "\\(a(t)=v'(t)=6t-16\\)"
                 },
                 {
-                  "explain": "Set \\\\(a(t)=0\\\\) and solve for \\\\(t\\\\).",
-                  "work": "\\\\(6t-16=0 \\\\Rightarrow t=\\\\dfrac{8}{3}\\\\)"
+                  "explain": "Set \\(a(t)=0\\) and solve for \\(t\\).",
+                  "work": "\\(6t-16=0 \\\\Rightarrow t=\\\\dfrac{8}{3}\\)"
                 },
                 {
-                  "explain": "Substitute \\\\(t=\\\\dfrac{8}{3}\\\\) back into the velocity function \\\\(v(t)\\\\).",
-                  "work": "\\\\(v\\\\!\\\\left(\\\\dfrac83\\\\right)=3\\\\left(\\\\dfrac83\\\\right)^2-16\\\\left(\\\\dfrac83\\\\right)+16=-\\\\dfrac{16}{3}\\\\ \\\\text{m/s}\\\\)\\n<svg viewBox=\"0 0 400 300\" style=\"background:#f8fafc; border-radius:8px; max-width:400px; margin:auto; display:block; overflow:hidden;\">\\n<line x1=\"20\" y1=\"225\" x2=\"380\" y2=\"225\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><line x1=\"50\" y1=\"280\" x2=\"50\" y2=\"20\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><line x1=\"100\" y1=\"222\" x2=\"100\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"100\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">1</text><line x1=\"150\" y1=\"222\" x2=\"150\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"150\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">2</text><line x1=\"200\" y1=\"222\" x2=\"200\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"200\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">3</text><line x1=\"250\" y1=\"222\" x2=\"250\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"250\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">4</text><line x1=\"300\" y1=\"222\" x2=\"300\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"300\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">5</text><line x1=\"350\" y1=\"222\" x2=\"350\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"350\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">6</text><line x1=\"47\" y1=\"262.5\" x2=\"53\" y2=\"262.5\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"266.5\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">-5</text><line x1=\"47\" y1=\"187.5\" x2=\"53\" y2=\"187.5\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"191.5\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">5</text><line x1=\"47\" y1=\"150\" x2=\"53\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"154\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">10</text><line x1=\"47\" y1=\"112.5\" x2=\"53\" y2=\"112.5\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"116.5\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">15</text><line x1=\"47\" y1=\"75\" x2=\"53\" y2=\"75\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"79\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">20</text><line x1=\"47\" y1=\"37.5\" x2=\"53\" y2=\"37.5\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"41.5\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">25</text><text x=\"390\" y=\"229\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"12\" font-style=\"italic\">t</text><polyline points=\"25.0,39.4 30.0,53.4 35.0,67.0 40.0,80.1 45.0,92.8 50.0,105.0 55.0,116.8 60.0,128.1 65.0,139.0 70.0,149.4 75.0,159.4 80.0,168.9 85.0,178.0 90.0,186.6 95.0,194.8 100.0,202.5 105.0,209.8 110.0,216.6 115.0,223.0 120.0,228.9 125.0,234.4 130.0,239.4 135.0,244.0 140.0,248.1 145.0,251.8 150.0,255.0 155.0,257.8 160.0,260.1 165.0,262.0 170.0,263.4 175.0,264.4 180.0,264.9 185.0,265.0 190.0,264.6 195.0,263.8 200.0,262.5 205.0,260.8 210.0,258.6 215.0,256.0 220.0,252.9 225.0,249.4 230.0,245.4 235.0,241.0 240.0,236.1 245.0,230.8 250.0,225.0 255.0,218.8 260.0,212.1 265.0,205.0 270.0,197.4 275.0,189.4 280.0,180.9 285.0,172.0 290.0,162.6 295.0,152.8 300.0,142.5 305.0,131.8 310.0,120.6 315.0,109.0 320.0,96.9 325.0,84.4 330.0,71.4 335.0,58.0 340.0,44.1 345.0,29.8 350.0,15.0 355.0,-0.2 360.0,-15.9 365.0,-32.0\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"3\"  /><polyline points=\"60.0,336.0 65.0,331.5 70.0,327.0 75.0,322.5 80.0,318.0 85.0,313.5 90.0,309.0 95.0,304.5 100.0,300.0 105.0,295.5 110.0,291.0 115.0,286.5 120.0,282.0 125.0,277.5 130.0,273.0 135.0,268.5 140.0,264.0 145.0,259.5 150.0,255.0 155.0,250.5 160.0,246.0 165.0,241.5 170.0,237.0 175.0,232.5 180.0,228.0 185.0,223.5 190.0,219.0 195.0,214.5 200.0,210.0 205.0,205.5 210.0,201.0 215.0,196.5 220.0,192.0 225.0,187.5 230.0,183.0 235.0,178.5 240.0,174.0 245.0,169.5 250.0,165.0 255.0,160.5 260.0,156.0 265.0,151.5 270.0,147.0 275.0,142.5 280.0,138.0 285.0,133.5 290.0,129.0 295.0,124.5 300.0,120.0 305.0,115.5 310.0,111.0 315.0,106.5 320.0,102.0 325.0,97.5 330.0,93.0 335.0,88.5 340.0,84.0 345.0,79.5 350.0,75.0 355.0,70.5 360.0,66.0 365.0,61.5 370.0,57.0 375.0,52.5\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-dasharray=\"6,4\" /><circle cx=\"183.33333333333331\" cy=\"225\" r=\"4\" fill=\"#f59e0b\" /><text x=\"188.33333333333331\" y=\"215\" fill=\"#f59e0b\" font-family=\"sans-serif\" font-weight=\"bold\" text-anchor=\"start\">a(t)=0 at t=8/3</text><circle cx=\"183.33333333333331\" cy=\"265\" r=\"4\" fill=\"#ef4444\" /><text x=\"193.33333333333331\" y=\"270\" fill=\"#ef4444\" font-family=\"sans-serif\" font-weight=\"bold\" text-anchor=\"start\">v = -16/3</text><line x1=\"183.33333333333331\" y1=\"225\" x2=\"183.33333333333331\" y2=\"265\" stroke=\"#94a3b8\" stroke-dasharray=\"4\" stroke-width=\"2\" />\\n</svg>"
+                  "explain": "Substitute \\(t=\\\\dfrac{8}{3}\\) back into the velocity function \\(v(t)\\).",
+                  "work": "\\(v\\\\!\\\\left(\\\\dfrac83\\\\right)=3\\\\left(\\\\dfrac83\\\\right)^2-16\\\\left(\\\\dfrac83\\\\right)+16=-\\\\dfrac{16}{3}\\\\ \\\\text{m/s}\\)\\n<svg viewBox=\"0 0 400 300\" style=\"background:#f8fafc; border-radius:8px; max-width:400px; margin:auto; display:block; overflow:hidden;\">\\n<line x1=\"20\" y1=\"225\" x2=\"380\" y2=\"225\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><line x1=\"50\" y1=\"280\" x2=\"50\" y2=\"20\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><line x1=\"100\" y1=\"222\" x2=\"100\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"100\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">1</text><line x1=\"150\" y1=\"222\" x2=\"150\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"150\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">2</text><line x1=\"200\" y1=\"222\" x2=\"200\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"200\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">3</text><line x1=\"250\" y1=\"222\" x2=\"250\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"250\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">4</text><line x1=\"300\" y1=\"222\" x2=\"300\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"300\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">5</text><line x1=\"350\" y1=\"222\" x2=\"350\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"350\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">6</text><line x1=\"47\" y1=\"262.5\" x2=\"53\" y2=\"262.5\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"266.5\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">-5</text><line x1=\"47\" y1=\"187.5\" x2=\"53\" y2=\"187.5\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"191.5\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">5</text><line x1=\"47\" y1=\"150\" x2=\"53\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"154\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">10</text><line x1=\"47\" y1=\"112.5\" x2=\"53\" y2=\"112.5\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"116.5\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">15</text><line x1=\"47\" y1=\"75\" x2=\"53\" y2=\"75\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"79\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">20</text><line x1=\"47\" y1=\"37.5\" x2=\"53\" y2=\"37.5\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"41.5\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">25</text><text x=\"390\" y=\"229\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"12\" font-style=\"italic\">t</text><polyline points=\"25.0,39.4 30.0,53.4 35.0,67.0 40.0,80.1 45.0,92.8 50.0,105.0 55.0,116.8 60.0,128.1 65.0,139.0 70.0,149.4 75.0,159.4 80.0,168.9 85.0,178.0 90.0,186.6 95.0,194.8 100.0,202.5 105.0,209.8 110.0,216.6 115.0,223.0 120.0,228.9 125.0,234.4 130.0,239.4 135.0,244.0 140.0,248.1 145.0,251.8 150.0,255.0 155.0,257.8 160.0,260.1 165.0,262.0 170.0,263.4 175.0,264.4 180.0,264.9 185.0,265.0 190.0,264.6 195.0,263.8 200.0,262.5 205.0,260.8 210.0,258.6 215.0,256.0 220.0,252.9 225.0,249.4 230.0,245.4 235.0,241.0 240.0,236.1 245.0,230.8 250.0,225.0 255.0,218.8 260.0,212.1 265.0,205.0 270.0,197.4 275.0,189.4 280.0,180.9 285.0,172.0 290.0,162.6 295.0,152.8 300.0,142.5 305.0,131.8 310.0,120.6 315.0,109.0 320.0,96.9 325.0,84.4 330.0,71.4 335.0,58.0 340.0,44.1 345.0,29.8 350.0,15.0 355.0,-0.2 360.0,-15.9 365.0,-32.0\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"3\"  /><polyline points=\"60.0,336.0 65.0,331.5 70.0,327.0 75.0,322.5 80.0,318.0 85.0,313.5 90.0,309.0 95.0,304.5 100.0,300.0 105.0,295.5 110.0,291.0 115.0,286.5 120.0,282.0 125.0,277.5 130.0,273.0 135.0,268.5 140.0,264.0 145.0,259.5 150.0,255.0 155.0,250.5 160.0,246.0 165.0,241.5 170.0,237.0 175.0,232.5 180.0,228.0 185.0,223.5 190.0,219.0 195.0,214.5 200.0,210.0 205.0,205.5 210.0,201.0 215.0,196.5 220.0,192.0 225.0,187.5 230.0,183.0 235.0,178.5 240.0,174.0 245.0,169.5 250.0,165.0 255.0,160.5 260.0,156.0 265.0,151.5 270.0,147.0 275.0,142.5 280.0,138.0 285.0,133.5 290.0,129.0 295.0,124.5 300.0,120.0 305.0,115.5 310.0,111.0 315.0,106.5 320.0,102.0 325.0,97.5 330.0,93.0 335.0,88.5 340.0,84.0 345.0,79.5 350.0,75.0 355.0,70.5 360.0,66.0 365.0,61.5 370.0,57.0 375.0,52.5\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-dasharray=\"6,4\" /><circle cx=\"183.33333333333331\" cy=\"225\" r=\"4\" fill=\"#f59e0b\" /><text x=\"188.33333333333331\" y=\"215\" fill=\"#f59e0b\" font-family=\"sans-serif\" font-weight=\"bold\" text-anchor=\"start\">a(t)=0 at t=8/3</text><circle cx=\"183.33333333333331\" cy=\"265\" r=\"4\" fill=\"#ef4444\" /><text x=\"193.33333333333331\" y=\"270\" fill=\"#ef4444\" font-family=\"sans-serif\" font-weight=\"bold\" text-anchor=\"start\">v = -16/3</text><line x1=\"183.33333333333331\" y1=\"225\" x2=\"183.33333333333331\" y2=\"265\" stroke=\"#94a3b8\" stroke-dasharray=\"4\" stroke-width=\"2\" />\\n</svg>"
                 }
               ],
-              "xp": 2
+              "xp": 1,
+              "timeLimit": 60,
+              "meta": {
+                "course": "Advanced",
+                "source": "Killara High School Year 11 Preliminary Examination Mathematics Advanced",
+                "sourcePage": 23,
+                "sourceQuestion": 26
+              }
             },
             {
               "id": "killara2026-q26d",
               "type": "mc",
-              "stem": "Find the total distance the robot has travelled over the interval \\\\(0\\\\le t\\\\le6\\\\), correct to the nearest metre.",
+              "stem": "Find the total distance the robot has travelled over the interval \\(0\\le t\\le6\\), correct to the nearest metre.",
               "options": [
                 "&#8203;\\(24\\ \\text{m}\\)",
                 "&#8203;\\(34\\ \\text{m}\\)",
@@ -1971,21 +1986,42 @@
               "hint": "The robot changes direction at \\(t=\\dfrac43\\) and \\(t=4\\) (the stationary points). Add up the distance travelled in each separate leg of the trip — do not just subtract the start and end position.",
               "steps": [
                 {
-                  "explain": "The robot changes direction at \\\\(t=\\\\dfrac43\\\\) and \\\\(t=4\\\\). Find its position at these times, as well as the start (\\\\(t=0\\\\)) and end (\\\\(t=6\\\\)).",
-                  "work": "\\\\(x(0)=0,\\\\ x\\\\!\\\\left(\\\\tfrac43\\\\right)=\\\\tfrac{256}{27}\\\\approx9.48,\\\\ x(4)=0,\\\\ x(6)=24\\\\)"
+                  "explain": "The robot changes direction at \\(t=\\\\dfrac43\\) and \\(t=4\\). Find its position at these times, as well as the start (\\(t=0\\)) and end (\\(t=6\\)).",
+                  "work": "\\(x(0)=0,\\\\ x\\\\!\\\\left(\\\\tfrac43\\\\right)=\\\\tfrac{256}{27}\\\\approx9.48,\\\\ x(4)=0,\\\\ x(6)=24\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Displacement line showing the robot's three travel legs\" width=\"700\" height=\"250\" viewBox=\"0 0 700 250\" style=\"display:block;width:50%;max-width:680px;height:auto;margin:1rem auto\" preserveAspectRatio=\"xMidYMid meet\"><style>text{font-family:Arial,Helvetica,sans-serif;fill:#334155}</style><line x1=\"85\" y1=\"170\" x2=\"640\" y2=\"170\" stroke=\"#334155\" stroke-width=\"3\"/><text x=\"655\" y=\"176\" font-size=\"15\">x (m)</text><line x1=\"120\" y1=\"158\" x2=\"120\" y2=\"182\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"340\" y1=\"158\" x2=\"340\" y2=\"182\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"560\" y1=\"158\" x2=\"560\" y2=\"182\" stroke=\"#475569\" stroke-width=\"2\"/><circle cx=\"120\" cy=\"170\" r=\"6\" fill=\"#334155\"/><circle cx=\"340\" cy=\"170\" r=\"6\" fill=\"#334155\"/><circle cx=\"560\" cy=\"170\" r=\"6\" fill=\"#334155\"/><text x=\"120\" y=\"200\" text-anchor=\"middle\" font-size=\"14\">0 m</text><text x=\"340\" y=\"200\" text-anchor=\"middle\" font-size=\"14\">9.48 m</text><text x=\"560\" y=\"200\" text-anchor=\"middle\" font-size=\"14\">24 m</text><text x=\"120\" y=\"65\" text-anchor=\"middle\" font-size=\"14\">start t=0</text><text x=\"340\" y=\"65\" text-anchor=\"middle\" font-size=\"14\">turn t=4/3</text><text x=\"120\" y=\"225\" text-anchor=\"middle\" font-size=\"14\">turn t=4</text><text x=\"560\" y=\"225\" text-anchor=\"middle\" font-size=\"14\">finish t=6</text><defs><marker id=\"arroworange\" markerWidth=\"8\" markerHeight=\"7\" refX=\"7\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L8 3.5L0 7Z\" fill=\"#f59e0b\"/></marker><marker id=\"arrowpurple\" markerWidth=\"8\" markerHeight=\"7\" refX=\"7\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L8 3.5L0 7Z\" fill=\"#7c3aed\"/></marker><marker id=\"arrowgreen\" markerWidth=\"8\" markerHeight=\"7\" refX=\"7\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L8 3.5L0 7Z\" fill=\"#10b981\"/></marker></defs><line x1=\"120\" y1=\"105\" x2=\"335\" y2=\"105\" stroke=\"#f59e0b\" stroke-width=\"4\" marker-end=\"url(#arroworange)\"/><text x=\"228\" y=\"98\" text-anchor=\"middle\" font-size=\"14\" fill=\"#b45309\">9.48 m outward</text><line x1=\"335\" y1=\"130\" x2=\"125\" y2=\"130\" stroke=\"#7c3aed\" stroke-width=\"4\" marker-end=\"url(#arrowtravel)\"/><text x=\"230\" y=\"125\" text-anchor=\"middle\" font-size=\"14\" fill=\"#6d28d9\">9.48 m back</text><line x1=\"120\" y1=\"250\" x2=\"555\" y2=\"250\" stroke=\"#10b981\" stroke-width=\"4\" marker-end=\"url(#arrowtravel)\"/><text x=\"338\" y=\"245\" text-anchor=\"middle\" font-size=\"14\" fill=\"#047857\">24 m to finish</text></svg>"
+                  }
                 },
                 {
                   "explain": "Add the absolute distances of each leg of the journey.",
-                  "work": "\\\\(|9.48-0| + |0-9.48| + |24-0| = 9.48+9.48+24=42.96\\\\ \\\\text{m}\\\\)\\n<svg viewBox=\"0 0 400 300\" style=\"background:#f8fafc; border-radius:8px; max-width:400px; margin:auto; display:block; overflow:hidden;\">\\n<line x1=\"20\" y1=\"225\" x2=\"380\" y2=\"225\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><line x1=\"50\" y1=\"280\" x2=\"50\" y2=\"20\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><line x1=\"100\" y1=\"222\" x2=\"100\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"100\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">1</text><line x1=\"150\" y1=\"222\" x2=\"150\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"150\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">2</text><line x1=\"200\" y1=\"222\" x2=\"200\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"200\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">3</text><line x1=\"250\" y1=\"222\" x2=\"250\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"250\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">4</text><line x1=\"300\" y1=\"222\" x2=\"300\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"300\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">5</text><line x1=\"350\" y1=\"222\" x2=\"350\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"350\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">6</text><line x1=\"47\" y1=\"262.5\" x2=\"53\" y2=\"262.5\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"266.5\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">-5</text><line x1=\"47\" y1=\"187.5\" x2=\"53\" y2=\"187.5\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"191.5\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">5</text><line x1=\"47\" y1=\"150\" x2=\"53\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"154\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">10</text><line x1=\"47\" y1=\"112.5\" x2=\"53\" y2=\"112.5\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"116.5\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">15</text><line x1=\"47\" y1=\"75\" x2=\"53\" y2=\"75\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"79\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">20</text><line x1=\"47\" y1=\"37.5\" x2=\"53\" y2=\"37.5\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"41.5\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">25</text><text x=\"390\" y=\"229\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"12\" font-style=\"italic\">t</text><polyline points=\"25.0,300.9 30.0,283.1 35.0,266.6 40.0,251.5 45.0,237.6 50.0,225.0 55.0,213.6 60.0,203.3 65.0,194.2 70.0,186.1 75.0,179.1 80.0,173.0 85.0,167.8 90.0,163.6 95.0,160.1 100.0,157.5 105.0,155.6 110.0,154.4 115.0,153.9 120.0,154.0 125.0,154.7 130.0,155.9 135.0,157.6 140.0,159.7 145.0,162.2 150.0,165.0 155.0,168.1 160.0,171.5 165.0,175.1 170.0,178.9 175.0,182.8 180.0,186.8 185.0,190.8 190.0,194.8 195.0,198.7 200.0,202.5 205.0,206.2 210.0,209.6 215.0,212.9 220.0,215.8 225.0,218.4 230.0,220.7 235.0,222.5 240.0,223.9 245.0,224.7 250.0,225.0 255.0,224.7 260.0,223.7 265.0,222.1 270.0,219.7 275.0,216.6 280.0,212.6 285.0,207.7 290.0,202.0 295.0,195.2 300.0,187.5 305.0,178.7 310.0,168.8 315.0,157.8 320.0,145.6 325.0,132.2 330.0,117.5 335.0,101.5 340.0,84.1 345.0,65.3 350.0,45.0 355.0,23.2 360.0,-0.1 365.0,-25.0\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"3\"  /><circle cx=\"50\" cy=\"225\" r=\"4\" fill=\"#10b981\" /><text x=\"45\" y=\"215\" fill=\"#10b981\" font-family=\"sans-serif\" font-weight=\"bold\" text-anchor=\"end\">t=0, x=0</text><circle cx=\"116.66666666666666\" cy=\"153.88888888888889\" r=\"4\" fill=\"#10b981\" /><text x=\"116.66666666666666\" y=\"143.88888888888889\" fill=\"#10b981\" font-family=\"sans-serif\" font-weight=\"bold\" text-anchor=\"middle\">t=4/3, x=9.48</text><circle cx=\"250\" cy=\"225\" r=\"4\" fill=\"#10b981\" /><text x=\"250\" y=\"240\" fill=\"#10b981\" font-family=\"sans-serif\" font-weight=\"bold\" text-anchor=\"middle\">t=4, x=0</text><circle cx=\"350\" cy=\"45\" r=\"4\" fill=\"#10b981\" /><text x=\"340\" y=\"45\" fill=\"#10b981\" font-family=\"sans-serif\" font-weight=\"bold\" text-anchor=\"end\">t=6, x=24</text><line x1=\"75\" y1=\"225\" x2=\"75\" y2=\"153.89999999999998\" stroke=\"#8b5cf6\" stroke-width=\"2\" marker-end=\"url(#arrowhead)\" /><text x=\"80\" y=\"189.45\" fill=\"#8b5cf6\" font-family=\"sans-serif\" font-weight=\"bold\" font-size=\"12\">Leg 1: 9.48m</text><line x1=\"175\" y1=\"153.89999999999998\" x2=\"175\" y2=\"225\" stroke=\"#8b5cf6\" stroke-width=\"2\" marker-end=\"url(#arrowhead)\" /><text x=\"180\" y=\"189.45\" fill=\"#8b5cf6\" font-family=\"sans-serif\" font-weight=\"bold\" font-size=\"12\">Leg 2: 9.48m</text><line x1=\"300\" y1=\"225\" x2=\"300\" y2=\"45\" stroke=\"#8b5cf6\" stroke-width=\"2\" marker-end=\"url(#arrowhead)\" /><text x=\"295\" y=\"135\" fill=\"#8b5cf6\" font-family=\"sans-serif\" font-weight=\"bold\" font-size=\"12\" text-anchor=\"end\">Leg 3: 24m</text><defs><marker id=\"arrowhead\" markerWidth=\"6\" markerHeight=\"4\" refX=\"5\" refY=\"2\" orient=\"auto\"><polygon points=\"0 0, 6 2, 0 4\" fill=\"#8b5cf6\" /></marker></defs>\\n</svg>"
+                  "work": "\\(|9.48-0| + |0-9.48| + |24-0| = 9.48+9.48+24=42.96\\\\ \\\\text{m}\\)\\n<svg viewBox=\"0 0 400 300\" style=\"background:#f8fafc; border-radius:8px; max-width:400px; margin:auto; display:block; overflow:hidden;\">\\n<line x1=\"20\" y1=\"225\" x2=\"380\" y2=\"225\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><line x1=\"50\" y1=\"280\" x2=\"50\" y2=\"20\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><line x1=\"100\" y1=\"222\" x2=\"100\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"100\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">1</text><line x1=\"150\" y1=\"222\" x2=\"150\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"150\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">2</text><line x1=\"200\" y1=\"222\" x2=\"200\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"200\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">3</text><line x1=\"250\" y1=\"222\" x2=\"250\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"250\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">4</text><line x1=\"300\" y1=\"222\" x2=\"300\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"300\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">5</text><line x1=\"350\" y1=\"222\" x2=\"350\" y2=\"228\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"350\" y=\"240\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">6</text><line x1=\"47\" y1=\"262.5\" x2=\"53\" y2=\"262.5\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"266.5\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">-5</text><line x1=\"47\" y1=\"187.5\" x2=\"53\" y2=\"187.5\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"191.5\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">5</text><line x1=\"47\" y1=\"150\" x2=\"53\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"154\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">10</text><line x1=\"47\" y1=\"112.5\" x2=\"53\" y2=\"112.5\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"116.5\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">15</text><line x1=\"47\" y1=\"75\" x2=\"53\" y2=\"75\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"79\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">20</text><line x1=\"47\" y1=\"37.5\" x2=\"53\" y2=\"37.5\" stroke=\"#94a3b8\" stroke-width=\"1.5\" /><text x=\"45\" y=\"41.5\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"end\">25</text><text x=\"390\" y=\"229\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"12\" font-style=\"italic\">t</text><polyline points=\"25.0,300.9 30.0,283.1 35.0,266.6 40.0,251.5 45.0,237.6 50.0,225.0 55.0,213.6 60.0,203.3 65.0,194.2 70.0,186.1 75.0,179.1 80.0,173.0 85.0,167.8 90.0,163.6 95.0,160.1 100.0,157.5 105.0,155.6 110.0,154.4 115.0,153.9 120.0,154.0 125.0,154.7 130.0,155.9 135.0,157.6 140.0,159.7 145.0,162.2 150.0,165.0 155.0,168.1 160.0,171.5 165.0,175.1 170.0,178.9 175.0,182.8 180.0,186.8 185.0,190.8 190.0,194.8 195.0,198.7 200.0,202.5 205.0,206.2 210.0,209.6 215.0,212.9 220.0,215.8 225.0,218.4 230.0,220.7 235.0,222.5 240.0,223.9 245.0,224.7 250.0,225.0 255.0,224.7 260.0,223.7 265.0,222.1 270.0,219.7 275.0,216.6 280.0,212.6 285.0,207.7 290.0,202.0 295.0,195.2 300.0,187.5 305.0,178.7 310.0,168.8 315.0,157.8 320.0,145.6 325.0,132.2 330.0,117.5 335.0,101.5 340.0,84.1 345.0,65.3 350.0,45.0 355.0,23.2 360.0,-0.1 365.0,-25.0\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"3\"  /><circle cx=\"50\" cy=\"225\" r=\"4\" fill=\"#10b981\" /><text x=\"45\" y=\"215\" fill=\"#10b981\" font-family=\"sans-serif\" font-weight=\"bold\" text-anchor=\"end\">t=0, x=0</text><circle cx=\"116.66666666666666\" cy=\"153.88888888888889\" r=\"4\" fill=\"#10b981\" /><text x=\"116.66666666666666\" y=\"143.88888888888889\" fill=\"#10b981\" font-family=\"sans-serif\" font-weight=\"bold\" text-anchor=\"middle\">t=4/3, x=9.48</text><circle cx=\"250\" cy=\"225\" r=\"4\" fill=\"#10b981\" /><text x=\"250\" y=\"240\" fill=\"#10b981\" font-family=\"sans-serif\" font-weight=\"bold\" text-anchor=\"middle\">t=4, x=0</text><circle cx=\"350\" cy=\"45\" r=\"4\" fill=\"#10b981\" /><text x=\"340\" y=\"45\" fill=\"#10b981\" font-family=\"sans-serif\" font-weight=\"bold\" text-anchor=\"end\">t=6, x=24</text><line x1=\"75\" y1=\"225\" x2=\"75\" y2=\"153.89999999999998\" stroke=\"#8b5cf6\" stroke-width=\"2\" marker-end=\"url(#arrowhead)\" /><text x=\"80\" y=\"189.45\" fill=\"#8b5cf6\" font-family=\"sans-serif\" font-weight=\"bold\" font-size=\"12\">Leg 1: 9.48m</text><line x1=\"175\" y1=\"153.89999999999998\" x2=\"175\" y2=\"225\" stroke=\"#8b5cf6\" stroke-width=\"2\" marker-end=\"url(#arrowhead)\" /><text x=\"180\" y=\"189.45\" fill=\"#8b5cf6\" font-family=\"sans-serif\" font-weight=\"bold\" font-size=\"12\">Leg 2: 9.48m</text><line x1=\"300\" y1=\"225\" x2=\"300\" y2=\"45\" stroke=\"#8b5cf6\" stroke-width=\"2\" marker-end=\"url(#arrowhead)\" /><text x=\"295\" y=\"135\" fill=\"#8b5cf6\" font-family=\"sans-serif\" font-weight=\"bold\" font-size=\"12\" text-anchor=\"end\">Leg 3: 24m</text><defs><marker id=\"arrowhead\" markerWidth=\"6\" markerHeight=\"4\" refX=\"5\" refY=\"2\" orient=\"auto\"><polygon points=\"0 0, 6 2, 0 4\" fill=\"#8b5cf6\" /></marker></defs>\\n</svg>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Displacement line showing the robot's three travel legs\" width=\"700\" height=\"250\" viewBox=\"0 0 700 250\" style=\"display:block;width:50%;max-width:680px;height:auto;margin:1rem auto\" preserveAspectRatio=\"xMidYMid meet\"><style>text{font-family:Arial,Helvetica,sans-serif;fill:#334155}</style><line x1=\"85\" y1=\"170\" x2=\"640\" y2=\"170\" stroke=\"#334155\" stroke-width=\"3\"/><text x=\"655\" y=\"176\" font-size=\"15\">x (m)</text><line x1=\"120\" y1=\"158\" x2=\"120\" y2=\"182\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"340\" y1=\"158\" x2=\"340\" y2=\"182\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"560\" y1=\"158\" x2=\"560\" y2=\"182\" stroke=\"#475569\" stroke-width=\"2\"/><circle cx=\"120\" cy=\"170\" r=\"6\" fill=\"#334155\"/><circle cx=\"340\" cy=\"170\" r=\"6\" fill=\"#334155\"/><circle cx=\"560\" cy=\"170\" r=\"6\" fill=\"#334155\"/><text x=\"120\" y=\"200\" text-anchor=\"middle\" font-size=\"14\">0 m</text><text x=\"340\" y=\"200\" text-anchor=\"middle\" font-size=\"14\">9.48 m</text><text x=\"560\" y=\"200\" text-anchor=\"middle\" font-size=\"14\">24 m</text><text x=\"120\" y=\"65\" text-anchor=\"middle\" font-size=\"14\">start t=0</text><text x=\"340\" y=\"65\" text-anchor=\"middle\" font-size=\"14\">turn t=4/3</text><text x=\"120\" y=\"225\" text-anchor=\"middle\" font-size=\"14\">turn t=4</text><text x=\"560\" y=\"225\" text-anchor=\"middle\" font-size=\"14\">finish t=6</text><defs><marker id=\"arroworange\" markerWidth=\"8\" markerHeight=\"7\" refX=\"7\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L8 3.5L0 7Z\" fill=\"#f59e0b\"/></marker><marker id=\"arrowpurple\" markerWidth=\"8\" markerHeight=\"7\" refX=\"7\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L8 3.5L0 7Z\" fill=\"#7c3aed\"/></marker><marker id=\"arrowgreen\" markerWidth=\"8\" markerHeight=\"7\" refX=\"7\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L8 3.5L0 7Z\" fill=\"#10b981\"/></marker></defs><line x1=\"120\" y1=\"105\" x2=\"335\" y2=\"105\" stroke=\"#f59e0b\" stroke-width=\"4\" marker-end=\"url(#arroworange)\"/><text x=\"228\" y=\"98\" text-anchor=\"middle\" font-size=\"14\" fill=\"#b45309\">9.48 m outward</text><line x1=\"335\" y1=\"130\" x2=\"125\" y2=\"130\" stroke=\"#7c3aed\" stroke-width=\"4\" marker-end=\"url(#arrowtravel)\"/><text x=\"230\" y=\"125\" text-anchor=\"middle\" font-size=\"14\" fill=\"#6d28d9\">9.48 m back</text><line x1=\"120\" y1=\"250\" x2=\"555\" y2=\"250\" stroke=\"#10b981\" stroke-width=\"4\" marker-end=\"url(#arrowtravel)\"/><text x=\"338\" y=\"245\" text-anchor=\"middle\" font-size=\"14\" fill=\"#047857\">24 m to finish</text></svg>"
+                  }
                 },
                 {
                   "explain": "Round to the nearest metre.",
-                  "work": "\\\\(\\\\approx 43\\\\ \\\\text{m}\\\\)"
+                  "work": "\\(\\\\approx 43\\\\ \\\\text{m}\\)"
                 }
               ],
-              "xp": 2
+              "xp": 1,
+              "timeLimit": 60,
+              "meta": {
+                "course": "Advanced",
+                "source": "Killara High School Year 11 Preliminary Examination Mathematics Advanced",
+                "sourcePage": 23,
+                "sourceQuestion": 26
+              }
             }
-          ]
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "course": "Advanced",
+            "source": "Killara High School Year 11 Preliminary Examination Mathematics Advanced",
+            "sourcePage": 23,
+            "sourceQuestion": 26
+          }
         },
         {
           "id": "y11a-9-excel-calculus-q2",
@@ -2235,7 +2271,14 @@
               "work": "\\(a-b=7-(-6)=13\\)"
             }
           ],
-          "xp": 3
+          "xp": 1,
+          "timeLimit": 60,
+          "meta": {
+            "course": "Advanced",
+            "source": "Killara High School Year 11 Preliminary Examination Mathematics Advanced",
+            "sourcePage": 10,
+            "sourceQuestion": 10
+          }
         },
         {
           "id": "killara2026-q14b",
@@ -2264,7 +2307,14 @@
               "work": "\\(y-6=4(x-2) \\Rightarrow y=4x-2\\)"
             }
           ],
-          "xp": 2
+          "xp": 1,
+          "timeLimit": 60,
+          "meta": {
+            "course": "Advanced",
+            "source": "Killara High School Year 11 Preliminary Examination Mathematics Advanced",
+            "sourcePage": 12,
+            "sourceQuestion": 14
+          }
         },
         {
           "id": "y11a-9-excel-calculus-q3",
@@ -3212,6 +3262,57 @@
               "note": "Use the quotient rule; simplify the numerator only after applying it."
             }
           ]
+        },
+        {
+          "id": "killara2026-q21",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A car travels along a straight stretch of road. Its speed at time \\(t\\) seconds is given by<br><br>\\(v(t)=\\dfrac{500t}{t^2+100}\\)<br><br>where \\(v(t)\\) is measured in meters per second.",
+          "parts": [
+            {
+              "id": "killara2026-q21b",
+              "type": "mc",
+              "stem": "Find the instantaneous rate of change of the car’s speed at \\(t=5\\) seconds.",
+              "options": [
+                "&#8203;\\(1\\ \\text{m/s}^2\\)",
+                "&#8203;\\(20\\ \\text{m/s}^2\\)",
+                "&#8203;\\(\\dfrac{5}{12}\\ \\text{m/s}^2\\)",
+                "&#8203;\\(\\dfrac{12}{5}\\ \\text{m/s}^2\\)"
+              ],
+              "answer": 3,
+              "hint": "Use the quotient rule with \\(u=500t\\), \\(v=t^2+100\\), then evaluate \\(v'(5)\\).",
+              "steps": [
+                {
+                  "explain": "Apply the quotient rule \\(v'(t)=\\dfrac{u'v-uv'}{v^2}\\) with \\(u=500t,\\ u'=500,\\ v=t^2+100,\\ v'=2t\\).",
+                  "work": "\\(v'(t)=\\dfrac{500(t^2+100)-500t(2t)}{(t^2+100)^2}=\\dfrac{500(100-t^2)}{(t^2+100)^2}\\)"
+                },
+                {
+                  "explain": "Substitute \\(t=5\\).",
+                  "work": "\\(v'(5)=\\dfrac{500(100-25)}{(125)^2}=\\dfrac{37500}{15625}\\)"
+                },
+                {
+                  "explain": "Simplify the fraction.",
+                  "work": "\\(v'(5)=\\dfrac{12}{5}\\ \\text{m/s}^2\\)"
+                }
+              ],
+              "xp": 1,
+              "timeLimit": 60,
+              "meta": {
+                "course": "Advanced",
+                "source": "Killara High School Year 11 Preliminary Examination Mathematics Advanced",
+                "sourcePage": 18,
+                "sourceQuestion": 21
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "course": "Advanced",
+            "source": "Killara High School Year 11 Preliminary Examination Mathematics Advanced",
+            "sourcePage": 18,
+            "sourceQuestion": 21
+          }
         }
       ]
     },
@@ -3546,31 +3647,38 @@
           "hint": "Use the chain rule: differentiate the outer power, then multiply by the derivative of the inner function.",
           "steps": [
             {
-              "explain": "To differentiate a composite function like \\\\(f(x) = (3x^2 - 2)^5\\\\), we use the Chain Rule: \\\\( \\\\frac{d}{dx} [g(h(x))] = g'(h(x)) \\\\cdot h'(x) \\\\). Let the inner function be \\\\(u = 3x^2 - 2\\\\), so the outer function is \\\\(u^5\\\\).",
-              "work": "\\\\( \\\\text{Inner: } u = 3x^2 - 2 \\\\quad \\\\text{Outer: } y = u^5 \\\\)"
+              "explain": "To differentiate a composite function like \\(f(x) = (3x^2 - 2)^5\\), we use the Chain Rule: \\( \\\\frac{d}{dx} [g(h(x))] = g'(h(x)) \\\\cdot h'(x) \\). Let the inner function be \\(u = 3x^2 - 2\\), so the outer function is \\(u^5\\).",
+              "work": "\\( \\\\text{Inner: } u = 3x^2 - 2 \\\\quad \\\\text{Outer: } y = u^5 \\)"
             },
             {
-              "explain": "First, differentiate the outer function with respect to \\\\(u\\\\).",
-              "work": "\\\\( \\\\frac{dy}{du} = 5u^4 \\\\)"
+              "explain": "First, differentiate the outer function with respect to \\(u\\).",
+              "work": "\\( \\\\frac{dy}{du} = 5u^4 \\)"
             },
             {
-              "explain": "Next, differentiate the inner function \\\\(u\\\\) with respect to \\\\(x\\\\).",
-              "work": "\\\\( \\\\frac{du}{dx} = \\\\frac{d}{dx}(3x^2 - 2) = 6x \\\\)"
+              "explain": "Next, differentiate the inner function \\(u\\) with respect to \\(x\\).",
+              "work": "\\( \\\\frac{du}{dx} = \\\\frac{d}{dx}(3x^2 - 2) = 6x \\)"
             },
             {
               "explain": "Multiply the two derivatives together (Chain Rule).",
-              "work": "\\\\( f'(x) = \\\\frac{dy}{du} \\\\cdot \\\\frac{du}{dx} = 5u^4 \\\\cdot 6x \\\\)"
+              "work": "\\( f'(x) = \\\\frac{dy}{du} \\\\cdot \\\\frac{du}{dx} = 5u^4 \\\\cdot 6x \\)"
             },
             {
-              "explain": "Substitute \\\\(u = 3x^2 - 2\\\\) back into the equation.",
-              "work": "\\\\( f'(x) = 5(3x^2 - 2)^4 \\\\cdot 6x \\\\)"
+              "explain": "Substitute \\(u = 3x^2 - 2\\) back into the equation.",
+              "work": "\\( f'(x) = 5(3x^2 - 2)^4 \\\\cdot 6x \\)"
             },
             {
               "explain": "Simplify the expression by multiplying the coefficients.",
-              "work": "\\\\( f'(x) = 30x(3x^2 - 2)^4 \\\\)"
+              "work": "\\( f'(x) = 30x(3x^2 - 2)^4 \\)"
             }
           ],
-          "xp": 2
+          "xp": 1,
+          "timeLimit": 60,
+          "meta": {
+            "course": "Advanced",
+            "source": "Killara High School Year 11 Preliminary Examination Mathematics Advanced",
+            "sourcePage": 10,
+            "sourceQuestion": 3
+          }
         },
         {
           "timeLimit": 60,

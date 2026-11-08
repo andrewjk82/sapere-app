@@ -8318,6 +8318,42 @@
               "note": "Multiply by the conjugate \\(\\sqrt5-2\\); here the denominator becomes \\(5-4=1\\)."
             }
           ]
+        },
+        {
+          "id": "killara2026-q11",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Rationalise the denominator of the following expression and fully simplify. Show all relevant working.<br><br>\\(\\dfrac{4}{3-\\sqrt2}\\)",
+          "options": [
+            "&#8203;\\(\\dfrac{12+4\\sqrt2}{7}\\)",
+            "&#8203;\\(\\dfrac{12-4\\sqrt2}{7}\\)",
+            "&#8203;\\(12+4\\sqrt2\\)",
+            "&#8203;\\(\\dfrac{4+\\sqrt2}{7}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the numerator and denominator by the conjugate of \\(3-\\sqrt2\\). The denominator becomes a difference of squares.",
+          "steps": [
+            {
+              "explain": "The denominator contains a surd. Multiply the fraction by the conjugate, \\(3+\\sqrt2\\), over itself. This keeps the fraction unchanged because the multiplier is 1.",
+              "work": "\\(\\dfrac{4}{3-\\sqrt2}\\times\\dfrac{3+\\sqrt2}{3+\\sqrt2}\\)"
+            },
+            {
+              "explain": "Expand the numerator and use \\((a-b)(a+b)=a^2-b^2\\) in the denominator.",
+              "work": "\\(\\dfrac{4(3+\\sqrt2)}{(3-\\sqrt2)(3+\\sqrt2)}=\\dfrac{12+4\\sqrt2}{9-2}\\)"
+            },
+            {
+              "explain": "Simplify the denominator. The result has no surd in the denominator and is in simplest exact form.",
+              "work": "\\(\\boxed{\\dfrac{12+4\\sqrt2}{7}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "course": "Advanced",
+            "source": "Killara High School Year 11 Preliminary Examination Mathematics Advanced",
+            "sourceQuestion": 11,
+            "sourcePage": 10
+          }
         }
       ]
     },
