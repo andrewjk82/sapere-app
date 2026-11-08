@@ -1785,7 +1785,7 @@
           "stem": "Solve: \\(x^2=81\\).",
           "options": [
             "\\(x=\\pm9\\)",
-            "\\(x=9\\)\\text{ only}",
+            "\\(x=9\\text{ only}\\)",
             "\\(x=40.5\\)",
             "\\(x=6561\\)"
           ],
@@ -2457,7 +2457,7 @@
           "options": [
             "\\(18\\)",
             "\\(42\\)",
-            "\\(−18\\)",
+            "\\(-18\\)",
             "\\(2\\)"
           ],
           "answer": 0
@@ -2493,7 +2493,7 @@
             "sourcePart": "eq-q1b"
           },
           "options": [
-            "\\(−9\\)",
+            "\\(-9\\)",
             "\\(9\\)",
             "\\(41\\)",
             "\\(\\frac{45}{5}\\)"
@@ -2589,7 +2589,7 @@
             },
             {
               "explain": "Substitute the value back into the original equation to check it.",
-              "work": "\\(\\boxed{x = −9 or x = 9}\\)"
+              "work": "\\(\\boxed{x=-9\\text{ or }x=9}\\)"
             }
           ],
           "timeLimit": 60,
@@ -2609,7 +2609,7 @@
           "options": [
             "\\(x=-9\\text{ or }x=9\\)",
             "\\(x=9\\text{ only}\\)",
-            "\\(x=−9\\text{ only}\\)",
+            "\\(x=-9\\text{ only}\\)",
             "\\(x = 81\\)"
           ],
           "answer": 0
@@ -2660,7 +2660,7 @@
           "type": "mc",
           "difficulty": "medium",
           "stem": "Given the formula \\(P=2l+2w\\), find \\(l\\) when \\(P=32\\) and \\(w=12\\).",
-          "hint": "Substitute P=32 and w=12, then isolate l.",
+          "hint": "Substitute \\(P=32\\) and \\(w=12\\), then isolate \\(l\\).",
           "steps": [
             {
               "explain": "Substitute the given values into the formula.",
@@ -2684,7 +2684,7 @@
           "keyPoints": [
             {
               "text": "Given the formula \\(P=2l+2w\\), find \\(l\\) when \\(P=32\\) and \\(w=12\\).",
-              "note": "Substitute P=32 and w=12, then isolate l."
+              "note": "Substitute \\(P=32\\) and \\(w=12\\), then isolate \\(l\\)."
             }
           ],
           "meta": {
@@ -3695,7 +3695,7 @@
           "options": [
             "\\(2\\)",
             "\\(6\\)",
-            "\\(−3\\)",
+            "\\(-3\\)",
             "\\(3\\)"
           ],
           "answer": 3

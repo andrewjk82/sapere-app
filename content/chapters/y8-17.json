@@ -1973,7 +1973,7 @@
           "stem": "Simplify: \\(\\dfrac{6ce-12e}{d}\\).",
           "options": [
             "\\(\\dfrac{6e(c-2)}{d}\\)",
-            "\\(\\dfrac{6ce-12e}{d}\\)\\text{ (already simplest form)}",
+            "\\(\\dfrac{6ce-12e}{d}\\text{ (already simplest form)}\\)",
             "\\(\\dfrac{6c-12}{d}\\)",
             "\\(\\dfrac{6e(c-2e)}{d}\\)"
           ],
