@@ -139,6 +139,21 @@ const getNextStudentSessionDate = (sessionDocs, studentId, afterDate, dateShiftD
   return nextSession ? addDaysToDateKey(nextSession.date, dateShiftDays) : '';
 };
 
+// On an iPad (or any flaky connection) a Firestore read/write can wait forever for the server. Reads give up after
+// `ms`; a write that is not acknowledged in time stays queued on the device (Firestore keeps it and sends it when the
+// connection returns), so the screen reports it instead of sitting on "Saving..." (2026-11).
+const READ_TIMEOUT_MS = 8000;
+const WRITE_ACK_MS = 10000;
+const readWithin = (promise, ms = READ_TIMEOUT_MS) => Promise.race([
+  promise,
+  new Promise((_, reject) => { setTimeout(() => reject(new Error('read timed out')), ms); }),
+]);
+const QUEUED = Symbol('queued');
+const writeWithin = (promise, ms = WRITE_ACK_MS) => Promise.race([
+  promise,
+  new Promise((resolve) => { setTimeout(() => resolve(QUEUED), ms); }),
+]);
+
 const getDateShiftDays = (fromDateKey, toDateKey) => {
   const fromDate = new Date(`${fromDateKey}T12:00:00`);
   const toDate = new Date(`${toDateKey}T12:00:00`);
@@ -547,17 +562,26 @@ const Schedule = ({ students = [] }) => {
       const updatePayload = buildSessionUpdatePayload(editData);
       let homeworkChanged = false;
       let homeworkWasAlreadyAssigned = false;
+      let writeQueued = false;
+      // The sessions already on screen stand in for a read: same documents, no wait on the server.
+      const asDocs = (list) => list.map((item) => ({ id: item.id, ref: doc(db, 'sessions', item.id), data: () => item }));
+      const sendWrite = async (promise) => {
+        const result = await writeWithin(promise);
+        if (result === QUEUED) {
+          writeQueued = true;
+          promise.catch((err) => {
+            console.error('Queued session update failed:', err);
+            showToast('The lesson update could not be saved. Please try again.', 'error');
+          });
+        }
+      };
 
       if (choice === 'single') {
         if (selectedSession.groupId) {
           // A group lesson is stored as one session document per student. Save
           // this lesson instance to every member, while leaving future lessons
           // in the recurring series untouched.
-          const groupQuery = query(
-            collection(db, 'sessions'),
-            where('groupId', '==', selectedSession.groupId)
-          );
-          const groupSnap = await getDocs(groupQuery);
+          const groupSnap = { docs: asDocs(sessions.filter((item) => item.groupId === selectedSession.groupId)) };
           const instanceDocs = groupSnap.docs.filter(
             (sessionDoc) => (sessionDoc.data().date || '') === selectedSession.date
           );
@@ -572,15 +596,15 @@ const Schedule = ({ students = [] }) => {
             homeworkChanged = (selectedSession.homework || '') !== updatePayload.homework;
             homeworkWasAlreadyAssigned = Boolean(selectedSession.homework);
             const studentSnap = selectedSession.studentId
-              ? await getDocs(query(collection(db, 'sessions'), where('studentId', '==', selectedSession.studentId)))
+              ? { docs: asDocs(sessions.filter((item) => item.studentId === selectedSession.studentId)) }
               : null;
             const nextDate = studentSnap
               ? getNextStudentSessionDate(studentSnap.docs, selectedSession.studentId, selectedSession.date)
               : '';
-            await updateDoc(doc(db, 'sessions', selectedSession.id), {
+            await sendWrite(updateDoc(doc(db, 'sessions', selectedSession.id), {
               ...updatePayload,
               homeworkDueDate: updatePayload.homework ? nextDate : '',
-            });
+            }));
           } else {
             const batch = writeBatch(db);
             instanceDocs.forEach((sessionDoc) => batch.update(sessionDoc.ref, {
@@ -589,25 +613,25 @@ const Schedule = ({ students = [] }) => {
                 ? getNextStudentSessionDate(groupSnap.docs, sessionDoc.data().studentId, selectedSession.date)
                 : '',
             }));
-            await batch.commit();
+            await sendWrite(batch.commit());
           }
         } else {
           homeworkChanged = (selectedSession.homework || '') !== updatePayload.homework;
           homeworkWasAlreadyAssigned = Boolean(selectedSession.homework);
           const studentSnap = selectedSession.studentId
-            ? await getDocs(query(collection(db, 'sessions'), where('studentId', '==', selectedSession.studentId)))
+            ? { docs: asDocs(sessions.filter((item) => item.studentId === selectedSession.studentId)) }
             : null;
           const nextDate = studentSnap
             ? getNextStudentSessionDate(studentSnap.docs, selectedSession.studentId, selectedSession.date)
             : '';
-          await updateDoc(doc(db, 'sessions', selectedSession.id), {
+          await sendWrite(updateDoc(doc(db, 'sessions', selectedSession.id), {
             ...updatePayload,
             homeworkDueDate: updatePayload.homework ? nextDate : '',
-          });
+          }));
         }
       } else if (choice === 'series' && selectedSession.groupId) {
         const q = query(collection(db, 'sessions'), where('groupId', '==', selectedSession.groupId));
-        const snap = await getDocs(q);
+        const snap = await readWithin(getDocs(q));
         const futureDocs = snap.docs.filter(d => (d.data().date || '') >= selectedSession.date);
         homeworkChanged = futureDocs.some(
           (sessionDoc) => (sessionDoc.data().homework || '') !== updatePayload.homework
@@ -635,7 +659,7 @@ const Schedule = ({ students = [] }) => {
             updatedAt: updatePayload.updatedAt
           });
         });
-        await batch.commit();
+        await sendWrite(batch.commit());
       }
 
       const recipients = selectedSession.isGroupedClass && Array.isArray(selectedSession.groupStudents)
@@ -681,7 +705,7 @@ const Schedule = ({ students = [] }) => {
       // The Firestore write is already done — close immediately.
       setSaveChoiceOpen(null);
       setSelectedSession(null);
-      showToast('Changes saved successfully!', 'success');
+      showToast(writeQueued ? 'Saved on this device — it will upload when the connection is back.' : 'Changes saved successfully!', writeQueued ? 'info' : 'success');
     } catch (e) {
       console.error('Failed to update session:', e);
       showToast('Failed to update.', 'error');
