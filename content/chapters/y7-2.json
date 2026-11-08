@@ -5938,7 +5938,7 @@
           "id": "hghs2026-y7c2-q1a",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Write the following in expanded form: (a) \\(2^4\\times4^2\\)",
+          "stem": "Write the following in expanded form: \\(2^4\\times4^2\\)",
           "hint": "An exponent tells how many copies of its base to multiply.",
           "steps": [
             {
@@ -5976,7 +5976,7 @@
           "id": "hghs2026-y7c2-q1b",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Write the following in expanded form: (b) \\(\\frac{6^4}{6^5}\\)",
+          "stem": "Write the following in expanded form: \\(\\frac{6^4}{6^5}\\)",
           "hint": "Expand the numerator and denominator separately before cancelling.",
           "steps": [
             {
@@ -6014,7 +6014,7 @@
           "id": "hghs2026-y7c2-q1c",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Write the following in expanded form: (c) \\((5^x)^3\\)",
+          "stem": "Write the following in expanded form: \\((5^x)^3\\)",
           "hint": "The outside exponent \\(3\\) means multiply the entire factor \\(5^x\\) three times.",
           "steps": [
             {
@@ -7663,7 +7663,7 @@
           "id": "hghs2026-y7c2-q6a",
           "type": "review",
           "difficulty": "medium",
-          "stem": "(a) Draw a factor tree for each of the numbers 432 and 500.",
+          "stem": "Draw a factor tree for each of the numbers 432 and 500.",
           "hint": "Split each number into factor pairs until every branch ends in a prime.",
           "steps": [
             {
@@ -7690,7 +7690,7 @@
           "xp": 1,
           "keyPoints": [
             {
-              "text": "(a) Draw a factor tree for each of the numbers 432 and 500.",
+              "text": "Draw a factor tree for each of the numbers 432 and 500.",
               "note": "Split each number into factor pairs until every branch ends in a prime."
             }
           ],
@@ -7707,7 +7707,7 @@
           "id": "hghs2026-y7c2-q6b",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "(b) Write 432 and 500 in index form as the product of prime factors.",
+          "stem": "Write 432 and 500 in index form as the product of prime factors.",
           "hint": "Use prime factorisation, then count how many times each prime appears.",
           "steps": [
             {
@@ -7727,7 +7727,7 @@
           "xp": 1,
           "keyPoints": [
             {
-              "text": "(b) Write 432 and 500 in index form as the product of prime factors.",
+              "text": "Write 432 and 500 in index form as the product of prime factors.",
               "note": "Use prime factorisation, then count how many times each prime appears."
             }
           ],
@@ -8832,7 +8832,7 @@
           "id": "hghs2026-y7c2-q4a",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Evaluate the following expressions: (a) \\(3^3+2\\times5^2\\)",
+          "stem": "Evaluate the following expression: \\(3^3+2\\times5^2\\)",
           "hint": "Use order of operations: powers first, then multiplication, then addition.",
           "steps": [
             {
@@ -8870,7 +8870,7 @@
           "id": "hghs2026-y7c2-q4b",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Evaluate the following expressions: (b) \\(\\sqrt{49}\\)",
+          "stem": "Evaluate the following expression: \\(\\sqrt{49}\\)",
           "hint": "The square-root symbol asks for the non-negative number whose square is 49.",
           "steps": [
             {
@@ -8908,7 +8908,7 @@
           "id": "hghs2026-y7c2-q4c",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Evaluate the following expressions: (c) \\(\\sqrt[3]{-216}\\)",
+          "stem": "Evaluate the following expression: \\(\\sqrt[3]{-216}\\)",
           "hint": "Find the number that gives −216 when multiplied by itself three times.",
           "steps": [
             {
@@ -10194,7 +10194,7 @@
           "id": "hghs2026-y7c2-q6c",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "(c) Express the HCF and LCM of 432 and 500 in index form as the product of prime factors.",
+          "stem": "Express the HCF and LCM of 432 and 500 in index form as the product of prime factors.",
           "hint": "For the HCF take shared primes at the smaller power; for the LCM take every prime at its larger power.",
           "steps": [
             {
@@ -10222,7 +10222,7 @@
           "xp": 1,
           "keyPoints": [
             {
-              "text": "(c) Express the HCF and LCM of 432 and 500 in index form as the produc",
+              "text": "Express the HCF and LCM of 432 and 500 in index form as the product of prime factors.",
               "note": "For the HCF take shared primes at the smaller power; for the LCM take every prime at its larger power."
             }
           ],

@@ -2428,7 +2428,7 @@
           "id": "hghs2026-y7c15-eq-q1a",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Solve each of the following equations. Show all working. (a) \\(p+12=30\\)",
+          "stem": "Solve the following equation. Show all working: \\(p+12=30\\)",
           "hint": "Undo adding 12 by subtracting 12 from both sides.",
           "steps": [
             {
@@ -2444,7 +2444,7 @@
           "xp": 1,
           "keyPoints": [
             {
-              "text": "Solve each of the following equations. Show all working. (a) \\(p+12=30",
+              "text": "Solve the following equation. Show all working: \\(p+12=30\\)",
               "note": "Undo adding 12 by subtracting 12 from both sides."
             }
           ],
@@ -2466,7 +2466,7 @@
           "id": "hghs2026-y7c15-eq-q1b",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Solve each of the following equations. Show all working. (b) \\(5x-2=43\\)",
+          "stem": "Solve the following equation. Show all working: \\(5x-2=43\\)",
           "hint": "Undo −2 first, then divide both sides by 5.",
           "steps": [
             {
@@ -2482,7 +2482,7 @@
           "xp": 1,
           "keyPoints": [
             {
-              "text": "Solve each of the following equations. Show all working. (b) \\(5x-2=43",
+              "text": "Solve the following equation. Show all working: \\(5x-2=43\\)",
               "note": "Undo −2 first, then divide both sides by 5."
             }
           ],
@@ -2504,7 +2504,7 @@
           "id": "hghs2026-y7c15-eq-q1c",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Solve each of the following equations. Show all working. (c) \\(\\frac{m+2}{3}=11\\)",
+          "stem": "Solve the following equation. Show all working: \\(\\frac{m+2}{3}=11\\)",
           "hint": "Multiply both sides by 3 before subtracting 2.",
           "steps": [
             {
@@ -2520,7 +2520,7 @@
           "xp": 1,
           "keyPoints": [
             {
-              "text": "Solve each of the following equations. Show all working. (c) \\(\\frac{m+",
+              "text": "Solve the following equation. Show all working: \\(\\frac{m+2}{3}=11\\)",
               "note": "Multiply both sides by 3 before subtracting 2."
             }
           ],
@@ -2542,7 +2542,7 @@
           "id": "hghs2026-y7c15-eq-q1d",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Solve each of the following equations. Show all working. (d) \\(3(x-4)=12\\)",
+          "stem": "Solve the following equation. Show all working: \\(3(x-4)=12\\)",
           "hint": "Divide by 3 first, then add 4 to both sides.",
           "steps": [
             {
@@ -2558,7 +2558,7 @@
           "xp": 1,
           "keyPoints": [
             {
-              "text": "Solve each of the following equations. Show all working. (d) \\(3(x-4)=",
+              "text": "Solve the following equation. Show all working: \\(3(x-4)=12\\)",
               "note": "Divide by 3 first, then add 4 to both sides."
             }
           ],
@@ -2580,7 +2580,7 @@
           "id": "hghs2026-y7c15-eq-q1e",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Solve each of the following equations. Show all working. (e) \\(x^2=81\\)",
+          "stem": "Solve the following equation. Show all working: \\(x^2=81\\)",
           "hint": "Both a positive and negative number can square to 81.",
           "steps": [
             {
@@ -2596,7 +2596,7 @@
           "xp": 1,
           "keyPoints": [
             {
-              "text": "Solve each of the following equations. Show all working. (e) \\(x^2=81\\",
+              "text": "Solve the following equation. Show all working: \\(x^2=81\\)",
               "note": "Both a positive and negative number can square to 81."
             }
           ],

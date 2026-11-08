@@ -14113,7 +14113,7 @@
           "id": "hghs2026-y7c23-q3a",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Simplify the following: (a) \\(4bc - 8a + 2bc - a\\)",
+          "stem": "Simplify the following: \\(4bc - 8a + 2bc - a\\)",
           "hint": "Collect the bc terms together and the a terms together.",
           "steps": [
             {
@@ -15879,7 +15879,7 @@
           "id": "hghs2026-y7c23-q1a",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Write an algebraic expression for the statement below: (a) The number of times 3 divides into e",
+          "stem": "Write an algebraic expression for the statement below: The number of times 3 divides into e",
           "hint": "“3 divides into e” asks how many groups of 3 fit in e.",
           "steps": [
             {
@@ -15895,7 +15895,7 @@
           "xp": 1,
           "keyPoints": [
             {
-              "text": "Write an algebraic expression for the statement below: (a) The number ",
+              "text": "Write an algebraic expression for the statement below: The number of times 3 divides into e",
               "note": "“3 divides into e” asks how many groups of 3 fit in e."
             }
           ],
@@ -15917,7 +15917,7 @@
           "id": "hghs2026-y7c23-q1b",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Write an algebraic expression for the statement below: (b) Half of the difference between 20 and g",
+          "stem": "Write an algebraic expression for the statement below: Half of the difference between 20 and g",
           "hint": "Form the difference first, then take half of the whole difference.",
           "steps": [
             {
@@ -15937,7 +15937,7 @@
           "xp": 1,
           "keyPoints": [
             {
-              "text": "Write an algebraic expression for the statement below: (b) Half of the",
+              "text": "Write an algebraic expression for the statement below: Half of the difference between 20 and g",
               "note": "Form the difference first, then take half of the whole difference."
             }
           ],
@@ -40024,7 +40024,7 @@
           "id": "hghs2026-y7c23-q3b",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Simplify the following: (b) \\(5x \\times 4 \\times (-2y)\\)",
+          "stem": "Simplify the following: \\(5x \\times 4 \\times (-2y)\\)",
           "hint": "Multiply the number factors first, including the negative sign.",
           "steps": [
             {
@@ -40066,7 +40066,7 @@
           "id": "hghs2026-y7c23-q4a",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Expand the following expressions by applying distributive law: (a) \\(6(x+y)\\)",
+          "stem": "Expand the following expression by applying distributive law: \\(6(x+y)\\)",
           "hint": "Multiply 6 by x and then by y.",
           "steps": [
             {
@@ -40104,7 +40104,7 @@
           "id": "hghs2026-y7c23-q4b",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Expand the following expressions by applying distributive law: (b) \\(-9(5+2x)\\)",
+          "stem": "Expand the following expression by applying distributive law: \\(-9(5+2x)\\)",
           "hint": "Distribute the negative 9 to both terms.",
           "steps": [
             {
@@ -40142,7 +40142,7 @@
           "id": "hghs2026-y7c23-q4c",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Expand the following expressions by applying distributive law: (c) \\(4n(2n+5m)\\)",
+          "stem": "Expand the following expression by applying distributive law: \\(4n(2n+5m)\\)",
           "hint": "Multiply 4n by each term in the bracket.",
           "steps": [
             {
@@ -56330,7 +56330,7 @@
           "id": "hghs2026-y7c23-q5a",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Factorise the following expressions: (a) \\(4x+8\\)",
+          "stem": "Factorise the following expression: \\(4x+8\\)",
           "hint": "Find the greatest number that divides both terms.",
           "steps": [
             {
@@ -56368,7 +56368,7 @@
           "id": "hghs2026-y7c23-q5b",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Factorise the following expressions: (b) \\(15m-10a\\)",
+          "stem": "Factorise the following expression: \\(15m-10a\\)",
           "hint": "Take out the common factor 5 and check the sign of the second term.",
           "steps": [
             {
@@ -56406,7 +56406,7 @@
           "id": "hghs2026-y7c23-q5c",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Factorise the following expressions: (c) \\(-3m-9\\)",
+          "stem": "Factorise the following expression: \\(-3m-9\\)",
           "hint": "Factor out −3 so the term inside the brackets begins with positive m.",
           "steps": [
             {
@@ -56444,7 +56444,7 @@
           "id": "hghs2026-y7c23-q5d",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Factorise the following expressions: (d) \\(6k^3-2k^2\\)",
+          "stem": "Factorise the following expression: \\(6k^3-2k^2\\)",
           "hint": "Take out the largest common factor of both terms, including powers of k.",
           "steps": [
             {
@@ -56482,7 +56482,7 @@
           "id": "hghs2026-y7c23-q5e",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Factorise the following expressions: (e) \\(\\frac{6ce}{d}-\\frac{12e}{d}\\)",
+          "stem": "Factorise the following expression: \\(\\frac{6ce}{d}-\\frac{12e}{d}\\)",
           "hint": "Factor 6e from the two numerators; keep the common denominator d.",
           "steps": [
             {
@@ -77534,7 +77534,7 @@
           "id": "hghs2026-y7c23-q3c",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Simplify the following: (c) \\(\\frac{15m^2p}{3m^3}\\)",
+          "stem": "Simplify the following: \\(\\frac{15m^2p}{3m^3}\\)",
           "hint": "Divide the coefficients and subtract the powers of m.",
           "steps": [
             {

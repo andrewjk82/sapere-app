@@ -4963,7 +4963,7 @@
           "id": "hghs2026-y7c12-py-q2a",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Find the value of the pronumeral in the following: (a)",
+          "stem": "Find the value of the pronumeral in the following:",
           "hint": "The unknown x is opposite the right angle, so use a²+b²=x².",
           "steps": [
             {
@@ -4990,7 +4990,7 @@
           "xp": 1,
           "keyPoints": [
             {
-              "text": "Find the value of the pronumeral in the following: (a)",
+              "text": "Find the value of the pronumeral in the following:",
               "note": "The unknown x is opposite the right angle, so use a²+b²=x²."
             }
           ],
@@ -5015,7 +5015,7 @@
           "id": "hghs2026-y7c12-py-q2b",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Find the value of the pronumeral in the following: (b)",
+          "stem": "Find the value of the pronumeral in the following:",
           "hint": "The right-angle mark identifies 3x and 4x as the shorter sides.",
           "steps": [
             {
@@ -5042,7 +5042,7 @@
           "xp": 1,
           "keyPoints": [
             {
-              "text": "Find the value of the pronumeral in the following: (b)",
+              "text": "Find the value of the pronumeral in the following:",
               "note": "The right-angle mark identifies 3x and 4x as the shorter sides."
             }
           ],

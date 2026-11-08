@@ -309,7 +309,7 @@
           "id": "hghs2026-y7c9-wm-q2a",
           "type": "review",
           "difficulty": "medium",
-          "stem": "Two cafes on opposite sides of an atrium in a shopping centre are respectively 10 m and 15 m above the ground floor. The cafes are linked by a 20 m escalator. (a) Draw a diagram to represent this information.",
+          "stem": "Two cafes on opposite sides of an atrium in a shopping centre are respectively 10 m and 15 m above the ground floor. The cafes are linked by a 20 m escalator. Draw a diagram to represent this information.",
           "hint": "Draw a horizontal ground line, mark the two different heights, then join the tops with a 20 m sloping line.",
           "steps": [
             {
@@ -349,7 +349,7 @@
           "id": "hghs2026-y7c9-wm-q2b",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Two cafes on opposite sides of an atrium in a shopping centre are respectively 10 m and 15 m above the ground floor. The cafes are linked by a 20 m escalator. (b) Find the horizontal distance across the atrium, between the two cafes. Leave answer in exact form.",
+          "stem": "Two cafes on opposite sides of an atrium in a shopping centre are respectively 10 m and 15 m above the ground floor. The cafes are linked by a 20 m escalator. Find the horizontal distance across the atrium, between the two cafes. Leave answer in exact form.",
           "hint": "The height difference is 15−10=5 m. These 5 m and the horizontal gap form the legs; 20 m is the hypotenuse.",
           "steps": [
             {
@@ -401,7 +401,7 @@
           "id": "hghs2026-y7c9-wm-q3a",
           "type": "review",
           "difficulty": "medium",
-          "stem": "A bacterium splits in two every 5 minutes. New cells also continue splitting in the same way. (a) Construct a tree like diagram that represents a cell splitting for the first 20 minutes.",
+          "stem": "A bacterium splits in two every 5 minutes. New cells also continue splitting in the same way. Construct a tree like diagram that represents a cell splitting for the first 20 minutes.",
           "hint": "Start with one cell at 0 minutes and split every branch into two at each 5-minute mark.",
           "steps": [
             {

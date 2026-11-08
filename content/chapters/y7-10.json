@@ -4621,7 +4621,7 @@
           "id": "hghs2026-y7c10-q2a",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Simplify the following, give your answer with positive indices: (a) \\(9^5\\times9^2\\)",
+          "stem": "Simplify the following, give your answer with positive indices: \\(9^5\\times9^2\\)",
           "hint": "When multiplying powers with the same base, add the exponents.",
           "steps": [
             {
@@ -4659,7 +4659,7 @@
           "id": "hghs2026-y7c10-q2b",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Simplify the following, give your answer with positive indices: (b) \\(\\frac{10^4}{10^{13}}\\)",
+          "stem": "Simplify the following, give your answer with positive indices: \\(\\frac{10^4}{10^{13}}\\)",
           "hint": "Subtract the denominator exponent from the numerator exponent, then rewrite any negative index.",
           "steps": [
             {
@@ -4697,7 +4697,7 @@
           "id": "hghs2026-y7c10-q2c",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Simplify the following, give your answer with positive indices: (c) \\((8^{10})^3\\)",
+          "stem": "Simplify the following, give your answer with positive indices: \\((8^{10})^3\\)",
           "hint": "For a power raised to a power, multiply the exponents.",
           "steps": [
             {
@@ -4735,7 +4735,7 @@
           "id": "hghs2026-y7c10-q2d",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Simplify the following, give your answer with positive indices: (d) \\((4^0\\times3^4\\div3^3)^2\\)",
+          "stem": "Simplify the following, give your answer with positive indices: \\((4^0\\times3^4\\div3^3)^2\\)",
           "hint": "Evaluate 4⁰ first, then combine the powers of 3 inside the brackets.",
           "steps": [
             {

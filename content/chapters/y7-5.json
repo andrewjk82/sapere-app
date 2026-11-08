@@ -2232,7 +2232,7 @@
           "id": "hghs2026-y7c5-ang-q1c",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "State whether the following statements are true (T) or false (F): (c) ",
+          "stem": "State whether the following statement is true (T) or false (F):",
           "hint": "A full revolution turns all the way around to 360°.",
           "steps": [
             {
@@ -2255,7 +2255,7 @@
           "xp": 1,
           "keyPoints": [
             {
-              "text": "(c)",
+              "text": "State whether the following statement is true (T) or false (F):",
               "note": "A full revolution turns all the way around to 360°."
             }
           ],
@@ -2278,7 +2278,7 @@
           "id": "hghs2026-y7c5-ang-q3a",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Find the value of the pronumerals in the following, giving reasons: (a)",
+          "stem": "Find the value of the pronumerals in the following, giving reasons:",
           "hint": "The two smaller angles together make the right angle at B.",
           "steps": [
             {
@@ -2301,7 +2301,7 @@
           "xp": 1,
           "keyPoints": [
             {
-              "text": "Find the value of the pronumerals in the following, giving reasons: (a",
+              "text": "Find the value of the pronumerals in the following, giving reasons:",
               "note": "The two smaller angles together make the right angle at B."
             }
           ],
@@ -2326,7 +2326,7 @@
           "id": "hghs2026-y7c5-ang-q3b",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Find the value of the pronumerals in the following, giving reasons: (b)",
+          "stem": "Find the value of the pronumerals in the following, giving reasons:",
           "hint": "The angle opposite 106° is also 106°; it is split into 30° and x°.",
           "steps": [
             {
@@ -2349,7 +2349,7 @@
           "xp": 1,
           "keyPoints": [
             {
-              "text": "Find the value of the pronumerals in the following, giving reasons: (b",
+              "text": "Find the value of the pronumerals in the following, giving reasons:",
               "note": "The angle opposite 106° is also 106°; it is split into 30° and x°."
             }
           ],
@@ -2471,7 +2471,7 @@
           "id": "hghs2026-y7c5-ang-q1a",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "State whether the following statements are true (T) or false (F): (a) \\(\\angle BGH\\) and \\(\\angle DHF\\) are corresponding angles.",
+          "stem": "State whether the following statement is true (T) or false (F): \\(\\angle BGH\\) and \\(\\angle DHF\\) are corresponding angles.",
           "hint": "Corresponding angles occupy the same corner at each crossing of a transversal.",
           "steps": [
             {
@@ -2517,7 +2517,7 @@
           "id": "hghs2026-y7c5-ang-q1b",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "State whether the following statements are true (T) or false (F): (b) \\(\\angle AGH+\\angle CHG=180^\\circ\\) is because co-interior angles on parallel lines add to 180°.",
+          "stem": "State whether the following statement is true (T) or false (F): \\(\\angle AGH+\\angle CHG=180^\\circ\\) is because co-interior angles on parallel lines add to 180°.",
           "hint": "Check whether both marked angles are inside the parallel lines and on the same side of the transversal.",
           "steps": [
             {
@@ -2570,7 +2570,7 @@
           "id": "hghs2026-y7c5-ang-q3c",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Find the value of the pronumerals in the following, giving reasons: (c)",
+          "stem": "Find the value of the pronumerals in the following, giving reasons:",
           "hint": "Use the straight-line angle pair with 74° first, then match corresponding angles for y.",
           "steps": [
             {
@@ -2596,7 +2596,7 @@
           "xp": 1,
           "keyPoints": [
             {
-              "text": "Find the value of the pronumerals in the following, giving reasons: (c",
+              "text": "Find the value of the pronumerals in the following, giving reasons:",
               "note": "Use the straight-line angle pair with 74° first, then match corresponding angles for y."
             }
           ],
@@ -2621,7 +2621,7 @@
           "id": "hghs2026-y7c5-ang-q3d",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Find the value of the pronumerals in the following, giving reasons: (d)",
+          "stem": "Find the value of the pronumerals in the following, giving reasons:",
           "hint": "Use the parallel lines to transfer the 75° and 34° angles to the two parts of x.",
           "steps": [
             {
@@ -2647,7 +2647,7 @@
           "xp": 1,
           "keyPoints": [
             {
-              "text": "Find the value of the pronumerals in the following, giving reasons: (d",
+              "text": "Find the value of the pronumerals in the following, giving reasons:",
               "note": "Use the parallel lines to transfer the 75° and 34° angles to the two parts of x."
             }
           ],
