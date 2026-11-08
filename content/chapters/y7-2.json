@@ -9820,12 +9820,24 @@
           "hint": "The HCF only includes prime factors common to BOTH numbers, using the lower power. The LCM includes every prime factor, using the higher power.",
           "steps": [
             {
-              "explain": "3 only appears in 432, and 5 only appears in 500 — neither is common to both, so the HCF only uses the shared prime, 2, with the smaller power.",
-              "work": "\\(\\text{HCF}=2^{\\min(4,2)}=2^2\\)"
+              "explain": "Write both numbers as products of prime factors, so the primes can be compared.",
+              "work": "\\(\\begin{aligned}432&=2^4\\times3^3=2\\times2\\times2\\times2\\times3\\times3\\times3\\\\ 500&=2^2\\times5^3=2\\times2\\times5\\times5\\times5\\end{aligned}\\)"
             },
             {
-              "explain": "The LCM uses every prime factor that appears in either number, each raised to its highest power.",
-              "work": "\\(\\text{LCM}=2^{\\max(4,2)}\\times3^3\\times5^3=2^4\\times3^3\\times5^3\\)"
+              "explain": "HCF: multiply only the prime factors that both numbers share. Both numbers contain 2 (four 2s in 432, two 2s in 500), so we can take two 2s. The prime 3 is only in 432 and 5 is only in 500, so they are left out.",
+              "work": "\\(\\text{HCF}=2\\times2=2^2=4\\)"
+            },
+            {
+              "explain": "Check: 4 divides both numbers exactly, and the quotients 108 and 125 have no common factor left.",
+              "work": "\\(432\\div4=108,\\qquad 500\\div4=125\\)"
+            },
+            {
+              "explain": "LCM: multiply every prime that appears in either number, using the larger number of copies of each: four 2s (from 432), three 3s (from 432) and three 5s (from 500).",
+              "work": "\\(\\text{LCM}=2^4\\times3^3\\times5^3\\)"
+            },
+            {
+              "explain": "Check by evaluating: the LCM must be a multiple of both numbers.",
+              "work": "\\(2^4\\times3^3\\times5^3=16\\times27\\times125=54\\,000\\)"
             }
           ],
           "xp": 2
@@ -10186,16 +10198,24 @@
           "hint": "For the HCF take shared primes at the smaller power; for the LCM take every prime at its larger power.",
           "steps": [
             {
-              "explain": "Use the prime factorizations from the two numbers.",
-              "work": "\\(432=2^4\\times3^3,\\quad500=2^2\\times5^3\\)"
+              "explain": "Write both numbers as products of prime factors, so the primes can be compared.",
+              "work": "\\(\\begin{aligned}432&=2^4\\times3^3=2\\times2\\times2\\times2\\times3\\times3\\times3\\\\ 500&=2^2\\times5^3=2\\times2\\times5\\times5\\times5\\end{aligned}\\)"
             },
             {
-              "explain": "Only the prime 2 is shared. For HCF choose its smaller exponent.",
-              "work": "\\(\\operatorname{HCF}=2^{\\min(4,2)}=2^2\\)"
+              "explain": "HCF: multiply only the prime factors that both numbers share. Both numbers contain 2 (four 2s in 432, two 2s in 500), so we can take two 2s. The prime 3 is only in 432 and 5 is only in 500, so they are left out.",
+              "work": "\\(\\text{HCF}=2\\times2=2^2=4\\)"
             },
             {
-              "explain": "For LCM include each prime with its greatest exponent.",
-              "work": "\\(\\operatorname{LCM}=2^4\\times3^3\\times5^3\\)"
+              "explain": "Check: 4 divides both numbers exactly, and the quotients 108 and 125 have no common factor left.",
+              "work": "\\(432\\div4=108,\\qquad 500\\div4=125\\)"
+            },
+            {
+              "explain": "LCM: multiply every prime that appears in either number, using the larger number of copies of each: four 2s (from 432), three 3s (from 432) and three 5s (from 500).",
+              "work": "\\(\\text{LCM}=2^4\\times3^3\\times5^3\\)"
+            },
+            {
+              "explain": "Check by evaluating: the LCM must be a multiple of both numbers.",
+              "work": "\\(2^4\\times3^3\\times5^3=16\\times27\\times125=54\\,000\\)"
             }
           ],
           "timeLimit": 60,
