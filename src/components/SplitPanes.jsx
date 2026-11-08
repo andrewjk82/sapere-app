@@ -57,7 +57,7 @@ export const SplitPanes = ({ layout, split, onSplitChange, first, second, active
     document.addEventListener('visibilitychange', onHidden);
   };
 
-  const tabStyle = (on) => ({ position: 'absolute', inset: 0, minWidth: 0, visibility: on ? 'visible' : 'hidden', pointerEvents: on ? 'auto' : 'none' });
+  const tabStyle = (on) => ({ position: 'absolute', inset: 0, minWidth: 0, minHeight: 0, display: 'flex', flexDirection: 'column', visibility: on ? 'visible' : 'hidden', pointerEvents: on ? 'auto' : 'none' });
   const firstStyle = !split2 ? tabStyle(activePane === 'first')
     : stacked ? { height: `${shown * 100}%`, minHeight: 0, display: 'flex', flexDirection: 'column' }
       : { width: `${shown * 100}%`, minWidth: 0, display: 'flex', flexDirection: 'column' };
