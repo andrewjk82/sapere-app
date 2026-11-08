@@ -4616,6 +4616,158 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "hghs2026-y7c10-q2a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following, give your answer with positive indices: (a) \\(9^5\\times9^2\\)",
+          "hint": "When multiplying powers with the same base, add the exponents.",
+          "steps": [
+            {
+              "explain": "Use the index law that matches the operation shown.",
+              "work": "\\(9^5\\times9^2=9^{5+2}=9^7\\)"
+            },
+            {
+              "explain": "The final answer has only positive indices.",
+              "work": "\\(\\boxed{9^7}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(9^5\\times9^2\\)",
+              "note": "When multiplying powers with the same base, add the exponents."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "q2a"
+          },
+          "options": [
+            "\\(9^7\\)",
+            "\\(9^{10}\\)",
+            "\\(18^7\\)",
+            "\\(9^3\\)"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "hghs2026-y7c10-q2b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following, give your answer with positive indices: (b) \\(\\frac{10^4}{10^{13}}\\)",
+          "hint": "Subtract the denominator exponent from the numerator exponent, then rewrite any negative index.",
+          "steps": [
+            {
+              "explain": "Use the index law that matches the operation shown.",
+              "work": "\\(\\frac{10^4}{10^{13}}=10^{4-13}=10^{-9}=\\frac1{10^9}\\)"
+            },
+            {
+              "explain": "The final answer has only positive indices.",
+              "work": "\\(\\boxed{\\frac{1}{10^9}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{10^4}{10^{13}}\\)",
+              "note": "Subtract the denominator exponent from the numerator exponent, then rewrite any negative index."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "q2b"
+          },
+          "options": [
+            "\\(\\frac{1}{10^7}\\)",
+            "\\(\\frac{1}{10^9}\\)",
+            "\\(10^9\\)",
+            "\\(10^{17}\\)"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "hghs2026-y7c10-q2c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following, give your answer with positive indices: (c) \\((8^{10})^3\\)",
+          "hint": "For a power raised to a power, multiply the exponents.",
+          "steps": [
+            {
+              "explain": "Use the index law that matches the operation shown.",
+              "work": "\\((8^{10})^3=8^{10\\times3}=8^{30}\\)"
+            },
+            {
+              "explain": "The final answer has only positive indices.",
+              "work": "\\(\\boxed{8^{30}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\((8^{10})^3\\)",
+              "note": "For a power raised to a power, multiply the exponents."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "q2c"
+          },
+          "options": [
+            "\\(24^{10}\\)",
+            "\\(8^7\\)",
+            "\\(8^{30}\\)",
+            "\\(8^{13}\\)"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "hghs2026-y7c10-q2d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following, give your answer with positive indices: (d) \\((4^0\\times3^4\\div3^3)^2\\)",
+          "hint": "Evaluate 4⁰ first, then combine the powers of 3 inside the brackets.",
+          "steps": [
+            {
+              "explain": "Use the index law that matches the operation shown.",
+              "work": "\\((1\\times3^{4-3})^2=(3^1)^2=3^2\\)"
+            },
+            {
+              "explain": "The final answer has only positive indices.",
+              "work": "\\(\\boxed{3^2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\((4^0\\times3^4\\div3^3)^2\\)",
+              "note": "Evaluate 4⁰ first, then combine the powers of 3 inside the brackets."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "q2d"
+          },
+          "options": [
+            "\\(3^4\\)",
+            "\\(3^8\\)",
+            "\\(1\\)",
+            "\\(3^2\\)"
+          ],
+          "answer": 3
         }
       ]
     },

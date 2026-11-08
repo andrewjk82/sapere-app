@@ -2423,6 +2423,283 @@
               "note": "Each subpart is a separate equation; show a balanced operation at every line."
             }
           ]
+        },
+        {
+          "id": "hghs2026-y7c15-eq-q1a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve each of the following equations. Show all working. (a) \\(p+12=30\\)",
+          "hint": "Undo adding 12 by subtracting 12 from both sides.",
+          "steps": [
+            {
+              "explain": "Use the inverse operation and do the same thing to both sides.",
+              "work": "\\(p+12=30\\Rightarrow p=30-12=18\\)"
+            },
+            {
+              "explain": "Substitute the value back into the original equation to check it.",
+              "work": "\\(\\boxed{18}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Solve each of the following equations. Show all working. (a) \\(p+12=30",
+              "note": "Undo adding 12 by subtracting 12 from both sides."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "eq-q1a"
+          },
+          "options": [
+            "\\(18\\)",
+            "\\(42\\)",
+            "\\(−18\\)",
+            "\\(2\\)"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "hghs2026-y7c15-eq-q1b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve each of the following equations. Show all working. (b) \\(5x-2=43\\)",
+          "hint": "Undo −2 first, then divide both sides by 5.",
+          "steps": [
+            {
+              "explain": "Use the inverse operation and do the same thing to both sides.",
+              "work": "\\(5x-2=43\\Rightarrow5x=45\\Rightarrow x=9\\)"
+            },
+            {
+              "explain": "Substitute the value back into the original equation to check it.",
+              "work": "\\(\\boxed{9}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Solve each of the following equations. Show all working. (b) \\(5x-2=43",
+              "note": "Undo −2 first, then divide both sides by 5."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "eq-q1b"
+          },
+          "options": [
+            "\\(−9\\)",
+            "\\(9\\)",
+            "\\(41\\)",
+            "\\(\\frac{45}{5}\\)"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "hghs2026-y7c15-eq-q1c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve each of the following equations. Show all working. (c) \\(\\frac{m+2}{3}=11\\)",
+          "hint": "Multiply both sides by 3 before subtracting 2.",
+          "steps": [
+            {
+              "explain": "Use the inverse operation and do the same thing to both sides.",
+              "work": "\\(m+2=33\\Rightarrow m=31\\)"
+            },
+            {
+              "explain": "Substitute the value back into the original equation to check it.",
+              "work": "\\(\\boxed{31}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Solve each of the following equations. Show all working. (c) \\(\\frac{m+",
+              "note": "Multiply both sides by 3 before subtracting 2."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "eq-q1c"
+          },
+          "options": [
+            "\\(33\\)",
+            "\\(29\\)",
+            "\\(31\\)",
+            "\\(\\frac{13}{3}\\)"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "hghs2026-y7c15-eq-q1d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve each of the following equations. Show all working. (d) \\(3(x-4)=12\\)",
+          "hint": "Divide by 3 first, then add 4 to both sides.",
+          "steps": [
+            {
+              "explain": "Use the inverse operation and do the same thing to both sides.",
+              "work": "\\(x-4=4\\Rightarrow x=8\\)"
+            },
+            {
+              "explain": "Substitute the value back into the original equation to check it.",
+              "work": "\\(\\boxed{8}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Solve each of the following equations. Show all working. (d) \\(3(x-4)=",
+              "note": "Divide by 3 first, then add 4 to both sides."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "eq-q1d"
+          },
+          "options": [
+            "\\(0\\)",
+            "\\(4\\)",
+            "\\(16\\)",
+            "\\(8\\)"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "hghs2026-y7c15-eq-q1e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve each of the following equations. Show all working. (e) \\(x^2=81\\)",
+          "hint": "Both a positive and negative number can square to 81.",
+          "steps": [
+            {
+              "explain": "Use the inverse operation and do the same thing to both sides.",
+              "work": "\\(x=\\pm\\sqrt{81}=\\pm9\\)"
+            },
+            {
+              "explain": "Substitute the value back into the original equation to check it.",
+              "work": "\\(\\boxed{x = −9 or x = 9}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Solve each of the following equations. Show all working. (e) \\(x^2=81\\",
+              "note": "Both a positive and negative number can square to 81."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "eq-q1e"
+          },
+          "options": [
+            "\\(x=-9\\text{ or }x=9\\)",
+            "\\(x=9\\text{ only}\\)",
+            "\\(x=−9\\text{ only}\\)",
+            "\\(x = 81\\)"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "hghs2026-y7c15-eq-q2",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Show that \\(M=9\\) is a solution for the equation \\(\\frac{M}{3}+2=-4+M\\).",
+          "hint": "Replace every M with 9, then simplify the left and right sides separately.",
+          "steps": [
+            {
+              "explain": "Substitute 9 for M in both sides of the equation.",
+              "work": "\\(\\frac{9}{3}+2\\quad\\text{and}\\quad-4+9\\)"
+            },
+            {
+              "explain": "Simplify the left side.",
+              "work": "\\(\\frac{9}{3}+2=3+2=5\\)"
+            },
+            {
+              "explain": "Simplify the right side and compare both results.",
+              "work": "\\(-4+9=5\\quad\\therefore\\quad5=5\\)"
+            },
+            {
+              "explain": "Since both sides are equal, 9 is a solution.",
+              "work": "\\(\\boxed{M=9\\text{ is a solution}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Show that \\(M=9\\) is a solution for the equation \\(\\frac{M}{3}+2=-4+M\\)",
+              "note": "Replace every M with 9, then simplify the left and right sides separately."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "eq-q2"
+          },
+          "manual": true,
+          "answer": "Substitution gives 5 = 5, so M = 9 is a solution."
+        },
+        {
+          "id": "hghs2026-y7c15-eq-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given the formula \\(P=2l+2w\\), find \\(l\\) when \\(P=32\\) and \\(w=12\\).",
+          "hint": "Substitute P=32 and w=12, then isolate l.",
+          "steps": [
+            {
+              "explain": "Substitute the given values into the formula.",
+              "work": "\\(32=2l+2(12)\\)"
+            },
+            {
+              "explain": "Multiply 2 by 12, then subtract 24 from both sides.",
+              "work": "\\(32=2l+24\\Rightarrow8=2l\\)"
+            },
+            {
+              "explain": "Divide both sides by 2.",
+              "work": "\\(l=4\\)"
+            },
+            {
+              "explain": "Check: 2(4)+2(12)=32.",
+              "work": "\\(\\boxed{l=4}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Given the formula \\(P=2l+2w\\), find \\(l\\) when \\(P=32\\) and \\(w=12\\).",
+              "note": "Substitute P=32 and w=12, then isolate l."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "eq-q3"
+          },
+          "options": [
+            "\\(10\\)",
+            "\\(16\\)",
+            "\\(4\\)",
+            "\\(8\\)"
+          ],
+          "answer": 2
         }
       ]
     },
@@ -3376,6 +3653,52 @@
               "note": "Add 10 to each person’s present age before combining their ages."
             }
           ]
+        },
+        {
+          "id": "hghs2026-y7c15-eq-q4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Five times a number is the same as 6 more than 3 times the number. Find the number.",
+          "hint": "Let the number be x. Translate the statement into an equation.",
+          "steps": [
+            {
+              "explain": "Let the unknown number be x. “Five times a number” is 5x; “6 more than 3 times” is 3x+6.",
+              "work": "\\(5x=3x+6\\)"
+            },
+            {
+              "explain": "Subtract 3x from both sides.",
+              "work": "\\(2x=6\\)"
+            },
+            {
+              "explain": "Divide both sides by 2.",
+              "work": "\\(x=3\\)"
+            },
+            {
+              "explain": "Check both descriptions: 5×3=15 and 3×3+6=15.",
+              "work": "\\(\\boxed{3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Five times a number is the same as 6 more than 3 times the number. Fin",
+              "note": "Let the number be x. Translate the statement into an equation."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "eq-q4"
+          },
+          "options": [
+            "\\(2\\)",
+            "\\(6\\)",
+            "\\(−3\\)",
+            "\\(3\\)"
+          ],
+          "answer": 3
         }
       ]
     }

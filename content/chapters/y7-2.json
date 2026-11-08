@@ -5933,6 +5933,120 @@
             "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
             "sourceQuestion": "Non-calculator Q17"
           }
+        },
+        {
+          "id": "hghs2026-y7c2-q1a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the following in expanded form: (a) \\(2^4\\times4^2\\)",
+          "hint": "An exponent tells how many copies of its base to multiply.",
+          "steps": [
+            {
+              "explain": "Read each exponent as a count of repeated multiplication.",
+              "work": "\\(2^4=2\\times2\\times2\\times2,\\quad4^2=4\\times4\\)"
+            },
+            {
+              "explain": "Write each repeated factor in the same order as the original expression.",
+              "work": "\\(\\boxed{2\\times2\\times2\\times2\\times4\\times4}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(2^4\\times4^2\\)",
+              "note": "An exponent tells how many copies of its base to multiply."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "q1a"
+          },
+          "options": [
+            "\\(2\\times2\\times2\\times2\\times4\\)",
+            "\\(2\\times2\\times2\\times2\\times4\\times4\\)",
+            "\\(2\\times4\\times6\\)",
+            "\\(2^6\\times4\\)"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "hghs2026-y7c2-q1b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the following in expanded form: (b) \\(\\frac{6^4}{6^5}\\)",
+          "hint": "Expand the numerator and denominator separately before cancelling.",
+          "steps": [
+            {
+              "explain": "Read each exponent as a count of repeated multiplication.",
+              "work": "\\(6^4=6\\times6\\times6\\times6,\\quad6^5=6\\times6\\times6\\times6\\times6\\)"
+            },
+            {
+              "explain": "Write each repeated factor in the same order as the original expression.",
+              "work": "\\(\\boxed{\\frac{6\\times6\\times6\\times6}{6\\times6\\times6\\times6\\times6}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{6^4}{6^5}\\)",
+              "note": "Expand the numerator and denominator separately before cancelling."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "q1b"
+          },
+          "options": [
+            "\\(\\frac{6}{6}\\)",
+            "\\(\\frac{6\\times6}{6\\times6\\times6}\\)",
+            "\\(\\frac{6\\times6\\times6\\times6}{6\\times6\\times6\\times6\\times6}\\)",
+            "\\(6\\times6\\times6\\times6\\times6\\)"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "hghs2026-y7c2-q1c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the following in expanded form: (c) \\((5^x)^3\\)",
+          "hint": "The outside exponent 3 means multiply the entire factor 5^x three times.",
+          "steps": [
+            {
+              "explain": "Read each exponent as a count of repeated multiplication.",
+              "work": "\\((5^x)^3=5^x\\times5^x\\times5^x\\)"
+            },
+            {
+              "explain": "Write each repeated factor in the same order as the original expression.",
+              "work": "\\(\\boxed{5^x\\times5^x\\times5^x}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\((5^x)^3\\)",
+              "note": "The outside exponent 3 means multiply the entire factor 5^x three times."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "q1c"
+          },
+          "options": [
+            "\\(5^{x+3}\\)",
+            "\\(5^x\\times3\\)",
+            "\\(5\\times5\\times5\\times x\\)",
+            "\\(5^x\\times5^x\\times5^x\\)"
+          ],
+          "answer": 3
         }
       ]
     },
@@ -7544,6 +7658,92 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 215\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Blank factor tree for 24\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><text x=\"190\" y=\"28\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#1e293b\">24</text><line x1=\"190\" y1=\"34\" x2=\"120\" y2=\"80\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"190\" y1=\"34\" x2=\"260\" y2=\"80\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"260\" y1=\"86\" x2=\"220\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"260\" y1=\"86\" x2=\"300\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/></g></svg>"
           }
+        },
+        {
+          "id": "hghs2026-y7c2-q6a",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "(a) Draw a factor tree for each of the numbers 432 and 500.",
+          "hint": "Split each number into factor pairs until every branch ends in a prime.",
+          "steps": [
+            {
+              "explain": "Start each tree by splitting the number into two factors. Continue splitting any composite number.",
+              "work": "\\(432=16\\times27,\\quad500=20\\times25\\)"
+            },
+            {
+              "explain": "Break the factors down to primes. The prime leaves multiply back to the original numbers.",
+              "work": "\\(432=2\\times2\\times2\\times2\\times3\\times3\\times3\\)"
+            },
+            {
+              "explain": "Group equal primes and write repeated multiplication using indices.",
+              "work": "\\(432=2^4\\times3^3,\\quad500=2^2\\times5^3\\)"
+            },
+            {
+              "explain": "A complete worked factor-tree result is shown; other valid splitting orders are also correct.",
+              "work": "\\(500=2^2\\times5^3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 620 210\" width=\"620\" height=\"210\" style=\"width:50%;height:auto;max-width:100%\"><line x1=\"150\" y1=\"32\" x2=\"95\" y2=\"66\" stroke=\"#64748b\" stroke-width=\"1.3\"/><line x1=\"150\" y1=\"32\" x2=\"205\" y2=\"66\" stroke=\"#64748b\" stroke-width=\"1.3\"/><line x1=\"95\" y1=\"79\" x2=\"65\" y2=\"114\" stroke=\"#64748b\" stroke-width=\"1.3\"/><line x1=\"95\" y1=\"79\" x2=\"125\" y2=\"114\" stroke=\"#64748b\" stroke-width=\"1.3\"/><line x1=\"205\" y1=\"79\" x2=\"180\" y2=\"114\" stroke=\"#64748b\" stroke-width=\"1.3\"/><line x1=\"205\" y1=\"79\" x2=\"230\" y2=\"114\" stroke=\"#64748b\" stroke-width=\"1.3\"/><line x1=\"65\" y1=\"127\" x2=\"48\" y2=\"164\" stroke=\"#64748b\" stroke-width=\"1.3\"/><line x1=\"65\" y1=\"127\" x2=\"77\" y2=\"164\" stroke=\"#64748b\" stroke-width=\"1.3\"/><line x1=\"125\" y1=\"127\" x2=\"108\" y2=\"164\" stroke=\"#64748b\" stroke-width=\"1.3\"/><line x1=\"125\" y1=\"127\" x2=\"138\" y2=\"164\" stroke=\"#64748b\" stroke-width=\"1.3\"/><line x1=\"230\" y1=\"127\" x2=\"215\" y2=\"164\" stroke=\"#64748b\" stroke-width=\"1.3\"/><line x1=\"230\" y1=\"127\" x2=\"245\" y2=\"164\" stroke=\"#64748b\" stroke-width=\"1.3\"/><line x1=\"510\" y1=\"25\" x2=\"465\" y2=\"72\" stroke=\"#64748b\" stroke-width=\"1.3\"/><line x1=\"510\" y1=\"25\" x2=\"555\" y2=\"72\" stroke=\"#64748b\" stroke-width=\"1.3\"/><line x1=\"465\" y1=\"72\" x2=\"440\" y2=\"120\" stroke=\"#64748b\" stroke-width=\"1.3\"/><line x1=\"465\" y1=\"72\" x2=\"490\" y2=\"120\" stroke=\"#64748b\" stroke-width=\"1.3\"/><line x1=\"555\" y1=\"72\" x2=\"530\" y2=\"120\" stroke=\"#64748b\" stroke-width=\"1.3\"/><line x1=\"555\" y1=\"72\" x2=\"580\" y2=\"120\" stroke=\"#64748b\" stroke-width=\"1.3\"/><line x1=\"440\" y1=\"120\" x2=\"425\" y2=\"170\" stroke=\"#64748b\" stroke-width=\"1.3\"/><line x1=\"440\" y1=\"120\" x2=\"455\" y2=\"170\" stroke=\"#64748b\" stroke-width=\"1.3\"/><text x=\"150\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">432</text><text x=\"95\" y=\"68\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">16</text><text x=\"205\" y=\"68\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">27</text><text x=\"65\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">4</text><text x=\"125\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">4</text><text x=\"180\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">3</text><text x=\"230\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">9</text><text x=\"48\" y=\"165\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">2</text><text x=\"77\" y=\"165\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">2</text><text x=\"108\" y=\"165\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">2</text><text x=\"138\" y=\"165\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">2</text><text x=\"215\" y=\"165\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">3</text><text x=\"245\" y=\"165\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">3</text><text x=\"510\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">500</text><text x=\"465\" y=\"68\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">20</text><text x=\"555\" y=\"68\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">25</text><text x=\"440\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">4</text><text x=\"490\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">5</text><text x=\"530\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">5</text><text x=\"580\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">5</text><text x=\"425\" y=\"165\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">2</text><text x=\"455\" y=\"165\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">2</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "(a) Draw a factor tree for each of the numbers 432 and 500.",
+              "note": "Split each number into factor pairs until every branch ends in a prime."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "q6a"
+          },
+          "manual": true,
+          "answer": "432 = 2^4×3^3; 500 = 2^2×5^3"
+        },
+        {
+          "id": "hghs2026-y7c2-q6b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "(b) Write 432 and 500 in index form as the product of prime factors.",
+          "hint": "Use prime factorisation, then count how many times each prime appears.",
+          "steps": [
+            {
+              "explain": "For 432, factor into primes: 432 = 16 × 27.",
+              "work": "\\(16=2^4,\\quad27=3^3\\)"
+            },
+            {
+              "explain": "For 500, factor into primes: 500 = 4 × 125.",
+              "work": "\\(4=2^2,\\quad125=5^3\\)"
+            },
+            {
+              "explain": "Write each as a product of prime powers.",
+              "work": "\\(432=2^4\\times3^3,\\quad500=2^2\\times5^3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "(b) Write 432 and 500 in index form as the product of prime factors.",
+              "note": "Use prime factorisation, then count how many times each prime appears."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "q6b"
+          },
+          "options": [
+            "\\(\\text{432}=2^3\\times3^3;\\quad \\text{500}=2^2\\times5^3\\)",
+            "\\(432=2^4\\times3^3;\\quad 500=2^2\\times5^3\\)",
+            "\\(432=2^4\\times3^3;\\quad 500=2^3\\times5^3\\)",
+            "\\(\\text{432}=2^3\\times3^4;\\quad \\text{500}=2^3\\times5^2\\)"
+          ],
+          "answer": 2
         }
       ]
     },
@@ -8627,6 +8827,120 @@
             "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
             "sourceQuestion": "Non-calculator Q16"
           }
+        },
+        {
+          "id": "hghs2026-y7c2-q4a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the following expressions: (a) \\(3^3+2\\times5^2\\)",
+          "hint": "Use order of operations: powers first, then multiplication, then addition.",
+          "steps": [
+            {
+              "explain": "Evaluate powers and roots before combining any operations.",
+              "work": "\\(3^3=27,\\quad5^2=25,\\quad2\\times25=50,\\quad27+50=77\\)"
+            },
+            {
+              "explain": "Check by reversing the operation.",
+              "work": "\\(\\boxed{77}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(3^3+2\\times5^2\\)",
+              "note": "Use order of operations: powers first, then multiplication, then addition."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "q4a"
+          },
+          "options": [
+            "\\(79\\)",
+            "\\(77\\)",
+            "\\(125\\)",
+            "\\(52\\)"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "hghs2026-y7c2-q4b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the following expressions: (b) \\(\\sqrt{49}\\)",
+          "hint": "The square-root symbol asks for the non-negative number whose square is 49.",
+          "steps": [
+            {
+              "explain": "Evaluate powers and roots before combining any operations.",
+              "work": "\\(7^2=49,\\quad\\sqrt{49}=7\\)"
+            },
+            {
+              "explain": "Check by reversing the operation.",
+              "work": "\\(\\boxed{7}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(\\sqrt{49}\\)",
+              "note": "The square-root symbol asks for the non-negative number whose square is 49."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "q4b"
+          },
+          "options": [
+            "\\(49\\)",
+            "\\(\\pm7\\)",
+            "\\(7\\)",
+            "\\(−7\\)"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "hghs2026-y7c2-q4c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the following expressions: (c) \\(\\sqrt[3]{-216}\\)",
+          "hint": "Find the number that gives −216 when multiplied by itself three times.",
+          "steps": [
+            {
+              "explain": "Evaluate powers and roots before combining any operations.",
+              "work": "\\((-6)^3=(-6)(-6)(-6)=-216\\)"
+            },
+            {
+              "explain": "Check by reversing the operation.",
+              "work": "\\(\\boxed{−6}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(\\sqrt[3]{-216}\\)",
+              "note": "Find the number that gives −216 when multiplied by itself three times."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "q4c"
+          },
+          "options": [
+            "\\(6\\)",
+            "\\(−72\\)",
+            "\\(−8\\)",
+            "\\(−6\\)"
+          ],
+          "answer": 3
         }
       ]
     },
@@ -9863,6 +10177,48 @@
             "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
             "sourceQuestion": "Non-calculator Q20"
           }
+        },
+        {
+          "id": "hghs2026-y7c2-q6c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "(c) Express the HCF and LCM of 432 and 500 in index form as the product of prime factors.",
+          "hint": "For the HCF take shared primes at the smaller power; for the LCM take every prime at its larger power.",
+          "steps": [
+            {
+              "explain": "Use the prime factorizations from the two numbers.",
+              "work": "\\(432=2^4\\times3^3,\\quad500=2^2\\times5^3\\)"
+            },
+            {
+              "explain": "Only the prime 2 is shared. For HCF choose its smaller exponent.",
+              "work": "\\(\\operatorname{HCF}=2^{\\min(4,2)}=2^2\\)"
+            },
+            {
+              "explain": "For LCM include each prime with its greatest exponent.",
+              "work": "\\(\\operatorname{LCM}=2^4\\times3^3\\times5^3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "(c) Express the HCF and LCM of 432 and 500 in index form as the produc",
+              "note": "For the HCF take shared primes at the smaller power; for the LCM take every prime at its larger power."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "q6c"
+          },
+          "options": [
+            "\\(\\text{HCF}= 2^4;\\quad \\text{LCM}= 2^2\\times3^3\\times5^3\\)",
+            "\\(\\text{HCF}= 2^2\\times3^3;\\quad \\text{LCM}= 2^4\\times5^3\\)",
+            "\\(\\text{HCF}= 2;\\quad \\text{LCM}= 2^4\\times3^3\\times5^3\\)",
+            "\\(\\text{HCF}= 2^2;\\quad \\text{LCM}= 2^4\\times3^3\\times5^3\\)"
+          ],
+          "answer": 3
         }
       ]
     },
@@ -10870,6 +11226,48 @@
             "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
             "sourceQuestion": "Non-calculator Q22"
           }
+        },
+        {
+          "id": "hghs2026-y7c2-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the smallest number that is greater than 1000 and is divisible by 6.",
+          "hint": "A number divisible by 6 must be even and divisible by 3.",
+          "steps": [
+            {
+              "explain": "Start just above 1000 and test the next even numbers: 1002, 1004, …",
+              "work": "\\(1002\\text{ is even}\\)"
+            },
+            {
+              "explain": "Check divisibility by 3 by adding the digits.",
+              "work": "\\(1+0+0+2=3\\text{, which is divisible by }3\\)"
+            },
+            {
+              "explain": "So 1002 is divisible by both 2 and 3, hence by 6, and it is the first such number.",
+              "work": "\\(1002\\div6=167\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Find the smallest number that is greater than 1000 and is divisible by",
+              "note": "A number divisible by 6 must be even and divisible by 3."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "q3"
+          },
+          "options": [
+            "\\(1002\\)",
+            "\\(1001\\)",
+            "\\(1004\\)",
+            "\\(1006\\)"
+          ],
+          "answer": 0
         }
       ]
     },
@@ -14630,6 +15028,52 @@
             "exam:year7ch2j"
           ],
           "xp": 2
+        },
+        {
+          "id": "hghs2026-y7c2-q5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the missing whole number, represented by the circle, to make the number sentence true: \\([3\\times\\circ^2+(\\sqrt{25}-\\circ)]=[\\sqrt{\\circ}\\times9\\times3-5]\\)",
+          "hint": "Try values that make the square root on the right a whole number, then check both sides.",
+          "steps": [
+            {
+              "explain": "The same whole number goes in every circle. Test n=4 because √n must be a whole number.",
+              "work": "\\(\\sqrt4=2,\\quad\\sqrt{25}=5\\)"
+            },
+            {
+              "explain": "Evaluate the left side carefully: square first, then multiply, then add the bracket.",
+              "work": "\\(3(4^2)+(5-4)=3(16)+1=49\\)"
+            },
+            {
+              "explain": "Evaluate the right side and compare.",
+              "work": "\\(\\sqrt4\\times9\\times3-5=2\\times27-5=49\\)"
+            },
+            {
+              "explain": "Both sides equal 49, so the missing number is 4.",
+              "work": "\\(\\boxed{4}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Find the missing whole number, represented by the circle, to make the ",
+              "note": "Try values that make the square root on the right a whole number, then check both sides."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "q5"
+          },
+          "options": [
+            "\\(4\\)",
+            "\\(2\\)",
+            "\\(3\\)",
+            "\\(5\\)"
+          ],
+          "answer": 0
         }
       ]
     }

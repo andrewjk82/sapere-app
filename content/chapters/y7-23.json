@@ -14108,6 +14108,48 @@
             "sourceQuestion": 36,
             "year": "Y7"
           }
+        },
+        {
+          "id": "hghs2026-y7c23-q3a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following: (a) \\(4bc - 8a + 2bc - a\\)",
+          "hint": "Collect the bc terms together and the a terms together.",
+          "steps": [
+            {
+              "explain": "Only like terms can be combined. The two bc terms are 4bc and 2bc.",
+              "work": "\\(4bc+2bc=6bc\\)"
+            },
+            {
+              "explain": "The a terms are both negative: −8a and −a.",
+              "work": "\\(-8a-a=-9a\\)"
+            },
+            {
+              "explain": "Put the two simplified groups together.",
+              "work": "\\(4bc-8a+2bc-a=6bc-9a\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(4bc - 8a + 2bc - a\\)",
+              "note": "Collect the bc terms together and the a terms together."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "q3a"
+          },
+          "options": [
+            "\\(2bc-9a\\)",
+            "\\(6bc-9\\)",
+            "\\(6bc-9a\\)",
+            "\\(6bc-7a\\)"
+          ],
+          "answer": 2
         }
       ]
     },
@@ -15832,6 +15874,86 @@
             }
           ],
           "xp": 1
+        },
+        {
+          "id": "hghs2026-y7c23-q1a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write an algebraic expression for the statement below: (a) The number of times 3 divides into e",
+          "hint": "“3 divides into e” asks how many groups of 3 fit in e.",
+          "steps": [
+            {
+              "explain": "“3 divides into e” means divide e by 3. Put e first, then divide by 3.",
+              "work": "\\(e\\div3=\\frac{e}{3}\\)"
+            },
+            {
+              "explain": "This is different from 3 divided by e; the divisor is 3.",
+              "work": "\\(\\boxed{\\frac{e}{3}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Write an algebraic expression for the statement below: (a) The number ",
+              "note": "“3 divides into e” asks how many groups of 3 fit in e."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "q1a"
+          },
+          "options": [
+            "\\(\\frac{3}{e}\\)",
+            "\\(3e\\)",
+            "\\(e-3\\)",
+            "\\(\\frac{e}{3}\\)"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "hghs2026-y7c23-q1b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write an algebraic expression for the statement below: (b) Half of the difference between 20 and g",
+          "hint": "Form the difference first, then take half of the whole difference.",
+          "steps": [
+            {
+              "explain": "“The difference between 20 and g” is 20 minus g.",
+              "work": "\\(20-g\\)"
+            },
+            {
+              "explain": "“Half of” means divide that entire difference by 2.",
+              "work": "\\(\\frac{20-g}{2}\\)"
+            },
+            {
+              "explain": "Keep the brackets in the numerator so the order is clear.",
+              "work": "\\(\\boxed{\\frac{20-g}{2}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Write an algebraic expression for the statement below: (b) Half of the",
+              "note": "Form the difference first, then take half of the whole difference."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "q1b"
+          },
+          "options": [
+            "\\(\\frac{20-g}{2}\\)",
+            "\\(20-\\frac{g}{2}\\)",
+            "\\(\\frac{g-20}{2}\\)",
+            "\\(2(20-g)\\)"
+          ],
+          "answer": 0
         }
       ]
     },
@@ -39855,6 +39977,204 @@
             "sourceQuestion": 20,
             "year": "Y7"
           }
+        },
+        {
+          "id": "hghs2026-y7c23-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Rewrite into the conventional algebraic notation: \\(-8 \\div (k + 4 \\times j)\\)",
+          "hint": "Do the multiplication inside the brackets first; the whole bracket is the divisor.",
+          "steps": [
+            {
+              "explain": "Inside the brackets, write multiplication without the multiplication sign: 4 × j becomes 4j.",
+              "work": "\\(k+4\\times j=k+4j\\)"
+            },
+            {
+              "explain": "The brackets show that all of k+4j is the divisor.",
+              "work": "\\(-8\\div(k+4j)=-\\frac{8}{k+4j}\\)"
+            },
+            {
+              "explain": "The conventional fraction bar keeps the entire divisor underneath.",
+              "work": "\\(\\boxed{-\\frac{8}{k+4j}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Rewrite into the conventional algebraic notation: \\(-8 \\div (k + 4 \\times",
+              "note": "Do the multiplication inside the brackets first; the whole bracket is the divisor."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "q2"
+          },
+          "options": [
+            "\\(-\\frac{8}{k+4}j\\)",
+            "\\(-\\frac{8}{k+4j}\\)",
+            "\\(-\\frac{8}{k}+4j\\)",
+            "\\(-8k+4j\\)"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "hghs2026-y7c23-q3b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following: (b) \\(5x \\times 4 \\times (-2y)\\)",
+          "hint": "Multiply the number factors first, including the negative sign.",
+          "steps": [
+            {
+              "explain": "Multiply 5 by 4, then multiply by −2.",
+              "work": "\\(5\\times4\\times(-2)=20\\times(-2)=-40\\)"
+            },
+            {
+              "explain": "The variable factors are x and y, so write them together as xy.",
+              "work": "\\(x\\times y=xy\\)"
+            },
+            {
+              "explain": "Combine the numerical and variable parts.",
+              "work": "\\(5x\\times4\\times(-2y)=-40xy\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(5x \\times 4 \\times (-2y)\\)",
+              "note": "Multiply the number factors first, including the negative sign."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "q3b"
+          },
+          "options": [
+            "\\(40xy\\)",
+            "\\(-20xy\\)",
+            "\\(-40x+y\\)",
+            "\\(-40xy\\)"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "hghs2026-y7c23-q4a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand the following expressions by applying distributive law: (a) \\(6(x+y)\\)",
+          "hint": "Multiply 6 by x and then by y.",
+          "steps": [
+            {
+              "explain": "Multiply 6 by each term inside the brackets.",
+              "work": "\\(6(x+y)=6x+6y\\)"
+            },
+            {
+              "explain": "Check that every term inside the brackets was multiplied once.",
+              "work": "\\(\\boxed{6x+6y}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(6(x+y)\\)",
+              "note": "Multiply 6 by x and then by y."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "q4a"
+          },
+          "options": [
+            "\\(x+6y\\)",
+            "\\(6x+6y\\)",
+            "\\(6xy\\)",
+            "\\(6x+y\\)"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "hghs2026-y7c23-q4b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand the following expressions by applying distributive law: (b) \\(-9(5+2x)\\)",
+          "hint": "Distribute the negative 9 to both terms.",
+          "steps": [
+            {
+              "explain": "Multiply −9 by both 5 and 2x.",
+              "work": "\\(-9\\times5=-45,\\quad -9\\times2x=-18x\\)"
+            },
+            {
+              "explain": "Check that every term inside the brackets was multiplied once.",
+              "work": "\\(\\boxed{-45-18x}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(-9(5+2x)\\)",
+              "note": "Distribute the negative 9 to both terms."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "q4b"
+          },
+          "options": [
+            "\\(-14x\\)",
+            "\\(-45-2x\\)",
+            "\\(-45-18x\\)",
+            "\\(-45+18x\\)"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "hghs2026-y7c23-q4c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand the following expressions by applying distributive law: (c) \\(4n(2n+5m)\\)",
+          "hint": "Multiply 4n by each term in the bracket.",
+          "steps": [
+            {
+              "explain": "Multiply 4n by both terms; remember n × n = n².",
+              "work": "\\(4n(2n)+4n(5m)=8n^2+20mn\\)"
+            },
+            {
+              "explain": "Check that every term inside the brackets was multiplied once.",
+              "work": "\\(\\boxed{8n^2+20mn}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(4n(2n+5m)\\)",
+              "note": "Multiply 4n by each term in the bracket."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "q4c"
+          },
+          "options": [
+            "\\(8n^2+20m\\)",
+            "\\(6n^2+20mn\\)",
+            "\\(8n^2+20n\\)",
+            "\\(8n^2+20mn\\)"
+          ],
+          "answer": 3
         }
       ]
     },
@@ -56005,6 +56325,196 @@
             "sourceQuestion": 20,
             "year": "Y7"
           }
+        },
+        {
+          "id": "hghs2026-y7c23-q5a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise the following expressions: (a) \\(4x+8\\)",
+          "hint": "Find the greatest number that divides both terms.",
+          "steps": [
+            {
+              "explain": "Identify the greatest common factor in both terms.",
+              "work": "\\(4x+8=4(x+2)\\)"
+            },
+            {
+              "explain": "Factor it out and check by multiplying back.",
+              "work": "\\(\\boxed{4(x+2)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(4x+8\\)",
+              "note": "Find the greatest number that divides both terms."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "q5a"
+          },
+          "options": [
+            "\\(4(x+2)\\)",
+            "\\(4(x+8)\\)",
+            "\\(2(2x+8)\\)",
+            "\\(x(4+8)\\)"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "hghs2026-y7c23-q5b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise the following expressions: (b) \\(15m-10a\\)",
+          "hint": "Take out the common factor 5 and check the sign of the second term.",
+          "steps": [
+            {
+              "explain": "Identify the greatest common factor in both terms.",
+              "work": "\\(15m-10a=5(3m-2a)\\)"
+            },
+            {
+              "explain": "Factor it out and check by multiplying back.",
+              "work": "\\(\\boxed{5(3m-2a)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(15m-10a\\)",
+              "note": "Take out the common factor 5 and check the sign of the second term."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "q5b"
+          },
+          "options": [
+            "\\(5(3m-2) a\\)",
+            "\\(5(3m-2a)\\)",
+            "\\(5(3m+2a)\\)",
+            "\\(3(5m-10a)\\)"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "hghs2026-y7c23-q5c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise the following expressions: (c) \\(-3m-9\\)",
+          "hint": "Factor out −3 so the term inside the brackets begins with positive m.",
+          "steps": [
+            {
+              "explain": "Identify the greatest common factor in both terms.",
+              "work": "\\(-3m-9=-3(m+3)\\)"
+            },
+            {
+              "explain": "Factor it out and check by multiplying back.",
+              "work": "\\(\\boxed{-3(m+3)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(-3m-9\\)",
+              "note": "Factor out −3 so the term inside the brackets begins with positive m."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "q5c"
+          },
+          "options": [
+            "\\(3(-m+3)\\)",
+            "\\(-3m(1+9)\\)",
+            "\\(-3(m+3)\\)",
+            "\\(-3(m-3)\\)"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "hghs2026-y7c23-q5d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise the following expressions: (d) \\(6k^3-2k^2\\)",
+          "hint": "Take out the largest common factor of both terms, including powers of k.",
+          "steps": [
+            {
+              "explain": "Identify the greatest common factor in both terms.",
+              "work": "\\(6k^3-2k^2=2k^2(3k-1)\\)"
+            },
+            {
+              "explain": "Factor it out and check by multiplying back.",
+              "work": "\\(\\boxed{2k^2(3k-1)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(6k^3-2k^2\\)",
+              "note": "Take out the largest common factor of both terms, including powers of k."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "q5d"
+          },
+          "options": [
+            "\\(2k(3k^2-1)\\)",
+            "\\(2k^2(3k+1)\\)",
+            "\\(k^2(6k-2)\\)",
+            "\\(2k^2(3k-1)\\)"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "hghs2026-y7c23-q5e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise the following expressions: (e) \\(\\frac{6ce}{d}-\\frac{12e}{d}\\)",
+          "hint": "Factor 6e from the two numerators; keep the common denominator d.",
+          "steps": [
+            {
+              "explain": "Identify the greatest common factor in both terms.",
+              "work": "\\(\\frac{6ce-12e}{d}=\\frac{6e(c-2)}{d}\\)"
+            },
+            {
+              "explain": "Factor it out and check by multiplying back.",
+              "work": "\\(\\boxed{\\frac{6e(c-2)}{d}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{6ce}{d}-\\frac{12e}{d}\\)",
+              "note": "Factor 6e from the two numerators; keep the common denominator d."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "q5e"
+          },
+          "options": [
+            "\\(\\frac{6e(c-2)}{d}\\)",
+            "\\(\\frac{6e(c+2)}{d}\\)",
+            "\\(\\frac{6c-12e}{d}\\)",
+            "\\(6e(c-2d)\\)"
+          ],
+          "answer": 0
         }
       ]
     },
@@ -77019,6 +77529,48 @@
             "sourceQuestion": 15,
             "year": "Y7"
           }
+        },
+        {
+          "id": "hghs2026-y7c23-q3c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following: (c) \\(\\frac{15m^2p}{3m^3}\\)",
+          "hint": "Divide the coefficients and subtract the powers of m.",
+          "steps": [
+            {
+              "explain": "Divide the number coefficients: 15 ÷ 3 = 5.",
+              "work": "\\(\\frac{15}{3}=5\\)"
+            },
+            {
+              "explain": "For m, subtract the denominator exponent from the numerator exponent.",
+              "work": "\\(\\frac{m^2}{m^3}=m^{2-3}=m^{-1}=\\frac1m\\)"
+            },
+            {
+              "explain": "The p appears only in the numerator, so it stays there.",
+              "work": "\\(\\frac{15m^2p}{3m^3}=\\frac{5p}{m}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{15m^2p}{3m^3}\\)",
+              "note": "Divide the coefficients and subtract the powers of m."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "q3c"
+          },
+          "options": [
+            "\\(\\frac{5p}{m}\\)",
+            "\\(\\frac{3p}{m}\\)",
+            "\\(5mp\\)",
+            "\\(5pm\\)"
+          ],
+          "answer": 0
         }
       ]
     }

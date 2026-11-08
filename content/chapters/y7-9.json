@@ -258,6 +258,280 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 190\" width=\"76%\" style=\"max-width:380px;display:block;margin:0 auto\" role=\"img\" aria-label=\"Four connected matchstick squares\"><g font-family=\"Arial, sans-serif\" fill=\"#1e293b\"><line x1=\"86\" y1=\"62\" x2=\"130\" y2=\"62\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"86\" y1=\"62\" x2=\"86\" y2=\"106\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"62\" x2=\"130\" y2=\"106\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"86\" y1=\"106\" x2=\"130\" y2=\"106\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"62\" x2=\"174\" y2=\"62\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"174\" y1=\"62\" x2=\"174\" y2=\"106\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"106\" x2=\"174\" y2=\"106\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"86\" y1=\"106\" x2=\"86\" y2=\"150\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"106\" x2=\"130\" y2=\"150\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"86\" y1=\"150\" x2=\"130\" y2=\"150\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"174\" y1=\"106\" x2=\"174\" y2=\"150\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"150\" x2=\"174\" y2=\"150\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/></g></svg>"
           }
+        },
+        {
+          "id": "hghs2026-y7c9-wm-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If you multiply Liam’s favourite number by 3 and add 1, you get the same answer as if you multiplied the number by 5 and took away 11. What is Liam’s favourite number?",
+          "hint": "Represent the unknown by x and set the two descriptions equal.",
+          "steps": [
+            {
+              "explain": "Let x be Liam’s favourite number. Translate each description separately.",
+              "work": "\\(3x+1=5x-11\\)"
+            },
+            {
+              "explain": "Subtract 3x from both sides, then add 11 to both sides.",
+              "work": "\\(1=2x-11\\Rightarrow12=2x\\)"
+            },
+            {
+              "explain": "Divide both sides by 2.",
+              "work": "\\(x=6\\)"
+            },
+            {
+              "explain": "Check: 3(6)+1=19 and 5(6)−11=19.",
+              "work": "\\(\\boxed{6}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "If you multiply Liam’s favourite number by 3 and add 1, you get the sa",
+              "note": "Represent the unknown by x and set the two descriptions equal."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "wm-q1"
+          },
+          "options": [
+            "\\(6\\)",
+            "\\(5\\)",
+            "\\(12\\)",
+            "\\(−6\\)"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "hghs2026-y7c9-wm-q2a",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Two cafes on opposite sides of an atrium in a shopping centre are respectively 10 m and 15 m above the ground floor. The cafes are linked by a 20 m escalator. (a) Draw a diagram to represent this information.",
+          "hint": "Draw a horizontal ground line, mark the two different heights, then join the tops with a 20 m sloping line.",
+          "steps": [
+            {
+              "explain": "Place both cafe heights above the same ground-floor line. The first is 15 m high and the second is 10 m high.",
+              "work": "\\(15\\text{ m and }10\\text{ m above ground}\\)"
+            },
+            {
+              "explain": "Join the cafe tops with a sloping line and label it 20 m for the escalator.",
+              "work": "\\(\\text{escalator}=20\\text{ m}\\)"
+            },
+            {
+              "explain": "The diagram shows the given heights and escalator; it is not drawn to scale.",
+              "work": "\\(\\boxed{\\text{See labelled diagram}}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 220\" width=\"360\" height=\"220\" style=\"width:50%;height:auto;max-width:100%\"><path d=\"M65 45 L285 90 L285 185 L65 185 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"65\" y1=\"45\" x2=\"65\" y2=\"185\" stroke=\"#10b981\" stroke-width=\"4\" /><line x1=\"285\" y1=\"90\" x2=\"285\" y2=\"185\" stroke=\"#64748b\" stroke-width=\"3\" /><line x1=\"65\" y1=\"90\" x2=\"285\" y2=\"90\" stroke=\"#94a3b8\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><line x1=\"65\" y1=\"185\" x2=\"285\" y2=\"185\" stroke=\"#334155\" stroke-width=\"3\" /><line x1=\"65\" y1=\"45\" x2=\"285\" y2=\"90\" stroke=\"#f59e0b\" stroke-width=\"4\" /><text x=\"53\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#10b981\">15 m</text><text x=\"310\" y=\"145\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\">10 m</text><text x=\"172\" y=\"35\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#f59e0b\">20 m</text><text x=\"170\" y=\"210\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\">ground floor</text><text x=\"62\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\">Cafe 1</text><text x=\"300\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\">Cafe 2</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Two cafes on opposite sides of an atrium in a shopping centre are resp",
+              "note": "Draw a horizontal ground line, mark the two different heights, then join the tops with a 20 m sloping line."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "wm-q2a"
+          },
+          "manual": true,
+          "answer": "Sample diagram: vertical heights 15 m and 10 m above a common ground line, joined by a 20 m sloping escalator."
+        },
+        {
+          "id": "hghs2026-y7c9-wm-q2b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Two cafes on opposite sides of an atrium in a shopping centre are respectively 10 m and 15 m above the ground floor. The cafes are linked by a 20 m escalator. (b) Find the horizontal distance across the atrium, between the two cafes. Leave answer in exact form.",
+          "hint": "The height difference is 15−10=5 m. These 5 m and the horizontal gap form the legs; 20 m is the hypotenuse.",
+          "steps": [
+            {
+              "explain": "The vertical difference between the cafe levels is 15−10=5 m. Together with the horizontal gap, this makes a right triangle with the 20 m escalator as hypotenuse.",
+              "work": "\\(15-10=5\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 220\" width=\"360\" height=\"220\" style=\"width:50%;height:auto;max-width:100%\"><path d=\"M65 45 L285 90 L285 185 L65 185 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"65\" y1=\"45\" x2=\"65\" y2=\"185\" stroke=\"#10b981\" stroke-width=\"4\" /><line x1=\"285\" y1=\"90\" x2=\"285\" y2=\"185\" stroke=\"#64748b\" stroke-width=\"3\" /><line x1=\"65\" y1=\"90\" x2=\"285\" y2=\"90\" stroke=\"#94a3b8\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><line x1=\"65\" y1=\"185\" x2=\"285\" y2=\"185\" stroke=\"#334155\" stroke-width=\"3\" /><line x1=\"65\" y1=\"45\" x2=\"285\" y2=\"90\" stroke=\"#f59e0b\" stroke-width=\"4\" /><text x=\"53\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#10b981\">15 m</text><text x=\"310\" y=\"145\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\">10 m</text><text x=\"172\" y=\"35\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#f59e0b\">20 m</text><text x=\"170\" y=\"210\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\">ground floor</text><text x=\"62\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\">Cafe 1</text><text x=\"300\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\">Cafe 2</text></svg>"
+              }
+            },
+            {
+              "explain": "Let the horizontal distance be d and apply Pythagoras.",
+              "work": "\\(d^2+5^2=20^2\\)"
+            },
+            {
+              "explain": "Subtract 25 and take the positive square root.",
+              "work": "\\(d^2=400-25=375\\Rightarrow d=\\sqrt{375}\\text{ m}\\)"
+            },
+            {
+              "explain": "Simplify the radical by taking out the square factor 25.",
+              "work": "\\(\\sqrt{375}=\\sqrt{25\\times15}=5\\sqrt{15}\\text{ m}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Two cafes on opposite sides of an atrium in a shopping centre are resp",
+              "note": "The height difference is 15−10=5 m. These 5 m and the horizontal gap form the legs; 20 m is the hypotenuse."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "wm-q2b"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 220\" width=\"360\" height=\"220\" style=\"width:50%;height:auto;max-width:100%\"><path d=\"M65 45 L285 90 L285 185 L65 185 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"65\" y1=\"45\" x2=\"65\" y2=\"185\" stroke=\"#334155\" stroke-width=\"4\" /><line x1=\"285\" y1=\"90\" x2=\"285\" y2=\"185\" stroke=\"#64748b\" stroke-width=\"3\" /><line x1=\"65\" y1=\"90\" x2=\"285\" y2=\"90\" stroke=\"#94a3b8\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><line x1=\"65\" y1=\"185\" x2=\"285\" y2=\"185\" stroke=\"#334155\" stroke-width=\"3\" /><line x1=\"65\" y1=\"45\" x2=\"285\" y2=\"90\" stroke=\"#334155\" stroke-width=\"4\" /><text x=\"53\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#10b981\">15 m</text><text x=\"310\" y=\"145\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\">10 m</text><text x=\"172\" y=\"35\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\">20 m</text><text x=\"170\" y=\"210\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\">ground floor</text><text x=\"62\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\">Cafe 1</text><text x=\"300\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#334155\">Cafe 2</text></svg>"
+          },
+          "options": [
+            "\\(15\\sqrt{5}\\text{ m}\\)",
+            "\\(25\\text{ m}\\)",
+            "\\(5\\sqrt{15}\\text{ m}\\)",
+            "\\(\\sqrt{375}\\text{ m}\\)"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "hghs2026-y7c9-wm-q3a",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "A bacterium splits in two every 5 minutes. New cells also continue splitting in the same way. (a) Construct a tree like diagram that represents a cell splitting for the first 20 minutes.",
+          "hint": "Start with one cell at 0 minutes and split every branch into two at each 5-minute mark.",
+          "steps": [
+            {
+              "explain": "At 0 minutes there is one starting cell.",
+              "work": "\\(1\\text{ cell}\\)"
+            },
+            {
+              "explain": "After 5 minutes, that cell splits into 2; after 10 minutes, both split, giving 4.",
+              "work": "\\(1\\to2\\to4\\)"
+            },
+            {
+              "explain": "Continue doubling at 15 and 20 minutes. The final row has 16 cells.",
+              "work": "\\(8\\times2=16\\text{ cells at 20 min}\\)"
+            },
+            {
+              "explain": "The completed sample tree shows five time levels from 0 to 20 minutes.",
+              "work": "\\(1\\to2\\to4\\to8\\to16\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 245\" width=\"360\" height=\"245\" style=\"width:50%;height:auto;max-width:100%\"><line x1=\"180\" y1=\"27\" x2=\"130\" y2=\"66\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"180\" y1=\"27\" x2=\"230\" y2=\"66\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"130\" y1=\"75\" x2=\"105\" y2=\"114\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"130\" y1=\"75\" x2=\"155\" y2=\"114\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"230\" y1=\"75\" x2=\"205\" y2=\"114\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"230\" y1=\"75\" x2=\"255\" y2=\"114\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"105\" y1=\"123\" x2=\"92\" y2=\"162\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"105\" y1=\"123\" x2=\"118\" y2=\"162\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"155\" y1=\"123\" x2=\"142\" y2=\"162\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"155\" y1=\"123\" x2=\"168\" y2=\"162\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"205\" y1=\"123\" x2=\"192\" y2=\"162\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"205\" y1=\"123\" x2=\"218\" y2=\"162\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"255\" y1=\"123\" x2=\"242\" y2=\"162\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"255\" y1=\"123\" x2=\"268\" y2=\"162\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"92\" y1=\"171\" x2=\"85\" y2=\"210\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"92\" y1=\"171\" x2=\"97\" y2=\"210\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"118\" y1=\"171\" x2=\"109\" y2=\"210\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"118\" y1=\"171\" x2=\"121\" y2=\"210\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"142\" y1=\"171\" x2=\"133\" y2=\"210\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"142\" y1=\"171\" x2=\"145\" y2=\"210\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"168\" y1=\"171\" x2=\"157\" y2=\"210\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"168\" y1=\"171\" x2=\"169\" y2=\"210\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"192\" y1=\"171\" x2=\"181\" y2=\"210\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"192\" y1=\"171\" x2=\"193\" y2=\"210\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"218\" y1=\"171\" x2=\"205\" y2=\"210\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"218\" y1=\"171\" x2=\"217\" y2=\"210\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"242\" y1=\"171\" x2=\"229\" y2=\"210\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"242\" y1=\"171\" x2=\"241\" y2=\"210\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"268\" y1=\"171\" x2=\"253\" y2=\"210\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"268\" y1=\"171\" x2=\"265\" y2=\"210\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"180\" cy=\"22\" r=\"4.1\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"130\" cy=\"70\" r=\"4.1\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"230\" cy=\"70\" r=\"4.1\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"105\" cy=\"118\" r=\"4.1\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"155\" cy=\"118\" r=\"4.1\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"205\" cy=\"118\" r=\"4.1\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"255\" cy=\"118\" r=\"4.1\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"92\" cy=\"166\" r=\"4.1\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"118\" cy=\"166\" r=\"4.1\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"142\" cy=\"166\" r=\"4.1\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"168\" cy=\"166\" r=\"4.1\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"192\" cy=\"166\" r=\"4.1\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"218\" cy=\"166\" r=\"4.1\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"242\" cy=\"166\" r=\"4.1\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"268\" cy=\"166\" r=\"4.1\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"85\" cy=\"214\" r=\"4.1\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"97\" cy=\"214\" r=\"4.1\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"109\" cy=\"214\" r=\"4.1\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"121\" cy=\"214\" r=\"4.1\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"133\" cy=\"214\" r=\"4.1\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"145\" cy=\"214\" r=\"4.1\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"157\" cy=\"214\" r=\"4.1\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"169\" cy=\"214\" r=\"4.1\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"181\" cy=\"214\" r=\"4.1\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"193\" cy=\"214\" r=\"4.1\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"205\" cy=\"214\" r=\"4.1\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"217\" cy=\"214\" r=\"4.1\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"229\" cy=\"214\" r=\"4.1\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"241\" cy=\"214\" r=\"4.1\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"253\" cy=\"214\" r=\"4.1\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.3\"/><circle cx=\"265\" cy=\"214\" r=\"4.1\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.3\"/><text x=\"27\" y=\"26\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">0 min</text><text x=\"27\" y=\"74\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">5 min</text><text x=\"27\" y=\"122\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">10 min</text><text x=\"27\" y=\"170\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">15 min</text><text x=\"27\" y=\"218\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">20 min</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "A bacterium splits in two every 5 minutes. New cells also continue spl",
+              "note": "Start with one cell at 0 minutes and split every branch into two at each 5-minute mark."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "wm-q3a"
+          },
+          "manual": true,
+          "answer": "A branching tree with generations at 0, 5, 10, 15 and 20 minutes; each cell branches into two at every 5-minute step."
+        },
+        {
+          "id": "hghs2026-y7c9-wm-q3b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "How long will it take for 1 cell to divide into: (i) 4 cells? (ii) 64 cells?",
+          "hint": "Double the cell count every 5 minutes: 1, 2, 4, 8, 16, 32, 64.",
+          "steps": [
+            {
+              "explain": "List the doubling pattern, adding 5 minutes each time.",
+              "work": "\\(1\\xrightarrow{5\\text{ min}}2\\xrightarrow{5\\text{ min}}4\\)"
+            },
+            {
+              "explain": "The count reaches 4 after two 5-minute intervals.",
+              "work": "\\(2\\times5=10\\text{ minutes}\\)"
+            },
+            {
+              "explain": "For 64, continue: 8, 16, 32, 64. That is six intervals after the first cell.",
+              "work": "\\(1\\to2\\to4\\to8\\to16\\to32\\to64\\)"
+            },
+            {
+              "explain": "Six intervals of 5 minutes take 30 minutes.",
+              "work": "\\(6\\times5=30\\text{ minutes}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "How long will it take for 1 cell to divide into: (i) 4 cells? (ii) 64 ",
+              "note": "Double the cell count every 5 minutes: 1, 2, 4, 8, 16, 32, 64."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "wm-q3b"
+          },
+          "options": [
+            "\\(\\text{(i)}\\ 10\\text{ minutes};\\quad\\text{(ii)}\\ 30\\text{ minutes}\\)",
+            "\\(\\text{(i)}\\ 5\\text{ minutes};\\quad\\text{(ii)}\\ 25\\text{ minutes}\\)",
+            "\\(\\text{(i)}\\ 10\\text{ minutes};\\quad\\text{(ii)}\\ 25\\text{ minutes}\\)",
+            "\\(\\text{(i)}\\ 15\\text{ minutes};\\quad\\text{(ii)}\\ 30\\text{ minutes}\\)"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "hghs2026-y7c9-wm-q3c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A single cell is set aside to divide for 1 hour. How many cells will there be after this time?",
+          "hint": "There are 60÷5=12 doubling intervals in one hour.",
+          "steps": [
+            {
+              "explain": "Find how many 5-minute divisions fit into 60 minutes.",
+              "work": "\\(60\\div5=12\\text{ intervals}\\)"
+            },
+            {
+              "explain": "Start with 1 cell and double it 12 times.",
+              "work": "\\(1\\times2^{12}\\)"
+            },
+            {
+              "explain": "Evaluate the power by repeated doubling or use 2¹².",
+              "work": "\\(2^{12}=4096\\)"
+            },
+            {
+              "explain": "So there will be 4096 cells after one hour.",
+              "work": "\\(\\boxed{4096\\text{ cells}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "A single cell is set aside to divide for 1 hour. How many cells will t",
+              "note": "There are 60÷5=12 doubling intervals in one hour."
+            }
+          ],
+          "meta": {
+            "source": "SCN_20260924_1633.pdf",
+            "school": "Hornsby Girls High School",
+            "year": "Year 7",
+            "sourcePart": "wm-q3c"
+          },
+          "options": [
+            "\\(8192\\)",
+            "\\(4096\\)",
+            "\\(7936\\)",
+            "\\(2048\\)"
+          ],
+          "answer": 1
         }
       ]
     }
