@@ -4,7 +4,7 @@ import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   GraduationCap, Settings as SettingsIcon, Play, ArrowLeft, ArrowRight,
-  Lock, Trophy, Sparkles, Clock, Lightbulb, RotateCcw, ChevronRight, CheckCircle2, XCircle,
+  Lock, Trophy, Sparkles, Lightbulb, RotateCcw, ChevronRight, CheckCircle2, XCircle,
   Flag, BookmarkPlus, X, Target, PenLine, LayoutGrid, AlignJustify, BookOpen,
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
@@ -162,8 +162,6 @@ const QuizView = ({
   const [showFeedback, setShowFeedback] = useState(false);
   const [lastRes, setLastRes] = useState(null); // { userAnswer, correct, pending, ... }
   const [focusedBlank, setFocusedBlank] = useState(0);
-  const [timeLeft, setTimeLeft] = useState(0);
-  const [questionStartTime, setQuestionStartTime] = useState(null);
   const [showCanvas, setShowCanvas] = useState(true);
   const [isGraphPaper, setIsGraphPaper] = useState(false);
   const [advancing, setAdvancing] = useState(false);
@@ -203,9 +201,6 @@ const QuizView = ({
     setLastRes(null);
     setFocusedBlank(0);
     setAdvancing(false);
-    const limit = q.timeLimit || 120;
-    setTimeLeft(limit);
-    setQuestionStartTime(Date.now());
   }, [q?.id]);
 
   useEffect(() => { showFeedbackRef.current = showFeedback; }, [showFeedback]);
@@ -232,35 +227,6 @@ const QuizView = ({
       if (timeoutId != null) clearTimeout(timeoutId);
     };
   }, [showFeedback, q?.id]);
-
-  useEffect(() => {
-    if (!q || !questionStartTime || showFeedback) return;
-    const limit = (q?.timeLimit || 120) * 1000;
-    const endTime = questionStartTime + limit;
-    const timer = setInterval(() => {
-      if (showFeedbackRef.current) { clearInterval(timer); return; }
-      const remaining = Math.max(0, Math.ceil((endTime - Date.now()) / 1000));
-      setTimeLeft(remaining);
-      if (remaining <= 0) {
-        clearInterval(timer);
-        if (!showFeedbackRef.current) {
-          const timed = {
-            userAnswer: '',
-            correct: false,
-            questionId: q?.id,
-            topicId: q?.topicId,
-            topicTitle: q?.topicTitle,
-            timedOut: true,
-            pending: false,
-          };
-          setLastRes(timed);
-          setShowFeedback(true);
-          onAnswered?.(timed, q);
-        }
-      }
-    }, 200);
-    return () => clearInterval(timer);
-  }, [questionStartTime, showFeedback, q?.timeLimit, q?.id, onAnswered, q]);
 
   if (!q) return null;
 
@@ -408,43 +374,15 @@ const QuizView = ({
         >
           <Flag size={16} />
         </button>
-        <div style={{
-          display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.8rem', fontWeight: 800,
-          color: timeLeft <= 10 ? '#f43f5e' : timeLeft <= 30 ? '#f97316' : '#64748b',
-          background: timeLeft <= 10 ? '#fff1f2' : timeLeft <= 30 ? '#fff7ed' : '#fff',
-          padding: '6px 12px', borderRadius: '10px', boxShadow: '0 4px 12px rgba(0,0,0,0.03)',
-          transition: 'background 0.3s, color 0.3s',
-          minWidth: '70px', justifyContent: 'center',
-        }}>
-          <Clock size={14} /> {timeLeft}s
-        </div>
       </div>
     </div>
   );
-
-  const timeLimit = q?.timeLimit || 120;
-  const timerPct = Math.min(100, (timeLeft / timeLimit) * 100);
-  const timerBarColor = timeLeft <= 10 ? '#f43f5e' : timeLeft <= 30 ? '#f97316' : '#6366f1';
-  const timerGlow = timeLeft <= 10 ? 'rgba(244,63,94,0.35)' : timeLeft <= 30 ? 'rgba(249,115,22,0.25)' : 'transparent';
 
   const progressBar = (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
       {/* Deck mastery (correct-once questions / full pool) */}
       <div style={{ width: '100%', height: '3px', background: '#e2e8f0', borderRadius: '999px', overflow: 'hidden' }}>
         <div style={{ height: '100%', width: `${masteryPct}%`, background: '#a78bfa', borderRadius: '999px', transition: 'width 0.3s' }} />
-      </div>
-      {/* Timer bar */}
-      <div style={{ width: '100%', height: '5px', background: '#e2e8f0', borderRadius: '999px', overflow: 'visible' }}>
-        <motion.div
-          initial={false}
-          animate={{ width: `${timerPct}%`, backgroundColor: timerBarColor }}
-          transition={{ duration: 0.2 }}
-          style={{
-            height: '100%', borderRadius: '999px',
-            boxShadow: timeLeft <= 30 ? `0 0 8px 2px ${timerGlow}` : 'none',
-            transition: 'box-shadow 0.3s',
-          }}
-        />
       </div>
     </div>
   );
