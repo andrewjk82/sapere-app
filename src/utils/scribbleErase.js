@@ -22,8 +22,10 @@ export const MIN_POINTS = 12;
 export const MIN_PATH = 80;           // total ink length (page units)
 export const MIN_EXTENT = 18;         // longer side of the scribble's box
 export const MIN_REVERSALS = 4;       // back-and-forth turns
+export const MIN_REVERSALS_LOOSE = 3;  // fewer turns are enough …
+export const MIN_PATH_RATIO_LOOSE = 3.5; // … when the path is this many times its span
 export const MIN_PATH_RATIO = 3;      // path length ÷ longer side (≥ 3 sweeps over the same span)
-export const REVERSAL_SWEEP = 0.3;    // a turn counts once the pen went back this share of the scribble's width
+export const REVERSAL_SWEEP = 0.22;   // a turn counts once the pen went back this share of the scribble's width
 export const AREA_PAD = 3;            // the scribbled area reaches this far past the scribble's outline (≈ a nib)
 export const CUT_STEP = 3;            // strokes are checked at least every CUT_STEP units, so long segments are cut too
 export const MIN_ERASED = 4;          // less scratched ink than this is a graze: the scribble stays ink
@@ -112,7 +114,11 @@ export const isScribbleShape = (pts) => {
   const { w, h } = boxOf(pts);
   const extent = Math.max(w, h);
   if (extent < MIN_EXTENT || path / extent < MIN_PATH_RATIO) return false;
-  return countReversals(pts) >= MIN_REVERSALS;
+  const turns = countReversals(pts);
+  if (turns >= MIN_REVERSALS) return true;
+  // Loose, looping scratching (2 circles, a lazy spiral) turns fewer times but covers far more ground than
+  // any letter does, so it counts with a denser path — it only erases when it really lies over ink anyway.
+  return turns >= MIN_REVERSALS_LOOSE && path / extent >= MIN_PATH_RATIO_LOOSE;
 };
 
 const cross = (o, a, b) => (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0]);
