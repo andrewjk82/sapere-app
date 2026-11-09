@@ -1683,17 +1683,22 @@ const Schedule = ({ students = [] }) => {
                   ? 'Choose whether to update this session for all students in the group or the entire future series.'
                   : 'This is a recurring session. Would you like to update only this instance or the entire future series?'}
               </p>
+              {(buildSessionUpdatePayload(editData).homework || (editData.learnedTopics || []).length > 0) && (
+                <p style={{ margin: '-12px 0 20px', color: '#b45309', background: '#fffbeb', borderRadius: '12px', padding: '10px 12px', fontSize: '0.85rem', lineHeight: 1.4, fontWeight: 700 }}>
+                  Homework and topics are lesson-specific. "All future sessions" would copy them onto every later lesson — usually choose "Only this session".
+                </p>
+              )}
               
               <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                 <button 
                   onClick={() => handleSaveDetails('single')}
-                  style={{ width: '100%', backgroundColor: '#f1f5f9', color: '#334155', padding: '16px', borderRadius: '16px', border: 'none', fontWeight: 800, fontSize: '1rem', cursor: 'pointer' }}
+                  style={{ width: '100%', backgroundColor: '#6366f1', color: '#fff', padding: '16px', borderRadius: '16px', border: 'none', fontWeight: 800, fontSize: '1rem', cursor: 'pointer' }}
                 >
                   {saveChoiceOpen.isGroupedClass ? 'This group session only' : 'Only this session'}
                 </button>
                 <button 
                   onClick={() => handleSaveDetails('series')}
-                  style={{ width: '100%', backgroundColor: '#6366f1', color: '#fff', padding: '16px', borderRadius: '16px', border: 'none', fontWeight: 800, fontSize: '1rem', cursor: 'pointer' }}
+                  style={{ width: '100%', backgroundColor: '#f1f5f9', color: '#334155', padding: '16px', borderRadius: '16px', border: 'none', fontWeight: 800, fontSize: '1rem', cursor: 'pointer' }}
                 >
                   {saveChoiceOpen.isGroupedClass ? 'This and all future group sessions' : 'This and all future sessions'}
                 </button>
