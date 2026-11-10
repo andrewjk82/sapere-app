@@ -805,9 +805,10 @@ const PdfViewer = ({ src, loading, fallback, style, storageKey }) => {
       const root = scrollRef.current;
       if (!pinch || !stack || !spacer || !root) return;
 
-      const delta = pinch.targetZoom - pinch.visualZoom;
-      const settled = Math.abs(delta) < 0.001;
-      pinch.visualZoom = settled ? pinch.targetZoom : pinch.visualZoom + delta * 0.28;
+      // Follow the fingers 1:1. The old 0.28 easing kept sliding after the fingers stopped, so the page drifted and
+      // wobbled under them, and kept moving on its own after the fingers lifted.
+      const settled = true;
+      pinch.visualZoom = pinch.targetZoom;
       const scale = pinch.visualZoom / pinch.startZoom;
       const baseWidth = stack.offsetWidth;
       const baseHeight = stack.offsetHeight;
@@ -851,6 +852,8 @@ const PdfViewer = ({ src, loading, fallback, style, storageKey }) => {
   useEffect(() => {
     if (!scrollEl) return undefined;
     const pointsOf = (touches) => [touches[0], touches[1]].map((t) => ({ x: t.clientX, y: t.clientY }));
+
+    let postPinchLock = false;
 
     // Finger taps (see classifyMultiTap): one record per touch sequence, lifts caught on window.
     let tap = null;
@@ -914,11 +917,15 @@ const PdfViewer = ({ src, loading, fallback, style, storageKey }) => {
         spacer.style.height = `${stack.offsetHeight}px`;
       }
       lastPinchRenderAtRef.current = 0;
+      postPinchLock = true;
       if (event.cancelable) event.preventDefault();
     };
 
     const move = (event) => {
       tapMoved(event.changedTouches);
+      // After a pinch, the finger still down must not scroll natively: it fought the pinch's own scroll
+      // position and the re-render anchor, so the page shook. It is locked until every finger has lifted.
+      if (postPinchLock && event.touches.length < 2) { if (event.cancelable) event.preventDefault(); return; }
       const pinch = pinchRef.current;
       if (!pinch || pinch.finishRequested || event.touches.length < 2) return;
       if (event.cancelable) event.preventDefault();
@@ -928,7 +935,7 @@ const PdfViewer = ({ src, loading, fallback, style, storageKey }) => {
       pinch.center = midpoint(points);
       pinch.targetZoom = nextZoom;
       const now = performance.now();
-      if (now - lastPinchRenderAtRef.current >= 42) {
+      if (now - lastPinchRenderAtRef.current >= 150) {   // only the % label; re-rendering the viewer mid-pinch janks it
         lastPinchRenderAtRef.current = now;
         setZoom(nextZoom);
       }
@@ -936,6 +943,7 @@ const PdfViewer = ({ src, loading, fallback, style, storageKey }) => {
     };
 
     const end = (event) => {
+      if (event.touches.length === 0) postPinchLock = false;
       const pinch = pinchRef.current;
       if (!pinch || pinch.finishRequested || event.touches.length >= 2) return;
       pinch.finishRequested = true;
