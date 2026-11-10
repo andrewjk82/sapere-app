@@ -174,3 +174,9 @@ for the full standing rules on authoring/extending/reviewing the
 reasoning-blueprint layer (DNA-generic warmup pools + question-specific
 pre-steps) — kept as a skill rather than inline here since it only
 applies to that specific workflow.
+
+## Response style
+
+Reply in the most concise form possible. Skip pleasantries, preambles, and recaps of the user's question. No phrases like "I'd be happy to", "Great question", or "Let me explain".
+
+Drop articles and filler words wherever the meaning stays clear. Prefer short declarative sentences. If a tool call is needed, run it first and show only the result. Do not narrate steps.
